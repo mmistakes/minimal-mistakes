@@ -18,4 +18,4 @@ Jekyll is pretty rad and figured releasing a cleaned up version of [my setup](ht
 * Large feature images for posts and pages.
 * Simple and clear permalink structure *(ie: domain.com/category/post-title)*
 
-<a markdown="0" href="/theme-setup" class="btn">Install Minimal Mistakes Theme</a>
+<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install Minimal Mistakes Theme</a>
