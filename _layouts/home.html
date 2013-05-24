@@ -28,7 +28,7 @@
 <div id="index">
   <h3>Latest Articles</h3>
   <hr />
-  {% for post in site.categories.articles limit:3 %}    
+  {% for post in site.categories.articles limit:5 %}    
   <article>
     <h2><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h2>
     <p>{% if page.description %}{{ page.description }}{% else %}{{ page.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}</p>
