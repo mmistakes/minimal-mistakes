@@ -100,4 +100,4 @@ Not sure if this only effects Kramdown or if it's an issue with Markdown in gene
 <iframe width="560" height="315" src="http://www.youtube.com/embed/PWf4WUoMXwg" frameborder="0"> </iframe>
 ~~~
 
-[^1]: Used to generate absolute urls in *sitemap.xml*, *feed.xml*, and for canonical urls in *head.html*. Don't include a trailing `\` in your base url ie: http://mademistakes.com
+[^1]: Used to generate absolute urls in *sitemap.xml*, *feed.xml*, and for canonical urls in *head.html*. Don't include a trailing `\` in your base url ie: http://mademistakes.com. When developing locally remove or comment out this line so local css, js, and images are used.
