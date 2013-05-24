@@ -51,7 +51,7 @@
         {% endif %}
       {% endfor %}
       {% if match %}
-      <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+      <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
       {% endif %}
     {% endfor %}
     </ul>
