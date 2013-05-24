@@ -23,6 +23,7 @@ pygments:    true
 markdown:    kramdown
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title
 
 maruku:
   use_tex:    false
