@@ -5,7 +5,7 @@
 <!-- Twitter Card and Open Graph meta -->
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }} &#8211; {% endif %}Made Mistakes">
 <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}">
-<meta name="twitter:creator" content="{{ site.owner.twitter }}">
+<meta name="twitter:creator" content="@{{ site.owner.twitter }}">
 {% if page.layout == 'photo' %}
 <meta name="twitter:card" content="photo">
 {% if page.image %}<meta name="twitter:image:src" content="{{ site.url }}/images/{{ page.image.feature }}">{% endif %}
