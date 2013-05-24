@@ -1,0 +1,48 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include head.html %}
+</head>
+
+<body class="home">
+
+{% include chrome-frame.html %}
+
+{% include navigation.html %}
+
+<div class="image-wrap">
+  <div class="headline-wrap">
+    <h1>{{ page.title }}</h1>
+    {% if page.tagline %}<h2>{{ page.tagline }}</h2>{% endif %}
+  </div><!--/ .headline-wrap -->
+  <img src="/images/{{ page.image.feature }}" alt="{{ page.title }} feature image">
+</div><!-- /.image-wrap -->
+
+<div class="article-author-top">
+  {% include author-bio.html %}
+</div>
+
+<div id="index">
+  <h3>Latest Articles</h3>
+  <hr />
+  {% for post in site.categories.articles limit:3 %}    
+  <article>
+    <h2><a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h2>
+    <p>{% if page.description %}{{ page.description }}{% else %}{{ page.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}</p>
+  </article>
+  {% endfor %}
+</div><!-- /#index -->
+
+<div class="footer-wrap">
+  <footer>
+    {% include footer.html %}
+  </footer>
+</div><!-- /.footer-wrap -->
+
+{% include scripts.html %}
+  
+</body>
+</html>
