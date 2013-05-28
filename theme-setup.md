@@ -28,7 +28,7 @@ General notes and suggestions for customizing Minimal Mistakes.
 
 <a markdown="0" href="http://github.com/mmistakes/minimal-mistakes" class="btn">Minimal Mistakes on GitHub</a>
 
-~~~ text
+{% highlight text %}
 minimal-mistakes/
 ├── _includes
 |    ├── author-bio.html  //bio stuff goes here
@@ -54,7 +54,7 @@ minimal-mistakes/
 ├── about.md  //about page
 ├── articles.md  //lists all posts from latest to oldest
 └── index.md  //homepage. lists 5 most recent posts
-~~~
+{% endhighlight %}
 
 ## Customization
 
@@ -72,11 +72,11 @@ A good rule of thumb is to keep feature images[^2] nice and wide so you don't pu
 
 The two layouts make the assumption that the feature images live in the *images* folder. To add a feature image to a post or page just include the filename in the front matter like so. 
 
-~~~ yaml
+{% highlight yaml %}
 image:
   feature: feature-image-filename.jpg
   thumb: thumbnail-image.jpg #keep it square 200x200 px is good
-~~~
+{% endhighlight %}
 
 #### Thumbnails for OG and Twitter Cards
 
@@ -89,7 +89,7 @@ Any article or page that you want a *table of contents* to render insert the fol
 **PS:** The TOC is hidden on small devices because I haven't gotten around to optimizing it. For now it only shows on tablets and desktop viewports...
 {: .notice}
 
-~~~ html
+{% highlight html %}
 <section id="table-of-contents" class="toc">
   <header>
     <h3 class="delta">Contents</h3>
@@ -99,7 +99,7 @@ Any article or page that you want a *table of contents* to render insert the fol
 {:toc}
 </div>
 </section><!-- /#table-of-contents -->
-~~~
+{% endhighlight %}
 
 #### Videos
 
@@ -107,9 +107,9 @@ Video embeds are responsive and scale with the width of the main content block w
 
 Not sure if this only effects Kramdown or if it's an issue with Markdown in general. But adding YouTube video embeds causes errors when building your Jekyll site. To fix add a space between the `<iframe>` tags and remove `allowfullscreen`. Example below:
 
-~~~ html
+{% highlight html %}
 <iframe width="560" height="315" src="http://www.youtube.com/embed/PWf4WUoMXwg" frameborder="0"> </iframe>
-~~~
+{% endhighlight %}
 
 [^1]: Used to generate absolute urls in *sitemap.xml*, *feed.xml*, and for canonical urls in *head.html*. Don't include a trailing `\` in your base url ie: http://mademistakes.com. When developing locally remove or comment out this line so local css, js, and images are used.
 
