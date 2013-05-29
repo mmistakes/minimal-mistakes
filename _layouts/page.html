@@ -14,14 +14,14 @@
 {% include navigation.html %}
 
 {% if page.image.feature %}<div class="image-wrap">
-  <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image">
+  <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image" itemprop="primaryImageOfPage">
 </div><!-- /.image-wrap -->{% endif %}
 
-<div id="main" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">
+<div id="main" role="main"  itemprop="mainContentOfPage">
   <div class="article-author-top">
     {% include author-bio.html %}
   </div>
-  <article itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+  <article itemscope itemtype="http://schema.org/CreativeWork">
     <div class="headline-wrap">
       <h1 itemprop="headline">{{ page.title }}</h1>
     </div><!--/ .headline-wrap -->
