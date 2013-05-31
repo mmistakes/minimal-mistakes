@@ -56,6 +56,10 @@ minimal-mistakes/
 
 Variables you want to update are: site name, description, url, owner info, and your Google Anayltics tracking id and webmaster tool verifications. Most of these variables are used in the .html files found in *_includes* if you need to add or remove anything.
 
+### _includes
+
+For the most part you can leave these as is since the author/owner details are pulled from `_config.yml`. That said you'll probably want to customize the page links `navigation.html` and copyright stuff in `footer.html` to your liking.
+
 ### Adding Posts and Pages
 
 There are two main content layouts: *post.html* (for posts) and *page.html* (for pages). Both have large **feature images** that span the full-width of the screen, and both are meant for text heavy blog posts (or articles). 
