@@ -58,7 +58,7 @@ Variables you want to update are: site name, description, url, owner info, and y
 
 ### _includes
 
-For the most part you can leave these as is since the author/owner details are pulled from `_config.yml`. That said you'll probably want to customize the page links `navigation.html` and copyright stuff in `footer.html` to your liking.
+For the most part you can leave these as is since the author/owner details are pulled from `_config.yml`. That said you'll probably want to customize the page links in `navigation.html` and copyright stuff in `footer.html` to your liking.
 
 ### Adding Posts and Pages
 
