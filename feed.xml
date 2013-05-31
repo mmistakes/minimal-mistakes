@@ -21,9 +21,8 @@ layout: none
   <title type="html"><![CDATA[{{ post.title | cdata_escape }}]]></title>
   <link rel="alternate" type="text/html" href="{{ site.url }}{{ post.url }}" />
   <id>{{ site.url }}{{ post.id }}</id>
-  {% if post.modified %}<updated>{{ post.modified | date_to_xmlschema }}</updated>
   <published>{{ post.date | date_to_xmlschema }}</published>
-  {% else %}<updated>{{ post.date | date_to_xmlschema }}</updated>{% endif %}
+  {% if post.modified %}<updated>{{ post.modified | to_xmlschema }}</updated>{% endif %}
   <author>
     <name>{{ site.owner.name }}</name>
     <uri>{{ site.url }}/</uri>
