@@ -1328,13 +1328,16 @@ svg:not(:root) {
   /* IE7 inline-block hack */
 
   *zoom: 1;
-  padding: 12px;
+  padding: 12px 24px;
   margin-bottom: 2em;
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
   vertical-align: middle;
   border: 4px double #333332;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
   cursor: pointer;
   *margin-left: .3em;
   -webkit-transition: 0.4s linear;
@@ -1364,6 +1367,24 @@ svg:not(:root) {
 .btn-inverse:hover {
   color: #ffffff;
   border-color: #ffffff;
+}
+.btn-small {
+  font-size: 60%;
+  padding: 6px 12px;
+}
+/* Well ================================================= */
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 /* Custom set of Icomoon webfont icons ===================== */
 @font-face {

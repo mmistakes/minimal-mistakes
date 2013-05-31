@@ -1,6 +1,7 @@
 title:            Minimal Mistakes
 tagline:          Jekyll Theme
 description:      A responsive Jekyll theme with editorial design tendencies.
+#Comment out url when working locally to resolve base urls correctly
 url:              http://mmistakes.github.io/minimal-mistakes
 
 # Owner/author information goes here.
