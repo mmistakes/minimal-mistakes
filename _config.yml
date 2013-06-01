@@ -2,7 +2,7 @@ title:            Vinit Kumar
 tagline:          My Personal blog
 description:      My Musings with programming life and happiness
 #Comment out url when working locally to resolve base urls correctly
-url:
+url: http://vinitkumar.me/minimal-mistakes
 
 # Owner/author information goes here.
 owner:
