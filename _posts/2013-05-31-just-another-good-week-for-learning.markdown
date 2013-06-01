@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "A Post with Images"
-description: "Examples and code for displaying images in posts."
+title: "Good Week Gone By"
+description: "What happened last week"
 category: articles
-tags: [sample post, images, test]
+tags: [node, twitter]
 ---
 This week is going to be a particularly good one. I am implementing 
-twitter clone in nodejs. It is a  great excercise to just take a look 
+twitter clone in node.js. It is a  great exercise to just take a look 
 at something trying to guess what is going on behind the scenes and 
 reverse engineering it in a different stack.
 
