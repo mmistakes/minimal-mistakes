@@ -1,21 +1,18 @@
 ---
 layout: page
 permalink: /about/index.html
-title: About the Theme
-tagline: Minimal Mistakes, a Jekyll Theme
-tags: [about, Jekyll, theme, responsive]
+title: Vinit Kumar
+tagline: My personal blog
+tags: [blog, personal, programming]
 image:
-  feature: texture-feature-02.jpg
+  feature: texture-feature-05.jpg
 ---
 
-Jekyll is pretty rad and figured releasing a cleaned up version of [my site](http://mademistakes.com) as a theme for others to hack and build on would be fun. So here be that theme --- I call it **Minimal Mistakes**, a responsive Jekyll theme with editorial tendencies. 
+Hello, I am Vinit and i work as a JS/Nodejs programmer in an awesome dutch company, Changer. 
+I am in love with programming ever since i laid my hands on those sweet black and box magic machines with LOGO in it. I progressed from Logo to GWBasic to Java to Python, C, C++ and now i mostly program in JavaScript. I love the way programming and development has progressed and i can see it going well beyond.
 
-## Minimal Mistakes is all about:
+I also like writing sometimes mostly on web, programming, development and technology. So if you have interest in these topics, i am sure you will find some of my writing interesting.
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers. 
-* Minimal embellishments. Content first --- other widget nonsense never.
-* Large feature images for posts and pages.
-* Simple and clear permalink structure *(ie: domain.com/category/post-title)*
+I also maintain another tech-blog named as [Gotchacode](http://gotchacode.com). It also have some interesting posts which i am sure you would like. 
 
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install Minimal Mistakes Theme</a>
+

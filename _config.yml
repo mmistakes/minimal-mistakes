@@ -1,25 +1,25 @@
-title:            Minimal Mistakes
-tagline:          Jekyll Theme
-description:      A responsive Jekyll theme with editorial design tendencies.
+title:            Vinit Kumar
+tagline:          My Personal blog
+description:      My Musings with programming life and happiness
 #Comment out url when working locally to resolve base urls correctly
-url:              http://mmistakes.github.io/minimal-mistakes
+url: http://vinitkumar.me/minimal-mistakes
 
 # Owner/author information goes here.
 owner:
-  name:           Michael Rose
-  avatar:         bio-photo.jpg
-  bio:            "Just another boring, time traveling, tattooed, designer from Buffalo New York."
-  email:          michael@mademistakes.com
-  twitter:        "mmistakes"
-  google_plus:    "https://plus.google.com/118238196859537351707/posts"
+  name:           Vinit Kumar
+  avatar:         vinit.jpg
+  bio:            "Javascript/Nodejs hacker, workoholic, learner"
+  email:          vinit.kumar@changer.nl
+  twitter:        "vinitcool76"
+  google_plus:    "https://plus.google.com/106645023605660581419/posts"
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   UA-41189495-1 
-google_verify:      UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y
+google_analytics: UA-40854387-1
+google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:        D81F4C18A6CB3018F64D7C827D953DFD
+bing_verify:
 
-timezone:    America/New_York
+timezone:    India/Mumbai
 future:      true
 pygments:    true
 markdown:    kramdown
@@ -35,7 +35,7 @@ kramdown:
   use_coderay: false
 
   coderay:
-    coderay_line_numbers: 
+    coderay_line_numbers:
     coderay_line_numbers_start: 1
     coderay_tab_width: 4
     coderay_bold_every: 10
