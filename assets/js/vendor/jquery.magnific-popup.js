@@ -1,4 +1,4 @@
-/*! Magnific Popup - v0.8.5 - 2013-05-15
+/*! Magnific Popup - v0.8.9 - 2013-06-04
 * http://dimsemenov.com/plugins/magnific-popup/
 * Copyright (c) 2013 Dmitry Semenov; */
 ;(function($) {
@@ -15,6 +15,7 @@
  * Private static constants
  */
 var CLOSE_EVENT = 'Close',
+	AFTER_CLOSE_EVENT = 'AfterClose',
 	BEFORE_APPEND_EVENT = 'BeforeAppend',
 	MARKUP_PARSE_EVENT = 'MarkupParse',
 	OPEN_EVENT = 'Open',
@@ -141,7 +142,7 @@ MagnificPopup.prototype = {
 	init: function() {
 		var appVersion = navigator.appVersion;
 		mfp.isIE7 = appVersion.indexOf("MSIE 7.") !== -1; 
-		mfp.isIE8 = appVersion.indexOf("MSIE 8.") !== -1,
+		mfp.isIE8 = appVersion.indexOf("MSIE 8.") !== -1;
 		mfp.isLowIE = mfp.isIE7 || mfp.isIE8;
 		mfp.isAndroid = (/android/gi).test(appVersion);
 		mfp.isIOS = (/iphone|ipad|ipod/gi).test(appVersion);
@@ -160,23 +161,12 @@ MagnificPopup.prototype = {
 	 */
 	open: function(data) {
 
-		mfp.items = data.items.length ? data.items : [data.items];
-		
-		if(mfp.isOpen) {
-			mfp.updateItemHTML();
-			return;
-		}
-
 		var i;
 
-		mfp.types = []; 
-		_wrapClasses = '';
-		
-		mfp.ev = data.el || _document;
+		if(data.isObj === false) { 
+			// convert jQuery collection to array to avoid conflicts later
+			mfp.items = data.items.toArray();
 
-		if(data.isObj) {
-			mfp.index = data.index || 0;
-		} else {
 			mfp.index = 0;
 			var items = data.items,
 				item;
@@ -190,8 +180,20 @@ MagnificPopup.prototype = {
 					break;
 				}
 			}
+		} else {
+			mfp.items = $.isArray(data.items) ? data.items : [data.items];
+			mfp.index = data.index || 0;
 		}
 
+		// if popup is already opened - we just update the content
+		if(mfp.isOpen) {
+			mfp.updateItemHTML();
+			return;
+		}
+		
+		mfp.types = []; 
+		_wrapClasses = '';
+		mfp.ev = data.mainEl || _document;
 
 		if(data.key) {
 			if(!mfp.popupsCache[data.key]) {
@@ -226,7 +228,7 @@ MagnificPopup.prototype = {
 
 			mfp.container = _getEl('container', mfp.wrap);
 		}
-		
+
 		mfp.contentContainer = _getEl('content');
 		if(mfp.st.preloader) {
 			mfp.preloader = _getEl('preloader', mfp.container, mfp.st.tLoading);
@@ -307,11 +309,13 @@ MagnificPopup.prototype = {
 		var bodyStyles = {};
 
 		if( mfp.fixedContentPos ) {
-			var s = mfp._getScrollbarSize();
-			if(s) {
-				bodyStyles.paddingRight = s;
-			}
-		}
+            if(mfp._hasScrollBar(windowHeight)){
+                var s = mfp._getScrollbarSize();
+                if(s) {
+                    bodyStyles.paddingRight = s;
+                }
+            }
+        }
 
 		if(mfp.fixedContentPos) {
 			if(!mfp.isIE7) {
@@ -412,11 +416,11 @@ MagnificPopup.prototype = {
 		mfp._removeClassFromMFP(classesToRemove);
 
 		if(mfp.fixedContentPos) {
-			var bodyStyles = {paddingRight: 0};
+			var bodyStyles = {paddingRight: ''};
 			if(mfp.isIE7) {
-				$('body, html').css('overflow', 'auto');
+				$('body, html').css('overflow', '');
 			} else {
-				bodyStyles.overflow = 'visible';
+				bodyStyles.overflow = '';
 			}
 			_body.css(bodyStyles);
 		}
@@ -443,6 +447,8 @@ MagnificPopup.prototype = {
 		mfp.content = null;
 		mfp.currTemplate = null;
 		mfp.prevHeight = 0;
+
+		_mfpTrigger(AFTER_CLOSE_EVENT);
 	},
 	
 	updateSize: function(winHeight) {
@@ -455,6 +461,10 @@ MagnificPopup.prototype = {
 			mfp.wH = height;
 		} else {
 			mfp.wH = winHeight || _window.height();
+		}
+		// Fixes #84: popup incorrectly positioned with position:relative on body
+		if(!mfp.fixedContentPos) {
+			mfp.wrap.css('height', mfp.wH);
 		}
 
 		_mfpTrigger('Resize');
@@ -557,7 +567,6 @@ MagnificPopup.prototype = {
 	parseEl: function(index) {
 		var item = mfp.items[index],
 			type = item.type;
-		
 
 		if(item.tagName) {
 			item = { el: $(item) };
@@ -638,8 +647,15 @@ MagnificPopup.prototype = {
 				}
 			}
 			
-			if(e.type)
+			if(e.type) {
 				e.preventDefault();
+
+				// This will prevent popup from closing if element is inside and popup is already opened
+				if(mfp.isOpen) {
+					e.stopPropagation();
+				}
+			}
+				
 
 			options.el = $(e.mfpEl);
 			if(options.delegate) {
@@ -698,12 +714,8 @@ MagnificPopup.prototype = {
 		mfp.wrap.removeClass(cName);
 	},
 	_hasScrollBar: function(winHeight) {
-		if(document.body.clientHeight > (winHeight || _window.height()) ) {
-            return true;    
-        }
-        return false;
+		return (  (mfp.isIE7 ? _document.height() : document.body.scrollHeight) > (winHeight || _window.height()) )
 	},
-
 	_parseMarkup: function(template, values, item) {
 		var arr;
 		if(item.data) {
@@ -901,6 +913,7 @@ for(i = 0; i < rounds; i++) {
 console.log('Test #2:', performance.now() - start);
 */
 
+
 /*>>core*/
 
 /*>>inline*/
@@ -943,7 +956,8 @@ $.magnificPopup.registerModule(INLINE_NS, {
 				if(el.length) {
 
 					// If target element has parent - we replace it with placeholder and put it back after popup is closed
-					if(el[0].parentNode !== null) {
+					var parent = el[0].parentNode;
+					if(parent && parent.tagName) {
 						if(!_inlinePlaceholder) {
 							_hiddenClass = inlineSt.hiddenClass;
 							_inlinePlaceholder = _getEl(_hiddenClass);
@@ -1012,10 +1026,14 @@ $.magnificPopup.registerModule(AJAX_NS, {
 			var opts = $.extend({
 				url: item.src,
 				success: function(data, textStatus, jqXHR) {
+					var temp = {
+						data:data,
+						xhr:jqXHR
+					};
 
-					_mfpTrigger('ParseAjax', jqXHR);
+					_mfpTrigger('ParseAjax', temp);
 
-					mfp.appendContent( $(jqXHR.responseText), AJAX_NS );
+					mfp.appendContent( $(temp.data), AJAX_NS );
 
 					item.finished = true;
 
@@ -1029,6 +1047,7 @@ $.magnificPopup.registerModule(AJAX_NS, {
 
 					mfp.updateStatus('ready');
 
+					_mfpTrigger('AjaxContentAdded');
 				},
 				error: function() {
 					_removeAjaxCursor();
@@ -1353,7 +1372,9 @@ $.magnificPopup.registerModule(IFRAME_NS, {
 				//}
 			});
 
-			_mfpOn(CLOSE_EVENT + '.' + IFRAME_NS, _fixIframeBugs);
+			_mfpOn(CLOSE_EVENT + '.' + IFRAME_NS, function() {
+				_fixIframeBugs();
+			});
 		},
 
 		getIframe: function(item, template) {
@@ -1439,8 +1460,10 @@ $.magnificPopup.registerModule('gallery', {
 
 				if(gSt.navigateByImgClick) {
 					mfp.wrap.on('click'+ns, '.mfp-img', function() {
-						mfp.next();
-						return false;
+						if(mfp.items.length > 1) {
+							mfp.next();
+							return false;
+						}
 					});
 				}
 
@@ -1461,11 +1484,11 @@ $.magnificPopup.registerModule('gallery', {
 
 			_mfpOn(MARKUP_PARSE_EVENT+ns, function(e, element, values, item) {
 				var l = mfp.items.length;
-				values.counter = l ? _replaceCurrTotal(gSt.tCounter, item.index, l) : '';
+				values.counter = l > 1 ? _replaceCurrTotal(gSt.tCounter, item.index, l) : '';
 			});
 
 			_mfpOn('BuildControls' + ns, function() {
-				if(gSt.arrows && !mfp.arrowLeft) {
+				if(mfp.items.length > 1 && gSt.arrows && !mfp.arrowLeft) {
 					var markup = gSt.arrowMarkup,
 						arrowLeft = mfp.arrowLeft = $( markup.replace('%title%', gSt.tPrev).replace('%dir%', 'left') ).addClass(PREVENT_CLOSE_CLASS),			
 						arrowRight = mfp.arrowRight = $( markup.replace('%title%', gSt.tNext).replace('%dir%', 'right') ).addClass(PREVENT_CLOSE_CLASS);
@@ -1504,7 +1527,7 @@ $.magnificPopup.registerModule('gallery', {
 				_document.off(ns);
 				mfp.wrap.off('click'+ns);
 			
-				if(supportsFastClick) {
+				if(mfp.arrowLeft && supportsFastClick) {
 					mfp.arrowLeft.add(mfp.arrowRight).destroyMfpFastClick();
 				}
 				mfp.arrowRight = mfp.arrowLeft = null;
