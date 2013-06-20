@@ -10,7 +10,14 @@ owner:
   avatar:         bio-photo.jpg
   bio:            "Just another boring, time traveling, tattooed, designer from Buffalo New York."
   email:          michael@mademistakes.com
+  # Social networking links are used in author-bio sidebar. Update and remove as you like.
   twitter:        "mmistakes"
+  facebook:       "michaelrose"
+  github:         "mmistakes"
+  linkedin:       "michaelrose"
+  instagram:      "mmistakes"
+  lastfm:         "anotherjpeg"
+  tumblr:         "mademistakes"
   # For Google Authorship https://plus.google.com/authorship
   google_plus:    "https://plus.google.com/118238196859537351707/posts"
 
