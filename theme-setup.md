@@ -111,6 +111,33 @@ Not sure if this only effects Kramdown or if it's an issue with Markdown in gene
 <iframe width="560" height="315" src="http://www.youtube.com/embed/PWf4WUoMXwg" frameborder="0"> </iframe>
 {% endhighlight %}
 
+## Further Customization
+
+To make things easier I use LESS to build Minimal Mistakes' stylesheets. If you want to make some minor cosmetic alterations, take a look at `variables.less` in `assets/less/`. Changing some of the following variables can help make the theme your own. Just compile `main.less` and `ie.less` using your preprocessor of choice and off you go --- I like [CodeKit](http://incident57.com/codekit/) and [Prepros](http://alphapixels.com/prepros/).
+
+{% highlight css %}
+// TYPOGRAPHY ================================================
+@basefont: 'PT Serif', serif;
+@baseheadingfont: 'PT Sans Narrow', sans-serif;
+@codefont: Monaco, Courier New, monospace;
+
+// COLOR ====================================================
+@bodycolor      : #ebebeb;
+@textcolor      : #333332;
+@basecolor      : #343434;    
+@compcolor      : spin(@basecolor, 180); 
+@bordercolor    : @basecolor;
+@white          : #fff;
+@black          : #000;
+@accentcolor    : @black;
+/* Links ================================================= */
+@linkcolor          : #343434;
+@linkcolorhover     : darken(@linkcolor, 10);
+@linkcolorvisited   : lighten(@linkcolorhover, 20);
+@linkcolorfocus     : darken(@linkcolorvisited, 10);
+{% endhighlight %}
+
+
 [^1]: Used to generate absolute urls in *sitemap.xml*, *feed.xml*, and for canonical urls in *head.html*. Don't include a trailing `\` in your base url ie: http://mademistakes.com. When developing locally remove or comment out this line so local css, js, and images are used.
 
 [^2]: Feature images supplied by [Love Textures](http://www.lovetextures.com/)
