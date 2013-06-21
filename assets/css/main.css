@@ -1737,7 +1737,7 @@ select:focus {
 }
 /* Page level layout styles ================================ */
 html {
-  background: #ebebeb url(../img/background-light.jpg);
+  background-color: #ffffff;
   font-family: 'PT Serif', serif;
   font-color: #333332;
   font-size: 90%;
@@ -1850,7 +1850,7 @@ html {
   width: 0;
   height: 0;
   border: 20px solid transparent;
-  border-bottom-color: #ebebeb;
+  border-bottom-color: #ffffff;
 }
 .image-wrap img {
   width: 100%;
@@ -2074,7 +2074,7 @@ html {
   margin-top: 1em;
   padding-top: 2em;
   padding-bottom: 3em;
-  background: #000000 url(../img/background-dark.png);
+  background-color: #000000;
 }
 .footer-wrap:before,
 .footer-wrap:after {
