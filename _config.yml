@@ -1,6 +1,6 @@
 title:            Minimal Mistakes
 tagline:          Jekyll Theme
-description:      A responsive Jekyll theme with editorial design tendencies.
+description:      A responsive Jekyll theme large featured images and solid typography.
 #Comment out url when working locally to resolve base urls correctly
 url:              http://mmistakes.github.io/minimal-mistakes
 
@@ -22,7 +22,7 @@ owner:
   google_plus:    "http://plus.google.com/118238196859537351707"
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   UA-41189495-1 
+google_analytics:   UA-2011187-3
 google_verify:      UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:        D81F4C18A6CB3018F64D7C827D953DFD
