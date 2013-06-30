@@ -27,7 +27,8 @@ google_verify:      UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:        D81F4C18A6CB3018F64D7C827D953DFD
 
-# Internal pages/posts to include in top navigation
+# Links to include in top navigation
+# For external links add external: true
 links:
   - title: About
     url: /about
@@ -35,6 +36,9 @@ links:
     url: /articles
   - title: Theme Setup
     url: /theme-setup
+  - title: Made Mistakes
+    url: http://mademistakes.com
+    external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
