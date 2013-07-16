@@ -68,7 +68,7 @@ Your Google Analytics ID goes here along with meta tags for [Google Webmaster To
 
 #### Top Navigation Links
 
-Edit page/post titles and URLs to include in the site's navigation. If you want to add links to other sites you can hardcode them into `navigation.html`.
+Edit page/post titles and URLs to include in the site's navigation. For external links add `external: true`.
 
 ``` yaml
 # sample top navigation links
@@ -79,6 +79,9 @@ links:
     url: /articles
   - title: Other Page
     url: /other-page
+  - title: External Page
+    url: http://mademistakes.com
+    external: true
 ```
 
 #### Other Stuff
