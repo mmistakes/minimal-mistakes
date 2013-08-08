@@ -20,6 +20,8 @@ General notes and suggestions for customizing Minimal Mistakes.
 2. Fork the [Minimal Mistakes repo](http://github.com/mmistakes/minimal-mistakes/)
 3. Make it your own and customize, customize, customize.
 
+**Pro-tip:** Delete the `gh-pages` branch after cloning and start fresh by branching off `master`. There is a bunch of garbage in `gh-pages` used for the theme's demo site that I'm guessing you don't want on your site.
+
 ## [Preview the Theme](http://mmistakes.github.io/minimal-mistakes)
 
 ``` bash
