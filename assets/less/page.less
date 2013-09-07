@@ -1,8 +1,7 @@
-html {
+body {
 	background-color: @bodycolor;
 	font-family: @base-font;
 	font-color: @textcolor;
-	font-size: 90%;
 }
 .navigation-wrapper {
 	.container();
@@ -121,8 +120,8 @@ html {
 }
 .article-author-top,
 .article-author-bottom {
-	h4 {
-		margin-bottom: 0.5em;
+	h3 {
+		margin-bottom: 0;
 	}
 	p {
 		font-size: 80%;
@@ -132,6 +131,8 @@ html {
 		border-bottom: 0 solid transparent;
 	}
 	img.bio-photo {
+		width: 100px;
+		height: 100px;
 		.rounded(100px);
 	}
 }
@@ -331,7 +332,7 @@ html {
 		}
 	}
 }
-.chrome-frame {
+.browser-upgrade {
 	background: #000;
 	text-align: center;
 	margin: 0 0 2em 0;
