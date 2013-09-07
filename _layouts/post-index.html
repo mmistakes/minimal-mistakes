@@ -14,10 +14,6 @@
 {% include navigation.html %}
 
 <div class="image-wrap">
-  <div class="headline-wrap">
-    <h1>{{ page.title }}</h1>
-    {% if page.tagline %}<h2 class="hidden-phone">{{ page.tagline }}</h2>{% endif %}
-  </div><!--/ .headline-wrap -->
   <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image">
 </div><!-- /.image-wrap -->
 
@@ -26,6 +22,7 @@
 </div>
 
 <div id="index" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">
+  <h1 itemprop="name">{{ page.title }}</h1>
   {% for post in site.posts %}  
   {% unless post.next %}
     <h3>{{ post.date | date: '%Y' }}</h3>
