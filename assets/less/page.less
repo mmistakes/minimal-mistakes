@@ -61,9 +61,16 @@ body {
 	.prefix(12,1);
 	.suffix(12,1);
 	margin-bottom: 2em;
+	h3 {
+		margin: 0;
+		padding-bottom: .5em;
+		.font-rem(28);
+		border-bottom: 1px solid lighten(@black,70);
+	}
 	article {
 		h2 {
 			margin-bottom: 0;
+			.font-rem(24);
 		}
 		p+p {
 			text-indent: 0;
@@ -250,8 +257,12 @@ body {
 	p,
 	h4,
 	h5,
-	h6 {
+	h6,
+	span {
 		color: darken(@white, 25);
+	}
+	span { 
+		.font-rem(14);
 	}
 	a {
 		border-bottom: 0 solid transparent;
@@ -270,6 +281,7 @@ body {
 	.grid(12,10);
 	.prefix(12,1);
 	.suffix(12,1);
+	margin-bottom: 2em;
 	h4 {
 		
 		text-transform: uppercase;
