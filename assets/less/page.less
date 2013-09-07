@@ -1,13 +1,13 @@
 html {
 	background-color: @bodycolor;
-	font-family: @basefont;
+	font-family: @base-font;
 	font-color: @textcolor;
 	font-size: 90%;
 }
 .navigation-wrapper {
 	.container();
 	padding: 2em 0 3em;
-	font-family: @baseheadingfont;
+	font-family: @heading-font;
 	font-weight: 700;
 	text-transform: uppercase;
 }
@@ -64,7 +64,6 @@ html {
 	margin-bottom: 2em;
 	article {
 		h2 {
-			.delta();
 			margin-bottom: 0;
 		}
 		p+p {
@@ -103,19 +102,17 @@ html {
 }
 .headline-wrap {
 	h1 {
-		.beta();
+		
 	}
 	h2 {
-		.delta();
 		text-transform: uppercase;
 	}
 }
 .article-wrap {
 	h2 {
-		.gamma();
+		
 	}
 	h3 {
-		.delta();
 	}
 }
 .byline {
@@ -176,7 +173,7 @@ html {
 		display: block;
 		margin: 0;
 		padding: 0;
-		font-family: @baseheadingfont;
+		font-family: @heading-font;
 		border-bottom: 1px solid darken(@white, 50);
 		&:last-child {
 			border-bottom: 0 solid transparent;
@@ -223,7 +220,7 @@ html {
 	}
 }
 .holder {
-	font-family: @baseheadingfont;
+	font-family: @heading-font;
 	a {
 		cursor: pointer;
 		margin: 0 5px;
@@ -288,7 +285,7 @@ html {
 	.prefix(12,1);
 	.suffix(12,1);
 	h4 {
-		.epsilon();
+		
 		text-transform: uppercase;
 		margin-bottom: 0;
 	}
@@ -302,7 +299,6 @@ html {
 		display: inline-block;
 		padding-right: 5px;
 		a {
-			.delta();
 			color: lighten(@basecolor, 40%);
 			.transition(.4s linear);
 			&:hover {
