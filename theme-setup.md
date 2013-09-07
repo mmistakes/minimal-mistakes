@@ -34,7 +34,7 @@ General notes and suggestions for customizing Minimal Mistakes.
 minimal-mistakes/
 ├── _includes
 |    ├── author-bio.html  //bio stuff goes here
-|    ├── chrome-frame.html  //displays on IE8 and less
+|    ├── browser-upgrade.html  //displays on IE8 and less
 |    ├── footer.html  //site footer
 |    ├── head.html  //site head
 |    ├── navigation.html //site top nav
@@ -62,7 +62,7 @@ minimal-mistakes/
 
 ### _config.yml
 
-Most of the variables found here are used in the .html files found in `_includes` if you need to add or remove anything. A good place to start would be to change the title, tagline, description, and url of your site. When working locally comment out `url` or else you will get a bunch of broken links because they are absolute and prefixed with `{{ site.url }}` in the various `_includes` and `_layouts`. Just remember to uncomment `url` when building for deployment or pushing to **gh-pages**...
+Most of the variables found here are used in the .html files found in `_includes` if you need to add or remove anything. A good place to start would be to change the title, tagline, description, and url of your site. When working locally comment out `url` or else you will get a bunch of broken links because they are absolute and prefixed with `{{ "{{ site.url " }}}}` in the various `_includes` and `_layouts`. Just remember to uncomment `url` when building for deployment or pushing to **gh-pages**...
 
 #### Owner/Author Information
 
