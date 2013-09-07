@@ -9,12 +9,13 @@
 
 <body class="article" itemscope itemtype="http://schema.org/WebPage">
 
-{% include chrome-frame.html %}
+{% include browser-upgrade.html %}
 
 {% include navigation.html %}
 
 {% if page.image.feature %}<div class="image-wrap">
   <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image" itemprop="primaryImageOfPage">
+  {% if page.image.credit %}<span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>{% endif %}
 </div><!-- /.image-wrap -->{% endif %}
 
 <div id="main" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">
@@ -23,7 +24,7 @@
   </div>
   <article itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
     <div class="headline-wrap">
-      <h1 itemprop="headline">{{ page.title }}</h1>
+      <h1 itemprop="name">{{ page.title }}</h1>
       <h2>{{ page.tagline }}</h2>
     </div><!--/ .headline-wrap -->
     <div class="article-wrap" itemprop="text">
@@ -40,7 +41,7 @@
 </div><!-- /#main -->
 
 <div class="footer-wrap">
-  {% if site.related_posts.size %}<div class="related-articles">
+  {% if site.related_posts.size > 0 %}<div class="related-articles">
   <h4>You might also enjoy <small class="pull-right">(<a href="{{ site.url }}/articles">View all articles</a>)</small></h4>
     <ul>
     {% for post in site.related_posts limit:3 %}
