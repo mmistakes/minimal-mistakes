@@ -38,49 +38,41 @@ svg:not(:root) {
     .grid(12,12);
   }
 }
-/* Buttons =============================================== */
+/* Buttons ============================================== */
 .btn {
   display: inline-block;
-  *display: inline;
-  /* IE7 inline-block hack */
-  *zoom: 1;
-  padding: 12px 24px;
-  margin-bottom: 2em;
-  line-height: 1;
-  text-align: center;
-  text-transform: uppercase;
-  vertical-align: middle;
-  border: 4px double @textcolor;
-  .rounded(50px);
-  cursor: pointer;
-  *margin-left: .3em;
-  .transition(.4s linear); 
-  &:visited {
-    border: 4px double @linkcolorvisited;
-  }
-  &:hover {
-    border: 4px double @linkcolorhover;
-  }
-}
-.btn:first-child {
-  *margin-left: 0; 
-}
-.btn-inverse {
-  border: 4px double @white;
-  color: @white;
+  margin-bottom: 20px;
+  padding: 8px 20px;
+  .font-rem(14);
   background-color: @black;
+  color: @white;
+  border: 2px solid @black !important;
+  .rounded(20px);
   &:visited {
     color: @white;
-    border-color: @white;
   }
   &:hover {
-    color: @white;
-    border-color: @white;
+    background-color: @white;
+    color: @black;
+  }
+  &:active {
+    .translate(0, 2px);
   }
 }
-.btn-small {
-  font-size: 60%;
-  padding: 6px 12px;
+.author-social {
+  display: block;
+  margin-bottom: 5px;
+  .font-rem(14);
+  color: @black;
+  &:visited {
+    color: @black;
+  }
+  &:hover {
+    .scale(1.1);
+  }
+  &:active {
+    .translate(0, 2px);
+  }
 }
 /* Well ================================================= */
 .well {
