@@ -317,6 +317,9 @@ body {
 		}
 	}
 }
+
+// Browser Upgrade
+// --------------------------------------------------
 .browser-upgrade {
 	background: #000;
 	text-align: center;
@@ -332,4 +335,34 @@ body {
 			border-bottom: 1px solid @white;
 		}
 	}
+}
+
+// Google Search
+// --------------------------------------------------
+#goog-fixurl {
+	ul {
+		list-style: none;
+		margin-left: 0;
+		padding-left: 0;
+		li {
+			list-style-type: none;
+		}
+	}
+}
+#goog-wm-qt {
+	width: auto;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	padding: 8px 20px;
+	display: inline-block;
+	.font-rem(14);
+	background-color: @white;
+	color: @black;
+	border-width: 2px !important;
+	border-style: solid !important;
+	border-color: lighten(@black,50);
+	.rounded(3px);
+}
+#goog-wm-sb {
+	.btn();
 }
