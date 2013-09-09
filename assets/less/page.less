@@ -69,8 +69,12 @@ body {
 	}
 	article {
 		h2 {
-			margin-bottom: 0;
-			.font-rem(24);
+			margin-bottom: 4px;
+			.font-rem(20);
+			text-transform: uppercase;
+		}
+		p {
+			.font-rem(14);
 		}
 		p+p {
 			text-indent: 0;
@@ -145,7 +149,6 @@ body {
 }
 .article-author-top {
 	display: none;
-	text-align: center;
 }
 .article-author-bottom {
 	margin-bottom: 1em;
@@ -204,15 +207,20 @@ body {
 		font-family: @heading-font;
 		border-bottom: 1px solid darken(@white, 50);
 		&:last-child {
-			border-bottom: 0 solid transparent;
+			border-bottom-width: 0;
 		}
-		a, a:hover {
-			color: @white;
-			border-bottom: 0 solid transparent;
-		}
-		a { 
+		a {
 			padding: 10px;
 			display: block;
+			color: @white;
+			border-bottom-width: 0;
+			&:hover {
+				font-weight: 400;
+				:before {
+					content: "\00bb";
+					padding-right: 5px;
+				}
+			}
 		}
 		ul {
 			margin: 0;
