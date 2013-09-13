@@ -10,7 +10,7 @@
 * Large feature images for posts and pages.
 * Simple and clear permalink structure.
 * [Custom 404 page](http://mmistakes.github.io/minimal-mistakes/404.html) to get you started.
-* Stylesheets for Pygments and Coderay [syntax highlighting](http://mmistakes.github.io/articles/minimal-mistakes/code-highlighting-post/) to make your code examples look snazzy.
+* Stylesheets for Pygments and Coderay [syntax highlighting](http://mmistakes.github.io/minimal-mistakes/articles/code-highlighting-post/) to make your code examples look snazzy.
 
 ![screenshot of Minimal Mistakes theme](http://mmistakes.github.io/minimal-mistakes/images/mm-theme-post-600.jpg)
 
@@ -25,7 +25,7 @@ General notes and suggestions for customizing Minimal Mistakes.
 5. Check out the sample posts in `_posts` to see examples for pulling in large feature images, tags, and other YAML data.
 6. Read the documentation below for further customization pointers and documentation.
 
-[Download the Theme](https://github.com/mmistakes/minimal-mistakes)
+[Demo the Theme](http://mmistakes.github.io/minimal-mistakes)
 
 **Pro-tip:** Delete the `gh-pages` branch after cloning and start fresh by branching off `master`. There is a bunch of garbage in `gh-pages` used for the theme's demo site that I'm guessing you don't want on your site.
 
