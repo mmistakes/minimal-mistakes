@@ -1,19 +1,19 @@
-title:            Site Title
+title:            ddswhu's Personal Page
 tagline:          A short tagline
 description:      Describe your website.
 #Comment out url when working locally to resolve base urls correctly
-url:              http://your-site.com
+url:              http://ddswhu.tk
 
 # Owner/author information
 owner:
-  name:           Your Name
+  name:           ddswhu
   avatar:         bio-photo.jpg
-  bio:            "Describe your self."
-  email:          your@email.com
+  bio:            "Graduate Student in the Economics School of Fudan University."
+  email:          ddswhu@email.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   twitter:        
   facebook:       
-  github:         
+  github:         https://github.com/ddswhu/
   linkedin:       
   instagram:      
   lastfm:         
@@ -41,7 +41,7 @@ links:
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    China/Shanghai
 future:      true
 pygments:    true
 markdown:    kramdown
