@@ -4,14 +4,14 @@
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
-{% include head.html %}
+{% include _head.html %}
 </head>
 
 <body class="article" itemscope itemtype="http://schema.org/WebPage">
 
-{% include browser-upgrade.html %}
+{% include _browser-upgrade.html %}
 
-{% include navigation.html %}
+{% include _navigation.html %}
 
 {% if page.image.feature %}<div class="image-wrap">
   <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image" itemprop="primaryImageOfPage">
@@ -20,7 +20,7 @@
 
 <div id="main" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">
   <div class="article-author-top">
-    {% include author-bio.html %}
+    {% include _author-bio.html %}
   </div>
   <article itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
     <div class="headline-wrap">
@@ -32,7 +32,7 @@
       <hr />
       <footer role="contentinfo">
         <div class="article-author-bottom">
-          {% include author-bio.html %}
+          {% include _author-bio.html %}
         </div>
         <p class="byline"><strong>{{ page.title }}</strong> was published on <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} and last modified on <time datetime="{{ page.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %} by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="{{ site.url }}/about" title="About {{ site.owner.name }}" itemprop="url">{{ site.owner.name }}</a></span></span>.</p>
       </footer>
@@ -59,11 +59,11 @@
     <hr />
   </div><!-- /.related-articles -->{% endif %}
   <footer>
-    {% include footer.html %}
+    {% include _footer.html %}
   </footer>
 </div><!-- /.footer-wrap -->
 
-{% include scripts.html %}	        
+{% include _scripts.html %}	        
 
 </body>
 </html>
