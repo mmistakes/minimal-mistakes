@@ -33,12 +33,12 @@ General notes and suggestions for customizing Minimal Mistakes.
 {% highlight text %}
 minimal-mistakes/
 ├── _includes/
-|    ├── author-bio.html  #bio stuff goes here
-|    ├── browser-upgrade.html  #displays on IE8 and less
-|    ├── footer.html  #site footer
-|    ├── head.html  #site head
-|    ├── navigation.html #site top nav
-|    └── scripts.html  #jQuery, plugins, GA, etc.
+|    ├── _author-bio.html  #bio stuff goes here
+|    ├── _browser-upgrade.html  #displays on IE8 and less
+|    ├── _footer.html  #site footer
+|    ├── _head.html  #site head
+|    ├── _navigation.html #site top nav
+|    └── _scripts.html  #jQuery, plugins, GA, etc.
 ├── _layouts/
 |    ├── home.html  #homepage layout
 |    ├── page.html  #page layout
@@ -69,7 +69,7 @@ Most of the variables found here are used in the .html files found in `_includes
 
 #### Owner/Author Information
 
-Change your name, bio, and avatar photo (100x100 pixels or larger), Twitter url, email, and Google+ url. If you want to link to an external image on Gravatar or something similiar you'll need to edit the path in `author-bio.html` since it assumes it is located in `\images`.
+Change your name, bio, and avatar photo (100x100 pixels or larger), Twitter url, email, and Google+ url. If you want to link to an external image on Gravatar or something similiar you'll need to edit the path in `_author-bio.html` since it assumes it is located in `\images`.
 
 Including a link to your Google+ profile has the added benefit of displaying [Google Authorship](https://plus.google.com/authorship) in Google search results if you've went ahead and applied for it. Don't have a Google+ account? Just leave it blank.
 
@@ -122,7 +122,7 @@ image:
 
 #### Thumbnails for OG and Twitter Cards
 
-Post and page thumbnails work the same way. These are used by [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) meta tags found in *head.html*. If you don't assign a thumbnail the default graphic *(default-thumb.png)* is used. I'd suggest changing this to something more meaningful --- your logo or avatar are good options.
+Post and page thumbnails work the same way. These are used by [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) meta tags found in *_head.html*. If you don't assign a thumbnail the default graphic *(default-thumb.png)* is used. I'd suggest changing this to something more meaningful --- your logo or avatar are good options.
 
 #### Table of Contents
 
@@ -180,6 +180,6 @@ Having a problem getting something to work or want to know why I setup something
 This theme is free and open source software, distributed under the [GNU General Public License]({{ site.url }}/LICENSE) version 2 or later. So feel free to use this Jekyll theme on your site without linking back to me or including a disclaimer. 
 
 
-[^1]: Used to generate absolute urls in `sitemap.xml`, `feed.xml`, and for canonical urls in `head.html`. Don't include a trailing `/` in your base url ie: `http://mademistakes.com`. When developing locally remove or comment out this line so local .css, .js, and images are used.
+[^1]: Used to generate absolute urls in `sitemap.xml`, `feed.xml`, and for canonical urls in `_head.html`. Don't include a trailing `/` in your base url ie: `http://mademistakes.com`. When developing locally remove or comment out this line so local .css, .js, and images are used.
 
 [^2]: If you're using GitHub Pages to host your site be aware that plugins are disabled. So you'll need to build your site locally and then manually deploy if you want to use this sweet plugin.
