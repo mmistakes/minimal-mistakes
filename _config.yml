@@ -31,11 +31,11 @@ bing_verify:
 # For external links add external: true
 links:
   - title: About
-    url: /about
+    url: /about/
   - title: Articles
-    url: /articles
+    url: /articles/
   - title: Theme Setup
-    url: /theme-setup
+    url: /theme-setup/
   - title: Made Mistakes
     url: http://mademistakes.com
     external: true
