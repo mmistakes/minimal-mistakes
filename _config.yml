@@ -31,11 +31,11 @@ bing_verify:        D81F4C18A6CB3018F64D7C827D953DFD
 # For external links add external: true
 links:
   - title: About
-    url: /about
-  - title: Articles
-    url: /articles
+    url: /about/
+  - title: Posts
+    url: /posts/
   - title: Theme Setup
-    url: /theme-setup
+    url: /theme-setup/
   - title: Made Mistakes
     url: http://mademistakes.com
     external: true
@@ -47,7 +47,7 @@ pygments:    true
 markdown:    kramdown
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title
+permalink:   /:categories/:title/
 
 kramdown:
   auto_ids: true
