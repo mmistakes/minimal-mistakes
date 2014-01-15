@@ -7,24 +7,24 @@
 {% include _head.html %}
 </head>
 
-<body class="page" itemscope itemtype="http://schema.org/WebPage">
+<body class="page">
 
 {% include _browser-upgrade.html %}
 
 {% include _navigation.html %}
 
 {% if page.image.feature %}<div class="image-wrap">
-  <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image" itemprop="primaryImageOfPage">
+  <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image">
   {% if page.image.credit %}<span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>{% endif %}
 </div><!-- /.image-wrap -->{% endif %}
 
-<div id="main" role="main"  itemprop="mainContentOfPage">
+<div id="main" role="main">
   <div class="article-author-side">
     {% include _author-bio.html %}
   </div>
-  <article itemscope itemtype="http://schema.org/CreativeWork">
-    <h1 itemprop="name">{{ page.title }}</h1>
-    <div class="article-wrap" itemprop="text">
+  <article>
+    <h1>{{ page.title }}</h1>
+    <div class="article-wrap">
       {{ content }}
     </div><!-- /.article-wrap -->
   </article>
