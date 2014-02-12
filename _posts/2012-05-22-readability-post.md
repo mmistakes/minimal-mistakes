@@ -3,7 +3,6 @@ layout: post
 title: "Testing Readability with a Bunch of Text"
 tagline: "A bunch of hipster ipsum for ya head."
 description: "A ton of text to test readability."
-category: articles
 tags: [sample post, readability, test]
 ---
 
