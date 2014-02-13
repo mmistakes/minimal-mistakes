@@ -1,71 +1,75 @@
 hr { 
-    display: block; 
-    margin: 1em 0; 
-    padding: 0;
-    height: 1px; 
-    border: 0; 
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #fff; 
+	display: block; 
+	margin: 1em 0; 
+	padding: 0;
+	height: 1px; 
+	border: 0; 
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #fff; 
 }
 /* Figures and images ==================================== */
 article img {
-  max-width: 100%;
-  height: auto;
-  border-width: 0; 
-  vertical-align: middle; 
-  -ms-interpolation-mode: bicubic; 
+	max-width: 100%;
+	height: auto;
+	border-width: 0; 
+	vertical-align: middle; 
+	-ms-interpolation-mode: bicubic; 
 }
 svg:not(:root) {
-    overflow: hidden; 
+		overflow: hidden; 
 }
 .half {
-  .container();
-  .clearfix();
-  img {
-    .grid(12,6);
-  }
-  figcaption {
-    .grid(12,12);
-  }
+	.container();
+	.clearfix();
+	@media @480px {
+		img {
+			.grid(12,6);
+		}
+		figcaption {
+			.grid(12,12);
+		}
+	}
 }
 .third {
-  .container();
-  .clearfix();
-  img {
-    .grid(12,4);
-  }
-  figcaption {
-    .grid(12,12);
-  }
+	.container();
+	.clearfix();
+	@media @480px {
+		img {
+			.grid(12,4);
+		}
+		figcaption {
+			.grid(12,12);
+		}
+	}
 }
 /* Buttons ============================================== */
 .btn {
-  display: inline-block;
-  margin-bottom: 20px;
-  padding: 8px 20px;
-  .font-rem(14);
-  background-color: @black;
-  color: @white;
-  border: 2px solid @black !important;
-  .rounded(4px);
-  &:visited {
-    color: @white;
-  }
-  &:hover {
-    background-color: @white;
-    color: @black;
-  }
-  &:active {
-    .translate(0, 2px);
-  }
+	display: inline-block;
+	margin-bottom: 20px;
+	padding: 8px 20px;
+	.font-rem(14);
+	background-color: @black;
+	color: @white;
+	border: 2px solid @black !important;
+	.rounded(4px);
+	&:visited {
+		color: @white;
+	}
+	&:hover {
+		background-color: @white;
+		color: @black;
+	}
+	&:active {
+		.translate(0, 2px);
+	}
 }
 /* Well ================================================= */
 .well {
-  min-height: 20px;
-  padding: 19px;
-  margin-bottom: 20px;
-  background-color: #f5f5f5;
-  border: 1px solid #e3e3e3;
-  .rounded(4px);
-  .box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.05));
+	min-height: 20px;
+	padding: 19px;
+	margin-bottom: 20px;
+	background-color: #f5f5f5;
+	border: 1px solid #e3e3e3;
+	.rounded(4px);
+	.box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.05));
 }
