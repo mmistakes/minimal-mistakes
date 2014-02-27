@@ -40,23 +40,15 @@
 </div><!-- /#main -->
 
 <div class="footer-wrap">
-  {% if site.related_posts.size > 0 %}<div class="related-articles">
+  <div class="related-articles">
   <h4>You might also enjoy <small class="pull-right">(<a href="{{ site.url }}/posts/">View all posts</a>)</small></h4>
     <ul>
     {% for post in site.related_posts limit:3 %}
-      {% assign match = false %}
-      {% for category in post.categories %}
-        {% if page.categories contains category %}
-          {% assign match = true %}
-        {% endif %}
-      {% endfor %}
-      {% if match %}
       <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-      {% endif %}
     {% endfor %}
     </ul>
     <hr />
-  </div><!-- /.related-articles -->{% endif %}
+  </div><!-- /.related-articles -->
   <footer>
     {% include _footer.html %}
   </footer>

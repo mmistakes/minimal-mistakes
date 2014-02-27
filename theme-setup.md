@@ -116,6 +116,7 @@ There are two rake tasks that can be used to create a new post or page with all 
 rake new_post
 
 Enter a title for your post: My Awesome Post
+Enter category name to group your post in (leave blank for none): blog
 Enter tags to classify your post (comma separated): web development, code
 Creating new post: _posts/2014-02-10-my-awesome-post.md
 {% endhighlight %}
