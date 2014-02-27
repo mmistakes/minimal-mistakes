@@ -43,30 +43,31 @@ General notes and suggestions for customizing Minimal Mistakes.
 {% highlight text %}
 minimal-mistakes/
 ├── _includes/
-|    ├── _author-bio.html  #bio stuff goes here
-|    ├── _browser-upgrade.html  #displays on IE8 and less
-|    ├── _footer.html  #site footer
-|    ├── _head.html  #site head
-|    ├── _navigation.html #site top nav
-|    └── _scripts.html  #jQuery, plugins, GA, etc.
+|    ├── _author-bio.html        # bio stuff layout. pulls optional owner data from _config.yml
+|    ├── _browser-upgrade.html   # prompt to install a modern browser for < IE9
+|    ├── _footer.html            # site footer
+|    ├── _head.html              # site head
+|    ├── _navigation.html        # site top navigation
+|    └── _scripts.html           # site scripts
 ├── _layouts/
-|    ├── home.html  #homepage layout
-|    ├── page.html  #page layout
-|    ├── post-index.html  #post index layout
-|    └── post.html  #post layout
-├── _posts/
+|    ├── home.html               # homepage layout
+|    ├── page.html               # page layout
+|    ├── post-index.html         # post index layout
+|    └── post.html               # single post layout
+├── _posts/                      # MarkDown formatted posts
 ├── assets/
-|    ├── css/  #preprocessed less styles
-|    ├── fonts/  #icon webfonts
+|    ├── css/                    # site stylesheets
+|    ├── fonts/                  # webfonts
 |    ├── js/
-|    |   ├── _main.js  #Main JavaScript file, plugin settings, etc
-|    |   ├── plugins  #jQuery plugins
-|    |   └── vendor/  #jQuery and Modernizr
+|    |   ├── _main.js            # main JavaScript file, plugin settings, etc
+|    |   ├── plugins/            # scripts and jQuery plugins to combine with _main.js
+|    |   ├── scripts.min.js      # concatenated and minified _main.js + plugin scripts
+|    |   └── vendor/             # vendor scripts to leave alone and load as is
 |    └── less/
-├── images/  # images for posts and pages
-├── about.md  # about page
-├── posts.md  # lists all posts from latest to oldest
-└── index.md  # homepage. lists 5 most recent posts
+├── images/                      # images for posts and pages
+├── about.md                     # sample about page
+├── posts.md                     # sample post index page. lists all posts in reverse chronology
+└── index.md                     # sample homepage. lists 5 latest posts
 {% endhighlight %}
 
 ---
@@ -75,7 +76,7 @@ minimal-mistakes/
 
 ### _config.yml
 
-Most of the variables found here are used in the .html files found in `_includes` if you need to add or remove anything. A good place to start would be to change the title, tagline, description, and url of your site. When working locally comment out `url` or else you will get a bunch of broken links because they are absolute and prefixed with `{{ "{{ site.url " }}}}`[^1] in the various `_includes` and `_layouts`. Just remember to uncomment `url` when building for deployment or pushing to **gh-pages**...
+Most of the variables found here are used in the .html files found in `_includes` if you need to add or remove anything. A good place to start would be to change the `title`, `description`, and `url` of your site. When working locally use `http://localhost:4000` or comment out `url` to avoid broken links prefixed with `{{ "{{ site.url " }}}}`[^1] in the various `_includes` and `_layouts`. Just remember to set `url` back to the live domain before deploying or pushing to GitHub Pages.
 
 #### Owner/Author Information
 
