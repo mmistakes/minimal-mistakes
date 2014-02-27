@@ -13,12 +13,17 @@ owner:
   twitter:        
   facebook:       
   github:         
+  stackoverflow: 
   linkedin:       
   instagram:      
   lastfm:         
-  tumblr:         
+  tumblr: 
+  pinterest: 
+  foursquare: 
+  steam: 
+  dribbble: 
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:    
+  google_plus:
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:   
