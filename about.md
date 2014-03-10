@@ -6,7 +6,7 @@ tagline: Minimal Mistakes, a Jekyll Theme
 tags: [about, Jekyll, theme, responsive]
 modified: 9-9-2013
 image:
-  feature: texture-feature-02.jpg
+  feature: http://lh3.googleusercontent.com/gv26Akm_nGFqhsIm6_YFsrK0Po3SHD9rrNTZIio9PiJP=w1358-h402-no
   credit: Texture Lovers
   creditlink: http://texturelovers.com
 ---
