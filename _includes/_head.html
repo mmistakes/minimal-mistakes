@@ -3,20 +3,43 @@
 <meta name="description" content="{{ page.description }}">
 <meta name="keywords" content="{{ page.tags | join: ', ' }}">
 {% if site.owner.twitter %}<!-- Twitter Cards -->
-{% if page.image.feature %}<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content=
-	{% if page.image.feature contains 'http://' %}
-		"{{ page.image.feature }}"
-	{% elsif page.image.feature contains 'https://' %}
-		"{{ page.image.feature }}"
+	{% if page.image.feature %}
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:image" content=
+			{% if page.image.feature contains 'http://' %}
+				"{{ page.image.feature }}"
+			{% elsif page.image.feature contains 'https://' %}
+				"{{ page.image.feature }}"
+			{% else %}
+				"{{ site.url }}/images/{{ page.image.feature }}"
+			{% endif %}
+		>
 	{% else %}
-		"{{ site.url }}/images/{{ page.image.feature }}">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:image" content=
+			{% if page.image.thumb %}
+				{% if page.image.thumb contains 'http://' %}
+						"{{ page.image.thumb }}"
+				{% elsif page.image.thumb contains 'https://' %}
+					"{{ page.image.thumb }}"
+				{% else %}
+						"{{ site.url }}/images/{{ page.image.thumb }}"
+				{% endif %}
+			{% else %}
+				{% if site.logo contains 'http://' %}
+						"{{ site.logo }}"
+				{% elsif site.logo contains 'https://' %}
+					"{{ site.logo }}"
+				{% else %}
+						"{{ site.url }}/images/{{ site.logo }}"
+				{% endif %}
+			{% endif %}
+		>
 	{% endif %}
-{% else %}<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="{% if page.image.thumb %}{{ site.url }}/images/{{ page.image.thumb }}{% else %}{{ site.url }}/images/{{ site.logo }}{% endif %}">{% endif %}
-<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-<meta name="twitter:creator" content="@{{ site.owner.twitter }}">{% endif %}
+	<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+	<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+	<meta name="twitter:creator" content="@{{ site.owner.twitter }}">
+{% endif %}
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
