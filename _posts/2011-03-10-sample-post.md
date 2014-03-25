@@ -8,6 +8,7 @@ image:
   feature: texture-feature-05.jpg
   credit: Texture Lovers
   creditlink: http://texturelovers.com
+comments: true
 ---
 
 <section id="table-of-contents" class="toc">
