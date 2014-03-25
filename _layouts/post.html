@@ -36,7 +36,11 @@
   </div>
   <article>
     <div class="headline-wrap">
-      <h1>{{ page.title }}</h1>
+      {% if page.link %}
+        <h1><a href="{{ page.link }}">{{ page.title }}</a></h1>
+      {% else %}
+        <h1><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
+      {% endif %}
     </div><!--/ .headline-wrap -->
     <div class="article-wrap">
       {{ content }}
