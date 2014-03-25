@@ -24,9 +24,17 @@
       "{{ site.url }}/images/{{ page.image.feature }}"
     {% endif %}
   alt="{{ page.title }} feature image">
-  {% if page.image.credit %}
-    <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
-  {% endif %}
+  <span class="image-credit">
+    {% if page.image.caption %}
+       <a href="{{ page.image.captionlink }}">{{ page.image.caption }}</a>
+    {% endif %}
+    {% if page.image.credit %}
+       by <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a>
+    {% endif %}
+    {% if page.image.location %}
+       in <a href="{{ page.image.locationlink }}">{{ page.image.location }}</a>
+     {% endif %}
+  </span>
   </div><!-- /.image-wrap -->
 {% endif %}
 
@@ -39,6 +47,9 @@
     <div class="article-wrap">
       {{ content }}
     </div><!-- /.article-wrap -->
+  {% if site.disqus_shortname and page.comments %}
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
+  {% endif %}
   </article>
 </div><!-- /#index -->
 
