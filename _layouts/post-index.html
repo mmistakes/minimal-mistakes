@@ -36,20 +36,38 @@
 
 <div id="index">
   <h1>{{ page.title }}</h1>
-  {% for post in site.posts %}  
-  {% unless post.next %}
-    <h3>{{ post.date | date: '%Y' }}</h3>
-    {% else %}
-      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-      {% if year != nyear %}
-        <h3>{{ post.date | date: '%Y' }}</h3>
-      {% endif %}
-    {% endunless %}
-    <article>
-      <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-      <p>{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}</p>
-    </article>
+  {% for post in site.posts %}
+  {% if page.category %}
+    {% if post.categories contains page.category %}
+    {% unless post.next %}
+      <h3>{{ post.date | date: '%Y' }}</h3>
+      {% else %}
+        {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+        {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+        {% if year != nyear %}
+          <h3>{{ post.date | date: '%Y' }}</h3>
+        {% endif %}
+      {% endunless %}
+      <article>
+        <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+        <p>{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}</p>
+      </article>
+    {% endif %}
+  {% else %}
+    {% unless post.next %}
+      <h3>{{ post.date | date: '%Y' }}</h3>
+      {% else %}
+        {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+        {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+        {% if year != nyear %}
+          <h3>{{ post.date | date: '%Y' }}</h3>
+        {% endif %}
+      {% endunless %}
+      <article>
+        <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+        <p>{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}</p>
+      </article>
+  {% endif %}
   {% endfor %}
 </div><!-- /#index -->
 
