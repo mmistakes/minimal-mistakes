@@ -81,7 +81,7 @@ body {
 }
 // Navicon lines
 @button-size: 1.5rem;
-.line() {
+.navicon-line() {
 	display: inline-block;
 	width: @button-size;
 	height: @button-size/7;
@@ -90,29 +90,29 @@ body {
 	border-radius: @button-size/14;
 	transition: .3s;
 }
-.lines-button {
+.navicon-lines-button {
 	padding: @button-size/4 @button-size/2;
 	transition: .3s;
 	cursor: pointer;
 	user-select: none;
 	border-radius: @button-size/7;
 }
-.lines-button:hover {
+.navicon-lines-button:hover {
 	opacity: 1;
 }
-.lines-button:active {
+.navicon-lines-button:active {
 	transition: 0;
 }
-.lines {
+.navicon-lines {
 	margin-right: 10px;
 	margin-bottom: @button-size/5;
 	// create middle line
-	.line();
+	.navicon-line();
 	position: relative;
 	// create the upper and lower lines as pseudo-elements of the middle line
 	&:before,
 	&:after {
-		.line();
+		.navicon-line();
 		position: absolute;
 		left: 0;
 		content: '';
@@ -122,14 +122,14 @@ body {
 	&:before { top: @button-size/4; }
 	&:after { top: -@button-size/4; }
 }
-.lines-button:hover {
+.navicon-lines-button:hover {
 	opacity: 1;
-	.lines {
+	.navicon-lines {
 		&:before { top: @button-size/3.5; }
 		&:after { top: -@button-size/3.5; }
 	}
 }
-.lines-button.x.active .lines {
+.navicon-lines-button.x.active .navicon-lines {
 	// hide the middle line
 	background: transparent;
 	// overlap the lines by setting both their top values to 0
