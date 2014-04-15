@@ -1,8 +1,8 @@
 title:            Aravind's Blog
 description:      A responsive Jekyll theme large featured images and solid typography.
 #Comment out url when working locally to resolve base urls correctly
-#url:              #http://aravind646.github.com
-url:              http://localhost:4000
+url:              http://aravind646.github.com
+#url:              http://localhost:4000
 disqus_shortname:
 
 # Owner/author information
