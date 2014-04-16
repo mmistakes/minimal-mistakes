@@ -8,7 +8,9 @@ disqus_shortname:
 owner:
   name:           Your Name
   avatar:         bio-photo.jpg
-  bio:            "Describe your self."
+  bio:            
+    en: "Describe your self."
+    de: "Beschreiben Sie sich."
   email:          your@email.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   twitter:        
