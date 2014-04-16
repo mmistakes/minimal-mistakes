@@ -35,15 +35,22 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
+  en:
   - title: About
     url: /about/
   - title: Posts
     url: /posts/
+  - title: Bilingual Posts
+    url: /bilingual-posts/
   - title: Theme Setup
     url: /theme-setup/
   - title: Made Mistakes
     url: http://mademistakes.com
     external: true
+
+  de:
+  - title: Zweisprachige Einträge
+    url: /zweisprachige-eintraege/
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York

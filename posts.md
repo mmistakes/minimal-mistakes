@@ -1,7 +1,7 @@
 ---
 layout: post-index
 permalink: /posts/
-title: All Posts
-tagline: A List of Posts
+title: Bilingual Posts
+tagline: A List of all Bilingual Posts
 tags: [blog]
 ---

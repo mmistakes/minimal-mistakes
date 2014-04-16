@@ -6,7 +6,7 @@
 	<img src="{{ site.url }}/images/{{ site.owner.avatar }}" class="bio-photo" alt="{{ site.owner.name }} bio photo"></a>
 {% endif %}
 <h3>{{ site.owner.name }}</h3>
-<p>{{ site.owner.bio }}</p>
+<p>{{ site.owner.bio.[page.lang] }}</p>
 {% if site.owner.twitter %}<a href="http://twitter.com/{{ site.owner.twitter }}" class="author-social" target="_blank"><i class="icon-twitter"></i> Twitter</a>{% endif %}
 {% if site.owner.facebook %}<a href="http://facebook.com/{{ site.owner.facebook }}" class="author-social" target="_blank"><i class="icon-facebook"></i> Facebook</a>{% endif %}
 {% if site.owner.google_plus %}<a href="http://plus.google.com/+{{ site.owner.google_plus }}" class="author-social" target="_blank"><i class="icon-google-plus"></i> Google+</a>{% endif %}
