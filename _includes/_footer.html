@@ -1,1 +1,5 @@
-<span>&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> theme.</span>
+{% if page.lang == 'de' %}
+	<span>&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}. Läuft auf <a href="http://jekyllrb.com">Jekyll</a> basierend auf der <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> Vorlage.</span>
+{% else %}
+	<span>&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> theme.</span>
+{% endif %}

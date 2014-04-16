@@ -1,13 +1,30 @@
 <div class="navigation-wrapper">
 	<div class="site-name">
 		<a href="{{ site.url }}">{{ site.title }}</a>
+		{% if page.trans %}
+		     {% if page.lang != 'de'%}  <span class="active">en</span> |
+    		     {% if page.trans %}    <a href="{{page.trans}}">de</a>
+    		     {% else %}             <span class="inactive">de</span>
+    	         {% endif %}
+		     {% else %}
+    		     {% if page.trans %}    <a href="{{page.trans}}">en</a>
+    		     {% else %}             <span class="inactive">en</span>
+    		     {% endif %}          | <span class="active">de</span>
+		     {% endif %}
+		{% endif %}
 	</div><!-- /.site-name -->
 	<div class="top-navigation">
 		<nav role="navigation" id="site-nav" class="nav">
 		    <ul>
-		        {% for link in site.links %}
-				<li><a href="{% if link.external %}{{ link.url }}{% else %}{{ site.url }}{{ link.url }}{% endif %}" {% if link.external %}target="_blank"{% endif %}>{{ link.title }}</a></li>
-		        {% endfor %}
+		        {% if page.lang %}
+		        	{% for link in site.links.[page.lang] %}
+						<li><a href="{% if link.external %}{{ link.url }}{% else %}{{ site.url }}{{ link.url }}{% endif %}" {% if link.external %}target="_blank"{% endif %}>{{ link.title }}</a></li>
+					{% endfor %}
+				{% else %}
+					{% for link in site.links.en %}
+						<li><a href="{% if link.external %}{{ link.url }}{% else %}{{ site.url }}{{ link.url }}{% endif %}" {% if link.external %}target="_blank"{% endif %}>{{ link.title }}</a></li>
+					{% endfor %}
+				{% endif %}
 		    </ul>
 		</nav>
 	</div><!-- /.top-navigation -->

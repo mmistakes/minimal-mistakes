@@ -60,13 +60,36 @@
 
 <div class="footer-wrap">
   <div class="related-articles">
-  <h4>You might also enjoy <small class="pull-right">(<a href="{{ site.url }}/posts/">View all posts</a>)</small></h4>
-    <ul>
-    {% for post in site.related_posts limit:3 %}
-      <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-    {% endfor %}
-    </ul>
-    <hr />
+  {% if page.lang == 'de' %}
+    <h4>Ihnen gefällt vielleicht auch <small class="pull-right">(<a href="{{ site.url }}/posts/">Alle Einträge ansehen</a>)</small></h4>
+      <ul>
+      {% for post in site.related_posts limit:3 %}
+        {% if post.lang == page.lang %}
+          <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+      </ul>
+      <hr />
+  {% elsif page.lang == 'en' %}
+    <h4>You might also enjoy <small class="pull-right">(<a href="{{ site.url }}/posts/">View all posts</a>)</small></h4>
+      <ul>
+      {% for post in site.related_posts limit:3 %}
+        {% if post.lang == page.lang %}
+          <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+      </ul>
+      <hr />
+  {% else %}
+    <h4>You might also enjoy <small class="pull-right">(<a href="{{ site.url }}/posts/">View all posts</a>)</small></h4>
+      <ul>
+      {% for post in site.related_posts limit:3 %}
+        <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+        }
+      {% endfor %}
+      </ul>
+      <hr />
+  {% endif %}
   </div><!-- /.related-articles -->
   <footer>
     {% include _footer.html %}
