@@ -16,6 +16,7 @@ GEM
     commander (4.1.6)
       highline (~> 1.6.11)
     fast-stemmer (1.0.2)
+    ffi (1.9.3)
     ffi (1.9.3-x86-mingw32)
     highline (1.6.20)
     i18n (0.6.9)
@@ -42,9 +43,10 @@ GEM
     parslet (1.5.0)
       blankslate (~> 2.0)
     posix-spawn (0.3.8)
+    pygments.rb (0.5.4)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.1.0)
-    rake (10.1.1)
+    rake (10.2.2)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.3)
       ffi (>= 0.5.0)
@@ -59,9 +61,11 @@ GEM
     toml (0.1.0)
       parslet (~> 1.5.0)
     tzinfo (0.3.38)
+    yajl-ruby (1.1.0)
     yajl-ruby (1.1.0-x86-mingw32)
 
 PLATFORMS
+  ruby
   x86-mingw32
 
 DEPENDENCIES
@@ -69,6 +73,6 @@ DEPENDENCIES
   coderay
   jekyll
   kramdown
-  rake
+  rake (= 10.2.2)
   stringex
   thor

@@ -1,9 +1,10 @@
 title:            Aravind Selvan
 description:      A responsive Jekyll theme large featured images and solid typography.
 #Comment out url when working locally to resolve base urls correctly
-#url:              http://aravind646.github.com
-#url:              http://localhost:4000
-disqus_shortname:
+#url:              http://aravindselvan.com
+url:              http://localhost:4000
+
+disqus_shortname: aravindselvan
 
 # Owner/author information
 owner:
@@ -37,15 +38,11 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: About
-    url: /about/
-  - title: Posts
-    url: /posts/
-  - title: Theme Setup
-    url: /theme-setup/
-  - title: Made Mistakes
-    url: http://mademistakes.com
-    external: true
+  - title: Blog
+    url: /blog/
+  # - title: Made Mistakes
+  #   url: http://mademistakes.com
+  #   external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Asia/Kolkata
