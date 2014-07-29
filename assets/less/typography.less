@@ -28,14 +28,14 @@ a {
 	text-decoration: none;
 	color: @link-color; 
 	&:visited { 
-		color: lighten(@link-color, 20); 
+		color: @linkcolorvisited; 
 	}
 	&:hover { 
-		color: darken(@link-color, 20); 
+		color: @linkcolorhover; 
 	}
 	&:focus { 
 		outline: thin dotted; 
-		color: darken(@link-color, 20);
+		color: @linkcolorfocus;
 	}
 	&:hover, 
 	&:active { 
