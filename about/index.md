@@ -1,9 +1,7 @@
 ---
 layout: page
 title: About the Theme
-tags: [about, Jekyll, theme, responsive]
-modified: 9-9-2013
-comments: true
+modified: 2014-07-31T15:01:46.840000-04:00
 image:
   feature: texture-feature-02.jpg
   credit: Texture Lovers

@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title:            Site Title
+title:            Minimal Mistakes
 locale:           en_US
-url:              http://localhost:4000
+url:              http://mmistakes.github.io/minimal-mistakes
 
 
 # Jekyll configuration
@@ -26,10 +26,10 @@ kramdown:
 
 # Site owner
 owner:
-  name: Your Name
+  name: Michael Rose
   avatar: bio-photo.jpg
-  bio: "Describe your self."
-  email: your@email.com
+  bio: "Just another boring, time traveling, tattooed, designer from Buffalo New York."
+  email: michael@mademistakes.com
   disqus-shortname: minimalmistakes
   twitter: mmistakes
   facebook: michaelrose
