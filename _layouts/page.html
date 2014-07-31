@@ -16,9 +16,7 @@
 {% if page.image.feature %}
   <div class="image-wrap">
   <img src=
-    {% if page.image.feature contains 'http://' %}
-      "{{ page.image.feature }}"
-    {% elsif page.image.feature contains 'https://' %}
+    {% if page.image.feature contains 'http' %}
       "{{ page.image.feature }}"
     {% else %}
       "{{ site.url }}/images/{{ page.image.feature }}"
@@ -39,7 +37,7 @@
     <div class="article-wrap">
       {{ content }}
     </div><!-- /.article-wrap -->
-    {% if site.disqus_shortname and page.comments %}
+    {% if site.owner.disqus-shortname and page.comments == true %}
       <section id="disqus_thread"></section><!-- /#disqus_thread -->
     {% endif %}
   </article>
