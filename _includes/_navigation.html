@@ -5,9 +5,14 @@
 	<div class="top-navigation">
 		<nav role="navigation" id="site-nav" class="nav">
 		    <ul>
-		        {% for link in site.links %}
-				<li><a href="{% if link.external %}{{ link.url }}{% else %}{{ site.url }}{{ link.url }}{% endif %}" {% if link.external %}target="_blank"{% endif %}>{{ link.title }}</a></li>
-		        {% endfor %}
+		        {% for link in site.data.navigation %}
+					    {% if link.url contains 'http' %}
+					        {% assign domain = '' %}
+					        {% else %}
+					        {% assign domain = site.url %}
+					    {% endif %}
+					    <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
+					  {% endfor %}
 		    </ul>
 		</nav>
 	</div><!-- /.top-navigation -->
