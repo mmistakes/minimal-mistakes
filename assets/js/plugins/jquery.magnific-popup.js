@@ -1,4 +1,4 @@
-/*! Magnific Popup - v0.9.3 - 2013-07-16
+/*! Magnific Popup - v0.9.9 - 2013-12-27
 * http://dimsemenov.com/plugins/magnific-popup/
 * Copyright (c) 2013 Dmitry Semenov; */
 ;(function($) {
@@ -76,9 +76,6 @@ var _mfpOn = function(name, f) {
 			}
 		}
 	},
-	_setFocus = function() {
-		(mfp.st.focus ? mfp.content.find(mfp.st.focus).eq(0) : mfp.wrap).trigger('focus');
-	},
 	_getCloseBtn = function(type) {
 		if(type !== _currPopupType || !mfp.currTemplate.closeBtn) {
 			mfp.currTemplate.closeBtn = $( mfp.st.closeMarkup.replace('%title%', mfp.st.tClose ) );
@@ -93,41 +90,6 @@ var _mfpOn = function(name, f) {
 			mfp.init();
 			$.magnificPopup.instance = mfp;
 		}
-	},
-	// Check to close popup or not
-	// "target" is an element that was clicked
-	_checkIfClose = function(target) {
-
-		if($(target).hasClass(PREVENT_CLOSE_CLASS)) {
-			return;
-		}
-
-		var closeOnContent = mfp.st.closeOnContentClick;
-		var closeOnBg = mfp.st.closeOnBgClick;
-
-		if(closeOnContent && closeOnBg) {
-			return true;
-		} else {
-
-			// We close the popup if click is on close button or on preloader. Or if there is no content.
-			if(!mfp.content || $(target).hasClass('mfp-close') || (mfp.preloader && target === mfp.preloader[0]) ) {
-				return true;
-			}
-
-			// if click is outside the content
-			if(  (target !== mfp.content[0] && !$.contains(mfp.content[0], target))  ) {
-				if(closeOnBg) {
-					// last check, if the clicked element is in DOM, (in case it's removed onclick)
-					if( $.contains(document, target) ) {
-						return true;
-					}
-				}
-			} else if(closeOnContent) {
-				return true;
-			}
-
-		}
-		return false;
 	},
 	// CSS transition detection, http://stackoverflow.com/questions/7264899/detect-css-transitions-using-javascript-and-without-modernizr
 	supportsTransitions = function() {
@@ -172,7 +134,6 @@ MagnificPopup.prototype = {
 		// We disable fixed positioned lightbox on devices that don't handle it nicely.
 		// If you know a better way of detecting this - let me know.
 		mfp.probablyMobile = (mfp.isAndroid || mfp.isIOS || /(Opera Mini)|Kindle|webOS|BlackBerry|(Opera Mobi)|(Windows Phone)|IEMobile/i.test(navigator.userAgent) );
-		_body = $(document.body);
 		_document = $(document);
 
 		mfp.popupsCache = {};
@@ -183,6 +144,10 @@ MagnificPopup.prototype = {
 	 * @param  data [description]
 	 */
 	open: function(data) {
+
+		if(!_body) {
+			_body = $(document.body);
+		}
 
 		var i;
 
@@ -254,7 +219,7 @@ MagnificPopup.prototype = {
 			});
 
 			mfp.wrap = _getEl('wrap').attr('tabindex', -1).on('click'+EVENT_NS, function(e) {
-				if(_checkIfClose(e.target)) {
+				if(mfp._checkIfClose(e.target)) {
 					mfp.close();
 				}
 			});
@@ -349,7 +314,7 @@ MagnificPopup.prototype = {
             if(mfp._hasScrollBar(windowHeight)){
                 var s = mfp._getScrollbarSize();
                 if(s) {
-                    windowStyles.paddingRight = s;
+                    windowStyles.marginRight = s;
                 }
             }
         }
@@ -378,14 +343,11 @@ MagnificPopup.prototype = {
 
 		_mfpTrigger('BuildControls');
 
-
-		// remove scrollbar, add padding e.t.c
+		// remove scrollbar, add margin e.t.c
 		$('html').css(windowStyles);
 		
 		// add everything to DOM
-		mfp.bgOverlay.add(mfp.wrap).prependTo( document.body );
-
-
+		mfp.bgOverlay.add(mfp.wrap).prependTo( mfp.st.prependTo || _body );
 
 		// Save last focused element
 		mfp._lastFocusedEl = document.activeElement;
@@ -395,25 +357,22 @@ MagnificPopup.prototype = {
 			
 			if(mfp.content) {
 				mfp._addClassToMFP(READY_CLASS);
-				_setFocus();
+				mfp._setFocus();
 			} else {
 				// if content is not defined (not loaded e.t.c) we add class only for BG
 				mfp.bgOverlay.addClass(READY_CLASS);
 			}
 			
 			// Trap the focus in popup
-			_document.on('focusin' + EVENT_NS, function (e) {
-				if( e.target !== mfp.wrap[0] && !$.contains(mfp.wrap[0], e.target) ) {
-					_setFocus();
-					return false;
-				}
-			});
+			_document.on('focusin' + EVENT_NS, mfp._onFocusIn);
 
 		}, 16);
 
 		mfp.isOpen = true;
 		mfp.updateSize(windowHeight);
 		_mfpTrigger(OPEN_EVENT);
+
+		return data;
 	},
 
 	/**
@@ -454,7 +413,7 @@ MagnificPopup.prototype = {
 		mfp._removeClassFromMFP(classesToRemove);
 
 		if(mfp.fixedContentPos) {
-			var windowStyles = {paddingRight: ''};
+			var windowStyles = {marginRight: ''};
 			if(mfp.isIE7) {
 				$('body, html').css('overflow', '');
 			} else {
@@ -480,7 +439,7 @@ MagnificPopup.prototype = {
 
 
 		if(mfp._lastFocusedEl) {
-			$(mfp._lastFocusedEl).trigger('focus'); // put tab focus back
+			$(mfp._lastFocusedEl).focus(); // put tab focus back
 		}
 		mfp.currItem = null;	
 		mfp.content = null;
@@ -606,11 +565,12 @@ MagnificPopup.prototype = {
 	 */
 	parseEl: function(index) {
 		var item = mfp.items[index],
-			type = item.type;
+			type;
 
 		if(item.tagName) {
 			item = { el: $(item) };
 		} else {
+			type = item.type;
 			item = { data: item, src: item.src };
 		}
 
@@ -749,6 +709,41 @@ MagnificPopup.prototype = {
 	/*
 		"Private" helpers that aren't private at all
 	 */
+	// Check to close popup or not
+	// "target" is an element that was clicked
+	_checkIfClose: function(target) {
+
+		if($(target).hasClass(PREVENT_CLOSE_CLASS)) {
+			return;
+		}
+
+		var closeOnContent = mfp.st.closeOnContentClick;
+		var closeOnBg = mfp.st.closeOnBgClick;
+
+		if(closeOnContent && closeOnBg) {
+			return true;
+		} else {
+
+			// We close the popup if click is on close button or on preloader. Or if there is no content.
+			if(!mfp.content || $(target).hasClass('mfp-close') || (mfp.preloader && target === mfp.preloader[0]) ) {
+				return true;
+			}
+
+			// if click is outside the content
+			if(  (target !== mfp.content[0] && !$.contains(mfp.content[0], target))  ) {
+				if(closeOnBg) {
+					// last check, if the clicked element is in DOM, (in case it's removed onclick)
+					if( $.contains(document, target) ) {
+						return true;
+					}
+				}
+			} else if(closeOnContent) {
+				return true;
+			}
+
+		}
+		return false;
+	},
 	_addClassToMFP: function(cName) {
 		mfp.bgOverlay.addClass(cName);
 		mfp.wrap.addClass(cName);
@@ -759,6 +754,15 @@ MagnificPopup.prototype = {
 	},
 	_hasScrollBar: function(winHeight) {
 		return (  (mfp.isIE7 ? _document.height() : document.body.scrollHeight) > (winHeight || _window.height()) );
+	},
+	_setFocus: function() {
+		(mfp.st.focus ? mfp.content.find(mfp.st.focus).eq(0) : mfp.wrap).focus();
+	},
+	_onFocusIn: function(e) {
+		if( e.target !== mfp.wrap[0] && !$.contains(mfp.wrap[0], e.target) ) {
+			mfp._setFocus();
+			return false;
+		}
 	},
 	_parseMarkup: function(template, values, item) {
 		var arr;
@@ -827,8 +831,12 @@ $.magnificPopup = {
 	open: function(options, index) {
 		_checkInstance();	
 
-		if(!options) 
+		if(!options) {
 			options = {};
+		} else {
+			options = $.extend(true, {}, options);
+		}
+			
 
 		options.isObj = true;
 		options.index = index || 0;
@@ -836,7 +844,7 @@ $.magnificPopup = {
 	},
 
 	close: function() {
-		return $.magnificPopup.instance.close();
+		return $.magnificPopup.instance && $.magnificPopup.instance.close();
 	},
 
 	registerModule: function(name, module) {
@@ -879,6 +887,8 @@ $.magnificPopup = {
 		alignTop: false,
 	
 		removalDelay: 0,
+
+		prependTo: null,
 		
 		fixedContentPos: 'auto', 
 	
@@ -926,7 +936,9 @@ $.fn.magnificPopup = function(options) {
 		}
 
 	} else {
-
+		// clone options obj
+		options = $.extend(true, {}, options);
+		
 		/*
 		 * As Zepto doesn't support .data() method for objects 
 		 * and it works only in normal browsers
@@ -1043,6 +1055,12 @@ var AJAX_NS = 'ajax',
 		if(_ajaxCur) {
 			_body.removeClass(_ajaxCur);
 		}
+	},
+	_destroyAjaxRequest = function() {
+		_removeAjaxCursor();
+		if(mfp.req) {
+			mfp.req.abort();
+		}
 	};
 
 $.magnificPopup.registerModule(AJAX_NS, {
@@ -1058,14 +1076,9 @@ $.magnificPopup.registerModule(AJAX_NS, {
 			mfp.types.push(AJAX_NS);
 			_ajaxCur = mfp.st.ajax.cursor;
 
-			_mfpOn(CLOSE_EVENT+'.'+AJAX_NS, function() {
-				_removeAjaxCursor();
-				if(mfp.req) {
-					mfp.req.abort();
-				}
-			});
+			_mfpOn(CLOSE_EVENT+'.'+AJAX_NS, _destroyAjaxRequest);
+			_mfpOn('BeforeChange.' + AJAX_NS, _destroyAjaxRequest);
 		},
-
 		getAjax: function(item) {
 
 			if(_ajaxCur)
@@ -1089,7 +1102,7 @@ $.magnificPopup.registerModule(AJAX_NS, {
 
 					_removeAjaxCursor();
 
-					_setFocus();
+					mfp._setFocus();
 
 					setTimeout(function() {
 						mfp.wrap.addClass(READY_CLASS);
@@ -1144,11 +1157,15 @@ $.magnificPopup.registerModule('image', {
 	options: {
 		markup: '<div class="mfp-figure">'+
 					'<div class="mfp-close"></div>'+
-					'<div class="mfp-img"></div>'+
-					'<div class="mfp-bottom-bar">'+
-						'<div class="mfp-title"></div>'+
-						'<div class="mfp-counter"></div>'+
-					'</div>'+
+					'<figure>'+
+						'<div class="mfp-img"></div>'+
+						'<figcaption>'+
+							'<div class="mfp-bottom-bar">'+
+								'<div class="mfp-title"></div>'+
+								'<div class="mfp-counter"></div>'+
+							'</div>'+
+						'</figcaption>'+
+					'</figure>'+
 				'</div>',
 		cursor: 'mfp-zoom-out-cur',
 		titleSrc: 'title', 
@@ -1183,7 +1200,7 @@ $.magnificPopup.registerModule('image', {
 		},
 		resizeImage: function() {
 			var item = mfp.currItem;
-			if(!item.img) return;
+			if(!item || !item.img) return;
 
 			if(mfp.st.image.verticalFit) {
 				var decr = 0;
@@ -1307,7 +1324,7 @@ $.magnificPopup.registerModule('image', {
 
 			var el = template.find('.mfp-img');
 			if(el.length) {
-				var img = new Image();
+				var img = document.createElement('img');
 				img.className = 'mfp-img';
 				item.img = $(img).on('load.mfploader', onLoadComplete).on('error.mfploader', onLoadError);
 				img.src = item.src;
@@ -1317,8 +1334,12 @@ $.magnificPopup.registerModule('image', {
 				if(el.is('img')) {
 					item.img = item.img.clone();
 				}
-				if(item.img[0].naturalWidth > 0) {
+
+				img = item.img[0];
+				if(img.naturalWidth > 0) {
 					item.hasSize = true;
+				} else if(!img.width) {										
+					item.hasSize = false;
 				}
 			}
 
@@ -1384,7 +1405,8 @@ $.magnificPopup.registerModule('zoom', {
 
 		initZoom: function() {
 			var zoomSt = mfp.st.zoom,
-				ns = '.zoom';
+				ns = '.zoom',
+				image;
 				
 			if(!zoomSt.enabled || !mfp.supportsTransition) {
 				return;
@@ -1488,6 +1510,7 @@ $.magnificPopup.registerModule('zoom', {
 					if(animatedImg) {
 						animatedImg.remove();
 					}
+					image = null;
 				}	
 			});
 		},
@@ -1668,7 +1691,7 @@ var _getLoopedId = function(index) {
 		return index;
 	},
 	_replaceCurrTotal = function(text, curr, total) {
-		return text.replace('%curr%', curr + 1).replace('%total%', total);
+		return text.replace(/%curr%/gi, curr + 1).replace(/%total%/gi, total);
 	};
 
 $.magnificPopup.registerModule('gallery', {
@@ -1732,8 +1755,8 @@ $.magnificPopup.registerModule('gallery', {
 			_mfpOn('BuildControls' + ns, function() {
 				if(mfp.items.length > 1 && gSt.arrows && !mfp.arrowLeft) {
 					var markup = gSt.arrowMarkup,
-						arrowLeft = mfp.arrowLeft = $( markup.replace('%title%', gSt.tPrev).replace('%dir%', 'left') ).addClass(PREVENT_CLOSE_CLASS),			
-						arrowRight = mfp.arrowRight = $( markup.replace('%title%', gSt.tNext).replace('%dir%', 'right') ).addClass(PREVENT_CLOSE_CLASS);
+						arrowLeft = mfp.arrowLeft = $( markup.replace(/%title%/gi, gSt.tPrev).replace(/%dir%/gi, 'left') ).addClass(PREVENT_CLOSE_CLASS),			
+						arrowRight = mfp.arrowRight = $( markup.replace(/%title%/gi, gSt.tNext).replace(/%dir%/gi, 'right') ).addClass(PREVENT_CLOSE_CLASS);
 
 					var eName = supportsFastClick ? 'mfpFastClick' : 'click';
 					arrowLeft[eName](function() {
@@ -2023,4 +2046,4 @@ $.magnificPopup.registerModule(RETINA_NS, {
 })();
 
 /*>>fastclick*/
-})(window.jQuery || window.Zepto);
+ _checkInstance(); })(window.jQuery || window.Zepto);
