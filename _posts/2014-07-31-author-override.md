@@ -24,7 +24,7 @@ billy_rick:
   avatar: bio-photo-2.jpg
   twitter: extravagantman
   google:
-    plus: +BillyRick
+    plus: BillyRick
 
 cornelius_fiddlebone:
   name: Cornelius Fiddlebone
@@ -33,7 +33,7 @@ cornelius_fiddlebone:
   avatar: bio-photo.jpg
   twitter: rhymeswithsackit
   google:
-    plus: +CorneliusFiddlebone
+    plus: CorneliusFiddlebone
 {% endhighlight %}
 
 To assign Billy Rick as an author for our post. You'd add the following YAML front matter to a post:
