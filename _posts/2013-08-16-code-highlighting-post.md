@@ -11,7 +11,7 @@ comments: true
 
 ### Pygments Code Blocks
 
-To modify styling and highlight colors edit `/_sass/pygments.less`.
+To modify styling and highlight colors edit `/_sass/pygments.scss`.
 
 {% highlight css %}
 #container {
