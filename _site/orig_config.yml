@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title:            Center for Data Intensive Science
+title:            Site Title
 locale:           en_US
 url:              http://localhost:4000
 
