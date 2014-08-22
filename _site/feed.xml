@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-<title type="text">Center for Data Intensive Science</title>
+<title type="text">CDIS HOME</title>
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2014-08-18T13:59:56-05:00</updated>
+<updated>2014-08-22T16:20:09-05:00</updated>
 <id>http://localhost:4000/</id>
 <author>
-  <name>Your Name</name>
+  <name></name>
   <uri>http://localhost:4000/</uri>
   
 </author>
@@ -22,9 +22,9 @@
   <published>2014-07-31T00:00:00-05:00</published>
   <updated>2014-07-31T00:00:00-05:00</updated>
   <author>
-    <name>Billy Rick</name>
+    <name></name>
     <uri>http://localhost:4000</uri>
-    <email>billy@rick.com</email>
+    
   </author>
   <content type="html">&lt;p&gt;For those of you who may have content written by multiple authors on your site you can now assign different authors to each post if desired.&lt;/p&gt;
 
@@ -57,7 +57,7 @@
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;billy_rick&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/author-override/&quot;&gt;Author Override&lt;/a&gt; was originally published by Billy Rick at &lt;a href=&quot;http://localhost:4000&quot;&gt;Center for Data Intensive Science&lt;/a&gt; on July 31, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/author-override/&quot;&gt;Author Override&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;CDIS HOME&lt;/a&gt; on July 31, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -71,7 +71,7 @@
   <published>2013-08-16T00:00:00-05:00</published>
   
   <author>
-    <name>Your Name</name>
+    <name></name>
     <uri>http://localhost:4000</uri>
     
   </author>
@@ -186,7 +186,7 @@
 &lt;script src=&quot;https://gist.github.com/mmistakes/6589546.js&quot;&gt; &lt;/script&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/code-highlighting-post/&quot;&gt;Syntax Highlighting Post&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;http://localhost:4000&quot;&gt;Center for Data Intensive Science&lt;/a&gt; on August 16, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/code-highlighting-post/&quot;&gt;Syntax Highlighting Post&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;CDIS HOME&lt;/a&gt; on August 16, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -199,7 +199,7 @@
   <published>2013-08-12T00:00:00-05:00</published>
   <updated>2013-08-12T00:00:00-05:00</updated>
   <author>
-    <name>Your Name</name>
+    <name></name>
     <uri>http://localhost:4000</uri>
     
   </author>
@@ -211,7 +211,7 @@
 
 &lt;p&gt;Some &lt;a href=&quot;http://www.mademistakes.com&quot;&gt;link&lt;/a&gt; can also be shown.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/sample-link-post/&quot;&gt;Sample Link Post&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;http://localhost:4000&quot;&gt;Center for Data Intensive Science&lt;/a&gt; on August 12, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/sample-link-post/&quot;&gt;Sample Link Post&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;CDIS HOME&lt;/a&gt; on August 12, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -224,7 +224,7 @@
   <published>2013-05-23T00:00:00-05:00</published>
   <updated>2013-05-23T00:00:00-05:00</updated>
   <author>
-    <name>Your Name</name>
+    <name></name>
     <uri>http://localhost:4000</uri>
     
   </author>
@@ -277,7 +277,7 @@
   &lt;/ol&gt;
 &lt;/div&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/readability-feature-post/&quot;&gt;Post with Large Feature Image and Text&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;http://localhost:4000&quot;&gt;Center for Data Intensive Science&lt;/a&gt; on May 23, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/readability-feature-post/&quot;&gt;Post with Large Feature Image and Text&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;CDIS HOME&lt;/a&gt; on May 23, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -290,7 +290,7 @@
   <published>2013-05-22T00:00:00-05:00</published>
   <updated>2013-05-22T00:00:00-05:00</updated>
   <author>
-    <name>Your Name</name>
+    <name></name>
     <uri>http://localhost:4000</uri>
     
   </author>
@@ -345,7 +345,7 @@
 	&lt;figcaption&gt;Three images.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/sample-post-images/&quot;&gt;A Post with Images&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;http://localhost:4000&quot;&gt;Center for Data Intensive Science&lt;/a&gt; on May 22, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/sample-post-images/&quot;&gt;A Post with Images&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;CDIS HOME&lt;/a&gt; on May 22, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -358,7 +358,7 @@
   <published>2012-05-22T00:00:00-05:00</published>
   <updated>2012-05-22T00:00:00-05:00</updated>
   <author>
-    <name>Your Name</name>
+    <name></name>
     <uri>http://localhost:4000</uri>
     
   </author>
@@ -403,7 +403,7 @@
 
 &lt;p&gt;Aliquip enim artisan dolor post-ironic. Pug tote bag Marfa, deserunt pour-over Portland wolf eu odio intelligentsia american apparel ugh ea. Sunt viral et, 3 wolf moon gastropub pug id. Id fashion axe est typewriter, mlkshk Portland art party aute brunch. Sint pork belly Cosby sweater, deep v mumblecore kitsch american apparel. Try-hard direct trade tumblr sint skateboard. Adipisicing bitters excepteur biodiesel, pickled gastropub aute veniam.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/readability-post/&quot;&gt;Testing Readability with a Bunch of Text&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;http://localhost:4000&quot;&gt;Center for Data Intensive Science&lt;/a&gt; on May 22, 2012.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/readability-post/&quot;&gt;Testing Readability with a Bunch of Text&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;CDIS HOME&lt;/a&gt; on May 22, 2012.&lt;/p&gt;</content>
 </entry>
 
 
@@ -417,7 +417,7 @@
   <published>2011-03-10T00:00:00-06:00</published>
   
   <author>
-    <name>Your Name</name>
+    <name></name>
     <uri>http://localhost:4000</uri>
     
   </author>
@@ -583,7 +583,7 @@
 
 &lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Watch out!&lt;/strong&gt; You can also add notices by appending &lt;code&gt;{: .notice}&lt;/code&gt; to a paragraph.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/sample-post/&quot;&gt;Sample Post&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;http://localhost:4000&quot;&gt;Center for Data Intensive Science&lt;/a&gt; on March 10, 2011.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/sample-post/&quot;&gt;Sample Post&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;CDIS HOME&lt;/a&gt; on March 10, 2011.&lt;/p&gt;</content>
 </entry>
 
 </feed>

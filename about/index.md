@@ -1,25 +1,18 @@
 ---
 layout: page
-title: About the Theme
+title: ABOUT
 tags: [about, Jekyll, theme, responsive]
 modified: 2014-08-08T20:53:07.573882-04:00
 comments: true
 image:
-  feature: texture-feature-02.jpg
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
+  feature: IDIS_signature_HORIZ1.0.jpg
 ---
 
-Minimal Mistakes is responsive Jekyll theme with large featured images and solid typography. As the name implies the styling is fairly minimal to make it easier for you to build on top of.
 
-## Minimal Mistakes is all about:
-
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers. 
-* Minimal embellishments -- content first.
-* Optional large feature images for posts and pages.
-* Simple and clear permalink structure.
-* [Custom 404 page](http://mmistakes.github.io/minimal-mistakes/404.html) to get you started.
-* Support for Disqus Comments
-
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install Minimal Mistakes Theme</a>
+The Center for Data Intensive Science (CDIS) in the Biological Sciences Division at the University of Chicago is a recently created center focused on data science and its applications to problems in biology, medicine and health care.
+<br>
+<br>
+The CDIS mission is to develop the science of data and to apply it to problems in science, medicine and health care.
+<br>
+<br>
+The CDIS vision is a world in which researchers have ready access to the data needed and to the tools required to make discoveries from data that increase our scientific knowledge and improve the quality of life.

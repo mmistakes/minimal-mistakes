@@ -2,12 +2,13 @@
 
 - title: About
   url: /about/
+  
+- title: Projects
+  url: /projects/
+  
+- title: Careers
+  url: /careers/
 
-- title: Sample Posts
-  url: /posts/
+- title: Contact 
+  url: /contact/
 
-- title: Theme Setup
-  url: /theme-setup/
-
-- title: Made Mistakes
-  url: http://mademistakes.com
