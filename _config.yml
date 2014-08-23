@@ -2,7 +2,7 @@
 
 title:            Center for Data Intensive Science
 locale:           en_US
-url:              http://localhost:4000
+url:              /cdiswebsite
 
 
 # Jekyll configuration
