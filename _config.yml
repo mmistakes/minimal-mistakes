@@ -2,8 +2,7 @@
 
 title:            CDIS HOME
 locale:           en_US
-url:              http://localhost:4000
-
+url:              http://cdis.uchicago.edu
 
 # Jekyll configuration
 
