@@ -33,17 +33,10 @@
 </div>
 
 <div id="index">
-  <h3><a href="{{ site.url}}/posts/">Recent Posts</a></h3>
-  {% for post in site.posts limit:5 %}    
-  <article>
-    {% if post.link %}
-      <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></h2>
-    {% else %}
-      <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-      <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
-    {% endif %}
-  </article>
-  {% endfor %}
+  <h3><a href="{{ site.url}}/posts/">Welcome</a></h3>
+  The Center for Data Intensive Science (CDIS) in the Biological Sciences Division at the University of Chicago is a recently created center focused on data science and its applications to problems in biology, medicine and health care. <br/><br/>
+
+  Learn more about <a href="/about" style="text-decoration:underline;">our center</a> and our <a href="projects/" style="text-decoration:underline;"> projects</a>. Interested in joining? We currently have a several <a href="careers/" style="text-decoration:underline;">job openings</a>.
 </div><!-- /#index -->
 
 <div class="footer-wrap">
