@@ -16,7 +16,7 @@ image:
 
 - [Software Engineer]({{site.url}}/careers/Software-Engineer)
 
-- [Linux System Administrator]({{site.url}}/careers/Linux-systems-administrator)
+- [Linux System Administrator]({{site.url}}/careers/Linux-Systems-Administrator)
 
 #### Director Positions
 
@@ -38,8 +38,4 @@ image:
 <br>
 <br>
 
-##### The University of Chicago is an Affirmative Action / Equal Opportunity / Disabled / Veterans Employer. 
-
-
-
-
+##### The University of Chicago is an Affirmative Action / Equal Opportunity / Disabled / Veterans Employer.
