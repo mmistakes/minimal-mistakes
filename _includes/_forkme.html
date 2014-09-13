@@ -1,0 +1,23 @@
+{% if site.forkme.active == true %}
+{% assign yml_position = site.forkme.position %}
+{% case yml_position %}
+{% when 'top-right' %}
+{% assign position = 'right' %}
+{% when 'top-left' %}
+{% assign position = 'left' %}
+{% when 'bottom-right' %} 
+{% assign position = 'right-bottom' %}        
+{% when 'bottom-left' %} 
+{% assign position = 'left-bottom' %}
+{% else %}
+<mark style="color: #990000">unsupported forkme position attribute in _config.yml</mark>
+{% endcase %}
+{% if position  %}
+<div class="github-fork-ribbon-wrapper {{ position }}">
+    <div class="github-fork-ribbon">
+        <a href="{{ site.forkme.url }}">{{ site.forkme.title }}</a>
+    </div>
+</div>
+{% endif %}
+{% endif %}
+
