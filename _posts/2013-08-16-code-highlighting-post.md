@@ -3,15 +3,17 @@ layout: post
 title: Syntax Highlighting Post
 excerpt: "Demo post displaying the various ways of highlighting code in Markdown."
 tags: [sample post, code, highlighting]
-modified: 2014-08-09T13:39:56.408513-04:00
+modified: 2014-09-14
 comments: true
 ---
 
-[Syntax highlighting](http://en.wikipedia.org/wiki/Syntax_highlighting) is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.
+Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.[^1]
+
+[^1]: <http://en.wikipedia.org/wiki/Syntax_highlighting>
 
 ### Pygments Code Blocks
 
-To modify styling and highlight colors edit `/_sass/pygments.scss`.
+To modify styling and highlight colors edit `/_sass/_pygments.scss`.
 
 {% highlight css %}
 #container {
@@ -21,9 +23,7 @@ To modify styling and highlight colors edit `/_sass/pygments.scss`.
 }
 {% endhighlight %}
 
-Line numbering enabled:
-
-{% highlight html linenos %}
+{% highlight html %}
 {% raw %}
 <nav class="pagination" role="navigation">
     {% if page.previous %}
@@ -56,7 +56,6 @@ module Jekyll
 end
 {% endhighlight %}
 
-Remember, to prettify code you need to wrap it in special Liquid tags. Code fenced blocks won't get the job done. For more info on how to highlight code snippes in Jekyll, check the [official docs](http://jekyllrb.com/docs/posts/#highlighting-code-snippets).
 
 ### Standard Code Block
 
@@ -74,7 +73,7 @@ Remember, to prettify code you need to wrap it in special Liquid tags. Code fenc
 
 ### Fenced Code Blocks
 
-To modify styling and highlight colors edit `/assets/less/coderay.less` and compile `main.less` with your favorite preprocessor. Or edit `main.css` if that's your thing, the classes you want to modify all begin with `.coderay`. Line numbers and a few other things can be modified in `_config.yml` under `coderay`.
+To modify styling and highlight colors edit `/_sass/_coderay.scss`. Line numbers and a few other things can be modified in `_config.yml`. Consult [Jekyll's documentation](http://jekyllrb.com/docs/configuration/) for more information.
 
 ~~~ css
 #container {
