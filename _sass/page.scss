@@ -5,7 +5,7 @@ body {
 }
 .navigation-wrapper {
 	@include container;
-	padding: 2em 0 0;
+	padding: 2em 0 1em;
 	font-family: $heading-font;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -206,8 +206,12 @@ $button-size: 1.5rem;
 	@include container;
 	@include clearfix;
 	clear: both;
-	margin-top: 1em;
-	article {
+	margin-top: 2em;
+	h1 {
+		margin-top: 0;
+	}
+	.post,
+	.page {
 		@include container;
 		@include grid(12,10);
 		@include prefix(12,1);
