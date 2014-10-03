@@ -271,14 +271,17 @@ $button-size: 1.5rem;
 		content: " ";
 		display: block;
 		position: absolute;
-		bottom: 0;
+		bottom: 5px;
 		left: 8%;
 		width: 0;
 		height: 0;
-		border: 20px solid transparent;
+		border: 10px solid transparent;
 		border-bottom-color: $bodycolor;
 		@media #{$small} {
 			left: 25%;
+		}
+		@media #{$large} {
+			border-width: 20px;
 		}
 		@media #{$x-large} {
 			left: 33.333333333%;
