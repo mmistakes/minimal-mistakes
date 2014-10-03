@@ -267,6 +267,7 @@ $button-size: 1.5rem;
 .image-wrap {
 	position: relative;
 	margin-bottom: 2em;
+	@include clearfix;
 	&:after {
 		content: " ";
 		display: block;
@@ -460,7 +461,7 @@ $button-size: 1.5rem;
 			padding: 10px;
 			display: block;
 			color: $white;
-			border-bottom-width: 0;
+			text-decoration: none;
 			background: lighten($black, 30);
 			@include opacity(0.7);
 			@include transition(opacity 0.2s ease-in-out);
@@ -471,6 +472,13 @@ $button-size: 1.5rem;
 		ul {
 			margin: 1px 0 0;
 		}
+	}
+}
+#drawer {
+	height: 100%;
+	overflow: hidden;
+	&.js-hidden {
+		max-height: 0;
 	}
 }
 .image-grid {
