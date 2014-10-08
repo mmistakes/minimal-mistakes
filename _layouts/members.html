@@ -41,6 +41,7 @@
       {% assign author = auth[1] %}
       {% include _author-bio-content.html %}
       <blockquote>{{ author.bio_long }}</blockquote>
+      <hr />
       {% endfor %}
     </div><!-- /.article-wrap -->
     {% if site.owner.disqus-shortname and page.comments == true %}
