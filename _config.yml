@@ -2,8 +2,8 @@
 
 title:            keiser lab @ ucsf
 locale:           en_US
-url:              http://keiserlab.github.io
-#url:              http://localhost:4000
+#url:              http://keiserlab.github.io
+url:              http://localhost:4000
 
 # Jekyll configuration
 
@@ -27,14 +27,14 @@ kramdown:
 # Site owner
 owner:
   name: Michael Keiser
-  avatar: bio-photo.jpg
+  avatar: members/bio-keiser.jpg
   bio: ""
   email: keiser@keiserlab.org
   disqus-shortname: 
   twitter: #username
   facebook: #username
   google:
-    plus: #username
+    plus: MichaelKeiser
     analytics: 
     verify: 
     ad-client: 
