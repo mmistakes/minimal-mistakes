@@ -13,8 +13,8 @@ In classical pharmacology, drugs struck single notes, where one drug would hit o
 ### Forward polypharmacology
 We are using machine learning and computational methods such as the Similarity Ensemble Approach (SEA) to predict full networks of interacting targets underlying useful drug-induced phenotypes in cells and other biological model systems.
 
-### Chemical-genetic testing
-We test full chords of protein targets via chemical-genetic epistasis experiments in biological models of neurodegenerative and complex diseases. This is important because most chords of targets underlying drug effects are only found after the fact, due to the exponential number of target chords that could exist. By using computational predictions as a guide, we can shrink more than 2.6×1014 possible chords down to a manageable number of directly testable targets instead.
+### Chemical-genetic mining
+We test full chords of protein targets via chemical-genetic epistasis experiments in biological models of neurodegenerative and complex diseases. This is important because most chords of targets underlying drug effects are only found after the fact, due to the exponential number of target chords that could exist. By using computational predictions as a guide, we can shrink more than 2.6×10^14 possible chords down to a manageable number of directly testable targets instead.
 
 ### Personalized medicine
 This systems pharmacology approach can uncover areas where the field’s current understanding of drug action is otherwise weak. Additionally, since we are using human pharmacology itself as tool, we can apply the new therapeutic chords we discover directly to predicting individual patient drug responses, adverse drug reactions, and personalized treatments.
