@@ -25,23 +25,23 @@ kramdown:
 
 # Site owner
 owner:
-  name: Michael Keiser
-  avatar: members/bio-keiser.jpg
+  name: keiserlab
+  avatar: bio-photo.jpg
   bio: ""
-  email: keiser@keiserlab.org
+  email: 
   disqus-shortname: 
   twitter: #username
   facebook: #username
   google:
-    plus: MichaelKeiser
+    plus: #username
     analytics: 
     verify: 
     ad-client: 
     ad-slot: 
   bing-verify: 
-  github: mjke
+  github: #username
   stackoverflow: #http://stackoverflow.com/users/123456/username
-  linkedin: keiser
+  linkedin: #username
   instagram: #username
   lastfm: #username
   tumblr: #username
