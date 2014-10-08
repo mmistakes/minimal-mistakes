@@ -2,8 +2,7 @@
 
 title:            keiser lab @ ucsf
 locale:           en_US
-#url:              http://keiserlab.github.io
-url:              http://localhost:4000
+url:              http://keiserlab.github.io
 
 # Jekyll configuration
 
