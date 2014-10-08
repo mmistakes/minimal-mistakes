@@ -3,10 +3,14 @@
 michael_keiser:
   name: Michael Keiser
   email: keiser@keiserlab.org
-  bio: ""
+  bio: "systems pharmacology, machine learning, forward polypharmacology, computational chemical biology, neurodegeneration, adverse drug reactions, network structure, chemical-genetic epistasis"
   bio_long: "Michael completed a bioinformatics Ph.D. in 2009 at UCSF as a National Science Foundation Fellow, where he developed techniques to relate drugs and proteins based on the statistical similarity of their ligands, such as the Similarity Ensemble Approach (SEA). He also holds B.Sc., B.A., and M.A. degrees from Stanford University. He subsequently co-founded a startup bringing these methods to pharma companies and the US FDA. Keiser joined the faculty at UCSF in the Dept. of Pharmaceutical Chemistry and the Institute for Neurodegenerative Diseases in 2014, with a joint appointment in the Dept. of Bioengineering and Therapeutic Sciences."
-  avatar: bio-photo.jpg
+  avatar: members/bio-keiser.jpg
   title: Assistant Professor
+  github: mjke
+  linkedin: keiser
+  google:
+    plus: MichaelKeiser
 
 garrett_gaskins:
   name: Garrett Gaskins
@@ -19,7 +23,8 @@ leo_gendelev:
   name: Leo Gendelev
   email: gendelev@keiserlab.org
   bio: ""
-  avatar: bio-photo.jpg
+  bio_long: "Designed proteins that can modulate protein-protein interactions have an advantage over small molecules when it comes to flat protein-protein interfaces. To this end I am using a nature-inspired approach involving both computational methods and directed evolution techniques such as phage display to target a key interaction in the activation of the family of EGFR Kinases. The C-lobe of one EGFR Kinase can allosterically activate the N-lobe of a partner EGFR Kinase, so inhibiting this interaction is a promising approach to treat various types of cancers. Computationally I am mining the protein data bank for motifs based on nature-preferred interaction geometries to use as a starting point, and then scanning for protein-based scaffolds that can accommodate these motifs. I will validate as well as affinity mature the most promising designs using phage display, with the eventual goal of developing a protein-based therapeutic."
+  avatar: members/bio-gendelev.jpg
   title: Grad student
 
 cristina_melero:
@@ -33,5 +38,5 @@ teague_sterling:
   name: Teague Sterling
   email: sterling@keiserlab.org
   bio: ""
-  avatar: bio-photo.jpg
+  avatar: members/bio-sterling.jpg
   title: Specialist
