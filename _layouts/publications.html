@@ -40,7 +40,7 @@
       <ol reversed>
       {% for publication in site.data.ucsf_profiles_keiser.Profiles[0].Publications %}
       <li>{{ publication.AuthorList }}. <a href="{{ publication.PublicationSource[0].PublicationSourceURL }}">
-      {{ publication.Title}}</a>. <strong>{{ publication.PublicationMedlineTA }}</strong>. {{ publication.Date | date:"%y %b %d" }}; 
+      {{ publication.Title}}</a> <strong>{{ publication.PublicationMedlineTA }}</strong>. {{ publication.Date | date:"%y %b %d" }}; 
       {{ publication.PublicationTitle | split:";" | last }}</li>&nbsp;
       {% endfor %}
       </ol>
