@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Valencia</key>
+	<string>SPXX0082</string>
+	<key>Huelva</key>
+	<string>SPXX0225</string>
+	<key>Sevilla</key>
+	<string>SPXX0074</string>
+	<key>Lérida</key>
+	<string>SPXX0175</string>
+	<key>Cádiz</key>
+	<string>SPXX0017</string>
+	<key>Málaga</key>
+	<string>SPXX0052</string>
+	<key>Córdoba</key>
+	<string>SPXX0220</string>
+	<key>Granada</key>
+	<string>SPXX0040</string>
+	<key>Jaén</key>
+	<string>SPXX0045</string>
+	<key>Almería</key>
+	<string>SPXX0009</string>
+	<key>Murcia</key>
+	<string>SPXX0059</string>
+	<key>Cáceres</key>
+	<string>SPXX0204</string>
+	<key>Badajoz</key>
+	<string>SPXX0203</string>
+	<key>Ciudad Real</key>
+	<string>SPXX0023</string>
+	<key>Albacete</key>
+	<string>SPXX0278</string>
+	<key>Toledo</key>
+	<string>SPXX0077</string>
+	<key>Cuenca</key>
+	<string>SPXX0100</string>
+	<key>Guadalajara</key>
+	<string>SPXX0041</string>
+	<key>Alicante</key>
+	<string>SPXX0008</string>
+	<key>Castellón</key>
+	<string>SPXX0021</string>
+	<key>Madrid</key>
+	<string>SPXX0050</string>
+	<key>Tarragona</key>
+	<string>SPXX0076</string>
+	<key>Barcelona</key>
+	<string>SPXX0015</string>
+	<key>Girona</key>
+	<string>SPXX0143</string>
+	<key>Lleida</key>
+	<string>SPXX0175</string>
+	<key>Teruel</key>
+	<string>SPXX0230</string>
+	<key>Huesca</key>
+	<string>SPXX0043</string>
+	<key>Zaragoza</key>
+	<string>SPXX0086</string>
+	<key>Navarra</key>
+	<string>SPXX0114</string>
+	<key>La Rioja</key>
+	<string>SPXX0603</string>
+	<key>Alava</key>
+	<string>SPXX0224</string>
+	<key>Guipúzcoa</key>
+	<string>SPXX0191</string>
+	<key>Vizcaya</key>
+	<string>SPXX0016</string>
+	<key>Cantabria</key>
+	<string>SPXX0072</string>
+	<key>Soria</key>
+	<string>SPXX0243</string>
+	<key>Burgos</key>
+	<string>SPXX0193</string>
+	<key>Segovia</key>
+	<string>SPXX0227</string>
+	<key>Palencia</key>
+	<string>SPXX0228</string>
+	<key>Valladolid</key>
+	<string>SPXX0195</string>
+	<key>Avila</key>
+	<string>SPXX0231</string>
+	<key>Salamanca</key>
+	<string>SPXX0196</string>
+	<key>Zamora</key>
+	<string>SPXX0229</string>
+	<key>León</key>
+	<string>SPXX0192</string>
+	<key>Asturias</key>
+	<string>SPXX0202</string>
+	<key>La coruña</key>
+	<string>SPXX0189</string>
+	<key>Lugo</key>
+	<string>SPXX0110</string>
+	<key>Pontevedra</key>
+	<string>SPXX0115</string>
+	<key>Orense</key>
+	<string>SPXX0223</string>
+	<key>Islas baleares</key>
+	<string>SPXX0703</string>
+	<key>Baleares</key>
+	<string>SPXX0703</string>
+	<key>Santa cruz de tenerife</key>
+	<string>SPXX0070</string>
+	<key>Palmas</key>
+	<string>SPXX0201</string>
+	<key>Las Palmas</key>
+	<string>SPXX0201</string>
+	<key>Ceuta</key>
+	<string>SPXX0022</string>
+	<key>Melilla</key>
+	<string>SPXX0226</string>
+</dict>
+</plist>

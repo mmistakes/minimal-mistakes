@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Appdireccion</key>
+	<string></string>
+	<key>Hayerror</key>
+	<false/>
+	<key>Tipodeerror</key>
+	<string>No hay error</string>
+	<key>Wundkey</key>
+	<string>875ddaa7b5c52618</string>
+	<key>Tiempoentre</key>
+	<integer>30</integer>
+	<key>Distanciaentre</key>
+	<integer>20</integer>
+	<key>IteraUVerror</key>
+	<true/>
+	<key>Weatherapi</key>
+	<string>2227ef4c-dfa4-11e0-80d5-0022198344f4</string>
+</dict>
+</plist>
