@@ -3,7 +3,7 @@
 michael_keiser:
   name: Michael Keiser
   email: keiser@keiserlab.org
-  bio: "systems pharmacology, machine learning, forward polypharmacology, computational chemical biology, neurodegeneration, adverse drug reactions, network structure, chemical-genetic epistasis"
+  bio: "systems pharmacology, machine learning, computational chemical biology"
   bio_long: "Michael completed a bioinformatics Ph.D. in 2009 at UCSF as a National Science Foundation Fellow, where he developed techniques to relate drugs and proteins based on the statistical similarity of their ligands, such as the Similarity Ensemble Approach (SEA). He also holds B.Sc., B.A., and M.A. degrees from Stanford University. He subsequently co-founded a startup bringing these methods to pharma companies and the US FDA. Keiser joined the faculty at UCSF in the Dept. of Pharmaceutical Chemistry and the Institute for Neurodegenerative Diseases in 2014, with a joint appointment in the Dept. of Bioengineering and Therapeutic Sciences."
   avatar: members/bio-keiser.jpg
   title: Assistant Professor
@@ -24,7 +24,7 @@ leo_gendelev:
   name: Leo Gendelev
   email: gendelev@keiserlab.org
   bio: ""
-  bio_long: "Designed proteins that can modulate protein-protein interactions have an advantage over small molecules when it comes to flat protein-protein interfaces. To this end I am using a nature-inspired approach involving both computational methods and directed evolution techniques such as phage display to target a key interaction in the activation of the family of EGFR Kinases. The C-lobe of one EGFR Kinase can allosterically activate the N-lobe of a partner EGFR Kinase, so inhibiting this interaction is a promising approach to treat various types of cancers. Computationally I am mining the protein data bank for motifs based on nature-preferred interaction geometries to use as a starting point, and then scanning for protein-based scaffolds that can accommodate these motifs. I will validate as well as affinity mature the most promising designs using phage display, with the eventual goal of developing a protein-based therapeutic."
+  bio_long: "Traditional approaches for ligand similarity, such as neighborhood or path based fingerprints, are based on molecular patterns, containing little information about the physics underlying protein-ligand recognition events. I am using a combined cheminformatics and structural bioinformatics approach to construct a thesaurus for ligand-based scaffolds, related via their interaction patterns with proteins from high-resolution x-ray crystals. This thesaurus will then be used to construct 3D interaction fingerprints for use in SEA (Similarity Ensemble Approach), for constraining or filtering virtual screening experiments, and for designing ligand-binding proteins. In developing these interaction fingerprints, we differ philosophically from previous fingerprinting approaches in that we strive to capture statistically enriched many-body interactions instead of painting yet another unsatisfying pairwise landscape."
   avatar: members/bio-gendelev.jpg
   title: Grad student
 
