@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title:            Site Title
+title:            Pedro Piñera
 locale:           en_US
-url:              http://localhost:4000
+url:              http://pepibumur.github.io
 
 
 # Jekyll configuration
@@ -26,30 +26,31 @@ kramdown:
 
 # Site owner
 owner:
-  name: Your Name
+  name: Pedro Piñera
   avatar: bio-photo.jpg
-  bio: "Describe your self."
-  email: 
+  bio: "Mobile Englineer currently working on Redbooth and Open-Source ♥"
+  email: "pepibumur@gmail.com"
   disqus-shortname: 
-  twitter: #username
-  facebook: #username
+  twitter: "pepibumur"
+  facebook: "pepibumur"
   google:
-    plus: #username
+    plus: "PedroPiñeraBuendia"
     analytics: 
     verify: 
     ad-client: 
     ad-slot: 
   bing-verify: 
-  github: #username
-  stackoverflow: #http://stackoverflow.com/users/123456/username
-  linkedin: #username
+  github: "pepibumur"
+  exposure: "pepibumur"
+  stackoverflow: "963511/pedro-piñera-buendia"
+  linkedin: #linkedin
   instagram: #username
   lastfm: #username
   tumblr: #username
   pinterest: #username
   foursquare: #username
   steam: #username
-  dribbble: #username
+  dribbble: "pepibumur"
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
