@@ -9,6 +9,10 @@ image:
   credit: WeGraphics
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
+I'm Pedro Piñera Buendía, Electronic & Communication Engineer and Mobile Developer currently working on Redbooth. I've been working with mobile technologies from 2010 when I started developing apps for iOS, since then I've relesed applications such as **Solare** to help people to protect them from the sun, **yonkiPOPS**, an app that offers film recommendations to the users, **Movi time** to let you know about the cinemas in your area and their schedules, ...
+
+The summer of 2013 I joined **Redbooth** as iOS Developer and I've been improving my skills there focusing in aspects like API interactions, integrations, data persistence or view management amongst 	
+
 <!-- 
 Minimal Mistakes is responsive Jekyll theme with large featured images and solid typography. As the name implies the styling is fairly minimal to make it easier for you to build on top of.
 
