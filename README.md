@@ -16,6 +16,7 @@ See a [live version of Minimal Mistakes](http://mmistakes.github.io/minimal-mist
 
 ### Scaffolding
 
+
 ```bash
 minimal-mistakes/
 ├── _includes/

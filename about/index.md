@@ -17,7 +17,12 @@ The summer of 2013 I joined **Redbooth** as iOS Developer and I've been improvin
 
 ## Applications released
 
-## Talks and posts
+## Written posts
+
+## Talks I've given
+
+## Resume
+Example: http://technicalpickles.com/resume/
 
 <!-- 
 Minimal Mistakes is responsive Jekyll theme with large featured images and solid typography. As the name implies the styling is fairly minimal to make it easier for you to build on top of.
