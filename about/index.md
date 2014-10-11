@@ -16,6 +16,7 @@ The summer of 2013 I joined **Redbooth** as iOS Developer and I've been improvin
 During these years I've worked in different Open Source projects in different languages. All of them are published in Github with their respective documentation, tests, an support through issues.
 
 ## Open Source projects
+
 ### iOS
 - **PPiAwesomeButton:** UIButton category with new methods to setup a button with text + FontAwesome Icon. Open App. https://github.com/pepibumur/PPiAwesomeButton
 - **PPiFlatSegmentedControl:** PPiFlatSegmentedControl is an UI Control developed avoiding original UISegmentedControl to get interesting features related with the flat design. For better appearance you can add Font Awesome library to your project and use their icons into the Segmented Control. https://github.com/pepibumur/PPiFlatSegmentedControl
