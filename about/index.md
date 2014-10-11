@@ -36,13 +36,13 @@ During these years I've worked in different Open Source projects in different la
 - **Solare:** Solare is an application to help people to protect their skin from ultraviolet light. It alerts when the levels are higher than the expected ones, the protection level that you should use of sun protector and everything is based in your location with real time information. [Link](https://itunes.apple.com/es/app/solare/id533472988?mt=8)
 - **YonkiPOPS Mobile:** yonkiPOPS is a great tool for all movie lovers who wants to have a powerfull pocket tool. With this application you can seek information from any movie, to see the billboard of your nearest theaters and buy the tickets. All without leaving the application. [Link](https://itunes.apple.com/en/app/yonkipops-mobile/id550995249?mt=8)
 - **Movi Time:** Movi is a simple tool to find theaters near your position and know instantly billboard, schedules, and practical information for the film. [Link](https://itunes.apple.com/en/app/movi/id576948547?mt=8)
-- ]- **iPremio:** Application to check if your Christmas Lottery is prized. [Link](https://itunes.apple.com/en/app/ipremio-loteria-de-navidad/id584583645?mt=8)
+- **iPremio:** Application to check if your Christmas Lottery is prized. [Link](https://itunes.apple.com/en/app/ipremio-loteria-de-navidad/id584583645?mt=8)
 
 ## Talks and posts
 - **En busca de la arquitectura perfecta: VIPER (iOS):** Talk about the VIPER architecture applied to iOS application. I explain there the transition between using a monolytic architecture using MVC with elements too coupled to that new architecture where every component manages only one kind of operation.  [Link](http://2014.codemotion.es/en/agenda.html?recommended=#day2/en-busca-de-la-arquitectura-perfecta-viper-ios
 )
 *Most of my posts were in the old website. I'll be publishing new ones soon*
-
-http://technicalpickles.com/posts/using-markdown-in-vim/
  
 <a markdown="0" href="{{ site.url }}/assets/others/english_cv" class="btn">Get my CV</a>
+
+<!-- http://technicalpickles.com/posts/using-markdown-in-vim/ -->
