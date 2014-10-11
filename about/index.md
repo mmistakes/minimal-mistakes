@@ -43,6 +43,6 @@ During these years I've worked in different Open Source projects in different la
 )
 *Most of my posts were in the old website. I'll be publishing new ones soon*
  
-<a markdown="0" href="{{ site.url }}/assets/others/english_cv" class="btn">Get my CV</a>
+<a markdown="0" href="{{ site.url }}/assets/others/english_cv.pdf" class="btn">Get my CV</a>
 
 <!-- http://technicalpickles.com/posts/using-markdown-in-vim/ -->
