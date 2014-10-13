@@ -45,30 +45,30 @@ Our firsts tests were written using Kiwi. We find it a little bit outdated and i
 
 Syntax in Specta + Expecta is more readable, friendly and easy to remember. The example below shows tests using **OCMHamcrest**:
 
-```objc
+{% highlight objc %}
 assertThat(@"foo", is(equalTo(@"foo")));
 assertThatUnsignedInteger(foo, isNot(equalToUnsignedInteger(1)));
 assertThatBool([bar isBar], is(equalToBool(YES)));
 assertThatDouble(baz, is(equalToDouble(3.14159)));
-```
+{% endhighlight %}
 
 Using **Kiwi**
 
-```objc
+{% highlight objc %}
 [[@"foo" should] equal:@"foo"];
 [[foo shouldNot] equal:theValue(1)];
 [[[bar isBar] should] equal:theValue(YES)];
 [[baz should] equal:theValue(3.14159)];
-```
+{% endhighlight %}
 
 And finally **Expecta**:
 
-```objc
+{% highlight objc %}
 expect(@"foo").to.equal(@"foo"); // `to` is a syntatic sugar and can be safely omitted.
 expect(foo).notTo.equal(1);
 expect([bar isBar]).to.equal(YES);
 expect(baz).to.equal(3.14159);
-```
+{% endhighlight %}
 
 ## Setup
 
@@ -103,7 +103,7 @@ Finally we have to select which targets are going to be built in our testing sch
 ### Connect CocoaPods
 With the project setup the next step is to prepare the **Podfile** to integrate the testing libraries with our project targets. *If you haven't worked with CocoaPods before I recommend you to read about it here: http://guides.cocoapods.org/*. Our Podfile has the following format:
 
-```ruby
+{% highlight ruby %}
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '7.0'
 
@@ -126,7 +126,7 @@ target :test do
     pod 'Expecta+Snapshots', '~> 1.2'
   end
 end
-```
+{% endhighlight %}
 
 In order to have our pods organized we use **Cocoapods** targets. They are strongly related with our project targets but remember that they are not the same. To specify CocoaPods which XCode target should be integrated with we have to use the property **link_with**. The table below summarizes which Pods target is integrated with each Project target.
 
@@ -146,7 +146,9 @@ Execute `pod install` and wait until it integrates the pods into the different t
 If everything is right you should be able to **Run** your application using the main target in any device and execute your **Tests** from the tests scheme.
 
 ## A bit about snapshot tests
+
 ![snapshot-tests](http://maniacdev.com/wp-content/uploads/2014/07/Snapshots.jpg)
+
 Snapshot tests are not very common in the world of testing, however they are becoming more popular thanks overall to that Facebook's library. Since we started using it the number of regressions introduced in design has decreased and now the designers can check that the results **match their expectations and desings**. 
 
 Basically the snapshot tests consist of a definition for **snapshots creation** and then once it's checked that the snapshot is ok, the **snapshot checking tests** snapshots are stored in your project folder and they are used for future tests. If tests are executed and there's no incoherence between these images and the tested views, tests will pass but if something is detected the test won't pass giving you a **command to be used with the software [Kaleidoscope](http://www.kaleidoscopeapp.com/)**. Take a look at the example below where we define the test for testing a header view and an example of failed test shown in Kaleidoscope. The failed example shows an animation with the introduced UI bug *(Someone changed the left margin and it was detected)*
