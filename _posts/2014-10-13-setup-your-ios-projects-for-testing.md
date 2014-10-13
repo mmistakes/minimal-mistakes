@@ -10,8 +10,6 @@ image:
   credit: Pedro Piñera
 ---
 
-# Setup your iOS projects for testing
-
 ![image](http://www.gibedigital.com/media/1280/unit-test.jpg)
 
 In other programming communities, like the Ruby one, developers are more aware of testing new components. Ensuring every component is tested **is not common** within the mobile appcommunity.
@@ -46,13 +44,16 @@ Our firsts tests were written using Kiwi. We find it a little bit outdated and i
  >The main advantage of using Expecta over other matcher frameworks is that you do not have to specify the data types. Also, the syntax of Expecta matchers is much more readable and does not suffer from parenthesitis.
 
 Syntax in Specta + Expecta is more readable, friendly and easy to remember. The example below shows tests using **OCMHamcrest**:
+
 ```objc
 assertThat(@"foo", is(equalTo(@"foo")));
 assertThatUnsignedInteger(foo, isNot(equalToUnsignedInteger(1)));
 assertThatBool([bar isBar], is(equalToBool(YES)));
 assertThatDouble(baz, is(equalToDouble(3.14159)));
 ```
+
 Using **Kiwi**
+
 ```objc
 [[@"foo" should] equal:@"foo"];
 [[foo shouldNot] equal:theValue(1)];
@@ -61,6 +62,7 @@ Using **Kiwi**
 ```
 
 And finally **Expecta**:
+
 ```objc
 expect(@"foo").to.equal(@"foo"); // `to` is a syntatic sugar and can be safely omitted.
 expect(foo).notTo.equal(1);
@@ -125,6 +127,7 @@ target :test do
   end
 end
 ```
+
 In order to have our pods organized we use **Cocoapods** targets. They are strongly related with our project targets but remember that they are not the same. To specify CocoaPods which XCode target should be integrated with we have to use the property **link_with**. The table below summarizes which Pods target is integrated with each Project target.
 
 | Pods targets \ Project targets | Redbooth | UnitTests  |  SnapshotTests |
@@ -167,6 +170,7 @@ describe(@"header view", ^{
 });
 SpecEnd
 ```
+
 ![gif](http://cl.ly/image/0r1N431Z3022/Screen%20Recording%202014-10-10%20at%2003.59%20pm.gif)
 
 ## Next steps
