@@ -9,7 +9,7 @@ image:
 ---
 
 
-Housed in the Biological Sciences Division of the University of Chicago, the Center for Data Intensive Science focuses on data science and its applications to problems in biology, medicine and health care.
+Housed in the Biological Sciences Division of the University of Chicago, the Center for Data Intensive Science focuses on data science and its applications to problems in biology, medicine, and health care.
 <br>
 <br>
 CDIS envisions a world in which researchers have ready access to the data needed and to the tools required to make discoveries from data that increase our scientific knowledge and improve the quality of life.
