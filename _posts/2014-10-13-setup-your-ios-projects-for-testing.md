@@ -8,6 +8,9 @@ comments: true
 image:
   feature: earpods.jpg
   credit: Pedro Piñera
+sitemap   :
+  priority : 0.5
+  isfeatured : 1
 ---
 
 ![image](http://www.gibedigital.com/media/1280/unit-test.jpg)

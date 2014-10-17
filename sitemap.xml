@@ -1,0 +1,36 @@
+<!-- http://www.growingwiththeweb.com/2014/05/xml-sitemaps-in-jekyll.html
+ -->
+ ---
+layout: nil
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% for post in site.posts %}
+    <url>
+      <loc>site_url{{ site.baseurl }}{{ post.url }}</loc>
+      {% if page.sitemap.priority %}
+      <priority>{{ page.sitemap.priority}} </priority>
+      {% if post.isfeatured %}
+      <priority>1.0</priority>
+      {% else %}
+      <priority>0.5</priority>
+      {% endif%}
+    </url>
+  {% endfor %}
+  {% for page in site.pages %}
+    <url>
+      <loc>site_url{{ site.baseurl }}{{ page.url }}</loc>
+      {% if page.url == "home_page_inc" %}
+        <priority>1.0</priority>
+        <changefreq>daily</changefreq>
+      {% else %}
+        {% if page.url contains "home_page" %}
+          <priority>0.1</priority>
+        {% else %}
+          <priority>0.5</priority>
+        {% endif %}
+      {% endif %}
+    </url>
+  {% endfor %}
+</urlset>
