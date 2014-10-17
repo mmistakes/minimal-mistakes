@@ -1,7 +1,7 @@
 ---
 layout: home
-excerpt: "A minimal Jekyll theme for your blog by designer Michael Rose."
-tags: [PPinera, theme, responsive, blog, template]
+excerpt: "Mobile developer, especially on iOS and an Open Source lover. Rails beginner and enthusiastic about new web technologies.
+tags: [PPinera, ios developer, mobile developer, sugarrecord, pedro piñera]
 image:
   feature: sample-image-1.jpg
   credit: Utahca Flickr

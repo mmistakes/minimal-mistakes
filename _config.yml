@@ -7,7 +7,7 @@ url:              http://www.ppinera.es
 
 # Jekyll configuration
 
-permalink:   /:categories/:title/
+# permalink:   /:categories/:title/
 markdown:    kramdown
 highlighter: pygments
 sass:
@@ -15,6 +15,7 @@ sass:
   style: compressed
 gems:
   - jekyll-sitemap
+  - emoji_for_jekyll
 
 kramdown:
   auto_ids: true
