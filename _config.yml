@@ -26,23 +26,23 @@ kramdown:
 
 # Site owner
 owner:
-  name: Your Name
+  name: Balint Neray
   avatar: bio-photo.jpg
-  bio: "Describe your self."
-  email:
-  disqus-shortname:
+  bio: "Sociologist."
+  email: balint.neray@gmail.com
+  disqus-shortname: balintneray
   twitter: #username
-  facebook: #username
+  facebook: balint.neray
   google:
-    plus: #username
-    analytics:
+    plus: Bálint Néray
+    analytics: UA-55632707-1
     verify:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
+  github: balintneray
   stackoverflow: #http://stackoverflow.com/users/123456/username
-  linkedin: #username
+  linkedin: Bálint Néray
   instagram: #username
   lastfm: #username
   tumblr: #username
