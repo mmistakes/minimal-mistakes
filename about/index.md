@@ -1,25 +1,19 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, responsive]
-modified: 2014-08-08T20:53:07.573882-04:00
-comments: true
+title: About this site
+tags: [about, personal]
+modified: 2014-10-21
+comments: false
 image:
   feature: sample-image-2.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 
-Minimal Mistakes is responsive Jekyll theme with large featured images and solid typography. As the name implies the styling is fairly minimal to make it easier for you to build on top of.
+Viewer discretion is advised: this site is most likely going to be full of strongly self-centred series of posts. Rather uncharacteristic, as I’d like to believe. And rather surprising too. Even for myself. When I left Hungary I told myself as well as some friends and relatives that I am not going to leak out my thoughts and ideas, observations and maybe feeling too. Just because I moved to an other country (even if this country is the US) my thoughts and feelings are not worthy of mentioning. Indeed, so far nothing has changed.
 
-## Minimal Mistakes is all about:
+So what are the reasons for the series of self-centredness? I’ll try to give them. First and foremost I feel responsible for those beloved whom I left behind or just can’t meet them in general. More than one month has past since I arrived to not only to the US but to Durham. The initial exaggerated excitement is slowly over (as it was expected) and I’d like to have more time to report about myself for those who care about me. Fortunately there are a number of people who do so and hence I’d like to give it a try, to this posting something … and we shall see how far I can get.
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers. 
-* Minimal embellishments -- content first.
-* Optional large feature images for posts and pages.
-* Simple and clear permalink structure.
-* [Custom 404 page](http://mmistakes.github.io/minimal-mistakes/404.html) to get you started.
-* Support for Disqus Comments
+I wouldn’t say it is going to blogging (whatever that is) as I haven't really thought about the thematic structure of the posts, but ideally this shall be multi purpose site. So second of all I take this need for self-centred reports as an opportunity or stepping stone to start writing about topics that might be interesting for a somewhat wider audience. And if it will be so, this intro shall be revised.
 
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install Minimal Mistakes Theme</a>
+## Credits
+
+* Minimal mistakes Project

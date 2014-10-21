@@ -1,12 +1,10 @@
 ---
 layout: page
-title: Theme Setup
-modified: 2014-07-31T13:23:02.362000-04:00
-excerpt: "Instructions on how to install and customize the Jekyll theme Minimal Mistakes."
-image:
-  feature: sample-image-3.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+title: Githup Pages | Minimal mistakes
+excerpt: "Instructions on how to install and customize the Jekyll theme Minimal Mistakes to create Github page"
+tags: [sample post, code, credit]
+comments: true
+modified: 2014-21-10
 ---
 
 <section id="table-of-contents" class="toc">
@@ -37,7 +35,7 @@ If you want to use Minimal Mistakes with an existing Jekyll site follow these st
 3. Run `bundle install` to install all dependencies (Jekyll, [Jekyll-Sitemap](https://github.com/jekyll/jekyll-sitemap), [Octopress](https://github.com/octopress/octopress), etc)
 4. Remove demo posts/pages and replace with your own posts, pages, and any other content you want to move over.
 5. Update posts' and pages' YAML to match variables used by Minimal Mistakes. Full details below.
-6. Update `_config.yml` and add navigation links. Full details below. 
+6. Update `_config.yml` and add navigation links. Full details below.
 
 **Pro-tip:** Delete the `gh-pages` branch after cloning and start fresh by branching off `master`. There is a bunch of garbage in `gh-pages` used for the theme's demo site that I'm guessing you won't want.
 {: .notice}
@@ -80,7 +78,7 @@ minimal-mistakes/
 ├── images/                      # images for posts and pages
 ├── 404.md                       # 404 page
 ├── feed.xml                     # Atom feed template
-├── index.md                     # sample homepage. lists 5 latest posts 
+├── index.md                     # sample homepage. lists 5 latest posts
 ├── posts/                       # sample post index page. lists all posts in reverse chronology
 └── theme-setup/                 # theme setup page. safe to remove
 {% endhighlight %}
@@ -111,7 +109,7 @@ Examples:
 url: http://mmistakes.github.io/minimal-mistakes
 url: http://localhost:4000
 url: http://mademistakes.com
-url: 
+url:
 {% endhighlight %}
 
 #### Google Analytics and Webmaster Tools
@@ -307,4 +305,4 @@ Found a bug or aren't quite sure how something works? By all means Ping me on Tw
 
 ## License
 
-This theme is free and open source software, distributed under the MIT License. So feel free to use this Jekyll theme on your site without linking back to me or including a disclaimer. 
+This theme is free and open source software, distributed under the MIT License. So feel free to use this Jekyll theme on your site without linking back to me or including a disclaimer.
