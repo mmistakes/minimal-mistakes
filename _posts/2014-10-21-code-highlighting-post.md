@@ -1,7 +1,7 @@
 ---
 layout: post
-title: TEST: Syntax Highlighting Post
-excerpt: "Demo post displaying the various ways of highlighting code in Markdown."
+title: "TEST: Syntax Highlighting Post"
+excerpt: "Exmple Demo post displaying the various ways of highlighting code in Markdown."
 tags: [sample post, code, highlighting]
 modified: 2014-10-21
 comments: true
