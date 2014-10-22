@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "TEST: Sample Link Post"
+title: "Test Post Providing Sample Link"
 excerpt: "Example and code for using link posts."
 tags: [sample post, link post]
 link: http://mademistakes.com  

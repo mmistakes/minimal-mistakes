@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "TEST: Sample Post"
-excerpt: "Example Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
+title: "Test Sample Post"
+excerpt: "Example post just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
 modified: 2014-10-21
 tags: [intro, beginner, jekyll, tutorial]
 comments: true
