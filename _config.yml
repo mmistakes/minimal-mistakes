@@ -34,7 +34,7 @@ owner:
   twitter: #username
   facebook: balint.neray
   google:
-    plus: Balint Neray
+    plus:
     analytics: UA-55632707-1
     verify:
     ad-client:
@@ -42,7 +42,7 @@ owner:
   bing-verify:
   github: balintneray
   stackoverflow: #http://stackoverflow.com/users/123456/username
-  linkedin: https://www.linkedin.com/pub/bálint-néray/31/517/b48
+  linkedin: Balint Neray
   instagram: #username
   lastfm: #username
   tumblr: #username
