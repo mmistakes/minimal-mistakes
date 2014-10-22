@@ -6,7 +6,7 @@ modified: 2014-10-21
 excerpt: "Teaching materials"
 tags: [teaching, resources, sociology, sna]
 image:
-  feature:
+  feature: sample-image-5.jpg
 ---
 
 ## Class 01
