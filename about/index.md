@@ -8,7 +8,7 @@ image:
   feature: boglar.jpg
 ---
 
- ... wordprocessing and character-crunching ...
+ ... by and for wordprocessing and character-crunching ...
 
 
 # About the me
