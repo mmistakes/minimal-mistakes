@@ -6,7 +6,7 @@ tags: [projects, resources]
 comments: true
 modified: 2014-10-21
 image:
-  feature: sample-image-3.jpg
+  feature: yards.jpeg
 ---
 
 <section id="table-of-contents" class="toc">
