@@ -5,7 +5,7 @@ tags: [about, personal]
 modified: 2014-10-21
 comments: false
 image:
-  feature: sample-image-1.jpg
+  feature: boglar.jpg
 ---
 
 **Viewer discretion is advised:** this site is most likely going to be full of strongly self-centred series of posts. Rather uncharacteristic, as I’d like to believe. And rather surprising too. Even for myself. When I left Hungary I told myself as well as some friends and relatives that I am not going to leak out my thoughts and ideas, observations and maybe feeling too. Just because I moved to an other country (even if this country is the US) my thoughts and feelings are not worthy of mentioning. Indeed, so far nothing has changed.

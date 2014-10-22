@@ -6,7 +6,7 @@ modified:
 excerpt: "The list of my publications worthy of mentioning"
 tags: [publications]
 image:
-  feature: sample-image-4.jpg
+  feature: scripts.jpg
 ---
 
 * xy 2014
