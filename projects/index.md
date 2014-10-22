@@ -20,17 +20,17 @@ modified: 2014-10-21
 ## RECENS - Wired into each other
 
 Soon
----
+
 
 ## TABBY
 
 Soon
----
+
 
 ## Lenke Project
 
 Soon
----
+
 
 ## Minimal Mistakes
 
@@ -53,4 +53,3 @@ If you want to use Minimal Mistakes with an existing Jekyll site follow these st
 4. Remove demo posts/pages and replace with your own posts, pages, and any other content you want to move over.
 5. Update posts' and pages' YAML to match variables used by Minimal Mistakes. Full details below.
 6. Update `_config.yml` and add navigation links. Full details below.
----
