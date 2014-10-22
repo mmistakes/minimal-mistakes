@@ -21,20 +21,17 @@ modified: 2014-10-21
 
 More coming Soon
 
-
 ## TABBY
 
 More coming Soon
-
 
 ## Lenke Project
 
 More coming Soon
 
-
 ## Minimal Mistakes
 
-I built this site built on [Github](http://github.com), supported by the [Github Pages](https://pages.github.com) using [Michael Rose's](https://mademistakes.com) [Minimal Mistakes project](http://github.com/mmistakes).
+I built this site on [Github](http://github.com), supported by the [Github Pages](https://pages.github.com) using [Michael Rose's](https://mademistakes.com) [Minimal Mistakes project](http://github.com/mmistakes).
 
 Minimal Mistakes now requires [Jekyll](http://jekyllrb.com/) 2.2+. Make sure to run `gem update jekyll` if you aren't on the latest version or `gem install jekyll` if this is your first time installing it.
 

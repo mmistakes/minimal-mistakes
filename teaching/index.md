@@ -3,8 +3,8 @@ layout: page
 title: "Teaching"
 date: 2014-10-21
 modified: 2014-10-21
-excerpt: Teaching materials
-tags: [teachin, resources, sociology, sna]
+excerpt: "Teaching materials"
+tags: [teaching, resources, sociology, sna]
 image:
   feature:
 ---
