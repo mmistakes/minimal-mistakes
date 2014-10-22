@@ -4,7 +4,7 @@ title: Githup Pages | Minimal mistakes
 excerpt: "Instructions on how to install and customize the Jekyll theme Minimal Mistakes to create Github page"
 tags: [sample post, code, credit]
 comments: true
-modified: 2014-21-10
+modified: 2014-10-21
 ---
 
 <section id="table-of-contents" class="toc">
