@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Githup Pages | Minimal mistakes
-excerpt: "Instructions on how to install and customize the Jekyll theme Minimal Mistakes to create Github page"
-tags: [sample post, code, credit]
+title: My Projects
+excerpt: "About the project that I am involved or intersted in"
+tags: [projects, resources]
 comments: true
 modified: 2014-10-21
 ---
@@ -19,17 +19,17 @@ modified: 2014-10-21
 
 ## RECENS - Wired into each other
 
-Soon
+More coming Soon
 
 
 ## TABBY
 
-Soon
+More coming Soon
 
 
 ## Lenke Project
 
-Soon
+More coming Soon
 
 
 ## Minimal Mistakes
