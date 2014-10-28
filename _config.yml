@@ -23,9 +23,6 @@ kramdown:
   toc_levels: 1..6
   use_coderay: false
 
-tag_page_layout: post-index
-tag_page_dir: tag
-
 
 # Site owner
 owner:
