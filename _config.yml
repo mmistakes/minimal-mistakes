@@ -23,6 +23,12 @@ kramdown:
   toc_levels: 1..6
   use_coderay: false
 
+# tag
+
+tag_page_layout: tag_page
+tag_page_dir: tag
+tag_permalink_style: pretty
+ignored_tags: [tags,to,ignore]
 
 # Site owner
 owner:
