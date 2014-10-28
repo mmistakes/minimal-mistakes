@@ -2,7 +2,7 @@
 layout: post
 title: "Creating Guthub Page with Jekyll"
 excerpt: "First post explaining the existance of this site"
-tags: [data, code, web]
+tags: [pesonal]
 modified: 2014-10-22
 comments: true
 ---
