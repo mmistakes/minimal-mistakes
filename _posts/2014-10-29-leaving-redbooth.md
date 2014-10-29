@@ -6,10 +6,10 @@ modified: 2014-10-29
 tags: [redbooth, ios, 8fit]
 comments: true
 image:
-  feature: earpods.jpg
+  feature: messydesk.jpg
   credit: Pedro Piñera
 sitemap   :
-  priority : 0.5
+  priority : 0.8
   isfeatured : 1
 ---
 

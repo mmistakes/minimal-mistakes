@@ -10,7 +10,7 @@ image:
   credit: Pedro Piñera
 sitemap   :
   priority : 0.5
-  isfeatured : 1
+  isfeatured : 0
 ---
 
 ![image](http://www.gibedigital.com/media/1280/unit-test.jpg)
