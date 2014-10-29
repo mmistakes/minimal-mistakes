@@ -2,7 +2,7 @@
 layout: post
 title: "Test Post: Syntax Highlighting"
 excerpt: "Exmple post displaying the various ways of highlighting code in Markdown."
-tags: [sample post, code, highlighting]
+tags: [example post, code, github pages, highlighting]
 modified: 2014-10-21
 comments: true
 ---

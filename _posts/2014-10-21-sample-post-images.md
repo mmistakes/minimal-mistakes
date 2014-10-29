@@ -2,7 +2,7 @@
 layout: post
 title: "Test Post with Images"
 excerpt: "Examples and code for displaying images in posts."
-tags: [sample post, images, test]
+tags: [example post, github pages, images]
 comments: true
 ---
 
