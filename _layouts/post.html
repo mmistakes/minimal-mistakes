@@ -52,10 +52,8 @@
       </footer>
     </div><!-- /.article-wrap -->
 
-<center>
-  <b>Tags:</b>
-  <span class="entry-tags">{% for tag in page.tags %} <a href="{{ site.url }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}"       class="tag">{{ tag }}</a>{% unless forloop.last %}{% endunless %}{% endfor %}</span>
-</center>
+<b>Tags:</b>
+<span class="entry-tags">{% for tag in page.tags %} <a href="{{ site.url }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}"       class="tag">{{ tag }}</a>{% unless forloop.last %}{% endunless %}{% endfor %}</span>
 
   {% if site.owner.disqus-shortname and page.comments == true %}
     <section id="disqus_thread"></section><!-- /#disqus_thread -->
