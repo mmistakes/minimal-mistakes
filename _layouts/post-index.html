@@ -34,7 +34,7 @@
   </div>
   <div id="index">
     <h1>{{ page.title }}</h1>
-    {% for post in site.posts %}  
+    {% for post in site.posts %}
     {% unless post.next %}
       <h3>{{ post.date | date: '%Y' }}</h3>
       {% else %}
@@ -56,6 +56,8 @@
   </div><!-- /#index -->
 </div><!-- /#main -->
 
+<h1><a href=/tags>Tags</a></h1>
+
 <div class="footer-wrap">
   <footer>
     {% include _footer.html %}
@@ -63,6 +65,6 @@
 </div><!-- /.footer-wrap -->
 
 {% include _scripts.html %}
-  
+
 </body>
 </html>
