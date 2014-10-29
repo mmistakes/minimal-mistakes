@@ -3,6 +3,9 @@
 title:            Balint Neray
 locale:           en_US
 url:              //balintneray.github.io
+description: "Personal website of sociologist Balint Neray."
+logo: slogo.png
+teaser: teaser.png
 
 
 # Jekyll configuration
@@ -23,8 +26,26 @@ kramdown:
   toc_levels: 1..6
   use_coderay: false
 
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+
+
+# Plugin: jekyll-assets
+
+assets:
+  sources:
+    - _assets/javascripts
+    - _assets/stylesheets
+  js_compressor: uglifier
+  css_compressor: sass
+  cachebust: hard
+  cache: true
+  debug: false
+  version: 1
+
 
 # Site owner
+
 owner:
   name: Balint Neray
   avatar: nb.jpg
@@ -52,6 +73,3 @@ owner:
   dribbble: #username
   youtube: #username
   soundcloud: #username
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
