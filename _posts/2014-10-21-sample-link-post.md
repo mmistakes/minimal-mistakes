@@ -7,7 +7,7 @@ link: http://mademistakes.com
 share: true
 ---
 
-The link in the post's title redirect you to [Michael Rose](https://mademistakes.com/about/)'s [Made Mistakes](https://mademistakes.com).--
-He is the original developer of the Minimal Mistake project and his site is going to inspire you if you are into drawing (on iPad) and design.--
-This theme supports **link posts**, made famous by John Gruber. To use, just add `link: http://url-you-want-linked` to the post's YAML front matter and you're done.--
+The link in the post's title redirect you to [Michael Rose](https://mademistakes.com/about/)'s [Made Mistakes](https://mademistakes.com).\s\s
+He is the original developer of the Minimal Mistake project and his site is going to inspire you if you are into drawing (on iPad) and design.\s\s
+This theme supports **link posts**, made famous by John Gruber. To use, just add `link: http://url-you-want-linked` to the post's YAML front matter and you're done.\s\s
 > And this is how a quote looks.  
