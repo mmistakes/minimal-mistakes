@@ -16,7 +16,7 @@ So I went on the geeky road and found the [Github Pages](https://pages.github.co
 ## on Github
 
 A huge benefit of GitHub Pages is ease of collaboration. Changes you make in the repository are automatically synced, so if your site’s hosted on GitHub, it’s as up-to-date as your GitHub repository. Plus, you can reach and edit your website through your Git account anytime you want.  
-If you are new to Github, you might want learn [how to set up your own Git](https://help.github.com/articles/set-up-git/). If you are unfamiliar with or have significant aversion to code-writing, then Github is not necessarely for you. But if your work / interest involves some sort of programming, then you should definitely check it out.
+If you are new to Github, you might want learn [how to set up your own Git](https://help.github.com/articles/set-up-git/). If you are unfamiliar with or have significant aversion to code-writing, then Github is not necessarily for you. But if your work / interest involves some sort of programming, then you should definitely check it out.
 
 ## with Jekyll
 
