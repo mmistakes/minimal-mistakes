@@ -15,7 +15,7 @@ So I went on the geeky road and found the [Github Pages](https://pages.github.co
 
 ## on Github
 
-A huge benefit of GitHub Pages is ease of collaboration. Changes you make in the repository are automatically synced, so if your site’s hosted on GitHub, it’s as up-to-date as your GitHub repository. Plus, you can reach and edit your website through your Git account anytime you want.  
+A huge benefit of GitHub Pages is ease of collaboration. Changes you make in the repository are automatically synced, so if your site’s hosted on GitHub, it’s as up-to-date as your GitHub repository. Plus, you can reach and edit your website online via your Git account anytime you want.  
 If you are new to Github, you might want learn [how to set up your own Git](https://help.github.com/articles/set-up-git/). If you are unfamiliar with or have significant aversion to code-writing, then Github is not necessarily for you. But if your work / interest involves some sort of programming, then you should definitely check it out.
 
 ## with Jekyll
@@ -24,10 +24,10 @@ On Github you can start building your site from scratch or use one of the pre-ma
 
 1. Fork the [Minimal Mistakes repo](http://github.com/mmistakes/minimal-mistakes/fork).
 2. Clone the repo you just forked and rename it according to the [Github Pages guide](https://pages.github.com).
-3. [Install Bundler](http://bundler.io) `gem install bundler` and Run `bundle install` to install all dependencies ([Jekyll](http://jekyllrb.com/), [Jekyll-Sitemap](https://github.com/jekyll/jekyll-sitemap), [Octopress](https://github.com/octopress/octopress), etc)
-4. Start working on you site by using the guide in the [Minimal Mistakes project](http://github.com/mmistakes).
+3. [Install Bundler](http://bundler.io) `gem install bundler` and Run `bundle install` to install all dependencies ([Jekyll](http://jekyllrb.com/), [Jekyll-Sitemap](https://github.com/jekyll/jekyll-sitemap), [Octopress](https://github.com/octopress/octopress), etc.)
+4. Start working on your site by using the guide in the [Minimal Mistakes project](http://github.com/mmistakes).
 <br><br>
-Note: `the highlighted texts` are console commands for Mac users.
+*Note*: `the highlighted texts` are console commands for Mac users.
 
 ## and Markdown
 
