@@ -7,9 +7,12 @@ modified: 2014-10-22
 comments: true
 ---
 
-## The page
+## The website(s)
 
-In the past 4-5 weeks I have been working on my personal webiste(s). I started off with [Wix](http://www.wix.com), because in my opinion this is the best free website generator for personal purposes, which features an incredible amount of nice themes and gives you a lot of room for creativity. However, I soon realised that one of its disadvantages is its cumbersome approach for blogging. So I switched to [Wordpress](https://wordpress.org), arguably the best solution for blogging. At this point I realised that I do enjoy the "how to ..." learning process much more than I actually want my website to be done. Hence, I started to search for something more challenging, that gives me more freedom rather in the back-end than in the front-end.
+In the past 4-5 weeks I have been working on my personal webiste(s) in my free time. But why have I been doing so? And, why would I need a website? Both are truly relevant question, but let's deal with the former for now.  
+So why would I work on a website? Because of the *I am getting self-centered / lonely* (There shall be a post about the connection between lonely and egoist ... you erre left with yourself) issue, or trendy, why not, **good lesson**.
+
+I started off with [Wix](http://www.wix.com), because in my opinion this is the best free website generator for personal purposes, which features an incredible amount of nice themes and gives you a lot of room for creativity. However, I soon realised that one of its disadvantages is its cumbersome approach for blogging. So I switched to [Wordpress](https://wordpress.org), arguably the best solution for blogging. At this point I realised that I do enjoy the "how to ..." learning process much more than I actually want my website to be done. Hence, I started to search for something more challenging, that gives me more freedom rather in the back-end than in the front-end.
 <br><br>
 So I went on the geeky road and found the [Github Pages](https://pages.github.com), hosted by [Github](http://github.com) and powered by [Jekyll](http://jekyllrb.com/). After several failed attempts - a vital part of the learning process - I eventually figured how to set up the page, using [Michael Rose's](https://mademistakes.com) [Minimal Mistakes project](http://github.com/mmistakes). Now I am convinced that this is a great solution for a personal website and a blog too. So, here is a short summary of the project for those who are interested.
 
