@@ -39,5 +39,5 @@ Oh, and one more thing. For all of these, you will probably need a good text edi
 
 <figure>
 	<img src="/images/baracktocat.jpg">
-  <figcaption><a href="https://octodex.github.com" title="Github Octocodex" </a>.</figcaption>
+  <figcaption><a href="https://octodex.github.com" title="Github Octocodex"></a>.</figcaption>
 </figure>
