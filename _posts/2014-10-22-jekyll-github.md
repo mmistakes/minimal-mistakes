@@ -41,5 +41,5 @@ Oh, and one more thing. For all of these, you will probably need a good text edi
 	<img src="/images/github.jpeg">
 	<img src="/images/atom.jpeg">
 	<img src="/images/jekyll.jpeg">
-	<figcaption>Caption describing these three images.</figcaption>
+	<figcaption> [Github](http://github.com), [Atom](https://atom.io) and [Jekyll](http://jekyllrb.com/).</figcaption>
 </figure>
