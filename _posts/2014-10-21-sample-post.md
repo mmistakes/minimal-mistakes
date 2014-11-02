@@ -5,10 +5,6 @@ excerpt: "Example post just about everything you'll need to style in the theme: 
 modified: 2014-10-21
 tags: [example post, github, markdown]
 comments: true
-image:
-  feature: baracktocat.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 
 <section id="table-of-contents" class="toc">
