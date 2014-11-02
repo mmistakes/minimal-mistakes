@@ -13,8 +13,8 @@ Here are some examples of what a post with images might look like. If you want t
 #### One Up
 
 <figure>
-	<a href="https://www.facebook.com/photo.php?fbid=427266967310991&set=a.427266960644325.89811.100000830734583&type=3&theater"><img src="https://www.facebook.com/photo.php?fbid=427266967310991&set=a.427266960644325.89811.100000830734583&type=3&theater"></a>
-	<figcaption><a href="https://www.facebook.com/photo.php?fbid=427266967310991&set=a.427266960644325.89811.100000830734583&type=3&theater" title="Boglar">Boglar</a>.</figcaption>
+	<a href="http://imageobjecttext.files.wordpress.com/2012/06/hirst-the-magpie-2010.jpg"><img src="http://imageobjecttext.files.wordpress.com/2012/06/hirst-the-magpie-2010.jpg"></a>
+	<figcaption><a href="http://imageobjecttext.files.wordpress.com/2012/06/hirst-the-magpie-2010.jpg" title="The Magpie">The Magpie</a>.</figcaption>
 </figure>
 
 Vero laborum commodo occupy. Semiotics voluptate mumblecore pug. Cosby sweater ullamco quinoa ennui assumenda, sapiente occupy delectus lo-fi. Ea fashion axe Marfa cillum aliquip. Retro Bushwick keytar cliche. Before they sold out sustainable gastropub Marfa readymade, ethical Williamsburg skateboard brunch qui consectetur gentrify semiotics. Mustache cillum irony, fingerstache magna pour-over keffiyeh tousled selfies.
