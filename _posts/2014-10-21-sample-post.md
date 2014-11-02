@@ -6,7 +6,7 @@ modified: 2014-10-21
 tags: [example post, github, markdown]
 comments: true
 image:
-  feature: teaser.png
+  feature: baracktocat.jpg
   credit: WeGraphics
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
