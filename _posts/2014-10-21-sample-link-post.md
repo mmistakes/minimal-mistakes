@@ -2,7 +2,7 @@
 layout: post
 title: "Test Post Providing Sample Link"
 excerpt: "Example and code for using link posts."
-tags: [example post, github pages, link post]
+tags: [example post, github, link]
 link: http://mademistakes.com  
 share: true
 ---

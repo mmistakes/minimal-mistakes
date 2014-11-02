@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Creating Guthub Page with Jekyll"
-excerpt: "First post explaining the existance of this site"
-tags: [tutorial, github pages, jekyll]
+excerpt: "First post explaining the existence of this site"
+tags: [tutorial, github, jekyll]
 modified: 2014-10-22
 comments: true
 ---
@@ -29,10 +29,17 @@ On Github you can start building your site from scratch or use one of the pre-ma
 3. [Install Bundler](http://bundler.io) `gem install bundler` and Run `bundle install` to install all dependencies ([Jekyll](http://jekyllrb.com/), [Jekyll-Sitemap](https://github.com/jekyll/jekyll-sitemap), [Octopress](https://github.com/octopress/octopress), etc.)
 4. Start working on your site by using the guide in the [Minimal Mistakes project](http://github.com/mmistakes).
 <br><br>
-*Note*: `the highlighted texts` are console commands for Mac users.
+*Note*: these `the highlighted texts` are console commands for Mac users.
 
 ## and Markdown
 
-Jekyll is a fantastic website generator that’s designed for building minimal, static blogs to be hosted on GitHub Pages. It makes content creating and blogging very easy as it automatically develops HTML / XHTML files from Markdown files. Markdown provides you with really simple and convenient way to write (and to read) plain text. Learning the basics of the language is relatively fast, and you can find great guides such as [this one](http://markdown-guide.readthedocs.org/en/latest/) or [this one](https://daringfireball.net/projects/markdown/basics).
+Jekyll is a fantastic website generator that’s designed for building minimal, static blogs to be hosted on GitHub Pages. It makes content creating and blogging very easy as it automatically develops HTML / XHTML files from Markdown files. Markdown provides you with really simple and convenient way to write (and to read) plain text. Learning the basics of the language is relatively fast, and you can check out the example post here (such as the [Test Sample Post with Markdown](http://balintneray.github.io/sample-post/) ) or find great guides such as [this one](http://markdown-guide.readthedocs.org/en/latest/) or [this one](https://daringfireball.net/projects/markdown/basics).
 <br><br>
 Oh, and one more thing. For all of these, you will probably need a good text editor software. If you don't have a favourite yet, I would suggest in general to go with [SublimeText](http://www.sublimetext.com), but Mac users should check out [Atom](https://atom.io), yet an other Github project - works really well for me!
+
+<figure class="third">
+	<img src="/images/github.jpeg">
+	<img src="/images/atom.jpeg">
+	<img src="/images/jekyll.jpeg">
+	<figcaption>Caption describing these three images.</figcaption>
+</figure>
