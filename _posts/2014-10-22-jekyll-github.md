@@ -7,7 +7,7 @@ modified: 2014-10-22
 comments: true
 ---
 
-## The website(s)
+## the Website(s)
 
 In the past 4-5 weeks I have been working on my personal webiste(s) in my free time. Okay, wait, what?! Why would I work on website(s), especially in my free time? And, why would I need a website on the first place? These are two relevant questions, but I don't really know the answer to the second one ... maybe time will tell. I had many different ideas and reasons, but none of them are interesting from the perspective of this post. This website building something has come, I guess, as a natural consequence of my unavoidable and increasingly frequent encounters with programming. However alienated, it seems to be an essential and elementary skill for more and more professions, even for sociology. So, I took this project as a learning process, to practice a bit without having obligation.
 <br><br>
