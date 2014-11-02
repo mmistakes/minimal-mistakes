@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Test Sample Post with Markdown"
+title: "Test Post with Markdown"
 excerpt: "Example post just about everything you'll need to style in the theme: headings, paragraphs, block quotes, tables, code blocks, and more."
 modified: 2014-10-21
 tags: [tutorial, github, markdown]
