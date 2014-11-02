@@ -38,5 +38,5 @@ Jekyll is a fantastic website generator that’s designed for building minimal, 
 Oh, and one more thing. For all of these, you will probably need a good text editor software. If you don't have a favourite yet, I would suggest in general to go with [SublimeText](http://www.sublimetext.com), but Mac users should check out [Atom](https://atom.io), yet an other Github project - works really well for me!
 
 <figure>
-	<img src="/images/github.jpeg">
+	<img src="/images/baracktocat.jpg">
 </figure>
