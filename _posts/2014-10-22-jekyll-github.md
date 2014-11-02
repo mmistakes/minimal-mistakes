@@ -39,7 +39,5 @@ Oh, and one more thing. For all of these, you will probably need a good text edi
 
 <figure class="third">
 	<img src="/images/github.jpeg">
-	<img src="/images/atom.jpeg">
-	<img src="/images/jekyll.jpeg">
-	<figcaption> [Github](http://github.com), [Atom](https://atom.io) and [Jekyll](http://jekyllrb.com/).</figcaption>
+	<figcaption> Github </figcaption>
 </figure>
