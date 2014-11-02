@@ -34,9 +34,9 @@ On GitHub you can start building your site from scratch or use one of the pre-ma
 
 ## and Markdown
 
-Jekyll makes content creating and blogging very easy as it automatically develops HTML / XHTML files from Markdown files. Markdown is essentially a text-to-HTML conversion tool. It provides you with really simple and convenient way to write (and to read) plain text. Learning the basics of the language is relatively fast, and you can check out the example posts here (such as the [Test Sample Post with Markdown](http://balintneray.github.io/sample-post/) ) or find great guides such as [this one](http://markdown-guide.readthedocs.org/en/latest/) or [this one](https://daringfireball.net/projects/markdown/basics).
+Jekyll makes content creating and blogging very easy as it automatically develops HTML / XHTML files from Markdown files. Markdown is essentially a text-to-HTML conversion tool. It provides you with really simple and convenient way to write (and to read) plain text. Learning the basics of the language is relatively fast, and you can check out the Test Posts here (such as the [Test Post with Markdown](http://balintneray.github.io/sample-post/) ) or find great guides such as [this one](http://markdown-guide.readthedocs.org/en/latest/) or [this one](https://daringfireball.net/projects/markdown/basics).
 <br><br>
-Oh, and one more thing. For all of these, you will probably need a good text editor software. If you don't have a favourite yet, I would suggest in general to go with [SublimeText](http://www.sublimetext.com), but Mac users should give a try to [Atom](https://atom.io), yet an other GitHub project, works really well for me!
+Oh, and one more thing. For all of these, you will probably need a good text editor software. If you don't have a favourite yet, I would suggest you in general to go with [SublimeText](http://www.sublimetext.com), but Mac users should give a try to [Atom](https://atom.io), yet an other GitHub project, works really well for me!
 
 <figure>
 	<img src="/images/baracktocat.jpg">
