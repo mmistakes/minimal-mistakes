@@ -2,7 +2,7 @@
 layout: post
 title: "Test Post with Large Feature Image and Text"
 excerpt: "Example custom written post descriptions are the way to go... if you're not lazy."
-tags: [example post, github, readability]
+tags: [tutorial, github, readability]
 comments: true
 ---
 
