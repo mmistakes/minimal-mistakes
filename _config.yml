@@ -1,8 +1,9 @@
 # Site wide configuration
 
+name: Balint Neray
 title:            Balint Neray
 locale:           en_US
-url:              //balintneray.github.io
+url:              http://balintneray.github.io
 description: "Personal website of sociologist Balint Neray."
 logo: slogo.png
 teaser: teaser.png
