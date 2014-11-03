@@ -1,0 +1,10 @@
+<div id="read-next">
+  <hr />
+
+  <h5>Read This Next</h5>
+  <div class="tiles">
+  {% for post in site.related_posts limit:3 %}
+    {% include post-grid.html param="related" %}
+  {% endfor %}
+  </div>
+</div>
