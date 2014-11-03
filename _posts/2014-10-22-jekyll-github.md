@@ -30,7 +30,9 @@ On GitHub you can start building your site from scratch or use one of the pre-ma
 3. [Install Bundler](http://bundler.io) `gem install bundler` and Run `bundle install` to install all dependencies ([Jekyll](http://jekyllrb.com/), [Jekyll-Sitemap](https://github.com/jekyll/jekyll-sitemap), [Octopress](https://github.com/octopress/octopress), etc.)
 4. Start working on your site by using the guide in the [Minimal Mistakes project](http://github.com/mmistakes).
 <br><br>
-*Note*: these `the highlighted texts` are console commands for Mac users. {: .notice}
+
+<i class="fa fa-info-circle"></i> *Note*: these `the highlighted texts` are console commands for Mac users.
+{: .notice}
 
 ## and Markdown
 
