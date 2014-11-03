@@ -21,10 +21,6 @@ And if you were searching for something more user-friendly, you might want to ta
 Alright, so one of the benefits of GitHub Pages is ease of collaboration. Changes you make in the repository are automatically synced, so if your site’s hosted on GitHub, it’s as up-to-date as your GitHub repository. Plus, you can reach and edit your website online via your Git account from everywhere.
 If you are new to GitHub, you might want learn [how to set up your own Git](https://help.github.com/articles/set-up-git/). If you are unfamiliar with or have significant aversion to code-writing, then GitHub is not necessarily the best choice for you. But if your work / interest involves some sort of programming, then you should definitely check it out.
 
-<div markdown="0">
-	<a href="https://mac.github.com" class="btn">Github for Mac</a>
-</div>
-
 ## with Jekyll
 
 On GitHub you can start building your site from scratch or use one of the pre-made templates. Either way, you have to learn a little bit about Jekyll, starting from the [installation](http://jekyllrb.com/docs/installation/). Jekyll is a fantastic website generator that’s designed for building minimal, static blogs to be hosted on GitHub Pages. If you would like to create a new Jekyll site using Minimal Mistakes follow, these steps:
@@ -45,7 +41,10 @@ Jekyll makes content creating and blogging very easy as it automatically develop
 Oh, and one more thing. For all of these, you will probably need a good text editor software. If you don't have a favourite yet, I would suggest you in general to go with [SublimeText](http://www.sublimetext.com), but Mac users should give a try to [Atom](https://atom.io), yet an other GitHub project, works really well for me!
 
 <div markdown="0">
-	<a href="https://atom.io" class="btn">Atom</a>
+  <a href="https://mac.github.com" class="btn">Install Github Mac</a>
+  <a href="https://atom.io" class="btn">Install Atom</a>
+	<a href="http://bundler.io" class="btn">Install Bundler</a>
+	<a href="http://jekyllrb.com/docs/installation/" class="btn">Install Jekyll</a>
 </div>
 
 <figure>
