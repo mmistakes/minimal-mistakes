@@ -19,14 +19,13 @@ image:
 </div>
 </section><!-- /#table-of-contents -->
 
-
-## Publications
+## Journals and Book Chapter
 
 * xy 2014
 * z 2013
 * zs 2012
 
-## Presentations
+## Presentations and Talks
 
 * xy 2014
 * z 2013
