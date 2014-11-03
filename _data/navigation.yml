@@ -13,6 +13,7 @@
 					    {% endif %}
 					    <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
 					  {% endfor %}
+            <li><i class="icon-feed"></i> <a href="{{ site.url }}/feed.xml" title="Atom/RSS feed">Feed</a>
 		    </ul>
 		</nav>
 	</div><!-- /.top-navigation -->
