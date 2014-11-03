@@ -31,7 +31,7 @@ On GitHub you can start building your site from scratch or use one of the pre-ma
 4. Start working on your site by using the guide in the [Minimal Mistakes project](http://github.com/mmistakes).
 <br><br>
 
-<i class="fa fa-info-circle"></i> *Note*: these `the highlighted texts` are console commands for Mac users.
+<i class="fa fa-info-circle"></i> *Note*: these `highlighted texts` are console commands for Mac users.
 {: .notice}
 
 ## and Markdown
