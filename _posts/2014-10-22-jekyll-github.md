@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Creating Guthub Page with Jekyll"
+title: "Creating a GitHub Page with Jekyll"
 excerpt: "First post explaining the existence of this site"
 tags: [tutorial, github, jekyll]
 modified: 2014-10-22
@@ -41,7 +41,7 @@ Jekyll makes content creating and blogging very easy as it automatically develop
 Oh, and one more thing. For all of these, you will probably need a good text editor software. If you don't have a favourite yet, I would suggest you in general to go with [SublimeText](http://www.sublimetext.com), but Mac users should give a try to [Atom](https://atom.io), yet an other GitHub project, works really well for me!
 
 <div markdown="0">
-  <a href="https://mac.github.com" class="btn">Install Github Mac</a>
+  <a href="https://mac.github.com" class="btn">Install GitHub Mac</a>
   <a href="https://atom.io" class="btn">Install Atom</a>
 	<a href="http://bundler.io" class="btn">Install Bundler</a>
 	<a href="http://jekyllrb.com/docs/installation/" class="btn">Install Jekyll</a>
