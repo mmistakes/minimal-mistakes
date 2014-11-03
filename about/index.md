@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About this
+title: What is this about?
 tags: [about, personal]
 modified: 2014-10-21
 comments: false
