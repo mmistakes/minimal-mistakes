@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About this site
+title: About this
 tags: [about, personal]
 modified: 2014-10-21
 comments: false
@@ -10,7 +10,9 @@ image:
 
  ... by and for wordprocessing and character-crunching ...
 
+    #   #   #
 
-# About the me
-
- ... getting self - centered ...
+you cut the cord and pulled some strings,  
+made yourself some angel wings  
+and if those angel wings don’t fly,  
+someone’s gonna paint you another sky
