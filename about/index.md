@@ -15,5 +15,5 @@ So what are the reasons for the series of self-centredness? I’ll try to give t
 I wouldn’t say it is going to blogging (whatever that is) as I haven't really thought about the thematic structure of the posts, but ideally this shall be multi purpose site. So second of all I take this need for self-centred reports as an opportunity or stepping stone to start writing about topics that might be interesting for a somewhat wider audience. And if it will be so, this intro shall be revised.
 <br><br>
 
-<i class="fa fa-info-circle"></i> ... by and for wordprocessing and character-crunching ...s
+<i class="fa fa-info-circle"></i> ... by and for wordprocessing and character-crunching ...
 {: .notice}
