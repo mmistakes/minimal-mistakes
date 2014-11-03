@@ -10,7 +10,7 @@ image:
 
  ... by and for wordprocessing and character-crunching ...
 
-    #   #   #
+                        *
 
 you cut the cord and pulled some strings,  
 made yourself some angel wings  
