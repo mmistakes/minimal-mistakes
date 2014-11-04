@@ -6,39 +6,42 @@ tags: [tutorial, github, readability]
 comments: true
 ---
 
-Portland in shoreditch Vice, labore typewriter pariatur hoodie fap sartorial Austin. Pinterest literally occupy Schlitz forage. Odio ad blue bottle vinyl, 90's narwhal commodo bitters pour-over nostrud. Ugh est hashtag in, fingerstache adipisicing laboris esse Pinterest shabby chic Portland. Shoreditch bicycle rights anim, flexitarian laboris put a bird on it vinyl cupidatat narwhal. Hashtag artisan skateboard, flannel Bushwick nesciunt salvia aute fixie do plaid post-ironic dolor McSweeney's. Cliche pour-over chambray nulla four loko skateboard sapiente hashtag.
+## As Planned, Right-To-Die Advocate Brittany Maynard Ends Her Life
 
-Vero laborum commodo occupy. Semiotics voluptate mumblecore pug. Cosby sweater ullamco quinoa ennui assumenda, sapiente occupy delectus lo-fi. Ea fashion axe Marfa cillum aliquip. Retro Bushwick keytar cliche. Before they sold out sustainable gastropub Marfa readymade, ethical Williamsburg skateboard brunch qui consectetur gentrify semiotics. Mustache cillum irony, fingerstache magna pour-over keffiyeh tousled selfies.
-
-## Cupidatat 90's lo-fi authentic try-hard
-
-In pug Portland incididunt mlkshk put a bird on it vinyl quinoa. Terry Richardson shabby chic +1, scenester Tonx excepteur tempor fugiat voluptate fingerstache aliquip nisi next level. Farm-to-table hashtag Truffaut, Odd Future ex meggings gentrify single-origin coffee try-hard 90's.
-
-* Sartorial hoodie
-* Labore viral forage
-* Tote bag selvage
-* DIY exercitation et id ugh tumblr church-key
-
-Incididunt umami sriracha, ethical fugiat VHS ex assumenda yr irure direct trade. Marfa Truffaut bicycle rights, kitsch placeat Etsy kogi asymmetrical. Beard locavore flexitarian, kitsch photo booth hoodie plaid ethical readymade leggings yr.
-
-Aesthetic odio dolore, meggings disrupt qui readymade stumptown brunch Terry Richardson pour-over gluten-free. Banksy american apparel in selfies, biodiesel flexitarian organic meh wolf quinoa gentrify banjo kogi. Readymade tofu ex, scenester dolor umami fingerstache occaecat fashion axe Carles jean shorts minim. Keffiyeh fashion axe nisi Godard mlkshk dolore. Lomo you probably haven't heard of them eu non, Odd Future Truffaut pug keytar meggings McSweeney's Pinterest cred. Etsy literally aute esse, eu bicycle rights qui meggings fanny pack. Gentrify leggings pug flannel duis.
-
-## Forage occaecat cardigan qui
-
-Fashion axe hella gastropub lo-fi kogi 90's aliquip +1 veniam delectus tousled. Cred sriracha locavore gastropub kale chips, iPhone mollit sartorial. Anim dolore 8-bit, pork belly dolor photo booth aute flannel small batch. Dolor disrupt ennui, tattooed whatever salvia Banksy sartorial roof party selfies raw denim sint meh pour-over. Ennui eu cardigan sint, gentrify iPhone cornhole.
-
-> Whatever velit occaecat quis deserunt gastropub, leggings elit tousled roof party 3 wolf moon kogi pug blue bottle ea. Fashion axe shabby chic Austin quinoa pickled laborum bitters next level, disrupt deep v accusamus non fingerstache.
-
-Tote bag asymmetrical elit sunt. Occaecat authentic Marfa, hella McSweeney's next level irure veniam master cleanse. Sed hoodie letterpress artisan wolf leggings, 3 wolf moon commodo ullamco. Anim occupy ea labore Terry Richardson. Tofu ex master cleanse in whatever pitchfork banh mi, occupy fugiat fanny pack Austin authentic. Magna fugiat 3 wolf moon, labore McSweeney's sustainable vero consectetur. Gluten-free disrupt enim, aesthetic fugiat jean shorts trust fund keffiyeh magna try-hard.
-
-## Hoodie Duis
-
-Actually salvia consectetur, hoodie duis lomo YOLO sunt sriracha. Aute pop-up brunch farm-to-table odio, salvia irure occaecat. Sriracha small batch literally skateboard. Echo Park nihil hoodie, aliquip forage artisan laboris. Trust fund reprehenderit nulla locavore. Stumptown raw denim kitsch, keffiyeh nulla twee dreamcatcher fanny pack ullamco 90's pop-up est culpa farm-to-table. Selfies 8-bit do pug odio.
-
-### Thundercats Ho!
-
-Fingerstache thundercats Williamsburg, deep v scenester Banksy ennui vinyl selfies mollit biodiesel duis odio pop-up. Banksy 3 wolf moon try-hard, sapiente enim stumptown deep v ad letterpress. Squid beard brunch, exercitation raw denim yr sint direct trade. Raw denim narwhal id, flannel DIY McSweeney's seitan. Letterpress artisan bespoke accusamus, meggings laboris consequat Truffaut qui in seitan. Sustainable cornhole Schlitz, twee Cosby sweater banh mi deep v forage letterpress flannel whatever keffiyeh. Sartorial cred irure, semiotics ethical sed blue bottle nihil letterpress.
-
-Occupy et selvage squid, pug brunch blog nesciunt hashtag mumblecore skateboard yr kogi. Ugh small batch swag four loko. Fap post-ironic qui tote bag farm-to-table american apparel scenester keffiyeh vero, swag non pour-over gentrify authentic pitchfork. Schlitz scenester lo-fi voluptate, tote bag irony bicycle rights pariatur vero Vice freegan wayfarers exercitation nisi shoreditch. Chambray tofu vero sed. Street art swag literally leggings, Cosby sweater mixtape PBR lomo Banksy non in pitchfork ennui McSweeney's selfies. Odd Future Banksy non authentic.
-
-Aliquip enim artisan dolor post-ironic. Pug tote bag Marfa, deserunt pour-over Portland wolf eu odio intelligentsia american apparel ugh ea. Sunt viral et, 3 wolf moon gastropub pug id. Id fashion axe est typewriter, mlkshk Portland art party aute brunch. Sint pork belly Cosby sweater, deep v mumblecore kitsch american apparel. Try-hard direct trade tumblr sint skateboard. Adipisicing bitters excepteur biodiesel, pickled gastropub aute veniam.
+This post was originally published on [npr](http://www.npr.org/blogs/thetwo-way/2014/11/03/361094919/as-planned-right-to-die-advocate-brittany-maynard-ends-her-life?utm_medium=RSS&utm_campaign=news) at November 03, 2014 8:27 AM ET and hereby is being used for readability testing.
+<br><br>
+Brittany Maynard, who was diagnosed with an incurable brain tumor, went through with her plan to end her life on Saturday at her home in Oregon.
+<br><br>
+Maynard, who spoke publicly about her choice to end her life, revived the debate of assisted suicide in the United States.
+<br><br>
+In an obituary posted to [her site](http://www.thebrittanyfund.org) on Sunday night, Maynard is said to have had a "brief but solid 29 years." This past year, she was diagnosed with a stage 4 malignant brain tumor.
+<br><br>
+In an op ed on [CNN](http://www.cnn.com/2014/10/07/opinion/maynard-assisted-suicide-cancer-dignity/), Maynard wrote that the treatment options would have "destroyed the time I had left."
+<br><br>
+She concluded:
+<br><br>
+> "Because the rest of my body is young and healthy, I am likely to physically hang on for a long time even though cancer is eating my mind. I probably would have suffered in hospice care for weeks or even months. And my family would have had to watch that.
+> "I did not want this nightmare scenario for my family, so I started researching death with dignity. It is an end-of-life option for mentally competent, terminally ill patients with a prognosis of six months or less to live. It would enable me to use the medical practice of aid in dying: I could request and receive a prescription from a physician for medication that I could self-ingest to end my dying process if it becomes unbearable.
+> "I quickly decided that death with dignity was the best option for me and my family."
+<br><br>
+Her obit describes what happened next:
+<br><br>
+>"She moved to Oregon to pass away in a little yellow house she picked out in the beautiful city of Portland. Oregon is a place that strives to protect patient rights and autonomy; she wished that her home State of California had also been able to provide terminally ill patients with the same choice. Brittany chose to speak out and advocate for this patient right and option, which she felt is an informed choice that should be made available to all terminally ill patients across our great nation. "The freedom is in the choice," she believed. "If the option of DWD is unappealing to anyone for any reason, they can simply choose not to avail themselves of it. Those very real protections are already in place." With great consideration, she gave personal interviews to the UK's Tonight Show prior to Death with Dignity being addressed by their Parliament, as well as participated in an American based campaign for Death With Dignity education and legislation."
+<br><br>
+On Saturday, like planned, Maynard ended her life.
+<br><br>
+The big question that her death leaves open, however, is whether the debate she inspired will lead to changes in how Americans feel about assisted suicide.
+<br><br>
+Art Caplan, of the Division of Medical Ethics at the New York University Langone Medical Center in New York City, wrote that Maynard's case doesn't really present any new, material facts to the assisted suicide debate.
+<br><br>
+But Maynard was different, however, in one crucial way. Caplan writes: "Brittany Maynard, because she's young, vivacious, attractive, a newlywed, has a dog, and is a very different kind of person from the average middle-aged or older person who has to confront issues about terminal illness, changes the optics of the debate. Now we have a young woman getting people in her generation interested in the issue."
+<br><br>
+In Caplan's mind, Maynard's death will push the issue into state legislatures and onto ballots.
+<br><br>
+But this is a complicated topic. As [The Washington Post reports](http://www.washingtonpost.com/news/morning-mix/wp/2014/11/03/how-brittany-maynard-may-change-the-right-to-die-debate-after-death/?tid=hp_mm), just as she had support for her decision, there were others who tried to persuade her to live:
+<br><br>
+>"Ira Byock, chief medical officer of the Institute for Human Caring of Providence Health and Services, spoke loudly against the practice.
+>"'When doctor-induced death becomes an accepted response to the suffering of dying people, logical extensions grease the slippery slope,' he wrote in a [New York Times op-ed](http://www.nytimes.com/roomfordebate/2014/10/06/expanding-the-right-to-die/doctor-assisted-suicide-is-unethical-and-dangerous). He cited statistics in Holland, where the practice is permitted, that claim more than 40 people sought and received doctor-assisted death for depression and other mental disorders. 'Even [the psychiatrist who began this practice](http://www.thedailybeast.com/articles/2014/02/03/the-dutch-debate-doctor-assisted-suicide-for-depression.html) in the 90′s recently declared the situation had gone "off the rails."
+>"'Moral outrage is appropriate and needed to fix the sorry state of dying in America. Legalizing assisted suicide fixes nothing. The principle that doctors must not kill patients stands.'"
+<br><br>
+Maynard is survived by her husband, Daniel Diaz; her mother, Deborah Ziegler; and her step-father, Gary Holmes.
