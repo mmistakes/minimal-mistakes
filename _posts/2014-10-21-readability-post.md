@@ -22,8 +22,10 @@ In an op ed on [CNN](http://www.cnn.com/2014/10/07/opinion/maynard-assisted-suic
 <br><br>
 She concluded:
 
-> "Because the rest of my body is young and healthy, I am likely to physically hang on for a long time even though cancer is eating my mind. I probably would have suffered in hospice care for weeks or even months. And my family would have had to watch that."  
+> "Because the rest of my body is young and healthy, I am likely to physically hang on for a long time even though cancer is eating my mind. I probably would have suffered in hospice care for weeks or even months. And my family would have had to watch that."
+
 > "I did not want this nightmare scenario for my family, so I started researching death with dignity. It is an end-of-life option for mentally competent, terminally ill patients with a prognosis of six months or less to live. It would enable me to use the medical practice of aid in dying: I could request and receive a prescription from a physician for medication that I could self-ingest to end my dying process if it becomes unbearable."  
+
 > "I quickly decided that death with dignity was the best option for me and my family."
 
 Her obit describes what happened next:
