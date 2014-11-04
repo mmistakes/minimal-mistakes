@@ -7,7 +7,7 @@ modified: 2014-11-3
 comments: true
 ---
 
-## As Planned, Right-To-Die Advocate Brittany Maynard Ends Her Life
+### As Planned, Right-To-Die Advocate Brittany Maynard Ends Her Life
 
 <i class="fa fa-info-circle"></i> This post was originally published on [npr](http://www.npr.org/blogs/thetwo-way/2014/11/03/361094919/as-planned-right-to-die-advocate-brittany-maynard-ends-her-life?utm_medium=RSS&utm_campaign=news) at November 03, 2014 8:27 AM ET and hereby is being used for readability testing.
 {: .notice}
