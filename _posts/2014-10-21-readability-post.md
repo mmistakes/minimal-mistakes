@@ -42,7 +42,6 @@ But Maynard was different, however, in one crucial way. Caplan writes: "Brittany
 In Caplan's mind, Maynard's death will push the issue into state legislatures and onto ballots.
 <br><br>
 But this is a complicated topic. As [The Washington Post reports](http://www.washingtonpost.com/news/morning-mix/wp/2014/11/03/how-brittany-maynard-may-change-the-right-to-die-debate-after-death/?tid=hp_mm), just as she had support for her decision, there were others who tried to persuade her to live:
-<br><br>
 
 > "Ira Byock, chief medical officer of the Institute for Human Caring of Providence Health and Services, spoke loudly against the practice.  
 > "'When doctor-induced death becomes an accepted response to the suffering of dying people, logical extensions grease the slippery slope,' he wrote in a [New York Times op-ed](http://www.nytimes.com/roomfordebate/2014/10/06/expanding-the-right-to-die/doctor-assisted-suicide-is-unethical-and-dangerous). He cited statistics in Holland, where the practice is permitted, that claim more than 40 people sought and received doctor-assisted death for depression and other mental disorders. 'Even [the psychiatrist who began this practice](http://www.thedailybeast.com/articles/2014/02/03/the-dutch-debate-doctor-assisted-suicide-for-depression.html) in the 90′s recently declared the situation had gone "off the rails."  
