@@ -2,7 +2,7 @@
 layout: post
 title: "Test Post with Markdown"
 excerpt: "Example post just about everything you'll need to style in the theme: headings, paragraphs, block quotes, tables, code blocks, and more."
-modified: 2014-10-21
+modified: 2014-11-3
 tags: [tutorial, github, markdown]
 comments: true
 ---
@@ -19,7 +19,7 @@ comments: true
 
 ## HTML Elements
 
-Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
+Below is just about everything you'll need to style in the theme. On the right there is the table of contest (works for the pages as well as the posts). You might want to check the source code to see the many embedded elements within paragraphs.
 
 # Heading 1
 
