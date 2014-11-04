@@ -3,7 +3,7 @@ layout: post
 title: "Creating a GitHub Page with Jekyll"
 excerpt: "First post explaining the existence of this site"
 tags: [tutorial, github, jekyll]
-modified: 2014-10-22
+modified: 2014-11-3
 comments: true
 ---
 
