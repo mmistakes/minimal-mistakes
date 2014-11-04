@@ -8,7 +8,7 @@ image:
   feature: boglar.jpg
 ---
 
-Oh, hey, I'm Balint Neray - yet an other wordprocessin' and data-cruchin' sociologist -  and You are visiting my site.
+Oh, hey, I'm Balint Neray - yet an other wordprocessin' and data-cruchin' sociologist - You are visiting my site right now.
 <br><br>
 *Viewer discretion is advised:* this site is most likely going to be filled with strongly self-centred posts. Rather uncharacteristic, as I’d like to believe. And rather surprising too. Even for myself. When I left Hungary I told myself as well as some friends and relatives that I am not going to leak out my thoughts and ideas. Seriously, just because I moved to an other country (even if this country is the US) my thoughts are not worthy of mentioning. Indeed, so far nothing has changed.
 <br><br>
