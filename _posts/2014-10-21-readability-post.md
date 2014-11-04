@@ -11,7 +11,7 @@ comments: true
 
 <i class="fa fa-info-circle"></i> This post was originally published on [npr](http://www.npr.org/blogs/thetwo-way/2014/11/03/361094919/as-planned-right-to-die-advocate-brittany-maynard-ends-her-life?utm_medium=RSS&utm_campaign=news) at November 03, 2014 8:27 AM ET and hereby is being used for readability testing.
 {: .notice}
-
+<br><br>
 Brittany Maynard, who was diagnosed with an incurable brain tumor, went through with her plan to end her life on Saturday at her home in Oregon.
 <br><br>
 Maynard, who spoke publicly about her choice to end her life, revived the debate of assisted suicide in the United States.
