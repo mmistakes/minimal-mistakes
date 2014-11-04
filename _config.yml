@@ -5,9 +5,8 @@ title:            Balint Neray
 locale:           en_US
 url:              http://balintneray.github.io
 description: "Personal website of sociologist Balint Neray."
-logo: slogo.png
-teaser: teaser.png
-
+logo: logo-128x128.png
+teaser: logo-128x128.png
 
 # Jekyll configuration
 
