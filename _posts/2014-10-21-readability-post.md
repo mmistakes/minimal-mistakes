@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Test Post Testing Readability with a Bunch of Text"
+title: "Test Post with a Bunch of Text"
 excerpt: "Example for a ton of text to test readability."
 tags: [tutorial, github, readability]
 modified: 2014-11-3
