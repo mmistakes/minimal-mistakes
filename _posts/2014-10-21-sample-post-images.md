@@ -3,6 +3,7 @@ layout: post
 title: "Test Post with Images"
 excerpt: "Examples and code for displaying images in posts."
 tags: [tutorial, github, images]
+modified: 2014-11-1
 comments: true
 ---
 
