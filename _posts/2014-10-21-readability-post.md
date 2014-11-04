@@ -24,14 +24,11 @@ She concluded:
 > "I did not want this nightmare scenario for my family, so I started researching death with dignity. It is an end-of-life option for mentally competent, terminally ill patients with a prognosis of six months or less to live. It would enable me to use the medical practice of aid in dying: I could request and receive a prescription from a physician for medication that I could self-ingest to end my dying process if it becomes unbearable."  
 > "I quickly decided that death with dignity was the best option for me and my family."
 
-<br><br>
 Her obit describes what happened next:
-<br><br>
 
 > "She moved to Oregon to pass away in a little yellow house she picked out in the beautiful city of Portland. Oregon is a place that strives to protect patient rights and autonomy; she wished that her home State of California had also been able to provide terminally ill patients with the same choice. Brittany chose to speak out and advocate for this patient right and option, which she felt is an informed choice that should be made available to all terminally ill patients across our great nation. The freedom is in the choice," she believed.  
 > "If the option of DWD is unappealing to anyone for any reason, they can simply choose not to avail themselves of it. Those very real protections are already in place."
 
-<br><br>
 With great consideration, she gave personal interviews to the UK's Tonight Show prior to Death with Dignity being addressed by their Parliament, as well as participated in an American based campaign for Death With Dignity education and legislation."
 <br><br>
 On Saturday, like planned, Maynard ended her life.
@@ -51,5 +48,4 @@ But this is a complicated topic. As [The Washington Post reports](http://www.was
 > "'When doctor-induced death becomes an accepted response to the suffering of dying people, logical extensions grease the slippery slope,' he wrote in a [New York Times op-ed](http://www.nytimes.com/roomfordebate/2014/10/06/expanding-the-right-to-die/doctor-assisted-suicide-is-unethical-and-dangerous). He cited statistics in Holland, where the practice is permitted, that claim more than 40 people sought and received doctor-assisted death for depression and other mental disorders. 'Even [the psychiatrist who began this practice](http://www.thedailybeast.com/articles/2014/02/03/the-dutch-debate-doctor-assisted-suicide-for-depression.html) in the 90′s recently declared the situation had gone "off the rails."  
 >"'Moral outrage is appropriate and needed to fix the sorry state of dying in America. Legalizing assisted suicide fixes nothing. The principle that doctors must not kill patients stands.'"
 
-<br><br>
 Maynard is survived by her husband, Daniel Diaz; her mother, Deborah Ziegler; and her step-father, Gary Holmes.
