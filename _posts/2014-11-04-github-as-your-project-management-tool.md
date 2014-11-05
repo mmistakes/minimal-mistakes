@@ -23,7 +23,9 @@ Although it sounds strange Github is not only for developers. The entire Git con
 
 ## Management tips
 
-### Issues
+### Components
+
+#### Issues
 
 When we thing about an issue we tend to think about something negative (*as a developers we think about bugs*) but it doesn't has to why be something negative. Think that an issue should be something like a task, so it implies that you can use it as a for example *an idea you have had that would be cool to have it in the project* or *a new feature you have to implement in the current sprint*. Try to use a representative naming for your issues because the issues page is going to be your daily friend where you're going to constantly check your next stuff you have to work on. Take a look to the examples below
 
@@ -41,15 +43,26 @@ When we thing about an issue we tend to think about something negative (*as a de
 
 ![Github Issues Screenshot]({{site.url}}/images/githubissues.png)
 
-#### Labels
+##### Labels
 Labels is a way to clasify not only your issues but your pull requests too. Labels has a name and a color and Github allows you to filter your issues/PR using them as a filter element. Although Github offers you some labels by default I recommend you to analyze and adapt them to your needs and requirements.  Labels for a landing page can't be the same for a backend project. I've been googling around to have some ideas about labels other companies use in their project and I liked the idea of the first answer in this question in stack exchange, [http://programmers.stackexchange.com/questions/129714/how-to-manage-github-issues-for-priority-etc](http://programmers.stackexchange.com/questions/129714/how-to-manage-github-issues-for-priority-etc). Tags that guy uses are:
 
 ![Github Labels Screenshot]({{site.url}}/images/githublabels.png)
 
-### Milestones
+#### Milestones
 Issue we'll be the core of hour project management, they will be our tasks and it's important to keep them organized. We've seen that labels allows us to tag them in terms of status, priority, type,... We can easily have either an idea of the most priority issues to work on, or the recent bugs related with UI but it doesn't allow to **group different issues because they have something in common**. The grouping reason might be related with the versioning but might be related with a refactor, or even with a redesign. Think about Milestones like a bag with a well defined **purpose** that you are going to cover ussing the issues you are going to put inside. 
 
 ![Github Labels Screenshot]({{site.url}}/images/githubmilestones.png)
+
+The example above shows different milestones related with some versions of the library and one of them is focused in issues/PRs that are planned to be in the future versions. Notice that you have a bar that indicates the **precentage of issues/PR finished**. This way you have a global idea of the status of that milestone.
+
+#### Assignees
+
+Tasks (issues) in groups (milestones) labeled and executed, developed, reviewed by your team. Here's where the people come into play. Thanks to the **assignee** feature of Github you can assign a Github issue or a PR to someone. This person is responsible to move this item forward, work on it, ensure that the status of this item is updated (using comments, changing labels, mentioning work mates if something is blocking, ...). Moreover you can filter by your issues/PRs so it's easy for you to know what involes you. Imagine you turning on your computer every morning and wondering what you should work on. **Easy, take a look to your issues in Github**
+
+![Github Labels Screenshot]({{site.url}}/images/githubasignees.png)
+
+
+
 
 
 ## Recommended articles
