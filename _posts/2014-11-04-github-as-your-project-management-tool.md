@@ -6,7 +6,7 @@ modified: 2014-11-04
 tags: [github, scrum, issues, zenhub, management, project]
 comments: true
 image:
-  feature: coworking.jpg
+  feature: posts/github-as-your-project-management-tool/coworking.jpg
   credit: Photo from Coworking Badaup!
 sitemap   :
   priority : 0.9
