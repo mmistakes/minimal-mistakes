@@ -37,16 +37,24 @@ When we thing about an issue we tend to think about something negative (*as a de
 - steps
 - crash with response
 
+> Useful note: In most of cases we'll end up creating a PR to solve the issue purpose. Github thought about it and they made an easy way to close issues directly merging an opened PR. You have to add a comment into your PR explaining that you resolved, fixed or solved any opened issue (e.g solved #31)
+
 ![Github Issues Screenshot]({{site.url}}/images/githubissues.png)
 
-### Labels
-Labels is a way to clasify not only your issues but your pull requests too. Labels has a name and a color and Github allows you to filter your issues/PR using them as a filter element. Although Github offers you some labels by default I recommend you to analyze and adapt them to your needs and requirements.  Labels for a landing page can't be the same for a backend project. I've been googling around to have some ideas about labels other companies use in their project and I liked the idea of the first answer in this question in stack exchange, http://programmers.stackexchange.com/questions/129714/how-to-manage-github-issues-for-priority-etc. Tags that guy uses are:
+#### Labels
+Labels is a way to clasify not only your issues but your pull requests too. Labels has a name and a color and Github allows you to filter your issues/PR using them as a filter element. Although Github offers you some labels by default I recommend you to analyze and adapt them to your needs and requirements.  Labels for a landing page can't be the same for a backend project. I've been googling around to have some ideas about labels other companies use in their project and I liked the idea of the first answer in this question in stack exchange, [http://programmers.stackexchange.com/questions/129714/how-to-manage-github-issues-for-priority-etc](http://programmers.stackexchange.com/questions/129714/how-to-manage-github-issues-for-priority-etc). Tags that guy uses are:
 
 ![Github Labels Screenshot]({{site.url}}/images/githublabels.png)
 
+### Milestones
+Issue we'll be the core of hour project management, they will be our tasks and it's important to keep them organized. We've seen that labels allows us to tag them in terms of status, priority, type,... We can easily have either an idea of the most priority issues to work on, or the recent bugs related with UI but it doesn't allow to **group different issues because they have something in common**. The grouping reason might be related with the versioning but might be related with a refactor, or even with a redesign. Think about Milestones like a bag with a well defined **purpose** that you are going to cover ussing the issues you are going to put inside. 
+
+![Github Labels Screenshot]({{site.url}}/images/githubmilestones.png)
 
 
 ## Recommended articles
 - [**What is Markdown**?](http://whatismarkdown.com/)
 - [**Instant project management for your Github issues: HuBoard**](https://huboard.com/)
 - [**Using Github for Project Management**](http://liftux.com/posts/using-github-issues-project-management/)
+- [**Mastering issues. Github**](https://guides.github.com/features/issues/)
+- [**Issues 2.0: The nexte generation](https://github.com/blog/831-issues-2-0-the-next-generation)
