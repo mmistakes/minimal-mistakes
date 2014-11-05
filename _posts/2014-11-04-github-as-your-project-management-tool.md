@@ -42,41 +42,8 @@ When we thing about an issue we tend to think about something negative (*as a de
 ### Labels
 Labels is a way to clasify not only your issues but your pull requests too. Labels has a name and a color and Github allows you to filter your issues/PR using them as a filter element. Although Github offers you some labels by default I recommend you to analyze and adapt them to your needs and requirements.  Labels for a landing page can't be the same for a backend project. I've been googling around to have some ideas about labels other companies use in their project and I liked the idea of the first answer in this question in stack exchange, http://programmers.stackexchange.com/questions/129714/how-to-manage-github-issues-for-priority-etc. Tags that guy uses are:
 
-```bash
-issue type group
- type:bug
- type:feature
- type:idea
- type:invalid
- type:support
- type:task
+![Github Labels Screenshot]({{site.url}}/images/githublabels.png)
 
-issue priority group
- prio:low
- prio:normal
- prio:high
-
-issue status group
- (These labels describe an issue's state in a defined workflow.)
- status:confirmed
- status:deferred
- status:fix-committed
- status:in-progress
- status:incomplete
- status:rejected
- status:resolved
-
-issue information group
- info:feedback-needed
- info:help-needed
- info:progress-25
- info:progress-50
- info:progress-75
-
-version tag group
- ver:1.x
- ver:1.1
-```
 
 
 ## Recommended articles
