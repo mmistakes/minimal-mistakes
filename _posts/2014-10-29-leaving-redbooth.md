@@ -9,8 +9,8 @@ image:
   feature: messydesk.jpg
   credit: Pedro Piñera
 sitemap   :
-  priority : 0.8
-  isfeatured : 1
+  priority : 0.5
+  isfeatured : 0
 ---
 
 It's difficult for me to talk about this and it was a few days ago when I had to tell my workmates about my decission, leaving Redbooth. I started with that startup from Barcelona when I haven't finished my bachelor yet. They gave me the opportunity to work remotely and I did my best. I help firstly the iOS team when the company's name was aready Teambox. Then I learnt a **bit of Android** when thought that I was able to help them and I thought why not?
