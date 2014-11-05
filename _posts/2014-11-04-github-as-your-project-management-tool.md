@@ -21,6 +21,8 @@ I've been working during the past months in a project management tool as a devel
 ## Github, but what if I'm not a developer?
 Although it sounds strange Github is not only for developers. The entire Git concept can be applied to design, to the company related stuff, ... Once all the team members know about the flow it's pretty easy to stay connected an synchronized. Think about something like [**Markdown**](http://whatismarkdown.com/). Talking from the developer side we use a lot when we start a new repo and we have to fill the README.md file (*I remember the first time I knew about it when I created my first repo*). Markdown is becoming popular, it's used now in blogging platforms (*I'm in fact writting this article using markdown*). We could use Mardown in **our website/landing page repository** I've seen companies that took the decision to stick to Markdown instead of choosing over-loaded editors like the one Wordpress offers to you. If your project includes its own content **your company content editors** could write directly in Markdown and integrate that content into for example a Landing, a Web, or a Mobile application just commiting their changes. For **designers** it's something more complicated because they use mostly graphics instead of text but if you try to externalize all design related stuff *like css files, stylesheet file, snapshot testing,...* they can be more involved. This is something that everybody dreams with it, designers with the ability to go into your web project and tell you off about the styles your applied or a developer getting the styles and sizes directly from the designer's mockups. It depends a lot on the kind the product and on the level of integration of design and developers. 
 
+![image](http://www.wired.com/wp-content/uploads/blogs/opinion/wp-content/uploads/2013/03/socialite.jpg)
+
 ## Management tips
 
 ### Components
@@ -59,7 +61,7 @@ The example above shows different milestones related with some versions of the l
 
 Tasks (issues) in groups (milestones) labeled and executed, developed, reviewed by your team. Here's where the people come into play. Thanks to the **assignee** feature of Github you can assign a Github issue or a PR to someone. This person is responsible to move this item forward, work on it, ensure that the status of this item is updated (using comments, changing labels, mentioning work mates if something is blocking, ...). Moreover you can filter by your issues/PRs so it's easy for you to know what involes you. Imagine you turning on your computer every morning and wondering what you should work on. **Easy, take a look to your issues in Github**
 
-![Github Labels Screenshot]({{site.url}}/images/githubasignees.png)
+![Github Labels Screenshot]({{site.url}}/images/githubassignees.png)
 
 
 
@@ -70,4 +72,4 @@ Tasks (issues) in groups (milestones) labeled and executed, developed, reviewed 
 - [**Instant project management for your Github issues: HuBoard**](https://huboard.com/)
 - [**Using Github for Project Management**](http://liftux.com/posts/using-github-issues-project-management/)
 - [**Mastering issues. Github**](https://guides.github.com/features/issues/)
-- [**Issues 2.0: The nexte generation](https://github.com/blog/831-issues-2-0-the-next-generation)
+- [**Issues 2.0: The nexte generation**](https://github.com/blog/831-issues-2-0-the-next-generation)
