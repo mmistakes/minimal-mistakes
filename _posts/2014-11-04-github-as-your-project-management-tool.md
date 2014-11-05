@@ -63,6 +63,16 @@ Tasks (issues) in groups (milestones) labeled and executed, developed, reviewed 
 
 ![Github Labels Screenshot]({{site.url}}/images/githubassignees.png)
 
+### Flow
+Understood these components someone might wonder how they could be applied into a project sprint. We're still working on 8fit to have a fixed flow that matches our needs, after using different tools to manage the project we ended up with Github and we've inspired our flow in others' flows with our little details:
+
+1. **Apply any methodology**: We strongly recommend any Agile methodology like Scrum. We've been using them previously and we're very happy we are very productive with it. Teach your entire team that methodology and make sure everybody knows about it. Although everybody should be responsible of its closest sprint, when the project is that manager role should cover more than one sprint. This person is going to be responsble to move issues between these sprints depending on the project schedule, priorities, ... Your team should meet for example at the beginning of the week to organize the product and sprint backlong and then during the week everybody should work with the sprint backlog and report the daily scrum status through meetings or any real time communication tool (*e.g. Slack HQ*). *There are some tools that apply a layer over Github that add these extra management features. In our case we're using one called  [Zenhub](*http://www.zenhub.io). You can install it as a Chrome extension and it's directly integrated with Github. Other solutions work as an external component*
+
+2. **Keep tasks updated**: It's a common error to not update your project issues since they are created. You know their statuses but what happens if your workmate wants to know about any task/issue and you haven't reported anything since you started working on it? Labels and assignees are not only used when the issue/PR is created, re-assign it if another person has to work on it, change the label if the priority has increased, connect it with other PRs that have something in common. It's very important to keep this engagement with the issues board.
+
+3. **
+
+### Extra, 
 
 
 
