@@ -29,7 +29,7 @@ Although it sounds strange Github is not only for developers. The entire Git con
 
 #### Issues
 
-When we thing about an issue we tend to think about something negative (*as a developers we think about bugs*) but it doesn't has to why be something negative. Think that an issue should be something like a task, so it implies that you can use it as a for example *an idea you have had that would be cool to have it in the project* or *a new feature you have to implement in the current sprint*. Try to use a representative naming for your issues because the issues page is going to be your daily friend where you're going to constantly check your next stuff you have to work on. Take a look to the examples below
+When we think about an issue we tend to think about something negative (*as a developers we think about bugs*) but it doesn't has to why be something negative. Think that an issue should be something like a task, so it implies that you can use it as a for example *an idea you have had that would be cool to have it in the project* or *a new feature you have to implement in the current sprint*. Try to use a representative naming for your issues because the issues page is going to be your daily friend where you're going to constantly check your next stuff you have to work on. Take a look to the examples below
 
 **Good naming**
 
@@ -51,7 +51,7 @@ Labels is a way to clasify not only your issues but your pull requests too. Labe
 ![Github Labels Screenshot]({{site.url}}/images/githublabels.png)
 
 #### Milestones
-Issue we'll be the core of hour project management, they will be our tasks and it's important to keep them organized. We've seen that labels allows us to tag them in terms of status, priority, type,... We can easily have either an idea of the most priority issues to work on, or the recent bugs related with UI but it doesn't allow to **group different issues because they have something in common**. The grouping reason might be related with the versioning but might be related with a refactor, or even with a redesign. Think about Milestones like a bag with a well defined **purpose** that you are going to cover ussing the issues you are going to put inside. 
+Issues we'll be the core of hour project management, they will be our tasks and it's important to keep them organized. We've seen that labels allows us to tag them in terms of status, priority, type,... We can easily have either an idea of the most priority issues to work on, or the recent bugs related with UI but it doesn't allow to **group different issues because they have something in common**. The grouping reason might not only be related with the versioning but might be related with a refactor too, or even with a redesign. Think about Milestones like a bag with a well defined **purpose** that you are going to cover ussing the issues you are going to put inside. 
 
 ![Github Labels Screenshot]({{site.url}}/images/githubmilestones.png)
 
@@ -59,12 +59,12 @@ The example above shows different milestones related with some versions of the l
 
 #### Assignees
 
-Tasks (issues) in groups (milestones) labeled and executed, developed, reviewed by your team. Here's where the people come into play. Thanks to the **assignee** feature of Github you can assign a Github issue or a PR to someone. This person is responsible to move this item forward, work on it, ensure that the status of this item is updated (using comments, changing labels, mentioning work mates if something is blocking, ...). Moreover you can filter by your issues/PRs so it's easy for you to know what involes you. Imagine you turning on your computer every morning and wondering what you should work on. **Easy, take a look to your issues in Github**
+Tasks (issues) in groups (milestones) labeled and executed, developed, reviewed by your team. Here's where the people come into play. Thanks to the **assignee** feature of Github you can assign a Github issue or a PR to someone. This person is responsible to move this item forward, work on it, ensure that the status of this item is updated (using comments, changing labels, mentioning work mates if something is blocking, ...). Moreover you can filter by your issues/PRs so it's easy for you to know what involes you. Imagine you turning on your computer every morning and wondering what you should work on. **Easy, take a look to your issues on Github**
 
 ![Github Labels Screenshot]({{site.url}}/images/githubassignees.png)
 
 ### Flow
-Understood these components someone might wonder how they could be applied into a project sprint. We're still working on 8fit to have a fixed flow that matches our needs, after using different tools to manage the project we ended up with Github and we've inspired our flow in others' flows with our little details:
+Understood these components someone might wonder how they could be applied into a project sprint. We're still working on 8fit to have a fixed flow that matches our needs, after using different tools for project management and we ended up with Github and we've inspired our flow in others' flows with our little details:
 
 1. **Apply any methodology**: We strongly recommend any Agile methodology like Scrum. We've been using them previously and we're very happy we are very productive with it. Teach your entire team that methodology and make sure everybody knows about it. Although everybody should be responsible of its closest sprint, when the project is that manager role should cover more than one sprint. This person is going to be responsble to move issues between these sprints depending on the project schedule, priorities, ... Your team should meet for example at the beginning of the week to organize the product and sprint backlong and then during the week everybody should work with the sprint backlog and report the daily scrum status through meetings or any real time communication tool (*e.g. Slack HQ*). *There are some tools that apply a layer over Github that add these extra management features. In our case we're using one called  [Zenhub](*http://www.zenhub.io). You can install it as a Chrome extension and it's directly integrated with Github. Other solutions work as an external component*
 
