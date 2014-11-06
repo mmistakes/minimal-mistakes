@@ -77,6 +77,8 @@ Understood these components someone might wonder how they could be applied into 
 Keep in mind the previous points and try to apply them in your projects, try to be constant with them, and try your team to be too. Improve your management tools and flow every day regarding your needs and boost your team productivity. 
 **You just only need Github!**
 
+![Zenhub board in Github]({{site.url}}/images/githubboard.png)
+
 ## Recommended articles
 - [**What is Markdown**?](http://whatismarkdown.com/)
 - [**Instant project management for your Github issues: HuBoard**](https://huboard.com/)
