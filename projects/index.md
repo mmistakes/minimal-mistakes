@@ -14,7 +14,7 @@ The Center for Data Intensive Science (CDIS) in the Biological Sciences Division
 The open-source software environment that has been developed by CDIS scientists supports each of these four projects.
 
 ## Genomic Data Commons (GDC)
-The GDC hosts cancer genomics data produced by research projects funded by the National Cancer Institute (NCI) and makes the data available to researchers around the world.  This project is funded by a $36M, four year contract with the NIH/NCI that was awarded to the University of Chicago in May 2014.
+The GDC hosts cancer genomics data produced by research projects funded by the National Cancer Institute (NCI) and makes the data available to researchers around the world.  This project is a contract with the NIH/NCI that was awarded to the University of Chicago in May 2014.
 <br>
 <br>
 
