@@ -23,7 +23,7 @@ The BCC will design and test technical standards so that the BCC can interoperat
 •	APIs to access and query data in the BCC
 <br>
 <br>
-•	Developing infrastructure so that the BCC can interoperate with Amazon’s AWS, Google’s Cloud Platform, and Microsoft’s Azure public cloud platforms.
+•	Developing infrastructure so that the BCC can interoperate with Amazon, AWS, Google Cloud Platform, and Microsoft Azure public cloud platforms.
 <br>
 <br>
 •	Data synchronization between two biomedical clouds

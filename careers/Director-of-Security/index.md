@@ -27,7 +27,6 @@ Lead security reviews and risk assessments for critical systems and infrastructu
 <br>
 Bachelor of Science in a related field such as Computer Science, Information Science and Security OR four years of significant related professional experience required. 
 <br>
-<br>
 Certification of CISSO, CISM, CHP, CGEIT, CSCS, CISSP, ISSAP preferred.  
 <br>
 5+ years of progressively responsible and directly related work experience. 
@@ -35,9 +34,9 @@ Certification of CISSO, CISM, CHP, CGEIT, CSCS, CISSP, ISSAP preferred.
 <br>
 Experience and knowledge of security polices, procedures and controls; security standards, risk management, configuration management, security architectures, continuity of operations, contingency planning, disaster recovery, application security, and cyber-security rules, laws, and regulations required. 
 <br>
-<br>
 Knowledge of HIPAA Privacy and Security regulations preferred.  
-
+<br>
+<br>
 #### [Apply for Requisition#095140 at https://jobopportunities.uchicago.edu](https://jobopportunities.uchicago.edu)
 
 <br>

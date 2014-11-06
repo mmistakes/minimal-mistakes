@@ -7,7 +7,7 @@ comments: true
 image:
   feature: IDIS_signature_HORIZ1.0.jpg
 ---
-#### Requisition 095285
+#### Requisition 097228
 
 A software engineer in the Laboratory for Advanced Computing in CDIS works with cloud computing infrastructure primarily based on OpenStack to develop, maintain, and evaluate software applications to meet business and technical requirements. Works in Linux-based systems in Python and C/C++, with some Java, Ruby and various web programming. Solves complex problems and performs at a high technical level in programming activities. Executes code testing and ensures appropriate standards are met. Provides production and user support. Serves as a liaison with internal and external collaborators on various research projects. Documents project development and programming code. 
 <br>

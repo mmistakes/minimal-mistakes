@@ -16,8 +16,6 @@ image:
 
 - [Software Engineer]({{site.url}}/careers/Software-Engineer)
 
-- [Linux System Administrator]({{site.url}}/careers/Linux-Systems-Administrator)
-
 #### Director Positions
 
 - [Director of Security]({{site.url}}/careers/Director-of-Security)
@@ -28,7 +26,7 @@ image:
 
 - [Project Manager]({{site.url}}/careers/Project-Manager)
 
-- [Financial Administrator]({{site.url}}/careers/Financial-Administrator)
+- [Executive Assistant]({{site.url}}/careers/Executive-Assistant)
 
 #### Other
 
