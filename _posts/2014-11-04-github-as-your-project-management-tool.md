@@ -70,16 +70,16 @@ Understood these components someone might wonder how they could be applied into 
 
 2. **Keep tasks updated**: It's a common error to not update your project issues since they are created. You know their statuses but what happens if your workmate wants to know about any task/issue and you haven't reported anything since you started working on it? Labels and assignees are not only used when the issue/PR is created, re-assign it if another person has to work on it, change the label if the priority has increased, connect it with other PRs that have something in common. It's very important to keep this engagement with the issues board.
 
-3. **
+3. **Group your issues (and make them small)**: Think about a refactor, split it in small refactors, and group them into the same milestone refactor's bag. If you tried to locate that refactor in the future it would be easier to locate the milestone instead of the small issues. If the milestone is grouping a version, ensure that once the the milestone is closed you create a new release with the milestone version adding a changelog with the points that new version has covered and generate a tag to mark that status on the timeline.
 
-### Extra, 
+4. **Review**: Before closing any issue/PR and if you have workmates that can review your work, ask them to do it. Don't merge your changes until you have their confirmations. It's better having more than two eyes. We are not magicians and it's probable that we forget any edge case. 
 
-
-
+Keep in mind the previous points and try to apply them in your projects, try to be constant with them, and try your team to be too. Improve your management tools and flow every day regarding your needs and boost your team productivity. 
+**You just only need Github!**
 
 ## Recommended articles
 - [**What is Markdown**?](http://whatismarkdown.com/)
 - [**Instant project management for your Github issues: HuBoard**](https://huboard.com/)
 - [**Using Github for Project Management**](http://liftux.com/posts/using-github-issues-project-management/)
 - [**Mastering issues. Github**](https://guides.github.com/features/issues/)
-- [**Issues 2.0: The nexte generation**](https://github.com/blog/831-issues-2-0-the-next-generation)
+- [**Issues 2.0: The next generation**](https://github.com/blog/831-issues-2-0-the-next-generation)
