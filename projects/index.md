@@ -12,12 +12,8 @@ The Center for Data Intensive Science (CDIS) in the Biological Sciences Division
 <br>
 <br>
 The open-source software environment that has been developed by CDIS scientists supports each of these four projects.
-
-## Genomic Data Commons (GDC)
-The GDC hosts cancer genomics data produced by research projects funded by the National Cancer Institute (NCI) and makes the data available to researchers around the world.  This project is a contract with the NIH/NCI that was awarded to the University of Chicago in May 2014.
 <br>
 <br>
-
 ## [Bionimbus Protected Data Cloud (PDC)]({{site.url}}/projects/pdc)
 The PDC is the first open-source, cloud-based computational platform that allows researchers authorized by NIH to compute over human genomic data in a secure and compliant fashion.  Bionimbus and related cloud-based infrastructures are used by researchers working on cancer, diabetes, and neuropsychiatric disorders.   This project is funded in part by a NIH/NCI contract that was awarded in 2013 and by an anonymous gift.
 <br>
