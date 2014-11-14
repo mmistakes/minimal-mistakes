@@ -5,7 +5,7 @@ tags: [about, Jekyll, theme, responsive]
 modified: 2014-08-08T20:53:07.573882-04:00
 comments: true
 image:
-  feature: IDIS_signature_HORIZ1.0.jpg
+  feature: header3.png
 ---
 
 The Center for Data Intensive Science (CDIS) in the Biological Sciences Division at the University of Chicago is a recently created center focused on data science and its applications to problems in biology, medicine, and health care.
@@ -14,6 +14,12 @@ The Center for Data Intensive Science (CDIS) in the Biological Sciences Division
 The open-source software environment that has been developed by CDIS scientists supports each of these four projects.
 <br>
 <br>
+
+## Genomic Data Commons (GDC)
+Coming soon.
+<br>
+<br>
+
 ## [Bionimbus Protected Data Cloud (PDC)]({{site.url}}/projects/pdc)
 The PDC is the first open-source, cloud-based computational platform that allows researchers authorized by NIH to compute over human genomic data in a secure and compliant fashion.  Bionimbus and related cloud-based infrastructures are used by researchers working on cancer, diabetes, and neuropsychiatric disorders.   This project is funded in part by a NIH/NCI contract that was awarded in 2013 and by an anonymous gift.
 <br>

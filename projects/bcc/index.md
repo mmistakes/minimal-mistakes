@@ -5,7 +5,7 @@ tags: [about, Jekyll, theme, responsive]
 modified: 2014-08-08T20:53:07.573882-04:00
 comments: true
 image:
-  feature: IDIS_signature_HORIZ1.0.jpg
+  feature: header3.png
 ---
 
 The Biomedical Commons Cloud (BCC) is cloud-based infrastructure that provides secure, compliant cloud services for managing and analyzing genomic data, electronic medical records (EMR), medical images, and other PHI data.  It provides resources to researchers so that they can more easily make discoveries from large complex controlled access datasets.  The BCC provides resources to those institutions in the BCC Consortium.   It is an example of what is sometimes called condominium model of sharing research infrastructure in which the research infrastructure is operated by a consortium of educational and research organizations and provides resources to the consortium.   

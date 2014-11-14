@@ -5,7 +5,7 @@ tags: [about, Jekyll, theme, responsive]
 modified: 2014-08-08T20:53:07.573882-04:00
 comments: true
 image:
-  feature: IDIS_signature_HORIZ1.0.jpg
+  feature: header3.png
 ---
 
 The Bionimbus Protected Data Cloud (PDC), which is the first open-source cloud-based computational platform that allows researchers authorized by NIH to compute over human genomic data in a secure and compliant fashion.  Bionimbus and related cloud-based infrastructure is used by researchers working on cancer, diabetes and neuropsychiatric disorders.   This is funded in part by a NIH/NCI contract that was awarded in 2013 and by an anonymous gift.
