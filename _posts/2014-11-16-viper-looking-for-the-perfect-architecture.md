@@ -18,5 +18,6 @@ sitemap   :
 
 <!-- SpeakerDeck Presentation embed code -->
 <script async class="speakerdeck-embed" data-id="1a7bab7042930132bd3b62fe72f26203" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<iframe width="560" height="315" src="//www.youtube.com/embed/OX4rLAJC7lw" frameborder="0" allowfullscreen></iframe>
 
 </body>
