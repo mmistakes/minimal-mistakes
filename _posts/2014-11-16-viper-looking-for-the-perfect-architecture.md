@@ -17,17 +17,6 @@ sitemap   :
 <div id="ytapiplayer"></div> 
 
 <!-- SpeakerDeck Presentation embed code -->
-<div id="presentation-container"><script async class="speakerdeck-embed" data-id="4fa39c8cdafde4001f02f109" data-ratio="1.299492385786802" src="//speakerdeck.com/assets/embed.js"></script></div> 
+<script async class="speakerdeck-embed" data-id="1a7bab7042930132bd3b62fe72f26203" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-$(document).ready(function(){
-    $.ptt({
-        timetable: {'00:08':'2', '00:14':'3', '00:15':'6', '00:16':'7', '00:17':'8', '00:18':'9', '00:19':'10', '00:20':'11'},
-        video_container:'ytapiplayer',
-        ytvideo_url: 'http://www.youtube.com/v/gxeT8vX5FFc',
-        video_width:'430',
-        video_height:'393',
-    });
-})
 </body>
