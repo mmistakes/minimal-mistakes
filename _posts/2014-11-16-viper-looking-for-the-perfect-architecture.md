@@ -7,7 +7,7 @@ modified: 2014-10-29
 tags: [redbooth, ios, 8fit]
 comments: true
 image:
-  feature: messydesk.jpg
+  feature: viper.jpg
   credit: Pedro Piñera
 sitemap   :
   priority : 0.8
