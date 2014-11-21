@@ -5,6 +5,16 @@ body {
 }
 .navigation-wrapper {
 	@include container;
+        width:100%;
+    @media #{$small} {
+        width:66.66666667%;
+    }
+    @media #{$medium} {
+        width:51%;
+    }
+    @media #{$x-large} {
+        width:37.5%;
+    }
 	padding: 2em 0 0;
 	font-family: $heading-font;
 	font-weight: 700;
@@ -21,16 +31,17 @@ body {
 	@include font-rem(24);
 	@media #{$small} {
 		@include grid(12,2);
-		@include prefix(12,0.5);
-		@include suffix(12,0.5);
+		@include prefix(12,0);
+		@include suffix(12,0);
 		@include font-rem(16);
 	}
 	@media #{$x-large} {
-		@include grid(12,1.5);
-		@include prefix(12,2);
+		@include grid(12,2);
+		@include prefix(12,0);
 	}
 }
 .top-navigation {
+    text-align:right;
 	@include grid(12,10);
 	@include prefix(12,1);
 	@include suffix(12,1);
@@ -38,18 +49,19 @@ body {
 	float: none;
 	display: block;
 	@media #{$small} {
-		@include grid(12,9);
+		@include grid(12,10);
 		@include prefix(12,0);
 		@include suffix(12,0);
 	}
 	@media #{$x-large} {
-		@include grid(12,8);
+		@include grid(12,10);
 	}
 	ul {
 		margin: 0;
 		padding: 0;
 		clear: both;
 		list-style-type: none;
+        text-align:right;
 	}
 	li {
 		display: block;
@@ -62,7 +74,7 @@ body {
 		}
 		@media #{$small} {
 			display: inline;
-			margin-right: 25px;
+			margin-left: 25px;
 			white-space: nowrap;
 			border-bottom: 0 solid transparent;
 		}
@@ -214,10 +226,16 @@ $button-size: 1.5rem;
 		@include suffix(12,1);
 		margin-bottom: 2em;
 		@media #{$small} {
-			@include grid(12,6);
+			@include grid(12,8);
 			@include prefix(12,0);
 			@include suffix(12,0);
 		}
+        @media #{$medium} {
+            @include grid(12,6);
+			@include prefix(12,0);
+			@include suffix(12,0);
+        }
+            
 		@media #{$x-large} {
 			@include grid(12,4.5);
 		}
@@ -274,10 +292,13 @@ $button-size: 1.5rem;
 		border: 20px solid transparent;
 		border-bottom-color: $bodycolor;
 		@media #{$small} {
-			left: 25%;
+			left: 16.6666666%;
 		}
+        @media #{$medium} {
+            left:25%;
+        }
 		@media #{$x-large} {
-			left: 33.333333333%;
+			left: 31.25%;
 		}
 	}
 	img {
@@ -345,7 +366,7 @@ $button-size: 1.5rem;
 	}
 	@media #{$small} {
 		display: block;
-		@include grid(12,2);
+		@include grid(12,1);
 		@include prefix(12,0.5);
 		@include suffix(12,0.5);
 		h3,
@@ -365,6 +386,11 @@ $button-size: 1.5rem;
 			margin-bottom: 5px;
 		}
 	}
+    @media #{$medium} {
+        @include grid(12,2);
+        @include prefix(12,0.5);
+        @include suffix(12,0.5);
+    }
 	@media #{$large} {
 		h3,
 		.bio-photo,
@@ -374,8 +400,9 @@ $button-size: 1.5rem;
 		}
 	}
 	@media #{$x-large} {
-		@include grid(12,1.5);
-		@include prefix(12,2);
+		@include grid(12,3);
+		@include prefix(12,0.5);
+		@include suffix(12,0.25);
 	}
 }
 .article-author-bottom {
@@ -563,14 +590,19 @@ $button-size: 1.5rem;
 		@include prefix(12,1);
 		@include suffix(12,1);
 		@media #{$small} {
-			@include grid(12,6);
-			@include prefix(12,3);
-			@include suffix(12,3);
+			@include grid(12,8);
+			@include prefix(12,2);
+			@include suffix(12,2);
 		}
+        @media #{$medium} {
+            @include grid(12,6);
+            @include prefix(12,3);
+            @include suffix(12,3);
+        }
 		@media #{$x-large} {
 			@include grid(12,4.5);
-			@include prefix(12,4);
-			@include suffix(12,3.5);
+			@include prefix(12,3.75);
+			@include suffix(12,3.75);
 		}
 	}
 }
