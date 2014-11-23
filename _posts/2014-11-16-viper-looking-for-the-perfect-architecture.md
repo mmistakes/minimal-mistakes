@@ -2,16 +2,15 @@
 layout: post
 title: "VIPER, Looking for the perfect architecture"
 excerpt: "Talk I gave in the Redbooth HQ office for NSBarcelona with the iOS team talking about the VIPER architecture"
-modified: 2014-10-29"
-modified: 2014-10-29
+modified: 2014-11-16"
 tags: [redbooth, ios, 8fit]
 comments: true
 image:
   feature: viper.jpg
   credit: Pedro Piñera
 sitemap   :
-  priority : 0.8
-  isfeatured : 1
+  priority : 0.5
+  isfeatured : 0
 ---
 
 The past thursday I gave a talk at Redbooth Office with the iOS team about an architecture we had been working with during the past months. We didn't use any architecture until then and the code was too coupled and messy that it was hard to review, debug, detect bugs, ...
