@@ -20,6 +20,6 @@ Soma text
 Some text
 
 <figure>
-<img src="/images/multiplex1.jpg">
+<img src="/images/multiplex1.svg">
 <figcaption>Description.</figcaption>
 </figure>
