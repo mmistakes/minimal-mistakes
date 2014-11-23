@@ -7,7 +7,7 @@ modified: 2014-11-1
 comments: true
 ---
 
-## the Website(s)
+## The Website(s)
 
 In the past 4-5 weeks I have been working on my personal webiste(s) in my free time. Okay, wait, what?! Why would I work on website(s), especially in my free time? And, why would I need a website in the first place? These are two relevant questions, but I don't really know the answer to the second one ... maybe time will tell. I had many different ideas and reasons, but none of them are interesting from the perspective of this post. This website building something has come, I guess, as a natural consequence of my unavoidable and increasingly frequent encounters with programming. However alienated, it seems to be an essential and elementary skill for more and more professions, even for sociology (... okay, maybe one could argue, it's just computational sociology ... maybe ... but let's not go into this right now). Anyway, I took this project as a learning process without obligations.
 <br><br>
@@ -16,12 +16,12 @@ I started off with [Wix](http://www.wix.com), because in my opinion this is prob
 So I went on the geeky road and found the [GitHub Pages](https://pages.github.com), hosted by [GitHub](http://github.com) and powered by [Jekyll](http://jekyllrb.com/). After several failed attempts - a vital part of the learning process - I eventually figured how to set up the page, using [Michael Rose's](https://mademistakes.com) [Minimal Mistakes project](http://github.com/mmistakes). So far I am convinced that this is a great solution for a personal resume type of website and a blog too. It is much less fancy than the ones you could create on Wix or Wordpress, but it is yours, it inspires you to keep working on it, it is challenging and it makes you care about the content rather than the surface. So, here is a short summary slash tutorial about the project for those who are interested.  
 And if you were searching for something more user-friendly, you might want to take a tour on [WebsiteToolTester](http://www.websitetooltester.com/en/website-builder-reviews/).
 
-## on GitHub
+## On GitHub
 
 Alright, so one of the benefits of GitHub Pages is ease of collaboration. Changes you make in the repository are automatically synced, so if your site’s hosted on GitHub, it’s as up-to-date as your GitHub repository. Plus, you can reach and edit your website online via your Git account from everywhere.
 If you are new to GitHub, you might want learn [how to set up your own Git](https://help.github.com/articles/set-up-git/). If you are unfamiliar with or have significant aversion to code-writing, then GitHub is not necessarily the best choice for you. But if your work / interest involves some sort of programming, then you should definitely check it out.
 
-## with Jekyll
+## With Jekyll
 
 On GitHub you can start building your site from scratch or use one of the pre-made templates. Either way, you have to learn a little bit about Jekyll, starting from the [installation](http://jekyllrb.com/docs/installation/). Jekyll is a fantastic website generator that’s designed for building minimal, static blogs to be hosted on GitHub Pages. If you would like to create a new Jekyll site using Minimal Mistakes follow, these steps:
 
@@ -34,7 +34,7 @@ On GitHub you can start building your site from scratch or use one of the pre-ma
 <i class="fa fa-info-circle"></i> *Note*: these `highlighted texts` are console commands for Mac users.
 {: .notice}
 
-## and Markdown
+## And Markdown
 
 Jekyll makes content creating and blogging very easy as it automatically develops HTML / XHTML files from Markdown files. Markdown is essentially a text-to-HTML conversion tool. It provides you with really simple and convenient way to write (and to read) plain text. Learning the basics of the language is relatively fast, and you can check out the Test Posts here (such as the [Test Post with Markdown](http://balintneray.github.io/sample-post/) ) or find great guides such as [this one](http://markdown-guide.readthedocs.org/en/latest/) or [this one](https://daringfireball.net/projects/markdown/basics).
 <br><br>
