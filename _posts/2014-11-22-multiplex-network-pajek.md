@@ -55,7 +55,7 @@ The key element of the process is the appropriate construction of the Pajek `.ne
 
 <i class="fa fa-info-circle"></i> Note that the sample .net contains only the first 10 lines of the original vertice and arc data, and such, does not allow for reconstructing the figures below .
 {: .notice}
-<br><br>
+
 When it comes to Pajek settings, make sure that you have your arcs and/or edges represented by relational number. In order to do go: `Options -> Colors -> Arcs -> “Relation number”`. Furthermore do not forget to assign different colour to the different networks. Oh, and one more crucial detail that gave me a hard time: the software itself cannot visually distinguish between the arcs belonging to different networks which means it does not draw multiple edges between two nodes even if they are there. As a result, the edges will stack on top of each othe. But upon exporting the Pajek image to `.svg` or `.eps` format, they are drawn next to each other.
 
 ## The Figures
