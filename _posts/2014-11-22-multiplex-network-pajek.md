@@ -9,7 +9,7 @@ comments: true
 
 Social relations among people are usually complex, in that we are connected in multiple ways simultaneously. Sociologists tend to assume that our behaviour is shaped by the complex interaction of many simultaneous constraints and opportunities arising from how we are embedded in multiple kinds of relationships. Even though, there are analytical tools that try to (some extent) model the multiplexity of our social life (one can think of ERGM or Siena models), when it comes to visualisation most of the tools deal with structures defined by patterns in a single kind of relationship (friendship, kinship, economic exchange, gossip, etc.) among people.
 
-I have been struggling for a long time and many times to find an appropriate software that enables me to visualise multiplex network data (that describes multiple relations among the same set of actors), allowing for multiple edges between two nodes. I have experimented with a few software including igrpah (R), UCINET, Pajek, Gephi, graphviz and visone with no satisfactory results. And I am not saying that none of these tools is appropriate to accomplish the task. All the more reason not because I have finally figured out that one can modify the Pajek .net file in order to represent and visualize multiplex networks.
+I have been struggling for a long time and many times to find an appropriate software that enables me to visualise multiplex network data (that describes multiple relations among the same set of actors), allowing for multiple arcs between two vertices. I have experimented with a few software including igrpah (R), UCINET, Pajek, Gephi, graphviz and visone with no satisfactory results. And I am not saying that none of these tools is appropriate to accomplish the task. All the more reason not because I have finally figured out that one can modify the Pajek .net file in order to represent and visualize multiplex networks.
 
 By hoping that it might be useful information for likeminded folks, I'd like to give a short summary of the process. I am not going to fully explain every steps, assuming that the reader has some basic knowledge about networks, network visualisation and Pajek. The presented example is part of my and my colleague's research project and relies on the data collected by the [RECENS](http://recens.tk.mta.hu/en) group.
 
@@ -19,7 +19,7 @@ By hoping that it might be useful information for likeminded folks, I'd like to 
 
 #### .net file
 
-The key element of the process is the appropriate construction of the Pajek .net file.
+The key element of the process is the appropriate construction of the Pajek `.net` file. It always starts with the definition of the vertices. If one would like to have different vertice shapes, one should indicate the shape of each vertice in the third column after the vertex label. The important part is that one can define multiple networks in the input file, separating them with the `*Arcs :1 ""` and `*Arcs :2 ""` lines, where `""` allows for labeling the network.
 
 
 ~~~ css
