@@ -53,14 +53,14 @@ The key element of the process is the appropriate construction of the Pajek `.ne
 5	1	2
 ~~~
 
-When it comes to Pajek settings, make sure you have your arcs and/or edges (directed arcs) represented by relational number. In order to do so, you shall go `Options -> Colors -> Arcs -> “Relation number”`. Furthermore do not forget to assign different colour to the different networks. Oh, and one more **tricky**, crucial detail that gave me a hard time: the software itself cannot visually distinguish between the arcs belonging to different networks which means it does not draw multiple edges between two nodes even if they are there. As a result, the edges will stack on top of each other. But upon exporting the Pajek image to `.svg` or `.eps` format, they are drawn next to each other.
+When it comes to Pajek settings, make sure you have your arcs and/or edges (directed arcs) represented by relational number. In order to do so, you shall go `Options -> Colors -> Arcs -> “Relation number”`. Furthermore do not forget to assign different colour to the different networks. Oh, and one more *tricky* detail that gave me a hard time: the software itself cannot visually distinguish between the arcs belonging to different networks which means it does not draw multiple edges between two nodes even if they are there. As a result, the edges will stack on top of each other. But upon exporting the Pajek image to `.svg` or `.eps` format, they are drawn next to each other.
 
 <i class="fa fa-info-circle"></i> Note that the sample .net contains only the first 10 lines of the original vertice and arc data, and such, does not allow for reconstructing the figures below .
 {: .notice}
 
-## About the Fugures
+## About the Figures
 
-Figure 1 and 2 both illustrates the logic of an ERG model, representing the negative and the perceived ethnicity networks in one class from our sample. On both figures, black arrows mean ethnic nominations and the gray ones stand for the negative relations. Self-declared Roma students are represented with squares and non-Roma students with circles. The colors of the nodes depend on the number of the incoming perceived ethnic nominations so the higher indegree the node has (the more student considers her/him Roma) the darker the color is. Finally, whereas on Figure 1 the bigger the node is the more incoming negative nominations that student has (the more student dislikes her/him), on Figure 2 the node size depends on the outgoing negative nominations.
+Figure 1 and 2 both illustrates the logic of an ERG model, representing the negative and the perceived ethnicity networks in one class from our sample. On both figures, black arrows mean ethnic nominations and the gray ones stand for the negative relations. Self-declared Roma students are represented with squares and non-Roma students with circles. The colours of the nodes depend on the number of the incoming perceived ethnic nominations so the higher indegree the node has (the more student considers her/him Roma) the darker the color is. Finally, whereas on Figure 1 the bigger the node is the more incoming negative nominations that student has (the more student dislikes her/him), on Figure 2 the node size depends on the outgoing negative nominations.
 
 <figure>
 <img src="/images/multiplex1.svg">
