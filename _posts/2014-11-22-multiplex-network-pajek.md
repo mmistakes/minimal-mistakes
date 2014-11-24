@@ -7,14 +7,69 @@ modified: 2014-11-22
 comments: true
 ---
 
-Social relations among actors are usually complex, in that actors are connected in multiple ways simultaneously. Sociologists tend to assume that individual behaviour is shaped by the complex interaction of many simultaneous constraints and opportunities arising from how the individual is embedded in multiple kinds of relationships. Even though, there are analytical tools that try to (some extent) model the multiplexity of our social life (one can think of ERGM or Siena models), when it comes to visualisation most of the tools deal with structures defined by patterns in a single kind of relationship among actors: friendship, kinship, economic exchange, gossip, etc.
+Social relations among people are usually complex, in that we are connected in multiple ways simultaneously. Sociologists tend to assume that our behaviour is shaped by the complex interaction of many simultaneous constraints and opportunities arising from how we are embedded in multiple kinds of relationships. Even though, there are analytical tools that try to (some extent) model the multiplexity of our social life (one can think of ERGM or Siena models), when it comes to visualisation most of the tools deal with structures defined by patterns in a single kind of relationship (friendship, kinship, economic exchange, gossip, etc.) among people.
 
-I have been struggling for a long time to find an appropriate software that enables me to visualise multiplex network data (that describe multiple relations among the same set of actors), allowing for multiple edges between two nodes. I experimented with many softwares including igrpah (R), UCINET, Pajek, Gephi, graphviz and visone with no satisfying results. And I am not saying that none of these tools is appropriate to accomplish the task. All the more reason not because I have finally figured out that one can modify the Pajek .net in order to represent and visualize multiplex networks.
+I have been struggling for a long time and many times to find an appropriate software that enables me to visualise multiplex network data (that describes multiple relations among the same set of actors), allowing for multiple edges between two nodes. I have experimented with a few software including igrpah (R), UCINET, Pajek, Gephi, graphviz and visone with no satisfactory results. And I am not saying that none of these tools is appropriate to accomplish the task. All the more reason not because I have finally figured out that one can modify the Pajek .net file in order to represent and visualize multiplex networks.
 
 By hoping that it might be useful information for likeminded folks, I'd like to give a short summary of the process.
 
-
 ## How To
+
+~~~ css
+*Vertices 18
+1 "1" box
+2 "2" ellipse
+3 "3" box
+4 "4" box
+5 "5" ellipse
+6 "6" ellipse
+7 "7" box
+8 "8" ellipse
+9 "9" ellipse
+10 "10" box
+11 "11" ellipse
+12 "12" box
+13 "13" box
+14 "14" box
+15 "15" box
+16 "16" box
+17 "17" box
+18 "18" ellipse
+*Arcs :1 ""
+3	1	1
+6	9	1
+8	14	1
+9	17	1
+9	18	1
+10	9	1
+10	11	1
+12	17	1
+12	18	1
+14	1	1
+14	5	1
+14	8	1
+14	9	1
+14	11	1
+14	17	1
+14	18	1
+*Arcs :2 ""
+4	1	2
+4	2	2
+4	3	2
+4	10	2
+4	12	2
+4	13	2
+4	14	2
+4	15	2
+4	16	2
+5	1	2
+5	3	2
+5	4	2
+5	10	2
+~~~
+
+
+
 
 
 
