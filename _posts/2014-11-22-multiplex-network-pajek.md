@@ -11,9 +11,16 @@ Social relations among people are usually complex, in that we are connected in m
 
 I have been struggling for a long time and many times to find an appropriate software that enables me to visualise multiplex network data (that describes multiple relations among the same set of actors), allowing for multiple edges between two nodes. I have experimented with a few software including igrpah (R), UCINET, Pajek, Gephi, graphviz and visone with no satisfactory results. And I am not saying that none of these tools is appropriate to accomplish the task. All the more reason not because I have finally figured out that one can modify the Pajek .net file in order to represent and visualize multiplex networks.
 
-By hoping that it might be useful information for likeminded folks, I'd like to give a short summary of the process.
+By hoping that it might be useful information for likeminded folks, I'd like to give a short summary of the process. I am not going to fully explain every steps, assuming that the reader has some basic knowledge about networks, network visualisation and Pajek. The presented example is part of my and my colleague's research project and relies on the data collected by the [RECENS](http://recens.tk.mta.hu/en) group.
+
+
 
 ## How To
+
+#### .net file
+
+The key element of the process is the appropriate construction of the Pajek .net file.
+
 
 ~~~ css
 *Vertices 18
@@ -27,14 +34,6 @@ By hoping that it might be useful information for likeminded folks, I'd like to 
 8 "8" ellipse
 9 "9" ellipse
 10 "10" box
-11 "11" ellipse
-12 "12" box
-13 "13" box
-14 "14" box
-15 "15" box
-16 "16" box
-17 "17" box
-18 "18" ellipse
 *Arcs :1 ""
 3	1	1
 6	9	1
@@ -46,12 +45,6 @@ By hoping that it might be useful information for likeminded folks, I'd like to 
 12	17	1
 12	18	1
 14	1	1
-14	5	1
-14	8	1
-14	9	1
-14	11	1
-14	17	1
-14	18	1
 *Arcs :2 ""
 4	1	2
 4	2	2
@@ -63,11 +56,10 @@ By hoping that it might be useful information for likeminded folks, I'd like to 
 4	15	2
 4	16	2
 5	1	2
-5	3	2
-5	4	2
-5	10	2
 ~~~
 
+<i class="fa fa-info-circle"></i> Note that the sample .net contains only the first 10 lines of the original vertice and arc data and such, does not allow for reconstruction of the figures below .
+{: .notice}
 
 
 
