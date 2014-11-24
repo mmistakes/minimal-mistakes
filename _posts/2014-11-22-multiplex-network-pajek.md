@@ -8,19 +8,14 @@ comments: true
 ---
 
 Social relations among people are usually complex, in that we are connected in multiple ways simultaneously. Sociologists tend to assume that our behaviour is shaped by the complex interaction of many simultaneous constraints and opportunities arising from how we are embedded in multiple kinds of relationships. Even though, there are analytical tools that try to (some extent) model the multiplexity of our social life (one can think of ERGM or Siena models), when it comes to visualisation most of the tools deal with structures defined by patterns in a single kind of relationship (friendship, kinship, economic exchange, gossip, etc.) among people.
-
-I have been struggling for a long time and many times to find an appropriate software that enables me to visualise multiplex network data (that describes multiple relations among the same set of actors), allowing for multiple arcs between two vertices. I have experimented with a few software including igrpah (R), UCINET, Pajek, Gephi, graphviz and visone with no satisfactory results. And I am not saying that none of these tools is appropriate to accomplish the task. All the more reason not because I have finally figured out that one can modify the Pajek .net file in order to represent and visualize multiplex networks.
-
+<br><br>
+I have been struggling for a long time and many times to find an appropriate software that enables me to visualise multiplex network data (that describes multiple relations among the same set of actors), allowing for multiple arcs between two vertices. I have experimented with a few software including [igrpah](http://igraph.org), [UCINET](https://sites.google.com/site/ucinetsoftware/home), [Pajek](http://pajek.imfm.si/doku.php?id=pajek), [Gephi](http://gephi.github.io), [graphviz](http://www.graphviz.org) and [visone](http://visone.info) with no satisfactory results which probably tells more about me than about the softwares. So I am definitely not saying that none of these tools are appropriate to accomplish the task. All the more reason not because I have finally figured out that it is indeed possible in Pajek.
+<br><br>
 By hoping that it might be useful information for likeminded folks, I'd like to give a short summary of the process. I am not going to fully explain every steps, assuming that the reader has some basic knowledge about networks, network visualisation and Pajek. The presented example is part of my and my colleague's research project and relies on the data collected by the [RECENS](http://recens.tk.mta.hu/en) group.
-
-
 
 ## How To
 
-#### .net file
-
-The key element of the process is the appropriate construction of the Pajek `.net` file. It always starts with the definition of the vertices. If one would like to have different vertice shapes, one should indicate the shape of each vertice in the third column after the vertex label. The important part is that one can define multiple networks in the input file, separating them with the `*Arcs :1 ""` and `*Arcs :2 ""` lines, where `""` allows for labeling the network.
-
+The key element of the process is the appropriate construction of the Pajek `.net` file. It always starts with the definition of the vertices. If one would like to have different vertice shapes, one should indicate the shape of each vertice in the third column after the vertex label. The important part is that one can define multiple networks in the input file, separating them with the `*Arcs :1 ""` and `*Arcs :2 ""` lines, where `""` allows for labeling the network. When listing the arcs, the first two numbers in each row are always the vertices (listed in the first column of the vertice `*Vertices` section) that define the arc and the third number is always the number of the network (so it is always 1 for the first network, 2 for the second and so on)
 
 ~~~ css
 *Vertices 18
@@ -61,13 +56,11 @@ The key element of the process is the appropriate construction of the Pajek `.ne
 <i class="fa fa-info-circle"></i> Note that the sample .net contains only the first 10 lines of the original vertice and arc data and such, does not allow for reconstructing the figures below .
 {: .notice}
 
-
-
-
+And one more thing. When it comes to Pajek settings, make sure that you have your arcs and/or edges represented by relational number. In order to do go: `Options -> Colors -> Arcs -> “Relation number”`
 
 ## The Figures
 
-Figure 1 and 2 both illustrates the logic of our models, representing the negative and the perceived ethnicity networks in one class from our sample. On both figures, black arrows mean ethnic nominations and the gray ones stand for the negative relations. Self-declared Roma students are represented with squares and non-Roma students with circles. The colors of the nodes depend on the number of the incoming perceived ethnic nominations so the higher indegree the node has the darker the color is. Finally, whereas on Figure 1 the bigger the node is the more incoming negative nominations that student has, on Figure 2 the node size depends on the outgoing negative nominations.
+Figure 1 and 2 both illustrates the logic of an ERG model, representing the negative and the perceived ethnicity networks in one class from our sample. On both figures, black arrows mean ethnic nominations and the gray ones stand for the negative relations. Self-declared Roma students are represented with squares and non-Roma students with circles. The colors of the nodes depend on the number of the incoming perceived ethnic nominations so the higher indegree the node has (the more student considers her/him Roma) the darker the color is. Finally, whereas on Figure 1 the bigger the node is the more incoming negative nominations that student has (the more student dislikes her/him), on Figure 2 the node size depends on the outgoing negative nominations.
 
 <figure>
 <img src="/images/multiplex1.svg">
