@@ -58,7 +58,7 @@ The key element of the process is the appropriate construction of the Pajek .net
 5	1	2
 ~~~
 
-<i class="fa fa-info-circle"></i> Note that the sample .net contains only the first 10 lines of the original vertice and arc data and such, does not allow for reconstruction of the figures below .
+<i class="fa fa-info-circle"></i> Note that the sample .net contains only the first 10 lines of the original vertice and arc data and such, does not allow for reconstructing the figures below .
 {: .notice}
 
 
