@@ -7,9 +7,6 @@ modified: 2014-11-29
 comments: true
 ---
 
-<p>I start my morning with a cup of coffee and
-<a href="http://www.nytimes.com/">The New York Times</a>.</p>
-
 The real protagonist of the film however is Hanoi. Its suffocating heat, its noise, its crowds, restlessness and its poise waiting for something to happen. There is a bubbling tension under the surface intended to express the inner torments of Huyen, as from her we did not get much of anything. She drifts through the whole film towards that tomorrow, when the abortion comes, always in an attainable distance, but never quite there for her to grab it.
 <figure>
 <img class="wp-image-63" style="border: 0pt none; float: left; padding-right: 10px; padding-bottom: 5px;" src="http://aseansational.com/wp-content/uploads/2014/11/flapping.jpg" alt="" width="347" height="260" />
