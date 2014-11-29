@@ -60,6 +60,8 @@ When it comes to Pajek settings, make sure you have your arcs and/or edges (dire
 
 ## About the Figures
 
+[caption id="attachment_63" align="alignnone" width="347"]<img class="wp-image-63" style="border: 0pt none; float: left; padding-right: 10px; padding-bottom: 10px;" title="Nguyễn Thuỳ Anh and Phạm Trần Thanh Du (Source: http://kenh14.vn/dap-canh-giua-khong-trung-2014.html)" src="http://aseansational.com/wp-content/uploads/2014/11/flapping.jpg" alt="" width="347" height="260" /> Nguyễn Thuỳ Anh and Phạm Trần Thanh Du (Source: http://kenh14.vn/dap-canh-giua-khong-trung-2014.html)[/caption]
+
 Figure 1 and 2 both illustrates the logic of an ERG model, representing the negative and the perceived ethnicity networks in one class from our sample. On both figures, black arrows mean ethnic nominations and the gray ones stand for the negative relations. Self-declared Roma students are represented with squares and non-Roma students with circles. The colours of the nodes depend on the number of the incoming perceived ethnic nominations so the higher indegree the node has (the more student considers her/him Roma) the darker the color is. Finally, whereas on Figure 1 the bigger the node is the more incoming negative nominations that student has (the more student dislikes her/him), on Figure 2 the node size depends on the outgoing negative nominations.
 
 <figure>
