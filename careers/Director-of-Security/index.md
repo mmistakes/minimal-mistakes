@@ -9,7 +9,7 @@ image:
 ---
 
 
-#### Requisition 095140
+#### Requisition 097435
 
 Responsible for managing information security during development, transition and production operations. Develop and manage a framework to deliver operational and technical solutions to mitigate threats while maximizing process automation and efficiency. Work cross-functionally to ensure alignment with other programs to protect the organization from operational, reputational, and financial loss. 
 <br>
@@ -37,7 +37,7 @@ Experience and knowledge of security polices, procedures and controls; security 
 Knowledge of HIPAA Privacy and Security regulations preferred.  
 <br>
 <br>
-#### [Apply for Requisition#095140 at https://jobopportunities.uchicago.edu](https://jobopportunities.uchicago.edu)
+#### [Apply for Requisition 097435 at https://jobopportunities.uchicago.edu](https://jobopportunities.uchicago.edu)
 
 <br>
 <br>
