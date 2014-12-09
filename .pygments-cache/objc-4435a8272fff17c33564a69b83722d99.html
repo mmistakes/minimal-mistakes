@@ -1,0 +1,13 @@
+<div class="highlight"><pre><span class="cp">#if !defined(SWIFT_CLASS)</span>
+<span class="cp"># if defined(__has_attribute) &amp;&amp; ...</span>
+<span class="cp">#  define SWIFT_CLASS(SWIFT_NAME)...</span>
+<span class="cp"># else</span>
+<span class="cp">#  define SWIFT_CLASS(SWIFT_NAME) SWIFT_RUNTIME_NAME...</span>
+<span class="cp"># endif</span>
+<span class="cp">#endif</span>
+
+<span class="n">SWIFT_CLASS</span><span class="p">(</span><span class="s">&quot;_TtC9SwiftObjc9ObjcClass&quot;</span><span class="p">)</span>
+<span class="k">@interface</span> <span class="nc">ObjcClass</span>
+<span class="p">-</span> <span class="p">(</span><span class="kt">instancetype</span><span class="p">)</span><span class="nf">init</span> <span class="n">OBJC_DESIGNATED_INITIALIZER</span><span class="p">;</span>
+<span class="k">@end</span>
+</pre></div>

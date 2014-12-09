@@ -1,0 +1,16 @@
+<div class="highlight"><pre><span class="p">{</span>
+    <span class="k">typealias</span> <span class="n">ExtendedGraphemeClusterLiteralType</span> <span class="o">=</span> <span class="n">StringLiteralType</span>
+    <span class="k">init</span><span class="p">(</span><span class="n">unicodeScalarLiteral</span> <span class="nl">value</span><span class="p">:</span> <span class="n">UnicodeScalarLiteralType</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nb">self</span><span class="p">.</span><span class="n">pattern</span> <span class="o">=</span> <span class="s">&quot;\(value)&quot;</span>
+    <span class="p">}</span>
+
+    <span class="k">init</span><span class="p">(</span><span class="n">extendedGraphemeClusterLiteral</span> <span class="nl">value</span><span class="p">:</span> <span class="n">StringLiteralType</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nb">self</span><span class="p">.</span><span class="n">pattern</span> <span class="o">=</span> <span class="n">value</span>
+    <span class="p">}</span>
+
+    <span class="k">init</span><span class="p">(</span><span class="n">stringLiteral</span> <span class="nl">value</span><span class="p">:</span> <span class="n">StringLiteralType</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nb">self</span><span class="p">.</span><span class="n">pattern</span> <span class="o">=</span> <span class="n">value</span>
+    <span class="p">}</span>
+
+<span class="p">}</span>
+</pre></div>
