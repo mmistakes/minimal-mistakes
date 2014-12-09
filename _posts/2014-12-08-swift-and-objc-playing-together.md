@@ -6,7 +6,7 @@ modified: 2014-12-09
 tags: [swift, objective-c, integration, cocoapods]
 comments: true
 image:
-  feature: earpods.jpg
+  feature: swiftobjc.jpg
   credit: Pedro Piñera
 sitemap   :
   priority : 0.5
