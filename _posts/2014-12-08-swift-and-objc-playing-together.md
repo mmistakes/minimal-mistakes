@@ -23,8 +23,7 @@ It's possible to have Swift playing with Objective-C in the same project, howeve
 
 ## Objective-C projects
 
-
-{% img /images/swiftobjc-structure.png Swift Structure %}
+![]({{site.url}}/images/swiftobjc-structure.png)
 
 If we analyzed the structure of our Objective-C projects that would be something like what you can see in the figure above. We have some libraries integrated (or not) using an external dependency manager like CocoaPods into our Objective-C code base. Everything works great, we have both in the same language and the same language features are available in both sides. **What happens when Swift appears in the scene?** We have features that are available in a language (Swift) that aren't in the other and that introduces extra communication problems that we have to face. We'll see that we can use a kind of **keywords** or Swift types that are automatically translated into the equivalent ones in Objectve-C but that in some other cases we might end up using a wrapper component that allows us to stablish the communication with these Swift components.
 
@@ -90,7 +89,7 @@ SWIFT_CLASS("_TtC9SwiftObjc18NSObjectSwiftClass")
 @end
 {% endcodeblock %}
 
-{% img center /images/swiftobjc-alert.png Bridging Header Alert %}
+![]({{site.url}}/images/swiftobjc-alert.png)
 
 ## What's really exposed?
 As I mentioned not all your Swift code is exposed. The point is that the compiler follows some rules to generate the header and not all of those rules are reflected on the Apple docummentations. You'll figure out some of them working on that type of integrations and some others reading from others developers dealing with similar problems. Summarizing the most important ones, only will be exposed:
@@ -114,8 +113,7 @@ XCode uses your product package name for the xxxxx-Swift.h file naming but repla
 
 You can subclass Objective-C classes in Swift, remember to use the **override** keyword wherever you are overriding a parent class implementation. **Swift classes cannot be subclassed in Objective-C** *(even if they are NSObject sublcass or labeled with the keyword @objc)*
 
-
-{% img center /images/swiftobjc-subclass.png %}
+![]({{site.url}}/images/swiftobjc-subclass.png)
 
 {% codeblock lang:objc %}
 #if !defined(SWIFT_CLASS)
