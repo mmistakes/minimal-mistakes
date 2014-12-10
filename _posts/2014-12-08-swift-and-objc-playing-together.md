@@ -6,7 +6,7 @@ modified: 2014-12-09
 tags: [swift, objective-c, integration, cocoapods]
 comments: true
 image:
-  feature: earpods.jpg
+  feature: swiftobjc.jpg
   credit: Pedro Piñera
 sitemap   :
   priority : 0.5
@@ -23,8 +23,7 @@ It's possible to have Swift playing with Objective-C in the same project, howeve
 
 ## Objective-C projects
 
-
-{% img /images/swiftobjc-structure.png Swift Structure %}
+![]({{site.url}}/images/swiftobjc-structure.png)
 
 If we analyzed the structure of our Objective-C projects that would be something like what you can see in the figure above. We have some libraries integrated (or not) using an external dependency manager like CocoaPods into our Objective-C code base. Everything works great, we have both in the same language and the same language features are available in both sides. **What happens when Swift appears in the scene?** We have features that are available in a language (Swift) that aren't in the other and that introduces extra communication problems that we have to face. We'll see that we can use a kind of **keywords** or Swift types that are automatically translated into the equivalent ones in Objectve-C but that in some other cases we might end up using a wrapper component that allows us to stablish the communication with these Swift components.
 
@@ -53,7 +52,7 @@ The tool Apple released to bridge Swift and Objective-C was something called **b
 
 **Product-Bridging-Header.h**
 
-{% codeblock lang:objc %}
+{% highlight objc %}
 //
 //  Use this file to import your target's public headers that you would
 //  like to expose to Swift.
@@ -64,33 +63,33 @@ The tool Apple released to bridge Swift and Objective-C was something called **b
 
 // And my Objective-C classes
 #import "CocaColaAlgorithm.h"
-{% endcodeblock %}
+{% endhighlight %}
 
 **Swift-Class.swift**
 
-{% codeblock lang:swift %}
+{% highlight swift %}
 // Use here your Objective-C exposed classes
 let cola = CocaColaAlgorithm.prepareCola()
-{% endcodeblock %}
+{% endhighlight %}
 
 - **ProductName-Swift.h**: That file is *automatically generated* by XCode. When you compile the project XCode generates a header file *"translating"* Swift code into Objective-C. That way you can use Swift classes and components from Objective-C. **That have some restrictions that I'll tell you about because not everything will be available to use in Objective-C**
 
 **Swift.swift**
 
-{% codeblock lang:swift %}
+{% highlight swift %}
 class NSObjectSwiftClass: NSObject { }
-{% endcodeblock %}
+{% endhighlight %}
 
 **ProductName-Swift.h**
 
-{% codeblock lang:objc %}
+{% highlight objc %}
 SWIFT_CLASS("_TtC9SwiftObjc18NSObjectSwiftClass")
 @interface NSObjectSwiftClass : NSObject
 - (instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
-{% endcodeblock %}
+{% endhighlight %}
 
-{% img center /images/swiftobjc-alert.png Bridging Header Alert %}
+![]({{site.url}}/images/swiftobjc-alert.png)
 
 ## What's really exposed?
 As I mentioned not all your Swift code is exposed. The point is that the compiler follows some rules to generate the header and not all of those rules are reflected on the Apple docummentation. You'll figure out some of them working on that type of integrations. Some others you'll learn them reading from other developers dealing with similar problems. Summarizing the most important ones, it will only be exposed:
@@ -114,10 +113,9 @@ XCode uses your product package name for the xxxxx-Swift.h file naming but repla
 
 You can subclass Objective-C classes in Swift, remember to use the **override** keyword wherever you are overriding a parent class implementation. **Swift classes cannot be subclassed in Objective-C** *(even if they are NSObject sublcass or labeled with the keyword @objc)*
 
+![]({{site.url}}/images/swiftobjc-subclass.png)
 
-{% img center /images/swiftobjc-subclass.png %}
-
-{% codeblock lang:objc %}
+{% highlight objc %}
 #if !defined(SWIFT_CLASS)
 # if defined(__has_attribute) && ...
 #  define SWIFT_CLASS(SWIFT_NAME)...
@@ -130,35 +128,35 @@ SWIFT_CLASS("_TtC9SwiftObjc9ObjcClass")
 @interface ObjcClass
 - (instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
-{% endcodeblock %}
+{% endhighlight %}
 
 
 ## AnyObject
 
 AnyObject is the Swift equivalent of **ids**. However AnyObject in comparison with id is not a class type but a protocol. AnyObject **is not known until runtime execution**. It supposes that the compiler can pass if you call a method on the AnyObject object that it doesn't actually implement but if your program executes that line of code your app is going to crash. **Be careful!**:
 
-{% codeblock lang:swift %}
+{% highlight swift %}
 if let fifthCharacter = myObject.characterAtIndex?(5) {
     println("Found \(fifthCharacter) at index 5")
 }
-{% endcodeblock %}
+{% endhighlight %}
 
 ## Nils
 
 As you probably know Swift introduced a new type of data, **optionals** those allow nil  type and the real content of the type (in case of having) is wrapped inside that optional. Objective-C is more flexible in that aspect and allows you to call methods on those nil objects without causing exceptions or making your app crash. The way the **compiler translates** those variables or function return parameters that **might be nil** is using **implicitly unwrapped optionals** (var!). It implies that if you are planning to use one of those implicitly unwrapped optionals that the compiler generated from your Objective-C code do it carefully checking firstly if the value is nil. **Otherwise, trying to access it being nil will cause a runtime error and your app will crash**
 
-{% codeblock lang:objc %}
+{% highlight objc %}
 - (NSDate *)dueDateForProject:(Project *)project;
-{% endcodeblock %}
+{% endhighlight %}
 
-{% codeblock lang:swift %}
+{% highlight swift %}
 func dueDateForProject(project: Project!) -> NSDate!
-{% endcodeblock %}
+{% endhighlight %}
 
 ## Extensions and categories
 Extensions are the equivalent of categories in Swift. The main difference is that we can use extensions in Swift to make classes conform protocols that they originally didn't. For example we can make our class *MyClass* conform the protocol **StringLiteralCovertible** and initialize it using an string:
 
-{% codeblock lang:swift %}
+{% highlight swift %}
 extension MyClass: StringLiteralConvertible
 {
     typealias ExtendedGraphemeClusterLiteralType = StringLiteralType
@@ -175,7 +173,7 @@ extension MyClass: StringLiteralConvertible
     }
 
 }
-{% endcodeblock %}
+{% endhighlight %}
 I recommend you that interesting post of Matt [http://nshipster.com/swift-default-protocol-implementations/](http://nshipster.com/swift-default-protocol-implementations/) where he explains different uses of default system protocols to do something like what I have shown you above.
 
 ## Closures and Blocks
@@ -183,70 +181,70 @@ They are automatically converted too by the compiler. There's only a difference 
 
 **Example in Objective-C**
 
-{% codeblock lang:objc %}
+{% highlight objc %}
 __block CustomObject  *myObject = [CustomObject new];
 void (^myBlock)() = ^void() {
   NSLog(@"%@", myObject);
 };
-{% endcodeblock %}
+{% endhighlight %}
 
 **Example in Swift**
 
-{% codeblock lang:swift %}
+{% highlight swift %}
 let customObject: MyObject = MyObject()
 let myBlock: () -> () = { in
   println("\(customObject)")
 }
-{% endcodeblock %}
+{% endhighlight %}
 
 And yes! we have the [FuckingBlockSyntax.com](www.fuckingblocksyntax.com) equivalent for Closures, [FuckingClosureSyntax.com](www.fuckingclosuresyntax.com)
 
 ## @objc Keyword
 When you want to specify the compiler that any Swift class, property or method must be visible in Objective-C after your code has been compiled you have to use the keyword @objc. Take look to the example below where we say the *SwiftCat* is going to be visible in Objective-C with the name *ObjcCat*
 
-{% codeblock lang:swift %}
+{% highlight swift %}
 @objc(ObjcCat)
 class SwiftCat {
     @objc(initWithName:)
     init (name: String) { /*...*/ }
 }
-{% endcodeblock %}
+{% endhighlight %}
 
 ## Protocols
 In protocols there are such exceptions crossing the protocols usage between Objective-C and Swift. While Swift can adopt **any** Objective-C protocol, Objective-C **can only adopt** Swift protocols if they are of type NSObjectProtocol. Otherwise Swift won't be able to do it.
 
 Moreover if you are using protocols in a **Delegate** pattern you have to declare your protocols as **class**. Why? Because not only classes in Swift can conform protocols but structs too. Strucs are passed by copy instead of by reference and we don't want have a copied object that conforms a protocol behaving as a delegate of something because it's not actually the real delegate object. When you set a protocol as `class`, **only classes can conform that protocol**
 
-{% codeblock lang:swift %}
+{% highlight swift %}
 /** MyProtocol.swift */
 @objc protocol MyProtocol: NSObjectProtocol {
     // Protocol stuff
 }
-{% endcodeblock %}
+{% endhighlight %}
 
 ## Cocoa Data Types
 Most of the foundation data types can be used interchangeably with Swift types (*remember to import Foundation*). So for example you can initialize a NSSTring object in Swift using a Swift string:
 
-{% codeblock lang:swift %}
+{% highlight swift %}
 let myString: NSString = "123"
-{% endcodeblock %}
+{% endhighlight %}
 
 **Int, UInt, Float, Double and Bool** have its equivalent in Objective-C that is **NSNumber**
 
-{% codeblock lang:objc %}
+{% highlight objc %}
 let n = 42
 let m: NSNumber = n
-{% endcodeblock %}
+{% endhighlight %}
 
 Regarding the collection types, we have equivalents too there. **[AnyObject]** Swift array is automatically converted into NSArray (if the elements are AnyObject  compatible). *For example if we have an array of Int, [Int] it will be converted into an array of NSNumbers.*
 
 Any **NSArray** will be converted into a Swift [AnyObject] array. We can even downcast it into the real type:
 
-{% codeblock lang:swift %}
+{% highlight swift %}
 for myItem in foundationArray as [UIView] {
     // Do whatever you want
 }
-{% endcodeblock %}
+{% endhighlight %}
 
 And something similar happens with **NSDictionaries**. They are converted into **[NSObject: AnyObject]** and we get **NSDictionaries** from **[NSObject: AnyObject]** if the keys and values are instances of a class or are bridgeable
 
@@ -276,13 +274,13 @@ Finally as a conclussion of this summary/helping post I would like to give you s
 
 ## Resources
 
-{% codeblock lang:swift %}
+{% highlight swift %}
 //MARK: - You should read
 let swiftTypes = "https://github.com/jbrennan/swift-tips/blob/master/swift_tips.md"
 let realmAndObjc = "http://realm.io/news/swift-objc-best-friends-forever"
 let swiftReady = "http://www.toptal.com/swift/swift-is-it-ready-for-prime-time"
 let swiftImprovesObjc = "http://spin.atomicobject.com/2014/06/13/swift-improves-objective-c/"
-{% endcodeblock %}
+{% endhighlight %}
 
 
 <script async class="speakerdeck-embed" data-id="797cb47061d3013267d84a36ee36a741" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
