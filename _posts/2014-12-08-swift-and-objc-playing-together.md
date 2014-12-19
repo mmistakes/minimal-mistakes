@@ -43,12 +43,12 @@ Firstly we have to be sure of which features are *"pure"* Swift features. What d
 
 If you don't know about any of those features I recommend you to take a look to the [docummentation](https://www.google.es/search?q=swift+docs&oq=swift+docs&aqs=chrome..69i57j69i60l5.1273j0j4&sourceid=chrome&es_sm=91&ie=UTF-8) where you'll learn more about them. 
 
-Remember, **Objective-C** doesn't know about them and you **must** avoid them in the public interface of your Swift features/components. Otherwise you won't be able to use them from your Objective-C code
+Remember, **Objective-C** doesn't know about them and you **must** avoid them in the *public interface* of your Swift features/components. Otherwise you won't be able to use them from your Objective-C code
 
 ## Bridging
-The mechanism Apple released to bridge Swift and Objective-C was something called **bridging-header** (*what an original name*). We have **two bridging directions:** Swift into Objective-C and Objective-C into Swift and consequently two bridging mechanisms:
+The tool Apple released to bridge Swift and Objective-C was something called **bridging-header** (*what an original name*). We have **two bridging directions:** Swift into Objective-C and Objective-C into Swift and consequently two bridging mechanisms:
 
-- **Project-Briding-Header.h**: That file allows you to *make your target Objective-C files visibles* to Swift, otherwise they won't and you won't be able to use them. That file is a simple *Objective-C header file* where you have a list of imports of other headers. *Note: If you wanna use Objective-C libraries that you have integrated through CocoaPods you have to import them in that header if you want to use them from Swift*
+- **Project-Briding-Header.h**: That file allows you to *make your target Objective-C files visible* to Swift, otherwise they won't and you won't be able to use them. That file is a simple *Objective-C header file* where you have a list of imports of other headers. *Note: If you wanna use Objective-C libraries that you have integrated through CocoaPods you have to import them in that header if you want to use them from Swift*
 
 **Product-Bridging-Header.h**
 
@@ -92,7 +92,7 @@ SWIFT_CLASS("_TtC9SwiftObjc18NSObjectSwiftClass")
 ![]({{site.url}}/images/swiftobjc-alert.png)
 
 ## What's really exposed?
-As I mentioned not all your Swift code is exposed. The point is that the compiler follows some rules to generate the header and not all of those rules are reflected on the Apple docummentations. You'll figure out some of them working on that type of integrations and some others reading from others developers dealing with similar problems. Summarizing the most important ones, only will be exposed:
+As I mentioned not all your Swift code is exposed. The point is that the compiler follows some rules to generate the header and not all of those rules are reflected on the Apple docummentation. You'll figure out some of them working on that type of integrations. Some others you'll learn them reading from other developers dealing with similar problems. Summarizing the most important ones, it will only be exposed:
 
 - Classes, attributes and methods marked with the keyword **@objc**
 - Classes descendent of **NSObject**
@@ -133,7 +133,7 @@ SWIFT_CLASS("_TtC9SwiftObjc9ObjcClass")
 
 ## AnyObject
 
-AnyObject is the Swift equivalent of **id**. However AnyObject as a difference of id is not a class type but a protocol. AnyObject **is not known until runtime execution**. It supposes that the compiler can pass if you call a method on the AnyObject object that it doesn't actually implement but if your program executes that line of code your app is going to crash. **Be careful!**:
+AnyObject is the Swift equivalent of **ids**. However AnyObject in comparison with id is not a class type but a protocol. AnyObject **is not known until runtime execution**. It supposes that the compiler can pass if you call a method on the AnyObject object that it doesn't actually implement but if your program executes that line of code your app is going to crash. **Be careful!**:
 
 {% highlight swift %}
 if let fifthCharacter = myObject.characterAtIndex?(5) {
@@ -154,7 +154,7 @@ func dueDateForProject(project: Project!) -> NSDate!
 {% endhighlight %}
 
 ## Extensions and categories
-Extensions are the equivalent of categories in Swift. The main difference is that we can use textensions in Swift to make classes conform protocols that they didn't. For example we can make our class *MyClass* conform the protocol **StringLiteralCovertible** and initialize it using an string:
+Extensions are the equivalent of categories in Swift. The main difference is that we can use extensions in Swift to make classes conform protocols that they originally didn't. For example we can make our class *MyClass* conform the protocol **StringLiteralCovertible** and initialize it using an string:
 
 {% highlight swift %}
 extension MyClass: StringLiteralConvertible
@@ -259,7 +259,7 @@ The CocoaPods team are working on supporting Swift libraries too, [https://githu
 
 # Moving to Swift Advices
 
-Finally as a conclussion of this summary post I would like to give you some advices for your Swift integrations. I figured out some of them when I had to deal with some problems and I would like you not to have to deal with the same problems.
+Finally as a conclussion of this summary/helping post I would like to give you some advices for your Swift integrations. I figured out some of them when I had to deal with some problems and I would like you not to have to deal with the same problems.
 
 1. **Don't touch your Objective-C code base**: If you have a clean, useful code base on Swift don't speedup. There's no limit date to have everything on Swift. It's just something that Apple expects to be a gradual process. Move your components to Swift *only if they require a refactor* or *they have been deprecated and a new one (in Swift) will replace them*.
 
@@ -267,7 +267,7 @@ Finally as a conclussion of this summary post I would like to give you some advi
 
 3. **Implement Swift in isolated features**: Avoid crossed dependencies between Swift andn Objective-C and try to use pure Swift only internally on those components. Expose those things that you need from Objective-C using @objc compatible features.
 
-4. **Swift libraries only when there's no option in Objective-C**: If you have seen a library in Swift that you haven't see any like that before in Objective-C then use it. It's probably that you have to implement any wrapper to use from Objective-C if that library uses pure Swift features. *AlamoFire for example uses top-level functions, structs, ... so yes we can have it in our project and use it from Swift but it's impoossible to do it from Objective-C*
+4. **Swift libraries only when there's no option in Objective-C**: If you have seen a library in Swift that you haven't seen any like that before in Objective-C then use it. It's probably that you have to implement any wrapper to use from Objective-C if that library uses pure Swift features. *AlamoFire for example uses top-level functions, structs, ... so yes we can have it in our project and use it from Swift but it's impoossible to do it from Objective-C*
 
 5. **Swift is a language STILL IN PROGRESS**: Do not get frustrated if you have the *SourceKitService Crashed* famous crash every 10 minutes. The compiler and the language in general have a lot of things to improve. It seems more stable now that some months ago but not enough (in my opinion). Moreover they are still changing and improving it so it's probably that you compile your project tomorrow and then something there's an optional somewhere that it wasn't yesterday.
 
