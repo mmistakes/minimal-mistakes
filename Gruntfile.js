@@ -80,5 +80,9 @@ module.exports = function(grunt) {
   grunt.registerTask('dev', [
     'watch'
   ]);
+  grunt.registerTask('images', [
+    'imagemin',
+    'svgmin'
+  ]);
 
 };
