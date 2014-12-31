@@ -1,0 +1,21 @@
+---
+layout: talk
+title:  "Deferreds and You: How To Tame Your Asynchronous Code"
+location: "Online"
+delivery_date: 2012-11-13
+slides_url: 'https://github.com/alexmcpherson/jquery-talk'
+video_url: 'http://www.youtube.com/watch?v=juRtEEsHI9E'
+video_embed: '<iframe width="853" height="480" src="//www.youtube.com/embed/juRtEEsHI9E?rel=0" frameborder="0" allowfullscreen></iframe>'
+date:   2012-11-13
+categories: 'talk'
+background-image: 'js-summit.png'
+---
+
+This was one of the first editions of a now <a href=" http://environmentsforhumans.com/2012/javascript-summit/" target="_blank">well established online conference</a>. I spoke alongside some big names in the JavaScript community including <a href="http://www.nczonline.net/" title="Nicholas Zakas" target="_blank">Nicholas Zakas</a>, <a href="http://rmurphey.com/" title="Rebecca Murphey" target="_blank">Rebecca Murphey</a>, <a href="http://benalman.com/" title="Ben Alman" target="_blank">Ben Alman</a>, and <a href="http://addyosmani.com/" title="Addy Osmani" target="_blank">Addy Osmani</a> (among many other excellent speakers).
+
+I gave a refined and more up-to-date version of my promises and deferreds talk, and it was very well received. It was a good experience to have done a fully online conference talk, and in the future I would get set up with a better microphone and a second screen to see comments as they come in.
+
+
+<blockquote class="twitter-tweet" data-conversation="none" lang="en"><p><a href="https://twitter.com/alexmcpherson">@alexmcpherson</a> Great to see deferreds/promises getting the attention they deserve - they changed the way I wrote jQuery code. <a href="https://twitter.com/hashtag/jssummit?src=hash">#jssummit</a></p>&mdash; Matt Titchener (@englishmatt) <a href="https://twitter.com/englishmatt/status/268791698568642561">November 14, 2012</a></blockquote>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

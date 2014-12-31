@@ -1,13 +1,13 @@
 # Site wide configuration
 
-title:            Site Title
+title:            McPherson Industries
 locale:           en_US
-url:              
+url:
 
 
 # Jekyll configuration
 
-permalink:   /:categories/:title/
+permalink:   /:title/
 markdown:    kramdown
 highlighter: pygments
 sass:
@@ -26,24 +26,24 @@ kramdown:
 
 # Site owner
 owner:
-  name: Your Name
+  name: Alex McPherson
   avatar: bio-photo.jpg
-  bio: "Describe your self."
-  email: 
-  disqus-shortname: 
-  twitter: #username
+  bio: "Developer in Boulder, Colorado"
+  email: alex.m.mcpherson@gmail.com
+  disqus-shortname:
+  twitter: alexmcpherson
   facebook: #username
   google:
     plus: #username
-    analytics: 
-    verify: 
-    ad-client: 
-    ad-slot: 
-  bing-verify: 
-  github: #username
-  stackoverflow: #http://stackoverflow.com/users/123456/username
-  linkedin: #username
-  instagram: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: alexmcpherson
+  stackoverflow: http://stackoverflow.com/users/82203/alex-mcp
+  linkedin: alexmcpherson
+  instagram: alexmcpherson
   lastfm: #username
   tumblr: #username
   pinterest: #username
