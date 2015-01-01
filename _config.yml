@@ -2,7 +2,8 @@
 
 title:            McPherson Industries
 locale:           en_US
-url:
+url:              http://localhost:4000
+# url:              http://mcphersonindustries.com
 
 
 # Jekyll configuration
@@ -27,21 +28,21 @@ kramdown:
 # Site owner
 owner:
   name: Alex McPherson
-  avatar: bio-photo.jpg
-  bio: "Developer in Boulder, Colorado"
+  avatar: https://pbs.twimg.com/profile_images/492185116068691969/Q7aTyAQO.png
+  bio: "Software Developer in Boulder, Colorado"
   email: alex.m.mcpherson@gmail.com
   disqus-shortname:
   twitter: alexmcpherson
   facebook: #username
   google:
     plus: #username
-    analytics:
+    analytics: UA-15918262-1
     verify:
     ad-client:
     ad-slot:
   bing-verify:
   github: alexmcpherson
-  stackoverflow: http://stackoverflow.com/users/82203/alex-mcp
+  stackoverflow: 82203/alex-mcp
   linkedin: alexmcpherson
   instagram: alexmcpherson
   lastfm: #username
