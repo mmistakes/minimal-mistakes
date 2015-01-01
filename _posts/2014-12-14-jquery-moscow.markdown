@@ -15,7 +15,6 @@ I was incredibly flattered to be invited to speak about asynchronous JavaScript 
 
 We learned a bit about patterns for using promises in front end code, and compared features and performance between [vow.js](https://github.com/dfilatov/vow), [jQuery Deferreds](http://api.jquery.com/category/deferred-object/), and [Q](https://github.com/kriskowal/q). A lively discussion about the performance of vow took place in Russian, and it appeared that the takeaway was that they would switch over shortly.
 
-
 <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/hashtag/jQueryRussia?src=hash">#jQueryRussia</a> после доклада по $.Deferred() появилось стойкое желание переписать половину фронтенда.</p>&mdash; Тёма Пендюрин (@ErBlack) <a href="https://twitter.com/ErBlack/status/390082139045527553">October 15, 2013</a></blockquote>
 
 Google says this means:
