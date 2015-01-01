@@ -125,7 +125,7 @@ border-bottom-right-radius : $bottomright;
 border-bottom-left-radius : $bottomleft;
 border-top-left-radius : $topleft;
 -webkit-background-clip : padding-box;
--moz-background-clip : padding;  
+-moz-background-clip : padding;
 background-clip : padding-box; }
 
 // .box-shadow(HORIZONTAL VERTICAL BLUR COLOR))
@@ -244,7 +244,7 @@ overflow : hidden; }
 }
 
 // Hide but maintain layout
-@mixin invisible() { 
+@mixin invisible() {
 visibility : hidden; }
 
 // .resize(VALUE) (none, both, horizontal, vertical, inherit)
@@ -260,12 +260,12 @@ overflow : auto; }
 user-select : $select; }
 
 // Hidden but available to speaking browsers
-@mixin visuallyhidden() { 
-overflow : hidden; 
+@mixin visuallyhidden() {
+overflow : hidden;
 position : absolute;
-clip : rect(0 0 0 0); 
-height : 1px; 
+clip : rect(0 0 0 0);
+height : 1px;
 width : 1px;
-margin : -1px; 
-padding : 0; 
+margin : -1px;
+padding : 0;
 border : 0; }
