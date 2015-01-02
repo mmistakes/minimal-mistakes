@@ -4,10 +4,6 @@ title: About
 tags: [about]
 modified: 2015-01-01T20:53:07.573882-04:00
 comments: false
-image:
-  feature: sample-image-2.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 
 I am a web developer and manager-of-web-developers in Boulder, Colorado. I like learning and playing around with emerging web technologies like SVG, Service Workers, web sockets, and other irresponsible-to-use things. Web performance is particularly interesting to me, and I recently published [a report](http://reports.quickleft.com) on performance trends in 2014 across the web.
