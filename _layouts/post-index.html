@@ -13,20 +13,20 @@
 
 {% include _navigation.html %}
 
-{% if page.image.feature %}
-  <div class="image-wrap">
-  <img src=
-    {% if page.image.feature contains 'http' %}
-      "{{ page.image.feature }}"
-    {% else %}
-      "{{ site.url }}/images/{{ page.image.feature }}"
+<div class="image-wrap">
+  {% if page.image.feature %}
+    <img src=
+      {% if page.image.feature contains 'http' %}
+        "{{ page.image.feature }}"
+      {% else %}
+        "{{ site.url }}/images/{{ page.image.feature }}"
+      {% endif %}
+    alt="{{ page.title }} feature image">
+    {% if page.image.credit %}
+      <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
     {% endif %}
-  alt="{{ page.title }} feature image">
-  {% if page.image.credit %}
-    <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
   {% endif %}
-  </div><!-- /.image-wrap -->
-{% endif %}
+</div><!-- /.image-wrap -->
 
 <div id="main" role="main">
   <div class="article-author-side">
@@ -46,10 +46,24 @@
       {% endunless %}
       <article>
         {% if post.link %}
-          <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h2>
+          <h2 class="link-post">
+            <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">
+              <i class="fa fa-link"></i>
+              {{ post.title }}
+            </a>
+            <a href="{{ post.link }}" target="_blank" title="{{ post.title }}">
+          </h2>
+        {% elsif post.delivery_date %}
+          <h2 class="link-post">
+            <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">
+              <i class="fa fa-video-camera"></i>
+              {{ post.title }}
+            </a>
+            <a href="{{ post.link }}" title="{{ post.title }}">
+          </h2>
         {% else %}
           <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-          <p>{{ post.excerpt | strip_html | truncate: 200 }}</p>
+          <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
         {% endif %}
       </article>
     {% endfor %}

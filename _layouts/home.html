@@ -34,10 +34,24 @@
   </div>
   <div id="index">
     <h3><a href="{{ site.url}}/posts/">Recent Posts</a></h3>
-    {% for post in site.posts limit:10 %}
+    {% for post in site.posts limit: 20 %}
     <article>
       {% if post.link %}
-        <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></h2>
+        <h2 class="link-post">
+          <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">
+            <i class="fa fa-link"></i>
+            {{ post.title }}
+          </a>
+          <a href="{{ post.link }}" target="_blank" title="{{ post.title }}">
+        </h2>
+      {% elsif post.delivery_date %}
+        <h2 class="link-post">
+          <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">
+            <i class="fa fa-video-camera"></i>
+            {{ post.title }}
+          </a>
+          <a href="{{ post.link }}" title="{{ post.title }}">
+        </h2>
       {% else %}
         <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
         <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>

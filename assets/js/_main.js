@@ -10,7 +10,7 @@ var changeClass = function (r,className1,className2) {
     r.className = r.className.replace(new RegExp("(?:^|\\s+)" + className2 + "(?:\\s+|$)"),' '+className1+' ');
     }
     return r.className;
-};  
+};
 //  Creating our button in JS for smaller screens
 var menuElements = document.getElementById('site-nav');
 menuElements.insertAdjacentHTML('afterBegin','<button type="button" role="button" id="menutoggle" class="navtoogle navicon-lines-button x" aria-hidden="true"><span class="navicon-lines"></span>menu</button>');
@@ -34,6 +34,13 @@ document.onclick = function(e) {
 // FitVids options
 $(function() {
 	$("article").fitVids();
+  if ($('.image-wrap img').length === 0) {
+    var pattern = GeoPattern.generate(Date().toString());
+    $('.image-wrap').css({
+      'background-image': pattern.toDataUrl(),
+      'height': '10em'
+    });
+  }
 });
 
 // Table of Contents toggle
@@ -60,7 +67,7 @@ $(document).ready(function() {
       tError: '<a href="%url%">Image #%curr%</a> could not be loaded.',
     },
     removalDelay: 300, // Delay in milliseconds before popup is removed
-    // Class that is added to body when popup is open. 
+    // Class that is added to body when popup is open.
     // make it unique to apply your CSS animations just to this exact popup
     mainClass: 'mfp-fade'
   });
