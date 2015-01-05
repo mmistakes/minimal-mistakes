@@ -1,0 +1,83 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  {% include _head.html %}
+</head>
+
+<body class="post">
+
+  {% include _browser-upgrade.html %}
+
+  {% include _navigation.html %}
+
+  {% include _image.html %}
+
+  <div id="main" role="main">
+    <div class="article-author-side">
+      {% include _author-bio.html %}
+    </div>
+    <article class="post">
+      <div class="headline-wrap">
+      <h1><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
+      <div class="article-wrap">
+        <div class="nutrition-label">
+          <ul>
+            <li>
+              <svg width="25" height="25" style="display: inline-block;
+              margin-bottom: -.4rem;"><g transform="scale(.02125 0.02125)"><path d="M0 128v768h1024v-768h-1024zM192 832h-128v-128h128v128zM192 576h-128v-128h128v128zM192 320h-128v-128h128v128zM768 832h-512v-640h512v640zM960 832h-128v-128h128v128zM960 576h-128v-128h128v128zM960 320h-128v-128h128v128zM384 320v384l256-192z"></path></g></svg>
+
+              <strong>Video:</strong> <a target="_blank" href="{{page.video_url}}">Link</a>
+            </li>
+
+            <li>
+              <svg width="25" height="25" style="display: inline-block;
+              margin-bottom: -.4rem;"> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Group" transform="translate(0.000000, -0.640000)" fill="#000000"> <path d="M21.76,17.32 L21.76,1 L0,1 L0,17.32 L9.52,17.32 L9.52,18.68 L5.44,18.68 L5.44,20.04 L16.32,20.04 L16.32,18.68 L12.24,18.68 L12.24,17.32 L21.76,17.32 L21.76,17.32 Z M2.72,3.72 L19.04,3.72 L19.04,14.6 L2.72,14.6 L2.72,3.72 L2.72,3.72 Z" id="Shape"></path> </g> <polygon stroke="#000000" fill="#000000" transform="translate(11.596113, 8.237986) rotate(-270.000000) translate(-11.596113, -8.237986) " points="11.5961134 4.83409926 14.3581276 11.6418724 8.83409926 11.6418724 "></polygon> </g> </svg>
+
+              <strong>Slides:</strong> <a target="_blank" href="{{page.slides_url}}">Link</a>
+            </li>
+
+            <li>
+              <svg width="25" height="25" style="display: inline-block;
+              margin-bottom: -.6rem;"><g transform="scale(0.02125 0.02125)"><path d="M512 0c-176.732 0-320 143.268-320 320 0 320 320 704 320 704s320-384 320-704c0-176.732-143.27-320-320-320zM512 512c-106.040 0-192-85.96-192-192s85.96-192 192-192 192 85.96 192 192-85.96 192-192 192z"></path></g></svg>
+              <strong>Delivered in:</strong> {{page.location}} on {{page.delivery_date | date: "%B %d %Y"}}
+            </li>
+          </ul>
+          <hr />
+        </div>
+
+        {{ content }}
+
+        <footer role="contentinfo">
+          <div class="article-author-bottom">
+            {% include _author-bio.html %}
+          </div>
+        </footer>
+      </div><!-- /.article-wrap -->
+      {% if site.owner.disqus-shortname and page.comments == true %}
+      <section id="disqus_thread"></section><!-- /#disqus_thread -->
+      {% endif %}
+    </article>
+  </div><!-- /#main -->
+
+  <div class="footer-wrap">
+    <div class="related-articles">
+      <h4>You might also enjoy <small class="pull-right">(<a href="{{ site.url }}/posts/">View all posts</a>)</small></h4>
+      <ul>
+        {% for post in site.related_posts limit:3 %}
+        <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+      <hr />
+    </div><!-- /.related-articles -->
+    <footer>
+      {% include _footer.html %}
+    </footer>
+  </div><!-- /.footer-wrap -->
+
+  {% include _scripts.html %}
+
+</body>
+</html>

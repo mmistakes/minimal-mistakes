@@ -1,13 +1,14 @@
 # Site wide configuration
 
-title:            Site Title
+title:            McPherson Industries
 locale:           en_US
-url:              
+url:              http://localhost:4000
+# url:              http://mcphersonindustries.com
 
 
 # Jekyll configuration
 
-permalink:   /:categories/:title/
+permalink:   /:title/
 markdown:    kramdown
 highlighter: pygments
 sass:
@@ -26,24 +27,24 @@ kramdown:
 
 # Site owner
 owner:
-  name: Your Name
-  avatar: bio-photo.jpg
-  bio: "Describe your self."
-  email: 
-  disqus-shortname: 
-  twitter: #username
+  name: Alex McPherson
+  avatar: https://pbs.twimg.com/profile_images/492185116068691969/Q7aTyAQO.png
+  bio: "Software Developer in Boulder, Colorado"
+  email: alex.m.mcpherson@gmail.com
+  disqus-shortname:
+  twitter: alexmcpherson
   facebook: #username
   google:
     plus: #username
-    analytics: 
-    verify: 
-    ad-client: 
-    ad-slot: 
-  bing-verify: 
-  github: #username
-  stackoverflow: #http://stackoverflow.com/users/123456/username
-  linkedin: #username
-  instagram: #username
+    analytics: UA-15918262-1
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: alexmcpherson
+  stackoverflow: 82203/alex-mcp
+  linkedin: alexmcpherson
+  instagram: alexmcpherson
   lastfm: #username
   tumblr: #username
   pinterest: #username
@@ -55,4 +56,4 @@ owner:
   weibo: #username
 
 include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+exclude: ["vendor", "lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]

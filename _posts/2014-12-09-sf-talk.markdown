@@ -1,0 +1,21 @@
+---
+layout: talk
+title:  "I .promise() to show you .when() to use $.Deferreds"
+location: "San Francisco"
+delivery_date: 2012-06-30
+slides_url: 'https://github.com/alexmcpherson/jquery-talk'
+video_url: 'http://www.youtube.com/watch?v=juRtEEsHI9E'
+video_embed: '<iframe width="853" height="480" src="//www.youtube.com/embed/juRtEEsHI9E?rel=0" frameborder="0" allowfullscreen></iframe>'
+date:   2012-06-30
+categories: 'talk'
+background-image: 'san-francisco.jpg'
+---
+
+This talk was given soon after jQuery added `$.Deferred`'s in 1.5. I had used them a lot at [Quick Left](http://www.quickleft.com) and discovered some helpful use cases for them that may not have been obvious and figured they were worth sharing.
+
+The talk was [well rated](http://speakerrate.com/talks/11861-i-promise-to-show-you-when-to-use-deferreds-in-creative-ways) and continues to generate positive feedback.
+
+<blockquote class="twitter-tweet" lang="en"><p>Solving my js issues with callback hell using jQuery deferred objects thanks to <a href="https://twitter.com/alexmcpherson">@alexmcpherson</a>&#39;s super helpful talk. <a href="http://t.co/UYAxTuqFPl">http://t.co/UYAxTuqFPl</a></p>&mdash; Michael Stratman (@michaelstratman) <a href="https://twitter.com/michaelstratman/status/312276298884083712">March 14, 2013</a></blockquote>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+

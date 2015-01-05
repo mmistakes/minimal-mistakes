@@ -1,0 +1,28 @@
+---
+layout: talk
+title:  "jQueryTO: Widening Your JavaScript Pyramid"
+location: "Toronto, Canada"
+delivery_date: 2013-03-03
+slides_url: 'https://github.com/alexmcpherson/jqueryTO-talk'
+video_url: 'http://www.youtube.com/watch?v=kwSVWlzEefE'
+video_embed: '<iframe width="853" height="480" src="//youtube.com/watch?v=kwSVWlzEefE?rel=0" frameborder="0" allowfullscreen></iframe>'
+date:   2013-03-03
+categories: 'talk'
+background-image: 'toronto.png'
+---
+
+My <a href="http://jqueryto.com/2013/#schedule">talk</a> here was a warmup for later presentations about how to build a wide base for your JavaScript applications.
+
+The metaphor I went after was: if you want to build your pyramid high (lots of functionality) you need a wider base to support it (modules, MVC, templating, routers). This really resonated with people at the conference, because a lot of developers know their code has grown too big for their current setup, but maybe don't know what tools would alleviate their pain points.
+
+This is the talk to help them out! It wasn't filmed, but the more refined version of the presentation was delivered at <a href="http://www.youtube.com/watch?v=kwSVWlzEefE">jQuery Portland</a> later in 2013.
+
+<blockquote class="twitter-tweet" lang="en"><p>srsly, <a href="https://twitter.com/alexmcpherson">@alexmcpherson</a> it&#39;s killing it in this session! love the piece by piece approach he advocates <a href="https://twitter.com/hashtag/jQueryTO?src=hash">#jQueryTO</a></p>&mdash; Derick Bailey (@derickbailey) <a href="https://twitter.com/derickbailey/status/308254080306921472">March 3, 2013</a></blockquote>
+
+<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/alexmcpherson">@alexmcpherson</a> just crushed his talk on JavaScript application organization and scalability. Well done, really enjoyed. <a href="https://twitter.com/hashtag/JQueryTO?src=hash">#JQueryTO</a></p>&mdash; Dan Soppelsa (@SoupBowlWeb) <a href="https://twitter.com/SoupBowlWeb/status/308256004783607808">March 3, 2013</a></blockquote>
+
+<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/alexmcpherson">@alexmcpherson</a> best talk thus far, IMHO. <a href="https://twitter.com/hashtag/jQueryTO?src=hash">#jQueryTO</a></p>&mdash; Eric Jimenez (@Panaminion) <a href="https://twitter.com/Panaminion/status/308255093340401664">March 3, 2013</a></blockquote>
+
+<blockquote class="twitter-tweet" lang="en"><p>I remember seeing this talk <a href="https://twitter.com/jQueryTO">@jQueryTO</a> and it changed the way I write JS <a href="http://t.co/zGyfN8UdN7">http://t.co/zGyfN8UdN7</a> <a href="https://twitter.com/alexmcpherson">@alexmcpherson</a> I like to watch it still!</p>&mdash; Ryan Christiani (@RChristiani) <a href="https://twitter.com/RChristiani/status/355401560051826688">July 11, 2013</a></blockquote>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

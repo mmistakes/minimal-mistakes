@@ -1,0 +1,223 @@
+<html>
+<head>
+  <title>.vimrc Scraping Data</title>
+  <link rel="stylesheet" type="text/css" href="/assets/css/vim-styles.css">
+  <script type="text/javascript" src="/assets/js/vendor/jquery-1.9.1.min.js"></script>
+
+</head>
+<body>
+
+  <div id="container">
+    <h1>.vimrc Scraping Data</h1>
+
+    <header>
+      <h2>Methodology</h2>
+      <p>I wrote a casper.js driven <a href="https://gist.github.com/3735020">scraper</a> to download .gvimrc or .vimrc files from paginated github.com <a href="https://github.com/search?lngOverride=VimL&language=&q=vimrc&repo=&type=Repositories">search results</a>. I parsed those files into <code>User :has_many Lines</code> SQLite3 tables with ActiveRecord. I cleaned up odd characters and whitespace, and then explored using ruby via irb and the Firefox <a href="https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/">SQLite Manager</a>.</p>
+    </header>
+
+    <section class='column'>
+
+      <section>
+        <h2>Summary Statistics</h2>
+
+        <table>
+          <caption>Overview</caption>
+          <tr>
+            <th>Files Scraped</th>
+            <td>777</td>
+          </tr>
+          <tr>
+            <th>Lines Parsed</th>
+            <td>185,582</td>
+          </tr>
+          <tr>
+            <th>Max / Min Lines</th>
+            <td>1,339 / 1<sup>*</sup> (an include directive)</td>
+          </tr>
+          <tr>
+            <th>Mean Lines / File</th>
+            <td>240</td>
+          </tr>
+        </table>
+
+        <table>
+          <caption>Line Breakdown</caption>
+
+          <tr><th colspan="2">Cruft</th></tr>
+          <tr>
+            <th>Comments</th>
+            <td>44,102</td>
+          </tr>
+          <tr>
+            <th>Blank</th>
+            <td>34,367</td>
+          </tr>
+
+          <tr><th colspan="2">Settings</th></tr>
+          <tr>
+            <th><code>set</code></th>
+            <td>22,175</td>
+          </tr>
+          <tr>
+            <th><code>let</code></th>
+            <td>6,078</td>
+          </tr>
+
+          <tr><th colspan="2">Mappings</th></tr>
+          <tr>
+            <th><code>map</code></th>
+            <td>4,757</td>
+          </tr>
+          <tr>
+            <th><code>nnoremap</code></th>
+            <td>3,189</td>
+          </tr>
+          <tr>
+            <th><code>nmap</code></th>
+            <td>3,077</td>
+          </tr>
+          <tr>
+            <th><code>inoremap</code></th>
+            <td>912</td>
+          </tr>
+          <tr>
+            <th><code>noremap</code></th>
+            <td>852</td>
+          </tr>
+          <tr>
+            <th><code>imap</code></th>
+            <td>584</td>
+
+          <tr><th colspan="2">Commands</th></tr>
+          <tr>
+            <th><code>autocmd</code></th>
+            <td>2,965</td>
+          </tr>
+          <tr>
+            <th><code>au</code></th>
+            <td>1,491</td>
+          </tr>
+
+          <tr><th colspan="2">Miscellaneous</th></tr>
+          <tr>
+            <th><code>if</code></th>
+            <td>1,979</td>
+          </tr>
+          <tr>
+            <th><code>endif</code></th>
+            <td>1,946</td>
+          </tr>
+          <tr>
+            <th><code>Pathogen</code></th>
+            <td>1,525</td>
+          </tr>
+          <tr>
+            <th><code>Bundle</code></th>
+            <td>1,230</td>
+          </tr>
+          <tr>
+            <th><code>syntax</code></th>
+            <td>623</td>
+          </tr>
+          <tr>
+            <th><code>color | <br> colorscheme</code></th>
+            <td>287</td>
+          </tr>
+
+        </table>
+
+      </section>
+
+     <section>
+        <h2>Selected Settings Distributions</h2>
+
+        <div class="settings-result">
+          <code>history</code>
+          <span class='spark-history'></span>
+        </div>
+
+        <div class="settings-result">
+          <code>tabstop</code>
+          <span class='spark-tabstop'></span>
+        </div>
+
+        <div class="settings-result">
+          <code>scrolloff</code>
+          <span class='spark-scrolloff'></span>
+        </div>
+
+        <div class="settings-result">
+          <code>codewidth</code>
+          <span class='spark-codewidth'></span>
+        </div>
+
+        <div class="settings-result">
+          <code>guifont</code>
+          <span class='spark-fonts'></span>
+        </div>
+
+      </section>
+
+    </section>
+
+    <section class='column'>
+
+      <section>
+        <h2>Color Findings</h2>
+
+        <table>
+          <caption>Summary</caption>
+          <tr><th>Number of Records</th><td>287</td></tr>
+          <tr><th>Number of Unique Schemes</th><td>81</td></tr>
+          <tr><th>Dark : Light</th><td>242 : 45</td></tr>
+        </table>
+
+        <table>
+          <caption>Top 5 Color Schemes</caption>
+          <tr>
+            <th>Solarized</th>
+            <td>69</td>
+          </tr>
+          <tr>
+            <th>Desert</th>
+            <td>22</td>
+          </tr>
+          <tr>
+            <th>Molokai</th>
+            <td>18</td>
+          </tr>
+          <tr>
+            <th>IR_black</th>
+            <td>15</td>
+          </tr>
+          <tr>
+            <th>Railscasts</th>
+            <td>14</td>
+          </tr>
+        </table>
+
+        <h3>Distribution</h3>
+        <div id="color-distribution"></div>
+      </section>
+
+      <section id="settings">
+        <h2>Boolean Setting Rates</h2>
+        <p>This table shows the number of files out of 777 that had the settings turned on. (full results hidden in DOM)</p>
+        <table></table>
+      </section>
+
+    </section>
+
+    <footer>
+      <h2>Conclusions</h2>
+      <p>As an amateur vim user myself I was surprised to see that some settings files would skip 'must-have' settings such as <code>hlsearch</code> (highlight search matches) and <code>autoindent</code> (carriage return matches prior line's indentation). I was hoping to find a sharp dropoff on settings, indicating that there was a core set of 'must have', or an MVP of a .vimrc, but the settings were very evenly distributed between files. I did not delve into  regression analysis to test correlation, though if anyone is interested in the data set I can provide <code>SQL</code> dumps, or the raw files.</p>
+
+      <p>Finding meaning in data is hard. My goal was to provide some descriptive numbers, curating potentially interesting parts and ignoring large swaths of the dataset. If anyone is interested in persuing more rigorous study, <a href="mailto:alex.m.mcpherson@gmail.com">drop me a line</a>, I'd love to help!</p>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="/assets/js/vendor/sparklines.js"></script>
+  <script type="text/javascript" src="/assets/js/vim-js.js"></script>
+
+</body>
+</html>
