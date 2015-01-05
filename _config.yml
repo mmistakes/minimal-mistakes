@@ -29,30 +29,18 @@ owner:
   name: Michael Rose
   avatar: bio-photo.jpg
   bio: "Just another boring, time traveling, tattooed, designer from Buffalo New York."
-  email:
   disqus-shortname: minimalmistakes
   twitter: mmistakes
   facebook: michaelrose
   google:
-    plus: #username
-    analytics: 
-    verify: 
-    ad-client: 
-    ad-slot: 
-  bing-verify: 
-  github: #username
-  stackoverflow: #http://stackoverflow.com/users/123456/username
-  linkedin: #username
-  instagram: #username
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
-  youtube: #username
-  soundcloud: #username
-  weibo: #username
+    plus: MichaelRoseDesign
+    analytics: UA-2011187-3
+    verify: UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y
+    ad-client: ca-pub-7328585512091257
+    ad-slot: 7855747535
+  bing-verify: D81F4C18A6CB3018F64D7C827D953DFD
+  github: mmistakes
+  instagram: mmistakes 
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
