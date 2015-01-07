@@ -13,7 +13,15 @@
 
 {% include _navigation.html %}
 
-{% if page.image.feature %}
+{% if page.map %}
+  <div class="image-wrap">
+    <div id="feature-map">
+    </div>
+    {% if page.map.attribution %}
+    <span class="image-credit">Map Credit: {{ page.map.attribution }}</span>
+    {% endif %}
+  </div><!-- /.image-wrap -->
+{% elsif page.image.feature %}
   <div class="image-wrap">
   <img src=
     {% if page.image.feature contains 'http' %}
@@ -34,7 +42,7 @@
   </div>
   <div id="index">
     <h1>{{ page.title }}</h1>
-    {% for post in site.posts %}  
+    {% for post in site.posts %}
     {% unless post.next %}
       <h3>{{ post.date | date: '%Y' }}</h3>
       {% else %}
@@ -63,6 +71,6 @@
 </div><!-- /.footer-wrap -->
 
 {% include _scripts.html %}
-  
+
 </body>
 </html>
