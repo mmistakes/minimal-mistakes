@@ -28,6 +28,7 @@
 var map = L.map('feature-map', {
   {% for option in page.map.options %}
     {{ option[0] }}: {{ option[1] }}
+    {% if forloop.last == false %},{% endif %}
   {% endfor %}
 })
 {% if page.map.location %}
@@ -45,5 +46,24 @@ L.tileLayer(
   {{ page.map.layer }}
 {% endif %}
 ).addTo(map);
+
+{% for marker in page.map.markers %}
+  {% if marker.location %}
+    L.marker([{{ marker.location | join: ',' }}])
+
+    {% if marker.content %}
+      .bindPopup("{{ marker.content }}")
+    {% endif %}
+
+    .addTo(map)
+
+    {% if marker.open %}
+      .openPopup({{ marker.open }})
+    {% endif %}
+    ;
+  {% endif %}
+{% endfor %}
+
+
 </script>
 {% endif %}
