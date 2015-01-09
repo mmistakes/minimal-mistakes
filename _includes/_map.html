@@ -1,0 +1,41 @@
+<script src="//cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<script>window.L || document.write('<script src="{{ site.url }}/assets/js/vendor/leaflet-0.7.3.js"><\/script>')</script>
+<script charset="utf-8">
+var map = L.map('feature-map', {
+  {% for option in page.map.options %}
+    {{ option[0] }}: {{ option[1] }}{% if forloop.last == false %},{% endif %}
+  {% endfor %}
+})
+{% if page.map.location %}
+  .setView([{{ page.map.location | join: ',' }}])
+{% endif %}
+{% if page.map.zoom %}
+  .setZoom({{ page.map.zoom }})
+{% endif %}
+;
+
+L.tileLayer(
+{% if page.map.mapboxlayer %}
+  'http://{s}.tiles.mapbox.com/v3/{{ page.map.mapboxlayer }}/{z}/{x}/{y}.png'
+{% elsif page.map.baselayer %}
+  {{ page.map.layer }}
+{% endif %}
+).addTo(map);
+
+{% for marker in page.map.markers %}
+  {% if marker.location %}
+    L.marker([{{ marker.location | join: ',' }}])
+
+    {% if marker.content %}
+      .bindPopup("{{ marker.content }}")
+    {% endif %}
+
+    .addTo(map)
+
+    {% if marker.open %}
+      .openPopup({{ marker.open }})
+    {% endif %}
+    ;
+  {% endif %}
+{% endfor %}
+</script>
