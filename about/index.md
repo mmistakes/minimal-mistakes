@@ -18,6 +18,7 @@ During these years I've worked in different Open Source projects in different la
 ## Skills
 
 **Mobile**
+
 - Setup project with an scalable structure and connect it with a **CI environment** (like travis, jenkings, wercker)
 - Interaction with **Web APIs** *(through client entities that handle remote request)*
 - **Local persistence** on databases, local app storage, ... *(experience with CoreData and Realm)*
@@ -28,10 +29,12 @@ During these years I've worked in different Open Source projects in different la
 - **Release processes** using versioning tools *(using milestones, releases, tags and branches to keep a clear vision of the release process and have everything coordinated and perfectly integrated)*
 
 **Other Skills**
+
 - Experience in **Ruby**, developed small gems wich different purposes.
 - **Javascript**: A bit of experience in Javascript, patterns and frameworks such as BackboneJS, JQuery, Underscore. Moreover I have experience using CoffeeScript as a Javascript language wrapper.
 
 **Played With**
+
 - Node, Gulp, Vagrant, Nginx, Jekyll, Octopress.
 - Regular Expressions.
 - AngularJS, Ionic Framework.
