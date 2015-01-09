@@ -16,6 +16,7 @@ The summer of 2013 I joined **Redbooth** as iOS Developer and I've been improvin
 During these years I've worked in different Open Source projects in different languages. All of them are published in Github with their respective documentation, tests, an support through issues.
 
 ## Skills
+
 **Mobile**
 - Setup project with an scalable structure and connect it with a **CI environment** (like travis, jenkings, wercker)
 - Interaction with **Web APIs** *(through client entities that handle remote request)*
