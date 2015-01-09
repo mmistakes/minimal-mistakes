@@ -38,6 +38,7 @@ During these years I've worked in different Open Source projects in different la
 - Node, Gulp, Vagrant, Nginx, Jekyll, Octopress.
 - Regular Expressions.
 - AngularJS, Ionic Framework.
+- Rails, ActiveRecord
 - Android Annotations, Loopj Async HTTP, Android TV Layout building.
 
 ## Work experience
