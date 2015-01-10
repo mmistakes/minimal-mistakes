@@ -16,7 +16,7 @@ var map = L.map('feature-map', {
 
 L.tileLayer(
 {% if page.map.mapboxlayer %}
-  'http://{s}.tiles.mapbox.com/v3/{{ page.map.mapboxlayer }}/{z}/{x}/{y}.png'
+  '//{s}.tiles.mapbox.com/v3/{{ page.map.mapboxlayer }}/{z}/{x}/{y}.png'
 {% elsif page.map.baselayer %}
   {{ page.map.layer }}
 {% endif %}
