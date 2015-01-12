@@ -41,6 +41,7 @@ owner:
   bing-verify: D81F4C18A6CB3018F64D7C827D953DFD
   github: mmistakes
   instagram: mmistakes 
+  github: mmistakes
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
