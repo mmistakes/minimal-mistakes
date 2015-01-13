@@ -15,7 +15,7 @@
 
 {% if page.map %}
   <div class="image-wrap">
-    <div id="feature-map">
+    <div id="feature-map" {% if page.map.height %}style="height: {{ page.map.height }}"{% endif %}>
     </div>
     {% if page.map.attribution %}
     <span class="image-credit">Map Credit: {{ page.map.attribution }}</span>
