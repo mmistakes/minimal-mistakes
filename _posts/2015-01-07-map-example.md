@@ -3,12 +3,13 @@ layout: post
 title: Map Example
 modified:
 categories:
-excerpt:
+excerpt: An example of a map hero-unit.
 tags: []
 image:
   feature:
 date: 2015-01-07T22:11:31-07:00
 map:
+  height: 20vw;
   mapboxlayer: examples.map-i86nkdio
   attribution: Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>
   options:
@@ -28,6 +29,7 @@ Maps are also supported as Hero Units. This is achieved by adding a `map` variab
 
 {% highlight yaml %}
 map:
+  height: 20vw;  # Optional...
   mapboxlayer: examples.map-i86nkdio
   # layer: ... #  If you want to add a non-mapbox baselayer
   attribution: Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>
