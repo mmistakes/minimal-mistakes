@@ -287,7 +287,27 @@ Any post or page that you want a *table of contents* to render insert the follow
 </section><!-- /#table-of-contents -->
 {% endhighlight %}
 
-#### Videos
+### Paragraph Indentation
+
+By default the margin below paragraphs has been removed and indent added to each. This is an intiatial design decision to mimic the look of type set in a printed book or manuscript.
+
+<figure>
+  <img src="{{ site.url }}/images/paragraph-indent.png" alt="screen shot of paragraphs with default indent style set">
+  <figcaption>Example of the default paragraph style (indented first line and bottom margin removed).</figcaption>
+</figure>
+
+To disable the indents and add spacing between paragraphs change the following line in `_sass/variables.scss` from `true !default` to `false` like so.
+
+{% highlight css %}
+$paragraph-indent: false;
+{% endhighlight %}
+
+<figure>
+  <img src="{{ site.url }}/images/paragraph-no-indent.png" alt="screen shot of paragraphs with indent style disabled">
+  <figcaption>Example of paragraphs with $paragraph-indent disabled.</figcaption>
+</figure>
+
+### Videos
 
 Video embeds are responsive and scale with the width of the main content block with the help of [FitVids](http://fitvidsjs.com/).
 
