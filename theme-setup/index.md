@@ -289,7 +289,7 @@ Any post or page that you want a *table of contents* to render insert the follow
 
 ### Paragraph Indentation
 
-By default the margin below paragraphs has been removed and indent added to each. This is an intiatial design decision to mimic the look of type set in a printed book or manuscript.
+By default the margin below paragraphs has been removed and indent added to each. This is an intentional design decision to mimic the look of type set in a printed book or manuscript.
 
 <figure>
   <img src="{{ site.url }}/images/paragraph-indent.png" alt="screen shot of paragraphs with default indent style set">
