@@ -298,6 +298,10 @@ Not sure if this only effects Kramdown or if it's an issue with Markdown in gene
 <iframe width="560" height="315" src="http://www.youtube.com/embed/PWf4WUoMXwg" frameborder="0"> </iframe>
 {% endhighlight %}
 
+### Social Sharing Links
+
+Social sharing links for Twitter, Facebook, and Google+ are included on posts/pages by default. To hide them on specific posts or pages add `share: false` to the YAML Front Matter. If you'd like to use different social networks modify `_includes/_social-share.html` to your liking. Icons are set using [Font Awesome](http://fontawesome.io).
+
 ---
 
 ## Further Customization
