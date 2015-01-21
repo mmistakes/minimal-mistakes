@@ -450,9 +450,8 @@ $button-size: 1.5rem;
 
 /* Table of contents */
 .toc {
-	display: none;
 	font-size: 95%;
-	@media #{$small} {
+	@media #{$large} {
 		display: block;
 		@include grid(12,2);
 		@include prefix(12,0.5);
@@ -503,13 +502,16 @@ $button-size: 1.5rem;
 		}
 		ul {
 			margin: 1px 0 0;
+			li a {
+				padding-left: 20px;
+			}
 		}
 	}
 }
 
 /* TOC trigger for collapsing */
 #drawer {
-	height: 100%;
+	max-height: 100%;
 	overflow: hidden;
 	&.js-hidden {
 		max-height: 0;
