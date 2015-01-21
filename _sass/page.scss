@@ -561,6 +561,58 @@ $button-size: 1.5rem;
 	}
 }
 
+/* Social sharing links */
+/* Social media brand buttons */
+.social-share {
+  margin-bottom: 0px + $doc-line-height;
+  margin-bottom: 0rem + ($doc-line-height / $doc-font-size);
+  ul, li {
+  	margin: 0;
+  	padding: 0;
+  	list-style: none;
+  }
+  li {
+  	display: inline-block;
+  }
+  $social: 
+  (facebook, $facebook-color),
+  (flickr, $flickr-color),
+  (foursquare, $foursquare-color),
+  (google-plus, $google-plus-color),
+  (instagram, $instagram-color),
+  (linkedin, $linkedin-color),
+  (pinterest, $pinterest-color),
+  (rss, $rss-color),
+  (tumblr, $tumblr-color),
+  (twitter, $twitter-color),
+  (vimeo, $vimeo-color),
+  (youtube, $youtube-color);
+  @each $socialnetwork, $color in $social {
+    .#{$socialnetwork} {
+      background: $color;
+    }    
+  }
+  a {
+	  padding: 8px 20px;
+	  text-decoration: none !important;
+	  text-transform: uppercase;
+	  @include font-rem(14);
+	  font-family: $heading-font;
+	  font-weight: 700;
+	  color: $white;
+	  opacity: 0.8;
+	  &:hover {
+	    opacity: 1;
+	  }
+	}
+	h4 {
+		@include font-rem(14);
+		margin-bottom: 10px;
+		text-transform: uppercase;
+	}
+}
+
+
 /* Footer wrapper */
 .footer-wrap {
 	@include container;
@@ -611,7 +663,6 @@ $button-size: 1.5rem;
 		@include suffix(12,3.5);
 	}
 	h4 {
-		
 		text-transform: uppercase;
 		margin-bottom: 0;
 	}
