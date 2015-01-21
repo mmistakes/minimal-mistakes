@@ -1,8 +1,17 @@
+/* ==========================================================================
+   Page layout
+   ========================================================================== */
+
 body {
 	background-color: $bodycolor;
 	font-family: $base-font;
 	color: $text-color;
 }
+
+/* 
+   Header
+   ========================================================================== */
+
 .navigation-wrapper {
 	@include container;
 	padding: 2em 0 1em;
@@ -11,6 +20,8 @@ body {
 	text-transform: uppercase;
 	@include clearfix;
 }
+
+/* Site name */
 .site-name {
 	@include grid(12,10);
 	@include prefix(12,1);
@@ -30,6 +41,8 @@ body {
 		@include prefix(12,2);
 	}
 }
+
+/* Top navigation links */
 .top-navigation {
 	@include grid(12,10);
 	@include prefix(12,1);
@@ -79,7 +92,8 @@ body {
 		}
 	}
 }
-// Navicon lines
+
+/* Animated lines for mobile nav button */
 $button-size: 1.5rem;
 @mixin navicon-line() {
 	display: inline-block;
@@ -201,6 +215,8 @@ $button-size: 1.5rem;
 	-ms-transition: max-height .4s;
 	transition: max-height .4s;
 }
+
+/* Main content */
 #main {
 	counter-reset: captions;
 	@include container;
@@ -227,6 +243,8 @@ $button-size: 1.5rem;
 		}
 	}
 }
+
+/* Index listing specific styling */
 #index {
 	@include container;
 	@include grid(12,10);
@@ -264,6 +282,8 @@ $button-size: 1.5rem;
 		}
 	}
 }
+
+/* Large feature header image */
 .image-wrap {
 	position: relative;
 	margin-bottom: 2em;
@@ -310,6 +330,8 @@ $button-size: 1.5rem;
 		}
 	}
 }
+
+/* Post byline */
 .byline {
 	clear: both;
 	font-size: 80%;
@@ -327,6 +349,8 @@ $button-size: 1.5rem;
 		border-bottom: 0 solid transparent;
 	}
 }
+
+/* Default social media links in author sidebar */
 .author-social {
   display: block;
   margin-bottom: 5px;
@@ -345,6 +369,8 @@ $button-size: 1.5rem;
 		margin-right: 5px;
 	}
 }
+
+/* Author sidebar */
 .article-author-side {
 	display: none;
 	.bio-photo {
@@ -386,6 +412,8 @@ $button-size: 1.5rem;
 		@include prefix(12,2);
 	}
 }
+
+/* Author module - mobile only */
 .article-author-bottom {
 	margin-bottom: 1em;
 	@media #{$small} {
@@ -410,6 +438,8 @@ $button-size: 1.5rem;
 		}
 	}
 }
+
+/* Post content wrapper */
 .article-wrap {
 	// Dotted line underlines for links
 	p > a,
@@ -417,6 +447,8 @@ $button-size: 1.5rem;
 		text-decoration: underline;
 	}
 }
+
+/* Table of contents */
 .toc {
 	display: none;
 	font-size: 95%;
@@ -474,6 +506,8 @@ $button-size: 1.5rem;
 		}
 	}
 }
+
+/* TOC trigger for collapsing */
 #drawer {
 	height: 100%;
 	overflow: hidden;
@@ -481,6 +515,8 @@ $button-size: 1.5rem;
 		max-height: 0;
 	}
 }
+
+/* Image grid - not used */
 .image-grid {
 	@include clearfix;
 	list-style: none;
@@ -502,6 +538,8 @@ $button-size: 1.5rem;
 		}
 	}
 }
+
+/* Recent grid - not used */
 .recent-grid {
 	@include clearfix;
 	list-style: none;
@@ -520,37 +558,8 @@ $button-size: 1.5rem;
 		margin-bottom: 1%;
 	}
 }
-.holder {
-	font-family: $heading-font;
-	a {
-		cursor: pointer;
-		margin: 0 5px;
-	}
-	a.jp-previous {
-		margin-left: 0;
-		margin-right: 15px;
-	}
-	a.jp-next {
-		margin-left: 15px;
-		margin-right: 0;
-	}
-	a.jp-current {
-		font-weight: bold;
-	}
-	a.jp-disabled, 
-	a.jp-disabled:hover {
-	}
-	a.jp-current, 
-	a.jp-current:hover,  
-	a.jp-disabled, 
-	a.jp-disabled:hover {
-		cursor: default;
-		background: none;
-	}
-	span {
-		margin: 0 5px;
-	}
-}
+
+/* Footer wrapper */
 .footer-wrap {
 	@include container;
 	@include clearfix;
@@ -582,6 +591,8 @@ $button-size: 1.5rem;
 		}
 	}
 }
+
+/* Related articles list */
 .related-articles {
 	@include grid(12,10);
 	@include prefix(12,1);
@@ -606,46 +617,11 @@ $button-size: 1.5rem;
 		margin-bottom: 0;
 	}
 }
-.footer-icons {
-	li {
-		display: inline-block;
-		padding-right: 5px;
-		a {
-			color: lighten($basecolor, 40%);
-			@include transition(.4s linear);
-			&:hover {
-				text-decoration: none;
-				border-bottom: none;
-				.icon-twitter,
-				.icon-twitter-sign {
-					color: #2aa9df;
-				}
-				.icon-facebook,
-				.icon-facebook-sign {
-					color: #3a5a98;
-				}
-				.icon-instagram,
-				.icon-instagram-sign {
-					color: #306088;
-				}
-				.icon-google-plus,
-				.icon-google-plus-sign {
-					color: #b63324;
-				}
-				.icon-lastfm,
-				.icon-lastfm-sign {
-					color: #d80049;
-				}
-				.icon-github {
-					color: #4183c4;
-				}
-			}
-		}
-	}
-}
 
-// Browser Upgrade
-// --------------------------------------------------
+/* 
+   Browser upgrade alert
+   ========================================================================== */
+
 .browser-upgrade {
 	background: #000;
 	text-align: center;
@@ -662,9 +638,10 @@ $button-size: 1.5rem;
 		}
 	}
 }
+/* 
+   Google search form
+   ========================================================================== */
 
-// Google Search
-// --------------------------------------------------
 #goog-fixurl {
 	ul {
 		list-style: none;
