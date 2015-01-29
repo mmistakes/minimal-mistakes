@@ -13,9 +13,14 @@ Previously the theme used a global author for the entire site and those attribut
 
 Start by modifying or creating a new `authors.yml` file in the `_data` folder and add your authors using the following format.
 
+<figure>
+	<a href="/images/Goals.png">><img src="/images/Goals.png">></a>
+	<figcaption><a href="http://www.flickr.com/photos/80901381@N04/7758832526/" title="Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr">Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr</a>.</figcaption>
+</figure>
+
 {% highlight html %}
 <figure class="half">
-    <a href="/images/goals.png"><img src="/images/goals.png"></a>
+    <a href="/images/Goals.png"><img src="/images/Goals.png"></a>
     <figcaption>Caption describing these two images.</figcaption>
 </figure>
 {% endhighlight %}
