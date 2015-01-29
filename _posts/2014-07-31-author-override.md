@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Author Override"
-author: billy_rick
+title: "Is Real Madrid Tierd?"
+author: F Marquez
 modified:
-excerpt: "A post to test author overrides using a data file."
+excerpt: "Author analyses game performance in La Liga."
 tags: []
 ---
 
