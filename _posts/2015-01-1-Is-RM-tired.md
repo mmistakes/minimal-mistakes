@@ -13,6 +13,13 @@ Previously the theme used a global author for the entire site and those attribut
 
 Start by modifying or creating a new `authors.yml` file in the `_data` folder and add your authors using the following format.
 
+{% highlight html %}
+<figure class="half">
+    <a href="/images/goals.png"><img src="/images/goals.png"></a>
+    <figcaption>Caption describing these two images.</figcaption>
+</figure>
+{% endhighlight %}
+
 {% highlight yaml %}
 # Authors
 
