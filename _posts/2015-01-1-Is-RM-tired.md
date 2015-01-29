@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Is Real Madrid Tierd?"
+title: "Is Real Madrid Tired?"
 author: F Marquez
 modified:
 excerpt: "Author analyses game performance in La Liga."
