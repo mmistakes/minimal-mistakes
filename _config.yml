@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title:            Site Title
+title:            ticofab.io
 locale:           en_US
-url:              
+url:
 
 
 # Jekyll configuration
@@ -26,24 +26,24 @@ kramdown:
 
 # Site owner
 owner:
-  name: Your Name
+  name: Fabio Tiriticco
   avatar: bio-photo.jpg
   bio: "Describe your self."
-  email: 
-  disqus-shortname: 
-  twitter: #username
-  facebook: #username
+  email:
+  disqus-shortname:
+  twitter: ticofab
+  facebook: ticofab
   google:
     plus: #username
-    analytics: 
-    verify: 
-    ad-client: 
-    ad-slot: 
-  bing-verify: 
-  github: #username
-  stackoverflow: #http://stackoverflow.com/users/123456/username
-  linkedin: #username
-  instagram: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: ticofab
+  stackoverflow: http://stackoverflow.com/users/1003665/ticofab
+  linkedin: ticofab
+  instagram: ticofab
   lastfm: #username
   tumblr: #username
   pinterest: #username
