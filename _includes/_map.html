@@ -1,30 +1,83 @@
+{% if page.map.location %}
+  {% assign location = site.data.locations[page.map.location] %}
+{% elsif page.location %}
+  {% assign location = site.data.locations[page.location] %}
+{% else %}
+  {% assign location = false %}
+{% endif %}
+
+{% if page.map.options %}
+  {% assign options = page.map.options %}
+{% elsif site.data.default_map_options %}
+  {% assign options = site.data.default_map_options %}
+{% endif %}
+
 <script src="//cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 <script>window.L || document.write('<script src="{{ site.url }}/assets/js/vendor/leaflet-0.7.3.js"><\/script>')</script>
 <script charset="utf-8">
+// Create map
 var map = L.map('feature-map', {
-  {% for option in page.map.options %}
+  {% for option in options %}
     {{ option[0] }}: {{ option[1] }}{% if forloop.last == false %},{% endif %}
   {% endfor %}
 })
-{% if page.map.location %}
-  .setView([{{ page.map.location | join: ',' }}])
+// Set view & zoom
+{% if location %}
+  .setView([{{ location.coordinates | join: ',' }}])
 {% endif %}
-{% if page.map.zoom %}
+{% if location.zoom %}
+  .setZoom({{ location.zoom }})
+{% elsif page.map.zoom %}
   .setZoom({{ page.map.zoom }})
+{% elsif site.data.default_map_zoom %}
+  .setZoom({{ site.data.default_map_zoom }})
 {% endif %}
 ;
 
+// Add baselayer
 L.tileLayer(
 {% if page.map.mapboxlayer %}
   '//{s}.tiles.mapbox.com/v3/{{ page.map.mapboxlayer }}/{z}/{x}/{y}.png'
 {% elsif page.map.baselayer %}
-  {{ page.map.layer }}
+  {{ page.map.baselayer }}
+{% elsif site.data.defualt_map_mapboxlayer %}
+  '//{s}.tiles.mapbox.com/v3/{{ site.data.defualt_map_mapboxlayer }}/{z}/{x}/{y}.png'
+{% elsif site.data.defualt_map_baselayer %}
+  {{ site.data.defualt_map_baselayer }}
 {% endif %}
 ).addTo(map);
 
+// Add markers
+{% if location %}
+
+  L.marker([{{ location.coordinates | join: ',' }}])
+  .bindPopup(""
+    {% if location.url %}
+      + "<a href='{{ location.url }}' {% if location.target %}target='{{ location.target }}'{% endif %} name='{{ location.name}}'>"
+    {% endif %}
+      + "<b>{{ location.name }}</b>"
+    {% if location.url %}
+      + "</a>"
+    {% endif %}
+    {% if location.address %}
+      + "<br />{{ location.address }}"
+    {% endif %}
+    {% if location.extra %}
+      + "<br />{{ location.extra }}"
+    {% endif %}
+  )
+  .addTo(map)
+
+  {% if location.open %}
+    .openPopup({{ location.open }})
+  {% else %}
+    .openPopup(true)
+  {% endif %}
+{% endif %}
+
 {% for marker in page.map.markers %}
-  {% if marker.location %}
-    L.marker([{{ marker.location | join: ',' }}])
+  {% if marker.coordinates %}
+    L.marker([{{ marker.coordinates | join: ',' }}])
 
     {% if marker.content %}
       .bindPopup("{{ marker.content }}")
