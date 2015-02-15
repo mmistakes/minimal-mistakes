@@ -22,6 +22,7 @@ map:
       open: true
     - coordinates: [51.027, -114.0523]
       content: I'm closed by default.
+#location: whitehouse  # Rather than build a map, you could place a location here -->
 ---
 
 Maps are also supported as Hero Units. This is achieved by adding a `map` variable to the post/page meta data in a fashion similar to the following:
@@ -80,7 +81,7 @@ map:
 {% endhighlight %}
 
 <br />
-If you set either a `default_map_mapboxlayer` or `default_map_baselayer` and `default_map_zoom` in the `config.yml`, you can avoid the map all together when using `location`. Additionally, any other data in `default_map_options` are passed to the map if no map options are set
+If you set create a `default_map` object in your `_config.yml` (with a `mapboxlayer` or `baselayer`, `zoom`, and optionally a collection `options`), you can avoid the map all together when using `location`. These will be overridden by any `map` attributes set in a page/post.
 
 {% highlight yaml %}
 ---

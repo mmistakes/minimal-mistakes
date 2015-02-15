@@ -1,0 +1,7 @@
+{% if page.map %}
+  {% assign map = page.map %}
+{% elsif site.default_map %}
+  {% if page.location %}
+    {% assign map = site.default_map %}
+  {% endif %}
+{% endif %}

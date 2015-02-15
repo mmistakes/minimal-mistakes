@@ -1,15 +1,15 @@
-{% if page.map.location %}
-  {% assign location = site.data.locations[page.map.location] %}
+{% if map.location %}
+  {% assign location = site.data.locations[map.location] %}
 {% elsif page.location %}
   {% assign location = site.data.locations[page.location] %}
 {% else %}
   {% assign location = false %}
 {% endif %}
 
-{% if page.map.options %}
-  {% assign options = page.map.options %}
-{% elsif site.data.default_map_options %}
-  {% assign options = site.data.default_map_options %}
+{% if map.options %}
+  {% assign options = map.options %}
+{% elsif site.data.default_map.options %}
+  {% assign options = site.data.default_map.options %}
 {% endif %}
 
 <script src="//cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
@@ -27,23 +27,23 @@ var map = L.map('feature-map', {
 {% endif %}
 {% if location.zoom %}
   .setZoom({{ location.zoom }})
-{% elsif page.map.zoom %}
-  .setZoom({{ page.map.zoom }})
-{% elsif site.data.default_map_zoom %}
-  .setZoom({{ site.data.default_map_zoom }})
+{% elsif map.zoom %}
+  .setZoom({{ map.zoom }})
+{% elsif site.data.default_map.zoom %}
+  .setZoom({{ site.data.default_map.zoom }})
 {% endif %}
 ;
 
 // Add baselayer
 L.tileLayer(
-{% if page.map.mapboxlayer %}
-  '//{s}.tiles.mapbox.com/v3/{{ page.map.mapboxlayer }}/{z}/{x}/{y}.png'
-{% elsif page.map.baselayer %}
-  {{ page.map.baselayer }}
-{% elsif site.data.defualt_map_mapboxlayer %}
-  '//{s}.tiles.mapbox.com/v3/{{ site.data.defualt_map_mapboxlayer }}/{z}/{x}/{y}.png'
-{% elsif site.data.defualt_map_baselayer %}
-  {{ site.data.defualt_map_baselayer }}
+{% if map.mapboxlayer %}
+  '//{s}.tiles.mapbox.com/v3/{{ map.mapboxlayer }}/{z}/{x}/{y}.png'
+{% elsif map.baselayer %}
+  {{ map.baselayer }}
+{% elsif site.data.default_map.mapboxlayer %}
+  '//{s}.tiles.mapbox.com/v3/{{ site.data.default_map.mapboxlayer }}/{z}/{x}/{y}.png'
+{% elsif site.data.default_map.baselayer %}
+  {{ site.data.default_map.baselayer }}
 {% endif %}
 ).addTo(map);
 
@@ -75,7 +75,7 @@ L.tileLayer(
   {% endif %}
 {% endif %}
 
-{% for marker in page.map.markers %}
+{% for marker in map.markers %}
   {% if marker.coordinates %}
     L.marker([{{ marker.coordinates | join: ',' }}])
 
