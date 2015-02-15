@@ -53,7 +53,7 @@ L.tileLayer(
   L.marker([{{ location.coordinates | join: ',' }}])
   .bindPopup(""
     {% if location.url %}
-      + "<a href='{{ location.url }}' {% if location.target %}target='{{ location.target }}'{% endif %} name='{{ location.name}}'>"
+      + "<a href='{{ location.url }}' {% if location.target %}target='{{ location.target }}{% else %}target='_blank'{% endif %} name='{{ location.name}}'>"
     {% endif %}
       + "<b>{{ location.name }}</b>"
     {% if location.url %}
