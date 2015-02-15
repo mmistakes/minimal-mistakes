@@ -13,12 +13,13 @@
 
 {% include _navigation.html %}
 
-{% if page.map %}
+{% include _map_variable.html %}
+{% if map %}
   <div class="image-wrap">
-    <div id="feature-map" {% if page.map.height %}style="height: {{ page.map.height }}"{% endif %}>
+    <div id="feature-map" {% if map.height %}style="height: {{ map.height }}"{% endif %}>
     </div>
-    {% if page.map.attribution %}
-    <span class="image-credit">Map Credit: {{ page.map.attribution }}</span>
+    {% if map.attribution %}
+    <span class="image-credit">Map Credit: {{ map.attribution }}</span>
     {% endif %}
   </div><!-- /.image-wrap -->
 {% elsif page.image.feature %}
