@@ -41,7 +41,7 @@ Experience using other software applications (e.g., MS Project, Adobe Acrobat, P
 <br>
 <br>
 
-#### [Apply for Requisition#097229 at https://jobopportunities.uchicago.edu](https://jobopportunities.uchicago.edu)
+##### [Apply for Requisition#097229 at https://jobopportunities.uchicago.edu](https://jobopportunities.uchicago.edu)
 
 <br>
 <br>
