@@ -19,6 +19,8 @@ The open-source software environment that has been developed by CDIS scientists 
 The GDC will be the nation’s most comprehensive computational facility, which will store and harmonize cancer genomic data generated through NCI-funded research programs.
 <br>
 <br>
+--- [Learn more about the Genomic Data Commons]({{site.url}}/projects/gdc) ---
+
 
 ## [Bionimbus Protected Data Cloud (PDC)]({{site.url}}/projects/pdc)
 The PDC is the first open-source, cloud-based computational platform that allows researchers authorized by NIH to compute over human genomic data in a secure and compliant fashion.  Bionimbus and related cloud-based infrastructures are used by researchers working on cancer, diabetes, and neuropsychiatric disorders.   This project is funded in part by a NIH/NCI contract that was awarded in 2013 and by an anonymous gift.

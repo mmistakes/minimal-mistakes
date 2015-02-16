@@ -40,6 +40,7 @@ Experience working in a research environment preferred.
 Experience using other software applications (e.g., MS Project, Adobe Acrobat, Photoshop or equivalent, Omnigraffle) preferred.  
 <br>
 <br>
+
 #### [Apply for Requisition#097229 at https://jobopportunities.uchicago.edu](https://jobopportunities.uchicago.edu)
 
 <br>

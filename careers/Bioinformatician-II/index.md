@@ -34,7 +34,7 @@ Experience in employing high performance computing to solve parallelizable compu
 <br>
 Experience providing bioinformatics services or other service roles preferred. 
 
-#### [Apply for Requisition#096146 at https://jobopportunities.uchicago.edu](https://jobopportunities.uchicago.edu)
+#### [Apply for Requisition#097895 at https://jobopportunities.uchicago.edu](https://jobopportunities.uchicago.edu)
 
 <br>
 <br>
