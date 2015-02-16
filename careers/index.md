@@ -8,27 +8,13 @@ image:
   feature: header3.png
 ---
 
-#### Technical Positions
+
 
 - [Bioinformatician I]({{site.url}}/careers/Bioinformatician-I)
 
 - [Bioinformatician II]({{site.url}}/careers/Bioinformatician-II)
 
-- [Software Engineer]({{site.url}}/careers/Software-Engineer)
-
-#### Director Positions
-
-- [Director of Security]({{site.url}}/careers/Director-of-Security)
-
-- [Director of Business Development]({{site.url}}/careers/Director-of-Business-Development)
-
-#### Administrative Positions
-
-- [Project Manager]({{site.url}}/careers/Project-Manager)
-
 - [Executive Assistant]({{site.url}}/careers/Executive-Assistant)
-
-#### Other
 
 - [Student Opportunities]({{site.url}}/careers/Student-Opportunities)
 

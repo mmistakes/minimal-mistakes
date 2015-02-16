@@ -15,8 +15,8 @@ The open-source software environment that has been developed by CDIS scientists 
 <br>
 <br>
 
-## Genomic Data Commons (GDC)
-Coming soon.
+## [Genomic Data Commons (GDC)]({{site.url}}/projects/gdc)
+The GDC will be the nation’s most comprehensive computational facility, which will store and harmonize cancer genomic data generated through NCI-funded research programs.
 <br>
 <br>
 

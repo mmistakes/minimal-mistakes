@@ -37,7 +37,11 @@ Experience and knowledge of security polices, procedures and controls; security 
 Knowledge of HIPAA Privacy and Security regulations preferred.  
 <br>
 <br>
+<<<<<<< Updated upstream:careers/Director-of-Security/index.md
 #### [Apply for Requisition 097435 at https://jobopportunities.uchicago.edu](https://jobopportunities.uchicago.edu)
+=======
+#### [Apply for Requisition#097435 at https://jobopportunities.uchicago.edu](https://jobopportunities.uchicago.edu)
+>>>>>>> Stashed changes:INACTIVE/Director-of-Security/index.md
 
 <br>
 <br>
