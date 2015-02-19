@@ -1,7 +1,7 @@
 # Site wide configuration
 
-title:            Site Title
-locale:           en_US
+title:            burij.github.io
+locale:           de_De
 url:              
 
 
@@ -26,12 +26,12 @@ kramdown:
 
 # Site owner
 owner:
-  name: Your Name
+  name: BURIVERSUM 2.0
   avatar: bio-photo.jpg
-  bio: "Describe your self."
-  email: 
+  bio: minimalistische persönlichkeitszentrale
+  email: mail@burij.de
   disqus-shortname: 
-  twitter: #username
+  twitter: burij
   facebook: #username
   google:
     plus: #username
@@ -40,7 +40,7 @@ owner:
     ad-client: 
     ad-slot: 
   bing-verify: 
-  github: #username
+  github: burij
   stackoverflow: #http://stackoverflow.com/users/123456/username
   linkedin: #username
   instagram: #username
