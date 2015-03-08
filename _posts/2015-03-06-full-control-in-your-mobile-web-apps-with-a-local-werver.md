@@ -41,7 +41,7 @@ Why not having a kind of native controller controller that decided **when and ho
 
 The example below shows a config of the server to serve files and proxy some calls:
 
-```objc
+{% highlight objc %}
 - (void)setupServerHandlers:(NSString*)frontendPath
 {
     [self addGETHandlerForBasePath:@"/a/"
@@ -55,7 +55,6 @@ The example below shows a config of the server to serve files and proxy some cal
     [self addAPIHandlerForRequestMethod:@"PATCH"];
     [self addAPIHandlerForRequestMethod:@"DELETE"];
 }
-
 
 #pragma mark - Custom Setters
 
@@ -86,7 +85,7 @@ The example below shows a config of the server to serve files and proxy some cal
                 [dataTask resume];
             }];
 }
-```
+{% endhighlight %}
 
 As you can see in case of being an static file we can directly specify the local path where the files has to be read (we have to ensure the folders tree is the right one) and in case of the API we proxy the requests that match a regular expression and manage them using a web client, that in that case is AFNetworking. **And the magic works!**
 
