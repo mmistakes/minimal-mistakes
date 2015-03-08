@@ -6,8 +6,8 @@ modified: 2015-03-06
 tags: [gcdwebserver, 8fit, frontend manager, gulp]
 comments: true
 image:
-  feature: munduk_header.jpg
-  credit: Pedro Piñera
+  feature: 8fit_beach_workout.png
+  credit: 8fit Super Hero Workouts
 sitemap   :
   priority : 0.5
   isfeatured : 0
