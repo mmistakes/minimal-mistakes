@@ -1,15 +1,15 @@
 # Site wide configuration
 
-title:            Site Title
+title:            Programmer Things
 locale:           en_US
-url:              
+url:              http://programmerthings.github.io
 
 
 # Jekyll configuration
 
 permalink:   /:categories/:title/
 markdown:    kramdown
-highlighter: pygments
+highlighter: rouge
 sass:
   sass_dir: _sass
   style: compressed
@@ -26,12 +26,12 @@ kramdown:
 
 # Site owner
 owner:
-  name: Your Name
+  name: Karthik Chintala
   avatar: bio-photo.jpg
   bio: "Describe your self."
   email: 
   disqus-shortname: 
-  twitter: #username
+  twitter: #nani938
   facebook: #username
   google:
     plus: #username
