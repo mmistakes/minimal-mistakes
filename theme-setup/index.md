@@ -4,15 +4,9 @@ title: Theme Setup
 modified: 2014-07-31T13:23:02.362000-04:00
 excerpt: "Instructions on how to install and customize the Jekyll theme Minimal Mistakes."
 image:
-<<<<<<< HEAD
   feature: CDIS-logo.png
   credit: 
   creditlink: 
-=======
-  feature: sample-image-3.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
->>>>>>> FETCH_HEAD
 ---
 
 {% include _toc.html %}
@@ -227,7 +221,6 @@ image:
 ### Thumbnails for OG and Twitter Cards
 
 Feature and thumbnail images are used by [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) as well. If you don't assign a thumbnail the default graphic *(default-thumb.png)* is used. I'd suggest changing this to something more meaningful --- your logo or avatar are good options.
-<<<<<<< HEAD
 
 **Pro-Tip**: You need to [apply for Twitter Cards](https://dev.twitter.com/docs/cards) before they will begin showing up when links to your site are shared.
 {:.notice}
@@ -266,8 +259,6 @@ To assign Billy Rick as an author for our post. We'd add the following YAML fron
 {% highlight yaml %}
 author: billy_rick
 {% endhighlight %}
-=======
->>>>>>> FETCH_HEAD
 
 **Pro-Tip**: You need to [apply for Twitter Cards](https://dev.twitter.com/docs/cards) before they will begin showing up when links to your site are shared.
 {:.notice}

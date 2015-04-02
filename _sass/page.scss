@@ -14,7 +14,6 @@ body {
 
 .navigation-wrapper {
 	@include container;
-<<<<<<< HEAD
         width:100%;
     @media #{$small} {
         width:66.66666667%;
@@ -26,9 +25,6 @@ body {
         width:37.5%;
     }
 	padding: 2em 0 0;
-=======
-	padding: 2em 0 1em;
->>>>>>> FETCH_HEAD
 	font-family: $heading-font;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -322,15 +318,9 @@ $button-size: 1.5rem;
 		@media #{$small} {
 			left: 16.6666666%;
 		}
-<<<<<<< HEAD
         @media #{$medium} {
             left:25%;
         }
-=======
-		@media #{$large} {
-			border-width: 20px;
-		}
->>>>>>> FETCH_HEAD
 		@media #{$x-large} {
 			left: 31.25%;
 		}
