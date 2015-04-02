@@ -39,7 +39,7 @@ $(function() {
 // Table of Contents toggle
 $(function() {
   $(".toc h3").click(function () {
-    $("#drawer").toggleClass("hidden");
+    $("#drawer").toggleClass("js-hidden");
   });
 });
 

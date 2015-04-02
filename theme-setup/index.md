@@ -4,20 +4,18 @@ title: Theme Setup
 modified: 2014-07-31T13:23:02.362000-04:00
 excerpt: "Instructions on how to install and customize the Jekyll theme Minimal Mistakes."
 image:
+<<<<<<< HEAD
   feature: CDIS-logo.png
   credit: 
   creditlink: 
+=======
+  feature: sample-image-3.jpg
+  credit: WeGraphics
+  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+>>>>>>> FETCH_HEAD
 ---
 
-<section id="table-of-contents" class="toc">
-  <header>
-    <h3>Overview</h3>
-  </header>
-<div id="drawer" markdown="1">
-*  Auto generated table of contents
-{:toc}
-</div>
-</section><!-- /#table-of-contents -->
+{% include _toc.html %}
 
 ## Installation
 
@@ -41,6 +39,22 @@ If you want to use Minimal Mistakes with an existing Jekyll site follow these st
 
 **Pro-tip:** Delete the `gh-pages` branch after cloning and start fresh by branching off `master`. There is a bunch of garbage in `gh-pages` used for the theme's demo site that I'm guessing you won't want.
 {: .notice}
+
+---
+
+## Running Jekyll
+
+If `jekyll build` and `jekyll serve` throw errors you may have to run Jekyll with `bundled exec` instead.
+
+> In some cases, running executables without bundle exec may work, if the executable happens to be installed in your system and does not pull in any gems that conflict with your bundle.
+>
+>However, this is unreliable and is the source of considerable pain. Even if it looks like it works, it may not work in the future or on another machine.
+
+{% highlight text %}
+bundle exec jekyll build
+
+bundle exec jekyll serve
+{% endhighlight %}
 
 ---
 
@@ -110,7 +124,7 @@ Examples:
 {% highlight yaml %}
 url: http://mmistakes.github.io/minimal-mistakes
 url: http://localhost:4000
-url: http://mademistakes.com
+url: //cooldude.github.io
 url: 
 {% endhighlight %}
 
@@ -132,9 +146,9 @@ To set what links appear in the top navigation edit `_data/navigation.yml`. Use 
 
 ---
 
-## Adding New Content
+## Adding New Content with Octopress
 
-Install the [Octopress](https://github.com/octopress/octopress) gem if it isn't already.
+While completely optional, I've included Octopress and some starter templates to automate the creation of new posts and pages. To take advantage of it start by installing the [Octopress](https://github.com/octopress/octopress) gem if it isn't already.
 
 {% highlight bash %}
 $ gem install octopress --pre
@@ -213,6 +227,47 @@ image:
 ### Thumbnails for OG and Twitter Cards
 
 Feature and thumbnail images are used by [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) as well. If you don't assign a thumbnail the default graphic *(default-thumb.png)* is used. I'd suggest changing this to something more meaningful --- your logo or avatar are good options.
+<<<<<<< HEAD
+
+**Pro-Tip**: You need to [apply for Twitter Cards](https://dev.twitter.com/docs/cards) before they will begin showing up when links to your site are shared.
+{:.notice}
+
+### Author Override
+
+By making use of data files you can assign different authors for each post.
+
+Start by modifying `authors.yml` file in the `_data` folder and add your authors using the following format.
+
+{% highlight yaml %}
+# Authors
+
+billy_rick:
+  name: Billy Rick
+  web: http://thewhip.com
+  email: billy@rick.com
+  bio: "What do you want, jewels? I am a very extravagant man."
+  avatar: bio-photo-2.jpg
+  twitter: extravagantman
+  google:
+    plus: +BillyRick
+
+cornelius_fiddlebone:
+  name: Cornelius Fiddlebone
+  email: cornelius@thewhip.com
+  bio: "I ordered what?"
+  avatar: bio-photo.jpg
+  twitter: rhymeswithsackit
+  google:
+    plus: +CorneliusFiddlebone
+{% endhighlight %}
+
+To assign Billy Rick as an author for our post. We'd add the following YAML front matter to a post:
+
+{% highlight yaml %}
+author: billy_rick
+{% endhighlight %}
+=======
+>>>>>>> FETCH_HEAD
 
 **Pro-Tip**: You need to [apply for Twitter Cards](https://dev.twitter.com/docs/cards) before they will begin showing up when links to your site are shared.
 {:.notice}
@@ -252,26 +307,35 @@ To assign Billy Rick as an author for our post. We'd add the following YAML fron
 author: billy_rick
 {% endhighlight %}
 
-### Table of Contents
+### Kramdown Table of Contents
 
-Any post or page that you want a *table of contents* to render insert the following HTML in your post before the actual content. [Kramdown will take care of the rest](http://kramdown.rubyforge.org/converter/html.html#toc) and convert all headlines into a contents list.
-
-**PS:** The TOC is hidden on small devices because I haven't gotten around to optimizing it. For now it only appears on larger screens (tablet and desktop).
-{: .notice}
+To include an auto-generated **table of contents** for posts and pages, add the following `_include` before the actual content. [Kramdown will take care of the rest](http://kramdown.rubyforge.org/converter/html.html#toc) and convert all headlines into list of links.
 
 {% highlight html %}
-<section id="table-of-contents" class="toc">
-  <header>
-    <h3>Overview</h3>
-  </header>
-<div id="drawer" markdown="1">
-*  Auto generated table of contents
-{:toc}
-</div>
-</section><!-- /#table-of-contents -->
+{% raw %}{% include _toc.html %}{% endraw %}
 {% endhighlight %}
 
-#### Videos
+### Paragraph Indentation
+
+By default the margin below paragraphs has been removed and indent added to each. This is an intentional design decision to mimic the look of type set in a printed book or manuscript.
+
+<figure>
+  <img src="{{ site.url }}/images/paragraph-indent.png" alt="screen shot of paragraphs with default indent style set">
+  <figcaption>Example of the default paragraph style (indented first line and bottom margin removed).</figcaption>
+</figure>
+
+To disable the indents and add spacing between paragraphs change the following line in `_sass/variables.scss` from `true !default` to `false` like so.
+
+{% highlight css %}
+$paragraph-indent: false;
+{% endhighlight %}
+
+<figure>
+  <img src="{{ site.url }}/images/paragraph-no-indent.png" alt="screen shot of paragraphs with indent style disabled">
+  <figcaption>Example of paragraphs with $paragraph-indent disabled.</figcaption>
+</figure>
+
+### Videos
 
 Video embeds are responsive and scale with the width of the main content block with the help of [FitVids](http://fitvidsjs.com/).
 
@@ -280,6 +344,10 @@ Not sure if this only effects Kramdown or if it's an issue with Markdown in gene
 {% highlight html %}
 <iframe width="560" height="315" src="http://www.youtube.com/embed/PWf4WUoMXwg" frameborder="0"> </iframe>
 {% endhighlight %}
+
+### Social Sharing Links
+
+Social sharing links for Twitter, Facebook, and Google+ are included on posts/pages by default. To hide them on specific posts or pages add `share: false` to the YAML Front Matter. If you'd like to use different social networks modify `_includes/_social-share.html` to your liking. Icons are set using [Font Awesome](http://fontawesome.io).
 
 ---
 
