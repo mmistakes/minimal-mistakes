@@ -1,0 +1,35 @@
+---
+layout: page
+title: Funding Opportunities
+tags: [about, Jekyll, theme, responsive]
+modified: 2014-08-08T20:53:07.573882-04:00
+comments: true
+image:
+  feature: header3.png
+  thumb: favicon.jpg
+---
+
+---
+
+The Center for Data Intensive Science provides funding and support to University of Chicago researchers for projects leveraging data science with data clouds and data commons.  CDIS offers a collaborative approach to stimulate data-driven research across disciplines, defuse technological barriers,  and promote discovery through informatics.
+<br>
+<br>
+<br>
+*Pilot projects for the current period have been awarded.  Application information for the next award period will be posted in May 2015.*
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

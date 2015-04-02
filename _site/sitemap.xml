@@ -4,155 +4,169 @@
   
   
   <url>
-    <loc>http://cdis.uchicago.edu/projects/gdc/</loc>
-    <lastmod>2015-02-17T11:30:10-06:00</lastmod>
+    <loc>http://localhost:4000//resources/gdc/</loc>
+    <lastmod>2015-04-02T12:47:35-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://cdis.uchicago.edu/careers/Bioinformatician-I/</loc>
-    <lastmod>2015-02-17T11:30:10-06:00</lastmod>
+    <loc>http://localhost:4000//careers/Bioinformatician-II/</loc>
+    <lastmod>2015-04-02T12:47:35-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://cdis.uchicago.edu/careers/Executive-Assistant/</loc>
-    <lastmod>2015-02-17T11:30:10-06:00</lastmod>
+    <loc>http://localhost:4000//education/</loc>
+    <lastmod>2015-04-02T12:47:35-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://cdis.uchicago.edu/about/</loc>
-    <lastmod>2015-02-17T11:30:10-06:00</lastmod>
+    <loc>http://localhost:4000//contact/</loc>
+    <lastmod>2015-04-02T12:47:35-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://cdis.uchicago.edu/contact/</loc>
-    <lastmod>2015-02-17T11:30:10-06:00</lastmod>
+    <loc>http://localhost:4000//careers/Executive-Assistant/</loc>
+    <lastmod>2015-04-02T12:47:35-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://cdis.uchicago.edu/careers/Student-Opportunities/</loc>
-    <lastmod>2015-02-17T11:30:10-06:00</lastmod>
+    <loc>http://localhost:4000//INACTIVE/D-Bus-Dev/</loc>
+    <lastmod>2015-04-02T12:47:35-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://cdis.uchicago.edu/INACTIVE/D-Bus-Dev/</loc>
-    <lastmod>2015-02-17T11:30:10-06:00</lastmod>
+    <loc>http://localhost:4000//INACTIVE/Linux-Systems-Administrator/</loc>
+    <lastmod>2015-04-02T12:47:35-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://cdis.uchicago.edu/INACTIVE/Director-of-Security/</loc>
-    <lastmod>2015-02-17T11:30:10-06:00</lastmod>
+    <loc>http://localhost:4000//INACTIVE/Project-Manager/</loc>
+    <lastmod>2015-04-02T12:47:35-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://cdis.uchicago.edu/INACTIVE/Software-Engineer/</loc>
-    <lastmod>2015-02-17T11:30:10-06:00</lastmod>
+    <loc>http://localhost:4000//INACTIVE/Software-Engineer/</loc>
+    <lastmod>2015-04-02T12:47:35-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://cdis.uchicago.edu/projects/</loc>
-    <lastmod>2015-02-17T11:30:10-06:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>http://cdis.uchicago.edu/INACTIVE/Linux-Systems-Administrator/</loc>
-    <lastmod>2015-02-17T11:30:10-06:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>http://cdis.uchicago.edu/projects/pdc/</loc>
-    <lastmod>2015-02-17T11:30:10-06:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>http://cdis.uchicago.edu/theme-setup/</loc>
-    <lastmod>2015-02-17T11:30:10-06:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>http://cdis.uchicago.edu/INACTIVE/IS%20Specialist/</loc>
-    <lastmod>2015-02-17T11:30:10-06:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>http://cdis.uchicago.edu/posts/</loc>
-    <lastmod>2015-02-17T11:30:10-06:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>http://cdis.uchicago.edu/careers/Bioinformatician-II/</loc>
-    <lastmod>2015-02-17T11:30:10-06:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>http://cdis.uchicago.edu/</loc>
-    <lastmod>2015-02-17T11:30:10-06:00</lastmod>
+    <loc>http://localhost:4000//</loc>
+    <lastmod>2015-04-02T12:47:35-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
-    <loc>http://cdis.uchicago.edu/INACTIVE/Financial-Administrator/</loc>
-    <lastmod>2015-02-17T11:30:10-06:00</lastmod>
+    <loc>http://localhost:4000//resources/</loc>
+    <lastmod>2015-04-02T12:47:35-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://cdis.uchicago.edu/projects/osdc/</loc>
-    <lastmod>2015-02-17T11:30:10-06:00</lastmod>
+    <loc>http://localhost:4000//careers/Bioinformatician-I/</loc>
+    <lastmod>2015-04-02T12:47:35-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://cdis.uchicago.edu/careers/</loc>
-    <lastmod>2015-02-17T11:30:10-06:00</lastmod>
+    <loc>http://localhost:4000//resources/pdc/</loc>
+    <lastmod>2015-04-02T12:47:35-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://cdis.uchicago.edu/projects/bcc/</loc>
-    <lastmod>2015-02-17T11:30:10-06:00</lastmod>
+    <loc>http://localhost:4000//theme-setup/</loc>
+    <lastmod>2015-04-02T12:47:35-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://cdis.uchicago.edu/INACTIVE/Project-Manager/</loc>
-    <lastmod>2015-02-17T11:30:10-06:00</lastmod>
+    <loc>http://localhost:4000//careers/</loc>
+    <lastmod>2015-04-02T12:47:35-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000//pilots/</loc>
+    <lastmod>2015-04-02T12:47:35-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000//funding/</loc>
+    <lastmod>2015-04-02T12:47:35-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000//INACTIVE/Director-of-Security/</loc>
+    <lastmod>2015-04-02T12:47:35-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000//posts/</loc>
+    <lastmod>2015-04-02T12:47:35-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000//about/</loc>
+    <lastmod>2015-04-02T12:47:35-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000//resources/osdc/</loc>
+    <lastmod>2015-04-02T12:47:35-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000//INACTIVE/IS%20Specialist/</loc>
+    <lastmod>2015-04-02T12:47:35-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000//resources/bcc/</loc>
+    <lastmod>2015-04-02T12:47:35-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000//INACTIVE/Financial-Administrator/</loc>
+    <lastmod>2015-04-02T12:47:35-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

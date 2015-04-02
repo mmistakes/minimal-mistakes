@@ -8,6 +8,8 @@ image:
   feature: header3.png
 ---
 
+---
+
 #### Requisition 097895
 
 The Bioinformatician will design and implement bioinformatics services for faculty for projects in the Center for Data Intensive Science. The Bioinfomatician will work on developing pipelines for this project, including support for high-throughput genomic technologies. 

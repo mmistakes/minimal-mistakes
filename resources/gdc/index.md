@@ -8,10 +8,9 @@ image:
   feature: header3.png
 ---
 
+---
 
 The Genomic Data Commons (GDC), which hosts cancer genomics data produced by research projects funded by the National Cancer Institute (NCI) and makes the data available to researchers around the world.  This is funded by a NIH/NCI contract that was awarded to the University of Chicago in May, 2014.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zlLz2ghdCIg" frameborder="0" allowfullscreen></iframe>
 
 ### What is the GDC?
 

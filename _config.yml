@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title:            CDIS HOME
+title:            Center for Data Intensive Science
 locale:           en_US
 url:              http://cdis.uchicago.edu
 
@@ -26,7 +26,7 @@ kramdown:
 # Site owner
 owner:
   name:
-  avatar:
+  avatar: 
   bio:
   email:
   disqus-shortname:
@@ -39,8 +39,8 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
-  stackoverflow: #http://stackoverflow.com/users/123456/username
+  github: #LabAdvComp
+  stackoverflow: #http://careers.stackoverflow.com/company/university-of-chicago-cdis
   linkedin: #username
   instagram: #username
   lastfm: #username

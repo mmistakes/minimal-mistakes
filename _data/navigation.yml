@@ -1,14 +1,19 @@
 # Site navigation links
 
-- title: About
-  url: /about/
+- title: Pilots
+  url: /pilots/
   
-- title: Projects
-  url: /projects/
+- title: Funding
+  url: /funding/
+  
+- title: Resources
+  url: /resources/
+  
+- title: Education
+  url: /education/    
   
 - title: Careers
   url: /careers/
 
-- title: Contact 
-  url: /contact/
-
+- title: About 
+  url: /about/

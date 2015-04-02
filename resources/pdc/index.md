@@ -8,9 +8,9 @@ image:
   feature: header3.png
 ---
 
-The Bionimbus Protected Data Cloud (PDC), which is the first open-source cloud-based computational platform that allows researchers authorized by NIH to compute over human genomic data in a secure and compliant fashion.  Bionimbus and related cloud-based infrastructure is used by researchers working on cancer, diabetes and neuropsychiatric disorders.   This is funded in part by a NIH/NCI contract that was awarded in 2013 and by an anonymous gift.
+---
 
-CDIS is collaborating with the Open Cloud Consortium, which is a 501(c)(3) not-for-profit corporation, on two projects providing cloud based infrastructure supporting data scientists:  
+The Bionimbus Protected Data Cloud (PDC) is the first open-source cloud-based computational platform that allows researchers authorized by NIH to compute over human genomic data in a secure and compliant fashion.  Bionimbus and related cloud-based infrastructure is used by researchers working on cancer, diabetes and neuropsychiatric disorders.   
 
 ### What is the Bionimbus PDC?
 
@@ -23,6 +23,16 @@ Currently, to analyze genomic data requires comparing it to other genomic datase
 ### How is the Bionimbus PDC transformational?
 
 With the Bionimbus PDC, users have been been authorized to analyze particular datasets from NIH’s dbGaP, simply use their NIH login credentials (the same credentials they use to submit grants), select the data they wish to analyze, select the tools they which to use (this is done by selecting a virtual environment to work in that contains the tools they need), and begin analyzing the data.   This can be done in less than five minutes, instead of the months to weeks without a cloud-based technology like the Bionimbus PDC.
+<br>
+<br>
+<br>
 
-
+####[Visit the Bionimbus PDC Console](https://bionimbus-pdc.opensciencedatacloud.org/)
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
  
