@@ -1,0 +1,134 @@
+* {
+vertical-align: baseline;
+font-weight: inherit;
+font-family: inherit;
+font-style: inherit;
+font-size: 100%;
+border: 0 none;
+outline: 0;
+padding: 0;
+margin: 0;
+box-sizing:border-box;
+-webkit-box-sizing: border-box; 
+-moz-box-sizing: border-box;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+header,.main,footer{
+	padding:0em 8em;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+header nav {
+	width:100%;
+}
+header nav .logo {
+	display: inline-block;
+}
+header nav .logo a{
+	width:250px;
+	display: block;
+	padding-top:15px;
+	padding-bottom: 15px;
+	border-bottom: 8px solid white;
+	height: 80px;
+	cursor: pointer;
+}
+header ul{
+	display: block;
+	float: right;
+	font-size: 0.9em;
+}
+header nav ul li {
+	display: inline-block;
+}
+header nav ul li a{
+	display: block;
+	margin-left: 1em;
+	color: #565656;
+	padding-top:28px;
+	padding-bottom: 25px;
+	border-bottom: 8px solid white;
+	cursor: pointer;
+}
+header .active {
+	border-bottom: 8px solid #C1C0C0 !important;
+}
+header nav .logo a:hover, header nav ul li a:hover {
+	border-bottom: 8px solid #C1C0C0;
+	transition:0.2s ease-in-out;
+}
+img {
+	width:100%;
+}
+h1 {
+	font-size:2em;
+	margin-bottom: 0.5em;
+}
+.main {
+	text-align:center;
+	padding: 5em;
+}
+
+article {
+	font-family: 'Lora', sans-serif;
+}
+article p {
+	color:#767676;
+}
+article a {
+	color:#963565;
+	text-decoration: none;
+}
+.middle{
+	width:50%;
+	margin:auto;
+}
+footer{
+	background:#767676;
+	overflow: hidden;
+}
+footer section{
+	overflow: hidden;
+}
+footer nav {
+	overflow: hidden;
+	float: right;
+}
+footer section.nav {
+	padding: 4em 0em 3em 0em;
+}
+footer .logo {
+	width: 400px;
+	display: inline-block;
+}
+footer nav ul {
+	vertical-align: top;
+	display: inline-block;
+	font-size: 0.8em;
+	margin-left: 20px;
+}
+footer nav ul li {
+	color: #D6D6CE;
+}
+footer nav ul li:hover{
+	color: #ffffff;
+	transition:0.5s ease-in-out;
+}
+footer .copyright {
+	border-top: 2px solid #7C7C7C;
+	padding: 1em 0em;
+	color: white;
+	font-weight: 300;
+	font-size: 0.8em;
+}
+footer	nav ul li {
+
+}

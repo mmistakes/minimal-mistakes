@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="/static/css/index.css">
+<link href='http://fonts.googleapis.com/css?family=Lora:400,400italic|Open+Sans:400italic,300,400,600,700' rel='stylesheet' type='text/css'>
+<title>CDIS - {% block title %}{% endblock %}</title>
+</head>
+<body>
+	<header>
+		<nav>
+			{% set active_page = active_page|default('index') -%}
+			<div class="logo">
+				<a href="/" {% if active_page == 'index'%} class='active' {% endif %}>
+					<img src="/static/img/logo-short.png">
+				</a>
+			</div>	
+			<ul>
+				{% set nav_bar = [
+					('/funding.html','FUNDING'),
+					('/resources.html','RESOURCES'),
+					('/education.html','EDUCATION'),
+					('/careers.html','CAREERS'),
+					('/about.html','ABOUT')
+					] %}
+				{% for href, caption in nav_bar %}
+				<li><a href="{{href}}" {% if id == active_page %} class='active' {% endif %}>{{caption}}</a></li>
+				{% endfor %}
+
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class='banner'>
+		{% block banner %}
+			<img src="/static/img/banner.png">
+
+		{% endblock %}
+		</section>
+		<div class='main'>
+		{% block main %}
+
+		{% endblock %}
+		</div>
+	</main>
+	<footer>
+		<section class='nav'>
+			<div class="logo">
+				<img src="/static/img/logo-white.png">
+			</div>
+			<nav>
+				
+				<ul>
+					{% set nav_bar = [
+					('/about.html','ABOUT'),
+					('/people.html','PEOPLE'),
+					('/contact.html','ABOUT'),
+					] %}
+				{% for href, caption in nav_bar %}
+				<li><a href="{{href}}" >{{caption}}</a></li>
+				{% endfor %}
+
+				</ul>
+				<ul>
+					{% set nav_bar = [
+					('/pilots.html','PILOTS'),
+					('/resources.html','RESOURCES'),
+					('/education.html','EDUCATION'),
+					('/funding.html','FUNDING'),
+					] %}
+				{% for href, caption in nav_bar %}
+				<li><a href="{{href}}" >{{caption}}</a></li>
+				{% endfor %}
+
+				</ul>
+			</nav>
+		</section>
+		<section class='copyright'>
+			© 2015 . Center for Data Intensive Science & The University of Chicago. 
+		</section>
+		
+
+	</footer>
+</body>
