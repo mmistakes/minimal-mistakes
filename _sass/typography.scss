@@ -2,7 +2,7 @@
    Typography
    ========================================================================== */
 
-/* 
+/*
    Headings
    ========================================================================== */
 
@@ -28,30 +28,30 @@ h6 {
 	@include font-size(14);
 }
 
-/* 
+/*
    Links
    ========================================================================== */
 
-a { 
+a {
 	text-decoration: none;
-	color: $link-color; 
-	&:visited { 
-		color: $linkcolorvisited; 
+	color: $link-color;
+	&:visited {
+		color: $linkcolorvisited;
 	}
-	&:hover { 
-		color: $linkcolorhover; 
+	&:hover {
+		color: $linkcolorhover;
 	}
-	&:focus { 
-		outline: thin dotted; 
+	&:focus {
+		outline: thin dotted;
 		color: $linkcolorfocus;
 	}
-	&:hover, 
-	&:active { 
-		outline: 0; 
+	&:hover,
+	&:active {
+		outline: 0;
 	}
 }
 
-/* 
+/*
    Figure captions
    ========================================================================== */
 
@@ -62,7 +62,7 @@ figcaption {
 	color: lighten($text-color, 10);
 }
 
-/* 
+/*
    Feature image captions
    ========================================================================== */
 
@@ -89,7 +89,7 @@ figcaption {
 	}
 }
 
-/* 
+/*
    Notices
    ========================================================================== */
 
@@ -103,7 +103,7 @@ figcaption {
 	@include rounded(3px);
 }
 
-/* 
+/*
    Blockquotes
    ========================================================================== */
 
@@ -115,7 +115,7 @@ blockquote {
 	font-style: italic;
 }
 
-/* 
+/*
    Footnotes
    ========================================================================== */
 
@@ -126,7 +126,7 @@ blockquote {
 	}
 }
 
-/* 
+/*
    Paragraphs
    ========================================================================== */
 
@@ -141,7 +141,7 @@ p {
 	}
 }
 
-/* 
+/*
    Code snippets
    ========================================================================== */
 
@@ -149,7 +149,7 @@ tt, code, kbd, samp, pre {
 	font-family: $code-font;
 }
 p,
-li { 
+li {
 	code {
 		@include font-rem(12);
 		line-height: 1.5;
