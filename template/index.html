@@ -1,32 +1,112 @@
 {% extends "base.html" %}
-{% set active_page = "index" %}
+{% set active_page = "HOME" %}
 {% block css %}
 <link rel="stylesheet" type="text/css" href="/static/css/index.css">
 {% endblock %}
 {% block title %} Home {% endblock %}
 
 
-{% block banner %}
-	<img src="/static/img/banner.png">
+{% block bannerwrapper %}
 {% endblock %}
 {% block main %}
-	<section >
-		<article class='middle'>
-			<h1>Welcome</h1>
-			<p>
+	<section class='block welcome'>
+		<div class='middle'>
+			<div>
+				<h1>Welcome</h1>
+			</div>
+			<article>
 				Housed in the Biological Sciences Division at the University of Chicago, the Center for Data Intensive Science focuses on data science and its applications to problems in biology, medicine, and health care.
 
-				Learn more about our <a href="/about.html">center</a> and our <a href="/projects.html">projects</a>. Interested in joining? We currently have several <a href="/jobs.html">job openings</a>.
-			</p>
-		</article>
+				Learn more about our <a href="/about.html">center</a> and our <a href="/resources.html">resources</a>. Interested in joining? We currently have several <a href="/jobs.html">job openings</a>.
+			</article>
+		</div>
 	</section>
-	<section class='dark'>
-		<article class='featured-projects wrapper'>
-		<h1>Featured Projects</h1>
+
+
+	<section class='block midgray'>
+
+		<div><h1>News</h1>
+		</div>
+		<div class="wrapper">
+			<div class='news'>
+				<section>
+					<div>
+						<img src="/static/img/news-1.png">
+						<article>
+							<p class='date'>11 Mar 2015</p>
+							<p>OSDC PIRE Fellowship Deadline Extended</p>
+						</article>
+					</div>
+				</section>
+				<section>
+					<div>
+						<img src="/static/img/news-4.png">
+						<article>
+							<p class='date'>09 Feb 2015</p>
+							<p>OCC Announced as a Matter Member</p>
+						</article>
+					</div>
+				</section>
+				<section>
+					<div>
+						<img src="/static/img/news-2.png">
+						<article>
+							<p class='date'>14 Jan 2015</p>
+							<p>OSDC Milestone - Over 700 Resource Allocations Granted</p>
+						</article>
+					</div>
+				</section>
+				<section>
+					<div>
+						<img src="/static/img/news-3.png">
+						<article>
+							<p class='date'>09 Feb 2015</p>
+							<p>OCC Announced as a Matter Member</p>
+						</article>
+					</div>
+				</section>
+				<section>
+					<div>
+						<img src="/static/img/news-4.png">
+						<article>
+							<p class='date'>09 Feb 2015</p>
+							<p>OCC Announced as a Matter Member</p>
+						</article>
+					</div>
+				</section>
+				<section>
+					<div>
+						<img src="/static/img/news-2.png">
+						<article>
+							<p class='date'>14 Jan 2015</p>
+							<p>OSDC Milestone - Over 700 Resource Allocations Granted</p>
+						</article>
+					</div>
+				</section>
+				<section>
+					<div>
+						<img src="/static/img/news-3.png">
+						<article>
+							<p class='date'>09 Feb 2015</p>
+							<p>OCC Announced as a Matter Member</p>
+						</article>
+					</div>
+				</section>
+
+				
+			</div>
+		</div>
+
+	</section>
+	<section class='dark block'>
+		<div class='featured-projects wrapper'>
+		<div>
+			<h1>Featured Projects</h1>
+		</div>
 			<section>
 				<div class='circle osdc'>
 					<img src="/static/img/osdc-logo.png">
-					<p>Open Science Data Cloud</p>
+					<p>Open Science <br> Data Cloud</p>
 				</div>
 			</section>
 			<section>
@@ -41,7 +121,7 @@
 					<p>Genomic Data Commons</p>
 				</div>
 			</section>
-		</article>
+		</div>
 	</section>
 </div>
 {% endblock %}

@@ -1,0 +1,41 @@
+{% extends "resources.html" %}
+{% block title %} Resources {% endblock %}
+
+{% set active_page = "RESOURCES" %}
+{% set sub_active_page = "Collaborations with OCC" %}
+
+{% block mainblock %}
+<section>
+	<div>
+		<h2>Open Science Data Cloud (OSDC)</h2>
+	</div>
+	<article>
+		<p>
+		OSDC is a large-scale science cloud deployed in 2009 that makes large datasets and cloud-computing infrastructures available to data scientists around the world.
+		</p>
+		<a href="/osdc.html#main">Learn More</a>
+	</article>
+</section>
+<section>
+	<div>
+		<h2>Project Matsu</h2>
+	</div>
+	<article>
+		<p>
+		Matsu is a collaboration between NASA and the Open Cloud Consortium to develop open source technology for cloud-based processing of satellite imagery to support the earth sciences. The OSDC is used to process Earth Observing 1 (EO-1) satellite imagery from the Advanced Land Imager and the Hyperion instruments and to make this data available to interested users. We are currently working on developing services for detecting fires and floods and getting relevant information to first responders. 
+		</p>
+		<a href="http://matsu.opensciencedatacloud.org/">Learn More</a>
+	</article>
+</section>
+<section>
+	<div>
+		<h2>Biomedical Commons Cloud (BCC)</h2>
+	</div>
+	<article>
+		<p>
+		BCC is a new Open Cloud Consortion (OCC) project allowing university, medical research centers, and companies to jointly leverage private, secure compliant clouds operated by the OCC within the context of a larger, commercial open ecosystem to facilitate discoveries in biology, medicine, and healthcare. 
+		</p>
+		<a href="/bcc.html#main">Learn More</a>
+	</article>
+</section>
+{% endblock %}

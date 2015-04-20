@@ -1,7 +1,5 @@
 .featured-projects{
 	overflow: hidden;
-	padding: 4em 8em;
-	background: #4F4F4F;
 }
 .featured-projects section{
 	float: left;
@@ -9,44 +7,122 @@
 	width: 33%;
 
 }
+.welcome {
+	background-image: url('/static/img/banner-long.JPG');
+	background-size: cover;
+}
+.welcome h1 {
+	color: white;
+}
+.welcome article {
+	color: #E4E4E4;
+
+}
+.block.dark{
+	background: #4F4F4F;
+	background-image: url('/static/img/debut_dark.png')
+}
+
+
+@-webkit-keyframes bump {
+	0% 	{margin-top: 0.5em;}
+	50%	{margin-top: 0em;} 
+	100%	{margin-top: 0.5em;}
+}
+
+@-webkit-keyframes color {
+  0%   { background: red; }
+  100% { background: blue; }
+}
+
 .featured-projects section .circle{
 	display: block;
 	margin: auto;
-	background: white;
+	background: #F9F3F3;
 	border-radius: 50%;
-	width: 260px;
-	height: 260px;
+	width: 220px;
+	height: 220px;
 	position: relative;
 	cursor: pointer;
-	transition:0.2s;
-	border: 5px solid #4F4F4F;
+	transition:0.2s ease-in-out;
+	margin-top: 1em;
+	border: 5px solid #F9F3F3;
 }
 .featured-projects section .circle:hover{
-	border: 5px solid white;
-
+	background: white;
+	border-color: white;
+	margin-top: 0.7em;
 }
 .circle img{
 	margin: auto;
 	vertical-align: middle;
-	margin-top: 85px;
+	margin-top: 80px;
 	width: 80%;
 }
 .dark h1 {
 	color: white;
 	margin-bottom: 1em;
+	border-bottom: 1px solid #707070;
 }
-.circle p {
+.featured-projects p {
 	font-size: 0.8em;
-	color: #a1a1a1;
 	text-align: right;
-	padding-right: 15px;
+	color: #696969;
+	margin-right: 25px;
 	padding-top: 5px;
+	width: 150px;
+	float: right;
 }
 .circle.gdc img {
 	width: 70%;
-	margin-top: 75px;
+	margin-top: 70px;
 }
 .circle.pdc img{
 	width: 60%;
-	margin-top: 90px;
+	margin-top: 80px;
+}
+.wrapper {
+	overflow: hidden;
+	padding: 0em 5em;
+	width: 100%;
+}
+.news {
+	white-space:nowrap;
+	overflow-x:scroll;
+	overflow-y:hidden;
+	padding-bottom: 5px;
+}
+.news section {
+	width: 25%;
+	padding: 0em 2em;
+	display: inline-block;
+	vertical-align: top;
+}
+.news section img {
+	/*border-radius: 5px 5px 0px 0px;*/
+}
+.news section >div{
+	box-shadow: 0 0 10px #DAC2C2;
+	border-radius: 10px;
+}
+.midgray h1 {
+	color: #8B8484;
+}
+.news section article{
+	background: white;
+	padding: 1em;
+	text-align: left;
+	border-radius: 0px 0px 10px 10px;
+}
+.midgray{
+	/*background: #F9F3F3;*/
+	background: white;
+}
+.date{
+	color: #dfdfdf;
+	font-size: 0.8em;
+}
+.news section p {
+	width: 100%;
+	white-space: initial;
 }

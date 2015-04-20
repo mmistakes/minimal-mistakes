@@ -11,14 +11,14 @@
 <body>
 	<header>
 		<nav>
-			{% set active_page = active_page|default('index') -%}
 			<div class="logo">
-				<a href="/" {% if active_page == 'index'%} class='active' {% endif %}>
+				<a href="/" >
 					<img src="/static/img/logo-short.png">
 				</a>
 			</div>	
 			<ul>
 				{% set nav_bar = [
+					('/','HOME'),
 					('/funding.html','FUNDING'),
 					('/resources.html','RESOURCES'),
 					('/education.html','EDUCATION'),
@@ -26,20 +26,22 @@
 					('/about.html','ABOUT')
 					] %}
 				{% for href, caption in nav_bar %}
-				<li><a href="{{href}}" {% if id == active_page %} class='active' {% endif %}>{{caption}}</a></li>
+				<li><a href="{{href}}" {% if caption == active_page %} class='active' {% endif %}>{{caption}}</a></li>
 				{% endfor %}
 
 			</ul>
 		</nav>
 	</header>
-	<main>
+	<main >
+		{% block bannerwrapper %}
 		<section class='banner'>
 		{% block banner %}
-			<img src="/static/img/banner.png">
+			<img src="/static/img/banner-long.jpg">
 
 		{% endblock %}
 		</section>
-		<div class='main'>
+		{% endblock %}
+		<div class='main' id='main'>
 		{% block main %}
 
 		{% endblock %}
@@ -56,7 +58,7 @@
 					{% set nav_bar = [
 					('/about.html','ABOUT'),
 					('/people.html','PEOPLE'),
-					('/contact.html','ABOUT'),
+					('/contact.html','CONTACT'),
 					] %}
 				{% for href, caption in nav_bar %}
 				<li><a href="{{href}}" >{{caption}}</a></li>
