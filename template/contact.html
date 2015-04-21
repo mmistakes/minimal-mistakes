@@ -1,0 +1,17 @@
+{% extends "about.html" %}
+{% set sub_active_page = "Contact" %}
+
+{% block mainblock %}
+<div class='blog'>
+	{% set contact = [
+		('Phone','73-834-0914'),
+		('Email','cdis@uchicago.edu'),
+		('Mail','900 East <br>57th Street Room 10148 <br>Chicago, IL 60637')] %}
+	{% for label, content in contact %}
+	<div class='column column-4'>{{label}}</div>
+	<div class='column column-6'>{{content}}</div>
+ 	{% endfor %}
+</div>
+	
+
+{% endblock %}

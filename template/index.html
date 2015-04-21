@@ -21,82 +21,52 @@
 			</article>
 		</div>
 	</section>
-
-
 	<section class='block midgray'>
-
 		<div><h1>News</h1>
 		</div>
-		<div class="wrapper">
-			<div class='news'>
-				<section>
-					<div>
-						<img src="/static/img/news-1.png">
-						<article>
-							<p class='date'>11 Mar 2015</p>
-							<p>OSDC PIRE Fellowship Deadline Extended</p>
-						</article>
-					</div>
-				</section>
-				<section>
-					<div>
-						<img src="/static/img/news-4.png">
-						<article>
-							<p class='date'>09 Feb 2015</p>
-							<p>OCC Announced as a Matter Member</p>
-						</article>
-					</div>
-				</section>
-				<section>
-					<div>
-						<img src="/static/img/news-2.png">
-						<article>
-							<p class='date'>14 Jan 2015</p>
-							<p>OSDC Milestone - Over 700 Resource Allocations Granted</p>
-						</article>
-					</div>
-				</section>
-				<section>
-					<div>
-						<img src="/static/img/news-3.png">
-						<article>
-							<p class='date'>09 Feb 2015</p>
-							<p>OCC Announced as a Matter Member</p>
-						</article>
-					</div>
-				</section>
-				<section>
-					<div>
-						<img src="/static/img/news-4.png">
-						<article>
-							<p class='date'>09 Feb 2015</p>
-							<p>OCC Announced as a Matter Member</p>
-						</article>
-					</div>
-				</section>
-				<section>
-					<div>
-						<img src="/static/img/news-2.png">
-						<article>
-							<p class='date'>14 Jan 2015</p>
-							<p>OSDC Milestone - Over 700 Resource Allocations Granted</p>
-						</article>
-					</div>
-				</section>
-				<section>
-					<div>
-						<img src="/static/img/news-3.png">
-						<article>
-							<p class='date'>09 Feb 2015</p>
-							<p>OCC Announced as a Matter Member</p>
-						</article>
-					</div>
-				</section>
+		{% set news = [
+			('/static/img/news/campus_tech.jpg', '11 Mar 2015', 'OCC Featured in Campus Technology','The Open Cloud Consortium is featured in an article in Campus Technology that showcases our efforts to provide the research community with the tools they need for discovery.'),
+			('/static/img/news-4.png','09 Feb 2015', 'OCC Announced as a Matter Member',"Today we're pleased to announce that the OCC has joined the Matter community. OCC staff will have a dedicated workspace in the Matter ecosystem in Chicago's historic Merchandise Mart."),
+			('/static/img/news/OSDC_video.png', '14 Jan 2015', "OSDC Milestone - Over 700 Resource Allocations Granted", "Today we're proud to announce another Open Science Data Cloud milestone. Over 700 resource allocations have been granted to researchers to use the OSDC and the list of publications that utilized the OSDC continues to grow."),
+			('/static/img/news-3.png', '09 Feb 2015', 'Genomics Data Commons @ University of Chicago Announced',
+			"The University of Chicago announced today their collaboration with the National Cancer Institute to establish the Genomic Data Commons.")] 
+		%}
+		{% set news_number = news|length %}
+		{% set slide_number = (news_number/3)|round(0,'ceil')|int %}
+		<input checked type="radio" name="slider" id="slide0">
 
-				
+		{% for n in range(1,slide_number) %}
+		<input type="radio" name="slider" id="slide{{n}}">
+		{% endfor %}
+		<div class="wrapper">
+			
+			<div class='news' style='width:{{100/3*news_number}}%'>
+
+				{% for img, date, title, article in news %}
+				<section style='width:{{100/news_number}}%'>
+					<div>
+						<img src="{{img}}">
+						<article>
+							<p class='date'>{{date}}</p>
+							<h3>{{title}}</h3>
+							<p>The Open Cloud Consortium is featured in an article in Campus Technology that showcases our efforts to provide the research community with the tools they need for discovery.</p>
+						</article>
+					</div>
+				</section>
+				{% endfor %}
 			</div>
 		</div>
-
+		<div id="active">
+			{% for n in range(slide_number) %}
+			<label class='slide{{n}} left' for="slide{{(n+1)%slide_number}}"><p><</p></label>
+			<label class='slide{{n}} right' for="slide{{(n+1)%slide_number}}"><p>></p></label>
+			{% endfor %}
+		</div>
+		<div id="controls">
+			{% for n in range(slide_number) %}
+			<label for="slide{{n}}"></label>
+			{% endfor %}
+		</div>
 	</section>
 	<section class='dark block'>
 		<div class='featured-projects wrapper'>
@@ -104,24 +74,36 @@
 			<h1>Featured Projects</h1>
 		</div>
 			<section>
-				<div class='circle osdc'>
+				<a href='/osdc.html' class='circle osdc'>
 					<img src="/static/img/osdc-logo.png">
 					<p>Open Science <br> Data Cloud</p>
-				</div>
+				</a>
 			</section>
 			<section>
-				<div class='circle pdc'>
+				<a href='/pdc.html' class='circle pdc'>
 					<img src="/static/img/pdc-logo.png">
 					<p>Bionimbus Protected Data Cloud</p>
-				</div>
+				</a>
 			</section>
 			<section>
-				<div class='circle gdc'>
+				<a href='/gdc.html' class='circle gdc'>
 					<img src="/static/img/gdc-logo.png">
 					<p>Genomic Data Commons</p>
-				</div>
+				</a>
 			</section>
 		</div>
 	</section>
 </div>
+<style type="text/css">
+{% for n in range(slide_number) %}
+#slide{{n}}:checked ~ #active label.slide{{n}}{
+	display: block;
+}
+#slide{{n}}:checked ~ #controls label:nth-child({{n+1}}){
+	background: #333;
+	border-color: #333 !important;
+}
+#slide{{n}}:checked ~ .wrapper .news { margin-left:-{{100*n}}%; }
+{% endfor %}
+</style>
 {% endblock %}

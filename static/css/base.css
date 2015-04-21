@@ -22,7 +22,11 @@ a {
 header,footer{
 	padding:0px 150px;
 }
+header{
+	overflow: hidden;
+}
 body {
+	background: white;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -44,7 +48,7 @@ header nav .logo a{
 header ul{
 	display: block;
 	float: right;
-	font-size: 0.9em;
+	font-size: 14px;
 }
 header nav ul li {
 	display: inline-block;
@@ -64,6 +68,72 @@ header {
 .banner {
 	height: 400px;
 	overflow: hidden;
+	background-size: 100%;
+	background-position-y: 0px;
+	background-attachment: fixed;
+	color: white;
+	position: relative;
+}
+.banner p{
+	position: absolute;
+	bottom: 10px;
+	left: 150px;
+	font-size: 4em;
+	font-family: 'Titillium Web';
+}
+.gallery {
+	overflow: hidden;
+}
+.row {
+	display: block;
+	overflow: hidden;
+}
+.column-3{
+	width: 33.3333333%;
+	float: left;
+	display: block;
+	padding: 10px;
+	text-align: center;
+}
+.gallery p{
+	padding-top: 10px;
+	font-weight: 300;
+	font-size: 15px;
+}
+.gallery .desc{
+	padding-top: 5px;
+	margin: 0px;
+	color: #A3A3A3;
+	opacity: 1;
+	/*margin-top: -5em;*/
+	transition:0.5 ease-in;
+	/*display: block;*/
+}
+.gallery .column:hover .desc{
+	/*opacity: 1;*/
+	/*margin-top: 0em;*/
+}
+.gallery .column img{
+	width: 100%;
+	height: 100%;
+}
+.button {
+	color: white;
+	text-decoration: none;
+	font-style: inherit;
+	border-radius: 15px;
+	background: #963565;
+	border: 1px solid #963565;
+	padding: 0px 10px;
+	text-decoration: none;
+	/* font-style: italic; */
+	border-radius: 15px;
+	border: 1px solid #963565;
+
+}
+.button:hover{
+	background: white;
+	color: #963565;
 }
 img {
 	display: block;
@@ -157,8 +227,21 @@ h1 {
 .main-block article p {
 	margin-bottom: 1em;
 }
+.column {
+	float: left;
+	display: block;
+	/*line-height: 40px;*/
+	padding-top: 12px;
+}
+.column-4 {
+	width: 40%;
+}
+.column-6 {
+	width: 60%;
+}
 article {
 	font-family: 'Lora', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
 	color:#767676;
 	line-height: 25px;
 
@@ -173,11 +256,22 @@ article a {
 article a:hover {
 	color: #60163B;
 }
+.blog {
+	overflow: hidden;
+}
+.blog img{
+	border-radius: 10px;
+	margin-top: -10px;
+	margin-bottom: 20px;
+}
 .middle{
 	width:60%;
 	margin:auto;
 	padding: 5em;
 
+}
+.middle>div{
+	margin-bottom: 3em;
 }
 .arrow-right {
 	width: 0; 

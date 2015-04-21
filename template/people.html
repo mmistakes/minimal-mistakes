@@ -1,0 +1,28 @@
+{% extends "about.html" %}
+{% set sub_active_page = "People" %}
+
+{% block mainblock %}
+<section class='gallery'>
+{% set people = [
+	('/static/img/people/robert_grossman.jpg','Robert Grossman, PhD','Director'),
+	('/static/img/people/allison_heath.png','Allison Heath, PhD','Director of Research'),
+	('/static/img/people/michael_ford.jpg','Michael Ford, CISSP, CISM','Director of Cloud Operations '),
+	('/static/img/people/piers_nash.jpg','Piers Nash, MBA, PhD', 'Director of Business Development'),
+	('/static/img/people/maria_patterson.jpg','Maria Patterson, PhD', 'Director of the Open Science Data Cloud '),
+	('/static/img/people/danielle.jpg','Danielle Troyer', 'Director of Administration')] %}
+	{% for img, name, title in people %}
+	{% if (loop.index-1)%3 == 0 %}
+	<div class='row'>
+	{% endif %}
+		<div class='column column-3'>
+			<img src="{{img}}">
+			<p>{{name}}</p>
+			<p class='desc'>{{title}}</p>
+		</div>
+	{% if (loop.index)%3 == 0 %}
+	</div> 
+	{% endif %}
+	{% endfor %}
+</section>
+
+{% endblock %}

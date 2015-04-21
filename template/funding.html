@@ -1,6 +1,15 @@
 {% extends "base.html" %}
 {% block title %} Funding {% endblock %}
-
+{% block banner %}
+	<!-- <img src="/static/img/banner-resources.jpg"> -->
+	<p>Funding</p>
+	<style type="text/css">
+	.banner{
+		background-image:url('/static/img/banner-funding.jpg');
+		color: white;
+	}
+	</style>
+{% endblock %}
 {% set active_page = "FUNDING" %}
 {% block main %}
 	<section class='block'>
