@@ -189,8 +189,7 @@
 	/*padding-top: 300px;*/
 	font-family: monospace;
 	font-size: 25px;
-	vertical-align: middle;
-	display:table-cell;
+	margin-top: 10px;
 }
 
 #active label.left{

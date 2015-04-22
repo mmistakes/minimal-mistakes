@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="/static/css/base.css">
+
+<link rel="stylesheet" type="text/css" href="/static/css/index.css">
+
+<link href='http://fonts.googleapis.com/css?family=Lora:400,400italic|Open+Sans:400italic,300,400,600,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Titillium+Web:300,600,400,400italic,700,300italic' rel='stylesheet' type='text/css'>
+<title>CDIS -  Home </title>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="logo">
+				<a href="/" >
+					<img src="/static/img/logo-short.png">
+				</a>
+			</div>	
+			<ul>
+				
+				
+				<li><a href="/"  class='active' >HOME</a></li>
+				
+				<li><a href="/funding.html" >FUNDING</a></li>
+				
+				<li><a href="/resources.html" >RESOURCES</a></li>
+				
+				<li><a href="/education.html" >EDUCATION</a></li>
+				
+				<li><a href="/careers.html" >CAREERS</a></li>
+				
+				<li><a href="/about.html" >ABOUT</a></li>
+				
+
+			</ul>
+		</nav>
+	</header>
+	<main >
+		
+
+		<div class='main' id='main'>
+		
+	<section class='block welcome'>
+		<div class='middle'>
+			<div>
+				<h1>Welcome</h1>
+			</div>
+			<article>
+				Housed in the Biological Sciences Division at the University of Chicago, the Center for Data Intensive Science focuses on data science and its applications to problems in biology, medicine, and health care.
+
+				Learn more about our <a href="/about.html">center</a> and our <a href="/resources.html">resources</a>. Interested in joining? We currently have several <a href="/careers.html">job openings</a>.
+			</article>
+		</div>
+	</section>
+	<section class='block midgray'>
+		<div><h1>News</h1>
+		</div>
+		
+		
+		
+		<input checked type="radio" name="slider" id="slide0">
+
+		
+		<input type="radio" name="slider" id="slide1">
+		
+		<div class="wrapper">
+			
+			<div class='news' style='width:133.333333333%'>
+
+				
+				<section style='width:25.0%'>
+					<div>
+						<img src="/static/img/news/campus_tech.jpg">
+						<article>
+							<p class='date'>11 Mar 2015</p>
+							<h3>OCC Featured in Campus Technology</h3>
+							<p>The Open Cloud Consortium is featured in an article in Campus Technology that showcases our efforts to provide the research community with the tools they need for discovery.</p>
+						</article>
+					</div>
+				</section>
+				
+				<section style='width:25.0%'>
+					<div>
+						<img src="/static/img/news-4.png">
+						<article>
+							<p class='date'>09 Feb 2015</p>
+							<h3>OCC Announced as a Matter Member</h3>
+							<p>The Open Cloud Consortium is featured in an article in Campus Technology that showcases our efforts to provide the research community with the tools they need for discovery.</p>
+						</article>
+					</div>
+				</section>
+				
+				<section style='width:25.0%'>
+					<div>
+						<img src="/static/img/news/OSDC_video.png">
+						<article>
+							<p class='date'>14 Jan 2015</p>
+							<h3>OSDC Milestone - Over 700 Resource Allocations Granted</h3>
+							<p>The Open Cloud Consortium is featured in an article in Campus Technology that showcases our efforts to provide the research community with the tools they need for discovery.</p>
+						</article>
+					</div>
+				</section>
+				
+				<section style='width:25.0%'>
+					<div>
+						<img src="/static/img/news-3.png">
+						<article>
+							<p class='date'>09 Feb 2015</p>
+							<h3>Genomics Data Commons @ University of Chicago Announced</h3>
+							<p>The Open Cloud Consortium is featured in an article in Campus Technology that showcases our efforts to provide the research community with the tools they need for discovery.</p>
+						</article>
+					</div>
+				</section>
+				
+			</div>
+		</div>
+		<div id="active">
+			
+			<label class='slide0 left' for="slide1"><p><</p></label>
+			<label class='slide0 right' for="slide1"><p>></p></label>
+			
+			<label class='slide1 left' for="slide0"><p><</p></label>
+			<label class='slide1 right' for="slide0"><p>></p></label>
+			
+		</div>
+		<div id="controls">
+			
+			<label for="slide0"></label>
+			
+			<label for="slide1"></label>
+			
+		</div>
+	</section>
+	<section class='dark block'>
+		<div class='featured-projects wrapper'>
+		<div>
+			<h1>Featured Projects</h1>
+		</div>
+			<section>
+				<a href='/osdc.html' class='circle osdc'>
+					<img src="/static/img/osdc-logo.png">
+					<p>Open Science <br> Data Cloud</p>
+				</a>
+			</section>
+			<section>
+				<a href='/pdc.html' class='circle pdc'>
+					<img src="/static/img/pdc-logo.png">
+					<p>Bionimbus Protected Data Cloud</p>
+				</a>
+			</section>
+			<section>
+				<a href='/gdc.html' class='circle gdc'>
+					<img src="/static/img/gdc-logo.png">
+					<p>Genomic Data Commons</p>
+				</a>
+			</section>
+		</div>
+	</section>
+</div>
+<style type="text/css">
+
+#slide0:checked ~ #active label.slide0{
+	display: table;
+}
+#slide0:checked ~ #controls label:nth-child(1){
+	background: #333;
+	border-color: #333 !important;
+}
+#slide0:checked ~ .wrapper .news { margin-left:-0%; }
+
+#slide1:checked ~ #active label.slide1{
+	display: table;
+}
+#slide1:checked ~ #controls label:nth-child(2){
+	background: #333;
+	border-color: #333 !important;
+}
+#slide1:checked ~ .wrapper .news { margin-left:-100%; }
+
+</style>
+
+		</div>
+	</main>
+	<footer>
+		<section class='nav'>
+			<div class="logo">
+				<img src="/static/img/logo-white.png">
+			</div>
+			<nav>
+				
+				<ul>
+					
+				
+				<li><a href="/about.html" >ABOUT</a></li>
+				
+				<li><a href="/people.html" >PEOPLE</a></li>
+				
+				<li><a href="/contact.html" >CONTACT</a></li>
+				
+
+				</ul>
+				<ul>
+					
+				
+				<li><a href="/pilots.html" >PILOTS</a></li>
+				
+				<li><a href="/resources.html" >RESOURCES</a></li>
+				
+				<li><a href="/education.html" >EDUCATION</a></li>
+				
+				<li><a href="/funding.html" >FUNDING</a></li>
+				
+
+				</ul>
+			</nav>
+		</section>
+		<section class='copyright'>
+			© 2015 . Center for Data Intensive Science & The University of Chicago. 
+		</section>
+		
+
+	</footer>
+</body>
