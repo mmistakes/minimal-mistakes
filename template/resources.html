@@ -9,7 +9,12 @@
 	}
 	</style>
 {% endblock %}
+{% block sub_page %}
 {% set active_page = "RESOURCES" %}
+{% endblock %}
+{% if not sub_active_page %}
+	{% set sub_active_page = "All Resources" %}
+{% endif %}
 {% block main %}
 	<section class='block'>
 		{% block sidebar %}
@@ -17,6 +22,7 @@
 				<!-- <h2><a href="/resources.html">Resources</a></h2> -->
 				<ul>
 				{% set nav_bar = [
+					('/resources','All Resources'),
 					('/protected-data-clouds.html','Protected Data Clouds'),
 					('/gdc.html','Collaborations with NCI'),
 					('/collaborations-with-open-cloud-consortium.html','Collaborations with OCC'),

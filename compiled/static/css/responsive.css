@@ -1,0 +1,6 @@
+	.news section img {
+		height: 150px;
+	}
+	.news section >div {
+		width: 250px;
+	}
