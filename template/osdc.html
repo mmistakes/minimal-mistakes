@@ -3,13 +3,17 @@
 
 {% set active_page = "RESOURCES" %}
 {% set sub_active_page = "Collaborations with OCC" %}
+{% set sub_active_url='osdc' %}
 
 {% block mainblock %}
 <div class='blog'>
 	<div class='title'>
-		<a class='icon' href='https://www.opensciencedatacloud.org'><img style='margin-top: 35px' src="/static/img/osdc-logo.png"></a>
+		<a class='icon' href='https://www.opensciencedatacloud.org'><img style='margin-top: 20px' src="/static/img/osdc-logo.png"></a>
 		<h1>Open Science Data Cloud</h1>
+		{% import 'util.html' as util %}
+	{{ util.share(sub_active_url) }}
 	</div>
+	
 <article>
 	<p>
 	The Open Science Data Cloud provides the scientific community with resources for storing, sharing, and analyzing terabyte and petabyte-scale scientific datasets. The OSDC is a data science ecosystem in which researchers can house and share their own scientific data, access complementary public datasets, build and share customized virtual machines with whatever tools necessary to analyze their data, and perform the analysis to answer their research questions. It is a one-stop shop for making scientific research faster and easier. 

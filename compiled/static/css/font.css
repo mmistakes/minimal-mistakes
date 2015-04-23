@@ -63,3 +63,18 @@
 .icon-menu:before {
 	content: "\e607";
 }
+
+.icon-googleplus:before {
+	content: "\e600";
+}
+
+.icon-facebook:before {
+	content: "\e601";
+}
+
+.icon-twitter:before {
+	content: "\e602";
+}
+.icon-share:before {
+	content: "\e603";
+}

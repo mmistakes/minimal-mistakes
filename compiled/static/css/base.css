@@ -21,7 +21,10 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
-
+h2{
+	font-size: 1.5em;
+	margin-bottom: 10px;
+}
 header{
 	overflow: hidden;
 }
@@ -44,6 +47,12 @@ header nav .logo a{
 	border-bottom: 8px solid white;
 	height: 80px;
 	cursor: pointer;
+}
+.italic {
+	font-style: italic;
+}
+.indent {
+	margin-left: 5px;
 }
 header ul{
 	display: block;
@@ -99,10 +108,12 @@ header {
 	font-weight: 300;
 	font-size: 14px;
 }
+.desc{
+	color: #A3A3A3;
+}
 .gallery .desc{
 	padding-top: 5px;
 	margin: 0px;
-	color: #A3A3A3;
 	opacity: 1;
 	/*margin-top: -5em;*/
 	transition:0.5 ease-in;
@@ -176,6 +187,9 @@ h1 {
 	top: 0px;
 	display: none;
 	padding: 28px 50px;
+}
+.icon-share {
+	cursor: auto;
 }
 .sidebar {
 	float: left;
@@ -272,8 +286,10 @@ article a:hover {
 .blog {
 	overflow: hidden;
 }
+.blog .title{
+	margin-bottom: 3em;
+}
 .blog img{
-	border-radius: 10px;
 	margin-top: -10px;
 	margin-bottom: 20px;
 }
@@ -301,27 +317,34 @@ article a:hover {
 	overflow: hidden;
 	margin-bottom: 1em;
 	padding: 5px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #dfdfdf;
 }
 .title h1 {
 	margin-left: 10px;
+	border-bottom: 0px;
 	display: inline-block;
+	vertical-align: middle;
 	margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin-right: 20px;
 }
 .icon {
 	vertical-align: middle;
-	width: 120px;
-	height: 120px;
+	width: 70px;
+	height: 70px;
 	display: inline-block;
 	box-shadow: 0 0 5px #dfdfdf;
-	padding: 10px;
-	border-radius: 50%;
+	padding: 5px;
+	border-radius: 5px;
+	margin-right: 10px;
 	transition:0.2s ease-in-out;
 }
 .icon:hover {
 	box-shadow: 0 0 10px #dfdfdf;
 }
 .icon img{
-	  margin-top: 25px;
+	  margin-top: 13px;
 }
 footer{
 	background:#767676;
@@ -367,4 +390,42 @@ footer .copyright {
 }
 footer	nav ul li {
 
+}
+.share {
+	margin-top: 0px;
+	display: inline-block;
+	padding: 10px;
+	vertical-align: middle;
+	/*margin-left: 10px;*/
+	/*margin-top: 20px;*/
+	vertical-align: middle;
+
+}
+.share:hover .share-detail{
+	display: inline;
+}
+.share-detail {
+	/*display: none;*/
+	display: inline;
+}
+.share a, .share p{
+	color: #B2A7AC;
+}
+.share a{
+	/*color: #B9B9B9;*/
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: bottom;
+	margin-right: 5px;
+}
+.share a:hover{
+	color:#963565;
+}
+.share p {
+	vertical-align: bottom;
+	display: inline-block;
+	line-height: 16px;
+	font-size: 16px;
+	/*color: #555;*/
+	margin-right: 10px;
 }
