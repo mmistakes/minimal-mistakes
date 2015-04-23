@@ -1,17 +1,7 @@
 {% extends "base.html" %}
 {% block title %} Resources {% endblock %}
-{% block banner %}
-	<!-- <img src="/static/img/banner-resources.jpg"> -->
-	<p>Resources</p>
-	<style type="text/css">
-	.banner{
-		background-image:url('/static/img/banner-resources.jpg');
-	}
-	</style>
-{% endblock %}
-{% block sub_page %}
+
 {% set active_page = "RESOURCES" %}
-{% endblock %}
 {% if not sub_active_page %}
 	{% set sub_active_page = "All Resources" %}
 {% endif %}
@@ -22,7 +12,7 @@
 				<!-- <h2><a href="/resources.html">Resources</a></h2> -->
 				<ul>
 				{% set nav_bar = [
-					('/resources','All Resources'),
+					('/resources.html','All Resources'),
 					('/protected-data-clouds.html','Protected Data Clouds'),
 					('/gdc.html','Collaborations with NCI'),
 					('/collaborations-with-open-cloud-consortium.html','Collaborations with OCC'),

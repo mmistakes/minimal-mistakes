@@ -21,9 +21,7 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
-header,footer{
-	padding:0px 150px;
-}
+
 header{
 	overflow: hidden;
 }
@@ -79,7 +77,6 @@ header {
 .banner p{
 	position: absolute;
 	bottom: 10px;
-	left: 150px;
 	font-size: 4em;
 	font-family: 'Titillium Web';
 }
@@ -140,8 +137,8 @@ header {
 img {
 	display: block;
 }
-header .active {
-	border-bottom: 8px solid #C1C0C0 !important;
+header nav a.active {
+	border-bottom: 8px solid #C1C0C0;
 }
 header nav .logo a:hover, header nav ul li a:hover {
 	border-bottom: 8px solid #C1C0C0;
@@ -163,11 +160,27 @@ h1 {
 .block {
 	padding: 5em 0em 6em 0em;
 }
+.nav {
+	overflow: hidden;
+	display: block;
+	float: right;
+}
+.toggle {
+	display: none;
+}
+.icon-menu {
+	color: #B0A8AE;
+	font-size: 25px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	display: none;
+	padding: 28px 50px;
+}
 .sidebar {
 	float: left;
 	width: 35%;
 	text-align: left;
-	padding-left: 150px;
 	color:#A4A4A4;
 	text-transform: uppercase;
 	line-height: 40px;
@@ -189,7 +202,6 @@ h1 {
 .main-block {
 	float: left;
 	width: 65%;
-	padding-right: 150px;
 	text-align: left;
 	margin-bottom: 8em;
 }
@@ -324,6 +336,7 @@ footer nav {
 }
 footer section.nav {
 	padding: 4em 0em 3em 0em;
+	width: 100%;
 }
 footer .logo {
 	width: 400px;
@@ -349,6 +362,7 @@ footer .copyright {
 	padding: 1em 0em;
 	color: white;
 	font-weight: 300;
+	width: 100%;
 	font-size: 0.8em;
 }
 footer	nav ul li {

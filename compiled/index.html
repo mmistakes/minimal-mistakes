@@ -2,13 +2,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width" />
+<!-- <meta name="viewport" content="width=device-width" /> -->
+<meta name="viewport" content="initial-scale=1" />
+<link rel="stylesheet"  type="text/css" href="/static/css/layout.css">
 <link rel="stylesheet" type="text/css" href="/static/css/base.css">
-<!-- <link rel="stylesheet"  type="text/css" href="/static/css/responsive.css"> -->
-<link rel='stylesheet' media='screen and (max-width: 700px)' href='/static/css/responsive.css'>
+<!-- <link rel='stylesheet' media='screen and (max-width: 700px)' href='/static/css/responsive.css'> -->
 
 <link rel="stylesheet" type="text/css" href="/static/css/index.css">
 
+<link rel="stylesheet"  type="text/css" href="/static/css/responsive.css">
 <title>CDIS -  Home </title>
 </head>
 <body>
@@ -19,23 +21,26 @@
 					<img src="/static/img/logo-short.png">
 				</a>
 			</div>	
-			<ul>
+			<div class='nav'>
+				<input type=checkbox class='toggle' id='menu'>
+				<label for='menu' class="icon-menu"></label>
+				<ul>
 				
 				
-				<li><a href="/"  class='active' >HOME</a></li>
+					<li><a href="/"  class='active' >HOME</a></li>
 				
-				<li><a href="/funding.html" >FUNDING</a></li>
+					<li><a href="/funding.html" >FUNDING</a></li>
 				
-				<li><a href="/resources.html" >RESOURCES</a></li>
+					<li><a href="/resources.html" >RESOURCES</a></li>
 				
-				<li><a href="/education.html" >EDUCATION</a></li>
+					<li><a href="/education.html" >EDUCATION</a></li>
 				
-				<li><a href="/careers.html" >CAREERS</a></li>
+					<li><a href="/careers.html" >CAREERS</a></li>
 				
-				<li><a href="/about.html" >ABOUT</a></li>
+					<li><a href="/about.html" >ABOUT</a></li>
 				
-
-			</ul>
+				</ul>
+			</div>
 		</nav>
 	</header>
 	<main >
@@ -68,10 +73,10 @@
 		
 		<div class="wrapper">
 			
-			<div class='news' style='width:133.333333333%'>
+			<div class='news'>
 
 				
-				<section style='width:25.0%'>
+				<section>
 					<div>
 						<img src="/static/img/news/campus_tech.jpg">
 						<article>
@@ -82,7 +87,7 @@
 					</div>
 				</section>
 				
-				<section style='width:25.0%'>
+				<section>
 					<div>
 						<img src="/static/img/news-4.png">
 						<article>
@@ -93,7 +98,7 @@
 					</div>
 				</section>
 				
-				<section style='width:25.0%'>
+				<section>
 					<div>
 						<img src="/static/img/news/OSDC_video.png">
 						<article>
@@ -104,7 +109,7 @@
 					</div>
 				</section>
 				
-				<section style='width:25.0%'>
+				<section>
 					<div>
 						<img src="/static/img/news-3.png">
 						<article>
@@ -117,6 +122,14 @@
 				
 			</div>
 		</div>
+		<style type="text/css">
+		.news {
+			width: 133.333333333%;
+		}
+		.news >section {
+			width:25.0%;
+		}
+		</style>
 		<div id="active">
 			
 			<label class='slide0 left' for="slide1"><p><</p></label>
@@ -210,8 +223,6 @@
 				</ul>
 				<ul>
 					
-				
-				<li><a href="/pilots.html" >PILOTS</a></li>
 				
 				<li><a href="/resources.html" >RESOURCES</a></li>
 				

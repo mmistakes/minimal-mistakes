@@ -1,6 +1,231 @@
-	.news section img {
+@media screen and (max-width: 1200px) {
+	.block .news section img {
 		height: 150px;
 	}
-	.news section >div {
+	.block .news section >div {
 		width: 250px;
 	}
+	.midgray #active{
+		display: none!important;
+	}
+	.midgray #controls{
+		display: none!important;
+	}
+	.wrapper{
+		overflow-x: scroll!important;
+	}
+	header,footer{
+	padding:0px 100px;
+	}
+	.banner p{
+		left: 100px;
+	}
+	.featured-projects section .circle:hover >div{
+		margin-top: 1em;
+	}
+	.sidebar{
+		padding: 0px 100px;
+		width: 100%;
+	}
+	.main-block {
+		padding: 0px 100px;
+		width: 100%;
+	}
+	.sidebar ul{
+		width: 100%;
+	}
+	.sidebar li {
+		padding: 0px 5px;
+		line-height: initial;
+		display: inline-block;
+	}
+	.sidebar li:not(:first-child){
+		border-left: 2px solid #dfdfdf;
+	}
+	::-webkit-scrollbar {
+	    -webkit-appearance: none;
+	    width: 5px;
+	}
+	::-webkit-scrollbar-thumb {
+	    border-radius: 4px;
+	    background-color: rgba(0,0,0,.5);
+	    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+	}
+	.middle {
+		width: 80%;
+	}
+	.blog {
+		border-top: 8px solid #E9E9E9;
+		padding: 3em 0em;
+	}
+	.banner {
+		padding-top: 25%;
+		height: 0;
+	}
+	.welcome {
+		padding:1em 0em;
+	}
+}
+
+@media screen and (max-width: 930px) {
+	header,footer{
+		padding:0px 50px;
+	}
+	.banner p{
+		left: 50px;
+	}
+	.sidebar{
+		padding: 0px 50px;
+	}
+	.main-block {
+		padding: 0px 50px;
+	}
+	.block {
+		padding: 20px 0px;
+	}
+	.dark.block {
+		padding: 50px 0px;
+	}
+	.middle {
+		padding: 50px;
+	}
+	.featured-projects section .circle{
+		width: 180px;
+	}
+	div.featured-projects section .circle>div{
+		width: 180px;
+		height: 180px;
+	}
+	.circle.gdc img {
+		margin-top: 55px;
+	}
+	.circle img {
+		margin-top: 65px;
+	}
+	.block .news section img {
+		height: 120px;
+	}
+	.block .news section >div {
+		width: 200px;
+	}
+	/*.block.midgray{
+		padding: 4em 1em;
+	}
+*/
+}
+@media screen and (max-width: 840px) {
+	header,footer{
+		padding:0px 30px;
+	}
+	.banner p{
+		left: 30px;
+	}
+	.sidebar{
+		padding: 0px 30px;
+	}
+	.main-block {
+		padding: 0px 30px;
+	}
+	.icon-menu{
+		display: block;
+		padding: 28px 30px;
+	}
+
+	header ul {
+		position: absolute;
+		right: 0px;
+		background: rgba(223, 223, 223, 0.79);
+		top: 80px;
+		display: none;
+		z-index: 1000;
+	}
+	header nav ul li {
+		display: block;
+	}
+
+	header nav ul li a{
+		margin: 0px;
+		border-bottom: 8px solid #888;
+		padding: 20px;
+		text-align: center;
+	}
+	header nav a.active{
+		border-bottom: 8px solid white;
+	}
+	header nav ul li a:hover{
+		border-bottom: 8px solid white;
+	}
+/*	.nav:hover ul {
+		display: block;
+	}*/
+	header .nav #menu:checked ~ ul {
+		display: block;
+	}
+	.middle{
+		width: 100%;
+	}
+	.banner p{
+		font-size: 2em;
+	}
+	header nav .logo a{
+		width: 150px;
+		padding-top: 25px;
+	}
+	section.welcome{
+		background-size: 200%;
+	}
+	.welcome .middle{
+		padding: 2em;
+	}
+	.middle>div{
+		margin: 0em 0em 3em 0em;
+	}
+}
+@media screen and (max-width: 500px) {
+
+	section.block.midgray{
+		padding: 50px 0px;
+	}
+	div.news {
+		width: 100%;
+		white-space: inherit;
+	}
+	div.news>section {
+		padding: 20px 0px;
+		width: 100%;
+	}
+	.block .news section >div {
+		width: 80%;
+	}
+	.block .news section >div img{
+		height: inherit;
+	}
+	div.featured-projects section{
+		width: 100%;
+	}
+	
+	footer .logo{
+		width: 100%;
+		padding-bottom: 20px;
+	}
+	footer section.nav {
+		padding: 2em 0em 1em 0em;
+	}
+	footer nav {
+		margin-top: 1em;
+		width: 100%;
+	}
+	footer nav ul {
+		font-size: 12px;
+		margin-left: 0px;
+		line-height: 20px;
+	}
+	footer nav ul li {
+		display: inline;
+		margin-right: 10px;
+	}
+	.copyright{
+		margin-bottom: 20px;
+	}
+}
+

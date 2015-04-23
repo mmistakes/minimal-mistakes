@@ -2,12 +2,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width" />
+<!-- <meta name="viewport" content="width=device-width" /> -->
+<meta name="viewport" content="initial-scale=1" />
+<link rel="stylesheet"  type="text/css" href="/static/css/layout.css">
 <link rel="stylesheet" type="text/css" href="/static/css/base.css">
-<!-- <link rel="stylesheet"  type="text/css" href="/static/css/responsive.css"> -->
-<link rel='stylesheet' media='screen and (max-width: 700px)' href='/static/css/responsive.css'>
+<!-- <link rel='stylesheet' media='screen and (max-width: 700px)' href='/static/css/responsive.css'> -->
 
 
+<link rel="stylesheet"  type="text/css" href="/static/css/responsive.css">
 <title>CDIS -  Resources </title>
 </head>
 <body>
@@ -18,37 +20,46 @@
 					<img src="/static/img/logo-short.png">
 				</a>
 			</div>	
-			<ul>
+			<div class='nav'>
+				<input type=checkbox class='toggle' id='menu'>
+				<label for='menu' class="icon-menu"></label>
+				<ul>
 				
 				
-				<li><a href="/" >HOME</a></li>
+					<li><a href="/" >HOME</a></li>
 				
-				<li><a href="/funding.html" >FUNDING</a></li>
+					<li><a href="/funding.html" >FUNDING</a></li>
 				
-				<li><a href="/resources.html"  class='active' >RESOURCES</a></li>
+					<li><a href="/resources.html"  class='active' >RESOURCES</a></li>
 				
-				<li><a href="/education.html" >EDUCATION</a></li>
+					<li><a href="/education.html" >EDUCATION</a></li>
 				
-				<li><a href="/careers.html" >CAREERS</a></li>
+					<li><a href="/careers.html" >CAREERS</a></li>
 				
-				<li><a href="/about.html" >ABOUT</a></li>
+					<li><a href="/about.html" >ABOUT</a></li>
 				
-
-			</ul>
+				</ul>
+			</div>
 		</nav>
 	</header>
 	<main >
 		
-		<section class='banner'>
+		<section class='banner banner-RESOURCES'>
 		
-	<!-- <img src="/static/img/banner-resources.jpg"> -->
-	<p>Resources</p>
-	<style type="text/css">
-	.banner{
-		background-image:url('/static/img/banner-resources.jpg');
-	}
-	</style>
 
+			<p>Resources</p>
+			<style type="text/css">
+			.banner{
+				background-image:url('/static/img/banner-resources.jpg');
+			}
+			@media screen and (max-width:930px){
+				.banner{
+					background-image:url('/static/img/mobile/banner-resources.jpg');
+				}	
+			}
+			</style>
+
+		
 		</section>
 		
 		<div class='main' id='main'>
@@ -60,7 +71,7 @@
 				<ul>
 				
 				
-				<li><a href="/resources" >All Resources</a></li>
+				<li><a href="/resources.html" >All Resources</a></li>
 				
 				<li><a href="/protected-data-clouds.html" >Protected Data Clouds</a></li>
 				
@@ -81,7 +92,7 @@
 		<p>
 		OSDC is a large-scale science cloud deployed in 2009 that makes large datasets and cloud-computing infrastructures available to data scientists around the world.
 		</p>
-		<a href="/osdc.html#main">Learn More</a>
+		<a href="/osdc.html">Learn More</a>
 	</article>
 </section>
 <section>
@@ -103,7 +114,7 @@
 		<p>
 		BCC is a new Open Cloud Consortion (OCC) project allowing university, medical research centers, and companies to jointly leverage private, secure compliant clouds operated by the OCC within the context of a larger, commercial open ecosystem to facilitate discoveries in biology, medicine, and healthcare. 
 		</p>
-		<a href="/bcc.html#main">Learn More</a>
+		<a href="/bcc.html">Learn More</a>
 	</article>
 </section>
 
@@ -134,8 +145,6 @@
 				</ul>
 				<ul>
 					
-				
-				<li><a href="/pilots.html" >PILOTS</a></li>
 				
 				<li><a href="/resources.html" >RESOURCES</a></li>
 				

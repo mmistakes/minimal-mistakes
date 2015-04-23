@@ -2,12 +2,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width" />
+<!-- <meta name="viewport" content="width=device-width" /> -->
+<meta name="viewport" content="initial-scale=1" />
+<link rel="stylesheet"  type="text/css" href="/static/css/layout.css">
 <link rel="stylesheet" type="text/css" href="/static/css/base.css">
-<!-- <link rel="stylesheet"  type="text/css" href="/static/css/responsive.css"> -->
-<link rel='stylesheet' media='screen and (max-width: 700px)' href='/static/css/responsive.css'>
+<!-- <link rel='stylesheet' media='screen and (max-width: 700px)' href='/static/css/responsive.css'> -->
 {% block css %}
 {% endblock %}
+<link rel="stylesheet"  type="text/css" href="/static/css/responsive.css">
 <title>CDIS - {% block title %}{% endblock %}</title>
 </head>
 <body>
@@ -18,7 +20,10 @@
 					<img src="/static/img/logo-short.png">
 				</a>
 			</div>	
-			<ul>
+			<div class='nav'>
+				<input type=checkbox class='toggle' id='menu'>
+				<label for='menu' class="icon-menu"></label>
+				<ul>
 				{% set nav_bar = [
 					('/','HOME'),
 					('/funding.html','FUNDING'),
@@ -28,17 +33,28 @@
 					('/about.html','ABOUT')
 					] %}
 				{% for href, caption in nav_bar %}
-				<li><a href="{{href}}" {% if caption == active_page %} class='active' {% endif %}>{{caption}}</a></li>
+					<li><a href="{{href}}" {% if caption == active_page %} class='active' {% endif %}>{{caption}}</a></li>
 				{% endfor %}
-
-			</ul>
+				</ul>
+			</div>
 		</nav>
 	</header>
 	<main >
 		{% block bannerwrapper %}
-		<section class='banner'>
+		<section class='banner banner-{{active_page}}'>
 		{% block banner %}
-			<img src="/static/img/banner-long.JPG">
+
+			<p>{{active_page|title}}</p>
+			<style type="text/css">
+			.banner{
+				background-image:url('/static/img/banner-{{active_page|lower}}.jpg');
+			}
+			@media screen and (max-width:930px){
+				.banner{
+					background-image:url('/static/img/mobile/banner-{{active_page|lower}}.jpg');
+				}	
+			}
+			</style>
 
 		{% endblock %}
 		</section>
@@ -69,7 +85,6 @@
 				</ul>
 				<ul>
 					{% set nav_bar = [
-					('/pilots.html','PILOTS'),
 					('/resources.html','RESOURCES'),
 					('/education.html','EDUCATION'),
 					('/funding.html','FUNDING'),

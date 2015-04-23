@@ -40,10 +40,10 @@
 		{% endfor %}
 		<div class="wrapper">
 			
-			<div class='news' style='width:{{100/3*news_number}}%'>
+			<div class='news'>
 
 				{% for img, date, title, article in news %}
-				<section style='width:{{100/news_number}}%'>
+				<section>
 					<div>
 						<img src="{{img}}">
 						<article>
@@ -56,6 +56,14 @@
 				{% endfor %}
 			</div>
 		</div>
+		<style type="text/css">
+		.news {
+			width: {{100/3*news_number}}%;
+		}
+		.news >section {
+			width:{{100/news_number}}%;
+		}
+		</style>
 		<div id="active">
 			{% for n in range(slide_number) %}
 			<label class='slide{{n}} left' for="slide{{(n+1)%slide_number}}"><p><</p></label>

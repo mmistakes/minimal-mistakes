@@ -1,0 +1,12 @@
+header,footer{
+	padding:0px 150px;
+}
+.banner p{
+	left: 150px;
+}
+.sidebar{
+	padding-left: 150px;
+}
+.main-block {
+	padding-right: 150px;
+}

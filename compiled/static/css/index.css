@@ -9,7 +9,7 @@
 }
 .welcome {
 	background-image: url('/static/img/banner-long.JPG');
-	background-size: cover;
+	background-size: 100%;
 	background-attachment: fixed;
 }
 .welcome h1 {
@@ -84,7 +84,6 @@
 }
 .circle.pdc img{
 	width: 60%;
-	margin-top: 80px;
 }
 .circle.pdc p {
 
