@@ -1,0 +1,18 @@
+.pilot>div{
+	margin-bottom: 0em;
+}
+article ul li{
+	margin-bottom: 2em;
+}
+/*article ul li p {
+	font-size: 20px;
+}
+article ul li p.desc {
+	font-size: 15px;
+}*/
+
+@media screen and (max-width: 840px) {
+	.middle.pilot>div {
+		margin-bottom: 0em;
+	}
+}

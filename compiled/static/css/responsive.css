@@ -67,7 +67,7 @@
 	}
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 1000px) {
 	header,footer{
 		padding:0px 50px;
 	}
@@ -108,29 +108,10 @@
 	.block .news section >div {
 		width: 200px;
 	}
-	/*.block.midgray{
-		padding: 4em 1em;
-	}
-*/
-}
-@media screen and (max-width: 840px) {
-	header,footer{
-		padding:0px 30px;
-	}
-	.banner p{
-		left: 30px;
-	}
-	.sidebar{
-		padding: 0px 30px;
-	}
-	.main-block {
-		padding: 0px 30px;
-	}
 	.icon-menu{
 		display: block;
 		padding: 28px 30px;
 	}
-
 	header ul {
 		position: absolute;
 		right: 0px;
@@ -161,6 +142,23 @@
 	header .nav #menu:checked ~ ul {
 		display: block;
 	}
+}
+@media screen and (max-width: 840px) {
+	header,footer{
+		padding:0px 30px;
+	}
+	.banner p{
+		left: 30px;
+	}
+	.sidebar{
+		padding: 0px 30px;
+	}
+	.main-block {
+		padding: 0px 30px;
+	}
+
+
+	
 	.middle{
 		width: 100%;
 	}
@@ -180,13 +178,30 @@
 	.middle>div{
 		margin: 0em 0em 3em 0em;
 	}
-}
-@media screen and (max-width: 500px) {
-
-	section.block.midgray{
-		padding: 50px 0px;
+	footer .logo{
+		width: 80%;
+		padding-bottom: 20px;
 	}
-	div.news {
+	footer section.nav {
+		padding: 2em 0em 1em 0em;
+	}
+	footer nav {
+		margin-top: 1em;
+		width: 100%;
+	}
+	footer nav ul {
+		font-size: 10px;
+		margin-left: 0px;
+		line-height: 20px;
+	}
+	footer nav ul li {
+		display: inline;
+		margin-right: 10px;
+	}
+	.copyright{
+		margin-bottom: 20px;
+	}
+		div.news {
 		width: 100%;
 		white-space: inherit;
 	}
@@ -200,32 +215,24 @@
 	.block .news section >div img{
 		height: inherit;
 	}
+}
+@media screen and (max-width: 500px) {
+	h1 {
+		margin-bottom: 0px;
+	}
+	section.block.midgray{
+		padding: 50px 0px;
+	}
+
 	div.featured-projects section{
 		width: 100%;
 	}
 	
 	footer .logo{
 		width: 100%;
-		padding-bottom: 20px;
 	}
-	footer section.nav {
-		padding: 2em 0em 1em 0em;
-	}
-	footer nav {
-		margin-top: 1em;
-		width: 100%;
-	}
-	footer nav ul {
-		font-size: 12px;
-		margin-left: 0px;
-		line-height: 20px;
-	}
-	footer nav ul li {
-		display: inline;
-		margin-right: 10px;
-	}
-	.copyright{
-		margin-bottom: 20px;
+	a.icon{
+		display: none;
 	}
 }
 

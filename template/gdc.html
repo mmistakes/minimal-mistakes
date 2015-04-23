@@ -2,13 +2,17 @@
 {% block title %} Resources {% endblock %}
 
 {% set active_page = "RESOURCES" %}
+{% set sub_active_url='gdc' %}
 {% set sub_active_page = "Collaborations with NCI" %}
 {% block mainblock %}
 <div class='blog'>
 	<div class='title'>
 		<a class='icon' href='#'><img src="/static/img/gdc-logo.png"></a>
-		<h1>Genomic Data Commons
+		<h1>Genomic Data Commons</h1>
+		{% import 'util.html' as util %}
+		{{ util.share(sub_active_url) }}
 	</div>
+
 </h1>
 <article>
 	<p>

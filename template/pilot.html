@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="/static/css/pilot.css">
+{% endblock %}
+{% block title %} Pilot {% endblock %}
+{% set active_page = "PILOT" %}
+{% block main %}
+	<section class='block'>
+		<div class='middle pilot'>
+			<div>
+				<h1>CDIS Pilot Projects</h1>
+			</div>
+			<article>
+				<ul>
+					<li>
+						<p>Medical Imaging and Informatics </p>
+						<p class='desc'>Maryellen L. Giger, PhD</p>
+					</li>
+					<li>
+						<p>NIDDK Inflammatory Bowel Disease Genetics Consortium (IBDGC) </p>
+						<p class='desc'>Phil Schumm, MA</p>
+					</li>
+					<li>
+						<p>International Neuroblastoma Risk Group (INRG) </p>
+						<p class='desc'>Susan L. Cohn, MD</p>
+					</li>
+					<li>
+						<p>Research on datacenter and exascale system architecture, programming, and resilience </p>
+						<p class='desc'>Andrew A. Chien </p>
+					</li>
+					<li>
+						<p>IGSB Protected Data Cloud </p>
+						<p class='desc'>Kevin White, PhD</p>
+					</li>
+				</ul>
+
+			</article>
+		</div>
+	</section>
+
+{% endblock %}
