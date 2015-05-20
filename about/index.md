@@ -77,7 +77,7 @@ Ending 2014 I left Redbooth to join 8fit, founded by Pablo Villalba, which found
 - **iPremio:** Application to check if your Christmas Lottery is prized. [Link](https://itunes.apple.com/en/app/ipremio-loteria-de-navidad/id584583645?mt=8)
 
 ## Talks and posts
-- **En busca de la arquitectura perfecta: VIPER (iOS):** Talk about the VIPER architecture applied to iOS application. I explain there the transition between using a monolytic architecture using MVC with elements too coupled to that new architecture where every component manages only one kind of operation.  [Link](http://2014.codemotion.es/en/agenda.html?recommended=#day2/en-busca-de-la-arquitectura-perfecta-viper-ios
+- **En busca de la arquitectura perfecta: VIPER (iOS):** Talk about the VIPER architecture applied to iOS application. I explain there the transition between using a monolytic architecture using MVC with elements too coupled to that new architecture where every component manages only one kind of operation.  [Link](http://2014.codemotion.es/en/agenda.html?recommended=#day2/en-busca-de-la-arquitectura-perfecta-viper-ios)
 - **Hybrid mobile applications for a fast development - 8fit:** Talk about the steps we followed on 8fit to have a mobile web-app solution for our platform with a real mobile experience. [Link](https://speakerdeck.com/pepibumur/hybrid-mobile-applications-for-a-fast-development) https://www.youtube.com/watch?v=5pf_GBR0dTs
 - **Swift and Objective-C playing together:** Start using Swift in your Objective-C projects. Avoid some headaches with these useful tips and advices for the communication layer between your Objective-C code base and your future Swift implementations [Link](https://speakerdeck.com/pepibumur/swift-and-objective-c-playing-together)
 
