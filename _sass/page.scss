@@ -457,9 +457,13 @@ $button-size: 1.5rem;
 		@include prefix(12,0.5);
 		@include suffix(12,0.5);
 		position: absolute;
-		top: 5.5em;
+		top: 8.5em;
 		right: 0;
 		background-color: $white;
+		/* Fix OVERVIEW toc when feature image is set */
+		.image-wrap + #main & {
+        		top: 68.5em;
+    		}
 	}
 	header {
 		background: lighten($black, 10);
