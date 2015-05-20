@@ -6,14 +6,16 @@ modified: 2014-10-11T20:53:07.573882-04:00
 comments: true
 image:
   feature: sample-image-2.jpg
-  credit: WeGraphics
+  credit: Pedro P.
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 I'm Pedro Piñera Buendía, Electronic & Communication Engineer and Mobile Developer currently working on Redbooth. I've been working with mobile technologies from 2010 when I started developing apps for iOS, since then I've relesed applications such as **Solare** to help people to protect them from the sun, **yonkiPOPS**, an app that offers film recommendations to the users, **Movi time** to let you know about the cinemas in your area and their schedules, ...
 
-The summer of 2013 I joined **Redbooth** as iOS Developer and I've been improving my skills there focusing in aspects like API interactions, integrations, data persistence or view management amongst other. I've been helping the Redbooth **Android** team too and I learnt then the fundamentals of Android development. Moreover I've learnt about **Ruby** implementing some libraries and controllers with it.
+The summer of 2013 I joined **Redbooth** as iOS Developer and I improved my skills there focusing in aspects like API interactions, integrations, data persistence or view management amongst other. I've been helping the Redbooth **Android** team too and I learnt then the fundamentals of Android development. Moreover learnt about **Ruby** implementing some libraries and controllers with it.
 
-During these years I've worked in different Open Source projects in different languages. All of them are published in Github with their respective documentation, tests, an support through issues.
+I joined **8fit** in September 2014 as a Mobile Developer. I contributed with native features in Java/Objective-C/Swift and since then we've been moving the project to native (the project base is based on web technologies). I'm currently leading the Mobile team and coordinating the migration to native and the integration with QA and release cycles. I'm also improving my leadership skills.
+
+All these years as a developer I've also created Open Source projects in different languages. All of them are published in Github with their respective documentation, tests, an support through issues.
 
 ## Skills
 
