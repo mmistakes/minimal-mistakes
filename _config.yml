@@ -4,11 +4,7 @@ title:            Pedro Piñera
 locale:           en_US
 #url:              http://127.0.0.1:4000
 url:              http://www.ppinera.es
-
-
-# Jekyll configuration
-
-# permalink:   /:categories/:title/
+permalink:   /:categories/:title/
 markdown:    kramdown
 highlighter: pygments
 sass:
@@ -34,6 +30,7 @@ owner:
   disqus-shortname: 
   twitter: "pepibumur"
   facebook: "pepibumur"
+  disqus-shortname: "pedropiera"
   google:
     plus: "PedroPiñeraBuendia"
     analytics: UA-3325566-3
@@ -45,7 +42,7 @@ owner:
   exposure: "pepibumur"
   stackoverflow: "963511/pedro-piñera-buendia"
   linkedin: #linkedin
-  instagram: #username
+  instagram: pepibumur
   lastfm: #username
   tumblr: #username
   pinterest: #username
