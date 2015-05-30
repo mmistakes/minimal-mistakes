@@ -1,20 +1,11 @@
 # Authors
 
-billy_rick:
-  name: Billy Rick
-  web: http://thewhip.com
-  email: billy@rick.com
-  bio: "What do you want, jewels? I am a very extravagant man."
-  avatar: bio-photo-2.jpg
-  twitter: extravagantman
+eddie_kollar:
+  name: Eddie Kollar
+  web: http://eddiekollar.com
+  email: eddie.kollar@gmail.com
+  bio: "I'm a big nerd. Wanno taco 'bout it?"
+  avatar: monkey-thinking.png
+  twitter: eddiekollar
   google:
-    plus: BillyRick
-
-cornelius_fiddlebone:
-  name: Cornelius Fiddlebone
-  email: cornelius@thewhip.com
-  bio: "I ordered what?"
-  avatar: bio-photo.jpg
-  twitter: rhymeswithsackit
-  google:
-    plus: CorneliusFiddlebone
+    plus: EddieKollar
