@@ -1,10 +1,12 @@
 ---
-layout: post-index
+layout: writing-index
 title: "Writing"
 date: 
 modified:
 excerpt:
-tags: []
+tags: [writing]
+image:
+    feature: brain_geometry_colors.jpg
 
 ---
 

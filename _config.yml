@@ -30,9 +30,9 @@ kramdown:
 owner:
   name: Eddie Kollar
   avatar: monkey-thinking.png
-  bio: "Describe your self."
+  bio: "I'm a big nerd. Wanno taco 'bout it?"
   email: eddie.kollar@gmail.com
-  disqus-shortname: 
+  disqus-shortname: eddiekollar
   twitter: eddiekollar
   facebook: #username
   google:
@@ -53,7 +53,7 @@ owner:
   steam: #username
   dribbble: #username
   youtube: #username
-  soundcloud: #username
+  soundcloud: eddiekollar
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
