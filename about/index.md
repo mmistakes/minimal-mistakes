@@ -5,7 +5,7 @@ tags: [about, me, profile, skills, ppinera]
 modified: 2014-10-11T20:53:07.573882-04:00
 comments: true
 image:
-  feature: sample-image-2.jpg
+  feature: headers/examples/sample-image-2.jpg
   credit: Pedro P.
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
