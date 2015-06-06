@@ -6,7 +6,7 @@ modified: 2015-03-06
 tags: [gcdwebserver, 8fit, frontend manager, gulp]
 comments: true
 image:
-  feature: 8fit_beach_workout.jpg
+  feature: headers/8fit_beach_workout.jpg
   credit: 8fit Super Hero Workouts
 sitemap   :
   priority : 0.5

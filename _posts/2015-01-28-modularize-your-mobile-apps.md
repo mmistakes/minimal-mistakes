@@ -6,7 +6,7 @@ modified: 2015-01-28
 tags: [target, module, android studio, scheme, xcconfig, xcode]
 comments: true
 image:
-  feature: munduk_header.jpg
+  feature: headers/munduk_header.jpg
   credit: Pedro Piñera
 sitemap   :
   priority : 0.5
@@ -36,7 +36,7 @@ Both **iOS and Android development tools** offer great tools to deal with that. 
 
 The image below shows the difference between working with only a big app bundle and splitting it in small bundles.
 
-![]({{site.url}}/images/xcode_big_project.png)
+![]({{site.url}}/images/posts/xcode_big_project.png)
 
 ### Components
 
@@ -111,14 +111,14 @@ In case of Andorid we'll use Gradle to define our modules. Gradle allows you to 
 - Let's create three a main Android app module and two Android Libraries. *For example, ExampleApp, ExampleCore, ExampleData*
 
 <br>
-![]({{site.url}}/images/android-library.png)
-![]({{site.url}}/images/android-projects-list.png)
+![]({{site.url}}/images/posts/android-library.png)
+![]({{site.url}}/images/posts/android-projects-list.png)
 
 - Inside *File > Project Structure* define core and data modules **as dependencies** of the app module as shown below.
 
 <br>
 
-![]({{site.url}}/images/android-dependencies.png)
+![]({{site.url}}/images/posts/android-dependencies.png)
 
 - It will create automatically the dependencies in your app build.gradle file as shown below:
 

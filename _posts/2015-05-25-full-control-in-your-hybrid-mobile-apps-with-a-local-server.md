@@ -6,7 +6,7 @@ modified: 2015-05-25
 tags: [gcdwebserver, nanohttpd, ionic]
 comments: true
 image:
-  feature: farm_header.jpg
+  feature: headers/farm_header.jpg
   credit: Vladimir Kudinov
 sitemap   :
   priority : 1.0

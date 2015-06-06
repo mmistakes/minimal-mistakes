@@ -6,7 +6,7 @@ modified: 2014-10-13
 tags: [pepibumur, sugarrecord, github, opensource, cocoapods]
 comments: true
 image:
-  feature: earpods.jpg
+  feature: headers/earpods.jpg
   credit: Pedro Piñera
 sitemap   :
   priority : 0.5

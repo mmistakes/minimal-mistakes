@@ -6,7 +6,7 @@ modified: 2014-11-16"
 tags: [redbooth, ios, 8fit]
 comments: true
 image:
-  feature: viper.jpg
+  feature: headers/viper.jpg
   credit: Pedro Piñera
 sitemap   :
   priority : 0.5

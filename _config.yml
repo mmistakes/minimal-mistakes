@@ -2,7 +2,7 @@
 
 title:            Pedro Piñera
 locale:           en_US
-#url:              http://127.0.0.1:4000
+# url:              http://127.0.0.1:4000
 url:              http://www.ppinera.es
 permalink:   /:categories/:title/
 markdown:    kramdown
@@ -24,7 +24,7 @@ kramdown:
 # Site owner
 owner:
   name: Pedro Piñera
-  avatar: bio-photo.jpg
+  avatar: others/bio-photo.jpg
   bio: "Mobile Engineer currently working on 8fit and Open-Source ♥"
   email: "pepibumur@gmail.com"
   disqus-shortname: 

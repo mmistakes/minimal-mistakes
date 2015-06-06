@@ -6,7 +6,7 @@ modified: 2014-12-19
 tags: [backbone, mobile, angular, webapp, bridge]
 comments: true
 image:
-  feature: 8fit-hybrid.jpg
+  feature: headers/8fit-hybrid.jpg
   credit: Pedro Piñera
 sitemap   :
   priority : 0.5
