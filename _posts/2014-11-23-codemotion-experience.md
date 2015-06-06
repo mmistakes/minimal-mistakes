@@ -6,7 +6,7 @@ modified: 2014-11-23"
 tags: [codemotion, viper]
 comments: true
 image:
-  feature: codemotion.jpg
+  feature: headers/codemotion.jpg
   credit: Pedro Piñera
 sitemap   :
   priority : 0.8

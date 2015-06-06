@@ -6,7 +6,7 @@ modified: 2014-12-09
 tags: [swift, objective-c, integration, cocoapods]
 comments: true
 image:
-  feature: swiftobjc.jpg
+  feature: headers/swiftobjc.jpg
   credit: Pedro Piñera
 sitemap   :
   priority : 0.5
@@ -23,7 +23,7 @@ It's possible to have Swift playing with Objective-C in the same project, howeve
 
 ## Objective-C projects
 
-![]({{site.url}}/images/swiftobjc-structure.png)
+![]({{site.url}}/images/posts/swiftobjc-structure.png)
 
 If we analyzed the structure of our Objective-C projects that would be something like what you can see in the figure above. We have some libraries integrated (or not) using an external dependency manager like CocoaPods into our Objective-C code base. Everything works great, we have both in the same language and the same language features are available in both sides. **What happens when Swift appears in the scene?** We have features that are available in a language (Swift) that aren't in the other and that introduces extra communication problems that we have to face. We'll see that we can use a kind of **keywords** or Swift types that are automatically translated into the equivalent ones in Objectve-C but that in some other cases we might end up using a wrapper component that allows us to stablish the communication with these Swift components.
 
@@ -89,7 +89,7 @@ SWIFT_CLASS("_TtC9SwiftObjc18NSObjectSwiftClass")
 @end
 {% endhighlight %}
 
-![]({{site.url}}/images/swiftobjc-alert.png)
+![]({{site.url}}/images/posts/swiftobjc-alert.png)
 
 ## What's really exposed?
 As I mentioned not all your Swift code is exposed. The point is that the compiler follows some rules to generate the header and not all of those rules are reflected on the Apple docummentation. You'll figure out some of them working on that type of integrations. Some others you'll learn them reading from other developers dealing with similar problems. Summarizing the most important ones, it will only be exposed:
@@ -113,7 +113,7 @@ XCode uses your product package name for the xxxxx-Swift.h file naming but repla
 
 You can subclass Objective-C classes in Swift, remember to use the **override** keyword wherever you are overriding a parent class implementation. **Swift classes cannot be subclassed in Objective-C** *(even if they are NSObject sublcass or labeled with the keyword @objc)*
 
-![]({{site.url}}/images/swiftobjc-subclass.png)
+![]({{site.url}}/images/posts/swiftobjc-subclass.png)
 
 {% highlight objc %}
 #if !defined(SWIFT_CLASS)

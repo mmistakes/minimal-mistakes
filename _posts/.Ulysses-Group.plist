@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>createMarkedFile</key>
+	<false/>
+	<key>sheetClusters</key>
+	<array>
+		<array>
+			<string>2014-10-13-setup-your-ios-projects-for-testing.md</string>
+		</array>
+		<array>
+			<string>2015-06-07-my-first-apple-watch-impressions.md</string>
+		</array>
+		<array>
+			<string>2014-10-25-what-the-open-source-taught-me.md</string>
+		</array>
+		<array>
+			<string>2014-10-29-leaving-redbooth.md</string>
+		</array>
+		<array>
+			<string>2014-11-04-github-as-your-project-management-tool.md</string>
+		</array>
+		<array>
+			<string>2014-11-16-viper-looking-for-the-perfect-architecture.md</string>
+		</array>
+		<array>
+			<string>2014-11-23-codemotion-experience.md</string>
+		</array>
+		<array>
+			<string>2014-12-08-swift-and-objc-playing-together.md</string>
+		</array>
+		<array>
+			<string>2014-12-10-boosting-your-mobile-app-with-javascript-and-some-mobile-knowledge.md</string>
+		</array>
+		<array>
+			<string>2015-01-28-modularize-your-mobile-apps.md</string>
+		</array>
+		<array>
+			<string>2015-05-25-full-control-in-your-hybrid-mobile-apps-with-a-local-server.md</string>
+		</array>
+	</array>
+</dict>
+</plist>

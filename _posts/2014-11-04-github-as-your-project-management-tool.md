@@ -6,7 +6,7 @@ modified: 2014-11-04
 tags: [github, scrum, issues, zenhub, management, project]
 comments: true
 image:
-  feature: coworking.jpg
+  feature: headers/coworking.jpg
   credit: Photo from Coworking Badaup!
 sitemap   :
   priority : 0.9
@@ -43,17 +43,17 @@ When we think about an issue we tend to think about something negative (*as a de
 
 > Useful note: In most of cases we'll end up creating a PR to solve the issue purpose. Github thought about it and they made an easy way to close issues directly merging an opened PR. You have to add a comment into your PR explaining that you resolved, fixed or solved any opened issue (e.g solved #31)
 
-![Github Issues Screenshot]({{site.url}}/images/githubissues.png)
+![Github Issues Screenshot]({{site.url}}/images/posts/githubissues.png)
 
 ##### Labels
 Labels is a way to clasify not only your issues but your pull requests too. Labels has a name and a color and Github allows you to filter your issues/PR using them as a filter element. Although Github offers you some labels by default I recommend you to analyze and adapt them to your needs and requirements.  Labels for a landing page can't be the same for a backend project. I've been googling around to have some ideas about labels other companies use in their project and I liked the idea of the first answer in this question in stack exchange, [http://programmers.stackexchange.com/questions/129714/how-to-manage-github-issues-for-priority-etc](http://programmers.stackexchange.com/questions/129714/how-to-manage-github-issues-for-priority-etc). Tags that guy uses are:
 
-![Github Labels Screenshot]({{site.url}}/images/githublabels.png)
+![Github Labels Screenshot]({{site.url}}/images/posts/githublabels.png)
 
 #### Milestones
 Issues we'll be the core of hour project management, they will be our tasks and it's important to keep them organized. We've seen that labels allows us to tag them in terms of status, priority, type,... We can easily have either an idea of the most priority issues to work on, or the recent bugs related with UI but it doesn't allow to **group different issues because they have something in common**. The grouping reason might not only be related with the versioning but might be related with a refactor too, or even with a redesign. Think about Milestones like a bag with a well defined **purpose** that you are going to cover ussing the issues you are going to put inside. 
 
-![Github Labels Screenshot]({{site.url}}/images/githubmilestones.png)
+![Github Labels Screenshot]({{site.url}}/images/posts/githubmilestones.png)
 
 The example above shows different milestones related with some versions of the library and one of them is focused in issues/PRs that are planned to be in the future versions. Notice that you have a bar that indicates the **precentage of issues/PR finished**. This way you have a global idea of the status of that milestone.
 
@@ -61,7 +61,7 @@ The example above shows different milestones related with some versions of the l
 
 Tasks (issues) in groups (milestones) labeled and executed, developed, reviewed by your team. Here's where the people come into play. Thanks to the **assignee** feature of Github you can assign a Github issue or a PR to someone. This person is responsible to move this item forward, work on it, ensure that the status of this item is updated (using comments, changing labels, mentioning work mates if something is blocking, ...). Moreover you can filter by your issues/PRs so it's easy for you to know what involes you. Imagine you turning on your computer every morning and wondering what you should work on. **Easy, take a look to your issues on Github**
 
-![Github Labels Screenshot]({{site.url}}/images/githubassignees.png)
+![Github Labels Screenshot]({{site.url}}/images/posts/githubassignees.png)
 
 ### Flow
 Understood these components someone might wonder how they could be applied into a project sprint. We're still working on 8fit to have a fixed flow that matches our needs, after using different tools for project management and we ended up with Github and we've inspired our flow in others' flows with our little details:
@@ -77,7 +77,7 @@ Understood these components someone might wonder how they could be applied into 
 Keep in mind the previous points and try to apply them in your projects, try to be constant with them, and try your team to be too. Improve your management tools and flow every day regarding your needs and boost your team productivity. 
 **You just only need Github!**
 
-![Zenhub board in Github]({{site.url}}/images/githubboard.png)
+![Zenhub board in Github]({{site.url}}/images/posts/githubboard.png)
 
 ## Recommended articles
 - [**What is Markdown**?](http://whatismarkdown.com/)
