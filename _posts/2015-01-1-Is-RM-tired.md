@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Is Real Madrid Tired?"
+title: "Where will the next Chipotle be?"
 author: F Marquez
 modified:
-excerpt: "Author analyses game performance in La Liga."
+excerpt: "Author analyses the demographics of Chipotle locations in America."
 tags: []
 ---
 
