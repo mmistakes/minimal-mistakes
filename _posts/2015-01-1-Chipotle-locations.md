@@ -7,11 +7,9 @@ excerpt: "Author analyses the demographics of Chipotle locations in America."
 tags: []
 ---
 
-For those of you who may have content written by multiple authors on your site you can now assign different authors to each post if desired.
+Everybody loves eating at Chipotle Mexican Grill. 
 
-Previously the theme used a global author for the entire site and those attributes would be used in all bylines, social networking links, Twitter Card attribution, and Google Authorship. These `owner` variables were defined in `config.yml`
-
-Start by modifying or creating a new `authors.yml` file in the `_data` folder and add your authors using the following format.
+The first part of this project consists of getting every single Chipotle location in America. After my google-fu failed to give me site with every zipcode with a Chipotle, I was forced to write a scraper and check every zip code in america on Chipotle's website. There are about 60k Zip codes in the United States so this took a while. 
 
 <figure>
 	<a href="/images/Goals.png">><img src="/images/Goals.png">></a>
