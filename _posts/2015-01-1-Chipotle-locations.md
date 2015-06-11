@@ -6,13 +6,13 @@ modified:
 excerpt: "Author analyses the demographics of Chipotle locations in America."
 tags: []
 ---
-
+<p>
 Everybody loves eating at Chipotle Mexican Grill. 
-<br>
+</p>
 
-
+<p>
 The first part of this project consists of getting every single Chipotle location in America. After my google-fu failed to take me to a site with every Chipotle restaurant, I was forced to write a scraper and check every zip code in america on Chipotle's website. There are about 60k zip codes in the United States so this took a while. 
-
+</p>
 <figure>
 	<a href="/images/Goals.png">><img src="/images/Goals.png">></a>
 	<figcaption><a href="http://www.flickr.com/photos/80901381@N04/7758832526/" title="Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr">Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr</a>.</figcaption>
