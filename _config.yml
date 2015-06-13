@@ -29,10 +29,12 @@ owner:
   name: Your Name
   avatar: bio-photo.jpg
   bio: "Describe your self."
+  location: "Your location"
   email: 
   disqus-shortname: 
   twitter: #username
   facebook: #username
+  skype: #username
   google:
     plus: #username
     analytics: 
