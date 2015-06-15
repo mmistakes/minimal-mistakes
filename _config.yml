@@ -4,7 +4,6 @@ title:            ticofab.io
 locale:           en_US
 url:
 
-
 # Jekyll configuration
 
 permalink:   /:categories/:title/
