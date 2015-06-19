@@ -9,16 +9,6 @@ image:
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 
-Minimal Mistakes is responsive Jekyll theme with large featured images and solid typography. As the name implies the styling is fairly minimal to make it easier for you to build on top of.
+I am a developer who values human interaction above code-style perfection. I am in love with reactive backend development using Scala. On the client side, my biggest expertise is native Android development, but I have a kind interest in web development too (React.js is a lovely thing).
 
-## Minimal Mistakes is all about:
-
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers. 
-* Minimal embellishments -- content first.
-* Optional large feature images for posts and pages.
-* Simple and clear permalink structure.
-* [Custom 404 page](http://mmistakes.github.io/minimal-mistakes/404.html) to get you started.
-* Support for Disqus Comments
-
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install Minimal Mistakes Theme</a>
+Beside software development, one of my biggest passion is touring with my bicycle: I regularly go for long distance trips and am the organizer of Bicycle Touring Amsterdam, a meetup with 200+ members, that I built with the intent of creating a community around the topic.
