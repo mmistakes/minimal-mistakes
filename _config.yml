@@ -2,7 +2,7 @@
 
 title:            ticofab.io
 locale:           en_US
-url:
+url:              //ticofab.github.io
 
 # Jekyll configuration
 
@@ -27,8 +27,8 @@ kramdown:
 owner:
   name: Fabio Tiriticco
   avatar: bio-photo.jpg
-  bio: "Describe your self."
-  email:
+  bio: "Reactive developer."
+  email: fabio.tiriticco@gmail.com
   disqus-shortname:
   twitter: ticofab
   facebook: ticofab
