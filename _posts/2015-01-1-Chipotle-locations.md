@@ -17,9 +17,15 @@ The first part of this project consists of getting every single Chipotle locatio
 	<figcaption><a href="http://www.flickr.com/photos/80901381@N04/7758832526/" title="Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr">Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr</a>.</figcaption>
 </figure>
 
+
+<figure>
+	<a href="/images/Chipotle/ChipotlePlot.jpeg"><img src="/images/Chipotle/ChipotlePlot.jpeg"></a>
+</figure>
+
+
 {% highlight html %}
 <figure class="half">
-    <a href="/images/Goals.png"><img src="/images/Goals.png"></a>
+    <a href="/images/Chipotle/ChipotlePlot.jpeg"><img src="/images/Chipotle/ChipotlePlot.jpeg"></a>
     <figcaption>Caption describing these two images.</figcaption>
 </figure>
 {% endhighlight %}
