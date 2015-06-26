@@ -19,7 +19,7 @@ The first part of this project consists of getting every single Chipotle locatio
 
 
 <figure>
-	<a href="/images/Chipotle/ChipotlePlot.jpeg">><img src="/images/Chipotle/ChipotlePlot.jpeg">></a>
+	<a href="/images/Chipotle/ChipotlePlot.jpeg"><img src="/images/Chipotle/ChipotlePlot.jpeg"></a>
 </figure>
 
 
