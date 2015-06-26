@@ -20,7 +20,6 @@ The first part of this project consists of getting every single Chipotle locatio
 
 <figure>
 	<a href="/images/Chipotle/ChipotlePlot.jpeg">><img src="/images/Chipotle/ChipotlePlot.jpeg">></a>
-	<figcaption><a href="http://www.flickr.com/photos/80901381@N04/7758832526/" title="Chipotle Possible Locations">Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr</a>.</figcaption>
 </figure>
 
 
