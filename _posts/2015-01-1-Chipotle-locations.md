@@ -20,7 +20,7 @@ The first part of this project consists of getting every single Chipotle locatio
 
 <figure>
 	<a href="/images/Chipotle/ChipotlePlot.jpeg"><img src="/images/Chipotle/ChipotlePlot.jpeg"></a>
-	<figcaption><a title=Probabilty Map">Probability map of zip codes likely to have a Chipotle restaurant </a>.</figcaption>
+	<figcaption>Probability map of zip codes likely to have a Chipotle restaurant.</figcaption>
 </figure>
 
 
