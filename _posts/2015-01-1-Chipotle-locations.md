@@ -9,7 +9,14 @@ tags: []
 
 Everybody loves eating at Chipotle Mexican Grill. 
 
-The first part of this project consists of getting every single Chipotle location in America. After my google-fu failed to take me to a site with every Chipotle restaurant, I was forced to write a scraper and check every zip code in america on Chipotle's website. There are about 60k zip codes in the United States so this took a while. 
+The first part of this project consists of getting every single Chipotle location in America. After my google-fu failed to take me to a site with every Chipotle restaurant, I wrote a scrapper to check each and every every zip code in america on Chipotle's website. There are about 60k zip codes in the United States so this took a while.
+
+The first question that came to my mind was, which demographic is Chipotle focusing on, if any? 
+<figure>
+	<a href="/images/Chipotle/ChipotleDemo.jpeg"><img src="/images/Chipotle/ChipotleDemo.jpeg"></a>
+	<figcaption>Probability map of zip codes likely to have a Chipotle restaurant.</figcaption>
+</figure>
+
 
 
 <figure>
@@ -19,7 +26,7 @@ The first part of this project consists of getting every single Chipotle locatio
 
 
 <figure>
-	<a href="/images/Chipotle/ChipotlePlot.jpeg"><img src="/images/Chipotle/ChipotlePlot.jpeg"></a>
+	<a href="/images/Chipotle/ChipotleDemo.jpeg"><img src="/images/Chipotle/ChipotleDemo.jpeg"></a>
 	<figcaption>Probability map of zip codes likely to have a Chipotle restaurant.</figcaption>
 </figure>
 
