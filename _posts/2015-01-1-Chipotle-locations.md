@@ -11,7 +11,7 @@ comments: true
 Everybody loves eating at Chipotle Mexican Grill. 
 <p><br></p>
 The first part of this project consists of getting every single Chipotle location in America. After my google-fu failed to take me to a site with every Chipotle restaurant, I wrote a scrapper to check each and every every zip code in america on Chipotle's website. There are about 60k zip codes in the United States so this took a while.
-<br>
+<p><br></p>
 Once I organied my data I was very curious in finding if Chipotle's restaurants were distributed evenly across all demographics? As the histogram below shows, there are more Chipotle resturants in Zip Codes where there is a predominance of white people. 
 
 <figure>
