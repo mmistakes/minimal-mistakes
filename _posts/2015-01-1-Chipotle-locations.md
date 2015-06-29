@@ -11,9 +11,7 @@ Everybody loves eating at Chipotle Mexican Grill.
 <p>
 </p>
 The first part of this project consists of getting every single Chipotle location in America. After my google-fu failed to take me to a site with every Chipotle restaurant, I wrote a scrapper to check each and every every zip code in america on Chipotle's website. There are about 60k zip codes in the United States so this took a while.
-
-###
-
+##
 Once I organied my data I was very curious in finding if Chipotle's restaurants were distributed evenly across all demographics? As the histogram below shows, there are more Chipotle resturants in Zip Codes where there is a predominance of white people. 
 
 <figure>
@@ -75,6 +73,32 @@ To assign Billy Rick as an author for our post. You'd add the following YAML fro
 author: billy_rick
 {% endhighlight %}
 
+### Standard Code Block
+
+    {% raw %}
+    <nav class="pagination" role="navigation">
+        {% if page.previous %}
+            <a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}">Previous article</a>
+        {% endif %}
+        {% if page.next %}
+            <a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}">Next article</a>
+        {% endif %}
+    </nav><!-- /.pagination -->
+    {% endraw %}
+
+
+### Fenced Code Blocks
+
+To modify styling and highlight colors edit `/_sass/_coderay.scss`. Line numbers and a few other things can be modified in `_config.yml`. Consult [Jekyll's documentation](http://jekyllrb.com/docs/configuration/) for more information.
+
+~~~ css
+#container {
+    float: left;
+    margin: 0 -240px 0 0;
+    width: 100%;
+}
+~~~
+
 ~~~ ruby
 module Jekyll
   class TagIndex < Page
@@ -94,3 +118,4 @@ module Jekyll
   end
 end
 ~~~
+
