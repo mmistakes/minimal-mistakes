@@ -5,7 +5,7 @@ modified:
 excerpt: "Author analyses the demographics of Chipotle locations in America."
 tags: [R, data mining, analytics]
 modified: 2015-06-28
-comments=true
+comments:true
 ---
 
 Everybody loves eating at Chipotle Mexican Grill. 
