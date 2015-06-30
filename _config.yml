@@ -27,7 +27,7 @@ kramdown:
 # Site owner
 owner:
   name: Francisco Marquez
-  avatar: bio-photo.jpg
+  avatar: me.jpg
   bio: "Describe your self."
   email: 
   disqus-shortname: 
@@ -42,7 +42,7 @@ owner:
   bing-verify: 
   github: #username
   stackoverflow: #http://stackoverflow.com/users/123456/username
-  linkedin: #username
+  linkedin: franciscomarquezgutierrez
   instagram: #username
   lastfm: #username
   tumblr: #username
