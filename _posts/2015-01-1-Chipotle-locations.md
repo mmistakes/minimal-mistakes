@@ -25,12 +25,12 @@ Another variable I wanted to test concerned money. Having a meal between $8 and 
 	<figcaption>Probability map of zip codes likely to have a Chipotle restaurant.</figcaption>
 </figure>
 
-{% highlight html %}
+
 <figure class="half">
     <a href="/images/Chipotle/ChipotlePlot.jpeg"><img src="/images/Chipotle/ChipotlePlot.jpeg"></a>
     <figcaption>Caption describing these two images.</figcaption>
 </figure>
-{% endhighlight %}
+
 
 
 
