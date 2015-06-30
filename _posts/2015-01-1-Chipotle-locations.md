@@ -27,7 +27,10 @@ Another variable I wanted to test concerned income. Meal prices ranging between 
 	<figcaption>Probability map of zip codes likely to have a Chipotle restaurant.</figcaption>
 </figure>
 Considering that the average per capita income is $26,010 and the third quartile begins at $29,670, we can see how franchise owners see a better opporunity in areas where the average per capita income is around the $30,000 treshold. 
-
+<figure>
+	<a href="/images/Chipotle/America_income.jpeg"><img src="/images/Chipotle/America_income.jpeg"></a>
+	<figcaption>Probability map of zip codes likely to have a Chipotle restaurant.</figcaption>
+</figure>
 
 <figure>
     <a href="/images/Chipotle/ChipotlePlot.jpeg"><img src="/images/Chipotle/ChipotlePlot.jpeg"></a>
