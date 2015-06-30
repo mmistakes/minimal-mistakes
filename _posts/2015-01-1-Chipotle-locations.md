@@ -8,9 +8,11 @@ modified: 2015-06-28
 comments: true
 ---
 
-Everybody loves eating at Chipotle Mexican Grill. 
+A new Chipotle Restaurant opened in my neighborhood, and while I was enjoying a delicious chicken bowl, I began wondering who was Chipotle's primary consumer. In addition to this, I decided to plot a forecast for those folks out there looking to buy a house but not knowing if they will have a Chipotle restuarant close to them in the near future.
+
 <p><br></p>
-The first part of this project consists of getting every single Chipotle location in America. After my google-fu failed to take me to a site with every Chipotle restaurant, I wrote a scrapper to check each and every every zip code in america on Chipotle's website. There are about 60k zip codes in the United States so this took a while.
+The first part of this project consists of getting every single Chipotle location in America. After my google-fu failed to take me to a site with every Chipotle restaurant, I wrote a scrapper to check each and every every zip code in america on Chipotle's website. There are about 60k zip codes in the United States so this took a while but in the end I discovered there are 1,140 Chipotle Restaurants in America!
+
 <p><br></p>
 Once I organied my data I was very curious in finding if Chipotle's restaurants were distributed evenly across all demographics? As the histogram below shows, there are more Chipotle resturants in Zip Codes where there is a predominance of white people. 
 
