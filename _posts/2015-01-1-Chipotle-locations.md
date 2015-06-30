@@ -8,24 +8,25 @@ modified: 2015-06-28
 comments: true
 ---
 
-A new Chipotle Restaurant opened in my neighborhood, and while I was enjoying a delicious chicken bowl, I began wondering who was Chipotle's primary consumer. In addition to this, I decided to plot a forecast for those folks out there looking to buy a house but not knowing if they will have a Chipotle restuarant close to them in the near future.
+A new Chipotle Restaurant opened in my neighborhood, and while I was enjoying a delicious chicken bowl, I began wondering who was Chipotle's primary consumer. In addition to this, I decided to plot a forecast for those folks out there looking to buy a house but not knowing if they will have a Chipotle restuarant close to them in the near future is currently holding them back.
 
 <p><br></p>
-The first part of this project consists of getting every single Chipotle location in America. After my google-fu failed to take me to a site with every Chipotle restaurant, I wrote a scrapper to check each and every every zip code in america on Chipotle's website. There are about 60k zip codes in the United States so this took a while but in the end I discovered there are 1,140 Chipotle Restaurants in America!
+The first part of this project consisted of getting every single Chipotle location in America. After my google-fu failed to take me to a site with every Chipotle restaurant, I wrote a scrapper to check each and every every zip code in America on Chipotle's website. There are about 60k zip codes in the United States so this took a while but in the end I discovered there are 1,140 Chipotle Restaurants in America!
 
 <p><br></p>
-Once I organied my data I was very curious in finding if Chipotle's restaurants were distributed evenly across all demographics? As the histogram below shows, there are more Chipotle resturants in Zip Codes where there is a predominance of white people. 
+Once I organzied my data I studied the demographic variable. As the histogram below shows, there are more Chipotle resturants in Zip Codes where there is a predominance of white people. 
 
 <figure>
 	<a href="/images/Chipotle/ChipotleDemo.jpeg"><img src="/images/Chipotle/ChipotleDemo.jpeg"></a>
 	<figcaption>Probability map of zip codes likely to have a Chipotle restaurant.</figcaption>
 </figure>
 
-Another variable I wanted to test concerned money. Having a meal between $8 and $10 is affordable but not necesarily cheap. The histogram below shows that me majority of the restaurants are located in Zip Codes where the average income ranges between $30k-$50k. By the wasy, In case you are curious the upper tail is New York.
+Another variable I wanted to test concerned income. Meal prices ranging between $8 and $10 is affordable but not necesarily cheap. The histogram below shows that me majority of the restaurants are located in Zip Codes where the average income ranges between $30k-$50k.  
 <figure>
 	<a href="/images/Chipotle/Income_histogram.jpeg"><img src="/images/Chipotle/Income_histogram.jpeg"></a>
 	<figcaption>Probability map of zip codes likely to have a Chipotle restaurant.</figcaption>
 </figure>
+Considering that the average per capita income is $26,010 and the third quartile begins at $29,670, we can see how franchise owners see a better opporunity in areas where the average per capita income is around the $30,000 treshold. 
 
 
 <figure>
