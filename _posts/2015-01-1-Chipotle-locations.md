@@ -26,7 +26,7 @@ Another variable I wanted to test concerned money. Having a meal between $8 and 
 </figure>
 
 
-<figure class="half">
+<figure>
     <a href="/images/Chipotle/ChipotlePlot.jpeg"><img src="/images/Chipotle/ChipotlePlot.jpeg"></a>
     <figcaption>Caption describing these two images.</figcaption>
 </figure>
