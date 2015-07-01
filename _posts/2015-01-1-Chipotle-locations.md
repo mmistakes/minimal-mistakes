@@ -38,11 +38,11 @@ Once I understood the variables, I decided to run a logistic regression to obtai
 \\( 1/x^{2} \\), and here is a block rendering: 
 \\[ \frac{1}{n^{2}} \\]
 
-\\(\pi(x)= \frac{1}{1+e^{-\Beta X}} \\)
+\\(\pi(x)= \frac{1}{1+e^{-\beta X}} \\)
 
 where:
 
-\\( \Beta X = \Beta _{0} +\Beta _{1}X _{1}   \\)
+\\( \beta X = \beta _{0} +\beta _{1}X _{1}   \\)
 <figure>
     <a href="/images/Chipotle/ChipotlePlot.jpeg"><img src="/images/Chipotle/ChipotlePlot.jpeg"></a>
     <figcaption></figcaption>
