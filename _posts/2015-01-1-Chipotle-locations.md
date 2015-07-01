@@ -38,6 +38,8 @@ Once I understood the variables, I decided to run a logistic regression to obtai
 \\( 1/x^{2} \\), and here is a block rendering: 
 \\[ \frac{1}{n^{2}} \\]
 
+\\ \pi(x)=[ \frac{1}{1+e^{-BX}} \\]
+
 <figure>
     <a href="/images/Chipotle/ChipotlePlot.jpeg"><img src="/images/Chipotle/ChipotlePlot.jpeg"></a>
     <figcaption></figcaption>
