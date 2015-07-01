@@ -6,12 +6,10 @@
 - title: Sample Posts
   url: /posts/
 {% comment %}
-{%  
+ 
 
 - title: Theme Setup
   url: /theme-setup/
 
-- title: Made Mistakes
-  url: http://mademistakes.com
-%}
+
 {% endcomment %}  
