@@ -34,6 +34,10 @@ This is not too surprising, as shown in the histogram below, the majority of the
 </figure>
 
 Once I understood the variables, I decided to run a logistic regression to obtain the probabilty of having a Chipotle store. 
+
+\\( 1/x^{2} \\), and here is a block rendering: 
+\\[ \frac{1}{n^{2}} \\]
+
 <figure>
     <a href="/images/Chipotle/ChipotlePlot.jpeg"><img src="/images/Chipotle/ChipotlePlot.jpeg"></a>
     <figcaption></figcaption>
