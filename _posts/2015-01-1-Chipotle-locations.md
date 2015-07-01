@@ -44,11 +44,11 @@ where:
 
 
 <figure>
-    <a href="/images/Chipotle/ChipotlePlot.jpeg"><img src="/images/Chipotle/ChipotlePlot.jpeg"></a>
+    <a <img src="/images/Chipotle/ChipotlePlot.jpeg"></a>
     <figcaption></figcaption>
 </figure>
 
-
+href="/images/Chipotle/ChipotlePlot.jpeg">
 
 
 
