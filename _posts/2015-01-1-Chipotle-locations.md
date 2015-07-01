@@ -48,7 +48,7 @@ where:
     <figcaption></figcaption>
 </figure>
 
-href="/images/Chipotle/ChipotlePlot.jpeg">
+
 
 
 
