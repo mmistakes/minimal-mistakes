@@ -40,7 +40,7 @@ Once I understood the variables, I decided to run a logistic regression to obtai
 
 where:
 
-\\( \beta X = \beta _{0} +\beta _{1}X _{per \quad capita \quad income} + \beta _{2}X _{median \quad age}+\beta _{3}X _{White}+\beta _{4}X _{per \quad capita \quad income \times median \quad age}  \\)
+\\( \beta X = \beta _{0} +\beta _{1}X _{per \, capita \, income} + \beta _{2}X _{median \, age}+\beta _{3}X _{White}+\beta _{4}X _{per \, capita \, income \times median \, age}  \\)
 
 
 
