@@ -18,23 +18,26 @@ Once I organzied my data I studied the demographic variable. As the histogram be
 
 <figure>
 	<a href="/images/Chipotle/ChipotleDemo.jpeg"><img src="/images/Chipotle/ChipotleDemo.jpeg"></a>
-	<figcaption>Probability map of zip codes likely to have a Chipotle restaurant.</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Another variable I wanted to test concerned income. Meal prices ranging between $8 and $10 is affordable but not necesarily cheap. The histogram below shows that me majority of the restaurants are located in Zip Codes where the average income ranges between $30k-$50k.  
 <figure>
 	<a href="/images/Chipotle/Income_histogram.jpeg"><img src="/images/Chipotle/Income_histogram.jpeg"></a>
-	<figcaption>Probability map of zip codes likely to have a Chipotle restaurant.</figcaption>
+	<figcaption></figcaption>
 </figure>
-Considering that the average per capita income is $26,010 and the third quartile begins at $29,670, we can see how franchise owners see a better opporunity in areas where the average per capita income is around the $30,000 treshold. 
+This is not too surprising, as shown in the histogram below, the majority of the population falls between the $20k - $40k per capita income range.  
+
+
+Once I understood the variables, I decided to run a logistic regression to obtain the probabilty of having a Chipotle store. 
 <figure>
 	<a href="/images/Chipotle/America_income.jpeg"><img src="/images/Chipotle/America_income.jpeg"></a>
-	<figcaption>Probability map of zip codes likely to have a Chipotle restaurant.</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 <figure>
     <a href="/images/Chipotle/ChipotlePlot.jpeg"><img src="/images/Chipotle/ChipotlePlot.jpeg"></a>
-    <figcaption>Caption describing these two images.</figcaption>
+    <figcaption></figcaption>
 </figure>
 
 
