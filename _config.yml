@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title:            Site Title
+title:            FranciscoMarquez
 locale:           en_US
 url:              
 
@@ -28,7 +28,7 @@ kramdown:
 owner:
   name: Francisco Marquez
   avatar: me.jpg
-  bio: "Describe your self."
+  bio: "Data analyst, computer geek, soccer fan "
   email: 
   disqus-shortname: 
   twitter: #username
