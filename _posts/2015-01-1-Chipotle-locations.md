@@ -44,7 +44,7 @@ where:
 
 
 <figure>
-    <a <img src="/images/Chipotle/ChipotlePlot.jpeg"></a>
+     <img src="/images/Chipotle/ChipotlePlot.jpeg">
     <figcaption></figcaption>
 </figure>
 
