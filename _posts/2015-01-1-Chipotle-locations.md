@@ -28,13 +28,12 @@ Another variable I wanted to test concerned income. Meal prices ranging between 
 </figure>
 This is not too surprising, as shown in the histogram below, the majority of the population falls between the $20k - $40k per capita income range.  
 
-
-Once I understood the variables, I decided to run a logistic regression to obtain the probabilty of having a Chipotle store. 
 <figure>
 	<a href="/images/Chipotle/America_income.jpeg"><img src="/images/Chipotle/America_income.jpeg"></a>
 	<figcaption></figcaption>
 </figure>
 
+Once I understood the variables, I decided to run a logistic regression to obtain the probabilty of having a Chipotle store. 
 <figure>
     <a href="/images/Chipotle/ChipotlePlot.jpeg"><img src="/images/Chipotle/ChipotlePlot.jpeg"></a>
     <figcaption></figcaption>
