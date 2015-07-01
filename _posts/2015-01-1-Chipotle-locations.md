@@ -11,9 +11,11 @@ comments: true
 A new Chipotle Restaurant opened in my neighborhood, and while I was enjoying a delicious chicken bowl, I began wondering who was Chipotle's primary consumer. In addition to this, I decided to plot a forecast for those folks out there looking to buy a house but not knowing if they will have a Chipotle restuarant close to them in the near future is currently holding them back.
 
 <p><br></p>
-The first part of this project consisted of getting every single Chipotle location in America. After my google-fu failed to take me to a site with every Chipotle restaurant, I wrote a scrapper to check each and every every zip code in America on Chipotle's website. There are about 60k zip codes in the United States so this took a while but in the end I discovered there are 1,140 Chipotle Restaurants in America!
+The first part of this project consisted of getting every single Chipotle location in America. After my google-fu failed to take me to a site with every Chipotle restaurant, I wrote a scrapper to check each and every every zip code in America on Chipotle's website. There are about 60k zip codes in the United States, so this took a while but in the end I discovered there are 1,140 Chipotle Restaurants in America!
 
 <p><br></p>
+I used the choroplethrZip package to get demographic information at a Zip Code level. This data is from 2013, but for simplicity I assumed this data was recent. You can find the package in it's
+<a href="https://github.com/arilamstein/choroplethrZip">GitHub</a> page.
 Once I organzied my data I studied the demographic variable. As the histogram below shows, there are more Chipotle resturants in Zip Codes where there is a predominance of white people. 
 
 <figure>
