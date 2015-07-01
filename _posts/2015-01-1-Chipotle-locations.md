@@ -35,14 +35,15 @@ This is not too surprising, as shown in the histogram below, the majority of the
 
 Once I understood the variables, I decided to run a logistic regression to obtain the probabilty of having a Chipotle store. 
 
-\\( 1/x^{2} \\), and here is a block rendering: 
-\\[ \frac{1}{n^{2}} \\]
 
 \\(\pi(x)= \frac{1}{1+e^{-\beta X}} \\)
 
 where:
 
-\\( \beta X = \beta _{0} +\beta _{1}X _{1}   \\)
+\\( \beta X = \beta _{0} +\beta _{1}X _{per capita income} + \beta _{2}X _{medianage}+\beta _{3}X _{White}+\beta _{4}X _{per capita income x median age}  \\)
+
+
+
 <figure>
     <a href="/images/Chipotle/ChipotlePlot.jpeg"><img src="/images/Chipotle/ChipotlePlot.jpeg"></a>
     <figcaption></figcaption>
