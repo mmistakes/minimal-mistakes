@@ -51,36 +51,6 @@ where:
 
 
 
-To assign Billy Rick as an author for our post. You'd add the following YAML front matter to a post:
 
-{% highlight yaml %}
-author: billy_rick
-{% endhighlight %}
-
-### Standard Code Block
-
-    {% raw %}
-    <nav class="pagination" role="navigation">
-        {% if page.previous %}
-            <a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}">Previous article</a>
-        {% endif %}
-        {% if page.next %}
-            <a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}">Next article</a>
-        {% endif %}
-    </nav><!-- /.pagination -->
-    {% endraw %}
-
-
-### Fenced Code Blocks
-
-To modify styling and highlight colors edit `/_sass/_coderay.scss`. Line numbers and a few other things can be modified in `_config.yml`. Consult [Jekyll's documentation](http://jekyllrb.com/docs/configuration/) for more information.
-
-~~~ css
-#container {
-    float: left;
-    margin: 0 -240px 0 0;
-    width: 100%;
-}
-~~~
 
 
