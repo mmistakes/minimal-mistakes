@@ -16,22 +16,17 @@ The first part of this project consisted of getting every single Chipotle locati
 <p><br></p>
 I used the choroplethrZip package (<a href="https://github.com/arilamstein/choroplethrZip">GitHub link</a>) to get demographic information at a Zip Code level. This data is from 2013, but for simplicity I assumed not many new restaurants opened since then (I know, BIG flaw).
 <p><br></p>
-Once I organzied my data I studied the demographic variable. As the histogram below shows, there are more Chipotle resturants in Zip Codes where there is a predominance of white people. 
+Once I organzied my data I studied the demographic variable. As the histogram below shows, there are more Chipotle resturants in Zip Codes where there is a predominance of white people. The graph on the right is not limited to Zip Codes with a Chipotle restuarant. Comparing them side by side we can see how the reason why there are more restaurants in Zip Codes where the white population is the majority may be simply because there are more Zip Codes where the white population is a majority.
 
 <figure>
-	<a href="/images/Chipotle/ChipotleDemo.jpeg"><img src="/images/Chipotle/ChipotleDemo.jpeg"></a>
+	<a href="/images/Chipotle/ChipotleDemo.jpeg"><img src="/images/Chipotle/demographic.jpeg"></a>
 	<figcaption></figcaption>
 </figure>
 
-Another variable I wanted to test concerned income. Meal prices ranging between $8 and $10 is affordable but not necesarily cheap. The histogram below shows that me majority of the restaurants are located in Zip Codes where the average income ranges between $30k-$50k.  
-<figure>
-	<a href="/images/Chipotle/Income_histogram.jpeg"><img src="/images/Chipotle/Income_histogram.jpeg"></a>
-	<figcaption></figcaption>
-</figure>
-This is not too surprising, as shown in the histogram below, the majority of the population falls between the $20k - $40k per capita income range.  
+Another variable I wanted to test concerned income. Meal prices ranging between $8 and $10 is affordable but not necesarily cheap. The histogram below shows that me majority of the restaurants are located in Zip Codes where the average income ranges between $30k-$50k.  Just like with demographics, the income variable is not too surprising. As shown in the histogram below, the majority of the population in the United States falls between the $20k - $40k per capita income range.  
 
 <figure>
-	<a href="/images/Chipotle/America_income.jpeg"><img src="/images/Chipotle/America_income.jpeg"></a>
+	<a href="/images/Chipotle/America_income.jpeg"><img src="/images/Chipotle/Per_capita_income.jpeg"></a>
 	<figcaption></figcaption>
 </figure>
 
