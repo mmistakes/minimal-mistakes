@@ -142,8 +142,7 @@ To set what links appear in the top navigation edit `_data/navigation.yml`. Use 
 - title: Portfolio
   url: /portfolio/
 
-- title: Made Mistakes
-  url: http://mademistakes.com  
+
 {% endhighlight %}
 
 ---
