@@ -37,6 +37,8 @@ Another variable I considered was age. The median age of Chipotle consumers is 3
 	<figcaption></figcaption>
 </figure>
 
+
+
 Once I understood the variables, I decided to run a logistic regression to obtain the probabilty of having a Chipotle store. The probability \\( \pi \\) is determined by the following equation:
 
 \\(\pi(x)= \frac{1}{1+e^{-\beta X}} \\)
