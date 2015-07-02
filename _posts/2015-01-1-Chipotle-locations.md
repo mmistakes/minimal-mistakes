@@ -37,6 +37,12 @@ Another variable I considered was age. The median age of Chipotle consumers is 3
 	<figcaption></figcaption>
 </figure>
 
+The last variable I looked at was population. The average population per Zip Code in the United States is 9,517 and the average population for Zip Codes with a Chipotle restaurant is 32,470 and the minimum population in a Zip Code with a restaurant is 21,140. The graph below shows how regions with a high population are selected to have a Chipotle restuarants. Obviously.
+
+<figure>
+	<a href="/images/Chipotle/Population.jpeg"><img src="/images/Chipotle/Population.jpeg"></a>
+	<figcaption></figcaption>
+</figure>
 
 
 Once I understood the variables, I decided to run a logistic regression to obtain the probabilty of having a Chipotle store. The probability \\( \pi \\) is determined by the following equation:
