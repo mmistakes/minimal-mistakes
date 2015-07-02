@@ -30,7 +30,7 @@ Another variable I wanted to test concerned income. Meal prices ranging between 
 	<figcaption></figcaption>
 </figure>
 
-Another variable I considered was age. The median age of Chipotle consumers is 37. Four years shy 41, the national median age. The histogram below shows how the average age of Zip Codes with a Chipotle restaurant is a sample of the national data set. 
+Another variable I considered was age. The median age of Chipotle consumers is 37. Four years shy 41, the national median age. Just like the previous two graphics, the graph below shows how the average age of Zip Codes with a Chipotle restaurant is a sample of the national data set. 
 
 <figure>
 	<a href="/images/Chipotle/Age_histogram.jpeg"><img src="/images/Chipotle/Age_histogram.jpeg"></a>
