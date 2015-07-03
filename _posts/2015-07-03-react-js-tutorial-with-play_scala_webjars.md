@@ -5,8 +5,6 @@ excerpt: "The official ReactJS tutorial implemented with Play Framework, using S
 modified: 2015-07-03
 tags: [scala, webjars, play framework, reactjs]
 comments: true
-image:
-  feature: sample-image-5.jpg
 ---
 
 *This tutorial goes in combination with the Facebook [introduction tutorial](https://facebook.github.io/react/docs/tutorial.html) on React.js. The code of this project is available here: https://github.com/ticofab/play-scala-webjars-react.*
