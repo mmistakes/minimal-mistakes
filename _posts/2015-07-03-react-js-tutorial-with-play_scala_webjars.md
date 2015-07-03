@@ -21,7 +21,7 @@ First of all, setup a new basic Play application using Activator:
     
 Choose `play-scala` as starting point and fire up your development tools. I personally favor IntelliJ with the Scala plugin, which allows you to import the project from an external SBT module.
 
-The first thing you want to do with a view on using WebJars is import the [`webjars-play`](http://www.webjars.org/documentation) helper library in your `build.sbt`:
+The first thing you want to do with a view on using WebJars is import the [webjars-play](http://www.webjars.org/documentation) helper library in your `build.sbt`:
 
     org.webjars" %% "webjars-play" % "2.4.0-1
     
@@ -33,7 +33,7 @@ At this point we're ready to import React in our `build.sbt` file. As simple as 
 
     org.webjars" % "react" % "0.13.3"
     
-React recommends writing your code in [JSX](https://jsx.github.io), which is an abstraction of Javascript. It is statically typed and mostly type-safe. JSX code is then precompiled to Javascript and ran as any other .js file. If you don't the precompilation on your server, it will be automagically done in the browser, but this will lead to the runtime warning ` In order to enable this precompilation, we need to include the [`sbt-react`](https://github.com/ddispaltro/sbt-reactjs) plugin to our project. Open the file `plugins.sbt` in your `project` folder and add
+React recommends writing your code in [JSX](https://jsx.github.io), which is an abstraction of Javascript. It is statically typed and mostly type-safe. JSX code is then precompiled to Javascript and ran as any other .js file. If you don't the precompilation on your server, it will be automagically done in the browser, but this will lead to the runtime warning. In order to enable this precompilation, we need to include the [sbt-react](https://github.com/ddispaltro/sbt-reactjs) plugin to our project. Open the file `plugins.sbt` in your `project` folder and add
 
     addSbtPlugin("com.github.ddispaltro" % "sbt-reactjs" % "0.5.0")
     
@@ -56,7 +56,7 @@ Now we're all set to start following the Facebook tutorial. Create your own view
     </body>
     </html>
     
-Note the `.fullpath` call in the `react` inclusion. This is needed as there are two instances of `react.js` in the React library, so we need to specify its position to the locator. [See [this question](http://stackoverflow.com/questions/28347769/why-cant-i-access-the-file-react-js-from-the-react-0-12-2-webjar) on StackOverflow.]. As my personal advice, be careful to use single quotes in the `<script>` tags: using double quotes might mess up your paths.
+Note the `.fullpath` call in the `react` inclusion. This is needed as there are two instances of `react.js` in the React library, so we need to specify its position to the locator; see [this question](http://stackoverflow.com/questions/28347769/why-cant-i-access-the-file-react-js-from-the-react-0-12-2-webjar) on StackOverflow. As my personal advice, be careful to use single quotes in the `<script>` tags: using double quotes might mess up your paths.
 
 When it will be time to create your JSX file, create a new package `assets` inside the package `app` and a package `javascripts` under `assets`. That's where you'll store the JSX file you will reference from your HTML file. I called it `reactTest.jsx` (note the `.jsx` extension, marking that it's written in JSX), but from the point of view of the html file, you need to consider the translation to javascript. Therefore, our inclusion will be
 
