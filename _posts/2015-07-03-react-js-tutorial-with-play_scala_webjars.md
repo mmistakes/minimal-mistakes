@@ -7,7 +7,7 @@ tags: [scala, webjars, play framework, reactjs]
 comments: true
 ---
 
-*This tutorial goes in combination with the Facebook [introduction tutorial](https://facebook.github.io/react/docs/tutorial.html) on React.js. The code of this project is available here: https://github.com/ticofab/play-scala-webjars-react.*
+*This tutorial goes in combination with the Facebook [introduction tutorial](https://facebook.github.io/react/docs/tutorial.html) on React.js. The code of this project is available [here on GitHub](https://github.com/ticofab/play-scala-webjars-react).*
 
 I do mostly backend & mobile development, but am very interested in the direction the web is going. I decided to follow the basic [React tutorial](https://facebook.github.io/react/docs/tutorial.html) from Facebook and implement it using [Play Framework](https://www.playframework.com) and, most crucially, [WebJars](http://www.webjars.org). It took me quite a few hours to get the whole thing working together, so I'm now writing about hoping to help someone else.
 
@@ -59,7 +59,7 @@ Go back to `build.sbt` and enable the `SbtWeb` plugin by adding it next to the P
 
 {% highlight html %}
 {% raw %}
-azy val root = (project in file(".")).enablePlugins(PlayScala, SbtWeb)
+lazy val root = (project in file(".")).enablePlugins(PlayScala, SbtWeb)
 {% endraw %}
 {% endhighlight %}
 
