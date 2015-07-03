@@ -27,7 +27,7 @@ The first thing you want to do with a view on using WebJars is import the [webja
 
 {% highlight html %}
 {% raw %}
-org.webjars" %% "webjars-play" % "2.4.0-1
+org.webjars" %% "webjars-play" % "2.4.0-1"
 {% endraw %}
 {% endhighlight %}
 
@@ -47,7 +47,7 @@ org.webjars" % "react" % "0.13.3"
 {% endraw %}
 {% endhighlight %}
 
-React recommends writing your code in [JSX](https://jsx.github.io), which is an abstraction of Javascript. It is statically typed and mostly type-safe. JSX code is then precompiled to Javascript and ran as any other .js file. If you don't the precompilation on your server, it will be automagically done in the browser, but this will lead to the runtime warning. In order to enable this precompilation, we need to include the [sbt-react](https://github.com/ddispaltro/sbt-reactjs) plugin to our project. Open the file `plugins.sbt` in your `project` folder and add
+React recommends writing your code in [JSX](https://jsx.github.io), which is an abstraction of Javascript. It is statically typed and mostly type-safe. JSX code is then precompiled to Javascript and ran as any other .js file. If you don't do the precompilation on your server, it will be automagically done in the browser, but this will lead to a runtime warning and performance deterioration. In order to enable the server-side precompilation, we need to include the [sbt-react](https://github.com/ddispaltro/sbt-reactjs) plugin to our project. Open the file `plugins.sbt` in your `project` folder and add
 
 {% highlight html %}
 {% raw %}
@@ -82,9 +82,9 @@ Now we're all set to start following the Facebook tutorial. Create your own view
 {% endraw %}
 {% endhighlight %}
 
-Note the `.fullpath` call in the `react` inclusion. This is needed as there are two instances of `react.js` in the React library, so we need to specify its position to the locator; see [this question](http://stackoverflow.com/questions/28347769/why-cant-i-access-the-file-react-js-from-the-react-0-12-2-webjar) on StackOverflow. As my personal advice, be careful to use single quotes in the `<script>` tags: using double quotes might mess up your paths.
+Note the `.fullpath` call in the `react` inclusion. This is needed as there are two instances of `react.js` in the React library, so we need to specify its position to the locator; see [this question](http://stackoverflow.com/questions/28347769/why-cant-i-access-the-file-react-js-from-the-react-0-12-2-webjar) on StackOverflow. As my personal advice,  use single quotes in the `<script>` tags; double quotes might mess up your paths.
 
-When it will be time to create your JSX file, create a new package `assets` inside the package `app` and a package `javascripts` under `assets`. That's where you'll store the JSX file you will reference from your HTML file. I called it `reactTest.jsx` (note the `.jsx` extension, marking that it's written in JSX), but from the point of view of the html file, you need to consider the translation to javascript. Therefore, our inclusion will be
+Proceed with the tutorial. When the moment comes to create your JSX file, create first a new package `assets` inside the package `app` and a package `javascripts` under `assets`. `app.assets.javascripts` is where you'll store the JSX file you will reference from your HTML file. I called it `reactTest.jsx` (note the `.jsx` extension), but from the point of view of the HTML file, you need to consider the translation to javascript. Therefore, our inclusion will be
 
 {% highlight html %}
 {% raw %}
@@ -92,7 +92,7 @@ When it will be time to create your JSX file, create a new package `assets` insi
 {% endraw %}
 {% endhighlight %}
 
-and not, for instance
+and not
 
 {% highlight html %}
 {% raw %}
@@ -100,7 +100,7 @@ and not, for instance
 {% endraw %}
 {% endhighlight %}
 
-Also, you will need to include this file after the definition of your "content" `div`. This is because the content of such script will resolve directly in DOM elements. Including this file in the `<head>` section would reault in an error at runtime. Our `<body>` will look like this:
+Also, you will need to include this file after the definition of your "content" `div`. This is because the content of such script will resolve directly in DOM elements. Including this file in the `<head>` section would result in a runtime error. Our `<body>` will look like this:
 
 {% highlight html %}
 {% raw %}
@@ -113,7 +113,7 @@ Also, you will need to include this file after the definition of your "content" 
 
 Proceed with the tutorial. Don't forget to `run` your server in between steps to check how it is going!
 
-At some point, the tutorial will point you to the `marked.js` library, which is able to parse MarkDown straight from your Javascript (JSX) file. Nothing easier, now that we know how to work with WebJars. In order to find if there is a WebJar available, check directly on the WebJar website. After finding out that it's there, include it into your `build.sbt` file:
+At some point, the tutorial will point you to the `marked.js` library, which is able to parse MarkDown straight from your Javascript (JSX) file. Nothing easier, now that we know how to work with WebJars. In order to find if there is a WebJar available, check directly on the WebJar website. After finding out, include it into your `build.sbt` file:
 
 {% highlight html %}
 {% raw %}
@@ -129,7 +129,7 @@ and reference it from your HTML file as
 {% endraw %}
 {% endhighlight %}
 
-As you go through, at some point it will ask you to generate content from a server. We're working with Play, so again: nothing easier! Add an endpoint in the `routes` file
+As you code through, at some point it will ask you to generate content from a server. We're working with Play, so again: nothing easier! Add an endpoint in the `routes` file
 
 {% highlight html %}
 {% raw %}
