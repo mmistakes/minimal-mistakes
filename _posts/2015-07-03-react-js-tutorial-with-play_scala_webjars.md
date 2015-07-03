@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ReactJS Tutorial with Play, Scala and WebJars.
-excerpt: "The official ReactJS tutorial implemented with Play Framework, using Scala and WebJars"
+excerpt: "The official ReactJS tutorial implemented with Play Framework, using Scala and WebJars."
 modified: 2015-07-03
 tags: [scala, webjars, play framework, reactjs]
 comments: true
