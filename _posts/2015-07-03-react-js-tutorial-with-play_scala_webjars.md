@@ -63,7 +63,7 @@ lazy val root = (project in file(".")).enablePlugins(PlayScala, SbtWeb)
 {% endraw %}
 {% endhighlight %}
 
-**Note**: after changes in `build.sbt` or `plugins.sbt`, you most likely need to close and rebuild the project from command line: launch `activator` in the project folder and then `clean` and `compile`.
+**Note**: after changes in `build.sbt` or `plugins.sbt`, you most likely need to reload the project; the simplest way is to use the `reload` command from the sbt console. Otherwise, just close and rebuild the project from command line (that is, launch `activator` in the project folder and then `clean` and `compile`).
 
 Now we're all set to start following the Facebook tutorial. Create your own view in the `views` package or modify the existing `index.scala.html`. Whichever you choose, add the `react.js` and `JSXTransformer.js` libraries. It should look like this:
 
