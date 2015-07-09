@@ -7,7 +7,7 @@ tags: [scala, play framework, websocket]
 comments: true
 ---
 
-My most popular repository on GitHub is my [Simple Play Websocket Server](https://github.com/ticofab/simple-play-websocket-server), so I'm writing a little explanatory post to go with it.
+My most popular repository on GitHub is the [Simple Play Websocket Server](https://github.com/ticofab/simple-play-websocket-server), so I'm writing a little explanatory post to go with it.
 
 I assume you have created a new Play/Scala application. There are two ways you can create a Websocket endpoint in your server:
 
@@ -16,7 +16,7 @@ I assume you have created a new Play/Scala application. There are two ways you c
 
 My example server uses both, but I personally favor the second option. Iteratees and Enumerators are more complicated than using an Actor at first glance, but they are also closer to the functional core of Play and definitely more elegant in terms of behaviors that you can achieve with it. To follow this example, you need a basic understanding of Iteratees and Enumerators.
 
-As you have read, a WebSocket endpoint can return an `(Iteratee, Enumerator)` pair. The first example is an echo endpoint that sends back whatever it receives. Remember that each example needs the corresponding endpoint defined in you router!
+As you have read, a WebSocket endpoint can return an `(Iteratee, Enumerator)` pair. The first example is an echo endpoint that sends back whatever it receives. Remember that each example needs the corresponding endpoint defined in you `routes` file - or a different injected router since Play 2.4.
 
 {% highlight scala %}
 {% raw %}
@@ -36,7 +36,7 @@ def wsEcho = WebSocket.using[String] {
 
 The most interesting thing about this snippet is the use of `Concurrent.unicast[A]`. According to the [documentation](https://www.playframework.com/documentation/2.4.x/api/scala/index.html#play.api.libs.iteratee.Concurrent$), this method returns an Enumerator coupled with an Iteratee that can be used to push stuff down it. The Enumerator is returned by `unicast`, but how do we obtain a reference to such Iteratee? It comes in the 'form' of a `Channel[A]` through the first argument of the `unicast` function: a function `Channel[A] => Unit` that you need to implement. Within such function, you can save the reference to the `Channel`, which is a structure around an Iteratee, providing methods such as `push`.
 
-The second example is nice to show the power of the Iteratee/Enumerator pair.
+The second example shows nicely the power of the Iteratee/Enumerator pair.
 
 {% highlight scala %}
 {% raw %}
@@ -49,7 +49,7 @@ def wsTime = WebSocket.using[String] {
 {% endraw %}
 {% endhighlight %}
 
-Here, we use the 'static' method `repeatM[A]` to indefinitely repeat a function returning a `Future[A]`. In the example, we send once a second the current timestamp down the channel, like a ticking clock, and at the same time we ignore any incoming messages. There are of course ways to do this using an Actor handlers, but I think the simplicity and conciseness of this approach is unbeatable.
+Here, we use the 'static' method `repeatM[A]` to indefinitely repeat a function returning a `Future[A]`. In the example, we send once a second the current timestamp down the channel, like a ticking clock, and at the same time we ignore any incoming messages. There are of course ways to achieve the same logic using an Actor handler, but I prefer the simplicity and conciseness of this approach.
 
 Another interesting example is the one using files:
 
@@ -92,9 +92,9 @@ def wsWithActor = WebSocket.acceptWithActor[String, String] {
 {% endraw %}
 {% endhighlight %}
 
-The EchoWebSocketActor receives as message any string that the client pushes up, and it tosses messages back to the client by sending a string as a message (`!`)to the system-generated actor `out`. With respect to the official documentation, the only added twist is that upon receiving "goodbye", the actor kills itself, closing the WebSocket connection.
+The EchoWebSocketActor receives as message any string that the client pushes up, and it tosses messages back to the client by sending a string as a message (`!`) to the system-generated actor `out`. With respect to the official documentation, the only added twist is that upon receiving "goodbye", the actor commits suicide, hence closing the WebSocket connection.
 
-Finally, an example combining a few tricks seen so far:
+Finally, an example that interacts a little more with the outside world:
 
 {% highlight scala %}
 {% raw %}
@@ -113,4 +113,4 @@ def wsWeatherIntervals = WebSocket.using[String] {
 
 This WebSocket connection ignores any input sent over by the connected client, but pushes down weather updates in Amsterdam, NL by proxying the OpenWeather API every 3 seconds. Only useful for serious weather freaks, the cool thing here is that all the proxying happens asynchronously. A responsive heaven!
 
-All the code plus nothing more is available at my [Simple Play Websocket Server](https://github.com/ticofab/simple-play-websocket-server) on GitHub.
+All the code plus nothing more is available at the [Simple Play Websocket Server](https://github.com/ticofab/simple-play-websocket-server) repository on GitHub.
