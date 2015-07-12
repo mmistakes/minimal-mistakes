@@ -14,9 +14,9 @@ I am dedicating this blog for testing and exploration of new packages and tools 
 
 ## Interests:
 
-*Sports
-*Finance
-*Marketing
+* Sports
+* Finance
+* Marketing
 * Music
 * Food
 * Tech
