@@ -50,7 +50,7 @@ The last variable I looked at was population. The average population per Zip Cod
 Once I understood the variables, I decided to run a logistic regression to obtain the probabilty of having a Chipotle store. After experimenting with many equations testing for Type I and Type II errors, I concluded the probability \\( \pi \\) is determined by the following equation:
 <p><br></p>
 \\(\pi(x)= \frac{1}{1+e^{-\beta X}} \\)
-<br>
+<p><br></p>
 where:
 <br>
 <p><br></p>
