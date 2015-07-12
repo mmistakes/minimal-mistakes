@@ -10,11 +10,14 @@ image:
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 
-This blog is meant for testing new packages and tools related to machine learning and data analytics.
+I am dedicating this blog for testing and exploration of new packages and tools related to machine learning and data analytics.
 
 ## Interests:
 
-* Test.
+*Sports
+*Finance
+*Marketing
+* Music
+* Food
+* Tech
 
-
-%<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install Minimal Mistakes Theme</a>
