@@ -53,6 +53,7 @@ Once I understood the variables, I decided to run a logistic regression to obtai
 where:
 <p><br></p>
 \\( \beta X = \beta _{0} +\beta _{1}X _{per \, capita \, income} + \beta _{2}X _{median \, age}+\beta _{3}X _{total \, population}+\beta _{4}X _{total \, population \times median \, age} +\beta _{5}X _{per \, capita \, income \times median \, age}  \\)
+<p><br></p>
 
 Using this equation to find Chipotle-like regions, I produced the map bellow.
 
