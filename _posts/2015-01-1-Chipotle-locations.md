@@ -70,8 +70,16 @@ Using this equation to find Chipotle-like regions, I produced the map bellow.
 
 
 
+To summarize, California, Texas, New York and FLorida are the states where Chipotle new restuarants should/would likely open. The plots below show the top 10 States and Citues for potential new Chipotle restaurants. 
 
+<figure>
+     <img src="/images/Chipotle/topStates.jpeg">
+    <figcaption></figcaption>
+</figure>
 
-
+<figure>
+     <img src="/images/Chipotle/topCities.jpeg">
+    <figcaption></figcaption>
+</figure>
 
 
