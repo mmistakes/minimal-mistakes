@@ -1,16 +1,16 @@
 {
-   "api_notes" : "To maximize performance, we are providing recently-cached data. This data was cached on Tue Oct  7 05:41:40 2014.",
+   "api_notes" : "To maximize performance, we are providing recently-cached data. This data was cached on Fri Jul 17 07:49:43 2015",
    "Profiles" : [
       {
          "FirstName" : "Michael",
-         "PublicationCount" : 14,
+         "PublicationCount" : "14",
          "Address" : {
-            "Longitude" : 0,
-            "Address2" : "San Francisco, CA 94143",
+            "Longitude" : "0",
+            "Address2" : "San Francisco, CA 94158",
             "Address4" : null,
             "Address1" : "675 Nelson Rising Lane",
             "Address3" : null,
-            "Latitude" : 0,
+            "Latitude" : "0",
             "Fax" : null,
             "Telephone" : "415-502-7651"
          },
@@ -19,7 +19,7 @@
                "Publication" : "PLoS biology",
                "Featured" : null,
                "Date" : "2013-11-19T00:00:00",
-               "Title" : "In Silico Molecular Comparisons of C. elegans and Mammalian Pharmacology Identify Distinct Targets That Regulate Feeding.",
+               "Title" : "In silico molecular comparisons of C. elegans and mammalian pharmacology identify distinct targets that regulate feeding.",
                "PublicationMedlineTA" : "PLoS Biol",
                "Year" : "2013",
                "PublicationSource" : [
@@ -29,7 +29,8 @@
                      "PMID" : "24260022"
                   }
                ],
-               "PublicationTitle" : "Lemieux GA, Keiser MJ, Sassano MF, Laggner C, Mayer F, Bainton RJ, Werb Z, Roth BL, Shoichet BK, Ashrafi K. In Silico Molecular Comparisons of C. elegans and Mammalian Pharmacology Identify Distinct Targets That Regulate Feeding. PLoS Biol. 2013 Nov; 11(11):e1001712.",
+               "PublicationCategory" : null,
+               "PublicationTitle" : "Lemieux GA, Keiser MJ, Sassano MF, Laggner C, Mayer F, Bainton RJ, Werb Z, Roth BL, Shoichet BK, Ashrafi K. In silico molecular comparisons of C. elegans and mammalian pharmacology identify distinct targets that regulate feeding. PLoS Biol. 2013 Nov; 11(11):e1001712.",
                "PublicationID" : "http://profiles.ucsf.edu/profile/25115718",
                "AuthorList" : "Lemieux GA, Keiser MJ, Sassano MF, Laggner C, Mayer F, Bainton RJ, Werb Z, Roth BL, Shoichet BK, Ashrafi K"
             },
@@ -47,6 +48,7 @@
                      "PMID" : "22722194"
                   }
                ],
+               "PublicationCategory" : null,
                "PublicationTitle" : "Lounkine E, Keiser MJ, Whitebread S, Mikhailov D, Hamon J, Jenkins JL, Lavan P, Weber E, Doak AK, Côté S, Shoichet BK, Urban L. Large-scale prediction and testing of drug activity on side-effect targets. Nature. 2012 Jun 21; 486(7403):361-7.",
                "PublicationID" : "http://profiles.ucsf.edu/profile/227913",
                "AuthorList" : "Lounkine E, Keiser MJ, Whitebread S, Mikhailov D, Hamon J, Jenkins JL, Lavan P, Weber E, Doak AK, Côté S, Shoichet BK, Urban L"
@@ -65,6 +67,7 @@
                      "PMID" : "22179068"
                   }
                ],
+               "PublicationCategory" : null,
                "PublicationTitle" : "Laggner C, Kokel D, Setola V, Tolia A, Lin H, Irwin JJ, Keiser MJ, Cheung CY, Minor DL, Roth BL, Peterson RT, Shoichet BK. Chemical informatics and target identification in a zebrafish phenotypic screen. Nat Chem Biol. 2012 Feb; 8(2):144-6.",
                "PublicationID" : "http://profiles.ucsf.edu/profile/298586",
                "AuthorList" : "Laggner C, Kokel D, Setola V, Tolia A, Lin H, Irwin JJ, Keiser MJ, Cheung CY, Minor DL, Roth BL, Peterson RT, Shoichet BK"
@@ -83,6 +86,7 @@
                      "PMID" : "21058655"
                   }
                ],
+               "PublicationCategory" : null,
                "PublicationTitle" : "Keiser MJ, Irwin JJ, Shoichet BK. The chemical basis of pharmacology. Biochemistry. 2010 Dec 7; 49(48):10267-76.",
                "PublicationID" : "http://profiles.ucsf.edu/profile/216489",
                "AuthorList" : "Keiser MJ, Irwin JJ, Shoichet BK"
@@ -101,6 +105,7 @@
                      "PMID" : "21048700"
                   }
                ],
+               "PublicationCategory" : null,
                "PublicationTitle" : "Yadav PN, Abbas AI, Farrell MS, Setola V, Sciaky N, Huang XP, Kroeze WK, Crawford LK, Piel DA, Keiser MJ, Irwin JJ, Shoichet BK, Deneris ES, Gingrich J, Beck SG, Roth BL. The presynaptic component of the serotonergic system is required for clozapine's efficacy. Neuropsychopharmacology. 2011 Feb; 36(3):638-51.",
                "PublicationID" : "http://profiles.ucsf.edu/profile/217662",
                "AuthorList" : "Yadav PN, Abbas AI, Farrell MS, Setola V, Sciaky N, Huang XP, Kroeze WK, Crawford LK, Piel DA, Keiser MJ, Irwin JJ, Shoichet BK, Deneris ES, Gingrich J, Beck SG, Roth BL"
@@ -119,6 +124,7 @@
                      "PMID" : "20540517"
                   }
                ],
+               "PublicationCategory" : null,
                "PublicationTitle" : "Ferreira RS, Simeonov A, Jadhav A, Eidam O, Mott BT, Keiser MJ, McKerrow JH, Maloney DJ, Irwin JJ, Shoichet BK. Complementarity between a docking and a high-throughput screen in discovering new cruzain inhibitors. J Med Chem. 2010 Jul 8; 53(13):4891-905.",
                "PublicationID" : "http://profiles.ucsf.edu/profile/294508",
                "AuthorList" : "Ferreira RS, Simeonov A, Jadhav A, Eidam O, Mott BT, Keiser MJ, McKerrow JH, Maloney DJ, Irwin JJ, Shoichet BK"
@@ -137,6 +143,7 @@
                      "PMID" : "20180535"
                   }
                ],
+               "PublicationCategory" : null,
                "PublicationTitle" : "DeGraw AJ, Keiser MJ, Ochocki JD, Shoichet BK, Distefano MD. Prediction and evaluation of protein farnesyltransferase inhibition by commercial drugs. J Med Chem. 2010 Mar 25; 53(6):2464-71.",
                "PublicationID" : "http://profiles.ucsf.edu/profile/241977",
                "AuthorList" : "DeGraw AJ, Keiser MJ, Ochocki JD, Shoichet BK, Distefano MD"
@@ -155,6 +162,7 @@
                      "PMID" : "20581797"
                   }
                ],
+               "PublicationCategory" : null,
                "PublicationTitle" : "Thomas KL, Ellingrod VL, Bishop JR, Keiser MJ. A pilot study of the pharmacodynamic impact of SSRI drug selection and beta-1 receptor genotype (ADRB1) on cardiac vital signs in depressed patients: a novel pharmacogenetic approach. Psychopharmacol Bull. 2010; 43(1):11-22.",
                "PublicationID" : "http://profiles.ucsf.edu/profile/31879616",
                "AuthorList" : "Thomas KL, Ellingrod VL, Bishop JR, Keiser MJ"
@@ -173,6 +181,7 @@
                      "PMID" : "19881490"
                   }
                ],
+               "PublicationCategory" : null,
                "PublicationTitle" : "Keiser MJ, Setola V, Irwin JJ, Laggner C, Abbas AI, Hufeisen SJ, Jensen NH, Kuijer MB, Matos RC, Tran TB, Whaley R, Glennon RA, Hert J, Thomas KL, Edwards DD, Shoichet BK, Roth BL. Predicting new molecular targets for known drugs. Nature. 2009 Nov 12; 462(7270):175-81.",
                "PublicationID" : "http://profiles.ucsf.edu/profile/288565",
                "AuthorList" : "Keiser MJ, Setola V, Irwin JJ, Laggner C, Abbas AI, Hufeisen SJ, Jensen NH, Kuijer MB, Matos RC, Tran TB, Whaley R, Glennon RA, Hert J, Thomas KL, Edwards DD, Shoichet BK, Roth BL"
@@ -191,6 +200,7 @@
                      "PMID" : "19701464"
                   }
                ],
+               "PublicationCategory" : null,
                "PublicationTitle" : "Adams JC, Keiser MJ, Basuino L, Chambers HF, Lee DS, Wiest OG, Babbitt PC. A mapping of drug space from the viewpoint of small molecule metabolism. PLoS Comput Biol. 2009 Aug; 5(8):e1000474.",
                "PublicationID" : "http://profiles.ucsf.edu/profile/332514",
                "AuthorList" : "Adams JC, Keiser MJ, Basuino L, Chambers HF, Lee DS, Wiest OG, Babbitt PC"
@@ -209,6 +219,7 @@
                      "PMID" : "19483698"
                   }
                ],
+               "PublicationCategory" : null,
                "PublicationTitle" : "Hert J, Irwin JJ, Laggner C, Keiser MJ, Shoichet BK. Quantifying biogenic bias in screening libraries. Nat Chem Biol. 2009 Jul; 5(7):479-83.",
                "PublicationID" : "http://profiles.ucsf.edu/profile/292807",
                "AuthorList" : "Hert J, Irwin JJ, Laggner C, Keiser MJ, Shoichet BK"
@@ -227,6 +238,7 @@
                      "PMID" : "19727616"
                   }
                ],
+               "PublicationCategory" : null,
                "PublicationTitle" : "Keiser MJ, Hert J. Off-target networks derived from ligand set similarity. Methods Mol Biol. 2009; 575:195-205.",
                "PublicationID" : "http://profiles.ucsf.edu/profile/31879888",
                "AuthorList" : "Keiser MJ, Hert J"
@@ -245,6 +257,7 @@
                      "PMID" : "18335977"
                   }
                ],
+               "PublicationCategory" : null,
                "PublicationTitle" : "Hert J, Keiser MJ, Irwin JJ, Oprea TI, Shoichet BK. Quantifying the relationships among drug classes. J Chem Inf Model. 2008 Apr; 48(4):755-65.",
                "PublicationID" : "http://profiles.ucsf.edu/profile/328771",
                "AuthorList" : "Hert J, Keiser MJ, Irwin JJ, Oprea TI, Shoichet BK"
@@ -263,6 +276,7 @@
                      "PMID" : "17287757"
                   }
                ],
+               "PublicationCategory" : null,
                "PublicationTitle" : "Keiser MJ, Roth BL, Armbruster BN, Ernsberger P, Irwin JJ, Shoichet BK. Relating protein pharmacology by ligand chemistry. Nat Biotechnol. 2007 Feb; 25(2):197-206.",
                "PublicationID" : "http://profiles.ucsf.edu/profile/326134",
                "AuthorList" : "Keiser MJ, Roth BL, Armbruster BN, Ernsberger P, Irwin JJ, Shoichet BK"
@@ -276,7 +290,7 @@
             "Drug Discovery"
          ],
          "Title" : "Assistant Professor",
-         "Department" : "IND (Neurodegenerative Dis)",
+         "Department" : "Institute for Neurodegenerative Diseases",
          "MediaLinks_beta" : [],
          "AwardOrHonors" : [
             {
@@ -285,6 +299,13 @@
                "AwardEndDate" : null,
                "Summary" : "40 Under Forty, SF Business Times, 2014",
                "AwardConferredBy" : "SF Business Times"
+            },
+            {
+               "AwardLabel" : "Glenn Award for Research in Biological Mechanisms of Aging",
+               "AwardStartDate" : "2014",
+               "AwardEndDate" : null,
+               "Summary" : "Glenn Award for Research in Biological Mechanisms of Aging, Glenn Foundation, 2014",
+               "AwardConferredBy" : "Glenn Foundation"
             },
             {
                "AwardLabel" : "Frank M Goyan Award for excellence in physical chemistry",
@@ -319,17 +340,19 @@
             "Assistant Professor"
          ],
          "LastName" : "Keiser",
-         "ProfilesURL" : "http://profiles.ucsf.edu/profile/30250598",
+         "ProfilesURL" : "http://profiles.ucsf.edu/michael.keiser",
          "NIHGrants_beta" : [],
-         "Email" : null,
+         "Email" : "Michael.Keiser@ucsf.edu",
          "Narrative" : "Our lab investigates how small molecules perturb protein target networks to biological and therapeutic effect. In a forward polypharmacology campaign, we are using machine learning and computational methods such as the Similarity Ensemble Approach (SEA) to infer new combinations of targets underlying compound-induced phenotypes in cells and broader model systems. Thinking of each target as a musical note, we predict and test entire chords at a time via chemical-genetic epistasis experiments in models of complex diseases such as neurodegeneration.\n\nThese systems pharmacology inquiries tell us where current understanding of drug action is weak, and because we use human pharmacology to mine for mechanisms, we can apply the therapeutic chords we find directly to the prediction of patient drug responses, adverse drug reactions, and personalized medicine.",
          "School" : "UCSF School of Medicine",
          "PhotoURL" : "http://profiles.ucsf.edu/profile/Modules/CustomViewPersonGeneralInfo/PhotoHandler.ashx?NodeID=30250598",
          "WebLinks_beta" : [],
+         "Education_Training" : [],
          "GlobalHealth_beta" : {},
          "Twitter_beta" : [],
          "Name" : "Michael Keiser, PhD",
          "SlideShare_beta" : [],
+         "Videos" : [],
          "FreetextKeywords" : []
       }
    ]
