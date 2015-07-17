@@ -42,6 +42,7 @@ owner:
   github: #username
   stackoverflow: #http://stackoverflow.com/users/123456/username
   linkedin: #username
+  xing: #username
   instagram: #username
   lastfm: #username
   tumblr: #username
@@ -49,6 +50,11 @@ owner:
   foursquare: #username
   steam: #username
   dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+  codepen: #username
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]

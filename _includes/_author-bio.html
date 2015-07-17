@@ -2,5 +2,8 @@
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %}
 {% endif %}
 
+<div itemscope itemtype="http://schema.org/Person">
+
 {% include _author-bio-content.html %}
 
+</div>
