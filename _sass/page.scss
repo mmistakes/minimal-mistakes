@@ -730,3 +730,22 @@ $button-size: 1.5rem;
 #goog-wm-sb {
 	@extend .btn;
 }
+
+/* 
+   Lab extensions
+   ========================================================================== */
+
+.lab-member-half {
+	@include container;
+	@include clearfix;
+	leftinfo {
+		@include grid(12,5);
+	}
+	rightinfo {
+		@include grid(12,7);
+	}
+	.bio-photo {
+		max-width: 200px;
+		@include rounded(25px);
+	}
+}

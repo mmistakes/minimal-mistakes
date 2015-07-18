@@ -39,9 +39,14 @@
       {{ content }}
       {% for auth in site.data.authors %}
       {% assign author = auth[1] %}
-      {% include _author-bio-content.html %}
-      <blockquote>{{ author.bio_long }}</blockquote>
-      <hr />
+      <div class="lab-member-half">
+      <leftinfo >
+      {% include _author-bio-content.html %}</leftinfo>
+      <rightinfo >
+      <p><em>{{ author.bio_long }}</em></p>
+      {% include _author-bio-links.html %}</rightinfo>
+      </div>
+      <hr /><br/>
       {% endfor %}
     </div><!-- /.article-wrap -->
     {% if site.owner.disqus-shortname and page.comments == true %}
