@@ -18,3 +18,5 @@ We test full chords of protein targets via chemical-genetic epistasis experiment
 
 ### Personalized medicine
 This systems pharmacology approach can uncover areas where the field’s current understanding of drug action is otherwise weak. Additionally, since we are using human pharmacology itself as tool, we can apply the new therapeutic chords we discover directly to predicting individual patient drug responses, adverse drug reactions, and personalized treatments.
+
+![tech talk]({{ site.url }}/images/lab-research-1.jpg)
