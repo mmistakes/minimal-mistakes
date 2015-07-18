@@ -1,7 +1,7 @@
 # Authors
 
 michael_keiser:
-  name: Michael Keiser
+  name: Michael Keiser, PhD
   email: keiser@keiserlab.org
   bio: "pharm chem; bts; institute for neurodegenerative diseases"
   bio_long: "Michael completed a bioinformatics Ph.D. in 2009 at UCSF as a National Science Foundation Fellow, where he developed techniques to relate drugs and proteins based on the statistical similarity of their ligands, such as the Similarity Ensemble Approach (SEA). He also holds B.Sc., B.A., and M.A. degrees from Stanford University. He subsequently co-founded a startup bringing these methods to pharma companies and the US FDA. Keiser joined the faculty at UCSF in the Dept. of Pharmaceutical Chemistry and the Institute for Neurodegenerative Diseases in 2014, with a joint appointment in the Dept. of Bioengineering and Therapeutic Sciences."
@@ -12,6 +12,13 @@ michael_keiser:
   google:
     plus: MichaelKeiser
   ucsf_profiles: michael.keiser
+
+elena_caceres:
+  name: Elena Caceres
+  email: ecaceres@keiserlab.org
+  bio: "bioinformatics"
+  avatar: members/bio-caceres.jpg
+  title: Grad student
 
 garrett_gaskins:
   name: Garrett Gaskins
@@ -35,9 +42,23 @@ cristina_melero:
   avatar: members/bio-melero.jpg
   title: Specialist
 
-teague_sterling:
-  name: Teague Sterling
-  email: sterling@keiserlab.org
+nick_mew:
+  name: Nick Mew
+  email: mew@keiserlab.org
   bio: ""
-  avatar: members/bio-sterling.jpg
+  avatar: members/bio-mew.jpg
   title: Specialist
+
+michael_mysinger:
+  name: Michael Mysinger, PhD
+  email: mysinger@keiserlab.org
+  bio: ""
+  avatar: members/bio-mysinger.jpg
+  title: Specialist
+
+#teague_sterling:
+#  name: Teague Sterling
+#  email: sterling@keiserlab.org
+#  bio: ""
+#  avatar: members/bio-sterling.jpg
+#  title: Specialist
