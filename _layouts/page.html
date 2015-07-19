@@ -13,7 +13,16 @@
 
 {% include _navigation.html %}
 
-{% if page.image.feature %}
+{% include _map_variable.html %}
+{% if map %}
+  <div class="image-wrap">
+    <div id="feature-map" {% if map.height %}style="height: {{ map.height }}"{% endif %}>
+    </div>
+    {% if map.attribution %}
+    <span class="image-credit">Map Credit: {{ map.attribution }}</span>
+    {% endif %}
+  </div><!-- /.image-wrap -->
+{% elsif page.image.feature %}
   <div class="image-wrap">
   <img src=
     {% if page.image.feature contains 'http' %}
@@ -53,7 +62,7 @@
   </footer>
 </div><!-- /.footer-wrap -->
 
-{% include _scripts.html %}          
+{% include _scripts.html %}
 
 </body>
 </html>

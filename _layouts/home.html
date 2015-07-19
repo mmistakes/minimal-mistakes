@@ -13,7 +13,16 @@
 
 {% include _navigation.html %}
 
-{% if page.image.feature %}
+{% include _map_variable.html %}
+{% if map %}
+  <div class="image-wrap">
+    <div id="feature-map" {% if map.height %}style="height: {{ map.height }}"{% endif %}>
+    </div>
+    {% if map.attribution %}
+    <span class="image-credit">Map Credit: {{ map.attribution }}</span>
+    {% endif %}
+  </div><!-- /.image-wrap -->
+{% elsif page.image.feature %}
   <div class="image-wrap">
   <img src=
     {% if page.image.feature contains 'http' %}
@@ -28,13 +37,13 @@
   </div><!-- /.image-wrap -->
 {% endif %}
 
-<div id="main" role="main"> 
+<div id="main" role="main">
   <div class="article-author-side">
     {% include _author-bio.html %}
   </div>
   <div id="index">
     <h3><a href="{{ site.url}}/posts/">Recent Posts</a></h3>
-    {% for post in site.posts limit:5 %}    
+    {% for post in site.posts limit:5 %}
     <article>
       {% if post.link %}
         <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></h2>
@@ -54,6 +63,6 @@
 </div><!-- /.footer-wrap -->
 
 {% include _scripts.html %}
-  
+
 </body>
 </html>

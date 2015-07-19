@@ -5,7 +5,7 @@
 <!-- Asynchronous Google Analytics snippet -->
 <script>
   var _gaq = _gaq || [];
-  var pluginUrl = 
+  var pluginUrl =
  '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
   _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
   _gaq.push(['_setAccount', '{{ site.owner.google.analytics }}']);
@@ -20,4 +20,8 @@
 {% endif %}
 {% if page.comments %}
   {% include _disqus_comments.html %}
+{% endif %}
+
+{% if map %}
+  {% include _map_js.html %}
 {% endif %}

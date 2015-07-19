@@ -1,0 +1,9 @@
+# locations
+
+whitehouse:
+  name: The US Whitehouse
+  coordinates: [38.897096, -77.036545]
+  url: http://whitehouse.gov
+  zoom: 18
+  address: 1600 Pennsylvania Avenue Northwest,<br />Washington, DC
+  extra: <i>Great bathrooms!</i>
