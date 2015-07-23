@@ -17,6 +17,7 @@ elena_caceres:
   name: Elena Caceres
   email: ecaceres@keiserlab.org
   bio: "bioinformatics"
+  bio_long: "Elena graduated from UCSD with a B.Sc. in molecular biology and a minor in mathematics. As of 2014, she is a graduate student in the Bioinformatics program as part of the iPQB program at UCSF. She is interested in applying techniques from statistics and machine learning to better understand and predict features underlying drug-target interactions."
   avatar: members/bio-caceres.jpg
   title: Grad student
 
@@ -24,6 +25,7 @@ garrett_gaskins:
   name: Garrett Gaskins
   email: gaskins@keiserlab.org
   bio: "bioinformatics"
+  bio_long: "High-content screening across varied cells, conditions, and chemical libraries has emerged as a key method for identifying novel compounds capable of systematically perturbing a biological network to induce a phenotype. The molecular targets (proteins, receptors, etc.) through which these compounds act to achieve their phenotype(s) are typically unknown. I am currently developing a chemoinformatic approach using aspects of image processing, machine learning, and SEA to identify the targets of novel compounds via their phenotypic signature."
   avatar: members/bio-gaskins.jpg
   title: Grad student
 
