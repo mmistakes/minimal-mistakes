@@ -1,9 +1,9 @@
 {
-   "api_notes" : "To maximize performance, we are providing recently-cached data. This data was cached on Fri Jul 17 07:49:43 2015",
+   "api_notes" : "To maximize performance, we are providing recently-cached data. This data was cached on Thu Jul 23 08:28:14 2015",
    "Profiles" : [
       {
          "FirstName" : "Michael",
-         "PublicationCount" : "14",
+         "PublicationCount" : "15",
          "Address" : {
             "Longitude" : "0",
             "Address2" : "San Francisco, CA 94158",
@@ -15,6 +15,25 @@
             "Telephone" : "415-502-7651"
          },
          "Publications" : [
+            {
+               "Publication" : "Clinical pharmacology and therapeutics",
+               "Featured" : null,
+               "Date" : "2014-12-20T00:00:00",
+               "Title" : "Systems pharmacology augments drug safety surveillance.",
+               "PublicationMedlineTA" : "Clin Pharmacol Ther",
+               "Year" : "2014",
+               "PublicationSource" : [
+                  {
+                     "PublicationSourceURL" : "http://www.ncbi.nlm.nih.gov/pubmed/25670520",
+                     "PublicationSourceName" : "PubMed",
+                     "PMID" : "25670520"
+                  }
+               ],
+               "PublicationCategory" : null,
+               "PublicationTitle" : "Lorberbaum T, Nasir M, Keiser MJ, Vilar S, Hripcsak G, Tatonetti NP. Systems pharmacology augments drug safety surveillance. Clin Pharmacol Ther. 2015 Feb; 97(2):151-8.",
+               "PublicationID" : "http://profiles.ucsf.edu/profile/82757302",
+               "AuthorList" : "Lorberbaum T, Nasir M, Keiser MJ, Vilar S, Hripcsak G, Tatonetti NP"
+            },
             {
                "Publication" : "PLoS biology",
                "Featured" : null,
