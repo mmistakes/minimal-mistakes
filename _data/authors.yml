@@ -56,6 +56,7 @@ michael_mysinger:
   name: Michael Mysinger, PhD
   email: mysinger@keiserlab.org
   bio: ""
+  bio_long: "I am fascinated and excited about Computational Chemistry, where the intersection of Chemistry, Math, and Computers creates the potential to better understand and transform our daily lives. My current ligand-based research focuses on using and improving the Similarity Ensemble Approach (SEA) to untangle poly-pharmacology and to predict novel protein targets from mysterious phenotypes. My current structure-based research involves exploring new energy potentials for protein-ligand interactions. Overall, my long-term research goals are quantitative, mechanism-based insight into protein-ligand interactions with an eye towards drug design."
   avatar: members/bio-mysinger.jpg
   title: Specialist
 
