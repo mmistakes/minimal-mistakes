@@ -168,6 +168,27 @@ There are three main components here:
 * Info: a component that simply shows a text indicating which button has been clicked last. This is where some of the Reflux magic happens: by creating the `mixin` using `Reflux.connect(ClickedStore, 'clickedStoreHappening')`, we effectively link this component to the store listening to the ClickedAction actions. We give this link another label (we used `clickedStoreHappening`) and as a result, this label will be part of the state of this component. When the store gets notified of the ClickedAction.clicked, it will `trigger(n)`, and that `n` will end up in the state of the linked component (`Info`), and a render will be triggered.
 * `ButtonPage`: simple component that displays together buttons and the info text.
 
-Run this (`activator run` in the project folder) and point your browser to `http://localhost:9000`. You'll see how the main info is re-rendered every time you click on a button.
+The file you have just created needs to be referenced in your HTML file, after the content div. Also, you will need to include the two files about the ClickedAction and ClickedStore:
+
+{% highlight html %}
+{% raw %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.fullPath("react", "react.js"))'></script>
+    <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("JSXTransformer.js"))'></script>
+    <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("reflux.js"))'></script>
+    <script type='text/javascript' src='@routes.Assets.versioned("javascripts/actions/clickedAction.js")'></script>
+    <script type='text/javascript' src='@routes.Assets.versioned("javascripts/stores/clickedStore.js")'></script>
+  </head>
+  <body>
+    <div id="content"></div>
+    <script type='text/javascript' src='@routes.Assets.versioned("javascripts/reactReflux.js")'></script>
+  </body>
+</html>
+{% endraw %}
+{% endhighlight %}
+
+Run the project (`activator run` in the project folder) and point your browser to `http://localhost:9000`. You'll see how the main info is re-rendered every time you click on a button.
 
 I know, it all feels very magic, but I think this is much better than the old mess of callbacks we were used to. Let me know if you experiment further with this.
