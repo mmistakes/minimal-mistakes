@@ -745,6 +745,7 @@ $button-size: 1.5rem;
 		@include grid(12,7);
 	}
 	.bio-photo {
+		width: 95%;
 		max-width: 200px;
 		@include rounded(25px);
 	}
