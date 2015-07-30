@@ -49,6 +49,7 @@ nick_mew:
   name: Nick Mew
   email: mew@keiserlab.org
   bio: ""
+  bio_long: "Coming from a software engineering and computer science background, I’m focused on creating research tools that combine the state of the art in machine learning, statistics and data visualization. My current research involves training artificial neural networks to answer questions related to drugs, targets and their interactions. I also work on creating interactive visualizations that help human neural networks answer similar questions. "
   avatar: members/bio-mew.jpg
   title: Specialist
 
