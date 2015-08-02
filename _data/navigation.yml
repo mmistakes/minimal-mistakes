@@ -1,13 +1,10 @@
 # Site navigation links
 
-- title: About
-  url: /about/
+- title: Chi sono
+  url: /chi-sono/
+  
+ - title: Contattami
+  url: /contattami/
 
-- title: Sample Posts
-  url: /posts/
-
-- title: Theme Setup
-  url: /theme-setup/
-
-- title: Made Mistakes
-  url: http://mademistakes.com
+- title: Escursioni
+  url: /escursioni/
