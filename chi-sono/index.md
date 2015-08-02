@@ -8,7 +8,7 @@ image:
   feature: http://www.shineon.it/header/rotate.php
 ---
 
-Ciao, mi chiamo Federico Bellinvia, ho 32 anni e abito a San Salvatore Monferrato, un paese in provincia di Alessandria, sulle ultime propaggini orientali del Monferrato. Sono un libero professionista e mi occupo di consulenza ed assistenza informatica.
+Ciao, mi chiamo Federico Bellinvia, ho 32 anni e abito a [San Salvatore Monferrato](https://it.wikipedia.org/wiki/San_Salvatore_Monferrato), un paese in provincia di Alessandria, sulle ultime propaggini orientali del Monferrato. Sono un libero professionista e mi occupo di consulenza ed assistenza informatica.
 
 Da quasi un anno e mezzo, quando non lavoro, sono padre a tempo pieno.
 
