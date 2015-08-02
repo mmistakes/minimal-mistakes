@@ -1,7 +1,7 @@
 # Site wide configuration
 
-title:            Site Title
-locale:           en_US
+title:            Shine on...
+locale:           it_IT
 url:
 
 
@@ -26,11 +26,11 @@ kramdown:
 
 # Site owner
 owner:
-  name: Your Name
+  name: Federico Bellinvia
   avatar: bio-photo.jpg
   bio: "Describe your self."
   email:
-  disqus-shortname:
+  disqus-shortname: shineon-it
   twitter: #username
   facebook: #username
   google:
