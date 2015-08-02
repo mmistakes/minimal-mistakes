@@ -3,21 +3,17 @@ layout: page
 title: About the Theme
 tags: [about, Jekyll, theme, responsive]
 modified: 2014-08-08T20:53:07.573882-04:00
-comments: true
+comments: false
 image:
   feature: http://www.shineon.it/header/rotate.php
 ---
 
-Minimal Mistakes is responsive Jekyll theme with large featured images and solid typography. As the name implies the styling is fairly minimal to make it easier for you to build on top of.
+Ciao, mi chiamo Federico Bellinvia, ho 32 anni e abito a San Salvatore Monferrato, un paese in provincia di Alessandria, sulle ultime propaggini orientali del Monferrato. Sono un libero professionista e mi occupo di consulenza ed assistenza informatica.
+Da quasi un anno e mezzo, quando non lavoro, sono padre a tempo pieno.
 
-## Minimal Mistakes is all about:
+Interista dalla nascita, adoro la musica, principalmente i Pink Floyd, seguiti da De Andrè, Guccini, Carmen Consoli, Dire Straits, Vinicio Capossela, King Crimson, Miles Davis…
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.
-* Minimal embellishments -- content first.
-* Optional large feature images for posts and pages.
-* Simple and clear permalink structure.
-* [Custom 404 page](http://mmistakes.github.io/minimal-mistakes/404.html) to get you started.
-* Support for Disqus Comments
+Mi piace molto viaggiare, specie in treno, amo le linee secondarie poco frequentate.
+Quando posso giro spesso in macchina, la notte, senza meta,  sempre in compagnia della musica, è una delle cose che mi aiuta nei momenti no.
 
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install Minimal Mistakes Theme</a>
+Specie nell’ultimo periodo ho ripreso a fare trekking, soprattutto in solitaria.
