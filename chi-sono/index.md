@@ -9,6 +9,7 @@ image:
 ---
 
 Ciao, mi chiamo Federico Bellinvia, ho 32 anni e abito a San Salvatore Monferrato, un paese in provincia di Alessandria, sulle ultime propaggini orientali del Monferrato. Sono un libero professionista e mi occupo di consulenza ed assistenza informatica.
+
 Da quasi un anno e mezzo, quando non lavoro, sono padre a tempo pieno.
 
 Interista dalla nascita, adoro la musica, principalmente i Pink Floyd, seguiti da De Andrè, Guccini, Carmen Consoli, Dire Straits, Vinicio Capossela, King Crimson, Miles Davis…
