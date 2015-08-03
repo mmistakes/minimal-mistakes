@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title:            Site Title
-locale:           en_US
-url:
+title:            Shine on...
+locale:           it
+url:              http://shineon82.github.io
 
 
 # Jekyll configuration
@@ -26,13 +26,13 @@ kramdown:
 
 # Site owner
 owner:
-  name: Your Name
+  name: Federico Bellinvia
   avatar: bio-photo.jpg
   bio: "Describe your self."
-  email:
-  disqus-shortname:
-  twitter: #username
-  facebook: #username
+  email: shineon82@gmail.com
+  disqus-shortname: shineon-it
+  twitter: shineon82
+  facebook: shineon82
   google:
     plus: #username
     analytics:
@@ -51,10 +51,10 @@ owner:
   foursquare: #username
   steam: #username
   dribbble: #username
-  youtube: #username
+  youtube: shineon1982
   soundcloud: #username
   weibo: #username
-  flickr: #username
+  flickr: shineon-it
   codepen: #username
 
 include: [".htaccess"]
