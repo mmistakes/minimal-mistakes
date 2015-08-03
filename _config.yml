@@ -1,8 +1,8 @@
 # Site wide configuration
 
 title:            Shine on...
-locale:           it_IT
-url:             http://shineon82.github.io
+locale:           it
+url:              http://shineon82.github.io
 
 
 # Jekyll configuration
@@ -31,8 +31,8 @@ owner:
   bio: "Describe your self."
   email: shineon82@gmail.com
   disqus-shortname: shineon-it
-  twitter: #username
-  facebook: shineon.it
+  twitter: shineon82
+  facebook: shineon82
   google:
     plus: #username
     analytics:
@@ -51,10 +51,10 @@ owner:
   foursquare: #username
   steam: #username
   dribbble: #username
-  youtube: #username
+  youtube: shineon1982
   soundcloud: #username
   weibo: #username
-  flickr: #username
+  flickr: shineon-it
   codepen: #username
 
 include: [".htaccess"]
