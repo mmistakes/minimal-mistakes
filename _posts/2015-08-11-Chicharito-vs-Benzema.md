@@ -26,7 +26,7 @@ foo=bar+1
 
 Probability of scoring at least one goal when starting a game. Using Bayes' Rule, 
 
-\\( P( X = Score | Y= Start game) = P( Y = Start game | X= Score) \times P( X = Score) \\)
+\\( P( X = Score | Y= Start game) = \frac{P( Y = Start game | X= Score) \times P( X = Score)}{P(Y= Start game)} \\)
 
 
 <p><br></p>
