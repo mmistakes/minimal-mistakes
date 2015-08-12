@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Comparing Javier (Chicharito) Hernandez and Benzema's scoring probabilities "
+title: "Bayesian Analysis on Javier Hernandez and Benzema's scoring probabilities "
 modified:
-excerpt: "Author analyses the demographics of Chipotle locations in America."
-tags: [R, data mining, analytics]
+excerpt: "Use Bayesian Analysis to calculate probability of scoring in game"
+tags: [Python, data mining, analytics, Bayesian]
 modified: 2015-06-28
 comments: true
 ---
