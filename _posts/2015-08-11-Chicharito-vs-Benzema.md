@@ -8,7 +8,11 @@ modified: 2015-06-28
 comments: true
 ---
 
-A new Chipotle Restaurant opened in my neighborhood, and while I was enjoying a delicious chicken bowl, I began wondering who was Chipotle's primary consumer. I decided to answer this question using population statistics at a Zip code level. In addition to this, I decided to map out areas where a Chipotle would sit well, based on already established franchises. 
+The 2014/2015 Season for Real Madrid was a disaster in terms of expectations. Real Madrid finished second in La Liga, was knocked out in Champions League semi-finals and was knocked out in Copa by Atletico de Madrid, the home city rival. This outcome seemed impossible during the first half of the season, when the team was on route to break the Guiness Record of consecutive wins. The second half of the tournament was not so favorable, multiple injuries led to forced rotations or lack of rotations for some players. 
+
+A particular case was the striker situation. In the Mourinho era, Karim Benzema and Gonzalo Higuain would rotate the starter role. This was not the case under Ancelotti, where Benzema was an indisputable starter leaving Chicharito very few game time.
+
+In this post I will be using Bayesian Analysis in Python to determine the probabilities of scoring at least 1 goal for Chicharito and Karim Benzema. 
 
 <p><br></p>
 The first part of this project consisted of getting every single Chipotle location in America. After my google-fu failed to take me to a site with every Chipotle restaurant, I wrote a scrapper to check each and every every zip code in America on Chipotle's website. There are about 60k zip codes in the United States, so this took a while but eventually I discovered there are 1,140 Chipotle Restaurants in America!
