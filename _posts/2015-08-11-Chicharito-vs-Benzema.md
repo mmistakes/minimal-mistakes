@@ -24,9 +24,15 @@ foo=bar+1
 
 
 
+Probability of scoring at least one goal when starting a game. Using Bayes' Rule, 
+
+\\( P( X = Score | Y= Start game) = P( Y = Start game | X= Score) \times P( X = Score) \\)
+
 
 <p><br></p>
 
+
+\\( P( X = Score | Y= Start game) = +\beta _{1}X _{per \, capita \, income} + \beta _{2}X _{median \, age}+\beta _{3}X _{total \, population}+\beta _{4}X _{total \, population \times median \, age} +\beta _{5}X _{per \, capita \, income \times median \, age}  \\)
 
 <figure>
 	<a href="/images/Chipotle/ChipotleDemo.jpeg"><img src="/images/Chipotle/demographic.jpeg"></a>
