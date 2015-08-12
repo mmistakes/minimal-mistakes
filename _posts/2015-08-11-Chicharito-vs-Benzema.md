@@ -16,7 +16,7 @@ One of the reasons for the debacle was said to be the "lack of goal". This lead 
 
 In this post I will be using Bayesian Analysis in Python to determine the probabilities of scoring at least 1 goal for Chicharito and Karim Benzema. 
 
-Using player statistics from (<a href="https:/http://www.squawka.com/">Squwawka</a>) and python's bayesian analysis library.
+Using player statistics from (<a href="https://www.squawka.com/">Squwawka</a>) and python's bayesian analysis library.
 
 
 <p><br></p>
