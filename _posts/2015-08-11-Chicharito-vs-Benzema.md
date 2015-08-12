@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Comparing Javier "Chicharito" Herandez with Karim Benzema"
+title: "Where will the next Chipotle be?"
 modified:
-excerpt: "Use Bayesian Analysis to calculate the proability of scoring when starting a game"
-tags: [Python, data mining, analytics, Bayesian Analysis]
-modified: 2015-8-11
+excerpt: "Author analyses the demographics of Chipotle locations in America."
+tags: [R, data mining, analytics]
+modified: 2015-06-28
 comments: true
 ---
 
