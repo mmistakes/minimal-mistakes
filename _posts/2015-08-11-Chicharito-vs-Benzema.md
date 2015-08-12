@@ -14,25 +14,19 @@ For Real Madrid, the 2014/2015 Season was a disaster. Real Madrid finished secon
 One of the reasons for the debacle was said to be the "lack of goal". This lead me to question which striker, who in theory is responsible of scoring, between Karim Benzema (K9) and Javier "Chicharito" Hernandez (CH14) was better suited to put the team on his shoulders. 
 <p><br></p>
 
-In this post I will be using Bayesian Analysis in Python to determine the probabilities of scoring at least 1 goal for Chicharito and Karim Benzema. 
+In this post I will be using Bayesian Analysis in Python to determine the probability of scoring at least 1 goal when starting a game for Hernandez as well as for Karim Benzema. All data comes from (<a href="https://www.squawka.com/">Squwawka</a>).
+
 
 {% highlight python %}
 import mcmc
 foo=bar+1
 {% endhighlight %}
 
-Using player statistics from (<a href="https://www.squawka.com/">Squwawka</a>) and python's bayesian analysis library.
 
 
-<p><br></p>
-The first part of this project consisted of getting every single Chipotle location in America. After my google-fu failed to take me to a site with every Chipotle restaurant, I wrote a scrapper to check each and every every zip code in America on Chipotle's website. There are about 60k zip codes in the United States, so this took a while but eventually I discovered there are 1,140 Chipotle Restaurants in America!
 
 <p><br></p>
-To population data at a Zip Code level, I used the choroplethrZip package.The variables I had access where total population, race, average age and income per capita. This data is from 2013, but for simplicity I assumed no restaurants opened or closed since then. 
-<p><br></p>
 
-
-Once I organzied my data I studied the demographic variable. To do this, I separated the Zip Codes in four (White, Hispanic, Asian, Black) and assigned a Zip Code to the race where the majority of its population belonged to. As the histogram below shows, there are more Chipotle resturants in Zip Codes where there is a predominance of white people. The graph on the right is not limited to Zip Codes with a Chipotle restuarant. Comparing them side by side we can see how the reason why there are more restaurants in Zip Codes where the white population is the majority may be simply because there are more Zip Codes where the white population is a majority.
 
 <figure>
 	<a href="/images/Chipotle/ChipotleDemo.jpeg"><img src="/images/Chipotle/demographic.jpeg"></a>
