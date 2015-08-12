@@ -8,17 +8,22 @@ modified: 2015-06-28
 comments: true
 ---
 
-The 2014/2015 Season for Real Madrid was a disaster in terms of expectations. Real Madrid finished second in La Liga, was knocked out in Champions League semi-finals and was knocked out in Copa by Atletico de Madrid, the home city rival. This outcome seemed impossible during the first half of the season, when the team was on route to break the Guiness Record of consecutive wins. The second half of the tournament was not so favorable, multiple injuries led to forced rotations or lack of rotations for some players. 
+For Real Madrid, the 2014/2015 Season was a disaster. Real Madrid finished second in La Liga, was knocked out in Champions League semi-finals and was knocked out in Copa by Atletico de Madrid, the home city rival. This outcome seemed impossible during the first half of the season, when the team was on route to breaking the Guiness Record for consecutive wins in official soccer matches. However, the second half of the tournament was not so favorable. Multiple injuries led to forced rotations or lack of rotations for some players and the performance of the team declined leading to draws and losses. 
+<p><br></p>
 
-A particular case was the striker situation. In the Mourinho era, Karim Benzema and Gonzalo Higuain would rotate the starter role. This was not the case under Ancelotti, where Benzema was an indisputable starter leaving Chicharito very few game time.
+One of the reasons for the debacle was said to be the "lack of goal". This lead me to question which striker, who in theory is responsible of scoring, between Karim Benzema (K9) and Javier "Chicharito" Hernandez (CH14) was better suited to put the team on his shoulders. 
+<p><br></p>
 
 In this post I will be using Bayesian Analysis in Python to determine the probabilities of scoring at least 1 goal for Chicharito and Karim Benzema. 
+
+Using player statistics from (<a href="https:/http://www.squawka.com/">Squwawka</a>) and python's bayesian analysis library.
+
 
 <p><br></p>
 The first part of this project consisted of getting every single Chipotle location in America. After my google-fu failed to take me to a site with every Chipotle restaurant, I wrote a scrapper to check each and every every zip code in America on Chipotle's website. There are about 60k zip codes in the United States, so this took a while but eventually I discovered there are 1,140 Chipotle Restaurants in America!
 
 <p><br></p>
-To population data at a Zip Code level, I used the choroplethrZip package (<a href="https://github.com/arilamstein/choroplethrZip">GitHub link</a>).The variables I had access where total population, race, average age and income per capita. This data is from 2013, but for simplicity I assumed no restaurants opened or closed since then. 
+To population data at a Zip Code level, I used the choroplethrZip package.The variables I had access where total population, race, average age and income per capita. This data is from 2013, but for simplicity I assumed no restaurants opened or closed since then. 
 <p><br></p>
 
 
