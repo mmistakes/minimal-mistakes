@@ -14,7 +14,7 @@ For Real Madrid, the 2014/2015 Season was a disaster. Real Madrid finished secon
 One of the reasons for the debacle was said to be the "lack of goal". This lead me to question which striker, who in theory is responsible of scoring, between Karim Benzema (K9) and Javier "Chicharito" Hernandez (CH14) was better suited to put the team on his shoulders. 
 <p><br></p>
 
-In this post I will be using Bayesian Analysis in Python to determine the probability of scoring at least 1 goal when starting a game for Hernandez as well as for Karim Benzema. All data comes from (<a href="https://www.squawka.com/" target="_blank">Squwawka</a>).
+In this post I will be using Bayesian Analysis in Python to determine the probability of scoring at least 1 goal when starting a game for Hernandez as well as for Karim Benzema. All data comes from <a href="https://www.squawka.com/" target="_blank">Squwawka</a>.
 
 
 {% highlight python %}
