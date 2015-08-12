@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Where will the next Chipotle be?"
+title: "Chicharito vs Benzema"
 modified:
 excerpt: "Author analyses the demographics of Chipotle locations in America."
 tags: [R, data mining, analytics]
