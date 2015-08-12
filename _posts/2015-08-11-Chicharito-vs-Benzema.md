@@ -4,7 +4,7 @@ title: "Comparing Javier "Chicharito" Herandez with Karim Benzema"
 modified:
 excerpt: "Use Bayesian Analysis to calculate the proability of scoring when starting a game"
 tags: [Python, data mining, analytics, Bayesian Analysis]
-modified: 2015-08-11
+modified: 2015-8-11
 comments: true
 ---
 
