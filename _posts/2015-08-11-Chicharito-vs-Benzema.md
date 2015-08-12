@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chicharito vs Benzema"
+title: "Comparing Javier (Chicharito) Hernandez and Benzema's scoring probabilities "
 modified:
 excerpt: "Author analyses the demographics of Chipotle locations in America."
 tags: [R, data mining, analytics]
