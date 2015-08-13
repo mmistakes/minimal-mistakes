@@ -65,7 +65,21 @@ def observed_proportion_KB(lambda_KB=lambda_KB):
     return out
 {% endhighlight %}
 
-In the code above, we set the PyMC varialbes for  \\( \lambda_{CH} \\) and \\( \lambda_{KB} \\). We then use the @pm.deterministic decorator to indicate ovserved_proportion_CH and observed_proportion_KB as a deterministic function. This step is important to start setting up our PyMC model.
+In the code above, we set the PyMC varialbes for  \\( \lambda _{CH} \\) and \\( \lambda _{KB} \\). We then use the @pm.deterministic decorator to indicate ovserved_proportion_CH and observed_proportion_KB as a deterministic function.
+
+{% highlight python %}
+obsCH = pm.Poisson("obsCH", observed_proportion_CH, observed=True, value=CH_red_df['GoalinGame'])
+obsKB = pm.Poisson("obsKB", observed_proportion_KB, observed=True, value=df_Benzema['GoalinGame'])
+
+model_CH = pm.Model([obsCH, lambda_CH, observed_proportion_CH, obsCH])
+mcmc_CH = pm.MCMC(model_CH)
+mcmc_CH.sample(40000, 15000)
+
+model_KB = pm.Model([obsKB, lambda_KB, observed_proportion_KB, obsKB])
+mcmc_KB = pm.MCMC(model_KB)
+mcmc_KB.sample(40000, 15000)
+{% endhighlight %}
+
 
 <figure>
      <img src="/images/Nine/posterior_lambda.png">
