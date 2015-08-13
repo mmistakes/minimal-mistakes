@@ -39,8 +39,28 @@ import pymc as pm  #This is the Bayesian Analysis module, it's great!
 {% endhighlight %}
 
 
-Collecting perormance data, including minutes played, playing as a sub, dates of games etc was a bit messy and really not that exciting, so I'm going to fast forward to the point where I a dataframe for Javier Herandez and one for Benzema.
+Collecting perormance data, including minutes played, playing as a sub, dates of games etc was a bit messy and really not that exciting, so I'm going to fast forward to the point where I have a dataframe for Javier Herandez and one for Benzema.
 
+I used a Poisson distribution for two reasons, one being it can be discrete and two; it can attribute a higher probability to scoring 0 goals and a low probability of scoring 3+ goals, yet it is still possible.
+
+We don't know \lambda, so we are going to estimate it. For this I gave it a Normal distribution with a mean being the sum number of goals in the season, divided by total minutes played multiplied by 90. This gives us a good starting point to begin calulating our \lambda paramter.
+
+
+{% highlight python %}
+
+lambda_CH = pm.Normal('lambda_KB', df['Goals/Game*'][0], 1)
+lambda_KB = pm.Normal('lambda_KB', df['Goals/Game*'][1], 1)
+
+@pm.deterministic
+def observed_proportion_CH(lambda_CH=lambda_CH):
+    out = lambda_CH
+    return out
+    
+@pm.deterministic
+def observed_proportion_KB(lambda_KB=lambda_KB):
+    out = lambda_KB 
+    return out
+{% endhighlight %}
 
 
 <figure>
