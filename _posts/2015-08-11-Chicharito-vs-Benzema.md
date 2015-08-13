@@ -39,6 +39,8 @@ import pymc as pm  #This is the Bayesian Analysis module, it's great!
 {% endhighlight %}
 
 
+Collecting perormance data, including minutes played, playing as a sub, dates of games etc was a bit messy and really not that exciting, so I'm going to fast forward to the point where I a dataframe for Javier Herandez and one for Benzema.
+
 
 
 <figure>
