@@ -65,6 +65,7 @@ def observed_proportion_KB(lambda_KB=lambda_KB):
     return out
 {% endhighlight %}
 
+In the code above, we set the PyMC varialbes for  \\( \lambda_{CH} \\) and \\( \lambda_{KB} \\). We then use the @pm.deterministic decorator to indicate ovserved_proportion_CH and observed_proportion_KB as a deterministic function. This step is important to start setting up our PyMC model.
 
 <figure>
      <img src="/images/Nine/posterior_lambda.png">
