@@ -81,6 +81,11 @@ mcmc_KB.sample(40000, 15000)
 {% endhighlight %}
 
 
+{% highlight python %}
+lambda_CH_samples = mcmc_CH.trace(lambda_CH)[:]
+lambda_KB_samples = mcmc_KB.trace(lambda_KB)[:]
+{% endhighlight %}
+
 <figure>
      <img src="/images/Nine/posterior_lambda.png">
     <figcaption></figcaption>
