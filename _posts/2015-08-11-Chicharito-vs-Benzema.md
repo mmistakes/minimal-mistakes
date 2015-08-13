@@ -34,8 +34,14 @@ Probability of scoring at least one goal when starting a game. Using Bayes' Rule
 
 
 <figure>
-     <img src="/images/Chipotle/topCities.jpeg">
+     <img src="/images/Nine/posterior_lambda.png">
     <figcaption></figcaption>
 </figure>
 
 
+
+
+<figure>
+     <img src="/images/Nine/Prob_k.png">
+    <figcaption></figcaption>
+</figure>
