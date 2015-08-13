@@ -17,18 +17,26 @@ One of the reasons for the debacle was said to be the "lack of goal". This lead 
 In this post I will be using Bayesian Analysis in Python to determine the probability of scoring at least 1 goal when starting a game for Hernandez as well as for Karim Benzema. All data comes from <a href="https://www.squawka.com/" target="_blank">Squwawka</a>.
 
 
-{% highlight python %}
-import mcmc
-foo=bar+1
-{% endhighlight %}
-
-
-
 Probability of scoring at least one goal when starting a game. Using Bayes' Rule, 
 <p><br></p>
 
 \\( P( X = Score | Y= Start game) = \frac{P( Y = Start game | X= Score) \times P( X = Score)}{P(Y= Start game)} \\)
 <p><br></p>
+
+
+To begin with, I set up my Ipython environmanet to load all these modules.
+{% highlight python %}
+%matplotlib inline
+import requests
+import matplotlib.pyplot as plt
+import pandas as pd
+import datetime
+import urllib2
+from BeautifulSoup import BeautifulSoup
+import numpy as np
+import scipy.stats as stats
+import pymc as pm  #This is the Bayesian Analysis module, it's great!
+{% endhighlight %}
 
 
 
