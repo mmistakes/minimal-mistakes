@@ -43,9 +43,11 @@ Collecting performance data, including minutes played, playing as a sub, dates o
 
 I used a Poisson distribution for two reasons, one being it can be discrete and two; it can attribute a higher probability to scoring 0 goals and a low probability of scoring 3+ goals, yet it is still possible.
 
-We don't know \lambda, so we are going to estimate it. For this I gave it a Normal distribution with a mean being the sum number of goals in the season, divided by total minutes played multiplied by 90. This gives us a good starting point to begin calulating our \\( \lambda \\) paramter.
+When defining a Poisson distribution, the most important parameter is \\( \lambda \\). The \\( \lambda \\) parameter is what determines the shape of the distribution. As we increase \\( \lambda \\), we increase the probability of K taking larger values, in our case, a larger \\( \lambda \\) will indicate a higher chance of scoring larger number of goals. 
 
-\\( \pi \\)
+We don't know \\( \lambda \\), so we are going to estimate it. For this I gave it a Normal distribution with a mean being the sum number of goals in the season, divided by total minutes played multiplied by 90. This gives us a good starting point to begin calulating our \\( \lambda \\) paramter.
+
+
 
 {% highlight python %}
 
