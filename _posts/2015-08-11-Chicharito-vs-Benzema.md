@@ -8,19 +8,22 @@ modified: 2015-06-28
 comments: true
 ---
 
-For Real Madrid, the 2014/2015 Season was a disaster. Real Madrid finished second in La Liga, was knocked out in Champions League semi-finals and was knocked out in Copa by Atletico de Madrid, the home city rival. This outcome seemed impossible during the first half of the season, when the team was on route to breaking the Guiness Record for consecutive wins in official soccer matches. However, the second half of the tournament was not so favorable. Multiple injuries led to forced rotations or lack of rotations for some players and the performance of the team declined leading to draws and losses. 
+For Real Madrid, the 2014/2015 Season was a disaster. Real Madrid finished second in La Liga, was knocked out in Champions League semi-finals and was knocked out in Copa by Atletico de Madrid, the home city rival. This outcome seemed impossible during the first half of the season, when the team was on route to breaking the Guiness Record for consecutive wins in official soccer matches. However, the second half of the tournament was not so favorable. Multiple injuries led to forced rotations for some positions and to a lack of player rotations for other positions.
 <p><br></p>
 
-One of the reasons for the debacle was said to be the "lack of goal". This lead me to question which striker, who in theory is responsible of scoring, between Karim Benzema (K9) and Javier "Chicharito" Hernandez (CH14) was better suited to put the team on his shoulders. 
+The striker position was claimed by Karim Benzema and Javier Hernandez had few minutes of game time. Benzema clocked a total of 2312 minutes on the pitch while Herandez clocked only 859 minutes. In a season where the lack of goal seemed to the headliner of every Real Madrid story, I could only wonder if Real Madrid had the more effective striker on the pitch.  
 <p><br></p>
 
-In this post I will be using Bayesian Analysis in Python to determine the probability of scoring at least 1 goal when starting a game for Hernandez as well as for Karim Benzema. All data comes from <a href="https://www.squawka.com/" target="_blank">Squwawka</a>.
+In this post I will be using Bayesian Analysis in Python to determine the probability of scoring at least 1  goal when starting a game for Hernandez as well as for Karim Benzema. All data comes from <a href="https://www.squawka.com/" target="_blank">Squwawka</a>.
 
 
 Probability of scoring at least one goal when starting a game. Using Bayes' Rule, 
 <p><br></p>
 
-\\( P( X = Score | Y= Start game) = \frac{P( Y = Start game | X= Score) \times P( X = Score)}{P(Y= Start game)} \\)
+\\( P( k > 0 | Y= 1) = \frac{P( Y = 1 | k >0 ) \times P( k > 0)}{P(Y= 1)} \\)
+
+Where K : Number of Goals scored in game,
+Y=1 :equals starting game
 <p><br></p>
 
 
