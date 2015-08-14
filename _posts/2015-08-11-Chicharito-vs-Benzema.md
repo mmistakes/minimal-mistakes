@@ -20,7 +20,7 @@ In this post I will be using Bayesian Analysis in Python to determine the probab
 Probability of scoring at least one goal when starting a game. Using Bayes' Rule, 
 <p><br></p>
 
-\\( P( k > 0 | Y= 1) = \frac{P( Y = 1 | k >0 ) \times P( k > 0)}{P(Y= 1)} \\)
+\\( P( k \> 0 | Y= 1) = \frac{P( Y = 1 | k \>0 ) \times P( k \> 0)}{P(Y= 1)} \\)
 
 Where K : Number of Goals scored in game,
 Y=1 :equals starting game
