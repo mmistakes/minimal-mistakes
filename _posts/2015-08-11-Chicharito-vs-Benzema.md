@@ -11,10 +11,10 @@ comments: true
 For Real Madrid, the 2014/2015 Season was a disaster. Real Madrid finished second in La Liga, was knocked out in Champions League semi-finals and was knocked out in Copa by Atletico de Madrid, the home city rival. This outcome seemed impossible during the first half of the season, when the team was on route to breaking the Guiness Record for consecutive wins in official soccer matches. However, the second half of the tournament was not so favorable. Multiple injuries led to forced rotations for some positions and to a lack of player rotations for other positions.
 <p><br></p>
 
-The striker position was claimed by Karim Benzema and Javier Hernandez had few minutes of game time. Benzema clocked a total of 2312 minutes on the pitch while Herandez clocked only 859 minutes. In a season where the lack of goal seemed to the headliner of every Real Madrid story, I could only wonder if Real Madrid had the more effective striker on the pitch.  
+The striker position caught my attention as it was hogged by the frenchman, Karim Benzema. Benzema clocked a total of 2312 La Liga minutes on the pitch while the other striker, Herandez clocked only 859 minutes in the same competition.  
 <p><br></p>
 
-In this post I will be using Bayesian Analysis in Python to determine the probability of scoring at least 1  goal when starting a game for Hernandez as well as for Karim Benzema. All data was taken from <a href="https://www.squawka.com/" target="_blank">Squwawka</a> and the analysis relied heavily in the PyMC module. 
+Determining who is a better player would can become a never ending opinion battle, so instead I focuesd on who is the most effective striker, (ie who has he highet probability of scoring more than one goal) between both players. All data was taken from <a href="https://www.squawka.com/" target="_blank">Squwawka</a> and the analysis relied heavily in the PyMC module. 
 
 
 Probability of scoring at least one goal when starting a game. Using Bayes' Rule, 
@@ -25,6 +25,7 @@ Probability of scoring at least one goal when starting a game. Using Bayes' Rule
 Where:<br> 
 K:   Number of Goals scored in game<br>
 Y=1: Starting game
+Y=1: Entering as a substitute
 <p><br></p>
 
 
@@ -97,9 +98,19 @@ We finally have our posterior predictive distribution. As we can see from the gr
     <figcaption></figcaption>
 </figure>
 
-With our \\( \lambda \\) paremeters ready, we can use the to build our Poisson probabiltiy distribution.  As we can see from the chart below, Hernandez' higher \\( \lambda \\) is reflected in a higher probability of scoring more than 0 goals.  
+
+In the case of Benzema, since either he was a starter or did not play, our Bayesian equation is reduced to the tautology:
+<p><br></p>
+
+\\( P( k > 0 ) = ( P( k > 0 )  \\)
+<p><br></p>
+
+
+This is not the case for Javier Hernandez. Hernandez played 19 games, 11 as a substitute player and 8 as a starter. He was a starter on 4 of the 5 times he scored and he was a starter on 4 of the 14 times he didn't get his name on the scoreboard. 
 
 <figure>
      <img src="/images/Nine/Prob_k.png">
     <figcaption></figcaption>
 </figure>
+
+
