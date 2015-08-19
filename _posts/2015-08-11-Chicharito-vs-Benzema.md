@@ -21,7 +21,7 @@ I am going to define the "most effective striker" as the player who has the high
 The formula for the striker effectiveness can be solved using Bayes' Rule as shown bellow:
 <p><br></p>
 
-\\( P( k > 0 | Y= 1) = \frac{P( Y = 1 | k >0 ) \times P( k > 0)}{P(Y= 1)} \\)
+\\( P( k > 0 | Y= 1) = \frac{P( Y = 1 | k >0 ) \times P( k > 0)}{P( Y = 1 | k >0) \times P(K > 0) + P( Y = 1 | k =0) \times P(K=0)} \\)
 <p><br></p>
 Where:<br> 
 K:   Number of Goals scored in game<br>
