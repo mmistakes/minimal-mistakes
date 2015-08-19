@@ -13,11 +13,11 @@ var changeClass = function (r,className1,className2) {
 };
 //  Creating our button in JS for smaller screens
 var menuElements = document.getElementById('site-nav');
-menuElements.insertAdjacentHTML('afterBegin','<button type="button" role="button" id="menutoggle" class="navtoogle navicon-lines-button x" aria-hidden="true"><span class="navicon-lines"></span>menu</button>');
+menuElements.insertAdjacentHTML('afterBegin','<button type="button" role="button" id="menutoggle" class="navtoggle navicon-lines-button x" aria-hidden="true"><span class="navicon-lines"></span>menu</button>');
 
 //  Toggle the class on click to show / hide the menu
 document.getElementById('menutoggle').onclick = function() {
-  changeClass(this, 'navtoogle active', 'navtoogle');
+  changeClass(this, 'navtoggle active', 'navtoggle');
 };
 // http://tympanus.net/codrops/2013/05/08/responsive-retina-ready-menu/comment-page-2/#comment-438918
 document.onclick = function(e) {
@@ -25,7 +25,7 @@ document.onclick = function(e) {
     buttonStyle =  mobileButton.currentStyle ? mobileButton.currentStyle.display : getComputedStyle(mobileButton, null).display;
 
   if(buttonStyle === 'block' && e.target !== mobileButton && new RegExp(' ' + 'active' + ' ').test(' ' + mobileButton.className + ' ')) {
-    changeClass(mobileButton, 'navtoogle active', 'navtoogle');
+    changeClass(mobileButton, 'navtoggle active', 'navtoggle');
   }
 };
 
