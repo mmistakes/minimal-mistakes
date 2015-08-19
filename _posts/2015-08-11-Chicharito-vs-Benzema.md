@@ -113,12 +113,12 @@ We could assume Benzema is more effective than Javier Hernandez, but we are miss
 <p><br></p>
 
 This is not the case for Javier Hernandez. Hernandez played 19 games, 11 as a substitute player and 8 as a starter. He was a starter on 4 of the 5 times he scored and he was a starter on 4 of the 14 times he didn't get his name on the scoreboard. 
-In his case, the formula
+In his case, the formula:
 <p><br></p>
 \\( P( k > 0 | Y= 1) = \frac{P( Y = 1 | k >0 ) \times P( k > 0)}{P( Y = 1 | k >0) \times P(K > 0) + P( Y = 1 | k =0) \times P(K=0)} \\)
 
-can be answered as
-
+can be answered as:
+<p><br></p>
 \\( P( k > 0 | Y= 1) = \frac{P( Y = 1 | k >0 ) \times P( k > 0)}{\frac{4}{5} \times P(K > 0) + \frac{4}{14} \times P(K=0)} \\)
 
 \\( P( k > 0 | Y= 1) = 57.19% \\)
