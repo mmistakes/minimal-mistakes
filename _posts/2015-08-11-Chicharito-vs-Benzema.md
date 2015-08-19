@@ -14,9 +14,9 @@ For Real Madrid, the 2014/2015 Season was a disaster. Real Madrid finished secon
 The lack of rotations in the striker position caught my attention as it was hogged by the frenchman, Karim Benzema. Benzema clocked a total of 2,312 La Liga minutes on the pitch while the other striker, Javier Herandez, clocked only 859 minutes in the same competition. Based on the minutes played, does this mean that Benzema is a better player than Hernandez?
 <p><br></p>
 
-Determining who is a better player can become a never ending opinion battle, so instead I'm focusing this analysis on who is the most effective striker, between both players. All data comes from <a href="https://www.squawka.com/" target="_blank">Squwawka</a> and the analysis relies heavily on the PyMC module. 
+Determining who is a better player can become a never ending opinion battle, so instead I'm focusing this analysis on who is the most effective striker. All data comes from <a href="https://www.squawka.com/" target="_blank">Squwawka</a> and the analysis relies heavily on the PyMC module. 
 
-I am going to define the "most effective striker" as the player who has the highest probability of scoring, given the fact that he is included in the starting eleven squad. I am aware that this is a rather simplistic approach for determining the effectiveness of a striker, but let's just keep it simple.
+I am defining the "most effective striker" as the player who has the highest probability of scoring, given the fact that he is included in the starting eleven squad. I am aware that this is a rather simplistic approach for determining the effectiveness of a striker, but let's just keep it simple.
 
 The formula for the striker effectiveness can be solved using Bayes' Rule as shown bellow:
 <p><br></p>
@@ -29,37 +29,35 @@ Y=1: Starting game
 Y=1: Entering as a substitute
 <p><br></p>
 
+From the equation above, it is clear we need to find the probability of scoring  \\( P(K>0 \\) for Hernandez and Benzema. To do this, we will use the PyMC module as well as a few other libraries.
 
 
 To begin with, I set up my Ipython environmanet to load all these modules.
 {% highlight python %}
 %matplotlib inline
-import requests
 import matplotlib.pyplot as plt
 import pandas as pd
 import datetime
-import urllib2
-from BeautifulSoup import BeautifulSoup
 import numpy as np
 import scipy.stats as stats
 import pymc as pm  #This is the Bayesian Analysis module, it's great!
 {% endhighlight %}
 
+The first step in the analysis is to define the probabiliy distribution we want to base our model on. For this case, I selected a Poisson distribution because it is discrete and gives a higher probability to lower values. Keep in mind we are talking about soccer and it is rare when we see a player scoring multiple goals in one match. 
 
-Collecting performance data, including minutes played, playing as a sub, dates of games etc was a bit messy and really not that exciting, so I'm going to fast forward to the point where I have a pandas dataframe for Javier Herandez and one for Benzema.
 
-I used a Poisson distribution for two reasons, one being it can be discrete and two; it can attribute a higher probability to scoring 0 goals and a low probability of scoring 3+ goals, yet it is still possible.
+I selected a  Poisson distribution, but now I need to shape the distribution with it's \\( \lambda \\) parameter. 
 
-When defining a Poisson distribution, the most important parameter is \\( \lambda \\). The \\( \lambda \\) parameter is what determines the shape of the distribution. As we increase \\( \lambda \\), we increase the probability of K taking larger values, in our case, a larger \\( \lambda \\) will indicate a higher chance of scoring larger number of goals. 
-
-We don't know \\( \lambda \\), so we are going to estimate it. From good old trial and error, I determined that the best distribution was a Normal distribution with a mean being the sum number of goals in the season, divided by total minutes played multiplied by 90.
-
+The \\( \lambda \\) parameter is what determines the shape of the distribution. A larger \\( \lambda \\), gives a greater probability for larger values of K. In our case, a larger \\( \lambda \\) will indicate a higher chance of scoring larger number of goals. Of course, We don't know \\( \lambda \\), so we are going to estimate it. From good old trial and error, I determined that the best distribution was an Exponential distribution with an \\( \alpha \\) parameter of the inverse of the mean. This is going to be our prior distribution for \\( \lambda \\).
 
 
 {% highlight python %}
 
-lambda_CH = pm.Normal('lambda_KB', df['Goals/Game*'][0], 1)
-lambda_KB = pm.Normal('lambda_KB', df['Goals/Game*'][1], 1)
+#Prior
+alpha = 1.0 / df['Goals/Game*'][0].mean()
+lambda_CH = pm.Exponential('lambda_CB', alpha)
+alpha = 1.0 / df['Goals/Game*'][1].mean()
+lambda_KB = pm.Exponential('lambda_KB', alpha)
 
 @pm.deterministic
 def observed_proportion_CH(lambda_CH=lambda_CH):
@@ -72,7 +70,7 @@ def observed_proportion_KB(lambda_KB=lambda_KB):
     return out
 {% endhighlight %}
 
-In the code above, we set the PyMC varialbes for  \\( \lambda _{CH} \\) and \\( \lambda _{KB} \\). We then use the @pm.deterministic decorator to indicate ovserved_proportion_CH and observed_proportion_KB as a deterministic function.
+In the code above, we set the PyMC varialbes for  \\( \lambda _{CH} \\) and \\( \lambda _{KB} \\). We then used the @pm.deterministic decorator to indicate ovserved_proportion_CH and observed_proportion_KB as a deterministic function. (This is required to work with PyMC models).
 
 With our prior predictive distribution set up, we can begin developing a model. In the code below, the variable obsCH use the value paremter to mold the striker's goal scoring distribution. 
 {% highlight python %}
