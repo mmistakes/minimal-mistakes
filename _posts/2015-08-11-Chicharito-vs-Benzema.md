@@ -48,7 +48,7 @@ The first step in the analysis is to define the probabiliy distribution we want 
 
 I selected a  Poisson distribution, but now I need to shape the distribution with it's \\( \lambda \\) parameter. 
 
-The \\( \lambda \\) parameter is what determines the shape of the distribution. A larger \\( \lambda \\), gives a greater probability for larger values of K. In our case, a larger \\( \lambda \\) will indicate a higher chance of scoring larger number of goals. Of course, We don't know \\( \lambda \\), so we are going to estimate it. From good old trial and error, I determined that the best distribution was an Exponential distribution with an \\( \alpha \\) parameter of the inverse of the mean. This is going to be our prior distribution for \\( \lambda \\).
+The \\( \lambda \\) parameter is what determines the shape of the distribution. A larger \\( \lambda \\), gives a greater probability for larger values of K. In our case, a larger \\( \lambda \\) will indicate a higher chance of scoring larger number of goals. Of course, We don't know \\( \lambda \\), so we are going to estimate it. Heuristically, I determined that the best distribution was an Exponential distribution with an \\( \alpha \\) parameter of the inverse of the mean. This is going to be our prior distribution for \\( \lambda \\).
 
 
 {% highlight python %}
@@ -70,9 +70,10 @@ def observed_proportion_KB(lambda_KB=lambda_KB):
     return out
 {% endhighlight %}
 
-In the code above, we set the PyMC varialbes for  \\( \lambda _{CH} \\) and \\( \lambda _{KB} \\). We then used the @pm.deterministic decorator to indicate ovserved_proportion_CH and observed_proportion_KB as a deterministic function. (This is required to work with PyMC models).
+In the code above, we set the PyMC varialbes for  \\( \lambda _{CH} \\) and \\( \lambda _{KB} \\). We then used the @pm.deterministic decorator to indicate ovserved_proportion_CH and observed_proportion_KB as a deterministic function. (This is required to work with PyMC models)
 
-With our prior predictive distribution set up, we can begin developing a model. In the code below, the variable obsCH use the value paremter to mold the striker's goal scoring distribution. 
+With our prior predictive distribution set up, we can begin developing a model. In the code below, the variable obsCH use the value paremter to mold the striker's goal scoring distribution. Note that we "educate" our distribution with our data using the "value" parameter in the function.
+
 {% highlight python %}
 obsCH = pm.Poisson("obsCH", observed_proportion_CH, observed=True, value=CH_red_df['GoalinGame'])
 obsKB = pm.Poisson("obsKB", observed_proportion_KB, observed=True, value=df_Benzema['GoalinGame'])
@@ -86,31 +87,42 @@ mcmc_KB = pm.MCMC(model_KB)
 mcmc_KB.sample(40000, 15000)
 {% endhighlight %}
 
+At this point, we have sucessfuly defined a posterior distribution for our parameters \\( \lambda _{CH} \\) and \\( \lambda _{KB} \\). To extract samples, we use the following code:
 
 {% highlight python %}
 lambda_CH_samples = mcmc_CH.trace(lambda_CH)[:]
 lambda_KB_samples = mcmc_KB.trace(lambda_KB)[:]
 {% endhighlight %}
 
-We finally have our posterior predictive distribution. As we can see from the graph below, \\( \lambda _{CH} \\) has a higher value than \\( \lambda _{KB} \\) on average. Also note that, \\( \lambda _{CH} \\)  has a wider distribution compared \\( \lambda _{KB} \\) . This is because Benzema played more games and thus we were able to tune our paremter better.
+These parameters are shown in the graph below. \\( \lambda _{KB} \\) has a higher value than \\( \lambda _{CH} \\) on average. Using these parameters in a poisson distribution gives us the graph below.
 <figure>
      <img src="/images/Nine/posterior_lambda.png">
     <figcaption></figcaption>
 </figure>
 
-
-In the case of Benzema, since either he was a starter or did not play, our Bayesian equation is reduced to the tautology:
-<p><br></p>
-
-\\( P( k > 0 ) = ( P( k > 0 )  \\)
-<p><br></p>
-
-
-This is not the case for Javier Hernandez. Hernandez played 19 games, 11 as a substitute player and 8 as a starter. He was a starter on 4 of the 5 times he scored and he was a starter on 4 of the 14 times he didn't get his name on the scoreboard. 
-
 <figure>
      <img src="/images/Nine/Prob_k.png">
     <figcaption></figcaption>
 </figure>
+
+We could assume Benzema is more effective than Javier Hernandez, but we are missing one final step. The model returns a \\( \lambda \\) using the goals per appearence. We now need to adjust for the probability given that the player was a starter. For the case on Benzema this wasn't necessary since he was never a substitute. For his case, the Bayesian equation is reduced to the tautology:
+<p><br></p>
+
+\\( P( k > 0 ) = ( P( k > 0 )  \\)
+\\( P( k > 0 ) = 43.46%  \\)
+<p><br></p>
+
+This is not the case for Javier Hernandez. Hernandez played 19 games, 11 as a substitute player and 8 as a starter. He was a starter on 4 of the 5 times he scored and he was a starter on 4 of the 14 times he didn't get his name on the scoreboard. 
+In his case, the formula
+
+\\( P( k > 0 | Y= 1) = \frac{P( Y = 1 | k >0 ) \times P( k > 0)}{P( Y = 1 | k >0) \times P(K > 0) + P( Y = 1 | k =0) \times P(K=0)} \\)
+
+can be answered as
+
+\\( P( k > 0 | Y= 1) = \frac{P( Y = 1 | k >0 ) \times P( k > 0)}{{4}{5} \times P(K > 0) + {4}{14} \times P(K=0)} \\)
+
+\\( P( k > 0 | Y= 1) = 57.19% \\)
+
+
 
 
