@@ -11,13 +11,14 @@ comments: true
 For Real Madrid, the 2014/2015 Season was a disaster. Real Madrid finished second in La Liga, was knocked out in Champions League semi-finals and was knocked out in Copa by Atletico de Madrid, the home city rival. This outcome seemed impossible during the first half of the season, when the team was on route to breaking the Guiness Record for consecutive wins in official soccer matches. However, the second half of the tournament was not so favorable. Multiple injuries led to forced rotations for some positions and to a lack of player rotations for other positions.
 <p><br></p>
 
-The striker position caught my attention as it was hogged by the frenchman, Karim Benzema. Benzema clocked a total of 2312 La Liga minutes on the pitch while the other striker, Herandez clocked only 859 minutes in the same competition.  
+The lack of rotations in the striker position caught my attention as it was hogged by the frenchman, Karim Benzema. Benzema clocked a total of 2,312 La Liga minutes on the pitch while the other striker, Javier Herandez, clocked only 859 minutes in the same competition. Based on the minutes played, does this mean that Benzema is a better player than Hernandez?
 <p><br></p>
 
-Determining who is a better player would can become a never ending opinion battle, so instead I focuesd on who is the most effective striker, (ie who has he highet probability of scoring more than one goal) between both players. All data was taken from <a href="https://www.squawka.com/" target="_blank">Squwawka</a> and the analysis relied heavily in the PyMC module. 
+Determining who is a better player can become a never ending opinion battle, so instead I'm focusing this analysis on who is the most effective striker, between both players. All data comes from <a href="https://www.squawka.com/" target="_blank">Squwawka</a> and the analysis relies heavily on the PyMC module. 
 
+I am going to define the "most effective striker" as the player who has the highest probability of scoring, given the fact that he is included in the starting eleven squad. I am aware that this is a rather simplistic approach for determining the effectiveness of a striker, but let's just keep it simple.
 
-Probability of scoring at least one goal when starting a game. Using Bayes' Rule, 
+The formula for the striker effectiveness can be solved using Bayes' Rule as shown bellow:
 <p><br></p>
 
 \\( P( k > 0 | Y= 1) = \frac{P( Y = 1 | k >0 ) \times P( k > 0)}{P(Y= 1)} \\)
@@ -27,6 +28,7 @@ K:   Number of Goals scored in game<br>
 Y=1: Starting game
 Y=1: Entering as a substitute
 <p><br></p>
+
 
 
 To begin with, I set up my Ipython environmanet to load all these modules.
