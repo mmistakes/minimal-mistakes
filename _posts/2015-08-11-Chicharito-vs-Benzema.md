@@ -120,7 +120,7 @@ In his case, the formula:
 can be answered as:
 <p><br></p>
 \\( P( k > 0 | Y= 1) = \frac{P( Y = 1 | k >0 ) \times P( k > 0)}{\frac{4}{5} \times P(K > 0) + \frac{4}{14} \times P(K=0)} \\)
-
+<p><br></p>
 \\( P( k > 0 | Y= 1) = 57.19% \\)
 
 
