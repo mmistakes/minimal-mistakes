@@ -165,7 +165,7 @@ $button-size: 1.5rem;
 	}
 }
 // Style the toggle menu link and hide it
-.nav .navtoogle {
+.nav .navtoggle {
 	@include font-rem(18);
 	font-weight: normal;
 	background-color: $black;
@@ -180,7 +180,7 @@ $button-size: 1.5rem;
 	border: none;
 	background: none;
 }
-.navtoogle i {
+.navtoggle i {
 	z-index:-1;
 }
 .icon-menu {
