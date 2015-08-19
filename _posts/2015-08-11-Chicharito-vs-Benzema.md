@@ -109,6 +109,8 @@ We could assume Benzema is more effective than Javier Hernandez, but we are miss
 <p><br></p>
 
 \\( P( k > 0 ) = ( P( k > 0 )  \\)
+
+Where:
 <p><br></p>
 \\( P( k > 0 ) = 43.46\%  \\)
 <p><br></p>
