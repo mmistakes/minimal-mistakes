@@ -8,15 +8,15 @@ modified: 2015-06-28
 comments: true
 ---
 
-For Real Madrid, the 2014/2015 Season was a disaster. Real Madrid finished second in La Liga, was knocked out in Champions League semi-finals and was knocked out in Copa by Atletico de Madrid, the home city rival. This outcome seemed impossible during the first half of the season, when the team was on route to breaking the Guiness Record for consecutive wins in official soccer matches. However, the second half of the tournament was not so favorable. Multiple injuries led to forced rotations for some positions and to a lack of player rotations for other positions.
+During the season 2014/2015, Real Madrid's striker position was covered by the frenchman Karim Benzema. As opposed to Mourinho's philosophy of rotating the striker almost on a game by game basis, Carlo Ancelotti had Benzema starting every game and left Javier "Chicharito" Hernandez in the bench for the majority of the season. Benzema played 2,312 La Liga minutes while Hernandez played 859 minutes. One could assume Chicharito was not world class quality, but every time he jumped on the pitch, he responded by scoring. How can we determine which player deserved to be in the initial lineup?
+
 <p><br></p>
 
-The lack of rotations in the striker position caught my attention as it was hogged by the frenchman, Karim Benzema. Benzema clocked a total of 2,312 La Liga minutes on the pitch while the other striker, Javier Herandez, clocked only 859 minutes in the same competition. Based on the minutes played, does this mean that Benzema is a better player than Hernandez?
+Determining who is the better player can become a never ending opinion battle, so I'm focusing this analysis on who is the most effective striker. Where I define "most effective striker" as the player who has the highest probability of scoring, given the fact that he is included in the starting squad. The data comes from <a href="https://www.squawka.com/" target="_blank">Squwawka</a> and the module I'm experimenting with is the PyMC Python module. 
+
 <p><br></p>
 
-Determining who is a better player can become a never ending opinion battle, so instead I'm focusing this analysis on who is the most effective striker. All data comes from <a href="https://www.squawka.com/" target="_blank">Squwawka</a> and the analysis relies heavily on the PyMC module. 
 
-I am defining the "most effective striker" as the player who has the highest probability of scoring, given the fact that he is included in the starting eleven squad. I am aware that this is a rather simplistic approach for determining the effectiveness of a striker, but let's just keep it simple.
 
 The formula for the striker effectiveness can be solved using Bayes' Rule as shown bellow:
 <p><br></p>
