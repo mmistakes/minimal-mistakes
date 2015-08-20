@@ -124,7 +124,7 @@ can be answered as:
 \\( P( k > 0 | Y= 1) = \frac{P( Y = 1 | k >0 ) \times P( k > 0)}{\frac{4}{5} \times P(K > 0) + \frac{4}{14} \times P(K=0)} \\)
 <p><br></p>
 \\( P( k > 0 | Y= 1) = 57.19\% \\)
-
+<p><br></p>
 According to our anlysis, Hernandez is 13.73% more likely to score than the frenchman Karim Benzema when being in the starting eleven. 
 
 
