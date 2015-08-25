@@ -127,4 +127,18 @@ can be answered as:
 <p><br></p>
 According to our anlysis, Hernandez is 13.73% more likely to score than the frenchman Karim Benzema when being in the starting eleven. 
 
+Upon showing this report to people, a common response was "Yes, Hernandez scores as a sub because the defense is tired". So we're now going to compare apples to apples and use only full game statistics. 
+<figure>
+     <img src="/images/Nine/posterior_lambda_starter.png">
+    <figcaption></figcaption>
+</figure>
 
+Notice, how Hernandez'  \\( \lambda \\) has wider tails than Benzema's  \\( \lambda\\). This is because we have less data for Hernandez (8 games vs Benzema's 29 games) On the plot below, we appreciate the scoring probabilities of both. As we should expect from the  \\( \lambda \\) parameters, Hernandez is more likely to score than Benzema.
+
+<figure>
+     <img src="/images/Nine/Prob_k_starter.png">
+    <figcaption></figcaption>
+</figure>
+
+
+Hernadez has a 47.4% probability of scoring when starting a game and Benzema has a 40.8% probability of scoring. 
