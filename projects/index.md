@@ -39,8 +39,20 @@ The approach we used in this project takes into consideration a series of indivi
 
 In June a versatile team of designers, architects, sociologists, economists and photographers visited Bódvalenke - a small village situated in Borsod county of Hungary. In this village the enthusiastic members of a sustainability research group, MOME Ecolab and Széchenyi István College"s joint team conducted a research as the first step of a long-run developmental project. Our goal was to provide support for small communities living in deep poverty with the help of design. As the initial step of the design process, the group sought for and uncovered local values and resources in connection with the theme of food culture. While taking in-depth interviews at every household, we tasted a number of specially prepared food, the making of which they not only witnessed but even participated in. As the summary of our work, we put together a booklet – entitled Lenkeland’s Machinery –The Gastronomical Prints of Bódvalenke. The booklet is a collection of  recipes and subjective stories revolving around the theme of local food culture and providing an introduction to the community’s eating customs
 
+<figure class="third">
+  <img src="/images/lenke1.jpg">
+  <img src="/images/lenke2.jpg">
+  <img src="/images/lenke3.png">
+	<figcaption>Three images.</figcaption>
+</figure>
+
 ## Network Science Conference (2011)
 
 Preceding studies suggest that certain personality traits have universal effects on the network position of individuals in small groups. Assuming the major role of homophily in tie formation, it seems obvious that group composition as a contextual factor may influence the impact of personality.
+
+<figure>
+  <img src="/images/netsci.png">
+	<figcaption>Three images.</figcaption>
+</figure>
 
 ## RECENS - Wired into each other (2010-)
