@@ -22,7 +22,7 @@ image:
 
 ## Cx-Ray (2014-2015)
 
-
+Coming soon.
 
 ## Minimal Mistakes (2014)
 
@@ -54,3 +54,5 @@ Preceding studies suggest that certain personality traits have universal effects
 </figure>
 
 ## RECENS - Wired into each other (2010-)
+
+Coming soon.
