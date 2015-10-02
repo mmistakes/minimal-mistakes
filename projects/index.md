@@ -33,7 +33,7 @@ I built this site on [Github](http://github.com), supported by the [Github Pages
 The [T.A.B.B.Y project](http://www.tabby.eu) (Threat Assessment of Bullying Behavior) aims at increasing the awareness of the risk when using the web or any electronic form of communication and at learning information and skills to protect themselves. [Several studies](http://ing.tabby.eu/resources.html) have shown that there are different forms of [cyberbullying](http://ing.tabby.eu/what-is-cyberbullying.html) and that it’s highly correlated with bullying at school; often it derives from it. Sometimes it  happens that those who are bullied at school retaliate via the web.
 The approach we used in this project takes into consideration a series of individual, social, and individual factors as well as contextual ones, investigating how these factors interact in the course of time and affect any antisocial behavior.
 
-{% include youtubePlayer.html id="https://www.youtube.com/watch?v=StjxKZ4x9NE&feature=youtu.be" %}
+<iframe width="560" height="315" src="//www.youtube.com/embed/{{ https://www.youtube.com/watch?v=StjxKZ4x9NE&feature=youtu.be }}" frameborder="0" allowfullscreen></iframe>
 
 ## Lenke Project (2013)
 
