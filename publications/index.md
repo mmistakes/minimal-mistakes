@@ -22,8 +22,7 @@ image:
 ## Journals and Book Chapter
 
 * Boda Zs., Néray B. (2015): [Inter-Ethnic Friendships and Negative Ties in Secondary School.](http://www.sciencedirect.com/science/article/pii/S0378873315000234) *Social Networks* (43) 57-72.
-
-
+&nbsp;
 
 * Lőrincz L., Néray B., Pál J. (2011): [Hungary](https://uk.sagepub.com/en-gb/eur/encyclopedia-of-social-networks/book234364). In: Barnett, G. A. (Ed.): *Encyclopedia of
 Social Networks* SAGE Publications Inc.
