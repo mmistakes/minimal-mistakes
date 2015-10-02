@@ -27,7 +27,7 @@ image:
 Social Networks* SAGE Publications Inc.
 
 
-## Presentations and Talks
+## Presentations and Talks ??
 
 + Boda Zs., Néray B.: *Interethnic-social ties in secondary school* - XXXV. Sunbelt Conference 2015, Brighton, UK
 
