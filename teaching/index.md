@@ -20,10 +20,8 @@ image:
 
 ## R Class
 
-* Paper:
-<a href="downloads/papaer.pdf">Paper.pdf</a>
+- sooner or later
 
 ## Class 02
 
-* Papaer2:
-<a href="paper.pdf">Paper.pdf</a>
+- rather later
