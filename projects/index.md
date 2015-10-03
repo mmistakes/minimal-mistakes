@@ -24,9 +24,13 @@ image:
 
 Coming soon.
 
+- - -
+
 ## Minimal Mistakes (2014)
 
 I built this site on [Github](http://github.com), supported by the [Github Pages](https://pages.github.com) using [Michael Rose's](https://mademistakes.com) [Minimal Mistakes project](http://github.com/mmistakes), powered by [Jekyll](http://jekyllrb.com/) 2.2+. You can find out more about it by reading the post on this site or you can visit the original project mentioned above.
+
+- - -
 
 ## TABBY (2013)
 
@@ -34,6 +38,8 @@ The [T.A.B.B.Y project](http://www.tabby.eu) (Threat Assessment of Bullying Beha
 The approach we used in this project takes into consideration a series of individual, social, and individual factors as well as contextual ones, investigating how these factors interact in the course of time and affect any antisocial behavior.
 
 {% include youtubePlayer.html id="StjxKZ4x9NE" %}
+
+- - -
 
 ## Lenke Project (2013)
 
@@ -44,14 +50,19 @@ In June a versatile team of designers, architects, sociologists, economists and 
 	<figcaption>Three images.</figcaption>
 </figure>
 
+- - -
+
 ## Network Science Conference (2011)
 
-Preceding studies suggest that certain personality traits have universal effects on the network position of individuals in small groups. Assuming the major role of homophily in tie formation, it seems obvious that group composition as a contextual factor may influence the impact of personality.
+This shiny poster is the result of one of the very first SNA projects carried out together with two great friends and colleagues: Zsòfia Boda and András Vörös.
+Preceding studies suggest that certain personality traits have universal effects on the network position of individuals in small groups. Assuming the major role of homophily in tie formation, it seems obvious that group composition as a contextual factor may influence the impact of personality. The results partially confirm that the impact of personality based friendship choices are related to the size of subgroups, if homophily is present.
 
 <figure>
   <img src="/images/netsci.png">
 	<figcaption>Three images.</figcaption>
 </figure>
+
+- - -
 
 ## RECENS - Wired into each other (2010-)
 
