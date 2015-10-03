@@ -24,7 +24,7 @@ image:
 <br><br>
 This course material is intended to give an introduction to R for social scientists. The basics of R, data manipulation, elemental methods and data visualization is covered.
 
-- [1st lab]({{ site.url }}/teaching/introduction to r/lab01.R) on R basics with a [toy data set]({{ site.url }}/teaching/introduction to r/exampleData.RData)
+- [1st lab]({{ site.url }}/teaching/introduction to r/lab01.R) on R basics
 - [2nd lab]({{ site.url }}/teaching/introduction to r/lab02.R) on data handling
 - [3rd lab]({{ site.url }}/teaching/introduction to r/lab03.R) on descriptives
 - [4th lab]({{ site.url }}/teaching/introduction to r/lab04.R) on regression
