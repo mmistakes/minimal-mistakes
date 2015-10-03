@@ -47,7 +47,7 @@ In June a versatile team of designers, architects, sociologists, economists and 
 
 <figure>
   <img src="/images/lenke2.jpg">
-	<figcaption>*Lenkeland’s Machinery –The Gastronomical Prints of Bódvalenke*</figcaption>
+	<figcaption>Lenkeland’s Machinery –The Gastronomical Prints of Bódvalenke</figcaption>
 </figure>
 
 - - -
@@ -59,7 +59,7 @@ Preceding studies suggest that certain personality traits have universal effects
 
 <figure>
   <img src="/images/netsci.png">
-	<figcaption>*Poster: Personal attributes vs. homophily.*</figcaption>
+	<figcaption>Poster: Personal attributes vs. homophily</figcaption>
 </figure>
 
 - - -
