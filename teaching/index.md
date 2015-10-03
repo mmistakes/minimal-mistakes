@@ -24,11 +24,11 @@ image:
 <br><br>
 This course material is intended to give an introduction to R for social scientists. The basics of R, data manipulation, elemental methods and data visualization is covered.
 
-- 1st lab on R basics: [lab01]({{ site.url }}/teaching/introduction to r/lab01.R)
-- 2nd lab on data handling: [lab02]({{ site.url }}/teaching/introduction to r/lab02.R)
-- 3rd lab on descriptives: [lab03]({{ site.url }}/teaching/introduction to r/lab03.R)
-- 4th lab on regression: [lab04]({{ site.url }}/teaching/introduction to r/lab04.R)
-- 5th lab on data visualization: [lab05]({{ site.url }}/teaching/introduction to r/lab05.R)
+- [1st lab]({{ site.url }}/teaching/introduction to r/lab01.R) on R basics
+- [2nd lab]({{ site.url }}/teaching/introduction to r/lab02.R) on data handling
+- [3rd lab]({{ site.url }}/teaching/introduction to r/lab03.R) on descriptives
+- [4th lab]({{ site.url }}/teaching/introduction to r/lab04.R) on regression
+- [5th lab]({{ site.url }}/teaching/introduction to r/lab05.R) on data visualization
 
 ## SNA using R
 
