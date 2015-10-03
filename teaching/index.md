@@ -18,10 +18,18 @@ image:
 </div>
 </section><!-- /#table-of-contents -->
 
-## R Class
+## Introduction to R
 
-- sooner or later
+  *!!! Under development !!!*
 
-## Class 02
+  This course material is intended to give an introduction to R for social scientists. The basics of R, data manipulation, elemental methods and data visualization is covered.
 
-- rather later
+- First lab on R basics: <a href="teaching/introduction to r/lab01.R">Lab01.R</a>
+- Second lab on data handling: <a href="teaching/introduction to r/lab02.R">Lab02.R</a>
+- Third lab on descriptives: <a href="teaching/introduction to r/lab03.R">Lab03.R</a>
+- Forth lab on regression: <a href="teaching/introduction to r/lab04.R">Lab04.R</a>
+- Fifth lab on data visualization: <a href="teaching/introduction to r/lab05.R">Lab05.R</a>
+
+## SNA using R
+
+- ...
