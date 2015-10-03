@@ -20,10 +20,10 @@ image:
 
 ## Introduction to R
 
-  *!!! Under development !!!*
-
-  This course material is intended to give an introduction to R for social scientists. The basics of R, data manipulation, elemental methods and data visualization is covered.
-
+*!!! Under development !!!*
+<br><br>
+This course material is intended to give an introduction to R for social scientists. The basics of R, data manipulation, elemental methods and data visualization is covered.
+<br><br>
 - First lab on R basics: <a href="teaching/introduction to r/lab01.R">Lab01.R</a>
 - Second lab on data handling: <a href="teaching/introduction to r/lab02.R">Lab02.R</a>
 - Third lab on descriptives: <a href="teaching/introduction to r/lab03.R">Lab03.R</a>
