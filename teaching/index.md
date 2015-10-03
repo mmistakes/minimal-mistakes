@@ -18,10 +18,12 @@ image:
 </div>
 </section><!-- /#table-of-contents -->
 
-## Class 01
+## R Class
 
-* Sooner or later
+* Paper:
+<a href="downloads/papaer.pdf">Paper.pdf</a>
 
 ## Class 02
 
-* Rather later
+* Papaer2:
+<a href="paper.pdf">Paper.pdf</a>
