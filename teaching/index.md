@@ -26,9 +26,10 @@ This course material is intended to give an introduction to R for social scienti
 
 - [1st lab]({{ site.url }}/teaching/introduction to r/lab01.R) on R basics
 - [2nd lab]({{ site.url }}/teaching/introduction to r/lab02.R) on data handling
-- [3rd lab]({{ site.url }}/teaching/introduction to r/lab03.R) on descriptives
-- [4th lab]({{ site.url }}/teaching/introduction to r/lab04.R) on regression
-- [5th lab]({{ site.url }}/teaching/introduction to r/lab05.R) on data visualization
+- [3rd lab]({{ site.url }}/teaching/introduction to r/lab03.R) on functions
+- [4th lab]({{ site.url }}/teaching/introduction to r/lab04.R) on descriptives
+- [5th lab]({{ site.url }}/teaching/introduction to r/lab05.R) on regression
+- [6th lab]({{ site.url }}/teaching/introduction to r/lab06.R) on data visualization
 
 ## SNA using R
 

@@ -10,5 +10,5 @@ image:
 
 Oh, hello, I'm Balint Neray - yet an other wordprocessin' and data-cruchin' sociologist -, you're visiting my site.
 
-<i class="fa fa-info-circle"></i> ... jut look around, you might like what you find.
+<i class="fa fa-info-circle"></i> ... just look around, you might like what you find.
 {: .notice}
