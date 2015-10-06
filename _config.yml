@@ -28,13 +28,16 @@ kramdown:
 owner:
   name: Your Name
   avatar: bio-photo.jpg
-  bio: "Describe your self."
+  bio: "Ace Physiotherapy - Downtown Toronto
+2 Carlton St #601
+Toronto, ON M5B 1J3
+http://torontophysiotherapy.co"
   email:
   disqus-shortname:
-  twitter: #username
-  facebook: #username
+  twitter: acephysio
+  facebook: AcePhysio
   google:
-    plus: #username
+    plus: Torontophysiotherapy
     analytics:
     verify:
     ad-client:
@@ -51,7 +54,7 @@ owner:
   foursquare: #username
   steam: #username
   dribbble: #username
-  youtube: #username
+  youtube: AcePhysio
   soundcloud: #username
   weibo: #username
   flickr: #username
