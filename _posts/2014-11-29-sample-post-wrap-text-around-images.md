@@ -11,7 +11,7 @@ comments: true
 #### One on the left
 The real protagonist of the film however is Hanoi. Its suffocating heat, its noise, its crowds, restlessness and its poise waiting for something to happen. There is a bubbling tension under the surface intended to express the inner torments of Huyen, as from her we did not get much of anything. She drifts through the whole film towards that tomorrow, when the abortion comes, always in an attainable distance, but never quite there for her to grab it.
 <figure>
-<img class="wp-image-63" style="border: 0pt none; float: left; padding-right: 10px; padding-bottom: 5px;" src="http://www.world-finance-conference.com/sites/default/files/hanoi-740a.jpg" alt="" width="740" height="284" />
+<img class="wp-image-63" style="border: 0pt none; float: left; padding-right: 10px; padding-bottom: 5px;" src="http://vivaster.com/images/excursion/photo/5471fe407cac98_08046238.jpeg" alt="" width="347" height="260" />
 <figcaption><a
 href="http://kenh14.vn/dap-canh-giua-khong-trung-2014.html"
 title="Nguyễn Thuỳ Anh and Phạm Trần Thanh Du">Nguyễn Thuỳ Anh and Phạm Trần Thanh Du</a>.</figcaption>
@@ -21,7 +21,7 @@ And this is where we leave her, leaning against the balcony railing the rumbling
 #### One on the right
 The real protagonist of the film however is Hanoi. Its suffocating heat, its noise, its crowds, restlessness and its poise waiting for something to happen. There is a bubbling tension under the surface intended to express the inner torments of Huyen, as from her we did not get much of anything. She drifts through the whole film towards that tomorrow, when the abortion comes, always in an attainable distance, but never quite there for her to grab it.
 <figure>
-<img class="wp-image-63" style="border: 0pt none; float: right; padding-left: 10px; padding-bottom: 5px;" src="http://www.world-finance-conference.com/sites/default/files/hanoi-740a.jpg" alt="" width="740" height="284" />
+<img class="wp-image-63" style="border: 0pt none; float: right; padding-left: 10px; padding-bottom: 5px;" src="http://vivaster.com/images/excursion/photo/5471fe407cac98_08046238.jpeg" alt="" width="347" height="260" />
 <figcaption><a
 href="http://kenh14.vn/dap-canh-giua-khong-trung-2014.html"
 title="Nguyễn Thuỳ Anh and Phạm Trần Thanh Du">Nguyễn Thuỳ Anh and Phạm Trần Thanh Du</a>.</figcaption>
