@@ -2,7 +2,7 @@
 layout: post
 title: Scala Play server with ReactJS and RefluxJS
 excerpt: "A simple Scala/Play server using WebJars, ReactJS and RefluxJS for the frontend."
-modified: 2015-07-29
+modified: 2015-10-16
 tags: [scala, play, webjars, refluxjs, reactjs]
 comments: true
 ---
@@ -39,7 +39,7 @@ At this point we're ready to import ReactJS and RefluxJS in our `build.sbt` file
 
 {% highlight html %}
 {% raw %}
-"org.webjars" % "react" % "0.13.3",
+"org.webjars" % "react" % "0.14.0",
 "org.webjars" % "refluxjs" % "0.2.5"
 {% endraw %}
 {% endhighlight %}
@@ -63,7 +63,7 @@ lazy val root = (project in file(".")).enablePlugins(PlayScala, SbtWeb)
 **Note**: after changes in `build.sbt` or `plugins.sbt`, you most likely need to reload the project; the simplest way is to use the `reload` command from the sbt console. Otherwise, just close and rebuild the project from command line (that is, launch `activator` in the project folder and then `clean` and `compile`).
 
 Our setup is now complete - we can start *reacting* and *refluxing*!
-Create your own view in the `views` package or modify the existing `index.scala.html`. Whichever way you choose, add the `react.js`, `JSXTransformer.js` and `reflux.js` libraries. It should look like this:
+Create your own view in the `views` package or modify the existing `index.scala.html`. Whichever way you choose, add the `react.js` and `reflux.js` libraries. It should look like this:
 
 {% highlight html %}
 {% raw %}
@@ -71,7 +71,6 @@ Create your own view in the `views` package or modify the existing `index.scala.
 <html>
 <head>
     <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.fullPath("react", "react.js"))'></script>
-    <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("JSXTransformer.js"))'></script>
     <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("reflux.js"))'></script>
 </head>
 <body>
@@ -114,7 +113,7 @@ var ClickedStore = Reflux.createStore({
 
 Let's check what's happening here. We're instructing this store to listen to the `ClickedAction` set of actions. Such set contains only one action, named `clicked`. Here, we create a function with the same name, that takes one parameter `n`. Inside this function, we invoke the method `trigger`, passing the parameter `n`. It will all make sense when we see the main React file and the Reflux wiring magic in action (pun not intended).
 
-Under `assets/javascripts` create the file `reactReflus.jsx`, containing:
+Under `assets/javascripts` create the file `reactReflux.jsx`, containing:
 
 {% highlight javascript %}
 {% raw %}
@@ -176,7 +175,6 @@ The file you have just created needs to be referenced in your HTML file, after t
 <html>
   <head>
     <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.fullPath("react", "react.js"))'></script>
-    <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("JSXTransformer.js"))'></script>
     <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("reflux.js"))'></script>
     <script type='text/javascript' src='@routes.Assets.versioned("javascripts/actions/clickedAction.js")'></script>
     <script type='text/javascript' src='@routes.Assets.versioned("javascripts/stores/clickedStore.js")'></script>
