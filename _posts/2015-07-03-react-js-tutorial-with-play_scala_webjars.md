@@ -2,7 +2,7 @@
 layout: post
 title: ReactJS Tutorial with Play, Scala and WebJars.
 excerpt: "The official ReactJS tutorial implemented with Play Framework, using Scala and WebJars."
-modified: 2015-07-03
+modified: 2015-10-22
 tags: [scala, webjars, play framework, reactjs]
 comments: true
 ---
@@ -51,7 +51,7 @@ React recommends writing your code in [JSX](https://jsx.github.io), which is an 
 
 {% highlight html %}
 {% raw %}
-addSbtPlugin("com.github.ddispaltro" % "sbt-reactjs" % "0.5.0")
+addSbtPlugin("com.github.ddispaltro" % "sbt-reactjs" % "0.5.2")
 {% endraw %}
 {% endhighlight %}
 
@@ -65,7 +65,7 @@ lazy val root = (project in file(".")).enablePlugins(PlayScala, SbtWeb)
 
 **Note**: after changes in `build.sbt` or `plugins.sbt`, you most likely need to reload the project; the simplest way is to use the `reload` command from the sbt console. Otherwise, just close and rebuild the project from command line (that is, launch `activator` in the project folder and then `clean` and `compile`).
 
-Now we're all set to start following the Facebook tutorial. Create your own view in the `views` package or modify the existing `index.scala.html`. Whichever you choose, add the `react.js` and `JSXTransformer.js` libraries. It should look like this:
+Now we're all set to start following the Facebook tutorial. Create your own view in the `views` package or modify the existing `index.scala.html`. Whichever you choose, add the `react.js` library. It should look like this:
 
 {% highlight html %}
 {% raw %}
@@ -73,7 +73,6 @@ Now we're all set to start following the Facebook tutorial. Create your own view
 <html>
 <head>
     <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.fullPath("react", "react.js"))'></script>
-    <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("JSXTransformer.js"))'></script>
 </head>
 <body>
     <div id="content"></div>
