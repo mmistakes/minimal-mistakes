@@ -3,7 +3,7 @@
 
 {% set active_page = "CAREERS" %}
 {% if not sub_active_page %}
-{% set sub_active_page='All Openings' %}
+{% set sub_active_page='Current Openings' %}
 {% endif %}
 {% block main %}
 	<section class='block'>
@@ -11,7 +11,7 @@
 		<section class='sidebar'>
 				<ul>
 				{% set nav_bar = [
-					('/careers.html','All Openings'),
+					('/careers.html','Current Openings'),
 					('/bioinformatician-1.html','Bioinformatician I'),
 					('/bioinformatician-2.html','Bioinformatician II'),
 					] %}

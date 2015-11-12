@@ -28,12 +28,11 @@
 				<ul>
 				{% set nav_bar = [
 					('/','HOME'),
-					('/pilot.html','PILOT'),
-					('/funding.html','FUNDING'),
+					('/about.html','ABOUT'),
+					('/research.html','RESEARCH'),
 					('/resources.html','RESOURCES'),
 					('/education.html','EDUCATION'),
 					('/careers.html','CAREERS'),
-					('/about.html','ABOUT')
 					] %}
 				{% for href, caption in nav_bar %}
 					<li><a href="{{href}}" {% if caption == active_page %} class='active' {% endif %}>{{caption}}</a></li>
