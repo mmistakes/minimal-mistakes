@@ -1,3 +1,4 @@
+#! /usr/bin/env python
 import os,sys
 
 dirname=os.path.dirname
