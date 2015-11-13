@@ -88,6 +88,9 @@
 	}
 	.middle {
 		padding: 50px;
+		width: 100%;
+		margin: 0px;
+		margin: auto;
 	}
 	.featured-projects section .circle{
 		width: 180px;
@@ -121,6 +124,7 @@
 		z-index: 1000;
 	}
 	header nav ul li {
+		background: rgba(223, 223, 223, 0.79);
 		display: block;
 	}
 
@@ -162,6 +166,9 @@
 	.middle{
 		width: 100%;
 	}
+	.welcome .middle h1{
+		font-size: 2em;
+	}
 	.banner p{
 		font-size: 2em;
 	}
@@ -170,7 +177,7 @@
 		padding-top: 25px;
 	}
 	section.welcome{
-		background-size: 200%;
+		background-size: cover;
 	}
 	.welcome .middle{
 		padding: 2em;

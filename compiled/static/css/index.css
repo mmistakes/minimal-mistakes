@@ -8,12 +8,18 @@
 
 }
 .welcome {
-	background-image: url('/static/img/banner-long.JPG');
-	background-size: 100%;
+	background-image: url('/static/img/homepagebackground.png');
+	background-size: cover;
 	background-attachment: fixed;
+}
+.middle{
+	width: 100%;
 }
 .welcome h1 {
 	color: white;
+	font-size: 3em;
+	border-bottom: 0px;
+	margin-bottom: 0px;
 }
 .welcome article {
 	color: #E4E4E4;

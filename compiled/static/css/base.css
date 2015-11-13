@@ -35,9 +35,12 @@ body {
 
 header nav {
 	width:100%;
+	height: 80px;
+
 }
 header nav .logo {
-	display: inline-block;
+	display: block;
+	float: left;
 }
 header nav .logo a{
 	width:250px;
@@ -57,6 +60,7 @@ header nav .logo a{
 header ul{
 	display: block;
 	float: right;
+	height: 80px;
 	font-size: 14px;
 }
 header nav ul li {
@@ -72,6 +76,9 @@ header nav ul li a{
 	cursor: pointer;
 }
 header {
+	height: 80px;
+}
+header .nav {
 	height: 80px;
 }
 .banner {
@@ -311,7 +318,7 @@ article a:hover {
 .middle{
 	width:60%;
 	margin:auto;
-	padding: 5em;
+	padding: 5em 0em;
 
 }
 .middle>div{
