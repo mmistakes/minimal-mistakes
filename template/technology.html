@@ -2,10 +2,7 @@
 {% block title %} Technology {% endblock %}
 
 {% set active_page = "TECHNOLOGY" %}
-<<<<<<< HEAD
-=======
 {% set current_url = "/technology.html" %}
->>>>>>> origin/phillis
 {% if not sub_active_page %}
 	{% set sub_active_page = "All Resources" %}
 {% endif %}
@@ -15,20 +12,11 @@
 		<section class='sidebar'>
 				<!-- <h2><a href="/resources.html">Resources</a></h2> -->
 				<ul>
-				{% set nav_bar = [
-<<<<<<< HEAD
-					('/technology.html','All Resources'),
-					('/protected-data-clouds.html','Protected Data Clouds'),
-					('/gdc.html','Collaborations with NCI'),
-					('/collaborations-with-open-commons-consortium.html','Collaborations with OCC'),
-					('/education.html','Education'),
-=======
 					(current_url,'All Resources'),
 					('/protected-data-clouds.html','Protected Data Clouds'),
 					('/gdc.html','Collaborations with NCI'),
 					('/collaborations-with-open-commons-consortium.html','Collaborations with OCC'),
 					(current_url~'#education','Education'),
->>>>>>> origin/phillis
 					] %}
 				{% for href, caption in nav_bar %}
 				<li><a href="{{href}}" {% if caption == sub_active_page %} class='active' {% endif %}>{{caption}}</a></li>
@@ -97,8 +85,6 @@
 					</ul>
 				</article>
 			</section>
-<<<<<<< HEAD
-=======
 			<section id="education">
 				<div>
 					<h2>Education</h2>
@@ -114,7 +100,6 @@
 					<a class="button" href="/education.html">Detail</a>
 				</article>
 			</section>
->>>>>>> origin/phillis
 		{% endblock %}
 		</section>
 	</section>
