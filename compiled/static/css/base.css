@@ -135,6 +135,7 @@ header {
 	background: #963565;
 	border: 1px solid #963565;
 	padding: 0px 10px;
+	margin: 10px 0px;
 	text-decoration: none;
 	/* font-style: italic; */
 	border-radius: 15px;
@@ -227,6 +228,9 @@ h1 {
 	border-bottom:8px solid #E9E9E9;
 	padding: 3em 0em;
 }
+.main-block section div.block {
+	padding: 0em 0em 1em 0em;
+}
 .main-block h2 {
 	font-size:1.3em;
 	margin-bottom: 30px;
@@ -245,7 +249,15 @@ h1 {
 .main-block section li:hover {
 	background: #dfdfdf;
 }
-
+.main-block section .items li:first-child {
+	border-top: 1px dashed #dfdfdf;
+}
+.main-block section .items li {
+	border-bottom: 1px dashed #dfdfdf;
+}
+.main-block section .bullets li {
+	list-style: disc inside;
+}
 .main-block section li a {
 	color: #565656;
 	padding: 10px 0px;
@@ -253,7 +265,7 @@ h1 {
 	font-style: inherit;
 }
 .main-block article p {
-	margin-bottom: 1em;
+	margin: 0.5em 0em;
 }
 .column {
 	float: left;
@@ -273,7 +285,10 @@ article {
 	line-height: 25px;
 
 }
-
+article .comment {
+	font-style: italic;
+	font-size: 0.8em;
+}
 article a {
 	color:#963565;
 	text-decoration: none;
