@@ -13,8 +13,11 @@
 				<ul>
 				{% set nav_bar = [
 					('#','Research'),
+					('#researchinterests','Research Interests'),
 					('#pilot','Pilot Projects'),
 					('#funding','Funding Opportunities'),
+					('#collaborators','Collaborators'),
+
 					] %}
 				{% for href, caption in nav_bar %}
 				<li><a href="{{href}}" {% if caption == sub_active_page %} class='active' {% endif %}>{{caption}}</a></li>
@@ -24,6 +27,27 @@
 		{% endblock %}
 		<section class='main-block'>
 		{% block mainblock %}
+			<section id='researchinterests'>
+				<div>
+					<h2>Research Interests</h2>
+				</div>
+				<article>
+					<ul class='items'>
+						<li>
+							<p>Data Commons and Data Clouds </p>
+						</li>
+						<li>
+							<p>Bioinformatics </p>
+						</li>
+						<li>
+							<p>High Performance Analytics </p>
+						</li>
+						<li>
+							<p>Pipelines for large scale data analysis </p>
+						</li>
+					</ul>
+				</article>
+			</section>
 			<section id='pilot'>
 				<div>
 					<h2>CDIS Pilot Projects</h2>
@@ -59,14 +83,17 @@
 					<h2>Funding Opportunities</h2>
 				</div>
 				<article>
-					The Center for Data Intensive Science provides funding and support to University of Chicago researchers for projects leveraging data science with data clouds and data commons. CDIS offers a collaborative approach to stimulate data-driven research across disciplines, defuse technological barriers, and promote discovery through informatics. 
-
-
-					Pilot projects for the current period have been awarded. Application information for the next award period will be posted in May 2015. 
-
+					We provide funding and support to University of Chicago researchers for projects leveraging data science with data clouds and data commons. CDIS offers a collaborative approach to stimulate data-driven research across disciplines, defuse technological barriers, and promote discovery through informatics. 
 				</article>
 			</section>
-			
+			<section id='collaborators'>
+				<div>
+					<h2>Collaborators</h2>
+				</div>
+				<article>
+					We engage with innovative research teams across a variety of disciplines around the world.
+				</article>
+			</section>
 		{% endblock %}
 		</section>
 	</section>
