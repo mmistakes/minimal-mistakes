@@ -3,7 +3,7 @@
 
 {% set active_page = "CAREERS" %}
 {% if not sub_active_page %}
-{% set sub_active_page='Current Openings' %}
+{% set sub_active_page='Working at CDIS' %}
 {% endif %}
 {% block main %}
 	<section class='block'>
@@ -11,9 +11,8 @@
 		<section class='sidebar'>
 				<ul>
 				{% set nav_bar = [
-					('/careers.html','Current Openings'),
-					('/bioinformatician-1.html','Bioinformatician I'),
-					('/bioinformatician-2.html','Bioinformatician II'),
+					('/careers.html','Working at CDIS'),
+					('/current-openings.html','Current Openings'),
 					] %}
 				{% for href, caption in nav_bar %}
 				<li><a href="{{href}}" {% if caption == sub_active_page %} class='active' {% endif %}>{{caption}}</a></li>
@@ -22,30 +21,77 @@
 		</section>
 		{% endblock %}
 		<section class='main-block'>
-		{% block mainblock %}
+			{% block mainblock %}
 			<section>
 				<div>
-					<h2>Bioinformatician I</h2>
+					<h2>Working at the Center for Data Intensive Science</h2>
 				</div>
 				<article>
 					<p>
-					The Bioinformatician will design and implement bioinformatics services for faculty for projects in the Center for Data Intensive Science. The Bioinfomatician will work on developing pipelines for this project, including support for high-throughput genomic technologies. 
+						We're a dedicated team of researchers and engineers drawing from different backgrounds and ideas to push the boundaries of data intensive science. Our mission is to pioneer translational data intensive science to revolutionize medicine and healthcare. Our research interests include data commons, bioinformatics, high performance analytics, virtualized infrastructure, and pipelines for large-scale data analysis.  We work closely with researchers at the University of Chicago and others around the world to pursue discovery and make an impact on society.
 					</p>
-					<a class='button' href="/bioinformatician-1.html">Detail</a>
 				</article>
 			</section>
 			<section>
-				<div>
-					<h2>Bioinformatician II</h2>
-				</div>
+					<h2>We offer excellent benefits</h2>
 				<article>
-					<p>The Bioinformatician will design and implement bioinformatics services for faculty for projects in the Center for Data Intensive Science. The Bioinfomatician will work on developing pipelines for this project, including support for high-throughput genomic technologies. </p>
-					<a class='button' href="/bioinformatician-2.html">Detail</a>
+					<div class='block'>
+						<p>Health & Welfare Benefits</p>
+						<ul class='bullets'>
+							<li>5 Medical Plans</li>
+							<li>2 Dental Plan</li>
+							<li>Vision Plan</li>
+							<li>Healthcase Flexible Spending</li>
+							<li>Health Savings Account</li>
+							<li>Life and Disablitiy Insurance</li>
+							<li>Long Term Care Insurance</li>
+							<li>On-Site Childcare Program</li>
+							<li>Staff and Faculty Assistance Program</li>
+							<li>Adoption Assistance Program</li>
+							<li>Childcare Referral Services</li>
+							<li>Elder Care Referral Service</li>
+							<li>Retiree Medical Insurance</li>						
+						</ul>
+					</div>
+					<div class='block'>
+						<p> Tuition Benefits</p>
+						<ul class='bullets'>
+							<li>Professional Development</li>
+							<li>Staff Education Assistance Program</li>
+							<li>Dependent Children Education Assistance Program</li>
+						</ul>
+					</div>
+					<div class='block'>
+						<p>Retirement & Financial Benefits</p>
+						<ul class='bullets'>
+							<li>Retirement Income Program</li>
+							<li>Supplemental Retirement Program</li>
+							<li>Staff Pension Plan</li>
+							<li>Employer-Assisted Housing Program</li>
+							<li>Dependent Care Flexible Spending</li>
+							<li>Qualified Transportation Benefits</li>
+							<li>Perks and Discounts</li>
+						</ul>
+					</div>
+					<div class='block'>
+						<p>Vacation, Holidays & Time Off Benefits</p>
+						<ul class='bullets'>
+							<li>8 Paid Holidays</li>
+							<li>15 Vacation Days</li>
+							<li>5 Personal Holidays</li>
+							<li>10 Sick Days</li>
+							<li>Leave of Absense Programs</li>
+							<li>Short & Long Term Disability</li>
+						</ul>
+					</div>
+					<p class='comment'>The University of Chicago is an Affirmative Action / Equal Opportunity / Disabled / Veterans Employer.</p>
 				</article>
 			</section>
-			
-		{% endblock %}
+			{% endblock %}
+			{% import 'util.html' as util %}
+			{{ util.share(active_page) }}
 		</section>
+
 	</section>
 	
 

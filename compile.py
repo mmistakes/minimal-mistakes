@@ -13,6 +13,7 @@ from jinja2 import Environment, PackageLoader
 env = Environment(loader=PackageLoader('cdiswebsite', 'template'))
 for filename in os.listdir('template'):
     if filename!='base.html':
+        print filename
         template = env.get_template(filename)
         content=template.render()
         f=open(os.path.join(dest ,filename),'w')
