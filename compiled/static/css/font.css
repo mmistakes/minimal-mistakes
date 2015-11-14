@@ -93,6 +93,7 @@
 }
 .icon-left-quote:before {
 	content: "\e904";
+<<<<<<< HEAD
 }
 .icon-right-quote:before {
 	content: "\e905";
@@ -103,4 +104,14 @@
 .icon-menu:before {
 	content: "\e907";
 }
+=======
+}
+.icon-right-quote:before {
+	content: "\e905";
+}
+.icon-chart:before {
+	content: "\e906";
+}
+
+>>>>>>> add collaborators logos, change home page
 
