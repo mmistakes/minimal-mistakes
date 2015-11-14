@@ -112,6 +112,12 @@
 .icon-chart:before {
 	content: "\e906";
 }
+<<<<<<< HEAD
 
 >>>>>>> add collaborators logos, change home page
+=======
+.icon-menu:before {
+	content: "\e907";
+}
+>>>>>>> Add menu icon
 
