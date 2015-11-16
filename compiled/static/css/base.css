@@ -17,6 +17,9 @@ box-sizing:border-box;
 ul {
 	list-style: none;
 }
+section ul {
+	margin-bottom: 1em;
+}
 a {
 	text-decoration: none;
 	color: inherit;
@@ -96,8 +99,10 @@ header .nav {
 	font-size: 4em;
 	font-family: 'Titillium Web';
 }
-.gallery {
+.main-block section.gallery {
 	overflow: hidden;
+	border-bottom: 0px;
+	padding-top: 0px;
 }
 .row {
 	display: block;
@@ -107,7 +112,7 @@ header .nav {
 	width: 33.3333333%;
 	float: left;
 	display: block;
-	padding: 10px;
+	padding-right: 20px;
 	text-align: center;
 }
 .gallery p{
@@ -121,6 +126,7 @@ header .nav {
 .gallery .desc{
 	padding-top: 5px;
 	margin: 0px;
+	margin-bottom: 1em;
 	opacity: 1;
 	/*margin-top: -5em;*/
 	transition:0.5 ease-in;
@@ -313,7 +319,12 @@ article a:hover {
 }
 .blog img{
 	margin-top: -10px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
+}
+.blog h1 {
+	display: block;
+	border-bottom: 0px;
+	/*margin-bottom: 0px;*/
 }
 .middle{
 	width:60%;
@@ -361,6 +372,10 @@ article a:hover {
 	border-radius: 5px;
 	margin-right: 10px;
 	transition:0.2s ease-in-out;
+}
+.icon.gdc {
+	width: 250px;
+
 }
 .icon:hover {
 	box-shadow: 0 0 10px #dfdfdf;

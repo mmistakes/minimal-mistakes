@@ -60,21 +60,47 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-menu:before {
-	content: "\e607";
-}
-
-.icon-googleplus:before {
-	content: "\e600";
-}
-
-.icon-facebook:before {
-	content: "\e601";
-}
 
 .icon-twitter:before {
-	content: "\e602";
+	content: "\f099";
+}
+.icon-facebook:before {
+	content: "\f09a";
+}
+.icon-facebook-f:before {
+	content: "\f09a";
+}
+.icon-google-plus:before {
+	content: "\f0d5";
+}
+.icon-share-alt:before {
+	content: "\f1e0";
+}
+.icon-skyatlas:before {
+	content: "\f216";
+}
+.icon-profile:before {
+	content: "\e900";
+}
+.icon-user-tie:before {
+	content: "\e901";
+}
+.icon-lab:before {
+	content: "\e902";
 }
 .icon-share:before {
-	content: "\e603";
+	content: "\e903";
 }
+.icon-left-quote:before {
+	content: "\e904";
+}
+.icon-right-quote:before {
+	content: "\e905";
+}
+.icon-chart:before {
+	content: "\e906";
+}
+.icon-menu:before {
+	content: "\e907";
+}
+

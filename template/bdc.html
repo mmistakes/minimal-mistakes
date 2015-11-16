@@ -1,0 +1,20 @@
+{% extends "technology.html" %}
+
+{% set sub_active_url='bdc' %}
+{% set sub_active_page = "Collaborations with OCC" %}
+{% block mainblock %}
+<div class='blog'>
+	<div class='title'>
+		<h1>Biomedical Data Commons (BDC)</h1>
+		{% import 'util.html' as util %}
+		{{ util.share(sub_active_url) }}
+	</div>
+<article>
+	<p>
+		The Biomedical Data Commons (BDC) is cloud-based infrastructure that provides secure, compliant cloud services for managing and analyzing genomic data, electronic medical records (EMR), medical images, and other PHI data. It provides resources to researchers so that they can more easily make discoveries from large complex controlled access datasets. The BCC provides resources to those institutions in the Open Commons Consortium. It is an example of what is sometimes called condominium model of sharing research infrastructure in which the research infrastructure is operated by a consortium of educational and research organizations and provides resources to the consortium. 
+	</p>
+	<p>
+</article>
+	
+
+{% endblock %}

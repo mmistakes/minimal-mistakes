@@ -4,6 +4,9 @@
 {% if not sub_active_page %}
 	{% set sub_active_page='Research' %}
 {% endif %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="/static/css/research.css">
+{% endblock %}
 {% block main %}
 
 	<section class='block'>
@@ -11,8 +14,6 @@
 		<section class='sidebar'>
 				<ul>
 				{% set nav_bar = [
-					('#','Research'),
-					('#researchinterests','Research Interests'),
 					('#pilot','Pilot Projects'),
 					('#funding','Funding Opportunities'),
 					('#collaborators','Collaborators'),
@@ -26,30 +27,9 @@
 		{% endblock %}
 		<section class='main-block'>
 		{% block mainblock %}
-			<section id='researchinterests'>
-				<div>
-					<h2>Research Interests</h2>
-				</div>
-				<article>
-					<ul class='items'>
-						<li>
-							<p>Data Commons and Data Clouds </p>
-						</li>
-						<li>
-							<p>Bioinformatics </p>
-						</li>
-						<li>
-							<p>High Performance Analytics </p>
-						</li>
-						<li>
-							<p>Pipelines for large scale data analysis </p>
-						</li>
-					</ul>
-				</article>
-			</section>
 			<section id='pilot'>
 				<div>
-					<h2>CDIS Pilot Projects</h2>
+					<h2>Pilot Projects</h2>
 				</div>
 				<article>
 					<ul class='items'>
@@ -74,7 +54,6 @@
 							<p class='desc'>Kevin White, PhD</p>
 						</li>
 					</ul>
-
 				</article>
 			</section>
 			<section id='funding'>
@@ -82,7 +61,7 @@
 					<h2>Funding Opportunities</h2>
 				</div>
 				<article>
-					We provide funding and support to University of Chicago researchers for projects leveraging data science with data clouds and data commons. CDIS offers a collaborative approach to stimulate data-driven research across disciplines, defuse technological barriers, and promote discovery through informatics. 
+					We provide funding and support to University of Chicago researchers for selected projects leveraging data science with data clouds and data commons. CDIS offers a collaborative approach to stimulate data-driven research across disciplines, defuse technological barriers, and promote discovery through informatics. 
 				</article>
 			</section>
 			<section id='collaborators'>
@@ -92,6 +71,13 @@
 				<article>
 					We engage with innovative research teams across a variety of disciplines around the world.
 				</article>
+				{% for img in [
+					"INRG-HEADER-with-flags.jpg", "OICR2logo.png", "nci.png", "igsb_204x84.png",
+					"cri.jpeg", "ICGC_Logo_eng_large.jpg",
+					"jhu.png", "northwestern.png", "EMBL_EBI_Logo_white.png", "ASGC TWGrid.jpg", 
+					"nsf1.png", "OCC_RGB_HORIZ.jpg", "ci_site_logo.png", "ITM-Logo.jpg", ]%}
+					<img class="research-logo" src="/static/img/collaborator-logos/{{img}}">
+				{% endfor %}
 			</section>
 		{% endblock %}
 		</section>

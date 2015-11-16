@@ -11,9 +11,8 @@
 		<section class='sidebar'>
 				<ul>
 				{% set nav_bar = [
-					('/about.html','Who We Are'),
-					('/people.html','People'),
-					('/contact.html','Contact'),
+					('#about','Who We Are'),
+					('#contact','Contact'),
 					] %}
 				{% for href, caption in nav_bar %}
 				<li><a href="{{href}}" {% if caption == sub_active_page %} class='active' {% endif %}>{{caption}}</a></li>
@@ -23,27 +22,28 @@
 		{% endblock %}
 		<section class='main-block'>
 		{% block mainblock %}
-		<div class='blog'>
+		<section class='blog' id="about">
 			<h1>Who We Are</h1>
 			<article>
-				<img src="/static/img/about.JPG">
 				<p>
-					Housed in the Biological Sciences Division of the University of Chicago, the Center for Data Intensive Science focuses on data science and its applications to problems in biology, medicine, and health care. 
-				</p>
-				<p>
-					We collaborate in ongoing projects with the Institute for Genomics and Systems Biology and the Computation Institute at the University of Chicago. 
-				</p>
-				<p>
-					Our vision is a world in which researchers have ready access to the data needed and to the tools required to make discoveries from data that increase our scientific knowledge and improve the quality of life.
+					We're a dedicated team of researchers and engineers drawing from different backgrounds and ideas to push the boundaries of data intensive science. Our mission is to pioneer translational data intensive science to advance biology, medicine, healthcare and the environment.  We work closely with researchers at the University of Chicago and others around the world to pursue discovery and make an impact on society.
 				</p>
 				
 				
 			</article>
-		</div>
-			</section>
-			
-		{% endblock %}
 		</section>
+		<section id="contact" class='blog'>
+			<h1>Contact</h1>
+			{% set contact = [
+				('Phone','773-834-0914'),
+				('Email','cdis@uchicago.edu'),
+				('Mail','900 East 57th Street<br> Room 10148 <br>Chicago, IL 60637')] %}
+			{% for label, content in contact %}
+			<div class='column column-4'>{{label}}</div>
+			<div class='column column-6'>{{content}}</div>
+		 	{% endfor %}
+		</section>
+		{% endblock %}
 	</section>
 	
 
