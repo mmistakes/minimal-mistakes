@@ -2,19 +2,38 @@
 
 billy_rick:
   name: Billy Rick
+  avatar: bio-photo-2.jpg
+  bio: "What do you want, jewels? I am a very extravagant man."
   web: http://thewhip.com
   email: billy@rick.com
-  bio: "What do you want, jewels? I am a very extravagant man."
-  avatar: bio-photo-2.jpg
+  disqus-shortname: extravagantman
   twitter: extravagantman
+  facebook: extravagantman
   google:
     plus: BillyRick
+  github: #username
+  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  linkedin: #username
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+  codepen: #username
+  
 
 cornelius_fiddlebone:
   name: Cornelius Fiddlebone
-  email: cornelius@thewhip.com
-  bio: "I ordered what?"
   avatar: bio-photo.jpg
+  bio: "I ordered what?"
+  email: cornelius@thewhip.com
   twitter: rhymeswithsackit
   google:
     plus: CorneliusFiddlebone
