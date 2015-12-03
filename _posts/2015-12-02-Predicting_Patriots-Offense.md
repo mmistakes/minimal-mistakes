@@ -9,16 +9,19 @@ comments: true
 ---
 
 The 2015 National Football League (NFL) Regular Season is coming to an end and playoff talks are ubiquitous. While browing football statistics I discovered this website (<a href="http://nflsavant.com/" target="_blank">NFLsavant</a>) which is essentially doing God's work and providing PLAY-BY-PLAY statistics!  With this data, I decided to dedicate this post to explore how well can a Random Forest Ensamble can predict the New England Patriot's offensive move.
-
+<p><br></p>
 If you are familiar with football, feel free to skip this paragraph. Otherwise, I'll do my best to briefly explain the basics of the game. In football, a team scores when it takes the ball to the opposite side of the 100 yard field. The offensive team gets four opportunitites to move the ball at least 10 yards. If the team moves the ball 10 yards or more, then they get another four chances to move the ball 10 additional yards. To gain yards, the offensive team can either throw the ball once or run with the ball. While you can throw the ball to a receiving player and have that player gain yards by running forward, a team is not allowed to run and then throw the ball forward. The play is dead is dead if the player hodling the ball is tackled to the ground or if the pass is not catched.
 
+<p><br></p>
+
+I'm writing this after twelve weeks of football, so I have 11 games to develop my model (there is a bye week!). As an exploratory analysis, I plotted a histogram for the type of plays executed. Not surprisingly, New England passes the ball way more than Rushing.
+<figure>
+     <img src="/images/NE_NFL/Patriots_Offensive_Plays.png">
+    <figcaption></figcaption>
+</figure>
 
 <p><br></p>
 
-Determining who is the better player can become a never ending opinion battle, so I'm focusing this analysis on who is the most effective striker. Where I define "most effective striker" as the player who has the highest probability of scoring, given the fact that he is included in the starting squad. The data comes from <a href="https://www.squawka.com/" target="_blank">Squwawka</a> and the module I'm experimenting with is the PyMC Python module. 
-<p><br></p>
-A little bit of data wrangling before we begin...
-I build two dataframes including the date of the match and the goals scored for Benzema and Hernandez. These dataframes exclude games where the player was active for less than 10 minutes. This is because it is may just not enough time for the striker to perform. 
 
 <p><br></p>
 
