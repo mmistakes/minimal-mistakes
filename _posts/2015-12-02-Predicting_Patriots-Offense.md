@@ -24,6 +24,11 @@ I'm writing this after twelve weeks of football, so I have 11 games to develop m
 
 Predicting a pass or a rush isn't really that helpful, a pass can be short, long, left, right, etc and a rush can go in any direction. So we need to break the pass and rush plays by direction. Now the graph bellow shows something interesting. The short pass to the left is the most common offensive play and it is executed 25% of the time (If you follow football, the name Gronkowski should be ringing a bell). 
 
+<figure>
+     <img src="/images/NE_NFL/Patriots_PlayTypePercentage.png">
+    <figcaption></figcaption>
+</figure>
+
 <p><br></p>
 From the graph above, I can call a short pass to the left and be correct 25% of the time. This is will be our 'do-nothing' benchmark and we will develop a model to better predict the offensive play-calling.
 <p><br></p>
