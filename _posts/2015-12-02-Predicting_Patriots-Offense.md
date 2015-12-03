@@ -8,7 +8,10 @@ modified: 2015-12-2
 comments: true
 ---
 
-During the season 2014/2015, Real Madrid's striker position was covered by the frenchman Karim Benzema. As opposed to Mourinho's philosophy of rotating the striker almost on a game by game basis, Carlo Ancelotti had Benzema starting every game and left Javier "Chicharito" Hernandez in the bench for the majority of the season. Benzema played 2,312 La Liga minutes while Hernandez played 859 minutes. One could assume Chicharito was not world class quality, but every time he jumped on the pitch, he responded by scoring. How can we determine which player deserved to be in the initial lineup?
+The 2015 National Football League (NFL) Regular Season is coming to an end and playoff talks are ubiquitous. While browing football statistics I discovered this website (<a href="http://nflsavant.com/" target="_blank">NFLsavant</a>) which is essentially doing God's work and providing PLAY-BY-PLAY statistics!  With this data, I decided to dedicate this post to explore how well can a Random Forest Ensamble can predict the New England Patriot's offensive move.
+
+If you are familiar with football, feel free to skip this paragraph. Otherwise, I'll do my best to briefly explain the basics of the game. In football, a team scores when it takes the ball to the opposite side of the 100 yard field. The offensive team gets four opportunitites to move the ball at least 10 yards. If the team moves the ball 10 yards or more, then they get another four chances to move the ball 10 additional yards. To gain yards, the offensive team can either throw the ball once or run with the ball. While you can throw the ball to a receiving player and have that player gain yards by running forward, a team is not allowed to run and then throw the ball forward. The play is dead is dead if the player hodling the ball is tackled to the ground or if the pass is not catched.
+
 
 <p><br></p>
 
