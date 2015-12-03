@@ -22,10 +22,11 @@ I'm writing this after twelve weeks of football, so I have 11 games to develop m
 
 <p><br></p>
 
+Predicting a pass or a rush isn't really that helpful, a pass can be short, long, left, right, etc and a rush can go in any direction. So we need to break the pass and rush plays by direction. Now the graph bellow shows something interesting. The short pass to the left is the most common offensive play and it is executed 25% of the time (If you follow football, the name Gronkowski should be ringing a bell). 
 
 <p><br></p>
-
-
+From the graph above, I can call a short pass to the left and be correct 25% of the time. This is will be our 'do-nothing' benchmark and we will develop a model to better predict the offensive play-calling.
+<p><br></p>
 
 As mentioned before, we want to calculate the probability of scoring at least one goal given that the player was included in the starting squad. The probability can be solved by using Bayes' Rule as shown bellow:
 <p><br></p>
