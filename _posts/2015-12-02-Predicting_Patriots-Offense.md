@@ -33,18 +33,8 @@ Predicting a pass or a rush isn't really that helpful, a pass can be short, long
 From the graph above, I can call a short pass to the left and be correct 25% of the time. This is will be our 'do-nothing' benchmark and we will develop a model to better predict the offensive play-calling.
 <p><br></p>
 
-As mentioned before, we want to calculate the probability of scoring at least one goal given that the player was included in the starting squad. The probability can be solved by using Bayes' Rule as shown bellow:
-<p><br></p>
+To reduce noise and simplify the fitting process, I deleted scramble, qb kneel, clock stop, no play, extra points, sack and kick off plays. Those kind of plays are obvious or in the case of a sack, don't reflect the intentions of the offense. 
 
-\\( P( k > 0 | Y= 1) = \frac{P( Y = 1 | k >0 ) \times P( k > 0)}{P( Y = 1 | k >0) \times P(K > 0) + P( Y = 1 | K =0) \times P(K=0)} \\)
-<p><br></p>
-Where:<br> 
-K:   Number of Goals scored in game<br>
-Y=1: Starting game
-Y=1: Entering as a substitute
-<p><br></p>
-
-From the equation above, it is clear we need to find the probability of scoring  \\( P(K>0 \\) for Hernandez and Benzema. To do this, we will use the PyMC module.
 
 
 To begin with, I set up my Ipython environmanet to load all these modules.
@@ -83,7 +73,7 @@ def observed_proportion_KB(lambda_KB=lambda_KB):
 
 In the code above, we set our prior distribution PyMC varialbes for  \\( \lambda _{CH} \\) and \\( \lambda _{KB} \\). We then used the @pm.deterministic decorator to indicate ovserved_proportion_CH and observed_proportion_KB as a deterministic function. (This is required to work with PyMC models)
 
-The next step is to devlop a model. In the code below, the variable obsCH use the value paremter to mold the striker's goal scoring distribution. Note that we "educate" our distribution with our data using the "value" parameter in the function.
+
 
 {% highlight python %}
 obsCH = pm.Poisson("obsCH", observed_proportion_CH, observed=True, value=CH_red_df['GoalinGame'])
@@ -146,11 +136,3 @@ Upon showing this report to people, a common response was "Yes, Hernandez scores
 </figure>
 
 Notice, how Hernandez'  \\( \lambda \\) has wider tails than Benzema's  \\( \lambda\\). This is because we have less data for Hernandez (8 games vs Benzema's 29 games) On the plot below, we appreciate the scoring probabilities of both. As we should expect from the  \\( \lambda \\) parameters, Hernandez is more likely to score than Benzema.
-
-<figure>
-     <img src="/images/Nine/Prob_k_starter.png">
-    <figcaption></figcaption>
-</figure>
-
-
-Hernadez has a 47.4% probability of scoring when starting a game and Benzema has a 40.8% probability of scoring. 
