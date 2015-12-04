@@ -1,0 +1,78 @@
+/*!
+ * "Fork me on GitHub" CSS ribbon v0.1.1 | MIT License
+ * https://github.com/simonwhitaker/github-fork-ribbon-css
+*/
+
+/* IE voodoo courtesy of http://stackoverflow.com/a/4617511/263871 and
+ * http://www.useragentman.com/IETransformsTranslator */
+
+ .github-fork-ribbon {
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#000000', EndColorStr='#000000');
+}
+
+.github-fork-ribbon-wrapper.right .github-fork-ribbon {
+  /* IE positioning hack (couldn't find a transform-origin alternative for IE) */
+  top: -22px;
+  right: -62px;
+
+  /* IE8+ */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865474, M12=-0.7071067811865477, M21=0.7071067811865477, M22=0.7071067811865474, SizingMethod='auto expand')";
+  /* IE6 and 7 */
+  filter: progid:DXImageTransform.Microsoft.Matrix(
+    M11=0.7071067811865474,
+    M12=-0.7071067811865477,
+    M21=0.7071067811865477,
+    M22=0.7071067811865474,
+    SizingMethod='auto expand'
+  );
+}
+
+.github-fork-ribbon-wrapper.left .github-fork-ribbon {
+  top: -22px;
+  left: -22px;
+
+  /* IE8+ */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865483, M12=0.7071067811865467, M21=-0.7071067811865467, M22=0.7071067811865483, SizingMethod='auto expand')";
+  /* IE6 and 7 */
+  filter: progid:DXImageTransform.Microsoft.Matrix(
+    M11=0.7071067811865483,
+    M12=0.7071067811865467,
+    M21=-0.7071067811865467,
+    M22=0.7071067811865483,
+    SizingMethod='auto expand'
+  );
+}
+
+.github-fork-ribbon-wrapper.left-bottom .github-fork-ribbon {
+  /* IE positioning hack (couldn't find a transform-origin alternative for IE) */
+  top: 12px;
+  left: -22px;
+
+
+  /* IE8+ */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865474, M12=-0.7071067811865477, M21=0.7071067811865477, M22=0.7071067811865474, SizingMethod='auto expand')";
+  /* IE6 and 7 */
+/*  filter: progid:DXImageTransform.Microsoft.Matrix(
+    M11=0.7071067811865474,
+    M12=-0.7071067811865477,
+    M21=0.7071067811865477,
+    M22=0.7071067811865474,
+    SizingMethod='auto expand'
+  );
+*/}
+
+.github-fork-ribbon-wrapper.right-bottom .github-fork-ribbon {
+  top: 12px;
+  right: -62px;
+
+  /* IE8+ */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865483, M12=0.7071067811865467, M21=-0.7071067811865467, M22=0.7071067811865483, SizingMethod='auto expand')";
+  /* IE6 and 7 */
+  filter: progid:DXImageTransform.Microsoft.Matrix(
+    M11=0.7071067811865483,
+    M12=0.7071067811865467,
+    M21=-0.7071067811865467,
+    M22=0.7071067811865483,
+    SizingMethod='auto expand'
+  );
+}

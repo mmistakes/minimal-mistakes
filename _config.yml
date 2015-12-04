@@ -57,5 +57,17 @@ owner:
   flickr: #username
   codepen: #username
 
+# Fprk me on Githıb ribbon for any position on page
+forkme:
+  # If you type `true` in active attribute, the ribbon will be appared on page
+  active: true
+  # Type the title field what you want to see on ribbon
+  title: Fork me on Github
+  # enter your fork url on `url` attribute
+  url: https://github.com/muhasturk/muhasturk.github.io/fork
+  # Position value must be one of following
+  # [ top-left, top-right, bottom-left, bottom-right ]
+  position: top-right
+
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
