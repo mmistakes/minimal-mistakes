@@ -51,7 +51,7 @@ Let's talk predictive parameters now. To keep this simple I completely ignored t
 <p><br></p>
 The outcome is a 1 dimension array where each play takes a value from 0 to 14. 
 <figure>
-     <img src="/images/NE_NFL/Outcome_Key.PNG" style="height:200%;">
+     <img src="/images/NE_NFL" style="height:200%;">
     <figcaption></figcaption>
 </figure>
 
