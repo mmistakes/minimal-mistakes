@@ -66,3 +66,6 @@ grid_pipeline=GridSearchCV(pipeline, param_grid={'randomforestclassifier__n_esti
 grid_pipeline.fit(X_train,y_train)
 {% endhighlight %}
 
+<p><br></p>
+
+After running the Grid Search, the result is a 0.42 cross validation score on the training set and a 0.34 on the test set. This is not great by any standards but it is better than our do-nothing approach previosuly discussed.
