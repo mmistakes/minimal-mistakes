@@ -25,7 +25,7 @@ I'm writing this after twelve weeks of football, so I have 11 games to develop m
 Predicting a pass or a rush isn't really that helpful, a pass can be short, long, left, right, etc and a rush can go in any direction. So we need to break the pass and rush plays by direction. There are 13 different play types (I removed Punt and Field Goals from the plot). Now the graph bellow shows something interesting. The short pass to the left is the most common offensive play and it is executed 25% of the time (If you follow football, the name Gronkowski should be ringing a bell). 
 
 <figure>
-     <img src="/images/NE_NFL/Patriots_PlayTypePercentage.png"  height="100%">
+     <img src="/images/NE_NFL/Patriots_PlayTypePercentage.png">
     <figcaption></figcaption>
 </figure>
 
@@ -51,7 +51,7 @@ Let's talk predictive parameters now. To keep this simple I completely ignored t
 <p><br></p>
 The outcome is a 1 dimension array where each play takes a value from 0 to 14. 
 <figure>
-     <img src="/images/NE_NFL/Outcome_Key.PNG" style="height:1%;">
+     <img src="/images/NE_NFL/Outcome_Key.PNG" style="height:200%;">
     <figcaption></figcaption>
 </figure>
 
