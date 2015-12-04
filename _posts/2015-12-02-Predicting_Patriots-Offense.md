@@ -69,3 +69,9 @@ grid_pipeline.fit(X_train,y_train)
 <p><br></p>
 
 After running the Grid Search, the result is a 0.42 cross validation score on the training set and a 0.34 on the test set. This is not great by any standards but it is better than our do-nothing approach previosuly discussed.
+
+
+<figure>
+     <img src="/images/NE_NFL/Patriots_CorrectPrediction.png" >
+    <figcaption></figcaption>
+</figure>
