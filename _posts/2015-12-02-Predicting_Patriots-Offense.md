@@ -48,8 +48,8 @@ from sklkearn.ensemble import RandomForestClasssifier as rfc
 
 
 ##Possible Plays
-1 Pass Deep Middle
-2 Rush Right Guard
-3 Pass Short Right
+*1 Pass Deep Middle
+*2 Rush Right Guard
+*3 Pass Short Right
 
 
