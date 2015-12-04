@@ -68,8 +68,9 @@ grid_pipeline.fit(X_train,y_train)
 
 <p><br></p>
 
-After running the Grid Search, the result is a 0.42 cross validation score on the training set and a 0.34 on the test set. This is not great by any standards but it is better than our do-nothing approach previosuly discussed.
-
+After running the Grid Search, the result is a 0.42 cross validation score on the training set and a 0.34 on the test set. This is not great but it is better than our do-nothing approach previosuly discussed.
+<p><br></p>
+Looking at the results of the model, I am glad to see the random forest was predicted field goals and punts almost perfectly. However, I more important is the high accuracy the model had at predicting a short pass to the left as well as a rush down the center. 
 
 <figure>
      <img src="/images/NE_NFL/Patriots_CorrectPrediction.png" >
