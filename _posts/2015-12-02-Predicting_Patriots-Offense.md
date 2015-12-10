@@ -8,7 +8,7 @@ modified: 2015-12-2
 comments: true
 ---
 
-The 2015 National Football League (NFL) Regular Season is coming to an end and playoff talks are ubiquitous. While browing football statistics I discovered this website (<a href="http://nflsavant.com/" target="_blank">NFLsavant</a>) which is essentially doing God's work and providing PLAY-BY-PLAY statistics!  With this data, I decided to dedicate this post to explore how well can a Random Forest Ensamble predict New England Patriot's offensive moves. More than trying to apply for a job as a defensive coordinator, I wanted to see which where Tom Brady's go-to moves under different scenarios.  As a disclaimer, I am not a New England fan. I chose them because they are probably the most stable team in the league and have not lost a superstar player due to injury.
+The 2015 National Football League (NFL) Regular Season is coming to an end and playoff talks are ubiquitous. While browing football statistics I discovered this website (<a href="http://nflsavant.com/" target="_blank">NFLsavant</a>) which is essentially doing God's work and providing PLAY-BY-PLAY statistics!  With this data, I decided to dedicate this post to explore how well can a Random Forest Ensamble predict New England Patriot's offensive moves. More than trying to apply for a job as a defensive coordinator, I wanted to see to explore Random Forests and Football.  As a disclaimer, I am not a New England fan. I chose them because they are probably the most stable team in the league and have not lost a superstar player due to injury (All data is gathered prior to Gronkowski's injury).
 <p><br></p>
 If you are familiar with football, feel free to skip this paragraph. Otherwise, I'll do my best to briefly explain the basics of the game. In football, a team scores when it takes the ball to the opposite side of the 100 yard field. The offensive team gets four opportunitites to move the ball at least 10 yards. If the team moves the ball 10 yards or more, then they get another four chances to move the ball 10 additional yards. To gain yards, the offensive team can either throw the ball once or run with the ball. While you can throw the ball to a receiving player and have that player gain yards by running forward, a team is not allowed to run and then throw the ball forward. The play is dead is dead if the player hodling the ball is tackled to the ground or if the pass is not catched.
 
@@ -68,11 +68,13 @@ grid_pipeline.fit(X_train,y_train)
 
 <p><br></p>
 
-After running the Grid Search, the result is a 0.42 cross validation score on the training set and a 0.34 on the test set. This is not great but it is better than our do-nothing approach previosuly discussed.
-<p><br></p>
-Looking at the results of the model, I am glad to see the random forest was predicted field goals and punts almost perfectly. However, I more important is the high accuracy the model had at predicting a short pass to the left as well as a rush down the center. 
+<figure>
+     <img src="/images/NE_NFL/NE Test Set Plays.png" >
+    <figcaption>All plays from Test sample</figcaption>
+</figure>
+
 
 <figure>
      <img src="/images/NE_NFL/Patriots_CorrectPrediction.png" >
-    <figcaption></figcaption>
+    <figcaption>Correctly predicted plays</figcaption>
 </figure>
