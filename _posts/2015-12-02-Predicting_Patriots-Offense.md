@@ -58,7 +58,7 @@ The outcome is a 1 dimension array where each play takes a value from 0 to 14.
 {% highlight python %}
 X_train, X_test, y_train, y_test = train_test_split(arr_gx,arr_gy,test_size=0.25)
 pipeline = make_pipeline( rfc())
-grid_pipeline=GridSearchCV(pipeline, param_grid={'randomforestclassifier__n_estimators':[60, 61,62,63,64,65,66],
+grid_pipeline=GridSearchCV(pipeline, param_grid={'randomforestclassifier__n_estimators':[1500],
                                                 'randomforestclassifier__max_depth':[3,4,5,6],
                                                 'randomforestclassifier__min_samples_split': [1,2,3,4,5,6],
                                                 'randomforestclassifier__max_features' : [2,3,4,5,6,7],
@@ -69,7 +69,7 @@ grid_pipeline.fit(X_train,y_train)
 <p><br></p>
 
 <figure>
-     <img src="/images/NE_NFL/NE Test Set Plays.png" >
+     <img src="/images/NE_NFL/NE_Test_Set_Plays.png" >
     <figcaption>All plays from Test sample</figcaption>
 </figure>
 
