@@ -78,3 +78,5 @@ grid_pipeline.fit(X_train,y_train)
      <img src="/images/NE_NFL/Patriots_CorrectPrediction.png" >
     <figcaption>Correctly predicted plays</figcaption>
 </figure>
+
+TO BE CONTINUED...
