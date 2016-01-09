@@ -2,7 +2,7 @@
 layout: post
 title: Android GPX Parsing
 excerpt: "A simple library to parse GPX files, built with Android in mind."
-modified: 2016-1-6
+modified: 2016-1-9
 tags: [android, java, gpx, gps]
 comments: true
 ---
@@ -44,7 +44,7 @@ public class TrackPoint {
 }
 {% endhighlight %}
 
-What took me the most time was the actual XML parsing. My last encounter with XML was a while ago, so I had to wrap my head around it again. I decided to use the default XmlPullParser shipped with the Android SDK. You start by defininng the XML tags in Java:
+What took me the most time was the actual XML parsing. My last encounter with XML was a while ago, so I had to wrap my head around it again. I decided to use the default XmlPullParser shipped with the Android SDK. You start by defining the XML tags in Java:
 
 {% highlight java %}
 static final String TAG_GPX = "gpx";
