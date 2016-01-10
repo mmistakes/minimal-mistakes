@@ -21,4 +21,7 @@ Contribution to:
 
 * [The Things Network Android SDK](https://github.com/TheThingsNetwork/android-sdk)
 
+{% raw %}
+<iframe src="http://githubbadge.appspot.com/ticofab?a=0" style="margin: 20px 20px; border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
+{% endraw %}
 
