@@ -49,6 +49,7 @@ owner:
   google:
     plus: #username
     analytics:
+    universal-analytics: 
     verify:
     ad-client:
     ad-slot:
