@@ -1,7 +1,7 @@
 {
   "name": "minimal-mistakes-theme",
   "author": "Michael Rose <michael@mademistakes.com>",
-  "homepage": "http://mmistakes.github.io/minima-mistakes/",
+  "homepage": "http://mmistakes.github.io/minimal-mistakes/",
   "repository": {
     "type": "git",
     "url": "git://github.com/mmistakes/minimal-mistakes.git"

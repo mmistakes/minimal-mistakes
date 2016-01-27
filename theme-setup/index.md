@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Theme Setup
-modified: 2014-07-31T13:23:02.362000-04:00
+modified: 2016-01-19
 excerpt: "Instructions on how to install and customize the Jekyll theme Minimal Mistakes."
 image:
   feature: sample-image-3.jpg
@@ -29,7 +29,7 @@ If you want to use Minimal Mistakes with an existing Jekyll site follow these st
 3. Run `bundle install` to install all dependencies (Jekyll, [Jekyll-Sitemap](https://github.com/jekyll/jekyll-sitemap), [Octopress](https://github.com/octopress/octopress), etc)
 4. Remove demo posts/pages and replace with your own posts, pages, and any other content you want to move over.
 5. Update posts' and pages' YAML to match variables used by Minimal Mistakes. Full details below.
-6. Update `_config.yml` and add navigation links. Full details below. 
+6. Update `_config.yml` and add navigation links. Full details below.
 
 **Pro-tip:** Delete the `gh-pages` branch after cloning and start fresh by branching off `master`. There is a bunch of garbage in `gh-pages` used for the theme's demo site that I'm guessing you won't want.
 {: .notice}
@@ -88,7 +88,7 @@ minimal-mistakes/
 ├── images/                      # images for posts and pages
 ├── 404.md                       # 404 page
 ├── feed.xml                     # Atom feed template
-├── index.md                     # sample homepage. lists 5 latest posts 
+├── index.md                     # sample homepage. lists 5 latest posts
 ├── posts/                       # sample post index page. lists all posts in reverse chronology
 └── theme-setup/                 # theme setup page. safe to remove
 {% endhighlight %}
@@ -119,7 +119,7 @@ Examples:
 url: http://mmistakes.github.io/minimal-mistakes
 url: http://localhost:4000
 url: //cooldude.github.io
-url: 
+url:
 {% endhighlight %}
 
 #### Google Analytics and Webmaster Tools
@@ -135,7 +135,7 @@ To set what links appear in the top navigation edit `_data/navigation.yml`. Use 
   url: /portfolio/
 
 - title: Made Mistakes
-  url: http://mademistakes.com  
+  url: http://mademistakes.com
 {% endhighlight %}
 
 ---
@@ -145,7 +145,7 @@ To set what links appear in the top navigation edit `_data/navigation.yml`. Use 
 While completely optional, I've included Octopress and some starter templates to automate the creation of new posts and pages. To take advantage of it start by installing the [Octopress](https://github.com/octopress/octopress) gem if it isn't already.
 
 {% highlight bash %}
-$ gem install octopress --pre
+$ gem install octopress
 {% endhighlight %}
 
 ### New Post
@@ -159,7 +159,7 @@ $ octopress new post "Post Title"
 Default works great if you want all your posts in one directory, but if you're like me and want to group them into subfolders like `/posts`, `/portfolio`, etc. Then this is the command for you. By specifying the DIR it will create a new post in that folder and populate the `categories:` YAML with the same value.
 
 {% highlight bash %}
-$ octopress new post "New Post Title" --dir posts
+$ octopress new post "New Portfolio Post Title" --dir portfolio
 {% endhighlight %}
 
 ### New Page
@@ -328,4 +328,4 @@ Found a bug or aren't quite sure how something works? By all means Ping me on Tw
 
 ## License
 
-This theme is free and open source software, distributed under the MIT License. So feel free to use this Jekyll theme on your site without linking back to me or including a disclaimer. 
+This theme is free and open source software, distributed under the MIT License. So feel free to use this Jekyll theme on your site without linking back to me or including a disclaimer.
