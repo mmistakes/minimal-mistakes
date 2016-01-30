@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title:            Site Title
+title:            C4IS in the Norwegian Army
 locale:           en_US
 url:
 
@@ -40,12 +40,12 @@ titlecase: true
 
 # Site owner
 owner:
-  name: Your Name
+  name: Oddar Kristiansen
   avatar: bio-photo.jpg
   bio: "Describe your self."
   email:
   disqus-shortname:
-  twitter: #username
+  twitter: KOddarK
   facebook: #username
   google:
     plus: #username
@@ -54,7 +54,7 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
+  github: oddar
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
   linkedin: #username
   xing: #username
