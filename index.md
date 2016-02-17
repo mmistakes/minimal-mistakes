@@ -1,9 +1,7 @@
 ---
 layout: home
-excerpt: "A minimal Jekyll theme for your blog by designer Michael Rose."
-tags: [Jekyll, theme, responsive, blog, template]
+excerpt: "A technical blog by Tommaso Piazza"
+tags: [Objective-C, iOS, Swift, OSX, Apple, Cocoa, Cocoa-Touch, UIKit, Core Animation, Fundation, Core Data, Core Graphics]
 image:
-  feature: sample-image-1.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+  feature: alloc-init.jpg
 ---

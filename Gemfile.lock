@@ -24,9 +24,9 @@ GEM
       listen (~> 3.0)
     kramdown (1.9.0)
     liquid (3.0.6)
-    listen (3.0.5)
+    listen (3.0.6)
       rb-fsevent (>= 0.9.3)
-      rb-inotify (>= 0.9)
+      rb-inotify (>= 0.9.7)
     mercenary (0.3.5)
     multipart-post (2.0.0)
     octokit (4.2.0)
@@ -45,8 +45,12 @@ GEM
       jekyll (~> 3.0)
     octopress-hooks (2.6.1)
       jekyll (>= 2.0)
+    posix-spawn (0.3.11)
+    pygments.rb (0.6.3)
+      posix-spawn (~> 0.3.6)
+      yajl-ruby (~> 1.2.0)
     rb-fsevent (0.9.7)
-    rb-inotify (0.9.5)
+    rb-inotify (0.9.7)
       ffi (>= 0.5.0)
     redcarpet (3.3.4)
     rouge (1.10.1)
@@ -56,6 +60,7 @@ GEM
       addressable (~> 2.3.5)
       faraday (~> 0.8, < 0.10)
     titlecase (0.1.1)
+    yajl-ruby (1.2.1)
 
 PLATFORMS
   ruby
@@ -65,6 +70,7 @@ DEPENDENCIES
   jekyll-gist
   jekyll-sitemap
   octopress
+  pygments.rb
 
 BUNDLED WITH
    1.11.2

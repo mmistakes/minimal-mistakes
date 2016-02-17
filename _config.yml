@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title:            Site Title
+title:            Alloc Init
 locale:           en_US
 url:
 
@@ -9,13 +9,12 @@ url:
 
 permalink:   /:categories/:title/
 markdown:    kramdown
-highlighter: rouge
+highlighter: pygments
 sass:
   sass_dir: _sass
   style: compressed
 gems:
   - jekyll-sitemap
-  - jekyll-gist
 
 kramdown:
   auto_ids: true
@@ -25,39 +24,25 @@ kramdown:
   enable_coderay: false
 
 
-# Octopress
-
-# Default extensions
-post_ext: md
-page_ext: md
-
-# Found in _templates/
-post_layout: post
-page_layout: page
-
-# Format titles with titlecase?
-titlecase: true
-
-
 # Site owner
 owner:
-  name: Your Name
+  name: Tommaso Piazza
   avatar: bio-photo.jpg
-  bio: "Describe your self."
+  bio: "Coder, Photographer, Climber, Sailor, Krav Maga Practitioner and Mongol Rally Veteran"
   email:
-  disqus-shortname:
-  twitter: #username
-  facebook: #username
+  disqus-shortname: allocinit-io
+  twitter: tmpz
+  facebook: tommaso.piazza
   google:
     plus: #username
-    analytics:
+    analytics: UA-65615382-1
     verify:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
-  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
+  github: blender
+  stackoverflow: 1213968/tmpz
+  linkedin: tpiazza
   xing: #username
   instagram: #username
   lastfm: #username
