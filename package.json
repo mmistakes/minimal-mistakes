@@ -6,6 +6,9 @@
     "type": "git",
     "url": "git://github.com/mmistakes/minimal-mistakes.git"
   },
+  "scripts": {
+    "build": "uglifyjs assets/js/plugins/*.js assets/js/_*.js -o assets/js/scripts.min.js"
+  },
   "bugs": {
     "url": "https://github.com/mmistakes/minimal-mistakes/issues"
   },
@@ -15,11 +18,12 @@
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-imagemin": "~0.2.0",
     "grunt-contrib-jshint": "~0.6.3",
     "grunt-contrib-uglify": "~0.2.2",
     "grunt-contrib-watch": "~0.5.2",
     "grunt-recess": "~0.3.5",
-    "grunt-contrib-imagemin": "~0.2.0",
-    "grunt-svgmin": "~0.2.0"
+    "grunt-svgmin": "~0.2.0",
+    "uglify-js": "^2.6.1"
   }
 }
