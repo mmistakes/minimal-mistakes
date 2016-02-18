@@ -20,7 +20,7 @@ so I started digging in the code of the library to see how I could achieve my go
 
 {% include _toc.html %}
 
-##ParmeterEncoding
+## ParmeterEncoding
 
 
 Alamofire has a neat enum called [ParameterEncoding](https://github.com/Alamofire/Alamofire/blob/c2429d953b39ca11ebe3911be2744e0546ee4923/Source/ParameterEncoding.swift). 
