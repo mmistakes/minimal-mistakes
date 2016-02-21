@@ -4,6 +4,10 @@
 
 <div itemscope itemtype="http://schema.org/Person">
 
+{% if author.web %}
+  <a href="{{ author.web }}" class="author_web" target="_blank">
+{% endif %}  
+
 {% if author.avatar contains 'http' %}
 	<img src="{{ author.avatar }}" class="bio-photo" alt="{{ author.name }} bio photo">
 {% else %}
@@ -12,6 +16,12 @@
 
   <h3 itemprop="name">{{ author.name }}</h3>
   <p>{{ author.bio }}</p>
+  
+{% if author.web %}
+  </a>
+  <a href="{{ author.web }}" class="author-social" target="_blank"><i class="fa fa-fw fa-external-link"></i> Website</a>
+{% endif %}
+  
   {% if author.email %}<a href="mailto:{{ author.email }}" class="author-social" target="_blank"><i class="fa fa-fw fa-envelope-square"></i> Email</a>{% endif %}
   {% if author.twitter %}<a href="http://twitter.com/{{ author.twitter }}" class="author-social" target="_blank"><i class="fa fa-fw fa-twitter-square"></i> Twitter</a>{% endif %}
   {% if author.facebook %}<a href="http://facebook.com/{{ author.facebook }}" class="author-social" target="_blank"><i class="fa fa-fw fa-facebook-square"></i> Facebook</a>{% endif %}
