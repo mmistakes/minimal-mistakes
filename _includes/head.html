@@ -6,7 +6,7 @@
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %}
 {% endif %}
 
-{% include _open-graph.html %}
+{% include open-graph.html %}
 
 {% if site.owner.google.verify %}<!-- Webmaster Tools verfication -->
 <meta name="google-site-verification" content="{{ site.owner.google.verify }}">{% endif %}
