@@ -1,0 +1,4 @@
+{% capture feed_footer %}
+  <p><a href="{{ absurl }}{{ post.url }}" rel="nofollow">{{ post.title }}</a> was originally published by {{ site.owner.name }} on <a href="{{ site.url }}" rel="nofollow">{{ site.title }}</a></p>
+{% endcapture %}
+{{ feed_footer | markdownify | xml_escape }}
