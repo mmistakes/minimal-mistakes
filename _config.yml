@@ -5,20 +5,20 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-# Site settings
+# Site Settings
 locale           : en_US
-title            : Your awesome title
+title            : "Your awesome site"
 description      : "Write an awesome description for your new site here."
-url              : "" # the base hostname & protocol for your site
-baseurl          : "" # the subpath of your site, e.g. /blog
-email            : your-email@domain.com
+url              : "http://localhost:4000" # the base hostname & protocol for your site
+baseurl          : "/test" # the subpath of your site, e.g. /blog
+email            : "your-email@domain.com"
 
-# Handling Reading
-safe : false
-include : 
+# Reading Files
+safe: false
+include: 
   - .htaccess
   - _pages
-exclude : 
+exclude: 
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
@@ -52,6 +52,17 @@ lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
 # Plugins
 gems:
   - jekyll-paginate
@@ -63,21 +74,17 @@ permalink: /:categories/:title/
 paginate_path: /page:num
 timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-# Markdown Processors
-kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
+# HTML Compression
+# http://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
 
-# Site owner
+# Site Owner
 owner:
-  name             : Your Name
-  avatar           : bio-photo.jpg
+  name             : "Your Name"
+  avatar           : "/images/bio-photo.jpg" # external URLs are also acceptable
   bio              : "Describe your self."
   email            :
   disqus-shortname : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
