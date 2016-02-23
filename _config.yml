@@ -99,6 +99,7 @@ defaults:
     values:
       layout: post
       comments: true
+      share: true
 
 # Plugins
 gems:
