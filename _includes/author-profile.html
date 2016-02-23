@@ -10,7 +10,7 @@
   	<img src="{{ author.avatar | prepend: absurl }}" class="author-avatar" alt="{{ author.name }} photo">
   {% endif %}
 
-  <h3 itemprop="name" class="author-name">{{ author.name }}</h3>
+  <h3 class="author-name">{{ author.name }}</h3>
   {% if author.bio %}<p class="author-bio">{{ author.bio }}</p>{% endif %}
   {% if author.email %}
     <a href="mailto:{{ author.email }}" class="author-social" target="_blank"><i class="fa fa-fw fa-envelope-square"></i> Email</a>
