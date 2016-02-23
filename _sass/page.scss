@@ -226,8 +226,7 @@ $button-size: 1.5rem;
 	h1 {
 		margin-top: 0;
 	}
-	.post,
-	.page {
+	.post {
 		@include container;
 		@include grid(12,10);
 		@include prefix(12,1);
