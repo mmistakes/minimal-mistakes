@@ -26,6 +26,9 @@ google_site_verification :
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
+google_analytics         : # Universal Analytics tracking ID
+google_ad_client         :
+google_ad_slot           :
 
 # For specifying social profiles. 
 # https://developers.google.com/structured-data/customize/social-profiles
@@ -127,11 +130,7 @@ author:
   facebook         : *facebook
   foursquare       :
   github           :
-  google           :
-    plus           :
-    analytics      :
-    ad-client      :
-    ad-slot        :
+  google_plus      :
   instagram        :
   lastfm           :
   linkedin         :
