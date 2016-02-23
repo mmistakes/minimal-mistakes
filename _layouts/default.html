@@ -1,47 +1,45 @@
-{% capture absurl %}{{ site.url }}{{ site.baseurl }}{% endcapture %}
+{% include absolute-url.liquid %}
 
 <!DOCTYPE html>
 <html lang="{{ site.locale | slice: 0,2 }}">
+  <head>
+  {% include head.html %}
+  </head>
 
-<head>
-{% include head.html %}
-</head>
+  <body class="{{ layout.class }}">
 
-<body class="{{ layout.class }}">
+  {% include browser-upgrade.html %}
+  {% include navigation.html %}
 
-{% include browser-upgrade.html %}
-
-{% include navigation.html %}
-
-{% if page.image.feature %}
-  <div class="image-wrap">
-  <img src=
-    {% if page.image.feature contains 'http' %}
-      "{{ page.image.feature }}"
-    {% else %}
-      "{{ page.image.feature | prepend: "/images/" | prepend: absurl }}"
+  {% if page.image.feature %}
+    <div class="image-wrap">
+    <img src=
+      {% if page.image.feature contains 'http' %}
+        "{{ page.image.feature }}"
+      {% else %}
+        "{{ page.image.feature | prepend: "/images/" | prepend: absurl }}"
+      {% endif %}
+      alt="{{ page.title }}">
+    {% if page.image.credit %}
+      <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
     {% endif %}
-  alt="{{ page.title }} feature image">
-  {% if page.image.credit %}
-    <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
+    </div><!-- /.image-wrap -->
   {% endif %}
-  </div><!-- /.image-wrap -->
-{% endif %}
 
-<div id="main" role="main">
-  <div class="article-author-side">
-    {% include author-bio.html %}
-  </div>
-  {{ content }}
-</div><!-- /#main -->
+  <div id="main" role="main">
+    <div class="article-author-side">
+      {% include author-bio.html %}
+    </div>
+    {{ content }}
+  </div><!-- /#main -->
 
-<div class="footer-wrap">
-  <footer>
-    {% include footer.html %}
-  </footer>
-</div><!-- /.footer-wrap -->
+  <div class="footer-wrap">
+    <footer>
+      {% include footer.html %}
+    </footer>
+  </div><!-- /.footer-wrap -->
 
-{% include scripts.html %}
+  {% include scripts.html %}
 
-</body>
+  </body>
 </html>
