@@ -45,6 +45,16 @@ Multi line blockquote with a cite reference:
 | [Fred Bloggs](#) | $100M | Pictures are worth a thousand words, right? So Jane × 1,000. |
 | [Jane Bloggs](#) | $100B | With hair like that?! Enough said. |
 
+| Header1 | Header2 | Header3 |
+|:--------|:-------:|--------:|
+| cell1   | cell2   | cell3   |
+| cell4   | cell5   | cell6   |
+|----
+| cell1   | cell2   | cell3   |
+| cell4   | cell5   | cell6   |
+|=====
+| Foot1   | Foot2   | Foot3
+
 ## Definition Lists
 
 Definition List Title
@@ -89,49 +99,76 @@ Do It Live
   3. List item three
   4. List item four
 
+## Buttons
+
+Make any link standout more when applying the `.btn` class.
+
+```html
+<a href="#" class="btn btn-success">Success Button</a>
+```
+
+[Primary Button](#){: .btn}
+[Success Button](#){: .btn .btn-success}
+[Warning Button](#){: .btn .btn-warning}
+[Danger Button](#){: .btn .btn-danger}
+[Info Button](#){: .btn .btn-info}
+
+```markdown
+[Primary Button Text](#link){: .btn}
+[Success Button Text](#link){: .btn .btn-success}
+[Warning Button Text](#link){: .btn .btn-warning}
+[Danger Button Text](#link){: .btn .btn-danger}
+[Info Button Text](#link){: .btn .btn-info}
+```
+
+## Notices
+
+**Watch out!** You can also add notices by appending `{: .notice}` to a paragraph.
+{: .notice}
+
 ## HTML Tags
 
-**Address Tag**
+### Address Tag
 
 <address>
   1 Infinite Loop<br /> Cupertino, CA 95014<br /> United States
 </address>
 
-**Anchor Tag (aka. Link)**
+### Anchor Tag (aka. Link)
 
 This is an example of a [link](http://apple.com "Apple").
 
-**Abbreviation Tag**
+### Abbreviation Tag
 
 The abbreviation CSS stands for "Cascading Style Sheets".
 
 *[CSS]: Cascading Style Sheets
 
-**Cite Tag**
+### Cite Tag
 
 "Code is poetry." ---<cite>Automattic</cite>
 
-**Code Tag**
+### Code Tag
 
 You will learn later on in these tests that `word-wrap: break-word;` will be your best friend.
 
-**Strike Tag**
+### Strike Tag
 
 This tag will let you <strike>strikeout text</strike>.
 
-**Emphasize Tag**
+### Emphasize Tag
 
 The emphasize tag should _italicize_ text.
 
-**Insert Tag**
+### Insert Tag
 
 This tag should denote <ins>inserted</ins> text.
 
-**Keyboard Tag**
+### Keyboard Tag
 
 This scarcely known tag emulates <kbd>keyboard text</kbd>, which is usually styled like the `<code>` tag.
 
-**Preformatted Tag**
+### Preformatted Tag
 
 This tag styles large blocks of code.
 
@@ -145,22 +182,22 @@ This tag styles large blocks of code.
 }
 </pre>
 
-**Quote Tag**
+### Quote Tag
 
 <q>Developers, developers, developers&#8230;</q> &#8211;Steve Ballmer
 
-**Strong Tag**
+### Strong Tag
 
 This tag shows **bold text**.
 
-**Subscript Tag**
+### Subscript Tag
 
 Getting our science styling on with H<sub>2</sub>O, which should push the "2" down.
 
-**Superscript Tag**
+### Superscript Tag
 
 Still sticking with science and Isaac Newton's E = MC<sup>2</sup>, which should lift the 2 up.
 
-**Variable Tag**
+### Variable Tag
 
 This allows you to denote <var>variables</var>.

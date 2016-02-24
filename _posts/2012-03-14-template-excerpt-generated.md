@@ -1,6 +1,7 @@
 ---
 title: "Template: Excerpt (Generated)"
 date: 2012-03-14T09:49:22+00:00
+excerpt_separator: "<!--more-->"
 categories:
   - Template
   - Uncategorized

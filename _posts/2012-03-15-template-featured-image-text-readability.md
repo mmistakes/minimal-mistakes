@@ -1,7 +1,9 @@
 ---
-title: "Post with Large Feature Image and Text"
-excerpt: "Custom written post descriptions are the way to go... if you're not lazy."
-tags: [sample post, readability, test]
+title: "Template: Featured Image And Text Readability"
+tags: 
+  - sample post
+  - readability
+  - test
 image:
   feature: sample-image-4.jpg
   credit: WeGraphics
@@ -16,10 +18,10 @@ Vero laborum commodo occupy. Semiotics voluptate mumblecore pug. Cosby sweater u
 
 In pug Portland incididunt mlkshk put a bird on it vinyl quinoa. **[Terry Richardson](#) shabby chic +1**, scenester Tonx excepteur tempor fugiat voluptate fingerstache aliquip nisi next level. Farm-to-table hashtag Truffaut, Odd Future ex meggings gentrify single-origin coffee try-hard 90's.
 
-* Sartorial hoodie
-* Labore viral forage
-* Tote bag selvage
-* DIY exercitation et id ugh tumblr church-key
+  * Sartorial hoodie
+  * Labore viral forage
+  * Tote bag selvage
+  * DIY exercitation et id ugh tumblr church-key
 
 Incididunt umami sriracha, ethical fugiat VHS ex assumenda yr irure direct trade. Marfa Truffaut bicycle rights, kitsch placeat Etsy kogi asymmetrical. Beard locavore flexitarian, kitsch photo booth hoodie plaid ethical readymade leggings yr.
 

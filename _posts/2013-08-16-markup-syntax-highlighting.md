@@ -1,7 +1,9 @@
 ---
-title: Syntax Highlighting Post
-excerpt: "Demo post displaying the various ways of highlighting code in Markdown."
-tags: [sample post, code, highlighting]
+title: "Markup: Syntax Highlighting"
+excerpt: "Post displaying the various ways of highlighting code in Markdown."
+tags: 
+  - code
+  - syntax highlighting
 modified: 2016-02-23T12:08:33-05:00
 ---
 
