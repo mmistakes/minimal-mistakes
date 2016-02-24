@@ -75,7 +75,7 @@ sass:
   sass_dir: _sass
   style: compressed
 lsi: false
-excerpt_separator: "\n\n"
+excerpt_separator: "<!--more-->"
 incremental: false
 
 # Markdown Processing
