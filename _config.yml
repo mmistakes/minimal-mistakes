@@ -101,6 +101,13 @@ defaults:
       comments: true
       share: true
 
+  # _pages
+  - scope:
+      path: _pages
+      type: pages
+    values:
+      layout: post
+
 # Plugins
 gems:
   - jekyll-paginate
