@@ -21,11 +21,13 @@ figure {
 }
 
 article img {
-	max-width: 100%;
+	max-width: 500px;
 	height: auto;
-	border-width: 0; 
 	vertical-align: middle; 
-	-ms-interpolation-mode: bicubic; 
+	-ms-interpolation-mode: bicubic;
+    margin: 20px 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
 }
 
 svg:not(:root) {

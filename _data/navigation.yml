@@ -1,13 +1,22 @@
 # Site navigation links
 
-- title: About
-  url: /about/
-
-- title: Sample Posts
+- title: All posts
   url: /posts/
 
-- title: Theme Setup
-  url: /theme-setup/
+- title: Resume
+  url: /website/resume/
 
-- title: Made Mistakes
-  url: http://mademistakes.com
+- title: About
+  url: /website/about/
+
+- title: Github
+  url: https://github.com/ypereirareis
+
+- title: LinkedIn
+  url: http://fr.linkedin.com/in/yannickpereirareis
+
+#- title: Theme Setup
+#  url: /theme-setup/
+#
+#- title: Made Mistakes
+#  url: http://mademistakes.com

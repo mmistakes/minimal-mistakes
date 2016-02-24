@@ -1,13 +1,12 @@
 # Site wide configuration
 
-title:            Site Title
+title:            Yannick PEREIRA-REIS
 locale:           en_US
-url:              
-
+url:              #http://ypereirareis.github.io
 
 # Jekyll configuration
 
-permalink:   /:categories/:title/
+permalink: /blog/:year/:month/:day/:title/
 markdown:    kramdown
 highlighter: pygments
 sass:
@@ -15,6 +14,8 @@ sass:
   style: compressed
 gems:
   - jekyll-sitemap
+
+comments: true
 
 kramdown:
   auto_ids: true
@@ -26,35 +27,19 @@ kramdown:
 
 # Site owner
 owner:
-  name: Your Name
-  avatar: bio-photo.jpg
-  bio: "Describe your self."
-  email: 
-  disqus-shortname: 
-  twitter: #username
-  facebook: #username
+  name: Yannick PEREIRA-REIS
+  avatar: author/avatar.png
+  bio: "Full stack developer Symfony2 and AngularJs in Lyon (France), I also play with DevOps tools like Docker, Vagrant, Elasticsearch, Logstash, Kibana, Supervisor, ..."
+  disqus-shortname: ypereirareisgithubio
   google:
-    plus: #username
-    analytics: 
+    analytics: UA-60388348-1
     verify: 
     ad-client: 
     ad-slot: 
   bing-verify: 
-  github: #username
-  stackoverflow: #http://stackoverflow.com/users/123456/username
-  linkedin: #username
-  xing: #username
-  instagram: #username
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
-  youtube: #username
-  soundcloud: #username
-  weibo: #username
-  flickr: #username
+  twitter: yannickpr69
+  github: ypereirareis
+  linkedin: yannickpereirareis
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]

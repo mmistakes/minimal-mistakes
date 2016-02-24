@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Hello"
+excerpt: Hello, I have my own blog...
+modified:
+comments: true
+tags: []
+---
+
+I finally have my own blog built with [Material Design](http://www.google.com/design/spec/material-design/introduction.html).
+
+Thanks [Bernardo Pacheco](https://github.com/bernardopacheco) - [bernardopacheco.github.io](https://github.com/bernardopacheco/bernardopacheco.github.io)
+

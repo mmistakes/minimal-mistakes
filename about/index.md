@@ -1,25 +1,45 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, responsive]
-modified: 2014-08-08T20:53:07.573882-04:00
-comments: true
-image:
-  feature: sample-image-2.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+title: Yannick Pereira-Reis | About me
+excerpt: My name is Yannick Pereira-Reis, and I'm a full stack web developer in Lyon (France).
+tags: [Yannick Pereira-Reis, Yannick, Pereira-Reis, php, Symfony, Symfony2, AngularJs, Docker, Vagrant, Elasticsearch, Lyon]
+lastmod: "2016-02-15"
+permalink: /website/about/
 ---
 
-Minimal Mistakes is responsive Jekyll theme with large featured images and solid typography. As the name implies the styling is fairly minimal to make it easier for you to build on top of.
+Hi! I am *Yannick Pereira-Reis*, and I'm a full stack web developer (Symfony2, AngularJs) in [Lyon (France)](http://www.lyon.fr/page/accueil.html).
 
-## Minimal Mistakes is all about:
+<img class="img-center" src="../../images/author/avatar.png" alt="Yannick Pereira-Reis">
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers. 
-* Minimal embellishments -- content first.
-* Optional large feature images for posts and pages.
-* Simple and clear permalink structure.
-* [Custom 404 page](http://mmistakes.github.io/minimal-mistakes/404.html) to get you started.
-* Support for Disqus Comments
+I'm passionate about IT and particularily about web development for almost 10 years.
+Indeed, I started playing with [PHP](http://php.net/),
+[Javascript](http://fr.wikipedia.org/wiki/JavaScript),
+[HTML](http://fr.wikipedia.org/wiki/Hypertext_Markup_Language)
+and [CSS](http://en.wikipedia.org/wiki/Cascading_Style_Sheets) when I was in high school.
 
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install Minimal Mistakes Theme</a>
+Currently, I still work with PHP, Javascript or even CSS, but I also use more tools or frameworks helping me to do my daily work:
+
+* Symfony2
+* AngularJs
+* ReactJs
+* Vagrant
+* Jenkins
+* PhpStorm
+* Git/Gitlab
+* Less
+* Grunt
+* Gulp
+* Docker
+
+Except for IT, I'm also interested in many others things such as:
+
+* Cooking
+* Photography
+* Cinema
+* Mountain bike
+
+I like to learn from others, and I like to share my knowledge and experience, that's why I've created this website.
+
+I hope you'll enjoy reading [my articles](/). Don't hesitate to leave comments.
+
+And have a look at [my french Résumé](/website/resume)
