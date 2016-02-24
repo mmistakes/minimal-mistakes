@@ -1,5 +1,5 @@
 ---
-title: "Post: Comments Disabled"
+title: "Template: Comments Disabled"
 date: 2012-01-02T10:21:15+00:00
 comments: false
 categories:

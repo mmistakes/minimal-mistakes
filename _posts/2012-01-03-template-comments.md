@@ -1,5 +1,5 @@
 ---
-title: "Post: Comments Enabled"
+title: "Template: Comments Enabled"
 date: 2012-01-03T10:11:37+00:00
 comments: true
 categories:
