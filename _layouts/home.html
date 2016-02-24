@@ -24,7 +24,7 @@
       {% if post.link %}
         <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></h2>
       {% else %}
-        <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>  <small>({{ post.date | date: '%Y-%m-%d' }})</small></h2>
+        <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }} ({{ post.date | date: '%Y-%m-%d' }})</a></h2>
         <p>{{ post.excerpt | strip_html | truncate: 200 }}</p>
       {% endif %}
     </article>
