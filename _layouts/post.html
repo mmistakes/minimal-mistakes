@@ -5,7 +5,7 @@ layout: default
 {% include absolute-url.liquid %}
 
 <article class="post" itemscope itemtype="http://schema.org/CreativeWork">
-  <meta itemprop="description" content="{{ page.excerpt | strip_html }}">
+  {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
   {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
   {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date: "%B %d, %Y" }}">{% endif %}
       
