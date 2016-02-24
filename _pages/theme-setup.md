@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: /theme-setup/
-title: Theme Setup
+title: "Theme Setup"
 modified: 2016-01-19
 excerpt: "Instructions on how to install and customize the Jekyll theme Minimal Mistakes."
 share: true
