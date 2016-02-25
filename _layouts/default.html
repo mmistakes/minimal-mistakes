@@ -24,8 +24,8 @@ layout: compress
         "{{ page.header.image | prepend: "/images/" | prepend: absurl }}"
       {% endif %}
       alt="{{ page.title }}">
-    {% if page.header.credit %}
-      <span class="image-credit">Photo Credit: <a href="{{ page.header.credit.url }}">{{ page.header.credit.caption }}</a></span>
+    {% if page.header.caption %}
+      <span class="image-caption">{{ page.header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
     {% endif %}
     </div><!-- /.image-wrap -->
   {% endif %}
