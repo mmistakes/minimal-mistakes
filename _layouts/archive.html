@@ -1,25 +1,7 @@
 ---
 layout: default
 ---
-
-{% include absolute-url.liquid %}
-
 <div class="archive">
   <h1>{{ page.title }}</h1>
-  {% capture written_year %}'None'{% endcapture %}
-  {% for post in site.posts %}  
-    {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-    {% if year != written_year %}
-      <h3>{{ year }}</h3>
-      {% capture written_year %}{{ year }}{% endcapture %}
-    {% endif %}
-    <article itemscope itemtype="http://schema.org/CreativeWork">
-      {% if post.link %}
-        <h2 class="link-post" itemprop="headline"><a href="{{ absurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h2>
-      {% else %}
-        <h2 itemprop="headline"><a href="{{ absurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-        <p itemprop="description">{{ post.excerpt | markdownify | strip_html | strip_newlines | escape_once }}</p>
-      {% endif %}
-    </article>
-  {% endfor %}
+  {{ content }}
 </div><!-- /.archive -->
