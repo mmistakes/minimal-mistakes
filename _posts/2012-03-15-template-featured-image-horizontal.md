@@ -8,7 +8,6 @@ categories:
   - Template
   - Uncategorized
 tags:
-  - Codex
   - edge case
   - featured image
   - image

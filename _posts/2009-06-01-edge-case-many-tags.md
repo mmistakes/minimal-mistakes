@@ -10,7 +10,6 @@ tags:
   - captions
   - categories
   - chat
-  - Codex
   - comments
   - content
   - css
@@ -25,7 +24,7 @@ tags:
   - gallery
   - html
   - image
-  - jetpack
+  - Jekyll
   - layout
   - link
   - Love
@@ -36,7 +35,6 @@ tags:
   - Pictures
   - Post Formats
   - quote
-  - shortcode
   - standard
   - Success
   - Swagger
@@ -46,8 +44,6 @@ tags:
   - twitter
   - Unseen
   - video
-  - videopress
-  - WordPress
-  - wordpress.tv
+  - YouTube
 ---
 This post has many tags.
