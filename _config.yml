@@ -12,7 +12,7 @@ name                     : &name "Your Name"
 title_separator          : "-"
 description              : &description "Write an awesome description for your new site here."
 url                      : "http://localhost:4000" # the base hostname & protocol for your site
-baseurl                  : "/test" # the subpath of your site, e.g. /blog
+baseurl                  : "/minimal-mistakes" # the subpath of your site, e.g. /blog
 email                    : "your-email@domain.com"
 logo                     : "site-logo.png"
 twitter:
@@ -30,7 +30,7 @@ google_analytics         : # Universal Analytics tracking ID
 google_ad_client         :
 google_ad_slot           :
 
-# For specifying social profiles. 
+# For specifying social profiles.
 # https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : # Person or Organization (defaults to Person)
@@ -41,10 +41,10 @@ social:
 
 # Reading Files
 safe: false
-include: 
+include:
   - .htaccess
   - _pages
-exclude: 
+exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
@@ -62,7 +62,7 @@ exclude:
   - Rakefile
   - README
   - tmp
-keep_files: 
+keep_files:
   - .git
   - .svn
 encoding: "utf-8"
