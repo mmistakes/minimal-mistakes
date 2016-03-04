@@ -1,6 +1,5 @@
 ---
 title: "Template: More Tag"
-date: 2012-03-15T14:41:11+00:00
 categories:
   - Template
   - Uncategorized

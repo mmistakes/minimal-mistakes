@@ -1,6 +1,5 @@
 ---
 title: "Markup: HTML Tags and Formatting"
-date: 2013-01-11T20:22:19+00:00
 categories:
   - Markup
 tags:

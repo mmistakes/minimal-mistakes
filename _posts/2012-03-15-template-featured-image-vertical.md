@@ -1,6 +1,5 @@
 ---
 title: "Template: Featured Image (Vertical)"
-date: 2012-03-15T15:36:32+00:00
 header:
   image: unsplash-image-6.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"

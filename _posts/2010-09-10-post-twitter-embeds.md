@@ -1,6 +1,5 @@
 ---
-title: "Media: Twitter Embeds"
-date: 2011-03-15T15:47:16+00:00
+title: "Post: Twitter Embed"
 categories:
   - Media
 tags:

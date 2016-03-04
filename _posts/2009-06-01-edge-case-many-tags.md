@@ -1,6 +1,5 @@
 ---
 title: "Edge Case: Many Tags"
-date: 2009-06-01T01:00:34+00:00
 categories:
   - Edge Case
 tags:

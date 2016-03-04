@@ -1,6 +1,5 @@
 ---
 title: "Edge Case: Many Categories"
-date: 2009-07-02T02:00:03+00:00
 categories:
   - aciform
   - antiquarianism

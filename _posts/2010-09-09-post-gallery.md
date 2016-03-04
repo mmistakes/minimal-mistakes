@@ -1,13 +1,11 @@
 ---
-title: "Post Format: Gallery"
-date: 2010-09-09T17:23:27+00:00
+title: "Post: Gallery"
 categories:
   - Post Formats
 tags:
   - gallery
   - Post Formats
   - tiled
-format: gallery
 gallery:
   - large: unsplash-gallery-image-1.jpg
     thumb: unsplash-gallery-image-1-th.jpg

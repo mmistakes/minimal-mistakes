@@ -1,5 +1,5 @@
 ---
-title: "Markup: Another Post With Images"
+title: "Markup: Another Post with Images"
 excerpt: "Examples and code for displaying images in posts."
 tags: 
   - sample post

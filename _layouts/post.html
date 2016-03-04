@@ -8,7 +8,7 @@ layout: default
   {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
   {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
   {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date: "%B %d, %Y" }}">{% endif %}
-      
+
   <div class="article-wrap">
     <header>
       {% if page.link %}
@@ -37,8 +37,8 @@ layout: default
   {% endif %}
 </article>
 
-{% comment %}<!-- only show related on a post page -->{% endcomment %}
-{% if page.id and site.related_posts.size > 0 %}
+{% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
+{% if page.id and page.related and site.related_posts.size > 0 %}
   <div class="related-articles">
   <h4>You might also enjoy <small class="pull-right">(<a href="{{ absurl }}/posts/">View all posts</a>)</small></h4>
     <ul>
