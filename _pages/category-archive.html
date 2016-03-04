@@ -3,7 +3,6 @@ layout: archive
 permalink: /category-archive/
 title: "Posts by Category"
 ---
-
 {% include absolute-url.liquid %}
 {% capture site_categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 {% assign category_list = site_categories | split:',' | sort %}
