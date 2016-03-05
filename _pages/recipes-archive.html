@@ -1,14 +1,14 @@
 ---
 layout: archive
-permalink: /tag-archive/
-title: "Posts by Tags"
+title: "Recipes Archive"
+permalink: /recipes-archive/
 ---
 {% include absolute-url.liquid %}
-{% include group-by-array.html collection=site.posts field='tags' %}
+{% include group-by-array.html collection=site.recipes field='categories' %}
 
-{% for tag in group_names %}
+{% for category in group_names %}
   {% assign posts = group_items[forloop.index0] %}
-  <h3>{{ tag }}</h3>
+  <h3>{{ category }}</h3>
   {% for post in posts %}
     <article itemscope itemtype="http://schema.org/CreativeWork">
       {% if post.link %}
