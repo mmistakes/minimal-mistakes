@@ -654,6 +654,7 @@ $button-size: 1.5rem;
 		}
 	}
 }
+
 /*
    Google search form
    ========================================================================== */
@@ -684,4 +685,21 @@ $button-size: 1.5rem;
 }
 #goog-wm-sb {
 	@extend .btn;
+}
+
+/*
+   Breadcrumbs
+   ========================================================================== */
+
+.breadcrumbs {
+  ol {
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    display: inline;
+  }
+  .current {
+    font-weight: bold;
+  }
 }

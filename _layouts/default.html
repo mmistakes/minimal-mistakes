@@ -17,17 +17,21 @@ layout: compress
 
   {% if page.header.image %}
     <div class="image-wrap">
-    <img src=
-      {% if page.header.image contains "http" %}
-        "{{ page.header.image }}"
-      {% else %}
-        "{{ page.header.image | prepend: "/images/" | prepend: absurl }}"
+      <img src=
+        {% if page.header.image contains "http" %}
+          "{{ page.header.image }}"
+        {% else %}
+          "{{ page.header.image | prepend: "/images/" | prepend: absurl }}"
+        {% endif %}
+        alt="{{ page.title }}">
+      {% if page.header.caption %}
+        <span class="image-caption">{{ page.header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
       {% endif %}
-      alt="{{ page.title }}">
-    {% if page.header.caption %}
-      <span class="image-caption">{{ page.header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
-    {% endif %}
     </div><!-- /.image-wrap -->
+  {% endif %}
+
+  {% if site.breadcrumbs %}
+    {% include breadcrumbs.html %}
   {% endif %}
 
   <div id="main" role="main">
