@@ -1,5 +1,5 @@
 ---
-title: 'Markup: "Title" With Special&nbsp;---&nbsp;Characters'
+title: "Markup: Title with Special&nbsp;---&nbsp;Characters"
 categories:
   - Markup
 tags:
