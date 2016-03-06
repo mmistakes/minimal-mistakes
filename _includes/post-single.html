@@ -1,8 +1,8 @@
 <article itemscope itemtype="http://schema.org/CreativeWork">
   {% if post.link %}
-    <h2 class="link-post" itemprop="headline"><a href="{{ absurl }}{{ post.url }}">{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}</a> <a href="{{ post.link }}" target="_blank"><i class="fa fa-link"></i></a></h2>
+    <h2 class="link-post" itemprop="headline"><a href="{{ absurl }}{{ post.url }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank"><i class="fa fa-link"></i></a></h2>
   {% else %}
-    <h2 itemprop="headline"><a href="{{ absurl }}{{ post.url }}">{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}</a></h2>
-    {% if post.excerpt %}<p itemprop="description">{{ post.excerpt | strip_html | truncate: 160 }}</p>{% endif %}
+    <h2 itemprop="headline"><a href="{{ absurl }}{{ post.url }}">{{ post.title }}</a></h2>
   {% endif %}
+  {% if post.excerpt %}<p itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
 </article>
