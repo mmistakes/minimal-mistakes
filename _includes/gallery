@@ -18,28 +18,28 @@
 
 <figure class="{{ gallery-layout }}">
   {% for img in gallery %}
-    {% if img.large %}
+    {% if img.url %}
       <a href=
-        {% if img.large contains "http" %}
-          "{{ img.large }}"
+        {% if img.url contains "http" %}
+          "{{ img.url }}"
         {% else %}
-          "{{ img.large | prepend: "/images/" | prepend: absurl }}"
+          "{{ img.url | prepend: "/images/" | prepend: absurl }}"
         {% endif %}
       >
         <img src=
-          {% if img.thumb contains "http" %}
-            "{{ img.thumb }}"
+          {% if img.image_path contains "http" %}
+            "{{ img.image_path }}"
           {% else %}
-            "{{ img.thumb | prepend: "/images/" | prepend: absurl }}"
+            "{{ img.image_path | prepend: "/images/" | prepend: absurl }}"
           {% endif %}
         alt="{% if img.alt %}{{ img.alt }}{% endif %}">
       </a>
     {% else %}
       <img src=
-        {% if img.thumb contains "http" %}
-          "{{ img.thumb }}"
+        {% if img.image_path contains "http" %}
+          "{{ img.image_path }}"
         {% else %}
-          "{{ img.thumb | prepend: "/images/" | prepend: absurl }}"
+          "{{ img.image_path | prepend: "/images/" | prepend: absurl }}"
         {% endif %}
       alt="{% if img.alt %}{{ img.alt }}{% endif %}">
     {% endif %}

@@ -7,29 +7,29 @@ tags:
   - Post Formats
   - tiled
 gallery:
-  - large: unsplash-gallery-image-1.jpg
-    thumb: unsplash-gallery-image-1-th.jpg
+  - url: unsplash-gallery-image-1.jpg
+    image_path: unsplash-gallery-image-1-th.jpg
     alt: "placeholder image 1"
-  - large: unsplash-gallery-image-2.jpg
-    thumb: unsplash-gallery-image-2-th.jpg
+  - url: unsplash-gallery-image-2.jpg
+    image_path: unsplash-gallery-image-2-th.jpg
     alt: "placeholder image 2"
-  - large: unsplash-gallery-image-3.jpg
-    thumb: unsplash-gallery-image-3-th.jpg
+  - url: unsplash-gallery-image-3.jpg
+    image_path: unsplash-gallery-image-3-th.jpg
     alt: "placeholder image 3"
 gallery2:
-  - large: https://flic.kr/p/8a6Ven
-    thumb: https://farm2.staticflickr.com/1272/4697500467_8294dac099_q.jpg
+  - url: https://flic.kr/p/8a6Ven
+    image_path: https://farm2.staticflickr.com/1272/4697500467_8294dac099_q.jpg
     alt: "Black and grays with a hint of green"
-  - large: https://flic.kr/p/8a738X
-    thumb: https://farm5.staticflickr.com/4029/4697523701_249e93ba23_q.jpg
+  - url: https://flic.kr/p/8a738X
+    image_path: https://farm5.staticflickr.com/4029/4697523701_249e93ba23_q.jpg
     alt: "Made for open text placement"
-  - large: https://flic.kr/p/8a6VXP
-    thumb: https://farm5.staticflickr.com/4046/4697502929_72c612c636_q.jpg
+  - url: https://flic.kr/p/8a6VXP
+    image_path: https://farm5.staticflickr.com/4046/4697502929_72c612c636_q.jpg
     alt: "Fog in the trees"
 gallery3:
-  - thumb: unsplash-gallery-image-2-th.jpg
+  - image_path: unsplash-gallery-image-2-th.jpg
     alt: "placeholder image 2"
-  - thumb: unsplash-gallery-image-4-th.jpg
+  - image_path: unsplash-gallery-image-4-th.jpg
     alt: "placeholder image 4"
 ---
 These are gallery tests for image wrapped in `<figure>` elements.
@@ -38,17 +38,17 @@ To place a gallery add the necessary YAML Front Matter:
 
 ```yaml
 gallery:
-  - large: unsplash-gallery-image-1.jpg
-    thumb: unsplash-gallery-image-1-th.jpg
+  - url: unsplash-gallery-image-1.jpg
+    image_path: unsplash-gallery-image-1-th.jpg
     alt: "placeholder image 1"
-  - large: unsplash-gallery-image-2.jpg
-    thumb: unsplash-gallery-image-2-th.jpg
+  - url: unsplash-gallery-image-2.jpg
+    image_path: unsplash-gallery-image-2-th.jpg
     alt: "placeholder image 2"
-  - large: unsplash-gallery-image-3.jpg
-    thumb: unsplash-gallery-image-3-th.jpg
+  - url: unsplash-gallery-image-3.jpg
+    image_path: unsplash-gallery-image-3-th.jpg
     alt: "placeholder image 3"
-  - large: unsplash-gallery-image-4.jpg
-    thumb: unsplash-gallery-image-4-th.jpg
+  - url: unsplash-gallery-image-4.jpg
+    image_path: unsplash-gallery-image-4-th.jpg
     alt: "placeholder image 4"
 ```
 
@@ -66,14 +66,14 @@ Here comes another gallery, this time set the `id` to match 2nd gallery hash in 
 
 ```yaml
 gallery2:
-  - large: https://flic.kr/p/8a6Ven
-    thumb: https://farm2.staticflickr.com/1272/4697500467_8294dac099_q.jpg
+  - url: https://flic.kr/p/8a6Ven
+    image_path: https://farm2.staticflickr.com/1272/4697500467_8294dac099_q.jpg
     alt: "Black and grays with a hint of green"
-  - large: https://flic.kr/p/8a738X
-    thumb: https://farm5.staticflickr.com/4029/4697523701_249e93ba23_q.jpg
+  - url: https://flic.kr/p/8a738X
+    image_path: https://farm5.staticflickr.com/4029/4697523701_249e93ba23_q.jpg
     alt: "Made for open text placement"
-  - large: https://flic.kr/p/8a6VXP
-    thumb: https://farm5.staticflickr.com/4046/4697502929_72c612c636_q.jpg
+  - url: https://flic.kr/p/8a6VXP
+    image_path: https://farm5.staticflickr.com/4046/4697502929_72c612c636_q.jpg
     alt: "Fog in the trees"
 ```
 
