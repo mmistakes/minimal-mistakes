@@ -1,4 +1,4 @@
-{% include absolute-url.liquid %}
+{% include base_path %}
 
 {% if include.id %}
   {% assign gallery = page.[include.id] %}
@@ -23,14 +23,14 @@
         {% if img.url contains "http" %}
           "{{ img.url }}"
         {% else %}
-          "{{ img.url | prepend: "/images/" | prepend: absurl }}"
+          "{{ img.url | prepend: "/images/" | prepend: base_path }}"
         {% endif %}
       >
         <img src=
           {% if img.image_path contains "http" %}
             "{{ img.image_path }}"
           {% else %}
-            "{{ img.image_path | prepend: "/images/" | prepend: absurl }}"
+            "{{ img.image_path | prepend: "/images/" | prepend: base_path }}"
           {% endif %}
         alt="{% if img.alt %}{{ img.alt }}{% endif %}">
       </a>
@@ -39,7 +39,7 @@
         {% if img.image_path contains "http" %}
           "{{ img.image_path }}"
         {% else %}
-          "{{ img.image_path | prepend: "/images/" | prepend: absurl }}"
+          "{{ img.image_path | prepend: "/images/" | prepend: base_path }}"
         {% endif %}
       alt="{% if img.alt %}{{ img.alt }}{% endif %}">
     {% endif %}

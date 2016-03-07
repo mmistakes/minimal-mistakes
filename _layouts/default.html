@@ -2,18 +2,18 @@
 layout: compress
 ---
 
-{% include absolute-url.liquid %}
+{% include base_path %}
 
 <!DOCTYPE html>
 <html lang="{{ site.locale | slice: 0,2 }}">
   <head>
-  {% include head.html %}
+  {% include head %}
   </head>
 
   <body>
 
-  {% include browser-upgrade.html %}
-  {% include navigation.html %}
+  {% include browser-upgrade %}
+  {% include navigation %}
 
   {% if page.header.image %}
     <div class="image-wrap">
@@ -21,7 +21,7 @@ layout: compress
         {% if page.header.image contains "http" %}
           "{{ page.header.image }}"
         {% else %}
-          "{{ page.header.image | prepend: "/images/" | prepend: absurl }}"
+          "{{ page.header.image | prepend: "/images/" | prepend: base_path }}"
         {% endif %}
         alt="{{ page.title }}">
       {% if page.header.caption %}
@@ -31,12 +31,12 @@ layout: compress
   {% endif %}
 
   {% if site.breadcrumbs %}
-    {% include breadcrumbs.html %}
+    {% include breadcrumbs %}
   {% endif %}
 
   <div id="main" role="main">
     <div class="sidebar">
-      {% if page.author_profile %}{% include author-profile.html %}{% endif %}
+      {% if page.author_profile %}{% include author-profile %}{% endif %}
       {% if page.sidebar %}
         {% for s in page.sidebar %}
           {% if s.image %}
@@ -44,7 +44,7 @@ layout: compress
             {% if s.image contains "http" %}
               "{{ s.image }}"
             {% else %}
-              "{{ s.image | prepend: "/images/" | prepend: absurl }}"
+              "{{ s.image | prepend: "/images/" | prepend: base_path }}"
             {% endif %}
             alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
           {% endif %}
@@ -59,11 +59,11 @@ layout: compress
 
   <div class="footer-wrap">
     <footer>
-      {% include footer.html %}
+      {% include footer %}
     </footer>
   </div><!-- /.footer-wrap -->
 
-  {% include scripts.html %}
+  {% include scripts %}
 
   </body>
 </html>
