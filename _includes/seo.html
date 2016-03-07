@@ -16,9 +16,7 @@
   {% assign canonical_url = page.url | replace: "index.html", "" | prepend: site.url %}
 {% endif %}
 
-{% if seo_title %}
-  <title>{{ seo_title }}</title>
-{% endif %}
+<title>{{ seo_title | default: site.title }}</title>
 
 {% assign seo_description = page.description | default: page.excerpt | default: site.description %}
 {% if seo_description %}
@@ -57,13 +55,15 @@
   <meta name="twitter:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
   <meta name="twitter:description" content="{{ seo_description }}">
   <meta name="twitter:url" content="{{ canonical_url }}">
-  
-  {% if page.image.feature %}
+
+  {% if page.header.image %}
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="{{ page.image.feature | prepend: "/images/" | prepend: absurl }}">
+    <meta name="twitter:image" content="{% if page.header.image contains "http" %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: "/images/" | prepend: absurl }}{% endif %}">
   {% else %}
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="{% if page.image.thumb %}{{ page.image.thumb | prepend: "/images/" | prepend: absurl }}{% else %}{{ site.logo | prepend: "/images/" | prepend: absurl }}{% endif %}">
+    {% if site.logo %}
+      <meta name="twitter:image" content="{{ site.logo | prepend: "/images/" | prepend: absurl }}">
+    {% endif %}
   {% endif %}
 
   {% if seo_author_twitter %}
@@ -81,8 +81,8 @@
   {% endif %}
 {% endif %}
 
-{% if page.image.feature %}
-  <meta property="og:image" content="{{ page.image.feature | prepend: "/images/" | prepend: absurl }}">
+{% if page.header.image %}
+  <meta property="og:image" content="{% if page.header.image contains "http" %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: "/images/" | prepend: absurl }}{% endif %}">
 {% endif %}
 
 {% if page.date %}

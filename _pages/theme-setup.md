@@ -1,17 +1,11 @@
 ---
-layout: post
+title: "Theme Setup"
 permalink: /theme-setup/
-title: Theme Setup
 modified: 2016-01-19
 excerpt: "Instructions on how to install and customize the Jekyll theme Minimal Mistakes."
 share: true
 comments: true
-image:
-  feature: sample-image-3.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
-
 {% include toc.html %}
 
 ## Installation

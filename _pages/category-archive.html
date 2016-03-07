@@ -1,0 +1,16 @@
+---
+layout: archive
+permalink: /category-archive/
+title: "Posts by Category"
+author_profile: false
+---
+{% include absolute-url.liquid %}
+{% include group-by-array.html collection=site.posts field='categories' %}
+
+{% for category in group_names %}
+  {% assign posts = group_items[forloop.index0] %}
+  <h3>{{ category }}</h3>
+  {% for post in posts %}
+    {% include archive-list-single.html %}
+  {% endfor %}
+{% endfor %}

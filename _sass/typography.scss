@@ -66,7 +66,7 @@ figcaption {
    Feature image captions
    ========================================================================== */
 
-.image-credit {
+.image-caption {
 	@include grid(12,10);
 	@include prefix(12,1);
 	@include suffix(12,1);
@@ -153,7 +153,6 @@ li {
 	code {
 		@include font-rem(12);
 		line-height: 1.5;
-		white-space: nowrap;
 		margin: 0 2px;
 		padding: 0 5px;
 		border: 1px solid lighten($black, 90);
