@@ -108,7 +108,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: post
+      layout: single
       comments: true
       share: true
       related: true
@@ -117,19 +117,19 @@ defaults:
       path: _pages
       type: pages
     values:
-      layout: post
+      layout: single
   # _recipes
   - scope:
       path: _recipes
       type: recipes
     values:
-      layout: post
+      layout: single
   # _pets
   - scope:
       path: _pets
       type: pets
     values:
-      layout: post
+      layout: single
 
 # Plugins
 gems:
