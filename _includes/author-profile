@@ -7,7 +7,7 @@
   {% if author.avatar contains "http" %}
   	<img src="{{ author.avatar }}" class="author-avatar" alt="{{ author.name }} photo">
   {% else %}
-  	<img src="{{ author.avatar | prepend: "/images/" | prepend: absurl }}" class="author-avatar" alt="{{ author.name }} photo">
+  	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author-avatar" alt="{{ author.name }} photo">
   {% endif %}
 
   <h3 class="author-name">{{ author.name }}</h3>

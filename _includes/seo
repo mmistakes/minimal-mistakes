@@ -58,11 +58,11 @@
 
   {% if page.header.image %}
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="{% if page.header.image contains "http" %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: "/images/" | prepend: absurl }}{% endif %}">
+    <meta name="twitter:image" content="{% if page.header.image contains "http" %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: "/images/" | prepend: base_path }}{% endif %}">
   {% else %}
     <meta name="twitter:card" content="summary">
     {% if site.logo %}
-      <meta name="twitter:image" content="{{ site.logo | prepend: "/images/" | prepend: absurl }}">
+      <meta name="twitter:image" content="{{ site.logo | prepend: "/images/" | prepend: base_path }}">
     {% endif %}
   {% endif %}
 
@@ -82,7 +82,7 @@
 {% endif %}
 
 {% if page.header.image %}
-  <meta property="og:image" content="{% if page.header.image contains "http" %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: "/images/" | prepend: absurl }}{% endif %}">
+  <meta property="og:image" content="{% if page.header.image contains "http" %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: "/images/" | prepend: base_path }}{% endif %}">
 {% endif %}
 
 {% if page.date %}
