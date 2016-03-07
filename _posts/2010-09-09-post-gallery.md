@@ -32,6 +32,7 @@ gallery3:
   - image_path: unsplash-gallery-image-4-th.jpg
     alt: "placeholder image 4"
 ---
+
 These are gallery tests for image wrapped in `<figure>` elements.
 
 To place a gallery add the necessary YAML Front Matter:

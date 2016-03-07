@@ -7,6 +7,7 @@ tags:
   - html
   - title
 ---
+
 Verify that:
 
 * The post title renders the word "with" in *italics* and the word "Markdown" in **bold**.

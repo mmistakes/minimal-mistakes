@@ -6,6 +6,7 @@ excerpt: "Instructions on how to install and customize the Jekyll theme Minimal 
 share: true
 comments: true
 ---
+
 {% include toc.html %}
 
 ## Installation

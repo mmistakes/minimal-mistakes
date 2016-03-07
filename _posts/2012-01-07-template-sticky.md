@@ -6,6 +6,7 @@ tags:
   - sticky
   - template
 ---
+
 This is a sticky post.
 
 There are a few things to verify:

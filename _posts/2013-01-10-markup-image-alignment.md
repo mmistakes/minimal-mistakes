@@ -10,6 +10,7 @@ tags:
   - image
   - markup
 ---
+
 Welcome to image alignment! The best way to demonstrate the ebb and flow of the various image positioning options is to nestle them snuggly among an ocean of words. Grab a paddle and let's get started.
 
 ![image-center](http://wpthemetestdata.files.wordpress.com/2013/03/image-alignment-580x300.jpg){: .align-center}
