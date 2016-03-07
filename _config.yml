@@ -100,6 +100,9 @@ collections:
   pets:
     output: true
     permalink: /:collection/:categories/:path/
+  portfolio:
+    output: true
+    permalink: /:collection/:categories/:path/
 
 # Defaults
 defaults:
