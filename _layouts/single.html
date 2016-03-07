@@ -32,8 +32,17 @@ layout: default
     </footer>
   </div><!-- /.article-wrap -->
 
-  {% if site.disqus_shortname and page.comments %}
-    <section id="disqus_thread"></section><!-- /#disqus_thread -->
+  {% if site.comments.provider and page.comments %}
+    {% case site.comments.provider %}
+    {% when "disqus" %}
+      <section id="disqus_thread"></section>
+    {% when "facebook" %}
+      <section class="fb-comments" data-href="{{ base_path }}{{ page.url }}" data-num-posts="{{ site.comments.facebook.num_posts | default: 5 }}" data-width="{{ site.comments.facebook.width | default: 580 }}" data-colorscheme="{{ site.comments.facebook.colorscheme | default: 'light' }}"></section>
+    {% when "google-plus" %}
+      <section class="g-comments" data-href="{{ base_path }}{{ page.url }}" data-first_party_property="BLOGGER" data-view_type="FILTERED_POSTMOD">Loading Google+ Comments ...</section>
+    {% when "custom" %}
+      <section id="comments"></section>
+    {% endcase %}
   {% endif %}
 </article>
 
