@@ -10,6 +10,6 @@ title: "Posts by Tags"
   {% assign posts = group_items[forloop.index0] %}
   <h3>{{ tag }}</h3>
   {% for post in posts %}
-    {% include post-single.html %}
+    {% include archive-list-single.html %}
   {% endfor %}
 {% endfor %}

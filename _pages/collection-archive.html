@@ -16,7 +16,7 @@ permalink: /collection-archive/
   {% endunless %}
   {% for post in collection.docs %}
     {% unless collection.output == false or collection.label == 'posts' %}
-      {% include post-single.html %}
+      {% include archive-list-single.html %}
     {% endunless %}
   {% endfor %}
 {% endfor %}
