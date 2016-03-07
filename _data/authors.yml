@@ -1,15 +1,15 @@
 # Authors
 
-billy_rick:
+Billy Rick:
   name        : "Billy Rick"
-  web         : "http://thewhip.com"
+  uri         : "http://thewhip.com"
   email       : "billy@rick.com"
   bio         : "What do you want, jewels? I am a very extravagant man."
   avatar      : "bio-photo-2.jpg"
   twitter     : "extravagantman"
   google_plus : "BillyRick"
 
-cornelius_fiddlebone:
+Cornelius Fiddlebone:
   name        : "Cornelius Fiddlebone"
   email       : "cornelius@thewhip.com"
   bio         : "I ordered what?"

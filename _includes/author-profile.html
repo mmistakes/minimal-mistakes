@@ -12,6 +12,9 @@
 
   <h3 class="author-name">{{ author.name }}</h3>
   {% if author.bio %}<p class="author-bio">{{ author.bio }}</p>{% endif %}
+  {% if author.uri %}
+    <a href="{{ author.uri }}" class="author-social" target="_blank"><i class="fa fa-fw fa-globe"></i>Website</a>
+  {% endif %}
   {% if author.email %}
     <a href="mailto:{{ author.email }}" class="author-social" target="_blank"><i class="fa fa-fw fa-envelope-square"></i> Email</a>
   {% endif %}
