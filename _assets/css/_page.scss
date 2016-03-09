@@ -585,14 +585,7 @@ $button-size: 1.5rem;
 	@include clearfix;
 	clear: both;
 	padding-bottom: 3em;
-	a,
-	a:active,
-	a:visited,
-	p,
-	h4,
-	h5,
-	h6,
-	span {
+	.copyright {
 		@include font-rem(14);
 	}
 	footer {
@@ -610,6 +603,22 @@ $button-size: 1.5rem;
 			@include suffix(12,3.5);
 		}
 	}
+}
+
+/* Follow links */
+.follow {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  li {
+    display: inline-block;
+  }
+  li + li:before {
+    content: "";
+    padding-right: 5px;
+  }
 }
 
 /* Related articles list */
