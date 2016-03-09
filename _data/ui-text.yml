@@ -1,0 +1,19 @@
+# User interface text for localization
+
+locale:
+  # English (default)
+  # -----------------
+  en: &DEFAULT_EN
+    pagination_previous: "Previous"
+    pagination_next: "Next"
+    toc_label: "Overview"
+    share_on: "Share on"
+    date_label: "Last Updated:"
+    related_label: "You May Also Enjoy"
+    follow_label: "Follow:"
+    feed_label: "Feed"
+    powered_by: "Powered by"
+  en_US:
+    <<: *DEFAULT_EN
+  en_UK:
+    <<: *DEFAULT_EN

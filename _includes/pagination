@@ -6,9 +6,9 @@
     {% comment %} Link for previous page {% endcomment %}
     {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
-        <li><a href="{{ base_path }}/" class="btn">Previous</a></li>
+        <li><a href="{{ base_path }}/" class="btn">{{ site.data.ui-text.locale[site.locale].pagination_previous }}</a></li>
       {% else %}
-        <li><a href="{{ base_path }}/page{{ paginator.previous_page }}/" class="btn">Previous</a></li>
+        <li><a href="{{ base_path }}/page{{ paginator.previous_page }}/" class="btn">{{ site.data.ui-text.locale[site.locale].pagination_previous }}</a></li>
       {% endif %}
     {% endif %}
 
@@ -36,10 +36,10 @@
       {% if index == paginator.page %}
         <li><strong class="current">{{ index }}</strong></li>
       {% else %}
-        {% comment %} Distance from current page and this link {% endcomment %}
+        {% comment %}Distance from current page and this link{% endcomment %}
         {% assign dist = paginator.page | minus: index %}
         {% if dist < 0 %}
-          {% comment %} Distance must be a positive value {% endcomment %}
+          {% comment %}Distance must be a positive value{% endcomment %}
           {% assign dist = 0 | minus: dist %}
         {% endif %}
         <li><a href="{{ base_path }}/page{{ index }}/">{{ index }}</a></li>
@@ -59,7 +59,7 @@
 
     {% comment %}Link next page{% endcomment %}
     {% if paginator.next_page %}
-      <li><a href="{{ base_path }}/page{{ paginator.next_page }}/" class="btn">Next</a></li>
+      <li><a href="{{ base_path }}/page{{ paginator.next_page }}/" class="btn">{{ site.data.ui-text.locale[site.locale].pagination_next }}</a></li>
     {% endif %}
   </ul>
 </nav>
