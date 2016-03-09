@@ -706,3 +706,27 @@ $button-size: 1.5rem;
     font-weight: bold;
   }
 }
+
+/*
+   Post pagination links
+   ========================================================================== */
+
+.pagination {
+  padding-top: 0.5em;
+  border-top: 1px solid lighten($black,70);
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  li {
+    display: inline-block;
+  }
+  li + li:before {
+    content: "";
+    padding-right: 10px;
+  }
+  .current {
+    font-weight: bold;
+  }
+}
