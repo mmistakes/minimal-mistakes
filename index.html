@@ -1,6 +1,5 @@
 ---
 layout: archive
-permalink: /
 excerpt: "A minimal Jekyll theme for your blog by designer Michael Rose."
 header:
   image: unsplash-image-7.jpg
@@ -9,8 +8,10 @@ header:
 
 {% include base_path %}
 
-### Recent Posts
+<h3>Recent Posts</h3>
 
-{% for post in site.posts limit:5 %}
+{% for post in paginator.posts %}
   {% include archive-list-single %}
 {% endfor %}
+
+{% include pagination %}
