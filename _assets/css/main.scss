@@ -1,13 +1,13 @@
 /*
+ *    Minimal Mistakes Jekyll Theme
  *
- *  Minimal Mistakes
- *
- *  Designer: Michael Rose
- *  Twitter: http://twitter.com/mmistakes
+ *  - Michael Rose
+ *  - mademistakes.com
+ *  - https://twitter.com/mmistakes
  *
 */
 
-// Partials
+@import "vendor/breakpoint/breakpoint"; // media query mixins
 @import "variables";
 @import "grid";
 @import "mixins";
@@ -15,7 +15,6 @@
 @import "site";
 @import "typography";
 @import "syntax";
-@import "coderay";
 @import "elements";
 @import "forms";
 @import "page";

@@ -37,7 +37,7 @@ svg:not(:root) {
 .half {
 	@include container;
 	@include clearfix;
-	@media #{$micro} {
+	@include breakpoint($micro) {
 		img {
 			@include grid(12,6);
 		}
@@ -52,7 +52,7 @@ svg:not(:root) {
 .third {
 	@include container;
 	@include clearfix;
-	@media #{$micro} {
+	@include breakpoint($micro) {
 		img {
 			@include grid(12,4);
 		}
@@ -73,7 +73,7 @@ svg:not(:root) {
   margin-bottom: 20px;
   padding: 8px 20px;
   @include font-rem(14);
-  font-family: $heading-font;
+  font-family: $sans-serif-narrow;
   font-weight: 700;
   background-color: $primary;
   color: $white;
