@@ -2,16 +2,13 @@
    BASE ELEMENTS
    ========================================================================== */
 
-/*
-   Typography
-   ========================================================================== */
-
 body {
   margin: 0;
   padding: 0;
   color: $text-color;
   font-family: $serif;
   line-height: 1.5;
+  background-color: $body-color;
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
     overflow: hidden;
@@ -79,7 +76,7 @@ p, pre, blockquote, ul, ol, dl, figure, table, fieldset {
   widows: 3;
 }
 
-/* Abbreviations */
+/* abbreviations */
 
 abbr[title],
 abbr[data-original-title] {
@@ -88,7 +85,7 @@ abbr[data-original-title] {
   border-bottom: 1px dotted $text-color;
 }
 
-/* Blockquotes */
+/* blockquotes */
 
 blockquote {
   margin: 2em 1em 2em 0;
@@ -110,10 +107,9 @@ blockquote {
   }
 }
 
-/* Links */
+/* links */
 
 a {
-  text-decoration: none;
   &:focus {
     @extend %tab-focus;
   }
@@ -123,7 +119,7 @@ a {
   }
 }
 
-/* Lists */
+/* lists */
 
 ol, ul {
   @include breakpoint($small) {
@@ -134,7 +130,7 @@ ol, ul {
   }
 }
 
-/* Code */
+/* code */
 
 tt, code, kbd, samp, pre {
   font-family: $monospace;
@@ -157,7 +153,7 @@ figcaption code {
   }
 }
 
-/* Horizontal rule */
+/* horizontal rule */
 
 hr {
   display: block;

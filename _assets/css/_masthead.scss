@@ -1,0 +1,83 @@
+/* ==========================================================================
+   MASTHEAD
+   ========================================================================== */
+
+.masthead {
+  @include container;
+  padding: 2em 0 1em;
+  font-family: $sans-serif-narrow;
+  font-weight: 700;
+  text-transform: uppercase;
+  @include clearfix;
+  a {
+    text-decoration: none;
+  }
+}
+
+/* Site name */
+.site-name {
+  @include grid(12,10);
+  @include prefix(12,1);
+  @include suffix(12,1);
+  margin-bottom: 1em;
+  float: none;
+  display: block;
+  font-size: 24px;
+  @include breakpoint($small) {
+    @include grid(12,2);
+    @include prefix(12,0.5);
+    @include suffix(12,0.5);
+    font-size: 16px;
+  }
+  @include breakpoint($x-large) {
+    @include grid(12,1.5);
+    @include prefix(12,2);
+  }
+}
+
+.masthead__menu {
+  @include grid(12,10);
+  @include prefix(12,1);
+  @include suffix(12,1);
+  margin-bottom: 1em;
+  float: none;
+  display: block;
+  @include breakpoint($small) {
+    @include grid(12,9);
+    @include prefix(12,0);
+    @include suffix(12,0);
+  }
+  @include breakpoint($x-large) {
+    @include grid(12,8);
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    clear: both;
+    list-style-type: none;
+  }
+}
+
+.masthead__menu-item {
+    display: block;
+    list-style-type: none;
+    border-bottom: 1px solid $border-color;
+    font-size: 16px;
+    &:last-child {
+      border-bottom: 0 solid transparent;
+    }
+    @include breakpoint($small) {
+      display: inline;
+      margin-right: 25px;
+      white-space: nowrap;
+      border-bottom: 0 solid transparent;
+    }
+    a {
+      display: block;
+      padding: 10px 0;
+      @include breakpoint($small) {
+        display: inline;
+        padding: 0;
+      }
+    }
+  }

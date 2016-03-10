@@ -1,7 +1,7 @@
-<section class="toc">
+<aside class="toc">
 <header><h4 class="toc__title"><i class="fa fa-{{ include.icon | default: 'book' }}"></i> {{ include.title | default: site.data.ui-text[site.locale].toc_label }}</h4></header>
 <nav markdown="1">
 *  Auto generated table of contents
 {:toc .toc__menu}
 </nav>
-</section>
+</aside>
