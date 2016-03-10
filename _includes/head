@@ -14,15 +14,6 @@
 
 <meta http-equiv="cleartype" content="on">
 
-<!-- HTML5 Shiv and Media Query Support -->
-<!--[if lt IE 9]>
-	<script src="{{ base_path }}/assets/js/vendor/html5shiv.min.js"></script>
-	<script src="{{ base_path }}/assets/js/vendor/respond.min.js"></script>
-<![endif]-->
-
-<!-- Modernizr -->
-<script src="{{ base_path }}/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
-
 <link href="//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic" rel="stylesheet" type="text/css">
 
 <!-- Icons -->

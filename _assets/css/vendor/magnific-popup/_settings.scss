@@ -3,7 +3,7 @@
 ////////////////////////
 
 // overlay
-$mfp-overlay-color:                   $black;                     // Color of overlay screen
+$mfp-overlay-color:                   #000;                     // Color of overlay screen
 $mfp-overlay-opacity:                 0.8;                        // Opacity of overlay screen
 $mfp-shadow:                          0 0 8px rgba(0, 0, 0, 0.6); // Shadow on image or iframe
 
@@ -16,11 +16,11 @@ $mfp-z-index-base:                    1040;                       // Base z-inde
 // controls
 $mfp-include-arrows:                  true;                       // Include styles for nav arrows
 $mfp-controls-opacity:                1;                          // Opacity of controls
-$mfp-controls-color:                  $white;                     // Color of controls
-$mfp-controls-border-color:           $white;                     // Border color of controls
-$mfp-inner-close-icon-color:          $white;                     // Color of close button when inside
-$mfp-controls-text-color:             #CCC;                       // Color of preloader and "1 of X" indicator
-$mfp-controls-text-color-hover:       $white;                     // Hover color of preloader and "1 of X" indicator
+$mfp-controls-color:                  #fff;                     // Color of controls
+$mfp-controls-border-color:           #fff;                     // Border color of controls
+$mfp-inner-close-icon-color:          #fff;                     // Color of close button when inside
+$mfp-controls-text-color:             #ccc;                       // Color of preloader and "1 of X" indicator
+$mfp-controls-text-color-hover:       #fff;                     // Hover color of preloader and "1 of X" indicator
 $mfp-IE7support:                      true;                       // Very basic IE7 support
 
 // Iframe-type options
@@ -38,9 +38,9 @@ $mfp-image-padding-bottom:            40px;                       // Image paddi
 $mfp-include-mobile-layout-for-image: true;                       // Removes paddings from top and bottom
 
 // Image caption options
-$mfp-caption-title-color:             #F3F3F3;                    // Caption title color
-$mfp-caption-subtitle-color:          #BDBDBD;                    // Caption subtitle color
-.mfp-counter { font-family: $alt-font; }                          // Caption font family
+$mfp-caption-title-color:             #f3f3f3;                    // Caption title color
+$mfp-caption-subtitle-color:          #bdbdbd;                    // Caption subtitle color
+.mfp-counter { font-family: $base-font; }                          // Caption font family
 
 // A11y
 $mfp-use-visuallyhidden:              false;

@@ -292,7 +292,7 @@ button {
 
   font-style: normal;
   font-size: 28px;
-  font-family: Arial, Baskerville, monospace;
+  font-family: $base-font;
 
   &:hover,
   &:focus {
@@ -499,6 +499,10 @@ button {
     }
     figure {
       margin: 0;
+    }
+    figcaption {
+      margin-top: 0;
+      margin-bottom: 0; // reset for bottom spacing
     }
   }
   .mfp-bottom-bar {
