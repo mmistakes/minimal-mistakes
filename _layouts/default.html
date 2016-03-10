@@ -35,7 +35,7 @@ layout: compress
   {% endif %}
 
   <div id="main" role="main">
-    <div class="sidebar">
+    <div class="sidebar sticky">
       {% if page.author_profile %}{% include author-profile %}{% endif %}
       {% if page.sidebar %}
         {% for s in page.sidebar %}
