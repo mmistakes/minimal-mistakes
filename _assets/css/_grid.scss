@@ -2,15 +2,6 @@
    Grid mixins
    ========================================================================== */
 
-/*
-   Define number of columns in the grid
-   Common values would be 12, 16 or 24
-   ========================================================================== */
-
-$width: 100%;
-$def_grid: 12;
-$margin: 0;
-
 @mixin container(){
   margin:0 auto;
   width:$width;

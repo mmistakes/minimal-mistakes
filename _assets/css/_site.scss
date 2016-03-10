@@ -7,13 +7,13 @@
    ========================================================================== */
 
 ::-moz-selection {
-	background-color: lighten($basecolor, 65%);
-	color: $basecolor;
+	background-color: mix(#fff, $base-color, 65%);
+	color: $base-color;
 	text-shadow: none;
 }
 ::selection {
-	background-color: lighten($basecolor, 65%);
-	color: $basecolor;
+	background-color: mix(#fff, $base-color, 65%);
+	color: $base-color;
 	text-shadow: none;
 }
 
@@ -61,12 +61,4 @@
 	li {
 		list-style-type: none;
 	}
-}
-
-/*
-   Global transition
-   ========================================================================== */
-
-b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a {
-	@include transition(all .2s ease);
 }

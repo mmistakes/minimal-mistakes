@@ -1,9 +1,9 @@
 /* ==========================================================================
-   Page layout
+   SINGLE PAGE/POST
    ========================================================================== */
 
 body {
-  background-color: $bodycolor;
+  background-color: $body-color;
   font-family: $serif;
   color: $text-color;
 }
@@ -29,12 +29,12 @@ body {
   margin-bottom: 1em;
   float: none;
   display: block;
-  @include font-rem(24);
+  font-size: 24px;
   @include breakpoint($small) {
     @include grid(12,2);
     @include prefix(12,0.5);
     @include suffix(12,0.5);
-    @include font-rem(16);
+    font-size: 16px;
   }
   @include breakpoint($x-large) {
     @include grid(12,1.5);
@@ -67,9 +67,9 @@ body {
   li {
     display: block;
     list-style-type: none;
-    border-bottom: 1px solid lighten($black,80);
-    border-bottom: 1px solid fade($black,10);
-    @include font-rem(16);
+    border-bottom: 1px solid lighten(#000,80);
+    border-bottom: 1px solid fade(#000,10);
+    font-size: 16px;
     &:last-child {
       border-bottom: 0 solid transparent;
     }
@@ -84,7 +84,6 @@ body {
       padding: 10px 0;
       decoration: none;
       border-bottom: 0 solid transparent;
-      @include transition(all .2s);
       @include breakpoint($small) {
         display: inline;
         padding: 0;
@@ -100,32 +99,24 @@ body {
   @include clearfix;
   clear: both;
   margin-top: 2em;
-  h1 {
-    margin-top: 0;
+}
+
+.page {
+  @include container;
+  @include grid(12,10);
+  @include prefix(12,1);
+  @include suffix(12,1);
+  margin-bottom: 2em;
+  @include breakpoint($small) {
+    @include grid(12,8);
+    @include prefix(12,0);
+    @include suffix(12,0);
   }
-  .post {
-    @include container;
-    @include grid(12,10);
-    @include prefix(12,1);
-    @include suffix(12,1);
-    margin-bottom: 2em;
-    @include breakpoint($small) {
-      @include grid(12,8);
-      @include prefix(12,0);
-      @include suffix(12,0);
-    }
-    @include breakpoint($large) {
-    @include grid(12,6);
-    }
-    @include breakpoint($x-large) {
-      @include grid(12,5);
-    }
+  @include breakpoint($large) {
+  @include grid(12,6);
   }
-  figcaption {
-    padding-top: 10px;
-    @include font(14);
-    line-height: 1.3;
-    color: lighten($text-color, 10);
+  @include breakpoint($x-large) {
+    @include grid(12,5);
   }
 }
 
@@ -150,22 +141,18 @@ body {
   h3 {
     margin: 0;
     padding-bottom: .5em;
-    @include font-rem(28);
-    border-bottom: 1px solid lighten($black,70);
+    font-size: 28px;
+    border-bottom: 1px solid mix(#fff, #000, 70%);
   }
   article {
     h2 {
       margin-bottom: 4px;
-      @include font-rem(20);
-      &.link-post {
-        margin-bottom: 0px + $doc-line-height;
-        margin-bottom: 0rem + ($doc-line-height / $doc-font-size);
-      }
+      font-size: 20px;
     }
     p {
-      @include font-rem(14);
+      font-size: 14px;
     }
-    p+p {
+    p + p {
       text-indent: 0;
     }
   }
@@ -185,7 +172,7 @@ body {
     width: 0;
     height: 0;
     border: 10px solid transparent;
-    border-bottom-color: $bodycolor;
+    border-bottom-color: $body-color;
     @include breakpoint($small) {
       left: 25%;
     }
@@ -245,21 +232,21 @@ body {
 }
 .author-avatar {
   max-width: 110px;
-  @include rounded(150px);
+  border-radius: 50%;
 }
 .author-social {
   display: block;
   margin-bottom: 5px;
-  @include font-rem(14);
-  color: $black;
+  font-size: 14px;
+  color: #000;
   &:visited {
-    color: $black;
+    color: #000;
   }
   &:hover {
-    @include scale(1.1);
+    transform: scale(1.1);
   }
   &:active {
-    @include translate(0, 2px);
+    transform: translate(0, 2px);
   }
   .fa {
     margin-right: 5px;
@@ -286,76 +273,6 @@ body {
   p > strong > a,
   li > a {
     text-decoration: underline;
-  }
-}
-
-/* Table of contents */
-.toc {
-  font-size: 95%;
-  @include breakpoint($large) {
-    display: block;
-    @include grid(12,2);
-    @include prefix(12,0.5);
-    @include suffix(12,0.5);
-    position: absolute;
-    top: 5.5em;
-    right: 0;
-    background-color: $white;
-  }
-  header {
-    background: lighten($black, 10);
-  }
-  h3 {
-    margin: 0;
-    padding: 5px 10px;
-    color: $white;
-    @include font-rem(16);
-    text-transform: uppercase;
-    &:hover {
-      cursor: pointer;
-    }
-  }
-  ul {
-    margin: 2px 0 0;
-    padding: 0;
-    line-height: 1;
-  }
-  li {
-    display: block;
-    margin: 0 0 1px 0;
-    padding: 0;
-    font-family: $sans-serif-narrow;
-    list-style-type: none;
-    &:last-child {
-      border-bottom-width: 0;
-    }
-    a {
-      padding: 10px;
-      display: block;
-      color: $white;
-      text-decoration: none;
-      background: lighten($black, 30);
-      @include opacity(0.7);
-      @include transition(opacity 0.2s ease-in-out);
-      &:hover {
-        @include opacity(1);
-      }
-    }
-    ul {
-      margin: 1px 0 0;
-      li a {
-        padding-left: 20px;
-      }
-    }
-  }
-}
-
-/* TOC trigger for collapsing */
-#drawer {
-  max-height: 100%;
-  overflow: hidden;
-  &.js-hidden {
-    max-height: 0;
   }
 }
 
@@ -403,59 +320,9 @@ body {
 }
 
 /* Social sharing links */
-/* Social media brand buttons */
 .social-share {
-  margin-bottom: 0px + $doc-line-height;
-  margin-bottom: 0rem + ($doc-line-height / $doc-font-size);
-  ul, li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  li {
-    display: inline-block;
-  }
-  $social:
-  (facebook, $facebook-color),
-  (flickr, $flickr-color),
-  (foursquare, $foursquare-color),
-  (google-plus, $google-plus-color),
-  (instagram, $instagram-color),
-  (linkedin, $linkedin-color),
-  (pinterest, $pinterest-color),
-  (rss, $rss-color),
-  (tumblr, $tumblr-color),
-  (twitter, $twitter-color),
-  (vimeo, $vimeo-color),
-  (youtube, $youtube-color);
-  @each $socialnetwork, $color in $social {
-    .#{$socialnetwork} {
-      background: $color;
-    }
-  }
-  a {
-    display: block;
-    padding: 8px 20px;
-    text-decoration: none !important;
-    text-transform: uppercase;
-    @include font-rem(14);
-    font-family: $sans-serif-narrow;
-    font-weight: 700;
-    color: $white;
-    opacity: 0.8;
-    &:hover {
-      opacity: 1;
-    }
-  }
-  span {
-    display: none;
-    @include breakpoint($medium) {
-      display: inline;
-      padding-left: 5px;
-    }
-  }
   h4 {
-    @include font-rem(14);
+    font-size: 14px;
     margin-bottom: 10px;
     text-transform: uppercase;
   }
@@ -469,7 +336,7 @@ body {
   clear: both;
   padding-bottom: 3em;
   .copyright {
-    @include font-rem(14);
+    font-size: 14px;
   }
   footer {
     @include grid(12,10);
@@ -539,13 +406,13 @@ body {
   margin: 0 0 2em 0;
   padding: 10px;
   text-align: center;
-  color: $white;
+  color: #fff;
   a {
-    color: $white;
-    border-bottom: 1px dotted $white;
+    color: #fff;
+    border-bottom: 1px dotted #fff;
     text-decoration: none;
     &:hover {
-      border-bottom: 1px solid $white;
+      border-bottom: 1px solid #fff;
     }
   }
 }
@@ -570,13 +437,13 @@ body {
   margin-bottom: 20px;
   padding: 8px 20px;
   display: inline-block;
-  @include font-rem(14);
-  background-color: $white;
-  color: $black;
+  font-size: 14px;
+  background-color: #fff;
+  color: #000;
   border-width: 2px !important;
   border-style: solid !important;
-  border-color: lighten($black,50);
-  @include rounded(3px);
+  border-color: lighten(#000,50);
+  border-radius: $border-radius;
 }
 #goog-wm-sb {
   @extend .btn;
@@ -605,7 +472,7 @@ body {
 
 .pagination {
   padding-top: 0.5em;
-  border-top: 1px solid lighten($black,70);
+  border-top: 1px solid mix(#fff, #000, 70%);
   ul {
     margin: 0;
     padding: 0;

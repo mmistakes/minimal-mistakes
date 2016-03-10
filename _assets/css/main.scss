@@ -9,13 +9,15 @@
 
 @import "vendor/breakpoint/breakpoint"; // media query mixins
 @import "variables";
-@import "grid";
 @import "mixins";
-@import "normalize";
-@import "site";
-@import "typography";
+
+@import "reset";
+@import "base";
+@import "utilities";
+@import "buttons";
+@import "toc"; // table of contents
+
 @import "syntax";
-@import "elements";
 @import "forms";
 @import "page";
 @import "vendor/font-awesome/font-awesome";
