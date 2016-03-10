@@ -1,5 +1,5 @@
 <div class="social-share">
-  <h4>{{ site.data.ui-text.locale[site.locale].share_on }}</h4>
+  <h4>{{ site.data.ui-text[site.locale].share_on }}</h4>
   <ul>
     <li>
       <a href="https://twitter.com/intent/tweet?text={{ base_path }}{{ page.url }}" class="twitter" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>

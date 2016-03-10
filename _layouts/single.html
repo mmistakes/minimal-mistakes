@@ -27,9 +27,9 @@ layout: default
     <footer role="contentinfo">
       {% if site.share and page.share %}{% include social-share %}{% endif %}
       {% if page.modified %}
-        <p class="byline"><strong>{{ site.data.ui-text.locale[site.locale].date_label }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
+        <p class="byline"><strong>{{ site.data.ui-text[site.locale].date_label }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
       {% elsif page.date %}
-        <p class="byline"><strong>{{ site.data.ui-text.locale[site.locale].date_label }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
+        <p class="byline"><strong>{{ site.data.ui-text[site.locale].date_label }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
       {% endif %}
     </footer>
   </div><!-- /.article-wrap -->
@@ -51,7 +51,7 @@ layout: default
 {% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
 {% if page.id and page.related and site.related_posts.size > 0 %}
   <div class="related-articles">
-  <h4>{{ site.data.ui-text.locale[site.locale].related_label }}</h4>
+  <h4>{{ site.data.ui-text[site.locale].related_label }}</h4>
     <ul>
     {% for post in site.related_posts limit:3 %}
       <li><a href="{{ base_path }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
