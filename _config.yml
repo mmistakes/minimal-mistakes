@@ -15,7 +15,7 @@ url                      : "http://localhost:4000" # the base hostname & protoco
 baseurl                  : "/minimal-mistakes" # the subpath of your site, e.g. /blog
 email                    : "your-email@domain.com"
 logo                     : "site-logo.png"
-breadcrumbs              : false # true / false (default)
+breadcrumbs              : true # true / false (default)
 breadcrumb_home_label    : "Home"
 breadcrumb_separator     : "/"
 twitter:
@@ -110,13 +110,13 @@ kramdown:
 collections:
   recipes:
     output: true
-    permalink: /:collection/:categories/:path/
+    permalink: /:collection/:path/
   pets:
     output: true
-    permalink: /:collection/:categories/:path/
+    permalink: /:collection/:path/
   portfolio:
     output: true
-    permalink: /:collection/:categories/:path/
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -182,8 +182,10 @@ timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_ti
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
 #  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path
+#  Path (examples)
 #  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path/categories/my-awesome-category/index.html ~> /categories/
+#  - <base_path/my-awesome-category/index.html ~> /
 categories:
   type: liquid
   path: /categories/
@@ -199,7 +201,7 @@ tags:
 #     category: archive-taxonomy
 #     tag: archive-taxonomy
 #   permalinks:
-#     category: /categories/:name/
+#     category: /:name/
 #     tag: /tags/:name/
 
 # HTML Compression
