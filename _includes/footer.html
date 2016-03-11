@@ -16,7 +16,9 @@
 
 <div class="page__footer-follow">
   <ul>
-    <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
+    {% if site.data.ui-text[site.locale].follow_label %}
+      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
+    {% endif %}
     {% if site.twitter.username %}
       <li><a href="https://twitter.com/{{ site.twitter.username }}"><i class="fa fa-fw fa-twitter"></i> Twitter</a></li>
     {% endif %}
