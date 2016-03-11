@@ -47,7 +47,7 @@ google_ad_client         :
 google_ad_slot           :
 
 # For specifying social profiles.
-# https://developers.google.com/structured-data/customize/social-profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
@@ -170,6 +170,7 @@ gems:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  # - jekyll-archives
 
 # Outputting
 permalink: /:categories/:title/
@@ -177,12 +178,32 @@ paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-# Archive Page Filenames (example: <base_path>/archive-filename/ ~> "archive-filename")
-tags_archive_filename       : "tag-archive"
-categories_archive_filename : "category-archive"
+# Archives
+#  Type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  Path
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+categories:
+  type: liquid
+  path: /categories/
+tags:
+  type: liquid
+  path: /tags/
+# https://github.com/jekyll/jekyll-archives
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
 
 # HTML Compression
-# http://jch.penibelst.de/
+# - http://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
