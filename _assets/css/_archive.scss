@@ -24,12 +24,14 @@
 .archive__subtitle {
   margin: 0;
   padding-bottom: 0.5em;
+  font-family: $serif;
   font-size: 28px;
   border-bottom: 1px solid $border-color;
 }
 
 .archive__item-title {
   margin-bottom: 4px;
+  font-family: $sans-serif-narrow;
   font-size: 20px;
   a {
     text-decoration: none;
