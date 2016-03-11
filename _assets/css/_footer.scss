@@ -5,7 +5,7 @@
 .page__footer {
   @include container;
   @include clearfix;
-  clear: both;
+  margin-top: 3em;
   padding-bottom: 3em;
 
   a {
@@ -45,6 +45,9 @@
 
   li {
     display: inline-block;
+    font-family: $sans-serif-narrow;
+    font-size: 16px;
+    text-transform: uppercase;
   }
 
   li + li:before {

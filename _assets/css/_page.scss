@@ -13,7 +13,6 @@
   @include grid(12,10);
   @include prefix(12,1);
   @include suffix(12,1);
-  margin-bottom: 2em;
 
   @include breakpoint($small) {
     @include grid(12,8);
@@ -97,7 +96,7 @@
    ========================================================================== */
 
 .page__share {
-  margin-top: 1em;
+  margin-top: 2em;
   padding-top: 1em;
   border-top: 1px solid $border-color;
 }
@@ -143,7 +142,9 @@
   @include grid(12,10);
   @include prefix(12,1);
   @include suffix(12,1);
-  margin-bottom: 2em;
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid $border-color;
   @include breakpoint($small) {
     @include grid(12,6);
     @include prefix(12,3);
