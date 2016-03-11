@@ -14,7 +14,7 @@
 </div><!-- /.google-ads -->
 {% endif %}
 
-<div class="follow">
+<div class="page__footer-follow">
   <ul>
     <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
     {% if site.twitter.username %}
@@ -27,4 +27,4 @@
   </ul>
 </div>
 
-<div class="copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>

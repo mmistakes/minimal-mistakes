@@ -32,6 +32,7 @@ btnform {
     display: none;
   }
 }
+
 label,
 input,
 button,
@@ -40,6 +41,7 @@ textarea {
   vertical-align: baseline;
   *vertical-align: middle;
 }
+
 input,
 button,
 select,
@@ -47,6 +49,7 @@ textarea {
   font-family: $serif;
   box-sizing: border-box;
 }
+
 label {
   display: block;
   margin-bottom: 10px / 8;
@@ -59,6 +62,7 @@ label {
     display: block;
   }
 }
+
 input,
 textarea,
 select {
@@ -73,12 +77,15 @@ select {
     border-color: mix(#fff, $accent-color, 50%);
   }
 }
+
 .input-mini {
   width: 60px;
 }
+
 .input-small {
   width: 90px;
 }
+
 input[type="image"],
 input[type="checkbox"],
 input[type="radio"] {
@@ -92,6 +99,7 @@ input[type="radio"] {
   border-radius: 0;
   border: 0 \9;
 }
+
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -99,10 +107,12 @@ input[type="radio"] {
   *width: 13px;
   *height: 13px;
 }
+
 input[type="image"] {
   border: 0;
   box-shadow: none;
 }
+
 input[type="file"] {
   width: auto;
   padding: initial;
@@ -112,6 +122,7 @@ input[type="file"] {
   background-color: initial;
   box-shadow: none;
 }
+
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -120,37 +131,45 @@ input[type="submit"] {
   cursor: pointer;
   *overflow: visible;
 }
+
 select,
 input[type="file"] {
   *margin-top: 4px;
 }
+
 select {
   width: auto;
   background-color: #fff;
 }
+
 select[multiple],
 select[size] {
   height: auto;
 }
+
 textarea {
   resize: vertical;
   height: auto;
   overflow: auto;
   vertical-align: top;
 }
+
 input[type="hidden"] {
   display: none;
 }
+
 .radio,
 .checkbox {
   padding-left: 18px;
   font-weight: normal;
 }
+
 .radio input[type="radio"],
 .checkbox input[type="checkbox"] {
   float: left;
   margin-left: -18px;
 }
+
 .radio.inline,
 .checkbox.inline {
   display: inline-block;
@@ -158,10 +177,12 @@ input[type="hidden"] {
   margin-bottom: 0;
   vertical-align: middle;
 }
+
 .radio.inline + .radio.inline,
 .checkbox.inline + .checkbox.inline {
   margin-left: 10px;
 }
+
 
 /*
    Disabled state
@@ -177,6 +198,7 @@ textarea[readonly] {
   cursor: not-allowed;
 }
 
+
 /*
    Focus & active state
    ========================================================================== */
@@ -187,12 +209,14 @@ textarea:focus {
   outline: 0;
   outline: thin dotted \9;
 }
+
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus,
 select:focus {
   box-shadow: none;
 }
+
 
 /*
    Help text
@@ -202,16 +226,19 @@ select:focus {
 .help-inline {
   color: mix(#fff, #000, 50%);
 }
+
 .help-block {
   display: block;
   margin-bottom: 1em;
   line-height: 1em;
 }
+
 .help-inline {
   display: inline-block;
   vertical-align: middle;
   padding-left: 5px;
 }
+
 
 /*
    .form-inline
@@ -223,9 +250,11 @@ select:focus {
   display: inline-block;
   margin-bottom: 0;
 }
+
 .form-inline label {
   display: inline-block;
 }
+
 .form-inline .radio,
 .form-inline .checkbox,
 .form-inline .radio {
@@ -233,11 +262,13 @@ select:focus {
   margin-bottom: 0;
   vertical-align: middle;
 }
+
 .form-inline .radio input[type="radio"],
 .form-inline .checkbox input[type="checkbox"] {
   float: left;
   margin-left: 0;
   margin-right: 3px; }
+
 
 /*
    .form-search
@@ -249,15 +280,18 @@ select:focus {
   display: inline-block;
   margin-bottom: 0;
 }
+
 .form-search .search-query {
   padding-left: 14px;
   padding-right: 14px;
   margin-bottom: 0;
   border-radius: 14px;
 }
+
 .form-search label {
   display: inline-block;
 }
+
 .form-search .radio,
 .form-search .checkbox,
 .form-inline .radio {
@@ -265,9 +299,45 @@ select:focus {
   margin-bottom: 0;
   vertical-align: middle;
 }
+
 .form-search .radio input[type="radio"],
 .form-search .checkbox input[type="checkbox"] {
   float: left;
   margin-left: 0;
   margin-right: 3px;
+}
+
+
+/*
+   Google search form
+   ========================================================================== */
+
+#goog-fixurl {
+  ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    li {
+      list-style-type: none;
+    }
+  }
+}
+
+#goog-wm-qt {
+  width: auto;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  padding: 8px 20px;
+  display: inline-block;
+  font-size: 14px;
+  background-color: #fff;
+  color: #000;
+  border-width: 2px !important;
+  border-style: solid !important;
+  border-color: lighten(#000,50);
+  border-radius: $border-radius;
+}
+
+#goog-wm-sb {
+  @extend .btn;
 }

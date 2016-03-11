@@ -31,16 +31,11 @@
 }
 
 .page__title {
+  margin-top: 0;
   font-family: $serif;
 }
 
-.page__content {
-  ul, ol {
-    li + li {
-      margin-top: 0.5em;
-    }
-  }
-}
+.page__content {}
 
 .page__hero {
   position: relative;
@@ -129,55 +124,22 @@
     }
   }
   p {
-    margin-bottom: 10px;
+    margin-bottom: 0;
   }
 }
 
-
-/* Footer wrapper */
-.footer-wrap {
-  @include container;
-  @include clearfix;
-  clear: both;
-  padding-bottom: 3em;
-  .copyright {
-    font-size: 14px;
-  }
-  footer {
-    @include grid(12,10);
-    @include prefix(12,1);
-    @include suffix(12,1);
-    @include breakpoint($small) {
-      @include grid(12,6);
-      @include prefix(12,3);
-      @include suffix(12,3);
-    }
-    @include breakpoint($x-large) {
-      @include grid(12,4.5);
-      @include prefix(12,4);
-      @include suffix(12,3.5);
-    }
-  }
+.page__meta-title {
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
-/* Follow links */
-.follow {
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-  li {
-    display: inline-block;
-  }
-  li + li:before {
-    content: "";
-    padding-right: 5px;
-  }
-}
 
-/* Related articles list */
-.related-articles {
+/*
+   Related
+   ========================================================================== */
+
+.page__related {
   @include grid(12,10);
   @include prefix(12,1);
   @include suffix(12,1);
@@ -192,64 +154,19 @@
     @include prefix(12,4);
     @include suffix(12,3.5);
   }
-  h4 {
-    text-transform: uppercase;
-    margin-bottom: 0;
-  }
   li {
     margin-bottom: 0;
   }
-}
-
-/*
-   Browser upgrade alert
-   ========================================================================== */
-
-.browser-upgrade {
-  background: #000;
-  text-align: center;
-  margin: 0 0 2em 0;
-  padding: 10px;
-  text-align: center;
-  color: #fff;
   a {
-    color: #fff;
-    border-bottom: 1px dotted #fff;
     text-decoration: none;
     &:hover {
-      border-bottom: 1px solid #fff;
+      text-decoration: underline;
     }
   }
 }
 
-/*
-   Google search form
-   ========================================================================== */
-
-#goog-fixurl {
-  ul {
-    list-style: none;
-    margin-left: 0;
-    padding-left: 0;
-    li {
-      list-style-type: none;
-    }
-  }
-}
-#goog-wm-qt {
-  width: auto;
-  margin-right: 10px;
-  margin-bottom: 20px;
-  padding: 8px 20px;
-  display: inline-block;
+.page__related-title {
   font-size: 14px;
-  background-color: #fff;
-  color: #000;
-  border-width: 2px !important;
-  border-style: solid !important;
-  border-color: lighten(#000,50);
-  border-radius: $border-radius;
-}
-#goog-wm-sb {
-  @extend .btn;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }

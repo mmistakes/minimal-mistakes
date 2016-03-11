@@ -1,0 +1,54 @@
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+.page__footer {
+  @include container;
+  @include clearfix;
+  clear: both;
+  padding-bottom: 3em;
+
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  footer {
+    @include grid(12,10);
+    @include prefix(12,1);
+    @include suffix(12,1);
+    @include breakpoint($small) {
+      @include grid(12,6);
+      @include prefix(12,3);
+      @include suffix(12,3);
+    }
+    @include breakpoint($x-large) {
+      @include grid(12,4.5);
+      @include prefix(12,4);
+      @include suffix(12,3.5);
+    }
+  }
+}
+
+.page__footer-copyright {
+  font-size: 14px;
+}
+
+.page__footer-follow {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  li + li:before {
+    content: "";
+    padding-right: 5px;
+  }
+}

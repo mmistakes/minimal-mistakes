@@ -27,7 +27,7 @@ layout: compress
       {% if page.header.caption %}
         <span class="page__hero-caption">{{ page.header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
       {% endif %}
-    </div><!-- /.image-wrap -->
+    </div>
   {% endif %}
 
   {% if site.breadcrumbs %}
@@ -55,13 +55,13 @@ layout: compress
       {% unless page.author_profile or page.sidebar %}&nbsp;{% endunless %}
     </div>
     {{ content }}
-  </div><!-- /#main -->
+  </div>
 
-  <div class="footer-wrap">
+  <div class="page__footer">
     <footer>
       {% include footer.html %}
     </footer>
-  </div><!-- /.footer-wrap -->
+  </div>
 
   {% include scripts.html %}
 
