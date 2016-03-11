@@ -34,7 +34,11 @@
   font-family: $serif;
 }
 
-.page__content {}
+.page__content {
+  p, li {
+    font-size: 16px;
+  }
+}
 
 .page__hero {
   position: relative;
