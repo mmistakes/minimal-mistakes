@@ -177,6 +177,10 @@ paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
+# Archive Page Filenames (example: <base_path>/archive-filename/ ~> "archive-filename")
+tags_archive_filename       : "tag-archive"
+categories_archive_filename : "category-archive"
+
 # HTML Compression
 # http://jch.penibelst.de/
 compress_html:

@@ -19,12 +19,14 @@ layout: default
       {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label }}</a></div>{% endif %}
     </section>
 
-    <footer>
-      {% if site.share and page.share %}{% include social-share.html %}{% endif %}
+    {% if site.share and page.share %}{% include social-share.html %}{% endif %}
+
+    <footer class="page__meta">
+      {% include page__taxonomy.html %}
       {% if page.modified %}
-        <p class="byline"><strong>{{ site.data.ui-text[site.locale].date_label }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
+        <p class="page__date"><strong>{{ site.data.ui-text[site.locale].date_label }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
       {% elsif page.date %}
-        <p class="byline"><strong>{{ site.data.ui-text[site.locale].date_label }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
+        <p class="page__date"><strong>{{ site.data.ui-text[site.locale].date_label }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
       {% endif %}
     </footer>
   </div><!-- /.article-wrap -->
