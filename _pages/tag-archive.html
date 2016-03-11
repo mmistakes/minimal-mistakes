@@ -12,6 +12,6 @@ author_profile: false
   {% assign posts = group_items[forloop.index0] %}
   <h2 class="archive__subtitle">{{ tag }}</h2>
   {% for post in posts %}
-    {% include archive-list-single %}
+    {% include archive-list-single.html %}
   {% endfor %}
 {% endfor %}

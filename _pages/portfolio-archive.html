@@ -11,6 +11,6 @@ permalink: /portfolio/
   {% assign posts = group_items[forloop.index0] %}
   <h2 class="archive__subtitle">{{ category }}</h2>
   {% for post in posts %}
-    {% include archive-list-single %}
+    {% include archive-list-single.html %}
   {% endfor %}
 {% endfor %}
