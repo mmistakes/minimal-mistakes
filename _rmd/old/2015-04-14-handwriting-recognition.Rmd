@@ -1,0 +1,409 @@
+---
+title: "Handwriting recognition with logistic regression"
+date: 2015-04-14
+modified: `r format(Sys.time(), '%Y-%m-%d')`
+excerpt: "Simple multiclass classification"
+layout: post
+published: no
+status: processed
+comments: true
+tags: [machine learning, logistic regression, fminunc]
+categories: [Rstats]
+---
+
+In my previous [post](http://ivyleavedtoadflax.github.io//regularised-logistic-regression/) I completed an exercise using logistic regression to generate complicated non-linear decision boundaries. In this exercise I'm going to use much of the same code for handwriting recognition. These exercises are all part of Andrew Ng's Machine Learning course on [coursera](http://www.coursera.org). All the exercises are done in Matlab/Octave, but I've been stubborn and have worked solutions in R instead.
+
+### The Data
+
+For this exercise the dataset comprises 5000 training examples where each examples is a $20 \times 20$ pixel grayscale image of a digit between 0-9. The pixel values (which are floating point numbers) have been unrolled into a 400 dimensional vector giving a $5000 \times 400$ matrix $X$, where each row is a training example.
+
+To visualise a subset of the data, I have been using the `raster` package in R
+
+# 1.2 Visualising the data
+
+In the Machine learning course by Andrew Ng the raster drawing function is already written. I'm going to try to produce an R equivalent using the raster package.
+
+```{r,include=FALSE,message=FALSE,warning=FALSE}
+
+knitr::opts_chunk$set(message=FALSE,warning=FALSE)
+
+library(dplyr)
+library(magrittr)
+library(raster)
+library(grid)
+library(ucminf)
+
+
+
+```
+
+I'll start by loading the data and randomly selecting a 100 row subset of the data.
+
+```{r}
+
+library(dplyr)
+library(magrittr)
+library(raster)
+library(grid)
+library(ucminf)
+
+# Vector listing the correct numbers for each trainign example
+
+y <- "y.csv" %>%
+  read.csv(
+    header = FALSE
+    )
+
+# Here I bind the y and X matrices together so that I can generate the same
+# random dataset
+
+X <- "matrix.csv" %>%
+  read.csv(
+    header = FALSE
+    ) %>% 
+  cbind(y) %>%
+  sample_n(
+    100
+    ) %>%
+  as.matrix
+
+# Designate the training X and y set
+
+train_y <- X[,401]
+train <- X[,-401]
+
+```
+
+One of the things about the raster package is that for a grayscale image it expects the values to be between 0 and 1, and this is not the case in the training data. The values are also unrolled, so to create a bitmap, they need to be rolled back up.
+
+
+```{r}
+
+# Create a value between 0 and 1 by normalising the data
+
+normalise <- function(x) {
+  
+  (x - min(x))/(max(x)-min(x))
+  
+  }
+
+# Unroll the 20 x 20 pixel images into a 400 dimensional vector
+
+roll <- function(x) {
+  
+  x <- normalise(x)
+  x <- matrix(1-x,nrow=20,ncol=20)
+  
+  return(x)
+  }
+
+```
+
+Now we can plot a single digit using:
+
+```{r,2015-04-14-single-digit}
+
+grid.raster(
+  roll(train[1,]), 
+  interpolate = FALSE
+  )
+
+```
+
+So that's great for a single row, or a single training example. But it would be nice to plot the entire 100 row dataset that we are working from as a matrix. The following code loops through each row, and parks the $20 \times 20$ pixel grid into a matrix of $100$ bitmaps.
+
+```{r}
+
+hw_row <- function(X,ind) {
+  
+  out_mat <- roll(X[ind[1],])
+  
+  for (i in ind[2]:ind[10]) {
+    
+    out_mat %<>% cbind(roll(X[i,]))
+    
+    }
+  
+  return(out_mat)
+  
+  }
+
+hw_mat <- function(X) {
+
+for (j in seq(1,91,10)) {
+  
+  if (j == 1) hw_1 <- hw_row(X,1:10) else
+    
+    hw_1 %<>% rbind(hw_row(X,j:(j+9)))
+  
+  }
+
+return(hw_1)
+}
+
+```
+
+Which gives us...
+
+```{r,2015-04-14-digit-matrix}
+grid.raster(
+  hw_mat(train), 
+  interpolate = FALSE
+  )
+```
+
+So great, this is what we are trying to classify. 
+ 
+### Multiclass classification
+
+In this exercise I'm going to use the code I wrote in the previous [post](http://ivyleavedtoadflax.github.io//regularised-logistic-regression/), which should be ready to go out of the box.
+
+```{r,include=FALSE}
+
+g <- function(z) {
+  
+  1 / (1 + exp(-z))
+  
+  }
+
+
+h <- function(theta,X) {
+  
+  g(X %*% theta)
+  
+  }
+
+
+Jv_reg <- function(X, y, theta, lambda) {
+  
+  m <- length(y)
+  
+  # Remove first value i.e. theta_0
+  
+  theta1 <- theta
+  theta1[1] <- 0
+  
+  # Crossproduct is equivaelnt to theta[-1]^2
+  
+  reg <- (lambda/(2*m)) * crossprod(theta1,theta1)
+  
+  # Create regularisation term
+  
+  -(1/m) * crossprod(
+    c(y, 1 - y), 
+    c(log(h(theta,X)), log(1 - h(theta,X)))
+    ) + reg
+  }
+
+gRv_reg <- function(X,y,theta,lambda) {
+  
+  m <- length(y)
+  
+  reg <- (lambda/m) * theta
+  error <- h(theta,X) - y
+  delta <- crossprod(X,error) / m
+  return(delta + reg)
+  
+  }
+
+
+reg_lr <- function(X,y,theta,lambda) {
+  
+  ucminf_out <- ucminf(
+    par = theta,
+    fn = function(t) Jv_reg(X, y, t, lambda),
+    gr = function(t) gRv_reg(X, y, t, lambda)
+    )
+  
+  return(ucminf_out$par)
+  
+  }
+
+
+```
+
+For multiclass classification with logistic regression we simply run a mdoel for each possible class, then combine this ensemble of mdoels, and pick the value that has the highest likelihood based on the several models.
+
+Now because the code is well vectorised running ten models together is an absolute breeze. First we define the parameter matrix $\theta$.
+
+```{r}
+
+Theta <- matrix(
+  0,
+  ncol = 10, 
+  nrow = 400
+  )
+
+```
+
+Then use a for loop to generate parameters for each of our ten models
+
+```{r}
+
+for (i in 1:10) {
+  
+  Theta[,i] <- reg_lr(
+    X = train,
+    y = (train_y == i) * 1,
+    theta = Theta[,i],
+    lambda = 0
+    )
+  
+  }
+
+```
+
+Now we run a logistic regression model using these parameters, which is simply $h_\theta=g(\theta^TX)$ where $g$ is the sigmoid function $g(z)=\frac{1}{1 + e^{-z}}$.
+
+```{r}
+
+out <- h(Theta,train)
+
+# call the matrixStats package for the rowMaxs function
+
+library(matrixStats)
+
+out_class <- (rowMaxs(out) == out) %>% 
+  multiply_by(1) %>%
+  multiply_by(
+    rep(1:10) %>% 
+      replicate(n = nrow(out)) %>%
+      t
+    ) %>%
+  rowMaxs
+```
+
+### The result
+
+That was pretty straightforward. Let's check the first few predictions against the bitmap plotted earlier:
+
+```{r}
+out_class[1:10]
+```
+
+So far so good. Note that zeros are classified as tens to avoid confusion. So how well does the model work on the training data overall?
+
+```{r}
+
+sum(out_class == train_y)/100
+
+```
+
+So currently the model achieved 100% accuracy with $\lambda = 0$ (the regularisation parameter), i.e. no regularisation at all.
+
+### What about a test set?
+
+I'll wrap this all in a function, then try it on a different subset of the $X$ matrix.
+
+```{r}
+
+hw_rec <- function(train,test,train_y,test_y,lambda,classes) {
+  
+  Theta <- matrix(
+    0,
+    ncol = classes, # number of classes 
+    nrow = ncol(train)
+    )
+  
+  for (i in 1:classes) {
+    
+    Theta[,i] <- reg_lr(
+      X = train,
+      y = (train_y == i) * 1,
+      theta = Theta[,i],
+      lambda = lambda
+      )
+    
+    }
+  
+  out <- h(Theta,test)
+  
+  out_class <- (rowMaxs(out) == out) %>% 
+    multiply_by(1) %>%
+    multiply_by(
+      rep(1:10) %>% 
+        replicate(n = nrow(out)) %>%
+        t
+      ) %>%
+    rowMaxs
+  
+  acc <- sum(out_class == test_y)/100
+  
+  # Gives output of the predicted classes, the parameters (theta), and the
+  # percentage accuracy
+  
+  return(
+    list(
+      class = out_class,
+      theta = Theta,
+      acc = acc
+      )
+    )
+  
+  }
+
+```
+
+
+```{r,include=FALSE,eval=FALSE}
+
+
+for (i in c(0.001,0.01,0.1,0.5,1,10)) {
+  print(
+    hw_rec(train,train,train_y,train_y,0,10)$acc
+    )
+  }
+
+
+```
+
+So repeating the earlier code, I select a different random subset of 100 rows from the $X$ matrix.
+
+```{r}
+
+y <- "y.csv" %>%
+  read.csv(
+    header = FALSE
+    )
+
+test <- "matrix.csv" %>%
+  read.csv(
+    header = FALSE
+    ) %>% 
+  cbind(y) %>%
+  sample_n(
+    100
+    ) %>%
+  as.matrix
+
+test_y <- test[,401]
+test <- test[,-401]
+
+```
+
+And looping through a range of $\lambda$, how accurately is the model predicting the digits?
+
+
+```{r}
+
+lambdas <- c(0.001,0.01,0.1,0.5,1,10)
+
+test_lambda_y <- sapply(
+  lambdas,
+  function(x) {
+      hw_rec(train,test,train_y,test_y,x,10)$acc
+    }
+  )
+
+test_lambda_y
+
+```
+
+So not bad considering the model was trained on a dataset the same size as the test set. With varying levels of regularisation ($\lambda$) the model has between `r min(test_lambda_y)*100`% and `r max(test_lambda_y)*100`% accuracy.
+
+Next time I'll define training, test, and cross validation sets with a 60:20:20 split, to improve classification, and better inform my choice of $\lambda$.
+
+```{r}
+sessionInfo()
+```
+

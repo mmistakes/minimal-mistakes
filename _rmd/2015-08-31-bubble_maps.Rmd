@@ -1,0 +1,234 @@
+---
+title: 'Visualising FAO data'
+date: '2015-08-30'
+#modified: `r format(Sys.time(), '%Y-%m-%d')`
+excerpt: 'Making bubble maps in R'
+layout: post
+published: no
+status: processed
+comments: true
+categories: [Rstats]
+tags: [R, GIS]
+---
+
+```{r,load packages,echo=FALSE,message=FALSE,warning=FALSE}
+
+knitr::opts_chunk$set(
+  message = FALSE, 
+  warning = FALSE, 
+  echo = TRUE
+  )
+
+#checkpoint::checkpoint("2015-08-01")
+checkpoint::checkpoint("2015-08-01", use.knitr = TRUE)
+
+library(dplyr)
+library(testthat)
+library(magrittr)
+library(readr)
+library(rworldmap)
+library(ggmap)
+
+#setwd("~/Dropbox/ivyleavedtoadflax.github.io/_rmd/")
+
+```
+
+I've been working on a chapter of a book looking at weather and production data for a major crop across the globe. One of the things I need to produce is a bubble map showing the relative production for each producing country worldwide, and region specific maps for each of the major production growing region.
+
+There is a great package for doing this called [`rworldmap`](http://andysouth.co.uk/softwarerworldmap/). In this little post I present the code I used to produce figures for the book using `rworldmap`.
+
+## Getting the data
+
+First thing first, I need some data. The UN FAO very helpfully make these data [available online](http://faostat3.fao.org), but it also turns out that there is an API and an R package to access that API called [FAOSTAT](https://cran.r-project.org/web/packages/FAOSTAT/).
+
+### The FAOSTAT package
+
+The FAOSTAT package has a really simple interface that allows you to navigate through the available statistics, and download what you want. For example, I'm interested in the production and yield statistics for apple production within every apple producing region in the world
+
+```{r,include=FALSE}
+
+library(FAOSTAT)
+
+#saveRDS(.LastSearch,"data/bubble_maps/apple_faostat_search.Rds")
+.LastSearch <- readRDS("data/bubble_maps/apple_faostat_search.Rds")
+
+# Don't need to run this command as I have already cached the data in
+# apple_df_lst.Rds
+
+#apple_data <- getFAOtoSYB(query = .LastSearch)
+
+```
+
+
+```{r,eval=FALSE}
+
+install.packages("FAOSTAT")
+library(FAOSTAT)
+
+# Create an object named '.LastSearch' using the FAOSearch function, which can then be called as an argument to the getFAO() or getFAOtoSYB() function.
+
+FAOsearch() 
+
+# Now get the data
+
+apple_data <- getFAOtoSYB(query = .LastSearch)
+
+```
+
+A slightly easier way of dealing with the information that comes back from the query is as follows:
+
+```{r,eval=FALSE}
+
+apple_df <- data.frame(
+  varName = c("areaHarvested", "yield", "extractionRate","production","seed"),
+  domainCode = "QC",
+  itemCode = 515,
+  elementCode = c(5312,5419,5423,5510,5525),
+  stringsAsFactors = FALSE
+)
+
+apple_df_lst <- with(
+  apple_df,
+  getFAOtoSYB(
+    name = varName,
+    domainCode = domainCode,
+    itemCode = itemCode,
+    elementCode = elementCode,
+    useCHMT = TRUE,
+    outputFormat = "long"
+  )
+)
+
+```
+
+```{r,include=FALSE}
+
+# Load cached data to prevent repetitive calls to the API
+#saveRDS(apple_df,"data/bubble_maps/apple_df.Rds")
+#saveRDS(apple_df_lst,"data/bubble_maps/apple_df_lst.Rds")
+apple_df <- readRDS("data/bubble_maps/apple_df.Rds")  
+apple_df_lst <- readRDS("data/bubble_maps/apple_df_lst.Rds")  
+
+```
+
+Note that the `useCHMT` option will clean up the data somewhat, as FAO data can double count territories like China, because of Taiwan, and Hong Kong. This check can also be conducted manually outside of the `getFAO` function.
+
+The `FAOSTAT` package includes a function `translateCountryCode()` which allows the UN numeric country code to be translated to an ISO2 or ISO3 letter code. In the current instance this is not a problem, because `rworldwap` will take numeric UN codes.
+
+### The rworldmap package
+
+Next step is to tidy up the FAOSTAT data before it can joined to a country map in `rworldmap`. Initially, I am only interested in the most up-to-date production, so I'll filter these out.
+
+```{r}
+
+# Data from FAOSTAT 2013 apple yields
+
+apple2013 <- apple_df_lst$entity %>%
+  dplyr::filter(
+    name == "production",
+    Year == 2013
+  ) 
+
+```
+
+Now try to join this data to a map.
+
+```{r}
+
+library(rworldmap)
+
+sPDF <- joinCountryData2Map(
+  apple2013,
+  joinCode = "UN", 
+  nameJoinColumn = "FAOST_CODE"
+)
+
+```
+
+So there is a problem here; 68 of the codes in the `apple2013` data failed to match up with data on the map. I'll try to plot it anyway, and see what happens.
+
+```{r,2015-08-31-world-map-chloropeth,fig.width=9}
+
+par(
+  mai = c(0,0,0.2,0), 
+  xaxs = "i", 
+  yaxs = "i"
+)
+
+mapCountryData(
+  sPDF, 
+  nameColumnToPlot="Value" 
+)
+
+```
+
+There's definitely something funny going on here, because Antarctica is not known for its apple growing regions. Evidently there is more of a problem than was suggested in the mis-match warning.
+
+I'll try to solve this by converting the UN codes to ISO3 codes, although as noted in the [FAOSTAT vignette](https://cran.r-project.org/web/packages/FAOSTAT/vignettes/FAOSTAT.pdf) there are some problems which are not addressed by the ISO coding system, for instance the change of names or lack of recognition (at the UN) of certain countries.
+
+```{r}
+apple2013 <- translateCountryCode(
+  data = apple2013, 
+  from = "FAOST_CODE",
+  to = "ISO3_CODE"
+)
+
+```
+
+```{r}
+
+sPDF <- joinCountryData2Map(
+  apple2013,
+  joinCode = "ISO3", 
+  nameJoinColumn = "ISO3_CODE",
+  verbose = TRUE
+)
+
+```
+
+Better, but REU - Reunion island has not been matched probably because it has an accent over the e. It's not critical for this demonstration, so I will leave it unmatched
+
+## Bubble maps
+
+Adjusting the previous code to produce a bubble map is pretty simple. However producing legends in `rworldmap` does not yet allow much customisation. I found a hacky solution to get the look I wanted.
+
+Firstly, I didn't want the numbers in the legend to appear as exponents, so I set `options("scipen" = 10)` to allow these numbers to be displayed in full.
+
+The next problem I ran into was that in the current version of `rworldmap` (1.3-1) I couldn't find a way to synchronise the colour of the map bubbles with the legend bubbles, nor could I seem to get the legend bubbles to be filled. To get round this, I cheated a bit here, and downloaded, edited the  file containing the mapBubbles function (`mapBubbles.r`), and hardcoded the legend symbols to be `"red"` and `pch = 19`, to match the map itself. I also added an option to the `legend` call in `mapBubbles()` so that by default the colour of the border matches the border background. At present these changes are hardcoded as I need a quick fix, but if I get a chance I will make better implementations and submit them as pull requests to the [github repo](https://github.com/AndySouth/rworldmap). For now, I unzipped the package to a folder, made my changes then called `devtools::load_all()` to load the altered package (I would have re-packaged it, but ran int some errors which I did not have the patience to fix).
+
+```{r,include=FALSE}
+devtools::load_all("~/Dropbox/ivyleavedtoadflax.github.io/rworldmap-R-3.0.3/")
+```
+
+```{r,2015-08-31-world-map,fig.width=9}
+
+options("scipen" = 10)
+
+par(
+  mai = c(0, 0, 0.2, 0), 
+  xaxs = "i", 
+  yaxs = "i" 
+)
+
+mapBubbles(
+  dF = sPDF,
+  nameZSize="Value",
+  #nameZColour="Value",
+  oceanCol = "white",
+  landCol = "gray90",
+  borderCol = "black",
+  addLegend = TRUE,
+  legendVals = c(10000,100000,1000000,25000000),
+  legendTitle = expression(Tonnes~yr^-1),
+  legendBg = "white",
+  legendPos = "left",
+  addColourLegend = TRUE
+)
+
+```
+
+So after all that, this is what I get. A bit more complicated than using a point and click GIS for pretty similar results, and a bit of a quick fix. If I need to make more of these kinds of visualisation, there are some really beautiful ways of doing this with D3.js; [this](http://datamaps.github.io/) (or [this](http://leafletjs.com/examples/choropleth.html)) is probably how I would do it next time.
+
+```{r}
+sessionInfo()
+```

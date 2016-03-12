@@ -1,0 +1,481 @@
+---
+title: "Sensing temperature with a Raspberry Pi"
+comments: yes
+date: '2016-01-15'
+modified: `r format(Sys.time(), '%Y-%m-%d')`
+layout: post
+excerpt: "A year of measurements"
+published: no
+status: processed
+tags:
+- R
+- Raspberry Pi
+- temperature sensor
+- DS18B20
+- DHT22
+- monitoring
+- electricity
+- infographic
+- python
+categories: Rstats
+---
+
+```{r,include = FALSE}
+
+library(checkpoint)
+checkpoint("2016-01-15")
+
+library(dplyr)
+library(lubridate)
+library(magrittr)
+library(knitr)
+library(ggplot2)
+library(readr)
+library(broom)
+
+knitr::opts_chunk$set(
+  warning = FALSE, 
+  message = FALSE,
+  echo = FALSE,
+  #include = FALSE,
+  cache = FALSE,
+  fig.width = 10,
+  fig.height = 10
+  )
+
+
+#setwd("~/Dropbox/ivyleavedtoadflax.github.io/_drafts/")
+
+```
+
+```{r}
+
+sensor_cleaned <- "data/2015-12-24-sensorpi_join.Rds" %>%
+  readRDS %>%
+  mutate(
+    key = factor(
+      key, 
+      levels = c("elec","int_humidity","int_light","int_temp","ext_temp1")
+    ),
+    type = ifelse(grepl("temp",key),"temp", as.character(key)),
+    type = plyr::mapvalues(
+      type,
+      from = c("int_humidity", "int_light", "elec", "temp"),
+      to = c(
+        "Internal~humidity~( `%`)",
+        "Light~(relative~values)",
+        "Electricity~consumption~(kWh~min^-1)",
+        "Temperature~(~degree~C)"
+      )
+    )
+  )
+
+temp_delta <- sensor_cleaned %>%
+  tidyr::spread(
+    key, value 
+  ) %>%
+  select(
+    timestamp,
+    contains("temp")
+  ) %>%
+  mutate(
+    delta = int_temp - ext_temp1,
+    month = month(timestamp, label = TRUE)
+  )
+
+
+```
+
+In my [last post](../infographic1/) I started to delve into a year of sensor data that I have been collecting with my Raspberry Pi sensors. I made some general observations about the data, and went through the process of cleaning it.
+
+In this post I'll taking a deeper look at the temperature data. I currently have three temperatrue sensors: two internal (one a DS18B20, and a second within an DHT22 combined temperature and humidity sensor) and one external (another DS18B20).
+
+Three questions I am interested in answering in this post:
+
+* How do daily temperature patterns change over the year?
+* How much of a difference do I maintain between internal and external temperatures?  
+* How does the external temperature match local weather station data?  
+
+
+```{r,include=FALSE}
+
+min_timestamp <- sensor_cleaned %$% timestamp %>% min %>% format("%Y-%m-%d")
+max_timestamp <- sensor_cleaned %$% timestamp %>% max %>% format("%Y-%m-%d")
+
+```
+
+
+### Some basics
+
+To recap from my [previous post](../infographic1/), the The data run from `r min_timestamp` to `r max_timestamp`, and the cleaned data (with internal sensor data combined) runs to between 100,000-130,000 readings, taken at 180 second intervals.
+
+```{r}
+temp_long <- sensor_cleaned %>% 
+  filter(grepl("temp", key)) %>%
+  mutate(
+    key = plyr::mapvalues(
+      key, 
+      from = c("ext_temp1","int_humidity", "int_temp"),
+      to = c("External temperature","Internal humidity", "Internal temperature")
+    )
+  )
+
+temp_long %>% 
+  dplyr::filter(
+    grepl("temp", key)
+    ) %>%
+  group_by(key) %>%
+  tally %>%
+  set_colnames(c("Variable","n")) %>%
+  kable(
+    format.args = list(big.mark = ",")
+      )
+    
+```
+
+### Daily temperature patterns
+
+So first I'd like to see how the daily patterns have varied across the year.
+In the plot below I have plotted the $q_{0.25}$ and $q_{0.75}$ as the darker band in the centre of each ribbon, and the $q_{0.1}$ and $q_{0.9}$ as the more transparent ribbon outside of this.
+The trend line is a locally weight regression (`loess`).
+
+```{r 2016-01-15-daily-ribbon-plot}
+
+temp_smooth <- temp_long %>%
+  dplyr::mutate(
+    time = strftime(timestamp, format="%H:%M:%S"),
+    month = month(timestamp, abbr = TRUE, label = TRUE),
+    hour = hour(timestamp)
+  ) 
+  
+temp_ribbon <- temp_smooth %>%
+  group_by(
+    month, hour, key
+  ) %>%
+  summarise_each(
+    funs = funs(
+      q25 = quantile(., .25, na.rm = TRUE),
+      q75 = quantile(.,.75, na.rm = TRUE),
+      q10 = quantile(.,.1, na.rm = TRUE),
+      q90 = quantile(.,.9, na.rm = TRUE),
+      value = median(.,na.rm = TRUE)
+    ),
+    value
+  )
+
+temp_ribbon %>%
+  ggplot +
+  geom_ribbon(
+    aes(
+      x = hour,
+      ymin = q10,
+      ymax = q90,
+      fill = key
+    ),
+
+  geom_ribbon(
+    aes(
+      x = hour,
+      ymin = q25,
+      ymax = q75,
+      fill = key
+    ),
+    alpha = 0.6
+  ) + 
+  facet_wrap(
+    ~month
+  ) +
+ geom_smooth(
+   data = temp_smooth,
+   aes(
+      x = hour,
+      y = value,
+      group = key
+    ),
+   size = 0.75,
+   col = "black"
+  ) +
+  theme(
+    legend.position = "bottom"
+  ) +
+  scale_fill_discrete(name = "") +
+  ylab(expression(Temperature~(degree~C)))
+
+```
+
+So this plot doesn't hold too many surprises. internal temperature is generally pretty stable around 20 degrees, whilst external temperature rises with the sun and drops in the evening.
+
+The internal temperature is much more variable in January to March. In the case of January, this is because I spent about two weeks away, and the house cooled down a lot.
+From the trend lines, you can work out my heating timer settings: a short burst in the morning from around six, and on for a more sustained period in the evening.
+You can just about see this pattern in May too, but by June through to September, it looks like the timer was off, and possibly back on in October.
+
+Most of the time in June it was marginally warmer outside than inside through the daylight hours.
+The pronounced peak in the $q_{0.1}$ - $q_{0.9}$ band in the summer months, particularly June and July suggests that sunlight is affecting external sensor readings.
+The orientation of the house is such that the front wall (where the external sensor is located) gets heated with the rising sun.
+
+### Internal vs. external temperature
+
+In the previous plot we saw the trend in internal and external temperatures, and from this we can see that in the winter months, a greater than ten degree difference between internal and external temperatures is maintained.
+
+In summer the situation reverses, as you might expect, and it ends up being warmer outside than inside.
+This plot is aggregated by the hour however, and it would be good to see this in a little more granularity.
+
+The plot below shows the monthly distribution of the difference between the internal and the external temperature ($\delta$) for every measurement - which for this sensor is every three minutes.
+
+```{r 2016-01-15-delta-distribution-plot}
+
+temp_delta %>%
+  ggplot +
+  aes(
+    x = delta,
+    fill = factor(month),
+    group = month
+  ) +
+  geom_vline(
+    aes(xintercept = median(temp_delta$delta,na.rm=TRUE)),
+    lty = 2
+    ) +
+  geom_vline(
+    aes(xintercept = 0)) +
+  geom_density(aes(y=..count..),alpha = 0.8) +
+  facet_wrap(~month) +
+  theme(
+    legend.position = "none"
+  ) +
+  xlab(expression(Temperature~difference~(degree~C))) +
+  ylab("Number of observations")
+
+ref1 <- temp_delta  %$% delta %>% median(na.rm=TRUE) %>% round(1)
+
+```
+
+This gives us a much clearer indication of the sort of temperature differential I have been maintaining, and how this varies throughout the year (note that the dashed line shows the grand median of $\delta$: `r ref1` Celsius).
+
+You'll note that in January to March, $\delta$ is entirely positive, meaning that during these months the house was always warmer than it was outside.
+This situation begins to change from April onwards, and at times the house is more than ten degrees colder than the outside sensor reading in June, July, and August.
+
+This seems a little hard to believe, but looking at the first plot we see that there is a spike in temperatures between 05:00 and 06:00 between April and August (and even rarely in February).
+This suggests that it is sunlight falling on the front of the house (not the sensor itself which remains in shadow) that causes values of $\delta<0$.
+
+It's interesting to see also that in some plots, notably June and July, the distributions are bimodal.
+This also comes out from the first plot, and seems to coincide with warming at around 15:00 in the summer months.
+Winter months tend to be more normal, which is not surprising, as sun's movements have less impact on daily temperatures.
+
+### How does external temperature match local weather station data
+
+So how do my external temperature readings match up to a real weather station?
+
+For this part of the analysis I am using data [Global Summary of the Day](https://data.noaa.gov/dataset/global-surface-summary-of-the-day-gsod) data from the World Meteorological Organisation, downloaded through the US National Oceanic and Atmopsheric Administration website.
+
+There are a number of R packages available for downloading this data (e.g. [GSODTools](https://github.com/environmentalinformatics-marburg/GSODTools)), but I've not yet found one I like, so I tend to just download the flat files from [here](http://www7.ncdc.noaa.gov/CDO/cdoselect.cmd?datasetabbv=GSOD&countryabbv=&georegionabbv=).
+
+I've worked with GSOD data in my academic work, and whilst it is a great resource, coverage can be a bit patchy.
+There are also some debates about how accurate this data is (google it), but for my purposes, it should do fine.
+I've downloaded data from the Bedford station, which is the nearest station to me, and has a good record from the 1970s to the preset day.
+
+```{r}
+
+celsius <- function(x) {
+  ((x - 32) * 5)/9
+}
+
+## List colnames (there are some blanks in the csv which cause problems)
+
+GSOD_col_names <- c(
+  "STN","WBAN","YEARMODA","TEMP","TEMP_COUNT","DEWP","DEWP_COUNT","SLP",
+  "SLP_COUNT","STP","STP_COUNT","VISIB","VISIB_COUNT","WDSP","WDSP_COUNT",
+  "MXSPD","GUST","MAX","MIN","PRCP","SNDP","FRSHTT"
+  )
+  
+weather_data <- "data/2016-01-15_bedford_GSOD.csv" %>%
+  read_csv %>%
+  set_colnames(
+    GSOD_col_names
+  ) %>%
+  dplyr::mutate(
+    STN = factor(STN),
+    YEARMODA = ymd(YEARMODA),
+    TEMP = ifelse((TEMP == 9999.9), NA, celsius(TEMP)),
+    WDSP = ifelse((WDSP == 999.9), NA, WDSP * 1.85200),
+    MXSPD =ifelse((MXSPD == 999.9), NA, MXSPD * 1.85200),
+    GUST = ifelse((GUST == 999.9), NA, GUST),
+    ## It may be inportant to record later which values had asterisks
+    MAX_star = ifelse(grepl("*", MAX), T, F),
+    MAX = as.numeric(sub("\\*", "", celsius(MAX))),
+    MIN_star = ifelse(grepl("*", MIN), T, F),
+    MIN = as.numeric(sub("\\*", "", celsius(MIN))),
+    ## And also the letters with each PRCP entry
+    PRCP = as.character(PRCP),
+    PRCP = ifelse((PRCP == "99.99 "), NA, PRCP),
+    PRCP_letter = stringr::str_extract(PRCP,"[A-I]")[[1]],
+    PRCP = round(as.numeric(sub("[A-I]", "", PRCP)) * 2.54 * 10,4),
+    SNDP = ifelse((SNDP == 999.9), NA, SNDP),
+    DATE = lubridate::ymd(YEARMODA),
+    MONTH = month(DATE),
+    YEAR = factor(year(DATE)),
+    DEGREE_DAYS = mean(c(MIN,MAX)) - 12.5
+  ) %>%
+  dplyr::group_by(
+    YEAR, MONTH, STN
+  ) %>%
+  dplyr::mutate(
+    TEMP_iqr = IQR(TEMP),
+    TEMP_uq = quantile(TEMP,0.75),
+    TEMP_lq = quantile(TEMP,0.25),
+    TEMP_ua = TEMP_uq + (TEMP_iqr * 1.5), 
+    TEMP_la = TEMP_lq - (TEMP_iqr * 1.5),
+    TEMP_ol = ifelse((TEMP > TEMP_ua | TEMP < TEMP_la), TRUE, FALSE),
+    PRCPn = n(),
+    SRC = "GSOD"
+    ) %>%
+  ungroup %>%
+  dplyr::select(
+    DATE, SRC, MIN,
+    MEAN = TEMP, MAX
+  )
+
+```
+
+For 2015, the Bedford station has a nearly complete daily record, with 360 records.
+Note however, that this is daily summary data, and only gives minimum, mean, and maximum temperatures. There are some data available with more granularity.
+Maybe I'll look at these another day.
+
+I re-used some old code to clean the data[^1], which resulted in no values being removed, so I'm fairly confident in these values.
+
+[^1]: I used a monthly window function to exclude termperature values which were more than 1.5 times the interquartile range above or below the mean; i.e. any values that would appear as 'outliers' in a regular [boxplot](https://en.wikipedia.org/wiki/Box_plot).
+
+
+```{r 2016-01-15-GSOD-DS18B20-full_series,fig.height=4}
+
+ext_temp <- sensor_cleaned %>%
+  dplyr::filter(
+    key == "ext_temp1"
+  ) %>%
+  group_by(
+    DATE = ymd(format(timestamp, "%Y-%m-%d"))
+  ) %>%
+  summarise(
+    MIN = min(value, na.rm=TRUE),
+    MEAN = mean(value, na.rm=TRUE),
+    MAX = max(value, na.rm=TRUE),
+    SRC = "HOME"
+  ) %>%
+  dplyr::select(
+    DATE,
+    SRC,
+    MIN:MAX
+  )
+  
+temp_join <- bind_rows(
+  weather_data,
+  ext_temp
+) %>%
+  tidyr::gather(
+    key,value,MIN:MAX
+  )
+
+temp_join %>%
+  filter(
+  key == "MEAN"
+  ) %>%
+  ggplot +
+  aes(
+    x = DATE,
+    y = value,
+    col = SRC
+  ) +
+  geom_path() +
+  ylab(expression(Temperature~(degree~C))) +
+  xlab("") + 
+  theme(legend.position = "bottom") +
+  scale_colour_discrete(name = "Source")
+  
+```
+
+From a first glance, the daily means from the data that I have collected follow the pattern of the Bedford weather data well, but tend to be a few degrees warmer, and more so in the summer than the winter months.
+
+I've produced a more informative plot below, with each GSOD observation compared to the daily aggregationg from my measurements.
+I've also applied a `loess` model to each measure, not a linear model, although you would be forgiven for thinking so, as the patterns are incredibly linear. 
+
+```{r 2016-01-15-GSOD-DS18B20-regression}
+
+temp_join_wide <- temp_join %>%
+  tidyr::spread(
+    SRC, value
+  )
+
+temp_join_wide %>%
+  ggplot +
+  aes(
+    y = HOME,
+    x = GSOD,
+    col = key
+  ) +
+  geom_point(
+    alpha = 0.4
+    ) +
+  geom_abline(
+    intercept = 0,
+    slope = 1,
+    lty = 2,
+    size = 0.75
+  ) +
+  facet_wrap(
+    ~key,
+    #scale = "free",
+    ncol = 2
+  ) +
+  geom_smooth(
+    col = "black",
+    se = FALSE,
+    size = 0.75
+  ) +
+    xlab(expression(GSOD~Temperature~(degree~C))) +
+    ylab(expression(HOME~Temperature~(degree~C))) + 
+    theme(legend.position = "none")
+
+```
+
+It looks like these fits diverge from the 1:1 line (dashed) slightly more at the higher end of the temperature scale, so I'd expect the slope ($\alpha$) to be $~\alpha>1$ if I were to fit a linear model instead of using `loess`.
+
+And indeed this is the case ($\alpha$ for each model is given in the `GSOD` row):
+
+```{r}
+
+foo <- temp_join_wide %>%
+  group_by(
+    key
+  )
+
+bar <- foo %>%
+  group_by(
+    key
+  ) %>%
+  do(fit = lm(HOME ~ GSOD, data = .))
+
+# get the coefficients by group in a tidy data_frame
+foobar <- tidy(bar, fit)
+
+foobar %>%
+  mutate(
+    model = key,
+    term = ifelse(term == "(Intercept)", "intercept", term)
+  ) %>%
+  ungroup %>%
+  select(
+    model, term:std.error
+  ) %>%
+  kable(
+    digits = 3
+  )
+
+```
+
+So at this level, things don't look too bad, and given that the weather station is a kew kilometres away, we should expect some difference.
+For daily average it looks like I could quite easily apply a conversion based on the above models to correct my sensor.
+I'm reasonably confident that the high negative values of $\delta$ are a result of particularly sunny days.
+This is a question that I can revisit when I start to look at the light data in a future post, as I suspect that this pattern would have been captured there.
+
+```{r,eval=FALSE}
+sessionInfo()
+```

@@ -1,0 +1,908 @@
+---
+title: 'Regularised linear regression'
+date: '2015-07-26'
+modified: #`r format(Sys.time(), '%Y-%m-%d')`
+excerpt: "Adding regularisation to vectorised linear regression"
+layout: post
+published: yes
+status: processed
+comments: true
+categories: [Rstats]
+tags: [R, machine learning, linear regression, regularisation]
+---
+
+```{r,load packages,echo=FALSE,message=FALSE,warning=FALSE}
+
+knitr::opts_chunk$set(
+  message = FALSE, 
+  warning = FALSE, 
+  echo = FALSE
+  )
+
+#checkpoint::setSnapshot("2015-05-15")
+#checkpoint::checkpoint("2015-05-15", use.knitr = TRUE)
+
+library(dplyr)
+library(magrittr)
+library(boot)
+library(ucminf)
+library(ggplot2)
+library(tidyr)
+library(RColorBrewer)
+
+pal <- brewer.pal(6,"Set1")
+
+```
+
+In this post I reproduce an example similar to an exercise I did for the [coursera](http://www.coursera.org) [MOOC](http://en.wikipedia.org/wiki/Massive_open_online_course) course in machine learning written by Andrew Ng. I'm compelting the course musing R, not the requisite matlab. In the next couple of posts I'm going to complete the equivalent of exercise 5.
+
+The exercise was about creating a vectorised implementation of regularised linear regression, and using this to test some theory relating to the diagnosis of bias (underfitting) and variance (overfitting). I will use a different, but similar dataset to avoid publishing the solutions here.
+
+### What is regularisation all about?
+
+Regularisation helps us to deal with the problem of overfitting by reducing the weight given to a particular feature $x$. This allows us to retain more features while not giving undue weight to one in particular. Regularisation is mediated by a parameter $\lambda$, as can be seen in the cost function:
+
+$$
+J(\theta)=\frac{1}{2m}\Big(\sum^{m}_{i=1}(h_{\theta}(x^{(i)}-y^{(i)})^2\Big)+\frac{\lambda}{2m}\Big(\sum^{n}_{j=1}\theta^2_j\Big)
+$$
+
+The first term is essentially the mean-squared-error term, whilst the additive term multiplies the sum of the square of the parameters ($\theta$) by $\lambda$ over $2m$, where $m$ is the number of training examples. Since the objective is to minimise $J(\theta)$ ($\underset{\theta}{\text{min}}J(\theta)$) using a large $\lambda$ will require small values of $\theta_j$ in order to acheive a minima.
+
+### Getting some data
+
+In this example I'm using data from the well worn `mtcars` dataset which is included in the datasets package, instead of the data given in the course. For the first example presented here, I limit myself to just the first five columns of this dataset, which are: `mpg`, `cyl`, `disp`, and `hp`, or: miles per gallon, number of cylinders, displacement ($\text{in}^2$), and gross horsepower (run `?mtcars` for a data description). In this example, I want to predict `mpg` using `cyl`, `disp`, and `hp` as features.
+
+Plotting each individually gives us a sense that they all have pretty correlations with `mpg`, but it's also obvious that the features are correlated: e.g. `disp` and `hp`.
+
+```{r 2015-07-08-plot-mtcars,fig.width=12}
+
+par(mfrow=c(1,3))
+
+mtcars1 <- mtcars %>%
+  select(
+    mpg,disp,cyl,hp
+    ) %>%
+  gather(
+    key,value,disp:hp
+    )
+
+mtcars1 %>% 
+  ggplot +
+  aes(
+    x = value,
+    y = mpg,
+    colour = key
+  ) %>%
+  geom_point() +
+  facet_wrap(
+    ~key,
+    scales = "free"
+  )
+
+
+```
+
+We can also see that the range of values that the features take vary quite a lot. Whilst `cyl` $\leq{8}$, `disp` tends to measured in the hundreds of $\text{in}^2$.
+
+```{r,echo=TRUE}
+mtcars[1:4] %>% summary
+```
+
+
+```{r 2015-06-22-split-date}
+
+set.seed(1337)
+orig_data <- mtcars[1:4] %>%
+  mutate(
+    cyl = ordered(cyl), # should cyl be continuous or categorical?
+    n = row_number()
+  )
+
+train <- orig_data %>%
+  sample_frac(
+    .6
+  )
+
+test <- orig_data %>%
+  filter(
+    !n %in% train$n
+    )
+
+cross <- test %>%
+  sample_frac(
+    .5
+  )
+
+test <- test %>%
+  filter(
+    !n %in% cross$n
+  )
+
+```
+
+There are `r nrow(mtcars)` rows in the data set, and for this example I will make a 60/20/20 split on the dataset for train/cross-validate/test, giving `r nrow(train)` rows in the test set, and `r nrow(cross)` and `r nrow(test)` in the cross-validation and test sets respectively.
+
+At this point is has already become a little difficult to display all the features on a simple two dimensional plot, so I'll use a combination of colour and shape.
+
+```{r 2015-07-08-plot-all-data1,fig.width=12}
+
+orig_data %<>%
+  mutate(
+    set = ifelse(
+      n %in% train$n, 
+      "train", 
+      ifelse(n %in% cross$n,"cross","test")
+    )
+  )
+
+p <- orig_data %>% 
+  ggplot +
+  geom_point(
+    aes(
+      x = disp,
+      y = mpg,
+      shape = cyl,
+      colour = hp
+    ),
+    size = 4
+  ) +
+  xlab(
+    expression(Displacement~("in"^2))
+  ) +
+  ylab(
+    expression(mi~gal^-1)
+  ) +
+  scale_x_continuous(limits=c(50,500)) +
+  scale_y_continuous(limits=c(10,35))
+
+
+p %+% facet_wrap(
+  ~set
+)
+
+``` 
+
+So each split of the data has retained some semblance of the curvature present in the training set.
+
+### Regularised linear regression
+
+To run the linear regression, I'll build on the vectorised linear regression implementation I implemented [here](http://ivyleavedtoadflax.github.io//rstats/linear_regression/), but this time including a regularisation term.
+
+A vectorised implementation of the cost function is given below. Note I've used `tcrossprod(theta, X)` as this function was about 1.5 times quicker than the equivalent `X %*% theta` in my tests, and both return the result of $\theta^TX$.
+
+The cost function is not applied to $\theta_0$ as this relates to the intercept parameter.
+
+```{r,echo=TRUE}
+
+J <- function(X, y, theta, lambda) {
+  
+  m <- length(y)
+  
+  theta1 <- theta
+  
+  # Ensure that regularisation is not operating on \theta_0
+  
+  theta1[1] <- 0
+  
+  error <- tcrossprod(theta,X)
+  error <- as.vector(error) - y
+  error1 <- crossprod(error,error)
+  
+  reg <- (lambda/(2*m)) * crossprod(theta1, theta1)
+  
+  cost <- (1/(2 * m)) * error1 + reg
+  
+  return(cost)
+  
+  }
+
+```
+
+The gradient function is given below, and is the same as that given in my previous post on [regularised logistic regression](./regularised-logistic-regression/) Note that once again the regularisation term excludes $\theta_0$.
+
+$$
+\left\{
+\begin{array}{ll}  
+    \displaystyle\frac{\delta J(\theta)}{\delta\theta_0}=\frac{1}{m}\sum_{i=1}^m(h_{\theta}(x^{(i)})-y^{(i)})x^{(i)}_j & \text{for}\ j=0 \\
+    & \\
+    \displaystyle\frac{\delta J(\theta)}{\delta\theta_j}=\left(\frac{1}{m}\sum_{i=1}^n(h_{\theta}(x^{(i)})-y^{(i)})x^{(i)}_j\right) + \frac{\lambda}{m}\theta_j & \text{for}\ j\geq1
+\end{array}\right .
+$$
+
+
+```{r,echo=TRUE}
+
+gR <- function(X, y, theta, lambda) {
+  
+  theta1 <- theta
+  theta1[1] <- 0
+  
+  m <- length(y)
+  
+  error <- tcrossprod(theta,X)
+  error <- as.vector(error) - y
+  error <- (1/m) * crossprod(error,X)
+  
+  reg <- (lambda/(m)) * theta1
+  
+  delta <- error + reg
+  
+  return(delta)
+  
+  }
+
+
+```
+
+### Optimisation algorithm
+
+As an optimisation algorithm, I'm use the `optim` function which ships with the `stats` package in vanilla R. Previously I used the `ucminf` function, and these two take the same arguments, so switching out the algorithms in the code is very simple. As default I have stuck to the [BFGS](https://en.wikipedia.org/wiki/Broyden%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm) method, and to $\lambda=0$, i.e. no regularisation.
+
+I've also just included the parameters as they are, so any solutions are going to be strictly linear, and therefore many not be a very good fit.
+
+```{r,echo=TRUE}
+
+X <- cbind(1,train$cyl,train$disp,train$hp)
+y <- train$mpg
+
+theta <- rep(1, ncol(X))
+lambda <- 0
+
+ucminf_out <- optim(
+  par = theta,
+  fn = function(t) J(X, y, t, lambda),
+  gr = function(t) gR(X, y, t, lambda),
+  method = "BFGS"
+  )
+
+
+```
+
+So far so good, this seems to work:
+
+```{r}
+ucminf_out
+```
+
+The output from `optim` differs slightly from `ucminf`; here a convergence of $0$ indicates success, and includes the number of times the cost function and gradient functions were called (`$counts`). The output also gives the final cost (`$value`) associated with the parameters (`$par`). For the most part, we are only interested in the parameters themselves, which we can plug into `ggplot` to overlay the model onto the training set.
+
+Let's compare the training data with the new predictions from the model trained on that data.
+
+```{r 2015-07-08-plot-linear-model}
+
+pred <- train %>%
+  mutate( 
+    mpg = as.vector(tcrossprod(ucminf_out$par, X))
+  )
+
+p + 
+  ggtitle("Training")
+
+
+p %+% 
+  pred + 
+  ggtitle("Predicted")
+
+
+```
+
+So based on these plots, it should be pretty clear that the simple multiple regression is too simple to represent the curvature we can see in the data.
+
+We can calculate the error related to this model using the sum of the squared differences between the expected and the observed:
+
+$$
+J_{train}(\theta)=\frac{1}{2m}\sqrt{\sum^m_{i=1}(h_\theta(x^{(i)})-y^{(i)})^2}
+$$
+
+```{r,echo=TRUE}
+
+J_train <- function(predicted, actual) {
+  
+  m <- length(y)
+  
+  error <- predicted - actual
+  error <- crossprod(error, error)
+  
+  return(
+      (1/m) * error
+  )
+  
+}
+
+```
+
+Applying this function to the existing model gives a training error of $`r sprintf("%.2f",J_train(predicted = pred$mpg,actual = train$mpg))`$.
+
+## Polynomials
+
+So one way of taking account of the curvature in the data is to add features to the data, for example polynomials of the input matrix $X$.
+
+Part of the coursera exercise is to create a function to produce polynomials of different features (explanatory variables), but R has a built in polynomial function in the stats package: `poly` which is $50\%$ faster than the equivalent function that I wrote, so I'll stick to this.
+
+Since we have three features, using three degrees of polynomial will result in $`r train %>% select(disp,cyl,hp) %>% mutate(cyl = as.integer(cyl)) %>% as.matrix %>% poly(degree = 3, raw = TRUE) %>% ncol`$ features in total on $`r nrow(train)`$ training examples. One feature for every training example sounds like a lot, and will almost certainly lead to over-fitting, so it should be a good way of demonstrating regularisation.
+
+The plot below shows the results from models trained on first (i.e. no polynomial) to third order polynomials on the training set (red points are the predicted values).
+
+```{r}
+
+ucminf_w <- function(X, y, degree = 1, lambda = 0) {
+  
+  X <- poly(X, degree = degree, raw = TRUE) %>%
+    cbind(1,.)
+
+  theta <- rep(1,ncol(X))
+  
+  ucminf_out <- optim(
+    par = theta,
+    fn = function(t) J(X, y, t, lambda),
+    gr = function(t) gR(X, y, t, lambda),
+    method = "BFGS"
+    )
+  
+  return(
+    list(
+      con = ucminf_out$convergence,
+      par = ucminf_out$par,
+      y = data.frame(
+        y = tcrossprod(ucminf_out$par, X) %>% as.vector
+      )
+    )
+  )
+}
+
+```
+
+```{r,2015-07-08-plot-degree-facet,fig.width=12}
+
+X <- cbind(train$cyl,train$disp,train$hp)
+
+# Three models with differing levels of polynomial
+first_order_model <- ucminf_w(X, y, degree = 1, lambda = 0)
+second_order_model <- ucminf_w(X, y, degree = 2, lambda = 0)
+third_order_model <- ucminf_w(X, y, degree = 3, lambda = 0)
+
+# Note that x_0 is not included this time, as I implement this in the function
+# itself
+
+#X <- X[,-1]
+
+# Create dataframe of several degrees to make plotting easier
+
+bla <- train %>% select(-mpg, -n) %>% cbind(ucminf_w(X, y, degree = 1, lambda = 0)$y,.) %>% set_colnames(c("mpg","cyl","disp","hp")) %>% mutate(degree = 1)
+
+for (i in 2:3) {
+  
+  polynomials <- train %>% select(-mpg, -n) %>% cbind(ucminf_w(X, y, degree = i, lambda = 0)$y,.) %>% set_colnames(c("mpg","cyl","disp","hp")) %>% mutate(degree = i)
+  
+  bla %<>% rbind_list(
+    polynomials
+  )
+}
+
+bla %<>% mutate(
+  degree = factor(degree)
+  )
+
+# Plot df
+
+p %+% train +
+  geom_point(
+    data = bla,
+    aes(
+      x = disp,
+      y = mpg,
+      shape = cyl,
+      group = degree
+    ),
+    col = "red",
+    size = 3
+  ) +
+  facet_wrap(
+    ~degree
+    )
+  
+```
+
+So as before, the first model has made a linear prediction, whilst including second and third order polynomials takes into account the curvature at least in the `disp` $\times$ `mpg` relationship. Note that the model including the third order polynomials has achieved close to 100% accuracy, because there is one feature per training example.
+
+Comparing the model errors confirms this assessment. The training error for the third order polynomial is almost zero, whilst the second order polynomial provides an improvement over the simple linear model.
+
+
+```{r}
+
+bla %>% group_by(
+  degree
+) %>%
+  summarise(
+    error = J_train(
+      predicted = mpg,
+      actual = train$mpg
+    )
+  )
+
+```
+
+### Cross validation
+
+So what happens when we apply these models onto the cross-validation dataset. If intuition holds true, the second order model should provide the best fit, whilst the third order model should show signs of having been overfit on the training data.
+
+```{r,2015-07-08-plot-cross-degree-facet,fig.width=12}
+
+# Note that x_0 is not included this time, as I implement this in the function
+# itself
+
+#X <- X[,-1]
+X <- cbind(cross$cyl,cross$disp,cross$hp)
+
+
+first_order_pred <- tcrossprod(
+  first_order_model$par,
+  cbind(1,poly(X,degree = 1,raw = TRUE))
+  ) %>%
+  c %>% 
+  cbind(pred=.,cross,degree = 1)
+
+second_order_pred <- tcrossprod(
+  second_order_model$par,
+  cbind(1,poly(X,degree = 2,raw = TRUE))
+  ) %>%
+  c %>% 
+  cbind(pred=.,cross,degree = 2)
+
+third_order_pred <- tcrossprod(
+  third_order_model$par,
+  cbind(1,poly(X,degree = 3,raw = TRUE))
+  ) %>%
+  c %>% 
+  cbind(pred=.,cross,degree = 3)
+
+bla <- rbind_list(
+  first_order_pred,
+  second_order_pred,
+  third_order_pred  
+  ) %>% mutate(
+  degree = factor(degree)
+  )
+
+# Plot df
+
+p %+% cross +
+  geom_point(
+    data = bla,
+    aes(
+      x = disp,
+      y = pred,
+      shape = cyl,
+      group = degree
+    ),
+    col = "red",
+    size = 3
+  ) +
+  facet_wrap(
+    ~degree
+    )
+  
+```
+
+So as predicted, it looks like the third order polynomial model is the worst, as is shown when calculating the error:
+
+```{r}
+
+bla %>% group_by(
+  degree
+) %>%
+  summarise(
+    error = J_train(
+      predicted = pred,
+      actual = cross$mpg
+    )
+  )
+
+```
+
+Interestingly, the simplest model, without any curvature performs the best on this cross validation set, when no regularisation is specified. This may not be surprising given that it is such a small subset of the data.
+
+### Regularisation
+
+So what happens when we apply regularisation?. I'll start with the extreme example: applying regularisation to the the over-fitted model with third order polynomials. Since I am trying here to reduce the impact that particular features have on the model, intuitively this should mean that I will need a relatively large $\lambda$.
+
+Let's start with $\lambda = \{10,100,1000,10000,100000,1000000\}$, and look what happens to the prediction of `mpg` from the training set. As $\lambda$ increases, the prediction becomes increasingly more generalised, and fits the training set less perfectly...
+
+```{r 2015-07-08-train-regularisation-complicated,fig.width=12,fig.height=8}
+
+X <- cbind(train$cyl,train$disp,train$hp)
+y <- train$mpg
+
+bla <- train %>%
+  select(-mpg, -n) %>%
+  cbind(
+    ucminf_w(X, y, degree = 3, lambda = 0)$y,
+    .) %>%
+  set_colnames(
+    c("mpg","cyl","disp","hp")
+    ) %>% 
+  mutate(
+    degree = 3,
+    lambda = 10^1
+    )
+
+for (i in c(10^3,10^4,10^5,10^6,10^7)) {
+
+polynomials <- train %>%
+    select(-mpg, -n) %>%
+    cbind(ucminf_w(X, y, degree = 3, lambda = i)$y,.) %>%
+  set_colnames(c("mpg","cyl","disp","hp")) %>%
+  mutate(
+    degree = 3,
+    lambda = i
+    )
+  
+  bla %<>% rbind_list(
+    polynomials
+  )
+}
+
+bla %<>% mutate(
+  degree = factor(degree)
+  )
+
+
+p %+% train+
+  geom_point(
+    data = bla,
+    aes(
+      x = disp,
+      y = mpg,
+      shape = cyl,
+      group = degree
+    ),
+    col = "red",
+    size = 3
+  ) +
+  facet_wrap(
+    ~lambda
+    )
+
+
+```
+
+And when applied to the cross validation set, increasing $\lambda$ improves the fit of predictions to the cross validation set.
+
+```{r 2015-07-08-cross-regularisation-complicated,fig.width=12,fig.height=8}
+
+bla <- tcrossprod(
+  ucminf_w(X, y, degree = 3, lambda = 0)$par,
+  cbind(1,poly(cbind(cross$cyl,cross$disp,cross$hp),degree=3,raw=TRUE))
+) %>% 
+  c %>%
+  cbind(
+    cross %>% select(-mpg)
+  ) %>%
+  set_colnames(
+    c(
+      "mpg", "cyl", "disp",
+      "hp", "n"
+    )
+  ) %>%
+  mutate(
+    degree = 3,
+    lambda = 0
+    )
+
+for (i in c(10^2,10^3,10^4,10^5,10^6)) {
+
+polynomials <- tcrossprod(
+  ucminf_w(X, y, degree = 3, lambda = i)$par,
+  cbind(1,poly(cbind(cross$cyl,cross$disp,cross$hp),degree=3,raw=TRUE))
+) %>% 
+  c %>%
+  cbind(
+    cross %>% select(-mpg)
+  ) %>%
+  set_colnames(
+    c(
+      "mpg", "cyl", "disp",
+      "hp", "n"
+    )
+  ) %>%
+  mutate(
+    degree = 3,
+    lambda = i
+    )
+  
+  bla %<>% rbind_list(
+    polynomials
+  )
+}
+
+bla %<>% mutate(
+  degree = factor(degree)
+  )
+
+
+p %+% cross +
+  geom_point(
+    data = bla,
+    aes(
+      x = disp,
+      y = mpg,
+      shape = cyl,
+      group = degree
+    ),
+    col = "red",
+    size = 3
+  ) +
+  facet_wrap(
+    ~lambda
+    )
+
+
+```
+
+And what about the error? Plotting the training error versus cross-validation error will give us an impression of what effect the regularisation parameter is having.
+
+```{r 2015-07-08-error-plot-complicated}
+
+lambda_error <- function(degree,lambda) {
+  
+  X <- cbind(train$cyl,train$disp,train$hp)
+  y <- train$mpg
+  
+  theta <- ucminf_w(
+    X,
+    y,
+    degree = degree,
+    lambda = lambda
+  )$par
+  
+  error1 <-   J_train(
+      predicted = c(tcrossprod(theta,cbind(1,poly(X,degree=degree,raw=TRUE)))),
+      actual = c(train$mpg)
+    )
+  
+  X <- cbind(
+    cross$cyl,cross$disp,cross$hp
+  )
+  y <- cross$mpg
+  
+  
+  error2 <- J_train(
+      predicted = c(tcrossprod(theta,cbind(1,poly(X,degree=degree,raw=TRUE)))),
+      actual = c(cross$mpg)
+    )
+  
+  return(c(lambda,error1,error2))
+  
+}
+
+error_data <- sapply(
+  c(10^-3,10^-2,10^-1,0,1,10^1,10^2,10^3,10^4,10^5,10^6,10^7,10^8),
+  function(x) lambda_error(degree = 3,lambda = x)
+  ) %>% 
+  t %>%
+  set_colnames(c("lambda","train","cross")) %>%
+  as.data.frame %>%
+  gather(
+    key,value,cross:train
+  )
+
+
+error_data %>%
+  ggplot + 
+  aes(
+    x = lambda,
+    y = value,
+    colour = key
+    ) +
+  geom_line() + 
+  scale_x_log10(
+    name = expression(lambda)
+    ) + 
+  ylab("Error")
+
+```
+
+So it looks like a value of around $10^7$ will minimise both the training and cross-validation error. This is a pretty large $\lambda$ - but this may not be surprising given that a three order polynomial generates $19$ features for just $19$ training examples, i.e $m=k$.
+
+I'm interested to know what would have happened if I had chosen to run with the second order polynomial model. Using the same choices for $\lambda$ is not appropriate for this model, as there are only $9$ features, so this time I have chosen a smaller range of $\lambda$, but retained $10^7$ just to see what would happen.
+
+```{r 2015-07-08-train-regularisation-simple,fig.width=12,fig.height=8}
+
+X <- cbind(train$cyl,train$disp,train$hp)
+y <- train$mpg
+
+bla <- train %>%
+  select(-mpg, -n) %>%
+  cbind(
+    ucminf_w(X, y, degree = 2, lambda = 0)$y,
+    .) %>%
+  set_colnames(
+    c("mpg","cyl","disp","hp")
+    ) %>% 
+  mutate(
+    degree = 2,
+    lambda = 10^-2
+    )
+
+for (i in c(10^-1,10^1,10^2,10^3,10^7)) {
+
+polynomials <- train %>%
+    select(-mpg, -n) %>%
+    cbind(ucminf_w(X, y, degree = 2, lambda = i)$y,.) %>%
+  set_colnames(c("mpg","cyl","disp","hp")) %>%
+  mutate(
+    degree = 2,
+    lambda = i
+    )
+  
+  bla %<>% rbind_list(
+    polynomials
+  )
+}
+
+bla %<>% mutate(
+  degree = factor(degree)
+  )
+
+
+p %+% train+
+  geom_point(
+    data = bla,
+    aes(
+      x = disp,
+      y = mpg,
+      shape = cyl,
+      group = degree
+    ),
+    col = "red",
+    size = 3
+  ) +
+  facet_wrap(
+    ~lambda
+    )
+
+
+```
+
+So in this case, setting $\lambda = 10^7$ is a step too far, and results in a model that is too simple, and loses the curvature evident in the data.
+
+And the error?
+
+```{r 2015-07-08-error-plot-simple}
+
+error_data <- sapply(
+  c(10^-3,10^-2,10^-1,0,1,10^1,10^2,10^3,10^4,10^5,10^6,10^7,10^8),
+  function(x) lambda_error(degree = 2,lambda = x)
+  ) %>% 
+  t %>%
+  set_colnames(c("lambda","train","cross")) %>%
+  as.data.frame %>%
+  gather(
+    key,value,cross:train
+  )
+
+
+error_data %>%
+  ggplot + 
+  aes(
+    x = lambda,
+    y = value,
+    colour = key
+    ) +
+  geom_line() + 
+  scale_x_log10(
+    name = expression(lambda)
+    ) + 
+  ylab("Error")
+
+```
+
+As predicted, $\lambda$ needs to be set much lower, between $10$ and $100$ to obtain the best solution for the training and cross-validation set. Interestingly the cross-validation error continues to drop until about $\lambda=10000$ which coincides with the model failing to predict curvature in the data as above.
+
+### Wrapping up
+
+```{r}
+
+
+test_error <- function(degree,lambda) {
+  
+  X <- cbind(test$cyl,test$disp,test$hp)
+  y <- test$mpg
+  
+  theta <- ucminf_w(
+    X,
+    y,
+    degree = degree,
+    lambda = lambda
+  )$par
+  
+  test_error1 <-   J_train(
+      predicted = c(tcrossprod(theta,cbind(1,poly(X,degree=degree,raw=TRUE)))),
+      actual = c(test$mpg)
+    )
+  
+  return(test_error1)
+  
+}
+
+```
+
+
+So the final question remains. How will these two models perform against each other: a more complicated model with a very high $\lambda$, or a simpler model with a lower $\lambda$?
+
+There is almost no difference between the performance of the models on the test set; both do a reasonable job; the third order polynomial model gives an error of `r test_error(degree = 3, lambda = 10^7) %>% sprintf("%.2f",.)`, which is very similar to the error given by the simpler model `r test_error(degree = 2, lambda = 10^1.6) %>% sprintf("%.2f",.)`.
+
+
+```{r 2015-07-08-test-regularisation,fig.width=12}
+
+X <- cbind(train$cyl,train$disp,train$hp)
+y <- train$mpg
+
+bla <- tcrossprod(
+  ucminf_w(X, y, degree = 2, lambda = 10^1.6)$par,
+  cbind(1,poly(cbind(test$cyl,test$disp,test$hp),degree=2,raw=TRUE))
+) %>% 
+  c %>%
+  cbind(
+    test %>% select(-mpg)
+  ) %>%
+  set_colnames(
+    c(
+      "mpg", "cyl", "disp",
+      "hp", "n"
+    )
+  ) %>%
+  mutate(
+    degree = "Simple",
+    lambda = 10^1.6
+    )
+
+bla1 <- tcrossprod(
+  ucminf_w(X, y, degree = 3, lambda = 10^7)$par,
+  cbind(1,poly(cbind(test$cyl,test$disp,test$hp),degree=3,raw=TRUE))
+) %>% 
+  c %>%
+  cbind(
+    test %>% select(-mpg)
+  ) %>%
+  set_colnames(
+    c(
+      "mpg", "cyl", "disp",
+      "hp", "n"
+    )
+  ) %>%
+  mutate(
+    degree = "Complicated",
+    lambda = 10^7
+    )
+
+bla <- rbind_list(
+  bla,
+  bla1
+  )
+
+p %+% test +
+  geom_point(
+    data = bla,
+    aes(
+      x = disp,
+      y = mpg,
+      shape = cyl,
+      group = degree
+    ),
+    col = "red",
+    size = 3
+  ) +
+  facet_wrap(
+    ~degree
+    )
+
+
+```
+
+Of course, I should point out that something is probably going wrong if the number of features ($k$) equals the number of training examples ($m$); it's as overfitted as a model can get; but it demonstrates the power of regularisation, and it is heartening to see that a simpler model can perform just as well.
+
+
+```{r,echo=TRUE}
+sessionInfo()
+```

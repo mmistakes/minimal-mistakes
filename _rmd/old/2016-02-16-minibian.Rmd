@@ -1,0 +1,209 @@
+---
+title: "Raspberry Pi MQTT broker"
+comments: yes
+date: '2016-02-16'
+modified: `r format(Sys.time(), '%Y-%m-%d')`
+layout: post
+excerpt: "Setting up minibian"
+published: no
+status: processed
+tags:
+- raspberry pi
+- arduino
+- esp8266
+- lua
+- Internet of things
+- IoT
+- NodeMCU
+- MQTT
+- Minibian
+categories: IoT
+---
+
+In my [last post](../esp8266) I started meddling with the ESP8266 module as a low
+cost (and smaller) alternative to an Arduino or Raspberry Pi for creating home
+sensors.
+
+I was toying with the idea of sending measurements to a database using a RESTful
+API on the existing Postgres database I use to host measurements on Amazon Web
+Services.
+
+After a bit of reading, I've realised that there is a better solution:
+[MQTT](http://mqtt.org/), a lightweight protocol designed for machine to machine
+(M2M) communication for sensors, and similar low powered and simple devices. 
+MQTT uses an event driven publish/subscribe paradigm: sensors publish to a
+broker, which can then pass on information to subscribers. I'm not 100% sure yet
+how I will achieve persistence (and store sensor readings for later analysis),
+[HiveMQ](http://www.hivemq.com/blog/how-to-get-started-with-mqtt) has a plugin
+that will do this at the broker, without the database needing to be a
+subscriber, which is a nice option.
+
+MQTT looks like the way forward for this kind of project, so I'll worry about
+the persistence problem later.
+
+### Minibian: a lightweight Raspberry Pi distro
+
+I've got a spare Raspberry Pi 2 which I am using for this project. To save
+space, and avoid raspbian bloat, I've used
+[minibian](https://minibianpi.wordpress.com/features/) for a very lightweight
+machine.
+
+#### Creating a user
+
+You'll also realise pretty quickly that the usual Raspberry Pi user setup is not
+there in Minibian. There is just a root user, so I first created a new user with
+admin privileges:
+
+``` 
+adduser <newuser>
+
+sudo usermod -a -G sudo <newuser> 
+```
+
+You may then also want to get access to the `sudo` command. So you will need to
+log into the superuser account, and install it.
+
+``` 
+# Log in as root (assuming you are logged in as newuser)
+
+su
+
+# Install sudo
+
+apt-get install sudo 
+``` 
+
+#### Upgrading
+
+The last release of Minibian was 2015-11-12, so a good thing to do is update the
+few packages that do come installed to the latest versions:
+
+```
+sudo apt-get update -y
+sudo apt-get upgrade -y 
+```
+
+#### Wi-Fi drivers
+
+Minibian is so lightweight it doesn't ship with Wi-Fi drivers as standard. If
+you want to use Wi-Fi instead of a wired connection, you will need to install
+these manually. An explanation is given
+[here](https://www.raspberrypi.org/forums/viewtopic.php?f=66&t=108863), but in
+brief:
+
+```
+# Install necessary packages
+
+apt-get install firmware-ralink 
+apt-get install firmware-realtek
+
+# Test with a network scan
+
+apt-get install wireless-tools iwlist wlan0 scan
+
+# Install wpa_supplicant for auto-connect
+
+apt-get install wpasupplicant
+
+```
+
+I usually just copy the `/etc/wpa_supplicant/wpa_supplicant.conf` file from
+another one of my pis, to duplicate the Wi-Fi settings. My `wpa_supplicant.conf`
+looks something like this:
+
+``` 
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+
+network={
+         ssid="SSID"
+         psk="password"
+         proto=RSN
+         key_mgmt=WPA-PSK
+         pairwise=CCMP
+         auth_alg=OPEN
+        }
+
+```
+
+#### Using SSH keys
+
+Finally I want to avoid entering a password every time I log on, so I copy the
+public SSH key from my laptop to the `authorized_keys` file on the minibian pi.
+
+If you want to use git or similar, you will need to generate an SSH key for the
+pi, so you may as well run `ssh-keygen` now, and generate a key. For internal
+network use, I tend to leave the passwords blank, but if you are particularly
+security conscious, you can enter something.
+
+This command will create the `~/.ssh/` folder. The next step is to send over
+your public key from your client machine. I do this without copying pasting with
+the following command run from the client machine:
+
+```
+cat ~/.ssh/id_rsa.pub | ssh user@192.168.1.100 'cat >>
+~/.ssh/authorized_keys' 
+```
+
+You'll be prompted to enter your password for this
+command, but after that, you should not have to enter a password again, the next
+time you SSH in.
+
+## Creating a disk image
+
+After all this work, it's a good idea to create a backup disk image. Thankfully
+a Minibian image can be nice and small, unlike the standard raspbian, so you are
+not left with several GB sized files all over the place.
+
+First you need to unmount the drive with `umount`. It will be mounted in two
+places on `/media/user/`, so make sure to `umount` both.
+
+Then you can run:
+
+``` 
+sudo dd if=/dev/sdc of=2016-02-15-minibian.img 
+```  
+to create a backup image and compress it.
+This will produce an 8GB file (depending on the size of your SD card, and with a lot of blank space).
+We can check this with `fdisk -l /tmp/2016-02-15-minibian.img` which gives:
+
+```
+Disk /tmp/2016-02-15-minibian.img: 7744 MB, 7744782336 bytes
+4 heads, 16 sectors/track, 236352 cylinders, total 15126528 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0x0008929a
+
+                   Device Boot      Start         End      Blocks   Id  System
+/tmp/2016-02-15-minibian1              16      125055       62520    b  W95 FAT32
+/tmp/2016-02-15-minibian2          125056    14997503     7436224   83  Linux
+
+```
+We can then take the block size (1 * 512) and the end of the second partition (14997503), and truncate the end of the image with:
+
+```
+ truncate --size=$[(14997503+1)*512] /tmp/2016-02-15-minibian
+```
+
+and then compress the final image with:
+
+```
+bzip2 /tmp/2016-02-15-minibian.img
+```
+
+## Next steps
+
+Next time I'll install the MQTT broker...
+
+## Sources
+
+[Create a disk image](https://help.ubuntu.com/community/DriveImaging)  
+[Why use MQTT](http://www.penninkhof.com/2015/03/why-use-mqtt-in-iot-projects/)  
+[WiFi on Minibian](https://www.raspberrypi.org/forums/viewtopic.php?f=66&t=108863)  
+[Latest version of Minibian](https://minibianpi.wordpress.com/setup/)  
+[Granting sudo priveleges](https://www.digitalocean.com/community/tutorials/how-to-add-delete-and-grant-sudo-privileges-to-users-on-a-debian-vps)  
+[Mosquitto MQTT broker](http://mosquitto.org/)  
+[HiveMQ MQTT broker](http://www.hivemq.com/blog/how-to-get-started-with-mqtt)  
+[Good blog on MQTT](http://nthn.me/posts/2012/mqtt.html)  
+[Creating bzip2 files](http://www.cyberciti.biz/faq/linuxunix-how-to-extract-and-decompress-a-bz2-tbz2-file/)  
+[Shrinking disk images](http://softwarebakery.com/shrinking-images-on-linux)

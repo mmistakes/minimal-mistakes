@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title:            Site Title
-locale:           en_US
-url:
+title:            machinegurning.com
+locale:           en_GB
+url:              http://www.machinegurning.com
 
 
 # Jekyll configuration
@@ -41,21 +41,21 @@ titlecase: true
 
 # Site owner
 owner:
-  name: Your Name
-  avatar: bio-photo.jpg
-  bio: "Describe your self."
+  name: Machine Gurning
+  avatar: machinegurning.png
+  bio: "A blog about Data Science, statistics, IoT, and Machine Learning"
   email:
   disqus-shortname:
   twitter: #username
   facebook: #username
   google:
     plus: #username
-    analytics:
-    verify:
+    analytics: 'UA-61502512-2'
+    verify: 'TuoV0BCNplJIrnNBgXLTvU9DbW7GU4BfgwbrBW-wbLs'
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
+  github: machinegurning
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
   linkedin: #username
   xing: #username

@@ -1,0 +1,299 @@
+---
+title: "Measuring light with a Raspberry Pi"
+comments: yes
+date: '2016-02-22'
+modified: `r format(Sys.time(), '%Y-%m-%d')`
+layout: post
+excerpt: "A year's data collected with a simple LDR based light sensor"
+published: yes
+status: processed
+tags:
+- R
+- Raspberry Pi
+- monitoring
+- light
+- infographic
+- python
+categories: Rstats
+---
+
+```{r,include = FALSE}
+
+#library(checkpoint)
+#checkpoint("2016-01-15")
+
+library(dplyr)
+library(lubridate)
+library(magrittr)
+library(knitr)
+library(ggplot2)
+library(readr)
+library(broom)
+
+knitr::opts_chunk$set(
+  warning = FALSE, 
+  message = FALSE,
+  echo = FALSE,
+  #include = FALSE,
+  cache = FALSE,
+  fig.width = 10,
+  fig.height = 10#,
+  #dev = "svg"
+  )
+
+
+#setwd("~/Dropbox/ivyleavedtoadflax.github.io/drafts/")
+
+```
+
+```{r}
+
+normalise <- function(x) {
+  return((x - min(x)) / (max(x) - min(x)))
+  #return((x - mean(x)) / sd(x))
+}
+
+sensor_cleaned <- "data/2015-12-24-sensorpi_join.Rds" %>%
+  readRDS %>%
+  mutate(
+    key = factor(
+      key, 
+      levels = c("elec","int_humidity","int_light","int_temp","ext_temp1")
+    ),
+    type = ifelse(grepl("temp",key),"temp", as.character(key)),
+    type = plyr::mapvalues(
+      type,
+      from = c("int_humidity", "int_light", "elec", "temp"),
+      to = c(
+        "Internal~humidity~( `%`)",
+        "Light~(relative~values)",
+        "Electricity~consumption~(kWh~min^-1)",
+        "Light~intensity~(relative~scale)"
+      )
+    )
+  )
+
+light <- sensor_cleaned %>%
+  dplyr::filter(
+    key == "int_light",
+    ## Additional filtering identified after normalisation
+    value > 50
+  ) %>%
+  select(
+    timestamp,
+    week,
+    yday,
+    value
+  ) %>%
+  dplyr::mutate(
+    month = month(timestamp, label = TRUE),
+    hour = hour(timestamp),
+    #int_light = log(int_light) * -1,
+    int_light = normalise(1/log(value))
+    #int_light = 1/log(int_light) * 1000
+  )
+
+
+```
+
+I've been working through a year's worth of sensor data that I collected using Raspberry Pis.
+In the [last post on this subject](../infographic2/) I compared my temperature records with records from a local weather station.
+In this post I'm going to look at the light measurements.
+I have two main questions I would like to answer:
+
+* Can the light patterns be used to explain the temperature patterns noted in my [temperature post](../infographic2/).
+* Can I separate the patterns of artificial light from natural light.
+
+### What are the light measurements?
+
+The light measurements are not strictly measurements of light at all; they are measurements of time taken for a capacitor to fill and discharge. Since the capacitor is attached to a light dependent resistor, longer times indicate a higher resistance (and a darker room), whilst shorter times indicate the inverse.
+
+```{r,include=FALSE}
+
+min_timestamp <- sensor_cleaned %$% timestamp %>% min %>% format("%Y-%m-%d")
+max_timestamp <- sensor_cleaned %$% timestamp %>% max %>% format("%Y-%m-%d")
+
+n_meas <- sensor_cleaned %>% 
+  dplyr::filter(!is.na(value)) %>% 
+  nrow
+  
+```
+
+The data consist of `r n_meas` individual measurements and run from `r min_timestamp` to `r max_timestamp`, with measurements taken at 180 second intervals.
+These values need to be transformed to make interpretation more intuitive.
+I've played with a few transformations, but my current thinking is to use the normalised inverse of the natural log:
+
+$$
+y=f \Big( \frac{1}{\ln{x}} \Big)
+$$
+
+Where $f$ is the normalisation function:
+
+$$
+f(x)=\frac{x - \max x}{\max x - \min x}
+$$
+
+This transformation has three benefits:
+
+* It reverses the values, so that high numbers relate to more light, which is more intuitive.
+* It reduces the differences between low and high values, making patterns easier to discern, and reducing the impact of outliers.
+* It sets the light values on a scale of 0 to 1, with 0 being most dark, and 1 being most light (across the whole year).
+
+After applying this transformation, 5 further values were highlighted as outliers that were not removed in the initial cleaning described in a [previous post](../infographic1/), so any light value $<50$ was removed.
+
+With these transformations applied, the year long time series looks like this:
+
+```{r  2016-02-22-full-light-sequence,dev="png",fig.height=4}
+
+light %>%
+  ggplot +
+  aes(
+    y = int_light,
+    x = timestamp
+  ) +
+  geom_line() +
+  theme(
+    legend.position = "bottom"
+  ) +
+  geom_smooth() +
+  scale_fill_discrete(name = "") +
+  ylab(Light~intensity~(relative~scale)) +
+  xlab("")
+
+```
+
+The very simple local regression (`loess`) highlights some seasonal changes.
+Part of this is almost certainly due to me moving the sensor early in the year, but the reason for the step towards the end of the year is not clear, but is probably due to a change in the position of the sensor (it is prone to falling on its side!).
+
+### Daily light patterns
+
+Here I replicate the same daily plots from my previous post, also showing values between the $q_{0.25}$ and $q_{0.75}$ as the darker ribbon, and the $q_{0.1}$ and $q_{0.9}$ as the more transparent ribbon outside of this. The trend line is again a locally weighted regression.
+
+```{r 2016-02-22-daily-light-ribbon-plot}
+
+gg_color_hue <- function(n) {
+  hues = seq(15, 375, length=n+1)
+  hcl(h=hues, l=65, c=100)[1:n]
+}
+
+ggplot_blue <- gg_color_hue(2)[2]
+
+light_ribbon <- light %>%
+  group_by(
+    month, hour
+  ) %>%
+  summarise_each(
+    funs = funs(
+      q25 = quantile(., .25, na.rm = TRUE),
+      q75 = quantile(.,.75, na.rm = TRUE),
+      q10 = quantile(.,.1, na.rm = TRUE),
+      q90 = quantile(.,.9, na.rm = TRUE),
+      value = median(.,na.rm = TRUE)
+    ),
+    int_light
+  )
+
+light_ribbon %>%
+  ggplot +
+  geom_ribbon(
+    aes(
+      x = hour,
+      ymin = q10,
+      ymax = q90
+    ),
+    fill = ggplot_blue,
+    alpha = 0.6
+  ) +
+  geom_ribbon(
+    aes(
+      x = hour,
+      ymin = q25,
+      ymax = q75
+    ),
+    fill = ggplot_blue
+    ) + 
+  facet_wrap(
+    ~month
+  ) +
+  geom_smooth(
+    data = light,
+    aes(
+      x = hour,
+      y = int_light
+    ),
+    size = 0.75,
+    col = "black"
+  ) +
+  theme(
+    legend.position = "bottom"
+  ) +
+  scale_fill_discrete(name = "") +
+  ylab(expression(Light~intensity~(realtive~scale)))
+
+```
+
+So there are some immediate things that become apparent based on this plot.
+Firstly, the shortness of the days in the winter months is evident from the narrowness of the first peak in the winter months.
+The lower light intensity is also clear in the winter months.
+The second peak in the winter months is caused by artificial lighting.
+
+In March to September, the natural light distribution is bi-modal.
+These peaks occur at about 09:00 and 15:00, and correspond to the peaks in temperature recorded in my [last post](../infographic2/), so it looks like solar heating of the front of the house is responsible.
+
+Whilst this plot gives a good sense of the daily patterns over a year, we also lose a lot of information; for instance the steep changes from natural to artificial light.
+The next plot shows a more 'raw' representation where each trace is a day. We can glean a lot more granular information from it:
+
+* It is easy to see the step like patterns of artificial light being switched on and off.  
+* It's even possible to work out different levels of artificial light which correspond to the kitchen light being on, but the living room light being off (e.g. early November).  
+* It looks like there were some problems with time in August and October, when the natural light pattern has been shifted an hour earlier.
+This was due to some issues I had with the pi keeping the right time, and not correctly staying on GMT.  
+* Finally, you can see that from September to about April, I got up before the sun rose, and have eaten my breakfast by artificial light.  
+
+```{r 2016-02-22-daily-light-traces,dev="png"}
+
+library(scales)
+
+light %>%
+  dplyr::mutate(
+    #time = strftime(timestamp,format="%H:%M:%S"),
+    time = as.POSIXct(strftime(timestamp,format = "%H:%M:%S"), format = "%H:%M:%S")
+  ) %>%
+  ggplot +
+  aes(
+    y = int_light,
+    x = time,
+    group = yday
+  ) +
+  geom_line(
+    alpha = 0.4
+  ) + 
+  facet_wrap(
+    ~month
+  ) +
+  theme(
+    legend.position = "bottom"
+  ) +
+  ylab(expression(Light~intensity~(realtive~scale))) +
+  scale_x_datetime(
+    breaks = date_breaks('5 hour'),
+    labels = date_format("%H")
+  ) +
+  xlab("Hour")
+
+
+```
+
+These data are pretty messy, but it should be relatively simple to pick out the differences between natural and artificial light, and I will attempt this in one of my next couple of posts.
+Two methods for doing this come to mind:
+
+* Use a window function (maybe over 10 minutes or so) and look for the sharp changes in intensity than would indicate artificial light being switch on and off.
+This is likely to prove successful in nighttime hours, but it is likely to struggle during partially lit hours, when a drop off my be less acute.  
+* Another option is to fit a function to the natural light curve, and use this as the basis for identifying points which do not seem to belong (and are therefore artificial).
+This approach could work, but is likely to be complicated by the bi-modal nature of the distribution during summer months.
+
+Perhaps a combination of the two?
+
+```{r,eval=FALSE}
+sessionInfo()
+```
+

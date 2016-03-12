@@ -1,0 +1,607 @@
+---
+title: "LondonR 2014 - ggvis"
+date: 2014-11-25
+modified: `r format(Sys.time(), '%Y-%m-%d')`
+output: html_document
+layout: post
+excerpt: ggvis workshop at LondonR by Aimee Gott
+published: yes
+status: processed
+comments: true
+categories: [Rstats]
+---
+
+
+```{r,echo=FALSE,warning=FALSE,message=FALSE}
+library(dplyr)
+library(magrittr)
+knitr::opts_chunk$set(
+  message = FALSE, 
+  warning = FALSE
+  )
+```
+
+I went to my first LondonR meeting tonight hosted by [Mango solutions](http://www.mango-solutions.com/wp/). Some really great talks - especially presentatiosn by Matt Sundquist of plotly.
+
+Mango solutions also presented a good introduction to `ggvis` and some of the interactive elements. I've included my notes from the event below. Note that the visualisations from ggvis will not render properly here. You will need to reproduce the document in RStudio to see them.
+
+
+*Note that much of the code used for ggvis had already become deprecated!*
+
+```{r load_packages}
+
+library(dplyr)
+library(ggplot2)
+
+tubeData <- read.table(
+  "tubeData.csv",
+  sep = ",",
+  header = T
+  )
+
+str(tubeData)
+
+```
+
+#### Outline
+
+* ggplot2
+* ggvis
+* %>%
+* Aesthetics
+* Layers
+* Interactivity
+
+#### The Data
+
+* Tube performance data from TFL website.
+* [Available here](http://data.london.gov.uk/dataset/tube-network-performance-data-transport-committee-report)
+
+#### ggplot2 recap
+
+* `qplot` or `ggplot`
+* Add layers with +
+* Change aesthetics by variable with `aes`
+* Control plot type with `geom`
+* Panel using `facet_`
+
+```{r ggplot2 recap}
+
+head(tubeData)
+
+qplot(
+  data = tubeData,
+  x = Month,
+  y = Excess
+  )
+
+qplot(
+  data = tubeData,
+  x = Month,
+  y = Excess,
+  col = Line
+  )
+
+qplot(
+  data = tubeData,
+  x = Month,
+  y = Excess,
+  col = Line
+  ) +
+  facet_wrap(
+    ~Line
+    )
+
+qplot(
+  data = tubeData,
+  x = Month,
+  y = Excess,
+  col = Line
+  ) +
+  facet_wrap(
+    ~Line
+    ) +
+  geom_smooth(
+    col = "red",
+    size = 1
+    )
+
+
+```
+
+#### The 'geoms'
+
+```{r}
+
+grep(
+  "geom", 
+  objects("package:ggplot2"), 
+  value = TRUE
+  )
+
+````
+
+#### Facetting
+
+* Panels using `facet_wrap` and `facet_grid`.
+
+#### Scales and themes
+
+* axes and styles
+* themes e.g. `theme_bw` etc
+
+```{r themes}
+
+qplot(
+  data = tubeData,
+  x = Month,
+  y = Excess,
+  col = Line
+  ) +
+  facet_wrap(
+    ~Line
+    ) +
+  geom_smooth(
+    col = "red",
+    size = 1
+    ) +
+  theme_bw()
+  
+
+
+```
+
+### Getting started with ggvis
+
+* Plot with `ggvis` function
+* Only a single function unlike `ggplot1`
+* Use `~` when referring to variables in a dataset, e.g. `~Ozone`
+* This refers to variables as formulas
+* First variable always data.
+
+```{r ggvis1}
+
+require(ggvis)
+
+myPlot <- ggvis(
+  tubeData,
+  ~Month,
+  ~Excess
+  )
+
+
+# Creates a ggvis object:
+
+class(myPlot)
+
+# Graphic is produced in the Viewer pane, not the Plots pane. Works via java vega a .d3 package
+
+myPlot
+
+# Note settings cog in the top right which allows you to change the rendering of teh plot.
+
+# Can view in web browser and then be saved as an html file.
+# Because it is not written to standard plotting device, you need to render the graphoc before you can save it out - i.e. no png or pdf command
+# No equivalent script to save out of ggvis - must be saved from a browser
+
+layer_points(myPlot)
+
+# Can also be used in the pupe
+
+myPlot %>% layer_points
+
+```
+
+
+#### The %>% operator
+
+* `ggvis` uses `%>%` from `magrittr` like `dplyr`
+* 
+
+```{r the_pipe}
+
+mean(airquality$Ozone,na.rm=TRUE)
+
+# Now with the pipe
+
+airquality$Ozone %>% mean(na.rm = TRUE)
+
+# dplyr example
+
+require(dplyr)
+
+tubeData %>%
+  dplyr::group_by(Line) %>%
+  dplyr::summarise(mean = mean(Excess)) %>%
+  qplot(Line, mean, data = ., geom="bar", stat = "identity", fill = Line)
+
+
+```
+
+#### %>% in ggvis
+
+* We pass `ggvis` objects mostly.
+* All functions accept a ggvis object first, except the command `ggvis`
+* Initial `ggvis` object is created with the `ggvis` command.
+* e.g.: 
+
+```{r ggvis_with_pipe}
+
+tubeData %>%
+  ggvis(
+    ~Month,
+    ~Excess
+    ) %>%
+  layer_points
+
+```
+
+#### Changing properties
+
+* Properties in `ggvis` are the same as aesthetics in `ggplot2`
+* Number of aesthetics that can be set:
+- stroke -- refers to lines
+- fill
+- size
+- opacity -- instead of alpha
+
+#### Changing based on variables
+
+* Mapping and setting as with `aes`
+* Map a variable to a property with `=`
+* Remember to use `~` with all variable names
+* fill = ~Line would set the fill based on the Line variable
+
+```{r ggvis_properties}
+
+tubeData %>%
+  ggvis(
+    ~Month,
+    ~Excess
+    ) %>%
+  layer_points(
+    fill = ~Line
+    )
+
+tubeData %>%
+  ggvis(
+    ~Month,
+    ~Excess
+    ) %>%
+  layer_points(
+    fill = ~Line,
+    shape = ~Line
+    )
+
+tubeData %>%
+  ggvis(
+    ~Month,
+    ~Excess
+    ) %>%
+  layer_points(
+    size = ~Stations
+    )
+
+# can be set for all layers:
+
+tubeData %>%
+  ggvis(
+    ~Month,
+    ~Excess,
+    fill = ~Line
+    ) %>%
+  layer_points
+
+```
+
+#### Setting property values
+
+* Instead of `col = I("red")`  in `ggplot2` is not required. This prevents `ggplot2` picking red up as a fcator.
+* `fill := "red"` will work in `ggvis`
+
+```{r ggvis_setting_properties}
+
+tubeData %>%
+  ggvis(
+    ~Month,
+    ~Excess,
+    fill = "red",
+    opacity := 0.5
+    ) %>%
+  layer_points
+
+tubeData %>%
+  ggvis(
+    ~Month,
+    ~Excess,
+    fill := "red",
+    opacity := 0.5
+    ) %>%
+  layer_points
+
+
+```
+
+* Shaping has changed in ggvis as it is dependent on .d3
+* At the moment a limited subset only is available
+
+```{r defining_shapes}
+
+tubeData %>%
+  ggvis(
+    ~Month,
+    ~Excess,
+    fill := "red",
+    opacity := 0.5,
+    shape := "square"
+    ) %>%
+  layer_points
+
+
+```
+
+#### Exercise
+
+* Create a plot of `mpg` against `wt` using `mtcars` data
+* Use colour for the `cyl` variable, and make it a factor
+* Update the plotting symbol to be triangles
+
+```{r}
+
+mtcars %>%
+  ggvis(
+    ~mpg,
+    ~wt
+    ) %>%
+  layer_points(
+    fill = ~factor(cyl),
+    # Why doesn't this work!?
+    shape := "triangle-up"
+    )
+
+```
+
+#### Adding layers
+
+* In `ggvis` we use `layer_` instead of `geom_`
+* Major limitation of `ggvis` at present, as not all of the `geoms_` are vailable as `layer_` in `ggvis`.
+* Check package manual:
+
+<!--
+|Function|Description|
+|--------|-----------|
+|layer_points||
+|layer_histograms||
+|layer_boxplots||
+|layer_lines||
+|layer_smooths||
+-->
+
+```{r layer_examples}
+
+tubeData %>%
+  ggvis(
+    ~Line,
+    ~Excess
+    ) %>%
+  layer_boxplots()
+
+# Adding some extra layers
+
+mtcars %>%
+  ggvis(
+    ~mpg,
+    ~wt
+    ) %>%
+  layer_points(
+    fill = ~factor(cyl),
+    # Why doesn't this work!?
+    shape := "triangle"
+    ) %>% 
+  layer_smooths() %>%
+  layer_model_predictions(
+    model = "lm"
+    )
+
+# Note that formula can be specified with formula = ...
+
+mtcars %>%
+  ggvis(
+    ~mpg,
+    ~wt
+    ) %>%
+  layer_points(
+    fill = ~factor(cyl),
+    # Why doesn't this work!?
+    shape := "triangle"
+    ) %>% 
+  layer_smooths(
+    stroke := "blue",
+    se = TRUE
+    ) %>%
+  layer_model_predictions(
+    model = "lm",
+    stroke := "red",
+    se = TRUE
+    )
+
+
+```
+
+### Making plots interactive
+
+#### Basic interactivity
+
+* Most basic level is 'hover over' just like in javascript.
+* Properties of the properties are changed to achive this.
+* `property.hover` argument: `fill.hover := "red"`, or `size.hover`, `opacity.hover`, etc.
+
+```{r basic_interactivity}
+
+tubeData %>%
+  ggvis(
+    ~Month,
+    ~Excess
+    ) %>%
+  layer_points(
+    fill = ~Line,
+    fill.hover := "red",
+    size.hover := 1500 # sizes are very different to R graphics!
+    )
+
+# This behaviour is saved into the html or svg file!
+
+```
+
+#### Tooltips
+
+* `add_tooltip` adds other behaviour on hover..
+* We can provide a function that provide information as we hover.
+
+```{r}
+
+tubeData %>%
+  ggvis(
+    ~Month,
+    ~Excess
+    ) %>%
+  layer_points(
+    fill = ~Line,
+    fill.hover := "red",
+    size.hover := 1500 # sizes are very different to R graphics!
+    ) %>%
+  add_tooltip(
+    function(data) data$Excess
+    )
+
+# Locks off R console - cannot be used in markdown
+
+```
+
+```{r pkData_example,eval=FALSE}
+
+pkData$id <- seq_along(pkData$Subject)
+
+all_values <- function(x) {
+  
+  }
+  
+pkData %>% ggvis(
+  ~Time,
+  ~Conc,
+  key = ~id # ggvis defined
+  ) %>%
+  layer_points() %>%
+  add_tooltip(
+    all_values,
+    "hover"
+    )
+
+
+```
+
+#### Interactive input
+
+* We can set outputs to be taken from interactive inputs
+
+`opacity := input_slider(0,1, label = "Opacity")`
+
+* We use the `":="` for this input
+* We can optionally set labels next to the control - unlink `shiny` where it is not optional
+* Currently you are limited to changing the properties of the data, not the data itself.
+
+```{r, interactive_inputs}
+
+tubeData %>%
+  ggvis(
+    ~Month,
+    ~Excess
+    ) %>%
+  layer_points(
+    fill = ~Line,
+    size := input_slider(10,1000, label = "Size of points")
+    )
+      
+```
+
+#### Interactive input functions
+
+<!--
+|Function|Description|
+|---|---|
+|input_slider||
+|etc|etc|
+-->
+
+```{r more_interactive_inputs}
+
+tubeData %>%
+  ggvis(
+    ~Month,
+    ~Excess
+    ) %>%
+  layer_points(
+    size := input_numeric(30, label = "Size"),
+    opacity := input_slider(0,1,value = 0.7, label = "Opacity"),
+    fill := input_select(c("red","blue","orange"), label = "Colour")
+    )
+
+
+```
+
+### Common plot functions
+
+#### Controlling axes and legends
+
+* We can control the axes using the add_axis function
+* This controls acis labels, tick marks and even grid lines
+* Title workaround is to use `add_axis`
+
+`add_axis("x", title = "Month")`
+
+* `add_axis` controls colour of gridlines, etc
+* The `add_legend` and `hide_legend` functions allow use to control if we see a legend and wheere it appears
+
+`add_legend("fill")`
+`add_legend(c("fill","shape"))`
+
+#### Scales
+
+* ggvis had fewer scale functions than in `ggplot2` but control much more.
+* just seven functions at present
+
+```{r}
+
+grep(
+  "^scale",
+  objects("package:ggvis"),
+  value = TRUE
+  )
+
+```
+
+#### ggvis vs ggplot2
+
+* we can layer graphics in a simlar fashion
+* aesthetics can be set baswed on by variables in the data
+* We cancontrol the type of plot
+
+#### How are they different?
+
+* Only one main function
+* Layering with `%>%`
+* Fewer scale functions
+* Much functionality not available... but coming...
+
+#### Which should I use
+
+* Static graphics: `ggplot2`
+* Interactive graphics `ggvis`
+
+#### Documentation
+
+* [ggvis documentation](http://ggvis.rstudio.com)
+
+
+
+

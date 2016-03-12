@@ -1,0 +1,1070 @@
+---
+title: "Too hot to cycle?"
+comments: yes
+date: '2015-05-25'
+output: pdf_document
+layout: post
+modified: `r format(Sys.time(), '%Y-%m-%d')`
+excerpt: Do Londoners and New Yorkers disagree?
+published: yes
+status: processed
+tags:
+- R
+- knitr
+- Citibike
+- Barclays Bikes
+- New York
+- London
+- Bike share
+categories: Rstats
+---
+
+
+```{r,set_knitr_opts,include=FALSE,echo=FALSE,message=FALSE,warning=FALSE}
+
+library(checkpoint)
+checkpoint("2015-05-15", use.knitr = TRUE)
+library(dplyr)
+library(magrittr)
+library(lubridate)
+library(ggmap)
+library(readr)
+library(testthat)
+
+#knitr::opts_knit$set(
+#  root.dir = "~/Dropbox/ivyleavedtoadflax.github.io/" 
+#  )
+#setwd("~/Dropbox/ivyleavedtoadflax.github.io/")
+
+source("scripts/vicenty.R")
+source("scripts/haversine.R")
+
+knitr::opts_chunk$set(
+  message = FALSE, 
+  warning = FALSE,
+  cache = FALSE,
+  echo = FALSE
+  )
+
+
+
+```
+
+Last year I played around a bit with the New York [Citibike](http://www.citibikenyc.com/system-data) data, and looked a little bit at the [different use patterns](http://ivyleavedtoadflax.github.io/rstats/citiBike-gender/) among among the sexes, and between [subscribers and ad hoc users](http://ivyleavedtoadflax.github.io/rstats/do-women-take-the-scenic-route/) of the service.
+
+Being an Englishman, I was also wondering if there were differences between the patterns of bike usage on different sides of the Atlantic, so I recently got hold of the 20 million odd records of Barclay Bike data from the Transport for London [open data portal](http://www.tfl.gov.uk/info-for/open-data-users/our-open-data).
+
+There are some differences between what has been included in the TFL and Citibike data. Most notably we get less information about who is using the London bikes - the records are not split by user type, so we cannot tell regular users from occasional ones as in the NY data. This is a shame, because there are some very interesting patterns of usage that emerge from the NY data when you split by subscribers and occasional users:  what seems essentially to be commuters and tourists.
+
+### Weather data
+
+There are lots of other datasets available from New York and London which we can combine with these data; one of the most obvious is weather data. Data from weather stations all over the world are available from the [NCDC](http://www7.ncdc.noaa.gov/CDO/cdoselect.cmd?datasetabbv=GSOD&countryabbv=&georegionabbv=). 
+
+I've worked with weather data from NCDC before, so already I have some scripts for tidying up this data. A full description of the data is available [here](http://www7.ncdc.noaa.gov/CDO/GSOD_DESC.txt), but for simplicity I'm just going to look at daily mean temperature.
+
+The code is pretty straightforward, so I'll skip to some analysis, but as ever, all the code used to render this (and all other posts) can be found on [github](https://github.com/ivyleavedtoadflax/ivyleavedtoadflax.github.io/tree/master/_rmd)[^1].
+
+[^1]: I cheat a little bit in the source code here because the data is reasonably large and takes time to process, so I have already done some of the processing and saved out to .Rdata or .Rds objects.
+
+Here's how I'm going to go about it:
+
+* Find active weather stations close to the bike stations.
+* Check the coherency of the data from these stations.
+* Aggregate bike journeys into number of daily journeys.
+* Combine daily bike journeys with 'global surface summary of the day' (GSOD) data.
+* Make some interesting insights (or something...)
+
+### Find weather stations
+
+It can be a little hard to find out exactly which stations are operating, and exactly where they are. I've found that stations metadata can be a bit out of date, so I tend to go for a brute force approach. For the New York weather data, I pulled all of the data for the corresponding time period from all the stations in New York State.
+
+For the UK you can't easily limit the data down to the greater London region, so I just pulled all the UK data for the appropriate time period.
+
+#### New York
+
+So I'll start by seeing which weather stations are available in the local area.
+And because I selected a date range when I selected the data to download from the [NCDC](http://www7.ncdc.noaa.gov/CDO/cdoselect.cmd?datasetabbv=GSOD&countryabbv=&georegionabbv=), I already know that these stations were active for at least part of the time period that we are interested in.
+
+The lines in the plot below originate at the centroid of all the bike hire stations.
+
+```{r,warning=FALSE,echo=FALSE}
+
+# Load weather data fron New York state
+
+ny_weather <- "data/ny_weather.txt" %>%
+  read.csv %>%
+  tbl_df %>%
+  mutate(
+    date = ymd(YEARMODA),
+    stn = STN...
+    ) %>%
+  dplyr::select(
+    stn, WBAN, date, TEMP,
+    WDSP, MXSPD, GUST, MAX, MIN,
+    PRCP, SNDP, FRSHTT
+    )
+
+# Note that the station names are not included in the weather data, but they are
+# available for download. Here I load the station names data, and join it to the
+# weather data. The stations.csv is actually a bit out of date (I need to
+# donwload the latest one!), but it suffices for this post.
+
+station_names <- "data/stations.csv" %>%
+  read.csv(
+    na.strings = ""
+    )
+
+# Left join ny_weather data to station_names to get a list of the unique 
+# stations present in the weather data. First I want to know where the central
+# point of all the bike stations is, so I will load that data and calculate it.
+
+# This data I have in a sqlite database. When calling the journeys data I will
+# call it from an RData file as it will be much quicker than querying the
+# database, but for the sma;; stations data, I call directly from the sqlite db.
+# It's 2.9Gb, so I'm not making it available on github!
+
+nybikes_db <- src_sqlite(
+  "../R/Citibike/nybikes.db"
+  )
+
+ny_bike_stns <- tbl(
+  nybikes_db,
+  sql("select * from stns")
+  ) %>%
+  collect
+
+ny_centre <- c(
+  lon = ny_bike_stns$lon %>% mean,
+  lat = ny_bike_stns$lat %>% mean
+  )
+
+# Ok now join the stations data to the weather data
+
+ny_met_stns <- ny_weather %>% 
+  mutate(
+    USAF = stn
+    ) %>%
+  left_join(
+    station_names
+    ) %>%
+  mutate(
+    name = STATION_NAME,
+    lat = LAT %>% as.character %>% as.numeric %>% divide_by(1000),
+    lon = LON %>% as.character %>% as.numeric %>% divide_by(1000),
+    dist = gcd.vif(lon,lat,ny_centre["lon"],ny_centre["lat"]) %>% round(2),
+    begin = ymd(BEGIN),
+    end = ymd(END)
+    ) %>%
+  dplyr::select(
+    stn, name, lat, lon, dist, begin, end
+    ) %>%
+  distinct()
+
+# How many weather stations are we looking at here?
+
+#ny_met_stns %$% name %>% unique %>% length
+
+# ANd how far are these away from the bike stations?
+
+#ny_met_stns %$% dist %>% summary
+
+```
+
+```{r,2015-05-25-ny_bike_map}
+
+# create a plotting wrapper function
+
+plot_map <- function(
+  basemap, 
+  bike_stn_data, 
+  met_stn_data
+  ) {
+
+  ggmap(
+    basemap, 
+    extent = 'device',
+    legend = "bottomright"
+    ) +
+    geom_point(
+      data = bike_stn_data,
+      aes(
+        x = lon,
+        y = lat
+        ),
+      col = "steelblue4"
+      ) +
+    geom_point(
+      data = met_stn_data,
+      aes(
+        x = lon,
+        y = lat
+        )
+      ) +
+    geom_text(
+      data = met_stn_data,
+      aes(
+        label = paste(name,"\n",stn)
+        ),
+      size = 4,
+      col = "red",
+      hjust = 0,
+      vjust = 0
+      )
+  }
+
+
+# Plot this onto google maps tile using ggmap
+
+ny_map_12 <- get_map(
+  c(lon = -73.98771, lat = 40.72583), 
+  scale = 2,
+  zoom = 12,
+  source = "google"
+  )
+
+# Some problems with wrapping the segment call, so included separately
+
+  ggmap(
+    ny_map_12, 
+    extent = 'device',
+    legend = "bottomright"
+    ) +
+    geom_point(
+      data = ny_bike_stns,
+      aes(
+        x = lon,
+        y = lat
+        ),
+      col = "steelblue4"
+      ) +
+    geom_point(
+      data = ny_met_stns,
+      aes(
+        x = lon,
+        y = lat
+        )
+      ) +
+    geom_text(
+      data = ny_met_stns,
+      aes(
+        label = paste(name,"\n",stn)
+        ),
+      size = 4,
+      col = "red",
+      hjust = 0,
+      vjust = 0
+      )+ 
+  geom_segment(
+    data = ny_met_stns,
+    aes(
+      xend = -73.98771,
+      yend = 40.72583,
+      x = lon,
+      y = lat
+      )
+    )
+
+
+# Note that there are two stations very close together at Central Park:
+# NYC_CENTRAL_PARK and NANTUCKET_MEM
+
+# Now load the bike journey data. As noted this has already been aggregated for speed!
+
+```
+
+So it turns out that there are four weather stations in close proximity to the bike hire stations in New York. One (THE_BATTERY) appears to be at the end of a pier, so these measurements may not be completely representative of conditions within the city. 
+
+```{r,2015-05-25-ny_battery_map}
+
+battery <- ny_met_stns %>%
+  filter(name == "THE_BATTERY")
+
+battery_map <- get_map(
+  c(
+    lon = battery$lon,
+    lat = battery$lat
+    ), 
+  scale = 2,
+  zoom = 16,
+  source = "google",
+  maptype = "satellite"
+  )
+
+ggmap(
+  battery_map, 
+  extent = 'device',
+  legend = "bottomright"
+  ) +
+  geom_point(
+    data = battery,
+    aes(
+      x = lon,
+      y = lat
+      ),
+    col = "red"
+    )
+
+```
+
+That said, the other two likely candidates are within central park, and the final one is round 7 km from the middle point of the Citibike stations at La Guardia airport, so again, this may not be particularly representative.
+
+In the following table I have calculated linear distance from the centroid of bike stations to the individual weather stations using code from an excellent post on the subject [here](http://www.r-bloggers.com/great-circle-distance-calculations-in-r/) (in metres). Begin and end refer to the start and end of weather records.
+
+
+```{r}
+
+ny_met_stns_sub <- ny_met_stns %>% 
+  dplyr::filter(
+    dist <= 7000
+    )
+
+ny_met_stns_sub
+
+```
+
+
+#### London
+
+So what about London? There are two stations in the locality, one at St. James's Park, the other slightly further out at London city airport. The St. James's Park station is less than 800 m from the centroid of the Barclay Bike stations, so it should do nicely.
+
+```{r}
+
+# Now do the same for the UK weather data
+
+UK_weather <- "data/UK_weather.csv" %>%
+  read_csv %>%
+  tbl_df %>%
+  mutate(
+    date = ymd(YEARMODA),
+    stn = STN...
+  ) %>%
+  dplyr::select(
+    stn,WBAN,date,TEMP,
+    WDSP,MXSPD,GUST,MAX,MIN,
+    PRCP,SNDP,FRSHTT
+  )
+
+# Again load the location of the London bike stations
+
+londonbikes_db <- src_sqlite(
+  "../R/london_bikes/london_bikes.db"
+)
+
+london_bike_stns <- tbl( 
+  londonbikes_db,
+  sql("select * from stns")
+) %>%
+  collect
+
+london_centre <- c(
+  lon = london_bike_stns$lon %>% mean,
+  lat = london_bike_stns$lat %>% mean
+  )
+
+london_met_stns <- UK_weather %>% 
+  mutate(
+    USAF = stn
+    ) %>%
+  left_join(
+    station_names
+    ) %>%
+  mutate(
+    name = STATION_NAME,
+    lat = LAT %>% as.character %>% as.numeric %>% divide_by(1000),
+    lon = LON %>% as.character %>% as.numeric %>% divide_by(1000),
+    dist = gcd.vif(lon,lat,london_centre["lon"],london_centre["lat"]) %>% round(2),
+    #haver = haversine(lon,lat,london_centre["lon"],london_centre["lat"]) %>% round(2),
+    begin = ymd(BEGIN),
+    end = ymd(END)
+    ) %>%
+  dplyr::select(
+    stn, name, lat, lon, dist, begin, end
+    ) %>%
+  distinct()
+
+
+london_met_stns_sub <- london_met_stns %>% 
+  dplyr::filter(
+    dist <= 3600
+    )
+
+london_met_stns_sub
+
+# How many weather stations are we looking at here?
+
+#london_met_stns %$% name %>% unique %>% length
+
+# And how far are these away from the bike stations? Naturally we have quite a
+# few and they are quite far from central London, as this is data for the whole
+# of the UK
+
+#london_met_stns %$% dist %>% summary
+
+# Something a bit funny going on with the vicenty distance. It's clear whicha re
+# the closest stations, so I haven't spent time fixing the issue!
+
+
+```
+
+And London City airport...
+
+```{r,2015-05-25-london_bike_map}
+
+# Plot this onto google maps tile using ggmap
+
+london_map_12 <- get_map(
+  c(lon=-0.1168768,lat=51.5119514), 
+  scale = 2,
+  zoom = 12,
+  source = "google"
+  )
+
+  ggmap(
+    london_map_12, 
+    extent = 'device',
+    legend = "bottomright"
+    ) +
+    geom_point(
+      data = london_bike_stns,
+      aes(
+        x = lon,
+        y = lat
+        ),
+      col = "steelblue4"
+      ) +
+    geom_point(
+      data = london_met_stns,
+      aes(
+        x = lon,
+        y = lat
+        )
+      ) +
+    geom_text(
+      data = london_met_stns,
+      aes(
+        label = paste(name,"\n",stn)
+        ),
+      size = 4,
+      col = "red",
+      hjust = 0,
+      vjust = 0
+      )+ 
+  geom_segment(
+    data = london_met_stns,
+    aes(
+      xend = -0.1168768,
+      yend = 51.5119514,
+      x = lon,
+      y = lat
+      )
+    )
+
+```
+
+```{r,2015-05-25-london_bike_map_zoom}
+
+london_map_11 <- get_map(
+  c(lon = -0.1168768, lat = 51.5119514), 
+  scale = 2,
+  zoom = 11,
+  source = "google"
+  )
+
+
+  ggmap(
+    london_map_11, 
+    extent = 'device',
+    legend = "bottomright"
+    ) +
+    geom_point(
+      data = london_bike_stns,
+      aes(
+        x = lon,
+        y = lat
+        ),
+      col = "steelblue4"
+      ) +
+    geom_point(
+      data = london_met_stns,
+      aes(
+        x = lon,
+        y = lat
+        )
+      ) +
+    geom_text(
+      data = london_met_stns,
+      aes(
+        label = paste(name,"\n",stn)
+        ),
+      size = 4,
+      col = "red",
+      hjust = 0,
+      vjust = 0
+      )+ 
+  geom_segment(
+    data = london_met_stns,
+    aes(
+      xend = -0.1168768,
+      yend = 51.5119514,
+      x = lon,
+      y = lat
+      )
+    )
+
+
+```
+
+### Checking the data
+
+Next thing is to have a look at the integrity of the data coming from these stations.
+
+```{r}
+
+
+clean_weather <- function (x) {
+  
+  celsius <- function(y) {
+    round(
+      ((y - 32) * 5)/9,
+      2)
+  }
+  
+  x %<>% 
+    dplyr::mutate(
+      stn = factor(stn),
+      TEMP = ifelse((TEMP == 9999.9), NA, celsius(TEMP)),
+      WDSP = ifelse((WDSP == 999.9), NA, WDSP * 1.85200),
+      MXSPD =ifelse((MXSPD == 999.9), NA, MXSPD * 1.85200),
+      GUST = ifelse((GUST == 999.9), NA, GUST),
+      # It may be inportant to record later which values had asterisks
+      MAX_star = ifelse(grepl("*", MAX), T, F),
+      MAX = as.numeric(sub("\\*", "", MAX)),
+      MIN_star = ifelse(grepl("*", MIN), T, F),
+      MIN = as.numeric(sub("\\*", "", MAX)),
+      # And also the letters with each PRCP entry
+      PRCP = as.character(PRCP),
+      PRCP = ifelse((PRCP == "99.99"), NA, PRCP),
+      #PRCP_letter = regmatches(PRCP, regexpr("[A-I]", PRCP, perl = TRUE)),
+      PRCP = round(as.numeric(sub("[A-I]", "", PRCP)) * 0.393700787,4),
+      SNDP = ifelse((SNDP == 999.9), NA, SNDP)
+    ) %>% 
+    dplyr::select(
+      -FRSHTT
+    ) %>%
+    tbl_df
+  
+  return(x)
+  
+}
+
+```
+
+It's pretty clear that we can discard one of the NY met stations pretty quickly - the Nantucket memorial station has a very incomplete record indeed. And whilst the pattern is very similar, it looks as if the records from the the riverside battery station are a few degrees cooler than the Central Park measurements, so it may not be wise to include measurements from it either.
+
+
+```{r,2015-05-25-ny_weather_check}
+
+ny_weather_sub <- ny_weather %>% 
+  right_join(
+    ny_met_stns_sub %>% select(stn,name)
+    ) %>%
+  clean_weather
+
+ny_weather_sub %>%
+  dplyr::mutate(
+    year = year(date),
+    month = month(date),
+    stn = factor(stn)
+  ) %>%
+  dplyr::group_by(
+    year, stn
+  )  %>%
+  ggplot() +
+    aes(
+      x = date,
+      y = TEMP,
+      colour = name
+      ) + 
+  geom_line() + 
+  facet_wrap(
+    ~name, 
+    ncol = 1,
+    scales = "free_y"
+  ) +
+  xlab("Year") +
+  ylab(expression(Tempreature~(degree~C))) + 
+  theme(legend.position = "none")
+
+```
+
+And what about London? Records from the St. James's Park and London City airport stations look pretty similar, but the latter is a few kms away from the bike stations. Since the St. James's Park station is so close to the centroid, it makes sense just to use measurements from this station.
+
+```{r,2015-05-25-london_weather_check}
+
+london_weather_sub <- UK_weather %>% 
+  right_join(
+    london_met_stns_sub %>% select(stn,name)
+    ) %>% 
+  clean_weather
+
+
+london_weather_sub %>%
+  dplyr::mutate(
+    year = year(date),
+    month = month(date),
+    stn = factor(stn)
+    ) %>%
+  dplyr::group_by(
+    year, stn
+    )  %>%
+  ggplot() +
+  aes(
+    x = date,
+    y = TEMP,
+    colour = name
+    ) + 
+  geom_line() + 
+  facet_wrap(
+    ~name, 
+    ncol = 1,
+    scales = "free_y"
+    ) +
+  xlab("Year") +
+  ylab(expression(Tempreature~(degree~C))) + 
+  theme(legend.position = "none")
+
+```
+
+```{r}
+
+# Load the full NY bike journey data
+
+#load("~/Dropbox/newJamesShare/NewYorkBikes/bikes.RData")
+
+# ny_daily_gender <- bikes %>% 
+#   dplyr::group_by(
+#     year = year(starttime),
+#     date = round_date(starttime,"day"),
+#     gender
+#   ) %>%
+#   dplyr::summarise(
+#     obs = n()
+#   ) %>%
+#   left_join(
+#     ny_met_stns_sub
+#   )
+# 
+# ny_daily <- bikes %>% 
+#   dplyr::group_by(
+#     year = year(starttime),
+#     date = round_date(starttime,"day")
+#   ) %>%
+#   dplyr::summarise(
+#     obs = n()
+#   ) %>%
+#   left_join(
+#     ny_met_stns_sub
+#   )
+
+# Use this code to save out to RDS. But to save time I have already done it as
+# it takes a while! And limit to the battery and 
+
+ny_daily <- readRDS("ny_daily_journeys.Rds") %>%
+  filter(
+    stn %in% c(725060, 997271)
+    ) %>%
+  group_by(
+    date
+    ) %>%
+  summarise(
+    TEMP = mean(TEMP),
+    obs = mean(obs),
+        city = "New York"
+    )
+
+ny_daily_gender <- readRDS("ny_daily_journeys_gender.Rds") %>%
+  filter(
+    stn %in% c(725060, 997271)
+    ) %>%
+  group_by(
+    date, gender
+    ) %>%
+  summarise(
+    TEMP = mean(TEMP),
+    obs = mean(obs),
+    city = "New York"
+    ) 
+
+# Ok so now for the London bikes. I've output the 23,000,000 odd rows to an
+# sqlite database. I won't query this for the journey data, as I have already
+# output it to an RDS, but we can query it for the station data which will be
+# much quicker.
+
+# Load the journey data and aggregate it into daily journeys. I've already saved
+# this to RDS
+
+# journeys <- tbl( # load a database table
+#   londonbikes_db,
+#   sql("select * from journeys")
+# ) %>%
+#   collect
+# # 
+# journeys_daily <- journeys %>%
+#   dplyr::group_by(
+#     year = year(starttime),
+#     date = round_date(starttime,"day"),
+#     gender
+#   ) %>%
+#   dplyr::summarise(
+#     obs = n()
+#   )
+
+london_daily <- "../R/london_bikes/journeys_daily.Rds" %>%
+  readRDS %>%
+  dplyr::mutate(
+    city = "London",
+    gender = NA
+    ) %>%
+  dplyr::filter(
+    obs < 5000000
+    ) %>%
+  left_join(
+    london_weather_sub %>%
+      filter(
+        name == "ST_JAMES_PARK"
+        )
+    )   
+    
+```
+
+```{r}
+
+# rbind the NY and London datasets together for plotting
+
+daily <- london_daily  %>% 
+  dplyr::select(
+    date, obs, TEMP, city
+    )  %>% 
+  rbind_list(
+    ny_daily %>% 
+      dplyr::group_by(
+        date, city
+        ) %>% 
+      dplyr::summarise(
+        TEMP = mean(TEMP),
+        obs = mean(obs)
+        ) %>%
+      dplyr::select(
+        date, obs, TEMP, city
+        )
+    )
+    
+# rbind the NY and London data together to allow plotting, but include gender
+# this time
+
+daily_gender <- london_daily %>%
+  left_join(
+    london_weather_sub
+  ) %>% 
+  dplyr::select(
+    date, obs, TEMP, city, gender
+  )  %>% 
+  rbind_list(
+    ny_daily_gender  %>% 
+      dplyr::group_by(
+        date, city, gender
+      ) %>% 
+      dplyr::summarise(
+        TEMP = mean(TEMP),
+        obs = mean(obs)
+      )%>% 
+      dplyr::select(
+       date, obs, TEMP, city, gender
+      )
+  )
+
+```
+
+### Making some insights
+
+So having combined the weather data with daily journey counts, this is what comes out:
+
+```{r,2015-05-25-daily_journeys}
+
+# Create a similar plot for the UK
+
+daily %>%
+  ggplot() + 
+  aes(
+    x = TEMP,
+    y = obs,
+    col = city
+  ) +
+  geom_point(
+    alpha = 0.6
+  ) +
+  geom_smooth(
+    col = "navyblue"
+  )  +
+  theme(
+    legend.position = "none"
+  ) +
+  ylab(
+    "Daily journeys"
+  ) + 
+  xlab(
+    expression(Temperature~(degree~C))
+  ) +
+  facet_wrap(
+    ~city,
+    ncol = 2,
+    scales = "free_x"
+  )
+
+```
+
+```{r,2015-05-25-daily_journeys_weekday,eval=FALSE}
+
+daily %>%
+  mutate(
+    wday = wday(date),
+    Weekend = ifelse(wday %in% c(1,7),"Weekend","Weekday")
+    ) %>%
+  ggplot() + 
+  aes(
+    x = TEMP,
+    y = obs,
+    col = city
+  ) +
+  geom_point(
+    alpha = 0.6
+  ) +
+  geom_smooth(
+    col = "navyblue"
+  )  +
+  theme(
+    legend.position = "none"
+  ) +
+  ylab(
+    "Daily journeys"
+  ) + 
+  xlab(
+    expression(Temperature~(degree~C))
+  ) +
+  facet_grid(
+    Weekend~city
+  )
+
+
+```
+
+The first thing we can say is that New York has much greater extremes of weather than London - no surprise here (note the x axes deliberately not to the same scale).
+
+The response of the bike users to these extremes is much more interesting. In New York, the number of Citibike users drops off after about $20\,^{\circ}\mathrm{C}$, whilst in London we just get the hint of a drop off closer to $25\,^{\circ}\mathrm{C}$, which is more or less the maximum temperature recorded.
+
+Since the NY data also records some information about the type of user, we can drill down a little further.
+
+```{r,2015-05-25-daily_gender_journeys}
+
+# Create a plot of just the NY data split by gender
+
+daily_gender %>%
+  dplyr::filter(
+    city == "New York"
+  ) %>%
+  ggplot() + 
+  aes(
+    x = TEMP,
+    y = obs,
+    colour = gender
+  ) +
+  geom_point(
+    alpha = 0.6
+  ) +
+  #coord_cartesian(ylim = c(0,50000)) + 
+  geom_smooth(
+    col = "navyblue"
+  ) +
+  facet_wrap(
+    ~gender,
+    scales = "free",
+    ncol = 2
+  ) +
+  theme(
+    legend.position = "none"
+  ) +
+  ylab(
+    "Daily journeys"
+  ) + 
+  xlab(
+    expression(Temperature~(degree~C))
+  )
+
+```
+
+The male and female subscribers both show a pretty similar pattern which is obviously driving the shape of the curve we saw in the plot before. The NAs, which are made up of occasional users without subscriptions (for which we might assume tourists) show a very different pattern.
+
+Up to the maximum temperature of around $30\,^{\circ}\mathrm{C}$, the number of daily journeys slowly creeps up, and shows none of the steep drop off around $20\,^{\circ}\mathrm{C}$ evident among subscribers. In fact, the pattern is a lot more like that shown in the first plot for London users.
+
+### A whole load of caveats
+
+So this is a probably an oversimplistic way of looking at things. Some of the other questions we might consider are: what about other environmental variables: rainfall, snow depth, wind speed (which are all likely to be correlated with temperature). And what about weekday, maybe there will be different patterns for weekends and working days? I'll pick these interactions apart in a future post.
+
+#### And what about 19 August 2012?
+
+Trying to work out what is behind some of these outliers is an interesting question - like 19 August 2012 in London:
+
+```{r,2015-05-25-outlier}
+
+# What about the funny outliers?
+
+outlier <- daily %>%
+  filter(
+    city == "London",
+    TEMP > 20,
+    obs < 20000
+    )
+
+daily %>%
+  filter(
+    city == "London"
+    ) %>% 
+  ggplot() + 
+  aes(
+    x = TEMP,
+    y = obs,
+    col = city
+    ) +
+  geom_point(
+    alpha = 0.6
+    ) +
+  geom_smooth(
+    col = "navyblue"
+    )  +
+  theme(
+    legend.position = "none"
+    ) +
+  ylab(
+    "Daily journeys"
+    ) + 
+  xlab(
+    expression(Temperature~(degree~C))
+    ) +
+  geom_point(
+    data = outlier,
+    col = "red",
+    size = 5
+    )
+
+```
+
+A cursory Google search reveals nothing of note, but there were only a third of users on bikes compared to the two subsequent years.
+
+```{r}
+daily %>%
+  mutate(
+    month = month(date),
+    year = year(date),
+    day = day(date)
+    ) %>%
+  filter(
+    city == "London",
+    month == 8,
+    day == 19
+    )
+```
+
+It was the hottest day of 2012, and did happen to fall on a Sunday...
+
+```{r}
+daily %>%
+  mutate(
+    month = month(date),
+    year = year(date),
+    day = day(date),
+    wday = wday(date,label = T, abbr = F)
+    ) %>%
+  filter(
+    city == "London",
+    year == 2012
+    ) %>%
+  top_n(5,TEMP
+        ) %>%
+  arrange(
+    date
+    )
+```
+
+but usage was still markedly lower than other warm weekend days in 2012...
+
+```{r}
+daily %>%
+  mutate(
+    month = month(date),
+    year = year(date),
+    day = day(date),
+    wday = wday(date,label = T, abbr = F)
+    ) %>%
+  filter(
+    wday %in% c("Saturday", "Sunday"),
+    city == "London",
+    year == 2012
+    ) %>%
+  top_n(5,TEMP
+        ) %>%
+  arrange(
+    date
+    )
+```
+
+2013...
+
+```{r}
+daily %>%
+  mutate(
+    month = month(date),
+    year = year(date),
+    day = day(date),
+    wday = wday(date,label = T, abbr = F)
+    ) %>%
+  filter(
+    wday %in% c("Saturday", "Sunday"),
+    city == "London",
+    year == 2013
+    ) %>%
+  top_n(5,TEMP
+        ) %>%
+  arrange(
+    date
+    )
+
+```
+
+and 2014...
+
+```{r}
+
+daily %>%
+  mutate(
+    month = month(date),
+    year = year(date),
+    day = day(date),
+    wday = wday(date, label = T, abbr = F)
+    ) %>%
+  filter(
+    wday %in% c("Saturday", "Sunday"),
+    city == "London",
+    year == 2014
+    ) %>%
+  top_n(5,TEMP
+        ) %>%
+  arrange(
+    date
+    )
+```
+
+Maybe it was just as nice day for a BBQ?
+
+```{r}
+sessionInfo()
+```

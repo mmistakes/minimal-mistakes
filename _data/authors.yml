@@ -1,20 +1,22 @@
 # Authors
 
-billy_rick:
-  name: Billy Rick
-  web: http://thewhip.com
-  email: billy@rick.com
-  bio: "What do you want, jewels? I am a very extravagant man."
+matthew_gregory:
+  name: Matthew Gregory
+#  web: http://thewhip.com
+#  email: billy@rick.com
+#  bio: "What do you want, jewels? I am a very extravagant man."
   avatar: bio-photo-2.jpg
-  twitter: extravagantman
-  google:
-    plus: BillyRick
+#  twitter: extravagantman
+#  google:
+#    plus: BillyRick
 
-cornelius_fiddlebone:
-  name: Cornelius Fiddlebone
-  email: cornelius@thewhip.com
-  bio: "I ordered what?"
-  avatar: bio-photo.jpg
-  twitter: rhymeswithsackit
-  google:
-    plus: CorneliusFiddlebone
+
+matt_upson:
+  name: Matt Upson
+  avatar: mu.jpg
+  bio: "Data Scientist"
+  disqus-shortname: matthewupson
+  twitter: m_a_upson
+  github: ivyleavedtoadflax
+  stackoverflow: 3369034/ivyleavedtoadflax
+  linkedin: maupson

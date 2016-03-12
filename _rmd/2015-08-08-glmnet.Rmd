@@ -1,0 +1,500 @@
+---
+title: 'Elastic-net regularisation'
+date: '2015-08-08'
+modified: `r format(Sys.time(), '%Y-%m-%d')`
+excerpt: "Using R package glmnet for regularisation"
+layout: post
+published: yes
+status: processed
+comments: true
+categories: [Rstats]
+tags: [R, machine learning, linear regression, regularisation]
+---
+
+```{r,2015-08-08-load-packages,echo=FALSE,message=FALSE,warning=FALSE}
+
+knitr::opts_chunk$set(
+  message = FALSE, 
+  warning = FALSE, 
+  echo = FALSE
+  )
+
+#checkpoint::setSnapshot("2015-05-15")
+checkpoint::checkpoint("2015-05-15", use.knitr = TRUE)
+
+library(dplyr)
+library(magrittr)
+library(boot)
+library(ucminf)
+library(ggplot2)
+library(tidyr)
+library(RColorBrewer)
+library(glmnet)
+
+pal <- brewer.pal(6,"Set1")
+
+```
+
+
+### A more formalised implementation of regularisation
+
+A short while ago I published a [post](../regularised-linear-regression/index.html) based on an exercise from Andrew Ng's Machine Learning course on [Coursera](http://www.coursera.com). In that post I implemented regularisation for a vectorised implementation of linear regression. In reality when approaching a machine learning problem, I wouldn't want to rely on functions I have written myself when there are fully formed packages supporting these techniques. So in this post I'm going to reproduce the analysis from my [previous post](../regularised-linear-regression/index.html) but using the R package [glmnet](https://cran.r-project.org/web/packages/glmnet/index.html). Glmnet is a package of functions for generalised linear models that has been implement in R by [Trevor Hastie and Junyang Qian](http://web.stanford.edu/~hastie/glmnet/glmnet_alpha.html).
+
+In my previous [post](../regularised-linear-regression/index.html), the code I implemented solved the minimisation problem:
+
+$$
+\min_{\theta}\frac{1}{2m}\Big(\sum^{m}_{i=1}(h_{\theta}(x^{(i)})-y^{(i)})^2\Big)+\frac{\lambda}{2m}\Big(\sum^{n}_{j=1}\theta^2_j\Big)
+$$
+
+where the first summation is essentially the usual sum of the squared differences between the expected and the observed, and the addition is the regularisation term.
+
+The `glmnet` function solves the problem[^1]:
+
+[^1]:[http://web.stanford.edu/~hastie/glmnet/glmnet_alpha.html](http://web.stanford.edu/~hastie/glmnet/glmnet_alpha.html)
+
+$$
+\min_{\beta_0,\beta} \frac{1}{N} \sum_{i=1}^{N} w_i l(y_i,\beta_0+\beta^T x_i) + \lambda\left[(1-\alpha)||\beta||_2^2/2 + \alpha ||\beta||_1\right]
+$$
+
+There are a few additional parameters here, but fundamentally the problem is the same. The function $l(y,\eta)$ for the Gaussian case (i.e. a simple linear model with a normal error structure) is equivalent to $\frac{1}{2}(y-\eta)^2$,and we can make the regularisation term look a lot more familiar by referring to Friedman et al. (2010)[^2].
+
+[^2]:Friedman, J., Hastie, T. and Tibshirani, R. (2010) ‘Regularization Paths for Generalized Linear Models via Coordinate Descent’, Journal of Statistical Software January, 33(1)
+
+$$
+\min_{\theta} \frac{1}{2m} \Big[\sum_{i=1}^{m} w_i (h_{\theta}(x_i) - y_i)^2\Big]  + \lambda \sum^n_{j=1} \Big[ \frac{1}{2} (1-\alpha) \theta^2_j + \alpha|\theta_j|\Big]
+$$
+
+So this is much closer to the problem I was working with before. $\vec{w}$ is simply a vector of weights of length $m$ which default to 1. Then there is the parameter $\alpha$ which controls the rather enigmatically named *elastic-net* penalty ($a\in\{0,1\}$). We see the original summation of the $j$ elements of $\theta$ ($\sum^n_{j=1} \theta^{2}_j$), but each element is multiplied by $\frac{1}{2}(1-\alpha)$ (also $(1-a)\in\{0,1\}$)  to which $\alpha \times$ the absolute value of $\theta_j$ is added.
+
+$\alpha$ is important: setting $\alpha = 1$ will result in lasso regularisation, whilst $\alpha = 0$ gives you ridge regularisation. The practical significance of this is that using ridge regression will not totally remove features from the regression, but just reduces their importance. Lasso on the other hand will set parameters to zero, thus removing features from the regression[^3] entirely. $\alpha$ is thus set somewhere between the two extremes; according to the [documentation](http://web.stanford.edu/~hastie/glmnet/glmnet_alpha.html), setting $\alpha=0.5$ is effective in selecting groups of correlated features, and including or excluding them from the model.
+
+[^3]: [https://en.wikipedia.org/wiki/Least_squares#Lasso_method](https://en.wikipedia.org/wiki/Least_squares#Lasso_method) and [http://web.stanford.edu/~hastie/glmnet/glmnet_alpha.html](http://web.stanford.edu/~hastie/glmnet/glmnet_alpha.html).
+
+So with a little digging, this equation is not quite as scary as it first looked, and is not so different from the regularisation that I have already been using.
+
+### glmnet in action
+
+```{r,2015-08-08-split-data}
+
+set.seed(1337)
+orig_data <- mtcars[1:4] %>%
+  mutate(
+    cyl = ordered(cyl), # should cyl be continuous or categorical?
+    n = row_number()
+  )
+
+train <- orig_data %>%
+  sample_frac(
+    .6
+  )
+
+test <- orig_data %>%
+  filter(
+    !n %in% train$n
+    )
+
+cross <- test %>%
+  sample_frac(
+    .5
+  )
+
+test <- test %>%
+  filter(
+    !n %in% cross$n
+  )
+
+```
+
+For this example, I again use the `mtcars` dataset, and make the same split of the data as before. So in the training set $m=`r nrow(train)`$ and $n = `r ncol(train)-2`$: `r paste(colnames(train)[2:4],collapse=", ")`.
+
+Here's what it looks like:
+
+```{r,2015-08-08-plot-all-data1,fig.width=12}
+
+orig_data %<>%
+  mutate(
+    set = ifelse(
+      n %in% train$n, 
+      "train", 
+      ifelse(n %in% cross$n,"cross","test")
+    )
+  )
+
+p <- orig_data %>% 
+  ggplot +
+  geom_point(
+    aes(
+      x = disp,
+      y = mpg,
+      shape = cyl,
+      colour = hp
+    ),
+    size = 4
+  ) +
+  xlab(
+    expression(Displacement~("in"^2))
+  ) +
+  ylab(
+    expression(mi~gal^-1)
+  ) +
+  scale_x_continuous(limits=c(50,500)) +
+  scale_y_continuous(limits=c(10,35))
+
+
+p %+% facet_wrap(
+  ~set
+)
+
+``` 
+
+```{r}
+
+J_train <- function(predicted, actual) {
+  
+  m <- length(y)
+  
+  error <- predicted - actual
+  error <- crossprod(error, error)
+  
+  return(
+      (1/m) * error
+  )
+  
+}
+
+```
+
+From here on I follow the quick start guide in the `glmnet` [documentation](http://web.stanford.edu/~hastie/glmnet/glmnet_alpha.html). To start with, I'll stick to just the original features, and not add any polynomials as [before](../regularised-linear-regression/index.html).
+
+```{r,echo=TRUE}
+
+y <- train$mpg
+
+# Note that it is not necesary to include a column of ones as it was in my
+# implementation. Actually it doesn't matter if you do, this just gets
+# simplified away.
+
+X_train <- cbind(train$cyl,train$disp,train$hp)
+
+```
+
+The simple use case is as follows:
+
+```{r,echo=TRUE}
+fit = glmnet(X_train,y)
+```
+
+When printed, this gives a summary of each step towards minimisation with the number of coefficients not set to zero (`Df`), the % of null deviance the model explains, and the value of $\lambda$ that was tried. In the present case, the process stops early at 55 (default is 100) because the deviance explained had remained fairly constant.
+
+We can use the `coef` method to extract the coefficients for a given $\lambda$. Setting $\lambda=0$, i.e. no regularisation results in very similar coefficients returned in my previous post for the simple linear multiple regression.
+
+```{r,echo=TRUE}
+coef(fit, s = 0)
+```
+
+And it looks pretty linear (in this and all the plots that follow, the red symbols are the values predicted by the model, whilst blue are the training/test set values):
+
+```{r,2015-08-08-glmnet1}
+
+pred <- predict(fit, newx = X_train,s = 0) %>% c
+
+train$pred <- pred
+
+
+p %+% train +
+  geom_point(
+    data = train,
+    aes(
+      x = disp,
+      y = pred,
+      shape = cyl
+    ),
+    col = "red",
+    size = 3
+  ) +
+  geom_smooth(
+    data = train,
+    aes(
+      x = disp,
+      y = pred
+    ),
+    se = FALSE,
+    method = "lm"
+  )
+
+```
+
+
+Note that if you don't specify a $\lambda$ with `s=0`, then `predict` will return all the models evaluated - in this case 55.
+
+To choose a model, we can use cross validation which is nicely implemented in the `cv.glmnet()` function, and specified in the same way. For this example I'm going to add third order polynomials to $X$ to try to capture some of the curvature evident in the plots. 
+
+```{r,echo=TRUE}
+X_train_3 <- poly(X_train, degree = 3, raw = TRUE)
+```
+
+On $n=3$ features, this results in $n=`r ncol(X_train_3)`$ total features after creation of polynomials, on just $m=`r nrow(X_train_3)`$ training examples. So this model could lead to bad overfitting, but is a great chance to test out regularisation.
+
+```{r,echo=TRUE}
+cvfit <- cv.glmnet(
+  x = X_train_3,
+  y = y
+)
+```
+
+Again, printing this object will give a list of all the models tried, with varying $\lambda$, but with two additional slots: `$lambda.min`, and `$lambda.1se`. These are respectively the value of $\lambda$ that gives the minimum mean cross-validated error, and the value of $\lambda$ which gives the most heavily regularised model, but is still within 1 standard error of `$lambda.min`.
+
+We can extract the coefficients for these with:
+
+```{r,echo=TRUE}
+coef(cvfit,"lambda.min")
+```
+
+Note that a full stop would indicate that the parameter have been set to zero. Interestingly, after cross-validation only the original features have been retained. A plot of the object `cv.fit` is informative, and shows that the best mean squared errors are obtained with only three parameters.
+
+```{r,2015-08-08-plot-cv-fit,echo=TRUE}
+plot(cvfit)
+```
+
+This may suggest that to retain more parameters in the model, I need to adjust the $\alpha$ parameter closer to 0, (i.e. ridge regression) which will not remove parameters from the model totally.
+
+Comparing the result here (using the $J_{train}$ function I defined [previously](../regularised-linear-regression/index.html) with the training errors obtained in the previous post, neither of the two models (`lambda.min` and `lambda.1se`) match the performance of the regularised models which retained all 19 parameters ($\approx 4$).
+
+```{r,echo=TRUE}
+J_train(
+  predicted = predict(cvfit, newx = X_train_3,s = "lambda.min"),
+  actual = train$mpg
+) %>% 
+  round(2)
+
+```
+
+So let's try again, this time adjusting the parameter $\alpha$.
+
+```{r,echo=TRUE}
+cvfit_a0 <- cv.glmnet(
+  x = X_train_3,
+  y = y,
+  alpha = 0
+)
+
+coef(cvfit_a0,s="lambda.min")
+
+```
+
+OK so this time we have retained all of the parameters, but the coefficients are very small, and unlikely to wield much influence on the model.
+
+So what about the errors? the $\alpha=0$ ridge model fares less well than the $\alpha=0.5$ *elastic-net* model.
+
+```{r}
+J_train(
+  predicted = predict(cvfit_a0, newx = X_train_3,s = "lambda.min"),
+  actual = train$mpg
+) %>% 
+  round(2)
+
+```
+
+Of course this is training set error. What about the test set?
+
+```{r}
+
+X_test <- cbind(test$cyl, test$disp, test$hp)
+X_test_3 <- poly(X_test, degree = 3, raw = TRUE)
+
+J_train(
+  predicted = predict(cvfit, newx = X_test_3,s = "lambda.min"),
+  actual = test$mpg
+) %>% 
+  round(2)
+
+```
+
+How does this look plotted? First $\alpha=0.5$ (the default):
+
+```{r,2015-08-08-glmnet2}
+
+pred <- predict(cvfit, newx = X_test_3,s = "lambda.min") %>% c
+
+test$pred <- pred
+
+
+p %+% test +
+  geom_point(
+    data = test,
+    aes(
+      x = disp,
+      y = pred,
+      shape = cyl
+    ),
+    col = "red",
+    size = 3
+  ) +
+  ggtitle(expression(alpha:~0.5)) +
+  geom_smooth(
+    data = test,
+    aes(
+      x = disp,
+      y = pred
+    ),
+    se = FALSE,
+    method = "lm"
+  )
+
+```
+
+And for $\alpha = 0$.
+
+```{r,2015-08-08-glmnet3}
+
+pred <- predict(cvfit_a0, newx = X_test_3,s = "lambda.min") %>% c
+
+test$pred <- pred
+
+
+p %+% test +
+  geom_point(
+    data = test,
+    aes(
+      x = disp,
+      y = pred,
+      shape = cyl
+    ),
+    col = "red",
+    size = 3
+  ) +
+  ggtitle(expression(alpha:~0)) +
+  geom_smooth(
+    data = test,
+    aes(
+      x = disp,
+      y = pred
+    ),
+    se = FALSE,
+    method = "lm"
+  )
+
+```
+
+Setting $\alpha=0$ definitely makes things worse, but neither model captures the curvature inherent in the data.
+
+### A simpler model
+
+OK so $m=n$ is a pretty extreme example which is a bit out of the ordinary. I'll repeat the above with only using a second degree polynomial which gives $n=9$ features.
+
+```{r,echo=TRUE}
+
+X_train_2 <- poly(X_train, degree = 2, raw = TRUE)
+
+cvfit_2 <- cv.glmnet(
+  x = X_train_2,
+  y = y
+)
+
+coef(cvfit_2,s="lambda.min")
+
+```
+
+With just second degree polynomials and the default $\alpha = 0.5$, most of the parameters have been retained in the model, and the error is looking a lot smaller:
+
+```{r}
+
+J_train(
+  predicted = predict(cvfit_2, newx = X_train_2,s = "lambda.min"),
+  actual = train$mpg
+) %>% 
+  round(2)
+
+```
+
+But how does it plot?
+
+```{r,2015-08-08-glmnet4}
+
+pred <- predict(cvfit_2, newx = X_train_2,s = "lambda.min") %>% c
+
+train$pred <- pred
+
+
+p %+% train +
+  geom_point(
+    data = train,
+    aes(
+      x = disp,
+      y = pred,
+      shape = cyl
+    ),
+    col = "red",
+    size = 3
+  )
+
+```
+
+Now this is looking much more promising! How does it fare on the test set?
+
+```{r,2015-08-08-glmnet5}
+
+X_test_2 <- poly(X_test, degree = 2, raw = TRUE)
+
+pred <- predict(cvfit_2, newx = X_test_2,s = "lambda.min") %>% c
+
+test$pred <- pred
+
+
+p %+% test +
+  geom_point(
+    data = test,
+    aes(
+      x = disp,
+      y = pred,
+      shape = cyl
+    ),
+    col = "red",
+    size = 3
+  )
+
+```
+
+Also looking like a pretty strong fit. And the error?
+
+```{r}
+
+J_train(
+  predicted = predict(cvfit_2, newx = X_test_2,s = "lambda.min"),
+  actual = test$mpg
+) %>% 
+  round(2)
+
+```
+
+
+```{r,eval=FALSE,2015-08-08-glmnet6}
+
+cvfit_2
+
+data.frame(
+  lambda = cvfit_2$glmnet.fit$lambda,
+  dev = cvfit_2$glmnet.fit$dev.ratio,
+  df = cvfit_2$glmnet.fit$df
+) %>%
+  filter(
+    df == 9
+  ) %>%
+  ggplot + 
+  aes(
+    x = lambda,
+    y = dev
+  ) +
+  geom_line()
+
+```
+
+Interestingly this is slightly higher than the errors of 1.00 and 1.03 achieved in using the simpler code I implemented in my earlier post. This is surprising, as intuitively from plots I would have said that the `glmnet` model has performed better. I may have to check this...
+
+It's also interesting to see that `glmnet` did not perform well when I included the *extreme case* scenario of a single feature for a single training example, yet the simpler algorithm I implemented produced almost identical results when including second or third order polynomials (albeit with a different $\lambda$). All that said, `glmnet` is incredibly simple to use (and parallel computing ready), and I will certainly be using it from now on when dealing with these kinds of problems.
+
+----
+
+```{r}
+sessionInfo()
+```
