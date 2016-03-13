@@ -8,3 +8,5 @@ node_modules
 _asset_bundler_cache
 .jekyll-metadata
 .Rproj.user
+*.Rproj
+.Rhistory

@@ -21,6 +21,7 @@ MachingGurning.com makes use of the [Minimal Mistakes](http://mmistakes.github.i
     * compile the Rmd into a github acceptable format saved in `_posts/`
     * remove exifs from jpegs saved in `figures/`
 * Add the newly created `*.md* file to the repository using `git add`.
+* **Be sure to changed the status to `status: processed` to ensure that this `.Rmd` is not continually compiled.
 * Be sure to add all related files (e.g. data and especially figures).
 * Push the data to the machinegurning repository. Avoid making forced pushes, and ideally squash all commits prior to pushing to ensure that each post occupies just a single commit on the master branch.
 
@@ -28,7 +29,7 @@ MachingGurning.com makes use of the [Minimal Mistakes](http://mmistakes.github.i
 
 * svg format is preferable: use `dev="svg"` in chunk options. Very large images with many many poitns should be rendered as png to avoid slow loading.
 * Large figures should be posted as links to raw image file in github. This can be achieved automatically using `sed`. For example `[Image 1](figures/image1.svg)` should become `![(Image 1](figures/image1.svg)](figures/image1.svg)`. This change needs to made in the raw .md document. Be aware that future changes to the Rmd will overwrite this. Something like this may help:
-
+* Use `$$ a + b $$` and `$ a + b $` for math blocks and inline math respectively.
 ```
 # To find relevant figure links:
 
