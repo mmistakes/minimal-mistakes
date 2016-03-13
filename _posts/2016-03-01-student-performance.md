@@ -21,7 +21,7 @@ Education is a key factor affecting long term economic progress. Success in the 
  
 ## The Data  
  
-The [data](https://archive.ics.uci.edu/ml/datasets/Student+Performance) was downloaded from the UCI Machine Learning database and inspired by Cortez *et al*., 2008. We use maths results data only. We start off by clearing the workspace, then setting the working directory to match the location of the student maths data file. A caveat, note that the data is not comma-seperated but semi-colon seperated, ne sure to specify this in the `sep` argument in the `read.table()` function. Normally you should refer to the `sessionInfo()` output at the foot of this blog-post to determine which packages are installed and loaded for this, however as there are quite a few, this time we detail them here.
+The [data](https://archive.ics.uci.edu/ml/datasets/Student+Performance) was downloaded from the UCI Machine Learning database and inspired by Cortez *et al*., 2008. We use maths results data only. We start off by clearing the workspace, then setting the working directory to match the location of the student maths data file. A caveat, note that the data is not comma-seperated but semi-colon seperated, be sure to specify this in the `sep` argument in the `read.table()` function. Normally you should refer to the `sessionInfo()` output at the foot of this blog-post to determine which packages are installed and loaded for this, however as there are quite a few, this time we detail them here.
  
 
 {% highlight r %}
@@ -169,7 +169,7 @@ summary(m)
 ## C5.0.default(x = data_train[-13], y = data_train$final)
 ## 
 ## 
-## C5.0 [Release 2.07 GPL Edition]  	Sun Mar 13 00:53:46 2016
+## C5.0 [Release 2.07 GPL Edition]  	Sun Mar 13 21:08:40 2016
 ## -------------------------------
 ## 
 ## Class specified by attribute `outcome'
@@ -325,19 +325,14 @@ sessionInfo()
 ## [1] methods   stats     graphics  grDevices utils     datasets  base     
 ## 
 ## other attached packages:
-##  [1] rpart.plot_1.5.3 rpart_4.1-10     gmodels_2.16.2   C50_0.1.0-24    
-##  [5] scales_0.3.0     broom_0.4.0      readr_0.2.2      ggplot2_2.0.0   
-##  [9] magrittr_1.5     lubridate_1.5.0  dplyr_0.4.3      testthat_0.11.0 
-## [13] knitr_1.12.3    
+## [1] rpart.plot_1.5.3 rpart_4.1-10     gmodels_2.16.2   C50_0.1.0-24    
+## [5] dplyr_0.4.3      testthat_0.11.0  knitr_1.12.3    
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] Rcpp_0.12.2      formatR_1.2.1    plyr_1.8.3       tools_3.2.3     
-##  [5] partykit_1.0-5   digest_0.6.8     evaluate_0.8     memoise_0.2.1   
-##  [9] nlme_3.1-123     gtable_0.1.2     lattice_0.20-33  mgcv_1.8-7      
-## [13] Matrix_1.2-3     psych_1.5.8      DBI_0.3.1        parallel_3.2.3  
-## [17] stringr_1.0.0    gtools_3.5.0     grid_3.2.3       R6_2.1.1        
-## [21] survival_2.38-3  gdata_2.17.0     reshape2_1.4.1   tidyr_0.3.1     
-## [25] MASS_7.3-44      splines_3.2.3    assertthat_0.1   mnormt_1.5-3    
-## [29] colorspace_1.2-6 labeling_0.3     stringi_1.0-1    lazyeval_0.1.10 
-## [33] munsell_0.4.2    crayon_1.3.1
+##  [1] Rcpp_0.12.2     magrittr_1.5    splines_3.2.3   MASS_7.3-44    
+##  [5] R6_2.1.1        stringr_1.0.0   tools_3.2.3     parallel_3.2.3 
+##  [9] grid_3.2.3      DBI_0.3.1       gtools_3.5.0    lazyeval_0.1.10
+## [13] survival_2.38-3 assertthat_0.1  digest_0.6.8    crayon_1.3.1   
+## [17] formatR_1.2.1   memoise_0.2.1   evaluate_0.8    gdata_2.17.0   
+## [21] stringi_1.0-1   partykit_1.0-5
 {% endhighlight %}

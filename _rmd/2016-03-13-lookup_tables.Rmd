@@ -1,0 +1,142 @@
+---
+title: "Lookup tables"
+author: matt_gregory
+comments: yes
+date: '2016-03-13'
+modified: `r format(Sys.time(), '%Y-%m-%d')`
+layout: post
+excerpt: "Using character matching for quick lookups"
+published: no
+status: process
+tags:
+- R
+- lookups
+- education
+categories: Rstats
+---
+
+{% include _toc.html %}
+
+```{r setup,include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE
+  )
+```
+
+Character matching provides a powerful way to make lookup tables. There are more concise functions available in packages like `dplyr` that achieve the same end but it is useful to understand how they are implemented with basic subsetting.
+
+```{r,TRUE,warning=FALSE,message=FALSE}
+
+library(dplyr)
+
+```
+
+We start off by building an example dataframe.
+
+```{r}
+
+set.seed(1337)  # we use rnorm
+
+pupil_data <- data.frame(
+  studentid = 1:12,
+  school = c("Park view", "Grange Hill", "Sweet valley"),
+  superoutputarea = c("E01011949", "E01011105", "E01011333"),
+  attainment = (rnorm(n = 12)),
+  stringsAsFactors = FALSE  #  we can modify the class of variables later if required
+)
+
+```
+
+If we look at the data, we notice the variable [`superoutputarea`](https://neighbourhood.statistics.gov.uk/HTMLDocs/nessgeography/superoutputareasexplained/output-areas-explained.htm) is a nine digit code that doesn't tell a human much.
+We are interested in how the area relates to the socio-economic classification of typical people who live in that area or a measure of deprivation of the area.
+We must convert this into the more informative proxy which can then be used in our machine learning tools later.
+
+```{r}
+pupil_data
+str(pupil_data)
+```
+
+What we need is a list which contains the necessary translation for `superoutputarea`. We define that here as `lookup`. A 7-point scale is used for deprivation with Sweet Valley High in a wealthy area and Park View in a deprived area.
+
+```{r}
+
+lookup <- c("E01011949" = 1, "E01011105" = 3, "E01011333" = 7)
+
+```
+
+To convert we simply:
+
+```{r}
+
+lookup[pupil_data$superoutputarea]
+#  if we don't want the names in the result
+unname(lookup[pupil_data$superoutputarea])
+
+```
+
+Thus we can use this to create a new variable called `depriv`. 
+
+```{r}
+
+pupil_data$depriv <- NULL
+pupil_data$depriv <- unname(lookup[pupil_data$superoutputarea])
+pupil_data
+str(pupil_data)  #  check variables are of appropriate class
+
+```
+
+Great, now we can use this dataframe for machine learning.
+What if we have a large dataframe, are there more concise and faster ready made functions to use?
+Probably but we won't elucidate that here, we just assume `dplyr` is fast as it passess to `C++`.
+Plus I like `dplyr` with its nice chaining.
+
+```{r}
+
+mutate(pupil_data, depriv2 = unname(lookup[pupil_data$superoutputarea]))
+
+```
+
+Sometimes we might have a more complicated lookup table which has multiple columns of infomation.
+Suppose we take our vector of attainment grades and round them to the nearest whole number.
+
+```{r}
+
+pupil_data <- mutate(pupil_data, grade = round(attainment, digits = 0))
+
+grades <- pupil_data$grade
+
+info <- data.frame(
+  grade = -3:3,
+  desc = c("Awful", "Rubbish", "Poor", "OK", "Satisfactory", "Good", "Awesome"),
+  pass = c(F, F, F, T, T, T, T)
+)
+
+```
+
+We want to duplicate the `info` table so that we have a row for each values in `grade`. We can do this in two ways either using `match()` and integer subsetting, or `rownames()` and character subsetting:
+
+```{r}
+
+# using match
+id <- match(grades, info$grade)
+info[id, ]
+
+# using rownames
+rownames(info) <- info$grade
+info[as.character(grades), ]
+
+```
+
+We have matched the `grade` of the student with its appropriate descriptor and pass / fail status using a more complicated lookup table.
+
+## Conclusion
+A named character vector can act as a simple lookup table. We could even read this in from a csv file. Lookup is simple in R.
+
+## References
+* Wickham, H. (2015). Advanced R.
+
+```{r}
+
+sessionInfo()
+
+```

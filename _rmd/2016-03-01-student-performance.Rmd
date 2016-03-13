@@ -21,7 +21,7 @@ Education is a key factor affecting long term economic progress. Success in the 
 
 ## The Data  
 
-The [data](https://archive.ics.uci.edu/ml/datasets/Student+Performance) was downloaded from the UCI Machine Learning database and inspired by Cortez *et al*., 2008. We use maths results data only. We start off by clearing the workspace, then setting the working directory to match the location of the student maths data file. A caveat, note that the data is not comma-seperated but semi-colon seperated, ne sure to specify this in the `sep` argument in the `read.table()` function. Normally you should refer to the `sessionInfo()` output at the foot of this blog-post to determine which packages are installed and loaded for this, however as there are quite a few, this time we detail them here.
+The [data](https://archive.ics.uci.edu/ml/datasets/Student+Performance) was downloaded from the UCI Machine Learning database and inspired by Cortez *et al*., 2008. We use maths results data only. We start off by clearing the workspace, then setting the working directory to match the location of the student maths data file. A caveat, note that the data is not comma-seperated but semi-colon seperated, be sure to specify this in the `sep` argument in the `read.table()` function. Normally you should refer to the `sessionInfo()` output at the foot of this blog-post to determine which packages are installed and loaded for this, however as there are quite a few, this time we detail them here.
 
 ```{r,echo=TRUE,warning=FALSE,message=FALSE}
 

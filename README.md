@@ -8,7 +8,7 @@ MachingGurning.com makes use of the [Minimal Mistakes](http://mmistakes.github.i
 ### Instructions for authoring
 
 * Author a post as normal using RStudio in `.Rmd` format and save in _rmd/
-* Files should be named date first in the format: `2016-03-12_a_blog_post.Rmd`. All associated files should be prefixed with the same date (e.g. data or figures; to achieve the latter, you must ensure that every figure producing R chunk is named appropriately, e.g. `{r 2016-03-12_image_producing_code}`).
+* Files should be named date first in the format: `2016-03-12-a_blog_post.Rmd` (note that it must be `2016-03-12-...` not 2016-03-12_...` -- **this will not work**). All associated files should be prefixed with the same date (e.g. data or figures; to achieve the latter, you must ensure that every figure producing R chunk is named appropriately, e.g. `{r 2016-03-12_image_producing_code}`).
 * Drafts should be completed in the `dev` branch, and multiple commits rebased in the to `master` branch so that each new post is based on just a single commit (at first).
 * All data should be saved in `data/`, and all figures/images saved in `figures/` **Do not save anything in `_data/`: this will cause a build failure when uplaoding to github**
 * Look at a previous post and copy the YAML header for consistency. Pay particular attention to the categories. Posts predominantly written in R should be categorised as Rstats. This is to ensure the post is picked up by the correct feed for sites like RBloggers (we still need to register as of 2016-03-12).
@@ -17,7 +17,7 @@ MachingGurning.com makes use of the [Minimal Mistakes](http://mmistakes.github.i
 
 ### Compiling
 
-* Run `sudo Rmd2md.R` from base dir. This will:
+* Run `sudo Rscript Rmd2md.R` from base dir. This will:
     * compile the Rmd into a github acceptable format saved in `_posts/`
     * remove exifs from jpegs saved in `figures/`
 * Add the newly created `*.md* file to the repository using `git add`.
