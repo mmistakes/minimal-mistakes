@@ -5,7 +5,7 @@ matt_gregory:
 #  web: http://thewhip.com
 #  email: billy@rick.com
 #  bio: "What do you want, jewels? I am a very extravagant man."
-  avatar: mg.jpg
+  avatar: mg.png
 #  twitter: extravagantman
 #  google:
 #    plus: BillyRick
@@ -15,7 +15,6 @@ matt_upson:
   name: Matt Upson
   avatar: mu.jpg
   bio: "Data Scientist"
-  disqus-shortname: matthewupson
   twitter: m_a_upson
   github: ivyleavedtoadflax
   stackoverflow: 3369034/ivyleavedtoadflax
