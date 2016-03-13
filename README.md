@@ -36,5 +36,4 @@ MachingGurning.com makes use of the [Minimal Mistakes](http://mmistakes.github.i
 grep "\s\[(.*?)\]\(.*?\)\s" -E *.md 
 
 ```
-
 * Use a consistent style; [this](http://adv-r.had.co.nz/Style.html) is a good place to start!
