@@ -1,23 +1,39 @@
-# Minimal Mistakes
+[![Stories in Ready](https://badge.waffle.io/machinegurning/machinegurning.github.io.png?label=ready&title=Ready)](https://waffle.io/machinegurning/machinegurning.github.io)
+# MachineGurning.com
 
-**[Minimal Mistakes](http://mmistakes.github.io/minimal-mistakes)** is a two column responsive Jekyll theme perfect for powering your GitHub hosted blog built. Compatible with Jekyll 3.0 and up.
+## Guidelines for authoring posts
 
-## Minimal Mistakes is all about:
+MachingGurning.com makes use of the [Minimal Mistakes](http://mmistakes.github.io/minimal-mistakes) theme, and so additional documentation on this theme can be found [here](http://mmistakes.github.io/minimal-mistakes).
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.
-* Minimal embellishments -- content first.
-* Optional large feature images for posts and pages.
-* Simple and clear permalink structure.
-* [Custom 404 page](http://mmistakes.github.io/minimal-mistakes/404.html) to get you started.
-* Support for Disqus Comments
+### Instructions for authoring
 
-![screenshot of Minimal Mistakes theme](http://mmistakes.github.io/minimal-mistakes/images/mm-theme-post-600.jpg)
+* Author a post as normal using RStudio in `.Rmd` format and save in _rmd/
+* Files should be named date first in the format: `2016-03-12_a_blog_post.Rmd`. All associated files should be prefixed with the same date (e.g. data or figures; to achieve the latter, you must ensure that every figure producing R chunk is named appropriately, e.g. `{r 2016-03-12_image_producing_code}`).
+* Drafts should be completed in the `dev` branch, and multiple commits rebased in the to `master` branch so that each new post is based on just a single commit (at first).
+* All data should be saved in `data/`, and all figures/images saved in `figures/` **Do not save anything in `_data/`: this will cause a build failure when uplaoding to github**
+* Look at a previous post and copy the YAML header for consistency. Pay particular attention to the categories. Posts predominantly written in R should be categorised as Rstats. This is to ensure the post is picked up by the correct feed for sites like RBloggers (we still need to register as of 2016-03-12).
+* When authoring a post in Rstudio you will need to adjust links to `../_data/myfile.csv` to find relevant files, as the compilation process will begin from `_rmd`. The final version commited to github should take machinegurning.github.io/ to be the base dir. with all links relative to this (i.e. for data: `_data/mydata.csv`).
+* Each post should be completely reproducible. Shrink data using `.Rds` format as required, and include a session info at the end of each post. Reproducibility tools such as `checkpoint::checkpoint()` are to be encouraged.
 
-See a [live version of Minimal Mistakes](http://mmistakes.github.io/minimal-mistakes/) hosted on GitHub.
+### Compiling
 
-## Getting Started
+* Run `sudo Rmd2md.R` from base dir. This will:
+    * compile the Rmd into a github acceptable format saved in `_posts/`
+    * remove exifs from jpegs saved in `figures/`
+* Add the newly created `*.md* file to the repository using `git add`.
+* Be sure to add all related files (e.g. data and especially figures).
+* Push the data to the machinegurning repository. Avoid making forced pushes, and ideally squash all commits prior to pushing to ensure that each post occupies just a single commit on the master branch.
 
-Minimal Mistakes takes advantage of Sass and data files to make customizing easier. These features require [Jekyll 2.x](https://github.com/mmistakes/minimal-mistakes/releases/tag/2.1.3) and will not work with older versions of Jekyll.
+### Other things
 
-To learn how to install and use this theme check out the [Setup Guide](http://mmistakes.github.io/minimal-mistakes/theme-setup/) for more information.
+* svg format is preferable: use `dev="svg"` in chunk options. Very large images with many many poitns should be rendered as png to avoid slow loading.
+* Large figures should be posted as links to raw image file in github. This can be achieved automatically using `sed`. For example `[Image 1](figures/image1.svg)` should become `![(Image 1](figures/image1.svg)](figures/image1.svg)`. This change needs to made in the raw .md document. Be aware that future changes to the Rmd will overwrite this. Something like this may help:
+
+```
+# To find relevant figure links:
+
+grep "\s\[(.*?)\]\(.*?\)\s" -E *.md 
+
+```
+
+* Use a consistent style; [this](http://adv-r.had.co.nz/Style.html) is a good place to start!
