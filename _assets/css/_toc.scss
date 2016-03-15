@@ -3,67 +3,57 @@
    ========================================================================== */
 
 .toc {
-  padding: 0 1em 1em;
+  padding: 0 0 1em;
   font-family: $sans-serif-narrow;
-  border-top: 8px solid $gray;
+  color: $gray;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #fff;
   @include breakpoint($large) {
     display: block;
     @include grid(12,2);
-    @include prefix(12,0.5);
-    @include suffix(12,0.5);
     position: absolute;
-    top: 5.5em;
-    right: 0;
+    top: 0;
+    right: 6.250005%;
   }
 }
 
 .toc__title {
-  margin: 1em 0;
-  font-family: $serif;
-  font-size: 18px;
-  color: $gray;
+  margin: 0;
+  padding: 10px 20px;
+  font-family: $sans-serif-narrow;
+  font-size: 16px;
+  border: 1px solid $border-color;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+  background: mix(#fff, $light-gray, 50%);
 }
 
 .toc__menu {
-  padding-left: 0;
-  font-size: 14px;
-  border-bottom: 2px solid #e2e2e2;
-  ul {
-    @include clearfix();
-    > li {
-      padding: 5px 0;
-      font-weight: normal;
-      &:before {
-        content: "\2192";
-        width: 20px;
-      }
-      &:not(:last-child) {
-        border-bottom: 1px solid $light-gray;
-      }
-    }
-  }
-  li {
-    clear: both;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  border: 1px solid $border-color;
+  border-top: none;
+  border-bottom-right-radius: $border-radius;
+  border-bottom-left-radius: $border-radius;
+  a {
     display: block;
+    padding: 10px 20px;
+    font-size: 11px;
     font-weight: bold;
-    &:before {
-      display: block;
-      float: left;
-      margin-right: 10px;
-      margin-bottom: 5px;
-      width: 10px;
-      font-weight: bold;
-    }
-    a {
-      display: block;
-      text-decoration: none;
-      &:hover {
-        text-decoration: underline;
-      }
-    }
+    line-height: 1.5;
+    border-bottom: 1px solid $border-color;
   }
-  > li {
-    padding: 5px 0;
-    border-top: 2px solid $light-gray;
+  li ul > li a {
+    font-weight: normal;
+  }
+  // hide sub sub links on small screens
+  li > ul li {
+    display: none;
+    @include breakpoint($large) {
+      display: block;
+    }
   }
 }
