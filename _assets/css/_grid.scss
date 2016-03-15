@@ -2,9 +2,11 @@
    Grid mixins
    ========================================================================== */
 
-@mixin container(){
-  margin:0 auto;
-  width:$width;
+$unit: 1em;
+
+@mixin container() {
+  margin: 0 auto;
+  width: $width;
 }
 
 /*
@@ -12,10 +14,10 @@
    number of columns being displayed. Removes 20px for margins.
    ========================================================================== */
 
-@mixin grid($grid:$def_grid,$cols:'',$float:left,$display:inline){
-  display:$display;
-  float:$float;
-  width:(100%/$grid * $cols) - ($margin * 2);
+@mixin grid($grid:$def_grid, $cols:'', $float:left, $display:inline) {
+  display: $display;
+  float: $float;
+  width: (100%/$grid * $cols) - ($margin * 2);
 }
 
 /*
@@ -23,8 +25,8 @@
    Example: @include prefix(1,12);
    ========================================================================== */
 
-@mixin prefix($grid:$def_grid,$cols:''){
-  margin-left:(100%/$grid * $cols);
+@mixin prefix($grid:$def_grid, $cols:'') {
+  margin-left: (100%/$grid * $cols);
 }
 
 /*
@@ -32,8 +34,8 @@
    Example: @include suffix(2,12);
    ========================================================================== */
 
-@mixin suffix($grid:$def_grid,$cols:''){
-  margin-right:(100%/$grid * $cols);
+@mixin suffix($grid:$def_grid, $cols:'') {
+  margin-right: (100%/$grid * $cols);
 }
 
 /*
@@ -41,8 +43,8 @@
    Example: @include first;
    ========================================================================== */
 
-@mixin first(){
-  margin-left:0;
+@mixin first() {
+  margin-left: 0;
 }
 
 /*
@@ -50,8 +52,8 @@
    Example: @include last;
    ========================================================================== */
 
-@mixin last(){
-  margin-right:0;
+@mixin last() {
+  margin-right: 0;
 }
 
 /*
@@ -59,9 +61,9 @@
    Example: @include push(2,12);
    ========================================================================== */
 
-@mixin push($grid:$def_grid,$move:'') {
-  position:relative;
-  left:(100%/$grid * $move);
+@mixin push($grid:$def_grid, $move:'') {
+  position: relative;
+  left: (100%/$grid * $move);
 }
 
 /*
@@ -69,7 +71,7 @@
    Example: @include pull(1,12);
    ========================================================================== */
 
-@mixin pull($grid:$def_grid,$move:''){
-  position:relative;
-  left:(100%/$grid * $move) * -1;
+@mixin pull($grid:$def_grid,$move:'') {
+  position: relative;
+  left: (100%/$grid * $move) * -1;
 }
