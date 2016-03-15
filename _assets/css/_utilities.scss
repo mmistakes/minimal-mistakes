@@ -150,10 +150,18 @@ body:hover .visually-hidden button {
    ========================================================================== */
 
 .sticky {
-  @include clearfix();
-  position: -webkit-sticky;
-  position: sticky;
-  top: 80px;
+  > * {
+    display: none;
+  }
+  @include breakpoint($small) {
+    @include clearfix();
+    position: -webkit-sticky;
+    position: sticky;
+    top: 3em;
+    > * {
+      display: block;
+    }
+  }
 }
 
 
