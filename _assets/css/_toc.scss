@@ -10,11 +10,12 @@
   letter-spacing: 1px;
   background-color: #fff;
   @include breakpoint($large) {
-    display: block;
-    @include grid(12,2);
-    position: absolute;
-    top: 0;
-    right: 6.250005%;
+    @include span(3 of 10 last);
+    @include prefix(0.25);
+    // @include grid(12,2);
+    // position: absolute;
+    // top: 0;
+    // right: 6.250005%;
   }
 }
 
@@ -41,10 +42,14 @@
   a {
     display: block;
     padding: 10px 20px;
+    color: $gray;
     font-size: 11px;
     font-weight: bold;
     line-height: 1.5;
     border-bottom: 1px solid $border-color;
+    &:hover {
+      color: #000;
+    }
   }
   li ul > li a {
     font-weight: normal;

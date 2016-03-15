@@ -4,11 +4,11 @@
 
 .masthead {
   @include container;
-  padding: 2em 0 1em;
+  @include clearfix;
+  padding: 2em 2em 1em;
   font-family: $sans-serif-narrow;
   font-weight: 700;
   text-transform: uppercase;
-  @include clearfix;
   a {
     text-decoration: none;
   }
@@ -16,40 +16,19 @@
 
 /* Site name */
 .site-name {
-  @include grid(12,10);
-  @include prefix(12,1);
-  @include suffix(12,1);
-  margin-bottom: 1em;
-  float: none;
-  display: block;
+  @include breakpoint($medium) {
+    @include span(10 of 12);
+    @include pre(2);
+  }
   font-size: 24px;
-  @include breakpoint($small) {
-    @include grid(12,2);
-    @include prefix(12,0.5);
-    @include suffix(12,0.5);
-    font-size: 16px;
-  }
-  @include breakpoint($x-large) {
-    @include grid(12,1.5);
-    @include prefix(12,2);
-  }
 }
 
 .masthead__menu {
-  @include grid(12,10);
-  @include prefix(12,1);
-  @include suffix(12,1);
+  @include breakpoint($medium) {
+    @include span(10 of 12);
+    @include pre(2);
+  }
   margin-bottom: 1em;
-  float: none;
-  display: block;
-  @include breakpoint($small) {
-    @include grid(12,9);
-    @include prefix(12,0);
-    @include suffix(12,0);
-  }
-  @include breakpoint($x-large) {
-    @include grid(12,8);
-  }
   ul {
     margin: 0;
     padding: 0;
