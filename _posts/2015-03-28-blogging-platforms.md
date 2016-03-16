@@ -1,5 +1,6 @@
 ---
 layout: post
+author: matt_upson
 title: "Finding the right blogging platform"
 excerpt: "Blogger, WordPress, Jekyll?"
 tags: [blogging, R, code, jekyll]

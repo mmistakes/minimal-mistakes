@@ -1,5 +1,6 @@
 ---
 title: 'SylvaSense Part II'
+author: matt_upson
 date: '2015-08-01'
 modified: 2015-08-09
 excerpt: "Adding temperature monitoring to the equation"

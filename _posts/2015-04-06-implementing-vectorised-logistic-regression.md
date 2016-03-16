@@ -1,5 +1,6 @@
 ---
 title: "Implementing vectorised logistic regression"
+author: matt_upson
 date: 2015-04-06
 modified: 2015-04-08
 excerpt: "Comparing vectorised methods with general linear models"

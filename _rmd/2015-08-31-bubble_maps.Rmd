@@ -1,5 +1,6 @@
 ---
 title: 'Visualising FAO data'
+author: matt_upson
 date: '2015-08-30'
 #modified: `r format(Sys.time(), '%Y-%m-%d')`
 excerpt: 'Making bubble maps in R'

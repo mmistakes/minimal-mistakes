@@ -1,5 +1,6 @@
 ---
 title: 'Regularised linear regression'
+author: matt_upson
 date: '2015-07-26'
 modified: 2015-08-09
 excerpt: "Adding regularisation to vectorised linear regression"

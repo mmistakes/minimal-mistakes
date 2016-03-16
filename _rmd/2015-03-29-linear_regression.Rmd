@@ -1,5 +1,6 @@
 ---
 title: "Linear regression with gradient descent"
+author: matt_upson
 date: 2015-03-29
 modified: `r format(Sys.time(), '%Y-%m-%d')`
 excerpt: "Linear regression the machine learning way"

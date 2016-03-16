@@ -2,7 +2,7 @@
 title: "Logistic regression for student performance prediction"
 author: matt_gregory
 comments: yes
-date: '2016-03-01'
+date: '2016-03-15'
 modified: 2016-03-16
 layout: post
 excerpt: "Predicting student end of year performance using logistic regression"

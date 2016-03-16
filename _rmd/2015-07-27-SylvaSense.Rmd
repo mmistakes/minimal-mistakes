@@ -1,5 +1,6 @@
 ---
 title: 'SylvaSense Part I'
+author: matt_upson
 date: '2015-07-28'
 modified: `r format(Sys.time(), '%Y-%m-%d')`
 excerpt: "Using an arduino for environmental sensing"

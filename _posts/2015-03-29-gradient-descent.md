@@ -1,5 +1,6 @@
 ---
 title: "Gradient descent in R"
+author: matt_upson
 date: 2015-03-29
 modified: 2015-04-07
 excerpt: "Implementing gradient decsent in R"

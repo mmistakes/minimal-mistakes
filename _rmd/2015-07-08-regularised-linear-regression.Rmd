@@ -1,5 +1,6 @@
 ---
 title: 'Regularised linear regression'
+author: matt_upson
 date: '2015-07-26'
 modified: #`r format(Sys.time(), '%Y-%m-%d')`
 excerpt: "Adding regularisation to vectorised linear regression"

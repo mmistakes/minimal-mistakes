@@ -1,5 +1,6 @@
 ---
 title: 'Visualising FAO data'
+author: matt_upson
 date: '2015-08-30'
 #modified: 2015-10-11
 excerpt: 'Making bubble maps in R'

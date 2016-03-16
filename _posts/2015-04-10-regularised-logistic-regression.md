@@ -1,5 +1,6 @@
 ---
 title: "Non-linear classification with logistic regression"
+author: matt_upson
 date: 2015-04-10
 modified: 2015-04-10
 excerpt: "Implementing regularisation and feature mapping"

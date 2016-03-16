@@ -1,5 +1,6 @@
 ---
 title: "Reproducible journal articles"
+author: matt_upson
 comments: yes
 date: '2015-10-10'
 layout: post

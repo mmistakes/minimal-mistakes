@@ -17,7 +17,7 @@ MachingGurning.com makes use of the [Minimal Mistakes](http://mmistakes.github.i
 
 ### Compiling
 
-* Run `sudo Rscript Rmd2md.R` from base dir. This will:
+* Run `sudo Rscript Rmd2md.R` from base dir (on linux) or open the file Rmd2md.R in R/Rstudio, and run all. This will:
     * compile the Rmd into a github acceptable format saved in `_posts/`
     * remove exifs from jpegs saved in `figures/`
 * Add the newly created `*.md* file to the repository using `git add`.

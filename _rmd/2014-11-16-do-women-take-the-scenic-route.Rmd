@@ -1,5 +1,6 @@
 ---
 title: "Do women take the scenic route or do men cycle faster?"
+author: matt_upson
 date: 2014-11-16
 modified: `r format(Sys.time(), '%Y-%m-%d')`
 excerpt: "Using the google routing API via ggmap"

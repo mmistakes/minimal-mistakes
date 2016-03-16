@@ -1,5 +1,6 @@
 ---
 title: 'Elastic-net regularisation'
+author: matt_upson
 date: '2015-08-08'
 modified: `r format(Sys.time(), '%Y-%m-%d')`
 excerpt: "Using R package glmnet for regularisation"

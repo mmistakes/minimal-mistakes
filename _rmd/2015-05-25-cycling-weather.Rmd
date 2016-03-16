@@ -1,5 +1,6 @@
 ---
 title: "Too hot to cycle?"
+author: matt_upson
 comments: yes
 date: '2015-05-25'
 output: pdf_document

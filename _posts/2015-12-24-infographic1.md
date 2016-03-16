@@ -1,5 +1,6 @@
 ---
 title: "Measuring obsession"
+author: matt_upson
 comments: yes
 date: '2015-12-24'
 modified: 2015-12-24

@@ -1,5 +1,6 @@
 ---
 title: "Multivariate linear regression"
+author: matt_upson
 date: 2015-03-30
 modified: `r format(Sys.time(), '%Y-%m-%d')`
 excerpt: "Feature scaling and gradient descent"

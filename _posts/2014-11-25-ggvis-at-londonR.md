@@ -1,5 +1,6 @@
 ---
 title: "LondonR 2014 - ggvis"
+author: matt_upson
 date: 2014-11-25
 modified: 2015-04-07
 output: html_document

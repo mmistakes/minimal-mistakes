@@ -1,5 +1,6 @@
 ---
 title: "Is CitiBike an old boy's club?"
+author: matt_upson
 date: 2014-11-02
 modified: `r format(Sys.time(), '%Y-%m-%d')`
 excerpt: "Gender differences in the New York cycle hire data"

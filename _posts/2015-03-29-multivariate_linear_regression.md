@@ -1,5 +1,6 @@
 ---
 title: "Multivariate linear regression"
+author: matt_upson
 date: 2015-03-30
 modified: 2015-04-10
 excerpt: "Feature scaling and gradient descent"

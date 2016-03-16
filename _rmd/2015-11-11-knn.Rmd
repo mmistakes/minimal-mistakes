@@ -1,5 +1,6 @@
 ---
 title: "Unsupervised learning with K-means"
+author: matt_upson
 comments: yes
 date: '2015-11-11'
 modified: `r format(Sys.time(), '%Y-%m-%d')`

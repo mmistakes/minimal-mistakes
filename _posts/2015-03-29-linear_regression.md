@@ -1,5 +1,6 @@
 ---
 title: "Linear regression with gradient descent"
+author: matt_upson
 date: 2015-03-29
 modified: 2015-04-07
 excerpt: "Linear regression the machine learning way"

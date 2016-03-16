@@ -1,5 +1,6 @@
 ---
 title: "Handwriting recognition with logistic regression"
+author: matt_upson
 date: 2015-04-14
 modified: 2015-04-14
 excerpt: "Simple multiclass classification"

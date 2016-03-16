@@ -1,5 +1,6 @@
 ---
 title: "LondonR 2014 - ggvis"
+author: matt_upson
 date: 2014-11-25
 modified: `r format(Sys.time(), '%Y-%m-%d')`
 output: html_document

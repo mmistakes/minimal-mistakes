@@ -1,5 +1,6 @@
 ---
 title: "Sensing temperature with a Raspberry Pi"
+author: matt_upson
 comments: yes
 date: '2016-01-15'
 modified: 2016-01-16
