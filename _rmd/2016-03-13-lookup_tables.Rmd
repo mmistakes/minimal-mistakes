@@ -6,8 +6,8 @@ date: '2016-03-13'
 modified: `r format(Sys.time(), '%Y-%m-%d')`
 layout: post
 excerpt: "Using character matching for quick lookups"
-published: no
-status: process
+published: yes
+status: processed
 tags:
 - R
 - lookups
