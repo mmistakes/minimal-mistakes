@@ -131,7 +131,9 @@ body:hover .visually-hidden button {
 /* file page content container */
 
 .full {
-  max-width: 100% !important;
+  @include breakpoint($large){
+    margin-right: -1 * $right-sidebar-width;
+  }
 }
 
 /*

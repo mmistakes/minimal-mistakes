@@ -12,7 +12,8 @@
 
 .page {
   @include breakpoint($medium) {
-    @include span(10 last);
+    @include span(10 of 12 last);
+    padding-right: $right-sidebar-width;
   }
 }
 
@@ -22,16 +23,9 @@
 }
 
 .page__content {
+  position: relative;
   p, li {
     font-size: 16px;
-  }
-  // keep content from going to wide when toc is disabled
-  @include breakpoint($large) {
-    > h1, > h2, > h3, > h4, > h5, > h6, > hr,
-    > p, > ul, > ol, > blockquote, > table, > figure,
-    > div, > section, > img, > video, > form {
-      max-width: span(7 of 10);
-    }
   }
 }
 

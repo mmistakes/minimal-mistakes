@@ -6,8 +6,8 @@
   @include breakpoint($medium) {
     display: block;
     margin-bottom: 1em;
-    @include span(2);
-    @include suffix(0.5);
+    @include span(2 of 12);
+    @include suffix(0.5 of 12);
   }
   h2, h3, h4, h5, h6 {
     font-family: $sans-serif-narrow;
