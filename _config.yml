@@ -42,7 +42,7 @@ titlecase: true
 # Site owner
 owner:
   name: Machine Gurning
-  avatar: machinegurning_new.png
+  avatar: machinegurning.png
   bio: "A blog about Data Science, statistics, IoT, and Machine Learning"
   email:
   disqus-shortname: machinegurning
