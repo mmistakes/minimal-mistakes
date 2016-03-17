@@ -6,6 +6,8 @@
   margin-bottom: 2em;
   @include breakpoint($medium) {
     @include span(10 of 12 last);
+  }
+  @include breakpoint($large) {
     @include suffix(3 of 12);
   }
 }

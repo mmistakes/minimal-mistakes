@@ -9,15 +9,15 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   background-color: #fff;
-  &.sticky {
+  // &.sticky {
     @include breakpoint($large) {
-      position: fixed;
+      position: absolute;
       top: 0;
       right: calc(50% - 512px + 2em); // 50% - 1/2 of wrapper's max-width + wrapper padding
       width: $right-sidebar-width;
       padding-left: 2em;
     }
-  }
+  // }
 }
 
 .toc__title {

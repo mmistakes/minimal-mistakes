@@ -5,6 +5,7 @@
 #main {
   @include container;
   @include clearfix;
+  position: relative;
   margin-top: 2em;
   padding-left: 2em;
   padding-right: 2em;
@@ -13,6 +14,8 @@
 .page {
   @include breakpoint($medium) {
     @include span(10 of 12 last);
+  }
+  @include breakpoint($large) {
     padding-right: $right-sidebar-width;
   }
 }
@@ -23,7 +26,6 @@
 }
 
 .page__content {
-  position: relative;
   p, li {
     font-size: 16px;
   }
