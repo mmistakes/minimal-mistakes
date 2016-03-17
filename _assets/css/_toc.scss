@@ -8,12 +8,15 @@
   color: $gray;
   text-transform: uppercase;
   letter-spacing: 1px;
-  @include breakpoint($large) {
-    position: absolute;
-    top: 0;
-    right: calc(50% - 512px + 2em); // 50% - 1/2 of wrapper's max-width + wrapper padding
-    width: $right-sidebar-width;
-    padding-left: 2em;
+  background-color: #fff;
+  &.sticky {
+    @include breakpoint($large) {
+      position: fixed;
+      top: 0;
+      right: calc(50% - 512px + 2em); // 50% - 1/2 of wrapper's max-width + wrapper padding
+      width: $right-sidebar-width;
+      padding-left: 2em;
+    }
   }
 }
 
@@ -33,7 +36,6 @@
   padding: 0;
   width: 100%;
   list-style: none;
-  background-color: #fff;
   border: 1px solid $border-color;
   border-top: none;
   border-bottom-right-radius: $border-radius;
