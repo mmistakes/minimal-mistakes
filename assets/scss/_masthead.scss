@@ -13,6 +13,9 @@
     padding-left: 1em;
     padding-right: 1em;
   }
+  @include breakpoint($x-large) {
+    max-width: $x-large;
+  }
   a {
     text-decoration: none;
   }
@@ -21,16 +24,20 @@
 /* Site name */
 .site-name {
   @include breakpoint($medium) {
-    @include span(10 of 12);
-    @include pre(2);
+    @include prefix(2 of 12);
+  }
+  @include breakpoint($x-large) {
+    @include prefix(2.5 of 12);
   }
   font-size: 24px;
 }
 
 .masthead__menu {
   @include breakpoint($medium) {
-    @include span(10 of 12);
-    @include pre(2);
+    @include prefix(2 of 12);
+  }
+  @include breakpoint($x-large) {
+    @include prefix(2.5 of 12);
   }
   margin-bottom: 1em;
   ul {

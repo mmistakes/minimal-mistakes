@@ -10,6 +10,9 @@
   @include breakpoint($large) {
     @include suffix(3 of 12);
   }
+  @include breakpoint($x-large) {
+    @include prefix(0.5 of 12);
+  }
 }
 
 .archive__subtitle {

@@ -13,6 +13,9 @@
     padding-left: 1em;
     padding-right: 1em;
   }
+  @include breakpoint($x-large) {
+    max-width: $x-large;
+  }
 }
 
 .page {
@@ -21,6 +24,9 @@
   }
   @include breakpoint($large) {
     padding-right: $right-sidebar-width;
+  }
+  @include breakpoint($x-large) {
+    @include prefix(0.5 of 12);
   }
 }
 
@@ -39,26 +45,6 @@
   position: relative;
   margin-bottom: 2em;
   @include clearfix;
-  &:after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 8%;
-    width: 0;
-    height: 0;
-    border: 10px solid transparent;
-    border-bottom-color: $body-color;
-    @include breakpoint($small) {
-      left: 25%;
-    }
-    @include breakpoint($large) {
-      border-width: 20px;
-    }
-    @include breakpoint($x-large) {
-      left: 33.333333333%;
-    }
-  }
 }
 
 .page__hero-image {
@@ -156,8 +142,11 @@
   padding-top: 1em;
   border-top: 1px solid $border-color;
   @include breakpoint($medium) {
-    @include span(10);
-    @include pre(2);
+    @include span(10 of 12);
+    @include pre(2 of 12);
+  }
+  @include breakpoint($x-large) {
+    @include pre(2.5 of 12);
   }
   li {
     margin-bottom: 0;
