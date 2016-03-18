@@ -35,6 +35,7 @@ layout: default
   </div>
 
   {% if site.comments.provider and page.comments %}
+    <h4 class="page__comments-title">{{ site.data.ui-text[site.locale].comments_label }}</h4>
     {% case site.comments.provider %}
     {% when "disqus" %}
       <section id="disqus_thread"></section>
