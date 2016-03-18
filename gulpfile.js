@@ -7,15 +7,15 @@
 * Packages used
 *
 **/
-var gulp         = require('gulp');
-var sass         = require('gulp-sass');
-var prefix       = require('gulp-autoprefixer');
-var plumber      = require('gulp-plumber');
-var uglify       = require('gulp-uglifyjs');
-var jshint       = require('gulp-jshint');
+var gulp         = require("gulp");
+var sass         = require("gulp-sass");
+var prefix       = require("gulp-autoprefixer");
+var plumber      = require("gulp-plumber");
+var uglify       = require("gulp-uglifyjs");
+var jshint       = require("gulp-jshint");
 var rename       = require("gulp-rename");
 var imagemin     = require("gulp-imagemin");
-var pngquant     = require('imagemin-pngquant');
+var pngquant     = require("imagemin-pngquant");
 
 /**
 *
@@ -26,12 +26,12 @@ var pngquant     = require('imagemin-pngquant');
 * - Run through Autoprefixer
 *
 **/
-gulp.task('css', function() {
-  return gulp.src('assets/scss/**/*.scss')
-    .pipe(sass({outputStyle: 'compressed'}))
-    .pipe(prefix('last 2 versions', '> 5%', 'ie 9'))
+gulp.task("css", function() {
+  return gulp.src("assets/scss/**/*.scss")
+    .pipe(sass({outputStyle: "compressed"}))
+    .pipe(prefix("last 2 versions", "> 5%", "ie 9"))
     .pipe(plumber())
-    .pipe(gulp.dest('assets/css'));
+    .pipe(gulp.dest("assets/css"));
 });
 
 /**
@@ -42,14 +42,14 @@ gulp.task('css', function() {
 * - Rename
 *
 **/
-gulp.task('scripts', function() {
-  return gulp.src(['assets/js/vendor/jquery/*.js', 'assets/js/plugins/**/*.js', 'assets/js/_main*.js'])
+gulp.task("scripts", function() {
+  return gulp.src(["assets/js/vendor/jquery/*.js", "assets/js/plugins/**/*.js", "assets/js/_main*.js"])
     .pipe(uglify())
     .pipe(rename({
       basename: "main",
       suffix: ".min",
     }))
-    .pipe(gulp.dest('assets/js'))
+    .pipe(gulp.dest("assets/js"))
 });
 
 /**
@@ -58,11 +58,11 @@ gulp.task('scripts', function() {
 * - Lint for errors
 *
 **/
-gulp.task('jslint', function() {
-  return gulp.src('assets/js/_*.js')
+gulp.task("jslint", function() {
+  return gulp.src("assets/js/_*.js")
     .pipe(jshint())
-    .pipe(jshint.reporter('default'))
-    .pipe(jshint.reporter('fail'))
+    .pipe(jshint.reporter("default"))
+    .pipe(jshint.reporter("fail"))
 });
 
 /**
@@ -71,14 +71,14 @@ gulp.task('jslint', function() {
 * - Optimize image assets
 *
 **/
-gulp.task('images', function () {
-  return gulp.src('images/*')
+gulp.task("images", function () {
+  return gulp.src("images/*")
     .pipe(imagemin({
       progressive: true,
       svgoPlugins: [{removeViewBox: false}],
       use: [pngquant()]
     }))
-    .pipe(gulp.dest('images'));
+    .pipe(gulp.dest("images"));
 });
 
 
@@ -89,9 +89,9 @@ gulp.task('images', function () {
 * - Watches for scss, script, and image changes
 *
 **/
-gulp.task('default', ['css', 'jslint', 'scripts', 'images'], function () {
-  gulp.watch('assets/scss/**/*.scss', ['css']);
-  gulp.watch('assets/js/_*.js', ['jslint']);
-  gulp.watch(['!assets/js/**/*_.js', 'assets/js/plugins/**/*.js', 'assets/js/vendor/**/*.js'], ['scripts']);
-  gulp.watch('images/*', ['images']);
+gulp.task("default", ["css", "jslint", "scripts", "images"], function () {
+  gulp.watch("assets/scss/**/*.scss", ["css"]);
+  gulp.watch("assets/js/_*.js", ["jslint"]);
+  gulp.watch(["!assets/js/**/*_.js", "assets/js/plugins/**/*.js", "assets/js/vendor/**/*.js"], ["scripts"]);
+  gulp.watch("images/*", ["images"]);
 });
