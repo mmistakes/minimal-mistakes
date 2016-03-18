@@ -26,10 +26,11 @@
   padding: 10px 20px;
   font-family: $sans-serif-narrow;
   font-size: 16px;
+  color: #fff;
   border: 1px solid $border-color;
   border-top-left-radius: $border-radius;
   border-top-right-radius: $border-radius;
-  background: mix(#fff, $light-gray, 50%);
+  background: $gray;
 }
 
 .toc__menu {
@@ -48,13 +49,20 @@
     font-size: 11px;
     font-weight: bold;
     line-height: 1.5;
+    border-left: 0.5em solid $gray;
     border-bottom: 1px solid $border-color;
     &:hover {
       color: #000;
+      border-left: 0.5em solid $info-color;
+      background: mix(#fff, $info-color, 90%);
     }
   }
   li ul > li a {
     font-weight: normal;
+    border-left: 0.5em solid mix(#fff, $gray, 25%);
+  }
+  li ul > li > ul > li a {
+    border-left: 0.5em solid mix(#fff, $gray, 50%);
   }
   // hide sub sub links on small screens
   li > ul li {
