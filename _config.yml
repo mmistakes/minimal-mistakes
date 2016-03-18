@@ -15,6 +15,7 @@ url                      : "http://localhost:4000" # the base hostname & protoco
 baseurl                  : "/minimal-mistakes" # the subpath of your site, e.g. /blog
 email                    : "your-email@domain.com"
 logo                     : "site-logo.png"
+teaser                   : "500x300.png"
 breadcrumbs              : true # true / false (default)
 breadcrumb_home_label    : "Home"
 breadcrumb_separator     : "/"

@@ -119,6 +119,11 @@ a {
   &:active {
     outline: 0;
   }
+  &:hover {
+    img {
+      box-shadow: 0 0 10px rgba(#000, 0.25);
+    }
+  }
 }
 
 /* lists */
@@ -188,12 +193,6 @@ figure {
   }
   > a {
     display: block;
-    // image hover animation
-    &:hover {
-      img {
-        box-shadow: 0 0 10px rgba(#000, 0.20);
-      }
-    }
   }
   &.half {
     > a,
@@ -283,6 +282,6 @@ nav {
    Global animation transition
    ========================================================================== */
 
-b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, tr, td, form button, input[type="submit"], .btn, .highlight, .archive__item, .archive__item-thumb, .archive__item-body, .palette__swatch {
+b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, tr, td, form button, input[type="submit"], .btn, .highlight, .archive__item-teaser {
   transition: all 0.2s ease-in-out;
 }

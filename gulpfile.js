@@ -87,13 +87,12 @@ gulp.task('images', function () {
 /**
 *
 * Default task
-* - Runs scss, scripts and image tasks
-* - Watches for scss, script, and image changes
+* - Runs scss, scripts, and image tasks
+* - Watches for scss and script changes
 *
 **/
-gulp.task('default', ['css', 'jslint', 'scripts', 'images'], function () {
+gulp.task('default', ['css', 'jslint', 'scripts'], function () {
   gulp.watch('assets/scss/**/*.scss', ['css']);
   gulp.watch('assets/js/_*.js', ['jslint']);
   gulp.watch(['!assets/js/**/*_.js', 'assets/js/plugins/**/*.js', 'assets/js/vendor/**/*.js'], ['scripts']);
-  gulp.watch('images/*', ['images']);
 });

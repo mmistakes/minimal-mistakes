@@ -52,13 +52,13 @@ layout: default
 {% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
 {% if page.id and page.related and site.related_posts.size > 0 %}
   <div class="page__related">
-  {% if site.data.ui-text[site.locale].related_label %}
-    <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label }}</h4>
-  {% endif %}
-    <ul>
-    {% for post in site.related_posts limit:3 %}
-      <li><a href="{{ base_path }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-    {% endfor %}
-    </ul>
+    {% if site.data.ui-text[site.locale].related_label %}
+      <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label }}</h4>
+    {% endif %}
+    <div class="grid__wrapper">
+      {% for post in site.related_posts limit:4 %}
+        {% include archive-grid-single.html %}
+      {% endfor %}
+    </div>
   </div>
 {% endif %}
