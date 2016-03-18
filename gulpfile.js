@@ -27,7 +27,7 @@ var imageminMozjpeg = require('imagemin-mozjpeg');
 *
 **/
 gulp.task('css', function() {
-  return gulp.src('assets/scss/**/*.scss')
+  return gulp.src('assets/_scss/**/*.scss')
     .pipe(sass({outputStyle: 'compressed'}))
     .pipe(prefix('last 2 versions', '> 5%', 'ie 9'))
     .pipe(plumber())
