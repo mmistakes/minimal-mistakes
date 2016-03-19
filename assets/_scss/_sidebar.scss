@@ -80,6 +80,9 @@
     padding-right: 5px;
     font-size: 14px;
     text-decoration: none;
+    @include breakpoint($medium) {
+      display: block;
+    }
     &:hover {
       text-decoration: underline;
     }
