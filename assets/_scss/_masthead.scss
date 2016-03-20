@@ -9,7 +9,7 @@
   font-family: $sans-serif-narrow;
   font-weight: 700;
   text-transform: uppercase;
-  @include breakpoint($medium) {
+  @include breakpoint($large) {
     padding-left: 1em;
     padding-right: 1em;
   }
@@ -23,7 +23,7 @@
 
 /* Site name */
 .site-name {
-  @include breakpoint($medium) {
+  @include breakpoint($large) {
     @include prefix(2 of 12);
   }
   @include breakpoint($x-large) {
@@ -33,7 +33,7 @@
 }
 
 .masthead__menu {
-  @include breakpoint($medium) {
+  @include breakpoint($large) {
     @include prefix(2 of 12);
   }
   @include breakpoint($x-large) {

@@ -1,6 +1,6 @@
-<aside class="toc">
+<aside class="sidebar__right">
+<nav class="toc" markdown="1">
 <header><h4 class="toc__title"><i class="fa fa-{{ include.icon | default: 'book' }}"></i> {{ include.title | default: site.data.ui-text[site.locale].toc_label }}</h4></header>
-<nav markdown="1">
 *  Auto generated table of contents
 {:toc .toc__menu}
 </nav>

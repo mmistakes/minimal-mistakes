@@ -2,15 +2,17 @@
    SIDEBAR
    ========================================================================== */
 
+/*
+   Default
+   ========================================================================== */
+
 .sidebar {
   @include clearfix();
   margin-bottom: 2em;
   padding-bottom: 1em;
-  border-bottom: 1px solid $border-color;
-  @include breakpoint($medium) {
+  @include breakpoint($large) {
     @include span(2 of 12);
     @include suffix(0.25 of 12);
-    border-bottom: none;
   }
   @include breakpoint($x-large) {
     padding-right: 0;
@@ -27,6 +29,28 @@
   }
 }
 
+.sidebar__right {
+  @include breakpoint($medium) {
+    position: absolute;
+    top: 0;
+    right: 1em;
+    width: $right-sidebar-width-narrow;
+    padding-left: 2em;
+    @include breakpoint($large) {
+      width: $right-sidebar-width;
+    }
+    @include breakpoint($x-large) {
+      width: $right-sidebar-width-wide;
+    }
+  }
+  @include breakpoint($large) {
+    right: calc(50% - (0.5 * #{$large}) + 1em); // 50% - 1/2 of wrapper's max-width + wrapper padding
+  }
+  @include breakpoint($x-large) {
+    right: calc(50% - (0.5 * #{$x-large}) + 1em); // 50% - 1/2 of wrapper's max-width + wrapper padding
+  }
+}
+
 /*
    Author profile and links
    ========================================================================== */
@@ -35,7 +59,7 @@
   float: left;
   width: 50px;
   margin-right: 10px;
-  @include breakpoint($medium) {
+  @include breakpoint($large) {
     float: none;
     width: initial;
   }
@@ -48,7 +72,7 @@
 .author__content {
   float: right;
   width: calc(100% - 60px); // subtract avatar width + any margin/padding
-  @include breakpoint($medium) {
+  @include breakpoint($large) {
     float: none;
     width: 100%;
   }
@@ -58,7 +82,7 @@
   margin: 0;
   font-family: $sans-serif-narrow;
   font-size: 20px;
-  @include breakpoint($medium) {
+  @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -68,7 +92,7 @@
   margin-bottom: 10px;
   font-size: 14px;
   font-style: italic;
-  @include breakpoint($medium) {
+  @include breakpoint($large) {
     margin-bottom: 20px;
   }
 }
@@ -80,7 +104,7 @@
     padding-right: 5px;
     font-size: 14px;
     text-decoration: none;
-    @include breakpoint($medium) {
+    @include breakpoint($large) {
       display: block;
     }
     &:hover {

@@ -7,7 +7,7 @@
   @include clearfix;
   margin-top: 3em;
   padding: 0 2em 3em;
-  @include breakpoint($medium) {
+  @include breakpoint($large) {
     padding-left: 1em;
     padding-right: 1em;
   }
@@ -23,7 +23,7 @@
 }
 
 .page__footer-copyright {
-  @include breakpoint($medium) {
+  @include breakpoint($large) {
     @include prefix(2 of 12);
   }
   @include breakpoint($x-large) {
@@ -33,7 +33,7 @@
 }
 
 .page__footer-follow {
-  @include breakpoint($medium) {
+  @include breakpoint($large) {
     @include prefix(2 of 12);
   }
   @include breakpoint($x-large) {
