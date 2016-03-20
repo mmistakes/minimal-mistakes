@@ -1,8 +1,0 @@
-<article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-  {% if post.link %}
-    <h2 class="archive__item-title link-post" itemprop="headline"><a href="{{ base_path }}{{ post.url }}">{% if post.id %}{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}{% else %}{{ post.title }}{% endif %}</a> <a href="{{ post.link }}" target="_blank"><i class="fa fa-link"></i></a></h2>
-  {% else %}
-    <h2 class="archive__item-title" itemprop="headline"><a href="{{ base_path }}{{ post.url }}">{% if post.id %}{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}{% else %}{{ post.title }}{% endif %}</a></h2>
-  {% endif %}
-  {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
-</article>
