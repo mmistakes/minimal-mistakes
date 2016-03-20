@@ -102,14 +102,8 @@
   color: mix(#fff, $gray, 25%);
   font-family: $sans-serif;
   font-size: 14px;
-  a {
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
   p {
-    margin-bottom: 0;
+    margin-bottom: 0.5em;
   }
 }
 
@@ -118,6 +112,32 @@
   margin-bottom: 10px;
   text-transform: uppercase;
 }
+
+
+/*
+   Page taxonomy
+   ========================================================================== */
+
+.page__taxonomy {
+  .sep {
+    display: none;
+  }
+}
+
+.page__taxonomy-item {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  text-decoration: none;
+  border: 1px solid $light-gray;
+  border-radius: $border-radius;
+  &:hover {
+    text-decoration: none;
+    border-color: $gray;
+  }
+}
+
 
 
 /*

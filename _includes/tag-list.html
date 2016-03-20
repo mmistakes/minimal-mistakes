@@ -15,12 +15,14 @@
   {% capture page_tags %}{% for tag in page.tags %}{{ tag | downcase }}#{{ tag }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
   {% assign tag_hashes = (page_tags | split: ',' | sort:0) %}
 
-  <p class="page__taxonomy"><strong>{{ site.data.ui-text[site.locale].tags_label }}</strong> <span itemprop="keywords">
-  {% for hash in tag_hashes %}
-    {% assign keyValue = hash | split: '#' %}
-    {% capture tag_word %}{{ keyValue[1] | strip_newlines }}{% endcapture %}
-    <a href="{{ base_path }}{{ tag_word | slugify | prepend: path_type | prepend: site.tags.path }}" class="page__taxonomy-item" rel="tag">{{ tag_word }}</a>{% unless forloop.last %}, {% endunless %}
-  {% endfor %}
-  </span>
+  <p class="page__taxonomy">
+    {% if site.data.ui-text[site.locale].tags_label %}<strong>{{ site.data.ui-text[site.locale].tags_label }} </strong>{% endif %}
+    <span itemprop="keywords">
+    {% for hash in tag_hashes %}
+      {% assign keyValue = hash | split: '#' %}
+      {% capture tag_word %}{{ keyValue[1] | strip_newlines }}{% endcapture %}
+      <a href="{{ base_path }}{{ tag_word | slugify | prepend: path_type | prepend: site.tags.path }}" class="page__taxonomy-item" rel="tag">{{ tag_word }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
+    {% endfor %}
+    </span>
   </p>
 {% endif %}
