@@ -91,7 +91,7 @@ gulp.task('images', function () {
 * - Watches for scss and script changes
 *
 **/
-gulp.task('default', ['css', 'jslint', 'scripts'], function () {
+gulp.task('default', ['css', 'jslint', 'images', 'scripts'], function () {
   gulp.watch('assets/_scss/**/*.scss', ['css']);
   gulp.watch('assets/js/_*.js', ['jslint']);
   gulp.watch(['!assets/js/**/*_.js', 'assets/js/plugins/**/*.js', 'assets/js/vendor/**/*.js'], ['scripts']);
