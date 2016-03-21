@@ -17,72 +17,72 @@
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>
 
-  <div class="author__urls_wrapper">
-    <span class="btn">Follow</span>
-    <div class="author__urls">
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls">
       {% if author.uri %}
-        <a href="{{ author.uri }}" target="_blank"><i class="fa fa-fw fa-globe"></i>Website</a>
+        <li><a href="{{ author.uri }}" target="_blank"><i class="fa fa-fw fa-globe"></i>Website</a></li>
       {% endif %}
       {% if author.email %}
-        <a href="mailto:{{ author.email }}" target="_blank"><i class="fa fa-fw fa-envelope-square"></i> Email</a>
+        <li><a href="mailto:{{ author.email }}" target="_blank"><i class="fa fa-fw fa-envelope-square"></i> Email</a></li>
       {% endif %}
       {% if author.twitter %}
-        <a href="http://twitter.com/{{ author.twitter }}" target="_blank"><i class="fa fa-fw fa-twitter-square"></i> Twitter</a>
+        <li><a href="http://twitter.com/{{ author.twitter }}" target="_blank"><i class="fa fa-fw fa-twitter-square"></i> Twitter</a></li>
       {% endif %}
       {% if author.facebook %}
-        <a href="http://facebook.com/{{ author.facebook }}" target="_blank"><i class="fa fa-fw fa-facebook-square"></i> Facebook</a>
+        <li><a href="http://facebook.com/{{ author.facebook }}" target="_blank"><i class="fa fa-fw fa-facebook-square"></i> Facebook</a></li>
       {% endif %}
       {% if author.google_plus %}
-        <a href="http://plus.google.com/+{{ author.google_plus }}" target="_blank"><i class="fa fa-fw fa-google-plus-square"></i> Google+</a>
+        <li><a href="http://plus.google.com/+{{ author.google_plus }}" target="_blank"><i class="fa fa-fw fa-google-plus-square"></i> Google+</a></li>
       {% endif %}
       {% if author.linkedin %}
-        <a href="http://linkedin.com/in/{{ author.linkedin }}" target="_blank"><i class="fa fa-fw fa-linkedin-square"></i> LinkedIn</a>
+        <li><a href="http://linkedin.com/in/{{ author.linkedin }}" target="_blank"><i class="fa fa-fw fa-linkedin-square"></i> LinkedIn</a></li>
       {% endif %}
       {% if author.xing %}
-        <a href="http://www.xing.com/profile/{{ author.xing }}" target="_blank"><i class="fa fa-fw fa-xing-square"></i> XING</a>
+        <li><a href="http://www.xing.com/profile/{{ author.xing }}" target="_blank"><i class="fa fa-fw fa-xing-square"></i> XING</a></li>
       {% endif %}
       {% if author.instagram %}
-        <a href="http://instagram.com/{{ author.instagram }}" target="_blank"><i class="fa fa-fw fa-instagram"></i> Instagram</a>
+        <li><a href="http://instagram.com/{{ author.instagram }}" target="_blank"><i class="fa fa-fw fa-instagram"></i> Instagram</a></li>
       {% endif %}
       {% if author.tumblr %}
-        <a href="http://{{ author.tumblr }}.tumblr.com" target="_blank"><i class="fa fa-fw fa-tumblr-square"></i> Tumblr</a>
+        <li><a href="http://{{ author.tumblr }}.tumblr.com" target="_blank"><i class="fa fa-fw fa-tumblr-square"></i> Tumblr</a></li>
       {% endif %}
       {% if author.github %}
-        <a href="http://github.com/{{ author.github }}" target="_blank"><i class="fa fa-fw fa-github"></i> Github</a>
+        <li><a href="http://github.com/{{ author.github }}" target="_blank"><i class="fa fa-fw fa-github"></i> Github</a></li>
       {% endif %}
       {% if author.stackoverflow %}
-        <a href="http://stackoverflow.com/users/{{ author.stackoverflow }}" target="_blank"><i class="fa fa-fw fa-stack-overflow"></i> Stackoverflow</a>
+        <li><a href="http://stackoverflow.com/users/{{ author.stackoverflow }}" target="_blank"><i class="fa fa-fw fa-stack-overflow"></i> Stackoverflow</a></li>
       {% endif %}
       {% if author.lastfm %}
-        <a href="http://lastfm.com/user/{{ author.lastfm }}" target="_blank"><i class="fa fa-fw fa-music"></i> Last.fm</a>
+        <li><a href="http://lastfm.com/user/{{ author.lastfm }}" target="_blank"><i class="fa fa-fw fa-music"></i> Last.fm</a></li>
       {% endif %}
       {% if author.dribbble %}
-        <a href="http://dribbble.com/{{ author.dribbble }}" target="_blank"><i class="fa fa-fw fa-dribbble"></i> Dribbble</a>
+        <li><a href="http://dribbble.com/{{ author.dribbble }}" target="_blank"><i class="fa fa-fw fa-dribbble"></i> Dribbble</a></li>
       {% endif %}
       {% if author.pinterest %}
-        <a href="http://www.pinterest.com/{{ author.pinterest }}" target="_blank"><i class="fa fa-fw fa-pinterest"></i> Pinterest</a>
+        <li><a href="http://www.pinterest.com/{{ author.pinterest }}" target="_blank"><i class="fa fa-fw fa-pinterest"></i> Pinterest</a></li>
       {% endif %}
       {% if author.foursquare %}
-        <a href="http://foursquare.com/{{ author.foursquare }}" target="_blank"><i class="fa fa-fw fa-foursquare"></i> Foursquare</a>
+        <li><a href="http://foursquare.com/{{ author.foursquare }}" target="_blank"><i class="fa fa-fw fa-foursquare"></i> Foursquare</a></li>
       {% endif %}
       {% if author.steam %}
-        <a href="http://steamcommunity.com/id/{{ author.steam }}" target="_blank"><i class="fa fa-fw fa-steam-square"></i> Steam</a>
+        <li><a href="http://steamcommunity.com/id/{{ author.steam }}" target="_blank"><i class="fa fa-fw fa-steam-square"></i> Steam</a></li>
       {% endif %}
       {% if author.youtube %}
-        <a href="https://youtube.com/user/{{ author.youtube }}" target="_blank"><i class="fa fa-fw fa-youtube-square"></i> Youtube</a>
+        <li><a href="https://youtube.com/user/{{ author.youtube }}" target="_blank"><i class="fa fa-fw fa-youtube-square"></i> Youtube</a></li>
       {% endif %}
       {% if author.soundcloud %}
-        <a href="http://soundcloud.com/{{ author.soundcloud }}" target="_blank"><i class="fa fa-fw fa-soundcloud"></i> Soundcloud</a>
+        <li><a href="http://soundcloud.com/{{ author.soundcloud }}" target="_blank"><i class="fa fa-fw fa-soundcloud"></i> Soundcloud</a></li>
       {% endif %}
       {% if author.weibo %}
-        <a href="http://www.weibo.com/{{ author.weibo }}" target="_blank"><i class="fa fa-fw fa-weibo"></i> Weibo</a>
+        <li><a href="http://www.weibo.com/{{ author.weibo }}" target="_blank"><i class="fa fa-fw fa-weibo"></i> Weibo</a></li>
       {% endif %}
       {% if author.flickr %}
-        <a href="http://www.flickr.com/{{ author.flickr }}" target="_blank"><i class="fa fa-fw fa-flickr"></i> Flickr</a>
+        <li><a href="http://www.flickr.com/{{ author.flickr }}" target="_blank"><i class="fa fa-fw fa-flickr"></i> Flickr</a></li>
       {% endif %}
       {% if author.codepen %}
-        <a href="http://codepen.io/{{ author.codepen }}" target="_blank"><i class="fa fa-fw fa-codepen"></i> CodePen</a>
+        <li><a href="http://codepen.io/{{ author.codepen }}" target="_blank"><i class="fa fa-fw fa-codepen"></i> CodePen</a></li>
       {% endif %}
-    </div>
+    </ul>
   </div>
 </div>
