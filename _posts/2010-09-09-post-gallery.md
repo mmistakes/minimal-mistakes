@@ -16,6 +16,15 @@ gallery:
   - url: unsplash-gallery-image-3.jpg
     image_path: unsplash-gallery-image-3-th.jpg
     alt: "placeholder image 3"
+  - url: unsplash-gallery-image-1.jpg
+    image_path: unsplash-gallery-image-1-th.jpg
+    alt: "placeholder image 1"
+  - url: unsplash-gallery-image-2.jpg
+    image_path: unsplash-gallery-image-2-th.jpg
+    alt: "placeholder image 2"
+  - url: unsplash-gallery-image-3.jpg
+    image_path: unsplash-gallery-image-3-th.jpg
+    alt: "placeholder image 3"
 gallery2:
   - url: https://flic.kr/p/8a6Ven
     image_path: https://farm2.staticflickr.com/1272/4697500467_8294dac099_q.jpg
@@ -86,6 +95,6 @@ And place it like so:
 
 {% include gallery id="gallery2" caption="This is a second gallery example with images hosted externally." %}
 
-And for giggles one more gallery just to make sure this works.
+And for giggles one more gallery just to make sure this works. To fill page content container add `class="full"`.
 
-{% include gallery id="gallery3" caption="This is a third gallery example with two images." %}
+{% include gallery id="gallery3" class="full" caption="This is a third gallery example with two images and fills the entire content container." %}

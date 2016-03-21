@@ -1,0 +1,26 @@
+# User interface text and labels
+
+# English (default)
+# -----------------
+en: &DEFAULT_EN
+  pagination_previous : "Previous"
+  pagination_next     : "Next"
+  toc_label           : "Overview"
+  ext_link_label      : "Direct Link"
+  share_on_label      : "Share on"
+  meta_label          :
+  tags_label          : "Tags:"
+  categories_label    : "Categories:"
+  date_label          : "Last Updated:"
+  comments_label      : "Leave a Comment"
+  related_label       : "You May Also Enjoy"
+  follow_label        : "Follow "
+  feed_label          : "Feed"
+  powered_by          : "Powered by"
+en_US:
+  <<: *DEFAULT_EN
+en_UK:
+  <<: *DEFAULT_EN
+
+# Another locale
+# --------------

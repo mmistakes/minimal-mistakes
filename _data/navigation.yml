@@ -2,13 +2,18 @@
 
 - title: "Theme Setup"
   url: /theme-setup/
+
 - title: "Posts"
   url: /year-archive/
+
 - title: "Categories"
-  url: /category-archive/
+  url: /categories/
+
 - title: "Tags"
-  url: /tag-archive/
+  url: /tags/
+
 - title: "Pages"
   url: /page-archive/
+
 - title: "Collections"
   url: /collection-archive/

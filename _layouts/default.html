@@ -5,38 +5,39 @@ layout: compress
 {% include base_path %}
 
 <!DOCTYPE html>
-<html lang="{{ site.locale | slice: 0,2 }}">
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
   <head>
-  {% include head %}
+  {% include head.html %}
+  {% include head/custom.html %}
   </head>
 
   <body>
 
-  {% include browser-upgrade %}
-  {% include navigation %}
+  {% include browser-upgrade.html %}
+  {% include masthead.html %}
 
   {% if page.header.image %}
-    <div class="image-wrap">
+    <div class="page__hero">
       <img src=
         {% if page.header.image contains "http" %}
           "{{ page.header.image }}"
         {% else %}
           "{{ page.header.image | prepend: "/images/" | prepend: base_path }}"
         {% endif %}
-        alt="{{ page.title }}">
+        alt="{{ page.title }}" class="page__hero-image">
       {% if page.header.caption %}
-        <span class="image-caption">{{ page.header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+        <span class="page__hero-caption">{{ page.header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
       {% endif %}
-    </div><!-- /.image-wrap -->
+    </div>
   {% endif %}
 
-  {% if site.breadcrumbs %}
-    {% include breadcrumbs %}
+  {% if site.breadcrumbs and site.categories.type == 'jekyll-archives' %}
+    {% include breadcrumbs.html %}
   {% endif %}
 
   <div id="main" role="main">
-    <div class="sidebar">
-      {% if page.author_profile %}{% include author-profile %}{% endif %}
+    {% if page.author_profile or page.sidebar %}<div class="sidebar sticky">
+      {% if page.author_profile %}{% include author-profile.html %}{% endif %}
       {% if page.sidebar %}
         {% for s in page.sidebar %}
           {% if s.image %}
@@ -52,18 +53,18 @@ layout: compress
           {% if s.text %}{{ s.text | markdownify }}{% endif %}
         {% endfor %}
       {% endif %}
-      {% unless page.author_profile or page.sidebar %}&nbsp;{% endunless %}
-    </div>
+    </div>{% endif %}
     {{ content }}
-  </div><!-- /#main -->
+  </div>
 
-  <div class="footer-wrap">
+  <div class="page__footer">
     <footer>
-      {% include footer %}
+      {% include footer.html %}
     </footer>
-  </div><!-- /.footer-wrap -->
+  </div>
 
-  {% include scripts %}
+  {% include scripts.html %}
+  {% include footer/custom.html %}
 
   </body>
 </html>
