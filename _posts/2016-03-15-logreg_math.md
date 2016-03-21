@@ -3,7 +3,7 @@ title: "Logistic regression for student performance prediction"
 author: matt_gregory
 comments: yes
 date: '2016-03-15'
-modified: 2016-03-16
+modified: 2016-03-21
 layout: post
 excerpt: "Predicting student end of year performance using logistic regression"
 published: true
@@ -379,40 +379,41 @@ sessionInfo()
 
 {% highlight text %}
 ## R version 3.2.3 (2015-12-10)
-## Platform: x86_64-pc-linux-gnu (64-bit)
-## Running under: Ubuntu 14.04.4 LTS
+## Platform: x86_64-w64-mingw32/x64 (64-bit)
+## Running under: Windows >= 8 x64 (build 9200)
 ## 
 ## locale:
-##  [1] LC_CTYPE=en_GB.UTF-8       LC_NUMERIC=C              
-##  [3] LC_TIME=en_GB.UTF-8        LC_COLLATE=en_GB.UTF-8    
-##  [5] LC_MONETARY=en_GB.UTF-8    LC_MESSAGES=en_GB.UTF-8   
-##  [7] LC_PAPER=en_GB.UTF-8       LC_NAME=C                 
-##  [9] LC_ADDRESS=C               LC_TELEPHONE=C            
-## [11] LC_MEASUREMENT=en_GB.UTF-8 LC_IDENTIFICATION=C       
+## [1] LC_COLLATE=English_United Kingdom.1252 
+## [2] LC_CTYPE=English_United Kingdom.1252   
+## [3] LC_MONETARY=English_United Kingdom.1252
+## [4] LC_NUMERIC=C                           
+## [5] LC_TIME=English_United Kingdom.1252    
 ## 
 ## attached base packages:
-## [1] methods   stats     graphics  grDevices utils     datasets  base     
+## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
 ##  [1] boot_1.3-17     e1071_1.6-7     caret_6.0-64    ggplot2_2.0.0  
 ##  [5] lattice_0.20-33 ROCR_1.0-7      gplots_2.17.0   dplyr_0.4.3    
-##  [9] testthat_0.11.0 knitr_1.12.3   
+##  [9] testthat_0.11.0 knitr_1.12     
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] Rcpp_0.12.2        nloptr_1.0.4       formatR_1.2.1     
+##  [1] Rcpp_0.12.3        nloptr_1.0.4       formatR_1.2.1     
 ##  [4] plyr_1.8.3         class_7.3-14       bitops_1.0-6      
-##  [7] iterators_1.0.8    tools_3.2.3        digest_0.6.8      
-## [10] lme4_1.1-10        evaluate_0.8       memoise_0.2.1     
-## [13] gtable_0.1.2       nlme_3.1-123       mgcv_1.8-7        
+##  [7] iterators_1.0.8    tools_3.2.3        lme4_1.1-10       
+## [10] digest_0.6.9       evaluate_0.8       memoise_0.2.1     
+## [13] gtable_0.1.2       nlme_3.1-122       mgcv_1.8-9        
 ## [16] Matrix_1.2-3       foreach_1.4.3      DBI_0.3.1         
-## [19] parallel_3.2.3     SparseM_1.7        stringr_1.0.0     
-## [22] MatrixModels_0.4-1 gtools_3.5.0       caTools_1.17.1    
-## [25] stats4_3.2.3       grid_3.2.3         nnet_7.3-11       
-## [28] R6_2.1.1           minqa_1.2.4        gdata_2.17.0      
-## [31] reshape2_1.4.1     car_2.1-1          magrittr_1.5      
-## [34] splines_3.2.3      scales_0.3.0       codetools_0.2-14  
-## [37] MASS_7.3-44        assertthat_0.1     pbkrtest_0.4-4    
-## [40] colorspace_1.2-6   quantreg_5.19      KernSmooth_2.23-15
-## [43] stringi_1.0-1      munsell_0.4.2      crayon_1.3.1
+## [19] yaml_2.1.13        parallel_3.2.3     SparseM_1.7       
+## [22] stringr_1.0.0      MatrixModels_0.4-1 gtools_3.5.0      
+## [25] caTools_1.17.1     stats4_3.2.3       nnet_7.3-11       
+## [28] grid_3.2.3         R6_2.1.1           rmarkdown_0.9.2   
+## [31] minqa_1.2.4        gdata_2.17.0       reshape2_1.4.1    
+## [34] car_2.1-1          magrittr_1.5       splines_3.2.3     
+## [37] scales_0.3.0       codetools_0.2-14   htmltools_0.3     
+## [40] MASS_7.3-45        pbkrtest_0.4-4     rsconnect_0.4.1.11
+## [43] assertthat_0.1     colorspace_1.2-6   quantreg_5.19     
+## [46] KernSmooth_2.23-15 stringi_1.0-1      munsell_0.4.2     
+## [49] crayon_1.3.1
 {% endhighlight %}
  
