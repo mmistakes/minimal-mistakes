@@ -25,8 +25,6 @@ knitr::opts_chunk$set(
   )
 ```
 
-# Predicting forest fires using weather data
-
 ## Introduction
 This post is based on a paper by Cortez & Morais (2007). Forest fires are a major environmental issue, creating economical and ecological damage while endangering human lives. Fast detection is a key element for controlling such phenomenon. To achieve this, one alternative is to use automatic tools based on local sensors, such as microclimate and weather data provided by meteorological stations.
 

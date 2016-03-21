@@ -1,7 +1,6 @@
 ---
 title: "Measuring light with a Raspberry Pi"
 author: matt_upson
-author: matt_upson
 comments: yes
 date: '2016-02-22'
 modified: 2016-03-13
