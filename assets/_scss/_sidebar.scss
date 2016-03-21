@@ -151,31 +151,31 @@
     box-shadow: none;
   }
   &:before {
+    display: block;
     content: "";
     position: absolute;
+    top: -11px;
+    left: calc(50% - 10px);
+    width: 0;
     border-style: solid;
     border-width: 0 10px 10px;
     border-color: $border-color transparent;
-    display: block;
-    width: 0;
     z-index: 0;
-    top: -11px;
-    left: calc(50% - 10px);
     @include breakpoint($large) {
       display: none;
     }
   }
   &:after {
+    display: block;
     content: "";
     position: absolute;
+    top: -10px;
+    left: calc(50% - 10px);
+    width: 0;
     border-style: solid;
     border-width: 0 10px 10px;
     border-color: #fff transparent;
-    display: block;
-    width: 0;
     z-index: 1;
-    top: -10px;
-    left: calc(50% - 10px);
     @include breakpoint($large) {
       display: none;
     }

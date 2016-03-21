@@ -16,6 +16,9 @@
   @include breakpoint($x-large) {
     max-width: $x-large;
   }
+  nav {
+    z-index: 1;
+  }
   a {
     text-decoration: none;
   }
@@ -49,25 +52,8 @@
 }
 
 .masthead__menu-item {
-    display: block;
-    list-style-type: none;
-    border-bottom: 1px solid $border-color;
-    font-size: 16px;
-    &:last-child {
-      border-bottom: 0 solid transparent;
-    }
-    @include breakpoint($small) {
-      display: inline;
-      margin-right: 25px;
-      white-space: nowrap;
-      border-bottom: 0 solid transparent;
-    }
-    a {
-      display: block;
-      padding: 10px 0;
-      @include breakpoint($small) {
-        display: inline;
-        padding: 0;
-      }
-    }
-  }
+  display: block;
+  list-style-type: none;
+  font-size: 16px;
+  white-space: nowrap;
+}
