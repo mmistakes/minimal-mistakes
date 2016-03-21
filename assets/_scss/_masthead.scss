@@ -9,16 +9,20 @@
   font-family: $sans-serif-narrow;
   font-weight: 700;
   text-transform: uppercase;
+
   @include breakpoint($large) {
     padding-left: 1em;
     padding-right: 1em;
   }
+
   @include breakpoint($x-large) {
     max-width: $x-large;
   }
+
   nav {
-    z-index: 1;
+    z-index: 10;
   }
+
   a {
     text-decoration: none;
   }
@@ -29,9 +33,11 @@
   @include breakpoint($large) {
     @include prefix(2 of 12);
   }
+
   @include breakpoint($x-large) {
     @include prefix(2.5 of 12);
   }
+
   font-size: 24px;
 }
 
@@ -39,9 +45,11 @@
   @include breakpoint($large) {
     @include prefix(2 of 12);
   }
+
   @include breakpoint($x-large) {
     @include prefix(2.5 of 12);
   }
+
   margin-bottom: 1em;
   ul {
     margin: 0;
@@ -56,4 +64,10 @@
   list-style-type: none;
   font-size: 16px;
   white-space: nowrap;
+
+  a {
+    &:hover {
+      color: $gray;
+    }
+  }
 }

@@ -4,15 +4,19 @@
 
 .archive {
   margin-bottom: 2em;
+
   @include breakpoint($medium) {
     @include span(12 of 12);
   }
+
   @include breakpoint($large) {
     @include span(10 of 12 last);
   }
+
   @include breakpoint($x-large) {
     @include prefix(0.5 of 12);
   }
+
   a {
     text-decoration: none;
   }
@@ -34,6 +38,7 @@
 
 .archive__item-excerpt {
   font-size: 14px;
+
   & + p {
     text-indent: 0;
   }
@@ -43,6 +48,7 @@ a:hover {
   .archive__item-teaser {
     box-shadow: 0 0 10px rgba(#000, 0.25);
   }
+
   .archive__item-title {
     text-decoration: underline;
   }
@@ -57,9 +63,11 @@ a:hover {
   @include breakpoint($medium) {
     padding-right: $right-sidebar-width-narrow;
   }
+
   @include breakpoint($large) {
     padding-right: $right-sidebar-width;
   }
+
   @include breakpoint($x-large) {
     padding-right: $right-sidebar-width-wide;
   }
@@ -72,15 +80,18 @@ a:hover {
 
 .grid__item {
   margin-bottom: 2em;
+
   .archive__item-excerpt {
     display: none;
   }
+
   .archive__item-teaser {
     border-radius: $border-radius;
     img {
       width: 100%;
     }
   }
+
   @include breakpoint($small) {
     @include gallery(5 of 10);
     .archive__item-teaser {
@@ -88,13 +99,16 @@ a:hover {
       overflow: hidden;
     }
   }
+
   @include breakpoint($medium) {
     margin-left: 0; // reset before mixin does its thing
     margin-right: 0; // reset before mixin does its thing
     @include gallery(2.5 of 10);
+
     .archive__item-teaser {
       max-height: 120px;
     }
+
     .archive__item-excerpt {
       display: block;
     }

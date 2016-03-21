@@ -22,12 +22,15 @@
   border: 0 !important;
   border-radius: $border-radius;
   cursor: pointer;
+
   &:hover {
     background-color: mix(white, #000, 20%);
   }
+
   .icon {
     margin-right: 0.5em;
   }
+
   .icon + .hidden {
     margin-left: -0.5em; // override for hidden text
   }
@@ -37,6 +40,7 @@
   &--block {
     display: block;
     width: 100%;
+
     + .btn--block {
       margin-top: 0.25em;
     }
@@ -48,6 +52,7 @@
     color: currentColor !important;
     border: 1px solid currentColor !important; // override
     background-color: #fff;
+
     &:hover {
       background-color: mix(#000, #fff, 20%);
     }
@@ -64,6 +69,7 @@
 
   &--info {
     background-color: $info-color;
+
     &:hover {
       background-color: mix(#000, $info-color, 20%);
     }
@@ -73,6 +79,7 @@
 
   &--warning {
     background-color: $warning-color;
+
     &:hover {
       background-color: mix(#000, $warning-color, 20%);
     }
@@ -82,6 +89,7 @@
 
   &--success {
     background-color: $success-color;
+
     &:hover {
       background-color: mix(#000, $success-color, 20%);
     }
@@ -91,6 +99,7 @@
 
   &--danger {
     background-color: $danger-color;
+
     &:hover {
       background-color: mix(#000, $danger-color, 20%);
     }
@@ -117,6 +126,7 @@
   @each $socialnetwork, $color in $social {
     &--#{$socialnetwork} {
       background-color: $color;
+
       &:hover {
         background-color: mix(#000, $color, 20%);
       }

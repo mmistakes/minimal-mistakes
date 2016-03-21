@@ -110,6 +110,7 @@ body:hover .visually-hidden button {
   display: block;
   margin-left: auto;
   margin-right: auto;
+
   @include breakpoint($small) {
     float: left;
     margin-right: 1em;
@@ -122,6 +123,7 @@ body:hover .visually-hidden button {
   display: block;
   margin-left: auto;
   margin-right: auto;
+
   @include breakpoint($small) {
     float: right;
     margin-left: 1em;
@@ -218,6 +220,7 @@ $navicon-height : 4px;
     position: -webkit-sticky;
     position: sticky;
     top: 3em;
+
     > * {
       display: block;
     }

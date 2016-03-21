@@ -9,20 +9,35 @@
 .sidebar {
   @include clearfix();
   margin-bottom: 1em;
+
   @include breakpoint($large) {
     @include span(2 of 12);
     @include suffix(0.25 of 12);
   }
+
   @include breakpoint($x-large) {
     padding-right: 0;
   }
+
   h2, h3, h4, h5, h6 {
     margin-bottom: 0;
     font-family: $sans-serif-narrow;
   }
-  p, li {
-    font-size: 14px;
+
+  h3 {
+    font-size: 20px;
   }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  p, li {
+    font-family: $sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
   img {
     width: 100%;
   }
@@ -35,17 +50,21 @@
     right: 1em;
     width: $right-sidebar-width-narrow;
     padding-left: 2em;
+
     @include breakpoint($large) {
       width: $right-sidebar-width;
     }
+
     @include breakpoint($x-large) {
       width: $right-sidebar-width-wide;
       padding-left: span(1 of 12);
     }
   }
+
   @include breakpoint($large) {
     right: calc(50% - (0.5 * #{$large}) + 1em); // 50% - 1/2 of wrapper's max-width + wrapper padding
   }
+
   @include breakpoint($x-large) {
     right: calc(50% - (0.5 * #{$x-large}) + 1em); // 50% - 1/2 of wrapper's max-width + wrapper padding
   }
@@ -60,11 +79,13 @@
   vertical-align: top;
   width: 36px;
   height: 36px;
+
   @include breakpoint($large) {
     display: block;
     width: 100%;
     height: 100%;
   }
+
   img {
     max-width: 110px;
     border-radius: 50%;
@@ -78,6 +99,7 @@
   padding-left: 15px;
   padding-right: 15px;
   line-height: 1;
+
   @include breakpoint($large) {
     display: block;
     width: 100%;
@@ -89,6 +111,7 @@
 .author__name {
   margin: 0;
   font-size: 18px;
+
   @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -101,8 +124,7 @@
 
 .author__bio {
   margin-bottom: 10px;
-  font-size: 14px;
-  font-style: italic;
+
   @include breakpoint($large) {
     margin-bottom: 20px;
   }
@@ -116,6 +138,7 @@
   z-index: 9999;
   position: relative;
   cursor: pointer;
+
   @include breakpoint($large) {
     display: block;
   }
@@ -123,6 +146,7 @@
     margin: 0;
     padding: 5px 10px;
     color: mix(#fff, $gray, 25%);
+
     @include breakpoint($large) {
       display: none;
     }
@@ -141,6 +165,7 @@
   background: #fff;
   z-index: -1;
   box-shadow: 0 0 10px rgba(#000, 0.25);
+
   @include breakpoint($large) {
     display: block;
     position: relative;
@@ -150,6 +175,7 @@
     background: transparent;
     box-shadow: none;
   }
+
   &:before {
     display: block;
     content: "";
@@ -161,10 +187,12 @@
     border-width: 0 10px 10px;
     border-color: $border-color transparent;
     z-index: 0;
+
     @include breakpoint($large) {
       display: none;
     }
   }
+
   &:after {
     display: block;
     content: "";
@@ -176,10 +204,12 @@
     border-width: 0 10px 10px;
     border-color: #fff transparent;
     z-index: 1;
+
     @include breakpoint($large) {
       display: none;
     }
   }
+
   a {
     display: block;
     margin-bottom: 5px;
@@ -187,6 +217,7 @@
     font-size: 14px;
     text-decoration: none;
     white-space: nowrap;
+
     &:hover {
       text-decoration: underline;
     }
