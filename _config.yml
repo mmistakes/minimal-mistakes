@@ -16,7 +16,7 @@ baseurl                  : "/minimal-mistakes" # the subpath of your site, e.g. 
 email                    : "your-email@domain.com"
 logo                     : "site-logo.png"
 teaser                   : "500x300.png"
-breadcrumbs              : true # true / false (default)
+breadcrumbs              : true
 breadcrumb_home_label    : "Home"
 breadcrumb_separator     : "/"
 twitter:
@@ -25,7 +25,9 @@ facebook:
   username               : &facebook "site_facebook"
   app_id                 :
   publisher              :
-share                    : true # false (default), true
+read_time                : true
+words_per_minute         : 200
+share                    : true
 comments:
   provider               : false # false (default), "disqus", "facebook", "google-plus", custom"
   disqus:
@@ -33,8 +35,8 @@ comments:
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
-    num_posts            : # 5 (default)
-    width                : # 580 (default)
+    num_posts            : # 5
+    width                : # 580
     colorscheme          : # "light" (default), "dark"
 google_site_verification :
 bing_site_verification   :
@@ -131,6 +133,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+      read_time: true
       comments: true
       share: true
       related: true

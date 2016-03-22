@@ -12,6 +12,7 @@ layout: default
   <div class="page__inner-wrap">
     <header>
       <h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
+      {% if site.read_time and page.read_time %}<p class="page__meta">{{ page.date | date: "%b %d, %Y" }} <span class="sep">·</span> {% include read-time.html %}</p>{% endif %}
     </header>
 
     <section class="page__content" itemprop="text">
