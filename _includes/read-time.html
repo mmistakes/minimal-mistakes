@@ -1,4 +1,8 @@
-{% assign words = page.content | strip_html | number_of_words %}
+{% if post.read_time %}
+  {% assign words = post.content | strip_html | number_of_words %}
+{% elsif page.read_time %}
+  {% assign words = page.content | strip_html | number_of_words %}
+{% endif %}
 
 {% if words < 180 %}
   {{ site.data.ui-text[site.locale].less_than }} 1 {{ site.data.ui-text[site.locale].minute_read }}

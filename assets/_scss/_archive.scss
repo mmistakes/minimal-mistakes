@@ -71,6 +71,10 @@ a:hover {
   @include breakpoint($x-large) {
     padding-right: $right-sidebar-width-wide;
   }
+
+  .page__meta {
+    margin: 0 0 4px;
+  }
 }
 
 
@@ -80,6 +84,10 @@ a:hover {
 
 .grid__item {
   margin-bottom: 2em;
+
+  .page__meta {
+    margin: 0 0 4px;
+  }
 
   .archive__item-excerpt {
     display: none;
