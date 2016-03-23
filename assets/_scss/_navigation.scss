@@ -14,14 +14,31 @@
   padding-right: 2em;
   font-family: $sans-serif;
 
+  @include breakpoint($large) {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  @include breakpoint($x-large) {
+    max-width: $x-large;
+  }
+
   ol {
     padding: 0;
     list-style: none;
     font-size: 14px;
 
-    @include breakpoint($medium) {
-      @include span(10 of 12);
-      @include pre(2);
+    // @include breakpoint($medium) {
+    //   @include span(10 of 12);
+    //   @include pre(2);
+    // }
+
+    @include breakpoint($large) {
+      @include span(10 of 12 last);
+    }
+
+    @include breakpoint($x-large) {
+      @include prefix(0.5 of 12);
     }
   }
 
