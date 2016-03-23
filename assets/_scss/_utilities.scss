@@ -99,6 +99,10 @@ body:hover .visually-hidden button {
 
 .cf { clear: both; }
 
+.wrapper {
+  @include container();
+}
+
 
 /*
    Images
