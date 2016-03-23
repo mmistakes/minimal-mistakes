@@ -16,46 +16,7 @@ layout: compress
   {% include browser-upgrade.html %}
   {% include masthead.html %}
 
-  {% if page.header.image %}
-    <div class="page__hero">
-      <img src=
-        {% if page.header.image contains "http" %}
-          "{{ page.header.image }}"
-        {% else %}
-          "{{ page.header.image | prepend: "/images/" | prepend: base_path }}"
-        {% endif %}
-        alt="{{ page.title }}" class="page__hero-image">
-      {% if page.header.caption %}
-        <span class="page__hero-caption">{{ page.header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
-      {% endif %}
-    </div>
-  {% endif %}
-
-  {% if page.url != "/" and site.breadcrumbs and site.categories.type == "jekyll-archives" %}
-    {% include breadcrumbs.html %}
-  {% endif %}
-
-  <div id="main" role="main">
-    {% if page.author_profile or page.sidebar %}<div class="sidebar sticky">
-      {% if page.author_profile %}{% include author-profile.html %}{% endif %}
-      {% if page.sidebar %}
-        {% for s in page.sidebar %}
-          {% if s.image %}
-            <img src=
-            {% if s.image contains "http" %}
-              "{{ s.image }}"
-            {% else %}
-              "{{ s.image | prepend: "/images/" | prepend: base_path }}"
-            {% endif %}
-            alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
-          {% endif %}
-          {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
-          {% if s.text %}{{ s.text | markdownify }}{% endif %}
-        {% endfor %}
-      {% endif %}
-    </div>{% endif %}
-    {{ content }}
-  </div>
+  {{ content }}
 
   <div class="page__footer">
     <footer>

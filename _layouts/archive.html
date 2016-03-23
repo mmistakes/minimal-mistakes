@@ -2,7 +2,19 @@
 layout: default
 ---
 
-<div class="archive">
-  <h1 class="page__title">{{ page.title }}</h1>
-  {{ content }}
-</div><!-- /.archive -->
+{% if page.header.image %}
+  {% include page__hero.html %}
+{% endif %}
+
+{% if page.url != "/" and site.breadcrumbs and site.categories.type == "jekyll-archives" %}
+  {% include breadcrumbs.html %}
+{% endif %}
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <div class="archive">
+    <h1 class="page__title">{{ page.title }}</h1>
+    {{ content }}
+  </div>
+</div>
