@@ -14,7 +14,7 @@ en: &DEFAULT_EN
   meta_label          :
   tags_label          : "Tags:"
   categories_label    : "Categories:"
-  date_label          : "Last Updated:"
+  date_label          :
   comments_label      : "Leave a Comment"
   related_label       : "You May Also Enjoy"
   follow_label        : "Follow:"
