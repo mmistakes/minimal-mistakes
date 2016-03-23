@@ -1,0 +1,51 @@
+{% include base_path %}
+
+{% if include.id %}
+  {% assign splash_row = page.[include.id] %}
+{% else %}
+  {% assign splash_row = page.splash_row %}
+{% endif %}
+
+{% capture splash_size %}{{ splash_row | size }}{% endcapture %}
+
+{% if splash_size == '2' %}
+  {% assign splash_layout = 'half' %}
+{% elsif splash_size >= '3' %}
+  {% assign splash_layout = 'third' %}
+{% else %}
+  {% assign splash_layout = '' %}
+{% endif %}
+
+<div class="splash__wrapper">
+
+  {% for s in splash_row %}
+    <div class="splash__item">
+      <div class="archive__item">
+        {% if s.image_path %}
+          <div class="archive__item-teaser">
+            <img src=
+              {% if s.image_path contains "http" %}
+                "{{ s.image_path }}"
+              {% else %}
+                "{{ s.image_path | prepend: "/images/" | prepend: base_path }}"
+              {% endif %}
+            alt="{% if s.alt %}{{ s.alt }}{% endif %}">
+          </div>
+        {% endif %}
+
+        {% if s.title %}
+          <h2 class="archive__item-title">{{ s.title }}</h2>
+        {% endif %}
+
+        {% if s.excerpt %}
+          <div class="archive__item-excerpt">{{ s.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}</div>
+        {% endif %}
+
+        {% if s.url %}
+          <p><a href="{{ s.url }}" class="btn {{ s.btn_class }}">{{ s.btn_label | default: site.data.ui-text[site.locale].more_label }}</a></p>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+
+</div>

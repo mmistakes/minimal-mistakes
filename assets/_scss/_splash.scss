@@ -1,0 +1,35 @@
+/* ==========================================================================
+   SPLASH
+   ========================================================================== */
+
+.page__hero--splash {
+  position: relative;
+  margin-bottom: 2em;
+  padding: 3em 0;
+  @include clearfix;
+  text-align: center;
+
+  .page__title {
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(#000, 0.5);
+  }
+}
+
+.splash__item {
+  margin-bottom: 2em;
+
+  @include breakpoint($small) {
+    text-align: center;
+    @include gallery(4 of 12);
+
+    .splash__item-teaser {
+      max-height: 200px;
+      overflow: hidden;
+    }
+  }
+
+  .archive__item-excerpt {
+    margin-bottom: 1em;
+  }
+}
+
