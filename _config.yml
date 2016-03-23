@@ -35,8 +35,7 @@ comments:
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
-    num_posts            : # 5
-    width                : # 580
+    num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
 google_site_verification :
 bing_site_verification   :
