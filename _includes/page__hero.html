@@ -4,18 +4,24 @@
   {% capture img_path %}{{ page.header.image | prepend: "/images/" | prepend: base_path }}{% endcapture %}
 {% endif %}
 
-{% if page.header.background_image contains "http" %}
-  {% capture background_img_path %}{{ page.header.background_image }}{% endcapture %}
-{% else %}
-  {% capture background_img_path %}{{ page.header.background_image | prepend: "/images/" | prepend: base_path }}{% endcapture %}
+{% if page.header.overlay_image contains "http" %}
+  {% capture overlay_img_path %}{{ page.header.overlay_image }}{% endcapture %}
+{% elsif page.header.overlay_image %}
+  {% capture overlay_img_path %}{{ page.header.overlay_image | prepend: "/images/" | prepend: base_path }}{% endcapture %}
 {% endif %}
 
-<div class="page__hero{% if page.header.splash %}--splash{% endif %}"
-  style="background: {{ page.header.background_color | default: 'transparent' }} {% if background_img_path %}url('{{ background_img_path }}'){% endif %};"
+<div class="page__hero{% if page.header.overlay_color or page.header.overlay_image %}--overlay{% endif %}"
+  style="background: {{ page.header.overlay_color | default: 'transparent' }} {% if overlay_img_path %}url('{{ overlay_img_path }}'){% endif %};"
 >
-  {% if page.header.splash %}
+  {% if page.header.overlay_color or page.header.overlay_image %}
     <div class="wrapper">
-      <h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
+      <h1 class="page__title" itemprop="headline">
+        {% if paginator %}
+          {{ site.title }}{% unless paginator.page == 1 %} {{ site.data.ui-text[site.locale].page }} {{ paginator.page }}{% endunless %}
+        {% else %}
+          {{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}
+        {% endif %}
+      </h1>
       {% if site.read_time and page.read_time %}<p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>{% endif %}
     </div>
   {% else %}
