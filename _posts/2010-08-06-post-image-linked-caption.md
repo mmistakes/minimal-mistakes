@@ -8,10 +8,14 @@ tags:
 ---
 
 {% capture fig_img %}
-[![Foo](http://wpthemetestdata.files.wordpress.com/2012/06/dsc20040724_152504_532.jpg)](http://wpthemetestdata.files.wordpress.com/2012/06/dsc20040724_152504_532.jpg)
+[![Foo](https://farm5.staticflickr.com/4134/4940462712_7c28420b27_b.jpg)](https://flic.kr/p/8wzarA)
+{% endcapture %}
+
+{% capture fig_caption %}
+Stairs? Were we're going we don't need no stairs.
 {% endcapture %}
 
 <figure>
-  {{ fig_img | markdownify }}
-  <figcaption>Chunk of resinous blackboy husk, Clarkson, Western Australia. This burns like a spinifex log.</figcaption>
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>{{ fig_caption | markdownify | remove: "<p>" | remove: "</p>" }}</figcaption>
 </figure>

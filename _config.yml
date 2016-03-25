@@ -16,7 +16,7 @@ baseurl                  : "/minimal-mistakes" # the subpath of your site, e.g. 
 email                    : "your-email@domain.com"
 logo                     : "site-logo.png"
 teaser                   : "500x300.png"
-breadcrumbs              : true
+breadcrumbs              : # true, false (default)
 breadcrumb_home_label    : "Home"
 breadcrumb_separator     : "/"
 twitter:
@@ -35,8 +35,7 @@ comments:
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
-    num_posts            : # 5
-    width                : # 580
+    num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
 google_site_verification :
 bing_site_verification   :
@@ -249,6 +248,7 @@ author:
   steam            :
   tumblr           :
   twitter          : *twitter
+  vine             :
   weibo            :
   xing             :
   youtube          :

@@ -99,6 +99,10 @@ body:hover .visually-hidden button {
 
 .cf { clear: both; }
 
+.wrapper {
+  @include container();
+}
+
 
 /*
    Images
@@ -151,6 +155,112 @@ body:hover .visually-hidden button {
   position: relative;
   top: -0.1em;
   vertical-align: middle;
+}
+
+// social icons
+
+.social-icons {
+  .fa-behance,
+  .fa-behance-square {
+    color: $behance-color;
+  }
+
+  .fa-dribbble {
+    color: $dribbble-color;
+  }
+
+  .fa-facebook,
+  .fa-facebook-square {
+    color: $facebook-color;
+  }
+
+  .fa-twitter,
+  .fa-twitter-square {
+    color: $twitter-color;
+  }
+
+  .fa-flickr {
+    color: $flickr-color;
+  }
+
+  .fa-foursquare {
+    color: $foursquare-color;
+  }
+
+  .fa-github,
+  .fa-github-alt,
+  .fa-github-square {
+    color: $github-color;
+  }
+
+  .fa-google-plus,
+  .fa-google-plus-square {
+    color: $google-plus-color;
+  }
+
+  .fa-instagram {
+    color: $instagram-color;
+  }
+
+  .fa-lastfm,
+  .fa-lastfm-square {
+    color: $lastfm-color;
+  }
+
+  .fa-linkedin,
+  .fa-linkedin-square {
+    color: $linkedin-color;
+  }
+
+  .fa-pinterest,
+  .fa-pinterest-p,
+  .fa-pinterest-square {
+    color: $pinterest-color;
+  }
+
+  .fa-rss,
+  .fa-rss-square {
+    color: $rss-color;
+  }
+
+  .fa-soundcloud {
+    color: $soundcloud-color;
+  }
+
+  .fa-stack-exchange,
+  .fa-stack-overflow {
+    color: $stackoverflow-color;
+  }
+
+  .fa-tumblr,
+  .fa-tumblr-square {
+    color: $tumblr-color;
+  }
+
+  .fa-twitter,
+  .fa-twitter-square {
+    color: $twitter-color;
+  }
+
+  .fa-vimeo,
+  .fa-vimeo-square {
+    color: $vimeo-color;
+  }
+
+  .fa-vine {
+    color: $vine-color;
+  }
+
+  .fa-youtube,
+  .fa-youtube-square,
+  .fa-youtube-play {
+    color: $youtube-color;
+  }
+
+  .fa-xing,
+  .fa-xing-square {
+    color: $xing-color;
+  }
 }
 
 
@@ -251,5 +361,13 @@ $navicon-height : 4px;
   ol, li, p {
     margin-bottom: 0;
     font-size: 14px;
+  }
+}
+
+a.reversefootnote {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
   }
 }

@@ -11,8 +11,9 @@
  */
 
 @mixin notice($notice-color) {
-  margin: 2em 0;
+  margin: 2em 0 !important;  // override
   padding: 1em;
+  text-indent: initial; // override
   background-color: mix(#fff, $notice-color, 90%);
   border-radius: $border-radius;
 
@@ -52,7 +53,7 @@
   }
 
   code {
-    background-color: mix(#fff, $notice-color, 70%)
+    background-color: mix(#fff, $notice-color, 95%)
   }
 }
 

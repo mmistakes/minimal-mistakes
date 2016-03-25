@@ -62,20 +62,6 @@ del a {
   color: inherit;
 }
 
-/* paragraph indents */
-
-p {
-  margin: 0 0 $indent-var;
-
-  // sibling indentation
-  @if $paragraph-indent == true {
-    & + p {
-      text-indent: $indent-var;
-      margin-top: -($indent-var);
-    }
-  }
-}
-
 /* reduce orphans and widows when printing */
 
 p, pre, blockquote, ul, ol, dl, figure, table, fieldset {
@@ -164,8 +150,8 @@ li code,
 figcaption code {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
-  background: mix(#fff, $light-gray, 40%);
-  border: 1px solid $light-gray;
+  background: $code-background-color;
+  border: 1px solid $lighter-gray;
   border-radius: $border-radius;
 
   &:before, &:after {
