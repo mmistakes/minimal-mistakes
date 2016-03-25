@@ -150,7 +150,7 @@ li code,
 figcaption code {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
-  background: mix(#fff, $lighter-gray, 20%);
+  background: $code-background-color;
   border: 1px solid $lighter-gray;
   border-radius: $border-radius;
 
