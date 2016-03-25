@@ -1,5 +1,6 @@
 ---
 title: "Template: Reading Time, Comments, Social Sharing Links, and Related Posts Disabled"
+read_time: false
 comments: false
 share: false
 related: false
