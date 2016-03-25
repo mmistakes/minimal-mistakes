@@ -64,6 +64,19 @@
   p, li {
     font-size: 16px;
   }
+
+  /* paragraph indents */
+  p {
+    margin: 0 0 $indent-var;
+
+    // sibling indentation
+    @if $paragraph-indent == true {
+      & + p {
+        text-indent: $indent-var;
+        margin-top: -($indent-var);
+      }
+    }
+  }
 }
 
 .page__hero {

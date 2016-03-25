@@ -8,7 +8,9 @@
 
 $doc-font-size       : 16;
 $doc-line-height     : 26;
-$paragraph-indent    : false !default;
+
+/* paragraph indention */
+$paragraph-indent    : false; // true, false (default)
 $indent-var          : 0rem + ($doc-line-height / $doc-font-size);
 
 /* system typefaces */
