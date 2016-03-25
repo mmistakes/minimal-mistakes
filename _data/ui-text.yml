@@ -22,6 +22,8 @@ en: &DEFAULT_EN
   follow_label        : "Follow:"
   feed_label          : "Feed"
   powered_by          : "Powered by"
+  website_label       : "Website"
+  email_label         : "Email"
 en_US:
   <<: *DEFAULT_EN
 en_UK:
