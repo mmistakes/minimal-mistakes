@@ -113,6 +113,9 @@ kramdown:
 
 # Collections
 collections:
+  docs:
+    output: true
+    permalink: /:collection/:path/
   recipes:
     output: true
     permalink: /:collection/:path/
@@ -143,6 +146,15 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: single
+      author_profile: false
+      share: false
+      comments: false
   # _recipes
   - scope:
       path: ""
