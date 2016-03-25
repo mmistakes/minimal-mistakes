@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title:            Site Title
+title:            Lazy Sysadmin
 locale:           en_US
 url:
 
@@ -41,23 +41,23 @@ titlecase: true
 
 # Site owner
 owner:
-  name: Your Name
+  name: Prasetiyo Hadi Purwoko
   avatar: bio-photo.jpg
   bio: "Describe your self."
-  email:
+  email: pras@deuterion.net
   disqus-shortname:
-  twitter: #username
-  facebook: #username
+  twitter: xprashp
+  facebook: prasetiyo.hadi.p
   google:
-    plus: #username
+    plus: PrasetiyoHadiPurwoko
     analytics:
     verify:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
+  github: prasetiyohadi
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
+  linkedin: prasetiyohadi
   xing: #username
   instagram: #username
   lastfm: #username
