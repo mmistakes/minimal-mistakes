@@ -1,19 +1,79 @@
-# Site navigation links
+# main links links
+main:
+  - title: "Theme Setup"
+    url: /theme-setup/
 
-- title: "Theme Setup"
-  url: /theme-setup/
+  - title: "Posts"
+    url: /year-archive/
 
-- title: "Posts"
-  url: /year-archive/
+  - title: "Categories"
+    url: /categories/
 
-- title: "Categories"
-  url: /categories/
+  - title: "Tags"
+    url: /tags/
 
-- title: "Tags"
-  url: /tags/
+  - title: "Pages"
+    url: /page-archive/
 
-- title: "Pages"
-  url: /page-archive/
+  - title: "Collections"
+    url: /collection-archive/
 
-- title: "Collections"
-  url: /collection-archive/
+
+# documentation links
+docs:
+  - title: Getting Started
+    children:
+      - title: "Quick Start Guide"
+        path: quick-start-guide
+      - title: "Installation"
+        path: installation
+      - title: "Upgrading"
+        path: upgrading
+      - title: "Structure"
+        path: structure
+
+  - title: Customization
+    children:
+      - title: "Configuration"
+        path: configuration
+      - title: "Navigation"
+        path: navigation
+      - title: "Authors"
+        path: authors
+      - title: "UI Text"
+        path: ui-text
+      - title: "Layouts"
+        path: layouts
+
+  - title: Content
+    children:
+      - title: "Working with Posts"
+        path: working-with-posts
+      - title: "Working with Pages"
+        path: working-with-pages
+      - title: "Working with Collections"
+        path: working-with-collections
+      - title: "Jekyll Include Helpers"
+        path: include-helpers
+      - title: "Images"
+        path: images
+
+  - title: Miscellaneous
+    children:
+      - title: "Pagination"
+        path: pagination
+      - title: "Archives"
+        path: archives
+      - title: "Development"
+        path: development
+      - title: "v2 Documentation"
+        path: docs-2
+
+  - title: Meta
+    children:
+      - title: "Contributing"
+        path: contributing
+      - title: "License"
+        path: license
+      - title: "History"
+        path: history

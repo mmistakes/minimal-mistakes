@@ -1,0 +1,56 @@
+- title: Getting Started
+  children:
+    - title: "Quick Start Guide"
+      path: quick-start-guide
+    - title: "Installation"
+      path: installation
+    - title: "Upgrading"
+      path: upgrading
+    - title: "Structure"
+      path: structure
+
+- title: Customization
+  children:
+    - title: "Configuration"
+      path: configuration
+    - title: "Navigation"
+      path: navigation
+    - title: "Authors"
+      path: authors
+    - title: "UI Text"
+      path: ui-text
+    - title: "Layouts"
+      path: layouts
+
+- title: Content
+  children:
+    - title: "Working with Posts"
+      path: working-with-posts
+    - title: "Working with Pages"
+      path: working-with-pages
+    - title: "Working with Collections"
+      path: working-with-collections
+    - title: "Jekyll Include Helpers"
+      path: include-helpers
+    - title: "Images"
+      path: images
+
+- title: Miscellaneous
+  children:
+    - title: "Pagination"
+      path: pagination
+    - title: "Archives"
+      path: archives
+    - title: "Development"
+      path: development
+    - title: "v2 Documentation"
+      path: docs-2
+
+- title: Meta
+  children:
+    - title: "Contributing"
+      path: contributing
+    - title: "License"
+      path: license
+    - title: "History"
+      path: history
