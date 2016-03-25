@@ -1,5 +1,5 @@
 ---
-title: "Template: Sidebar Custom"
+title: "Layout: Sidebar Custom"
 excerpt: "A post to custom sidebar content."
 author_profile: false
 sidebar:

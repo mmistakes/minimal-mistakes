@@ -1,14 +1,14 @@
 ---
-title: "Template: Header Overlay with Background Fill"
+title: "Layout: Header Overlay with Background Fill"
 header:
   overlay_color: "#333"
 categories:
-  - Template
+  - Layout
   - Uncategorized
 tags:
   - edge case
   - image
-  - template
+  - layout
 ---
 
 This post should display a **header with a solid background color**, if the theme supports it.

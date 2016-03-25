@@ -1,16 +1,16 @@
 ---
-title: "Template: Header Image Overlay"
+title: "Layout: Header Image Overlay"
 header:
   overlay_image: unsplash-image-1.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
   cta_url: "https://unsplash.com"
 categories:
-  - Template
+  - Layout
   - Uncategorized
 tags:
   - edge case
   - image
-  - template
+  - layout
 ---
 
 This post should display a **header with an overlay image**, if the theme supports it.

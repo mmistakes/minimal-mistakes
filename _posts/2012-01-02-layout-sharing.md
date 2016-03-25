@@ -1,12 +1,12 @@
 ---
-title: "Template: Social Sharing Links Enabled"
+title: "Layout: Social Sharing Links Enabled"
 share: true
 categories:
-  - Template
+  - Layout
   - Uncategorized
 tags:
   - social
-  - template
+  - layout
 ---
 
 This post should display social sharing links.

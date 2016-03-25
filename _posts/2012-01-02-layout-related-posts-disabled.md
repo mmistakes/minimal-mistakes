@@ -1,12 +1,12 @@
 ---
-title: "Template: Related Posts Disabled"
+title: "Layout: Related Posts Disabled"
 related: false
 categories:
-  - Template
+  - Layout
   - Uncategorized
 tags:
   - related posts
-  - template
+  - layout
 ---
 
 This post has related posts disabled.

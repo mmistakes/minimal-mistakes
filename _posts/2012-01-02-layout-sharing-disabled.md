@@ -1,12 +1,12 @@
 ---
-title: "Template: Social Sharing Links Disabled"
+title: "Layout: Social Sharing Links Disabled"
 share: false
 categories:
-  - Template
+  - Layout
   - Uncategorized
 tags:
   - social
-  - template
+  - layout
 ---
 
 This post has social sharing disabled.

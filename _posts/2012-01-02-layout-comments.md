@@ -1,12 +1,12 @@
 ---
-title: "Template: Comments Enabled"
+title: "Layout: Comments Enabled"
 comments: true
 categories:
-  - Template
+  - Layout
   - Uncategorized
 tags:
   - comments
-  - template
+  - layout
 ---
 
 This post should display comments.

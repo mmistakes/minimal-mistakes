@@ -1,16 +1,16 @@
 ---
-title: "Template: Header Image (Horizontal)"
+title: "Layout: Header Image (Horizontal)"
 header:
   image: unsplash-image-1.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 categories:
-  - Template
+  - Layout
   - Uncategorized
 tags:
   - edge case
   - featured image
   - image
-  - template
+  - layout
 ---
 
 This post should display a **header image**, if the theme supports it.
