@@ -10,7 +10,7 @@ tags:
   - template
 ---
 
-This is the post content. It should be displayed in place of the auto-generated excerpt in single-page views. Archive-index pages should display an auto-generated excerpt of this content.
+This is the post content. Archive-index pages should display an auto-generated excerpt of this content.
 
 <!--more-->
 

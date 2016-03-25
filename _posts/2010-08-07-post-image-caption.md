@@ -13,6 +13,6 @@ tags:
 {% endcapture %}
 
 <figure>
-  {{ fig_img | markdownify }}
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
   <figcaption>Bell on wharf in San Francisco</figcaption>
 </figure>
