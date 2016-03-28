@@ -7,7 +7,7 @@ modified: `r format(Sys.time(), '%Y-%m-%d')`
 layout: post
 excerpt: "Evaluating performance of supervised learning tools"
 published: yes
-status: process
+status: processed
 tags:
 - R
 - machine learning
@@ -166,7 +166,7 @@ abline(a = 0, b = 1, lwd = 2, lty = 2) #  add a line with no predictive value fo
 
 ```
 
-Qualitatively, we see that our ROC curve appears to occupy the space in the top-left corner of the diagram, which suggests that it is closser to a perfect classifier.
+Qualitatively, we see that our ROC curve appears to occupy the space in the top-left corner of the diagram, which suggests that it is closer to a perfect classifier.
 
 ## Resampling methods
 However, we still havn't addressed how well the model performs if applied to data it hasn't seen yet (beyond the single instance of the test data). Cross-validation and bootstrapping methods can help us understand the models accuracy further, but will be discussed in a later post.

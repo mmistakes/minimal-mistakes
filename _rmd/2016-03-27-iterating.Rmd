@@ -1,0 +1,311 @@
+---
+title: "Iteratively applying models"
+author: matt_upson
+comments: yes
+date: '2016-03-27'
+modified: `r format(Sys.time(), '%Y-%m-%d')`
+layout: post
+excerpt: "Using dplyr, broom, and purrr to make life easy"
+published: yes
+status: process
+tags:
+- R
+- dplyr
+- broom
+- purrr
+categories: Rstats
+---
+
+{% include _toc.html %}
+
+```{r,include=FALSE}
+
+#library(checkpoint)
+#checkpoint("2016-03-26")
+
+
+library(dplyr)
+library(magrittr)
+library(knitr)
+library(broom)
+library(ggplot2)
+library(purrr)
+
+
+knitr::opts_chunk$set(
+  warning = FALSE, 
+  message = FALSE,
+  echo = FALSE,
+  #include = FALSE,
+  cache = FALSE,
+  eval=TRUE,
+  #fig.width = 10,
+  #fig.height = 10#,
+  dev = "svg"
+  )
+
+
+```
+
+I've been doing a lot of programming in Python recently, and have taken my eye off the #RStats ball of late.
+With a bit of time to play over the Easter weekend, I've been reading [Hadley](https://twitter.com/hadleywickham)'s new [R for Data Science](http://r4ds.had.co.nz/) book.
+
+One thing I particularly like so far is the [purrr package]() which he describes in the [lists](http://r4ds.had.co.nz/lists.html) chapter.
+I've always thought that the `sapply`,`lapply`, `vapply` (etc) commands are rather complicated.
+The **purrr** package threatens to simplify this using the same left-to-right chaining framework that we have become used to in [**ggplot2**](https://cran.r-project.org/web/packages/ggplot2/index.html), and more recently [**dplyr**](https://cran.r-project.org/web/packages/dplyr/index.html).
+
+Something I find myself doing more and more is subsetting a dataframe by a factor, and applying the same or a similar model to each subset of the data. 
+There are some new ways to do this in **purrr**.
+
+In this post I'll briefly explore some of the functions of **purrr**, and use them together with **dplyr** and [**broom**](https://cran.r-project.org/web/packages/broom/index.html) (as much for my own memory as anything else).
+
+## do()
+
+In the past I have used `dplyr::do()` to apply a model like so.
+
+```{r,eval=FALSE,echo=TRUE}
+
+# Load packages
+
+library(dplyr)
+library(lubridate)
+library(magrittr)
+library(broom)
+library(ggplot2)
+
+# In case you haven't seen mtcars before (shame on you)
+
+mtcars
+```
+
+```{r,echo=FALSE}
+mtcars
+```
+
+```{r,echo=TRUE}
+
+# Subset by number of cylinders, and apply a linear model to each subset
+
+subset_models <- mtcars %>%
+  group_by(
+    cyl
+  ) %>%
+  do(fit = lm(mpg ~ wt, data = .))
+
+subset_models
+
+```
+
+This results in three models, one each for 4, 6, and 8 cylinders, 
+
+We can now use a second call to `do()`, `dplyr::summarise()` or `dplyr::mutate` to extract elements from these models: for example extract the coefficients...
+
+```{r,echo=TRUE}
+
+# Get the model coefficients, and coerce into a dataframe
+
+subset_models %>%
+  do(as.data.frame(coef(.$fit)))
+
+```
+
+We can also use `mutate()` to extract one or more elements
+
+```{r,echo=TRUE}
+
+subset_models %>%
+  mutate(
+    a = coef(fit)[[1]],
+    b = coef(fit)[[2]],
+    R2 = summary(fit)$r.squared,
+    adjustedR2 = summary(fit)$adj.r.squared
+  )
+
+```
+
+## The broom package
+
+If we want to get a tidier output, we can use the `broom` package, which provides three levels of aggregation.
+
+`glance` gives a single line for each model, similar to the `do()` and `summarise()` calls above:
+
+```{r,echo=TRUE}
+
+subset_models %>%
+  glance(fit)
+
+```
+
+`tidy()` gives details of the model coefficicents:
+
+```{r,echo=TRUE}
+
+subset_models %>%
+  tidy(fit)
+
+```
+
+`augment()` returns a row for each data point in the original data with relevant model outputs
+
+```{r,echo=TRUE}
+
+subset_models %>%
+  augment(fit)
+```
+
+One nice use case of `augment()` is for plotting fitted models against the data.
+
+```{r 2016-03-27-augment-plot,echo=TRUE}
+subset_models %>%
+  augment(fit) %>%
+  ggplot +
+  aes(
+    y = mpg,
+    x = wt,
+    colour = factor(cyl)
+    ) +
+  geom_point() +
+  geom_point(
+    aes(
+      y = .fitted,
+      group = cyl
+      ),
+    colour = "black"
+    )+
+  geom_path(
+    aes(
+      y = .fitted,
+      group = cyl
+      )
+    )
+  
+```
+
+In this simple example, we could achieve the same just with `geom_smooth(aes(group=cyl), method="lm")`; however this would not be so easy with a more complicated model.
+
+## purrr
+
+So what is new about **purrr**?
+Well first off we can do similar things to `do()` using `map()`:
+
+```{r,echo=TRUE}
+
+mtcars %>%
+  split(.$cyl) %>%
+  map(~ lm(mpg ~ wt, data = .))
+
+```
+
+And we can keep adding `map()` functions to get the output we want:
+
+```{r,echo=TRUE}
+mtcars %>%
+  split(.$cyl) %>%
+  map(~ lm(mpg ~ wt, data = .)) %>%
+  map(summary)
+```
+
+> Note the three types of input to map(): a function, a formula (converted to an anonymous function), or a string (used to extract named components). [^1]
+
+So to use a string this time, returning a double vector...
+
+```{r,echo=TRUE}
+mtcars %>%
+  split(.$cyl) %>%
+  map(~ lm(mpg ~ wt, data = .)) %>%
+  map(summary) %>%
+  map_dbl("r.squared")
+```
+
+[^1]: https://github.com/hadley/purrr
+
+### Creating training and test splits
+
+A more complicated example that is a purrrfect use case is: creating splits in a dataset on which a model can be trained and then validated.
+Here I shamelessly copy Hadley's example[^1]. Note that you will need the latest dev version of **dplyr** to run this correctly due to [this issue](https://github.com/hadley/dplyr/issues/1447) (fixed in the next **dplyr** release > 0.4.3).
+
+First define a cost function on which to evaluate the models (in this case the mean squared difference (but this could be anything).
+
+```{r,echo=TRUE}
+msd <- function(x, y) sqrt(mean((x - y) ^ 2))
+```
+
+And a function to generate $n$ random groups with a given probability
+
+```{r,echo=TRUE}
+
+random_group <- function(n, probs) {
+  probs <- probs / sum(probs)
+  g <- findInterval(seq(0, 1, length = n), c(0, cumsum(probs)),
+    rightmost.closed = TRUE)
+  names(probs)[sample(g)]
+}
+
+```
+
+And wrap this up in a function to replicate it...
+
+```{r,echo=TRUE}
+
+partition <- function(df, n, probs) {
+  replicate(n, split(df, random_group(nrow(df), probs)), FALSE) %>%
+    transpose() %>%
+    as_data_frame()
+}
+
+```
+
+Note that this makes use of the new `purrr::transpose()` function which applies something like a matrix transpose to a list, and when coerced, returns a `data_frame` containing $n$ random splits of the data.
+
+```{r}
+boot <- partition(mtcars, 100, c(training = 0.8, test = 0.2))
+boot
+```
+
+Finally use `map()` to:  
+
+*  Fit simple linear models to the data as before.  
+*  Make predictions based on those models on the test dataset.  
+*  Evaluate model performance using the cost function (`msd`).  
+
+```{r,echo=TRUE}
+
+boot <- boot %>% 
+  dplyr::mutate(
+  models = map(training, ~ lm(mpg ~ wt, data = .)),
+  preds = map2(models, test, predict),
+  diffs = map2(preds, test %>% map("mpg"), msd)
+)
+
+```
+
+This still results in a data frame, but with three new list columns. We need to subset out the columns of interest:
+
+```{r,echo=TRUE}
+diffs <- boot %$% 
+  diffs %>%
+  unlist 
+
+diffs
+```
+
+## Rounding up
+
+I've been playing with some things in this post that I am just getting to grips with, but look to be some really powerful additions to the hadleyverse, and the R landscape in general.
+Keeping an eye on the development of **purrr** would be a good move I think.
+
+## References
+
+* https://github.com/hadley/purrr  
+* http://r4ds.had.co.nz/lists.html  
+* http://r4ds.had.co.nz/model-assessment.html  
+* https://cran.r-project.org/web/packages/broom/vignettes/kmeans.html  
+* https://cran.r-project.org/web/packages/broom/vignettes/broom.html  
+
+
+
+
+```{r,eval=FALSE}
+sessionInfo()
+```
+

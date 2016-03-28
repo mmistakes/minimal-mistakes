@@ -3,7 +3,7 @@ title: "Assessing classifier performance"
 author: matt_gregory
 comments: yes
 date: '2016-03-24'
-modified: 2016-03-24
+modified: 2016-03-28
 layout: post
 excerpt: "Evaluating performance of supervised learning tools"
 published: true
@@ -107,7 +107,7 @@ summary(m)
 ## C5.0.default(x = data_train[-13], y = data_train$final)
 ## 
 ## 
-## C5.0 [Release 2.07 GPL Edition]  	Thu Mar 24 18:14:25 2016
+## C5.0 [Release 2.07 GPL Edition]  	Mon Mar 28 20:30:50 2016
 ## -------------------------------
 ## 
 ## Class specified by attribute `outcome'
@@ -321,7 +321,7 @@ abline(a = 0, b = 1, lwd = 2, lty = 2) #  add a line with no predictive value fo
 
 ![plot of chunk 2016-03-24_ROC_plot](/figures/2016-03-24_ROC_plot-1.svg)
  
-Qualitatively, we see that our ROC curve appears to occupy the space in the top-left corner of the diagram, which suggests that it is closser to a perfect classifier.
+Qualitatively, we see that our ROC curve appears to occupy the space in the top-left corner of the diagram, which suggests that it is closer to a perfect classifier.
  
 ## Resampling methods
 However, we still havn't addressed how well the model performs if applied to data it hasn't seen yet (beyond the single instance of the test data). Cross-validation and bootstrapping methods can help us understand the models accuracy further, but will be discussed in a later post.
@@ -346,7 +346,7 @@ sessionInfo()
 
 
 {% highlight text %}
-## R version 3.2.3 (2015-12-10)
+## R version 3.2.4 Revised (2016-03-16 r70336)
 ## Platform: x86_64-pc-linux-gnu (64-bit)
 ## Running under: Ubuntu 14.04.4 LTS
 ## 
@@ -362,26 +362,27 @@ sessionInfo()
 ## [1] methods   stats     graphics  grDevices utils     datasets  base     
 ## 
 ## other attached packages:
-##  [1] ROCR_1.0-7       gplots_2.17.0    caret_6.0-64     ggplot2_2.0.0   
-##  [5] lattice_0.20-33  rpart.plot_1.5.3 rpart_4.1-10     gmodels_2.16.2  
-##  [9] C50_0.1.0-24     dplyr_0.4.3      testthat_0.11.0  knitr_1.12.3    
+##  [1] ROCR_1.0-7           gplots_2.17.0        caret_6.0-64        
+##  [4] ggplot2_2.1.0        lattice_0.20-33      rpart.plot_1.5.3    
+##  [7] rpart_4.1-10         gmodels_2.16.2       C50_0.1.0-24        
+## [10] dplyr_0.4.3.9001     testthat_0.11.0.9000 knitr_1.12.3        
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] Rcpp_0.12.2        nloptr_1.0.4       formatR_1.2.1     
+##  [1] Rcpp_0.12.4        nloptr_1.0.4       formatR_1.2.1     
 ##  [4] plyr_1.8.3         class_7.3-14       bitops_1.0-6      
-##  [7] iterators_1.0.8    tools_3.2.3        lme4_1.1-10       
-## [10] partykit_1.0-5     digest_0.6.8       evaluate_0.8      
-## [13] memoise_0.2.1      gtable_0.1.2       nlme_3.1-123      
-## [16] mgcv_1.8-7         Matrix_1.2-3       foreach_1.4.3     
-## [19] DBI_0.3.1          parallel_3.2.3     SparseM_1.7       
-## [22] e1071_1.6-7        stringr_1.0.0      caTools_1.17.1    
-## [25] MatrixModels_0.4-1 gtools_3.5.0       stats4_3.2.3      
-## [28] grid_3.2.3         nnet_7.3-11        R6_2.1.1          
-## [31] survival_2.38-3    minqa_1.2.4        gdata_2.17.0      
-## [34] reshape2_1.4.1     car_2.1-1          magrittr_1.5      
-## [37] scales_0.3.0       codetools_0.2-14   MASS_7.3-44       
-## [40] splines_3.2.3      pbkrtest_0.4-4     assertthat_0.1    
-## [43] colorspace_1.2-6   quantreg_5.19      KernSmooth_2.23-15
-## [46] stringi_1.0-1      lazyeval_0.1.10    munsell_0.4.2     
-## [49] crayon_1.3.1
+##  [7] iterators_1.0.8    tools_3.2.4        lme4_1.1-10       
+## [10] partykit_1.0-5     digest_0.6.9       evaluate_0.8      
+## [13] memoise_1.0.0      tibble_1.0         gtable_0.1.2      
+## [16] nlme_3.1-126       mgcv_1.8-12        Matrix_1.2-4      
+## [19] foreach_1.4.3      DBI_0.3.1          parallel_3.2.4    
+## [22] SparseM_1.7        e1071_1.6-7        stringr_1.0.0     
+## [25] caTools_1.17.1     MatrixModels_0.4-1 gtools_3.5.0      
+## [28] stats4_3.2.4       grid_3.2.4         nnet_7.3-11       
+## [31] R6_2.1.2           survival_2.38-3    minqa_1.2.4       
+## [34] gdata_2.17.0       reshape2_1.4.1     car_2.1-1         
+## [37] magrittr_1.5       scales_0.3.0       codetools_0.2-14  
+## [40] MASS_7.3-44        splines_3.2.4      pbkrtest_0.4-4    
+## [43] assertthat_0.1     colorspace_1.2-6   quantreg_5.19     
+## [46] KernSmooth_2.23-15 stringi_1.0-1      lazyeval_0.1.10   
+## [49] munsell_0.4.2      crayon_1.3.1
 {% endhighlight %}

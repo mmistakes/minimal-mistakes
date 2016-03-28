@@ -1,0 +1,35 @@
+---
+title: "Measuring light with a Raspberry Pi"
+comments: yes
+date: '2016-02-22'
+#modified: `r format(Sys.time(), '%Y-%m-%d')`
+layout: post
+excerpt: "A year's data collected with a simple LDR based light sensor"
+published: no
+status: process
+tags:
+- R
+- Raspberry Pi
+- monitoring
+- light
+- infographic
+- python
+categories: Rstats
+output:
+  md_document:
+    variant: markdown_github
+---
+
+
+I've been working through a year's worth of sensor data that I collected using Raspberry Pis.
+In the [last post on this subject](../infographic2/) I compared my temperature records with records from a local weather station.
+In this post I'm going to look at the light measurements.
+I have two main questions I would like to answer:
+
+* Can the light patterns be used to explain the temperature patterns noted in my [temperature post](../infographic2/).
+* Can I separate the patterns of artificial light from natural light.
+
+### What are the light measurements?
+
+The light measurements are not strictly measurements of light at all; they are measurements of time taken for a capacitor to fill and discharge. Since the capacitor is attached to a light dependent resistor, longer times indicate a higher resistance (and a darker room), whilst shorter times indicate the inverse.
+
