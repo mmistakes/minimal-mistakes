@@ -6,9 +6,9 @@
     {% comment %} Link for previous page {% endcomment %}
     {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
-        <li><a href="{{ base_path }}/" class="btn">{{ site.data.ui-text[site.locale].pagination_previous }}</a></li>
+        <li><a href="{{ base_path }}/" class="btn btn--inverse btn--small">{{ site.data.ui-text[site.locale].pagination_previous }}</a></li>
       {% else %}
-        <li><a href="{{ base_path }}/page{{ paginator.previous_page }}/" class="btn">{{ site.data.ui-text[site.locale].pagination_previous }}</a></li>
+        <li><a href="{{ base_path }}/page{{ paginator.previous_page }}/" class="btn btn--inverse btn--small">{{ site.data.ui-text[site.locale].pagination_previous }}</a></li>
       {% endif %}
     {% endif %}
 
@@ -59,7 +59,7 @@
 
     {% comment %}Link next page{% endcomment %}
     {% if paginator.next_page %}
-      <li><a href="{{ base_path }}/page{{ paginator.next_page }}/" class="btn">{{ site.data.ui-text[site.locale].pagination_next }}</a></li>
+      <li><a href="{{ base_path }}/page{{ paginator.next_page }}/" class="btn btn--inverse btn--small">{{ site.data.ui-text[site.locale].pagination_next }}</a></li>
     {% endif %}
   </ul>
 </nav>

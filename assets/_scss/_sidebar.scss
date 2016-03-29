@@ -10,6 +10,10 @@
   @include clearfix();
   margin-bottom: 1em;
 
+  @include breakpoint($medium) {
+    padding-right: $right-sidebar-width-narrow;
+  }
+
   @include breakpoint($large) {
     @include span(2 of 12);
     @include suffix(0.25 of 12);
@@ -34,7 +38,7 @@
 
   p, li {
     font-family: $sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.2;
   }
 
@@ -89,6 +93,11 @@
   img {
     max-width: 110px;
     border-radius: 50%;
+
+    @include breakpoint($large) {
+      padding: 5px;
+      border: 1px solid $border-color;
+    }
   }
 }
 
@@ -109,20 +118,24 @@
 
 .author__name {
   margin: 0;
-  font-size: 18px;
 
   @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 20px;
   }
 }
 .sidebar .author__name {
   font-family: $sans-serif;
+  font-size: 16px;
+
+  @include breakpoint($large) {
+    font-size: 18px;
+  }
 }
 
 .author__bio {
   margin: 0;
+  font-size: 12px;
 
   @include breakpoint($large) {
     margin-top: 10px;
