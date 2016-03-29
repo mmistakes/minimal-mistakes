@@ -1,12 +1,11 @@
 ---
-title: "Theme Setup"
-permalink: /theme-setup/
-modified: 2016-01-19
-excerpt: "Instructions on how to install and customize the Jekyll theme Minimal Mistakes."
-share: true
-comments: true
+title: "v2 Documentation"
+excerpt: "Minimal Mistakes Jekyll theme version 2 setup and installation instructions."
+sidebar:
+  nav: docs
 ---
 
+{% include base_path %}
 {% include toc %}
 
 ## Installation
@@ -54,7 +53,7 @@ bundle exec jekyll serve
 
 How Minimal Mistakes is organized and what the various files are. All posts, layouts, includes, stylesheets, assets, and whatever else is grouped nicely under the root folder. The compiled Jekyll site outputs to `_site/`.
 
-{% highlight text %}
+```bash
 minimal-mistakes/
 ├── _includes/
 |    ├── author-bio.html        # bio stuff layout. pulls optional owner data from _config.yml
@@ -89,7 +88,7 @@ minimal-mistakes/
 ├── index.md                     # sample homepage. lists 5 latest posts
 ├── posts/                       # sample post index page. lists all posts in reverse chronology
 └── theme-setup/                 # theme setup page. safe to remove
-{% endhighlight %}
+```
 
 ---
 
@@ -113,12 +112,12 @@ Used to generate absolute urls in `sitemap.xml`, `feed.xml`, and for generating 
 
 Examples:
 
-{% highlight yaml %}
+```yaml
 url: http://mmistakes.github.io/minimal-mistakes
 url: http://localhost:4000
 url: //cooldude.github.io
 url:
-{% endhighlight %}
+```
 
 #### Google Analytics and Webmaster Tools
 
@@ -128,13 +127,13 @@ Google Analytics UA and Webmaster Tool verification tags can be entered under `o
 
 To set what links appear in the top navigation edit `_data/navigation.yml`. Use the following format to set the URL and title for as many links as you'd like. *External links will open in a new window.*
 
-{% highlight yaml %}
+```yaml
 - title: Portfolio
   url: /portfolio/
 
 - title: Made Mistakes
   url: http://mademistakes.com
-{% endhighlight %}
+```
 
 ---
 
@@ -142,31 +141,31 @@ To set what links appear in the top navigation edit `_data/navigation.yml`. Use 
 
 While completely optional, I've included Octopress and some starter templates to automate the creation of new posts and pages. To take advantage of it start by installing the [Octopress](https://github.com/octopress/octopress) gem if it isn't already.
 
-{% highlight bash %}
+```bash
 $ gem install octopress
-{% endhighlight %}
+```
 
 ### New Post
 
 Default command
 
-{% highlight bash %}
+```bash
 $ octopress new post "Post Title"
-{% endhighlight %}
+```
 
 Default works great if you want all your posts in one directory, but if you're like me and want to group them into subfolders like `/posts`, `/portfolio`, etc. Then this is the command for you. By specifying the DIR it will create a new post in that folder and populate the `categories:` YAML with the same value.
 
-{% highlight bash %}
+```bash
 $ octopress new post "New Portfolio Post Title" --dir portfolio
-{% endhighlight %}
+```
 
 ### New Page
 
 To create a new page use the following command.
 
-{% highlight bash %}
+```bash
 $ octopress new page new-page/
-{% endhighlight %}
+```
 
 This will create a page at `/new-page/index.md`
 
@@ -184,12 +183,14 @@ These two layouts are very similar. Both have an author sidebar, allow for large
 
 A [sample index page]({{ site.url }}/posts/) listing all posts grouped by the year they were published has been provided. The name can be customized to your liking by editing a few references. For example, to change **Posts** to **Writing** update the following:
 
-* In `_config.yml` under `links:` rename the title and URL to the following:
-{% highlight yaml %}
+In `_config.yml` under `links:` rename the title and URL to the following:
+
+```yaml
   links:
   - title: Writing
     url: /writing/
-{% endhighlight %}
+```
+
 * Rename `posts/index.md` to `writing/index.md` and update the YAML front matter accordingly.
 * Update the **View all posts** link in the `post.html` layout found in `_layouts` to match title and URL set previously.
 
@@ -201,20 +202,20 @@ A good rule of thumb is to keep feature images nice and wide so you don't push t
 
 The post and page layouts make the assumption that the feature images live in the `images/` folder. To add a feature image to a post or page just include the filename in the front matter like so. It's probably best to host all your images from this folder, but you can hotlink from external sources if you desire.
 
-{% highlight yaml %}
+```yaml
 image:
   feature: feature-image-filename.jpg
   thumb: thumbnail-image.jpg #keep it square 200x200 px is good
-{% endhighlight %}
+```
 
 To add attribution to a feature image use the following YAML front matter on posts or pages. Image credits appear directly below the feature image with a link back to the original source if supplied.
 
-{% highlight yaml %}
+```yaml
 image:
   feature: feature-image-filename.jpg
   credit: Michael Rose #name of the person or site you want to credit
   creditlink: http://mademistakes.com #url to their site or licensing
-{% endhighlight %}
+```
 
 ### Thumbnails for OG and Twitter Cards
 
@@ -229,7 +230,7 @@ By making use of data files you can assign different authors for each post.
 
 Start by modifying `authors.yml` file in the `_data` folder and add your authors using the following format.
 
-{% highlight yaml %}
+```yaml
 # Authors
 
 billy_rick:
@@ -248,39 +249,39 @@ cornelius_fiddlebone:
   avatar      : "bio-photo.jpg"
   twitter     : "rhymeswithsackit"
   google_plus : "CorneliusFiddlebone"
-{% endhighlight %}
+```
 
 To assign Billy Rick as an author for our post. We'd add the following YAML front matter to a post:
 
-{% highlight yaml %}
+```yaml
 author: billy_rick
-{% endhighlight %}
+```
 
 ### Kramdown Table of Contents
 
 To include an auto-generated **table of contents** for posts and pages, add the following `_include` before the actual content. [Kramdown will take care of the rest](http://kramdown.rubyforge.org/converter/html.html#toc) and convert all headlines into list of links.
 
-{% highlight html %}
+```html
 {% raw %}{% include toc.html %}{% endraw %}
-{% endhighlight %}
+```
 
 ### Paragraph Indentation
 
 By default the margin below paragraphs has been removed and indent added to each. This is an intentional design decision to mimic the look of type set in a printed book or manuscript.
 
 <figure>
-  <img src="{{ site.url }}/images/paragraph-indent.png" alt="screen shot of paragraphs with default indent style set">
+  <img src="{{ base_path }}/images/paragraph-indent.png" alt="screen shot of paragraphs with default indent style set">
   <figcaption>Example of the default paragraph style (indented first line and bottom margin removed).</figcaption>
 </figure>
 
 To disable the indents and add spacing between paragraphs change the following line in `_sass/variables.scss` from `true !default` to `false` like so.
 
-{% highlight css %}
+```scss
 $paragraph-indent: false;
-{% endhighlight %}
+```
 
 <figure>
-  <img src="{{ site.url }}/images/paragraph-no-indent.png" alt="screen shot of paragraphs with indent style disabled">
+  <img src="{{ base_path }}/images/paragraph-no-indent.png" alt="screen shot of paragraphs with indent style disabled">
   <figcaption>Example of paragraphs with $paragraph-indent disabled.</figcaption>
 </figure>
 
@@ -290,9 +291,9 @@ Video embeds are responsive and scale with the width of the main content block w
 
 Not sure if this only effects Kramdown or if it's an issue with Markdown in general. But adding YouTube video embeds causes errors when building your Jekyll site. To fix add a space between the `<iframe>` tags and remove `allowfullscreen`. Example below:
 
-{% highlight html %}
+```html
 <iframe width="560" height="315" src="http://www.youtube.com/embed/PWf4WUoMXwg" frameborder="0"> </iframe>
-{% endhighlight %}
+```
 
 ### Social Sharing Links
 
@@ -308,9 +309,9 @@ For example if you wanted a red background instead of white you'd change `$bodyc
 
 To modify the site's JavaScript files I setup a Grunt build script to lint/concatenate/minify all scripts into `scripts.min.js`. [Install Node.js](http://nodejs.org/), then [install Grunt](http://gruntjs.com/getting-started), and then finally install the dependencies for the theme contained in `package.json`:
 
-{% highlight bash %}
+```bash
 npm install
-{% endhighlight %}
+```
 
 From the theme's root, use `grunt` concatenate JavaScript files, and optimize .jpg, .png, and .svg files in the `images/` folder. You can also use `grunt dev` in combination with `jekyll build --watch` to watch for updates JS files that Grunt will then automatically re-build as you write your code which will in turn auto-generate your Jekyll site when developing locally.
 

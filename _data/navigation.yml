@@ -1,7 +1,7 @@
 # main links links
 main:
-  - title: "Theme Setup"
-    url: /theme-setup/
+  - title: "Quick-Start Guide"
+    url: /docs/quick-start-guide/
 
   - title: "Posts"
     url: /year-archive/
