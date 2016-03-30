@@ -29,7 +29,7 @@
         <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
       {% endif %}
       {% if page.header.cta_url %}
-        <p><a href="{{ page.header.cta_url }}" class="btn btn--light-outline btn--x-large">{{ page.header.cta_label | default: site.data.ui-text[site.locale].more_label }}</a></p>
+        <p><a href="{{ page.header.cta_url }}" class="btn btn--light-outline btn--large">{{ page.header.cta_label | default: site.data.ui-text[site.locale].more_label }}</a></p>
       {% endif %}
     </div>
   {% else %}
