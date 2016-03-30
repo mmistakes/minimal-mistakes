@@ -24,17 +24,17 @@
   }
 
   h3 {
-    font-size: 20px;
+    font-size: $type-size-4;
   }
 
   h4 {
-    font-size: 18px;
+    font-size: $type-size-4;
   }
 
   p, li {
     font-family: $sans-serif;
-    font-size: 12px;
-    line-height: 1.2;
+    font-size: $type-size-6;
+    line-height: 1.45;
   }
 
   img {
@@ -108,16 +108,15 @@
 }
 .sidebar .author__name {
   font-family: $sans-serif;
-  font-size: 16px;
+  font-size: $type-size-5;
 
   @include breakpoint($large) {
-    font-size: 18px;
+    font-size: $type-size-4;
   }
 }
 
 .author__bio {
   margin: 0;
-  font-size: 12px;
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -213,7 +212,7 @@
     padding-right: 5px;
     padding-top: 2px;
     padding-bottom: 2px;
-    font-size: 14px;
+    font-size: $type-size-5;
     text-decoration: none;
     white-space: nowrap;
 

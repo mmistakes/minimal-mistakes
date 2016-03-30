@@ -131,14 +131,12 @@ Make any link standout more when applying the `.btn` class.
 [Large Button](#){: .btn .btn--large}
 [Default Button](#){: .btn}
 [Small Button](#){: .btn .btn--small}
-[X-Small Button](#){: .btn .btn--x-small}
 
 ```markdown
 [X-Large Button](#link){: .btn .btn--x-large}
 [Large Button](#link){: .btn .btn--large}
 [Default Button](#link){: .btn}
 [Small Button](#link){: .btn .btn--small}
-[X-Small Button](#link){: .btn .btn--x-small}
 ```
 
 ## Notices

@@ -23,21 +23,25 @@
 }
 
 .archive__subtitle {
-  margin: 2em 0 0;
+  margin: 1.414em 0 0;
   padding-bottom: 0.5em;
-  font-size: 14px;
+  font-size: $type-size-5;
   color: mix(#fff, $gray, 25%);
   border-bottom: 1px solid $border-color;
+
+  + .list__item .archive__item-title {
+    margin-top: 0.5em;
+  }
 }
 
 .archive__item-title {
-  margin-bottom: 4px;
+  margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
-  font-size: 20px;
+  font-size: $type-size-5;
 }
 
 .archive__item-excerpt {
-  font-size: 14px;
+  font-size: $type-size-6;
 
   & + p {
     text-indent: 0;
@@ -97,6 +101,11 @@ a:hover {
     margin: 0 0 4px;
   }
 
+  .archive__item-title {
+    margin-top: 0.5em;
+    font-size: $type-size-5;
+  }
+
   .archive__item-excerpt {
     display: none;
   }
@@ -119,6 +128,7 @@ a:hover {
 
     .archive__item-excerpt {
       display: block;
+      font-size: $type-size-6;
     }
   }
 }
@@ -149,15 +159,15 @@ a:hover {
 
   .archive__item-title {
     margin-bottom: 0.5em;
-    font-size: 30px;
+    font-size: $type-size-4;
   }
 
   .archive__item-excerpt {
     margin-bottom: 1em;
-    font-size: 18px;
+    font-size: $type-size-5;
 
     p {
-      font-size: 18px;
+      font-size: $type-size-5;
     }
   }
 
@@ -179,15 +189,15 @@ a:hover {
 
     .archive__item-title {
       margin-bottom: 0.5em;
-      font-size: 30px;
+      font-size: $type-size-4;
     }
 
     .archive__item-excerpt {
       margin-bottom: 1em;
-      font-size: 18px;
+      font-size: $type-size-5;
 
       p {
-        font-size: 18px;
+        font-size: $type-size-5;
       }
     }
   }
@@ -211,15 +221,15 @@ a:hover {
 
     .archive__item-title {
       margin-bottom: 0.5em;
-      font-size: 30px;
+      font-size: $type-size-4;
     }
 
     .archive__item-excerpt {
       margin-bottom: 1em;
-      font-size: 18px;
+      font-size: $type-size-5;
 
       p {
-        font-size: 18px;
+        font-size: $type-size-5;
       }
     }
   }
@@ -243,15 +253,15 @@ a:hover {
 
     .archive__item-title {
       margin-bottom: 0.5em;
-      font-size: 30px;
+      font-size: $type-size-4;
     }
 
     .archive__item-excerpt {
       margin-bottom: 1em;
-      font-size: 18px;
+      font-size: $type-size-5;
 
       p {
-        font-size: 18px;
+        font-size: $type-size-5;
       }
     }
   }

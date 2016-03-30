@@ -35,7 +35,6 @@
     .page__content,
     .page__meta,
     .page__share {
-      @include clearfix();
       @include full();
     }
   }
@@ -44,20 +43,21 @@
 .page__title {
   margin-top: 0;
   font-family: $serif;
+  font-weight: normal;
   line-height: 1;
   & + .page__meta {
-    margin-top: -1.5em;
+    margin-top: -0.5em;
   }
 }
 
 .page__lead {
   font-family: $sans-serif;
-  font-size: 20px;
+  font-size: $type-size-4;
 }
 
 .page__content {
   p, li, dl {
-    font-size: 16px;
+    font-size: 1em;
   }
 
   /* paragraph indents */
@@ -112,10 +112,10 @@
     }
 
     .page__title {
-      font-size: 48px;
+      font-size: $type-size-2;
 
       @include breakpoint($small) {
-        font-size: 60px;
+        font-size: $type-size-1;
       }
     }
 
@@ -139,7 +139,7 @@
   padding: 2px 5px;
   color: #fff;
   font-family: $sans-serif;
-  font-size: 10px;
+  font-size: $type-size-7;
   background: #000;
   text-align: right;
   z-index: 5;
@@ -167,8 +167,8 @@
 }
 
 .page__share-title {
-  font-size: 14px;
   margin-bottom: 10px;
+  font-size: $type-size-6;
   text-transform: uppercase;
 }
 
@@ -181,7 +181,7 @@
   margin-top: 2em;
   color: mix(#fff, $gray, 25%);
   font-family: $sans-serif;
-  font-size: 14px;
+  font-size: $type-size-6;
 
   p {
     margin-bottom: 0.5em;
@@ -189,8 +189,8 @@
 }
 
 .page__meta-title {
-  font-size: 14px;
   margin-bottom: 10px;
+  font-size: $type-size-6;
   text-transform: uppercase;
 }
 
@@ -230,15 +230,14 @@
    ========================================================================== */
 
 .page__comments {
-  @include clearfix();
   @include full();
 }
 
 .page__comments-title {
-  font-size: 14px;
   margin-top: 2rem;
   margin-bottom: 10px;
   padding-top: 2rem;
+  font-size: $type-size-6;
   border-top: 1px solid $border-color;
   text-transform: uppercase;
 }
@@ -269,7 +268,7 @@
 }
 
 .page__related-title {
-  font-size: 14px;
   margin-bottom: 10px;
+  font-size: $type-size-6;
   text-transform: uppercase;
 }
