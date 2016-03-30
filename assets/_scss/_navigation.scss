@@ -55,9 +55,8 @@
 .pagination {
   @include full();
   @include clearfix();
-  margin-top: 2em;
-  padding-top: 2em;
-  border-top: 1px solid $border-color;
+  margin-top: 1em;
+  padding-top: 1em;
 
   ul {
     margin: 0;
@@ -68,16 +67,53 @@
   }
 
   li {
-    display: inline-block;
-  }
+    display: block;
+    float: left;
+    margin-left: -1px;
 
-  li + li:before {
-    content: "";
-    padding-right: 10px;
-  }
+    a {
+      margin-bottom: 0.25em;
+      padding: 0.5em 1em;
+      font-family: $sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1.5;
+      text-align: center;
+      text-decoration: none;
+      color: mix(#fff, $gray, 25%);
+      border: 1px solid $light-gray;
+      border-radius: 0;
 
-  .current {
-    font-weight: bold;
+      &:hover {
+        color: $gray;
+      }
+
+      &.current {
+        color: $primary-color;
+      }
+
+      &.disabled {
+        color: $light-gray;
+        pointer-events: none;
+        cursor: not-allowed;
+      }
+    }
+
+    &:first-child {
+      margin-left: 0;
+
+      a {
+        border-top-left-radius: $border-radius;
+        border-bottom-left-radius: $border-radius;
+      }
+    }
+
+    &:last-child {
+      a {
+        border-top-right-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+      }
+    }
   }
 
   /* next/previous buttons */
@@ -95,6 +131,7 @@
     color: mix(#fff, $gray, 25%);
     border: 1px solid $light-gray;
     border-radius: $border-radius;
+
     &:hover {
       color: $gray;
     }
@@ -109,7 +146,22 @@
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
     }
+
+    &.disabled {
+      color: $light-gray;
+      pointer-events: none;
+      cursor: not-allowed;
+    }
   }
+}
+
+.page__content + .pagination,
+.page__meta + .pagination,
+.page__share + .pagination,
+.page__comments + .pagination {
+  margin-top: 2em;
+  padding-top: 2em;
+  border-top: 1px solid $border-color;
 }
 
 
