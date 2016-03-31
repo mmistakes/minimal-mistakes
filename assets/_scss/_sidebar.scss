@@ -9,6 +9,7 @@
 .sidebar {
   @include clearfix();
   margin-bottom: 1em;
+  color: mix(#fff, $gray, 25%);
 
   @include breakpoint($large) {
     @include span(2 of 12);
@@ -23,22 +24,26 @@
     font-family: $sans-serif-narrow;
   }
 
-  h3 {
-    font-size: $type-size-4;
-  }
-
-  h4 {
-    font-size: $type-size-4;
+  h3, h4 {
+    font-size: $type-size-5;
   }
 
   p, li {
     font-family: $sans-serif;
     font-size: $type-size-6;
-    line-height: 1.45;
+    line-height: 1.5;
   }
 
   img {
     width: 100%;
+  }
+
+  a {
+    color: mix(#fff, $gray, 25%);
+
+    &:hover {
+      color: $link-color-hover;
+    }
   }
 }
 
@@ -109,10 +114,6 @@
 .sidebar .author__name {
   font-family: $sans-serif;
   font-size: $type-size-5;
-
-  @include breakpoint($large) {
-    font-size: $type-size-4;
-  }
 }
 
 .author__bio {

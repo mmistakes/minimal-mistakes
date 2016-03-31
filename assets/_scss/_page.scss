@@ -42,8 +42,6 @@
 
 .page__title {
   margin-top: 0;
-  font-family: $serif;
-  font-weight: normal;
   line-height: 1;
   & + .page__meta {
     margin-top: -0.5em;
@@ -75,11 +73,24 @@
 
   dt {
     margin-top: 1em;
+    font-family: $sans-serif;
     font-weight: bold;
   }
 
   dd {
     margin-left: 1em;
+    font-family: $sans-serif;
+    font-size: $type-size-6;
+  }
+
+  .small {
+    font-size: $type-size-6;
+  }
+
+  /* blockquote citations */
+  blockquote + .small {
+    margin-top: -1.5em;
+    padding-left: 1.25rem;
   }
 }
 

@@ -7,7 +7,7 @@ body {
   padding: 0;
   color: $text-color;
   font-family: $serif;
-  line-height: 1.45;
+  line-height: 1.5;
   background-color: $background-color;
 
   &.overflow--hidden {
@@ -20,6 +20,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1.414em 0 0.5em;
   line-height: 1.2;
   font-family: $sans-serif;
+  font-weight: bold;
 }
 
 h1 {
@@ -99,8 +100,7 @@ blockquote {
 
   cite {
     font-family: $sans-serif;
-    font-size: $type-size-6;
-    font-style: normal;
+    font-style: italic;
 
     &:before {
       content: "\2014";

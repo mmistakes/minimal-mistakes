@@ -160,6 +160,10 @@ body:hover .visually-hidden button {
 // social icons
 
 .social-icons {
+  .fa {
+    color: #000;
+  }
+
   .fa-behance,
   .fa-behance-square {
     color: $behance-color;
@@ -268,7 +272,7 @@ body:hover .visually-hidden button {
    Navicons
    ========================================================================== */
 
-$navicon-width  : 32px;
+$navicon-width  : 28px;
 $navicon-height : 4px;
 
 .navicon {
@@ -357,7 +361,14 @@ $navicon-height : 4px;
    Footnotes
    ========================================================================== */
 
+.footnote {
+  color: mix(#fff, $gray, 25%);
+  text-decoration: none;
+}
+
 .footnotes {
+  color: mix(#fff, $gray, 25%);
+
   ol, li, p {
     margin-bottom: 0;
     font-size: $type-size-6;
@@ -365,6 +376,7 @@ $navicon-height : 4px;
 }
 
 a.reversefootnote {
+  color: $gray;
   text-decoration: none;
 
   &:hover {
