@@ -8,7 +8,6 @@ body {
   color: $text-color;
   font-family: $serif;
   line-height: 1.5;
-  background-color: $background-color;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
