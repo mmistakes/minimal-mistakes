@@ -147,6 +147,7 @@ a:hover {
 
 .feature__item {
   margin-bottom: 2em;
+  font-size: 1.25rem;
 
   @include breakpoint($small) {
     text-align: center;
@@ -158,23 +159,10 @@ a:hover {
     }
   }
 
-  .archive__item-title {
-    margin-bottom: 0.5em;
-    font-size: $type-size-4;
-  }
-
-  .archive__item-excerpt {
-    margin-bottom: 1em;
-    font-size: $type-size-5;
-
-    p {
-      font-size: $type-size-5;
-    }
-  }
-
   &--left {
     @include full();
     margin-bottom: 2em;
+    font-size: 1.25rem;
 
     @include breakpoint($small) {
       .archive__item-teaser {
@@ -187,25 +175,13 @@ a:hover {
         @include suffix(1 of 12);
       }
     }
-
-    .archive__item-title {
-      margin-bottom: 0.5em;
-      font-size: $type-size-4;
-    }
-
-    .archive__item-excerpt {
-      margin-bottom: 1em;
-      font-size: $type-size-5;
-
-      p {
-        font-size: $type-size-5;
-      }
-    }
   }
 
   &--right {
     @include full();
     margin-bottom: 2em;
+    font-size: 1.25rem;
+
     @include breakpoint($small) {
       text-align: right;
 
@@ -219,25 +195,13 @@ a:hover {
         @include suffix(1 of 12);
       }
     }
-
-    .archive__item-title {
-      margin-bottom: 0.5em;
-      font-size: $type-size-4;
-    }
-
-    .archive__item-excerpt {
-      margin-bottom: 1em;
-      font-size: $type-size-5;
-
-      p {
-        font-size: $type-size-5;
-      }
-    }
   }
 
   &--center {
     @include full();
     margin-bottom: 2em;
+    font-size: 1.25rem;
+
     @include breakpoint($small) {
       text-align: center;
 
@@ -249,20 +213,6 @@ a:hover {
       .archive__item-body {
         margin: 0 auto;
         width: span(7 of 12);
-      }
-    }
-
-    .archive__item-title {
-      margin-bottom: 0.5em;
-      font-size: $type-size-4;
-    }
-
-    .archive__item-excerpt {
-      margin-bottom: 1em;
-      font-size: $type-size-5;
-
-      p {
-        font-size: $type-size-5;
       }
     }
   }
