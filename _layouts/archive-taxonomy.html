@@ -3,10 +3,14 @@ layout: default
 author_profile: false
 ---
 
-<div class="archive">
-  <h1 class="page__title">{{ page.title }}</h1>
-  {% include base_path %}
-  {% for post in page.posts %}
-    {% include archive-single.html %}
-  {% endfor %}
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <div class="archive">
+    <h1 class="page__title">{{ page.title }}</h1>
+    {% include base_path %}
+    {% for post in page.posts %}
+      {% include archive-single.html %}
+    {% endfor %}
+  </div>
 </div>
