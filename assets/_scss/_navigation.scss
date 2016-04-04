@@ -175,8 +175,8 @@
 
   a {
     display: block;
-    margin: 0 20px;
-    padding: 10px 0;
+    margin: 0 1rem;
+    padding: 0.5rem 0;
     color: $gray;
     text-decoration: none;
 
@@ -189,7 +189,7 @@
     position: absolute;
     height: 100%;
     right: 0;
-    padding: 0 8px;
+    padding: 0 0.5rem;
     border: 0;
     outline: none;
     background-color: $primary-color;
@@ -198,10 +198,11 @@
   }
 
   .visible-links {
-    display: inline-table;
+    display: table;
 
     li {
       display: table-cell;
+      vertical-align: middle;
 
       &:first-child {
         font-weight: bold;
