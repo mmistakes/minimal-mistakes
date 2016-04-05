@@ -51,7 +51,7 @@
 }
 
 .page__lead {
-  font-family: $sans-serif;
+  font-family: $global-font-family;
   font-size: $type-size-4;
 }
 
@@ -151,7 +151,7 @@
   margin: 0 auto;
   padding: 2px 5px;
   color: #fff;
-  font-family: $sans-serif;
+  font-family: $caption-font-family;
   font-size: $type-size-7;
   background: #000;
   text-align: right;
@@ -211,6 +211,10 @@
 
   p {
     margin: 0;
+  }
+
+  a {
+    color: inherit;
   }
 }
 
@@ -289,6 +293,7 @@
   }
 
   a {
+    color: inherit;
     text-decoration: none;
   }
 }

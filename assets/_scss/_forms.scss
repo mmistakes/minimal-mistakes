@@ -51,7 +51,7 @@ input,
 button,
 select,
 textarea {
-  font-family: $serif;
+  font-family: $sans-serif;
   box-sizing: border-box;
 }
 
@@ -81,7 +81,7 @@ select {
   color: $text-color;
 
   &:hover {
-    border-color: mix(#fff, $accent-color, 50%);
+    border-color: mix(#fff, $primary-color, 50%);
   }
 }
 
@@ -212,7 +212,7 @@ textarea[readonly] {
 
 input:focus,
 textarea:focus {
-  border-color: $accent-color;
+  border-color: $primary-color;
   outline: 0;
   outline: thin dotted \9;
 }
