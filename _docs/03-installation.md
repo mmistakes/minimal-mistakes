@@ -17,7 +17,10 @@ The easiest being: fork the Minimal Mistakes repo on GitHub. If you plan on host
 
 For an existing site you have some more work ahead of you. What I suggest is to fork and rename the theme as before, then clone it by running `git clone https://github.com/USERNAME/REPONAME.git` --- replacing **USERNAME** and **REPONAME** with yours.
 
-**<< insert screenshot showing where to copy the repo's URL on GitHub >>**
+<figure>
+  <img src="{{ base_path }}/images/mm-github-copy-repo-url.png" alt="copy GitHub repo URL">
+  <figcaption>Tap the copy to clipboard button, outlined in red above.</figcaption>
+</figure>
 
 Then depending on how much existing content you're moving over begin the process of copying and converting everything. In most cases you simply need to update the settings in `_config.yml` to your liking and set the correct `layout` in the YAML Front Matter.
 
@@ -40,6 +43,8 @@ If you're not planning on hosting with GitHub Pages and want to leverage feature
 $ bundle install
 ```
 
-**<< insert screenshot of Terminal running bundle install >>**
+<figure>
+  <img src="{{ base_path }}/images/mm-bundle-install.gif" alt="bundle install in Terminal window">
+</figure>
 
 Depending on what gems you already have installed you may have to run `bundle update` to clear up any dependency issues. Bundler is usually pretty good at letting you know what the issue is to work through them.
