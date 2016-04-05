@@ -15,20 +15,27 @@ Minimal Mistakes has been developed to be 100% compatible with hosting a site on
 
 Fork the [Minimal Mistakes theme](https://github.com/mmistakes/minimal-mistakes/fork), then rename the repo to **USERNAME.github.io** --- replacing **USERNAME** with your GitHub username.
 
-**<< insert animation showing how to fork GitHub repo >>**
+<figure>
+  <img src="{{ base_path }}/images/mm-theme-fork-repo.png" alt="fork Minimal Mistakes">
+</figure>
 
 Your Jekyll site should be viewable immediately at <http://USERNAME.github.io>. If it's not, you can force a rebuild by **Customizing Your Site** (see below for more details).
 {: .notice--warning}
 
 If you're hosting several Jekyll based sites under the same GitHub username you will have to use Project Pages instead of User Pages. Essentially you rename the repo to something other than **USERNAME.github.io** and create a `gh-pages` branch off of `master`. For more details on how to set things up check [GitHub's documentation](https://help.github.com/articles/user-organization-and-project-pages/).
 
-**<< insert animation showing how create to gh-pages branch >>**
+<figure>
+  <img src="{{ base_path }}/images/mm-gh-pages.gif" alt="creating a new branch on GitHub">
+</figure>
 
 ## Customize Your Site
 
 Open up `_config.yml` found in the root of the repo and edit anything under **Site Settings**. For a full explanation of every setting be sure to read the **Customization** section, but for now let's just change the site's title.
 
-**<< insert animation showing how to edit the site title >>**
+<figure>
+  <img src="{{ base_path }}/images/mm-github-edit-config.gif" alt="editing _config.yml file">
+  <figcaption>Edit text files without leaving GitHub.com</figcaption>
+</figure>
 
 Committing a change to `_config.yml` (or any file in your repository) will force GitHub Pages to rebuild your site with Jekyll. It should then be viewable a few seconds later at <USERNAME.github.io>.
 
