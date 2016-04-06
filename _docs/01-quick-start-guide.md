@@ -3,6 +3,7 @@ title: "Quick-Start Guide"
 permalink: /docs/quick-start-guide/
 excerpt:
 sidebar:
+  title: "v3.0"
   nav: docs
 ---
 

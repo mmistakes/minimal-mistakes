@@ -3,6 +3,7 @@ title: "Installation"
 permalink: /docs/installation/
 excerpt:
 sidebar:
+  title: "v3.0"
   nav: docs
 ---
 

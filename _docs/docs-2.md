@@ -2,6 +2,7 @@
 title: "v2 Documentation"
 excerpt: "Minimal Mistakes Jekyll theme version 2 setup and installation instructions."
 sidebar:
+  title: "v3.0"
   nav: docs
 ---
 
