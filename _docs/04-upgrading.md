@@ -38,7 +38,7 @@ Depending on the amount of customizations you've made after forking, there's lik
 
 The alternate way of dealing with updates is [downloading the theme](https://github.com/mmistakes/minimal-mistakes/archive/master.zip) --- replacing your layouts, includes, and assets with the newer ones. To be sure that you don't miss any changes it's probably a good idea to review the [history](https://github.com/mmistakes/minimal-mistakes/commits/master) to see what's changed since you last forked/cloned the theme.
 
-Here's a quick checklist of the important folders/files that make the theme do its thing:
+Here's a quick checklist of the important folders/files you'll want to be mindful of:
 
 * `_layouts`
 * `_includes`
