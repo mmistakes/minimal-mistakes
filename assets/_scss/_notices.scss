@@ -18,7 +18,7 @@
   text-indent: initial; // override
   background-color: mix(#fff, $notice-color, 90%);
   border-radius: $border-radius;
-  box-shadow: $box-shadow;
+  box-shadow: 0 1px 1px rgba($notice-color, 0.25);
 
   h4 {
     margin-top: 0 !important; // override
