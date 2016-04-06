@@ -25,7 +25,7 @@ There are several ways to install the theme:
 
 **3.** And for those who don't want to mess with Git, you can download the theme as a ZIP file to work with locally.
 
-[Download Minimal Mistakes Theme](https://github.com/mmistakes/minimal-mistakes/archive/master.zip){: .btn .btn--success}
+[<i class="fa fa-download"></i> Download Minimal Mistakes Theme](https://github.com/mmistakes/minimal-mistakes/archive/master.zip){: .btn .btn--success}
 
 ---
 
