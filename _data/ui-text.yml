@@ -6,7 +6,7 @@ en: &DEFAULT_EN
   page                : "Page"
   pagination_previous : "Previous"
   pagination_next     : "Next"
-  toc_label           : "Overview"
+  toc_label           : "On This Page"
   ext_link_label      : "Direct Link"
   less_than           : "less than"
   minute_read         : "minute read"
