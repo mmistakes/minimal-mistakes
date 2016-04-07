@@ -7,7 +7,7 @@ modified: `r format(Sys.time(), '%Y-%m-%d')`
 layout: post
 excerpt: "Using dplyr, broom, and purrr to make life easy"
 published: yes
-status: process
+status: processed
 tags:
 - R
 - dplyr
@@ -57,9 +57,10 @@ The **purrr** package threatens to simplify this using the same left-to-right ch
 Something I find myself doing more and more is subsetting a dataframe by a factor, and applying the same or a similar model to each subset of the data. 
 There are some new ways to do this in **purrr**.
 
-In this post I'll briefly explore some of the functions of **purrr**, and use them together with **dplyr** and [**broom**](https://cran.r-project.org/web/packages/broom/index.html) (as much for my own memory as anything else).
 
 ## do()
+
+In this post I'll briefly explore some of the functions of **purrr**, and use them together with **dplyr** and [**broom**](https://cran.r-project.org/web/packages/broom/index.html) (as much for my own memory as anything else).
 
 In the past I have used `dplyr::do()` to apply a model like so.
 
@@ -222,6 +223,7 @@ mtcars %>%
 ### Creating training and test splits
 
 A more complicated example that is a purrrfect use case is: creating splits in a dataset on which a model can be trained and then validated.
+
 Here I shamelessly copy Hadley's example[^1]. Note that you will need the latest dev version of **dplyr** to run this correctly due to [this issue](https://github.com/hadley/dplyr/issues/1447) (fixed in the next **dplyr** release > 0.4.3).
 
 First define a cost function on which to evaluate the models (in this case the mean squared difference (but this could be anything).

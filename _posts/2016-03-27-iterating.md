@@ -30,9 +30,15 @@ The **purrr** package threatens to simplify this using the same left-to-right ch
 Something I find myself doing more and more is subsetting a dataframe by a factor, and applying the same or a similar model to each subset of the data. 
 There are some new ways to do this in **purrr**.
  
+<<<<<<< HEAD
 In this post I'll briefly explore some of the functions of **purrr**, and use them together with **dplyr** and [**broom**](https://cran.r-project.org/web/packages/broom/index.html) (as much for my own memory as anything else).
  
 ## do()
+=======
+In this post I'll briefly explore some of the functions of **purrr**, and use them together with **dplyr** and [**broom**](https://cran.r-project.org/web/packages/broom/index.html) (as much for my own memory as anything else!).
+ 
+## dplyr::do()
+>>>>>>> aedb6bd... Added iterator post
  
 In the past I have used `dplyr::do()` to apply a model like so.
  
@@ -116,7 +122,11 @@ subset_models
  
 This results in three models, one each for 4, 6, and 8 cylinders, 
  
+<<<<<<< HEAD
 We can now use a second call to `do()`, `dplyr::summarise()` or `dplyr::mutate` to extract elements from these models: for example extract the coefficients...
+=======
+We can now use a second call to `do()` or `dplyr::summarise()` to extract elements from these models: for example extract the coefficients...
+>>>>>>> aedb6bd... Added iterator post
  
 
 {% highlight r %}
@@ -142,7 +152,11 @@ subset_models %>%
 ## 6   -2.192438
 {% endhighlight %}
  
+<<<<<<< HEAD
 We can also use `mutate()` to extract one or more elements
+=======
+We can also use summarise to extract one or more elements
+>>>>>>> aedb6bd... Added iterator post
  
 
 {% highlight r %}
@@ -429,7 +443,11 @@ mtcars %>%
 ### Creating training and test splits
  
 A more complicated example that is a purrrfect use case is: creating splits in a dataset on which a model can be trained and then validated.
+<<<<<<< HEAD
 Here I shamelessly copy Hadley's example[^1]. Note that you will need the latest dev version of **dplyr** to run this correctly due to [this issue](https://github.com/hadley/dplyr/issues/1447) (fixed in the next **dplyr** release > 0.4.3).
+=======
+Here I shameless copy Hadley's example[^1] (but with some additional notation). Note that you will need the latest dev version of **dplyr** to run this correctly due to [this issue](https://github.com/hadley/dplyr/issues/1447) (fixed in the next **dplyr** release > 0.4.3).
+>>>>>>> aedb6bd... Added iterator post
  
 First define a cost function on which to evaluate the models (in this case the mean squared difference (but this could be anything).
  
@@ -512,6 +530,7 @@ diffs
 
 
 {% highlight text %}
+<<<<<<< HEAD
 ##   [1] 3.650619 5.237862 1.656238 4.939341 3.088072 4.260822 3.900965
 ##   [8] 2.389649 2.440416 3.379994 2.948315 4.346307 3.153288 2.486218
 ##  [15] 4.884554 2.292119 1.791342 3.393962 2.969733 3.246326 3.478311
@@ -527,12 +546,34 @@ diffs
 ##  [85] 4.187481 3.465784 2.392582 2.147898 3.567124 2.936443 3.553571
 ##  [92] 4.772667 3.270376 3.983604 3.352604 2.398232 3.130944 2.402966
 ##  [99] 3.061426 4.001850
+=======
+##   [1] 2.888187 3.765180 1.740835 2.059421 2.882587 2.611520 3.657066
+##   [8] 2.996988 3.767869 3.485199 3.660546 3.815533 2.801588 3.032171
+##  [15] 3.198776 4.414827 3.977463 2.113359 1.397306 1.718367 3.548034
+##  [22] 2.151962 3.430390 3.700765 3.180328 3.340312 2.274028 3.340984
+##  [29] 2.652993 3.196483 2.069746 3.365969 4.035620 3.507515 3.307058
+##  [36] 3.789321 2.826678 3.239815 3.972284 2.851531 3.189544 2.248467
+##  [43] 3.368778 4.331821 3.367524 3.373792 3.618880 2.992981 1.894865
+##  [50] 3.493419 4.706299 3.300902 2.077600 4.231514 2.114134 3.465494
+##  [57] 3.490044 3.553351 3.453524 2.592967 3.721906 1.795937 3.115010
+##  [64] 3.199314 3.532740 4.151599 4.752059 2.910788 2.624046 2.667099
+##  [71] 2.861531 3.365709 2.312287 3.608492 2.738158 2.411557 1.834232
+##  [78] 1.922136 3.649807 1.841322 3.736639 2.634911 3.715311 2.179738
+##  [85] 4.604257 1.756422 3.823625 2.184158 3.299583 1.772996 2.211123
+##  [92] 4.370249 3.844288 3.715363 2.882924 1.577909 3.179569 2.450181
+##  [99] 4.586997 2.886391
+>>>>>>> aedb6bd... Added iterator post
 {% endhighlight %}
  
 ## Rounding up
  
+<<<<<<< HEAD
 I've been playing with some things in this post that I am just getting to grips with, but look to be some really powerful additions to the hadleyverse, and the R landscape in general.
 Keeping an eye on the development of **purrr** would be a good move I think.
+=======
+I've presented some things in this post that I am just getting to grips with, but look to be some really powerful additions to the hadleyverse, and the R landscape in general.
+Keeping an eye on the development of **purrr** would be a good move, I think!
+>>>>>>> aedb6bd... Added iterator post
  
 ## References
  
