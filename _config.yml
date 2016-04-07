@@ -1,29 +1,20 @@
 # Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your whole blog, values
+# This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en_US"
+locale                   : "en-US"
 title                    : "Minimal Mistakes"
 title_separator          : "-"
 name                     : &name "Michael Rose"
 description              : &description "A flexible Jekyll theme for your blog or site with a minimalist aesthetic."
 url                      : # the base hostname & protocol for your site e.g. "//github.io.mmistakes"
-baseurl                  : "/minimal-mistakes" # the subpath of your site, e.g. /blog
-email                    : # e.g. "your-email@domain.com"
-og_image                 : "site-logo.png" # Open Graph/Twitter default site image
-teaser                   : "500x300.png"
-breadcrumbs              : # true, false (default)
-twitter:
-  username               : &twitter "mmistakes"
-facebook:
-  username               : &facebook "michaelrose"
-  app_id                 :
-  publisher              :
-read_time                : true
+baseurl                  : "/minimal-mistakes" # the subpath of your site, e.g. "/blog"
+teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 share                    : true
 comments:
@@ -45,7 +36,13 @@ analytics:
     tracking_id          : "UA-2011187-3"
 google_ad_client         :
 google_ad_slot           :
-
+og_image                 : "site-logo.png" # Open Graph/Twitter default site image
+twitter:
+  username               : &twitter "mmistakes"
+facebook:
+  username               : &facebook "michaelrose"
+  app_id                 :
+  publisher              :
 # For specifying social profiles.
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -149,6 +146,7 @@ defaults:
       type: docs
     values:
       layout: single
+      read_time: true
       author_profile: false
       share: false
       comments: false
