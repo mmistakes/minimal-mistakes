@@ -32,15 +32,9 @@ So what happens when Hadley reads your blog post and mentions it on twitter?
  
 ## Quantifying the Hadley effect
  
-Well, taking the true **Hadley Effect** to be a single day event ocurring 2nd April (we term the tail of this spike: residual Hadley Effect): it's around a **7000% increase** in unique visits. 
+Well, taking the true **Hadley Effect** to be a single day event ocurring 2nd April (we term the tail of this spike: residual Hadley Effect): it's around a **7000% increase** in unique daily visits. 
  
 
-|                   | mean|  sd| min| max|
-|:------------------|----:|---:|---:|---:|
-|pre-Hadley-Effect  |    4|   3|   0|   9|
-|post-Hadley-Effect |   84| 111|  12| 278|
- 
- 
 ![plot of chunk 2016-04-3-hadley-effect](/figures/2016-04-3-hadley-effect-1.svg)
  
 ## A bit more data
