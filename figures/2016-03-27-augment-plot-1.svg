@@ -142,11 +142,7 @@
   <path d="M 368 5.480469 L 370 5.480469 L 370 472 L 368 472 Z M 368 5.480469 "/>
 </clipPath>
 </defs>
-<<<<<<< HEAD
 <g id="surface3">
-=======
-<g id="surface14">
->>>>>>> aedb6bd... Added iterator post
 <rect x="0" y="0" width="504" height="504" style="fill:rgb(100%,100%,100%);fill-opacity:1;stroke:none;"/>
 <rect x="0" y="0" width="504" height="504" style="fill:rgb(100%,100%,100%);fill-opacity:1;stroke:none;"/>
 <path style="fill:none;stroke-width:1.066978;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(100%,100%,100%);stroke-opacity:1;stroke-miterlimit:10;" d="M 0 504 L 504 504 L 504 0 L 0 0 Z M 0 504 "/>
