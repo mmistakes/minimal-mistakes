@@ -7,7 +7,7 @@ modified: `r format(Sys.time(), '%Y-%m-%d')`
 layout: post
 excerpt: "What happens when Hadley reads your blog"
 published: no
-status: process
+status: processed
 tags:
 - R
 - Rstats
