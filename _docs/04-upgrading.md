@@ -8,7 +8,6 @@ sidebar:
 ---
 
 {% include base_path %}
-{% include toc %}
 
 Currently there is no good way of upgrading the theme without doing a bit of manual work. The future looks promising with [**gem based themes**](https://github.com/jekyll/jekyll/pull/4595) on the horizon, but for now here's some suggestions on how handle theme updates.
 

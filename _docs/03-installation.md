@@ -8,7 +8,6 @@ sidebar:
 ---
 
 {% include base_path %}
-{% include toc %}
 
 ## Install the Theme
 
@@ -19,7 +18,7 @@ There are several ways to install the theme:
 **2.** For an **existing site** you have some more work ahead of you. What I suggest is to fork and rename the theme's repo as before, then clone it locally by running `git clone https://github.com/USERNAME/REPONAME.git` --- replacing **USERNAME** and **REPONAME** with your own.
 
 <figure>
-  <img src="{{ base_path }}/images/mm-github-copy-repo-url.png" alt="copy GitHub repo URL">
+  <img src="{{ base_path }}/images/mm-github-copy-repo-url.jpg" alt="copy GitHub repo URL">
   <figcaption>Tap the copy to clipboard button (outlined in red above) to grab your GitHub repo's path.</figcaption>
 </figure>
 
