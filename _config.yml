@@ -65,6 +65,7 @@ author:
   name             : *name
   avatar           : "bio-photo.jpg"
   bio              : *description
+  location         : "Buffalo, NY"
   email            : *email
   uri              : "https://mademistakes.com"
   codepen          :
