@@ -10,18 +10,42 @@ image:
 
 ---
 
-These are my main open source projects:
+* **[Android GPX Parser](https://github.com/ticofab/android-gpx-parser)**
 
-* [Amazon Web Services Request Signer](https://github.com/ticofab/aws-request-signer)
-* [Android GPX Parser](https://github.com/ticofab/android-gpx-parser)
-* [GestureMatch](https://github.com/ticofab/gesturematch)
-* [CloudMatch Android SDK](https://github.com/ticofab/cloudmatch_android_sdk)
+This library is there to help developers parse GPX files coming out of a GPS recorder.
 
-Contribution to:
+* **[AWS Request Signer](https://github.com/ticofab/aws-request-signer)**
 
-* [The Things Network Android SDK](https://github.com/TheThingsNetwork/android-sdk)
+Requests to AWS need to be signed through a complex, easy-to-get-wrong process. This library takes that pain away.
 
-{% raw %}
-<iframe src="http://githubbadge.appspot.com/ticofab?a=0" style="margin: 20px 20px; border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
-{% endraw %}
+* **[GestureMatch](https://github.com/ticofab/gesturematch)**
+* **[CloudMatch Android SDK](https://github.com/ticofab/cloudmatch_android_sdk)**
+
+CloudMatch is my own startup. It enables device-to-device communication using hand gestures like Pinch and Swipe.
+
+![Swipe example]({{site.url}}/assets/swipe.png)
+
+* **[The Things Network Android SDK](https://github.com/TheThingsNetwork/android-sdk)**
+
+The Things Newtork is a crowd-sourced IoT project. We're building a free LoraWan network and I am in charge of the Android SDK to retrieve data about nodes, gateways and packets.
+
+Examples & fiddling
+-------------------
+
+**Scala:**
+
+* [WebSockets in Scala / Play](https://github.com/ticofab/simple-play-websocket-server)
+* [Scala & RabbitMQ](https://github.com/ticofab/Scala-RabbitMQ-Example)
+* [Codility exercises with Scala](https://github.com/ticofab/codility-scala-lessons)
+* [React.js using the Play Framework](https://github.com/ticofab/play-scala-webjars-react)
+* [Concurrency using Akka actors](https://github.com/ticofab/play-scala-akka-example)
+
+**Android:**
+
+* [Material Navigation Drawer](https://github.com/ticofab/MaterialNavigationDrawer)
+* [Dependency injection with Dagger](https://github.com/ticofab/DaggerExperimentAndroid)
+* [WebSockets in Android](android-simple-websocket-client)
+
+
+
 
