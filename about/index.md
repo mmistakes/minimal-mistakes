@@ -1,4 +1,4 @@
-﻿---
+---
 layout: page
 title: About MachineGurning.com
 tags: [about]
