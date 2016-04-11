@@ -1,0 +1,216 @@
+---
+title: "The Hadley Effect"
+author: matt_upson
+comments: yes
+date: '2016-04-07'
+modified: `r format(Sys.time(), '%Y-%m-%d')`
+layout: post
+excerpt: "What happens when Hadley reads your blog"
+published: no
+status: processed
+tags:
+- R
+- Rstats
+- Hadley
+- Wickham
+categories: Rstats
+---
+
+```{r,include=FALSE}
+
+library(checkpoint)
+checkpoint("2016-03-26")
+
+library(readr)
+library(dplyr)
+library(magrittr)
+library(knitr)
+library(broom)
+library(ggplot2)
+library(purrr)
+library(lubridate)
+
+
+knitr::opts_chunk$set(
+  warning = FALSE, 
+  message = FALSE,
+  echo = FALSE,
+  #include = FALSE,
+  cache = FALSE,
+  eval=TRUE,
+  #fig.width = 10,
+  #fig.height = 10,
+  dev = "svg"
+  )
+
+
+```
+
+```{r}
+
+# read.csv(
+#   "data/2016-04-01-blog-data.csv"
+# ) %>% 
+#   mutate(
+#     date = mdy(date),
+#     avg_session_duration = period_to_seconds(hms(avg_session_duration))
+#     ) %>%
+#   write_csv(
+#     "data/2016-04-01-blog-data.csv"
+#     )
+
+blog_view_data <- read_csv(
+  "data/2016-04-01-blog-data.csv",
+  col_types = list(
+    col_factor(
+      levels = c("ivyleavedtoadflax.github.io","machinegurning.com")
+    ),
+    col_datetime(),
+    col_integer(),
+    col_double(),
+    col_integer(),
+    col_integer(),
+    col_integer(),
+    col_double(),
+    col_double()
+  )
+) %>%
+  tidyr::gather(
+    key, value, perc_bounce_rate:users
+  )
+
+
+```
+
+Last week [Matt G](https://twitter.com/mammykins_) tweeted about a quick blog post I wrote about [iteratively applying models](../iterating/) using some of Hadley's packages, to which Hadley replied:
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/mammykins_">@mammykins_</a> <a href="https://twitter.com/m_a_upson">@m_a_upson</a> the only thing it&#39;s missing is that you should store related data frames and models as list columns of s data frame</p>&mdash; Hadley Wickham (@hadleywickham) <a href="https://twitter.com/hadleywickham/status/716284174076747777">April 2, 2016</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Now this blog is pretty new, and we haven't made much of an effort to promote it.
+In the time since I transferred from the old domain name (more on this later) pretty much no-one has been looking at it (apart from my mum -- thanks mum).
+
+So what happens when Hadley reads your blog post and mentions it on twitter?
+
+## Quantifying the Hadley effect
+
+Well, taking the true **Hadley Effect** to be a single day event ocurring 2nd April (we term the tail of this spike: residual Hadley Effect): it's around a **7000% increase** in unique visits. 
+
+```{r}
+
+bind_rows(
+  blog_view_data %>%
+    dplyr::filter(
+      site == "machinegurning.com",
+      key == "users",
+      date > "2016-02-28",
+      date < "2016-04-02"
+    ) %>%
+    summarise_each(
+      funs = funs(
+        mean = round(mean(.)),
+        sd = round(sd(.)),
+        min, max),
+      value
+    ),
+  blog_view_data %>%
+    dplyr::filter(
+      site == "machinegurning.com",
+      key == "users",
+      date > "2016-04-02"
+    ) %>%
+    summarise_each(
+      funs = funs(
+        mean = round(mean(.)),
+        sd = round(sd(.)),
+        min, max),
+      value
+    )
+) %>% 
+  set_rownames(
+    c(
+      "pre-Hadley-Effect",
+      "post-Hadley-Effect"
+    )
+  ) %>%
+  kable
+
+
+
+```
+
+
+```{r,2016-04-3-hadley-effect,fig.height=5}
+
+blog_view_data %>%
+  dplyr::filter(
+    site == "machinegurning.com",
+    key == "users",
+    date > "2016-02-28"
+  ) %>%
+  ggplot +
+  aes(
+    x = date,
+    y = value
+  ) +
+  geom_point() +
+  geom_line() +
+  theme(
+    legend.position = "top"
+  ) +
+  ylab("Number of unique visits") +
+  xlab("Date")
+
+
+```
+
+## A bit more data
+
+So this isn't the whole story.
+I've been blogging since the end of 2014 (although I only signed up to Google Analytics in April 2015), and used to host this all using github pages (actually we are still hosted by github pages: <https://machinegurning.github.io>, just we bought a err more sensible domain). So I've actually got a bit more data with which to evaluate the Hadley effect.
+
+From a quick glance, it seems that not only is a mention from Hadley worth about 3 times as many reads as my most popular article (seems to be [this]("../cycling-weather/") one); but his briefest of mentions convinces people to read more of the blog for longer! -- Thanks Hadley
+
+```{r,2016-04-3-hadley-effect-facet,fig.height=10}
+
+facet_names <- c(
+  users = "Unique visits (n)",
+  pages_per_session = "Average pages visited per session (n)",
+  avg_session_duration = "Average visit duration (seconds)"
+  )
+
+blog_view_data %>%
+  dplyr::filter(
+    key %in% c(
+      "users",
+      "pages_per_session",
+      "avg_session_duration"
+    )
+  ) %>%
+  ggplot +
+  aes(
+    x = date,
+    y = value,
+    col = site
+  ) +
+  geom_line() +
+  facet_wrap(
+    ~key,
+    scales = "free_y",
+    ncol = 1,
+    labeller = labeller(key = facet_names)
+  ) +
+  theme(
+    legend.position = "top"
+  ) +
+  ylab("") +
+  xlab("Date")
+
+
+```
+
+
+```{r,eval=FALSE}
+sessionInfo()
+```
+

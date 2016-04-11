@@ -107,7 +107,7 @@ summary(m)
 ## C5.0.default(x = data_train[-13], y = data_train$final)
 ## 
 ## 
-## C5.0 [Release 2.07 GPL Edition]  	Mon Mar 28 20:30:50 2016
+## C5.0 [Release 2.07 GPL Edition]  	Mon Mar 28 20:27:42 2016
 ## -------------------------------
 ## 
 ## Class specified by attribute `outcome'
