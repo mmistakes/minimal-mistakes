@@ -1,0 +1,195 @@
+---
+title: "2016-04-10-neuralnet_student_perf"
+author: matt_gregory
+comments: yes
+date: '2016-04-10'
+modified: `r format(Sys.time(), '%Y-%m-%d')`
+layout: post
+excerpt: "Student attainment prediction with neural networks"
+published: no
+status: process
+tags:
+- R
+- machine learning
+- education
+categories: Rstats
+---
+
+{% include _toc.html %}
+
+```{r setup,include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  dev = "svg"
+  )
+```
+
+Education is a key factor affecting long term economic progress. Success in the core subjects provide a linguistic and numeric scaffold for other subjects later in students' academic careers.The growth in school educational databases facilitates the use of Data Mining and Machine Learning practises to improve outcomes in these subjects by identifying factors that are indicative of failure (or success). Predicting outcomes allows educators to take corrective measures for weak students mitigating the risk of failure. 
+
+## The Data  
+The [data](https://archive.ics.uci.edu/ml/datasets/Student+Performance) was downloaded from the UCI Machine Learning database and inspired by Cortez *et al*., 2008. We used the maths results data only.
+
+##The Approach  
+
+_"Any sufficently advanced technology is indistinguishable from magic."_ - Arthur C. Clarke    
+  
+As a scientist I find any computational methodology that is loosely based on how the brain works inherently interesting. Although somewhat derided for its complexity and computational expense, this approach has seen a resurgence in popularity with deep learning problems, such as Youtube [cat video identification](http://www.wired.com/2012/06/google-x-neural-network/). We tackle a simpler problem here that I previously approached with the decision tree method. Let's see how the default methods compare to the 95% classification accuracy of the decision tree, which also had the benefit of being readily intelligible.  
+
+Neural networks use concepts borrowed from an understanding of animal brains in order to model arbitary functions. We can use multiple hidden layers in the network to provide deep learning, this approach is commonly called the Multilayer Perceptron.
+
+```{r, warning = FALSE, message = FALSE}
+
+#PACKAGES
+library(dplyr)
+library(neuralnet)
+library(RItools)
+library(devtools)
+
+source_url('https://gist.github.com/fawda123/7471137/raw/cd6e6a0b0bdb4e065c597e52165e5ac887f5fe95/nnet_plot_update.r')
+
+set.seed(1337)
+
+#INPUT
+mydata <- "data/2016-04-10-neuralnet_student_perf.csv" 
+mydata <- read.table(mydata, sep = ";",
+                     header = TRUE)
+#mydata <- tbl_df(mydata)
+
+```
+
+From the codebook we know that `G3` is the final grade of the students. We can inspect it's distribution using a `hist`. It has been standardised to range from 0-20.
+
+```{r 2016-04-10_hist}
+
+hist(mydata$G3)
+
+```
+
+## The magical black box that is the neural networks
+`G3` is pretty normally distributed, despite the dodgy tail. Previously we converted it into a binary output and then used a decision tree approach to make predictions from associated student characteristics. We use the neural network approach here while maintaining `G3` as an integer variable with a range of 1-20.
+
+First we start off by identifying variables we think will be useful based on expert domain knowledge. We then [normalise](http://www.machinegurning.com/rstats/student-performance/) the continuous variables to ensure equal weighting when measuring distance and check for missing values.
+
+```{r, echo = FALSE}
+
+#what variables are we interested in?
+data_interest <- rename(mydata)
+#data_interest <- select(mydata, school, sex, G1, G2, Mjob, Fjob, goout, 
+#       absences, reason, Fjob, Mjob, failures, Fedu, Medu, G3)
+
+#apply(data_interest,2,function(x) sum(is.na(x)))  # no missing data
+
+#normalise the data so they are on the same scale
+normalise <- function(x) {
+  return((x - min(x)) / (max(x) - min(x)))
+}
+#can you find a faster way to apply a function to each column?
+data_interest$G1 <- normalise(data_interest$G1)
+data_interest$G2 <- normalise(data_interest$G2)
+data_interest$goout <- normalise(data_interest$goout)
+data_interest$absences <- normalise(data_interest$absences)
+data_interest$failures <- normalise(data_interest$failures)
+data_interest$Fedu <- normalise(data_interest$Fedu)
+data_interest$Medu <- normalise(data_interest$Medu)
+data_interest$G3 <- normalise(data_interest$G3)
+
+```
+
+## Training and test datasets.
+We need to split the data so we can build the model and then test it, to see if it generalises well. The data arrived in a random order so we split it in an analagous way to how we did it with the [decision tree](http://www.machinegurning.com/rstats/student-performance/) method.
+
+```{r, echo = TRUE}
+
+data_train <- data_interest[1:350, ]  # we want to compare to decision tree method!
+data_test <- data_interest[351:395, ] # all the columns or variables are selected
+
+#data_train <- sample_frac(data_interest, 0.8)  # 80% train, 20% test
+#data_test <- setdiff(data_interest, data_train)
+
+```
+
+Now we need to train the model on the data using the `neuralnet()` function using backpropogation from the package of the same name using the default settings. We specify a linear output as we are doing a regression not a classification. First we fit a model using relevant continuous normalised variables, omitting the non-numeric encoded factors, such as gender for now.
+
+```{r 2016-04-10_net1, echo = TRUE, message = FALSE}
+
+#TRAIN the model on the data
+#n <- names(data_train)
+#f <- as.formula(paste("G3 ~", paste(n[!n %in% "G3"], collapse = " + ")))
+# as pointed out by an R bloggers post, we mustwrite the formula and pass it as an argument
+# http://www.r-bloggers.com/fitting-a-neural-network-in-r-neuralnet-package/
+
+
+net_model <- neuralnet(G3 ~ G1 + G2 + goout + 
+       absences + failures + Fedu + Medu,
+                            data = data_train, hidden = 1, linear.output = TRUE)
+print(net_model)
+
+plot.nnet(net_model)
+
+```
+
+Generally, the input layer (I) is considered a distributor of the signals from the external world. Hidden layers (H) are considered to be categorizers or feature detectors of such signals. The output layer (O) is considered a collector of the features detected and producer of the response. While this view of the neural network may be helpful in conceptualizing the functions of the layers, you should not take this model too literally as the functions described can vary widely. Bias layers (B) aren't all that informative ,  they are analogous to intercept terms in a regression model.
+
+## Evaluating the neural network model
+Note how we use the `compute()` function to generate predictions on the testing dataset (rather than `predict()`). Also rather than assessing whether we were right or wrong (compared to classification) we need to compare our predicted G3 score with the actual score, we can acheive this by comparing how the predicted results covary with the real data.
+
+```{r 2016-04-10_net2}
+
+model_results <- compute(net_model, data_test[c("G1", "G2", "goout", "absences", 
+                                                "failures", "Fedu", "Medu")])
+predicted_G3 <- model_results$net.result
+
+cor(predicted_G3, data_test$G3)[ , 1]  # can vary depending on random seed
+plot(predicted_G3, data_test$G3, 
+     main = "1 hidden node layers", ylab = "Real G3")  # line em up, aid visualisation
+abline(a = 0, b = 1, col = "black") 
+
+```
+
+Here we compare to a 1:1 abline in black. It would be interesting to compare how this approach fares against a standard linear regression. Let's add some extra complexity by adding some more hidden nodes.
+
+```{r 2016-04-10_net3, echo = TRUE, message = FALSE}
+
+net_model2 <- neuralnet(G3 ~ G1 + G2 + goout + 
+       absences + failures + Fedu + Medu,
+                            data = data_train, hidden = 5, linear.output = TRUE)
+print(net_model2)
+
+plot.nnet(net_model2)
+```
+
+Now we evaluate as before.
+
+```{r 2016-04-10_net4}
+#now evaluate as before
+
+model_results2 <- compute(net_model2, data_test[c("G1", "G2", "goout", "absences", 
+                                                "failures", "Fedu", "Medu")])
+predicted_G3_2 <- model_results2$net.result
+
+cor(predicted_G3_2, data_test$G3)[ , 1]  # can vary depending on random seed
+plot(predicted_G3_2, data_test$G3,
+     main = "5 hidden node layers", ylab = "Real G3")  # line em up, aid visualisation
+abline(a = 0, b = 1, col = "black") 
+
+```
+
+A slight improvement, on parr with the Decision Tree approach, even though some variables that we know to be useful were excluded from this modelling exercise. We can improve things by incoporating them into the model. Furthermore, this is not just a pass or fail classification, this provides a predicted exam score in `G3` for any student.    
+
+A caveat, prior to any conclusions the model should be validated using cross-validation which provides some protection against under or over-fitting (the risk of overfitting increases as we increase the number of hidden nodes). Furthermore interpretability is an issue, I have a prediction but limited understanding of what is going on.
+
+***
+
+## References
+* Cortez and Silva (2008). Using data mining to predict secondary school performance.
+* Crawley (2004). Statistics an introduction using R.
+* James et al., (2014). An introduction to statistical learning with applications in R.
+* Machine Learning with R, Chapter 7  
+* Rumelhart et al, (1986). Nature 323, 533-536  
+* Yeh, (1998). Cement and Concrete Research 28, 1797-1808  
+* [R-bloggers](http://www.r-bloggers.com/fitting-a-neural-network-in-r-neuralnet-package/)  
+* [Neuralyst](http://www.cheshireeng.com/Neuralyst/nnbg.htm#nnstruct)  
+
+```{r}
+sessionInfo()
+```
