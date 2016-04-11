@@ -24,7 +24,7 @@ Education is a key factor affecting long term economic progress. Success in the 
 ## The Data  
 The [data](https://archive.ics.uci.edu/ml/datasets/Student+Performance) was downloaded from the UCI Machine Learning database and inspired by Cortez *et al*., 2008. We used the maths results data only.
  
-##The Approach  
+## The Approach  
  
 _"Any sufficently advanced technology is indistinguishable from magic."_ - Arthur C. Clarke    
   
