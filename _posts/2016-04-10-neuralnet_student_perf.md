@@ -1,5 +1,5 @@
 ---
-title: "2016-04-10-neuralnet_student_perf"
+title: "The magic of neural networks"
 author: matt_gregory
 comments: yes
 date: '2016-04-10'
