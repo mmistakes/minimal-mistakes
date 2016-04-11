@@ -22,7 +22,7 @@ categories: Rstats
 Education is a key factor affecting long term economic progress. Success in the core subjects provide a linguistic and numeric scaffold for other subjects later in students' academic careers.The growth in school educational databases facilitates the use of Data Mining and Machine Learning practises to improve outcomes in these subjects by identifying factors that are indicative of failure (or success). Predicting outcomes allows educators to take corrective measures for weak students mitigating the risk of failure. 
  
 ## The Data  
-The [data](https://archive.ics.uci.edu/ml/datasets/Student+Performance) was downloaded from the UCI Machine Learning database and inspired by Cortez *et al*., 2008. We used the maths results data only.
+The [data](https://archive.ics.uci.edu/ml/datasets/Student+Performance) were downloaded from the UCI Machine Learning database and inspired by Cortez *et al*., 2008. We used the maths results data only.
  
 ## The Approach  
  
