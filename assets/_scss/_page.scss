@@ -9,7 +9,8 @@
   margin-top: 2em;
   padding-left: 2em;
   padding-right: 2em;
-  z-index: 0;
+  animation: intro 0.3s both;
+  animation-delay: 0.35s;
 
   @include breakpoint($large) {
     padding-left: 1em;
@@ -45,6 +46,7 @@
 .page__title {
   margin-top: 0;
   line-height: 1;
+
   & + .page__meta {
     margin-top: -0.5em;
   }
@@ -112,6 +114,8 @@
   position: relative;
   margin-bottom: 2em;
   @include clearfix;
+  animation: intro 0.3s both;
+  animation-delay: 0.25s;
 
   &--overlay {
     position: relative;
@@ -122,6 +126,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    animation: intro 0.3s both;
+    animation-delay: 0.25s;
 
     .wrapper {
       padding-left: 2em;
@@ -142,10 +148,6 @@
       @include breakpoint($small) {
         font-size: $type-size-1;
       }
-    }
-
-    .page__lead {
-      font-weight: bold;
     }
   }
 }
