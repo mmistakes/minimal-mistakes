@@ -48,11 +48,11 @@ docs:
   - title: Content
     children:
       - title: "Working with Posts"
-        path: working-with-posts
+        path: posts
       - title: "Working with Pages"
-        path: working-with-pages
+        path: pages
       - title: "Working with Collections"
-        path: working-with-collections
+        path: collections
       - title: "Helpers and Shortcodes"
         path: helpers-and-shortcodes
       - title: "Images"
