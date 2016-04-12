@@ -2,7 +2,7 @@
 {% assign navigation = site.data.navigation[page.sidebar.nav] %}
 
 <nav class="nav__list">
-  {% if page.sidebar.title %}<header><h4>{{ page.sidebar.title }}</h4></header>{% endif %}
+  {% if page.sidebar.title %}<header><h4 class="nav__title" style="padding: 0;">{{ page.sidebar.title }}</h4></header>{% endif %}
   <ul>
     {% for nav in navigation %}
       <li><span class="nav__sub-title">{{ nav.title }}</span>
