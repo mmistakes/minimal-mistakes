@@ -15,7 +15,7 @@ Minimal Mistakes has been developed to be 100% compatible with hosting a site on
 
 ## Fork the Theme
 
-Fork the [Minimal Mistakes theme](https://github.com/mmistakes/minimal-mistakes/fork), then rename the repo to **USERNAME.github.io** --- replacing **USERNAME** with your GitHub username.
+Fork the [Minimal Mistakes theme]({{ site.gh_repo }}/fork), then rename the repo to **USERNAME.github.io** --- replacing **USERNAME** with your GitHub username.
 
 <figure>
   <img src="{{ base_path }}/images/mm-theme-fork-repo.png" alt="fork Minimal Mistakes">

@@ -13,6 +13,7 @@ name                     : &name "Michael Rose"
 description              : &description "A flexible Jekyll theme for your blog or site with a minimalist aesthetic."
 url                      : # the base hostname & protocol for your site e.g. "//github.io.mmistakes"
 baseurl                  : "/minimal-mistakes" # the subpath of your site, e.g. "/blog"
+gh_repo                  : "https://github.com/mmistakes/minimal-mistakes"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
