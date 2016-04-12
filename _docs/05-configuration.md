@@ -414,7 +414,7 @@ If [using pagination](https://github.com/jekyll/jekyll-paginate) on the homepage
 paginate: 5
 ```
 
-You'll also need to include some modified Liquid to properly use the paginator, which you can find in the **Content** section or gleam from the demo site's [`index.html`](https://github.com/mmistakes/minimal-mistakes/blob/gh-pages/index.html).
+You'll also need to include some modified Liquid to properly use the paginator, which you can find in the **Layouts** section under [Home Page]({{ base_path }}/docs/layouts/#home-page).
 
 ### Timezone
 

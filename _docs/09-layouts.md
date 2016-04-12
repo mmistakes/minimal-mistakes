@@ -17,7 +17,7 @@ single_layout_gallery:
 
 The bread and butter of any theme. Below you'll find the layouts included with Minimal Mistakes, what they look like and the type of content they've been built for.
 
-## Default
+## Default Layout
 
 The base layout all other layouts inherit from. There's not much to this layout apart from pulling in several `_includes`:
 
@@ -30,21 +30,77 @@ The base layout all other layouts inherit from. There's not much to this layout 
 **Note:** You won't ever assign this layout directly to a post or page. Instead all other layouts will build off of it by setting `layout: default` in their YAML Front Matter.
 {: .notice--warning}
 
-## Compress
+## Compress Layout
 
 A Jekyll layout that compresses HTML in pure Liquid.
 
 * [Documentation](http://jch.penibelst.de/)
 
-## Single
+## Single Layout
 
-The layout you'll likely use the most --- thin sidebar on the left, main content on the right.
+The layout you'll likely use the most --- sidebar and main content combo with the following optional modules: **social sharing links**, **comments**, and **related posts**.
 
 {% include gallery id="single_layout_gallery" caption="Image header and meta info examples for `single` layout" %}
 
-To enable add `layout: single` or better yet apply as a [Front Matter default]({{ base_path }}/docs/configuration/#front-matter-defaults) in `_config.yml`.
+Assign with `layout: single`, or better yet apply as a [Front Matter default]({{ base_path }}/docs/configuration/#front-matter-defaults) in `_config.yml`.
 
-### Header
+## Archive Layout
+
+Essentially the same as `single` with markup adjustments and some modules removed.
+
+![archive layout example]({{ base_path }}/images/mm-layout-archive.png)
+
+Below are sample archive pages you can easily drop into your project, taking care to rename `permalink`, `title`, or the filename to fit your site. Each is 100% compatible with GitHub Pages.
+
+* [All Posts Grouped by Category][posts-categories]
+* [All Posts Grouped by Tags][posts-tags]
+* [All Posts Grouped by Year][posts-year]
+* [All Posts Grouped by Collection][posts-collection]
+
+[posts-categories]: https://github.com/mmistakes/minimal-mistakes/blob/gh-pages/_pages/category-archive.html
+[posts-tags]: https://github.com/mmistakes/minimal-mistakes/blob/gh-pages/_pages/tag-archive.html
+[posts-year]: https://github.com/mmistakes/minimal-mistakes/blob/gh-pages/_pages/year-archive.html
+[posts-collection]: https://github.com/mmistakes/minimal-mistakes/blob/gh-pages/_pages/collection-archive.html
+
+### Taxonomy Archive
+
+If you have the luxury of using Jekyll plugins the creation of category and tag archives is greatly simplified. Enable support for the [`jekyll-archives`](https://github.com/jekyll/jekyll-archives) plugin with a few `_config.yml` settings as noted in the [**Configuration**]({{ base_path }}/docs/configuration/#archive-settings) section.
+
+![archive taxonomy layout example]({{ base_path }}/images/mm-layout-archive-taxonomy.png)
+
+### Home Page
+
+Minimal Mistakes ships with an [`index.html`](https://github.com/mmistakes/minimal-mistakes/blob/master/index.html) in the root of the project for displaying the 5 most recent posts --- with pagination. It does this by assigning `layout: archive` in the YAML Front Matter and including the following Liquid in the body:
+
+```html
+{% raw %}<!-- start index.html body -->
+{% include base_path %}
+
+<h3 class="archive__subtitle">Recent Posts</h3>
+
+{% for post in paginator.posts %}
+  {% include archive-single.html %}
+{% endfor %}
+
+{% include paginator.html %}
+<!-- end index.html body -->{% endraw %}
+```
+
+<figure>
+  <img src="{{ base_path }}/images/mm-home-post-pagination-example.jpg" alt="home page post pagination example">
+  <figcaption>Home page post pagination example.</figcaption>
+</figure>
+
+**Note:** For more pagination relation settings check the [**Configuration**]({{ base_path }}/docs/configuration/#paginate) section.
+{: .notice--info}
+
+## Splash Page Layout
+
+![splash page layout example]({{ base_path }}/images/mm-layout-splash.png)
+
+---
+
+## Headers
 
 To add some visual punch to a post or page, a large full-width header image can be included.
 
@@ -112,11 +168,13 @@ header:
   overlay_color: "#333"
 ```
 
-### Sidebar
+---
+
+## Sidebars
 
 The space to the left of a page's main content is blank by default, but has the option to show an author profile (name, short biography, social media links), custom content, or both.
 
-#### Author Profile
+### Author Profile
 
 Add `author_profile: true` to a post or page's YAML Front Matter.
 
@@ -137,7 +195,7 @@ defaults:
 **Note:** To disable the author sidebar profile for a specific post or page, add `author_profile: false` to the YAML Front Matter instead.
 {: .notice--warning}
 
-#### Custom Sidebar Content
+### Custom Sidebar Content
 
 Blocks of content can be added by using the following under `sidebar`:
 
@@ -165,15 +223,3 @@ sidebar:
 
 **ProTip:** Custom sidebar content added to a post or page's YAML Front Matter will appear above the author profile if enabled with `author_profile: true`.
 {: .notice--info}
-
-## Archive
-
-![archive layout example]({{ base_path }}/images/mm-layout-archive.png)
-
-### Taxonomy Archive
-
-![archive taxonomy layout example]({{ base_path }}/images/mm-layout-archive-taxonomy.png)
-
-## Splash Page
-
-![splash page layout example]({{ base_path }}/images/mm-layout-splash.png)

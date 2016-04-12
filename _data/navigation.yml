@@ -60,10 +60,6 @@ docs:
 
   - title: Extras
     children:
-      - title: "Pagination"
-        path: pagination
-      - title: "Archives"
-        path: archives
       - title: "Stylesheets"
         path: stylesheets
       - title: "JavaScript"
