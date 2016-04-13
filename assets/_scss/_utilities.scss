@@ -84,10 +84,24 @@ body:hover .visually-hidden button {
    Type
    ========================================================================== */
 
-/* center align */
+.text-left {
+  text-align: left;
+}
 
-.center {
+.text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-nowrap {
+  white-space: nowrap;
 }
 
 
@@ -132,6 +146,14 @@ body:hover .visually-hidden button {
     float: right;
     margin-left: 1em;
   }
+}
+
+/* image align center */
+
+.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* file page content container */
