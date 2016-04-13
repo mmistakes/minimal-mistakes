@@ -11,7 +11,10 @@ sidebar:
 
 Collections like posts and pages work as you'd expect. If you're new to them be sure to read [Jekyll's documentation](https://jekyllrb.com/docs/collections/).
 
-Minimal Mistakes has been built with collections in mind and you will find [several examples]({{ base_path }}/collection-archive/) on the demo site (portfolio, recipes, pets).
+Minimal Mistakes has been built with collections in mind and you will find [several examples]({{ base_path }}/collection-archive/) on the demo site ([portfolio]({{ base_path }}/portfolio/), [recipes]({{ base_path }}/recipes/), pets). 
+
+**Collections in the Wild:** This set of documentation is also [built as a collection]({{ site.gh_repo }}/gh-pages/_docs/) if you're looking for a fully fleshed out example with custom sidebar navigation, next/previous pagination, and more.
+{: .notice--info}
 
 ---
 

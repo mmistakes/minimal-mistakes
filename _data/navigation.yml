@@ -53,10 +53,10 @@ docs:
         path: pages
       - title: "Working with Collections"
         path: collections
-      - title: "Helpers and Shortcodes"
-        path: helpers-and-shortcodes
-      - title: "Images"
-        path: images
+      - title: "Helpers"
+        path: helpers
+      - title: "Utility Classes"
+        path: utility-classes
 
   - title: Extras
     children:
