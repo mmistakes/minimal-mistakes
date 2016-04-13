@@ -30,6 +30,7 @@ feature_row:
   - image_path: unsplash-gallery-image-3-th.jpg
     title: "Placeholder 3"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
+modified: 2016-04-13T15:54:02-04:00
 ---
 
 {% include base_path %}

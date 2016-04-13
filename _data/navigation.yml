@@ -71,7 +71,7 @@ docs:
         path: history
       - title: "Contributing"
         path: contributing
+      - title: "Old 2.2 Docs"
+        path: docs-2-2
       - title: "License"
         path: license
-      - title: "Old 2.2.1 Docs"
-        path: docs-2

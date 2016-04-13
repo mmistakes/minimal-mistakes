@@ -1,12 +1,11 @@
 ---
 title: "Quick-Start Guide"
 permalink: /docs/quick-start-guide/
-redirect_from:
-  - /docs/
 excerpt:
 sidebar:
   title: "v3.0"
   nav: docs
+modified: 2016-04-13T15:54:02-04:00
 ---
 
 {% include base_path %}
@@ -35,15 +34,15 @@ If you're hosting several Jekyll based sites under the same GitHub username you 
 
 ## Customize Your Site
 
-Open up `_config.yml` found in the root of the repo and edit anything under **Site Settings**. For a full explanation of every setting be sure to read the **Customization** section, but for now let's just change the site's title.
+Open up `_config.yml` found in the root of the repo and edit anything under **Site Settings**. For a full explanation of every setting be sure to read the [**Configuration**]({{ base_path }}/docs/configuration/) section, but for now let's just change the site's title.
 
 <figure>
   <img src="{{ base_path }}/images/mm-github-edit-config.gif" alt="editing _config.yml file">
   <figcaption>Edit text files without leaving GitHub.com</figcaption>
 </figure>
 
-Committing a change to `_config.yml` (or any file in your repository) will force GitHub Pages to rebuild your site with Jekyll. It should then be viewable a few seconds later at <USERNAME.github.io>.
+Committing a change to `_config.yml` (or any file in your repository) will force GitHub Pages to rebuild your site with Jekyll. It should then be viewable a few seconds later at `https://USERNAME.github.io`.
 
 ---
 
-Congratulations! You've successfully forked the Minimal Mistakes Jekyll theme and are up an running with GitHub Pages. Now you're ready to add some content and customize the site further.
+Congratulations! You've successfully forked the theme and are up an running with GitHub Pages. Now you're ready to add content and customize the site further.
