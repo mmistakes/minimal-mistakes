@@ -151,6 +151,7 @@ a:hover {
   font-size: 1.25rem;
 
   @include breakpoint($small) {
+    margin-bottom: 0;
     text-align: center;
     @include gallery(4 of 12);
 
@@ -160,10 +161,19 @@ a:hover {
     }
   }
 
+  .archive__item-body {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
   &--left {
     @include full();
-    margin-bottom: 2em;
+    // margin-bottom: 2em;
     font-size: 1.25rem;
+
+    .archive__item-teaser {
+      margin-bottom: 2em;
+    }
 
     @include breakpoint($small) {
       .archive__item-teaser {
@@ -180,8 +190,12 @@ a:hover {
 
   &--right {
     @include full();
-    margin-bottom: 2em;
+    // margin-bottom: 2em;
     font-size: 1.25rem;
+
+    .archive__item-teaser {
+      margin-bottom: 2em;
+    }
 
     @include breakpoint($small) {
       text-align: right;
@@ -200,8 +214,12 @@ a:hover {
 
   &--center {
     @include full();
-    margin-bottom: 2em;
+    // margin-bottom: 2em;
     font-size: 1.25rem;
+
+    .archive__item-teaser {
+      margin-bottom: 2em;
+    }
 
     @include breakpoint($small) {
       text-align: center;
