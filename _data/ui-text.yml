@@ -1,0 +1,35 @@
+# User interface text and labels
+
+# English (default)
+# -----------------
+en: &DEFAULT_EN
+  page                  : "Page"
+  pagination_previous   : "Previous"
+  pagination_next       : "Next"
+  breadcrumb_home_label : "Home"
+  breadcrumb_separator  : "/"
+  toc_label             : "On This Page"
+  ext_link_label        : "Direct Link"
+  less_than             : "less than"
+  minute_read           : "minute read"
+  minutes_read          : "minutes read"
+  share_on_label        : "Share on"
+  meta_label            :
+  tags_label            : "Tags:"
+  categories_label      : "Categories:"
+  date_label            : "Updated:"
+  comments_label        : "Leave a Comment"
+  more_label            : "Learn More"
+  related_label         : "You May Also Enjoy"
+  follow_label          : "Follow:"
+  feed_label            : "Feed"
+  powered_by            : "Powered by"
+  website_label         : "Website"
+  email_label           : "Email"
+en-US:
+  <<: *DEFAULT_EN
+en-UK:
+  <<: *DEFAULT_EN
+
+# Another locale
+# --------------

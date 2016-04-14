@@ -1,25 +1,42 @@
 {
-  "name": "minimal-mistakes-theme",
-  "author": "Michael Rose <michael@mademistakes.com>",
-  "homepage": "http://mmistakes.github.io/minimal-mistakes/",
+  "name": "minimal-mistakes",
+  "version": "2.1.0",
+  "description": "Minimal Mistakes Jekyll theme npm build scripts",
   "repository": {
     "type": "git",
     "url": "git://github.com/mmistakes/minimal-mistakes.git"
   },
+  "keywords": [
+    "jekyll",
+    "theme",
+    "minimal"
+  ],
+  "author": "Michael Rose",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mmistakes/minimal-mistakes/issues"
   },
+  "homepage": "https://mmistakes.github.io/minimal-mistakes/",
   "engines": {
     "node": ">= 0.10.0"
   },
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-jshint": "~0.6.3",
-    "grunt-contrib-uglify": "~0.2.2",
-    "grunt-contrib-watch": "~0.5.2",
-    "grunt-recess": "~0.3.5",
-    "grunt-contrib-imagemin": "~0.2.0",
-    "grunt-svgmin": "~0.2.0"
+    "autoprefixer": "^6.3.5",
+    "node-sass": "^3.4.2",
+    "npm-run-all": "^1.7.0",
+    "onchange": "^2.2.0",
+    "postcss-cli": "^2.5.1",
+    "uglify-js": "^2.6.1"
+  },
+  "scripts": {
+    "scss": "node-sass --output-style compressed -o assets/css assets/_scss",
+    "autoprefixer": "postcss -u autoprefixer -b \">, 5%, ie 9\" -r assets/css/*",
+    "uglify": "uglifyjs assets/js/vendor/jquery/jquery-1.12.1.min.js assets/js/plugins/jquery.fitvids.js assets/js/plugins/jquery.greedy-navigation.js assets/js/plugins/jquery.magnific-popup.js assets/js/plugins/jquery.smooth-scroll.min.js assets/js/plugins/stickyfill.min.js assets/js/_main.js -c -m -o assets/js/main.min.js",
+    "watch:css": "onchange \"assets/_scss/**/*.scss\" -- npm run build:css",
+    "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
+    "watch:all": "npm-run-all --parallel watch:css watch:js",
+    "build:css": "npm run scss && npm run autoprefixer",
+    "build:js": "npm run uglify",
+    "build:all": "npm run build:css && build:js"
   }
 }
