@@ -3,7 +3,7 @@ title: "License"
 permalink: /docs/license/
 excerpt: "License for Minimal Mistakes Jekyll Theme."
 sidebar:
-  title: "v3.0"
+  title: "v3.0.1"
   nav: docs
 modified: 2016-04-13T15:05:12-04:00
 ---

@@ -3,7 +3,7 @@ title: "UI Text"
 permalink: /docs/ui-text/
 excerpt: "Text for customizing various user interface elements found in the theme."
 sidebar:
-  title: "v3.0"
+  title: "v3.0.1"
   nav: docs
 modified: 2016-04-13T15:54:02-04:00
 ---

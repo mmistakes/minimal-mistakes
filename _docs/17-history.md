@@ -3,7 +3,7 @@ title: "History"
 permalink: /docs/history/
 excerpt: "Changelog of enhancements and bug fixes made to the theme."
 sidebar:
-  title: "v3.0"
+  title: "v3.0.1"
   nav: docs
 modified: 2016-04-13T15:27:39-04:00
 ---
