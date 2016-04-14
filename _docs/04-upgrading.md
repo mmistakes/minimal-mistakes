@@ -1,7 +1,7 @@
 ---
 title: "Upgrading"
 permalink: /docs/upgrading/
-excerpt:
+excerpt: "Instructions and suggestions for upgrading the theme."
 sidebar:
   title: "v3.0"
   nav: docs

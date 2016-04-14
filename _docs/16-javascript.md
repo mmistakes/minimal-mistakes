@@ -1,7 +1,7 @@
 ---
 title: "JavaScript"
 permalink: /docs/javascript/
-excerpt:
+excerpt: "Instructions for customizing and building the theme's scripts."
 sidebar:
   title: "v3.0"
   nav: docs

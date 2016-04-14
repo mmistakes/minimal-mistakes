@@ -1,7 +1,7 @@
 ---
 title: "Layouts"
 permalink: /docs/layouts/
-excerpt:
+excerpt: "Descriptions and samples of all layouts included with the theme and how to best use them."
 sidebar:
   title: "v3.0"
   nav: docs

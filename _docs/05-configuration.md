@@ -1,7 +1,7 @@
 ---
 title: "Configuration"
 permalink: /docs/configuration/
-excerpt:
+excerpt: "Settings for configuring and customizing the theme."
 sidebar:
   title: "v3.0"
   nav: docs

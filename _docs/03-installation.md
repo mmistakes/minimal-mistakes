@@ -1,7 +1,7 @@
 ---
 title: "Installation"
 permalink: /docs/installation/
-excerpt:
+excerpt: "Instructions for installing the theme for new and existing Jekyll based sites."
 sidebar:
   title: "v3.0"
   nav: docs

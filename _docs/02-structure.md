@@ -1,7 +1,7 @@
 ---
 title: "Structure"
 permalink: /docs/structure/
-excerpt:
+excerpt: "How the theme is organized and what all of the files are for."
 sidebar:
   title: "v3.0"
   nav: docs

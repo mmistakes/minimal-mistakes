@@ -1,7 +1,7 @@
 ---
 title: "Authors"
 permalink: /docs/authors/
-excerpt:
+excerpt: "Instructions and settings for working with multiple site authors."
 sidebar:
   title: "v3.0"
   nav: docs

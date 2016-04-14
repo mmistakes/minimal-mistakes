@@ -1,7 +1,7 @@
 ---
 title: "Working with Posts"
 permalink: /docs/posts/
-excerpt:
+excerpt: "Suggestions and Front Matter defaults for working with posts."
 sidebar:
   title: "v3.0"
   nav: docs

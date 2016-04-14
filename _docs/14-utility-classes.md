@@ -1,7 +1,7 @@
 ---
 title: "Utility Classes"
 permalink: /docs/utility-classes/
-excerpt:
+excerpt: "CSS classes for aligning text/image, styling buttons and notices, and more."
 sidebar:
   title: "v3.0"
   nav: docs

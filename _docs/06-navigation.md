@@ -1,7 +1,7 @@
 ---
 title: "Navigation"
 permalink: /docs/navigation/
-excerpt:
+excerpt: "Instructions on how to customize the main navigation and enabling breadcrumb links."
 sidebar:
   title: "v3.0"
   nav: docs
