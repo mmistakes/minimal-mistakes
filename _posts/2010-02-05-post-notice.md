@@ -11,14 +11,29 @@ A notice displays information that explains nearby content. Often used to call a
 
 When using Kramdown `{: .notice}` can be added after a sentence to assign the `.notice` to the `<p></p>` element. 
 
-**Changes in Service:** We just updated our privacy policy here to better service our customers. We recommend reviewing the changes.
+**Changes in Service:** We just updated our [privacy policy](#) here to better service our customers. We recommend reviewing the changes.
 {: .notice}
+
+**Primary Notice:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. [Praesent libero](#). Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+{: .notice--primary}
+
+**Info Notice:** Lorem ipsum dolor sit amet, [consectetur adipiscing elit](#). Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+{: .notice--info}
+
+**Warning Notice:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. [Integer nec odio](#). Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+{: .notice--warning}
+
+**Danger Notice:** Lorem ipsum dolor sit amet, [consectetur adipiscing](#) elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+{: .notice--danger}
+
+**Success Notice:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at [nibh elementum](#) imperdiet.
+{: .notice--success}
 
 Want to wrap several paragraphs or other elements in a notice? Using Liquid to capture the content and then filter it with `markdownify` is a good way to go.
 
 ```html
 {% raw %}{% capture notice-2 %}
-### New Site Features
+#### New Site Features
 
 * You can now have cover images on blog pages
 * Drafts will now auto-save while writing
@@ -28,7 +43,7 @@ Want to wrap several paragraphs or other elements in a notice? Using Liquid to c
 ```
 
 {% capture notice-2 %}
-### New Site Features
+#### New Site Features
 
 * You can now have cover images on blog pages
 * Drafts will now auto-save while writing
@@ -42,12 +57,12 @@ Or you could skip the capture and stick with straight HTML.
 
 ```html
 <div class="notice">
-  <h3>Message</h3>
+  <h4>Message</h4>
   <p>A basic message.</p>
 </div>
 ```
 
 <div class="notice">
-  <h3>Message</h3>
+  <h4>Message</h4>
   <p>A basic message.</p>
 </div>

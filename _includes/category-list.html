@@ -1,5 +1,7 @@
 {% include base_path %}
 
+{% include base_path %}
+
 {% case site.categories.type %}
   {% when "liquid" %}
     {% assign path_type = "#" %}
@@ -16,7 +18,7 @@
   {% assign category_hashes = (page_categories | split: ',' | sort:0) %}
 
   <p class="page__taxonomy">
-    {% if site.data.ui-text[site.locale].categories_label %}<strong>{{ site.data.ui-text[site.locale].categories_label }} </strong>{% endif %}
+    <strong><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].categories_label }} </strong>
     <span itemprop="keywords">
     {% for hash in category_hashes %}
       {% assign keyValue = hash | split: '#' %}

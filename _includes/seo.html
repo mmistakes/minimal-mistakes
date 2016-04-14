@@ -1,3 +1,5 @@
+{% include base_path %}
+
 <!-- begin SEO -->
 {% if site.url %}
   {% assign seo_url = site.url | append: site.baseurl %}
@@ -61,8 +63,8 @@
     <meta name="twitter:image" content="{% if page.header.image contains "http" %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: "/images/" | prepend: base_path }}{% endif %}">
   {% else %}
     <meta name="twitter:card" content="summary">
-    {% if site.logo %}
-      <meta name="twitter:image" content="{{ site.logo | prepend: "/images/" | prepend: base_path }}">
+    {% if site.og_image %}
+      <meta name="twitter:image" content="{{ site.og_image | prepend: "/images/" | prepend: base_path }}">
     {% endif %}
   {% endif %}
 
@@ -96,13 +98,13 @@
   {% endif %}
 {% endif %}
 
-{% if site.logo %}
+{% if site.og_image %}
   <script type="application/ld+json">
     {
       "@context": "http://schema.org",
       "@type": "Organization",
       "url": {{ seo_url | jsonify }},
-      "logo": {{ site.logo | prepend: "/" | prepend: seo_url | jsonify }}
+      "logo": {{ site.og_image | prepend: "/" | prepend: seo_url | jsonify }}
     }
   </script>
 {% endif %}

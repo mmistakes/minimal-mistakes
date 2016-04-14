@@ -1,5 +1,7 @@
 ---
 title: "Markup: HTML Tags and Formatting"
+header:
+  teaser: "markup-syntax-highlighting-teaser.jpg"
 categories:
   - Markup
 tags:
@@ -10,7 +12,7 @@ tags:
   - markup
 ---
 
-## Headings
+A variety of common markup showing how the theme styles them.
 
 # Header one
 
@@ -32,9 +34,10 @@ Single line blockquote:
 
 Multi line blockquote with a cite reference:
 
-> People think focus means saying yes to the thing you've got to focus on. But that's not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I'm actually as proud of the things we haven't done as the things I have done. Innovation is saying no to 1,000 things. 
+> People think focus means saying yes to the thing you've got to focus on. But that's not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I'm actually as proud of the things we haven't done as the things I have done. Innovation is saying no to 1,000 things.
 
 <cite>Steve Jobs</cite> --- Apple Worldwide Developers' Conference, 1997
+{: .small}
 
 ## Tables
 
@@ -112,6 +115,8 @@ Make any link standout more when applying the `.btn` class.
 [Warning Button](#){: .btn .btn--warning}
 [Danger Button](#){: .btn .btn--danger}
 [Info Button](#){: .btn .btn--info}
+[Inverse Button](#){: .btn .btn--inverse}
+[Light Outline Button](#){: .btn .btn--light-outline}
 
 ```markdown
 [Primary Button Text](#link){: .btn}
@@ -119,20 +124,20 @@ Make any link standout more when applying the `.btn` class.
 [Warning Button Text](#link){: .btn .btn--warning}
 [Danger Button Text](#link){: .btn .btn--danger}
 [Info Button Text](#link){: .btn .btn--info}
+[Inverse Button](#link){: .btn .btn--inverse}
+[Light Outline Button](#link){: .btn .btn--light-outline}
 ```
 
 [X-Large Button](#){: .btn .btn--x-large}
 [Large Button](#){: .btn .btn--large}
 [Default Button](#){: .btn}
 [Small Button](#){: .btn .btn--small}
-[X-Small Button](#){: .btn .btn--x-small}
 
 ```markdown
-[X-Large Button](#){: .btn .btn--x-large}
-[Large Button](#){: .btn .btn--large}
-[Default Button](#){: .btn}
-[Small Button](#){: .btn .btn--small}
-[X-Small Button](#){: .btn .btn--x-small}
+[X-Large Button](#link){: .btn .btn--x-large}
+[Large Button](#link){: .btn .btn--large}
+[Default Button](#link){: .btn}
+[Small Button](#link){: .btn .btn--small}
 ```
 
 ## Notices

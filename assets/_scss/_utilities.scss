@@ -84,10 +84,24 @@ body:hover .visually-hidden button {
    Type
    ========================================================================== */
 
-/* center align */
+.text-left {
+  text-align: left;
+}
 
-.center {
+.text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-nowrap {
+  white-space: nowrap;
 }
 
 
@@ -134,11 +148,19 @@ body:hover .visually-hidden button {
   }
 }
 
+/* image align center */
+
+.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* file page content container */
 
 .full {
   @include breakpoint($large){
-    margin-right: -1 * $right-sidebar-width;
+    margin-right: -1 * span(2.5 of 12) !important;
   }
 }
 
@@ -160,6 +182,10 @@ body:hover .visually-hidden button {
 // social icons
 
 .social-icons {
+  .fa {
+    color: #000;
+  }
+
   .fa-behance,
   .fa-behance-square {
     color: $behance-color;
@@ -268,9 +294,6 @@ body:hover .visually-hidden button {
    Navicons
    ========================================================================== */
 
-$navicon-width  : 32px;
-$navicon-height : 4px;
-
 .navicon {
   position: relative;
   width: $navicon-width;
@@ -329,7 +352,7 @@ $navicon-height : 4px;
     @include clearfix();
     position: -webkit-sticky;
     position: sticky;
-    top: 3em;
+    top: 2em;
 
     > * {
       display: block;
@@ -357,14 +380,22 @@ $navicon-height : 4px;
    Footnotes
    ========================================================================== */
 
+.footnote {
+  color: mix(#fff, $gray, 25%);
+  text-decoration: none;
+}
+
 .footnotes {
+  color: mix(#fff, $gray, 25%);
+
   ol, li, p {
     margin-bottom: 0;
-    font-size: 14px;
+    font-size: $type-size-6;
   }
 }
 
 a.reversefootnote {
+  color: $gray;
   text-decoration: none;
 
   &:hover {

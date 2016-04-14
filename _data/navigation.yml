@@ -1,19 +1,77 @@
-# Site navigation links
+# main links links
+main:
+  - title: "Quick-Start Guide"
+    url: /docs/quick-start-guide/
 
-- title: "Theme Setup"
-  url: /theme-setup/
+  - title: "Posts"
+    url: /year-archive/
 
-- title: "Posts"
-  url: /year-archive/
+  - title: "Categories"
+    url: /categories/
 
-- title: "Categories"
-  url: /categories/
+  - title: "Tags"
+    url: /tags/
 
-- title: "Tags"
-  url: /tags/
+  - title: "Pages"
+    url: /page-archive/
 
-- title: "Pages"
-  url: /page-archive/
+  - title: "Collections"
+    url: /collection-archive/
 
-- title: "Collections"
-  url: /collection-archive/
+
+# documentation links
+docs:
+  - title: Getting Started
+    children:
+      - title: "Quick-Start Guide"
+        path: quick-start-guide
+      - title: "Structure"
+        path: structure
+      - title: "Installation"
+        path: installation
+      - title: "Upgrading"
+        path: upgrading
+
+  - title: Customization
+    children:
+      - title: "Configuration"
+        path: configuration
+      - title: "Navigation"
+        path: navigation
+      - title: "UI Text"
+        path: ui-text
+      - title: "Authors"
+        path: authors
+      - title: "Layouts"
+        path: layouts
+
+  - title: Content
+    children:
+      - title: "Working with Posts"
+        path: posts
+      - title: "Working with Pages"
+        path: pages
+      - title: "Working with Collections"
+        path: collections
+      - title: "Helpers"
+        path: helpers
+      - title: "Utility Classes"
+        path: utility-classes
+
+  - title: Extras
+    children:
+      - title: "Stylesheets"
+        path: stylesheets
+      - title: "JavaScript"
+        path: javascript
+
+  - title: Meta
+    children:
+      - title: "History"
+        path: history
+      - title: "Contributing"
+        path: contributing
+      - title: "Old 2.2 Docs"
+        path: docs-2-2
+      - title: "License"
+        path: license

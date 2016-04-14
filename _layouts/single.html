@@ -8,8 +8,10 @@ layout: default
   {% include page__hero.html %}
 {% endif %}
 
-{% if page.url != "/" and site.breadcrumbs and site.categories.type == "jekyll-archives" %}
-  {% include breadcrumbs.html %}
+{% if page.url != "/" and site.breadcrumbs %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
 {% endif %}
 
 <div id="main" role="main">
@@ -25,7 +27,9 @@ layout: default
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
           <h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
-          {% if site.read_time and page.read_time %}<p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>{% endif %}
+          {% if page.read_time %}
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+          {% endif %}
         </header>
       {% endunless %}
 
@@ -40,13 +44,15 @@ layout: default
         {% endif %}
         {% include page__taxonomy.html %}
         {% if page.modified %}
-          <p class="page__date"><strong>{{ site.data.ui-text[site.locale].date_label }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
         {% elsif page.date %}
-          <p class="page__date"><strong>{{ site.data.ui-text[site.locale].date_label }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
         {% endif %}
       </footer>
 
-      {% if site.share and page.share %}{% include social-share.html %}{% endif %}
+      {% if page.share %}{% include social-share.html %}{% endif %}
+
+      {% include post_pagination.html %}
     </div>
 
     {% if site.comments.provider and page.comments %}

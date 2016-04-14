@@ -13,36 +13,27 @@
 @mixin notice($notice-color) {
   margin: 2em 0 !important;  // override
   padding: 1em;
+  font-family: $global-font-family;
+  font-size: $type-size-6 !important;
   text-indent: initial; // override
   background-color: mix(#fff, $notice-color, 90%);
   border-radius: $border-radius;
+  box-shadow: 0 1px 1px rgba($notice-color, 0.25);
 
   h4 {
     margin-top: 0 !important; // override
     margin-bottom: 0.75em;
-    line-height: 1 !important; // override
   }
 
   @at-root .page__content #{&} h4 {
     // using at-root to override .page-content h4 font size
     margin-bottom: 0;
-    font-size: 1rem;
-  }
-
-  @at-root .page__content #{&} a {
-    border-bottom-width: 2px;
-    box-shadow: none !important; // override
-
-    &:hover {
-      background-color: transparent !important; // override
-    }
+    font-size: 1em;
   }
 
   p {
-    margin-bottom: 0;
-
-    a {
-      border-bottom: 1px solid mix(#fff, $notice-color, 50%) !important; // override
+    &:last-child {
+      margin-bottom: 0 !important; // override
     }
   }
 
@@ -52,14 +43,34 @@
     padding-top: 0;
   }
 
+  a {
+    color: $notice-color;
+
+    &:hover {
+      color: mix(#000, $notice-color, 40%);
+    }
+  }
+
   code {
     background-color: mix(#fff, $notice-color, 95%)
+  }
+
+  ul {
+    &:last-child {
+      margin-bottom: 0; // override
+    }
   }
 }
 
 /* Default notice */
 
 .notice {
+  @include notice($light-gray);
+}
+
+/* Primary notice */
+
+.notice--primary {
   @include notice($primary-color);
 }
 

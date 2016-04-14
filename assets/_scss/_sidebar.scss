@@ -12,7 +12,12 @@
 
   @include breakpoint($large) {
     @include span(2 of 12);
-    @include suffix(0.25 of 12);
+    opacity: 0.75;
+    transition: opacity 0.2s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   @include breakpoint($x-large) {
@@ -24,18 +29,14 @@
     font-family: $sans-serif-narrow;
   }
 
-  h3 {
-    font-size: 20px;
-  }
-
-  h4 {
-    font-size: 18px;
+  h3, h4 {
+    font-size: $type-size-5;
   }
 
   p, li {
     font-family: $sans-serif;
-    font-size: 14px;
-    line-height: 1.2;
+    font-size: $type-size-6;
+    line-height: 1.5;
   }
 
   img {
@@ -44,29 +45,16 @@
 }
 
 .sidebar__right {
-  @include breakpoint($medium) {
-    position: absolute;
-    top: 0;
-    right: 1em;
-    width: $right-sidebar-width-narrow;
-    padding-left: 2em;
-
-    @include breakpoint($large) {
-      width: $right-sidebar-width;
-    }
-
-    @include breakpoint($x-large) {
-      width: $right-sidebar-width-wide;
-      padding-left: span(1 of 12);
-    }
-  }
+  margin-bottom: 1em;
 
   @include breakpoint($large) {
-    right: calc(50% - (0.5 * #{$large}) + 1em); // 50% - 1/2 of wrapper's max-width + wrapper padding
+    float: right;
+    width: $right-sidebar-width-narrow;
+    margin-left: span(0.5 of 12);
   }
 
   @include breakpoint($x-large) {
-    right: calc(50% - (0.5 * #{$x-large}) + 1em); // 50% - 1/2 of wrapper's max-width + wrapper padding
+    width: $right-sidebar-width;
   }
 }
 
@@ -82,13 +70,18 @@
 
   @include breakpoint($large) {
     display: block;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
   }
 
   img {
     max-width: 110px;
     border-radius: 50%;
+
+    @include breakpoint($large) {
+      padding: 5px;
+      border: 1px solid $border-color;
+    }
   }
 }
 
@@ -109,16 +102,15 @@
 
 .author__name {
   margin: 0;
-  font-size: 18px;
 
   @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 20px;
   }
 }
 .sidebar .author__name {
   font-family: $sans-serif;
+  font-size: $type-size-5;
 }
 
 .author__bio {
@@ -135,7 +127,7 @@
   display: table-cell;
   vertical-align: top;
   font-family: $sans-serif;
-  z-index: 9999;
+  z-index: 10;
   position: relative;
   cursor: pointer;
 
@@ -212,15 +204,19 @@
     }
   }
 
+  li {
+    white-space: nowrap;
+  }
+
   a {
     display: block;
     margin-bottom: 5px;
     padding-right: 5px;
     padding-top: 2px;
     padding-bottom: 2px;
-    font-size: 14px;
+    color: inherit;
+    font-size: $type-size-5;
     text-decoration: none;
-    white-space: nowrap;
 
     &:hover {
       text-decoration: underline;
