@@ -15,7 +15,7 @@ Settings that affect your entire site can be changed in [Jekyll's configuration 
 **Note:** for technical reasons, `_config.yml` is NOT reloaded automatically when used with `jekyll serve`. If you make any changes to this file, please restart the server process for them to be applied.
 {: .notice--warning}
 
-Take a moment to look over the configuration file included with the theme. Light comments have been added to provide examples and defaults values for most variables. Detailed explanations of each can be found below.
+Take a moment to look over the configuration file included with the theme. Comments have been added to provide examples and default values for most settings. Detailed explanations of each can be found below.
 
 ## Site Settings
 
@@ -23,23 +23,23 @@ Take a moment to look over the configuration file included with the theme. Light
 
 `site.locale` is used to declare the primary language for each web page within the site.
 
-*Example:* `locale: "en-US"` sets the `lang` attribute for the site to *United States* flavor of English, while `en-GB` would be for the `United Kingdom` style of English. Country codes are optional and the shorter `locale: "en"` is also acceptable. To find your language and country codes check this [reference table](https://msdn.microsoft.com/en-us/library/ee825488(v=cs.20).aspx). 
+*Example:* `locale: "en-US"` sets the `lang` attribute for the site to the *United States* flavor of English, while `en-GB` would be for the `United Kingdom` style of English. Country codes are optional and the shorter `locale: "en"` is also acceptable. To find your language and country codes check this [reference table](https://msdn.microsoft.com/en-us/library/ee825488(v=cs.20).aspx). 
 
-Properly setting the locale is important for associating localized text found in the **UI Text** data file. For more information on that see below.
+Properly setting the locale is important for associating localized text found in the [**UI Text**]({{ base_path }}/docs/ui-text/) data file. For more information on that see below.
 
 ### Site Title
 
-The name of your site. Is used throughout the theme in places like masthead and `<title>` tags.
+The name of your site. Is used throughout the theme in places like the site masthead and `<title>` tags.
 
 *Example:* `title: "My Awesome Site"`
 
-You also have the option of customizing the character used in SEO-friendly page titles.
+You also have the option of customizing the separation character used in SEO-friendly page titles.
 
 *Example:* `title_separator: "|"` would produce page titles like `Sample Page | My Awesome Site`.
 
 ### Site Name
 
-Used to assign a site author. Don't worry, you can assign different authors on specific posts, pages, or collections if you desire.
+Used to assign a site author. Don't worry, you can override the site author with different ones on specific posts, pages, or collection documents.
 
 *Example:* `name: "Michael Rose"`.
 
@@ -54,19 +54,19 @@ Fairly obvious. `site.description` describes the site. Used predominantly in met
 
 ### Site URL
 
-The base hostname and protocol for your site. If you're hosting with GitHub Pages this will be something like `url: "http://github.io.mmistakes"`, or for self-hosting `url: "https://mademistakes.com"`.
+The base hostname and protocol for your site. If you're hosting with GitHub Pages this will be something like `url: "http://github.io.mmistakes"` or `url: "https://mademistakes.com"` if you have a custom domain name.
 
-**Note:** It's important to remember that when testing locally you need to change this. Ideally you'd use [multiple config files](https://mademistakes.com/articles/using-jekyll-2016/#environments-and-configurations) with `bundle exec jekyll serve --config _config.yml,_config.dev.yml` to apply development override settings. Simply commenting out the line works as well `# url: "http://mmistakes.github.io"`. Just remember to uncomment it before pushing or else you'll have broken assets and links all over the place!
+**Note:** It's important to remember that when testing locally you need to change the `site.url`. Ideally you'd use [multiple config files](https://mademistakes.com/articles/using-jekyll-2016/#environments-and-configurations) with `bundle exec jekyll serve --config _config.yml,_config.dev.yml` to apply development overrides. Simply commenting out the line works as well `# url: "http://mmistakes.github.io"`. Just remember to uncomment it before pushing or else you'll have broken assets and links all over the place!
 {: .notice--warning}
 
-**ProTip:** GitHub serves pages over `http://` and `https://` so to take advantage of that go protocol-less like so `url: "//github.io.mmistakes"`.
+**ProTip:** GitHub serves pages over `http://` and `https://` so to take advantage of that go protocol-less like so `url: "//github.io.mmistakes"`. Mre info on serving your GitHub Pages hosted site over https can be [found here](https://konklone.com/post/github-pages-now-sorta-supports-https-so-use-it).
 {: .notice--info}
 
 ### Site Base URL
 
 This little option causes all kinds of confusion in the Jekyll community. If you're not hosting your site as a GitHub Pages Project or in a subfolder (eg: `/blog`), then don't mess with it.
 
-In the case of the Minimal Mistakes demo site it's hosting on GitHub Pages at <https://mmistakes.github.io/minimal-mistakes>. To correctly set this base path I'd use `url: "https://mmistakes.github.io"` and `baseurl: "/minimal-mistakes"`.
+In the case of the Minimal Mistakes demo site it's hosted on GitHub at <https://mmistakes.github.io/minimal-mistakes>. To correctly set this base path I'd use `url: "https://mmistakes.github.io"` and `baseurl: "/minimal-mistakes"`.
 
 For more information on how to properly use `site.url` and `site.baseurl` as intended by the Jekyll maintainers, check [Parker Moore's post on the subject](https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/).
 
@@ -75,7 +75,7 @@ For more information on how to properly use `site.url` and `site.baseurl` as int
 
 ### Site Default Teaser Image
 
-To assign a fallback teaser image used in modules like the "**Related Posts**" module, place a graphic in the `/images/` directory and add the filename to `_config.yml` like so:
+To assign a fallback teaser image used in the "**Related Posts**" module, place a graphic in the `/images/` directory and add the filename to `_config.yml` like so:
 
 ```yaml
 teaser: "500x300.png"
@@ -90,12 +90,12 @@ header:
 
 <figure>
   <img src="{{ base_path }}/images/mm-teaser-images-example.jpg" alt="teaser image example">
-  <figcaption>Teasers images as shown in the grid archive view for related posts.</figcaption>
+  <figcaption>Example of teaser images found in the related posts module.</figcaption>
 </figure>
 
 ### Breadcrumb Navigation (Beta)
 
-Enable breadcrumb links to help visitors better navigate deeply structure sites. Because of the fragile method of implementing them they don't always produce accurate links reliably. For best results:
+Enable breadcrumb links to help visitors better navigate deep sites. Because of the fragile method of implementing them they don't always produce accurate links reliably. For best results:
 
 1. Use a category based permalink structure e.g. `permalink: /:categories/:title/`
 2. Manually create pages for each category or use a plugin like [jekyll-archives][jekyll-archives] to auto-generate them. If these pages don't exist breadcrumb links to them will be broken.
@@ -106,15 +106,15 @@ Enable breadcrumb links to help visitors better navigate deeply structure sites.
 breadcrumbs: true  # disabled by default
 ```
 
-Breadcrumb start link text and separator character can both be changed in the UI Text data file.
+Breadcrumb start link text and separator character can both be changed in the [UI Text data file]({{ base_path }}/docs/ui-text/).
 
 ### Reading Time
 
-Enable estimated reading time snippets with `read_time: true` in YAML Front Matter. 200 has been set as the default words per minute, which can be changed by adjusting `words_per_minutes: 200` in `_config.yml`.
+Enable estimated reading time snippets with `read_time: true` in YAML Front Matter. `200` has been set as the default words per minute value --- which can be changed by adjusting `words_per_minutes: ` in `_config.yml`.
 
 ![reading time example]({{ base_path }}/images/mm-read-time-example.jpg)
 
-Instead of adding YAML Front Matter to each document, apply as a default in `_config.yml`. To enable the **reading time** snippet for all posts:
+Instead of adding `read_time: true` to each post, apply as a default in `_config.yml` like so:
 
 ```yaml
 defaults:
@@ -126,18 +126,18 @@ defaults:
       read_time: true
 ```
 
-If you add `read_time: false` to a post's YAML Front Matter it will override the default and "reading time" for just that post.
+To disable reading time for a post, add `read_time: false` its YAML Front Matter to override what was set in `_config.yml`.
 
 ### Comments
 
 Commenting for [**Disqus**](https://disqus.com/), [**Facebook**](https://developers.facebook.com/docs/plugins/comments), and **Google+** are built into the theme. First set the comment provider you'd like to use: 
 
-|               | Comment Provider  |
-| ------------- | ----------------  |
-| `disqus`      | Disqus            |
-| `facebook`    | Facebook Comments |
-| `google-plus` | Google+ Comments  |
-| `custom`      | Other             |
+| Name            | Comment Provider  |
+| ----            | ----------------  |
+| **disqus**      | Disqus            |
+| **facebook**    | Facebook Comments |
+| **google-plus** | Google+ Comments  |
+| **custom**      | Other             |
 
 Then add `comments: true` to each document you want comments visible on.
 
@@ -157,7 +157,7 @@ If you add `comments: false` to a post's YAML Front Matter it will override the 
 
 ##### Disqus
 
-To use Disqus you'll need to create an account and get a [shortname](https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-). Once you have one update `_config.yml` to:
+To use Disqus you'll need to create an account and [shortname](https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-). Once you have both update `_config.yml` to:
 
 ```yaml
 comments:
@@ -185,7 +185,7 @@ To use another provider not included with the theme set `provider: "custom"` the
 
 ### SEO, Social Sharing, and Analytics Settings
 
-All optional, but a good idea to take the time setting up to activate various tools for optimizing your site for search engines and link sharing.
+All optional, but a good idea to take the time setting up to improve SEO and links shared from the site.
 
 #### Google Search Console
 
@@ -234,23 +234,23 @@ To improve the appearance of links shared from your site to social networks like
 
 ##### Site Twitter Username
 
-Twitter username for the site. For documents that have custom author Twitter accounts assigned in YAML Front Matter or a data file, those will be attributed as a **creator** in the Twitter Card. 
+Twitter username for the site. For pages that have custom author Twitter accounts assigned in their YAML Front Matter or data file, they will be attributed as a **creator** in the Twitter Card. 
 
-For example if my site's Twitter account is @mmistakes-theme I would add the following to `_config.yml`
+For example if my site's Twitter account is `@mmistakes-theme` I would add the following to `_config.yml`
 
 ```yaml
 twitter:
   username: "mmistakes-theme"
 ```
 
-And if I assign `@mmistakes` as an author account it will appear in the Twitter Card along with `@mmistakes-theme` attributed as a creator or document being shared.
+And if I assign `@mmistakes` as an author account it will appear in the Twitter Card along with `@mmistakes-theme`, attributed as a creator of the page being shared.
 
 **Note**: You need to [apply for Twitter Cards](https://dev.twitter.com/docs/cards) and validate they're working on your site before they will begin showing up.
 {: .notice--warning}
 
 ##### Facebook Open Graph
 
-If you have Facebook ID or publisher page add them:
+If you have a Facebook ID or publisher page add them:
 
 ```yaml
 facebook:
@@ -262,7 +262,7 @@ While not part a part of Open Graph, you can also add your Facebook username for
 
 ```yaml
 facebook:
-  username: "michaelrose"  # ref. page https://www.facebook.com/michaelrose
+  username: "michaelrose"  # https://www.facebook.com/michaelrose
 ```
 
 **ProTip:** To debug Open Graph data use [this tool](https://developers.facebook.com/tools/debug/og/object?q=https%3A%2F%2Fmademistakes.com) to test your pages. If content changes aren't reflected you will probably have to hit the **Fetch new scrape information** button to refresh.
@@ -270,7 +270,7 @@ facebook:
 
 ##### Open Graph Default Image
 
-For documents who don't have a `header.image` assigned in their YAML Front Matter, `site.og_image` will be used as a fallback. Your logo, icon, or avatar are something else that is meaningful. Just make sure it is place in the `/images/` folder, a minimum size of 120px by 120px, and less than 1MB in file size. *The image will be cropped to a square on all platforms.*
+For pages that don't have a `header.image` assigned in their YAML Front Matter, `site.og_image` will be used as a fallback. Use you logo, icon, avatar or something else that is meaningful. Just make sure it is place in the `/images/` folder, a minimum size of 120px by 120px, and less than 1MB in file size.
 
 ```yaml
 og_image: "site-logo.png"
@@ -299,8 +299,8 @@ Use markup on your official website to add your [social profile information](htt
 
 ```yaml
 social:
-  type :  # Person or Organization (defaults to Person)
-  name :  # If the user or organization name differs from the site's name
+  type:  # Person or Organization (defaults to Person)
+  name:  # If the user or organization name differs from the site's name
   links:
     - "https://twitter.com/yourTwitter"
     - "https://facebook.com/yourFacebook"
@@ -313,11 +313,11 @@ social:
 
 Analytics is disabled by default. To enable globally select one of the following:
 
-|                    | Analytics Provider                                              |
-| ------------------ | ------------------                                              |
-| `google`           | [Google Standard Analytics](https://www.google.com/analytics/)  |
-| `google-universal` | [Google Universal Analytics](https://www.google.com/analytics/) |
-| `custom`           | Other analytics providers                                       |
+| Name                 | Analytics Provider                                              |
+| ----                 | ------------------                                              |
+| **google**           | [Google Standard Analytics](https://www.google.com/analytics/)  |
+| **google-universal** | [Google Universal Analytics](https://www.google.com/analytics/) |
+| **custom**           | Other analytics providers                                       |
 
 For Google Analytics add your Tracking Code:
 
@@ -335,19 +335,19 @@ Used as the defaults for defining what appears in the author sidebar.
 
 ![author sidebar example]({{ base_path }}/images/mm-author-sidebar-example.jpg)
 
-**Note:** For sites with multiple authors these values can be overridden post by post with custom YAML Front Matter and a data file. For more information on how that see below.
+**Note:** For sites with multiple authors these values can be overridden post by post with custom YAML Front Matter and a data file. For more information on how that works see below.
 {: .notice--info}
 
 ```yaml
 author:
   name   : "Your Name"
   avatar : "bio-photo.jpg"  # placed in /images/
-  bio    : "My awesome biography constrained to a sentence or goes here."
+  bio    : "My awesome biography constrained to a sentence or two goes here."
   email  : # optional
   uri    : "http://your-site.com"
 ```
 
-Social media links are all optional, include the ones you want visible. In most cases you just need to add the username. If you're unsure double check `_includes/author-profile.html`.
+Social media links are all optional, include the ones you want visible. In most cases you just need to add the username. If you're unsure double check `_includes/author-profile.html` to see how the URL is constructed.
 
 ## Reading Files
 
@@ -355,13 +355,13 @@ Nothing out of the ordinary here. `include` and `exclude` may be the only things
 
 ## Conversion and Markdown Processing
 
-Again nothing out of the ordinary here as the theme adheres to the defaults used by GitHub Pages. [**Kramdown**](http://kramdown.gettalong.org/) for Markdown conversion, [**Rouge**](http://rouge.jneen.net/) syntax highlighting, and incremental building disabled.
+Again nothing out of the ordinary here as the theme adheres to the defaults used by GitHub Pages. [**Kramdown**](http://kramdown.gettalong.org/) for Markdown conversion, [**Rouge**](http://rouge.jneen.net/) syntax highlighting, and incremental building disabled. Change them if you need to.
 
 ## Front Matter Defaults
 
 To save yourself time setting [Front Matter Defaults](https://jekyllrb.com/docs/configuration/#front-matter-defaults) for posts, pages, and collections is the way to go. Sure you can assign layouts and toggle settings like **reading time**, **comments**, and **social sharing** in each file, but that's not ideal.
 
-Using the `default` key in `_config.yml` you could set the layout and enable author profiles, reading time, comments, social sharing, and related posts for all posts.
+Using the `default` key in `_config.yml` you could set the layout and enable author profiles, reading time, comments, social sharing, and related posts for all posts --- in one shot.
 
 ```yaml
 defaults:
@@ -406,7 +406,7 @@ And of course any default value can be overridden by settings in a post, page, o
 
 ## Outputting
 
-The default permalink style used by Minimal Mistakes is `permalink: /:categories/:title/`. If you have a post named `2016-01-01-my-post.md` with `categories: foo` in the YAML Front Matter, Jekyll will generate `/foo/my-post/index.html`.
+The default permalink style used by the theme is `permalink: /:categories/:title/`. If you have a post named `2016-01-01-my-post.md` with `categories: foo` in the YAML Front Matter, Jekyll will generate `_site/foo/my-post/index.html`.
 
 **Note:** If you plan on enabling breadcrumb links --- including category names in permalinks is a big part of how those are created.
 {: .notice--warning}
@@ -419,11 +419,11 @@ If [using pagination](https://github.com/jekyll/jekyll-paginate) on the homepage
 paginate: 5
 ```
 
-You'll also need to include some modified Liquid to properly use the paginator, which you can find in the **Layouts** section under [Home Page]({{ base_path }}/docs/layouts/#home-page).
+You'll also need to include some Liquid and HTML to properly use the paginator, which you can find in the **Layouts** section under [Home Page]({{ base_path }}/docs/layouts/#home-page).
 
 ### Timezone
 
-Set the time zone for site generation. This sets the TZ environment variable, which Ruby uses to handle time and date creation and manipulation. Any entry from the [IANA Time Zone Database](http://en.wikipedia.org/wiki/List_of_tz_database_time_zones) is valid. The default is the local time zone, as set by your operating system.
+This sets the timezone environment variable, which Ruby uses to handle time and date creation and manipulation. Any entry from the [IANA Time Zone Database](http://en.wikipedia.org/wiki/List_of_tz_database_time_zones) is valid. The default is the local time zone, as set by your operating system.
 
 ```yaml
 timezone: America/New_York
@@ -447,11 +447,11 @@ When hosting with GitHub Pages a small [set of gems](https://pages.github.com/ve
 [jekyll-feed]: https://github.com/jekyll/jekyll-feed
 [jemoji]: https://github.com/jekyll/jemoji
 
-If you're hosting elsewhere then you don't really have to worry about that and are free to include whatever [Jekyll plugins](https://jekyllrb.com/docs/plugins/) you desire.
+If you're hosting elsewhere then you don't really have to worry about what is whitelisted as you are free to include whatever [Jekyll plugins](https://jekyllrb.com/docs/plugins/) you desire.
 
 ## Archive Settings
 
-Minimal Mistakes ships with support for taxonomy (category and tag) pages. GitHub Pages hosted sites get strip down Liquid only approach while those hosting elsewhere can use plugins like [**jekyll-archives**][jekyll-archives] to generate these pages automatically.
+The theme ships with support for taxonomy (category and tag) pages. GitHub Pages hosted sites need to use a *Liquid only* approach while those hosted elsewhere can use plugins like [**jekyll-archives**][jekyll-archives] to generate these pages automatically.
 
 [jekyll-archives]: https://github.com/jekyll/jekyll-archives
 
@@ -468,7 +468,7 @@ tags:
 
 Which would create category and tag links in the breadcrumbs and page meta like: `/categories/#foo` and `/tags/#foo`.
 
-**Note:** for these links to resolve category and tag index pages need to exist at [`/categories/index.html`]({{ site.gh_repo }}/blob/gh-pages/_pages/category-archive.html) and [`/tags/index.html`]({{ site.gh_repo }}/blob/gh-pages/_pages/tag-archive.html). Examples with the necessary Liquid code can be taken from the demo site.
+**Note:** for these links to resolve properly, category and tag index pages need to exist at [`/categories/index.html`]({{ site.gh_repo }}/blob/gh-pages/_pages/category-archive.html) and [`/tags/index.html`]({{ site.gh_repo }}/blob/gh-pages/_pages/tag-archive.html). The necessary Liquid code to build these pages can be taken from the demo site.
 {: .notice--warning}
 
 If you have the luxury of using Jekyll Plugins then [**jekyll-archives**][jekyll-archives] will make your life much easier as category and tag pages are created for you.
@@ -501,9 +501,9 @@ jekyll-archives:
 
 If you care at all about performance (and really who doesn't) compressing the HTML files generated by Jekyll is a good thing to do.
 
-Now if you're hosting with GitHub Pages there aren't many options afforded to you unless commit compiled files to your repo instead. Thankfully there is some Liquid wizardry you can use to strip whitespace and comments.
+If you're hosting with GitHub Pages there aren't many options afforded to you for optimizing the HTML Jekyll generates. Thankfully there is some Liquid wizardry you can use to strip whitespace and comments to reduce file size.
 
-There's a variety of configurations and cavets to using the `compress` layout, so be sure to read through the [documentation](http://jch.penibelst.de/) if you decide to make changes to anything, but here's the settings I've found work well:
+There's a variety of configurations and cavets to using the `compress` layout, so be sure to read through the [documentation](http://jch.penibelst.de/) if you decide to make change the defaults set in the theme's `_config.yml`.
 
 ```yaml
 compress_html:

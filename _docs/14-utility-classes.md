@@ -11,9 +11,9 @@ modified: 2016-04-13T15:54:02-04:00
 {% include base_path %}
 {% include toc icon="gears" title="Utility Classes" %}
 
-Using the Kramdown Markdown rendered with Jekyll allows you to add [block](http://kramdown.gettalong.org/quickref.html#block-attributes) and [inline attributes](http://kramdown.gettalong.org/quickref.html#inline-attributes). This is nice if you want to add styling to text and image, and still write in Markdown. As of v3 Kramdown is also the default for `jekyll new` sites and those hosted on GitHub Pages.
+Using the Kramdown Markdown renderer with Jekyll allows you to add [block](http://kramdown.gettalong.org/quickref.html#block-attributes) and [inline attributes](http://kramdown.gettalong.org/quickref.html#inline-attributes). This is nice if you want to add custom styling to text and image, and still write in Markdown.
 
-**Not Using Kramdown?** That's OK. The following classes can still available when used with standard HTML.
+**Jekyll 3:** Kramdown is the default for `jekyll new` sites and those hosted on GitHub Pages. Not using Kramdonw? That's OK. The following classes are still available when used with standard HTML.
 {: .notice--warning}
 
 ## Text Alignment

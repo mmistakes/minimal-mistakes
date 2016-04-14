@@ -12,9 +12,9 @@ modified: 2016-04-13T15:54:02-04:00
 
 Sites that may have content authored from various individuals can be accommodated by using [data files](https://jekyllrb.com/docs/datafiles/).
 
-To attribute an author to a post or page that is different from the site author specified in `_config.yml`:
+To assign an author to a post or page that is different from the site author specified in `_config.yml`:
 
-**Step 1.** Create `_data/authors.yml` and add authors using the following format. Anything variables found under `author` in `_config.yml` can be used (e.g. `name`, `avatar`, `uri`, social media profiles, etc.).
+**Step 1.** Create `_data/authors.yml` and add authors using the following format. Any variables found under `author:` in `_config.yml` can be used (e.g. `name`, `avatar`, `uri`, social media profiles, etc.).
 
 ```yaml
 # /_data/authors.yml

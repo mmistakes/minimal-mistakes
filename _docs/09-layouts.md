@@ -122,7 +122,7 @@ To produce something like this:
   <figcaption>Grid view example.</figcaption>
 </figure>
 
-**Note:** More information on using this `_include` can be found under [**Helpers and Shortcodes**]({{ base_path }}/docs/helpers-and-shortcodes/).
+**Note:** More information on using this `_include` can be found under [**Helpers**]({{ base_path }}/docs/helpers/).
 {: .notice--info}
 
 ### Taxonomy Archive
@@ -186,7 +186,7 @@ Feature blocks can be assigned and aligned to the `left`, `right`, or `center` w
 
 To add some visual punch to a post or page, a large full-width header image can be included.
 
-**Note:** Be sure to resize your header images. `~1280px` is a good medium if you aren't [responsively serving up images](http://alistapart.com/article/responsive-images-in-practice). Through the magic of CSS they will scale up or down to fill the container. If you go with something too small it will look like garbage when upscaled, and something too large will hurt performance.
+**Note:** Be sure to resize your header images. `~1280px` is a good width if you aren't [responsively serving up images](http://alistapart.com/article/responsive-images-in-practice). Through the magic of CSS they will scale up or down to fill the container. If you go with something too small it will look like garbage when upscaled, and something too large will hurt performance.
 {: .notice--warning}
 
 ![single layout header image example]({{ base_path }}/images/mm-single-header-example.jpg)
@@ -238,7 +238,7 @@ header:
   cta_url: "https://unsplash.com"
 ```
 
-You should get an header image overlaid with text and a call to action button.
+You'd get a header image overlaid with text and a call to action button like this:
 
 ![single layout header overlay example]({{ base_path }}/images/mm-single-header-overlay-example.jpg)
 
@@ -256,7 +256,7 @@ header:
 
 ## Sidebars
 
-The space to the left of a page's main content is blank by default, but has the option to show an author profile (name, short biography, social media links), custom content, or both.
+The space to the left of a page's main content is blank by default, but has the ability to show an author profile (name, short biography, social media links), custom content, or both.
 
 ### Author Profile
 

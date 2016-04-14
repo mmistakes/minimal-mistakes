@@ -50,4 +50,4 @@ To get started:
 **Note:** If you upgraded from a previous version of the theme be sure you copied over [`package.json`]({{ site.gh_repo }}/master/package.json) prior to running `npm install`.
 {: .notice--warning}
 
-If all goes well running `npm build:js` should compress and concatenate `_main.js` and all plugin scripts into `main.min.js`.
+If all goes well, running `npm build:js` will compress/concatenate `_main.js` and all plugin scripts into `main.min.js`.
