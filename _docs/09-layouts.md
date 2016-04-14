@@ -133,7 +133,7 @@ If you have the luxury of using Jekyll plugins the creation of category and tag 
 
 ### Home Page
 
-Minimal Mistakes ships with an [`index.html`]({{ site.gh_repo }}/blob/master/index.html) in the root of the project for displaying recent posts. 
+Minimal Mistakes ships with an [`index.html`]({{ site.gh_repo }}/master/index.html) in the root of the project for displaying recent posts. 
 
 **Includes:**
 
@@ -177,7 +177,7 @@ For full-width landing pages that need a little something extra add `layout: spl
 
 ![splash page layout example]({{ base_path }}/images/mm-layout-splash.png)
 
-Feature blocks can be assigned and aligned to the `left`, `right`, or `center` with a sprinkling of YAML. For full details on how to use the `feature_row` helper check the [**Content**]({{ base_path }}/docs/helpers-and-shortcodes/) section or review a [sample splash page]({{ site.gh_repo }}/gh-pages/_pages/splash-page.md).
+Feature blocks can be assigned and aligned to the `left`, `right`, or `center` with a sprinkling of YAML. For full details on how to use the `feature_row` helper check the [**Content**]({{ base_path }}/docs/helpers/) section or review a [sample splash page]({{ site.gh_repo }}/gh-pages/_pages/splash-page.md).
 
 
 ---
