@@ -3,9 +3,9 @@ title: "Stylesheets"
 permalink: /docs/stylesheets/
 excerpt: "Instructions for customizing and building the theme's stylesheets."
 sidebar:
-  title: "v3.0.1"
+  title: "v3.0.2"
   nav: docs
-modified: 2016-04-13T15:54:02-04:00
+modified: 2016-04-14
 ---
 
 {% include base_path %}
@@ -75,6 +75,28 @@ Sans-serif fonts have been used for most of the type, with serifs reserved for c
 
 **ProTip:** To use webfonts from services like [Adobe TypeKit](https://typekit.com/) or [Google Fonts](https://www.google.com/fonts) simply update the font stacks and then add their scripts to `_includes/head/custom.html`.
 {: .notice--info}
+
+#### Typography from Older Versions
+
+Not a fan of the refreshed typography of the theme and want to revert back an older version? Easy enough.
+
+**1.** Add this Google Fonts script to `_includes/head/custom.html`:
+
+```html
+<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic" rel="stylesheet" type="text/css">
+```
+
+**2.** Update the following variables in `assets/_scss/_variables.scss`:
+
+```scss
+$serif              : "PT Serif", Georgia, Times, serif;
+$sans-serif-narrow  : "PT Sans Narrow", $sans-serif;
+
+$global-font-family : $serif;
+$header-font-family : $sans-serif-narrow;
+```
+
+**3.** Rebuild `main.css` by running `npm run build:css`. See below for more info on the build process.
 
 ### Type Scale
 

@@ -3,7 +3,7 @@ title: "Working with Posts"
 permalink: /docs/posts/
 excerpt: "Suggestions and Front Matter defaults for working with posts."
 sidebar:
-  title: "v3.0.1"
+  title: "v3.0.2"
   nav: docs
 modified: 2016-04-13T15:54:02-04:00
 ---
