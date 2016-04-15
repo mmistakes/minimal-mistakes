@@ -5,7 +5,7 @@ excerpt: "Settings for configuring and customizing the theme."
 sidebar:
   title: "v3.0.1"
   nav: docs
-modified: 2016-04-13T15:54:02-04:00
+modified: 2016-04-14
 ---
 
 {% include base_path %}
@@ -402,7 +402,7 @@ defaults:
       layout: single
 ```
 
-And of course any default value can be overridden by settings in a post, page, or collection file. All you need to do is specify the settings in the YAML Front Matter. For more examples be sure to check out the demo site's [`_config.yml`]({{ site.gh_repo }}/blob/gh-pages/_config.yml).
+And of course any default value can be overridden by settings in a post, page, or collection file. All you need to do is specify the settings in the YAML Front Matter. For more examples be sure to check out the demo site's [`_config.yml`]({{ site.gh_repo }}/gh-pages/_config.yml).
 
 ## Outputting
 
@@ -468,7 +468,7 @@ tags:
 
 Which would create category and tag links in the breadcrumbs and page meta like: `/categories/#foo` and `/tags/#foo`.
 
-**Note:** for these links to resolve properly, category and tag index pages need to exist at [`/categories/index.html`]({{ site.gh_repo }}/blob/gh-pages/_pages/category-archive.html) and [`/tags/index.html`]({{ site.gh_repo }}/blob/gh-pages/_pages/tag-archive.html). The necessary Liquid code to build these pages can be taken from the demo site.
+**Note:** for these links to resolve properly, category and tag index pages need to exist at [`/categories/index.html`]({{ site.gh_repo }}/gh-pages/_pages/category-archive.html) and [`/tags/index.html`]({{ site.gh_repo }}/gh-pages/_pages/tag-archive.html). The necessary Liquid code to build these pages can be taken from the demo site.
 {: .notice--warning}
 
 If you have the luxury of using Jekyll Plugins then [**jekyll-archives**][jekyll-archives] will make your life much easier as category and tag pages are created for you.
