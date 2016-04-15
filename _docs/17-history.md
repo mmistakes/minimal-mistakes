@@ -26,6 +26,7 @@ modified: 2016-04-14
 - Improved Liquid used for Twitter Cards and Open Graph data in `<head>`.
 - Improved `gallery` include helper and added `feature_row` for use with splash page layout.
 - Added Keybase.io, author web URI, and Bitbucket optional links to sidebar.
+- Add `feed.xml` link to footer.
 - Added a [UI text data file](https://mmistakes.github.io/minimal-mistakes/docs/ui-text/) to easily change all text found in the theme.
 - Added LinkedIn to optional social share buttons.
 - Added Facebook, Google+, and custom commenting options in addition to Disqus.
