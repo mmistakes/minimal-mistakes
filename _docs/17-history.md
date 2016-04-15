@@ -5,8 +5,18 @@ excerpt: "Changelog of enhancements and bug fixes made to the theme."
 sidebar:
   title: "v3.0.3"
   nav: docs
-modified: 2016-04-14
+modified: 2016-04-15T09:40:39-04:00
 ---
+
+## [3.1.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.0)
+
+### Enhancements
+
+- Updated [Font Awesome](https://fortawesome.github.io/Font-Awesome/whats-new/) to version 4.6.1
+- Added optional GitHub and Bitbucket links to footer if set on `site.author` in `_config.yml`.
+
+### Bug Fixes
+- Fixed Bitbucket URL typo in author sidebar.
 
 ## [3.0.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.0.3)
 
