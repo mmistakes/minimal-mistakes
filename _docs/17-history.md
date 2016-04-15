@@ -3,12 +3,12 @@ title: "History"
 permalink: /docs/history/
 excerpt: "Changelog of enhancements and bug fixes made to the theme."
 sidebar:
-  title: "v3.0.2"
+  title: "v3.0.3"
   nav: docs
 modified: 2016-04-14
 ---
 
-## [3.0.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.0.2)
+## [3.0.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.0.3)
 
 ### Enhancements
 

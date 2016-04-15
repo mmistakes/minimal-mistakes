@@ -3,7 +3,7 @@ title: "Layouts"
 permalink: /docs/layouts/
 excerpt: "Descriptions and samples of all layouts included with the theme and how to best use them."
 sidebar:
-  title: "v3.0.2"
+  title: "v3.0.3"
   nav: docs
 single_layout_gallery:
   - image_path: mm-layout-single-header.png

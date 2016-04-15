@@ -3,7 +3,7 @@ title: "Structure"
 permalink: /docs/structure/
 excerpt: "How the theme is organized and what all of the files are for."
 sidebar:
-  title: "v3.0.2"
+  title: "v3.0.3"
   nav: docs
 modified: 2016-04-13T15:54:02-04:00
 ---
