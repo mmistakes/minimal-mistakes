@@ -3,7 +3,6 @@ title: "Stylesheets"
 permalink: /docs/stylesheets/
 excerpt: "Instructions for customizing and building the theme's stylesheets."
 sidebar:
-  title: "v3.0.3"
   nav: docs
 modified: 2016-04-14
 ---

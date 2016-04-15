@@ -3,7 +3,6 @@ title: "Quick-Start Guide"
 permalink: /docs/quick-start-guide/
 excerpt: "How to quickly install and setup Minimal Mistakes for use with GitHub Pages."
 sidebar:
-  title: "v3.0.3"
   nav: docs
 modified: 2016-04-13T15:54:02-04:00
 ---

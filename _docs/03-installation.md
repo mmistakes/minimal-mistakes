@@ -3,7 +3,6 @@ title: "Installation"
 permalink: /docs/installation/
 excerpt: "Instructions for installing the theme for new and existing Jekyll based sites."
 sidebar:
-  title: "v3.0.3"
   nav: docs
 modified: 2016-04-13T15:54:02-04:00
 ---

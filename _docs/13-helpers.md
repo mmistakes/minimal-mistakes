@@ -3,7 +3,6 @@ title: "Helpers"
 permalink: /docs/helpers/
 excerpt: "Jekyll `_includes` and other helpers to use as shortcuts for creating archives, galleries, table of contents, and more."
 sidebar:
-  title: "v3.0.3"
   nav: docs
 gallery:
   - url: unsplash-gallery-image-1.jpg
