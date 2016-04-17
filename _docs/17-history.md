@@ -4,8 +4,14 @@ permalink: /docs/history/
 excerpt: "Changelog of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2016-04-15T09:40:39-04:00
+modified: 2016-04-16
 ---
+
+## [3.1.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.1)
+
+### Bug Fix
+
+- Fixed reading time bug when `words_per_minute` wasn't set in `_config.yml` [#271](https://github.com/mmistakes/minimal-mistakes/issues/271)
 
 ## [3.1.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.0)
 
