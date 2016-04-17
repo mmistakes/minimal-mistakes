@@ -58,7 +58,7 @@ The base hostname and protocol for your site. If you're hosting with GitHub Page
 **Note:** It's important to remember that when testing locally you need to change the `site.url`. Ideally you'd use [multiple config files](https://mademistakes.com/articles/using-jekyll-2016/#environments-and-configurations) with `bundle exec jekyll serve --config _config.yml,_config.dev.yml` to apply development overrides. Simply commenting out the line works as well `# url: "http://mmistakes.github.io"`. Just remember to uncomment it before pushing or else you'll have broken assets and links all over the place!
 {: .notice--warning}
 
-**ProTip:** GitHub serves pages over `http://` and `https://` so to take advantage of that go protocol-less like so `url: "//github.io.mmistakes"`. Mre info on serving your GitHub Pages hosted site over https can be [found here](https://konklone.com/post/github-pages-now-sorta-supports-https-so-use-it).
+**ProTip:** GitHub serves pages over `http://` and `https://` so to take advantage of that go protocol-less like so `url: "//github.io.mmistakes"`. More info on serving your GitHub Pages hosted site over https can be [found here](https://konklone.com/post/github-pages-now-sorta-supports-https-so-use-it).
 {: .notice--info}
 
 ### Site Base URL
