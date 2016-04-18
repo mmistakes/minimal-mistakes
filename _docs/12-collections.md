@@ -2,8 +2,6 @@
 title: "Working with Collections"
 permalink: /docs/collections/
 excerpt: "Suggestions and Front Matter defaults for working with collections."
-sidebar:
-  nav: docs
 modified: 2016-04-13T15:54:02-04:00
 ---
 

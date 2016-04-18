@@ -2,8 +2,6 @@
 title: "Working with Posts"
 permalink: /docs/posts/
 excerpt: "Suggestions and Front Matter defaults for working with posts."
-sidebar:
-  nav: docs
 modified: 2016-04-13T15:54:02-04:00
 ---
 

@@ -2,8 +2,6 @@
 title: "Helpers"
 permalink: /docs/helpers/
 excerpt: "Jekyll `_includes` and other helpers to use as shortcuts for creating archives, galleries, table of contents, and more."
-sidebar:
-  nav: docs
 gallery:
   - url: unsplash-gallery-image-1.jpg
     image_path: unsplash-gallery-image-1-th.jpg
@@ -29,7 +27,7 @@ feature_row:
   - image_path: unsplash-gallery-image-3-th.jpg
     title: "Placeholder 3"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
-modified: 2016-04-13T15:54:02-04:00
+modified: 2016-04-18T16:05:02-04:00
 ---
 
 {% include base_path %}

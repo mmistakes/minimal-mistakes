@@ -2,8 +2,6 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-sidebar:
-  nav: docs
 modified: 2016-04-14
 ---
 

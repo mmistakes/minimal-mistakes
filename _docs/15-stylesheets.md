@@ -2,8 +2,6 @@
 title: "Stylesheets"
 permalink: /docs/stylesheets/
 excerpt: "Instructions for customizing and building the theme's stylesheets."
-sidebar:
-  nav: docs
 modified: 2016-04-14
 ---
 

@@ -2,8 +2,6 @@
 title: "Navigation"
 permalink: /docs/navigation/
 excerpt: "Instructions on how to customize the main navigation and enabling breadcrumb links."
-sidebar:
-  nav: docs
 modified: 2016-04-13T15:54:02-04:00
 ---
 
