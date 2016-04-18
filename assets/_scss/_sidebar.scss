@@ -127,7 +127,7 @@
 .author__urls-wrapper {
   position: relative;
   display: table-cell;
-  vertical-align: top;
+  vertical-align: middle;
   font-family: $sans-serif;
   z-index: 10;
   position: relative;
@@ -142,7 +142,10 @@
   @include breakpoint($large) {
     display: block;
   }
-  .btn {
+
+  button {
+    margin-bottom: 0;
+
     @include breakpoint($large) {
       display: none;
     }
