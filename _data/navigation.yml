@@ -1,3 +1,24 @@
+# example navigation
+foo:
+  - title: "Parent Link 1"
+    url: /parent-1-page-url/
+    children:
+      - title: "Child Link 1"
+        url: /child-1-page-url/
+      - title: "Child Link 2"
+        url: /child-2-page-url/
+
+  - title: "Parent Link 2"
+    url: /parent-2-page-url/
+    children:
+      - title: "Child Link 1"
+        url: /child-1-page-url/
+      - title: "Child Link 2"
+        url: /child-2-page-url/
+      - title: "Child Link 3"
+        url: /child-3-page-url/
+
+
 # main links links
 main:
   - title: "Quick-Start Guide"
@@ -18,54 +39,54 @@ docs:
   - title: Getting Started
     children:
       - title: "Quick-Start Guide"
-        path: quick-start-guide
+        url: /docs/quick-start-guide/
       - title: "Structure"
-        path: structure
+        url: /docs/structure/
       - title: "Installation"
-        path: installation
+        url: /docs/installation/
       - title: "Upgrading"
-        path: upgrading
+        url: /docs/upgrading/
 
   - title: Customization
     children:
       - title: "Configuration"
-        path: configuration
+        url: /docs/configuration/
       - title: "Navigation"
-        path: navigation
+        url: /docs/navigation/
       - title: "UI Text"
-        path: ui-text
+        url: /docs/ui-text/
       - title: "Authors"
-        path: authors
+        url: /docs/authors/
       - title: "Layouts"
-        path: layouts
+        url: /docs/layouts/
 
   - title: Content
     children:
       - title: "Working with Posts"
-        path: posts
+        url: /docs/posts/
       - title: "Working with Pages"
-        path: pages
+        url: /docs/pages/
       - title: "Working with Collections"
-        path: collections
+        url: /docs/collections/
       - title: "Helpers"
-        path: helpers
+        url: /docs/helpers/
       - title: "Utility Classes"
-        path: utility-classes
+        url: /docs/utility-classes/
 
   - title: Extras
     children:
       - title: "Stylesheets"
-        path: stylesheets
+        url: /docs/stylesheets/
       - title: "JavaScript"
-        path: javascript
+        url: /docs/javascript/
 
   - title: Meta
     children:
       - title: "History"
-        path: history
+        url: /docs/history/
       - title: "Contributing"
-        path: contributing
+        url: /docs/contributing/
       - title: "Old 2.2 Docs"
-        path: docs-2-2
+        url: /docs/docs-2-2/
       - title: "License"
-        path: license
+        url: /docs/license/

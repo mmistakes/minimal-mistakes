@@ -174,3 +174,75 @@ To include an [auto-generated table of contents](http://kramdown.rubyforge.org/c
 ```liquid
 {% raw %}{% include toc icon="gears" title="My Table of Contents" %}{% endraw %}
 ```
+
+## Navigation List
+
+Include an unordered list of links to be used as sidebar navigation with the `nav_list` helper.
+
+**1.** Start by adding a set of titles and URLs to `_data/navigation.yml` in the same way the [`main` navigation]({{ base_path }}/docs/navigation/) is built.
+
+`foo` navigation example:
+
+```yaml
+# _data/navigation.yml
+foo:
+  - title: "Link 1 Title"
+    url: /link-1-page-url/
+
+  - title: "Link 2 Title"
+    url: http://external-link.com
+
+  - title: "Link 3 Title"
+    url: /link-3-page-url/
+
+  - title: "Link 4 Title"
+    url: /link-4-page-url/
+```
+
+For a navigation list that has child pages you'd structure the YAML like this:
+
+```yaml
+# _data/navigation.yml
+foo:
+  - title: "Parent Link 1"
+    url: /parent-1-page-url/
+    children:
+      - title: "Child Link 1"
+        url: /child-1-page-url/
+      - title: "Child Link 2"
+        url: /child-2-page-url/
+
+  - title: "Parent Link 2"
+    url: /parent-2-page-url/
+    children:
+      - title: "Child Link 1"
+        url: /child-1-page-url/
+      - title: "Child Link 2"
+        url: /child-2-page-url/
+      - title: "Child Link 3"
+        url: /child-3-page-url/
+```
+
+**2:** On the page(s) you'd like the `foo` sidebar nav add the following YAML Front Matter, referencing the same key name.
+
+```yaml
+sidebar:
+  nav: "foo"
+```
+
+**ProTip:** If you're applying the same navigation list to several pages setting it as a [Front Matter default](https://jekyllrb.com/docs/configuration/#front-matter-defaults) is the better option.
+{: .notice--info}
+
+The theme's documentation is built with the `nav_list` helper so if you'd like an example to dissect take a look at `navigation.yml`, `_config.yml` and `_doc/` in the [`gh-pages` branch]({{ site.gh_repo }}/gh-pages/) of this repo.
+
+To add a navigation list to a post or page's main content instead of the sidebar use the include this way:
+
+```liquid
+{% raw %}{% include nav_list nav="foo" %}{% endraw %}
+```
+
+{% include nav_list nav="foo" %}
+
+| Parameter | Required     | Description |
+| --------- | --------     | ----------- |
+| items     | **Required** | Name of the links array found in `_data/navigation.yml`. |
