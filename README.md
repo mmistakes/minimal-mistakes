@@ -15,7 +15,7 @@ The theme includes responsive layouts (`single`, `archive`, and `splash` pages) 
 
 ### Notable Features
 
-- Compatible with GitHub Pages
+- Compatible with Jekyll 3.x and GitHub Pages
 - Several layout options (single, archive, splash pages)
 - SEO optimized with support for [Twitter Cards](https://dev.twitter.com/cards/overview) and [Open Graph](http://ogp.me/) data
 - Optional header images, sidebars, table of contents, galleries, related posts, breadcrumb links, and more.
