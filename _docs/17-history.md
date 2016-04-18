@@ -4,8 +4,15 @@ permalink: /docs/history/
 excerpt: "Changelog of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2016-04-16
+modified: 2016-04-18T16:31:59-04:00
 ---
+
+## [3.1.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.2)
+
+### Enhancement
+
+- Explain how to use `nav_list` helper in [documentation](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#navigation-list).
+- Reduce left/right padding on smaller screens to increase width of main content column.
 
 ## [3.1.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.1)
 
