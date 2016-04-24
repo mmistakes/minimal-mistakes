@@ -11,7 +11,7 @@ title                    : "DUMKYDEWILDE.NL"
 title_separator          : "-"
 name                     : "Dumky de Wilde"
 description              : "From information to insight."
-url                      : https://dumkydewilde.github.io
+url                      : "https://dumkydewilde.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -35,7 +35,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : dumkydewilde
+  username               : "dumkydewilde"
 facebook:
   username               :
   app_id                 :
