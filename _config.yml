@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "nl_NL"
+locale                   : "nl-NL"
 title                    : "DUMKYDEWILDE.NL"
 title_separator          : "-"
 name                     : "Dumky de Wilde"
@@ -61,9 +61,9 @@ google_ad_slot           :
 
 # Site Author
 author:
-  name             : "Dumky de Wilde"
-  avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
+  name             : 
+  avatar           : 
+  bio              : 
   location         : "Amsterdam"
   email            :
   uri              :
