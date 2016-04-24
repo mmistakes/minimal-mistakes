@@ -12,7 +12,7 @@ title_separator          : "-"
 name                     : "Dumky de Wilde"
 description              : "From information to insight."
 url                      : "http://dumkydewilde.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+baseurl                  : "/"
 gh_repo                  :
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
@@ -61,7 +61,7 @@ google_ad_slot           :
 
 # Site Author
 author:
-  name             : 
+  name             : "Dumky de Wilde"
   avatar           : 
   bio              : 
   location         : "Amsterdam"
