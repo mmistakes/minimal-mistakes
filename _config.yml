@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "nl-NL"
+locale                   : "nl_NL"
 title                    : "DUMKYDEWILDE.NL"
 title_separator          : "-"
 name                     : "Dumky de Wilde"
