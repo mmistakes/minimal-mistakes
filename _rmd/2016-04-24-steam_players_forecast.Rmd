@@ -1,0 +1,276 @@
+---
+title: "Predicting virtual hat sales in Dota 2."
+author: "Matthew Gregory"
+comments: yes
+date: '2016-04-24'
+modified: `r format(Sys.time(), '%Y-%m-%d')`
+layout: post
+excerpt: "Working with time series data and basic forecasting"
+published: yes
+status: processed
+tags:
+- R
+- machine learning
+- forecasting
+- forecast
+- time series
+categories: Rstats
+---
+
+{% include _toc.html %}
+
+```{r setup,include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  dev = "svg"
+  )
+```
+
+```{r, message=FALSE, warning=FALSE}
+
+#LIBRARY - check if packages are installed and load them
+library(dplyr)
+library(rvest)
+library(zoo)
+library(forecast)
+
+```
+> "Prediction is very difficult, especially if it's about the future." 
+- Niels Bohr
+
+As a scientist I'm experienced in designing controlled experiments to produce tidy dataframes. Ideally we end up with each row in the dataframe representing a unique observation at the level of the experimental unit. This tidy data standard is useful in its design as it facilitates initial exploration and analysis of the data.
+
+In an uncontrolled setting we come across data which doesn't adhere to this tidy structure, where each datum is not independent and identically distributed (i.i.d) from the rest of the data. Thus, we must treat this different kind of data appropriately to avoid making invalid conclusions regarding the data and its analysis.
+
+## Objectives
+
+In this blog-post we investigate time series methods for prediction in R. Dates and times have tricky properties and it is best to take advantage of packages that can deal with them. We explore the `forecast` package and familiarise ourselves with a new class of object in R. We draw heavily from the excellent [Forecasting: principles and practice](https://www.otexts.org/book/fpp) in R, available as an ebook.
+
+## Time series data
+
+An example of time series data which is not an i.i.d variable, is the number of Players of Games on the popular gaming platform Steam. Steam is a digital distribution platform developed by Valve Corporation offering digital rights management (DRM), multiplayer gaming and social networking. I was interested to see how the player base has increased through time and forecasting the future player base size for the next year. To keep things simple we look at average player numbers for my favourite team-based strategy game; Dota 2. The number of Dota 2 players will likely be associated with the sales of digital aesthetics in-game, including cosmetics for playable heroes, such as hats and taunts; hence the title.
+
+## Getting the data
+
+As this was a once-off, I scrape the page using functions from  Hadley Wickham's puntastic `rvest` package.
+
+```{r}
+
+steamhtml <- read_html("http://steamcharts.com/app/570")  # manually input
+steam <- html_table(x = steamhtml, fill = TRUE, header = TRUE)  # recognises and reads ALL tables on the page
+
+```
+
+We inspect the data (as it's small) to look for any problems.
+
+```{r}
+steam
+```
+
+We are interested in the first and second columns, the date and the average number of players for that month. We can use `select` to get 'em and rename them. What happens if we plot these variables against each other, what will R default to?
+
+```{r}
+df1 <- data.frame(thedate = steam[[1]][, 1],  #  select the first list, its first column
+                  players = steam[[1]][, 2],
+                    stringsAsFactors = FALSE)
+str(df1)
+```
+
+The first row is inconsistent for the date, let's remove it as the month hasn't ended yet. 
+
+```{r}
+
+df2 <- slice(df1, -1)
+head(df2, n = 3)  
+
+```
+
+We get an error if we try to convert the `thedate` into a `zoo` or date/time object, I believe this is due to it being in reverse order, from present to past. We simply reverse the order of the sequence and use the zoo funciton `as.yearmon()` to assign the class which is used to represent monthly data. We also need to reverse the average player number to match the correct date it is associated with.
+
+```{r}
+str(df2)  #  our dates are set as characters so won't be recognised by R as dates
+# they are also in the reverse order going from present to past, let's reverse this with rev()
+
+x <- as.yearmon(rev(df2$thedate), format = "%B %Y")  # from the zoo package, where each month is 
+
+df2$thedate <- x
+# we now need to reverse the player numbers to match
+df2$players <- rev(df2$players)
+
+str(df2)
+head(df2, n = 3)
+
+```
+
+
+## Plotting a time series
+
+If we try and plot `df2`, what will happen? Notice how `plot()` defaults to a scatter plot.
+
+
+```{r 2016-04-24_scatterplot}
+plot(df2$thedate, df2$players)
+```
+
+
+We can't do much with this dataframe due to the way the date is expressed, let's convert to a time series object so that R can work with the data and plot it more appropriately. Each steam average player count now has its own date index.
+
+```{r 2016-04-24_ts_dota2_1}
+
+steam_ts <- ts(data = df2$players, start = c(2012, 7), deltat = 1/12)  #  monthly data
+plot(steam_ts, ylab = "Average number of players on Steam")
+steam_ts
+
+```
+
+## Forecasting steam player numbers
+
+First we discuss how to make a forecast using some standard models and how to measure the accuracy. We intend to verify and validate by using textbook examples such as mean absolute percentage error (MAPE) (Kim & Kim, 2016). Other summary statistics may be of interest and we can calculate these using the `accuracy()` function from the forecasts package.
+
+Comprehensive packages often come with methods for validation, a quick google search reveals the forecast package has an accuracy function that can handle time series or forecast objects for us.
+
+The [accuracy measures](https://www.otexts.org/fpp/2/5) calculated are:
+
+* ME: Mean Error
+* RMSE: Root Mean Squared Error
+* MAE: Mean Absolute Error
+* MPE: Mean Percentage Error
+* MAPE: Mean Absolute Percentage Error
+* MASE: Mean Absolute Scaled Error
+* ACF1: Autocorrelation of errors at lag 1.
+
+## Training and testing the models
+
+It is important to evaluate forecast accuracy using genuine forecasts. That is, it is invalid to look at how well a model fits the historical data; the accuracy of forecasts can only be determined by considering how well a model performs on new data that were not used when estimating the model.
+
+### Training
+It can help if we visualise the forecasts and compare graphically as well as using quantitative measures of accuracy. We will attempt to forecast 6 months into the "future" by using our historic data. The present is defined as 2012 Q3. We include the exponential smoothing state space model (ets) as it performs well with typical forecasting problems.
+
+Take a moment to look at the plot and make a six month forecast using your gut.
+
+
+```{r 2016-04-24_ts_dota2_2}
+h <- 6  # set h here to save us typing, lexical scoping looks for default first
+# SUBSET DATA
+# We use tail to find this cut off date
+tail(steam_ts, 9)
+# we introduce the window() function to split the zoo object into smaller zoo
+train <- window(x = steam_ts, end = c(2015, 9))  #  2015, Sep
+test <- window(x = steam_ts, start = c(2015, 10))  # 2015, Oct
+length(test) == h  #  Check, should be 6 quarters
+plot(train, main = "Half year forecasts for Steam active player number",
+   ylab = "Dota 2 players", xlab = "Year",
+   xlim = c(2012, 2017), ylim = c(50000, 800000))
+
+```
+
+Now let's fit some [classic benchmark forecasting models](https://www.otexts.org/fpp/2/3) from simple to complex. We have the grand mean, the naive or last observation method and the ETS method explained later.
+
+```{r 2016-04-24_ts_dota2_3}
+# FITTING MODELS, h is defined above
+fit1 <- meanf(train, h = h)  #  We fit again and forecast into the future test data
+fit2 <- naive(train, h = h)
+fit3 <- ets(train)  #  different structure to other two
+
+# PLOT training data followed by model forecasts followed by actual test data
+plot(train, main = "Half year forecasts for Dota player number",
+   ylab = "Dota 2 players", xlab = "Year",
+   xlim = c(2012, 2017), ylim = c(50000, 800000))
+
+#PLOT MODEL FORECAST
+lines(fit1$mean, col = "blue")
+lines(fit2$mean, col = "red")
+lines(forecast(fit3, h = h)$mean, col = "green")  #  look at forecast(fit3) structure, mean
+#ACTUAL
+lines(test)
+#legend
+legend("topleft", lty = 1, col = c(4,2,3, bty = "n"),
+legend = c("Average model","Naive model","ETS"))
+
+```
+
+Which model provided the best forecast?
+
+Looking at the `?ets()` help for the function reveals it returns an exponential smoothing state space model fit to the time series. Apparently this methodology performed extremely well on the Makridakis or [M-competition data](https://forecasters.org/resources/time-series-data/).
+
+We can use the forecast package to plot probability intervals on our forecast which gives us an idea that predicting further into the future increases the uncertainity of our estimate.
+
+```{r 2016-04-24_ts_dota2_4}
+
+plot(forecast(fit3), main = "Half year forecast for Dota player number",
+   ylab = "Dota 2 players", xlab = "Year",
+   xlim = c(2012, 2017), ylim = c(50000, 800000))
+lines(test)
+
+```
+
+## Quantitative testing
+
+Now we quantitatively compare the forecast produced by each model based on the training data against the test data. The exponential smoothing state space model (ETS) outperformed the simple models but the fit still leaves a little to be desired as our forecast accuracy diminished the further we went into the future. Notice how relying on just the training error is a bad idea as depending on the type of accuracy measure used you may conclude that some models are more accurate than the reality of forecasting in to the future.
+
+```{r}
+
+accuracy(fit1, test)  #  average
+accuracy(fit2, test)  #  naive
+accuracy(forecast(fit3), test)  #  ets
+
+```
+
+Let's look a little bit more closely at the ETS model and its forecast.
+
+```{r}
+fit3$method
+```
+
+It defaulted to a multiplicativee error type with an additive trend and no seasonal component.
+
+## Residual diagnostics
+A [good forecasting method](https://www.otexts.org/fpp/2/6) will yield residuals with the following properties:
+
+* The residuals are uncorrelated. If there are correlations between residuals, then there is information left in the residuals which should be used in computing forecasts.
+* The residuals have zero mean. If the residuals have a mean other than zero, then the forecasts are biased.
+
+Any forecasting method that does not satisfy these properties can be improved.
+
+```{r 2016-04-24_res}
+
+res <- fit3$residuals
+plot(res, main = "Residuals from ETS method")
+Acf(res, main = "ACF of residuals")
+hist(res, nclass = "FD", main = "Histogram of residuals")
+
+```
+
+When interpreting these diagnostic plots I would consult [Hyndman's book](https://www.otexts.org/fpp/2/6).
+
+There may be some non-normality of the residuals suggesting that forecasts from this model may be quite good by prediction intervals based on assumptions of the normal distribution may be biased. There appears to be no autocorrelation through time, although Portmanteau (French suitcase) tests for autocorrelation may provide a more definitive answer.
+
+## Forecasting
+
+Assuming our ETS model is OK, let's predict Dota 2 players into the future by training the ETS on the complete time series.
+
+```{r 2016-04-24_ts_dota2_5}
+fit4 <- ets(steam_ts)
+plot(forecast(fit4), main = "ETS forecast for Dota player number",
+   ylab = "Dota 2 players", xlab = "Year",
+   xlim = c(2012, 2018))
+
+```
+
+# Conclusions
+
+We introduced some basic concepts of dealing with time series data in R. We can think of them as being dataframes with a special index tacked on to each row providing a unique data and data combination. As each datum is dependent on the previous data, simple time series forecasting methods provide suprisingly powerful machine learning methods for predicting future values and their prediciton intervals. As usual R delivers, with a selection of easy to implement and world-class algorithms freely available in packages, such as forecast. It looks like Dota 2 is continuing to grow in popularity after a brief plateau from 2015-2016. Keep buying digital hats without fear of a Dota 2 player-base crash!
+
+Warning: leave one out cross-validation is preferred for model selection. Many other better methods exist and these forecasts are inevitably prone to error.
+
+## References
+
+* Hyndman, R. J., Koehler, A. B., Snyder, R. D., & Grose, S. (2002). A state space framework for automatic forecasting using exponential smoothing methods. International Journal of Forecasting, 18(3), 439-454. http://doi.org/10.1016/S0169-2070(01)00110-8
+* Hyndman, R. J., & Khandakar, Y. (2008). Automatic time series forecasting : the forecast package for R. Journal Of Statistical Software, 27(3), 1-22. http://doi.org/10.18637/jss.v027.i03
+* Hyndman. Forecasting practices and principles. https://www.otexts.org/book/fpp
+* Kim, S., & Kim, H. (2016). A new metric of absolute percentage error for intermittent demand forecasts. International Journal of Forecasting, 32(3), 669-679. http://doi.org/10.1016/j.ijforecast.2015.12.003
+
+```{r}
+sessionInfo()
+```
+
