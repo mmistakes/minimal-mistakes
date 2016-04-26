@@ -1,6 +1,6 @@
 ---
-title: "Predicting virtual hat sales in Dota 2."
-author: "Matthew Gregory"
+title: "Predicting virtual hat sales in Dota 2"
+author: matt_gregory
 comments: yes
 date: '2016-04-24'
 modified: 2016-04-25
