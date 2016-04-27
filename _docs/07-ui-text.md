@@ -2,7 +2,7 @@
 title: "UI Text"
 permalink: /docs/ui-text/
 excerpt: "Text for customizing various user interface elements found in the theme."
-modified: 2016-04-13T15:54:02-04:00
+modified: 2016-04-27T10:35:05-04:00
 ---
 
 {% include base_path %}

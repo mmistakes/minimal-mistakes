@@ -2,7 +2,7 @@
 title: "Upgrading"
 permalink: /docs/upgrading/
 excerpt: "Instructions and suggestions for upgrading the theme."
-modified: 2016-04-13T15:54:02-04:00
+modified: 2016-04-27T10:35:00-04:00
 ---
 
 {% include base_path %}
@@ -18,7 +18,7 @@ To double check, run `git remote -v` and verify that you can fetch from `origin 
 To add it you can do the following:
 
 ```bash
-$ git remote add upstream {{ site.gh_repo }}/minimal-mistakes.git
+$ git remote add upstream https://github.com/mmistakes/minimal-mistakes.git
 ```
 
 ### Pull Down Updates

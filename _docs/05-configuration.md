@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-modified: 2016-04-14
+modified: 2016-04-27T10:35:10-04:00
 ---
 
 {% include base_path %}
