@@ -22,7 +22,10 @@ Take a moment to look over the configuration file included with the theme. Comme
 
 *Example:* `locale: "en-US"` sets the `lang` attribute for the site to the *United States* flavor of English, while `en-GB` would be for the `United Kingdom` style of English. Country codes are optional and the shorter `locale: "en"` is also acceptable. To find your language and country codes check this [reference table](https://msdn.microsoft.com/en-us/library/ee825488(v=cs.20).aspx). 
 
-Properly setting the locale is important for associating localized text found in the [**UI Text**]({{ base_path }}/docs/ui-text/) data file. For more information on that see below.
+Properly setting the locale is important for associating localized text found in the [**UI Text**]({{ base_path }}/docs/ui-text/) data file. An improper match will cause parts of the UI to disappear (eg. button labels, section headings, etc).
+
+**Note:** The theme comes with localized text in English (`en`, `en-US`, `en-GB`). If you change `locale` in `_config.yml` to something else, most of the UI text will go blank. Be sure to add the corresponding locale key and translated text to `_data/ui-text.yml` to avoid this.
+{: .notice--warning}
 
 ### Site Title
 
