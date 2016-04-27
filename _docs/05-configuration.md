@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-modified: 2016-04-27T10:35:10-04:00
+modified: 2016-04-27T10:39:37-04:00
 ---
 
 {% include base_path %}
@@ -54,12 +54,12 @@ Fairly obvious. `site.description` describes the site. Used predominantly in met
 
 ### Site URL
 
-The base hostname and protocol for your site. If you're hosting with GitHub Pages this will be something like `url: "http://github.io.mmistakes"` or `url: "https://mademistakes.com"` if you have a custom domain name.
+The base hostname and protocol for your site. If you're hosting with GitHub Pages this will be something like `url: "https://github.io.mmistakes"` or `url: "https://mademistakes.com"` if you have a custom domain name.
 
-**Note:** It's important to remember that when testing locally you need to change the `site.url`. Ideally you'd use [multiple config files](https://mademistakes.com/articles/using-jekyll-2016/#environments-and-configurations) with `bundle exec jekyll serve --config _config.yml,_config.dev.yml` to apply development overrides. Simply commenting out the line works as well `# url: "http://mmistakes.github.io"`. Just remember to uncomment it before pushing or else you'll have broken assets and links all over the place!
+**Note:** It's important to remember that when testing locally you need to change the `site.url`. Ideally you'd use [multiple config files](https://mademistakes.com/articles/using-jekyll-2016/#environments-and-configurations) with `bundle exec jekyll serve --config _config.yml,_config.dev.yml` to apply development overrides. Simply commenting out the line works as well `# url: "https://mmistakes.github.io"`. Just remember to uncomment it before pushing or else you'll have broken assets and links all over the place!
 {: .notice--warning}
 
-**ProTip:** GitHub serves pages over `http://` and `https://` so to take advantage of that go protocol-less with `url: "//github.io.mmistakes"`. This will avoid any mixed content warnings that might occur if you were to use `url: https://github.io.mmistakes` and someone visited a non-https page. To my knowledge there is no way to force GitHub hosted sites to redirect http traffic to https without the use of a service like [Cloudflare](https://www.cloudflare.com/). More info on serving your GitHub Pages hosted site over https can be [found here](https://konklone.com/post/github-pages-now-sorta-supports-https-so-use-it).
+**ProTip:** To force GitHub hosted sites to [redirect http traffic to https](https://konklone.com/post/github-pages-now-sorta-supports-https-so-use-it) use a service like [Cloudflare](https://www.cloudflare.com/).
 {: .notice--info}
 
 ### Site Base URL
