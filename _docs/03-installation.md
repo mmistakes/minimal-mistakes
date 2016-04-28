@@ -2,7 +2,7 @@
 title: "Installation"
 permalink: /docs/installation/
 excerpt: "Instructions for installing the theme for new and existing Jekyll based sites."
-modified: 2016-04-13T15:54:02-04:00
+modified: 2016-04-28T11:12:50-04:00
 ---
 
 {% include base_path %}
@@ -22,7 +22,7 @@ There are several ways to install the theme:
 
 **3.** And for those who don't want to mess with Git, you can download the theme as a ZIP file to work with locally.
 
-[<i class="fa fa-download"></i> Download Minimal Mistakes Theme]({{ site.gh_repo }}/archive/master.zip){: .btn .btn--success}
+[<i class="fa fa-download"></i> Download Minimal Mistakes Theme](https://github.com/mmistakes/minimal-mistakes/archive/master.zip){: .btn .btn--success}
 
 **ProTip:** Be sure to [delete](https://github.com/blog/1377-create-and-delete-branches) the `gh-pages` branch if you forked Minimal Mistakes. This branch contains the documentation and demo site for the theme and you probably don't want that showing up in your repo.
 {: .notice--info}
