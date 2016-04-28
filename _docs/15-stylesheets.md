@@ -161,7 +161,7 @@ To get started:
 **Note:** If you upgraded from a previous version of the theme be sure you copied over [`package.json`]({{ site.gh_repo }}/master/package.json) prior to running `npm install`.
 {: .notice--warning}
 
-If all goes well, running `npm build:css` will process all SCSS files into `main.css`, which should then pipe through Autoprefixer.
+If all goes well, running `npm run build:css` will process all SCSS files into `main.css`, which should then pipe through Autoprefixer.
 
 ```
 Rendering Complete, saving .css file...
