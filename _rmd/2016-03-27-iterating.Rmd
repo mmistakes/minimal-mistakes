@@ -7,7 +7,7 @@ modified: `r format(Sys.time(), '%Y-%m-%d')`
 layout: post
 excerpt: "Using dplyr, broom, and purrr to make life easy"
 published: yes
-status: process
+status: processed
 tags:
 - R
 - dplyr
