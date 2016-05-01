@@ -228,3 +228,8 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
