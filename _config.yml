@@ -11,7 +11,7 @@ title                    : "Electronic Lab Notebook"
 title_separator          : "-"
 name                     : "Paul D. Bentley"
 description              : "Place of Rantings and Musings"
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://pdbentley.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
