@@ -1,16 +1,16 @@
 # main links links
 main:
-  - title: "Quick-Start Guide"
+  - title: "Projects"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
 
   - title: "About"
     url: https://mmistakes.github.io/minimal-mistakes/
 
-  - title: "Sample Posts"
+  - title: "Cool Shit"
     url: https://mmistakes.github.io/minimal-mistakes/year-archive/
 
-  - title: "Sample Pages"
+  - title: "Journal"
     url: https://mmistakes.github.io/minimal-mistakes/page-archive/
 
-  - title: "Sample Collections"
+  - title: "Purple Monkeys"
     url: https://mmistakes.github.io/minimal-mistakes/collection-archive/
