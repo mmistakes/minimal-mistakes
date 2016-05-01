@@ -6,8 +6,8 @@ main:
   - title: "Posts"
     url: /_posts/
 
-  - title: "Ideas"
-    url: /Ideas/
+  - title: "Pages"
+    url: /_pages/
 
   - title: "Journal"
     url: /Journal/
