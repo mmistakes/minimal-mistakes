@@ -214,7 +214,7 @@ defaults:
       path: "/_posts/"
       type: posts
     values:
-      layout: splash
+      layout: single
       author_profile: true
       read_time: true
       comments: true
@@ -228,7 +228,7 @@ defaults:
       path: "/_projects/"
       type: projects
     values:
-      layout: splash
+      layout: single
 
 defaults:
    # _pages
@@ -236,4 +236,4 @@ defaults:
       path: "/_pages/"
       type: pages
     values:
-      layout: splash
+      layout: single
