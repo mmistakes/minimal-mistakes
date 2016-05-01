@@ -185,7 +185,7 @@ categories:
   path: /categories/
 tags:
   type: liquid
-  path: /tags/#
+  path: /tags/
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
