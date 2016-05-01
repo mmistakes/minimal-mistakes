@@ -221,10 +221,10 @@ defaults:
 
 #Collection front end layouts - to be updated
 defaults:
-   Projects
+   # Projects
   - scope:
       path: ""
-      type: foo
+      type: Projects
     values:
       layout: splash
   
