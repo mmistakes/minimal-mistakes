@@ -1,13 +1,13 @@
 # main links links
 main:
   - title: "Projects"
-    url: /_projects/
+    url: /projects/
 
   - title: "Posts"
-    url: /_posts/
+    url: /posts/
 
   - title: "Pages"
-    url: /_pages/
+    url: /pages/
 
   - title: "Journal"
     url: /Journal/
