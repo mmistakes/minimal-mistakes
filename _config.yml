@@ -95,8 +95,6 @@ author:
 include:
   - .htaccess
   - _pages
-  - _projects
-  - _posts
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -209,7 +207,7 @@ compress_html:
 
 ## front end matter defaults
 defaults:
-   _posts
+   # _posts
   - scope:
       path: ""
       type: posts
@@ -220,20 +218,3 @@ defaults:
       comments: true
       share: true
       related: true
-
-#Collection front end layouts - to be updated
-defaults:
-   # _projects
-  - scope:
-      path: "/_projects/"
-      type: posts
-    values:
-      layout: single
-
-defaults:
-   # _pages
-  - scope:
-      path: "/_pages/"
-      type: posts
-    values:
-      layout: single
