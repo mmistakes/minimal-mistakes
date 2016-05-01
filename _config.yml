@@ -209,9 +209,9 @@ compress_html:
 
 ## front end matter defaults
 defaults:
-  # _posts
+   _posts
   - scope:
-      path: "/_posts/"
+      path: ""
       type: posts
     values:
       layout: single
