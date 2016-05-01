@@ -226,7 +226,7 @@ defaults:
    # _projects
   - scope:
       path: "/_projects/"
-      type: projects
+      type: posts
     values:
       layout: single
 
@@ -234,6 +234,6 @@ defaults:
    # _pages
   - scope:
       path: "/_pages/"
-      type: pages
+      type: posts
     values:
       layout: single
