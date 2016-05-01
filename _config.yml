@@ -221,14 +221,10 @@ defaults:
       related: true
 
 defaults:
-   # _posts
+  # _pages
   - scope:
-      path: "/_posts"
-      type: posts
+      path: ""
+      type: pages
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
