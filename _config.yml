@@ -6,11 +6,11 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Lab Notebook"
+locale                   : "Australia"
+title                    : "Electronic Lab Notebook"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Paul D. Bentley"
+description              : "Place of Rantings and Musings"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
@@ -61,10 +61,10 @@ google_ad_slot           :
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Paul D. Bentley"
   avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
+  bio              : "Research Scientist Apprentiship"
+  location         : "The Universe"
   email            :
   uri              :
   bitbucket        :
