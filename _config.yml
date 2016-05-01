@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "Australia"
+locale                   : "en-AU"
 title                    : "Electronic Lab Notebook"
 title_separator          : "-"
 name                     : "Paul D. Bentley"
