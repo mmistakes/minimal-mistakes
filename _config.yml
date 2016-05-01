@@ -226,5 +226,5 @@ defaults:
       path: ""
       type: foo
     values:
-      layout: single
+      layout: splash
   
