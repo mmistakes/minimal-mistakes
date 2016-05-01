@@ -3,8 +3,8 @@ main:
   - title: "Projects"
     url: /Projects/
 
-  - title: "About"
-    url: /_pages/
+  - title: "Posts"
+    url: /_posts/
 
   - title: "Ideas"
     url: /Ideas/
