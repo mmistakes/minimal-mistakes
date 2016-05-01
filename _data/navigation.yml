@@ -1,16 +1,16 @@
 # main links links
 main:
   - title: "Projects"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+    url: /Projects/
 
   - title: "About"
     url: https://mmistakes.github.io/minimal-mistakes/
 
-  - title: "Cool Shit"
-    url: https://mmistakes.github.io/minimal-mistakes/year-archive/
+  - title: "Ideas"
+    url: /Ideas/
 
   - title: "Journal"
-    url: https://mmistakes.github.io/minimal-mistakes/page-archive/
+    url: /Journal/
 
   - title: "Purple Monkeys"
-    url: https://mmistakes.github.io/minimal-mistakes/collection-archive/
+    url: https://au.pinterest.com/pin/403564816585254078/
