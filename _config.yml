@@ -223,8 +223,15 @@ defaults:
 defaults:
    # _projects
   - scope:
-      path: ""
+      path: "/_projects/"
       type: projects
     values:
       layout: splash
-  
+
+defaults:
+   # _pages
+  - scope:
+      path: "/_pages/"
+      type: pages
+    values:
+      layout: splash
