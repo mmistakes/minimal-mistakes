@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "Site Title"
 title_separator          : "-"
-name                     : "Your Name"
+name                     : "Jason Scholl"
 description              : "An amazing website."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -35,7 +35,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : jescholl
 facebook:
   username               :
   app_id                 :
@@ -61,10 +61,10 @@ google_ad_slot           :
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : "bio-photo.jpg"
+  name             : "Jason Scholl"
+  avatar           : "https://gravatar.com/avatar/54dd96b29ee73d162a4662613c3165e8?s=150"
   bio              : "I am an amazing person."
-  location         : "Somewhere"
+  location         : "Portland, OR"
   email            :
   uri              :
   bitbucket        :
@@ -73,9 +73,9 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : jescholl
   google_plus      :
-  keybase          :
+  keybase          : jescholl
   instagram        :
   lastfm           :
   linkedin         :
@@ -84,7 +84,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : jescholl
   vine             :
   weibo            :
   xing             :
