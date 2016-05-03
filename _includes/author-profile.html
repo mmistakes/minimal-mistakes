@@ -64,6 +64,9 @@
       {% if author.stackoverflow %}
         <li><a href="https://www.stackoverflow.com/users/{{ author.stackoverflow }}"><i class="fa fa-fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow</a></li>
       {% endif %}
+      {% if author.speakerdeck %}
+        <li><a href="https://speakerdeck.com/{{ author.speakerdeck }}"><i class="fa fa-fw fa-speaker-deck" aria-hidden="true"></i> Speaker Deck</a></li>
+      {% endif %}
       {% if author.lastfm %}
         <li><a href="https://lastfm.com/user/{{ author.lastfm }}"><i class="fa fa-fw fa-lastfm-square" aria-hidden="true"></i> Last.fm</a></li>
       {% endif %}
