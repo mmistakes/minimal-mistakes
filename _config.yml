@@ -6,21 +6,21 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Site Title"
+locale                   : "fr-FR"
+title                    : "Ubinews - le blog"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+name                     : "La rédac"
+description              : "Plateforme éditoriale à la demande | Media : articles à la demande et production de contenu | Journalistes : déposez et vendez vos articles"
+url                      : "http://gregoire-bessagnet.github.io"
+baseurl                  : "/ubiblog"
 gh_repo                  :
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "facebook", "google-plus", custom"
+  provider               : "disqus", "facebook", "google-plus"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : blog_ubinews
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
@@ -35,9 +35,9 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : ubinews
 facebook:
-  username               :
+  username               : ubinews
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
@@ -61,10 +61,10 @@ google_ad_slot           :
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
+  name             : "La rédaction"
+  avatar           : "logo_ubinews.png"
+  bio              : "La fabuleuse rédaction d'Ubinews."
+  location         : "France"
   email            :
   uri              :
   bitbucket        :
@@ -167,6 +167,20 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+
+
+defaults:
+
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      read_time: true
+      comments: true
+      share: true
+      related: true
 
 
 # Archives
