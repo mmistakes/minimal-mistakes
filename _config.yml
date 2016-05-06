@@ -7,18 +7,18 @@
 
 # Site Settings
 locale                   : "fr-FR"
-title                    : "Ubinews - le blog"
+title                    : "Le blog d'Ubinews"
 title_separator          : "-"
-name                     : "La rédac"
+name                     : "Ubinews"
 description              : "Plateforme éditoriale à la demande | Media : articles à la demande et production de contenu | Journalistes : déposez et vendez vos articles"
-url                      : "http://gregoire-bessagnet.github.io"
-baseurl                  : "/ubiblog"
+url                      : "http://blog.ubinews.net"
+baseurl                  : # "/ubiblog"
 gh_repo                  :
-teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-# breadcrumbs            : false # true, false (default)
+teaser                   : "500x300.png"
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "disqus", "facebook", "google-plus"
+  provider               : # "disqus", "facebook", "google-plus"
   disqus:
     shortname            : # blog_ubinews
   facebook:
@@ -35,9 +35,9 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : #
+  username               : "ubinews"
 facebook:
-  username               : #
+  username               : "ubinewsnet" #
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
@@ -50,9 +50,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google"
   google:
-    tracking_id          :
+    tracking_id          : "UA-77276335-1"
 
 # Google AdSense
 google_ad_client         :
@@ -63,15 +63,15 @@ google_ad_slot           :
 author:
   name             : "La rédaction"
   avatar           : "logo_ubinews.png"
-  bio              : "La fabuleuse rédaction d'Ubinews."
+  bio              : "L'équipe d'Ubinews"
   location         : "France"
   email            :
-  uri              :
+  uri              : "http://www.ubinews.net"
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "ubinewsnet"
   foursquare       :
   github           :
   google_plus      :
@@ -84,7 +84,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "ubinews"
   vine             :
   weibo            :
   xing             :
@@ -149,7 +149,7 @@ kramdown:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/Paris
 
 
 # Plugins
