@@ -1,0 +1,592 @@
+---
+title: "Getting to grips with 'Elements of statistical learning'"
+author: matt_upson
+comments: yes
+date: '2016-05-08'
+#modified: `r format(Sys.time(), '%Y-%m-%d')`
+layout: post
+excerpt: "Linear models and least squares"
+published: true
+status: process
+tags:
+- statistics
+- data science
+- R
+- machine learning
+- education
+categories: Rstats
+---
+
+{% include _toc.html %}
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  dev = "svg",
+  include = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  error = FALSE
+  )
+```
+Last week I joined a reading group for the weighty tome [Elements of Statistical Learning](http://statweb.stanford.edu/~tibs/ElemStatLearn/).
+I really like the idea of this group; interesting as it is - it can be hard to maintain the drive to wade through a text like this.
+Working through it week on week with a group of like-minded people is a great way to overcome this.
+
+# Linear models
+
+In this post I implement in R some of the ideas that are presented in the first 2 chapters of Elements of Statistical Learning, namely: least squares.
+I've written about linear models before; whilst doing Andrew Ng's excellent [Machine learning](https://www.coursera.org/learn/machine-learning/home/info?source=cdpv2) I wrote a toy R package [vlrr](https://github.com/ivyleavedtoadflax/vlrr) to implement linear regression with regularisation to mainly as an exercise in ackage development.
+
+## Prediction from linear models
+
+Linear models are the bread and butter of statistics.
+They are pretty fundamental, and I don't want to write too much about them here for that reason.
+
+However, one thing I like about the way that Hastie et al. present the subject is in terms of matrix operations, giving a vectorized implementation that can easily be translated into code.
+
+In simple statistics, we are used to seeing linear models represeted as:
+
+$$y = bx + a$$
+
+Where our prediction $y$ is dependent on a rate or slope $b$, and a constant or intercept $a$. Simple.
+
+Hastie, et al. present the more general form of this equation[^1]:
+
+[^1]: From this equation onwards, I drop Hastie et al's convention of denoting matrices with $\hat{}$.
+
+$$
+\hat{Y}=\hat\beta_0+\sum^{m}_{j=1}X_j\hat\beta_j\cdot
+$$
+
+Here, the prediction $Y$ is given by the addition of the intercept (or bias) $\beta_0$ and the sum of the dot product of $X_{1..m}$ and $\beta_{1..m}$ where $X$ is an $n$ by $m$ dimensional matrix ($X\in\mathbb{R}^{n \times m}$), and $\beta$ is an $n$ dimensional vector (or later as we shall see: $\beta\in\mathbb{R}^{k \times n}$ - where $k$ is the number of models we wish to apply).
+
+By including a constant of 1 as the first column vector of the matrix $X$, it is possible to greatly simplify this equation into an matrix inner product:
+
+$$
+Y = X^T \beta
+$$
+
+This can be a bit of a leap, so I break this down more simply here.
+Let us create an input vector $\vec{x}$ where $\vec{x}\in\mathbb{R}^{m}$: i.e. there are $m$ training examples, and in this case: $m=10$.
+
+```{r , include=TRUE, eval=TRUE}
+
+# Load dplyr to make life easier
+
+library(dplyr)
+
+# Set random seed to fix the answer
+
+set.seed(1337)
+
+m <- 10
+x <- runif(n = m, min = 0, max = 500) %>%
+  round
+
+x
+```
+
+To get my prediction out of $\vec{x}$, I need to supply coefficients $a$ and $b$ (or $\beta$ if we use Hastie et al's notation; $\theta$ if we use Andrew Ng's). 
+
+In this case, I'm going to use a very simple model by setting $a = 1$, and $b = 10$.
+I'm not worrying about how we get these coefficients here, and nor should you be - we're just interested in the predictions we are going to make using these our input $\vec{x}$ and our coefficients $\beta$
+
+So this is how I calculate that prediction in R:
+
+```{r , include=TRUE}
+
+a <- 1
+b <- 10
+
+y <- (x * a) + b
+
+y
+
+```
+
+Of course, R has vectorised the operation here, so every element of our vector $\vec{x}$ was multiplied by $a$.
+We can express this as:
+
+$$
+\begin{align}
+y_1 &= `r x[1]` \times 1 + 10 \\ 
+y_2 &= `r x[2]` \times 1 + 10 \\
+y_3 &= `r x[3]` \times 1 + 10 \\
+\vdots \\
+y_{10} &= `r x[10]` \times 1 + 10 \\
+\end{align}
+$$
+
+## Thinking in matrices
+
+So now lets think about this more explicitly in matrix terms.
+
+### Matrix operations recap
+
+A quick reminder of matrix multiplication (for my benefit if nothing else).
+To multiply a matrix $A\in\mathbb{R}^{3 \times 2}$ with matrix $B\in\mathbb{R}^{2 \times 3}$, we multiply $A$ with each of the columns of $B$ to give $C\in\mathbb{R}^{3 \times 3}$.
+Remember that the number of columns of $A$ must equal the number of rows of $B$, e.g:
+
+$$
+A \times B = C \\
+\begin{bmatrix}
+1 & 3 \\
+2 & 5 \\
+0 & 9 \\
+\end{bmatrix}
+\times
+\begin{bmatrix}
+3 & 3 & 2\\
+2 & 5 & 7\\
+\end{bmatrix}=
+\begin{bmatrix}
+9 & 18 & 23\\
+16 & 31 & 39\\
+18 & 45 & 63\\
+\end{bmatrix}
+$$
+
+So, for instance: 
+
+$$
+\begin{align}
+C_{3,1} &=  (A_{3,1} \times B_{1,1}) + (A_{3,2} \times B_{2,1})\\
+C_{3,1} &= (0 \times 3) + (9 \times 2) \\
+C_{3,1} &= 18
+\end{align}
+$$
+
+### Linear model by matrix inner product
+
+First we place our coefficients $a$ and $b$ into the column vector $\beta$, and add the constant 1 to the input vector $x$ to give the $n + 1$ (one input vector, and the constant 1) by $m$ (the number of training examples) matrix $X$.
+
+So applying those quick recaps to our equation $Y=X^T\beta$, we get[^2]:
+
+[^2]: One of the confusing parts of this notation is that we don't actually want to transpose $X\in\mathbb{R}^{10 \times 2}$ into $X^{T}\in\mathbb{R}^{2 \times 10}$, as $X^T$ will not be conformable with $\beta\in\mathbb{R}^{2 \times 1}$. Instead, we want an inner product which is $X \cdot \beta$ or each row of $X$ multiplied by each column of $\beta$; in R this is `X %*% beta`, **not** `t(X) %*% beta`.
+
+
+$$
+\begin{bmatrix}
+1 & `r x[1]`\\
+1 & `r x[2]`\\
+1 & `r x[3]`\\
+\vdots & \vdots \\
+1 & `r x[10]`\\
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+10 \\
+1 \\
+\end{bmatrix}=
+\begin{bmatrix}
+1 \times 10 + `r x[1]` \times 1\\
+1 \times 10 + `r x[2]` \times 1\\
+1 \times 10 + `r x[3]` \times 1\\
+\vdots \\
+1 \times 10 + `r x[4]` \times 1\\
+\end{bmatrix}=
+\begin{bmatrix}
+`r x[1] + 10`\\
+`r x[2] + 10`\\
+`r x[3] + 10`\\
+\vdots \\
+`r x[4] + 10`\\
+\end{bmatrix}
+$$
+
+In R we can do this simply with:
+
+```{r , echo=TRUE, include=TRUE}
+
+# Add the constant 1 as X_0
+
+X <- matrix(
+  cbind( 1, x ), 
+  ncol = 2
+  )
+
+# Bind a and b into a vector beta
+
+beta <- matrix(
+  cbind( b, a ), 
+  nrow = 2
+  )
+
+Y <- X %*% beta 
+
+Y
+
+```
+
+We can check this against the earlier calculation of $y$:
+
+```{r , include=TRUE, echo=TRUE}
+
+# Need to subset Y[,1] to get an R vector back
+
+identical(y,Y[,1])
+
+```
+
+# Least squares
+
+Ok, this is all well and good, we can make a prediction $Y=X^T\beta$, but how on earth do we get $\beta$.
+In previous posts, I variously used [gradient descent](http://www.machinegurning.com/rstats/gradient-descent/), the [BFGS](http://www.machinegurning.com/rstats/R_classes/) algorithm, and the 'normal equation' or least squares method, which is what I will reproduce here.
+
+This method provides an exact solution for a given linear model, which is handy, but there are situations where this method may not be appropriate.
+The main issue with the normal equation, is that when dealing with very large amounts of data i.e. $n>10,000$ then the imperative to solve the matrix inverse $(X^TX)^{-1}$ means that it can be computationally expensive.
+In addition, there are cases when the matrix given by $(X^TX)$ will not be invertible, and so will simply not work.
+This typically occurs when feaures $X_i$ and $X_j$ are linearly dependent, or when there are too many input features, i.e. $X$ is wider than it is long, i.e. $p>>n$ problems.
+
+To calculate $\beta$ we can simply solve the equations:
+
+$$
+RSS(\beta)=\sum^N_{i=1}(y_i-x^T_i\beta)^2
+$$
+
+This is the notation that Hastie, et al. use, and RSS stands for the residual sum of squares.
+This simplifies (in matrix notation) to:
+
+$$
+\beta=(X^TX)^{-1}X^Ty
+$$
+
+In R, this looks like `solve(t(X) %*% X) %*% (t(X) %*% y)`, which should return `10 1`:
+
+```{r , echo=TRUE, include=TRUE}
+
+coef_ne <- solve(t(X) %*% X) %*% (t(X) %*% y)
+
+coef_ne
+```
+
+### QR decomposition
+
+Actually it turns out that using this solution is not the most efficient.
+Leisch[^3] counsels against it and instead, the base implemetation of `lm()` uses QR decomposition.
+
+[^3]:https://cran.r-project.org/doc/contrib/Leisch-CreatingPackages.pdf
+
+A quick Google, and you will see that QR decomposition has been considered to be one of the [most influential algorithms of the 20th Century](http://www.siam.org/pdf/news/637.pdf). 
+In simple terms[^4], a QR decomposition is the breaking down of a matrix into two product matrices with specific properties.
+If we start with a matrix $M$, QR decomposition would give us $M=QR$ where $Q$ is an orthogonal matrix, and $R$ an upper triangular matrix.
+
+[^4]: [https://en.wikipedia.org/wiki/QR_decomposition](https://en.wikipedia.org/wiki/QR_decomposition)
+
+So for the matrix $X$ that we have been using so far, we can do this in R with the following: 
+
+```{r , include=TRUE, echo=TRUE}
+
+# First create a QR object
+qrx <- qr(X)
+
+# Calculate Q and R
+
+Q <- qr.Q(qrx, complete = TRUE)
+R <- qr.R(qrx)
+
+```
+
+This gives us:
+
+$$
+\begin{bmatrix}
+`r paste(round(X[1,],2),collapse="&")` \\
+`r paste(round(X[2,],2),collapse="&")` \\
+`r paste(round(X[3,],2),collapse="&")` \\
+`r paste(round(X[4,],2),collapse="&")` \\
+`r paste(round(X[5,],2),collapse="&")` \\
+`r paste(round(X[6,],2),collapse="&")` \\
+`r paste(round(X[7,],2),collapse="&")` \\
+`r paste(round(X[8,],2),collapse="&")` \\
+`r paste(round(X[9,],2),collapse="&")` \\
+`r paste(round(X[10,],2),collapse="&")` \\
+\end{bmatrix}=
+\begin{bmatrix}
+`r paste(round(Q[1,],2),collapse="&")` \\
+`r paste(round(Q[2,],2),collapse="&")` \\
+`r paste(round(Q[3,],2),collapse="&")` \\
+`r paste(round(Q[4,],2),collapse="&")` \\
+`r paste(round(Q[5,],2),collapse="&")` \\
+`r paste(round(Q[6,],2),collapse="&")` \\
+`r paste(round(Q[7,],2),collapse="&")` \\
+`r paste(round(Q[8,],2),collapse="&")` \\
+`r paste(round(Q[9,],2),collapse="&")` \\
+`r paste(round(Q[10,],2),collapse="&")` \\
+\end{bmatrix}
+\begin{bmatrix}
+`r paste(round(R[1,],2),collapse="&")` \\
+`r paste(round(R[2,],2),collapse="&")` \\
+\end{bmatrix}
+$$
+
+I'm not going to go into any more detail here, but suffice it to say that the `qr` object can simply be solved in R to return our coefficients $\beta$:
+
+```{r , include=TRUE, echo=TRUE}
+
+# If we first created the qr object:
+
+solve.qr(qrx, y)
+
+```
+
+The explanation for why QR decomposition is favoured over solving the normal equation rests in part in the expensive operation $(X^TX)^{-1}$.
+In my experiments (which were admittedly not very scientific), the QR method seemed to take as little as half the time of least squares when trying to solve $X\in\mathbb{R}^{m \times n}$ for large matrices.
+Furthermore, where $n$ is much larger than $m$ (say 10 times), the normal equation fails completely, and will return the following error in R:
+
+```system is computationally singular: reciprocal condition number```
+
+whilst the QR method will at least complete (see the underlying .Rmd for an example I tried).
+
+```{r , eval=FALSE}
+
+library(rbenchmark)
+
+X_a <- runif(100000) %>% 
+  matrix(nrow = 10000) %>%
+  cbind(1,.)
+
+dim(X_a)
+
+beta_a <- ncol(X_a) %>%
+  seq(1,.)
+
+Y_a <- X_a %*% beta_a
+
+benchmark(
+  l_squares = solve(t(X_a) %*% X_a) %*% (t(X_a) %*% Y_a),
+  qr = qr.solve(X_a, Y_a),
+  replications = 100
+  )
+
+```
+
+# Linear models for classification
+
+So now we have seen how to get the parameters $\beta$, I will use a linear model in anger. 
+Here I reproduce the example by Hastie et al. to show a simple linear model used for two class classification.
+
+## Generate some data
+
+First we generate data based on two distinct normal distributions, which we will seek to separate usin gthe linear model.
+I've copied this code from my earlier post on [k-means](/rstats/knn).
+
+In the code chunk below I use Hadley's excellent [purrr](https://github.com/hadley/purrr) package to create 10 bivariate normal distributions, which are then plotted together.
+The reason for this will become apparent when I move onto nearest neighbour methods in my next post.
+
+```{r , include=TRUE, echo=TRUE}
+# First generate some training data.
+
+library(purrr)
+library(tibble)
+library(magrittr)
+
+# Set a seed for reproducibility
+
+set.seed(1337)
+
+# This function will create bivariate normal distributions about two means with
+# a singular deviation
+
+dummy_group <- function(
+  x = 30, 
+  mean1 = 10, 
+  mean2 = 10, 
+  sd = 0.45
+  ) {
+
+  cbind(
+    rnorm(x, mean1, sd),
+    rnorm(x, mean2, sd)
+  )
+
+}
+
+# Generate 10 bivariate distributions using normal distributions to generate the
+# means for each of the two variables. Bind this all together into a dataframe, 
+# and label this for training examples. Note that I draw the distinctions
+# between 0s and 1s, pretty much by eye - there was not magic to this.
+
+dummy_data <- data_frame(
+  mean1 = rnorm(10),
+  mean2 = rnorm(10)
+) %>%
+  pmap(dummy_group) %>%
+  map(as.data.frame) %>%
+  rbind_all %>%
+  mutate(
+    group = rep(1:10, each = 30),
+    group = factor(group),
+    group_bit = ifelse(group %in% c(2,3,5,10), 0, 1),
+    group_bit = factor(group_bit)
+  ) %>%
+  select(
+    X = V1,
+    Y = V2,
+    group,
+    group_bit
+    )
+  
+```
+
+I set $G\in\{0,1\}$ (having divided the bivariate distributions roughly by eye); so now we can train a model based on $G$ to find a decision boundary.
+
+Now lets plot the data to see what we have.
+
+```{r 2016-05-08-linear-classification, echo=TRUE, fig.height=6, fig.width=8, include = TRUE}
+
+library(ggplot2)
+
+p <- dummy_data %>%
+  ggplot +
+  aes(
+    x = X,
+    y = Y,
+    colour = group_bit
+  ) +
+  geom_point(
+    size = 3
+    )
+
+p
+
+```
+
+## Applying the linear model
+
+Now lets try to apply a linear model to the data, using $G$ as the explanatory variable.
+
+```{r , echo=TRUE, include=TRUE}
+
+#Start by defining training data - note that these must be vector/matrix, not 
+#dataframes.
+
+G <- dummy_data$group_bit %>%
+  #as.character %>% 
+  as.integer
+
+X <- dummy_data[,c("X","Y")] %>%
+  as.matrix
+
+```
+
+For the sake of argument, I use both the normal equation for least squares, but also use the $QR$ decomposition method.
+
+```{r , echo=TRUE, include=TRUE}
+
+beta <- solve(t(X) %*% X) %*% (t(X) %*% G)
+beta_qr <- qr.solve(X, G)
+
+beta
+
+```
+
+And we can check that these match...
+
+```{r , echo=TRUE, include=TRUE}
+
+all.equal(
+  as.vector(beta),
+  as.vector(beta_qr)
+  )
+
+```
+
+Great.
+So how does our model do?
+
+```{r , echo=TRUE, include=TRUE}
+
+# Make our prediction with X'B, and round this to get full numbers. Any values 
+# above 0 become 1, below zero becomes 0. Note that R has changed G from G in
+# {0,1} to G in {1,2}. Our prediction Y is on the top axis, the actual class G
+# is on the left axis.
+
+Y <- X %*% beta
+Y <- ifelse(Y > 0.5, 1, 0)
+
+table(G, Y)
+
+
+```
+
+So, most of the time, this very simple model is sufficient to make this binary classification.
+Only in 20/300 cases do we get a Type II error (a false negative), whilst in 2/300 cases we get a Type I error (a false positive).
+
+To plot the decision boundary, we need to create a grid of predictions which we can then divide by running the linear algorithm on.
+The following function does this, then we can include the boundary on a plot with `geom_contour()`.
+
+```{r, echo=TRUE, include=TRUE}
+
+draw_boundary <- function(xy, beta) {
+  
+  u <- rep(xy, times = length(xy))
+  v <- rep(xy, each = length(xy))
+  
+  X <- cbind(u,v)
+  
+  Y <- X %*% beta
+  
+  cbind(X, Y) %>% 
+    as.data.frame %>%
+    mutate(
+      actual = ifelse(Y > 0.5, 1, 0)
+    )
+}
+
+
+
+
+```
+
+And, plotting it out using shapes to indicate the predictions, we can see that the decision boundary runs a little above the top of the actual $0$ class.
+Anything above this line, our model has predicted to be $G=1$, and below it $G=0$.
+The two pink triangles are our false positives, whilst the blue circles below the line are our false negatives.
+
+```{r 2016-05-08-decision-boundary, echo=TRUE, include=TRUE, fig.height=6, fig.width=8}
+
+draw_boundary(
+  seq(from = -4, to = 4, length = 1000),
+  beta
+  ) %>%
+  ggplot +
+  aes(
+    x = u,
+    y = v,
+    z = actual,
+    colour = actual
+  ) +
+  geom_contour(
+    size = 0.4,
+    colour = "black",
+    bins = 1
+  ) +
+  geom_point(
+    data = dummy_data %>% cbind(prediction = Y) %>%
+      mutate(
+        prediction = factor(prediction),
+        actual = factor(group_bit)
+      ),
+    aes(
+      x = X,
+      y = Y,
+      colour = actual,
+      shape = prediction
+    ),
+    size = 3
+  ) +
+  coord_cartesian(
+    xlim = c(-2.2,2.8),
+    ylim = c(-3,3.5)
+    ) +
+  xlab("X") +
+  ylab("Y")
+
+```
+
+I look forward to delving deeper into [The Elements of Statistical Learning](http://statweb.stanford.edu/~tibs/ElemStatLearn/).
+
+```{r,include=TRUE}
+sessionInfo()
+```
