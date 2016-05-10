@@ -107,15 +107,24 @@
   @include clearfix;
   animation: intro 0.3s both;
   animation-delay: 0.25s;
-
+  
+  &--overlay {
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  
+  &--overlay-pattern {
+      background-size: auto;
+      background-repeat: repeat;
+  }
+  
+  &--overlay-pattern,
   &--overlay {
     position: relative;
     margin-bottom: 2em;
     padding: 3em 0;
     @include clearfix;
     text-align: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
     animation: intro 0.3s both;
     animation-delay: 0.25s;

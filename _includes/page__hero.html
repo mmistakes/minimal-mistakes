@@ -24,7 +24,15 @@
   {% capture overlay_filter %}rgba(0, 0, 0, {{ page.header.overlay_filter }}){% endcapture %}
 {% endif %}
 
-<div class="page__hero{% if page.header.overlay_color or page.header.overlay_image %}--overlay{% endif %}"
+{% if page.header.overlay_image and page.header.overlay_pattern %}
+  {% capture class_name %}page__hero--overlay-pattern{% endcapture %}
+{% elsif page.header.overlay_color or page.header.overlay_image %}
+  {% capture class_name %}page__hero--overlay{% endcapture %}
+{% else %}
+  {% capture class_name %}page__hero{% endcapture %}
+{% endif %}
+
+<div class="{{ class_name }}"
   style="{% if page.header.overlay_color %}background-color: {{ page.header.overlay_color | default: 'transparent' }};{% endif %} {% if overlay_img_path %}background-image: {% if overlay_filter %}linear-gradient({{ overlay_filter }}, {{ overlay_filter }}), {% endif %}url('{{ overlay_img_path }}');{% endif %}"
 >
   {% if page.header.overlay_color or page.header.overlay_image %}
