@@ -4,8 +4,14 @@ permalink: /docs/history/
 excerpt: "Changelog of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2016-05-02T11:57:25-04:00
+modified: 2016-05-10T08:27:54-04:00
 ---
+
+## [3.1.6](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.6)
+
+### Maintenance
+
+- Update gem dependencies. Run `bundle` to update `Gemfile.lock`.
 
 ## [3.1.5](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.5)
 
