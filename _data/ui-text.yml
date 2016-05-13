@@ -26,6 +26,7 @@ en: &DEFAULT_EN
   powered_by            : "Powered by"
   website_label         : "Website"
   email_label           : "Email"
+  recent_posts          : "Recent Posts"
 en-US:
   <<: *DEFAULT_EN
 en-UK:
