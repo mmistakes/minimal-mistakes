@@ -7,7 +7,7 @@ modified: `r format(Sys.time(), '%Y-%m-%d')`
 layout: post
 excerpt: "Using dplyr, broom, and purrr to make life easy"
 published: yes
-status: processed
+status: process
 tags:
 - R
 - dplyr
@@ -259,7 +259,7 @@ partition <- function(df, n, probs) {
 
 Note that this makes use of the new `purrr::transpose()` function which applies something like a matrix transpose to a list, and when coerced, returns a `data_frame` containing $n$ random splits of the data.
 
-```{r}
+```{r,echo=TRUE}
 boot <- partition(mtcars, 100, c(training = 0.8, test = 0.2))
 boot
 ```

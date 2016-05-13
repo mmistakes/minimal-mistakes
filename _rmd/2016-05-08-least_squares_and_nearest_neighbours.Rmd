@@ -36,7 +36,7 @@ Working through it week on week with a group of like-minded people is a great wa
 # Linear models
 
 In this post I implement in R some of the ideas that are presented in the first 2 chapters of Elements of Statistical Learning, namely: least squares.
-I've written about linear models before; whilst doing Andrew Ng's excellent [Machine learning](https://www.coursera.org/learn/machine-learning/home/info?source=cdpv2) I wrote a toy R package [vlrr](https://github.com/ivyleavedtoadflax/vlrr) to implement linear regression with regularisation to mainly as an exercise in ackage development.
+I've written about linear models before; whilst doing Andrew Ng's excellent [Machine learning](https://www.coursera.org/learn/machine-learning/home/info?source=cdpv2) I wrote a toy R package [vlrr](https://github.com/ivyleavedtoadflax/vlrr) to implement linear regression with regularisation mainly as an exercise in ackage development.
 
 ## Prediction from linear models
 

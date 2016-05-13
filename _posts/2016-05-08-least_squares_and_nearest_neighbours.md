@@ -3,7 +3,7 @@ title: "Getting to grips with 'Elements of statistical learning'"
 author: matt_upson
 comments: yes
 date: '2016-05-08'
-#modified: 2016-05-08
+#modified: 2016-05-13
 layout: post
 excerpt: "Linear models and least squares"
 published: true
@@ -27,7 +27,7 @@ Working through it week on week with a group of like-minded people is a great wa
 # Linear models
  
 In this post I implement in R some of the ideas that are presented in the first 2 chapters of Elements of Statistical Learning, namely: least squares.
-I've written about linear models before; whilst doing Andrew Ng's excellent [Machine learning](https://www.coursera.org/learn/machine-learning/home/info?source=cdpv2) I wrote a toy R package [vlrr](https://github.com/ivyleavedtoadflax/vlrr) to implement linear regression with regularisation to mainly as an exercise in package development.
+I've written about linear models before; whilst doing Andrew Ng's excellent [Machine learning](https://www.coursera.org/learn/machine-learning/home/info?source=cdpv2) I wrote a toy R package [vlrr](https://github.com/ivyleavedtoadflax/vlrr) to implement linear regression with regularisation mainly as an exercise in ackage development.
  
 ## Prediction from linear models
  
@@ -640,7 +640,7 @@ sessionInfo()
 ## [1] stats     graphics  grDevices utils     datasets  base     
 ## 
 ## other attached packages:
-## [1] ggplot2_2.1.0  magrittr_1.5   tibble_1.0     purrr_0.2.1   
+## [1] ggplot2_2.1.0  tibble_1.0     purrr_0.2.1    magrittr_1.5  
 ## [5] dplyr_0.4.3    testthat_0.8.1 knitr_1.12.3  
 ## 
 ## loaded via a namespace (and not attached):
