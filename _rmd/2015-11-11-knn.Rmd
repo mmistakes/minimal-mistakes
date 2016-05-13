@@ -56,7 +56,6 @@ $$
 i.e. calculating the Euclidean norm of the vector $x^{(i)}$.
 This is very simply achieved through pythagorean trigonometry, and is already implemented in R with `norm`.
 
-
 #### Generate dummy data
 
 The first step is to generate dummy two dimensional data which will demonstrate the principles well.

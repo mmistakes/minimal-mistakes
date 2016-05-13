@@ -2,8 +2,8 @@
 title: "Iteratively applying models"
 author: matt_upson
 comments: yes
-date: '2016-03-27'
-modified: 2016-04-07
+date: "2016-03-27"
+modified: "2016-05-28"
 layout: post
 excerpt: "Using dplyr, broom, and purrr to make life easy"
 published: true
@@ -18,7 +18,6 @@ categories: Rstats
  
 {% include _toc.html %}
  
-
  
 I've been doing a lot of programming in Python recently, and have taken my eye off the #RStats ball of late.
 With a bit of time to play over the Easter weekend, I've been reading [Hadley](https://twitter.com/hadleywickham)'s new [R for Data Science](http://r4ds.had.co.nz/) book.
@@ -538,12 +537,11 @@ Keeping an eye on the development of **purrr** would be a good move I think.
  
 ## References
  
-* https://github.com/hadley/purrr  
-* http://r4ds.had.co.nz/lists.html  
-* http://r4ds.had.co.nz/model-assessment.html  
-* https://cran.r-project.org/web/packages/broom/vignettes/kmeans.html  
-* https://cran.r-project.org/web/packages/broom/vignettes/broom.html  
- 
+* <https://github.com/hadley/purrr>  
+* <http://r4ds.had.co.nz/lists.html>  
+* <http://r4ds.had.co.nz/model-assessment.html>  
+* <https://cran.r-project.org/web/packages/broom/vignettes/kmeans.html>  
+* <https://cran.r-project.org/web/packages/broom/vignettes/broom.html>   
  
  
  

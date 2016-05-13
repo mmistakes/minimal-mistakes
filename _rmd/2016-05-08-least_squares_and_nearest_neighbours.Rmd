@@ -7,7 +7,7 @@ date: '2016-05-08'
 layout: post
 excerpt: "Linear models and least squares"
 published: true
-status: process
+status: processed 
 tags:
 - statistics
 - data science
@@ -428,6 +428,8 @@ dummy_data <- data_frame(
     group_bit
     )
   
+dummy_data %>% saveRDS("data/2016-05-08-dummy_data.Rds")
+
 ```
 
 I set $G\in\{0,1\}$ (having divided the bivariate distributions roughly by eye); so now we can train a model based on $G$ to find a decision boundary.

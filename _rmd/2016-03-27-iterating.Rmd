@@ -2,12 +2,12 @@
 title: "Iteratively applying models"
 author: matt_upson
 comments: yes
-date: '2016-03-27'
+date: "2016-03-27"
 modified: `r format(Sys.time(), '%Y-%m-%d')`
 layout: post
 excerpt: "Using dplyr, broom, and purrr to make life easy"
 published: yes
-status: process
+status: processed 
 tags:
 - R
 - dplyr
@@ -298,11 +298,11 @@ Keeping an eye on the development of **purrr** would be a good move I think.
 
 ## References
 
-* https://github.com/hadley/purrr  
-* http://r4ds.had.co.nz/lists.html  
-* http://r4ds.had.co.nz/model-assessment.html  
-* https://cran.r-project.org/web/packages/broom/vignettes/kmeans.html  
-* https://cran.r-project.org/web/packages/broom/vignettes/broom.html  
+* <https://github.com/hadley/purrr>  
+* <http://r4ds.had.co.nz/lists.html>  
+* <http://r4ds.had.co.nz/model-assessment.html>  
+* <https://cran.r-project.org/web/packages/broom/vignettes/kmeans.html>  
+* <https://cran.r-project.org/web/packages/broom/vignettes/broom.html>  
 
 
 
