@@ -4,8 +4,18 @@ permalink: /docs/history/
 excerpt: "Changelog of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2016-05-10T08:27:54-04:00
+modified: 2016-05-13T10:45:08-04:00
 ---
+
+## [3.1.7](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.7)
+
+### Enhancement
+
+- Add translation key for "Recent Posts" used in home page `index.html`. [#316](https://github.com/mmistakes/minimal-mistakes/pull/316)
+
+### Maintenance
+
+- Small fix to avoid underlying the whitespace between icons and related text when hovering. [#303](https://github.com/mmistakes/minimal-mistakes/pull/303)
 
 ## [3.1.6](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.6)
 
