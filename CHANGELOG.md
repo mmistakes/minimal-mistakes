@@ -1,3 +1,13 @@
+## [3.1.7](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.7)
+
+### Enhancement
+
+- Add translation key for "Recent Posts" used in home page `index.html`. [#316](https://github.com/mmistakes/minimal-mistakes/pull/316)
+
+### Maintenance
+
+- Small fix to avoid underlying the whitespace between icons and related text when hovering.[#303](https://github.com/mmistakes/minimal-mistakes/pull/303)
+
 ## [3.1.6](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.6)
 
 ### Maintenance
