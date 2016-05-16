@@ -2,7 +2,7 @@
 title: "Installation"
 permalink: /docs/installation/
 excerpt: "Instructions for installing the theme for new and existing Jekyll based sites."
-modified: 2016-04-28T11:12:50-04:00
+modified: 2016-05-16T10:07:40-04:00
 ---
 
 {% include base_path %}
@@ -64,6 +64,21 @@ If you're not planning on hosting with GitHub Pages and want to leverage feature
 
 ```bash
 $ bundle install
+```
+
+**Note:** The [GitHub Pages gem](https://github.com/github/pages-gem) installs additional dependencies that need to be added to your `Gemfile` if you replace `gem "github-pages"` with `gem "jekyll"`. To do this add the following gems and then run `bundle install`.
+{: .notice--warning}
+
+```ruby
+source "https://rubygems.org"
+
+gem "jekyll"
+gem "jekyll-paginate"
+gem "jekyll-sitemap"
+gem "jekyll-gist"
+gem "jekyll-feed"
+gem "jemoji"
+gem "wdm", "~> 0.1.0" if Gem.win_platform?
 ```
 
 <figure>
