@@ -10,7 +10,7 @@ locale                   : "fr-FR"
 title                    : "Le Têtard"
 title_separator          : "-"
 name                     : "Le Têtard"
-description              : "An amazing website."
+description              : "Les expérience d'un jeune motard aspirant Grenouille."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  : https://github.com/le-tetard/le-tetard.github.io
@@ -62,7 +62,7 @@ google_ad_slot           :
 # Site Author
 author:
   name             : "Le Têtard"
-  avatar           : "bio-photo.jpg"
+  avatar           : "le-tetard.jpg"
   bio              : "Jeune motard passionné"
   location         : "Sur la moto"
   email            :
