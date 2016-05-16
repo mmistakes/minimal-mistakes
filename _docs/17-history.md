@@ -4,8 +4,20 @@ permalink: /docs/history/
 excerpt: "Changelog of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2016-05-13T10:45:08-04:00
+modified: 2016-05-16T09:57:50-04:00
 ---
+
+## [3.1.8](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.8)
+
+### Bug Fixes
+
+- Fix `Liquid Exception: undefined method 'gsub' for nil:NilClass in _layouts/single.html` error when `page.title` is null. `<h1>` element is now conditional if `title: ` is not set for a `page` or collection item. [#312](https://github.com/mmistakes/minimal-mistakes/issues/312)
+
+### Maintenance
+
+- Remove duplicate `fa-twitter` and `fa-twitter-square` classes from `_utilities.scss`. [#302](https://github.com/mmistakes/minimal-mistakes/issues/302)
+
+- Document installing additional Jekyll gem dependencies when using `gem "jekyll"` instead of `gem "github-pages"` to avoid any errors on run. [#305](https://github.com/mmistakes/minimal-mistakes/issues/305)
 
 ## [3.1.7](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.7)
 
