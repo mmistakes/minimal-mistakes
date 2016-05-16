@@ -205,3 +205,23 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+defaults:
+  # _posts
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      comments: true
+      share: true
+  # _pages
+  -
+    scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
