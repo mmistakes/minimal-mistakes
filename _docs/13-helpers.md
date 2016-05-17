@@ -27,7 +27,7 @@ feature_row:
   - image_path: unsplash-gallery-image-3-th.jpg
     title: "Placeholder 3"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
-modified: 2016-04-18T16:05:02-04:00
+modified: 2016-05-17T14:30:10-04:00
 ---
 
 {% include base_path %}
@@ -44,7 +44,7 @@ Instead of repeating `{% raw %}{{ site.url }}{{ site.baseurl }}{% endraw %}` ove
 
 ## Group by Array
 
-[Jekyll Group-By-Array](https://github.com/mushishi78/jekyll-group-by-array) by [Max White](mushishi78@gmail.com).
+[Jekyll Group-By-Array](https://github.com/mushishi78/jekyll-group-by-array) by Max White.
 
   A liquid include file for Jekyll that allows an object to be grouped by an array.
 

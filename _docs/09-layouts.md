@@ -7,7 +7,7 @@ single_layout_gallery:
     alt: "single layout with header example"
   - image_path: mm-layout-single-meta.png
     alt: "single layout with comments and related posts"
-modified: 2016-04-13T15:54:02-04:00
+modified: 2016-05-17T14:32:44-04:00
 ---
 
 {% include base_path %}
@@ -250,7 +250,7 @@ header:
   overlay_color: "#333"
 ```
 
-You can also specifying the opacity (between 0 and 1) of a black overlay like so:
+You can also specifying the opacity (between `0` and `1`) of a black overlay like so:
 
 ![transparent black overlay]({{ base_path }}/images/mm-header-overlay-black-filter.jpg)
 
