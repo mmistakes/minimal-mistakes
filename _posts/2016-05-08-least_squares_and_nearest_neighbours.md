@@ -3,7 +3,7 @@ title: "Getting to grips with 'Elements of statistical learning'"
 author: matt_upson
 comments: yes
 date: '2016-05-08'
-#modified: 2016-05-13
+modified: '2016-05-17'
 layout: post
 excerpt: "Linear models and least squares"
 published: true
@@ -23,6 +23,8 @@ categories: Rstats
 Last week I joined a reading group for the weighty tome [Elements of Statistical Learning](http://statweb.stanford.edu/~tibs/ElemStatLearn/).
 I really like the idea of this group; interesting as it is - it can be hard to maintain the drive to wade through a text like this.
 Working through it week on week with a group of like-minded people is a great way to overcome this.
+
+**Note that this blog post (and indeed all my blog posts) are written using markdown in a reproducible format. All the code used to produce this page is available freely on [github](https://github.com/machinegurning/machinegurning.github.io/blob/master/_posts/2016-05-08-least_squares_and_nearest_neighbours.md). If you spot an error (there are some), please either [email me](mailto:matthew.a.upson@gmail.com?Subject=machinegurning.com) or create a [pull request](https://github.com/machinegurning/machinegurning.github.io/pulls). Thanks!**
  
 # Linear models
  
@@ -366,14 +368,12 @@ solve.qr(qrx, y)
 {% endhighlight %}
  
 The explanation for why QR decomposition is favoured over solving the normal equation rests in part in the expensive operation $(X^TX)^{-1}$.
-In my experiments (which were admittedly not very scientific), the QR method seemed to take as little as half the time of least squares when trying to solve $X\in\mathbb{R}^{m \times n}$ for large matrices.
+In my experiments (which were admittedly not very scientific), the QR method seemed to take as little as half the time of least squares when trying to solve $X^{T}\beta$ for large matrices.
 Furthermore, where $n$ is much larger than $m$ (say 10 times), the normal equation fails completely, and will return the following error in R:
  
 ```system is computationally singular: reciprocal condition number```
  
 whilst the QR method will at least complete (see the underlying .Rmd for an example I tried).
- 
-
  
 # Linear models for classification
  
@@ -382,10 +382,8 @@ Here I reproduce the example by Hastie et al. to show a simple linear model used
  
 ## Generate some data
  
-First we generate data based on two distinct normal distributions, which we will seek to separate usin gthe linear model.
-I've copied this code from my earlier post on [k-means](/rstats/knn).
- 
 In the code chunk below I use Hadley's excellent [purrr](https://github.com/hadley/purrr) package to create 10 bivariate normal distributions, which are then plotted together.
+I've re-used some code from my earlier post on [k-means](/rstats/knn).
 The reason for this will become apparent when I move onto nearest neighbour methods in my next post.
  
 
