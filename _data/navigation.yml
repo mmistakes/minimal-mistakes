@@ -1,16 +1,13 @@
 # main links links
 main:
   - title: "Projects"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-
-  - title: "Bio"
-    url: https://mmistakes.github.io/minimal-mistakes/
-
-  - title: "Contact"
-    url: https://mmistakes.github.io/minimal-mistakes/year-archive/
+    url: http://localhost:3003/projects/
 
   - title: "Resume"
-    url: https://mmistakes.github.io/minimal-mistakes/page-archive/
+    url: http://localhost:3003/resume/
 
-  - title: "Sample Collections"
-    url: https://mmistakes.github.io/minimal-mistakes/collection-archive/
+  - title: "biography"
+    url: http://localhost:3003/biography/
+
+  - title: "Contact"
+    url: http://localhost:3003/contact/
