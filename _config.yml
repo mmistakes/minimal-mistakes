@@ -7,14 +7,15 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
-title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+title                    : "James Bush"
+title_separator          : "|"
+name                     : "James Bush"
+description              : "Portfolio of the web developer James Bush"
+url                      : #"https://jajajames.github.io"
+port                     : 3003
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
-teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser                   : "small.jpg"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -40,14 +41,15 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : "small.jpg"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-
+    -"https://linkedin/in/jamesbvsh.com"
+    -"https://github.com/jajajames.com"
 # Analytics
 analytics:
   provider               : false # false (default), "google", "google-universal", "custom"
@@ -61,11 +63,11 @@ google_ad_slot           :
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  name             : "James Bush"
+  avatar           : "small.jpg"
+  bio              : "I am a software engineer and graduate of The Iron Yard. This is a collection of my favorite projects. I blog on Medium."
+  location         : "Indianapolis, IN"
+  email            : "jamesbvsh@gmail.com"
   uri              :
   bitbucket        :
   codepen          :
@@ -73,12 +75,13 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "jajajames"
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :
+  linkedin         : "jamesbvsh"
+  medium           : "@jamesbvsh"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
@@ -145,11 +148,25 @@ kramdown:
   enable_coderay: false
 
 
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: true
+      related: true
+
+
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: New_York
 
 
 # Plugins
