@@ -28,14 +28,6 @@ comments:
     colorscheme          : # "light" (default), "dark"
     
 
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      author_profile: true
-
 # SEO Related
 google_site_verification :
 bing_site_verification   :
