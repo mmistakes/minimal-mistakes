@@ -65,8 +65,8 @@ google_ad_slot           :
 author:
   name             : "James Bush"
   avatar           : "small.jpeg"
-  bio              : "I am a software engineer and graduate of The Iron Yard. This is a collection of my favorite projects. I blog on Medium."
-  location         : "Indianapolis, IN"
+  bio              : "Always building, learning, helping, & teaching. I'm a software engineer and graduate of The Iron Yard, Indianapolis."
+  # location         : "Indianapolis, IN"
   email            : "jamesbvsh@gmail.com"
   uri              :
   bitbucket        :
