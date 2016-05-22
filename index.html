@@ -12,12 +12,12 @@ excerpt: "Software Engineer"
 feature_row:
 - image_path: lambnme.jpg
   alt: "placeholder image 1"
-  title: "eCommerce Concept"
-  excerpt: "This is some sample content that goes here with **Markdown** formatting."
+  title: "Sock-o-rama"
+  excerpt: "**Ecommerce** concept built with Stripe checkout."
 - image_path: lambnme.jpg
   alt: "placeholder image 2"
   title: "hAppenStance"
-  excerpt: "My final project was a 30 day challenge app to build helthier habits."
+  excerpt: "My final project was a 30 day challenge app to build helthy habits."
   url: "#test-link"
   btn_label: "Read More"
   btn_class: "btn--inverse"
@@ -25,12 +25,20 @@ feature_row:
   title: "Nifty Gif"
   excerpt: "This is some sample content that goes here with **Markdown** formatting."
 ---
-{% include feature_row id="intro" type="center" %}
+<div id="main" role="main">
+
+{% include sidebar.html %}
+
+<article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+
+<!-- {% include feature_row id="feature_row2" type="left" %} -->
 
 {% include feature_row %}
 
-{% include feature_row id="feature_row2" type="left" %}
+<!-- {% include feature_row id="feature_row3" type="right" %} -->
 
-{% include feature_row id="feature_row3" type="right" %}
+<!-- {% include feature_row id="feature_row4" type="center" %} -->
 
-{% include feature_row id="feature_row4" type="center" %}
+</div>
+
+</div>
