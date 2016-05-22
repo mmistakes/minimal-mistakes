@@ -1,14 +1,52 @@
 ---
-layout: archive
+layout: splash
 author_profile: true
+title: "James H Bush, Software Engineer"
+header:
+  overlay_color: "#999"
+  overlay_image: gdanme.jpg
+  caption: "Life In Ecuador"
+  cta_label: "More Info"
+  cta_url: "http://www.google.com"
+excerpt: "Let's Program Together"
+intro:
+  - excerpt: "I took a nontraditional path to engineering. From law to enducation to software -- The Iron Yard helped me take that final leap. My experiences provide insights for design and colaboration. I believe that with unyielding focus anything is possible."
+feature_row:
+- image_path: https://static.pexels.com/photos/28756/pexels-photo.jpg
+  alt: "placeholder image 1"
+  title: "Sock-o-rama"
+  excerpt: "Ecommerce concept built with Stripe checkout."
+- image_path: https://static.pexels.com/photos/34676/pexels-photo.jpg
+  alt: "placeholder image 2"
+  title: "hAppenStance"
+  excerpt: "30 day challenge app to build helthy habits. Upload from sms or email."
+  url: "#test-link"
+  btn_label: "Read More"
+  btn_class: "btn--inverse"
+- image_path: https://static.pexels.com/photos/16510/wood-coffee-camera-desk-16510.jpg
+  title: "Nifty Gif"
+  excerpt: "Gif shairing app loads images into DOM without page refresh using asynchronous AJAX."
 ---
+<div id="main" role="main">
 
-{% include base_path %}
+{% include sidebar.html %}
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts }}</h3>
+<article class="page" itemscope itemtype="http://schema.org/CreativeWork">
 
-{% for post in paginator.posts %}
-  {% include archive-single.html %}
-{% endfor %}
+{% include feature_row id="intro" type="center" %}
 
-{% include paginator.html %}
+<h1>Projects</h1>
+
+<!-- {% include feature_row id="feature_row2" type="left" %} -->
+
+{% include feature_row %}
+
+<h1>Skills</h1>
+
+<!-- {% include feature_row id="feature_row3" type="right" %} -->
+
+<!-- {% include feature_row id="feature_row4" type="center" %} -->
+
+</div>
+
+</div>

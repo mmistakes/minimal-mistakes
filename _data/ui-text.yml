@@ -21,11 +21,11 @@ en: &DEFAULT_EN
   comments_label        : "Leave a Comment"
   more_label            : "Learn More"
   related_label         : "You May Also Enjoy"
-  follow_label          : "Follow:"
+  follow_label          : "Find Me Online:"
   feed_label            : "Feed"
   powered_by            : "Powered by"
   website_label         : "Website"
-  email_label           : "Email"
+  email_label           : "jamesbvsh@gmail.com"
   recent_posts          : "Recent Posts"
 en-US:
   <<: *DEFAULT_EN
