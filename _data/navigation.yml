@@ -1,13 +1,14 @@
 # main links links
 main:
-  - title: "Projects"
-    url: /projects/
 
   - title: "Resume"
-    url: https://www.dropbox.com/s/3dd4rxzsz98u5hx/jameshbushresume.pdf?dl=0
+    url: https://www.dropbox.com/s/uehqi92akokfen0/jamesbushresume.pdf?dl=0
 
-  - title: "biography"
-    url: /biography/
+  - title: "Blog"
+    url: https://medium.com/@jamesbvsh
 
-  - title: "Contact"
-    url: /contact/
+  - title: "GitHub"
+    url: https://www.linkedin.com/in/jamesbvsh
+
+  - title: "LinkedIn"
+    url: https://www.linkedin.com/in/jamesbvsh
