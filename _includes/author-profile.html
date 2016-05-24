@@ -97,6 +97,9 @@
       {% if author.vine %}
         <li><a href="https://vine.co/u/{{ author.vine }}"><i class="fa fa-fw fa-vine" aria-hidden="true"></i> Vine</a></li>
       {% endif %}
+      {% if author.tableau %}
+        <li><a href="https://public.tableau.com/profile/{{ author.tableau }}"><i class="tableau-icon" aria-hidden="true"></i> Tableau</a></li>
+      {% endif %}
     </ul>
   </div>
 </div>

@@ -6,11 +6,11 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Site Title"
+locale                   : "en-GB"
+title                    : "Portfolio"
 title_separator          : "-"
-name                     : "Lucas"
-description              : "Under Construction."
+name                     : "Lucas Batt"
+description              : "Portfolio of Lucas Batt"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
@@ -27,6 +27,7 @@ comments:
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
 
+# Defaults
 defaults:
   # _posts
   - scope:
@@ -39,6 +40,23 @@ defaults:
       comments: true
       share: true
       related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: portfolio-single
+      author_profile: false
+      share: false
+      nav: "portfolio"
+      sidebar: "Portfolio"
 
 # SEO Related
 google_site_verification :
@@ -74,10 +92,10 @@ google_ad_slot           :
 
 # Site Author
 author:
-  name             : "Lucas"
-  avatar           : "bio-photo.jpg"
-  bio              : "Hi"
-  location         : "Somewhere"
+  name             : "Lucas Batt"
+  avatar           : "lbtrain.jpg"
+  bio              : "(Aspiring) Data Journalist"
+  location         : "Bristol & London"
   email            :
   uri              :
   bitbucket        :
@@ -97,11 +115,13 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : l_ucasbatt
   vine             :
   weibo            :
   xing             :
   youtube          :
+  tableau          : lucas.batt
+
 
 
 # Reading Files
@@ -180,6 +200,12 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+
 
 
 # Archives
