@@ -28,10 +28,16 @@ feature_row:
   title: "Nifty Gif"
   excerpt: "Single page [webapp](https://warm-everglades-56636.herokuapp.com/) for shairing gifs. Images load into DOM without page refresh using asynchronous AJAX. It's on [GitHub](https://github.com/jajajames/Practicalgifs) too."
 feature_row2:
-- image_path: sockdemo.png
-  alt: "placeholder image 1"
-  title: "Sock-o-rama"
-  excerpt: "Ecommerce concept built with a team. The [site](https://intense-depths-34184.herokuapp.com/ 'Hosted on Heroku') uses Stripe API for secure transactions. Read my [article](https://medium.com/@jamesbvsh/setup-an-ecommerce-website-with-rails-5-stripe-and-payola-b1fbc883918d#.lgeg39ozw 'eCommerce Website with Rails 5') about building it. Read the [code](https://github.com/tiy-indy-bee-ror-feb16/sock-o-rama)."
+- excerpt: "Ruby on Rails"
+- excerpt: "JavaScript"
+- excerpt: "GitHub"
+- excerpt: "jQuery"
+- excerpt: "Bootstrap"
+- excerpt: "PostgreSQL"
+- excerpt: "CSS, LESS, SASS"
+- excerpt: "HTML5"
+- excerpt: "MiniTest"
+- excerpt: "Consume and Build APIs"
 ---
 <div id="main" role="main">
 
@@ -41,17 +47,17 @@ feature_row2:
 
 {% include feature_row id="intro" type="center" %}
 
-<h1>Projects</h1>
+<h1 class="subheading text-center">Projects</h1>
 
 <!-- {% include feature_row id="feature_row2" type="left" %} -->
 
 {% include feature_row type="left" %}
 
-<h1>Skills</h1>
+<h1 class="subheading text-center">Current Skillset</h1>
 
 <!-- {% include feature_row id="feature_row2" type="right" %} -->
 
-<!-- {% include feature_row id="feature_row4" type="center" %} -->
+{% include feature_row id="feature_row2" type="center" %}
 
 </div>
 
