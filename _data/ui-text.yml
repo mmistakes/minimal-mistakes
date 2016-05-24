@@ -26,6 +26,7 @@ en: &DEFAULT_EN
   powered_by            : "Powered by"
   website_label         : "Website"
   email_label           : "jamesbvsh@gmail.com"
+  phone_label           : "931-260-2418"
   recent_posts          : "Recent Posts"
 en-US:
   <<: *DEFAULT_EN
