@@ -1,6 +1,6 @@
 ---
 title: "Predicting virtual hat sales in Dota 2."
-author: "Matthew Gregory"
+author: "matt_gregory"
 comments: yes
 date: '2016-04-24'
 modified: `r format(Sys.time(), '%Y-%m-%d')`

@@ -1,6 +1,6 @@
 ---
 title: "The Game of Kaggle"
-author: "Matthew Gregory"
+author: "matt_gregory"
 comments: yes
 date: '2016-05-21'
 modified: 2016-05-21
