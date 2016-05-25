@@ -11,9 +11,7 @@
 
 {% if page.custom_js %}
   {% for js in page.custom_js %}
-  <script type="text/javascript">
-       {% include /viz/vizjs/{{ js }} %}
-       </script>
+   <script src='/viz/vizjs/{{ js }}' type="text/javascript"></script>
   {% endfor %}
 {% endif %}
 
