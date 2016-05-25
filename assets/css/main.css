@@ -5425,3 +5425,33 @@ display: none;
 .archive h1.page__title {
     display: none;
 }
+.grid__wrapper2, h1.gwp {
+    width: 70%;
+    align-content: center;
+    display: inline-block;
+    margin-left: 15%;
+    padding-top: 10px;
+}
+
+.grid__wrapper2 a {
+    color: black;
+    text-decoration: none;
+}
+
+article.profilepage-a {
+  margin: 0 auto;
+      width: 90%;
+}
+
+.tableauPlaceholder {
+    margin: 0 auto;
+}
+section.page__content2 {
+    width: 65%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.sidebar.sticky h3 {
+    font-size: 0.8em;
+}

@@ -3,7 +3,7 @@ permalink: /about/
 title: "About Me"
 excerpt: "Profile of Lucas Batt"
 modified:
-jsarr: viz/profilestats.js
+custom_js: profilestats.js
 ---
 <div class="container">
   <h1 class="stats">Key Skills</h1>

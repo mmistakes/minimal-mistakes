@@ -2,3 +2,23 @@
 
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
+
+{% if page.custom_css %}
+  {% for stylesheet in page.custom_css %}
+  <link rel="stylesheet" href="/css/vizcss{{ stylesheet }}.css" media="screen" type="text/css">
+  {% endfor %}
+{% endif %}
+
+{% if page.custom_js %}
+  {% for js in page.custom_js %}
+  <script type="text/javascript">
+       {% include /viz/vizjs/{{ js }} %}
+       </script>
+  {% endfor %}
+{% endif %}
+
+{% if page.ext_style %}
+  {% for js in page.ext_style %}
+<script type="text/javascript" src="{{ js }}"></script>
+  {% endfor %}
+{% endif %}
