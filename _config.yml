@@ -11,7 +11,7 @@ title                    : "James Bush"
 title_separator          : "|"
 name                     : "James Bush"
 description              : "Portfolio of the web developer James Bush"
-# url                      : "https://jajajames.github.io"
+url                      : "https://jajajames.github.io"
 port                     : 3003
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
