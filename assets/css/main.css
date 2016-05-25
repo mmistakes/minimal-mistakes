@@ -5455,3 +5455,7 @@ section.page__content2 {
 .sidebar.sticky h3 {
     font-size: 0.8em;
 }
+
+.centralise {
+  margin: 0 auto;
+}
