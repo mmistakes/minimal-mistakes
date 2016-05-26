@@ -41,6 +41,12 @@ defaults:
       share: true
       related: true
 
+  - scope:
+      path: "_posts_hidden"
+    values:
+      hidden: true
+      sitemap: false
+
 
 # SEO Related
 google_site_verification :

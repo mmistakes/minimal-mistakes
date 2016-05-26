@@ -1,4 +1,5 @@
 require 'yaml'
+require 'html-proofer'
 
 task :default => :test
 
@@ -38,11 +39,26 @@ namespace :check do |ns|
 
   desc "Validate compiled HTML"
   task :html => :build do
-    puts "Checking HTML..."
-    report = `bundle exec htmlproofer #{rootdir}/_site --check-favicon --check-html --allow-hash-href  --report-missing-names`
-    puts report
-    summary = report.split("\n").last
-    raise summary if $?.to_i > 0
+#    puts "Checking HTML..."
+#    report = `bundle exec htmlproofer #{rootdir}/_site --check-favicon --check-html --allow-hash-href  --report-missing-names`
+#    puts report
+#    summary = report.split("\n").last
+#    raise summary if $?.to_i > 0
+    opts = {
+      check_html: true,
+      check_favicon: true,
+      allow_hash_href: true,
+      check_external_hash: true,
+#      enforce_https: true,
+      verbose: true,
+      validation: {
+        report_missing_names: true
+      },
+      typhoeus: {
+        ssl_verifypeer: false
+      }
+    }
+    HTMLProofer.check_directory("./_site", opts).run
   end
 
   task :all do
