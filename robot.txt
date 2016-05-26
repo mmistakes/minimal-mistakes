@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: googlef1d1a4313cea3be2.html
+
+Sitemap: http://flohw.github.io/sitemap.xml
