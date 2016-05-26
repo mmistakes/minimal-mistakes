@@ -6,9 +6,9 @@ Metapod is a production-ready, OpenStack-based, on-premises solution that Cisco 
 
 ### How to Write and Build
 
-- Write with Markdown in the ``_pages`` directory
+- Write with Markdown in the ``_guides`` directory
 - Site theme is compatible with Jekyll 3.x
-- Workflow is to git clone, create and work in a branch, push up a Pull Request (PR), merge to master, then publish by pushing master to ``gh-pages`` branch.
+- Workflow is to git clone this repo, create and work in a local branch, push up a Pull Request (PR), review, merge to master, then publish by pushing master to ``gh-pages`` branch when ready
 - Build locally with ``bundle install``
 - Docs pages use the single layout
 - Sidebar configuration is found in the ``_config.yml`` file
@@ -27,7 +27,7 @@ Metapod is a production-ready, OpenStack-based, on-premises solution that Cisco 
 - [Jekyll](http://jekyllrb.com/)
 - [Bundler](http://bundler.io/)
 
-readme todo: Write detailed build instructions, determine Content license, configure Google Analytics code, point to Style guide and/or contributor's guide
+readme todo: Write detailed build instructions, determine staging branch deployment, determine versioned branch deployment, determine content license, configure Google Analytics code, point to Style guide and/or contributor's guide
 
 ---
 #### Minimal Mistakes Jekyll theme license:
