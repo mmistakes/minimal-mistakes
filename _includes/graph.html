@@ -1,0 +1,29 @@
+{% if include.graph %}
+
+{% capture graph_div_id %}{{ "graph" }}{% increment graph_number %}{% endcapture %}
+{% assign  graph_data = include.graph.functionplot | jsonify %}
+
+<div id="{{ graph_div_id }}" class="text-center"></div>
+
+<table class="graph_inputs">
+{% tablerow input in include.graph.inputs cols:4 %}
+  {% assign graph_input_id = graph_div_id | append: "_" | append: input.name %}
+  <label for="{{ graph_input_id }}">{{ input.label }}</label>
+  <input id="{{ graph_input_id }}" value="{{ input.value }}"/>
+  {% assign js_find_id = '" + document.getElementById("' | append: graph_input_id | append: '").value + "'%}
+  {% assign graph_data = graph_data | replace: input.name, js_find_id %}
+{% endtablerow %}
+</table>
+
+
+<script type="text/javascript">
+  function plot_{{ graph_div_id }}() {
+    var graphdata = {{ graph_data | replace: '\"', '"' }};
+    graphdata['target'] = "#{{ graph_div_id }}";
+    functionPlot(graphdata);
+  }
+  plot_{{ graph_div_id }}();
+</script>
+
+
+{% endif %}

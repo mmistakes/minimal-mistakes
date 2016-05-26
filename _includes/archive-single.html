@@ -21,7 +21,7 @@
             {% else %}
               "{{ teaser | prepend: "/images/" | prepend: base_path }}"
             {% endif %}
-            alt="">
+            alt="{{ teaser | split: "/" | last | split: "." | first | slugify | replace: "-", " " }}">
         </div>
       {% endif %}
       <h2 class="archive__item-title" itemprop="headline">{% if post.id %}{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}{% else %}{{ post.title }}{% endif %}{% if post.link %}<i class="fa fa-star" aria-hidden="true"></i>{% endif %}</h2>

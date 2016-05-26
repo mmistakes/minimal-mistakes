@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "JESCHOLL"
 title_separator          : "-"
 name                     : "Jason Scholl"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "A blog about networking, computers, programming, finance, all the things that interest me."
+url                      : https://jescholl.github.io
 baseurl                  : # the subpath of your site, e.g. "/blog"
-gh_repo                  :
+gh_repo                  : https://github.com/jescholl/jescholl.github.io
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -26,6 +26,21 @@ comments:
     appid                :
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
+
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+
 
 # SEO Related
 google_site_verification :
@@ -45,14 +60,17 @@ og_image                 : # Open Graph/Twitter default site image
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  name                   : Jason Scholl
+  links:
+    - "https://github.com/jescholl"
+    - "https://twitter.com/jescholl"
+    - "https://keybase.io/jescholl"
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "UA-77377710-1"
 
 # Google AdSense
 google_ad_client         :
@@ -62,8 +80,9 @@ google_ad_slot           :
 # Site Author
 author:
   name             : "Jason Scholl"
-  avatar           : "https://gravatar.com/avatar/54dd96b29ee73d162a4662613c3165e8?s=150"
-  bio              : "I am an amazing person."
+  #avatar           : "https://gravatar.com/avatar/54dd96b29ee73d162a4662613c3165e8?s=150"
+  avatar           : bio-photo.png
+  bio              : "Network Engineer, Linux Administrator, Rubyist, Finance Nerd"
   location         : "Portland, OR"
   email            :
   uri              :
@@ -149,7 +168,7 @@ kramdown:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Los_Angeles
 
 
 # Plugins

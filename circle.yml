@@ -1,0 +1,12 @@
+machine:
+  ruby:
+    version: 2.1.6
+  timezone:
+    America/Los_Angeles
+
+dependencies:
+  pre:
+    - "sudo apt-get install -y aspell"
+test:
+  override:
+    - bundle exec rake test

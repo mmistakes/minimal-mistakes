@@ -11,6 +11,7 @@ div.highlighter-rouge, figure.highlight {
   background-color: $code-background-color;
   box-shadow: $box-shadow;
 
+/*
   &:before {
     position: absolute;
     top: 0;
@@ -24,6 +25,7 @@ div.highlighter-rouge, figure.highlight {
     text-transform: none;
     speak: none;
   }
+*/
 
   .highlight {
     margin: 0;

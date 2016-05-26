@@ -2,12 +2,12 @@
 
 {% if page.previous or page.next %}
   <nav class="pagination">
-    {% if page.previous %}
+    {% if page.previous and page.previous.hidden != true %}
       <a href="{{ base_path }}{{ page.previous.url }}" class="pagination--pager" title="{{ page.previous.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous }}</a>
     {% else %}
       <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_previous }}</a>
     {% endif %}
-    {% if page.next %}
+    {% if page.next and page.next.hidden != true %}
       <a href="{{ base_path }}{{ page.next.url }}" class="pagination--pager" title="{{ page.next.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_next }}</a>
     {% else %}
       <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_next }}</a>
