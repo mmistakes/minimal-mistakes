@@ -119,6 +119,8 @@ exclude:
   - README
   - tmp
   - vendor
+  - googlef1d1a4313cea3be2.html
+  - robots.txt
 keep_files:
   - .git
   - .svn
