@@ -12,7 +12,7 @@ Jeune motard passionné depuis quelques années, j'ai cependant arrêté de comp
 Je suis originaire du Nord-Isère, j'y passé mon permis en 2012 puis roulé sur quelques lignes droites sans personne
 pour m'apprendre à améliorer ma conduite pendant l'année qui a suivit.
 
-Je me suis ensuite délocalisé en Sudie pour le travil. Quelques mois après mon arrivé, j'ai trouvé
+Je me suis ensuite délocalisé en Sudie pour le travail. Quelques mois après mon arrivé, j'ai trouvé
 une association qui justement permait aux débutants et aux motards qui n'ont pas touché un deux roues depuis quelques temps
 de se remettre en selle en donnant des conseils sur la position sur la moto, la façon d'aborder un virage, roulage en groupe
 et toutes ces choses qui ne sont pas toujours appronfondies ou apprises au permis.
