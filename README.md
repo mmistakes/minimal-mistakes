@@ -1,1 +1,1 @@
-Source code of [http://lbatt.com](http://lbatt.com), powered by: [Jekyll](http://jekyllrb.com), [Poole](http://getpoole.com). Based on [minimal-mistakes](mmistakes/minimal-mistakes) theme by [Michael Rose](https://github.com/mmistakes).
+Source code of [http://lbatt.com](http://lbatt.com), powered by: [Jekyll](http://jekyllrb.com), [Poole](http://getpoole.com). Based on [minimal-mistakes](https://github.com/mmistakes/minimal-mistakes) theme by [Michael Rose](https://github.com/mmistakes).
