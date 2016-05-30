@@ -1,3 +1,9 @@
+## [3.2.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.0)
+
+### Bug Fixes
+
+- Fix missing category/tag links in post footer due to possible conflict with `site.tags` and `site.categories`. [#329](https://github.com/mmistakes/minimal-mistakes/issues/329#issuecomment-222375568)
+
 ## [3.1.8](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.8)
 
 ### Bug Fixes
