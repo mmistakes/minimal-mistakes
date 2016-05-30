@@ -15,15 +15,15 @@ GEM
     colorator (0.1)
     ethon (0.9.0)
       ffi (>= 1.3.0)
-    execjs (2.6.0)
+    execjs (2.7.0)
     faraday (0.9.2)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.10)
     ffi (1.9.10-x64-mingw32)
     gemoji (2.1.0)
-    github-pages (78)
+    github-pages (80)
       github-pages-health-check (= 1.1.0)
-      jekyll (= 3.0.5)
+      jekyll (= 3.1.6)
       jekyll-coffeescript (= 1.0.1)
       jekyll-feed (= 0.5.1)
       jekyll-gist (= 1.4.0)
@@ -47,11 +47,11 @@ GEM
       octokit (~> 4.0)
       public_suffix (~> 1.4)
       typhoeus (~> 0.7)
-    html-pipeline (2.4.0)
+    html-pipeline (2.4.1)
       activesupport (>= 2, < 5)
       nokogiri (>= 1.4)
     i18n (0.7.0)
-    jekyll (3.0.5)
+    jekyll (3.1.6)
       colorator (~> 0.1)
       jekyll-sass-converter (~> 1.0)
       jekyll-watch (~> 1.1)
@@ -92,7 +92,7 @@ GEM
       rb-inotify (>= 0.9.7)
     mercenary (0.3.6)
     mini_portile2 (2.0.0)
-    minitest (5.8.4)
+    minitest (5.9.0)
     multipart-post (2.0.0)
     net-dns (0.8.0)
     nokogiri (1.6.7.2)
@@ -117,7 +117,6 @@ GEM
       ethon (>= 0.8.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    wdm (0.1.1)
 
 PLATFORMS
   ruby
@@ -125,7 +124,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  wdm (~> 0.1.0)
 
 BUNDLED WITH
    1.11.2
