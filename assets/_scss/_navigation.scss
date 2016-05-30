@@ -234,8 +234,8 @@
         transition: $global-transition;
       }
 
-      &:hover {
-        &:before {
+      @include breakpoint($medium) {
+        &:hover:before {
           width: 100%;
         }
       }
