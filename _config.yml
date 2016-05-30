@@ -179,10 +179,10 @@ whitelist:
 #  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
 #  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
 #  - <base_path/my-awesome-category/index.html ~> path: /
-categories:
+category_archive:
   type: liquid
   path: /categories/
-tags:
+tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
