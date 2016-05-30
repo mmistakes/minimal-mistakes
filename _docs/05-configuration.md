@@ -457,11 +457,14 @@ The theme ships with support for taxonomy (category and tag) pages. GitHub Pages
 
 The default `type` is set to use Liquid.
 
+**Note:** `category_archive` and `tag_archive` were previously named `categories` and `tags`. Names were changed to avoid possible conflicts with `site.categories` and `site.tags`.
+{: .notice--danger}
+
 ```yaml
-categories:
+category_archive:
   type: liquid
   path: /categories/
-tags:
+tag_archive:
   type: liquid
   path: /tags/
 ```
@@ -476,10 +479,10 @@ If you have the luxury of using Jekyll Plugins then [**jekyll-archives**][jekyll
 Change `type` to `jekyll-archives` and apply the following [configurations](https://github.com/jekyll/jekyll-archives/blob/master/docs/configuration.md):
 
 ```yaml
-categories:
+category_archive:
   type: jekyll-archives
   path: /categories/
-tags:
+tag_archive:
   type: jekyll-archives
   path: /tags/
 jekyll-archives:
