@@ -15,7 +15,7 @@ tags:
 ## Overview
 
 [Sia](https://sia.tech/) is a decentralized, peer-to-peer network for buying and
-selling storage space. To participate in the Sia network, a user needs to keep
+selling storage space. To participate in the Sia network, the user needs to keep
 a Sia server process running at all times.
 
 If you're a regular home user, this may present a challenge. Home computers need
