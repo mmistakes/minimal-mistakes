@@ -1,0 +1,80 @@
+---
+title: "map_df()"
+author: matt_upson
+comments: yes
+date: '2016-05-30'
+modified: `r format(Sys.time(), '%Y-%m-%d')`
+layout: post
+excerpt: "Combining objects as data_frames in purrr"
+published: true
+status: processed
+tags:
+- purrr
+- Rstats
+- R
+categories: Rstats
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  dev = "svg",
+  include = TRUE,
+  message = FALSE,
+  warning = FALSE,
+  error = FALSE
+  )
+
+```
+
+I'm using [Hadley](https://twitter.com/hadleywickham?lang=en-gb)'s [purrr](https://cran.r-project.org/web/packages/purrr/purrr.pdf) package more and more, and its beginning to change the way I program in R, much like [dplyr](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html) did.
+
+`map()` is a great function and one of its incarnations that I really like is `map_df()`.This will apply a function to elements of a list, and then bind the dataframes together (assuming they can be combined).
+It also allows us to specify additional columns for our final dataframe which takes the names of the elements of the list.
+
+Here's a simple example:
+
+```{r 2016-05-30-hist-facet, fig.height=10}
+
+library(dplyr)
+library(purrr)
+library(ggplot2)
+
+# See ?accumulate for my inspiration for this example
+
+rerun(6, rnorm(100)) %>%
+  map_df(
+    ~ data_frame(x = .x), 
+    .id = "dist"
+  ) %>%
+  ggplot +
+  aes(
+    x = x,
+    fill = dist
+  ) +
+  geom_histogram() +
+  facet_wrap(
+    ~dist,
+    ncol = 2 
+  )
+
+```
+
+### So what's going on here?
+
+* First I create a list of six univariate normal distributions using `rnorm()`.  
+* Passing this to `map_df()` with the function (`.f`) argument as  `data_frame(x = .x)` will convert each of these vectors of variables into a dataframe, naming the column of variables as `x`.  
+* `map_df()` essentially does a `bind_rows()` and outputs a single dataframe, adding a new variable `dist` which takes the names of the elements of the list, outputting a long dataframe.  
+* Finally this is passed to `ggplot()` which creates histograms with `geom_histogram()`, and facets them into six panes with `facet_wrap()`.  
+
+```{r}
+map_df
+```
+
+It's a very simply function, but nonetheless very useful.
+This is a fairly contrived example, but I find myself using these `map()` functions a lot recently - especially when training models, and working with lists or dataframes full of dataframes.
+
+
+```{r,include=TRUE}
+sessionInfo()
+```

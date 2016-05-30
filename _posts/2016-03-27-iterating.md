@@ -7,7 +7,7 @@ modified: "2016-05-28"
 layout: post
 excerpt: "Using dplyr, broom, and purrr to make life easy"
 published: true
-status: publish
+status: published
 tags:
 - R
 - dplyr
@@ -464,6 +464,10 @@ partition <- function(df, n, probs) {
  
 Note that this makes use of the new `purrr::transpose()` function which applies something like a matrix transpose to a list, and when coerced, returns a `data_frame` containing $n$ random splits of the data.
  
+{% highlight r %}
+boot <- partition(mtcars, 100, c(training = 0.8, test = 0.2))
+boot
+{% endhighlight %}
 
 {% highlight text %}
 ## Source: local data frame [100 x 2]
