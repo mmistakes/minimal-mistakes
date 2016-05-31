@@ -3,7 +3,7 @@ title: "Profile"
 layout: single
 <!-- excerpt: "Page not found. Your pixels are in another canvas." -->
 <!-- sitemap: false -->
-permalink: /profile
+permalink: /profile.html
 ---
 
 Here I will talk about me.
