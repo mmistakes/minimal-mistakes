@@ -1,7 +1,7 @@
 ---
 title: "Profile"
 layout: single
-permalink: /profile.html
+permalink: /profile/
 ---
 
 Here I will talk about me.
