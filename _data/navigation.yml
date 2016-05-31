@@ -1,13 +1,13 @@
 # main links
 main:
   - title: "Profile"
-    # url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+    url: https://gastd.github.io/profile
 
   - title: "Portifolio"
-    url: https://mmistakes.github.io/minimal-mistakes/
+    url: https://gastd.github.io/portifolio
 
   - title: "My Projects"
-    url: https://mmistakes.github.io/minimal-mistakes/year-archive/
+    url: https://gastd.github.io/projects
 
   # - title: "Sample Pages"
     # url: https://mmistakes.github.io/minimal-mistakes/page-archive/
