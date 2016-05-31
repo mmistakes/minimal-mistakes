@@ -4,4 +4,16 @@ layout: single
 permalink: /projects/
 ---
 
-AUTOBAC PLACAS
+*AUTOBAC Placas
+
+*Need4SS
+
+*NLP Module
+
+*Mars Skycrane
+
+*Task Executive
+
+*Outdoor Localization
+
+*Indoor Localization
