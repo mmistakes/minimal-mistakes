@@ -107,7 +107,7 @@ analytics:
 # Site Author
 author:
   name             : "Gabriel Araujo"
-  avatar           : "bio-photo.jpg"
+  avatar           : "avatar.png"
   bio              : "I am an amazing person."
   location         : "Brasilia, Brazil"
   email            : "gabriel.araujo.5000@gmail.com"
@@ -116,9 +116,9 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "https://www.facebook.com/gabriel.araujo.1205"
   foursquare       :
-  github           :
+  github           : "https://github.com/Gastd"
   google_plus      :
   keybase          :
   instagram        :
