@@ -40,7 +40,7 @@ comments:
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
-    https://www.facebook.com/gabriel.araujo.1205
+    "https://www.facebook.com/gabriel.araujo.1205"
     appid                :
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
