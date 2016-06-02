@@ -1,0 +1,310 @@
+---
+title: "Discrete Time Markov Chains"
+author: matt_gregory
+comments: yes
+date: '2016-06-02'
+modified: `r format(Sys.time(), '%Y-%m-%d')`
+layout: post
+excerpt: "My data science journey is a Markov Chain"
+published: false
+status: process
+tags:
+- Markov Chain
+- Rstats
+- R
+categories: Rstats
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  dev = "svg",
+  include = TRUE,
+  message = FALSE,
+  warning = FALSE,
+  error = FALSE
+  )
+
+```
+
+## Markov chains
+Markov chains, named after Andrey Markov, are mathematical systems that hop from one "state" (a situation or set of values) to another. See [here](http://setosa.io/blog/2014/07/26/markov-chains/index.html) for an excellent introduction.
+
+The second time I used a Markov chain method resulted in a publication (the first was when I simulated Brownian motion with a coin for GCSE coursework). At the time I was completing it as part of the excellent and highly recommended [Sysmic course](http://sysmic.ac.uk/home.html) so that it could contribute to a chapter in my thesis and as a [journal article](http://onlinelibrary.wiley.com/doi/10.1111/imb.12220/abstract;jsessionid=3694FE870B60851D03E74F8EF7D18E79.f04t01).
+
+As I was new to programming, I naively wrote the function myself, to simulate the transition between states of injected insect embryos to model the development of [transgenic insects](https://en.wikipedia.org/wiki/Transgenesis), wherby each injected egg had a change of either living or dying and then, if alive, a chance of incorporating the injected DNA into its genome (simplified explanation).
+
+When using R it is always wiser to find a package that has already been developed and documented, as it is likely to have experienced more testing  than anything you would produce as an individual (it's also quicker). We investigate the `markovchain` package.
+
+## Discrete Time Markov Chain
+
+We define a discrete time markov chain that matches our statistics derived from my review published this year, we consider the diamond back moth summary statistics, *Plutella xylostella* (survival and transformation efficiency).
+
+```{r, warning=FALSE, message=FALSE}
+
+library(markovchain)
+##  Get the diamond back moth summary statistics of interest
+library(dplyr)
+mydata <- read.csv("https://raw.githubusercontent.com/mammykins/piggyBac-data/master/master2015jan.csv",
+header = TRUE) %>% select(g0.lambda, surv)
+
+s <-  median(mydata$surv, na.rm = TRUE) %>% round(digits = 5)
+trans_efficiency <- median(mydata$g0.lambda, na.rm = TRUE) %>% round(digits = 5)
+
+```
+
+First we create our three different states of our Discrete Time Markov Chain (DTMC). Embryo, injection survivor and transgenic adult (`egg`, `g0`, `dead`). We keep things simple to learn how the process works, if injection survivors are non-transgenic then we discard them (their state changes to `dead`).
+
+## Transition matrix
+
+We use a "transition matrix" to tally the transition probabilities. Every state in the state space is included once as a row and again as a column, and each cell in the matrix tells you the probability of transitioning from its row's state to its column's state. The rows of the transition matrix must total to 1. There also has to be the same number of rows as columns.  
+
+Based on our summary statistics in my paper we describe our transition probability between states for *Plutella xylostella* as:
+
+$$\mathbf{X} = \left[\begin{array}
+{rrr}
+0 & 0.13 & 0.87 & 0 \\
+0 & 0 & 0.98 & 0.02 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1 \\
+\end{array}\right]
+$$
+
+Compare this matrix to the matrix `dtmcA` assigned below to elucidate the meaning of the proportions in the matrix.
+
+```{r}
+
+tmA <- matrix(c(0, s, 1 - s, 0,     #  egg to...
+                0, 0, 1 - trans_efficiency, trans_efficiency,   #  g0 to...
+                0, 0, 1, 0,         #  dead to...
+                0, 0, 0, 1),
+              nrow = 4, byrow = TRUE) #define the transition matrix
+dtmcA <- new("markovchain", transitionMatrix = tmA,
+states = c("egg", "g0", "dead", "transgenic"),
+name = "diamondback") #create the DTMC
+dtmcA
+
+```
+
+Eggs operate as the input to the model, we put `egg` in, we then do injections, `r 1-s` of the `egg` die, `r s` survive to produce injection survivors (`g0`), of these `g0`, only 1% give rise to transgenics, the non-transgenics are considered `dead`, or waste insects.
+
+We can use the igraph package to plot the Markov Chain object.
+
+```{r 2016-06-02-trans1, include=TRUE}
+
+plot(dtmcA, main = "Transition probability matrix for DBM")
+
+```
+Or there are `diagram` ways to plot.
+```{r 2016-06-02-trans2, include=TRUE}
+library(diagram)
+plot(dtmcA, main = "Transition probability matrix for DBM", package = "diagram",
+        lwd = 1, box.lwd = 2, cex.txt = 0.8,
+        box.size = 0.1, box.type = "square",
+        box.prop = 0.5)
+
+```
+
+## Probabilistic analysis
+
+* It is possible to access transition probabilities and to perform
+basic operations.
+* Similarly, it is possible to access the conditional distribution of
+states.
+
+```{r}
+
+dtmcA[2, 4] #using [ method
+transitionProbability(dtmcA,
+"g0","transgenic") #using specific S4 method
+conditionalDistribution(dtmcA,"g0")
+
+```
+
+We can use a variety of methods to subset S4 objects. Further examples can be found in Hadley Wickham's [Advanced R](http://adv-r.had.co.nz/).
+
+Excitingly it is possible to simulate states' distributions after `n` steps, where `n` is the number of eggs to be injected, our input to the Markov Chain. If we run one step or one discrete time period then our `egg` are injected and it is determined using matrix multiplication (`tmA` by `initialState`) 
+
+```{r}
+set.seed(1337)
+n <- 1000  #  number of embryos to be injected
+steps <- 1
+
+########
+initialState <- c(n, 0, 0, 0)  #  we start off with only eggs injected, zero for all others
+finalState <- initialState*dtmcA ^ steps #using power operator
+finalState
+```
+
+For the full process of insect transgenesis (injection and setting up wild-type crosses to assess if DNA has been integrated) we need 2 or more steps. What would happen if we specified 10 steps?
+
+```{r}
+set.seed(1337)
+n <- 1000  #  number of embryos to be injected
+steps <- 2
+
+########
+initialState <- c(n, 0, 0, 0)  #  we start off with only eggs injected, zero for all others
+finalState <- initialState*dtmcA ^ steps #using power operator
+finalState
+```
+
+If we specified 2 or greater steps the `finalState` would be identical, as `transgenic` feeds into itself with 100% chance. This is emphasised using the `steadyStates()` function and revealed by the `summary()`.
+
+```{r}
+steadyStates(dtmcA) #S4 method
+summary(dtmcA)
+```
+
+## Estimating a transition matrix from data
+The package permits to fit a DTMC estimating the transition matrix 
+from a sequence of data. `createSequenceMatrix()` returns a function
+showing previous vs actual states from the pairs in a given sequence.     
+The `markovchainFit()` function allows us to obtain the estimated
+transition matrix and the confidence levels (using elliptic Maximum Likelihood Estimate
+hyphothesis).
+
+```{r}
+#using Alofi rainfall dataset
+data(rain)
+str(rain)
+mysequence <- rain$rain
+createSequenceMatrix(mysequence)
+
+myFit <- markovchainFit(data = mysequence, confidencelevel = 0.9)
+myFit
+
+```
+
+So we can call our estimated transition probability matrix using `myFit$estimate`. We could then use it to make predicitons for hypothetical set-ups.
+
+```{r}
+#  Assign our fitted estimate for the transition matrix to tmB
+dtmcB <- myFit$estimate
+dtmcB
+
+set.seed(1337)
+n <- 999  
+steps <- 1
+
+########
+initialState <- c(n/3, n/3, n/3)
+finalState <- initialState*dtmcB ^ steps #using power operator
+finalState
+
+```
+
+If we took the time to understand what the `rain` data was about then this might provide additional insight. The key point is we could develop a discrete time Markov Method based on estimates of a transition matrix from the data.
+
+## Waste water pipe deterioration
+Here we propose a hypothetical situation where we are responsible for the condition of our sewer waste water pipes in a region. We use a survey to describe the current condition with a four-point scale, inspired by Baik et al., (2006). The ranking goes from Brand New to Bad, A to D.
+
+```{r}
+tmC <- matrix(c(0.9, 0.1, 0, 0,    #  a
+                0, 0.8, 0.2, 0,   #  b
+                0, 0, 0.6, 0.4,         #  c
+                0, 0, 0, 1),        #  d
+              nrow = 4, byrow = TRUE) #define the transition matrix
+dtmcC <- new("markovchain", transitionMatrix = tmC,
+states = c("a", "b", "c", "d"),
+name = "element") #create the DTMC
+dtmcC
+```
+
+Correct estimation of transition probabilities in a Markov chain based deterioration model is a key ingredient for successful and cost-effective proactive management of wastewater systems. Imagine our company's estate (all of its pipes) were allowed to deteriorate for one year with an element transition matrix of:
+
+$$\mathbf{X} = \left[\begin{array}
+{rrr}
+0.9 & 0.1 & 0 & 0 \\
+0 & 0.8 & 0.2 & 0 \\
+0 & 0 & 0.6 & 0.4 \\
+0 & 0 & 0 & 1 \\
+\end{array}\right]
+$$
+
+provided by expert domain knowledge from a consultancy or preferably from the data.
+
+```{r}
+
+set.seed(1337)
+show(dtmcC)
+#n <-   #  
+steps <- 1
+
+########
+initialState <- c(12, 35, 18, 5)   
+finalState <- initialState*dtmcC ^ steps #using power operator
+finalState
+
+```
+
+We could then use the transition matrix to model what would happen to our pipes through the next 50 years without any investment. We can set up a data frame to contain labels for each timestep, and a count of how many pipes are in each state at each timestep. Then, we fill that data frame with the results after each timestep `i`, calculated by `initialState * dtmcC ^ i`:
+
+```{r}
+
+#INPUT
+set.seed(1337)
+initialState <- c(12, 35, 18, 5)
+timesteps <- 50
+
+#SIMULATION
+pipe_df <- data.frame( "timestep" = numeric(),
+ "a" = numeric(), "b" = numeric(),
+ "c" = numeric(), "d" = numeric(),
+ stringsAsFactors = FALSE)
+ for (i in 0:timesteps) {
+newrow <- as.list(c(i, round(as.numeric(initialState * dtmcC ^ i), 0)))
+ pipe_df[nrow(pipe_df) + 1, ] <- newrow
+ }
+
+#OUTPUT
+head(pipe_df, 5)
+tail(pipe_df, 5)
+```
+
+A plot may be preferred to visualise the condition of our pipes without investment.
+
+```{r 2016-06-02-pipes-norepair, include=TRUE}
+library(RColorBrewer)
+colours <- brewer.pal(4, "Set1") 
+plot(pipe_df$timestep, pipe_df$b, ylim = c(0, 70), col = colours[1], type = "l",
+     xlab = "Horizon in years", ylab = "Frequency of pipes in state")
+lines(pipe_df$timestep,pipe_df$a, col = colours[2])
+lines(pipe_df$timestep,pipe_df$c, col = colours[3])
+lines(pipe_df$timestep,pipe_df$d, col = colours[4])
+legend("right", legend = c("a", "b", "c", "d"), fill = colours)
+
+```
+
+
+We can calculate the timestep when all pipes break, or a steady state is reached at the absorbing state `r absorbingStates(dtmcC)` by 
+
+```{r}
+
+absorbingStates(dtmcC)
+transientStates(dtmcC)
+steadyStates(dtmcC)
+
+```
+
+As all but state d are transitional, we are interested in when all are equal to zero and "d" is equal to the sum of the frequency of initial states, `r sum(initialState)`.
+
+```{r}
+head(filter(pipe_df, a == 0, b == 0, c  == 0), n = 1)
+#  note the rounding error
+head(filter(pipe_df, a == 0, b == 0, c  == 0, d == sum(initialState)), n = 1)
+
+```
+
+## Extension
+We can use this code to change the various transition probabilities to see what the effects are on the outputs (sensitivity analysis) through [visual inspection](http://www.machinegurning.com/rstats/map_df/) and consider what transition probabilities would strike the right balance (repair and maintenance allows state reversion, from states c and d back to a). Also, there are methods we could use to perform uncertainty analysis, e.g. putting confidence intervals around the transition probabilities. We won't do either of these here. This type of decision modelling scenario is perfect for Shiny app implementation!
+
+## References
+* Gregory, M., Alphey, L., Morrison, N. I., & Shimeld, S. M. (2016). Insect transformation with piggyBac : getting the number of injections just right. Insect Molecular Biology, http://doi.org/10.1111/imb.12220
+* Baik, H., Seok, H., Jeong, D., & Abraham, D. M. (2006). Deterioration Models for Management of Wastewater Systems. Journal of Water Resources Planning and Management, 132(February), 15-24. http://doi.org/10.1061/(ASCE)0733-9496(2006)132:1(15)
+* http://www.r-bloggers.com/a-discrete-time-markov-chain-dtmc-sir-model-in-r/
+
+```{r}
+sessionInfo()
+```
+
