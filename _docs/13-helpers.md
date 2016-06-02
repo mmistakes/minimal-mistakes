@@ -6,12 +6,15 @@ gallery:
   - url: unsplash-gallery-image-1.jpg
     image_path: unsplash-gallery-image-1-th.jpg
     alt: "placeholder image 1"
+    title: "Image 1 title caption"
   - url: unsplash-gallery-image-2.jpg
     image_path: unsplash-gallery-image-2-th.jpg
     alt: "placeholder image 2"
+    title: "Image 2 title caption"
   - url: unsplash-gallery-image-3.jpg
     image_path: unsplash-gallery-image-3-th.jpg
     alt: "placeholder image 3"
+    title: "Image 3 title caption"
 feature_row:
   - image_path: unsplash-gallery-image-1-th.jpg
     alt: "placeholder image 1"
@@ -27,7 +30,7 @@ feature_row:
   - image_path: unsplash-gallery-image-3-th.jpg
     title: "Placeholder 3"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
-modified: 2016-05-17T14:30:10-04:00
+modified: 2016-06-01
 ---
 
 {% include base_path %}
@@ -71,18 +74,22 @@ To place a gallery add the necessary YAML Front Matter.
 | **url**        | Optional     | URL to link gallery image to (eg. a larger detail image). |
 | **image_path** | **Required** | For images placed in the `/images/` directory just add the filename and extension. Use absolute URLS for those hosted externally. |
 | **alt**        | Optional     | Alternate text for image. |
+| **title**      | Optional     | Title text for image. Will display as a caption in a Magnific Popup overlay when linked to a larger image with `url`. |
 
 ```yaml
 gallery:
   - url: unsplash-gallery-image-1.jpg
     image_path: unsplash-gallery-image-1-th.jpg
     alt: "placeholder image 1"
+    title: "Image 1 title caption"
   - url: unsplash-gallery-image-2.jpg
     image_path: unsplash-gallery-image-2-th.jpg
     alt: "placeholder image 2"
+    title: "Image 2 title caption"
   - url: unsplash-gallery-image-3.jpg
     image_path: unsplash-gallery-image-3-th.jpg
     alt: "placeholder image 3"
+    title: "Image 3 title caption"
 ```
 
 And then drop-in the gallery include in the body where you'd like it to appear. 
@@ -101,7 +108,7 @@ And then drop-in the gallery include in the body where you'd like it to appear.
 
 {% include gallery caption="This is a sample gallery with **Markdown support**." %}
 
-**More Gallery Goodness:** A [few more examples]({{ base_path }}{% post_url 2010-09-09-post-gallery %}) and [source code]({{ site.gh_repo }}/gh-pages/_posts/2010-09-09-post-gallery.md) can be seen in the demo site.
+**More Gallery Goodness:** A few more examples and [source code]({{ site.gh_repo }}/gh-pages/_posts/2010-09-09-post-gallery.md) can be seen in [this sample gallery post]({{ base_path }}{% post_url 2010-09-09-post-gallery %}).
 {: .notice--info}
 
 ## Feature Row
