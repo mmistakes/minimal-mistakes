@@ -10,7 +10,7 @@
 
   {% for f in feature_row %}
 
-    {% if f.url contains "http" %}
+    {% if f.url contains "://" %}
       {% capture f_url %}{{ f.url }}{% endcapture %}
     {% else %}
       {% capture f_url %}{{ f.url | prepend: base_path }}{% endcapture %}
@@ -21,7 +21,7 @@
         {% if f.image_path %}
           <div class="archive__item-teaser">
             <img src=
-              {% if f.image_path contains "http" %}
+              {% if f.image_path contains "://" %}
                 "{{ f.image_path }}"
               {% else %}
                 "{{ f.image_path | prepend: "/images/" | prepend: base_path }}"
