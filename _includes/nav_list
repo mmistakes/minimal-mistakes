@@ -8,7 +8,7 @@
       <li>
         {% if nav.url %}
           {% comment %}internal/external URL check{% endcomment %}
-          {% if nav.url contains "http" %}
+          {% if nav.url contains "://" %}
             {% assign domain = "" %}
           {% else %}
             {% assign domain = base_path %}
@@ -23,7 +23,7 @@
         <ul>
           {% for child in nav.children %}
             {% comment %}internal/external URL check{% endcomment %}
-            {% if child.url contains "http" %}
+            {% if child.url contains "://" %}
               {% assign domain = "" %}
             {% else %}
               {% assign domain = base_path %}
@@ -44,5 +44,3 @@
     {% endfor %}
   </ul>
 </nav>
-
-
