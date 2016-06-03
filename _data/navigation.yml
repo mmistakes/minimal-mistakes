@@ -2,12 +2,12 @@
 main:
 
   - title: "Resume"
-    url: https://www.dropbox.com/s/uehqi92akokfen0/jamesbushresume.pdf?dl=0
+    url: https://s3.amazonaws.com/jhbushinfo/jamesbushresume.pdf
 
   - title: "Blog"
     url: https://medium.com/@jamesbvsh
 
-  - title: "GitHub"
+  - title: "github"
     url: https://github.com/jajajames
 
   - title: "LinkedIn"
