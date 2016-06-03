@@ -1,16 +1,14 @@
 # main links links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
 
-  - title: "About"
-    url: https://mmistakes.github.io/minimal-mistakes/
+  - title: "Resume"
+    url: https://s3.amazonaws.com/jhbushinfo/jamesbushresume.pdf
 
-  - title: "Sample Posts"
-    url: https://mmistakes.github.io/minimal-mistakes/year-archive/
+  - title: "Blog"
+    url: https://medium.com/@jamesbvsh
 
-  - title: "Sample Pages"
-    url: https://mmistakes.github.io/minimal-mistakes/page-archive/
+  - title: "github"
+    url: https://github.com/jajajames
 
-  - title: "Sample Collections"
-    url: https://mmistakes.github.io/minimal-mistakes/collection-archive/
+  - title: "LinkedIn"
+    url: https://www.linkedin.com/in/jamesbvsh
