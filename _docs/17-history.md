@@ -4,8 +4,14 @@ permalink: /docs/history/
 excerpt: "Changelog of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2016-06-01
+modified: 2016-06-03T15:07:29-04:00
 ---
+
+## [3.2.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.3)
+
+### Enhancement
+
+- Add [Discourse](https://www.discourse.org/) as a commenting provider [#335](https://github.com/mmistakes/minimal-mistakes/pull/335)
 
 ## [3.2.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.2)
 
