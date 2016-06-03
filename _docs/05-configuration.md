@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-modified: 2016-04-27T10:39:37-04:00
+modified: 2016-06-03T15:13:17-04:00
 ---
 
 {% include base_path %}
@@ -130,11 +130,12 @@ To disable reading time for a post, add `read_time: false` its YAML Front Matter
 
 ### Comments
 
-Commenting for [**Disqus**](https://disqus.com/), [**Facebook**](https://developers.facebook.com/docs/plugins/comments), and **Google+** are built into the theme. First set the comment provider you'd like to use: 
+Commenting for [**Disqus**](https://disqus.com/), [**Discourse**](https://www.discourse.org/), [**Facebook**](https://developers.facebook.com/docs/plugins/comments), and **Google+** are built into the theme. First set the comment provider you'd like to use: 
 
 | Name            | Comment Provider  |
 | ----            | ----------------  |
 | **disqus**      | Disqus            |
+| **discourse**   | Discourse         |
 | **facebook**    | Facebook Comments |
 | **google-plus** | Google+ Comments  |
 | **custom**      | Other             |
@@ -165,6 +166,18 @@ comments:
   disqus:
     shortname: "your-disqus-shortname"
 ```
+
+##### Discourse
+
+For guidance on how to set up Discourse for embedding comments from a topic on a post page, [consult this guide](https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963).
+
+```yaml
+comments:
+  provider               : "discourse"
+  discourse:
+    server               : # meta.discourse.org
+```
+  
 
 ##### Facebook Comments
 
