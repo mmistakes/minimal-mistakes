@@ -59,9 +59,9 @@ es: &DEFAULT_ES
   website_label         : "Sitio web"
   email_label           : "Email"
   recent_posts          : "Entradas recientes"
-en-ES:
+es-ES:
   <<: *DEFAULT_ES
-en-CO:
+es-CO:
   <<: *DEFAULT_ES
 
 # Another locale
