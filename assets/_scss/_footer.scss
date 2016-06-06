@@ -28,16 +28,9 @@
 .page__footer-copyright {
   font-family: $global-font-family;
   font-size: $type-size-7;
-
-  @include breakpoint($large) {
-    @include prefix(2.5 of 12);
-  }
 }
 
 .page__footer-follow {
-  @include breakpoint($large) {
-    @include prefix(2.5 of 12);
-  }
 
   ul {
     margin: 0;
