@@ -1,3 +1,9 @@
+## [3.2.6](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.6)
+
+### Bug Fixes
+
+- Fix error `Liquid Exception: divided by 0 in _includes/archive-single.html, included in _layouts/single.html` caused by null `words_per_minute` in `_config.yml`. [#345](https://github.com/mmistakes/minimal-mistakes/pull/345)
+
 ## [3.2.5](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.5)
 
 ### Bug Fixes
