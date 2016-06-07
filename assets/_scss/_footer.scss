@@ -3,16 +3,24 @@
    ========================================================================== */
 
 .page__footer {
-  @include container;
+  @include full();
   @include clearfix;
   margin-top: 3em;
-  padding: 0 1em 3em;
   color: mix(#fff, $gray, 25%);
   animation: intro 0.3s both;
   animation-delay: 0.45s;
+  background-color: $lighter-gray;
+  border-top: 1px solid $light-gray;
 
-  @include breakpoint($x-large) {
-    max-width: $x-large;
+  footer {
+    @include container;
+    @include clearfix;
+    margin-top: 2em;
+    padding: 0 1em 2em;
+
+    @include breakpoint($x-large) {
+      max-width: $x-large;
+    }
   }
 
   a {
@@ -23,21 +31,18 @@
       text-decoration: underline;
     }
   }
+
+  .fa {
+    color: mix(#fff, $gray, 25%);
+  }
 }
 
 .page__footer-copyright {
   font-family: $global-font-family;
   font-size: $type-size-7;
-
-  @include breakpoint($large) {
-    @include prefix(2.5 of 12);
-  }
 }
 
 .page__footer-follow {
-  @include breakpoint($large) {
-    @include prefix(2.5 of 12);
-  }
 
   ul {
     margin: 0;
