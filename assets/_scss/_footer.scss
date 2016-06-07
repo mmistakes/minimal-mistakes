@@ -3,16 +3,24 @@
    ========================================================================== */
 
 .page__footer {
-  @include container;
+  @include full();
   @include clearfix;
   margin-top: 3em;
-  padding: 0 1em 3em;
   color: mix(#fff, $gray, 25%);
   animation: intro 0.3s both;
   animation-delay: 0.45s;
+  background-color: $lighter-gray;
+  border-top: 1px solid $light-gray;
 
-  @include breakpoint($x-large) {
-    max-width: $x-large;
+  footer {
+    @include container;
+    @include clearfix;
+    margin-top: 2em;
+    padding: 0 1em 2em;
+
+    @include breakpoint($x-large) {
+      max-width: $x-large;
+    }
   }
 
   a {
