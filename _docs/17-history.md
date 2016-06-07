@@ -4,8 +4,25 @@ permalink: /docs/history/
 excerpt: "Changelog of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2016-06-03T15:07:29-04:00
+modified: 2016-06-06
 ---
+
+## [3.2.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.4)
+
+### Enhancements
+
+- Improve text alignment of masthead, hero overlay, page footer to be flush left and remove awkward white-space gaps. [#342](https://github.com/mmistakes/minimal-mistakes/issues/342)
+- Add Spanish localized UI text. [#338](https://github.com/mmistakes/minimal-mistakes/pull/338)
+
+### Bug Fixes
+
+- Fix alignment of icons in author sidebar [#341](https://github.com/mmistakes/minimal-mistakes/issues/341)
+
+### Maintenance
+
+- Add background color to page footer to set it apart from main content. [#342](https://github.com/mmistakes/minimal-mistakes/issues/342)
+- Add terms and privacy policy to theme's demo site. [#343](https://github.com/mmistakes/minimal-mistakes/issues/343)
+- Update screenshots found in theme documentation.
 
 ## [3.2.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.3)
 
