@@ -19,8 +19,8 @@ The theme includes responsive layouts (`single`, `archive`, and `splash` pages) 
 - Several layout options (single, archive, splash pages)
 - SEO optimized with support for [Twitter Cards](https://dev.twitter.com/cards/overview) and [Open Graph](http://ogp.me/) data
 - Optional header images, sidebars, table of contents, galleries, related posts, breadcrumb links, and more.
-- Optional comments ([Disqus](https://disqus.com/), [Facebook](https://developers.facebook.com/docs/plugins/comments), Google+, and custom)
-- Optional analytics ([Google Analytics](https://www.google.com/analytics/) and custom)
+- Optional comments ([Disqus](https://disqus.com/), [Facebook](https://developers.facebook.com/docs/plugins/comments), Google+, [Discourse](https://www.discourse.org/), and custom).
+- Optional analytics ([Google Analytics](https://www.google.com/analytics/) and custom).
 
 #### Demo Pages
 
