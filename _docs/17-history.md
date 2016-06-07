@@ -4,8 +4,14 @@ permalink: /docs/history/
 excerpt: "Changelog of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2016-06-06
+modified: 2016-06-07T11:39:52-04:00
 ---
+
+## [3.2.6](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.6)
+
+### Bug Fixes
+
+- Fix error `Liquid Exception: divided by 0 in _includes/archive-single.html, included in _layouts/single.html` caused by null `words_per_minute` in `_config.yml`. [#345](https://github.com/mmistakes/minimal-mistakes/pull/345)
 
 ## [3.2.5](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.5)
 
