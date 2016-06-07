@@ -35,7 +35,15 @@
 .archive__item-title {
   margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
-  // font-size: $type-size-5;
+}
+
+// remove border
+.page__content {
+
+  .archive__item-title {
+    margin-top: 1em;
+    border-bottom: none;
+  }
 }
 
 .archive__item-excerpt {
