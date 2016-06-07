@@ -31,6 +31,10 @@
       text-decoration: underline;
     }
   }
+
+  .fa {
+    color: mix(#fff, $gray, 25%);
+  }
 }
 
 .page__footer-copyright {
