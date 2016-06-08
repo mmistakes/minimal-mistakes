@@ -27,10 +27,44 @@ en: &DEFAULT_EN
   website_label         : "Website"
   email_label           : "Email"
   recent_posts          : "Recent Posts"
+  undefined_wpm         : "Undefined parameter words_per_minute at _config.yml"   
 en-US:
   <<: *DEFAULT_EN
 en-UK:
   <<: *DEFAULT_EN
+
+# Spanish
+# --------------
+es: &DEFAULT_ES
+  page                  : "Página"
+  pagination_previous   : "Anterior"
+  pagination_next       : "Siguiente"
+  breadcrumb_home_label : "Inicio"
+  breadcrumb_separator  : "/"
+  toc_label             : "Contenidos"
+  ext_link_label        : "Enlace"
+  less_than             : "menos de"
+  minute_read           : "minuto de lectura"
+  minutes_read          : "minutos de lectura"
+  share_on_label        : "Compartir"
+  meta_label            :
+  tags_label            : "Etiquetas:"
+  categories_label      : "Categorías:"
+  date_label            : "Actualizado:"
+  comments_label        : "Comentar"
+  more_label            : "Ver más"
+  related_label         : "Podrías ver también"
+  follow_label          : "Seguir:"
+  feed_label            : "Feed"
+  powered_by            : "Powered by"
+  website_label         : "Sitio web"
+  email_label           : "Email"
+  recent_posts          : "Entradas recientes"
+  undefined_wpm         : "Parametro words_per_minute (Palabras por minuto) no definido en _config.yml" 
+es-ES:
+  <<: *DEFAULT_ES
+es-CO:
+  <<: *DEFAULT_ES
 
 # Another locale
 # --------------
