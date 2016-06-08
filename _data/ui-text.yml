@@ -93,6 +93,7 @@ fr: &DEFAULT_FR
   website_label         : "Site"
   email_label           : "Email"
   recent_posts          : "Posts récents"
+  undefined_wpm         : "Le paramètre words_per_minute n'est pas défini dans _config.yml"
 fr-FR:
   <<: *DEFAULT_FR
 fr-BE:
