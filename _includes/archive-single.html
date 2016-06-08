@@ -16,7 +16,7 @@
       {% if include.type == "grid" and teaser != blank %}
         <div class="archive__item-teaser">
           <img src=
-            {% if teaser contains "http" %}
+            {% if teaser contains "://" %}
               "{{ teaser }}"
             {% else %}
               "{{ teaser | prepend: "/images/" | prepend: base_path }}"

@@ -7,7 +7,7 @@
     {% for s in page.sidebar %}
       {% if s.image %}
         <img src=
-        {% if s.image contains "http" %}
+        {% if s.image contains "://" %}
           "{{ s.image }}"
         {% else %}
           "{{ s.image | prepend: "/images/" | prepend: base_path }}"

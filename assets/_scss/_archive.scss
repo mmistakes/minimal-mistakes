@@ -35,7 +35,15 @@
 .archive__item-title {
   margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
-  font-size: $type-size-5;
+}
+
+// remove border
+.page__content {
+
+  .archive__item-title {
+    margin-top: 1em;
+    border-bottom: none;
+  }
 }
 
 .archive__item-excerpt {
@@ -149,7 +157,6 @@ a:hover {
 
   @include breakpoint($small) {
     margin-bottom: 0;
-    text-align: center;
     @include gallery(4 of 12);
 
     .feature__item-teaser {
@@ -158,14 +165,8 @@ a:hover {
     }
   }
 
-  .archive__item-body {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-  }
-
   &--left {
     @include full();
-    // margin-bottom: 2em;
     font-size: 1.25rem;
 
     .archive__item-teaser {
@@ -187,7 +188,6 @@ a:hover {
 
   &--right {
     @include full();
-    // margin-bottom: 2em;
     font-size: 1.25rem;
 
     .archive__item-teaser {
@@ -211,7 +211,6 @@ a:hover {
 
   &--center {
     @include full();
-    // margin-bottom: 2em;
     font-size: 1.25rem;
 
     .archive__item-teaser {
