@@ -14,8 +14,6 @@
     @include clearfix;
     padding: 1em 1em 1em;
     font-family: $sans-serif-narrow;
-    font-weight: 700;
-    text-transform: uppercase;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -32,9 +30,6 @@
 }
 
 .masthead__menu {
-  @include breakpoint($large) {
-    @include prefix(2.5 of 12);
-  }
 
   ul {
     margin: 0;
@@ -47,10 +42,10 @@
 .masthead__menu-item {
   display: block;
   list-style-type: none;
-  font-size: $type-size-6;
   white-space: nowrap;
 
   &--lg {
-    font-size: $type-size-5;
+    padding-right: 2em;
+    font-weight: 700;
   }
 }
