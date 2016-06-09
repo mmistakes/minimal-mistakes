@@ -9,8 +9,8 @@ main:
   - title: "Tags"
     url: /tags/
 
-  - title: "Pages"
-    url: /page-archive/
+  # - title: "Pages"
+  #   url: /page-archive/
 
   - title: "Collections"
     url: /collection-archive/
