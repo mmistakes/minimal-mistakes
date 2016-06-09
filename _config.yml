@@ -37,17 +37,17 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "amweiss"
 facebook:
-  username               :
+  username               : 
   app_id                 :
   publisher              :
 og_image                 : "headshot2.jpg" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : Person # Person or Organization (defaults to Person)
-  name                   : Adam Weiss # If the user or organization name differs from the site's name
+  type                   : "Person" # Person or Organization (defaults to Person)
+  name                   : "Adam Weiss" # If the user or organization name differs from the site's name
   links:
     - "https://github.com/amweiss"
     - "https://www.linkedin.com/in/adammweiss"
@@ -78,18 +78,18 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : amweiss
-  google_plus      : AdamWeiss
+  github           : "amweiss"
+  google_plus      : "AdamWeiss"
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : adammweiss
+  linkedin         : "adammweiss"
   pinterest        :
   soundcloud       :
-  stackoverflow    : 149866/adam-w
+  stackoverflow    : "149866/adam-w"
   steam            :
   tumblr           :
-  twitter          : amweiss
+  twitter          : "amweiss"
   vine             :
   weibo            :
   xing             :
