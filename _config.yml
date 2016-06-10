@@ -48,6 +48,7 @@ defaults:
       type: pages
     values:
       layout: single
+      author_profile: true
   # _portfolio
     - scope:
       path: ""
