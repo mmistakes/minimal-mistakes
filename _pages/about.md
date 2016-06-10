@@ -17,9 +17,6 @@ In addition, he collaborated in the conception on the [first open source book][1
 
 Nowadays, Dr. Garcia is working on other aspects related to software reuse, mainly focused on infrastructures and platforms issues in the Cloud Computing field. To to this, Dr. Garcia, associated with his students and other research partners, created the [ASSERT][3] (Advanced System and Software Engineering Research Technologies) Lab.
 
-### Curtir isso:
-
-Curtida Carregando...
 
 [1]: http://www.cin.ufpe.br "Centro de Informática - UFPE"
 [2]: http://riselabs.dcc.ufba.br/ "RiSE Group"
