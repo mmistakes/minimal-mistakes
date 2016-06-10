@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Vinicius Cardoso Garcia, D.Sc."
 title_separator          : "|"
 name                     : &name "Vinicius Cardoso Garcia"
-description              : "Personal website."
+description              : "Associate Professor, Informatics Center of Federal University of Pernambuco (CIn/UFPE)."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
