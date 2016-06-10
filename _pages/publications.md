@@ -19,7 +19,7 @@ See also the [ASSERT Lab's][1] site.
 <BR>
 
 **List of publications**
-
+{: .text-center}
 
 * * *
 
