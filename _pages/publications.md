@@ -18,7 +18,8 @@ See also the [ASSERT Lab's][1] site.
 
 <BR>
 
-<center><strong>List of publications</strong></center>
+**List of publications**
+{: .text-center}
 
 * * *
 
