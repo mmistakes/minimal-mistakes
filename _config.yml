@@ -18,9 +18,9 @@ teaser                   : "photo124870114388584477.jpg" # filename of teaser fa
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "disqus"# false (default), "disqus", "discourse", "facebook", "google-plus", custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", custom"
   disqus:
-    shortname            : "vinicius3w"# https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "vinicius3w" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
