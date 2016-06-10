@@ -180,10 +180,10 @@ defaults:
       comments: false
       sidebar:
         nav: "docs"
-  # _portfolio
+  # _courses
   - scope:
       path: ""
-      type: portfolio
+      type: courses
     values:
       layout: single
       author_profile: false
@@ -196,6 +196,11 @@ paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: America/Recife # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
+# Collections
+collections:
+  courses:
+    output: true
+    permalink: /:collection/:path/
 
 # Plugins
 gems:
