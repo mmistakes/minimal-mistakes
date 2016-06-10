@@ -16,7 +16,7 @@ See also the [ASSERT Lab's][1] site.
  * [Diretório de Grupos do CNPq](http://dgp.cnpq.br/dgp/espelhogrupo/3695471376981126)
  * [Formulário de Cadastro de Produção Científica do Grupo ASSERT](http://bit.ly/ProducaoASSERT)
 
-<center>**List of publications**</center>
+<center><strong>List of publications</strong></center>
 
 * * *
 
