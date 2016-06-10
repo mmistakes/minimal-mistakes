@@ -4,8 +4,18 @@ permalink: /docs/history/
 excerpt: "Changelog of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2016-06-07T11:39:52-04:00
+modified: 2016-06-10T14:22:55-04:00
 ---
+
+## [3.2.7](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.7)
+
+### Enhancements
+
+- Add French localized UI text. [#346](https://github.com/mmistakes/minimal-mistakes/pull/346)
+
+### Bug Fixes
+
+- Fix branch logic for Yandex and Alexa in `seo.html`. [#348](https://github.com/mmistakes/minimal-mistakes/pull/348)
 
 ## [3.2.6](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.6)
 
