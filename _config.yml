@@ -7,20 +7,20 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
-title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+title                    : "Vinicius Cardoso Garcia, D.Sc."
+title_separator          : "|"
+name                     : &name "Vinicius Cardoso Garcia"
+description              : &description "Associate Professor, Informatics Center of Federal University of Pernambuco (CIn/UFPE)."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
-teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-# breadcrumbs            : false # true, false (default)
+teaser                   : "photo124870114388584477.jpg" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+#breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "vinicius3w" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -37,18 +37,21 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "vinicius3w"
 facebook:
-  username               :
+  username               : "vinicius.garcia"
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : "photo124870114388584477.jpg"# Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - "http://www.twitter.com/vinicius3w"
+    - "https://facebook.com/vinicius.garcia"
+    - "https://www.linkedin.com/in/viniciusgarcia"
 
 # Analytics
 analytics:
@@ -63,35 +66,34 @@ google_ad_slot           :
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
-  uri              :
-  bitbucket        :
+  name             : &name
+  avatar           : "photo124870114388584477.jpg"
+  bio              : &description
+  location         : "Recife-PE,Brazil"
+  email            : "vcg@cin.ufpe.br"
+  uri              : "http://viniciusgarcia.com"
+  bitbucket        : "vinicius3w"
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "vinicius.garcia"
   foursquare       :
-  github           :
+  github           : "vinicius3w"
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :
+  linkedin         : "viniciusgarcia"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "vinicius3w"
   vine             :
   weibo            :
   xing             :
   youtube          :
-
 
 # Reading Files
 include:
@@ -146,13 +148,59 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "docs"
+  # _courses
+  - scope:
+      path: ""
+      type: courses
+    values:
+      layout: single
+      author_profile: false
+      share: true
+
 
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Recife # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
+# Collections
+collections:
+  courses:
+    output: true
+    permalink: /:collection/:path/
 
 # Plugins
 gems:
@@ -161,6 +209,7 @@ gems:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  #- jekyll-archives
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -188,16 +237,19 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+#jekyll-archives:
+#  enabled:
+#    - categories
+#    - tags
+#  layouts:
+#    category: archive-taxonomy
+#    tag: archive-taxonomy
+#  permalinks:
+    #year: '/:year/'
+    #month: '/:year/:month/'
+    #day: '/:year/:month/:day/'
+#    category: /categories/:name/
+#    tag: /tags/:name/
 
 
 # HTML Compression
