@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Vinicius Cardoso Garcia, D.Sc."
 title_separator          : "|"
 name                     : &name "Vinicius Cardoso Garcia"
-description              : "Associate Professor, Informatics Center of Federal University of Pernambuco (CIn/UFPE)."
+description              : &description "Associate Professor, Informatics Center of Federal University of Pernambuco (CIn/UFPE)."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
@@ -70,11 +70,11 @@ google_ad_slot           :
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : &name
   avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  bio              : &description
+  location         : "Recife-PE,Brazil"
+  email            : "vcg@cin.ufpe.br"
   uri              :
   bitbucket        :
   codepen          :
@@ -82,7 +82,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "vinicius3w"
   google_plus      :
   keybase          :
   instagram        :
@@ -93,7 +93,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "vinicius3w"
   vine             :
   weibo            :
   xing             :
