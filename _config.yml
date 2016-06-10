@@ -28,13 +28,25 @@ comments:
     appid                :
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
-  defaults:
-  # _posts
+defaults:
+# _posts
+- scope:
+    path: ""
+    type: posts
+  values:
+    layout: single
+    author_profile: true
+    read_time: true
+    comments: true
+    share: true
+    related: true
+defaults:  
+  # _pages
   - scope:
       path: ""
-      type: posts
+      type: pages
     values:
-      comments: true
+      layout: single
 
 # SEO Related
 google_site_verification :
