@@ -56,6 +56,9 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - "http://www.twitter.com/vinicius3w"
+    - "https://facebook.com/vinicius.garcia"
+    - "https://www.linkedin.com/in/viniciusgarcia"
 
 # Analytics
 analytics:
