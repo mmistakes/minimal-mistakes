@@ -1,3 +1,12 @@
+---
+layout: archive
+permalink: /publications/
+title: "Publications"
+modified: 2016-06-10T15:25:37-04:00
+---
+
+{% include base_path %}
+
 See also the [ASSERT Lab's][1] site.
 
  * [ACM Portal](http://portal.acm.org/author_page.cfm?id=81100378574&coll=GUIDE&dl=GUIDE&CFID=82247333&CFTOKEN=13572375#)
