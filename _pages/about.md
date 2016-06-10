@@ -1,9 +1,11 @@
 ---
 permalink: /about/
 title: "About"
-excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
-
+excerpt: "More information about professor Vinicius Cardoso Garcia (D.Sc.)"
+modified: 2016-06-10T15:25:37-04:00
 ---
+
+{% include base_path %}
 
 Dr. Vinicius Garcia is an adjunct professor in the Software Engineering area at [Federal University of Pernambuco][1], Brazil, where he is member of the LABES (Software Engineering Lab), is a senior member of the [RiSE][2] (Reuse in Software Engineering) Group and actually is the leader of the [ASSERT][3] (Advanced System and Software Engineering Research Technologies) Lab.
 
