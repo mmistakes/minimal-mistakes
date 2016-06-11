@@ -10,11 +10,13 @@ Je suis originaire du Nord-Isère, j'y passé mon permis en 2012 puis roulé sur
 pour m'apprendre à améliorer ma conduite pendant l'année qui a suivi. J'ai ensuite déménagé en
 Sudie pour le travail (et le soleil !).
 
-Quelques mois après mon arrivée en Sudie, j'ai trouvé une association qui justement
-permet aux débutants et aux motards qui n'ont pas touché un deux roues depuis quelques temps
-de se remettre en selle en donnant des conseils sur la position sur la moto,
-la façon d'aborder un virage, roulage en groupe et toutes ces choses qui ne sont
-pas toujours appronfondies ou apprises au permis.
+Quelques mois après mon arrivée en Sudie, j'ai trouvé [Évasion Moto 34](http://www.evasionmoto.com/),
+une association qui justement permet aux débutants et aux motards qui n'ont pas touché
+un deux roues depuis quelques temps de se remettre en selle en donnant des conseils sur
+la position sur la moto, la façon d'aborder un virage, roulage en groupe et toutes ces choses qui ne sont
+pas toujours appronfondies ou apprises au permis.<br />
+L'association dispose d'un [forum](http://www.evasionmoto34.com) sur le quel les balades sont proposées
+et où les gens viennent s'inscrire pour participer.
 
 Pendant cette première année, toutes les "balades apprentissage"[^1] à l'exception de deux ont été annulées
 pour cause de pluie. J'ai tout de même profité des balades organisées à côté pour progresser y compris par temps incertain.
