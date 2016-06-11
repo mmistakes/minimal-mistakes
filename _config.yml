@@ -11,7 +11,7 @@ title                    : "Site Title"
 title_separator          : "-"
 name                     : "Edu Gonzalo Almorox"
 description              : "Hi, welcome to my webiste. I am an applied economist with interest in health economics"
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://edugonzalo.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -66,7 +66,7 @@ author:
   name             : "Edu Gonzalo Almorox"
   avatar           : "bio-photo.jpg"
   bio              : "Applied Economist"
-  location         : "Somewhere"
+  location         : "Newcastle upon Tyne (UK)"
   email            :
   uri              :
   bitbucket        :
