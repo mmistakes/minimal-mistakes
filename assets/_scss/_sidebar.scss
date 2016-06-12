@@ -139,6 +139,10 @@
     }
   }
 
+  .author__location {
+    cursor: default;
+  }
+
   @include breakpoint($large) {
     display: block;
   }
