@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Minimal Mistakes"
+title                    : "Tyler Mitchell"
 title_separator          : "-"
 name                     : &name "Michael Rose"
 description              : &description "A flexible Jekyll theme for your blog or site with a minimalist aesthetic."
