@@ -4,8 +4,23 @@ permalink: /docs/history/
 excerpt: "Changelog of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2016-06-12
+modified: 2016-06-13T12:29:40-04:00
 ---
+
+## [3.2.9](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.9)
+
+### Enhancements
+
+- Add support for [header overlay images](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#header-overlay) for Open Graph images. [#358](https://github.com/mmistakes/minimal-mistakes/pull/358)
+
+### Bug Fixes
+
+- Fix `Person` typo Schema.org type [#358](https://github.com/mmistakes/minimal-mistakes/pull/358)
+
+### Maintenance
+
+- Update `github-pages` gem and dependencies.
+- Remove `minutes_read` to avoid awkward reading time wording [#356](https://github.com/mmistakes/minimal-mistakes/issues/356)
 
 ## [3.2.8](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.8)
 
