@@ -4,8 +4,18 @@ permalink: /docs/history/
 excerpt: "Changelog of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2016-06-10T14:22:55-04:00
+modified: 2016-06-12
 ---
+
+## [3.2.8](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.8)
+
+### Bug Fixes
+
+- Remove `cursor: pointer` that appears on white-space surrounding author side list items and links. [#354](https://github.com/mmistakes/minimal-mistakes/pull/354)
+
+### Maintenance
+
+- Add contributing information to `README.md`. [#357](https://github.com/mmistakes/minimal-mistakes/issues/357)
 
 ## [3.2.7](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.7)
 
