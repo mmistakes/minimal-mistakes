@@ -20,7 +20,7 @@ en: &DEFAULT_EN
   comments_label        : "Leave a Comment"
   more_label            : "Learn More"
   related_label         : "You May Also Enjoy"
-  follow_label          : "Follow:"
+  follow_label          :
   feed_label            : "Feed"
   powered_by            : "Powered by"
   website_label         : "Website"
