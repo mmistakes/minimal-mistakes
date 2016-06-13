@@ -1,18 +1,18 @@
 {% include base_path %}
 
-{% if page.header.image contains "://" %}
+{% if page.header.image contains "http" %}
   {% capture img_path %}{{ page.header.image }}{% endcapture %}
 {% else %}
   {% capture img_path %}{{ page.header.image | prepend: "/images/" | prepend: base_path }}{% endcapture %}
 {% endif %}
 
-{% if page.header.cta_url contains "://" %}
+{% if page.header.cta_url contains "http" %}
   {% capture cta_path %}{{ page.header.cta_url }}{% endcapture %}
 {% else %}
   {% capture cta_path %}{{ page.header.cta_url | prepend: base_path }}{% endcapture %}
 {% endif %}
 
-{% if page.header.overlay_image contains "://" %}
+{% if page.header.overlay_image contains "http" %}
   {% capture overlay_img_path %}{{ page.header.overlay_image }}{% endcapture %}
 {% elsif page.header.overlay_image %}
   {% capture overlay_img_path %}{{ page.header.overlay_image | prepend: "/images/" | prepend: base_path }}{% endcapture %}

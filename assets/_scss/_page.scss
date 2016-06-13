@@ -49,12 +49,6 @@
 }
 
 .page__content {
-
-  h2 {
-    padding-bottom: 0.5em;
-    border-bottom: 1px solid $border-color;
-  }
-
   p, li, dl {
     font-size: 1em;
   }
@@ -119,23 +113,16 @@
     margin-bottom: 2em;
     padding: 3em 0;
     @include clearfix;
+    text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     animation: intro 0.3s both;
     animation-delay: 0.25s;
 
-    a {
-      color: #fff;
-    }
-
     .wrapper {
-      padding-left: 1em;
-      padding-right: 1em;
-
-      @include breakpoint($x-large) {
-        max-width: $x-large;
-      }
+      padding-left: 2em;
+      padding-right: 2em;
     }
 
     .page__title,
@@ -144,10 +131,6 @@
     .btn {
       color: #fff;
       text-shadow: 1px 1px 4px rgba(#000, 0.5);
-    }
-
-    .page__lead {
-      max-width: $medium;
     }
 
     .page__title {
