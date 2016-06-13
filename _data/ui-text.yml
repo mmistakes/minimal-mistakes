@@ -12,7 +12,6 @@ en: &DEFAULT_EN
   ext_link_label        : "Direct Link"
   less_than             : "less than"
   minute_read           : "minute read"
-  minutes_read          : "minutes read"
   share_on_label        : "Share on"
   meta_label            :
   tags_label            : "Tags:"
@@ -45,7 +44,6 @@ es: &DEFAULT_ES
   ext_link_label        : "Enlace"
   less_than             : "menos de"
   minute_read           : "minuto de lectura"
-  minutes_read          : "minutos de lectura"
   share_on_label        : "Compartir"
   meta_label            :
   tags_label            : "Etiquetas:"
@@ -78,7 +76,6 @@ fr: &DEFAULT_FR
   ext_link_label        : "Lien direct"
   less_than             : "plus petit que"
   minute_read           : "minute de lecture"
-  minutes_read          : "minutes de lecture"
   share_on_label        : "Partager sur"
   meta_label            :
   tags_label            : "Tags :"
