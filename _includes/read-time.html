@@ -10,7 +10,7 @@
 	{% elsif words < 360 %}
 	  1 {{ site.data.ui-text[site.locale].minute_read }}
 	{% else %}
-	  {{ words | divided_by:site.words_per_minute }} {{ site.data.ui-text[site.locale].minutes_read }}
+	  {{ words | divided_by:site.words_per_minute }} {{ site.data.ui-text[site.locale].minute_read }}
 	{% endif %}
 {% else %}
   {{ site.data.ui-text[site.locale].undefined_wpm }}
