@@ -7,11 +7,11 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "The Barefoot Ecologist's Toolbox"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : 
+description              : "Tools for fisheries scientists and field practitioners"
+url                      : # "https://barefoot-ecologist-toolbox.github.io" # 
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -35,9 +35,9 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : 
 facebook:
-  username               :
+  username               : 
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
@@ -61,17 +61,17 @@ google_ad_slot           :
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Barefoot Ecologist"
   avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  bio              : ""
+  location         : "Perth, Australia"
+  email            : "barefootecologist@gmail.com"
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : 
   foursquare       :
   github           :
   google_plus      :
@@ -81,16 +81,28 @@ author:
   linkedin         :
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    : 
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : 
   vine             :
   weibo            :
   xing             :
   youtube          :
 
-
+  
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true	  
 # Reading Files
 include:
   - .htaccess
