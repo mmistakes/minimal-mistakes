@@ -43,6 +43,9 @@
       {% if author.google_plus %}
         <li><a href="https://plus.google.com/+{{ author.google_plus }}"><i class="fa fa-fw fa-google-plus-square" aria-hidden="true"></i> Google+</a></li>
       {% endif %}
+      {% if author.google_scholar %}
+        <li><a href="https://scholar.google.nl/citations?user={{ author.google_scholar }}"><i class="fa fa-fw fa-google="true"></i> Google Scholar</a></li>
+      {% endif %}
       {% if author.linkedin %}
         <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a></li>
       {% endif %}
