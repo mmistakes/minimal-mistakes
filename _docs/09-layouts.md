@@ -321,9 +321,9 @@ Inside of `<ul class="author__urls">` you'll find `<li>` elements wrapped in Liq
 
 To add a new link you'll need three things:
 
-1. A destination URL
-2. A [Font Awesome icon](http://fontawesome.io/icons/) (`fa-` class)
-3. A label for the link
+1. Destination URL
+2. [Font Awesome icon](http://fontawesome.io/icons/) (`fa-` class)
+3. Label for the link
 
 It's up to you if you want to wrap it in a `{% raw %}{% if %} ... {% endif %}{% endraw %}`conditional and add variables to `_config.yml`. If you don't plan to change it then hard-coding the strings is perfectly acceptable.
 
@@ -400,3 +400,54 @@ sidebar:
 
 **ProTip:** Custom sidebar content added to a post or page's YAML Front Matter will appear above the author profile if enabled with `author_profile: true`.
 {: .notice--info}
+
+---
+
+## Social Sharing Links
+
+The `single` layout has an option to enable social links at the bottom of posts for sharing on Twitter, Facebook, Google+, and LinkedIn. Similar to the links found in the author sidebar, the theme ships with defaults for the most common social networks.
+
+![default social share link buttons]({{ base_path }}/images/mm-social-share-links-default.png)
+
+To enable these links add `share: true` to a post or page's YAML Front Matter or use a [default](https://jekyllrb.com/docs/configuration/#front-matter-defaults) in your `_config.yml` to apply more globally.
+
+If you'd like to add, remove, or change the order of these default links you can do so by editing [`_includes/social-share.html`](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/social-share.html).
+
+Let's say you wanted to replace the Google+ button with a Reddit one. Simply replace the HTML with the following:
+
+```html
+{% raw %}<a href="https://www.reddit.com/submit?url={{ base_path }}{{ page.url }}&title={{ page.title }}" class="btn" title="{{ site.data.ui-text[site.locale].share_on_label }} Reddit"><i class="fa fa-fw fa-reddit" aria-hidden="true"></i><span> Reddit</span></a>{% endraw %}
+```
+
+The important parts to change are:
+
+1. Share point URL *eg. `https://www.reddit.com/submit?url=`
+2. Link `title`
+3. [Font Awesome icon](http://fontawesome.io/icons/) (`fa-` class)
+4. Link label
+
+![Reddit social share link button]({{ base_path }}/images/mm-social-share-links-reddit-gs.png)
+
+To change the color of the button use one of the built in [utility classes]({{ base_path }}/docs/utility-classes/#buttons). Or you can create a new button class to match whatever color you want.
+
+Under the `$social` color map in `assets/_scss/_buttons.scss` simply add a name (this will be appened to `btn--`) that matches the new button class. In our case `reddit` ~> `.btn--reddit`.
+
+```scss
+$social:
+(facebook, $facebook-color),
+(twitter, $twitter-color),
+(google-plus, $google-plus-color),
+(linkedin, $linkedin-color);
+(reddit, #ff4500;)
+```
+
+**ProTip:** For bonus points you can add it as a Sass `$variable` that you set in `_variables.scss` like the other ["brand" colors](http://brandcolors.net/).
+{: .notice--info}
+
+Add the new `.btn--reddit` class to the `<a>` element from earlier, [compile `main.css`]({{ base_path }}/docs/stylesheets/) and away you go.
+
+```html
+{% raw %}<a href="https://www.reddit.com/submit?url={{ base_path }}{{ page.url }}&title={{ page.title }}" class="btn btn--reddit" title="{{ site.data.ui-text[site.locale].share_on_label }} Reddit"><i class="fa fa-fw fa-reddit" aria-hidden="true"></i><span> Reddit</span></a>{% endraw %}
+```
+
+![Reddit social share link button]({{ base_path }}/images/mm-social-share-links-reddit-color.png)
