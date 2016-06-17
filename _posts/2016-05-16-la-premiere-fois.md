@@ -36,6 +36,8 @@ et toutes ces subtilités.<br />
 Le groupe des accompagnants part à 10h, suivi des intermédiaires puis moi avec mes débutants
 dont une un peu tendue. *première participation*
 
+[![Saint Hippolyte du Fort](/images/posts/2016-05-16/saint-hippolyte.jpg)](/images/posts/2016-05-16/saint-hippolyte.jpg){: .align-center}
+
 ## La pratique
 
 Départ de mon petit groupe, on sort de Castries, direction Saint Mathieu de Tréviers, ça suit pas mal
@@ -55,8 +57,6 @@ cassé au niveau de la platine, impossible de mettre le pied nulle part. Papa vi
 ça va mettre un peu de temps, elle va bien, on la laisse gérer la suite. *C'est peut
 être pas la meilleure idée que j'ai eu et évidemment le numéro de téléphone est passé à la trape.*
 
-[![Saint Hippolyte du Fort](/images/posts/2016-05-16/saint-hippolyte.jpg)](/images/posts/2016-05-16/saint-hippolyte.jpg){: .align-center}
-
 On poursuit donc, on récupère les égarés à Claret et on repart tranquillement.
 Pause café à Saint Jean du Gard, on raconte les aventures, on se moque un peu de moi
 mais tout est rentré dans l'ordre, c'est pas grave.
@@ -68,8 +68,6 @@ Il s'agit d'une des routes incontournables autour de Montpellier.
 Accessible très facilement depuis le Gard et la Lozère. Si vous venez dans le coin
 c'est la route à faire. Pour ses paysages et ses virages. Un peu le paradis du motard de la région.
 
-[![La corniche](/images/posts/2016-05-16/la-corniche.jpg)](/images/posts/2016-05-16/la-corniche.jpg){: .align-center}
-
 Pause picnic à Florac où on échange sur les expériences de la matinée,
 on prévoit les prochains week-end et voyages.<br />
 On repart autour des 13h pour terminer. Tout file bien jusqu'à la pause café de
@@ -80,6 +78,8 @@ est en contrebas donc impossible de voir si on ne s'attend pas correctement.<br 
 Évidemment, nous disposons d'un seul numéro de téléphone sur les deux, qui ne répond pas.
 Une fois que nous obtenons le second, il ne répond pas non plus. *champion !*<br />
 On laisse des messages, on continue la route jusqu'à Meyrueis où nous les retrouverons finalement.
+
+[![La corniche](/images/posts/2016-05-16/la-corniche.jpg)](/images/posts/2016-05-16/la-corniche.jpg){: .align-center}
 
 Cette balade se termine sans encombre supplémentaire en dehors du fait que la dernière débutante
 restée avec moi sur les 50 derniers kilomètres commence à fatiguer donc on
