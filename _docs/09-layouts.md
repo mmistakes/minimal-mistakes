@@ -305,6 +305,71 @@ defaults:
 **Note:** To disable the author sidebar profile for a specific post or page, add `author_profile: false` to the YAML Front Matter instead.
 {: .notice--warning}
 
+The theme comes pre-built with a selection of links for the most common social media networks. These are all optional and can be [assigned in `_config.yml`]({{ base_path }}/docs/configuration/).
+
+To add more links you'll need to crack open [`_includes/author-profile.html`](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/author-profile.html) and make some edits.
+
+Inside of `<ul class="author__urls">` you'll find `<li>` elements wrapped in Liquid conditionals. These represent each of the possible links you can currently add to the sidebar.
+
+#### Example of Twitter link
+
+```html
+{% raw %}{% if author.twitter %}
+  <li><a href="https://twitter.com/{{ author.twitter }}"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+{% endif %}{% endraw %}
+```
+
+To add a new link you'll need three things:
+
+1. A destination URL
+2. A [Font Awesome icon](http://fontawesome.io/icons/) (`fa-` class)
+3. A label for the link
+
+It's up to you if you want to wrap it in a `{% raw %}{% if %} ... {% endif %}{% endraw %}`conditional and add variables to `_config.yml`. If you don't plan to change it then hard-coding the strings is perfectly acceptable.
+
+Let's run through how you'd add a new link that points to a Reddit profile. Starting with the three things from above:
+
+1. `https://www.reddit.com/user/username`
+2. [`fa-reddit`](http://fontawesome.io/icon/reddit/)
+3. `Reddit`
+
+And plug them into the appropriate locations:
+
+```html
+<li><a href="[1]"><i class="fa fa-fw [2]" aria-hidden="true"></i> [3]</a></li>
+```
+
+To end up with:
+
+```html
+<li><a href="https://www.reddit.com/user/username"><i class="fa fa-fw fa-reddit" aria-hidden="true"></i> Reddit</a></li>
+```
+
+![Reddit link in author profile]({{ base_path }}/images/mm-author-profile-reddit-gs.png)
+
+To add a touch of color to the default black (`#000`) icon a few more steps are necessary.
+
+Start by opening `/assets/_scss/_utilities.scss` to the icon section (it's near the bottom). You'll want to nest a new class beneath `.social-icons` that matches the one used to declare the Font Awesome icon. In our case `.fa-reddit`.
+
+Simply add a `color` declaration and the corresponding hex code and recompile `main.css` following the steps outlined in the [stylesheet documentation]({{ base_path }}/docs/stylesheets/).
+
+```scss
+.social-icons {
+  
+  .fa-reddit {
+    color: #ff4500;
+  }
+}
+``` 
+
+![Reddit link in author profile with color]({{ base_path }}/images/mm-author-profile-reddit-color.png)
+
+**ProTip:** For bonus points you can add it as a Sass `$variable` that you set in `_variables.scss` like the other ["brand" colors](http://brandcolors.net/).
+{: .notice--info}
+
+**Please please please** don't submit [pull requests]({{ base_path }}/docs/contributing/) adding in support for "missing" social media links. I'm trying to keep things down to the minimum (hence the theme's name) and have no interest in merging such PRs :expressionless:.
+{: .notice--warning}
+
 ### Custom Sidebar Content
 
 Blocks of content can be added by using the following under `sidebar`:

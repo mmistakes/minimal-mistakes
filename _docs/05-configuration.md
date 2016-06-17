@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-modified: 2016-06-03T15:13:17-04:00
+modified: 2016-06-16
 ---
 
 {% include base_path %}
@@ -361,6 +361,8 @@ author:
 ```
 
 Social media links are all optional, include the ones you want visible. In most cases you just need to add the username. If you're unsure double check `_includes/author-profile.html` to see how the URL is constructed.
+
+To add social media links not included with the theme or customize the author sidebar further, read the full [layout documentation]({{ base_path }}/docs/layouts/#author-profile).
 
 ## Reading Files
 
