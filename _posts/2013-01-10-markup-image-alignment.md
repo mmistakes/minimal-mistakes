@@ -58,7 +58,7 @@ And now for a **massively large image**. It also has **no alignment**.
   <figcaption>Massive image comment for your eyeballs.</figcaption>
 </figure> 
 
-The image above, though 1200px wide, should not overflow the content area. It should remain contained with no visible disruption to the flow of content.
+The figure element above has an inline style of `width: 1200px` set which should break it outside of the normal content flow.
 
 <figure style="width: 300px" class="align-right">
   <img src="{{ site.url }}{{ site.baseurl }}/images/image-alignment-300x200.jpg" alt="">
