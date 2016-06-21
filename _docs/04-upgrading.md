@@ -29,7 +29,7 @@ Now you can pull any commits made to theme's `master` branch with:
 $ git pull upstream master
 ```
 
-Depending on the amount of customizations you've made after forking, there's likely to be merge conflicts. Work through any conflicting files Git flags, stagging the changes you wish to keep, and then commit them.
+Depending on the amount of customizations you've made after forking, there's likely to be merge conflicts. Work through any conflicting files Git flags, staging the changes you wish to keep, and then commit them.
 
 ## Update Files Manually
 
