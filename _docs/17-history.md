@@ -4,8 +4,14 @@ permalink: /docs/history/
 excerpt: "Changelog of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2016-06-13T12:29:40-04:00
+modified: 2016-06-21T14:53:29-04:00
 ---
+
+## [3.2.10](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.10)
+
+## Maintenance
+
+- Add `CONTRIBUTING.md`
 
 ## [3.2.9](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.9)
 
