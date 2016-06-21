@@ -9,7 +9,7 @@ modified: 2016-06-21T14:53:29-04:00
 
 ## [3.2.10](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.10)
 
-## Maintenance
+### Maintenance
 
 - Add `CONTRIBUTING.md`
 
