@@ -15,11 +15,11 @@ $(document).ready(function(){
       // fix
       Stickyfill.rebuild();
       Stickyfill.init();
-      $(".author__urls").show()
+      $(".author__urls").show();
     } else {
       // unfix
       Stickyfill.stop();
-      $(".author__urls").hide()
+      $(".author__urls").hide();
     }
   };
 
