@@ -4,8 +4,20 @@ permalink: /docs/history/
 excerpt: "Changelog of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2016-06-21T14:53:29-04:00
+modified: 2016-06-23T10:14:27-04:00
 ---
+
+## [3.2.11](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.11)
+
+### Bug Fixes
+
+- Fix disappearing author sidebar links [#372](https://github.com/mmistakes/minimal-mistakes/issues/372)
+
+### Maintenance
+
+- Update gems: `github-pages` (84), `jekyll-github-metadata` 2.0.2, and `kramdown` 1.11.1
+- Update vendor JavaScript: jQuery 1.12.4, Stickyfill.js 1.1.4
+- Update Font Awesome 4.6.3
 
 ## [3.2.10](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.10)
 
