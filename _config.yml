@@ -29,9 +29,7 @@ comments:
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
 feed:
-  provider               : # false (default), "feedburner"
-  feedburner:
-    name                 : # e.g. "name_of_my_feed" which leads to "http://feeds.feedburner.com/name_of_my_feed"
+  path                   : # blank (default) uses feed.xml
 
 # SEO Related
 google_site_verification :
