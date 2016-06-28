@@ -8,7 +8,7 @@
 
 ::-moz-selection {
 	background-color: lighten($basecolor, 65%);
-	color: #1B94E3;
+	color: $basecolor;
 	text-shadow: none;
 }
 ::selection {
