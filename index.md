@@ -11,41 +11,41 @@ feature_row:
   - image_path: 
     alt: "placeholder image 1"
     title: "LBSPR Model"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    excerpt: "Length-Based Spawning Potential Ratio"
     url: "/lbspr"
     btn_label: "Go to App"
     btn_class: "btn--inverse"
   - image_path: 
     alt: "placeholder image 2"
     title: "Maturity-at-Length"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    url: "/lbmaturity"
+    excerpt: "Coming Soon!"
+    url: "/"
     btn_label: "Go to App"
     btn_class: "btn--inverse"
   - image_path: 
     title: "Simulation Tool"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    url: "/other"
+    excerpt: "Coming Soon!"
+    url: "/"
     btn_label: "Go to App"
     btn_class: "btn--inverse"
-  - image_path: 
-    title: "Placeholder 4"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    url: "/other"
-    btn_label: "Go to App"
-    btn_class: "btn--inverse"
-  - image_path: 
-    title: "Placeholder 5"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    url: "/other"
-    btn_label: "Go to App"
-    btn_class: "btn--inverse"
-  - image_path: 
-    title: "Placeholder 6"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    url: "/other"
-    btn_label: "Go to App"
-    btn_class: "btn--inverse"
+  # - image_path: 
+    # title: "Placeholder 4"
+    # excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    # url: "/other"
+    # btn_label: "Go to App"
+    # btn_class: "btn--inverse"
+  # - image_path: 
+    # title: "Placeholder 5"
+    # excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    # url: "/other"
+    # btn_label: "Go to App"
+    # btn_class: "btn--inverse"
+  # - image_path: 
+    # title: "Placeholder 6"
+    # excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    # url: "/other"
+    # btn_label: "Go to App"
+    # btn_class: "btn--inverse"
 
 #sidebar:
 #  - title: "Title"
@@ -73,11 +73,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget vestib
 
 {% include feature_row %}
 
-See the [help](/help) page for further information
+[//]: See the [help](/help) page for further information
 
-{: .notice--warning} 
-Disclaimer: all care - no responsibility etc
+[//]: {: .notice--warning} 
+[//]:  Disclaimer: all care - no responsibility etc
 
-## Open Source
+[//]: ## Open Source
 
-Code for apps and website available from ...
+[//]:  Code for apps and website available from ...
