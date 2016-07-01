@@ -4,8 +4,15 @@ permalink: /docs/history/
 excerpt: "Changelog of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2016-06-24T15:46:39-04:00
+modified: 2016-07-01T13:00:24-04:00
 ---
+
+## [3.2.13](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.13)
+
+### Enhancement
+
+- Add English default UI text for Canada, Great Britain, and Australia. [#377](https://github.com/mmistakes/minimal-mistakes/issues/377)
+- Switch default locale from `en-US` to `en`.
 
 ## [3.2.12](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.12)
 
