@@ -11,7 +11,7 @@ title                    : "JESCHOLL"
 title_separator          : "-"
 name                     : "Jason Scholl"
 description              : "A blog about networking, computers, programming, finance, all the things that interest me."
-url                      : https://jescholl.github.io
+url                      : https://jescholl.com
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  : https://github.com/jescholl/jescholl.github.io
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
