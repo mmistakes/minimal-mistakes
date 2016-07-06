@@ -1,11 +1,13 @@
 require 'yaml'
+require 'tempfile'
 require 'html-proofer'
 
 task :default => :test
 
 
-rootdir = File.expand_path(File.dirname(__FILE__))
-circle_config = YAML.load_file(File.join(rootdir, "circle.yml"))
+root_dir = File.expand_path(File.dirname(__FILE__))
+site_dir = File.join(root_dir, "_site")
+circle_config = YAML.load_file(File.join(root_dir, "circle.yml"))
 
 
 desc "Serve Jekyll"
@@ -25,7 +27,25 @@ namespace :check do |ns|
   desc "Check spelling in compiled HTML files"
   task :spelling => :build do
     puts "Checking spelling..."
-    words = `set +o pipefail; find #{rootdir}/_site -type f -name '*.html' -exec cat {} \\; | tr \"’\" \"'\" | aspell list -d en_US --encoding utf-8 --ignore-case --extra-dicts #{rootdir}/custom.en.pws -H | sort | uniq -c | sort -r`
+
+    files = Dir.glob("#{site_dir}/**/*.html")
+    content = ""
+    files.each do |file|
+      content += File.read(file)
+    end
+
+    # FIXME this is ugly and prone to breaking
+    if `aspell -v` !~ /0\.60\.7/
+      content.gsub!("’","'")
+    end
+
+    tfile = Tempfile.new('aspell')
+    tfile.write(content)
+
+    words = `cat #{tfile.path} | aspell list -d en_US --encoding utf-8 --ignore-case --extra-dicts #{root_dir}/custom.en.pws -H | sort | uniq -c | sort -r`
+
+    tfile.close
+    tfile.unlink
 
     retval = $?.to_i
     raise "Spellcheck failed: #{words}" if retval > 0
@@ -39,11 +59,6 @@ namespace :check do |ns|
 
   desc "Validate compiled HTML"
   task :html => :build do
-#    puts "Checking HTML..."
-#    report = `bundle exec htmlproofer #{rootdir}/_site --check-favicon --check-html --allow-hash-href  --report-missing-names`
-#    puts report
-#    summary = report.split("\n").last
-#    raise summary if $?.to_i > 0
     opts = {
       check_html: true,
       check_favicon: true,
