@@ -86,7 +86,7 @@ google_ad_slot           :
 # Site Author
 author:
   name             : "Jason Scholl"
-  avatar           : bio-photo.png
+  avatar           : "bio-photo.png?v=7kkOzmnx2k"
   bio              : "Network Engineer, Linux Administrator, Rubyist, Finance Nerd"
   location         : "Portland, OR"
   email            :
