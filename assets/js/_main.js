@@ -11,14 +11,15 @@ $(document).ready(function(){
   $(".sticky").Stickyfill();
 
   var stickySideBar = function(){
-    var windowWidth = $(window).width();
-    if (windowWidth > 1024) {
+    if (!$(".author__urls-wrapper button").is(":visible")) {
       // fix
       Stickyfill.rebuild();
       Stickyfill.init();
+      $(".author__urls").show();
     } else {
       // unfix
       Stickyfill.stop();
+      $(".author__urls").hide();
     }
   };
 

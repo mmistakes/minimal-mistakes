@@ -1,3 +1,38 @@
+## [3.2.13](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.13)
+
+### Enhancement
+
+- Add English default UI text for Canada, Great Britain, and Australia. [#377](https://github.com/mmistakes/minimal-mistakes/issues/377)
+- Switch default locale from `en-US` to `en`.
+
+## [3.2.12](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.12)
+
+### Enhancements
+
+- Remove window width "magic number" from sticky sidebar check in `main.js` for improved flexibility. [#375](https://github.com/mmistakes/minimal-mistakes/pull/375)
+
+### Bug Fixes
+
+- Fix author override conditional where a missing `authors.yml` would show broken sidebar content. Defaults to `site.author`. [#376](https://github.com/mmistakes/minimal-mistakes/pull/376)
+
+## [3.2.11](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.11)
+
+### Bug Fixes
+
+- Fix disappearing author sidebar links [#372](https://github.com/mmistakes/minimal-mistakes/issues/372)
+
+### Maintenance
+
+- Update gems: `github-pages` (84), `jekyll-github-metadata` 2.0.2, and `kramdown` 1.11.1
+- Update vendor JavaScript: jQuery 1.12.4, Stickyfill.js 1.1.4
+- Update Font Awesome 4.6.3
+
+## [3.2.10](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.10)
+
+### Maintenance
+
+- Add `CONTRIBUTING.md`
+
 ## [3.2.9](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.9)
 
 ### Enhancements
