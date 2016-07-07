@@ -155,13 +155,13 @@ en question était donc nécessaire et a bien eu lieu, trop tard de quelques jou
 Je me suis calmé et redeviens aussi prudent qu'avant, il reste encore un peu de
 chemin mais c'est en bonne voie.
 
-Aujourd'hui (3 semaines après cette chute), mes virages à gauche *quand je suis
-seul, elle, elle n'aime pas plus qu'avant* vont aussi bien que précédemment, ils
-n'avaient pas trop soffert non plus. Il est très probable que si j'étais tombé
-seul je n'aurais pas eu de souci pour remonter sur la moto immédiatement. Tout
-le reste est comme avant, voire mieux puisque ma passagère et moi sommes ensemble.
-*ouai, l'histoire du constat sur un accident, c'est hasbeen* Au moins question
-confiance, il n'y a pas trop de question à se poser.
+Aujourd'hui, mes virages à gauche *quand je suis seul, elle, elle n'aime pas plus
+qu'avant* vont aussi bien que précédemment, ils n'avaient pas trop soffert non plus.
+Il est très probable que si j'étais tombé seul je n'aurais pas eu de souci pour
+remonter sur la moto immédiatement. Tout le reste est comme avant, voire mieux
+puisque ma passagère et moi sommes ensemble. *ouai, l'histoire du constat sur un
+accident, c'est hasbeen* Au moins question confiance, il n'y a pas trop de question
+à se poser.
 
 ![Ma passagère](http://i19.photobucket.com/albums/b185/luckylucvfr/Joe%20Bar%20Team/T12001.jpg){: .align-center}
 
