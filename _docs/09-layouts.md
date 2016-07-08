@@ -7,7 +7,7 @@ single_layout_gallery:
     alt: "single layout with header example"
   - image_path: mm-layout-single-meta.png
     alt: "single layout with comments and related posts"
-modified: 2016-05-17T14:32:44-04:00
+modified: 2016-07-08T10:48:34-04:00
 ---
 
 {% include base_path %}
@@ -398,7 +398,7 @@ sidebar:
   <figcaption>Example of custom sidebar content added as YAML Front Matter.</figcaption>
 </figure>
 
-**ProTip:** Custom sidebar content added to a post or page's YAML Front Matter will appear above the author profile if enabled with `author_profile: true`.
+**Note:** Custom sidebar content added to a post or page's YAML Front Matter will appear below the author profile if enabled with `author_profile: true`.
 {: .notice--info}
 
 ---
