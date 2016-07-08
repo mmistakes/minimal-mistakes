@@ -33,7 +33,7 @@ in which we can run Sia with all of its dependencies.
 The components we are using in this guide are:
 
 * Synology DSM 6.0-7321 Update 7
-* Sia v.0.6.0
+* Sia v.1.0.0
 * Docker v.1.9.1
 
 Though this guide is written specifically for Docker on the Synology DSM system,
@@ -104,7 +104,7 @@ This `Dockerfile` does a few things:
 
 * Creates a Docker image from the golang base image so that the latest stable
   version of Go is available within the container.
-* Downloads Sia v.0.6.0 (the latest stable release as of this writing) and
+* Downloads Sia v.1.0.0 (the latest stable release as of this writing) and
   installs it to the `/opt/sia` directory.
 * Configures the image to run `siad`, the Sia daemon process, when the container
   starts up.
@@ -112,6 +112,9 @@ This `Dockerfile` does a few things:
   for API commands. Otherwise, `siad` would only listen to port `9980` on
   `localhost` and we wouldn't be able to issue commands to Sia from outside of
   our Docker container.
+  * The `--disable-api-security` tells `siad` that we have explicitly chosen to
+    listen to Sia API calls from outside of localhost, which is a security risk.
+    We handle mitigations for this risk in the subsequent steps of this guide.
 * Instructs `siad` to use `/mnt/sia` as its folder for Sia state information.
   In the next step, we'll link `/mnt/sia` to the Synology Shared Folder "sia"
   that we created earlier so that the files `siad` generates are visible on the
@@ -273,3 +276,8 @@ host:
 
 Check that guide out for an in-depth walkthrough of configuring the Sia host we
 just set up.
+
+## Updates
+
+* 2016-05-30: Original publication.
+* 2016-07-08: Updated instructions for the Sia 1.0.0 release.
