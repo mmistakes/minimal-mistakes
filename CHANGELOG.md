@@ -1,6 +1,19 @@
+## [3.3.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.3.1)
+
+### Enhancements
+
+- Enable image popup on < 500px wide screens. [#385](https://github.com/mmistakes/minimal-mistakes/issues/385)
+- Indicate the relationship between component URLs in a paginated series by applying `rel="prev"` and `rel="next"` to pages that use `site.paginator`. [#253](https://github.com/mmistakes/minimal-mistakes/issues/253)
+- Improve link posts in archive listings. [#276](https://github.com/mmistakes/minimal-mistakes/issues/276)
+
+### Maintenance
+
+- Update gems: `github-pages` (86), `ffi` 1.9.13, `jekyll-mentions` 1.1.3, and `rouge` 1.11.1
+- Fix note about custom sidebar content appearing below author profile. [#388](https://github.com/mmistakes/minimal-mistakes/issues/388)
+
 ## [3.2.13](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.13)
 
-### Enhancement
+### Enhancements
 
 - Add English default UI text for Canada, Great Britain, and Australia. [#377](https://github.com/mmistakes/minimal-mistakes/issues/377)
 - Switch default locale from `en-US` to `en`.
@@ -100,13 +113,13 @@
 
 ## [3.2.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.3)
 
-### Enhancement
+### Enhancements
 
 - Add [Discourse](https://www.discourse.org/) as a commenting provider. [#335](https://github.com/mmistakes/minimal-mistakes/pull/335)
 
 ## [3.2.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.2)
 
-### Enhancement
+### Enhancements
 
 - Add support for image captions in Magnific Popup overlays via the [`gallery`](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#gallery) helper. [#334](https://github.com/mmistakes/minimal-mistakes/issues/334)
 
@@ -140,7 +153,7 @@
 
 ## [3.1.7](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.7)
 
-### Enhancement
+### Enhancements
 
 - Add translation key for "Recent Posts" used in home page `index.html`. [#316](https://github.com/mmistakes/minimal-mistakes/pull/316)
 
@@ -183,7 +196,7 @@
 
 ## [3.1.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.2)
 
-### Enhancement
+### Enhancements
 
 - Explain how to use `nav_list` helper in [documentation](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#navigation-list).
 - Reduce left/right padding on smaller screens to increase width of main content column.
