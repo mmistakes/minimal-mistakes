@@ -4,8 +4,21 @@ permalink: /docs/history/
 excerpt: "Changelog of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2016-07-01T13:00:24-04:00
+modified: 2016-07-11T14:17:10-04:00
 ---
+
+## [3.3.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.3.1)
+
+### Enhancements
+
+- Enable image popup on < 500px wide screens. [#385](https://github.com/mmistakes/minimal-mistakes/issues/385)
+- Indicate the relationship between component URLs in a paginated series by applying `rel="prev"` and `rel="next"` to pages that use `site.paginator`. [#253](https://github.com/mmistakes/minimal-mistakes/issues/253)
+- Improve link posts in archive listings. [#276](https://github.com/mmistakes/minimal-mistakes/issues/276)
+
+### Maintenance
+
+- Update gems: `github-pages` (86), `ffi` 1.9.13, `jekyll-mentions` 1.1.3, and `rouge` 1.11.1
+- Fix note about custom sidebar content appearing below author profile. [#388](https://github.com/mmistakes/minimal-mistakes/issues/388)
 
 ## [3.2.13](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.13)
 
