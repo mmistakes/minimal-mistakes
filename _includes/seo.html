@@ -92,12 +92,13 @@
 {% if page.date %}
   <meta property="og:type" content="article">
   <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
-  {% if page.next.url %}
-    <link rel="next" href="{{ page.next.url | prepend: seo_url | replace: "/index.html", "/" }}" title="{{ page.next.title | escape }}">
-  {% endif %}
-  {% if page.previous.url %}
-    <link rel="prev" href="{{ page.previous.url | prepend: seo_url | replace: "/index.html", "/" }}" title="{{ page.previous.title | escape }}">
-  {% endif %}
+{% endif %}
+
+{% if paginator.previous_page %}
+  <link rel="prev" href="{{ paginator.previous_page_path | prepend: seo_url }}">
+{% endif %}
+{% if paginator.next_page %}
+  <link rel="next" href="{{ paginator.next_page_path | prepend: seo_url }}">
 {% endif %}
 
 {% if site.og_image %}
