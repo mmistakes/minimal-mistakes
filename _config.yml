@@ -7,11 +7,11 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "{Unwrap}"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : "Ayan Sengupta"
+description              : "A site where you can learn to explore yourself"
+url                      : "https://ayansengupta17.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -31,13 +31,13 @@ comments:
 
 # SEO Related
 google_site_verification :
-bing_site_verification   :
+bing_site_verification   : "0FC3FD70512616B052E755A56F8952D"
 alexa_site_verification  :
 yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               :	
 facebook:
   username               :
   app_id                 :
@@ -63,11 +63,11 @@ google_ad_slot           :
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Ayan Sengupta"
   avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  bio              : "Electrical Engineer"
+  location         : "India"
+  email            : "ayansengupta17@gmail.com"
   uri              :
   bitbucket        :
   codepen          :
