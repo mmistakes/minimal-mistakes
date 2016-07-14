@@ -11,7 +11,12 @@ $(document).ready(function(){
   $(".sticky").Stickyfill();
 
   var stickySideBar = function(){
-    if (!$(".author__urls-wrapper button").is(":visible")) {
+    var show = $(".author__urls-wrapper button").length === 0 ? $(window).width() > 1024 : $(".author__urls-wrapper button").is(":visible");
+    // console.log("has button: " + $(".author__urls-wrapper button").length === 0);
+    // console.log("Window Width: " + windowWidth);
+    // console.log("show: " + show);
+    //old code was if($(window).width() > 1024)
+    if (show) {
       // fix
       Stickyfill.rebuild();
       Stickyfill.init();
