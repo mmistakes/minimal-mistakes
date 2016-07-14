@@ -2,7 +2,7 @@
 title: "JavaScript"
 permalink: /docs/javascript/
 excerpt: "Instructions for customizing and building the theme's scripts."
-modified: 2016-04-13T15:54:02-04:00
+modified: 2016-07-14T09:39:49-04:00
 ---
 
 {% include base_path %}
@@ -47,4 +47,4 @@ To get started:
 **Note:** If you upgraded from a previous version of the theme be sure you copied over [`package.json`]({{ site.gh_repo }}/master/package.json) prior to running `npm install`.
 {: .notice--warning}
 
-If all goes well, running `npm build:js` will compress/concatenate `_main.js` and all plugin scripts into `main.min.js`.
+If all goes well, running `npm run build:js` will compress/concatenate `_main.js` and all plugin scripts into `main.min.js`.
