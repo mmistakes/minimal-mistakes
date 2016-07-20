@@ -4,8 +4,34 @@ permalink: /docs/history/
 excerpt: "Changelog of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2016-07-14T12:02:24-04:00
+modified: 2016-07-20T16:14:54-04:00
 ---
+
+## [3.3.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.3.3)
+
+### Enhancements
+
+- Make footer stick to the bottom of the page.
+
+### Bug Fixes
+
+- Fix `gallery` size bug [#402](https://github.com/mmistakes/minimal-mistakes/issues/402)
+
+### Maintenance
+
+- Set default `lang` to `en`.
+
+### Enhancements
+
+- Make footer stick to the bottom of the page.
+
+### Bug Fixes
+
+- Fix `gallery` size bug [#402](https://github.com/mmistakes/minimal-mistakes/issues/402)
+
+### Maintenance
+
+- Set default `lang` to `en`.
 
 ## [3.3.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.3.2)
 
