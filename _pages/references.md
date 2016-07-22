@@ -6,8 +6,6 @@ sitemap: false
 permalink: /references.html
 ---
 
-
-
 ## References
 
 ### LBSPR Methodology
@@ -22,4 +20,4 @@ Hordyk, A., Ono, K., Prince, J.D., and Walters, C.J. 2016. A simple length-struc
 Prince, J.D., Hordyk, A.R., Valencia, S.R., Loneragan, N.R., and Sainsbury, K.J. 2015. Revisiting the concept of Beverton-Holt life-history invariants with the aim of informing data-poor fisheries assessment. ICES J. Mar. Sci. 72: 194-203.
 
 ### LBSPR Application 
-Prince, J.D., Victor, S., Kloulchad, V., and Hordyk, A.R. 2015. Length based SPR assessment of eleven Indo-Pacific coral reef fish populations in Palau. Fish. Res. 171: 42–58. doi: 10.1016/j.fishres.2015.06.008.
+Prince, J.D., Victor, S., Kloulchad, V., and Hordyk, A.R. 2015. Length based SPR assessment of eleven Indo-Pacific coral reef fish populations in Palau. Fish. Res. 171: 42-58. doi: 10.1016/j.fishres.2015.06.008.
