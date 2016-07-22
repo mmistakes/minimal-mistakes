@@ -64,12 +64,12 @@ https://mmistakes.github.io/minimal-mistakes/docs/helpers/
 {% include base_path %}
 # Welcome to the Barefoot Ecologist's Toolbox
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque enim tellus, tincidunt et egestas non, vulputate sit amet augue. Sed facilisis pulvinar metus bibendum mattis. Ut elementum quam non justo imperdiet, eget suscipit lacus dictum. Maecenas ac rutrum odio, cursus placerat massa. 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget vestibulum elit. Etiam id purus nisi. Aliquam turpis velit, aliquam vel erat molestie, tincidunt ullamcorper purus. 
-
 ## Applications 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget vestibulum elit. Etiam id purus nisi. Aliquam turpis velit, aliquam vel erat molestie, tincidunt ullamcorper purus. Maecenas porttitor laoreet pulvinar. Sed at egestas nunc, ac luctus magna. Vestibulum lacinia vitae risus id dapibus. Aenean sed erat quam. Mauris in elit eleifend, tincidunt magna sit amet, convallis est. Vestibulum dapibus hendrerit tortor, eu fermentum dui mollis eu. Aliquam porta nulla eu elit placerat venenatis. Nulla sit amet viverra tortor, vel hendrerit magna. Nullam a erat quis tortor congue sodales tristique sit amet nisl. Sed a ornare arcu. Donec pretium volutpat tellus, sit amet finibus orci gravida in. Vestibulum suscipit eros eget lobortis cursus.
+The Barefoot Ecologist's Toolbox website will include a number of applications and tools for exploring data and analysis, simulation of various aspects of a fishery, and estimation of parameters.
+
+Currently only an early version of the length-based spawning potential ratio (LBSPR) assessment method for data-limited fisheries is available.
+
+Help information and other supporting material is not yet complete. More applications and material coming soon.
 
 {% include feature_row %}
 
