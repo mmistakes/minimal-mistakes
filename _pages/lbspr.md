@@ -23,9 +23,7 @@ Finally, please make sure you understand the data and the biological parameters 
   Your browser doesn't support iframes
 </iframe>
 
-
 <h3> Download the LBSPR R Package </h3>
-
 <div style="width:800px; margin:0 auto; position:relative;">
 <section id="downloads" class="clearfix" >
 <a href="https://github.com/AdrianHordyk/lbspr/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
