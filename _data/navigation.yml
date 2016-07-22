@@ -5,8 +5,8 @@ main:
     url: /about-us
   - title: "News"
     url: /year-archive/
-  - title: "Links"
-    url: /links
+  - title: "References"
+    url: /references
   - title: "Contact Us"
     url: /contact
   - title: "Help"
