@@ -12,7 +12,6 @@ You can test this website locally on OS X as follows:
    *Note*: This step might fail when installing the `nokogiri` gem. If this happens, run `bundle config build.nokogiri --use-system-libraries` and then run `bundle install` again.
 4. Start the jekyll server by running `bundle exec jekyll serve`.
 5. You can then see the website at http://localhost:4000.
->>>>>>> master
 
 ## License
 
