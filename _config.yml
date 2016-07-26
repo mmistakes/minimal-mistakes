@@ -11,8 +11,8 @@ title                    : "Riflessioni di uno Psicologo Online a Milano"
 title_separator          : "-"
 name                     : "Ivan Ferrero"
 description              : "Della Psicologia, della Vita, e di Tutto il Resto."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+url                      : "https://ivanpsy.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "/minimal-mistakes" # the subpath of your site, e.g. "/blog"
 gh_repo                  :
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
