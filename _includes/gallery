@@ -6,11 +6,9 @@
   {% assign gallery = page.gallery %}
 {% endif %}
 
-{% capture gallery_size %}{{ gallery | size }}{% endcapture %}
-
-{% if gallery_size == '2' %}
+{% if gallery.size == 2 %}
   {% assign gallery_layout = 'half' %}
-{% elsif gallery_size >= '3' %}
+{% elsif gallery.size >= 3 %}
   {% assign gallery_layout = 'third' %}
 {% else %}
   {% assign gallery_layout = '' %}
