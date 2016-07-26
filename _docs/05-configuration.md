@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-modified: 2016-06-16
+modified: 2016-07-26T15:51:34-04:00
 ---
 
 {% include base_path %}
@@ -195,6 +195,18 @@ comments:
 ##### Other Comment Providers
 
 To use another provider not included with the theme set `provider: "custom"` then add their embed code to `_includes/comments-providers/custom.html`.
+
+### Custom Feed URL
+
+By default the theme links to `feed.xml` generated in the root of your site by the **jekyll-feed** plugin. To link to an externally hosted feed update `atom_feed` in `_config.yml` like so:
+
+```yaml
+atom_feed:
+  path: "http://feeds.feedburner.com/youFeedname"
+```
+
+**Note:** By default the site feed is linked in two locations: inside the [`<head>` element]({{ gh_repo }}/master/_includes/head.html) and at the bottom of every page in the [site footer]({{ gh_repo }}/master/_includes/footer.html).
+{: .notice--info}
 
 ### SEO, Social Sharing, and Analytics Settings
 
