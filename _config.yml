@@ -9,7 +9,7 @@
 locale                   : "en"
 title                    : "Riflessioni di uno Psicologo Online a Milano"
 title_separator          : "-"
-name                     : "Ivan Ferrero"
+name                     : "Dr Ivan Ferrero"
 description              : "Della Psicologia, della Vita, e di Tutto il Resto."
 url                      : "https://ivanpsy.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/minimal-mistakes" # the subpath of your site, e.g. "/blog"
