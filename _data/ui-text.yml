@@ -102,5 +102,36 @@ fr-BE:
 fr-CH:
   <<: *DEFAULT_FR
 
+# Turkish
+# -----------------
+tr: &DEFAULT_TR
+  page                  : "Sayfa"
+  pagination_previous   : "Önceki"
+  pagination_next       : "Sonraki"
+  breadcrumb_home_label : "Ana Sayfa"
+  breadcrumb_separator  : "/"
+  toc_label             : "İçindekiler"
+  ext_link_label        : "Doğrudan Bağlantı"
+  less_than             : "Şu süreden az: "
+  minute_read           : "dakika tahmini okuma süresi"
+  share_on_label        : "Paylaş"
+  meta_label            :
+  tags_label            : "Etiketler:"
+  categories_label      : "Kategoriler:"
+  date_label            : "Güncelleme tarihi:"
+  comments_label        : "Yorum yapın"
+  more_label            : "Daha fazlasını öğrenin"
+  related_label         : "Bunlar ilginizi çekebilir:"
+  follow_label          : "Takip et:"
+  feed_label            : "RSS"
+  powered_by            : "Emeği geçenler: "
+  website_label         : "Web sayfası"
+  email_label           : "E-posta"
+  recent_posts          : "Son yazılar"
+  undefined_wpm         : "_config.yml dosyasında tanımlanmamış words_per_minute parametresi"
+tr-TR:
+  <<: *DEFAULT_TR
+
+
 # Another locale
 # --------------
