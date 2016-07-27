@@ -9,8 +9,8 @@
 locale                   : "en"
 title                    : "ACL 2017"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Assocation for Computational Linguistics"
+description              : "Official website for the 2017 Annual Meeting of the Assoication for Computational Linguistics."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
@@ -146,6 +146,21 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
+
+# Defaults
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "pages"
 
 # Outputting
 permalink: /:categories/:title/
