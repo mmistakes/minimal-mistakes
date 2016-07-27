@@ -9,7 +9,7 @@
 locale                   : "en"
 title                    : "ACL 2017"
 title_separator          : "-"
-name                     : "Assocation for Computational Linguistics"
+name                     : "Association for Computational Linguistics"
 description              : "Official website for the 2017 Annual Meeting of the Assoication for Computational Linguistics."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
