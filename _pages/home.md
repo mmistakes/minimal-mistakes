@@ -1,17 +1,23 @@
 ---
-title: "Welcome to ACL 2017"
+title: "Association for Computational Linguistics<br/> 2017 Meeting"
 layout: splash
 permalink: /
 header:
   overlay_color: "#5e616c"
-  overlay_image: mm-home-page-feature.jpg
-  cta_label: "<i class='fa fa-download'></i> Install Now"
-  cta_url: "/docs/quick-start-guide/"
-  caption: "Vancouver, Canada"
-excerpt: 'A flexible two-column Jekyll theme. Perfect for personal sites, blogs, and portfolios hosted on GitHub or your own server.<br /> <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/3.3.3">Latest release v3.3.3</a></small><br /><br /> {::nomarkdown}<iframe style="display: inline-block;" src="https://ghbtns.com/github-btn.html?user=mmistakes&repo=minimal-mistakes&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe> <iframe style="display: inline-block;" src="https://ghbtns.com/github-btn.html?user=mmistakes&repo=minimal-mistakes&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>{:/nomarkdown}'
-github:
-  - excerpt: '{::nomarkdown}<iframe style="display: inline-block;" src="https://ghbtns.com/github-btn.html?user=mmistakes&repo=minimal-mistakes&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe> <iframe style="display: inline-block;" src="https://ghbtns.com/github-btn.html?user=mmistakes&repo=minimal-mistakes&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>{:/nomarkdown}'
-intro:
-  - excerpt: 'Get notified when I add new stuff &nbsp; [<i class="fa fa-twitter"></i> @mmistakes](https://twitter.com/mmistakes){: .btn .btn--twitter}'
+  overlay_image: vancouver-header-cropped.jpg
+  caption: '<a href="https://en.wikipedia.org/wiki/File:Vancouver_dusk_pano.jpg">Photo</a> by Matthew Field / <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>'
+excerpt: "August 7-12 <br/> Vancouver, Canada"
 ---
+<h2>Welcome!</h2>
 
+The 55th annual meeting of the Association for Computational Linguistics (ACL) will take place in Vancouver, Canada. ACL 2017 will be held at the XXX, in the heart of XXX, August 7-12, 2017.
+
+As in previous years, the program of the conference includes poster sessions, tutorials, workshops, and demonstrations in addition to the main conference. ACL is the premier conference of the field of computational linguistics, covering a broad spectrum of diverse research areas that are concerned with computational approaches to natural language.
+
+<h2>Conference Dates</h2>
+
+<ul>
+  <li>August 7: Tutorials.</li>
+  <li>August 8-10: Main Conference.</li>
+  <li>August 11-12: Workshops and co-located events.</li>
+</ul>
