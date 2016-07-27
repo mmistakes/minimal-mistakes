@@ -1,5 +1,5 @@
 ---
-title: "Association for Computational Linguistics<br/> 2017 Meeting"
+title: "2017 Annual Meeting of the<br/> Association for Computational Linguistics<br/>"
 layout: splash
 permalink: /
 header:
