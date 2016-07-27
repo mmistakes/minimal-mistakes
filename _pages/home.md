@@ -5,7 +5,7 @@ permalink: /
 header:
   overlay_color: "#5e616c"
   overlay_image: vancouver-header-cropped.jpg
-  caption: '<a href="https://en.wikipedia.org/wiki/File:Vancouver_dusk_pano.jpg">Photo</a> by Matthew Field / <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>'
+  caption: 'Photo by <a href="http://www.photography.mattfield.com">Matthew Field</a> / <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>'
 excerpt: "August 7-12 <br/> Vancouver, Canada"
 ---
 <h2>Welcome!</h2>
