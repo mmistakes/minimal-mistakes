@@ -6,12 +6,12 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en"
+locale                   : "it_IT"
 title                    : "Riflessioni di uno Psicologo Online a Milano"
-title_separator          : "-"
+title_separator          : "|"
 name                     : "Dr Ivan Ferrero"
-description              : "Della Psicologia, della Vita, e di Tutto il Resto."
-url                      : "https://ivanpsy.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "Della Psicologia Online, della Vita Digitale, e di Tutto il Resto."
+url                      : "https://ivanpsy.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/minimal-mistakes" # the subpath of your site, e.g. "/blog"
 gh_repo                  :
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -37,7 +37,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "ivanpsy"
 facebook:
   username               :
   app_id                 :
@@ -73,24 +73,24 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "https://www.facebook.com/Doctor-Ivan-Ferrero-Digital-Psychologist-153352994732266"
   foursquare       :
   github           :
-  google_plus      :
+  google_plus      : "https://plus.google.com/collection/A-kjX"
   keybase          :
-  instagram        :
+  instagram        : "https://www.instagram.com/ivanpsy"
   lastfm           :
-  linkedin         :
+  linkedin         : "https://www.linkedin.com/in/ivanpsy"
   pinterest        :
   soundcloud       :
   stackoverflow    :
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "https://twitter.com/IvanPsy"
   vine             :
   weibo            :
   xing             :
-  youtube          :
+  youtube          : "https://www.youtube.com/channel/UCwtpXynvhq5PG7K22q55-Qg"
 
 
 # Reading Files
