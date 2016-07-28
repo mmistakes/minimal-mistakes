@@ -63,11 +63,11 @@ google_ad_slot           :
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Dr Ivan Ferrero"
   avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  bio              : "Psicoterapeuta, Psicologo Online"
+  location         : "via Felice Bisleri - 20148 Milano Italy"
+  email            : "ivan.ferrero1975@gmail.com
   uri              :
   bitbucket        :
   codepen          :
@@ -83,7 +83,7 @@ author:
   linkedin         :
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    :
   steam            :
   tumblr           :
   twitter          :
