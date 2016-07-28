@@ -1,3 +1,20 @@
+---
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+
+---
+
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your entire site, values
