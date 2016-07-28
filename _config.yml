@@ -12,7 +12,7 @@ title_separator          : "|"
 name                     : "Dr Ivan Ferrero"
 description              : "Della Psicologia Online, della Vita Digitale, e di Tutto il Resto."
 url                      : "https://ivanpsy.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/minimal-mistakes" # the subpath of your site, e.g. "/blog"
+baseurl                  : "/ivanferreroit" # the subpath of your site, e.g. "/blog"
 gh_repo                  :
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
