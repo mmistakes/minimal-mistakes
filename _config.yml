@@ -60,10 +60,6 @@ analytics:
   google:
     tracking_id          : "UA-2011187-3"
 
-# Google AdSense
-google_ad_client         :
-google_ad_slot           :
-
 
 # Site Author
 author:
