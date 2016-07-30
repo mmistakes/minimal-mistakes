@@ -131,6 +131,6 @@ it: &DEFAULT_IT
   website_label         : "Website"
   email_label           : "Email"
   recent_posts          : "Articoli Recenti"
-  undefined_wpm         : "Parametro words_per_minute indefinito in _config.yml"
-en-IT:
+  undefined_wpm         : "Parametro words_per_minute non definito in _config.yml"
+it-IT:
   <<: *DEFAULT_IT
