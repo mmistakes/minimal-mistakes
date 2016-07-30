@@ -19,7 +19,7 @@ defaults:
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "it_IT"
+locale                   : "it"
 title                    : "Riflessioni di uno Psicologo Online a Milano"
 title_separator          : "|"
 name                     : "Dr Ivan Ferrero"
