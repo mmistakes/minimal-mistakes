@@ -1,20 +1,21 @@
-
-Retomando a conversa iniciada no último post que falava um pouco sobre o que é um feeedback. Se você ainda não leu este, clique aqui e se inteire do assunto. Dessa vez a minha ideia é falar sobre as principais características ao se dar um feedback, vamos conversar sobre o ambiente adequado, o momento, o motivo e alguns outros pontos relevantes.
+Retomando a conversa iniciada no último post que falava um pouco sobre o que é um feeedback. Se você ainda não leu este, [clique aqui]({{ site.url }}/o-que-é-um-feedback-série-sobre-feedback/) e se inteire do assunto. Dessa vez a minha ideia é falar sobre as principais características ao se dar um feedback, vamos conversar sobre o ambiente adequado, o momento, o motivo e alguns outros pontos relevantes.
 
 ### Começando a conversa
 Vamos começar falando sobre a abordagem. Muitas pessoas ficam bem nervosas se alguém chega até elas e diz “Preciso conversar com você”. Tente quebrar essa tensão, chame a pessoa para tomar um café, uma água, pegar um ar ou algo que deixe a pessoa relaxada. Isso ajuda a ser uma conversa mais tranquila.
 
 ### Criando o ambiente ideal
 Outro aspecto, é ter um ambiente onde você e a pessoa estejam a sós para que possam conversar de forma aberta. Assim ninguém fica desconfortável pela presença de um terceiro.
-Definindo o que quer e o que não quer desta conversa
-Em seguida deixe claro o que você quer e o que você não quer definindo a sua intenção e expectativas com aquela conversa. Um exemplo é: Meu objetivo não é reclamar de maneira nenhuma, mas acredito que isso pode te ajudar de alguma maneira.
+
+### Definindo o que quer e o que não quer desta conversa
+Em seguida deixe claro o que você quer e o que você não quer definindo a sua intenção e expectativas com aquela conversa. Um exemplo é: Meu objetivo não é reclamar de maneira nenhuma, mas acredito que isso pode te ajudar de alguma maneira. Isso ajuda a fazer a pessoa não entrar na defensiva.
 
 ### Dando o feedback
-Para iniciar o diálogo lembrar ao outro a situação que levou você a chegar aquele feedback, como você entendeu aquela situação e a conclusão que tirou. Então sim, dê o seu feedback e explique como este ponto vai ajudar a pessoa.
+Para iniciar o diálogo lembrar ao outro a situação que levou você a chegar aquele feedback, como você entendeu aquela situação e a conclusão que tirou. Então sim, dê o seu feedback e explique como este ponto vai ajudar a pessoa. Quanto mais informações você tiver melhor será para que o outro entenda ele.
 
 ### Validando o recebimento
 Valide se ela concorda ou não, e é ok não concordar. Deixe o espaço aberto para esclarecimentos ou dúvidas, pois caso o feedback não seja entendido e absorvido ele não será efetivo.
-Evitando o fim do diálogo
+
+### Evitando o fim do diálogo
 Neste momento tenha atenção para a reação da pessoa. Veja como ela recebe, pois caso ela se feche é importante dar um passo atrás e relembrar o objetivo da conversa para manter o diálogo aberto.
 
 ### Momento de reflexão e absorção
@@ -28,4 +29,5 @@ Além dos pontos dessa conversa o intervalo entre o acontecido e a conversa faz 
 
 ### Conclusão
 Esse é o caminho das pedras para que você consiga dar um feedback de maneira efetiva, ajudando a pessoa a entender o seu ponto. No início isso pode não ficar muito natural mas com a prática você vai melhorando.
-Espero que tenha gostado desse post sobre como dar feedback, e se você gostou mesmo deixe um comentário aqui e compartilha no seu Facebook este texto, não esquece de deixar seu coraçãozinho aqui em baixo. :)
+
+Espero que tenha gostado desse post sobre como dar feedback, e se você gostou mesmo  compartilhe com outras pessoas e no seu Facebook este texto. :wink:
