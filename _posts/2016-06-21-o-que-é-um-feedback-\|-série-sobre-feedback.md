@@ -17,7 +17,9 @@ Vamos destrinchar este feedback. João utiliza um fato que aconteceu para dar o 
 
 Já do lado do Pedro, o agradecimento foi muito importante, pois incentiva João a conversar com o companheiro de trabalho que tiver um ponto que acredita ajudá-lo de alguma maneira.
 
-Este foi um feedback de um ponto em que Pedro pode evoluir. Muitos vêem feedback como presente, pois a pessoa que está te dando acredita que vai te ajudar de alguma maneira, então agradecer é sempre importante em todos os casos. Isto não significa, no entanto, que o presente será utilizado pois pode não servir muito bem. Também existem casos em que o feedback é uma sugestão para mantermos um comportamento ou aumentá-lo.
+Este foi um feedback de um ponto em que Pedro pode evoluir. Muitos vêem feedback como presente, pois a pessoa que está te dando acredita que vai te ajudar de alguma maneira, então agradecer é sempre importante em todos os casos. Isto não significa, no entanto, que o presente será utilizado pois pode não servir muito bem.
+
+Também existem casos em que o feedback é uma sugestão para mantermos um comportamento ou aumentá-lo.
 
 >Pedro: Eu assisti sua palestra hoje, achei que seus exemplos são muitos bons, o que tornou o assunto mais fácil de se entender.
 
@@ -27,7 +29,7 @@ Neste feedback novamente vemos o padrão de ter: um fato, a história que se cri
 
 Ao fim dessa leitura fica claro que temos dois tipos de feedbacks, aqueles que reforçam um comportamento e os que sugerem um ponto de melhora. Além disso, eles têm uma estrutura que ajuda na compreensão de quem o recebe, facilitando bastante. Esses são alguns pontos que me fazem gostar tanto de feedback, mais ainda existem vários outros que pretendo falar sobre em breve.
 
-Essa foi a conclusão que cheguei baseado em muita conversa e leitura, o que você achou sobre ela? Deixe aqui seu comentário ou entre em contato comigo da maneira que você puder para me dar o seu feedback. Se gostou, compartilhe para que mais pessoas possam saber dessas maravilhas também.
+Essa foi a conclusão que cheguei baseado em muita conversa e leitura, o que você achou sobre ela? Entre em contato comigo da maneira que você puder para me dar o seu feedback. Se gostou, compartilhe para que mais pessoas possam saber dessas maravilhas também.
 Pretendo falar mais sobre feedback em outros momentos: como dar feedback, como recebê-los, como pedir, mas essas são cenas dos próximos episódios.
 
 Até lá! o/
