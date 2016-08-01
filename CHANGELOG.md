@@ -6,8 +6,6 @@
 - Add Portuguese localized UI text. [#411](https://github.com/mmistakes/minimal-mistakes/pull/411)
 - Add Italian localized UI text. [#409](https://github.com/mmistakes/minimal-mistakes/pull/409)
 
-### Bug Fixes
-
 ### Maintenance
 
 - Remove unused Google AdSense variables in `_config.yml` [#404](https://github.com/mmistakes/minimal-mistakes/issues/404)
