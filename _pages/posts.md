@@ -4,7 +4,7 @@ layout: single
 excerpt: "Blog posts for DevCycle."
 sitemap: false
 author_profile: true
-permalink: /posts.html
+permalink: /posts/
 ---
 
 {% include base_path %}

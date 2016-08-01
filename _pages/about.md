@@ -3,7 +3,7 @@ title: "About"
 layout: single
 excerpt: "DevCycle is an IT consultancy."
 sitemap: false
-permalink: /about.html
+permalink: /about/
 ---
 
 DevCycle is an IT consultancy with just under thirty years of
