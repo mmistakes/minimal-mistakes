@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "All the Layers"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Anthony Hawkins"
+description              : "A journey of technology, code and learning."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
@@ -65,11 +65,11 @@ google_ad_slot           :
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  name             : "Anthony Hawkins"
+  avatar           : "user_pic.jpg"
+  bio              : "Passonate about all aspects of the Internet, the Web and Technology"
+  location         : "STL - Missouri"
+  email            : "ahawkins.blog@gmail.com"
   uri              :
   bitbucket        :
   codepen          :
