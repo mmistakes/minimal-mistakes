@@ -2,12 +2,15 @@
 title: "Upgrading"
 permalink: /docs/upgrading/
 excerpt: "Instructions and suggestions for upgrading the theme."
-modified: 2016-04-27T10:35:00-04:00
+modified: 2016-08-01T09:43:46-04:00
 ---
 
 {% include base_path %}
 
-Currently there is no good way of upgrading the theme without doing a bit of manual work. The future looks promising with [**gem based themes**](https://github.com/jekyll/jekyll/pull/4595) on the horizon, but for now here's some suggestions on how handle theme updates.
+Currently there is no good way of upgrading the theme without doing a bit of manual work. The future looks promising now that [**gem based themes**](https://jekyllrb.com/docs/themes/) have landed with Jekyll `v3.2`, but for now here's some suggestions on how to handle updates.
+
+**Gemified Theme**: A future version of Minimal Mistakes will suppor the new Jekyll theme system. A few key features like theme assets (eg. fonts, images, and JavaScript) and support for GitHub Pages are currently missing for this enhancement to happen now. Stay tuned!
+{: .notice--info}
 
 ## Use Git
 

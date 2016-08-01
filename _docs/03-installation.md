@@ -2,7 +2,7 @@
 title: "Installation"
 permalink: /docs/installation/
 excerpt: "Instructions for installing the theme for new and existing Jekyll based sites."
-modified: 2016-05-16T10:07:40-04:00
+modified: 2016-08-01T09:36:36-04:00
 ---
 
 {% include base_path %}
@@ -60,26 +60,14 @@ If this is your first time using Jekyll be sure to read through the [official do
 
 To keep your sanity and better manage dependencies I strongly urge you to [install Bundler](http://bundler.io/) with `gem install bundler` and use the included [`Gemfile`](https://github.com/{{ site.repository }}/blob/master/Gemfile). The theme's Gemfile includes the `github-pages` gem to maintain a local Jekyll environment in sync with GitHub Pages.
 
-If you're not planning on hosting with GitHub Pages and want to leverage features found in the latest version of Jekyll, replace `gem "github-pages"` with `gem "jekyll"` in your `Gemfile`. In either case run the following:
+If you're not planning to host with GitHub Pages and want to leverage features found in the latest version of Jekyll, uncomment the `gem "jekyll"` line in your `Gemfile`. In either case run the following:
 
 ```bash
 $ bundle install
 ```
 
-**Note:** The [GitHub Pages gem](https://github.com/github/pages-gem) installs additional dependencies that need to be added to your `Gemfile` if you replace `gem "github-pages"` with `gem "jekyll"`. To do this add the following gems and then run `bundle install`.
+**Note:** The [GitHub Pages gem](https://github.com/github/pages-gem) installs additional dependencies that may need to be added to your `Gemfile` if you decide to remove the `gem "github-pages"`.
 {: .notice--warning}
-
-```ruby
-source "https://rubygems.org"
-
-gem "jekyll"
-gem "jekyll-paginate"
-gem "jekyll-sitemap"
-gem "jekyll-gist"
-gem "jekyll-feed"
-gem "jemoji"
-gem "wdm", "~> 0.1.0" if Gem.win_platform?
-```
 
 <figure>
   <img src="{{ base_path }}/images/mm-bundle-install.gif" alt="bundle install in Terminal window">
