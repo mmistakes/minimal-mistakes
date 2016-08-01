@@ -58,7 +58,7 @@ defaults:
 
 If this is your first time using Jekyll be sure to read through the [official documentation](https://jekyllrb.com/docs/home/) before jumping in. This guide assumes you have Ruby v2 installed and a basic understanding of how Jekyll works.
 
-To keep your sanity and better manage dependencies I strongly urge you to [install Bundler](http://bundler.io/) with `gem install bundler` and use the included [`Gemfile`]({{ site.gh_repo }}/blob/master/Gemfile). The theme's Gemfile includes the `github-pages` gem to maintain a local Jekyll environment in sync with GitHub Pages.
+To keep your sanity and better manage dependencies I strongly urge you to [install Bundler](http://bundler.io/) with `gem install bundler` and use the included [`Gemfile`](https://github.com/{{ site.repository }}/blob/master/Gemfile). The theme's Gemfile includes the `github-pages` gem to maintain a local Jekyll environment in sync with GitHub Pages.
 
 If you're not planning on hosting with GitHub Pages and want to leverage features found in the latest version of Jekyll, replace `gem "github-pages"` with `gem "jekyll"` in your `Gemfile`. In either case run the following:
 

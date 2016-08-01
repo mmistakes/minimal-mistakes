@@ -11,7 +11,7 @@ Collections like posts and pages work as you'd expect. If you're new to them be 
 
 The theme has been built with collections in mind and you will find [several examples]({{ base_path }}/collection-archive/) on the demo site ([portfolio]({{ base_path }}/portfolio/), [recipes]({{ base_path }}/recipes/), pets). 
 
-**Collections in the Wild:** This set of documentation is also [built as a collection]({{ site.gh_repo }}/gh-pages/_docs/) if you're looking for a fully fleshed out example to inspect.
+**Collections in the Wild:** This set of documentation is also [built as a collection](https://github.com/{{ site.repository }}/blob/gh-pages/_docs/) if you're looking for a fully fleshed out example to inspect.
 {: .notice--info}
 
 ---
@@ -43,6 +43,6 @@ defaults:
       share: true
 ```
 
-And then create portfolio content like [`_portfolio/foo-bar-website.md`]({{ site.gh_repo }}/gh-pages/_portfolio/foo-bar-website.md), to end up with something like this.
+And then create portfolio content like [`_portfolio/foo-bar-website.md`](https://github.com/{{ site.repository }}/blob/gh-pages/_portfolio/foo-bar-website.md), to end up with something like this.
 
 ![portfolio collection example]({{ base_path }}/images/mm-portfolio-collection-example.jpg)

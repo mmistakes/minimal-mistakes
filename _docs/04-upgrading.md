@@ -13,12 +13,12 @@ Currently there is no good way of upgrading the theme without doing a bit of man
 
 If you want to get the most out of the Jekyll + GitHub Pages workflow, then you'll need to utilize Git. To pull down theme updates you must first ensure there's an upstream remote. If you forked the theme's repo then you're likely good to go.
 
-To double check, run `git remote -v` and verify that you can fetch from `origin {{ site.gh_repo }}/minimal-mistakes.git`.
+To double check, run `git remote -v` and verify that you can fetch from `origin https://github.com/{{ site.repository }}.git`.
 
 To add it you can do the following:
 
 ```bash
-$ git remote add upstream https://github.com/mmistakes/minimal-mistakes.git
+$ git remote add upstream https://github.com/{{ site.repository }}.git
 ```
 
 ### Pull Down Updates
@@ -33,7 +33,7 @@ Depending on the amount of customizations you've made after forking, there's lik
 
 ## Update Files Manually
 
-Another way of dealing with updates is [downloading the theme]({{ site.gh_repo }}/archive/master.zip) --- replacing your layouts, includes, and assets with the newer ones manually. To be sure that you don't miss any changes it's probably a good idea to review the theme's [commit history]({{ site.gh_repo }}/commits/master) to see what's changed since.
+Another way of dealing with updates is [downloading the theme](https://github.com/{{ site.repository }}/archive/master.zip) --- replacing your layouts, includes, and assets with the newer ones manually. To be sure that you don't miss any changes it's probably a good idea to review the theme's [commit history](https://github.com/{{ site.repository }}/commits/master) to see what's changed since.
 
 Here's a quick checklist of the important folders/files you'll want to be mindful of:
 

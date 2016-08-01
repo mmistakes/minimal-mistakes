@@ -58,9 +58,9 @@ The Liquid based taxonomy archives found amongst the demo pages rely on this hel
 | All posts grouped by category | [Source][category-array] | [Demo][category-array-demo] |
 | All posts grouped by tags     | [Source][tag-array]      | [Demo][tag-array-demo]      |
 
-[category-array]: {{ site.gh_repo }}/gh-pages/_pages/category-archive.html
+[category-array]: https://github.com/{{ site.repository }}/blob/gh-pages/_pages/category-archive.html
 [category-array-demo]: {{ base_path }}/categories/
-[tag-array]: {{ site.gh_repo }}/gh-pages/_pages/tag-archive.html
+[tag-array]: https://github.com/{{ site.repository }}/blob/gh-pages/_pages/tag-archive.html
 [tag-array-demo]: {{ base_path }}/tags/
 
 ## Gallery
@@ -108,7 +108,7 @@ And then drop-in the gallery include in the body where you'd like it to appear.
 
 {% include gallery caption="This is a sample gallery with **Markdown support**." %}
 
-**More Gallery Goodness:** A few more examples and [source code]({{ site.gh_repo }}/gh-pages/_posts/2010-09-09-post-gallery.md) can be seen in [this sample gallery post]({{ base_path }}{% post_url 2010-09-09-post-gallery %}).
+**More Gallery Goodness:** A few more examples and [source code](https://github.com/{{ site.repository }}/blob/gh-pages/_posts/2010-09-09-post-gallery.md) can be seen in [this sample gallery post]({{ base_path }}{% post_url 2010-09-09-post-gallery %}).
 {: .notice--info}
 
 ## Feature Row
@@ -158,7 +158,7 @@ And then drop-in the feature row include in the body where you'd like it to appe
 
 {% include feature_row %}
 
-**More Feature Row Goodness:** A [few more examples]({{ base_path }}/splash-page/) and [source code]({{ site.gh_repo }}/gh-pages/_pages/splash-page.md) can be seen in the demo site.
+**More Feature Row Goodness:** A [few more examples]({{ base_path }}/splash-page/) and [source code](https://github.com/{{ site.repository }}/blob/gh-pages/_pages/splash-page.md) can be seen in the demo site.
 {: .notice--info}
 
 ## Table of Contents
@@ -240,7 +240,7 @@ sidebar:
 **ProTip:** If you're applying the same navigation list to several pages setting it as a [Front Matter default](https://jekyllrb.com/docs/configuration/#front-matter-defaults) is the better option.
 {: .notice--info}
 
-The theme's documentation is built with the `nav_list` helper so if you'd like an example to dissect take a look at `navigation.yml`, `_config.yml` and `_doc/` in the [`gh-pages` branch]({{ site.gh_repo }}/gh-pages/) of this repo.
+The theme's documentation is built with the `nav_list` helper so if you'd like an example to dissect take a look at `navigation.yml`, `_config.yml` and `_doc/` in the [`gh-pages` branch](https://github.com/{{ site.repository }}/tree/gh-pages/) of this repo.
 
 To add a navigation list to a post or page's main content instead of the sidebar use the include this way:
 

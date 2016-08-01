@@ -44,7 +44,7 @@ To get started:
 2. `cd` to the root of your project.
 3. Install all of the dependencies by running `npm install`.
 
-**Note:** If you upgraded from a previous version of the theme be sure you copied over [`package.json`]({{ site.gh_repo }}/master/package.json) prior to running `npm install`.
+**Note:** If you upgraded from a previous version of the theme be sure you copied over [`package.json`](https://github.com/{{ site.repository }}/blob/master/package.json) prior to running `npm install`.
 {: .notice--warning}
 
 If all goes well, running `npm run build:js` will compress/concatenate `_main.js` and all plugin scripts into `main.min.js`.
