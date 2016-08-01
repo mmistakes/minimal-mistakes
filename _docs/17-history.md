@@ -4,8 +4,14 @@ permalink: /docs/history/
 excerpt: "Changelog of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2016-08-01T09:50:57-04:00
+modified: 2016-08-01T10:30:20-04:00
 ---
+
+## [3.3.6](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.3.6)
+
+### Bug Fixes
+
+- Fix blank `site.teaser` bug [#412](https://github.com/mmistakes/minimal-mistakes/issues/412)
 
 ## [3.3.5](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.3.5)
 
