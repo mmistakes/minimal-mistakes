@@ -1,5 +1,5 @@
 ---
-permalink: /about/
+permalink: /about
 title: "About"
 excerpt: "A little about me."
 date: 2016-07-31
