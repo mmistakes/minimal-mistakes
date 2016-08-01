@@ -66,7 +66,7 @@ google_ad_slot           :
 # Site Author
 author:
   name             : "Chris Howe-Jones"
-  avatar           :
+  avatar           : "profile.jpg"
   bio              : "Technical Navigator"
   location         : "North East England/London"
   email            : "chris.howe-jones@devcycle.co.uk"
