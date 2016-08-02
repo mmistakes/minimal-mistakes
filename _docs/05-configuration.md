@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-modified: 2016-07-26T15:51:34-04:00
+modified: 2016-08-02T12:14:38-04:00
 ---
 
 {% include base_path %}
@@ -72,6 +72,25 @@ For more information on how to properly use `site.url` and `site.baseurl` as int
 
 **Note:** When using `baseurl` remember to include it as part of your path when testing your site locally. Values of `url: ` and `baseurl: "/blog"` would make your local site visible at `http://localhost:4000/blog` and not `http://localhost:4000`.
 {: .notice--warning}
+
+### Site Repository
+
+Add your repository name with organization to your site's configuration file, `_config.yml`.
+
+```yaml
+repository: "username/repo-name"
+```
+
+"NWO" stands for "name with owner." It is GitHub lingo for the username of the owner of the repository plus a forward slash plus the name of the repository, e.g. '**mmistakes/minimal-mistakes**', where '**mmistakes**' is the owner and **'minimal-mistakes**' is the repository name.
+
+Your `site.github.*` fields should fill in like normal. If you run Jekyll with the --verbose flag, you should be able to see all the API calls made.
+
+If you don't set `repository` correctly you may see the following error when trying to `serve` or `build` your Jekyll site:
+
+**Liquid Exceptions:** No repo name found. Specify using `PAGES_REPO_NWO` environment variables, `repository` in your configuration, or set up `origin` git remote pointing to your github.com repository.
+{: .notice--danger}
+
+For more information on how `site.github` data can be used with Jekyll check out [`github-metadata`'s documentation](https://github.com/jekyll/github-metadata).
 
 ### Site Default Teaser Image
 
