@@ -1,3 +1,13 @@
+---
+title: "The Journey to GitHub Pages"
+categories:
+  - Blogging
+tags:
+  - jekyll
+  - blogging
+  - edge case
+---
+
 One of the things I've always had an itch to do was to start my own blog. There are countless of blogging platforms out there but as an IT enthuisist, there are a number of things which are important.
 
 **1 Plain-Text**
