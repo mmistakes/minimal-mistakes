@@ -177,7 +177,7 @@ To keep this example simple I am just using an atom to store my customer resourc
 
 I then created a route mapped to the /customers URI that expects a parameter with the name customer and then calls the store-customer function. The customer map returned from this call is then wrapped in a 'created' HTTP response which has it's location header set to the resource's URI, a status of 201 (created) with a content type of JSON.
 
-Any other route returns not-found (status 404).
+Any other route returns not-found (status `404`).
 
 I built this up layer by layer trying out each function in the REPL. The final piece of the puzzle is to define the entry point of the application and wrap the routes in middleware to handle API calls, JSON parameters and JSON response.
 
@@ -235,7 +235,7 @@ The resulting response has the correct status for a created resource and the hea
    (parse-json-body response)))
 ```
 
-The post-resource-json function creates a request in the same way I did in the REPL then calls the handler bound to app which returns a response map. The parse-json-body is a convenience function to dig into the response body and parse it from a String of JSON to a Clojure map provided that the request didn't 404 and returned a non-nil un-empty body.
+The post-resource-json function creates a request in the same way I did in the REPL then calls the handler bound to app which returns a response map. The parse-json-body is a convenience function to dig into the response body and parse it from a String of JSON to a Clojure map provided that the request didn't `404` and returned a non-nil un-empty body.
 
 Let's run the test defined earlier to be sure we have both the implementation and the test correct.
 
@@ -364,7 +364,7 @@ Again I used the REPL to help build the get-customer function before running the
 
 Let's add some property based tests for get customer.
 
-Firstly I want a specification for testing a customer that already exists returns an HTTP status of OK (200) and the expected values in the resource body are returned. To do this I need to generate a customer, post it to the server and then call get on it and check the status is 200 and the body minus the id matches the generated customer map.
+Firstly I want a specification for testing a customer that already exists returns an HTTP status of OK (`200`) and the expected values in the resource body are returned. To do this I need to generate a customer, post it to the server and then call get on it and check the status is `200` and the body minus the id matches the generated customer map.
 
 ``` clojure
 (deftest test-get-customer-exists
@@ -427,7 +427,7 @@ expected: (= cust (dissoc (:body customer-retrieved) :id))
  to clojure.lang.IPersistentMap
 ```
 
-So in this report I can still see the smallest case that causes the failure (this is produced by 'shrinking' the failed case to find the smallest case that will still fail). However I can also see that the check for status 200 fails with a 404. This is turn causes a failure with checking the body of the request as the body for a 404 will be a string "Not found" rather than valid JSON. I find this style of error reporting much easier to follow especially when you have multiple assertions in the property.
+So in this report I can still see the smallest case that causes the failure (this is produced by 'shrinking' the failed case to find the smallest case that will still fail). However I can also see that the check for status `200` fails with a `404`. This is turn causes a failure with checking the body of the request as the body for a `404` will be a string "Not found" rather than valid JSON. I find this style of error reporting much easier to follow especially when you have multiple assertions in the property.
 
 As well as testing get for customers that exist I also need to test for customers that don't exist.
 
@@ -455,12 +455,12 @@ Ran 7 tests containing 15 assertions.
 $
 ```
 
-The two tests I defined using a combination of deftest and checking don't report unless they fail but we are running 5000 generated tests plus a handful of example tests that act as sanity checks and documentation.
+The two tests I defined using a combination of deftest and checking don't report unless they fail but we are running 3000 generated tests plus a handful of example tests that act as sanity checks and documentation.
 
-To examine the source for this blog or run these tests yourself please clone https://github.com/chrishowejones/blogpbt.
+To examine the source for this blog or run these tests yourself please clone [https://github.com/chrishowejones/blogpbt](https://github.com/chrishowejones/blogpbt).
 
 Although this example shows some of the power of property based testing there is a large category of tests not covered.
 
-I would like to explore what happens if we randomly generate posts and gets (and eventually puts and deletes) against our API. However, working out what result we might expect from a get, for example, relies on knowing the current state of the server. If the customer exists we expect a 200 and the customer details to be returned, if the customer doesn't exist we expect a 404.
+I would like to explore what happens if we randomly generate posts and gets (and eventually puts and deletes) against our API. However, working out what result we might expect from a get, for example, relies on knowing the current state of the server. If the customer exists we expect a `200` and the customer details to be returned, if the customer doesn't exist we expect a `404`.
 
 In my next post I will explore how we might model state across Property Based Tests.
