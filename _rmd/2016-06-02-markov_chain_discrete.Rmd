@@ -7,7 +7,7 @@ modified: `r format(Sys.time(), '%Y-%m-%d')`
 layout: post
 excerpt: "My data science journey is a Markov Chain"
 published: false
-status: process
+status: processed
 tags:
 - Markov Chain
 - Rstats

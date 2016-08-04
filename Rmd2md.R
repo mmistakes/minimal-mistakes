@@ -90,6 +90,7 @@ rmd2md <- function(
       dir_md, 
       paste0(substr(f, 1, (nchar(f)-(nchar(in_ext)))), out_ext)
     )
+    
 
     print("**********************************************************")
     print(paste("Writing file to:", outFile))
@@ -137,7 +138,7 @@ rmd2md <- function(
     } else {
     
       print(
-        paste("Ignoring",file.path(path_site,dir_rmd,f))
+        paste("Ignoring", file.path(path_site,dir_rmd,f))
         )
       
     }
@@ -145,10 +146,21 @@ rmd2md <- function(
   invisible()
   
   # Last thing is to remove exif tags from jpgs in figures folder
-  # Requires linux tool exiv2
+  # Requires linux tool exiv2. Check system is linux first...
+  
+  os <- Sys.info()['sysname']
+  
+  if (os == "Linux") {
   
   system("exiv2 rm figures/*.jpg")
+    
+  } else {
+    
+   warning("exiv2 tool not available on non-linux systems. Be aware that exif data attached to JPEG files will be published too!")
+     
+  }
 
+    
 }
 
 rmd2md()

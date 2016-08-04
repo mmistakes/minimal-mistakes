@@ -3,7 +3,7 @@ title: "Getting to grips with 'Elements of statistical learning'"
 author: matt_upson
 comments: yes
 date: '2016-05-08'
-modified: '2016-05-17'
+#modified: 2016-08-04
 layout: post
 excerpt: "Linear models and least squares"
 published: true
@@ -23,8 +23,6 @@ categories: Rstats
 Last week I joined a reading group for the weighty tome [Elements of Statistical Learning](http://statweb.stanford.edu/~tibs/ElemStatLearn/).
 I really like the idea of this group; interesting as it is - it can be hard to maintain the drive to wade through a text like this.
 Working through it week on week with a group of like-minded people is a great way to overcome this.
-
-**Note that this blog post (and indeed all my blog posts) are written using markdown in a reproducible format. All the code used to produce this page is available freely on [github](https://github.com/machinegurning/machinegurning.github.io/blob/master/_posts/2016-05-08-least_squares_and_nearest_neighbours.md). If you spot an error (there are some), please either [email me](mailto:matthew.a.upson@gmail.com?Subject=machinegurning.com) or create a [pull request](https://github.com/machinegurning/machinegurning.github.io/pulls). Thanks!**
  
 # Linear models
  
@@ -368,12 +366,14 @@ solve.qr(qrx, y)
 {% endhighlight %}
  
 The explanation for why QR decomposition is favoured over solving the normal equation rests in part in the expensive operation $(X^TX)^{-1}$.
-In my experiments (which were admittedly not very scientific), the QR method seemed to take as little as half the time of least squares when trying to solve $X^{T}\beta$ for large matrices.
+In my experiments (which were admittedly not very scientific), the QR method seemed to take as little as half the time of least squares when trying to solve $X\in\mathbb{R}^{m \times n}$ for large matrices.
 Furthermore, where $n$ is much larger than $m$ (say 10 times), the normal equation fails completely, and will return the following error in R:
  
 ```system is computationally singular: reciprocal condition number```
  
 whilst the QR method will at least complete (see the underlying .Rmd for an example I tried).
+ 
+
  
 # Linear models for classification
  
@@ -382,8 +382,10 @@ Here I reproduce the example by Hastie et al. to show a simple linear model used
  
 ## Generate some data
  
+First we generate data based on two distinct normal distributions, which we will seek to separate usin gthe linear model.
+I've copied this code from my earlier post on [k-means](/rstats/knn).
+ 
 In the code chunk below I use Hadley's excellent [purrr](https://github.com/hadley/purrr) package to create 10 bivariate normal distributions, which are then plotted together.
-I've re-used some code from my earlier post on [k-means](/rstats/knn).
 The reason for this will become apparent when I move onto nearest neighbour methods in my next post.
  
 
@@ -622,7 +624,7 @@ sessionInfo()
 
 
 {% highlight text %}
-## R version 3.3.0 (2016-05-03)
+## R version 3.3.1 (2016-06-21)
 ## Platform: x86_64-pc-linux-gnu (64-bit)
 ## Running under: Ubuntu 14.04.4 LTS
 ## 
@@ -638,13 +640,15 @@ sessionInfo()
 ## [1] stats     graphics  grDevices utils     datasets  base     
 ## 
 ## other attached packages:
-## [1] ggplot2_2.1.0  tibble_1.0     purrr_0.2.1    magrittr_1.5  
-## [5] dplyr_0.4.3    testthat_0.8.1 knitr_1.12.3  
+## [1] tibble_1.0     purrr_0.2.1    ggplot2_2.1.0  broom_0.4.0   
+## [5] magrittr_1.5   dplyr_0.4.3    testthat_1.0.2 knitr_1.13.1  
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] Rcpp_0.12.4      digest_0.6.4     assertthat_0.1   plyr_1.8.3      
-##  [5] grid_3.3.0       R6_2.1.2         gtable_0.2.0     DBI_0.4         
-##  [9] formatR_1.3      scales_0.4.0     evaluate_0.9     lazyeval_0.1.10 
-## [13] labeling_0.3     tools_3.3.0      stringr_0.6.2    munsell_0.4.3   
-## [17] parallel_3.3.0   colorspace_1.2-6 methods_3.3.0
+##  [1] Rcpp_0.12.5      mnormt_1.5-4     munsell_0.4.3    colorspace_1.2-6
+##  [5] lattice_0.20-33  R6_2.1.2         stringr_1.0.0    plyr_1.8.4      
+##  [9] tools_3.3.1      parallel_3.3.1   grid_3.3.1       nlme_3.1-128    
+## [13] gtable_0.2.0     psych_1.6.4      DBI_0.4-1        digest_0.6.9    
+## [17] lazyeval_0.2.0   assertthat_0.1   crayon_1.3.2     reshape2_1.4.1  
+## [21] formatR_1.4      tidyr_0.5.1      evaluate_0.9     labeling_0.3    
+## [25] stringi_1.1.1    methods_3.3.1    scales_0.4.0
 {% endhighlight %}
