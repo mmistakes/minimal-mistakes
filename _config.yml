@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "Anthony Hill"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Anthony Hill"
+description              : "Musings and Meanderings"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -39,7 +39,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "anthonhill"
 facebook:
   username               :
   app_id                 :
@@ -61,22 +61,22 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Anthony Hill"
   avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  bio              : "Est. 1983"
+  location         : "Lancashire, UK"
+  email            : "anthon.hill@protonmail.ch"
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "anthonhill"
   foursquare       :
-  github           :
+  github           : "anthonyh29"
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "anthonhill"
   lastfm           :
   linkedin         :
   pinterest        :
@@ -84,7 +84,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "anthonhill"
   vine             :
   weibo            :
   xing             :
