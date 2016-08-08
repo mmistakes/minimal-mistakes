@@ -239,12 +239,12 @@ gems:
   - jemoji
 
 # mimic GitHub Pages with --safe
-# whitelist:
-#   - jekyll-paginate
-#   - jekyll-sitemap
-#   - jekyll-gist
-#   - jekyll-feed
-#   - jemoji
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
 
 
 # Archives
