@@ -2,47 +2,46 @@
 title: "Stylesheets"
 permalink: /docs/stylesheets/
 excerpt: "Instructions for customizing and building the theme's stylesheets."
-modified: 2016-04-14
+modified: 2016-08-08T16:28:26-04:00
 ---
 
 {% include base_path %}
 
-The theme's `main.css` stylesheet is built from several SCSS partials located in `/assets/_scss/` and are structured as follows:
+The theme's `main.css` stylesheet is built from several SCSS partials located in `/_sass/` and is structured as follows:
 
 ```bash
 minimal mistakes
+├── _sass
+|  ├── vendor               # vendor SCSS partials
+|  |   ├── breakpoint       # media query mixins
+|  |   ├── font-awesome     # Font Awesome icons
+|  |   ├── magnific-popup   # Magnific Popup lightbox
+|  |   └── susy             # Susy grid system
+|  ├── _animations.scss     # animations
+|  ├── _archive.scss        # archives (list, grid, feature views)
+|  ├── _base.scss           # base HTML elements
+|  ├── _buttons.scss        # buttons
+|  ├── _footer.scss         # footer
+|  ├── _masthead.scss       # masthead
+|  ├── _mixins.scss         # mixins (em function, clearfix)
+|  ├── _navigation.scss     # nav links (breadcrumb, priority+, toc, pagination, etc.)
+|  ├── _notices.scss        # notices
+|  ├── _page.scss           # pages
+|  ├── _print.scss          # print styles
+|  ├── _reset.scss          # reset
+|  ├── _sidebar.scss        # sidebar
+|  ├── _syntax.scss         # syntax highlighting
+|  ├── _tables.scss         # tables
+|  ├── _utilities.scss      # utility classes (text/image alignment)
+|  └── _variables.scss      # theme defaults (fonts, colors, etc.)
 ├── assets
-|  ├── _scss
-|  |  ├── vendor               # vendor SCSS partials
-|  |  |   ├── breakpoint       # media query mixins
-|  |  |   ├── font-awesome     # Font Awesome icons
-|  |  |   ├── magnific-popup   # Magnific Popup lightbox
-|  |  |   └── susy             # Susy grid system
-|  |  ├── _animations.scss     # animations
-|  |  ├── _archive.scss        # archives (list, grid, feature views)
-|  |  ├── _base.scss           # base HTML elements
-|  |  ├── _buttons.scss        # buttons
-|  |  ├── _footer.scss         # footer
-|  |  ├── _masthead.scss       # masthead
-|  |  ├── _mixins.scss         # mixins (em function, clearfix)
-|  |  ├── _navigation.scss     # nav links (breadcrumb, priority+, toc, pagination, etc.)
-|  |  ├── _notices.scss        # notices
-|  |  ├── _page.scss           # pages
-|  |  ├── _print.scss          # print styles
-|  |  ├── _reset.scss          # reset
-|  |  ├── _sidebar.scss        # sidebar
-|  |  ├── _syntax.scss         # syntax highlighting
-|  |  ├── _tables.scss         # tables
-|  |  ├── _utilities.scss      # utility classes (text/image alignment)
-|  |  ├── _variables.scss      # theme defaults (fonts, colors, etc.)
-|  |  └── main.scss            # all SCSS partials are imported here
 |  ├── css
-|  |  └── main.css             # compiled theme stylesheet
+|  |  └── main.scss         # main stylesheet, loads SCSS partials in _sass
 ```
 
 ## Customizing
 
-The settings in `/assets/_scss/_variables.scss` can modify the following aspects of the theme:
+The variables and settings found in `/_sass/_variables.scss` can be used to modify the following aspects of the theme:
 
 ### Paragraph Indention 
 
@@ -83,7 +82,7 @@ Not a fan of the refreshed typography of the theme and want to revert back an ol
 <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic" rel="stylesheet" type="text/css">
 ```
 
-**2.** Update the following variables in `assets/_scss/_variables.scss`:
+**2.** Update the following variables in `/_sass/_variables.scss`:
 
 ```scss
 $serif              : "PT Serif", Georgia, Times, serif;
@@ -92,8 +91,6 @@ $sans-serif-narrow  : "PT Sans Narrow", $sans-serif;
 $global-font-family : $serif;
 $header-font-family : $sans-serif-narrow;
 ```
-
-**3.** Rebuild `main.css` by running `npm run build:css`. See below for more info on the build process.
 
 ### Type Scale
 
@@ -136,34 +133,3 @@ And `$susy` is used for setting [the grid](http://susy.oddbird.net/) the theme u
   <img src="{{ base_path }}/images/mm-susy-grid-overlay.jpg" alt="Susy grid overlay for debugging">
   <figcaption>Susy grid debug overlay enabled.</figcaption>
 </figure>
-
----
-
-The theme does not leverage Jekyll's [built-in support for preprocessing Sass](https://jekyllrb.com/docs/assets/#sassscss) files. Why is that you ask? [**Autoprefixer**](https://github.com/postcss/autoprefixer)! As part of a build step the stylesheet is post processed with Autoprefixer to add vendor prefixes --- something not currently possible without a plugin[^jekyll-assets].
-
-[^jekyll-assets]: A better solution would be to use the fantastic [jekyll-assets](https://github.com/jekyll/jekyll-assets) plugin to manage your assets if you aren't hosting with GitHub Pages. Autoprefixer support is built-in :smile:.
-
-If you plan on making any changes to the `.scss` partials you will need to rebuild the stylesheet outside of the normal Jekyll workflow.
-
-**Sass/SCSS files:** You can of course modify the structure of the CSS files to have Jekyll natively process `main.scss` for you. Just be sure to update the partials to include any vendor prefixes or else things may look off in older browsers.
-{: .notice--info}
-
-## Build Process
-
-In an effort to reduce dependencies a set of [**npm scripts**](https://css-tricks.com/why-npm-scripts/) are used to build the CSS instead of task runners like [Gulp](http://gulpjs.com/) or [Grunt](http://gruntjs.com/). If those tools are more your style then by all means use them instead :wink:.
-
-To get started:
-
-1. Install [Node.js](http://nodejs.org/).
-2. `cd` to the root of your project.
-3. Install all of the dependencies by running `npm install`.
-
-**Note:** If you upgraded from a previous version of the theme be sure you copied over [`package.json`](https://github.com/{{ site.repository }}/blob/master/package.json) prior to running `npm install`.
-{: .notice--warning}
-
-If all goes well, running `npm run build:css` will process all SCSS files into `main.css`, which should then pipe through Autoprefixer.
-
-```
-Rendering Complete, saving .css file...
-Wrote CSS to \assets\css\main.css
-```
