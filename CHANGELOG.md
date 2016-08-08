@@ -1,3 +1,19 @@
+## [3.3.7](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.3.7)
+
+### Bug Fixes
+
+- Re-enabled Jekyll plugins in `_config.yml` in case they aren't autoloaded in `Gemfile`. [#417](https://github.com/mmistakes/minimal-mistakes/issues/417)
+
+### Enhancements
+
+- Fallback to `site.github.url` for use in `{{ base_path }}` when `site.url` is `nil`.
+- Replace Sass and Autoprefixer `npm` build scripts with [Jekyll's built-in asset support](https://jekyllrb.com/docs/assets/). [#333](https://github.com/mmistakes/minimal-mistakes/issues/333)
+
+### Maintenance
+
+- Document `site.repository` and its role with [`github-metadata`](https://github.com/jekyll/github-metadata) gem.
+- Add sample [archive page with content](https://mmistakes.github.io/minimal-mistakes/archive-layout-with-content/) for testing styles on demo site.
+
 ## [3.3.6](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.3.6)
 
 ### Bug Fixes
