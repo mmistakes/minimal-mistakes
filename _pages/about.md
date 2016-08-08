@@ -11,7 +11,7 @@ Architecture, Design and Software Development experience. We also have
 over nineteen years of Lean and Agile coaching experience.
 
 We work across a number of industries, with the particular aim of supplying
-systems which apply ‘big data’ tools and techniques to solve critical
+systems which apply development tools and techniques to solve critical
 business problems.
 
 We couple this hands-on analytical and technology work with
