@@ -8,3 +8,6 @@ analytics:
 comments:
   disqus:
     shortname            : "mmistakes-dev"
+
+sass:
+  style: expanded
