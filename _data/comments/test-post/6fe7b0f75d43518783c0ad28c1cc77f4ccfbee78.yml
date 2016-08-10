@@ -1,0 +1,8 @@
+name: The Whip
+email: 9029a8380f12df558938a92a6d1816cb
+url: ''
+message: >-
+  Does this comment capture the `date` properly using the `{@timestamp}`
+  placeholder?
+hidden: ''
+date: '@timestamp'
