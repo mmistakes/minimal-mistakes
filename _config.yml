@@ -28,6 +28,15 @@ comments:
     appid                :
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
+staticman:
+  allowedFields: ["name", "email", "comment"]
+  branch: "gh-pages"
+  format: "json"
+  moderation: true
+  path: "_data/comments/{options.slug}"
+  requiredFields: ["name", "comment"]
+  transforms:
+    email: "md5"
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
