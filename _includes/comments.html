@@ -9,6 +9,63 @@
     <section class="fb-comments" data-href="{{ base_path }}{{ page.url }}" data-mobile="true" data-num-posts="{{ site.comments.facebook.num_posts | default: 5 }}" data-width="100%" data-colorscheme="{{ site.comments.facebook.colorscheme | default: 'light' }}"></section>
   {% when "google-plus" %}
     <section class="g-comments" data-href="{{ base_path }}{{ page.url }}" data-first_party_property="BLOGGER" data-view_type="FILTERED_POSTMOD">Loading Google+ Comments ...</section>
+  {% when "staticman" %}
+    <section id="comments">
+      {% if site.repository and site.staticman.branch %}
+        <!-- Start new comment form -->
+        <form class="js-form form" method="post" action="https://api.staticman.net/v1/entry/{{ site.repository }}/{{ site.staticman.branch }}">
+          <div class="form__spinner">
+            <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+            <span class="sr-only">Loading...</span>
+          </div>
+
+          <fieldset>
+            <label for="comment-form-name">Your name <small class="required">*</small></label>
+            <input type="text" id="comment-form-name" name="fields[name]" tabindex="1" />
+          </fieldset>
+          <fieldset>
+            <label for="comment-form-email">Email address <small class="required">*</small></label>
+            <input type="email" id="comment-form-email" name="fields[email]" tabindex="2" />
+            <div class="small help-block">Your email address will remain private and won't be shared with anyone.</div>
+          </fieldset>
+          <fieldset>
+            <label for="comment-form-url">Website <small>(optional)</small></label>
+            <input type="url" id="comment-form-url" name="fields[url]" tabindex="3"/>
+          </fieldset>
+          <fieldset>
+            <label for="comment-form-message">Your comment <small class="required">*</small></label>
+            <textarea type="text" rows="3" id="comment-form-message" name="fields[message]" tabindex="4"></textarea>
+            <div class="small help-block"><a href="https://daringfireball.net/projects/markdown/">Markdown</a> is supported.</div>
+          </fieldset>
+          <fieldset class="hidden">
+            <input type="hidden" name="options[slug]" value="{{ page.slug }}">
+            <input type="hidden" name="fields[hidden]"/>
+          </fieldset>
+          <fieldset>
+            <button class="btn btn--large">Submit</button>
+          </fieldset>
+        </form>
+        <!-- End new comment form -->
+
+        <!-- Start static comments -->
+        <div class="js-comments">
+          {% if site.data.comments[page.slug] %}
+            <h4 class="page__comments-title">{{ site.data.ui-text[site.locale].comments_title | default: "Comments" }}</h4>
+            {% assign comments = site.data.comments[page.slug] | sort %}
+
+            {% for comment in comments %}
+              {% assign email = comment[1].email %}
+              {% assign name = comment[1].name %}
+              {% assign url = comment[1].url %}
+              {% assign date = comment[1].date %}
+              {% assign message = comment[1].message %}
+              {% include comment.html index=forloop.index email=email name=name url=url date=date message=message %}
+            {% endfor %}
+          {% endif %}
+        </div>
+        <!-- End static comments -->
+      {% endif %}
+    </section>
   {% when "custom" %}
     <section id="comments"></section>
   {% endcase %}
