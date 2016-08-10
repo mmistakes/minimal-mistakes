@@ -34,6 +34,7 @@ staticman:
   format                 : "yml"
   moderation             : true
   path                   : "_data/comments/{options.slug}"
+  filename               : {@timestamp}-{@hash}.yml
   requiredFields         : ['name', 'email', 'message']
   transforms:
     email                : "md5"
