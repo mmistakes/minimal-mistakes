@@ -29,12 +29,11 @@ comments:
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
 staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
+  allowedFields          : ['name', 'email', 'url', 'message', 'date']
   branch                 : "gh-pages" # "master", "gh-pages"
   format                 : "yml"
   moderation             : true
   path                   : "_data/comments/{options.slug}"
-  filename               : "{@timestamp}-{@hash}"
   requiredFields         : ['name', 'email', 'message']
   transforms:
     email                : "md5"
