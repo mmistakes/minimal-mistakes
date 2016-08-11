@@ -4,7 +4,7 @@
     <h2 class="modal__title js-modal-title"></h2>
     <div class="modal__supporting-text js-modal-text"></div>
     <div class="modal__actions">
-      <button class="btn btn--danger js-close-modal">Close</button>
+      <button class="btn btn--danger js-close-modal">{{ site.data.ui-text[site.locale].close_btn_label | default: "close" }}</button>
     </div>
   </article>
   <!-- End comment form modal -->
@@ -26,6 +26,7 @@
         success: function (data) {
           showModal('{{ site.data.ui-text[site.locale].comment_success_title | default: "Comment submitted" }}', '{{ site.data.ui-text[site.locale].comment_success_msg | default: "Thanks for your comment! It will show on the site once it has been approved." }}');
           $(form).removeClass('form--loading');
+          $('#comment-form-submit').addClass('btn--disabled').html('{{ site.data.ui-text[site.locale].comment_btn_submitted | default: "Submitted" }}');
         },
         error: function (err) {
           console.log(err);
