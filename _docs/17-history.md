@@ -4,8 +4,18 @@ permalink: /docs/history/
 excerpt: "Changelog of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2016-08-11T11:32:29-04:00
+modified: 2016-08-11T15:24:19-04:00
 ---
+
+## [3.4.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.1)
+
+### Enhancements
+
+- Add `staticman.filename` configuration with UNIX timestamp for sorting data files. example ~> `comment-1470943149`.
+
+### Bug Fixes
+
+- Don't add `<a>` to author name if URL is blank.
 
 ## [3.4.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.0)
 
