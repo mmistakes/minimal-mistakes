@@ -300,6 +300,11 @@
   text-transform: uppercase;
 }
 
+.page__comments-form {
+  padding: 1em;
+  background: $lighter-gray;
+}
+
 .comment {
   margin: 2em 0;
 
