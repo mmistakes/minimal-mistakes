@@ -41,7 +41,7 @@ staticman:
     date:
       type: "date"
       options:
-        format: "iso8601" # "iso8601" (default), "timestamp"
+        format: "timestamp" # "iso8601" (default), "timestamp"
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
