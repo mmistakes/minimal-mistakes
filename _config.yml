@@ -31,7 +31,7 @@ comments:
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message', 'date']
   branch                 : "gh-pages" # "master", "gh-pages"
-  commitMessage          : "New comment for {options.slug}."
+  commitMessage          : "New comment."
   format                 : "yml"
   moderation             : true
   path                   : "_data/comments/{options.slug}"
