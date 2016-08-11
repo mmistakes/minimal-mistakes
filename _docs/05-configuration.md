@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-modified: 2016-08-11T12:24:03-04:00
+modified: 2016-08-11T15:16:25-04:00
 ---
 
 {% include base_path %}
@@ -235,6 +235,7 @@ staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
   branch                 : # "master", "gh-pages"
   commitMessage          : "New comment."
+  filename               : comment-{@timestamp}
   format                 : "yml"
   moderation             : true
   path                   : "_data/comments/{options.slug}"
