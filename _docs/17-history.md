@@ -4,8 +4,14 @@ permalink: /docs/history/
 excerpt: "Changelog of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2016-08-08T16:23:36-04:00
+modified: 2016-08-11T11:32:29-04:00
 ---
+
+## [3.4.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.0)
+
+### Enhancements
+
+- Support static-based commenting via [Staticman](https://staticman.net/) for sites hosted with GitHub Pages. [#424](https://github.com/mmistakes/minimal-mistakes/issues/424)
 
 ## [3.3.7](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.3.7)
 
