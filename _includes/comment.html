@@ -4,11 +4,11 @@
   </div>
   <div class="comment__content-wrapper">
     <h3 class="comment__author">
-      {% if (include.url) and (include.url != '@url') %}
+      {% unless include.url == blank %}
         <a rel="nofollow" href="{{ include.url }}">{{ include.name }}</a>
       {% else %}
         {{ include.name }}
-      {% endif %}
+      {% endunless %}
     </h3>
     <p class="comment__date">
       {% if include.date %}
