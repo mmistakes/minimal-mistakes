@@ -1,3 +1,13 @@
+## [3.4.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.1)
+
+### Enhancements
+
+- Add `staticman.filename` configuration with UNIX timestamp for sorting data files. example ~> `comment-1470943149`.
+
+### Bug Fixes
+
+- Don't add `<a>` to author name if URL is blank.
+
 ## [3.4.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.0)
 
 ### Enhancements
