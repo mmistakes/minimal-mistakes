@@ -1,22 +1,13 @@
 {% if site.repository and site.staticman.branch %}
-  <!-- Start comment form modal -->
-  <article class="modal">
-    <h2 class="modal__title js-modal-title"></h2>
-    <div class="modal__supporting-text js-modal-text"></div>
-    <div class="modal__actions">
-      <button class="btn btn--danger js-close-modal">{{ site.data.ui-text[site.locale].close_btn_label | default: "close" }}</button>
-    </div>
-  </article>
-  <!-- End comment form modal -->
-
   <script>
     (function ($) {
     var $comments = $('.js-comments');
 
-    $('.js-form').submit(function () {
+    $('#new_comment').submit(function () {
       var form = this;
 
-      $(form).addClass('form--loading');
+      $(form).addClass('disabled');
+      $('#comment-form-submit').html('<i class="fa fa-spinner fa-spin fa-fw"></i> {{ site.data.ui-text[site.locale].loading_label | default: "Loading..." }}');
 
       $.ajax({
         type: $(this).attr('method'),
@@ -24,29 +15,27 @@
         data: $(this).serialize(),
         contentType: 'application/x-www-form-urlencoded',
         success: function (data) {
-          showModal('{{ site.data.ui-text[site.locale].comment_success_title | default: "Comment submitted" }}', '{{ site.data.ui-text[site.locale].comment_success_msg | default: "Thanks for your comment! It will show on the site once it has been approved." }}');
-          $(form).removeClass('form--loading');
-          $('#comment-form-submit').addClass('btn--disabled').html('{{ site.data.ui-text[site.locale].comment_btn_submitted | default: "Submitted" }}');
+          $('#comment-form-submit').html('{{ site.data.ui-text[site.locale].comment_btn_submitted | default: "Submitted" }}');
+          $('.page__comments-form .js-notice').removeClass('notice--danger');
+          $('.page__comments-form .js-notice').addClass('notice--success');
+          showAlert('{{ site.data.ui-text[site.locale].comment_success_msg | default: "Thanks for your comment! It will show on the site once it has been approved." }}');
         },
         error: function (err) {
           console.log(err);
-          showModal('{{ site.data.ui-text[site.locale].comment_error_title | default: "Error" }}', '{{ site.data.ui-text[site.locale].comment_error_msg | default: "Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again." }}');
-          $(form).removeClass('form--loading');
+          $('#comment-form-submit').html('{{ site.data.ui-text[site.locale].comment_btn_submit  | default: "Submit Comment" }}');
+          $('.page__comments-form .js-notice').removeClass('notice--success');
+          $('.page__comments-form .js-notice').addClass('notice--danger');
+          showAlert('{{ site.data.ui-text[site.locale].comment_error_msg | default: "Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again." }}');
+          $(form).removeClass('disabled');
         }
       });
 
       return false;
     });
 
-    $('.js-close-modal').click(function () {
-      $('body').removeClass('show-modal');
-    });
-
-    function showModal(title, message) {
-      $('.js-modal-title').text(title);
-      $('.js-modal-text').html(message);
-
-      $('body').addClass('show-modal');
+    function showAlert(message) {
+      $('.page__comments-form .js-notice').removeClass('hidden');
+      $('.page__comments-form .js-notice-text').html(message);
     }
   })(jQuery);
   </script>
