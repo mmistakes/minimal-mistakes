@@ -11,10 +11,11 @@ title                    : "Libre Solar"
 title_separator          : "-"
 name                     : "Martin Jäger"
 description              : "Open Source Energy Hardware"
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "http://libresolar.github.io" #"http://127.0.0.1:4000" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+logourl                  : "libresolar_logo_small.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -61,10 +62,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
+  name             : "Martin Jäger"
+  avatar           : "photo-mj.jpg"
+  bio              : "Eco-Hacker"
+  location         : "Hamburg, St. Pauli"
   email            :
   uri              :
   bitbucket        :
@@ -73,7 +74,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "LibreSolar"
   google_plus      :
   keybase          :
   instagram        :
@@ -210,3 +211,45 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+# Collections
+collections:
+  elements:
+    output: true
+    permalink: /:collection/:path/
+
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: false
+  # _devices
+  - scope:
+      path: ""
+      type: elements
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "elements"
+
+
