@@ -8,10 +8,8 @@
   margin-top: 2em;
   padding-left: 1em;
   padding-right: 1em;
-  -webkit-animation: intro 0.3s both;
-          animation: intro 0.3s both;
-  -webkit-animation-delay: 0.35s;
-          animation-delay: 0.35s;
+  animation: intro 0.3s both;
+  animation-delay: 0.35s;
 
   @include breakpoint($x-large) {
     max-width: $x-large;
@@ -113,10 +111,8 @@
   position: relative;
   margin-bottom: 2em;
   @include clearfix;
-  -webkit-animation: intro 0.3s both;
-          animation: intro 0.3s both;
-  -webkit-animation-delay: 0.25s;
-          animation-delay: 0.25s;
+  animation: intro 0.3s both;
+  animation-delay: 0.25s;
 
   &--overlay {
     position: relative;
@@ -126,10 +122,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-animation: intro 0.3s both;
-            animation: intro 0.3s both;
-    -webkit-animation-delay: 0.25s;
-            animation-delay: 0.25s;
+    animation: intro 0.3s both;
+    animation-delay: 0.25s;
 
     a {
       color: #fff;
@@ -303,10 +297,25 @@
 .page__comments-form {
   padding: 1em;
   background: $lighter-gray;
+  transition: $global-transition;
+
+  &.disabled {
+    input,
+    button,
+    textarea,
+    label {
+      pointer-events: none;
+      cursor: not-allowed;
+      filter: alpha(opacity=65);
+      box-shadow: none;
+      opacity: 0.65;
+    }
+  }
 }
 
 .comment {
-  margin: 2em 0;
+  @include clearfix();
+  margin: 1em 0;
 
   &:not(:last-child) {
     border-bottom: 1px solid $border-color;
@@ -314,8 +323,7 @@
 }
 
 .comment__avatar-wrapper {
-  display: table-cell;
-  vertical-align: top;
+  float: left;
   width: 60px;
   height: 60px;
 
@@ -339,8 +347,12 @@
 }
 
 .comment__content-wrapper {
-  display: table-cell;
-  vertical-align: top;
+  float: right;
+  width: calc(100% - 60px);
+
+  @include breakpoint($large) {
+    width: calc(100% - 100px);
+  }
 }
 
 .comment__author {
