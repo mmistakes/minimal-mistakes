@@ -13,6 +13,7 @@
   @include breakpoint($large) {
     @include span(2 of 12);
     opacity: 0.75;
+    -webkit-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
 
     &:hover {
@@ -164,6 +165,7 @@
   background: #fff;
   z-index: -1;
   box-shadow: 0 0 10px rgba(#000, 0.25);
+  cursor: default;
 
   @include breakpoint($large) {
     display: block;

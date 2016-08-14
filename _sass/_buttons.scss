@@ -31,7 +31,7 @@
   }
 
   .icon + .hidden {
-    margin-left: -0.5em; // override for hidden text
+    margin-left: -0.5em; /* override for hidden text*/
   }
 
   /* fills width of parent container */
@@ -49,7 +49,7 @@
 
   &--inverse {
     color: $gray !important;
-    border: 1px solid $light-gray !important; // override
+    border: 1px solid $light-gray !important; /* override*/
     background-color: #fff;
 
     &:hover {
@@ -61,7 +61,7 @@
   /* light outline */
 
   &--light-outline {
-    border: 1px solid #fff !important; // override
+    border: 1px solid #fff !important; /* override*/
     background-color: transparent;
   }
 
@@ -111,7 +111,6 @@
     pointer-events: none;
     cursor: not-allowed;
     filter: alpha(opacity=65);
-    -webkit-box-shadow: none;
     box-shadow: none;
     opacity: 0.65;
   }

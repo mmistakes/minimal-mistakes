@@ -3,9 +3,9 @@
    ========================================================================== */
 
 %tab-focus {
-  // Default
+  /* Default*/
   outline: thin dotted $warning-color;
-  // Webkit
+  /* Webkit*/
   outline: 5px auto $warning-color;
   outline-offset: -2px;
 }
@@ -23,21 +23,24 @@
    Bourbon clearfix
    ========================================================================== */
 
-// Provides an easy way to include a clearfix for containing floats.
-//
-// @link http://cssmojo.com/latest_new_clearfix_so_far/
-//
-// @example scss - Usage
-//   .element {
-//     @include clearfix;
-//   }
-//
-// @example css - CSS Output
-//   .element::after {
-//     clear: both;
-//     content: "";
-//     display: table;
-//   }
+/*
+  * Provides an easy way to include a clearfix for containing floats.
+  * link http://cssmojo.com/latest_new_clearfix_so_far/
+  *
+  * example scss - Usage
+  *
+  * .element {
+  *   @include clearfix;
+  * }
+  *
+  * example css - CSS Output
+  *
+  * .element::after {
+  *   clear: both;
+  *   content: "";
+  *   display: table;
+  * }
+*/
 
 @mixin clearfix {
   clear: both;
