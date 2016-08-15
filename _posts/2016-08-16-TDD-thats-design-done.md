@@ -93,3 +93,112 @@ experiences I have had and, more relevantly, by the way my brain
 discovers and visualises problems and abstract concepts, YMMV.
 
 ## What has TDD ever done for me? ##
+
+Most of my professional programming life has been spent writing in either
+procedural or object-oriented languages. In addition, they have been
+statically 'typed' _(not sure if typing quite applies to COBOL and
+Fortran but you need to declare primitive variable structures up front
+so I'll count it)_. Given these environments TDD gives me a number of
+properties.
+
+### Test coverage ###
+
+Although I used to write unit tests fairly thoroughly as a COBOL
+programmer, and these tests were even written in advance, these tests
+were not automated and therefore hard and expensive to reproduce. TDD
+is not synonymous with automated testing and you can have the later
+without the former my personal experience is that 'test after' will
+always be sacrificed to the pressure of delivery.
+
+Therefore, TDD, or at least 'test first' tends in real world projects
+to produce better automated test coverage at a fairly fine grained
+level (more on that later).
+
+### Feedback ###
+
+Again this opinion is definitely flavoured by the OOP languages I've
+written in _(mainly Java, a bit of C++ and C##)_ but, unlike the
+'Imagineers' I have trouble visualising detailed designs fully formed
+without a bit of exploration of the concepts and the data involved.
+
+In a language like Java it's quite hard to 'try out' and visualise how
+data needs to be transformed or what low level abstractions are
+present in the problem space. As I tend to explore problems from both
+the top down and bottom up I find it useful to probe at data for
+insight.
+
+Without TDD the usual option to discover emergent design in 'the micro'
+is to run code liberally peppered with print statements or add break
+points and step through with a debugger.
+
+I find TDD gives me quick feedback but has the advantage over print
+statements or break points in that the tests don't need to be unpicked
+from the production implementation and that they act as
+institutionalised memory and capture the abstractions realised so far
+so that you don't have to use cognitive load in holding a mental model
+of every low level data structure and it's current state.
+
+### Confidence ###
+
+This one is definitely open to challenge and is almost the same point
+as in ['Test coverage'](#Test_coverage).
+
+Having a network of tests written up front against the low level
+design criteria means that you have some level of confidence that the
+lower level design satisfies your understanding of the problem and
+therefore you have some measure of the 'completeness' of your
+solution. If you've fulfilled the tests for that small part of the
+design you have completed it to your current understanding.
+
+Of course this presupposes that your tests acurately reflect the
+problem and that your understanding is accurate but this is a problem
+regardless of TDD.
+
+#+BEGIN_NOTES
+    Mocking heavily gives 'false' confidence - mention later when you
+    challenge TDD approach.
+#+END_NOTES
+### Testability ###
+
+One advantage of test first is that in order to write tests upfront
+you have to drive the low level design to be 'testable'. This means
+that if you're lazy and impatient, like me, you will want to to get
+your test to have as little set up as possible and only verify one
+thing per test.
+
+This inherently tends to lead to a design that favours
+small methods and objects with few dependencies and one responsibility
+
+#+BEGIN_NOTES
+    Refactoring in the micro. Double edged sword as in the macro to
+    the weight of tests slow development
+#+END_NOTES
+
+### Change 'net' ###
+
+Another side-effect of writing a lot of automated tests is that when
+you want to make changes to one part of your system the tests for the
+part of the system you have not changed will inform you if you've made
+any breaking changes. This kind of failure on change of a different
+part of the system will flag coupling that you may not have been aware
+of and give a trigger to reconsider the design.
+
+Although this effect can be achieved with good test coverage written
+after the implementation as discussed it is not typical in practice to
+get high levels of test coverage in the real world if tests are
+written after the fact.
+
+In addition, the practice of writing new tests or modifying existing to reflect the change
+about to be made can give a guide as to when the change has been
+completed as the tests will fail until this is so.
+
+#+BEGIN_NOTES
+    Safety net around change. Bug fixing
+#+END_NOTES
+
+### Communication ###
+
+Again, not
+#+BEGIN_NOTES
+    documents low level decisions.
+#+END_NOTES
