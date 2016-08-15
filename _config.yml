@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "Strange Characters"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Tom"
+description              : ""
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -55,7 +55,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               :strangechars
 facebook:
   username               :
   app_id                 :
@@ -77,7 +77,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "TMD"
   avatar           : "bio-photo.jpg"
   bio              : "I am an amazing person."
   location         : "Somewhere"
