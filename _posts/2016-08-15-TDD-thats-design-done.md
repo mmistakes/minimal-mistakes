@@ -83,7 +83,7 @@ swirling mists of an architectural seance.
 
 So putting aside the sarcasm and the terrible similies, should you use
 Test Driven Development or not? Does it fulfil the promise of
-evolutionary design called by it's adherents or is it the 'snake oil'
+evolutionary design claimed by it's adherents or is it the 'snake oil'
 claimed by it's opponents?
 
 Well, firstly a caveat, the following are the opinions of the author
@@ -104,13 +104,13 @@ properties.
 ### Test coverage ###
 
 Although I used to write unit tests fairly thoroughly as a COBOL
-programmer, and these tests were even written in advance, these tests
+programmer, and these tests were even written in advance, they
 were not automated and therefore hard and expensive to reproduce. TDD
 is not synonymous with automated testing and you can have the later
 without the former my personal experience is that 'test after' will
 always be sacrificed to the pressure of delivery.
 
-Therefore, TDD, or at least 'test first' tends in real world projects
+Therefore, TDD, or at least 'test first', tends, in real world projects,
 to produce better automated test coverage at a fairly fine grained
 level (more on that later).
 
@@ -118,7 +118,7 @@ level (more on that later).
 
 Again this opinion is definitely flavoured by the OOP languages I've
 written in _(mainly Java, a bit of C++ and C##)_ but, unlike the
-'Imagineers' I have trouble visualising detailed designs fully formed
+'Imagineers', I have trouble visualising detailed designs fully formed
 without a bit of exploration of the concepts and the data involved.
 
 In a language like Java it's quite hard to 'try out' and visualise how
@@ -141,7 +141,7 @@ of every low level data structure and it's current state.
 ### Confidence ###
 
 This one is definitely open to challenge and is almost the same point
-as in ['Test coverage'](#Test_coverage).
+as in ['Test coverage'](#test-coverage).
 
 Having a network of tests written up front against the low level
 design criteria means that you have some level of confidence that the
@@ -154,10 +154,10 @@ Of course this presupposes that your tests acurately reflect the
 problem and that your understanding is accurate but this is a problem
 regardless of TDD.
 
-#+BEGIN_NOTES
-    Mocking heavily gives 'false' confidence - mention later when you
-    challenge TDD approach.
-#+END_NOTES
+<!-- Mocking heavily gives 'false' confidence - mention later when you -->
+<!-- challenge TDD approach. -->
+
+
 ### Testability ###
 
 One advantage of test first is that in order to write tests upfront
@@ -169,10 +169,8 @@ thing per test.
 This inherently tends to lead to a design that favours
 small methods and objects with few dependencies and one responsibility
 
-#+BEGIN_NOTES
-    Refactoring in the micro. Double edged sword as in the macro to
-    the weight of tests slow development
-#+END_NOTES
+<!-- Refactoring in the micro. Double edged sword as in the macro to -->
+<!-- the weight of tests slow development -->
 
 ### Change 'net' ###
 
@@ -184,21 +182,55 @@ part of the system will flag coupling that you may not have been aware
 of and give a trigger to reconsider the design.
 
 Although this effect can be achieved with good test coverage written
-after the implementation as discussed it is not typical in practice to
+after the implementation, as discussed, it is not typical in practice to
 get high levels of test coverage in the real world if tests are
 written after the fact.
 
-In addition, the practice of writing new tests or modifying existing to reflect the change
-about to be made can give a guide as to when the change has been
-completed as the tests will fail until this is so.
+In addition, the practice of writing new tests or modifying existing
+tests to reflect the change about to be made can give a guide as to
+when the change has been completed as the tests will fail until this is so.
 
-#+BEGIN_NOTES
-    Safety net around change. Bug fixing
-#+END_NOTES
+
+<!-- Safety net around change. Bug fixing -->
+
 
 ### Communication ###
 
-Again, not
-#+BEGIN_NOTES
-    documents low level decisions.
-#+END_NOTES
+A few years ago I employed an experienced developer with a lot of TDD
+experience. She came into a team where the first version of the
+software had been released and we were working on version 2. I was the
+lone web developer on the team and had written all the code to serve
+the dynamic web application.
+
+As, at the time, I was the CTO of the consultancy concerned, I was
+constantly involved in short term consultancy work and a lot of
+presales activity and therefore out of the office on client sites a
+lot of the time.
+
+I had about 3 hours to explain the project on Monday
+morning before I had to leave and I wasn't back in the office until
+Wednesday afternoon.
+
+I got back on Wednesday and asked said developer how she was getting
+on (apologising profusely for leaving her with such little
+support). She replied:
+
+> Initially I was a bit lost, then I started to read your tests and
+> I've already implemented the first enhancement for version 2
+
+Again, this is not the exclusive territory of TDD as any well written
+test harness can provide this 'living' document and BDD style tests
+are even more effective but in the real world TDD grown tests provide
+a useful starting point.
+
+Communication through tests - nuff said.
+
+<!-- documents low level decisions. -->
+## So TDD is a 'no brainer' then? ##
+
+So TDD is a 'no brainer' then? Well, yes, sometimes it is implemented
+with no brains.
+
+Lets look at the potential negatives then:
+
+### You're mocking me ###
