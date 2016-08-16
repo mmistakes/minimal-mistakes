@@ -225,7 +225,7 @@ Transform user comments into `_data` files that live inside of your GitHub repos
 
 Default settings have been provided in `_config.yml`. The important ones to set are  `provider: "staticman"` and `branch`. View the [full list of configurations](https://github.com/eduardoboucas/staticman#jekyll-configuration).
 
-**Branch setting:** This is the branch comment files will be sent to via pull requests. If you host your site on GitHub Pages it will likely be `master` unless you're repo is setup as a project --- use `gh-pages` in that case.
+**Branch setting:** This is the branch comment files will be sent to via pull requests. If you host your site on GitHub Pages it will likely be `master` unless your repo is setup as a project --- use `gh-pages` in that case.
 {: .notice--info}
 
 ```yaml
