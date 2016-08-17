@@ -1,5 +1,5 @@
 ---
-layout: splash
+layout: single
 sidebar:
   - title: "Title"
     image: http://placehold.it/350x250
