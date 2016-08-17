@@ -1,7 +1,44 @@
-# main links links
+# main links
 main:
-  - title: "Sample Navigation Link"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/navigation/
+  - title: "About OpenPGP"
+    url: /about/
 
-  - title: "Sample Navigation Link 2"
-    url: /
+  - title: "Software"
+    url: /software/
+
+  - title: "Community"
+    url: /community/
+
+  - title: "Blog"
+    url: /blog/
+
+# about
+about:
+  - title: About
+    children:
+      - title: "About"
+        url: /about/
+      - title: "History"
+        url: /about/history/
+  - title: Technical
+    children:
+      - title: "Standard"
+        url: /about/standard/
+
+# software
+software:
+  - title: Software
+    children:
+      - title: "Email Encryption"
+        url: /software/
+      - title: "Other"
+        url: /software/other/
+      - title: "Developer Tools"
+        url: /software/developer/
+
+# community
+community:
+  - title: Community
+    children:
+      - title: "Community"
+        url: /community/
