@@ -21,9 +21,9 @@ GEM
     ffi (1.9.14)
     ffi (1.9.14-x64-mingw32)
     gemoji (2.1.0)
-    github-pages (89)
+    github-pages (91)
       activesupport (= 4.2.7)
-      github-pages-health-check (= 1.1.0)
+      github-pages-health-check (= 1.2.0)
       jekyll (= 3.1.6)
       jekyll-coffeescript (= 1.0.1)
       jekyll-feed (= 0.5.1)
@@ -42,7 +42,7 @@ GEM
       mercenary (~> 0.3)
       rouge (= 1.11.1)
       terminal-table (~> 1.4)
-    github-pages-health-check (1.1.0)
+    github-pages-health-check (1.2.0)
       addressable (~> 2.3)
       net-dns (~> 0.8)
       octokit (~> 4.0)
@@ -61,6 +61,8 @@ GEM
       mercenary (~> 0.3.3)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
+    jekyll-archives (2.1.0)
+      jekyll (>= 2.4)
     jekyll-coffeescript (1.0.1)
       coffee-script (~> 2.2)
     jekyll-feed (0.5.1)
@@ -123,7 +125,6 @@ GEM
       ethon (>= 0.8.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    wdm (0.1.1)
 
 PLATFORMS
   ruby
@@ -131,7 +132,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  wdm (~> 0.1.0)
+  jekyll-archives
 
 BUNDLED WITH
    1.12.5

@@ -19,9 +19,9 @@ title                    : "Drastic Eats"
 title_separator          : "-"
 name                     : "Ruxton Dellecese & Aaron Votre"
 description              : "Reviews of all the hottest eateries in downtown Boston by Aaron and RJ, two dudes with working tastebuds an acceptable grasp of the English language."
-url                      : "https://www.drasticeats.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "http://localhost:4000" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "rjdellecese/drastic-eats" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : #"rjdellecese/drastic-eats" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -199,6 +199,21 @@ whitelist:
   - jekyll-feed
   - jemoji
 
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+
+
 category_archive:
   type: jekyll-archives
   path: /categories/
@@ -216,21 +231,6 @@ jekyll-archives:
   permalinks:
     category: /categories/:name/
     tag: /tags/:name/
-
-
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-
 
 
 # HTML Compression
