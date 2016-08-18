@@ -1,1 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.1.6">Jekyll</generator><link href="https://www.drasticeats.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.drasticeats.com/" rel="alternate" type="text/html" /><updated>2016-08-17T20:00:39-04:00</updated><id>https://www.drasticeats.com/</id><title>Site Title</title><subtitle>An amazing website.</subtitle><author><name>Your Name</name></author></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.1.6">Jekyll</generator><link href="https://www.drasticeats.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.drasticeats.com/" rel="alternate" type="text/html" /><updated>2016-08-18T01:47:56-04:00</updated><id>https://www.drasticeats.com/</id><title>Drastic Eats</title><subtitle>Reviews of all the hottest eateries in downtown Boston by Aaron and RJ, two dudes with working tastebuds an acceptable grasp of the English language.</subtitle><author><name>Ruxton Dellecese</name></author><entry><title>Test Post</title><link href="https://www.drasticeats.com/how-do/test-post/" rel="alternate" type="text/html" title="Test Post" /><published>2016-08-17T00:00:00-04:00</published><updated>2016-08-17T00:00:00-04:00</updated><id>https://www.drasticeats.com/how-do/test-post</id><content type="html" xml:base="https://www.drasticeats.com/how-do/test-post/">&lt;p&gt;This is a test post which will contain enough markup to test CSS styles.&lt;/p&gt;
+
+&lt;p&gt;It should have a
+- list
+- &lt;a href=&quot;http://drasticeats.com&quot;&gt;link&lt;/a&gt;
+- blockquote&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This is my blockquote.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is an ordered list:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;One&lt;/li&gt;
+  &lt;li&gt;Two&lt;/li&gt;
+  &lt;li&gt;Three&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Ruxton Dellecese</name></author><category term="how-do" /><category term="test" /><category term="food" /><category term="vietnamese" /><summary>This is a test post which will contain enough markup to test CSS styles.</summary></entry></feed>

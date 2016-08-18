@@ -144,8 +144,8 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll-archives
   html-proofer
+  jekyll-archives
 
 BUNDLED WITH
    1.12.5
