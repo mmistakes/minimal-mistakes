@@ -1,0 +1,45 @@
+# Template ->
+#   name             : "Your Name"
+#   avatar           : "bio-photo.jpg"
+#   bio              : "I am an amazing person."
+#   location         : "Somewhere"
+#   email            :
+#   uri              :
+#   bitbucket        :
+#   codepen          :
+#   dribbble         :
+#   flickr           :
+#   facebook         :
+#   foursquare       :
+#   github           :
+#   google_plus      :
+#   keybase          :
+#   instagram        :
+#   lastfm           :
+#   linkedin         :
+#   pinterest        :
+#   soundcloud       :
+#   stackoverflow    : # http://stackoverflow.com/users/123456/username
+#   steam            :
+#   tumblr           :
+#   twitter          :
+#   vine             :
+#   weibo            :
+#   xing             :
+#   youtube          :
+
+
+authors:
+  aaron:
+    name: Aaron Votre
+    avatar           : "bio-photo.jpg"
+    bio              : "I am Aaron."
+    location         : "Somerville, MA"
+    email            : "avotre422@gmail.com"
+  rj:
+    name: Ruxton Dellecese
+    avatar           : "bio-photo.jpg"
+    bio              : "I am RJ."
+    location         : "Somerville, MA"
+    email            : "rjdellecese@gmail.com"
+
