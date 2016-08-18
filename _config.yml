@@ -134,6 +134,9 @@ exclude:
   - Rakefile
   - README
   - tmp
+  # Travis bundles all gems in the vendor directory on its build servers, which
+  # Jekyll will mistakenly read and explode on if it's not excluded.
+  - vendor
 keep_files:
   - .git
   - .svn
