@@ -4,7 +4,6 @@
 .jekyll-metadata
 .sass-cache
 _asset_bundler_cache
-_site
 codekit-config.json
 node_modules
 npm-debug.log*
