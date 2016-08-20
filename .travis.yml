@@ -6,7 +6,7 @@ rvm:
 # the `install` step will run `bundle install` by default.
 script: bundle exec jekyll build && bundle exec htmlproofer ./_site
 
-after_script: ./script/storm_login && (cd $TRAVIS_BUILD_DIR && storm publish)
+after_script: sudo apt-get install expect && ./script/storm_login && (cd $TRAVIS_BUILD_DIR && storm publish)
 
 env:
   global:
