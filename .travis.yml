@@ -1,14 +1,12 @@
 language: ruby
 rvm:
 - 2.0
-# node_js:
-# - 4.5
 
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
 script: bundle exec jekyll build && bundle exec htmlproofer ./_site
 
-after_script:
+after_success:
 - sudo apt-get install nodejs
 - npm install -g pubstorm
 - sudo apt-get install expect
