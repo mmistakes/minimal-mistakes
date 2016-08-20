@@ -1,0 +1,7 @@
+#!/usr/bin/expect
+spawn storm login
+expect "Enter Email: "
+send "$env(STORM_USER)\n"
+expect "Enter Password: "
+send "$env(STORM_PASS)\n"
+expect eof

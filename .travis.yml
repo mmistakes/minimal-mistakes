@@ -1,0 +1,20 @@
+language: ruby
+rvm:
+- 2.0
+
+# Assume bundler is being used, therefore
+# the `install` step will run `bundle install` by default.
+script: bundle exec jekyll build && bundle exec htmlproofer ./_site
+
+after_success:
+- sudo apt-get install nodejs
+- npm install -g pubstorm
+- sudo apt-get install expect
+- ./script/storm_login && (cd $TRAVIS_BUILD_DIR && storm publish)
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+
+sudo: required # route your build to the container-based infrastructure for a faster build
+
