@@ -2,7 +2,7 @@ language: ruby
 rvm:
 - 2.0
 
-before_install: sudo apt-get install expect
+before_install: chmod+ sudo apt-get install expect
 
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
