@@ -16,7 +16,7 @@ I've got a lot of transcribed text laready doen for the Unity tutorial but it'll
 
 Got to try and make things look nice :)
 
-```
+```ruby
 
 module Jekyll
   class TagIndex < Page
