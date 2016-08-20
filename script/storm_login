@@ -1,4 +1,4 @@
-#!/usr/bin/expect
+#!/usr/bin/env expect
 spawn storm login
 expect "Enter Email: "
 send "$env(STORM_USER)\n"
