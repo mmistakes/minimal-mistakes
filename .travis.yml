@@ -1,8 +1,8 @@
 language: ruby
 rvm:
 - 2.0
-node_js:
-- 4.5
+# node_js:
+# - 4.5
 
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
