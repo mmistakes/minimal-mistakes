@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-modified: 2016-08-11T15:16:25-04:00
+modified: 2016-08-21T17:19:29-04:00
 ---
 
 {% include base_path %}
@@ -56,7 +56,7 @@ Fairly obvious. `site.description` describes the site. Used predominantly in met
 
 The base hostname and protocol for your site. If you're hosting with GitHub Pages this will be something like `url: "https://github.io.mmistakes"` or `url: "https://mademistakes.com"` if you have a custom domain name.
 
-**Note:** It's important to remember that when testing locally you need to change the `site.url`. Ideally you'd use [multiple config files](https://mademistakes.com/articles/using-jekyll-2016/#environments-and-configurations) with `bundle exec jekyll serve --config _config.yml,_config.dev.yml` to apply development overrides. Simply commenting out the line works as well `# url: "https://mmistakes.github.io"`. Just remember to uncomment it before pushing or else you'll have broken assets and links all over the place!
+**Note:** It's important to remember that when testing locally you need to change the `site.url`, I recommend `url: "http://localhost:4000"` to keep paths pointing to local pages and assets. Ideally you'd use [multiple config files](https://mademistakes.com/articles/using-jekyll-2016/#environments-and-configurations) with `bundle exec jekyll serve --config _config.yml,_config.dev.yml` to apply development overrides.
 {: .notice--warning}
 
 **ProTip:** To force GitHub hosted sites to [redirect http traffic to https](https://konklone.com/post/github-pages-now-sorta-supports-https-so-use-it) use a service like [Cloudflare](https://www.cloudflare.com/).
