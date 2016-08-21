@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "zh-CN"
-title                    : "My Blog"
+title                    : "Yubin's Notes"
 title_separator          : "-"
 name                     : &name "Robin Yu"
 description              : "An amazing website."
