@@ -160,6 +160,18 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
+# Front Matter Defaults
+defaults:
+  #_posts
+  - scope
+    path: ""
+    Type: posts
+  values:
+    layout: single
+    tags: true
+    comments: true
+    share: true
+    
 
 # Sass/SCSS
 sass:
