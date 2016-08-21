@@ -1,7 +1,10 @@
 # main links links
 main:
-  - title: "Sample Navigation Link"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/navigation/
+  - title: "Catagories"
+    url: /catagories/
 
-  - title: "Sample Navigation Link 2"
-    url: /
+  - title: "Tags"
+    url: /tags/
+    
+  - title: "My Pocket Links"
+    url: http://sharedli.st/thebestbrg9
