@@ -5,6 +5,6 @@ main:
   - title: "Post"
     url: /year-archive/
   - title: "Tag"
-    url: /
+    url: /tags/
   - title: "About"
     url: /
