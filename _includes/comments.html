@@ -59,9 +59,10 @@
             <label for="comment-form-url">{{ site.data.ui-text[site.locale].comment_form_website_label | default: "Website (optional)" }}</label>
             <input type="url" id="comment-form-url" name="fields[url]" tabindex="4"/>
           </fieldset>
-          <fieldset class="hidden">
+          <fieldset class="hidden" style="display: none;">
             <input type="hidden" name="options[slug]" value="{{ page.slug }}">
-            <input type="hidden" name="fields[hidden]"/>
+            <label for="comment-form-location">Not used. Leave blank if you are a human.</label>
+            <input type="text" id="comment-form-location" name="fields[hidden]" autocomplete="off"/>
           </fieldset>
           <!-- Start comment form alert messaging -->
           <p class="hidden js-notice">
