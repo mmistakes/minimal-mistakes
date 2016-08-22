@@ -1,7 +1,5 @@
 ---
 title: "当我们谈论屁股时，我们在谈论什么？"
-categories:
-  - Post Formats
 tags:
   - innner peace
 ---
