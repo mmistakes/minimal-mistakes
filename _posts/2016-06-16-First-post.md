@@ -1,6 +1,6 @@
 ---
 title:  "Welcome"
-excerpt: "some nice intro words"
+excerpt: "The Barefoot Ecologist Website is up"
 ---
 
 The Barefoot Ecologist Website is up and running!

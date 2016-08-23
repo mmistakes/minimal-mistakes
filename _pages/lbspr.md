@@ -11,7 +11,7 @@ The LBSPR method has been developed for data-limited fisheries, where few data a
 Like any assessment method, the LBSPR model relies on a number of simplifying assumptions. In particular, the LBSPR models are equilibrium based, and assume that the length composition data is representative of the exploited population at steady state. See the publicaitons listed in the reference list for full details of the assumptions of the model, including simulation testing to evauate the effect of violations of these assumptions.  
 
 ### Bug Reports
-The LBSPR application is still in development. It is possible, even highly likely, that there are bugs and issues with some of the functions. Please alert me to any bugs or issues that you come across (either email or GitHub).
+The LBSPR application is still in development. It is possible, even highly likely, that there are bugs and issues with some of the functions. Please contact us if you find any bugs or  other issues (either email or GitHub).
 
 Comments and suggestions for additional features are welcome. GitHub pull requests with modifications or extensions are even more welcome!
 
