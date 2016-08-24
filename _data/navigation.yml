@@ -12,12 +12,6 @@ main:
   - title: "时间Years"
     url: /years/
 
-  #- title: "大类Collections"
-  #  url: /collection-archive/
-
-  #- title: "页面Pages"
-  #  url: /page-archive/
-
   - title: "类别Categories"
     url: /categories/
 
@@ -29,3 +23,9 @@ main:
 
   - title: "文摘Abstracts"
     url: /abstracts/
+    
+  #- title: "大类Collections"
+  #  url: /collection-archive/
+
+  #- title: "页面Pages"
+  #  url: /page-archive/
