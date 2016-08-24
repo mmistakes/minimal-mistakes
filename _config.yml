@@ -6,19 +6,19 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en"
-title                    : "Site Title"
+locale                   : "zh-CN"
+title                    : "往事 ThePast"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : "王亚雷 Wang·Yalei"
+description              : "王亚雷的个人网站。"
+url                      : "https://rean1030.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-# breadcrumbs            : false # true, false (default)
+repository               : "rean1030/rean1030.github.io " # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser                   : #"teaser.png" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : "staticman" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -30,7 +30,7 @@ comments:
     colorscheme          : # "light" (default), "dark"
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : # "master", "gh-pages"
+  branch                 : "master" # "master", "gh-pages"
   commitMessage          : "New comment."
   filename               : comment-{@timestamp}
   format                 : "yml"
@@ -55,10 +55,10 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "rean1030"
 facebook:
-  username               :
-  app_id                 :
+  username               : "rean1030"
+  app_id                 : 
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
@@ -70,37 +70,37 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "UA-82827322-1"
 
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
-  uri              :
+  name             : "王亚雷 Wang·Yalei"
+  avatar           : "avatar.jpg"
+  bio              : "尽人事 知天命 Do & Destiny."
+  location         : "BeiJing, China"
+  email            : "mail@yalei.wang"
+  uri              : ""
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "rean1030"
   foursquare       :
-  github           :
-  google_plus      :
+  github           : "rean1030"
+  google_plus      : 
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :
+  linkedin         : "rean1030"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "rean1030"
   vine             :
   weibo            :
   xing             :
@@ -159,6 +159,91 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
+
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:path/
+  abstracts:
+    output: true
+    permalink: /:collection/:path/
+  essays:
+    output: true
+    permalink: /:collection/:path/
+#  pages:
+#    output: true
+#    permalink: /:collection/:path/
+#  docs:
+#    output: true
+#    permalink: /:collection/:path/
+#  portfolio:
+#    output: true
+#    permalink: /:collection/:path/
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: true
+      share: true
+      related: true
+  # _abstracts
+  - scope:
+      path: ""
+      type: abstracts
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: true
+      share: true
+      related: true
+  # _essays
+  - scope:
+      path: ""
+      type: essays
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true 
+  # _docs
+  #- scope:
+  #    path: ""
+  #    type: docs
+  #  values:
+  #    layout: single
+  #    read_time: false
+  #    author_profile: false
+  #    share: false
+  #    comments: false
+  #    sidebar:
+  #      nav: "docs"
+  # _portfolio
+  #- scope:
+  #    path: ""
+  #    type: portfolio
+  #  values:
+  #    layout: single
+  #    author_profile: false
+  #    share: true
 
 
 # Sass/SCSS
