@@ -11,7 +11,7 @@
   {% assign path_type = nil %}
   {% assign crumb_path = '/' %}
 {% else %}
-  {% assign crumb_path = site.categories.path %}
+  {% assign crumb_path = site.categories.path + '/' %}
 {% endif %}
 
 <nav class="breadcrumbs">
