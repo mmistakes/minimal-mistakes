@@ -1,7 +1,31 @@
-# main links links
+# main links
 main:
-  - title: "Sample Navigation Link"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/navigation/
-
-  - title: "Sample Navigation Link 2"
+  - title: "主页Home"
     url: /
+
+  - title: "手记Posts"
+    url: /posts/
+
+  - title: "关于About"
+    url: /about/
+
+  - title: "时间Years"
+    url: /years/
+
+  #- title: "大类Collections"
+  #  url: /collection-archive/
+
+  #- title: "页面Pages"
+  #  url: /page-archive/
+
+  - title: "类别Categories"
+    url: /categories/
+
+  - title: "标签Tags"
+    url: /tags/
+
+  - title: "随笔Essays"
+    url: /essays/
+
+  - title: "文摘Abstracts"
+    url: /abstracts/
