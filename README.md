@@ -1,5 +1,8 @@
+# openpgp.org
 
-NOT READY FOR CONSUMPTION
+I encourage all visitors to participate in creating and improving content of this website to make it the new main source of information related to the OpenPGP standard.
+
+We are open for pull requests!
 
 # Licenses
 * Theme: MIT License
