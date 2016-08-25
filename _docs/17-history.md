@@ -4,8 +4,23 @@ permalink: /docs/history/
 excerpt: "Changelog of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2016-08-22T09:22:14-04:00
+modified: 2016-08-25T14:35:54-04:00
 ---
+
+## [3.4.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.4)
+
+### Enhancements
+
+- Add French "comments" related localized UI text. [#472](https://github.com/mmistakes/minimal-mistakes/pull/472)
+
+### Bug Fixes
+
+- Exclude `vendor` in Jekyll config file.
+- Fix Liquid syntax error for offending parenthesis. [#479](https://github.com/mmistakes/minimal-mistakes/issues/479)
+
+### Maintenance
+
+- Update gems: `colorator` (1.1.0), `forwardable-extended` (2.6.0), `github-pages` (93), `jekyll` (= 3.2.1), `minima` (= 1.0.1).
 
 ## [3.4.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.3)
 
