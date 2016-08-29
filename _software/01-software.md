@@ -16,7 +16,7 @@ No security audits have been done by us and, thus, we cannot provide any securit
 ## Windows
 * Outlook: [Gpg4Win](https://www.gpg4win.de) with [GpgOL](https://www.gpg4win.org/about.html)
 * Outlook: [gpg4o](https://www.giepa.de/produkte/gpg4o/)
-* [Pretty Easy Privacy](https://prettyeasyprivacy.com/)
+* Outlook: [p≡p](https://prettyeasyprivacy.com)
 * [Thunderbird](https://www.mozilla.org/de/thunderbird/): [Engimail](https://enigmail.net)
 
 ## Mac OS
@@ -25,7 +25,8 @@ No security audits have been done by us and, thus, we cannot provide any securit
 
 ## Android
 * [K-9 Mail](https://k9mail.github.io/): [OpenKeychain](http://www.openkeychain.org)
-* [Pretty Easy Privacy](https://prettyeasyprivacy.com/)
+* [p≡p](https://prettyeasyprivacy.com)
+* [R2Mail2](https://r2mail2.com)
 
 ## iOS
 * [iPGMail](https://ipgmail.com/)
