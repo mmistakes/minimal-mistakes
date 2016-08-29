@@ -17,11 +17,11 @@ No security audits have been done by us and, thus, we cannot provide any securit
 * Outlook: [Gpg4Win](https://www.gpg4win.de) with [GpgOL](https://www.gpg4win.org/about.html)
 * Outlook: [gpg4o](https://www.giepa.de/produkte/gpg4o/)
 * Outlook: [p≡p](https://prettyeasyprivacy.com)
-* [Thunderbird](https://www.mozilla.org/de/thunderbird/): [Engimail](https://enigmail.net)
+* [Thunderbird](https://www.mozilla.org/de/thunderbird/): [Enigmail](https://enigmail.net)
 
 ## Mac OS
 * Apple Mail: [GPGTools](https://gpgtools.org)
-* [Thunderbird](https://www.mozilla.org/de/thunderbird/): [Engimail](https://enigmail.net)
+* [Thunderbird](https://www.mozilla.org/de/thunderbird/): [Enigmail](https://enigmail.net)
 
 ## Android
 * [K-9 Mail](https://k9mail.github.io/): [OpenKeychain](http://www.openkeychain.org)
@@ -34,7 +34,7 @@ No security audits have been done by us and, thus, we cannot provide any securit
 ## GNU/Linux
 * [Evolution](https://wiki.gnome.org/Apps/Evolution): [GnuPG](https://gnupg.org)/[Seahorse](https://wiki.gnome.org/action/show/Apps/Seahorse)
 * [KMail](https://www.kde.org/applications/internet/kmail/): [GnuPG](https://gnupg.org)/[Kleopatra](https://www.kde.org/applications/utilities/kleopatra/)
-* [Thunderbird](https://www.mozilla.org/de/thunderbird/): [Engimail](https://enigmail.net)
+* [Thunderbird](https://www.mozilla.org/de/thunderbird/): [Enigmail](https://enigmail.net)
 
 ## Browser Plugins
 * [Mailvelope](https://www.mailvelope.com)
