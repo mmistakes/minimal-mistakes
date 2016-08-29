@@ -9,7 +9,15 @@ modified: 2016-04-27T10:35:05-04:00
 
 Text for various UI elements, `_layouts`, and `_includes` have all been grouped together as a set of translation keys. This is by no means a full-on i18n solution, but it does help make customizing things a bit easier.
 
-Currently all of the keys in `_data/ui-text.yml` are English only[^yaml-anchors]. If you're are interested in localizing them into other languages feel free to submit a pull request and I will be happy to look it over.
+Currently the English[^yaml-anchors] main keys in `_data/ui-text.yml` are translated to the following languages:
+
+* Brazilian Portguese (Português brasileiro)
+* French (Français)
+* Italian (Italiano)
+* Spanish (Español)
+* Turkish (Türkçe)
+
+If you're are interested in localizing them into other languages feel free to submit a pull request and I will be happy to look it over.
 
 [^yaml-anchors]: `en-US`, and `en-GB` use [YAML anchors](http://www.yaml.org/spec/1.2/spec.html#id2785586) to reference the values in `en` as to not repeat them.
 
