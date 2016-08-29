@@ -54,9 +54,6 @@ While these are easier to set up and provide basic security guarantees with Open
 * [Hushmail](https://www.hushmail.com/)
 * [ProtonMail](https://protonmail.com/)
 
-## Gateways
-* [Symantec PGP Encryption Software](https://www.symantec.com/de/de/encryption/)
-
 ## Project Missing?
 If a project is missing and you would like it included, please open a pull request at [github.com/OpenPGP/openpgp.github.io](https://github.com/OpenPGP/openpgp.github.io).
 Please note that we only include published, working software, which implements the standard.
