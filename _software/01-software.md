@@ -36,8 +36,6 @@ No security audits have been done by us and, thus, we cannot provide any securit
 * [Thunderbird](https://www.mozilla.org/de/thunderbird/): [Engimail](https://enigmail.net)
 
 ## Browser Plugins
-* [Google's End-to-End](https://github.com/google/end-to-end)
-* [Yahoo's End-to-End](https://github.com/yahoo/end-to-end)
 * [Mailvelope](https://www.mailvelope.com)
 
 ## Webmail Provider with Browser Plugins
