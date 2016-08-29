@@ -1,7 +1,39 @@
-# main links links
-main:
-  - title: "Sample Navigation Link"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/navigation/
 
-  - title: "Sample Navigation Link 2"
-    url: /
+main:
+#  - title: "Blog"
+#    url: /blog/
+
+  - title: "Mission"
+    url: /mission/
+
+  - title: "Elements"
+    url: /elements/
+
+  - title: "About"
+    url: /about/
+
+
+elements:
+  - title: General
+    children:
+      - title: "Overview"
+        url: /elements/
+      - title: "Communication subsystem"
+        url: /elements/communication/
+
+  - title: Hardware
+    children:
+      - title: "MPPT charger 12A"
+        url: /elements/mppt-charger-12a/
+      - title: "24-48V BMS"
+        url: /elements/bms-48v/
+      - title: "Other Projects"
+        url: /elements/other-projects/
+
+  - title: Software
+    children:
+      - title: "mbed Firmware"
+        url: /elements/firmware/
+
+
+
