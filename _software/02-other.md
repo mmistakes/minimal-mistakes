@@ -19,10 +19,10 @@ No security audits have been done by us and, thus, we cannot provide any securit
 * [Pretty Easy Privacy](https://prettyeasyprivacy.com/)
 
 ## Keyservers
-* [SKS Keyserver](https://sks-keyservers.net)
+* [LEAP](https://leap.se)
 * [Mailvelope Keyserver](https://keys.mailvelope.com)
 * [Nyms](http://nyms.io)
-* [LEAP](https://leap.se)
+* [SKS Keyserver](https://sks-keyservers.net)
 
 ## Miscellaneous
 * [Schleuder encrypted mailinglist](https://schleuder2.nadir.org)

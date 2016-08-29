@@ -14,8 +14,8 @@ The authors of this webpage are not actively participating in the development of
 No security audits have been done by us and, thus, we cannot provide any security guarantees.
 
 ## Developer Tools
-* [Git Tools - Signing Your Work with GnuPG](https://git-scm.com/book/tr/v2/Git-Tools-Signing-Your-Work)
 * [Debian Package Signing with GnuPG](https://wiki.debian.org/SecureApt)
+* [Git Tools - Signing Your Work with GnuPG](https://git-scm.com/book/tr/v2/Git-Tools-Signing-Your-Work)
 * [pass: the standard unix password manager](https://www.passwordstore.org/)
 
 ## Project Missing?
