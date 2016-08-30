@@ -1,7 +1,7 @@
 # main links links
 main:
-  - title: "Sample Navigation Link"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/navigation/
+  - title: "FNM - Blog"
+    url: imightmax.github.io/blog/
 
-  - title: "Sample Navigation Link 2"
-    url: /
+  #- title: "FNM - Portfolio"
+  #  url: /
