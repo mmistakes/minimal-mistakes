@@ -143,7 +143,7 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 defaults:
   # _posts
-  - scope:
+    scope:
       path: ""
       type: posts
     values:
@@ -154,7 +154,7 @@ defaults:
       related: true
       author_profile: true
   # _pages
-   - scope:
+     scope:
       path: ""
       type: pages
     values:
