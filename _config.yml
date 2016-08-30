@@ -79,7 +79,7 @@ analytics:
 author:
   name             : "Max de Rooij"
   avatar           : "bio-photo.jpg"
-  bio              : "Beginnend UX Designer, freelance web-developer. Op zoek naar innovaties en de randen van nieuwsmedia."
+  bio              : "Beginnend UX Designer, freelance web-developer. Op zoek naar innovaties in levensvatbare concepten voor nieuwsmedia."
   location         : "Nunspeet / Zwolle / Utrecht"
   email            :
   uri              :
@@ -227,3 +227,16 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+    
+  # defaults 
+  defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      read_time: true
+      comments: true
+      share: true
+      related: true
