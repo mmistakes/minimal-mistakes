@@ -111,6 +111,7 @@ author:
 include:
   - .htaccess
   - _pages
+  ["_pages"]
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -259,6 +260,5 @@ compress_html:
 #sets default image for related posts
 teaser: news.jpg
 
-#adds pages folder to root
-include: ["_pages"]
+
       
