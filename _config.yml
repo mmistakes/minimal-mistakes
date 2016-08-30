@@ -234,8 +234,11 @@ timezone: Asia/Shanghai # http://en.wikipedia.org/wiki/List_of_tz_database_time_
 
 # Plugins
 gems:
+  - jekyll-archives
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-tagging-related_posts
+  - jekyll/tagging
   - jekyll-gist
   - jekyll-feed
   - jemoji

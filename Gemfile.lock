@@ -64,6 +64,8 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
+    jekyll-archives (2.1.0)
+      jekyll (>= 2.4)
     jekyll-coffeescript (1.0.1)
       coffee-script (~> 2.2)
     jekyll-feed (0.5.1)
@@ -83,6 +85,11 @@ GEM
     jekyll-seo-tag (2.0.0)
       jekyll (~> 3.1)
     jekyll-sitemap (0.10.0)
+    jekyll-tagging (1.0.1)
+      ruby-nuggets
+    jekyll-tagging-related_posts (0.2.1)
+      jekyll (~> 3.0)
+      jekyll-tagging (~> 1.0.0)
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
     jemoji (0.7.0)
@@ -108,6 +115,7 @@ GEM
     nokogiri (1.6.8-x64-mingw32)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
+    nuggets (1.0.0)
     octokit (4.3.0)
       sawyer (~> 0.7.0, >= 0.5.3)
     pathutil (0.14.0)
@@ -118,17 +126,21 @@ GEM
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
     rouge (1.11.1)
+    ruby-nuggets (1.0.0)
+      nuggets (= 1.0.0)
     safe_yaml (1.0.4)
     sass (3.4.22)
     sawyer (0.7.0)
       addressable (>= 2.3.5, < 2.5)
       faraday (~> 0.8, < 0.10)
-    terminal-table (1.6.0)
+    terminal-table (1.7.0)
+      unicode-display_width (~> 1.1)
     thread_safe (0.3.5)
     typhoeus (0.8.0)
       ethon (>= 0.8.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    unicode-display_width (1.1.0)
     wdm (0.1.1)
 
 PLATFORMS
@@ -137,6 +149,9 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-archives
+  jekyll-tagging-related_posts
+  jemoji
   wdm (~> 0.1.0)
 
 BUNDLED WITH
