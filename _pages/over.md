@@ -7,4 +7,4 @@ In het studiejaar 2016-2017 volg ik de minor Future News Media. Als major studee
 Ik heb dit blog gebouwd met Jekyll, en dit host ik op Github pages. Het is een snelle en lichtgewicht manier om te bloggen tegenover giganten als Wordpress, die een onnodige bak aan features fungeren. Bij vragen over het vak Future News Media, dit blog, de techniek erachter of over mij, voel je vrij om een Tweet of DM te sturen. Dankjewel voor het lezen.
 
 
-<a href="imightmax.github.io" class="btn btn-success">Naar het blog archief</a>
+<a href="imightmax.github.io" class="btn btn--success">Naar het blog archief</a>
