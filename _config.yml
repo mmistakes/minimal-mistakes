@@ -254,9 +254,11 @@ compress_html:
   #set comment feature for posts
   comments:
     provider: "google-plus"
-  
 
     
 #sets default image for related posts
 teaser: news.jpg
+
+#adds pages folder to root
+include: ["_pages"]
       
