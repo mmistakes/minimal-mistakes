@@ -8,6 +8,3 @@ analytics:
 comments:
   disqus:
     shortname            : "robinyu"
-
-sass:
-  style: expanded
