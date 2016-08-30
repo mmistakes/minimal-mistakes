@@ -1,7 +1,7 @@
 # main links links
 main:
   - title: "Over mij"
-    url: /_pages/over/
+    url: /over
 
   #- title: "FNM - Portfolio"
   #  url: /
