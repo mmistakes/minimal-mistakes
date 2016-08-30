@@ -240,3 +240,7 @@ compress_html:
       comments: true
       share: true
       related: true
+    
+#sets default image for related posts
+teaser: news.jpg
+      
