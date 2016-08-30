@@ -141,6 +141,18 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      read_time: true
+      comments: true
+      share: true
+      related: true
+
 
 # Conversion
 markdown: kramdown
@@ -233,18 +245,7 @@ compress_html:
   comments:
     provider: "google-plus"
   
-  # defaults 
-  defaults:
-  # _posts
-  - scope:
-      path: "/_posts/"
-      type: posts
-    values:
-      layout: single
-      read_time: true
-      comments: true
-      share: true
-      related: true
+
     
 #sets default image for related posts
 teaser: news.jpg
