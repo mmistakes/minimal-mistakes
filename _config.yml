@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "FNM - Visiestuk blog"
+title                    : "FNM Visiestuk"
 title_separator          : "-"
 name                     : "Max de Rooij"
 description              : "Een persoonlijke blog waar ik mijn gedachten en inzichten formuleer voor de minor Future News Media."
@@ -79,8 +79,8 @@ analytics:
 author:
   name             : "Max de Rooij"
   avatar           : "bio-photo.jpg"
-  bio              : "Beginnend UX Designer, freelance web-developer. Op zoek naar innovaties in levensvatbare concepten voor nieuwsmedia."
-  location         : "Nunspeet / Zwolle / Utrecht"
+  bio              : "Beginnend UX Designer, freelance web-developer. Op zoek naar innovaties en levensvatbare concepten voor nieuwsmedia."
+  location         : "Nunspeet, NL"
   email            :
   uri              :
   bitbucket        :
