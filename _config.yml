@@ -152,7 +152,7 @@ defaults:
       comments: true
       share: true
       related: true
-      author-profile: true
+      author_profile: true
 
 
 # Conversion
