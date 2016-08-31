@@ -7,7 +7,7 @@ single_layout_gallery:
     alt: "single layout with header example"
   - image_path: mm-layout-single-meta.png
     alt: "single layout with comments and related posts"
-modified: 2016-07-08T10:48:34-04:00
+modified: 2016-08-31T11:00:49-04:00
 ---
 
 {% include base_path %}
@@ -400,6 +400,93 @@ sidebar:
 
 **Note:** Custom sidebar content added to a post or page's YAML Front Matter will appear below the author profile if enabled with `author_profile: true`.
 {: .notice--info}
+
+### Custom Sidebar Navigation Menu
+
+To create a sidebar menu[^sidebar-menu] similar to the one found in the theme's documentation pages you'll need to modify a `_data` file and some YAML Front Matter.
+
+[^sidebar-menu]: Sidebar menu supports 1 level of nested links.
+
+<figure>
+  <img src="{{ base_path }}/images/mm-custom-sidebar-nav.jpg" alt="sidebar navigation example">
+  <figcaption>Custom sidebar navigation menu example.</figcaption>
+</figure>
+
+To start, add a new key to `_data/navigation.yml`. This will be referenced later in via YAML Front Matter so keep it short and memorable. In the case of the theme's documentation menu I used `docs`.
+
+**Sample sidebar menu links:**
+
+```yaml 
+docs:
+  - title: Getting Started
+    children:
+      - title: "Quick-Start Guide"
+        url: /docs/quick-start-guide/
+      - title: "Structure"
+        url: /docs/structure/
+      - title: "Installation"
+        url: /docs/installation/
+      - title: "Upgrading"
+        url: /docs/upgrading/
+
+  - title: Customization
+    children:
+      - title: "Configuration"
+        url: /docs/configuration/
+      - title: "Navigation"
+        url: /docs/navigation/
+      - title: "UI Text"
+        url: /docs/ui-text/
+      - title: "Authors"
+        url: /docs/authors/
+      - title: "Layouts"
+        url: /docs/layouts/
+
+  - title: Content
+    children:
+      - title: "Working with Posts"
+        url: /docs/posts/
+      - title: "Working with Pages"
+        url: /docs/pages/
+      - title: "Working with Collections"
+        url: /docs/collections/
+      - title: "Helpers"
+        url: /docs/helpers/
+      - title: "Utility Classes"
+        url: /docs/utility-classes/
+
+  - title: Extras
+    children:
+      - title: "Stylesheets"
+        url: /docs/stylesheets/
+      - title: "JavaScript"
+        url: /docs/javascript/
+```
+
+Now you can pull these links into any page by adding the following YAML Front Matter.
+
+```yaml
+sidebar:
+  nav: "docs"
+```
+
+**Note:** `nav: "docs"` references the `docs` key in `_data/navigation.yml` so make sure they match.
+{: .notice--info}
+
+If you're adding a sidebar navigation menu to several pages the use of Front Matter Defaults is a better option. You can define them in `_config.yml` to avoid adding it to every page or post.
+
+**Sample sidebar nav default:**
+
+```yaml
+defaults:
+  # _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      sidebar:
+        nav: "docs"
+```
 
 ---
 

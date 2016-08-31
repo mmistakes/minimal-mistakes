@@ -2,7 +2,7 @@
 title: "Navigation"
 permalink: /docs/navigation/
 excerpt: "Instructions on how to customize the main navigation and enabling breadcrumb links."
-modified: 2016-04-13T15:54:02-04:00
+modified: 2016-08-31T11:00:35-04:00
 ---
 
 {% include base_path %}
@@ -70,3 +70,7 @@ For breadcrumbs that resemble something like `Start > Blog > My Awesome Post` yo
 breadcrumb_home_label : "Start"
 breadcrumb_separator  : ">"
 ```
+
+## Custom Sidebar Navigation Menu
+
+See the [**sidebars** documentation]({{ base_path }}/docs/layouts/#custom-sidebar-navigation-menu) for information on setting up a custom navigation menu.
