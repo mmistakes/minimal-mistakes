@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "FNM Visiestuk"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Max de Rooij"
+description              : "Een persoonlijke blog waar ik mijn gedachten en inzichten formuleer voor de minor Future News Media."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -77,10 +77,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
+  name             : "Max de Rooij"
+  avatar           : "bio-photo.png"
+  bio              : "Beginnend UX Designer, freelance web-developer. Op zoek naar innovaties en levensvatbare concepten voor nieuwsmedia."
+  location         : "Nunspeet, NL"
   email            :
   uri              :
   bitbucket        :
@@ -89,7 +89,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "imightmax"
   google_plus      :
   keybase          :
   instagram        :
@@ -100,7 +100,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "imightmax"
   vine             :
   weibo            :
   xing             :
@@ -140,6 +140,28 @@ keep_files:
   - .svn
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      author_profile: true
+
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
 
 
 # Conversion
@@ -227,3 +249,15 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+    
+  
+  #set comment feature for posts
+  comments:
+    provider: "google-plus"
+
+    
+#sets default image for related posts
+teaser: news.jpg
+
+
+      

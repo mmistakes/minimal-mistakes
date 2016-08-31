@@ -1,7 +1,7 @@
 # main links links
 main:
-  - title: "Sample Navigation Link"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/navigation/
+  - title: "Over mij"
+    url: /over
 
-  - title: "Sample Navigation Link 2"
-    url: /
+  #- title: "FNM - Portfolio"
+  #  url: /
