@@ -1,8 +1,6 @@
 ---
 title: "Running Sia on a Synology NAS via Docker"
 excerpt: "A walkthrough for setting up Sia in Docker in Synology DSM"
-header:
-  teaser: "markup-syntax-highlighting-teaser.jpg"
 tags:
   - docker
   - sia
