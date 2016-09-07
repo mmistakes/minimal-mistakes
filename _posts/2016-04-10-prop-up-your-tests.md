@@ -118,7 +118,7 @@ user>
 
 As you can see I now get nil's and empty strings in the generated values.
 
-My first property test will be that posting a customer resource returns an HTTP status 201 (created).
+My first property test will be that posting a customer resource returns an HTTP status `201` (created).
 
 ``` clojure
 ;; Property based tests
@@ -130,7 +130,7 @@ My first property test will be that posting a customer resource returns an HTTP 
                  (= 201 (:status response))))) ;; status should be 'created'
 ```
 
-defspec defines a specification to test. In this case I am generating a 1000 tests and I verify that a post to the url "/customers" with a body containing the generated customer (as JSON) will return a status of 201. The for-all macro allows me to define the generator I use to create a customer and bind it to the var cust.
+defspec defines a specification to test. In this case I am generating a 1000 tests and I verify that a post to the url "/customers" with a body containing the generated customer (as JSON) will return a status of `201`. The for-all macro allows me to define the generator I use to create a customer and bind it to the var cust.
 
 Here I'm using a function post-resource-json to construct my call to the actual API.
 
@@ -175,7 +175,7 @@ I started by defining my server using compojure and ring. There are plenty of ex
 
 To keep this example simple I am just using an atom to store my customer resources, keyed by their id. In store-customer I am generating a UUID for the id of the customer and assoc'ing it into the customer map before assoc'ing the resulting map into the atom keyed by it's UUID within the :customers map.
 
-I then created a route mapped to the /customers URI that expects a parameter with the name customer and then calls the store-customer function. The customer map returned from this call is then wrapped in a 'created' HTTP response which has it's location header set to the resource's URI, a status of 201 (created) with a content type of JSON.
+I then created a route mapped to the /customers URI that expects a parameter with the name customer and then calls the store-customer function. The customer map returned from this call is then wrapped in a 'created' HTTP response which has it's location header set to the resource's URI, a status of `201` (created) with a content type of JSON.
 
 Any other route returns not-found (status `404`).
 
@@ -250,7 +250,7 @@ nil
 
 All looks good.
 
-More properties to test
+### More properties to test ###
 
 Now let's try running the test-post-customer-status-created specification that, if you remember, looks like this:
 
@@ -278,7 +278,7 @@ Ran 2 tests containing 3 assertions.
 user>
 ```
 
-So I've run a 1000 generated tests over my post customers API successfully. However, at the moment I'm only testing that I've got a created (201) status.
+So I've run a 1000 generated tests over my post customers API successfully. However, at the moment I'm only testing that I've got a created (`201`) status.
 
 I want to add a specification to ensure my Location header has a URI that matches the pattern /customers/{uuid} and that the id returned in the customer resource in the body matches the uuid in the Location header.
 
@@ -455,7 +455,7 @@ Ran 7 tests containing 15 assertions.
 $
 ```
 
-The two tests I defined using a combination of deftest and checking don't report unless they fail but we are running 3000 generated tests plus a handful of example tests that act as sanity checks and documentation.
+The two tests I defined using a combination of deftest and checking don't report unless they fail but we are running 5000 generated tests plus a handful of example tests that act as sanity checks and documentation.
 
 To examine the source for this blog or run these tests yourself please clone [https://github.com/chrishowejones/blogpbt](https://github.com/chrishowejones/blogpbt).
 
