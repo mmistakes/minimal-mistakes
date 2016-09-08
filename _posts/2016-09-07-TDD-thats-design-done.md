@@ -3,7 +3,7 @@
 For many years now there have been internet flame wars about TDD in
 the software development community.
 
-Most people I talk involved in software development seem to have
+Most people I talk to involved in software development seem to have
 strong opinions for or against Test Driven Development and some of the
 heated discussions on forums have become as passionate as arguments
 over politics or religion.
