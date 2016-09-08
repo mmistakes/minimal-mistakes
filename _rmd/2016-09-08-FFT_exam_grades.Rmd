@@ -1,0 +1,148 @@
+---
+title: "The Fast and the Furiously Frugal"
+author: matt_gregory
+comments: yes
+date: '2016-09-08'
+modified: `r format(Sys.time(), '%Y-%m-%d')`
+layout: post
+excerpt: "Quick and easy classification"
+published: false
+status: process
+tags:
+- Classification
+- Decision trees
+- Fast and Frugal Trees
+- R
+categories: Rstats
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  dev = "svg",
+  include = TRUE,
+  message = FALSE,
+  warning = FALSE,
+  error = FALSE
+  )
+
+```
+
+## Fast and frugal trees
+
+I've praised the utility of decision trees in other scenarios especially where accountability and transparency of decision making is important. Here we explore why decision trees are a good introduction to Machine Learning and its ability to spot patterns in data providing insight. Decision trees are arguably easier to interpret and more inline with human thinking than some other ML methods, thus we write a post here to using a fast and frugal tree method, providing a quick solution to a classification problem.
+
+Although the comparison is slightly contrived, in the [blog post](https://www.r-bloggers.com/making-fast-good-decisions-with-the-fftrees-r-package/), which this post is based on, through comparing the interpretability and accessibility of a logistic regression versus a decision tree. I think this issue could be avoided by having a suitable front end, as most users will not need to see how the decision tool operates under the hood. However, this `FFTrees` package provides a user with everything they need in a few lines of code.  
+
+It also comes with excellent vignettes and documentation using some classic ML datasets.
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+
+#SETUP
+rm(list = ls()) #clear workspace
+
+#PACKAGES
+library(dplyr)# if dplyr is not installed, install it then load it
+
+library(FFTrees)
+
+#INPUT
+mydata <- "data/2016-03-01_student_performance.csv" 
+mydata <- read.table(mydata, sep = ";",
+                     header = TRUE) 
+#  need to make response / dependent variable binary
+
+```
+
+We read, tidy and normalise the data as described [in a previous post](http://www.machinegurning.com/rstats/student-performance/).
+
+```{r, echo = FALSE}
+
+mydata$final <- NULL
+mydata$final <- as.integer(ifelse(mydata$G3 >= 10, 1, 0))  #  make it binary
+mydata$final <- as.numeric(mydata$final)
+# Create normalise function
+normalise <- function(x) {
+  return((x - min(x)) / (max(x) - min(x)))
+}
+
+set.seed(1337)
+#data_rand <- tbl_df(mydata[order(runif(395)), ]) #  no need
+
+#what variables are we interested in?
+data_interest <- select(mydata, school, sex, G1, G2, Mjob, Fjob, goout, 
+       absences, reason, Fjob, Mjob, failures, Fedu, Medu, final)
+
+#normalise the data so they are on the same scale
+#can you find a faster way to apply (hint) a function to each column
+data_interest$G1 <- normalise(data_interest$G1)
+data_interest$G2 <- normalise(data_interest$G2)
+data_interest$goout <- normalise(data_interest$goout)
+data_interest$absences <- normalise(data_interest$absences)
+data_interest$failures <- normalise(data_interest$failures)
+data_interest$Fedu <- normalise(data_interest$Fedu)
+data_interest$Medu <- normalise(data_interest$Medu)
+```
+We then split the data into a training and testing set to assess how well the classifier performs on data it hasn't seen.
+
+```{r}
+glimpse(data_interest)
+
+# Train and test
+data_train <- data_interest[1:350, ]
+data_test <- data_interest[351:395, ]
+
+#Build the classifier
+perf_fft <- fft(formula = final ~.,
+                         data = data_train, data.test = data_test)
+
+```
+
+Now that we've created the object, we can print it to the console to get basic information.
+
+```{r}
+
+perf_fft
+
+```
+
+The printout tells us that the final fft object contains 6 different trees, and the largest tree only uses 4 of the original 12 cues. To see the best tree, we can simply plot the fft object:
+
+```{r,2016-09-08_FFTa}
+plot(perf_fft, 
+     main = "End of year maths exam performance FFT", 
+     decision.names = c("Fail", "Pass"))
+
+```
+
+There's one of our fast and frugal trees! In the top section of the plot, we see that the data had 237 true Pass cases, and 113 true Fail cases. In the middle section, we see the actual tree. The tree then starts by looking at the cue G2. If the value is less than 0.53, the tree decides that the person is a Pass If the value is not less than 0.53, then the tree looks at G1. If the G1 > 0.44, the tree decides the patient is a Pass. If G1 <= 0.44, the tree decides that the person is a Fail.  
+
+That's the whole decision algorithm! Quite simple to follow but not very powerful at extracting extra detail that would provide additional insight. I think all teachers would expect the previous two terms exam grades to be good predictors of the final exam pass or fail status. However, it does validate this assumption and provides a cut-off point for strategies targeting students who need extra help to get them up to a pass.
+
+This fast and frugalness does miss some aspects as shown in the performance section of the plot where we see 43 misses. Where students passed but were predicted to fail, we probably prefer this to the alternative of Falsely predicting a pass.
+
+## Performace
+As you can see, the tree performed exceptionally well:  it made correct diagnoses in 301 (107+181+13) out of all 350 cases (86% correct). Additional performance statistics, including specificity (1 - false alarm rate), hit rate, d-prime, AUC (area under the curve) are also displayed. Finally, in the bottom right plot, you can see an ROC curve which compares the performance of the trees to CART (in red) and logistic regression (in blue).
+
+## Viewing other trees
+
+Now, what if you want a tree that rarely misses true Fail cases, at the cost of additional false alarms (those who would pass anyway)? As  Luan, Schooler, & Gigerenzer (2011) have shown, you can easily shift the balance of errors in a fast and frugal tree by adjusting the decisions it makes at each level of a tree. The 'fft' function automatically builds several versions of the same general tree that make different error trade-offs. We can see the performance of each of these trees in the bottom-right ROC curve. Looking at the ROC curve, we can see that tree number 3 has a very high specificity, but a smaller hit-rate compared to tree number 4. We can look at this tree by adding the which.tree = 3 argument to 'plot()'. As teachers who are concerned that every-child matters we may prefer to err on the side of caution, depsite it adding expense (more teachers to help out) and wasting the time of some students.
+
+```{r,2016-09-08_FFTb}
+plot(perf_fft, 
+     main = "End of year maths exam performance FFT", 
+     decision.names = c("Fail", "Pass"),
+     which.tree = 3)
+
+```
+
+## Conclusion
+
+FFTrees is a nice, easy to interpret gateway R package into classification techniques and Data Science and Machine Learning. I think it is at its most useful when challenging and testing assumptions held by experts in the field. This leads to an evidence based approach to decision making whereby you could show this FFT plot to parents to explain why there child needs to attend extra sessions during the School Holidays, for example. 
+
+Try it youself with the 'mushrooms' dataset (see '?mushrooms' for details, it's loaded in with the 'FFT' package). Or predict your seminal quality (if relevant) with the 'fertility' dataset.
+
+```{r}
+sessionInfo()
+```
+

@@ -6,8 +6,8 @@ date: '2016-07-29'
 modified: `r format(Sys.time(), '%Y-%m-%d')`
 layout: post
 excerpt: "Forecasting regime changes in market turbulence"
-published: false
-status: process
+published: TRUE
+status: processed
 tags:
 - Hidden Markov Models
 - Regime detection

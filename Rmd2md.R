@@ -150,13 +150,13 @@ rmd2md <- function(
   
   os <- Sys.info()['sysname']
   
-  if (os == "Linux") {
+  if (os != "windows") {
   
   system("exiv2 rm figures/*.jpg")
     
   } else {
     
-   warning("exiv2 tool not available on non-linux systems. Be aware that exif data attached to JPEG files will be published too!")
+   message("exiv2 tool not available on non-linux systems. Be aware that exif data attached to JPEG files will be published too!")
      
   }
 
