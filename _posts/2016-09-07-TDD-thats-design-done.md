@@ -17,7 +17,7 @@ On one side are the proponents of TDD as a way of life for developers.
 ## Test Driven Disciples ##
 
 The strict adherence to the process and disciplines of
-failing-test-first/implement-test/pass/refactor/repeat
+failing-test-first/implement-test/pass/re-factor/repeat
 conjures up images of the developer equivalent of the warrior monks of
 China. Developers rising before the sun to practice their code kata,
 lines of practitioner hunched over keyboards applying the steps of TDD
@@ -25,7 +25,7 @@ as if driven by a metronome, each successful invocation of the 'green'
 genie of a passing test accompanied by a Kiai of triumph.
 
 What they think of as the studied concentration of practised
-discipline is often percieved by non-TDDers as the slavish adherence to
+discipline is often perceived by non-TDDers as the slavish adherence to
 an unthinking cult. Mindless automatons relentlessly 'mocking' real
 design to produce a disconnected, disassociated collection of classes
 that clog the understanding of the problem space with unnecessary
@@ -44,10 +44,11 @@ they can to meet delivery 'dead'-lines set by the cruel warlords of
 the project management cult. They have no time for testing of any
 kind. Testing is for 'wimps'!
 
-Many don't survive this brutal and unforgiving landscape, brought to an untimely end by premature release
-schedules. The hardened veterans carry scars, missing the figurative
-'limbs' of code quality, professional pride bleeding into the sand of
-the unforgiving desert of the 'immaculate schedule'.
+Many don't survive this brutal and unforgiving landscape, brought to
+an untimely end by premature release schedules. The hardened veterans
+carry scars, missing the figurative 'limbs' of code quality,
+professional pride bleeding into the sand of the unforgiving desert of
+the 'immaculate schedule'.
 
 ### The Afterthoughts ###
 Usually made up of outcasts and refugees from the hardened 'Code
@@ -81,7 +82,7 @@ swirling mists of an architectural seance.
 
 # So to TDD or not to TDD? #
 
-So putting aside the sarcasm and the terrible similies, should you use
+So putting aside the sarcasm and the terrible similes, should you use
 Test Driven Development or not? Does it fulfil the promise of
 evolutionary design claimed by it's adherents or is it the 'snake oil'
 claimed by it's opponents?
@@ -97,7 +98,7 @@ discovers and visualises problems and abstract concepts, YMMV.
 Most of my professional programming life has been spent writing in either
 procedural or object-oriented languages. In addition, they have been
 statically 'typed' _(typing is a lower level concept in COBOL and
-Fortran but you need to declare primitive variable structures up front
+FORTRAN but you need to declare primitive variable structures up front
 so I'll count it)_. Given these environments TDD gives me a number of
 properties.
 
@@ -150,7 +151,7 @@ therefore you have some measure of the 'completeness' of your
 solution. If you've fulfilled the tests for that small part of the
 design you have completed it to your current understanding.
 
-Of course this presupposes that your tests acurately reflect the
+Of course this presupposes that your tests accurately reflect the
 problem and that your understanding is accurate but this is a problem
 regardless of TDD.
 
@@ -158,7 +159,7 @@ regardless of TDD.
 <!-- challenge TDD approach. -->
 
 
-### Testability ###
+### Test-ability ###
 
 One advantage of test first is that in order to write tests up front
 you have to drive the low level design to be 'testable'. This means
@@ -346,7 +347,7 @@ However, it's of limited use in the design of high level concepts, like:
 
 All of these can use TDD in a supporting role but they need other
 tools like thought about architecture/design and context _(possibly
-documentented in the form of diagrams and documents, wikis,
+documented in the form of diagrams and documents, wikis,
 etc.)_. TDD is useful in some languages to provide a feedback loop as
 described in [Feedback](#feedback) but there are other tools that can
 provide this in certain languages, for example a REPL<sup>3</sup>.
