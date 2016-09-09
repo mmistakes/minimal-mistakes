@@ -7,7 +7,7 @@ single_layout_gallery:
     alt: "single layout with header example"
   - image_path: mm-layout-single-meta.png
     alt: "single layout with comments and related posts"
-modified: 2016-08-31T11:00:49-04:00
+modified: 2016-09-09T10:22:01-04:00
 ---
 
 {% include base_path %}
@@ -30,7 +30,10 @@ The base layout all other layouts inherit from. There's not much to this layout 
 
 ## Compress Layout
 
-A Jekyll layout that compresses HTML in pure Liquid.
+A Jekyll layout that compresses HTML in pure Liquid. To enable add `layout: compress` to `_layouts/default.html`.
+
+**Note:** Has been none to mangle markup and break JavaScript... especially if inline `// comments` are present. For this reason it has been disabled by default.
+{: .notice--danger}
 
 * [Documentation](http://jch.penibelst.de/)
 
