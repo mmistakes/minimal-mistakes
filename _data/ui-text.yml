@@ -253,17 +253,17 @@ it: &DEFAULT_IT
   email_label                : "Email"
   recent_posts               : "Articoli Recenti"
   undefined_wpm              : "Parametro words_per_minute non definito in _config.yml"
-  comment_form_info          :
-  comment_form_comment_label :
-  comment_form_md_info       :
-  comment_form_name_label    :
-  comment_form_email_label   :
-  comment_form_website_label :
-  comment_btn_submit         :
-  comment_btn_submitted      :
-  comment_success_msg        :
-  comment_error_msg          :
-  loading_label              :
+  comment_form_info          : "Il tuo indirizzo email non sarà pubblicato. Sono segnati i campi obbligatori"
+  comment_form_comment_label : "Commenta"
+  comment_form_md_info       : "Il linguaggio Markdown è supportato"
+  comment_form_name_label    : "Nome"
+  comment_form_email_label   : "Indirizzo email"
+  comment_form_website_label : "Sito Web (opzionale)"
+  comment_btn_submit         : "Invia commento"
+  comment_btn_submitted      : "Inviato"
+  comment_success_msg        : "Grazie per il tuo commento! Verrà visualizzato nel sito una volta che sarà approvato."
+  comment_error_msg          : "C'è stato un errore con il tuo invio. Assicurati che tutti i campi richiesti siano stati completati e riprova."
+  loading_label              : "Caricamento..."
 it-IT:
   <<: *DEFAULT_IT
 
