@@ -4,8 +4,18 @@ permalink: /docs/history/
 excerpt: "Changelog of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2016-09-09T10:13:54-04:00
+modified: 2016-09-09T10:38:38-04:00
 ---
+
+## [3.4.6](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.6)
+
+### Enhancements
+
+- Add Italian "comments" related localized UI text. [#514](https://github.com/mmistakes/minimal-mistakes/pull/514)
+
+### Bug Fixes
+
+- Disable `compress` HTML layout by default. To enable add `layout: compress` to `_layouts/default.html`.
 
 ## [3.4.5](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.5)
 
