@@ -1,13 +1,12 @@
 ---
 layout: archive
-permalink: /reads/
 title: "Read This Two"
-excerpt: &excerpt "Gallery of mini watercolor portraits painted at really small sizes."
+excerpt: &excerpt "I read this book and here are my thoughts."
 modified:
 image: 
   teaser: tiny-paintings-teaser.jpg
   thumb: tiny-paintings-150.jpg
-tags: [watercolor, painting, drawing, portrait, illustration]
+tags: [book notes]
 fullwidth: true
 featured: 
 ads: false
