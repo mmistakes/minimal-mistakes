@@ -13,7 +13,7 @@ name                     :
 description              : "Tools for fisheries scientists and field practitioners"
 url                      : # "https://barefoot-ecologist-toolbox.github.io" # 
 baseurl                  : # the subpath of your site, e.g. "/blog"
-gh_repo                  :
+gh_repo                  : "Barefoot-Ecologist-Toolbox/barefoot-ecologist-toolbox.github.io"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -73,7 +73,8 @@ author:
   flickr           :
   facebook         : 
   foursquare       :
-  github           :
+  github           : "Barefoot-Ecologist-Toolbox"
+  github-repo	   : "https://github.com/barefoot-ecologist-toolbox.github.io/"
   google_plus      :
   keybase          :
   instagram        :
