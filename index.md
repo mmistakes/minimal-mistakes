@@ -5,7 +5,7 @@ header:
   overlay_image: ocean.jpg
   overlay_filter: 0 # same as adding an opacity of 0.5 to a black background
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-  cta_label: "More Info"
+  cta_label: "<i class='fa fa-user' aria-hidden='true'></i> More Info"
   cta_url: "/about-us"
 feature_row:
   - image_path: 
@@ -18,7 +18,7 @@ feature_row:
   - image_path: 
     alt: "placeholder image 2"
     title: "Estimating Natural Mortality"
-    excerpt: "Empirical estimators of natural mortality"
+    excerpt: "Empirical estimators for natural mortality"
     url: "/shiny_m"
     btn_label: "Go to App"
     btn_class: "btn--inverse"
@@ -70,23 +70,14 @@ https://mmistakes.github.io/minimal-mistakes/docs/helpers/
 
 {% include base_path %}
 # Welcome to the Barefoot Ecologist's Toolbox
-The Barefoot Ecologist's Toolbox website will include a number of applications and tools for exploring data and analysis, simulation of various aspects of a fishery, and estimation of parameters.
+The Barefoot Ecologist’s Toolbox website will include a number of applications and tools for exploring data and analysis, simulation of various aspects of a fishery, and estimation of parameters.
 
 The site is still under construction.
 
 ## Applications 
 
-Currently only an early version of the length-based spawning potential ratio (LBSPR) assessment method for data-limited fisheries is available.
-
-Help information and other supporting material is not yet complete. More applications and material coming soon.
-
 {% include feature_row %}
 
-[//]: See the [help](/help) page for further information
 
-[//]: {: .notice--warning} 
-[//]:  Disclaimer: all care - no responsibility etc
 
-[//]: ## Open Source
 
-[//]:  Code for apps and website available from ...
