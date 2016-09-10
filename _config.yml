@@ -28,6 +28,24 @@ comments:
     appid                :
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
+staticman:
+  allowedFields          : ['name', 'email', 'url', 'message']
+  branch                 : # "master", "gh-pages"
+  commitMessage          : "New comment."
+  filename               : comment-{@timestamp}
+  format                 : "yml"
+  moderation             : true
+  path                   : "_data/comments/{options.slug}"
+  requiredFields         : ['name', 'email', 'message']
+  transforms:
+    email                : "md5"
+  generatedFields:
+    date:
+      type               : "date"
+      options:
+        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+atom_feed:
+  path                   : # blank (default) uses feed.xml
 
 # SEO Related
 google_site_verification : XJeHTw3Zr8kuRYxTqXWirGQ-0USIUpiWr9Aa4Ud4EzM
@@ -56,10 +74,6 @@ analytics:
   google:
     tracking_id          : UA-26626483-5
 
-# Google AdSense
-google_ad_client         :
-google_ad_slot           :
-
 
 # Site Author
 author:
@@ -83,7 +97,7 @@ author:
   linkedin         :
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
   twitter          : _LeTetard
@@ -100,6 +114,7 @@ include:
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
+  - vendor
   - .asset-cache
   - .bundle
   - .jekyll-assets-cache
@@ -120,7 +135,6 @@ exclude:
   - Rakefile
   - README
   - tmp
-  - vendor
   - googlef1d1a4313cea3be2.html
   - robots.txt
 keep_files:
@@ -148,6 +162,12 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
+
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 
 # Outputting
