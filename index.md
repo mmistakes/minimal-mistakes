@@ -17,17 +17,24 @@ feature_row:
     btn_class: "btn--inverse"
   - image_path: 
     alt: "placeholder image 2"
+    title: "Estimating Natural Mortality"
+    excerpt: "Empirical estimators of natural mortality"
+    url: "/shiny_m"
+    btn_label: "Go to App"
+    btn_class: "btn--inverse"
+  - image_path: 
+    alt: "placeholder image 2"
     title: "Maturity-at-Length"
     excerpt: "Coming Soon!"
     url: "/"
     btn_label: "Go to App"
     btn_class: "btn--inverse"
-  - image_path: 
-    title: "Simulation Tool"
-    excerpt: "Coming Soon!"
-    url: "/"
-    btn_label: "Go to App"
-    btn_class: "btn--inverse"
+  # - image_path: 
+    # title: "Simulation Tool"
+    # excerpt: "Coming Soon!"
+    # url: "/"
+    # btn_label: "Go to App"
+    # btn_class: "btn--inverse"
   # - image_path: 
     # title: "Placeholder 4"
     # excerpt: "This is some sample content that goes here with **Markdown** formatting."
