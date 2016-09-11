@@ -8,8 +8,8 @@ ads: false
 fullwidth: true
 tiles: true
 feature:
-  visible: false
-  headline: "Featured Work"
+  visible: true
+  headline: "Featured Reads"
   category: reads
 ---
 
