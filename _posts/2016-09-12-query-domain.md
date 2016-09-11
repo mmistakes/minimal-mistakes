@@ -1,5 +1,5 @@
 ---
-title:  "子域名查谟"
+title:  "子域名查询Tools"
 categories: 
   - Ruby
 tags:
