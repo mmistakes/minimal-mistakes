@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "我考，这是个安全博客"
+title                    : "我靠，No Security"
 title_separator          : "-"
 name                     : "offensive"
 description              : "Ruby & UNix &Linux &WEB Security."
