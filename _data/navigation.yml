@@ -1,10 +1,10 @@
 # main links links
 main:
+  - title: "Year"
+    url: /year-archive/
+    
   - title: "Ruby"
     url: /404/
 
   - title: "Web"
     url: /
-	
-  - title: "Sample Posts"
-    url: /year-archive/
