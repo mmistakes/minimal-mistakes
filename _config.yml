@@ -166,7 +166,7 @@ defaults:
       path: _posts/portfolio
       type: posts
     values:
-      layout: single # ?????
+      layout: article # ?????
       category: portfolio
       author_profile: false
       share: true
@@ -191,7 +191,7 @@ defaults:
       path: _posts/reads
       type: posts
     values:
-      layout: single # ?????
+      layout: article # ?????
       category: reads
       author_profile: true
       breadcrumbs:
