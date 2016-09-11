@@ -172,7 +172,7 @@ defaults:
       author_profile: false
       read_time: true
       share: true
-      breadcrumbs: true
+      breadcrumbs:
         - label: "Portfolio"
           url: /portfolio/
       
@@ -186,7 +186,7 @@ defaults:
       author_profile: true
       read_time: true
       share: true
-      breadcrumbs: true
+      breadcrumbs:
         - label: "Words"
           url: /words/
           
@@ -200,7 +200,7 @@ defaults:
       author_profile: true
       read_time: true
       share: true
-      breadcrumbs: true
+      breadcrumbs:
         - label: "Reads"
           url: /reads/
       
@@ -214,7 +214,7 @@ defaults:
       author_profile: true
       read_time: true
       share: true
-      breadcrumbs: false
+      breadcrumbs:
         - label: "Discoveries"
           url: /discoveries/
 
