@@ -1,9 +1,12 @@
 ---
-layout: post
-title: "A Post with Images"
+title: "Markup: Another Post with Images"
 excerpt: "Examples and code for displaying images in posts."
-tags: [sample post, images, test]
-comments: true
+header:
+  teaser: "http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg"
+tags: 
+  - sample post
+  - images
+  - test
 ---
 
 Here are some examples of what a post with images might look like. If you want to display two or three images next to each other responsively use `figure` with the appropriate `class`. Each instance of `figure` is auto-numbered and displayed in the caption.
@@ -23,13 +26,13 @@ Vero laborum commodo occupy. Semiotics voluptate mumblecore pug. Cosby sweater u
 
 Apply the `half` class like so to display two images side by side that share the same caption.
 
-{% highlight html %}
+```html
 <figure class="half">
     <a href="/images/image-filename-1-large.jpg"><img src="/images/image-filename-1.jpg"></a>
     <a href="/images/image-filename-2-large.jpg"><img src="/images/image-filename-2.jpg"></a>
     <figcaption>Caption describing these two images.</figcaption>
 </figure>
-{% endhighlight %}
+```
 
 And you'll get something that looks like this:
 
@@ -43,14 +46,14 @@ And you'll get something that looks like this:
 
 Apply the `third` class like so to display three images side by side that share the same caption.
 
-{% highlight html %}
+```html
 <figure class="third">
 	<img src="/images/image-filename-1.jpg">
 	<img src="/images/image-filename-2.jpg">
 	<img src="/images/image-filename-3.jpg">
 	<figcaption>Caption describing these three images.</figcaption>
 </figure>
-{% endhighlight %}
+```
 
 And you'll get something that looks like this:
 

@@ -1,13 +1,12 @@
 ---
-layout: post
-title: "Post with Large Feature Image and Text"
-excerpt: "Custom written post descriptions are the way to go... if you're not lazy."
-tags: [sample post, readability, test]
-comments: true
-image:
-  feature: sample-image-4.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+title: "Layout: Header Image and Text Readability"
+header:
+  image: unsplash-image-4.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+tags: 
+  - sample post
+  - readability
+  - test
 ---
 
 This is a sample post with a large feature image[^1] up top and tons of text. Odio ad blue bottle vinyl, 90's narwhal commodo bitters pour-over nostrud. Ugh est hashtag in, fingerstache adipisicing laboris esse Pinterest shabby chic Portland. Shoreditch bicycle rights anim, flexitarian laboris put a bird on it vinyl cupidatat narwhal. Hashtag artisan skateboard, flannel Bushwick nesciunt salvia aute fixie do plaid post-ironic dolor McSweeney's. Cliche pour-over chambray nulla four loko skateboard sapiente hashtag.
@@ -18,10 +17,10 @@ Vero laborum commodo occupy. Semiotics voluptate mumblecore pug. Cosby sweater u
 
 In pug Portland incididunt mlkshk put a bird on it vinyl quinoa. **[Terry Richardson](#) shabby chic +1**, scenester Tonx excepteur tempor fugiat voluptate fingerstache aliquip nisi next level. Farm-to-table hashtag Truffaut, Odd Future ex meggings gentrify single-origin coffee try-hard 90's.
 
-* Sartorial hoodie
-* Labore viral forage
-* Tote bag selvage
-* DIY exercitation et id ugh tumblr church-key
+  * Sartorial hoodie
+  * Labore viral forage
+  * Tote bag selvage
+  * DIY exercitation et id ugh tumblr church-key
 
 Incididunt umami sriracha, ethical fugiat VHS ex assumenda yr irure direct trade. Marfa Truffaut bicycle rights, kitsch placeat Etsy kogi asymmetrical. Beard locavore flexitarian, kitsch photo booth hoodie plaid ethical readymade leggings yr.
 

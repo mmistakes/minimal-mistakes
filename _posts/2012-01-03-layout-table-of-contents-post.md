@@ -1,48 +1,37 @@
 ---
-layout: post
-title: Sample Post
-excerpt: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
-modified: 2013-05-31
-tags: [intro, beginner, jekyll, tutorial]
-comments: true
-image:
-  feature: sample-image-5.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+title: "Layout: Post with Table Of Contents"
+header:
+  image: unsplash-image-9.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+tags:
+  - table of contents
 ---
 
-<section id="table-of-contents" class="toc">
-  <header>
-    <h3>Overview</h3>
-  </header>
-<div id="drawer" markdown="1">
-*  Auto generated table of contents
-{:toc}
-</div>
-</section><!-- /#table-of-contents -->
+{% include toc title="Unique Title" icon="file-text" %}
+
+Testing Kramdown auto-generated table of contents with unique title and icon assigned in the include like so:
+
+```liquid
+{% raw %}{% include toc title="Unique Title" icon="file-text" %}{% endraw %}
+```
 
 ## HTML Elements
 
 Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
 
-# Heading 1
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
 
-## Heading 2
-
-### Heading 3
-
-#### Heading 4
-
-##### Heading 5
-
-###### Heading 6
-
-### Body text
+## Body text
 
 Lorem ipsum dolor sit amet, test link adipiscing elit. **This is strong**. Nullam dignissim convallis est. Quisque aliquam.
 
-![Smithsonian Image]({{ site.url }}/images/3953273590_704e3899d5_m.jpg)
-{: .image-pull-right}
+![Smithsonian Image]({{ site.url }}{{ site.baseurl }}/images/3953273590_704e3899d5_m.jpg)
+{: .image-right}
 
 *This is emphasized*. Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is H2O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times (That’s a citation). Underline.Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
 
@@ -83,27 +72,27 @@ HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, c
 
 ## Code Snippets
 
-{% highlight css %}
+```css
 #container {
   float: left;
   margin: 0 -240px 0 0;
   width: 100%;
 }
-{% endhighlight %}
+```
 
 ## Buttons
 
 Make any link standout more when applying the `.btn` class.
 
-{% highlight html %}
+```html
 <a href="#" class="btn btn-success">Success Button</a>
-{% endhighlight %}
+```
 
 <div markdown="0"><a href="#" class="btn">Primary Button</a></div>
-<div markdown="0"><a href="#" class="btn btn-success">Success Button</a></div>
-<div markdown="0"><a href="#" class="btn btn-warning">Warning Button</a></div>
-<div markdown="0"><a href="#" class="btn btn-danger">Danger Button</a></div>
-<div markdown="0"><a href="#" class="btn btn-info">Info Button</a></div>
+<div markdown="0"><a href="#" class="btn btn--success">Success Button</a></div>
+<div markdown="0"><a href="#" class="btn btn--warning">Warning Button</a></div>
+<div markdown="0"><a href="#" class="btn btn--danger">Danger Button</a></div>
+<div markdown="0"><a href="#" class="btn btn--info">Info Button</a></div>
 
 ## Notices
 
