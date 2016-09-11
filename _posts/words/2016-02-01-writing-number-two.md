@@ -3,7 +3,6 @@ layout: archive
 title: "Writing Number Two"
 excerpt: &excerpt "I wrote this."
 modified:
-category: words
 tags: [thoughts]
 fullwidth: true
 featured: 
