@@ -170,7 +170,7 @@ defaults:
       category: portfolio
       author_profile: false
       share: true
-      breadcrumbs:
+      breadcrumbs: true
         - label: "Portfolio"
           url: /portfolio/
       
@@ -183,7 +183,7 @@ defaults:
       category: words
       author_profile: true
       read_time: true
-      breadcrumbs:
+      breadcrumbs: true
         - label: "Words"
           url: /words/
           
@@ -196,7 +196,7 @@ defaults:
       category: reads
       author_profile: true
       read_time: true
-      breadcrumbs:
+      breadcrumbs: true
         - label: "Reads"
           url: /reads/
       
@@ -208,7 +208,7 @@ defaults:
       layout: article
       category: discoveries
       author_profile: true
-      breadcrumbs:
+      breadcrumbs: false
         - label: "Discoveries"
           url: /discoveries/
 
