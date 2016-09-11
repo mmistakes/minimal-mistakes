@@ -7,4 +7,4 @@ main:
     url: /
 	
   - title: "Sample Posts"
-	url: /year-archive/
+    url: /year-archive/
