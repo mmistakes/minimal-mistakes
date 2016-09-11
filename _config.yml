@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "No Security"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "offensive"
+description              : "Ruby & UNix &Linux &WEB Security."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -77,9 +77,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "offensive"
   avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
+  bio              : "404 Not Found"
   location         : "Somewhere"
   email            :
   uri              :
@@ -89,7 +89,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : ”offensive”
   google_plus      :
   keybase          :
   instagram        :
@@ -161,7 +161,18 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
 # Sass/SCSS
 sass:
   sass_dir: _sass
