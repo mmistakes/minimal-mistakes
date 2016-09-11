@@ -191,7 +191,7 @@ defaults:
       path: _posts/reads
       type: posts
     values:
-      layout: article
+      layout: single # ?????
       category: reads
       author_profile: true
       breadcrumbs:
