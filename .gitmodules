@@ -1,0 +1,3 @@
+[submodule "made-mistakes-images"]
+	path = made-mistakes-images
+	url = https://github.com/mmistakes/made-mistakes-images
