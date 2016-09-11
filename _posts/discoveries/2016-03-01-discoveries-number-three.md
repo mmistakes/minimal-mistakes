@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "Writing Number Three"
-excerpt: &excerpt "I wrote this."
+title: "discoveries Number Three"
+excerpt: &excerpt "I discovered this."
 modified:
 tags: [thoughts]
 fullwidth: true
