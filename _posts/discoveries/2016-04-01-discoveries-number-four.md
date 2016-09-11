@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Writing Number Four"
+title: "discoveries Number Four"
 excerpt: &excerpt "I wrote this."
 modified:
 category: discoveries
