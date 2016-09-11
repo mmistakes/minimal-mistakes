@@ -3,6 +3,7 @@ layout: archive
 title: "Hello World - Writes"
 excerpt: &excerpt "Here are my thoughts."
 modified: 2016-09-10
+category: writes
 tags: [book notes]
 fullwidth: true
 featured: 
