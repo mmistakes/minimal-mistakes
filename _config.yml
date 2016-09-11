@@ -182,6 +182,7 @@ defaults:
       layout: article
       category: words
       author_profile: true
+      read_time: true
       breadcrumbs:
         - label: "Words"
           url: /words/
@@ -194,6 +195,7 @@ defaults:
       layout: article # ?????
       category: reads
       author_profile: true
+      read_time: true
       breadcrumbs:
         - label: "Reads"
           url: /reads/
