@@ -1,6 +1,6 @@
 ---
 layout: archive
-permalink: /portfolio/:title/
+# permalink: /portfolio/:title/
 title: "Sample Two"
 excerpt: &excerpt "Gallery of mini watercolor portraits painted at really small sizes."
 modified:
