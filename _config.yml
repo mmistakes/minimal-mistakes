@@ -147,26 +147,65 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 #     permalink: /:collection/:path/
 
 
+# Front matter defaults
 defaults:
   # _posts
+#  - scope:
+#      path: ""
+#      type: posts
+#    values:
+#      layout: single
+#      author_profile: true
+#      read_time: true
+#      comments: true
+#      share: true
+#      related: true
+      
+  # Portfolio
   - scope:
-      path: ""
+      path: _posts/portfolio
       type: posts
     values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
+      layout: single # ?????
+      category: portfolio
       author_profile: false
       share: true
+      breadcrumbs:
+        - label: "Portfolio"
+          url: /portfolio/
+      
+  # Words
+  - scope:
+      path: _posts/words
+      type: posts
+    values:
+      layout: article
+      category: words
+      breadcrumbs:
+        - label: "Words"
+          url: /words/
+          
+  # Reads
+  - scope:
+      path: _posts/reads
+      type: posts
+    values:
+      layout: article
+      category: reads
+      breadcrumbs:
+        - label: "Reads"
+          url: /reads/
+      
+  # Discoveries
+  - scope:
+      path: _posts/discoveries
+      type: posts
+    values:
+      layout: article
+      category: discoveries
+      breadcrumbs:
+        - label: "Discoveries"
+          url: /discoveries/
 
 
 # Conversion
