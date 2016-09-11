@@ -17,6 +17,6 @@ feature:
 
 {% for post in site.categories.reads %}
   {% if post.featured != true %}
-  {% include archive-single.html %}
+  {% include archive__item.html %}
   {% endif %}
 {% endfor %}
