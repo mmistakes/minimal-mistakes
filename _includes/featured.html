@@ -1,0 +1,24 @@
+<div class="container featured">
+  <h3 class="tile__header">{% if page.feature.headline %}{{ page.feature.headline }}{% else %}Featured Posts{% endif %}</h3>
+  <div class="tiles">
+    {% assign features = site.categories[page.feature.category] | where:"featured", true %}
+    {% for post in features limit:3 %}
+      <article class="tile__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <meta itemprop="text" content="{{ post.excerpt | strip_html }}">
+        <a href="{{ site.url }}{{ post.url }}">
+          <img src="{{ site.url }}/assets/images/{% if post.image.teaser %}{{ post.image.teaser }}{% else %}{{ site.teaser }}{% endif %}" itemprop="image" alt="{{ post.title }}">
+          {% if post.categories contains 'mastering-paper' %}
+            <h3 class="tile__title" itemprop="headline">{{ post.title | markdownify | remove: '<p>' | remove: '</p>' | remove: 'Mastering Paper by FiftyThree: ' | remove: 'Mastering Paper by 53: ' | remove: ' with Paper by 53' }}</h3>
+          {% else %}
+            <h3 class="tile__title" itemprop="headline">{{ post.title | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
+          {% endif %}
+          {% assign readtime = post.content | strip_html | number_of_words | divided_by:site.words_per_minute %}
+          <span class="tile__item-time"><svg class="icon"><use xlink:href="#icon-stopwatch"></use></svg> {% if readtime <= 1 %}1{% else %}{{ readtime }}{% endif %} min read</span>
+        </a>
+        {% if post.work %}
+          <span class="tile__category">{{ post.work }}</span>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+</div>
