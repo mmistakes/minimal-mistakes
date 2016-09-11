@@ -1,14 +1,14 @@
 # main links links
 main:
   - title: "Words"
-    url: ../words
+    url: /words
 
   - title: "Reads"
-    url: ../reads
+    url: /reads
     
   - title: "Portfolio"
-    url: ../portfolio
+    url: /portfolio
   
   - title: "Discoveries"
-    url: ../discoveries
+    url: /discoveries
   
