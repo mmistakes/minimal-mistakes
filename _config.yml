@@ -141,10 +141,10 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-collections:
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
+# collections:
+#   portfolio:
+#     output: true
+#     permalink: /:collection/:path/
 
 
 defaults:
