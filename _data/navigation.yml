@@ -5,10 +5,10 @@ main:
 
   - title: "Reads"
     url: /reads
-    
-  - title: "Portfolio"
-    url: /portfolio
   
   - title: "Discoveries"
     url: /discoveries
-  
+    
+  - title: "Portfolio"
+    url: /portfolio
+    
