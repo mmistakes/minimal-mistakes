@@ -1,7 +1,10 @@
 # main links links
 main:
-  - title: "Sample Navigation Link"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/navigation/
+  - title: "Year"
+    url: /year-archive/
+    
+  - title: "Ruby"
+    url: /404/
 
-  - title: "Sample Navigation Link 2"
+  - title: "Web"
     url: /
