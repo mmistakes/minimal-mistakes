@@ -1,0 +1,38 @@
+---
+---
+
+/*
+ *    Minimal Mistakes Jekyll Theme
+ *
+ *  - Michael Rose
+ *  - mademistakes.com
+ *  - https://twitter.com/mmistakes
+ *
+*/
+
+// ------------------------------------------------------------
+// Jekyll and Sass Variable Integrations
+// ------------------------------------------------------------
+
+  //
+  // This section binds the Jekyll and Sass
+  // variable integrations. The binding allows
+  // values specified in the _config.yml to be
+  // used in Liquid templates and the Sass files.
+  //
+  // $variableName: {{ site.config.property }};
+  //
+
+// ------------------------------------------------------------
+// Customizations
+// ------------------------------------------------------------
+
+  // Copy variables from `_variables.scss` to here to
+  // override default values without modifying source files.
+
+// ------------------------------------------------------------
+// Load Stylesheets
+// ------------------------------------------------------------
+
+  // Loads the main default theme stylesheets.
+  @import "main";
