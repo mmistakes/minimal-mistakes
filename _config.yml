@@ -169,6 +169,7 @@ defaults:
       layout: article # ?????
       category: portfolio
       author_profile: false
+      read_time: true
       share: true
       breadcrumbs: true
         - label: "Portfolio"
@@ -208,6 +209,7 @@ defaults:
       layout: article
       category: discoveries
       author_profile: true
+      read_time: true
       breadcrumbs: false
         - label: "Discoveries"
           url: /discoveries/
