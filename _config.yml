@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Ruby & UNix &Linux &WEB Security "
+title                    : "我考，这是个安全博客"
 title_separator          : "-"
 name                     : "offensive"
-description              : "An amazing website."
+description              : "Ruby & UNix &Linux &WEB Security."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
