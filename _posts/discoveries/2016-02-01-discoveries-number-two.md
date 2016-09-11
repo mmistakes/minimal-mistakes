@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Writing Number Two"
+title: "discoveries Number Two"
 excerpt: &excerpt "I wrote this."
 modified:
 tags: [thoughts]
