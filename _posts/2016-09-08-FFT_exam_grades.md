@@ -3,11 +3,11 @@ title: "The Fast and the Furiously Frugal"
 author: matt_gregory
 comments: yes
 date: '2016-09-08'
-modified: 2016-09-10
+modified: 2016-09-11
 layout: post
 excerpt: "Quick and easy classification"
 published: true
-status: publish
+status: processed
 tags:
 - Classification
 - Decision trees
@@ -20,11 +20,12 @@ categories: Rstats
  
 ## Fast and frugal trees
  
-I've praised the utility of decision trees in other scenarios especially where accountability and transparency of decision making is important. Here we explore why decision trees are a good introduction to Machine Learning and its ability to spot patterns in data providing insight. Decision trees are arguably easier to interpret and more inline with human thinking than some other ML methods, thus we write a post here to using a fast and frugal tree method, providing a quick solution to a classification problem.
+I've praised the utility of decision trees in other scenarios especially where accountability and transparency of decision making is important. Here we explore why decision trees are a good introduction to Machine Learning and its ability to spot patterns in data providing insight.
+ Decision trees are arguably easier to interpret and more inline with human thinking than some other ML methods, thus we write a post here to use a fast and frugal tree method, providing a quick solution to a classification problem.
  
-Although the comparison is slightly contrived, in the [blog post](https://www.r-bloggers.com/making-fast-good-decisions-with-the-fftrees-r-package/), which this post is based on, through comparing the interpretability and accessibility of a logistic regression versus a decision tree. I think this issue could be avoided by having a suitable front end, as most users will not need to see how the decision tool operates under the hood. However, this `FFTrees` package provides a user with everything they need in a few lines of code.  
- 
-It also comes with excellent vignettes and documentation using some classic ML datasets.
+This post is based on another [blog post](https://www.r-bloggers.com/making-fast-good-decisions-with-the-fftrees-r-package/), which makes a rther contrived comparison of a logistic regression and a decision tree.
+Arguable the difficulty of interpreation of logistic regression to the non-expert could be avoided by having a suitable front end, as many users will not need to see how the decision tool operates under the hood.
+However, the `FFTrees` package provides a user with everything they need in a few lines of code, and comes with excellent vignettes and documentation using some classic ML datasets.
  
 
  
@@ -66,7 +67,7 @@ data_train <- data_interest[1:350, ]
 data_test <- data_interest[351:395, ]
  
 #Build the classifier
-perf_fft <- fft(formula = final ~.,
+perf_fft <- FFTrees(formula = final ~.,
                          data = data_train, data.test = data_test)
 {% endhighlight %}
  
@@ -113,14 +114,14 @@ As you can see, the tree performed exceptionally well:  it made correct diagnose
  
 ## Viewing other trees
  
-Now, what if you want a tree that rarely misses true Fail cases, at the cost of additional false alarms (those who would pass anyway)? As  Luan, Schooler, & Gigerenzer (2011) have shown, you can easily shift the balance of errors in a fast and frugal tree by adjusting the decisions it makes at each level of a tree. The 'fft' function automatically builds several versions of the same general tree that make different error trade-offs. We can see the performance of each of these trees in the bottom-right ROC curve. Looking at the ROC curve, we can see that tree number 3 has a very high specificity, but a smaller hit-rate compared to tree number 4. We can look at this tree by adding the which.tree = 3 argument to 'plot()'. As teachers who are concerned that every-child matters we may prefer to err on the side of caution, depsite it adding expense (more teachers to help out) and wasting the time of some students.
+Now, what if you want a tree that rarely misses true Fail cases, at the cost of additional false alarms (those who would pass anyway)? As  Luan, Schooler, & Gigerenzer (2011) have shown, you can easily shift the balance of errors in a fast and frugal tree by adjusting the decisions it makes at each level of a tree. The `FFTrees` function automatically builds several versions of the same general tree that make different error trade-offs. We can see the performance of each of these trees in the bottom-right ROC curve. Looking at the ROC curve, we can see that tree number 3 has a very high specificity, but a smaller hit-rate compared to tree number 4. We can look at this tree by adding the `tree = 3` argument to `plot()`. As teachers who are concerned that every-child matters we may prefer to err on the side of caution, depsite it adding expense (more teachers to help out) and wasting the time of some students.
  
 
 {% highlight r %}
 plot(perf_fft, 
      main = "End of year maths exam performance FFT", 
      decision.names = c("Fail", "Pass"),
-     which.tree = 3)
+     tree = 3)
 {% endhighlight %}
 
 ![plot of chunk 2016-09-08_FFTb](/figures/2016-09-08_FFTb-1.svg)
@@ -139,7 +140,7 @@ sessionInfo()
 
 
 {% highlight text %}
-## R version 3.2.2 (2015-08-14)
+## R version 3.3.1 (2016-06-21)
 ## Platform: x86_64-pc-linux-gnu (64-bit)
 ## Running under: Ubuntu 14.04.5 LTS
 ## 
@@ -152,20 +153,18 @@ sessionInfo()
 ## [11] LC_MEASUREMENT=en_GB.UTF-8 LC_IDENTIFICATION=C       
 ## 
 ## attached base packages:
-## [1] stats     graphics  grDevices utils     datasets  methods   base     
+## [1] stats     graphics  grDevices utils     datasets  base     
 ## 
 ## other attached packages:
-## [1] FFTrees_1.1.6        dplyr_0.5.0          testthat_0.11.0.9000
-## [4] knitr_1.13          
+## [1] FFTrees_1.1.6 dplyr_0.4.3  
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] Rcpp_0.12.5          circlize_0.3.8       digest_0.6.9        
-##  [4] crayon_1.3.1         assertthat_0.1       grid_3.2.2          
-##  [7] R6_2.1.2             DBI_0.4-1            formatR_1.2.1       
-## [10] magrittr_1.5         evaluate_0.8         GlobalOptions_0.0.10
-## [13] stringi_1.1.1        lazyeval_0.2.0       rpart_4.1-10        
-## [16] tools_3.2.2          stringr_1.0.0        rsconnect_0.3.79    
-## [19] colorspace_1.2-6     shape_1.4.2          memoise_1.0.0       
-## [22] tibble_1.0
+##  [1] Rcpp_0.12.5          circlize_0.3.8       rmd2md_0.1.0        
+##  [4] assertthat_0.1       grid_3.3.1           R6_2.1.2            
+##  [7] DBI_0.4-1            formatR_1.4          magrittr_1.5        
+## [10] evaluate_0.9         GlobalOptions_0.0.10 stringi_1.1.1       
+## [13] lazyeval_0.2.0       rpart_4.1-10         tools_3.3.1         
+## [16] stringr_1.0.0        parallel_3.3.1       colorspace_1.2-6    
+## [19] shape_1.4.2          knitr_1.13.1         methods_3.3.1
 {% endhighlight %}
  
