@@ -3,7 +3,6 @@ layout: archive
 title: "Hello World"
 excerpt: &excerpt "I wrote this."
 modified:
-category: words
 tags: [hello world]
 fullwidth: true
 featured: 
