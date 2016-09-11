@@ -167,7 +167,7 @@ defaults:
       path: _posts/portfolio
       type: posts
     values:
-      layout: article # ?????
+      layout: article
       category: portfolio
       author_profile: false
       read_time: true
@@ -181,10 +181,11 @@ defaults:
       path: _posts/words
       type: posts
     values:
-      layout: article
+      layout: single
       category: words
       author_profile: true
       read_time: true
+      share: true
       breadcrumbs: true
         - label: "Words"
           url: /words/
@@ -194,10 +195,11 @@ defaults:
       path: _posts/reads
       type: posts
     values:
-      layout: article # ?????
+      layout: single
       category: reads
       author_profile: true
       read_time: true
+      share: true
       breadcrumbs: true
         - label: "Reads"
           url: /reads/
@@ -207,10 +209,11 @@ defaults:
       path: _posts/discoveries
       type: posts
     values:
-      layout: article
+      layout: single
       category: discoveries
       author_profile: true
       read_time: true
+      share: true
       breadcrumbs: false
         - label: "Discoveries"
           url: /discoveries/
