@@ -11,9 +11,9 @@ title                    : "boodooldee"
 title_separator          : "-"
 name                     : "Tod Hilton"
 description              : "Writing : Technology : Photography"
-url                      : https://tod-hilton.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://boodooldee.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : tod-hilton/tod-hilton.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
