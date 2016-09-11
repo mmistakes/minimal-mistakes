@@ -13,7 +13,7 @@ feature:
   category: reads
 ---
 
-{{ page.excerpt | markdownify }}
+# {{ page.excerpt | markdownify }}
 
 {% for post in site.categories.reads %}
   {% if post.featured != true %}
