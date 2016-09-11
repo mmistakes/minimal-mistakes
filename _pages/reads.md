@@ -13,8 +13,6 @@ feature:
   category: reads
 ---
 
-# {{ page.excerpt | markdownify }}
-
 {% for post in site.categories.reads %}
   {% if post.featured != true %}
   {% include archive__item.html %}
