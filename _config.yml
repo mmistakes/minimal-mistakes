@@ -14,7 +14,7 @@ description              : "我的个人博客，记录并分享自己学习的�
 url                      : "https://booksmile.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : booksmile/booksmile # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser                   : "beauty-girl.jpg"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
