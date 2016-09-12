@@ -160,8 +160,10 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
-  syntax_highlighter_opts: {line_numbers:1}
-
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+      start_line: 1
 
 # Sass/SCSS
 sass:
