@@ -79,7 +79,7 @@ analytics:
 author:
   name             : "Shuxiao Wang"
   avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
+  bio              : "后台开发工程师"
   location         : "GuangZhou, China"
   email            : "shuxiao9001@gmail.com"
   uri              :
@@ -97,7 +97,7 @@ author:
   linkedin         :
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    : http://stackoverflow.com/users/6822625/shuxiao-wang
   steam            :
   tumblr           :
   twitter          :
