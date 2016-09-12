@@ -1,7 +1,7 @@
 # main links links
 main:
   - title: "Home"
-    url: https://booksmile.github.io
+    url: /
 
   - title: "Categories"
     url: /categories/
