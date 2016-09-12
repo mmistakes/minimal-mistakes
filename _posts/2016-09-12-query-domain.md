@@ -1,12 +1,12 @@
 ---
-title:  "子域名查询Tools"
+title:  "Domain Query Tools"
 categories: 
   - Ruby
 tags:
   - ruby
 ---
 
-调用了ilinks,360的查询接口
+ilinks,360webscan Interface
 
 ```ruby
 
