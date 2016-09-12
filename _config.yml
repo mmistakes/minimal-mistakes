@@ -11,7 +11,8 @@ title                    : "boodooldee"
 title_separator          : "-"
 name                     : "Tod Hilton"
 description              : "Writing : Technology : Photography"
-url                      : http://boodooldee.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : http://127.0.0.1:4000
+#url                      : http://boodooldee.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : tod-hilton/tod-hilton.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -151,16 +152,16 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 # Front matter defaults
 defaults:
   # _posts
-#  - scope:
-#      path: ""
-#      type: posts
-#    values:
-#      layout: single
-#      author_profile: true
-#      read_time: true
-#      comments: true
-#      share: true
-#      related: true
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
       
   # Portfolio
   - scope:

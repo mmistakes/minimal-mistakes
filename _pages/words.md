@@ -4,6 +4,7 @@ permalink: /words/
 title: "Words Written"
 modified: 2016-02-26T10:36:43-05:00
 excerpt: "Basically, a blog."
+author_profile: true
 feature:
   visible: false
   headline: "Featured Words"

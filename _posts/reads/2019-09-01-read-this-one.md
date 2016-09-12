@@ -5,8 +5,8 @@ excerpt: &excerpt "I read this book and here are my thoughts."
 modified:
 category: reads
 image: 
-  teaser: tiny-paintings-teaser.jpg
-  thumb: tiny-paintings-150.jpg
+  teaser: DreamYear_BenArment.jpg
+  thumb: DreamYear_BenArment_150.jpg
 tags: [book notes]
 fullwidth: true
 featured: 
