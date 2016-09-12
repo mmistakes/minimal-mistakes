@@ -1,0 +1,27 @@
+# base.yml
+
+includes: [base]
+machines:
+  base:
+    box: ubuntu/trusty64
+    abstract: true
+    ssh: {shell: bash -c 'BASH_ENV=/etc/profile exec bash'}
+    providers:
+      virtualbox: {
+        cpus: 1, memory: 1024, customize: {groups: /_vagrant}
+      }
+
+    provisions:
+
+      - kind: shell
+        name: basics
+        privileged: true
+        inline: |
+          apt-get update
+          apt-get install -y git gnupg
+
+      - kind: shell
+        name: setpath
+        privileged: false
+        inline: |
+          echo 'export PATH="$PATH:."' >> ~/.bashrc
