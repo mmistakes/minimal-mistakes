@@ -1,0 +1,8 @@
+# boost.yml
+
+machines:
+  base:
+    providers: 
+      virtualbox: {
+        cpus: 2, memory: 4096
+      }

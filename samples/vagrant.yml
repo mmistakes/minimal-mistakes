@@ -1,0 +1,19 @@
+# vagrant.yml
+
+includes:
+  - base
+  - webserver
+  - php
+  - ruby
+  - node
+  - binding
+  - boost
+
+machines:
+  main:
+    inherit: base
+    includes:
+      - webserver
+      - php
+      - ruby
+      - node
