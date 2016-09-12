@@ -1,10 +1,10 @@
 # main links links
 main:
-  - title: "Home"
+  - title: "首页"
     url: /
 
-  - title: "Categories"
+  - title: "文章分类"
     url: /categories/
     
-  - title: "Tags"
+  - title: "文章标签"
     url: /tags/
