@@ -1,0 +1,11 @@
+# webserver.yml
+
+mixins:
+  webserver:
+    provisions:
+      - kind: shell
+        name: webserver
+        args: [git, curl, lamp-server^]
+        inline: |
+          apt-get update && apt-get upgrade
+          apt-get install -y $@

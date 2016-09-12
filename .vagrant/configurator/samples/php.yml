@@ -1,0 +1,19 @@
+# php.yml
+
+includes: [webserver]
+mixins:
+  php:
+    includes: [webserver]
+    provisions:
+
+      - kind: shell
+        name: php
+        args: [php-pear, php5-cli]
+        inline: |
+          apt-get update
+          apt-get install -y $@
+
+      - kind: shell
+        name: composer
+        inline: |
+          curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer

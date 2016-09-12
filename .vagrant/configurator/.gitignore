@@ -1,0 +1,5 @@
+.vagrant
+*.box
+vagrant.yml
+vagrant.json
+!samples/*
