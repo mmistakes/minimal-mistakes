@@ -1,6 +1,5 @@
 ---
-layout: archive
-title: "Wrote this three"
+title: "Read this three"
 excerpt: &excerpt "I read this book and REALLY like it! Here are my thoughts."
 modified:
 category: reads

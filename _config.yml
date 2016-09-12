@@ -168,7 +168,7 @@ defaults:
       path: _posts/portfolio
       type: posts
     values:
-      layout: article
+      layout: single
       category: portfolio
       author_profile: false
       read_time: true

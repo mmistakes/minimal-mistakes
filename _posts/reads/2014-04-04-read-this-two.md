@@ -1,5 +1,4 @@
 ---
-layout: archive
 title: "Read This Two"
 excerpt: &excerpt "I read this book and here are my thoughts."
 modified:
