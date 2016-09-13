@@ -11,4 +11,4 @@ feature:
   category: words
 ---
 
-{{ page.excerpt }}
+{{ page.excerpt | markdownify }}
