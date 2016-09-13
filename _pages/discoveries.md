@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /discoveries/
-title: "Things Discovered"
+title: "Discoveries"
 excerpt: "Curated selection of things I've discovered on this vast wasteland we affectionately call _the interwebs_. Always updated occasionally."
 ads: false
 fullwidth: true
