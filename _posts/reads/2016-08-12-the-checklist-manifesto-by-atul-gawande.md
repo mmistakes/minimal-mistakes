@@ -22,8 +22,9 @@ protocols and checklists.
 
 Gawande does an excellent job of arguing the opposite. While checklists 
 cannot be living, breathing heroes, they can be the means by which any 
-person (or team of people) attains the status. As he says, "maybe our 
-idea of heroism needs updating."
+person (or team of people) attains the status. As he says, 
+
+> ...maybe our idea of heroism needs updating.
 
 Checklists "are not comprehensive how-to guides…. They are quick and 
 simple tools aimed to buttress the skills of expert professionals."
