@@ -7,15 +7,15 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "Aditya Dharne"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : "Aditya Dharne"
+description              : "All about me and my work"
+url                      : "http://www.dharne.me"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
@@ -64,8 +64,8 @@ og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  type                   : Person
+  name                   : Aditya Dharne
   links: # An array of links to social media profiles
 
 # Analytics
@@ -77,30 +77,30 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  name             : "Aditya Dharne"
+  avatar           : "aditya.jpg"
+  bio              : "Software Developer"
+  location         : "Washington DC"
+  email            : "mailto: aditya@dharne.me"
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "adityadharne"
   foursquare       :
-  github           :
-  google_plus      :
+  github           : "adityadharne"
+  google_plus      : 
   keybase          :
-  instagram        :
+  instagram        : 
   lastfm           :
-  linkedin         :
+  linkedin         : "adityadharne"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "adityadharne"
   vine             :
   weibo            :
   xing             :
