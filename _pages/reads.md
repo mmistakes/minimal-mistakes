@@ -2,7 +2,7 @@
 layout: archive
 permalink: /reads/
 title: "Reads"
-excerpt: "I love to read. Here are some thoughts on books I've read."
+excerpt: "Books I've read. Not quite reviews, more like thoughts and notes."
 fullwidth: true
 author_profile: true
 ---
@@ -19,7 +19,5 @@ author_profile: true
   {% endif %}
   {% include archive-single.html %}
 {% endfor %}
-
-{% include paginator.html %}
 </div>
 
