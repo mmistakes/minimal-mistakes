@@ -1,9 +1,9 @@
 ---
 layout: archive
 permalink: /portfolio/
-title: "Portfolio"
+title: "Portfolios"
 modified: 2016-09-10T16:38:17-05:00
-excerpt: "A selection of things I've written and photographed."
+excerpt: "Selection of my photography and technical writing."
 ads: false
 fullwidth: true
 author_profile: true
