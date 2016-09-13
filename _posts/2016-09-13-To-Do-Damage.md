@@ -74,7 +74,7 @@ Given this environment what I have to deal with is:
 
 * Many projects running on the same code base concurrently
 * Large distributed teams, often many teams on the same project
-* Developers in a different location from testers and management let
+* Developers in a different location from testers and management, let
   alone the people with domain knowledge
 * Teams of junior and inexperienced developers often writing code on
   code bases they've not worked on before
@@ -108,9 +108,10 @@ generating mechanism, firstly, lucky you, secondly, the list above may
 seem mad.
 
 However, if you're a company selling outsourced IT this makes
-sense. All the above are driven by you need to reduce costs year on
-year driven by your client while delivering more and more demands. As
-generally the measures the client applies to you are:
+sense. All the above are driven by your need to reduce costs 'year on
+year' driven by your client while delivering more and more demands.
+
+Generally the measures the client applies to you are:
 
 1. Deliver x requirements by y
 2. Provide n developers for z cost
@@ -148,16 +149,16 @@ use TDD and enforcing it's use initially gives you a number of things:
 * Code gets written to be at least minimally testable (this
   inherently makes each method/function smaller and reduces it's
   responsibilities)
-* Although developers may still not know what good code looks like
+* Although developers may still not know what good code looks like,
   writing tests and using these as a vehicle for communication
-  means a senior developer who does know can start to teach
+  means a senior developer, who does know, can start to teach
 * Focusing design on what conditions need to be tested gives some
   minimal context if only in the micro
-* Developers are educated that there are other techniques to
+* Developers are educated that there are techniques to
   software development other than just syntax and cut and paste
   coding
 * Developers who don't have even minimal potential to learn new
-  techniques are identified and can be retrained or 'weeded out'
+  techniques are identified and can be re-trained or 'weeded out'
 * Developers learn discipline
 
 # Teach Development Dialect #
@@ -183,7 +184,7 @@ organisation that:
 * cheap development resources are usually a false economy
 * you need to measure the 'value' of the software not just it's 'cost'
 * good tests and design are rarely wasted effort
-* focus of good development disciplines actually improve productivity
+* focus on good development disciplines actually improves productivity
 
 TDD is one tool in this education process. It's not without it's
 issues. Like all good tools, it has sharp edges and if you misuse
