@@ -1,7 +1,7 @@
 # To Do Damage? (TDD) #
 
 My last post
-([TDD - That's Design Done](http://devcycle.co.uk/TDD-thats-design-done/))
+([TDD - That's Design Done](http://devcycle.co.uk/TDD-Thats-Design-Done/))
 took a light hearted look at the pro's and con's of Test Driven
 Development done. This post challenges the politics around TDD.
 
