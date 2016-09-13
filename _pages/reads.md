@@ -9,6 +9,8 @@ author_profile: true
 
 {{ page.excerpt | markdownify }}
 
+---
+
 <div class="grid__wrapper">
 {% include base_path %}
 {% capture written_year %}'None'{% endcapture %}
