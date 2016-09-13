@@ -1,0 +1,8 @@
+{% include base_path
+  %}{% if include.path contains "://" or include.path contains "data:" or include.path contains "javascript:" %}{{
+    include.path
+  }}{% elsif include.image %}{{
+    include.path | prepend: "/images/" | prepend: base_path
+  }}{% else %}{{
+    include.path | prepend: base_path
+  }}{% endif %}
