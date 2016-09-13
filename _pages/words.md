@@ -3,7 +3,7 @@ layout: archive
 permalink: /words/
 title: "Words Written"
 modified: 2016-02-26T10:36:43-05:00
-excerpt: "Basically, a blog."
+excerpt: "Words I've written. Topics ranging from parenting to technology to career to just about anything."
 author_profile: true
 feature:
   visible: false
@@ -11,4 +11,4 @@ feature:
   category: words
 ---
 
-boo 
+{{ page.excerpt }}
