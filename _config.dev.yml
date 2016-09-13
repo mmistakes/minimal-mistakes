@@ -11,7 +11,7 @@ title                    : "ShuxiaoWang的博客专栏"
 title_separator          : "-"
 name                     : "Shuxiao Wang"
 description              : "我的个人博客，记录并分享自己学习的点点滴滴"
-url                      : "https://booksmile.github.io"
+url                      : "http://172.25.34.50:4000"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : booksmile/booksmile # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "beauty-girl.jpg"
@@ -24,7 +24,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: false 
+      author_profile: true
       read_time: true
       comments: true
       share: true
