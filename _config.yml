@@ -55,9 +55,9 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :www.twitter.com/adityadharne
+  username               :
 facebook:
-  username               :www.facebook.com/adityadharne
+  username               :
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
