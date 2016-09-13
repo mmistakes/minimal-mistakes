@@ -1,0 +1,41 @@
+# jekyll.yml
+
+includes: [ruby, node]
+mixins:
+  jekyll:
+    includes: [ruby, node]
+    provisions:
+
+      - kind: shell
+        name: jekyll-requires
+        privileged: false
+        args: [jekyll]
+        inline: |
+          source ~/.rvm/scripts/rvm
+          rvm use ruby
+          gem install $@
+
+      - kind: shell
+        name: jekyll
+        privileged: false
+        inline: |
+          cat - << 'EOF' >> ~/.bashrc
+            jekyllrb() {
+              local command=$1; shift
+              local -a configs=()
+              for f in _config.yml _config.*.yml ~/_config.*.yml; do
+                if [[ -f "$f" ]]; then configs+=("$f"); fi
+              done
+              rvm use ruby
+              if [[ $command == 'serve' || $command == 'server' || $command == 's' ]]; then
+                bundle exec jekyll serve --config $(echo ${configs[@]} | tr [:blank:] ',') --host $IP --increment $@
+              elif [[ $command == 'build' ]]; then
+                bundle exec jekyll build --config $(echo ${configs[@]} | tr [:blank:] ',') --increment $@
+              else
+                bundle exec jekyll $command $@ || jekyll $command $@
+              fi
+            }
+            export IP=$(ip addr show dev eth1 | grep -o 'inet [0-9.]*' | sed 's/inet //')
+            echo "url: 'http://$IP:4000'" > ~/_config.ip.yml
+            export -f jekyllrb
+          EOF

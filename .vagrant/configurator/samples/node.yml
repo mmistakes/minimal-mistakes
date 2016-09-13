@@ -1,0 +1,32 @@
+# node.yml
+
+mixins:
+  node:
+    provisions:
+
+      - kind: shell
+        name: node
+        privileged: false
+        inline: |
+          download_nvm() {
+            git clone https://github.com/creationix/nvm.git "$NVM_DIR"; cd "$NVM_DIR"
+            git checkout `git describe --abbrev=0 --tags --match "v[0-9]*" origin`
+          }
+          config_environ() {
+            echo 'export NVM_DIR="'$NVM_DIR'"' >> ~/.bashrc
+            echo '[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"' >> ~/.bashrc
+          }
+          export NVM_DIR="$HOME/.nvm" \
+              && download_nvm \
+              && source "$NVM_DIR/nvm.sh" \
+              && nvm install node \
+              && config_environ
+
+      - kind: shell
+        name: npm-custom
+        privileged: false
+        inline: |
+          cat - <<'EOF'>> ~/.bashrc
+            export PATH="$PATH:$(echo ~/vagrant_root/node_modules/*/bin | tr [:blank:] ':')"
+            alias npm="npm --no-bin-links"
+          EOF

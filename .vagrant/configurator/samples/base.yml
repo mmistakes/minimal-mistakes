@@ -1,0 +1,17 @@
+# base.yml
+
+machines:
+  base:
+    box: ubuntu/trusty64
+    abstract: true
+    ssh: {shell: bash -c 'BASH_ENV=/etc/profile exec bash'}
+    providers:
+      virtualbox: {
+        cpus: 1, memory: 1024, customize: {groups: /_vagrant}
+      }
+    provisions:
+      - kind: shell
+        name: basic
+        inline: |
+          apt-get update
+          apt-get install -y git gnupg

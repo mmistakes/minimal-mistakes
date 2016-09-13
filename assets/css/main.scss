@@ -10,30 +10,29 @@
  *
 */
 
-@import "vendor/breakpoint/breakpoint"; // media query mixins
-@import "variables";
-@import "mixins";
-@import "vendor/susy/susy";
+// ------------------------------------------------------------
+// Jekyll and Sass Variable Integrations
+// ------------------------------------------------------------
 
-@import "reset";
-@import "base";
+  //
+  // This section binds the Jekyll and Sass
+  // variable integrations. The binding allows
+  // values specified in the _config.yml to be
+  // used in Liquid templates and the Sass files.
+  //
+  // $variableName: {{ site.config.property }};
+  //
 
-@import "utilities";
-@import "animations";
-@import "tables";
-@import "buttons";
-@import "notices";
-@import "masthead";
-@import "navigation";
-@import "footer";
-@import "syntax";
+// ------------------------------------------------------------
+// Customizations
+// ------------------------------------------------------------
 
-@import "forms";
+  // Copy variables from `_variables.scss` to here to
+  // override default values without modifying source files.
 
-@import "page";
-@import "archive";
-@import "sidebar";
+// ------------------------------------------------------------
+// Load Stylesheets
+// ------------------------------------------------------------
 
-@import "vendor/font-awesome/font-awesome";
-@import "vendor/magnific-popup/magnific-popup";
-@import "print";
+  // Loads the main default theme stylesheets.
+  @import "minimal-mistakes";

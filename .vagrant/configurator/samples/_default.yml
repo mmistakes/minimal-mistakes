@@ -1,0 +1,21 @@
+# _default.yml
+#!! DO NOT EDIT OR REMOVE THIS FILE !!
+
+machines:
+  default:
+    box: ubuntu/trusty64
+    ssh: {shell: bash -c 'BASH_ENV=/etc/profile exec bash'}
+    providers:
+      virtualbox: {
+        cpus: 1, memory: 1024, customize: {groups: /_vagrant}
+      }
+
+    synced_folders:
+      - host: '.'
+        guest: /home/vagrant/vagrant_root
+        create: true
+
+    provisions:
+      - kind: shell
+        name: basics
+        inline: apt-get update

@@ -129,7 +129,6 @@ GEM
       ethon (>= 0.8.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    wdm (0.1.1)
 
 PLATFORMS
   ruby
@@ -137,7 +136,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  wdm (~> 0.1.0)
 
 BUNDLED WITH
-   1.12.5
+   1.13.0

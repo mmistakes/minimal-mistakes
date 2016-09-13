@@ -1,0 +1,12 @@
+# vagrant.yml
+
+includes:
+  - base
+  - jekyll
+  - binding
+  - boost
+
+machines:
+  main:
+    inherit: base
+    includes: [jekyll]

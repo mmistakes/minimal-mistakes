@@ -1,0 +1,5 @@
+ENV["VAGRANT_PROJECT_NAME"] = "your_project_name"
+ENV['VAGRANT_VAGRANTFILE'] = File.expand_path(__FILE__)
+ENV['VAGRANT_CONFIGS'] = ".vagrant/configurations/vagrant"
+
+load ".vagrant/configurator/Vagrantfile"

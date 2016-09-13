@@ -1,0 +1,12 @@
+# binding.yml
+
+includes: [base]
+machines:
+  base:
+    networks:
+      - kind: private_network
+        ip: 192.168.56.101
+    synced_folders:
+      - host: '.'
+        guest: /home/vagrant/vagrant_root
+        create: true
