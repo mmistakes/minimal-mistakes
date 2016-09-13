@@ -7,7 +7,7 @@ fullwidth: true
 author_profile: true
 ---
 
-{{ page.excerpt }}
+{{ page.excerpt | markdownify }}
 
 <div class="grid__wrapper">
 {% include base_path %}
