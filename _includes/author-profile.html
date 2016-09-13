@@ -7,9 +7,7 @@
 <div itemscope itemtype="http://schema.org/Person">
 
   <div class="author__avatar">
-    <img src="{% include url path=author.avatar image=true %}"
-         {% unless author.avatar contains "://" %}class="author__avatar"{% endunless %}
-         alt="{{ author.name }}">
+    <img src="{% include url path=author.avatar image=true %}" class="author__avatar" alt="{{ author.name }}">
   </div>
 
   <div class="author__content">
