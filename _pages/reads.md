@@ -2,13 +2,14 @@
 layout: archive
 permalink: /reads/
 title: "Reads"
-excerpt: "I love to read. And when a book strikes me, I like to put my thoughts down."
+excerpt: "I love to read. Here are some thoughts on books I've read."
 fullwidth: true
 author_profile: true
 ---
 
 {{ page.excerpt }}
 
+<div class="grid__wrapper">
 {% include base_path %}
 {% capture written_year %}'None'{% endcapture %}
 {% for post in site.categories.reads %}
@@ -16,5 +17,9 @@ author_profile: true
   {% if year != written_year %}
     {% capture written_year %}{{ year }}{% endcapture %}
   {% endif %}
-  {% include archive-single.html type="grid" %}
+  {% include archive-single.html %}
 {% endfor %}
+
+{% include paginator.html %}
+</div>
+

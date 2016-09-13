@@ -13,6 +13,8 @@ featured:
 ads: false
 ---
 
+[![Dream Year by Ben Arment](/images/cover_DreamYear_BenArment_150.jpg "Dream Year by Ben Arment"){: .align-right }](http://www.amazon.com/gp/product/159184794X)
+
 Currently in the middle of a career shift, I picked up this book looking to find 
 some encouragement and inspiration in dealing with the changes. While this was 
 plentiful, what struck me the most was how it made me look at my hobbies and other 
@@ -50,19 +52,20 @@ _Here are some key takeaways._
 
 ## Find the sweet spot ##
 
-> "Discovering your dream is about finding your sweet spot. It's where 
+> Discovering your dream is about finding your sweet spot. It's where 
 these four components &mdash; passion, demand, platform, and giftedness 
-&mdash; come together in one coordinated expression."
+&mdash; come together in one coordinated expression.
 
 I appreciate how Arment delves deep into each of these areas, helping 
 brainstorm ideas, challenge established perspectives, and provide 
 exercises to break through mental blocks. For example, he provides the 
 following suggestion for how to shift your perspective.
 
-> "To be original requires a new way of looking at your industry. 
+> To be original requires a new way of looking at your industry. 
 Rather than making lists of inspiration, trolling the Web, or copying 
 the ideas of other people &mdash; start with a list of rules. Identify the 
-conventions by which your industry operates. Then ask why those rules exist. And break them."
+conventions by which your industry operates. Then ask why those rules exist. 
+And break them.
 
 ## Work ##
 
@@ -76,11 +79,11 @@ that point in time.
 Success comes after many attempts. It usually takes years of trial 
 and error to find the right combination of things that work.
 
-> "Great business ideas come about because of course corrections and failed experiments."
+> Great business ideas come about because of course corrections and failed experiments.
 
 ## Solve a problem ##
 
-> "Your dream sells itself because it addresses a great need."
+> Your dream sells itself because it addresses a great need.
 
 ## Be everything for your dream ##
 
@@ -129,9 +132,9 @@ There are a hundred little things we do in a week's time that can be skipped
 altogether and our lives wouldn't change one bit. Find these things, stop 
 doing them and use that time to put in the work.
 
-> "If you still don't think you have the time, try this experiment: Take a 
+> If you still don't think you have the time, try this experiment: Take a 
 week to keep a detailed account of how you spend your time each day, hour 
-by hour. You'll be surprised by the results."
+by hour. You'll be surprised by the results.
 
 I've tried this exercise before and was shocked at how much time I was 
 spending on various things that didn't contribute to my long-term goals.
@@ -143,7 +146,7 @@ let them say no.
 
 ## Relationships ##
 
-> "Good relationships are the key to bringing dreams to life."
+> Good relationships are the key to bringing dreams to life.
 
 ## Conclusion ##
 
@@ -178,6 +181,6 @@ what he spent all those years helping others discover and turn into reality with
 
 __Update February 2016:__ _The [Dream Year](http://www.dreamyear.net/) site 
 no longer works, which I presume means the consulting company is now defunct 
-(I never intended to hire them anyway). Regardless, I think there is a lot of useful 
+(I never intended to hire them). Regardless, I think there is a lot of useful 
 information in his book for those who want to pursue their dream. In a nutshell, 
 make it one of your top priorities._ 
