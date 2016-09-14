@@ -1,14 +1,14 @@
 ---
 layout: archive
-permalink: /words/
-title: "Words"
+permalink: /technicalwriting/
+title: "Technical Writing"
 modified: 2016-02-26T10:36:43-05:00
-excerpt: "Getting the words out. My writings on topics ranging from parenting to technology to just about anything that pops into my head."
-author_profile: true
+excerpt: "I like to write. I like technology. I like to help. Technical writing combines those passions."
+author_profile: false
 feature:
   visible: false
-  headline: "Featured Words"
-  category: words
+  headline: "Featured works"
+  category: technicalwriting
 ---
 
 {{ page.excerpt | markdownify }}
@@ -18,7 +18,7 @@ feature:
 <div class="grid__wrapper">
 {% include base_path %}
 {% capture written_year %}'None'{% endcapture %}
-{% for post in site.categories.words %}
+{% for post in site.categories.technicalwriting %}
   {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
   {% if year != written_year %}
     {% capture written_year %}{{ year }}{% endcapture %}

@@ -163,19 +163,19 @@ defaults:
       share: true
       related: true
       
-  # Portfolio
+  # Portfolios
   - scope:
-      path: _posts/portfolio
+      path: _posts/portfolios
       type: posts
     values:
       layout: single
-      category: portfolio
+      category: portfolios
       author_profile: false
       read_time: true
       share: true
       breadcrumbs:
-        - label: "Portfolio"
-          url: /portfolio/
+        - label: "Portfolios"
+          url: /portfolios/
       
   # Words
   - scope:
