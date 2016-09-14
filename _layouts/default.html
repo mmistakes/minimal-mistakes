@@ -10,7 +10,7 @@
     {% include head/custom.html %}
   </head>
 
-  <body>
+  <body class="layout--{{ page.layout | default: layout.layout }}">
 
     {% include browser-upgrade.html %}
     {% include masthead.html %}
