@@ -68,7 +68,7 @@ to a 'systems integrator' and give them the problem of managing these
 awkward to deal with programmers.
 
 In a later post I'll challenge some of these assumptions but for now
-put yourself in the mid set of these businesses.
+put yourself in the mind set of these businesses.
 
 Given this environment what I have to deal with is:
 
