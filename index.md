@@ -78,6 +78,8 @@ The site is still under construction.
 
 {% include feature_row %}
 
+## Links to other sites
+[FishStats](http://www.FishStats.org) A collection of Shiny Apps and R packages developed by [Jim Thorson](https://www.researchgate.net/profile/James_Thorson) for spatio-temporal analysis of fish abundance, environmental impacts, and habitat assocation
 
 
 
