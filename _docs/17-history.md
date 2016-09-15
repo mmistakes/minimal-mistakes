@@ -4,8 +4,19 @@ permalink: /docs/history/
 excerpt: "Changelog of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2016-09-09T10:38:38-04:00
+modified: 2016-09-15T14:58:48-04:00
 ---
+
+## [3.4.7](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.7)
+
+### Enhancements
+
+- Add `layout` based and user-defined class names to `<body>` element for added CSS hooks. [#526](https://github.com/mmistakes/minimal-mistakes/pull/526)
+- Add simplified Chinese localized UI text. [#532](https://github.com/mmistakes/minimal-mistakes/pull/532)
+
+### Bug Fixes
+
+- Remove duplicate include of `base_path` in category-list.html [#522](https://github.com/mmistakes/minimal-mistakes/pull/522)
 
 ## [3.4.6](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.6)
 
