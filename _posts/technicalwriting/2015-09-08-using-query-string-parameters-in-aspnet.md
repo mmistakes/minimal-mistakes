@@ -1,7 +1,7 @@
 ---
 title: "Using Query String Parameters in ASP.NET"
 excerpt: &excerpt "Technical writing sample explaining the basic usage of 
-query string parameters usage in ASP.NET, including a code sample."
+query string parameters in ASP.NET, including a code sample."
 category: technicalwriting
 author_profile: false
 related: false
