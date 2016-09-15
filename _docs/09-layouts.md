@@ -7,7 +7,7 @@ single_layout_gallery:
     alt: "single layout with header example"
   - image_path: mm-layout-single-meta.png
     alt: "single layout with comments and related posts"
-modified: 2016-09-09T10:22:01-04:00
+modified: 2016-09-15T15:09:22-04:00
 ---
 
 {% include base_path %}
@@ -27,6 +27,36 @@ The base layout all other layouts inherit from. There's not much to this layout 
 
 **Note:** You won't ever assign this layout directly to a post or page. Instead all other layouts will build off of it by setting `layout: default` in their YAML Front Matter.
 {: .notice--warning}
+
+### Layout Based and User-Defined Classes
+
+Class names corresponding to each layout are automatically added to the `<body>` element eg. `<body class="layout--single">`.
+
+| layout | class name |
+| ------ | ---------- |
+| archive | `.layout--archive` |
+| archive-taxonomy | `.layout--archive-taxonomy` |
+| single | `.layout--single` |
+| splash | `.layout--splash` |
+
+Using YAML Front Matter you can also assign custom classes to target with CSS or JavaScript. Perfect for "art directed" posts or adding custom styles to specific pages.
+
+Example:
+
+```yaml
+---
+layout: splash
+classes:
+  - landing
+  - dark-theme
+---
+```
+
+Outputs:
+
+```html
+<body class="layout--splash landing dark-theme">
+```
 
 ## Compress Layout
 
