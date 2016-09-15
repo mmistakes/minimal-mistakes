@@ -52,6 +52,7 @@ In contrast to the previous section, the following webmail providers do not requ
 While these are easier to set up and provide basic security guarantees with OpenPGP, [some people don't consider this "end-to-end"](https://tonyarcieri.com/whats-wrong-with-webcrypto).
 
 * [Hushmail](https://www.hushmail.com/)
+* [Mailfence](https://www.mailfence.com/)
 * [ProtonMail](https://protonmail.com/)
 
 ## Project Missing?
