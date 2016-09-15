@@ -1,4 +1,4 @@
-# main links links
+# main links
 main:
   - title: "Words"
     url: /words
@@ -9,6 +9,9 @@ main:
   - title: "Discoveries"
     url: /discoveries
     
-  - title: "Portfolios"
-    url: /portfolios
+  - title: "Technical Writing"
+    url: /technicalwriting
+
+  - title: "Photography"
+    url: http://photos.todhilton.com
     

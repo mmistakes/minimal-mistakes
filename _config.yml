@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "boodooldee"
+title                    : "tod hilton"
 title_separator          : "-"
 name                     : "Tod Hilton"
 description              : "Writing : Technology : Photography"
@@ -78,7 +78,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Tod Hilton"
+  name             : 
   avatar           : "20141101-tod-profile.jpg"
   bio              : "Writing, technology, photography, & other stuff."
   location         : "Seattle, WA"
