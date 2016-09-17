@@ -1,9 +1,9 @@
 ---
 layout: archive
 permalink: /technicalwriting/
-title: "Technical Writing"
-modified: 2016-02-26T10:36:43-05:00
-excerpt: "I like to write. I like technology. I like to help. Technical writing combines those passions."
+title: "Portfolio"
+excerpt: "I like to write. I like technology. I like to help. Technical 
+writing combines those passions."
 author_profile: true
 feature:
   visible: false

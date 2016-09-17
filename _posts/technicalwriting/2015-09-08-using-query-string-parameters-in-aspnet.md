@@ -123,22 +123,22 @@ the query strings and submits a request to the business layer of your app.
 ## Code sample ##
 
 ```csharp
-private void CheckQueryStrings()
-{
-    if (!Request.QueryString.Count.Equals(0))   // line 3
-    {
-        string productName = Request.QueryString["product"];   // line 5
-        string warehouseLocation = Request.QueryString["location"];   // line 6
-        if (!string.IsNullOrEmpty(productName) && !string.IsNullOrEmpty(warehouseLocation))   // line 7
-        {
-            CheckAvailability(productName, warehouseLocation);   // line 9
-        }
-        else
-        {
-            MessageBox.Show("Please select a product and warehouse location.");   // line 13
-        }
-    }
-}
+1  private void CheckQueryStrings()
+2  {
+3      if (!Request.QueryString.Count.Equals(0))
+4      {
+5          string productName = Request.QueryString["product"];
+6          string warehouseLocation = Request.QueryString["location"];
+7          if (!string.IsNullOrEmpty(productName) && !string.IsNullOrEmpty(warehouseLocation))
+8          {
+9              CheckAvailability(productName, warehouseLocation);
+10         }
+11         else
+12         {
+13             MessageBox.Show("Please select a product and warehouse location.");
+14         }
+15     }
+16 }
 ```
 
 _Line 3_ &ndash; Verifies that query string parameters were submitted by 
