@@ -207,8 +207,8 @@ First, set the constant variables that will be used in the script.
 
 | Variable | Description | Value (Example) |
 | --- | --- | --- |
-| `$accessKeyID` | The **Access Key ID** for the _backupOperator_ user | `AKIAJGXDXLAW52MZCGIA` |
-| `$secretAccessKey` | The **Secret Access Key** for the _backupOperator_ user | `tdwVkzwkfLK2c8NCFjlhhjxvYBxJwPkli1HosK4F` |
+| `$accessKeyID` | The **Access Key ID** for the _backupOperator_ user | `EXAMPLEDXLAW52MZCGIA` |
+| `$secretAccessKey` | The **Secret Access Key** for the _backupOperator_ user | `examplekfLK2c8NCFjlhhjxvYBxJwPkli1HosK4F` |
 | `$config` | AmazonS3Config object to hold configuration options, such as **RegionEndpoint** and **ServiceURL** | These depend on your AWS account settings. In this example, the account uses the **US-WEST-2** region endpoint. <br> `RegionEndpoint = us-west-2` <br> `ServiceURL = https://s3-us-west-2.amazonaws.com/` |
 
 _Note: To find out which Region your account is using, login to the AWS Management Console and note the Region specified in the URL. This example uses **US-WEST-2** and is seen as follows: [https://us-west-2.console.aws.amazon.com/console/home?nc2=h_m_mc&region=us-west-2#](https://us-west-2.console.aws.amazon.com/console/home?nc2=h_m_mc&region=us-west-2#)_
@@ -218,8 +218,8 @@ previously generated) and to instantiate the AmazonS3Config object to hold
 the `RegionEndpoint` and `ServiceURL` values:
 
 ```powershell
-$accessKeyID=”AKIAJGXDXLAW52MZCGIA”
-$secretAccessKey=”tdwVkzwkfLK2c8NCFjlhhjxvYBxJwPkli1HosK4F”
+$accessKeyID=”EXAMPLEDXLAW52MZCGIA”
+$secretAccessKey=”examplekfLK2c8NCFjlhhjxvYBxJwPkli1HosK4F”
 $config=New-Object Amazon.S3.AmazonS3Config
 $config.RegionEndpoint=[Amazon.RegionEndpoint]::”us-west-2″
 $config.ServiceURL = “https://s3-us-west-2.amazonaws.com/“
@@ -333,8 +333,8 @@ $s3Bucket = "Backups"
 $s3Folder = "Archive"
 
 # Constants – Amazon S3 Credentials
-$accessKeyID="AKIAJGXDXLAW52MZCGIA"
-$secretAccessKey="tdwVkzwkfLK2c8NCFjlhhjxvYBxJwPkli1HosK4F"
+$accessKeyID="EXAMPLEDXLAW52MZCGIA"
+$secretAccessKey="examplekfLK2c8NCFjlhhjxvYBxJwPkli1HosK4F"
 
 # Constants – Amazon S3 Configuration
 $config=New-Object Amazon.S3.AmazonS3Config
