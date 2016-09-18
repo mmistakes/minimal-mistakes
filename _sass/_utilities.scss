@@ -164,6 +164,38 @@ body:hover .visually-hidden button {
   }
 }
 
+/* splash page image align left */
+
+.align-left-half-splash {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 50%;
+
+  @include breakpoint($small) {
+    float: left;
+    margin-right: 4em;
+  }
+}
+
+/* splash page image align right */
+
+.align-right-half-splash {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 50%;
+
+  @include breakpoint($small) {
+    float: right;
+    margin-right: 4em;
+  }
+}
+
 /*
    Icons
    ========================================================================== */
