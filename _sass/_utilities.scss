@@ -173,11 +173,16 @@ body:hover .visually-hidden button {
   margin-top: 0;
   margin-bottom: 0;
   width: 50%;
+  border: 1em;
 
   @include breakpoint($small) {
     float: left;
     margin-right: 4em;
   }
+}
+
+.align-left-half-splash:hover {
+   box-shadow: 0 0 10px rgba(#000, 0.5);
 }
 
 /* splash page image align right */
