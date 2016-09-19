@@ -1,10 +1,13 @@
 ---
-title: "References"
+title: "Links & References"
 layout: single
 excerpt: "References"
 sitemap: false
 permalink: /references.html
 ---
+## Links to other sites
+[FishStats](http://www.FishStats.org) A collection of Shiny Apps and R packages developed by [Jim Thorson](https://www.researchgate.net/profile/James_Thorson) for spatio-temporal analysis of fish abundance, environmental impacts, and habitat assocation
+
 
 ## References
 
@@ -21,3 +24,8 @@ Prince, J.D., Hordyk, A.R., Valencia, S.R., Loneragan, N.R., and Sainsbury, K.J.
 
 ### LBSPR Application 
 Prince, J.D., Victor, S., Kloulchad, V., and Hordyk, A.R. 2015. Length based SPR assessment of eleven Indo-Pacific coral reef fish populations in Palau. Fish. Res. 171: 42-58. doi: 10.1016/j.fishres.2015.06.008.
+
+
+**Please contact us for more information on any of these publications**
+
+

@@ -8,6 +8,10 @@ permalink: /contact.html
 
 <link href="formstyle.css" rel="stylesheet">
 
+## Please provide your name, email address and a short message 
+
+**Note**: Please do not use this form for enquiries specific to the interactive applications.  
+Contact the application developer directly for questions or issues with the Shiny apps.
 
 <div class="contactform">
 <form id="contactform" method="POST">
