@@ -62,7 +62,7 @@ Outputs:
 
 A Jekyll layout that compresses HTML in pure Liquid. To enable add `layout: compress` to `_layouts/default.html`.
 
-**Note:** Has been none to mangle markup and break JavaScript... especially if inline `// comments` are present. For this reason it has been disabled by default.
+**Note:** Has been known to mangle markup and break JavaScript... especially if inline `// comments` are present. For this reason it has been disabled by default.
 {: .notice--danger}
 
 * [Documentation](http://jch.penibelst.de/)
