@@ -1,0 +1,234 @@
+---
+title: "Sparking your interest in a dry subject"
+author: matt_gregory
+comments: yes
+date: '2016-09-19'
+modified: `r format(Sys.time(), '%Y-%m-%d')`
+layout: post
+excerpt: "Using Spark and R for regression of concrete strength"
+published: FALSE
+status: process
+tags:
+- Regression
+- Spark
+- Neural Network
+- Linear Regression
+- R
+categories: Rstats
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  dev = "svg",
+  include = TRUE,
+  message = FALSE,
+  warning = FALSE,
+  error = FALSE
+  )
+
+```
+
+I recently attended the conference Effective Applications of the R language in London. One of the many excellent speakers described how one can use [Spark](https://www.r-bloggers.com/spark-2-0-more-performance-more-statistical-models/) to apply some simple Machine Learning to larger data sets and then extend the range of potential models by simply adding [water](http://koaning.io/sparling-water-for-sparkr.html).  
+
+We explore some of the main features and how to get started in this blog. Spark is a general purpose cluster computing system.  
+
+## Installation
+
+Follow the guidance on [Github](https://github.com/rstudio/sparklyr).
+
+## Connecting to Spark
+
+Now we form a local Spark connection.
+
+```{r}
+library(sparklyr)
+sc <- spark_connect(master = "local")  #  The Spark connection
+```
+
+## Hadoop
+
+As I'm running on Windows I get an error, I need to get an embedded copy of Hadoop winutils.exe from [here](embedded copy of Hadoop winutils.exe).  
+
+## Java
+
+I get another erorr, I need [Java](https://www.java.com/en/) also! Success.
+
+## Reading data
+
+Typically one reads data within the Spark cluster using the `spark_read` family of functions. For convenience and reproducibility we use a small local data set also avaliable online at the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Concrete+Compressive+Strength). Typically we might want to read from a remote SQL data table on a server.  
+
+We are interested in predicting the strength of concrete, a critical component of civil infrastructure, based on the non-linear relationship between it's ingredients and age. We read in the data and normalise all the quantitative variables.
+
+```{r}
+
+normalise <- function(x) {
+  return((x - min(x)) / (max(x) - min(x)))
+}  #  custom function to normalise, OK as there are no NA
+
+library(tidyverse)
+
+concrete <- read.csv("data/2016-09-19-concrete.csv", header = TRUE)
+
+concrete_norm <- concrete %>%
+  lapply(normalise) %>%
+  as.data.frame()
+  
+concrete_tbl <- copy_to(sc, concrete_norm, "concrete", overwrite = TRUE)
+glimpse(concrete_tbl)
+
+```
+
+## Machine Learning
+You can orchestrate machine learning algorithms in a Spark cluster via the machine learning functions within 'sparklyr'. These functions connect to a set of high-level APIs built on top of DataFrames that help you create and tune machine learning workflows. We demonstrate a few of these here.
+
+We start by:
+
+1. Partition the data into separate training and test data sets,
+2. Fit a model to our training data set,
+3. Evaluate our predictive performance on our test dataset.
+
+```{r}
+# transform our data set, and then partition into 'training', 'test'
+partitions <- concrete_tbl %>%
+  sdf_partition(training = 0.75, test = 0.25, seed = 1337)
+
+# fit a linear mdoel to the training dataset
+fit <- partitions$training %>%
+  ml_linear_regression(strength ~.)
+print(fit)
+```
+
+For linear regression models produced by Spark, we can use `summary()` to learn a bit more about the quality of our fit, and the statistical significance of each of our predictors.
+
+```{r}
+summary(fit)
+```
+
+The summary suggest our model is a poor-fit. We need to account for the non-linear relationships in the data, something which the linear model fails at! Let's test our model against data we havn't seen to have an indictation of its error.
+
+```{r,2016-09-19_lm}
+# compute predicted values on our test dataset
+predicted <- predict(fit, newdata = partitions$test)
+
+# extract the true 'strength' values from our test dataset
+actual <- partitions$test %>%
+  select(strength) %>%
+  collect() %>%
+  `[[`("strength")
+
+# produce a data.frame housing our predicted + actual 'strength' values
+data <- data.frame(
+  predicted = predicted,
+  actual    = actual
+)
+
+# plot predicted vs. actual values
+ggplot(data, aes(x = actual, y = predicted)) +
+  geom_abline(lty = "dashed", col = "red") +
+  geom_point() +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  coord_fixed(ratio = 1) +
+  labs(
+    x = "Actual Strength",
+    y = "Predicted Strength",
+    title = "Predicted vs. Actual Concrete Strength"
+  )
+
+```
+
+Not bad, but then again not so good. More importantly our diagnostic plots reveal heteroschedasticity and other problems which suggest a linear model is inappropriate for this data.
+
+```{r}
+# Function that returns Root Mean Squared Error
+rmse <- function(error)
+{
+    sqrt(mean(error^2))
+}
+ 
+# Function that returns Mean Absolute Error
+mae <- function(error)
+{
+    mean(abs(error))
+}
+
+# Calculate error
+error <- actual - predicted
+# Example of invocation of functions
+rmse(error)
+mae(error)
+
+```
+
+This is a building critical ingredient, we have a duty of care to do better. We opt for a ML method that can handle non-linear relationships, a neural network approach.
+
+## Neural Network
+
+We follow the same workflow using a Multilayer Perceptron. We fit the model.
+
+```{r}
+
+# fit a non-linear mdoel to the training dataset
+fit_nn <- partitions$training %>%
+  ml_multilayer_perceptron(strength~. , layers =  c(8, 30, 20), seed = 255)
+
+```
+Let's compare our predictions with the actual. Predict doesn't recognise the `fit_nn` object, and gives us predictions of zero. As this is relatively new I failed to find any supporting documentation to fix this. Instead I used the `nnet` package to fit then `compute` the predicted strength using a neural network, sadly not using Spark.
+
+```{r, 2016-09-19_neuralnet}
+library(neuralnet)
+# # compute predicted values on our test dataset
+# predicted <- predict(fit_nn, newdata = partitions$test)  #  Fails!
+#PARTITION DATA
+concrete_train <- concrete_norm[1:773, ] #  75%
+concrete_test <- concrete_norm[774:1030, ]#  25%, it's easy to overfit a neural network
+
+#MODEL 2, more hidden nodes
+concrete_model2 <- neuralnet(strength ~ cement + slag + ash + water +
+                               superplastic + coarseagg +
+                               fineagg + age,
+                             data = concrete_train, hidden = 5)
+plot(concrete_model2)
+
+model_results <- compute(concrete_model2,concrete_test[1:8])  # columns 1 to 8, 9 is the strength
+predicted_strength <- model_results$net.result
+
+cor(predicted_strength, concrete_test$strength)[ , 1]  # can vary depending on random seed
+plot(predicted_strength, concrete_test$strength)  # line em up, aidvisualisation
+abline(a = 0, b = 1) 
+
+```
+
+Let's quantify the error of the model and compare to the linear model earlier.
+
+```{r}
+# Calculate error
+error <- concrete_test$strength - predicted_strength 
+# Example of invocation of functions
+rmse(error)
+mae(error)
+```
+The error has been reduced! Seems like a non-linear approach was superior for this type of problem. Let me know in the comments how I can predict using the `ml_multilayer_perceptron()` function in Spark.
+
+## Principal Component Analysis
+There's lots of standard [ML stuff](http://spark.rstudio.com/mllib.html) you can apply to your data.
+
+Use Spark's Principal Components Analysis (PCA) to perform dimensionality reduction. PCA is a [statistical method](https://spark.apache.org/docs/latest/mllib-dimensionality-reduction.html) to find a rotation such that the first coordinate has the largest variance possible, and each succeeding coordinate in turn has the largest variance possible. Not particularly useful here but might be useful for those Kaggle competitions.
+
+```{r}
+
+pca_model <- tbl(sc, "concrete") %>%
+  select(-strength) %>%
+  ml_pca()
+print(pca_model)
+
+```
+
+## Conclusion
+
+This blog described how to get Spark on your machine and use it to conduct some basic ML. It should be useful when dealing with large data sets or interacting with remote data tables on SQL servers. The sustained improvements in all things R continues to inspire and amaze.
+
+```{r}
+sessionInfo()
+```
+
