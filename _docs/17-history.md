@@ -1,11 +1,27 @@
 ---
 title: "History"
 permalink: /docs/history/
-excerpt: "Changelog of enhancements and bug fixes made to the theme."
+excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2016-09-15T14:58:48-04:00
+modified: 2016-09-19T10:12:46-04:00
 ---
+
+## [3.4.8](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.8)
+
+### Enhancements
+
+- Improve type readability for larger viewports by bumping up base `font-size`. [#533](https://github.com/mmistakes/minimal-mistakes/issues/533)
+- Update Portuguese localized UI text. [#541](https://github.com/mmistakes/minimal-mistakes/pull/541)
+- Add `page.title` and via parameter to Twitter share link. [#538](https://github.com/mmistakes/minimal-mistakes/pull/538)
+
+### Bug Fixes
+
+- Fix Last.fm author profile URL. [#540](https://github.com/mmistakes/minimal-mistakes/pull/540)
+
+### Maintenance
+
+- Move Brazilian Portuguese localized text under `pt-BR` key.
 
 ## [3.4.7](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.7)
 
