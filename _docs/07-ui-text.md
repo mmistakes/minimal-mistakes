@@ -12,7 +12,9 @@ Text for various UI elements, `_layouts`, and `_includes` have all been grouped 
 Currently the English[^yaml-anchors] main keys in `_data/ui-text.yml` are translated to the following languages:
 
 * Brazilian Portguese (Português brasileiro)
+* Chinese
 * French (Français)
+* German (Deutsch)
 * Italian (Italiano)
 * Spanish (Español)
 * Turkish (Türkçe)
