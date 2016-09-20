@@ -166,13 +166,13 @@ body:hover .visually-hidden button {
 
 /* splash page image align left */
 
-.align-left-half-splash {
+.align-splash-page-image-left {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  width: 50%;
+  width: 40%;
   border: 1em;
 
   @include breakpoint($small) {
@@ -181,19 +181,22 @@ body:hover .visually-hidden button {
   }
 }
 
-.align-left-half-splash:hover {
+/* TODO: Add classes for "align-splash-page-text-left" (and right)
+         to work opposite the image classes as containers */
+
+.align-splash-page-image-left:hover {
    box-shadow: 0 0 10px rgba(#000, 0.5);
 }
 
 /* splash page image align right */
 
-.align-right-half-splash {
+.align-splash-page-image-right {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  width: 50%;
+  width: 40%;
 
   @include breakpoint($small) {
     float: right;
@@ -201,7 +204,7 @@ body:hover .visually-hidden button {
   }
 }
 
-.align-right-half-splash:hover {
+align-splash-page-image-right:hover {
    box-shadow: 0 0 10px rgba(#000, 0.5);
 }
 

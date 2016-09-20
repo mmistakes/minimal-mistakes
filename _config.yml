@@ -18,7 +18,8 @@ repository               : tod-hilton/tod-hilton.github.io # GitHub username/rep
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
-footer_follow            : icons # Set to "icons" to display only social media icons in footer. Blank (default) displays image and text.
+footer_navlist           : true # Set to "true"" to display the main navigation links in the footer. Blank (default) or false doesn't display the links.
+footer_follow_icons      : true # Set to "true" to display only social media icons in footer. Blank (default) or false displays image and text.
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
