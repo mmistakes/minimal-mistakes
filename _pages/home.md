@@ -40,7 +40,7 @@ Wei Xu, Ohio State University<br/>
 Jonathan Berant, Tel Aviv University
 
 <h3>Tutorial Chairs</h3>
-Maja Popović, DFKI-LT<br/>
+Maja Popović, Humboldt-Universität zu Berlin<br/>
 Jordan Boyd-Graber, University of Colorado, Boulder
 
 <h3>Publication Chairs</h3>
