@@ -47,11 +47,13 @@
 }
 
 .page__footer-copyright {
+  text-align: center;
   font-family: $global-font-family;
   font-size: $type-size-7;
 }
 
 .page__footer-follow {
+  text-align: center;
 
   ul {
     margin: 0;
@@ -64,8 +66,38 @@
     padding-top: 5px;
     padding-bottom: 5px;
     font-family: $sans-serif-narrow;
-    font-size: $type-size-6;
+    font-size: $type-size-7;
     text-transform: uppercase;
+  }
+
+  li + li:before {
+    content: "";
+    padding-right: 5px;
+  }
+
+  a {
+    padding-right: 10px;
+    font-weight: bold;
+  }
+}
+
+.page__footer-nav__list {
+
+  text-align: center;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: $sans-serif-narrow;
+    font-size: $type-size-5;
+    text-transform: lowercase;
   }
 
   li + li:before {
