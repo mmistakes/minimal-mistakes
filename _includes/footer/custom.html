@@ -4,19 +4,18 @@
 
 <div class="page__footer-nav__list">
   <ul class="social-icons">
-      :&nbsp;&nbsp;
-      <li class="masthead__menu-item"><a href="{{ site.url }}">home</a></li>
-      &nbsp;&nbsp;:
-          {% for link in site.data.navigation.main %}
-            :&nbsp;&nbsp;
-            {% if link.url contains 'http' %}
-              {% assign domain = '' %}
-              {% else %}
-              {% assign domain = base_path %}
-            {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
-            &nbsp;&nbsp;:
-          {% endfor %}
+    <li class="masthead__menu-item"><a href="{{ site.url }}">home</a></li>
+    &nbsp;&nbsp;
+    {% for link in site.data.navigation.main %}
+      &nbsp;&nbsp;
+      {% if link.url contains 'http' %}
+        {% assign domain = '' %}
+      {% else %}
+        {% assign domain = base_path %}
+      {% endif %}
+      <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+      &nbsp;&nbsp;
+    {% endfor %}
   </ul>
 </div>
 
