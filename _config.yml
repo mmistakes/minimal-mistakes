@@ -93,6 +93,7 @@ author:
   facebook         : todchilton
   foursquare       :
   github           : tod-hilton
+  goodreads        : # todhilton # Need to see if there's an image to be used
   google_plus      :
   keybase          :
   instagram        : todhilton
@@ -164,6 +165,8 @@ defaults:
       comments: false
       share: true
       related: true
+      show_tag_list: true
+      show_category_list: true 
       
   # Portfolios
   - scope:

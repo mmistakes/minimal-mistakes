@@ -9,7 +9,8 @@ share: false
 image: 
   teaser: 
   thumb: 
-tags: [technical writing]
+show_category_list: false
+show_tag_list: false
 fullwidth: true
 featured: 
 ---

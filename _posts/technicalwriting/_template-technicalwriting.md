@@ -9,6 +9,8 @@ image:
   teaser: cover_DontMakeMeThing_SteveKrug.jpg
   thumb: cover_DontMakeMeThing_SteveKrug_150.jpg
 tags: [technical writing]
+show_category_list: false
+show_tag_list: false 
 fullwidth: true
 featured: 
 ---
