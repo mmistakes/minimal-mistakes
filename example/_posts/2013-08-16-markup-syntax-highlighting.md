@@ -3,7 +3,7 @@ title: "Markup: Syntax Highlighting"
 excerpt: "Post displaying the various ways of highlighting code in Markdown."
 modified: 2016-09-09T09:55:10-04:00
 header:
-  teaser: "markup-syntax-highlighting-teaser.jpg"
+  teaser: "assets/images/markup-syntax-highlighting-teaser.jpg"
 tags: 
   - code
   - syntax highlighting
