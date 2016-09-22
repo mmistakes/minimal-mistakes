@@ -27,9 +27,15 @@ layout: default
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
           {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
-          {% if page.read_time %}
-            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+          <p class="page__meta">
+          {% if page.date %}
+            <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           {% endif %}
+          {% if page.read_time %}
+            <i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}
+          {% endif %}
+          </p>
         </header>
       {% endunless %}
 
