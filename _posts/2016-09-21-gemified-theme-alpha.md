@@ -10,13 +10,13 @@ Jekyll themes distributed as Ruby gems are finally here!
 
 If you're interested in testing out Minimal Mistakes as a gemified theme read on. There is a caveat though:
 
-> Support for all `assets` (not just `_sass` partials) was recently added to Jekyll core, but has yet to be rolled into GitHub Pages. Meaning you can't use Minimal Mistakes as a Ruby gem there just yet.
+> Support for all `assets` (not just `_sass` partials) was recently added to Jekyll core, but has yet to be rolled into GitHub Pages. Meaning you can't use Minimal Mistakes as a Ruby gem there just yet. Oh, and Windows users are out of luck for now too. 
 
 Fine with that? Great. Let's continue.
 
 If you're migrating a site already using Minimal Mistakes and haven't customized any of the `_includes`, `_layouts`, or `_sass` partials this should be quick and painless.
 
-**Step 1:** Remove `_includes`, `_layouts`, and `_sass` folders. You won't need this anymore as they're bundled in the theme. If you customized any of these files then leave them alone and remove any that you didn't.
+**Step 1:** Remove `_includes`, `_layouts`, and `_sass` folders. You won't need these anymore as they're bundled in the theme. If you customized any of these files then leave them alone and remove any that you didn't.
 
 **Step 2:** Update `Gemfile`
 
