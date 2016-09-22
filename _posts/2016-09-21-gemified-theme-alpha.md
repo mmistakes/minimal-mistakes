@@ -1,6 +1,6 @@
 ---
 title:  "Gemified Theme -- Alpha Release"
-modified: 2016-09-22T09:59:00-04:00
+modified: 2016-09-22T12:24:42-04:00
 categories: 
   - Jekyll
 tags:
@@ -86,7 +86,7 @@ You'll also need to:
 
 - Replace `<site root>/index.html` with a modified [Minimal Mistakes `index.html`](https://github.com/mmistakes/minimal-mistakes/blob/master/index.html).
 - Change `layout: post` in `_posts/0000-00-00-welcome-to-jekyll.markdown` to `layout: single`.
-- Change `layout: page` in `about.md` to `layout: single`.
+- Remove `about.md`, or at the very least change `layout: page` to `layout: single` and remove references to `icon-github.html` (or [copy to your `_includes`](https://github.com/jekyll/minima/tree/master/_includes) if using).
 
 ---
 
