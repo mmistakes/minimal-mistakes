@@ -1,28 +1,44 @@
 ---
-title:  "Gemified Theme Alpha Release"
+title:  "Gemified Theme -- Alpha Release"
+modified: 2016-09-22T09:59:00-04:00
 categories: 
   - Jekyll
 tags:
   - update
 ---
 
-Jekyll themes distributed as Ruby gems are finally here!
+{% include base_path %}
 
-If you're interested in testing out Minimal Mistakes as a gemified theme read on. There is a caveat though:
+Jekyll [themes distributed as Ruby gems](http://jekyllrb.com/docs/themes/) are finally here to make installing and upgrading much easier. Gone are the days of forking a repo just to "install it". Or dealing with merge conflicts when pulling in upstream commits to "upgrade it".
 
-> Support for all `assets` (not just `_sass` partials) was recently added to Jekyll core, but has yet to be rolled into GitHub Pages. Meaning you can't use Minimal Mistakes as a Ruby gem there just yet. Oh, and Windows users are out of luck for now too. 
+{% include toc title="Getting Started" %}
 
-Fine with that? Great. Let's continue.
+If you're interested in testing out Minimal Mistakes as a gemified theme read on. There are a few caveats though:
 
-If you're migrating a site already using Minimal Mistakes and haven't customized any of the `_includes`, `_layouts`, or `_sass` partials this should be quick and painless.
+1. Support for a theme `assets` folder was recently [added to Jekyll core](https://github.com/jekyll/jekyll/pull/5364), but has yet to be released or rolled into the `github-pages` gem. Meaning you can't use Minimal Mistakes as a Ruby gem there just yet... locally served or self-hosted installs should be fine if you don't mind using a pre-release version of Jekyll. 
+2. Windows users can't currently use themes packaged as gems due to a [bug with file paths](https://github.com/jekyll/jekyll/issues/5192) in Jekyll core. This is being worked on so hopefully a [fix is on the way](https://github.com/jekyll/jekyll/pull/5256) soon.
 
-**Step 1:** Remove `_includes`, `_layouts`, and `_sass` folders. You won't need these anymore as they're bundled in the theme. If you customized any of these files then leave them alone and remove any that you didn't.
+Fine with all that? Great. Let's continue.
 
-**Step 2:** Update `Gemfile`
+If you're migrating a site already using Minimal Mistakes and haven't customized any of the `_includes`, `_layouts`, `_sass` partials, or `assets` this should be quick and painless.
 
-Remove `gem "github-pages"` or `gem "jekyll"` and replace with `gem "jekyll", :git => "https://github.com/jekyll/jekyll.git"` to install the latest version of Jekyll which [reads `assets` from a theme](https://github.com/jekyll/jekyll/pull/5364). 
+## Step 1: Remove Theme Files 
 
-You'll also need to add the pre-release Minimal Mistakes gem: 
+Remove `_includes`, `_layouts`, `_sass`, `assets` folders and files within. You won't need these anymore as they're bundled in the theme.
+
+If you customized any of these then leave them alone and only remove the untouched ones. If setup correctly your modified versions should act as [overrides](http://jekyllrb.com/docs/themes/#overriding-theme-defaults) to the versions bundled with the theme.
+
+## Step 2: Update `Gemfile`
+
+In order to test you'll need to install pre-release gems of Jekyll and Minimal Mistakes.
+
+Start by replacing `gem "github-pages"` or `gem "jekyll"` with the following:
+
+```ruby
+gem "jekyll", :git => "https://github.com/jekyll/jekyll.git"
+```
+
+Then add the pre-release Minimal Mistakes theme gem: 
 
 ```ruby
 gem "minimal-mistakes-jekyll", :git => "https://github.com/mmistakes/minimal-mistakes.git", :branch => "feature/theme-gem"`
@@ -46,17 +62,33 @@ group :jekyll_plugins do
 end
 ```
 
-**Step 3:** Run `bundle install` (or `bundle update` if you're updating an existing repo).
+## Step 3: Run Bundler
 
-**Step 4:** Add `gem: "minimal-mistakes-jekyll"` to your `_config.yml` file. If you're migrating from an existing Minimal Mistakes site you shouldn't have to change anything else. If it's a new site consult then docs to [properly config](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+Run `bundle install` (or `bundle update` if you're updating an existing repo) to install the pre-release gems.
 
-**Please Note:** Images headers, teasers, and galleries need full paths now specified in YAML Front Matter or in `_config.yml`. Instead of just `image: filename.jpg` you'll need to use the full path eg: `image: assets/images/filename.jpg`. The preferred location is now `assets/images` but can be placed elsewhere or external hosted.
-{: .notice--warning}
+## Step 4: Install the Theme
 
-**Step 5:** If this is a new site be sure to add the following files to `_data` and customize as you see fit. There is currently no way of bundling them in with the theme, so be sure to consult the docs on how to properly use both.
+Add `theme: "minimal-mistakes-jekyll"` to your `_config.yml` file.
 
-- [`_data/ui-text.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml) - UI text [documentation](https://mmistakes.github.io/minimal-mistakes/docs/ui-text/)
-- [`_data/navigation.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_data/navigation.yml) - navigation [documentation](https://mmistakes.github.io/minimal-mistakes/docs/navigation/)
+If you're migrating from an existing Minimal Mistakes site you shouldn't have to change anything else after this. If it's a new site consult then docs to [properly config]({{ base_path }}/docs/configuration/).
+
+**Please Note:** Paths for image headers, overlays, teasers, [galleries]({{ base_path }}/docs/helpers/#gallery), and [feature rows]({{ base_path }}/docs/helpers/#feature-row) have changed and now require a full path. Instead of just `image: filename.jpg` you'll need to use the full path eg: `image: assets/images/filename.jpg`. The preferred location is now `assets/images` but can be placed elsewhere or external hosted. This applies for image references in `_config.yml` and `author.yml`.
+{: .notice--danger}
+
+## Step 5: `jekyll new` Tweaks
+
+If this is a new site be sure to add the following files to `_data/` and customize as you see fit. There is currently no way of bundling them in with the theme, so be sure to consult the docs on how to properly use both.
+
+- [`_data/ui-text.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml) - UI text [documentation]({{ base_path }}/docs/ui-text/)
+- [`_data/navigation.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_data/navigation.yml) - navigation [documentation]({{ base_path }}/docs/navigation/)
+
+You'll also need to: 
+
+- Replace `<site root>/index.html` with a modified [Minimal Mistakes `index.html`](https://github.com/mmistakes/minimal-mistakes/blob/master/index.html).
+- Change `layout: post` in `_posts/0000-00-00-welcome-to-jekyll.markdown` to `layout: single`.
+- Change `layout: page` in `about.md` to `layout: single`.
+
+---
 
 That's it! If all goes well running `bundle exec jekyll serve` should spin-up your site. If you encounter any bumps please file an issue on GitHub and make sure to indicate you're testing the pre-release Ruby gem version.
 
