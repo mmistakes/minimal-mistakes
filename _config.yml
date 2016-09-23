@@ -166,21 +166,7 @@ defaults:
       share: true
       related: true
       show_tag_list: true
-      show_category_list: true 
-      
-  # Portfolios
-  - scope:
-      path: _posts/portfolios
-      type: posts
-    values:
-      layout: single
-      category: portfolios
-      author_profile: false
-      read_time: true
-      share: true
-      breadcrumbs:
-        - label: "Portfolios"
-          url: /portfolios/
+      show_category_list: false
       
   # Words
   - scope:
