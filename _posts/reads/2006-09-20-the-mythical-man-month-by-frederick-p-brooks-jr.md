@@ -3,13 +3,14 @@ title: "The Mythical Man-Month by Frederick P. Brooks Jr."
 excerpt: &excerpt "Originally written in 1975 and then revised in 1995, 
 I think this book truly withstands the test of time for the field of 
 software development."
+tweet: "If you make software, read this."
+date: 2006-09-20
+modified: 2006-09-20
 category: reads
 image: 
   teaser: cover_TheMythicalManMonth_FrederickPBrooksJr.jpg
   thumb: cover_TheMythicalManMonth_FrederickPBrooksJr_150.jpg
-tags: [book notes]
-fullwidth: true
-featured: 
+tags: [software development]
 ---
 
 [![The Mythical Man-Month by Frederick P. Brooks Jr.](/images/cover_TheMythicalManMonth_FrederickPBrooksJr_150.jpg "The Mythical Man-Month by Frederick P. Brooks Jr."){: .align-right }](http://www.amazon.com/Mythical-Man-Month-Software-Engineering-Anniversary/dp/0201835959/)

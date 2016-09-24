@@ -3,13 +3,14 @@ title: "Animal Farm by George Orwell"
 excerpt: &excerpt "Short in length, this is an easy read with plenty of 
 subtext and meaning that still applies in our world, even 70 years after 
 it was authored."
+tweet: "Political satire that still applies."
+date: 2016-08-02
+modified: 2016-08-02
 category: reads
 image: 
   teaser: cover_AnimalFarm_GeorgeOrwell.jpg
   thumb: cover_AnimalFarm_GeorgeOrwell_150.jpg
-tags: [book notes]
-fullwidth: true
-featured: 
+tags: [sociology, politics]
 ---
 
 [![Animal Farm by George Orwell](/images/cover_AnimalFarm_GeorgeOrwell_150.jpg "Animal Farm by George Orwell"){: .align-right }](https://www.goodreads.com/book/show/7613.Animal_Farm)

@@ -2,13 +2,14 @@
 title: "I Am Malala by Malala Yousafzat"
 excerpt: &excerpt "An interesting tale of courage and strength told 
 through the eyes of a young teenage girl."
+tweet: "Amazing courage of a teenage girl."
+date: 2016-07-28
+modified: 2016-07-28
 category: reads
 image: 
   teaser: cover_IAmMalala_byMalalaYousafzat.jpg
   thumb: cover_IAmMalala_byMalalaYousafzat_150.jpg
-tags: [book notes]
-fullwidth: true
-featured: 
+tags: [sociology, life lessons] 
 ---
 
 [![I Am Malala by Malala Yousafzat](/images/cover_IAmMalala_byMalalaYousafzat_150.jpg "I Am Malala by Malala Yousafzat"){: .align-right }](https://www.goodreads.com/book/show/19161872-i-am-malala)

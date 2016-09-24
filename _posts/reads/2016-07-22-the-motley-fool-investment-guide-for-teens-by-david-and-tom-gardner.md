@@ -2,13 +2,14 @@
 title: "The Motley Fool Investment Guide for Teens by David and Tom Gardner"
 excerpt: &excerpt "Great primer for budgeting and investing, covering basic 
 and advanced topics with clarity and focus."
+tweet: "Great primer for budgeting and investing."
+date: 2016-07-22
+modified: 2016-07-22
 category: reads
 image: 
   teaser: cover_TheMotleyFoolInvestmentGuideForTeens_DavidAndTomGardner.jpg
   thumb: cover_TheMotleyFoolInvestmentGuideForTeens_DavidAndTomGardner_150.jpg
-tags: [book notes]
-fullwidth: true
-featured: 
+tags: [parenting, finances]
 ---
 
 [![The Motley Fool Investment Guide for Teens by David and Tom Gardner](/images/cover_TheMotleyFoolInvestmentGuideForTeens_DavidAndTomGardner_150.jpg "The Motley Fool Investment Guide for Teens by David and Tom Gardner"){: .align-right }](https://www.goodreads.com/book/show/83819.The_Motley_Fool_Investment_Guide_for_Teens)

@@ -2,13 +2,14 @@
 title: "Getting Things Done by David Allen"
 excerpt: &excerpt "Besides the expected organizational tips and suggestions, the 
 author's basic premise is to find a system that works best for you."
+tweet: "Find a system that works for you."
+date: 2006-11-09
+modified: 2006-11-09
 category: reads
 image: 
   teaser: cover_GettingThingsDone_DavidAllen.jpg
   thumb: cover_GettingThingsDone_DavidAllen_150.jpg
-tags: [book notes]
-fullwidth: true
-featured: 
+tags: [productivity]
 ---
 
 [![Getting Things Done by David Allen](/images/cover_GettingThingsDone_DavidAllen_150.jpg "Getting Things Done by David Allen"){: .align-right }](http://www.amazon.com/dp/0142000280)

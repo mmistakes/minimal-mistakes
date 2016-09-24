@@ -2,15 +2,14 @@
 title: "Dream Year by Ben Arment"
 excerpt: &excerpt "If you're feeling curious and open-minded, this book will 
 help you move your hobbies and passions forward into something more tangible."
-modified: February 21, 2016
+tweet: "Change how you view your hobbies."
+date: 2016-01-20
+modified: 2016-02-21
 category: reads
 image: 
   teaser: DreamYear_BenArment.jpg
   thumb: DreamYear_BenArment_150.jpg
-tags: [book notes]
-fullwidth: true
-featured: 
-ads: false
+tags: [productivity]
 ---
 
 [![Dream Year by Ben Arment](/images/cover_DreamYear_BenArment_150.jpg "Dream Year by Ben Arment"){: .align-right }](http://www.amazon.com/gp/product/159184794X)

@@ -2,13 +2,14 @@
 title: "Freakonomics by Steven Levitt and Stephen Dubner"
 excerpt: &excerpt "Wonderfully quick read. The authors discuss correlation 
 versus causation and how economics affected various social conditions."
+tweet: "Correlation causation and economics."
+date: 2006-09-13
+modified: 2006-09-13
 category: reads
 image: 
   teaser: cover_Freakonomics_StevenLevittAndStephenDubner.jpg
   thumb: cover_Freakonomics_StevenLevittAndStephenDubner_150.jpg
-tags: [book notes]
-fullwidth: true
-featured: 
+tags: [economics]
 ---
 
 [![Freakonomics by Steven Levitt and Stephen Dubner](/images/cover_Freakonomics_StevenLevittAndStephenDubner_150.jpg "Freakonomics by Steven Levitt and Stephen Dubner"){: .align-right }](http://www.amazon.com/exec/obidos/ASIN/006073132X/)
