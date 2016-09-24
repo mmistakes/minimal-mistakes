@@ -181,9 +181,47 @@ tr: &DEFAULT_TR
 tr-TR:
   <<: *DEFAULT_TR
 
-# Brazilian Portguese
+# Portuguese
 # -----------------
 pt: &DEFAULT_PT
+  page                       : "Página"
+  pagination_previous        : "Anterior"
+  pagination_next            : "Seguinte"
+  breadcrumb_home_label      : "Início"
+  breadcrumb_separator       : "/"
+  toc_label                  : "Nesta Página"
+  ext_link_label             : "Link Direto"
+  less_than                  : "menos de"
+  minute_read                : "minutos de leitura"
+  share_on_label             : "Partilhar no"
+  meta_label                 :
+  tags_label                 : "Etiquetas:"
+  categories_label           : "Categorias:"
+  date_label                 : "Atualizado:"
+  comments_label             : "Deixe um Comentário"
+  comments_title             : "Comentários"
+  more_label                 : "Saber mais"
+  related_label              : "Também pode gostar de"
+  follow_label               : "Siga:"
+  feed_label                 : "Feed"
+  powered_by                 : "Feito com"
+  website_label              : "Site"
+  email_label                : "Email"
+  recent_posts               : "Artigos Recentes"
+  undefined_wpm              : "Parâmetro words_per_minute não definido em _config.yml"
+  comment_form_info          : "O seu endereço email não será publicado. Os campos obrigatórios estão assinalados"
+  comment_form_comment_label : "Comentário"
+  comment_form_md_info       : "Markdown é suportado."
+  comment_form_name_label    : "Nome"
+  comment_form_email_label   : "Endereço Email"
+  comment_form_website_label : "Site (opcional)"
+  comment_btn_submit         : "Sumbeter Comentário"
+  comment_btn_submitted      : "Submetido"
+  comment_success_msg        : "Obrigado pelo seu comentário! Será visível no site logo que aprovado."
+  comment_error_msg          : "Lamento, ocorreu um erro na sua submissão. Por favor verifique se todos os campos obrigatórios estão corretamente preenchidos e tente novamente."
+  loading_label              : "A carregar..."
+# Brazilian Portuguese
+pt-BR:
   page                       : "Página"
   pagination_previous        : "Anterior"
   pagination_next            : "Próxima"
@@ -220,8 +258,6 @@ pt: &DEFAULT_PT
   comment_success_msg        :
   comment_error_msg          :
   loading_label              :
-pt-BR:
-  <<: *DEFAULT_PT
 pt-PT:
   <<: *DEFAULT_PT
 
@@ -266,7 +302,7 @@ it: &DEFAULT_IT
   loading_label              : "Caricamento..."
 it-IT:
   <<: *DEFAULT_IT
-  
+
 # Chinese  (zh-CN Chinese - China)
 # -----------------
 zh: &DEFAULT_ZH
