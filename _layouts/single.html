@@ -54,6 +54,10 @@ layout: default
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
         {% endif %}
+        {% if page.category=="reads" %}
+          <br>
+          <p class="page__date" style="text-align: right;">See what I'm reading now on <a href="http://www.goodreads.com/todhilton">Goodreads.</a></p>
+        {% endif %}
       </footer>
 
       {% if page.share %}{% include social-share.html %}{% endif %}
