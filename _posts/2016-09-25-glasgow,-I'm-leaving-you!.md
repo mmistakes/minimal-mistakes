@@ -26,26 +26,26 @@ You're home to a very yummy Greek restaurant ![yamas]
 I like you, even when you pretended you could speak Italian ![cappaccino]
 
 [glasgow-uni]: {{ site.url }}/images/glasgow-uni.jpg 
+{: height="100px" width="100px"}
+
+[kelvingrove-museum]: {{ site.url }}/images/kelvingrove-museum.jpg
 {: height="100px" width="36px"}
 
-[kelvingrove-museum]: ({{ site.url }}/images/kelvingrove-museum.jpg)
+[manfield1]: {{ site.url }}/images/manfield1.jpg
 {: height="100px" width="36px"}
 
-[manfield1]: ({{ site.url }}/images/manfield1.jpg)
+[shilling]: {{ site.url }}/images/shilling.jpg
 {: height="100px" width="36px"}
 
-[shilling]: ({{ site.url }}/images/shilling.jpg)
+[avenue-coffee]: {{ site.url }}/images/avenue-coffee.jpg
 {: height="100px" width="36px"}
 
-[avenue-coffee]: ({{ site.url }}/images/avenue-coffee.jpg)
+[paesano]: {{ site.url }}/images/paesano.jpg
 {: height="100px" width="36px"}
 
-[paesano]: ({{ site.url }}/images/paesano.jpg)
+[yamas]: {{ site.url }}/images/yamas.jpg
 {: height="100px" width="36px"}
 
-[yamas]: ({{ site.url }}/images/yamas.jpg)
-{: height="100px" width="36px"}
-
-[cappaccino]: ({{ site.url }}/images/cappaccino.jpg)
+[cappaccino]: {{ site.url }}/images/cappaccino.jpg
 {: height="100px" width="36px"}
 
