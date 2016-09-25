@@ -13,9 +13,9 @@ People say you're ugly, but under the right light, you look just majestic
 
 ![Kelvingrove Museum]({{ site.url }}/images/kelvingrove-museum.jpg)
 
-![prova]({){:height="36px"}.
+![prova](){:height="36px"}.
 
 And here is a referenced ![smile]
 
-[smile]: { site.url }}/images/glasgow-uni.jpg
+[smile]: {{ site.url }}/images/glasgow-uni.jpg
 {: height="36px" width="36px"}
