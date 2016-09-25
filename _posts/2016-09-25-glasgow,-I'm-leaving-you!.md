@@ -12,3 +12,7 @@ People say you're ugly, but under the right light, you look just majestic
 ![Glasgow University Main Building]({{ site.url }}/images/glasgow-uni.jpg)
 
 ![Kelvingrove Museum]({{ site.url }}/images/kelvingrove-museum.jpg)
+
+![prova]({{ site.url }}/images/glasgow-uni.jpg){:height="36px"}.
+
+And here is a referenced ![prova]
