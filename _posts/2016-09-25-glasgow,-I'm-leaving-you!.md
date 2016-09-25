@@ -9,25 +9,21 @@ So, I'm going to shut up here and just remember a bit of the good times we've ha
 
 People say you're ugly, but under the right light, you look just majestic
 
-[glasgow-uni]
+![glasgow-uni]
 
-[kelvingrove-museum]
+![kelvingrove-museum]
 
-And you know how to make someone smile [manfield1]
+And you know how to make someone smile ![manfield1]
 
-The affogato at your Avenue Coffee is just great. I loved it every time, to the point that it's been the only thing I've ever had in that place. You know I stick to the stuff I like.
-[avenue-coffee]
+The affogato at your Avenue Coffee is just great. I loved it every time, to the point that it's been the only thing I've ever had in that place. You know I stick to the stuff I like. [avenue-coffee]
 
-See, we always had a problem, the drinking one. You drink too much Glasgow. You made me try the finest beers around but see, I just don't have a taste for alcohol. It's not my fault. I'm not sure I'm going to solve this problem now (something tells me that I won't), but look, you definitely had too much of a habit for me.
-[shilling]
+See, we always had a problem, the drinking one. You drink too much Glasgow. You made me try the finest beers around but see, I just don't have a taste for alcohol. It's not my fault. I'm not sure I'm going to solve this problem now (something tells me that I won't), but look, you definitely had too much of a habit for me. ![shilling]
 
-You make a mean pizza (and, as you know, I understand about good pizza)
-[paesano]
+You make a mean pizza (and, as you know, I understand about good pizza) ![paesano]
 
-You're home to a very yummy Greek restaurant
-[yamas]
+You're home to a very yummy Greek restaurant ![yamas]
 
-I like you, even when you pretended you could speak Italian [cappaccino]
+I like you, even when you pretended you could speak Italian ![cappaccino]
 
 [glasgow-uni]: {{ site.url }}/images/glasgow-uni.jpg 
 {: height="100px" width="36px"}
