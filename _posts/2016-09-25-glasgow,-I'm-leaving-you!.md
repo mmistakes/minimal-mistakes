@@ -9,4 +9,7 @@ So, I'm going to shut up here and just remember a bit of the good times we've ha
 
 <img src="glasgow-uni.jpg" width="300" align="right">
 
+PROVA IMAGE
+![My helpful screenshot]({{ site.url }}/images/glasgow-uni.jpg)
+
 [Glasgow University Main Building](images/glasgow-uni.jpg)
