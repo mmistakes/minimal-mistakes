@@ -10,4 +10,4 @@ I have no good arguments to counterattack this, it's true. This thing has been g
 
 So, I'm going to shut up here and just remember a bit of the good times we've had together. 
 
-<img src="?" width="300" align="right">
+<img src="glasgow-uni.jpg" width="300" align="right">
