@@ -21,21 +21,34 @@ We both know the "right light" is not something you can take for granted at your
 
 And when the sun starts to set after a good day, it's just magic at the Kelvingrove. You have to value what you have, and it's sadly true that you appreciate stuff more when it becomes scarce.
 
-![kelvingrove] Speaking of the Kelvingrove, you supported and accommodated my quirky tendency to switch among emotions, you even went as far as modifying yourself, via a rather temperamental weather.
+The affogato at your [Avenue Coffee](http://avenue.coffee) is just great. I loved it every time, to the point that it's been the only thing I've ever had in that place. You know I stick to the stuff I like. 
 
-You know how to make someone smile ![manfield1]
+![avenue-coffee]
 
-The affogato at your Avenue Coffee is just great. I loved it every time, to the point that it's been the only thing I've ever had in that place. You know I stick to the stuff I like. ![avenue-coffee]
+![manfield1] You know how to make someone smile, like when you just made me find this small pearl in the Manfield Square, near where I used to live and where I passed every time when going to work. 
 
-See, we always had a problem, the drinking one. You drink too much Glasgow. You made me try the finest beers around but see, I just don't have a taste for alcohol. It's not my fault. I'm not sure I'm going to solve this problem now (something tells me that I won't), but look, you definitely had too much of a habit for me. ![shilling]
+We always had a problem, the drinking. You drink too much, Glasgow. You made me try the finest beers around but see, I just don't have a taste for alcohol. It's not my fault. I'm not sure I'm going to solve this problem now (something tells me that I won't), but look, you definitely had too much of a habit for me. 
 
-You make a mean pizza (and, as you know, I understand about good pizza) ![paesano]
+![shilling] ![paesano]
 
-You're home to a very yummy Greek restaurant ![yamas]
+Nevertheless, the [Shilling Brewery](http://www.shillingbrewingcompany.co.uk) in the city center is a great place, lots of space, nice people, good environment, even for the weirdos who don't drink like me. 
+Also, you make a mean pizza (as you know, I know something about real pizzas), at [Paesano Pizza](http://paesanopizza.co.uk). It's well worth the wait you have to endure on a typical Friday night to get a table (no booking allowed).
 
-I've liked you, even when you pretended you could speak Italian ![cappaccino]
+There's dozens of other very high-quality places for food and drinks in Glasgow. In fact, everybody knows that your reputation is multi-faceted and you are well known for your restaurants & Co. I'll let you know if Edinburgh compares.
 
-![glasgow-snow]
+![cappaccino] I've liked you, even when you pretended you could speak Italian. 
+
+Speaking of language, I'm afrain I have to admit we always had a problem there. True, my comprehension of you has improved, and quite sensibly, but I'm still far from mastering the nuances of your rich jargon vocabulary and the intelligence of your multiple idioms. Plus, the accent. Ah, let's not forget about the accent. I'll always end a taxi ride with a headache from the effort to grasp the driver, I think. This problem seems quite softened here. But it was fun, I'll miss it.
+
+![bn] You're always ready for a laugh and when strolling around you it's not rare to spot something peculiar. If it's not an object, it's someone. You, Glasgow, are really full of life (especially on Friday nights, but this might be a little alcohol-induced, as I told you before).
+
+If there is not much to explore in you from the superficial point of view (I'm talking about the see-and-go, superficial tourism), there is lots to do and fall in love with when someone gets to know you a little deeper.
+
+![glasgow-snow] 
+
+Of course, it would be unfair to claim that you're only good during summer. In fact, winter is when you reveal landscapes like this, which makes me think of Alcott's [Little Women](https://en.wikipedia.org/wiki/Little_Women), not sure why as there's plenty of other books with snow, but so you know.
+
+Thank you Glasgow, for giving me lots of memories. Good memories.
 
 [glasgow-uni]: {{ site.url }}/images/glasgow-uni.jpg 
 {: height="100px" width="300px" align="right"} 
@@ -43,30 +56,27 @@ I've liked you, even when you pretended you could speak Italian ![cappaccino]
 [kelvingrove-museum]: {{ site.url }}/images/kelvingrove-museum.jpg
 {: height="100px" width="600px"}
 
-[kelvingrove]: {{ site.url }}/images/kelvingrove.jpg
-{: height="100px" width="400px" align="left"}
-
 [manfield1]: {{ site.url }}/images/manfield1.jpg
-{: height="100px" width="200px" align="right"}
+{: height="100px" width="300px" align="right"}
 
 [shilling]: {{ site.url }}/images/shilling.jpg
-{: height="100px" width="200px"}
+{: height="100px" width="300px"}
 
 [avenue-coffee]: {{ site.url }}/images/avenue-coffee.jpg
-{: height="100px" width="200px"}
+{: height="100px" width="600px"}
 
 [paesano]: {{ site.url }}/images/paesano.jpg
-{: height="100px" width="200px"}
+{: height="100px" width="300px"}
 
 [yamas]: {{ site.url }}/images/yamas.jpg
 {: height="100px" width="200px"}
 
 [cappaccino]: {{ site.url }}/images/cappaccino.jpg
-{: height="100px" width="200px"}
+{: height="100px" width="200px" align="right"}
 
 [bn]: {{ site.url }}/images/bn1.jpg
-{: height="100px" width="200px"}
+{: height="100px" width="300px" align="right"}
 
 [glasgow-snow]: {{ site.url }}/images/glasgow-snow.jpg
-{: height="100px" width="200px"}
+{: height="100px" width="600px"}
 
