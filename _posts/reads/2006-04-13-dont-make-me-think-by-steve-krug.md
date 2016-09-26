@@ -8,7 +8,7 @@ category: reads
 image: 
   teaser: cover_DontMakeMeThing_SteveKrug.jpg
   thumb: cover_DontMakeMeThing_SteveKrug_150.jpg
-tags: [software development]
+tags: [software-development]
 ---
 
 [![Don't Make Me Think by Steve Krug](/images/cover_DontMakeMeThing_SteveKrug_150.jpg "Don't Make Me Think by Steve Krug"){: .align-right }](http://www.amazon.com/Dont-Make-Think-Revisited-Usability/dp/0321965515/)

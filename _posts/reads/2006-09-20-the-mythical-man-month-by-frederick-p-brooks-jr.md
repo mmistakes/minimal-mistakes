@@ -10,7 +10,7 @@ category: reads
 image: 
   teaser: cover_TheMythicalManMonth_FrederickPBrooksJr.jpg
   thumb: cover_TheMythicalManMonth_FrederickPBrooksJr_150.jpg
-tags: [software development]
+tags: [software-development]
 ---
 
 [![The Mythical Man-Month by Frederick P. Brooks Jr.](/images/cover_TheMythicalManMonth_FrederickPBrooksJr_150.jpg "The Mythical Man-Month by Frederick P. Brooks Jr."){: .align-right }](http://www.amazon.com/Mythical-Man-Month-Software-Engineering-Anniversary/dp/0201835959/)

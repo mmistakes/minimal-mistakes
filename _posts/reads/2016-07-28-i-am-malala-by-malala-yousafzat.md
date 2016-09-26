@@ -9,7 +9,7 @@ category: reads
 image: 
   teaser: cover_IAmMalala_byMalalaYousafzat.jpg
   thumb: cover_IAmMalala_byMalalaYousafzat_150.jpg
-tags: [sociology, life lessons] 
+tags: [sociology, life-lessons] 
 ---
 
 [![I Am Malala by Malala Yousafzat](/images/cover_IAmMalala_byMalalaYousafzat_150.jpg "I Am Malala by Malala Yousafzat"){: .align-right }](https://www.goodreads.com/book/show/19161872-i-am-malala)

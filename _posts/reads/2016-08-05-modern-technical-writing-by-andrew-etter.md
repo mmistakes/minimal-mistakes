@@ -9,7 +9,7 @@ category: reads
 image: 
   teaser: cover_ModernTechnicalWriting_AndrewEtter.jpg
   thumb: cover_ModernTechnicalWriting_AndrewEtter_150.jpg
-tags: [technical writing, software development]
+tags: [technical-writing, software-development]
 ---
 
 [![Modern Technical Writing by Andrew Etter](/images/cover_ModernTechnicalWriting_AndrewEtter_150.jpg "Modern Technical Writing by Andrew Etter"){: .align-right }](https://www.goodreads.com/book/show/28433138-modern-technical-writing)
