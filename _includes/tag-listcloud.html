@@ -1,0 +1,18 @@
+{% include base_path %}
+
+{% include base_path %}
+
+{% include group-by-array collection=site.posts field="tags" %}
+
+<br>
+<p class="page__taxonomy">
+  <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].tags_label | default: "Tags:" }} </strong>
+  <br><br>
+  <span itemprop="keywords">
+  {% for tag in group_names %}
+    <a href="#{{ tag }}" class="page__taxonomy-item">{{ tag }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
+  {% endfor %}
+  </span>
+</p>
+<hr>
+<br>

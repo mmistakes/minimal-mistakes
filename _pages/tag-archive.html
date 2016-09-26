@@ -4,9 +4,12 @@ permalink: /tags/
 title: "Posts by Tags"
 author_profile: true
 ---
+<a id="top"></a>
 
 {% include base_path %}
 {% include group-by-array collection=site.posts field="tags" %}
+
+{% include tag-listcloud.html %}
 
 {% for tag in group_names %}
   {% assign posts = group_items[forloop.index0] %}
@@ -14,4 +17,5 @@ author_profile: true
   {% for post in posts %}
     {% include archive-single.html %}
   {% endfor %}
+  <p class="page__meta" style="text-align: right;"><a href="#top">return to top</a></p>
 {% endfor %}
