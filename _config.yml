@@ -46,13 +46,42 @@ staticman:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
   path                   : # blank (default) uses feed.xml
-sidebar:
-  - title: "Title"
-    image: http://placehold.it/350x250
-    image_alt: "image"
-    text: "Some text here."
-  - title: "Another Title"
-    text: "More text here."
+
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      sidebar:
+        - title: "Partner sites 2015"
+          text: "1. Adam Mickiewicz University, Poznań (Poland)
+
+2. Chiba University (Japan)
+
+3. Humboldt University zu Berlin (Germany)
+
+4. Innovation Circle, Launceston (Australia)
+
+5. Northwestern Polytechnical University Xian (China)
+
+6. Osaka University (Japan)
+
+7. Russian University for the Humanities, Moscow (Russia)
+
+8. Scuola Superiore Sant'Anna, Pisa (Italy)
+
+9. Shanghai Jiao Tong University (China)
+
+10. Tadeusz Koścuszko Cracow University of Technology (Poland)
+
+11. University Carlos III of Madrid (Spain)
+
+12. University of Plymouth (UK)
+
+13. University of Zurich (Switzerland)"
+
 
 # SEO Related
 google_site_verification :
