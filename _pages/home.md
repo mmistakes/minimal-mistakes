@@ -86,5 +86,8 @@ Cecilia Ovesdotter Alm, Rochester Institute of Technology<br/>
 Mark Dredze, Johns Hopkins University<br/>
 Marine Carpuat, University of Maryland, College Park
 
+<h3>Publicity Chair</h3>
+Charley Chan, Bloomberg
+
 <h3>Webmaster &amp; Appmaster</h3>
 Nitin Madnani, Educational Testing Service
