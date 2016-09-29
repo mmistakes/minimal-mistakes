@@ -13,7 +13,7 @@ name                     : "robss_it"
 description              : "Musings from the IT Grindhouse"
 url                      : "http://blog.robssit.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : # GitHub username/repo-name e.g. "robssit/blog.robssit.com"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -60,7 +60,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  Open Graph/Twitter default site image
+og_image                 :  "https://pbs.twimg.com/profile_images/764974529818923008/oXTp4BgW.jpg"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -78,7 +78,7 @@ analytics:
 # Site Author
 author:
   name             : "robss_it"
-  avatar           : "bio-photo.jpg"
+  avatar           : "https://pbs.twimg.com/profile_images/764974529818923008/oXTp4BgW.jpg"
   bio              : 
   location         : 
   email            :
