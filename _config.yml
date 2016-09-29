@@ -60,7 +60,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  "https://pbs.twimg.com/profile_images/764974529818923008/oXTp4BgW.jpg"
+og_image                 :  "calvin-avatar.jpg"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -78,7 +78,7 @@ analytics:
 # Site Author
 author:
   name             : "robss_it"
-  avatar           : "https://pbs.twimg.com/profile_images/764974529818923008/oXTp4BgW.jpg"
+  avatar           : "calvin-avatar.jpg"
   bio              : 
   location         : 
   email            :
