@@ -4,9 +4,9 @@ layout: single
 author_profile: true
 ---
 
-#Projects
+# Projects
 Finished projects and works-in-progress.
 
-##Unity
+## Unity
 
-##Python
+## Python
