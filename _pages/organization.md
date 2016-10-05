@@ -28,7 +28,7 @@ Jordan Boyd-Graber, University of Colorado, Boulder
 <h3>Publication Chairs</h3>
 Wei Lu, Singapore University of Technology and Design<br/>
 Sameer Singh, University of California, Irvine<br/>
-Margaret Mitchell, Microsoft Research
+Margaret Mitchell, Google
 
 <h3>Demonstration Chairs</h3>
 Heng Ji, Rensselaer Polytechnic Institute<br/>
