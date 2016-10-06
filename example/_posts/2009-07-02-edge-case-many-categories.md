@@ -14,7 +14,6 @@ categories:
   - dispatch
   - echappee
   - enphagy
-  - equipollent
 tags:
   - categories
   - edge case
