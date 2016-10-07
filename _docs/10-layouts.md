@@ -32,12 +32,13 @@ The base layout all other layouts inherit from. There's not much to this layout 
 
 Class names corresponding to each layout are automatically added to the `<body>` element eg. `<body class="layout--single">`.
 
-| layout | class name |
-| ------ | ---------- |
-| archive | `.layout--archive` |
+| layout           | class name                  |
+| ---------------- | --------------------------- |
+| archive          | `.layout--archive`          |
 | archive-taxonomy | `.layout--archive-taxonomy` |
-| single | `.layout--single` |
-| splash | `.layout--splash` |
+| single           | `.layout--single`           |
+| splash           | `.layout--splash`           |
+| home             | `.layout--home`             |
 
 Using YAML Front Matter you can also assign custom classes to target with CSS or JavaScript. Perfect for "art directed" posts or adding custom styles to specific pages.
 
@@ -163,36 +164,29 @@ If you have the luxury of using Jekyll plugins the creation of category and tag 
 
 ### Home Page
 
-Minimal Mistakes ships with an [`index.html`](https://github.com/{{ site.repository }}/blob/master/index.html) in the root of the project for displaying recent posts. 
-
-**Includes:**
-
-* Optional header image with caption
-* Optional header overlay (solid color/image) + text and optional "call to action" button
-* Paginated posts
-
-Post pagination is achieved by assigning `layout: archive` in the YAML Front Matter and including the following Liquid in the body:
-
-```html
-{% raw %}<!-- start index.html body -->
-{% include base_path %}
-
-<h3 class="archive__subtitle">Recent Posts</h3>
-
-{% for post in paginator.posts %}
-  {% include archive-single.html %}
-{% endfor %}
-
-{% include paginator.html %}
-<!-- end index.html body -->{% endraw %}
-```
+A derivative archive page layout to be used as a simple home page. It is built to show a paginated list of recent posts based off of the [pagination settings]({{ base_path }}/docs/configuration/#paginate) in `_config.yml`.
 
 <figure>
-  <img src="{{ base_path }}/assets/images/mm-home-post-pagination-example.jpg" alt="home page post pagination example">
-  <figcaption>Home page post pagination example.</figcaption>
+  <img src="{{ base_path }}/assets/images/mm-home-post-pagination-example.jpg" alt="paginated home page example">
+  <figcaption>Example of a paginated home page showing 5 recent posts.</figcaption>
 </figure>
 
-**Note:** For more pagination related settings check the [**Configuration**]({{ base_path }}/docs/configuration/#paginate) section.
+To use create `index.html` at the root of your project and add the following YAML Front Matter:
+
+```yaml
+---
+layout: home
+---
+```
+
+Then configure pagination in `_config.yml`.
+
+```yaml
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+```
+
+**Note:** Jekyll can only paginate a single `index.html` file. If you'd like to paginate more pages (e.g. category indexes) you'll need the help of a custom plugin. For more pagination related settings check the [**Configuration**]({{ base_path }}/docs/configuration/#paginate) section.
 {: .notice--info}
 
 ## Splash Page Layout

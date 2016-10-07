@@ -2,7 +2,7 @@
 title: "Contributing"
 permalink: /docs/contributing/
 excerpt: "How you can contribute to make this theme better."
-modified: 2016-06-12
+modified: 2016-10-07T11:38:56-04:00
 ---
 
 Having trouble working with the theme? Found a typo in the documentation? Interested in adding a feature or [fixing a bug](https://github.com/mmistakes/minimal-mistakes/issues)? Then by all means [submit an issue](https://github.com/mmistakes/minimal-mistakes/issues/new) or [pull request](https://help.github.com/articles/using-pull-requests/). If this is your first pull request, it may be helpful to read up on the [GitHub Flow](https://guides.github.com/introduction/flow/) first.
@@ -14,3 +14,5 @@ This goes for author sidebar links and "share button" additions -- I have no int
 ## Pull Requests
 
 To help me out try to avoid creating pull requests on `master` and instead branch off of `develop`. It's much easier for me to test, merge, and roll them into new releases this way.
+
+Theme documentation and demo pages can be found in the `gh-pages` branch, please submit pull requests against that branch.

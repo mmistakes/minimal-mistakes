@@ -54,6 +54,8 @@ docs:
     children:
       - title: "Configuration"
         url: /docs/configuration/
+      - title: "Overriding Theme Defaults"
+        url: /docs/overriding-theme-defaults/
       - title: "Navigation"
         url: /docs/navigation/
       - title: "UI Text"

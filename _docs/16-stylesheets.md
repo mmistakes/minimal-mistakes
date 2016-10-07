@@ -2,12 +2,12 @@
 title: "Stylesheets"
 permalink: /docs/stylesheets/
 excerpt: "Instructions for customizing and building the theme's stylesheets."
-modified: 2016-08-08T16:28:26-04:00
+modified: 2016-10-07T11:36:36-04:00
 ---
 
 {% include base_path %}
 
-The theme's `main.css` stylesheet is built from several SCSS partials located in `/_sass/` and is structured as follows:
+The theme's `assets/css/main.css` file is built from several SCSS partials located in [`_sass/`](https://github.com/mmistakes/minimal-mistakes/tree/master/_sass) and is structured as follows:
 
 ```bash
 minimal mistakes
@@ -41,7 +41,7 @@ minimal mistakes
 
 ## Customizing
 
-The variables and settings found in `/_sass/_variables.scss` can be used to modify the following aspects of the theme:
+The variables and settings found in [`_sass/_variables.scss`](https://github.com/mmistakes/minimal-mistakes/blob/master/_sass/_variables.scss) can be used to modify the following aspects of the theme:
 
 ### Paragraph Indention 
 
@@ -76,7 +76,7 @@ Sans-serif fonts have been used for most of the type, with serifs reserved for c
 
 Not a fan of the refreshed typography of the theme and want to revert back an older version? Easy enough.
 
-**1.** Add this Google Fonts script to `_includes/head/custom.html`:
+**1.** Add this Google Fonts script to [`_includes/head/custom.html`](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/head/custom.html):
 
 ```html
 <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic" rel="stylesheet" type="text/css">

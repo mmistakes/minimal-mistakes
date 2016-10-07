@@ -2,12 +2,12 @@
 title: "JavaScript"
 permalink: /docs/javascript/
 excerpt: "Instructions for customizing and building the theme's scripts."
-modified: 2016-07-14T09:39:49-04:00
+modified: 2016-10-07T11:38:17-04:00
 ---
 
 {% include base_path %}
 
-The theme's `main.js` script is built from several vendor, jQuery plugins, and other scripts found in `/assets/js/`.
+The theme's [`assets/js/main.min.js`] script is built from several vendor, jQuery plugins, and other scripts found in [`assets/js/`](https://github.com/mmistakes/minimal-mistakes/tree/master/assets/js).
 
 ```bash
 minimal mistakes
@@ -28,9 +28,9 @@ minimal mistakes
 
 ## Customizing
 
-To modify or add your own scripts include them in `/assets/js/_main.js` and then rebuild using `npm run build:js`. See below for more details.
+To modify or add your own scripts include them in [`assets/js/_main.js`](https://github.com/mmistakes/minimal-mistakes/blob/master/assets/js/_main.js) and then rebuild using `npm run build:js`. See below for more details.
 
-If you add additional scripts to `/assets/js/plugins/` and would like them concatenated with the others, be sure to update the `uglify` script in `package.json`. Same goes for scripts that you remove.
+If you add additional scripts to `assets/js/plugins/` and would like them concatenated with the others, be sure to update the `uglify` script in [`package.json`](https://github.com/mmistakes/minimal-mistakes/blob/master/package.json). Same goes for scripts that you remove.
 
 ---
 

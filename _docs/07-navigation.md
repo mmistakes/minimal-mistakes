@@ -2,7 +2,7 @@
 title: "Navigation"
 permalink: /docs/navigation/
 excerpt: "Instructions on how to customize the main navigation and enabling breadcrumb links."
-modified: 2016-08-31T11:00:35-04:00
+modified: 2016-10-07T11:14:06-04:00
 ---
 
 {% include base_path %}
@@ -17,22 +17,16 @@ To define these links add titles and URLs under the `main` key in `_data/navigat
 main:
   - title: "Quick-Start Guide"
     url: /docs/quick-start-guide/
-
   - title: "Posts"
     url: /year-archive/
-
   - title: "Categories"
     url: /categories/
-
   - title: "Tags"
     url: /tags/
-
   - title: "Pages"
     url: /page-archive/
-
   - title: "Collections"
     url: /collection-archive/
-
   - title: "External Link"
     url: https://google.com
 ```

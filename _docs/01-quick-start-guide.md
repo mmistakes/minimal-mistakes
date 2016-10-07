@@ -9,33 +9,38 @@ redirect_from:
 
 {% include base_path %}
 
-Minimal Mistakes has been developed as a [Jekyll theme gem](http://jekyllrb.com/docs/themes/) for easier installs and upgrades. It is also 100% compatible with GitHub Pages --- just with a more involved installation process.
+Minimal Mistakes has been developed as a [Jekyll theme gem](http://jekyllrb.com/docs/themes/) for easier use. It is also 100% compatible with GitHub Pages --- just with a more involved installation process.
 
 {% include toc %}
 
-## Ruby Gem Method
+## Installing the Theme
 
-If you're running Jekyll v3.3+ and self-hosting you can quickly install the theme by:
+If you're running Jekyll v3.3+ and self-hosting you can quickly install the theme as Ruby gem.
+If you're hosting with GitHub Pages you'll have to use the old "repo fork" method or directly copy all of the theme files[^structure] into your site.
 
-Adding this line to your Jekyll site's `Gemfile`:
+[^structure]: See [**Structure** page]({{ base_path }}/docs/structure/) for a list of theme files and what they do.
+
+### Ruby Gem Method
+
+Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
 gem "minimal-mistakes-jekyll"
 ```
 
-Adding this line to your Jekyll site's `_config.yml` file:
+Add this line to your Jekyll site's `_config.yml` file:
 
 ```yaml
 theme: minimal-mistakes-jekyll
 ```
 
-And running Bundler:
+Then run Bundler to install the theme gem and dependencies:
 
 ```bash
 bundle install
 ```
 
-## GitHub Pages Compatible Method
+### GitHub Pages Compatible Method
 
 Fork the [Minimal Mistakes theme](https://github.com/mmistakes/minimal-mistakes/fork), then rename the repo to **USERNAME.github.io** --- replacing **USERNAME** with your GitHub username.
 
@@ -70,7 +75,7 @@ end
 
 Then run `bundle update` and verify that all gems install properly.
 
-## Remove the Unnecessary
+### Remove the Unnecessary
 
 If you forked or downloaded the `minimal-mistakes-jekyll` repo you can safely remove the following folders and files:
 
@@ -112,15 +117,15 @@ Edit `_config.yml` and create `_data/ui-text.yml` and `_data/navigation.yml` sam
 
 ### Migrating to Gem Version
 
-If you're migrating a site already using Minimal Mistakes and haven't customized any of the `_includes`, `_layouts`, `_sass` partials, or `assets` this should be quick and painless.
+If you're migrating a site already using Minimal Mistakes and haven't customized any of the theme files things upgrading will be easier for you.
 
-Remove `_includes`, `_layouts`, `_sass`, `assets` folders and all files within. You won't need these anymore as they're bundled with the theme.
+Start by removing `_includes`, `_layouts`, `_sass`, `assets` folders and all files within. You won't need these anymore as they're bundled with the theme.
 
-If you customized any of these then leave them alone and only remove the untouched ones. If setup correctly your modified versions should act as [overrides](http://jekyllrb.com/docs/themes/#overriding-theme-defaults) to the versions bundled with the theme.
+If you customized any of these files leave them alone, and only remove the untouched ones. If done correctly your modified versions should [override](http://jekyllrb.com/docs/themes/#overriding-theme-defaults) the versions bundled with the theme and be used by Jekyll instead.
 
 #### Update Gemfile
 
-Replace `gem "github-pages` or `gem "jekyll"` with `gem "jekyll", "~> 3.3.0"`. You'll need the latest version of Jekyll[^update-jekyll] for Minimal Mistakes to work and load all of the /assets/ properly.
+Replace `gem "github-pages` or `gem "jekyll"` with `gem "jekyll", "~> 3.3.0"`. You'll need the latest version of Jekyll[^update-jekyll] for Minimal Mistakes to work and load all of the theme's assets properly.
 
 [^update-jekyll]: You could also run `bundle update jekyll` to update Jekyll.
 
@@ -139,9 +144,9 @@ gem "jekyll", "~> 3.3.0"
 gem "minimal-mistakes-jekyll"
 ```
 
-Then run `bundle install` and add `theme: minimal-mistakes-jekyll` to your `_config.yml` same as above.
+Then run `bundle update` and add `theme: minimal-mistakes-jekyll` to your `_config.yml`.
 
-**Please Note:** Paths for image headers, overlays, teasers, [galleries]({{ base_path }}/docs/helpers/#gallery), and [feature rows]({{ base_path }}/docs/helpers/#feature-row) have changed and now require a full path. Instead of just `image: filename.jpg` you'll need to use the full path eg: `image: assets/images/filename.jpg`. The preferred location is now `assets/images` but can be placed elsewhere or external hosted. This all applies for image references in `_config.yml` and `author.yml` as well.
+**v4 Breaking Change:** Paths for image headers, overlays, teasers, [galleries]({{ base_path }}/docs/helpers/#gallery), and [feature rows]({{ base_path }}/docs/helpers/#feature-row) have changed and now require a full path. Instead of just `image: filename.jpg` you'll need to use the full path eg: `image: assets/images/filename.jpg`. The preferred location is now `assets/images` but can be placed elsewhere or external hosted. This all applies for image references in `_config.yml` and `author.yml` as well.
 {: .notice--danger}
 
 ---
