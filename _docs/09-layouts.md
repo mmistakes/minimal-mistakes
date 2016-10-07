@@ -3,11 +3,11 @@ title: "Layouts"
 permalink: /docs/layouts/
 excerpt: "Descriptions and samples of all layouts included with the theme and how to best use them."
 single_layout_gallery:
-  - image_path: mm-layout-single-header.png
+  - image_path: assets/images/mm-layout-single-header.png
     alt: "single layout with header example"
-  - image_path: mm-layout-single-meta.png
+  - image_path: assets/images/mm-layout-single-meta.png
     alt: "single layout with comments and related posts"
-modified: 2016-09-15T15:09:22-04:00
+modified: 2016-10-06T23:02:37-04:00
 ---
 
 {% include base_path %}
@@ -94,7 +94,7 @@ Essentially the same as `single` with markup adjustments and some modules remove
 * List and grid views
 
 <figure>
-  <img src="{{ base_path }}/images/mm-layout-archive.png" alt="archive layout example">
+  <img src="{{ base_path }}/assets/images/mm-layout-archive.png" alt="archive layout example">
   <figcaption>List view example.</figcaption>
 </figure>
 
@@ -148,7 +148,7 @@ author_profile: false
 To produce something like this:
 
 <figure>
-  <img src="{{ base_path }}/images/mm-archive-grid-view-example.jpg" alt="archive grid view example">
+  <img src="{{ base_path }}/assets/images/mm-archive-grid-view-example.jpg" alt="archive grid view example">
   <figcaption>Grid view example.</figcaption>
 </figure>
 
@@ -159,7 +159,7 @@ To produce something like this:
 
 If you have the luxury of using Jekyll plugins the creation of category and tag archives is greatly simplified. Enable support for the [`jekyll-archives`](https://github.com/jekyll/jekyll-archives) plugin with a few `_config.yml` settings as noted in the [**Configuration**]({{ base_path }}/docs/configuration/#archive-settings) section.
 
-![archive taxonomy layout example]({{ base_path }}/images/mm-layout-archive-taxonomy.png)
+![archive taxonomy layout example]({{ base_path }}/assets/images/mm-layout-archive-taxonomy.png)
 
 ### Home Page
 
@@ -188,7 +188,7 @@ Post pagination is achieved by assigning `layout: archive` in the YAML Front Mat
 ```
 
 <figure>
-  <img src="{{ base_path }}/images/mm-home-post-pagination-example.jpg" alt="home page post pagination example">
+  <img src="{{ base_path }}/assets/images/mm-home-post-pagination-example.jpg" alt="home page post pagination example">
   <figcaption>Home page post pagination example.</figcaption>
 </figure>
 
@@ -205,7 +205,7 @@ For full-width landing pages that need a little something extra add `layout: spl
 * Optional header overlay (solid color/image) + text and optional "call to action" button
 * Feature blocks (`left`, `center`, and `right` alignment options)
 
-![splash page layout example]({{ base_path }}/images/mm-layout-splash.png)
+![splash page layout example]({{ base_path }}/assets/images/mm-layout-splash.png)
 
 Feature blocks can be assigned and aligned to the `left`, `right`, or `center` with a sprinkling of YAML. For full details on how to use the `feature_row` helper check the [**Content**]({{ base_path }}/docs/helpers/) section or review a [sample splash page](https://github.com/{{ site.repository }}/blob/gh-pages/_pages/splash-page.md).
 
@@ -216,30 +216,32 @@ Feature blocks can be assigned and aligned to the `left`, `right`, or `center` w
 
 To add some visual punch to a post or page, a large full-width header image can be included.
 
-**Note:** Be sure to resize your header images. `~1280px` is a good width if you aren't [responsively serving up images](http://alistapart.com/article/responsive-images-in-practice). Through the magic of CSS they will scale up or down to fill the container. If you go with something too small it will look like garbage when upscaled, and something too large will hurt performance.
-{: .notice--warning}
+Be sure to resize your header images. `~1280px` is a good width if you aren't [responsively serving up images](http://alistapart.com/article/responsive-images-in-practice). Through the magic of CSS they will scale up or down to fill the container. If you go with something too small it will look like garbage when upscaled, and something too large will hurt performance.
 
-![single layout header image example]({{ base_path }}/images/mm-single-header-example.jpg)
+**Please Note:** Paths for image headers, overlays, teasers, [galleries]({{ base_path }}/docs/helpers/#gallery), and [feature rows]({{ base_path }}/docs/helpers/#feature-row) have changed and require a full path. Instead of just `image: filename.jpg` you'll need to use the full path eg: `image: assets/images/filename.jpg`. The preferred location is now `assets/images`, but can be placed elsewhere or external hosted. This all applies for image references in `_config.yml` and `author.yml` as well.
+{: .notice--danger}
 
-Place your images in the `/images/` folder and add the following YAML Front Matter:
+![single layout header image example]({{ base_path }}/assets/images/mm-single-header-example.jpg)
+
+Place your images in the `assets/images/` folder and add the following YAML Front Matter:
 
 ```yaml
 header:
-  image: image-filename.jpg
+  image: assets/images/image-filename.jpg
 ```
 
 For externally hosted images include the full image path instead of just the filename:
 
 ```yaml
 header:
-  image: http://some-site.com/image.jpg
+  image: http://some-site.com/assets/images/image.jpg
 ```
 
 To include a caption or attribution for the image:
 
 ```yaml
 header:
-  image: unsplash-image-1.jpg
+  image: assets/images/unsplash-image-1.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 ```
 
@@ -263,7 +265,7 @@ With this YAML Front Matter:
 ```yaml
 excerpt: "This post should display a **header with an overlay image**, if the theme supports it."
 header:
-  overlay_image: unsplash-image-1.jpg
+  overlay_image: assets/images/unsplash-image-1.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
   cta_label: "More Info"
   cta_url: "https://unsplash.com"
@@ -271,11 +273,11 @@ header:
 
 You'd get a header image overlaid with text and a call to action button like this:
 
-![single layout header overlay example]({{ base_path }}/images/mm-single-header-overlay-example.jpg)
+![single layout header overlay example]({{ base_path }}/assets/images/mm-single-header-overlay-example.jpg)
 
 You also have the option of specifying a solid background-color to use instead of an image.
 
-![single layout header overlay with background fill]({{ base_path }}/images/mm-single-header-overlay-fill-example.jpg)
+![single layout header overlay with background fill]({{ base_path }}/assets/images/mm-single-header-overlay-fill-example.jpg)
 
 ```yaml
 excerpt: "This post should display a **header with a solid background color**, if the theme supports it."
@@ -285,12 +287,12 @@ header:
 
 You can also specifying the opacity (between `0` and `1`) of a black overlay like so:
 
-![transparent black overlay]({{ base_path }}/images/mm-header-overlay-black-filter.jpg)
+![transparent black overlay]({{ base_path }}/assets/images/mm-header-overlay-black-filter.jpg)
 
 ```yaml
 excerpt: "This post should [...]"
 header:
-  overlay_image: unsplash-image-1.jpg
+  overlay_image: assets/images/unsplash-image-1.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
   cta_label: "More Info"
@@ -299,12 +301,12 @@ header:
 
 Or if you want to do more fancy things, go full rgba:
 
-![transparent red overlay]({{ base_path }}/images/mm-header-overlay-red-filter.jpg)
+![transparent red overlay]({{ base_path }}/assets/images/mm-header-overlay-red-filter.jpg)
 
 ```yaml
 excerpt: "This post should [...]"
 header:
-  overlay_image: unsplash-image-1.jpg
+  overlay_image: assets/images/unsplash-image-1.jpg
   overlay_filter: rgba(255, 0, 0, 0.5)
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
   cta_label: "More Info"
@@ -321,7 +323,7 @@ The space to the left of a page's main content is blank by default, but has the 
 
 Add `author_profile: true` to a post or page's YAML Front Matter.
 
-![single layout example]({{ base_path }}/images/mm-layout-single.png)
+![single layout example]({{ base_path }}/assets/images/mm-layout-single.png)
 
 Better yet, enable it with Front Matter Defaults set in `_config.yml`.
 
@@ -378,13 +380,13 @@ To end up with:
 <li><a href="https://www.reddit.com/user/username"><i class="fa fa-fw fa-reddit" aria-hidden="true"></i> Reddit</a></li>
 ```
 
-![Reddit link in author profile]({{ base_path }}/images/mm-author-profile-reddit-gs.png)
+![Reddit link in author profile]({{ base_path }}/assets/images/mm-author-profile-reddit-gs.png)
 
 To add a touch of color to the default black (`#000`) icon a few more steps are necessary.
 
-Start by opening `/assets/_scss/_utilities.scss` to the icon section (it's near the bottom). You'll want to nest a new class beneath `.social-icons` that matches the one used to declare the Font Awesome icon. In our case `.fa-reddit`.
+Start by copying [`_utilities.scss`](https://github.com/mmistakes/minimal-mistakes/blob/master/_sass/_utilities.scss) `<site root>/_sass`. Open it up to the icon section (it's near the bottom) and nest a new class beneath `.social-icons` that matches the one used to declare the Font Awesome icon. In our case `.fa-reddit`.
 
-Simply add a `color` declaration and the corresponding hex code and recompile `main.css` following the steps outlined in the [stylesheet documentation]({{ base_path }}/docs/stylesheets/).
+Simply add a `color` declaration and the corresponding hex code.
 
 ```scss
 .social-icons {
@@ -395,9 +397,9 @@ Simply add a `color` declaration and the corresponding hex code and recompile `m
 }
 ``` 
 
-![Reddit link in author profile with color]({{ base_path }}/images/mm-author-profile-reddit-color.png)
+![Reddit link in author profile with color]({{ base_path }}/assets/images/mm-author-profile-reddit-color.png)
 
-**ProTip:** For bonus points you can add it as a Sass `$variable` that you set in `_variables.scss` like the other ["brand" colors](http://brandcolors.net/).
+**ProTip:** For bonus points you can add it as a Sass `$variable` that you set in [`_variables.scss`](https://github.com/mmistakes/minimal-mistakes/blob/master/_sass/_variables.scss) like the other ["brand" colors](http://brandcolors.net/). You'll need to add this file to `/_sass/` as well if you're using the Ruby Gem version of the theme.
 {: .notice--info}
 
 **Please please please** don't submit [pull requests]({{ base_path }}/docs/contributing/) adding in support for "missing" social media links. I'm trying to keep things down to the minimum (hence the theme's name) and have no interest in merging such PRs :expressionless:.
@@ -427,7 +429,7 @@ sidebar:
 ```
 
 <figure>
-  <img src="{{ base_path }}/images/mm-custom-sidebar-example.jpg" alt="custom sidebar content example">
+  <img src="{{ base_path }}/assets/images/mm-custom-sidebar-example.jpg" alt="custom sidebar content example">
   <figcaption>Example of custom sidebar content added as YAML Front Matter.</figcaption>
 </figure>
 
@@ -441,7 +443,7 @@ To create a sidebar menu[^sidebar-menu] similar to the one found in the theme's 
 [^sidebar-menu]: Sidebar menu supports 1 level of nested links.
 
 <figure>
-  <img src="{{ base_path }}/images/mm-custom-sidebar-nav.jpg" alt="sidebar navigation example">
+  <img src="{{ base_path }}/assets/images/mm-custom-sidebar-nav.jpg" alt="sidebar navigation example">
   <figcaption>Custom sidebar navigation menu example.</figcaption>
 </figure>
 
@@ -527,7 +529,7 @@ defaults:
 
 The `single` layout has an option to enable social links at the bottom of posts for sharing on Twitter, Facebook, Google+, and LinkedIn. Similar to the links found in the author sidebar, the theme ships with defaults for the most common social networks.
 
-![default social share link buttons]({{ base_path }}/images/mm-social-share-links-default.png)
+![default social share link buttons]({{ base_path }}/assets/images/mm-social-share-links-default.png)
 
 To enable these links add `share: true` to a post or page's YAML Front Matter or use a [default](https://jekyllrb.com/docs/configuration/#front-matter-defaults) in your `_config.yml` to apply more globally.
 
@@ -546,7 +548,7 @@ The important parts to change are:
 3. [Font Awesome icon](http://fontawesome.io/icons/) (`fa-` class)
 4. Link label
 
-![Reddit social share link button]({{ base_path }}/images/mm-social-share-links-reddit-gs.png)
+![Reddit social share link button]({{ base_path }}/assets/images/mm-social-share-links-reddit-gs.png)
 
 To change the color of the button use one of the built in [utility classes]({{ base_path }}/docs/utility-classes/#buttons). Or you can create a new button class to match whatever color you want.
 
@@ -570,4 +572,4 @@ Add the new `.btn--reddit` class to the `<a>` element from earlier, [compile `ma
 {% raw %}<a href="https://www.reddit.com/submit?url={{ base_path }}{{ page.url }}&title={{ page.title }}" class="btn btn--reddit" title="{{ site.data.ui-text[site.locale].share_on_label }} Reddit"><i class="fa fa-fw fa-reddit" aria-hidden="true"></i><span> Reddit</span></a>{% endraw %}
 ```
 
-![Reddit social share link button]({{ base_path }}/images/mm-social-share-links-reddit-color.png)
+![Reddit social share link button]({{ base_path }}/assets/images/mm-social-share-links-reddit-color.png)

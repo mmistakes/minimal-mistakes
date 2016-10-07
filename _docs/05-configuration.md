@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-modified: 2016-08-21T17:19:29-04:00
+modified: 2016-10-06T22:59:45-04:00
 ---
 
 {% include base_path %}
@@ -15,6 +15,14 @@ Settings that affect your entire site can be changed in [Jekyll's configuration 
 Take a moment to look over the configuration file included with the theme. Comments have been added to provide examples and default values for most settings. Detailed explanations of each can be found below.
 
 ## Site Settings
+
+### Theme
+
+If you're using the Ruby gem version of the theme you'll need this line to activate it:
+
+```yaml
+theme: minimal-mistakes-jekyll
+```
 
 ### Site Locale
 
@@ -108,7 +116,7 @@ header:
 ```
 
 <figure>
-  <img src="{{ base_path }}/images/mm-teaser-images-example.jpg" alt="teaser image example">
+  <img src="{{ base_path }}/assets/images/mm-teaser-images-example.jpg" alt="teaser image example">
   <figcaption>Example of teaser images found in the related posts module.</figcaption>
 </figure>
 
@@ -119,7 +127,7 @@ Enable breadcrumb links to help visitors better navigate deep sites. Because of 
 1. Use a category based permalink structure e.g. `permalink: /:categories/:title/`
 2. Manually create pages for each category or use a plugin like [jekyll-archives][jekyll-archives] to auto-generate them. If these pages don't exist breadcrumb links to them will be broken.
 
-![breadcrumb navigation example]({{ base_path }}/images/mm-breadcrumbs-example.jpg)
+![breadcrumb navigation example]({{ base_path }}/assets/images/mm-breadcrumbs-example.jpg)
 
 ```yaml
 breadcrumbs: true  # disabled by default
@@ -131,7 +139,7 @@ Breadcrumb start link text and separator character can both be changed in the [U
 
 Enable estimated reading time snippets with `read_time: true` in YAML Front Matter. `200` has been set as the default words per minute value --- which can be changed by adjusting `words_per_minutes: ` in `_config.yml`.
 
-![reading time example]({{ base_path }}/images/mm-read-time-example.jpg)
+![reading time example]({{ base_path }}/assets/images/mm-read-time-example.jpg)
 
 Instead of adding `read_time: true` to each post, apply as a default in `_config.yml` like so:
 
@@ -258,7 +266,7 @@ To skip this moderation step simply set `moderation: false`.
 **ProTip:** Create a GitHub webhook that sends a `POST` request to the following payload URL `https://api.staticman.net/v1/webhook` and triggers a "Pull request" event to delete Staticman branches on merge.
 {: .notice--info}
 
-![pull-request webhook]({{ base_path }}/images/mm-staticman-pr-webhook.jpg)
+![pull-request webhook]({{ base_path }}/assets/images/mm-staticman-pr-webhook.jpg)
 
 ##### Other Comment Providers
 
@@ -370,14 +378,14 @@ og_image: "site-logo.png"
 ```
 
 <figure>
-  <img src="{{ base_path }}/images/mm-twitter-card-summary-image.jpg" alt="Twitter Card summary example">
+  <img src="{{ base_path }}/assets/images/mm-twitter-card-summary-image.jpg" alt="Twitter Card summary example">
   <figcaption>Example of a image placed in a Summary Card.</figcaption>
 </figure>
 
 Documents who have a `header.image` assigned in their YAML Front Matter will appear like this when shared on Twitter and Facebook.
 
 <figure>
-  <img src="{{ base_path }}/images/mm-twitter-card-summary-large.jpg" alt="page shared on Twitter">
+  <img src="{{ base_path }}/assets/images/mm-twitter-card-summary-large.jpg" alt="page shared on Twitter">
   <figcaption>Shared page on Twitter with header image assigned.</figcaption>
 </figure>
 
@@ -426,7 +434,7 @@ To use another provider not included with the theme set `provider: "custom"` the
 
 Used as the defaults for defining what appears in the author sidebar.
 
-![author sidebar example]({{ base_path }}/images/mm-author-sidebar-example.jpg)
+![author sidebar example]({{ base_path }}/assets/images/mm-author-sidebar-example.jpg)
 
 **Note:** For sites with multiple authors these values can be overridden post by post with custom YAML Front Matter and a data file. For more information on how that works see below.
 {: .notice--info}

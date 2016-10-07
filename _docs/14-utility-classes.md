@@ -2,7 +2,7 @@
 title: "Utility Classes"
 permalink: /docs/utility-classes/
 excerpt: "CSS classes for aligning text/image, styling buttons and notices, and more."
-modified: 2016-04-13T15:54:02-04:00
+modified: 2016-10-06T23:19:19-04:00
 ---
 
 {% include base_path %}
@@ -69,41 +69,41 @@ No wrap text.
 
 Position images with the following classes.
 
-![image-center]({{ site.url }}{{ site.baseurl }}/images/image-alignment-580x300.jpg){: .align-center}
+![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/image-alignment-580x300.jpg){: .align-center}
 
 The image above happens to be **centered**.
 
 ```markdown
-![image-center](/images/filename.jpg){: .align-center}
+![image-center](/assets/images/filename.jpg){: .align-center}
 ```
 
 ---
 
-![image-left]({{ site.url }}{{ site.baseurl }}/images/image-alignment-150x150.jpg){: .align-left} The rest of this paragraph is filler for the sake of seeing the text wrap around the 150×150 image, which is **left aligned**. There should be plenty of room above, below, and to the right of the image. Just look at him there --- Hey guy! Way to rock that left side. I don't care what the right aligned image says, you look great. Don't let anyone else tell you differently.
+![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/image-alignment-150x150.jpg){: .align-left} The rest of this paragraph is filler for the sake of seeing the text wrap around the 150×150 image, which is **left aligned**. There should be plenty of room above, below, and to the right of the image. Just look at him there --- Hey guy! Way to rock that left side. I don't care what the right aligned image says, you look great. Don't let anyone else tell you differently.
 
 ```markdown
-![image-left](/images/filename.jpg){: .align-left}
+![image-left](/assets/images/filename.jpg){: .align-left}
 ```
 
 ---
 
-![image-right]({{ site.url }}{{ site.baseurl }}/images/image-alignment-300x200.jpg){: .align-right}
+![image-right]({{ site.url }}{{ site.baseurl }}/assets/images/image-alignment-300x200.jpg){: .align-right}
 
 And now we're going to shift things to the **right align**. Again, there should be plenty of room above, below, and to the left of the image. Just look at him there --- Hey guy! Way to rock that right side. I don't care what the left aligned image says, you look great. Don't let anyone else tell you differently.
 
 ```markdown
-![image-right](/images/filename.jpg){: .align-right}
+![image-right](/assets/images/filename.jpg){: .align-right}
 ```
 
 ---
 
-![full]({{ site.url }}{{ site.baseurl }}/images/image-alignment-1200x4002.jpg)
+![full]({{ site.url }}{{ site.baseurl }}/assets/images/image-alignment-1200x4002.jpg)
 {: .full}
 
 The image above should extend outside of the parent container on right.
 
 ```markdown
-![full](/images/filename.jpg)
+![full](/assets/images/filename.jpg)
 {: .full}
 ```
 

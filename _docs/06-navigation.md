@@ -39,7 +39,7 @@ main:
 
 Which will give you a responsive masthead similar to this:
 
-![priority plus masthead animation]({{ base_path }}/images/mm-priority-plus-masthead.gif)
+![priority plus masthead animation]({{ base_path }}/assets/images/mm-priority-plus-masthead.gif)
 
 **ProTip:** Put the most important links first so they're always visible and not hidden behind the **menu toggle**.
 {: .notice--info}
@@ -51,7 +51,7 @@ Enable breadcrumb links to help visitors better navigate deep sites. Because of 
 1. Use a category based permalink structure e.g. `permalink: /:categories/:title/`
 2. Manually create pages for each category or use a plugin like [jekyll-archives](https://github.com/jekyll/jekyll-archives) to auto-generate them. If these pages don't exist breadcrumb links to them will be broken.
 
-![breadcrumb navigation example]({{ base_path }}/images/mm-breadcrumbs-example.jpg)
+![breadcrumb navigation example]({{ base_path }}/assets/images/mm-breadcrumbs-example.jpg)
 
 ```yaml
 breadcrumbs: true  # disabled by default

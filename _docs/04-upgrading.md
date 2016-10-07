@@ -2,15 +2,14 @@
 title: "Upgrading"
 permalink: /docs/upgrading/
 excerpt: "Instructions and suggestions for upgrading the theme."
-modified: 2016-08-01T09:43:46-04:00
+modified: 2016-10-06T22:57:01-04:00
 ---
 
 {% include base_path %}
 
-Currently there is no good way of upgrading the theme without doing a bit of manual work. The future looks promising now that [**gem based themes**](https://jekyllrb.com/docs/themes/) have landed with Jekyll `v3.2`, but for now here's some suggestions on how to handle updates.
+If you're using the Ruby Gem version of the theme upgrading is fairly painless.
 
-**Gemified Theme**: A future version of Minimal Mistakes will suppor the new Jekyll theme system. A few key features like theme assets (eg. fonts, images, and JavaScript) and support for GitHub Pages are currently missing for this enhancement to happen now. Stay tuned!
-{: .notice--info}
+Simply run `bundle update` if your using a `Gemfile` or `gem update minimal-mistakes-jekyll` if you're not.
 
 ## Use Git
 
@@ -45,6 +44,7 @@ Here's a quick checklist of the important folders/files you'll want to be mindfu
 | `_layouts`             | Replace all. Apply edits if you customized any layouts. |
 | `_includes`            | Replace all. Apply edits if you customized any includes. |
 | `assets`               | Replace all. Apply edits if you customized stylesheets or scripts. |
+| `_sass`                | Replace all. Apply edits if you customized Sass partials. |
 | `_data/navigation.yml` | Safe to keep. Verify that there were no major structural changes or additions. |
 | `_data/ui-text.yml`    | Safe to keep. Verify that there were no major structural changes or additions. |
 | `_config.yml`          | Safe to keep. Verify that there were no major structural changes or additions. |

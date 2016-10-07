@@ -2,10 +2,13 @@
 title: "Structure"
 permalink: /docs/structure/
 excerpt: "How the theme is organized and what all of the files are for."
-modified: 2016-08-08T16:25:30-04:00
+modified: 2016-10-06T22:39:43-04:00
 ---
 
 Nothing clever here :wink:. Layouts, data files, and includes are all placed in their default locations. Stylesheets and scripts in `assets`, and a few development related files in the project's root directory.
+
+**Please note:** If you installed Minimal Mistakes via the Ruby Gem method, theme files like `_layouts`, `_includes`, `_sass`, and `/assets/` will be missing. This is normal as they are bundled with the [`minimal-mistakes-jekyll`](https://rubygems.org/gems/minimal-mistakes-jekyll) Ruby gem.
+{: .notice--info}
 
 ```bash
 minimal-mistakes
@@ -29,6 +32,7 @@ minimal-mistakes
 |  ├── archive.html            # archive listing documents in an array
 |  ├── compress.html           # compresses HTML in pure Liquid
 |  ├── default.html            # base for all other layouts
+|  ├── home.html               # home page
 |  ├── single.html             # single document (post/page/etc)
 |  └── splash.html             # splash page
 ├── _sass                      # SCSS partials
@@ -37,15 +41,14 @@ minimal-mistakes
 |  |  └── main.scss            # main stylesheet, loads SCSS partials from _sass
 |  ├── fonts
 |  |  └── fontawesome-webfont  # Font Awesome webfonts
+|  ├── images                  # image assets for posts/pages/collections/etc.
 |  ├── js
 |  |  ├── plugins              # jQuery plugins
 |  |  ├── vendor               # vendor scripts
 |  |  ├── _main.js             # plugin settings and other scripts to load after jQuery
 |  |  └── main.min.js          # optimized and concatenated script file loaded before </body>
-├── images                     # image assets for posts/pages/collections/etc.
 ├── _config.yml                # site configuration
 ├── Gemfile                    # gem file dependencies
-├── Gemfile.lock               # gem file dependencies
 ├── index.html                 # paginated home page showing recent posts
 └── package.json               # NPM build scripts
 ```

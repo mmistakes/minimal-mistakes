@@ -3,31 +3,31 @@ title: "Helpers"
 permalink: /docs/helpers/
 excerpt: "Jekyll `_includes` and other helpers to use as shortcuts for creating archives, galleries, table of contents, and more."
 gallery:
-  - url: unsplash-gallery-image-1.jpg
-    image_path: unsplash-gallery-image-1-th.jpg
+  - url: assets/images/unsplash-gallery-image-1.jpg
+    image_path: assets/images/unsplash-gallery-image-1-th.jpg
     alt: "placeholder image 1"
     title: "Image 1 title caption"
-  - url: unsplash-gallery-image-2.jpg
-    image_path: unsplash-gallery-image-2-th.jpg
+  - url: assets/images/unsplash-gallery-image-2.jpg
+    image_path: assets/images/unsplash-gallery-image-2-th.jpg
     alt: "placeholder image 2"
     title: "Image 2 title caption"
-  - url: unsplash-gallery-image-3.jpg
-    image_path: unsplash-gallery-image-3-th.jpg
+  - url: assets/images/unsplash-gallery-image-3.jpg
+    image_path: assets/images/unsplash-gallery-image-3-th.jpg
     alt: "placeholder image 3"
     title: "Image 3 title caption"
 feature_row:
-  - image_path: unsplash-gallery-image-1-th.jpg
+  - image_path: assets/images/unsplash-gallery-image-1-th.jpg
     alt: "placeholder image 1"
     title: "Placeholder 1"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
-  - image_path: unsplash-gallery-image-2-th.jpg
+  - image_path: assets/images/unsplash-gallery-image-2-th.jpg
     alt: "placeholder image 2"
     title: "Placeholder 2"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
     url: "#test-link"
     btn_label: "Read More"
     btn_class: "btn--inverse"
-  - image_path: unsplash-gallery-image-3-th.jpg
+  - image_path: assets/images/unsplash-gallery-image-3-th.jpg
     title: "Placeholder 3"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
 modified: 2016-06-01
@@ -72,22 +72,22 @@ To place a gallery add the necessary YAML Front Matter.
 | Name           | Required     | Description |
 | ----           | --------     | ----------- |
 | **url**        | Optional     | URL to link gallery image to (eg. a larger detail image). |
-| **image_path** | **Required** | For images placed in the `/images/` directory just add the filename and extension. Use absolute URLS for those hosted externally. |
+| **image_path** | **Required** | Full path to image eg: `assets/images/filename.jpg`. Use absolute URLS for those hosted externally. |
 | **alt**        | Optional     | Alternate text for image. |
 | **title**      | Optional     | Title text for image. Will display as a caption in a Magnific Popup overlay when linked to a larger image with `url`. |
 
 ```yaml
 gallery:
-  - url: unsplash-gallery-image-1.jpg
-    image_path: unsplash-gallery-image-1-th.jpg
+  - url: assets/images/unsplash-gallery-image-1.jpg
+    image_path: assets/images/unsplash-gallery-image-1-th.jpg
     alt: "placeholder image 1"
     title: "Image 1 title caption"
-  - url: unsplash-gallery-image-2.jpg
-    image_path: unsplash-gallery-image-2-th.jpg
+  - url: assets/images/unsplash-gallery-image-2.jpg
+    image_path: assets/images/unsplash-gallery-image-2-th.jpg
     alt: "placeholder image 2"
     title: "Image 2 title caption"
-  - url: unsplash-gallery-image-3.jpg
-    image_path: unsplash-gallery-image-3-th.jpg
+  - url: assets/images/unsplash-gallery-image-3.jpg
+    image_path: assets/images/unsplash-gallery-image-3-th.jpg
     alt: "placeholder image 3"
     title: "Image 3 title caption"
 ```
@@ -119,7 +119,7 @@ To add a feature row containing three content blocks with text and image, add th
 
 | Name           | Required     | Description | Default |
 | ----           | -----------  | ----------- | ------- |
-| **image_path** | **Required** | For images placed in the `/images/` directory just add the filename and extension. Use absolute URLS for those hosted externally. | |
+| **image_path** | **Required** | Full path to image eg: `assets/images/filename.jpg`. Use absolute URLS for those hosted externally. | |
 | **alt**        | Optional     | Alternate text for image. | |
 | **title**      | Optional     | Content block title. | |
 | **excerpt**    | Optional     | Content block excerpt text. Markdown is allowed. | |
@@ -129,18 +129,18 @@ To add a feature row containing three content blocks with text and image, add th
 
 ```yaml
 feature_row:
-  - image_path: unsplash-gallery-image-1-th.jpg
+  - image_path: assets/images/unsplash-gallery-image-1-th.jpg
     alt: "placeholder image 1"
     title: "Placeholder 1"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
-  - image_path: unsplash-gallery-image-2-th.jpg
+  - image_path: assets/images/unsplash-gallery-image-2-th.jpg
     alt: "placeholder image 2"
     title: "Placeholder 2"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
     url: "#test-link"
     btn_label: "Read More"
     btn_class: "btn--inverse"
-  - image_path: unsplash-gallery-image-3-th.jpg
+  - image_path: assets/images/unsplash-gallery-image-3-th.jpg
     title: "Placeholder 3"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
 ```
@@ -169,7 +169,7 @@ To include an [auto-generated table of contents](http://kramdown.rubyforge.org/c
 {% raw %}{% include toc %}{% endraw %}
 ```
 
-![table of contents example]({{ base_path }}/images/mm-toc-helper-example.jpg)
+![table of contents example]({{ base_path }}/assets/images/mm-toc-helper-example.jpg)
 
 | Parameter   | Required | Description | Default |
 | ---------   | -------- | ----------- | ------- |

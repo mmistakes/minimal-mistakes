@@ -48,7 +48,7 @@ The variables and settings found in `/_sass/_variables.scss` can be used to modi
 To mimic the look of type set in a printed book or manuscript you may want to enable paragraph indention. When `$paragraph-indent` is set to `true` indents are added to each sibling and the margin below each paragraph is removed.
 
 <figure>
-  <img src="{{ base_path }}/images/mm-paragraph-indent-example.jpg" alt="indented paragraph example">
+  <img src="{{ base_path }}/assets/images/mm-paragraph-indent-example.jpg" alt="indented paragraph example">
   <figcaption>Example of indented paragraphs.</figcaption>
 </figure>
 
@@ -130,6 +130,6 @@ Probably won't need to touch these, but they're there if you need to. Width vari
 And `$susy` is used for setting [the grid](http://susy.oddbird.net/) the theme uses. Uncommenting the lines under `debug` can be useful if you want to show the columns when adjusting the layout.
 
 <figure>
-  <img src="{{ base_path }}/images/mm-susy-grid-overlay.jpg" alt="Susy grid overlay for debugging">
+  <img src="{{ base_path }}/assets/images/mm-susy-grid-overlay.jpg" alt="Susy grid overlay for debugging">
   <figcaption>Susy grid debug overlay enabled.</figcaption>
 </figure>

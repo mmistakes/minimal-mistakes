@@ -2,7 +2,7 @@
 title: "Installation"
 permalink: /docs/installation/
 excerpt: "Instructions for installing the theme for new and existing Jekyll based sites."
-modified: 2016-08-01T09:36:36-04:00
+modified: 2016-10-06T22:53:48-04:00
 ---
 
 {% include base_path %}
@@ -11,12 +11,12 @@ modified: 2016-08-01T09:36:36-04:00
 
 There are several ways to install the theme:
 
-**1.** For a **new site**, fork the Minimal Mistakes repo on GitHub. If you plan on hosting your site with GitHub Pages follow the steps outlined in the [*Quick-Start Guide*]({{ base_path }}/docs/quick-start-guide/).
+**1.** For a **new site**, install the `minimal-mistakes-jekyll` theme gem or fork the Minimal Mistakes repo on GitHub following the steps outlined in the [*Quick-Start Guide*]({{ base_path }}/docs/quick-start-guide/).
 
-**2.** For an **existing site** you have some more work ahead of you. What I suggest is to fork and rename the theme's repo as before, then clone it locally by running `git clone https://github.com/USERNAME/REPONAME.git` --- replacing **USERNAME** and **REPONAME** with your own.
+**2.** For an **existing site** follow the **Ruby Gem Method** steps outlined in the [*Quick-Start Guide*]({{ base_path }}/docs/quick-start-guide/). If you plan to host with GitHub Pages I suggest you fork and rename the theme's repo, then clone it locally by running `git clone https://github.com/USERNAME/REPONAME.git` --- replacing **USERNAME** and **REPONAME** with your own. 
 
 <figure>
-  <img src="{{ base_path }}/images/mm-github-copy-repo-url.jpg" alt="copy GitHub repo URL">
+  <img src="{{ base_path }}/assets/images/mm-github-copy-repo-url.jpg" alt="copy GitHub repo URL">
   <figcaption>Tap the copy to clipboard button (outlined in red above) to grab your GitHub repo's path.</figcaption>
 </figure>
 
@@ -58,9 +58,38 @@ defaults:
 
 If this is your first time using Jekyll be sure to read through the [official documentation](https://jekyllrb.com/docs/home/) before jumping in. This guide assumes you have Ruby v2 installed and a basic understanding of how Jekyll works.
 
-To keep your sanity and better manage dependencies I strongly urge you to [install Bundler](http://bundler.io/) with `gem install bundler` and use the included [`Gemfile`](https://github.com/{{ site.repository }}/blob/master/Gemfile). The theme's Gemfile includes the `github-pages` gem to maintain a local Jekyll environment in sync with GitHub Pages.
+To keep your sanity and better manage dependencies I strongly urge you to [install Bundler](http://bundler.io/) with `gem install bundler` and use the following `Gemfile`:
 
-If you're not planning to host with GitHub Pages and want to leverage features found in the latest version of Jekyll, uncomment the `gem "jekyll"` line in your `Gemfile`. In either case run the following:
+```ruby
+source "https://rubygems.org"
+
+# Hello! This is where you manage which Jekyll version is used to run.
+# When you want to use a different version, change it below, save the
+# file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
+#
+#     bundle exec jekyll serve
+#
+# This will help ensure the proper Jekyll version is running.
+# Happy Jekylling!
+
+# gem "github-pages", group: :jekyll_plugins
+
+# To upgrade, run `bundle update`.
+
+gem "jekyll", "~> 3.3.0"
+gem "minimal-mistakes-jekyll"
+
+# If you have any plugins, put them here!
+group :jekyll_plugins do
+  gem "jekyll-paginate"
+  gem "jekyll-sitemap"
+  gem "jekyll-gist"
+  gem "jekyll-feed"
+  gem "jemoji"
+end
+```
+
+To maintain a local Jekyll environment in sync with GitHub Pages replace the `gem "jekyll"` line with `gem "github-pages", group: :jekyll_plugins` and run the following:
 
 ```bash
 $ bundle install
@@ -70,7 +99,7 @@ $ bundle install
 {: .notice--warning}
 
 <figure>
-  <img src="{{ base_path }}/images/mm-bundle-install.gif" alt="bundle install in Terminal window">
+  <img src="{{ base_path }}/assets/images/mm-bundle-install.gif" alt="bundle install in Terminal window">
 </figure>
 
 Depending on what gems you already have installed you may have to run `bundle update` to clear up any dependency issues. Bundler is usually pretty good at letting you know what gems need updating or have issues installing, to further investigate.

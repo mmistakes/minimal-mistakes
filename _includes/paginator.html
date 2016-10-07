@@ -1,14 +1,12 @@
-{% include base_path %}
-
 {% if paginator.total_pages > 1 %}
 <nav class="pagination">
   <ul>
     {% comment %} Link for previous page {% endcomment %}
     {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
-        <li><a href="{{ base_path }}/">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a></li>
+        <li><a href="{{ '/' | absolute_url }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a></li>
       {% else %}
-        <li><a href="{{ base_path }}/page{{ paginator.previous_page }}/">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a></li>
+        <li><a href="{{ '/page' | absolute_url }}{{ paginator.previous_page | append: '/' }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a></li>
       {% endif %}
     {% else %}
       <li><a href="#" class="disabled"><span aria-hidden="true">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</span></a></li>
@@ -18,7 +16,7 @@
     {% if paginator.page == 1 %}
       <li><a href="#" class="disabled current">1</a></li>
     {% else %}
-      <li><a href="{{ base_path }}/">1</a></li>
+      <li><a href="{{ '/' | absolute_url }}">1</a></li>
     {% endif %}
 
     {% assign page_start = 2 %}
@@ -36,7 +34,7 @@
 
     {% for index in (page_start..page_end) %}
       {% if index == paginator.page %}
-        <li><a href="{{ base_path }}/page{{ index }}/" class="disabled current">{{ index }}</a></li>
+        <li><a href="{{ '/page' | absolute_url }}{{ index | append: '/' }}" class="disabled current">{{ index }}</a></li>
       {% else %}
         {% comment %} Distance from current page and this link {% endcomment %}
         {% assign dist = paginator.page | minus: index %}
@@ -44,7 +42,7 @@
           {% comment %} Distance must be a positive value {% endcomment %}
           {% assign dist = 0 | minus: dist %}
         {% endif %}
-        <li><a href="{{ base_path }}/page{{ index }}/">{{ index }}</a></li>
+        <li><a href="{{ '/page' | absolute_url }}{{ index | append: '/' }}">{{ index }}</a></li>
       {% endif %}
     {% endfor %}
 

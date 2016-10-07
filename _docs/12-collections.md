@@ -45,4 +45,4 @@ defaults:
 
 And then create portfolio content like [`_portfolio/foo-bar-website.md`](https://github.com/{{ site.repository }}/blob/gh-pages/_portfolio/foo-bar-website.md), to end up with something like this.
 
-![portfolio collection example]({{ base_path }}/images/mm-portfolio-collection-example.jpg)
+![portfolio collection example]({{ base_path }}/assets/images/mm-portfolio-collection-example.jpg)

@@ -2,7 +2,7 @@
 title: "Authors"
 permalink: /docs/authors/
 excerpt: "Instructions and settings for working with multiple site authors."
-modified: 2016-04-13T15:54:02-04:00
+modified: 2016-10-06T23:00:31-04:00
 ---
 
 {% include base_path %}
@@ -21,14 +21,14 @@ Billy Rick:
   uri: "http://thewhip.com"
   email: "billy@rick.com"
   bio: "What do you want, jewels? I am a very extravagant man."
-  avatar: "bio-photo-2.jpg"
+  avatar: "assets/images/bio-photo-2.jpg"
   twitter: "extravagantman"
 
 Cornelius Fiddlebone:
   name: "Cornelius Fiddlebone"
   email: "cornelius@thewhip.com"
   bio: "I ordered what?"
-  avatar: "bio-photo.jpg"
+  avatar: "assets/images/bio-photo.jpg"
   twitter: "rhymeswithsackit"
 ```
 
