@@ -1,0 +1,14 @@
+{% include base_path %}
+
+<figure class="{{ include.class }}">
+  <img src=
+    {% if include.image_path contains "://" %}
+      "{{ include.image_path }}"
+    {% else %}
+      "{{ include.image_path | prepend: "/assets/images/" | prepend: base_path }}"
+    {% endif %}
+    alt="{% if include.alt %}{{ include.alt }}{% endif %}">
+  {% if include.caption %}
+    <figcaption>{{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}</figcaption>
+  {% endif %}
+</figure>
