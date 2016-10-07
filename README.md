@@ -1,6 +1,6 @@
 # [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/)
 
-[![GitHub release](https://img.shields.io/github/release/mmistakes/minimal-mistakes.svg)](https://github.com/mmistakes/minimal-mistakes/releases) [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
+[![GitHub release](https://img.shields.io/gem/v/minimal-mistakes-jekyll.svg)](https://github.com/mmistakes/minimal-mistakes/releases) [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
 
 Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your personal site, blog, or portfolio on GitHub or self-hosting on your own server. As the name implies --- styling is purposely minimalistic to be enhanced and customized by you :smile:.
 
@@ -9,26 +9,22 @@ See what's new in the [CHANGELOG](CHANGELOG.md).
 [![Minimal Mistakes live preview][2]][1]
 
 [1]: https://mmistakes.github.io/minimal-mistakes/
-[2]: images/mm-browser-mockups.png (live preview)
+[2]: screenshot.png (live preview)
 
-The theme includes responsive layouts (`single`, `archive`, and `splash` pages) that look great on mobile and desktop browsers.
+![layout examples](screenshot-layouts.png)
 
-![layout examples](images/mm-layout-examples.png)
-
-## [Installation and Setup](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/) / [Preview the Theme](https://mmistakes.github.io/minimal-mistakes/)
-
-### Notable Features
+## Notable Features
 
 - Compatible with Jekyll 3.x and GitHub Pages
 - Support for Jekyll's built-in Sass/SCSS preprocessor
-- Several layout options (single, archive, splash pages)
+- Several responsive layout options (single, archive index, splash, and paginated home page)
 - SEO optimized with support for [Twitter Cards](https://dev.twitter.com/cards/overview) and [Open Graph](http://ogp.me/) data
-- Optional header images, sidebars, table of contents, galleries, related posts, breadcrumb links, and more.
-- Optional comments ([Disqus](https://disqus.com/), [Facebook](https://developers.facebook.com/docs/plugins/comments), Google+, [Discourse](https://www.discourse.org/), static-based via [Staticman](https://staticman.net/), and custom).
-- Optional analytics ([Google Analytics](https://www.google.com/analytics/) and custom).
-- UI localized text: English (default), Spanish, French, and Turkish.
+- Optional header images, sidebars, table of contents, galleries, related posts, breadcrumb links, navigation lists, and more.
+- Commenting support (powere by [Disqus](https://disqus.com/), [Facebook](https://developers.facebook.com/docs/plugins/comments), Google+, [Discourse](https://www.discourse.org/), static-based via [Staticman](https://staticman.net/), and custom).
+- [Google Analytics](https://www.google.com/analytics/) support.
+- UI localized text in English (default), Brazilian Portguese, Chinese, French, German, Italian, Spanish, and Turkish
 
-#### Demo Pages
+## Demo Pages
 
 | Name                                        | Description                                           |
 | ------------------------------------------- | ----------------------------------------------------- |
@@ -40,7 +36,7 @@ The theme includes responsive layouts (`single`, `archive`, and `splash` pages) 
 | [Categories Archive][categories-archive] | Posts grouped by category. |
 | [Tags Archive][tags-archive] | Posts grouped by tags. |
 
-For even more demo pages check the [posts archive][year-archive].
+For even more demo pages check the [posts archive][year-archive] on the demo site. Looking for the source code to peep the YAML Front Matter and Markdown used? Check the [`gh-pages`](https://github.com/mmistakes/minimal-mistakes/tree/gh-pages) branch.
 
 [header-image-post]: https://mmistakes.github.io/minimal-mistakes/layout-header-image-text-readability/
 [gallery-post]: https://mmistakes.github.io/minimal-mistakes/post%20formats/post-gallery/
@@ -50,6 +46,32 @@ For even more demo pages check the [posts archive][year-archive].
 [categories-archive]: https://mmistakes.github.io/minimal-mistakes/categories/
 [tags-archive]: https://mmistakes.github.io/minimal-mistakes/tags/
 [year-archive]: https://mmistakes.github.io/minimal-mistakes/year-archive/
+
+## Quick Start
+
+Add this line to your Jekyll site's `Gemfile`:
+
+```ruby
+gem "minimal-mistakes-jekyll"
+```
+
+Add this line to your Jekyll site's `_config.yml` file:
+
+```yaml
+theme: minimal-mistakes-jekyll
+```
+
+Run Bundler:
+
+```bash
+bundle install
+```
+
+## Usage
+
+For detailed instructions on how to configure, customize, add content, and more read the [theme's documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
+
+**Note:** Gem version of the theme requires Jekyll v3.3+ and is not supported with sites hosted with [GitHub Pages](https://pages.github.com/). You can still use the theme on GitHub Pages, you'll just need to install using the old "[repo fork method](https://mmistakes.github.io/minimal-mistakes/docs/installation/)".
 
 ---
 
@@ -64,6 +86,8 @@ This goes for author sidebar links and "share button" additions -- I have no int
 ### Pull Requests
 
 To help me out try to avoid creating pull requests on `master` and instead branch off of `develop`. It's much easier for me to test, merge, and roll them into new releases this way.
+
+Theme documentation and demo pages can be found in the `gh-pages` branch, please submit pull requests against that branch.
 
 ---
 
