@@ -14,7 +14,7 @@ description              : &description "A fashion jewellery catalogue"
 url                      : "https://grvaggarwal.github.io"
 baseurl                  : "/madhumohan-arts"
 repository               : "grvaggarwal/madhumohan-arts"
-teaser                   : "Madhumohan.png" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser                   : "Madhumohan.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -78,7 +78,7 @@ analytics:
 # Site Author
 author:
   name             : "Madhumohan Arts"
-  avatar           : "bio-photo.jpg"
+  avatar           : "20160128_133416.jpg"
   bio              : "A fashion jewellery catalogue"
   location         : "Jalandhar"
   email            : "madhuaggarwal31@gmail.com"
