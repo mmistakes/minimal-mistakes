@@ -236,9 +236,9 @@
         width: 100%;
         -webkit-transition: $global-transition;
         transition: $global-transition;
-        -webkit-transform: scaleX(0);
-            -ms-transform: scaleX(0);
-                transform: scaleX(0); /* hide*/
+        -webkit-transform: scaleX(0) translate3d(0, 0 , 0);
+            -ms-transform: scaleX(0) translate3d(0, 0 , 0);
+                transform: scaleX(0) translate3d(0, 0 , 0); /* hide*/
       }
 
       &:hover:before {
