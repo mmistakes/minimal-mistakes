@@ -9,16 +9,16 @@
 locale                   : "en"
 title                    : "Madhumohan Arts"
 title_separator          : "-"
-name                     : @name "Gaurav Aggarwal"
-description              : "A fashion jewellery catalogue"
+name                     : &name "Gaurav Aggarwal"
+description              : &description "A fashion jewellery catalogue"
 url                      : "https://grvaggarwal.github.io"
 baseurl                  :"/madhumohan-arts"
 repository               :"grvaggarwal /madhumohan-arts"
-teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser                   : "madhumohan.png" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : "facebook" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -26,8 +26,8 @@ comments:
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    num_posts            : 4 # 5 (default)
+    colorscheme          : "dark" # "light" (default), "dark"
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
   branch                 : # "master", "gh-pages"
@@ -57,9 +57,9 @@ yandex_site_verification :
 twitter:
   username               :
 facebook:
-  username               :
+  username               : "Madhumohan Arts"
   app_id                 :
-  publisher              :
+  publisher              : "@madhumohanarts"
 og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
@@ -77,17 +77,17 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Madhumohan Arts"
   avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  bio              : "A fashion jewellery catalogue"
+  location         : "Jalandhar"
+  email            : "madhuaggarwal31@gmail.com"
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "@madhumohanarts"
   foursquare       :
   github           :
   google_plus      :
