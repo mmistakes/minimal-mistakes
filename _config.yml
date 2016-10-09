@@ -14,7 +14,7 @@ description              : &description "A fashion jewellery catalogue"
 url                      : "https://grvaggarwal.github.io"
 baseurl                  : "/madhumohan-arts"
 repository               : "grvaggarwal/madhumohan-arts"
-teaser                   : "Madhumohan.png"
+teaser                   : "20160128_133416.jpg"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
