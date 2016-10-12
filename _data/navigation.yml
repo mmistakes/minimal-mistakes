@@ -4,7 +4,7 @@ main:
     url: http://shanghailectures.org/lectures
 
   - title: "Group Project Kōans"
-    url: /koans.md
+    url: /koans/
 
   - title: "Guest Lecture Repository"
     url: http://shanghailectures.org/lectures/guest-lectures
