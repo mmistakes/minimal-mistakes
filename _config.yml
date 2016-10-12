@@ -50,8 +50,17 @@ atom_feed:
 
 
 defaults:
-  -
-    scope:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  - scope:
       path: ""
       type: "pages"
     values:
