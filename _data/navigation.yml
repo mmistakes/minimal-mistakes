@@ -3,7 +3,7 @@ main:
   - title: "Sample Navigation Link"
     url: https://mmistakes.github.io/minimal-mistakes/docs/navigation/
 
- - title: "Group Project Kōans"
+  - title: "Group Project Kōans"
     url: http://shanghailectures.org/koans
 
   - title: "Guest Lecture Repository"
