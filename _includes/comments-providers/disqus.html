@@ -1,7 +1,12 @@
 {% if site.comments.disqus.shortname %}
+{% capture canonical %}{{ base_path }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
   <script type="text/javascript">
   	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
   	var disqus_shortname = '{{ site.comments.disqus.shortname }}';
+
+  	var disqus_config = function () {
+  		 this.page.url = '{{ canonical }}';
+  	};
 
   	/* * * DON'T EDIT BELOW THIS LINE * * */
   	(function() {
