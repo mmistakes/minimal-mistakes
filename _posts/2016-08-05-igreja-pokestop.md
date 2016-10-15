@@ -1,4 +1,4 @@
-﻿---
+---
 title: Minha igreja virou uma Pokéstop e agora?
 date: '2016-08-05 00:00:00'
 layout: post
