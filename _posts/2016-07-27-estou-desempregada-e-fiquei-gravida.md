@@ -1,4 +1,4 @@
-﻿---
+---
 title: Estou desempregada e fiquei grávida, posso receber salário-maternidade?
 date: '2016-07-27 00:00:00'
 author: Franklin Baldo
