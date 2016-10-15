@@ -1,12 +1,11 @@
----
-title: "Página não encontrada."
+ï»¿---
+title: "PÃ¡gina nÃ£o encontrada."
 layout: single
-excerpt: "Não encontramos a página que você procurava, mas temos outras, confira"
-sitemap: false
-permalink: /404.html
+excerpt: "NÃ£o encontramos a pÃ¡gina que vocÃª procurava, mas temos outras, confira"
+sitemap: true
+permalink: /consulta.html
 ---
-
-Não encontramos a página que você procurava, mas temos outras, confira. Você pode também pesquisar no nosso site.
+NÃ£o encontramos a pÃ¡gina que vocÃª procurava, mas temos outras, confira. VocÃª pode tambÃ©m pesquisar no nosso site.
 
 <script type="text/javascript">
   var GOOG_FIXURL_LANG = 'pt-BR';

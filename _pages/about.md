@@ -1,11 +1,10 @@
----
-title: 
-ID: 11
-post_title: Quem somos
+﻿---
+title: "Quem somos"
+layout: single
 author: Franklin Baldo
-post_date: '2016-05-12 00:00:00'
-layout: page
-consulta: true
+excerpt: "A Baldo e Queiroz Advogados atua nas áreas de direito civil, trabalhista, imobiliário, previdenciário e administrativo."
+sitemap: true
+permalink: /about.html
 ---
 
 # QUEM SOMOS
