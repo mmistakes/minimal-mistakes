@@ -6,21 +6,21 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en"
-title                    : "Site Title"
-title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+locale                   : "pt-BR"
+title                    : "Baldo e Queiroz Advogados"
+title_separator          : "|"
+name                     : "Franklin Silveira Baldo"
+description              : "Advocacia civil, trabalhalista, administrativa e tributária em Porto Velho e todo o estado de Rondônia."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-# breadcrumbs            : false # true, false (default)
+repository               : "franklinbaldo/franklinbaldo.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser                   : "caixas.jpg" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "baldoequeiroz" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -55,42 +55,45 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "baldoequeiroz"
 facebook:
-  username               :
+  username               : "baldoequeiroz"
   app_id                 :
-  publisher              :
-og_image                 : # Open Graph/Twitter default site image
+  publisher              : "franklinbaldo"
+og_image                 : "somente_logo_baldoequeiroz.png" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
+  type                   : "Organization" # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  links: 
+  # An array of links to social media profiles
+    - "https://twitter.com/baldoequeiroz"
+    - "https://facebook.com/baldoequeiroz"
+    - "https://plus.google.com/+baldoequeirozbrasil"
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
-
+    tracking_id          : UA-77711671-2
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  name             : "Baldo e Queiroz Advogados"
+  avatar           : "somente_logo_baldoequeiroz.png"
+  bio              : "Advocacia civil, trabalhalista, administrativa e tributária em Porto Velho e todo o estado de Rondônia."
+  location         : "Porto Velho, Rondônia"
+  email            : "advocacia@baldoequeiroz.com.br"
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
-  foursquare       :
-  github           :
-  google_plus      :
+  facebook         : "baldoequeiroz"
+  foursquare       : 
+  github           : "baldoequeiroz"
+  google_plus      : "+baldoequeirozbrasil"
   keybase          :
   instagram        :
   lastfm           :
@@ -100,7 +103,7 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "baldoequeiroz"
   vine             :
   weibo            :
   xing             :
@@ -172,7 +175,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Manaus # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
@@ -227,3 +230,16 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      read_time: true    
+      comments: true
+      layout: single
+      author_profile: true
+      share: true
+      related: true
