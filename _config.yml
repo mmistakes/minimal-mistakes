@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "SAP on VMware"
 title_separator          : "-"
 name                     : "Your Name"
 description              : "An amazing website."
