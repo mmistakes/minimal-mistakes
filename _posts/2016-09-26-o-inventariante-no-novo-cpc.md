@@ -1,4 +1,4 @@
-﻿---
+---
 title: O inventariante no novo CPC
 date: '2016-09-26 00:00:00'
 layout: post
