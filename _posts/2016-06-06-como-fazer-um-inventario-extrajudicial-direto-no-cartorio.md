@@ -1,4 +1,4 @@
-﻿---
+---
 title: Como fazer um inventário extrajudicial (direto no cartório)?
 date: '2016-06-06 00:00:00'
 author: Arthur Antunes
