@@ -1,7 +1,4 @@
----
-title: 
-date: '2016-08-22 00:00:00'
----
+﻿---
 title: Bancos não podem cobrar por pacotes de serviços não contratados
 date: '2016-08-22 00:00:00'
 author: Arthur Antunes

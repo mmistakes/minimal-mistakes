@@ -1,7 +1,4 @@
----
-title: 
-date: '2016-06-06 00:00:00'
----
+﻿---
 title: Como fazer um inventário extrajudicial (direto no cartório)?
 date: '2016-06-06 00:00:00'
 author: Arthur Antunes
@@ -15,7 +12,10 @@ A morte de um parente, além do sofrimento causado pela perda daquele ente queri
 
 Sendo um procedimento de apuração tantos dos bens, como dos direitos e dívidas do falecido, e consequentemente, de realização da partilha entre os herdeiros, o inventário tem a fama de ser extremamente complicado e demorado, podendo ser realizado pela via judicial (e é daí que se origina a “má” fama do instituto) ou extrajudicial, diretamente no cartório.
 
-O inventário será obrigatoriamente judicial, quando: a) o falecido deixou um testamento; b) há interessados incapazes (menores ou interditados); ou, c) há divergência quanto à partilha entre os herdeiros.
+O inventário será obrigatoriamente judicial, quando: 
+* a) o falecido deixou um testamento; 
+* b) há interessados incapazes (menores ou interditados); ou, 
+* c) há divergência quanto à partilha entre os herdeiros.
 
 Já o inventário extrajudicial é aquele que não precisa ser acompanhado por um juiz, sendo realizado através de escritura pública no Tabelionato de Notas, tendo sido instituído através da [Lei n.º 11.441/2007](http://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/lei/l11441.htm).
 
