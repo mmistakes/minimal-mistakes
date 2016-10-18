@@ -1,7 +1,7 @@
-# main links links
+﻿# main links links
 main:
-  - title: "Sample Navigation Link"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/navigation/
+  - title: "Consulte-nos"
+    url: /consulta
 
-  - title: "Sample Navigation Link 2"
-    url: /
+  - title: "☏ (69) 98415-4343"
+    url: "tel:69984154343"

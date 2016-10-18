@@ -2,10 +2,9 @@
 title: "Página não encontrada."
 layout: single
 excerpt: "Não encontramos a página que você procurava, mas temos outras, confira"
-sitemap: false
-permalink: /404.html
+sitemap: true
+permalink: /consulta.html
 ---
-
 Não encontramos a página que você procurava, mas temos outras, confira. Você pode também pesquisar no nosso site.
 
 <script type="text/javascript">
