@@ -1,3 +1,73 @@
+## [3.4.8](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.8)
+
+### Enhancements
+
+- Improve type readability for larger viewports by bumping up base `font-size`. [#533](https://github.com/mmistakes/minimal-mistakes/issues/533)
+- Update Portuguese localized UI text. [#541](https://github.com/mmistakes/minimal-mistakes/pull/541)
+- Add `page.title` and via parameter to Twitter share link. [#538](https://github.com/mmistakes/minimal-mistakes/pull/538)
+
+### Bug Fixes
+
+- Fix Last.fm author profile URL. [#540](https://github.com/mmistakes/minimal-mistakes/pull/540)
+
+### Maintenance
+
+- Move Brazilian Portuguese localized text under `pt-BR` key.
+
+## [3.4.7](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.7)
+
+### Enhancements
+
+- Add `layout` based and user-defined class names to `<body>` element for added CSS hooks. [#526](https://github.com/mmistakes/minimal-mistakes/pull/526)
+- Add simplified Chinese localized UI text. [#532](https://github.com/mmistakes/minimal-mistakes/pull/532)
+
+### Bug Fixes
+
+- Remove duplicate include of `base_path` in category-list.html [#522](https://github.com/mmistakes/minimal-mistakes/pull/522)
+
+## [3.4.6](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.6)
+
+### Enhancements
+
+- Add Italian "comments" related localized UI text. [#514](https://github.com/mmistakes/minimal-mistakes/pull/514)
+
+### Bug Fixes
+
+- Disable `compress` HTML layout by default. To enable add `layout: compress` to `_layouts/default.html`.
+
+## [3.4.5](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.5)
+
+### Enhancements
+
+- Improve line numbered code block styling when using `{% highlight linenos %}` tag. [#513](https://github.com/mmistakes/minimal-mistakes/issues/513)
+- Add English fallback to "Follow" button label. [#496](https://github.com/mmistakes/minimal-mistakes/pull/496)
+
+### Bug Fixes
+
+- Fix Firefox alignment issues with code blocks generated with the `{% highlight %}` tag. [#512](https://github.com/mmistakes/minimal-mistakes/issues/512)
+
+### Maintenance
+
+- Clarified comment for `author.stackoverflow` value used in author sidebar links. [#487](https://github.com/mmistakes/minimal-mistakes/pull/487)
+- Add list of localized text strings. [#488](https://github.com/mmistakes/minimal-mistakes/pull/488)
+- Add `{% highlight %}` code block examples to demo site.
+- Add documentation for using custom sidebar navigation menus. [#476](https://github.com/mmistakes/minimal-mistakes/issues/476)
+
+## [3.4.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.4)
+
+### Enhancements
+
+- Add French "comments" related localized UI text. [#472](https://github.com/mmistakes/minimal-mistakes/pull/472)
+
+### Bug Fixes
+
+- Exclude `vendor` in Jekyll config file.
+- Fix Liquid syntax error for offending parenthesis. [#479](https://github.com/mmistakes/minimal-mistakes/issues/479)
+
+### Maintenance
+
+- Update gems: `colorator` (1.1.0), `forwardable-extended` (2.6.0), `github-pages` (93), `jekyll` (= 3.2.1), `minima` (= 1.0.1).
+
 ## [3.4.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.3)
 
 ### Enhancements

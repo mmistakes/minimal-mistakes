@@ -1,5 +1,4 @@
 ---
-layout: compress
 ---
 
 {% include base_path %}
@@ -19,7 +18,7 @@ layout: compress
   </script>
   </head>
 
-  <body>
+  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
 
     {% include browser-upgrade.html %}
     {% include masthead.html %}

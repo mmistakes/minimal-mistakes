@@ -20,7 +20,7 @@
   </div>
 
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
+    <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button>
     <ul class="author__urls social-icons">
       {% if author.location %}
         <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.location }}</li>
@@ -65,7 +65,7 @@
         <li><a href="https://www.stackoverflow.com/users/{{ author.stackoverflow }}"><i class="fa fa-fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow</a></li>
       {% endif %}
       {% if author.lastfm %}
-        <li><a href="https://lastfm.com/user/{{ author.lastfm }}"><i class="fa fa-fw fa-lastfm-square" aria-hidden="true"></i> Last.fm</a></li>
+        <li><a href="https://last.fm/user/{{ author.lastfm }}"><i class="fa fa-fw fa-lastfm-square" aria-hidden="true"></i> Last.fm</a></li>
       {% endif %}
       {% if author.dribbble %}
         <li><a href="https://dribbble.com/{{ author.dribbble }}"><i class="fa fa-fw fa-dribbble" aria-hidden="true"></i> Dribbble</a></li>

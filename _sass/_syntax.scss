@@ -2,9 +2,13 @@
    Syntax highlighting
    ========================================================================== */
 
-div.highlighter-rouge, figure.highlight {
+div.highlighter-rouge,
+figure.highlight {
   position: relative;
   margin-bottom: 1em;
+  font-family: $monospace;
+  font-size: $type-size-7;
+  line-height: 1.8;
   border: 1px solid $border-color;
   border-radius: $border-radius;
   background-color: $code-background-color;
@@ -18,7 +22,6 @@ div.highlighter-rouge, figure.highlight {
     background-color: $lighter-gray;
     content: "\f121";
     font-family: "fontawesome" !important;
-    font-size: $type-size-6;
     line-height: 1;
     text-transform: none;
     speak: none;
@@ -27,15 +30,35 @@ div.highlighter-rouge, figure.highlight {
   .highlight {
     margin: 0;
     padding: 1em;
-    font-family: $monospace;
-    font-size: $type-size-7;
-    line-height: 1.8;
   }
 }
 
-.highlight table td { padding: 5px; }
-.highlight table pre { margin: 0; }
+figure.highlight {
+  padding-left: 1em;
+  padding-right: 1em;
+}
 
+.highlight table {
+  font-size: 1em;
+  border: 0;
+
+  td {
+    padding: 5px;
+    border: 0;
+
+    // line numbers
+    &.gutter {
+      padding-right: 1em;
+      color: $light-gray;
+    }
+  }
+
+  pre {
+    margin: 0;
+  }
+}
+
+.highlight pre { width: 100%; }
 
 /*
    Solarized Light
