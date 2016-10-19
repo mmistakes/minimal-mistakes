@@ -12,6 +12,7 @@ title_separator          : "-"
 name                     : "Olivier Jacques"
 description              : "Projects, slides, videos, tutorials."
 url                      : "https://ojacques.github.io"
+#url                      : "http://127.0.0.1:4000"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "ojacques/ojacques.github.io"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -149,7 +150,12 @@ defaults:
       path: ""
       type: posts
     values:
+      layout: single
       read_time: true
+      comments: false
+      share: true
+      related: true
+      author_profile: true
 
 # Conversion
 markdown: kramdown
@@ -219,15 +225,15 @@ tag_archive:
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+#    enabled:
+#      - categories
+#      - tags
+#    layouts:
+#      category: archive-taxonomy
+#      tag: archive-taxonomy
+#    permalinks:
+#      category: /categories/:name/
+#      tag: /tags/:name/
 
 
 # HTML Compression
