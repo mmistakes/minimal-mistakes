@@ -1,4 +1,4 @@
-![Build status](https://travis-ci.org/ojacques/ojacques.github.io.svg?branch=master)
+[![Build status](https://travis-ci.org/ojacques/ojacques.github.io.svg?branch=master)](https://travis-ci.org/ojacques/ojacques.github.io)
 
 # ojacques.github.io
 
