@@ -574,7 +574,7 @@ tag_archive:
 
 Which would create category and tag links in the breadcrumbs and page meta like: `/categories/#foo` and `/tags/#foo`.
 
-**Note:** for these links to resolve properly, category and tag index pages need to exist at [`/categories/index.html`](https://github.com/{{ site.repository }}/gh-pages/_pages/category-archive.html) and [`/tags/index.html`](https://github.com/{{ site.repository }}/gh-pages/_pages/tag-archive.html). The necessary Liquid code to build these pages can be taken from the demo site.
+**Note:** for these links to resolve properly, category and tag index pages need to exist at [`/categories/index.html`](https://github.com/{{ site.repository }}/blob/gh-pages/_pages/category-archive.html) and [`/tags/index.html`](https://github.com/{{ site.repository }}/blob/gh-pages/_pages/tag-archive.html). The necessary Liquid code to build these pages can be taken from the demo site.
 {: .notice--warning}
 
 If you have the luxury of using Jekyll Plugins then [**jekyll-archives**][jekyll-archives] will make your life much easier as category and tag pages are created for you.
