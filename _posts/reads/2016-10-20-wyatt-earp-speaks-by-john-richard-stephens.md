@@ -22,7 +22,7 @@ the events are interesting, unfortunately, it feels disjointed in its delivery.
 Perhaps I'm jaded by Hollywood's popular renditions of the gun slinging hero.
 
 It's an interesting collection of articles and letters written by 
-[Wyatt Earp](https://en.wikipedia.org/wiki/Wyatt_Earp, 
+[Wyatt Earp](https://en.wikipedia.org/wiki/Wyatt_Earp), 
 along with several articles and interviews of the man by others. The author 
 clearly denotes the few that are from questionable sources, describing why 
 they lack credibility. He includes them to provide a sense of the publicity 
