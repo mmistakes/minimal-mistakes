@@ -3,7 +3,7 @@ title: "Sold!"
 author: matt_gregory
 comments: yes
 date: '2016-10-23'
-modified: 2016-10-23
+modified: 2016-10-24
 layout: post
 excerpt: "Advanced Regression techniques for predicting house prices"
 published: true
@@ -19,12 +19,10 @@ output: html_document
  
 
  
-There seems nothing the British press likes more than a good house price story. 
-Accordingly we use the [Kaggle dataset](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data) on house prices as a demonstration of the data science workflow. 
-With 79 explanatory variables describing (almost) every aspect of residential homes in Ames, Iowa, this competition challenges you to predict the final price of each home (every dataset has a story, see here for [details](https://ww2.amstat.org/publications/jse/v19n3/decock.pdf)). 
-I found this dataset particularly interesting, as it informs someone new to he housing market as to what variables one should ask questions about if one were to buy a house.  
+There seems nothing the British press likes more than a good house price story. Accordingly we use the [Kaggle dataset](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data) on house prices as a demonstration of the data science workflow. With 79 explanatory variables describing (almost) every aspect of residential homes in Ames, Iowa, this competition challenges you to predict the final price of each home (every dataset has a story, see here for [details](https://ww2.amstat.org/publications/jse/v19n3/decock.pdf)). I found this dataset particularly interesting, as it informs someone new to he housing market as to what variables one should ask questions about if one were to buy a house.  
  
 We start by downloading the data from Kaggle and reading the training data into R using the `readr` package, a subset of the excellent package of packages that is the `tidyverse`. We check the variables or features are the appropriate data class.
+ 
 
 {% highlight r %}
 library(tidyverse)
@@ -52,8 +50,7 @@ train_correct_type <- train %>%
 #glimpse(train_correct_type)
 {% endhighlight %}
  
-Inspection of some of our factors reveals that unsurprisingly the levels of the factor have not been ordered correctly. 
-However, the ordering has not been explicitly set, as that is not the default for `factor`. This loses us information, for example if we compare what R thinks is the case and what should be the case, we see a discrepancy. R defaults to use alphabetical order. If we were to set the levels correctly for each factor this could improve our predictions. 
+Inspection of some of our factors reveals that unsurprisingly the levels of the factor have not been ordered correctly. However, the ordering has not been explicitly set, as that is not the default for `factor`. This loses us information, for example if we compare what R thinks is the case and what should be the case, we see a discrepancy. R defaults to use alphabetical order. If we were to set the levels correctly for each factor this could improve our predictions. 
  
 
 {% highlight r %}
@@ -81,14 +78,14 @@ is.ordered(train_correct_type$BsmtQual)
  
 `BsmtQual`: Evaluates the height of the basement
  
-       | Code | Description | Inches | 
-       |:--------:|:----------:|:----------:| 
-       |   Ex   |  Excellent  |    100+   | 
-       |  Gd    |  Good       |   90-99   | 
-       |    TA  |    Typical  |     80-89   | 
-       |   Fa   |    Fair     |   70-79  |
-       |   Po   |    Poor     |  <70   |
-       |   NA   |    No Basement|  NA |
+| Code | Description | Inches | 
+|:--------:|:----------:|:----------:| 
+|   Ex   |  Excellent  |    100+   | 
+|  Gd    |  Good       |   90-99   | 
+|    TA  |    Typical  |     80-89   | 
+|   Fa   |    Fair     |   70-79  |
+|   Po   |    Poor     |  <70   |
+|   NA   |    No Basement|  NA |
  
 ### Missing data
  
@@ -103,7 +100,7 @@ The missing data is found in about a dozen or so of the variables (those on the 
 extracat::visna(train_correct_type, sort = "b")
 {% endhighlight %}
 
-![plot of chunk 2016-10-23_visna](/figures/2016-10-23_visna-1.svg)
+![plot of chunk 2016-10-23_visna](/_site/figures/2016-10-23_visna-1.svg)
  
 ### Keep it simple
  
@@ -182,7 +179,7 @@ Let's take a closer look at `GrLiveArea`, there seem to be four outliers. Accord
 plot(train_no_factors$SalePrice, train_no_factors$GrLivArea)
 {% endhighlight %}
 
-![plot of chunk 2016-10-23_sp](/figures/2016-10-23_sp-1.svg)
+![plot of chunk 2016-10-23_sp](/_site/figures/2016-10-23_sp-1.svg)
  
 
 {% highlight r %}
@@ -199,14 +196,14 @@ corrplot::corrplot(cor(train_no_factors), method = "circle", type = "lower", dia
                    order = "FPC", tl.cex = 0.6, tl.col = "black") #  plot matrix and ordered by first principal component
 {% endhighlight %}
 
-![plot of chunk 2016-10-23_corrplot](/figures/2016-10-23_corrplot-1.svg)
+![plot of chunk 2016-10-23_corrplot](/_site/figures/2016-10-23_corrplot-1.svg)
  
 This display of the correlation matrix shows the most important variables associated with `SalePrice`. This provides a good starting point for modelling and or feature selection. For example `OverallCond` shows poor correlation with `SalePrice`, perhaps we need to adjust this variable to improve its information content. Or perhaps people ignore the condition and think of the property as a fixer upper opportunity. As you can see there is huge depth to the data and it would be easy to feel overwhelmed. Fortunately, we're not trying to win the competition, just produce some OK predictions quickly.  
  
 > Premature optimization is the root of all evil - Donald Knuth
  
 ## Regression
-To simplify the problem and celebrate the `mlr` package release (or at least my discovery of it), I implement some of the packages tools for regression and feature selection here. For a detailed tutorial, which this post draws heavily from, see the [mlr home page](https://mlr-org.github.io/mlr-tutorial/release/html/index.html). Also some Kagglers have contributed many and varied [useful ideas](https://www.kaggle.com/shankarpandala/house-prices-advanced-regression-techniques/housing-prices-predicition-in-r) about this problem.
+To simplify the problem and celebrate the `mlr` package release (or at least my discovery of it), I implement some of the packages tools for regression and feature selection here. For a detailed tutorial, which this post draws heavily from, see the [mlr home page](https://mlr-org.github.io/mlr-tutorial/release/html/index.html). Also some Kagglers have also contributed many and varied [useful ideas](https://www.kaggle.com/shankarpandala/house-prices-advanced-regression-techniques/housing-prices-predicition-in-r) about this problem.
  
 ### Machine Learning Tasks
  
@@ -293,14 +290,14 @@ task_pred
 ## Prediction: 1459 observations
 ## predict.type: response
 ## threshold: 
-## time: 0.08
+## time: 0.15
 ##   response
-## 1 141292.7
-## 2 149078.0
-## 3 154767.6
-## 4 155542.5
-## 5 204469.7
-## 6 157478.1
+## 1 140901.2
+## 2 148352.9
+## 3 154035.7
+## 4 154848.0
+## 5 203831.9
+## 6 156870.9
 {% endhighlight %}
  
 ### Submission
@@ -319,12 +316,12 @@ head(submission)
 ## # A tibble: 6 × 2
 ##      Id SalePrice
 ##   <int>     <dbl>
-## 1  1461  141292.7
-## 2  1462  149078.0
-## 3  1463  154767.6
-## 4  1464  155542.5
-## 5  1465  204469.7
-## 6  1466  157478.1
+## 1  1461  140901.2
+## 2  1462  148352.9
+## 3  1463  154035.7
+## 4  1464  154848.0
+## 5  1465  203831.9
+## 6  1466  156870.9
 {% endhighlight %}
 
 
@@ -377,26 +374,23 @@ sessionInfo()
 ## other attached packages:
 ##  [1] mlr_2.9          stringi_1.1.2    ParamHelpers_1.9 BBmisc_1.10     
 ##  [5] dplyr_0.5.0      purrr_0.2.2      readr_1.0.0      tidyr_0.6.0     
-##  [9] tibble_1.2       ggplot2_2.1.0    tidyverse_1.0.0  rmd2md_0.1.1    
-## [13] devtools_1.12.0 
+##  [9] tibble_1.2       ggplot2_2.1.0    tidyverse_1.0.0 
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] parallelMap_1.3    Rcpp_0.12.7        formatR_1.4       
-##  [4] git2r_0.15.0       plyr_1.8.4         iterators_1.0.8   
-##  [7] tools_3.2.3        corrplot_0.77      digest_0.6.10     
-## [10] extracat_1.7-4     checkmate_1.8.1    evaluate_0.9      
-## [13] memoise_1.0.0      gtable_0.2.0       lattice_0.20-33   
-## [16] foreach_1.4.3      shiny_0.14.1       DBI_0.5-1         
-## [19] parallel_3.2.3     curl_2.1           gbm_2.1.1         
-## [22] hexbin_1.27.1      TSP_1.1-4          withr_1.0.2       
-## [25] httr_1.2.1         stringr_1.1.0      knitr_1.14        
-## [28] ggvis_0.4.3        grid_3.2.3         data.table_1.9.6  
-## [31] R6_2.2.0           survival_2.38-3    rmarkdown_1.0.9016
-## [34] reshape2_1.4.1     magrittr_1.5       splines_3.2.3     
-## [37] backports_1.0.3    scales_0.4.0       codetools_0.2-14  
-## [40] htmltools_0.3.5    assertthat_0.1     checkpoint_0.3.16 
-## [43] xtable_1.8-2       mime_0.5           colorspace_1.2-6  
-## [46] httpuv_1.3.3       lazyeval_0.2.0     munsell_0.4.3     
-## [49] chron_2.3-47
+##  [1] parallelMap_1.3   Rcpp_0.12.7       formatR_1.4      
+##  [4] plyr_1.8.4        iterators_1.0.8   tools_3.2.3      
+##  [7] digest_0.6.10     corrplot_0.77     extracat_1.7-4   
+## [10] evaluate_0.9      gtable_0.2.0      checkmate_1.8.1  
+## [13] lattice_0.20-33   foreach_1.4.3     shiny_0.14.1     
+## [16] DBI_0.5-1         parallel_3.2.3    gbm_2.1.1        
+## [19] hexbin_1.27.1     TSP_1.1-4         stringr_1.1.0    
+## [22] knitr_1.14        ggvis_0.4.3       grid_3.2.3       
+## [25] data.table_1.9.6  R6_2.2.0          survival_2.38-3  
+## [28] reshape2_1.4.1    magrittr_1.5      splines_3.2.3    
+## [31] htmltools_0.3.5   scales_0.4.0      backports_1.0.3  
+## [34] codetools_0.2-14  assertthat_0.1    checkpoint_0.3.16
+## [37] rmd2md_0.1.2      xtable_1.8-2      mime_0.5         
+## [40] colorspace_1.2-6  httpuv_1.3.3      lazyeval_0.2.0   
+## [43] munsell_0.4.3     chron_2.3-47
 {% endhighlight %}
  
