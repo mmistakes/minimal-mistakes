@@ -15,7 +15,7 @@ A collection of discoveries. Always updated occasionally.
 
 ---
 
-| We must make the goal conform to the individual, rather than make the 
+> We must make the goal conform to the individual, rather than make the 
 individual conform to the goal. 
 
 Sound advice on finding your purpose from 22 year old Hunter S. Thompson 
