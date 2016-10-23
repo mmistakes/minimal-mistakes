@@ -1,0 +1,69 @@
+---
+layout: archive
+title: "Discoveries 1"
+excerpt: &excerpt "flooded school library, find your purpose, Silicon Valley 
+scammers, Stranger Things on Netflix, and..."
+modified: 2016-10-23
+category: discoveries
+tags: software-development, education, charity, technology, entertainment, life-lessons
+fullwidth: true
+featured: 
+ads: false
+---
+
+A collection of discoveries. Always updated occasionally.
+
+---
+
+| We must make the goal conform to the individual, rather than make the 
+individual conform to the goal. 
+
+Sound advice on finding your purpose from 22 year old Hunter S. Thompson 
+in a letter to a friend. [Hunter S. Thompson's extraordinary letter on finding your purpose](http://tranquilmonkey.com/hunter-s-thompsons-extraordinary-letter-on-finding-your-purpose)
+
+---
+
+[Trey Veazey](https://www.treyveazey.com) has written a compelling request 
+for help. Trey is a librarian from [Glen Oaks Park Elementary](https://www.donorschoose.org/school/glen-oaks-park-elementary-school/16821/?teachers=true) 
+in Baton Rouge, whose library lost everything in the recent floods (Aug 2016). 
+As someone who has loved books since I was old enough to hold them in my toddler 
+sized hands, his plight resonates with me. [A cry for help, or 1,600ish words on books, life, & honey buns](http://www.treyveazey.com/a-cry-for-help-or-1600ish-words-on-books-life-honey-buns/). 
+If you want to help, donate via various methods Trey describes in the previous 
+post and this one: [Brass tacks, or specifics regarding where, when, how, etc.](http://www.treyveazey.com/brass-tacks-or-specifics-regarding-where-when-how-etc/). 
+My personal preference is [DonorsChoose](https://www.donorschoose.org/treyveazey) 
+where donations are matched dollar-for-dollar when using the promotion code _**LIFTOFF**_.
+
+---
+
+A well written, transparent, and heartfelt story about a life lesson learned 
+in "I Got Scammed By A Silicon Valley Startup" [I Got Scammed By A Silicon Valley Startup](https://medium.com/startup-grind/i-got-scammed-by-a-silicon-valley-startup-574ced8acdff#.8fm249n7b) 
+by [Penny Kim](https://www.pennykim.com).
+
+---
+
+Using regex statements can be painful, like a [_insert bad metaphor here_]. 
+[Simple Regex Language](https://simple-regex.com) (SRL) is trying to help out.
+
+---
+
+[Stranger Things](https://www.netflix.com/title/80057281) on Netflix is one 
+of the best series I've ever watched. We binge-watched the last six episodes 
+in a single night. It was _even_ a school/work night.
+
+---
+
+Reviewing pull requests (PRs) is difficult and tedious, so make it easier on 
+your peers. Use small, frequent PRs versus large (& usually unwieldy), 
+infrequent PRs in your software development (and documentation efforts). Write 
+useful, detailed descriptions, saving the reviewer time understanding the scope 
+and changes. In a nutshell, treat the code reviewer like your customer. 
+[The (written) unwritten guide to pull requests](http://blogs.atlassian.com/2016/07/written-unwritten-guide-pull-requests/) 
+at Atlassian.
+
+---
+
+[Steve Sasman](https://medium.com/@SteveSasman) describes driving his 
+[Tesla Model S](https://www.tesla.com/models) across country, Uber'ing in it, 
+letting others sleep in it (for a small fee), and renting it to other drivers, 
+all over 100,000 miles in 2 years. Fascinating to see how much it cost him, 
+or didn't, in [How I Used & Abused My Tesla](https://medium.com/@SteveSasman/how-i-used-abused-my-tesla-what-a-tesla-looks-like-after-100-000-miles-a-48-state-road-trip-6b6ae66b3c10#.5it5ij5s7).
