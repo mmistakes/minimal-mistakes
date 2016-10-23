@@ -7,7 +7,7 @@ modified: `r format(Sys.time(), '%Y-%m-%d')`
 layout: post
 excerpt: "Advanced Regression techniques for predicting house prices"
 published: FALSE
-status: process
+status: processed
 tags:
 - Regression
 - Linear Regression
@@ -74,14 +74,14 @@ is.ordered(train_correct_type$BsmtQual)
 
 `BsmtQual`: Evaluates the height of the basement
 
-       | Code | Description | Inches | 
-       |:--------:|:----------:|:----------:| 
-       |   Ex   |  Excellent  |    100+   | 
-       |  Gd    |  Good       |   90-99   | 
-       |    TA  |    Typical  |     80-89   | 
-       |   Fa   |    Fair     |   70-79  |
-       |   Po   |    Poor     |  <70   |
-       |   NA   |    No Basement|  NA |
+| Code | Description | Inches | 
+|:--------:|:----------:|:----------:| 
+|   Ex   |  Excellent  |    100+   | 
+|  Gd    |  Good       |   90-99   | 
+|    TA  |    Typical  |     80-89   | 
+|   Fa   |    Fair     |   70-79  |
+|   Po   |    Poor     |  <70   |
+|   NA   |    No Basement|  NA |
 
 ### Missing data
 
