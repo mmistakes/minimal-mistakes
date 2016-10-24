@@ -13,7 +13,7 @@ permalink: /lectures/
 
 ### Lecture 2: A Theory of Embodied Intelligence
 * 2015-11-03 09:30 to 11:00
-* A Theory of Embodied Intelligence.
+* **A Theory of Embodied Intelligence**
 * Lecturer: F.Bonsignorio
 * Guest Lecture(s): TBA
 
