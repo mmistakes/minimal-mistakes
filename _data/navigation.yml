@@ -1,7 +1,7 @@
 # main links links
 main:
   - title: "Lecture Programme"
-    url: http://shanghailectures.org/lectures
+    url: /lectures/
 
   - title: "Group Project Kōans"
     url: /koans/
