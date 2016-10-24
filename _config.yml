@@ -46,9 +46,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  path                   : # blank (default) uses feed.xml
-kramdown:  
-  parse_block_html: true
+  path                   : # blank (default) uses feed.xml 
 
 defaults:
   - scope:
@@ -214,6 +212,7 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
+  parse_block_html: true
 
 
 # Sass/SCSS
