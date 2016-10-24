@@ -2,6 +2,7 @@
 layout: archive
 title: "Template"
 excerpt: &excerpt ""
+tweet: "Discoveries #: description." 
 modified:
 category: discoveries
 tags: 

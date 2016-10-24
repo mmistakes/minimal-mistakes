@@ -3,12 +3,14 @@ layout: archive
 title: "Discoveries 1"
 excerpt: &excerpt "flooded school library, find your purpose, Silicon Valley 
 scammers, Stranger Things on Netflix, and..."
+tweet: "Discoveries 1: flooded school library, find your purpose, and more." 
 modified: 2016-10-23
 category: discoveries
 tags: software-development, education, charity, technology, entertainment, life-lessons
 fullwidth: true
 featured: 
 ads: false
+show_tag_list: true
 ---
 
 A collection of discoveries. Always updated occasionally.
@@ -36,7 +38,7 @@ where donations are matched dollar-for-dollar when using the promotion code _**L
 ---
 
 A well written, transparent, and heartfelt story about a life lesson learned 
-in "I Got Scammed By A Silicon Valley Startup" [I Got Scammed By A Silicon Valley Startup](https://medium.com/startup-grind/i-got-scammed-by-a-silicon-valley-startup-574ced8acdff#.8fm249n7b) 
+in [I Got Scammed By A Silicon Valley Startup](https://medium.com/startup-grind/i-got-scammed-by-a-silicon-valley-startup-574ced8acdff#.8fm249n7b) 
 by [Penny Kim](https://www.pennykim.com).
 
 ---
