@@ -1,14 +1,15 @@
 ---
-layout: archive
-title: "Template"
+title: "TEMPLATE"
 excerpt: &excerpt ""
-tweet: "Discoveries #: description." 
-modified:
+tweet: "Discoveries #: DESCRIPTION." 
+modified: YYYY-MM-DD
 category: discoveries
-tags: 
+tags: [,]
 fullwidth: true
 featured: 
 ads: false
 ---
 
-Discoveries template.
+A collection of things found...always updated occasionally.
+
+---
