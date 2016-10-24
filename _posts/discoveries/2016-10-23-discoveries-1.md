@@ -20,8 +20,8 @@ A collection of discoveries. Always updated occasionally.
 > We must make the goal conform to the individual, rather than make the 
 individual conform to the goal. 
 
-Sound advice on finding your purpose from 22 year old Hunter S. Thompson 
-in a letter to a friend. [Hunter S. Thompson's extraordinary letter on finding your purpose](http://tranquilmonkey.com/hunter-s-thompsons-extraordinary-letter-on-finding-your-purpose)
+At only 22 years old, [Hunter S. Thompson's extraordinary letter on finding your purpose](http://tranquilmonkey.com/hunter-s-thompsons-extraordinary-letter-on-finding-your-purpose) 
+provides sound advice.
 
 ---
 
