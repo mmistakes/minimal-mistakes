@@ -5,6 +5,8 @@ excerpt: "The lecture programme for the ShanghAI Lectures."
 permalink: /lectures/
 ---
 
+<article markdown="1" class="post-content">
+
 ##Lecture 1: Artificial Intelligence: things can be seen differently
 * 2015-10-27  09:30 to 11:00
 * **Artificial Intelligence: things can be seen differently**
@@ -53,3 +55,5 @@ permalink: /lectures/
 * **Future Trends, Round Table, Summary**
 * Lecturer: Fabio Bonsignorio
 * Guest Lecture(s): TBA
+
+</article>
