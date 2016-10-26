@@ -1,13 +1,13 @@
 # main links links
 main:
-  - title: "Lecture Programme"
+  - title: "Programme"
     url: /lectures/
+    
+  - title: "Live Stream"
+    url: https://arcamm.uc3m.es/arcamm_3/liveEvents/show/16
 
-  - title: "Group Project Kōans"
+  - title: "Kōans"
     url: /koans/
 
   - title: "Archives"
     url: https://shanghai-lectures.github.io/archives/index.html
-
-  - title: "Live Stream"
-    url: https://arcamm.uc3m.es/arcamm_3/liveEvents/show/16
