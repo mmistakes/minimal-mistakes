@@ -2,7 +2,7 @@
 title: "Lecture Programme"
 layout: single
 excerpt: "The lecture programme for the ShanghAI Lectures."
-permalink: /lectures/
+permalink: /programme/
 ---
 
 ### Lecture 1: Artificial Intelligence: things can be seen differently
