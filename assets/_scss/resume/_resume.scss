@@ -1,0 +1,178 @@
+// Resume styles
+// ---------------------------------------/
+
+// util
+
+.section-header {
+  @include section_border;
+  margin-bottom: 1.5rem;
+
+  h2 {
+    @include sans;
+    font-weight: 900;
+    font-size: 1.75rem;
+    letter-spacing: -.05rem;
+    margin: 0;
+  }
+}
+
+// page header styles
+
+.page-header { padding: 1.5rem 0;
+
+  .avatar {
+    width: 95px;
+    max-width: 100%;
+    overflow: hidden;
+    @include border-radius(100px);
+    margin: 0 auto;
+    display: block;
+  }
+
+  .header-name {
+    @include sans;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: -.15rem;
+    line-height: 1;
+    margin: 1rem 0 2rem;
+  }
+
+  .title-bar {
+    @include section_border;
+    padding: .4rem 0;
+    @include clearfix;
+
+    .header-title {
+      @include sans;
+      font-weight: 300;
+      font-size: 1.75rem;
+      line-height: 2rem;
+      letter-spacing: -.05rem;
+      text-align: center;
+      margin: 0 0 .5rem;
+
+      @include media_larger_than_mobile {
+        float: left;
+        margin: 0;
+      }
+    }
+  }
+
+  .executive-summary {
+    @include media_larger_than_mobile { font-size: 1.125rem; }
+  }
+}
+
+.icon-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  top: 4px;
+  text-align: center;
+  border-top: 2px solid #c7c7c7;
+  padding-top: .4rem;
+
+  @include media_larger_than_mobile {
+    float: right;
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .icon-link-item {
+    display: inline-block;
+    margin-left: 5px;
+  }
+
+  .icon-link { display: inline-block;
+
+    &:hover .icon path {
+      fill: #333;
+      @include transition(all .2s ease);
+    }
+  }
+}
+
+.contact-button {
+  @include border-radius(3px);
+  background-color: #efefef;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: 1.5rem auto;
+  width: 220px;
+  font-size: 1.375rem;
+  @include sans_light;
+  color: #333;
+  line-height: 55px;
+  @include transition(all .2s ease);
+
+  &:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+  &.not-looking { width: 400px; }
+}
+
+// resume content styles
+
+.content-section {
+  margin: 0 0 3rem;
+
+  .resume-item { margin-bottom: 2rem; }
+
+  .resume-item-title {
+    @include sans_bold;
+    margin: 0 0 .75rem;
+    font-size: 1.5rem;
+    letter-spacing: -.05rem;
+    line-height: 1;
+  }
+
+  .resume-item-details {
+    font-size: 1.125rem;
+    margin: 0 0 .75rem;
+    line-height: 1;
+  }
+
+  .resume-item-title,
+  .resume-item-details,
+  .resume-item-copy,
+  .resume-item-list {
+    a {
+      color: #333;
+      text-decoration: none;
+      border-bottom: 1px solid;
+
+      &:hover {
+        border-bottom: none;
+        color: #9c9c9c;
+      }
+    }
+  }
+
+  .resume-item-copy { margin: .75rem 0 0; }
+}
+
+// footer styles
+
+.page-footer {
+  border-top: 4px solid #c7c7c7;
+  padding-top: 1.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+
+  .footer-line {
+    margin: 0;
+    font-size: .875rem;
+    color: #999;
+
+    > a {
+      font-weight: 700;
+      color: #333;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+// Base styles
+// ---------------------------------------/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  background: $white;
+}
+
+body{
+  @include serif;
+  color: $text_color;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.wrapper:before,
+.wrapper:after { content:""; display:table; }
+.wrapper:after { clear: both; }
+.wrapper {
+  max-width: 728px;
+  padding: 0 24px;
+  margin: 0 auto;
+  zoom: 1;
+}
+
+// clearfix (now called group,
+// via http://css-tricks.com/snippets/css/clear-fix/)
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both; }
+.group { zoom:1; /* For IE 6/7 (trigger hasLayout) */ }
+
+::-moz-selection {
+    background: rgba(51,51,51,.8);
+    color: #fff;
+    text-shadow: none;
+}
+::selection {
+    background: rgba(51,51,51,.8);
+    color: #fff;
+    text-shadow: none;
+}

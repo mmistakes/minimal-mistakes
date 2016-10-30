@@ -1,0 +1,339 @@
+---
+permalink: /resume
+title: Resume
+sitemap: false
+---
+<!DOCTYPE html>
+<html>
+
+  {% include base_path %}
+  {% include resume/head.html %}
+
+  <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
+
+    <div class="wrapper" itemscope itemtype="http://schema.org/Person">
+
+      <header class="page-header">
+
+        <!-- You can turn off the avatar in _config.yml by setting to false -->
+        {% if site.resume_avatar == 'true' %}
+          <img src="{{ site.author.avatar | prepend: "/images/" | prepend: base_path }}" alt="my photo" class="avatar" itemprop="image">
+        {% endif %}
+
+        <!-- Your name is defined in the _config.yml file -->
+        <h1 class="header-name" itemprop="name">{{ site.resume_name }}</h1>
+
+        <div class="title-bar">
+
+          <!-- Your title is also defined in the _config.yml file -->
+          <h2 class="header-title" itemprop="jobTitle">{{ site.resume_title }}</h2>
+
+          <!-- This is the markup for the icon links; moved out to an include because it's very verbose, and you shouldn't ever need to edit the markup (unless you want to re-order the icons); if you want to customize which links appear, define them in the _config.yml file -->
+          {% include resume/icon-links.html %}
+        </div>
+
+        <div class="executive-summary" itemprop="description">
+          <p>I am a fast learner looking for new challenges.  Currently I am experimenting with Docker and Kubernetes and would love to find a company in the Portland metro area that would help me continue that journey.</p>
+        </div>
+
+        {% if site.resume_looking_for_work == 'yes' %}
+        <a href="mailto:{{ site.resume_contact_email }}" class="contact-button" itemprop="email">Contact me</a>
+        {% elsif site.resume_looking_for_work == 'no' %}
+        <a class="contact-button not-looking">I'm not looking for work right now.</a>
+        {% else %}
+        {% endif %}
+
+      </header>
+
+      {% if site.resume_section_skills %}
+      <!-- begin Skills -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2 id="skills">Skills</h2>
+        </header>
+
+        <div class="resume-item">
+          <div class="columns">
+
+            <div class="one-third column">
+              <h4 class="resume-item-details">Networking</h4>
+              <ul class="resume-item-list">
+                <li>Network Design</li>
+                <li>HP Switches</li>
+                <li>Cisco Switches</li>
+                <li>Cisco Firewalls</li>
+                <li>Cisco Access Points</li>
+                <li>Juniper Firewalls</li>
+                <li>Amazon VPC</li>
+                <li>Amazon Direct Connect</li>
+                <li>OpenVPN</li>
+                <li>Haproxy</li>
+                <li>Nginx</li>
+                <li>Apache</li>
+              </ul>
+            </div>
+
+            <div class="one-third column">
+              <h4 class="resume-item-details">Programming</h4>
+              <ul class="resume-item-list">
+                <li>Ruby</li>
+                <li>Chef</li>
+                <li>BaSH</li>
+                <li>Javascript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Perl</li>
+                <li>PHP</li>
+              </ul>
+            </div>
+
+            <div class="one-third column">
+              <h4 class="resume-item-details">Monitoring</h4>
+              <ul class="resume-item-list">
+                <li>Datadog</li>
+                <li>Sumologic</li>
+                <li>Loggly</li>
+                <li>ELK</li>
+                <li>Logz.io</li>
+                <li>ServerDensity</li>
+                <li>New Relic</li>
+                <li>OpenNMS</li>
+                <li>Pingdom</li>
+                <li>Rsyslog</li>
+                <li>Graphite</li>
+                <li>Graphana</li>
+                <li>InfluxDB</li>
+                <li>Snort</li>
+                <li>Aide</li>
+                <li>Nagios</li>
+                <li>StatsD</li>
+                <li>Collectd</li>
+                <li>Observium</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+      <!-- end Skills -->
+      {% endif %}
+
+      {% if site.resume_section_experience %}
+      <!-- begin Experience -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2 id="experience">Experience</h2>
+        </header>
+
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name"><a href="https://www.goldstar.com">Goldstar Events</a></h3>
+          <h4 class="resume-item-details" itemprop="description">Sr. Linux Administrator &bull; Sep, 2013 &mdash; Present</h4>
+          <p class="resume-item-copy">On a two person team I support 25 developers, manage ~120 physical and virtual nodes running ~10 Rails apps with Chef and <a href="https://github.com/etch/etch">Etch</a>.  I am also solely responsible for managing the network infrastructure, loging and metrics monitoring systems (Datadog and Sumologic currently, though we've tried <a href="#skills">many others</a>).  Due to the vast size difference between the ops and dev teams, a big part of my job is to empower developers through improving existing troubleshooting tools, creating new tools, or find better commercial/open source ones.</p>
+          <p class="resume-item-copy">Key Achievements:</p>
+          <ul class="resume-item-list">
+            <li>Work with developers to secure applications and network during move from PCI4 to PCI3.</li>
+            <li>Move all internal services to Consul to make them easier to address, monitor, load balance, and inventory.</li>
+            <li>Setup Amazon VPC and Direct Connect and begin gradual migration away from physical infrastructure.</li>
+            <li>Redesign network infrastructure, and replace firewalls to improve security and throughput.</li>
+          </ul>
+        </div><!-- end of resume-item -->
+
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name"><a href="https://www.clearesult.com/">Fluid Market Strategies</a> (<a href="https://www.roberthalf.com/technology">Robert Half Technologies</a>)</h3>
+          <h4 class="resume-item-details" itemprop="description">Network/Server Engineer &bull; Aug, 2012 &mdash; Sep, 2013</h4>
+          <p class="resume-item-copy">As the sole Network Engineer, I tore down and rebuilt the entire network and server infrastructure from the ground up while also providing day-to-day user support for roughly 120 users.  The reason for the rebuild was that the company had outgrown the Small Business Server deployment and many other networking components that didn't scale well with rapid growth the company experienced.</p>
+          <p class="resume-item-copy">Key Achievements:</p>
+          <ul class="resume-item-list">
+            <li>Rebuilt VM hosts running ESXi 3.5 and 4.0 and install ESXi 5.1 while maintaining approximately 25 live virtual machines.</li>
+            <li>Design and rebuild network layout to better fit the needs of the growing organization.</li>
+            <li>Redesign and rebuild the DMZ to achieve better security for publicly available servers and greater segregation from internal environment.</li>
+            <li>Update and modify 30 highly customized Joomla web sites to fit the changing needs of the business units.</li>
+          </ul>
+        </div><!-- end of resume-item -->
+
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name"><a href="http://www.cornellpump.com">Cornell Pump Company</a> (<a href="https://www.roberthalf.com/technology">Robert Half Technologies</a>)</h3>
+          <h4 class="resume-item-details" itemprop="description">IT Support &bull; Sep, 2010 &mdash; Sep, 2011</h4>
+          <p class="resume-item-copy">Through a part-time position, I was the sole on-sight provider of server, network, computer and phone system support to approximately 100 office and shop workers.  This position had previously been held by a number of off-site support companies and short-lived, part-time employees.</p>
+        </div><!-- end of resume-item -->
+
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name"><a href="http://www.simpsonhousing.com">Simpson Housing</a> (<a href="https://www.roberthalf.com/technology">Robert Half Technology</a>)</h3>
+          <h4 class="resume-item-details" itemprop="description">IT Support &bull; Aug, 2009 &mdash; Apr, 2010</h4>
+          <p class="resume-item-copy">Provided on-site support to office workers in five of Simpson's Portland area apartment complexes on a recurring, single-day basis.  Supported network equipment and computers in the office environment, and the Simpson Housing Resource Center, where residents could use the free Wi-Fi and computers to access the internet.</p>
+        </div><!-- end of resume-item -->
+
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">Momentum Market Intelligence (<a href="https://www.roberthalf.com/technology">Robert Half Technology</a>)</h3>
+          <h4 class="resume-item-details" itemprop="description">IT Support &bull; Jul, 2009 &mdash; Jan, 2010</h4>
+          <p class="resume-item-copy">Supported network equipment and computers and phone system for an office of roughly 60 people.</p>
+        </div><!-- end of resume-item -->
+
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name"><a href="https://gp.com">Georgia Pacific</a> (<a href="https://www.roberthalf.com/technology">Robert Half Technology</a>)</h3>
+          <h4 class="resume-item-details" itemprop="description">IT Support &bull; Jun, 2008 &mdash; Jan, 2009</h4>
+          <p class="resume-item-copy">Worked part-time as part of a two-person team to support roughly 200 computers in office areas as well as throughout the mill.  Primarily responsible for server backups, computer rebuilds, and forklift mounted computers.</p>
+          <p class="resume-item-copy">Key Achievements:</p>
+          <ul class="resume-item-list">
+            <li>Programmed barcode readers for use in the mill and compiled guides for programming each model of reader.</li>
+            <li>Updated and maintained network maps.</li>
+            <li>Helped troubleshoot issues with ghost installation images.</li>
+          </ul>
+        </div><!-- end of resume-item -->
+
+        <div clas ="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name"><a href="https://www.powells.com">Powell's Books</a></h3>
+          <h4 class="resume-item-details" itemprop="description">IT Client Support &bull; Jun, 2006 &mdash; Apr, 2007</h4>
+          <p class="resume-item-copy">Member of a five-person team responsible for roughly 150 desktop computers and 80 Point of Sale computers at all 10 store and warehouse locations.</p>
+          <p class="resume-item-copy">Key Achievements:</p>
+          <ul class="resume-item-list">
+            <li>Discovered flaw in credit card processing server that was causing it to charge some customers multiple times.</li>
+            <li>Participated in team to replace credit card processing server.</li>
+            <li>Worked on fixing a flaw I discovered in off-site sales procedures that violated Sarbanes-Oxley as well as opening the company to potential information, and product theft.</li>
+            <li>Wrote a series of scripts that reduced the time required to recover from a network or server problem from 2 hours per store to 20 minutes for all stores.</li>
+          </ul>
+        </div><!-- end of resume-item -->
+
+        <div clas ="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name"><a href="https://www.bpa.gov">Bonneville Power Administration</a></h3>
+          <h4 class="resume-item-details" itemprop="description">UNIX System Administrator &bull; Jan, 2004 &mdash; Jun, 2006</h4>
+          <p class="resume-item-copy">Member of a five-person team responsible for 80 UNIX and Linux servers, serving roughly 2000 users.</p>
+        </div><!-- end of resume-item -->
+
+      </section>
+      <!-- end Experience -->
+      {% endif %}
+
+      {% if site.resume_section_projects %}
+      <!-- begin Projects -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2 id="projects">Projects</h2>
+        </header>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title"><a href="https://github.com/jescholl/packetman">Packetman</a></h3>
+          <h4 class="resume-item-details">Tcpdump advanced query builder</h4>
+          <p class="resume-item-copy">Tcpdump's advanced syntax is incredibly powerful, and also incredibly difficult to write by hand, Wireshark has an online tool for generating these queries, but it is severly limited.  This tool allows you to use wildcard syntax to search for packets containing a string with a given offset, and even has a concept of applications so you don't need to know the offset for common protocols.</p>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title"><a href="https://github.com/jescholl/slow_server">Slow Server</a></h3>
+          <h4 class="resume-item-details">Timeout testing tool</h4>
+          <p class="resume-item-copy">This is a tool similar to slowloris that I wrote primarily to explore how different servers and clients handle delays in different phases of the connection cycle and how much their configuration options really affect those timeouts.</p>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title"><a href="https://jescholl.com">jescholl.com</a></h3>
+          <h4 class="resume-item-details">Personal Blog</h4>
+          <p class="resume-item-copy">I started this blog mostly as a way to play with Jekyll/Liquid, but also because I feel like too many resources online talk about money and computers in ways that make them hard to understand, and I wanted to take a stab at a few topics in an approachable way.</p>
+        </div>
+
+      </section>
+      <!-- end Projects -->
+      {% endif %}
+
+      {% if site.resume_section_education %}
+      <!-- begin Education -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2 id="education">Education</h2>
+        </header>
+
+        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+          <h3 class="resume-item-title" itemprop="name"><a href="https://www.pdx.edu">Portland State University</a></h3>
+          <h4 class="resume-item-details" itemprop="description">Bachelor of Science, Business Administration &bull; 2009 &mdash; 2012</h4>
+          <p class="resume-item-copy">Informaton Systems &bull; Cum Laude</p>
+        </div>
+
+        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+          <h3 class="resume-item-title" itemprop="name"><a href="https://www.clark.edu">Clark College</a></h3>
+          <h4 class="resume-item-details" itemprop="description">Associate of Applied Science, Computer Science &bull; 2002 &mdash; 2005</h4>
+        </div>
+
+      </section>
+      <!-- end Education -->
+      {% endif %}
+
+      {% if site.resume_section_recognition %}
+      <!-- begin Recognition -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2 id="recognition">Recognition</h2>
+        </header>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title" itemprop="award">Portland State University</h3>
+          <h4 class="resume-item-details">Dean's List &bull; Winter 2011</h4>
+          <p class="resume-item-copy">Awarded for achieving greater than 3.75 GPA while taking more than 12 credits.</p>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title" itemprop="award">Portland State University</h3>
+          <h4 class="resume-item-details">President's List &bull; Fall 2011</h4>
+          <p class="resume-item-copy">Awarded for achieving 4.0 GPA while taking more than 12 credits.</p>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title" itemprop="award">Portland State University</h3>
+          <h4 class="resume-item-details">President's List &bull; Summer 2010</h4>
+          <p class="resume-item-copy">Awarded for achieving 4.0 GPA while taking more than 12 credits.</p>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title" itemprop="award">Portland State University</h3>
+          <h4 class="resume-item-details">Dean's List &bull; Fall 2009</h4>
+          <p class="resume-item-copy">Awarded for achieving 3.75 GPA while taking more than 12 credits.</p>
+        </div>
+
+      </section>
+      <!-- end Recognition -->
+      {% endif %}
+
+      {% if site.resume_section_associations %}
+      <!-- begin Associations -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2 id="associations">Associations</h2>
+        </header>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title"><a href="https://www.betagammasigma.org/">Beta Gama Sigma Honors Association</a></h3>
+          <h4 class="resume-item-details">Lifetime Member &bull; 2010</h4>
+        </div>
+
+      </section>
+      <!-- end Associations -->
+      {% endif %}
+
+      {% if site.resume_section_links %}
+      <!-- begin Links -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2 id="links">Additional Links</h2>
+        </header>
+
+        <div class="resume-item">
+          <ul class="resume-item-list">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </div>
+
+      </section>
+      <!-- end Links -->
+      {% endif %}
+
+    </div>
+
+  </body>
+
+</html>

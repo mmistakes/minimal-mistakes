@@ -157,6 +157,10 @@ lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
+sass:
+  sass_dir: _sass
+  style: compressed
+
 
 # Markdown Processing
 kramdown:
@@ -229,3 +233,50 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+
+###################
+# resume settings #
+###################
+
+
+# Resume settings
+resume_avatar:                  "true"
+resume_name:                    "Jason Scholl"
+resume_title:                   "Operations Engineer"
+resume_contact_email:
+  "jason@jescholl.com"
+
+# use "yes" to display the email contact button,
+# "no" to display an "I'm not looking for work" message,
+# or remove the resume_looking_for_work option entirely
+# to leave blank
+resume_looking_for_work:        "yes"
+
+# Decide which sections to use
+# comment out to hide
+resume_section_experience:      true
+resume_section_education:       true
+resume_section_projects:        true
+resume_section_skills:          true
+resume_section_recognition:     false
+resume_section_links:           false
+resume_section_associations:    true
+
+# Resume social links
+# uncomment the options you wish to display, and add your own URL
+resume_social_links:
+  resume_github_url:            "https://github.com/jescholl"
+  # resume_twitter_url:           "http://twitter.com/jescholl"
+  # resume_dribbble_url:          ""
+  # resume_facebook_url:          ""
+  # resume_linkedin_url:          ""
+  # resume_instagram_url:         "insert your Instagram URL here"
+  resume_website_url:           "https://jescholl.com"
+
+# Design settings
+resume_theme:                   default
+
+# Note: when editing locally, remember to restart
+# your Jekyll server when you edit this file. Changes
+# to _config.yml are only recognized when the server starts

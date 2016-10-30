@@ -1,0 +1,97 @@
+// Mixins
+// ---------------------------------------/
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin transition($value) {
+  -webkit-transition: $value;
+  -moz-transition: $value;
+  transition: $value;
+}
+
+// Clearfix
+//
+// Clears floats via mixin (avoid using as a class).
+
+@mixin clearfix {
+  &:before {
+    display: table;
+    content: "";
+  }
+
+  &:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+}
+
+// media querie tools
+
+@mixin media_max($screen_width) {
+  @media (max-width: $screen_width) { @content; }
+}
+
+@mixin media_min($screen_width) {
+  @media (min-width: $screen_width) { @content; }
+}
+
+@mixin media_larger_than_mobile {
+  @media (min-width: 600px) { @content; }
+}
+
+@mixin media_mobile {
+  @media (max-width: 600px) { @content; }
+}
+
+// type utilities
+
+@mixin sans {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@mixin sans_light {
+  @include sans;
+  font-weight: 300;
+}
+
+@mixin sans_regular {
+  @include sans;
+  font-weight: 400;
+}
+
+@mixin sans_bold {
+  @include sans;
+  font-weight: 700;
+}
+
+@mixin sans_extrabold {
+  @include sans;
+  font-weight: 800;
+}
+
+@mixin serif {
+  font-family: "Lora", "Minion Pro", Palatino, Georgia, serif;
+}
+
+@mixin serif_regular {
+  @include serif;
+  font-weight: 400;
+}
+
+@mixin serif_bold {
+  @include serif;
+  font-weight: 700;
+}
+
+// layout
+
+@mixin section_border {
+  border-top: 4px solid #c7c7c7;
+  border-bottom: 2px solid #c7c7c7;
+  padding: .2rem 0 .4rem;
+}
