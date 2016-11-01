@@ -52,4 +52,4 @@ What we're doing here is simply normalising the counts to their sum, paying atte
 Looks like to is the most frequent token (note that no pre-processing/removals have been employed), with a frequency of around 6.5%. Having this number might be much more interesting than the count (which is around 9000, for reference).
 
 [freqdist]: {{ site.url }}/images/freqdist.png
-{: height="100px" width="600px" align="right"}
+{: height="175px" width="450px" align="right"}
