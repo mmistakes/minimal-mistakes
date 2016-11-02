@@ -8,6 +8,9 @@ main:
 
   - title: "Kōans"
     url: /koans/
+    
+  - title: "Student registration"
+    url: https://www.eventbrite.co.uk/custombutton?eid=28996044951
 
   - title: "Archives"
     url: https://shanghai-lectures.github.io/archives/index.html
