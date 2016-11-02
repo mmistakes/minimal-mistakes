@@ -2,7 +2,7 @@
 
 ### Enhancements
 
-- "Gemify" theme ~> `gem "minimal-mistakes-jekyll"
+- "Gemify" theme ~> `gem "minimal-mistakes-jekyll"`
 - Replace `base_path` include with `absolute_url` filter where possible.
 - Allow images to be placed in other folders. Remove `/images/` only restriction and encourage placement in `/assets/images/` instead. **Full paths are now required. If upgrading from MM 3.4 add `/images/` before filenames in Front Matter and `_config.yml` variables.**
 - Add [home `layout`](https://github.com/mmistakes/minimal-mistakes/blob/master/_layouts/home.html)
