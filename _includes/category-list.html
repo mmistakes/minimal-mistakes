@@ -1,5 +1,3 @@
-{% include base_path %}
-
 {% case site.category_archive.type %}
   {% when "liquid" %}
     {% assign path_type = "#" %}
@@ -21,7 +19,7 @@
     {% for hash in category_hashes %}
       {% assign keyValue = hash | split: '#' %}
       {% capture category_word %}{{ keyValue[1] | strip_newlines }}{% endcapture %}
-      <a href="{{ base_path }}{{ category_word | slugify | prepend: path_type | prepend: site.category_archive.path }}" class="page__taxonomy-item" rel="tag">{{ category_word }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
+      <a href="{{ category_word | slugify | prepend: path_type | prepend: site.category_archive.path | absolute_url }}" class="page__taxonomy-item" rel="tag">{{ category_word }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
     {% endfor %}
     </span>
   </p>

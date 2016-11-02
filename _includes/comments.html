@@ -1,5 +1,3 @@
-{% include base_path %}
-
 <div class="page__comments">
   {% capture comments_label %}{{ site.data.ui-text[site.locale].comments_label | default: "Comments" }}{% endcapture %}
   {% case site.comments.provider %}
@@ -8,10 +6,10 @@
     <section id="disqus_thread"></section>
   {% when "facebook" %}
     <h4 class="page__comments-title">{{ comments_label }}</h4>
-    <section class="fb-comments" data-href="{{ base_path }}{{ page.url }}" data-mobile="true" data-num-posts="{{ site.comments.facebook.num_posts | default: 5 }}" data-width="100%" data-colorscheme="{{ site.comments.facebook.colorscheme | default: 'light' }}"></section>
+    <section class="fb-comments" data-href="{{ page.url | absolute_url }}" data-mobile="true" data-num-posts="{{ site.comments.facebook.num_posts | default: 5 }}" data-width="100%" data-colorscheme="{{ site.comments.facebook.colorscheme | default: 'light' }}"></section>
   {% when "google-plus" %}
     <h4 class="page__comments-title">{{ comments_label }}</h4>
-    <section class="g-comments" data-href="{{ base_path }}{{ page.url }}" data-first_party_property="BLOGGER" data-view_type="FILTERED_POSTMOD">Loading Google+ Comments ...</section>
+    <section class="g-comments" data-href="{{ page.url | absolute_url }}" data-first_party_property="BLOGGER" data-view_type="FILTERED_POSTMOD">Loading Google+ Comments ...</section>
   {% when "staticman" %}
     <section id="comments">
       {% if site.repository and site.staticman.branch %}

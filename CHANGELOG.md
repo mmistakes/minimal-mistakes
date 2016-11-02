@@ -1,3 +1,26 @@
+## [4.0.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.4)
+
+### Enhancements
+
+- "Gemify" theme ~> `gem "minimal-mistakes-jekyll"
+- Replace `base_path` include with `absolute_url` filter where possible.
+- Allow images to be placed in other folders. Remove `/images/` only restriction and encourage placement in `/assets/images/` instead. **Full paths are now required. If upgrading from MM 3.4 add `/images/` before filenames in Front Matter and `_config.yml` variables.**
+- Add [home `layout`](https://github.com/mmistakes/minimal-mistakes/blob/master/_layouts/home.html)
+- Added missing Turkish translations for UI text. [#621](https://github.com/mmistakes/minimal-mistakes/pull/621)
+- Make author avatar optional in sidebar.
+- Update **/_includes/seo.html** for meta description. [#558](https://github.com/mmistakes/minimal-mistakes/pull/558)
+
+### Bug Fixes
+
+- Fix navigation bar animation "flicker" in Safari [#568](https://github.com/mmistakes/minimal-mistakes/issues/568)
+- Fix `author.avatar` paths for externally hosted images.
+
+### Maintenance
+
+- Add documentation around `gem "minimal-mistakes-jekyll"` installation and use.
+- Add note about using full image paths for eg. `assets/images/filename.jpg` (header images, overlays, galleries, feature rows, etc.) instead of assuming they will always be in `/images/`.
+- Add "[Overriding Theme Defaults](https://mmistakes.github.io/minimal-mistakes/docs/overriding-theme-defaults/)" page to documentation.
+
 ## [3.4.8](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.8)
 
 ### Enhancements
