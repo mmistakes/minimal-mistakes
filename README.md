@@ -25,7 +25,7 @@ See what's new in the [CHANGELOG](CHANGELOG.md).
 - Optional [header images](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#headers), [custom sidebars](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#sidebars), [table of contents](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#table-of-contents), [galleries](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#gallery), related posts, [breadcrumb links](https://mmistakes.github.io/minimal-mistakes/docs/configuration/#breadcrumb-navigation-beta), [navigation lists](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#navigation-list), and more.
 - Commenting support (powered by [Disqus](https://disqus.com/), [Facebook](https://developers.facebook.com/docs/plugins/comments), Google+, [Discourse](https://www.discourse.org/), static-based via [Staticman](https://staticman.net/), and custom).
 - [Google Analytics](https://www.google.com/analytics/) support.
-- UI localized text in English (default), Brazilian Portguese, Chinese, French, German, Italian, Spanish, and Turkish
+- UI localized text in English (default), Brazilian Portuguese, Chinese, French, German, Italian, Spanish, and Turkish
 
 ## Demo Pages
 
@@ -39,7 +39,7 @@ See what's new in the [CHANGELOG](CHANGELOG.md).
 | [Categories Archive][categories-archive] | Posts grouped by category. |
 | [Tags Archive][tags-archive] | Posts grouped by tags. |
 
-For even more demo pages check the [posts archive][year-archive] on the demo site. Looking for the source code to peep the YAML Front Matter and Markdown used? Check the [`gh-pages`](https://github.com/mmistakes/minimal-mistakes/tree/gh-pages) branch.
+Additional sample posts are available under [posts archive][year-archive] on the demo site. Source files for these (and the entire demo site) can be found in [`/docs`](docs).
 
 [header-image-post]: https://mmistakes.github.io/minimal-mistakes/layout-header-image-text-readability/
 [gallery-post]: https://mmistakes.github.io/minimal-mistakes/post%20formats/post-gallery/
@@ -49,6 +49,12 @@ For even more demo pages check the [posts archive][year-archive] on the demo sit
 [categories-archive]: https://mmistakes.github.io/minimal-mistakes/categories/
 [tags-archive]: https://mmistakes.github.io/minimal-mistakes/tags/
 [year-archive]: https://mmistakes.github.io/minimal-mistakes/year-archive/
+
+## Usage
+
+For detailed instructions on how to configure, customize, add content, and more read the [theme's documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
+
+**Note:** Gem version of the theme requires Jekyll v3.3+ and is not currently supported on [GitHub Pages](https://pages.github.com/). You can still use the theme with GitHub Pages, you'll just need to install using the old "[repo fork method](https://mmistakes.github.io/minimal-mistakes/docs/installation/)".
 
 ## Quick Start
 
@@ -64,17 +70,13 @@ Add this line to your Jekyll site's `_config.yml` file:
 theme: minimal-mistakes-jekyll
 ```
 
-Run Bundler:
+Then run Bundler to install the theme gem and dependencies:
 
 ```bash
 bundle install
 ```
 
-## Usage
-
-For detailed instructions on how to configure, customize, add content, and more read the [theme's documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
-
-**Note:** Gem version of the theme requires Jekyll v3.3+ and is not supported with sites hosted with [GitHub Pages](https://pages.github.com/). You can still use the theme on GitHub Pages, you'll just need to install using the old "[repo fork method](https://mmistakes.github.io/minimal-mistakes/docs/installation/)".
+To update the theme run `bundle update`.
 
 ---
 
@@ -90,7 +92,7 @@ This goes for author sidebar links and "share button" additions -- I have no int
 
 To help me out try to avoid creating pull requests on `master` and instead branch off of `develop`. It's much easier for me to test, merge, and roll them into new releases this way.
 
-Theme documentation and demo pages can be found in the `gh-pages` branch, please submit pull requests against that branch.
+Theme documentation and demo pages can be found in the [`/docs`](docs) if submitting improvements, typo corrections, etc.
 
 ---
 
