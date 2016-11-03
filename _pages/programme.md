@@ -24,7 +24,9 @@ permalink: /programme/
 * *Intelligent Systems: Properties and Principles*
 * Lecturer: Fabio Bonsignorio
 * The 2016 Kōans! by Martin F. Stoelen
-* Guest lecture(s): TBA
+* Guest lecture by Florian Roehrbein:
+  * Robotics and Embedded Systems group, Technical University of Munich
+  * *"Tools for Virtual Neurorobotics"*
 
 ### Lecture 4: Evolution: Cognition from Scratch
 * 2015-11-17 09:30 to 11:00 CET
