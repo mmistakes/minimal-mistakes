@@ -4,8 +4,23 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2016-11-03T09:49:02-04:00
+modified: 2016-11-04T12:36:05-04:00
 ---
+
+## [4.0.5](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.5)
+
+### Enhancements
+
+- Update gems: `jekyll-sitemap` (0.12), `jekyll-feed` (0.8).
+- Improve next/previous pager links visibility by changing gray color to blue (`$link-color`).
+
+### Bug Fixes
+
+- Fix `.sidebar` flicker/jump when hovered. [#583](https://github.com/mmistakes/minimal-mistakes/issues/583)
+
+### Maintenance
+
+- Move contents of `gh-pages` branch to `master` inside of the `/docs` folder.
 
 ## [4.0.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.4)
 
