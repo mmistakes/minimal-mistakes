@@ -32,13 +32,17 @@ permalink: /programme/
 * 2015-11-17 09:30 to 11:00 CET
 * *Evolution: Cognition from Scratch*
 * Lecturer: Fabio Bonsignorio
-* Guest Lecture(s): TBA
+* Guest Lecture by Mirko Kovac:
+  * Imperial College, London, UK
+  * *"Bio-inspired Aerial Robotics for Future Cities"*
 
 ### Lecture 5: Collective Intelligence: Cognition from Interaction
 * 2015-11-24 09:30 to 11:00 CET
 * *Collective Intelligence: Cognition from Interaction*
 * Lecturer: Fabio Bonsignorio
-* Guest Lecture(s): TBA
+* Guest Lecture by Gianluca Baldassare:
+  * CNR-ISTC, Rome, Italy
+  * *"The European project GOAL-Robots aiming to build robots that can learn motor skills in an open-ended fashion driven by curiosity"*
 
 ### Lecture 6: Morphological Computation, Self-Organization of Behaviors and Adaptive Morphologies
 * 2015-12-01 09:30 to 11:00 CET
