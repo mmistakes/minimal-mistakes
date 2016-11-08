@@ -24,9 +24,9 @@ comments:
 
 # Analytics
 analytics:
-  provider               : false # false (default), , "google-universal", "custom"
+  provider               : "google" 
   google:
-    tracking_id          :
+    tracking_id          : "UA-83714078-1"
 
 
 # Site Author
@@ -37,28 +37,12 @@ author:
   location         : "Brasilia, Brazil"
   email            : "matheus.rabetti@gmail.com"
   uri              :
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
   facebook         :
-  foursquare       :
-  github           :
-  google_plus      :
-  keybase          :
-  instagram        :
-  lastfm           :
-  linkedin         :
-  pinterest        :
-  soundcloud       :
+  github           : MatheusRabetti
+  linkedin         : matheus-rabetti-8977b49b
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
-  steam            :
-  tumblr           :
-  twitter          :
-  vine             :
-  weibo            :
-  xing             :
-  youtube          :
+  twitter          : RabettiMatheus
+
 
 
 # Reading Files
@@ -194,7 +178,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: true
       share: true
       related: true
