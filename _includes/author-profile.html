@@ -2,6 +2,8 @@
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
 
+<div itemscope itemtype="http://schema.org/Person">
+
   {% if author.avatar %}
     <div class="author__avatar">
       {% if author.avatar contains "://" %}
@@ -10,9 +12,14 @@
       	<img src="{{ author.avatar | absolute_url }}" class="author__avatar" alt="{{ author.name }}">
       {% endif %}
     </div>
-{% endif %}
+  {% endif %}
 
- <div class="author__urls-wrapper">
+  <div class="author__content">
+    <h3 class="author__name">{{ author.name }}</h3>
+    {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
+  </div>
+
+  <div class="author__urls-wrapper">
     <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button>
     <ul class="author__urls social-icons">
       {% if author.location %}
@@ -91,14 +98,5 @@
         <li><a href="https://vine.co/u/{{ author.vine }}"><i class="fa fa-fw fa-vine" aria-hidden="true"></i> Vine</a></li>
       {% endif %}
     </ul>
+  </div>
 </div>
-
-<h4>Recommended Blogs</h4>
-<ul>
-    <li><a href="https://www.datacamp.com/community/blog">DataCamp</a></li>
-    <li><a href="http://www.r-bloggers.com/">R Bloggers</a></li>
-    <li><a href="http://blog.rstudio.org/">RStudio Blog</a></li>
-    <li><a href="http://r4stats.com/">R4Stats</a></li>
-    <li><a href="http://simplystatistics.org/">Simply Statistics</a></li>
-</ul>
-
