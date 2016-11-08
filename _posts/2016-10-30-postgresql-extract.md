@@ -1,5 +1,5 @@
 ---
-layout: simple
+layout: single
 title: Extract Data - Data Warehouse
 description: Dealing with large files - Part 2
 tags: 
