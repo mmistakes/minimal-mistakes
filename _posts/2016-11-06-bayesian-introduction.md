@@ -126,7 +126,7 @@ sim %>% filter(a == 81) %>%
     xlim(0, .5) + ylab("Density of beta")
 {% endhighlight %}
 
-![plot of chunk beta_density](figure/beta_density-1.png)
+![plot of chunk beta_density](figs/beta_density-1.png)
 
 I came up with these parameters for two reasons:
 
