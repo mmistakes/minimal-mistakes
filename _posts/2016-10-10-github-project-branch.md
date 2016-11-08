@@ -1,5 +1,5 @@
 ---
-layout: simple
+single
 title: Git Branch - No risks, No gains
 description: Understanding Git branch and when it should be used.
 tags: 
