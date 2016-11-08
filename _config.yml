@@ -15,7 +15,7 @@ url                      : "https://matheusrabetti.github.io"
 baseurl                  : ""
 repository               : "matheusrabetti/matheusrabetti.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-breadcrumbs              : true 
+# breadcrumbs              : true 
 words_per_minute         : 200
 comments:
   provider               : "disqus"
