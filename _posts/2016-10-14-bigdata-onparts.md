@@ -1,5 +1,5 @@
 ---
-layout: simple
+layout: single
 title: Big Data solutions - Computing on parts
 description: Dealing with large files - Part 1
 tags: 
