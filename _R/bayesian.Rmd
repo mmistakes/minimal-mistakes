@@ -116,7 +116,7 @@ sim <- data.frame(a = c(81, 82, 81 + 100),
     mutate(Parameters = factor(Parameters, levels = unique(Parameters)))
 ```
 
-```{r plot1, dependson = "setup"}
+```{r beta_density, dependson = "setup"}
 sim %>% filter(a == 81) %>%
     ggplot(aes(x, y, color = Parameters)) + geom_line() +
     xlim(0, .5) + ylab("Density of beta")
