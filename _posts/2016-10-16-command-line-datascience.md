@@ -1,5 +1,5 @@
 ---
-layout: simple
+layout: single
 title: Using Unix commands for data science
 tags: 
     - Unix
