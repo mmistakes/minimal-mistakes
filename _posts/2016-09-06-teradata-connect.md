@@ -1,6 +1,7 @@
 ---
 layout: simple
 title: Using JDBC connection to access Teradata
+description: Making R connect to a external database
 categories:
   - Extract
 tags: 
@@ -8,7 +9,7 @@ tags:
   - R
 ---
 
-# FIRST POOOST!
+# Let's get it started!
 
 This is my first post, how exciting! Finally I took my first step towards making a website to record my trajectory on becoming a **Data Scientist**. Here I will be presenting some of my current works and studies. Hope you enjoy!
 
