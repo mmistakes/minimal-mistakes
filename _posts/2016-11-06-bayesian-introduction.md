@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: single
 title: Bayesian Statistics on Data Science 
-tags: [bayesian]
-comments: true
+tags: 
+   - Bayesian
 ---
 
 
