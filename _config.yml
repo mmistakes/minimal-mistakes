@@ -32,7 +32,7 @@ analytics:
 # Site Author
 author:
   name             : "Matheus Rabetti"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/avatar-icon.jpg"
   bio              : "Statistician in DIEESE, works with Python and R."
   location         : "Brasilia, Brazil"
   email            : "matheus.rabetti@gmail.com"
