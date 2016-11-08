@@ -93,7 +93,7 @@ What we can do is attach a prior to Bert and Ernie This would be equivalent to g
 
 ### Problem - Baseball batting average
 
-Anyone who follows baseball is familiar with batting averages- simply the number of times a player gets a base hit divided by the number of times he goes up at bat (so it’s just a percentage between 0 and 1). .266 is in general considered an average batting average, while .300 is considered an excellent one.
+Anyone who follows baseball is familiar with batting averages- simply the number of times a player gets a base hit divided by the number of times he goes up at bat (so it’s just a percentage between 0 and 1). 0.266 is in general considered an average batting average, while 0.300 is considered an excellent one.
 
 Imagine we have a baseball player, and we want to predict what his season-long batting average will be. You might say we can just use his batting average so far- but this will be a very poor measure at the start of a season! If a player goes up to bat once and gets a single, his batting average is briefly 1.000, while if he strikes out or walks, his batting average is 0.000. It doesn’t get much better if you go up to bat five or six times- you could get a lucky streak and get an average of 1.000, or an unlucky streak and get an average of 0, neither of which are a remotely good predictor of how you will bat that season.
 
@@ -101,7 +101,7 @@ Why is your batting average in the first few hits not a good predictor of your e
 
 Given our batting average problem, which can be represented with a binomial distribution (a series of successes and failures), the best way to represent these *prior expectations* is with the beta distribution. It’s saying, before we’ve seen the player take his first swing, what we roughly expect his batting average to be.
 
-We expect that the player’s season-long batting average will be most likely around 0.27, but that it could reasonably range from 0.21 to 0.35. This can be represented with a beta distribution with parameters $\alpha=81$ and $\beta=219$:
+We expect that the player’s season-long batting average will be most likely around 0.27, but that it could reasonably range from 0.21 to 0.35. This can be represented with a beta distribution with parameters $$\alpha=81$$ and $$\beta=219$$:
 
 ```{r setup}
 library(ggplot2)
@@ -124,6 +124,6 @@ sim %>% filter(a == 81) %>%
 
 I came up with these parameters for two reasons:
 
-  * The mean is $\frac{\alpha}{\alpha + \beta} = \frac{81}{81+219} = 0.270$
+  * The mean is $$\frac{\alpha}{\alpha + \beta} = \frac{81}{81+219} = 0.270$$
 
-  * As you can see in the plot, this distribution lies almost entirely within $(0.2,.35)$ - the reasonable range for a batting average.
+  * As you can see in the plot, this distribution lies almost entirely within $$(0.2,.35)$$ - the reasonable range for a batting average.
