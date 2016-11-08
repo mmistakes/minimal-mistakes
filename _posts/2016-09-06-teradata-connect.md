@@ -1,10 +1,11 @@
 ---
 layout: simple
 title: Using JDBC connection to access Teradata
+categories:
+  - Extract
 tags: 
-  -Teradata
-  -SQL
-  -R
+  - SQL
+  - R
 ---
 
 # FIRST POOOST!
