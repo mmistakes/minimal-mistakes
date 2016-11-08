@@ -5,4 +5,4 @@ main:
   - title: "Posts"
     url: /year-archive/
   - title: "Collection"
-    url: /tag-archive/
+    url: /tags/
