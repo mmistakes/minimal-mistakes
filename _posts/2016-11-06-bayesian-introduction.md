@@ -21,7 +21,6 @@ And science has always had hypotheses before experiments.  And the experiment gu
 
 
 # Philosophical difference 
-## How a Bayesian looks at data and how a frequentist looks at data
 
 **Bayesian:**  says the data are fixed, and any parameters (i.e. for height of people as an example, the reason that people of a population are a given height) are random. Best suited to (re)allocate the credibility of a statement.
 
@@ -126,7 +125,7 @@ sim %>% filter(a == 81) %>%
     xlim(0, .5) + ylab("Density of beta")
 {% endhighlight %}
 
-![plot of chunk beta_density](/figs/beta_density-1.png)
+![center](/figs/beta_density-1.png)
 
 I came up with these parameters for two reasons:
 
