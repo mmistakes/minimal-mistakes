@@ -1,5 +1,5 @@
 ---
-layout: simple
+layout: single
 title: Using JDBC connection to access Teradata
 description: Making R connect to a external database
 categories:
