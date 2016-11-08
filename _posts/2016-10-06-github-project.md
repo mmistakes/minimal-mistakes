@@ -1,5 +1,5 @@
 ---
-layout: simple
+layout: single
 title: Version Control for data analysis
 description: When and why to use Git on solo data analysis
 tags: 
