@@ -5,6 +5,7 @@ excerpt: "The student group project kōans for the ShanghAI Lectures."
 permalink: /koans/
 ---
 
+
 **Timetable (subject to change)**
 
   * 10 November: Kōans published
@@ -12,6 +13,7 @@ permalink: /koans/
   * 17 November: Student groups published
   * 14 December: **Deadline**, preliminary design report
   * End of January: **Group presentations**
+  
   
 **Grading scheme**
 
@@ -22,6 +24,7 @@ permalink: /koans/
   * Group presentations (75%)
     * Vidyo or Google Hangouts or similar, we are flexible
     * Evaluated by a presentation panel
+
 
 **Resources**
 
