@@ -6,6 +6,7 @@ permalink: /koans/
 ---
 
 **Timetable (subject to change)**
+
   * 10 November: Kōans published
   * 15 November: **Deadline**, register and select a Kōan
   * 17 November: Student groups published
@@ -13,6 +14,7 @@ permalink: /koans/
   * End of January: **Group presentations**
   
 **Grading scheme**
+
   * Preliminary design report (25%) 
     * Repository Wiki on e.g. GitHub/GitCafé (preferred) or 4 page (max) report 
     * Ideas, plans and current progress 
