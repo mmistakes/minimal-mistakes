@@ -60,4 +60,6 @@ permalink: /programme/
 * 2016-12-15 09:30 to 11:00 CET
 * *Future Trends, Round Table, Summary*
 * Lecturer: Fabio Bonsignorio
-* Guest Lecture(s): TBA
+* Guest lecture by Florian Roehrbein (rescheduled):
+  * Robotics and Embedded Systems group, Technical University of Munich
+  * *"Tools for Virtual Neurorobotics"*
