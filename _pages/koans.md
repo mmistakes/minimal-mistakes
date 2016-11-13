@@ -28,6 +28,6 @@ permalink: /koans/
 
 **Resources**
 
-See the 2016 intro presentation "Group Project Kōans" [here](https://docs.google.com/presentation/d/1gfiMubkEwLBoKpMSd-DNq-61g0BOI_d6F8CeacI_pso/edit?usp=sharing).
+See the 2016 intro presentation "Group Project Kōans" [here](https://docs.google.com/presentation/d/1gfiMubkEwLBoKpMSd-DNq-61g0BOI_d6F8CeacI_pso/edit?usp=sharing). Pdf version [here](https://shanghai-lectures.github.io/slides/shail_koans_2016.pdf).
 
 See the 2015 kōans [here](https://shanghai-lectures.github.io/archives/koans.html).
