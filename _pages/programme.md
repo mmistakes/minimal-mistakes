@@ -7,7 +7,7 @@ permalink: /programme/
 
 ### Lecture 1: Artificial Intelligence: things can be seen differently
 * 2016-10-27  09:30 to 11:00 CEST
-* *Artificial Intelligence: things can be seen differently*
+* *Artificial Intelligence: things can be seen differently* [pdf](/slides/Lecture01SlidesFabV1.1ShownPDF.pdf)
 * Lecturer: Fabio Bonsignorio
 * Site introductions and student challenges
 
