@@ -13,7 +13,7 @@ permalink: /programme/
 
 ### Lecture 2: A Theory of Embodied Intelligence
 * 2016-11-03 09:30 to 11:00 CET
-* *A Theory of Embodied Intelligence* [pdf](/slides/Lecture02SlidesFabV1.1ShownPDF.pdf)
+* *A Theory of Embodied Intelligence* [Pdf](/slides/Lecture02SlidesFabV1.1ShownPDF.pdf) [Recording](https://youtu.be/gUIUWFidKUo)
 * Lecturer: Fabio Bonsignorio
 * Guest lecture by Rolf Pfeifer: 
   * Osaka University, Japan and Shanghai Jiao Tong University, China
@@ -21,7 +21,7 @@ permalink: /programme/
 
 ### Lecture 3: Intelligent Systems: Properties and Principles
 * 2016-11-10 09:30 to 11:00 CET
-* *Intelligent Systems: Properties and Principles* [pdf](/slides/Lecture03SlidesFabV1.1ShownPDF.pdf)
+* *Intelligent Systems: Properties and Principles* [Pdf](/slides/Lecture03SlidesFabV1.1ShownPDF.pdf)
 * Lecturer: Fabio Bonsignorio
 * The 2016 Kōans! by Martin F. Stoelen
 * Guest lecture by Florian Roehrbein:
