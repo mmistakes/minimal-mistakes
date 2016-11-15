@@ -13,7 +13,7 @@ permalink: /programme/
 
 ### Lecture 2: A Theory of Embodied Intelligence
 * 2016-11-03 09:30 to 11:00 CET
-* *A Theory of Embodied Intelligence* [Pdf](/slides/Lecture02SlidesFabV1.1ShownPDF.pdf) 
+* *A Theory of Embodied Intelligence* [Pdf](/slides/Lecture02SlidesFabV1.1ShownPDF.pdf) [Recording](https://youtu.be/lO7HL1BgHXA)
 * Lecturer: Fabio Bonsignorio
 * Guest lecture by Rolf Pfeifer: 
   * Osaka University, Japan and Shanghai Jiao Tong University, China
