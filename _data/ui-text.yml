@@ -342,14 +342,14 @@ zh: &DEFAULT_ZH
   comment_success_msg        : "Thanks for your comment! It will show on the site once it has been approved."
   comment_error_msg          : "Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again."
   loading_label              : "Loading..."
-  zh-CN:
-    <<: *DEFAULT_ZH
-  zh-HK:
-    <<: *DEFAULT_ZH
-  zh-SG:
-    <<: *DEFAULT_ZH
-  zh-TW:
-    <<: *DEFAULT_ZH
+zh-CN:
+  <<: *DEFAULT_ZH
+zh-HK:
+  <<: *DEFAULT_ZH
+zh-SG:
+  <<: *DEFAULT_ZH
+zh-TW:
+  <<: *DEFAULT_ZH
 
 # German / Deutsch
 # -----------------
