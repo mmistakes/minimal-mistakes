@@ -1,3 +1,19 @@
+## [4.0.6](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.6)
+
+### Enhancements
+
+- Add [`figure` helper](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#figure) to make generating a `<figure>` element with a single image and caption easier. [#572](https://github.com/mmistakes/minimal-mistakes/pull/572)
+- Add structured data markup for `itemprop="person"` in author profile sidebar. [#647](https://github.com/mmistakes/minimal-mistakes/pull/647)
+
+### Bug Fixes
+
+- Fix improper YAML formatting of some locales. [#651](https://github.com/mmistakes/minimal-mistakes/pull/651)
+
+### Maintenance
+
+- Clarify "migrating to gem-theme" instructions in **Quick Start Guide**. 
+- Add `rake preview` task for testing `/test` during theme development.
+
 ## [4.0.5](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.5)
 
 ### Enhancements
