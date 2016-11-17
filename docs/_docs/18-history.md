@@ -4,8 +4,23 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2016-11-16T11:40:00-05:00
+modified: 2016-11-17T15:55:48-05:00
 ---
+
+## [4.0.7](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.7)
+
+### Enhancements
+
+- Add `!default` values to **_sass/_variables.scss**.
+- Collapse sidebar navigation lists on smaller screens. [#607](https://github.com/mmistakes/minimal-mistakes/issues/607)
+
+### Bug Fixes
+
+- Rename `#comments` to something more unique to avoid clashes with Kramdown generated headline IDs. [#582](https://github.com/mmistakes/minimal-mistakes/issues/582)
+
+### Maintenance
+
+- Reorganize SCSS partials in **assets/css/main.scss**
 
 ## [4.0.6](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.6)
 
