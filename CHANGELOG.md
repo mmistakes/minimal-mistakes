@@ -1,3 +1,18 @@
+## [4.0.7](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.7)
+
+### Enhancements
+
+- Add `!default` values to **_sass/_variables.scss**.
+- Collapse sidebar navigation lists on smaller screens. [#607](https://github.com/mmistakes/minimal-mistakes/issues/607)
+
+### Bug Fixes
+
+- Rename `#comments` to something more unique to avoid clashes with Kramdown generated headline IDs. [#582](https://github.com/mmistakes/minimal-mistakes/issues/582)
+
+### Maintenance
+
+- Reorganize SCSS partials in **assets/css/main.scss**
+
 ## [4.0.6](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.6)
 
 ### Enhancements
