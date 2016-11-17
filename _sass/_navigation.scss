@@ -327,6 +327,7 @@
       position: relative;
       display: inline-block;
       padding: 0.5em 2.5em 0.5em 1em;
+      color: $gray;
       font-size: $type-size-6;
       font-weight: bold;
       border: 1px solid $light-gray;
@@ -345,7 +346,7 @@
         width: 0.75em;
         height: 0.125em;
         line-height: 1;
-        background-color: #333;
+        background-color: $gray;
         transition: 0.2s ease-out;
       }
 
