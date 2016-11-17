@@ -1,6 +1,6 @@
 ---
 title: "Layout: Sidebar Custom"
-excerpt: "A post to custom sidebar content."
+excerpt: "A post with custom sidebar content."
 author_profile: false
 sidebar:
   - title: "Title"
@@ -11,7 +11,7 @@ sidebar:
     text: "More text here."
 ---
 
-This post has a custom sidebar set in the post's YAML Front Matter..
+This post has a custom sidebar set in the post's YAML Front Matter.
 
 An example of how that YAML could look is:
 
