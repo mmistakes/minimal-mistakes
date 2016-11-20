@@ -30,7 +30,7 @@ permalink: /programme/
 
 ### Lecture 4: Evolution: Cognition from Scratch
 * 2016-11-17 09:30 to 11:00 CET
-* *Evolution: Cognition from Scratch*
+* *Evolution: Cognition from Scratch* [Pdf](/slides/Lecture04SlidesFabV1.1ShownPDF.pdf)
 * Lecturer: Fabio Bonsignorio
 * Guest Lecture by Mirko Kovac:
   * Imperial College, London, UK
