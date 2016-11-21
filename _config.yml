@@ -10,11 +10,11 @@ locale                   : "en"
 title                    : "Nicola Barban"
 title_separator          : "-"
 name                     : "Nicola Barban"
-description              : "Senior Research Fellow in Sociology. University of Oxford."
-url                      : "http://www.nicolabarban.com"
+description              : "Senior Research Fellow, University of Oxford"
+url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/panorama_web.png"
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -78,10 +78,10 @@ analytics:
 # Site Author
 author:
   name             : "Nicola Barban"
-  avatar           : assets/images/fotomia.jpg
-  bio              : "Senior research fellow, University of Oxford"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Senior Research Fellow, University of Oxford"
   location         : "Oxford, UK"
-  email            :
+  email            :nicola.barban@nuffield.ox.ac.uk
   uri              :
   bitbucket        :
   codepen          :
@@ -94,13 +94,13 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :
+  linkedin         :nicolabarban
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          :
+  twitter          :nicolabarban
   vine             :
   weibo            :
   xing             :
