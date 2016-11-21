@@ -78,7 +78,7 @@ analytics:
 # Site Author
 author:
   name             : "Nicola Barban"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/fotomia.jpg"
   bio              : "Senior Research Fellow, University of Oxford"
   location         : "Oxford, UK"
   email            : "nicola.barban@nuffield.ox.ac.uk"
