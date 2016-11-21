@@ -25,7 +25,8 @@
 
 <meta name="description" content="{{ seo_description }}">
 
-{% assign seo_author = page.author | default: page.author[0] | default: site.author[0] %}
+{% assign seo_author = page.author | default: page.author[0] 
+                       | default: site.author[0] | default: site.author%}
 {% if seo_author %}
   {% if seo_author.twitter %}
     {% assign seo_author_twitter = seo_author.twitter %}
