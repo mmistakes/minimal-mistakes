@@ -4,8 +4,14 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2016-11-21T09:54:38-05:00
+modified: 2016-11-21T16:04:45-05:00
 ---
+
+## [4.0.9](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.9)
+
+### Bug Fixes
+
+- Fix overlapping sidebar navigation lists due to `max-height: 100vh`. [#668](https://github.com/mmistakes/minimal-mistakes/issues/668)
 
 ## [4.0.8](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.8)
 
