@@ -1,3 +1,14 @@
+## [4.0.8](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.8)
+
+### Bug Fixes
+
+- Set default value for `words_per_minute`. [#657](https://github.com/mmistakes/minimal-mistakes/issues/657)
+- Adjust sidebar navigation list CSS so it collapses at the correct width.
+
+### Maintenance
+
+- Add Google AdSense banner to `/docs/_layouts/default.html` for demo site.
+
 ## [4.0.7](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.7)
 
 ### Enhancements
