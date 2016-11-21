@@ -4,8 +4,19 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2016-11-17T15:55:48-05:00
+modified: 2016-11-21T09:54:38-05:00
 ---
+
+## [4.0.8](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.8)
+
+### Bug Fixes
+
+- Set default value for `words_per_minute`. [#657](https://github.com/mmistakes/minimal-mistakes/issues/657)
+- Adjust sidebar navigation list CSS so it collapses at the correct width.
+
+### Maintenance
+
+- Add Google AdSense banner to `/docs/_layouts/default.html` for demo site.
 
 ## [4.0.7](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.7)
 
