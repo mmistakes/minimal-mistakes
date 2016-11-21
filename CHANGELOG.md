@@ -1,3 +1,9 @@
+## [4.0.9](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.9)
+
+### Bug Fixes
+
+- Fix overlapping sidebar navigation lists due to `max-height: 100vh`. [#668](https://github.com/mmistakes/minimal-mistakes/issues/668)
+
 ## [4.0.8](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.8)
 
 ### Bug Fixes
