@@ -81,7 +81,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Senior Research Fellow, University of Oxford"
   location         : "Oxford, UK"
-  email            :nicola.barban@nuffield.ox.ac.uk
+  email            : "nicola.barban@nuffield.ox.ac.uk"
   uri              :
   bitbucket        :
   codepen          :
@@ -94,13 +94,13 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :nicolabarban
+  linkedin         : "nicolabarban"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          :nicolabarban
+  twitter          : "nicolabarban"
   vine             :
   weibo            :
   xing             :
