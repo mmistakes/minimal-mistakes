@@ -1,18 +1,50 @@
+# General Plan
 Find all the targets within a view radius
 Measure the angle to see if they fall between a view radius
 Then do a line of sight check
 
-Starting project
-http://bit.ly/FoVstartfile
+## Player Movement and Rotation
+Add a plane for the floor
+Add some cubes as obstacles - tag them as **obstacle**
+Add some capsules as targets - tag them as **target**
+
+You can add materials to these and colour them as you like.
+
+Add a capsule for the player
+
 
 create a c# script Controller.cs
-and FieldOfView.cs attach to character
+and FieldOfView.cs 
+attach them to the player
 
-Add a rigidbody and freeze the rotations
+Add a rigidbody to the player and freeze the rotations
 
-Controller
-get a ref to rb and main camera
-getcomp in Start()
+Open Controller.cs
+We're going to want to read and write values to Rigidbody and mainCamera so 
+let's add variables to hold a reference to these.
+```
+Rigidbody rigidbody;
+Camera viewCamera;
+```
+Add a float variable for the player's movement speed
+```
+public float moveSpeed = 6;
+```
+If we're using Rigidbody and mainCamera we don't want to have to GetComponent every
+frame. Let's Get those components once and save them to our member variables in the 
+Start() function.
+```
+void Start () {
+  // get these references once in Start() and we can access and change them whenever we wantin Update() 
+		rigidbody = GetComponent<Rigidbody> ();
+		viewCamera = Camera.main;
+	}
+```
+
+In the update function we're going to do 3 things
+* Find where the mouse pointer is 
+* Rotate the player to look at that point
+* Read input values and create a Vector3 for where the player is moving to
 
 Update find the position of the mouse in worldspace
 screen to world point from the x and y pos of the mouse
@@ -55,6 +87,11 @@ public class Controller : MonoBehaviour {
 }
 
 ```
+
+Starting project
+http://bit.ly/FoVstartfile
+
+Our player is moving and can rotate to look at the mouse pointer.
 
 ```csharp
 //FieldOfView.cs
