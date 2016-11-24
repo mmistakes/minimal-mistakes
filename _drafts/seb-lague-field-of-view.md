@@ -1,7 +1,7 @@
 # General Plan
-Find all the targets within a view radius
-Measure the angle to see if they fall between a view radius
-Then do a line of sight check
+* Find all the targets within a view radius
+* Measure the angle to see if they fall between a view radius
+* Do a line of sight check
 
 ## Player Movement and Rotation
 Add a plane for the floor
@@ -92,6 +92,29 @@ Starting project
 http://bit.ly/FoVstartfile
 
 Our player is moving and can rotate to look at the mouse pointer.
+
+In FieldOfView.cs create 2 variables for our field of view
+```
+public float viewRadius;
+[Range(0,360)]
+public float viewAngle;
+```
+Using [Range(0,360)] means that the variable viewAngle can't have a value outside
+those values that we specify.
+
+Create a function for getting the direction (Vector3) from an angle in degrees
+```csharp
+Vector3 DirFromAngle(float angleInDegrees) {}
+```
+In trigonometry we normally think of the unit circle as below
+circle.png
+
+but in Unity our angles work as below in red. So in order to calculate what we need
+we'll use (90 - x) in place of (x)
+
+Since the sin(90 -x) = cos(x) then what we'll simply end up doing is using cos 
+instead of sin.
+
 
 ```csharp
 //FieldOfView.cs
