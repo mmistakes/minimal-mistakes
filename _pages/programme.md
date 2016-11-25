@@ -38,7 +38,7 @@ permalink: /programme/
 
 ### Lecture 5: Collective Intelligence: Cognition from Interaction
 * 2016-11-24 09:30 to 11:00 CET
-* *Collective Intelligence: Cognition from Interaction* [Pdf](/slides/Lecture05SlidesFabV1.1ShownPDF.pdf)
+* *Collective Intelligence: Cognition from Interaction* [Pdf](/slides/Lecture05SlidesFabV1.1PDF.pdf)
 * Lecturer: Fabio Bonsignorio
 * Guest Lecture by Gianluca Baldassare:
   * CNR-ISTC, Rome, Italy
