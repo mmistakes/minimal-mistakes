@@ -106,15 +106,39 @@ Create a function for getting the direction (Vector3) from an angle in degrees
 ```csharp
 Vector3 DirFromAngle(float angleInDegrees) {}
 ```
-In trigonometry we normally think of the unit circle as below
-circle.png
+In Unity the unit circle is set up like this with 0 degrees at the 'top' of the circle and increasing
+clockwise.
+circleUnity.png
 
-but in Unity our angles work as below in red. So in order to calculate what we need
-we'll use (90 - x) in place of (x)
+In order to see how the angles will get translated lets plug in some Vector3 values and see what we get.
 
-Since the sin(90 -x) = cos(x) then what we'll simply end up doing is using cos 
-instead of sin.
+If we draw a 0 degree angle we get something like this ( a vertical line )
+sin(0) = 0
+cos(0) = 1
+Looking at our line we can see that the x value is 0 so lets use sin(angleInDegrees) for our Vector3 x value
+The z value is 1 so we can use cos(angleInDegrees) for the z value in our function.
 
+Another example: 90 degrees
+sin(90) = 1
+cos(90) = 0
+Looking at the line we want to draw we can see that the x value = 1 so we'll use sin(angleInDegrees) for x
+and the z value of the line = 0 so we use cos(angleInDegrees) for z
+We're not using the y value at all so we can make the conversion in the function
+
+new Vector3(Mathf.Sin(angleInDegrees * Mathf.Rad2Deg), 0, Mathf.Cos(angleInDegrees * Mathf.Rad2Deg) );
+Note that the Sin and Cos functions take the angle in radians so we've also got to convert from Radians to degrees
+by multiplying by Mathf.Rad2Deg.
+
+The complete function to get a Vector3 from an angle also can take into account whether or not the player has a rotation.
+If we want to know the angle relative to the player, set angleIsGlobal = false and we add the player's rotation angle to the angle passed in.
+```csharp
+public Vector3 DirFromAngle(float angleInDegrees, bool angleIsGlobal) {
+		if (!angleIsGlobal) {
+			angleInDegrees += transform.eulerAngles.y;
+		}
+		return new Vector3(Mathf.Sin(angleInDegrees * Mathf.Deg2Rad),0,Mathf.Cos(angleInDegrees * Mathf.Deg2Rad));
+	}
+```
 
 ```csharp
 //FieldOfView.cs
