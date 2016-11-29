@@ -48,8 +48,10 @@ permalink: /programme/
 * 2016-12-01 09:30 to 11:00 CET
 * *Morphological Computation, Self-Organization of Behaviors and Adaptive Morphologies*
 * Lecturer: Fabio Bonsignorio
-* Guest Lecture(s): TBA
-
+* Guest Lecture by Josh Bongard:
+  * University of Vermont, US
+  * *"Co-evolution of brain and body morphologies"*
+  
 ### Lecture 7: Industry day/Ethics-Societal-Economy
 * 2016-12-8  09:30 to 11:00 CET
 * *Industry day/Ethics-Societal-Economy*
