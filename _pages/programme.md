@@ -38,7 +38,7 @@ permalink: /programme/
 
 ### Lecture 5: Collective Intelligence: Cognition from Interaction
 * 2016-11-24 09:30 to 11:00 CET
-* *Collective Intelligence: Cognition from Interaction* [Pdf](/slides/Lecture05SlidesFabV1.1PDF.pdf)
+* *Collective Intelligence: Cognition from Interaction* [Pdf](/slides/Lecture05SlidesFabV1.1PDF.pdf) [Recording] (https://youtu.be/AROq1rmz6j0)
 * Lecturer: Fabio Bonsignorio
 * Guest Lecture by Gianluca Baldassare:
   * CNR-ISTC, Rome, Italy
@@ -49,7 +49,7 @@ permalink: /programme/
 * *Morphological Computation, Self-Organization of Behaviors and Adaptive Morphologies*
 * Lecturer: Fabio Bonsignorio
 * Guest Lecture by Josh Bongard:
-  * University of Vermont, US
+  * Vermont Complex Systems Center, University of Vermont, US
   * *"Co-evolution of brain and body morphologies"*
   
 ### Lecture 7: Industry day/Ethics-Societal-Economy
