@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-modified: 2016-11-03T10:42:01-04:00
+modified: 2016-11-29T08:44:22-05:00
 ---
 
 Settings that affect your entire site can be changed in [Jekyll's configuration file](https://jekyllrb.com/docs/configuration/): `_config.yml`, found in the root of your project. If you don't have this file you'll need to copy or create one using the theme's [default `_config.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml) as a base.
@@ -206,7 +206,6 @@ comments:
     server               : # meta.discourse.org
 ```
   
-
 ##### Facebook Comments
 
 To enable Facebook Comments choose how many comments you'd like visible per post and the color scheme of the widget.
@@ -231,7 +230,7 @@ Transform user comments into `_data` files that live inside of your GitHub repos
 
 ###### Configure Staticman
 
-Default settings have been provided in `_config.yml`. The important ones to set are  `provider: "staticman"` and `branch`. View the [full list of configurations](https://github.com/eduardoboucas/staticman#jekyll-configuration).
+Default settings have been provided in `_config.yml`. The important ones to set are  `provider: "staticman"`, `branch`, and `path`. View the [full list of configurations](https://github.com/eduardoboucas/staticman#jekyll-configuration).
 
 **Branch setting:** This is the branch comment files will be sent to via pull requests. If you host your site on GitHub Pages it will likely be `master` unless your repo is setup as a project --- use `gh-pages` in that case.
 {: .notice--info}

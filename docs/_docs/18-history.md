@@ -4,8 +4,18 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2016-11-21T16:04:45-05:00
+modified: 2016-12-01T15:44:03-05:00
 ---
+
+## [4.0.10](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.10)
+
+### Bug Fixes
+
+- Add Staticman default `path`. [#683](https://github.com/mmistakes/minimal-mistakes/issues/683)
+
+### Maintenance
+
+- Slight correction/improvements to French UI text. [#685](https://github.com/mmistakes/minimal-mistakes/pull/685)
 
 ## [4.0.9](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.9)
 
