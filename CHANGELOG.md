@@ -1,3 +1,13 @@
+## [4.0.10](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.10)
+
+### Bug Fixes
+
+- Add Staticman default `path`. [#683](https://github.com/mmistakes/minimal-mistakes/issues/683)
+
+### Maintenance
+
+- Slight correction/improvements to French UI text. [#685](https://github.com/mmistakes/minimal-mistakes/pull/685)
+
 ## [4.0.9](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.9)
 
 ### Bug Fixes
