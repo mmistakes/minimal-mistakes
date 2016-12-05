@@ -6,22 +6,22 @@ permalink: /programme/
 ---
 
 ### Lecture 1: Artificial Intelligence: things can be seen differently
-* 2016-10-27  09:30 to 11:00 CEST
-* *Artificial Intelligence: things can be seen differently* [Pdf](/slides/Lecture01SlidesFabV1.1ShownPDF.pdf) [Recording](https://youtu.be/s68ULSvdJtc)
+* 2016-10-27  09:30 to 11:00 CEST [Recording](https://youtu.be/s68ULSvdJtc)
+* *Artificial Intelligence: things can be seen differently* [Pdf](/slides/Lecture01SlidesFabV1.1ShownPDF.pdf) 
 * Lecturer: Fabio Bonsignorio
 * Site introductions and student challenges
 
 ### Lecture 2: A Theory of Embodied Intelligence
-* 2016-11-03 09:30 to 11:00 CET
-* *A Theory of Embodied Intelligence* [Pdf](/slides/Lecture02SlidesFabV1.1ShownPDF.pdf) [Recording](https://youtu.be/lO7HL1BgHXA)
+* 2016-11-03 09:30 to 11:00 CET [Recording](https://youtu.be/lO7HL1BgHXA)
+* *A Theory of Embodied Intelligence* [Pdf](/slides/Lecture02SlidesFabV1.1ShownPDF.pdf) 
 * Lecturer: Fabio Bonsignorio
 * Guest lecture by Rolf Pfeifer: 
   * Osaka University, Japan and Shanghai Jiao Tong University, China
   * *"Coping with the robotic hype - a soft materials approach"*
 
 ### Lecture 3: Intelligent Systems: Properties and Principles
-* 2016-11-10 09:30 to 11:00 CET
-* *Intelligent Systems: Properties and Principles* [Pdf](/slides/Lecture03SlidesFabV1.1ShownPDF.pdf) [Recording](https://youtu.be/gUIUWFidKUo)
+* 2016-11-10 09:30 to 11:00 CET [Recording](https://youtu.be/gUIUWFidKUo)
+* *Intelligent Systems: Properties and Principles* [Pdf](/slides/Lecture03SlidesFabV1.1ShownPDF.pdf) 
 * Lecturer: Fabio Bonsignorio
 * The 2016 Kōans! by Martin F. Stoelen
 * Guest lecture by Florian Roehrbein:
@@ -29,16 +29,16 @@ permalink: /programme/
   * *"Tools for Virtual Neurorobotics"*
 
 ### Lecture 4: Evolution: Cognition from Scratch
-* 2016-11-17 09:30 to 11:00 CET
-* *Evolution: Cognition from Scratch* [Pdf](/slides/Lecture04SlidesFabV1.1ShownPDF.pdf) [Recording](https://youtu.be/uuSOWYaMUgI)
+* 2016-11-17 09:30 to 11:00 CET [Recording](https://youtu.be/uuSOWYaMUgI)
+* *Evolution: Cognition from Scratch* [Pdf](/slides/Lecture04SlidesFabV1.1ShownPDF.pdf) 
 * Lecturer: Fabio Bonsignorio
 * Guest Lecture by Mirko Kovac:
   * Imperial College, London, UK
   * *"Bio-inspired Aerial Robotics for Future Cities"*
 
 ### Lecture 5: Collective Intelligence: Cognition from Interaction
-* 2016-11-24 09:30 to 11:00 CET
-* *Collective Intelligence: Cognition from Interaction* [Pdf](/slides/Lecture05SlidesFabV1.1PDF.pdf) [Recording](https://youtu.be/AROq1rmz6j0)
+* 2016-11-24 09:30 to 11:00 CET [Recording](https://youtu.be/AROq1rmz6j0)
+* *Collective Intelligence: Cognition from Interaction* [Pdf](/slides/Lecture05SlidesFabV1.1PDF.pdf) 
 * Lecturer: Fabio Bonsignorio
 * Guest Lecture by Gianluca Baldassare:
   * CNR-ISTC, Rome, Italy
