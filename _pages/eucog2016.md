@@ -11,9 +11,7 @@ permalink: /eucog2016/
 <title>Live Stream aus dem EUCOG</title>
 <script src="http://www.rakoczi.at/jwplayer/AC_RunActiveContent.js" type="text/javascript"></script>
 <style type="text/css">
-<!--
-.Stil1 {color: #FFFFFF}
--->
+
 </style>
 </head>
 
@@ -47,15 +45,12 @@ allowfullscreen='true'
 wmode='transparent'
 flashvars='author=Teaching Support @ Vienna University of Technology&description=Live Stream Preview&file=.flv&title=Live Stream Preview&plugins=spectrumvisualizer-1&streamer=rtmp://video.zserv.tuwien.ac.at:80/lecturelive&controlbar=none&autostart=true'
 />                                    
-            </embed>
-            </embed>
           </object>
           </noscript>
           <span class="Stil1">Live Stream aus dem EUCOG</span></p>
         <p>&nbsp;</p>
         <p><span class="Stil1"><a href="rtsp://video.zserv.tuwien.ac.at:80/lecturelive/EUCOG">Streamwiedergabe auf Android</a></span>        </p>
         <p><span class="Stil1"><a href="http://video.zserv.tuwien.ac.at:80/lecturelive/EUCOG/playlist.m3u8">Streamwiedergabe auf iOS</a></span></p>
-        </p>
       </div></td>
   </tr>
 </table>
