@@ -45,8 +45,8 @@ permalink: /programme/
   * *"The European project GOAL-Robots aiming to build robots that can learn motor skills in an open-ended fashion driven by curiosity"*
 
 ### Lecture 6: Morphological Computation, Self-Organization of Behaviors and Adaptive Morphologies
-* 2016-12-01 09:30 to 11:00 CET
-* *Morphological Computation, Self-Organization of Behaviors and Adaptive Morphologies*
+* 2016-12-01 09:30 to 11:00 CET [Recording](https://youtu.be/6TtbQ2DicPY)
+* *Morphological Computation, Self-Organization of Behaviors and Adaptive Morphologies* [Pdf](/slides/Lecture06SlidesFabV1.1PDF.pdf)
 * Lecturer: Fabio Bonsignorio
 * Guest Lecture by Josh Bongard:
   * Vermont Complex Systems Center, University of Vermont, US
