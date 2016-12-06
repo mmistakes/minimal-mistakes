@@ -52,9 +52,9 @@ permalink: /programme/
   * Vermont Complex Systems Center, University of Vermont, US
   * *"Co-evolution of brain and body morphologies"*
   
-### Lecture 7: Live from Vienna: euCognition Meeting 2016
-* 2016-12-8  09:30 to 11:00 CET
-* *Live from Vienna: EUCognition Meeting 2016y*
+### Lecture 7: Live from Vienna: EUCognition Meeting 2016
+* 2016-12-8  09:20 to 10:40 CET
+* *Live from Vienna: EUCognition Meeting 2016*
 * David Vernon and Markus Vincze:
   * What industry wants from Cognitive Robotics
 * Florian Röhrbein:
