@@ -56,13 +56,13 @@ permalink: /programme/
 * 2016-12-8  09:20 to 10:40 CET
 * *Live from Vienna: EUCognition Meeting 2016*
 * David Vernon and Markus Vincze:
-  * What industry wants from Cognitive Robotics
+  * *"What industry wants from Cognitive Robotics"*
 * Florian Röhrbein:
-  * Neurorobotics, a strategic pillar of Human Brain Project
+  * *"Neurorobotics, a strategic pillar of Human Brain Project"*
 * Ron Chrisley and Aaron Sloman:
-  * Architectural Requirements for Consciousness
+  * *"Architectural Requirements for Consciousness"*
 * Fabio Bonsignorio:
-  * Open Issues in Cognitive Embodied AI Architectures for New Robotics
+  * *"Open Issues in Cognitive Embodied AI Architectures for New Robotics"*
 
 ### Lecture  8: Future Trends: Grab Bag, Summary, Discussion
 * 2016-12-15 09:30 to 11:00 CET
