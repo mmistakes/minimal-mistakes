@@ -52,11 +52,17 @@ permalink: /programme/
   * Vermont Complex Systems Center, University of Vermont, US
   * *"Co-evolution of brain and body morphologies"*
   
-### Lecture 7: Industry day/Ethics-Societal-Economy
+### Lecture 7: Live from Vienna: euCognition Meeting 2016
 * 2016-12-8  09:30 to 11:00 CET
-* *Industry day/Ethics-Societal-Economy*
-* Lecturer: Fabio Bonsignorio
-* Guest Lecture(s): TBA
+* *Live from Vienna: EUCognition Meeting 2016y*
+* David Vernon and Markus Vincze:
+  * What industry wants from Cognitive Robotics
+* Florian Röhrbein:
+  * Neurorobotics, a strategic pillar of Human Brain Project
+* Ron Chrisley and Aaron Sloman:
+  * Architectural Requirements for Consciousness
+* Fabio Bonsignorio:
+  * Open Issues in Cognitive Embodied AI Architectures for New Robotics
 
 ### Lecture  8: Future Trends: Grab Bag, Summary, Discussion
 * 2016-12-15 09:30 to 11:00 CET
