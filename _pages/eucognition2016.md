@@ -9,4 +9,6 @@ We will be streaming live the 2016 EUCognition Meeting in Vienna on the 8th of D
 
 Go to stream [here](http://teachingsupport.tuwien.ac.at/lecturetube_live/lecturetube_live_bei_tuwel_ausfall/).
 
+See programme [here](/programme/).
+
 More info on the event [here](http://www.eucognition.org/index.php?page=2016-vienna-general-info).
