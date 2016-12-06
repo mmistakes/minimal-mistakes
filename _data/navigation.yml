@@ -4,7 +4,7 @@ main:
     url: /programme/
     
   - title: "Live Stream"
-    url: https://arcamm.uc3m.es/arcamm_3/liveEvents/show/16
+    url: http://teachingsupport.tuwien.ac.at/lecturetube_live/lecturetube_live_bei_tuwel_ausfall/
     
   - title: "EUCognition"
     url: /eucognition2016/
