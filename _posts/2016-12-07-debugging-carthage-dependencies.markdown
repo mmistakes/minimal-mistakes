@@ -44,7 +44,9 @@ nor _Jump to definition_. No break points for you.
 ## The Carthage/Checkouts way
 
 You decide to add to your project the `CatNames.xcodeproj` found in `Carthage/Checkouts/cat-names`.
+
 This involves:
+
 
 - removing the old library from "Linked Libraries and Frameworks" (because that's the one in `Carthage/Build/iOS`)
 - adding the new library auto-discovered from the products by Xcode after you dragged in `CatNames.xcodeproj`
@@ -63,6 +65,7 @@ This can easily take half an hour so set up and tear down afterwards.
 ## The symbolic link way
 
 The right thing do to here is actually to:
+
 
 - turn the `Carthage/Checkouts/cat-names` directory in your app's project directory into a symbolics link to where your sources under version control are.
 This will ensure that any change that you make is under version control.
