@@ -63,6 +63,7 @@ This can easily take half an hour so set up and tear down afterwards.
 ## The symbolic link way
 
 The right thing do to here is actually to:
+
 - turn the `Carthage/Checkouts/cat-names` directory in your app's project directory into a symbolics link to where your sources under version control are.
 This will ensure that any change that you make is under version control.
 - turn the `Carthage/Build` directory in __your framework__ into a symbolic link to __your app's project__ `Carthage/Build` director.
