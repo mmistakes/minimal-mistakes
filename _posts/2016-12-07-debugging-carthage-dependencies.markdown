@@ -99,7 +99,7 @@ If you are no using [Rome](https://github.com/blender/Rome) and don't have a `Ro
 cat-names = CatNames
 dog-names = DogNames
 ```
-Not the for the purpose of Rome this is __not a valid Romefile__ but it will do for the script
+Note that for the purpose of Rome this is __not a valid Romefile__, but it will do for the script
 
 ### Usage
 
