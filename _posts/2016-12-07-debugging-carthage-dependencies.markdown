@@ -47,11 +47,10 @@ You decide to add to your project the `CatNames.xcodeproj` found in `Carthage/Ch
 
 This involves:
 
-
-- removing the old library from "Linked Libraries and Frameworks" (because that's the one in `Carthage/Build/iOS`)
-- adding the new library auto-discovered from the products by Xcode after you dragged in `CatNames.xcodeproj`
-- changing the __Carthage Copy Framework__ to copy `$(BUILT_PRODUCTS_DIR)/CatNames.framework`
-- adding `CatNames.framework` as a target dependency
+* removing the old library from "Linked Libraries and Frameworks" (because that's the one in `Carthage/Build/iOS`)
+* adding the new library auto-discovered from the products by Xcode after you dragged in `CatNames.xcodeproj`
+* changing the __Carthage Copy Framework__ to copy `$(BUILT_PRODUCTS_DIR)/CatNames.framework`
+* adding `CatNames.framework` as a target dependency
 
 I will call this the __Linking Dance__.
 
@@ -60,16 +59,15 @@ change you just made to the library is not under version control. You can't even
 
 Depending on how used you are to this dance, you have now just wasted 3 to 5 minutes, and don't even have
 your changes under version control. Imagine if you project had a longer list of in house dependencies.
-This can easily take half an hour so set up and tear down afterwards.
+This can easily take half an hour so to set up and tear down afterwards.
 
 ## The symbolic link way
 
 The right thing do to here is actually to:
 
-
-- turn the `Carthage/Checkouts/cat-names` directory in your app's project directory into a symbolics link to where your sources under version control are.
+* turn the `Carthage/Checkouts/cat-names` directory in your app's project directory into a symbolics link to where your sources under version control are.
 This will ensure that any change that you make is under version control.
-- turn the `Carthage/Build` directory in __your framework__ into a symbolic link to __your app's project__ `Carthage/Build` director.
+* turn the `Carthage/Build` directory in __your framework__ into a symbolic link to __your app's project__ `Carthage/Build` director.
 This will ensure that both your framework and your app can access all other frameworks build with carthage.
 
 then do the the __Linking Dance__.
