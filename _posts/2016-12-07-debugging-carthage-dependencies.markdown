@@ -11,8 +11,8 @@ comments: true
 
 
 [Carthage](https://github.com/Carthage/Carthage) is a great dependency management
-tool for both Swift and Objective-C. However, finding the right workflow to workflow
-to work with carthage can be a bit tricky.
+tool for both Swift and Objective-C. However, finding the right workflow adopt when developing
+with carthage can be a bit tricky.
 
 This is especially true if you are building your own frameworks and would like to use
 carthage to manage them in your application project.
