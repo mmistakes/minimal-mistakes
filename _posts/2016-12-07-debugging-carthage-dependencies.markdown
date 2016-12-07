@@ -91,7 +91,7 @@ The script assumes that both the source of our frameworks and your app are in th
 ```
 
 The script uses a [Romefile](https://github.com/blender/Rome#romefile) to read the names of the repos of your frameworks.
-If you are no using [Rome]((https://github.com/blender/Rome) and don't have a `Romefile` just create one as follows:
+If you are no using [Rome](https://github.com/blender/Rome) and don't have a `Romefile` just create one as follows:
 
 ```
 [RepositoryMap]
