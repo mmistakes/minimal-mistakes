@@ -45,6 +45,7 @@ nor _Jump to definition_. No break points for you.
 
 You decide to add to your project the `CatNames.xcodeproj` found in `Carthage/Checkouts/cat-names`.
 This involves:
+
 - removing the old library from "Linked Libraries and Frameworks" (because that's the one in `Carthage/Build/iOS`)
 - adding the new library auto-discovered from the products by Xcode after you dragged in `CatNames.xcodeproj`
 - changing the __Carthage Copy Framework__ to copy `$(BUILT_PRODUCTS_DIR)/CatNames.framework`
