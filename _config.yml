@@ -9,18 +9,18 @@
 locale                   : "en"
 title                    : "Site Title"
 title_separator          : "-"
-name                     : "Your Name"
+name                     : "Christian"
 description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://hoch1009.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : "disqus"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : hoch1009
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -70,29 +70,29 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google"
   google:
-    tracking_id          :
+    tracking_id          : "UA-82826572-1"
 
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Christian"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an amazing person."
-  location         : "Somewhere"
+  location         : "Germany"
   email            :
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
-  flickr           :
-  facebook         :
+  flickr           : "7803457@N07"
+  facebook         : "c.hopfenmueller"
   foursquare       :
-  github           :
+  github           : "hoch1009"
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "chho123"
   lastfm           :
   linkedin         :
   pinterest        :
