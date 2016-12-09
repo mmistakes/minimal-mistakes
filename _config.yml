@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "YAB"
+title                    : "Yet Another Blog"
 title_separator          : "-"
 name                     : "Christian"
 description              : "Yet Another Blog"
