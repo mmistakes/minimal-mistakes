@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "YAB"
 title_separator          : "-"
 name                     : "Christian"
-description              : "An amazing website."
+description              : "Yet Another Blog"
 url                      : "https://hoch1009.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
