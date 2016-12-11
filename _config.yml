@@ -35,7 +35,11 @@ staticman:
   filename               : comment-{@timestamp}
   format                 : "yml"
   moderation             : true
+<<<<<<< HEAD
   path                   : "_data/comments/{options.slug}"
+=======
+  path                   : "docs/_data/comments/{options.slug}" # "/_data/comments/{options.slug}" (default)
+>>>>>>> refs/remotes/mmistakes/master
   requiredFields         : ['name', 'email', 'message']
   transforms:
     email                : "md5"

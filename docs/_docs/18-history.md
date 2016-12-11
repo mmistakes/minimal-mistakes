@@ -1,3 +1,12 @@
+---
+title: "History"
+permalink: /docs/history/
+excerpt: "Change log of enhancements and bug fixes made to the theme."
+sidebar:
+  nav: docs
+modified: 2016-12-01T15:44:03-05:00
+---
+
 ## [4.0.10](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.10)
 
 ### Bug Fixes
@@ -135,18 +144,18 @@
 
 ### Enhancements
 
-- Improve line numbered code block styling when using `{% highlight linenos %}` tag. [#513](https://github.com/mmistakes/minimal-mistakes/issues/513)
+- Improve line numbered code block styling when using `{% raw %}{% highlight linenos %}{% endraw %}` tag. [#513](https://github.com/mmistakes/minimal-mistakes/issues/513)
 - Add English fallback to "Follow" button label. [#496](https://github.com/mmistakes/minimal-mistakes/pull/496)
 
 ### Bug Fixes
 
-- Fix Firefox alignment issues with code blocks generated with the `{% highlight %}` tag. [#512](https://github.com/mmistakes/minimal-mistakes/issues/512)
+- Fix Firefox alignment issues with code blocks generated with the `{% raw %}{% highlight %}{% endraw %}` tag. [#512](https://github.com/mmistakes/minimal-mistakes/issues/512)
 
 ### Maintenance
 
 - Clarified comment for `author.stackoverflow` value used in author sidebar links. [#487](https://github.com/mmistakes/minimal-mistakes/pull/487)
 - Add list of localized text strings. [#488](https://github.com/mmistakes/minimal-mistakes/pull/488)
-- Add `{% highlight %}` code block examples to demo site.
+- Add `{% raw %}{% highlight %}{% endraw %}` code block examples to demo site.
 - Add documentation for using custom sidebar navigation menus. [#476](https://github.com/mmistakes/minimal-mistakes/issues/476)
 
 ## [3.4.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.4)
@@ -223,19 +232,19 @@
 
 ### Bug Fixes
 
-- Fix blank `site.teaser` bug. [#412](https://github.com/mmistakes/minimal-mistakes/issues/412)
+- Fix blank `site.teaser` bug [#412](https://github.com/mmistakes/minimal-mistakes/issues/412)
 
 ## [3.3.5](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.3.5)
 
 ### Enhancements
 
-- Add English default text `site.locale` strings. [#407](https://github.com/mmistakes/minimal-mistakes/issues/407)
+- Add English default text `site.locale` strings [#407](https://github.com/mmistakes/minimal-mistakes/issues/407)
 - Add Portuguese localized UI text. [#411](https://github.com/mmistakes/minimal-mistakes/pull/411)
 - Add Italian localized UI text. [#409](https://github.com/mmistakes/minimal-mistakes/pull/409)
 
 ### Maintenance
 
-- Remove unused Google AdSense variables in `_config.yml`. [#404](https://github.com/mmistakes/minimal-mistakes/issues/404)
+- Remove unused Google AdSense variables in `_config.yml` [#404](https://github.com/mmistakes/minimal-mistakes/issues/404)
 - Update `Gemfile` instructions for using `github-pages` vs. native `jekyll` gems.
 - Disable `gems:` in `_config.yml` and enable plugins with Bundler instead.
 - Add `repository` to `_config.yml` to suppress GitHub Pages error `Liquid Exception: No repo name found.`
@@ -252,6 +261,18 @@
 - Update gems: `activesupport` (4.2.7), `ffi` (1.9.14), `github-pages` (88), `jekyll-redirect-from` (0.11.0), `jekyll-watch` (1.5.0).
 
 ## [3.3.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.3.3)
+
+### Enhancements
+
+- Make footer stick to the bottom of the page.
+
+### Bug Fixes
+
+- Fix `gallery` size bug [#402](https://github.com/mmistakes/minimal-mistakes/issues/402)
+
+### Maintenance
+
+- Set default `lang` to `en`.
 
 ### Enhancements
 
@@ -286,7 +307,7 @@
 
 ## [3.2.13](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.13)
 
-### Enhancements
+### Enhancement
 
 - Add English default UI text for Canada, Great Britain, and Australia. [#377](https://github.com/mmistakes/minimal-mistakes/issues/377)
 - Switch default locale from `en-US` to `en`.
@@ -386,15 +407,15 @@
 
 ## [3.2.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.3)
 
-### Enhancements
+### Enhancement
 
-- Add [Discourse](https://www.discourse.org/) as a commenting provider. [#335](https://github.com/mmistakes/minimal-mistakes/pull/335)
+- Add [Discourse](https://www.discourse.org/) as a commenting provider [#335](https://github.com/mmistakes/minimal-mistakes/pull/335)
 
 ## [3.2.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.2)
 
-### Enhancements
+### Enhancement
 
-- Add support for image captions in Magnific Popup overlays via the [`gallery`](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#gallery) helper. [#334](https://github.com/mmistakes/minimal-mistakes/issues/334)
+- Add support for image captions in Magnific Popup overlays via the [`gallery`](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#gallery) helper [#334](https://github.com/mmistakes/minimal-mistakes/issues/334)
 
 ## [3.2.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.1)
 
@@ -426,7 +447,7 @@
 
 ## [3.1.7](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.7)
 
-### Enhancements
+### Enhancement
 
 - Add translation key for "Recent Posts" used in home page `index.html`. [#316](https://github.com/mmistakes/minimal-mistakes/pull/316)
 
@@ -450,7 +471,7 @@
 
 ### Enhancements
 
-- Add overlay_filter param to hero headers [#298](https://github.com/mmistakes/minimal-mistakes/pull/298)
+- Add `overlay_filter` param to hero headers [#298](https://github.com/mmistakes/minimal-mistakes/pull/298)
 
 ## [3.1.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.3)
 
@@ -469,14 +490,10 @@
 
 ## [3.1.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.2)
 
-### Enhancements
+### Enhancement
 
 - Explain how to use `nav_list` helper in [documentation](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#navigation-list).
 - Reduce left/right padding on smaller screens to increase width of main content column.
-
-### Bug Fixes
-
-- Fix alignment issues with related posts [#273](https://github.com/mmistakes/minimal-mistakes/issues/273) and "Follow" button in author profile [#274](https://github.com/mmistakes/minimal-mistakes/issues/274).
 
 ## [3.1.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.1)
 
