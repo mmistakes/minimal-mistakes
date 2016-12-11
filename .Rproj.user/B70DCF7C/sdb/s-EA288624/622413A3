@@ -1,0 +1,16 @@
+{
+    "contents" : "\n## build the blog:\n\n# check the path. Should be \"C:/blog/gen\"\ngetwd()\n\n# we don't want split images\noptions(\"base64_images\")\n\n\n# serve the blog subfolder: basically, the dev version\nservr::jekyll(input = \"_source\", output = \"_posts\")\n\n",
+    "created" : 1481489705419.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "431330055",
+    "id" : "622413A3",
+    "lastKnownWriteTime" : 1481495916,
+    "path" : "C:/blog/minimal-mistakes/launch.r",
+    "project_path" : "launch.r",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
