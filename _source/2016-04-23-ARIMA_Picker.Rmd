@@ -1,0 +1,66 @@
+---
+layout: post
+title: "Shiny gadget to pick ARIMA parameter"
+categories: [ Data visualisation, Statistic, ARIMA, shiny]
+tags: [R, arima, shiny]
+date: 2016-04-23
+description: Presentation of a shiny gadget allowing to pick arima parameters
+photo_url: 1998_orange_bleue_Scud.jpg
+---
+
+  <img src="https://yvescr.github.io/image/arimaUI_Picker.gif" alt="Presentation of a shiny gadget allowing to pick arima parameters" 
+		style="margin:0px;margin-right:2%;text-align: center;vertical-align: middle;">
+
+ARIMA is a type of model widely used in time series problems, for exemple to predict sales or stocks.
+
+The learning curve for this model is steep at the beginning; the time to understand the difference between autocorelation and moving average take a while. Even when you fit your first model, you can't say that you master all the subtleties of the exercise.
+
+To understand it, it needed me [that book](https://www.amazon.fr/S%C3%A9ries-temporelles-avec-M%C3%A9thodes-cas/dp/2817802071/277-5178286-1463028?ie=UTF8&tag=duckduckgo-ffnt-fr-21) that only french reader can understand and [that shiny app](http://alstatr.blogspot.co.uk/2013/12/r-explore-arima2-2-2-subclass-family-on.html) to finally be comfortable  to implement ARIMA model in a professional environment. That [web site](http://people.duke.edu/~rnau/411arim2.htm), also, is a great resource. 
+
+The ARIMA picker is an add-in made to help to speed the learning curve, mainly by making the simulation and analysis steps faster.
+
+The app is a simplification of the app of @allstatr, to make it fast to run and light to load.
+
+To launch the app as an add-in, you need a recent version of Rstudio(v0.99.878 or later).
+Otherwise, you still could enjoy the `arimaUI` function.
+
+To install the add-in:
+
+```{r, eval=FALSE}
+library(devtools)
+install_github("YvesCR/arimaUI")
+library(arimaUI)
+```
+
+To use the app, select the timeseries you want to display in your code, then click Addins >> arima_addin.
+
+The best way to familiarize yourself with the function is to play with it.
+For exemple by simulating in a blind way the components of your time serie:
+
+```{r, eval=FALSE}
+# simulation of the components (p, d, q). 
+order.blind <- floor(runif(3, 0, 3))
+
+# For ARIMA models with differencing, the differenced series follows a zero-mean ARMA model
+if(order.blind[2] > 0) order.blind[1] <- 0
+
+# simulation of the parameters
+ar.blind <- runif(order.blind[1], -1, 1)
+ma.blind <- runif(order.blind[3], -1, 1)
+
+# below 50 points, finding the correct components is challenging.
+sim.ts <- arima.sim(
+n = 100,
+model = list(
+  order = order.blind,
+  ar = ar.blind
+, ma = ma.blind
+))
+
+list.res <- arimaUI(sim.ts)
+```
+
+If the numbers of the components that you pick in the end is equal to the ones which had been randomly selected, you are truly skilled, congratulations.
+
+To note, when the coefficients are near 0, there is simply no way to guess them. It is indeed a tricky game. 
+

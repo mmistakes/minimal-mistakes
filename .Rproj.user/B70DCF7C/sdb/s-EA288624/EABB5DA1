@@ -1,0 +1,16 @@
+{
+    "contents" : "local({\n  # fall back on '/' if baseurl is not specified\n  baseurl = servr:::jekyll_config('.', 'baseurl', '/')\n  knitr::opts_knit$set(base.url = baseurl)\n  # fall back on 'kramdown' if markdown engine is not specified\n  markdown = servr:::jekyll_config('.', 'markdown', 'kramdown')\n  # see if we need to use the Jekyll render in knitr\n  if (markdown == 'kramdown') {\n    knitr::render_jekyll()\n  } else knitr::render_markdown()\n\n  # input/output filencames are passed as two additional arguments to Rscript\n  a = commandArgs(TRUE)\n  d = gsub('^_|[.][a-zA-Z]+$', '', a[1])\n  knitr::opts_chunk$set(\n    fig.path   = sprintf('/figure/%s/', d),\n    cache.path = sprintf('/cache/%s/', d)\n  )\n\n  knitr::opts_knit$set(width = 70)\n  knitr::knit(a[1], a[2], quiet = TRUE, encoding = 'UTF-8', envir = .GlobalEnv)\n})\n\n",
+    "created" : 1481489699541.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1991957991",
+    "id" : "EABB5DA1",
+    "lastKnownWriteTime" : 1451685559,
+    "path" : "C:/blog/minimal-mistakes/build.R",
+    "project_path" : "build.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
