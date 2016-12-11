@@ -1,0 +1,6 @@
+[submodule "images"]
+	path = images
+	url = https://github.com/vejuhust/blog-image.git
+[submodule "_posts"]
+	path = _posts
+	url = https://github.com/vejuhust/blog-post.git
