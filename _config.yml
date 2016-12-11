@@ -78,7 +78,7 @@ analytics:
 # Site Author
 author:
   name             : "Wei Ye"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/bio-photo.jpg"
   bio              : "A man who travels the world writing codes."
   location         : "Beijing"
   email            : "wei.ye@microsoft.com"
@@ -240,7 +240,14 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: # true
+      read_time: false
+      comments: true
       share: true
       related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
