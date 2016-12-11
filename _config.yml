@@ -6,17 +6,17 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en"
-title                    : "Site Title"
-title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+locale                   : "en-US"
+title                    : "Wei and Way"
+title_separator          : "|"
+name                     : "Wei Ye"
+description              : "Where there's a will, there's a Wei."
+url                      : "//vpreview"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "rip-van-winkle/rip-van-winkle.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
+words_per_minute         : 120
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
@@ -70,18 +70,18 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google-universal"
   google:
-    tracking_id          :
+    tracking_id          : "UA-62032514-1"
 
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Wei Ye"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  bio              : "A man who travels the world writing codes."
+  location         : "Beijing"
+  email            : "wei.ye@microsoft.com"
   uri              :
   bitbucket        :
   codepen          :
@@ -89,20 +89,20 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "vejuhust"
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "vejuhust"
   lastfm           :
-  linkedin         :
+  linkedin         : "weyemsft"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "vejuhust"
   vine             :
-  weibo            :
+  weibo            : "vejuhust"
   xing             :
   youtube          :
 
@@ -172,9 +172,9 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 8
 paginate_path: /page:num/
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: "Asia/Shanghai"
 
 
 # Plugins
