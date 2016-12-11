@@ -1,6 +1,6 @@
 # Develop override settings
 
-url: http://localhost:3000
+url: http://vpreview:3000
 
 analytics:
   provider: false
