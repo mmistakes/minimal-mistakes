@@ -7,11 +7,11 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Wei and Way"
+title                    : "Wei & Way"
 title_separator          : "|"
 name                     : "Wei Ye"
 description              : "Where there's a will, there's a Wei."
-url                      : "//vpreview"
+url                      : "//rip-van-winkle.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "rip-van-winkle/rip-van-winkle.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
