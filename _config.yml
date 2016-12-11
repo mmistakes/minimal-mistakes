@@ -13,7 +13,7 @@ name                     : &name "Harsh Gadgil"
 description              : &description "A flexible Jekyll theme for your blog or site with a minimalist aesthetic."
 url                      : https://opensorceror.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "mmistakes/minimal-mistakes"
+repository               : "opensorceror/opensorceror.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -81,7 +81,7 @@ analytics:
 author:
   name             : *name
   avatar           : "/assets/images/hg.jpg"
-  bio              : "A data scientist and passionate software developer who enjoys making mistakes."
+  bio              : "A passionate data scientist and software developer who enjoys making mistakes."
   location         : "Mississauga, ON"
   email            : "harsh.gadgil@gmail.com"
   uri              : "http://hgadgil.com"
