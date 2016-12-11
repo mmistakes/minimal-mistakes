@@ -3,6 +3,8 @@ title:  "Musings about Cats, Dogs and Machine Learning"
 header:
   image: assets/images/robot_reading_book.jpg
   caption: "Photo credit: [**User D4N13l3 on DeviantArt**](http://d4n13l3.deviantart.com/art/do-androids-read-Robot-book-325505227)"
+  teaser: assets/images/robot_reading_book.jpg
+excerpt: "An interactive story to introduce the area of machine learning to beginners."
 categories: 
   - Technology
 tags:

@@ -2,12 +2,15 @@
 title:  "Is Computer Science a science?"
 header:
   image: assets/images/is-computer-science-a-science.jpg
+  teaser: assets/images/is-computer-science-a-science.jpg
+excerpt: "Is Computer Science actually a science? Or is it engineering?"
 categories: 
   - Technology
   - philosophy
 tags:
   - technology
   - philosophy
+comments: true
 ---
 
 The motivation for this post stems from several personal experiences. Specifically, I've often been asked by friends and family for help with computer repairs, software installation, virus removal and shopping advice for gadgets. Admittedly, I've often failed miserably at menial repairs and virus removals, and the ensuing taunts have prompted me to question my knowledge of technology.
@@ -26,3 +29,6 @@ Several subfields of CS study the mathematical principles underlying all of CS t
 Unlike pure math, which models the observed universe and everything in it, and theoretical computer science, which focuses on mathematical principles of computing, empirical computer science empirically studies *algorithmic processes*. Such algorithms are typically not mathematically tractable, making it necessary to study their behavior empirically. In such cases, the behavior can only be observed while the system runs. The goal of such research is not necessarily to facilitate practical applications; thus, it cannot be classified as Engineering. Research in computer science follows the quintessential scientific method - a rigorous problem definition, precise and meticulous recording of observations, formulation of hypotheses to test observed phenomena, verification or falsification of formulated hypotheses, and finally the development of a generalized, mathematically formulated theory to explain observed phenomena. Canadian universities that include CS under the Faculty of Science include the University of Guelph and Queen's University.
 
 In conclusion, it is a major misconception that computer science is the study of computers. A computer is to computer science as a telescope is to astronomy; it is merely a tool used to facilitate a study. In computer science, we study information acquisition, representation, storage, processing, retrieval and communication. With this in mind, computer science can be loosely defined as the study of information processes. Since information processes occur in all fields of science, computer science in turn facilitates aggressive progress in these fields. Therefore, like all other sciences, computer science is not only a rigorous science in itself, but also a facilitator of other sciences.
+
+**Note:** This post is a work in progress, and I will modify and/or refine it over time. 
+{: .notice--info}
