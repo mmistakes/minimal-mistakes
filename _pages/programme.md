@@ -62,7 +62,7 @@ permalink: /programme/
 * Ron Chrisley and Aaron Sloman:
   * *"Architectural Requirements for Consciousness"*
 * Fabio Bonsignorio:
-  * *"Open Issues in Cognitive Embodied AI Architectures for New Robotics"*
+  * *"Open Issues in Cognitive Embodied AI Architectures for New Robotics"* [Pdf](/slides/EuCog2016BonsignoriokeyPDF.pdf)
 
 ### Lecture  8: Future Trends: Grab Bag, Summary, Discussion
 * 2016-12-15 09:30 to 11:00 CET
