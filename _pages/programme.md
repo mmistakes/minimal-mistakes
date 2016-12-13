@@ -34,7 +34,7 @@ permalink: /programme/
 * Lecturer: Fabio Bonsignorio
 * Guest Lecture by Mirko Kovac:
   * Imperial College, London, UK
-  * *"Bio-inspired Aerial Robotics for Future Cities"*
+  * *"Bio-inspired Aerial Robotics for Future Cities"* [Pdf](/slides/2016-11 Shanghai Lectures.pdf)
 
 ### Lecture 5: Collective Intelligence: Cognition from Interaction
 * 2016-11-24 09:30 to 11:00 CET [Recording](https://youtu.be/AROq1rmz6j0)
@@ -42,7 +42,7 @@ permalink: /programme/
 * Lecturer: Fabio Bonsignorio
 * Guest Lecture by Gianluca Baldassare:
   * CNR-ISTC, Rome, Italy
-  * *"The European project GOAL-Robots aiming to build robots that can learn motor skills in an open-ended fashion driven by curiosity"*
+  * *"The European project GOAL-Robots aiming to build robots that can learn motor skills in an open-ended fashion driven by curiosity"* [Pdf](/slides/161123Baldassarre-ShangaiLectureSuGOALRobots_WithCentredVideoPicturs.pdf)
 
 ### Lecture 6: Morphological Computation, Self-Organization of Behaviors and Adaptive Morphologies
 * 2016-12-01 09:30 to 11:00 CET [Recording](https://youtu.be/6TtbQ2DicPY)
