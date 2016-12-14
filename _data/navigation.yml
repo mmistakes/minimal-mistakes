@@ -1,11 +1,11 @@
 # main links links
 main:
+  - title: "News"
+    url: /year-archive/
   - title: "Applications"
     url: /apps
   - title: "About"
     url: /about-us
-  # - title: "News"
-    # url: /year-archive/
   - title: "Links & References"
     url: /references
   - title: "Contact Us"
