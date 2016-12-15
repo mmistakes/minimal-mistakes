@@ -8,6 +8,8 @@ permalink: /references.html
 ## Links to other sites
 [FishStats](http://www.FishStats.org) A collection of Shiny Apps and R packages developed by [Jim Thorson](https://www.researchgate.net/profile/James_Thorson) for spatio-temporal analysis of fish abundance, environmental impacts, and habitat assocation
 
+[Data-Limited Methods Toolkit (DLMtool)](http://www.datalimitedtoolkit.org/) The Data-Limited Methods Toolkit (DLMtool) is a freely-available, open-source software package that uses computer simulations of real-world fisheries to help scientists and managers with three common objectives: 1) identifying the most effective management methods given the uncertainties associated with data-limited fisheries, 2) computing explicit management guidance based on the best-available data, and 3) prioritizing future data collection programs.
+
 
 ## References
 
