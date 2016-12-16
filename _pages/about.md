@@ -23,7 +23,7 @@ Hi! :relaxed:. I'm Harsh Gadgil, a data scientist and software developer residin
 
 ## More About Me
 
-I'm currently a Master's student in Computer Science, specializing in Data Mining, at the University of Guelph, Canada. I also hold a Bachelor's degree in Computer Engineering from the [University of Pune](http://www.unipune.ac.in/). Due to my engineering background, I'm deeply passionate about building disruptive solutions to complex problems to improve people's lives. Due to my science background, I enjoy critically reasoning about the technical nuances and empirical evaluation of such solutions. 
+I'm currently a Master's student in Computer Science, specializing in Data Mining, at the University of Guelph, Canada. I also hold a Bachelor's degree in Computer Engineering from the [University of Pune](http://www.unipune.ac.in/). Due to my engineering background, I'm deeply passionate about building solutions to complex problems to improve people's lives. Due to my science background, I enjoy critically reasoning about the technical nuances and empirical evaluation of such solutions. 
 
 ## What I Do
 
