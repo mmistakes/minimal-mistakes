@@ -27,16 +27,19 @@ gallery:
     title: "Extended Fancy CV by Carmine Benedetto"
   - url: /assets/images/resume_templates/Data_Scientist_Resume_Harsh_Gadgil.png
     image_path: /assets/images/resume_templates/Data_Scientist_Resume_Harsh_Gadgil.png
-    alt: "Data Scientist Resume by Harsh Gadgil"
-    title: "Data Scientist Resume by Harsh Gadgil"
+    alt: "Data Engineer Resume by Harsh Gadgil"
+    title: "Data Engineer Resume by Harsh Gadgil"
 excerpt: "Why you should port your Word resume to LaTeX."
 ---
 
-For several years, I've had an old school resume prepared in Microsoft Word. Although I neither loved nor hated it, I knew that there had to be a better way. Enter $$\LaTeX$$ resume templates[^1]:
+For several years, I've had an old school resume prepared in Microsoft Word. Although I neither loved nor hated it, I knew that there had to be a better way. Enter $$\LaTeX$$ resume templates:
 
 {% include gallery class="full" caption="Sample $$\LaTeX$$ resume templates" %}
 
-For the uninitiated, $$\LaTeX$$ is a document preparation system used for *typesetting* (as opposed to word processing). LaTeX has a steep learning curve; if you're feeling particularly brave, a comprehensive tutorial can be found [here](https://www.latex-tutorial.com/) :stuck_out_tongue_winking_eye:. 
+**Note**: All templates shown above, with the exception of 'Data Engineer Resume by Harsh Gadgil', can be found on [ShareLaTeX](https://www.sharelatex.com/templates/cv-or-resume).
+{: .notice--info}
+
+For the uninitiated, $$\LaTeX$$ is a document preparation system used for *typesetting* (as opposed to word processing). LaTeX has a steep learning curve; if you're feeling particularly brave, a comprehensive tutorial can be found [here](https://www.latex-tutorial.com/). 
 
 Arguably, a resume is more typesetting than word processing. Resumes may contain multiple columns, which can be a pain to get right in Microsoft Word, but comes naturally to LaTeX. Dan McGee [outlines](https://www.toofishes.net/blog/why-i-do-my-resume-latex/) the benefits of LaTeX over Word nicely. In some ways, LaTeX is like HTML - LaTeX projects usually contain two main files - a *.tex* file, that contains markup and content, and a *.cls* file, that contains styling code. Although this means that LaTeX projects are extremely flexible and versatile, a significant amount of coding may be involved in creating a pleasing typeset document. Fortunately, several specialized classes can be downloaded from the web and used as-is, reducing or even eliminating the need to write any styling code. 
 
@@ -49,8 +52,8 @@ There are several reasons why I choose to write my resume in LaTeX rather than i
 
 Point 1 is a no-brainer for anyone who has looked at resumes prepared in LaTeX. As for Point 2 and Point 3, several frightful personal experiences with Word have taught me not to trust the placement of images, or text, or anything for that matter :unamused:. Working with Word just feels *hacky*, while working with LaTeX feels organized and streamlined. Everything just works, as long as you know what you're doing. About Point 4, the miserable backward compatibility of Word is legendary. The document you meticulously prepared in Word 97 refuses to play nice with Word 2003; all your carefully placed images and text are all over the place. In constrast, LaTeX documents prepared in 1993 or 2016 will both look exactly the same way they did when they were prepared :relieved:. 
 
-My own resume, tailored for a Data Scientist position, looks like the last image in the gallery above. I've open sourced it [here](https://github.com/opensorceror/Data-Scientist-Resume-LaTeX). Although it is tailored for a Data Scientist position, it can probably be adapted for other positions too. I hope you have as much fun customizing it as I do!
+My own resume, tailored for a Data Scientist/Software Engineer role, looks like the last image in the gallery above. I've open sourced it [here](https://github.com/opensorceror/Data-Engineer-Resume-LaTeX). If you're feeling creative, you can adapt it for other role too. I hope you have as much fun customizing it as I do!
 
-[^1]: All templates shown in this post, with the exception of 'Data Scientist Resume by Harsh Gadgil', can be found at https://www.sharelatex.com/templates/cv-or-resume.
+[Get the template](https://github.com/opensorceror/Data-Engineer-Resume-LaTeX){: .btn .btn--info .btn--large}
 
 
