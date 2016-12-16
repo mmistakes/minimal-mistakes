@@ -1,5 +1,5 @@
 ---
-title:  "First post!"
+title:  "First Post!"
 header:
   teaser: assets/images/Hello-World.png
 ---

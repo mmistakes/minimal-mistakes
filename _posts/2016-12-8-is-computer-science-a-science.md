@@ -1,5 +1,5 @@
 ---
-title:  "Is Computer Science a science?"
+title:  "Is Computer Science a Science?"
 header:
   image: assets/images/is-computer-science-a-science.jpg
   teaser: assets/images/is-computer-science-a-science.jpg
