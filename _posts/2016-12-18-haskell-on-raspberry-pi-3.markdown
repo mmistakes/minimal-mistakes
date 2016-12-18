@@ -96,7 +96,14 @@ not compile with `stack build`.
 At the moment of writing there is an [unfortunate bug](https://github.com/commercialhaskell/stack/issues/2708)
 with `ghc-options` that prevents `-opta-march=armv7-a` from being passed on to ghc.
 
-so we will be [wrapping ghc in a shell script](https://github.com/commercialhaskell/stack/issues/2708#issuecomment-257066662).
+There are two ways to solve the problem. Either wrap ghc in a script or modify
+the settings file.
+
+Choose the one that works best for you.
+
+## Wrapping ghc in a script
+
+In this solution we will be [wrapping ghc in a shell script](https://github.com/commercialhaskell/stack/issues/2708#issuecomment-257066662).
 
 ```
 $ rm ~/.stack/programs/arm-linux/ghc-8.0.1/bin/ghc
@@ -107,6 +114,18 @@ ghc-8.0.1 -opta-march=armv7-a $@
 END
 
 $ ln ~/.stack/programs/arm-linux/ghc-8.0.1/bin/ghc-arm-wrapper.sh ~/.stack/programs/arm-linux/ghc-8.0.1/bin/ghc
+```
+
+## Editing ghc settings
+
+In this solution [suggested on Reddit](https://www.reddit.com/r/haskell/comments/5j0u36/getting_haskell_and_stack_on_a_rapsberry_pi_3/dbcfg3d/)
+we well be adding `-mcpu=cortex-a7` to the ghc settings file.
+
+```
+$ vi ~/.stack/programs/arm-linux/ghc-8.0.1/lib/ghc-8.0.1/settings
+...
+ ("C compiler flags", " -marm -fno-stack-protector -mcpu=cortex-a7"),
+...
 ```
 
 # RTS options
