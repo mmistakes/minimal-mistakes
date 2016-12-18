@@ -11,7 +11,7 @@ permalink: /koans/
   * 10 November: Kōans published
   * 15 November: **Deadline**, register and select a Kōan
   * 17 November: Student groups published
-  * 14 December: **Deadline**, preliminary design report
+  * 22 December (Extended): **Deadline**, preliminary design report
   * End of January: **Group presentations**
   
   
@@ -20,7 +20,7 @@ permalink: /koans/
   * Preliminary design report (25%) 
     * Repository Wiki on e.g. GitHub/GitCafé (preferred) or 4 page (max) report 
     * Ideas, plans and current progress 
-    * Graded by your tutor(s)
+    * Graded by your tutor(s), send via email
   * Group presentations (75%)
     * Vidyo or Google Hangouts or similar, we are flexible
     * Evaluated by a presentation panel
