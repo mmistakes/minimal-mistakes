@@ -3,7 +3,7 @@ layout: post
 title: Haskell on Raspberry Pi 3
 modified:
 categories: haskell
-excerpt:
+excerpt: Installing Haskell and Stack on Raspberry Pi 3 is not painless but easier than you think.
 tags: [haskell, stack, rapsberry-pi, ghc, arm, armv7, ghci, haskell-stack, raspberry]
 image:
   feature: haskell-raspberry-pi.jpg
