@@ -109,7 +109,6 @@ author:
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
 
 
-
 # Reading Files
 include:
   - .htaccess
