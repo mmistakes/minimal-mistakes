@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "Wei & Way"
 title_separator          : "|"
-name                     : "Wei Ye"
+name                     : &name "Wei Ye"
 description              : "Where there's a will, there's a Wei."
 url                      : "//rip-van-winkle.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -55,7 +55,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : &twitter "vejuhust"
 facebook:
   username               :
   app_id                 :
@@ -77,9 +77,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Wei Ye"
+  name             : *name
   avatar           : "/images/bio-photo.jpg"
-  bio              : "A man who travels the world writing codes."
+  bio              : "A man who travels the world eating shrimps."
   location         : "Beijing"
   email            : "wei.ye@microsoft.com"
   uri              :
@@ -100,7 +100,7 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          : "vejuhust"
+  twitter          : *twitter
   vine             :
   weibo            : "vejuhust"
   xing             :
