@@ -11,9 +11,9 @@ title                    : "Wei & Way"
 title_separator          : "|"
 name                     : &name "Wei Ye"
 description              : "Where there's a will, there's a Wei."
-url                      : "//rip-van-winkle.github.io"
+url                      : "//yewei.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "rip-van-winkle/rip-van-winkle.github.io"
+repository               : "vejuhust/vejuhust.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 120
