@@ -14,7 +14,7 @@ The preferred way of using images is placing them in the `/assets/images/` direc
 
 Standard image with no width modifier classes applied.
 
-You can select and sort like this: `{% assign featuredItems = site.tags.featured | sort: "featuredOrder" %}`  
+ 
 
 **HTML:**
 
