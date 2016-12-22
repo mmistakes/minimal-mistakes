@@ -1,3 +1,15 @@
+## [4.1.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.1.1)
+
+### Enhancements
+
+- Remove hardcoded `words_per_minute` "less than" and "minute read" values and make dynamic. [#703](https://github.com/mmistakes/minimal-mistakes/issues/703)
+- Update Font Awesome to `v4.7.0`. [#723](https://github.com/mmistakes/minimal-mistakes/issues/723), [#722](https://github.com/mmistakes/minimal-mistakes/issues/722)
+- Add support for YouTube channel URLs in author profile. [#716](https://github.com/mmistakes/minimal-mistakes/issues/716)
+
+### Bug Fixes
+
+- Add Jekyll as `spec.add_runtime_dependency` in `.gemspec`.
+
 ## [4.1.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.1.0)
 
 ### Enhancements
