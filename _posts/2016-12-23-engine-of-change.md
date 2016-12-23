@@ -6,4 +6,5 @@ it should be easy to sync up to Github as well.
 I completed the first chapters of https://leanpub.com/the-road-to-learn-react and have gone back to the official facebook tutorials
 to try and cement the things I've learned so far.
 
-Currently getting some [TicTacToe](https://facebook.github.io/react/tutorial/tutorial.html) up and running.
+[TicTacToe](https://facebook.github.io/react/tutorial/tutorial.html) is up and running. The React flow of information is starting to feel
+a bit more familiar. Still have to finish that so it can store a history of the players' moves.
