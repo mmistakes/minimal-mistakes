@@ -1,0 +1,121 @@
+<html>
+<head></head>
+<body>
+
+<div id="pieChart"></div>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min.js"></script>
+<script src="../d3pie.min.js"></script>
+<script>
+var pie = new d3pie("pieChart", {
+  "header": {
+    "title": {
+      "fontSize": 24,
+      "font": "open sans"
+    },
+    "subtitle": {
+      "color": "#999999",
+      "fontSize": 12,
+      "font": "open sans"
+    },
+    "titleSubtitlePadding": 9
+  },
+  "footer": {
+    "color": "#999999",
+    "fontSize": 10,
+    "font": "open sans",
+    "location": "bottom-left"
+  },
+  "size": {
+    "canvasWidth": 590
+  },
+  "data": {
+    "sortOrder": "value-desc",
+    "content": [
+    {
+      "label": "Local market",
+      "value": 54,
+      "color": "#2484c1"
+    },
+    {
+      "label": "Vuli harvest",
+      "value": 3,
+      "color": "#0c6197"
+    },
+    {
+      "label": "Storage",
+      "value": 10,
+      "color": "#4daa4b"
+    },
+    {
+      "label": "Poultry",
+      "value": 6,
+      "color": "#90c469"
+    },
+    {
+      "label": "Livestock",
+      "value": 1,
+      "color": "#daca61"
+    },
+    {
+      "label": "Wild fruit/vegetables",
+      "value": 11,
+      "color": "#e4a14b"
+    },
+    {
+      "label": "Relief food",
+      "value": 6,
+      "color": "#e98125"
+    },
+    {
+      "label": "Food-for-work",
+      "value": 6,
+      "color": "#cb2121"
+    },
+    {
+      "label": "Food gifts",
+      "value": 5,
+      "color": "#830909"
+    }
+    ]
+  },
+  "labels": {
+    "outer": {
+      "pieDistance": 32
+    },
+    "inner": {
+      "hideWhenLessThanPercentage": 3
+    },
+    "mainLabel": {
+      "fontSize": 11
+    },
+    "percentage": {
+      "color": "#ffffff",
+      "decimalPlaces": 0
+    },
+    "value": {
+      "color": "#adadad",
+      "fontSize": 11
+    },
+    "lines": {
+      "enabled": true
+    }
+  },
+  "effects": {
+    "pullOutSegmentOnClick": {
+      "effect": "linear",
+      "speed": 400,
+      "size": 8
+    }
+  },
+  "misc": {
+    "gradient": {
+      "enabled": true,
+      "percentage": 100
+    }
+  }
+});
+</script>
+
+</body>
+</html>
