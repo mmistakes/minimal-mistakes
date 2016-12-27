@@ -3,7 +3,7 @@ title: "Welcome"
 categories:
   - introduction
 tags:
-  - introduction
+  - something
 ---
 
 # Welcome to this course
