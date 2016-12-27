@@ -1,10 +1,9 @@
 ---
-title: "Post: Image (Standard)"
+title: "Welcome"
 categories:
-  - Post Formats
+  - introduction
 tags:
-  - image
-  - Post Formats
+  - introduction
 ---
 
 # Welcome to this course
