@@ -6,6 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
+future                   : true
 locale                   : "en"
 title                    : "ItSS"
 title_separator          : "-"
