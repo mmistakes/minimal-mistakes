@@ -100,10 +100,10 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : TaVaPa
   foursquare       :
   github           : tahamonfared
-  google_plus      :
+  google_plus      : 
   keybase          :
   instagram        :
   lastfm           :
@@ -113,7 +113,7 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : tahamonf
   vine             :
   weibo            :
   xing             :
@@ -125,6 +125,7 @@ include:
   - .htaccess
   - _pages
 exclude:
+  - _site
   - "*.sublime-project"
   - "*.sublime-workspace"
   - vendor
