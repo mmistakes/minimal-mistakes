@@ -6,18 +6,17 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en"
+locale                   : en_US
 title                    : "Statistical Thinking"
 title_separator          : "-"
 name                     : "Taha Monfared"
 description              : "Learn the science behind learning tools"
-url                      : "https://tahamonfared.github.io"
+url                      : https://tahamonfared.github.io
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "tahamonfared/tahamonfared.github.io"
+repository               : tahamonfared/tahamonfared.github.io
 teaser                   : "/assets/images/pic.png"
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
-
 
 comments:
   provider               : "facebook"
@@ -48,6 +47,19 @@ staticman:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
   path                   : # blank (default) uses feed.xml
+
+# Octopress
+
+# Default extensions
+post_ext: md
+page_ext: md
+
+# Found in _templates/
+post_layout: post
+page_layout: page
+
+# Format titles with titlecase?
+titlecase: true
 
 
 
@@ -92,7 +104,7 @@ analytics:
 author:
   name             : "Taha Monfared"
   avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "I am a statistician/data scientist, currently studying Statistics at CSU FUllerton Master program"
+  bio              : "I am a statistician/data scientist, currently studying Statistics at CSU Fullerton Master program"
   location         : "Irvine, California"
   email            : taha.hmonfared@yahoo.com
   uri              :
@@ -100,7 +112,7 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : TaVaPa
+  facebook         : 
   foursquare       :
   github           : tahamonfared
   google_plus      : 
@@ -198,7 +210,7 @@ gems:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-
+  
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
@@ -270,6 +282,3 @@ defaults:
       type: foo
     values:
       layout: single
-
-      
-theme: minimal-mistakes-jekyll
