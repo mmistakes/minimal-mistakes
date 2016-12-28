@@ -6,24 +6,25 @@ excerpt: "EM Algorithm is basically expectation maximization, although you need 
  
 To solve this problem we need to partition our data. Each observation should be sorted such that missing values are at the top of the observation vector. 
 
-$X=\left[\begin{array}{c}X_{m} \\ \hline X_{o}\end{array}\right]$, 
+$$X=\left[\begin{array}{c}X_{m} \\ \hline X_{o}\end{array}\right]$$
+
 where"o" stands for observed and "m" stands for missing values.
  
 Since the data is normal we know that 
 
-$f(X_{m}|X_{o})\sim N_{dim(X_m)}(\mu_{m}+\Sigma_{mo}\Sigma_{oo}^{-1}(x_{o}-\mu_o),\Sigma_{mm}-\Sigma_{mo}\Sigma_{oo}^{-1}\Sigma_{om})$
+$$f(X_{m}|X_{o})\sim N_{dim(X_m)}(\mu_{m}+\Sigma_{mo}\Sigma_{oo}^{-1}(x_{o}-\mu_o),\Sigma_{mm}-\Sigma_{mo}\Sigma_{oo}^{-1}\Sigma_{om})$$
  
 Now we are ready to start our EM algorithm. First we assume we have all the data.Therefore, our likelihood becomes
 
-$L_c(\mu,\Sigma|X)=\prod_{i=1}^{n}(2\pi)^{-p/2}|\Sigma|^{-1/2}exp\{-1/2(x-\mu)^T\Sigma^{-1}(x-\mu)\}$
+$$L_c(\mu,\Sigma|X)=\prod_{i=1}^{n}(2\pi)^{-p/2}|\Sigma|^{-1/2}exp\{-1/2(x-\mu)^T\Sigma^{-1}(x-\mu)\}$$
 
 Where "c" stands for complete data. 
  
 Taking the log we have 
 
-$l_c(\mu,\Sigma)\propto \sum_{i=1}^{n}{-1/2}log(|\Sigma|)+\{-1/2(x_i-\mu)^T\Sigma^{-1}(x_i-\mu)\}={-n/2}log(|\Sigma|)-1/2\sum_{i=1}^{n}tr\{\Sigma^{-1}(x_i-\mu)(x_i-\mu)^T\}$
+$$l_c(\mu,\Sigma)\propto \sum_{i=1}^{n}{-1/2}log(|\Sigma|)+\{-1/2(x_i-\mu)^T\Sigma^{-1}(x_i-\mu)\}={-n/2}log(|\Sigma|)-1/2\sum_{i=1}^{n}tr\{\Sigma^{-1}(x_i-\mu)(x_i-\mu)^T\}$$
  
-$l_c(\mu,\Sigma)\propto \frac{-n}{2}log(|\Sigma|)-\frac{1}{2}tr\{\Sigma^{-1}\sum_{i=1}^{n}(x_ix_i^T-x_i\mu^T-\mu x_i^T+\mu\mu^T)\}$
+$$l_c(\mu,\Sigma)\propto \frac{-n}{2}log(|\Sigma|)-\frac{1}{2}tr\{\Sigma^{-1}\sum_{i=1}^{n}(x_ix_i^T-x_i\mu^T-\mu x_i^T+\mu\mu^T)\}$$
  
 With this likelihood, now we can make our Q function.
  
