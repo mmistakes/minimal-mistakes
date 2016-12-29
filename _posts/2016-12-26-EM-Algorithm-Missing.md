@@ -227,8 +227,6 @@ EM_missing_normal<-function(data,maxit=300,tolerr=1e-5){
 }
 
 
-mu<-c(3,-2,1)
-Sigma<-matrix(c(10,5,4,5,18,7,4,7,9),nrow=3)
 X <- matrix(c(NA,4.605047,5.8303953,7.595643,1.754275,1.8826819,
               4.047683,-1.791576,NA,-1.672295,-3.434457,2.1768536,
               2.904052,-3.906055,-4.6161726),byrow=TRUE,ncol=3,nrow=5)
@@ -273,6 +271,9 @@ This one was just a test run! let's try to input a bigger dataset with more NAs.
 
 ```
 require(mvtnorm)
+mu<-c(3,-2,1)
+Sigma<-matrix(c(10,5,4,5,18,7,4,7,9),nrow=3)
+
 X<-rmvnorm(500,mu,Sigma)
 X<-matrix(sample(c(1,NA),replace = TRUE,size = 1500,prob = c(.8,.2)),ncol=3)*X
 res_EM<-EM_missing_normal(data = X)
