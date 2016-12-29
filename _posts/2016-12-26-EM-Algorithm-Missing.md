@@ -139,12 +139,10 @@ where we have replaced $\sum_{i=1}^{n}x_i^{\*}=n\hat{\mu'}$.
 
 So the pseudo algorithm  will be:
  
-Initiation:
-0. Remove observations with no observed values (none of the variables are filled).
-1. Assume some initial values for $\mu$ and $\Sigma$, which can be $\mu=\bar X$ without the missing values and $\Sigma=Cov(X)$ with values of $\mu$ replacing the corresponding missing spots.
 
-Iteration:
-2. Calculate $x_i^{\*}$ and ${x_ix_i^T}^{\*}$ for each observation as calculated in the body of the text above. 
+0. (Initiation:)Remove observations with no observed values (none of the variables are filled).
+1. Assume some initial values for $\mu$ and $\Sigma$, which can be $\mu=\bar X$ without the missing values and $\Sigma=Cov(X)$ with values of $\mu$ replacing the corresponding missing spots.
+2. (Iteration:)Calculate $x_i^{\*}$ and ${x_ix_i^T}^{\*}$ for each observation as calculated in the body of the text above. 
 3. Calculate $\hat \mu'=\frac{\sum_{i=1}^{n}x_i^{\*}}{n}$ and $\hat{\Sigma'}=\frac{\sum_{i=1}^{n}({x_ix_i^T}^{\*})}{n}-\hat \mu'\hat {\mu'}^T$. 
 4. Check the condition that $mre=\frac{\theta'-\theta}{max(1,\theta)}$ is bigger than some error tolerance, like 1e-5
 5. Replace  initial values with $\theta'$ if the condition is not met and do steps 2-5
