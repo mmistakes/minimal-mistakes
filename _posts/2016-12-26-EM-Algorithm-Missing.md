@@ -149,7 +149,8 @@ So the pseudo algorithm  will be:
 
 Let's show the code below!
  
-```
+~~~r
+
 EM_missing_normal<-function(data,maxit=300,tolerr=1e-5){
   
   p<-ncol(data)
@@ -265,11 +266,11 @@ $imputed_data
 $iteration
 [1] 27
 
-```
+~~~
 
 This one was just a test run! let's try to input a bigger dataset with more NAs.
 
-```
+~~~r
 require(mvtnorm)
 mu<-c(3,-2,1)
 Sigma<-matrix(c(10,5,4,5,18,7,4,7,9),nrow=3)
@@ -321,15 +322,15 @@ head(res_EM$imputed_data)
 
 res_EM$iteration
 [1] 8
+~~~
 
-```
 
 With only 8 iterations we have got to the best possible solution. That's impressive. and Also very better than just imputing averages since we are considering the covariance structure of the data. 
 
 Let's check what would have happened if we only used the means. 
 
-```
 
+~~~r
 xbar_init<-apply(X,MARGIN = 2,FUN = mean,na.rm = TRUE)
 pred<-X
 
@@ -352,7 +353,7 @@ sig_init
 [1,] 8.616418  3.518584 2.652180
 [2,] 3.518584 14.777407 4.990744
 [3,] 2.652180  4.990744 7.245354
-```
+~~~
 
 I would say that's pretty off from the population variables we provided for producing our data, contrary to the EM algorithm outputs.
 
