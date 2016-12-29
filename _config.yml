@@ -244,3 +244,4 @@ defaults:
       comments: # true
       share: true
       related: true
+theme: jekyll-theme-minimal
