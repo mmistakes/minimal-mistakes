@@ -24,12 +24,30 @@
 	<script type="text/javascript" async
   		src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
   	</script>
+  <meta property="fb:admins" content="{TaVaPa}"/>
 </head>
 
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1799232470294510',
+          xfbml      : true,
+          version    : 'v2.8'
+        });
+      };
 
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+   
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 

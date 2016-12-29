@@ -1,11 +1,11 @@
 # main links
 main:
-  - title: "Posts"
-    url: /_posts/
   - title: "About"
-    url: /pages/about.md
-  - title: "Contact"
-    url: /pages/contact.md
+    url: /about/
+
+
+  #  - title: "Contact"
+ #   url: /contact/
   
   # - title: "Sample Collections"
   #   url: /collection-archive/
