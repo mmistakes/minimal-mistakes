@@ -7,33 +7,24 @@
     {% include head.html %}
     {% include head/custom.html %}
 
-    <script type="text/javascript" async
-        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
+	<script type="text/x-mathjax-config">
+	 	MathJax.Hub.Config({
+	  		tex2jax: {
+	    		inlineMath: [ ['$','$'] ]
+	    	},
+	  		CommonHTML: { 
+	  			scale: 80,
+	  			linebreaks: {
+	      			width: "80%"
+	      		}
+	  		} 
+		});
+	</script>	
 
-    <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      jax: ["input/TeX", "output/HTML-CSS"],
-      tex2jax: {
-        inlineMath: [['$','$'], ['\\(','\\)']],
-        displayMath: [ ['$$', '$$']],
-        processEscapes: true,
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-      },
-      messageStyle: "none",
-      "HTML-CSS": { 
-        availableFonts: ["TeX"],
-        minScaleAdjust: 50,
-        matchFontHeight: true,
-        linebreaks: {
-          automatic: true,
-          width= "80% container"
-        }
-      } 
-    });
-    </script>
-    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
+	<script type="text/javascript" async
+  		src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+  	</script>
+</head>
 
   </head>
 
