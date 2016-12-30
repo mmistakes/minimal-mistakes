@@ -1,5 +1,5 @@
 ---
-excerpt: "Classification Continued"
+excerpt: "Classification by LDA,QDA and KNN"
 ---
 
 
