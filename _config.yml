@@ -10,7 +10,7 @@ locale                   : "en"
 title                    : "Hari Bandi"
 title_separator          : "-"
 name                     : ""
-description              : "An amazing website."
+description              : ""
 url                      : "https://haribandi.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "https://github.com/haribandi/haribandi.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -79,8 +79,8 @@ analytics:
 author:
   name             : "Hari Bandi"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Cambridge"
+  bio              : "Research assistant at MIT Operations research center"
+  location         : "Boston, MA"
   email            : "hbandi@mit.edu"
   uri              :
   bitbucket        :
@@ -94,7 +94,7 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/hari-bandi-912a874a"
+  linkedin         : "hari-bandi"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
