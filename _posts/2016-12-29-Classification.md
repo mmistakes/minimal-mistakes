@@ -36,9 +36,17 @@ g+theme_minimal()
 detach(package:ggbiplot)
 ```
 
-ggbiplot is a good package to visualize the data. It shows data points on plane made by two most important principal components. We can clearly distinct between these two groups by just looking at the plot. But how would we find it by math!
+ggbiplot is a good package to visualize the data, aside from it's use in dimension reduction by using principal components. It shows data points on plane made by two most important principal components. We can clearly distinct between these two groups by just looking at the plot. But how would we find it by math!
 
-First let's use logistics regression. Basically what we'll do here is calculate odds for each point of being in one of our groups to being in the other based on logit link function (linear assumption on the relationship between the log odds of the response and explanatory variables).
+If you have any problems in installing ggbiplot, you should use the _devtools_ package to install it from it's github repository.
+
+``` r
+install.packages("devtools")
+require(devtools)
+install_github("vqv/ggbiplot")
+``` 
+
+Let's use logistics regression to classify now. Basically what we'll do here is calculate odds for each point of being in one of our groups to being in the other based on logit link function (linear assumption on the relationship between the log odds of the response and explanatory variables).
 
 Doing logistics regression will allow us to select the best model based on training dataset only. I have written a logistics model selection function, which will exhaustively look for the best model up to first degree interactions. We should never use this though for a bigger set of variables since the possible models grow very fast.. $O(2^{\\frac{p(p+1)}{2}})$
 
