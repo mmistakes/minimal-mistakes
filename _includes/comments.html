@@ -10,12 +10,10 @@
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1799232470294510";
       fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-    </script>
+    }(document, 'script', 'facebook-jssdk'));</script>
     <div class="fb-comments" data-href="https://tahamonfared.github.io/" data-width="650" data-numposts="5"></div>
-    <div class="fb-like" data-href="https://tahamonfared.github.io/" data-width="450" data-layout="button" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
   {% when "google-plus" %}
     <h4 class="page__comments-title">{{ comments_label }}</h4>
     <section class="g-comments" data-href="{{ page.url | absolute_url }}" data-first_party_property="BLOGGER" data-view_type="FILTERED_POSTMOD">Loading Google+ Comments ...</section>
