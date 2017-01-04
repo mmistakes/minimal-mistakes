@@ -7,7 +7,6 @@ title_separator   : "-"
 name              : "Martina Pugliese"
 description       : "A blog on Data Science and all the rest"
 url               : "https://martinapugliese.github.io"          # LIVE
-#url               : "http://127.0.0.1:4000"                       # DEV
 baseurl           : # the subpath of your site, e.g. "/blog"
 repository        : "martinapugliese/martinapugliese.github.io"
 teaser            : # fallback teaser image in /images/, .e.g. "500x300.png"
@@ -17,7 +16,7 @@ theme             : "minimal-mistakes-jekyll"
 breadcrumbs       : false # true, false (default) # TODO set?
 words_per_minute  : 200   # words per minute reading time
 comments:                 # comments on posts provider, choose from below
-  provider               : "disqus"    # TODO set up
+  provider        : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -79,7 +78,7 @@ analytics:
 # Info on me
 author:
   name             : "Martina Pugliese"
-  avatar           : "me.jpg"
+  avatar           : "images/me.jpg"
   bio              : "work in progress"
   location         : "Edinburgh, Scotland"
   email            :
