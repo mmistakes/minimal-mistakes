@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Plotting The Actual Frequencies In A Freqdist In Nltk - Clearly Erroneous</title>
+
+
+
+
+<meta name="description" content="Some days ago, trying to visualise a frequency distribution of tokens in a text via NLTK, I was quite surprised (and slightly disappointed) to see that the plot() method of the FreqDist class does not support a kwarg for plotting the actual frequencies, rather than the counts.">
+
+
+
+
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="Clearly Erroneous">
+<meta property="og:title" content="Plotting The Actual Frequencies In A Freqdist In Nltk">
+
+
+  <link rel="canonical" href="http://localhost:4000/plotting-the-actual-frequencies-in-a-FreqDist-in-nltk/">
+  <meta property="og:url" content="http://localhost:4000/plotting-the-actual-frequencies-in-a-FreqDist-in-nltk/">
+
+
+
+  <meta property="og:description" content="Some days ago, trying to visualise a frequency distribution of tokens in a text via NLTK, I was quite surprised (and slightly disappointed) to see that the plot() method of the FreqDist class does not support a kwarg for plotting the actual frequencies, rather than the counts.">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2016-08-17T00:00:00+01:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Martina Pugliese",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Clearly Erroneous Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">Clearly Erroneous</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000about/">ABOUT</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000post/">Posts</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="http://localhost:4000/images/me.jpg" class="author__avatar" alt="Martina Pugliese" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">Martina Pugliese</h3>
+    
+      <p class="author__bio" itemprop="description">
+        work in progress
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+          <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">Edinburgh, Scotland</span>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://twitter.com/m_letitbe" itemprop="sameAs">
+            <i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://www.linkedin.com/in/martinapugliese" itemprop="sameAs">
+            <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/martinapugliese" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Plotting The Actual Frequencies In A Freqdist In Nltk">
+    <meta itemprop="description" content="Some days ago, trying to visualise a frequency distribution of tokens in a text via NLTK, I was quite surprised (and slightly disappointed) to see that the plot() method of the FreqDist class does not support a kwarg for plotting the actual frequencies, rather than the counts.">
+    <meta itemprop="datePublished" content="August 17, 2016">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Plotting The Actual Frequencies In A Freqdist In Nltk
+</h1>
+          
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p>Some days ago, trying to visualise a frequency distribution of tokens in a text via NLTK, I was quite surprised (and slightly disappointed) to see that the plot() method of the <a href="http://www.nltk.org/api/nltk.html#nltk.probability.FreqDist">FreqDist</a> class does not support a kwarg for plotting the actual frequencies, rather than the counts.</p>
+
+<p>Now, the term frequency in NLP is borrowed from Linguistics, where it’s used to mean the counts, not the actual frequency of occurrence of a linguistic something. I personally never quite liked this usage of the word as I find it pretty confusing: a frequency is, typically, a ratio of the occurrences counts of that something to the total of every something in the set.</p>
+
+<p>FreqDist is creating a dictionary of counts, not frequencies, which is quite alright. Then you can directly plot them by calling the class method <a href="http://www.nltk.org/api/nltk.html#nltk.probability.FreqDist.plot">plot()</a>, without the need to externally call pyplot. I was expecting that among the kwargs allowed by the method there would have been something to normalise said counts to transform them into frequencies. As of NLTK’s version 3.2.1, there isn’t. The <a href="http://www.nltk.org/api/nltk.html#nltk.probability.FreqDist.freq">freq(sample)</a> method gives the frequency of a given sample, but nothing enables the possibility for frequencies to be directly plotted.</p>
+
+<p>My hack to obtain this is then: What we’re doing here is simply normalising the counts to their sum, paying attention to the fact that N(), which does return this sum, changes when we change the values, so we need to store it beforehand. All the other existing kwargs are preserved for consistency.</p>
+
+<p>My hack to obtain this is then:</p>
+
+<div class="language-py highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">plot_freqdist_freq</span><span class="p">(</span><span class="n">fd</span><span class="p">,</span>
+                       <span class="n">max_num</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
+                       <span class="n">cumulative</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span>
+                       <span class="n">title</span><span class="o">=</span><span class="s">'Frequency plot'</span><span class="p">,</span>
+                       <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
+    <span class="s">"""
+    As of NLTK version 3.2.1, FreqDist.plot() plots the counts 
+    and has no kwarg for normalising to frequency. 
+    Work this around here.
+    
+    INPUT:
+        - the FreqDist object
+        - max_num: if specified, only plot up to this number of items 
+          (they are already sorted descending by the FreqDist)
+        - cumulative: bool (defaults to False)
+        - title: the title to give the plot
+        - linewidth: the width of line to use (defaults to 2)
+    OUTPUT: plot the freq and return None.
+    """</span>
+
+    <span class="n">tmp</span> <span class="o">=</span> <span class="n">fd</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">norm</span> <span class="o">=</span> <span class="n">fd</span><span class="o">.</span><span class="n">N</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">tmp</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+        <span class="n">tmp</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">fd</span><span class="p">[</span><span class="n">key</span><span class="p">])</span> <span class="o">/</span> <span class="n">norm</span>
+
+    <span class="k">if</span> <span class="n">max_num</span><span class="p">:</span>
+        <span class="n">tmp</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">max_num</span><span class="p">,</span> <span class="n">cumulative</span><span class="o">=</span><span class="n">cumulative</span><span class="p">,</span>
+                 <span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="n">linewidth</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">tmp</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">cumulative</span><span class="o">=</span><span class="n">cumulative</span><span class="p">,</span> 
+                 <span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">,</span> 
+                 <span class="n">linewidth</span><span class="o">=</span><span class="n">linewidth</span><span class="p">)</span>
+
+    <span class="k">return</span>
+</code></pre>
+</div>
+
+<p>What we’re doing here is simply normalising the counts to their sum, paying attention to the fact that <a href="http://www.nltk.org/api/nltk.html#nltk.probability.FreqDist.N">N()</a>, which does return this sum, changes when we change the values, so we need to store it beforehand. All the other existing kwargs are preserved for consistency.</p>
+
+<p><img height="75px" width="450px" align="right" src="http://localhost:4000/images/freqdist.png" alt="freqdist" /> The result is in figure, for the text of Austen’s Sense and Sensibility (available as a book in the NLTK data), we’re plotting the frequency of the 50 most frequent tokens.</p>
+
+<p>Looks like to is the most frequent token (note that no pre-processing/removals have been employed), with a frequency of around 6.5%. Having this number might be much more interesting than the count (which is around 9000, for reference).</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2016-08-17T00:00:00+01:00">August 17, 2016</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Plotting The Actual Frequencies In A Freqdist In Nltk http://localhost:4000/plotting-the-actual-frequencies-in-a-FreqDist-in-nltk/" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/plotting-the-actual-frequencies-in-a-FreqDist-in-nltk/" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=http://localhost:4000/plotting-the-actual-frequencies-in-a-FreqDist-in-nltk/" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/plotting-the-actual-frequencies-in-a-FreqDist-in-nltk/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="#" class="pagination--pager disabled">Previous</a>
+    
+    
+      <a href="http://localhost:4000/glasgow,-I'm-leaving-you!/" class="pagination--pager" title="Glasgow, I&#8217;m Leaving You!
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/martinapugliese"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2017 Martina Pugliese. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+
+  </body>
+</html>

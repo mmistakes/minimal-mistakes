@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://localhost:4000/glasgow,-I'm-leaving-you!/</loc>
+<lastmod>2016-09-25T00:00:00+01:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/plotting-the-actual-frequencies-in-a-FreqDist-in-nltk/</loc>
+<lastmod>2016-08-17T00:00:00+01:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/404.html</loc>
+<lastmod>2017-01-04T20:49:44+00:00</lastmod>
+</url>
+</urlset>
