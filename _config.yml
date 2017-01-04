@@ -11,7 +11,7 @@ url               : "https://martinapugliese.github.io"          # LIVE
 baseurl           : # the subpath of your site, e.g. "/blog"
 repository        : "martinapugliese/martinapugliese.github.io"
 teaser            : # fallback teaser image in /images/, .e.g. "500x300.png"
-
+theme             : "minimal-mistakes-jekyll"
 
 # Site features settings
 breadcrumbs       : false # true, false (default) # TODO set?
