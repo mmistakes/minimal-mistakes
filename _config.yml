@@ -6,21 +6,21 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en"
-title                    : "Site Title"
-title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+locale                   : "en-US"
+title                    : "Wei & Way"
+title_separator          : "|"
+name                     : &name "Wei Ye"
+description              : "Where there's a will, there's a Wei."
+url                      : "//yewei.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "vejuhust/vejuhust.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
+words_per_minute         : 120
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : "disqus"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "yewei"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -55,7 +55,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : &twitter "vejuhust"
 facebook:
   username               :
   app_id                 :
@@ -70,18 +70,18 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google-universal"
   google:
-    tracking_id          :
+    tracking_id          : "UA-62032514-1"
 
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  name             : *name
+  avatar           : "/images/bio-photo.jpg"
+  bio              : "A man who travels the world eating shrimps."
+  location         : "Beijing"
+  email            : "wei.ye@microsoft.com"
   uri              :
   bitbucket        :
   codepen          :
@@ -89,20 +89,20 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "vejuhust"
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "vejuhust"
   lastfm           :
-  linkedin         :
+  linkedin         : "weyemsft"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : *twitter
   vine             :
-  weibo            :
+  weibo            : "vejuhust"
   xing             :
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
 
@@ -172,9 +172,9 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 8
 paginate_path: /page:num/
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: "Asia/Shanghai"
 
 
 # Plugins
@@ -240,7 +240,14 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: # true
+      read_time: false
+      comments: true
       share: true
       related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true

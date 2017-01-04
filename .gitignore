@@ -7,6 +7,10 @@
 .sass-cache
 _asset_bundler_cache
 _site
+docs
+test
+CHANGELOG.md
+minimal-mistakes-jekyll.gemspec
 codekit-config.json
 example/_site
 Gemfile.lock
