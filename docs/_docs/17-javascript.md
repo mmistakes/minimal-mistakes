@@ -15,8 +15,7 @@ minimal mistakes
 |  |  |   ├── jquery.fitvids.js            # fluid width video embeds
 |  |  |   ├── jquery.greedy-navigation.js  # priority plus navigation
 |  |  |   ├── jquery.magnific-popup.js     # responsive lightbox
-|  |  |   ├── jquery.smooth-scroll.min.js  # make same-page links scroll smoothly
-|  |  |   └── stickyfill.min.js            # `position: sticky` polyfill
+|  |  |   └── jquery.smooth-scroll.min.js  # make same-page links scroll smoothly
 |  |  ├── vendor
 |  |  |   └── jquery
 |  |  |       └── jquery-1.12.1.min.js
