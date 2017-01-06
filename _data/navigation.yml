@@ -1,7 +1,15 @@
 # main links
 main:
-  - title: "Blog"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "About Us"
+    url: /about/
+  - title: "Resources"
+    url: /resources/
+  - title: "Community Fund"
+    url: /communityfund/
+  - title: "Mentoring"
+    url: /mentoring/
+  - title: "Contact Us"
+    url: /contact/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
