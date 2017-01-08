@@ -15,6 +15,7 @@ Installation has followed the quick-start giude above and then the gemified vers
 
 * To update the theme run `bundle update`
 * To serve the site locally, run `bundle exec jekyll serve` (runs on http://127.0.0.1:4000)
+* MathJax is used to display LateX-style maths (added in `head.html`) in `_includes`. Add maths into double dollars.
 
 ## Credits
 

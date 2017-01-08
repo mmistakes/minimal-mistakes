@@ -1,3 +1,11 @@
+---
+title: "Plotting the actual frequencies in a FreqDist in NLTK"
+tags:
+  - python
+  - nltk
+  - nlp
+---
+
 Some days ago, trying to visualise a frequency distribution of tokens in a text via NLTK, I was quite surprised (and slightly disappointed) to see that the plot() method of the [FreqDist](http://www.nltk.org/api/nltk.html#nltk.probability.FreqDist) class does not support a kwarg for plotting the actual frequencies, rather than the counts.
 
 Now, the term frequency in NLP is borrowed from Linguistics, where it's used to mean the counts, not the actual frequency of occurrence of a linguistic something. I personally never quite liked this usage of the word as I find it pretty confusing: a frequency is, typically, a ratio of the occurrences counts of that something to the total of every something in the set.

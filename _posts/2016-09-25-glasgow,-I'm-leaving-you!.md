@@ -1,3 +1,12 @@
+---
+title: "Glasgow, I'm leaving you!"
+tags:
+  - glasgow
+  - scotland
+  - moving
+  - life
+---
+
 Actually, at the time of writing this, I've already moved on, changed address, left no trace. I moved to Edinburgh. Yea, that happened one week ago.
 You must have noticed by now. Yea, I've been a coward. And yea, I hear you, I escaped to the rich guy. I didn't have the heart to tell you before.
 
