@@ -1,4 +1,4 @@
 ---
 permalink: /resources/schools/
-layout: schools
+layout: school
 ---

@@ -1,5 +1,0 @@
----
-permalink: /resources/
----
-
-<h2>

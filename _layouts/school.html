@@ -3,6 +3,6 @@ layout: single
 ---
 
 {% for school in site.schools %}
-  <a href="{{ site.url }}/schools/"><h2>{{ school.title }}</h2></a>
+  <a href="{{ school.url }}"><h2>{{ school.title }}</h2></a>
   <p>{{ school.excerpt }}</p>
 {% endfor %}

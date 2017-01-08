@@ -234,7 +234,7 @@ compress_html:
 collections:
   schools:
     output: true
-    permalink: /:collection/:path/
+    permalink: /resources/:collection/:path/
 
 # Defaults
 defaults:
@@ -261,5 +261,5 @@ defaults:
       path: ""
       type: schools
     values:
-      layout: school
+      layout: single
       author_profile: false
