@@ -1,4 +1,5 @@
 ---
+title: "Community Fund"
 permalink: /communityfund/
 ---
 
