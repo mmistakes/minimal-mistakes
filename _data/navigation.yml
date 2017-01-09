@@ -1,9 +1,9 @@
 # main links
 main:
   - title: "Blog"
-    url: https://viziblydiffrnt.github.io/blog
+    url: /blog
   - title: "About"
-     url: https://viziblydiffrnt.github.io/about
+     url: /about
   - title: "Categories"
   #   url: /year-archive/
   # - title: "Sample Collections"
