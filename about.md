@@ -7,11 +7,7 @@ defaults:
     values:
       layout: compress
       author_profile: true
-    permalink: /about/
-
-header:
-  overlay_image: /assets/images/scatter.png
-  
+    permalink: /about/  
 ---
 <img src="https://viziblydiffrnt.github.io/assets/images/about.JPG" width="384" height="384"/>
 
