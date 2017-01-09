@@ -1,7 +1,16 @@
 ---
 header:
   overlay_image: /assets/images/scatter.png
- 
+
+defaults:
+  # _pages
+  - scope:
+      path: "/about"
+      type: pages
+    values:
+      layout: compress
+      author_profile: true
+    permalink: /about/
 ---
 <img src="https://viziblydiffrnt.github.io/assets/images/about.JPG" width="384" height="384"/>
 
