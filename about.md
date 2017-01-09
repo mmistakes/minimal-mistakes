@@ -10,7 +10,7 @@ defaults:
     permalink: /about/
 ---
 
-<img src="https://viziblydiffrnt.github.io/assets/images/bio-photo.jpg" width="256" height="256" align="center">
+<img src="https://viziblydiffrnt.github.io/assets/images/bio-photo.jpg" width="384" height="384" align="center">
 
 Mark Jacobson is an Information Management and Analytics Solution Architect @ Slalom. With over 10 years of BI experience, Mark specializes in Data Visualization with Tableau and performance tuning of large scale Tableau Server configurations.
 
