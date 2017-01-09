@@ -1,5 +1,5 @@
 ---
-title: "mentoring"
+title: "Mentoring"
 permalink: /mentoring/
 ---
 
