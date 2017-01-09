@@ -5,7 +5,7 @@ defaults:
       path: "/about"
       type: pages
     values:
-      layout: single
+      layout: compress
       author_profile: true
     permalink: /about/
 ---
