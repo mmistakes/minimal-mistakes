@@ -2,10 +2,10 @@
 main:
   - title: "Blog"
     # url: /blog
-  - title: "About"
-    url: /about
   - title: "Categories"
     # url: /year-archive/
+  - title: "About"
+    url: /about
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
