@@ -26,8 +26,8 @@
 @include breakpoint-set("to ems", true);
 
 /* Font Awesome - icon font set */
-/* @import "vendor/font-awesome/font-awesome"; */
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import "vendor/font-awesome/font-awesome";
+/* @import url('https://fonts.googleapis.com/css?family=Oswald'); */
 
 /* Magnific Popup - responsive lightbox */
 @import "vendor/magnific-popup/magnific-popup"; // Magnific Popup
