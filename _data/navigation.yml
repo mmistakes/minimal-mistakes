@@ -3,7 +3,7 @@ main:
   - title: "Blog"
   #   url: /blog
   - title: "About"
-     url: "https://viziblydiffrnt.github.io/about"
+      url: "https://viziblydiffrnt.github.io/about"
   - title: "Categories"
   #   url: /year-archive/
   # - title: "Sample Collections"
