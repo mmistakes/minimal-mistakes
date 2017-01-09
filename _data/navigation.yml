@@ -1,9 +1,9 @@
 # main links
 main:
   - title: "Blog"
-  #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+    url: https://viziblydiffrnt.github.io/blog
   - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+     url: https://viziblydiffrnt.github.io/about
   - title: "Categories"
   #   url: /year-archive/
   # - title: "Sample Collections"
