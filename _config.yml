@@ -252,3 +252,5 @@ defaults:
       share: true
       related: true
 theme: jekyll-theme-tactile
+
+theme: minimal-mistakes-jekyll
