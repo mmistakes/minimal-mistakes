@@ -55,11 +55,12 @@ $lighter-gray               : mix(#fff, $gray, 90%) !default;
 
 $navy                       : #18121E;
 $gunmetal                   : #233237;
+$light-gunmetal             : mix(#fff, $gunmetal, 20%);
 $rust-red                   : #984B43;
 $mustard-yellow             : #EAC67A;
 
 $body-color                 : #fff !default;
-$background-color           : $gunmetal !default;
+$background-color           : $light-gunmetal !default;
 $code-background-color      : #fafafa !default;
 $code-background-color-dark : $light-gray !default;
 $text-color                 : #fff !default;
