@@ -6,8 +6,8 @@ main:
     url: /resources/
   - title: "Community Fund"
     url: /communityfund/
-  - title: "Mentoring"
-    url: /mentoring/
+  - title: "PAC"
+    url: /pac/
   - title: "Contact Us"
     url: /contact/
   # - title: "About"
