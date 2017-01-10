@@ -10,3 +10,10 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+tags:
+  - title: "Tableau"
+    children:
+    - title: "Tableau Server"
+    - title: "Tableau APIs"
+    - title: "Visualizations"
