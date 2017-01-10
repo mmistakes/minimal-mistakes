@@ -66,7 +66,8 @@ $code-background-color-dark : $light-gray !default;
 $text-color                 : #fff !default;
 $border-color               : $lighter-gray !default;
 
-$primary-color              : #7a8288 !default;
+/* $primary-color              : #7a8288 !default; */
+$primary-color              : #fff;
 $success-color              : #62c462 !default;
 $warning-color              : #f89406 !default;
 $danger-color               : #ee5f5b !default;
