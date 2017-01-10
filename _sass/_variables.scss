@@ -53,15 +53,16 @@ $darker-gray                : mix(#000, $gray, 60%) !default;
 $light-gray                 : mix(#fff, $gray, 50%) !default;
 $lighter-gray               : mix(#fff, $gray, 90%) !default;
 
-$dark-blue                  : #00334E;
-$medium-blue                : #145374;
-$steel-blue                 : #5588A3;
+$navy                       : #18121E;
+$gunmetal                   : #233237;
+$rust-red                   : #984B43;
+$mustard-yellow             : #EAC67A;
 
 $body-color                 : #fff !default;
-$background-color           : #fff !default;
+$background-color           : $gunmetal !default;
 $code-background-color      : #fafafa !default;
 $code-background-color-dark : $light-gray !default;
-$text-color                 : $dark-gray !default;
+$text-color                 : #fff !default;
 $border-color               : $lighter-gray !default;
 
 $primary-color              : #7a8288 !default;
