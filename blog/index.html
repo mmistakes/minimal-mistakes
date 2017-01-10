@@ -1,7 +1,12 @@
 ---
-layout: home
+layout: archive
 permalink: /blog/
 sidebar:
   nav: "tags"
 ---
 
+<div class="grid__wrapper">
+  {% for post in site.posts %}
+    {% include archive-single.html type="grid" %}
+  {% endfor %}
+</div>
