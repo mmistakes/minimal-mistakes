@@ -31,7 +31,7 @@ What happens if you have a workbook in 2 different projects with the same name? 
 
 ## Discovering the Link
 
-I knew the answer had to be within the background_jobs table, so I went digging. Low and behold, I found my answer within the “args” field. For a Workbook’s Extract Refresh job, the “args” value looks something like this:Read more…
+I knew the answer had to be within the background_jobs table, so I went digging. Low and behold, I found my answer within the “args” field. For a Workbook’s Extract Refresh job, the “args” value looks something like this:
 
 ```
 -- Workbook
@@ -61,7 +61,6 @@ The statement replaces the dashes and splits the string into its own field which
 </p>
 
 Success! I now had a version of the background_jobs table complete with the ID of the object being refreshed that I could link back to my data!
-Read more…
 
 If you’re like me and you’ve been stuck searching for way to do this, I hope you enjoyed the post. I’ve created a [.tds file](https://github.com/mj326/Tableau-Server/blob/master/background_jobs%20live.tds) and hosted it on GitHub so you don’t have to recreate the SQL if that’s not your thing.
 
