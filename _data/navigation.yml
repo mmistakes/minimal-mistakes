@@ -15,5 +15,8 @@ tags:
   - title: "Tableau"
     children:
     - title: "Tableau Server"
+      url: /tags/#tableau-server
     - title: "Tableau APIs"
+      url: /tags/#tableau-apis
     - title: "Visualizations"
+      url: /tags/#visualizations
