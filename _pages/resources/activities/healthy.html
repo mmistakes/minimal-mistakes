@@ -1,0 +1,10 @@
+---
+title: "Healthy Life Style"
+permalink: /resources/activities/healthy/
+layout: single
+---
+
+{% for lifestyle in site.activities_healthy %}
+  <a href="{{ lifestyle.url }}"><h2>{{ lifestyle.name }}</h2></a>
+  <p style="float: right;">{{ lifestyle.location }}</p>
+{% endfor %}

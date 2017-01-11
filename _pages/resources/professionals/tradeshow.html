@@ -1,0 +1,10 @@
+---
+title: "Trade Show"
+permalink: /resources/professionals/tradeshow/
+layout: single
+---
+
+{% for person in site.professionals_tradeshow %}
+  <a href="{{ person.url }}"><h2>{{ person.name }}</h2></a>
+  <p style="float: right;">{{ person.company }}</p>
+{% endfor %}

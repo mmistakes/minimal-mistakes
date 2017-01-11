@@ -1,0 +1,10 @@
+---
+title: "Sports"
+permalink: /resources/activities/sports/
+layout: single
+---
+
+{% for sport in site.activities_sports %}
+  <a href="{{ sport.url }}"><h2>{{ sport.name }}</h2></a>
+  <p style="float: right;">{{ sport.location }}</p>
+{% endfor %}

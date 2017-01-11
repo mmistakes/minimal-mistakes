@@ -1,0 +1,10 @@
+---
+title: "Shipping to China"
+permalink: /resources/professionals/shippingchina/
+layout: single
+---
+
+{% for person in site.professionals_shippingchina %}
+  <a href="{{ person.url }}"><h2>{{ person.name }}</h2></a>
+  <p style="float: right;">{{ person.company }}</p>
+{% endfor %}

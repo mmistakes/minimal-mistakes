@@ -1,0 +1,10 @@
+---
+title: "Performing Groups"
+permalink: /resources/activities/performing/
+layout: single
+---
+
+{% for group in site.activities_performing %}
+  <a href="{{ group.url }}"><h2>{{ group.name }}</h2></a>
+  <p style="float: right;">{{ group.location }}</p>
+{% endfor %}

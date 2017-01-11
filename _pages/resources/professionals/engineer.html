@@ -1,0 +1,10 @@
+---
+title: "Engineers"
+permalink: /resources/professionals/engineer/
+layout: single
+---
+
+{% for person in site.professionals_engineer %}
+  <a href="{{ person.url }}"><h2>{{ person.name }}</h2></a>
+  <p style="float: right;">{{ person.company }}</p>
+{% endfor %}

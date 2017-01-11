@@ -1,0 +1,10 @@
+---
+title: "Import/Export"
+permalink: /resources/professionals/importexport/
+layout: single
+---
+
+{% for person in site.professionals_importexport %}
+  <a href="{{ person.url }}"><h2>{{ person.name }}</h2></a>
+  <p style="float: right;">{{ person.company }}</p>
+{% endfor %}

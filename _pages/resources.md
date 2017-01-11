@@ -10,10 +10,10 @@ permalink: /resources/
 - <a href="{{ site.url }}/resources/communities/religious/">Religious Groups/Churches</a>
 - <a href="{{ site.url }}/resources/communities/wechat/">WeChat Groups</a>
 
-## Benefits <- name
+## Benefits
 - <a href="{{ site.url }}/resources/benefits/community/">Community-based Benefits</a>
 
-## Activities <- name, location
+## Activities
 - <a href="{{ site.url }}/resources/activities/academies/">Academies</a>
 - <a href="{{ site.url }}/resources/activities/afterschool/">After School Programs</a>
 - <a href="{{ site.url }}/resources/activities/clubs/">Clubs</a>
@@ -21,16 +21,15 @@ permalink: /resources/
 - <a href="{{ site.url }}/resources/activities/performing/">Performing Groups</a>
 - <a href="{{ site.url }}/resources/activities/sports/">Sports</a>
 
-
-## Professionals <- name, company
+## Professionals
 - <a href="{{ site.url }}/resources/professionals/accountant/">Accountant/CPA</a>
 - <a href="{{ site.url }}/resources/professionals/acupuncture/">Acupuncture</a>
 - <a href="{{ site.url }}/resources/professionals/architect/">Architect</a>
 - <a href="{{ site.url }}/resources/professionals/artist/">Artist</a>
 - <a href="{{ site.url }}/resources/professionals/attorney/">Attorney at Law</a>
-- <a href="{{ site.url }}/resources/professionals/cti/">Certified translation and interpretation</a>
+- <a href="{{ site.url }}/resources/professionals/cti/">Certified Translation and Interpretation</a>
 - <a href="{{ site.url }}/resources/professionals/collegecounselor/">College Counselor</a>
-- <a href="{{ site.url }}/resources/professionals/computerprograming/">Computer/Programming</a>
+- <a href="{{ site.url }}/resources/professionals/computerprogramming/">Computer/Programming</a>
 - <a href="{{ site.url }}/resources/professionals/dentistorthodontist/">Dentists/Orthodontists</a>
 - <a href="{{ site.url }}/resources/professionals/engineer/">Engineers</a>
 - <a href="{{ site.url }}/resources/professionals/financialadvisor/">Financial Advisors</a>
@@ -46,5 +45,5 @@ permalink: /resources/
 - <a href="{{ site.url }}/resources/professionals/socialworker/">Social Worker</a>
 - <a href="{{ site.url }}/resources/professionals/taxreturn/">Tax Returns Experts</a>
 - <a href="{{ site.url }}/resources/professionals/tradeshow/">Trade Show</a>
-- <a href="{{ site.url }}/resources/professionals/tutor/">Tutor</a>
 - <a href="{{ site.url }}/resources/professionals/travelagent/">Travel Agent</a>
+- <a href="{{ site.url }}/resources/professionals/tutor/">Tutor</a>

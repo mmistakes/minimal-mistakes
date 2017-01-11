@@ -1,0 +1,10 @@
+---
+title: "Interpretation"
+permalink: /resources/professionals/interpretation/
+layout: single
+---
+
+{% for person in site.professionals_interpretation %}
+  <a href="{{ person.url }}"><h2>{{ person.name }}</h2></a>
+  <p style="float: right;">{{ person.company }}</p>
+{% endfor %}
