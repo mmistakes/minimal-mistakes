@@ -1,0 +1,9 @@
+---
+title: "Community Organizations"
+permalink: /resources/communities/organizations/
+layout: single
+---
+
+{% for org in site.communities_organizations %}
+  <a href="{{ org.url }}"><h2>{{ org.name }}</h2></a>
+{% endfor %}

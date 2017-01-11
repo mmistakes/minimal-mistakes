@@ -1,0 +1,9 @@
+---
+title: "WeChat Groups"
+permalink: /resources/communities/wechat/
+layout: single
+---
+
+{% for chat in site.communities_wechat %}
+  <a href="{{ chat.url }}"><h2>{{ chat.name }}</h2></a>
+{% endfor %}

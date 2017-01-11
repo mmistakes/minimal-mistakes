@@ -1,0 +1,9 @@
+---
+title: "Religious Groups/Churches"
+permalink: /resources/communities/religious/
+layout: single
+---
+
+{% for group in site.communities_religious %}
+  <a href="{{ group.url }}"><h2>{{ group.name }}</h2></a>
+{% endfor %}

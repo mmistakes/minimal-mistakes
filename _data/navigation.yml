@@ -18,3 +18,15 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+extra:
+  - title: Programs
+    children:
+      - title: "Volunteering"
+        url: /volunteering/
+      - title: "Mentoring"
+        url: /mentoring/
+      - title: "Chinatown"
+        url: /chinatown/
+      - title: "Chinese School"
+        url: /chineseschool/

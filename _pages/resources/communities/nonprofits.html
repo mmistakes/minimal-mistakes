@@ -1,0 +1,9 @@
+---
+title: "Nonprofit Organizations"
+permalink: /resources/communities/nonprofits/
+layout: single
+---
+
+{% for nonprofit in site.communities_nonprofits %}
+  <a href="{{ nonprofit.url }}"><h2>{{ nonprofit.name }}</h2></a>
+{% endfor %}

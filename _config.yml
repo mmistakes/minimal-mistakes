@@ -232,6 +232,21 @@ compress_html:
 
 # Collections
 collections:
+  communities_clubs:
+    output: true
+    permalink: /resources/:collection/:path/
+  communities_nonprofits:
+    output: true
+    permalink: /resources/:collection/:path/
+  communities_organizations:
+    output: true
+    permalink: /resources/:collection/:path/
+  communities_religious:
+    output: true
+    permalink: /resources/:collection/:path/
+  communities_wechat:
+    output: true
+    permalink: /resources/:collection/:path/
   schools:
     output: true
     permalink: /resources/:collection/:path/
@@ -260,6 +275,41 @@ defaults:
   - scope:
       path: ""
       type: schools
+    values:
+      layout: single
+      author_profile: false
+  # communities_clubs
+  - scope:
+      path: ""
+      type: communities_clubs
+    values:
+      layout: single
+      author_profile: false
+  # communities_nonprofits
+  - scope:
+      path: ""
+      type: communities_nonprofits
+    values:
+      layout: single
+      author_profile: false
+  # communities_organizations
+  - scope:
+      path: ""
+      type: communities_organizations
+    values:
+      layout: single
+      author_profile: false
+  # communities_religious
+  - scope:
+      path: ""
+      type: communities_religious
+    values:
+      layout: single
+      author_profile: false
+  # communities_wechat
+  - scope:
+      path: ""
+      type: communities_wechat
     values:
       layout: single
       author_profile: false
