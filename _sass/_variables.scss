@@ -63,7 +63,8 @@ $body-color                 : #fff !default;
 $background-color           : $light-gunmetal !default;
 $code-background-color      : #fafafa !default;
 $code-background-color-dark : $light-gray !default;
-$text-color                 : #fff !default;
+/* $text-color                 : #fff !default; */
+$text-color                 : $darker-gray;
 $border-color               : $lighter-gray !default;
 
 /* $primary-color              : #7a8288 !default; */
