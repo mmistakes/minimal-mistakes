@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: splash
 title: "My First Tableau Public Viz!"
 date: 2016-10-28
 tags: [Visualizations]
