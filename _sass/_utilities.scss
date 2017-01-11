@@ -170,7 +170,8 @@ body:hover .visually-hidden button {
 
 .icon {
   display: inline-block;
-  fill: currentColor;
+//   fill: currentColor;
+  fill: $gunmetal;
   width: 1em;
   height: 1.1em;
   line-height: 1;
@@ -282,11 +283,11 @@ body:hover .visually-hidden button {
   .fa-xing-square {
     color: $xing-color;
   }
-  
+
   .fa-chain{
     color: $uri-color;
   }
-  
+
 }
 
 
