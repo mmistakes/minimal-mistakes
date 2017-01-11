@@ -23,8 +23,7 @@
   cursor: pointer;
 
   &:hover {
-/*     background-color: mix(white, #000, 20%); */
-    background-color: $light-gray;
+    background-color: mix(white, #000, 20%);
   }
 
   .icon {
