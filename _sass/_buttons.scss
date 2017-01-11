@@ -50,7 +50,7 @@
   &--inverse {
     color: $gray !important;
     border: 1px solid $light-gray !important; /* override*/
-    background-color: $light-gray;
+    background-color: #fff;
 
     &:hover {
       color: #fff !important;
