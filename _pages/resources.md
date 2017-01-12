@@ -4,46 +4,46 @@ permalink: /resources/
 ---
 
 ## Communities
-- <a href="{{ site.url }}/resources/communities/clubs/">Clubs</a>
-- <a href="{{ site.url }}/resources/communities/organizations/">Community Organizations</a>
-- <a href="{{ site.url }}/resources/communities/nonprofits/">Nonprofit Organizations</a>
-- <a href="{{ site.url }}/resources/communities/religious/">Religious Groups/Churches</a>
-- <a href="{{ site.url }}/resources/communities/wechat/">WeChat Groups</a>
+- <a href="{{ site.url }}/resources/communities/clubs/">Clubs</a> ({{ site.communities_clubs | size }})
+- <a href="{{ site.url }}/resources/communities/organizations/">Community Organizations</a> ({{ site.communities_nonprofits | size }})
+- <a href="{{ site.url }}/resources/communities/nonprofits/">Nonprofit Organizations</a> ({{ site.communities_organizations | size }})
+- <a href="{{ site.url }}/resources/communities/religious/">Religious Groups/Churches</a> ({{ site.communities_religious | size }})
+- <a href="{{ site.url }}/resources/communities/wechat/">WeChat Groups</a> ({{ site.communities_wechat | size }})
 
 ## Benefits
-- <a href="{{ site.url }}/resources/benefits/community/">Community-based Benefits</a>
+- <a href="{{ site.url }}/resources/benefits/community/">Community-based Benefits</a> ({{ site.benefits_community | size }})
 
 ## Activities
-- <a href="{{ site.url }}/resources/activities/academies/">Academies</a>
-- <a href="{{ site.url }}/resources/activities/afterschool/">After School Programs</a>
-- <a href="{{ site.url }}/resources/activities/clubs/">Clubs</a>
-- <a href="{{ site.url }}/resources/activities/healthy/">Healthy Life Style</a>
-- <a href="{{ site.url }}/resources/activities/performing/">Performing Groups</a>
-- <a href="{{ site.url }}/resources/activities/sports/">Sports</a>
+- <a href="{{ site.url }}/resources/activities/academies/">Academies</a> ({{ site.activities_academies | size }})
+- <a href="{{ site.url }}/resources/activities/afterschool/">After School Programs</a> ({{ site.activities_afterschool | size }})
+- <a href="{{ site.url }}/resources/activities/clubs/">Clubs</a> ({{ site.activities_clubs | size }})
+- <a href="{{ site.url }}/resources/activities/healthy/">Healthy Life Style</a> ({{ site.activities_healthy | size }})
+- <a href="{{ site.url }}/resources/activities/performing/">Performing Groups</a> ({{ site.activities_performing | size }})
+- <a href="{{ site.url }}/resources/activities/sports/">Sports</a> ({{ site.activities_sports | size }})
 
 ## Professionals
-- <a href="{{ site.url }}/resources/professionals/accountant/">Accountant/CPA</a>
-- <a href="{{ site.url }}/resources/professionals/acupuncture/">Acupuncture</a>
-- <a href="{{ site.url }}/resources/professionals/architect/">Architect</a>
-- <a href="{{ site.url }}/resources/professionals/artist/">Artist</a>
-- <a href="{{ site.url }}/resources/professionals/attorney/">Attorney at Law</a>
-- <a href="{{ site.url }}/resources/professionals/cti/">Certified Translation and Interpretation</a>
-- <a href="{{ site.url }}/resources/professionals/collegecounselor/">College Counselor</a>
-- <a href="{{ site.url }}/resources/professionals/computerprogramming/">Computer/Programming</a>
-- <a href="{{ site.url }}/resources/professionals/dentistorthodontist/">Dentists/Orthodontists</a>
-- <a href="{{ site.url }}/resources/professionals/engineer/">Engineers</a>
-- <a href="{{ site.url }}/resources/professionals/financialadvisor/">Financial Advisors</a>
-- <a href="{{ site.url }}/resources/professionals/importexport/">Import/Export</a>
-- <a href="{{ site.url }}/resources/professionals/interpretation/">Interpretation</a>
-- <a href="{{ site.url }}/resources/professionals/mortgagebroker/">Mortgage Broker</a>
-- <a href="{{ site.url }}/resources/professionals/moving/">Moving</a>
-- <a href="{{ site.url }}/resources/professionals/paralegal/">Paralegal</a>
-- <a href="{{ site.url }}/resources/professionals/physicaltherapist/">Physical Therapist</a>
-- <a href="{{ site.url }}/resources/professionals/physician/">Physician</a>
-- <a href="{{ site.url }}/resources/professionals/realestatebroker/">Real Estate Broker</a>
-- <a href="{{ site.url }}/resources/professionals/shippingchina/">Shipping to China</a>
-- <a href="{{ site.url }}/resources/professionals/socialworker/">Social Worker</a>
-- <a href="{{ site.url }}/resources/professionals/taxreturn/">Tax Returns Experts</a>
-- <a href="{{ site.url }}/resources/professionals/tradeshow/">Trade Show</a>
-- <a href="{{ site.url }}/resources/professionals/travelagent/">Travel Agent</a>
-- <a href="{{ site.url }}/resources/professionals/tutor/">Tutor</a>
+- <a href="{{ site.url }}/resources/professionals/accountant/">Accountant/CPA</a> ({{ site.professionals_accountant | size }})
+- <a href="{{ site.url }}/resources/professionals/acupuncture/">Acupuncture</a> ({{ site.professionals_acupuncture | size }})
+- <a href="{{ site.url }}/resources/professionals/architect/">Architect</a> ({{ site.professionals_architect | size }})
+- <a href="{{ site.url }}/resources/professionals/artist/">Artist</a> ({{ site.professionals_artist | size }})
+- <a href="{{ site.url }}/resources/professionals/attorney/">Attorney at Law</a> ({{ site.professionals_attorney | size }})
+- <a href="{{ site.url }}/resources/professionals/cti/">Certified Translation and Interpretation</a> ({{ site.professionals_collegecounselor | size }})
+- <a href="{{ site.url }}/resources/professionals/collegecounselor/">College Counselor</a> ({{ site.professionals_computerprogramming | size }})
+- <a href="{{ site.url }}/resources/professionals/computerprogramming/">Computer/Programming</a> ({{ site.professionals_cti | size }})
+- <a href="{{ site.url }}/resources/professionals/dentistorthodontist/">Dentists/Orthodontists</a> ({{ site.professionals_dentistorthodontist | size }})
+- <a href="{{ site.url }}/resources/professionals/engineer/">Engineers</a> ({{ site.professionals_engineer | size }})
+- <a href="{{ site.url }}/resources/professionals/financialadvisor/">Financial Advisors</a> ({{ site.professionals_financialadvisor | size }})
+- <a href="{{ site.url }}/resources/professionals/importexport/">Import/Export</a> ({{ site.professionals_importexport | size }})
+- <a href="{{ site.url }}/resources/professionals/interpretation/">Interpretation</a> ({{ site.professionals_interpretation | size }})
+- <a href="{{ site.url }}/resources/professionals/mortgagebroker/">Mortgage Broker</a> ({{ site.professionals_mortgagebroker | size }})
+- <a href="{{ site.url }}/resources/professionals/moving/">Moving</a> ({{ site.professionals_moving | size }})
+- <a href="{{ site.url }}/resources/professionals/paralegal/">Paralegal</a> ({{ site.professionals_paralegal | size }})
+- <a href="{{ site.url }}/resources/professionals/physicaltherapist/">Physical Therapist</a> ({{ site.professionals_physicaltherapist | size }})
+- <a href="{{ site.url }}/resources/professionals/physician/">Physician</a> ({{ site.professionals_physician | size }})
+- <a href="{{ site.url }}/resources/professionals/realestatebroker/">Real Estate Broker</a> ({{ site.professionals_realestatebroker | size }})
+- <a href="{{ site.url }}/resources/professionals/shippingchina/">Shipping to China</a> ({{ site.professionals_shippingchina | size }})
+- <a href="{{ site.url }}/resources/professionals/socialworker/">Social Worker</a> ({{ site.professionals_socialworker | size }})
+- <a href="{{ site.url }}/resources/professionals/taxreturn/">Tax Returns Experts</a> ({{ site.professionals_taxreturn | size }})
+- <a href="{{ site.url }}/resources/professionals/tradeshow/">Trade Show</a> ({{ site.professionals_tradeshow | size }})
+- <a href="{{ site.url }}/resources/professionals/travelagent/">Travel Agent</a> ({{ site.professionals_travelagent | size }})
+- <a href="{{ site.url }}/resources/professionals/tutor/">Tutor</a> ({{ site.professionals_tutor | size }})

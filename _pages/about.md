@@ -11,7 +11,7 @@ feature_row:
 ---
 ## Our Mission
 
-To serve every member in Chinese community with shared vision and resources.
+To serve every member in Chinese community with a shared vision and resources.
 
 ## Our Vision
 
