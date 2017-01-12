@@ -1,5 +1,5 @@
 ---
-title: "Mission"
+title: "About Us"
 permalink: /about/
 feature_row:
   - image_path: /assets/images/members/Zhang-Yongtian.jpg
@@ -9,9 +9,14 @@ feature_row:
     title: "Hongcheng Zhao"
     excerpt: "<p>Hongcheng attended Peking University in China. He came to the States as a Visiting Scholar in Harvard University in 1989.</p><p> He has been working in the healthcare industry for more than twenty years. He is the CIO in a physician association that serves half of the physician population in Oregon.</p><p>He and his wife chose Portland to raise their family. They have three children who are all very passionate about community services and social justice.</p>"
 ---
+## Our Mission
 
-A little something about us.
+To serve every member in Chinese community with shared vision and resources.
 
-# Featured Community Member Profiles
+## Our Vision
+
+To build a connected and united Chinese community with respect to their heritage, custom, dialect, social status and political belief.
+
+## Featured Community Member Profiles
 
 {% include feature_row %}
