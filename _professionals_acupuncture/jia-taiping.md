@@ -2,10 +2,9 @@
 title: "Taiping Jia"
 company: "TJ Acupuncture"
 sidebar:
-  - title: "Titles"
-    text: "O.M.D. L.Ac, Dipl. Ac, C.H."
   - title: "Address"
     text: "7110 SW Fir Loop, Suite 205, Tigard, OR 97223"
+    image: "/assets/images/professionals/taiping.jpg"
   - title: "Phone"
     text: "503-475- 9657"
   - title: "Email"
@@ -13,6 +12,8 @@ sidebar:
   - title: "Website"
     text: "[http://tjacupuncture.com](http://tjacupuncture.com)"
 ---
+
+O.M.D. L.Ac, Dipl. Ac, C.H.
 
 I am Taiping Jia, a professional acupuncturist and Chinese herbologist.
 

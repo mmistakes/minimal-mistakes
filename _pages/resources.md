@@ -22,6 +22,8 @@ permalink: /resources/
 - <a href="{{ site.url }}/resources/activities/sports/">Sports</a> ({{ site.activities_sports | size }})
 
 ## Professionals
+社区网站保留移除任何条目的权利，无需给出理由。
+
 - <a href="{{ site.url }}/resources/professionals/accountant/">Accountant/CPA</a> ({{ site.professionals_accountant | size }})
 - <a href="{{ site.url }}/resources/professionals/acupuncture/">Acupuncture</a> ({{ site.professionals_acupuncture | size }})
 - <a href="{{ site.url }}/resources/professionals/architect/">Architect</a> ({{ site.professionals_architect | size }})
