@@ -2,6 +2,9 @@
 title: "About Us"
 permalink: /about/
 feature_row:
+  - image_path: /assets/images/members/Brink-Ming.jpg
+    title: "Ming Brink"
+    excerpt: "<p>Ming is an Oregon Certified Public Accountant (CPA). She currently works for Precision Castparts Corp, a wholly owned company of Berkshire Hathaway, as a tax manager.</p><p>Ming also serves as the President of NW China Council, a nonprofit organization which works to promote greater understanding of Chinese culture, business, and contemporary affairs in Oregon and southwest Washington.</p><p>Ming finds joy in serving the community and giving to other. She has Volunteered for Meals on Wheels, Portland Rescue Mission, and Oregon Food Bank. She has participated in a mission trip to Cholula, Mexico to spread the message of Christianity to the local community.</p><p>Ming has pursued education in both China and the United States. She holds a B.A. in Accounting and International Business.</p>"
   - image_path: /assets/images/members/Zhang-Yongtian.jpg
     title: "Yongtian Zhang"
     excerpt: "Yongtian is a Sr. Security Consultant in Kaiser Permanente. He graduated from USTC (University of Science and Technology of China) and received Master degree on Information Security. His career covers Internet security, application security and network security. He is an enthusiastic community volunteer actively participating in all kinds of community services."
