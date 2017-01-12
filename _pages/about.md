@@ -18,7 +18,7 @@ To serve every member in Chinese community with a shared vision and resources.
 
 ## Our Vision
 
-To build a connected and united Chinese community with respect to their socioeconomic status and political beliefs.
+To build a connected and united Chinese community with respect to their socioeconomic status, political beliefs, religious, language or other cultural tradition.
 
 ## Featured Community Member Profiles
 
