@@ -1,0 +1,9 @@
+---
+title: "Resources"
+permalink: /resources/benefits/resources/
+layout: single
+---
+
+{% for benefit in site.benefits_resources %}
+  <a href="{{ benefit.url }}"><h2>{{ benefit.title }}</h2></a>
+{% endfor %}

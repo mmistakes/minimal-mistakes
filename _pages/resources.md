@@ -12,6 +12,7 @@ permalink: /resources/
 
 ## Benefits
 - <a href="{{ site.url }}/resources/benefits/community/">Community-based Benefits</a> ({{ site.benefits_community | size }})
+- <a href="{{ site.url }}/resources/benefits/resources/">Resources</a> ({{ site.benefits_resources | size }})
 
 ## Activities
 - <a href="{{ site.url }}/resources/activities/academies/">Academies</a> ({{ site.activities_academies | size }})

@@ -250,6 +250,9 @@ collections:
   benefits_community:
     output: true
     permalink: /resources/:collection/:path/
+  benefits_resources:
+    output: true
+    permalink: /resources/:collection/:path/
   activities_academies:
     output: true
     permalink: /resources/:collection/:path/
@@ -403,6 +406,13 @@ defaults:
   - scope:
       path: ""
       type: benefits_community
+    values:
+      layout: single
+      author_profile: false
+  # benefits_resources
+  - scope:
+      path: ""
+      type: benefits_resources
     values:
       layout: single
       author_profile: false
