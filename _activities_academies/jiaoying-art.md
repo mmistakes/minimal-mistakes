@@ -4,7 +4,7 @@ location: "PSU州立大学周日上课。和Beaverton Bethany 周一至周六上
 sidebar:
   - title: "Address"
     text: "PSU州立大学周日上课。和Beaverton Bethany 周一至周六上课。(在findley 小学对面）"
-    image:
+    image: "/assets/images/activities/jiaoying-logo.png"
   - title: "Contact"
     text: "焦莹, 严咪咪"
   - title: "Phone"
