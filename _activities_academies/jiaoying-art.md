@@ -1,5 +1,5 @@
 ---
-title: "Jiaoying Art School"
+title: "焦莹艺术学校 Jiaoying Art School"
 location: "PSU州立大学周日上课。和Beaverton Bethany 周一至周六上课。(在findley 小学对面）"
 sidebar:
   - title: "Address"
