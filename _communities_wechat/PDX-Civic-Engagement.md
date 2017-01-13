@@ -1,5 +1,5 @@
 ---
-title: "PDX华人大公益-220波村正事"
+title: "PDX 华人大公益-220波村正事"
 sidebar:
   - title: "群主"
     text: "石珏"

@@ -1,5 +1,5 @@
 ---
-title: "PDX家庭投资理财"
+title: "PDX 家庭投资理财"
 sidebar:
   - title: "群主"
     text: "Martha"
