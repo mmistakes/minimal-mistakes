@@ -66,7 +66,7 @@ permalink: /programme/
 
 ### Lecture  8: Future Trends: Grab Bag, Summary, Discussion
 * 2016-12-15 09:30 to 11:00 CET
-* *Future Trends, Round Table, Summary*
+* *Future Trends, Round Table, Summary* [Recording](https://youtu.be/ADgTEFJ8fPA)
 * Lecturer: Fabio Bonsignorio
 * *The GummiArm Project*
 * Lecturer: Martin F. Stoelen
