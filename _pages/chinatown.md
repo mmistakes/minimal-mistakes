@@ -23,5 +23,10 @@ gallery:
   - url: /assets/images/chinatown/Oka-3.jpg
     image_path: /assets/images/chinatown/Oka-3.jpg
 ---
+## Chinatown Revitalization
+
+![]({{ site.url }}/assets/images/chinatown/1623657866.jpg)
+
+## Portland Chinatown Saturday Performance
 
 {% include gallery %}
