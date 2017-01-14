@@ -23,9 +23,13 @@ The chatting history for this WeChat group "PDX华人大公益-220波村正事" 
 
 西北兆  21:12
 
+![]({{ site.url }}/assets/images/WechatIMG77.jpg)
+
 我们今天快闪的主角，周虹老师[Rose]
 
 西北兆  21:17
+
+![]({{ site.url }}/assets/images/P1320477.jpg)
 
 旗袍队员开始出现，都想再听一次周老师的一曲《花儿为什么这样红》。
 
