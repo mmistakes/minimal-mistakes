@@ -1,5 +1,5 @@
 ---
-title: "Lee's Association Dragon Lion Dance Team"
+title: "Lee's Association Dragon Lion Dance Team 李氏公所龙狮团"
 location: "1101 SE Salmon Street, Portland, OR, 97229"
 sidebar:
   - title: "Address"
@@ -12,4 +12,4 @@ sidebar:
     text: "[http://www.leeondong.org/](http://www.leeondong.org/)"
 ---
 
-![]({{ site.url }}/assets/images/activities/lee-lion-dance.jpg)
+![]({{ site.url }}/assets/images/activities/Lee-Lion-Dance.jpg)
