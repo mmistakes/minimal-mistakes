@@ -9,7 +9,7 @@ sidebar:
   - title: "Phone"
     text: "503-223-9070"
   - title: "Website"
-    text: "[http://www.oregonccba.org/chinese-language-school/](http://www.oregonccba.org/chinese-language-school/)"
+    text: "[www.oregonccba.org/chinese-language-school/](http://www.oregonccba.org/chinese-language-school/)"
 ---
 
 ![]({{ site.url }}/assets/images/communities/ccba.png)

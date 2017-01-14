@@ -12,7 +12,7 @@ sidebar:
   - title: "Email"
     text: "info@oregon-hope.org"
   - title: "Website"
-    text: "[http://www.oregon-hope.org/](http://www.oregon-hope.org/)"
+    text: "[www.oregon-hope.org/](http://www.oregon-hope.org/)"
 ---
 
 It is an Oregon state and IRS-recognized public benefit nonprofit organization that was founded by a group of professional educators and parents in 2005. OHCS provides Saturday Chinese classes, Mandarin Kids Preschool and Kindergarten, Summer Camp, and After-School Chinese club. Please visit www.oregon-hope.org for more details.
