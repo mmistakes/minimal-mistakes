@@ -232,6 +232,9 @@ compress_html:
 
 # Collections
 collections:
+  chinatown_gallery:
+    output: true
+    permalink: /chinatown/:path/
   communities_clubs:
     output: true
     permalink: /resources/:collection/:path/
@@ -370,7 +373,14 @@ defaults:
     values:
       layout: single
       author_profile: false
-  # communities_clubs communities_culture
+  # chinatown_gallery
+  - scope:
+      path: ""
+      type: chinatown_gallery
+    values:
+      layout: single
+      author_profile: false
+  # communities_clubs
   - scope:
       path: ""
       type: communities_clubs
