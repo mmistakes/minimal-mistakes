@@ -2,7 +2,7 @@
 title: "PDX 中文教育群"
 sidebar:
   - title: "群主"
-    text: "李心梅"
+    text: "李心梅 @lxm"
 ---
 
 ## Mission
