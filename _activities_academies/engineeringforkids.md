@@ -19,4 +19,4 @@ We, at the Portland Metro Engineering For Kids, are passionate about our program
 
 At Engineering For Kids, we put the excitement in STEM education by offering fun, hands-on learning for children ages 4 to 14. Our offering includes activities that range from building rockets and roller coasters to making foam and flub to programming video games and robots. The variety of programming is extraordinary!
 
-![]({{ site.url }}/assets/images/activities/e4kpic.jpg)
+![]({{ site.url }}/assets/images/activities/e4kpic2.jpg)
