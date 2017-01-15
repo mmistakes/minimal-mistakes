@@ -17,6 +17,6 @@ sidebar:
 
 #### Looking for a school your child will love?
 
-Bamboo Chinese School prepares students for success in a multiple culture world and promotes life-long learning by providing lessons and activities that are meaningful, experiential and fun! Our curriculum is thoughtfully planned to foster and support physical, social, emotional, artistic and spiritual growth so that students will realize their power for positively impacting the world both locally and globally.
+Bamboo International School prepares students for success in a multiple culture world and promotes life-long learning by providing lessons and activities that are meaningful, experiential and fun! Our curriculum is thoughtfully planned to foster and support physical, social, emotional, artistic and spiritual growth so that students will realize their power for positively impacting the world both locally and globally.
 
 ![]({{ site.url }}/assets/images/activities/bamboo-school.jpg)
