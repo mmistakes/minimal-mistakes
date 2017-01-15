@@ -12,4 +12,4 @@ sidebar:
     text: "[pacificviolinacademy.com](http://pacificviolinacademy.com/)"
 ---
 
-![]({{ site.url }}/assets/images/activities/pacific-violin.jpg)
+![]({{ site.url }}/assets/images/activities/pacific-violin.png)
