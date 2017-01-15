@@ -1,5 +1,5 @@
 ---
-title: "Northwest Education"
+title: "Northwest Education 西北教育中心"
 location: "13306 NW Cornell Rd Portland, OR 97229"
 sidebar:
   - title: "Address"
@@ -14,3 +14,4 @@ sidebar:
 ---
 
 Tutoring and Test Prep
+![]({{ site.url }}/assets/images/activities/nw-education.contents.jpg)

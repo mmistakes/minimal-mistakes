@@ -1,5 +1,5 @@
 ---
-title: "竹林中文学校 Bamboo Chinese School"
+title: "Bamboo Chinese School 竹林中文学校"
 location: "14695 NW West Union Rd. Portland, OR 97229"
 sidebar:
   - title: "Address"

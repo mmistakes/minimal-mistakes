@@ -1,5 +1,5 @@
 ---
-title: "好时光中文学校 GoodTime Chinese School"
+title: "GoodTime Chinese School 好时光中文学校"
 location: "15285 NW Central Drive Suite 201, Portland, OR 97229"
 sidebar:
   - title: "Address"

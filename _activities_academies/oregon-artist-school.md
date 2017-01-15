@@ -1,5 +1,5 @@
 ---
-title: "俄勒冈艺术家学院 Oregon Artist School"
+title: "Oregon Artist School 俄勒冈艺术家学院"
 location: "15220 NW Laidlaw Rd ,Suite 250, Bethany Village, Portland OR 97229"
 sidebar:
   - title: "Address"

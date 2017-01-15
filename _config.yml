@@ -265,7 +265,7 @@ collections:
   activities_healthy:
     output: true
     permalink: /resources/:collection/:path/
-  activities_performing:
+  activities_artinstitute:
     output: true
     permalink: /resources/:collection/:path/
   activities_sports:
@@ -444,10 +444,10 @@ defaults:
     values:
       layout: single
       author_profile: false
-  # activities_performing
+  # activities_artinstitute
   - scope:
       path: ""
-      type: activities_performing
+      type: activities_artinstitute
     values:
       layout: single
       author_profile: false

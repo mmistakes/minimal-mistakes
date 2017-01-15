@@ -1,5 +1,5 @@
 ---
-title: "希望中文特许学校 Hope Chinese Charter School (HCCS) "
+title: "Hope Chinese Charter School (HCCS) 希望中文特许学校"
 location: "3500 SW 104th Ave Beaverton, OR 97005"
 sidebar:
   - title: "Address"

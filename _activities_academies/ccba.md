@@ -1,5 +1,5 @@
 ---
-title: "中文学校 CCBA"
+title: "CCBA 中文学校"
 location: "315 NW Davis Street, Portland, OR 97209"
 sidebar:
   - title: "Address"

@@ -1,5 +1,5 @@
 ---
-title: "俄勒冈希望中文学校 Oregon Hope Chinese School (OHCS)"
+title: "Oregon Hope Chinese School (OHCS) 俄勒冈希望中文学校"
 location: "6655 NW Joss Avenue, Portland, OR 97229"
 sidebar:
   - title: "Address"
