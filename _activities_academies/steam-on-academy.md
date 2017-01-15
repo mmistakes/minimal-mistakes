@@ -3,7 +3,7 @@ title: "STEAM On Academy"
 location: "12555 SW 4th Street, Beaverton, OR, 97005"
 sidebar:
   - title: "Address"
-    text: "12555 SW 4th Street, Beaverton, OR, 97005"
+    text: "4560 SW 110th Ave., Beaverton, OR, 97005 (#200 2nd floor)"
     image: "/assets/images/activities/steam-on-academy.png"
   - title: "Phone"
     text: "(971) 280-1261"
