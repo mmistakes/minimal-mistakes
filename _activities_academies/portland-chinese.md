@@ -14,3 +14,5 @@ sidebar:
 ---
 
 Portland Chinese School is a self-supporting, non-profit organization. The primary focus of the PCS curriculum is on reading and writing traditional Chinese characters as used in Taiwan. It is expected that students already understand and can speak at least some spoken Mandarin Chinese. Portland Chinese School has no political or religious affiliations.
+
+![]({{ site.url }}/assets/images/activities/pdxchineseschool.jpg)
