@@ -14,4 +14,5 @@ sidebar:
 ---
 
 Tutoring and Test Prep
-![]({{ site.url }}/assets/images/activities/nw-education.contents.jpg)
+
+![]({{ site.url }}/assets/images/activities/nw-education-contents.jpg)
