@@ -1,9 +1,4 @@
 # main links links
 main:
   - title: "ABOUT"
-    url: about/
-
-  - title: "Posts"
-    url: post/
-
-# TODO Put the about
+    url: /about/
