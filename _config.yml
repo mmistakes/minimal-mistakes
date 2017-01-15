@@ -235,6 +235,9 @@ collections:
   communities_clubs:
     output: true
     permalink: /resources/:collection/:path/
+  communities_culture:
+    output: true
+    permalink: /resources/:collection/:path/
   communities_nonprofits:
     output: true
     permalink: /resources/:collection/:path/
@@ -367,10 +370,17 @@ defaults:
     values:
       layout: single
       author_profile: false
-  # communities_clubs
+  # communities_clubs communities_culture
   - scope:
       path: ""
       type: communities_clubs
+    values:
+      layout: single
+      author_profile: false
+  # communities_culture
+  - scope:
+      path: ""
+      type: communities_culture
     values:
       layout: single
       author_profile: false

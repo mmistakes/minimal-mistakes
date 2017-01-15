@@ -1,0 +1,9 @@
+---
+title: "Culture"
+permalink: /resources/communities/culture/
+layout: single
+---
+
+{% for club in site.communities_culture %}
+  <a href="{{ club.url }}"><h2>{{ club.title }}</h2></a>
+{% endfor %}
