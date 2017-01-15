@@ -21,3 +21,5 @@ With long-standing history, the Portland Chinese Language School was established
 ### Purpose
 
 Teach and promote Chinese language and culture. Help the students and the Portlanders who love Chinese culture to learn Chinese and understand China’s 5000 years history and traditional culture.
+
+![]({{ site.url }}/assets/images/activities/ccbaschool.jpg)
