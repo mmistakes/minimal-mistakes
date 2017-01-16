@@ -17,8 +17,8 @@ permalink: /resources/
 
 ## Activities
 - <a href="{{ site.url }}/resources/activities/academies/">Academies</a> ({{ site.activities_academies | size }})
-- <a href="{{ site.url }}/resources/activities/afterschool/">After School Programs</a> ({{ site.activities_afterschool | size }})
-- <a href="{{ site.url }}/resources/activities/artinstitute/">Art Institute</a> ({{ site.activities_artinstitute | size }})
+- <a href="{{ site.url }}/resources/activities/afterschool/">Camps & After School Programs</a> ({{ site.activities_afterschool | size }})
+- <a href="{{ site.url }}/resources/activities/artinstitute/">Art, Music, Dance</a> ({{ site.activities_artinstitute | size }})
 - <a href="{{ site.url }}/resources/activities/clubs/">Clubs</a> ({{ site.activities_clubs | size }})
 - <a href="{{ site.url }}/resources/activities/healthy/">Healthy Life Style</a> ({{ site.activities_healthy | size }})
 - <a href="{{ site.url }}/resources/activities/sports/">Sports</a> ({{ site.activities_sports | size }})
