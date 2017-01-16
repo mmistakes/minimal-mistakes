@@ -1,6 +1,6 @@
 ---
 title: "Taiping Jia"
-company: "TJ Acupuncture"
+company: "丅J 中医针灸诊所为您的健康保驾护航，愿您健康快乐每一天。"
 sidebar:
   - title: "Address"
     text: "7110 SW Fir Loop, Suite 205, Tigard, OR 97223"
@@ -10,7 +10,7 @@ sidebar:
   - title: "Email"
     text: "taiping@tjacupuncture.com"
   - title: "Website"
-    text: "[http://tjacupuncture.com](http://tjacupuncture.com)"
+    text: "[tjacupuncture.com](http://tjacupuncture.com)"
 ---
 
 O.M.D. L.Ac, Dipl. Ac, C.H.
