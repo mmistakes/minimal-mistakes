@@ -5,7 +5,7 @@ tags:
   - database
   - elasticsearch
   - query
-excerpt: using Python for querying Elasticsearch
+excerpt: Using Python for querying Elasticsearch
 ---
 
 This post will be a quick round of the most common ES queries to be run via the low-level Python client [Elasticsearch](https://elasticsearch-py.readthedocs.io/en/master/).

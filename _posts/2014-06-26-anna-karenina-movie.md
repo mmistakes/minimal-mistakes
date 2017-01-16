@@ -4,7 +4,7 @@ tags:
   - movie
   - reviewing
   - literature
-excerpt: "Review of the movie Anna Karenina"
+excerpt: "A review of the movie Anna Karenina"
 ---
 
 ![anna]

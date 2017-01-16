@@ -6,7 +6,7 @@ tags:
   - language
   - words
   - linguistics
-excerpt: commento sulle parole usate a Natale
+excerpt: Un po' di spirito sulle parole più usate a Natale
 ---
 
 Non mi esprimerò qui in una filippica su quanto consumista sia questa festa e quanto poco senso abbia fare i regali a comando, sgomitando nella folla e correndo di tempio in tempio (dello shopping).
