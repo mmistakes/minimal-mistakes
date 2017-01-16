@@ -3,7 +3,7 @@ title: "Break it to get it: class and instance attributes in Python"
 tags:
   - python
   - oop
-excerpt: clarifying the difference between class and instance attributes in Python
+excerpt: Exploring the difference between class and instance attributes in Python
 ---
 
 Let us investigate the relation between class and instance attributes in Python. It can be rather confusing, I believe.

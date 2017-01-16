@@ -4,7 +4,7 @@ tags:
   - public-speaking
   - misc
   - communication
-excerpt: suggestions on how to give a quality public talk
+excerpt: My two cents on how to give quality public talks
 ---
 
 ![publictalks1] 

@@ -49,7 +49,7 @@ atom_feed:
 
 
 # SEO Related  # TODO
-google_site_verification :
+google_site_verification : "jvKx38vhwcqW8_-yWmZHLPHPRGdMhrf6wwS7Zqg-J7g"
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
@@ -74,9 +74,9 @@ social:                # TODO to set this?
 
 # Analytics    # TODO set
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "UA-90395986-1"
 
 
 # Info on me

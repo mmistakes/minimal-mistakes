@@ -6,7 +6,7 @@ tags:
   - linguistics
   - text
   - nlp
-excerpt: data visualisation sulle parole usate dai presidenti della Repubblica nei discorsi di fine anno, continuazione su parole specifiche
+excerpt: Data visualisation sulle parole usate dai presidenti della Repubblica nei discorsi di fine anno, continuazione su parole specifiche
 ---
 
 In relazione al post sui testi dei messaggi dei presidenti, che si può reperire [qui], vediamo qui i conteggi totali di alcune parole particolari che vengono alla mente come potenziali rappresentanti di questo o quel presidente, o, meglio, dei tempi in cui si sono trovati a ricoprire il loro ruolo.

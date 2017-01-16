@@ -7,7 +7,7 @@ tags:
   - data
   - italy
   - data-science
-excerpt: data visualisation sui dati del treno Roma-Tivoli e viceversa
+excerpt: Data visualisation sui dati del treno Roma-Tivoli e viceversa
 ---
 
 In questo post parliamo di treni. Fino all'estate scorsa vivevo a Tivoli, un'allegra cittadina in quel di Roma di cui però parlerò un'altra volta. Per andare a Roma ogni giorno prendevo il treno. 

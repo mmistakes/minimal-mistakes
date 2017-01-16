@@ -6,7 +6,7 @@ tags:
   - linguistics
   - text
   - nlp
-excerpt: data visualisation sulle parole usate dai presidenti della Repubblica nei discorsi di fine anno
+excerpt: Data visualisation sulle parole usate dai presidenti della Repubblica nei discorsi di fine anno
 ---
 
 La Repubblica ha avuto finora 11 presidenti, più quello attualmente in carica, che non considerò qui nell'analisi perché mi riferisco ai mandati completati.
