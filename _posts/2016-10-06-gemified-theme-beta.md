@@ -1,13 +1,14 @@
 ---
-title:  "Gemified Theme -- Beta Release"
-modified: 2016-10-06T16:03:49-04:00
-categories: 
+title: Gemified Theme -- Beta Release
+modified: {}
+categories:
   - Jekyll
 tags:
   - update
+published: true
 ---
 
-Hot on the heels of Jekyll v3.3.0 is a beta release of Minimal Mistakes... as a gemified theme.
+editedddddddHot on the heels of Jekyll v3.3.0 is a beta release of Minimal Mistakes... as a gemified theme.
 
 {% include base_path %}
 
