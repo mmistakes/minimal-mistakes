@@ -1,6 +1,6 @@
 ---
 title: "Taiping Jia"
-company: "丅J 中医针灸诊所为您的健康保驾护航，愿您健康快乐每一天。"
+company: "TJ 中医针灸诊所为您的健康保驾护航，愿您健康快乐每一天。"
 sidebar:
   - title: "Address"
     text: "7110 SW Fir Loop, Suite 205, Tigard, OR 97223"
