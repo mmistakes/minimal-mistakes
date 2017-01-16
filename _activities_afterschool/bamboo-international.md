@@ -1,5 +1,5 @@
 ---
-title: "Bamboo International Winter/Summer Camps 竹林国际学生冬夏令营"
+title: "PORTLAND INTERNATIONAL ACADEMY 波特兰国际学校"
 location: "上海市松江区九峰路88号908室"
 sidebar:
   - title: "Address"
