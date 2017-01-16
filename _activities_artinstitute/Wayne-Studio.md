@@ -1,5 +1,5 @@
 ---
-title: "Wayne Studio & Classes"
+title: "Wayne Studio & Classes 永雄画室和绘画班"
 location: "3610 NE 113th Street, Vancouver, Washington 98686"
 sidebar:
   - title: "Address"
@@ -19,24 +19,8 @@ The son of a movie-poster painter in China, Wayne Chin was destined to be an out
 
 Wayne Chin maintains his studio in Vancouver, Washington.  One of the city's most accomplished portrait painters, Wayne photographs his subjects first, then does both black-and-white and color thumbnail sketches before putting brush to canvas.
 
-冬季画画班的地点和时间表:
+陈老师移民波特兰已有三十多年。 (父亲也是广州著名的画家) 1980年, 毕业于广州美术中专。来美后继续他的建筑和艺术生涯, 主要的作品包括联邦法官, 仁波切, 教父, 印第安部落首领 ...波特兰公立私立画廊, 政府机构医院, 建筑设计公司都有他的艺术作品, 国内大型建筑设计 工作,  获奖无数! 
 
-Vancouver:
-3610 NE 113th St.
-Vancouver Wa 98686
-每周五，上午9:30-11:30, 成人班、水彩，素描，
-每周五，下午1:30-3:30, 成人班．油画，素描．
-每周五，下午4:00-6:00, 小孩班，素描，油画棒，
-
-SE Portland
-周六，SE 82街，永明堂二楼1:30-3:30 小孩班．素描、油画棒，水彩
-周六上午，SE 62街，慧霖寺，成人班、油画、素描，水彩。
-
-Beaverton
-周六下午，4:30-6:00 & 6:30-8:30 小孩班．
-周日下午，1:30-3:30 成人班，
- 
-小孩收费是$25一＄30每节课，1个半小时一 两个小时、
-成人收费：$40每一节两小时的课、
+画画班的地点: Vancouver(3610 NE 113th St., Vancouver Wa 98686); SE Portland(SE 82街，永明堂二楼, SE 62街，慧霖寺); Beaverton
 
 ![]({{ site.url }}/assets/images/activities/waynestudio.jpg)
