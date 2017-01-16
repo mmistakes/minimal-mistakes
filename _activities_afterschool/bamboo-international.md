@@ -21,5 +21,3 @@ Focus on developing students' study passion by visiting famous schools and exper
 通过体验名校游学，参观艺术展，感受历史人文激发学生学习激情。我们旨在为学生打开更多机会的大门，使学生眼界更为广阔。
 
 ![]({{ site.url }}/assets/images/activities/bamboocamp.jpg)
-
-![]({{ site.url }}/assets/images/activities/bamboocamp2.jpg)
