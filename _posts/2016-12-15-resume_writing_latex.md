@@ -25,8 +25,8 @@ gallery:
     image_path: /assets/images/resume_templates/Extended_Fancy_CV_Carmine_Benedetto.png
     alt: "Extended Fancy CV by Carmine Benedetto"
     title: "Extended Fancy CV by Carmine Benedetto"
-  - url: /assets/images/resume_templates/Data_Scientist_Resume_Harsh_Gadgil.png
-    image_path: /assets/images/resume_templates/Data_Scientist_Resume_Harsh_Gadgil.png
+  - url: https://raw.githubusercontent.com/opensorceror/Data-Engineer-Resume-LaTeX/master/screen.png
+    image_path: https://raw.githubusercontent.com/opensorceror/Data-Engineer-Resume-LaTeX/master/screen.png
     alt: "Data Engineer Resume by Harsh Gadgil"
     title: "Data Engineer Resume by Harsh Gadgil"
 excerpt: "Why you should port your Word resume to LaTeX."
