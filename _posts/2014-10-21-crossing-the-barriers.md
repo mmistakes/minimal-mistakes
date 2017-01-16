@@ -5,6 +5,7 @@ tags:
   - research
   - PhD
   - life
+excerpt: my path through science and crossing disciplines boundaries
 ---
 
 Science is about discovery and perseverance. It consists of the wonderful process of intellectual endeavor towards the noble achievement of reducing ignorance and contributing to human knowledge, brick after brick. It takes the eyes of a child to grasp the beauty and the surprise beyond something new and the determination of a wise man to face difficulties and failures that may come.

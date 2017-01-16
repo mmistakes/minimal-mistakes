@@ -4,6 +4,7 @@ tags:
   - public-speaking
   - misc
   - communication
+excerpt: suggestions on how to give a quality public talk
 ---
 
 ![publictalks1] 

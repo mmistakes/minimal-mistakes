@@ -18,7 +18,7 @@ breadcrumbs       : false # true, false (default) # TODO set?
 words_per_minute  : 200   # words per minute reading time
 
 comments:                 # comments on posts provider, choose from below
-  provider        : facebook # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider        : facebook # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"   TODO use disqus
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
