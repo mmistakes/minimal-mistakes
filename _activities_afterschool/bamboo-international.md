@@ -1,5 +1,5 @@
 ---
-title: "PORTLAND INTERNATIONAL ACADEMY 波特兰国际学校"
+title: "Portland International Academy 波特兰国际学校"
 location: "上海市松江区九峰路88号908室"
 sidebar:
   - title: "Address"
