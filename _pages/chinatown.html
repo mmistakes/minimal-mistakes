@@ -1,0 +1,13 @@
+---
+title: "Chinatown"
+permalink: /chinatown/
+---
+<h2>Chinatown Revitalization</h2>
+
+<p><img src="/assets/images/chinatown/1623657866.jpg"></p>
+
+<h2>Chinatown Photo Galleries</h2>
+
+{% for gallery in site.chinatown_gallery %}
+  <a href="{{ gallery.url }}"><h2>{{ gallery.title }}</h2></a>
+{% endfor %}

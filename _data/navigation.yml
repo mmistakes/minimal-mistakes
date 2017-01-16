@@ -1,7 +1,15 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "About Us"
+    url: /about/
+  - title: "Resources"
+    url: /resources/
+  - title: "Community Fund"
+    url: /communityfund/
+  - title: "PAC"
+    url: /pac/
+  - title: "Contact Us"
+    url: /contact/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
@@ -10,3 +18,15 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+extra:
+  - title: Programs
+    children:
+      - title: "Volunteering"
+        url: /volunteering/
+      - title: "Mentoring"
+        url: /mentoring/
+      - title: "Chinatown"
+        url: /chinatown/
+      - title: "Chinese School"
+        url: /chineseschool/

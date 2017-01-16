@@ -1,0 +1,10 @@
+---
+title: "Acupuncture"
+permalink: /resources/professionals/acupuncture/
+layout: single
+---
+
+{% for person in site.professionals_acupuncture %}
+  <a href="{{ person.url }}"><h2>{{ person.title }}</h2></a>
+  <p>{{ person.company }}</p>
+{% endfor %}

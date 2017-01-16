@@ -1,0 +1,10 @@
+---
+title: "Art, Music, Dance"
+permalink: /resources/activities/artinstitute/
+layout: single
+---
+
+{% for group in site.activities_artinstitute %}
+  <a href="{{ group.url }}"><h2>{{ group.title }}</h2></a>
+  <p>{{ group.location }}</p>
+{% endfor %}

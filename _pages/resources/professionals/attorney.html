@@ -1,0 +1,10 @@
+---
+title: "Attorney at Law"
+permalink: /resources/professionals/attorney/
+layout: single
+---
+
+{% for person in site.professionals_attorney %}
+  <a href="{{ person.url }}"><h2>{{ person.title }}</h2></a>
+  <p>{{ person.company }}</p>
+{% endfor %}

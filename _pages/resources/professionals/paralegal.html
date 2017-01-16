@@ -1,0 +1,10 @@
+---
+title: "Paralegal"
+permalink: /resources/professionals/paralegal/
+layout: single
+---
+
+{% for person in site.professionals_paralegal %}
+  <a href="{{ person.url }}"><h2>{{ person.title }}</h2></a>
+  <p>{{ person.company }}</p>
+{% endfor %}

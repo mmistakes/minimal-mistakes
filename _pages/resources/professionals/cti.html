@@ -1,0 +1,10 @@
+---
+title: "Certified Translation and Interpretation"
+permalink: /resources/professionals/cti/
+layout: single
+---
+
+{% for person in site.professionals_cti %}
+  <a href="{{ person.url }}"><h2>{{ person.title }}</h2></a>
+  <p>{{ person.company }}</p>
+{% endfor %}

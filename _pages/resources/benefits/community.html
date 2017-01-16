@@ -1,0 +1,9 @@
+---
+title: "Community-based Benefits"
+permalink: /resources/benefits/community/
+layout: single
+---
+
+{% for benefit in site.benefits_community %}
+  <a href="{{ benefit.url }}"><h2>{{ benefit.title }}</h2></a>
+{% endfor %}

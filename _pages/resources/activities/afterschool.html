@@ -1,0 +1,10 @@
+---
+title: "Camps & After School Programs"
+permalink: /resources/activities/afterschool/
+layout: single
+---
+
+{% for program in site.activities_afterschool %}
+  <a href="{{ program.url }}"><h2>{{ program.title }}</h2></a>
+  <p>{{ program.location }}</p>
+{% endfor %}

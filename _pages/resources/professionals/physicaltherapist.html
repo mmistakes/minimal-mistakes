@@ -1,0 +1,10 @@
+---
+title: "Physical Therapist"
+permalink: /resources/professionals/physicaltherapist/
+layout: single
+---
+
+{% for person in site.professionals_physicaltherapist %}
+  <a href="{{ person.url }}"><h2>{{ person.title }}</h2></a>
+  <p>{{ person.company }}</p>
+{% endfor %}

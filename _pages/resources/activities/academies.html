@@ -1,0 +1,10 @@
+---
+title: "Academies"
+permalink: /resources/activities/academies/
+layout: single
+---
+
+{% for academy in site.activities_academies %}
+  <a href="{{ academy.url }}"><h2>{{ academy.title }}</h2></a>
+  <p>{{ academy.location }}</p>
+{% endfor %}

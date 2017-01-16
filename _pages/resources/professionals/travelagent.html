@@ -1,0 +1,10 @@
+---
+title: "Travel Agent"
+permalink: /resources/professionals/travelagent/
+layout: single
+---
+
+{% for person in site.professionals_travelagent %}
+  <a href="{{ person.url }}"><h2>{{ person.title }}</h2></a>
+  <p>{{ person.company }}</p>
+{% endfor %}

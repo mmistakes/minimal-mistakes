@@ -7,16 +7,16 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "Oregon Chinese Community"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : "Oregon Chinese Community"
+description              : "The main hub for everything you need to know about Portland's Chinese Community."
+url                      : "https://pdxchinese.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "PDXChinese/pdxchinese.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
+words_per_minute         : 120
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
@@ -77,11 +77,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  name             : "Andrew Zhao"
+  avatar           : /assets/images/authors/Zhao-Andrew.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "I'm a 4th year CS major at UC Berkeley."
+  location         : "Berkeley, CA"
+  email            : "andrewz@berkeley.edu"
   uri              :
   bitbucket        :
   codepen          :
@@ -230,6 +230,128 @@ compress_html:
   ignore:
     envs: development
 
+# Collections
+collections:
+  chinatown_gallery:
+    output: true
+    permalink: /chinatown/:path/
+  communities_clubs:
+    output: true
+    permalink: /resources/:collection/:path/
+  communities_culture:
+    output: true
+    permalink: /resources/:collection/:path/
+  communities_nonprofits:
+    output: true
+    permalink: /resources/:collection/:path/
+  communities_organizations:
+    output: true
+    permalink: /resources/:collection/:path/
+  communities_religious:
+    output: true
+    permalink: /resources/:collection/:path/
+  communities_wechat:
+    output: true
+    permalink: /resources/:collection/:path/
+  benefits_community:
+    output: true
+    permalink: /resources/:collection/:path/
+  benefits_resources:
+    output: true
+    permalink: /resources/:collection/:path/
+  activities_academies:
+    output: true
+    permalink: /resources/:collection/:path/
+  activities_afterschool:
+    output: true
+    permalink: /resources/:collection/:path/
+  activities_clubs:
+    output: true
+    permalink: /resources/:collection/:path/
+  activities_healthy:
+    output: true
+    permalink: /resources/:collection/:path/
+  activities_artinstitute:
+    output: true
+    permalink: /resources/:collection/:path/
+  activities_sports:
+    output: true
+    permalink: /resources/:collection/:path/
+  professionals_accountant:
+    output: true
+    permalink: /resources/:collection/:path/
+  professionals_acupuncture:
+    output: true
+    permalink: /resources/:collection/:path/
+  professionals_architect:
+    output: true
+    permalink: /resources/:collection/:path/
+  professionals_artist:
+    output: true
+    permalink: /resources/:collection/:path/
+  professionals_attorney:
+    output: true
+    permalink: /resources/:collection/:path/
+  professionals_collegecounselor:
+    output: true
+    permalink: /resources/:collection/:path/
+  professionals_computerprogramming:
+    output: true
+    permalink: /resources/:collection/:path/
+  professionals_cti:
+    output: true
+    permalink: /resources/:collection/:path/
+  professionals_dentistorthodontist:
+    output: true
+    permalink: /resources/:collection/:path/
+  professionals_engineer:
+    output: true
+    permalink: /resources/:collection/:path/
+  professionals_financialadvisor:
+    output: true
+    permalink: /resources/:collection/:path/
+  professionals_importexport:
+    output: true
+    permalink: /resources/:collection/:path/
+  professionals_interpretation:
+    output: true
+    permalink: /resources/:collection/:path/
+  professionals_mortgagebroker:
+    output: true
+    permalink: /resources/:collection/:path/
+  professionals_moving:
+    output: true
+    permalink: /resources/:collection/:path/
+  professionals_paralegal:
+    output: true
+    permalink: /resources/:collection/:path/
+  professionals_physicaltherapist:
+    output: true
+    permalink: /resources/:collection/:path/
+  professionals_physician:
+    output: true
+    permalink: /resources/:collection/:path/
+  professionals_realestatebroker:
+    output: true
+    permalink: /resources/:collection/:path/
+  professionals_shippingchina:
+    output: true
+    permalink: /resources/:collection/:path/
+  professionals_socialworker:
+    output: true
+    permalink: /resources/:collection/:path/
+  professionals_taxreturn:
+    output: true
+    permalink: /resources/:collection/:path/
+  professionals_tradeshow:
+    output: true
+    permalink: /resources/:collection/:path/
+  professionals_travelagent:
+    output: true
+    permalink: /resources/:collection/:path/
+  professionals_tutor:
+    output: true
+    permalink: /resources/:collection/:path/
 
 # Defaults
 defaults:
@@ -240,7 +362,294 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: # true
-      share: true
+      read_time: false
+      comments: true
+      share: false
       related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: false
+  # chinatown_gallery
+  - scope:
+      path: ""
+      type: chinatown_gallery
+    values:
+      layout: single
+      author_profile: false
+  # communities_clubs
+  - scope:
+      path: ""
+      type: communities_clubs
+    values:
+      layout: single
+      author_profile: false
+  # communities_culture
+  - scope:
+      path: ""
+      type: communities_culture
+    values:
+      layout: single
+      author_profile: false
+  # communities_nonprofits
+  - scope:
+      path: ""
+      type: communities_nonprofits
+    values:
+      layout: single
+      author_profile: false
+  # communities_organizations
+  - scope:
+      path: ""
+      type: communities_organizations
+    values:
+      layout: single
+      author_profile: false
+  # communities_religious
+  - scope:
+      path: ""
+      type: communities_religious
+    values:
+      layout: single
+      author_profile: false
+  # communities_wechat
+  - scope:
+      path: ""
+      type: communities_wechat
+    values:
+      layout: single
+      author_profile: false
+  # benefits_community
+  - scope:
+      path: ""
+      type: benefits_community
+    values:
+      layout: single
+      author_profile: false
+  # benefits_resources
+  - scope:
+      path: ""
+      type: benefits_resources
+    values:
+      layout: single
+      author_profile: false
+  # activities_academies
+  - scope:
+      path: ""
+      type: activities_academies
+    values:
+      layout: single
+      author_profile: false
+  # activities_afterschool
+  - scope:
+      path: ""
+      type: activities_afterschool
+    values:
+      layout: single
+      author_profile: false
+  # activities_clubs
+  - scope:
+      path: ""
+      type: activities_clubs
+    values:
+      layout: single
+      author_profile: false
+  # activities_healthy
+  - scope:
+      path: ""
+      type: activities_healthy
+    values:
+      layout: single
+      author_profile: false
+  # activities_artinstitute
+  - scope:
+      path: ""
+      type: activities_artinstitute
+    values:
+      layout: single
+      author_profile: false
+  # activities_sports
+  - scope:
+      path: ""
+      type: activities_sports
+    values:
+      layout: single
+      author_profile: false
+  # professionals_accountant
+  - scope:
+      path: ""
+      type: professionals_accountant
+    values:
+      layout: single
+      author_profile: false
+  # professionals_acupuncture
+  - scope:
+      path: ""
+      type: professionals_acupuncture
+    values:
+      layout: single
+      author_profile: false
+  # professionals_architect
+  - scope:
+      path: ""
+      type: professionals_architect
+    values:
+      layout: single
+      author_profile: false
+  # professionals_artist
+  - scope:
+      path: ""
+      type: professionals_artist
+    values:
+      layout: single
+      author_profile: false
+  # professionals_attorney
+  - scope:
+      path: ""
+      type: professionals_attorney
+    values:
+      layout: single
+      author_profile: false
+  # professionals_collegecounselor
+  - scope:
+      path: ""
+      type: professionals_collegecounselor
+    values:
+      layout: single
+      author_profile: false
+  # professionals_computerprogramming
+  - scope:
+      path: ""
+      type: professionals_computerprogramming
+    values:
+      layout: single
+      author_profile: false
+  # professionals_cti
+  - scope:
+      path: ""
+      type: professionals_cti
+    values:
+      layout: single
+      author_profile: false
+  # professionals_dentistorthodontist
+  - scope:
+      path: ""
+      type: professionals_dentistorthodontist
+    values:
+      layout: single
+      author_profile: false
+  # professionals_engineer
+  - scope:
+      path: ""
+      type: professionals_engineer
+    values:
+      layout: single
+      author_profile: false
+  # professionals_financialadvisor
+  - scope:
+      path: ""
+      type: professionals_financialadvisor
+    values:
+      layout: single
+      author_profile: false
+  # professionals_importexport
+  - scope:
+      path: ""
+      type: professionals_importexport
+    values:
+      layout: single
+      author_profile: false
+  # professionals_interpretation
+  - scope:
+      path: ""
+      type: professionals_interpretation
+    values:
+      layout: single
+      author_profile: false
+  # professionals_mortgagebroker
+  - scope:
+      path: ""
+      type: professionals_mortgagebroker
+    values:
+      layout: single
+      author_profile: false
+  # professionals_moving
+  - scope:
+      path: ""
+      type: professionals_moving
+    values:
+      layout: single
+      author_profile: false
+  # professionals_paralegal
+  - scope:
+      path: ""
+      type: professionals_paralegal
+    values:
+      layout: single
+      author_profile: false
+  # professionals_physicaltherapist
+  - scope:
+      path: ""
+      type: professionals_physicaltherapist
+    values:
+      layout: single
+      author_profile: false
+  # professionals_physician
+  - scope:
+      path: ""
+      type: professionals_physician
+    values:
+      layout: single
+      author_profile: false
+  # professionals_realestatebroker
+  - scope:
+      path: ""
+      type: professionals_realestatebroker
+    values:
+      layout: single
+      author_profile: false
+  # professionals_shippingchina
+  - scope:
+      path: ""
+      type: professionals_shippingchina
+    values:
+      layout: single
+      author_profile: false
+  # professionals_socialworker
+  - scope:
+      path: ""
+      type: professionals_socialworker
+    values:
+      layout: single
+      author_profile: false
+  # professionals_taxreturn
+  - scope:
+      path: ""
+      type: professionals_taxreturn
+    values:
+      layout: single
+      author_profile: false
+  # professionals_tradeshow
+  - scope:
+      path: ""
+      type: professionals_tradeshow
+    values:
+      layout: single
+      author_profile: false
+  # professionals_travelagent
+  - scope:
+      path: ""
+      type: professionals_travelagent
+    values:
+      layout: single
+      author_profile: false
+  # professionals_tutor
+  - scope:
+      path: ""
+      type: professionals_tutor
+    values:
+      layout: single
+      author_profile: false

@@ -1,0 +1,10 @@
+---
+title: "Tax Returns Experts"
+permalink: /resources/professionals/taxreturn/
+layout: single
+---
+
+{% for person in site.professionals_taxreturn %}
+  <a href="{{ person.url }}"><h2>{{ person.title }}</h2></a>
+  <p>{{ person.company }}</p>
+{% endfor %}

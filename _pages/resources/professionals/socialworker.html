@@ -1,0 +1,10 @@
+---
+title: "Social Worker"
+permalink: /resources/professionals/socialworker/
+layout: single
+---
+
+{% for person in site.professionals_socialworker %}
+  <a href="{{ person.url }}"><h2>{{ person.title }}</h2></a>
+  <p>{{ person.company }}</p>
+{% endfor %}

@@ -1,0 +1,10 @@
+---
+title: "Clubs"
+permalink: /resources/activities/clubs/
+layout: single
+---
+
+{% for club in site.activities_clubs %}
+  <a href="{{ club.url }}"><h2>{{ club.title }}</h2></a>
+  <p>{{ club.location }}</p>
+{% endfor %}
