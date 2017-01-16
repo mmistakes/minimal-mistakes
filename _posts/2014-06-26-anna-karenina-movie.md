@@ -1,9 +1,10 @@
 ---
-title: "Anna Karenina, the movie"
+title: Anna Karenina, the movie
 tags:
   - movie
   - reviewing
   - literature
+excerpt: "Review of the movie Anna Karenina"
 ---
 
 ![anna]

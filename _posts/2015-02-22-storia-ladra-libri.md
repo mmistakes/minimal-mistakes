@@ -5,6 +5,7 @@ tags:
   - book
   - reading
   - review
+excerpt: "recensione de 'Storia di una ladra di libri'"
 ---
 
 Ho letto questo libro in italiano in quanto mi è stato regalato tradotto (l'autore è australiano, quindi sto implicitamente assumendo che l'originale sia in inglese). Di solito la mia politica è molto semplice: se si è in grado, è meglio leggere l'originale che una traduzione.

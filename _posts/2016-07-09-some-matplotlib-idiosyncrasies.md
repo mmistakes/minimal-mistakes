@@ -4,6 +4,7 @@ tags:
   - python
   - matplotlib
   - data-viz
+excerpt: some basics on how to use matplotlib for plotting data
 ---
 
 [*Matplotlib*](http://matplotlib.org), the main data plotting library in Python, is pretty comprehensive in what you can do but not the best in how quick/clear it is to customise your plots to your specific needs. Also, not the best plotting tool available in general in terms of the quality (read beauty) of the end-result, but still, makes stuff come easy and of course, immediately available in a Jupyter notebook, so...

@@ -7,6 +7,7 @@ tags:
   - words
   - PhD
   - research
+excerpt: data visualisation over the text of my PhD thesis on language evolution
 ---
 
 Let me present you with some data analysis on my PhD thesis. This is the preliminary version, the final one will be available in December and at that point, if some changes/revisions have been applied, I will update this post (or create a new one, let's see what happens until then).

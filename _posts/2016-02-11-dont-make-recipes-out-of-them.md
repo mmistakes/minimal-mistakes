@@ -4,6 +4,7 @@ tags:
   - machine-learning
   - data-science
   - rants
+excerpt: how not to use machine learning
 ---
 
 *Machine Learning is not a set of pre-cooked supermarket meals*

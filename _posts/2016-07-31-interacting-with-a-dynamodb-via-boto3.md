@@ -7,6 +7,7 @@ tags:
   - database
   - dynamodb
   - aws
+excerpt: Python for querying a DynamoDB in AWS with boto3
 ---
 
 [Boto3](http://boto3.readthedocs.io/en/latest/) is the Python SDK to interact with the [Amazon Web Services](https://aws.amazon.com). DynamoDB are databases inside AWS in a noSQL format, and boto3 contains methods/classes to deal with them. This post assumes the AWS CLI (the tool to set access/authorization to the cloud) has been set, it can be easily done via terminal.

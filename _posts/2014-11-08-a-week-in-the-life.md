@@ -7,6 +7,7 @@ tags:
   - academia
   - PhD
   - work
+excerpt: My first week of work in the industry after transitioning from academia
 ---
 
 ![me-antea]

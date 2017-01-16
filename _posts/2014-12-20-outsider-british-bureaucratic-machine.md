@@ -5,6 +5,7 @@ tags:
   - britain
   - rants
   - scotland
+excerpt: the British bureaucracy for a European immigrant
 ---
 
 I finally got a *bank account*. And hopefully also a *national insurance number*.

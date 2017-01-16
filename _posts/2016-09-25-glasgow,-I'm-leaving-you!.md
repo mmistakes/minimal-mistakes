@@ -5,6 +5,7 @@ tags:
   - scotland
   - moving
   - life
+excerpt: My moving from Glasgow to Edinburgh
 ---
 
 Actually, at the time of writing this, I've already moved on, changed address, left no trace. I moved to Edinburgh. Yea, that happened one week ago.

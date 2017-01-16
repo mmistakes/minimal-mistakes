@@ -4,6 +4,7 @@ tags:
   - python
   - nltk
   - nlp
+excerpt: how to plot the real frequency of occurrence of text with NLTK
 ---
 
 Some days ago, trying to visualise a frequency distribution of tokens in a text via NLTK, I was quite surprised (and slightly disappointed) to see that the plot() method of the [FreqDist](http://www.nltk.org/api/nltk.html#nltk.probability.FreqDist) class does not support a kwarg for plotting the actual frequencies, rather than the counts.

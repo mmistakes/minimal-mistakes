@@ -1,9 +1,10 @@
 ---
-title: "L'anello di re Salomone"
+title: L'anello di re Salomone
 tags:
   - reviewing
   - book
   - reading
+excerpt: review of the book anello di re salomone
 ---
 
 *Una versione accorciata di questa recensione è apparsa sulla rivista [Sapere](http://www.edizionidedalo.it/site/riviste-attive.php?categories_id=36&attive=1)*.

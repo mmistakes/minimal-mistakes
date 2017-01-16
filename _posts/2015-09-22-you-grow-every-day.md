@@ -4,6 +4,7 @@ tags:
   - learning
   - life
   - growing
+excerpt: everyone grows and learns in time, no matter the age
 ---
 
 ![tree] Humans are mammals which require a long period of parental care lasting decades; other species are ready to go in their lives much quicker.
