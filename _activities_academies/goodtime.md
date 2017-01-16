@@ -25,3 +25,5 @@ Currently we offer a thriving preschool, a half day kindergarten, an after-schoo
 Our courses are structured around the needs of our students and their families. We offer great flexibility and personal lesson plans to meet every child's learning level. Our outstanding teachers take pride in the progress of our students as well as the success of our excellent staff.
 
 GCS is certified by the AdvancED Accreditation Commission.
+
+![]({{ site.url }}/assets/images/activities/goodtimepic.jpg)
