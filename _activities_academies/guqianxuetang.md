@@ -1,9 +1,11 @@
 ---
 title: "固謙書院"
-location: "Corvallis, OR 97333"
+location: "Corvallis, OR 97330"
 sidebar:
+  - title: "Contact"
+    text: "王老师"
   - title: "Address"
-    text: "Corvallis, OR 97333"
+    text: "Corvallis, OR 97330"
   - title: "WeChat"
     text: "15419083965"
   - title: "Email"
