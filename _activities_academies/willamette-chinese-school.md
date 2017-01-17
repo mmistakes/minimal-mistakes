@@ -13,8 +13,6 @@ sidebar:
     text: "[wcscorvallis.webs.com/](http://wcscorvallis.webs.com/)"
 ---
 
-![]({{ site.url }}/assets/images/activities/.jpg)
-
 The Willamette Chinese School (WCS) is a non-profit organization established in 2000. It is the largest Chinese language and culture program in the Corvallis-Albany-Philomath area in Oregon.
 
 The WCS strives to (i) serve as the Chinese language learning center for children and adults, (ii) foster an active local Chinese community, (iii) strengthen the friendship between the Chinese community and the local societies, and (iv) enhance the local culture diversity.
