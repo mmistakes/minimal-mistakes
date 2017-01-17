@@ -1,6 +1,6 @@
 ---
 title: "固謙書院"
-location: "4045 SW Research Way Corvallis, OR 97333"
+location: "Corvallis, OR 97333"
 sidebar:
   - title: "Address"
     text: "Corvallis, OR 97333"
