@@ -4,13 +4,13 @@ location: "P. O. Box 91332 Portland OR 97291"
 sidebar:
   - title: "Address"
     text: "P. O. Box 91332 Portland OR 97291"
-    image: "/assets/images/activities/pacific-violin.jpg"
+    image: "/assets/images/activities/pacific-violin2.jpg"
   - title: "Contact"
     text: "Hong Chou"
   - title: "Phone"
     text: "(503)267-9585"
   - title: "Website"
-    text: "[pacificviolinacademy.com(under construction)](http://pacificviolinacademy.com/)"
+    text: "[pacificviolinacademy.com](http://pacificviolinacademy.com/)"
 ---
 Pacific	Violin	Academy	provides	comprehensive	structural
 violin	curriculum	affiliated	with	the	American	String	Teachers
