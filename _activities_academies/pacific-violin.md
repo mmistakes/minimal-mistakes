@@ -1,5 +1,5 @@
 ---
-title: "Pacific Violin Academy 太平洋小提琴学院"
+title: "Pacific Violin Academy 海韵小提琴学校"
 location: "P. O. Box 91332 Portland OR 97291"
 sidebar:
   - title: "Address"
