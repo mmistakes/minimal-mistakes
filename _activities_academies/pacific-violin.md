@@ -28,4 +28,4 @@ master	classes,	and	competitions in	the	Nova	Program.
 彰学生的成就。“新星项目”是专业性培养有音乐天分的学生有兴趣参
 加波特兰青少年交响乐团， 大师课， 比赛等活动。
 
-![]({{ site.url }}/assets/images/activities/pacific-violin.png)
+![]({{ site.url }}/assets/images/activities/pacific-violin1.jpg)
