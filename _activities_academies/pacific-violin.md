@@ -9,6 +9,8 @@ sidebar:
     text: "Hong Chou"
   - title: "Phone"
     text: "(503)267-9585"
+  - title: "email"
+    text: "info@pacificviolinacademy.com"
   - title: "Website"
     text: "[pacificviolinacademy.com](http://pacificviolinacademy.com/)"
 ---
