@@ -1,9 +1,9 @@
 ---
 title: "WorldPlus 世加教育文化交流中心"
-location: "上海市松江区九峰路88号908室"
+location: "Portland OR"
 sidebar:
   - title: "Address"
-    text: "n/a"
+    text: "Portland OR"
     image: "/assets/images/activities/worldpluslogo.png"
   - title: "Contact"
     text: "中文请联系 刘老师"
