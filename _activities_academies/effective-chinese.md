@@ -22,4 +22,4 @@ Use language that resonates with Chinese people
 
 The school continues to evolve with changing technology, a widening circle of teachers and increased diversity among students.
 
-![]({{ site.url }}/assets/images/activities/effecticpic.jpg)
+![]({{ site.url }}/assets/images/activities/effectivepic.jpg)
