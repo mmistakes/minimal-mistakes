@@ -6,7 +6,7 @@ sidebar:
     text: "Rm 2007 Lloyd Center, Portland Oregon"
     image: "/assets/images/activities/effectivelogo.jpg"
   - title: "Phone"
-    text: "503-567-8543"
+    text: "(503)567-8543"
   - title: "email"
     text: "effectivechinese@gmail.com"
   - title: "Website"
@@ -22,4 +22,4 @@ Use language that resonates with Chinese people
 
 The school continues to evolve with changing technology, a widening circle of teachers and increased diversity among students.
 
-![]({{ site.url }}/assets/images/activities/effectivepic.jpg)
+![]({{ site.url }}/assets/images/activities/effectivepic1.jpg)
