@@ -9,7 +9,7 @@ sidebar:
     text: "503-466-2762"
   - title: "email"
     text: "contact@cechurch.org"
-    - title: "Website"
+  - title: "Website"
     text: "[www.cechurch.org](http://www.cechurch.org/untitled-cozo)"
 ---
 
