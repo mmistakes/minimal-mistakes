@@ -1,5 +1,5 @@
 ---
-title: "华人团契 – Chinese Fellowship at Village Baptist Church"
+title: "Chinese Fellowship at Village Baptist Church 华人团契"
 sidebar:
   - title: "Website"
     text: "[www.vbconline.org](http://www.vbconline.org/home/ministries/ethnic/chinese-fellowship/)"
