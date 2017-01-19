@@ -56,7 +56,7 @@ permalink: /programme/
 * 2016-12-8  09:20 to 10:40 CET
 * *Live from Vienna: EUCognition Meeting 2016* [Pdf](/slides/intro_eucog.pdf)
 * David Vernon and Markus Vincze:
-  * *"What industry wants from Cognitive Robotics"* [Pdf](/slides/EuCog2016BonsignoriokeyPDF.pdf)
+  * *"What industry wants from Cognitive Robotics"*
 * Florian Röhrbein:
   * *"Neurorobotics, a strategic pillar of Human Brain Project"* [Pdf](/slides/2016-12-08-Wien-euCog.pdf)
 * Ron Chrisley and Aaron Sloman:
