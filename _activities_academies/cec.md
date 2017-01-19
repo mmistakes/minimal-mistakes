@@ -1,16 +1,16 @@
 ---
-title: "Portland CEC Chinese Language School 波特兰华人福音教会中文学校"
+title: "CEC Chinese Language School 波特兰华人福音教会中文学校"
 location: "5529 NW Five Oaks Dr. Hillsboro, OR 97124"
 sidebar:
   - title: "Address"
     text: "5529 NW Five Oaks Dr. Hillsboro, OR 97124"
     image: "/assets/images/communities/evangelicallogo1.png"
-  - title: "Contact"
-    text: "Gloria Wong"
   - title: "Phone"
-    text: "503-223-9070"
-  - title: "Website"
-    text: "[www.oregonccba.org/chinese-language-school/](http://www.oregonccba.org/chinese-language-school/)"
+    text: "503-466-2762"
+  - title: "email"
+    text: "contact@cechurch.org"
+    - title: "Website"
+    text: "[www.cechurch.org](http://www.cechurch.org/untitled-cozo)"
 ---
 
 1997年以來，中文學校先後有80多位老師執鞭任教，不計其數的同工和家長義工幫忙。在重溫中文學校的發展史之時，我為在不同時期竟然曾經有八十多位老師先後參與了或長或短的教學而驚訝，驚訝之余轉而感恩，因為中文學校的發展壯大不是靠幾個人的努力，而是靠神的恩典，靠眾多弟兄姊妹的團隊奉獻精神。
