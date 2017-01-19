@@ -1,7 +1,6 @@
 ---
 title: "Kids First Project"
 sidebar:
-    image: "/assets/images/communities/kfplogo.png"
   - title: "Email"
     text: "office@kidsfirstproject.org"
   - title: "Phone"
@@ -10,7 +9,7 @@ sidebar:
     text: "[kidsfirstproject.org/](http://kidsfirstproject.org/)"
 ---
 
-![]({{ site.url }}/assets/images/communities/kfppic1.jpg)
+![]({{ site.url }}/assets/images/communities/kfplogo.png)
 
 ## HOPE - Health, Opportunity, Play, Education
 
