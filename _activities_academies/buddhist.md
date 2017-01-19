@@ -4,7 +4,7 @@ location: "Conestoga Middle School (12250 SW Conestoga DR, Beaverton, OR 97008 )
 sidebar:
   - title: "Address"
     text: "Conestoga Middle School (12250 SW Conestoga DR, Beaverton, OR 97008 )"
-    image: "/assets/images/communities/tzu-chilogo.jpg"
+    image: "/assets/images/activities/tzu-chilogo.jpg"
   - title: "Contact"
     text: "教務 - 月青師姐"
   - title: "Phone"
