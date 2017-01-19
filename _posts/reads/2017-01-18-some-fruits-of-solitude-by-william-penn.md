@@ -22,7 +22,7 @@ Written in the 1600s by William Penn, the book is full of archaic English gramma
 
 An interesting aspect of the book being written in the 1600s is that he deals, somewhat frequently, with the Master-Servant relationship. In a few of the aphorisms, it even felt like he was comparing the Master to God in the relationship. This actually made me a little uncomfortable, the thought of dealing with a more strictly caste society than I'm familiar.
 
-While I found parts of it intersting, it's short(ish) length is the only reason I finished it (~2-3 hours reading time). It wasn't difficult to read, but the archaic grammar often required focus in order to translate and process. I found myself re-reading sections because they didn't make much sense in the first pass. Quite honestly, most of the quotes have present-day interpretations that you can easily find on Pinterest. Having said that all of that, I did enjoy putting myself into a different perspective, consuming words of wisdom written by a man almost 400 years ago.
+While I found parts of it intersting, it's short(ish) length is the only reason I finished it (~2-3 hours reading time). It wasn't difficult to read, but the archaic grammar often required focus in order to translate and process. I found myself re-reading sections because they didn't make much sense in the first pass. Quite honestly, most of the quotes have present-day interpretations that you can easily find on Pinterest. Having said that, I did enjoy putting myself into a different perspective, consuming words of wisdom written by a man almost 400 years ago.
 
 ---
 
