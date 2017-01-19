@@ -171,6 +171,7 @@ Listen and accept criticism.
 >   286\. He that won't hear can't Judge, and he that can't bear Contradiction, man, with all his Wit, miss the Mark.
 
 Always question! 
+
 >   287\. Objection and Debate Sift out Truth, which needs Temper as well as Judgment.
 
 ## Personal Cautions ##
@@ -227,7 +228,7 @@ By forgiving others, we give ourselves peace while simultaneously taking away th
 
 ## Of Envy ##
 
-We often envy that or those which we criticize and for the reasons stated. 
+We often envy those whom we criticize and for the very reasons we criticize them. 
 
 >   81\. Some Men do as much begrutch others a good Name, as they want one themselves; and perhaps that is the Reason of it.
 
