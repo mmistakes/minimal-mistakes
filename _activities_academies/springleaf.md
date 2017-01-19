@@ -4,7 +4,7 @@ location: "Sylvania Campus, Portland Community College (12000 SW 49th Ave.)"
 sidebar:
   - title: "Address"
     text: "Sylvania Campus, Portland Community College (12000 SW 49th Ave.)"
-    image: "/assets/images/activities/springleaflogo.gif"
+    image: "/assets/images/activities/springleafLogo.gif"
   - title: "Phone"
     text: "n/a"
   - title: "Website"
@@ -22,4 +22,4 @@ Learn to appreciate art through hands-on experience.
 
 Springleaf Chinese School admits students of any race, color, national and ethnic origin to all rights, privileges, programs, and activities generally accorded or made available to the students at the school.
 
-![]({{ site.url }}/assets/images/activities/Springleafpic.jpg)
+![]({{ site.url }}/assets/images/activities/springleafpic.jpg)
