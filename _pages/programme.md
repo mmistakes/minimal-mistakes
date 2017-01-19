@@ -58,7 +58,7 @@ permalink: /programme/
 * David Vernon and Markus Vincze:
   * *"What industry wants from Cognitive Robotics"* [Pdf](/slides/EuCog2016BonsignoriokeyPDF.pdf)
 * Florian Röhrbein:
-  * *"Neurorobotics, a strategic pillar of Human Brain Project"*
+  * *"Neurorobotics, a strategic pillar of Human Brain Project"* [Pdf](/slides/2016-12-08-Wien-euCog.pdf)
 * Ron Chrisley and Aaron Sloman:
   * *"Architectural Requirements for Consciousness"* [Pdf](/slides/Chrisley%20and%20Sloman%20-%20Architectural%20Requirements%20for%20Consciousness.pdf)
 * Fabio Bonsignorio:
@@ -72,4 +72,4 @@ permalink: /programme/
 * Lecturer: Martin F. Stoelen
 * Guest lecture by Florian Roehrbein (rescheduled):
   * Robotics and Embedded Systems group, Technical University of Munich
-  * *"Tools for Virtual Neurorobotics"*
+  * *"Tools for Virtual Neurorobotics"* [Pdf](/slides/2016-12-15-ShanghAI-Roehrbein.pdf)
