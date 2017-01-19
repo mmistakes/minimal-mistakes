@@ -5,6 +5,9 @@ feature_row:
   - image_path: /assets/images/members/Brink-Ming.jpg
     title: "Ming Brink"
     excerpt: "<p>Ming is an Oregon Certified Public Accountant (CPA). She currently works for Precision Castparts Corp, a wholly owned company of Berkshire Hathaway, as a tax manager.</p><p>Ming also serves as the President of NW China Council. She finds joy in serving the community and giving to others. She has volunteered for various charities and traveled overseas to spread the message of Christianity.</p><p>Ming has pursued education in both China and the United States. She holds a B.A. in Accounting and International Business.</p>"
+  - image_path: /assets/images/members/Ni-Xu.jpg
+    title: "Ni Xu"
+    excerpt: "<p>.</p>"
   - image_path: /assets/images/members/Yu-June.jpg
     title: "June Yu"
     excerpt: "<p>June earned a B.A. in Economics from Carleton University in Canada. She holds an Association Montessori International (AMI) Primary Diploma and a M.Ed. from Loyola University in Maryland. She has been working as a teacher since 2004.</p><p>June moved to Portland in 2007, and has been running her own Montessori preschool in the Bethany-Cedar Mill area. Outside of work, June loves to play the piano and Guzheng with her children and volunteers at local schools/senior homes as a music guest.</p>"
