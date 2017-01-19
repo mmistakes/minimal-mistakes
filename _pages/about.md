@@ -5,7 +5,7 @@ feature_row:
   - image_path: /assets/images/members/Brink-Ming.jpg
     title: "Ming Brink"
     excerpt: "<p>Ming is an Oregon Certified Public Accountant (CPA). She currently works for Precision Castparts Corp, a wholly owned company of Berkshire Hathaway, as a tax manager.</p><p>Ming also serves as the President of NW China Council. She finds joy in serving the community and giving to others. She has volunteered for various charities and traveled overseas to spread the message of Christianity.</p><p>Ming has pursued education in both China and the United States. She holds a B.A. in Accounting and International Business.</p>"
-  - image_path: /assets/images/members/Ni-Xu1.jpg
+  - image_path: /assets/images/members/Ni-Xu.jpg
     title: "Ni Xu"
     excerpt: "<p>.</p>"
   - image_path: /assets/images/members/Yu-June.jpg
