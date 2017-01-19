@@ -36,25 +36,25 @@ The following are aphorisms I found interesting. They are taken as seen in the t
 
 He advocated free play and open-ended learning for children. 
 
->   8. Children had rather be making of Tools and Instruments of Play; Shaping, Drawing, Framing, and Building, &c, than getting some Rules of Propriety of Speech by Heart: And those also would follow with more Judgment, and less Trouble and Time.
+>   8\. Children had rather be making of Tools and Instruments of Play; Shaping, Drawing, Framing, and Building, &c, than getting some Rules of Propriety of Speech by Heart: And those also would follow with more Judgment, and less Trouble and Time.
 
 ## Pride ##
 
 Take care of your mind (or perhaps he intended faith and religion), as well as your body. 
 
->   24. He is curious to wash, dress and perfume his Body, but careless of his Soul. The one shall have many Hours, the other not so many Minutes.
+>   24\. He is curious to wash, dress and perfume his Body, but careless of his Soul. The one shall have many Hours, the other not so many Minutes.
 
 ## Censoriousness ##
 
 This is akin to one of my favorite maxims, "judge yourself before you judge others." 
 
->   41. We are apt to be very pert at censuring others, where we will not endure advice our selves. And nothing shews our Weakness more than to be so sharp-sighted at spying other Mens Faults, and so purblind about our own.
+>   41\. We are apt to be very pert at censuring others, where we will not endure advice our selves. And nothing shews our Weakness more than to be so sharp-sighted at spying other Mens Faults, and so purblind about our own.
 
 ## Frugality or Bounty ##
 
 Mind your money well and be frugal, but also be charitable with it. 
 
->   50. Frugality is good, if Liberality be join'd with it. The first is leaving off superfluous Expences; the last bestowing them to the Benefit of others that need. The first without the last begins Covetousness; the last without the first begins Prodigality; Both together make an excellent Temper. Happy the Place where ever that is found. 
+>   50\. Frugality is good, if Liberality be join'd with it. The first is leaving off superfluous Expences; the last bestowing them to the Benefit of others that need. The first without the last begins Covetousness; the last without the first begins Prodigality; Both together make an excellent Temper. Happy the Place where ever that is found. 
 
 ## Apparel ##
 
