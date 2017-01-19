@@ -50,17 +50,18 @@ permalink: /programme/
 * Lecturer: Fabio Bonsignorio
 * Guest Lecture by Josh Bongard:
   * Vermont Complex Systems Center, University of Vermont, US
-  * *"Co-evolution of brain and body morphologies"*
+  * *"Co-evolution of brain and body morphologies"* [Pdf](/slides/2016_ShanghAI_bongard.pdf) 
   
 ### Lecture 7: Live from Vienna: EUCognition Meeting 2016
 * 2016-12-8  09:20 to 10:40 CET
-* *Live from Vienna: EUCognition Meeting 2016*
+* *Live from Vienna: EUCognition Meeting 2016* 
+  * *"Introduction"* [Pdf](/slides/intro_eucog.pdf)
 * David Vernon and Markus Vincze:
-  * *"What industry wants from Cognitive Robotics"*
+  * *"What industry wants from Cognitive Robotics"* [Pdf](/slides/EuCog2016BonsignoriokeyPDF.pdf)
 * Florian Röhrbein:
   * *"Neurorobotics, a strategic pillar of Human Brain Project"*
 * Ron Chrisley and Aaron Sloman:
-  * *"Architectural Requirements for Consciousness"*
+  * *"Architectural Requirements for Consciousness"* [Pdf](/slides/Chrisley%20and%20Sloman%20-%20Architectural%20Requirements%20for%20Consciousness.pdf)
 * Fabio Bonsignorio:
   * *"Open Issues in Cognitive Embodied AI Architectures for New Robotics"* [Pdf](/slides/EuCog2016BonsignoriokeyPDF.pdf)
 
