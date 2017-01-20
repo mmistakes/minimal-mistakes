@@ -5,7 +5,7 @@ feature_row:
   - image_path: /assets/images/members/Brink-Ming1.jpg
     title: "Ming Brink"
     excerpt: "<p>Ming is an Oregon Certified Public Accountant (CPA). She currently works for Precision Castparts Corp, a wholly owned company of Berkshire Hathaway, as a tax manager.</p><p>Ming also serves as the President of NW China Council. She finds joy in serving the community and giving to others. She has volunteered for various charities and traveled overseas to spread the message of Christianity.</p><p>Ming has pursued education in both China and the United States. She holds a B.A. in Accounting and International Business.</p>"
-  - image_path: /assets/images/members/Ni-Xu2.jpg
+  - image_path: /assets/images/members/Ni-Xu3.jpg
     title: "Ni Xu"
     excerpt: "<p>Ni was a graduate from Beijing Film Academy, majoring in film script writing.  He had an extensive experience in the film industry, working as a screenwriter, photographer, documentary and film director.</p><p>In 2012, Ni and his family came to the United States, eventually settled in Portland, hoping to do their part to record the revival of the Chinese community in Portland.</p><p>Ni’s wife, Faye, is a marketing guru, who was directly responsible for directing Portland Chinatown Saturday Performance series.</p>"
   - image_path: /assets/images/members/Yu-June.jpg
