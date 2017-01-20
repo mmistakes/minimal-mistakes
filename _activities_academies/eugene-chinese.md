@@ -1,5 +1,6 @@
 ---
-title: "Eugene Chinese School <p>雨津中文学校</p>"
+title: "Eugene Chinese School 雨津中文学校"
+title: "雨津中文学校"
 location: "631 E. 19th Ave. Eugene OR 97401"
 sidebar:
   - title: "Address"
