@@ -424,6 +424,7 @@ For Google Analytics add your Tracking Code:
 ```yaml
 analytics:
   provider: "google-universal"
+  google:
     tracking_id: "UA-1234567-8"
 ```
 
