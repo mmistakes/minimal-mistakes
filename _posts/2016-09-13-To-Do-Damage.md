@@ -1,3 +1,10 @@
+---
+title: "To Do Damage (TDD)"
+excerpt: "TDD is one tool in this education process... Like all good tools, it has sharp edges and if you misuse it, it can cut you but that's not a reason to leave it in the toolbox."
+layout: single
+comments: true
+---
+
 # To Do Damage? (TDD) #
 
 My last post
