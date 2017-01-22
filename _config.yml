@@ -17,11 +17,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
+title                    : "Pablo Hernandez-Cerdan"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Pablo Hernandez-Cerdan"
+description              : "Phd. in Biophysics and software development in C++"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -113,11 +113,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  name             : "Pablo Hernandez Cerdan"
+  avatar           : "/assets/images/github_garden.jpg"
+  bio              : "Phd. in Biophysics and software development in C++"
+  location         :
+  email            : "pablo.hernandez.cerdan@outlook.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -133,7 +133,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/phcerdan"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -159,7 +159,6 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
-
 
 # Reading Files
 include:
@@ -263,6 +262,8 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jemoji
+  - hawkins
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -309,11 +310,15 @@ compress_html:
   ignore:
     envs: development
 
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
-  # _posts
-  - scope:
+  -
+    scope:
       path: ""
       type: posts
     values:
@@ -323,3 +328,17 @@ defaults:
       comments: # true
       share: true
       related: true
+  -
+    scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  -
+    scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: true
