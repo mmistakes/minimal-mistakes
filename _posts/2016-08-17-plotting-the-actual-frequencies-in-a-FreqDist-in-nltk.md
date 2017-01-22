@@ -7,13 +7,13 @@ tags:
 excerpt: How to plot the real frequency of occurrence of text with NLTK
 ---
 
-Some days ago, trying to visualise a frequency distribution of tokens in a text via NLTK, I was quite surprised (and slightly disappointed) to see that the plot() method of the [FreqDist](http://www.nltk.org/api/nltk.html#nltk.probability.FreqDist) class does not support a kwarg for plotting the actual frequencies, rather than the counts.
+Some days ago, trying to visualise a frequency distribution of tokens in a text via NLTK, I was quite surprised (and slightly disappointed) to see that the `plot()` method of the [`FreqDist`](http://www.nltk.org/api/nltk.html#nltk.probability.FreqDist) class does not support a kwarg for plotting the actual frequencies, rather than the counts.
 
-Now, the term frequency in NLP is borrowed from Linguistics, where it's used to mean the counts, not the actual frequency of occurrence of a linguistic something. I personally never quite liked this usage of the word as I find it pretty confusing: a frequency is, typically, a ratio of the occurrences counts of that something to the total of every something in the set.
+Now, the term "frequency" in NLP is borrowed from Linguistics, where it's used to mean the counts, not the actual frequency of occurrence of a linguistic something. I personally never quite liked this usage of the word as I find it pretty confusing: a frequency is, typically, a ratio of the occurrences counts of that something to the total of every something in the set.
 
-FreqDist is creating a dictionary of counts, not frequencies, which is quite alright. Then you can directly plot them by calling the class method [plot()](http://www.nltk.org/api/nltk.html#nltk.probability.FreqDist.plot), without the need to externally call pyplot. I was expecting that among the kwargs allowed by the method there would have been something to normalise said counts to transform them into frequencies. As of NLTK's version 3.2.1, there isn't. The [freq(sample)](http://www.nltk.org/api/nltk.html#nltk.probability.FreqDist.freq) method gives the frequency of a given sample, but nothing enables the possibility for frequencies to be directly plotted.
+`FreqDist` is creating a dictionary of counts, not frequencies, which is quite alright. Then you can directly plot them by calling the class method [`plot()`](http://www.nltk.org/api/nltk.html#nltk.probability.FreqDist.plot), without the need to externally call pyplot. I was expecting that among the kwargs allowed by the method there would have been something to normalise said counts to transform them into frequencies. As of NLTK's version 3.2.1, there isn't. The [`freq(sample)`](http://www.nltk.org/api/nltk.html#nltk.probability.FreqDist.freq) method gives the frequency of a given sample, but nothing enables the possibility for frequencies to be directly plotted.
 
-My hack to obtain this is then: What we're doing here is simply normalising the counts to their sum, paying attention to the fact that N(), which does return this sum, changes when we change the values, so we need to store it beforehand. All the other existing kwargs are preserved for consistency.
+My hack to obtain this is then: What we're doing here is simply normalising the counts to their sum, paying attention to the fact that `N()`, which does return this sum, changes when we change the values, so we need to store it beforehand. All the other existing kwargs are preserved for consistency.
 
 My hack to obtain this is then:
 
@@ -54,7 +54,7 @@ def plot_freqdist_freq(fd,
     return
 ```
 
-What we're doing here is simply normalising the counts to their sum, paying attention to the fact that [N()](http://www.nltk.org/api/nltk.html#nltk.probability.FreqDist.N), which does return this sum, changes when we change the values, so we need to store it beforehand. All the other existing kwargs are preserved for consistency.
+What we're doing here is simply normalising the counts to their sum, paying attention to the fact that [`N()`](http://www.nltk.org/api/nltk.html#nltk.probability.FreqDist.N), which does return this sum, changes when we change the values, so we need to store it beforehand. All the other existing kwargs are preserved for consistency.
 
 ![freqdist] The result is in figure, for the text of Austen's Sense and Sensibility (available as a book in the NLTK data), we're plotting the frequency of the 50 most frequent tokens.
 

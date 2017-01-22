@@ -30,7 +30,10 @@ Basically relying on the city council is your only reasonable hope if you are in
 By the way, banks are open 9.15–17 which is covered entirely by my working schedule so given that to open an account you need an appointment, Saturday was my only choice.
 So, I started making contact with the city council. I sent them an email. The automated answer: we will get back to you in 20 days. Fair enough, I had time. Too bad 30 days elapsed and no answer was received (I was expecting a letter which said how much I have to pay and all the details). I called and they had apparently forgotten, or, put more simply, ignored my mail. As an apology, I was told I’d receive my letter within 7 days, my name was added to my partner’s account and everything would be fine. 1... 2... 3... 7... 10... 10 days has passed and no letter in my pigeonhole. I called again.
 
-![rose]
+<figure class="align-center">
+  <img src="{{ site.url }}/images/rose.JPG" alt="">
+  <figcaption>A rose about to collapse</figcaption>
+</figure> 
 
 This photo is a fairly accurate depiction of my mental state back then. 
 
@@ -57,6 +60,3 @@ It wasn’t that late so I went to the local branch of the bank again, to book a
 ## Second chapter: the National Insurance Number 
 
 This is something you need for tax purposes. You need the proof of address as well. If you are a foreigner, you need to go to a jobcentre for an interview: they need to know why you need this number at all. And you book the interview through the phone. After a couple of failed attempts, failed because of my lack of a proof of address, I just went for an appointment in the middle of the week, after making sure my company was fine with this. Nothing interesting here, the interview is just a dull process and they didn’t even have a look at the proof of address. The environment and the people were very, very friendly and helpful and the whole mechanism is extremely efficient. I should receive the number in 30 days, they said. And I seriously believe them. To cut a long story short, bureaucracy here seems to me as heavy as I am used to, except that it is very fast. And people smile. And if you don’t fall into holes of the system, you face no problems altogether. If you do, you are able to sort them out with no particular suffering anyway, because there’s always someone doing what he/she can to really help you out.
-
-[rose]: {{ site.url }}/images/rose.JPG
-{: height="75px" width="450px" align="left"}

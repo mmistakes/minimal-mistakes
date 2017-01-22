@@ -7,7 +7,12 @@ tags:
 excerpt: Everyone grows and learns in time, no matter the age
 ---
 
-![tree] Humans are mammals which require a long period of parental care lasting decades; other species are ready to go in their lives much quicker.
+<figure style="width: 300px" class="align-left">
+  <img src="{{ site.url }}/images/tree.jpeg" alt="">
+  <figcaption>This guy is not scared of growing.</figcaption>
+</figure> 
+
+Humans are mammals which require a long period of parental care lasting decades; other species are ready to go in their lives much quicker.
 The human brain is so big compared to other parts of the body, and so powerful, that it needs a long process of tuning before reaching the sort of “stable state” which we call adulthood.
 
 We pass through infancy (we’re totally dependent on adults for everything and we’re unable to perform any sort of simple task), childhood (we learn to be physically independent), then the teen years (we learn to deal with emotions and go through a cascade of hormonal changes aimed at setting up the cerebral system), and then we’re considered to be adults. 
@@ -22,6 +27,3 @@ Experiences are those things that make you change your perspective after realizi
 In my life until now, I changed my mind several times. When in my teens, I was convinced by age 25 I’d be a well-formed professional, working somewhere and with nothing else interesting to assimilate about the world. I remember I even tried to picture my physical appearance of the future. Truth is, when I was 25 I was not even close to be a professional. I was in my first PhD year struggling to make the switch from studying scientific things to prouducing scientific things, and I had to clue how to do this, professionally. Then I learned. When I finished the program, I wasn’t even close to be a professional, again. I had decided I wanted a job in the industry and I had no idea how businesses work. Then I started learning. And I’m in the process, and it’s great.
 
 It’s great to absorb something new to get from the outside everyday, it’s rewarding to open your brain to the idea of getting new information in, because you might see nuances you didn’notice, or you might get to know of a new way capable of making the difference in your everyday tasks. Don’t be lazy, don’t be old, exit your comfort zone, every day. Do something you never thought it was interesting to you. Learn something whose name scares you.
-
-[tree]: {{ site.url }}/images/tree.jpeg
-{: height="75px" width="300px" align="left" margin="10px"}
