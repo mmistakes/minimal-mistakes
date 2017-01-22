@@ -26,3 +26,19 @@
     <script src="{{ script | relative_url }}"></script>
   {% endfor %}
 {% endif %}
+
+<meta http-equiv="cleartype" content="on">
+
+<link rel="stylesheet" href="{{ '/assets/css/syntax.css' | prepend: site.baseurl }}">
+
+<!-- Mathjax -->
+<!-- with physics package, and inline $ -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js", "[Contrib]/physics/physics.js"],
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    });
+</script>
+<script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>

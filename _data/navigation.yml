@@ -4,10 +4,10 @@ main:
     url: /
   - title: "Projects"
     url: /projects
-  - title: "About"
-    url: /about
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  # - title: "About"
+  #   url: /about
+  # - title: "Jekyll theme Guide"
+  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"

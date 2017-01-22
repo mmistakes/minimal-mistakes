@@ -62,3 +62,10 @@ Min 10:
 Statistical mechanics, two main frameworks: Boltzmann, where trajectories and velocities are involved, and Gibbs, which is useful for equilibrium states.
 
 Both are equivalent if system is *ergodic*, where time average can be replaced by statistical average of states.
+
+```cpp
+#include <string>
+void f(){
+  return 1;
+}
+```
