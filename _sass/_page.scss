@@ -16,6 +16,7 @@
   }
 }
 
+
 .page {
   @include breakpoint($large) {
     @include span(10 of 12 last);
@@ -56,7 +57,7 @@
   }
 
   p, li, dl {
-    font-size: 1em;
+    font-size: 0.9em;
   }
 
   /* paragraph indents */

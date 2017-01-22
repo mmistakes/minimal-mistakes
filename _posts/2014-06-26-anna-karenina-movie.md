@@ -1,14 +1,14 @@
 ---
 title: Anna Karenina, the movie
+header:
+  image: /images/anna.jpeg
+  caption: "Ivan Kramsoi, Portrait of an unknown woman (Image licensed under the Public Domain terms)"
 tags:
   - movie
   - reviewing
   - literature
 excerpt: "A review of the movie Anna Karenina"
 ---
-
-![anna]
-*Ivan Kramsoi, Portrait of an unknown woman [Image licensed under the Public Domain terms]*
 
 I liked it, very much. I don’t really care whether it sticks to the novel (which, probable flaw in my judgement, I haven’t read) or not. Being mostly a story about “love” and adultery, my inner voice would have told me to avoid it, for it knows I’m not usually moved to tears by such things (I wonder whether this is actually true?), but my pretty irrational tension towards anything depicting events from the past gave me the good reason I needed to give it a chance.
 First of all, the setting.
@@ -19,6 +19,3 @@ In addition to the scandalous balls and their music, the movie itself looks like
 Third, the colours.
 Colours are vivid and contrasting. There is loads of black: elegant dresses of noblewomen, horse-led carriages, and the train, whose presence is pivotal to the story. There is also a relatively large share of whites: the snow, clearly, but also the co-protagonist tailored suits and the light in several scenes, which make the spectator’s eye focus on character’s expressions.
 I’m not going to comment on the plot, the book (or this movie, if you like me hadn’t read it) speaks for itself. But I found this cinematographic representation absolutely enjoyable.
-
-[anna]: {{ site.url }}/images/anna.jpeg
-{: height="75px" width="600px"}

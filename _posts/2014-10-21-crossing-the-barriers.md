@@ -17,7 +17,10 @@ Nevertheless, at a sudden point during my studies I came to realize that physics
 Human knowledge is full of open problems and people have started to understand the inspiring value of transversal thinking.
 Mankind has seen the emergence of various disciplines, each with its specific tools and areas of interest, but the different fields of expertise we identify have separated from a unique root, philosophy. In ancient times, people began to ask themselves questions about natural phenomena because they needed to fulfill their human desire for knowledge. As time went by, more and more questions were raised and more and more structured answers were required. Knowledge started to split up in many disciplines in order to gain a deep insight into specific topics and develop particular methods of investigation. Now it is facing a renewed melting-pot of ideas, so that results acquired with a detailed study of a discipline are revealing themselves to be useful if applied elsewhere.
 
-![margherita]
+<figure class="align-center">
+  <img src="{{ site.url }}/images/margherita.JPG" alt="">
+  <figcaption></figcaption>
+</figure> 
 
 My feeling is that knowledge would highly benefit from a deeper cooperation among academic departments, open questions would hopefully find a path leading to an answer.
 This argument concerns not only the different branches of science, but, more importantly, the relation between sciences and humanities. Thinking out of the box and a using broad point of view are essential attitudes to unravel a complex world.
@@ -29,6 +32,3 @@ A dialogue between the two main divisions of knowledge proves to be really neces
 Despite many things are changing, we still need to unleash a real cooperation among all the diverse backgrounds for a common goal, that of understanding the world as ancient Greeks tried to do, for the fun of it and with no prejudices of any kind.
 
 *[A version of this entry was submitted to the Nature Careers Columnist competition (wasn’t selected)]*
-
-[margherita]: {{ site.url }}/images/margherita.JPG
-{: height="75px" width="600px"}
