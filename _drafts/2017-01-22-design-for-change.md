@@ -50,4 +50,13 @@ then generally it will have it's own data format and it's own rules
 around validation etc. Therefore, you need to decide how much benefit
 can be gained by centralising design decisions around data model?
 
+Versioning - accrete data but don't make breaking changes. Maintain
+old formats.
+
+When data is at rest it should be the native message from the origin
+or scoped to the subsystem or component if different for reasons such
+as optimisation and enrichment.
+
+
+
 [//] # investigate graphQL as well
