@@ -189,6 +189,16 @@ And then drop-in the feature row include in the body where you'd like it to appe
 **More Feature Row Goodness:** A [few more examples]({{ "/splash-page/" | absolute_url }}) and [source code](https://github.com/{{ site.repository }}/blob/master/docs/_pages/splash-page.md) can be seen in the demo site.
 {: .notice--info}
 
+## Video
+
+Embed a responsive video from YouTube or Vimeo.
+
+```liquid
+{% raw %}{% include responsive_video id="97649261" provider="vimeo" %}{% endraw %}
+```
+
+{% include responsive_video id="97649261" provider="vimeo" %}
+
 ## Table of Contents
 
 To include an [auto-generated table of contents](http://kramdown.rubyforge.org/converter/html.html#toc) for posts and pages, add the following helper before any actual content in your post or page.
