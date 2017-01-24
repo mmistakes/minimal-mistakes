@@ -4,8 +4,25 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2016-12-21T23:04:51-05:00
+modified: 2017-01-24T10:10:17-05:00
 ---
+
+## [4.2.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.2.0)
+
+### Enhancements
+
+- Add `video` helper (for YouTube/Vimeo) and video headers to `single`, `archive`, and `splash` layouts. [#788](https://github.com/mmistakes/minimal-mistakes/pull/788)
+- Add missing simplified Chinese localized UI text strings. [#747](https://github.com/mmistakes/minimal-mistakes/pull/747)
+- Add Nepali (Nepalese) localized UI text strings. [#785](https://github.com/mmistakes/minimal-mistakes/pull/785)
+- Remove borders from table elements found in Google Custom Search Engine widget. [#759](https://github.com/mmistakes/minimal-mistakes/issues/759)
+
+### Bug Fixes
+
+- Remove `position: sticky` JavaScript polyfill and fallback to default positioning for browsers that don't support it. [#752](https://github.com/mmistakes/minimal-mistakes/issues/752)
+
+### Maintenance
+
+- Fix invalid Google Universal Analytics example in documentation. [#783](https://github.com/mmistakes/minimal-mistakes/pull/783)
 
 ## [4.1.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.1.1)
 
