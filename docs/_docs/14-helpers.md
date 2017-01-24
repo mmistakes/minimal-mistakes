@@ -189,15 +189,52 @@ And then drop-in the feature row include in the body where you'd like it to appe
 **More Feature Row Goodness:** A [few more examples]({{ "/splash-page/" | absolute_url }}) and [source code](https://github.com/{{ site.repository }}/blob/master/docs/_pages/splash-page.md) can be seen in the demo site.
 {: .notice--info}
 
-## Video
+## Responsive Video Embed
 
-Embed a responsive video from YouTube or Vimeo.
+Embed a video from YouTube or Vimeo that responsively sizes to fit the width of its parent.
+
+| Parameter  | Required     | Description |
+|----------  |---------     | ----------- |
+| `id`       | **Required** | ID of the video |
+| `provider` | **Required** | Hosting provider of the video, either `youtube` or `vimeo` |
+
+### YouTube
+
+To embed the following YouTube video at url `https://www.youtube.com/watch?v=XsxDH4HcOWA` (long version) or `https://youtu.be/XsxDH4HcOWA` (short version) into a post or page's main content you'd use: 
 
 ```liquid
-{% raw %}{% include responsive_video id="97649261" provider="vimeo" %}{% endraw %}
+{% raw %}{% include video id="XsxDH4HcOWA" provider="youtube" %}{% endraw %}
 ```
 
-{% include responsive_video id="97649261" provider="vimeo" %}
+{% include video id="XsxDH4HcOWA" provider="youtube" %}
+
+To embed it as a video header you'd use the following YAML Front Matter
+
+```yaml
+header:
+  video:
+    id: XsxDH4HcOWA
+    provider: youtube
+```
+
+### Vimeo
+
+To embed the following Vimeo video at url `https://vimeo.com/97649261` into a post or page's main content you'd use: 
+
+```liquid
+{% raw %}{% include video id="97649261" provider="vimeo" %}{% endraw %}
+```
+
+{% include video id="97649261" provider="vimeo" %}
+
+To embed it as a video header you'd use the following YAML Front Matter
+
+```yaml
+header:
+  video:
+    id: 97649261
+    provider: vimeo
+```
 
 ## Table of Contents
 
