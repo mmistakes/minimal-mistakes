@@ -14,6 +14,7 @@ Currently the English[^yaml-anchors] main keys in [`_data/ui-text.yml`](https://
 - French (Français)
 - German (Deutsch)
 - Italian (Italiano)
+- Nepali (Nepalese)
 - Spanish (Español)
 - Turkish (Türkçe)
 
