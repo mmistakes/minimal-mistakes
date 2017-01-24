@@ -14,6 +14,7 @@
 ### Maintenance
 
 - Fix invalid Google Universal Analytics example in documentation. [#783](https://github.com/mmistakes/minimal-mistakes/pull/783)
+- Bump `jekyll-sitemap` gem dependency to (1.0).
 
 ## [4.1.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.1.1)
 
