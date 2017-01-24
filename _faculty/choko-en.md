@@ -1,4 +1,6 @@
 ---
+lang: en
+ref: choko
 name: "Konstantinos Chorianopoulos"
 rank: "Assistant Professor"
 topic: "Software Technologies"
