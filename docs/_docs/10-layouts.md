@@ -7,7 +7,7 @@ single_layout_gallery:
     alt: "single layout with header example"
   - image_path: /assets/images/mm-layout-single-meta.png
     alt: "single layout with comments and related posts"
-modified: 2016-12-12T15:20:20-05:00
+modified: 2017-01-24T10:52:47-05:00
 ---
 
 {% include toc icon="columns" title="Included Layouts" %}
@@ -182,6 +182,16 @@ Then configure pagination in `_config.yml`.
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 ```
+
+If you'd rather have a paginated page of posts reside in a subfolder instead of acting as your homepage make the following adjustments.
+
+Create `index.html` in the location you'd like. For example if I wanted it to live at **/blog** I'd create `/blog/index.html` with `layout: home` in its YAML Front Matter.
+
+Then adjust the `paginate_path` in **_config.yml** to match.
+
+```yaml
+paginate_path: /blog/page:num
+``` 
 
 **Note:** Jekyll can only paginate a single `index.html` file. If you'd like to paginate more pages (e.g. category indexes) you'll need the help of a custom plugin. For more pagination related settings check the [**Configuration**]({{ "/docs/configuration/#paginate" | absolute_url }}) section.
 {: .notice--info}
