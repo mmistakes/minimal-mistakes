@@ -1,3 +1,13 @@
+## [4.2.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.2.1)
+
+### Enhancements
+
+- Improve `paginator.html` to support paginated pages that live inside of a subfolder. See [documentation](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#home-page) for more details. [#764](https://github.com/mmistakes/minimal-mistakes/pull/764/)
+
+### Maintenance
+
+- Add `https` protocol to Google Universal Analytics embed. [#772](https://github.com/mmistakes/minimal-mistakes/pull/772)
+
 ## [4.2.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.2.0)
 
 ### Enhancements
