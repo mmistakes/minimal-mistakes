@@ -411,6 +411,47 @@ de-LI:
   <<: *DEFAULT_DE
 de-LU:
   <<: *DEFAULT_DE
-
+# Nepali (Nepal)
+# -----------------
+ne: &DEFAULT_NE
+  page                       : "पृष्‍ठ"
+  pagination_previous        : "अघिल्लो"
+  pagination_next            : "अर्को"
+  breadcrumb_home_label      : "गृह"
+  breadcrumb_separator       : "/"
+  menu_label                 : "टगल मेनु"
+  toc_label                  : "यो पृष्‍ठमा"
+  ext_link_label             : "सिधा सम्पर्क"
+  less_than                  : "कम्तिमा"
+  minute_read                : "मिनेट पढ्नुहोस्"
+  share_on_label             : "शेयर गर्नुहोस्"
+  meta_label                 :
+  tags_label                 : "ट्यागहरू:"
+  categories_label           : "वर्गहरु:"
+  date_label                 : "अद्यावधिक:"
+  comments_label             : "टिप्पणी दिनुहोस्"
+  comments_title             : "टिप्पणीहरू"
+  more_label                 : "अझै सिक्नुहोस्"
+  related_label              : "तपाईं रुचाउन सक्नुहुन्छ "
+  follow_label               : "पछ्याउनुहोस्:"
+  feed_label                 : "फिड"
+  powered_by                 : "Powered by"
+  website_label              : "वेबसाइट"
+  email_label                : "इमेल"
+  recent_posts               : "ताजा लेखहरु"
+  undefined_wpm              : "अपरिभाषित प्यारामिटर शब्दहरू_प्रति_मिनेट at _config.yml"
+  comment_form_info          : "तपाइँको इमेल ठेगाना प्रकाशित गरिने छैन।आवश्यक जानकारीहरुमा चिन्ह लगाइको छ"
+  comment_form_comment_label : "टिप्पणी"
+  comment_form_md_info       : "मार्कडाउन  समर्थित छ।"
+  comment_form_name_label    : "नाम"
+  comment_form_email_label   : "इमेल ठेगाना"
+  comment_form_website_label : "वेबसाइट (वैकल्पिक)"
+  comment_btn_submit         : "टिप्पणी दिनुहोस् "
+  comment_btn_submitted      : "टिप्पणी भयो"
+  comment_success_msg        : "तपाईंको टिप्पणीको लागि धन्यवाद! एक पटक यो अनुमोदन गरेपछी यो साइटमा देखाउनेछ।"
+  comment_error_msg          : "माफ गर्नुहोस्, तपाईंको टिप्पणी त्रुटि थियो।सबै आवश्यक जानकारीहरु पूरा गरिएको छ भने निश्चित गर्नुहोस् र फेरि प्रयास गर्नुहोस्।"
+  loading_label              : "लोड हुँदैछ ..."
+ne-NP:
+  <<: *DEFAULT_NE
 # Another locale
 # --------------
