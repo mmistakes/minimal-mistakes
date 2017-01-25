@@ -78,7 +78,7 @@ analytics:
 # Site Author
 author:
   name             : "Gregory Mikniche"
-  avatar           : "/assets/images/avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Special ordinary."
   location         : "London, UK"
   email            : "gregory@mikniche.com"
