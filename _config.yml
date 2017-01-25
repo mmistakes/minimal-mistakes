@@ -81,13 +81,13 @@ author:
   avatar           : "/assets/images/avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Special ordinary."
   location         : "London, UK"
-  email            :
-  uri              :
+  email            : "gregory@mikniche.com"
+  uri              : "mikniche.com"
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "mikniche"
   foursquare       :
   github           :
   google_plus      :
