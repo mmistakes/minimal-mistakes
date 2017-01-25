@@ -89,12 +89,12 @@ author:
   flickr           :
   facebook         : "mikniche"
   foursquare       :
-  github           : "mikniche"
-  google_plus      : "GregoryMikniche"
+  github           : #"mikniche"
+  google_plus      : #"GregoryMikniche"
   keybase          :
   instagram        : "gm1k"
   lastfm           :
-  linkedin         :
+  linkedin         : "mikniche"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
@@ -104,7 +104,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  youtube          : "http://www.youtube.com/c/GregoryMikniche" # "https://youtube.com/c/MichaelRoseDesign"
 
 
 # Reading Files
