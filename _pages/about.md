@@ -22,7 +22,7 @@ feature_row:
     excerpt: "Yongtian is a Sr. Security Consultant in Kaiser Permanente. He graduated from USTC (University of Science and Technology of China) and received a Master degree in Information Security. His career covers Internet security, application security and network security. He is an enthusiastic community volunteer actively participating in all kinds of community services."
   - image_path: /assets/images/members/Alisha-Zhao.jpg
     title: "Alisha Zhao"
-    excerpt: "<p>Alisha, a senior at Portland's Lincoln High, was named one of the nation's 10 top teen volunteers in 2016. She has created and led a large nonprofit, Kids First Project, devoted to helping homeless youth break the generational cycle of poverty.</p><p>For her work, she was appointed by Mayor Hales to be the first high school student to server as City of Portland’s Human Rights Commissioner..</p><p>She also serves in several youth advisory boards in national and international organizations.</p>"
+    excerpt: "<p>Alisha, a senior at Portland's Lincoln High, was named one of the nation's 10 top teen volunteers in 2016. She has created and led a large nonprofit, Kids First Project, devoted to helping homeless youth break the generational cycle of poverty.</p><p>For her work, she was appointed by Mayor Hales to be the first high school student to serve as City of Portland’s Human Rights Commissioner.</p><p>She also sits in several youth advisory boards in national and global organizations.</p>"
 ---
 ## Our Mission
 
