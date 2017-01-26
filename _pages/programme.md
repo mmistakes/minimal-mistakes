@@ -69,7 +69,7 @@ permalink: /programme/
 * *Future Trends, Round Table, Summary* [Recording](https://youtu.be/ADgTEFJ8fPA)
 * Lecturer: Fabio Bonsignorio
 * *The GummiArm Project* [Pdf](/slides/mstoelen_gummiarm_shail2016.pdf)
-* Lecturer: Martin F. Stoelen
+  * Lecturer: Martin F. Stoelen
 * Guest lecture by Florian Roehrbein (rescheduled):
   * Robotics and Embedded Systems group, Technical University of Munich
   * *"Tools for Virtual Neurorobotics"* [Pdf](/slides/2016-12-15-ShanghAI-Roehrbein.pdf)
