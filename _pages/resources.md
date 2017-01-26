@@ -23,7 +23,7 @@ permalink: /resources/
 - <a href="{{ site.url }}/resources/activities/healthy/">Healthy Life Style</a> ({{ site.activities_healthy | size }})
 - <a href="{{ site.url }}/resources/activities/sports/">Sports</a> ({{ site.activities_sports | size }})
 
-## Professionals
+<!-- ## Professionals
 社区网站保留移除任何条目的权利，无需给出理由。
 
 - <a href="{{ site.url }}/resources/professionals/accountant/">Accountant/CPA</a> ({{ site.professionals_accountant | size }})
@@ -50,4 +50,4 @@ permalink: /resources/
 - <a href="{{ site.url }}/resources/professionals/taxreturn/">Tax Returns Experts</a> ({{ site.professionals_taxreturn | size }})
 - <a href="{{ site.url }}/resources/professionals/tradeshow/">Trade Show</a> ({{ site.professionals_tradeshow | size }})
 - <a href="{{ site.url }}/resources/professionals/travelagent/">Travel Agent</a> ({{ site.professionals_travelagent | size }})
-- <a href="{{ site.url }}/resources/professionals/tutor/">Tutor</a> ({{ site.professionals_tutor | size }})
+- <a href="{{ site.url }}/resources/professionals/tutor/">Tutor</a> ({{ site.professionals_tutor | size }}) -->
