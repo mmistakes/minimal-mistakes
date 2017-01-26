@@ -68,7 +68,7 @@ permalink: /programme/
 * 2016-12-15 09:30 to 11:00 CET
 * *Future Trends, Round Table, Summary* [Recording](https://youtu.be/ADgTEFJ8fPA)
 * Lecturer: Fabio Bonsignorio
-* *The GummiArm Project* [Pdf](/slides/mstoelen_gummiarm_shail2016.pdf)
+* *"The GummiArm Project"* [Pdf](/slides/mstoelen_gummiarm_shail2016.pdf)
   * Lecturer: Martin F. Stoelen
 * Guest lecture by Florian Roehrbein (rescheduled):
   * Robotics and Embedded Systems group, Technical University of Munich
