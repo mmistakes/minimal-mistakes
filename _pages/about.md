@@ -20,9 +20,9 @@ feature_row:
   - image_path: /assets/images/members/Zhang-Yongtian.jpg
     title: "Yongtian Zhang"
     excerpt: "Yongtian is a Sr. Security Consultant in Kaiser Permanente. He graduated from USTC (University of Science and Technology of China) and received a Master degree in Information Security. His career covers Internet security, application security and network security. He is an enthusiastic community volunteer actively participating in all kinds of community services."
-  - image_path: /assets/images/members/Zhao-XiBei.jpg
-    title: "Hongcheng Zhao"
-    excerpt: "<p>Hongcheng attended Peking University in China, and came to the States as a Visiting Scholar at Harvard University in 1989.</p><p> He has been working in the healthcare industry for more than twenty years. He is the CIO in a physician association that serves half of the physician population in Oregon.</p><p>He and his wife chose Portland to raise their family. They have three children who are all very passionate about community services and social justice.</p>"
+  - image_path: /assets/images/members/Alisha-Zhao.jpg
+    title: "Alisha Zhao"
+    excerpt: "<p>Alisha, a senior at Portland's Lincoln High, was named one of the nation's 10 top teen volunteers in 2016. She has created and led a large nonprofit, Kids First Project, devoted to helping homeless youth break the generational cycle of poverty.</p><p>For her work, she was appointed by Mayor Hales to be the first high school student to server as City of Portland’s Human Rights Commissioner..</p><p>She also serves in several youth advisory boards in national and international organizations.</p>"
 ---
 ## Our Mission
 
