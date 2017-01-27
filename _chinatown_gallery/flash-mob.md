@@ -1,5 +1,5 @@
 ---
-title: "Portland Chinatown Saturday Performance"
+title: "Portland Chinatown Flash Mob (12.21.2016)"
 main_performance:
   - url: /assets/images/chinatown/DSC00326.jpg
     image_path: /assets/images/chinatown/DSC00326.jpg
