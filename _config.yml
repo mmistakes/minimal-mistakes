@@ -235,6 +235,9 @@ collections:
   chinatown_gallery:
     output: true
     permalink: /chinatown/:path/
+  chinatown_sayno:
+    output: true
+    permalink: /chinatown/sayno/:path/
   communities_clubs:
     output: true
     permalink: /resources/:collection/:path/
@@ -377,6 +380,13 @@ defaults:
   - scope:
       path: ""
       type: chinatown_gallery
+    values:
+      layout: single
+      author_profile: false
+  # chinatown_sayno
+  - scope:
+      path: ""
+      type: chinatown_sayno
     values:
       layout: single
       author_profile: false
