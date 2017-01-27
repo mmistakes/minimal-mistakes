@@ -21,6 +21,6 @@ main_performance:
     image_path: /assets/images/chinatown/mmexport1464676386881.jpg
   - url: /assets/images/chinatown/Oka-3.jpg
     image_path: /assets/images/chinatown/Oka-3.jpg
-
+---
 
 {% include gallery id="main_performance" %}
