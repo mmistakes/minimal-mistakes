@@ -1,5 +1,5 @@
 ---
-title: "Portland Chinatown Mid-Autumn Festival Performance (09.10.2016)"
+title: "Chinatown Mid-Autumn Festival Performance (09.10.2016)"
 main_performance:
   - url: /assets/images/chinatown/09102016/poster09102016.jpg
     image_path: /assets/images/chinatown/09102016/poster09102016.jpg  

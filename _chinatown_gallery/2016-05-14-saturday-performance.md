@@ -1,5 +1,5 @@
 ---
-title: "Portland Chinatown Saturday Performance (05.14.2016)"
+title: "Chinatown Saturday Performance (05.14.2016)"
 main_performance:
   - url: /assets/images/chinatown/DSC00326.jpg
     image_path: /assets/images/chinatown/DSC00326.jpg
