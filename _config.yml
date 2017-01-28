@@ -232,6 +232,9 @@ compress_html:
 
 # Collections
 collections:
+  about_history:
+    output: true
+    permalink: /about/history/:path/
   chinatown_gallery:
     output: true
     permalink: /chinatown/:path/
@@ -376,6 +379,13 @@ defaults:
     values:
       layout: single
       author_profile: false
+    # chinatown_gallery
+    - scope:
+        path: ""
+        type: about_history
+      values:
+        layout: single
+        author_profile: false
   # chinatown_gallery
   - scope:
       path: ""

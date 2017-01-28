@@ -32,6 +32,12 @@ To serve every member in Chinese community with a shared vision and resources.
 
 To build a connected and united Chinese community with respect to their socioeconomic status, political beliefs, religious and cultural tradition.
 
+## Our History
+
+{% for entry in site.about_history %}
+  <a href="{{ entry.url }}"><h3>{{ entry.title }}</h3></a>
+{% endfor %}
+
 ## Featured Community Members
 
 {% include feature_row %}
