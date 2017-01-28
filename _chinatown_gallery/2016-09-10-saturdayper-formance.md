@@ -11,6 +11,10 @@ main_performance:
     image_path: /assets/images/chinatown/09102016/IMG_5282.jpg
   - url: /assets/images/chinatown/09102016/IMG_5284.jpg
     image_path: /assets/images/chinatown/09102016/IMG_5284.jpg
+  - url: /assets/images/chinatown/09102016/IMG_5286.jpg
+    image_path: /assets/images/chinatown/09102016/IMG_5286.jpg
+  - url: /assets/images/chinatown/09102016/IMG_5293.jpg
+    image_path: /assets/images/chinatown/09102016/IMG_5293.jpg
   - url: /assets/images/chinatown/09102016/IMG_5304.jpg
     image_path: /assets/images/chinatown/09102016/IMG_5304.jpg
   - url: /assets/images/chinatown/09102016/IMG_5306.jpg
@@ -49,6 +53,10 @@ main_performance:
     image_path: /assets/images/chinatown/09102016/IMG_5780.jpg      
   - url: /assets/images/chinatown/09102016/mmexport1473602790510.jpg
     image_path: /assets/images/chinatown/09102016/mmexport1473602790510.jpg
+  - url: /assets/images/chinatown/09102016/mmexport1473602912800.jpg
+    image_path: /assets/images/chinatown/09102016/mmexport1473602912800.jpg
+  - url: /assets/images/chinatown/09102016/mmexport1473602942295.jpg
+    image_path: /assets/images/chinatown/09102016/mmexport1473602942295.jpg
 ---
 
 昨天在中国城举办的周六展演中秋专场取得圆满成功，为我们华人社区的广泛参与，无私的奉献，为精彩的演出，水乳交融的场景，感到无比自豪。要感谢参演的每一个团体和个人，每一位现场志愿者，来自全城各地的每一位观众，前来支持打气的所有侨社领袖们，当然，尤其感谢我们的筹备小组的每一位成员和她们的家属们。每一个人的参与是这次演出成功的关键，也是我们组织这次活动的一个重要目的。谢谢您们
