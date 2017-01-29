@@ -64,9 +64,3 @@ para que mais pessoas possam aprender e se desenvolver também. :D
 ### [Felipe de Morais](https://medium.com/@felipedemoraes)
 
 Desenvolvedor apaixonado por aprender e resolver problemas
-
-### [Carreira |
-ThoughtWorks](https://medium.com/carreira-thoughtworks?source=footer_card)
-
-Experiências, vivências e dicas sobre carreira e desenvolvimento profissional
-[www.thoughtworks.com](http://www.thoughtworks.com/)
