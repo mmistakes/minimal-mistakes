@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Allen\'s Blog'"
+title                    : "Allen\'s Blog"
 title_separator          : "-"
 name                     : "Allen Suner"
 description              : "This is my personal blog."
@@ -79,24 +79,24 @@ analytics:
 author:
   name             : "Allen Suner"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Software Developer, specializing in automation"
+  bio              : "Software Developer"
   location         : "Seattle, USA"
-  email            :
+  email            : "allensuner@gmail.com"
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "https://www.facebook.com/allen.suner.9"
   foursquare       :
-  github           :
+  github           : "https://github.com/allensuner"
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :
+  linkedin         : "https://www.linkedin.com/in/allen-suner/"
   pinterest        :
-  soundcloud       :
+  soundcloud       : "https://soundcloud.com/acidmuziq"
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
