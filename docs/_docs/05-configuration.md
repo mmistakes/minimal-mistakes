@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-modified: 2016-11-29T08:44:22-05:00
+modified: 2017-01-30T06:33:43-04:00
 ---
 
 Settings that affect your entire site can be changed in [Jekyll's configuration file](https://jekyllrb.com/docs/configuration/): `_config.yml`, found in the root of your project. If you don't have this file you'll need to copy or create one using the theme's [default `_config.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml) as a base.
@@ -538,6 +538,9 @@ timezone: America/New_York
 ## Plugins
 
 When hosting with GitHub Pages a small [set of gems](https://pages.github.com/versions/) have been whitelisted for use. The theme uses a few of them which can be found under `gems`. Additional settings and configurations are documented in the links below.
+
+**Note:** When using the **Rubygem version of Minimal Mistakes along with `jekyll-data` plugin**, the `gems:` list is no longer required here as it will be read-in directly from the theme-gem itself. The `gems` field may be safely deleted. Any other  plugins you may need to use should then be added to the `:jekyll_plugins` group in your `Gemfile` and depending on the domain, added to the `whitelist` field.
+{: .notice--info}
 
 | Plugin                             | Description |
 | ------                             | ----------- |

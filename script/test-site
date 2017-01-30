@@ -1,0 +1,72 @@
+#!/usr/bin/env bash
+
+set -e
+
+# cyan colored output
+function info {
+  echo -e "\e[0;36m$1\e[0m"
+}
+
+# green colored output
+function succ {
+  echo -e "\e[0;32m$1\e[0m"
+}
+
+# red colored output
+function errr {
+  echo -e "\e[0;31m$1\e[0m"
+}
+
+cd test
+
+echo ""
+info "Building test-site with options: --safe, --verbose, --show-data"
+info "---------------------------------------------------------------"
+
+if BUNDLE_GEMFILE=Gemfile bundle exec jekyll build --safe --verbose --show-data --trace
+then
+  echo ""
+  succ "Build Success."
+  echo ""
+  info "Proofing the built site."
+  info "------------------------"
+  echo ""
+
+  if egrep --color "Quick-Start Guide" ./_site/index.html
+  then
+    succ "navigation data successfully applied"
+  else
+    errr "applying navigation data errored"
+  fi
+  echo ""
+
+  if egrep --color "Posts récents" ./_site/index.html
+  then
+    succ "ui-text data successfully applied"
+  else
+    errr "applying ui-text data errored"
+  fi
+  echo ""
+
+  if egrep --color "Suivant" ./_site/index.html
+  then
+    succ "pagination successfully enabled"
+  else
+    errr "enabling pagination errored"
+  fi
+  echo ""
+
+  for entry in ./_site/*.xml
+  do
+    if [ -f "$entry" ];then
+      succ "$entry successfully generated"
+    fi
+  done
+
+  exit 0
+else
+  echo ""
+  errr "Error building site."
+  echo ""
+  exit 1
+fi
