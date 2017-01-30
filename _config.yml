@@ -12,7 +12,7 @@ title_separator          : "-"
 name                     : "Allen Suner"
 description              : "This is my personal blog."
 url                      : #"https://allensuner.github.io"
-baseurl                  : "/blog"
+baseurl                  : #"/blog"
 repository               : "allensuner/allensuner.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : true
