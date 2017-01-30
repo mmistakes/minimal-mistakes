@@ -117,6 +117,7 @@ exclude:
   - vendor
   - .asset-cache
   - .bundle
+  - .travis.yml
   - .jekyll-assets-cache
   - .sass-cache
   - assets/js/plugins
@@ -137,6 +138,7 @@ exclude:
   - tmp
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
+  - /script
 keep_files:
   - .git
   - .svn

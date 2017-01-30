@@ -1,0 +1,7 @@
+language: ruby
+cache: bundler
+rvm:
+  - 2.3.3
+install:
+  - bundle install --gemfile test/Gemfile
+script: script/test-site
