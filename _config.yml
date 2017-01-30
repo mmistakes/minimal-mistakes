@@ -77,19 +77,19 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
-  uri              :
+  name             : "Department of Informatics"
+  avatar           : "/assets/images/logo.png"
+  bio              : "Ionian University"
+  location         : "Corfu, Greece"
+  email            : "contact@di.ionio.gr"
+  uri              : "http://www.ionio.gr"
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : 
   google_plus      :
   keybase          :
   instagram        :
