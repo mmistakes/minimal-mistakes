@@ -247,7 +247,51 @@ collections:
     
 # Defaults
 defaults:
-  # _posts
+  # _faculty
+  - scope:
+      path: ""
+      type: faculty
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: # true
+      share: true
+      related: true
+  # _courses
+  - scope:
+      path: ""
+      type: courses
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: # true
+      share: true
+      related: true
+   # _labs
+  - scope:
+      path: ""
+      type: labs
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: # true
+      share: true
+      related: true
+   # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: # true
+      share: true
+      related: true
+ # _posts
   - scope:
       path: ""
       type: posts
