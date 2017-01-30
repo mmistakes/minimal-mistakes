@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "Department of Informatics"
 title_separator          : "-"
 name                     : "Your Name"
 description              : "An amazing website."
@@ -230,7 +230,21 @@ compress_html:
   ignore:
     envs: development
 
-
+# Collections
+collections:
+  faculty:
+    output: true
+    permalink: /faculty/:path/
+  courses:
+    output: true
+    permalink: /courses/:path/
+  labs:
+    output: true
+    permalink: /labs/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
+    
 # Defaults
 defaults:
   # _posts
