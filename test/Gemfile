@@ -1,6 +1,10 @@
 source "https://rubygems.org"
 
 # use local theme gem for testing
-gem "minimal-mistakes-jekyll", path: "../"
+gem "minimal-mistakes-jekyll", path: File.expand_path("../", File.dirname(__FILE__))
 
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
+
+group :jekyll_plugins do
+  gem "jekyll-data", git: "https://github.com/ashmaroli/jekyll-data.git"
+end
