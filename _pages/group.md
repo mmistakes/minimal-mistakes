@@ -5,6 +5,6 @@ permalink: /group/
 author_profile: true
 ---
 
-{% for post in site.group.docs %}
+{% for post in site.group %}
     {% include archive-single.html %}
 {% endfor %}
