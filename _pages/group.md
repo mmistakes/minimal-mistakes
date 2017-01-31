@@ -1,10 +1,10 @@
 ---
 layout: archive
-title: "Labs"
-permalink: /labs/
+title: "Groups"
+permalink: /group/
 author_profile: true
 ---
 
-{% for post in site.labs.docs %}
+{% for post in site.group.docs %}
     {% include archive-single.html %}
 {% endfor %}
