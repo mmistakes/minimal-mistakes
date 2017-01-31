@@ -238,7 +238,7 @@ collections:
   courses:
     output: true
     permalink: /courses/:path/
-  labs:
+  group:
     output: true
     permalink: /labs/:path/
   projects:
@@ -269,10 +269,10 @@ defaults:
       comments: # true
       share: true
       related: true
-   # _labs
+   # _group
   - scope:
       path: ""
-      type: labs
+      type: group
     values:
       layout: single
       author_profile: false
