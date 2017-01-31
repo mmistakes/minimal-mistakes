@@ -1,4 +1,6 @@
 ---
+lang: en
+ref: index
 layout: archive
 author_profile: true
 ---
@@ -13,7 +15,8 @@ author_profile: true
       {% capture written_label %}{{ label }}{% endcapture %}
     {% endif %}
   {% endunless %}
-  {% for post in collection.docs %}
+  {% assign posts=collection.docs | where:"lang", page.lang %}
+  {% for post in posts %}
     {% unless collection.output == false or collection.label == "posts" %}
       {% include archive-single.html %}
     {% endunless %}
