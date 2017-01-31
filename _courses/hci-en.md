@@ -9,7 +9,7 @@ hours: 4
 extra: 2L
 ects: 6
 instructors: "Chorianopoulos K."
-description: "User needs, human-centered design, and interaction design. Design and development of interactive prototypes. Methods and techniques for user evaluation."
+excerpt: "User needs, human-centered design, and interaction design. Design and development of interactive prototypes. Methods and techniques for user evaluation."
 bibliography: 
   - “Επικοινωνία ανθρώπου – υπολογιστή, 3ή Έκδοση, Dix Alan J., Finlay Janet E., Abowd Gregory D., Beale Russell, Εκδόσεις Α. Γκιούρδα, ISBN 960-512-503-X, 2007"
   - "Σχεδίαση διεπαφής χρήστη: Στρατηγικές για αποτελεσματική επικοινωνία ανθρώπου-υπολογιστή, ISBN: 9789604182565, Συγγραφέας: Ben Shneiderman, Catherine Plaisant, Εκδότης: Τζιόλα"
