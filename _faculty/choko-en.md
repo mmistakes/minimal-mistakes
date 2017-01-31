@@ -1,9 +1,9 @@
 ---
 lang: en
 ref: choko
-name: "Konstantinos Chorianopoulos"
+title: "Konstantinos Chorianopoulos"
+excerpt: "Software Technologies"
 rank: "Assistant Professor"
-topic: "Software Technologies"
 education:
   - "Diploma in Electronic and Computer Engineering, Technical University of Crete"
   - "MSc. Marketing and Communication, Athens University of Economics and Business"
