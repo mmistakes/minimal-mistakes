@@ -5,8 +5,6 @@ permalink: /courses/
 author_profile: true
 ---
 
-{% capture label %}{{ site.courses.label }}{% endcapture %}
-<h2 id="{{ label | slugify }}" class="archive__subtitle">{{ label }}</h2>
-{% for post in site.courses.docs %}
+{% for post in site.courses %}
     {% include archive-single.html %}
 {% endfor %}
