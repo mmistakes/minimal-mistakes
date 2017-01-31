@@ -4,8 +4,8 @@ main:
     url: /faculty/
   - title: "Courses"
     url: /courses/
-  - title: "Labs"
-    url: /labs/
+  - title: "Groups"
+    url: /group/
   - title: "Projects"
     url: /projects/
   # - title: "Sitemap"
