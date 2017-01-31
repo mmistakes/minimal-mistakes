@@ -18,3 +18,11 @@ contact:
   email: "choko@ionio.gr"
   web: "http://www.epidro.me"
 ---
+
+<ul>
+{% assign posts=site.faculty | where:"ref", page.ref | sort: 'lang' %}
+{% for post in posts %}
+  <li>
+    <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a>
+  </li>
+{% endfor %}
