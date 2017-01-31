@@ -2,7 +2,7 @@
 layout: archive
 title: "Faculty"
 permalink: /faculty/
-author_profile: false
+author_profile: true
 ---
 
 {% for post in site.faculty.docs %}
