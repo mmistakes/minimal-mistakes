@@ -18,7 +18,7 @@ sidebar:
 
 The ICIJ's Offshore Leaks Database shows <a href="https://offshoreleaks.icij.org/search?c=GBR&cat=3&d=&e=&j=&q=bristol&utf8=%E2%9C%93">a few dozen addresses with a Bristol postcode</a>. Together with Alec Saelens and Sid Ryan, we looked at what the connection was between Bristol and offshore finance.
 
-We focused on 31 Arden Close because it when we put its address into Companies House, we found <a href="https://beta.companieshouse.gov.uk/search?q=BS32+8AX">hundreds of companies</a>. We realised this was the registered office for a local and family-run incorporation company: Ordered Management Ltd. This company was only in the ICIJ database because of one man: Frank LeMarec. It was this connection we looked to explore.
+We focused on 31 Arden Close because when we put its address into Companies House, we found <a href="https://beta.companieshouse.gov.uk/search?q=BS32+8AX">hundreds of companies</a>. We found this was the registered office for a local and family-run incorporation company: Ordered Management Ltd. However, this company was only in the ICIJ database because of one man: Frank LeMarec. It was this connection we looked to explore.
 
 Frank Le Marec, it turned out, also registered companies for people, and was connected to websites offering companies in tax havens.
 
