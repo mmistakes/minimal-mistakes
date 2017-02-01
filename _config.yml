@@ -46,7 +46,6 @@ staticman:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
   path                   : # blank (default) uses feed.xml
-theme: minimal-mistakes-jekyll
 
 # SEO Related
 google_site_verification :
@@ -78,11 +77,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Jeff Nelson"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  bio              : "Solving policy issues with data."
+  location         : "Providence, RI"
+  email            : "jeff@jeffonelson.com"
   uri              :
   bitbucket        :
   codepen          :
@@ -147,6 +146,7 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Conversion
 markdown: kramdown
+theme: minimal-mistakes-jekyll
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
