@@ -93,10 +93,10 @@ google_ad_slot           :
 # Site Author
 author:
   name             : "Lucas Batt"
-  avatar           : "lbtrain.jpg"
+  avatar           : "lb_profile.jpg"
   bio              : "Data Journalist"
   location         : "Bristol & London"
-  email            :
+  email            : "lucas@lbatt.com"
   uri              :
   bitbucket        :
   codepen          :
@@ -112,7 +112,7 @@ author:
   linkedin         :
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    : 
   steam            :
   tumblr           :
   twitter          : l_ucasbatt

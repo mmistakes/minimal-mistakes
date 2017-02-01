@@ -1432,7 +1432,8 @@ div.highlighter-rouge, figure.highlight {
   border: 1px solid #f2f3f3;
   border-radius: 4px;
   background-color: #fafafa;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125)
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
+            font-size: 0.8em;
 }
 div.highlighter-rouge:before, figure.highlight:before {
   position: absolute;
@@ -5264,7 +5265,7 @@ font-size: 1.0em;
 font-weight: 400;
 text-shadow: -1px 1px 0px #FFF;
 padding: 30px 10px 0 0px;
-margin-top: 240px;
+margin-top: 180px;
 white-space: nowrap;
 overflow: hidden;
 text-overflow: ellipsis;
