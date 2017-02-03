@@ -7,6 +7,7 @@ permalink: /group/
 author_profile: true
 ---
 
-{% for post in site.group %}
+{% assign posts=site.group | where:"lang", page.lang %}
+{% for post in posts %}
     {% include archive-single.html %}
 {% endfor %}
