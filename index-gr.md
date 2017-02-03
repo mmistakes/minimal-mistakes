@@ -9,8 +9,8 @@ author_profile: true
 
 {% for collection in site.collections %}
   {% unless collection.output == false or collection.label == "posts" %}
-    {% capture label %}{{ collection.label }}{% endcapture %}
-    {% if label != written_label and page.lang == 'en' %}
+    {% capture label %}{{ collection.labelgr }}{% endcapture %}
+    {% if label != written_label and page.lang == 'gr' %}
       <h2 id="{{ label | slugify }}" class="archive__subtitle">{{ label }}</h2>
       {% capture written_label %}{{ label }}{% endcapture %}
     {% endif %}
