@@ -235,15 +235,19 @@ collections:
   faculty:
     output: true
     permalink: /faculty/:path/
+    labelgr: 'Προσωπικό'
   courses:
     output: true
     permalink: /courses/:path/
+    labelgr: 'Μαθήματα'
   group:
     output: true
     permalink: /labs/:path/
+    labelgr: 'Εργαστήρια'
   projects:
     output: true
     permalink: /projects/:path/
+    labelgr: 'Προγράμματα'
     
 # Defaults
 defaults:
