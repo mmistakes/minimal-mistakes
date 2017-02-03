@@ -14,7 +14,7 @@ custom_js: profilestats.js
          <li class="animated" data-provide="circular" data-fill-color="#0099CC" data-percent="true" data-initial-value="63" data-max-value="100" data-label="Copywriting" style="width: 100px; height: 100px;"></li>  
 
          <li class="animated" data-provide="circular" data-fill-color="#0099CC" data-percent="true" data-initial-value="66" data-max-value="100" data-label="Research" data-title="" data-dates="" style="width: 100px; height: 100px;"></li>    
-           These numbers are made up, but sort of indicitive.
+         <div id="indicitive_div"> These numbers are made up, but sort of indicitive.</div>
   </ul>
   
    <h1 class="stats">Tools</h1>

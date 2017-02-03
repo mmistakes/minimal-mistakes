@@ -5164,7 +5164,7 @@ img.mfp-img {
     padding: .3em 0 2em;
     float: right;
     width: 60%;
-    left: 200px;
+    left: 0px;
     bottom: 55px;
     position: relative;
 }
@@ -5174,7 +5174,6 @@ img.mfp-img {
     padding: .3em 0 2em;
     float: right;
     width: 46%;
-    left: 0px;
     bottom: 0px;
     position: relative;
 }
@@ -5272,6 +5271,7 @@ text-overflow: ellipsis;
 z-index: 99999;
 display: block;
 text-shadow: -1px 1px 0px #fff;
+    margin-bottom: 2.3em;
 }
 
 span.text-dates{
@@ -5400,7 +5400,6 @@ right connector from last child*/
 
 .about-intro {
     width: 40%;
-    position: absolute;
 }
 
 @media (max-width: 1024px) {
@@ -5408,10 +5407,6 @@ right connector from last child*/
 top: 400px;
 }}
 
-@media (max-width: 1024px) {
-.container {
-left: 0px;
-}}
 
 @media (max-width: 900px) {
 .tree, .bottom-padding {
