@@ -7,6 +7,7 @@ permalink: /courses/
 author_profile: true
 ---
 
-{% for post in site.courses %}
+{% assign posts=site.courses | where:"lang", page.lang %}
+{% for post in posts %}
     {% include archive-single.html %}
 {% endfor %}
