@@ -1,0 +1,12 @@
+---
+layout: archive
+---
+
+{% for tag in site.tags %}
+    <h2 id="{{ tag | first | downcase }}" class="archive__subtitle">{{ tag | first }}</h2>        
+    {% for posts in tag %}
+      {% for post in posts %}
+          {% include archive-single.html %}
+      {% endfor %}
+    {% endfor %}
+{% endfor %}
