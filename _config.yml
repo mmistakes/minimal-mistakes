@@ -45,7 +45,9 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  path                   : # blank (default) uses feed.xml
+  path                   : /index.xml # blank (default) uses feed.xml
+feed:
+  path: index.xml
 
 # SEO Related
 google_site_verification :
@@ -78,7 +80,7 @@ analytics:
 # Site Author
 author:
   name             : "Alex Sarafian"
-  avatar           : "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/sarafian-alex.jpg"
   bio              : "Software engineer"
   location         : "Belgium"
   email            :
@@ -171,7 +173,7 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+# permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: Europe/Brussels

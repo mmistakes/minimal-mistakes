@@ -2,11 +2,10 @@
 main:
   - title: "Quick-Start Guide"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Welcome"
+    url: /_pages/welcome/
+  - title: "About me"
+    url: /_pages/who-am-i/
+  - title: "SDL knowledge Center"
+    url: /categories/sdl-knowledge-center/
+  
