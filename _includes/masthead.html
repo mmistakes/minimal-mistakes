@@ -4,7 +4,7 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ '/' | absolute_url }}">{{ site.title }}</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ site.baseurl }}/{{ site.index[page.lang] }}">{{ site.title[page.lang] }}</a></li>
           {% assign pages=site.pages | where:"lang", page.lang %}
           {% for my_page in pages %}
             {% if my_page.title %}
