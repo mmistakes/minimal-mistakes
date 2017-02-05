@@ -7,7 +7,7 @@ main:
   #- title: "Courses"
   #  url: /courses/
   #- title: "Groups"
-  #  url: /group/
+  #  url: /groups/
   #- title: "Projects"
   #  url: /projects/
   # - title: "Sitemap"
@@ -32,7 +32,7 @@ menu:
  - title: "ΕΡΓΑΣΤΗΡΙΑ"
    children:
     - title: "hilab"
-      url: "/gr/group/hi/"
+      url: "/gr/groups/hi/"
     - title: ""
       url: ""
     - title: ""
@@ -65,7 +65,7 @@ menu-en:
  - title: "LABS"
    children:
     - title: "hilab"
-      url: "/en/group/hi/"
+      url: "/en/groups/hi/"
     - title: ""
       url: ""
     - title: ""
