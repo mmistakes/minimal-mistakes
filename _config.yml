@@ -245,7 +245,6 @@ collections:
   courses-en:
     output: true
     permalink: /en/courses/:path/
-    labelgr: 'Μαθήματα'
   group:
     output: true
     permalink: /labs/:path/
