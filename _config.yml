@@ -269,6 +269,8 @@ defaults:
       path: ""
       type: courses
     values:
+      sidebar:
+       nav: menu
       layout: single
       author_profile: false
       read_time: false
