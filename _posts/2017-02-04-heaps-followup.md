@@ -118,3 +118,5 @@ The following (and last) figure displays the curves for the stemmed versions alo
 This, along the previous post linked at the start of this one, concludes this short voyage inside the Heaps's law for different languages. Lots of other things could be done, lemmatising properly, taking better (unbiased and larger) corpora, considering different sources. And finally doing a better job in fitting the logarithm lines.
 
 The questions which to me arise from this small work though, and are very interesting, would be *the differences in Heaps' behaviour of different languages is determined by which interplay between grammatical and lexical richness?* and also *would a Heaps' analysis be able to shed light on this question anyway or is it still not enough?*. We'll definitely need more and deeper investigations to try to answer.
+
+All code used here can be found in [this Jupyter notebook](http://nbviewer.jupyter.org/github/martinapugliese/ds-playground/blob/master/data-works/text-corpora/Heaps%27s%20laws%20different%20languages.ipynb).
