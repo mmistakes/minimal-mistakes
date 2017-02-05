@@ -15,7 +15,7 @@ main:
 
 # sidebar
 menu:
- - title: "Προσωπικό"
+- title: "Προσωπικό"
    children:
     - title: "ΔΕΠ"
       url: "/faculty-gr/"
