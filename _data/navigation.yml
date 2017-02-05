@@ -13,33 +13,33 @@
 
 # sidebar
 menu:
-  -title: "Προσωπικό"
-   children:
+  - title: "Προσωπικό"
+    children:
     - title: "ΔΕΠ"
       url: "/faculty-gr/"
     - title: "Διοικητικό"
       url: "/admin-gr/"
     - title: "Βοηθητικό"
       url: "/adjunct-gr/"
-   -title: "Σπουδές"
-    children:
+   - title: "Σπουδές"
+     children:
      - title: "Προπτυχιακό"
        url: "/courses-gr/"
      - title: "Μεταπτυχιακό"
        url: ""
-   -title: "Εργαστήρια"
-    children:
-    - title: "hilab"
-      url: "/hilab-gr/"
-    - title: ""
-      url: ""
-    - title: ""
-      url: ""
-   -title: "Προγράμματα"
+   - title: "Εργαστήρια"
      children:
-    - title: "cult"
-      url: "/cult-gr/"
-    - title: ""
-      url: ""
-    - title: ""
-      url: ""
+     - title: "hilab"
+       url: "/hilab-gr/"
+     - title: ""
+       url: ""
+     - title: ""
+       url: ""
+   - title: "Προγράμματα"
+     children:
+     - title: "cult"
+       url: "/cult-gr/"
+     - title: ""
+       url: ""
+     - title: ""
+       url: ""
