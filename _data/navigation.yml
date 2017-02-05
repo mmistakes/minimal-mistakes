@@ -1,5 +1,7 @@
 # main links
-#main:
+main:
+  -title: ""
+   url: ""
   #- title: "Faculty"
   #  url: /faculty/
   #- title: "Courses"
