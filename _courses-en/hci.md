@@ -1,6 +1,4 @@
 ---
-lang: en
-ref: hci
 title: "Human-Computer Interaction"
 code: 
 semester: 3
