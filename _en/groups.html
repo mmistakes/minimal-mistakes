@@ -1,10 +1,10 @@
 ---
-ref: group
+ref: groups
 layout: archive
 title: "Groups"
 ---
 
-{% assign posts=site.group | where:"lang", page.lang %}
+{% assign posts=site.groups | where:"lang", page.lang %}
 {% for post in posts %}
     {% include archive-single.html %}
 {% endfor %}
