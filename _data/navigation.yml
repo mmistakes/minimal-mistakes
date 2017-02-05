@@ -38,7 +38,13 @@ menu:
     - title: ""
       url: ""
  - title: "ΠΡΟΓΡΑΜΜΑΤΑ"
-
+   children:
+    - title: "cult"
+      url: "/projects/cult/"
+    - title: ""
+      url: ""
+    - title: ""
+      url: ""
 
 # sidebar en
 menu-en:
@@ -64,7 +70,7 @@ menu-en:
       url: ""
     - title: ""
       url: ""
- - title: "ΠΡΟΓΡΑΜΜΑΤΑ"
+ - title: "PROJECTS"
    children:
     - title: "cult"
       url: "/en/projects/cult/"
