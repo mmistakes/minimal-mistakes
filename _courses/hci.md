@@ -1,8 +1,5 @@
 ---
-lang: gr
 ref: hci
-sidebar:
- nav: menu
 title: "Επικοινωνία Ανθρώπου-Υπολογιστή"
 code: 
 semester: 3
