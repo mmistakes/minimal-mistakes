@@ -242,6 +242,10 @@ collections:
     output: true
     permalink: /courses/:path/
     labelgr: 'Μαθήματα'
+  courses-en:
+    output: true
+    permalink: /en/courses/:path/
+    labelgr: 'Μαθήματα'
   group:
     output: true
     permalink: /labs/:path/
@@ -269,8 +273,23 @@ defaults:
       path: ""
       type: courses
     values:
+      lang: gr
       sidebar:
        nav: menu
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: # true
+      share: false
+      related: false
+  # _courses-en
+  - scope:
+      path: ""
+      type: courses-en
+    values:
+      lang: en
+      sidebar:
+       nav: menu-en
       layout: single
       author_profile: false
       read_time: false
