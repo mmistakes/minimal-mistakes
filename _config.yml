@@ -236,36 +236,71 @@ compress_html:
 collections:
   faculty:
     output: true
-    permalink: /faculty/:path/
+    permalink: /gr/faculty/:path/
     labelgr: 'Προσωπικό'
   faculty-en:
     output: true
     permalink: /en/faculty/:path/
   courses:
     output: true
-    permalink: /courses/:path/
+    permalink: /gr/courses/:path/
     labelgr: 'Μαθήματα'
   courses-en:
     output: true
     permalink: /en/courses/:path/
   groups:
     output: true
-    permalink: /groups/:path/
+    permalink: /gr/groups/:path/
     labelgr: 'Εργαστήρια'
   groups-en:
     output: true
     permalink: /en/groups/:path/
   projects:
     output: true
-    permalink: /projects/:path/
+    permalink: /gr/projects/:path/
     labelgr: 'Προγράμματα'
   projects-en:
     output: true
     permalink: /en/projects/:path/
     labelgr: 'Προγράμματα'
+  gr:
+    output: true
+    permalink: /gr/:path/
+    labelgr: 'Προσωπικό'
+  en:
+    output: true
+    permalink: /en/:path/
     
 # Defaults
 defaults:
+  # _gr
+  - scope:
+      path: ""
+      type: gr
+    values:
+      lang: gr
+      sidebar:
+       nav: menu
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: # true
+      share: false
+      related: false
+  # _en
+  - scope:
+      path: ""
+      type: en
+    values:
+      lang: en
+      sidebar:
+       nav: menu-en
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: # true
+      share: false
+      related: false
   # _faculty
   - scope:
       path: ""
