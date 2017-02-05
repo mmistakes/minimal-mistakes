@@ -253,6 +253,13 @@ collections:
     
 # Defaults
 defaults:
+  # _menu
+  - scope:
+      path: ""
+      type: menu
+    values:
+      sidebar:
+        nav: "menu"
   # _faculty
   - scope:
       path: ""
