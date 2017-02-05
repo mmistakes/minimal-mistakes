@@ -79,10 +79,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Department of Informatics"
+  name             : # "Department of Informatics"
   avatar           : "/assets/images/logo.png"
-  bio              : "Ionian University"
-  location         : "Corfu, Greece"
+  bio              : # "Ionian University"
+  location         : # "Corfu, Greece"
   email            : "contact@di.ionio.gr"
   uri              : "http://di.ionio.gr"
   bitbucket        :
@@ -91,7 +91,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : 
+  github           : "http://github.com/ioniodi"
   google_plus      :
   keybase          :
   instagram        :
