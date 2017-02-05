@@ -2,8 +2,8 @@
 title: "Book by Author"
 excerpt: &excerpt "Excerpt about the book."
 tweet: "Keep it short." 
-date: 2016-09-xx
-modified: 2016-09-xx
+date: 2017-02-xx
+modified: 2017-02-xx
 category: reads
 image: 
   teaser: cover_title_author.jpg
