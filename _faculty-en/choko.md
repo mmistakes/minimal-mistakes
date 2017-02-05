@@ -1,5 +1,4 @@
 ---
-lang: en
 ref: choko
 title: "Konstantinos Chorianopoulos"
 excerpt: "Software Technologies"
