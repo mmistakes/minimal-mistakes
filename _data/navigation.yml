@@ -32,7 +32,7 @@ menu:
  - title: "ΕΡΓΑΣΤΗΡΙΑ"
    children:
     - title: "hilab"
-      url: "/group/hilab-gr/"
+      url: "/group/hi-gr/"
     - title: ""
       url: ""
     - title: ""
