@@ -1,5 +1,4 @@
 ---
-lang: en
 ref: cult
 title: "Cultural Understanding through Learning and Technology (CULT)"
 excerpt: "Project CULT aims to create a cooperation platform between schools that reside in rural areas of Europe. For this purpose, we are employing both established and novel interaction and communication technologies. Moreover, we are working closely with schools and teachers, in order to leverage their ability to adopt and adapt technologies in ways that are suitable for their skills and needs."
