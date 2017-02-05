@@ -1,7 +1,7 @@
 # main links
 main:
-  - title: ""
-    url: ""
+ - title: ""
+   url: ""
   #- title: "Faculty"
   #  url: /faculty/
   #- title: "Courses"
@@ -15,8 +15,8 @@ main:
 
 # sidebar
 menu:
-  - title: "Προσωπικό"
-    children:
+ - title: "Προσωπικό"
+   children:
     - title: "ΔΕΠ"
       url: "/faculty-gr/"
     - title: "Διοικητικό"
