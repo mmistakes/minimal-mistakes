@@ -1,12 +1,45 @@
 # main links
 main:
-  - title: "Faculty"
-    url: /faculty/
-  - title: "Courses"
-    url: /courses/
-  - title: "Groups"
-    url: /group/
-  - title: "Projects"
-    url: /projects/
+  #- title: "Faculty"
+  #  url: /faculty/
+  #- title: "Courses"
+  #  url: /courses/
+  #- title: "Groups"
+  #  url: /group/
+  #- title: "Projects"
+  #  url: /projects/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+# sidebar
+menu:
+  -title: "Προσωπικό"
+   children:
+    - title: "ΔΕΠ"
+      url: "/faculty-gr/"
+    - title: "Διοικητικό"
+      url: "/admin-gr/"
+    - title: "Βοηθητικό"
+      url: "/adjunct-gr/"
+   -title: "Σπουδές"
+    children:
+     - title: "Προπτυχιακό"
+       url: "/courses-gr/"
+     - title: "Μεταπτυχιακό"
+       url: ""
+   -title: "Εργαστήρια"
+    children:
+    - title: "hilab"
+      url: "/hilab-gr/"
+    - title: ""
+      url: ""
+    - title: ""
+      url: ""
+   -title: "Προγράμματα"
+     children:
+    - title: "cult"
+      url: "/cult-gr/"
+    - title: ""
+      url: ""
+    - title: ""
+      url: ""
