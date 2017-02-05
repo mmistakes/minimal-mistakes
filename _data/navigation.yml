@@ -15,7 +15,7 @@ main:
 
 # sidebar
 menu:
- - title: "Προσωπικό"
+ - title: "ΠΡΟΣΩΠΙΚΟ"
    children:
     - title: "ΔΕΠ"
       url: "/faculty-gr/"
@@ -23,24 +23,24 @@ menu:
       url: "/admin-gr/"
     - title: "Βοηθητικό"
       url: "/adjunct-gr/"
- - title: "Σπουδές"
+ - title: "ΣΠΟΥΔΕΣ"
    children:
     - title: "Προπτυχιακό"
       url: "/courses-gr/"
     - title: "Μεταπτυχιακό"
       url: ""
- - title: "Εργαστήρια"
+ - title: "ΕΡΓΑΣΤΗΡΙΑ"
    children:
     - title: "hilab"
-      url: "/hilab-gr/"
+      url: "/group/hilab-gr/"
     - title: ""
       url: ""
     - title: ""
       url: ""
- - title: "Προγράμματα"
+ - title: "ΠΡΟΓΡΑΜΜΑΤΑ"
    children:
     - title: "cult"
-      url: "/cult-gr/"
+      url: "/projects/cult-gr/"
     - title: ""
       url: ""
     - title: ""
