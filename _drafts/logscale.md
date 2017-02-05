@@ -39,3 +39,5 @@ plt.loglog(x, y2)
 plt.show()
 ```
 
+Do histogram of a power law distribution in linear scale, log scale, and with logarithmic binning. And with cumulative
+

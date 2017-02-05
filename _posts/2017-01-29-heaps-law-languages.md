@@ -1,5 +1,5 @@
 ---
-title: "Vocabulary growth in different languages"
+title: "The growth of vocabulary in different languages"
 tags:
   - linguistics
   - data
