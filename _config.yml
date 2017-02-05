@@ -262,8 +262,8 @@ defaults:
       author_profile: false
       read_time: false
       comments: # true
-      share: true
-      related: true
+      share: false
+      related: false
   # _courses
   - scope:
       path: ""
@@ -273,8 +273,8 @@ defaults:
       author_profile: false
       read_time: false
       comments: # true
-      share: true
-      related: true
+      share: false
+      related: false
    # _group
   - scope:
       path: ""
@@ -284,8 +284,8 @@ defaults:
       author_profile: false
       read_time: false
       comments: # true
-      share: true
-      related: true
+      share: false
+      related: false
    # _projects
   - scope:
       path: ""
@@ -295,15 +295,15 @@ defaults:
       author_profile: false
       read_time: false
       comments: # true
-      share: true
-      related: true
+      share: false
+      related: false
  # _posts
   - scope:
       path: ""
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: # true
       share: true
