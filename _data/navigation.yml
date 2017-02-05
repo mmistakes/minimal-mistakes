@@ -13,7 +13,7 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
 
-# sidebar
+# sidebar gr
 menu:
  - title: "ΠΡΟΣΩΠΙΚΟ"
    children:
@@ -38,9 +38,36 @@ menu:
     - title: ""
       url: ""
  - title: "ΠΡΟΓΡΑΜΜΑΤΑ"
+
+
+# sidebar en
+menu-en:
+ - title: "STAFF"
+   children:
+    - title: "Facult"
+      url: "/en/faculty/"
+    - title: "Administrative"
+      url: "/en/admin/"
+    - title: "Technical"
+      url: "/en/technical/"
+ - title: "STUDIES"
+   children:
+    - title: "Undergraduate"
+      url: "/en/courses/"
+    - title: "Postgraduate"
+      url: ""
+ - title: "LABS"
+   children:
+    - title: "hilab"
+      url: "/en/group/hi/"
+    - title: ""
+      url: ""
+    - title: ""
+      url: ""
+ - title: "ΠΡΟΓΡΑΜΜΑΤΑ"
    children:
     - title: "cult"
-      url: "/projects/cult-gr/"
+      url: "/en/projects/cult/"
     - title: ""
       url: ""
     - title: ""
