@@ -1,0 +1,10 @@
+---
+ref: groups
+layout: archive
+title: "Εργαστήρια"
+---
+
+{% assign posts=site.groups | where:"lang", page.lang %}
+{% for post in posts %}
+    {% include archive-single.html %}
+{% endfor %}
