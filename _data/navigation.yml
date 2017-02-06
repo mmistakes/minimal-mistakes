@@ -1,11 +1,15 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "Welcome"
-    url: /_pages/welcome/
-  - title: "About me"
-    url: /_pages/who-am-i/
-  - title: "SDL knowledge Center"
-    url: /categories/sdl-knowledge-center/
+  - title: "Home"
+    url: /
+  - title: "Recent posts"
+    url: /recent/
+  - title: "Tags"
+    url: /tags/
+  - title: "Catgories"
+    url: /categories/
+  - title: "PowerShell"
+    url: /tags/#powershell
+  - title: "SDL Knowledge Center"
+    url: /categories/#knowledge-center/
   

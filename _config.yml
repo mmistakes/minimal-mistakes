@@ -45,7 +45,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  path                   : /index.xml # blank (default) uses feed.xml
+  path                   : # blank (default) uses feed.xml
 feed:
   path: index.xml
 
@@ -113,6 +113,15 @@ author:
 include:
   - .htaccess
   - _pages
+  - "_posts/**/*.gif"
+  - "/_posts/**/*.gif"
+  - "/_posts/*.png"
+  - "_posts/**/*.gif"
+  - "_posts/*.png"
+  - "**/*.gif"
+  - "**/*.png"
+#  - "_posts\**\*.gif"
+#  - "_posts\*.png"
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -175,7 +184,7 @@ sass:
 # Outputting
 # permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+paginate_path: /recent/page:num/
 timezone: Europe/Brussels
 
 
@@ -242,9 +251,12 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
+      header:
+        overlay_color: rgba(51, 51, 51, 1.0)
+        overlay_filter: rgba(51, 51, 51, 0.8)
   # _pages
   - scope:
       path: ""
