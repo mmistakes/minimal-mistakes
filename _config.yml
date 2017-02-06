@@ -7,20 +7,20 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
-title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+title                    : "Alex Sarafian"
+title_separator          : "|"
+name                     : "Alex Sarafian"
+description              : "Space focused on .NET, Powershell and the Windows ecosystem"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-# breadcrumbs            : false # true, false (default)
+repository               : "sarafian/minimal-mistakes-site"
+teaser                   : #"/assets/images/500x300.png"
+breadcrumbs              : false # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "sarafian"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -46,10 +46,12 @@ staticman:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
   path                   : # blank (default) uses feed.xml
+feed:
+  path: index.xml
 
 # SEO Related
 google_site_verification :
-bing_site_verification   :
+bing_site_verification   : "A489B7616656A1BA517295F592D54E01"
 alexa_site_verification  :
 yandex_site_verification :
 
@@ -70,37 +72,37 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "UA-77406491-1"
 
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
+  name             : "Alex Sarafian"
+  avatar           : "/assets/images/sarafian-alex.jpg"
+  bio              : "Software engineer"
+  location         : "Belgium"
   email            :
-  uri              :
+  uri              : "https://sarafian.github.io/"
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "Sarafian"
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :
+  linkedin         : "sarafian"
   pinterest        :
   soundcloud       :
-  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
+  stackoverflow    : "3851905/alex-sarafian"
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "alex_sarafian"
   vine             :
   weibo            :
   xing             :
@@ -111,6 +113,15 @@ author:
 include:
   - .htaccess
   - _pages
+  - "_posts/**/*.gif"
+  - "/_posts/**/*.gif"
+  - "/_posts/*.png"
+  - "_posts/**/*.gif"
+  - "_posts/*.png"
+  - "**/*.gif"
+  - "**/*.png"
+#  - "_posts\**\*.gif"
+#  - "_posts\*.png"
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -171,10 +182,10 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+# permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+paginate_path: /recent/page:num/
+timezone: Europe/Brussels
 
 
 # Plugins
@@ -222,7 +233,6 @@ tag_archive:
 #     category: /categories/:name/
 #     tag: /tags/:name/
 
-
 # HTML Compression
 # - http://jch.penibelst.de/
 compress_html:
@@ -241,6 +251,16 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
+      header:
+        overlay_color: rgba(51, 51, 51, 1.0)
+        overlay_filter: rgba(51, 51, 51, 0.8)
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true

@@ -1,0 +1,12 @@
+---
+layout: archive
+---
+
+{% for category in site.categories %}
+    <h2 id="{{ category | first | downcase }}" class="archive__subtitle">{{ category | first }}</h2>        
+    {% for posts in category %}
+      {% for post in posts %}
+          {% include archive-single.html %}
+      {% endfor %}
+    {% endfor %}
+{% endfor %}

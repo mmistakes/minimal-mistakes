@@ -1,12 +1,15 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Home"
+    url: /
+  - title: "Recent posts"
+    url: /recent/
+  - title: "Tags"
+    url: /tags/
+  - title: "Catgories"
+    url: /categories/
+  - title: "PowerShell"
+    url: /tags/#powershell
+  - title: "SDL Knowledge Center"
+    url: /categories/#knowledge-center/
+  
