@@ -6,10 +6,12 @@ main:
     url: /recent/
   - title: "Tags"
     url: /tags/
-  - title: "Catgories"
+  - title: "Categories"
     url: /categories/
   - title: "PowerShell"
     url: /tags/#powershell
+#  - title: "About me"
+#    url: /about-sarafian-alex/
   - title: "SDL Knowledge Center"
     url: /categories/#knowledge-center/
   
