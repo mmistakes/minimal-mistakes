@@ -1,5 +1,5 @@
 ---
-date: 2017-05-02 11:11:47
+date: 2017-02-0511:11:47
 title: Moving blog from Hugo to Jekyll
 excerpt: Blog is moving from Hugo to Jekyll
 header:
