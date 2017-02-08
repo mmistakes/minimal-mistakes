@@ -2,6 +2,7 @@
 date: 2017-02-05 11:11:47
 title: Moving blog from Hugo to Jekyll
 excerpt: Blog is moving from Hugo to Jekyll
+tags: Jekyll
 header:
   overlay_image: http://www.userx.co.za/assets/images/journal/jekyll-logo-820x418.png
 ---
