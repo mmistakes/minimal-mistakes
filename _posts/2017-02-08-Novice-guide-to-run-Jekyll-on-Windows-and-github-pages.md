@@ -131,7 +131,7 @@ If your intention is for github pages to automatically build your site then ther
 Typically the [jekyll-archives](https://github.com/jekyll/jekyll-archives) gem will generate the pages for tags, categories etc. 
 What you need to understand is that it is not compatible with building in GitHub pages and therefore it will not work. 
 I was not aware of such a limitation and after losing a lot of time trying to figure out the problem I though the theme's documentation was not good so I created this [Archive pages for your Jekyll tags and categories](https://github.com/mmistakes/minimal-mistakes/issues/811) issue. 
-[@mmistakes](https://github.com/mmistakes) was kind enough to explain the incompatibility and kind enough to suggest a solution. 
+[Michael Rose](https://github.com/mmistakes) was kind enough to explain the incompatibility and kind enough to suggest a solution. 
 
 The [dependency versions](https://pages.github.com/versions/) provides a full list of supported gems but you need to be aware of this to even search for it.
 
@@ -148,7 +148,7 @@ The pagination is implemented in the [home.html](https://github.com/Sarafian/sar
 I thought creating my `_pages/recent.md` while referencing the `home.html` layout would be enough. 
 But it wasn't and I was really stuck. 
 
-[@mmistakes](https://github.com/mmistakes) to the rescue again and his explanations led me to the following conclusion:
+[Michael Rose](https://github.com/mmistakes) to the rescue again and his explanations led me to the following conclusion:
 The `paginator` object can used only by a file named `index.html` including any of the layouts referencing by the `.html` file. 
 So to get the `/recent/` url to work I created a `\recent\index.html` file which simply referenced the `home` layout.
 
@@ -172,6 +172,6 @@ To give something up it has to do with two very cool features of [github](https:
 - Ability of github pages to build a jekyll project from the root or the `/docs` folder of the master branch.
 - In browser creation and editing of files of a github repository.
 
-Last but not least I want to thank [@mmistakes](https://github.com/mmistakes) and the people who have contributed for the excellent [Minimal Mistakes](https://mademistakes.com/work/minimal-mistakes-jekyll-theme/) theme. 
+Last but not least I want to thank [Michael Rose](https://github.com/mmistakes) and the people who have contributed for the excellent [Minimal Mistakes](https://mademistakes.com/work/minimal-mistakes-jekyll-theme/) theme. 
 He also helped me solve a couple of problems I had that led to the creation of this post. 
 From my side I'll contribute a couple of improvements on the doc for Jekyll novices like me.
