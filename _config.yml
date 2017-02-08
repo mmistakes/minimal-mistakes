@@ -282,7 +282,7 @@ defaults:
       sidebar:
        nav: menu
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: false
       comments: # true
       share: false
@@ -296,7 +296,7 @@ defaults:
       sidebar:
        nav: menu-en
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: false
       comments: # true
       share: false
@@ -310,7 +310,7 @@ defaults:
       sidebar:
        nav: menu
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: false
       comments: # true
       share: false
@@ -324,7 +324,7 @@ defaults:
       sidebar:
        nav: menu-en
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: false
       comments: # true
       share: false
@@ -338,7 +338,7 @@ defaults:
       sidebar:
        nav: menu
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: false
       comments: # true
       share: false
@@ -352,7 +352,7 @@ defaults:
       sidebar:
        nav: menu-en
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: false
       comments: # true
       share: false
@@ -366,7 +366,7 @@ defaults:
       sidebar:
        nav: menu-en
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: false
       comments: # true
       share: false
@@ -380,7 +380,7 @@ defaults:
       sidebar:
        nav: menu-en
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: false
       comments: # true
       share: false
@@ -394,7 +394,7 @@ defaults:
       sidebar:
        nav: menu
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: false
       comments: # true
       share: false
@@ -408,7 +408,7 @@ defaults:
       sidebar:
        nav: menu-en
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: false
       comments: # true
       share: false
@@ -419,7 +419,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: true
       comments: # true
       share: true
