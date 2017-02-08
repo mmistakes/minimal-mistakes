@@ -50,7 +50,7 @@ menu:
 menu-en:
  - title: "STAFF"
    children:
-    - title: "Facult"
+    - title: "Faculty"
       url: "/en/faculty/"
     - title: "Administrative"
       url: "/en/admin/"
