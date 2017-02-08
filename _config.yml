@@ -185,7 +185,7 @@ sass:
 # permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /recent/page:num/
-# timezone: Europe/Brussels
+timezone: Europe/Brussels
 
 
 # Plugins
