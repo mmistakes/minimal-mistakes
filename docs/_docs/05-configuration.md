@@ -527,6 +527,12 @@ You'll also need to include some Liquid and HTML to properly use the paginator, 
 **Please note:** [Jekyll's pagination](http://jekyllrb.com/docs/pagination/) may have unexpected results when used on pages other than the home page eg. `<site domain>/blog/index.html`.
 {: .notice--info}
 
+The paginator works only on files with name `index.html`. To show recent files from `/recent/` created a file `/recent/index.html` and set the `paginate_path` in the configuration like this:
+
+```yaml
+paginate_path: /recent/page:num/
+```
+
 ### Timezone
 
 This sets the timezone environment variable, which Ruby uses to handle time and date creation and manipulation. Any entry from the [IANA Time Zone Database](http://en.wikipedia.org/wiki/List_of_tz_database_time_zones) is valid. The default is the local time zone, as set by your operating system.
