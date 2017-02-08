@@ -18,7 +18,7 @@ teaser                   : #"/assets/images/500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
     shortname            : "sarafian"
   discourse:
