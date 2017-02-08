@@ -17,7 +17,7 @@ main:
 menu:
  - title: "ΠΡΟΣΩΠΙΚΟ"
    children:
-    - title: "ΔΕΠ"
+    - title: "Διδακτικό"
       url: "/gr/faculty/"
     - title: "Διοικητικό"
       url: "/gr/admin/"
@@ -30,6 +30,7 @@ menu:
     - title: "Μεταπτυχιακό"
       url: ""
  - title: "ΕΡΓΑΣΤΗΡΙΑ"
+   url: "/gr/groups/"
    children:
     - title: "hilab"
       url: "/gr/groups/hi/"
@@ -38,6 +39,7 @@ menu:
     - title: ""
       url: ""
  - title: "ΠΡΟΓΡΑΜΜΑΤΑ"
+   url: "/gr/projects/"
    children:
     - title: "cult"
       url: "/gr/projects/cult/"
@@ -63,6 +65,7 @@ menu-en:
     - title: "Postgraduate"
       url: ""
  - title: "LABS"
+   url: "/en/groups/"
    children:
     - title: "hilab"
       url: "/en/groups/hi/"
@@ -71,6 +74,7 @@ menu-en:
     - title: ""
       url: ""
  - title: "PROJECTS"
+   url: "/en/projects/"
    children:
     - title: "cult"
       url: "/en/projects/cult/"
