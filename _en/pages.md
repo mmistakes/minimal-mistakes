@@ -1,10 +1,5 @@
 ---
-lang: en
 ref: pages
-sidebar:
- nav: menu-en
-layout: archive
-author_profile: true
 ---
 
 {% capture written_label %}'None'{% endcapture %}
