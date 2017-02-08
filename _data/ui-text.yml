@@ -235,8 +235,8 @@ pt-BR:
   menu_label                 :
   toc_label                  : "Nesta página"
   ext_link_label             : "Link direto"
-  less_than                  : "meno que"
-  minute_read                : "minutos de leitura"
+  less_than                  : "menos que"
+  minute_read                : "minuto(s) de leitura"
   share_on_label             : "Compartilhe em"
   meta_label                 :
   tags_label                 : "Tags:"
@@ -244,8 +244,8 @@ pt-BR:
   date_label                 : "Atualizado em:"
   comments_label             : "Deixe um comentário"
   comments_title             :
-  more_label                 : "Aprenda Mais"
-  related_label              : "Você Talvez Goste Também"
+  more_label                 : "Aprenda mais"
+  related_label              : "Talvez você goste também"
   follow_label               : "Acompanhe em"
   feed_label                 : "Feed"
   powered_by                 : "Feito com"
