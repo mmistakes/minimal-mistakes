@@ -159,6 +159,27 @@ If you have the luxury of using Jekyll plugins the creation of category and tag 
 
 ![archive taxonomy layout example]({{ "/assets/images/mm-layout-archive-taxonomy.png" | absolute_url }})
 
+If you don't then you need to create the pages yourself. Create the `_pages/tag-archive.html` and `_pages/category-archive.html`. This is an example of a page for tags that responds to urls such as `/tags/#tips`:
+
+```text
+---
+layout: archive
+permalink: /tags/
+title: "Posts by Tags"
+author_profile: true
+---
+
+{% include group-by-array collection=site.posts field="tags" %}
+
+{% for tag in group_names %}
+  {% assign posts = group_items[forloop.index0] %}
+  <h2 id="{{ tag | slugify }}" class="archive__subtitle">{{ tag }}</h2>
+  {% for post in posts %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endfor %}
+```
+
 ### Home Page
 
 A derivative archive page layout to be used as a simple home page. It is built to show a paginated list of recent posts based off of the [pagination settings]({{ "/docs/configuration/#paginate" | absolute_url }}) in `_config.yml`.
