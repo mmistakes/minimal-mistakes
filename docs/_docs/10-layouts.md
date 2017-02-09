@@ -155,13 +155,20 @@ To produce something like this:
 
 ### Taxonomy Archive
 
-If you have the luxury of using Jekyll plugins the creation of category and tag archives is greatly simplified. Enable support for the [`jekyll-archives`](https://github.com/jekyll/jekyll-archives) plugin with a few `_config.yml` settings as noted in the [**Configuration**]({{ "/docs/configuration/#archive-settings" | absolute_url }}) section.
+If you have the luxury of using Jekyll plugins, the creation of category and tag archives is greatly simplified. Simply enable support for the [`jekyll-archives`](https://github.com/jekyll/jekyll-archives) plugin with a few `_config.yml` settings as noted in the [**Configuration**]({{ "/docs/configuration/#archive-settings" | absolute_url }}) section and you're good to go.
 
 ![archive taxonomy layout example]({{ "/assets/images/mm-layout-archive-taxonomy.png" | absolute_url }})
 
-If you don't then you need to create the pages yourself. Create the `_pages/tag-archive.html` and `_pages/category-archive.html`. This is an example of a page for tags that responds to urls such as `/tags/#tips`:
+If you're not using the `jekyll-archives` plugin then you need to create archive pages yourself. Sample taxonomy archives can be found by grabbing the HTML sources below and adding to your site.
 
-```text
+| Name                 | HTML Source |
+| -------------------- | --- |
+| [Categories Archive](https://mmistakes.github.io/minimal-mistakes/categories/) | [category-archive.html](https://github.com/mmistakes/minimal-mistakes/blob/master/docs/_pages/category-archive.html) |
+| [Tags Archive](https://mmistakes.github.io/minimal-mistakes/tags/) | [tag-archive.html](https://github.com/mmistakes/minimal-mistakes/blob/master/docs/_pages/tag-archive.html) |
+
+The **Tags Archive** page that responds to urls such as `/tags/#tips` looks something like this:
+
+```html
 ---
 layout: archive
 permalink: /tags/
