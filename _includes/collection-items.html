@@ -1,5 +1,5 @@
 
-{% assign mycollection = site.collections | where:'label',include.collection | first %}
+{% assign mycollection = site.collections | where:'label',include.collection %}
 
 {% for page in mycollection %}
     {% include archive-single.html %}
