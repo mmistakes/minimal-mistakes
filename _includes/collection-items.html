@@ -1,6 +1,6 @@
 
-{% assign mycollection = site.collections | where:'label',include.collection %}
+{% assign posts = site.collections | where:'label',include.collection %}
 
-{% for page in mycollection %}
+{% for post in posts %}
     {% include archive-single.html %}
 {% endfor %}
