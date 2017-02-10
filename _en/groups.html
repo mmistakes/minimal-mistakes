@@ -3,7 +3,7 @@ ref: groups
 title: "Groups"
 ---
 
-{% assign posts=site.groups | where:"lang", page.lang %}
+{% assign posts=site.groups-en | where:"lang", page.lang %}
 {% for post in posts %}
     {% include archive-single.html %}
 {% endfor %}
