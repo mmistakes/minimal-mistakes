@@ -1,9 +1,9 @@
 {{ include.collection }}
 
-{% assign posts = site.collections | where:'label',include.collection %}
+{% assign posts = site.collections | where:'label',include.collection | first %}
 
-{{ 'assignment: ' posts.label }}
+{{ posts.label }}
 
-{% for post in posts.docs %}
+{% for post in posts %}
     {% include archive-single.html %}
 {% endfor %}
