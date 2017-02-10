@@ -4,7 +4,7 @@
 
 {{ posts.label }}
 
-{% for post in posts %}
+{% for post in posts.docs %}
  {{ post.title }}
  {% include archive-single.html %}
 {% endfor %}
