@@ -3,7 +3,7 @@ ref: faculty
 title: "Προσωπικό"
 ---
 
-{% assign posts=site.faculty | where:"lang", page.lang %}
+{% assign posts=site.faculty %}
 {% for post in posts %}
     {% include archive-single.html %}
 {% endfor %}
