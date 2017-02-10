@@ -4,6 +4,7 @@ title: "Προσωπικό"
 ---
 
 {% assign posts=site.faculty %}
+{{ posts.label }}
 {% for post in posts %}
     {% include archive-single.html %}
 {% endfor %}
