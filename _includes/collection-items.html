@@ -1,8 +1,8 @@
-{{ include.collection }}
+{{ 'include: ' include.collection }}
 
 {% assign posts = site.collections | where:'label',include.collection %}
 
-{{ posts.label }}
+{{ 'assignment: ' posts.label }}
 
 {% for post in posts.docs %}
     {% include archive-single.html %}
