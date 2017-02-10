@@ -3,7 +3,4 @@ ref: faculty
 title: "Προσωπικό"
 ---
 
-{% assign posts=site.faculty %}
-{% for post in posts %}
-    {% include archive-single.html %}
-{% endfor %}
+{% include collection-items.html collection='faculty' %}
