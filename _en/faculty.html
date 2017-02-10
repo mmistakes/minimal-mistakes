@@ -2,8 +2,4 @@
 ref: faculty
 title: "Faculty"
 ---
-
-{% assign posts=site.faculty-en %}
-{% for post in posts %}
-    {% include archive-single.html %}
-{% endfor %}
+{% include collection-items.html collection='faculty-en' %}
