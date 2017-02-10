@@ -3,7 +3,7 @@ ref: projects
 title: "Projects"
 ---
 
-{% assign posts=site.projects | where:"lang", page.lang %}
+{% assign posts=site.projects-en | where:"lang", page.lang %}
 {% for post in posts %}
     {% include archive-single.html %}
 {% endfor %}
