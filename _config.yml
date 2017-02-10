@@ -237,36 +237,30 @@ collections:
   faculty:
     output: true
     permalink: /gr/faculty/:path/
-    labelgr: 'Προσωπικό'
   faculty-en:
     output: true
     permalink: /en/faculty/:path/
   courses:
     output: true
     permalink: /gr/courses/:path/
-    labelgr: 'Μαθήματα'
   courses-en:
     output: true
     permalink: /en/courses/:path/
   groups:
     output: true
     permalink: /gr/groups/:path/
-    labelgr: 'Εργαστήρια'
   groups-en:
     output: true
     permalink: /en/groups/:path/
   projects:
     output: true
     permalink: /gr/projects/:path/
-    labelgr: 'Προγράμματα'
   projects-en:
     output: true
     permalink: /en/projects/:path/
-    labelgr: 'Προγράμματα'
   gr:
     output: true
     permalink: /gr/:path/
-    labelgr: 'Προσωπικό'
   en:
     output: true
     permalink: /en/:path/
