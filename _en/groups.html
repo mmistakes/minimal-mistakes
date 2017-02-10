@@ -3,7 +3,4 @@ ref: groups
 title: "Groups"
 ---
 
-{% assign posts=site.groups-en | where:"lang", page.lang %}
-{% for post in posts %}
-    {% include archive-single.html %}
-{% endfor %}
+{% include collection-items.html collection='groups-en' %}
