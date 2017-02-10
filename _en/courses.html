@@ -3,7 +3,4 @@ ref: courses
 title: "Courses"
 ---
 
-{% assign posts=site.courses | where:"lang", page.lang %}
-{% for post in posts %}
-    {% include archive-single.html %}
-{% endfor %}
+{% include collection-items.html collection='courses' %}
