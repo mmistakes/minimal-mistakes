@@ -3,7 +3,7 @@ ref: faculty
 title: "Faculty"
 ---
 
-{% assign posts=site.faculty | where:"lang", page.lang %}
+{% assign posts=site.faculty-en | where:"lang", page.lang %}
 {% for post in posts %}
     {% include archive-single.html %}
 {% endfor %}
