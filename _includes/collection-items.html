@@ -1,6 +1,6 @@
 
 {% assign mycollection = site.collections | where:'label',include.collection | first %}
 
-{% for page in mycollection.docs %}
+{% for page in mycollection %}
     {% include archive-single.html %}
 {% endfor %}
