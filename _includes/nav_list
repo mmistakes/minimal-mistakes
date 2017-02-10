@@ -45,3 +45,5 @@
     {% endfor %}
   </ul>
 </nav>
+
+{% include language-menu.html %}
