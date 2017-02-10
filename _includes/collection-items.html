@@ -1,0 +1,6 @@
+
+{% assign mycollection = site.collections | where:'label',include.collection | first %}
+
+{% for page in mycollection.docs %}
+    {% include archive-single.html %}
+{% endfor %}
