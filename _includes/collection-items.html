@@ -1,10 +1,5 @@
-{{ include.collection }}
 
 {% assign posts = site.collections | where:'label',include.collection | first %}
-
-{{ posts.label }}
-
 {% for post in posts.docs %}
- {{ post.title }}
  {% include archive-single.html %}
 {% endfor %}
