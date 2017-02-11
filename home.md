@@ -35,6 +35,8 @@ intro:
   - excerpt: 'Get notified when I add new stuff &nbsp; [<i class="fa fa-twitter"></i> @mmistakes](https://twitter.com/mmistakes){: .btn .btn--twitter}'
 ---
 
+{{ site.title[page.lang] }}
+
 {% include feature_row id="intro" type="center" %}
 
 {% include feature_row %}
