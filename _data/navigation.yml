@@ -2,10 +2,10 @@
 main:
  - title: "gram-web"
    url: "http://gram-web.ionio.gr/classweb/"
-  - title: "e-class"
-    url: "http://e-class.ionio.gr"
-  - title: "WebMail"
-    url: "https://webmail.ionio.gr/"
+ - title: "e-class"
+   url: "http://e-class.ionio.gr"
+ - title: "WebMail"
+   url: "https://webmail.ionio.gr/"
   #- title: "Groups"
   #  url: /groups/
   #- title: "Projects"
