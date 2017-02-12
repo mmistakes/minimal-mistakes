@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Sass variables
+   Variables
    ========================================================================== */
 
 /*
@@ -9,10 +9,11 @@
 $doc-font-size: 16;
 $doc-line-height: 26;
 $paragraph-indent: true !default;
-$base-font: 'PT Serif', serif;
-$heading-font: 'PT Sans Narrow', sans-serif;
-$code-font: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
-$alt-font: $base-font;
+
+$serif                        : "PT Serif", serif;
+$sans-serif                   : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+$sans-serif-narrow            : "PT Sans Narrow", sans-serif;
+$monospace                    : Monaco, Consolas, "Lucida Console", monospace;
 
 /*
    Colors
@@ -58,12 +59,16 @@ $linkcolorhover 	: darken($linkcolor, 10);
 $linkcolorvisited : lighten($linkcolorhover, 20);
 $linkcolorfocus 	: darken($linkcolorvisited, 10);
 
+$border-radius    : 4px;
+
 /*
    Breakpoints
    ========================================================================== */
 
-$micro            : "only screen and (min-width: 30em)";
-$small            : "only screen and (min-width: 37.5em)";
-$medium           : "only screen and (min-width: 48em)";
-$large            : "only screen and (min-width: 62em)";
-$x-large          : "only screen and (min-width: 86.375em)";
+@include breakpoint-set("to ems", true);
+
+$micro            : 480px;
+$small            : 600px;
+$medium           : 768px;
+$large            : 992px;
+$x-large          : 1382px;
