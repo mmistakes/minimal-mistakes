@@ -3,11 +3,12 @@
    ========================================================================== */
 
 table {
+  margin-bottom: 1em;
   width: 100%;
-  font-family: $sans-serif;
-  font-size: 0.8rem;
+  font-family: $global-font-family;
+  font-size: $type-size-6;
   border-collapse: collapse;
-  border-bottom: 2px solid $border-color;
+  border: 1px solid $light-gray;
 
   & + table {
     margin-top: 1em;
@@ -15,18 +16,21 @@ table {
 }
 
 thead {
-  border-bottom: 2px solid $border-color;
+  background-color: $lighter-gray;
+  border-bottom: 1px solid $light-gray;
 }
 
 th {
   padding: 0.5em;
   font-weight: bold;
   text-align: left;
+  border-right: 1px solid $light-gray;
 }
 
 td {
-  border-bottom: 1px solid $border-color;
   padding: 0.5em;
+  border-bottom: 1px solid $light-gray;
+  border-right: 1px solid $light-gray;
 }
 
 tr, td, th {

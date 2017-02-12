@@ -16,7 +16,7 @@
   {% assign tag_hashes = (page_tags | split: ',' | sort:0) %}
 
   <p class="page__taxonomy">
-    {% if site.data.ui-text[site.locale].tags_label %}<strong>{{ site.data.ui-text[site.locale].tags_label }} </strong>{% endif %}
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].tags_label }} </strong>
     <span itemprop="keywords">
     {% for hash in tag_hashes %}
       {% assign keyValue = hash | split: '#' %}

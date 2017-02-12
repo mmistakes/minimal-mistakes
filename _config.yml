@@ -1,35 +1,24 @@
 # Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your whole blog, values
+# This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : en_US
-title                    : "Your Awesome Site"
+locale                   : "en-US"
+title                    : "Minimal Mistakes"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "Write an awesome description for your new site here."
-url                      : "http://localhost:4000" # the base hostname & protocol for your site
-baseurl                  : "/minimal-mistakes" # the subpath of your site, e.g. /blog
-email                    : "your-email@domain.com"
-logo                     : "site-logo.png"
-teaser                   : "500x300.png"
-breadcrumbs              : # true, false (default)
-breadcrumb_home_label    : "Home"
-breadcrumb_separator     : "/"
-twitter:
-  username               : &twitter "site_twitter"
-facebook:
-  username               : &facebook "site_facebook"
-  app_id                 :
-  publisher              :
-read_time                : true
+name                     : &name "Michael Rose"
+description              : &description "A flexible Jekyll theme for your blog or site with a minimalist aesthetic."
+url                      : # the base hostname & protocol for your site e.g. "//github.io.mmistakes"
+baseurl                  : "/minimal-mistakes" # the subpath of your site, e.g. "/blog"
+gh_repo                  : "https://github.com/mmistakes/minimal-mistakes"
+teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
-share                    : true
 comments:
-  provider               : false # false (default), "disqus", "facebook", "google-plus", custom"
+  provider               : "disqus" # false (default), "disqus", "facebook", "google-plus", custom"
   disqus:
     shortname            : "mmistakes-dev" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   facebook:
@@ -37,28 +26,74 @@ comments:
     appid                :
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
-google_site_verification :
+
+# SEO Related
+google_site_verification : "UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y"
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
-analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
-  google:
-    tracking_id          : "UA-123456-7"
-google_ad_client         :
-google_ad_slot           :
 
-# For specifying social profiles.
+# Social Sharing
+twitter:
+  username               : &twitter "mmistakes"
+facebook:
+  username               : &facebook "michaelrose"
+  app_id                 :
+  publisher              :
+og_image                 : "site-logo.png" # Open Graph/Twitter default site image
+# For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-    - "https://twitter.com/site_twitter"
-    - "https://facebook.com/site_facebook"
+    - "https://twitter.com/mmistakes"
+    - "https://facebook.com/michaelrose"
+
+# Analytics
+analytics:
+  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          : "UA-2011187-3"
+
+# Google AdSense
+google_ad_client         :
+google_ad_slot           :
+
+
+# Site Author
+author:
+  name             : *name
+  avatar           : "bio-photo.jpg"
+  bio              : *description
+  location         : "Buffalo, NY"
+  email            : *email
+  uri              : "https://mademistakes.com"
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  flickr           :
+  facebook         : *facebook
+  foursquare       :
+  github           : "mmistakes"
+  google_plus      :
+  keybase          :
+  instagram        : "mmistakes"
+  lastfm           :
+  linkedin         :
+  pinterest        :
+  soundcloud       :
+  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  steam            :
+  tumblr           :
+  twitter          : *twitter
+  vine             :
+  weibo            :
+  xing             :
+  youtube          :
+
 
 # Reading Files
-safe: false
 include:
   - .htaccess
   - _pages
@@ -73,6 +108,7 @@ exclude:
   - assets/js/_main.js
   - assets/js/vendor
   - Capfile
+  - CHANGELOG
   - config
   - Gemfile
   - Gruntfile.js
@@ -90,15 +126,14 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
+
 # Conversion
 markdown: kramdown
 highlighter: rouge
-sass:
-  sass_dir: _sass
-  style: compressed
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
+
 
 # Markdown Processing
 kramdown:
@@ -111,8 +146,12 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
+
 # Collections
 collections:
+  docs:
+    output: true
+    permalink: /:collection/:path/
   recipes:
     output: true
     permalink: /:collection/:path/
@@ -122,6 +161,7 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
+
 
 # Defaults
 defaults:
@@ -143,6 +183,16 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
   # _recipes
   - scope:
       path: ""
@@ -170,12 +220,22 @@ defaults:
       author_profile: false
       share: true
 
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+
 # Plugins
 gems:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - jemoji
+  - jekyll-redirect-from
   # - jekyll-archives
 
 # mimic GitHub Pages with --safe
@@ -184,12 +244,9 @@ whitelist:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - jemoji
+  - jekyll-redirect-from
 
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Archives
 #  Type
@@ -216,8 +273,9 @@ tags:
 #     category: archive-taxonomy
 #     tag: archive-taxonomy
 #   permalinks:
-#     category: /:name/
+#     category: /categories/:name/
 #     tag: /tags/:name/
+
 
 # HTML Compression
 # - http://jch.penibelst.de/
@@ -225,30 +283,3 @@ compress_html:
   clippings: all
   ignore:
     envs: development
-
-# Site Author
-author:
-  name             : *name
-  avatar           : "bio-photo.jpg"
-  bio              : *description
-  email            : *email
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         : *facebook
-  foursquare       :
-  github           :
-  google_plus      :
-  instagram        :
-  lastfm           :
-  linkedin         :
-  pinterest        :
-  soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
-  steam            :
-  tumblr           :
-  twitter          : *twitter
-  vine             :
-  weibo            :
-  xing             :
-  youtube          :

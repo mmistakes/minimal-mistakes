@@ -5,11 +5,11 @@
 #main {
   @include container;
   @include clearfix;
-  position: relative;
   margin-top: 2em;
   padding-left: 2em;
   padding-right: 2em;
-  z-index: 0;
+  animation: intro 0.3s both;
+  animation-delay: 0.35s;
 
   @include breakpoint($large) {
     padding-left: 1em;
@@ -22,25 +22,21 @@
 }
 
 .page {
-  @include breakpoint($medium) {
-    padding-right: $right-sidebar-width-narrow;
-  }
-
   @include breakpoint($large) {
     @include span(10 of 12 last);
-    padding-right: $right-sidebar-width;
+    @include suffix(2 of 12);
   }
 
   @include breakpoint($x-large) {
     @include prefix(0.5 of 12);
-    padding-right: $right-sidebar-width-wide;
   }
 
   .page__inner-wrap {
+    @include full();
+
     .page__content,
     .page__meta,
     .page__share {
-      @include clearfix();
       @include full();
     }
   }
@@ -48,21 +44,21 @@
 
 .page__title {
   margin-top: 0;
-  font-family: $serif;
   line-height: 1;
+
   & + .page__meta {
-    margin-top: -1.5em;
+    margin-top: -0.5em;
   }
 }
 
 .page__lead {
-  font-family: $sans-serif;
-  font-size: 20px;
+  font-family: $global-font-family;
+  font-size: $type-size-4;
 }
 
 .page__content {
-  p, li {
-    font-size: 16px;
+  p, li, dl {
+    font-size: 1em;
   }
 
   /* paragraph indents */
@@ -77,12 +73,48 @@
       }
     }
   }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+
+      img {
+        box-shadow: 0 0 10px rgba(#000, 0.25);
+      }
+    }
+  }
+
+  dt {
+    margin-top: 1em;
+    font-family: $sans-serif;
+    font-weight: bold;
+  }
+
+  dd {
+    margin-left: 1em;
+    font-family: $sans-serif;
+    font-size: $type-size-6;
+  }
+
+  .small {
+    font-size: $type-size-6;
+  }
+
+  /* blockquote citations */
+  blockquote + .small {
+    margin-top: -1.5em;
+    padding-left: 1.25rem;
+  }
 }
 
 .page__hero {
   position: relative;
   margin-bottom: 2em;
   @include clearfix;
+  animation: intro 0.3s both;
+  animation-delay: 0.25s;
 
   &--overlay {
     position: relative;
@@ -93,6 +125,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    animation: intro 0.3s both;
+    animation-delay: 0.25s;
 
     .wrapper {
       padding-left: 2em;
@@ -108,15 +142,11 @@
     }
 
     .page__title {
-      font-size: 48px;
+      font-size: $type-size-2;
 
       @include breakpoint($small) {
-        font-size: 60px;
+        font-size: $type-size-1;
       }
-    }
-
-    .page__lead {
-      font-weight: bold;
     }
   }
 }
@@ -134,8 +164,8 @@
   margin: 0 auto;
   padding: 2px 5px;
   color: #fff;
-  font-family: $sans-serif;
-  font-size: 10px;
+  font-family: $caption-font-family;
+  font-size: $type-size-7;
   background: #000;
   text-align: right;
   z-index: 5;
@@ -160,11 +190,24 @@
   margin-top: 2em;
   padding-top: 1em;
   border-top: 1px solid $border-color;
+
+  @include breakpoint(max-width $small) {
+    .btn span {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+  }
 }
 
 .page__share-title {
-  font-size: 14px;
   margin-bottom: 10px;
+  font-size: $type-size-6;
   text-transform: uppercase;
 }
 
@@ -177,16 +220,20 @@
   margin-top: 2em;
   color: mix(#fff, $gray, 25%);
   font-family: $sans-serif;
-  font-size: 14px;
+  font-size: $type-size-6;
 
   p {
-    margin-bottom: 0.5em;
+    margin: 0;
+  }
+
+  a {
+    color: inherit;
   }
 }
 
 .page__meta-title {
-  font-size: 14px;
   margin-bottom: 10px;
+  font-size: $type-size-6;
   text-transform: uppercase;
 }
 
@@ -216,7 +263,7 @@
 
   &:hover {
     text-decoration: none;
-    border-color: $gray;
+    color: $link-color-hover;
   }
 }
 
@@ -226,15 +273,14 @@
    ========================================================================== */
 
 .page__comments {
-  @include clearfix();
   @include full();
 }
 
 .page__comments-title {
-  font-size: 14px;
   margin-top: 2rem;
   margin-bottom: 10px;
   padding-top: 2rem;
+  font-size: $type-size-6;
   border-top: 1px solid $border-color;
   text-transform: uppercase;
 }
@@ -260,12 +306,13 @@
   }
 
   a {
+    color: inherit;
     text-decoration: none;
   }
 }
 
 .page__related-title {
-  font-size: 14px;
   margin-bottom: 10px;
+  font-size: $type-size-6;
   text-transform: uppercase;
 }

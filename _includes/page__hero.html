@@ -1,7 +1,15 @@
+{% include base_path %}
+
 {% if page.header.image contains "http" %}
   {% capture img_path %}{{ page.header.image }}{% endcapture %}
 {% else %}
   {% capture img_path %}{{ page.header.image | prepend: "/images/" | prepend: base_path }}{% endcapture %}
+{% endif %}
+
+{% if page.header.cta_url contains "http" %}
+  {% capture cta_path %}{{ page.header.cta_url }}{% endcapture %}
+{% else %}
+  {% capture cta_path %}{{ page.header.cta_url | prepend: base_path }}{% endcapture %}
 {% endif %}
 
 {% if page.header.overlay_image contains "http" %}
@@ -19,7 +27,7 @@
         {% if paginator %}
           {{ site.title }}{% unless paginator.page == 1 %} {{ site.data.ui-text[site.locale].page }} {{ paginator.page }}{% endunless %}
         {% else %}
-          {{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}
+          {{ page.title | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}
         {% endif %}
       </h1>
       {% if page.excerpt %}
@@ -29,7 +37,7 @@
         <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
       {% endif %}
       {% if page.header.cta_url %}
-        <p><a href="{{ page.header.cta_url }}" class="btn btn--light-outline btn--x-large">{{ page.header.cta_label | default: site.data.ui-text[site.locale].more_label }}</a></p>
+        <p><a href="{{ cta_path }}" class="btn btn--light-outline btn--large">{{ page.header.cta_label | default: site.data.ui-text[site.locale].more_label }}</a></p>
       {% endif %}
     </div>
   {% else %}
