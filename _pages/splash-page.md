@@ -4,8 +4,8 @@ layout: splash
 permalink: /splash-page/
 date: 2016-03-23T11:48:41-04:00
 header:
-  splash: true
-  background_color: "#000"
+  overlay_color: "#000"
+  overlay_image: unsplash-image-1.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 splash_row:
   - image_path: unsplash-gallery-image-1-th.jpg
