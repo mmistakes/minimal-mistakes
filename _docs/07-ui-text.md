@@ -1,7 +1,7 @@
 ---
 title: "UI Text"
 permalink: /docs/ui-text/
-excerpt:
+excerpt: "Text for customizing various user interface elements found in the theme."
 sidebar:
   title: "v3.0"
   nav: docs

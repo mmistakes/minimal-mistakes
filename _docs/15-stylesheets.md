@@ -1,7 +1,7 @@
 ---
 title: "Stylesheets"
 permalink: /docs/stylesheets/
-excerpt:
+excerpt: "Instructions for customizing and building the theme's stylesheets."
 sidebar:
   title: "v3.0"
   nav: docs

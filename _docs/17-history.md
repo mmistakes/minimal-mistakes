@@ -1,7 +1,7 @@
 ---
 title: "History"
 permalink: /docs/history/
-excerpt:
+excerpt: "Changelog of enhancements and bug fixes made to the theme."
 sidebar:
   title: "v3.0"
   nav: docs

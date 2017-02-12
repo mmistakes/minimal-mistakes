@@ -1,7 +1,7 @@
 ---
 title: "Contributing"
 permalink: /docs/contributing/
-excerpt:
+excerpt: "How you can contribute to make this theme better."
 sidebar:
   title: "v3.0"
   nav: docs

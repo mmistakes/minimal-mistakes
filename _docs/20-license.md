@@ -1,7 +1,7 @@
 ---
 title: "License"
 permalink: /docs/license/
-excerpt:
+excerpt: "License for Minimal Mistakes Jekyll Theme."
 sidebar:
   title: "v3.0"
   nav: docs

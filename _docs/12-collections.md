@@ -1,7 +1,7 @@
 ---
 title: "Working with Collections"
 permalink: /docs/collections/
-excerpt:
+excerpt: "Suggestions and Front Matter defaults for working with collections."
 sidebar:
   title: "v3.0"
   nav: docs

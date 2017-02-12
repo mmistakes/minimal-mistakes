@@ -1,7 +1,7 @@
 ---
 title: "Working with Pages"
 permalink: /docs/pages/
-excerpt:
+excerpt: "Suggestions and Front Matter defaults for working with pages."
 sidebar:
   title: "v3.0"
   nav: docs
