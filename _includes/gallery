@@ -25,6 +25,7 @@
         {% else %}
           "{{ img.url | prepend: "/images/" | prepend: base_path }}"
         {% endif %}
+        {% if img.title %}title="{{ img.title }}"{% endif %}
       >
         <img src=
           {% if img.image_path contains "http" %}
@@ -32,7 +33,7 @@
           {% else %}
             "{{ img.image_path | prepend: "/images/" | prepend: base_path }}"
           {% endif %}
-        alt="{% if img.alt %}{{ img.alt }}{% endif %}">
+          alt="{% if img.alt %}{{ img.alt }}{% endif %}">
       </a>
     {% else %}
       <img src=
@@ -41,7 +42,7 @@
         {% else %}
           "{{ img.image_path | prepend: "/images/" | prepend: base_path }}"
         {% endif %}
-      alt="{% if img.alt %}{{ img.alt }}{% endif %}">
+        alt="{% if img.alt %}{{ img.alt }}{% endif %}">
     {% endif %}
   {% endfor %}
   {% if include.caption %}
