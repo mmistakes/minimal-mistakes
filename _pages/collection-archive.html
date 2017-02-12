@@ -12,7 +12,7 @@ author_profile: false
   {% unless collection.output == false or collection.label == 'posts' %}
     {% capture label %}{{ collection.label }}{% endcapture %}
     {% if label != written_label %}
-      <h3>{{ label }}</h3>
+      <h2>{{ label }}</h2>
       {% capture written_label %}{{ label }}{% endcapture %}
     {% endif %}
   {% endunless %}

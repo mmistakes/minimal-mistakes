@@ -9,7 +9,7 @@ permalink: /portfolio/
 
 {% for category in group_names %}
   {% assign posts = group_items[forloop.index0] %}
-  <h3>{{ category }}</h3>
+  <h2>{{ category }}</h2>
   {% for post in posts %}
     {% include archive-list-single %}
   {% endfor %}
