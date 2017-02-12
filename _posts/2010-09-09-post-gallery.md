@@ -16,6 +16,15 @@ gallery:
   - url: unsplash-gallery-image-3.jpg
     image_path: unsplash-gallery-image-3-th.jpg
     alt: "placeholder image 3"
+  - url: unsplash-gallery-image-1.jpg
+    image_path: unsplash-gallery-image-1-th.jpg
+    alt: "placeholder image 1"
+  - url: unsplash-gallery-image-2.jpg
+    image_path: unsplash-gallery-image-2-th.jpg
+    alt: "placeholder image 2"
+  - url: unsplash-gallery-image-3.jpg
+    image_path: unsplash-gallery-image-3-th.jpg
+    alt: "placeholder image 3"
 gallery2:
   - url: https://flic.kr/p/8a6Ven
     image_path: https://farm2.staticflickr.com/1272/4697500467_8294dac099_q.jpg
