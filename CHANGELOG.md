@@ -1,3 +1,9 @@
+## [3.2.10](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.10)
+
+## Maintenance
+
+- Add `CONTRIBUTING.md`
+
 ## [3.2.9](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.9)
 
 ### Enhancements
