@@ -1,5 +1,6 @@
 ---
 title: "Installation"
+permalink: /docs/installation/
 excerpt:
 sidebar:
   nav: docs

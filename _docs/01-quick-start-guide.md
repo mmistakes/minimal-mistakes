@@ -1,5 +1,6 @@
 ---
 title: "Quick-Start Guide"
+permalink: /docs/quick-start-guide/
 excerpt:
 sidebar:
   nav: docs
