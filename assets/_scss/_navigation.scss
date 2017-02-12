@@ -9,7 +9,8 @@
 .breadcrumbs {
   @include container;
   @include clearfix;
-  margin-bottom: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 2em;
   padding-right: 2em;
   font-family: $sans-serif;
