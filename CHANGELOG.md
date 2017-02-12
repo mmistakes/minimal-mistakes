@@ -1,3 +1,9 @@
+## [3.3.6](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.3.6)
+
+### Bug Fixes
+
+- Fix blank `site.teaser` bug [#412](https://github.com/mmistakes/minimal-mistakes/issues/412)
+
 ## [3.3.5](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.3.5)
 
 ### Enhancements
