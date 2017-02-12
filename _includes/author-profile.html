@@ -4,14 +4,14 @@
 
 <div itemscope itemtype="http://schema.org/Person">
 
-  {% if author.avatar contains 'http' %}
-  	<img src="{{ author.avatar }}" class="bio-photo" alt="{{ author.name }} bio photo">
+  {% if author.avatar contains "http" %}
+  	<img src="{{ author.avatar }}" class="author-avatar" alt="{{ author.name }} photo">
   {% else %}
-  	<img src="{{ author.avatar | prepend: absurl }}" class="bio-photo" alt="{{ author.name }} bio photo">
+  	<img src="{{ author.avatar | prepend: absurl }}" class="author-avatar" alt="{{ author.name }} photo">
   {% endif %}
 
-  <h3 itemprop="name">{{ author.name }}</h3>
-  {% if author.bio %}<p>{{ author.bio }}</p>{% endif %}
+  <h3 itemprop="name" class="author-name">{{ author.name }}</h3>
+  {% if author.bio %}<p class="author-bio">{{ author.bio }}</p>{% endif %}
   {% if author.email %}
     <a href="mailto:{{ author.email }}" class="author-social" target="_blank"><i class="fa fa-fw fa-envelope-square"></i> Email</a>
   {% endif %}

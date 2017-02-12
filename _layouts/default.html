@@ -6,7 +6,7 @@
   {% include head.html %}
   </head>
 
-  <body class="{{ layout.class }}">
+  <body>
 
   {% include browser-upgrade.html %}
   {% include navigation.html %}
@@ -14,7 +14,7 @@
   {% if page.image.feature %}
     <div class="image-wrap">
     <img src=
-      {% if page.image.feature contains 'http' %}
+      {% if page.image.feature contains "http" %}
         "{{ page.image.feature }}"
       {% else %}
         "{{ page.image.feature | prepend: "/images/" | prepend: absurl }}"
@@ -27,8 +27,8 @@
   {% endif %}
 
   <div id="main" role="main">
-    <div class="article-author-side">
-      {% include author-bio.html %}
+    <div class="author-profile">
+      {% include author-profile.html %}
     </div>
     {{ content }}
   </div><!-- /#main -->

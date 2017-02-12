@@ -4,7 +4,7 @@ layout: default
 
 {% include absolute-url.liquid %}
 
-<div id="index">
+<div class="archive">
   <h1>{{ page.title }}</h1>
   {% capture written_year %}'None'{% endcapture %}
   {% for post in site.posts %}  
@@ -22,4 +22,4 @@ layout: default
       {% endif %}
     </article>
   {% endfor %}
-</div><!-- /#index -->
+</div><!-- /.archive -->
