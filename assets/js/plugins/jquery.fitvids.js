@@ -1,9 +1,9 @@
 /*global jQuery */
-/*jshint multistr:true browser:true */
+/*jshint multistr:true, browser:true */
 /*!
 * FitVids 1.0
 *
-* Copyright 2011, Chris Coyier - http://css-tricks.com + Dave Rupert - http://daverupert.com
+* Copyright 2013, Chris Coyier - http://css-tricks.com + Dave Rupert - http://daverupert.com
 * Credit to Thierry Koblentz - http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/
 * Released under the WTFPL license - http://sam.zoy.org/wtfpl/
 *
@@ -19,29 +19,20 @@
       customSelector: null
     };
 
-    var div = document.createElement('div'),
-        ref = document.getElementsByTagName('base')[0] || document.getElementsByTagName('script')[0];
+    if(!document.getElementById('fit-vids-style')) {
 
-    div.className = 'fit-vids-style';
-    div.innerHTML = '&shy;<style>         \
-      .fluid-width-video-wrapper {        \
-         width: 100%;                     \
-         position: relative;              \
-         padding: 0;                      \
-      }                                   \
-                                          \
-      .fluid-width-video-wrapper iframe,  \
-      .fluid-width-video-wrapper object,  \
-      .fluid-width-video-wrapper embed {  \
-         position: absolute;              \
-         top: 0;                          \
-         left: 0;                         \
-         width: 100%;                     \
-         height: 100%;                    \
-      }                                   \
-    </style>';
+      var div = document.createElement('div'),
+          ref = document.getElementsByTagName('base')[0] || document.getElementsByTagName('script')[0],
+          cssStyles = '&shy;<style>.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style>';
 
-    ref.parentNode.insertBefore(div,ref);
+      div.className = 'fit-vids-style';
+      div.id = 'fit-vids-style';
+      div.style.display = 'none';
+      div.innerHTML = cssStyles;
+
+      ref.parentNode.insertBefore(div,ref);
+
+    }
 
     if ( options ) {
       $.extend( settings, options );
@@ -50,9 +41,9 @@
     return this.each(function(){
       var selectors = [
         "iframe[src*='player.vimeo.com']",
-        "iframe[src*='www.youtube.com']",
-        "iframe[src*='www.youtube-nocookie.com']",
-        "iframe[src*='www.kickstarter.com']",
+        "iframe[src*='youtube.com']",
+        "iframe[src*='youtube-nocookie.com']",
+        "iframe[src*='kickstarter.com'][src*='video.html']",
         "object",
         "embed"
       ];
@@ -62,6 +53,7 @@
       }
 
       var $allVideos = $(this).find(selectors.join(','));
+      $allVideos = $allVideos.not("object object"); // SwfObj conflict patch
 
       $allVideos.each(function(){
         var $this = $(this);
@@ -78,4 +70,5 @@
       });
     });
   };
-})( jQuery );
+// Works with either jQuery or Zepto
+})( window.jQuery || window.Zepto );
