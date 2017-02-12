@@ -1,0 +1,53 @@
+title:            Minimal Mistakes
+tagline:          Jekyll Theme
+description:      A responsive Jekyll theme with editorial design tendencies.
+url:              http://mmistakes.github.io/minimal-mistakes
+
+# Owner/author information goes here.
+owner:
+  name:           Sweet Dood
+  avatar:         "/images/200x200.png"
+  bio:            "The greatest one line biography for the greatest dood."
+  email:          sweetdood@mail.me
+  twitter:        "@sweeeeeetdood"
+  google_plus:    
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:    
+google_verify: 
+bing_verify:   
+
+timezone:    America/New_York
+future:      true
+pygments:    true
+markdown:    kramdown
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title
+
+maruku:
+  use_tex:    false
+  use_divs:   false
+  png_engine: blahtex
+  png_dir:    images/latex
+  png_url:    /images/latex
+
+rdiscount:
+  extensions: [smart]
+
+kramdown:
+  auto_ids: true,
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: true
+  
+  coderay:
+    coderay_line_numbers: 
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "minimal-mistakes.sublime-project", "minimal-mistakes.sublime-workspace"]

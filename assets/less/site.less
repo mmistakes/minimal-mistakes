@@ -1,0 +1,41 @@
+/* Selection ============================================= */
+::-moz-selection { 
+	background-color: lighten(@basecolor, 65%); 
+	color: @basecolor; 
+	text-shadow: none; 
+}  	
+::selection { 
+	background-color: lighten(@basecolor, 65%); 
+	color: @basecolor; 
+	text-shadow: none; 
+}
+
+/* Global Classes ======================================== */
+.all-caps {
+	text-transform: uppercase;
+}
+.pull-left {
+	float: left;
+}
+.pull-right {
+	float:right;
+}
+.clearfix {
+	*zoom: 1;
+	&:before,
+	&:after {
+		display: table;
+	    content: "";
+	}
+	&:after {
+		clear: both;
+	}
+}
+.unstyled-list {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+	li {
+		list-style-type: none;
+	}
+}

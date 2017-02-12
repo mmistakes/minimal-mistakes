@@ -1,0 +1,47 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include head.html %}
+</head>
+
+<body class="articles">
+
+{% include chrome-frame.html %}
+
+{% include navigation.html %}
+
+<div class="image-wrap">
+  <div class="headline-wrap">
+    <h1>{{ page.title }}</h1>
+    {% if page.tagline %}<h2>{{ page.tagline }}</h2>{% endif %}
+  </div><!--/ .headline-wrap -->
+  <img src="/images/{{ page.image.feature }}" alt="{{ page.title }} feature image">
+</div><!-- /.image-wrap -->
+
+<div class="article-author-top">
+  {% include author-bio.html %}
+</div>
+
+<div id="index">
+  {% for post in site.posts %}  
+  <article>
+    <h2><a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h2>
+    <p class="byline"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></p>
+    <p>{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}</p>
+  </article>
+  {% endfor %}
+</div><!-- /#index -->
+
+<div class="footer-wrap">
+  <footer>
+    {% include footer.html %}
+  </footer>
+</div><!-- /.footer-wrap -->
+
+{% include scripts.html %}
+  
+</body>
+</html>
