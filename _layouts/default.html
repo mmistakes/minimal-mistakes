@@ -22,6 +22,7 @@ layout: compress
         "{{ page.image.feature }}"
       {% else %}
         "{{ page.image.feature | prepend: "/images/" | prepend: absurl }}"
+        "{{ page.image.feature | prepend: absurl }}"
       {% endif %}
       alt="{{ page.title }}">
     {% if page.image.credit %}

@@ -14,13 +14,13 @@ description              : "Write an awesome description for your new site here.
 url                      : "http://localhost:4000" # the base hostname & protocol for your site
 baseurl                  : "/test" # the subpath of your site, e.g. /blog
 email                    : "your-email@domain.com"
-logo                     : "images/default-thumb.png"
+logo                     : "default-thumb.png"
 google_site_verification :
 twitter:
   username               : site_twitter
 facebook:
-  app_id                 : 1234
-  publisher              : 1234
+  app_id                 :
+  publisher              :
 google_site_verification :
 bing_site_verification   :
 alexa_site_verification  :
@@ -29,7 +29,7 @@ yandex_site_verification :
 # For specifying social profiles. 
 # https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # person or organization (defaults to person)
+  type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
     - "https://twitter.com/site_twitter"
