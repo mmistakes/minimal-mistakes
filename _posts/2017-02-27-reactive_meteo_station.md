@@ -7,7 +7,6 @@ header:
   overlay_color: "#333"
 categories:
   - Home automation
-  - IoT
 tags:
   - Raspberry PI
   - RabbitMQ
