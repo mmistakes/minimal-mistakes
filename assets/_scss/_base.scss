@@ -138,7 +138,8 @@ pre {
 }
 
 p > code,
-li > code,
+a > code,
+li > a > code,
 figcaption > code {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
