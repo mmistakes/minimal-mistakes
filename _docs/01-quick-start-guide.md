@@ -7,13 +7,31 @@ sidebar:
 ---
 
 {% include base_path %}
+{% include toc %}
 
-Minimal Mistakes has been developed to be 100% compatible with GitHub Pages hosting. To get up and running with a new GitHub repository following these steps.
+Minimal Mistakes has been developed to be 100% compatible with hosting a site on [GitHub Pages](https://pages.github.com/). To get up and running with a new GitHub repository quickly, follow these steps.
 
-1. Fork the [Minimal Mistakes theme](https://github.com/mmistakes/minimal-mistakes/fork) and then rename the repo to **_USERNAME_.github.io**
-2. Clone your new repo with `git clone https://github.com/USERNAME/REPONAME.git`
-3. [Install Bundler](http://bundler.io) and theme dependencies with `bundle install`.
-4. Customize configuration, data files, and publish your first post.
+## Fork the Theme
 
-If you're hosting several Jekyll based sites under the same GitHub username you will have to use Project Pages instead of User Pages. Essentially you rename the repo to something other than **yourgithubusername.github.io** and use the `gh-pages` branch instead of `master`. For more details check [GitHub's documentation](https://help.github.com/articles/user-organization-and-project-pages/).
-{: .notice--info}
+Fork the [Minimal Mistakes theme](https://github.com/mmistakes/minimal-mistakes/fork), then rename the repo to **USERNAME.github.io** --- replacing **USERNAME** with your GitHub username.
+
+**<< insert animation showing how to fork GitHub repo >>**
+
+Your Jekyll site should be viewable immediately at <http://USERNAME.github.io>. If it's not, you can force a rebuild by **Customizing Your Site** (see below for more details).
+{: .notice--warning}
+
+If you're hosting several Jekyll based sites under the same GitHub username you will have to use Project Pages instead of User Pages. Essentially you rename the repo to something other than **USERNAME.github.io** and create a `gh-pages` branch off of `master`. For more details on how to set things up check [GitHub's documentation](https://help.github.com/articles/user-organization-and-project-pages/).
+
+**<< insert animation showing how create to gh-pages branch >>**
+
+## Customize Your Site
+
+Open up `_config.yml` found in the root of the repo and edit anything under **Site Settings**. For a full explanation of every setting be sure to read the **Customization** section, but for now let's just change the site's title.
+
+**<< insert animation showing how to edit the site title >>**
+
+Committing a change to `_config.yml` (or any file in your repository) will force GitHub Pages to rebuild your site with Jekyll. It should then be viewable a few seconds later at <USERNAME.github.io>.
+
+---
+
+Congratulations! You've successfully forked the Minimal Mistakes Jekyll theme and are up an running with GitHub Pages. Now you're ready to add some content and customize the site further.

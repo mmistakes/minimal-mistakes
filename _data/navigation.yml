@@ -25,12 +25,12 @@ docs:
     children:
       - title: "Quick-Start Guide"
         path: quick-start-guide
+      - title: "Structure"
+        path: structure
       - title: "Installation"
         path: installation
       - title: "Upgrading"
         path: upgrading
-      - title: "Structure"
-        path: structure
 
   - title: Customization
     children:
@@ -58,7 +58,7 @@ docs:
       - title: "Images"
         path: images
 
-  - title: Miscellaneous
+  - title: Extras
     children:
       - title: "Pagination"
         path: pagination
