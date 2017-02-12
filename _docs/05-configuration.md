@@ -113,7 +113,7 @@ Enable estimated reading time snippets with `read_time: true` in YAML Front Matt
 
 ![reading time example]({{ base_path }}/images/mm-read-time-example.jpg)
 
-Instead of adding YAML Front Matter to each document apply defaults in `_config.yml`. To enable the **reading time** snippet for all posts:
+Instead of adding YAML Front Matter to each document, apply as a default in `_config.yml`. To enable the **reading time** snippet for all posts:
 
 ```yaml
 defaults:
@@ -125,4 +125,122 @@ defaults:
       read_time: true
 ```
 
-If you add `read_time: false` to a post's YAML Front Matter it will override the default and disable it for just that post.
+If you add `read_time: false` to a post's YAML Front Matter it will override the default and "reading time" for just that post.
+
+### Comments
+
+Commenting for [**Disqus**](https://disqus.com/), [**Facebook**](https://developers.facebook.com/docs/plugins/comments), and **Google+** are built into the theme. First set the comment provider you'd like to use: 
+
+* `disqus`: Disqus
+* `facebook`: Facebook Comments
+* `google-plus`: Google+
+* `custom`: other comment providers
+
+Then add `comments: true` to each document you want comments visible on.
+
+Instead of adding YAML Front Matter to each document, apply as a default in `_config.yml`. To enable comments for all posts:
+
+```yaml
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      comments: true
+```
+
+If you add `comments: false` to a post's YAML Front Matter it will override the default and disable comments for just that post.
+
+##### Disqus
+
+To use Disqus you'll need to create an account and get a [shortname](https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-). Once you have one update `_config.yml` to:
+
+```yaml
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "your-disqus-shortname"
+```
+
+##### Facebook Comments
+
+To enable Facebook Comments choose how many comments you'd like visible per post and the color scheme of the widget.
+
+```yaml
+comments:
+  provider               : "facebook"
+  facebook:
+    appid                : # optional
+    num_posts            : # 5 (default)
+    colorscheme          : # "light" (default), "dark"
+```
+
+##### Other Comment Providers
+
+To use another provider not included with the theme set `provider: "custom"` then add their embed code to `_includes/comments-providers/custom.html`.
+
+### SEO, Social Sharing, and Analytics Settings
+
+All optional, but a good idea to take the time setting up to activate various tools for optimizing your site for search engines and link sharing.
+
+#### Google Search Console
+
+Formerly known as [Google Webmaster Tools](https://www.google.com/webmasters/tools/), add your [verification code](https://support.google.com/analytics/answer/1142414?hl=en) like so: `google_site_verification: "yourVerificationCode"`.
+
+**Note:** You likely won't have to do this if you verify site ownership through **Google Analytics** instead.
+{: .notice--warning}
+
+#### Bing Webmaster Tools
+
+There are several ways to [verify site ownership](https://www.bing.com/webmaster/help/how-to-verify-ownership-of-your-site-afcfefc6) --- the easiest adding an authentication code to your config file.
+
+Copy and paste the string inside of `content`:
+
+```html
+<meta name="msvalidate.01" content="0FC3FD70512616B052E755A56F8952D" />
+```
+
+Into `_config.yml`
+
+```yaml
+bing_site_verification: "0FC3FD70512616B052E755A56F8952D"
+```
+
+#### Alexa
+
+To [claim your site](http://www.alexa.com/siteowners/claim) with Alexa add the provided verification ID `alexa_site_verification: "yourVerificationID"`.
+
+#### Yandex
+
+To verify site ownership copy and paste the string inside of `name`:
+
+```html
+<meta name='yandex-verification' content='2132801JL' />
+```
+
+Into `_config.yml`
+
+```yaml
+yandex_site_verification: "2132801JL"
+```
+
+#### Analytics
+
+Analytics is disabled by default. To enable globally select one of the following:
+
+* `google`: [Google Standard Analytics](https://www.google.com/analytics/)
+* `google-universal`: [Google Universal Analytics](https://www.google.com/analytics/)
+* `custom`: other analytics providers
+
+For Google Analytics also add your Tracking Code:
+
+```yaml
+analytics:
+  provider: "google-universal"
+    tracking_id: "UA-1234567-8"
+```
+
+To use another provider not included with the theme set `provider: "custom"` then add their embed code to `_includes/analytics-providers/custom.html`.
+
+#### Twitter Cards and Open Graph Data
