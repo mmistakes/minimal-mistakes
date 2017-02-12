@@ -1,18 +1,11 @@
 ---
-title: "Design for change [draft title - need something better]"
+title: "Design for change (part 2) [draft title - need something better]"
 excerpt: "Behaviour first- Data first class"
 layout: single
 comments: true
 ---
 
-One of the only constants in software development is change.
-
-We should design for change.
-
-This means defer design decisions as late as possible...
-
-* in the time line of development
-* and in the design itself
+[TODO] Reference previous article
 
 Don't fix things too early..
 
