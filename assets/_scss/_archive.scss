@@ -35,6 +35,10 @@
 .archive__item-title {
   margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
+
+  a + a {
+    opacity: 0.5;
+  }
 }
 
 // remove border
@@ -63,7 +67,7 @@
   }
 }
 
-a:hover {
+.archive__item:hover {
   .archive__item-teaser {
     box-shadow: 0 0 10px rgba(#000, 0.25);
   }
