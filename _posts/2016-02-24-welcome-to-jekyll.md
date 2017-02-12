@@ -1,5 +1,7 @@
 ---
 title:  "Welcome to Jekyll!"
+header:
+  teaser: "http://wpthemetestdata.files.wordpress.com/2008/06/100_5540.jpg?w=604"
 categories: 
   - Jekyll
 tags:
