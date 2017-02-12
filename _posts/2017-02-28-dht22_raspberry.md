@@ -48,6 +48,8 @@ sudo python setup.py install
 
 ### Get Temperature and Humdity from DHT22
 
+Show source: https://github.com/jluccisano/raspberry-scripts/blob/master/scripts/dht22.py
+
 ```python
 import Adafruit_DHT
 
@@ -68,5 +70,30 @@ Output:
 
 ```
 
+### Publish data to RabbitMQ
+
+Show source: https://github.com/jluccisano/raspberry-scripts/blob/master/scripts/publisher.py
+
+
 ### Create Service
+
+See this thread:
+http://www.diegoacuna.me/how-to-run-a-script-as-a-service-in-raspberry-pi-raspbian-jessie/
+
+
+sudo chmod u+x /opt/dht22/send.py 
+sudo ln -s /opt/dht22/send.py /usr/bin/dht22
+sudo systemctl daemon-reload
+
+
+
+sudo systemctl daemon-reload
+sudo chmod +x /opt/dht22/dht22.py
+sudo systemctl enable dht22.service
+sudo systemctl start dht22.service
+sudo systemctl status dht22.service
+sudo systemctl stop dht22.service
+tail -f /var/log/dht22/send.log
+
+
 
