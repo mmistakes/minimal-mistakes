@@ -4,13 +4,14 @@ description:      A responsive Jekyll theme with editorial design tendencies.
 #Comment out url when working locally to resolve base urls correctly
 url:              http://mmistakes.github.io/minimal-mistakes
 
-# Owner/author information goes here.
+# Owner/author information
 owner:
   name:           Michael Rose
   avatar:         bio-photo.jpg
   bio:            "Just another boring, time traveling, tattooed, designer from Buffalo New York."
   email:          michael@mademistakes.com
   twitter:        "mmistakes"
+  # For Google Authorship https://plus.google.com/authorship
   google_plus:    "https://plus.google.com/118238196859537351707/posts"
 
 # Analytics and webmaster tools stuff goes here
@@ -19,6 +20,16 @@ google_verify:      UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:        D81F4C18A6CB3018F64D7C827D953DFD
 
+# Internal pages/posts to include in top navigation
+links:
+  - title: About
+    url: /about
+  - title: Articles
+    url: /articles
+  - title: Theme Setup
+    url: /theme-setup
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
 future:      true
 pygments:    true
