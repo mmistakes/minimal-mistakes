@@ -1,6 +1,10 @@
-# Minimal Mistakes Jekyll Theme
+# [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/)
+
+[![GitHub release](https://img.shields.io/github/release/mmistakes/minimal-mistakes.svg)](https://github.com/mmistakes/minimal-mistakes/releases) [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
 
 Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your personal site, blog, or portfolio on GitHub or self-hosting on your own server. As the name implies --- styling is purposely minimalistic to be enhanced and customized by you :smile:.
+
+See what's new in the [CHANGELOG](CHANGELOG.md).
 
 [![Minimal Mistakes live preview][2]][1]
 
@@ -62,6 +66,14 @@ To help me out try to avoid creating pull requests on `master` and instead branc
 ---
 
 ## Credits
+
+### Creator
+
+**Michael Rose**
+
+- <https://mademistakes.com>
+- <https://twitter.com/mmistakes>
+- <https://github.com/mmistakes>
 
 ### Icons + Demo Images:
 
