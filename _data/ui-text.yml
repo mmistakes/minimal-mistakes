@@ -29,7 +29,11 @@ en: &DEFAULT_EN
   undefined_wpm         : "Undefined parameter words_per_minute at _config.yml"
 en-US:
   <<: *DEFAULT_EN
-en-UK:
+en-CA:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-AU:
   <<: *DEFAULT_EN
 
 # Spanish
