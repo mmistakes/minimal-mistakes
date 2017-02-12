@@ -51,11 +51,11 @@ https://github.com/FountainJS/generator-fountain-webapp
 yo fountain-webapp
 ```
 
-### Step X: Create a ReactJS component
+### Step 1: Create a ReactJS component
 
-### Step X: Create a ReactJS socket module via STOMP and sockJS
+### Step 2: Create a ReactJS socket module via STOMP and sockJS
 
-### Step X: Create widget with D3JS
+### Step 3: Create widget with D3JS
 
 ### Final Result
 
