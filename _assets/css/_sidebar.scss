@@ -3,10 +3,10 @@
    ========================================================================== */
 
 .sidebar {
-  display: none;
-  img {
-    width: 100%;
-  }
+  @include grid(12,10);
+  @include prefix(12,1);
+  @include suffix(12,1);
+  margin-bottom: 1em;
   @include breakpoint($small) {
     display: block;
     @include grid(12,2);
@@ -17,6 +17,15 @@
     @include grid(12,1.5);
     @include prefix(12,2);
   }
+  h2, h3, h4, h5, h6 {
+    font-family: $sans-serif-narrow;
+  }
+  p, li {
+    font-size: 14px;
+  }
+  img {
+    width: 100%;
+  }
 }
 
 /*
@@ -26,38 +35,43 @@
 .author__name {
   margin-bottom: 0;
   font-family: $sans-serif-narrow;
+  font-size: 18px;
   @include breakpoint($small) {
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 24px;
   }
 }
 
 .author__bio {
-  font-size: 80%;
-  font-style: italic;
+  display: none;
   @include breakpoint($small) {
+    display: block;
     margin-bottom: 20px;
+    font-size: 80%;
+    font-style: italic;
   }
 }
 
 .author__avatar {
-  max-width: 110px;
-  border-radius: 50%;
+  display: none;
+  @include breakpoint($small) {
+    max-width: 110px;
+    border-radius: 50%;
+  }
 }
 .author__social-url {
-  display: block;
+  display: inline-block;
   margin-bottom: 5px;
+  padding-right: 5px;
   font-size: 14px;
   color: #000;
   text-decoration: none;
-  &:visited {
-    color: #000;
+  @include breakpoint($small) {
+    display: block;
   }
   &:hover {
     text-decoration: underline;
-  }
-  .fa {
-    margin-right: 5px;
   }
 }
 
