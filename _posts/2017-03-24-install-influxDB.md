@@ -1,14 +1,20 @@
 ---
-title: "InfluxDB"
-excerpt_separator: "InfluxDB"
+title: "Store data into InfluxDB"
 related: true
+header:
+  overlay_color: "#000"
+  overlay_filter: "0"
+  overlay_image: /assets/images/caspar-rubin-224229.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  teaser: /assets/images/caspar-rubin-224229.jpg
 categories:
-  - tuto
+  - Computer
 tags:
   - InfluxDB
   - Docker
 ---
-### Store consume data into InfluxDB
+TODO description
+
 
 - [Prerequisites](#prerequisites)
 - [Run influxDB on Docker](#run-influxdb-on-docker)
@@ -20,11 +26,11 @@ tags:
 
 ####  Prerequisites
 
-- [Set up a Raspberry PI 3 ]({{ site.url }}{{ site.baseurl }}/tuto/setup-raspberry)
-- [Interacting with DHT22 Sensor]({{ site.url }}{{ site.baseurl }}/tuto/dht22-raspberry)
-- [A server or your own computer with Docker]({{ site.url }}{{ site.baseurl }}/tuto/install-docker)
+- [Set up a Raspberry PI 3 ]({{ site.url }}{{ site.baseurl }}/raspberry/setup-raspberry)
+- [Interacting with DHT22 Sensor]({{ site.url }}{{ site.baseurl }}/raspberry/dht22-raspberry)
+- [A server or your own computer with Docker]({{ site.url }}{{ site.baseurl }}/computer/install-docker)
 - [Install Git (optional)](https://git-scm.com/download/linux)
-- [Push data to rabbitMQ]({{ site.url }}{{ site.baseurl }}/tuto/push-data-on-rabbitmq)
+- [Push data to rabbitMQ]({{ site.url }}{{ site.baseurl }}/computer/push-data-on-rabbitmq)
 
 #### Run influxDB on Docker
 

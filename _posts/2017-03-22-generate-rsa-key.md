@@ -1,13 +1,20 @@
 ---
 title: "Generating new SSH Key"
-excerpt_separator: "Generating new SSH Key"
 related: true
+header:
+  overlay_color: "#000"
+  overlay_filter: "0"
+  overlay_image: /assets/images/caspar-rubin-224229.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  teaser: /assets/images/caspar-rubin-224229.jpg
 categories:
-  - tuto
+  - Linux
 tags:
   - SSH
   - Unix
 ---
+TODO description
+
 
 - [Prerequisites](#prerequisites)
 - [Generating new SSH Key](#generating-new-ssh-key)

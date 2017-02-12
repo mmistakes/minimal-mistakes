@@ -1,14 +1,20 @@
 ---
 title: "Raspbian basic administration"
-excerpt_separator: "Raspbian basic administration"
 related: true
+header:
+  overlay_color: "#000"
+  overlay_filter: "0"
+  overlay_image: /assets/images/caspar-rubin-224229.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  teaser: /assets/images/caspar-rubin-224229.jpg
 categories:
-  - tuto
+  - Raspberry
 tags:
   - Raspberry PI
   - Linux
 ---
-### Raspbian basic administration
+TODO description
+
 
 - [Prerequisites](#prerequisites)
 - [Create user](#create-user)
@@ -99,4 +105,4 @@ see more [here](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
 
 #### To go further
 
-[Generate a SSH Key]({{ site.url }}{{ site.baseurl }}/tuto/generate-rsa-key)
+[Generate a SSH Key]({{ site.url }}{{ site.baseurl }}/linux/generate-rsa-key)
