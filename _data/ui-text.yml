@@ -120,17 +120,18 @@ fr: &DEFAULT_FR
   email_label                : "Email"
   recent_posts               : "Posts récents"
   undefined_wpm              : "Le paramètre words_per_minute n'est pas défini dans _config.yml"
-  comment_form_info          :
-  comment_form_comment_label :
-  comment_form_md_info       :
-  comment_form_name_label    :
-  comment_form_email_label   :
-  comment_form_website_label :
-  comment_btn_submit         :
-  comment_btn_submitted      :
-  comment_success_msg        :
-  comment_error_msg          :
-  loading_label              :
+  comments_title             : "Commentaires"
+  comment_form_info          : "Votre adresse email ne sera pas visible. Les champs obligatoires sont marqués"
+  comment_form_comment_label : "Commentaire"
+  comment_form_md_info       : "Markdown est supporté."
+  comment_form_name_label    : "Nom"
+  comment_form_email_label   : "Adresse mail"
+  comment_form_website_label : "Site web (optionnel)"
+  comment_btn_submit         : "Envoyer"
+  comment_btn_submitted      : "Envoyé"
+  comment_success_msg        : "Merci pour votre comentaire, il sera visible sur le site une fois approuvé."
+  comment_error_msg          : "Désolé, une erreur est survenue lors de la soumission. Vérifiez que les champs obligatoires ont été remplis et réessayez."
+  loading_label              : "Chargement..."
 fr-FR:
   <<: *DEFAULT_FR
 fr-BE:
