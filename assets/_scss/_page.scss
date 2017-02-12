@@ -10,10 +10,12 @@
   padding-left: 2em;
   padding-right: 2em;
   z-index: 0;
+
   @include breakpoint($large) {
     padding-left: 1em;
     padding-right: 1em;
   }
+
   @include breakpoint($x-large) {
     max-width: $x-large;
   }
@@ -23,10 +25,12 @@
   @include breakpoint($medium) {
     padding-right: $right-sidebar-width-narrow;
   }
+
   @include breakpoint($large) {
     @include span(10 of 12 last);
     padding-right: $right-sidebar-width;
   }
+
   @include breakpoint($x-large) {
     @include prefix(0.5 of 12);
     padding-right: $right-sidebar-width-wide;
@@ -70,9 +74,11 @@
   z-index: 5;
   opacity: 0.5;
   border-radius: $border-radius 0 $border-radius 0;
+
   @include breakpoint($large) {
     padding: 5px 10px;
   }
+
   a {
     color: #fff;
     text-decoration: none;
@@ -105,6 +111,7 @@
   color: mix(#fff, $gray, 25%);
   font-family: $sans-serif;
   font-size: 14px;
+
   p {
     margin-bottom: 0.5em;
   }
@@ -135,12 +142,12 @@
   text-decoration: none;
   border: 1px solid $light-gray;
   border-radius: $border-radius;
+
   &:hover {
     text-decoration: none;
     border-color: $gray;
   }
 }
-
 
 
 /*
@@ -167,12 +174,15 @@
   border-top: 1px solid $border-color;
   @include clearfix();
   float: left;
+
   @include breakpoint($large) {
     @include pre(2 of 12);
   }
+
   @include breakpoint($x-large) {
     @include pre(2.5 of 12);
   }
+
   a {
     text-decoration: none;
   }

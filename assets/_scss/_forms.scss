@@ -4,11 +4,13 @@
 
 btnform {
   margin: 0 0 5px 0;
+
   fieldset {
     margin-bottom: 5px;
     padding: 0;
     border-width: 0;
   }
+
   legend {
     display: block;
     width: 100%;
@@ -20,14 +22,17 @@ btnform {
     border-bottom: 1px solid mix(#fff, #000, 80%);
     white-space: normal;
   }
+
   p {
     margin-bottom: 5px / 2;
   }
+
   ul {
     list-style-type: none;
     margin: 0 0 5px 0;
     padding: 0;
   }
+
   br {
     display: none;
   }
@@ -56,6 +61,7 @@ label {
   font-weight: bold;
   color: $text-color;
   cursor: pointer;
+
   input,
   textarea,
   select {
@@ -73,6 +79,7 @@ select {
   background-color: #fff;
   border: 1px solid mix(#fff, #000, 80%);
   color: $text-color;
+
   &:hover {
     border-color: mix(#fff, $accent-color, 50%);
   }
@@ -224,7 +231,7 @@ select:focus {
 
 .help-block,
 .help-inline {
-  color: mix(#fff, #000, 50%);
+  color: $info-color;
 }
 
 .help-block {

@@ -8,6 +8,7 @@ table {
   font-size: 0.8rem;
   border-collapse: collapse;
   border-bottom: 2px solid $border-color;
+
   & + table {
     margin-top: 1em;
   }

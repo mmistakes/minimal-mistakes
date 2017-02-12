@@ -24,6 +24,7 @@
   padding: 0;
   width: 100%;
   list-style: none;
+
   a {
     display: block;
     padding: 10px 20px;
@@ -32,17 +33,21 @@
     font-weight: bold;
     line-height: 1.5;
     border-bottom: 1px solid $border-color;
+
     &:hover {
       color: #000;
       background: $border-color;
     }
   }
+
   li ul > li a {
     font-weight: normal;
   }
+
   // hide sub sub links on small screens
   li > ul li {
     display: none;
+
     @include breakpoint($medium) {
       display: block;
     }
