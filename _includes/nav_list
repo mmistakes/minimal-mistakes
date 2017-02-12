@@ -1,21 +1,42 @@
 {% include base_path %}
-{% assign navigation = site.data.navigation[page.sidebar.nav] %}
+{% assign navigation = site.data.navigation[include.nav] %}
 
 <nav class="nav__list">
   {% if page.sidebar.title %}<header><h4 class="nav__title" style="padding: 0;">{{ page.sidebar.title }}</h4></header>{% endif %}
   <ul>
     {% for nav in navigation %}
-      <li><span class="nav__sub-title">{{ nav.title }}</span>
+      <li>
+        {% if nav.url %}
+          {% comment %}internal/external URL check{% endcomment %}
+          {% if nav.url contains "http" %}
+            {% assign domain = "" %}
+          {% else %}
+            {% assign domain = base_path %}
+          {% endif %}
+
+          <a href="{{ domain }}{{ nav.url }}"><span class="nav__sub-title">{{ nav.title }}</span></a>
+        {% else %}
+          <span class="nav__sub-title">{{ nav.title }}</span>
+        {% endif %}
+
         {% if nav.children != null %}
         <ul>
           {% for child in nav.children %}
-          {% assign nav_url = child.path | prepend: "/" | prepend: page.sidebar.nav | prepend: "/" | append: "/" %}
-            {% if nav_url == page.url %}
+            {% comment %}internal/external URL check{% endcomment %}
+            {% if child.url contains "http" %}
+              {% assign domain = "" %}
+            {% else %}
+              {% assign domain = base_path %}
+            {% endif %}
+
+            {% comment %}set "active" class on current page{% endcomment %}
+            {% if child.url == page.url %}
               {% assign active = "active" %}
             {% else %}
               {% assign active = "" %}
             {% endif %}
-            <li><a href="{{ nav_url | prepend: base_path }}" class="{{ active }}">{{ child.title }}</a></li>
+
+            <li><a href="{{ domain }}{{ child.url }}" class="{{ active }}">{{ child.title }}</a></li>
           {% endfor %}
         </ul>
         {% endif %}
@@ -23,3 +44,5 @@
     {% endfor %}
   </ul>
 </nav>
+
+
