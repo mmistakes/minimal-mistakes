@@ -46,22 +46,111 @@ and maybe with better prices.
     or Follow this [tutorial](http://michaelcrump.net/the-magical-command-to-get-sdcard-formatted-for-fat32/). Here my commands on 
     my Mac.
     
-    ```bash
-     diskutil list
-     sudo diskutil eraseDisk FAT32 RASPBIAN MBRFormat /dev/disk1
-     diskutil unmountDisk /dev/disk1
-     sudo dd bs=1m if=/Users/Lucci/Downloads/2016-11-25-raspbian-jessie.img  of=/dev/rdisk1
-     sudo diskutil eject /dev/rdisk1
-    ```
+a. Retrieve the SD card mount point
 
- 3. Enable SSH
+```bash
+    diskutil list
+```
+    
+Output:
+```bash
+/dev/disk0 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *500.1 GB   disk0
+   1:                        EFI EFI                     209.7 MB   disk0s1
+   2:                  Apple_HFS Macintosh HD            499.2 GB   disk0s2
+   3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
+
+/dev/disk1 (external, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     FDisk_partition_scheme                        *15.9 GB    disk1
+   1:             Windows_FAT_32 NO NAME                 15.9 GB    disk1s1 
+```
+    
+Note: We can see the SD Card is mounted on "dev/disk1 (external, physical)" 
+    
+b. Format the SD Card 
+
+```bash
+ sudo diskutil eraseDisk FAT32 RASPBIAN MBRFormat /dev/disk1
+```
+
+Template: 
+```bash
+diskutil eraseDisk {filesystem} {Name} MBRFormat /dev/{disk identifier}
+```
+Output:
+
+```bash
+Password:
+Started erase on disk1
+Unmounting disk
+Creating the partition map
+Waiting for partitions to activate
+Formatting disk1s1 as MS-DOS (FAT32) with name RASPBIAN
+512 bytes per physical sector
+/dev/rdisk1s1: 31085888 sectors in 1942868 FAT32 clusters (8192 bytes/cluster)
+bps=512 spc=16 res=32 nft=2 mid=0xf8 spt=32 hds=255 hid=2 drv=0x80 bsec=31116286 bspf=15179 rdcl=2 infs=1 bkbs=6
+Mounting disk
+Finished erase on disk1
+```
+
+c. Unmount the SD Card
+
+```bash
+ diskutil unmountDisk /dev/disk1
+```
+
+Output:
+
+```bash
+Unmount of all volumes on disk1 was successful
+```
+
+d. Write image into the SD Card
+
+```bash
+sudo dd bs=1m if=/Users/Lucci/Downloads/2017-03-02-raspbian-jessie.img  of=/dev/disk1
+```
+
+template: 
+```bash
+sudo dd bs=1m if={raspbian image path} of=/dev/{disk identifier}
+```
+
+Output:
+
+```bash
+4190+0 records in
+4190+0 records out
+4393533440 bytes transferred in 437.696112 secs (10037863 bytes/sec)
+```
+
+e. Enable SSH
+
+In order to enable SSH, all you need to do is to put a file called ssh in the /boot/ directory.
+ 
+ ```bash
+cd /Volumes/boot
+```
+```bash
+boot touch ssh
+```
 
 See more [here](https://www.raspberrypi.org/blog/a-security-update-for-raspbian-pixel/)
 
+f. Eject the SD Card
+  
 ```bash
-cd /boot 
-touch ssh
+diskutil eject /dev/rdisk1
+``` 
+
+Output:
+
+```bash
+Disk /dev/disk1 ejected
 ```
+Now, the SD Card is ready to use.
 
  4. Plug an ethernet cable and swicth on the power supply.
  
