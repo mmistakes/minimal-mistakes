@@ -34,7 +34,6 @@ intro:
   - excerpt: ''
 ---
 
-{{ site.title[page.lang] }}
 
 {% include feature_row id="intro" type="center" %}
 
