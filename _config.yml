@@ -1,7 +1,6 @@
 # Site wide configuration
 
 title:            Site Title
-description:      Describe your website.
 locale:           en_US
 url:              http://localhost:4000
 
