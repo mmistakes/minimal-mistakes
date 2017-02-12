@@ -15,7 +15,7 @@ echo "Starting to update master\n"
 
 
 #copy data we're interested in to other place
-cp -R ../_site $HOME/_site
+cp -R _site $HOME/_site
 
 # Save some useful information
 REPO=`git config remote.origin.url`
@@ -24,14 +24,14 @@ SHA=`git rev-parse --verify HEAD`
 
 # Clone the existing master for this repo into out/
 # Create a new empty branch if master doesn't exist yet (should only happen on first deply)
-git clone $REPO $TARGET_BRANCH
+git clone $REPO out
 # Now let's go have some fun with the cloned repo
-cd $TARGET_BRANCH
+cd out
 git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
 #cd ..
 
 # Clean out existing contents
-rm -rf $TARGET_BRANCH/**/* || exit
+rm -rf out/**/* || exit
 #go into directory and copy data we're interested in to that directory
 cp -Rf $HOME/_site/* .
 
