@@ -1,3 +1,9 @@
+## [3.2.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.2)
+
+### Enhancement
+
+- Add support for image captions in Magnific Popup overlays via the [`gallery` helper](https://github.com/mmistakes/minimal-mistakes/issues/334)
+
 ## [3.2.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.1)
 
 ### Bug Fixes
