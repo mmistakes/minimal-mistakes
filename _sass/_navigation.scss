@@ -393,7 +393,6 @@
     a {
       display: block;
       padding: 0.25em 0;
-      color: inherit;
 
       @include breakpoint($large) {
         padding-top: 0.125em;
@@ -424,6 +423,10 @@
 .nav__list .nav__items {
   margin: 0;
   font-size: 1.25rem;
+
+  a {
+    color: inherit;
+  }
 
   @include breakpoint(max-width $large) {
     position: relative;
