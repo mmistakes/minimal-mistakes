@@ -2,6 +2,10 @@
 ref: choko
 title: "Κωνσταντίνος Χωριανόπουλος"
 excerpt: "Τεχνολογίες Λογισμικού"
+rank: 3
+author: choko
+---
+
 rank: "Επίκουρος Καθηγητής"
 education:
   - "Δίπλωμα Ηλεκτρονικών Μηχανικών και Μηχανικών Υπολογιστών, Πολυτεχνείο Κρήτης"
@@ -14,7 +18,6 @@ interests:
   - "Διάχυτος Υπολογισμός"
 contact:
   tel: "+30 26610 87707"
-  email: "choko@ionio.gr"
   web: "http://www.epidro.me"
   cv: "http://corfu.ionio.gr/depts/di/wp-content/uploads/2010/06/chorianopoulos_cv_gr_2011.pdf"
----
+  
