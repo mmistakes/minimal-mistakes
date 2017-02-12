@@ -7,11 +7,10 @@
    ========================================================================== */
 
 $doc-font-size              : 16;
-$doc-line-height            : 26;
 
 /* paragraph indention */
 $paragraph-indent           : false; // true, false (default)
-$indent-var                 : 0rem + ($doc-line-height / $doc-font-size);
+$indent-var                 : 1.3em;
 
 /* system typefaces */
 $serif                      : Georgia, Times, serif;
@@ -29,6 +28,16 @@ $bodoni                     : "Bodoni MT", serif;
 $calisto                    : "Calisto MT", serif;
 $garamond                   : Garamond, serif;
 
+/* type scale */
+$type-size-1                : 3.998em;
+$type-size-2                : 2.827em;
+$type-size-3                : 1.999em;
+$type-size-4                : 1.414em;
+$type-size-5                : 1em;
+$type-size-6                : 0.707em;
+$type-size-7                : 0.5em;
+$type-size-8                : 0.354em;
+
 
 /*
    Colors
@@ -41,7 +50,7 @@ $lighter-gray               : mix(#fff, $gray, 90%);
 
 $body-color                 : #fff;
 $background-color           : #f5f5f5;
-$code-background-color      : #f8f8f8;
+$code-background-color      : #fff;
 $text-color                 : #333332;
 $border-color               : $lighter-gray;
 $base-color                 : #343434;

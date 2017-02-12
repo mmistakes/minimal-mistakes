@@ -35,7 +35,7 @@
     @include prefix(2.5 of 12);
   }
 
-  font-size: 14px;
+  font-size: $type-size-6;
 }
 
 .page__footer-follow {
@@ -58,7 +58,7 @@
     padding-top: 5px;
     padding-bottom: 5px;
     font-family: $sans-serif-narrow;
-    font-size: 14px;
+    font-size: $type-size-6;
     text-transform: uppercase;
   }
 

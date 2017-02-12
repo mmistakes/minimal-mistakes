@@ -7,7 +7,7 @@ body {
   padding: 0;
   color: $text-color;
   font-family: $serif;
-  line-height: 1.5;
+  line-height: 1.45;
   background-color: $background-color;
 
   &.overflow--hidden {
@@ -17,36 +17,42 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.25;
+  margin: 1.414em 0 0.5em;
+  line-height: 1.2;
   font-family: $sans-serif;
 }
 
 h1 {
-  font-size: 32px;
+  margin-top: 0;
+  font-size: $type-size-3;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: $type-size-4;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: $type-size-5;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: $type-size-6;
 }
 
 h5 {
-  font-size: 16px;
+  font-size: $type-size-6;
 }
 
 h6 {
-  font-size: 14px;
+  font-size: $type-size-6;
 }
 
 small {
-  font-size: 0.8rem;
+  font-size: $type-size-6;
+}
+
+p {
+  margin-bottom: 1.3em;
 }
 
 u,
@@ -93,7 +99,7 @@ blockquote {
 
   cite {
     font-family: $sans-serif;
-    font-size: 14px;
+    font-size: $type-size-6;
     font-style: normal;
 
     &:before {
@@ -126,18 +132,18 @@ a {
 
 tt, code, kbd, samp, pre {
   font-family: $monospace;
-  font-size: 12px;
 }
 
 pre {
   overflow-x: auto; // add scrollbars to wide code blocks
 }
 
-p code,
-li code,
-figcaption code {
+p > code,
+li > code,
+figcaption > code {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
+  font-size: $type-size-6;
   background: $code-background-color;
   border: 1px solid $lighter-gray;
   border-radius: $border-radius;
@@ -216,10 +222,10 @@ figure {
 /* Figure captions */
 
 figcaption {
-  margin-bottom: 0.65rem;
+  margin-bottom: 0.5em;
   color: mix(#fff, $text-color, 25%);
   font-family: $sans-serif;
-  font-size: 0.8rem;
+  font-size: $type-size-6;
 
   a {
     color: inherit;
@@ -231,10 +237,6 @@ figcaption {
       color: #000;
       border-bottom-color: #000;
     }
-  }
-
-  code {
-    font-size: 0.64rem;
   }
 }
 

@@ -27,7 +27,7 @@
   ol {
     padding: 0;
     list-style: none;
-    font-size: 14px;
+    font-size: $type-size-6;
 
     @include breakpoint($large) {
       @include span(10 of 12 last);
@@ -63,7 +63,6 @@
     padding: 0;
     list-style-type: none;
     font-family: $sans-serif;
-    font-size: 12px;
   }
 
   li {
@@ -123,9 +122,8 @@
     float: left;
     width: 50%;
     font-family: $sans-serif;
-    font-size: 18px;
+    font-size: $type-size-5;
     font-weight: bold;
-    line-height: 1.5;
     text-align: center;
     text-decoration: none;
     color: mix(#fff, $gray, 25%);
@@ -257,7 +255,7 @@
     a {
       margin: 0;
       padding: 10px 20px;
-      font-size: 0.8em;
+      font-size: $type-size-5;
 
       &:hover {
         color: #000;
@@ -308,6 +306,8 @@
    ========================================================================== */
 
 .nav__list {
+  font-size: 1.5rem;
+
   a {
     display: block;
     padding: 4px 0;
@@ -327,7 +327,7 @@
   margin: 0;
   padding: 10px 20px;
   font-family: $sans-serif-narrow;
-  font-size: 16px;
+  font-size: $type-size-5;
   font-weight: bold;
   border-bottom: 1px solid $border-color;
 }
@@ -337,7 +337,7 @@
   margin: 10px 0;
   padding: 10px 0;
   font-family: $sans-serif-narrow;
-  font-size: 16px;
+  font-size: $type-size-5;
   font-weight: bold;
   border-bottom: 1px solid $border-color;
 }
