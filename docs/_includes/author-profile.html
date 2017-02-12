@@ -179,18 +179,20 @@
         </li>
       {% endif %}
 
-      {% if author.youtube contains "://" %}
-        <li>
-          <a href="{{ author.youtube }}" itemprop="sameAs">
-            <i class="fa fa-fw fa-youtube-square" aria-hidden="true"></i> YouTube
-          </a>
-        </li>
-      {% else %}
-        <li>
-          <a href="https://www.youtube.com/user/{{ author.youtube }}" itemprop="sameAs">
-            <i class="fa fa-fw fa-youtube-square" aria-hidden="true"></i> YouTube
-          </a>
-        </li>
+      {% if author.youtube %}
+        {% if author.youtube contains "://" %}
+          <li>
+            <a href="{{ author.youtube }}" itemprop="sameAs">
+              <i class="fa fa-fw fa-youtube-square" aria-hidden="true"></i> YouTube
+            </a>
+          </li>
+        {% else author.youtube %}
+          <li>
+            <a href="https://www.youtube.com/user/{{ author.youtube }}" itemprop="sameAs">
+              <i class="fa fa-fw fa-youtube-square" aria-hidden="true"></i> YouTube
+            </a>
+          </li>
+        {% endif %}
       {% endif %}
 
       {% if author.soundcloud %}
