@@ -593,6 +593,7 @@ $button-size: 1.5rem;
     }    
   }
   a {
+	  display: block;
 	  padding: 8px 20px;
 	  text-decoration: none !important;
 	  text-transform: uppercase;
@@ -604,6 +605,13 @@ $button-size: 1.5rem;
 	  &:hover {
 	    opacity: 1;
 	  }
+	}
+	span {
+		display: none;
+		@media #{$medium} {
+			display: inline;
+			padding-left: 5px;
+		}
 	}
 	h4 {
 		@include font-rem(14);
