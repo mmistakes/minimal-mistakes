@@ -8,7 +8,7 @@ body {
   color: $text-color;
   font-family: $serif;
   line-height: 1.5;
-  background-color: $body-color;
+  background-color: $background-color;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -118,18 +118,6 @@ a {
   &:hover {
     img {
       box-shadow: 0 0 10px rgba(#000, 0.25);
-    }
-  }
-}
-
-/* lists */
-
-ol, ul {
-  @include breakpoint($small) {
-    padding-left: 0;
-
-    ol, ul {
-      padding: 0.5em 1em;
     }
   }
 }

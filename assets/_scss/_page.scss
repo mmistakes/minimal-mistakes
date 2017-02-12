@@ -22,18 +22,13 @@
 }
 
 .page {
-  @include breakpoint($medium) {
-    padding-right: $right-sidebar-width-narrow;
-  }
-
   @include breakpoint($large) {
     @include span(10 of 12 last);
-    padding-right: $right-sidebar-width;
+    @include suffix(2 of 12);
   }
 
   @include breakpoint($x-large) {
     @include prefix(0.5 of 12);
-    padding-right: $right-sidebar-width-wide;
   }
 
   .page__inner-wrap {
@@ -225,7 +220,7 @@
 
   &:hover {
     text-decoration: none;
-    border-color: $gray;
+    color: $gray;
   }
 }
 

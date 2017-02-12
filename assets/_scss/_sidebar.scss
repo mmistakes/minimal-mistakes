@@ -10,13 +10,8 @@
   @include clearfix();
   margin-bottom: 1em;
 
-  @include breakpoint($medium) {
-    padding-right: $right-sidebar-width-narrow;
-  }
-
   @include breakpoint($large) {
     @include span(2 of 12);
-    @include suffix(0.25 of 12);
   }
 
   @include breakpoint($x-large) {
@@ -48,29 +43,16 @@
 }
 
 .sidebar__right {
-  @include breakpoint($medium) {
-    position: absolute;
-    top: 0;
-    right: 1em;
-    width: $right-sidebar-width-narrow;
-    padding-left: 2em;
-
-    @include breakpoint($large) {
-      width: $right-sidebar-width;
-    }
-
-    @include breakpoint($x-large) {
-      width: $right-sidebar-width-wide;
-      padding-left: span(1 of 12);
-    }
-  }
+  margin-bottom: 1em;
 
   @include breakpoint($large) {
-    right: calc(50% - (0.5 * #{$large}) + 1em); // 50% - 1/2 of wrapper's max-width + wrapper padding
+    float: right;
+    width: $right-sidebar-width-narrow;
+    margin-left: span(0.5 of 12);
   }
 
   @include breakpoint($x-large) {
-    right: calc(50% - (0.5 * #{$x-large}) + 1em); // 50% - 1/2 of wrapper's max-width + wrapper padding
+    width: $right-sidebar-width;
   }
 }
 

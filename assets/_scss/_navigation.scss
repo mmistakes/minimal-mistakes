@@ -53,8 +53,10 @@
    ========================================================================== */
 
 .pagination {
-  margin-top: 1em;
-  padding-top: 1em;
+  @include full();
+  @include clearfix();
+  margin-top: 2em;
+  padding-top: 2em;
   border-top: 1px solid $border-color;
 
   ul {
@@ -77,6 +79,37 @@
   .current {
     font-weight: bold;
   }
+
+  /* next/previous buttons */
+  &--pager {
+    display: block;
+    padding: 1em 2em;
+    float: left;
+    width: 50%;
+    font-family: $sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    color: mix(#fff, $gray, 25%);
+    border: 1px solid $light-gray;
+    border-radius: $border-radius;
+    &:hover {
+      color: $gray;
+    }
+
+    &:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &:last-child {
+      margin-left: -1px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
 }
 
 
@@ -87,7 +120,7 @@
 .greedy-nav {
   position: relative;
   min-width: 250px;
-  background: #fff;
+  background: $background-color;
 
   a {
     display: block;
