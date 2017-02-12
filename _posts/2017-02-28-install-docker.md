@@ -4,16 +4,16 @@ related: true
 header:
   overlay_color: "#000"
   overlay_filter: "0"
-  overlay_image: /assets/images/caspar-rubin-224229.jpg
+  overlay_image: /assets/images/boba-jovanovic-65138.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-  teaser: /assets/images/caspar-rubin-224229.jpg
+  teaser: /assets/images/boba-jovanovic-65138.jpg
 categories:
   - Linux
 tags:
   - Docker
   - Unix
 ---
-TODO description
+The objective of this tutorial is to install Docker engine and share some useful command line to interact with it.
 
 
 - [What's Docker](#what-docker)

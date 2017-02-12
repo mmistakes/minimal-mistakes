@@ -23,8 +23,8 @@ tags:
   - REST
   - Internet of Things
 ---
-TODO description
-
+The objective of this tutorial is to develop a reactive server which consuming data from a rabbitmq message broker and
+publishing data to client via websocket.
 
 - [Prerequisites](#prerequisites)
 

@@ -30,9 +30,7 @@ tags:
   - Internet of Things
 ---
 The objective of this tutorial is to design a full reactive architecture in order to interact with a Raspberry PI 3 as
-μService which produce temperature and humidity data.
-
-
+μService producing temperature and humidity data.
 
 - [Prerequisites](#prerequisites)
 - [Overview](#overview)
@@ -64,9 +62,9 @@ The objective of this tutorial is to design a full reactive architecture in orde
 
 #### Start the full stack with docker-compose
 
-a) Stop all running your docker containers
+a. Stop all running your docker containers
 
-b) Adpat the docker-compose file according your environment
+b. Adpat the docker-compose file according your environment
 
 ```yaml
 version: '2'
@@ -99,11 +97,11 @@ services:
 ```
 [See code here](https://raw.githubusercontent.com/jluccisano/portfolio/master/docker-compose.yml)
 
-c) run
+c. Run
 ```bash
 docker-compose up -d
 ```
-d) Go to http://YOUR_HOST:8089
+d. Go to http://YOUR_HOST:8089
 
 #### Final Result
 

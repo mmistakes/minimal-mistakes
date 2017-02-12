@@ -4,9 +4,9 @@ related: true
 header:
   overlay_color: "#000"
   overlay_filter: "0"
-  overlay_image: /assets/images/caspar-rubin-224229.jpg
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-  teaser: /assets/images/caspar-rubin-224229.jpg
+  overlay_image: /assets/images/ben-moore-101.jpg
+  caption: ""
+  teaser: /assets/images/ben-moore-101.jpg
 categories:
   - Raspberry
 tags:
@@ -14,7 +14,7 @@ tags:
   - Linux
   - SSH
 ---
-TODO description
+The objective of this tutorial is to set up a Raspberry PI 3 from scratch.
 
 
 - [Prerequisites](#prerequisites)
@@ -171,12 +171,8 @@ Note: if you want to access to your Raspberry outside your LAN. You must
 forward port of your router.
 
 Useful links: 
- - http://weworkweplay.com/play/automatically-connect-a-raspberry-pi-to-a-wifi-network/
- - https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md
-
-#### To go further
-
-[Interacting with GPIO]({{ site.url }}{{ site.baseurl }}/raspberry/test-gpio)
+ - [Automatically connect a raspberry pi to a wifi network]("http://weworkweplay.com/play/automatically-connect-a-raspberry-pi-to-a-wifi-network/")
+ - [Raspberry wireless configuration]("https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md")
 
 
 

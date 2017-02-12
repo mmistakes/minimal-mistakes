@@ -17,9 +17,14 @@ tags:
   - WebSocket
   - Git
   - REST
+  - D3js
+  - HTML5
+  - JavaScript
+  - Stomp
   - Internet of Things
 ---
-TODO description
+The objective of this tutorial is to develop a reactive client which consuming temperature and 
+ humidity via websocket and showing a dashboard of continuous data via a REST API.
 
 
 - [Prerequisites](#prerequisites)

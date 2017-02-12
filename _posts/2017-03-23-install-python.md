@@ -14,7 +14,7 @@ tags:
   - Unix
   - Python
 ---
-TODO description
+The objective of this tutorial is to install Python and run it with virtual environment.
 
 
 - [Prerequisites](#prerequisites)

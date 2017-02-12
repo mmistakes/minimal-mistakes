@@ -13,7 +13,7 @@ tags:
   - InfluxDB
   - Docker
 ---
-TODO description
+The objective of this tutorial is to install an InfluxDB container with Docker and interacting with it.
 
 
 - [Prerequisites](#prerequisites)

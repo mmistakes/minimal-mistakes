@@ -13,7 +13,7 @@ tags:
   - Raspberry PI
   - Linux
 ---
-TODO description
+The objective of this tutorial is to set up basic configuration of Raspbian distribution.
 
 
 - [Prerequisites](#prerequisites)

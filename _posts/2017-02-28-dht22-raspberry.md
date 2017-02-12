@@ -16,7 +16,7 @@ tags:
   - Python
   - Linux
 ---
-TODO description
+The objective of this tutorial is to develop a program interacting with DHT22 Sensor.
 
 
 - [Prerequisites](#prerequisites)
@@ -47,7 +47,6 @@ and maybe with better prices.
 - [Set up a Raspberry PI 3]({{ site.url }}{{ site.baseurl }}/raspberry/setup-raspberry)
 - [Install Python]({{ site.url }}{{ site.baseurl }}/linux/install-python)
 
-
 #### Electronic wiring
 
 {% capture fig_img %}
@@ -58,15 +57,15 @@ and maybe with better prices.
 
 Adafruit is a Python library to read the DHT series of humidity and temperature sensors on a Raspberry Pi.
 
-##### a) Download the latest version
+##### Download the latest version
 ```bash
 wget https://github.com/adafruit/Adafruit_Python_DHT/archive/master.zip
 ```
-##### b) Unzip the package
+##### Unzip the package
 ```bash
 unzip master.zip
 ```
-##### c) Installation
+##### Installation
 ```bash
 cd Adafruit_Python_DHT-master/
 sudo python setup.py install
@@ -87,11 +86,11 @@ See how to create a virtual environment [here]({{ site.url }}{{ site.baseurl }}/
 
 Get Series of Temperature and Humdity from DHT22
 
-##### a) Create new script
+##### Create new script
 ```bash
 touch getDHT22Series.py
 ```
-##### b) Edit and add this code below
+##### Edit and add this code below
 
 ```bash
 vim getDHT22Series.py
@@ -115,21 +114,16 @@ if __name__ == "__main__": getData_func()
 
 See source [here](https://github.com/jluccisano/raspberry-scripts/blob/master/scripts/dht22.py)
 
-##### c) Execute the code
+##### Execute the code
 
 ```bash
 python getDHT22Series.py
 ```
 
 Output: 
-```
+```text
 Temperature=23.8*C  Humidity=36.3%
 ```
-
-#### To go further
-
-- [Create a reactive meteo station]({{ site.url }}{{ site.baseurl }}/automation/reactive-meteo-station)
-- [Create a service]({{ site.url }}{{ site.baseurl }}/linux/create-service)
 
 
 

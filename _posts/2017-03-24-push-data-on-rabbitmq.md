@@ -4,9 +4,9 @@ related: true
 header:
   overlay_color: "#000"
   overlay_filter: "0"
-  overlay_image: /assets/images/caspar-rubin-224229.jpg
+  overlay_image: /assets/images/ray-hennessy-118035.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-  teaser: /assets/images/caspar-rubin-224229.jpg
+  teaser: /assets/images/ray-hennessy-118035.jpg
 categories:
   - Computer
 tags:
@@ -18,7 +18,7 @@ tags:
   - μService
   - Internet of Things
 ---
-TODO description
+The objective of this tutorial is to publish temperature and humidity to a RabbitMQ message broker.
 
 
 - [Prerequisites](#prerequisites)

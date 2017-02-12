@@ -13,7 +13,8 @@ tags:
   - SSH
   - Unix
 ---
-TODO description
+The objective of this tutorial is to generate a SSH Key in order to connect to your server without set your 
+password each time.
 
 
 - [Prerequisites](#prerequisites)
