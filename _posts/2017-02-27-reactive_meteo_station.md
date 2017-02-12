@@ -2,7 +2,7 @@
 title: "Reactive Meteo Station"
 excerpt_separator: "<!--more-->"
 header:
-  image: /assets/images/anthony-rossbach-59486.jpg
+  image: /assets/images/jordan-ladikos-62738.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 categories:
   - Home automation
