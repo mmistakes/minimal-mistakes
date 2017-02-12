@@ -96,3 +96,9 @@ HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, c
 Make any link standout more when applying the `.btn` class.
 
 <div markdown="0"><a href="#" class="btn">This is a button</a></div>
+
+
+## Notices
+
+**Watch out!** You can also add notices by appending `{: .notice}` to a paragraph.
+{: .notice}
