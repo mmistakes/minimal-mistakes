@@ -1,0 +1,53 @@
+---
+title: "Edge Case: Many Tags"
+date: 2009-06-01T01:00:34+00:00
+categories:
+  - Edge Case
+tags:
+  - 8BIT
+  - alignment
+  - Articles
+  - captions
+  - categories
+  - chat
+  - Codex
+  - comments
+  - content
+  - css
+  - dowork
+  - edge case
+  - embeds
+  - excerpt
+  - Fail
+  - featured image
+  - FTW
+  - Fun
+  - gallery
+  - html
+  - image
+  - jetpack
+  - layout
+  - link
+  - Love
+  - markup
+  - Mothership
+  - Must Read
+  - Nailed It
+  - Pictures
+  - Post Formats
+  - quote
+  - shortcode
+  - standard
+  - Success
+  - Swagger
+  - Tags
+  - template
+  - title
+  - twitter
+  - Unseen
+  - video
+  - videopress
+  - WordPress
+  - wordpress.tv
+---
+This post has many tags.
