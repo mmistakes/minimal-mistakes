@@ -226,8 +226,7 @@ $button-size: 1.5rem;
 	h1 {
 		margin-top: 0;
 	}
-	.post,
-	.page {
+	.post {
 		@include container;
 		@include grid(12,10);
 		@include prefix(12,1);
@@ -247,8 +246,8 @@ $button-size: 1.5rem;
 	}
 }
 
-/* Index listing specific styling */
-#index {
+/* Archive listing specific styling */
+.archive {
 	@include container;
 	@include grid(12,10);
 	@include prefix(12,1);
@@ -319,22 +318,6 @@ $button-size: 1.5rem;
 		height: auto;
 		-ms-interpolation-mode: bicubic;
 	}
-	.headline-wrap {
-		position: absolute;
-		bottom: 25px;
-		@include prefix(12,1);
-		@media #{$small} {
-			left: 25%;
-			margin-left: 0;
-		}
-		@media #{$x-large} {
-			@include prefix(12,1);
-		}
-		h1, h2 {
-			color: $white;
-			@include text-shadow(0 1px 2px rgba(0,0,0,.25));
-		}
-	}
 }
 
 /* Post byline */
@@ -342,21 +325,42 @@ $button-size: 1.5rem;
 	clear: both;
 	font-size: 80%;
 }
-.article-author-side,
-.article-author-bottom {
-	h3 {
-		margin-bottom: 0;
-	}
-	p {
-		font-size: 80%;
-		font-style: italic;
-	}
+
+/* Author profile */
+.author-profile {
+	display: none;
 	a, a:hover {
 		border-bottom: 0 solid transparent;
 	}
+	@media #{$small} {
+		display: block;
+		@include grid(12,2);
+		@include prefix(12,0.5);
+		@include suffix(12,0.5);
+	}
+	@media #{$x-large} {
+		@include grid(12,1.5);
+		@include prefix(12,2);
+	}
 }
-
-/* Default social media links in author sidebar */
+.author-name {
+	margin-bottom: 0;
+	@media #{$small} {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+.author-bio {
+	font-size: 80%;
+	font-style: italic;
+	@media #{$small} {
+		margin-bottom: 20px;
+	}
+}
+.author-avatar {
+	max-width: 110px;
+	@include rounded(150px);
+}
 .author-social {
   display: block;
   margin-bottom: 5px;
@@ -375,73 +379,16 @@ $button-size: 1.5rem;
 		margin-right: 5px;
 	}
 }
-
-/* Author sidebar */
-.article-author-side {
-	display: none;
-	.bio-photo {
-		max-width: 110px;
-		@include rounded(150px);
-	}
-	@media #{$small} {
-		display: block;
-		@include grid(12,2);
-		@include prefix(12,0.5);
-		@include suffix(12,0.5);
-		h3,
-		p,
-		.author-social {
-			display: block;
-			max-width: 125px;
-		}
-		h3 {
-			margin-top: 10px;
-			margin-bottom: 10px;
-		}
-		p {
-			margin-bottom: 20px;
-		}
-		.author-social {
-			margin-bottom: 5px;
-		}
-	}
-	@media #{$large} {
-		h3,
-		.bio-photo,
-		p,
-		.author-social {
-			max-width: 150px;
-		}
-	}
-	@media #{$x-large} {
-		@include grid(12,1.5);
-		@include prefix(12,2);
-	}
+@media #{$small} {
+	display: block;
+	max-width: 125px;
 }
-
-/* Author module - mobile only */
-.article-author-bottom {
-	margin-bottom: 1em;
-	@media #{$small} {
-		display: none;
-	}
-	.bio-photo {
-		float: left;
-		margin-right: 25px;
-		max-width: 100px;
-		@include rounded(150px);
-	}
+@media #{$large} {
+	.author-name,
+	.author-avatar,
+	.author-bio,
 	.author-social {
-		display: inline-block;
-		margin-right: 10px;
-	}
-	@media #{$large} {
-		h3,
-		.bio-photo,
-		p,
-		.author-social {
-			max-width: 150px;
-		}
+		max-width: 150px;
 	}
 }
 

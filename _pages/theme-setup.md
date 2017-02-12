@@ -1,15 +1,18 @@
 ---
-layout: page
+layout: post
+permalink: /theme-setup/
 title: Theme Setup
 modified: 2016-01-19
 excerpt: "Instructions on how to install and customize the Jekyll theme Minimal Mistakes."
+share: true
+comments: true
 image:
   feature: sample-image-3.jpg
   credit: WeGraphics
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 
-{% include _toc.html %}
+{% include toc.html %}
 
 ## Installation
 
@@ -59,14 +62,14 @@ How Minimal Mistakes is organized and what the various files are. All posts, lay
 {% highlight text %}
 minimal-mistakes/
 ├── _includes/
-|    ├── _author-bio.html        # bio stuff layout. pulls optional owner data from _config.yml
-|    ├── _browser-upgrade.html   # prompt to install a modern browser for < IE9
-|    ├── _disqus_comments.html   # Disqus comments script
-|    ├── _footer.html            # site footer
-|    ├── _head.html              # site head
-|    ├── _navigation.html        # site top navigation
-|    ├── _open-graph.html        # Twitter Cards and Open Graph meta data
-|    └── _scripts.html           # site scripts
+|    ├── author-bio.html        # bio stuff layout. pulls optional owner data from _config.yml
+|    ├── browser-upgrade.html   # prompt to install a modern browser for < IE9
+|    ├── disqus-comments.html   # Disqus comments script
+|    ├── footer.html            # site footer
+|    ├── head.html              # site head
+|    ├── navigation.html        # site top navigation
+|    ├── open-graph.html        # Twitter Cards and Open Graph meta data
+|    └── scripts.html           # site scripts
 ├── _layouts/
 |    ├── home.html               # homepage layout
 |    ├── page.html               # page layout
@@ -235,23 +238,21 @@ Start by modifying `authors.yml` file in the `_data` folder and add your authors
 # Authors
 
 billy_rick:
-  name: Billy Rick
-  web: http://thewhip.com
-  email: billy@rick.com
-  bio: "What do you want, jewels? I am a very extravagant man."
-  avatar: bio-photo-2.jpg
-  twitter: extravagantman
-  google:
-    plus: +BillyRick
+  name        : "Billy Rick"
+  web         : "http://thewhip.com"
+  email       : "billy@rick.com"
+  bio         : "What do you want, jewels? I am a very extravagant man."
+  avatar      : "bio-photo-2.jpg"
+  twitter     : "extravagantman"
+  google_plus : "BillyRick"
 
 cornelius_fiddlebone:
-  name: Cornelius Fiddlebone
-  email: cornelius@thewhip.com
-  bio: "I ordered what?"
-  avatar: bio-photo.jpg
-  twitter: rhymeswithsackit
-  google:
-    plus: +CorneliusFiddlebone
+  name        : "Cornelius Fiddlebone"
+  email       : "cornelius@thewhip.com"
+  bio         : "I ordered what?"
+  avatar      : "bio-photo.jpg"
+  twitter     : "rhymeswithsackit"
+  google_plus : "CorneliusFiddlebone"
 {% endhighlight %}
 
 To assign Billy Rick as an author for our post. We'd add the following YAML front matter to a post:
@@ -265,7 +266,7 @@ author: billy_rick
 To include an auto-generated **table of contents** for posts and pages, add the following `_include` before the actual content. [Kramdown will take care of the rest](http://kramdown.rubyforge.org/converter/html.html#toc) and convert all headlines into list of links.
 
 {% highlight html %}
-{% raw %}{% include _toc.html %}{% endraw %}
+{% raw %}{% include toc.html %}{% endraw %}
 {% endhighlight %}
 
 ### Paragraph Indentation
@@ -300,7 +301,7 @@ Not sure if this only effects Kramdown or if it's an issue with Markdown in gene
 
 ### Social Sharing Links
 
-Social sharing links for Twitter, Facebook, and Google+ are included on posts/pages by default. To hide them on specific posts or pages add `share: false` to the YAML Front Matter. If you'd like to use different social networks modify `_includes/_social-share.html` to your liking. Icons are set using [Font Awesome](http://fontawesome.io).
+Social sharing links for Twitter, Facebook, and Google+ are included on posts/pages by default. To hide them on specific posts or pages add `share: false` to the YAML Front Matter. If you'd like to use different social networks modify `_includes/social-share.html` to your liking. Icons are set using [Font Awesome](http://fontawesome.io).
 
 ---
 
