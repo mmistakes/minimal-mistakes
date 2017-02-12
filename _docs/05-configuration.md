@@ -131,10 +131,12 @@ If you add `read_time: false` to a post's YAML Front Matter it will override the
 
 Commenting for [**Disqus**](https://disqus.com/), [**Facebook**](https://developers.facebook.com/docs/plugins/comments), and **Google+** are built into the theme. First set the comment provider you'd like to use: 
 
-* `disqus`: Disqus
-* `facebook`: Facebook Comments
-* `google-plus`: Google+
-* `custom`: other comment providers
+|               | Comment Provider  |
+| ------------- | ----------------  |
+| `disqus`      | Disqus            |
+| `facebook`    | Facebook Comments |
+| `google-plus` | Google+ Comments  |
+| `custom`      | Other             |
 
 Then add `comments: true` to each document you want comments visible on.
 
@@ -310,11 +312,13 @@ social:
 
 Analytics is disabled by default. To enable globally select one of the following:
 
-* `google`: [Google Standard Analytics](https://www.google.com/analytics/)
-* `google-universal`: [Google Universal Analytics](https://www.google.com/analytics/)
-* `custom`: other analytics providers
+|                    | Analytics Provider                                              |
+| ------------------ | ------------------                                              |
+| `google`           | [Google Standard Analytics](https://www.google.com/analytics/)  |
+| `google-universal` | [Google Universal Analytics](https://www.google.com/analytics/) |
+| `custom`           | Other analytics providers                                       |
 
-For Google Analytics also add your Tracking Code:
+For Google Analytics add your Tracking Code:
 
 ```yaml
 analytics:
@@ -420,7 +424,7 @@ You'll also need to include some modified Liquid to properly use the paginator, 
 
 Set the time zone for site generation. This sets the TZ environment variable, which Ruby uses to handle time and date creation and manipulation. Any entry from the [IANA Time Zone Database](http://en.wikipedia.org/wiki/List_of_tz_database_time_zones) is valid. The default is the local time zone, as set by your operating system.
 
-```yaml:
+```yaml
 timezone: America/New_York
 ```
 
@@ -428,11 +432,13 @@ timezone: America/New_York
 
 When hosting with GitHub Pages a small [set of gems](https://pages.github.com/versions/) have been whitelisted for use. The theme uses a few of them which can be found under `gems`. Additional settings and configurations are documented in the links below.
 
-* [jekyll-paginate][jekyll-paginate] -- Pagination Generator for Jekyll.
-* [jekyll-sitemap][jekyll-sitemap] -- Jekyll plugin to silently generate a sitemaps.org compliant sitemap for your Jekyll site.
-* [jekyll-gist][jekyll-gist] -- Liquid tag for displaying GitHub Gists in Jekyll sites.
-* [jekyll-feed][jekyll-feed] -- A Jekyll plugin to generate an Atom (RSS-like) feed of your Jekyll posts.
-* [jemoji][jemoji] -- GitHub-flavored emoji plugin for Jekyll
+| Plugin                             | Description |
+| ------                             | ----------- |
+| [jekyll-paginate][jekyll-paginate] | Pagination Generator for Jekyll. |
+| [jekyll-sitemap][jekyll-sitemap] |Jekyll plugin to silently generate a sitemaps.org compliant sitemap for your Jekyll site. |
+| [jekyll-gist][jekyll-gist] | Liquid tag for displaying GitHub Gists in Jekyll sites. |
+| [jekyll-feed][jekyll-feed] | A Jekyll plugin to generate an Atom (RSS-like) feed of your Jekyll posts. |
+| [jemoji][jemoji] | GitHub-flavored emoji plugin for Jekyll. |
 
 [jekyll-paginate]: https://github.com/jekyll/jekyll-paginate
 [jekyll-sitemap]: https://github.com/jekyll/jekyll-sitemap
