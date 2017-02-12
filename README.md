@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/jluccisano/jluccisano.github.io.svg?branch=master)](https://travis-ci.org/jluccisano/jluccisano.github.io)
+[![Build Status](https://travis-ci.org/jluccisano/jluccisano.github.io.svg?branch=develop)](https://travis-ci.org/jluccisano/jluccisano.github.io)
 
 
 https://gist.github.com/domenic/ec8b0fc8ab45f39403dd
