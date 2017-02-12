@@ -1,6 +1,11 @@
 ---
 title: "Template: Featured Image (Horizontal)"
 date: 2012-03-15T15:15:12+00:00
+header:
+  image: unsplash-image-1.jpg
+  credit:
+    caption: Unsplash
+    url: https://unsplash.com
 categories:
   - Template
   - Uncategorized
