@@ -3,6 +3,7 @@ layout: post
 title: Syntax Highlighting Post
 excerpt: "Demo post displaying the various ways of highlighting code in Markdown."
 tags: [sample post, code, highlighting]
+modified: 2014-08-09T13:39:56.408513-04:00
 comments: true
 ---
 
@@ -10,7 +11,7 @@ comments: true
 
 ### Pygments Code Blocks
 
-To modify styling and highlight colors edit `/assets/less/pygments.less` and compile `main.less` with your favorite preprocessor. Or edit `main.css` if that's your thing, the classes you want to modify all begin with `.highlight`.
+To modify styling and highlight colors edit `/_sass/pygments.less`.
 
 {% highlight css %}
 #container {
@@ -55,6 +56,7 @@ module Jekyll
 end
 {% endhighlight %}
 
+Remember, to prettify code you need to wrap it in special Liquid tags. Code fenced blocks won't get the job done. For more info on how to highlight code snippes in Jekyll, check the [official docs](http://jekyllrb.com/docs/posts/#highlighting-code-snippets).
 
 ### Standard Code Block
 
