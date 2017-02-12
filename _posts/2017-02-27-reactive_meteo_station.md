@@ -46,7 +46,7 @@ The objective of this tutorial is to design a full reactive architecture in orde
 
 ### Overview
 
-![architecture_overview](../assets/images/reactive-architecture.png)
+![architecture_overview](/assets/images/reactive-architecture.png)
 
 | Component        |    Role       | Description  |
 | ------------- |:-------------:| -----:|
