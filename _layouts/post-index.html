@@ -2,6 +2,8 @@
 layout: default
 ---
 
+{% include absolute-url.liquid %}
+
 <div id="index">
   <h1>{{ page.title }}</h1>
   {% capture written_year %}'None'{% endcapture %}
@@ -16,7 +18,7 @@ layout: default
         <h2 class="link-post"><a href="{{ absurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h2>
       {% else %}
         <h2><a href="{{ absurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-        <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+        <p>{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</p>
       {% endif %}
     </article>
   {% endfor %}
