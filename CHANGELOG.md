@@ -1,3 +1,10 @@
+## [3.2.13](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.13)
+
+### Enhancement
+
+- Add English default UI text for Canada, Great Britain, and Australia. [#377](https://github.com/mmistakes/minimal-mistakes/issues/377)
+- Switch default locale from `en-US` to `en`.
+
 ## [3.2.12](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.12)
 
 ### Enhancements
