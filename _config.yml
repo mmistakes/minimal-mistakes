@@ -7,14 +7,17 @@
 
 # Site Settings
 locale                   : en_US
-title                    : "Your awesome site"
-name                     : &name "Your Name"
+title                    : "Your Awesome Site"
 title_separator          : "-"
+name                     : &name "Your Name"
 description              : &description "Write an awesome description for your new site here."
 url                      : "http://localhost:4000" # the base hostname & protocol for your site
 baseurl                  : "/minimal-mistakes" # the subpath of your site, e.g. /blog
 email                    : "your-email@domain.com"
 logo                     : "site-logo.png"
+breadcrumbs              : # true / false (default)
+breadcrumb_home_label    : "Home"
+breadcrumb_separator     : "/"
 twitter:
   username               : &twitter "site_twitter"
 facebook:
@@ -135,7 +138,7 @@ gems:
   - jekyll-gist
 
 # Outputting
-permalink: /:title/
+permalink: /:categories/:title/
 paginate_path: /page:num
 timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
