@@ -1766,9 +1766,6 @@ html {
   display: inline;
   margin-right: 25px;
 }
-.top-navigation li:after {
-  content: ".";
-}
 .top-navigation li a {
   decoration: none;
   border-bottom: 0 solid transparent;
