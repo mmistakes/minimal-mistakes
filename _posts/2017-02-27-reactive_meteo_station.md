@@ -40,6 +40,8 @@ The objective of this tutorial is to design a full reactive architecture in orde
 - Interacting with DHT22 Sensor [here](2017-02-28-dht22_raspberry.md)
 - A server or your own computer with Docker [here](2017-02-28-install_docker.md)
 - Install Git (optional) [here](https://git-scm.com/download/linux)
+- Push data to rabbitMQ [here](2017-03-24-push-data-on-rabbitmq.md)
+- Consume data from rabbitMQ [here](2017-03-24-consume-data-from-rabbitmq.md)
 
 ### Overview
 
@@ -54,51 +56,7 @@ The objective of this tutorial is to design a full reactive architecture in orde
 | Reactive-client  | GUI | The GUI consumes data via WebSocket with Reactive-Server |
 
 
-
-#### Step 1: Push temperature and humidity to RabbitMQ
-
-a) Run rabbitmq image
-```bash
-docker run -d --hostname my-rabbit --name some-rabbit -p 5672:5672 -p 8080:15672 rabbitmq:3-management
-```
-see more [here](https://hub.docker.com/_/rabbitmq/)
-
-You can see RabbitMQ management interface on port 8080.
-
-b) Create a publisher
-
-Show source: https://github.com/jluccisano/raspberry-scripts/blob/master/scripts/publisher.py
-
-c) Create a consumer
-
-Consume temperature and humidity from Queue
-tail -f /var/log/dht22/send.log
-see this post [here](https://github.com/jluccisano/raspberry-scripts/blob/master/scripts/consume.py)
-
-#### Step 2: Reactive-Server
-
-- InfluxDB
-
-```bash
-docker run -d -p 8083:8083 -p 8086:8086 \
-      --name=influxdb \
-      -v /usr/lib/influxdb:/var/lib/influxdb \
-      influxdb
-```
-see more [here](https://hub.docker.com/_/influxdb/)
-
-- Consume/Aggregate data into database
-
-#### Step 3: Reactive-Client
-
-Create reactive client to consume data from Browser
-  - Install ReactJS
-  - Create RxJs consume socket
-  - Create Temperature Widget with D3Js
-  - Push data to browser client vi Websockets (STOMP)
-
-
-#### Step X: Start the full stack with docker-compose
+#### Start the full stack with docker-compose
 
 a) Stop all running your docker containers
 
