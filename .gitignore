@@ -7,4 +7,4 @@ _asset_bundler_cache
 _site
 codekit-config.json
 node_modules
-.log
+npm-debug.log
