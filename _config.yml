@@ -1,8 +1,8 @@
 title:            Site Title
 tagline:          A short tagline
 description:      Describe your website.
-#Comment out url when working locally to resolve base urls correctly
-url:              http://your-site.com
+# Your site's domain goes here. Leave localhost server or blank when working locally.
+url:              http://localhost:4000
 
 # Owner/author information
 owner:
@@ -31,11 +31,11 @@ bing_verify:
 # For external links add external: true
 links:
   - title: About
-    url: /about
+    url: /about/
   - title: Articles
-    url: /articles
+    url: /articles/
   - title: Theme Setup
-    url: /theme-setup
+    url: /theme-setup/
   - title: Made Mistakes
     url: http://mademistakes.com
     external: true
