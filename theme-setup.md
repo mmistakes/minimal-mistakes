@@ -12,7 +12,7 @@ image:
 
 <section id="table-of-contents" class="toc">
   <header>
-    <h3 class="delta">Contents</h3>
+    <h3 >Contents</h3>
   </header>
 <div id="drawer" markdown="1">
 *  Auto generated table of contents
@@ -131,7 +131,7 @@ Any article or page that you want a *table of contents* to render insert the fol
 {% highlight html %}
 <section id="table-of-contents" class="toc">
   <header>
-    <h3 class="delta">Contents</h3>
+    <h3>Contents</h3>
   </header>
 <div id="drawer" markdown="1">
 *  Auto generated table of contents
