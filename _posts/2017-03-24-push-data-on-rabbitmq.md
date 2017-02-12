@@ -20,19 +20,21 @@ tags:
 ### Push temperature and humidity to RabbitMQ
 
 - [Prerequisites](#prerequisites)
+- [Run RabbitMQ container](#prerequisites)
+- [Create a publisher on your Raspberry](#create-publisher-on-your-raspberry)
+- [Create a consumer on your Raspberry](#create-consumer-on-your-raspberry)
+- [Start publisher as Service](#start-publisher-as-service)
+
+####  Prerequisites
+
+- [Set up a Raspberry PI 3 ](2017-01-14-setup_raspberry.md)
+- [Interacting with DHT22 Sensor](2017-02-28-dht22_raspberry.md)
+- [A server or your own computer with Docker](2017-02-28-install_docker.md)
+- [Install Git](https://git-scm.com/download/linux)
 
 
-###  Prerequisites
+#### Run RabbitMQ container
 
-- Set up a Raspberry PI 3 [here](2017-01-14-setup_raspberry.md)
-- Interacting with DHT22 Sensor [here](2017-02-28-dht22_raspberry.md)
-- A server or your own computer with Docker [here](2017-02-28-install_docker.md)
-- Install Git (optional) [here](https://git-scm.com/download/linux)
-
-
-On your server:
-
-a) Run rabbitmq image
 ```bash
 docker run -d --hostname my-rabbit --name my-rabbit -p 5672:5672 -p 8080:15672 rabbitmq:3-management
 ```
@@ -40,20 +42,22 @@ see more [here](https://hub.docker.com/_/rabbitmq/)
 
 You can see RabbitMQ management interface on port 8080.
 
-On your Raspberry
+#### Create a publisher on your Raspberry
 
-a) Publisher
+1) Clone raspberry-scripts project
 
-- Clone raspberry-scripts project
 ```bash
 git clone git@github.com:jluccisano/raspberry-scripts.git
 ```
 
-- Go to 
+2) Go to 
 ```bash
 cd raspberry-scripts/scripts
 ```
-- Edit the _config.yml
+3) Edit the _config.yml
+
+Replace by your config
+
 ```bash
 vim _config.yml
 ```
@@ -67,7 +71,7 @@ rabbitmq:
     queue: event     
     logPath: /var/log/dht22
 ```
-- Start virtualenv
+4) Start virtualenv (optional)
 
 ```bash
 virtualenv -p /usr/bin/python2.7 ~/env2.7/
@@ -83,7 +87,7 @@ pip install pyyaml
 ```
 see more [here](https://pika.readthedocs.io/en/0.10.0/)
 
-- Start publisher
+5) Start publisher
 
 ```bash
 python publisher.py &
@@ -93,11 +97,11 @@ Show log:
 tail -f /var/log/dht22/publisher.log
 ```
 
-based on https://pika.readthedocs.io/en/0.10.0/examples/asynchronous_publisher_example.html
+Note: code based on https://pika.readthedocs.io/en/0.10.0/examples/asynchronous_publisher_example.html
 
-c) Consumer
+#### Create a consumer on your Raspberry
 
-- Start publisher
+1) Start publisher
 
 ```bash
 python consumer.py &
@@ -108,23 +112,21 @@ Show log:
 tail -f /var/log/dht22/consumer.log
 ```
 
-based on "https://pika.readthedocs.io/en/0.10.0/examples/asynchronous_consumer_example.html"
+code based on "https://pika.readthedocs.io/en/0.10.0/examples/asynchronous_consumer_example.html"
 
-
-- Start publisher as Service
+#### Start publisher as Service
 
 Follow this [tutorial](2017-03-23-create_service.md)
 
 Edit publisher.py and change config.yml to /opt/dht22/_config.yml
 
-
-Start 
+1) Start 
 
 ```bash
 sudo systemctl start dht22_publisher.service
 ```
 
-Check
+2) Check
 
 ```bash
 sudo systemctl status dht22_publisher.service

@@ -48,7 +48,7 @@ mvn clean install
 java -jar target/reactive-server-0.0.1-SNAPSHOT.jar
 ```
 
-#### Step X: Consume data from Rabbitmq
+#### Step 1: Consume data from Rabbitmq
 
 ```bash
 git co step1-consumeDataFromRabbitMQ
@@ -58,7 +58,11 @@ git co step1-consumeDataFromRabbitMQ
 mvn clean install
 ```
 
-#### Step X: Store data into InfluxDB
+```bash
+java -jar target/reactive-server-0.0.1-SNAPSHOT.jar
+```
+
+#### Step 2: Store data into InfluxDB
 
 ```bash
 git co step2-store-data-into-influxDB
@@ -68,7 +72,11 @@ git co step2-store-data-into-influxDB
 mvn clean install
 ```
 
-#### Step X: Create Rest API with Swagger
+```bash
+java -jar target/reactive-server-0.0.1-SNAPSHOT.jar
+```
+
+#### Step 3: Create Rest API with Swagger
 
 ```bash
 git co step3-Create-REST-API-Swagger
@@ -78,14 +86,20 @@ git co step3-Create-REST-API-Swagger
 mvn clean install
 ```
 
+```bash
+java -jar target/reactive-server-0.0.1-SNAPSHOT.jar
+```
 http://YOUR_HOST:YOUR_PORT/swagger-ui.html
 
-#### Step X: Forward data to client via Websocket
+#### Step 4: Forward data to client via Websocket
 
 ```bash
 git co step4-publish-to-websocket
 ```
 
+```bash
+java -jar target/reactive-server-0.0.1-SNAPSHOT.jar
+```
 
 #### Final Result
 
