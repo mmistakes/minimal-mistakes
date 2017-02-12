@@ -1,3 +1,9 @@
+## [3.1.6](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.6)
+
+### Maintenance
+
+- Update gem dependencies. Run `bundle` to update `Gemfile.lock`.
+
 ## [3.1.5](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.5)
 
 ### Maintenance
