@@ -35,17 +35,15 @@ If you want to use Minimal Mistakes with an existing Jekyll site follow these st
 
 ## Running Jekyll
 
-The preferred method for running Jekyll is with `bundle exec`, but if you're willing to deal gem conflicts feel free to go cowboy with a `jekyll build` or `jekyll serve`.
+The preferred method for running Jekyll is with `bundle exec`, but if you're willing to deal gem conflicts feel free to go cowboy with a `jekyll serve` or `jekyll build`.
 
 > In some cases, running executables without bundle exec may work, if the executable happens to be installed in your system and does not pull in any gems that conflict with your bundle.
 >
 >However, this is unreliable and is the source of considerable pain. Even if it looks like it works, it may not work in the future or on another machine.
 
-{% highlight text %}
-bundle exec jekyll build
-
+```bash
 bundle exec jekyll serve
-{% endhighlight %}
+```
 
 ---
 
