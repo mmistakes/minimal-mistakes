@@ -7,6 +7,10 @@
   @include clearfix;
   margin-top: 3em;
   padding: 0 2em 3em;
+  @include breakpoint($medium) {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
   a {
     text-decoration: none;
     &:hover {

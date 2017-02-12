@@ -9,6 +9,10 @@
   font-family: $sans-serif-narrow;
   font-weight: 700;
   text-transform: uppercase;
+  @include breakpoint($medium) {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
   a {
     text-decoration: none;
   }
