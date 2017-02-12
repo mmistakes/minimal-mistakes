@@ -1,9 +1,9 @@
 ---
-title: "Create a reactive Meteo Station"
+title: "Create a reactive Weather Station"
 related: true
 header:
   overlay_color: "#333"
-  overlay_filter: "0.5"
+  overlay_filter: "0.7"
   overlay_image: /assets/images/jordan-ladikos-62738.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
   teaser: /assets/images/jordan-ladikos-62738.jpg
@@ -46,9 +46,8 @@ The objective of this tutorial is to design a full reactive architecture interac
 
 ### Overview
 
-{% capture fig_img %}
-![architecture_overview]({{ basepath }}/assets/images/reactive-architecture.png)
-{% endcapture %}
+{% include figure image_path="/assets/images/reactive-architecture.png" alt="Reactive Architecture Overview" caption="Reactive Architecture Overview" %}
+
 
 
 | Component        |    Role       | Description  |

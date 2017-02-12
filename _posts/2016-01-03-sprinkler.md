@@ -3,7 +3,7 @@ title: "Create a sprinkler system"
 related: true
 header:
   overlay_color: "#333"
-  overlay_filter: "0.5"
+  overlay_filter: "0.3"
   overlay_image: /assets/images/caspar-rubin-224229.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
   teaser: /assets/images/caspar-rubin-224229.jpg
@@ -58,9 +58,8 @@ Hydraulic components
 
 ### Electronic wiring
 
-{% capture fig_img %}
-![schema_sprinkler]({{ basepath }}/assets/images/schema_sprinkler.png)
-{% endcapture %}
+{% include figure image_path="/assets/images/schema_sprinkler.png" alt="Sprinkler Overview" caption="Sprinkler Overview" %}
+
 
 ### Hydraulic wiring
 

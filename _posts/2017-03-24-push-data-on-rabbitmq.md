@@ -20,6 +20,14 @@ tags:
 ---
 The objective of this tutorial is to publish temperature and humidity to a RabbitMQ message broker.
 
+{% plantuml %}
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
+
+Alice -> Bob: Another authentication Request
+Alice <-- Bob: another authentication Response
+{% endplantuml %}
+
 
 - [Prerequisites](#prerequisites)
 - [Run RabbitMQ container](#prerequisites)
