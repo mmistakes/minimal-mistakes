@@ -38,22 +38,22 @@ Multi line blockquote with a cite reference:
 
 ## Tables
 
-| Employee | Salary | |
-| -------- | ------ | - |
-| [John Doe](#) | $1 | Because that's all Steve Jobs needed for a salary. |
-| [Jane Doe](#) |$100K |For all the blogging she does. |
-| [Fred Bloggs](#) | $100M | Pictures are worth a thousand words, right? So Jane × 1,000. |
-| [Jane Bloggs](#) | $100B | With hair like that?! Enough said. |
+| Employee         | Salary |                                                              |
+| --------         | ------ | ------------------------------------------------------------ |
+| [John Doe](#)    | $1     | Because that's all Steve Jobs needed for a salary.           |
+| [Jane Doe](#)    | $100K  | For all the blogging she does.                               |
+| [Fred Bloggs](#) | $100M  | Pictures are worth a thousand words, right? So Jane × 1,000. |
+| [Jane Bloggs](#) | $100B  | With hair like that?! Enough said.                           |
 
 | Header1 | Header2 | Header3 |
 |:--------|:-------:|--------:|
 | cell1   | cell2   | cell3   |
 | cell4   | cell5   | cell6   |
-|----
+|-----------------------------|
 | cell1   | cell2   | cell3   |
 | cell4   | cell5   | cell6   |
-|=====
-| Foot1   | Foot2   | Foot3
+|=============================|
+| Foot1   | Foot2   | Foot3   |
 
 ## Definition Lists
 
@@ -104,21 +104,21 @@ Do It Live
 Make any link standout more when applying the `.btn` class.
 
 ```html
-<a href="#" class="btn btn-success">Success Button</a>
+<a href="#" class="btn--success">Success Button</a>
 ```
 
 [Primary Button](#){: .btn}
-[Success Button](#){: .btn .btn-success}
-[Warning Button](#){: .btn .btn-warning}
-[Danger Button](#){: .btn .btn-danger}
-[Info Button](#){: .btn .btn-info}
+[Success Button](#){: .btn .btn--success}
+[Warning Button](#){: .btn .btn--warning}
+[Danger Button](#){: .btn .btn--danger}
+[Info Button](#){: .btn .btn--info}
 
 ```markdown
 [Primary Button Text](#link){: .btn}
-[Success Button Text](#link){: .btn .btn-success}
-[Warning Button Text](#link){: .btn .btn-warning}
-[Danger Button Text](#link){: .btn .btn-danger}
-[Info Button Text](#link){: .btn .btn-info}
+[Success Button Text](#link){: .btn .btn--success}
+[Warning Button Text](#link){: .btn .btn--warning}
+[Danger Button Text](#link){: .btn .btn--danger}
+[Info Button Text](#link){: .btn .btn--info}
 ```
 
 ## Notices

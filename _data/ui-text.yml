@@ -8,9 +8,10 @@ en: &DEFAULT_EN
   toc_label           : "Overview"
   ext_link_label      : "Direct Link"
   share_on_label      : "Share on"
-  date_label          : "Last Updated:"
+  meta_label          :
   tags_label          : "Tags:"
   categories_label    : "Categories:"
+  date_label          : "Last Updated:"
   related_label       : "You May Also Enjoy"
   follow_label        : "Follow:"
   feed_label          : "Feed"

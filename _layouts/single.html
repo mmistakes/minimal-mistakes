@@ -22,6 +22,9 @@ layout: default
     {% if site.share and page.share %}{% include social-share.html %}{% endif %}
 
     <footer class="page__meta">
+      {% if site.data.ui-text[site.locale].meta_label %}
+        <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
+      {% endif %}
       {% include page__taxonomy.html %}
       {% if page.modified %}
         <p class="page__date"><strong>{{ site.data.ui-text[site.locale].date_label }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
@@ -29,7 +32,7 @@ layout: default
         <p class="page__date"><strong>{{ site.data.ui-text[site.locale].date_label }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
       {% endif %}
     </footer>
-  </div><!-- /.article-wrap -->
+  </div>
 
   {% if site.comments.provider and page.comments %}
     {% case site.comments.provider %}
@@ -47,13 +50,14 @@ layout: default
 
 {% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
 {% if page.id and page.related and site.related_posts.size > 0 %}
-  <div class="related-articles">
-  <h4>{{ site.data.ui-text[site.locale].related_label }}</h4>
+  <div class="page__related">
+  {% if site.data.ui-text[site.locale].related_label %}
+    <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label }}</h4>
+  {% endif %}
     <ul>
     {% for post in site.related_posts limit:3 %}
       <li><a href="{{ base_path }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
     {% endfor %}
     </ul>
-    <hr />
-  </div><!-- /.related-articles -->
+  </div>
 {% endif %}
