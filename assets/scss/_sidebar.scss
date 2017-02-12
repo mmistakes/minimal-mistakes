@@ -3,16 +3,20 @@
    ========================================================================== */
 
 .sidebar {
+  @include clearfix();
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid $border-color;
   @include breakpoint($medium) {
-    display: block;
-    margin-bottom: 1em;
     @include span(2 of 12);
     @include suffix(0.25 of 12);
+    border-bottom: none;
   }
   @include breakpoint($x-large) {
     padding-right: 0;
   }
   h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
     font-family: $sans-serif-narrow;
   }
   p, li {
@@ -27,32 +31,57 @@
    Author profile and links
    ========================================================================== */
 
+.author__avatar {
+  float: left;
+  width: 50px;
+  margin-right: 10px;
+  @include breakpoint($medium) {
+    float: none;
+    width: initial;
+  }
+  img {
+    max-width: 110px;
+    border-radius: 50%;
+  }
+}
+
+.author__content {
+  float: right;
+  width: calc(100% - 60px); // subtract avatar width + any margin/padding
+  @include breakpoint($medium) {
+    float: none;
+    width: 100%;
+  }
+}
+
 .author__name {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 0;
   font-family: $sans-serif-narrow;
-  font-size: 24px;
+  font-size: 20px;
+  @include breakpoint($medium) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .author__bio {
-  margin-bottom: 20px;
-  font-size: 80%;
-  font-style: italic;
-}
-
-.author__avatar {
-  max-width: 110px;
-  border-radius: 50%;
-}
-
-.author__social-url {
-  display: block;
-  margin-bottom: 5px;
-  padding-right: 5px;
+  margin-bottom: 10px;
   font-size: 14px;
-  color: #000;
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
+  font-style: italic;
+  @include breakpoint($medium) {
+    margin-bottom: 20px;
+  }
+}
+
+.author__urls {
+  a {
+    display: inline-block;
+    margin-bottom: 5px;
+    padding-right: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
