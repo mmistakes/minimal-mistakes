@@ -1,9 +1,22 @@
-POST
+---
+title: "Reactive Meteo Station"
+excerpt_separator: "<!--more-->"
+categories:
+  - Home automation
+tags:
+  - Raspberry PI
+---
+
 
 Write Raspbian Image into SD Card
 How to retrieve, your Raspberry PI 
 Set a static IP Address
 Enable WIFI wlan0
+
+
+
+
+
 Install python packages
 Write first python script
 Get temperature and humidity from DHT22
