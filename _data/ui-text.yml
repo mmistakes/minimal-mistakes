@@ -7,6 +7,9 @@ en: &DEFAULT_EN
   pagination_next     : "Next"
   toc_label           : "Overview"
   ext_link_label      : "Direct Link"
+  less_than           : "less than"
+  minute_read         : "minute read"
+  minutes_read        : "minutes read"
   share_on_label      : "Share on"
   meta_label          :
   tags_label          : "Tags:"
