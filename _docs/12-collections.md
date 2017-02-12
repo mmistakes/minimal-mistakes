@@ -12,14 +12,14 @@ modified: 2016-04-13T15:54:02-04:00
 
 Collections like posts and pages work as you'd expect. If you're new to them be sure to read [Jekyll's documentation](https://jekyllrb.com/docs/collections/).
 
-Minimal Mistakes has been built with collections in mind and you will find [several examples]({{ base_path }}/collection-archive/) on the demo site ([portfolio]({{ base_path }}/portfolio/), [recipes]({{ base_path }}/recipes/), pets). 
+The theme has been built with collections in mind and you will find [several examples]({{ base_path }}/collection-archive/) on the demo site ([portfolio]({{ base_path }}/portfolio/), [recipes]({{ base_path }}/recipes/), pets). 
 
-**Collections in the Wild:** This set of documentation is also [built as a collection]({{ site.gh_repo }}/gh-pages/_docs/) if you're looking for a fully fleshed out example with custom sidebar navigation, next/previous pagination, and more.
+**Collections in the Wild:** This set of documentation is also [built as a collection]({{ site.gh_repo }}/gh-pages/_docs/) if you're looking for a fully fleshed out example to inspect.
 {: .notice--info}
 
 ---
 
-A popular use case for collections is to build a portfolio section as part of a personal site. Let's quickly walk through the steps to do that.
+A popular use case for collections is to build a portfolio section as part of one's personal site. Let's quickly walk through the steps to do that.
 
 **Step 1:** Configure the portfolio collection by adding the following to `_config.yml`.
 

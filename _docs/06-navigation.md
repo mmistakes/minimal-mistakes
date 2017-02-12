@@ -49,7 +49,7 @@ Which will give you a responsive masthead similar to this:
 
 ## Breadcrumbs (Beta)
 
-Enable breadcrumb links to help visitors better navigate deeply structure sites. Because of the fragile method of implementing them they don't always produce accurate links reliably. For best results:
+Enable breadcrumb links to help visitors better navigate deep sites. Because of the fragile method of implementing them they don't always produce accurate links reliably. For best results:
 
 1. Use a category based permalink structure e.g. `permalink: /:categories/:title/`
 2. Manually create pages for each category or use a plugin like [jekyll-archives](https://github.com/jekyll/jekyll-archives) to auto-generate them. If these pages don't exist breadcrumb links to them will be broken.

@@ -45,22 +45,22 @@ minimal mistakes
 
 ## Customizing
 
-The following settings in `/assets/_scss/_variables.scss` can modify the following aspects of the theme:
+The settings in `/assets/_scss/_variables.scss` can modify the following aspects of the theme:
 
 ### Paragraph Indention 
 
-To mimic the look of type set in a printed book or manuscript you may want to enable paragraph indention. When `$paragraph-indent` is set to `true` the margin below each paragraph is remove, and indents added to each sibling.
+To mimic the look of type set in a printed book or manuscript you may want to enable paragraph indention. When `$paragraph-indent` is set to `true` indents are added to each sibling and the margin below each paragraph is removed.
 
 <figure>
   <img src="{{ base_path }}/images/mm-paragraph-indent-example.jpg" alt="indented paragraph example">
   <figcaption>Example of indented paragraphs.</figcaption>
 </figure>
 
-The size of the indent can also be customized by changing `$indent-var: 1.3em;`.
+The size of the indent can also be customized by changing the value of `$indent-var`.
 
 ### Font Stacks
 
-By default the theme uses [system fonts](https://medium.com/designing-medium/system-shock-6b1dc6d6596f#.rb81vgn7i) for all of the font stacks (serif, sans-serif, and monospace). This is done in part to provide a clean base for you to build off of and to improve performance since we aren't loading any custom webfonts[^font-awesome].
+By default the theme uses [system fonts](https://medium.com/designing-medium/system-shock-6b1dc6d6596f#.rb81vgn7i) for all of the font stacks (serif, sans-serif, and monospace). This is done in part to provide a clean base for you to build off of and to improve performance since we aren't loading any custom webfonts[^font-awesome] by default.
 
 ```scss
 /* system typefaces */
@@ -78,7 +78,7 @@ Sans-serif fonts have been used for most of the type, with serifs reserved for c
 
 ### Type Scale
 
-Wherever possible type scale variables have been used instead of writing out fixed sizes. This has the added benefit of easily updating later on by editing `_variables.scss`. 
+Wherever possible type scale variables have been used instead of writing out fixed sizes. This makes updating much easier by changing values in one file, `_variables.scss`. 
 
 Example:
 
@@ -111,7 +111,7 @@ Change the mood of your site by altering a few color variables. `$body-color`, `
 
 Probably won't need to touch these, but they're there if you need to. Width variables are used with the [`@include breakpoint()`](http://breakpoint-sass.com/) mixin to adapt the design of certain elements.
 
-And `$susy` is used for setting the grid the theme uses. Uncommenting the lines under `debug` can be useful if you want to show the columns if tweaking the layout.
+And `$susy` is used for setting [the grid](http://susy.oddbird.net/) the theme uses. Uncommenting the lines under `debug` can be useful if you want to show the columns when adjusting the layout.
 
 <figure>
   <img src="{{ base_path }}/images/mm-susy-grid-overlay.jpg" alt="Susy grid overlay for debugging">
@@ -120,11 +120,11 @@ And `$susy` is used for setting the grid the theme uses. Uncommenting the lines 
 
 ---
 
-Minimal Mistakes does not leverage Jekyll's built-in support for preprocessing Sass files. Why is that you ask? [**Autoprefixer**](https://github.com/postcss/autoprefixer)! As part of a build step the stylesheet is post processed with Autoprefixer to add vendor prefixes --- something not currently possible without a plugin[^jekyll-assets].
+The theme does not leverage Jekyll's [built-in support for preprocessing Sass](https://jekyllrb.com/docs/assets/#sassscss) files. Why is that you ask? [**Autoprefixer**](https://github.com/postcss/autoprefixer)! As part of a build step the stylesheet is post processed with Autoprefixer to add vendor prefixes --- something not currently possible without a plugin[^jekyll-assets].
 
 [^jekyll-assets]: A better solution would be to use the fantastic [jekyll-assets](https://github.com/jekyll/jekyll-assets) plugin to manage your assets if you aren't hosting with GitHub Pages. Autoprefixer support is built-in :smile:.
 
-If you plan on making any changes to the `.scss` partials you will need build the stylesheet outside of your normal workflow.
+If you plan on making any changes to the `.scss` partials you will need to rebuild the stylesheet outside of the normal Jekyll workflow.
 
 **Sass/SCSS files:** You can of course modify the structure of the CSS files to have Jekyll natively process `main.scss` for you. Just be sure to update the partials to include any vendor prefixes or else things may look off in older browsers.
 {: .notice--info}
@@ -142,7 +142,7 @@ To get started:
 **Note:** If you upgraded from a previous version of the theme be sure you copied over [`package.json`]({{ site.gh_repo }}/master/package.json) prior to running `npm install`.
 {: .notice--warning}
 
-If all goes well running `npm build:css` should process the SCSS files into `main.css`, which should then pipe through Autoprefixer.
+If all goes well, running `npm build:css` will process all SCSS files into `main.css`, which should then pipe through Autoprefixer.
 
 ```
 Rendering Complete, saving .css file...

@@ -117,7 +117,7 @@ To add a feature row containing three content blocks with text and image, add th
 | ----           | -----------  | ----------- | ------- |
 | **image_path** | **Required** | For images placed in the `/images/` directory just add the filename and extension. Use absolute URLS for those hosted externally. | |
 | **alt**        | Optional     | Alternate text for image. | |
-| **title**      | Optional     | Content block title | |
+| **title**      | Optional     | Content block title. | |
 | **excerpt**    | Optional     | Content block excerpt text. Markdown is allowed. | |
 | **url**        | Optional     | URL that the button should link to. | |
 | **btn_label**  | Optional     | Button text label. | `more_label` in UI Text data file. |
