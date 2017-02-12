@@ -1,6 +1,7 @@
 ---
 title: "Setup a Raspberry PI 3"
 excerpt_separator: "<!--more-->"
+related: true
 categories:
   - Home automation
 tags:

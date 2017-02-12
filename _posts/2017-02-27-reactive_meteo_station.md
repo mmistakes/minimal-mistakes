@@ -3,17 +3,31 @@ title: "Reactive Meteo Station"
 excerpt_separator: "<!--more-->"
 categories:
   - Home automation
+  - IoT
 tags:
   - Raspberry PI
+  - RabbitMQ
+  - D3js
+  - Docker
+  - Gulp
+  - Java
+  - Maven
+  - InfluxDB
+  - Spring
+  - ReactJs
+  - ES6
+  - Swagger
+  - Python
+  - WebSocket
+  - Git
+  - μService
+  - REST
+  - Internet of Things
 ---
 ### Create a reactive meteo-station
 
 The objective of this tutorial is to design a full reactive architecture in order to interact with a Raspberry PI 3 as
 μService which produce temperature and humidity data.
-
-keywords: RabbitMQ, D3Js, Gulp, Maven, Java, InlfuxDB, Spring, ReactJs, 
-ES6, Python, WebSocket, Git, Raspberry PI 3, Swagger, μService, IoT Internet of Things, REST
-
 
 - [Prerequisites](#prerequisites)
 - [Overview](#overview)
