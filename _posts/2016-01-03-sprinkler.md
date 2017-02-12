@@ -1,33 +1,53 @@
 ---
 title: "Control your sprinkler with your Raspberry PI 3"
 categories:
-  - Raspberry
+  - Home Automation
 tags:
-  - raspberry
+  - Raspberry PI
 ---
-
-#### Set Up a Raspberry PI 3
-
-see this post [here](2017-01-14-setup_raspberry.md)
-
-Overview
-
-![schema_sprinkler](../assets/images/schema_sprinkler.png)
-
-
-Story:
+### Control your sprinkler with your Raspberry PI 3
 
 I want to control my sprinkler anywhere (out of my LAN when I'm on vacation...) with any device (mobile, pad, laptop...)
 
-Prerequisites
+- [Prerequisites](#prerequisites)
+- [Electronic wiring](#electronic-wiring)
+- [Hydraulic wiring](#hydraulic-wiring)
 
-- Knowledge in electonic, computer science
+#### Prerequisites
 
-Hardware:
-- Raspberry PI 3 model B (5V DC)
-- Relay card module AC/DC
-- 1 transformer 220V AC/5V DC
-- 1 transformer  220V AC/24 AC
+- Components < ? EUR:
 
-Hydraulic part:
-- Gate van
+Electronic components
+
+| Component        | Site           | Price  |
+| ------------- |:-------------:| -----:|
+| Raspberry PI 3   | [Farnell](https://www.farnell.com) | 37.69 EUR |
+| Power supply Micro USB 5V 2500mA   | [Amazon](https://www.amazon.com) | 8.99 EUR |
+| Micro SD Card (16 Go class 10)  | [Amazon](https://www.amazon.com) | 9.99 EUR |
+| Relay card module AC/DC 5V  4 channels | [Ebay](https://www.ebay.com) | 8.00 EUR |
+| multi conducteur 7 brins cable 15m | [Technic-achat](https://www.technic-achat.fr) | 31.32 EUR |
+| 10 x Cables male/female | [ebay](www.ebay.com)      |   1.00 EUR |
+| 10 x Cables male/male | [ebay](www.ebay.com)      |    1.00 EUR |
+| Total: |      |    97.99 EUR |
+
+Hydraulic components
+
+| Component        | Site           | Price  |
+| ------------- |:-------------:| -----:|
+| Gate van Rainbird DV 1" 24V | [Jardinet](https://www.jardinet.fr) | 22.10 EUR |
+| tuyau 25m | [Jardinet](https://www.jardinet.fr) | ? EUR |
+| Total: |      |    ? EUR |
+
+
+- Set up a Raspberry PI 3 [here](2017-01-14-setup_raspberry.md)
+- Install Python [here](2017-03-23-install_python.md)
+
+#### Electronic wiring
+
+![schema_sprinkler](../assets/images/schema_sprinkler.png)
+
+#### Hydraulic wiring
+
+
+
+

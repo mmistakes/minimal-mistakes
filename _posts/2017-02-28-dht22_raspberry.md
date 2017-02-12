@@ -1,80 +1,98 @@
 ---
-title: "DHT22"
+title: "Interacting with DHT22 Sensor"
 excerpt_separator: "<!--more-->"
 categories:
   - Home automation
 tags:
   - Raspberry PI
 ---
+### Interacting with DHT22 Sensor
 
-### Prerequisites
+- [Prerequisites](#prerequisites)
+- [Electronic wiring](#electronic-wiring)
+- [Install Adafruit](#install-adafruit)
+- [Get Series of data](#get-series-of-data)
+
+
+#### Prerequisites
+
+- Components < 70 EUR:
+
+| Component        | Site           | Price  |
+| ------------- |:-------------:| -----:|
+| Raspberry PI 3   | [Farnell](https://www.farnell.com) | 37.69 EUR |
+| Power supply Micro USB 5V 2500mA   | [Amazon](https://www.amazon.com) | 8.99 EUR |
+| Micro SD Card (16 Go class 10)  | [Amazon](https://www.amazon.com) | 9.99 EUR |
+| DHT22 Sensor     | [ebay](www.ebay.com)      |   5.60 EUR |
+| Breadboard | [ebay](www.ebay.com)      |    3.30 EUR |
+| 10 x Cables male/female | [ebay](www.ebay.com)      |   1.00 EUR |
+| 10 x Cables male/male | [ebay](www.ebay.com)      |    1.00 EUR |
+| 10 x Resistors 10k | [ebay](www.ebay.com)      |    1.10 EUR |
+| Total: |      |    68.67 EUR |
+
+Note: This is an example as a guide. You can buy all components in others sites
+and maybe with better prices.
 
 - Set up a Raspberry PI 3 [here](2017-01-14-setup_raspberry.md)
+- Install Python [here](2017-03-23-install_python.md)
 
-### Install python 
 
-Python is already installed with the Raspbian image
+#### Electronic wiring
 
-```bash
-python --version
-```
-otherwise you can install it 
-```bash
-apt-get install python
-```
-
-### Install PIP
-
-```bash
-wget https://bootstrap.pypa.io/get-pip.py
-python get-pip.py
-```
-
-### Create VirtualEnv (optional)
-
-```bash
-sudo mkdir -p ~/workspace/venv2.7
-sudo virtualenv -p /usr/bin/python2.7 ~/workspace/venv2.7/
-source ~/workspace/venv2.7/bin/activate
-//install all packets needed
-sudo pip install requests
-```
-
-### Install RPi.GPIO
-
-```bash
-pip install RPi.GPIO
-```
-
-#### Test GPIO 
-
-- Interact with GPIO [here](2017-02-28-test_gpio.md)
-
+![schema_dht22](../assets/images/schema_dht22.png)
 
 ### Install Adafruit
 
+Adafruit is a Python library to read the DHT series of humidity and temperature sensors on a Raspberry Pi.
+
+##### a) Download the latest version
 ```bash
 wget https://github.com/adafruit/Adafruit_Python_DHT/archive/master.zip
+```
+##### b) Unzip the package
+```bash
 unzip master.zip
+```
+##### c) Installation
+```bash
 cd Adafruit_Python_DHT-master/
-sudo apt-get update
-sudo apt-get install build-essential python-dev
 sudo python setup.py install
+```
+See more [here](https://github.com/adafruit/Adafruit_Python_DHT)
 
+or with a virtual env
+
+```bash
+virtualenv -p /usr/bin/python2.7 ~/workspace/venv2.7/
+source ~/workspace/venv2.7/bin/activate
+pip install adafruit_python_dht
 ```
 
-### Get Temperature and Humdity from DHT22
+See how to create a virtual environment [here](2017-03-23-install_python.md)
 
-Show source: https://github.com/jluccisano/raspberry-scripts/blob/master/scripts/dht22.py
+### Get Series of data
+
+Get Series of Temperature and Humdity from DHT22
+
+##### a) Create new script
+```bash
+touch getDHT22Series.py
+```
+##### b) Edit and add this code below
+
+```bash
+vim getDHT22Series.py
+```
 
 ```python
+#!/usr/bin/python
 import Adafruit_DHT
 
 def getData_func():
     humidity, temperature = Adafruit_DHT.read_retry(Adafruit_DHT.DHT22, 4)
     if humidity is not None and temperature is not None:
-        print('Temp={0:0.1f}*C  Humidity={1:0.1f}%'.format(temperature, humidity))
-        return  { 'temperature': temperature, 'humidity': humidity }
+        print('Temperature={0:0.1f}*C  Humidity={1:0.1f}%'.format(temperature, humidity))
+        return  { '@type':'DHT22', 'temperature': temperature, 'humidity': humidity }
     else:
         print('Failed to get reading. Try again!')
         return
@@ -82,50 +100,26 @@ def getData_func():
 if __name__ == "__main__": getData_func()
 ```
 
+See source [here](https://github.com/jluccisano/raspberry-scripts/blob/master/scripts/dht22.py)
+
+##### c) Execute the code
+
+```bash
+python getDHT22Series.py
+```
+
 Output: 
 ```
-
+Temperature=23.8*C  Humidity=36.3%
 ```
 
-### Publish data to RabbitMQ
+#### To go further
 
-Show source: https://github.com/jluccisano/raspberry-scripts/blob/master/scripts/publisher.py
-
-
-### Create Service
-
-See this thread:
-http://www.diegoacuna.me/how-to-run-a-script-as-a-service-in-raspberry-pi-raspbian-jessie/
-
-
-sudo chmod u+x /opt/dht22/send.py 
-sudo ln -s /opt/dht22/send.py /usr/bin/dht22
-sudo systemctl daemon-reload
+[Create a reactive meteo station](2017-02-27-reactive_meteo_station.md)
+[Create a service](2017-03-23-create_service.md)
 
 
 
-sudo systemctl daemon-reload
-sudo chmod +x /opt/dht22/dht22.py
-sudo systemctl enable dht22.service
-sudo systemctl start dht22.service
-sudo systemctl status dht22.service
-sudo systemctl stop dht22.service
-tail -f /var/log/dht22/send.log
 
 
-
-sudo chmod u+x /opt/dht22/send.py 
-sudo ln -s /opt/dht22/send.py /usr/bin/dht22
-sudo systemctl daemon-reload
-
-http://www.diegoacuna.me/how-to-run-a-script-as-a-service-in-raspberry-pi-raspbian-jessie/
- 
-sudo systemctl daemon-reload
-sudo chmod +x /opt/dht22/dht22.py
-sudo systemctl enable dht22.service
-sudo systemctl start dht22.service
-sudo systemctl status dht22.service
-sudo systemctl stop dht22.service
-tail -f /var/log/dht22/send.log
-http://rstoyanchev.github.io/s2gx2013-websocket-browser-apps-with-spring/#65
 

@@ -14,7 +14,7 @@ tags:
 
 #### Prerequisites
 
-- SSH installed (ex: OpenSSH)
+- SSH installed (ex: OpenSSH, OpenBSD Secure Shell server)
 
 #### Generating new SSH Key
 
