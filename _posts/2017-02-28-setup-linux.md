@@ -3,7 +3,7 @@ title: "Raspbian basic administration"
 excerpt_separator: "Raspbian basic administration"
 related: true
 categories:
-  - automation
+  - tuto
 tags:
   - Raspberry PI
   - Linux

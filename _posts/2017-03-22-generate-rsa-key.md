@@ -3,7 +3,7 @@ title: "Generating new SSH Key"
 excerpt_separator: "Generating new SSH Key"
 related: true
 categories:
-  - computer
+  - tuto
 tags:
   - SSH
   - Unix

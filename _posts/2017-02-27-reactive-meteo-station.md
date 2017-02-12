@@ -1,9 +1,14 @@
 ---
 title: "Reactive Meteo Station"
-excerpt_separator: "Reactive Meteo Station"
 related: true
+header:
+  overlay_color: "#000"
+  overlay_filter: "0"
+  overlay_image: /assets/images/caspar-rubin-224229.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  teaser: /assets/images/caspar-rubin-224229.jpg
 categories:
-  - automation
+  - Automation
 tags:
   - Raspberry PI
   - RabbitMQ
@@ -24,22 +29,22 @@ tags:
   - REST
   - Internet of Things
 ---
-### Create a reactive meteo-station
-
 The objective of this tutorial is to design a full reactive architecture in order to interact with a Raspberry PI 3 as
 μService which produce temperature and humidity data.
+
+
 
 - [Prerequisites](#prerequisites)
 - [Overview](#overview)
 
 ###  Prerequisites
 
--  [Set up a Raspberry PI 3]({{ site.url }}{{ site.baseurl }}/tuto/setup-raspberry)
--  [Interacting with DHT22 Sensor]({{ site.url }}{{ site.baseurl }}/tuto/dht22-raspberry)
--  [A server or your own computer with Docker]({{ site.url }}{{ site.baseurl }}/tuto/install-docker)
+-  [Set up a Raspberry PI 3]({{ site.url }}{{ site.baseurl }}/raspberry/setup-raspberry)
+-  [Interacting with DHT22 Sensor]({{ site.url }}{{ site.baseurl }}/raspberry/dht22-raspberry)
+-  [A server or your own computer with Docker]({{ site.url }}{{ site.baseurl }}/linux/install-docker)
 -  [Install Git](https://git-scm.com/download/linux)
--  [Push data to rabbitMQ]({{ site.url }}{{ site.baseurl }}/tuto/push-data-on-rabbitmq)
--  [Consume data from rabbitMQ]({{ site.url }}{{ site.baseurl }}/tuto/consume-data-from-rabbitmq)
+-  [Push data to rabbitMQ]({{ site.url }}{{ site.baseurl }}/computer/push-data-on-rabbitmq)
+-  [Consume data from rabbitMQ]({{ site.url }}{{ site.baseurl }}/computer/consume-data-from-rabbitmq)
 
 ### Overview
 

@@ -1,9 +1,14 @@
 ---
 title: "Push temperature and humidity to RabbitMQ"
-excerpt_separator: "Push temperature and humidity to RabbitMQ"
 related: true
+header:
+  overlay_color: "#000"
+  overlay_filter: "0"
+  overlay_image: /assets/images/caspar-rubin-224229.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  teaser: /assets/images/caspar-rubin-224229.jpg
 categories:
-  - automation
+  - Computer
 tags:
   - Raspberry PI
   - RabbitMQ
@@ -13,20 +18,20 @@ tags:
   - μService
   - Internet of Things
 ---
+TODO description
 
-### Push temperature and humidity to RabbitMQ
 
 - [Prerequisites](#prerequisites)
 - [Run RabbitMQ container](#prerequisites)
-- [Create a publisher on your Raspberry](#create-publisher-on-your-raspberry)
-- [Create a consumer on your Raspberry](#create-consumer-on-your-raspberry)
+- [Create a publisher on your Raspberry](#create-a-publisher-on-your-raspberry)
+- [Create a consumer on your Raspberry](#create-a-consumer-on-your-raspberry)
 - [Start publisher as Service](#start-publisher-as-service)
 
 ####  Prerequisites
 
-- [Set up a Raspberry PI 3 ]({{ site.url }}{{ site.baseurl }}/tuto/setup-raspberry)
-- [Interacting with DHT22 Sensor]({{ site.url }}{{ site.baseurl }}/tuto/dht22-raspberry)
-- [A server or your own computer with Docker]({{ site.url }}{{ site.baseurl }}/tuto/install-docker)
+- [Set up a Raspberry PI 3 ]({{ site.url }}{{ site.baseurl }}/raspberry/setup-raspberry)
+- [Interacting with DHT22 Sensor]({{ site.url }}{{ site.baseurl }}/raspberry/dht22-raspberry)
+- [A server or your own computer with Docker]({{ site.url }}{{ site.baseurl }}/computer/install-docker)
 - [Install Git](https://git-scm.com/download/linux)
 
 
@@ -41,17 +46,17 @@ You can see RabbitMQ management interface on port 8080.
 
 #### Create a publisher on your Raspberry
 
-1) Clone raspberry-scripts project
+1. Clone raspberry-scripts project
 
 ```bash
 git clone git@github.com:jluccisano/raspberry-scripts.git
 ```
 
-2) Go to 
+2. Go to 
 ```bash
 cd raspberry-scripts/scripts
 ```
-3) Edit the _config.yml
+3. Edit the _config.yml
 
 Replace by your config
 
@@ -68,13 +73,13 @@ rabbitmq:
     queue: event     
     logPath: /var/log/dht22
 ```
-4) Start virtualenv (optional)
+4. Start virtualenv (optional)
 
 ```bash
 virtualenv -p /usr/bin/python2.7 ~/env2.7/
 source ~/env2.7/bin/activate
 ```
-see more [here]({{ site.url }}{{ site.baseurl }}/tuto/install-python#create-virtualenv)
+see more [here]({{ site.url }}{{ site.baseurl }}/linux/install-python#create-virtualenv)
 
 Install dependencies:
 ```
@@ -84,7 +89,7 @@ pip install pyyaml
 ```
 see more [here](https://pika.readthedocs.io/en/0.10.0/)
 
-5) Start publisher
+5. Start publisher
 
 ```bash
 python publisher.py &
@@ -94,11 +99,11 @@ Show log:
 tail -f /var/log/dht22/publisher.log
 ```
 
-Note: code based on https://pika.readthedocs.io/en/0.10.0/examples/asynchronous_publisher_example.html
+Note: code based on [Asynchronous publisher example]("https://pika.readthedocs.io/en/0.10.0/examples/asynchronous_publisher_example.html")
 
 #### Create a consumer on your Raspberry
 
-1) Start publisher
+1. Start publisher
 
 ```bash
 python consumer.py &
@@ -109,21 +114,21 @@ Show log:
 tail -f /var/log/dht22/consumer.log
 ```
 
-code based on "https://pika.readthedocs.io/en/0.10.0/examples/asynchronous_consumer_example.html"
+code based on [Asynchronous consumer example]("https://pika.readthedocs.io/en/0.10.0/examples/asynchronous_consumer_example.html")
 
 #### Start publisher as Service
 
-Follow this [tutorial]({{ site.url }}{{ site.baseurl }}/tuto/create-service)
+Follow this [tutorial]({{ site.url }}{{ site.baseurl }}/linux/create-service)
 
 Edit publisher.py and change config.yml to /opt/dht22/_config.yml
 
-1) Start 
+1. Start 
 
 ```bash
 sudo systemctl start dht22_publisher.service
 ```
 
-2) Check
+2. Check
 
 ```bash
 sudo systemctl status dht22_publisher.service
@@ -156,4 +161,4 @@ Great publisher works fine !!
 2017-03-24 13:22:48,701 Scheduling next message for 60.0 seconds
 ```
 
-3) Add service to start on Boot
+3. Add service to start on Boot

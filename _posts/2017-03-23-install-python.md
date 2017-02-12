@@ -1,15 +1,21 @@
 ---
 title: "Installing Python"
-excerpt_separator: "Installing Python"
 related: true
+header:
+  overlay_color: "#000"
+  overlay_filter: "0"
+  overlay_image: /assets/images/caspar-rubin-224229.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  teaser: /assets/images/caspar-rubin-224229.jpg
 categories:
-  - computer
+  - Linux
 tags:
   - Raspberry PI
   - Unix
   - Python
 ---
-### Installing Python on Raspberry PI 3
+TODO description
+
 
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
@@ -18,7 +24,7 @@ tags:
 
 #### Prerequisites
 
-- [Set up a Raspberry PI 3]({{ site.url }}{{ site.baseurl }}/tuto/setup-raspberry)
+- [Set up a Raspberry PI 3]({{ site.url }}{{ site.baseurl }}/raspberry/setup-raspberry)
 
 #### Installation
 

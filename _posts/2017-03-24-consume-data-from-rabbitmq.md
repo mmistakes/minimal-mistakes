@@ -1,9 +1,14 @@
 ---
 title: "Consume temperature and humidity from RabbitMQ"
-excerpt_separator: "Consume temperature and humidity from RabbitMQ"
 related: true
+header:
+  overlay_color: "#000"
+  overlay_filter: "0"
+  overlay_image: /assets/images/caspar-rubin-224229.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  teaser: /assets/images/caspar-rubin-224229.jpg
 categories:
-  - automation
+  - Computer
 tags:
   - Raspberry PI
   - RabbitMQ
@@ -18,18 +23,19 @@ tags:
   - REST
   - Internet of Things
 ---
-### Consume temperature and humidity from RabbitMQ
+TODO description
+
 
 - [Prerequisites](#prerequisites)
 
 ###  Prerequisites
 
-- [Set up a Raspberry PI 3 ]({{ site.url }}{{ site.baseurl }}/tuto/setup-raspberry)
-- [Interacting with DHT22 Sensor]({{ site.url }}{{ site.baseurl }}/tuto/dht22-raspberry)
-- [A server or your own computer with Docker]({{ site.url }}{{ site.baseurl }}/tuto/install-docker)
+- [Set up a Raspberry PI 3 ]({{ site.url }}{{ site.baseurl }}/raspberry/setup-raspberry)
+- [Interacting with DHT22 Sensor]({{ site.url }}{{ site.baseurl }}/raspberry/dht22-raspberry)
+- [A server or your own computer with Docker]({{ site.url }}{{ site.baseurl }}/computer/install-docker)
 - [Git installed](https://git-scm.com/download/linux)
-- [Push data to rabbitMQ]({{ site.url }}{{ site.baseurl }}/tuto/push-data-on-rabbitmq)
-- [Install InfluxDB]({{ site.url }}{{ site.baseurl }}/tuto/install-influxdb)
+- [Push data to rabbitMQ]({{ site.url }}{{ site.baseurl }}/computer/push-data-on-rabbitmq)
+- [Install InfluxDB]({{ site.url }}{{ site.baseurl }}/computer/install-influxdb)
 
 #### Clone the project
 

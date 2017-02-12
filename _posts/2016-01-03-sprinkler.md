@@ -1,15 +1,19 @@
 ---
 title: "Control your sprinkler with your Raspberry PI"
-excerpt_separator: "Control your sprinkler with your Raspberry PI"
 related: true
+header:
+  overlay_color: "#000"
+  overlay_filter: "0"
+  overlay_image: /assets/images/caspar-rubin-224229.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  teaser: /assets/images/caspar-rubin-224229.jpg
 categories:
-  - automation
+  - Automation
 tags:
   - Raspberry PI
 ---
-### Control your sprinkler with your Raspberry PI 3
-
 I want to control my sprinkler anywhere (out of my LAN when I'm on vacation...) with any device (mobile, pad, laptop...)
+
 
 - [Prerequisites](#prerequisites)
 - [Electronic wiring](#electronic-wiring)
@@ -47,8 +51,8 @@ Hydraulic components
 | Total: |      |    ? EUR |
 
 
-- [Set up a Raspberry PI 3]({{ site.url }}{{ site.baseurl }}/tuto/setup-raspberry)
-- [Install Python]({{ site.url }}{{ site.baseurl }}/tuto/install-python)
+- [Set up a Raspberry PI 3]({{ site.url }}{{ site.baseurl }}/automation/setup-raspberry)
+- [Install Python]({{ site.url }}{{ site.baseurl }}/linux/install-python)
 
 #### Electronic wiring
 

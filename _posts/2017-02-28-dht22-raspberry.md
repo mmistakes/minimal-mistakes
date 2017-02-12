@@ -1,9 +1,14 @@
 ---
 title: "Interacting with DHT22 Sensor"
-excerpt_separator: "Interacting with DHT22 Sensor"
 related: true
+header:
+  overlay_color: "#000"
+  overlay_filter: "0"
+  overlay_image: /assets/images/caspar-rubin-224229.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  teaser: /assets/images/caspar-rubin-224229.jpg
 categories:
-  - automation
+  - Raspberry
 tags:
   - Raspberry PI
   - DHT22
@@ -11,7 +16,8 @@ tags:
   - Python
   - Linux
 ---
-### Interacting with DHT22 Sensor
+TODO description
+
 
 - [Prerequisites](#prerequisites)
 - [Electronic wiring](#electronic-wiring)
@@ -38,8 +44,8 @@ tags:
 Note: This is an example as a guide. You can buy all components in others sites
 and maybe with better prices.
 
-- [Set up a Raspberry PI 3]({{ site.url }}{{ site.baseurl }}/tuto/setup-raspberry)
-- [Install Python]({{ site.url }}{{ site.baseurl }}/tuto/install-python)
+- [Set up a Raspberry PI 3]({{ site.url }}{{ site.baseurl }}/raspberry/setup-raspberry)
+- [Install Python]({{ site.url }}{{ site.baseurl }}/linux/install-python)
 
 
 #### Electronic wiring
@@ -75,7 +81,7 @@ source ~/workspace/venv2.7/bin/activate
 pip install adafruit_python_dht
 ```
 
-See how to create a virtual environment [here]({{ site.url }}{{ site.baseurl }}/tuto/install-python#create-virtualenv)
+See how to create a virtual environment [here]({{ site.url }}{{ site.baseurl }}/linux/install-python#create-virtualenv)
 
 ### Get Series of data
 
@@ -122,8 +128,8 @@ Temperature=23.8*C  Humidity=36.3%
 
 #### To go further
 
-- [Create a reactive meteo station]({{ site.url }}{{ site.baseurl }}/tuto/reactive-meteo-station)
-- [Create a service]({{ site.url }}{{ site.baseurl }}/tuto/create-service)
+- [Create a reactive meteo station]({{ site.url }}{{ site.baseurl }}/automation/reactive-meteo-station)
+- [Create a service]({{ site.url }}{{ site.baseurl }}/linux/create-service)
 
 
 

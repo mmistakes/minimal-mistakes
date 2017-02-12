@@ -1,14 +1,20 @@
 ---
 title: "Create a service"
-excerpt_separator: "Create a service"
 related: true
+header:
+  overlay_color: "#000"
+  overlay_filter: "0"
+  overlay_image: /assets/images/caspar-rubin-224229.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  teaser: /assets/images/caspar-rubin-224229.jpg
 categories:
-  - computer
+  - Linux
 tags:
   - Raspberry PI
   - Unix
 ---
-### Create a service on Raspbian
+TODO description
+
 
 - [Prerequisites](#prerequisites)
 - [Create service](#create-service)
@@ -16,7 +22,7 @@ tags:
 
 #### Prerequisites
 
-- [Set up a Raspberry PI 3]({{ site.url }}{{ site.baseurl }}/tuto/setup-raspberry)
+- [Set up a Raspberry PI 3]({{ site.url }}{{ site.baseurl }}/raspberry/setup-raspberry)
 
 ### Create Service
 
