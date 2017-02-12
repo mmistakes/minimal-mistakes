@@ -10,7 +10,7 @@ header:
 excerpt: ""
 intro: 
   - excerpt: ''
-feature_row2:
+feature_row1:
   - image_path: /assets/images/jordan-ladikos-62738.jpg
     alt: "placeholder image 2"
     title: "Create reactive meteo station"
@@ -18,7 +18,7 @@ feature_row2:
     url: "https://jluccisano.github.io/home%20automation/reactive_meteo_station/"
     btn_label: "Read More"
     btn_class: "btn--inverse"
-feature_row3:
+feature_row2:
   - image_path: /assets/images/anthony-rossbach-59486.jpg
     alt: "placeholder image 2"
     title: "Create your own Sprinkler"
@@ -29,6 +29,6 @@ feature_row3:
 
 {% include feature_row id="intro" type="center" %}
 
-{% include feature_row id="feature_row2" type="left" %}
+{% include feature_row id="feature_row1" type="left" %}
 
-{% include feature_row id="feature_row3" type="right" %}
+{% include feature_row id="feature_row2" type="right" %}

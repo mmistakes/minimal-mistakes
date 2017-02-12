@@ -5,7 +5,7 @@ header:
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 related: true
 categories:
-  - Home Automation
+  - automation
 tags:
   - Raspberry PI
 ---
