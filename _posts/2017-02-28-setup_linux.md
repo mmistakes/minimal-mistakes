@@ -1,46 +1,100 @@
-pacman -S sudo
-groupadd sudo
+---
+title: "Raspbian basic administration"
+excerpt_separator: "<!--more-->"
+categories:
+  - Home Automation
+tags:
+  - Raspberry PI
+---
+### Raspbian basic administration
 
-passwd
-useradd jluccisano
-passwd jluccisano
+- [Prerequisites](#prerequisites)
+- [Create user](#create-user)
+- [Configure SSH](#configure-ssh)
+- [Install zsh](#install-zsh)
+
+#### Prerequisites
+
+#### Create user
+
+a) Add user
+```bash
+useradd new_user
+```
+b) Set password
+```bash
+passwd new_user
+```
+c) Add new user as sudoers
+```bash 
+sudo echo 'new_user ALL=(ALL) ALL' >> /etc/sudoers
+```
+d) Add new user in groups root,adm,sudo
+```bash
+usermod -a -G root,adm,sudo new_user
+```
+
+#### Configure SSH
+
+a) Create group 
+```bash
 groupadd sshusers
+```
+b) Add new_user into the group
+```bash
+usermod -a -G sshusers new_user
+```
 
-usermod -a -G root,adm,sudo,sshusers jluccisano
-vim /etc/ssh/sshd_config
+a) Edit ssh config
+```
+sudo vim /etc/ssh/sshd_config
+```
+b) Change default parameters
 
-Port 1234                  # On change le port SSH d’accès au serveurpar défaut
-PermitRootLogin no         # On interdit les connexions en tant que root
-MaxStartups 10:30:60       # 10 connexions sans authentification, sinon 30% de rejet jusqu'à 100% en 60 connexions
+- Change ssh default port
+```text
+Port X
+```
+example: 
+```bash
+ssh new_user@address -p X
+```
+- No permit root login
+```text
+PermitRootLogin no
+```
+see more [here](https://mediatemple.net/community/products/dv/204643810/how-do-i-disable-ssh-login-for-the-root-user)
+
+- Allow a specific group and user is a good practices
+```text
 AllowGroups sshusers
-AllowUsers jluccisano
+AllowUsers new_user
+```
 
-systemctl restart sshd.service
+c) Restart service
+
+```bash
+sudo /etc/init.d/ssh restart
+```
+or
+```bash
+systemctl restart ssh.service
+```
+- Get list of services
+```bash
 systemctl list-units --type=service 
+```
 
-apt-get install sudo
+#### Install zsh and oh-my-zsh (optional)
+
+```bash
+apt-get update
 apt-get install curl
 apt-get install zsh
-apt-get install git
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-apt-get install docker
-systemctl restart docker
-groupadd docker
-usermod -aG docker jluccisano
+```
+see more [here](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
 
-curl -L "https://github.com/docker/compose/releases/download/1.10.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-chmod +x /usr/local/bin/docker-compose
+#### To go further
 
-systemctl reboot
-
-vim /etc/sudoers
-jluccisano    ALL=(ALL:ALL) ALL
-
-
-sudo pacman -Syu
-
-Activate Rsync
-
-http://www.place4geek.com/blog/2014/09/tuto-installer-rsync-sur-son-serveur/
-
-
+[Generate a SSH Key](2017-03-22-generate_rsa_key.md)

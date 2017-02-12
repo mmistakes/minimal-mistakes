@@ -6,56 +6,74 @@ categories:
 tags:
   - Raspberry PI
 ---
+### Create a reactive meteo-station
 
-Le but de ce post est de mettre en place une architecture full reactive à tous les niveaux de la stack.
-Le but est de pouvoir émettre les données de mon capteur de température/humidité, de les consolider puis de les consommer
-à travers un browser.
+The objective of this tutorial is to design a full reactive architecture in order to interact with a Raspberry PI 3 as
+μService which produce temperature and humidity data.
 
-1) Le Raspberry PI 3 collecte les informations du capteurs toutes les 30 secondes
-2) La gateway envoie ses données sur MOM (RabbitMQ)
-3) Les données sont consommées par un serveur (Reactive-server) qui fait office de proxy. En effet, lorsqu'un nouveau
-message est consommée par le serveur, les données sont automatiquement forwarder sur les sockets clients qui sont actuellement
-connectés avec leur browser. Le serveur stocke également la donnée dans une base de données temporelle (InfluxDB) afin
-de consolider les données pour en faire des views.
-4) Ré
+keywords: RabbitMQ, D3Js, Gulp, Maven, Java, InlfuxDB, Spring, ReactJs, 
+ES6, Python, WebSocket, Git, Raspberry PI 3, Swagger, μService, IoT Internet of Things, REST
+
+
+- [Prerequisites](#prerequisites)
+- [Overview](#overview)
+
+###  Prerequisites
+
+- Set up a Raspberry PI 3 [here](2017-01-14-setup_raspberry.md)
+- Interacting with DHT22 Sensor [here](2017-02-28-dht22_raspberry.md)
+- A server or your own computer with Docker [here](2017-02-28-install_docker.md)
+- Install Git (optional) [here](https://git-scm.com/download/linux)
 
 ### Overview
 
-
 ![architecture_overview](../assets/images/reactive-architecture.png)
 
-#### Set Up a Raspberry PI 3
-
-see this post [here](2017-01-14-setup_raspberry.md)
-
-#### Electronic part
-
-![schema_dht22](../assets/images/schema_dht22.png)
-
-#### Interact with DHT22
-
-see this post [here](2017-02-28-dht22_raspberry.md)
+| Component        |    Role       | Description  |
+| ------------- |:-------------:| -----:|
+| Raspberry PI 3   | μService | The Raspberry PI get data sensor and push them over RabbitMQ |
+| RabbitMQ  | MOM(message-oriented middleware) | RabbitMQ is message broker that implements the Advanced Message Queuing Protocol (AMQP)  see more [here](https://www.rabbitmq.com/features.html)|
+| Reactive-server  | Proxy | The server has 2 functions: consumes data from the RabbitMQ and push data directly on the socket |
+| InfluxDB  | Metric database | InfluxDB is a time series database.|
+| Reactive-client  | GUI | The GUI consumes data via WebSocket with Reactive-Server |
 
 
-#### Install Docker (optional)
 
-see this post [here](2017-02-28-install_docker.md)
+#### Step 1: Push temperature and humidity to RabbitMQ
 
+a) Run rabbitmq image
+```bash
+docker run -d --hostname my-rabbit --name some-rabbit -p 5672:5672 -p 8080:15672 rabbitmq:3-management
+```
+see more [here](https://hub.docker.com/_/rabbitmq/)
 
-#### Push temperature and humidity to RabbitMQ
+You can see RabbitMQ management interface on port 8080.
+
+b) Create a publisher
+
+Show source: https://github.com/jluccisano/raspberry-scripts/blob/master/scripts/publisher.py
+
+c) Create a consumer
 
 Consume temperature and humidity from Queue
-
-##### Simple Test
-
+tail -f /var/log/dht22/send.log
 see this post [here](https://github.com/jluccisano/raspberry-scripts/blob/master/scripts/consume.py)
 
+#### Step 2: Reactive-Server
 
-#### Reactive-Server
+- InfluxDB
 
-Create java AMQP client
+```bash
+docker run -d -p 8083:8083 -p 8086:8086 \
+      --name=influxdb \
+      -v /usr/lib/influxdb:/var/lib/influxdb \
+      influxdb
+```
+see more [here](https://hub.docker.com/_/influxdb/)
 
-#### Reactive client
+- Consume/Aggregate data into database
+
+#### Step 3: Reactive-Client
 
 Create reactive client to consume data from Browser
   - Install ReactJS
@@ -63,20 +81,50 @@ Create reactive client to consume data from Browser
   - Create Temperature Widget with D3Js
   - Push data to browser client vi Websockets (STOMP)
 
-#### InfluxDB
 
-- install 
+#### Step X: Start the full stack with docker-compose
 
-https://hub.docker.com/_/influxdb/
+a) Stop all running your docker containers
 
-docker run -d -p 8083:8083 -p 8086:8086 \
-      --name=influxdb \
-      -v /usr/lib/influxdb:/var/lib/influxdb \
-      influxdb
+b) Adpat the docker-compose file according your environment
 
+```yaml
+version: '2'
+services:
+  reactive-client:
+    image: "reactive-client"
+    ports:
+     - "8089:80"
+    links:
+     - "reactive-server:reactive-server"
+  reactive-server:
+    image: "jluccisano/reactive-app:latest"
+    links:
+      - "rabbitmq:rabbitmq"
+  rabbitmq:
+    image:  "rabbitmq:3-management"
+    hostname: "rabbitmq"
+    ports:
+     - "5672:5672"
+     - "8080:15672"
+  influxdb:
+    image: "influxdb"
+    ports:
+     - "8083:8083"
+     - "8086:8086"
+    environment:
+     - INFLUXDB_ADMIN_ENABLED=true  
+    volume: "/usr/lib/influxdb:/var/lib/influxdb"
+   
+```
+[See code here](https://raw.githubusercontent.com/jluccisano/portfolio/master/docker-compose.yml)
 
-- Consume/Aggregate data into database
-- Create a complete reactive dashboard
+c) run
+```bash
+docker-compose up -d
+```
+d) Go to http://YOUR_HOST:8089
 
 #### Final Result
-  
+
+ScreenShots

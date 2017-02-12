@@ -11,31 +11,30 @@ tags:
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Retrieve Raspberry PI 3](#retrieve-raspberry-pi-3)
-
+- [Connect via SSH](#connect-via-ssh)
+- [Set a static IP Address](#set-static-ip-address)
+- [Enable Wifi](#enable-wifi)
 
 
 #### Prerequisites
 
-- A Raspberry PI 3
-- A micro USB Power Supply (2500mA-3000mA, output 5V)
-- A micro SD Card (8 Go class 10)
+- Components < 60 EUR:
 
-Note: You can buy it on [Farnell](https://www.farnell.com), [Amazon](https://www.amazon.com), [ebay](https://www.Ebay.com)...
-It's also possible to buy a kit.
+| Component        | Site           | Price  |
+| ------------- |:-------------:| -----:|
+| Raspberry PI 3   | [Farnell](https://www.farnell.com) | 37.69 EUR |
+| Power supply Micro USB 5V 2500mA   | [Amazon](https://www.amazon.com) | 8.99 EUR |
+| Micro SD Card (16 Go class 10)  | [Amazon](https://www.amazon.com) | 9.99 EUR |
+| Total: |      |    56.67 EUR |
 
-In order to interface with your Raspberry PI two solutions:
- 1) Over SSH with another computer.
- 2) Directly with a screen monitor, keyboard and mouse.
- 
-See more: 
-- https://www.raspberrypi.org/learning/hardware-guide/equipment
-- https://www.raspberrypi.org/learning/hardware-guide/quickstart/
+Note: This is an example as a guide. You can buy all components in others sites
+and maybe with better prices.
 
 #### Installation
 
  1) Download the latest version of [Raspbian image](https://www.raspberrypi.org/downloads/raspbian)
  2) Follow this [guide](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) according to your OS
-    or Follow this [thread](http://michaelcrump.net/the-magical-command-to-get-sdcard-formatted-for-fat32/). Here my commands on 
+    or Follow this [tutorial](http://michaelcrump.net/the-magical-command-to-get-sdcard-formatted-for-fat32/). Here my commands on 
     my Mac.
     
     ```bash
@@ -46,32 +45,36 @@ See more:
      sudo diskutil eject /dev/rdisk1
     ```
 
-Now your Raspberry is ready to start!!! But how can I retrieve it in my LAN ?
+ 3) Enable SSH
 
-#### Retrieve Raspberry PI 3
-
-Follow this [thread](https://www.raspberrypi.org/documentation/remote-access/ip-address.md)
-
-```bash
-nmap -sn 192.168.0.0/24
-```
-
-#### Linux Basic administration
-
-see this post [here](2017-02-28-setup_linux.md)
-
-#### Enable SSH
-
-See more: https://www.raspberrypi.org/blog/a-security-update-for-raspbian-pixel/
+See more [here](https://www.raspberrypi.org/blog/a-security-update-for-raspbian-pixel/)
 
 ```bash
 cd /boot 
 touch ssh
 ```
 
-##### Example Write Image to SD Card from MacOS
+ 4) Plug an ethernet cable and swicth on the power supply.
+ 
+ See more [here](https://www.raspberrypi.org/learning/hardware-guide/quickstart/)
+ 
+ Now your Raspberry PI is ready!!! But how can I retrieve it in my LAN ?
+ 
+ Note: If you use a screen monitor, keyboard and mouse with your Raspberry, you can skip this part and
+ go to "Set a static IP Address" section.
 
-#### Connect to your Raspberry PI 3
+ See more [here](https://www.raspberrypi.org/learning/hardware-guide/equipment)
+ 
+ 
+#### Retrieve Raspberry PI 3
+ 
+Follow this [tutorial](https://www.raspberrypi.org/documentation/remote-access/ip-address.md)
+Example:
+```bash
+nmap -sn 192.168.0.0/24
+```
+
+#### Connect via SSH
 
 ```bash
 ssh pi@192.168.0.11
@@ -81,53 +84,45 @@ with X11
 ```bash
 ssh -Y pi@192.168.0.11
 ```
-#### Change ssh default port
 
+Note: 
 ```
-sudo vim /etc/ssh/sshd_config
-```
-
-```
-port X
-```
-
-```
-sudo /etc/init.d/ssh restart
-```
-
-
+Default username: pi
 Default password: raspberry
-
-Note: first of all change your password with command "passwd"
-
-#### Set a static IP Address and Enable WIFI Interface
-
-Follow these threads: 
- - http://weworkweplay.com/play/automatically-connect-a-raspberry-pi-to-a-wifi-network/
- - https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md
-
-Below my config, it's an example: 
-
 ```
+
+Note: first of all change your password with command 
+
+```bash
+passwd
+```
+
+See this post in order to perform Raspbian basic administration [here](2017-02-28-setup_linux.md)
+
+
+#### Set a static IP Address
+
+```bash
 sudo vim /etc/network/interfaces
 ```
 
-```
-..
-allow-hotplug wlan0
-iface wlan0 inet static
+Adapt with your own configuration
+```text
+iface eth0 inet static
     address 192.168.0.11
     netmask 255.255.255.0
     gateway 192.168.0.254
-    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
-...
 ```
 
+#### Enable WIFI
+
+a) Edit
 ```
 sudo vim /etc/wpa_supplicant/wpa_supplicant.conf
 ```
-Adapt according to your security protocol
-```
+
+b) Adapt according to your security protocol
+```text
 network={
  ssid=”YOUR_SSID″
  psk=”YOUR_PASSWORD”
@@ -138,24 +133,41 @@ network={
 }
 ```
 
-#### Configure WIFI as primarely interface
-
-```
+c) Edit 
+```bash
 sudo vim /etc/network/interfaces
 ```
-Set auto to the wlan interface set above.
-```
+
+d) Adapt according to your own configuration
+```text
 auto wlan0
+
+allow-hotplug wlan0
+iface wlan0 inet static
+    address 192.168.0.11
+    netmask 255.255.255.0
+    gateway 192.168.0.254
+    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+```
+
+e) Reboot
+```bash
+sudo reboot
 ```
  
-Great !! now you can access to your Raspberry PI anywhere.
+Great !! now you can access to your Raspberry PI anywhere. You can reboot and unplug the
+ethernet cable.
 
 Note: if you want to access to your Raspberry outside your LAN. You must
 forward port of your router.
 
-#### Generate RSA key in order to connect without set your password
+Useful links: 
+ - http://weworkweplay.com/play/automatically-connect-a-raspberry-pi-to-a-wifi-network/
+ - https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md
 
-see this post [here](2017-02-28-generate_rsa_key.md)
+#### To go further
+
+[Interacting with GPIO](2017-02-28-test-gpio.md)
 
 
 
