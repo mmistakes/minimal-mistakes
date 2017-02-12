@@ -2,11 +2,11 @@
 title: "Setup a Raspberry PI 3"
 related: true
 header:
-  overlay_color: "#000"
-  overlay_filter: "0"
-  overlay_image: /assets/images/caspar-rubin-224229.jpg
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-  teaser: /assets/images/caspar-rubin-224229.jpg
+  overlay_color: "#333"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/ben-moore-101.jpg
+  caption: ""
+  teaser: /assets/images/ben-moore-101.jpg
 categories:
   - Raspberry
 tags:
@@ -14,7 +14,7 @@ tags:
   - Linux
   - SSH
 ---
-TODO description
+The objective of this tutorial is to set up a Raspberry PI 3 from scratch.
 
 
 - [Prerequisites](#prerequisites)
@@ -25,7 +25,7 @@ TODO description
 - [Enable Wifi](#enable-wifi)
 
 
-#### Prerequisites
+### Prerequisites
 
 - Components < 60 EUR:
 
@@ -39,7 +39,7 @@ TODO description
 Note: This is an example as a guide. You can buy all components in others sites
 and maybe with better prices.
 
-#### Installation
+### Installation
 
  1. Download the latest version of [Raspbian image](https://www.raspberrypi.org/downloads/raspbian)
  2. Follow this [guide](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) according to your OS
@@ -75,7 +75,7 @@ touch ssh
  See more [here](https://www.raspberrypi.org/learning/hardware-guide/equipment)
  
  
-#### Retrieve Raspberry PI 3
+### Retrieve Raspberry PI 3
  
 Follow this [tutorial](https://www.raspberrypi.org/documentation/remote-access/ip-address.md)
 Example:
@@ -83,7 +83,7 @@ Example:
 nmap -sn 192.168.0.0/24
 ```
 
-#### Connect via SSH
+### Connect via SSH
 
 ```bash
 ssh pi@192.168.0.11
@@ -109,7 +109,7 @@ passwd
 See this post in order to perform Raspbian basic administration [here]({{ site.url }}{{ site.baseurl }}/linux/setup-linux)
 
 
-#### Set a static IP Address
+### Set a static IP Address
 
 ```bash
 sudo vim /etc/network/interfaces
@@ -123,14 +123,14 @@ iface eth0 inet static
     gateway 192.168.0.254
 ```
 
-#### Enable WIFI
+### Enable WIFI
 
-a) Edit
+a. Edit
 ```
 sudo vim /etc/wpa_supplicant/wpa_supplicant.conf
 ```
 
-b) Adapt according to your security protocol
+b. Adapt according to your security protocol
 ```text
 network={
  ssid=”YOUR_SSID″
@@ -142,12 +142,12 @@ network={
 }
 ```
 
-c) Edit 
+c. Edit 
 ```bash
 sudo vim /etc/network/interfaces
 ```
 
-d) Adapt according to your own configuration
+d. Adapt according to your own configuration
 ```text
 auto wlan0
 
@@ -159,7 +159,7 @@ iface wlan0 inet static
     wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 ```
 
-e) Reboot
+e. Reboot
 ```bash
 sudo reboot
 ```
@@ -171,12 +171,8 @@ Note: if you want to access to your Raspberry outside your LAN. You must
 forward port of your router.
 
 Useful links: 
- - http://weworkweplay.com/play/automatically-connect-a-raspberry-pi-to-a-wifi-network/
- - https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md
-
-#### To go further
-
-[Interacting with GPIO]({{ site.url }}{{ site.baseurl }}/raspberry/test-gpio)
+ - [Automatically connect a raspberry pi to a wifi network]("http://weworkweplay.com/play/automatically-connect-a-raspberry-pi-to-a-wifi-network/")
+ - [Raspberry wireless configuration]("https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md")
 
 
 

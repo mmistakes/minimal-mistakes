@@ -2,18 +2,18 @@
 title: "Install docker"
 related: true
 header:
-  overlay_color: "#000"
-  overlay_filter: "0"
-  overlay_image: /assets/images/caspar-rubin-224229.jpg
+  overlay_color: "#333"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/boba-jovanovic-65138.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-  teaser: /assets/images/caspar-rubin-224229.jpg
+  teaser: /assets/images/boba-jovanovic-65138.jpg
 categories:
   - Linux
 tags:
   - Docker
   - Unix
 ---
-TODO description
+The objective of this tutorial is to install Docker engine and share some useful command line to interact with it.
 
 
 - [What's Docker](#what-docker)
@@ -22,15 +22,15 @@ TODO description
 - [Install Docker Compose](#install-docker-compose)
 - [Useful Docker command line](#useful-docker-command-line)
 
-#### What's Docker?
+### What's Docker?
 
 All you need to know about Docker is [here](https://www.docker.com/what-docker)
 
-#### Installation
+### Installation
 
 All is [here](https://docs.docker.com/engine/installation/)
 
-#### Install Portainer.io 
+### Install Portainer.io 
 
 Manage docker with GUI
 
@@ -40,7 +40,7 @@ docker run -d -p 9000:9000 --name portainer -v /var/run/docker.sock:/var/run/doc
 
 See more about [portainer.io](http://portainer.io/install.html)
 
-#### Install Docker Compose
+### Install Docker Compose
 
 Compose is a tool for defining and running multi-container Docker applications...
 See more [here](https://docs.docker.com/compose/overview/)
@@ -53,7 +53,7 @@ docker-compose --version
 
 See more [here](https://docs.docker.com/compose/install/)
 
-#### Useful docker command line
+### Useful docker command line
 
 - Get list of running containers
 ```bash

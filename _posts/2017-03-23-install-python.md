@@ -2,8 +2,8 @@
 title: "Installing Python"
 related: true
 header:
-  overlay_color: "#000"
-  overlay_filter: "0"
+  overlay_color: "#333"
+  overlay_filter: "0.5"
   overlay_image: /assets/images/caspar-rubin-224229.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
   teaser: /assets/images/caspar-rubin-224229.jpg
@@ -14,7 +14,7 @@ tags:
   - Unix
   - Python
 ---
-TODO description
+The objective of this tutorial is to install Python and run it with virtual environment.
 
 
 - [Prerequisites](#prerequisites)
@@ -22,11 +22,11 @@ TODO description
 - [Install PIP](#install-pip)
 - [Create VirtualEnv (optional)](#create-virtualenv)
 
-#### Prerequisites
+### Prerequisites
 
 - [Set up a Raspberry PI 3]({{ site.url }}{{ site.baseurl }}/raspberry/setup-raspberry)
 
-#### Installation
+### Installation
 
 Usually Python is already installed with the Raspbian image.
 
@@ -41,7 +41,7 @@ apt-get update
 apt-get install build-essential python-dev
 ```
 
-#### Install PIP
+### Install PIP
 
 PIP is a package management system used to install and manage some packages written in Python.
 
@@ -55,28 +55,28 @@ python get-pip.py
 
 See more [here](https://pip.pypa.io/en/latest/installing)
 
-#### Create VirtualEnv (optional)
+### Create VirtualEnv (optional)
 
 A Virtual Environment is useful to keep the dependencies required by different projects. 
 
 Note: virtualenv includes PIP
 
-##### a) Installation
+#### Installation
 
 ```bash
 sudo pip install virtualenv
 ```
-##### b) Create a workspace directory for the Python version.
+##### Create a workspace directory for the Python version.
 Example:
 ```bash
 mkdir -p ~/workspace/venv2.7
 ```
-##### c) Create virtualenv links with Python interpreter of your choice.
+#### Create virtualenv links with Python interpreter of your choice.
 Example:
 ```bash
 virtualenv -p /usr/bin/python2.7 ~/workspace/venv2.7/
 ```
-##### d) Start the virtual environment.
+#### Start the virtual environment.
 ```bash
 source ~/workspace/venv2.7/bin/activate
 ```

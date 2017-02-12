@@ -2,8 +2,8 @@
 title: "Consume temperature and humidity from RabbitMQ"
 related: true
 header:
-  overlay_color: "#000"
-  overlay_filter: "0"
+  overlay_color: "#333"
+  overlay_filter: "0.5"
   overlay_image: /assets/images/caspar-rubin-224229.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
   teaser: /assets/images/caspar-rubin-224229.jpg
@@ -23,8 +23,8 @@ tags:
   - REST
   - Internet of Things
 ---
-TODO description
-
+The objective of this tutorial is to develop a reactive server which consuming data from a rabbitmq message broker and
+publishing data to client via websocket.
 
 - [Prerequisites](#prerequisites)
 
@@ -37,7 +37,7 @@ TODO description
 - [Push data to rabbitMQ]({{ site.url }}{{ site.baseurl }}/computer/push-data-on-rabbitmq)
 - [Install InfluxDB]({{ site.url }}{{ site.baseurl }}/computer/install-influxdb)
 
-#### Clone the project
+### Clone the project
 
 ```bash
 git clone git@github.com:jluccisano/reactive-server.git
@@ -51,7 +51,7 @@ mvn clean install
 java -jar target/reactive-server-0.0.1-SNAPSHOT.jar
 ```
 
-#### Step 1: Consume data from Rabbitmq
+### Step 1: Consume data from Rabbitmq
 
 ```bash
 git co step1-consumeDataFromRabbitMQ
@@ -65,7 +65,7 @@ mvn clean install
 java -jar target/reactive-server-0.0.1-SNAPSHOT.jar
 ```
 
-#### Step 2: Store data into InfluxDB
+### Step 2: Store data into InfluxDB
 
 ```bash
 git co step2-store-data-into-influxDB
@@ -79,7 +79,7 @@ mvn clean install
 java -jar target/reactive-server-0.0.1-SNAPSHOT.jar
 ```
 
-#### Step 3: Create Rest API with Swagger
+### Step 3: Create Rest API with Swagger
 
 ```bash
 git co step3-Create-REST-API-Swagger
@@ -94,7 +94,7 @@ java -jar target/reactive-server-0.0.1-SNAPSHOT.jar
 ```
 http://YOUR_HOST:YOUR_PORT/swagger-ui.html
 
-#### Step 4: Forward data to client via Websocket
+### Step 4: Forward data to client via Websocket
 
 ```bash
 git co step4-publish-to-websocket
@@ -104,7 +104,7 @@ git co step4-publish-to-websocket
 java -jar target/reactive-server-0.0.1-SNAPSHOT.jar
 ```
 
-#### Final Result
+### Final Result
 
 ```bash
 docker pull jluccisano/reactive-server

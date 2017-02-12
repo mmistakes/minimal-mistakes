@@ -2,8 +2,8 @@
 title: "Consume from reactive client"
 related: true
 header:
-  overlay_color: "#000"
-  overlay_filter: "0"
+  overlay_color: "#333"
+  overlay_filter: "0.5"
   overlay_image: /assets/images/caspar-rubin-224229.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
   teaser: /assets/images/caspar-rubin-224229.jpg
@@ -17,9 +17,14 @@ tags:
   - WebSocket
   - Git
   - REST
+  - D3js
+  - HTML5
+  - JavaScript
+  - Stomp
   - Internet of Things
 ---
-TODO description
+The objective of this tutorial is to develop a reactive client which consuming temperature and 
+ humidity via websocket and showing a dashboard of continuous data via a REST API.
 
 
 - [Prerequisites](#prerequisites)
@@ -34,7 +39,7 @@ TODO description
 - [Install InfluxDB]({{ site.url }}{{ site.baseurl }}/computer/install-influxdb)
 - [Consume data from Reactive-server]({{ site.url }}{{ site.baseurl }}/computer/consume-data-from-rabbitmq)
 
-#### Step X: FuntainJs
+### Step X: FuntainJs
 
 1) Install FuntainJs
 
@@ -46,13 +51,13 @@ https://github.com/FountainJS/generator-fountain-webapp
 yo fountain-webapp
 ```
 
-#### Step X: Create a ReactJS component
+### Step X: Create a ReactJS component
 
-#### Step X: Create a ReactJS socket module via STOMP and sockJS
+### Step X: Create a ReactJS socket module via STOMP and sockJS
 
-#### Step X: Create widget with D3JS
+### Step X: Create widget with D3JS
 
-#### Final Result
+### Final Result
 
 ```bash
 git clone ...

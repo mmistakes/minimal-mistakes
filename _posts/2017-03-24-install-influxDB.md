@@ -2,8 +2,8 @@
 title: "Store data into InfluxDB"
 related: true
 header:
-  overlay_color: "#000"
-  overlay_filter: "0"
+  overlay_color: "#333"
+  overlay_filter: "0.5"
   overlay_image: /assets/images/caspar-rubin-224229.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
   teaser: /assets/images/caspar-rubin-224229.jpg
@@ -13,7 +13,7 @@ tags:
   - InfluxDB
   - Docker
 ---
-TODO description
+The objective of this tutorial is to install an InfluxDB container with Docker and interacting with it.
 
 
 - [Prerequisites](#prerequisites)
@@ -24,7 +24,7 @@ TODO description
 - [Create continuous query](#create-continuous-query)
 - [Useful commands](#useful-commands)
 
-####  Prerequisites
+###  Prerequisites
 
 - [Set up a Raspberry PI 3 ]({{ site.url }}{{ site.baseurl }}/raspberry/setup-raspberry)
 - [Interacting with DHT22 Sensor]({{ site.url }}{{ site.baseurl }}/raspberry/dht22-raspberry)
@@ -32,7 +32,7 @@ TODO description
 - [Install Git (optional)](https://git-scm.com/download/linux)
 - [Push data to rabbitMQ]({{ site.url }}{{ site.baseurl }}/computer/push-data-on-rabbitmq)
 
-#### Run influxDB on Docker
+### Run influxDB on Docker
 
 ```bash
 docker run -d -p 8083:8083 -p 8086:8086 \
@@ -42,23 +42,23 @@ docker run -d -p 8083:8083 -p 8086:8086 \
 ```
 see more [here](https://hub.docker.com/_/influxdb/)
 
-####  Create Database
+###  Create Database
 
 TODO
 
-####  Connect to influxDB
+###  Connect to influxDB
 
 ```bash
 influx
 use sensor
 ```
 
-####  Create retention policy
+###  Create retention policy
 
 ```sql
 CREATE RETENTION POLICY one_years_only ON sensor DURATION 52w REPLICATION 1 DEFAULT
 ```
-####  Create continuous query
+###  Create continuous query
 
 ```sql
 CREATE CONTINUOUS QUERY cq_dht22_1h ON sensor BEGIN SELECT MEAN(temperature) AS  mean_temperature, MEAN(humidity) AS mean_humidity INTO sensor."one_years_only"."cq_dht22_1h" FROM dht22 GROUP BY time(1h), gatewayId END
@@ -68,7 +68,7 @@ CREATE CONTINUOUS QUERY cq_dht22_1h ON sensor BEGIN SELECT MEAN(temperature) AS 
 CREATE CONTINUOUS QUERY cq_dht22_1d ON sensor BEGIN SELECT MEAN(temperature) AS  mean_temperature, MEAN(humidity) AS mean_humidity, MIN(temperature) as min_temperature , MAX(temperature) as max_temperature, MIN(humidity) as min_humidity, MAX(humidity) as max_humidity INTO sensor."one_years_only"."cq_dht22_1d" FROM dht22 GROUP BY time(1d), gatewayId END
 ```
 
-####  Useful commands
+###  Useful commands
 
 ```sql
 SHOW RETENTION POLICIES ON sensor

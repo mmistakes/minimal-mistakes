@@ -2,11 +2,11 @@
 title: "Push temperature and humidity to RabbitMQ"
 related: true
 header:
-  overlay_color: "#000"
-  overlay_filter: "0"
-  overlay_image: /assets/images/caspar-rubin-224229.jpg
+  overlay_color: "#333"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/ray-hennessy-118035.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-  teaser: /assets/images/caspar-rubin-224229.jpg
+  teaser: /assets/images/ray-hennessy-118035.jpg
 categories:
   - Computer
 tags:
@@ -18,7 +18,7 @@ tags:
   - μService
   - Internet of Things
 ---
-TODO description
+The objective of this tutorial is to publish temperature and humidity to a RabbitMQ message broker.
 
 
 - [Prerequisites](#prerequisites)
@@ -27,7 +27,7 @@ TODO description
 - [Create a consumer on your Raspberry](#create-a-consumer-on-your-raspberry)
 - [Start publisher as Service](#start-publisher-as-service)
 
-####  Prerequisites
+###  Prerequisites
 
 - [Set up a Raspberry PI 3 ]({{ site.url }}{{ site.baseurl }}/raspberry/setup-raspberry)
 - [Interacting with DHT22 Sensor]({{ site.url }}{{ site.baseurl }}/raspberry/dht22-raspberry)
@@ -35,7 +35,7 @@ TODO description
 - [Install Git](https://git-scm.com/download/linux)
 
 
-#### Run RabbitMQ container
+### Run RabbitMQ container
 
 ```bash
 docker run -d --hostname my-rabbit --name my-rabbit -p 5672:5672 -p 8080:15672 rabbitmq:3-management
@@ -44,7 +44,7 @@ see more [here](https://hub.docker.com/_/rabbitmq/)
 
 You can see RabbitMQ management interface on port 8080.
 
-#### Create a publisher on your Raspberry
+### Create a publisher on your Raspberry
 
 1. Clone raspberry-scripts project
 
@@ -116,7 +116,7 @@ tail -f /var/log/dht22/consumer.log
 
 code based on [Asynchronous consumer example]("https://pika.readthedocs.io/en/0.10.0/examples/asynchronous_consumer_example.html")
 
-#### Start publisher as Service
+### Start publisher as Service
 
 Follow this [tutorial]({{ site.url }}{{ site.baseurl }}/linux/create-service)
 

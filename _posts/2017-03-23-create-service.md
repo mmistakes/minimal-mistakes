@@ -2,8 +2,8 @@
 title: "Create a service"
 related: true
 header:
-  overlay_color: "#000"
-  overlay_filter: "0"
+  overlay_color: "#333"
+  overlay_filter: "0.5"
   overlay_image: /assets/images/caspar-rubin-224229.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
   teaser: /assets/images/caspar-rubin-224229.jpg
@@ -13,26 +13,26 @@ tags:
   - Raspberry PI
   - Unix
 ---
-TODO description
+The objective of this tutorial is to create a system service in order to run a standalone program on background.
 
 
 - [Prerequisites](#prerequisites)
 - [Create service](#create-service)
 - [Useful commands](#useful-commands)
 
-#### Prerequisites
+### Prerequisites
 
 - [Set up a Raspberry PI 3]({{ site.url }}{{ site.baseurl }}/raspberry/setup-raspberry)
 
 ### Create Service
 
-a) Create new service
+a. Create new service
 
 ```bash
 sudo vim /lib/systemd/system/myservice.service
 ```
 
-b) Edit parameters
+b. Edit parameters
 
 ```text
 [Unit]
@@ -48,38 +48,38 @@ Restart=on-abort
 WantedBy=multi-user.target
 ```
 
-c) Enable execution permission of your service
+c. Enable execution permission of your service
 
 ```bash
 sudo chmod 644 /lib/systemd/system/myservice.service
 ```
-d) Enable execution permission of your script
+d. Enable execution permission of your script
 
 ```bash
 sudo chmod u+x /opt/script.py 
 ```
-e) Create symbolic link 
+e. Create symbolic link 
 ```bash
 sudo ln -s /opt/script.py /usr/bin/myservice
 ```
-f) Reload daemon 
+f. Reload daemon 
 ```bash
 sudo systemctl daemon-reload
 ```
-g) Enable the service
+g. Enable the service
 ```bash
 sudo systemctl enable myservice.service
 ```
-h) Start the service
+h. Start the service
 ```bash
 sudo systemctl start myservice.service
 ```
-i) Check status
+i. Check status
 ```bash
 sudo systemctl status myservice.service
 ```
 
-##### Useful commands
+### Useful commands
 
 - Stop the service
 ```bash

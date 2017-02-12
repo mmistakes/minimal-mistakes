@@ -1,9 +1,9 @@
 ---
-title: "Control your sprinkler with your Raspberry PI"
+title: "Control your sprinkler system with your Raspberry PI"
 related: true
 header:
-  overlay_color: "#000"
-  overlay_filter: "0"
+  overlay_color: "#333"
+  overlay_filter: "0.5"
   overlay_image: /assets/images/caspar-rubin-224229.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
   teaser: /assets/images/caspar-rubin-224229.jpg
@@ -11,15 +11,17 @@ categories:
   - Automation
 tags:
   - Raspberry PI
+  - Hidraulic
+  - Electronic
+  
 ---
-I want to control my sprinkler anywhere (out of my LAN when I'm on vacation...) with any device (mobile, pad, laptop...)
-
+The objective of this tutorial is to create and control a sprinkler system with a Raspberry PI.
 
 - [Prerequisites](#prerequisites)
 - [Electronic wiring](#electronic-wiring)
 - [Hydraulic wiring](#hydraulic-wiring)
 
-#### Prerequisites
+### Prerequisites
 
 - Components < ? EUR:
 
@@ -54,37 +56,37 @@ Hydraulic components
 - [Set up a Raspberry PI 3]({{ site.url }}{{ site.baseurl }}/automation/setup-raspberry)
 - [Install Python]({{ site.url }}{{ site.baseurl }}/linux/install-python)
 
-#### Electronic wiring
+### Electronic wiring
 
 {% capture fig_img %}
 ![schema_sprinkler]({{ basepath }}/assets/images/schema_sprinkler.png)
 {% endcapture %}
 
-#### Hydraulic wiring
+### Hydraulic wiring
 
-1) Calcul du débit
-2) Définition des zones
-3) Création du réseau
-4) Plan des turbines par zone
-5) Création des trancheés
-6) Mise en place des tuyaux, des coudes, des té et des turbines
-7) Raccordement des électrovannes
-8) Raccordement à l'arrivée d'eau
-9) Test manuel et ajustements
-10) Raccordement électrique
-11) Raccordement au relay
-12) Branchement du relay avec le Raspberry
-13) Test-gpio open vanne
-14) Installation de l'écran
-15) Creation du boitier
-16) Développement du logiciel en mode manuel kivy
-17) Test
-18) Create un mode scénario pour piloter les zones à la suite
-19) Raccordement au réseau électrique tableau
-20) Résultat final
+1. Calcul du débit
+2. Définition des zones
+3. Création du réseau
+4. Plan des turbines par zone
+5. Création des trancheés
+6. Mise en place des tuyaux, des coudes, des té et des turbines
+7. Raccordement des électrovannes
+8. Raccordement à l'arrivée d'eau
+9. Test manuel et ajustements
+10. Raccordement électrique
+11. Raccordement au relay
+12. Branchement du relay avec le Raspberry
+13. Test-gpio open vanne
+14. Installation de l'écran
+15. Creation du boitier
+16. Développement du logiciel en mode manuel kivy
+17. Test
+18. Create un mode scénario pour piloter les zones à la suite
+19. Raccordement au réseau électrique tableau
+20. Résultat final
 
 
-#### Install Kivy
+### Install Kivy
 
 ```bash
 pip install Cython==0.23
@@ -96,13 +98,13 @@ see more [here](https://kivy.org/docs/installation/installation-linux.html#insta
 
 https://kivy.org/docs/guide/basic.html
 
-#### Create Manual Mode
+### Create Manual Mode
 
 
-#### Create Scenario
+### Create Scenario
 
 
-#### Final Result
+### Final Result
 
 
 

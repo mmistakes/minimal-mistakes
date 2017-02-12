@@ -2,11 +2,11 @@
 title: "Reactive Meteo Station"
 related: true
 header:
-  overlay_color: "#000"
-  overlay_filter: "0"
-  overlay_image: /assets/images/caspar-rubin-224229.jpg
+  overlay_color: "#333"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/jordan-ladikos-62738.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-  teaser: /assets/images/caspar-rubin-224229.jpg
+  teaser: /assets/images/jordan-ladikos-62738.jpg
 categories:
   - Automation
 tags:
@@ -30,9 +30,7 @@ tags:
   - Internet of Things
 ---
 The objective of this tutorial is to design a full reactive architecture in order to interact with a Raspberry PI 3 as
-μService which produce temperature and humidity data.
-
-
+μService producing temperature and humidity data.
 
 - [Prerequisites](#prerequisites)
 - [Overview](#overview)
@@ -62,11 +60,11 @@ The objective of this tutorial is to design a full reactive architecture in orde
 | Reactive-client  | GUI | The GUI consumes data via WebSocket with Reactive-Server |
 
 
-#### Start the full stack with docker-compose
+### Start the full stack with docker-compose
 
-a) Stop all running your docker containers
+a. Stop all running your docker containers
 
-b) Adpat the docker-compose file according your environment
+b. Adpat the docker-compose file according your environment
 
 ```yaml
 version: '2'
@@ -99,12 +97,12 @@ services:
 ```
 [See code here](https://raw.githubusercontent.com/jluccisano/portfolio/master/docker-compose.yml)
 
-c) run
+c. Run
 ```bash
 docker-compose up -d
 ```
-d) Go to http://YOUR_HOST:8089
+d. Go to http://YOUR_HOST:8089
 
-#### Final Result
+### Final Result
 
 ScreenShots

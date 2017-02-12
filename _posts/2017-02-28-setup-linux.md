@@ -2,8 +2,8 @@
 title: "Raspbian basic administration"
 related: true
 header:
-  overlay_color: "#000"
-  overlay_filter: "0"
+  overlay_color: "#333"
+  overlay_filter: "0.5"
   overlay_image: /assets/images/caspar-rubin-224229.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
   teaser: /assets/images/caspar-rubin-224229.jpg
@@ -13,7 +13,7 @@ tags:
   - Raspberry PI
   - Linux
 ---
-TODO description
+The objective of this tutorial is to set up basic configuration of Raspbian distribution.
 
 
 - [Prerequisites](#prerequisites)
@@ -21,43 +21,43 @@ TODO description
 - [Configure SSH](#configure-ssh)
 - [Install zsh](#install-zsh)
 
-#### Prerequisites
+### Prerequisites
 
-#### Create user
+### Create user
 
-a) Add user
+a. Add user
 ```bash
 useradd new_user
 ```
-b) Set password
+b. Set password
 ```bash
 passwd new_user
 ```
-c) Add new user as sudoers
+c. Add new user as sudoers
 ```bash 
 sudo echo 'new_user ALL=(ALL) ALL' >> /etc/sudoers
 ```
-d) Add new user in groups root,adm,sudo
+d. Add new user in groups root,adm,sudo
 ```bash
 usermod -a -G root,adm,sudo new_user
 ```
 
-#### Configure SSH
+### Configure SSH
 
-a) Create group 
+a. Create group 
 ```bash
 groupadd sshusers
 ```
-b) Add new_user into the group
+b. Add new_user into the group
 ```bash
 usermod -a -G sshusers new_user
 ```
 
-a) Edit ssh config
+a. Edit ssh config
 ```
 sudo vim /etc/ssh/sshd_config
 ```
-b) Change default parameters
+b. Change default parameters
 
 - Change ssh default port
 ```text
@@ -79,7 +79,7 @@ AllowGroups sshusers
 AllowUsers new_user
 ```
 
-c) Restart service
+c. Restart service
 
 ```bash
 sudo /etc/init.d/ssh restart
@@ -93,7 +93,7 @@ systemctl restart ssh.service
 systemctl list-units --type=service 
 ```
 
-#### Install zsh and oh-my-zsh (optional)
+### Install zsh and oh-my-zsh (optional)
 
 ```bash
 apt-get update
@@ -102,7 +102,3 @@ apt-get install zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 see more [here](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
-
-#### To go further
-
-[Generate a SSH Key]({{ site.url }}{{ site.baseurl }}/linux/generate-rsa-key)
