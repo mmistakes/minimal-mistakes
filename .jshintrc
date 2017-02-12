@@ -1,0 +1,20 @@
+{
+  "bitwise": true,
+  "browser": true,
+  "curly": true,
+  "eqeqeq": true,
+  "eqnull": true,
+  "es5": false,
+  "esnext": true,
+  "immed": true,
+  "jquery": true,
+  "latedef": true,
+  "newcap": true,
+  "noarg": true,
+  "node": true,
+  "strict": false,
+  "trailing": false,
+  "undef": true,
+  "multistr": true,
+  "expr": true
+}
