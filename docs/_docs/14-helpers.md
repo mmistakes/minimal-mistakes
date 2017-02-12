@@ -30,7 +30,7 @@ feature_row:
   - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
     title: "Placeholder 3"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
-modified: 2016-11-03T11:15:48-04:00
+modified: 2016-11-15T12:11:48-05:00
 ---
 
 {% include toc icon="gears" title="Helpers" %}
@@ -64,6 +64,33 @@ The Liquid based taxonomy archives found amongst the demo pages rely on this hel
 [tag-array]: https://github.com/{{ site.repository }}/blob/master/docs/_pages/tag-archive.html
 [tag-array-demo]: {{ "/tags/" | absolute_url }}
 
+## Figure
+
+Generate a `<figure>` element with a single image and caption.
+
+| Include Parameter | Required     | Description |
+| ----              | --------     | ----------- |
+| **image_path**    | **Required** | Full path to image eg: `/assets/images/filename.jpg`. Use absolute URLS for those hosted externally. |
+| **alt**           | Optional     | Alternate text for image. |
+| **caption**       | Optional     | Figure caption text. Markdown is allowed. |
+
+Using the `figure` include like so:
+
+```liquid
+{% raw %}{% include figure image_path="/assets/images/unsplash-image-10.jpg" alt="this is a placeholder image" caption="This is a figure caption." %}{% endraw %}
+```
+
+Will output the following:
+
+{% include figure image_path="/assets/images/unsplash-image-10.jpg" alt="this is a placeholder image" caption="This is a figure caption." %}
+
+```html
+<figure>
+  <img src="/assets/images/unsplash-image-10.jpg" alt="this is a placeholder image">
+  <figcaption>This is a figure caption.</figcaption>
+</figure>
+```
+
 ## Gallery
 
 Generate a `<figure>` element with optional caption of arrays with two or more images.
@@ -73,7 +100,7 @@ To place a gallery add the necessary YAML Front Matter.
 | Name           | Required     | Description |
 | ----           | --------     | ----------- |
 | **url**        | Optional     | URL to link gallery image to (eg. a larger detail image). |
-| **image_path** | **Required** | Full path to image eg: `assets/images/filename.jpg`. Use absolute URLS for those hosted externally. |
+| **image_path** | **Required** | Full path to image eg: `/assets/images/filename.jpg`. Use absolute URLS for those hosted externally. |
 | **alt**        | Optional     | Alternate text for image. |
 | **title**      | Optional     | Title text for image. Will display as a caption in a Magnific Popup overlay when linked to a larger image with `url`. |
 
@@ -120,7 +147,7 @@ To add a feature row containing three content blocks with text and image, add th
 
 | Name           | Required     | Description | Default |
 | ----           | -----------  | ----------- | ------- |
-| **image_path** | **Required** | Full path to image eg: `assets/images/filename.jpg`. Use absolute URLS for those hosted externally. | |
+| **image_path** | **Required** | Full path to image eg: `/assets/images/filename.jpg`. Use absolute URLS for those hosted externally. | |
 | **alt**        | Optional     | Alternate text for image. | |
 | **title**      | Optional     | Content block title. | |
 | **excerpt**    | Optional     | Content block excerpt text. Markdown is allowed. | |
