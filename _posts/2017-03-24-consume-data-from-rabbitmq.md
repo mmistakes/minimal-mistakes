@@ -1,4 +1,4 @@
-  ---
+---
 title: "Consume data from RabbitMQ"
 related: true
 header:

@@ -41,9 +41,9 @@ The objective of this tutorial is to design a full reactive architecture interac
 -  [Interacting with DHT22 Sensor]({{ site.url }}{{ site.baseurl }}/raspberry/dht22-raspberry)
 -  [A server or your own computer with Docker]({{ site.url }}{{ site.baseurl }}/linux/install-docker)
 -  [Install Git](https://git-scm.com/download/linux)
--  [Push data to rabbitMQ]({{ site.url }}{{ site.baseurl }}/computer/push-data-on-rabbitmq)
--  [Consume data from rabbitMQ]({{ site.url }}{{ site.baseurl }}/computer/consume-data-from-rabbitmq)
-
+-  [Push data to RabbitMQ]({{ site.url }}{{ site.baseurl }}/computer/push-data-on-rabbitmq)
+-  [Consume data from RabbitMQ]({{ site.url }}{{ site.baseurl }}/computer/consume-data-from-rabbitmq)
+-  [Consume data from reactive client]({{ site.url }}{{ site.baseurl }}/computer/consume-data-from-reactive-client)
 ### Overview
 
 {% include figure image_path="/assets/images/reactive-architecture.png" alt="Reactive Architecture Overview" caption="Reactive Architecture Overview" %}

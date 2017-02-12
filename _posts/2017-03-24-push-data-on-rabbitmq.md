@@ -20,14 +20,6 @@ tags:
 ---
 The objective of this tutorial is to publish temperature and humidity to a RabbitMQ message broker.
 
-{% plantuml %}
-Alice -> Bob: Authentication Request
-Bob --> Alice: Authentication Response
-
-Alice -> Bob: Another authentication Request
-Alice <-- Bob: another authentication Response
-{% endplantuml %}
-
 
 - [Prerequisites](#prerequisites)
 - [Run RabbitMQ container](#prerequisites)
@@ -165,7 +157,7 @@ Great publisher works fine !!
 2017-03-24 13:22:47,668 Received 0 heartbeat frames, sent 0
 2017-03-24 13:22:47,669 Sending heartbeat frame
 2017-03-24 13:22:47,784 Received heartbeat frame
-2017-03-24 13:22:48,701 [>] Published data {'expire': 38231000, 'data': {'humidity': 34.20000076293945, '@type': 'DHT22', 'temperature': 24.399999618530273}, 'created': 1490361768} # 1
+2017-03-24 13:22:48,701 [] Published data {'expire': 38231000, 'data': {'humidity': 34.20000076293945, '@type': 'DHT22', 'temperature': 24.399999618530273}, 'created': 1490361768} # 1
 2017-03-24 13:22:48,701 Scheduling next message for 60.0 seconds
 ```
 
