@@ -2,9 +2,7 @@
 title: "Template: Featured Image And Text Readability"
 header:
   image: unsplash-image-4.jpg
-  credit:
-    caption: Unsplash
-    url: https://unsplash.com
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 tags: 
   - sample post
   - readability
