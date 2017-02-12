@@ -25,8 +25,8 @@ millions of doctor's prescription items per month, displaying data flowing throu
 trades or displaying products and taking orders in an e-commerce system. I will talk about why I feel functional
 programming is a good paradigm for dealing with these problems in later blogs.
 
-I've adopted and practised many techniques over the years to help design and architect software: jackson structured
-programming, data flow diagrams, entity relationship diagrams, booch object-oriented design, jacobson use cases, uml
+I've adopted and practised many techniques over the years to help design and architect software: Jackson Structured
+Programming, Data Flow Diagrams, Entity Relationship Diagrams, Booch Object-Oriented Design, Jacobson Use Cases, UML
 along with various ad-hoc approaches and diagramming styles.
 
 Some of the techniques used in architecture or design at the system and component level are applicable regardless of the
