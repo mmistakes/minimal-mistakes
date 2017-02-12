@@ -30,12 +30,20 @@ tags:
 - Install InfluxDB [here](2017-03-24-install-influxdb.md)
 - Consume data from Reactive-server [here](2017-03-24-consume-data-from-rabbitmq.md)
 
+#### Step X: FuntainJs
 
-#### Step 3: Reactive-Client
+#### Step X: Create a ReactJS component
 
-Create reactive client to consume data from Browser
-  - Install ReactJS
-  - Create RxJs consume socket
-  - Create Temperature Widget with D3Js
-  - Push data to browser client vi Websockets (STOMP)
+#### Step X: Create a ReactJS socket module via STOMP and sockJS
 
+#### Step X: Create widget with D3JS
+
+#### Final Result
+
+```bash
+git clone ...
+```
+
+```bash
+docker run --name reactive-client -p 8084:8084 -d jluccisano/reactive-server:latest
+```
