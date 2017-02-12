@@ -176,6 +176,13 @@ gems:
   - jekyll-feed
   # - jekyll-archives
 
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
