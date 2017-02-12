@@ -1,5 +1,3 @@
-
-
 {% if post.read_time %}
   {% assign words = post.content | strip_html | number_of_words %}
 {% elsif page.read_time %}
@@ -15,5 +13,5 @@
 	  {{ words | divided_by:site.words_per_minute }} {{ site.data.ui-text[site.locale].minutes_read }}
 	{% endif %}
 {% else %}
-  {{ site.data.ui-text[site.locale].undefined_words_per_minute }}
+  {{ site.data.ui-text[site.locale].undefined_wpm }}
 {% endif %}
