@@ -1,0 +1,24 @@
+{% include base_path %}
+{% assign navigation = site.data.navigation[page.sidebar.nav] %}
+
+<nav>
+  <ul>
+    {% for nav in navigation %}
+      <li>{{ nav.title }}
+        {% if nav.children != null %}
+        <ul>
+          {% for child in nav.children %}
+            {% assign nav_url = child.path | prepend: "/" | prepend: page.sidebar.nav | prepend: "/" | append: "/" | prepend: base_path %}
+            {% if nav_url contains page.url %}
+              {% assign c = "current" %}
+            {% else %}
+              {% assign c = "" %}
+            {% endif %}
+            <li><a href="{{ nav_url }}" class="{{ c }}">{{ child.title }}</a></li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
