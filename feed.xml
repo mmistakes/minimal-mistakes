@@ -34,8 +34,10 @@ sitemap: false
     <uri>{{ site.url }}</uri>
     {% if author.email %}<email>{{ author.email }}</email>{% endif %}
   </author>
-  <content type="html">{{ post.content | xml_escape }}
-  &lt;p&gt;&lt;a href=&quot;{{ site.url }}{{ post.url }}&quot;&gt;{{ post.title }}&lt;/a&gt; was originally published by {{ author.name }} at &lt;a href=&quot;{{ site.url }}&quot;&gt;{{ site.title }}&lt;/a&gt; on {{ post.date | date: "%B %d, %Y" }}.&lt;/p&gt;</content>
+  <content type="html">
+    {{ post.content | xml_escape }}
+    {% include _feed-footer.html %}
+  </content>
 </entry>
 {% endfor %}
 </feed>
