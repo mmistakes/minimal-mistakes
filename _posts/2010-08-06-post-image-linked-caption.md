@@ -1,12 +1,10 @@
 ---
-title: "Post Format: Image (Linked)"
-date: 2010-08-06T08:09:39+00:00
+title: "Post: Image (Linked with Caption)"
 categories:
   - Post Formats
 tags:
   - image
   - Post Formats
-format: image
 ---
 {% capture fig_img %}
 [![Foo](http://wpthemetestdata.files.wordpress.com/2012/06/dsc20040724_152504_532.jpg)](http://wpthemetestdata.files.wordpress.com/2012/06/dsc20040724_152504_532.jpg)

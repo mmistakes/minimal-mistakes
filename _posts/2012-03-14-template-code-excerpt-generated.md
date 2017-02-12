@@ -1,6 +1,5 @@
 ---
 title: "Template: Code Excerpt (Generated)"
-date: 2012-03-14
 categories:
   - Template
   - Uncategorized

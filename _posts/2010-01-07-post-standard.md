@@ -1,6 +1,5 @@
 ---
 title: "Post Format: Standard"
-date: 2010-10-05T00:27:25+00:00
 excerpt_separator: "<!--more-->"
 categories:
   - Post Formats

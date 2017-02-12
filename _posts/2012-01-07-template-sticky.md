@@ -1,6 +1,5 @@
 ---
 title: "Template: Sticky"
-date: 2012-01-07T07:07:21+00:00
 categories:
   - Uncategorized
 tags:

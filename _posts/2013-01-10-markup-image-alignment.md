@@ -1,6 +1,5 @@
 ---
 title: "Markup: Image Alignment"
-date: 2013-01-10T20:15:40+00:00
 categories:
   - Markup
 tags:

@@ -1,6 +1,5 @@
 ---
 title: 'Markup: "Title" With Special&nbsp;---&nbsp;Characters'
-date: 2013-01-05T11:00:20+00:00
 categories:
   - Markup
 tags:
