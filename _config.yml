@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Jododo"
+title                    : "Don't remake the wheel"
 title_separator          : "-"
 name                     : "Joseph Luccisano"
 description              : "An amazing website."
@@ -55,9 +55,9 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "joluccisano"
 facebook:
-  username               :
+  username               : "jluccisano"
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
@@ -70,9 +70,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "UA-90338151-1"
 
 
 # Site Author
