@@ -12,7 +12,7 @@
 * [Custom 404 page](http://mmistakes.github.io/minimal-mistakes/404.html) to get you started.
 * Stylesheets for Pygments and Coderay [syntax highlighting](http://mmistakes.github.io/minimal-mistakes/articles/code-highlighting-post/) to make your code examples look snazzy.
 
-![screenshot of Minimal Mistakes theme](http://mmistakes.github.io/minimal-mistakes/images/mm-theme-post-750.jpg)
+![screenshot of Minimal Mistakes theme](http://mmistakes.github.io/minimal-mistakes/images/mm-theme-post-600.jpg)
 
 General notes and suggestions for customizing Minimal Mistakes.
 
