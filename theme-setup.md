@@ -57,7 +57,7 @@ There are two main content layouts: *post.html* (for posts) and *page.html* (for
 
 #### Feature Images
 
-A good rule of thumb is to keep feature images nice and wide so you don't push the body text too far down. An image cropped around around 1024 x 512 pixels will keep file size down with an acceptable resolution for most devices. On my personal site I use [Picturefill](https://github.com/scottjehl/picturefill) to serve the same image responsively in four different flavors (small, medium, large, and extra large). In the interest of keeping things simple with this theme I left that script out, but you can certainly [add it back in](https://github.com/mmistakes/made-mistakes#articles-and-pages) or give [Adaptive Images](http://adaptive-images.com/) a try.
+A good rule of thumb is to keep feature images[^2] nice and wide so you don't push the body text too far down. An image cropped around around 1024 x 512 pixels will keep file size down with an acceptable resolution for most devices. On my personal site I use [Picturefill](https://github.com/scottjehl/picturefill) to serve the same image responsively in four different flavors (small, medium, large, and extra large). In the interest of keeping things simple with this theme I left that script out, but you can certainly [add it back in](https://github.com/mmistakes/made-mistakes#articles-and-pages) or give [Adaptive Images](http://adaptive-images.com/) a try.
 
 The two layouts make the assumption that the feature images live in the *images* folder. To add a feature image to a post or page just include the filename in the front matter like so. 
 
@@ -101,3 +101,5 @@ Not sure if this only effects Kramdown or if it's an issue with Markdown in gene
 ~~~
 
 [^1]: Used to generate absolute urls in *sitemap.xml*, *feed.xml*, and for canonical urls in *head.html*. Don't include a trailing `\` in your base url ie: http://mademistakes.com. When developing locally remove or comment out this line so local css, js, and images are used.
+
+[^2]: Feature images supplied by [Love Textures](http://www.lovetextures.com/)
