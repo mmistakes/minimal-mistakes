@@ -6,7 +6,7 @@ sidebar:
   nav: docs
 ---
 
-For consistency, Minimal Mistake's folder and file structure tries to remain close to a *default* Jekyll site. There's nothing clever here to be found :wink:.
+Nothing clever here :wink:. Layouts, data files, and includes are all placed in their default locations. Stylesheets and scripts in `assets`, and a few development related files in the root.
 
 ```bash
 minimal-mistakes
