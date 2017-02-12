@@ -12,18 +12,18 @@ vim /etc/ssh/sshd_config
 Port 1234                  # On change le port SSH d’accès au serveurpar défaut
 PermitRootLogin no         # On interdit les connexions en tant que root
 MaxStartups 10:30:60       # 10 connexions sans authentification, sinon 30% de rejet jusqu'à 100% en 60 connexions
-LoginGraceTime 30          # Une connexion de 30 secondes en SSH sans authentification entraîne la déconnexion
 AllowGroups sshusers
 AllowUsers jluccisano
 
 systemctl restart sshd.service
 systemctl list-units --type=service 
 
-
-pacman -S zsh  
-pacman -S git
+apt-get install sudo
+apt-get install curl
+apt-get install zsh
+apt-get install git
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-pacman -S docker
+apt-get install docker
 systemctl restart docker
 groupadd docker
 usermod -aG docker jluccisano
@@ -32,3 +32,11 @@ curl -L "https://github.com/docker/compose/releases/download/1.10.0/docker-compo
 chmod +x /usr/local/bin/docker-compose
 
 systemctl reboot
+
+vim /etc/sudoers
+jluccisano    ALL=(ALL:ALL) ALL
+
+
+sudo pacman -Syu
+
+

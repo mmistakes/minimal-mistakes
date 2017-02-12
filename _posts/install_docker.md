@@ -48,4 +48,6 @@ sudo docker kill YOUT_CONTAINER_ID
 Get list of images
 ```bash
 sudo docker images
+
+docker exec -i -t CONTAINER_ID /bin/bash
 ```
