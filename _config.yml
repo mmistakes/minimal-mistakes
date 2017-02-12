@@ -112,6 +112,7 @@ defaults:
       type: posts
     values:
       layout: single
+      author_profile: true
       comments: true
       share: true
       related: true
@@ -121,18 +122,28 @@ defaults:
       type: pages
     values:
       layout: single
+      author_profile: true
   # _recipes
   - scope:
       path: _recipes
       type: recipes
     values:
       layout: single
+      author_profile: true
   # _pets
   - scope:
       path: _pets
       type: pets
     values:
       layout: single
+      author_profile: true
+  # _portfolio
+  - scope:
+      path: _portfolio
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
 
 # Plugins
 gems:
