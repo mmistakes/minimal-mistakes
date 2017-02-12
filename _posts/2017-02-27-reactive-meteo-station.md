@@ -64,7 +64,7 @@ The objective of this tutorial is to design a full reactive architecture interac
 
 a. Stop all running your docker containers
 
-b. Adpat the docker-compose file according your environment
+b. Adapt the docker-compose file according your environment
 
 ```yaml
 version: '2'

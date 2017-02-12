@@ -15,9 +15,11 @@ tags:
 
 ### Useful commands
 
-gitg
 
 https://orga.cat/posts/most-useful-git-commands
+
+
+gitg
 
 
 - Rename last commit
@@ -80,3 +82,12 @@ git push --set-upstream origin feature/jls-INGFUN-1219-StoryboardLoggingBadVolum
 git rebase --interactive --root
 
 git commit --amend --date="Sun Feb 12 17:22 2017 +0100"
+
+#### Travis
+
+ssh-keygen -t rsa -b 4096 -C "joseph.luccisano@gmail.com"
+
+gem install travis
+
+/root/.gem/ruby/2.4.0/gems/travis-1.8.8/bin/travis encrypt-file deploy_key --add
+

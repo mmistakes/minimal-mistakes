@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Joseph Luccisano"
+title                    : "Practice makes perfect"
 title_separator          : "-"
 name                     : "Joseph Luccisano"
 description              : "An amazing website."
@@ -184,6 +184,7 @@ gems:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-plantuml
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -192,7 +193,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-
+  - jekyll-plantuml
 
 # Archives
 #  Type

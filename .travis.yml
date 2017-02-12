@@ -1,0 +1,21 @@
+language: ruby
+rvm:
+- 2.4.0
+before_script:
+- chmod +x ./scripts/cibuild.sh
+script: "./scripts/cibuild.sh"
+env:
+  global:
+  - GH_USER: jluccisano
+  - GH_REPO: jluccisano.github.io
+sudo: false
+branches:
+  only:
+  - master
+notifications:
+  email: false
+after_success:
+- bash ./scripts/deploy.sh
+before_install:
+- openssl aes-256-cbc -K $encrypted_9010d6b0979c_key -iv $encrypted_9010d6b0979c_iv
+  -in deploy_key.enc -out deploy_key -d
