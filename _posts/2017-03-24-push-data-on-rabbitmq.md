@@ -114,6 +114,44 @@ based on "https://pika.readthedocs.io/en/0.10.0/examples/asynchronous_consumer_e
 
 Follow this [tutorial](2017-03-23-create_service.md)
 
+Edit publisher.py and change config.yml to /opt/dht22/_config.yml
+
+
+Start 
+
 ```bash
 sudo systemctl start dht22_publisher.service
+```
+
+Check
+
+```bash
+sudo systemctl status dht22_publisher.service
+```
+
+```
+(env2.7) pi@raspberrypi:/opt/dht22 $ sudo systemctl status dht22.service
+● dht22.service - DHT22
+   Loaded: loaded (/lib/systemd/system/dht22.service; enabled)
+   Active: active (running) since Fri 2017-03-24 13:21:46 UTC; 1s ago
+ Main PID: 14457 (python)
+   CGroup: /system.slice/dht22.service
+           └─14457 /usr/bin/python /opt/dht22/publisher.py
+```
+
+Show log:
+```bash
+tail -f /var/log/dht22/publisher.log
+```
+
+Great publisher works fine !!
+
+```bash
+2017-03-24 13:21:48,032 Start publishing
+2017-03-24 13:21:48,033 Scheduling next message for 60.0 seconds
+2017-03-24 13:22:47,668 Received 0 heartbeat frames, sent 0
+2017-03-24 13:22:47,669 Sending heartbeat frame
+2017-03-24 13:22:47,784 Received heartbeat frame
+2017-03-24 13:22:48,701 [>] Published data {'expire': 38231000, 'data': {'humidity': 34.20000076293945, '@type': 'DHT22', 'temperature': 24.399999618530273}, 'created': 1490361768} # 1
+2017-03-24 13:22:48,701 Scheduling next message for 60.0 seconds
 ```

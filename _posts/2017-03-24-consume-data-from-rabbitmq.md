@@ -34,7 +34,15 @@ tags:
 - Install InfluxDB [here](2017-03-24-install-influxdb.md)
 
 
-#### Get 
+#### Step X: Consume data from Rabbitmq
+
+#### Step X: Store data into InfluxDB
+
+#### Step X: Forward data to client via Websocket
+
+#### Step X: Create Rest API with Swagger
+
+#### Final Result
 
 ```bash
 docker pull jluccisano/reactive-server
@@ -43,5 +51,3 @@ docker pull jluccisano/reactive-server
 ```bash
 docker run --name reactive-server -p 8084:8084 -d jluccisano/reactive-server:latest
 ```
-
-#### Swagger
