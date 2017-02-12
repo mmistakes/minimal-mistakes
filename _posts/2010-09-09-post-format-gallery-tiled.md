@@ -5,9 +5,7 @@ categories:
   - Post Formats
 tags:
   - gallery
-  - jetpack
   - Post Formats
-  - shortcode
   - tiled
 format: gallery
 ---
