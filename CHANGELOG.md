@@ -1,4 +1,4 @@
-## [3.0.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.0.2)
+## [3.0.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.0.3)
 
 ### Enhancements
 
