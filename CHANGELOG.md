@@ -1,3 +1,13 @@
+## [3.2.12](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.12)
+
+### Enhancements
+
+- Remove window width "magic number" from sticky sidebar check in `main.js` for improved flexibility. [#375](https://github.com/mmistakes/minimal-mistakes/pull/375)
+
+### Bug Fixes
+
+- Fix author override conditional where a missing `authors.yml` would show broken sidebar content. Defaults to `site.author`. [#376](https://github.com/mmistakes/minimal-mistakes/pull/376)
+
 ## [3.2.11](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.11)
 
 ### Bug Fixes
