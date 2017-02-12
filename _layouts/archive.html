@@ -13,12 +13,12 @@ layout: default
       <h3>{{ year }}</h3>
       {% capture written_year %}{{ year }}{% endcapture %}
     {% endif %}
-    <article>
+    <article itemscope itemtype="http://schema.org/CreativeWork">
       {% if post.link %}
-        <h2 class="link-post"><a href="{{ absurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h2>
+        <h2 class="link-post" itemprop="headline"><a href="{{ absurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h2>
       {% else %}
-        <h2><a href="{{ absurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-        <p>{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</p>
+        <h2 itemprop="headline"><a href="{{ absurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+        <p itemprop="description">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</p>
       {% endif %}
     </article>
   {% endfor %}

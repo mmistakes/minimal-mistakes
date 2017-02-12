@@ -4,18 +4,26 @@ layout: default
 
 {% include absolute-url.liquid %}
 
-<article class="post">
+<article class="post" itemscope itemtype="http://schema.org/CreativeWork">
+  <meta itemprop="description" content="{{ page.excerpt | strip_html }}">
+  {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
+  {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date: "%B %d, %Y" }}">{% endif %}
+      
   <div class="article-wrap">
-    {% if page.link %}
-      <h1><a href="{{ page.link }}">{{ page.title }}</a></h1>
-    {% else %}
-      <h1><a href="{{ absurl }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
-    {% endif %}
+    <header>
+      {% if page.link %}
+        <h1 itemprop="headline"><a href="{{ page.link }}">{{ page.title }}</a></h1>
+      {% else %}
+        <h1 itemprop="headline"><a href="{{ absurl }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
+      {% endif %}
+    </header>
 
+    <section itemprop="text">
     {{ content }}
+    </section>
 
     <hr />
-    
+
     <footer role="contentinfo">
       {% if page.share != false %}{% include social-share.html %}{% endif %}
       {% if page.date %}
