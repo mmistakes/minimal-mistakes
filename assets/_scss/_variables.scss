@@ -28,6 +28,10 @@ $bodoni                     : "Bodoni MT", serif;
 $calisto                    : "Calisto MT", serif;
 $garamond                   : Garamond, serif;
 
+$global-font-family         : $sans-serif;
+$header-font-family         : $sans-serif;
+$caption-font-family        : $sans-serif;
+
 /* type scale */
 $type-size-1                : 2.441em;  // ~39.056px
 $type-size-2                : 1.953em;  // ~31.248px
@@ -43,27 +47,24 @@ $type-size-8                : 0.625em;  // ~10px
    Colors
    ========================================================================== */
 
-$gray                       : #4c4c4c;
-$dark-gray                  : #191413;
-$light-gray                 : mix(#fff, $gray, 70%);
+$gray                       : #7a8288;
+$dark-gray                  : mix(#000, $gray, 30%);
+$darker-gray                : mix(#000, $gray, 50%);
+$light-gray                 : mix(#fff, $gray, 50%);
 $lighter-gray               : mix(#fff, $gray, 90%);
 
 $body-color                 : #fff;
 $background-color           : #fff;
-$code-background-color      : #f8f8f8;
-$code-background-color-dark : #1b1a24;
-$text-color                 : #333332;
+$code-background-color      : $lighter-gray;
+$code-background-color-dark : $light-gray;
+$text-color                 : $dark-gray;
 $border-color               : $lighter-gray;
-$base-color                 : #343434;
-$comp-color                 : spin($base-color, 180);
-$accent-color               : #000;
 
-/* buttons */
-$primary-color              : #000;
-$success-color              : #5cb85c;
-$warning-color              : #dd8338;
-$danger-color               : #C64537;
-$info-color                 : #308cbc;
+$primary-color              : #7a8288;
+$success-color              : #62c462;
+$warning-color              : #f89406;
+$danger-color               : #ee5f5b;
+$info-color                 : #5bc0de;
 
 /* brands */
 $behance-color              : #1769FF;
@@ -89,10 +90,11 @@ $xing-color                 : #006567;
 
 
 /* links */
-$link-color                 : #343434;
-$link-color-hover           : darken($link-color, 10);
-$link-color-visited         : lighten($link-color-hover, 20);
-$link-color-focus           : darken($link-color-visited, 10);
+$link-color                 : $primary-color;
+$link-color-hover           : mix(#000, $link-color, 25%);
+$link-color-visited         : mix(#fff, $link-color, 25%);
+$masthead-link-color        : $link-color;
+$masthead-link-color-hover  : $link-color-hover;
 
 
 /*
@@ -142,3 +144,4 @@ $border-radius              : 4px;
 $box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
 $navicon-width              : 28px;
 $navicon-height             : 4px;
+$global-transition          : all 0.2s ease-in-out;

@@ -61,9 +61,8 @@ audio:not([controls]) {
   display: none;
 }
 
-/* Remove blue color */
 a {
-  color: inherit;
+  color: $primary-color;
 }
 
 /* Apply focus state */
