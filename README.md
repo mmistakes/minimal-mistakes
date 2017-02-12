@@ -1,8 +1,6 @@
 # Minimal Mistakes
 
-**[Minimal Mistakes](http://mmistakes.github.io/minimal-mistakes)** is a two column responsive Jekyll theme perfect for powering your GitHub hosted blog.
-
-**Jekyll 3 Update:** A version of Minimal Mistakes compatible with Jekyll 3 can be found in the [`jekyll3` branch](https://github.com/mmistakes/minimal-mistakes/tree/jekyll3). GitHub Pages is [locked at version 2.4](https://pages.github.com/versions/) so some keep that in mind if you're trying to use 3.0 features that aren't supported there yet.
+**[Minimal Mistakes](http://mmistakes.github.io/minimal-mistakes)** is a two column responsive Jekyll theme perfect for powering your GitHub hosted blog built. Compatible with Jekyll 3.0 and up.
 
 ## Minimal Mistakes is all about:
 
@@ -20,6 +18,6 @@ See a [live version of Minimal Mistakes](http://mmistakes.github.io/minimal-mist
 
 ## Getting Started
 
-Minimal Mistakes takes advantage of Sass and data files to make customizing easier. These features require Jekyll 2.x and will not work with older versions of Jekyll.
+Minimal Mistakes takes advantage of Sass and data files to make customizing easier. These features require [Jekyll 2.x](https://github.com/mmistakes/minimal-mistakes/releases/tag/2.1.3) and will not work with older versions of Jekyll.
 
 To learn how to install and use this theme check out the [Setup Guide](http://mmistakes.github.io/minimal-mistakes/theme-setup/) for more information.

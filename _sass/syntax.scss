@@ -1,11 +1,16 @@
 /* ==========================================================================
-   Pygments.rb syntax highlighting
+   Syntax highlighting
    ========================================================================== */
+
+pre.highlight {
+	padding: 1em;
+}
 
 .highlight {
 	background-color: #efefef;
 	font-family: $code-font;
-	@include font(12);
+	@include font-rem(12);
+	line-height: 1.5;
 	color: #333332;
 	margin-bottom: 1.5em;
 	@include rounded(4px);
