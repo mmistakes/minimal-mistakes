@@ -1,6 +1,6 @@
 ---
 title: "Raspbian basic administration"
-excerpt_separator: "<!--more-->"
+excerpt_separator: "Raspbian basic administration"
 related: true
 header:
   image: /assets/images/jordan-ladikos-62738.jpg

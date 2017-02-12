@@ -1,6 +1,6 @@
 ---
-title: "install docker"
-excerpt_separator: "<!--more-->"
+title: "Install docker"
+excerpt_separator: "Install docker"
 related: true
 header:
   image: /assets/images/jordan-ladikos-62738.jpg

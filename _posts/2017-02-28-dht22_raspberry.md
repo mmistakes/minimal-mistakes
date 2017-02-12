@@ -1,6 +1,6 @@
 ---
 title: "Interacting with DHT22 Sensor"
-excerpt_separator: "<!--more-->"
+excerpt_separator: "Interacting with DHT22 Sensor"
 related: true
 header:
   image: /assets/images/jordan-ladikos-62738.jpg

@@ -1,6 +1,6 @@
 ---
 title: "Installing Python"
-excerpt_separator: "<!--more-->"
+excerpt_separator: "Installing Python"
 related: true
 header:
   image: /assets/images/jordan-ladikos-62738.jpg

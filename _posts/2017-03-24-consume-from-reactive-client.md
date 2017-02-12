@@ -1,6 +1,6 @@
 ---
 title: "Consume from reactive client"
-excerpt_separator: "<!--more-->"
+excerpt_separator: "Consume from reactive client"
 related: true
 header:
   image: /assets/images/anthony-rossbach-59486.jpg

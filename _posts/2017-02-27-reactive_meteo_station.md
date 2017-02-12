@@ -1,6 +1,6 @@
 ---
 title: "Reactive Meteo Station"
-excerpt_separator: "<!--more-->"
+excerpt_separator: "Reactive Meteo Station"
 related: true
 header:
   image: /assets/images/jordan-ladikos-62738.jpg

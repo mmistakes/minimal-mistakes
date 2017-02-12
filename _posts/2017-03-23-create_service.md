@@ -1,6 +1,6 @@
 ---
 title: "Create a service"
-excerpt_separator: "<!--more-->"
+excerpt_separator: "Create a service"
 related: true
 header:
   image: /assets/images/jordan-ladikos-62738.jpg

@@ -1,6 +1,6 @@
 ---
 title: "Setup a Raspberry PI 3"
-excerpt_separator: "<!--more-->"
+excerpt_separator: "Setup a Raspberry PI 3"
 related: true
 header:
   image: /assets/images/jordan-ladikos-62738.jpg

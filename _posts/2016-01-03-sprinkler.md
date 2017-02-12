@@ -1,5 +1,6 @@
 ---
-title: "Control your sprinkler with your Raspberry PI 3"
+title: "Control your sprinkler with your Raspberry PI"
+excerpt_separator: "Control your sprinkler with your Raspberry PI"
 header:
   image: /assets/images/jordan-ladikos-62738.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"

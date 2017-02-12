@@ -1,6 +1,6 @@
 ---
 title: "Consume temperature and humidity from RabbitMQ"
-excerpt_separator: "<!--more-->"
+excerpt_separator: "Consume temperature and humidity from RabbitMQ"
 related: true
 header:
   image: /assets/images/anthony-rossbach-59486.jpg

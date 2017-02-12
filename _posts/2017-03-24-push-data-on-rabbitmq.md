@@ -1,6 +1,6 @@
 ---
 title: "Push temperature and humidity to RabbitMQ"
-excerpt_separator: "<!--more-->"
+excerpt_separator: "Push temperature and humidity to RabbitMQ"
 related: true
 header:
   image: /assets/images/anthony-rossbach-59486.jpg
