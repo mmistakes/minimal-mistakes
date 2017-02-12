@@ -30,6 +30,9 @@ If you're hosting several Jekyll based sites under the same GitHub username you 
   <img src="{{ base_path }}/images/mm-gh-pages.gif" alt="creating a new branch on GitHub">
 </figure>
 
+**ProTip:** Be sure to [delete](https://github.com/blog/1377-create-and-delete-branches) the `gh-pages` branch if you forked Minimal Mistakes. This branch contains the documentation and demo site for the theme and you probably don't want that showing up in your repo.
+{: .notice--info}
+
 ## Customize Your Site
 
 Open up `_config.yml` found in the root of the repo and edit anything under **Site Settings**. For a full explanation of every setting be sure to read the **Customization** section, but for now let's just change the site's title.
