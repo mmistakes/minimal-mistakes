@@ -140,7 +140,7 @@ samp {
  * Improve readability of pre-formatted text in all browsers.
  */
 pre {
-  white-space: pre-wrap;
+  white-space: pre;
 }
 /**
  * Set consistent quote types.
@@ -370,6 +370,10 @@ table {
 .pull-right {
   float: right;
 }
+.image-pull-right {
+  float: right;
+  margin-top: 0;
+}
 .clearfix {
   *zoom: 1;
 }
@@ -430,6 +434,41 @@ h1 {
   margin-bottom: 26px;
   margin-bottom: 1.625rem;
 }
+h2 {
+  font-size: 28px;
+  font-size: 1.75rem;
+  line-height: 0.9286;
+  margin-bottom: 26px;
+  margin-bottom: 1.625rem;
+}
+h3 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.0833;
+  margin-bottom: 26px;
+  margin-bottom: 1.625rem;
+}
+h4 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.4444;
+  margin-bottom: 26px;
+  margin-bottom: 1.625rem;
+}
+h5 {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.625;
+  margin-bottom: 26px;
+  margin-bottom: 1.625rem;
+}
+h6 {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.8571;
+  margin-bottom: 26px;
+  margin-bottom: 1.625rem;
+}
 a {
   text-decoration: none;
   color: #343434;
@@ -447,11 +486,6 @@ a:focus {
 a:hover,
 a:active {
   outline: 0;
-}
-.link-arrow {
-  font-weight: 100;
-  text-decoration: underline;
-  font-style: normal;
 }
 figcaption {
   padding-top: 10px;
@@ -1424,6 +1458,58 @@ body {
 }
 .browser-upgrade a:hover {
   border-bottom: 1px solid #ffffff;
+}
+#goog-fixurl ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+#goog-fixurl ul li {
+  list-style-type: none;
+}
+#goog-wm-qt {
+  width: auto;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  padding: 8px 20px;
+  display: inline-block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  background-color: #ffffff;
+  color: #111111;
+  border-width: 2px !important;
+  border-style: solid !important;
+  border-color: #919191;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+#goog-wm-sb {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-size: 0.875rem;
+  background-color: #111111;
+  color: #ffffff;
+  border: 2px solid #111111 !important;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+#goog-wm-sb:visited {
+  color: #ffffff;
+}
+#goog-wm-sb:hover {
+  background-color: #ffffff;
+  color: #111111;
+}
+#goog-wm-sb:active {
+  -webkit-transform: translate(0, 2px);
+  -moz-transform: translate(0, 2px);
+  -ms-transform: translate(0, 2px);
+  -o-transform: translate(0, 2px);
+  transform: translate(0, 2px);
 }
 /* 480px wide ============================================== */
 .article-author-top,

@@ -96,9 +96,3 @@ HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, c
 Make any link standout more when applying the `.btn` class.
 
 <div markdown="0"><a href="#" class="btn">This is a button</a></div>
-
-<div markdown="0"><a href="#" class="btn btn-inverse">This is an inverse button</a></div>
-
-<div markdown="0"><a href="#" class="btn btn-small">This is small button</a></div>
-
-<div markdown="0"><a href="#" class="btn btn-inverse btn-small">Small inverse button</a></div>
