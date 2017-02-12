@@ -1,61 +1,17 @@
-{% capture absurl %}{{ site.url }}{{ site.baseurl }}{% endcapture %}
+---
+layout: default
+---
 
-<!doctype html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
-<head>
-{% include head.html %}
-</head>
-
-<body class="home">
-
-{% include browser-upgrade.html %}
-
-{% include navigation.html %}
-
-{% if page.image.feature %}
-  <div class="image-wrap">
-  <img src=
-    {% if page.image.feature contains 'http' %}
-      "{{ page.image.feature }}"
+<div id="index">
+  <h3><a href="{{ absurl }}/posts/">Recent Posts</a></h3>
+  {% for post in site.posts limit:5 %}
+  <article>
+    {% if post.link %}
+      <h2 class="link-post"><a href="{{ absurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h2>
     {% else %}
-      "{{ page.image.feature | prepend: "/images/" | prepend: absurl }}"
+      <h2><a href="{{ absurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+      <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
     {% endif %}
-  alt="{{ page.title }} feature image">
-  {% if page.image.credit %}
-    <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
-  {% endif %}
-  </div><!-- /.image-wrap -->
-{% endif %}
-
-<div id="main" role="main">
-  <div class="article-author-side">
-    {% include author-bio.html %}
-  </div>
-  <div id="index">
-    <h3><a href="{{ absurl }}/posts/">Recent Posts</a></h3>
-    {% for post in site.posts limit:5 %}
-    <article>
-      {% if post.link %}
-        <h2 class="link-post"><a href="{{ absurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h2>
-      {% else %}
-        <h2><a href="{{ absurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-        <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
-      {% endif %}
-    </article>
-    {% endfor %}
-  </div><!-- /#index -->
-</div><!-- /#main -->
-
-<div class="footer-wrap">
-  <footer>
-    {% include footer.html %}
-  </footer>
-</div><!-- /.footer-wrap -->
-
-{% include scripts.html %}
-
-</body>
-</html>
+  </article>
+  {% endfor %}
+</div><!-- /#index -->
