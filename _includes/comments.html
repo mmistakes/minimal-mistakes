@@ -11,7 +11,7 @@
     <h4 class="page__comments-title">{{ comments_label }}</h4>
     <section class="g-comments" data-href="{{ page.url | absolute_url }}" data-first_party_property="BLOGGER" data-view_type="FILTERED_POSTMOD">Loading Google+ Comments ...</section>
   {% when "staticman" %}
-    <section id="comments">
+    <section id="static-comments">
       {% if site.repository and site.staticman.branch %}
         <!-- Start static comments -->
         <div class="js-comments">
@@ -75,6 +75,6 @@
       {% endif %}
     </section>
   {% when "custom" %}
-    <section id="comments"></section>
+    <section id="custom-comments"></section>
   {% endcase %}
 </div>

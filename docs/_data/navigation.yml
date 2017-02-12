@@ -7,7 +7,6 @@ foo:
         url: /child-1-page-url/
       - title: "Child Link 2"
         url: /child-2-page-url/
-
   - title: "Parent Link 2"
     url: /parent-2-page-url/
     children:
@@ -23,16 +22,12 @@ foo:
 main:
   - title: "Quick-Start Guide"
     url: /docs/quick-start-guide/
-
   - title: "About"
     url: /about/
-
   - title: "Sample Posts"
     url: /year-archive/
-
   - title: "Sample Collections"
     url: /collection-archive/
-
   - title: "Terms &amp; Privacy Policy"
     url: /terms/
 
@@ -49,7 +44,6 @@ docs:
         url: /docs/installation/
       - title: "Upgrading"
         url: /docs/upgrading/
-
   - title: Customization
     children:
       - title: "Configuration"
@@ -64,7 +58,6 @@ docs:
         url: /docs/authors/
       - title: "Layouts"
         url: /docs/layouts/
-
   - title: Content
     children:
       - title: "Working with Posts"
@@ -77,14 +70,12 @@ docs:
         url: /docs/helpers/
       - title: "Utility Classes"
         url: /docs/utility-classes/
-
   - title: Extras
     children:
       - title: "Stylesheets"
         url: /docs/stylesheets/
       - title: "JavaScript"
         url: /docs/javascript/
-
   - title: Meta
     children:
       - title: "History"
@@ -97,3 +88,46 @@ docs:
         url: /docs/license/
       - title: "Terms &amp; Privacy Policy"
         url: /terms/
+
+# sidebar navigation list sample
+sidebar-sample:
+  - title: "Parent Page A"
+    children:
+      - title: "Child Page A1"
+        url: /
+      - title: "Child Page A2"
+        url: /
+      - title: "Child Page A3"
+        url: /
+      - title: "Child Page A4"
+        url: /
+  - title: "Parent Page B"
+    children:
+      - title: "Child Page B1"
+        url: /
+      - title: "Child Page B2"
+        url: /
+      - title: "Child Page B3"
+        url: /
+      - title: "Child Page B4"
+        url: /
+      - title: "Child Page B5"
+        url: /
+  - title: "Parent Page C"
+    children:
+      - title: "Child Page C1"
+        url: /
+      - title: "Child Page C2"
+        url: /
+      - title: "Child Page C3"
+        url: /
+      - title: "Child Page C4"
+        url: /
+      - title: "Child Page C5"
+        url: /
+  - title: "Parent Page D"
+    children:
+      - title: "Child Page D1"
+        url: /
+      - title: "Child Page D2"
+        url: /
