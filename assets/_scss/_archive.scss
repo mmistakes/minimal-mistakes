@@ -44,6 +44,14 @@
   }
 }
 
+.archive__item-teaser {
+  border-radius: $border-radius;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+}
+
 a:hover {
   .archive__item-teaser {
     box-shadow: 0 0 10px rgba(#000, 0.25);
@@ -93,18 +101,10 @@ a:hover {
     display: none;
   }
 
-  .archive__item-teaser {
-    border-radius: $border-radius;
-    img {
-      width: 100%;
-    }
-  }
-
   @include breakpoint($small) {
     @include gallery(5 of 10);
     .archive__item-teaser {
       max-height: 200px;
-      overflow: hidden;
     }
   }
 
