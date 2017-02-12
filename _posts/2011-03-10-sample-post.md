@@ -7,6 +7,16 @@ image:
   feature: texture-feature-05.jpg
 ---
 
+<section id="table-of-contents" class="toc">
+  <header>
+    <h3 class="delta">Contents</h3>
+  </header>
+<div id="drawer" markdown="1">
+*  Auto generated table of contents
+{:toc}
+</div>
+</section><!-- /#table-of-contents -->
+
 ## HTML Elements
 
 Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
