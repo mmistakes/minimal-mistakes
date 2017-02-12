@@ -321,7 +321,7 @@
     display: none;
   }
 
-  @include breakpoint(max-width $large) {
+  @include breakpoint(max-width ($large - 1px)) {
 
     label {
       position: relative;
@@ -428,7 +428,7 @@
     }
   }
 
-  @include breakpoint(max-width $large) {
+  @include breakpoint(max-width ($large - 1px)) {
     position: relative;
     max-height: 0;
     opacity: 0;
@@ -442,7 +442,7 @@
   }
 }
 
-@include breakpoint(max-width $large) {
+@include breakpoint(max-width ($large - 1px)) {
   .nav__list input:checked ~ .nav__items {
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
