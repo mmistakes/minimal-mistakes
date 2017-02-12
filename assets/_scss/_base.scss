@@ -164,8 +164,8 @@ li code,
 figcaption code {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
-  background: mix(#fff, $light-gray, 40%);
-  border: 1px solid $light-gray;
+  background: mix(#fff, $lighter-gray, 20%);
+  border: 1px solid $lighter-gray;
   border-radius: $border-radius;
 
   &:before, &:after {

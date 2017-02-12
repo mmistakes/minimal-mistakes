@@ -19,7 +19,7 @@
 
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls">
+    <ul class="author__urls social-icons">
       {% if author.uri %}
         <li><a href="{{ author.uri }}" target="_blank"><i class="fa fa-fw fa-globe"></i>Website</a></li>
       {% endif %}
@@ -54,7 +54,7 @@
         <li><a href="http://stackoverflow.com/users/{{ author.stackoverflow }}" target="_blank"><i class="fa fa-fw fa-stack-overflow"></i> Stackoverflow</a></li>
       {% endif %}
       {% if author.lastfm %}
-        <li><a href="http://lastfm.com/user/{{ author.lastfm }}" target="_blank"><i class="fa fa-fw fa-music"></i> Last.fm</a></li>
+        <li><a href="http://lastfm.com/user/{{ author.lastfm }}" target="_blank"><i class="fa fa-fw fa-lastfm-square"></i> Last.fm</a></li>
       {% endif %}
       {% if author.dribbble %}
         <li><a href="http://dribbble.com/{{ author.dribbble }}" target="_blank"><i class="fa fa-fw fa-dribbble"></i> Dribbble</a></li>
@@ -82,6 +82,9 @@
       {% endif %}
       {% if author.codepen %}
         <li><a href="http://codepen.io/{{ author.codepen }}" target="_blank"><i class="fa fa-fw fa-codepen"></i> CodePen</a></li>
+      {% endif %}
+      {% if author.vine %}
+        <li><a href="https://vine.co/u/{{ author.vine }}" target="_blank"><i class="fa fa-fw fa-vine"></i> Vine</a></li>
       {% endif %}
     </ul>
   </div>

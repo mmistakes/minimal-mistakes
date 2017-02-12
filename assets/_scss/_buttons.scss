@@ -49,12 +49,13 @@
   /* for dark backgrounds */
 
   &--inverse {
-    color: currentColor !important;
-    border: 1px solid currentColor !important; // override
+    color: $gray !important;
+    border: 1px solid $light-gray !important; // override
     background-color: #fff;
 
     &:hover {
-      background-color: mix(#000, #fff, 20%);
+      color: #fff !important;
+      border-color: $gray;
     }
   }
 

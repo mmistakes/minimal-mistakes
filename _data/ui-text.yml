@@ -17,7 +17,7 @@ en: &DEFAULT_EN
   date_label          : "Last Updated:"
   comments_label      : "Leave a Comment"
   related_label       : "You May Also Enjoy"
-  follow_label        : "Follow "
+  follow_label        : "Follow:"
   feed_label          : "Feed"
   powered_by          : "Powered by"
 en_US:
