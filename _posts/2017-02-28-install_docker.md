@@ -6,6 +6,9 @@ categories:
 tags:
   - Raspberry PI
 ---
+### What'is Docker?
+
+
 
 ### Install Portainer.io Manage docker with gui
 
@@ -52,8 +55,41 @@ Get list of images
 sudo docker images
 
 docker exec -i -t CONTAINER_ID /bin/bash
+
 ```
 
+### Use Docker-compose to up all images together
+
+```yaml
+version: '2'
+services:
+  reactive-client:
+    image: "reactive-client"
+    ports:
+     - "8089:80"
+    links:
+     - "reactive-server:reactive-server"
+  reactive-server:
+    image: "jluccisano/reactive-app:latest"
+    links:
+      - "rabbitmq:rabbitmq"
+  rabbitmq:
+    image:  "rabbitmq:3-management"
+    hostname: "rabbitmq"
+    ports:
+     - "5672:5672"
+     - "8080:15672"
+  influxdb:
+    image: "influxdb"
+    ports:
+     - "8083:8083"
+     - "8086:8086"
+    environment:
+     - INFLUXDB_ADMIN_ENABLED=true  
+    volume: "/usr/lib/influxdb:/var/lib/influxdb"
+   
+```
+[See code here](https://raw.githubusercontent.com/jluccisano/portfolio/master/docker-compose.yml)
 Tips
 
 sudo service docker stop

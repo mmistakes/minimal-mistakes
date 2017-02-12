@@ -6,9 +6,13 @@ tags:
   - raspberry
 ---
 
+#### Set Up a Raspberry PI 3
+
+see this post [here](2017-01-14-setup_raspberry.md)
+
 Overview
 
-![schema_sprinkler](/assets/images/schema_sprinkler.png){:class="img-responsive"}
+![schema_sprinkler](../assets/images/schema_sprinkler.png)
 
 
 Story:
