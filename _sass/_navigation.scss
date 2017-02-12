@@ -326,8 +326,9 @@
     label {
       position: relative;
       display: inline-block;
-      padding: 0.5em 1em;
+      padding: 0.5em 2.5em 0.5em 1em;
       font-size: $type-size-6;
+      font-weight: bold;
       border: 1px solid $light-gray;
       border-radius: $border-radius;
       z-index: 20;
@@ -335,10 +336,32 @@
       transition: 0.2s ease-out;
       cursor: pointer;
 
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        right: 1em;
+        top: 1.25em;
+        width: 0.75em;
+        height: 0.125em;
+        line-height: 1;
+        background-color: #333;
+        transition: 0.2s ease-out;
+      }
+
+      &:after {
+        transform: rotate(90deg);
+      }
+
       &:hover {
         color: #fff;
         border-color: $gray;
         background-color: mix(white, #000, 20%);
+
+        &:before,
+        &:after {
+          background-color: #fff;
+        }
       }
     }
 
@@ -346,6 +369,20 @@
     input:checked + label {
       color: white;
       background-color: mix(white, #000, 20%);
+
+      &:before,
+      &:after {
+        background-color: #fff;
+      }
+    }
+
+    // on hover show expand
+    label:hover:after {
+      transform: rotate(90deg);
+    }
+
+    input:checked + label:hover:after {
+      transform: rotate(0);
     }
 
     ul {
