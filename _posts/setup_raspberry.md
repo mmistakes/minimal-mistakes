@@ -34,6 +34,15 @@ Download the latest version of Raspbian: https://www.raspberrypi.org/downloads/r
 
 Next follow this guide according to your OS version: https://www.raspberrypi.org/documentation/installation/installing-images/README.md
 
+#### Enable SSH
+
+See more: https://www.raspberrypi.org/blog/a-security-update-for-raspbian-pixel/
+
+```bash
+cd /boot 
+touch ssh
+```
+
 ##### Example Write Image to SD Card from MacOS
 
 Follow this excellent thread: http://michaelcrump.net/the-magical-command-to-get-sdcard-formatted-for-fat32/
@@ -59,8 +68,13 @@ nmap -sn 192.168.0.0/24
 
 #### Connect to your Raspberry PI 3
 
-```
+```bash
 ssh pi@192.168.0.11
+```
+with X11
+
+```bash
+ssh -Y pi@192.168.0.11
 ```
 
 Default password: raspberry

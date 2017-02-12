@@ -12,3 +12,6 @@ example/_site
 Gemfile.lock
 node_modules
 npm-debug.log*
+vcs.xml
+Supprimerait .idea/modules.xml
+Supprimerait .idea/workspace.xml
