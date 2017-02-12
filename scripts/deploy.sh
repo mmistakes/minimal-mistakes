@@ -12,7 +12,7 @@ if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "$SOURCE_BRANCH" ]
 fi
 
 echo "Starting to update master\n"
-
+pwd
 
 #copy data we're interested in to other place
 cp -R --verbose /home/travis/build/jluccisano/jluccisano.github.io/_site $HOME/_site
@@ -24,18 +24,29 @@ SHA=`git rev-parse --verify HEAD`
 
 # Clone the existing master for this repo into out/
 # Create a new empty branch if master doesn't exist yet (should only happen on first deply)
+echo "cloning\n"
+pwd
+
 git clone $REPO out
+ls -la
 # Now let's go have some fun with the cloned repo
 cd out
+pwd
+
+ls -la
 git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
 cd ..
-
+ls -la
 # Clean out existing contents
+echo "deleting\n"
 rm --verbose -rf out/**/* || exit
 #go into directory and copy data we're interested in to that directory
-cd out
-cp --verbose -Rf $HOME/_site/* .
 
+cd out
+ls -la
+cp --verbose -Rf $HOME/_site/* .
+ls -la
+pwd
 
 git config user.name "Travis CI"
 git config user.email "$COMMIT_AUTHOR_EMAIL"
@@ -45,11 +56,14 @@ if git diff --quiet; then
     echo "No changes to the output on this push; exiting."
     exit 0
 fi
+pwd
 
 # Commit the "changes", i.e. the new version.
 # The delta will show diffs between new and old versions.
-git add -A . --verbose
-git commit -m "Deploy to GitHub Pages: ${SHA}" --verbose
+echo "adding\n"
+git add --verbose -A .
+echo "commit\n"
+git commit   --verbose -m "Deploy to GitHub Pages: ${SHA}"
 
 # Get the deploy key by using Travis's stored variables to decrypt deploy_key.enc
 ENCRYPTED_KEY_VAR="encrypted_${ENCRYPTION_LABEL}_key"
@@ -60,6 +74,8 @@ openssl aes-256-cbc -K $ENCRYPTED_KEY -iv $ENCRYPTED_IV -in ../deploy_key.enc -o
 chmod 600 ../deploy_key
 eval `ssh-agent -s`
 ssh-add ../deploy_key
+pwd
 
 # Now that we're all set up, we can push.
-git push $SSH_REPO $TARGET_BRANCH --verbose
+echo "pushing\n"
+git push --verbose $SSH_REPO $TARGET_BRANCH
