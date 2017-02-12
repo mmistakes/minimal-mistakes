@@ -5,7 +5,6 @@
 div.highlighter-rouge, figure.highlight {
   position: relative;
   margin-bottom: 1em;
-  padding: 1em;
   border: 1px solid $border-color;
   border-radius: $border-radius;
   background-color: $code-background-color;
@@ -27,6 +26,7 @@ div.highlighter-rouge, figure.highlight {
 
   .highlight {
     margin: 0;
+    padding: 1em;
     font-family: $monospace;
     font-size: $type-size-7;
     line-height: 1.8;

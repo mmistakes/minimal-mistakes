@@ -39,7 +39,7 @@
   {% assign seo_author_twitter = seo_author_twitter | replace: "@", "" %}
 {% endif %}
 
-<meta property="og:locale" content="{{ site.locale | default: "en" }}">
+<meta property="og:locale" content="{{ site.locale | replace: "-", "_" | default: "en" }}">
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
 
@@ -63,7 +63,9 @@
     <meta name="twitter:image" content="{% if page.header.image contains "://" %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: "/images/" | prepend: base_path }}{% endif %}">
   {% else %}
     <meta name="twitter:card" content="summary">
-    {% if site.og_image %}
+    {% if page.header.teaser %}
+      <meta name="twitter:image" content="{% if page.header.teaser contains "://" %}{{ page.header.teaser }}{% else %}{{ page.header.teaser | prepend: "/images/" | prepend: base_path }}{% endif %}">
+    {% elsif site.og_image %}
       <meta name="twitter:image" content="{{ site.og_image | prepend: "/images/" | prepend: base_path }}">
     {% endif %}
   {% endif %}
@@ -87,6 +89,10 @@
   <meta property="og:image" content="{% if page.header.image contains "://" %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: "/images/" | prepend: base_path }}{% endif %}">
 {% elsif page.header.overlay_image %}
   <meta property="og:image" content="{% if page.header.overlay_image contains "://" %}{{ page.header.overlay_image }}{% else %}{{ page.header.overlay_image | prepend: "/images/" | prepend: base_path }}{% endif %}">
+{% elsif page.header.teaser %}
+  <meta property="og:image" content="{% if page.header.teaser contains "://" %}{{ page.header.teaser }}{% else %}{{ page.header.teaser | prepend: "/images/" | prepend: base_path }}{% endif %}">
+{% elsif site.og_image %}
+  <meta property="og:image" content="{% if site.og_image contains "://" %}{{ site.og_image }}{% else %}{{ site.og_image | prepend: "/images/" | prepend: base_path }}{% endif %}">
 {% endif %}
 
 {% if page.date %}
