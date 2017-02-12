@@ -35,7 +35,7 @@
 
         <!-- Start new comment form -->
         <h4 class="page__comments-title">{{ site.data.ui-text[site.locale].comments_label | default: "Leave a Comment" }}</h4>
-        <p class="small help-block">{{ site.data.ui-text[site.locale].comment_form_info | default: "Your email address will not be published. Required fields are marked" }} <span class="required">*</span></p>
+        <p class="small">{{ site.data.ui-text[site.locale].comment_form_info | default: "Your email address will not be published. Required fields are marked" }} <span class="required">*</span></p>
         <form id="new_comment" class="page__comments-form js-form form" method="post" action="https://api.staticman.net/v1/entry/{{ site.repository }}/{{ site.staticman.branch }}">
           <div class="form__spinner">
             <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
@@ -63,6 +63,11 @@
             <input type="hidden" name="options[slug]" value="{{ page.slug }}">
             <input type="hidden" name="fields[hidden]"/>
           </fieldset>
+          <!-- Start comment form alert messaging -->
+          <p class="hidden js-notice">
+            <strong class="js-notice-text"></strong>
+          </p>
+          <!-- End comment form alert messaging -->
           <fieldset>
             <button type="submit" id="comment-form-submit" tabindex="5" class="btn btn--large">{{ site.data.ui-text[site.locale].comment_btn_submit | default: "Submit Comment" }}</button>
           </fieldset>
