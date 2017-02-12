@@ -121,6 +121,20 @@ Make any link standout more when applying the `.btn` class.
 [Info Button Text](#link){: .btn .btn--info}
 ```
 
+[X-Large Button](#){: .btn .btn--x-large}
+[Large Button](#){: .btn .btn--large}
+[Default Button](#){: .btn}
+[Small Button](#){: .btn .btn--small}
+[X-Small Button](#){: .btn .btn--x-small}
+
+```markdown
+[X-Large Button](#){: .btn .btn--x-large}
+[Large Button](#){: .btn .btn--large}
+[Default Button](#){: .btn}
+[Small Button](#){: .btn .btn--small}
+[X-Small Button](#){: .btn .btn--x-small}
+```
+
 ## Notices
 
 **Watch out!** You can also add notices by appending `{: .notice}` to a paragraph.

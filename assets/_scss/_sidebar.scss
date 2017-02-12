@@ -143,10 +143,6 @@
     display: block;
   }
   .btn {
-    margin: 0;
-    padding: 5px 10px;
-    color: mix(#fff, $gray, 25%);
-
     @include breakpoint($large) {
       display: none;
     }
