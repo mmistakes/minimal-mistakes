@@ -314,7 +314,7 @@
    ========================================================================== */
 
 .nav__list {
-  margin: 2em 0 1.5em 0;
+  margin-bottom: 1.5em;
 
   input[type="checkbox"],
   label {
@@ -392,7 +392,13 @@
 
     a {
       display: block;
-      padding: 0.125em 0;
+      padding: 0.25em 0;
+      color: inherit;
+
+      @include breakpoint($large) {
+        padding-top: 0.125em;
+        padding-bottom: 0.125em;
+      }
 
       &:hover {
         text-decoration: underline;
@@ -438,6 +444,7 @@
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
     max-height: 100vh;
+    overflow: visible;
     opacity: 1;
     margin-top: 1em;
     -webkit-transform: translate(0, 0);
