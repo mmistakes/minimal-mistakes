@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /theme-setup/index.html
+permalink: /theme-setup/
 title: Theme Setup
 description: "Instructions on how to install and customize the Jekyll theme Minimal Mistakes."
 tags: [Jekyll, theme, responsive]
@@ -42,7 +42,7 @@ minimal-mistakes/
 ├── _layouts/
 |    ├── home.html  #homepage layout
 |    ├── page.html  #page layout
-|    ├── post-index.html  #post listing layout
+|    ├── post-index.html  #post index layout
 |    └── post.html  #post layout
 ├── _posts/
 ├── assets/
@@ -55,7 +55,7 @@ minimal-mistakes/
 |    └── less/
 ├── images/  # images for posts and pages
 ├── about.md  # about page
-├── articles.md  # lists all posts from latest to oldest
+├── posts.md  # lists all posts from latest to oldest
 └── index.md  # homepage. lists 5 most recent posts
 {% endhighlight %}
 
@@ -69,7 +69,7 @@ Most of the variables found here are used in the .html files found in `_includes
 
 #### Owner/Author Information
 
-Change your name, bio, and avatar photo (100x100 pixels or larger), Twitter url, email, and Google+ url. If you want to link to an external image on Gravatar or something similiar you'll need to edit the path in `_author-bio.html` since it assumes it is located in `\images`.
+Change your name, bio, and avatar photo (100x100 pixels or larger), Twitter url, email, and Google+ url. If you want to link to an external image on Gravatar or something similiar you'll need to edit the path in `_author-bio.html` since it assumes it is located in `/images`.
 
 Including a link to your Google+ profile has the added benefit of displaying [Google Authorship](https://plus.google.com/authorship) in Google search results if you've went ahead and applied for it. Don't have a Google+ account? Just leave it blank.
 
@@ -85,11 +85,11 @@ Edit page/post titles and URLs to include in the site's navigation. For external
 # sample top navigation links
 links:
   - title: About Page
-    url: /about
-  - title: Articles
-    url: /articles
+    url: /about/
+  - title: Posts
+    url: /posts/
   - title: Other Page
-    url: /other-page
+    url: /other-page/
   - title: External Page
     url: http://mademistakes.com
     external: true
@@ -97,7 +97,7 @@ links:
 
 ### Adding Posts and Pages
 
-There are two main content layouts: *post.html* (for posts) and *page.html* (for pages). Both have large **feature images** that span the full-width of the screen, and both are meant for text heavy blog posts (or articles). 
+There are two main content layouts: *post.html* (for posts) and *page.html* (for pages). Both have large **feature images** that span the full-width of the screen, and both are meant for long form articles and blog posts. 
 
 #### Feature Images
 
@@ -119,6 +119,19 @@ image:
   credit: Michael Rose #name of the person or site you want to credit
   creditlink: http://mademistakes.com #url to their site or licensing
 {% endhighlight %}
+
+#### Post Index Page
+
+A [sample index page]({{ site.url }}/posts/) listing all posts grouped by the year they were published has been provided. The name can be customized to your liking by editing a few references. For example, to change **Posts** to **Writing** update the following:
+
+* In `_config.yml` under `links:` rename the title and URL to the following:
+{% highlight yaml %}
+  links:
+  - title: Writing
+    url: /writing/
+{% endhighlight %}
+* Rename `posts.md` to `writing.md` and update the YAML front matter to match the title and URL set in `_config.yml`
+* Update the **View all posts** link in `post.html` layout found in `_layouts` to match title and URL set previously.
 
 #### Thumbnails for OG and Twitter Cards
 

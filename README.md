@@ -34,7 +34,7 @@ General notes and suggestions for customizing Minimal Mistakes.
 ## Setup for an Existing Jekyll site
 
 1. Clone the following folders: `_includes`, `_layouts`, `assets`, and `images`.
-2. Clone the following files and personalize content as need: `about.md`, `articles.html`, `index.md`, `feed.xml`, `sitemap.xml`
+2. Clone the following files and personalize content as need: `about.md`, `posts.md`, `index.md`, `feed.xml`, `sitemap.xml`
 3. Set the following variables in your `config.yml` file:
 
 ``` yaml
@@ -71,7 +71,7 @@ bing_verify:
 # For external links add external: true
 links:
   - title: Theme Setup
-    url: /theme-setup
+    url: /theme-setup/
   - title: External Link
     url: http://mademistakes.com
     external: true
