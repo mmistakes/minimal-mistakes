@@ -28,7 +28,7 @@ General notes and suggestions for customizing Minimal Mistakes.
 minimal-mistakes/
 ├── _includes
 |    ├── author-bio.html  //bio stuff goes here
-|    ├── chrome-frame.html  //displays on IE8 and less
+|    ├── browser-upgrade.html  //displays on IE8 and less
 |    ├── footer.html  //site footer
 |    ├── head.html  //site head
 |    ├── navigation.html //site top nav
