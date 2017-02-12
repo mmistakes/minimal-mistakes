@@ -6,6 +6,8 @@ description: "Instructions on how to install and customize the Jekyll theme Mini
 tags: [Jekyll, theme, responsive]
 image:
   feature: texture-feature-02.jpg
+  credit: Texture Lovers
+  creditlink: http://texturelovers.com
 ---
 
 <section id="table-of-contents" class="toc">
@@ -104,6 +106,15 @@ The two layouts make the assumption that the feature images live in the *images*
 image:
   feature: feature-image-filename.jpg
   thumb: thumbnail-image.jpg #keep it square 200x200 px is good
+{% endhighlight %}
+
+If you want to apply attribution to a feature image use the following YAML front matter on posts or pages. Image credits appear directly below the feature image with a link back to the original source.
+
+{% highlight yaml %}
+image:
+  feature: feature-image-filename.jpg
+  credit: Michael Rose #name of the person or site you want to credit
+  creditlink: http://mademistakes.com #url to their site or licensing
 {% endhighlight %}
 
 #### Thumbnails for OG and Twitter Cards
