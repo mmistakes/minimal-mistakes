@@ -1,5 +1,5 @@
 ---
-title: "Install docker"
+title: "Install Docker"
 related: true
 header:
   overlay_color: "#333"

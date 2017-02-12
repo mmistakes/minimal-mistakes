@@ -1,5 +1,5 @@
 ---
-title: "Installing GIT"
+title: "Install GIT"
 related: true
 header:
   overlay_color: "#333"

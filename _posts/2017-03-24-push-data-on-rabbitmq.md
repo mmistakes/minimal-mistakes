@@ -1,5 +1,5 @@
 ---
-title: "Push temperature and humidity to RabbitMQ"
+title: "Push data to RabbitMQ"
 related: true
 header:
   overlay_color: "#333"

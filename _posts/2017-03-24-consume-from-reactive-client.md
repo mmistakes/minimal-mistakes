@@ -1,5 +1,5 @@
 ---
-title: "Consume from reactive client"
+title: "Consume data from reactive client"
 related: true
 header:
   overlay_color: "#333"

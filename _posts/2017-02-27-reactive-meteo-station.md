@@ -1,5 +1,5 @@
 ---
-title: "Reactive Meteo Station"
+title: "Create a reactive Meteo Station"
 related: true
 header:
   overlay_color: "#333"
@@ -29,7 +29,7 @@ tags:
   - REST
   - Internet of Things
 ---
-The objective of this tutorial is to design a full reactive architecture in order to interact with a Raspberry PI 3 as
+The objective of this tutorial is to design a full reactive architecture interacting with a Raspberry PI 3 as
 μService producing temperature and humidity data.
 
 - [Prerequisites](#prerequisites)

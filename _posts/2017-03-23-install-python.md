@@ -1,5 +1,5 @@
 ---
-title: "Installing Python"
+title: "Install Python"
 related: true
 header:
   overlay_color: "#333"

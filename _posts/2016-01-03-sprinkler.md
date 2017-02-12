@@ -1,5 +1,5 @@
 ---
-title: "Control your sprinkler system with your Raspberry PI"
+title: "Create a sprinkler system"
 related: true
 header:
   overlay_color: "#333"

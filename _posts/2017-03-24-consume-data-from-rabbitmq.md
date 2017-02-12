@@ -1,5 +1,5 @@
 ---
-title: "Consume temperature and humidity from RabbitMQ"
+title: "Consume data from RabbitMQ"
 related: true
 header:
   overlay_color: "#333"

@@ -44,7 +44,9 @@ see more [here](https://hub.docker.com/_/influxdb/)
 
 ###  Create Database
 
-TODO
+```bash
+CREATE DATABASE IF NOT EXISTS sensor
+```
 
 ###  Connect to influxDB
 
@@ -89,5 +91,9 @@ SELECT * FROM sensor."autogen".downsampled_dht22
 
 ```sql
 DROP CONTINUOUS QUERY cq_1h ON sensor
+```
+
+```sql
+DROP DATABASE IF EXISTS sensor
 ```
 

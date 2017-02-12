@@ -1,5 +1,5 @@
 ---
-title: "Create a service"
+title: "Create a Linux service"
 related: true
 header:
   overlay_color: "#333"
