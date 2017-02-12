@@ -90,8 +90,8 @@ increasing at a certain rate but if they then increase at a different rate we ne
 
 ## There are three things that matter in software design: defer, defer, defer... ##
 
-Every design decision we make gets encoded in our software. every time we decide something it ends up having an impact
-on the code. every decision embedded in that software is a decision we have to live with and maintain.
+Every design decision we make gets encoded in our software. Every time we decide something it ends up having an impact
+on the code. Every decision embedded in that software is a decision we have to live with and maintain.
 
 If the basis for a decision proves inaccurate or changes then there is a cost in changing the software to reflect the
 new reality.
