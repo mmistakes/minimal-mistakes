@@ -57,7 +57,7 @@ layout: default
     {% endif %}
     <div class="grid__wrapper">
       {% for post in site.related_posts limit:4 %}
-        {% include archive-grid-single.html %}
+        {% include archive-single.html type="grid" %}
       {% endfor %}
     </div>
   </div>

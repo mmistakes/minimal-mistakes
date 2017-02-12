@@ -13,6 +13,9 @@
   @include breakpoint($x-large) {
     @include prefix(0.5 of 12);
   }
+  a {
+    text-decoration: none;
+  }
 }
 
 .archive__subtitle {
@@ -27,12 +30,6 @@
   margin-bottom: 4px;
   font-family: $sans-serif-narrow;
   font-size: 20px;
-  a {
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
 }
 
 .archive__item-excerpt {
@@ -48,5 +45,38 @@ a:hover {
   }
   .archive__item-title {
     text-decoration: underline;
+  }
+}
+
+
+/*
+   Grid view
+   ========================================================================== */
+
+.grid__item {
+  margin-bottom: 2em;
+  .archive__item-excerpt {
+    display: none;
+  }
+  .archive__item-teaser {
+    border-radius: $border-radius;
+  }
+  @include breakpoint($small) {
+    @include gallery(5 of 10);
+    .archive__item-teaser {
+      max-height: 200px;
+      overflow: hidden;
+    }
+  }
+  @include breakpoint($medium) {
+    margin-left: 0; // reset before mixin does its thing
+    margin-right: 0; // reset before mixin does its thing
+    @include gallery(2.5 of 10);
+    .archive__item-teaser {
+      max-height: 120px;
+    }
+    .archive__item-excerpt {
+      display: block;
+    }
   }
 }
