@@ -4,9 +4,9 @@ layout: splash
 title: "Department of Informatics"
 header:
   overlay_color: "#5e616c"
-  overlay_image: /assets/images/mm-home-page-feature.jpg
+  overlay_image: /assets/images/splash1.jpg
   cta_label: "<i class='fa fa-download'></i> Enter"
-  cta_url: "/docs/quick-start-guide/"
+  cta_url: "/en/index/"
   caption:
 excerpt: 'A flexible two-column Jekyll theme. Perfect for personal sites, blogs, and portfolios hosted on GitHub or your own server.<br /> <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.2.1">Latest release v4.2.1</a></small><br /><br />'
 feature_row:
