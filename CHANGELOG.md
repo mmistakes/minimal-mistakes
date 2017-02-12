@@ -1,3 +1,13 @@
+## [3.4.6](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.6)
+
+### Enhancements
+
+- Add Italian "comments" related localized UI text. [#514](https://github.com/mmistakes/minimal-mistakes/pull/514)
+
+### Bug Fixes
+
+- Disable `compress` HTML layout by default. To enable add `layout: compress` to `_layouts/default.html`.
+
 ## [3.4.5](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.5)
 
 ### Enhancements
