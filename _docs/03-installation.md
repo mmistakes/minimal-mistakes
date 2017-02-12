@@ -56,7 +56,7 @@ defaults:
 
 ## Install Dependencies
 
-If this is your first time using Jekyll be sure to read through the [official documentation](https://jekyllrb.com/docs/home/) to familiarize yourself. This guide assumes you've done that and have Ruby v2 installed.
+If this is your first time using Jekyll be sure to read through the [official documentation](https://jekyllrb.com/docs/home/) to familiarize yourself. This guide assumes you've done that and have Jekyll v3 and Ruby v2 installed.
 
 To keep your sanity and better manage dependencies I strongly urge you to [install Bundler](http://bundler.io/) with `gem install bundler` and use the included [`Gemfile`](https://github.com/mmistakes/minimal-mistakes/blob/master/Gemfile). Minimal Mistake's Gemfile defaults to the `github-pages` gem to maintain a local Jekyll environment in sync with GitHub Pages.
 
