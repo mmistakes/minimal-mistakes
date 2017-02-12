@@ -314,19 +314,94 @@
    ========================================================================== */
 
 .nav__list {
-  font-size: 1.25rem;
+  margin-bottom: 1.5em;
 
-  ul {
-    margin-bottom: 1em;
+  input[type="checkbox"],
+  label {
+    display: none;
   }
 
-  a {
-    display: block;
-    padding: 0.125em 0;
-    color: inherit;
+  @include breakpoint(max-width $large) {
 
-    &:hover {
-      text-decoration: underline;
+    label {
+      position: relative;
+      display: inline-block;
+      padding: 0.5em 2.5em 0.5em 1em;
+      color: $gray;
+      font-size: $type-size-6;
+      font-weight: bold;
+      border: 1px solid $light-gray;
+      border-radius: $border-radius;
+      z-index: 20;
+      -webkit-transition: 0.2s ease-out;
+      transition: 0.2s ease-out;
+      cursor: pointer;
+
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        right: 1em;
+        top: 1.25em;
+        width: 0.75em;
+        height: 0.125em;
+        line-height: 1;
+        background-color: $gray;
+        transition: 0.2s ease-out;
+      }
+
+      &:after {
+        transform: rotate(90deg);
+      }
+
+      &:hover {
+        color: #fff;
+        border-color: $gray;
+        background-color: mix(white, #000, 20%);
+
+        &:before,
+        &:after {
+          background-color: #fff;
+        }
+      }
+    }
+
+    /* selected*/
+    input:checked + label {
+      color: white;
+      background-color: mix(white, #000, 20%);
+
+      &:before,
+      &:after {
+        background-color: #fff;
+      }
+    }
+
+    // on hover show expand
+    label:hover:after {
+      transform: rotate(90deg);
+    }
+
+    input:checked + label:hover:after {
+      transform: rotate(0);
+    }
+
+    ul {
+      margin-bottom: 1em;
+    }
+
+    a {
+      display: block;
+      padding: 0.25em 0;
+
+      @include breakpoint($large) {
+        padding-top: 0.125em;
+        padding-bottom: 0.125em;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
@@ -342,6 +417,42 @@
     &:hover {
       color: #fff;
     }
+  }
+}
+
+.nav__list .nav__items {
+  margin: 0;
+  font-size: 1.25rem;
+
+  a {
+    color: inherit;
+  }
+
+  @include breakpoint(max-width $large) {
+    position: relative;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    z-index: 10;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transform: translate(0, 10%);
+        -ms-transform: translate(0, 10%);
+            transform: translate(0, 10%);
+  }
+}
+
+@include breakpoint(max-width $large) {
+  .nav__list input:checked ~ .nav__items {
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    max-height: 100vh;
+    overflow: visible;
+    opacity: 1;
+    margin-top: 1em;
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 }
 
