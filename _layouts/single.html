@@ -8,7 +8,7 @@ layout: default
   {% include page__hero.html %}
 {% endif %}
 
-{% if page.url != "/" and site.breadcrumbs and site.categories.type == "jekyll-archives" %}
+{% if page.url != "/" and site.breadcrumbs %}
   {% include breadcrumbs.html %}
 {% endif %}
 
