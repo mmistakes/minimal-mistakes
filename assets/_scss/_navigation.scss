@@ -9,11 +9,14 @@
 .breadcrumbs {
   @include container;
   @include clearfix;
+  position: relative;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 2em;
   padding-right: 2em;
   font-family: $sans-serif;
+  animation: intro 0.3s both;
+  animation-delay: 0.30s;
 
   @include breakpoint($large) {
     padding-left: 1em;
