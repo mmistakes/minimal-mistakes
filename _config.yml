@@ -58,7 +58,6 @@ social:
     - "https://facebook.com/michaelrose"
 
 # Reading Files
-safe: true
 include:
   - .htaccess
   - _pages
@@ -228,7 +227,7 @@ tags:
 #     category: archive-taxonomy
 #     tag: archive-taxonomy
 #   permalinks:
-#     category: /:name/
+#     category: /categories/:name/
 #     tag: /tags/:name/
 
 # HTML Compression
