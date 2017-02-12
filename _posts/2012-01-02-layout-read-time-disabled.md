@@ -1,5 +1,5 @@
 ---
-title: "Template: Read Time Disabled"
+title: "Layout: Read Time Disabled"
 read_time: false
 tags:
   - read time

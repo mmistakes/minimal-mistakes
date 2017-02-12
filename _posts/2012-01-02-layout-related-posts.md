@@ -1,12 +1,12 @@
 ---
-title: "Template: Related Posts Enabled"
+title: "Layout: Related Posts Enabled"
 related: true
 categories:
-  - Template
+  - Layout
   - Uncategorized
 tags:
   - related posts
-  - template
+  - layout
 ---
 
 This post has related posts enabled.
