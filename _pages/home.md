@@ -1,5 +1,4 @@
 ---
-title: "Minimal Mistakes"
 layout: splash
 permalink: /home/
 date:
