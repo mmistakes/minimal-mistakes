@@ -34,3 +34,11 @@ feature_row2:
 {% include feature_row id="feature_row1" type="left" %}
 
 {% include feature_row id="feature_row2" type="right" %}
+
+{% plantuml %}
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
+
+Alice -> Bob: Another authentication Request
+Alice <-- Bob: another authentication Response
+{% endplantuml %}

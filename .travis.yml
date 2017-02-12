@@ -6,16 +6,15 @@ before_script:
 script: "./scripts/cibuild.sh"
 env:
   global:
-  - GH_USER: jluccisano
-  - GH_REPO: jluccisano.github.io
+  - ENCRYPTION_LABEL: 9010d6b0979c
+  - COMMIT_AUTHOR_EMAIL: joseph.luccisano@gmail.com
 sudo: false
 branches:
   only:
-  - master
+  - develop
 notifications:
   email: false
 after_success:
 - bash ./scripts/deploy.sh
 before_install:
-- openssl aes-256-cbc -K $encrypted_9010d6b0979c_key -iv $encrypted_9010d6b0979c_iv
-  -in deploy_key.enc -out deploy_key -d
+- openssl aes-256-cbc -K $encrypted_9010d6b0979c_key -iv $encrypted_9010d6b0979c_iv -in deploy_key.enc -out deploy_key -d

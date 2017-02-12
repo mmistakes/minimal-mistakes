@@ -167,6 +167,8 @@ g. Plug an ethernet cable and swicth on the power supply.
  
  
 ### Retrieve Raspberry PI 3
+
+1) unplug the ethernet cable and run the nmap command
  
 Follow this [tutorial](https://www.raspberrypi.org/documentation/remote-access/ip-address.md)
 Example:
@@ -174,15 +176,65 @@ Example:
 nmap -sn 192.168.0.0/24
 ```
 
+Output 
+```bash
+tarting Nmap 7.12 ( https://nmap.org ) at 2017-04-07 13:24 CEST
+Nmap scan report for 192.168.0.10
+Host is up (0.016s latency).
+Nmap scan report for 192.168.0.12
+Host is up (0.019s latency).
+Nmap scan report for 192.168.0.14
+Host is up (0.0040s latency).
+Nmap scan report for 192.168.0.18
+Host is up (0.0017s latency).
+Nmap scan report for 192.168.0.20
+Host is up (0.077s latency).
+Nmap scan report for 192.168.0.254
+Host is up (0.0075s latency).
+Nmap done: 256 IP addresses (7 hosts up) scanned in 3.04 seconds
+```
+2) plug the ethernet cable et re-run the nmap command
+Example:
+```bash
+nmap -sn 192.168.0.0/24
+```
+
+Output 
+```bash
+tarting Nmap 7.12 ( https://nmap.org ) at 2017-04-07 13:24 CEST
+Nmap scan report for 192.168.0.10
+Host is up (0.016s latency).
+Nmap scan report for 192.168.0.12
+Host is up (0.019s latency).
+Nmap scan report for 192.168.0.14
+Host is up (0.0040s latency).
+Nmap scan report for 192.168.0.18
+Host is up (0.0025s latency).
+Nmap scan report for 192.168.0.19
+Host is up (0.0017s latency).
+Nmap scan report for 192.168.0.20
+Host is up (0.077s latency).
+Nmap scan report for 192.168.0.254
+Host is up (0.0075s latency).
+Nmap done: 256 IP addresses (7 hosts up) scanned in 3.04 seconds
+```
+As we can see, a new IP address 192.168.0.19 was scanned. It's your Raspberry PI.
+
+```bash
+Host is up (0.0025s latency).
+Nmap scan report for 192.168.0.19
+```
+
+
 ### Connect via SSH
 
 ```bash
-ssh pi@192.168.0.11
+ssh pi@192.168.0.19
 ```
-with X11
+if you want to use X11
 
 ```bash
-ssh -Y pi@192.168.0.11
+ssh -Y pi@192.168.0.119
 ```
 
 Note: 
@@ -196,20 +248,58 @@ Note: first of all change your password with command
 ```bash
 passwd
 ```
-
+output
+```bash
+Changing password for pi.
+(current) UNIX password:
+Enter new UNIX password:
+Retype new UNIX password:
+passwd: password updated successfully
+````
 See this post in order to perform Raspbian basic administration [here]({{ site.url }}{{ site.baseurl }}/linux/setup-linux)
 
+### Update the Rasbpian
+
+```bash
+sudo apt-get update && sudo  apt-get upgrade
+```
 
 ### Set a static IP Address
 
 ```bash
+sudo apt-get install vim
 sudo vim /etc/network/interfaces
+```
+
+```bash
+systemctl (start|stop) vncserver-x11-serviced.service
+
+# interfaces(5) file used by ifup(8) and ifdown(8)
+
+# Please note that this file is written to be used with dhcpcd
+# For static IP, consult /etc/dhcpcd.conf and 'man dhcpcd.conf'
+
+# Include files from /etc/network/interfaces.d:
+source-directory /etc/network/interfaces.d
+
+auto lo
+iface lo inet loopback
+
+iface eth0 inet manual
+
+allow-hotplug wlan0
+iface wlan0 inet manual
+    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+
+allow-hotplug wlan1
+iface wlan1 inet manual
+    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 ```
 
 Adapt with your own configuration
 ```text
 iface eth0 inet static
-    address 192.168.0.11
+    address 192.168.0.18
     netmask 255.255.255.0
     gateway 192.168.0.254
 ```
@@ -223,10 +313,13 @@ sudo vim /etc/wpa_supplicant/wpa_supplicant.conf
 
 b. Adapt according to your security protocol
 ```text
+country=FR
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
 network={
- ssid=”YOUR_SSID″
- psk=”YOUR_PASSWORD”
- proto=WPA 
+ ssid="YOUR_NETWORK_SSID"
+ psk="xxxxxxxxxx"
+ proto=WPA
  key_mgmt=WPA-PSK
  pairwise=TKIP
  auth_alg=OPEN
@@ -239,24 +332,98 @@ sudo vim /etc/network/interfaces
 ```
 
 d. Adapt according to your own configuration
+
+Set wlan0 as primary interface to lookup.
 ```text
 auto wlan0
-
+```
+e. Set static IP and wpa-conf to wlan0
+```text
 allow-hotplug wlan0
 iface wlan0 inet static
-    address 192.168.0.11
+    address 192.168.0.18
     netmask 255.255.255.0
     gateway 192.168.0.254
     wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 ```
 
-e. Reboot
+Final config
+```bash
+# interfaces(5) file used by ifup(8) and ifdown(8)
+
+# Please note that this file is written to be used with dhcpcd
+# For static IP, consult /etc/dhcpcd.conf and 'man dhcpcd.conf'
+
+# Include files from /etc/network/interfaces.d:
+source-directory /etc/network/interfaces.d
+
+auto wlan0
+iface lo inet loopback
+
+iface eth0 inet static
+    address 192.168.0.18
+    netmask 255.255.255.0
+    gateway 192.168.0.254
+
+allow-hotplug wlan0
+iface wlan0 inet static
+    address 192.168.0.18
+    netmask 255.255.255.0
+    gateway 192.168.0.254
+    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+
+allow-hotplug wlan1
+iface wlan1 inet manual
+    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+```
+
+f. Check config
+
+```bash
+iw dev
+```
+
+```bash
+phy#0
+	Interface wlan0
+		ifindex 3
+		wdev 0x1
+		addr b8:27:eb:62:22:ca
+		ssid YOUR_NETWORK_SSID
+		type managed
+```
+
+g. Connection
+
+```bash
+ip link show wlan0
+```
+As we can see wlan0 is currently DOWN
+```bash
+3: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state DOWN mode DORMANT group default qlen 1000
+     link/ether b8:27:eb:62:22:ca brd ff:ff:ff:ff:ff:ff
+```
+Start UP the interface
+```bash
+sudo ip link set wlan0 up
+```
+Check
+```bash
+ip link show wlan0
+```
+```bash
+ 3: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP mode DORMANT group default qlen 1000
+      link/ether b8:27:eb:62:22:ca brd ff:ff:ff:ff:ff:ff
+```
+
+h. Reboot
+
+You can now unplug your ethernet wire and reboot
 ```bash
 sudo reboot
 ```
  
-Great !! now you can access to your Raspberry PI anywhere. You can reboot and unplug the
-ethernet cable.
+Great !! now you can access to your Raspberry PI anywhere on your LAN with statuc IP address over Wifi or Ethernet. 
 
 Note: if you want to access to your Raspberry outside your LAN. You must
 forward port of your router.
@@ -264,6 +431,8 @@ forward port of your router.
 Useful links: 
  - [Automatically connect a raspberry pi to a wifi network]("http://weworkweplay.com/play/automatically-connect-a-raspberry-pi-to-a-wifi-network/")
  - [Raspberry wireless configuration]("https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md")
+ - [Connect to WiFi network from command line in Linux]("https://www.blackmoreops.com/2014/09/18/connect-to-wifi-network-from-command-line-in-linux")
+
 
 
 

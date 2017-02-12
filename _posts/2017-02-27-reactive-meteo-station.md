@@ -69,31 +69,68 @@ b. Adapt the docker-compose file according your environment
 ```yaml
 version: '2'
 services:
-  reactive-client:
-    image: "reactive-client"
-    ports:
-     - "8089:80"
-    links:
-     - "reactive-server:reactive-server"
   reactive-server:
-    image: "jluccisano/reactive-app:latest"
+    image: "jluccisano/reactive-server:latest"
+    environment:
+      - PORT=8084
+      - RABBITMQ_ENDPOINT=amqp://rabbit_user:rabbit_password@rabbitmq:5672/myvhost
+      - RABBITMQ_EXCHANGE=your_exchange_name
+      - RABBITMQ_QUEUE=your_queue_name
+      - RABBITMQ_GATEWAYID=your_gateway_id
+      - INFLUXDB_URL=http://influxdb:8086
+      - INFLUXDB_USERNAME=influx_username
+      - INFLUXDB_PASSWORD=influx_password
+      - INFLUXDB_DATABASE=influx_db_name
+      - INFLUXDB_RETENTION_POLICY=influx_rp_name
+    ports:
+      - "8084:8084"
     links:
       - "rabbitmq:rabbitmq"
+      - "influxdb:influxdb"
+    depends_on:
+      - "rabbitmq"
+      - "influxdb"
   rabbitmq:
     image:  "rabbitmq:3-management"
-    hostname: "rabbitmq"
+    environment:
+      - RABBITMQ_DEFAULT_USER=rabbit_user
+      - RABBITMQ_DEFAULT_PASS=rabbit_password
+      - RABBITMQ_DEFAULT_VHOST=myvhost
     ports:
      - "5672:5672"
-     - "8080:15672"
+     - "8092:15672"
   influxdb:
-    image: "influxdb"
+    image: "appcelerator/influxdb"
+    volumes:
+      - './resources/init_script.influxql:/etc/extra-config/influxdb/init_script.influxql:ro'
     ports:
-     - "8083:8083"
-     - "8086:8086"
+      - "8083:8083"
+      - "8086:8086"
+  grafana:
+    image: 'grafana/grafana'
+    links:
+      - "influxdb:influxdb"
+    depends_on:
+      - "influxdb"
+    ports:
+      - '3600:3000'
+  reactive-client:
+     image: 'jluccisano/reactive-client:1.0'
+     links:
+       - "reactive-server:reactive-server"
+     depends_on:
+       - "reactive-server"
+     ports:
+       - "8089:80"
+  stub:
+    build:
+      context: ./resources
+      dockerfile: stub.dockerfile
     environment:
-     - INFLUXDB_ADMIN_ENABLED=true  
-    volume: "/usr/lib/influxdb:/var/lib/influxdb"
-   
+      - RABBITMQ_ENDPOINT=amqp://rabbit_user:rabbit_password@rabbitmq:5672/myvhost
+      - RABBITMQ_EXCHANGE=your_exchange_name
+      - RABBITMQ_GATEWAYID=your_gateway_id
+      - PUBLISH_INTERVAL=60
 ```
 [See code here](https://raw.githubusercontent.com/jluccisano/portfolio/master/docker-compose.yml)
 

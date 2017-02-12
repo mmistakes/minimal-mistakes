@@ -7,6 +7,7 @@
 .sass-cache
 _asset_bundler_cache
 _site
+_plantuml
 codekit-config.json
 example/_site
 Gemfile.lock

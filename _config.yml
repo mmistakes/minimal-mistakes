@@ -176,6 +176,9 @@ paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
+plantuml:
+  plantuml_jar: _bin/plantuml.1.2017.12.jar    # path to plantuml jar
+  tmp_folder: _plantuml                        # tmp folder to put generated image files
 
 # Plugins
 gems:
@@ -184,7 +187,6 @@ gems:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-  - jekyll-plantuml
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -193,7 +195,6 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-  - jekyll-plantuml
 
 # Archives
 #  Type
