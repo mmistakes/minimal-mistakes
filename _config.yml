@@ -14,7 +14,7 @@ description              : &description "Write an awesome description for your n
 url                      : "http://localhost:4000" # the base hostname & protocol for your site
 baseurl                  : "/test" # the subpath of your site, e.g. /blog
 email                    : "your-email@domain.com"
-logo                     : &avatar "default-thumb.png"
+logo                     : "site-logo.png"
 twitter:
   username               : &twitter "site_twitter"
 facebook:
@@ -122,7 +122,7 @@ compress_html:
 # Site Author
 author:
   name             : *name
-  avatar           : *avatar
+  avatar           : "bio-photo.jpg"
   bio              : *description
   email            : *email
   codepen          :
