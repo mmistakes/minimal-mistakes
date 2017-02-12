@@ -1,6 +1,10 @@
 ---
 title: "Reactive Meteo Station"
 excerpt_separator: "<!--more-->"
+header:
+  image: /assets/images/anthony-rossbach-59486.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  overlay_color: "#333"
 categories:
   - Home automation
   - IoT

@@ -144,3 +144,9 @@ figure.highlight {
 .highlight .vg { color: #22b3eb } /* Name.Variable.Global */
 .highlight .vi { color: #22b3eb } /* Name.Variable.Instance */
 .highlight .il { color: #2aa198 } /* Literal.Number.Integer.Long */
+
+#container {
+  float: left;
+  margin: 0 -240px 0 0;
+  width: 100%;
+}
