@@ -5,7 +5,7 @@ permalink: /collection-archive/
 author_profile: false
 ---
 
-{% include absolute-url.liquid %}
+{% include base_path %}
 {% capture written_label %}'None'{% endcapture %}
 
 {% for collection in site.collections %}
@@ -18,7 +18,7 @@ author_profile: false
   {% endunless %}
   {% for post in collection.docs %}
     {% unless collection.output == false or collection.label == 'posts' %}
-      {% include archive-list-single.html %}
+      {% include archive-list-single %}
     {% endunless %}
   {% endfor %}
 {% endfor %}
