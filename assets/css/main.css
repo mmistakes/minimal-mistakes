@@ -1877,8 +1877,17 @@ body {
   margin-right: 8.333333333333334%;
   margin-bottom: 2em;
 }
+#index h3 {
+  margin: 0;
+  padding-bottom: .5em;
+  font-size: 28px;
+  font-size: 1.75rem;
+  border-bottom: 1px solid #c3c3c3;
+}
 #index article h2 {
   margin-bottom: 0;
+  font-size: 24px;
+  font-size: 1.5rem;
 }
 #index article p + p {
   text-indent: 0;
@@ -2128,8 +2137,13 @@ body {
 .footer-wrap p,
 .footer-wrap h4,
 .footer-wrap h5,
-.footer-wrap h6 {
+.footer-wrap h6,
+.footer-wrap span {
   color: #bfbfbf;
+}
+.footer-wrap span {
+  font-size: 14px;
+  font-size: 0.875rem;
 }
 .footer-wrap a {
   border-bottom: 0 solid transparent;
@@ -2151,6 +2165,7 @@ body {
   width: 83.33333333333334%;
   margin-left: 8.333333333333334%;
   margin-right: 8.333333333333334%;
+  margin-bottom: 2em;
 }
 .related-articles h4 {
   text-transform: uppercase;

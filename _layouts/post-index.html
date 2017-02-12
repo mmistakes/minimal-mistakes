@@ -13,9 +13,10 @@
 
 {% include navigation.html %}
 
-<div class="image-wrap">
-  <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image">
-</div><!-- /.image-wrap -->
+{% if page.image.feature %}<div class="image-wrap">
+  <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image" itemprop="primaryImageOfPage">
+  {% if page.image.credit %}<span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>{% endif %}
+</div><!-- /.image-wrap -->{% endif %}
 
 <div class="article-author-top">
   {% include author-bio.html %}
@@ -26,13 +27,11 @@
   {% for post in site.posts %}  
   {% unless post.next %}
     <h3>{{ post.date | date: '%Y' }}</h3>
-    <hr />
     {% else %}
       {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
       {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
       {% if year != nyear %}
         <h3>{{ post.date | date: '%Y' }}</h3>
-        <hr />
       {% endif %}
     {% endunless %}
     <article itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
