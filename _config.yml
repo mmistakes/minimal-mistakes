@@ -58,10 +58,6 @@ analytics:
   google:
     tracking_id          :
 
-# Google AdSense
-google_ad_client         :
-google_ad_slot           :
-
 
 # Site Author
 author:
