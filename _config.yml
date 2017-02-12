@@ -7,14 +7,17 @@
 
 # Site Settings
 locale                   : en_US
-title                    : "Your awesome site"
-name                     : &name "Your Name"
+title                    : "Your Awesome Site"
 title_separator          : "-"
+name                     : &name "Your Name"
 description              : &description "Write an awesome description for your new site here."
 url                      : "http://localhost:4000" # the base hostname & protocol for your site
-baseurl                  : "/test" # the subpath of your site, e.g. /blog
+baseurl                  : "/minimal-mistakes" # the subpath of your site, e.g. /blog
 email                    : "your-email@domain.com"
 logo                     : "site-logo.png"
+breadcrumbs              : # true / false (default)
+breadcrumb_home_label    : "Home"
+breadcrumb_separator     : "/"
 twitter:
   username               : &twitter "site_twitter"
 facebook:
@@ -30,7 +33,7 @@ google_analytics         : # Universal Analytics tracking ID
 google_ad_client         :
 google_ad_slot           :
 
-# For specifying social profiles. 
+# For specifying social profiles.
 # https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : # Person or Organization (defaults to Person)
@@ -41,10 +44,10 @@ social:
 
 # Reading Files
 safe: false
-include: 
+include:
   - .htaccess
   - _pages
-exclude: 
+exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
@@ -62,7 +65,7 @@ exclude:
   - Rakefile
   - README
   - tmp
-keep_files: 
+keep_files:
   - .git
   - .svn
 encoding: "utf-8"
@@ -89,17 +92,58 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
+# Collections
+collections:
+  recipes:
+    output: true
+    permalink: /:collection/:categories/:path/
+  pets:
+    output: true
+    permalink: /:collection/:categories/:path/
+  portfolio:
+    output: true
+    permalink: /:collection/:categories/:path/
+
 # Defaults
 defaults:
-
   # _posts
   - scope:
       path: ""
       type: posts
     values:
-      layout: post
+      layout: single
+      author_profile: true
       comments: true
       share: true
+      related: true
+  # _pages
+  - scope:
+      path: _pages
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _recipes
+  - scope:
+      path: _recipes
+      type: recipes
+    values:
+      layout: single
+      author_profile: true
+  # _pets
+  - scope:
+      path: _pets
+      type: pets
+    values:
+      layout: single
+      author_profile: true
+  # _portfolio
+  - scope:
+      path: _portfolio
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
 
 # Plugins
 gems:
@@ -144,4 +188,3 @@ author:
   weibo            :
   xing             :
   youtube          :
-

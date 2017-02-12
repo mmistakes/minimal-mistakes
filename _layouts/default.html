@@ -15,25 +15,44 @@ layout: compress
   {% include browser-upgrade.html %}
   {% include navigation.html %}
 
-  {% if page.image.feature %}
+  {% if page.header.image %}
     <div class="image-wrap">
-    <img src=
-      {% if page.image.feature contains "http" %}
-        "{{ page.image.feature }}"
-      {% else %}
-        "{{ page.image.feature | prepend: "/images/" | prepend: absurl }}"
-        "{{ page.image.feature | prepend: absurl }}"
+      <img src=
+        {% if page.header.image contains "http" %}
+          "{{ page.header.image }}"
+        {% else %}
+          "{{ page.header.image | prepend: "/images/" | prepend: absurl }}"
+        {% endif %}
+        alt="{{ page.title }}">
+      {% if page.header.caption %}
+        <span class="image-caption">{{ page.header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
       {% endif %}
-      alt="{{ page.title }}">
-    {% if page.image.credit %}
-      <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
-    {% endif %}
     </div><!-- /.image-wrap -->
   {% endif %}
 
+  {% if site.breadcrumbs %}
+    {% include breadcrumbs.html %}
+  {% endif %}
+
   <div id="main" role="main">
-    <div class="author-profile">
-      {% include author-profile.html %}
+    <div class="sidebar">
+      {% if page.author_profile %}{% include author-profile.html %}{% endif %}
+      {% if page.sidebar %}
+        {% for s in page.sidebar %}
+          {% if s.image %}
+            <img src=
+            {% if s.image contains "http" %}
+              "{{ s.image }}"
+            {% else %}
+              "{{ s.image | prepend: "/images/" | prepend: absurl }}"
+            {% endif %}
+            alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
+          {% endif %}
+          {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
+          {% if s.text %}{{ s.text | markdownify }}{% endif %}
+        {% endfor %}
+      {% endif %}
+      {% unless page.author_profile or page.sidebar %}&nbsp;{% endunless %}
     </div>
     {{ content }}
   </div><!-- /#main -->

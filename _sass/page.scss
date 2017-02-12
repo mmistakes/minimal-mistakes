@@ -327,11 +327,14 @@ $button-size: 1.5rem;
 }
 
 /* Author profile */
-.author-profile {
+.sidebar {
 	display: none;
 	a, a:hover {
 		border-bottom: 0 solid transparent;
 	}
+  img {
+    width: 100%;
+  }
 	@media #{$small} {
 		display: block;
 		@include grid(12,2);
@@ -654,6 +657,7 @@ $button-size: 1.5rem;
 		}
 	}
 }
+
 /*
    Google search form
    ========================================================================== */
@@ -684,4 +688,21 @@ $button-size: 1.5rem;
 }
 #goog-wm-sb {
 	@extend .btn;
+}
+
+/*
+   Breadcrumbs
+   ========================================================================== */
+
+.breadcrumbs {
+  ol {
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    display: inline;
+  }
+  .current {
+    font-weight: bold;
+  }
 }

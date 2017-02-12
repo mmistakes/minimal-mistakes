@@ -1,0 +1,50 @@
+{% include absolute-url.liquid %}
+
+{% if include.id %}
+  {% assign gallery = page.[include.id] %}
+{% else %}
+  {% assign gallery = page.gallery %}
+{% endif %}
+
+{% capture gallery-size %}{{ gallery | size }}{% endcapture %}
+
+{% if gallery-size == '2' %}
+  {% assign gallery-layout = 'half' %}
+{% elsif gallery-size >= '3' %}
+  {% assign gallery-layout = 'third' %}
+{% else %}
+  {% assign gallery-layout = '' %}
+{% endif %}
+
+<figure class="{{ gallery-layout }}">
+  {% for img in gallery %}
+    {% if img.url %}
+      <a href=
+        {% if img.url contains "http" %}
+          "{{ img.url }}"
+        {% else %}
+          "{{ img.url | prepend: "/images/" | prepend: absurl }}"
+        {% endif %}
+      >
+        <img src=
+          {% if img.image_path contains "http" %}
+            "{{ img.image_path }}"
+          {% else %}
+            "{{ img.image_path | prepend: "/images/" | prepend: absurl }}"
+          {% endif %}
+        alt="{% if img.alt %}{{ img.alt }}{% endif %}">
+      </a>
+    {% else %}
+      <img src=
+        {% if img.image_path contains "http" %}
+          "{{ img.image_path }}"
+        {% else %}
+          "{{ img.image_path | prepend: "/images/" | prepend: absurl }}"
+        {% endif %}
+      alt="{% if img.alt %}{{ img.alt }}{% endif %}">
+    {% endif %}
+  {% endfor %}
+  {% if include.caption %}
+    <figcaption>{{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}</figcaption>
+  {% endif %}
+</figure>
