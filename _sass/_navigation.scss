@@ -314,19 +314,51 @@
    ========================================================================== */
 
 .nav__list {
-  font-size: 1.25rem;
+  margin: 2em 0 1.5em 0;
 
-  ul {
-    margin-bottom: 1em;
+  input[type="checkbox"],
+  label {
+    display: none;
   }
 
-  a {
-    display: block;
-    padding: 0.125em 0;
-    color: inherit;
+  @include breakpoint(max-width $large) {
 
-    &:hover {
-      text-decoration: underline;
+    label {
+      position: relative;
+      display: inline-block;
+      padding: 0.5em 1em;
+      font-size: $type-size-6;
+      border: 1px solid $light-gray;
+      border-radius: $border-radius;
+      z-index: 20;
+      -webkit-transition: 0.2s ease-out;
+      transition: 0.2s ease-out;
+      cursor: pointer;
+
+      &:hover {
+        color: #fff;
+        border-color: $gray;
+        background-color: mix(white, #000, 20%);
+      }
+    }
+
+    /* selected*/
+    input:checked + label {
+      color: white;
+      background-color: mix(white, #000, 20%);
+    }
+
+    ul {
+      margin-bottom: 1em;
+    }
+
+    a {
+      display: block;
+      padding: 0.125em 0;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
@@ -342,6 +374,37 @@
     &:hover {
       color: #fff;
     }
+  }
+}
+
+.nav__list .nav__items {
+  margin: 0;
+  font-size: 1.25rem;
+
+  @include breakpoint(max-width $large) {
+    position: relative;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    z-index: 10;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transform: translate(0, 10%);
+        -ms-transform: translate(0, 10%);
+            transform: translate(0, 10%);
+  }
+}
+
+@include breakpoint(max-width $large) {
+  .nav__list input:checked ~ .nav__items {
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    max-height: 100vh;
+    opacity: 1;
+    margin-top: 1em;
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 }
 
