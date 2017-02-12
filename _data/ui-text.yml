@@ -132,7 +132,7 @@ tr: &DEFAULT_TR
 tr-TR:
   <<: *DEFAULT_TR
 
-# Brazilian Portguese (default)
+# Brazilian Portguese
 # -----------------
 pt: &DEFAULT_PT
   page                  : "Página"
