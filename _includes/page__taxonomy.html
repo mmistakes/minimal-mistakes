@@ -1,0 +1,15 @@
+{% comment %}
+  <!-- Sort page.tags alphabetically regardless of case e.g. a B c d E -->
+  <!-- modified from http://www.codeofclimber.ru/2015/sorting-site-tags-in-jekyll/ -->
+{% endcomment %}
+
+{% capture page_tags %}{% for tag in page.tags %}{{ tag | downcase }}#{{ tag }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign tag_hashes = (page_tags | split: ',' | sort:0) %}
+
+Filed under: <span class="post__taxonomy-wrapper" itemprop="keywords">
+{% for hash in tag_hashes %}
+  {% assign keyValue = hash | split: '#' %}
+  {% capture tag_word %}{{ keyValue[1] | strip_newlines }}{% endcapture %}
+    {% if forloop.last %} and{% endif %} <a href="{{ site.url }}{{ tag_word | slugify | prepend: '/tag/' | append: '/' }}" class="post__taxonomy-item" rel="tag">{{ tag_word }}</a>{% unless forloop.last %}, {% endunless %}
+{% endfor %}
+</span>

@@ -19,10 +19,8 @@ layout: default
       {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label }}</a></div>{% endif %}
     </section>
 
-    <hr />
-
-    <footer role="contentinfo">
-      {% if site.share and page.share %}{% include social-share %}{% endif %}
+    <footer>
+      {% if site.share and page.share %}{% include social-share.html %}{% endif %}
       {% if page.modified %}
         <p class="byline"><strong>{{ site.data.ui-text[site.locale].date_label }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
       {% elsif page.date %}

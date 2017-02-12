@@ -7,13 +7,13 @@ layout: compress
 <!DOCTYPE html>
 <html lang="{{ site.locale | slice: 0,2 }}">
   <head>
-  {% include head %}
+  {% include head.html %}
   </head>
 
   <body>
 
-  {% include browser-upgrade %}
-  {% include navigation %}
+  {% include browser-upgrade.html %}
+  {% include masthead.html %}
 
   {% if page.header.image %}
     <div class="page__hero">
@@ -31,12 +31,12 @@ layout: compress
   {% endif %}
 
   {% if site.breadcrumbs %}
-    {% include breadcrumbs %}
+    {% include breadcrumbs.html %}
   {% endif %}
 
   <div id="main" role="main">
     <div class="sidebar sticky">
-      {% if page.author_profile %}{% include author-profile %}{% endif %}
+      {% if page.author_profile %}{% include author-profile.html %}{% endif %}
       {% if page.sidebar %}
         {% for s in page.sidebar %}
           {% if s.image %}
@@ -59,11 +59,11 @@ layout: compress
 
   <div class="footer-wrap">
     <footer>
-      {% include footer %}
+      {% include footer.html %}
     </footer>
   </div><!-- /.footer-wrap -->
 
-  {% include scripts %}
+  {% include scripts.html %}
 
   </body>
 </html>

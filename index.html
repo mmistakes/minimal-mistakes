@@ -8,10 +8,10 @@ header:
 
 {% include base_path %}
 
-<h3>Recent Posts</h3>
+<h3 class="archive__subtitle">Recent Posts</h3>
 
 {% for post in paginator.posts %}
-  {% include archive-list-single %}
+  {% include archive-list-single.html %}
 {% endfor %}
 
-{% include pagination %}
+{% include pagination.html %}
