@@ -32,7 +32,7 @@ layout: default
     </footer>
   </div><!-- /.article-wrap -->
 
-  {% if site.owner.disqus-shortname and page.comments == true %}
+  {% if site.disqus_shortname and page.comments %}
     <section id="disqus_thread"></section><!-- /#disqus_thread -->
   {% endif %}
 </article>
