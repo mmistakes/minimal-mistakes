@@ -15,7 +15,7 @@ echo "Starting to update master\n"
 
 
 #copy data we're interested in to other place
-cp -R _site $HOME/_site
+cp -R ../_site $HOME/_site
 
 # Save some useful information
 REPO=`git config remote.origin.url`
