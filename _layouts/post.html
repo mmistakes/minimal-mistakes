@@ -7,34 +7,34 @@
 {% include _head.html %}
 </head>
 
-<body class="article" itemscope itemtype="http://schema.org/WebPage">
+<body class="post">
 
 {% include _browser-upgrade.html %}
 
 {% include _navigation.html %}
 
 {% if page.image.feature %}<div class="image-wrap">
-  <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image" itemprop="primaryImageOfPage">
+  <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image">
   {% if page.image.credit %}<span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>{% endif %}
 </div><!-- /.image-wrap -->{% endif %}
 
-<div id="main" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">
+<div id="main" role="main">
   <div class="article-author-side">
     {% include _author-bio.html %}
   </div>
-  <article itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+  <article>
     <div class="headline-wrap">
-      <h1 itemprop="name">{{ page.title }}</h1>
+      <h1>{{ page.title }}</h1>
       <h2>{{ page.tagline }}</h2>
     </div><!--/ .headline-wrap -->
-    <div class="article-wrap" itemprop="text">
+    <div class="article-wrap">
       {{ content }}
       <hr />
       <footer role="contentinfo">
         <div class="article-author-bottom">
           {% include _author-bio.html %}
         </div>
-        <p class="byline"><strong>{{ page.title }}</strong> was published on <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} and last modified on <time datetime="{{ page.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %} by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="{{ site.url }}/about" title="About {{ site.owner.name }}" itemprop="url">{{ site.owner.name }}</a></span></span>.</p>
+        <p class="byline"><strong>{{ page.title }}</strong> was published on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} and last modified on <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %} by <a href="{{ site.url }}/about" title="About {{ site.owner.name }}">{{ site.owner.name }}</a>.</p>
       </footer>
     </div><!-- /.article-wrap -->
   </article>
