@@ -7,7 +7,7 @@ table {
   font-family: $sans-serif;
   font-size: $type-size-6;
   border-collapse: collapse;
-  border-bottom: 2px solid $border-color;
+  border: 2px solid $border-color;
 
   & + table {
     margin-top: 1em;
@@ -15,6 +15,7 @@ table {
 }
 
 thead {
+  background-color: $lighter-gray;
   border-bottom: 2px solid $border-color;
 }
 
@@ -22,11 +23,13 @@ th {
   padding: 0.5em;
   font-weight: bold;
   text-align: left;
+  border-right: 2px solid $border-color;
 }
 
 td {
-  border-bottom: 1px solid $border-color;
   padding: 0.5em;
+  border-bottom: 2px solid $border-color;
+  border-right: 2px solid $border-color;
 }
 
 tr, td, th {

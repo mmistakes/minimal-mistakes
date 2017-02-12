@@ -188,10 +188,10 @@
     position: absolute;
     height: 100%;
     right: 0;
-    padding: 0 10px;
+    padding: 0 8px;
     border: 0;
     outline: none;
-    background-color: #000;
+    background-color: $primary-color;
     color: #fff;
     cursor: pointer;
   }
@@ -306,11 +306,11 @@
    ========================================================================== */
 
 .nav__list {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 
   a {
     display: block;
-    padding: 4px 0;
+    padding: 0.125em 0;
 
     &:hover {
       text-decoration: underline;
@@ -325,7 +325,7 @@
 
 .nav__title {
   margin: 0;
-  padding: 10px 20px;
+  padding: 0.5em 1em;
   font-family: $sans-serif-narrow;
   font-size: $type-size-5;
   font-weight: bold;
@@ -334,8 +334,8 @@
 
 .nav__sub-title {
   display: block;
-  margin: 10px 0;
-  padding: 10px 0;
+  margin: 0.5em 0;
+  padding: 0.5em 0;
   font-family: $sans-serif-narrow;
   font-size: $type-size-5;
   font-weight: bold;
