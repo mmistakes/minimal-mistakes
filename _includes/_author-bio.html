@@ -3,9 +3,9 @@
 {% endif %}
 
 {% if author.avatar contains 'http' %}
-	<img src="{{ author.avatar }}" class="bio-photo" alt="{{ author.name }} bio photo"></a>
+	<img src="{{ author.avatar }}" class="bio-photo" alt="{{ author.name }} bio photo">
 {% else %}
-	<img src="{{ site.url }}/images/{{ author.avatar }}" class="bio-photo" alt="{{ author.name }} bio photo"></a>
+	<img src="{{ site.url }}/images/{{ author.avatar }}" class="bio-photo" alt="{{ author.name }} bio photo">
 {% endif %}
 <h3>{{ author.name }}</h3>
 <p>{{ author.bio }}</p>
