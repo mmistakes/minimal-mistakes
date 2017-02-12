@@ -1,6 +1,8 @@
 ---
 title: "Quick-Start Guide"
 permalink: /docs/quick-start-guide/
+redirect_from:
+  - /docs/
 excerpt:
 sidebar:
   title: "v3.0"
@@ -8,7 +10,6 @@ sidebar:
 ---
 
 {% include base_path %}
-{% include toc %}
 
 Minimal Mistakes has been developed to be 100% compatible with hosting a site on [GitHub Pages](https://pages.github.com/). To get up and running with a new GitHub repository quickly, follow these steps.
 
