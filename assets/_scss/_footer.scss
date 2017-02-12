@@ -6,15 +6,10 @@
   @include container;
   @include clearfix;
   margin-top: 3em;
-  padding: 0 2em 3em;
+  padding: 0 1em 3em;
   color: mix(#fff, $gray, 25%);
   animation: intro 0.3s both;
   animation-delay: 0.45s;
-
-  @include breakpoint($large) {
-    padding-left: 1em;
-    padding-right: 1em;
-  }
 
   @include breakpoint($x-large) {
     max-width: $x-large;
