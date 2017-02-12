@@ -35,6 +35,15 @@
     @include prefix(0.5 of 12);
     padding-right: $right-sidebar-width-wide;
   }
+
+  .page__inner-wrap {
+    .page__content,
+    .page__meta,
+    .page__share {
+      @include clearfix();
+      @include full();
+    }
+  }
 }
 
 .page__title {
@@ -160,6 +169,11 @@
 /*
    Comments
    ========================================================================== */
+
+.page__comments {
+  @include clearfix();
+  @include full();
+}
 
 .page__comments-title {
   font-size: 14px;
