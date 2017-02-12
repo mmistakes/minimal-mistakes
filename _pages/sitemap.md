@@ -9,12 +9,12 @@ A list of all the posts and pages found on the site. For you robots out there is
 
 <h3>Pages</h3>
 {% for post in site.pages %}
-  {% include post-single.html %}
+  {% include archive-list-single.html %}
 {% endfor %}
 
 <h3>Posts</h3>
 {% for post in site.posts %}
-  {% include post-single.html %}
+  {% include archive-list-single.html %}
 {% endfor %}
 
 {% capture written_label %}'None'{% endcapture %}
@@ -29,7 +29,7 @@ A list of all the posts and pages found on the site. For you robots out there is
 {% endunless %}
 {% for post in collection.docs %}
   {% unless collection.output == false or collection.label == 'posts' %}
-  {% include post-single.html %}
+  {% include archive-list-single.html %}
   {% endunless %}
 {% endfor %}
 {% endfor %}
