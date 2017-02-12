@@ -7,10 +7,11 @@ tags:
   - Raspberry PI
 ---
 
-### Install Portainer.io
+### Install Portainer.io Manage docker with gui
+
 
 ```bash
-docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer
+docker run -d -p 9000:9000 --name portainer -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer
 ```
 
 see more: http://portainer.io/install.html
@@ -48,4 +49,6 @@ sudo docker kill YOUT_CONTAINER_ID
 Get list of images
 ```bash
 sudo docker images
+
+docker exec -i -t CONTAINER_ID /bin/bash
 ```
