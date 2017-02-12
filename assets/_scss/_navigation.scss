@@ -88,7 +88,8 @@
       }
 
       &.current {
-        color: $primary-color;
+        color: #fff;
+        background: $primary-color;
       }
 
       &.disabled {
