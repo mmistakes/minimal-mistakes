@@ -314,7 +314,7 @@
    ========================================================================== */
 
 .nav__list {
-  margin: 2em 0 1.5em 0;
+  margin-bottom: 1.5em;
 
   input[type="checkbox"],
   label {
@@ -385,18 +385,24 @@
     input:checked + label:hover:after {
       transform: rotate(0);
     }
+  }
 
-    ul {
-      margin-bottom: 1em;
+  ul {
+    margin-bottom: 1em;
+  }
+
+  a {
+    display: block;
+    padding: 0.25em 0;
+    color: inherit;
+
+    @include breakpoint($large) {
+      padding-top: 0.125em;
+      padding-bottom: 0.125em;
     }
 
-    a {
-      display: block;
-      padding: 0.125em 0;
-
-      &:hover {
-        text-decoration: underline;
-      }
+    &:hover {
+      text-decoration: underline;
     }
   }
 
@@ -439,6 +445,7 @@
     transition: 0.5s ease-in-out;
     max-height: 100vh;
     opacity: 1;
+    overflow: visible;
     margin-top: 1em;
     -webkit-transform: translate(0, 0);
         -ms-transform: translate(0, 0);
