@@ -14,7 +14,7 @@
 {% include navigation.html %}
 
 {% if page.image.feature %}<div class="image-wrap">
-  <img src="/images/{{ page.image.feature }}" alt="{{ page.title }} feature image">
+  <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image">
 </div><!-- /.image-wrap -->{% endif %}
 
 <div id="main" role="main">
