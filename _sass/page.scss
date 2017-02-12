@@ -410,14 +410,7 @@ $button-size: 1.5rem;
 	// Dotted line underlines for links
 	p > a,
 	li > a {
-		border-bottom: 1px dotted lighten($link-color, 50);
-		&:hover {
-			border-bottom-style: solid;
-		}
-	}
-	p > a.reversefootnote, 
-	li > a.reversefootnote {
-		border-bottom-width: 0;
+		text-decoration: underline;
 	}
 }
 .toc {
