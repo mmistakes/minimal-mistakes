@@ -1,3 +1,9 @@
+## [3.3.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.3.2)
+
+### Bug Fixes
+
+- Fix JavaScript that triggers "sticky" sidebar to avoid layout issues on screen sizes < `1024px`. [#396](https://github.com/mmistakes/minimal-mistakes/issues/396)
+
 ## [3.3.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.3.1)
 
 ### Enhancements
