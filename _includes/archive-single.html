@@ -18,7 +18,7 @@
           {% if teaser contains "://" %}
             "{{ teaser }}"
           {% else %}
-            "{{ teaser | prepend: "/" | absolute_url }}"
+            "{{ teaser | absolute_url }}"
           {% endif %}
           alt="">
       </div>
