@@ -1,21 +1,19 @@
-{% include base_path %}
-
 {% if page.header.image contains "://" %}
   {% capture img_path %}{{ page.header.image }}{% endcapture %}
 {% else %}
-  {% capture img_path %}{{ page.header.image | prepend: "/images/" | prepend: base_path }}{% endcapture %}
+  {% capture img_path %}{{ page.header.image | absolute_url }}{% endcapture %}
 {% endif %}
 
 {% if page.header.cta_url contains "://" %}
   {% capture cta_path %}{{ page.header.cta_url }}{% endcapture %}
 {% else %}
-  {% capture cta_path %}{{ page.header.cta_url | prepend: base_path }}{% endcapture %}
+  {% capture cta_path %}{{ page.header.cta_url | absolute_url }}{% endcapture %}
 {% endif %}
 
 {% if page.header.overlay_image contains "://" %}
   {% capture overlay_img_path %}{{ page.header.overlay_image }}{% endcapture %}
 {% elsif page.header.overlay_image %}
-  {% capture overlay_img_path %}{{ page.header.overlay_image | prepend: "/images/" | prepend: base_path }}{% endcapture %}
+  {% capture overlay_img_path %}{{ page.header.overlay_image | absolute_url }}{% endcapture %}
 {% endif %}
 
 {% if page.header.overlay_filter contains "rgba" %}
