@@ -404,6 +404,15 @@
       }
     }
   }
+}
+
+.nav__list .nav__items {
+  margin: 0;
+  font-size: 1.25rem;
+
+  a {
+    color: inherit;
+  }
 
   .active {
     margin-left: -0.5em;
@@ -417,15 +426,6 @@
     &:hover {
       color: #fff;
     }
-  }
-}
-
-.nav__list .nav__items {
-  margin: 0;
-  font-size: 1.25rem;
-
-  a {
-    color: inherit;
   }
 
   @include breakpoint(max-width $large) {
