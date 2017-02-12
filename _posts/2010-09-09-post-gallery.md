@@ -86,6 +86,6 @@ And place it like so:
 
 {% include gallery id="gallery2" caption="This is a second gallery example with images hosted externally." %}
 
-And for giggles one more gallery just to make sure this works.
+And for giggles one more gallery just to make sure this works. To fill page content container add `class="full"`.
 
-{% include gallery id="gallery3" caption="This is a third gallery example with two images." %}
+{% include gallery id="gallery3" class="full" caption="This is a third gallery example with two images and fills the entire content container." %}
