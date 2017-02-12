@@ -4,14 +4,14 @@
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
-{% include _head.html %}
+{% include head.html %}
 </head>
 
 <body class="post">
 
-{% include _browser-upgrade.html %}
+{% include browser-upgrade.html %}
 
-{% include _navigation.html %}
+{% include navigation.html %}
 
 {% if page.image.feature %}
   <div class="image-wrap">
@@ -30,7 +30,7 @@
 
 <div id="main" role="main">
   <div class="article-author-side">
-    {% include _author-bio.html %}
+    {% include author-bio.html %}
   </div>
   <article class="post">
     <div class="headline-wrap">
@@ -44,7 +44,7 @@
       {{ content }}
       <hr />
       <footer role="contentinfo">
-        {% if page.share != false %}{% include _social-share.html %}{% endif %}
+        {% if page.share != false %}{% include social-share.html %}{% endif %}
         <p class="byline"><strong>{{ page.title }}</strong> was published on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} and last modified on <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %}.</p>
       </footer>
     </div><!-- /.article-wrap -->
@@ -67,11 +67,11 @@
   </div><!-- /.related-articles -->
   {% endif %}
   <footer>
-    {% include _footer.html %}
+    {% include footer.html %}
   </footer>
 </div><!-- /.footer-wrap -->
 
-{% include _scripts.html %}
+{% include scripts.html %}
 
 </body>
 </html>
