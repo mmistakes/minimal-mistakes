@@ -1,14 +1,20 @@
 ---
 title: "Install docker"
-excerpt_separator: "Install docker"
 related: true
+header:
+  overlay_color: "#000"
+  overlay_filter: "0"
+  overlay_image: /assets/images/caspar-rubin-224229.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  teaser: /assets/images/caspar-rubin-224229.jpg
 categories:
-  - tuto
+  - Linux
 tags:
   - Docker
   - Unix
 ---
-### Install Docker
+TODO description
+
 
 - [What's Docker](#what-docker)
 - [Installation](#installation)
