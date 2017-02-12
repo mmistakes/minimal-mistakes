@@ -64,6 +64,19 @@
   position: relative;
   margin-bottom: 2em;
   @include clearfix;
+
+  &--overlay {
+    position: relative;
+    margin-bottom: 2em;
+    padding: 3em 0;
+    @include clearfix;
+    text-align: center;
+
+    .page__title {
+      color: #fff;
+      text-shadow: 1px 1px 4px rgba(#000, 0.5);
+    }
+  }
 }
 
 .page__hero-image {
