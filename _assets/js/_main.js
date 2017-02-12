@@ -10,6 +10,27 @@ $(document).ready(function(){
   // init sticky sidebar
   $(".sticky").Stickyfill();
 
+  var stickySideBar = function(){
+    var windowWidth = $(window).width();
+    if (windowWidth > 768) {
+      // fix
+      Stickyfill.rebuild();
+      Stickyfill.init();
+    } else {
+      // unfix
+      Stickyfill.stop();
+    }
+  };
+
+  stickySideBar();
+
+  $(window).resize(function(){
+    stickySideBar();
+  });
+
+
+
+
   // init smooth scroll
   $("a").smoothScroll({offset: -20});
 
