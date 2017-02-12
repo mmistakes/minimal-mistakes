@@ -7,20 +7,20 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Minimal Mistakes"
+title                    : "Site Title"
 title_separator          : "-"
-name                     : &name "Michael Rose"
-description              : &description "A flexible Jekyll theme for your blog or site with a minimalist aesthetic."
-url                      : # the base hostname & protocol for your site e.g. "//github.io.mmistakes"
-baseurl                  : "/minimal-mistakes" # the subpath of your site, e.g. "/blog"
-gh_repo                  : "https://github.com/mmistakes/minimal-mistakes"
+name                     : "Your Name"
+description              : "An amazing website."
+url                      : # the base hostname & protocol for your site e.g. "https://github.io.mmistakes"
+baseurl                  : # the subpath of your site, e.g. "/blog"
+gh_repo                  :
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-breadcrumbs              : true # true, false (default)
-words_per_minute         : 200
+# breadcrumbs              : false # true, false (default)
+# words_per_minute         : 200
 comments:
-  provider               : "disqus" # false (default), "disqus", "facebook", "google-plus", custom"
+  provider               : # false (default), "disqus", "facebook", "google-plus", custom"
   disqus:
-    shortname            : "mmistakes-dev" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
@@ -28,33 +28,31 @@ comments:
     colorscheme          : # "light" (default), "dark"
 
 # SEO Related
-google_site_verification : "UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y"
+google_site_verification :
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter "mmistakes"
+  username               :
 facebook:
-  username               : &facebook "michaelrose"
+  username               :
   app_id                 :
   publisher              :
-og_image                 : "site-logo.png" # Open Graph/Twitter default site image
+og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-    - "https://twitter.com/mmistakes"
-    - "https://facebook.com/michaelrose"
 
 # Analytics
 analytics:
-  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               : false # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : "UA-2011187-3"
+    tracking_id          :
 
 # Google AdSense
 google_ad_client         :
@@ -63,22 +61,22 @@ google_ad_slot           :
 
 # Site Author
 author:
-  name             : *name
+  name             : "Your Name"
   avatar           : "bio-photo.jpg"
-  bio              : *description
-  location         : "Buffalo, NY"
-  email            : *email
-  uri              : "https://mademistakes.com"
+  bio              : "I am an amazing person."
+  location         : "Somewhere"
+  email            :
+  uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : *facebook
+  facebook         :
   foursquare       :
-  github           : "mmistakes"
+  github           :
   google_plus      :
   keybase          :
-  instagram        : "mmistakes"
+  instagram        :
   lastfm           :
   linkedin         :
   pinterest        :
@@ -86,7 +84,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : *twitter
+  twitter          :
   vine             :
   weibo            :
   xing             :
@@ -147,85 +145,11 @@ kramdown:
   enable_coderay: false
 
 
-# Collections
-collections:
-  docs:
-    output: true
-    permalink: /:collection/:path/
-  recipes:
-    output: true
-    permalink: /:collection/:path/
-  pets:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-
-
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-  # _docs
-  - scope:
-      path: ""
-      type: docs
-    values:
-      layout: single
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-  # _recipes
-  - scope:
-      path: ""
-      type: recipes
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  # _pets
-  - scope:
-      path: ""
-      type: pets
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: false
-      share: true
-
-
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
@@ -235,8 +159,6 @@ gems:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-  - jekyll-redirect-from
-  # - jekyll-archives
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -245,7 +167,6 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-  - jekyll-redirect-from
 
 
 # Archives
