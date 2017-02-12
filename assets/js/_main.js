@@ -13,7 +13,7 @@ var changeClass = function (r,className1,className2) {
 };  
 //  Creating our button in JS for smaller screens
 var menuElements = document.getElementById('site-nav');
-menuElements.insertAdjacentHTML('afterBegin','<button type="button" role="button" id="menutoggle" class="navtoogle lines-button x" aria-hidden="true"><span class="lines"></span>menu</button>');
+menuElements.insertAdjacentHTML('afterBegin','<button type="button" role="button" id="menutoggle" class="navtoogle navicon-lines-button x" aria-hidden="true"><span class="navicon-lines"></span>menu</button>');
 
 //  Toggle the class on click to show / hide the menu
 document.getElementById('menutoggle').onclick = function() {
