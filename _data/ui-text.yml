@@ -27,7 +27,7 @@ en: &DEFAULT_EN
   website_label         : "Website"
   email_label           : "Email"
   recent_posts          : "Recent Posts"
-  undefined_wpm         : "Undefined parameter words_per_minute at _config.yml"   
+  undefined_wpm         : "Undefined parameter words_per_minute at _config.yml"
 en-US:
   <<: *DEFAULT_EN
 en-UK:
@@ -60,11 +60,46 @@ es: &DEFAULT_ES
   website_label         : "Sitio web"
   email_label           : "Email"
   recent_posts          : "Entradas recientes"
-  undefined_wpm         : "Parametro words_per_minute (Palabras por minuto) no definido en _config.yml" 
+  undefined_wpm         : "Parametro words_per_minute (Palabras por minuto) no definido en _config.yml"
 es-ES:
   <<: *DEFAULT_ES
 es-CO:
   <<: *DEFAULT_ES
+
+# French
+# -----------------
+fr: &DEFAULT_FR
+  page                  : "Page"
+  pagination_previous   : "Précédent"
+  pagination_next       : "Suivant"
+  breadcrumb_home_label : "Accueil"
+  breadcrumb_separator  : "/"
+  toc_label             : "Sur cette page"
+  ext_link_label        : "Lien direct"
+  less_than             : "plus petit que"
+  minute_read           : "minute de lecture"
+  minutes_read          : "minutes de lecture"
+  share_on_label        : "Partager sur"
+  meta_label            :
+  tags_label            : "Tags :"
+  categories_label      : "Catégories :"
+  date_label            : "Mis à jour :"
+  comments_label        : "Laisser un commentaire"
+  more_label            : "Lire plus"
+  related_label         : "Vous pourriez aimer"
+  follow_label          : "Suivez moi"
+  feed_label            : "Flux"
+  powered_by            : "Propulsé par"
+  website_label         : "Site"
+  email_label           : "Email"
+  recent_posts          : "Posts récents"
+  undefined_wpm         : "Le paramètre words_per_minute n'est pas défini dans _config.yml"
+fr-FR:
+  <<: *DEFAULT_FR
+fr-BE:
+  <<: *DEFAULT_FR
+fr-CH:
+  <<: *DEFAULT_FR
 
 # Another locale
 # --------------
