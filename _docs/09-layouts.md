@@ -10,6 +10,7 @@ single_layout_gallery:
     alt: "single layout with header example"
   - image_path: mm-layout-single-meta.png
     alt: "single layout with comments and related posts"
+modified: 2016-04-13T15:54:02-04:00
 ---
 
 {% include base_path %}
