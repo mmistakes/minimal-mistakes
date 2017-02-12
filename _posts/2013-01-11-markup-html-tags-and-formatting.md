@@ -114,6 +114,8 @@ Make any link standout more when applying the `.btn` class.
 [Warning Button](#){: .btn .btn--warning}
 [Danger Button](#){: .btn .btn--danger}
 [Info Button](#){: .btn .btn--info}
+[Inverse Button](#){: .btn .btn--inverse}
+[Light Outline Button](#){: .btn .btn--light-outline}
 
 ```markdown
 [Primary Button Text](#link){: .btn}
@@ -121,6 +123,8 @@ Make any link standout more when applying the `.btn` class.
 [Warning Button Text](#link){: .btn .btn--warning}
 [Danger Button Text](#link){: .btn .btn--danger}
 [Info Button Text](#link){: .btn .btn--info}
+[Inverse Button](#link){: .btn .btn--inverse}
+[Light Outline Button](#link){: .btn .btn--light-outline}
 ```
 
 [X-Large Button](#){: .btn .btn--x-large}
@@ -130,11 +134,11 @@ Make any link standout more when applying the `.btn` class.
 [X-Small Button](#){: .btn .btn--x-small}
 
 ```markdown
-[X-Large Button](#){: .btn .btn--x-large}
-[Large Button](#){: .btn .btn--large}
-[Default Button](#){: .btn}
-[Small Button](#){: .btn .btn--small}
-[X-Small Button](#){: .btn .btn--x-small}
+[X-Large Button](#link){: .btn .btn--x-large}
+[Large Button](#link){: .btn .btn--large}
+[Default Button](#link){: .btn}
+[Small Button](#link){: .btn .btn--small}
+[X-Small Button](#link){: .btn .btn--x-small}
 ```
 
 ## Notices

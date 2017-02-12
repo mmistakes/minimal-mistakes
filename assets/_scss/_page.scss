@@ -61,7 +61,7 @@
 }
 
 .page__content {
-  p, li {
+  p, li, dl {
     font-size: 16px;
   }
 
@@ -76,6 +76,15 @@
         margin-top: -($indent-var);
       }
     }
+  }
+
+  dt {
+    margin-top: 1em;
+    font-weight: bold;
+  }
+
+  dd {
+    margin-left: 1em;
   }
 }
 

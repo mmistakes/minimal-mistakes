@@ -1,0 +1,8 @@
+<nav class="pagination">
+  {% if page.previous %}
+    <a href="{{ base_path }}{{ page.previous.url }}" class="btn btn--inverse btn--small" title="{{ page.previous.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous }}</a>
+  {% endif %}
+  {% if page.next %}
+    <a href="{{ base_path }}{{ page.next.url }}" class="btn btn--inverse btn--small" title="{{ page.next.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_next }}</a>
+  {% endif %}
+</nav>

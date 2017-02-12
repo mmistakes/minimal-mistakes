@@ -53,13 +53,16 @@
    ========================================================================== */
 
 .pagination {
-  padding-top: 0.5em;
+  margin-top: 1em;
+  padding-top: 1em;
   border-top: 1px solid $border-color;
 
   ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    font-family: $sans-serif;
+    font-size: 12px;
   }
 
   li {
@@ -222,7 +225,7 @@
 .nav__list {
   a {
     display: block;
-    padding: 2px 0;
+    padding: 4px 0;
 
     &:hover {
       text-decoration: underline;
@@ -260,12 +263,13 @@
    ========================================================================== */
 
 .toc {
-  padding: 0 0 1em;
   font-family: $sans-serif-narrow;
   color: $gray;
   text-transform: uppercase;
   letter-spacing: 1px;
   background-color: #fff;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
 }
 
 .toc__menu {
