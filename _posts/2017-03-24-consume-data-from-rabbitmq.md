@@ -30,18 +30,62 @@ tags:
 - Set up a Raspberry PI 3 [here](2017-01-14-setup_raspberry.md)
 - Interacting with DHT22 Sensor [here](2017-02-28-dht22_raspberry.md)
 - A server or your own computer with Docker [here](2017-02-28-install_docker.md)
-- Install Git (optional) [here](https://git-scm.com/download/linux)
+- Git installed [here](https://git-scm.com/download/linux)
 - Push data to rabbitMQ [here](2017-03-24-push-data-on-rabbitmq.md)
 - Install InfluxDB [here](2017-03-24-install-influxdb.md)
 
+#### Clone the project
+
+```bash
+git clone git@github.com:jluccisano/reactive-server.git
+```
+
+```bash
+mvn clean install
+```
+
+```bash
+java -jar target/reactive-server-0.0.1-SNAPSHOT.jar
+```
 
 #### Step X: Consume data from Rabbitmq
 
+```bash
+git co step1-consumeDataFromRabbitMQ
+```
+
+```bash
+mvn clean install
+```
+
 #### Step X: Store data into InfluxDB
+
+```bash
+git co step2-store-data-into-influxDB
+```
+
+```bash
+mvn clean install
+```
+
+#### Step X: Create Rest API with Swagger
+
+```bash
+git co step3-Create-REST-API-Swagger
+```
+
+```bash
+mvn clean install
+```
+
+http://YOUR_HOST:YOUR_PORT/swagger-ui.html
 
 #### Step X: Forward data to client via Websocket
 
-#### Step X: Create Rest API with Swagger
+```bash
+git co step4-publish-to-websocket
+```
+
 
 #### Final Result
 
