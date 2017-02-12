@@ -1,76 +1,109 @@
-# Site wide configuration
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-title:            Site Title
-locale:           en_US
-url:
+# Site settings
+locale           : en_US
+title            : Your awesome title
+description      : "Write an awesome description for your new site here."
+url              : "" # the base hostname & protocol for your site
+baseurl          : "" # the subpath of your site, e.g. /blog
+email            : your-email@domain.com
 
+# Handling Reading
+safe : false
+include : 
+  - .htaccess
+  - _pages
+exclude : 
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - Capfile
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - tmp
+keep_files: 
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-# Jekyll configuration
-
-permalink:   /:categories/:title/
-markdown:    kramdown
+# Conversion
+markdown: kramdown
 highlighter: rouge
 sass:
   sass_dir: _sass
   style: compressed
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Plugins
 gems:
+  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
 
+# Outputting
+permalink: /:categories/:title/
+paginate_path: /page:num
+timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Markdown Processors
 kramdown:
-  auto_ids: true
+  input: GFM
+  hard_wrap: false
+  auto_ids: rue
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
-
-
-# Octopress
-
-# Default extensions
-post_ext: md
-page_ext: md
-
-# Found in _templates/
-post_layout: post
-page_layout: page
-
-# Format titles with titlecase?
-titlecase: true
-
 
 # Site owner
 owner:
-  name: Your Name
-  avatar: bio-photo.jpg
-  bio: "Describe your self."
-  email:
-  disqus-shortname:
-  twitter: #username
-  facebook: #username
-  google:
-    plus: #username
-    analytics:
-    verify:
-    ad-client:
-    ad-slot:
-  bing-verify:
-  github: #username
-  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
-  xing: #username
-  instagram: #username
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
-  youtube: #username
-  soundcloud: #username
-  weibo: #username
-  flickr: #username
-  codepen: #username
+  name             : Your Name
+  avatar           : bio-photo.jpg
+  bio              : "Describe your self."
+  email            :
+  disqus-shortname : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  bing-verify      :
+  codepen          :
+  dribbble         :
+  flickr           :
+  facebook         :
+  foursquare       :
+  github           :
+  google           :
+    plus           :
+    analytics      :
+    verify         :
+    ad-client      :
+    ad-slot        :
+  instagram        :
+  lastfm           :
+  linkedin         :
+  pinterest        :
+  soundcloud       :
+  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  steam            :
+  tumblr           :
+  twitter          :
+  weibo            :
+  xing             :
+  youtube          :
 
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
