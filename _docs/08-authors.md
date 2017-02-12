@@ -1,8 +1,13 @@
 ---
-title: "Layout: Author Override"
-author: Billy Rick
-excerpt: "A post to test author overrides using a data file."
+title: "Authors"
+permalink: /docs/authors/
+excerpt:
+sidebar:
+  title: "v3.0"
+  nav: docs
 ---
+
+{% include base_path %}
 
 Sites that may have content authored from various individuals can be accommodated by using [data files](https://jekyllrb.com/docs/datafiles/).
 

@@ -38,10 +38,10 @@ docs:
         path: configuration
       - title: "Navigation"
         path: navigation
-      - title: "Authors"
-        path: authors
       - title: "UI Text"
         path: ui-text
+      - title: "Authors"
+        path: authors
       - title: "Layouts"
         path: layouts
 
