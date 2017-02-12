@@ -1,6 +1,7 @@
 ---
 ref: home
 layout: splash
+title: "Department of Informatics"
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/mm-home-page-feature.jpg
