@@ -4,9 +4,9 @@ related: true
 header:
   overlay_color: "#333"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/caspar-rubin-224229.jpg
+  overlay_image: /assets/images/markus-spiske-109588.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-  teaser: /assets/images/caspar-rubin-224229.jpg
+  teaser: /assets/images/markus-spiske-109588.jpg
 categories:
   - Computer
 tags:
@@ -62,7 +62,7 @@ Simple
 ```ecmascript 6
 import React from 'react';
 
-class ReactiveMeteoStation extends React.Component {
+class ReactiveWeatherStation extends React.Component {
   render() {
     return (
       <div>
@@ -80,7 +80,7 @@ With JSX
 ```ecmascript 6
 import React from 'react';
 
-class ReactiveMeteoStation extends React.Component {
+class ReactiveWeatherStation extends React.Component {
   constructor(props, context) {
     super(props, context);
     this.state = {
@@ -113,7 +113,7 @@ import SockJS from 'sockjs-client';
 import Stomp from 'stompjs';
 import Config from 'Config';
 
-class ReactiveMeteoStation extends React.Component {
+class ReactiveWeatherStation extends React.Component {
   constructor(props, context) {
     super(props, context);
 
@@ -145,7 +145,7 @@ class ReactiveMeteoStation extends React.Component {
   }
 }
 
-export default ReactiveMeteoStation;
+export default ReactiveWeatherStation;
 ```
 ### Step 3: Get data from Rest API
 

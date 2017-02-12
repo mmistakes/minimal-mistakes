@@ -17,3 +17,4 @@ vcs.xml
 Supprimerait .idea/modules.xml
 Supprimerait .idea/workspace.xml
 deploy_key
+.idea/

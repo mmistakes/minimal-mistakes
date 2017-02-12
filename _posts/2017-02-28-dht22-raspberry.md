@@ -49,9 +49,8 @@ and maybe with better prices.
 
 ### Electronic wiring
 
-{% capture fig_img %}
-![schema_dht22]({{ basepath }}/assets/images/schema_dht22.png)
-{% endcapture %}
+{% include figure image_path="/assets/images/schema_dht22.png" alt="DHT22 Overview" caption="DHT22 Overview" %}
+
 
 ### Install Adafruit
 
