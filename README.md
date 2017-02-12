@@ -25,6 +25,7 @@ The theme includes responsive layouts (`single`, `archive`, and `splash` pages) 
 - Optional header images, sidebars, table of contents, galleries, related posts, breadcrumb links, and more.
 - Optional comments ([Disqus](https://disqus.com/), [Facebook](https://developers.facebook.com/docs/plugins/comments), Google+, [Discourse](https://www.discourse.org/), and custom).
 - Optional analytics ([Google Analytics](https://www.google.com/analytics/) and custom).
+- UI localized text: English (default), Spanish, French, and Turkish.
 
 #### Demo Pages
 
