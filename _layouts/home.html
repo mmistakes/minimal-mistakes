@@ -16,9 +16,7 @@
 {% if page.image.feature %}
   <div class="image-wrap">
   <img src=
-    {% if page.image.feature contains 'http://' %}
-      "{{ page.image.feature }}"
-    {% elsif page.image.feature contains 'https://' %}
+    {% if page.image.feature contains 'http' %}
       "{{ page.image.feature }}"
     {% else %}
       "{{ site.url }}/images/{{ page.image.feature }}"
@@ -42,7 +40,7 @@
       <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></h2>
     {% else %}
       <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-      <p>{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}</p>
+      <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
     {% endif %}
   </article>
   {% endfor %}
