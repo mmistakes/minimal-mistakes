@@ -342,7 +342,6 @@
   font-family: $sans-serif-narrow;
   font-size: $type-size-5;
   font-weight: bold;
-  border-bottom: 1px solid $border-color;
 }
 
 .nav__sub-title {
@@ -370,6 +369,14 @@
   border: 1px solid $border-color;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
+
+  .nav__title {
+    color: #fff;
+    font-size: $type-size-6;
+    background: $primary-color;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+  }
 }
 
 .toc__menu {
@@ -377,12 +384,13 @@
   padding: 0;
   width: 100%;
   list-style: none;
+  font-size: 0.8rem;
 
   a {
     display: block;
-    padding: 10px 20px;
+    padding: 1em 2em;
     color: $gray;
-    font-size: 11px;
+    font-size: $type-size-7;
     font-weight: bold;
     line-height: 1.5;
     border-bottom: 1px solid $border-color;
@@ -400,6 +408,7 @@
   }
 
   li ul > li a {
+    padding-left: 3em;
     font-weight: normal;
   }
 
