@@ -1,5 +1,7 @@
 ---
 title: "Markup: HTML Tags and Formatting"
+header:
+  teaser: "markup-syntax-highlighting-teaser.jpg"
 categories:
   - Markup
 tags:
@@ -10,7 +12,7 @@ tags:
   - markup
 ---
 
-## Headings
+A variety of common markup showing how the theme styles them.
 
 # Header one
 
