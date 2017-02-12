@@ -363,3 +363,11 @@ $navicon-height : 4px;
     font-size: 14px;
   }
 }
+
+a.reversefootnote {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
