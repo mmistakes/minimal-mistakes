@@ -321,7 +321,7 @@
     display: none;
   }
 
-  @include breakpoint(max-width $large) {
+  @include breakpoint(max-width ($large - 1px)) {
 
     label {
       position: relative;
@@ -385,23 +385,23 @@
     input:checked + label:hover:after {
       transform: rotate(0);
     }
-  }
 
-  ul {
-    margin-bottom: 1em;
-  }
-
-  a {
-    display: block;
-    padding: 0.25em 0;
-
-    @include breakpoint($large) {
-      padding-top: 0.125em;
-      padding-bottom: 0.125em;
+    ul {
+      margin-bottom: 1em;
     }
 
-    &:hover {
-      text-decoration: underline;
+    a {
+      display: block;
+      padding: 0.25em 0;
+
+      @include breakpoint($large) {
+        padding-top: 0.125em;
+        padding-bottom: 0.125em;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -428,7 +428,7 @@
     }
   }
 
-  @include breakpoint(max-width $large) {
+  @include breakpoint(max-width ($large - 1px)) {
     position: relative;
     max-height: 0;
     opacity: 0;
@@ -442,13 +442,13 @@
   }
 }
 
-@include breakpoint(max-width $large) {
+@include breakpoint(max-width ($large - 1px)) {
   .nav__list input:checked ~ .nav__items {
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
     max-height: 100vh;
-    opacity: 1;
     overflow: visible;
+    opacity: 1;
     margin-top: 1em;
     -webkit-transform: translate(0, 0);
         -ms-transform: translate(0, 0);
