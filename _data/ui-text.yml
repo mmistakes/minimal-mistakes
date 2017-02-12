@@ -181,7 +181,7 @@ tr: &DEFAULT_TR
 tr-TR:
   <<: *DEFAULT_TR
 
-# Brazilian Portguese
+# Portuguese
 # -----------------
 pt: &DEFAULT_PT
   page                       : "Página"
@@ -220,8 +220,44 @@ pt: &DEFAULT_PT
   comment_success_msg        : "Obrigado pelo seu comentário! Será visível no site logo que aprovado."
   comment_error_msg          : "Lamento, ocorreu um erro na sua submissão. Por favor verifique se todos os campos obrigatórios estão corretamente preenchidos e tente novamente."
   loading_label              : "A carregar..."
+# Brazilian Portuguese
 pt-BR:
-  <<: *DEFAULT_PT
+  page                       : "Página"
+  pagination_previous        : "Anterior"
+  pagination_next            : "Próxima"
+  breadcrumb_home_label      : "Home"
+  breadcrumb_separator       : "/"
+  toc_label                  : "Nesta página"
+  ext_link_label             : "Link direto"
+  less_than                  : "meno que"
+  minute_read                : "minutos de leitura"
+  share_on_label             : "Compartilhe em"
+  meta_label                 :
+  tags_label                 : "Tags:"
+  categories_label           : "Categorias:"
+  date_label                 : "Atualizado em:"
+  comments_label             : "Deixe um comentário"
+  comments_title             :
+  more_label                 : "Aprenda Mais"
+  related_label              : "Você Talvez Goste Também"
+  follow_label               : "Acompanhe em"
+  feed_label                 : "Feed"
+  powered_by                 : "Feito com"
+  website_label              : "Site"
+  email_label                : "Email"
+  recent_posts               : "Postagens recentes"
+  undefined_wpm              : "Parâmetro indefinido em word_per_minute no _config.yml"
+  comment_form_info          :
+  comment_form_comment_label :
+  comment_form_md_info       :
+  comment_form_name_label    :
+  comment_form_email_label   :
+  comment_form_website_label :
+  comment_btn_submit         :
+  comment_btn_submitted      :
+  comment_success_msg        :
+  comment_error_msg          :
+  loading_label              :
 pt-PT:
   <<: *DEFAULT_PT
 
