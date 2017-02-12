@@ -49,7 +49,9 @@ Hydraulic components
 
 #### Electronic wiring
 
-![schema_sprinkler](../assets/images/schema_sprinkler.png)
+{% capture fig_img %}
+![schema_sprinkler]({{ basepath }}/assets/images/schema_sprinkler.png)
+{% endcapture %}
 
 #### Hydraulic wiring
 
