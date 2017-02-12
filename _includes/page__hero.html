@@ -22,7 +22,15 @@
           {{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}
         {% endif %}
       </h1>
-      {% if site.read_time and page.read_time %}<p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>{% endif %}
+      {% if page.excerpt %}
+        <p class="page__lead">{{ page.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+      {% endif %}
+      {% if site.read_time and page.read_time %}
+        <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+      {% endif %}
+      {% if page.header.cta_url %}
+        <p><a href="{{ page.header.cta_url }}" class="btn btn--light-outline btn--x-large">{{ page.header.cta_label | default: site.data.ui-text[site.locale].more_label }}</a></p>
+      {% endif %}
     </div>
   {% else %}
     <img src="{{ img_path }}" alt="{{ page.title }}" class="page__hero-image">

@@ -55,6 +55,11 @@
   }
 }
 
+.page__lead {
+  font-family: $sans-serif;
+  font-size: 20px;
+}
+
 .page__content {
   p, li {
     font-size: 16px;
@@ -76,14 +81,29 @@
     background-repeat: no-repeat;
     background-position: center;
 
+    .wrapper {
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+
     .page__title,
-    .page__meta {
+    .page__meta,
+    .page__lead,
+    .btn {
       color: #fff;
       text-shadow: 1px 1px 4px rgba(#000, 0.5);
     }
 
     .page__title {
-      font-size: 64px;
+      font-size: 48px;
+
+      @include breakpoint($small) {
+        font-size: 60px;
+      }
+    }
+
+    .page__lead {
+      font-weight: bold;
     }
   }
 }

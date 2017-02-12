@@ -122,3 +122,137 @@ a:hover {
     }
   }
 }
+
+
+/*
+   Features
+   ========================================================================== */
+
+.feature__wrapper {
+  @include clearfix();
+  margin-bottom: 2em;
+  border-bottom: 1px solid $border-color;
+}
+
+.feature__item {
+  margin-bottom: 2em;
+
+  @include breakpoint($small) {
+    text-align: center;
+    @include gallery(4 of 12);
+
+    .feature__item-teaser {
+      max-height: 200px;
+      overflow: hidden;
+    }
+  }
+
+  .archive__item-title {
+    margin-bottom: 0.5em;
+    font-size: 30px;
+  }
+
+  .archive__item-excerpt {
+    margin-bottom: 1em;
+    font-size: 18px;
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  &--left {
+    @include full();
+    margin-bottom: 2em;
+
+    @include breakpoint($small) {
+      .archive__item-teaser {
+        @include span(5 of 12);
+      }
+
+      .archive__item-body {
+        @include span(7 of 12 last);
+        @include prefix(0.5 of 12);
+        @include suffix(1 of 12);
+      }
+    }
+
+    .archive__item-title {
+      margin-bottom: 0.5em;
+      font-size: 30px;
+    }
+
+    .archive__item-excerpt {
+      margin-bottom: 1em;
+      font-size: 18px;
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &--right {
+    @include full();
+    margin-bottom: 2em;
+    @include breakpoint($small) {
+      text-align: right;
+
+      .archive__item-teaser {
+        @include span(5 of 12 rtl);
+      }
+
+      .archive__item-body {
+        @include span(7 of 12 last rtl);
+        @include prefix(0.5 of 12);
+        @include suffix(1 of 12);
+      }
+    }
+
+    .archive__item-title {
+      margin-bottom: 0.5em;
+      font-size: 30px;
+    }
+
+    .archive__item-excerpt {
+      margin-bottom: 1em;
+      font-size: 18px;
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &--center {
+    @include full();
+    margin-bottom: 2em;
+    @include breakpoint($small) {
+      text-align: center;
+
+      .archive__item-teaser {
+        margin: 0 auto;
+        width: span(5 of 12);
+      }
+
+      .archive__item-body {
+        margin: 0 auto;
+        width: span(7 of 12);
+      }
+    }
+
+    .archive__item-title {
+      margin-bottom: 0.5em;
+      font-size: 30px;
+    }
+
+    .archive__item-excerpt {
+      margin-bottom: 1em;
+      font-size: 18px;
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
