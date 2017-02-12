@@ -33,6 +33,16 @@ tags:
 
 #### Step X: FuntainJs
 
+1) Install FuntainJs
+
+```text
+https://github.com/FountainJS/generator-fountain-webapp
+```
+
+```bash
+yo fountain-webapp
+```
+
 #### Step X: Create a ReactJS component
 
 #### Step X: Create a ReactJS socket module via STOMP and sockJS
