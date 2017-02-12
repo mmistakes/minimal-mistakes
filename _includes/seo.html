@@ -16,9 +16,7 @@
   {% assign canonical_url = page.url | replace: "index.html", "" | prepend: site.url %}
 {% endif %}
 
-{% if seo_title %}
-  <title>{{ seo_title }}</title>
-{% endif %}
+<title>{{ seo_title | default: site.title }}</title>
 
 {% assign seo_description = page.description | default: page.excerpt | default: site.description %}
 {% if seo_description %}
