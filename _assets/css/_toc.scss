@@ -12,10 +12,6 @@
   @include breakpoint($large) {
     @include span(3 of 10 last);
     @include prefix(0.25);
-    // @include grid(12,2);
-    // position: absolute;
-    // top: 0;
-    // right: 6.250005%;
   }
 }
 
