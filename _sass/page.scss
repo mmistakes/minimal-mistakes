@@ -362,6 +362,7 @@ $button-size: 1.5rem;
 	@include rounded(150px);
 }
 .author-social {
+  display: block;
   margin-bottom: 5px;
   @include font-rem(14);
   color: $black;
