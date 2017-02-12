@@ -2,7 +2,7 @@
 layout: page
 title: About the Theme
 tags: [about, Jekyll, theme, responsive]
-modified: 9-9-2013
+modified: 2014-08-08T20:53:07.573882-04:00
 comments: true
 image:
   feature: texture-feature-02.jpg
@@ -16,13 +16,10 @@ Minimal Mistakes is responsive Jekyll theme with large featured images and solid
 
 * Responsive templates. Looking good on mobile, tablet, and desktop.
 * Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers. 
-* Minimal embellishments --- content first.
-* Large feature images for posts and pages.
-* Author sidebar to pimp your bio, photo[^2], and social media links.
-* Simple and clear permalink structure *(ie: domain.com/category/post-title)*
+* Minimal embellishments -- content first.
+* Optional large feature images for posts and pages.
+* Simple and clear permalink structure.
+* [Custom 404 page](http://mmistakes.github.io/minimal-mistakes/404.html) to get you started.
+* Support for Disqus Comments
 
 <a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install Minimal Mistakes Theme</a>
-
-[^1]: Since open sourcing this theme I have released several more Jekyll themes. My website [Made Mistakes](http://mademistakes.com) is currently using a modified version of my [Skinny Bones Starter](http://mmistakes.github.io/skinny-bones-jekyll/).
-
-[^2]: Fancy avatars provided by [Brandon Mathis](http://brandonmathis.com/projects/fancy-avatars/demo/) under a [Creative Commons Attribution 3.0 License](http://creativecommons.org/licenses/by/3.0/).
