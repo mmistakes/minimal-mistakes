@@ -66,13 +66,13 @@ The Liquid based taxonomy archives found amongst the demo pages rely on this hel
 
 Generate a `<figure>` element with optional caption of arrays with two or more images.
 
-| Include Parameter | Description |
-| ----------------- | ----------- | 
-| `id`              | *(optional)* Default is `gallery`. To add multiple galleries to a document uniquely name them in the YAML Front Matter and reference in `{% raw %}{% include gallery id="gallery_id" %}{% endraw %}` |
-| `class`           | *(optional)* Use to add a `class` attribute to the surrounding `<figure>` element for additional styling needs. |
-| `caption`         | *(optional)* Gallery caption description. Markdown is allowed. |
-
 To place a gallery add the necessary YAML Front Matter.
+
+| Name           | Required     | Description |
+| ----           | --------     | ----------- |
+| **url**        | Optional     | URL to link gallery image to (eg. a larger detail image). |
+| **image_path** | **Required** | For images placed in the `/images/` directory just add the filename and extension. Use absolute URLS for those hosted externally. |
+| **alt**        | Optional     | Alternate text for image. |
 
 ```yaml
 gallery:
@@ -89,12 +89,11 @@ gallery:
 
 And then drop-in the gallery include in the body where you'd like it to appear. 
 
-| YAML variable | Description |
-| ------------- | ----------- |
-| `url`         | *(optional)* URL to link gallery image to (eg. a larger detail image). |
-| `image_path`  | For images placed in the `/images/` directory just add the filename and extension. Use absolute URLS for those hosted externally. |
-| `alt`         | *(optional)* alternate text for image |
-
+| Include Parameter | Required    | Description | Default |
+| ----------------- | --------    | ----------- | ------- | 
+| **id**            | Optional    | To add multiple galleries to a document uniquely name them in the YAML Front Matter and reference in `{% raw %}{% include gallery id="gallery_id" %}{% endraw %}` | `gallery` |
+| **class**         | Optional    | Use to add a `class` attribute to the surrounding `<figure>` element for additional styling needs. | |
+| **caption**       | Optional    | Gallery caption description. Markdown is allowed. | |
 
 ```liquid
 {% raw %}{% include gallery caption="This is a sample gallery with **Markdown support**." %}{% endraw %}
@@ -104,19 +103,24 @@ And then drop-in the gallery include in the body where you'd like it to appear.
 
 {% include gallery caption="This is a sample gallery with **Markdown support**." %}
 
-**Moar Gallery Goodness:** A [few more examples]({{ base_path }}{% post_url 2010-09-09-post-gallery %}) and [source code]({{ site.gh_repo }}/gh-pages/_posts/2010-09-09-post-gallery.md) can be seen in the demo site.
+**More Gallery Goodness:** A [few more examples]({{ base_path }}{% post_url 2010-09-09-post-gallery %}) and [source code]({{ site.gh_repo }}/gh-pages/_posts/2010-09-09-post-gallery.md) can be seen in the demo site.
 {: .notice--info}
 
 ## Feature Row
 
 Designed to compliment the [`splash`]({{ base_path }}/docs/layouts/#splash-page-layout) page layout as a way of arranging and aligning "feature blocks" containing text or image.
 
-| Include Parameter | Description |
-| ----------------- | ----------- |
-| `id`              | *(optional)* Default is `feature_row`. To add multiple rows to a document uniquely name them in the YAML Front Matter and reference in `{% raw %}{% include feature_row id="row2" %}{% endraw %}` |
-| `type`            | *(optional)* Alignment of the featured blocks in the row. Options include: `left`, `center`, or `right` aligned. |
-
 To add a feature row containing three content blocks with text and image, add the following YAML Front Matter
+
+| Name           | Required     | Description | Default |
+| ----           | -----------  | ----------- | ------- |
+| **image_path** | **Required** | For images placed in the `/images/` directory just add the filename and extension. Use absolute URLS for those hosted externally. | |
+| **alt**        | Optional     | Alternate text for image. | |
+| **title**      | Optional     | Content block title | |
+| **excerpt**    | Optional     | Content block excerpt text. Markdown is allowed. | |
+| **url**        | Optional     | URL that the button should link to. | |
+| **btn_label**  | Optional     | Button text label. | `more_label` in UI Text data file. |
+| **btn_class**  | Optional     | Button style. See [utility classes]({{ base_path }}/docs/utility-classes/#buttons) for options. | `btn` |
 
 ```yaml
 feature_row:
@@ -138,23 +142,18 @@ feature_row:
 
 And then drop-in the feature row include in the body where you'd like it to appear.
 
+| Include Parameter   | Required | Description | Default |
+| -----------------   | -------- | ----------- | ------- |
+| **id**              | Optional | To add multiple rows to a document uniquely name them in the YAML Front Matter and reference in `{% raw %}{% include feature_row id="row2" %}{% endraw %}` | `feature_row` |
+| **type**            | Optional | Alignment of the featured blocks in the row. Options include: `left`, `center`, or `right` aligned. | |
+
 ```liquid
 {% raw %}{% include feature_row %}{% endraw %}
 ```
 
 {% include feature_row %}
 
-| YAML variable | Description |
-| ------------- | ----------- |
-| `image_path`  | For images placed in the `/images/` directory just add the filename and extension. Use absolute URLS for those hosted externally. |
-| `alt`         | *(optional)* alternate text for image |
-| `title`       | Content block title |
-| `excerpt`     | *(optional)* Content block excerpt text. Markdown is allowed. |
-| `url`         | *(optional)* URL that the button should link to. |
-| `btn_label`   | *(optional)* Default value is used from `more_label` in UI Text data file. |
-| `btn_class`   | *(optional)* Button style. See [utility classes]({{ base_path }}/docs/utility-classes/#buttons) for options.
-
-**Moar Feature Goodness:** A [few more examples]({{ base_path }}/splash-page/) and [source code]({{ site.gh_repo }}/gh-pages/_pages/splash-page.md) can be seen in the demo site.
+**More Feature Row Goodness:** A [few more examples]({{ base_path }}/splash-page/) and [source code]({{ site.gh_repo }}/gh-pages/_pages/splash-page.md) can be seen in the demo site.
 {: .notice--info}
 
 ## Table of Contents
@@ -167,10 +166,10 @@ To include an [auto-generated table of contents](http://kramdown.rubyforge.org/c
 
 ![table of contents example]({{ base_path }}/images/mm-toc-helper-example.jpg)
 
-| Parameter | Description |
-| --------- | ----------- |
-| `title`   | *(optional) Default value is used from `toc_label` in UI Text data file. |
-| `icon`    | *(optional) Default is the [Font Awesome](https://fortawesome.github.io/Font-Awesome/icons/) `file-text` icon. Any other FA icon can be used instead. |
+| Parameter   | Required | Description | Default |
+| ---------   | -------- | ----------- | ------- |
+| **title**   | Optional | Table of contents title. | `toc_label` in UI Text data file. |
+| **icon**    | Optional | Table of contents icon (shows before the title). | [Font Awesome](https://fortawesome.github.io/Font-Awesome/icons/) <i class="fa fa-file-text"></i> **file-text** icon. Any other FA icon can be used instead. |
 
 **TOC example with custom title and icon**
 
