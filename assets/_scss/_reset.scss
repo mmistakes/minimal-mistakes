@@ -2,6 +2,8 @@
    STYLE RESETS
    ========================================================================== */
 
+@include border-box-sizing;
+
 html {
   /* apply a natural box layout model to all elements */
   box-sizing: border-box;
@@ -15,11 +17,6 @@ html {
   }
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-}
-
-/* apply a natural box layout model to all elements */
-*, *:before, *:after {
-  box-sizing: inherit;
 }
 
 /* Remove margin */

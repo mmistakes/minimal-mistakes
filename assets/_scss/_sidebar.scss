@@ -61,8 +61,8 @@
   height: 36px;
   @include breakpoint($large) {
     display: block;
-    width: initial;
-    height: initial;
+    width: 100%;
+    height: 100%;
   }
   img {
     max-width: 110px;
@@ -142,12 +142,12 @@
   box-shadow: 0 0 10px rgba(#000, 0.25);
   @include breakpoint($large) {
     display: block;
-    position: initial;
+    position: relative;
     margin: 0;
     padding: 0;
     border: 0;
-    background: initial;
-    box-shadow: initial;
+    background: transparent;
+    box-shadow: none;
   }
   &:before {
     content: "";
