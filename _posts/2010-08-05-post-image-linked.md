@@ -7,4 +7,4 @@ tags:
   - Post Formats
 ---
 
-[![foo]({{http://wpthemetestdata.files.wordpress.com/2008/06/100_5540.jpg?w=604}})](http://wpthemetestdata.files.wordpress.com/2008/06/100_5540.jpg)
+[![foo](https://farm5.staticflickr.com/4073/4939853213_33ffc0290b_b.jpg)](https://flic.kr/p/8ww3fZ)
