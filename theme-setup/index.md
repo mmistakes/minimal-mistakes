@@ -38,7 +38,7 @@ If you want to use Minimal Mistakes with an existing Jekyll site follow these st
 
 ## Running Jekyll
 
-If `jekyll build` and `jekyll serve` throw errors you may have to run Jekyll with `bundled exec` instead.
+If `jekyll build` and `jekyll serve` throw errors you may have to run Jekyll with `bundle exec` instead.
 
 > In some cases, running executables without bundle exec may work, if the executable happens to be installed in your system and does not pull in any gems that conflict with your bundle.
 >
