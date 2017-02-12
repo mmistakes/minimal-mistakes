@@ -8,6 +8,7 @@ en: &DEFAULT_EN
   pagination_next            : "Next"
   breadcrumb_home_label      : "Home"
   breadcrumb_separator       : "/"
+  menu_label                 : "Toggle Menu"
   toc_label                  : "On This Page"
   ext_link_label             : "Direct Link"
   less_than                  : "less than"
@@ -56,6 +57,7 @@ es: &DEFAULT_ES
   pagination_next            : "Siguiente"
   breadcrumb_home_label      : "Inicio"
   breadcrumb_separator       : "/"
+  menu_label                 :
   toc_label                  : "Contenidos"
   ext_link_label             : "Enlace"
   less_than                  : "menos de"
@@ -100,6 +102,7 @@ fr: &DEFAULT_FR
   pagination_next            : "Suivant"
   breadcrumb_home_label      : "Accueil"
   breadcrumb_separator       : "/"
+  menu_label                 :
   toc_label                  : "Sur cette page"
   ext_link_label             : "Lien direct"
   less_than                  : "plus petit que"
@@ -147,6 +150,7 @@ tr: &DEFAULT_TR
   pagination_next            : "Sonraki"
   breadcrumb_home_label      : "Ana Sayfa"
   breadcrumb_separator       : "/"
+  menu_label                 :
   toc_label                  : "İçindekiler"
   ext_link_label             : "Doğrudan Bağlantı"
   less_than                  : "Şu süreden az: "
@@ -189,6 +193,7 @@ pt: &DEFAULT_PT
   pagination_next            : "Seguinte"
   breadcrumb_home_label      : "Início"
   breadcrumb_separator       : "/"
+  menu_label                 :
   toc_label                  : "Nesta Página"
   ext_link_label             : "Link Direto"
   less_than                  : "menos de"
@@ -227,6 +232,7 @@ pt-BR:
   pagination_next            : "Próxima"
   breadcrumb_home_label      : "Home"
   breadcrumb_separator       : "/"
+  menu_label                 :
   toc_label                  : "Nesta página"
   ext_link_label             : "Link direto"
   less_than                  : "meno que"
@@ -269,6 +275,7 @@ it: &DEFAULT_IT
   pagination_next            : "Prossima"
   breadcrumb_home_label      : "Home"
   breadcrumb_separator       : "/"
+  menu_label                 :
   toc_label                  : "Indice della pagina"
   ext_link_label             : "Link"
   less_than                  : "meno di"
@@ -311,6 +318,7 @@ zh: &DEFAULT_ZH
   pagination_next            : "向后"
   breadcrumb_home_label      : "首页"
   breadcrumb_separator       : "/"
+  menu_label                 :
   toc_label                  : "在本页上"
   ext_link_label             : "直接链接"
   less_than                  : "少于"
@@ -359,6 +367,7 @@ de: &DEFAULT_DE
   pagination_next            : "Nächste"
   breadcrumb_home_label      : "Home"
   breadcrumb_separator       : "/"
+  menu_label                 :
   toc_label                  : "Auf dieser Seite"
   ext_link_label             : "Direkter Link"
   less_than                  : "weniger als"
