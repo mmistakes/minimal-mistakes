@@ -25,7 +25,9 @@ layout: default
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
           <h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
-          {% if site.read_time and page.read_time %}<p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>{% endif %}
+          {% if page.read_time %}
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+          {% endif %}
         </header>
       {% endunless %}
 
