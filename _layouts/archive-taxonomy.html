@@ -1,0 +1,12 @@
+---
+layout: default
+author_profile: false
+---
+
+<div class="archive">
+  <h1 class="page__title">{{ page.title }}</h1>
+  {% include base_path %}
+  {% for post in page.posts %}
+    {% include archive-list-single.html %}
+  {% endfor %}
+</div><!-- /.archive -->

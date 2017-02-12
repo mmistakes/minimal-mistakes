@@ -1,38 +1,7 @@
-{% include base_path %}
-
-{% comment %}
-  <!-- Sort page.tags alphabetically regardless of case e.g. a B c d E -->
-  <!-- modified from http://www.codeofclimber.ru/2015/sorting-site-tags-in-jekyll/ -->
-{% endcomment %}
-
 {% if page.tags[0] %}
-  {% if site.tags_archive_filename %}
-    {% capture page_tags %}{% for tag in page.tags %}{{ tag | downcase }}#{{ tag }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-    {% assign tag_hashes = (page_tags | split: ',' | sort:0) %}
-
-    <p class="page__taxonomy"><strong>{{ site.data.ui-text[site.locale].tags_label }}</strong> <span itemprop="keywords">
-    {% for hash in tag_hashes %}
-      {% assign keyValue = hash | split: '#' %}
-      {% capture tag_word %}{{ keyValue[1] | strip_newlines }}{% endcapture %}
-        <a href="{{ base_path }}{{ tag_word | slugify | prepend: '/#' | prepend: site.tags_archive_filename | prepend: "/" }}" class="page__taxonomy-item" rel="tag">{{ tag_word }}</a>{% unless forloop.last %}, {% endunless %}
-    {% endfor %}
-    </span>
-    </p>
-  {% endif %}
+  {% include tag-list.html %}
 {% endif %}
 
 {% if page.categories[0] %}
-  {% if site.categories_archive_filename %}
-    {% capture page_categories %}{% for category in page.categories %}{{ category | downcase }}#{{ category }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-    {% assign category_hashes = (page_categories | split: ',' | sort:0) %}
-
-    <p class="page__taxonomy"><strong>{{ site.data.ui-text[site.locale].categories_label }}</strong> <span itemprop="keywords">
-    {% for hash in category_hashes %}
-      {% assign keyValue = hash | split: '#' %}
-      {% capture category_word %}{{ keyValue[1] | strip_newlines }}{% endcapture %}
-        <a href="{{ base_path }}{{ category_word | slugify | prepend: '/#' | prepend: site.categories_archive_filename | prepend: "/" }}" class="page__taxonomy-item" rel="tag">{{ category_word }}</a>{% unless forloop.last %}, {% endunless %}
-    {% endfor %}
-    </span>
-    </p>
-  {% endif %}
+  {% include category-list.html %}
 {% endif %}
