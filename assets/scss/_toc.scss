@@ -12,9 +12,12 @@
   @include breakpoint($large) {
     position: absolute;
     top: 0;
-    right: calc(50% - 512px + 1em); // 50% - 1/2 of wrapper's max-width + wrapper padding
+    right: calc(50% - (0.5 * #{$large}) + 1em); // 50% - 1/2 of wrapper's max-width + wrapper padding
     width: $right-sidebar-width;
     padding-left: 2em;
+  }
+  @include breakpoint($x-large) {
+    right: calc(50% - (0.5 * #{$x-large}) + 1em); // 50% - 1/2 of wrapper's max-width + wrapper padding
   }
 }
 
