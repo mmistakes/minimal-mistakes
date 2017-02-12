@@ -89,9 +89,17 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
+# Collections
+collections:
+  recipes:
+    output: true
+    permalink: /:collection/:categories/:path/
+  pets:
+    output: true
+    permalink: /:collection/:categories/:path/
+
 # Defaults
 defaults:
-
   # _posts
   - scope:
       path: ""
@@ -101,11 +109,22 @@ defaults:
       comments: true
       share: true
       related: true
-
   # _pages
   - scope:
       path: _pages
       type: pages
+    values:
+      layout: post
+  # _recipes
+  - scope:
+      path: _recipes
+      type: recipes
+    values:
+      layout: post
+  # _pets
+  - scope:
+      path: _pets
+      type: pets
     values:
       layout: post
 
@@ -152,4 +171,3 @@ author:
   weibo            :
   xing             :
   youtube          :
-
