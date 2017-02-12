@@ -5,14 +5,15 @@ categories:
 tags:
   - image
   - Post Formats
-  - shortcode
 ---
 
+{% include base_path %}
+
 {% capture fig_img %}
-![Foo](http://wpthemetestdata.files.wordpress.com/2008/06/100_5478.jpg?w=604)
+![Foo]({{ base_path }}/images/unsplash-gallery-image-3.jpg)
 {% endcapture %}
 
 <figure>
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-  <figcaption>Bell on wharf in San Francisco</figcaption>
+  <figcaption>Photo from Unsplash.</figcaption>
 </figure>
