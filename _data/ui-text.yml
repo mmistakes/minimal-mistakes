@@ -164,5 +164,35 @@ pt-BR:
 pt-PT:
   <<: *DEFAULT_PT
 
+# Italian
+# -----------------
+it: &DEFAULT_IT
+  page                  : "Pagina"
+  pagination_previous   : "Precedente"
+  pagination_next       : "Prossima"
+  breadcrumb_home_label : "Home"
+  breadcrumb_separator  : "/"
+  toc_label             : "Indice della pagina"
+  ext_link_label        : "Link"
+  less_than             : "meno di"
+  minute_read           : "minuto/i di lettura"
+  share_on_label        : "Condividi"
+  meta_label            :
+  tags_label            : "Tags:"
+  categories_label      : "Categorie:"
+  date_label            : "Aggiornato:"
+  comments_label        : "Scrivi un commento"
+  more_label            : "Scopri di più"
+  related_label         : "Potrebbe Piacerti Anche"
+  follow_label          : "Segui:"
+  feed_label            : "Feed"
+  powered_by            : "Powered by"
+  website_label         : "Website"
+  email_label           : "Email"
+  recent_posts          : "Articoli Recenti"
+  undefined_wpm         : "Parametro words_per_minute non definito in _config.yml"
+it-IT:
+  <<: *DEFAULT_IT
+
 # Another locale
 # --------------
