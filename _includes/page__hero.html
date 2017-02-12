@@ -3,7 +3,7 @@
 {% if page.header.image contains "://" %}
   {% capture img_path %}{{ page.header.image }}{% endcapture %}
 {% else %}
-  {% capture img_path %}{{ page.header.image | prepend: "/images/" | prepend: base_path }}{% endcapture %}
+  {% capture img_path %}{{ page.header.image | prepend: "/" | prepend: base_path }}{% endcapture %}
 {% endif %}
 
 {% if page.header.cta_url contains "://" %}
@@ -15,7 +15,7 @@
 {% if page.header.overlay_image contains "://" %}
   {% capture overlay_img_path %}{{ page.header.overlay_image }}{% endcapture %}
 {% elsif page.header.overlay_image %}
-  {% capture overlay_img_path %}{{ page.header.overlay_image | prepend: "/images/" | prepend: base_path }}{% endcapture %}
+  {% capture overlay_img_path %}{{ page.header.overlay_image | prepend: "/" | prepend: base_path }}{% endcapture %}
 {% endif %}
 
 {% if page.header.overlay_filter contains "rgba" %}
