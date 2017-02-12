@@ -15,7 +15,7 @@ echo "Starting to update master\n"
 
 
 #copy data we're interested in to other place
-cp -R _site $HOME/_site
+cp -R /home/travis/build/jluccisano/jluccisano.github.io/_site $HOME/_site
 
 # Save some useful information
 REPO=`git config remote.origin.url`
@@ -33,6 +33,7 @@ cd ..
 # Clean out existing contents
 rm -rf out/**/* || exit
 #go into directory and copy data we're interested in to that directory
+cd out
 cp -Rf $HOME/_site/* .
 
 
