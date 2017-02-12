@@ -71,6 +71,7 @@ exclude:
   - config
   - Gemfile
   - Gruntfile.js
+  - gulpfile.js
   - LICENSE
   - log
   - node_modules
