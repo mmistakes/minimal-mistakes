@@ -441,7 +441,7 @@ Used as the defaults for defining what appears in the author sidebar.
 ```yaml
 author:
   name   : "Your Name"
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : me.jpg
   bio    : "My awesome biography constrained to a sentence or two goes here."
   email  : # optional
   uri    : "http://your-site.com"

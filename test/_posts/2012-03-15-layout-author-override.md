@@ -25,7 +25,7 @@ Cornelius Fiddlebone:
   name: "Cornelius Fiddlebone"
   email: "cornelius@thewhip.com"
   bio: "I ordered what?"
-  avatar: "/assets/images/bio-photo.jpg"
+  avatar: me.jpg
   twitter: "rhymeswithsackit"
 ```
 
