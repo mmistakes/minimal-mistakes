@@ -1,7 +1,7 @@
-{% if page.tags[0] %}
+{% if site.tags.type and page.tags[0] %}
   {% include tag-list.html %}
 {% endif %}
 
-{% if page.categories[0] %}
+{% if site.categories.type and page.categories[0] %}
   {% include category-list.html %}
 {% endif %}

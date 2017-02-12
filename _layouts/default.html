@@ -30,7 +30,7 @@ layout: compress
     </div>
   {% endif %}
 
-  {% if site.breadcrumbs %}
+  {% if site.breadcrumbs and site.categories.type %}
     {% include breadcrumbs.html %}
   {% endif %}
 
