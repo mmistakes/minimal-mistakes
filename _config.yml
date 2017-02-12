@@ -24,12 +24,24 @@ facebook:
   username               : &facebook "site_facebook"
   app_id                 :
   publisher              :
-disqus_shortname         : "mmistakes-dev" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+comments:
+  provider               : false # false (default), "disqus", "facebook", "google-plus", custom"
+  disqus:
+    shortname            : "mmistakes-dev" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid                :
+    num_posts            : # 5 (default)
+    width                : # 580 (default)
+    colorscheme          : # "light" (default), "dark"
 google_site_verification :
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
-google_analytics         : # Universal Analytics tracking ID
+analytics:
+  provider               : false # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          : "UA-123456-7"
 google_ad_client         :
 google_ad_slot           :
 
