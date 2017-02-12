@@ -5,6 +5,11 @@ excerpt:
 sidebar:
   title: "v3.0"
   nav: docs
+single_layout_gallery:
+  - image_path: mm-layout-single-header.png
+    alt: "single layout with header example"
+  - image_path: mm-layout-single-meta.png
+    alt: "single layout with comments and related posts"
 ---
 
 {% include base_path %}
@@ -34,6 +39,8 @@ A Jekyll layout that compresses HTML in pure Liquid.
 ## Single
 
 The layout you'll likely use the most --- thin sidebar on the left, main content on the right.
+
+{% include gallery id="single_layout_gallery" caption="Image header and meta info examples for `single` layout" %}
 
 To enable add `layout: single` or better yet apply as a [Front Matter default]({{ base_path }}/docs/configuration/#front-matter-defaults) in `_config.yml`.
 
@@ -105,13 +112,59 @@ header:
   overlay_color: "#333"
 ```
 
-### Custom Sidebar
+### Sidebar
+
+The space to the left of a page's main content is blank by default, but has the option to show an author profile (name, short biography, social media links), custom content, or both.
+
+#### Author Profile
+
+Add `author_profile: true` to a post or page's YAML Front Matter.
 
 ![single layout example]({{ base_path }}/images/mm-layout-single.png)
 
-![single layout with header example]({{ base_path }}/images/mm-layout-single-header.png)
+Better yet, enable it with Front Matter Defaults set in `_config.yml`.
 
-![single layout with comments and related posts]({{ base_path }}/images/mm-layout-single-meta.png)
+```yaml
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      author_profile: true
+```
+
+**Note:** To disable the author sidebar profile for a specific post or page, add `author_profile: false` to the YAML Front Matter instead.
+{: .notice--warning}
+
+#### Custom Sidebar Content
+
+Blocks of content can be added by using the following under `sidebar`:
+
+* `title` --- title or heading
+* `image` --- image path placed in `/images/` folder or an external URL
+* `image_alt` --- alt description for image
+* `text` --- Markdown supported text
+
+Multiple blocks can also be added by following the example below:
+
+```yaml
+sidebar:
+  - title: "Title"
+    image: http://placehold.it/350x250
+    image_alt: "image"
+    text: "Some text here."
+  - title: "Another Title"
+    text: "More text here."
+```
+
+<figure>
+  <img src="{{ base_path }}/images/mm-custom-sidebar-example.jpg" alt="custom sidebar content example">
+  <figcaption>Example of custom sidebar content added as YAML Front Matter.</figcaption>
+</figure>
+
+**ProTip:** Custom sidebar content added to a post or page's YAML Front Matter will appear above the author profile if enabled with `author_profile: true`.
+{: .notice--info}
 
 ## Archive
 

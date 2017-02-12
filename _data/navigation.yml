@@ -53,8 +53,8 @@ docs:
         path: working-with-pages
       - title: "Working with Collections"
         path: working-with-collections
-      - title: "Jekyll Include Helpers"
-        path: include-helpers
+      - title: "Helpers and Shortcodes"
+        path: helpers-and-shortcodes
       - title: "Images"
         path: images
 
@@ -64,9 +64,11 @@ docs:
         path: pagination
       - title: "Archives"
         path: archives
-      - title: "Development"
-        path: development
-      - title: "v2 Documentation"
+      - title: "Stylesheets"
+        path: stylesheets
+      - title: "JavaScript"
+        path: javascript
+      - title: "Old 2.2.1 Docs"
         path: docs-2
 
   - title: Meta
