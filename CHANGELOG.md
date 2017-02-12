@@ -1,3 +1,9 @@
+## [3.1.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.1)
+
+### Bug Fix
+
+- Fixed reading time bug when `words_per_minute` wasn't set in `_config.yml` [#271](https://github.com/mmistakes/minimal-mistakes/issues/271)
+
 ## [3.1.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.0)
 
 ### Enhancements
