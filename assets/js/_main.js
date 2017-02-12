@@ -12,7 +12,7 @@ $(document).ready(function(){
 
   var stickySideBar = function(){
     var windowWidth = $(window).width();
-    if (windowWidth > 768) {
+    if (windowWidth > 1024) {
       // fix
       Stickyfill.rebuild();
       Stickyfill.init();

@@ -35,7 +35,7 @@ layout: compress
   {% endif %}
 
   <div id="main" role="main">
-    <div class="sidebar sticky">
+    {% if page.author_profile or page.sidebar %}<div class="sidebar sticky">
       {% if page.author_profile %}{% include author-profile.html %}{% endif %}
       {% if page.sidebar %}
         {% for s in page.sidebar %}
@@ -52,8 +52,7 @@ layout: compress
           {% if s.text %}{{ s.text | markdownify }}{% endif %}
         {% endfor %}
       {% endif %}
-      {% unless page.author_profile or page.sidebar %}&nbsp;{% endunless %}
-    </div>
+    </div>{% endif %}
     {{ content }}
   </div>
 

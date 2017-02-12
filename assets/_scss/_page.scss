@@ -9,7 +9,7 @@
   margin-top: 2em;
   padding-left: 2em;
   padding-right: 2em;
-  @include breakpoint($medium) {
+  @include breakpoint($large) {
     padding-left: 1em;
     padding-right: 1em;
   }
@@ -20,13 +20,15 @@
 
 .page {
   @include breakpoint($medium) {
-    @include span(10 of 12 last);
+    padding-right: $right-sidebar-width-narrow;
   }
   @include breakpoint($large) {
+    @include span(10 of 12 last);
     padding-right: $right-sidebar-width;
   }
   @include breakpoint($x-large) {
     @include prefix(0.5 of 12);
+    padding-right: $right-sidebar-width-wide;
   }
 }
 
@@ -67,7 +69,7 @@
   z-index: 5;
   opacity: 0.5;
   border-radius: $border-radius 0 $border-radius 0;
-  @include breakpoint($medium) {
+  @include breakpoint($large) {
     padding: 5px 10px;
   }
   a {
@@ -164,7 +166,7 @@
   border-top: 1px solid $border-color;
   @include clearfix();
   float: left;
-  @include breakpoint($medium) {
+  @include breakpoint($large) {
     @include pre(2 of 12);
   }
   @include breakpoint($x-large) {

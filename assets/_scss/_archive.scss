@@ -5,10 +5,10 @@
 .archive {
   margin-bottom: 2em;
   @include breakpoint($medium) {
-    @include span(10 of 12 last);
+    @include span(12 of 12);
   }
   @include breakpoint($large) {
-    @include suffix(3 of 12);
+    @include span(10 of 12 last);
   }
   @include breakpoint($x-large) {
     @include prefix(0.5 of 12);
