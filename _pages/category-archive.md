@@ -1,0 +1,24 @@
+---
+layout: archive
+permalink: /category-archive/
+title: "Posts by Category"
+---
+
+{% include absolute-url.liquid %}
+{% capture site_categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign category_list = site_categories | split:',' | sort %}
+
+{% for item in (0..site.categories.size) %}{% unless forloop.last %}
+{% capture category_name %}{{ category_list[item] | strip_newlines }}{% endcapture %}
+  <h3>{{ category_name }}</h3>
+  {% for post in site.categories[category_name] %}{% if post.title != null %}
+  <article itemscope itemtype="http://schema.org/CreativeWork">
+  {% if post.link %}
+    <h2 class="link-post" itemprop="headline"><a href="{{ absurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h2>
+  {% else %}
+    <h2 itemprop="headline"><a href="{{ absurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+    <p itemprop="description">{{ post.excerpt | markdownify | strip_html | strip_newlines | escape_once }}</p>
+  {% endif %}
+  </article>
+  {% endif %}{% endfor %}
+{% endunless %}{% endfor %}
