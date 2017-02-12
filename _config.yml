@@ -8,16 +8,17 @@
 # Site Settings
 locale                   : en_US
 title                    : "Your awesome site"
-name                     : "Your Name"
+name                     : &name "Your Name"
 title_separator          : "-"
-description              : "Write an awesome description for your new site here."
+description              : &description "Write an awesome description for your new site here."
 url                      : "http://localhost:4000" # the base hostname & protocol for your site
 baseurl                  : "/test" # the subpath of your site, e.g. /blog
 email                    : "your-email@domain.com"
-logo                     : "default-thumb.png"
+logo                     : &avatar "default-thumb.png"
 twitter:
-  username               : site_twitter
+  username               : &twitter "site_twitter"
 facebook:
+  username               : &facebook "site_facebook"
   app_id                 :
   publisher              :
 disqus_shortname         : "mmistakes-dev" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
@@ -114,17 +115,16 @@ compress_html:
   ignore:
     envs: development
 
-# Site Owner
-owner:
-  name             : "Your Name"
-  avatar           : "bio-photo.jpg" # external URLs are also acceptable
-  bio              : "Describe your self."
-  email            :
-  bing-verify      :
+# Site Author
+author:
+  name             : *name
+  avatar           : *avatar
+  bio              : *description
+  email            : *email
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : *facebook
   foursquare       :
   github           :
   google           :
@@ -140,7 +140,7 @@ owner:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : *twitter
   weibo            :
   xing             :
   youtube          :
