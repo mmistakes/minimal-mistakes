@@ -3,6 +3,7 @@ ref: choko
 title: "Konstantinos Chorianopoulos"
 excerpt: "Software Technologies"
 rank: 3
+author: choko-en
 ---
 
 Position: "Assistant Professor"
