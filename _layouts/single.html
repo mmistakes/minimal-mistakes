@@ -25,7 +25,7 @@ layout: default
     <hr />
 
     <footer role="contentinfo">
-      {% if page.share %}{% include social-share %}{% endif %}
+      {% if site.share and page.share %}{% include social-share %}{% endif %}
       {% if page.date %}
         <p class="byline"><strong>{{ page.title }}</strong> was published on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} and last modified on <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %}.</p>
       {% endif %}
