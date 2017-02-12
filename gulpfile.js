@@ -7,15 +7,15 @@
 * Packages used
 *
 **/
-var gulp         = require('gulp');
-var sass         = require('gulp-sass');
-var prefix       = require('gulp-autoprefixer');
-var plumber      = require('gulp-plumber');
-var uglify       = require('gulp-uglifyjs');
-var jshint       = require('gulp-jshint');
-var rename       = require('gulp-rename');
-var imagemin     = require('gulp-imagemin');
-var pngquant     = require('imagemin-pngquant');
+var gulp            = require('gulp');
+var sass            = require('gulp-sass');
+var prefix          = require('gulp-autoprefixer');
+var plumber         = require('gulp-plumber');
+var uglify          = require('gulp-uglifyjs');
+var jshint          = require('gulp-jshint');
+var rename          = require('gulp-rename');
+var imagemin        = require('gulp-imagemin');
+var imageminMozjpeg = require('imagemin-mozjpeg');
 
 /**
 *
@@ -74,9 +74,11 @@ gulp.task('jslint', function() {
 gulp.task('images', function () {
   return gulp.src('images/*')
     .pipe(imagemin({
+      optimizationLevel: 7,
       progressive: true,
-      svgoPlugins: [{removeViewBox: false}],
-      use: [pngquant()]
+      interlaced: true,
+      svgoPlugins: [{removeViewBox: true}],
+      use: [imageminMozjpeg()]
     }))
     .pipe(gulp.dest('images'));
 });
