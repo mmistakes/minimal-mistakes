@@ -28,7 +28,7 @@ git clone $REPO out
 # Now let's go have some fun with the cloned repo
 cd out
 git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
-#cd ..
+cd ..
 
 # Clean out existing contents
 rm -rf out/**/* || exit
