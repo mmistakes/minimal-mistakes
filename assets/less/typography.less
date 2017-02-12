@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: @heading-font;
 }
 h1 {
-	.font-rem(32);
+	.font-size(32);
 }
 
 // Links
@@ -95,6 +95,17 @@ blockquote {
 .entry-content .footnotes {
 	ol, li, p {
 		.font-size(14);
+	}
+}
+
+// Paragraphs
+// --------------------------------------------------
+p {
+	margin: 0 0 @indent-var;
+	& + p {
+		//siblings indentation
+		text-indent: @indent-var;
+		margin-top: -(@indent-var);
 	}
 }
 
