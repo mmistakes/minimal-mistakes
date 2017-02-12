@@ -6,12 +6,34 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site Settings
-locale           : en_US
-title            : "Your awesome site"
-description      : "Write an awesome description for your new site here."
-url              : "http://localhost:4000" # the base hostname & protocol for your site
-baseurl          : "/test" # the subpath of your site, e.g. /blog
-email            : "your-email@domain.com"
+locale                   : en_US
+title                    : "Your awesome site"
+name                     : "Your Name"
+title_separator          : "-"
+description              : "Write an awesome description for your new site here."
+url                      : "http://localhost:4000" # the base hostname & protocol for your site
+baseurl                  : "/test" # the subpath of your site, e.g. /blog
+email                    : "your-email@domain.com"
+logo                     : "images/default-thumb.png"
+google_site_verification :
+twitter:
+  username               : site_twitter
+facebook:
+  app_id                 : 1234
+  publisher              : 1234
+google_site_verification :
+bing_site_verification   :
+alexa_site_verification  :
+yandex_site_verification :
+
+# For specifying social profiles. 
+# https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type                   : # person or organization (defaults to person)
+  name                   : # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles
+    - "https://twitter.com/site_twitter"
+    - "https://facebook.com/site_facebook"
 
 # Reading Files
 safe: false
@@ -98,7 +120,6 @@ owner:
   google           :
     plus           :
     analytics      :
-    verify         :
     ad-client      :
     ad-slot        :
   instagram        :
