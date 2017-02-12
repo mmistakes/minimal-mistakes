@@ -95,7 +95,7 @@ There are two main content layouts: `post.html` (for posts) and `page.html` (for
 
 #### Feature Images
 
-A good rule of thumb is to keep feature images nice and wide so you don't push the body text too far down. An image cropped around around 1024 x 512 pixels will keep file size down with an acceptable resolution for most devices. On my personal site I use [Picturefill](https://github.com/scottjehl/picturefill) to serve the same image responsively in four different flavors (small, medium, large, and extra large). In the interest of keeping things simple with this theme I left that script out, but you can certainly [add it back in](https://github.com/mmistakes/made-mistakes#articles-and-pages) or give [Adaptive Images](http://adaptive-images.com/) a try.
+A good rule of thumb is to keep feature images nice and wide so you don't push the body text too far down. An image cropped around around 1024 x 256 pixels will keep file size down with an acceptable resolution for most devices. If you want to serve these images responsively I'd suggest looking at [Picturefill](https://github.com/scottjehl/picturefill) or [Adaptive Images](http://adaptive-images.com/).
 
 The two layouts make the assumption that the feature images live in the *images* folder. To add a feature image to a post or page just include the filename in the front matter like so. 
 
@@ -150,6 +150,32 @@ Not sure if this only effects Kramdown or if it's an issue with Markdown in gene
 #### Twitter Cards
 
 Twitter cards make it possible to attach images and post summaries to Tweets that link to your content. Summary Card meta tags have been added to `head.html` to support this, you just need to [validate and apply your domain](https://dev.twitter.com/docs/cards) to turn it on.
+
+## Further Customization
+
+To make things easier I use LESS to build Minimal Mistakes' stylesheets. If you want to make some minor cosmetic alterations, take a look at `variables.less` in `assets/less/`. Changing some of the following variables can help make the theme your own. Just compile `main.less` and `ie.less` using your preprocessor of choice and off you go -- I like [CodeKit](http://incident57.com/codekit/) and [Prepros](http://alphapixels.com/prepros/).
+
+``` css
+// TYPOGRAPHY ================================================
+@basefont: 'PT Serif', serif;
+@baseheadingfont: 'PT Sans Narrow', sans-serif;
+@codefont: Monaco, Courier New, monospace;
+
+// COLOR ====================================================
+@bodycolor      : #ebebeb;
+@textcolor      : #333332;
+@basecolor      : #343434;    
+@compcolor      : spin(@basecolor, 180); 
+@bordercolor    : @basecolor;
+@white          : #fff;
+@black          : #000;
+@accentcolor    : @black;
+/* Links ================================================= */
+@linkcolor          : #343434;
+@linkcolorhover     : darken(@linkcolor, 10);
+@linkcolorvisited   : lighten(@linkcolorhover, 20);
+@linkcolorfocus     : darken(@linkcolorvisited, 10);
+```
 
 ## Questions?
 
