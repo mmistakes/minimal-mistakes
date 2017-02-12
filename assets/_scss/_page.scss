@@ -9,6 +9,7 @@
   margin-top: 2em;
   padding-left: 2em;
   padding-right: 2em;
+  z-index: 0;
   @include breakpoint($large) {
     padding-left: 1em;
     padding-right: 1em;
