@@ -7,6 +7,18 @@ tags:
   - Raspberry PI
 ---
 
+Le but de ce post est de mettre en place une architecture full reactive à tous les niveaux de la stack.
+Le but est de pouvoir émettre les données de mon capteur de température/humidité, de les consolider puis de les consommer
+à travers un browser.
+
+1) Le Raspberry PI 3 collecte les informations du capteurs toutes les 30 secondes
+2) La gateway envoie ses données sur MOM (RabbitMQ)
+3) Les données sont consommées par un serveur (Reactive-server) qui fait office de proxy. En effet, lorsqu'un nouveau
+message est consommée par le serveur, les données sont automatiquement forwarder sur les sockets clients qui sont actuellement
+connectés avec leur browser. Le serveur stocke également la donnée dans une base de données temporelle (InfluxDB) afin
+de consolider les données pour en faire des views.
+4) Ré
+
 ### Overview
 
 

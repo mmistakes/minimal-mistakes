@@ -39,4 +39,8 @@ jluccisano    ALL=(ALL:ALL) ALL
 
 sudo pacman -Syu
 
+Activate Rsync
+
+http://www.place4geek.com/blog/2014/09/tuto-installer-rsync-sur-son-serveur/
+
 

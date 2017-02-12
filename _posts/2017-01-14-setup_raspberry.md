@@ -10,7 +10,7 @@ tags:
 
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Retrieve Raspberry PI 3](#retrieve_raspberry_pi_3)
+- [Retrieve Raspberry PI 3](#retrieve-raspberry-pi-3)
 
 
 
@@ -56,13 +56,6 @@ Follow this [thread](https://www.raspberrypi.org/documentation/remote-access/ip-
 nmap -sn 192.168.0.0/24
 ```
 
-
-
-
-
-
-
-
 #### Linux Basic administration
 
 see this post [here](2017-02-28-setup_linux.md)
@@ -77,13 +70,6 @@ touch ssh
 ```
 
 ##### Example Write Image to SD Card from MacOS
-
- 
-
-
-
-
-
 
 #### Connect to your Raspberry PI 3
 
