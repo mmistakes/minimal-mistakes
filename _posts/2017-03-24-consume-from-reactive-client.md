@@ -1,11 +1,12 @@
 ---
 title: "Consume from reactive client"
 excerpt_separator: "<!--more-->"
+related: true
 header:
   image: /assets/images/anthony-rossbach-59486.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 categories:
-  - Home automation
+  - automation
 tags:
   - Docker
   - Gulp

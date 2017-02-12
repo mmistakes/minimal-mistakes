@@ -1,10 +1,18 @@
 ---
 title: "Interacting with DHT22 Sensor"
 excerpt_separator: "<!--more-->"
+related: true
+header:
+  image: /assets/images/jordan-ladikos-62738.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 categories:
   - Home automation
 tags:
   - Raspberry PI
+  - DHT22
+  - Electronic
+  - Python
+  - Linux
 ---
 ### Interacting with DHT22 Sensor
 

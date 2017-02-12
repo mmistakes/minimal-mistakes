@@ -1,10 +1,16 @@
 ---
 title: "Installing Python"
 excerpt_separator: "<!--more-->"
+related: true
+header:
+  image: /assets/images/jordan-ladikos-62738.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 categories:
-  - Home automation
+  - computer
 tags:
   - Raspberry PI
+  - Unix
+  - Python
 ---
 ### Installing Python on Raspberry PI 3
 

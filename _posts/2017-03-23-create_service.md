@@ -1,10 +1,15 @@
 ---
 title: "Create a service"
 excerpt_separator: "<!--more-->"
+related: true
+header:
+  image: /assets/images/jordan-ladikos-62738.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 categories:
-  - Home automation
+  - computer
 tags:
   - Raspberry PI
+  - Unix
 ---
 ### Create a service on Raspbian
 

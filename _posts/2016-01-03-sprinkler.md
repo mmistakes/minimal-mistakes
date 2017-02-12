@@ -1,5 +1,9 @@
 ---
 title: "Control your sprinkler with your Raspberry PI 3"
+header:
+  image: /assets/images/jordan-ladikos-62738.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+related: true
 categories:
   - Home Automation
 tags:

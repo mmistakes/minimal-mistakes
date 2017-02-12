@@ -2,10 +2,15 @@
 title: "Setup a Raspberry PI 3"
 excerpt_separator: "<!--more-->"
 related: true
+header:
+  image: /assets/images/jordan-ladikos-62738.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 categories:
   - Home automation
 tags:
   - Raspberry PI
+  - Linux
+  - SSH
 ---
 ### Setup a Raspberry PI 3
 
