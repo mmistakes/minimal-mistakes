@@ -2,7 +2,5 @@
 main:
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  - title: "Posts"
-    url: /categories/
-  - title: "Sitemap"
-    url: /sitemap/
+  - title: "Tutorials"
+    url: /tuto/
