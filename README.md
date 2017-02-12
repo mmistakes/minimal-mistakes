@@ -1,6 +1,6 @@
 # Minimal Mistakes
 
-Jekyll is pretty rad and figured releasing a cleaned up version of [my setup](http://mademistakes.com) as a theme to hack up and use would be cool. So here be that theme --- I call it **Minimal Mistakes**, a responsive Jekyll theme with editorial tendencies. 
+Jekyll is pretty rad and figured releasing a cleaned up version of [my setup](http://mademistakes.com) as a theme to hack up and use would be cool. So here be that theme --- I call it **[Minimal Mistakes](http://mmistakes.github.io/minimal-mistake)**, a responsive Jekyll theme with editorial tendencies. 
 
 ## Minimal Mistakes is all about:
 
@@ -19,6 +19,8 @@ General notes and suggestions for customizing Minimal Mistakes.
 1. [Install Jekyll](http://jekyllrb.com) if you haven't already.
 2. Fork the [Minimal Mistakes repo](http://github.com/mmistakes/minimal-mistakes/)
 3. Make it your own and customize, customize, customize.
+
+## [Preview the Theme](http://mmistakes.github.io/minimal-mistake)
 
 ``` bash
 minimal-mistakes/
