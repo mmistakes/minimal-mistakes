@@ -9,8 +9,6 @@
 
 - Remove duplicate include of `base_path` in category-list.html [#522](https://github.com/mmistakes/minimal-mistakes/pull/522)
 
-### Maintenance
-
 ## [3.4.6](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.6)
 
 ### Enhancements
