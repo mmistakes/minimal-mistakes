@@ -1,12 +1,14 @@
+## [3.1.5](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.5)
+
+### Maintenance
+
+- Fix `www` and `https` links in author profile include [#293](https://github.com/mmistakes/minimal-mistakes/pull/293)
+
 ## [3.1.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.4)
 
 ### Enhancements
 
 - Add overlay_filter param to hero headers [#298](https://github.com/mmistakes/minimal-mistakes/pull/298)
-
-### Maintenance
-
-- Fix `www` and `https` links in author profile include [#293](https://github.com/mmistakes/minimal-mistakes/pull/293)
 
 ## [3.1.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.3)
 
