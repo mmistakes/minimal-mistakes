@@ -219,12 +219,12 @@ header:
 
 To overlay text on top of a header image you have a few more options:
 
-| Front Matter variable | Description |
-| --------------------- | ----------- |
-| `overlay_image`       | Header image you'd like to overlay. Same rules as `header.image` from above. |
-| `excerpt`             | Auto-generated page excerpt is added to the overlay text or can be overridden. |
-| `cta_label`           | Call to action button text label (default is `more_label` in UI Text data file). |
-| `cta_url`             | Call to action button URL. |
+| Name              | Description | Default |
+| ----              | ----------- | ------- |
+| **overlay_image** | Header image you'd like to overlay. Same rules as `header.image` from above. | |
+| **excerpt**       | Auto-generated page excerpt is added to the overlay text or can be overridden. | |
+| **cta_label**     | Call to action button text label. | `more_label` in UI Text data file |
+| **cta_url**       | Call to action button URL. | |
 
 With this YAML Front Matter:
 
@@ -282,12 +282,12 @@ defaults:
 
 Blocks of content can be added by using the following under `sidebar`:
 
-| Front Matter variable | Description                                                |
-| --------------------- | -----------                                                |
-| `title`               | Title or heading.                                          |
-| `image`               | Image path placed in `/images/` folder or an external URL. |
-| `image_alt`           | Alternate description for image.                           |
-| `text`                | Markdown supported text.                                   |
+| Name          | Description                                                |
+| ----          | -----------                                                |
+| **title**     | Title or heading.                                          |
+| **image**     | Image path placed in `/images/` folder or an external URL. |
+| **image_alt** | Alternate description for image.                           |
+| **text**      | Text. Markdown is allowed.                                 |
 
 Multiple blocks can also be added by following the example below:
 
