@@ -110,7 +110,7 @@ Examples:
 {% highlight yaml %}
 url: http://mmistakes.github.io/minimal-mistakes
 url: http://localhost:4000
-url: http://mademistakes.com
+url: //cooldude.github.io
 url: 
 {% endhighlight %}
 
