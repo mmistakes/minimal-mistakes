@@ -94,10 +94,6 @@ $link-color-hover           : darken($link-color, 10);
 $link-color-visited         : lighten($link-color-hover, 20);
 $link-color-focus           : darken($link-color-visited, 10);
 
-$border-radius              : 4px;
-
-$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
-
 
 /*
    Breakpoints
@@ -136,3 +132,13 @@ $susy: (
   //   toggle: top right,
   // ),
 );
+
+
+/*
+   Other
+   ========================================================================== */
+
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
+$navicon-width              : 28px;
+$navicon-height             : 4px;
