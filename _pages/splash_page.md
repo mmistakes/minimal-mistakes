@@ -2,10 +2,12 @@
 title: "Don't remake the wheel"
 layout: splash
 permalink: /
+date: 2016-03-23T11:48:41-04:00
 header:
   overlay_color: "#000"
   overlay_filter: "0"
   overlay_image: /assets/images/caspar-rubin-224229.jpg
+  cta_url: ""
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 excerpt: ""
 intro: 
@@ -15,7 +17,7 @@ feature_row1:
     alt: "placeholder image 2"
     title: "Create reactive meteo station"
     excerpt: ''
-    url: "https://jluccisano.github.io/home%20automation/reactive_meteo_station/"
+    url: "https://jluccisano.github.io/automation/reactive_meteo_station/"
     btn_label: "Read More"
     btn_class: "btn--inverse"
 feature_row2:
@@ -23,7 +25,7 @@ feature_row2:
     alt: "placeholder image 2"
     title: "Create your own Sprinkler"
     excerpt: ''
-    url: "https://jluccisano.github.io/home%20automation/sprinkler/"
+    url: "https://jluccisano.github.io/automation/sprinkler/"
     btn_label: "Read More"
     btn_class: "btn--inverse"
 
