@@ -3,6 +3,7 @@ title: "Structure"
 permalink: /docs/structure/
 excerpt:
 sidebar:
+  title: "v3.0"
   nav: docs
 ---
 

@@ -3,6 +3,7 @@ title: "Upgrading"
 permalink: /docs/upgrading/
 excerpt:
 sidebar:
+  title: "v3.0"
   nav: docs
 ---
 
