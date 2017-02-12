@@ -1,3 +1,10 @@
+## [3.2.5](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.5)
+
+### Bug Fixes
+
+- Fix link color in hero overlay to be white.
+- Remove underlines from archive item titles.
+
 ## [3.2.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.4)
 
 ### Enhancements
