@@ -2,9 +2,6 @@
 title: "Consume from reactive client"
 excerpt_separator: "Consume from reactive client"
 related: true
-header:
-  image: /assets/images/anthony-rossbach-59486.jpg
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 categories:
   - automation
 tags:

@@ -2,9 +2,6 @@
 title: "Reactive Meteo Station"
 excerpt_separator: "Reactive Meteo Station"
 related: true
-header:
-  image: /assets/images/jordan-ladikos-62738.jpg
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 categories:
   - automation
 tags:
@@ -39,7 +36,7 @@ The objective of this tutorial is to design a full reactive architecture in orde
 
 -  [Set up a Raspberry PI 3]({{ site.url }}{{ site.baseurl }}/automation/setup_raspberry)
 -  [Interacting with DHT22 Sensor]({{ site.url }}{{ site.baseurl }}/automation/dht22_raspberry)
--  [A server or your own computer with Docker]({{ site.url }}{{ site.baseurl }}/automation/install_docker)
+-  [A server or your own computer with Docker]({{ site.url }}{{ site.baseurl }}/computer/install_docker)
 -  [Install Git](https://git-scm.com/download/linux)
 -  [Push data to rabbitMQ]({{ site.url }}{{ site.baseurl }}/automation/push-data-on-rabbitmq)
 -  [Consume data from rabbitMQ]({{ site.url }}{{ site.baseurl }}/automation/consume-data-from-rabbitmq)

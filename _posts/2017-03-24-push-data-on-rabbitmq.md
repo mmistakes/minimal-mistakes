@@ -2,9 +2,6 @@
 title: "Push temperature and humidity to RabbitMQ"
 excerpt_separator: "Push temperature and humidity to RabbitMQ"
 related: true
-header:
-  image: /assets/images/anthony-rossbach-59486.jpg
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 categories:
   - automation
 tags:

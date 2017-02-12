@@ -2,9 +2,6 @@
 title: "Installing Python"
 excerpt_separator: "Installing Python"
 related: true
-header:
-  image: /assets/images/jordan-ladikos-62738.jpg
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 categories:
   - computer
 tags:
@@ -17,7 +14,7 @@ tags:
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Install PIP](#install-pip)
-- [Create VirtualEnv](#create-virtualenv)
+- [Create VirtualEnv (optional)](#create-virtualenv)
 
 #### Prerequisites
 

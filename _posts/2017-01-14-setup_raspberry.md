@@ -2,9 +2,6 @@
 title: "Setup a Raspberry PI 3"
 excerpt_separator: "Setup a Raspberry PI 3"
 related: true
-header:
-  image: /assets/images/jordan-ladikos-62738.jpg
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 categories:
   - automation
 tags:
@@ -12,6 +9,7 @@ tags:
   - Linux
   - SSH
 ---
+
 ### Setup a Raspberry PI 3
 
 - [Prerequisites](#prerequisites)

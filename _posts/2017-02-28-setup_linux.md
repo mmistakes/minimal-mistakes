@@ -2,9 +2,6 @@
 title: "Raspbian basic administration"
 excerpt_separator: "Raspbian basic administration"
 related: true
-header:
-  image: /assets/images/jordan-ladikos-62738.jpg
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 categories:
   - automation
 tags:

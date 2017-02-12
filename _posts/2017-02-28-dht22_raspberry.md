@@ -2,9 +2,6 @@
 title: "Interacting with DHT22 Sensor"
 excerpt_separator: "Interacting with DHT22 Sensor"
 related: true
-header:
-  image: /assets/images/jordan-ladikos-62738.jpg
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 categories:
   - automation
 tags:
@@ -47,7 +44,9 @@ and maybe with better prices.
 
 #### Electronic wiring
 
-![schema_dht22](../assets/images/schema_dht22.png)
+{% capture fig_img %}
+![schema_dht22]({{ basepath }}/assets/images/schema_dht22.png)
+{% endcapture %}
 
 ### Install Adafruit
 
@@ -123,8 +122,8 @@ Temperature=23.8*C  Humidity=36.3%
 
 #### To go further
 
-[Create a reactive meteo station]({{ site.url }}{{ site.baseurl }}/automation/reactive_meteo_station)
-[Create a service]({{ site.url }}{{ site.baseurl }}/computer/create_service)
+- [Create a reactive meteo station]({{ site.url }}{{ site.baseurl }}/automation/reactive_meteo_station)
+- [Create a service]({{ site.url }}{{ site.baseurl }}/computer/create_service)
 
 
 
