@@ -27,11 +27,11 @@ var pngquant     = require('imagemin-pngquant');
 *
 **/
 gulp.task('css', function() {
-  gulp.src('_assets/css/**/*.scss')
-  .pipe(sass({outputStyle: 'compressed'}))
-  .pipe(prefix('last 2 versions', '> 5%', 'ie 9'))
-  .pipe(plumber())
-  .pipe(gulp.dest('assets/css'));
+  return gulp.src('_assets/css/**/*.scss')
+    .pipe(sass({outputStyle: 'compressed'}))
+    .pipe(prefix('last 2 versions', '> 5%', 'ie 9'))
+    .pipe(plumber())
+    .pipe(gulp.dest('assets/css'));
 });
 
 /**
@@ -43,7 +43,7 @@ gulp.task('css', function() {
 *
 **/
 gulp.task('scripts', function() {
-  gulp.src(['_assets/js/*.js', '_assets/js/plugins/*.js'])
+  return gulp.src(['_assets/js/*.js', '_assets/js/plugins/*.js'])
     .pipe(uglify())
     .pipe(rename({
       basename: "main",
@@ -73,12 +73,12 @@ gulp.task('jslint', function() {
 **/
 gulp.task('images', function () {
   return gulp.src('images/*')
-  .pipe(imagemin({
-    progressive: true,
-    svgoPlugins: [{removeViewBox: false}],
-    use: [pngquant()]
-  }))
-  .pipe(gulp.dest('images'));
+    .pipe(imagemin({
+      progressive: true,
+      svgoPlugins: [{removeViewBox: false}],
+      use: [pngquant()]
+    }))
+    .pipe(gulp.dest('images'));
 });
 
 

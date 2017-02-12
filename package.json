@@ -16,7 +16,6 @@
   },
   "homepage": "https://github.com/mmistakes/minimal-mistakes",
   "devDependencies": {
-    "browser-sync": "^2.11.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-imagemin": "^2.4.0",
