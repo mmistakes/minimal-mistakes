@@ -35,7 +35,7 @@ $type-size-3                : 1.563em;
 $type-size-4                : 1.25em;
 $type-size-5                : 1em;
 $type-size-6                : 0.8em;
-$type-size-7                : 0.7em;
+$type-size-7                : 0.75em;
 
 
 /*
@@ -48,7 +48,7 @@ $light-gray                 : mix(#fff, $gray, 70%);
 $lighter-gray               : mix(#fff, $gray, 90%);
 
 $body-color                 : #fff;
-$background-color           : #f5f5f5;
+$background-color           : #f8f8f8;
 $code-background-color      : #fff;
 $code-background-color-dark : #1b1a24;
 $text-color                 : #333332;
@@ -94,6 +94,8 @@ $link-color-visited         : lighten($link-color-hover, 20);
 $link-color-focus           : darken($link-color-visited, 10);
 
 $border-radius              : 4px;
+
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
 
 
 /*
