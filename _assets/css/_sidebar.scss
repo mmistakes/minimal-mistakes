@@ -1,0 +1,78 @@
+/* ==========================================================================
+   SIDEBAR
+   ========================================================================== */
+
+.sidebar {
+  display: none;
+  a, a:hover {
+    border-bottom: 0 solid transparent;
+  }
+  img {
+    width: 100%;
+  }
+  @include breakpoint($small) {
+    display: block;
+    @include grid(12,2);
+    @include prefix(12,0.5);
+    @include suffix(12,0.5);
+  }
+  @include breakpoint($x-large) {
+    @include grid(12,1.5);
+    @include prefix(12,2);
+  }
+}
+
+/*
+   Author profile and links
+   ========================================================================== */
+
+.author__name {
+  margin-bottom: 0;
+  font-family: $sans-serif-narrow;
+  @include breakpoint($small) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.author__bio {
+  font-size: 80%;
+  font-style: italic;
+  @include breakpoint($small) {
+    margin-bottom: 20px;
+  }
+}
+
+.author__avatar {
+  max-width: 110px;
+  border-radius: 50%;
+}
+.author__social-url {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  &:visited {
+    color: #000;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+  .fa {
+    margin-right: 5px;
+  }
+}
+
+.author__name,
+.author__avatar,
+.author__bio,
+.author__social-url {
+  @include breakpoint($small) {
+    display: block;
+    max-width: 125px;
+  }
+  @include breakpoint($large) {
+    max-width: 150px;
+  }
+}

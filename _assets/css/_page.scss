@@ -2,12 +2,9 @@
    SINGLE PAGE/POST
    ========================================================================== */
 
-/* Main content */
 #main {
-  counter-reset: captions;
   @include container;
   @include clearfix;
-  clear: both;
   margin-top: 2em;
 }
 
@@ -33,7 +30,9 @@
   }
 }
 
-.page__title {}
+.page__title {
+  font-family: $serif;
+}
 
 .page__content {
   ul, ol {
@@ -98,85 +97,39 @@
   }
 }
 
-/* Post byline */
-.byline {
-  clear: both;
-  font-size: 80%;
+/*
+   Social sharing
+   ========================================================================== */
+
+.page__share {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid $border-color;
 }
 
-/* Author profile */
-.sidebar {
-  display: none;
-  a, a:hover {
-    border-bottom: 0 solid transparent;
-  }
-  img {
-    width: 100%;
-  }
-  @include breakpoint($small) {
-    display: block;
-    @include grid(12,2);
-    @include prefix(12,0.5);
-    @include suffix(12,0.5);
-  }
-  @include breakpoint($x-large) {
-    @include grid(12,1.5);
-    @include prefix(12,2);
-  }
-}
-.author__name {
-  margin-bottom: 0;
-  @include breakpoint($small) {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-}
-.author__bio {
-  font-size: 80%;
-  font-style: italic;
-  @include breakpoint($small) {
-    margin-bottom: 20px;
-  }
-}
-.author__avatar {
-  max-width: 110px;
-  border-radius: 50%;
-}
-.author__social-url {
-  display: block;
-  margin-bottom: 5px;
+.page__share-title {
   font-size: 14px;
-  color: #000;
-  text-decoration: none;
-  &:visited {
-    color: #000;
-  }
-  &:hover {
-    text-decoration: underline;
-  }
-  .fa {
-    margin-right: 5px;
-  }
-}
-@include breakpoint($small) {
-  display: block;
-  max-width: 125px;
-}
-@include breakpoint($large) {
-  .author__name,
-  .author__avatar,
-  .author__bio,
-  .author__social-url {
-    max-width: 150px;
-  }
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
-/* Social sharing links */
-.social-share {
-  h4 {
-    font-size: 14px;
+
+/*
+   Page meta
+   ========================================================================== */
+
+.page__meta {
+  margin-top: 2em;
+  font-family: $sans-serif;
+  font-size: 14px;
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  p {
     margin-bottom: 10px;
-    text-transform: uppercase;
   }
 }
 

@@ -10,7 +10,7 @@
   	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}">
   {% endif %}
 
-  <h3 class="author-name">{{ author.name }}</h3>
+  <h3 class="author__name">{{ author.name }}</h3>
   {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   {% if author.uri %}
     <a href="{{ author.uri }}" class="author__social-url" target="_blank"><i class="fa fa-fw fa-globe"></i>Website</a>
