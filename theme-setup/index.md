@@ -132,9 +132,9 @@ To set what links appear in the top navigation edit `_data/navigation.yml`. Use 
 
 ---
 
-## Adding New Content
+## Adding New Content with Octopress
 
-Install the [Octopress](https://github.com/octopress/octopress) gem if it isn't already.
+While completely optional, I've included Octopress and some starter templates to automate the creation of new posts and pages. To take advantage of it start by installing the [Octopress](https://github.com/octopress/octopress) gem if it isn't already.
 
 {% highlight bash %}
 $ gem install octopress --pre
