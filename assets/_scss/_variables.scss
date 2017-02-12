@@ -11,10 +11,21 @@ $doc-line-height    : 26;
 $paragraph-indent   : false !default;
 $indent-var         : 0rem + ($doc-line-height / $doc-font-size);
 
-$serif              : "PT Serif", serif;
-$sans-serif         : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-$sans-serif-narrow  : "PT Sans Narrow", sans-serif;
+/* system typefaces */
+$serif              : Georgia, Times, serif;
+$sans-serif         : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 $monospace          : Monaco, Consolas, "Lucida Console", monospace;
+
+/* sans serif typefaces */
+$sans-serif-narrow  : $sans-serif;
+$helvetica          : Helvetica, "Helvetica Neue", Arial, sans-serif;
+
+/* serif typefaces */
+$georgia            : Georgia, serif;
+$times              : Times, serif;
+$bodoni             : "Bodoni MT", serif;
+$calisto            : "Calisto MT", serif;
+$garamond           : Garamond, serif;
 
 
 /*
