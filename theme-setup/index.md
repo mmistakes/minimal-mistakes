@@ -235,23 +235,21 @@ Start by modifying `authors.yml` file in the `_data` folder and add your authors
 # Authors
 
 billy_rick:
-  name: Billy Rick
-  web: http://thewhip.com
-  email: billy@rick.com
-  bio: "What do you want, jewels? I am a very extravagant man."
-  avatar: bio-photo-2.jpg
-  twitter: extravagantman
-  google:
-    plus: +BillyRick
+  name        : "Billy Rick"
+  web         : "http://thewhip.com"
+  email       : "billy@rick.com"
+  bio         : "What do you want, jewels? I am a very extravagant man."
+  avatar      : "bio-photo-2.jpg"
+  twitter     : "extravagantman"
+  google_plus : "BillyRick"
 
 cornelius_fiddlebone:
-  name: Cornelius Fiddlebone
-  email: cornelius@thewhip.com
-  bio: "I ordered what?"
-  avatar: bio-photo.jpg
-  twitter: rhymeswithsackit
-  google:
-    plus: +CorneliusFiddlebone
+  name        : "Cornelius Fiddlebone"
+  email       : "cornelius@thewhip.com"
+  bio         : "I ordered what?"
+  avatar      : "bio-photo.jpg"
+  twitter     : "rhymeswithsackit"
+  google_plus : "CorneliusFiddlebone"
 {% endhighlight %}
 
 To assign Billy Rick as an author for our post. We'd add the following YAML front matter to a post:
