@@ -1,0 +1,73 @@
+/* ==========================================================================
+   MASTHEAD
+   ========================================================================== */
+
+.masthead {
+  @include container;
+  @include clearfix;
+  padding: 2em 2em 1em;
+  font-family: $sans-serif-narrow;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @include breakpoint($large) {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  @include breakpoint($x-large) {
+    max-width: $x-large;
+  }
+
+  nav {
+    z-index: 10;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+/* Site name */
+.site-name {
+  @include breakpoint($large) {
+    @include prefix(2 of 12);
+  }
+
+  @include breakpoint($x-large) {
+    @include prefix(2.5 of 12);
+  }
+
+  font-size: 24px;
+}
+
+.masthead__menu {
+  @include breakpoint($large) {
+    @include prefix(2 of 12);
+  }
+
+  @include breakpoint($x-large) {
+    @include prefix(2.5 of 12);
+  }
+
+  margin-bottom: 1em;
+  ul {
+    margin: 0;
+    padding: 0;
+    clear: both;
+    list-style-type: none;
+  }
+}
+
+.masthead__menu-item {
+  display: block;
+  list-style-type: none;
+  font-size: 16px;
+  white-space: nowrap;
+
+  a {
+    &:hover {
+      color: $gray;
+    }
+  }
+}

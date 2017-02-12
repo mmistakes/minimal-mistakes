@@ -1,7 +1,7 @@
-<section id="table-of-contents" class="toc">
-<header><h3><i class="fa fa-{{ include.icon | default: 'book' }}"></i> {{ include.title | default: "Overview" }}</h3></header>
-<div id="drawer" markdown="1">
+<aside class="sidebar__right">
+<nav class="toc" markdown="1">
+<header><h4 class="toc__title"><i class="fa fa-{{ include.icon | default: 'book' }}"></i> {{ include.title | default: site.data.ui-text[site.locale].toc_label }}</h4></header>
 *  Auto generated table of contents
-{:toc}
-</div>
-</section>
+{:toc .toc__menu}
+</nav>
+</aside>

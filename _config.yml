@@ -15,7 +15,8 @@ url                      : "http://localhost:4000" # the base hostname & protoco
 baseurl                  : "/minimal-mistakes" # the subpath of your site, e.g. /blog
 email                    : "your-email@domain.com"
 logo                     : "site-logo.png"
-breadcrumbs              : false # true / false (default)
+teaser                   : "500x300.png"
+breadcrumbs              : true # true / false (default)
 breadcrumb_home_label    : "Home"
 breadcrumb_separator     : "/"
 twitter:
@@ -47,7 +48,7 @@ google_ad_client         :
 google_ad_slot           :
 
 # For specifying social profiles.
-# https://developers.google.com/structured-data/customize/social-profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
@@ -67,6 +68,9 @@ exclude:
   - .bundle
   - .jekyll-assets-cache
   - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
   - Capfile
   - config
   - Gemfile
@@ -110,13 +114,13 @@ kramdown:
 collections:
   recipes:
     output: true
-    permalink: /:collection/:categories/:path/
+    permalink: /:collection/:path/
   pets:
     output: true
-    permalink: /:collection/:categories/:path/
+    permalink: /:collection/:path/
   portfolio:
     output: true
-    permalink: /:collection/:categories/:path/
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -170,6 +174,14 @@ gems:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  # - jekyll-archives
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
 
 # Outputting
 permalink: /:categories/:title/
@@ -177,8 +189,36 @@ paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
+# Archives
+#  Type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  Path (examples)
+#  - Archive page should exist at path when using Liquid method or you can
+#    expect broken links (especially with breadcrumbs enabled)
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path/my-awesome-category/index.html ~> path: /
+categories:
+  type: liquid
+  path: /categories/
+tags:
+  type: liquid
+  path: /tags/
+# https://github.com/jekyll/jekyll-archives
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /:name/
+#     tag: /tags/:name/
+
 # HTML Compression
-# http://jch.penibelst.de/
+# - http://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:

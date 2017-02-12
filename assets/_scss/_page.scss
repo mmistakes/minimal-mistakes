@@ -1,0 +1,195 @@
+/* ==========================================================================
+   SINGLE PAGE/POST
+   ========================================================================== */
+
+#main {
+  @include container;
+  @include clearfix;
+  position: relative;
+  margin-top: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  z-index: 0;
+
+  @include breakpoint($large) {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  @include breakpoint($x-large) {
+    max-width: $x-large;
+  }
+}
+
+.page {
+  @include breakpoint($medium) {
+    padding-right: $right-sidebar-width-narrow;
+  }
+
+  @include breakpoint($large) {
+    @include span(10 of 12 last);
+    padding-right: $right-sidebar-width;
+  }
+
+  @include breakpoint($x-large) {
+    @include prefix(0.5 of 12);
+    padding-right: $right-sidebar-width-wide;
+  }
+}
+
+.page__title {
+  margin-top: 0;
+  font-family: $serif;
+}
+
+.page__content {
+  p, li {
+    font-size: 16px;
+  }
+}
+
+.page__hero {
+  position: relative;
+  margin-bottom: 2em;
+  @include clearfix;
+}
+
+.page__hero-image {
+  width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+}
+
+.page__hero-caption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 2px 5px;
+  color: #fff;
+  font-family: $sans-serif;
+  font-size: 10px;
+  background: #000;
+  text-align: right;
+  z-index: 5;
+  opacity: 0.5;
+  border-radius: $border-radius 0 $border-radius 0;
+
+  @include breakpoint($large) {
+    padding: 5px 10px;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+/*
+   Social sharing
+   ========================================================================== */
+
+.page__share {
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid $border-color;
+}
+
+.page__share-title {
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+
+/*
+   Page meta
+   ========================================================================== */
+
+.page__meta {
+  margin-top: 2em;
+  color: mix(#fff, $gray, 25%);
+  font-family: $sans-serif;
+  font-size: 14px;
+
+  p {
+    margin-bottom: 0.5em;
+  }
+}
+
+.page__meta-title {
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+
+/*
+   Page taxonomy
+   ========================================================================== */
+
+.page__taxonomy {
+  .sep {
+    display: none;
+  }
+}
+
+.page__taxonomy-item {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  text-decoration: none;
+  border: 1px solid $light-gray;
+  border-radius: $border-radius;
+
+  &:hover {
+    text-decoration: none;
+    border-color: $gray;
+  }
+}
+
+
+/*
+   Comments
+   ========================================================================== */
+
+.page__comments-title {
+  font-size: 14px;
+  margin-top: 2rem;
+  margin-bottom: 10px;
+  padding-top: 2rem;
+  border-top: 1px solid $border-color;
+  text-transform: uppercase;
+}
+
+
+/*
+   Related
+   ========================================================================== */
+
+.page__related {
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid $border-color;
+  @include clearfix();
+  float: left;
+
+  @include breakpoint($large) {
+    @include pre(2 of 12);
+  }
+
+  @include breakpoint($x-large) {
+    @include pre(2.5 of 12);
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.page__related-title {
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}

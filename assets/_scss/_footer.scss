@@ -1,0 +1,71 @@
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+.page__footer {
+  @include container;
+  @include clearfix;
+  margin-top: 3em;
+  padding: 0 2em 3em;
+
+  @include breakpoint($large) {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  @include breakpoint($x-large) {
+    max-width: $x-large;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.page__footer-copyright {
+  @include breakpoint($large) {
+    @include prefix(2 of 12);
+  }
+
+  @include breakpoint($x-large) {
+    @include prefix(2.5 of 12);
+  }
+
+  font-size: 14px;
+}
+
+.page__footer-follow {
+  @include breakpoint($large) {
+    @include prefix(2 of 12);
+  }
+
+  @include breakpoint($x-large) {
+    @include prefix(2.5 of 12);
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li {
+    display: inline-block;
+    font-family: $sans-serif-narrow;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  li + li:before {
+    content: "";
+    padding-right: 5px;
+  }
+
+  a {
+    font-weight: bold;
+  }
+}
