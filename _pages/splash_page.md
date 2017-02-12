@@ -11,9 +11,7 @@ header:
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 excerpt: "Share and learn more knowledges to go even further"
 intro: 
-  - excerpt: 'I\'m a Full Stack Developer with 7 years of experience. I acquired some knowlegdes in different area which allow me to better understand things to go even further. 
-              I always want to learn more, that\'s why I created this blog in order to share my knowledges.'
- 
+  - excerpt: 'I\'m a Full Stack Developer with 7 years of experience. I acquired some knowlegde in different area which allow me to better understand things to go even further. I always want to learn more, that\'s why I created this blog in order to share my knowledge.'
 feature_row1:
   - image_path: /assets/images/jordan-ladikos-62738.jpg
     alt: "placeholder image 2"
