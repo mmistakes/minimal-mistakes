@@ -44,6 +44,22 @@ If you want to use Minimal Mistakes with an existing Jekyll site follow these st
 
 ---
 
+## Running Jekyll
+
+If `jekyll build` and `jekyll serve` throw errors you may have to run Jekyll with `bundled exec` instead.
+
+> In some cases, running executables without bundle exec may work, if the executable happens to be installed in your system and does not pull in any gems that conflict with your bundle.
+>
+>However, this is unreliable and is the source of considerable pain. Even if it looks like it works, it may not work in the future or on another machine.
+
+{% highlight text %}
+bundle exec jekyll build
+
+bundle exec jekyll serve
+{% endhighlight %}
+
+---
+
 ## Scaffolding
 
 How Minimal Mistakes is organized and what the various files are. All posts, layouts, includes, stylesheets, assets, and whatever else is grouped nicely under the root folder. The compiled Jekyll site outputs to `_site/`.
