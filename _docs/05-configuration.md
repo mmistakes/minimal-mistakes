@@ -397,7 +397,7 @@ defaults:
       layout: single
 ```
 
-And of course any default value can be overridden by settings in a post, page, or collection file. All you need to do is specify the settings in the YAML Front Matter. For more examples be sure to check out the demo site's [`_config.yml`](https://github.com/mmistakes/minimal-mistakes/blob/gh-pages/_config.yml).
+And of course any default value can be overridden by settings in a post, page, or collection file. All you need to do is specify the settings in the YAML Front Matter. For more examples be sure to check out the demo site's [`_config.yml`]({{ site.gh_repo }}/blob/gh-pages/_config.yml).
 
 ## Outputting
 
@@ -461,7 +461,7 @@ tags:
 
 Which would create category and tag links in the breadcrumbs and page meta like: `/categories/#foo` and `/tags/#foo`.
 
-**Note:** for these links to resolve category and tag index pages need to exist at [`/categories/index.html`](https://github.com/mmistakes/minimal-mistakes/blob/gh-pages/_pages/category-archive.html) and [`/tags/index.html`](https://github.com/mmistakes/minimal-mistakes/blob/gh-pages/_pages/tag-archive.html). Examples with the necessary Liquid code can be taken from the demo site.
+**Note:** for these links to resolve category and tag index pages need to exist at [`/categories/index.html`]({{ site.gh_repo }}/blob/gh-pages/_pages/category-archive.html) and [`/tags/index.html`]({{ site.gh_repo }}/blob/gh-pages/_pages/tag-archive.html). Examples with the necessary Liquid code can be taken from the demo site.
 {: .notice--warning}
 
 If you have the luxury of using Jekyll Plugins then [**jekyll-archives**][jekyll-archives] will make your life much easier as category and tag pages are created for you.

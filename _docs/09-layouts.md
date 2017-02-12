@@ -57,10 +57,10 @@ Below are sample archive pages you can easily drop into your project, taking car
 * [All Posts Grouped by Year][posts-year]
 * [All Posts Grouped by Collection][posts-collection]
 
-[posts-categories]: https://github.com/mmistakes/minimal-mistakes/blob/gh-pages/_pages/category-archive.html
-[posts-tags]: https://github.com/mmistakes/minimal-mistakes/blob/gh-pages/_pages/tag-archive.html
-[posts-year]: https://github.com/mmistakes/minimal-mistakes/blob/gh-pages/_pages/year-archive.html
-[posts-collection]: https://github.com/mmistakes/minimal-mistakes/blob/gh-pages/_pages/collection-archive.html
+[posts-categories]: {{ site.gh_repo }}/blob/gh-pages/_pages/category-archive.html
+[posts-tags]: {{ site.gh_repo }}/blob/gh-pages/_pages/tag-archive.html
+[posts-year]: {{ site.gh_repo }}/blob/gh-pages/_pages/year-archive.html
+[posts-collection]: {{ site.gh_repo }}/blob/gh-pages/_pages/collection-archive.html
 
 ### Taxonomy Archive
 
@@ -70,7 +70,7 @@ If you have the luxury of using Jekyll plugins the creation of category and tag 
 
 ### Home Page
 
-Minimal Mistakes ships with an [`index.html`](https://github.com/mmistakes/minimal-mistakes/blob/master/index.html) in the root of the project for displaying the 5 most recent posts --- with pagination. It does this by assigning `layout: archive` in the YAML Front Matter and including the following Liquid in the body:
+Minimal Mistakes ships with an [`index.html`]({{ site.gh_repo }}/blob/master/index.html) in the root of the project for displaying the 5 most recent posts --- with pagination. It does this by assigning `layout: archive` in the YAML Front Matter and including the following Liquid in the body:
 
 ```html
 {% raw %}<!-- start index.html body -->

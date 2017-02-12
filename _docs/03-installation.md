@@ -24,7 +24,7 @@ There are several ways to install the theme:
 
 **3.** And for those who don't want to mess with Git, you can download the theme as a ZIP file to work with locally.
 
-[<i class="fa fa-download"></i> Download Minimal Mistakes Theme](https://github.com/mmistakes/minimal-mistakes/archive/master.zip){: .btn .btn--success}
+[<i class="fa fa-download"></i> Download Minimal Mistakes Theme]({{ site.gh_repo }}/archive/master.zip){: .btn .btn--success}
 
 **ProTip:** Be sure to [delete](https://github.com/blog/1377-create-and-delete-branches) the `gh-pages` branch if you forked Minimal Mistakes. This branch contains the documentation and demo site for the theme and you probably don't want that showing up in your repo.
 {: .notice--info}
@@ -60,7 +60,7 @@ defaults:
 
 If this is your first time using Jekyll be sure to read through the [official documentation](https://jekyllrb.com/docs/home/) to familiarize yourself. This guide assumes you've done that and have Jekyll v3 and Ruby v2 installed.
 
-To keep your sanity and better manage dependencies I strongly urge you to [install Bundler](http://bundler.io/) with `gem install bundler` and use the included [`Gemfile`](https://github.com/mmistakes/minimal-mistakes/blob/master/Gemfile). Minimal Mistake's Gemfile defaults to the `github-pages` gem to maintain a local Jekyll environment in sync with GitHub Pages.
+To keep your sanity and better manage dependencies I strongly urge you to [install Bundler](http://bundler.io/) with `gem install bundler` and use the included [`Gemfile`]({{ site.gh_repo }}/blob/master/Gemfile). Minimal Mistake's Gemfile defaults to the `github-pages` gem to maintain a local Jekyll environment in sync with GitHub Pages.
 
 If you're not planning on hosting with GitHub Pages and want to leverage features found in the latest version of Jekyll replace `gem "github-pages"` with `gem "jekyll"` in your `Gemfile` and then run:
 
