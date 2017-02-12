@@ -30,7 +30,7 @@ layout: compress
     </div>
   {% endif %}
 
-  {% if site.breadcrumbs and site.categories.type %}
+  {% if site.breadcrumbs and site.categories.type == 'jekyll-archives' %}
     {% include breadcrumbs.html %}
   {% endif %}
 
