@@ -55,7 +55,7 @@ Fairly obvious. `site.description` describes the site. Used predominantly in met
 
 The base hostname and protocol for your site. If you're hosting with GitHub Pages this will be something like `url: "http://github.io.mmistakes"`, or for self-hosting `url: "https://mademistakes.com"`.
 
-**Note:** It's important to remember that when testing locally you need to change this. Ideally you'd use [multiple config files](https://mademistakes.com/articles/using-jekyll-2016/#environments-and-configurations) to override settings, but simply commenting out the line works as well `# url: "http://mmistakes.github.io"`. Just remember to uncomment it before pushing or else you'll have broken assets and links all over the place!
+**Note:** It's important to remember that when testing locally you need to change this. Ideally you'd use [multiple config files](https://mademistakes.com/articles/using-jekyll-2016/#environments-and-configurations) with `bundle exec jekyll serve --config _config.yml,_config.dev.yml` to apply development override settings. Simply commenting out the line works as well `# url: "http://mmistakes.github.io"`. Just remember to uncomment it before pushing or else you'll have broken assets and links all over the place!
 {: .notice--warning}
 
 **ProTip:** GitHub serves pages over `http://` and `https://` so to take advantage of that go protocol-less like so `url: "//github.io.mmistakes"`.
