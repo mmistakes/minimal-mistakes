@@ -1,31 +1,14 @@
----
-permalink: /about/
-title: "About"
-excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
-layouts_gallery:
-  - url: mm-layout-splash.png
-    image_path: mm-layout-splash.png
-    alt: "splash layout example"
-  - url: mm-layout-single-meta.png
-    image_path: mm-layout-single-meta.png
-    alt: "single layout with comments and related posts"
-  - url: mm-layout-archive.png
-    image_path: mm-layout-archive.png
-    alt: "archive layout example"
-modified: 2016-04-14T10:26:26-04:00
----
-
-{% include base_path %}
+# Minimal Mistakes Jekyll Theme
 
 Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your personal site, blog, or portfolio on GitHub or self-hosting on your own server. As the name implies --- styling is purposely minimalistic to be enhanced and customized by you :smile:.
 
 The theme includes responsive layouts (`single`, `archive`, and `splash` pages) that look great on mobile and desktop browsers.
 
-{% include gallery id="layouts_gallery" caption="Examples of included layouts `splash`, `single`, and `archive`." %}
+![mm-layout-examples](https://cloud.githubusercontent.com/assets/1376749/14541626/dac474f4-0258-11e6-83f6-40e752028222.png)
 
-[Install the Theme]({{ base_path }}/docs/quick-start-guide/){: .btn .btn--success .btn--large}
+## [Installation and Setup](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/) / [Preview the Theme](https://mmistakes.github.io/minimal-mistakes/)
 
-## Notable Features
+### Notable Features
 
 - Compatible with GitHub Pages
 - Several layout options (single, archive, splash pages)
@@ -34,7 +17,7 @@ The theme includes responsive layouts (`single`, `archive`, and `splash` pages) 
 - Optional comments ([Disqus](https://disqus.com/), [Facebook](https://developers.facebook.com/docs/plugins/comments), Google+, and custom)
 - Optional analytics ([Google Analytics](https://www.google.com/analytics/) and custom)
 
-## Demo Pages
+#### Demo Pages
 
 | Name                                        | Description                                           |
 | ------------------------------------------- | ----------------------------------------------------- |
@@ -48,26 +31,26 @@ The theme includes responsive layouts (`single`, `archive`, and `splash` pages) 
 
 For even more demo pages check the [posts archive][year-archive].
 
-[header-image-post]: {{ base_path }}{% post_url 2012-03-15-layout-header-image-text-readability %}
-[gallery-post]: {{ base_path }}{% post_url 2010-09-09-post-gallery %}
-[html-tags-post]: {{ base_path }}{% post_url 2013-01-11-markup-html-tags-and-formatting %}
-[syntax-post]: {{ base_path }}{% post_url 2013-08-16-markup-syntax-highlighting %}
-[sample-collection]: {{ base_path }}/recipes/chocolate-chip-cookies/
-[categories-archive]: {{ base_path }}/categories/
-[tags-archive]: {{ base_path }}/tags/
-[year-archive]: {{ base_path }}/year-archive/
+[header-image-post]: https://mmistakes.github.io/minimal-mistakes/layout-header-image-text-readability/
+[gallery-post]: https://mmistakes.github.io/minimal-mistakes/post%20formats/post-gallery/
+[html-tags-post]: https://mmistakes.github.io/minimal-mistakes/markup/markup-html-tags-and-formatting/
+[syntax-post]: https://mmistakes.github.io/minimal-mistakes/markup-syntax-highlighting/
+[sample-collection]: https://mmistakes.github.io/minimal-mistakes/recipes/chocolate-chip-cookies/
+[categories-archive]: https://mmistakes.github.io/minimal-mistakes/categories/
+[tags-archive]: https://mmistakes.github.io/minimal-mistakes/tags/
+[year-archive]: https://mmistakes.github.io/minimal-mistakes/year-archive/
 
 ---
 
-## Credits
+### Credits
 
-### Icons + Demo Images:
+#### Icons + Demo Images:
 
 - [The Noun Project](https://thenounproject.com) -- Garrett Knoll, Arthur Shlain, and [tracy tam](https://thenounproject.com/tracytam)
 - [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
 - [Unsplash](https://unsplash.com/)
 
-### Other:
+#### Other:
 
 - [Jekyll](http://jekyllrb.com/)
 - [jQuery](http://jquery.com/)
@@ -81,4 +64,24 @@ For even more demo pages check the [posts archive][year-archive].
 
 ---
 
-Minimal Mistakes is designed, developed, and maintained by Michael Rose. Just another boring, tattooed, designer from Buffalo New York.
+The MIT License (MIT)
+
+Copyright (c) 2016 Michael Rose
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
