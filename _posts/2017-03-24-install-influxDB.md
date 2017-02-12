@@ -20,9 +20,9 @@ tags:
 
 ####  Prerequisites
 
-- [Set up a Raspberry PI 3 ]({{ site.url }}{{ site.baseurl }}/automation/setup_raspberry)
-- [Interacting with DHT22 Sensor]({{ site.url }}{{ site.baseurl }}/automation/dht22_raspberry)
-- [A server or your own computer with Docker]({{ site.url }}{{ site.baseurl }}/computer/install_docker)
+- [Set up a Raspberry PI 3 ]({{ site.url }}{{ site.baseurl }}/automation/setup-raspberry)
+- [Interacting with DHT22 Sensor]({{ site.url }}{{ site.baseurl }}/automation/dht22-raspberry)
+- [A server or your own computer with Docker]({{ site.url }}{{ site.baseurl }}/computer/install-docker)
 - [Install Git (optional)](https://git-scm.com/download/linux)
 - [Push data to rabbitMQ]({{ site.url }}{{ site.baseurl }}/automation/push-data-on-rabbitmq)
 

@@ -24,9 +24,9 @@ tags:
 
 ####  Prerequisites
 
-- [Set up a Raspberry PI 3 ]({{ site.url }}{{ site.baseurl }}/automation/setup_raspberry)
-- [Interacting with DHT22 Sensor]({{ site.url }}{{ site.baseurl }}/automation/dht22_raspberry)
-- [A server or your own computer with Docker]({{ site.url }}{{ site.baseurl }}/computer/install_docker)
+- [Set up a Raspberry PI 3 ]({{ site.url }}{{ site.baseurl }}/automation/setup-raspberry)
+- [Interacting with DHT22 Sensor]({{ site.url }}{{ site.baseurl }}/automation/dht22-raspberry)
+- [A server or your own computer with Docker]({{ site.url }}{{ site.baseurl }}/computer/install-docker)
 - [Install Git](https://git-scm.com/download/linux)
 
 
@@ -74,7 +74,7 @@ rabbitmq:
 virtualenv -p /usr/bin/python2.7 ~/env2.7/
 source ~/env2.7/bin/activate
 ```
-see more [here]({{ site.url }}{{ site.baseurl }}/computer/install_python)
+see more [here]({{ site.url }}{{ site.baseurl }}/computer/install-python#create-virtualenv)
 
 Install dependencies:
 ```
@@ -113,7 +113,7 @@ code based on "https://pika.readthedocs.io/en/0.10.0/examples/asynchronous_consu
 
 #### Start publisher as Service
 
-Follow this [tutorial]({{ site.url }}{{ site.baseurl }}/computer/create_service)
+Follow this [tutorial]({{ site.url }}{{ site.baseurl }}/computer/create-service)
 
 Edit publisher.py and change config.yml to /opt/dht22/_config.yml
 
