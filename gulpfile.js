@@ -43,7 +43,7 @@ gulp.task('css', function() {
 *
 **/
 gulp.task('scripts', function() {
-  return gulp.src(['assets/js/vendor/jquery/*.js', 'assets/js/plugins/*.js', 'assets/js/_main*.js'])
+  return gulp.src(['assets/js/vendor/jquery/*.js', 'assets/js/plugins/**/*.js', 'assets/js/_main*.js'])
     .pipe(uglify())
     .pipe(rename({
       basename: "main",
@@ -92,6 +92,6 @@ gulp.task('images', function () {
 gulp.task('default', ['css', 'jslint', 'scripts', 'images'], function () {
   gulp.watch('assets/scss/**/*.scss', ['css']);
   gulp.watch('assets/js/_*.js', ['jslint']);
-  gulp.watch('assets/js/**/*.js', ['scripts']);
+  gulp.watch(['!assets/js/**/*_.js', 'assets/js/plugins/**/*.js', 'assets/js/vendor/**/*.js'], ['scripts']);
   gulp.watch('images/*', ['images']);
 });
