@@ -9,19 +9,32 @@
 .breadcrumbs {
   @include container;
   @include clearfix;
-  margin-bottom: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 2em;
   padding-right: 2em;
   font-family: $sans-serif;
+
+  @include breakpoint($large) {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  @include breakpoint($x-large) {
+    max-width: $x-large;
+  }
 
   ol {
     padding: 0;
     list-style: none;
     font-size: 14px;
 
-    @include breakpoint($medium) {
-      @include span(10 of 12);
-      @include pre(2);
+    @include breakpoint($large) {
+      @include span(10 of 12 last);
+    }
+
+    @include breakpoint($x-large) {
+      @include prefix(0.5 of 12);
     }
   }
 
@@ -75,8 +88,14 @@
 
   a {
     display: block;
-    padding: 10px 20px;
+    margin: 0 20px;
+    padding: 10px 0;
+    color: $gray;
     text-decoration: none;
+
+    &:hover {
+      color: #000;
+    }
   }
 
   button {
@@ -99,14 +118,38 @@
 
       &:first-child {
         font-weight: bold;
+
         a {
-          padding-left: 0;
+          margin-left: 0;
         }
       }
 
       &:last-child {
         a {
-          padding-right: 0;
+          margin-right: 0;
+        }
+      }
+    }
+
+    a {
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 4px;
+        background: $light-gray;
+        width: 0;
+        transition: 0.3s;
+      }
+
+      &:hover {
+        color: #000;
+        border-bottom-color: $border-color;
+
+        &:before {
+          width: 100%;
         }
       }
     }
@@ -124,7 +167,14 @@
     box-shadow: 0 0 10px rgba(#000, 0.25);
 
     a {
+      margin: 0;
+      padding: 10px 20px;
       font-size: 0.8em;
+
+      &:hover {
+        color: #000;
+        background: $border-color;
+      }
     }
 
     &:before {
@@ -156,6 +206,7 @@
     li {
       display: block;
       border-bottom: 1px solid $border-color;
+
       &:last-child {
         border-bottom: none;
       }

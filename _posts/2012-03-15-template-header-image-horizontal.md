@@ -1,5 +1,5 @@
 ---
-title: "Template: Featured Image (Horizontal)"
+title: "Template: Header Image (Horizontal)"
 header:
   image: unsplash-image-1.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
@@ -13,8 +13,8 @@ tags:
   - template
 ---
 
-This post should display a **featured image**, if the theme supports it.
+This post should display a **header image**, if the theme supports it.
 
 Non-square images can provide some unique styling issues.
 
-This post tests a horizontal featured image.
+This post tests a horizontal header image.

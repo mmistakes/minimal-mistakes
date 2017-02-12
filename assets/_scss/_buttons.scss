@@ -10,15 +10,15 @@
   /* default button */
   display: inline-block;
   margin-bottom: 0.25em;
-  padding: 10px 20px;
+  padding: 0.5em 1em;
   color: #fff !important;
   font-family: $sans-serif;
-  font-size: 0.8rem;
+  font-size: 14px;
   font-weight: bold;
   line-height: 1.5;
   text-align: center;
   text-decoration: none;
-  background-color: #000;
+  background-color: $primary-color;
   border: 0 !important;
   border-radius: $border-radius;
   cursor: pointer;
@@ -49,12 +49,13 @@
   /* for dark backgrounds */
 
   &--inverse {
-    color: currentColor !important;
-    border: 1px solid currentColor !important; // override
+    color: $gray !important;
+    border: 1px solid $light-gray !important; // override
     background-color: #fff;
 
     &:hover {
-      background-color: mix(#000, #fff, 20%);
+      color: #fff !important;
+      border-color: $gray;
     }
   }
 
@@ -131,5 +132,29 @@
         background-color: mix(#000, $color, 20%);
       }
     }
+  }
+
+  /* extra large button */
+
+  &--x-large {
+    font-size: 24px;
+  }
+
+  /* large button */
+
+  &--large {
+    font-size: 18px;
+  }
+
+  /* small button */
+
+  &--small {
+    font-size: 12px;
+  }
+
+  /* extra small button */
+  &--x-small {
+    font-size: 10px;
+    font-weight: normal;
   }
 }

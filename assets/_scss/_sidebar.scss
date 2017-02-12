@@ -95,9 +95,8 @@
 .author__content {
   display: table-cell;
   vertical-align: top;
-  vertical-align: top;
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 25px;
   line-height: 1;
 
   @include breakpoint($large) {
@@ -123,9 +122,10 @@
 }
 
 .author__bio {
-  margin-bottom: 10px;
+  margin: 0;
 
   @include breakpoint($large) {
+    margin-top: 10px;
     margin-bottom: 20px;
   }
 }
@@ -133,20 +133,22 @@
 .author__urls-wrapper {
   position: relative;
   display: table-cell;
-  vertical-align: middle;
+  vertical-align: top;
   font-family: $sans-serif;
   z-index: 9999;
   position: relative;
   cursor: pointer;
 
+  li:last-child {
+    a {
+      margin-bottom: 0;
+    }
+  }
+
   @include breakpoint($large) {
     display: block;
   }
   .btn {
-    margin: 0;
-    padding: 5px 10px;
-    color: mix(#fff, $gray, 25%);
-
     @include breakpoint($large) {
       display: none;
     }
@@ -214,6 +216,8 @@
     display: block;
     margin-bottom: 5px;
     padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     font-size: 14px;
     text-decoration: none;
     white-space: nowrap;

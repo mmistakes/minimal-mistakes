@@ -6,17 +6,17 @@
   {% assign gallery = page.gallery %}
 {% endif %}
 
-{% capture gallery-size %}{{ gallery | size }}{% endcapture %}
+{% capture gallery_size %}{{ gallery | size }}{% endcapture %}
 
-{% if gallery-size == '2' %}
-  {% assign gallery-layout = 'half' %}
-{% elsif gallery-size >= '3' %}
-  {% assign gallery-layout = 'third' %}
+{% if gallery_size == '2' %}
+  {% assign gallery_layout = 'half' %}
+{% elsif gallery_size >= '3' %}
+  {% assign gallery_layout = 'third' %}
 {% else %}
-  {% assign gallery-layout = '' %}
+  {% assign gallery_layout = '' %}
 {% endif %}
 
-<figure class="{{ gallery-layout }} {{ include.class }}">
+<figure class="{{ gallery_layout }} {{ include.class }}">
   {% for img in gallery %}
     {% if img.url %}
       <a href=

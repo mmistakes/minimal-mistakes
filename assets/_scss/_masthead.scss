@@ -50,7 +50,6 @@
     @include prefix(2.5 of 12);
   }
 
-  margin-bottom: 1em;
   ul {
     margin: 0;
     padding: 0;
@@ -64,10 +63,4 @@
   list-style-type: none;
   font-size: 16px;
   white-space: nowrap;
-
-  a {
-    &:hover {
-      color: $gray;
-    }
-  }
 }
