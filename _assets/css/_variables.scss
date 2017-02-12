@@ -81,18 +81,21 @@ $x-large                      : 1440px;
    Grid
    ========================================================================== */
 
+$right-sidebar-width          : 300px;
+
 $susy: (
   columns: 12,
+  // column-width: 90px,
   gutters: 1/4,
   math: fluid,
   output: float,
-  gutter-position: inside,
+  gutter-position: after,
   container: $large,
   global-box-sizing: border-box,
-  // debug: (
-  //   image: show,
-  //   color: blue,
-  //   output: overlay,
-  //   toggle: top right,
-  // ),
+  debug: (
+    image: show,
+    color: blue,
+    output: overlay,
+    toggle: top right,
+  ),
 );

@@ -5,14 +5,8 @@
 .archive {
   margin-bottom: 2em;
   @include breakpoint($medium) {
-    @include span(10 last);
-  }
-}
-
-.archive__item {
-  // keep content from going to wide when toc is disabled
-  @include breakpoint($large) {
-    max-width: span(7 of 10);
+    @include span(10 of 12 last);
+    @include suffix(3 of 12);
   }
 }
 
