@@ -6,12 +6,12 @@
     {% comment %} Link for previous page {% endcomment %}
     {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
-        <li><a href="{{ base_path }}/">{{ site.data.ui-text[site.locale].pagination_previous }}</a></li>
+        <li><a href="{{ base_path }}/">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a></li>
       {% else %}
-        <li><a href="{{ base_path }}/page{{ paginator.previous_page }}/">{{ site.data.ui-text[site.locale].pagination_previous }}</a></li>
+        <li><a href="{{ base_path }}/page{{ paginator.previous_page }}/">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a></li>
       {% endif %}
     {% else %}
-      <li><a href="#" class="disabled"><span aria-hidden="true">{{ site.data.ui-text[site.locale].pagination_previous }}</span></a></li>
+      <li><a href="#" class="disabled"><span aria-hidden="true">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</span></a></li>
     {% endif %}
 
     {% comment %} First page {% endcomment %}
@@ -61,9 +61,9 @@
 
     {% comment %} Link next page {% endcomment %}
     {% if paginator.next_page %}
-      <li><a href="{{ base_path }}/page{{ paginator.next_page }}/">{{ site.data.ui-text[site.locale].pagination_next }}</a></li>
+      <li><a href="{{ base_path }}/page{{ paginator.next_page }}/">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a></li>
     {% else %}
-      <li><a href="#" class="disabled"><span aria-hidden="true">{{ site.data.ui-text[site.locale].pagination_next }}</span></a></li>
+      <li><a href="#" class="disabled"><span aria-hidden="true">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</span></a></li>
     {% endif %}
   </ul>
 </nav>
