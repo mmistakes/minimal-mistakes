@@ -8,13 +8,13 @@
         {% if nav.children != null %}
         <ul>
           {% for child in nav.children %}
-            {% assign nav_url = child.path | prepend: "/" | prepend: page.sidebar.nav | prepend: "/" | append: "/" | prepend: base_path %}
-            {% if nav_url contains page.url %}
+          {% assign nav_url = child.path | prepend: "/" | prepend: page.sidebar.nav | prepend: "/" | append: "/" %}
+            {% if nav_url == page.url %}
               {% assign active = "active" %}
             {% else %}
               {% assign active = "" %}
             {% endif %}
-            <li><a href="{{ nav_url }}" class="{{ active }}">{{ child.title }}</a></li>
+            <li><a href="{{ nav_url | prepend: base_path }}" class="{{ active }}">{{ child.title }}</a></li>
           {% endfor %}
         </ul>
         {% endif %}
