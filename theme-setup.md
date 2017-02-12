@@ -22,13 +22,23 @@ image:
 
 General notes and suggestions for customizing Minimal Mistakes.
 
-## Basic Setup
+## Basic Setup for a new Jekyll site
 
-1. [Install Jekyll](http://jekyllrb.com) if you haven't already.
-2. Fork the [Minimal Mistakes repo](http://github.com/mmistakes/minimal-mistakes/)
-3. Make it your own and customize, customize, customize.
+1. [Install Bundler](http://bundler.io) `gem install bundler` and then install [Jekyll](http://jekyllrb.com) and all dependencies `bundle install`.
+2. Fork the [Minimal Mistakes repo](http://github.com/mmistakes/minimal-mistakes/fork).
+3. Clone the repo you just forked and rename it.
+4. Edit `_config.yml` to personalize your site.
+5. Check out the sample posts in `_posts` to see examples for pulling in large feature images, assigning categories and tags, and other YAML data.
+6. Read the documentation below for further customization pointers and documentation.
 
-<a markdown="0" href="http://github.com/mmistakes/minimal-mistakes" class="btn">Minimal Mistakes on GitHub</a>
+<div markdown="0"><a href="https://github.com/mmistakes/minimal-mistakes/archive/master.zip" class="btn">Download the Theme</a></div>
+
+**Pro-tip:** Delete the `gh-pages` branch after cloning and start fresh by branching off `master`. There is a bunch of garbage in `gh-pages` used for the theme's demo site that I'm guessing you don't want on your site.
+{: .notice}
+
+---
+
+## Folder Structure
 
 {% highlight text %}
 minimal-mistakes/
@@ -97,7 +107,19 @@ links:
 
 ### Adding Posts and Pages
 
-There are two main content layouts: *post.html* (for posts) and *page.html* (for pages). Both have large **feature images** that span the full-width of the screen, and both are meant for long form articles and blog posts. 
+There are two main content layouts: *post.html* (for posts) and *page.html* (for pages). Both have large **feature images** that span the full-width of the screen, and both are meant for long form articles and blog posts.
+
+There are two rake tasks that can be used to create a new post or page with all YAML Front Matter. Using either `rake new_post` or `rake new_page` will prompt you for a title and tags to classify them. Example below:
+
+{% highlight bash %}
+rake new_post
+
+Enter a title for your post: My Awesome Post
+Enter tags to classify your post (comma separated): web development, code
+Creating new post: _posts/2014-02-10-my-awesome-post.md
+{% endhighlight %}
+
+There are a few configuration variables that can be changed in `Rakefile.rb`. By default posts and pages will be created in MarkDown using the `.md` extension.
 
 #### Feature Images
 
