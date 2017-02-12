@@ -4,13 +4,14 @@ title: "Recipes"
 permalink: /recipes/
 author_profile: false
 ---
-{% include absolute-url.liquid %}
-{% include group-by-array.html collection=site.recipes field='categories' %}
+
+{% include base_path %}
+{% include group-by-array collection=site.recipes field='categories' %}
 
 {% for category in group_names %}
   {% assign posts = group_items[forloop.index0] %}
   <h3>{{ category }}</h3>
   {% for post in posts %}
-    {% include archive-list-single.html %}
+    {% include archive-list-single %}
   {% endfor %}
 {% endfor %}

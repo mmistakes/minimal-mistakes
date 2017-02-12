@@ -12,6 +12,7 @@ tags:
   - comments
   - template
 ---
+
 This post has comments, social sharing links, and related posts disabled.
 
 Comments, social sharing and related post links should not appear.

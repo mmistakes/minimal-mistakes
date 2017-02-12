@@ -8,4 +8,5 @@ tags:
   - related posts
   - template
 ---
+
 This post has related posts enabled.

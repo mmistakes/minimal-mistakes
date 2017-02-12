@@ -15,7 +15,7 @@ url                      : "http://localhost:4000" # the base hostname & protoco
 baseurl                  : "/minimal-mistakes" # the subpath of your site, e.g. /blog
 email                    : "your-email@domain.com"
 logo                     : "site-logo.png"
-breadcrumbs              : # true / false (default)
+breadcrumbs              : false # true / false (default)
 breadcrumb_home_label    : "Home"
 breadcrumb_separator     : "/"
 twitter:
@@ -24,12 +24,25 @@ facebook:
   username               : &facebook "site_facebook"
   app_id                 :
   publisher              :
-disqus_shortname         : "mmistakes-dev" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+share                    : true # false (default), true
+comments:
+  provider               : false # false (default), "disqus", "facebook", "google-plus", custom"
+  disqus:
+    shortname            : "mmistakes-dev" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid                :
+    num_posts            : # 5 (default)
+    width                : # 580 (default)
+    colorscheme          : # "light" (default), "dark"
 google_site_verification :
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
-google_analytics         : # Universal Analytics tracking ID
+analytics:
+  provider               : false # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          : "UA-123456-7"
 google_ad_client         :
 google_ad_slot           :
 
@@ -118,32 +131,37 @@ defaults:
       related: true
   # _pages
   - scope:
-      path: _pages
+      path: ""
       type: pages
     values:
       layout: single
       author_profile: true
   # _recipes
   - scope:
-      path: _recipes
+      path: ""
       type: recipes
     values:
       layout: single
       author_profile: true
+      share: true
+      comments: true
   # _pets
   - scope:
-      path: _pets
+      path: ""
       type: pets
     values:
       layout: single
       author_profile: true
+      share: true
+      comment: true
   # _portfolio
   - scope:
-      path: _portfolio
+      path: ""
       type: portfolio
     values:
       layout: single
       author_profile: true
+      share: true
 
 # Plugins
 gems:

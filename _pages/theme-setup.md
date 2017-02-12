@@ -6,7 +6,8 @@ excerpt: "Instructions on how to install and customize the Jekyll theme Minimal 
 share: true
 comments: true
 ---
-{% include toc.html %}
+
+{% include toc %}
 
 ## Installation
 
@@ -57,13 +58,13 @@ How Minimal Mistakes is organized and what the various files are. All posts, lay
 minimal-mistakes/
 ├── _includes/
 |    ├── author-bio.html        # bio stuff layout. pulls optional owner data from _config.yml
-|    ├── browser-upgrade.html   # prompt to install a modern browser for < IE9
-|    ├── disqus-comments.html   # Disqus comments script
-|    ├── footer.html            # site footer
-|    ├── head.html              # site head
-|    ├── navigation.html        # site top navigation
+|    ├── browser-upgrade   # prompt to install a modern browser for < IE9
+|    ├── disqus-comments   # Disqus comments script
+|    ├── footer            # site footer
+|    ├── head              # site head
+|    ├── navigation        # site top navigation
 |    ├── open-graph.html        # Twitter Cards and Open Graph meta data
-|    └── scripts.html           # site scripts
+|    └── scripts           # site scripts
 ├── _layouts/
 |    ├── home.html               # homepage layout
 |    ├── page.html               # page layout
@@ -295,7 +296,7 @@ Not sure if this only effects Kramdown or if it's an issue with Markdown in gene
 
 ### Social Sharing Links
 
-Social sharing links for Twitter, Facebook, and Google+ are included on posts/pages by default. To hide them on specific posts or pages add `share: false` to the YAML Front Matter. If you'd like to use different social networks modify `_includes/social-share.html` to your liking. Icons are set using [Font Awesome](http://fontawesome.io).
+Social sharing links for Twitter, Facebook, and Google+ are included on posts/pages by default. To hide them on specific posts or pages add `share: false` to the YAML Front Matter. If you'd like to use different social networks modify `_includes/social-share` to your liking. Icons are set using [Font Awesome](http://fontawesome.io).
 
 ---
 

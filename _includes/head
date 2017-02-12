@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+
+{% include seo %}
+
+<link href="{{ base_path }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+	<script src="{{ base_path }}/assets/js/vendor/html5shiv.min.js"></script>
+	<script src="{{ base_path }}/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="{{ base_path }}/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<link href="//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic" rel="stylesheet" type="text/css">
+
+<!-- Icons -->
+<link rel="shortcut icon" href="{{ base_path }}/favicon.ico">
+<link rel="shortcut icon" href="{{ base_path }}/favicon.png">

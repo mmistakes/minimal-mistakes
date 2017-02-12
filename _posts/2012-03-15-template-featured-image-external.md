@@ -11,6 +11,7 @@ tags:
   - image
   - template
 ---
+
 This post should display a **featured image**, if the theme supports it.
 
 Featured image is an external asset and should load.
