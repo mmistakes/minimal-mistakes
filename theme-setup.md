@@ -60,7 +60,35 @@ minimal-mistakes/
 
 ### _config.yml
 
-Variables you want to update are: site name, description, url[^1], owner info, and your Google Anayltics tracking id and webmaster tool verifications. Most of these variables are used in the .html files found in *_includes* if you need to add or remove anything.
+Most of the variables found here are used in the .html files found in `_includes` if you need to add or remove anything. A good place to start would be to change the title, tagline, description, and url of your site. When working locally comment out `url` or else you will get a bunch of broken links because they are absolute and prefixed with `{{ site.url }}` in the various `_includes` and `_layouts`. Just remember to uncomment `url` when building for deployment or pushing to **gh-pages**...
+
+#### Owner/Author Information
+
+Change your name, bio, and avatar photo (100x100 pixels or larger), Twitter url, email, and Google+ url. If you want to link to an external image on Gravatar or something similiar you'll need to edit the path in `author-bio.html` since it assumes it is located in `\images`.
+
+Including a link to your Google+ profile has the added benefit of displaying [Google Authorship](https://plus.google.com/authorship) in Google search results if you've went ahead and applied for it. Don't have a Google+ account? Just leave it blank and/or remove `<link rel="author" href="{{ site.owner.google_plus }}">` from `head.html`.
+
+#### Google Analytics and Webmaster Tools
+
+Your Google Analytics ID goes here along with meta tags for [Google Webmaster Tools](http://support.google.com/webmasters/bin/answer.py?hl=en&answer=35179) and [Bing Webmaster Tools](https://ssl.bing.com/webmaster/configure/verify/ownershi) site verification.
+
+#### Top Navigation Links
+
+Edit page/post titles and URLs to include in the site's navigation. For external links add `external: true`.
+
+{% highlight yaml %}
+# sample top navigation links
+links:
+  - title: About Page
+    url: /about
+  - title: Articles
+    url: /articles
+  - title: Other Page
+    url: /other-page
+  - title: External Page
+    url: http://mademistakes.com
+    external: true
+{% endhighlight %}
 
 ### Adding Posts and Pages
 
