@@ -150,6 +150,7 @@ gems:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
+  - jekyll-feed
 
 # Outputting
 permalink: /:categories/:title/
