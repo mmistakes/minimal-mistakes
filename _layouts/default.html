@@ -35,8 +35,24 @@ layout: compress
   {% endif %}
 
   <div id="main" role="main">
-    <div class="author-profile">
-      {% include author-profile.html %}
+    <div class="sidebar">
+      {% if page.author_profile %}{% include author-profile.html %}{% endif %}
+      {% if page.sidebar %}
+        {% for s in page.sidebar %}
+          {% if s.image %}
+            <img src=
+            {% if s.image contains "http" %}
+              "{{ s.image }}"
+            {% else %}
+              "{{ s.image | prepend: "/images/" | prepend: absurl }}"
+            {% endif %}
+            alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
+          {% endif %}
+          {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
+          {% if s.text %}{{ s.text | markdownify }}{% endif %}
+        {% endfor %}
+      {% endif %}
+      {% unless page.author_profile or page.sidebar %}&nbsp;{% endunless %}
     </div>
     {{ content }}
   </div><!-- /#main -->
