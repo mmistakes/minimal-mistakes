@@ -128,13 +128,48 @@ body {
 		.rounded(100px);
 	}
 }
+.author-social {
+  display: block;
+  margin-bottom: 5px;
+  .font-rem(14);
+  color: @black;
+  &:visited {
+    color: @black;
+  }
+  &:hover {
+    .scale(1.1);
+  }
+  &:active {
+    .translate(0, 2px);
+  }
+}
 .article-author-top {
 	display: none;
+	text-align: center;
 }
 .article-author-bottom {
+	margin-bottom: 1em;
 	.bio-photo {
 		float: left;
 		margin-right: 25px;
+	}
+	.author-social {
+		display: inline-block;
+		margin-right: 5px;
+	}
+}
+.article-wrap {
+	// Dotted line underlines for links
+	p > a,
+	li > a {
+		border-bottom: 1px dotted lighten(@link-color, 50);
+		&:hover {
+			border-bottom-style: solid;
+		}
+	}
+	p > a.reversefootnote, 
+	li > a.reversefootnote {
+		border-bottom-width: 0;
 	}
 }
 .toc {

@@ -534,9 +534,9 @@ blockquote {
   font-size: 24px;
   font-size: 1.5rem;
 }
-.entry-content .footnotes ol,
-.entry-content .footnotes li,
-.entry-content .footnotes p {
+.footnotes ol,
+.footnotes li,
+.footnotes p {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.8571;
@@ -709,30 +709,6 @@ svg:not(:root) {
   color: #111111;
 }
 .btn:active {
-  -webkit-transform: translate(0, 2px);
-  -moz-transform: translate(0, 2px);
-  -ms-transform: translate(0, 2px);
-  -o-transform: translate(0, 2px);
-  transform: translate(0, 2px);
-}
-.author-social {
-  display: block;
-  margin-bottom: 5px;
-  font-size: 14px;
-  font-size: 0.875rem;
-  color: #111111;
-}
-.author-social:visited {
-  color: #111111;
-}
-.author-social:hover {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
-}
-.author-social:active {
   -webkit-transform: translate(0, 2px);
   -moz-transform: translate(0, 2px);
   -ms-transform: translate(0, 2px);
@@ -1194,12 +1170,56 @@ body {
   -moz-border-radius: 100px;
   border-radius: 100px;
 }
+.author-social {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #111111;
+}
+.author-social:visited {
+  color: #111111;
+}
+.author-social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.author-social:active {
+  -webkit-transform: translate(0, 2px);
+  -moz-transform: translate(0, 2px);
+  -ms-transform: translate(0, 2px);
+  -o-transform: translate(0, 2px);
+  transform: translate(0, 2px);
+}
 .article-author-top {
   display: none;
+  text-align: center;
+}
+.article-author-bottom {
+  margin-bottom: 1em;
 }
 .article-author-bottom .bio-photo {
   float: left;
   margin-right: 25px;
+}
+.article-author-bottom .author-social {
+  display: inline-block;
+  margin-right: 5px;
+}
+.article-wrap p > a,
+.article-wrap li > a {
+  border-bottom: 1px dotted #b3b3b3;
+}
+.article-wrap p > a:hover,
+.article-wrap li > a:hover {
+  border-bottom-style: solid;
+}
+.article-wrap p > a.reversefootnote,
+.article-wrap li > a.reversefootnote {
+  border-bottom-width: 0;
 }
 .toc {
   display: none;
