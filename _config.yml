@@ -20,29 +20,19 @@ bing_verify:        D81F4C18A6CB3018F64D7C827D953DFD
 
 timezone:    America/New_York
 future:      true
-pygments:    true
+pygments:    false
 markdown:    kramdown
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title
 
-maruku:
-  use_tex:    false
-  use_divs:   false
-  png_engine: blahtex
-  png_dir:    images/latex
-  png_url:    /images/latex
-
-rdiscount:
-  extensions: [smart]
-
 kramdown:
-  auto_ids: true,
+  auto_ids: true
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
   use_coderay: true
-  
+
   coderay:
     coderay_line_numbers: 
     coderay_line_numbers_start: 1
