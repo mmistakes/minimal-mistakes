@@ -28,7 +28,7 @@ feature_row2:
     url: "https://jluccisano.github.io/automation/sprinkler/"
     btn_label: "Read More"
     btn_class: "btn--inverse"
-
+---
 {% include feature_row id="intro" type="center" %}
 
 {% include feature_row id="feature_row1" type="left" %}
