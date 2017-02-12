@@ -1,7 +1,6 @@
 ---
 ref: home
 layout: splash
-permalink: /gr/home
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/splash1.jpg
