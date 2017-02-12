@@ -55,14 +55,14 @@ Examples of the synchronous movement include: RPC, CORBA, SOA, microservices...
 The asynchronous genre includes: message queues, event driven architecture, event sourcing, distributed queues, web
 sockets...
 
-In persistence we've had flat files, hierarchical databases, relational databases, nosql (many of which behave like flat
-files e.g. Kafka or like directed acyclic graphs - hierarchical db's & graph db's or like hash maps - like key-value
+In persistence we've had flat files, hierarchical databases, relational databases, NoSQL (many of which behave like flat
+files e.g. Kafka or like Directed Acyclic Graphs - hierarchical db's & graph db's or like hash maps - like key-value
 stores).
 
 So architectural approaches come in cycles and we are currently flipping back and forth from a predominantly
 synchronous microservices style to a predominantly asynchronous event sourcing style.
 
-So why are we constantly reinventing architecture?
+### So why are we constantly reinventing architecture? ###
 
 Because we are constantly reacting to changes in the way businesses work and the technical environments we are dealing
 with are changing.
@@ -83,7 +83,7 @@ need to react to change.
 
 We should optimise for change above all else.
 
-Why? Because it's the only constant.
+**Why**? Because it's the only constant.
 
 For example, if we design for performance above all else, the design might be based on assumptions around data volumes
 increasing at a certain rate but if they then increase at a different rate we need to react.
