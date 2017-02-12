@@ -105,7 +105,7 @@ fr: &DEFAULT_FR
   menu_label                 :
   toc_label                  : "Sur cette page"
   ext_link_label             : "Lien direct"
-  less_than                  : "plus petit que"
+  less_than                  : "moins de"
   minute_read                : "minute de lecture"
   share_on_label             : "Partager sur"
   meta_label                 :
@@ -115,8 +115,8 @@ fr: &DEFAULT_FR
   comments_label             : "Laisser un commentaire"
   comments_title             :
   more_label                 : "Lire plus"
-  related_label              : "Vous pourriez aimer"
-  follow_label               : "Suivez moi"
+  related_label              : "Vous pourriez aimer aussi"
+  follow_label               : "Contact"
   feed_label                 : "Flux"
   powered_by                 : "Propulsé par"
   website_label              : "Site"
@@ -132,7 +132,7 @@ fr: &DEFAULT_FR
   comment_form_website_label : "Site web (optionnel)"
   comment_btn_submit         : "Envoyer"
   comment_btn_submitted      : "Envoyé"
-  comment_success_msg        : "Merci pour votre comentaire, il sera visible sur le site une fois approuvé."
+  comment_success_msg        : "Merci pour votre commentaire, il sera visible sur le site une fois approuvé."
   comment_error_msg          : "Désolé, une erreur est survenue lors de la soumission. Vérifiez que les champs obligatoires ont été remplis et réessayez."
   loading_label              : "Chargement..."
 fr-FR:
