@@ -2,7 +2,7 @@
 <title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
 <meta name="description" content="{{ page.description }}">
 <meta name="keywords" content="{{ page.tags | join: ', ' }}">
-<!-- Twitter Card and Open Graph meta -->
+{% if site.owner.twitter %}<!-- Twitter Card and Open Graph meta -->
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}">
 <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}">
 <meta name="twitter:creator" content="@{{ site.owner.twitter }}">
@@ -11,7 +11,7 @@
 {% if page.image %}<meta name="twitter:image:src" content="{{ site.url }}/images/{{ page.image.feature }}">{% endif %}
 {% else %}
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image:src" content="{% if page.image.thumb %}{{ site.url }}/images/{{ page.image.thumb }}{% else %}{{ site.url }}/images/default-thumb.png{% endif %}">
+<meta name="twitter:image:src" content="{% if page.image.thumb %}{{ site.url }}/images/{{ page.image.thumb }}{% else %}{{ site.url }}/images/default-thumb.png{% endif %}">{% endif %}
 <meta property="og:type" content="article">
 <meta property="og:image" content="{% if page.image.thumb %}{{ site.url }}/images/{{ page.image.thumb }}{% else %}{{ site.url }}/images/default-thumb.png{% endif %}">
 {% endif %}
@@ -21,14 +21,14 @@
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta property="og:site_name" content="{{ site.title }}">
 
-<!-- Webmaster Tools verfication -->
-<meta name="google-site-verification" content="{{ site.google_verify }}">
-<meta name="msvalidate.01" content="{{ site.bing_verify }}">
+{% if site.google_verify %}<!-- Webmaster Tools verfication -->
+<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
+{% if site.bing_verify %}<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
 
 {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
 <link rel="canonical" href="{{ canonical }}">
 <link href="{{ site.url }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
-<link rel="author" href="{{ site.owner.google_plus }}?rel=author">
+{% if site.owner.google_plus %}<link rel="author" href="{{ site.owner.google_plus }}?rel=author">{% endif %}
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
