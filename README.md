@@ -103,3 +103,10 @@ Not sure if this only effects Kramdown or if it's an issue with Markdown in gene
 ``` html
 <iframe width="560" height="315" src="http://www.youtube.com/embed/PWf4WUoMXwg" frameborder="0"> </iframe>
 ```
+
+## License
+
+This is [MIT]({{ site.url }}/LICENSE) with no added caveats, so feel free to use this Jekyll theme on your site without linking back to me or using a disclaimer.
+
+If you'd like give me credit somewhere on your blog or tweet a shout out to
+[@mmistakes](https://twitter.com/mmistakes), that would be pretty sweet.
