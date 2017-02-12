@@ -28,7 +28,7 @@ General notes and suggestions for customizing Minimal Mistakes.
 minimal-mistakes/
 ├── _includes
 |    ├── author-bio.html  //bio stuff goes here
-|    ├── chrome-frame.html  //displays on IE8 and less
+|    ├── browser-upgrade.html  //displays on IE8 and less
 |    ├── footer.html  //site footer
 |    ├── head.html  //site head
 |    ├── navigation.html //site top nav
@@ -111,6 +111,15 @@ image:
 ```
 
 The large texture images used in *Minimal Mistakes* are from [Love Textures](http://lovetextures.com), probably a good idea to swap these out with your own photos...
+
+If you want to apply attribution to a feature image use the following YAML front matter on posts or pages. Image credits appear directly below the feature image with a link back to the original source.
+
+``` yaml
+image:
+  feature: feature-image-filename.jpg
+  credit: Michael Rose #name of the person or site you want to credit
+  creditlink: http://mademistakes.com #url to their site or licensing
+```
 
 #### Categories
 
