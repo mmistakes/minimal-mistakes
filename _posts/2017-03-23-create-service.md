@@ -43,6 +43,8 @@ After=multi-user.target
 Type=simple
 ExecStart=/usr/bin/python /opt/script.py
 Restart=on-abort
+Restart=always
+RestartSec=10
 
 [Install]
 WantedBy=multi-user.target
