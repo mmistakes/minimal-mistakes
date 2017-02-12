@@ -92,7 +92,7 @@ gulp.task('images', function () {
 *
 **/
 gulp.task('default', ['css', 'jslint', 'scripts'], function () {
-  gulp.watch('assets/scss/**/*.scss', ['css']);
+  gulp.watch('assets/_scss/**/*.scss', ['css']);
   gulp.watch('assets/js/_*.js', ['jslint']);
   gulp.watch(['!assets/js/**/*_.js', 'assets/js/plugins/**/*.js', 'assets/js/vendor/**/*.js'], ['scripts']);
 });
