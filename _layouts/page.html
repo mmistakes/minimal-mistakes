@@ -7,7 +7,7 @@
 {% include head.html %}
 </head>
 
-<body class="page">
+<body class="page" itemscope itemtype="http://schema.org/WebPage">
 
 {% include chrome-frame.html %}
 
@@ -17,15 +17,15 @@
   <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image">
 </div><!-- /.image-wrap -->{% endif %}
 
-<div id="main" role="main">
+<div id="main" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">
   <div class="article-author-top">
     {% include author-bio.html %}
   </div>
-  <article itemprop="articleBody">
+  <article itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
     <div class="headline-wrap">
-      <h1 itemprop="name headline">{{ page.title }}</h1>
+      <h1 itemprop="headline">{{ page.title }}</h1>
     </div><!--/ .headline-wrap -->
-    <div class="article-wrap">
+    <div class="article-wrap" itemprop="text">
       {{ content }}
     </div><!-- /.article-wrap -->
   </article>
