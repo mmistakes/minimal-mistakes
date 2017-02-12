@@ -129,7 +129,7 @@ tt, code, kbd, samp, pre {
 }
 
 pre {
-  overflow-x: auto; // add scrollbars to wide code blocks
+  overflow-x: auto; /* add scrollbars to wide code blocks*/
 }
 
 p > code,
@@ -147,7 +147,7 @@ td > code {
 
   &:before, &:after {
     letter-spacing: -0.2em;
-    content: "\00a0"; // non-breaking space
+    content: "\00a0"; /* non-breaking space*/
   }
 }
 
@@ -179,9 +179,12 @@ li ol {
 /* Figures and images */
 
 figure {
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+          align-items: flex-start;
   flex-wrap: wrap;
   margin: 2em 0;
 
@@ -194,6 +197,7 @@ figure {
   img {
     width: 100%;
     border-radius: $border-radius;
+    -webkit-transition: $global-transition;
     transition: $global-transition;
   }
 
@@ -240,6 +244,7 @@ figcaption {
     color: inherit;
     text-decoration: none;
     border-bottom: 1px solid $light-gray;
+    -webkit-transition: $global-transition;
     transition: $global-transition;
 
     &:hover {
@@ -305,5 +310,6 @@ nav {
    ========================================================================== */
 
 b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, tr, td, form button, input[type="submit"], .btn, .highlight, .archive__item-teaser {
+  -webkit-transition: $global-transition;
   transition: $global-transition;
 }
