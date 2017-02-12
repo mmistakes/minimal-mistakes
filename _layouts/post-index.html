@@ -39,7 +39,7 @@
       {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
       {% if year != written_year %}
         <h3>{{ year }}</h3>
-      {% capture written_year %}{{ year }}{% endcapture %}
+        {% capture written_year %}{{ year }}{% endcapture %}
       {% endif %}
       <article>
         {% if post.link %}
@@ -60,6 +60,6 @@
 </div><!-- /.footer-wrap -->
 
 {% include _scripts.html %}
-  
+
 </body>
 </html>
