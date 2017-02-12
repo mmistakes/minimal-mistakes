@@ -13,6 +13,7 @@ GEM
     colorator (0.1)
     execjs (2.2.2)
     fast-stemmer (1.0.2)
+    ffi (1.9.6)
     ffi (1.9.6-x64-mingw32)
     ffi (1.9.6-x86-mingw32)
     hitimes (1.2.2)
@@ -85,6 +86,7 @@ GEM
     yajl-ruby (1.1.0-x86-mingw32)
 
 PLATFORMS
+  ruby
   x64-mingw32
   x86-mingw32
 
