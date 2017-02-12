@@ -5,12 +5,12 @@
 div.highlighter-rouge {
   margin-bottom: 1em;
   padding: 1em;
-  border: 1px solid #ddd;
+  border: 1px solid $border-color;
   border-radius: $border-radius;
   .highlight {
     margin: 0;
     font-family: $monospace;
-    @include font-rem(12);
+    font-size: 12px;
     line-height: 1.5;
   }
 }

@@ -6,6 +6,7 @@ en: &DEFAULT_EN
   pagination_previous: "Previous"
   pagination_next: "Next"
   toc_label: "Overview"
+  ext_link_label: "Direct Link"
   share_on: "Share on"
   date_label: "Last Updated:"
   related_label: "You May Also Enjoy"

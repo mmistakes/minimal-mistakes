@@ -6,37 +6,40 @@
    Typography
    ========================================================================== */
 
-$doc-font-size: 16;
-$doc-line-height: 26;
-$paragraph-indent: true !default;
+$doc-font-size      : 16;
+$doc-line-height    : 26;
+$paragraph-indent   : true !default;
+$indent-var         : 0rem + ($doc-line-height / $doc-font-size);
 
-$serif                        : "PT Serif", serif;
-$sans-serif                   : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-$sans-serif-narrow            : "PT Sans Narrow", sans-serif;
-$monospace                    : Monaco, Consolas, "Lucida Console", monospace;
+$serif              : "PT Serif", serif;
+$sans-serif         : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+$sans-serif-narrow  : "PT Sans Narrow", sans-serif;
+$monospace          : Monaco, Consolas, "Lucida Console", monospace;
+
 
 /*
    Colors
    ========================================================================== */
 
-$bodycolor      : #fff;
-$body-color     : $bodycolor;
-$textcolor      : #333332;
-$text-color     : $textcolor;
-$border-color   : $text-color;
-$basecolor 		  : #343434;
-$compcolor 		  : spin($basecolor, 180);
-$bordercolor    : $basecolor;
-$white          : #fff;
-$black          : #111;
-$accentcolor    : $black;
+$gray               : #4c4c4c;
+$dark-gray          : #191413;
+$light-gray         : #e2e2e2;
+$lighter-gray       : #f9f9f9;
+
+$body-color         : #fff;
+$background-color   : #fff;
+$text-color         : #333332;
+$border-color       : $light-gray;
+$base-color         : #343434;
+$comp-color         : spin($base-color, 180);
+$accent-color       : #000;
 
 /* buttons */
-$primary			: $black;
-$success			: #5cb85c;
-$warning			: #dd8338;
-$danger				: #C64537;
-$info				  : #308cbc;
+$primary-color      : #000;
+$success-color      : #5cb85c;
+$warning-color      : #dd8338;
+$danger-color       : #C64537;
+$info-color         : #308cbc;
 
 /* brands */
 $facebook-color     : #3b5998;
@@ -53,13 +56,22 @@ $vimeo-color        : #1ab7ea;
 $youtube-color      : #ff3333;
 
 /* links */
-$linkcolor 		    : #343434;
-$link-color       : $linkcolor;
-$linkcolorhover 	: darken($linkcolor, 10);
-$linkcolorvisited : lighten($linkcolorhover, 20);
-$linkcolorfocus 	: darken($linkcolorvisited, 10);
+$link-color         : #343434;
+$link-color-hover   : darken($link-color, 10);
+$link-color-visited : lighten($link-color-hover, 20);
+$link-color-focus   : darken($link-color-visited, 10);
 
-$border-radius    : 4px;
+$border-radius      : 4px;
+
+
+/*
+   Grid
+   ========================================================================== */
+
+$width              : 100%;
+$def_grid           : 12; // define number of columns in the grid (eg. 12, 16...)
+$margin             : 0;
+
 
 /*
    Breakpoints
@@ -67,8 +79,8 @@ $border-radius    : 4px;
 
 @include breakpoint-set("to ems", true);
 
-$micro            : 480px;
-$small            : 600px;
-$medium           : 768px;
-$large            : 992px;
-$x-large          : 1382px;
+$micro              : 480px;
+$small              : 600px;
+$medium             : 768px;
+$large              : 992px;
+$x-large            : 1382px;
