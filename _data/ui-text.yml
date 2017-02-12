@@ -26,9 +26,9 @@ en: &DEFAULT_EN
   powered_by            : "Powered by"
   website_label         : "Website"
   email_label           : "Email"
-en_US:
+en-US:
   <<: *DEFAULT_EN
-en_UK:
+en-UK:
   <<: *DEFAULT_EN
 
 # Another locale
