@@ -3,6 +3,7 @@ title: "Template: Post with Table Of Contents"
 tags:
   - table of contents
 ---
+
 <section id="table-of-contents" class="toc">
   <header>
     <h3>Overview</h3>

@@ -8,6 +8,7 @@ tags:
   - post
   - title
 ---
+
 Putting special characters in the title should have no adverse effect on the layout or functionality.
 
 Special characters in the post title have been known to cause issues with JavaScript and XML when not properly encoded and escaped.

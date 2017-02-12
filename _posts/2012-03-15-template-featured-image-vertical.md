@@ -13,6 +13,7 @@ tags:
   - image
   - template
 ---
+
 This post should display a **featured image**, if the theme supports it.
 
 Non-square images can provide some unique styling issues.
