@@ -7,6 +7,12 @@ layout: nil
         <loc>{{ site.url }}</loc>
     </url>
     
+    {% for page in site.pages %}
+    <url>
+        <loc>{{ site.url }}{{ page.url }}</loc>
+    </url>
+    {% endfor %}
+
     {% for post in site.posts %}
     <url>
         <loc>{{ site.url }}{{ post.url }}</loc>
