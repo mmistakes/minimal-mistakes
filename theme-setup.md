@@ -138,6 +138,6 @@ To make things easier I use LESS to build Minimal Mistakes' stylesheets. If you 
 {% endhighlight %}
 
 
-[^1]: Used to generate absolute urls in *sitemap.xml*, *feed.xml*, and for canonical urls in *head.html*. Don't include a trailing `\` in your base url ie: http://mademistakes.com. When developing locally remove or comment out this line so local css, js, and images are used.
+[^1]: Used to generate absolute urls in *sitemap.xml*, *feed.xml*, and for canonical urls in *head.html*. Don't include a trailing `/` in your base url ie: http://mademistakes.com. When developing locally remove or comment out this line so local css, js, and images are used.
 
 [^2]: Feature images supplied by [Love Textures](http://www.lovetextures.com/)
