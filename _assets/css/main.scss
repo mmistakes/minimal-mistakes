@@ -13,13 +13,20 @@
 
 @import "reset";
 @import "base";
+
 @import "utilities";
 @import "buttons";
+@import "notices";
+@import "masthead";
+@import "navigation";
 @import "toc"; // table of contents
-
 @import "syntax";
+
 @import "forms";
+
 @import "page";
+@import "archive";
+
 @import "vendor/font-awesome/font-awesome";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";

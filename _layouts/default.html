@@ -16,16 +16,16 @@ layout: compress
   {% include navigation %}
 
   {% if page.header.image %}
-    <div class="image-wrap">
+    <div class="page__hero">
       <img src=
         {% if page.header.image contains "http" %}
           "{{ page.header.image }}"
         {% else %}
           "{{ page.header.image | prepend: "/images/" | prepend: base_path }}"
         {% endif %}
-        alt="{{ page.title }}">
+        alt="{{ page.title }}" class="page__hero-image">
       {% if page.header.caption %}
-        <span class="image-caption">{{ page.header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+        <span class="page__hero-caption">{{ page.header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
       {% endif %}
     </div><!-- /.image-wrap -->
   {% endif %}

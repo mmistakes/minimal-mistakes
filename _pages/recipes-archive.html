@@ -10,7 +10,7 @@ author_profile: false
 
 {% for category in group_names %}
   {% assign posts = group_items[forloop.index0] %}
-  <h2>{{ category }}</h2>
+  <h2 class="archive__subtitle">{{ category }}</h2>
   {% for post in posts %}
     {% include archive-list-single %}
   {% endfor %}

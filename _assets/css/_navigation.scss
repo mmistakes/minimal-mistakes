@@ -1,0 +1,45 @@
+/* ==========================================================================
+   NAVIGATION
+   ========================================================================== */
+
+/*
+   Breadcrumb navigation links
+   ========================================================================== */
+
+.breadcrumbs {
+  ol {
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    display: inline;
+  }
+  .current {
+    font-weight: bold;
+  }
+}
+
+
+/*
+   Post pagination navigation links
+   ========================================================================== */
+
+.pagination {
+  padding-top: 0.5em;
+  border-top: 1px solid $border-color;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  li {
+    display: inline-block;
+  }
+  li + li:before {
+    content: "";
+    padding-right: 10px;
+  }
+  .current {
+    font-weight: bold;
+  }
+}
