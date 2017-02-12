@@ -12,14 +12,14 @@ layout: default
   <div class="article-wrap">
     <header>
       {% if page.link %}
-        <h1 itemprop="headline"><a href="{{ page.link }}">{{ page.title }}</a></h1>
+        <h1 itemprop="headline"><a href="{{ page.link }}">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</a></h1>
       {% else %}
-        <h1 itemprop="headline"><a href="{{ absurl }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
+        <h1 itemprop="headline"><a href="{{ absurl }}{{ page.url }}" rel="bookmark">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</a></h1>
       {% endif %}
     </header>
 
     <section itemprop="text">
-    {{ content }}
+      {{ content }}
     </section>
 
     <hr />
