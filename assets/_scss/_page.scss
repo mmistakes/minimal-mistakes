@@ -73,6 +73,14 @@
     }
   }
 
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   dt {
     margin-top: 1em;
     font-family: $sans-serif;
