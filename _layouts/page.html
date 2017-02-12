@@ -4,14 +4,14 @@
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
-{% include head.html %}
+{% include _head.html %}
 </head>
 
 <body class="page" itemscope itemtype="http://schema.org/WebPage">
 
-{% include browser-upgrade.html %}
+{% include _browser-upgrade.html %}
 
-{% include navigation.html %}
+{% include _navigation.html %}
 
 {% if page.image.feature %}<div class="image-wrap">
   <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image" itemprop="primaryImageOfPage">
@@ -20,7 +20,7 @@
 
 <div id="main" role="main"  itemprop="mainContentOfPage">
   <div class="article-author-top">
-    {% include author-bio.html %}
+    {% include _author-bio.html %}
   </div>
   <article itemscope itemtype="http://schema.org/CreativeWork">
     <h1 itemprop="name">{{ page.title }}</h1>
@@ -32,11 +32,11 @@
 
 <div class="footer-wrap">
   <footer>
-    {% include footer.html %}
+    {% include _footer.html %}
   </footer>
 </div><!-- /.footer-wrap -->
 
-{% include scripts.html %}          
+{% include _scripts.html %}          
 
 </body>
 </html>
