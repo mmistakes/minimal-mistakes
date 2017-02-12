@@ -1,14 +1,11 @@
-{% if site.comments.provider and page.comments %}
-
+<h4 class="page__comments-title">{{ site.data.ui-text[site.locale].comments_label }}</h4>
 {% case site.comments.provider %}
 {% when "disqus" %}
-  {% include /comments-providers/disqus.html %}
+  <section id="disqus_thread"></section>
 {% when "facebook" %}
-  {% include /comments-providers/facebook.html %}
+  <section class="fb-comments" data-href="{{ base_path }}{{ page.url }}" data-mobile="true" data-num-posts="{{ site.comments.facebook.num_posts | default: 5 }}" data-width="100%" data-colorscheme="{{ site.comments.facebook.colorscheme | default: 'light' }}"></section>
 {% when "google-plus" %}
-  {% include /comments-providers/google-plus.html %}
+  <section class="g-comments" data-href="{{ base_path }}{{ page.url }}" data-first_party_property="BLOGGER" data-view_type="FILTERED_POSTMOD">Loading Google+ Comments ...</section>
 {% when "custom" %}
-  {% include /comments-providers/custom.html %}
+  <section id="comments"></section>
 {% endcase %}
-
-{% endif %}
