@@ -5,9 +5,9 @@
 	<div class="top-navigation">
 		<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 		    <ul>
-		        <li><a href="{{ site.url }}/about">About</a></li>
-		        <li><a href="{{ site.url }}/articles">Sample Posts</a></li>
-		        <li><a href="{{ site.url }}/theme-setup">Theme Setup</a></li>
+		        {% for link in site.links %}
+				<li><a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a></li>
+		        {% endfor %}
 		        <li><i class="icon-feed"></i> <a href="{{ site.url }}/feed.xml" title="Atom/RSS feed">Feed</a>
 		    </ul>
 		</nav>

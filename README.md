@@ -54,7 +54,25 @@ minimal-mistakes/
 
 ### _config.yml
 
-Variables you want to update are: site name, description, url, owner info, and your Google Anayltics tracking id and webmaster tool verifications. Most of these variables are used in the .html files found in *_includes* if you need to add or remove anything.
+Most of the variables found here are used in the .html files found in *_includes* if you need to add or remove anything. A good place to start would be to change the title, tagline, description, and url of your site. When working locally comment out `url` or else you will get a bunch of broken links because they are absolute and prefixed with `{{ site.url }}` in the various `_includes` and `_layouts`. Just remember to uncomment `url` when building for deployment or pushing to **gh-pages**...
+
+#### Owner/Author Information
+
+Change your name, bio, and avatar photo (100x100 pixels or larger), Twitter url, email, and Google+ url. If you want to link to an external image on Gravatar or something similiar you'll need to edit the path in `author-bio.html` since it assumes it is located in \images.
+
+Including a link to your Google+ profile has the added benefit of displaying [Google Authorship](https://plus.google.com/authorship) if you've went ahead and applied for it. Don't have a Google+ account? Just leave it blank and/or remove `<link rel="author" href="{{ site.owner.google_plus }}">` from `head.html`.
+
+#### Google Analytics and Webmaster Tools
+
+Your Google Analytics ID goes here along with meta tags for [Google Webmaster Tools](http://support.google.com/webmasters/bin/answer.py?hl=en&answer=35179) and [Bing Webmaster Tools](https://ssl.bing.com/webmaster/configure/verify/ownershi) site verification.
+
+#### Top Navigation Links
+
+Edit page/post titles and URLs to include in the site's navigation. If you want to add links to other sites you can hardcode them into `navigation.html`.
+
+#### Other Stuff
+
+The rest is just your average Jekyll config settings. Nothing too crazy here...
 
 ### _includes
 
@@ -75,6 +93,16 @@ image:
   feature: feature-image-filename.jpg
   thumb: thumbnail-image.jpg #keep it square 200x200 px is good
 ```
+
+The large texture images used in *Minimal Mistakes* are from [Love Textures](http://lovetextures.com), probably a good idea to swap these out with your own photos...
+
+#### Categories
+
+In the sample `_posts` folder you may have noticed `category: articles` in the front matter. I like keeping all posts grouped in the same folder. If you decide to rename or add categories you will need to modify the permalink in `articles.md` along with the filename (if renaming).
+
+For example. Say you want to group all your posts under **blog** instead of articles. In your post add `category: blog` to the front matter, rename or duplicate `articles.md` to `blog.md` and change the permalink in that file to `permalink: /blog/index.html`.
+
+If done correctly `/blog` should be a page listing all posts.
 
 #### Thumbnails for OG and Twitter Cards
 
@@ -107,6 +135,10 @@ Not sure if this only effects Kramdown or if it's an issue with Markdown in gene
 ``` html
 <iframe width="560" height="315" src="http://www.youtube.com/embed/PWf4WUoMXwg" frameborder="0"> </iframe>
 ```
+
+#### Twitter Cards
+
+Twitter cards make it possible to attach images and post summaries to Tweets that link to your content. Summary Card meta tags have been added to `head.html` to support this, you just need to [validate and apply your domain](https://dev.twitter.com/docs/cards) to turn it on.
 
 ## License
 
