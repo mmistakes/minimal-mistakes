@@ -18,6 +18,7 @@ en: &DEFAULT_EN
   categories_label      : "Categories:"
   date_label            : "Updated:"
   comments_label        : "Leave a Comment"
+  comments_title        : "Comments"
   more_label            : "Learn More"
   related_label         : "You May Also Enjoy"
   follow_label          : "Follow:"
@@ -27,6 +28,10 @@ en: &DEFAULT_EN
   email_label           : "Email"
   recent_posts          : "Recent Posts"
   undefined_wpm         : "Undefined parameter words_per_minute at _config.yml"
+  comment_success_title : "Comment submitted"
+  comment_success_msg   : "Thanks for your comment! It will show on the site once it has been approved."
+  comment_error_title   : "I Am Error"
+  comment_error_msg     : "Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again."
 en-US:
   <<: *DEFAULT_EN
 en-CA:
