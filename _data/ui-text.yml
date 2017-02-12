@@ -157,7 +157,7 @@ tr: &DEFAULT_TR
   categories_label           : "Kategoriler:"
   date_label                 : "Güncelleme tarihi:"
   comments_label             : "Yorum yapın"
-  comments_title             :
+  comments_title             : "Yorumlar"
   more_label                 : "Daha fazlasını öğrenin"
   related_label              : "Bunlar ilginizi çekebilir:"
   follow_label               : "Takip et:"
@@ -167,17 +167,17 @@ tr: &DEFAULT_TR
   email_label                : "E-posta"
   recent_posts               : "Son yazılar"
   undefined_wpm              : "_config.yml dosyasında tanımlanmamış words_per_minute parametresi"
-  comment_form_info          :
-  comment_form_comment_label :
-  comment_form_md_info       :
-  comment_form_name_label    :
-  comment_form_email_label   :
-  comment_form_website_label :
-  comment_btn_submit         :
-  comment_btn_submitted      :
-  comment_success_msg        :
-  comment_error_msg          :
-  loading_label              :
+  comment_form_info          : "Email adresiniz gösterilmeyecektir. Zorunlu alanlar işaretlenmiştir"
+  comment_form_comment_label : "Yorumunuz"
+  comment_form_md_info       : "Markdown desteklenmektedir."
+  comment_form_name_label    : "Adınız"
+  comment_form_email_label   : "Email adresiniz"
+  comment_form_website_label : "Websiteniz (opsiyonel)"
+  comment_btn_submit         : "Yorum Yap"
+  comment_btn_submitted      : "Gönderildi"
+  comment_success_msg        : "Yorumunuz için teşekkürler! Yorumunuz onaylandıktan sonra sitede gösterilecektir."
+  comment_error_msg          : "Maalesef bir hata oluştu. Lütfen zorunlu olan tüm alanları doldurduğunuzdan emin olun ve sonrasında tekrar deneyin."
+  loading_label              : "Yükleniyor..."
 tr-TR:
   <<: *DEFAULT_TR
 
