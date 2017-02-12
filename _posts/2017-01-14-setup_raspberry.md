@@ -106,7 +106,7 @@ Note: first of all change your password with command
 passwd
 ```
 
-See this post in order to perform Raspbian basic administration [here](2017-02-28-setup_linux.md)
+See this post in order to perform Raspbian basic administration [here]({{ site.url }}{{ site.baseurl }}/automation/setup_linux)
 
 
 #### Set a static IP Address
@@ -176,7 +176,7 @@ Useful links:
 
 #### To go further
 
-[Interacting with GPIO](2017-02-28-test-gpio.md)
+[Interacting with GPIO]({{ site.url }}{{ site.baseurl }}/automation/test-gpio)
 
 
 

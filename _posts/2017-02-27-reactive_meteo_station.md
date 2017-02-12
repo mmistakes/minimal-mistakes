@@ -37,12 +37,12 @@ The objective of this tutorial is to design a full reactive architecture in orde
 
 ###  Prerequisites
 
--  [Set up a Raspberry PI 3](2017-01-14-setup_raspberry.md)
--  [Interacting with DHT22 Sensor](2017-02-28-dht22_raspberry.md)
--  [A server or your own computer with Docker](2017-02-28-install_docker.md)
+-  [Set up a Raspberry PI 3]({{ site.url }}{{ site.baseurl }}/automation/setup_raspberry)
+-  [Interacting with DHT22 Sensor]({{ site.url }}{{ site.baseurl }}/automation/dht22_raspberry)
+-  [A server or your own computer with Docker]({{ site.url }}{{ site.baseurl }}/automation/install_docker)
 -  [Install Git](https://git-scm.com/download/linux)
--  [Push data to rabbitMQ](2017-03-24-push-data-on-rabbitmq.md)
--  [Consume data from rabbitMQ](2017-03-24-consume-data-from-rabbitmq.md)
+-  [Push data to rabbitMQ]({{ site.url }}{{ site.baseurl }}/automation/push-data-on-rabbitmq)
+-  [Consume data from rabbitMQ]({{ site.url }}{{ site.baseurl }}/automation/consume-data-from-rabbitmq)
 
 ### Overview
 

@@ -102,4 +102,4 @@ see more [here](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
 
 #### To go further
 
-[Generate a SSH Key](2017-03-22-generate_rsa_key.md)
+[Generate a SSH Key]({{ site.url }}{{ site.baseurl }}/computer/generate_rsa_key)

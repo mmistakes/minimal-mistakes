@@ -19,7 +19,7 @@ tags:
 
 #### Prerequisites
 
-- Set up a Raspberry PI 3 [here](2017-01-14-setup_raspberry.md)
+- [Set up a Raspberry PI 3]({{ site.url }}{{ site.baseurl }}/automation/setup_raspberry)
 
 ### Create Service
 

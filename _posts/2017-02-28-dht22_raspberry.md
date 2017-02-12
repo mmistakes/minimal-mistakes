@@ -41,8 +41,8 @@ tags:
 Note: This is an example as a guide. You can buy all components in others sites
 and maybe with better prices.
 
-- Set up a Raspberry PI 3 [here](2017-01-14-setup_raspberry.md)
-- Install Python [here](2017-03-23-install_python.md)
+- [Set up a Raspberry PI 3]({{ site.url }}{{ site.baseurl }}/automation/setup_raspberry)
+- [Install Python]({{ site.url }}{{ site.baseurl }}/computer/install_python)
 
 
 #### Electronic wiring
@@ -76,7 +76,7 @@ source ~/workspace/venv2.7/bin/activate
 pip install adafruit_python_dht
 ```
 
-See how to create a virtual environment [here](2017-03-23-install_python.md)
+See how to create a virtual environment [here]({{ site.url }}{{ site.baseurl }}/computer/install_python)
 
 ### Get Series of data
 
@@ -123,8 +123,8 @@ Temperature=23.8*C  Humidity=36.3%
 
 #### To go further
 
-[Create a reactive meteo station](2017-02-27-reactive_meteo_station.md)
-[Create a service](2017-03-23-create_service.md)
+[Create a reactive meteo station]({{ site.url }}{{ site.baseurl }}/automation/reactive_meteo_station)
+[Create a service]({{ site.url }}{{ site.baseurl }}/computer/create_service)
 
 
 

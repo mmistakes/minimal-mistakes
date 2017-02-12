@@ -27,12 +27,12 @@ tags:
 
 ###  Prerequisites
 
-- Set up a Raspberry PI 3 [here](2017-01-14-setup_raspberry.md)
-- Interacting with DHT22 Sensor [here](2017-02-28-dht22_raspberry.md)
-- A server or your own computer with Docker [here](2017-02-28-install_docker.md)
-- Git installed [here](https://git-scm.com/download/linux)
-- Push data to rabbitMQ [here](2017-03-24-push-data-on-rabbitmq.md)
-- Install InfluxDB [here](2017-03-24-install-influxdb.md)
+- [Set up a Raspberry PI 3 ]({{ site.url }}{{ site.baseurl }}/automation/setup_raspberry.md)
+- [Interacting with DHT22 Sensor]({{ site.url }}{{ site.baseurl }}/automation/dht22_raspberry.md)
+- [A server or your own computer with Docker]({{ site.url }}{{ site.baseurl }}/computer/install_docker.md)
+- [Git installed](https://git-scm.com/download/linux)
+- [Push data to rabbitMQ]({{ site.url }}{{ site.baseurl }}/automation/push-data-on-rabbitmq.md)
+- [Install InfluxDB]({{ site.url }}{{ site.baseurl }}/automation/install-influxdb.md)
 
 #### Clone the project
 
