@@ -64,14 +64,14 @@ docs:
         path: stylesheets
       - title: "JavaScript"
         path: javascript
-      - title: "Old 2.2.1 Docs"
-        path: docs-2
 
   - title: Meta
     children:
+      - title: "History"
+        path: history
       - title: "Contributing"
         path: contributing
       - title: "License"
         path: license
-      - title: "History"
-        path: history
+      - title: "Old 2.2.1 Docs"
+        path: docs-2
