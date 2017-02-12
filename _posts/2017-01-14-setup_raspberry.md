@@ -11,6 +11,9 @@ tags:
   - Raspberry PI
   - Linux
   - SSH
+  
+  https://jluccisano.github.io/automation/reactive_meteo_station/
+  https://jluccisano.github.io/automation/setup_raspberry
 ---
 ### Setup a Raspberry PI 3
 

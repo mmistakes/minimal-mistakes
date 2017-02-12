@@ -158,3 +158,5 @@ Great publisher works fine !!
 2017-03-24 13:22:48,701 [>] Published data {'expire': 38231000, 'data': {'humidity': 34.20000076293945, '@type': 'DHT22', 'temperature': 24.399999618530273}, 'created': 1490361768} # 1
 2017-03-24 13:22:48,701 Scheduling next message for 60.0 seconds
 ```
+
+3) Add service to start on Boot
