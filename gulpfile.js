@@ -74,11 +74,11 @@ gulp.task('jslint', function() {
 gulp.task('images', function () {
   return gulp.src('images/*')
     .pipe(imagemin({
-      optimizationLevel: 7,
+      // optimizationLevel: 7,
       progressive: true,
       interlaced: true,
       svgoPlugins: [{removeViewBox: true}],
-      use: [imageminMozjpeg()]
+      // use: [imageminMozjpeg()]
     }))
     .pipe(gulp.dest('images'));
 });
