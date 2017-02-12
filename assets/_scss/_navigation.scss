@@ -132,11 +132,25 @@
     }
 
     a {
-      border-bottom: 4px solid transparent;
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 4px;
+        background: $light-gray;
+        width: 0;
+        transition: 0.3s;
+      }
 
       &:hover {
         color: #000;
         border-bottom-color: $border-color;
+
+        &:before {
+          width: 100%;
+        }
       }
     }
   }
