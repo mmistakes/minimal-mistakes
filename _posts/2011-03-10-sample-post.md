@@ -79,13 +79,13 @@ HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, c
 
 ## Code Snippets
 
-~~~ css
+{% highlight css %}
 #container {
   float: left;
   margin: 0 -240px 0 0;
   width: 100%;
 }
-~~~
+{% endhighlight %}
 
 ## Buttons
 

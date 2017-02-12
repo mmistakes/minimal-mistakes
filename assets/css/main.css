@@ -879,336 +879,286 @@ blockquote p + p {
 .footnotes {
   font-size: 90%;
 }
-/* Codeway Syntax highlighting ============================= */
-.CodeRay {
+/* Pygments Syntax highlighting ============================= */
+.highlight {
   background-color: #efefef;
   font-family: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
   font-size: 80%;
   color: #333332;
   margin-bottom: 1.5em;
 }
-.CodeRay pre {
+.highlight pre {
   margin: 0px;
   padding: 1em;
 }
-span.CodeRay {
-  white-space: pre;
-  border: 0px;
-  padding: 2px;
+.hll {
+  background-color: #ffffcc;
 }
-table.CodeRay {
-  border-collapse: collapse;
-  width: 100%;
-  padding: 2px;
-}
-table.CodeRay td {
-  padding: 1em 0.5em;
-  vertical-align: top;
-}
-.CodeRay .line-numbers,
-.CodeRay .no {
-  background-color: #ECECEC;
-  color: #AAA;
-  text-align: right;
-}
-.CodeRay .line-numbers a {
-  color: #AAA;
-}
-.CodeRay .line-numbers tt {
-  font-weight: bold;
-}
-.CodeRay .line-numbers .highlighted {
-  color: #ff0000;
-}
-.CodeRay .line {
-  display: block;
-  float: left;
-  width: 100%;
-}
-.CodeRay span.line-numbers {
-  padding: 0 24px 0 4px;
-}
-.CodeRay .code {
-  width: 100%;
-}
-ol.CodeRay {
-  font-size: 10pt;
-}
-ol.CodeRay li {
-  white-space: pre;
-}
-.CodeRay .code pre {
-  overflow: auto;
-}
-.CodeRay .debug {
-  color: white ! important;
-  background: blue ! important;
-}
-.CodeRay .annotation {
-  color: #000077;
-}
-.CodeRay .attribute-name {
-  color: #ff0088;
-}
-.CodeRay .attribute-value {
-  color: #770000;
-}
-.CodeRay .binary {
-  color: #509;
-  font-weight: bold;
-}
-.CodeRay .comment {
-  color: #998;
+.c {
+  color: #999988;
   font-style: italic;
 }
-.CodeRay .char {
-  color: #0044dd;
+/* Comment */
+.err {
+  color: #a61717;
+  background-color: #e3d2d2;
 }
-.CodeRay .char .content {
-  color: #0044dd;
-}
-.CodeRay .char .delimiter {
-  color: #003399;
-}
-.CodeRay .class {
-  color: #458;
-  font-weight: bold;
-}
-.CodeRay .complex {
-  color: #A08;
-  font-weight: bold;
-}
-.CodeRay .constant {
-  color: teal;
-}
-.CodeRay .color {
-  color: #00aa00;
-}
-.CodeRay .class-variable {
-  color: #336699;
-}
-.CodeRay .decorator {
-  color: #B0B;
-}
-.CodeRay .definition {
-  color: #099;
-  font-weight: bold;
-}
-.CodeRay .directive {
-  color: #088;
-  font-weight: bold;
-}
-.CodeRay .delimiter {
+/* Error */
+.k {
   color: #000000;
-}
-.CodeRay .doc {
-  color: #997700;
-}
-.CodeRay .doctype {
-  color: #3344bb;
-}
-.CodeRay .doc-string {
-  color: #D42;
   font-weight: bold;
 }
-.CodeRay .escape {
-  color: #666;
-  font-weight: bold;
-}
-.CodeRay .entity {
-  color: #800;
-  font-weight: bold;
-}
-.CodeRay .error {
-  color: #F00;
-  background-color: #ffaaaa;
-}
-.CodeRay .exception {
-  color: #C00;
-  font-weight: bold;
-}
-.CodeRay .filename {
-  color: #099;
-}
-.CodeRay .function {
-  color: #900;
-  font-weight: bold;
-}
-.CodeRay .global-variable {
-  color: teal;
-  font-weight: bold;
-}
-.CodeRay .hex {
-  color: #058;
-  font-weight: bold;
-}
-.CodeRay .integer {
-  color: #099;
-}
-.CodeRay .include {
-  color: #B44;
-  font-weight: bold;
-}
-.CodeRay .inline {
+/* Keyword */
+.o {
   color: #000000;
-}
-.CodeRay .inline .inline {
-  background: #cccccc;
-}
-.CodeRay .inline .inline .inline {
-  background: #bbbbbb;
-}
-.CodeRay .inline .inline-delimiter {
-  color: #D14;
-}
-.CodeRay .inline-delimiter {
-  color: #D14;
-}
-.CodeRay .important {
-  color: #f00;
-}
-.CodeRay .interpreted {
-  color: #B2B;
   font-weight: bold;
 }
-.CodeRay .instance-variable {
+/* Operator */
+.cm {
+  color: #999988;
+  font-style: italic;
+}
+/* Comment.Multiline */
+.cp {
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
+}
+/* Comment.Preproc */
+.c1 {
+  color: #999988;
+  font-style: italic;
+}
+/* Comment.Single */
+.cs {
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
+}
+/* Comment.Special */
+.gd {
+  color: #000000;
+  background-color: #ffdddd;
+}
+/* Generic.Deleted */
+.ge {
+  color: #000000;
+  font-style: italic;
+}
+/* Generic.Emph */
+.gr {
+  color: #aa0000;
+}
+/* Generic.Error */
+.gh {
+  color: #999999;
+}
+/* Generic.Heading */
+.gi {
+  color: #000000;
+  background-color: #ddffdd;
+}
+/* Generic.Inserted */
+.go {
+  color: #888888;
+}
+/* Generic.Output */
+.gp {
+  color: #555555;
+}
+/* Generic.Prompt */
+.gs {
+  font-weight: bold;
+}
+/* Generic.Strong */
+.gu {
+  color: #aaaaaa;
+}
+/* Generic.Subheading */
+.gt {
+  color: #aa0000;
+}
+/* Generic.Traceback */
+.kc {
+  color: #000000;
+  font-weight: bold;
+}
+/* Keyword.Constant */
+.kd {
+  color: #000000;
+  font-weight: bold;
+}
+/* Keyword.Declaration */
+.kn {
+  color: #000000;
+  font-weight: bold;
+}
+/* Keyword.Namespace */
+.kp {
+  color: #000000;
+  font-weight: bold;
+}
+/* Keyword.Pseudo */
+.kr {
+  color: #000000;
+  font-weight: bold;
+}
+/* Keyword.Reserved */
+.kt {
+  color: #445588;
+  font-weight: bold;
+}
+/* Keyword.Type */
+.m {
+  color: #009999;
+}
+/* Literal.Number */
+.s {
+  color: #d01040;
+}
+/* Literal.String */
+.na {
   color: #008080;
 }
-.CodeRay .label {
-  color: #970;
+/* Name.Attribute */
+.nb {
+  color: #0086b3;
+}
+/* Name.Builtin */
+.nc {
+  color: #445588;
   font-weight: bold;
 }
-.CodeRay .local-variable {
-  color: #996633;
+/* Name.Class */
+.no {
+  color: #008080;
 }
-.CodeRay .octal {
-  color: #40E;
+/* Name.Constant */
+.nd {
+  color: #3c5d5d;
   font-weight: bold;
 }
-.CodeRay .predefined-constant {
+/* Name.Decorator */
+.ni {
+  color: #800080;
+}
+/* Name.Entity */
+.ne {
+  color: #990000;
   font-weight: bold;
 }
-.CodeRay .predefined {
-  color: #369;
+/* Name.Exception */
+.nf {
+  color: #990000;
   font-weight: bold;
 }
-.CodeRay .preprocessor {
-  color: #579;
-}
-.CodeRay .pseudo-class {
-  color: #00C;
+/* Name.Function */
+.nl {
+  color: #990000;
   font-weight: bold;
 }
-.CodeRay .predefined-type {
-  color: #074;
+/* Name.Label */
+.nn {
+  color: #555555;
+}
+/* Name.Namespace */
+.nt {
+  color: #000080;
+}
+/* Name.Tag */
+.nv {
+  color: #008080;
+}
+/* Name.Variable */
+.ow {
+  color: #000000;
   font-weight: bold;
 }
-.CodeRay .reserved,
-.keyword {
-  color: #000;
-  font-weight: bold;
+/* Operator.Word */
+.w {
+  color: #bbbbbb;
 }
-.CodeRay .key {
-  color: #808;
+/* Text.Whitespace */
+.mf {
+  color: #009999;
 }
-.CodeRay .key .delimiter {
-  color: #606;
+/* Literal.Number.Float */
+.mh {
+  color: #009999;
 }
-.CodeRay .key .char {
-  color: #80f;
+/* Literal.Number.Hex */
+.mi {
+  color: #009999;
 }
-.CodeRay .value {
-  color: #088;
+/* Literal.Number.Integer */
+.mo {
+  color: #009999;
 }
-.CodeRay .regexp {
-  background-color: #fff0ff;
+/* Literal.Number.Oct */
+.sb {
+  color: #d01040;
 }
-.CodeRay .regexp .content {
-  color: #880088;
+/* Literal.String.Backtick */
+.sc {
+  color: #d01040;
 }
-.CodeRay .regexp .delimiter {
-  color: #440044;
+/* Literal.String.Char */
+.sd {
+  color: #d01040;
 }
-.CodeRay .regexp .modifier {
-  color: #cc22cc;
+/* Literal.String.Doc */
+.s2 {
+  color: #d01040;
 }
-.CodeRay .regexp .function {
-  color: #404;
-  font-weight: bold;
+/* Literal.String.Double */
+.se {
+  color: #d01040;
 }
-.CodeRay .string {
-  color: #D20;
+/* Literal.String.Escape */
+.sh {
+  color: #d01040;
 }
-.CodeRay .string .string .string {
-  background-color: #ffd0d0;
+/* Literal.String.Heredoc */
+.si {
+  color: #d01040;
 }
-.CodeRay .string .content {
-  color: #D14;
+/* Literal.String.Interpol */
+.sx {
+  color: #d01040;
 }
-.CodeRay .string .char {
-  color: #D14;
+/* Literal.String.Other */
+.sr {
+  color: #009926;
 }
-.CodeRay .string .delimiter {
-  color: #D14;
+/* Literal.String.Regex */
+.s1 {
+  color: #d01040;
 }
-.CodeRay .shell {
-  color: #dd1144;
-}
-.CodeRay .shell .delimiter {
-  color: #dd1144;
-}
-.CodeRay .symbol {
+/* Literal.String.Single */
+.ss {
   color: #990073;
 }
-.CodeRay .symbol .content {
-  color: #aa6600;
+/* Literal.String.Symbol */
+.bp {
+  color: #999999;
 }
-.CodeRay .symbol .delimiter {
-  color: #663300;
+/* Name.Builtin.Pseudo */
+.vc {
+  color: #008080;
 }
-.CodeRay .tag {
-  color: #007700;
+/* Name.Variable.Class */
+.vg {
+  color: #008080;
 }
-.CodeRay .tag-special {
-  color: #D70;
-  font-weight: bold;
+/* Name.Variable.Global */
+.vi {
+  color: #008080;
 }
-.CodeRay .type {
-  color: #339;
-  font-weight: bold;
+/* Name.Variable.Instance */
+.il {
+  color: #009999;
 }
-.CodeRay .variable {
-  color: #003366;
-}
-.CodeRay .insert {
-  background: #afa;
-}
-.CodeRay .delete {
-  background: #faa;
-}
-.CodeRay .change {
-  color: #aaf;
-  background: #007;
-}
-.CodeRay .head {
-  color: #f8f;
-  background: #550055;
-}
-.CodeRay .insert .insert {
-  color: #080;
-  font-weight: bold;
-}
-.CodeRay .delete .delete {
-  color: #800;
-  font-weight: bold;
-}
-.CodeRay .change .change {
-  color: #66f;
-}
-.CodeRay .head .head {
-  color: #f4f;
-}
-/* Gradients ============================================= */
+/* Literal.Number.Integer.Long *//* Gradients ============================================= */
 /* .bordered(COLOR, COLOR, COLOR, COLOR); ================ */
 /* .rounded(VALUE); ====================================== */
 /* .border-radius(VALUE,VALUE,VALUE,VALUE); ============== */

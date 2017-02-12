@@ -20,13 +20,13 @@ Here are some examples of what a post with images might look like. If you want t
 
 Apply the `half` class like so to display two images side by side that share the same caption.
 
-~~~ html
+{% highlight html %}
 <figure class="half">
 	<img src="/images/image-filename-1.jpg">
 	<img src="/images/image-filename-2.jpg">
 	<figcaption>Caption describing these two images.</figcaption>
 </figure>
-~~~
+{% endhighlight %}
 
 And you'll get something that looks like this:
 
@@ -40,14 +40,14 @@ And you'll get something that looks like this:
 
 Apply the `third` class like so to display three images side by side that share the same caption.
 
-~~~ html
+{% highlight html %}
 <figure class="third">
 	<img src="/images/image-filename-1.jpg">
 	<img src="/images/image-filename-2.jpg">
 	<img src="/images/image-filename-3.jpg">
 	<figcaption>Caption describing these three images.</figcaption>
 </figure>
-~~~
+{% endhighlight %}
 
 And you'll get something that looks like this:
 
