@@ -1,6 +1,6 @@
 ---
 title: "Template: Author Override"
-author: billy_rick
+author: Billy Rick
 excerpt: "A post to test author overrides using a data file."
 ---
 For those of you who may have content written by multiple authors on your site you can now assign different authors to each post if desired.
@@ -12,15 +12,15 @@ Start by modifying or creating a new `authors.yml` file in the `_data` folder an
 {% highlight yaml %}
 # /_data/authors.yml
 
-billy_rick:
+Billy Rick:
   name: Billy Rick
-  web: http://thewhip.com
+  uri: http://thewhip.com
   email: billy@rick.com
   bio: "What do you want, jewels? I am a very extravagant man."
   avatar: bio-photo-2.jpg
   twitter: extravagantman
 
-cornelius_fiddlebone:
+Cornelius Fiddlebone:
   name: Cornelius Fiddlebone
   email: cornelius@thewhip.com
   bio: "I ordered what?"
@@ -31,5 +31,5 @@ cornelius_fiddlebone:
 To assign Billy Rick as an author for our post. You'd add the following YAML front matter to a post:
 
 {% highlight yaml %}
-author: billy_rick
+author: Billy Rick
 {% endhighlight %}
