@@ -227,17 +227,17 @@
       &:before {
         content: "";
         position: absolute;
+        left: 0;
         bottom: 0;
         height: 4px;
         background: mix(#fff, $primary-color, 50%);
-        width: 0;
+        width: 100%;
         transition: $global-transition;
+        transform: scaleX(0); // hide
       }
 
-      &:hover {
-        &:before {
-          width: 100%;
-        }
+      &:hover:before {
+        transform: scaleX(1); // reveal
       }
     }
   }
