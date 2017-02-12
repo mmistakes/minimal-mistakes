@@ -23,7 +23,7 @@ main:
 docs:
   - title: Getting Started
     children:
-      - title: "Quick Start Guide"
+      - title: "Quick-Start Guide"
         path: quick-start-guide
       - title: "Installation"
         path: installation
