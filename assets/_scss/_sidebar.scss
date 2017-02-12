@@ -204,6 +204,10 @@
     }
   }
 
+  li {
+    white-space: nowrap;
+  }
+
   a {
     display: block;
     margin-bottom: 5px;
@@ -213,7 +217,6 @@
     color: inherit;
     font-size: $type-size-5;
     text-decoration: none;
-    white-space: nowrap;
 
     &:hover {
       text-decoration: underline;
