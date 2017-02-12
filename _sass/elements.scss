@@ -1,3 +1,7 @@
+/* 
+   Rules
+   ========================================================================== */
+
 hr { 
 	display: block; 
 	margin: 1em 0; 
@@ -7,10 +11,15 @@ hr {
 	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #fff; 
 }
-/* Figures and images ==================================== */
+
+/* 
+   Figures and images
+   ========================================================================== */
+
 figure {
 	margin-bottom: $indent-var;
 }
+
 article img {
 	max-width: 100%;
 	height: auto;
@@ -18,9 +27,13 @@ article img {
 	vertical-align: middle; 
 	-ms-interpolation-mode: bicubic; 
 }
+
 svg:not(:root) {
 		overflow: hidden; 
 }
+
+/* 2 images of equal dimensions in a row */
+
 .half {
 	@include container;
 	@include clearfix;
@@ -33,6 +46,9 @@ svg:not(:root) {
 		}
 	}
 }
+
+/* 3 images of equal dimensions in a row */
+
 .third {
 	@include container;
 	@include clearfix;
@@ -45,7 +61,13 @@ svg:not(:root) {
 		}
 	}
 }
-/* Buttons ============================================== */
+
+/* 
+   Buttons
+   ========================================================================== */
+
+/* Default button */
+
 .btn {
   display: inline-block;
   margin-bottom: 20px;
@@ -68,6 +90,9 @@ svg:not(:root) {
     color: $primary;
   }
 }
+
+/* Success button */
+
 .btn-success {
   background-color: $success;
   color: $white;
@@ -80,6 +105,9 @@ svg:not(:root) {
     color: $success;
   }
 }
+
+/* Warning button */
+
 .btn-warning {
   background-color: $warning;
   color: $white;
@@ -92,6 +120,9 @@ svg:not(:root) {
     color: $warning;
   }
 }
+
+/* Danger button */
+
 .btn-danger {
   background-color: $danger;
   color: $white;
@@ -104,6 +135,9 @@ svg:not(:root) {
     color: $danger;
   }
 }
+
+/* Information button */
+
 .btn-info {
   background-color: $info;
   color: $white;
@@ -116,7 +150,11 @@ svg:not(:root) {
     color: $info;
   }
 }
-/* Well ================================================= */
+
+/* 
+   Wells
+   ========================================================================== */
+
 .well {
 	min-height: 20px;
 	padding: 19px;

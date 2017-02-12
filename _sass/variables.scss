@@ -1,4 +1,11 @@
-// TYPOGRAPHY ================================================
+/* ==========================================================================
+   Sass variables
+   ========================================================================== */
+
+/* 
+   Typography
+   ========================================================================== */
+
 $doc-font-size: 16;
 $doc-line-height: 26;
 $paragraph-indent: true !default;
@@ -7,7 +14,10 @@ $heading-font: 'PT Sans Narrow', sans-serif;
 $code-font: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
 $alt-font: $base-font;
 
-// COLOR ======================================================
+/* 
+   Colors
+   ========================================================================== */
+
 $bodycolor      : #fff;
 $body-color     : $bodycolor;
 $textcolor      : #333332;
@@ -20,21 +30,24 @@ $white          : #fff;
 $black          : #111;
 $accentcolor    : $black;
 
-// Buttons
+/* buttons */
 $primary			: $black;
 $success			: #5cb85c;
 $warning			: #dd8338;
 $danger				: #C64537;
 $info				  : #308cbc;
 
-// Links
+/* links */
 $linkcolor 		    : #343434;
 $link-color       : $linkcolor;
 $linkcolorhover 	: darken($linkcolor, 10);
 $linkcolorvisited : lighten($linkcolorhover, 20);
 $linkcolorfocus 	: darken($linkcolorvisited, 10);
 
-// Media Queries
+/* 
+   Breakpoints
+   ========================================================================== */
+   
 $micro            : "only screen and (min-width: 30em)";
 $small            : "only screen and (min-width: 37.5em)";
 $medium           : "only screen and (min-width: 48em)";
