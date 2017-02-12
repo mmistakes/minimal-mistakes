@@ -50,7 +50,7 @@ Hydraulic components
 | Total: |      |    ? EUR |
 
 
-- Set up a Raspberry PI 3 [here]({{ site.url }}{{ site.baseurl }}/setup_raspberry)
+- Set up a Raspberry PI 3 [here]({{ site.url }}{{ site.baseurl }}/automation/setup_raspberry)
 - Install Python [here](2017-03-23-install_python.md)
 
 #### Electronic wiring
