@@ -15,7 +15,7 @@ echo "Starting to update master\n"
 
 
 #copy data we're interested in to other place
-cp -R /home/travis/build/jluccisano/jluccisano.github.io/_site $HOME/_site
+cp -R --verbose /home/travis/build/jluccisano/jluccisano.github.io/_site $HOME/_site
 
 # Save some useful information
 REPO=`git config remote.origin.url`
@@ -31,10 +31,10 @@ git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
 cd ..
 
 # Clean out existing contents
-rm -rf out/**/* || exit
+rm --verbose -rf out/**/* || exit
 #go into directory and copy data we're interested in to that directory
 cd out
-cp -Rf $HOME/_site/* .
+cp --verbose -Rf $HOME/_site/* .
 
 
 git config user.name "Travis CI"
@@ -48,8 +48,8 @@ fi
 
 # Commit the "changes", i.e. the new version.
 # The delta will show diffs between new and old versions.
-git add -A .
-git commit -m "Deploy to GitHub Pages: ${SHA}"
+git add -A . --verbose
+git commit -m "Deploy to GitHub Pages: ${SHA}" --verbose
 
 # Get the deploy key by using Travis's stored variables to decrypt deploy_key.enc
 ENCRYPTED_KEY_VAR="encrypted_${ENCRYPTION_LABEL}_key"
@@ -62,4 +62,4 @@ eval `ssh-agent -s`
 ssh-add ../deploy_key
 
 # Now that we're all set up, we can push.
-git push $SSH_REPO $TARGET_BRANCH
+git push $SSH_REPO $TARGET_BRANCH --verbose
