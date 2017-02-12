@@ -8,8 +8,7 @@
 
 .sidebar {
   @include clearfix();
-  margin-bottom: 2em;
-  padding-bottom: 1em;
+  margin-bottom: 1em;
   @include breakpoint($large) {
     @include span(2 of 12);
     @include suffix(0.25 of 12);
@@ -56,12 +55,14 @@
    ========================================================================== */
 
 .author__avatar {
-  float: left;
-  width: 50px;
-  margin-right: 10px;
+  display: table-cell;
+  vertical-align: top;
+  width: 36px;
+  height: 36px;
   @include breakpoint($large) {
-    float: none;
+    display: block;
     width: initial;
+    height: initial;
   }
   img {
     max-width: 110px;
@@ -70,22 +71,31 @@
 }
 
 .author__content {
-  float: right;
-  width: calc(100% - 60px); // subtract avatar width + any margin/padding
+  display: table-cell;
+  vertical-align: top;
+  vertical-align: top;
+  padding-left: 15px;
+  padding-right: 15px;
+  line-height: 1;
   @include breakpoint($large) {
-    float: none;
+    display: block;
     width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 .author__name {
   margin: 0;
-  font-family: $sans-serif-narrow;
-  font-size: 20px;
+  font-size: 18px;
   @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 20px;
   }
+}
+.sidebar .author__name {
+  font-family: $sans-serif;
 }
 
 .author__bio {
@@ -97,16 +107,58 @@
   }
 }
 
+.author__urls_wrapper {
+  position: relative;
+  display: table-cell;
+  vertical-align: top;
+  font-family: $sans-serif;
+  @include breakpoint($large) {
+    display: block;
+  }
+  &:hover .author__urls {
+    display: block;
+  }
+}
+
 .author__urls {
+  display: none;
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  &:after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 0 10px 10px;
+    border-color: #fff transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    top: -10px;
+    left: calc(50% - 10px);
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 0 10px 10px;
+    border-color: $border-color transparent;
+    display: block;
+    width: 0;
+    z-index: 0;
+    top: -11px;
+    left: calc(50% - 10px);
+  }
   a {
-    display: inline-block;
+    display: block;
     margin-bottom: 5px;
     padding-right: 5px;
     font-size: 14px;
     text-decoration: none;
-    @include breakpoint($large) {
-      display: block;
-    }
+    white-space: nowrap;
     &:hover {
       text-decoration: underline;
     }
