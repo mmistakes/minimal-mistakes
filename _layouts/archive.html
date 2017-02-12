@@ -18,7 +18,7 @@ layout: default
         <h2 class="link-post" itemprop="headline"><a href="{{ absurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h2>
       {% else %}
         <h2 itemprop="headline"><a href="{{ absurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-        <p itemprop="description">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</p>
+        <p itemprop="description">{{ post.excerpt | markdownify | strip_html | strip_newlines | escape_once }}</p>
       {% endif %}
     </article>
   {% endfor %}
