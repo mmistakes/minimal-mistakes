@@ -28,6 +28,7 @@ sudo docker run -d --hostname my-rabbit --name some-rabbit -p 5672:5672 -p 8080:
 
 ### Install Reactive-server
 
+show docker-compose
 
 ### Install Reactive-client
 
@@ -51,3 +52,18 @@ sudo docker images
 
 docker exec -i -t CONTAINER_ID /bin/bash
 ```
+
+Tips
+
+sudo service docker stop
+mv /var/lib/docker /home/desktop/docker
+#sudo mount -o bind /var/lib/docker docker
+sudo ln -s /home/desktop/docker /var/lib/docker
+sudo vim /etc/default/docker >> DOCKER_OPTS="-g $(readlink -f /var/lib/docker)"
+sudo service docker start
+
+
+
+sudo docker run -d --hostname my-rabbit --name some-rabbit -p 5672:5672 -p 8080:15672 rabbitmq:3-management
+sudo docker run --name mongo-nextrun -v /home/desktop/data/db:/data/db -d mongo:tag -p 27017:27017
+
