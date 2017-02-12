@@ -1,1 +1,4 @@
-&lt;p&gt;&lt;a href=&quot;{{ site.url }}{{ post.url }}&quot;&gt;{{ post.title | xml_escape }}&lt;/a&gt; was originally published by {{ site.owner.name }} at &lt;a href=&quot;{{ site.url }}&quot;&gt;{{ site.title }}&lt;/a&gt; on {{ post.date | date: "%B %d, %Y" }}.&lt;/p&gt;
+{% capture feed_footer %}
+  <p><a href="{{ absurl }}{{ post.url }}" rel="nofollow">{{ post.title }}</a> was originally published by {{ site.owner.name }} on <a href="{{ site.url }}" rel="nofollow">{{ site.title }}</a></p>
+{% endcapture %}
+{{ feed_footer | markdownify | xml_escape }}
