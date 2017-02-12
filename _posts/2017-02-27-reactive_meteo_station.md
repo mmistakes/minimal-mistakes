@@ -46,7 +46,10 @@ The objective of this tutorial is to design a full reactive architecture in orde
 
 ### Overview
 
-![architecture_overview](/assets/images/reactive-architecture.png)
+{% capture fig_img %}
+![architecture_overview]({{ basepath }}/assets/images/reactive-architecture.png)
+{% endcapture %}
+
 
 | Component        |    Role       | Description  |
 | ------------- |:-------------:| -----:|
