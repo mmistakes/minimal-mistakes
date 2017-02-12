@@ -2,6 +2,7 @@ title:            Site Title
 description:      Describe your website.
 # Your site's domain goes here. Leave localhost server or blank when working locally.
 url:              http://localhost:4000
+disqus_shortname: 
 
 # Owner/author information
 owner:
