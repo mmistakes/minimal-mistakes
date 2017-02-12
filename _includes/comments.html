@@ -2,13 +2,13 @@
 
 {% case site.comments.provider %}
 {% when "disqus" %}
-  {% include /comments-providers/disqus %}
+  {% include /comments-providers/disqus.html %}
 {% when "facebook" %}
-  {% include /comments-providers/facebook %}
+  {% include /comments-providers/facebook.html %}
 {% when "google-plus" %}
-  {% include /comments-providers/google-plus %}
+  {% include /comments-providers/google-plus.html %}
 {% when "custom" %}
-  {% include /comments-providers/custom %}
+  {% include /comments-providers/custom.html %}
 {% endcase %}
 
 {% endif %}

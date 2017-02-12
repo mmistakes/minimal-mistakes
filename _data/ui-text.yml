@@ -12,6 +12,7 @@ en: &DEFAULT_EN
   tags_label          : "Tags:"
   categories_label    : "Categories:"
   date_label          : "Last Updated:"
+  comments_label      : "Leave a Comment"
   related_label       : "You May Also Enjoy"
   follow_label        : "Follow:"
   feed_label          : "Feed"
