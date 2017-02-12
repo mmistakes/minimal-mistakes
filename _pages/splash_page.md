@@ -7,10 +7,11 @@ header:
   overlay_color: "#000"
   overlay_filter: "0"
   overlay_image: /assets/images/caspar-rubin-224229.jpg
+  cta_url: ""
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-excerpt: ""
+excerpt: "TODO"
 intro: 
-  - excerpt: ''
+  - excerpt: 'TODO'
 feature_row1:
   - image_path: /assets/images/jordan-ladikos-62738.jpg
     alt: "placeholder image 2"
