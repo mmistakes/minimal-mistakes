@@ -1,12 +1,27 @@
-<div class="page__hero">
-  <img src=
-    {% if page.header.image contains "http" %}
-      "{{ page.header.image }}"
-    {% else %}
-      "{{ page.header.image | prepend: "/images/" | prepend: base_path }}"
+{% if page.header.image contains "http" %}
+  {% capture img_path %}{{ page.header.image }}{% endcapture %}
+{% else %}
+  {% capture img_path %}{{ page.header.image | prepend: "/images/" | prepend: base_path }}{% endcapture %}
+{% endif %}
+
+{% if page.header.background_image contains "http" %}
+  {% capture background_img_path %}{{ page.header.background_image }}{% endcapture %}
+{% else %}
+  {% capture background_img_path %}{{ page.header.background_image | prepend: "/images/" | prepend: base_path }}{% endcapture %}
+{% endif %}
+
+<div class="page__hero{% if page.header.splash %}--splash{% endif %}"
+  style="background: {{ page.header.background_color | default: 'transparent' }} {% if background_img_path %}url('{{ background_img_path }}'){% endif %};"
+>
+  {% if page.header.splash %}
+    <div class="wrapper">
+      <h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
+      {% if site.read_time and page.read_time %}<p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>{% endif %}
+    </div>
+  {% else %}
+    <img src="{{ img_path }}" alt="{{ page.title }}" class="page__hero-image">
+    {% if page.header.caption %}
+      <span class="page__hero-caption">{{ page.header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
     {% endif %}
-    alt="{{ page.title }}" class="page__hero-image">
-  {% if page.header.caption %}
-    <span class="page__hero-caption">{{ page.header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
   {% endif %}
 </div>
