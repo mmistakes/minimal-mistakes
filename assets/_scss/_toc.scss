@@ -34,7 +34,7 @@
     border-bottom: 1px solid $border-color;
     &:hover {
       color: #000;
-      background: mix(#fff, $info-color, 90%);
+      background: $border-color;
     }
   }
   li ul > li a {

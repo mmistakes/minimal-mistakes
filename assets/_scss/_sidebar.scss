@@ -40,6 +40,7 @@
     }
     @include breakpoint($x-large) {
       width: $right-sidebar-width-wide;
+      padding-left: span(1 of 12);
     }
   }
   @include breakpoint($large) {
