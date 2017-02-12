@@ -21,8 +21,8 @@
 .archive__subtitle {
   margin: 0;
   padding-bottom: 0.5em;
-  font-family: $serif;
-  font-size: 28px;
+  font-size: 14px;
+  color: mix(#fff, $gray, 25%);
   border-bottom: 1px solid $border-color;
 }
 

@@ -19,8 +19,6 @@ layout: default
       {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label }}</a></div>{% endif %}
     </section>
 
-    {% if site.share and page.share %}{% include social-share.html %}{% endif %}
-
     <footer class="page__meta">
       {% if site.data.ui-text[site.locale].meta_label %}
         <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
@@ -32,6 +30,8 @@ layout: default
         <p class="page__date"><strong>{{ site.data.ui-text[site.locale].date_label }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
       {% endif %}
     </footer>
+
+    {% if site.share and page.share %}{% include social-share.html %}{% endif %}
   </div>
 
   {% if site.comments.provider and page.comments %}
