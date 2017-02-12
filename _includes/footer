@@ -16,15 +16,15 @@
 
 <div class="follow">
   <ul>
-    <li><strong>Follow:</strong></li>
+    <li><strong>{{ site.data.ui-text.locale[site.locale].follow_label }}</strong></li>
     {% if site.twitter.username %}
       <li><a href="https://twitter.com/{{ site.twitter.username }}"><i class="fa fa-fw fa-twitter"></i> Twitter</a></li>
     {% endif %}
     {% if site.facebook.username %}
       <li><a href="https://facebook.com/{{ site.facebook.username }}"><i class="fa fa-fw fa-facebook"></i> Facebook</a></li>
     {% endif %}
-    <li><a href="{{ base_path }}/feed.xml"><i class="fa fa-fw fa-rss"></i> Feed</a></li>
+    <li><a href="{{ base_path }}/feed.xml"><i class="fa fa-fw fa-rss"></i> {{ site.data.ui-text.locale[site.locale].feed_label }}</a></li>
   </ul>
 </div>
 
-<div class="copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a> theme.</div>
+<div class="copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text.locale[site.locale].powered_by }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
