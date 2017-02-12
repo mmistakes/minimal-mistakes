@@ -3,17 +3,18 @@
    ========================================================================== */
 
 .sidebar {
-  display: none;
-  @include breakpoint($small) {
+  @include breakpoint($medium) {
     display: block;
     margin-bottom: 1em;
-    @include grid(12,2);
-    @include prefix(12,0.5);
-    @include suffix(12,0.5);
+    @include span(2);
+    @include suffix(0.5);
+    // @include grid(12,2);
+    // @include prefix(12,0.5);
+    // @include suffix(12,0.5);
   }
   @include breakpoint($x-large) {
-    @include grid(12,1.5);
-    @include prefix(12,2);
+    // @include grid(12,1.5);
+    // @include prefix(12,2);
   }
   h2, h3, h4, h5, h6 {
     font-family: $sans-serif-narrow;

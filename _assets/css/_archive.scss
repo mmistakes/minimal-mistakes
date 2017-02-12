@@ -3,21 +3,16 @@
    ========================================================================== */
 
 .archive {
-  @include container;
-  @include grid(12,10);
-  @include prefix(12,1);
-  @include suffix(12,1);
   margin-bottom: 2em;
-  @include breakpoint($small) {
-    @include grid(12,8);
-    @include prefix(12,0);
-    @include suffix(12,0);
+  @include breakpoint($medium) {
+    @include span(10 last);
   }
+}
+
+.archive__item {
+  // keep content from going to wide when toc is disabled
   @include breakpoint($large) {
-    @include grid(12,6);
-  }
-  @include breakpoint($x-large) {
-    @include grid(12,5);
+    max-width: span(7 of 10);
   }
 }
 

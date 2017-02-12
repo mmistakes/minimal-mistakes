@@ -65,22 +65,38 @@ $border-radius      : 4px;
 
 
 /*
-   Grid
-   ========================================================================== */
-
-$width              : 100%;
-$def_grid           : 12; // define number of columns in the grid (eg. 12, 16...)
-$margin             : 0;
-
-
-/*
    Breakpoints
    ========================================================================== */
 
 @include breakpoint-set("to ems", true);
 
-$micro              : 480px;
-$small              : 600px;
-$medium             : 768px;
-$large              : 992px;
-$x-large            : 1382px;
+$small                        : 600px;
+$medium                       : 768px;
+$medium-wide                  : 900px;
+$large                        : 1024px;
+$x-large                      : 1440px;
+
+
+/*
+   Grid
+   ========================================================================== */
+
+// $width              : 100%;
+// $def_grid           : 12; // define number of columns in the grid (eg. 12, 16...)
+// $margin             : 0;
+
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+  container: $large,
+  global-box-sizing: border-box,
+  debug: (
+    image: show,
+    color: blue,
+    output: overlay,
+    toggle: top right,
+  ),
+);

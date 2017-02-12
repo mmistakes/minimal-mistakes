@@ -6,37 +6,28 @@
   @include container;
   @include clearfix;
   margin-top: 3em;
-  padding-bottom: 3em;
-
+  padding: 0 2em 3em;
   a {
     text-decoration: none;
     &:hover {
       text-decoration: underline;
     }
   }
-
-  footer {
-    @include grid(12,10);
-    @include prefix(12,1);
-    @include suffix(12,1);
-    @include breakpoint($small) {
-      @include grid(12,6);
-      @include prefix(12,3);
-      @include suffix(12,3);
-    }
-    @include breakpoint($x-large) {
-      @include grid(12,4.5);
-      @include prefix(12,4);
-      @include suffix(12,3.5);
-    }
-  }
 }
 
 .page__footer-copyright {
+  @include breakpoint($medium) {
+    @include span(10 of 12);
+    @include pre(2);
+  }
   font-size: 14px;
 }
 
 .page__footer-follow {
+  @include breakpoint($medium) {
+    @include span(10 of 12);
+    @include pre(2);
+  }
   ul {
     margin: 0;
     padding: 0;

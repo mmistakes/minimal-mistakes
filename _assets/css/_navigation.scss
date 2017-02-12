@@ -7,25 +7,20 @@
    ========================================================================== */
 
 .breadcrumbs {
-  @include grid(12,10);
-  @include prefix(12,1);
-  @include suffix(12,1);
+  @include container;
+  @include clearfix;
   margin-bottom: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
   font-family: $sans-serif;
-  font-size: 14px;
-  @include breakpoint($small) {
-    @include grid(12,11);
-    @include prefix(12,0.5);
-    @include suffix(12,0.5);
-  }
-  @include breakpoint($x-large) {
-    @include grid(12,8);
-    @include prefix(12,2);
-    @include suffix(12,2)
-  }
   ol {
     padding: 0;
     list-style: none;
+    font-size: 14px;
+    @include breakpoint($medium) {
+      @include span(10 of 12);
+      @include pre(2);
+    }
   }
   li {
     display: inline;

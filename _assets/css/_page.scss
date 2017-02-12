@@ -6,26 +6,13 @@
   @include container;
   @include clearfix;
   margin-top: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 .page {
-  @include container;
-  @include grid(12,10);
-  @include prefix(12,1);
-  @include suffix(12,1);
-
-  @include breakpoint($small) {
-    @include grid(12,8);
-    @include prefix(12,0);
-    @include suffix(12,0);
-  }
-
-  @include breakpoint($large) {
-    @include grid(12,6);
-  }
-
-  @include breakpoint($x-large) {
-    @include grid(12,5);
+  @include breakpoint($medium) {
+    @include span(10 last);
   }
 }
 
@@ -37,6 +24,14 @@
 .page__content {
   p, li {
     font-size: 16px;
+  }
+  // keep content from going to wide when toc is disabled
+  @include breakpoint($large) {
+    > h1, > h2, > h3, > h4, > h5, > h6, > hr,
+    > p, > ul, > ol, > blockquote, > table, > figure,
+    > div, > section, > img, > video, > form {
+      max-width: span(7 of 10);
+    }
   }
 }
 
@@ -143,21 +138,12 @@
    ========================================================================== */
 
 .page__related {
-  @include grid(12,10);
-  @include prefix(12,1);
-  @include suffix(12,1);
   margin-top: 2em;
   padding-top: 1em;
   border-top: 1px solid $border-color;
-  @include breakpoint($small) {
-    @include grid(12,6);
-    @include prefix(12,3);
-    @include suffix(12,3);
-  }
-  @include breakpoint($x-large) {
-    @include grid(12,4.5);
-    @include prefix(12,4);
-    @include suffix(12,3.5);
+  @include breakpoint($medium) {
+    @include span(10);
+    @include pre(2);
   }
   li {
     margin-bottom: 0;
