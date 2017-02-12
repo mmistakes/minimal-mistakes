@@ -63,6 +63,21 @@ nmap -sn 192.168.0.0/24
 ssh pi@192.168.0.11
 ```
 
+#### Change ssh default port
+
+```
+sudo vim /etc/ssh/sshd_config
+```
+
+```
+port X
+```
+
+```
+sudo /etc/init.d/ssh restart
+```
+
+
 Default password: raspberry
 
 Note: first of all change your password with command "passwd"
