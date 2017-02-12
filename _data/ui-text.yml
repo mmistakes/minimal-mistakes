@@ -15,7 +15,7 @@ en: &DEFAULT_EN
   meta_label          :
   tags_label          : "Tags:"
   categories_label    : "Categories:"
-  date_label          :
+  date_label          : "Updated:"
   comments_label      : "Leave a Comment"
   more_label          : "Learn More"
   related_label       : "You May Also Enjoy"
