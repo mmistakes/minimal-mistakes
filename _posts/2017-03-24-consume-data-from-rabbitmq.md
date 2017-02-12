@@ -3,7 +3,7 @@ title: "Consume temperature and humidity from RabbitMQ"
 excerpt_separator: "Consume temperature and humidity from RabbitMQ"
 related: true
 categories:
-  - automation
+  - tuto
 tags:
   - Raspberry PI
   - RabbitMQ

@@ -3,7 +3,7 @@ title: "Setup a Raspberry PI 3"
 excerpt_separator: "Setup a Raspberry PI 3"
 related: true
 categories:
-  - automation
+  - tuto
 tags:
   - Raspberry PI
   - Linux
@@ -16,7 +16,7 @@ tags:
 - [Installation](#installation)
 - [Retrieve Raspberry PI 3](#retrieve-raspberry-pi-3)
 - [Connect via SSH](#connect-via-ssh)
-- [Set a static IP Address](#set-static-ip-address)
+- [Set a static IP Address](#set-a-static-ip-address)
 - [Enable Wifi](#enable-wifi)
 
 
@@ -36,8 +36,8 @@ and maybe with better prices.
 
 #### Installation
 
- 1) Download the latest version of [Raspbian image](https://www.raspberrypi.org/downloads/raspbian)
- 2) Follow this [guide](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) according to your OS
+ 1. Download the latest version of [Raspbian image](https://www.raspberrypi.org/downloads/raspbian)
+ 2. Follow this [guide](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) according to your OS
     or Follow this [tutorial](http://michaelcrump.net/the-magical-command-to-get-sdcard-formatted-for-fat32/). Here my commands on 
     my Mac.
     
@@ -49,7 +49,7 @@ and maybe with better prices.
      sudo diskutil eject /dev/rdisk1
     ```
 
- 3) Enable SSH
+ 3. Enable SSH
 
 See more [here](https://www.raspberrypi.org/blog/a-security-update-for-raspbian-pixel/)
 
@@ -58,7 +58,7 @@ cd /boot
 touch ssh
 ```
 
- 4) Plug an ethernet cable and swicth on the power supply.
+ 4. Plug an ethernet cable and swicth on the power supply.
  
  See more [here](https://www.raspberrypi.org/learning/hardware-guide/quickstart/)
  

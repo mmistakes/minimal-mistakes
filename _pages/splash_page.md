@@ -17,7 +17,7 @@ feature_row1:
     alt: "placeholder image 2"
     title: "Create reactive meteo station"
     excerpt: 'TODO'
-    url: "{{ site.url }}{{ site.baseurl }}/tuto/reactive-meteo-station"
+    url: https://jluccisano.github.io/tuto/reactive-meteo-station
     btn_label: "Read More"
     btn_class: "btn--inverse"
 feature_row2:
@@ -25,7 +25,7 @@ feature_row2:
     alt: "placeholder image 2"
     title: "Create your own Sprinkler"
     excerpt: 'TODO'
-    url: "{{ site.url }}{{ site.baseurl }}/tuto/sprinkler"
+    url: https://jluccisano.github.io/tuto/sprinkler
     btn_label: "Read More"
     btn_class: "btn--inverse"
 ---

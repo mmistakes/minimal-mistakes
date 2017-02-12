@@ -3,7 +3,7 @@ title: "InfluxDB"
 excerpt_separator: "InfluxDB"
 related: true
 categories:
-  - automation
+  - tuto
 tags:
   - InfluxDB
   - Docker

@@ -3,7 +3,7 @@ title: "Consume from reactive client"
 excerpt_separator: "Consume from reactive client"
 related: true
 categories:
-  - automation
+  - tuto
 tags:
   - Docker
   - Gulp

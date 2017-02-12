@@ -3,7 +3,7 @@ title: "Reactive Meteo Station"
 excerpt_separator: "Reactive Meteo Station"
 related: true
 categories:
-  - automation
+  - tuto
 tags:
   - Raspberry PI
   - RabbitMQ

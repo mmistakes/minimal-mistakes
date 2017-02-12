@@ -3,7 +3,7 @@ title: "Control your sprinkler with your Raspberry PI"
 excerpt_separator: "Control your sprinkler with your Raspberry PI"
 related: true
 categories:
-  - automation
+  - tuto
 tags:
   - Raspberry PI
 ---

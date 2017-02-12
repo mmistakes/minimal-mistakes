@@ -3,7 +3,7 @@ title: "Interacting with DHT22 Sensor"
 excerpt_separator: "Interacting with DHT22 Sensor"
 related: true
 categories:
-  - automation
+  - tuto
 tags:
   - Raspberry PI
   - DHT22

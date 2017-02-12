@@ -3,7 +3,7 @@ title: "Install docker"
 excerpt_separator: "Install docker"
 related: true
 categories:
-  - computer
+  - tuto
 tags:
   - Docker
   - Unix

@@ -3,7 +3,7 @@ title: "Create a service"
 excerpt_separator: "Create a service"
 related: true
 categories:
-  - computer
+  - tuto
 tags:
   - Raspberry PI
   - Unix

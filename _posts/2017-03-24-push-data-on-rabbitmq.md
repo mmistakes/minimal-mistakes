@@ -3,7 +3,7 @@ title: "Push temperature and humidity to RabbitMQ"
 excerpt_separator: "Push temperature and humidity to RabbitMQ"
 related: true
 categories:
-  - automation
+  - tuto
 tags:
   - Raspberry PI
   - RabbitMQ

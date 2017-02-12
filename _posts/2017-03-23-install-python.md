@@ -3,7 +3,7 @@ title: "Installing Python"
 excerpt_separator: "Installing Python"
 related: true
 categories:
-  - computer
+  - tuto
 tags:
   - Raspberry PI
   - Unix
