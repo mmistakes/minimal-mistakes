@@ -153,7 +153,6 @@ li {
 	code {
 		@include font-rem(12);
 		line-height: 1.5;
-		white-space: nowrap;
 		margin: 0 2px;
 		padding: 0 5px;
 		border: 1px solid lighten($black, 90);
