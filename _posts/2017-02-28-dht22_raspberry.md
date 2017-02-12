@@ -9,7 +9,19 @@ tags:
 
 ### Prerequisites
 
-- see setup_raspberry.md
+- Set up a Raspberry PI 3 [here](2017-01-14-setup_raspberry.md)
+
+### Install python 
+
+Python is already installed with the Raspbian image
+
+```bash
+python --version
+```
+otherwise you can install it 
+```bash
+apt-get install python
+```
 
 ### Install PIP
 
@@ -33,6 +45,11 @@ sudo pip install requests
 ```bash
 pip install RPi.GPIO
 ```
+
+#### Test GPIO 
+
+- Interact with GPIO [here](2017-02-28-test_gpio.md)
+
 
 ### Install Adafruit
 
@@ -96,4 +113,19 @@ sudo systemctl stop dht22.service
 tail -f /var/log/dht22/send.log
 
 
+
+sudo chmod u+x /opt/dht22/send.py 
+sudo ln -s /opt/dht22/send.py /usr/bin/dht22
+sudo systemctl daemon-reload
+
+http://www.diegoacuna.me/how-to-run-a-script-as-a-service-in-raspberry-pi-raspbian-jessie/
+ 
+sudo systemctl daemon-reload
+sudo chmod +x /opt/dht22/dht22.py
+sudo systemctl enable dht22.service
+sudo systemctl start dht22.service
+sudo systemctl status dht22.service
+sudo systemctl stop dht22.service
+tail -f /var/log/dht22/send.log
+http://rstoyanchev.github.io/s2gx2013-websocket-browser-apps-with-spring/#65
 

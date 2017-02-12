@@ -7,42 +7,64 @@ tags:
   - Raspberry PI
 ---
 
-
-Write Raspbian Image into SD Card
-How to retrieve, your Raspberry PI 
-Set a static IP Address
-Enable WIFI wlan0
+### Overview
 
 
+![architecture_overview](../assets/images/reactive-architecture.png)
+
+#### Set Up a Raspberry PI 3
+
+see this post [here](2017-01-14-setup_raspberry.md)
+
+#### Electronic part
+
+![schema_dht22](../assets/images/schema_dht22.png)
+
+#### Interact with DHT22
+
+see this post [here](2017-02-28-dht22_raspberry.md)
 
 
+#### Install Docker (optional)
 
-Install python packages
-Write first python script
-Get temperature and humidity from DHT22
+see this post [here](2017-02-28-install_docker.md)
 
-Install Docker
-Install Portainer.io
-Install RabbitMQ
-Push temperature and humidity to RabbitMQ
+
+#### Push temperature and humidity to RabbitMQ
+
+Consume temperature and humidity from Queue
+
+##### Simple Test
+
+see this post [here](https://github.com/jluccisano/raspberry-scripts/blob/master/scripts/consume.py)
+
+
+#### Reactive-Server
 
 Create java AMQP client
-Consume temperature and humidity from Queue
-Deploy on Docker
 
-Push data to browser client vi Websockets (STOMP)
+#### Reactive client
+
 Create reactive client to consume data from Browser
   - Install ReactJS
   - Create RxJs consume socket
   - Create Temperature Widget with D3Js
-  - Deploy on docker
-  
-  - Consume/Aggregate data into database
-  - Create a complete reactive dashboard
+  - Push data to browser client vi Websockets (STOMP)
 
-Final Result
-  
+#### InfluxDB
 
-sudo gem update -n /usr/local/bin --system sudo gem install -n /usr/local/bin jekyll bundler
-bundle exec jekyll serve
-pip install pyyaml
+- install 
+
+https://hub.docker.com/_/influxdb/
+
+docker run -d -p 8083:8083 -p 8086:8086 \
+      --name=influxdb \
+      -v /usr/lib/influxdb:/var/lib/influxdb \
+      influxdb
+
+
+- Consume/Aggregate data into database
+- Create a complete reactive dashboard
+
+#### Final Result
+  
