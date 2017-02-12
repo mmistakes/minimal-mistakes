@@ -13,6 +13,8 @@
 @mixin notice($notice-color) {
   margin: 2em 0 !important;  // override
   padding: 1em;
+  font-family: $sans-serif;
+  font-size: $type-size-6 !important;
   text-indent: initial; // override
   background-color: mix(#fff, $notice-color, 90%);
   border-radius: $border-radius;
@@ -20,7 +22,6 @@
   h4 {
     margin-top: 0 !important; // override
     margin-bottom: 0.75em;
-    line-height: 1 !important; // override
   }
 
   @at-root .page__content #{&} h4 {
@@ -39,7 +40,9 @@
   }
 
   p {
-    margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 0 !important; // override
+    }
 
     a {
       border-bottom: 1px solid mix(#fff, $notice-color, 50%) !important; // override
@@ -54,6 +57,12 @@
 
   code {
     background-color: mix(#fff, $notice-color, 95%)
+  }
+
+  ul {
+    &:last-child {
+      margin-bottom: 0; // override
+    }
   }
 }
 
