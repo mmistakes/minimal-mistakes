@@ -4,8 +4,19 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2016-12-01T15:44:03-05:00
+modified: 2016-12-12T15:26:47-05:00
 ---
+
+## [4.1.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.1.0)
+
+### Enhancements
+
+- Add Jekyll include for adding [custom author profile links](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/author-profile-custom-links.html) to sidebar
+
+### Bug Fixes
+
+- Fix link to Discourse.org homepage in `noscript` section [#699](https://github.com/mmistakes/minimal-mistakes/pull/699)
+- Fix padding issue with pagination buttons [#694](https://github.com/mmistakes/minimal-mistakes/issues/694)
 
 ## [4.0.10](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.10)
 
