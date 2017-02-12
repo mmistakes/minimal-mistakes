@@ -23,9 +23,7 @@
     {% include author-bio.html %}
   </div>
   <article itemscope itemtype="http://schema.org/CreativeWork">
-    <div class="headline-wrap">
-      <h1 itemprop="headline">{{ page.title }}</h1>
-    </div><!--/ .headline-wrap -->
+    <h1 itemprop="name">{{ page.title }}</h1>
     <div class="article-wrap" itemprop="text">
       {{ content }}
     </div><!-- /.article-wrap -->
