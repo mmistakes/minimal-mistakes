@@ -10,7 +10,7 @@ Previously the theme used a global author for the entire site and those attribut
 
 Start by modifying or creating a new `authors.yml` file in the `_data` folder and add your authors using the following format.
 
-{% highlight yaml %}
+```yaml
 # /_data/authors.yml
 
 Billy Rick:
@@ -27,10 +27,10 @@ Cornelius Fiddlebone:
   bio: "I ordered what?"
   avatar: bio-photo.jpg
   twitter: rhymeswithsackit
-{% endhighlight %}
+```
 
 To assign Billy Rick as an author for our post. You'd add the following YAML front matter to a post:
 
-{% highlight yaml %}
+```yaml
 author: Billy Rick
-{% endhighlight %}
+```
