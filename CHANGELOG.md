@@ -1,3 +1,18 @@
+## [3.1.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.3)
+
+### Enhancements
+
+- Improve `site.locale` documentation [#284](https://github.com/mmistakes/minimal-mistakes/issues/284)
+- Remove ProTip note about protocol-less `site.url` as it is an anti-pattern [#288](https://github.com/mmistakes/minimal-mistakes/issues/288)
+
+### Bug Fixes
+
+- Fix `og_image` URL in seo.html [#277](https://github.com/mmistakes/minimal-mistakes/issues/277)
+- Fix `author_profile` toggle when assigned in a `_layout` [#285](https://github.com/mmistakes/minimal-mistakes/issues/285)
+- Fix typo in `build:all` npm script [#283](https://github.com/mmistakes/minimal-mistakes/pull/283)
+- Fix URL typo documentation [#287](https://github.com/mmistakes/minimal-mistakes/issues/287)
+- SEO author bug. If `twitter.username` is set and `author.twitter` is `nil` bad things happen. [#289](https://github.com/mmistakes/minimal-mistakes/issues/289)
+
 ## [3.1.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.2)
 
 ### Enhancement
