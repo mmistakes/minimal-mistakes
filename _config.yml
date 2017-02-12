@@ -78,7 +78,7 @@ analytics:
 # Site Author
 author:
   name             : "Joseph Luccisano"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/me.jpg"
   bio              : "Full Stack Developer"
   location         : "Toulouse, France"
   email            :
