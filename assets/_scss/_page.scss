@@ -71,8 +71,11 @@
     padding: 3em 0;
     @include clearfix;
     text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
-    .page__title {
+    .page__title,
+    .page__meta {
       color: #fff;
       text-shadow: 1px 1px 4px rgba(#000, 0.5);
     }
