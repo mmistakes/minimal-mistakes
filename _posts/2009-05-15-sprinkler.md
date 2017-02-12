@@ -10,6 +10,9 @@ tags:
   - markup
 ---
 
+![schema_sprinkler](/assets/images/schema_sprinkler.png){:class="img-responsive"}
+
+
 Nested and mixed lists are an interesting beast. It's a corner case to make sure that
 
 * Lists within lists do not break the ordered list numbering order
