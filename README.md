@@ -4,6 +4,8 @@ Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your
 
 The theme includes responsive layouts (`single`, `archive`, and `splash` pages) that look great on mobile and desktop browsers.
 
+![mm-layout-examples](https://cloud.githubusercontent.com/assets/1376749/14541626/dac474f4-0258-11e6-83f6-40e752028222.png)
+
 ## [Installation and Setup](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/) / [Preview the Theme](https://mmistakes.github.io/minimal-mistakes/)
 
 ### Notable Features
