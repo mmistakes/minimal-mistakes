@@ -1,3 +1,18 @@
+## [4.0.5](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.5)
+
+### Enhancements
+
+- Update gems: `jekyll-sitemap` (0.12), `jekyll-feed` (0.8).
+- Improve next/previous pager links visibility by changing gray color to blue (`$link-color`).
+
+### Bug Fixes
+
+- Fix `.sidebar` flicker/jump when hovered. [#583](https://github.com/mmistakes/minimal-mistakes/issues/583)
+
+### Maintenance
+
+- Move contents of `gh-pages` branch to `master` inside of the `/docs` folder.
+
 ## [4.0.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.4)
 
 ### Enhancements
