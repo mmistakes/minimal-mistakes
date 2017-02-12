@@ -1426,6 +1426,11 @@ html {
 .top-navigation li a {
   decoration: none;
   border-bottom: 0 solid transparent;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
 }
 #main {
   counter-reset: captions;
@@ -1855,8 +1860,12 @@ html {
   margin-left: 0%;
   margin-right: 0%;
 }
+.image-wrap .headline-wrap,
 .image-wrap:after {
   left: 25%;
+}
+.image-wrap .headline-wrap {
+  margin-left: 0;
 }
 #main article {
   display: inline;
@@ -1946,7 +1955,7 @@ html {
   left: 33.333333333%;
 }
 .image-wrap .headline-wrap {
-  margin-left: 33.333333333333336%;
+  margin-left: 8.333333333333334%;
 }
 #main article {
   display: inline;
