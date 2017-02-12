@@ -1855,9 +1855,6 @@ html {
   margin-left: 0%;
   margin-right: 0%;
 }
-.image-wrap .headline-wrap {
-  margin-left: 25%;
-}
 .image-wrap:after {
   left: 25%;
 }
@@ -1944,15 +1941,6 @@ html {
   display: inline;
   float: left;
   width: 66.66666666666667%;
-}
-.image-wrap img {
-  display: inline;
-  float: left;
-  width: 66.66666666666667%;
-  margin-left: 16.666666666666668%;
-  margin-right: 16.666666666666668%;
-  margin-top: 1em;
-  margin-bottom: 2em;
 }
 .image-wrap:after {
   left: 33.333333333%;
