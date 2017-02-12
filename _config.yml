@@ -7,29 +7,29 @@
 
 # Site Settings
 locale                   : en_US
-title                    : "Your Awesome Site"
+title                    : "Minimal Mistakes"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "Write an awesome description for your new site here."
-url                      : "http://localhost:4000" # the base hostname & protocol for your site
+name                     : &name "Michael Rose"
+description              : &description "A flexible Jekyll theme for your blog or site with a minimalist aesthetic."
+url                      : # the base hostname & protocol for your site e.g. "//github.io.mmistakes"
 baseurl                  : "/minimal-mistakes" # the subpath of your site, e.g. /blog
-email                    : "your-email@domain.com"
+email                    : # e.g. "your-email@domain.com"
 logo                     : "site-logo.png"
 teaser                   : "500x300.png"
 breadcrumbs              : # true, false (default)
 breadcrumb_home_label    : "Home"
 breadcrumb_separator     : "/"
 twitter:
-  username               : &twitter "site_twitter"
+  username               : &twitter "mmistakes"
 facebook:
-  username               : &facebook "site_facebook"
+  username               : &facebook "michaelrose"
   app_id                 :
   publisher              :
 read_time                : true
 words_per_minute         : 200
 share                    : true
 comments:
-  provider               : false # false (default), "disqus", "facebook", "google-plus", custom"
+  provider               : "disqus" # false (default), "disqus", "facebook", "google-plus", custom"
   disqus:
     shortname            : "mmistakes-dev" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   facebook:
@@ -37,14 +37,14 @@ comments:
     appid                :
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
-google_site_verification :
+google_site_verification : "UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y"
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : "UA-123456-7"
+    tracking_id          : "UA-2011187-3"
 google_ad_client         :
 google_ad_slot           :
 
@@ -54,11 +54,11 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-    - "https://twitter.com/site_twitter"
-    - "https://facebook.com/site_facebook"
+    - "https://twitter.com/mmistakes"
+    - "https://facebook.com/michaelrose"
 
 # Reading Files
-safe: false
+safe: true
 include:
   - .htaccess
   - _pages
@@ -232,14 +232,15 @@ author:
   avatar           : "bio-photo.jpg"
   bio              : *description
   email            : *email
+  uri              : "https://mademistakes.com"
   codepen          :
   dribbble         :
   flickr           :
   facebook         : *facebook
   foursquare       :
-  github           :
+  github           : "mmistakes"
   google_plus      :
-  instagram        :
+  instagram        : "mmistakes"
   lastfm           :
   linkedin         :
   pinterest        :
