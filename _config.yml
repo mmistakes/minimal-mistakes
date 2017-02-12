@@ -17,8 +17,6 @@ email                    : # e.g. "your-email@domain.com"
 logo                     : "site-logo.png"
 teaser                   : "500x300.png"
 breadcrumbs              : # true, false (default)
-breadcrumb_home_label    : "Home"
-breadcrumb_separator     : "/"
 twitter:
   username               : &twitter "mmistakes"
 facebook:
