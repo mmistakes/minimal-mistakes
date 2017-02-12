@@ -6,7 +6,7 @@ Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your
 
 See what's new in the [CHANGELOG](CHANGELOG.md).
 
-Interested in testing out a [**pre-release "gemified" version**](https://github.com/mmistakes/minimal-mistakes/tree/feature/theme-gem) of the theme? Read this blog post to [learn now](https://mmistakes.github.io/minimal-mistakes/jekyll/gemified-theme-alpha/).
+Interested in testing out a [**pre-release "gemified" version**](https://github.com/mmistakes/minimal-mistakes/tree/feature/theme-gem) of the theme? Read this blog post to [learn how](https://mmistakes.github.io/minimal-mistakes/jekyll/gemified-theme-beta/).
 
 [![Minimal Mistakes live preview][2]][1]
 
