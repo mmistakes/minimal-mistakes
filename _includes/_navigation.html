@@ -3,12 +3,11 @@
 		<a href="{{ site.url }}">{{ site.title }}</a>
 	</div><!-- /.site-name -->
 	<div class="top-navigation">
-		<nav role="navigation">
+		<nav role="navigation" id="site-nav" class="nav">
 		    <ul>
 		        {% for link in site.links %}
 				<li><a href="{% if link.external %}{{ link.url }}{% else %}{{ site.url }}{{ link.url }}{% endif %}" {% if link.external %}target="_blank"{% endif %}>{{ link.title }}</a></li>
 		        {% endfor %}
-		        <li><i class="icon-feed"></i> <a href="{{ site.url }}/feed.xml" title="Atom/RSS feed">Feed</a>
 		    </ul>
 		</nav>
 	</div><!-- /.top-navigation -->
