@@ -454,7 +454,7 @@ ne: &DEFAULT_NE
   loading_label              : "लोड हुँदैछ ..."
 ne-NP:
   <<: *DEFAULT_NE
-  
+
 # Korean
 # --------------
 ko: &DEFAULT_KO
@@ -497,9 +497,6 @@ ko: &DEFAULT_KO
   loading_label              : "로딩중..."
 ko-KR:
   <<: *DEFAULT_KO
-  
-# Another locale
-# --------------
 
 # Russian / Русский
 # -----------------
@@ -543,3 +540,6 @@ ru: &DEFAULT_RU
   loading_label              : "Отправка..."
 ru-RU:
   <<: *DEFAULT_RU
+
+# Another locale
+# --------------
