@@ -176,10 +176,8 @@
 .greedy-nav {
   position: relative;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-     -ms-flex-align: center;
         align-items: center;
   background: $background-color;
 
@@ -200,9 +198,7 @@
   }
 
   button {
-    -ms-flex-item-align: stretch;
-     -ms-grid-row-align: stretch;
-             align-self: stretch;
+    align-self: stretch;
     padding: 0 0.5rem;
     border: 0;
     outline: none;
@@ -213,20 +209,16 @@
 
   .visible-links {
     display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
-       -ms-flex-pack: end;
      justify-content: flex-end;
     -webkit-box-flex: 1;
-            -ms-flex: 1;
                 flex: 1;
-    padding-right: 3.5rem;
+    padding-right: 2rem;
     overflow: hidden;
 
     li {
       -webkit-box-flex: 0;
-              -ms-flex: none;
                   flex: none;
 
       &:last-child {
@@ -255,7 +247,8 @@
 
       &:hover:before {
         -webkit-transform: scaleX(1);
-                transform: scaleX(1); /* reveal*/
+                -ms-transform: scaleX(1);
+            transform: scaleX(1); /* reveal*/
       }
     }
   }
@@ -368,7 +361,8 @@
 
       &:after {
         -webkit-transform: rotate(90deg);
-                transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
       }
 
       &:hover {
@@ -397,12 +391,14 @@
     /* on hover show expand*/
     label:hover:after {
       -webkit-transform: rotate(90deg);
-              transform: rotate(90deg);
+              -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
     }
 
     input:checked + label:hover:after {
       -webkit-transform: rotate(0);
-              transform: rotate(0);
+              -ms-transform: rotate(0);
+          transform: rotate(0);
     }
 
     ul {
@@ -456,7 +452,8 @@
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
     -webkit-transform: translate(0, 10%);
-            transform: translate(0, 10%);
+            -ms-transform: translate(0, 10%);
+        transform: translate(0, 10%);
   }
 }
 
@@ -469,7 +466,8 @@
     opacity: 1;
     margin-top: 1em;
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+            -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
   }
 }
 

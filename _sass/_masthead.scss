@@ -15,10 +15,8 @@
     @include container;
     @include clearfix;
     display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-       -ms-flex-pack: justify;
      justify-content: space-between;
     padding: 1em 1em 1em;
     font-family: $sans-serif-narrow;
@@ -39,13 +37,10 @@
 
 .site-title {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 0.5rem 0;
-  -ms-flex-item-align: stretch;
-           align-self: stretch;
+  align-self: stretch;
   -webkit-box-align: center;
-     -ms-flex-align: center;
         align-items: center;
   font-weight: bold;
   z-index: 20;
