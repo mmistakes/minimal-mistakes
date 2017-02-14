@@ -198,12 +198,12 @@
   }
 
   button {
-    align-self: stretch;
     padding: 0 0.5rem;
+    align-self: stretch;
     border: 0;
     outline: none;
-    background-color: $primary-color;
     color: #fff;
+    background-color: $primary-color;
     cursor: pointer;
   }
 
