@@ -175,7 +175,12 @@
 
 .greedy-nav {
   position: relative;
-  min-width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+     -ms-flex-align: center;
+        align-items: center;
   background: $background-color;
 
   a {
@@ -188,12 +193,16 @@
     &:hover {
       color: $masthead-link-color-hover;
     }
+
+    &.site-title {
+      margin-left: 0;
+    }
   }
 
   button {
-    position: absolute;
-    height: 100%;
-    right: 0;
+    -ms-flex-item-align: stretch;
+     -ms-grid-row-align: stretch;
+             align-self: stretch;
     padding: 0 0.5rem;
     border: 0;
     outline: none;
@@ -203,19 +212,22 @@
   }
 
   .visible-links {
-    display: table;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+       -ms-flex-pack: end;
+     justify-content: flex-end;
+    -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+    padding-right: 3.5rem;
+    overflow: hidden;
 
     li {
-      display: table-cell;
-      vertical-align: middle;
-
-      &:first-child {
-        font-weight: bold;
-
-        a {
-          margin-left: 0;
-        }
-      }
+      -webkit-box-flex: 0;
+              -ms-flex: none;
+                  flex: none;
 
       &:last-child {
         a {
@@ -238,13 +250,11 @@
         -webkit-transition: $global-transition;
         transition: $global-transition;
         -webkit-transform: scaleX(0) translate3d(0, 0 , 0);
-            -ms-transform: scaleX(0) translate3d(0, 0 , 0);
                 transform: scaleX(0) translate3d(0, 0 , 0); /* hide*/
       }
 
       &:hover:before {
         -webkit-transform: scaleX(1);
-            -ms-transform: scaleX(1);
                 transform: scaleX(1); /* reveal*/
       }
     }
@@ -260,6 +270,10 @@
     border-radius: $border-radius;
     background: #fff;
     box-shadow: 0 0 10px rgba(#000, 0.25);
+
+    &.hidden {
+      display: none;
+    }
 
     a {
       margin: 0;
@@ -348,11 +362,13 @@
         height: 0.125em;
         line-height: 1;
         background-color: $gray;
+        -webkit-transition: 0.2s ease-out;
         transition: 0.2s ease-out;
       }
 
       &:after {
-        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
       }
 
       &:hover {
@@ -378,13 +394,15 @@
       }
     }
 
-    // on hover show expand
+    /* on hover show expand*/
     label:hover:after {
-      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
     }
 
     input:checked + label:hover:after {
-      transform: rotate(0);
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
     }
 
     ul {
@@ -438,7 +456,6 @@
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
     -webkit-transform: translate(0, 10%);
-        -ms-transform: translate(0, 10%);
             transform: translate(0, 10%);
   }
 }
@@ -447,12 +464,11 @@
   .nav__list input:checked ~ .nav__items {
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
-    max-height: 9999px; // exaggerate max-height to accommodate tall lists
+    max-height: 9999px; /* exaggerate max-height to accommodate tall lists*/
     overflow: visible;
     opacity: 1;
     margin-top: 1em;
     -webkit-transform: translate(0, 0);
-        -ms-transform: translate(0, 0);
             transform: translate(0, 0);
   }
 }
