@@ -8,8 +8,9 @@ permalink: /koans/
 ** 2016 projects (Under construction) **
 * Group 9: 
   * Kōan 9: “Useful” robot collaboration from local rules 
-  * Raul Sosa San Frutos, Irene Cortés Lafuente, Lei Dan, Adrian Hernandez Gimeno
+  * Raul Sosa San Frutos, Irene Cortés Lafuente, Adrian Hernandez Gimeno
   * [GitHub](https://github.com/SwarmBehavior)
+  * <img src="/images/enemy_food.png" class="inline"/>
 
 **Timetable** (subject to change)
 
