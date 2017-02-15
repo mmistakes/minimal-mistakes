@@ -93,3 +93,11 @@ def set_css_style(css_file_path):
     styles = open(css_file_path, "r").read()
     return HTML(styles)
 ```
+
+and can be easily called from the notebook as (after writing a CSS custom file)
+
+```py
+set_css_style('../styles_files/custom.css')
+```
+
+This way, it's easy to try different things until I find the customisation I want, for that specific notebook.
