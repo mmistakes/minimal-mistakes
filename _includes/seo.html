@@ -25,7 +25,8 @@
 
 <meta name="description" content="{{ seo_description }}">
 
-{% assign seo_author = page.author | default: page.author[0] | default: site.author[0] %}
+{% assign seo_author = page.author | default: page.author[0] 
+                       | default: site.author[0] | default: site.author%}
 {% if seo_author %}
   {% if seo_author.twitter %}
     {% assign seo_author_twitter = seo_author.twitter %}
@@ -107,6 +108,7 @@
   <link rel="next" href="{{ paginator.next_page_path | prepend: seo_url }}">
 {% endif %}
 
+
 {% if site.og_image %}
   <script type="application/ld+json">
     {
@@ -123,12 +125,80 @@
     {
       "@context" : "http://schema.org",
       "@type" : "{% if site.social.type %}{{ site.social.type }}{% else %}Person{% endif %}",
-      "name" : "{{ site.social.name | default: site.name }}",
-      "url" : {{ seo_url | jsonify }},
-      "sameAs" : {{ site.social.links | jsonify }}
+      
+      {% if site.social.name %}
+        "name" : {{ site.social.name}},
+        "sameAs" : {{ site.social.links | jsonify }},
+        "url" : {{ seo_url | jsonify }}
+      {% else %}
+      
+        "name" : "{{ seo_author.name }}",
+        {% if seo_author.avatar %}
+        "image" : "{{ seo_author.avatar | absolute_url }}",
+        {% endif %}      
+        {% if seo_author.email %}
+        "email" : "{{ seo_author.email }}",
+        {% endif %}      
+        {% if seo_author.location %}
+        "homeLocation" : { "@type" : "Place",
+                           "name" : "{{ seo_author.location }}"
+                         },
+        {% endif %}  
+        {% if seo_author.bio %}
+        "description" : "{{ seo_author.bio }}",
+        {% endif %}
+        
+        "sameAs " : [
+          {% capture seo_social_media %}
+            {% if seo_author.facebook %}
+              "https://www.facebook.com/{{ seo_author.facebook }}",
+            {% endif %}
+            {% if seo_author.twitter %}
+              "https://twitter.com/{{ seo_author.twitter }}",
+            {% endif %}
+            {% if seo_author.google_plus %}
+              "https://plus.google.com/+{{ seo_author.google_plus }}",
+            {% endif %}
+            {% if seo_author.instagram %}
+              "https://instagram.com/{{ seo_author.instagram }}",
+            {% endif %}
+            {% if seo_author.youtube %}
+              "https://www.youtube.com/user/{{ seo_author.youtube }}",
+            {% endif %}
+            {% if seo_author.linkedin %}
+              "https://www.linkedin.com/in/{{ seo_author.linkedin }}",
+            {% endif %}
+            {% if seo_author.pinterest %}
+              "https://www.pinterest.com/{{ seo_author.pinterest }}",
+            {% endif %}
+            {% if seo_author.soundcloud %}
+              "https://soundcloud.com/{{ seo_author.soundcloud }}",
+            {% endif %}
+            {% if seo_author.tumblr %}
+              "https://{{ seo_author.tumblr }}.tumblr.com",
+            {% endif %}
+          {% endcapture %}
+          {{ seo_social_media | split: '' | reverse | join: '' 
+                              | remove_first: ','
+                              | split: '' | reverse | join: ''
+          }}
+        ],
+        
+        "url" : "{{ seo_author.uri | default: seo_url }}"
+      {% endif %}
     }
   </script>
 {% endif %}
+  
+<script type="application/ld+json">
+  {
+    "@context" : "http://schema.org",
+    "@type" : "WebSite",
+    "name" : "{{ site.name }}",
+    "url" : {{ seo_url | jsonify }},
+    "description" : "{{ seo_description}}"
+  }
+</script>
 
 {% if site.google_site_verification %}
   <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
