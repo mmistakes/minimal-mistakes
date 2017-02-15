@@ -10,8 +10,7 @@ permalink: /koans/
 * Group 9: 
   * Kōan 9: “Useful” robot collaboration from local rules 
   * Raul Sosa San Frutos, Irene Cortés Lafuente, Adrian Hernandez Gimeno
-  * [GitHub](https://github.com/SwarmBehavior)
-  * <img src="/images/enemy_food.png" class="inline"/>
+  * [GitHub](https://github.com/SwarmBehavior) <a href="https://github.com/SwarmBehavior"><img src="/images/enemy_food.png" class="inline"/></a>
 
 **Timetable** (subject to change)
 
