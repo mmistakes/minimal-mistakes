@@ -356,8 +356,45 @@ zh-HK:
   <<: *DEFAULT_ZH
 zh-SG:
   <<: *DEFAULT_ZH
+# Taiwan (Traditional Chinese)
 zh-TW:
-  <<: *DEFAULT_ZH
+  page                       : "頁面"
+  pagination_previous        : "較舊"
+  pagination_next            : "較新"
+  breadcrumb_home_label      : "首頁"
+  breadcrumb_separator       : "/"
+  menu_label                 : "切換選單"
+  toc_label                  : "本頁"
+  ext_link_label             : "外部連結"
+  less_than                  : "少於"
+  minute_read                : "分鐘閱讀"
+  share_on_label             : "分享到"
+  meta_label                 :
+  tags_label                 : "標籤:"
+  categories_label           : "分類:"
+  date_label                 : "更新時間:"
+  comments_label             : "留言"
+  comments_title             : "留言內容"
+  more_label                 : "了解更多"
+  related_label              : "猜您有與趣"
+  follow_label               : "追蹤:"
+  feed_label                 : "RSS Feed"
+  powered_by                 : "Powered by"
+  website_label              : "網站"
+  email_label                : "電子信箱"
+  recent_posts               : "最新文章"
+  undefined_wpm              : "_config.yml 中未定義 words_per_minute"
+  comment_form_info          : "您的電子信箱不會被公開. 必填部份已標記"
+  comment_form_comment_label : "留言內容"
+  comment_form_md_info       : "支援Markdown語法。"
+  comment_form_name_label    : "名字"
+  comment_form_email_label   : "電子信箱帳號"
+  comment_form_website_label : "網頁 (可選填)"
+  comment_btn_submit         : "送出留言"
+  comment_btn_submitted      : "已送出"
+  comment_success_msg        : "感謝您的留言！ 審核後將會顯示在站上。"
+  comment_error_msg          : "抱歉，部份資料輸入有問題。請確認資料填寫正確後再試一次。"
+  loading_label              : "載入中..."
 
 # German / Deutsch
 # -----------------
