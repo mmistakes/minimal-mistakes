@@ -5,6 +5,11 @@ excerpt: "The student group project kōans for the ShanghAI Lectures."
 permalink: /koans/
 ---
 
+** 2016 projects (Under construction) **
+* Group 9: 
+  * Kōan 9: “Useful” robot collaboration from local rules 
+  * Raul Sosa San Frutos, Irene Cortés Lafuente, Lei Dan, Adrian Hernandez Gimeno
+  * [GitHub](https://github.com/SwarmBehavior)
 
 **Timetable** (subject to change)
 
