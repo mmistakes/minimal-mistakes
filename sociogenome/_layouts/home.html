@@ -1,0 +1,73 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include _head.html %}
+</head>
+
+<body class="home">
+
+{% include _browser-upgrade.html %}
+
+{% include _navigation.html %}
+
+{% if page.image.feature %}
+  <div class="image-wrap">
+  <img src=
+    {% if page.image.feature contains 'http' %}
+      "{{ page.image.feature }}"
+    {% else %}
+      "{{ site.url }}/images/{{ page.image.feature }}"
+    {% endif %}
+  alt="{{ page.title }} feature image">
+  {% if page.image.credit %}
+    <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
+  {% endif %}
+
+  </div><!-- /.image-wrap -->
+{% endif %}
+
+<div id="main" role="main"> 
+  <div class="article-author-side">
+    {% include _author-bio.html %}
+
+<a class="twitter-timeline" href="https://twitter.com/sociogenome" data-widget-id="605037463824961537">Tweets by @sociogenome</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+  </div>
+
+
+<br><br><br>
+ <div style="width:80%;"align="justify"><p><b>Sociogenome </b>is a research project located at the University of Oxford and Nuffield College funded by the European Research Council and led by Prof. Melinda Mills.  </p>
+	
+	
+	<br>
+<p>Sociogenome is comprehensive study of the role of genes and gene-environment (GxE) interaction on reproductive behaviour. Until now, social science research has focussed on socio-environmental explanations, largely neglecting the role of genes. Drawing from recent unprecedented advances in molecular genetics we examine whether there is a genetic component to reproductive outcomes, including age at first birth, number of children and infertility and their interaction with the social environment.</p></div>
+
+ <div id="index">
+    <h3><a href="{{ site.url}}/news/">News</a></h3>
+    {% for post in site.posts limit:5 %}    
+    <article>
+      {% if post.link %}
+        <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></h2>
+      {% else %}
+        <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+        <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+      {% endif %}
+    </article>
+    {% endfor %}
+  </div><!-- /#index -->
+
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  <footer>
+    {% include _footer.html %}
+  </footer>
+</div><!-- /.footer-wrap -->
+
+{% include _scripts.html %}
+  
+</body>
+</html>

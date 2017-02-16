@@ -1,0 +1,31 @@
+# Site navigation links
+
+- title: About
+  url: /about/
+
+- title: News
+  url: /news/
+
+- title: People
+  url: /people/
+
+- title: Publications
+  url: /publications/
+  
+- title: Media
+  url: /media/
+
+- title: Vacancies
+  url: /vacancies/
+  
+- title: Summer School
+  url: /teaching/
+  
+- title: Data
+  url: /data/
+
+- title: Contacts
+  url: /contacts/    
+
+- title: Links
+  url: /links/   

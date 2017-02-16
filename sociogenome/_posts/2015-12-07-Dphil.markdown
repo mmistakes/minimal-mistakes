@@ -1,0 +1,43 @@
+---
+layout: post
+title: "One ESRC PhD (DPhil) Studentship Department of Sociology, University of Oxford, UK
+"
+modified:
+categories: 
+excerpt:
+tags: [vacancies]
+image:
+  feature: genomeOX_text.jpg
+date: 2015-12-07T18:18:09+00:00
+---
+
+The Department of Sociology at the University of Oxford would like to fill one PhD (DPhil) position within the Economic & Social Research Council (ESRC) National Centre for Research Methods (NCRM) project: ‘SOCGEN: Combining Social Science and Molecular Genetic Research to Examine Inequality and the Life Course’, awarded to Principal Investigator, [Professor Melinda Mills](http://www.melindacmills.com) in collaboration with the Department of Statistics and Co-PI, Dr David Steinsaltz. The student will also be a member of the Sociology pathway within the [Oxford Doctoral Training Centre](http://researchtraining.socsci.ox.ac.uk/home-dtc). 
+The primary objective of the SOCGEN project is to bring together substantive social science researchers in the field of inequality and the life course with expertise in statistics, biodemography, and quantitative molecular genetics to develop innovative learning resources, statistical models and packages to address the specific shortcomings in this substantive area of research. Developing accessible resources and tools will allow UK social scientists to become pioneers in biosocial research and use the increasingly large amount of data in the UK that includes both social science and molecular genetic information (e.g., UK Biobank, ALSPAC, 1958 Birth Cohort, ELSA, Understanding Society to name only a few).  
+
+**The candidate will engage in a Phd (DPhil) that focuses on combining social science and molecular genetic data within their own chosen area of interest in life course studies (e.g., partnerships, fertility, (un)employment, mobility, education, health). The candidate will work within the SOCGEN of senior and postdoctoral researchers and will be linked to the larger sociogenomic research group and the ERC funded SOCIOGENOME project  and researchers within that group.**
+
+### The candidate
+The candidate must have completed (by October 2016) a Master’s degree in sociology, demography, population studies, economics or related social science disciplines or in the area of computer science, behavioral genetics, epidemiology or related disciplines. The successful applicant will have a 1st or 2.1 class degree or equivalent (or if from outside of the UK, a high grade point average). 
+Openness, curiosity and  willingness to work in an interdisciplinary team environment are regarded as assets. Candidates should have a strong background in advanced statistical techniques and analysis of large data sets. Knowledge of R, STATA and related experience is an asset. As part of this project, the candidate will learn to apply advanced statistical methods for the analysis of molecular genetic and social science data, which can be aquired within the first year of the project. 
+
+### The ESRC/NCRM Studentship
+The ESRC/NCRM Studentship covers a three year period starting in October 2016 and covers College and University tuition fees in addition to a maintenance element of £13,863 per year. The award holder will be eligible to apply for RTSG, overseas fieldwork expenses, extensions for difficult language training, ESRC internships, DTC internship support scheme funding.
+The position is open to applicants from all around the world. Please note that eligibility can sometimes be a complicated issue and each studentship nomination is assessed carefully to determine eligibility for an award. For further information, please refer to annex 1 of the ESRC postgraduate funding guide, available for download here.
+The output of the project will be a DPhil dissertation and academic publications in the disciplines of sociology, demography, medical sciences, genetics or general science journals. 
+
+
+For general information on obtaining a DPhil in Sociology at the University of Oxford, see: [http://www.ox.ac.uk/admissions/graduate/courses/dphil-sociology](http://www.ox.ac.uk/admissions/graduate/courses/dphil-sociology)
+Recruitment and selection procedure
+**The application deadline is Friday January 22 2016**
+The standard application procedure applies to these ERC Studentships. Applicants should follow the instructions at: [http://www.ox.ac.uk/admissions/graduate/courses/dphil-sociology](http://www.ox.ac.uk/admissions/graduate/courses/dphil-sociology)
+
+As the abovementioned electronic link describes, all candidates should include:  1) 3 academic references; 2) Official transcripts: your university-level qualifications and marks to date; 3) Two academic writing samples: from your most recent qualification, each sample with a length of 2,000 words; and, 4) Research proposal: in two pages explain the topic you propose to investigate, how you would carry out the research and its relationship to sociogenome and/or SOCGEN project. On the application form, please identify Professor Melinda Mills as the faculty to supervise your research and Nuffield College as the colleage you would like join.
+
+### Contact information
+* For further information about the project, please contact the Principal Investigator Melinda Mills at: melinda.mills @ sociology.ox.ac.uk
+* For further information about the application procedure, refer to: [http://www.ox.ac.uk/admissions/graduate/courses/dphil-sociology](http://www.ox.ac.uk/admissions/graduate/courses/dphil-sociology)
+* For further information about the Oxford ESRC Doctoral Training Centre, refer to: [http://researchtraining.socsci.ox.ac.uk/home-dtc](http://researchtraining.socsci.ox.ac.uk/home-dtc)
+* The University values diversity and is committed to equality of opportunity.
+* This summary of the Studentships is provided for information and nothing in the conditions constitutes a contract.
+
+[Further information](http://sociogenome.com/images/ESRC_NCRMDPhilScholarship_Mills.pdf)

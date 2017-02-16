@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Postdoctoral Fellowship, University of Oxford, UK
+"
+modified:
+categories: 
+excerpt:
+tags: [vacancies]
+image:
+  feature: genomeOX_text.jpg
+date: 2015-12-07T18:18:09+00:00
+---
+This is an opportunity to apply for a Postdoctoral Fellowship, funded by the ESRC (Economic and Social Research Council UK) NCRM (National Centre for Research Methods) Methodological Research Project, ‘SOCGEN: Combining Social Science and Molecular Genetic Research to Examine Inequality and the Life Course’, awarded to Principal Investigator, [Professor Melinda Mills](http://www.melindacmills.com) in collaboration with the Department of Statistics and Co-PI, Dr David Steinsaltz and as a companion project to the ERC funded SOCIOGENOME project.
+
+The primary objective of the SOCGEN project is to bring together substantive social science researchers in the field of inequality and the life course with expertise in statistics, biodemography, and quantitative molecular genetics to develop innovative learning resources, statistical models and packages to address the specific shortcomings in this substantive area of research. Developing accessible resources and tools will allow UK social scientists to become pioneers in biosocial research and use the increasingly large amount of data in the UK that includes both social science and molecular genetic information..  
+
+**The Postdoctoral Researcher in sociology will be encouraged to work on substantive research in the area of life course inequality, to understand what genetic and socio-environmental determinants and their interactions (GxE) are informative to understand life course aspects such as family (e.g., fertility, partnership formation and dissolution), employment (e.g., unemployment, mobility) or health.**
+
+It is a three-year fixed-term post primarily for research, with candidates gaining supported experience in a broad range of academic duties, such as organizing research activities and opportunities for teaching, commencing as soon as possible. It is a full time post on salary Grade 7 (£30,434 – 37,394) pa.
+
+The successful candidate will hold, or expect to obtain a PhD or DPhil in sociology, demography, economics, statistics, epidemiology or another relevant discipline.  They will be engaged in quantitative research in the area of life course research and/or experience of working with molecular genetic data. They will have a strong record in quantitative and/or statistical research methods, demonstrated by published (or accepted, under review) research papers in academic journals and have the ability to work collaboratively in a tem, with good organizational and time management skills.
+
+**Applications, including a covering letter, CV and the names of 2 referees should be submitted by 12:00 noon on January 11 2016 using the university’s online system.**
+
+[link to apply]( https://www.recruit.ox.ac.uk/pls/hrisliverecruit/erq_jobspec_version_4.display_form?p_company=10&p_internal_external=E&p_display_in_irish=N&p_process_type=&p_applicant_no=&p_form_profile_detail=&p_display_apply_ind=Y&p_refresh_search=Y&p_recruitment_id=121371)
+

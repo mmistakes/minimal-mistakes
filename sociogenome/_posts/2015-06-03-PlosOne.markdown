@@ -1,0 +1,41 @@
+---
+layout: post
+title: "Our new publication in PLOS One: Study pinpoints what part genes play in the age of first-time mums and family size 
+"
+modified:
+categories: 
+excerpt:
+tags: [conferences]
+image:
+  feature: genomeOX_text.jpg
+date: 2015-05-31T18:18:09+00:00
+---
+### Press release
+
+[Link to the journal](http://dx.plos.org/10.1371/journal.pone.0126821)
+
+Researchers have analysed the genomes of thousands of women in the UK and the Netherlands to measure the extent to which a woman’s genes influence/play a role for when she has her first baby and how many children she will have. Significantly, they have found that **some women are genetically predisposed to have children earlier than others, and conclude that they have passed down their reproductive advantage to the next generation.** They also find, however, that while modern women who were born in the 20th century might be expected to have babies even earlier than previous generations did, they are delaying motherhood. Their study, published in the latest issue of the journal, PLOS ONE, says **women in modern societies are ‘over-riding’ natural selection because of the stronger effect of lifestyle choices and social factors.** 
+
+The research was carried out by an international team working on the **Sociogenome** project, led by the University of Oxford and funded by the European Research Council. The researchers exploited the latest advances in molecular and quantitative genetics taking existing datasets of 4,300 unrelated women in the Netherlands from the Lifelines Cohort Study. They combined these results with data relating to 2,400 women from TwinsUK, the country’s largest adult twin registry (from which they randomly selected only one twin for analysis). 
+The researchers found that genes account for about 15 per cent of the differences between modern women when they have their first baby, and 10 per cent in the differences in the number of children they have. They also discovered an overlap between these genetic effects that the study says partly explains why women who have children earlier also have a higher number of children.
+
+Previous similar studies have relied on datasets relating to twins or within families, but **this is the first time that researchers have used molecular genetic information of unrelated women including the population-based Lifelines Study**. By combining the genetic results of both datasets from this large sample, they found that natural selection is not just an historical process. Modern societies are still evolving today, with early fertility patterns being an inherited reproductive advantage, says the paper. 
+
+Project leader **Professor Melinda Mills**, from the Department of Sociology at the University of Oxford and Nuffield College, said: 
+
+> ‘In evolutionary and genetic terms, this suggests that younger generations today should be inclined to have children at an earlier age than women in the past. However, what we actually observe is that the reverse is happening. Social and environmental factors mean women in modern societies are delaying starting families, knowing that there is the risk of becoming infertile if they leave it too late. This research tells us there are genetic differences between women which could be significant for women making decisions about when to have their first baby.’
+
+Lead author **Felix Tropf**, from the University of Groningen in the Netherlands, said: 
+
+> ‘In the second half of the 20th century, women across many societies delayed starting a family. Although genes play a significant part, it seems wider social changes, such as an expansion of women in further education and work, as well as the availability of effective contraception, are having a stronger effect on determining when women in modern societies have children.’
+
+The paper was authored by a team from the University of Oxford, the University of Groningen; University Medical Center Groningen; London School of Hygiene and Tropical Medicine; and Queensland Brain Institute, Australia. 
+
+**For further information, contact the University of Oxford News Office at news.office@admin.ox.ac.uk or Tel: +44(0)1865 280534.**
+
+**Notes for Editors**
+
+* The paper, ‘Human Fertility, molecular genetics, and natural selection in modern societies’ by Felix C. Tropf, Gert Stulp, Nicola Barban, Peter M. Visscher , Jian Yang, Harold Snieder and Melinda C. Mills has been published in the journal, PLOS ONE, on 3 June 2015.
+* Once live, the paper will appear at http://dx.plos.org/10.1371/journal.pone.0126821 [link](http://dx.plos.org/10.1371/journal.pone.0126821)
+* For the Netherlands sample, the data used was from the Lifelines Cohort Study, a population-based study examining the health and health-related behaviours of three generations of 167,000 people living in the north. It includes genotyped information from more than 13,000 unrelated individuals.
+* For the UK, the data was from TwinsUK, the largest adult twin registry in the country with more than 12,000 respondents. The research team randomly selected only one twin for analysis and controlled for dizygotic twinning as a genetically related process.  
