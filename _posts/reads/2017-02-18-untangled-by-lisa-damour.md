@@ -1,6 +1,6 @@
 ---
 title: "Untangled by Dr. Lisa Damour"
-excerpt: &excerpt "Dr. Lisa Damour breaks the topic of girls' adolescence into seven stages, allowing the reader to see the progression from child to young woman during the formative teen years."
+excerpt: &excerpt "Dr. Lisa Damour breaks the topic of girls' adolescence into seven stages, allowing the reader to see the progression from child to young woman."
 tweet: "Untangled by Dr. Lisa Damour helps parents to understand their teen girls" 
 date: 2017-02-18
 modified: 2017-02-18
