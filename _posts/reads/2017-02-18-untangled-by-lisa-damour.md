@@ -71,7 +71,7 @@ Before I get into the details, here are some of the high-level golden nuggets.
 And now for the comprehensive list of interesting ideas and quotes from each 
 chapter. Particularly interesting ones are in **bold**.
 
-## Parting with Childhood: ##
+## Parting with Childhood ##
 
 *  "_Girls don't dump their parents just for the heck of it.... By age twelve 
    most tweens feel a sudden, internal pressure to separate themselves from 
@@ -121,7 +121,7 @@ chapter. Particularly interesting ones are in **bold**.
    don't be naïve. Tell her what you found online and ask her to explain. 
    Figure out what she was hoping to accomplish. 
 
-## Joining a New Tribe: ##
+## Joining a New Tribe ##
 
 *  They're looking for a new tribe to join. This is significant! "_Teenagers 
    aren't just looking to make friends, they are replacing the family they've 
@@ -181,7 +181,7 @@ chapter. Particularly interesting ones are in **bold**.
    is a victim of bullying, or if your daughter bullies her peers._" 
 *  Point out the critical role that bystanders play in helping victims. 
 
-## Harnessing Emotions: ##
+## Harnessing Emotions ##
 
 *  Emotions. **"_The brain remodels dramatically during the teenage years._"** 
    *  "_Teens' amygdala's reacted strongly to fearful or happy faces...emotional 
@@ -230,7 +230,7 @@ chapter. Particularly interesting ones are in **bold**.
    of sorts that they offend every adult, can't plan for the future, won't pursue 
    romantic relationships, or don't care for themselves._"** 
 
-## Contending with Adult Authority: ##
+## Contending with Adult Authority ##
 
 *  Around age 11, girls begin to develop the ability for abstract reasoning. 
 *  **When she has a rude or provocative tone, ask her to communicate her dissent 
@@ -275,7 +275,7 @@ chapter. Particularly interesting ones are in **bold**.
 *  "_Put simply, teenagers live up to expectations, and they live down to 
    them, too._" 
 
-## Planning for the Future: ##
+## Planning for the Future ##
 
 *  **Impulses and the internet.** "_Teenagers are and always have been 
    impulsive. And really great teenagers do really dumb things. Unfortunately, 
@@ -323,7 +323,7 @@ efforts, and feel inspired by talented peers._"
    can't enjoy herself at all, or if a girl is so indifferent to planning that 
    she's closing all sorts of doors._" 
 
-## Entering the Romantic World: ##
+## Entering the Romantic World ##
 
 *  Help your daughter "_come to know what she's hoping for, how to pursue it 
    when ready, and how to make clear what she doesn't want._" 
@@ -372,7 +372,7 @@ efforts, and feel inspired by talented peers._"
    older guys increases the chances that a girl will use drugs and show signs 
    of depression._" Older kids tend to do riskier things. 
 
-## Caring for Herself: ##
+## Caring for Herself ##
 
 *  **Girls stop listening when we lecture.** 
 *  **Don't label foods as good or bad**, which can make "bad" foods alluring. Even 
