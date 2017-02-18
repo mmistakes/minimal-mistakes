@@ -1,7 +1,7 @@
 ---
-title: "Book by Author"
-excerpt: &excerpt "Excerpt about the book."
-tweet: "Keep it short." 
+title: "Untangled by Dr. Lisa Damour"
+excerpt: &excerpt "Dr. Lisa Damour breaks the topic of girls' adolescence into seven stages, allowing the reader to see the progression from child to young woman during the formative teen years."
+tweet: "Untangled by Dr. Lisa Damour helps parents to understand their teen girls" 
 date: 2017-02-18
 modified: 2017-02-18
 category: reads
