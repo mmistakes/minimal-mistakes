@@ -33,6 +33,10 @@ She concludes each topic with succinct examples of when to worry about your
 daughter. I found these particularly helpful, especially since I won't always 
 know what to look for in my daughter's behavior, attitude, or actions.
 
+**Untangled** should be read by every parent as their daughter enters 
+middle school or junior high! It's that well written, pertinent to your 
+life, and important for your daughter's future womanhood. 
+
 Further below you will find quotes and ideas from each area of the book that 
 I found helpful and/or interesting. It's a long list to go through, yet it 
 provides a resource for later review. I've found that repetition is one of the 
