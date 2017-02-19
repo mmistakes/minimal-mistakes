@@ -25,7 +25,7 @@
 
 <meta name="description" content="{{ seo_description }}">
 
-{% assign seo_author = page.author | default: page.author[0] | default: site.author[0] %}
+{% assign seo_author = page.author | default: page.author[0] | default: site.author.name %}
 {% if seo_author %}
   {% if seo_author.twitter %}
     {% assign seo_author_twitter = seo_author.twitter %}
@@ -38,6 +38,8 @@
   {% endif %}
   {% assign seo_author_twitter = seo_author_twitter | replace: "@", "" %}
 {% endif %}
+
+<meta name="author" content="{{ seo_author }}">
 
 <meta property="og:locale" content="{{ site.locale | replace: "-", "_" | default: "en" }}">
 <meta property="og:site_name" content="{{ site.title }}">
