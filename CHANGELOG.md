@@ -1,3 +1,23 @@
+## [4.2.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.2.2)
+
+### Enhancements
+
+- Update [Greedy Navigation](https://github.com/lukejacksonn/GreedyNav) to flexbox version to make it more flexible when dealing with long site titles (`site.title`). [#836](https://github.com/mmistakes/minimal-mistakes/issues/836)
+- Adjust `box-shadow` in navigation and author sidebar. [#576](https://github.com/mmistakes/minimal-mistakes/pull/576)
+- Add Russian, Korean, and zh-TW localized UI text. [#815](https://github.com/mmistakes/minimal-mistakes/issues/815) [#834](https://github.com/mmistakes/minimal-mistakes/pull/834) [#838](https://github.com/mmistakes/minimal-mistakes/pull/838)
+
+### Bug Fixes
+
+- Fix Discourse embedded comments bug. [#823](https://github.com/mmistakes/minimal-mistakes/issues/823)
+- Fix `seo_author` default value in `seo.html` and add `author` meta. [#858](https://github.com/mmistakes/minimal-mistakes/pull/858)
+
+### Maintenance
+
+- Add theme meta info to `_layouts/default.html` and `main.css`.
+- Update README.
+- Improve the pagination and taxonomy archive documentation. [#826](https://github.com/mmistakes/minimal-mistakes/pull/826)
+- Add comments to `/docs/_config.yml` to clarify use of YAML references. [#847](https://github.com/mmistakes/minimal-mistakes/pull/847)
+
 ## [4.2.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.2.1)
 
 ### Enhancements
