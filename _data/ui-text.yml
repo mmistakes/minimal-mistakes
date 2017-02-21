@@ -356,8 +356,45 @@ zh-HK:
   <<: *DEFAULT_ZH
 zh-SG:
   <<: *DEFAULT_ZH
+# Taiwan (Traditional Chinese)
 zh-TW:
-  <<: *DEFAULT_ZH
+  page                       : "頁面"
+  pagination_previous        : "較舊"
+  pagination_next            : "較新"
+  breadcrumb_home_label      : "首頁"
+  breadcrumb_separator       : "/"
+  menu_label                 : "切換選單"
+  toc_label                  : "本頁"
+  ext_link_label             : "外部連結"
+  less_than                  : "少於"
+  minute_read                : "分鐘閱讀"
+  share_on_label             : "分享到"
+  meta_label                 :
+  tags_label                 : "標籤:"
+  categories_label           : "分類:"
+  date_label                 : "更新時間:"
+  comments_label             : "留言"
+  comments_title             : "留言內容"
+  more_label                 : "了解更多"
+  related_label              : "猜您有與趣"
+  follow_label               : "追蹤:"
+  feed_label                 : "RSS Feed"
+  powered_by                 : "Powered by"
+  website_label              : "網站"
+  email_label                : "電子信箱"
+  recent_posts               : "最新文章"
+  undefined_wpm              : "_config.yml 中未定義 words_per_minute"
+  comment_form_info          : "您的電子信箱不會被公開. 必填部份已標記"
+  comment_form_comment_label : "留言內容"
+  comment_form_md_info       : "支援Markdown語法。"
+  comment_form_name_label    : "名字"
+  comment_form_email_label   : "電子信箱帳號"
+  comment_form_website_label : "網頁 (可選填)"
+  comment_btn_submit         : "送出留言"
+  comment_btn_submitted      : "已送出"
+  comment_success_msg        : "感謝您的留言！ 審核後將會顯示在站上。"
+  comment_error_msg          : "抱歉，部份資料輸入有問題。請確認資料填寫正確後再試一次。"
+  loading_label              : "載入中..."
 
 # German / Deutsch
 # -----------------
@@ -411,6 +448,7 @@ de-LI:
   <<: *DEFAULT_DE
 de-LU:
   <<: *DEFAULT_DE
+
 # Nepali (Nepal)
 # -----------------
 ne: &DEFAULT_NE
@@ -453,5 +491,92 @@ ne: &DEFAULT_NE
   loading_label              : "लोड हुँदैछ ..."
 ne-NP:
   <<: *DEFAULT_NE
+
+# Korean
+# --------------
+ko: &DEFAULT_KO
+  page                       : "페이지"
+  pagination_previous        : "이전"
+  pagination_next            : "다음"
+  breadcrumb_home_label      : "Home"
+  breadcrumb_separator       : "/"
+  menu_label                 : "토글 메뉴"
+  toc_label                  : "On This Page"
+  ext_link_label             : "직접 링크"
+  less_than                  : "최대"
+  minute_read                : "분 소요"
+  share_on_label             : "공유하기"
+  meta_label                 :
+  tags_label                 : "태그:"
+  categories_label           : "카테고리:"
+  date_label                 : "업데이트:"
+  comments_label             : "댓글남기기"
+  comments_title             : "댓글"
+  more_label                 : "더 보기"
+  related_label              : "참고"
+  follow_label               : "팔로우:"
+  feed_label                 : "피드"
+  powered_by                 : "Powered by"
+  website_label              : "웹사이트"
+  email_label                : "이메일"
+  recent_posts               : "최근 포스트"
+  undefined_wpm              : "Undefined parameter words_per_minute at _config.yml"
+  comment_form_info          : "이메일은 공개되지 않습니다. 작성 필요 필드:"
+  comment_form_comment_label : "댓글"
+  comment_form_md_info       : "마크다운을 지원합니다."
+  comment_form_name_label    : "이름"
+  comment_form_email_label   : "이메일"
+  comment_form_website_label : "웹사이트(선택사항)"
+  comment_btn_submit         : "댓글 등록"
+  comment_btn_submitted      : "등록됨"
+  comment_success_msg        : "감사합니다! 댓글이 머지된 후 확인하실 수 있습니다."
+  comment_error_msg          : "댓글 등록에 문제가 있습니다. 필요 필드를 작성했는지 확인하고 다시 시도하세요."
+  loading_label              : "로딩중..."
+ko-KR:
+  <<: *DEFAULT_KO
+
+# Russian / Русский
+# -----------------
+ru: &DEFAULT_RU
+  page                       : "Страница"
+  pagination_previous        : "Предыдущая"
+  pagination_next            : "Следующая"
+  breadcrumb_home_label      : "Главная"
+  breadcrumb_separator       : "/"
+  menu_label                 : "Выпадающее меню"
+  toc_label                  : "Содержание"
+  ext_link_label             : "Прямая ссылка"
+  less_than                  : "менее"
+  minute_read                : "мин на чтение"
+  share_on_label             : "Поделиться"
+  meta_label                 :
+  tags_label                 : "Метки:"
+  categories_label           : "Разделы:"
+  date_label                 : "Дата изменения:"
+  comments_label             : "Оставить комментарий"
+  comments_title             : "Комментарии"
+  more_label                 : "Читать далее"
+  related_label              : "Вам также может понравиться"
+  follow_label               : "Связаться со мной:"
+  feed_label                 : "RSS-лента"
+  powered_by                 : "Сайт работает на"
+  website_label              : "Сайт"
+  email_label                : "Электронная почта"
+  recent_posts               : "Свежие записи"
+  undefined_wpm              : "Не определён параметр words_per_minute в _config.yml"
+  comment_form_info          : "Ваш адрес электронной почты не будет опубликован. Обязательные поля помечены"
+  comment_form_comment_label : "Комментарий"
+  comment_form_md_info       : "Поддерживается синтаксис Markdown."
+  comment_form_name_label    : "Имя"
+  comment_form_email_label   : "Электронная почта"
+  comment_form_website_label : "Ссылка на сайт (необязательно)"
+  comment_btn_submit         : "Оставить комментарий"
+  comment_btn_submitted      : "Отправлено"
+  comment_success_msg        : "Спасибо за Ваш комментарий! Он будет опубликован на сайте после проверки."
+  comment_error_msg          : "К сожалению, произошла ошибка с отправкой комментария. Пожалуйста, убедитесь, что все обязательные поля заполнены и попытайтесь снова."
+  loading_label              : "Отправка..."
+ru-RU:
+  <<: *DEFAULT_RU
+
 # Another locale
 # --------------
