@@ -23,4 +23,5 @@ group :jekyll_plugins do
   gem "jekyll-gist"
   gem "jekyll-feed"
   gem "jemoji"
+  gem "jekyll-archives" # https://github.com/jekyll/jekyll-archives
 end
