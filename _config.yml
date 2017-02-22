@@ -244,3 +244,10 @@ defaults:
       comments: # true
       share: true
       related: true
+  # all Jekyll Pages and _pages collection
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
