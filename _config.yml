@@ -193,6 +193,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-archives # https://github.com/jekyll/jekyll-archives
 
 
 # Archives
