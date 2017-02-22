@@ -95,6 +95,38 @@ If you forked or downloaded the `minimal-mistakes-jekyll` repo you can safely re
 
 Depending on the path you took installing Minimal Mistakes you'll setup things a little differently.
 
+### Bootstrapping and Serving the Theme-Gem with JekyllPlus
+
+JekyllPlus is a Ruby gem developed to simplify the setup and serving of Jekyll Sites with gem-based Themes that have template files within the `_data` directory, and a custom config file.<br/>
+
+  1. Install the latest **serve-ready** (> v4.2.2) version of Minimal-Mistakes theme-gem (if you did not already) and the JekyllPlus gem:
+
+  ```sh
+  # Install the 2 gems in one stretch
+  #
+  $ gem install minimal-mistakes-jekyll jekyll-plus
+
+  # or just the jekyll-plus gem
+  #
+  $ gem install jekyll-plus
+  ```
+
+  2. Install your new Jekyll Site locally with JekyllPlus' `new-site` command
+
+  ```
+  $ jekyll+ new-site my-blog --theme minimal-mistakes-jekyll
+  ```
+
+  3. Build / Serve your new site with JekyllPlus
+
+  ```
+  $ bundle exec jekyll+ serve
+  ```
+
+And there.. you're all set to edit and preview your Jekyll Site at `http://localhost:4000`.<br/>
+What JekyllPlus did was to automatically configure the Gemfile to use this theme and the `jekyll-plus` plugin, and, additionally installed the [Minimal Mistakes Configuration file](https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml) for you.
+
+
 ### Starting Fresh
 
 Starting with an empty folder and `Gemfile` you'll need to copy or re-create this [default `_config.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml) file. For a full explanation of every setting be sure to read the [**Configuration**]({{ "/docs/configuration/" | absolute_url }}) section.
