@@ -45,6 +45,8 @@ bundle install
 
 Fork the [Minimal Mistakes theme](https://github.com/mmistakes/minimal-mistakes/fork), then rename the repo to **USERNAME.github.io** --- replacing **USERNAME** with your GitHub username.
 
+Delete or disable the line with `theme:` key in the default `_config.yml` (Simply add a `#` at the starting of the line.)
+
 <figure>
   <img src="{{ '/assets/images/mm-theme-fork-repo.png' | absolute_url }}" alt="fork Minimal Mistakes">
 </figure>

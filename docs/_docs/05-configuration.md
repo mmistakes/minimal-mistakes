@@ -22,6 +22,8 @@ If you're using the Ruby gem version of the theme you'll need this line to activ
 theme: minimal-mistakes-jekyll
 ```
 
+Included by default, you'll have to remove or disable it if not using the gem-based version.
+
 ### Site Locale
 
 `site.locale` is used to declare the primary language for each web page within the site.
