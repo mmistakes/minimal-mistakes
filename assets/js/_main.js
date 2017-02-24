@@ -70,3 +70,17 @@ $(document).ready(function(){
   });
 
 });
+
+// AnchorJS init
+anchors.options = {
+  visible: 'touch',
+  icon: '\uf02e' // http://fontawesome.io/icon/bookmark/
+}
+anchors.add(
+  '.page__content > h1,' +
+  '.page__content > h2,' +
+  '.page__content > h3,' +
+  '.page__content > h4,' +
+  '.page__content > h5,' +
+  '.page__content > h6'
+)
