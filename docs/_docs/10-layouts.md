@@ -7,7 +7,7 @@ single_layout_gallery:
     alt: "single layout with header example"
   - image_path: /assets/images/mm-layout-single-meta.png
     alt: "single layout with comments and related posts"
-modified: 2017-01-24T10:52:47-05:00
+modified: 2017-02-24T15:23:34-05:00
 ---
 
 {% include toc icon="columns" title="Included Layouts" %}
@@ -176,7 +176,7 @@ title: "Posts by Tags"
 author_profile: true
 ---
 
-{% include group-by-array collection=site.posts field="tags" %}
+{% raw %}{% include group-by-array collection=site.posts field="tags" %}
 
 {% for tag in group_names %}
   {% assign posts = group_items[forloop.index0] %}
@@ -184,7 +184,7 @@ author_profile: true
   {% for post in posts %}
     {% include archive-single.html %}
   {% endfor %}
-{% endfor %}
+{% endfor %}{% endraw %}
 ```
 
 ### Home Page
