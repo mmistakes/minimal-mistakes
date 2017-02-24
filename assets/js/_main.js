@@ -2,48 +2,52 @@
    jQuery plugin settings and other scripts
    ========================================================================== */
 
-$(document).ready(function(){
-
+$(() => {
   // Sticky footer
-  var bumpIt = function() {
-      $('body').css('margin-bottom', $('.page__footer').outerHeight(true));
-    },
-    didResize = false;
-
-  bumpIt();
-
-  $(window).resize(function() {
-    didResize = true;
-  });
-  setInterval(function() {
-    if(didResize) {
-      didResize = false;
-      bumpIt();
+  var didResize = false
+  const bumpIt = () => {
+    $('body').css('margin-bottom', $('.page__footer').outerHeight(true))
+  }
+  bumpIt()
+  $(window).resize(() => {
+    didResize = true
+  })
+  setInterval(() => {
+    if (didResize) {
+      didResize = false
+      bumpIt()
     }
-  }, 250);
+  }, 250)
 
   // FitVids init
-  $("#main").fitVids();
+  $('#main').fitVids()
 
   // Follow menu drop down
-  $(".author__urls-wrapper button").on("click", function() {
-    $(".author__urls").fadeToggle("fast", function() {});
-    $(".author__urls-wrapper button").toggleClass("open");
-  });
+  $('.author__urls-wrapper button').on('click', () => {
+    $('.author__urls').fadeToggle('fast', () => {})
+    $('.author__urls-wrapper button').toggleClass('open')
+  })
 
   // init smooth scroll
-  $("a").smoothScroll({offset: -20});
+  $('a').smoothScroll({
+    offset: -20,
+    beforeScroll: (opts) => {
+      opts.link
+        ? history.pushState({}, document.title, opts.link.href)
+        : false
+    }
+  })
 
   // add lightbox class to all image links
-  $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").addClass("image-popup");
+  $('a[href$=".jpg"],a[href$=".jpeg"],a[href$=".JPG"],a[href$=".png"],a[href$=".gif"]').addClass('image-popup')
 
   // Magnific-Popup options
-  $(".image-popup").magnificPopup({
-    // disableOn: function() {
+  $('.image-popup').magnificPopup({
+    // disableOn: () => {
     //   if( $(window).width() < 500 ) {
-    //     return false;
+    //     return false
     //   }
-    //   return true;
+    //   return true
     // },
     type: 'image',
     tLoading: 'Loading image #%curr%...',
@@ -60,13 +64,12 @@ $(document).ready(function(){
     // make it unique to apply your CSS animations just to this exact popup
     mainClass: 'mfp-zoom-in',
     callbacks: {
-      beforeOpen: function() {
+      beforeOpen: () => {
         // just a hack that adds mfp-anim class to markup
-        this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
+        this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim')
       }
     },
     closeOnContentClick: true,
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
-  });
-
-});
+  })
+})
