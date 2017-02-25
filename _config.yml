@@ -77,13 +77,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "PosiTUne Saxonia"
+  name             : "Team PosiTUne Saxonia"
   avatar           : "/assets/images/PosiTUne_Logo_400px_40px.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "CanSat-Team des DLR_School_Lab TU Dresden"
   location         : "Dresden"
   email            : "earthturadios[ät]gmail[punkt]com"
   uri              :
   bitbucket        :
+  cansat           : "http://cansat.de/wettbewerb_teams.html"
   codepen          :
   dribbble         :
   flickr           :

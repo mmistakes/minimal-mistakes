@@ -5,3 +5,10 @@
     </a>
   </li>
 -->
+{% if author.cansat %}
+    <li>
+        <a href="{{ author.cansat }}" itemprop="sameAs">
+            <i class="fa fa-fw fa-rocket" aria-hidden="true"></i> CanSat-Webseite
+        </a>
+    </li>
+{% endif %}
