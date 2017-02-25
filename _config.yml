@@ -185,7 +185,8 @@ gems:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-  - jekyll-archives # https://github.com/jekyll/jekyll-archives
+# - jekyll-paginate-v2
+# - jekyll-archives # https://github.com/jekyll/jekyll-archives
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -194,7 +195,8 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-#  - jekyll-archives # https://github.com/jekyll/jekyll-archives
+# - jekyll-paginate-v2
+# - jekyll-archives # https://github.com/jekyll/jekyll-archives
 
 
 # Archives
@@ -208,22 +210,22 @@ whitelist:
 #  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
 #  - <base_path/my-awesome-category/index.html ~> path: /
 category_archive:
-  type: jekyll-archives # liquid
+  type: liquid # liquid
   path: /categories/
 tag_archive:
   type: jekyll-archives # liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layouts:
-    category: archive-taxonomy
-    tag: archive-taxonomy
-  permalinks:
-    category: /categories/:name/
-    tag: /tags/:name/
+#jekyll-archives:
+#  enabled:
+#    - categories
+#    - tags
+#  layouts:
+#    category: archive-taxonomy
+#    tag: archive-taxonomy
+#  permalinks:
+#    category: /categories/:name/
+#    tag: /tags/:name/
 
 
 # HTML Compression
@@ -247,3 +249,28 @@ defaults:
       comments: true
       share: true
       related: true
+
+# Plugin: Pagination (jekyll-paginate-v2)
+#pagination:
+#    enabled      : true
+#    debug        : false
+#    per_page     : 10
+#    permalink    : "/page/:num/"
+#    title        : ":title - Page :num of :max"
+#    limit        : 0
+#    sort_field   : "date"
+#    sort_reverse : true
+
+# Plugin: Auto Pages (jekyll-paginate-v2)
+#autopages:
+#    enabled      : true
+#    categories:
+#        enabled    : false
+#    collections:
+#        enabled    : false
+#    tags:
+#        enabled    : true
+#        layouts:
+#            - "autopage_tags.html"
+#    title      : ":tag" # :tag is replaced by the tag name
+#    permalink  : "/tag/:tag"
