@@ -150,7 +150,7 @@ markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
-incremental: false
+incremental: true #false
 
 
 # Markdown Processing
@@ -172,7 +172,7 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+permalink: /:year/:month/:day/:title/ # date, /:year/:month/:day/:title/, /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -194,7 +194,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-  - jekyll-archives # https://github.com/jekyll/jekyll-archives
+#  - jekyll-archives # https://github.com/jekyll/jekyll-archives
 
 
 # Archives
