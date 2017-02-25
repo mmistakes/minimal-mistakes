@@ -1,7 +1,15 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+    - title: "Team"
+      url: /pages/team/
+    - title: "Sponsoren"
+      url: /pages/sponsoren/
+    - title: "CanSat 2016"
+      url: /pages/Cansat-2016/
+    - title: "Impressum"
+      url: /pages/Impressum/
+  # - title: "Quick-Start Guide"
+  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
