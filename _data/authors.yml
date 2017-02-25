@@ -1,0 +1,68 @@
+# /_data/authors.yml
+# https://mmistakes.github.io/minimal-mistakes/docs/authors/
+
+# Site Author
+#author:
+#  name             : 
+#  avatar           : # path of avatar image, e.g. "/assets/images/authors/author.jpg"
+#  bio              : 
+#  location         : 
+#  email            : 
+#  uri              :
+#  bitbucket        :
+#  codepen          :
+#  dribbble         :
+#  flickr           :
+#  facebook         :
+#  foursquare       :
+#  github           : 
+#  google_plus      :
+#  keybase          :
+#  instagram        :
+#  lastfm           :
+#  linkedin         :
+#  pinterest        :
+#  soundcloud       :
+#  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
+#  steam            :
+#  tumblr           :
+#  twitter          :
+#  vine             :
+#  weibo            :
+#  xing             :
+#  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+
+Diego:
+    name: "Diego Jahn"
+    avatar: "/assets/images/authors/diego.png"
+    bio: "Teambetreuer"
+    location: "Dresden"
+    email: "Diego.Jahn[ät]tu-dresden[punkt]de"
+    github: "jdieg0"
+
+Dominik:
+    name: "Dominik"
+
+Elias:
+    name: "Elias"
+
+Fabian:
+    name: "Fabian"
+
+Haucke:
+    name: "Haucke"
+
+Jan:
+    name: "Jan"
+
+Janina:
+    name: "Janina"
+
+Max:
+    name: "Max"
+
+Till:
+    name: "Till"
+
+Timon:
+    name: "Timon"
