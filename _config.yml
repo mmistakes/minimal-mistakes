@@ -15,7 +15,7 @@ url                      : "https://positune.github.io" # the base hostname & pr
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "PosiTUne/positune.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/PosiTUne_Teaser_500x300px.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-breadcrumbs              : false # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : "staticman" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
@@ -173,7 +173,7 @@ sass:
 
 
 # Outputting
-permalink: /:year/:month/:day/:title/ # date, /:year/:month/:day/:title/, /:categories/:title/
+permalink: /:categories/:title #/:year/:month/:day/:title/ # date, /:year/:month/:day/:title/, /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -214,7 +214,7 @@ category_archive:
   type: liquid # liquid
   path: /categories/
 tag_archive:
-  type: jekyll-archives # liquid
+  type: liquid # liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
 #jekyll-archives:
