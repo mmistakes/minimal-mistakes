@@ -72,7 +72,7 @@ $(document).ready(function(){
 
 // Do your not jQuery stuff down here
 (function() {
-  use strict;
+  "use strict";
 
   // Run function is called after DOM is ready
   function run () {
