@@ -1,3 +1,17 @@
+## [4.3.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.3.0)
+
+### Enhancements
+
+- Add workaround to allow theme gem's `/assets/js/main.min.js` file to be overridden by a local version. Simply add the following YAML Front Matter to the file:
+  
+  ```
+  ---
+  layout: 
+  ---
+  ```
+
+  Any local customizations you make to `/assets/js/main.min.js` should now replace the theme gem's version.
+
 ## [4.2.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.2.2)
 
 ### Enhancements
