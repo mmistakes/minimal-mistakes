@@ -68,5 +68,33 @@ $(document).ready(function(){
     closeOnContentClick: true,
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   });
-
 });
+
+// Do your not jQuery stuff down here
+(function() {
+  "use strict";
+
+  // Run function is called after DOM is ready
+  function run () {
+
+    // AnchorJS init
+    anchors.options = {
+      visible: 'touch',
+      icon: '\uf02e' // http://fontawesome.io/icon/bookmark/
+    }
+    anchors.add(
+      '.page__content > h1,' +
+      '.page__content > h2,' +
+      '.page__content > h3,' +
+      '.page__content > h4,' +
+      '.page__content > h5,' +
+      '.page__content > h6'
+    )
+  }
+
+  // Cross-browser ready function for use with vanilla JavaScripts
+  // not requiring jQuery to execute. Modify at your own peril.
+  /complete|loaded|interactive/.test(document.readyState)
+    ? run()
+    : document.addEventListener('DOMContentLoaded', run, false)
+})() // IIFE creates closure to prevent variable hoisting
