@@ -9,8 +9,8 @@ header:
   teaser: cover_Untangled_LisaDamour.jpg
   thumb: cover_Untangled_LisaDamour_150.jpg
 image: 
-  teaser: cover_Untangled_LisaDamour.jpg
-  thumb: cover_Untangled_LisaDamour_150.jpg
+  teaser: "cover_Untangled_LisaDamour.jpg"
+  thumb: "cover_Untangled_LisaDamour_150.jpg"
 tags: [life lessons, parenting, psychology, sociology,]
 ---
 
