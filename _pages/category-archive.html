@@ -1,8 +1,9 @@
 ---
 layout: archive
 permalink: /categories/
-title: "Posts by Category"
-author_profile: true
+title: "Artikel sortiert nach Kategorien"
+author_profile: false
+reading_time: false
 ---
 
 {% include group-by-array collection=site.posts field="categories" %}
@@ -10,7 +11,9 @@ author_profile: true
 {% for category in group_names %}
   {% assign posts = group_items[forloop.index0] %}
   <h2 id="{{ category | slugify }}" class="archive__subtitle">{{ category }}</h2>
-  {% for post in posts %}
-    {% include archive-single.html %}
-  {% endfor %}
+  <div class="grid__wrapper">
+    {% for post in posts %}
+      {% include archive-single.html type="grid" %}
+    {% endfor %}
+  </div>
 {% endfor %}

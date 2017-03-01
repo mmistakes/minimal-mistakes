@@ -1,8 +1,11 @@
 ---
 layout: archive
+classes:
+  - dark-theme
 permalink: /tags/
-title: "Posts by Tags"
-author_profile: true
+title: "Artikel sortiert nach Tags"
+author_profile: false
+reading_time: false
 ---
 
 {% include group-by-array collection=site.posts field="tags" %}
@@ -10,7 +13,9 @@ author_profile: true
 {% for tag in group_names %}
   {% assign posts = group_items[forloop.index0] %}
   <h2 id="{{ tag | slugify }}" class="archive__subtitle">{{ tag }}</h2>
-  {% for post in posts %}
-    {% include archive-single.html %}
-  {% endfor %}
+  <div class="grid__wrapper">
+    {% for post in posts %}
+      {% include archive-single.html type="grid" %}
+    {% endfor %}
+  </div>
 {% endfor %}

@@ -1,0 +1,19 @@
+---
+layout: archive
+permalink: /archiv/
+title: "Archiv"
+author_profile: false
+reading_time: false
+---
+
+{% capture written_month %}'None'{% endcapture %}
+<div class="grid__wrapper">
+  {% for post in site.posts %}
+    {% capture month %}{{ post.date | date: '%m/%Y' }}{% endcapture %}
+    {% if month != written_month %}
+      <h2 id="{{ month | slugify }}" class="archive__subtitle">{{ month }}</h2>
+      {% capture written_month %}{{ month }}{% endcapture %}
+    {% endif %}
+    {% include archive-single.html type="grid" %}
+  {% endfor %}
+</div>
