@@ -10,6 +10,7 @@ header:
   teaser: "cover_AReportersLife_WalterCronkite.jpg"
   thumb: "cover_AReportersLife_WalterCronkite_150.jpg"
 image: 
+  feature: "cover_AReportersLife_WalterCronkite.jpg"
   teaser: "cover_AReportersLife_WalterCronkite.jpg"
   thumb: "cover_AReportersLife_WalterCronkite_150.jpg"
 tags: [biography, history, life lessons, sociology]
