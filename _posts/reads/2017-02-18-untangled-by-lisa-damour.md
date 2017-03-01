@@ -5,9 +5,6 @@ tweet: "Untangled by Dr. Lisa Damour helps parents to understand their teen girl
 date: 2017-02-18
 modified: 2017-02-18
 category: reads
-header: 
-  teaser: cover_Untangled_LisaDamour.jpg
-  thumb: cover_Untangled_LisaDamour_150.jpg
 image: 
   teaser: "cover_Untangled_LisaDamour.jpg"
   thumb: "cover_Untangled_LisaDamour_150.jpg"

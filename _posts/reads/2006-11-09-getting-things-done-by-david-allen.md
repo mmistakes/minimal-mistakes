@@ -7,8 +7,8 @@ date: 2006-11-09
 modified: 2006-11-09
 category: reads
 image: 
-  teaser: cover_GettingThingsDone_DavidAllen.jpg
-  thumb: cover_GettingThingsDone_DavidAllen_150.jpg
+  teaser: "cover_GettingThingsDone_DavidAllen.jpg"
+  thumb: "cover_GettingThingsDone_DavidAllen_150.jpg"
 tags: [productivity]
 ---
 

@@ -2,12 +2,12 @@
 title: "Book by Author"
 excerpt: &excerpt "Excerpt about the book."
 tweet: "Keep it short." 
-date: 2017-02-xx
-modified: 2017-02-xx
+date: 2017-03-xx
+modified: 2017-03-xx
 category: reads
 image: 
-  teaser: cover_title_author.jpg
-  thumb: cover_title_author_150.jpg
+  teaser: "cover_title_author.jpg"
+  thumb: "cover_title_author_150.jpg"
 tags: [art, comedy, economics, entertainment, finances, geography, history, life lessons,  parenting, productivity, psychology, sociology, sci-fi, software development, technology, technical writing]
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Dating Smarts by Amy Lang MD"
+title: "Dating Smarts by Amy Lang"
 excerpt: &excerpt "If you're a parent to a pre-teen or teenager, buy this 
 book. Read it. Have your child read it. Discuss it with them. Openly."
 tweet: "Sex and relationships for teens."
@@ -7,10 +7,12 @@ date: 2016-08-04
 modified: 2016-08-04
 category: reads
 image: 
-  teaser:
-  thumb:
+  teaser: "cover_DatingSmarts_AmyLang.jpg"
+  thumb: "cover_DatingSmarts_AmyLang.jpg"
 tags: [parenting]
 ---
+
+[![Dating Smarts by Amy Lang](/images/cover_DatingSmarts_AmyLang.jpg "Dating Smarts by Amy Lang"){: .align-right }](https://www.amazon.com/Dating-Smarts-Every-Needs-Relate-ebook/dp/B00N9MQ1YA)
 
 If you're a parent to a pre-teen or teenager, buy this book. Read it. 
 Have your child read it. Discuss it with them. Openly.

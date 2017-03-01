@@ -7,8 +7,8 @@ date: 2006-09-13
 modified: 2006-09-13
 category: reads
 image: 
-  teaser: cover_Freakonomics_StevenLevittAndStephenDubner.jpg
-  thumb: cover_Freakonomics_StevenLevittAndStephenDubner_150.jpg
+  teaser: "cover_Freakonomics_StevenLevittAndStephenDubner.jpg"
+  thumb: "cover_Freakonomics_StevenLevittAndStephenDubner_150.jpg"
 tags: [economics]
 ---
 
