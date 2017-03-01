@@ -7,6 +7,9 @@ tweet: "Political satire that still applies."
 date: 2016-08-02
 modified: 2016-08-02
 category: reads
+header: 
+  teaser: "cover_AnimalFarm_GeorgeOrwell.jpg"
+  thumb: "cover_AnimalFarm_GeorgeOrwell_150.jpg"
 image: 
   teaser: "cover_AnimalFarm_GeorgeOrwell.jpg"
   thumb: "cover_AnimalFarm_GeorgeOrwell_150.jpg"
