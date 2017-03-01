@@ -3,7 +3,7 @@ main:
     - title: "Team"
       url: /team/
     - title: "Mission"
-      url /mission/
+      url: /mission/
     - title: "Sponsoren"
       url: /sponsoren/
     - title: "CanSat 2016"
