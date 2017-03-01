@@ -250,8 +250,8 @@ defaults:
       comments: true
       share: true
       related: true
-      #header:
-      # image: /assets/images/PosiTUne_Logo_Banner_1280px.png
+      header:
+       image: /assets/images/PosiTUne_Banner_unten_4.jpg
 
 
 # Plugin: Pagination (jekyll-paginate-v2)
