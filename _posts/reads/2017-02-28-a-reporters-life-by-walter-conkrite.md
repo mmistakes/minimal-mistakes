@@ -6,6 +6,9 @@ tweet: "A journalist's descriptions of the twentieth century."
 date: 2017-02-28
 modified: 2017-02-28
 category: reads
+header: 
+  teaser: "cover_AReportersLife_WalterCronkite.jpg"
+  thumb: "cover_AReportersLife_WalterCronkite_150.jpg"
 image: 
   teaser: "cover_AReportersLife_WalterCronkite.jpg"
   thumb: "cover_AReportersLife_WalterCronkite_150.jpg"
