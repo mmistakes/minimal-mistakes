@@ -80,7 +80,7 @@ author:
   name             : "Team PosiTUne Saxonia"
   avatar           : "/assets/images/PosiTUne_Logo_400px_40px.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "CanSat-Team des DLR_School_Lab TU Dresden"
-  location         : "Dresden"
+  location         : # "Dresden"
   email            : "earthturadios[ät]gmail[punkt]com"
   uri              :
   bitbucket        :
@@ -244,12 +244,15 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: single # single
       author_profile: true
       read_time: true
       comments: true
       share: true
       related: true
+      #header:
+      # image: /assets/images/PosiTUne_Logo_Banner_1280px.png
+
 
 # Plugin: Pagination (jekyll-paginate-v2)
 #pagination:
