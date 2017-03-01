@@ -15,7 +15,7 @@ url                      : "https://positune.github.io" # the base hostname & pr
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "PosiTUne/positune.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/PosiTUne_Teaser_500x300px.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-breadcrumbs              : true # true, false (default)
+breadcrumbs              : # true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : "staticman" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
@@ -252,7 +252,19 @@ defaults:
       related: true
       header:
        image: /assets/images/PosiTUne_Banner_unten_4.jpg
-
+  # _pages
+  - scope:
+      path: _pages
+      type: pages
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: false
+      share: false
+      related: false
+      header:
+        image: /assets/images/PosiTUne_Banner_unten_4.jpg
 
 # Plugin: Pagination (jekyll-paginate-v2)
 #pagination:

@@ -1,13 +1,13 @@
 # main links
 main:
     - title: "Team"
-      url: /pages/team/
+      url: /team/
     - title: "Sponsoren"
-      url: /pages/sponsoren/
+      url: /sponsoren/
     - title: "CanSat 2016"
-      url: /pages/Cansat-2016/
+      url: /cansat-2016/
     - title: "Impressum"
-      url: /pages/Impressum/
+      url: /impressum/
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
