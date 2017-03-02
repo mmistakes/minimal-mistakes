@@ -67,6 +67,14 @@
         </li>
       {% endif %}
 
+      {% if author.medium %}
+        <li>
+          <a href="https://medium.com/@{{ author.medium }}" itemprop="sameAs">
+            <i class="fa fa-fw fa-medium" aria-hidden="true"></i> Medium
+          </a>
+        </li>
+      {% endif %}
+
       {% if author.facebook %}
         <li>
           <a href="https://www.facebook.com/{{ author.facebook }}" itemprop="sameAs">
