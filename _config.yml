@@ -151,7 +151,7 @@ markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
-incremental: true #false
+incremental: false #false
 
 
 # Markdown Processing
@@ -236,6 +236,11 @@ compress_html:
   ignore:
     envs: development
 
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -265,6 +270,14 @@ defaults:
       related: false
       header:
         image: /assets/images/PosiTUne_Banner_unten_4.jpg
+  # _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: single
+      author_profile: false
+      share: true
 
 # Plugin: Pagination (jekyll-paginate-v2)
 #pagination:
