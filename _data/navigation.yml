@@ -10,6 +10,8 @@ main:
       url: /sponsoren/
     - title: "CanSat 2016"
       url: /cansat-2016/
+    - title: "Archiv"
+      url: /artikel/archiv/
     - title: "Impressum"
       url: /impressum/
   # - title: "Quick-Start Guide"
