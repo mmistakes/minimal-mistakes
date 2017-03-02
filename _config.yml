@@ -254,14 +254,14 @@ defaults:
        image: /assets/images/PosiTUne_Banner_unten_4.jpg
   # _pages
   - scope:
-      path: _pages
+      path: ""
       type: pages
     values:
       layout: single
       author_profile: false
       read_time: false
       comments: false
-      share: false
+      share: true
       related: false
       header:
         image: /assets/images/PosiTUne_Banner_unten_4.jpg
