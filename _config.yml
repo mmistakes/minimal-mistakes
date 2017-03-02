@@ -256,7 +256,7 @@ defaults:
       share: true
       related: true
       header:
-       image: /assets/images/PosiTUne_Banner_320px.jpg
+       image: /assets/images/PosiTUne_Banner_1280x480px.jpg
   # _pages
   - scope:
       path: ""
@@ -269,7 +269,7 @@ defaults:
       share: true
       related: false
       header:
-        image: /assets/images/PosiTUne_Banner_320px.jpg
+        image: /assets/images/PosiTUne_Banner_1280x480px.jpg
   # _docs
   - scope:
       path: ""
@@ -279,7 +279,7 @@ defaults:
       author_profile: false
       share: true
       header:
-       image: /assets/images/PosiTUne_Banner_320px.jpg
+       image: /assets/images/PosiTUne_Banner_1280x480px.jpg
       sidebar:
        nav: "docs"
 
