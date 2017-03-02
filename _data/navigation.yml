@@ -20,3 +20,9 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+docs:
+    - title: Allgemein
+      children:
+        - title: Home
+          url: /docs/home/

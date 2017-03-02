@@ -278,6 +278,10 @@ defaults:
       layout: single
       author_profile: false
       share: true
+      header:
+       image: /assets/images/PosiTUne_Banner_Doku.jpg
+      sidebar:
+       nav: "docs"
 
 # Plugin: Pagination (jekyll-paginate-v2)
 #pagination:
