@@ -404,7 +404,7 @@ de: &DEFAULT_DE
   pagination_next            : "Nächste"
   breadcrumb_home_label      : "Home"
   breadcrumb_separator       : "/"
-  menu_label                 :
+  menu_label                 : "Menü einblenden"
   toc_label                  : "Auf dieser Seite"
   ext_link_label             : "Direkter Link"
   less_than                  : "weniger als"
