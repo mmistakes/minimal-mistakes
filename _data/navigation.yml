@@ -4,6 +4,8 @@ main:
       url: /team/
     - title: "Mission"
       url: /mission/
+    - title: "Dokumentation"
+      url: /docs/home/
     - title: "Sponsoren"
       url: /sponsoren/
     - title: "CanSat 2016"

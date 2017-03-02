@@ -2,7 +2,8 @@
 permalink: /docs/home/
 title: Dokumentation
 ---
-Hier entsteht demnächst eine technische Dokumentation unseres CanSats, d. h. der
+{% include toc icon="rocket" title="Dokumentation" %}
+Hier entsteht demnächst eine technische Dokumentation unseres CanSats, d. h. eine Beschreibung der
 
 - Konstruktion
 - elektronischen Komponenten
