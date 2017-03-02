@@ -4,7 +4,7 @@ excerpt: &excerpt ""
 tweet: "Discoveries #: DESCRIPTION." 
 modified: YYYY-MM-DD
 category: discoveries
-tags: [,]
+tags: [art, biography, comedy, economics, entertainment, finances, geography, history, life lessons, parenting, productivity, psychology, sociology, sci-fi, software development, technology, technical writing, writing]
 fullwidth: true
 featured: 
 ads: false
