@@ -2,6 +2,7 @@
 layout: archive
 permalink: /categories/
 title: "Artikel sortiert nach Kategorien"
+read_time: true
 ---
 
 {% include group-by-array collection=site.posts field="categories" %}
