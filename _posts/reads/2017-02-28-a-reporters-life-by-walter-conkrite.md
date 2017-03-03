@@ -6,13 +6,7 @@ tweet: "A journalist's descriptions of the twentieth century."
 date: 2017-02-28
 modified: 2017-02-28
 category: reads
-header: 
-  teaser: "cover_AReportersLife_WalterCronkite.jpg"
-  thumb: "cover_AReportersLife_WalterCronkite_150.jpg"
-image: "cover_AReportersLife_WalterCronkite_150.jpg"
-  featured: "cover_AReportersLife_WalterCronkite.jpg"
-  teaser: "cover_AReportersLife_WalterCronkite.jpg"
-  thumb: "cover_AReportersLife_WalterCronkite_150.jpg"
+image: "cover_AReportersLife_WalterCronkite_150.jpg""
 tags: [biography, history, life lessons, sociology]
 ---
 
