@@ -107,7 +107,7 @@ analytics:
 # Site Author
 author:
   name             : "Gabriel Araujo"
-  avatar           : "avatar.png"
+  avatar           : "images/avatar.png"
   bio              : "I am an amazing person."
   location         : "Brasilia, Brazil"
   email            : "gabriel.araujo.5000@gmail.com"
