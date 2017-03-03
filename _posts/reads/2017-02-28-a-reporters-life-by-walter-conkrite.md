@@ -9,7 +9,7 @@ category: reads
 header: 
   teaser: "cover_AReportersLife_WalterCronkite.jpg"
   thumb: "cover_AReportersLife_WalterCronkite_150.jpg"
-image: 
+image: "cover_AReportersLife_WalterCronkite_150.jpg"
   featured: "cover_AReportersLife_WalterCronkite.jpg"
   teaser: "cover_AReportersLife_WalterCronkite.jpg"
   thumb: "cover_AReportersLife_WalterCronkite_150.jpg"
