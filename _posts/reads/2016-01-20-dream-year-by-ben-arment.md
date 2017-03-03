@@ -6,7 +6,7 @@ tweet: "Change how you view your hobbies."
 date: 2016-01-20
 modified: 2016-02-21
 category: reads
-image: 
+image: "DreamYear_BenArment_150.jpg"
   teaser: "DreamYear_BenArment.jpg"
   thumb: "DreamYear_BenArment_150.jpg"
 tags: [productivity]

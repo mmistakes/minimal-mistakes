@@ -6,7 +6,7 @@ tweet: "Best practices for technical writing in software."
 date: 2016-08-05
 modified: 2016-08-05
 category: reads
-image: 
+image: "cover_ModernTechnicalWriting_AndrewEtter_150.jpg"
   teaser: "cover_ModernTechnicalWriting_AndrewEtter.jpg"
   thumb: "cover_ModernTechnicalWriting_AndrewEtter_150.jpg"
 tags: [technical-writing, software-development]

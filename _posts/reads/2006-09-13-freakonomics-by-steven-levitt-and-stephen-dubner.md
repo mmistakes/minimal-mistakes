@@ -6,7 +6,7 @@ tweet: "Correlation causation and economics."
 date: 2006-09-13
 modified: 2006-09-13
 category: reads
-image: 
+image: "cover_Freakonomics_StevenLevittAndStephenDubner_150.jpg"
   teaser: "cover_Freakonomics_StevenLevittAndStephenDubner.jpg"
   thumb: "cover_Freakonomics_StevenLevittAndStephenDubner_150.jpg"
 tags: [economics]

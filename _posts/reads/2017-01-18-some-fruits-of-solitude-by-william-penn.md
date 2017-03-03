@@ -5,7 +5,7 @@ tweet: "A Quaker from the 1600s shares his inspirational quotes."
 date: 2017-01-18
 modified: 2017-01-18
 category: reads
-image: 
+image: "cover_SomeFruitsOfSolitude_WilliamPenn_150.jpg"
   teaser: "cover_SomeFruitsOfSolitude_WilliamPenn_150.jpg"
   thumb: "cover_SomeFruitsOfSolitude_WilliamPenn_150.jpg"
 tags: [finances, history, life lessons, productivity, psychology, sociology]

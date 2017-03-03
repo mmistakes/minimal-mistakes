@@ -6,7 +6,7 @@ tweet: "Great primer for budgeting and investing."
 date: 2016-07-22
 modified: 2016-07-22
 category: reads
-image: 
+image: "cover_TheMotleyFoolInvestmentGuideForTeens_DavidAndTomGardner_150.jpg"
   teaser: "cover_TheMotleyFoolInvestmentGuideForTeens_DavidAndTomGardner.jpg"
   thumb: "cover_TheMotleyFoolInvestmentGuideForTeens_DavidAndTomGardner_150.jpg"
 tags: [parenting, finances]

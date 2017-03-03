@@ -7,7 +7,7 @@ tweet: "Wyatt Earp in his own words."
 date: 2016-10-20
 modified: 2016-10-20
 category: reads
-image: 
+image: "cover_WyattEarpSpeaks_by_JohnRichardStephens.jpg" 
   teaser: "cover_WyattEarpSpeaks_by_JohnRichardStephens.jpg"
   thumb: "cover_WyattEarpSpeaks_by_JohnRichardStephens.jpg"
 tags: [history] 

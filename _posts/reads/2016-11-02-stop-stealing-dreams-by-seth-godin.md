@@ -5,7 +5,7 @@ tweet: "A better society through better education...a manifesto."
 date: 2016-11-02
 modified: 2016-11-02
 category: reads
-image: 
+image: "cover_StopStealingDreams_SethGodin_150.jpg" 
   teaser: "cover_StopStealingDreams_SethGodin.jpg"
   thumb: "cover_StopStealingDreams_SethGodin_150.jpg"
 tags: [history, parenting, psychology, sociology]

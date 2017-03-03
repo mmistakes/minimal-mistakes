@@ -5,7 +5,7 @@ tweet: "Dystopian society is realized."
 date: 2017-02-05
 modified: 2017-02-05
 category: reads
-image: 
+image: "cover_1984_GeorgeOrwell_150.jpg"
   teaser: "cover_1984_GeorgeOrwell.jpg"
   thumb: "cover_1984_GeorgeOrwell_150.jpg"
 tags: [entertainment, life lessons, sociology, sci-fi]
