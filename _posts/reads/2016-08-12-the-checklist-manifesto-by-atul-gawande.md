@@ -8,8 +8,8 @@ date: 2016-08-12
 modified: 2016-08-12
 category: reads
 image: "cover_TheChecklistManifesto_AtulGawande.jpg"
+header:
   teaser: "cover_TheChecklistManifesto_AtulGawande.jpg"
-  thumb: "cover_TheChecklistManifesto_AtulGawande.jpg" 
 tags: [productivity, software-development, sociology] 
 ---
 

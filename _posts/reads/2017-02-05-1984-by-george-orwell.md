@@ -6,6 +6,8 @@ date: 2017-02-05
 modified: 2017-02-05
 category: reads
 image: "cover_1984_GeorgeOrwell_150.jpg"
+header:
+  teaser: "cover_1984_GeorgeOrwell_150.jpg"
 tags: [entertainment, life lessons, sociology, sci-fi]
 ---
 

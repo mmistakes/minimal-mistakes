@@ -8,8 +8,8 @@ date: 2016-08-02
 modified: 2016-08-02
 category: reads
 image: "cover_AnimalFarm_GeorgeOrwell_150.jpg"
+header:
   teaser: "cover_AnimalFarm_GeorgeOrwell.jpg"
-  thumb: "cover_AnimalFarm_GeorgeOrwell_150.jpg"
 tags: [sociology, politics]
 ---
 

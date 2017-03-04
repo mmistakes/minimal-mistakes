@@ -7,8 +7,8 @@ date: 2016-07-28
 modified: 2016-07-28
 category: reads
 image: "cover_IAmMalala_byMalalaYousafzat_150.jpg"
+header:
   teaser: "cover_IAmMalala_byMalalaYousafzat.jpg"
-  thumb: "cover_IAmMalala_byMalalaYousafzat_150.jpg"
 tags: [sociology, life-lessons] 
 ---
 

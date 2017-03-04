@@ -9,7 +9,7 @@ category: reads
 image: "cover_AReportersLife_WalterCronkite_150.jpg"
 header:
   teaser: "cover_AReportersLife_WalterCronkite_150.jpg"
-tags: [biography, history, life lessons, sociology]
+tags: [biography, history, life lessons, politics, sociology]
 ---
 
 [![A Reporter's Life by Walter Cronkite](/images/cover_AReportersLife_WalterCronkite_150.jpg "A Reporter's Life by Walter Cronkite"){: .align-right }](https://www.amazon.com/Reporters-Life-Walter-Cronkite/dp/034541103X/)

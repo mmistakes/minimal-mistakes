@@ -8,8 +8,8 @@ date: 2016-10-20
 modified: 2016-10-20
 category: reads
 image: "cover_WyattEarpSpeaks_by_JohnRichardStephens.jpg" 
+header:
   teaser: "cover_WyattEarpSpeaks_by_JohnRichardStephens.jpg"
-  thumb: "cover_WyattEarpSpeaks_by_JohnRichardStephens.jpg"
 tags: [history] 
 ---
 

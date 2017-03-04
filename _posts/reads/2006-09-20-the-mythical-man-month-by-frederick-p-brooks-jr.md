@@ -8,8 +8,8 @@ date: 2006-09-20
 modified: 2006-09-20
 category: reads
 image: "cover_TheMythicalManMonth_FrederickPBrooksJr_150.jpg"
+header:
   teaser: "cover_TheMythicalManMonth_FrederickPBrooksJr.jpg"
-  thumb: "cover_TheMythicalManMonth_FrederickPBrooksJr_150.jpg"
 tags: [software-development]
 ---
 

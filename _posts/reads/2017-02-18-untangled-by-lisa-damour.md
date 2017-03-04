@@ -6,6 +6,8 @@ date: 2017-02-18
 modified: 2017-02-18
 category: reads
 image: "cover_Untangled_LisaDamour_150.jpg"
+header:
+  teaser: "cover_Untangled_LisaDamour_150.jpg"
 tags: [life lessons, parenting, psychology, sociology,]
 ---
 

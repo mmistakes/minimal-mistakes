@@ -6,8 +6,8 @@ date: 2006-04-13
 modified: 2006-04-13
 category: reads
 image: "cover_DontMakeMeThing_SteveKrug_150.jpg"
+header:
   teaser: "cover_DontMakeMeThing_SteveKrug.jpg"
-  thumb: "cover_DontMakeMeThing_SteveKrug_150.jpg"
 tags: [software-development]
 ---
 

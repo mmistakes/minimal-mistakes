@@ -7,8 +7,8 @@ date: 2016-01-20
 modified: 2016-02-21
 category: reads
 image: "DreamYear_BenArment_150.jpg"
+header:
   teaser: "DreamYear_BenArment.jpg"
-  thumb: "DreamYear_BenArment_150.jpg"
 tags: [productivity]
 ---
 

@@ -7,6 +7,8 @@ date: 2016-08-04
 modified: 2016-08-04
 category: reads
 image: "cover_DatingSmarts_AmyLang.jpg"
+header:
+  teaser: "cover_DatingSmarts_AmyLang.jpg"
 tags: [parenting]
 ---
 
