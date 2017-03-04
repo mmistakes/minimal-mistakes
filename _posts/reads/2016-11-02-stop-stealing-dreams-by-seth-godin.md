@@ -5,13 +5,13 @@ tweet: "A better society through better education...a manifesto."
 date: 2016-11-02
 modified: 2016-11-02
 category: reads
-image: "cover_StopStealingDreams_SethGodin_150.jpg"
+image: "cover_StopStealingDreams_SethGodin_200.jpg"
 header: 
-  teaser: "cover_StopStealingDreams_SethGodin_150.jpg"
+  teaser: "cover_StopStealingDreams_SethGodin_200.jpg"
 tags: [history, parenting, psychology, sociology]
 ---
 
-[![Stop Stealing Dreams by Seth Godin](/images/cover_StopStealingDreams_SethGodin_150.jpg "Stop Stealing Dreams by Seth Godin"){: .align-right }](https://medium.com/@thisissethsblog/stop-stealing-dreams-4116c7dbff7b#588e.big0fes75)
+[![Stop Stealing Dreams by Seth Godin](/images/cover_StopStealingDreams_SethGodin_200.jpg "Stop Stealing Dreams by Seth Godin"){: .align-right }](https://medium.com/@thisissethsblog/stop-stealing-dreams-4116c7dbff7b#588e.big0fes75)
 
 [Stop Stealing Dreams](https://medium.com/@thisissethsblog/stop-stealing-dreams-4116c7dbff7b#588e.big0fes75) 
 is a manifesto for education reform written by [Seth Godin](http://www.sethgodin.com/sg/).
