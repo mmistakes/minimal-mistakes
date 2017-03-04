@@ -9,7 +9,7 @@ modified: 2016-08-12
 category: reads
 image: "cover_TheChecklistManifesto_AtulGawande_200.jpg"
 header:
-  teaser: "cover_TheChecklistManifesto_AtulGawande_200.jpg"
+  teaser: "cover_TheChecklistManifesto_AtulGawande.jpg"
 tags: [productivity, software-development, sociology] 
 ---
 

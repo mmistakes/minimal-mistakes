@@ -6,13 +6,13 @@ tweet: "Amazing courage of a teenage girl."
 date: 2016-07-28
 modified: 2016-07-28
 category: reads
-image: "cover_IAmMalala_byMalalaYousafzat_150.jpg"
+image: "cover_IAmMalala_byMalalaYousafzat_200.jpg"
 header:
   teaser: "cover_IAmMalala_byMalalaYousafzat.jpg"
 tags: [sociology, life-lessons] 
 ---
 
-[![I Am Malala by Malala Yousafzat](/images/cover_IAmMalala_byMalalaYousafzat_150.jpg "I Am Malala by Malala Yousafzat"){: .align-right }](https://www.goodreads.com/book/show/19161872-i-am-malala)
+[![I Am Malala by Malala Yousafzat](/images/cover_IAmMalala_byMalalaYousafzat_200.jpg "I Am Malala by Malala Yousafzat"){: .align-right }](https://www.goodreads.com/book/show/19161872-i-am-malala)
 
 An interesting tale of courage and strength told through the eyes of a 
 young teenage girl. 

@@ -7,13 +7,13 @@ tweet: "Political satire that still applies."
 date: 2016-08-02
 modified: 2016-08-02
 category: reads
-image: "cover_AnimalFarm_GeorgeOrwell_150.jpg"
+image: "cover_AnimalFarm_GeorgeOrwell_200.jpg"
 header:
   teaser: "cover_AnimalFarm_GeorgeOrwell.jpg"
 tags: [sociology, politics]
 ---
 
-[![Animal Farm by George Orwell](/images/cover_AnimalFarm_GeorgeOrwell_150.jpg "Animal Farm by George Orwell"){: .align-right }](https://www.goodreads.com/book/show/7613.Animal_Farm)
+[![Animal Farm by George Orwell](/images/cover_AnimalFarm_GeorgeOrwell_200.jpg "Animal Farm by George Orwell"){: .align-right }](https://www.goodreads.com/book/show/7613.Animal_Farm)
 
 I picked up this book on a whim while perusing the shelves in [Powell's City of Books](http://powells.com) in Portland last December (2015). I hadn't read it as a young adult and wanted to give the classic story a chance to make an impression. It found a temporary home on my bookshelf next to ~50 other books waiting to be read.
 

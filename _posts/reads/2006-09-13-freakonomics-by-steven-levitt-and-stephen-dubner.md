@@ -6,13 +6,13 @@ tweet: "Correlation causation and economics."
 date: 2006-09-13
 modified: 2006-09-13
 category: reads
-image: "cover_Freakonomics_StevenLevittAndStephenDubner_150.jpg"
+image: "cover_Freakonomics_StevenLevittAndStephenDubner_200.jpg"
 header:
   teaser: "cover_Freakonomics_StevenLevittAndStephenDubner.jpg"
 tags: [economics]
 ---
 
-[![Freakonomics by Steven Levitt and Stephen Dubner](/images/cover_Freakonomics_StevenLevittAndStephenDubner_150.jpg "Freakonomics by Steven Levitt and Stephen Dubner"){: .align-right }](http://www.amazon.com/exec/obidos/ASIN/006073132X/)
+[![Freakonomics by Steven Levitt and Stephen Dubner](/images/cover_Freakonomics_StevenLevittAndStephenDubner_200.jpg "Freakonomics by Steven Levitt and Stephen Dubner"){: .align-right }](http://www.amazon.com/exec/obidos/ASIN/006073132X/)
 
 I could not believe how fast this book read. I started it on a Thursday and finished it the following Saturday afternoon. Especially for a book on economics...I am completely astounded at how easy this was to read and comprehend. The authors have a knack for taking the complicated and translating it into layman's terms that make sense and deliver their points succinctly. Economics is not the sexiest topic nor is it the easiest to comprehend, but the two Steves actually made it interesting and thought provoking.
 

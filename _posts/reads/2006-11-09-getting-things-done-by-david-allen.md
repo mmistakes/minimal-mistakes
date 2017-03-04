@@ -6,13 +6,13 @@ tweet: "Find a system that works for you."
 date: 2006-11-09
 modified: 2006-11-09
 category: reads
-image: "cover_GettingThingsDone_DavidAllen_150.jpg"
+image: "cover_GettingThingsDone_DavidAllen_200.jpg"
 header:
   teaser: "cover_GettingThingsDone_DavidAllen.jpg"
 tags: [productivity]
 ---
 
-[![Getting Things Done by David Allen](/images/cover_GettingThingsDone_DavidAllen_150.jpg "Getting Things Done by David Allen"){: .align-right }](http://www.amazon.com/dp/0142000280)
+[![Getting Things Done by David Allen](/images/cover_GettingThingsDone_DavidAllen_200.jpg "Getting Things Done by David Allen"){: .align-right }](http://www.amazon.com/dp/0142000280)
 
 A month or more ago I attended a day-long class about improving my productivity 
 through organizing my tasks and information in Outlook. In fact, I began 

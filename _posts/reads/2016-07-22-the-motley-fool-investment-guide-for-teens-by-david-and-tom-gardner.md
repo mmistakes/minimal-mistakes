@@ -6,13 +6,13 @@ tweet: "Great primer for budgeting and investing."
 date: 2016-07-22
 modified: 2016-07-22
 category: reads
-image: "cover_TheMotleyFoolInvestmentGuideForTeens_DavidAndTomGardner_150.jpg"
+image: "cover_TheMotleyFoolInvestmentGuideForTeens_DavidAndTomGardner_200.jpg"
 header:
   teaser: "cover_TheMotleyFoolInvestmentGuideForTeens_DavidAndTomGardner.jpg"
 tags: [parenting, finances]
 ---
 
-[![The Motley Fool Investment Guide for Teens by David and Tom Gardner](/images/cover_TheMotleyFoolInvestmentGuideForTeens_DavidAndTomGardner_150.jpg "The Motley Fool Investment Guide for Teens by David and Tom Gardner"){: .align-right }](https://www.goodreads.com/book/show/83819.The_Motley_Fool_Investment_Guide_for_Teens)
+[![The Motley Fool Investment Guide for Teens by David and Tom Gardner](/images/cover_TheMotleyFoolInvestmentGuideForTeens_DavidAndTomGardner_200.jpg "The Motley Fool Investment Guide for Teens by David and Tom Gardner"){: .align-right }](https://www.goodreads.com/book/show/83819.The_Motley_Fool_Investment_Guide_for_Teens)
 
 Wanting to prepare my 12 year old daughter for a life of smart financial 
 decisions, I bought her this book. I decided to read it first to determine 

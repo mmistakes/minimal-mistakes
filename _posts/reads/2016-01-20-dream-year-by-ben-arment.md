@@ -6,13 +6,13 @@ tweet: "Change how you view your hobbies."
 date: 2016-01-20
 modified: 2016-02-21
 category: reads
-image: "DreamYear_BenArment_150.jpg"
+image: "DreamYear_BenArment_200.jpg"
 header:
   teaser: "DreamYear_BenArment.jpg"
 tags: [productivity]
 ---
 
-[![Dream Year by Ben Arment](/images/cover_DreamYear_BenArment_150.jpg "Dream Year by Ben Arment"){: .align-right }](http://www.amazon.com/gp/product/159184794X)
+[![Dream Year by Ben Arment](/images/cover_DreamYear_BenArment_200.jpg "Dream Year by Ben Arment"){: .align-right }](http://www.amazon.com/gp/product/159184794X)
 
 Currently in the middle of a career shift, I picked up this book looking to find 
 some encouragement and inspiration in dealing with the changes. While this was 

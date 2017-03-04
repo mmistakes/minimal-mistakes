@@ -5,13 +5,13 @@ tweet: "Succinct valuable book about web usability."
 date: 2006-04-13
 modified: 2006-04-13
 category: reads
-image: "cover_DontMakeMeThing_SteveKrug_150.jpg"
+image: "cover_DontMakeMeThing_SteveKrug_2000.jpg"
 header:
   teaser: "cover_DontMakeMeThing_SteveKrug.jpg"
 tags: [software-development]
 ---
 
-[![Don't Make Me Think by Steve Krug](/images/cover_DontMakeMeThing_SteveKrug_150.jpg "Don't Make Me Think by Steve Krug"){: .align-right }](http://www.amazon.com/Dont-Make-Think-Revisited-Usability/dp/0321965515/)
+[![Don't Make Me Think by Steve Krug](/images/cover_DontMakeMeThing_SteveKrug_200.jpg "Don't Make Me Think by Steve Krug"){: .align-right }](http://www.amazon.com/Dont-Make-Think-Revisited-Usability/dp/0321965515/)
 
 I especially like this book because it is exactly what it claims to be: 
 a relatively short, easy to read book about web usability. In fact, the 

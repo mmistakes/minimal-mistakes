@@ -7,7 +7,7 @@ modified: 2017-01-18
 category: reads
 image: "cover_SomeFruitsOfSolitude_WilliamPenn_200.jpg"
 header:
-  teaser: "cover_SomeFruitsOfSolitude_WilliamPenn_200.jpg"
+  teaser: "cover_SomeFruitsOfSolitude_WilliamPenn.jpg"
 tags: [finances, history, life lessons, productivity, psychology, sociology]
 ---
 

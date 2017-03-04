@@ -6,13 +6,13 @@ tweet: "A journalist's descriptions of the twentieth century."
 date: 2017-02-28
 modified: 2017-02-28
 category: reads
-image: "cover_AReportersLife_WalterCronkite_150.jpg"
+image: "cover_AReportersLife_WalterCronkite_200.jpg"
 header:
-  teaser: "cover_AReportersLife_WalterCronkite_150.jpg"
+  teaser: "cover_AReportersLife_WalterCronkite.jpg"
 tags: [biography, history, life lessons, politics, sociology]
 ---
 
-[![A Reporter's Life by Walter Cronkite](/images/cover_AReportersLife_WalterCronkite_150.jpg "A Reporter's Life by Walter Cronkite"){: .align-right }](https://www.amazon.com/Reporters-Life-Walter-Cronkite/dp/034541103X/)
+[![A Reporter's Life by Walter Cronkite](/images/cover_AReportersLife_WalterCronkite_200.jpg "A Reporter's Life by Walter Cronkite"){: .align-right }](https://www.amazon.com/Reporters-Life-Walter-Cronkite/dp/034541103X/)
 
 An enjoyable description of the twentieth century, told through Walter 
 Cronkite's life experiences as well as his prominent journalistic pieces. 

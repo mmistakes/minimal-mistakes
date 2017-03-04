@@ -6,13 +6,13 @@ tweet: "Best practices for technical writing in software."
 date: 2016-08-05
 modified: 2016-08-05
 category: reads
-image: "cover_ModernTechnicalWriting_AndrewEtter_150.jpg"
+image: "cover_ModernTechnicalWriting_AndrewEtter_200.jpg"
 header:
   teaser: "cover_ModernTechnicalWriting_AndrewEtter.jpg"
 tags: [technical-writing, software-development]
 ---
 
-[![Modern Technical Writing by Andrew Etter](/images/cover_ModernTechnicalWriting_AndrewEtter_150.jpg "Modern Technical Writing by Andrew Etter"){: .align-right }](https://www.goodreads.com/book/show/28433138-modern-technical-writing)
+[![Modern Technical Writing by Andrew Etter](/images/cover_ModernTechnicalWriting_AndrewEtter_200.jpg "Modern Technical Writing by Andrew Etter"){: .align-right }](https://www.goodreads.com/book/show/28433138-modern-technical-writing)
 
 Succinctly written (I read it in less than an hour) with several good 
 recommendations for best practices. As the title states, this is an 

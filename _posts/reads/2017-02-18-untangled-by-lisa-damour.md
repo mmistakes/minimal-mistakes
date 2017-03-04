@@ -5,13 +5,13 @@ tweet: "Untangled by Dr. Lisa Damour helps parents to understand their teen girl
 date: 2017-02-18
 modified: 2017-02-18
 category: reads
-image: "cover_Untangled_LisaDamour_150.jpg"
+image: "cover_Untangled_LisaDamour_200.jpg"
 header:
-  teaser: "cover_Untangled_LisaDamour_150.jpg"
+  teaser: "cover_Untangled_LisaDamour.jpg"
 tags: [life lessons, parenting, psychology, sociology,]
 ---
 
-[![Untangled by Dr. Lisa Damour](/images/cover_Untangled_LisaDamour_150.jpg "Untangled by Dr. Lisa Damour"){: .align-right }](https://www.amazon.com/Untangled-Guiding-Teenage-Transitions-Adulthood/dp/0553393073/)
+[![Untangled by Dr. Lisa Damour](/images/cover_Untangled_LisaDamour_200.jpg "Untangled by Dr. Lisa Damour"){: .align-right }](https://www.amazon.com/Untangled-Guiding-Teenage-Transitions-Adulthood/dp/0553393073/)
 
 [Dr. Lisa Damour](https://www.drlisadamour.com/) breaks the topic of girls' 
 adolescence into seven stages, allowing the reader to see the progression 
