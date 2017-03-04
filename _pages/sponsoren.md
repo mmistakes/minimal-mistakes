@@ -3,7 +3,7 @@ permalink: /sponsoren/
 title: Sponsoren
 share: false
 ---
-Wir bedanken uns bei folgenden Sponsoren für die Unterstützung des Teams PosiTUne Saxonia!
+Wir bedanken uns bei folgenden Sponsoren für die Unterstützung des Teams PosiTUne Saxonia:
 
 ## Freifunk Dresden e.V.
 {% capture fig_img %}
