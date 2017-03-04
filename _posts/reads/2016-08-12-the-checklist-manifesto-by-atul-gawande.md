@@ -7,13 +7,13 @@ tweet: "Checklists free your mind."
 date: 2016-08-12
 modified: 2016-08-12
 category: reads
-image: "cover_TheChecklistManifesto_AtulGawande.jpg"
+image: "cover_TheChecklistManifesto_AtulGawande_200.jpg"
 header:
-  teaser: "cover_TheChecklistManifesto_AtulGawande.jpg"
+  teaser: "cover_TheChecklistManifesto_AtulGawande_200.jpg"
 tags: [productivity, software-development, sociology] 
 ---
 
-[![The Checklist Manifesto: How to Get Things Right by Atul Gawande](/images/cover_TheChecklistManifesto_AtulGawande.jpg "The Checklist Manifesto: How to Get Things Right by Atul Gawande"){: .align-right }](https://www.goodreads.com/book/show/6667514-the-checklist-manifesto)
+[![The Checklist Manifesto: How to Get Things Right by Atul Gawande](/images/cover_TheChecklistManifesto_AtulGawande_200.jpg "The Checklist Manifesto: How to Get Things Right by Atul Gawande"){: .align-right }](https://www.goodreads.com/book/show/6667514-the-checklist-manifesto)
 
 > It somehow feels beneath us to use a checklist, an embarrassment. It 
 runs counter to deeply held beliefs about how the truly great among 
