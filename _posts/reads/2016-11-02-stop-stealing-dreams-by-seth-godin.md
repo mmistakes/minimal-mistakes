@@ -6,6 +6,8 @@ date: 2016-11-02
 modified: 2016-11-02
 category: reads
 image: "cover_StopStealingDreams_SethGodin_150.jpg"
+header: 
+  teaser: "cover_StopStealingDreams_SethGodin_150.jpg"
 tags: [history, parenting, psychology, sociology]
 ---
 
