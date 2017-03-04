@@ -6,13 +6,13 @@ tweet: "Sex and relationships for teens."
 date: 2016-08-04
 modified: 2016-08-04
 category: reads
-image: "cover_DatingSmarts_AmyLang.jpg"
+image: "cover_DatingSmarts_AmyLang_200.jpg"
 header:
-  teaser: "cover_DatingSmarts_AmyLang.jpg"
+  teaser: "cover_DatingSmarts_AmyLang_200.jpg"
 tags: [parenting]
 ---
 
-[![Dating Smarts by Amy Lang](/images/cover_DatingSmarts_AmyLang.jpg "Dating Smarts by Amy Lang"){: .align-right }](https://www.amazon.com/Dating-Smarts-Every-Needs-Relate-ebook/dp/B00N9MQ1YA)
+[![Dating Smarts by Amy Lang](/images/cover_DatingSmarts_AmyLang_200.jpg "Dating Smarts by Amy Lang"){: .align-right }](https://www.amazon.com/Dating-Smarts-Every-Needs-Relate-ebook/dp/B00N9MQ1YA)
 
 If you're a parent to a pre-teen or teenager, buy this book. Read it. 
 Have your child read it. Discuss it with them. Openly.
