@@ -3,9 +3,9 @@ permalink: /team/
 author_profile: true
 ---
 # Über uns
-[![Teamfoto des Teams Earth_TU_Radios]({{ site.url }}{{ site.baseurl }}/assets/images/team-2016_300px.jpg){: .align-right}]({{ site.url }}{{ site.baseurl }}/assets/images/team-2016_1024px.jpg)
 Hallo an alle! Wir sind das Team PosiTUne Saxonia! 
 
+[![Teamfoto des Teams Earth_TU_Radios]({{ site.url }}{{ site.baseurl }}/assets/images/team-2016_300px.jpg){: .align-right}]({{ site.url }}{{ site.baseurl }}/assets/images/team-2016_1024px.jpg)
 Wir sind begeistert von der Herausforderung, einen Satelliten zu bauen. Wir, das sind sieben Schüler, die sich zusammengetan haben, um beim [Deutschen CanSat-Wettbewerb 2017](http://cansat.de) mitzumachen.
 
 # CanSat-Wettbewerb
