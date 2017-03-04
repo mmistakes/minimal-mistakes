@@ -7,13 +7,13 @@ tweet: "Wyatt Earp in his own words."
 date: 2016-10-20
 modified: 2016-10-20
 category: reads
-image: "cover_WyattEarpSpeaks_by_JohnRichardStephens.jpg" 
+image: "cover_WyattEarpSpeaks_by_JohnRichardStephens_200.jpg" 
 header:
-  teaser: "cover_WyattEarpSpeaks_by_JohnRichardStephens.jpg"
+  teaser: "cover_WyattEarpSpeaks_by_JohnRichardStephens_200.jpg"
 tags: [history] 
 ---
 
-[![Wyatt Earp Speaks! by John Richard Stephens](/images/cover_WyattEarpSpeaks_JohnRichardStephens.jpg "Wyatt Earp Speaks! by John Richard Stephens"){: .align-right }](https://www.goodreads.com/book/show/7079812-wyatt-earp-speaks)
+[![Wyatt Earp Speaks! by John Richard Stephens](/images/cover_WyattEarpSpeaks_JohnRichardStephens_200.jpg "Wyatt Earp Speaks! by John Richard Stephens"){: .align-right }](https://www.goodreads.com/book/show/7079812-wyatt-earp-speaks)
 
 [John Richard Stephens](http://johnrichardstephens.com/) does his best to tie 
 together the real story of the [gunfight at OK Corral](https://en.wikipedia.org/wiki/Gunfight_at_the_O.K._Corral) 
