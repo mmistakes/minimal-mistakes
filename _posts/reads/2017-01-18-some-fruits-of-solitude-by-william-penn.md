@@ -5,13 +5,13 @@ tweet: "A Quaker from the 1600s shares his inspirational quotes."
 date: 2017-01-18
 modified: 2017-01-18
 category: reads
-image: "cover_SomeFruitsOfSolitude_WilliamPenn_150.jpg"
+image: "cover_SomeFruitsOfSolitude_WilliamPenn_200.jpg"
 header:
-  teaser: "cover_SomeFruitsOfSolitude_WilliamPenn_150.jpg"
+  teaser: "cover_SomeFruitsOfSolitude_WilliamPenn_200.jpg"
 tags: [finances, history, life lessons, productivity, psychology, sociology]
 ---
 
-[![Some Fruits of Solitude by William Penn](/images/cover_SomeFruitsOfSolitude_WilliamPenn_150.jpg "Some Fruits of Solitude by William Penn"){: .align-right }](https://www.amazon.com/gp/product/B01MD056OO/)
+[![Some Fruits of Solitude by William Penn](/images/cover_SomeFruitsOfSolitude_WilliamPenn_200.jpg "Some Fruits of Solitude by William Penn"){: .align-right }](https://www.amazon.com/gp/product/B01MD056OO/)
 
 
 >   There is nothing of which we are apt to be so lavish as of Time, and about which we ought to be more solicitous; since without it we can do nothing in this World.
