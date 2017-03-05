@@ -5,6 +5,14 @@
     </a>
   </li>
 -->
+{% if author.pgp %}
+    <li>
+        <a href="{{ author.pgp }}" itemprop="sameAs">
+            <i class="fa fa-fw fa-lock" aria-hidden="true"></i> PGP-Key
+        </a>
+    </li>
+{% endif %}
+
 {% if author.cansat %}
     <li>
         <a href="{{ author.cansat }}" itemprop="sameAs">

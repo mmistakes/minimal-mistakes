@@ -8,6 +8,7 @@
 #  bio              : 
 #  location         : 
 #  email            : 
+#  pgp              :
 #  uri              :
 #  bitbucket        :
 #  codepen          :
@@ -31,38 +32,57 @@
 #  weibo            :
 #  xing             :
 #  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+#  flattr           :
 
 Diego:
-    name: "Diego Jahn"
-    avatar: "/assets/images/authors/diego.png"
-    bio: "Teambetreuer"
-    location: "Dresden"
-    email: "Diego.Jahn[ät]tu-dresden[punkt]de"
-    github: "jdieg0"
+    name            : "Diego Jahn"
+    avatar          : "/assets/images/authors/diego.png"
+    bio             : "Teambetreuer"
+    location        : "Dresden"
+    email           : "Diego.Jahn[ät]tu-dresden[punkt]de"
+    pgp             : "http://pgp.zdv.uni-mainz.de:11371/pks/lookup?op=vindex&search=0x4ECF650344F26313"
+    github          : "jdieg0"
 
 Dominik:
-    name: "Dominik"
+    name            : "Dominik"
+    bio             : "Konstruktion Satellit"
 
 Elias:
-    name: "Elias"
+    name            : "Elias"
+    bio             : "Soft- und Hardware Satellit"
 
 Fabian:
-    name: "Fabian"
+    name            : "Fabian"
+    bio             : "Soft- und Hardware Bodenstation"
 
-Haucke:
-    name: "Haucke"
+Jakob:
+    name            : "Jakob"
+    bio             : "Teambetreuer"
 
 Jan:
-    name: "Jan"
+    name            : "Jan"
+    bio             : "Teambetreuer"
+
+Janek:
+    name            : "Janek"
+    bio             : "Teamchef, Hardware Bodenstation"
 
 Janina:
-    name: "Janina"
+    name            : "Janina"
+    bio             : "Leiterin DLR_School_Lab TU Dresden"
 
 Max:
-    name: "Max"
+    name            : "Max"
+    bio             : "Konstruktion Satellit"
+    
+Stefan:
+    name            : "Stefan"
+    bio             : "Teambetreuer"
 
 Till:
-    name: "Till"
+    name            : "Till"
+    bio             : "Soft- und Hardware Satellit"
 
 Timon:
-    name: "Timon"
+    name            : "Timon"
+    bio             : "Software Satellit"
