@@ -9,7 +9,7 @@ header:
   teaser: "discoveries-MYPHOTO-1600x500.jpg"
   image: "discoveries-MYPHOTO-1600x500.jpg"
   caption: "Photo by Tod Hilton"
-tags: [art, biography, comedy, economics, entertainment, finances, geography, history, life lessons, parenting, productivity, psychology, sociology, sci-fi, software development, technology, technical writing, writing]
+tags: [art, biography, comedy, economics, entertainment, finances, geography, history, life-lessons, parenting, productivity, psychology, relationships, sociology, sci-fi, software-development, technology, technical-writing, writing]
 fullwidth: true
 featured: 
 ads: false
