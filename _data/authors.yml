@@ -54,6 +54,8 @@ Elias:
 Fabian:
     name            : "Fabian"
     bio             : "Soft- und Hardware Satellit und Bodenstation"
+    email           : "fabian[ät]uriah[punkt]heep[punkt]sax[punkt]de"
+    github          : "fabi12341"
 
 Jakob:
     name            : "Jakob"
