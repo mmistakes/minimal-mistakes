@@ -28,7 +28,7 @@ author_profile: false
 
 Wir sind gerne für Sie da, allerdings können wir Ihr Anliegen nicht einfach
 zwischen Tür-und-Angel erledigen, da wir uns Hauptsächlich um den Tagesbetrieb
-und dem befinden **aller** Kinder kümmern müssen. Wenn Sie ein persönliches
+und das Befinden **aller** Kinder kümmern müssen. Wenn Sie ein persönliches
 Gespräch wahrnehmen möchten, so vereinbaren Sie bitte einen Termin mit dem
 [Sekretariat](/kontakt#sekretariat). So können wir uns Zeit für Ihr Anliegen
 nehmen. Oder senden Sie uns einfach eine E-Mail.
