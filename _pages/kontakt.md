@@ -22,7 +22,7 @@ author_profile: false
 
 ## Schulleitung
 
-* Schulleitung: Frau Stephanie Lehmann ({% email s.lehmann@brandwerder.de %})
+* Schulleitung: Frau Stephanie Lehmann ({% include email email='s.lehmann@brandwerder.de' %})
 * stellvertretende Schulleitung:
 * andere Posten: ??
 
@@ -38,28 +38,28 @@ nehmen. Oder senden Sie uns einfach eine E-Mail.
 
 |   | Telefon | E-Mail |
 |---|---|---|
-|<span id='koordinierende_erzieherin'>koordinierende Erziehern</span> (Frau Simone Melz)| (030) 3670952 - 31 | {% email hort@brandwerder.de %} |
-| Hort A1 | ??? | {% email hort@brandwerder.de %} |
-| Hort A2 | ??? | {% email hort@brandwerder.de %} |
-| Hort A3 | ??? | {% email hort@brandwerder.de %} |
-| Hort 1a | ??? | {% email hort@brandwerder.de %} |
-| Hort 2a | ??? | {% email hort@brandwerder.de %} |
-| Hort 3a | ??? | {% email hort@brandwerder.de %} |
-| Hort 4a/b | ??? | {% email hort@brandwerder.de %} |
-| Hort 5a/b | ??? | {% email hort@brandwerder.de %} |
-| Hort 6a/b | ??? | {% email hort@brandwerder.de %} |
+|<span id='koordinierende_erzieherin'>koordinierende Erziehern</span> (Frau Simone Melz)| (030) 3670952 - 31 | {% include email email='hort@brandwerder.de' %} |
+| Hort A1 | ??? | {% include email email='hort@brandwerder.de' %} |
+| Hort A2 | ??? | {% include email email='hort@brandwerder.de' %} |
+| Hort A3 | ??? | {% include email email='hort@brandwerder.de' %} |
+| Hort 1a | ??? | {% include email email='hort@brandwerder.de' %} |
+| Hort 2a | ??? | {% include email email='hort@brandwerder.de' %} |
+| Hort 3a | ??? | {% include email email='hort@brandwerder.de' %} |
+| Hort 4a/b | ??? | {% include email email='hort@brandwerder.de' %} |
+| Hort 5a/b | ??? | {% include email email='hort@brandwerder.de' %} |
+| Hort 6a/b | ??? | {% include email email='hort@brandwerder.de' %} |
 
 ## Lehrer
 
 |   | E-Mail |
 |---|---|
-| Frau | {% email name@brandwerder.de %} |
-| Frau | {% email name@brandwerder.de %} |
-| Frau | {% email name@brandwerder.de %} |
-| Frau | {% email name@brandwerder.de %} |
-| Frau | {% email name@brandwerder.de %} |
-| Frau | {% email name@brandwerder.de %} |
-| Frau | {% email name@brandwerder.de %} |
-| Frau | {% email name@brandwerder.de %} |
-| Frau | {% email name@brandwerder.de %} |
-| Frau | {% email name@brandwerder.de %} |
+| Frau | {% include email email='hort@brandwerder.de' %} |
+| Frau | {% include email email='hort@brandwerder.de' %} |
+| Frau | {% include email email='hort@brandwerder.de' %} |
+| Frau | {% include email email='hort@brandwerder.de' %} |
+| Frau | {% include email email='hort@brandwerder.de' %} |
+| Frau | {% include email email='hort@brandwerder.de' %} |
+| Frau | {% include email email='hort@brandwerder.de' %} |
+| Frau | {% include email email='hort@brandwerder.de' %} |
+| Frau | {% include email email='hort@brandwerder.de' %} |
+| Frau | {% include email email='hort@brandwerder.de' %} |

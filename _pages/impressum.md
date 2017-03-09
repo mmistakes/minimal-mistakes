@@ -13,7 +13,7 @@ author_profile: false
 
 Telefon: (030) 3670952 - 0 \\
 Telefax: (030) 3670952 - 10 \\
-E-Mail: {% email s.lehmann@brandwerder.de %}
+E-Mail: {% include email email='s.lehmann@brandwerder.de' %}
 
 ## Schulträger (Diensteanbieter im Sinne des RStV/TMG)
 
@@ -32,7 +32,7 @@ Telefax: (030) 3303-3958
 
 Telefon: (030) 3670952 - 0 \\
 Telefax: (030) 3670952 - 10 \\
-E-Mail: {% email s.lehmann@brandwerder.de %}
+E-Mail: {% include email email='s.lehmann@brandwerder.de' %}
 
 ## Haftungshinweis:
 
