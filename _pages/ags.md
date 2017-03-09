@@ -13,7 +13,7 @@ sidebar:
 ---
 
 **Achtung**: Bitte beachten Sie, dass alle hier genannten Daten abweichen
-können. Vor allem die Kursgebühren können sich geändert haben.
+können. Vor allem die Kursgebühren können sich ändern.
 {: .notice--warning}
 
 # Kursangebote im Schuljahr 2016/17
