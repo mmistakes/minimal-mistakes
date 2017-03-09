@@ -4,7 +4,7 @@ title: "AG Angebote"
 permalink: /ags/
 author_profile: false
 excerpt: "Alles wichtige über die Arbeitsgemeinschaften an der Brandwerder."
-modified: 2017-03-07T10:55:00+01:00
+modified: 2017-03-09T22:08:00+01:00
 header:
   overlay_color: "#fff"
   overlay_image: /assets/images/feature-ags.jpg
@@ -32,7 +32,7 @@ englische Sätze zu sprechen.
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
-| Sunshine - Early Start Edition | einmalig 8€ oder 10€ + 24,30€ pro Monat | 8 - 14 Kinder |
+| Sunshine - Early Start Edition | einmalig 8€ oder 10€ + 24,30€ pro Monat, 1 Probestunde | 8 - 14 Kinder |
 
 [Anmelden](https://www.karen-eumann.de/app/download/9183188198/Download+Anmeldung+school.pdf?t=1393085067){: .btn .btn--success}
 {: .text-right}
@@ -40,14 +40,13 @@ englische Sätze zu sprechen.
 ## <i class='fa fa-paper-plane'></i> Basteln AG
 {: #basteln_ag}
 
-![](http://www.foerderverein-brandwerder.de/sites/default/files/artikel_bilder/werken-basteln-gross.jpg){:
-.align-left :height="150px" width="300px" } Das Basteln fördert nicht nur die
-Kreativität und Motorik sondern auch die Konzentrationsfähigkeit. Die Kinder
-können mit Hilfe von verschiedenen Basteltechniken kleine Kunstwerke aus
-unterschiedlichen Materialien erstellen. Das fertige Werk am Ende in der Hand zu
-halten, macht nicht nur jeden kleinen Künstler stolz sondern stärkt auch das
-Selbstbewusstsein. Selbstverständlich können die Kinder ihre Werke mit nach
-Hause nehmen.
+{% include figure image_path="http://www.foerderverein-brandwerder.de/sites/default/files/artikel_bilder/werken-basteln-gross.jpg" caption="<small>Förderverein Brandwerder</small>" %}{: .align-left style='max-width: 300px; max-height: 300px' }
+Das Basteln fördert nicht nur die Kreativität und Motorik sondern auch die
+Konzentrationsfähigkeit. Die Kinder können mit Hilfe von verschiedenen
+Basteltechniken kleine Kunstwerke aus unterschiedlichen Materialien erstellen.
+Das fertige Werk am Ende in der Hand zu halten, macht nicht nur jeden kleinen
+Künstler stolz sondern stärkt auch das Selbstbewusstsein. Selbstverständlich
+können die Kinder ihre Werke mit nach Hause nehmen.
 
 Die AG wird vom
 [Förderverein](http://www.foerderverein-brandwerder.de/bastel-ag-der-grundschule-brandwerder)
@@ -64,14 +63,13 @@ unterstützt.
 ## <i class='fa fa-gavel'></i> Werken AG
 {: #werken_ag}
 
-![](http://www.foerderverein-brandwerder.de/sites/default/files/artikel_bilder/werken-basteln-gross.jpg){:
-.align-left :height="150px" width="300px" } In der Werken-AG lernen die Kinder
-mit Laubsäge, Holzfeilen, Schleifpapier, Hammer, Nägel und Farbe umzugehen.
-Hierbei werden verschiedene Werkverfahren vorgestellt, wie zum Beispiel sägen,
-bohren, feilen und raspeln, die jeder anschließend ausprobieren kann und
-individuelle Kunstwerke erstellen kann. Werken macht den Kindern nicht nur Spaß
-sondern fördert gleichzeitig auch die kognitiven Fähigkeiten und die
-Feinmotorik.
+{% include figure image_path="http://www.foerderverein-brandwerder.de/sites/default/files/artikel_bilder/werken-basteln-gross.jpg" caption="<small>Förderverein Brandwerder</small>" %}{: .align-left style='max-width: 300px; max-height: 300px' }
+In der Werken-AG lernen die Kinder mit Laubsäge, Holzfeilen, Schleifpapier,
+Hammer, Nägel und Farbe umzugehen. Hierbei werden verschiedene Werkverfahren
+vorgestellt, wie zum Beispiel sägen, bohren, feilen und raspeln, die jeder
+anschließend ausprobieren kann und individuelle Kunstwerke erstellen kann.
+Werken macht den Kindern nicht nur Spaß sondern fördert gleichzeitig auch die
+kognitiven Fähigkeiten und die Feinmotorik.
 
 Die fertiggestellten Arbeiten können die Kinder selbstverständlich mit nach
 Hause nehmen.
@@ -186,16 +184,15 @@ unterstützt.
 ## <i class="fa">♚</i> Schach AG
 {: #schach_ag}
 
+{% include figure image_path="http://www.foerderverein-brandwerder.de/sites/default/files/artikel_bilder/schach-gross.jpg" caption='<small>"[Chess bishop](https://commons.wikimedia.org/wiki/File:Chess_bishop_1000.jpg)" by [Petr Novák](https://commons.wikimedia.org/wiki/User:Che) / [CC BY-SA 2.5](http://creativecommons.org/licenses/by-sa/2.5)</small>' %}{: .align-left style='max-width: 300px; max-height: 300px' }
 Schach ist das populärste Brettspiel in Europa und gilt als offizielle Sportart.
 Bei diesem strategischen Brettspiel wird nicht nur das logische Denken und die
 Konzentration gefördert, sondern auch gleichzeitig das Selbstbewusstsein und
 Wahrnehmungsvermögen gestärkt. Daher wird das Schachspiel auch als
 „Königsdisziplin der Denksportarten“ bezeichnet.
 
-Durch die Übernahme der Anschaffungskosten für die Ausstattung (Demo-Brett,
-Holzschachbretter, Schachuhren) konnte erstmalig im Sommer 2015 die Schach-AG an
-der Grundschule am Brandwerder gegründet werden. Es kann jeder teilnehmen, der
-Interesse und Spaß daran hat - egal, ob Anfänger oder Fortgeschrittener.
+Es kann jeder teilnehmen, der Interesse und Spaß daran hat - egal, ob Anfänger
+oder Fortgeschrittener.
 
 Ein ausgebildeter Schachlehrer trainiert mit seinen Schülerinnen und Schülern am
 Demo-Brett taktische und strategische Elemente des Schachs sowie das Lösen von
@@ -267,7 +264,7 @@ unterstützt.
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
-| ??? | ??? | ??? |
+| ??? | ???, 3 Probestunden | ??? |
 
 ## <i class='fa fa-futbol-o'></i> Fussball AG
 {: #fussball_ag}
