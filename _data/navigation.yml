@@ -1,7 +1,7 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  # - title: "Quick-Start Guide"
+  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
@@ -10,3 +10,21 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+ags:
+  - title: '<i class="fa fa-gbp"></i> Englisch AG'
+    url: '/ags/#englisch_ag'
+  - title: '<i class="fa fa-paper-plane"></i> Bastel AG'
+    url: '/ags/#bastel_ag'
+  - title: '<i class="fa fa-tint"></i> Töpfern AG'
+    url: '/ags/#toepfern_ag'
+  - title: '<i class="fa">𝄞</i> Flöten AG'
+    url: '/ags/#floeten_ag'
+  - title: '<i class="fa fa-music"></i> Musical AG'
+    url: '/ags/#musical_ag'
+  - title: '<i class="fa">♚</i> Schach AG'
+    url: '/ags/#schach_ag'
+  - title: '<i class="fa fa-ticket"></i> Zirkus AG'
+    url: '/ags/#zirkus_ag'
+  - title: '<i class="fa fa-futbol-o"></i> Fussball AG'
+    url: '/ags/#fussball_ag'

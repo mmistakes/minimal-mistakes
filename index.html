@@ -1,4 +1,51 @@
 ---
-layout: home
-author_profile: true
+layout: splash
+permalink: /
+classes:
+  - landing
+header:
+  overlay_color: "#fff"
+  overlay_image: /assets/images/mm-home-page-feature.jpg
+  cta_label: "<i class='fa fa-info'>&nbsp;&nbsp;</i>Informationen zum Schulstart 2017/18"
+  cta_url: "/schulstart/"
+  caption:
+excerpt: 'Willkommen auf der Webpräsenz von der Grundschule am Brandwerder.'
+feature_row:
+  - image_path: /assets/images/feature-hort.jpg
+    alt: "Hortbetreuung"
+    title: "Halbtagsgrundschule"
+    excerpt: "Ihr Kind wird in der Schulzeit zwischen 07:30 - 13:30 von uns
+    verlässlich betreut. Für Familien mit mehr Betreuungsbedarf gibt es einen
+    Ganztagsbetrieb von 6.00 Uhr bis 18.00 Uhr."
+    url: "/hortbetreuung/"
+    btn_label: "<i class='fa fa-info'>&nbsp;&nbsp;</i>Mehr erfahren"
+  - image_path: /assets/images/feature-einschulung.jpg
+    alt: "Schulstart"
+    title: "Start in die Schule"
+    excerpt: "Die nächste wichtige Station Ihres Kindes: „Schule“. Was erwartet
+    Sie? Was müssen Sie machen? Und vor allem was können Sie erwarten? Erfahren
+    Sie alles wichtige zum Thema Schulanfang."
+    url: "/schulstart/"
+    btn_label: "<i class='fa fa-info'>&nbsp;&nbsp;</i>Mehr erfahren"
+  - image_path: /assets/images/feature-ags.jpg
+    alt: "AG Angebote der Schule"
+    title: "AG Angebote der Schule"
+    excerpt: "Neben dem Unterricht und dem Hort stehen den Schülern eine
+    Vielzahl von zusätzlichen Angeboten zur Verfügung — einige sogar ab der 1.
+    Klasse. So gibt es z.B. Sport, Musik, Kunst und Förder AGs."
+    url: "/ags/"
+    btn_label: "<i class='fa fa-info'>&nbsp;&nbsp;</i>Mehr erfahren"
+  - image_path: /assets/images/feature-foerderverein.jpg
+    alt: "Förderverein"
+    title: "Eltern gestalten mit!"
+    excerpt: "Wichtig sind nicht nur die Schüler an unserer Schule, sondern auch
+    die Eltern, Großeltern oder Bekannte. So werden Elternaktionen, der
+    Mittwochsverkauf, Sommer-/ Winterfeste und weitere Sachen von der
+    Elternschaft z.B. durch den Förderverein oder die Elternvertreter
+    organisiert."
+    url: "http://www.foerderverein-brandwerder.de"
+    btn_label: "<i class='fa fa-external-link'>&nbsp;&nbsp;</i>Zur Seite des Fördervereins"
+    btn_class: btn--success
 ---
+
+{% include feature_row %}
