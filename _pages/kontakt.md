@@ -7,7 +7,7 @@ author_profile: false
 
 ## Anschrift
 
-*Grundschule am Brandwerder* \\
+*Grundschule am Brandwerder 05G23* \\
 *Spandauer Str. 86* \\
 *13591 Berlin-Spandau*
 
