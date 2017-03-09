@@ -15,7 +15,7 @@ author_profile: false
 {: #sekretariat}
 
 * Frau Wendt
-* E-Mail: ???
+* E-Mail: {% include email email='sekretariat@brandwerder.de' %}
 * Telefon: (030) 3670952 - 0
 * Telefax: (030) 3670952 - 10
 * Öffnungszeiten: Mo - Fr ???
@@ -39,6 +39,8 @@ nehmen. Oder senden Sie uns einfach eine E-Mail.
 |   | Telefon | E-Mail |
 |---|---|---|
 |<span id='koordinierende_erzieherin'>koordinierende Erziehern</span> (Frau Simone Melz)| (030) 3670952 - 31 | {% include email email='hort@brandwerder.de' %} |
+| Hort/Mensa | (030) 3670952 - 31 | {% include email email='hort@brandwerder.de' %} |
+| Insel | (030) 3670952 - 26 | {% include email email='hort@brandwerder.de' %} |
 | Hort A1 | ??? | {% include email email='hort@brandwerder.de' %} |
 | Hort A2 | ??? | {% include email email='hort@brandwerder.de' %} |
 | Hort A3 | ??? | {% include email email='hort@brandwerder.de' %} |
