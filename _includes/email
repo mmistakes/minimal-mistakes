@@ -1,1 +1,1 @@
-<a><i class='fa fa-envelope'>&nbsp;</i>{{ email  | replace:'@','(ät))' }}</a>
+<a><i class='fa fa-envelope'>&nbsp;</i>{{ include.email  | replace:'@','(ät)' }}</a>
