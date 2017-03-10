@@ -11,9 +11,9 @@ title                    : "Xoke's Page"
 title_separator          : "-"
 name                     : "Xoke"
 description              : "An Englishman in New Yo.. er Nevada"
-url                      : "https://xoke.github.io"
-baseurl                  : "/blog"
-repository               : "xoke/xoke.github.io"
+url                      : #"https://xoke.github.io"
+baseurl                  : #"/blog"
+repository               : #"xoke/xoke.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
