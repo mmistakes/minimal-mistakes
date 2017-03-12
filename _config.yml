@@ -78,7 +78,7 @@ analytics:
 # Site Author
 author:
   name             : "黃昱維"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/mycube.png"
   bio              : "a cuber"
   location         : "Taiwan"
   email            : "worldmaker18349276@gmail.com"
