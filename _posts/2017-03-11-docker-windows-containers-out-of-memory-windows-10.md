@@ -1,6 +1,7 @@
 ---
 title: Out of memory exception with windowsservercore container on Windows 10
 excerpt: While investigating an out of memory exception when building a microsoft/windowsservercore based container for SDL's Knowledge Center Content Manager, I came to realize a couple of small but important differences between hosting containers on Windows 10 and Windows Server 2016.
+tags:
 - SDL
 - Knowledge Center
 - Content Manager
