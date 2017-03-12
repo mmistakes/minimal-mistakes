@@ -11,9 +11,9 @@ title                    : "Cubesics"
 title_separator          : "-"
 name                     : "worldmaker18349276"
 description              : "The theory of twisty puzzles."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+url                      : "https://worldmaker18349276.github.io"
+baseurl                  : "/cubesics"
+repository               : "worldmaker18349276/cubesics"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -80,7 +80,7 @@ author:
   name             : "黃昱維"
   avatar           : "/assets/images/mycube.png"
   bio              : "a cuber"
-  location         : "Taiwan"
+  location         : "台灣 (Taiwan)"
   email            : "worldmaker18349276@gmail.com"
   uri              :
   bitbucket        :
@@ -174,7 +174,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Taipei
 
 
 # Plugins
@@ -236,7 +236,7 @@ defaults:
   # _posts
   - scope:
       path: ""
-      type: posts
+      type: pages
     values:
       layout: single
       author_profile: true
