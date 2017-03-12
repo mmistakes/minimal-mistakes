@@ -7,9 +7,9 @@
 
 # Site Settings
 locale                   : "zh-TW"
-title                    : "Cubesics"
+title                    : "魔方學"
 title_separator          : "-"
-name                     : "worldmaker18349276"
+name                     : "worldmaker"
 description              : "The theory of twisty puzzles."
 url                      : "https://worldmaker18349276.github.io"
 baseurl                  : "/cubesics"
