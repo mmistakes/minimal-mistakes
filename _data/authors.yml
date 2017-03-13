@@ -9,3 +9,21 @@ choko:
   email: "choko@ionio.gr"
   bio: "Τεχνολογίες Λογισμικού"
   avatar: "/assets/images/choko.jpg"
+  
+  kourou-en:
+   name: "Panagiotis Kourouthanassis"
+   email: "pkour@ionio.gr"
+   bio: "Information Systems and E-Goverment"
+   avatar: "/assets/images/kourou.jpg"
+   
+pkour:
+   name: "Παναγιώτης Κουρουθανάσης"
+   email: "pkour@ionio.gr"
+   bio: "Πληροφοριακά Συστήματα και Ηλεκτρονική Διακυβέρνηση"
+   avatar: "/assets/images/kourou.jpg"
+   
+pkour-en:
+   name: "Panagiotis Kourouthanassis"
+   email: "pkour@ionio.gr"
+   bio: "Information Systems and E-Goverment"
+   avatar: "/assets/images/kourou.jpg"
