@@ -2,7 +2,7 @@
 ref: sioutas
 title: "Σπύρος Σιούτας"
 excerpt: "Δομές και Βάσεις Δεδομένων"
-rank: 3
+rank: 2
 author: sioutas
 ---
 
