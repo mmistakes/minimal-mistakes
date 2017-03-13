@@ -78,9 +78,9 @@ this information it should be possible to derive the high level flow of informat
 Given a shared understanding of this high level picture every developer should ask themselves the following questions
 when making even the smallest changes.
 + Which component/service/namespace/package/etc. is responsible for dealing with the required new behaviour/data or change in
-  existing behaviour/data?
+existing behaviour/data?
 + If the answer is not immediately obvious then ask if the behaviour/data is new to the architecture and should be
-  allocated to an existing component or requires a new component?
+allocated to an existing component or requires a new component?
 
 The answers to these questions may be quite complex, are definitely routed in the context of the problems the system is
 trying to solve and even a small change might actually end up in a new component which needs the collective agreement
@@ -151,8 +151,71 @@ rules. I would caveat this with if you business involves developing expert tools
 problems then a heavy element of configuration is useful but for most business problems it developing a comprehensive
 configurable system is more expense than it's worth.
 
+** Canonical Data Model
 
+The most basic and common form of this standardisation is to create a single data model, often implemented in a single
+relational database. Although this approach has some definite advantages in providing a common dialect for data used
+across components of the system it also has some costs in terms of implementing unforseen changes. If the system has
+several components that need information about the same entities from a business perspective this can be indicative of a
+number of things.
 
+1. Components with Multiple or Un-surfaced responsibilities.
+2. Focusing to much on Static Data/Object Modelling
+
+*** Multiple or Un-surfaced Responsibilities
+
+The components in the system may not have clearly defined responsibilities and therefore more than one component is
+responsible for similar or the same business function. Alternatively, there's an unsurfaced business function that is
+split across more than one system component and probably should be the responsibility of a component that was never
+designed or implemented.
+
+The second frequently occurs through stealth and is the really difficult skill of evolving software architecture. To
+avoid this every developer needs to be aware of the clear roles and responsibilities of every component in the
+system. When making even a small change the developer (and the tester) should consider whether this change is actually
+the responsibility of the component being changed.
+
+If this question is difficult to answer or at all ambiguous this is a strong indicator of one of few things, either
+there's no clear common understanding of the system architecture or the component your proposing to change is either not
+responsible, or not fully responsible, for the behaviour/data being added or changed.
+
+*** Static Data/Object Modelling
+
+Focusing on modelling data without seriously considering the systems behaviour and responsibilities leads to a number of
+issues. The classic example of this is focusing on noun analysis to derive an Object and/or Data model without thinking
+too deeply of the flow of data and the responsibilities of the system as a whole or the components of the system. This
+leads to concepts in the system that are either not required or modelled from a perspective that is too general.
+
+As a slightly contrived example; imagine modeling a system that deals with University Students and the courses they are
+registered for. From the perspective of a specific lecturer the important properties of a student may be that they are
+registered for her lectures, the students attendence and grades. From the perspective of a specific facilty in the
+University the important features of the student might be the courses and modules that they attend in the facility, when
+they timetabled to attend, grade and attendence and their personal tutor. From the perspective of the University
+administrator the important features are the courses they are taking, the overall timetable, which facility and lectures
+they are taought by. From the perspective of the bursars office the important features may be the fees the students
+liable for, payment records, any financial assistance etc.
+
+If our system is only responsible for the bursary then modelling all the complex interactions of the student to the
+facilities and courses is not only a waste of effort but will lead to a model that probably misses important concepts
+required to process the financial requirements.
+
+It's very easy to focus on modelling data in isolation and either miss important data or model the data/objects from a
+perspective that leads to more subtle judgements that result in coupling and dependencies between parts of the system
+that should not be there.
+
+*** Unnecessary Coupling [TOOD is this structural coupling or something else?]
+
+Some of the other issues with a centralised and/or canonical data model is the unintended coupling of components.
+
+Superficially, converting the data early in the system into a canonical model and then using this model everywhere
+seems like a good separation of responsibilities. However, lets consider making changes to data input to the system when
+using this approach. In this example scenario, we will assume we have a component responsible for transforming the data to a
+canonical format and storing it and then more than one component using the resulting canonical data format for a
+specific entity. Let's assume that the two client components are carrying out different responsibilities and therefore
+although requiring information about the same entity have very little overlap in the specific fields required. In the
+worst case this may mean both components having to implement code to deal with data that neither use or that only one of
+them uses. This means that any change to the data can, in the worst case, end up impacting three components, that
+responsible for transforming and storing the data, and both the downstream components when the change may actually only
+be important to one of the downstream components.
 
 I spent a large part of my early career working in a UK Government department solving a number of problems over a
 decade. This is a fairly unusual state of affairs in modern software developers career's as it's not common to stay with
@@ -235,8 +298,8 @@ different for reasons such as optimisation and enrichment.[^3]
 
 
 [^1]: [TODO] investigate graphQL/falcor/datalog as an option to delay design decisions to the point in the architecture
-    where they are needed. For example, using a query 'pull' syntax means the decisions about what to data to render in
-    a UI can be made in the client responsible for the UI without requesting all the data and then filtering locally.
+where they are needed. For example, using a query 'pull' syntax means the decisions about what to data to render in
+a UI can be made in the client responsible for the UI without requesting all the data and then filtering locally.
 
 [^2]: [TODO] Reference Rich Hickey's speculation keynote
 
