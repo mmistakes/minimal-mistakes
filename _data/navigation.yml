@@ -30,20 +30,20 @@ docs:
       children:
         - title: "Home"
           url: /docs/home/
-        - title: "Teamorganisation und Aufgabenverteilung"
-        - title: "Missionsziele"
-    - title: "Beschreibung des CanSat"
-      children:
-        - title: "Missionsüberblick"
-        - title: "Mechanik- und Strukturdesign"
-        - title: "Elektrisches Design"
-        - title: "Software"
-        - title: "Bergungssystem"
-        - title: "Bodenstation"
-    - title: "Projektplanung"
-      children:
-        - title: "Zeitplan"
-        - title: "Budget"
-        - title: "Testkonzept"
-    - title: "Öffentlichkeitsarbeit"
-    - title: "Anforderungen"
+#        - title: "Teamorganisation und Aufgabenverteilung"
+#        - title: "Missionsziele"
+#    - title: "Beschreibung des CanSat"
+#      children:
+#        - title: "Missionsüberblick"
+#        - title: "Mechanik- und Strukturdesign"
+#        - title: "Elektrisches Design"
+#        - title: "Software"
+#        - title: "Bergungssystem"
+#        - title: "Bodenstation"
+#    - title: "Projektplanung"
+#      children:
+#        - title: "Zeitplan"
+#        - title: "Budget"
+#        - title: "Testkonzept"
+#    - title: "Öffentlichkeitsarbeit"
+#    - title: "Anforderungen"
