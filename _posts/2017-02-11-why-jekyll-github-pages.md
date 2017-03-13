@@ -43,7 +43,7 @@ It's not a perfect world though as I've already explained in my [Novice guide fo
 Here is also an interesting article to read: [5 common Jekyll traps for beginners (and help to overcome them!)](http://cloudcannon.com/jekyll/2015/03/13/5-common-jekyll-traps.html).
 
 Nevertheless, Jekyll has committed to fix many issues on version three so there is only good to come out of the combinations of micro-services. 
-Only when understanding the true merit of *micro* services architectures you can understand how **quickly** this *not perfect world* transforms into a descent one.
+Only when understanding the true merit of *micro* services architectures you can understand how **quickly** this *not perfect world* transforms into a decent one.
 As a small example, if Github adds the ability to edit files in context of a Jekyll project, then creating posts will be even faster and easier. 
 Then again, maybe someone else will do this already as part of their own micro service. 
 
