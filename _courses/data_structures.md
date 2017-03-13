@@ -1,5 +1,5 @@
 ---
-ref: datastructures
+ref: data_structures
 title: "Δομές Δεδομένων"
 semester: 2
 author: sioutas
