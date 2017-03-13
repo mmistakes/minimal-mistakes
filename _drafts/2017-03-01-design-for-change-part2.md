@@ -12,8 +12,8 @@ In my previous post [TODO ref here] I talked about some of the costs of codifyin
 post I'm going to discuss what I believe are the reasons that architectures lose their way and some of the approaches
 that might be taken to mitigate this damage.
 
-Apologetically, this post has little to do with the Functional Programming part of the title but I feel it important to
-set the context before delving into the specifics of what an understanding of functional programming can  bring to the
+I apologise that this post has little to do with the Functional Programming part of the title but I feel it important to
+set the context before delving into the specifics of what an understanding of functional programming can bring to the
 evolution of system designs.
 
 The agile 'movement' in the mid to late 90's was, in part, a reaction to this very issue. Agile methodologies differ in
@@ -34,9 +34,9 @@ In order to make effective changes to software architecture we need to first und
 
 I believe this is where most organisations (especially large organisations) go wrong. Any change to existing software,
 even a minor one, has several side effects. Any change has an impact on either the behaviour of the system or an impact
-on the cognitive load on any developer trying to understand the system, or in most cases both these effects.
+on the cognitive load on any developer trying to understand the system, or most often, both these effects.
 
-In most cases we focus predominantly on the changes impact on the existing behaviour. Sometimes, most often when we are
+In most cases we focus predominantly on the changes impact on the existing behaviour. Sometimes, like when we are
 carrying out a deliberate 'refactoring' exercise, we focus on the cognitive load of a future developer (possibly our
 future self).
 
@@ -44,8 +44,8 @@ Good development teams do apply a number of disciplines to attempt to keep this 
 through peer review, pair programming, the application of programming style guides[^4], etc. Although these disciplines
 are incredibly useful they are predicated on something I frequently find is missing, a shared understanding of the
 architecture, it's principles, approaches and tradeoffs. All too often this overall view of the system is either
-jealously guarded by the 'ivory tower' architecture team as if it were some arcane power held over the lowly developers
-or this overview is fragmeneted and held in the heads of a number of key individuals but never made explicit or
+jealously guarded by the 'ivory tower' architecture team (as if it were some arcane power held over the lowly developers)
+or this overview is fragmented and held in the heads of a number of key individuals but never made explicit or
 coherrent.
 
 How often have you been through a code review that focussed on the stylistic patterns to apply to the code rather than a
@@ -61,7 +61,7 @@ understood and unambiguous.
 The real reason for using a notation or diagram of any sort to express systems architecture is to communicate shared
 understanding so that every developer can see the impact of each code change on the overall system.
 
-I find the key things I want to see in any design boil down to just a few key points:
+I find the things I want to see in any design boil down to just a few key points:
 1. What are the major components of the system and what are their responsibilities?
 2. What are the dependencies between the components?
 3. What messages (data) flows between these components?
@@ -86,6 +86,106 @@ The answers to these questions may be quite complex, are definitely routed in th
 trying to solve and even a small change might actually end up in a new component which needs the collective agreement
 and understanding of the whole team, or even the creation of a new team to build and manage. Although the result of
 asking these questions can be far ranging, the questions themselves are fairly simple to ask.
+
+
+
+In my first post in this series I ended by saying that I would elaborate on what 'deferring decisions in design' meant. I was a
+little disingenuous as there is no one answer to this question and I will keep revisiting it in future posts. However,
+I believe that one of the mistakes I've certainly been guilty of in the past is 'early abstraction'.
+
+What do I mean by early abstraction? All through my career I've seen software system designers (myself included) chase
+the holy grail of code reuse in the macro. The basic tenet of code reuse in the large is to find a business domain
+specific pattern that appears to repeat in the domain, apply an abstraction that 'simplifies' this behaviour and extract
+it into some reusable code.
+
+This has taken the many forms but I will discuss a few of the most common:
+1. Configuration through external switches and 'rules'
+2. Standardisation through the application of a canonical data model/message model
+3. Development and use of a domain specific language
+4. Customisation through plugins
+
+All of these approaches are extremely useful and I still use all of them at various points in my designs.
+They are not inherently good or bad but misused they can introduce inertia to change in a systems architecture.
+
+So if these approaches can be good, why should we not apply them frequently and liberally?
+
+Let's answer this through some anonymized examples of architectures I've worked with or been involved in designing.
+
+** Confiquration
+
+On the surface, designing a system that you can configure through switches and 'rules' that are recorded in some data
+store external to the code seems like a good idea. Using this mechanism we can change the behaviour of the system
+without rewriting it or even redeploying by changing the values of the switches and rules. This means we cna respond to
+change much faster?
+
+I've been involved with a number of systems that have used this approach to respond to business change. Approaches
+varied from properties files that contained hundreds of settings, to configuration in databases to rules engines that
+had their own user interfaces and data stores to allow business users to change the behaviour of systems directly.
+
+So why do I feel this approach doesn't work?
+
+It's impossible to second guess what the next business requrirement will be. Most of the systems I've seen that take the
+configuration approach where written in the 80's, 90's or early 00's and even then the pace of change was high enough to
+make trying to second guess what a business requires in a years time impossible. Even government has rapid changes to
+implement. Secretaries of state and ministers chnage, sometimes after only a few months in the job and the new incumbent
+has their own approach.
+
+Given this the only way to cope with change through configuration is to determine all the possible facotrs that could
+change and externalise these. Even if this were possible (and I've seen systems that came close) the code required to
+interpret these external rules becomes inherently complex and therefore hard to test and hard to change. All it needs is
+for a factor that has not been externalised to need change or a bug to be discovered and the development staff are left
+to read, understand, change and verify a complex domain specific set of rules for interpreting a domain specific set of
+rules. This is a tricky, slow, and error prone process. It means that most highly configurable business systems like
+this are notoriously difficult and slow to change.
+
+Even using a rules engine designed to manage externalised logic adds a layer of complexity in interfacing with this
+engine that makes changing anything not inside the scope of the rules very difficult.
+
+This issue is made more difficult if the rules are configurable by business people who don't have training or experience
+in development as they tend not to appreciate the impact of rules changes on non functional qualities such as
+performance or security. They also don't always appreciate how to rigorously test any changes.
+
+Configuration is a useful technique to cope with changes in runtime environment and broad brush changes to code paths
+such as feature toggling or switches for A-B testing. However, it's too crude a tool for dealing with changing business
+rules. I would caveat this with if you business involves developing expert tools or middleware to solve very specific
+problems then a heavy element of configuration is useful but for most business problems it developing a comprehensive
+configurable system is more expense than it's worth.
+
+
+
+
+I spent a large part of my early career working in a UK Government department solving a number of problems over a
+decade. This is a fairly unusual state of affairs in modern software developers career's as it's not common to stay with
+the same organisation or even the same problem domain for a prolonged period of time. However, this did give me the
+opportunity to observe the effect of design choices on the evolution of a system and it's ability to respond to
+change. I also got to see several of these systems rewritten in an attempt to resolve issues with early designs, often
+introducing new problems.
+
+One of the systems I worked on had to process 60-70 million items of data per month that related to actions taken by
+over a hundred thousand professionals contracted to work for the government department. These individuals worked in
+small organisations that themselves were managed by a larger local regional organisation and so on through several layers of
+management to National level for England and Wales. There were a number of reporting requirements that involved issuing,
+monthly, quarterly and rolling yearly reports summarising the transactions produced.
+
+The first incarnation of this system worked well enough but we had a few issues around code reuse we wanted to solve.
+
+One of the issues we tried to solve in a rewrite of this system was that changes in government legislation and senior personnel meant
+changes in the way the transactional data was reported on. In order to try and cope with this changing landscape we
+designed a very abstract data model.
+
+Although this meant that the data model's structure almost never had to change due to the changes in the organisation of
+the government department it meant that there was a very complex set of rules in the code to interpret this abstract
+data model. This meant that the initial system took considerably longer than expected to write in the first place, was
+quite hard to test and took a lot of time for new programmers to get their heads around when they first started on the
+system.
+
+Also a lot of the more complex queries required to piece together a business view from the abstact data were very
+expensive and took many minutes or even hours to run. Although this wasn't a showstopping problem at the time as, in the
+early 1990's nothing was reported online and the highest frequency of these report was monthly, it did mean that the
+batch processing window got tighter over time as the data grew.
+
+TODO elaborate on why this early abstraction of data model was an issue- complex code that had to change, etc.
+TODO site examples around configuration? Rules engine approach in JPMC?
 
 
 Don't fix things too early..
