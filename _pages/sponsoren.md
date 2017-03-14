@@ -6,8 +6,8 @@ share: false
 Wir bedanken uns bei folgenden Sponsoren für die Unterstützung des Teams PosiTUne Saxonia:
 
 ## Konglomerat e.V.
-<figure>
-    <a href="http://konglomerat.org"><img src="/assets/images/sponsors/logo_knglmrt_600x577.jpg" alt="Logo des Konglomerat e.V." style="width:100%; height:auto;"></a>
+<figure style="width: 100%">
+    <a href="http://konglomerat.org"><img src="/assets/images/sponsors/logo_knglmrt_600x577.jpg" alt="Logo des Konglomerat e.V."></a>
     <figcaption><i class="fa fa-fw fa-external-link" aria-hidden="true"></i> <a href="http://konglomerat.org">konglomerat.org</a></figcaption>
 </figure>
 
