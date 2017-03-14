@@ -213,10 +213,10 @@ whitelist:
 #  - <base_path/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid # liquid
-  path: /artikel/categories/
+  path: /categories/
 tag_archive:
   type: liquid # liquid
-  path: /artikel/tags/
+  path: /tags/
 # https://github.com/jekyll/jekyll-archives
 #jekyll-archives:
 #  enabled:
@@ -279,6 +279,7 @@ defaults:
       layout: single
       author_profile: false
       share: true
+      comments: false
       header:
        image: /assets/images/PosiTUne_Banner_1280x480px.jpg
       sidebar:
