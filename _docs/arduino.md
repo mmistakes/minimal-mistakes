@@ -1,16 +1,18 @@
 ---
 permalink: /docs/arduino
 title: "Arduino"
-tags: Arduino Programmierung ESP8266 Wemos
+excerpt: "Arduino-Boards programmieren mit dem Raspberry Pi"
+# tags: Arduino Programmierung ESP8266 Wemos
 author_profile: true
 author: Diego
 comments: true
+header:
+    teaser: /assets/images/docs/wemos-d1-mini_400x300px.jpg
 ---
+{% include toc %}
 ## Arduino-Entwicklungs-Werkzeuge installieren
 
-Am komfortabelsten lässt es sich am Pi mit Arduinos mit [PlatformIO](http://platformio.org/) arbeiten.
-
-### Installation
+Sehr komfortabel lässt es sich mit Arduinos am Pi mit der Entwicklungsumgebung [PlatformIO](http://platformio.org/) arbeiten.
 
 Zuerst [Linuxbrew](http://linuxbrew.sh/) installieren:
 
@@ -31,7 +33,7 @@ Jetzt kann mit Linuxbrew PlatformIO installiert werden:
 
 ### Board anschließen
 
-Vor dem Anschließen, System-Logs anzeigen lassen:
+Vor dem Anschließen System-Logs anzeigen lassen:
 
     $ tail -f /var/log/syslog
 
