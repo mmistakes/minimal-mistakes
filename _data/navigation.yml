@@ -47,3 +47,8 @@ docs:
 #        - title: "Testkonzept"
 #    - title: "Öffentlichkeitsarbeit"
 #    - title: "Anforderungen"
+
+    - title: "Tutorials"
+      children:
+        - title: "Arduino"
+          url: /docs/arduino/
