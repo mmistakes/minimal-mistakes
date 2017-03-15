@@ -48,7 +48,7 @@ docs:
 #    - title: "Öffentlichkeitsarbeit"
 #    - title: "Anforderungen"
 
-    - title: "Tutorials"
+    - title: "Anleitungen"
       children:
         - title: "Arduino"
           url: /docs/arduino/
