@@ -160,7 +160,8 @@ several components that need information about the same entities from a business
 number of things.
 
 1. Components with Multiple or Un-surfaced responsibilities.
-2. Focusing to much on Static Data/Object Modelling
+2. Focusing to much on Static Data/Object Modelling.
+3. Unnecessary Coupling between Components.
 
 *** Multiple or Un-surfaced Responsibilities
 
@@ -202,20 +203,42 @@ It's very easy to focus on modelling data in isolation and either miss important
 perspective that leads to more subtle judgements that result in coupling and dependencies between parts of the system
 that should not be there.
 
-*** Unnecessary Coupling [TOOD is this structural coupling or something else?]
+*** Unnecessary Coupling between Components [TOOD is this structural coupling or something else?]
 
 Some of the other issues with a centralised and/or canonical data model is the unintended coupling of components.
 
 Superficially, converting the data early in the system into a canonical model and then using this model everywhere
 seems like a good separation of responsibilities. However, lets consider making changes to data input to the system when
-using this approach. In this example scenario, we will assume we have a component responsible for transforming the data to a
-canonical format and storing it and then more than one component using the resulting canonical data format for a
-specific entity. Let's assume that the two client components are carrying out different responsibilities and therefore
-although requiring information about the same entity have very little overlap in the specific fields required. In the
-worst case this may mean both components having to implement code to deal with data that neither use or that only one of
-them uses. This means that any change to the data can, in the worst case, end up impacting three components, that
-responsible for transforming and storing the data, and both the downstream components when the change may actually only
-be important to one of the downstream components.
+using this approach.
+
+In this example scenario, we will assume we have a component responsible for transforming the data to a canonical format
+and storing it and then more than one component using the resulting canonical data format for a specific entity. Let's
+assume that the two client components are carrying out different responsibilities and therefore although requiring
+information about the same entity have very little overlap in the specific fields required. In the worst case, depending
+on the implementation, this may mean both components having to implement code to deal with data that neither use or that
+only one of them uses.
+
+This means that any change to the data can end up impacting three components, that responsible for transforming and
+storing the data, and both the downstream components when the change may actually only be important to one of the
+downstream components.
+
+** Domain Specific Language
+
+The development of a domain specific language to allow code to specify logic in business terms is generally a good idea.
+
+However, as with all design choices there is a trade off. In this case I don't think that Domain Specific Language (DSL)
+are bad. I think that developing a DSL too early can be problematic. When you start to wrap data and behaviour in a DSL
+you are applying an abstraction to simplify the domain for other developers. This is useful but you have to have
+reasonable confidence that your abstraction is an accurate reflection of the domain. If the domain is not well
+understood then introducing an abstraction will 'bake in' inaccurate assumptions.
+
+Even if the abstractions codified in the DSL are representative of the problem domain what happens when the domain
+changes? Depending on the change the very structure of the DSL may have to change, impacting both the DSL and the code
+using it.
+
+I am a little ambivalent about DSL's as I think, on the whole, they can be very beneficial but they are very hard to get
+right. This is particularly true if the DSL is developed early.
+
 
 I spent a large part of my early career working in a UK Government department solving a number of problems over a
 decade. This is a fairly unusual state of affairs in modern software developers career's as it's not common to stay with
