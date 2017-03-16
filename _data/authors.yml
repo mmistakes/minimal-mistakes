@@ -27,3 +27,11 @@ pkour-en:
    email: "pkour@ionio.gr"
    bio: "Information Systems and E-Goverment"
    avatar: "/assets/images/kourou.jpg"
+   
+andronikos:
+  name: "Θεόδωρος Ανδρόνικος"
+  email: "andronikos@ionio.gr"
+  bio: "Διαδικτυακός Προγραμματισμός"
+  avatar: "/assets/images/andro.jpg"
+
+
