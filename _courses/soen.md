@@ -1,5 +1,5 @@
 ---
-ref: sote
+ref: soen
 title: "Τεχνολογία Λογισμικού"
 semester: 6
 author: choko
