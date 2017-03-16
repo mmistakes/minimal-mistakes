@@ -1,3 +1,9 @@
+## [4.3.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.3.1)
+
+### Bug Fixes
+
+- Correctly show Related Posts heading when UI Text data file is omitted and `related: true` in YAML Front Matter. [#901](https://github.com/mmistakes/minimal-mistakes/pull/901)
+
 ## [4.3.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.3.0)
 
 ### Enhancements
