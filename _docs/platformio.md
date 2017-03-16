@@ -57,9 +57,10 @@ Man findet das Board auch mit dem Befehl ```ls -l```:
 </div>
 
 ### Neues Arduino-Projekt anlegen
-Zuerst legen wir einen neuen Ordner für unser Projekt an.
+Zuerst legen wir einen neuen Ordner für unser Projekt an und wechseln in diesen Ordner.
 
     $ mkdir hello-world
+    $ cd hello-world
 
 Mit ```$ platformio boards``` können wir uns alle von PlatformIO unterstützten Boards anzeigen lassen. Weil da jede Menge Geräte gelistet werden, ist es sinnvoll, die Ausgabe auf die gesuchte Plattform einzugrenzen, in diesem Beispiel auf den Hersteller "WeMos".
 
