@@ -17,4 +17,4 @@ Interests:
 Contact:
   tel: "+30 26610 87710"
   email: "vchris@ionio.gr"
-  web: "http://di.ionio.gr/wp-content/uploads/2016/10/CV_CHRISSIKOPOULOS_ENGL_1.pdf"
+  web: "http://di.ionio.gr"
