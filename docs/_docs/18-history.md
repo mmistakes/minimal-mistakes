@@ -4,8 +4,14 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2017-02-28T10:35:04-05:00
+modified: 2017-03-16T10:27:53-04:00
 ---
+
+## [4.3.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.3.1)
+
+### Bug Fixes
+
+- Correctly show Related Posts heading when UI Text data file is omitted and `related: true` in YAML Front Matter. [#901](https://github.com/mmistakes/minimal-mistakes/pull/901)
 
 ## [4.3.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.3.0)
 
