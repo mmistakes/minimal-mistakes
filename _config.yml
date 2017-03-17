@@ -6,6 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
+theme: minimal-mistakes-jekyll    #新增
 locale                   : "zh-CN"
 title                    : "Zgene"
 title_separator          : "-"
