@@ -87,7 +87,7 @@ trying to solve and even a small change might actually end up in a new component
 and understanding of the whole team, or even the creation of a new team to build and manage. Although the result of
 asking these questions can be far ranging, the questions themselves are fairly simple to ask.
 
-
+# The Early Abstraction turns into a Worm #
 
 In my first post in this series I ended by saying that I would elaborate on what 'deferring decisions in design' meant. I was a
 little disingenuous as there is no one answer to this question and I will keep revisiting it in future posts. However,
@@ -111,7 +111,7 @@ So if these approaches can be good, why should we not apply them frequently and 
 
 Let's answer this through some anonymized examples of architectures I've worked with or been involved in designing.
 
-** Confiquration
+## Confiquration ##
 
 On the surface, designing a system that you can configure through switches and 'rules' that are recorded in some data
 store external to the code seems like a good idea. Using this mechanism we can change the behaviour of the system
@@ -151,7 +151,7 @@ rules. I would caveat this with if you business involves developing expert tools
 problems then a heavy element of configuration is useful but for most business problems it developing a comprehensive
 configurable system is more expense than it's worth.
 
-** Canonical Data Model
+## Canonical Data Model ##
 
 The most basic and common form of this standardisation is to create a single data model, often implemented in a single
 relational database. Although this approach has some definite advantages in providing a common dialect for data used
@@ -160,10 +160,10 @@ several components that need information about the same entities from a business
 number of things.
 
 1. Components with Multiple or Un-surfaced responsibilities.
-2. Focusing to much on Static Data/Object Modelling.
+2. Focusing to much on Modelling Static Data or Objects.
 3. Unnecessary Coupling between Components.
 
-*** Multiple or Un-surfaced Responsibilities
+### Multiple or Un-surfaced Responsibilities ###
 
 The components in the system may not have clearly defined responsibilities and therefore more than one component is
 responsible for similar or the same business function. Alternatively, there's an unsurfaced business function that is
@@ -179,7 +179,7 @@ If this question is difficult to answer or at all ambiguous this is a strong ind
 there's no clear common understanding of the system architecture or the component your proposing to change is either not
 responsible, or not fully responsible, for the behaviour/data being added or changed.
 
-*** Static Data/Object Modelling
+### Modelling Static Data or Objects ###
 
 Focusing on modelling data without seriously considering the systems behaviour and responsibilities leads to a number of
 issues. The classic example of this is focusing on noun analysis to derive an Object and/or Data model without thinking
@@ -203,7 +203,7 @@ It's very easy to focus on modelling data in isolation and either miss important
 perspective that leads to more subtle judgements that result in coupling and dependencies between parts of the system
 that should not be there.
 
-*** Unnecessary Coupling between Components [TOOD is this structural coupling or something else?]
+### Unnecessary Coupling between Components [TOOD is this structural coupling or something else?] ###
 
 Some of the other issues with a centralised and/or canonical data model is the unintended coupling of components.
 
@@ -222,7 +222,7 @@ This means that any change to the data can end up impacting three components, th
 storing the data, and both the downstream components when the change may actually only be important to one of the
 downstream components.
 
-** Domain Specific Language
+## Domain Specific Language ##
 
 The development of a domain specific language to allow code to specify logic in business terms is generally a good idea.
 
@@ -237,8 +237,75 @@ changes? Depending on the change the very structure of the DSL may have to chang
 using it.
 
 I am a little ambivalent about DSL's as I think, on the whole, they can be very beneficial but they are very hard to get
-right. This is particularly true if the DSL is developed early.
+right. This is particularly true if the DSL is developed early. Wrapping an all encompassing abstraction around a
+problem is can potentially accelerate the delivery of a solution, especially in an environment where there are many
+developers. The DSL, by definition, acts as common language and difficult parts of the abstraction can be managed by a
+much smaller number of people than are required across the whole project.
 
+However, I believe DSL's can go to far, too fast. My approach is to only introduce a DSL into a domain where the problem
+space is clearly understood and has been stable for some time. I also suggest that DSL's be keep narrowly focused with a
+small 'surface area' (i.e. a small API). In this way larger problems can be solved by composing these smaller
+components.
+
+## Plugins ##
+
+The use of plugins for customisation is used quite extensively in tooling to allow for extension points for developers, usually
+external to the organisation, who don't have direct access to the code to make changes.
+
+Again, like all the approaches discussed so far, this is a useful technique. In my opinion, using plugins to provide
+extension points within a single organisation solving a business problem rather than a tooling for developers problem is
+not a good solution. The complexity of having to add in a framework of code to support the execution environment for
+plugins is a large overhead for teams to maintain and it detracts focus from solving the core business problems.
+
+So save plugins for tools to be used by developers who are likely to want to, and have the skills to, extend your product.
+
+# Drivers for Early Abstraction #
+
+I've talked about a number of methods of abstraction and some of the dangers of applying these too early in a project
+(or at all in some cases). Most of the costs of early abstraction can be summarised as 'the introduction of inertia in
+the development cycle'.
+
+So what are the drivers that frequently introduce early abstraction?
+
+[TODO expand this from a list to a coherent paragraphs]
+1. Communication between teams - vocabulary, boundaries
+2. Ability to deploy independently
+3. Few biz experts codifying their knowledge
+4. DRY principle dogma.
+4. ???
+
+Any combination of the issues above can lead to the adoption of an abstraction quite early in the development of a
+system. Most of these drivers are predominantly about communication of concepts between technical roles and teams (the
+exception is DRY principle dogma). These drivers are about how you can you ensure the developers and development teams
+can get stuff done without slowing each other down.
+
+Inherently, a developer will want to be able to progress their work without having to communicate with others as this
+slows their ability to get things done. [TODO rewrite this as it's not what I really mean!!] This inertia in
+communicaton scales up to the team level as well. So even when the team is using communal development approaches such as
+pair programming or mob programming the communication intertia just moves to the team boundary instead of the
+individual.
+
+One of the strongest architectural effects of this communication inertia is the adoption of microservices as a solution
+to the team communication boundary. This uses the, by now infamous, inverse Conway's Law. Conway's Law[^5] states that
+"organizations which design systems ... are constrained to produce designs which are copies of the communication
+structures of these organizations". Inverse Conway's Law tries to use this phenomenon by organising the organisation to
+constrain the required system design.
+
+In the case of a predominantly microsystems based architecture the idea is that organising the developers into small
+teams each responsible for a small service or services will lead to clearly defined boundaries around each
+microservice. This is generally what happens but without a shared understanding of the entire architecture the APIs are
+unlikely to well support the clients of the service and coordination, orchestration and choreography of these
+microservices is also an area that's likely to suffer.
+
+Microservices are a good solution to a number of problems, predominantly around horizontally scaling for massive load,
+but having difficulty getting teams to communicate is not a good enough reason to adopt a number of distributed systems
+problems that come with microservices.
+
+
+[TODO all of these are actually sticking plasters over the problem of a large number of developers having to share a
+common understanding of the business problem and a common agreed view of the high level solution. This is a people
+problem not a technology one. Although choosing the appropriate technologies can support the people (process) problem
+it's not a silver bullet]
 
 I spent a large part of my early career working in a UK Government department solving a number of problems over a
 decade. This is a fairly unusual state of affairs in modern software developers career's as it's not common to stay with
@@ -255,9 +322,9 @@ monthly, quarterly and rolling yearly reports summarising the transactions produ
 
 The first incarnation of this system worked well enough but we had a few issues around code reuse we wanted to solve.
 
-One of the issues we tried to solve in a rewrite of this system was that changes in government legislation and senior personnel meant
-changes in the way the transactional data was reported on. In order to try and cope with this changing landscape we
-designed a very abstract data model.
+One of the issues we tried to solve in a rewrite of this system was that changes in government legislation and senior
+personnel meant changes in the way the transactional data was reported on. In order to try and cope with this changing
+landscape we designed a very abstract data model.
 
 Although this meant that the data model's structure almost never had to change due to the changes in the organisation of
 the government department it meant that there was a very complex set of rules in the code to interpret this abstract
@@ -334,3 +401,5 @@ style guide of the recognised stewards of the language or the most common librar
 minimum with particular emphasis on choosing descriptive names relevant to the context. I especially find approaches
 that introduce dogmatic naming conventions for variables, etc. (e.g. Hungarian notation) to be a distraction rather than
 a help.
+
+[^5]: Reference to Conway's Law here [TODO]
