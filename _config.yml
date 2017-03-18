@@ -9,11 +9,11 @@
 locale                   : "en"
 title                    : "Site Title"
 title_separator          : "-"
-name                     : "Your Name"
+name                     : "Ravi Lakhotia"
 description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "http://ravilakhotia.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "ravilakhotia2006/ravilakhotia.com"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -55,9 +55,9 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "ravilakhotia"
 facebook:
-  username               :
+  username               : "ravilakhotia"
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
@@ -77,30 +77,30 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  name             : "Ravi Lakhotia"
+  avatar           : "/assets/images/bio-photo.jpg"
+  bio              : "kuch to likhna hai yahan pe"
+  location         : "Bangalore"
+  email            : "ravilakhotia2006@gmail.com"
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "http://www.facebook.com/ravilakhotia"
   foursquare       :
-  github           :
+    github           : "https://github.com/ravilakhotia2006"
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :
+    linkedin         : "https://www.linkedin.com/in/raviplakhotia/"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          :
+    twitter          : "https://twitter.com/ravilakhotia"
   vine             :
   weibo            :
   xing             :
