@@ -37,7 +37,7 @@ Apparently there are some major differences between the two flavours when runnin
 | Windows 10 (Client) | hyperv |
 | Windows Server 2016 (Server) | process |
 
-You can verify this default setting by executing `docker info -f "{{ .Isolation }}"` on each operating system. 
+You can verify this default setting by executing `docker info -f "{% raw %}{{ .Isolation }}{% endraw %}"` on each operating system. 
 
 If you have watched the initial videos on [channel9](https://channel9.msdn.com) about containers you probably remember people talking about an option to run a windows container as it was launched like a hyper-v instance. I remember this being discussed as an optional feature to ensure full memory isolation if the default `process` isolation wasn't enough or the process in the container demanded this. I was always under the impression that containers ran always in `process` isolation unless explicitly specified with the `--isolation` parameter.
 
