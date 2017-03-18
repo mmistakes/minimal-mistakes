@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "A Digger"
 title_separator          : "-"
 name                     : "Ravi Lakhotia"
-description              : "An amazing website."
+description              : "Personal blog of Ravi Lakhotia"
 url                      : "http://ravilakhotia.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "ravilakhotia2006/ravilakhotia.com"
@@ -79,7 +79,7 @@ analytics:
 author:
   name             : "Ravi Lakhotia"
   avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "kuch to likhna hai yahan pe"
+  bio              : ""
   location         : "Bangalore"
   email            : "ravilakhotia2006@gmail.com"
   uri              :
