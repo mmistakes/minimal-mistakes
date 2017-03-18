@@ -1,6 +1,6 @@
 ---
 title: "Alex Sarafian"
-layout: splash
+layout: archive
 permalink: /
 header:
 #  overlay_color: rgba(51, 51, 51, 1.0)
