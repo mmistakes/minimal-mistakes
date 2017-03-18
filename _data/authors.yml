@@ -34,4 +34,20 @@ andronikos:
   bio: "Διαδικτυακός Προγραμματισμός"
   avatar: "/assets/images/andro.jpg"
 
-
+andronikos-en:
+  name: "Theodore Andronikos"
+  email: "andronikos@ionio.gr"
+  bio: "Internet Programming"
+  avatar: "/assets/images/andro.jpg"
+  
+okon:
+  name: "Κωνσταντίνος Οικονόμου"
+  email: "okon@ionio.gr"
+  bio: "Δίκτυα Υπολογιστών"
+  avatar: "/assets/images/okon.jpg"
+  
+okon-en:
+  name: "Konstantinos Oikonomou"
+  email: "okon@ionio.gr"
+  bio: "Computer Networks"
+  avatar: "assets/images/okon.jpg"
