@@ -1,4 +1,5 @@
-yout: post
+---
+layout: post
 title:  "Starting off!"
 date:   2017-03-18 14:32:01 IST
 categories: beginning, blog 
