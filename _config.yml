@@ -44,8 +44,11 @@ staticman:
       type               : "date"
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+
 atom_feed:
   path                   : # blank (default) uses feed.xml
+
+theme: minimal-mistakes-jekyll
 
 # SEO Related
 google_site_verification :
