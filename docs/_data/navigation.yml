@@ -18,7 +18,7 @@ foo:
         url: /child-3-page-url/
 
 
-# main links links
+# main links
 main:
   - title: "Quick-Start Guide"
     url: /docs/quick-start-guide/
