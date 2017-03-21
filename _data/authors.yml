@@ -27,3 +27,39 @@ pkour-en:
    email: "pkour@ionio.gr"
    bio: "Information Systems and E-Goverment"
    avatar: "/assets/images/kourou.jpg"
+   
+andronikos:
+  name: "Θεόδωρος Ανδρόνικος"
+  email: "andronikos@ionio.gr"
+  bio: "Διαδικτυακός Προγραμματισμός"
+  avatar: "/assets/images/andro.jpg"
+  
+emagos:
+  name: "Εμμανουήλ Μάγκος"
+  email: "emagos@ionio.gr"
+  bio: "Κρυπτογραφία και Ασφάλεια Υπολογιστικών Συστημάτων"
+  avatar: "/assets/images/emagos.jpg"
+  
+emagos-en:
+  name: "Emmanouil Magos"
+  email: "emagos@ionio.gr"
+  bio: "Cryptography and Information Systems Security"
+  avatar: "/assets/images/emagos.jpg"  
+
+andronikos-en:
+  name: "Theodore Andronikos"
+  email: "andronikos@ionio.gr"
+  bio: "Internet Programming"
+  avatar: "/assets/images/andro.jpg"
+  
+okon:
+  name: "Κωνσταντίνος Οικονόμου"
+  email: "okon@ionio.gr"
+  bio: "Δίκτυα Υπολογιστών"
+  avatar: "/assets/images/okon.jpg"
+  
+okon-en:
+  name: "Konstantinos Oikonomou"
+  email: "okon@ionio.gr"
+  bio: "Computer Networks"
+  avatar: "assets/images/okon.jpg"
