@@ -9,9 +9,3 @@ choko:
   email: "choko@ionio.gr"
   bio: "Τεχνολογίες Λογισμικού"
   avatar: "/assets/images/choko.jpg"
-
-vchris:
-  name: "Βασίλειος Χρυσικόπουλος"
-  email: "vchris@ionio.gr"
-  bio: "Πληροφορική – Δίκτυα – Ασφάλεια Πληροφοριών"
-  avatar: "/assets/images/vchris.jpg"
