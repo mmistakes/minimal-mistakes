@@ -63,3 +63,27 @@ okon-en:
   email: "okon@ionio.gr"
   bio: "Computer Networks"
   avatar: "assets/images/okon.jpg"
+  
+avlon:
+  name: "Mάρκος Αυλωνίτης"
+  email: "avlon@ionio.gr"
+  bio: "Εφαρμοσμένα Στοχαστικά Μοντέλα"
+  avatar: "assets/images/avlon.jpg"
+  
+avlo-en:
+  name: "Markos Avlonitis"
+  email: "avlon@ionio.gr"
+  bio: "Applied Stohastic Models"
+  avatar: "assets/images/avlon.jpg"
+  
+mistral:
+ name: "Μιχαήλ Στεφανιδάκης"
+ email: "mistral@ionio.gr"
+ bio "Αρχιτεκτονική Υπολογιστικών Συστημάτων"
+ avatar: "assets/images/mistral.jpg"
+ 
+mistral-en:
+ name: "Michalis Stefanidakis"
+ email: "mistral@ionio.gr"
+ bio "Computer Systems Architecture"
+ avatar: "assets/images/mistral.jpg"
