@@ -33,6 +33,18 @@ andronikos:
   email: "andronikos@ionio.gr"
   bio: "Διαδικτυακός Προγραμματισμός"
   avatar: "/assets/images/andro.jpg"
+  
+emagos:
+  name: "Εμμανουήλ Μάγκος"
+  email: "emagos@ionio.gr"
+  bio: "Κρυπτογραφία και Ασφάλεια Υπολογιστικών Συστημάτων"
+  avatar: "/assets/images/emagos.jpg"
+  
+emagos-en:
+  name: "Emmanouil Magos"
+  email: "emagos@ionio.gr"
+  bio: "Cryptography and Information Systems Security"
+  avatar: "/assets/images/emagos.jpg"  
 
 andronikos-en:
   name: "Theodore Andronikos"
