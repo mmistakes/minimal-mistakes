@@ -9,9 +9,3 @@ choko:
   email: "choko@ionio.gr"
   bio: "Τεχνολογίες Λογισμικού"
   avatar: "/assets/images/choko.jpg"
-
-soutas-en:
-  name: "Spyros Sioutas"
-  email: "sioutas@ionio.gr"
-  bio: "Data Structures & Databases"
-  avatar: "/assets/images/sioutas.jpg"
