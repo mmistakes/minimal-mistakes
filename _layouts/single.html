@@ -55,7 +55,7 @@ layout: default
       {% include post_pagination.html %}
     </div>
 
-    {% if site.comments.provider and page.comments %}
+    {% if page.comments == true %}   <!--  if site.comments.provider and page.comments -->
       {% include comments.html %}
     {% endif %}
   </article>
