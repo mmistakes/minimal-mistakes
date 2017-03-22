@@ -1,8 +1,8 @@
 ---
 layout: single
 author_profile: true
-permalink: "/about/"
-title: "About Me"
+permalink: /about/
+title: "About Ray"
 ---
 
 ### A Little about Myself
