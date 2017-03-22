@@ -139,7 +139,7 @@ To test the theme, run `bundle exec rake preview` and open your browser at `http
 
 The MIT License (MIT)
 
-Copyright (c) 2016 Michael Rose
+Copyright (c) 2017 Michael Rose
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
