@@ -1,9 +1,3 @@
----
-layout:     single
-title:      "Yelp Data Analysis"
-date:       2017-03-21 23:20:00 -0600    
----
-
 ### STA 141B: Yelp Data Analysis
 
 ```python

@@ -81,7 +81,7 @@ author:
   avatar           : "/assets/images/Headshot.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Those violent delights have violent ends."
   location         : "Davis, CA"
-  email            :
+  email            : "m519160201@gmail.com"
   uri              :
   bitbucket        :
   codepen          :
@@ -174,7 +174,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Los_angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins

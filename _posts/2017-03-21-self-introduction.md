@@ -1,9 +1,3 @@
----
-layout: single
-title:  "Who am I"
-date:   2017-03-21 23:00:00 -0600
----
-
 ### A Little about Myself
 
 My name is Rui (In Chinese Rui is pronounced as Ray) Li. I am a senior student at UC Davis pursuing degrees in Applied Mathematics and Statistics. 
