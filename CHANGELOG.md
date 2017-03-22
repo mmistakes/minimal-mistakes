@@ -1,3 +1,10 @@
+## Unreleased
+
+### Maintenance
+
+- Remove extra word in comment. [#911](https://github.com/mmistakes/minimal-mistakes/pull/911)
+- Fix typo in Utility Class docs. [#915](https://github.com/mmistakes/minimal-mistakes/pull/915)
+
 ## [4.3.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.3.1)
 
 ### Bug Fixes

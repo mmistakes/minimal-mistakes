@@ -4,8 +4,15 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2017-03-16T10:27:53-04:00
+modified: 2017-03-22T09:47:31-04:00
 ---
+
+## Unreleased
+
+### Maintenance
+
+- Remove extra word in comment. [#911](https://github.com/mmistakes/minimal-mistakes/pull/911)
+- Fix typo in Utility Class docs. [#915](https://github.com/mmistakes/minimal-mistakes/pull/915)
 
 ## [4.3.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.3.1)
 
