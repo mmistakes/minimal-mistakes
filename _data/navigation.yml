@@ -1,6 +1,5 @@
 main: 
   - title: "About Ray"
-      url: /about/
+      url:  rlee12.github.io/about/
   - title: "Projects"
-      url: /project/
-
+      url:  rlee12.github.io/project/
