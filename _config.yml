@@ -78,7 +78,7 @@ analytics:
 # Site Author
 author:
   name             : "Rui (Ray) Li"
-  avatar           : "/assets/images/Headshot.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/Headshot.JPG" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Those violent delights have violent ends."
   location         : "Davis, CA"
   email            :
@@ -89,7 +89,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "rlee12"
   google_plus      :
   keybase          :
   instagram        :
