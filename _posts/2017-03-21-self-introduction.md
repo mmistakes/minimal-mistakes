@@ -1,10 +1,7 @@
 ---
 layout: single
-title:  "Welcome to Jekyll!"
-date:   2017-03-21 23:00:00
-categories: jekyll update
----
-
+title:  "Who am I"
+date:   2017-03-21 23:00:00 -0600
 ---
 
 ### A Little about Myself
