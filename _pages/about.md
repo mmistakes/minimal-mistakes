@@ -2,10 +2,8 @@
 layout: single
 author_profile: true
 permalink: /about/
-title: "About Ray"
+title: "A Little about Myself"
 ---
-
-### A Little about Myself
 
 My name is Rui (In Chinese Rui is pronounced as Ray) Li. I am a senior student at UC Davis pursuing degrees in Applied Mathematics and Statistics. 
 
