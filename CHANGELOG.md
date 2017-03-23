@@ -1,5 +1,9 @@
 ## Unreleased
 
+### Enhancements
+
+- Improve print stylesheet by increasing text contrast, removing elements that don't need to be printed, expanding URLs, and reducing amount of blank pages. [#909](https://github.com/mmistakes/minimal-mistakes/issues/909)
+
 ### Maintenance
 
 - Remove extra word in comment. [#911](https://github.com/mmistakes/minimal-mistakes/pull/911)
