@@ -4,10 +4,14 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-modified: 2017-03-22T09:47:31-04:00
+modified: 2017-03-23T14:32:01-04:00
 ---
 
 ## Unreleased
+
+### Enhancements
+
+- Improve print stylesheet by increasing text contrast, removing elements that don't need to be printed, expanding URLs, and reducing amount of blank pages. [#909](https://github.com/mmistakes/minimal-mistakes/issues/909)
 
 ### Maintenance
 
