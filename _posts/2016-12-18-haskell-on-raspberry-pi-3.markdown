@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Haskell on Raspberry Pi 3
-modified:
+modified: 2017-03-24T14:36:18+01:00
 categories: haskell
 excerpt: Installing Haskell and Stack on Raspberry Pi 3 is not painless but easier than you think.
 tags: [haskell, stack, rapsberry-pi, ghc, arm, armv7, ghci, haskell-stack, raspberry]
@@ -47,7 +47,7 @@ To do so run:
 $ sudo apt-get update
 ```
 
-# Installing Stack
+# [Installing Stack](#installing-stack)
 
 I prefer to use [Stack](https://www.haskellstack.org/) to manage my Haskell installation
 so the first step is to get a version of stack for the Raspberry Pi.
@@ -60,8 +60,17 @@ has been [just updated](https://github.com/commercialhaskell/stack/pull/2857)
 to download the correct binary on ARM too. So just run
 
 ```
-$ curl -sSL https://get.haskellstack.org/ | sh
+$ curl -sSL https://get.haskellstack.org/ | sh # As of 24/03/2017 this stopped working see below
 ```
+
+__Update__:
+as of March 24th 2017 the script at [https://get.haskellstack.org/](https://get.haskellstack.org/)
+is broken again because the binary of Stack 1.4 for ARM is missing from https://www.stackage.org/stack/
+
+You can still get the Stack binary for version 1.3.2 [here](https://github.com/commercialhaskell/stack/releases/download/v1.3.2/stack-1.3.2-linux-arm.tar.gz)
+and place it at `$USR_LOCAL_BIN/stack` in your system.
+
+Once Stack is installed you can proceed with the Install LLVM step.
 
 # Install LLVM
 
@@ -143,6 +152,9 @@ To solve this I edited my project's `.cabal` file and removed
 `-rtsopts -with-rtsopts=-N` from `ghc-options`
 
 # TL;DR
+
+__Update__: as of March 24th 2017 this script won't work. See the section on
+[Installing Stack](#installing-stack)
 
 Apart from removing RTS options form your cabal file (if needed) this should
 get you going:
