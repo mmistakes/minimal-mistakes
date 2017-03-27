@@ -578,5 +578,49 @@ ru: &DEFAULT_RU
 ru-RU:
   <<: *DEFAULT_RU
 
+# Lithuanian / Lietuviškai
+# -----------------
+lt: &DEFAULT_LT
+  page                       : "Puslapis"
+  pagination_previous        : "Ankstesnis"
+  pagination_next            : "Sekantis"
+  breadcrumb_home_label      : "Pagrindinis"
+  breadcrumb_separator       : "/"
+  menu_label                 : "Meniu rodymas"
+  toc_label                  : "Turinys"
+  ext_link_label             : "Tiesioginė nuoroda"
+  less_than                  : "mažiau nei"
+  minute_read                : "min. skaitymo"
+  share_on_label             : "Pasidalinti"
+  meta_label                 :
+  tags_label                 : "Žymės:"
+  categories_label           : "Kategorijos:"
+  date_label                 : "Atnaujinta:"
+  comments_label             : "Palikti komentarą"
+  comments_title             : "Komentaras"
+  more_label                 : "Skaityti daugiau"
+  related_label              : "Taip pat turėtų patikti"
+  follow_label               : "Sekti:"
+  feed_label                 : "Šaltinis"
+  powered_by                 : "Sukurta su"
+  website_label              : "Tinklapis"
+  email_label                : "El. paštas"
+  recent_posts               : "Naujausi įrašai"
+  undefined_wpm              : "Nedeklaruotas parametras words_per_minute faile _config.yml"
+  comment_form_info          : "El. pašto adresas nebus viešinamas. Būtini laukai pažymėti."
+  comment_form_comment_label : "Komentaras"
+  comment_form_md_info       : "Markdown palaikomas."
+  comment_form_name_label    : "Vardas"
+  comment_form_email_label   : "El. paštas"
+  comment_form_website_label : "Tinklapis (nebūtina)"
+  comment_btn_submit         : "Komentuoti"
+  comment_btn_submitted      : "Įrašytas"
+  comment_success_msg        : "Ačiū už komentarą! Jis bus parodytas kai bus patvirtintas."
+  comment_error_msg          : "Atleiskite, įvyko netikėta klaida įrašant komentarą. Pasitikrinkite ar užpildėte visus būtinus laukus ir pamėginkite dar kartą."
+  loading_label              : "Kraunama..."
+lt-LT:
+  <<: *DEFAULT_LT
+
 # Another locale
 # --------------
+#
