@@ -82,7 +82,7 @@ author:
   bio              : "CanSat-Team 2017 des DLR_School_Lab TU Dresden"
   location         : # "Dresden"
   email            : "team@positune.space"
-  pgp              : "http://pgp.zdv.uni-mainz.de:11371/pks/lookup?op=get&search=0x947A9E0987F89D69"
+  pgp              : "http://pgp.zdv.uni-mainz.de:11371/pks/lookup?op=vindex&search=0x947A9E0987F89D69"
   uri              :
   bitbucket        :
   cansat           : "http://cansat.de/wettbewerb_teams.html"
