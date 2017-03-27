@@ -39,53 +39,68 @@ Diego:
     avatar          : "/assets/images/authors/diego.png"
     bio             : "Teambetreuer"
     location        : "Dresden"
-    email           : "Diego.Jahn[ät]tu-dresden[punkt]de"
-    pgp             : "http://pgp.zdv.uni-mainz.de:11371/pks/lookup?op=vindex&search=0x4ECF650344F26313"
+    email           : "diego@positune.space"
+    pgp             : # "http://pgp.zdv.uni-mainz.de:11371/pks/lookup?op=vindex&search=0x4ECF650344F26313"
     github          : "jdieg0"
 
 Dominik:
     name            : "Dominik"
     bio             : "Konstruktion Satellit, Finanzierung"
+    email           : "dominik@positune.space"
 
 Elias:
     name            : "Elias"
     bio             : "Soft- und Hardware Satellit"
+    email           : "elias@positune.space"
 
 Fabian:
     name            : "Fabian"
     bio             : "Soft- und Hardware Satellit und Bodenstation"
-    email           : "fabian[ät]uriah[punkt]heep[punkt]sax[punkt]de"
+    email           : "fabian@positune.space"
     github          : "fabi12341"
+
+Hauke:
+    name            : "Haucke"
+    bio             : "Software Satellit"
+    email           : "hauke@positune.space"
 
 Jakob:
     name            : "Jakob"
     bio             : "Teambetreuer"
+    email           : "jakob@positune.space"
 
 Jan:
     name            : "Jan"
     bio             : "Teambetreuer"
+    email           : "jan@positune.space"
 
 Janek:
     name            : "Janek"
     bio             : "Teamchef, Hardware Bodenstation, Finanzierung"
+    email           : "janek@positune.space"
 
 Janina:
     name            : "Janina"
     bio             : "Leiterin DLR_School_Lab TU Dresden"
+    email           : "janina@positune.space"
 
 Max:
     name            : "Max"
     bio             : "Konstruktion Satellit"
+    email:          : "max@positune.space"
     
 Stefan:
     name            : "Stefan"
     bio             : "Teambetreuer"
+    email           : "stefan@positune.space"
 
 Till:
     name            : "Till"
     bio             : "Soft- und Hardware Satellit"
+    email           : "till@positune.space"
     github          : "SpiritOfTill"
 
 Timon:
     name            : "Timon"
     bio             : "Software Satellit"
+    timon           : "timon@positune.space"
