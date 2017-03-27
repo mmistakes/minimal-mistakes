@@ -40,7 +40,7 @@ Diego:
     bio             : "Teambetreuer"
     location        : "Dresden"
     email           : "diego@positune.space"
-    pgp             : # "http://pgp.zdv.uni-mainz.de:11371/pks/lookup?op=vindex&search=0x4ECF650344F26313"
+    pgp             : "http://pgp.zdv.uni-mainz.de:11371/pks/lookup?op=get&search=0x7792483AD9D7AFC3"
     github          : "jdieg0"
 
 Dominik:
