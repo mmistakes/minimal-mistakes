@@ -2,8 +2,8 @@
 locale                   : "en"
 title                    : "BIG IoT"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "BIG IoT project"
+description              : "Building an IoT ecosystem by bridging the interoperability gap of IoT platforms."
 url                      : https://big-iot.github.io
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "BIG-IoT/BIG-IoT.github.io"
