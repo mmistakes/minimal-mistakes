@@ -4,25 +4,25 @@ docs:
       - title: "Introduction"
         url: /index.html
       - title: "Getting started"
-        url: /tutorial.html
+        url: /tutorial
         children:
       - title: "Provide IoT Offerings"
-        url: /providerPerspective.html
+        url: /providerPerspective
       - title: "Consume IoT Offerings"
-        url: /consumerPerspective.html
+        url: /consumerPerspective
   - title: "Resources"
     children:
       - title: "Download the API"
-        url: /download.html
+        url: /download
       - title: "Get the Source Code"
-        url: /sourceCode.html
+        url: /sourceCode
       - title: "JavaDoc"
         url: /javaDoc/
       - title: "Wiki"
         url: /wiki/
 main:
   - title: "Download API v0.6"
-    url: /download.html
+    url: /download
   - title: "Visit the Marketplace"
     url: http://84.240.187.13:4032/
   - title: "Visit the Project behind"
