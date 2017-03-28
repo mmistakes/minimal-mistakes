@@ -7,7 +7,7 @@ sidebar:
 
 Using the BIG IoT libraries, it is easy to get started to dive into the BIG IoT ecosystem. These libs allow providers to register and manage their offerings and consumers to access offerings from the BIG IoT Marketplace. 
 
-![BIG IoT Architecture](./assets/architecture.png "Logo Title Text 1")
+![BIG IoT Architecture](./architecture.png "Logo Title Text 1")
 
 In this developer guide, two parts are described:
 
