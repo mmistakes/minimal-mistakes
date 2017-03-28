@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Impressum"
+excerpt: "Unser Impressum."
 permalink: /impressum/
 author_profile: false
 ---

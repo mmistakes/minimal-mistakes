@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Anfahrt"
+excerpt: 'Anfahrt und Schulwegplan: per Auto, Bus, Bahn, Fahrrad oder zu Fuß.'
 permalink: /anfahrt/
 author_profile: false
 ---
@@ -41,5 +42,5 @@ In der Nähe befindet sich auch der Regionalbahnhof
 [Karte in Vollbild](https://www.openstreetmap.org/?mlat=52.53608&amp;mlon=13.15274#map=17/52.53608/13.15274&amp;layers=N)
 {: .text-right}
 
-Sie können unsere Schule über den Brunsbütteler Damm erreichen. Des Weiteren hat
-unsere Schule einen kleinen Parkplatz.
+Sie können unsere Schule über den Brunsbütteler Damm erreichen. Unsere Schule
+hat einen kleinen Parkplatz.

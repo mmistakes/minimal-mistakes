@@ -3,7 +3,7 @@ layout: single
 title: "Schulstart"
 permalink: /schulstart/
 author_profile: false
-excerpt: "Alles wichtige über den Schulstart und Einschulung."
+excerpt: "Alles wichtige über den Schulstart und der Einschulung an der Brandwerder."
 modified: 2017-03-07T10:55:00+01:00
 header:
   overlay_color: "#fff"

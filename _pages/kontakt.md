@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Kontakt"
+excerpt: 'Wie Sie uns per Telefon, E-Mail oder Fax erreichen können.'
 permalink: /kontakt/
 author_profile: false
 ---
