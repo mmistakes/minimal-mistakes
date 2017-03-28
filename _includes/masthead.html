@@ -2,7 +2,7 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="{{ '/' | absolute_url }}"><img src='BIGIoT-logo-highres.png' width=70 /></a>
+        <a class="site-title" href="{{ '/' | absolute_url }}"><img src='{{absolute_url}}/BIGIoT-logo-highres.png' width=70 /></a>
         <ul class="visible-links">
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
