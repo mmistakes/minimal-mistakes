@@ -1,21 +1,27 @@
 ---
 layout: archive
 title: "Sitemap"
+excerpt: "Einen Überblick über unsere Inhalte."
 permalink: /sitemap/
 author_profile: false
 ---
 
-A list of all the posts and pages found on the site. For you robots out there is an [XML version]({{ "sitemap.xml" | absolute_url }}) available for digesting as well.
+Hier finden Sie eine Auflistung aller unserer Inhalte auf unserer Website. Wir
+sind auch freundlich zu unseren automatisierten Besuchern (z.B. google suche und
+co), denn für dich gibt es auch eine [XML version]({{ "sitemap.xml" |
+absolute_url }}) zum einfacheren verdauen.
 
-<h2>Pages</h2>
+<h2>Seiten</h2>
 {% for post in site.pages %}
   {% include archive-single.html %}
 {% endfor %}
 
+{% if site.posts.size > 0 %}
 <h2>Posts</h2>
 {% for post in site.posts %}
   {% include archive-single.html %}
 {% endfor %}
+{% endif %}
 
 {% capture written_label %}'None'{% endcapture %}
 
