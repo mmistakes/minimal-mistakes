@@ -127,17 +127,6 @@ Schule, immer in den Sommerferien?<br><br>
 Wo müssen die Kinder in der Ferienzeit hingebracht werden?
 {: .notice--warning}
 
-# Studientage / Fortbildungen
-
-An Studientage oder anderen Fortbildungstagen, wo kein Unterricht für die Kinder
-stattfindet, wird Ihr Kind, wenn es eine ergänzende Betreuung Anspruch hat, ganz
-normal vom Schulhort betreut.
-
-**TODO:**
-An den Tagen, wo die Schule zu hat; Gibt es noch mehr Arten/Namen? Eventuell
-auch bei anderen Schulen/Kitas?
-{: .notice--warning}
-
 # Mittagessen
 
 Ihr Kind kann in unserer Schule an einem Mittagessen teilnehmen. Wenn Ihr Kind

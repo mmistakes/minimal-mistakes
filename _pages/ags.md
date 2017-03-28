@@ -18,6 +18,9 @@ können. Vor allem die Kursgebühren können sich ändern.
 
 # Kursangebote im Schuljahr 2016/17
 
+**TODO**: Übersicht über alle AGs (siehe AGs 2016-17.xls)
+{: .notice--warning}
+
 ## <i class='fa fa-gbp'></i> Englisch in der Schulanfangsphase (SAPH)
 {: #englisch_ag}
 
