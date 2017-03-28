@@ -1,12 +1,29 @@
-# main links
+docs:
+  - title: "Developer Guide"
+    children:
+      - title: "Introduction"
+        url: /index.html
+      - title: "Getting started"
+        url: /tutorial.html
+        children:
+      - title: "Provide IoT Offerings"
+        url: /providerPerspective.html
+      - title: "Consume IoT Offerings"
+        url: /consumerPerspective.html
+  - title: "Resources"
+    children:
+      - title: "Download the API"
+        url: /download.html
+      - title: "Get the Source Code"
+        url: /sourceCode.html
+      - title: "JavaDoc"
+        url: /javaDoc/
+      - title: "Wiki"
+        url: /wiki/
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Download API v0.6"
+    url: /download.html
+  - title: "Visit the Marketplace"
+    url: http://84.240.187.13:4032/
+  - title: "Visit the Project behind"
+    url: http://big-iot.eu
