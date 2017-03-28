@@ -17,9 +17,9 @@ docs:
       - title: "Get the Source Code"
         url: /sourceCode
       - title: "JavaDoc"
-        url: /javaDoc/
+        url: /comingSoon/
       - title: "Wiki"
-        url: /wiki/
+        url: /comingSoon/
 main:
   - title: "Download API v0.6"
     url: /download
