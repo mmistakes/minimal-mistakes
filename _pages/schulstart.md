@@ -8,6 +8,8 @@ modified: 2017-03-07T10:55:00+01:00
 header:
   overlay_color: "#fff"
   overlay_image: /assets/images/feature-einschulung.jpg
+sidebar:
+  nav: 'schulstart'
 ---
 
 {{comment}}<!-- Abkürzungen von Begriffen -->{{endcomment}}
@@ -15,7 +17,8 @@ header:
 *[JabL]:    Jahrgangsbezogenes Lernen (klassisches Unterrichtskonzept)
 *[SAPH]:    Schulanfangsphase
 
-# Termine rundum Einschulung
+# <i class="fa fa-calendar"></i> Termine rundum Einschulung
+{: #termine}
 
 Die wichtigsten Daten in einem Überblick.
 
@@ -50,7 +53,8 @@ nachsehen.<br/><br/>
 
 ---
 
-# Kurzporträt unserer Schule
+# <i class="fa fa-picture-o"></i> Kurzporträt unserer Schule
+{: #portrait}
 
 Die Grundschule am Brandwerder bietet sowohl das klassische Klassenkonzept
 (JabL) als auch eine Jahrgangsmischung (JÜL über Dreijahrgänge) in der flexiblen
@@ -84,7 +88,8 @@ und 54% Schüler haben, die von 13 Erziehern und 24 Lehrkräften betreut werden
 
 [<i class="fa fa-download">&nbsp;&nbsp;</i>Informationen zu JÜL-Klassen](https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/mdb-sen-bildung-bildungswege-grundschule-flexible_schulanfangsphase.pdf){: .btn .btn--success}
 
-# Anmeldung der Schulanfänger/innen
+# <i class="fa fa-file-text-o"></i> Anmeldung der Schulanfänger/innen
+{: #anmeldung}
 
 In der Zeit vom 30. September bis 14. Oktober 2016 melden Sie ihr
 schulpflichtiges Kind in der [für Sie zuständigen
@@ -113,14 +118,16 @@ soll oder nicht. Falls Ihr Kind nicht teilnehmen soll, so wird Ihr Kind in einer
 Freistunde in unserem Hort betreut. Sie können natürlich jederzeit diese
 Entscheidung ändern.
 
-# Einschulungsuntersuchung
+# <i class="fa fa-stethoscope"></i> Einschulungsuntersuchung
+{: #untersuchung}
 
 Ihr Kind wird durch den [Kinder- und
 Jugendgesundheitsdiest](https://service.berlin.de/dienstleistung/324254/)
 schulärztlich untersucht. Sie bekommen nach der Anmeldung Ihres Kindes  **einen
 Termin zugesendet**.
 
-# Anmeldung zur ergänzenden Betreuung (Schulhort)
+# <i class="fa fa-child"></i> Anmeldung zur ergänzenden Betreuung (Schulhort)
+{: #hort}
 
 Melden Sie Ihr Kind rechtzeitig zum Schulhort an, denn Sie können Ihr Kind schon
 vor der Einschulung in Betreuung geben. Denken Sie daran, dass im Zeitraum

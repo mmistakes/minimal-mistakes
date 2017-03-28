@@ -32,3 +32,15 @@ ags:
     url: '/ags/#zirkus_ag'
   - title: '<i class="fa fa-futbol-o"></i> Fussball AG'
     url: '/ags/#fussball_ag'
+
+schulstart:
+  - title: '<i class="fa fa-calendar"></i> Termine rundum Einschulung'
+    url: '/schulstart/#termine'
+  - title: '<i class="fa fa-picture-o"></i> Kurzporträt unserer Schule'
+    url: '/schulstart/#portrait'
+  - title: '<i class="fa fa-file-text-o"></i> Anmeldung der Schulanfänger/innen'
+    url: '/schulstart/#anmeldung'
+  - title: '<i class="fa fa-stethoscope"></i> Einschulungsuntersuchung'
+    url: '/schulstart/#untersuchung'
+  - title: '<i class="fa fa-child"></i> Anmeldung zur ergänzenden Betreuung (Schulhort)'
+    url: '/schulstart/#hort'
