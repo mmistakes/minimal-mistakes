@@ -1,8 +1,5 @@
 ---
-layout: single
 title: Download
-sidebar: 
-  nav: "docs"
 ---
 
 Using our Maven **[repository](http://bigiot-cd.westeurope.cloudapp.azure.com:18081/nexus/content/repositories/releases/)**, you can easily download the API and incorporate it into your project:
