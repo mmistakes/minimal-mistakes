@@ -11,4 +11,4 @@ Once a platform or service is using the lib, their resources can be registered a
 
 The figure below illustrates the BIG IoT approach. All registered platforms and services are discoverable on the Marketplace. The API gives the functionality (discovery, data access, security, etc) to easily build IoT applications on top of this ecosystem.
 
-![BIG IoT Architecture Overview](./architecture-overview.png "Logo Title Text 1")
+![BIG IoT Architecture Overview](architecture-overview.png "Logo Title Text 1")
