@@ -11,8 +11,8 @@ Using the BIG IoT libraries, it is easy to get started to dive into the BIG IoT 
 
 In this developer guide, two parts are described:
 
-1. in [this example](providerPerspective), we show how to extend an existing IoT platform to be BIG IoT-enabled. The example platform is a simple IoT platform which offers temperature data from different locations and makes them public on the BIG IoT Marketplace. 
-1. in [this example](consumerPerspective), we show how to use the BIG IoT Consumer Library to access this data from the perspective of a developer who wants to retrieve that data in an application or service.
+1. in [this example](../providerPerspective), we show how to extend an existing IoT platform to be BIG IoT-enabled. The example platform is a simple IoT platform which offers temperature data from different locations and makes them public on the BIG IoT Marketplace. 
+1. in [this example](../consumerPerspective), we show how to use the BIG IoT Consumer Library to access this data from the perspective of a developer who wants to retrieve that data in an application or service.
 
 
 ## Registration on the Marketplace
