@@ -108,8 +108,7 @@ author:
 
 
 # Reading Files
-include: ["_pages"]
-#include:
+include:
   - .htaccess
   - _pages
 exclude:
