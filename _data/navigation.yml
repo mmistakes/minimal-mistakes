@@ -23,7 +23,7 @@ docs:
 main:
   - title: "Download API v0.6"
     url: /download
-  - title: "Visit the Marketplace"
+  - title: "Visit the (pre-release) Marketplace"
     url: http://84.240.187.13:4032/
   - title: "Visit the Project behind"
     url: http://big-iot.eu
