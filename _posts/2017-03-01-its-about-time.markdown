@@ -2,8 +2,10 @@
 layout: single
 title:  "It's about time!"
 date:   2017-03-01 12:42:53 +0000
-categories: blog
-tags: Jekyll GitHub
+categories: posts
+tags:
+  - Jekyll
+  - GitHub
 ---
 
 I've been meaning to start a blog for a while to share some of the tech projects I work on. So far, I've just documented things privately, but I figure it's time to actually publish some of my efforts in the hope of helping someone else.
