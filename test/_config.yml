@@ -9,7 +9,7 @@ theme                    : "minimal-mistakes-jekyll"
 
 # Site Settings
 locale                   : "en"
-title                    : "dev_MM"
+title                    : "Minimal Mistakes Development Test Site"
 title_separator          : "-"
 name                     : "Your Name"
 description              : "Minimal Mistakes theme test."
@@ -258,7 +258,7 @@ defaults:
       related: true
   # _pages
   - scope:
-      path: ""
+      path: "_pages"
       type: pages
     values:
       layout: single

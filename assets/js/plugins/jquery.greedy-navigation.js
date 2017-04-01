@@ -1,72 +1,74 @@
 /*
-* Greedy Navigation
-*
-* http://codepen.io/lukejacksonn/pen/PwmwWV
-*
+GreedyNav.js - https://github.com/lukejacksonn/GreedyNav
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+Copyright (c) 2015 Luke Jackson
 */
 
-var $nav = $('#site-nav');
-var $btn = $('#site-nav button');
-var $vlinks = $('#site-nav .visible-links');
-var $hlinks = $('#site-nav .hidden-links');
+$(document).ready(function(){
 
-var breaks = [];
+  var $btn = $('nav.greedy-nav button');
+  var $vlinks = $('nav.greedy-nav .visible-links');
+  var $hlinks = $('nav.greedy-nav .hidden-links');
 
-function updateNav() {
+  var numOfItems = 0;
+  var totalSpace = 0;
+  var closingTime = 1000;
+  var breakWidths = [];
 
-  var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
+  // Get initial state
+  $vlinks.children().outerWidth(function(i, w) {
+    totalSpace += w;
+    numOfItems += 1;
+    breakWidths.push(totalSpace);
+  });
 
-  // The visible list is overflowing the nav
-  if($vlinks.width() > availableSpace) {
+  var availableSpace, numOfVisibleItems, requiredSpace, timer;
 
-    // Record the width of the list
-    breaks.push($vlinks.width());
+  function check() {
 
-    // Move item to the hidden list
-    $vlinks.children().last().prependTo($hlinks);
+    // Get instant state
+    availableSpace = $vlinks.width() - 10;
+    numOfVisibleItems = $vlinks.children().length;
+    requiredSpace = breakWidths[numOfVisibleItems - 1];
 
-    // Show the dropdown btn
-    if($btn.hasClass('hidden')) {
-      $btn.removeClass('hidden');
-    }
-
-  // The visible list is not overflowing
-  } else {
-
-    // There is space for another item in the nav
-    if(availableSpace > breaks[breaks.length-1]) {
-
-      // Move the item to the visible list
+    // There is not enough space
+    if (requiredSpace > availableSpace) {
+      $vlinks.children().last().prependTo($hlinks);
+      numOfVisibleItems -= 1;
+      check();
+      // There is more than enough space
+    } else if (availableSpace > breakWidths[numOfVisibleItems]) {
       $hlinks.children().first().appendTo($vlinks);
-      breaks.pop();
+      numOfVisibleItems += 1;
+      check();
     }
-
-    // Hide the dropdown btn if hidden list is empty
-    if(breaks.length < 1) {
+    // Update the button accordingly
+    $btn.attr("count", numOfItems - numOfVisibleItems);
+    if (numOfVisibleItems === numOfItems) {
       $btn.addClass('hidden');
+    } else $btn.removeClass('hidden');
+  }
+
+  // Window listeners
+  $(window).resize(function() {
+    check();
+  });
+
+  $btn.on('click', function() {
+    $hlinks.toggleClass('hidden');
+    clearTimeout(timer);
+  });
+
+  $hlinks.on('mouseleave', function() {
+    // Mouse has left, start the timer
+    timer = setTimeout(function() {
       $hlinks.addClass('hidden');
-    }
-  }
+    }, closingTime);
+  }).on('mouseenter', function() {
+    // Mouse is back, cancel the timer
+    clearTimeout(timer);
+  })
 
-  // Keep counter updated
-  $btn.attr("count", breaks.length);
+  check();
 
-  // Recur if the visible list is still overflowing the nav
-  if($vlinks.width() > availableSpace) {
-    updateNav();
-  }
-
-}
-
-// Window listeners
-
-$(window).resize(function() {
-  updateNav();
 });
-
-$btn.on('click', function() {
-  $hlinks.toggleClass('hidden');
-  $(this).toggleClass('close');
-});
-
-updateNav();
