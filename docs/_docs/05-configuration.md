@@ -524,7 +524,13 @@ paginate: 5
 
 You'll also need to include some Liquid and HTML to properly use the paginator, which you can find in the **Layouts** section under [Home Page]({{ "/docs/layouts/#home-page" | absolute_url }}).
 
-**Please note:** [Jekyll's pagination](http://jekyllrb.com/docs/pagination/) may have unexpected results when used on pages other than the home page eg. `<site domain>/blog/index.html`.
+The paginator only works on files with name `index.html`. To use pagination in a subfolder --- for example `/recent/`, create `/recent/index.html` and set the `paginate_path` in `_config.yml` to this:
+
+```yaml
+paginate_path: /recent/page:num/
+```
+
+**Please note:** When using Jekyll's default [pagination plugin](http://jekyllrb.com/docs/pagination/) `paginator.posts` can only be called once. If you're looking for something more powerful that can paginate category, tag, and collection pages I suggest [**jekyll-paginate-v2**](https://github.com/sverrirs/jekyll-paginate-v2).
 {: .notice--info}
 
 ### Timezone
