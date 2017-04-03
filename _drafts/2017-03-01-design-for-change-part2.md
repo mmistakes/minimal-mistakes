@@ -260,6 +260,12 @@ it's not a silver bullet
 
 # Conclusion #
 
+> The purpose of abstraction is not to be vague, but to create a new semantic level in which one can be absolutely
+> precise. - Edsger Dijkstra
+
+...but it's only possible to be absolutely precise when the problem is well understood and not liable to fundamental
+change.
+
 Abstractions are the way we manage to deliver complex software systems and therefore are a tool we need to apply
 judiciously. I've talked a lot in this blog about the issues around adopting abstractions too early in a software
 systems lifecycle and the drivers that can cause this but I haven't made any suggestions about how we might choose the
@@ -270,16 +276,25 @@ I will try and address some of these concerns in the next few blog posts.
 
 # Design for Change #
 
+So far in these blogs I have not mentioned where programming paradigms fit. There is a reason that imperative
+programming versus declarative programming or functional programming vs object oriented programming have not entered the
+discussion. These paradigms are about ways of writing code and not about how to determine what components make up a
+system or how to structure them. However, that's not to say that there are not lessons that can be learned from
+examining these paradigms and applying some of the techniques used to the larger problems at a system level. During this
+post you will see me draw some parallels.
+
+## How to design for change? ##
+
 As with most things in software there's no single, definitive answer to this question. However, I think that there are a
 number of techniques that can be adopted to help identify where to 'cleave' a system into separate components and how
 to minimise the inertia introduced by the adoption of an abstraction.
 
-I mentioned earlier that focusing on the model of the static elements of data as a data or object model in issolation
+I mentioned earlier that focusing on the model of the static elements of data as a data or object model in isolation
 can lead to focusing on the wrong abstraction.
 
 One technique I use to avoid this issue is rather than modeling the static view of the data, model the dynamic flow of
 the data through the system. Think about what events are raised and the actors that raise them? What transformations and
-enrichments have to happen to a piece of data in order for it to result in the required response or the required end
+enrichment has to happen to a piece of data in order for it to result in the required response or the required end
 state?
 
 If you model the message or event flows this tends to lead to what are the major components within the system. Thinking
@@ -289,17 +304,76 @@ communicate synchronously or asynchronously.
 Each of these messages can be thought of as a piece of immutable data that is either the input to or output from a
 component of the system.
 
-If you model the external events as messages that get enhanced to produce a new message then you can think about what additional information is
-required at each step to create the enhanced message. This process will drive out the components and the key
-responsibilities of each. It should also lead to the discovery of other external interfaces required by each component
-and suggest local optimisations such as a data store.
+If you model the external events as messages that get enhanced to produce a new message then you can think about what
+additional information is required at each step to create the enhanced message. This process will drive out the
+components and the key responsibilities of each. It should also lead to the discovery of other external interfaces
+required by each component and suggest local optimisations such as a data store.
 
-If you model a message, every point at which the message needs to be transformed into a new message becomes a
+If you model a message, every point at which the message needs to be transformed into a new message becomes a potential
 component. It will frequently be the case that in order to transform the message additional information and some kind of
 external trigger is required. Thinking about whether this new information or new trigger should be the responsibility of
 an existing component or a new one is the way that you can decide whether the current model of the architecture is
 sufficient or requires change.
 
+By taking this approach databases and other datastores become localised optimisations. As such the static structure of
+data and, by extension, the static models of the data in the software (schemas, object models, etc.) can be determined
+by modelling the transformations and enhancements of the messages carried out by that particular component of the
+system.
+
+Keeping in mind this view of the component as transformer/enhancer of messages each major component in the system can be
+seen as synonymous with a huge 'function' in a functional program. Something that takes in inputs and returns the
+expected outputs.
+
+If the component needs multiple inputs from different sources these can be modelled as multiple inputs. It is idealistic
+and unrealistic to imagine that the inputs to each component will arrive reliably and at exactly the moment required to
+carry out the job but dealing with these tricky details is, again, a localised optimisation.
+
+It's also worth pointing out that 'components' in this context are not necessarily separate deployment units with
+remote network calls. They can 'packages', 'modules' or high level 'namespaces' within a larger deployment unit. In
+fact, there is a good argument to be made for keeping these components in the same deployment unit until it's recognised
+that either their responsibilities, timing, semantics or non functional concerns are different enough to warrant this
+level of separation.
+
+## Be conservative in what you do, be liberal in what you accept from others - Postel's law ##
+
+If each component in the system accepts a message or messages from an external provider (either another component of the
+system or an external actor) then the question to be asked is what to do with the message received.
+
+In the ideal situation, where the message is completely under the control of your system, it will already be in the
+appropriate format for your component to parse and process. However, frequently the message will either be raised by an
+entity external to your system and, even when it's another system component if the calling semantics are not in process
+and/or enforced by a statically checked API then your component will still need to validate the message and enforce some
+kind of 'contract' on the context and shape of the data.
+
+When carrying out this contract enforcement it's a good idea to try and obey Postel's law. Accept the message and
+validate the expected inputs only for the parts of the message your specific component is interested in. However, you
+don't have to reject a message that sends data that your component is not interested in, in that case it is possible to
+simply drop data of no interest. With some thought, it is also possible to accept data in a slightly different format
+and transform it to the format you require although care should be taken with this approach as in many cases you will be
+making assumptions that may not be valid and the transformation itself can be a lossy process, for example, transforming
+a decimal number to an integer. The decision to reject a message is always available of course, and for the sake of
+safety and security is frequently a good option, however you should always make this decision deliberately and with
+cognisance to the impact.
+
+In all cases, whether the message is accepted or, even more so, rejected consider logging the message in it's raw format
+at the point of reception by your component.
+
+At this point it's worth a quick sidebar on the subject of logging. In the case of logging events raised internally by
+your system adopting a standardised approach and format to your log messages makes it much easier to automate searching
+and parsing of the messages once collected. See David Humphreys talk on logging. However, when I talk about logging the
+message at the boundaries of the component in this context we want to maintain as much of the original format and
+semantics of the message as possible, including if possible, the ordering of the messages. Typically logging the
+messages at the boundary of the system will involve writing the message to a datastore in it's raw format. The simplest
+way to do this is simply to serialise the message directly to disk in a file as any attempt to coerce it into a
+different schema for a database is inherently more likely to lose the original format and order.
+
+I will also reveal my bias towards event sourcing, message middleware and streaming solutions. My reason for liking
+these approaches are that they often provide the ability to log the messages received or produced by a component at it's
+boundaries as a matter of course with little additional effort.
+
+Again, drawing parallels with functional programming paradigms, pushing the validation and transformation of a
+components messages to the 'edges' of the system is pretty much the same concept as pushing state changes to the edges
+of the system which is frequently a mantra of functional programming.
 
 I spent a large part of my early career working in a UK Government department solving a number of problems over a
 decade. This is a fairly unusual state of affairs in modern software developers career's as it's not common to stay with
