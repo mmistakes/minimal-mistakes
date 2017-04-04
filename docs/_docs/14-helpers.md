@@ -30,7 +30,7 @@ feature_row:
   - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
     title: "Placeholder 3"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
-modified: 2016-11-15T12:11:48-05:00
+last_modified_at: 2016-11-15T12:11:48-05:00
 ---
 
 {% include toc icon="gears" title="Helpers" %}

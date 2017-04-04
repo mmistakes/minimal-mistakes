@@ -1,6 +1,6 @@
 ---
 title:  "Gemified Theme -- Alpha Release"
-modified: 2016-11-03T11:46:00-04:00
+last_modified_at: 2016-11-03T11:46:00-04:00
 categories: 
   - Jekyll
 tags:
