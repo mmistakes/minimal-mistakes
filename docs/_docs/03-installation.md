@@ -2,7 +2,7 @@
 title: "Installation"
 permalink: /docs/installation/
 excerpt: "Instructions for installing the theme for new and existing Jekyll based sites."
-modified: 2016-11-03T10:13:32-04:00
+last_modified_at: 2016-11-03T10:13:32-04:00
 ---
 
 ## Install the Theme
