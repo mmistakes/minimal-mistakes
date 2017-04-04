@@ -4,13 +4,14 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-03-27T08:24:24-04:00
+last_modified_at: 2017-04-04T12:47:59-04:00
 ---
 
 ## Unreleased
 
 ### Enhancements
 
+- Replace `modified` with `last_modified_at` to leverage various Jekyll plugins that utilize this variable. [#930](https://github.com/mmistakes/minimal-mistakes/pull/930)
 - Add Lithuanian localized UI text. [#924](https://github.com/mmistakes/minimal-mistakes/pull/924)
 - Improve print stylesheet by increasing text contrast, removing elements that don't need to be printed, expanding URLs, and reducing amount of blank pages. [#909](https://github.com/mmistakes/minimal-mistakes/issues/909)
 
