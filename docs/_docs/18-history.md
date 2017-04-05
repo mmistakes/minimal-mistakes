@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-04-04T12:47:59-04:00
+last_modified_at: 2017-04-05T12:40:09-04:00
 ---
 
 ## Unreleased
@@ -24,6 +24,7 @@ last_modified_at: 2017-04-04T12:47:59-04:00
 
 ### Bug Fixes
 
+- Fix `.masthead` and `.page__footer` overlapping full screen video elements. [#933](https://github.com/mmistakes/minimal-mistakes/issues/933)
 - Correctly show Related Posts heading when UI Text data file is omitted and `related: true` in YAML Front Matter. [#901](https://github.com/mmistakes/minimal-mistakes/pull/901)
 
 ## [4.3.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.3.0)

@@ -483,7 +483,7 @@ a.reversefootnote {
 
 /*
    Responsive Video Embed
-      ========================================================================== */
+   ========================================================================== */
 
 .responsive-video-container {
   position: relative;
@@ -504,3 +504,9 @@ a.reversefootnote {
   }
 }
 
+// full screen video fixes
+:-webkit-full-screen-ancestor {
+   .masthead,
+   .page__footer {
+  position: static;
+}

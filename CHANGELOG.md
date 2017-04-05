@@ -15,6 +15,7 @@
 
 ### Bug Fixes
 
+- Fix `.masthead` and `.page__footer` overlapping full screen video elements. [#933](https://github.com/mmistakes/minimal-mistakes/issues/933)
 - Correctly show Related Posts heading when UI Text data file is omitted and `related: true` in YAML Front Matter. [#901](https://github.com/mmistakes/minimal-mistakes/pull/901)
 
 ## [4.3.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.3.0)
