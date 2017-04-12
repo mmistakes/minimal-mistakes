@@ -1,0 +1,4 @@
+- name : "Testy McTestface"
+  avatar       : "/assets/images/avatar.png"
+  bio          : "Words words words"
+  location     : "Slough"

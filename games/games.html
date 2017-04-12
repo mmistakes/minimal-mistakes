@@ -1,0 +1,11 @@
+---
+layout: splash
+title: "Games"
+permalink: /games/
+author_profile: false
+---
+<ul>
+{% for post in site.categories.games %}
+  {% include archive-single.html type="grid" %}
+{% endfor %}
+</ul>

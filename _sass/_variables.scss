@@ -6,6 +6,9 @@
    Typography
    ========================================================================== */
 
+@import url(https://fonts.googleapis.com/css?family=Lilita+One);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 $doc-font-size              : 16 !default;
 
 /* paragraph indention */
@@ -16,6 +19,9 @@ $indent-var                 : 1.3em !default;
 $serif                      : Georgia, Times, serif !default;
 $sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace !default;
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+
 
 /* sans serif typefaces */
 $sans-serif-narrow          : $sans-serif !default;
@@ -28,8 +34,8 @@ $bodoni                     : "Bodoni MT", serif !default;
 $calisto                    : "Calisto MT", serif !default;
 $garamond                   : Garamond, serif !default;
 
-$global-font-family         : $sans-serif !default;
-$header-font-family         : $sans-serif !default;
+$global-font-family         : 'Open Sans' !default;
+$header-font-family         : 'Lilita One' !default;
 $caption-font-family        : $serif !default;
 
 /* type scale */

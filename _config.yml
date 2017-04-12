@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "Jelly Machete"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Ben Wells"
+description              : "Creator of games that wobble"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -47,6 +47,13 @@ staticman:
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
+# Collections
+collections:
+  games:
+    output: true
+    permalink: /:collection/:path/
+
+
 # SEO Related
 google_site_verification :
 bing_site_verification   :
@@ -77,10 +84,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
+  name             : "Ben Wells"
+  avatar           : "/assets/images/avatar.png"
+  bio              : "A Swiss-born, London-based Game Developer and Designer. I love making games, be they professionally developed, or personal projects. I also make art, music, educational videos, and this website!"
+  location         : "London, UK"
   email            :
   uri              :
   bitbucket        :
@@ -171,7 +178,7 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+permalink: /:categories/:year/:month/:day/:title.html
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -239,8 +246,11 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
-      read_time: true
+      author_profile: false
+      read_time: false
       comments: # true
       share: true
       related: true
+theme: jekyll-theme-tactile
+
+theme: minimal-mistakes-jekyll

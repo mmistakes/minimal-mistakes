@@ -1,0 +1,15 @@
+---
+layout: single
+title: "About us"
+excerpt: "Talk talk talk"
+---
+
+Here's where I talk about the ideals and stuff
+
+{% for author in site.data.authors %}
+
+	<h3> {{author.name}} </h3>
+    ![Image yay]({{author.avatar}})
+
+
+{% endfor %}
