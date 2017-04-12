@@ -5,9 +5,9 @@ tweet: "Keep it short."
 date: 2017-03-xx
 modified: 2017-03-xx
 category: reads
-image: 
+image: "cover_title_author_200.jpg"
+header:
   teaser: "cover_title_author.jpg"
-  thumb: "cover_title_author_150.jpg"
 tags: [art, biography, comedy, economics, entertainment, finances, geography, history, life lessons, parenting, productivity, psychology, sociology, sci-fi, software development, technology, technical writing, writing]
 ---
 
