@@ -1,6 +1,6 @@
 ---
 title: "Bad Feminist by Roxane Gay"
-excerpt: &excerpt "Challenge your presumptions about feminism. Embrace your own version. Basically, they just don't want women to be treated like shit."
+excerpt: &excerpt "Challenge your presumptions about feminism. Embrace your own version. Basically, just don't let women to be treated like shit."
 tweet: "Challenge your presumptions about being a feminist." 
 date: 2017-04-14
 modified: 2017-04-14
