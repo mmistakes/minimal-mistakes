@@ -19,7 +19,7 @@ said feminists are "just women who don't want to be treated like shit."
 
 Roxane Gay writes in a casual, intellectual, and engaging manner that keeps 
 your attention. The essays challenge your presumptions, often with dry wit 
-and in-depth analysis derived from her education, observations and life 
+and in-depth analysis derived from her education, observations, and life 
 experiences. Her biographical stories and anecdotes are entertaining and 
 enlightening, allowing you to empathize with her various experiences. 
 
@@ -89,7 +89,7 @@ before being able recognize our own.
 
 > Privilege is relative and contextual.  Few people in the developed world, 
   and particularly in the United States, have no privilege at all. Among those 
-  of us who have participate in intellectual communities, privilege runs rampant. 
+  of us who participate in intellectual communities, privilege runs rampant. 
   We have disposable time and the ability to access the Internet regularly. We 
   have the freedom to express our opinions without the threat of retaliation. We 
   have smartphones and iProducts and desktops and laptops. If you are reading 
@@ -103,7 +103,7 @@ Extensive descriptions of her dedication to competitive Scrabble provide many
 details, which I found to be too much for me to enjoy. It was entertaining for 
 a little while but turned tedious, probably due to my own disinterest in the 
 game. I did find her attitude particularly interesting, confirming the bias of 
-my armchair psychological philosophy that extreme confidence usually masks 
+my armchair philosophy that extreme confidence usually masks 
 insecurity.
 
 > I approach most things in life with a dangerous level of confidence to 
@@ -111,12 +111,14 @@ insecurity.
 
 ---
 
+The chapter, _How to be Friends with Another Woman_, challenges and also 
+confirms some of the stereotypes I've heard over the years about women 
+interacting with each other. 
+
 > It's okay if most of your friends are guys, but if you champion this as a 
   commentary on the nature of female friendships, well, soul-search a little.
 
-The chapter, _How to be Friends with Another Woman_, challenges and also 
-confirms some of the stereotypes I've heard over the years about women 
-interacting with each other. I translate her advice to simply mean: 
+I translate her advice to simply mean: 
 _treat people with respect and kindness and don't be an asshole_. Those are 
 my words, not hers. She provides several specific examples of how to do this, 
 gleaned from her thirty-some years of experience as a woman, and I agree with 
@@ -137,7 +139,7 @@ the subject matter.
 
 Meanwhile, her discussion of The Help (movie) was enlightening. I haven't read 
 the book, but really enjoyed the movie. Providing her perspective as a black 
-woman made me question why I enjoyed the movie. What prejudice and preconceived 
+woman made me question why I enjoyed it. What prejudice and preconceived 
 ideology did I bring with me that prevented me from seeing the many issues she 
 outlines? Granted, as a white man, it's not necessarily easy for me to put 
 myself in the shoes of a black woman living in the southern U.S. during 1962. 
@@ -163,8 +165,8 @@ primary reasons the show has never appealed to me.
   inability to develop meaningful relationships with other women, and an 
   obsession with an almost pornographic standard of beauty. 
 
-Ironically, she admits to enjoying the various shows, which contributes to her 
-self-definition as a bad feminist. In her mind and opinion, a **true feminist** 
+Ironically, she admits to enjoying such shows, which contributes to 
+defining herself as a bad feminist. In her mind and opinion, a **true feminist** 
 wouldn't watch them, let alone enjoy them. One more example of her being a 
 **bad feminist**.
 
@@ -217,12 +219,13 @@ because they feel more honest, more alive&mdash;even human.
 
 ---
 
+In _How We All Lose_, she discusses how men feel disempowered, as if they're 
+going to lose rights, simply by granting and embracing equal rights to women. 
+
 > If women's fortunes improve, it must mean men's fortunes will suffer, as 
   if there is a finite amount of good fortune in the universe that cannot be 
   shared equally between men and women.
 
-In _How We All Lose_, she discusses how men feel disempowered, as if they're 
-going to lose rights, simply by granting and embracing equal rights to women. 
 Gay also describes how women dismiss their own equality by comparing their 
 rights, as they currently stand, in the U.S. with those of women in third-world 
 countries. Just because women have it better in the U.S., doesn't mean that they 
@@ -263,12 +266,12 @@ These quotes stand by themselves.
 
 ---
 
-Political conservatives have been attacking people's access to birth control 
+Political conservatives have been attacking access to birth control 
 and limiting sex education through legislation for decades now, advocating 
-abstinence as the only option. You only have to look at the proposed defunding 
-of Planned Parenthood or the abortion legislation in Texas (and several other 
-states) which is obviously designed to limit access, not improve safety as they 
-claim.
+abstinence as the only option. You only have to look at the recently proposed 
+defunding of Planned Parenthood or the abortion legislation in Texas (and 
+several other states) which is obviously designed to limit access, not improve 
+safety as they claim.
 
 The following quote had me laughing out loud while also thinking "what a stupid 
 double standard."
