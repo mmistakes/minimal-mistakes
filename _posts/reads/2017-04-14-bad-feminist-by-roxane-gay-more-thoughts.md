@@ -234,7 +234,7 @@ These quotes stand by themselves.
   us, not spend all our time blindly revering and trying to mimic the greatest 
   without demanding systemic change. 
 
----
+<p align="center">~ ~ ~</p>
 
 ---
 
