@@ -50,7 +50,7 @@ really thought of myself as a feminist.
 Perhaps it’s a larger hurdle to leap because I'm a man. I'm _supposed_ to 
 adhere to idiotic and outdated rules of masculinity if I want to _keep my man 
 card_. In a way, labeling myself a feminist is the antithesis of the societal 
-norms I experienced growing up in rural Illinois and then urban, yet 
+norms I experienced growing up in rural Illinois and the urban yet 
 deeply-southern-in-beliefs Houston, Texas. Not all, but most of the men around 
 me upheld those expectations while the boys strived to meet them. I suppose 
 that makes for a long journey to embracing yourself as a man and a feminist.
