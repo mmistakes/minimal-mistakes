@@ -20,7 +20,7 @@ I wrote about my general impression of the book and how it impacted my view
 of feminism. The following are my thoughts on specific quotes, ideas, and 
 chapters that stood out to me as I read Roxane Gay's _Bad Feminist_. 
 
----
+<p align="center">~ ~ ~</p>
 
 ---
 
@@ -33,7 +33,7 @@ book, or commercial, even if only for a brief moment of recognition. It's
 empowering and reinforces how you view yourself, especially in the context of 
 society. 
 
----
+<p align="center">~ ~ ~</p>
 
 ---
 
@@ -53,7 +53,7 @@ before being able recognize our own.
   know, but if you cannot recognize your privilege, you have a lot of work to 
   do; get started.
 
----
+<p align="center">~ ~ ~</p>
 
 ---
 
@@ -68,7 +68,7 @@ I found this insight interesting and applaud her for recognizing and
 acknowledging it. It confirms my general impression that extreme 
 confidence usually masks insecurity.
 
----
+<p align="center">~ ~ ~</p>
 
 ---
 
@@ -91,7 +91,7 @@ or relationship, regardless of gender.
 
 Remember that point about finesse going a long way.
 
----
+<p align="center">~ ~ ~</p>
 
 ---
 
@@ -146,7 +146,7 @@ other areas in which women don't receive equal treatment.
   a comedian who can both make me laugh and make me uncomfortable. Such 
   contradictions are thought provoking.
 
----
+<p align="center">~ ~ ~</p>
 
 ---
 
@@ -181,7 +181,7 @@ and how male and female characters are perceived differently.
 In her reading, she often finds herself rooting for the unlikable characters 
 because they feel more honest, more alive&mdash;even human.
 
----
+<p align="center">~ ~ ~</p>
 
 ---
 
@@ -203,7 +203,7 @@ analysis of several other authors' works that deal with feminism.
   work there is yet to be done. We're refusing to relish the comforts we have at 
   the expense of the women who are still seeking comfort. 
 
----
+<p align="center">~ ~ ~</p>
 
 ---
 
@@ -215,7 +215,7 @@ _rape culture_, she discusses how it becomes dismissive of the ways rape affects
 the victim, focusing more on the perspective of the perpetrators, primarily men. 
 We should flip the conversation.
 
----
+<p align="center">~ ~ ~</p>
 
 ---
 
@@ -270,7 +270,7 @@ stripped away.
 
 An unfortunate truth that is undeniable **and** that we need to change. 
 
----
+<p align="center">~ ~ ~</p>
 
 ---
 
@@ -289,7 +289,7 @@ insecurities that she isn't doing it right or well enough.
 
 After reading this, I find that I'm a **bad feminist** too.
 
----
+<p align="center">~ ~ ~</p>
 
 ---
 
@@ -302,8 +302,6 @@ _Recommended movies from the book:_
 -   [Love & Basketball](https://en.wikipedia.org/wiki/Love_%26_Basketball) 
 -   [The Best Man](https://en.wikipedia.org/wiki/The_Best_Man_(1999_film)) 
 -   [The Best Man Holiday](https://en.wikipedia.org/wiki/The_Best_Man_Holiday) 
-
----
 
 ---
 
