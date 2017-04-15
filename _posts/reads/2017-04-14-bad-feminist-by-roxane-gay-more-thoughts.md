@@ -1,5 +1,5 @@
 ---
-title: "Quotes and thoughts from Bad Feminist by Roxane Gay"
+title: "More thoughts on Bad Feminist by Roxane Gay"
 excerpt: &excerpt "Interesting quotes, thoughts, and ideas that caught my attention from Roxane Gay's Bad Feminist."
 tweet: "Quotes, thoughts, and ideas from Bad Feminist." 
 date: 2017-04-15
