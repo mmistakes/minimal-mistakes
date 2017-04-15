@@ -19,4 +19,8 @@ A collection of things found...always updated occasionally.
 
 ---
 
-<br>
+
+
+<p align="center">~ ~ ~</p>
+
+---
