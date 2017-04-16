@@ -47,6 +47,10 @@
 .sidebar__right {
   margin-bottom: 1em;
 
+  p, li, dl {
+    text-align: left;
+  }
+
   @include breakpoint($large) {
     position: relative;
     float: right;

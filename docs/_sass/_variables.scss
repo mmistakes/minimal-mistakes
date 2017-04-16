@@ -12,6 +12,9 @@ $doc-font-size              : 16 !default;
 $paragraph-indent           : false !default; // true, false (default)
 $indent-var                 : 1.3em !default;
 
+/* paragraph alignment */
+$paragraph-align            : left !default; // left (default), right, center, justify
+
 /* system typefaces */
 $serif                      : Georgia, Times, serif !default;
 $sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
