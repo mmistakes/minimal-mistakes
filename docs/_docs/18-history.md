@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-04-18T12:57:52-04:00
+last_modified_at: 2017-04-18T13:00:27-04:00
 ---
 
 ## [4.4.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.4.0)
@@ -12,17 +12,6 @@ last_modified_at: 2017-04-18T12:57:52-04:00
 ### Enhancements
 
 - Move SCSS partials to `/_sass/minimal-mistakes` for easier CSS customization. 
-- Replace `modified` with `last_modified_at` to leverage various Jekyll plugins that utilize this variable. [#930](https://github.com/mmistakes/minimal-mistakes/pull/930)
-- Add Lithuanian localized UI text. [#924](https://github.com/mmistakes/minimal-mistakes/pull/924)
-- Improve print stylesheet by increasing text contrast, removing elements that don't need to be printed, expanding URLs, and reducing amount of blank pages. [#909](https://github.com/mmistakes/minimal-mistakes/issues/909)
-
-### Maintenance
-
-- Remove extra word in comment. [#911](https://github.com/mmistakes/minimal-mistakes/pull/911)
-- Fix typo in Utility Class docs. [#915](https://github.com/mmistakes/minimal-mistakes/pull/915)
-
-### Enhancements
-
 - Replace `modified` with `last_modified_at` to leverage various Jekyll plugins that utilize this variable. [#930](https://github.com/mmistakes/minimal-mistakes/pull/930)
 - Add Lithuanian localized UI text. [#924](https://github.com/mmistakes/minimal-mistakes/pull/924)
 - Improve print stylesheet by increasing text contrast, removing elements that don't need to be printed, expanding URLs, and reducing amount of blank pages. [#909](https://github.com/mmistakes/minimal-mistakes/issues/909)
