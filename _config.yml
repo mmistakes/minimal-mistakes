@@ -7,9 +7,9 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "Aaryn's Blog/Portfolio"
 title_separator          : "-"
-name                     : "Your Name"
+name                     : "Aaryn Biro"
 description              : "An amazing website."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -54,8 +54,8 @@ alexa_site_verification  :
 yandex_site_verification :
 
 # Social Sharing
-twitter:
-  username               :
+twitter: 
+  username               : aarynbiro
 facebook:
   username               :
   app_id                 :
@@ -80,7 +80,7 @@ author:
   name             : "Your Name"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an amazing person."
-  location         : "Somewhere"
+  location         : "Sohere"
   email            :
   uri              :
   bitbucket        :
