@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Aaryn's Blog/Portfolio"
+title                    : "Aaryn's Blog & Portfolio"
 title_separator          : "-"
 name                     : "Aaryn Biro"
 description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+url                      : "https://aabiro.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "/minimal-mistakes" # the subpath of your site, e.g. "/blog"
+repository               : "aabiro/minimal-mistates" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
