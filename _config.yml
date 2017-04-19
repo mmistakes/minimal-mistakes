@@ -54,9 +54,9 @@ alexa_site_verification  :
 yandex_site_verification :
 
 # Social Sharing
-twitter: 
+twitter: "https://www.twitter.com/aarynbiro"
   username               : "aarynbiro"
-facebook:
+facebook: "https://www.facebook.com/aaryn.alexander"
   username               : "aaryn.alexander"
   app_id                 :
   publisher              :
