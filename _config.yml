@@ -87,7 +87,7 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "https://www.facebook.com/aaryn.alexander"
   foursquare       :
   github           :
   google_plus      :
@@ -100,11 +100,11 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          : "aarynbiro"
+  twitter          : "https://www.twitter.com/aarynbiro"
   vine             :
   weibo            :
   xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  youtube          : "https://youtube.com/c/MichaelRoseDesign"
 
 
 # Reading Files
