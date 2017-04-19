@@ -1,3 +1,13 @@
+## Unreleased
+
+### Enhancements
+
+- Add Greek localized UI text strings. [#958](https://github.com/mmistakes/minimal-mistakes/pull/958)
+
+### Bug Fixes
+
+- Fix `video` helper to load Vimeo videos over https. [#945](https://github.com/mmistakes/minimal-mistakes/pull/945)
+
 ## [4.4.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.4.0)
 
 ### Enhancements
