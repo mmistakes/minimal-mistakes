@@ -56,6 +56,7 @@ $(document).ready(function(){
 
   $btn.on('click', function() {
     $hlinks.toggleClass('hidden');
+    $(this).toggleClass('close');
     clearTimeout(timer);
   });
 

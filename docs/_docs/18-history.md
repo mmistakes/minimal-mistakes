@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-04-19T10:43:41-04:00
+last_modified_at: 2017-04-21T19:59:55-04:00
 ---
 
 ## Unreleased
@@ -16,6 +16,7 @@ last_modified_at: 2017-04-19T10:43:41-04:00
 ### Bug Fixes
 
 - Fix `video` helper to load Vimeo videos over https. [#945](https://github.com/mmistakes/minimal-mistakes/pull/945)
+- Fix close menu button that was removed when updating Greedy navigation script. [#969](https://github.com/mmistakes/minimal-mistakes/issues/969)
 
 ## [4.4.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.4.0)
 
