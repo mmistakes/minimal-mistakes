@@ -7,7 +7,7 @@ sidebar:
 last_modified_at: 2017-04-21T19:59:55-04:00
 ---
 
-## Unreleased
+## [4.4.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.4.1)
 
 ### Enhancements
 
