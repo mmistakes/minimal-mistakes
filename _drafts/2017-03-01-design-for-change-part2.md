@@ -307,7 +307,7 @@ component of the system.
 If you model the external events as messages that get enhanced to produce a new message then you can think about what
 additional information is required at each step to create the enhanced message. This process will drive out the
 components and the key responsibilities of each. It should also lead to the discovery of other external interfaces
-required by each component and suggest local optimisations such as a data store.
+required by each component and suggest local optimisation's such as a data store.
 
 If you model a message, every point at which the message needs to be transformed into a new message becomes a potential
 component. It will frequently be the case that in order to transform the message additional information and some kind of
@@ -315,7 +315,7 @@ external trigger is required. Thinking about whether this new information or new
 an existing component or a new one is the way that you can decide whether the current model of the architecture is
 sufficient or requires change.
 
-By taking this approach databases and other datastores become localised optimisations. As such the static structure of
+By taking this approach databases and other datastores become localised optimisation's. As such the static structure of
 data and, by extension, the static models of the data in the software (schemas, object models, etc.) can be determined
 by modelling the transformations and enhancements of the messages carried out by that particular component of the
 system.
@@ -329,10 +329,30 @@ and unrealistic to imagine that the inputs to each component will arrive reliabl
 carry out the job but dealing with these tricky details is, again, a localised optimisation.
 
 It's also worth pointing out that 'components' in this context are not necessarily separate deployment units with
-remote network calls. They can 'packages', 'modules' or high level 'namespaces' within a larger deployment unit. In
+remote network calls. They can be 'packages', 'modules' or high level 'namespaces' within a larger deployment unit. In
 fact, there is a good argument to be made for keeping these components in the same deployment unit until it's recognised
 that either their responsibilities, timing, semantics or non functional concerns are different enough to warrant this
 level of separation.
+
+## Databases are localised optimisation ##
+
+It may seem strange, especially to the developer used to standard 2 or 3 tier architectures, to think about a database
+as a localised optimisation as typically a database forms the beating heart of a system rather than a mere
+implementation detail.
+
+However, thinking in this way can be quite liberating to the software architect. Imagine an ideal system which has an
+unlimited amount of memory and processing power and never loses data due to downtime. In this idealised system a
+secondary persistent data store becomes unnecessary. Why have a data store if you readily have your data to hand in
+memory.
+
+If the persistence of data is taken out of the equation for a while you are liberated from modelling data `at rest` and,
+as I've already discussed, modelling data at rest can lead to strong data coupling of components and the overloading of
+responsibilities on a single component. The danger is that the database becomes a 'catch all' for every piece of data
+because it's convenient. The database is always there and always on so why not use it to store this and that?
+
+There's nothing inherently wrong with modelling data `at rest`, in fact it's a valuable technique, but frequently it
+becomes the single minded focus of the system designer. This leads to some of the early optimisation's that I've talked
+about in earlier posts - the early imposition of canonical data models being primary amongst them.
 
 ## Be conservative in what you do, be liberal in what you accept from others - Postel's law ##
 
@@ -341,13 +361,13 @@ system or an external actor) then the question to be asked is what to do with th
 
 In the ideal situation, where the message is completely under the control of your system, it will already be in the
 appropriate format for your component to parse and process. However, frequently the message will either be raised by an
-entity external to your system and, even when it's another system component if the calling semantics are not in process
+entity external to your system and, even when it's another system component if the calling semantics are not in-process
 and/or enforced by a statically checked API then your component will still need to validate the message and enforce some
 kind of 'contract' on the context and shape of the data.
 
 When carrying out this contract enforcement it's a good idea to try and obey Postel's law. Accept the message and
 validate the expected inputs only for the parts of the message your specific component is interested in. However, you
-don't have to reject a message that sends data that your component is not interested in, in that case it is possible to
+don't have to reject a message that sends data that your component is not interested in. In that case it is possible to
 simply drop data of no interest. With some thought, it is also possible to accept data in a slightly different format
 and transform it to the format you require although care should be taken with this approach as in many cases you will be
 making assumptions that may not be valid and the transformation itself can be a lossy process, for example, transforming
@@ -374,6 +394,37 @@ boundaries as a matter of course with little additional effort.
 Again, drawing parallels with functional programming paradigms, pushing the validation and transformation of a
 components messages to the 'edges' of the system is pretty much the same concept as pushing state changes to the edges
 of the system which is frequently a mantra of functional programming.
+
+## Keep raw message format ##
+
+If you keep the messages flowing into your system in their raw (unchanged) format and order for as long as possible and
+pass them around the `components` of the system you gain a number of advantages.
+
+Each `component` in the system can decide what information to take from the message, ignoring anything it's not
+interested in.
+
+It can also derive information from the order in which messages arrive but this causal derivation is only
+possible with a system that maintains the order of messages. This is where systems based on appropriate messaging
+infrastructures that guarantee delivery of a message in the same sequence as it was written (usually within some well
+understood constraints) are extremely useful.
+
+## Order matters ##
+
+Why is the order of messages important? With total or partial ordering of messages maintained it's possible to persist
+messages over a long period of time along with the logical timing of the messages relative to each other. This makes it
+possible to think of and implement a component to answer some question of the data that relies on the original sequence
+of events that raised the messages but some time later. In other words you don't need to know the questions that may be
+asked of the data ahead of time and design your data model and processes to handle these possible questions. Instead if
+you keep the original format of data flowing into the system in it's original order it's possible to replay those
+messages in the same order into a component implemented after the messages creation.
+
+## Good systems are like sauces, it's all in the folding and reduction  ##
+
+Another side effect of considering systems as components that consume ordered raw messages is that each component can be
+thought of as processing a stream of messages. The result of this consumption may be more messages emitted to other
+components or to users, it may be some change in the state of a localised store (remember this is a localised
+optimisation). In any case the entire component can be thought of a large function that folds over (or reduces) the
+stream of messages to produce the desired result.
 
 I spent a large part of my early career working in a UK Government department solving a number of problems over a
 decade. This is a fairly unusual state of affairs in modern software developers career's as it's not common to stay with
