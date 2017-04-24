@@ -1,5 +1,7 @@
 ---
 layout: single
+sidebar:
+  nav: "docs"
 permalink: /about/
 title: "A Little about Myself"
 ---
