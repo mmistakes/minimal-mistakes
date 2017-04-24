@@ -1,6 +1,5 @@
 ---
 layout: single
-author_profile: true
 permalink: /about/
 title: "A Little about Myself"
 ---
