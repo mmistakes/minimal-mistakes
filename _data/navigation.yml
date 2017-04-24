@@ -1,5 +1,16 @@
-main: 
- - title: "About"
-   url:  /about/
+main:
  - title: "Projects"
    url:  /project/
+ - title: "About"
+   url:  /about/
+
+docs:
+ - title: About
+   children:
+     - title: "About"
+       url: /about/
+ 
+ - title: Projects
+   children:
+     - title: "Yelp Data Analysis"
+       url: /project/
