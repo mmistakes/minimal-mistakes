@@ -7,7 +7,7 @@ main:
 docs:
  - title: About
    children:
-     - title: "About"
+     - title: "About Me"
        url: /about/
  
  - title: Projects
