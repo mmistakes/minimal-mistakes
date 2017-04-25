@@ -19,6 +19,7 @@ Currently the English[^yaml-anchors] main keys in [`_data/ui-text.yml`](https://
 - Russian
 - Spanish (Español)
 - Turkish (Türkçe)
+- Greek
 
 If you're are interested in localizing them into other languages feel free to submit a pull request and I will be happy to look it over.
 
