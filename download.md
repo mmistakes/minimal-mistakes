@@ -14,8 +14,8 @@ The basic functionality of the BIG IoT API for providers and consumers. This lib
 ```xml
 <dependency>
   <groupId>org.bigiot.lib</groupId>
-  <artifactId>bigiot-lib-core-0.6.0</artifactId>
-  <version>0.6.0</version>
+  <artifactId>bigiot-lib-core-0.7.0</artifactId>
+  <version>0.7.0</version>
 </dependency>
 ```
 
@@ -26,8 +26,8 @@ This lib extends the *Core Lib* and contains advanced features. It is Java 8 com
 ```xml
 <dependency>
   <groupId>org.bigiot.lib</groupId>
-  <artifactId>bigiot-lib-advanced-0.6.0</artifactId>
-  <version>0.6.0</version>
+  <artifactId>bigiot-lib-advanced-0.7.0</artifactId>
+  <version>0.7.0</version>
 </dependency>
 ```
 
@@ -38,7 +38,7 @@ This lib extends the *Advanced Lib* and embedds a lightweight Web server ([Spark
 ```xml
 <dependency>
   <groupId>org.bigiot.lib</groupId>
-  <artifactId>bigiot-lib-embeddedspark-0.6.0</artifactId>
-  <version>0.6.0</version>
+  <artifactId>bigiot-lib-embeddedspark-0.7.0</artifactId>
+  <version>0.7.0</version>
 </dependency>
 ```
