@@ -1,4 +1,5 @@
 {% include base_path %}
+{% include toc icon="gears" title="My Table of Contents" %}
 ---
 title: Hello Jekyll
 description: Showing what's possible with Jekyll
@@ -10,22 +11,32 @@ categories: blog
 ### H3
 ###### H6
 
-*em*
-
 **strong**
 
+*em*
+
 Inline attributes *red*{: style="color: red"}.
+
+Left-align text
+{: .text-left}
+
+Mid-align text
+{: .text-center}
+
+Right-align text
+{: .text-right}
 
 > Blockquote
 > > Nested blockquote
 >
 
 ### Links
-[link](http://kramdown.gettalong.org "Kramdown")
+[Link Text](http://kramdown.gettalong.org "Kramdown")
 
 ### Horizontal Rule
 This is a long paragraph that keeps going and going and going.
-Here's a hard line break.
+Use two backslashes \\
+for hard line break
 * * * 
 Here's another paragraph
 
@@ -41,7 +52,7 @@ end
 Use backticks for `inline code`.
 
 ### Comment
-You can see the text below because it's commented out.
+You can't see the text below because it's commented out.
 {::comment}
 This is a comment
 {:/comment}
@@ -76,5 +87,52 @@ I'm handsome[^1]
 [^1]: Says me.
 
 ### Images
-{% include figure image_path="/assets/unsplash-gallery-image-3" alt="Alt text" caption="Caption text" %}
+{% include figure image_path="/assets/unsplash-gallery-image-3.jpg" alt="Alt text" caption="Caption text" %}
 
+![image-left](/assets/images/unsplash-gallery-image-1.jpg){: .align-left}
+The rest of this paragraph is filler for the sake of seeing the text wrap 
+around the 150×150 image, which is left aligned. There should be plenty of room 
+above, below, and to the right of the image. 
+
+![full](/assets/images/unsplash-gallery-image-1.jpg)
+{: .full}
+
+### Gallery
+---
+gallery2:
+  - url: https://flic.kr/p/8a6Ven
+    image_path: https://farm2.staticflickr.com/1272/4697500467_8294dac099_q.jpg
+    alt: "Black and grays with a hint of green"
+  - url: https://flic.kr/p/8a738X
+    image_path: https://farm5.staticflickr.com/4029/4697523701_249e93ba23_q.jpg
+    alt: "Made for open text placement"
+  - url: https://flic.kr/p/8a6VXP
+    image_path: https://farm5.staticflickr.com/4046/4697502929_72c612c636_q.jpg
+    alt: "Fog in the trees"
+---
+
+{% include gallery id="gallery2" caption="This is a second gallery example with images hosted externally." %}
+
+### Feature Row
+---
+feature_name:
+  - url: https://flic.kr/p/8a6Ven
+    image_path: https://farm2.staticflickr.com/1272/4697500467_8294dac099_q.jpg
+    alt: "Black and grays with a hint of green"
+  - url: https://flic.kr/p/8a738X
+    image_path: https://farm5.staticflickr.com/4029/4697523701_249e93ba23_q.jpg
+    alt: "Made for open text placement"
+  - url: https://flic.kr/p/8a6VXP
+    image_path: https://farm5.staticflickr.com/4046/4697502929_72c612c636_q.jpg
+    alt: "Fog in the trees"
+---
+
+{% include feature_row id="feature_name" type="center" %}
+
+### Video embed
+
+{% include video id="XsxDH4HcOWA" provider="youtube" %}
+{% include video id="97649261" provider="vimeo" %}
+
+### Buttons
+[Text](#link){: .btn .btn--success}
