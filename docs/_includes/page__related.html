@@ -1,0 +1,26 @@
+{% comment %}<!-- show posts by related tags when `related: true` -->{% endcomment %}
+{% if page.related %}
+  {% assign n_posts = 0 %}
+  {% for post in site.posts %}
+    {% if post.id == page.id %}{% continue %}{% endif %}
+    {% for this_tag in page.tags %}
+        {% if post.tags contains this_tag %}
+          {% if n_posts == 0 %}
+            <div class="page__related">
+              {% if site.data.ui-text[site.locale].related_label %}
+                <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h4>
+              {% endif %}
+              <div class="grid__wrapper">
+          {% endif %}
+          {% include archive-single.html type="grid" %}
+          {% assign n_posts = n_posts | plus: 1 %}
+          {% break %}
+        {% endif %}
+    {% endfor %}
+    {% if n_posts > 3 %}{% break %}{% endif %}
+  {% endfor %}
+  {% if n_posts > 0 %}
+      </div>
+    </div>
+  {% endif %}
+{% endif %}

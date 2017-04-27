@@ -1,5 +1,9 @@
 ## Unreleased
 
+### Enhancements
+
+- Replace `site.related_posts` with Liquid to display better matches based on tags instead of the most recent posts. [#554]
+
 ### Bug Fixes
 
 - Toggle close button on `mouseleave`. [#975](https://github.com/mmistakes/minimal-mistakes/issues/975)
