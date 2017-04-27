@@ -5,9 +5,9 @@ excerpt: "This is a user-defined post excerpt. It should be displayed in place o
 categories: blog
 header:
   overlay_image: /assets/images/unsplash-image-1.jpg
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  caption: "Caption text [**With Link**](https://unsplash.com)"
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
-  cta_url: "https://unsplash.com"
+  #cta_url: "https://unsplash.com"
 gallery2:
   - url: https://flic.kr/p/8a6Ven
     image_path: https://farm2.staticflickr.com/1272/4697500467_8294dac099_q.jpg
