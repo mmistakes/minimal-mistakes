@@ -1,7 +1,13 @@
 ---
 title: Hello Jekyll
 description: Showing what's possible with Jekyll
+excerpt: "This is a user-defined post excerpt. It should be displayed in place of the post content in archive-index pages."
 categories: blog
+overlay_image: /assets/images/unsplash-gallery-image-1.jpg
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  cta_label: "More Info"
+  cta_url: "https://unsplash.com"
 gallery2:
   - url: https://flic.kr/p/8a6Ven
     image_path: https://farm2.staticflickr.com/1272/4697500467_8294dac099_q.jpg
@@ -26,6 +32,8 @@ feature_name:
 
 {% include base_path %}
 {% include toc icon="gears" title="My Table of Contents" %}
+
+This is a collection of markdown formatting that can be done in Jekyll Kramdown.
 
 # H1 Header
 ## H2 Header
@@ -121,7 +129,7 @@ above, below, and to the right of the image.
 
 # Feature Row
 
-{% include feature_row id="feature_name" type="center" %}
+{% include feature_row id="feature_name" %}
 
 # Video embed
 
