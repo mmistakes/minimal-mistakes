@@ -4,8 +4,14 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-04-21T19:59:55-04:00
+last_modified_at: 2017-04-27T15:55:41-04:00
 ---
+
+## Unreleased
+
+### Bug Fixes
+
+- Toggle close button on `mouseleave`. [#975](https://github.com/mmistakes/minimal-mistakes/issues/975)
 
 ## [4.4.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.4.1)
 
