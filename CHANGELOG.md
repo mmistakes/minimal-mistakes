@@ -4,6 +4,10 @@
 
 - Toggle close button on `mouseleave`. [#975](https://github.com/mmistakes/minimal-mistakes/issues/975)
 
+### Maintenance
+
+- Add mention of Greek localized UI text strings to theme documentation. [#972](https://github.com/mmistakes/minimal-mistakes/pull/972)
+
 ## [4.4.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.4.1)
 
 ### Enhancements
