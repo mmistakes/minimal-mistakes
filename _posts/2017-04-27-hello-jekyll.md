@@ -1,3 +1,4 @@
+{% include base_path %}
 ---
 title: Hello Jekyll
 description: Showing what's possible with Jekyll
@@ -10,7 +11,9 @@ categories: blog
 ###### H6
 
 *em*
+
 **strong**
+
 Inline attributes *red*{: style="color: red"}.
 
 > Blockquote
@@ -20,7 +23,14 @@ Inline attributes *red*{: style="color: red"}.
 ### Links
 [link](http://kramdown.gettalong.org "Kramdown")
 
-### 
+### Horizontal Rule
+This is a long paragraph that keeps going and going and going.
+Here's a hard line break.
+* * * 
+Here's another paragraph
+
+And a new paragraph
+
 ### Code snippet
 ~~~ ruby
 def what?
@@ -31,9 +41,10 @@ end
 Use backticks for `inline code`.
 
 ### Comment
+You can see the text below because it's commented out.
 {::comment}
 This is a comment
-{::/comment}
+{:/comment}
 
 ### Definition
 term
@@ -49,22 +60,21 @@ term
 2. Item 2
 3. Item 3
 
-### Horizontal Rule
-Text
-Text
-Text
-* * * 
-Text
-Text
+
 
 ### Table
 | Header 1 | Header 2 |
 |:---------|---------:|
 | cell 1   | cell 2   |
-| ====
+|====
 | footer1  | footer 2 |
+{: rules="groups"}
 
 ### Footnotes
 I'm handsome[^1]
 
-[^1] Says me.
+[^1]: Says me.
+
+### Images
+{% include figure image_path="/assets/unsplash-gallery-image-3" alt="Alt text" caption="Caption text" %}
+
