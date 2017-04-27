@@ -110,6 +110,6 @@ and recognize the right time to let them make their own decisions.
 **Battle Hymn of the Tiger Mom** is well worth the read for any parent. 
 
 Lastly, read 18-year-old Sophia's response to the criticism of her mother's 
-parenting methods, [Why I Love My Strict Chinese Momr](http://nypost.com/2011/01/18/why-i-love-my-strict-chinese-mom/). 
+parenting methods, [Why I Love My Strict Chinese Mom](http://nypost.com/2011/01/18/why-i-love-my-strict-chinese-mom/). 
 I only see evidence of her love and admiration for her mother, who taught her 
 to be everything she could be in life.
