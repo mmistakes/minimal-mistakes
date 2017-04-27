@@ -91,8 +91,6 @@ term
 2. Item 2
 3. Item 3
 
-
-
 # Table
 | Header 1 | Header 2 |
 |:---------|---------:|
