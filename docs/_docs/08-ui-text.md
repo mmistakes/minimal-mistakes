@@ -13,12 +13,14 @@ Currently the English[^yaml-anchors] main keys in [`_data/ui-text.yml`](https://
 - Chinese
 - French (Français)
 - German (Deutsch)
+- Greek
 - Italian (Italiano)
 - Korean
 - Nepali (Nepalese)
 - Russian
 - Spanish (Español)
 - Turkish (Türkçe)
+
 
 If you're are interested in localizing them into other languages feel free to submit a pull request and I will be happy to look it over.
 
