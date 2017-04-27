@@ -38,4 +38,6 @@ end
 
 ### Link to posts
 
+{::comment}
 [Name of link]{{ site.baseurl }}{% post_url 2017-04-21-name-of-post %}
+{::/comment}
