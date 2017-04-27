@@ -14,6 +14,16 @@ gallery2:
   - url: https://flic.kr/p/8a6VXP
     image_path: https://farm5.staticflickr.com/4046/4697502929_72c612c636_q.jpg
     alt: "Fog in the trees"
+feature_name:
+  - url: https://flic.kr/p/8a6Ven
+    image_path: https://farm2.staticflickr.com/1272/4697500467_8294dac099_q.jpg
+    alt: "Black and grays with a hint of green"
+  - url: https://flic.kr/p/8a738X
+    image_path: https://farm5.staticflickr.com/4029/4697523701_249e93ba23_q.jpg
+    alt: "Made for open text placement"
+  - url: https://flic.kr/p/8a6VXP
+    image_path: https://farm5.staticflickr.com/4046/4697502929_72c612c636_q.jpg
+    alt: "Fog in the trees"
 ---
 
 # H1 Header
@@ -52,11 +62,11 @@ Here's another paragraph
 And a new paragraph
 
 # Code snippet
-~~~ ruby
+```
 def what?
     42
 end
-~~~
+```
 
 Use backticks for `inline code`.
 
@@ -111,18 +121,6 @@ above, below, and to the right of the image.
 {% include gallery id="gallery2" caption="This is a second gallery example with images hosted externally." %}
 
 # Feature Row
----
-feature_name:
-  - url: https://flic.kr/p/8a6Ven
-    image_path: https://farm2.staticflickr.com/1272/4697500467_8294dac099_q.jpg
-    alt: "Black and grays with a hint of green"
-  - url: https://flic.kr/p/8a738X
-    image_path: https://farm5.staticflickr.com/4029/4697523701_249e93ba23_q.jpg
-    alt: "Made for open text placement"
-  - url: https://flic.kr/p/8a6VXP
-    image_path: https://farm5.staticflickr.com/4046/4697502929_72c612c636_q.jpg
-    alt: "Fog in the trees"
----
 
 {% include feature_row id="feature_name" type="center" %}
 
