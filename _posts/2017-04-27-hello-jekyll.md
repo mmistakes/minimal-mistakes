@@ -1,10 +1,11 @@
-{% include base_path %}
-{% include toc icon="gears" title="My Table of Contents" %}
 ---
 title: Hello Jekyll
 description: Showing what's possible with Jekyll
 categories: blog
 ---
+
+{% include base_path %}
+{% include toc icon="gears" title="My Table of Contents" %}
 
 # H1 Header
 ## H2 Header
