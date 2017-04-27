@@ -1,7 +1,7 @@
 ---
 title: Hello Jekyll
 description: Showing what's possible with Jekyll
-excerpt: "This is a user-defined post excerpt. It should be displayed in place of the post content in archive-index pages."
+excerpt: "This is a post excerpt. It'll appear in archive-like pages"
 categories: blog
 header:
   overlay_image: /assets/images/unsplash-image-1.jpg
@@ -34,7 +34,7 @@ feature_name:
 {% include toc icon="gears" title="My Table of Contents" %}
 
 This is a collection of markdown formatting that can be done in Jekyll Kramdown.
-
+<!--more-->
 # H1 Header
 ## H2 Header
 ### H3
