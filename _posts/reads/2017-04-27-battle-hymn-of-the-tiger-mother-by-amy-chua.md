@@ -14,7 +14,7 @@ tags: [biography, comedy, entertainment, life lessons, parenting, sociology,]
 [![Battle Hymn of the Tiger Mother by Amy Chua](/images/cover_BattleHymnOfTheTigerMother_AmyChua_200.jpg "Battle Hymn of the Tiger Mother by Amy Chua"){: .align-right }](https://smile.amazon.com/Battle-Hymn-Tiger-Mother-Chua/dp/0143120581/)
 
 This was a thought-provoking read. [Amy Chua](http://amychua.com) describes 
-starkly contrasting differences between her parenting style, dubbed 
+the starkly contrasting differences between her parenting style, dubbed 
 _Chinese parenting_, and that of most Americans. Her writing is approachable 
 and often entertaining, even when I found myself cringing at her methods. But 
 then, this is exactly what she wanted; to entertain the reader not instruct.
@@ -31,7 +31,7 @@ as her story unfolds, as noted on the book cover.
 
 > This was _supposed_ to be a story of how Chinese parents are better at 
   raising kids than Western ones.
-
+> 
 > But instead, it's about a bitter clash of cultures, a fleeting taste of 
   glory, and how I was humbled by a thirteen-year-old.
 
@@ -52,14 +52,15 @@ single day.
 
 That's right, each of her daughters practiced their instrument for multiple 
 hours every single day, in addition to maintaining straight A's in school. 
-During vacations, she would find local places with a piano for Sophia to play. 
+During vacations she would find local places with a piano for Sophia to play. 
 For several years, she would drive them to the best teachers available, even 
 though it meant spending several hours on the road every Saturday or Sunday. 
 
 And that doesn't count the time she spent helping them with schoolwork or 
-other interests. That's not to say she parented alone, her husband was present 
-and active as well. Chua clarifies that she was the driver behind the hours of 
-music practice while he focused on other areas of the daughters and family.
+other interests. That's not to say she parented alone, her husband, Jed, was 
+present and active as well. Chua clarifies that she was the driver behind the 
+hours of music practice while he focused on other areas of the daughters and 
+family.
 
 ## Parenting methods ##
 
