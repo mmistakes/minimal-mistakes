@@ -100,7 +100,7 @@ painting Chua as _that scary, harsh Chinese mom everyone's talking about_,
 it's obvious to me that she used herself as a lesson to other parents. Teach 
 your children to work hard, always give their best effort, don't give up when 
 it gets difficult, and do what you enjoy. That last part might not be obvious, 
-but in the end she supported and encouraged her daughters to pursue what they 
+but in the end, she supported and encouraged her daughters to pursue what they 
 enjoy with passion and vigor.
 
 The same advice applies to parents, be prepared to do everything you can for 
