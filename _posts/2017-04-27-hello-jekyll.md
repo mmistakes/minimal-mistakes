@@ -4,7 +4,6 @@
 title: Hello Jekyll
 description: Showing what's possible with Jekyll
 categories: blog
-
 gallery2:
   - url: https://flic.kr/p/8a6Ven
     image_path: https://farm2.staticflickr.com/1272/4697500467_8294dac099_q.jpg
@@ -20,7 +19,6 @@ gallery2:
 # H1 Header
 ## H2 Header
 ### H3
-###### H6
 
 **strong**
 
@@ -41,10 +39,10 @@ Right-align text
 > > Nested blockquote
 >
 
-### Links
+# Links
 [Link Text](http://kramdown.gettalong.org "Kramdown")
 
-### Horizontal Rule
+# Horizontal Rule
 This is a long paragraph that keeps going and going and going.
 Use two backslashes \\
 for hard line break
@@ -53,7 +51,7 @@ Here's another paragraph
 
 And a new paragraph
 
-### Code snippet
+# Code snippet
 ~~~ ruby
 def what?
     42
@@ -62,18 +60,18 @@ end
 
 Use backticks for `inline code`.
 
-### Comment
+# Comment
 You can't see the text below because it's commented out.
 {::comment}
 This is a comment
 {:/comment}
 
-### Definition
+# Definition
 term
 : definition
 : another definition
 
-### Lists
+# Lists
 1. Item 1
    * sub bullet 1
    * sub bullet 2
@@ -84,7 +82,7 @@ term
 
 
 
-### Table
+# Table
 | Header 1 | Header 2 |
 |:---------|---------:|
 | cell 1   | cell 2   |
@@ -92,12 +90,12 @@ term
 | footer1  | footer 2 |
 {: rules="groups"}
 
-### Footnotes
+# Footnotes
 I'm handsome[^1]
 
 [^1]: Says me.
 
-### Images
+# Images
 {% include figure image_path="/assets/unsplash-gallery-image-3.jpg" alt="Alt text" caption="Caption text" %}
 
 ![image-left](/assets/images/unsplash-gallery-image-1.jpg){: .align-left}
@@ -108,11 +106,11 @@ above, below, and to the right of the image.
 ![full](/assets/images/unsplash-gallery-image-1.jpg)
 {: .full}
 
-### Gallery
+# Gallery
 
 {% include gallery id="gallery2" caption="This is a second gallery example with images hosted externally." %}
 
-### Feature Row
+# Feature Row
 ---
 feature_name:
   - url: https://flic.kr/p/8a6Ven
@@ -128,10 +126,9 @@ feature_name:
 
 {% include feature_row id="feature_name" type="center" %}
 
-### Video embed
+# Video embed
 
 {% include video id="XsxDH4HcOWA" provider="youtube" %}
-{% include video id="97649261" provider="vimeo" %}
 
-### Buttons
+# Buttons
 [Text](#link){: .btn .btn--success}
