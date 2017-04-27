@@ -52,7 +52,7 @@ single day.
 
 That's right, each of her daughters practiced their instrument for multiple 
 hours every single day, in addition to maintaining straight A's in school. 
-During vacations she would find local places with a piano for Sophia to play. 
+During vacations, she would find local places with a piano for Sophia to play. 
 For several years, she would drive them to the best teachers available, even 
 though it meant spending several hours on the road every Saturday or Sunday. 
 
@@ -66,7 +66,7 @@ family.
 
 I truly appreciate Chua's openness and honesty in describing her parenting 
 methods. The battles, screaming, belittling, and coercion techniques used with 
-her daughters are extreme, in my opinion. Of course, this is the jist of the 
+her daughters are extreme, in my opinion. Of course, this is the gist of the 
 book; comparing her _Chinese parenting_ style to Western (American) methods. 
 
 It was interesting to read about her encounters, how she handled the parenting 
@@ -76,8 +76,8 @@ he often voiced his concerns behind closed doors. I appreciate knowing her
 husband's perspective and that they worked through the disagreements. 
 
 Seeing what her parenting experience has been like gave me insight into how it 
-shapes not only the children, but the parents. Especially when doing so in 
-America, where parenting expectations are different than her experience as the 
+shapes not only the children but the parents. Especially when doing so in 
+America, where parenting expectations are different from her experience as the 
 child of Chinese immigrants. She felt the constant pressure to conform to 
 Western standards by friends and parents, yet maintained her stance for a very 
 long time.
