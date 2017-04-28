@@ -2,6 +2,7 @@
 title: Hello Jekyll
 description: Showing what's possible with Jekyll
 excerpt: "This is a post excerpt. It'll appear in archive-like pages"
+comments: true
 categories: blog
 header:
   overlay_image: /assets/images/unsplash-image-1.jpg
