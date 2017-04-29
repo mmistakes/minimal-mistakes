@@ -79,7 +79,7 @@ analytics:
 author:
   name             : "Sam Brentnall"
   avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "Coffee drinking, fell runner & climber who enjoys keeping upto date with technology. Sharing tech tutorials I think would be usefull"
+  bio              : "SQL DBA: Coffee drinker, fell runner, and climber with a passion for technology. Here to share tech tutorials I think would be useful"
   location         : "Sheffield, UK"
   email            : "hi@sambrentnall.co.uk"
   uri              :
@@ -172,9 +172,9 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 1 # amount of posts to show
 paginate_path: /page:num/
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:  http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
