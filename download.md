@@ -51,6 +51,6 @@ This lib extends the *Core Lib* and adds Android-specific features. This is your
 <dependency>
   <groupId>org.bigiot.lib.android</groupId>
   <artifactId>bigiotlib-0.7.1</artifactId>
-  <version>0.7.0</version>
+  <version>0.7.1</version>
 </dependency>
 ```
