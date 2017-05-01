@@ -20,11 +20,10 @@ MAVEN
 </dependency>
 ```
 
-GRADLE
+GRADLE 
 ```xml
 compile 'org.bigiot.lib:bigiot-lib-coren:0.7.1'
 ```
-
 
 ### Advanced Lib
 
