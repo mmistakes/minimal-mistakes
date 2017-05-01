@@ -22,13 +22,14 @@ MAVEN
 
 GRADLE 
 ```xml
-compile 'org.bigiot.lib:bigiot-lib-coren:0.7.1'
+compile 'org.bigiot.lib:bigiot-lib-core:0.7.1'
 ```
 
 ### Advanced Lib
 
 This lib extends the *Core Lib* and contains advanced features. It is Java 8 compliant and supports language elements such as CompletableFutures and lambdas.
 
+MAVEN
 ```xml
 <dependency>
   <groupId>org.bigiot.lib</groupId>
@@ -37,10 +38,16 @@ This lib extends the *Core Lib* and contains advanced features. It is Java 8 com
 </dependency>
 ```
 
+GRADLE 
+```xml
+compile 'org.bigiot.lib:bigiot-lib-advanced:0.7.1'
+```
+
 ### Embedded Spark
 
 This lib extends the *Advanced Lib* and embedds a lightweight Web server ([Spark](http://sparkjava.com/)). Particularly, if you want to provide IoT offerings this can be the basis for building a gateway to your platform or service.
 
+MAVEN
 ```xml
 <dependency>
   <groupId>org.bigiot.lib</groupId>
@@ -49,10 +56,16 @@ This lib extends the *Advanced Lib* and embedds a lightweight Web server ([Spark
 </dependency>
 ```
 
+GRADLE 
+```xml
+compile 'org.bigiot.lib:bigiot-lib-embeddedspark:0.7.1'
+```
+
 ### Android
 
 This lib extends the *Core Lib* and adds Android-specific features. This is your choise of lib, if you want to develop an Android app as a consumer of BIG IoT platforms, or even if you develop a provider based on the Android system.
 
+MAVEN
 ```xml
 <dependency>
   <groupId>org.bigiot.lib.android</groupId>
@@ -60,3 +73,9 @@ This lib extends the *Core Lib* and adds Android-specific features. This is your
   <version>0.7.1</version>
 </dependency>
 ```
+
+GRADLE 
+```xml
+compile 'org.bigiot.lib.android:bigiotlib:0.7.1'
+```
+
