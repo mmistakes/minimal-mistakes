@@ -11,6 +11,7 @@ Using our Maven **[repository](http://bigiot-cd.westeurope.cloudapp.azure.com:18
 
 The basic functionality of the BIG IoT API for providers and consumers. This lib is Java 7 compliant.
 
+MAVEN 
 ```xml
 <dependency>
   <groupId>org.bigiot.lib</groupId>
@@ -18,6 +19,12 @@ The basic functionality of the BIG IoT API for providers and consumers. This lib
   <version>0.7.1</version>
 </dependency>
 ```
+
+GRADLE
+```xml
+compile 'org.bigiot.lib:bigiot-lib-coren:0.7.1'
+```
+
 
 ### Advanced Lib
 
