@@ -7,15 +7,15 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "TheTestSite: A Test Blog"
-title_separator          : "|"
-name                     : "Clayton Anderson"
-description              : "A blog test site."
-url                      : "https://clayands.github.io"
-baseurl                  : "/home"
-repository               : "clayands/clayands.github.io"
+title                    : "clayands"
+title_separator          : "-"
+name                     : "clayands"
+description              : "A Jekyll blog test site."
+url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : # the subpath of your site, e.g. "/blog"
+repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-breadcrumbs              : true # true, false (default)
+# breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
@@ -55,7 +55,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : "clayands"
+  username               :
 facebook:
   username               :
   app_id                 :
@@ -77,10 +77,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "clayands"
+  name             : "Your Name"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "A guy testing a blog."
-  location         : "Earth"
+  bio              : "I am an amazing person."
+  location         : "Somewhere"
   email            :
   uri              :
   bitbucket        :
@@ -89,10 +89,10 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "clayands"
+  github           :
   google_plus      :
   keybase          :
-  instagram        : "clayands"
+  instagram        :
   lastfm           :
   linkedin         :
   pinterest        :
@@ -100,7 +100,7 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          : "clayands"
+  twitter          :
   vine             :
   weibo            :
   xing             :
