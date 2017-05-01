@@ -1,7 +1,7 @@
 ---
 title: "Me in 10 seconds"
 sitemap: true
-permalink: /about
+permalink: /about/
 ---
 {% include base_path %}
 
