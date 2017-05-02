@@ -277,7 +277,7 @@ defaults:
   # _now
   - scope:
       path: ""
-      type: pages
+      type: posts
     values:
       layout: single
       author_profile: false
@@ -285,7 +285,7 @@ defaults:
    # _completed
   - scope:
       path: ""
-      type: pages
+      type: posts
     values:
       layout: single
       author_profile: false
@@ -293,7 +293,7 @@ defaults:
   # _books
   - scope:
       path: ""
-      type: pages
+      type: posts
     values:
       layout: single
       author_profile: false
