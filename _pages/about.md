@@ -15,6 +15,6 @@ Minimalist, contrarian and taming my lizard brain.
 
 Motto: [Maranasati](https://en.wikipedia.org/wiki/Maranasati). There's only one way to know how a food taste - eat it. 
 
-Check out my [project]({{ basepath }}/project/) page to see what I'm doing now. 
+Check out my [project]({{ basepath }}/project/){:target="_blank"} page to see what I'm doing now. 
 
 I'll love to [grab a cup of coffee]({{ basepath }}/contact) with you too.
