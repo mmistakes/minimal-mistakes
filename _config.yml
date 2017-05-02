@@ -234,6 +234,13 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
+  completed:
+    output: true
+    permalink: /:collection/:path/
+  now:
+    output: true
+    permalink: /:collection/:path/
+    
 
 # Defaults
 defaults:
