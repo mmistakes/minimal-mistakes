@@ -5,11 +5,14 @@ permalink: /about/
 ---
 {% include base_path %}
 
-A quant, story teller, data scientist, automation geek, pianist and polygot. 
+A marketer that codes. A quant, story teller, data scientist, automation geek, pianist and speaks 5 languages. 
 
-I'm fascinated with tech that solves big problems. 
-Born in Malaysia. Now lives in Singapore.
+I'm fascinated with solving problems with tech and data. 
 
-Minimalist, contrarian and taming my lizard brain. There's only one way to know how a food taste - eat it. 
+Currently lives in Singapore.
 
-Check out my [project]({{ basepath }}/project.html) page to know what I'm doing now. But I'll love to [grab a cup of coffee][{{ basepath }}/contact] with you.
+Minimalist, contrarian and taming my lizard brain. 
+
+Motto: [Maranasati]["https://en.wikipedia.org/wiki/Maranasati"]. There's only one way to know how a food taste - eat it. 
+
+Check out my [project]({{ basepath }}/project/) page to know what I'm doing now. And I'll love to [grab a cup of coffee]({{ basepath }}/contact) with you.
