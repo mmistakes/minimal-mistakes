@@ -11,6 +11,7 @@ comments: true
 # What you can expect:
 
 # What we need from you:
+- A domain name. 
 
 # FAQS:
 
