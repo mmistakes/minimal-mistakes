@@ -2,7 +2,7 @@
 title: "Contact"
 excerpt: "I love hearing from people."
 sitemap: true
-permalink: /contact
+permalink: /contact/
 ---
 
 I'd love to hear from you, so please email me at lim@sshawn.com.
