@@ -1,5 +1,7 @@
 ---
-title: "Website 
+title: "Quick Website Done"
+categories: gigs
+comments: true
 ---
 
 # Portfolio
