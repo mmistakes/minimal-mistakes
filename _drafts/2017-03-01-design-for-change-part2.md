@@ -29,11 +29,11 @@ They are not inherently good or bad but misused they can introduce inertia to ch
 
 So if these approaches can be good, why should we not apply them frequently and liberally?
 
-## Confiquration ##
+## Configuration ##
 
 On the surface, designing a system that you can configure through switches and 'rules' that are recorded in some data
 store external to the code seems like a good idea. Using this mechanism we can change the behaviour of the system
-without rewriting it or even redeploying by changing the values of the switches and rules. This means we cna respond to
+without rewriting it or even redeploying by changing the values of the switches and rules. This means we can respond to
 change much faster?
 
 I've been involved with a number of systems that have used this approach to respond to business change. Approaches
@@ -42,7 +42,7 @@ had their own user interfaces and data stores to allow business users to change 
 
 So why do I feel this approach doesn't work?
 
-It's impossible to second guess what the next business requrirement will be. Most of the systems I've seen that take the
+It's impossible to second guess what the next business requirement will be. Most of the systems I've seen that take the
 configuration approach were written in the 80's, 90's or early 00's and even then the pace of change was high enough to
 make trying to second guess what a business requires in a years time impossible. Even government has rapid changes to
 implement. Secretaries of state and ministers change, sometimes after only a few months in the job, and the new incumbent
@@ -64,7 +64,7 @@ in development as they tend not to appreciate the impact of rules changes on non
 performance or security. They also don't always appreciate how to rigorously test any changes and rules engine based
 systems rarely have provision for a test environment.
 
-Configuration is a useful technique to cope with changes in runtime environment and broad brush changes to code paths
+Configuration is a useful technique to cope with changes in run time environment and broad brush changes to code paths
 such as feature toggling or switches for A-B testing. However, it's too crude a tool for dealing with changing business
 rules. I would caveat this with if you business involves developing expert tools or middleware to solve very specific
 problems then a heavy element of configuration is useful but for most business problems developing a comprehensive
@@ -75,7 +75,7 @@ configurable system is more expense than it's worth.
 The most basic and common form of this standardisation is to create a single data model, often implemented in a single
 relational database, shared across multiple components of a larger system. Although this approach has some definite
 advantages in providing a common dialect for data used across components of the system it also has some costs in terms
-of implementing unforseen changes. If the system has several components that need information about the same entities
+of implementing unforeseen changes. If the system has several components that need information about the same entities
 from a business perspective this can be indicative of a number of things:
 
 1. Components with Multiple or Un-surfaced responsibilities.
@@ -105,13 +105,13 @@ issues. The classic example of this is focusing on noun analysis to derive an Ob
 too deeply of the flow of data and the responsibilities of the system as a whole or the components of the system. This
 leads to concepts in the system that are either not required or modelled from a perspective that is too general.
 
-As a slightly contrived example; imagine modeling a system that deals with University Students and the courses they are
+As a slightly contrived example; imagine modelling a system that deals with University Students and the courses they are
 registered for.
 
   * From the perspective of a specific lecturer the important properties of a student may be that they are
 registered for her lectures, the students attendance and grades.
   * From the perspective of a specific faculty in the University the important features of the student might be the courses
-and modules that they attend in the facility, when they timetabled to attend, grade and attendence and their personal
+and modules that they attend in the facility, when they timetabled to attend, grade and attendance and their personal
 tutor.
   * From the perspective of the University administrator the important features are the courses they are taking, the
 overall timetable, which faculty and lectures they are taught by.
@@ -159,7 +159,7 @@ current component subsumes that function regardless of whether it should sit the
 To be clear, this is as much a problem in a monolithic code base as it is in a more distributed one. The decision to
 deliver distributed components is an optimisation to solve a specific problem (usually one of scale) and having all the
 code in one single component doesn't remove the responsibility for clear separation of concerns. So just because a
-'package' of 'namespace' in a monolith can access the data as easily as any other doesn't mean that it should without
+'package' of 'name space' in a monolith can access the data as easily as any other doesn't mean that it should without
 considering that making this decision couples two 'components' of the monolith and introduces inertia to change.
 
 ## Domain Specific Language ##
@@ -221,8 +221,8 @@ can get stuff done without slowing each other down.
 
 Inherently, a developer will want to be able to progress their work without having to communicate with others as there's
 a perception that this communication and seeking a shared understanding slows their ability to get things done. This
-inertia in communicaton scales up to the team level as well. So even when the team is using communal development
-approaches such as pair programming or mob programming the communication intertia just moves to the team boundary
+inertia in communication scales up to the team level as well. So even when the team is using communal development
+approaches such as pair programming or mob programming the communication inertia just moves to the team boundary
 instead of the individual.
 
 I am a strong advocate of communal development approaches because it helps deal with the communication issues between
@@ -239,11 +239,11 @@ abstractions, roles and responsibilities correct from the start as changing them
 
 One of the strongest architectural implementations that I frequently see adopted as a solution to the team communication
 boundary is the use of microservices. The principle is to use the, by now infamous, inverse Conway's Law to your
-advantage. Conway's Law[^5] states that "organizations which design systems ... are constrained to produce designs which
-are copies of the communication structures of these organizations". Inverse Conway's Law tries to use this phenomenon by
+advantage. Conway's Law[^5] states that "organisations which design systems ... are constrained to produce designs which
+are copies of the communication structures of these organisations". Inverse Conway's Law tries to use this phenomenon by
 organising the teams to constrain the required system design.
 
-In the case of a predominantly microsystems based architecture the idea is that organising the developers into small
+In the case of a predominantly microservices based architecture the idea is that organising the developers into small
 teams each responsible for a small service or services will lead to clearly defined boundaries around each
 microservice. This is generally what happens, but without a shared understanding of the entire architecture the APIs are
 unlikely to well support the clients of the service and coordination, orchestration and choreography of these
@@ -292,7 +292,7 @@ to minimise the inertia introduced by the adoption of an abstraction.
 I mentioned earlier that focusing on the model of the static elements of data as a data or object model in isolation
 can lead to focusing on the wrong abstraction.
 
-One technique I use to avoid this issue is rather than modeling the static view of the data, model the dynamic flow of
+One technique I use to avoid this issue is rather than modelling the static view of the data, model the dynamic flow of
 the data through the system. Think about what events are raised and the actors that raise them? What transformations and
 enrichment has to happen to a piece of data in order for it to result in the required response or the required end
 state?
@@ -315,18 +315,19 @@ external trigger is required. Thinking about whether this new information or new
 an existing component or a new one is the way that you can decide whether the current model of the architecture is
 sufficient or requires change.
 
-By taking this approach databases and other datastores become localised optimisation's. As such the static structure of
+By taking this approach databases and other data stores become localised optimisation's. As such the static structure of
 data and, by extension, the static models of the data in the software (schemas, object models, etc.) can be determined
 by modelling the transformations and enhancements of the messages carried out by that particular component of the
 system.
 
 Keeping in mind this view of the component as transformer/enhancer of messages each major component in the system can be
-seen as synonymous with a huge 'function' in a functional program. Something that takes in inputs and returns the
-expected outputs.
+seen as analogous to a huge 'function' in a functional program. Something that takes in immutable data as input and
+returns the expected (immutable) output.
 
-If the component needs multiple inputs from different sources these can be modelled as multiple inputs. It is idealistic
-and unrealistic to imagine that the inputs to each component will arrive reliably and at exactly the moment required to
-carry out the job but dealing with these tricky details is, again, a localised optimisation.
+If the component needs multiple inputs from different sources these can be modelled as multiple messages to multiple
+functions. It is idealistic and unrealistic to imagine that the inputs to each component will arrive reliably and at
+exactly the moment required to carry out the job but dealing with these tricky details is, again, a localised
+optimisation.
 
 It's also worth pointing out that 'components' in this context are not necessarily separate deployment units with
 remote network calls. They can be 'packages', 'modules' or high level 'namespaces' within a larger deployment unit. In
@@ -353,6 +354,45 @@ because it's convenient. The database is always there and always on so why not u
 There's nothing inherently wrong with modelling data `at rest`, in fact it's a valuable technique, but frequently it
 becomes the single minded focus of the system designer. This leads to some of the early optimisation's that I've talked
 about in earlier posts - the early imposition of canonical data models being primary amongst them.
+
+So, how exactly do you design a system without considering a data store as a starting point?
+
+It comes back to modelling the 'flow of data' rather than modelling the data as a detached separate concept. If we look
+at the messages that are required for a system to carry out it's requirements we can model several things.
+
+### Message Content ###
+
+The easiest and most obvious thing to model with regard to the messages in a system is the actual message
+content. However, this is the last thing I tend to focus on as concentrating on the detail of the data required leads to
+a focus on the data without context to the problem. I've found this often leads me to start modelling details about the
+entities that are not relevant.
+
+As a naive example, if I assume I need information about a college student in my system I might start modelling the courses
+they are taking and that might lead me to model their lecture times and teachers. However, if the system is only
+required to manage the students course fees most of this information is irrelevant to the problem. Although in this
+simple example that is obvious I've seen much more subtle assumptions creep into data modelling that have not only led
+to the capture, storage and maintenance of redundant data but the inclusion of this data has led to the development of
+redundant business processes and the code to support them. This often happens over time in small increments and, like
+the apocryphal story of how to boil a frog, is never noticed.
+
+### Message Source ###
+
+Identifying the source of a message in a system is key. Especially if the source is external.
+
+[TODO] - example diagrams modelling message flow in a system.
+
+Thinking about the source of the message helps identify some major architectural characteristics.
+
+1. Timing - when and what triggers the message?
+2. Sensitivity to latency of response - is it critical that the response (if there is one) is received immediately or
+   can the source continue as long as the response is received in a 'timely' manner (how long is timely).
+3. Frequency - how often is message sent?
+4. Volume - how much data is it likely to encompass?
+5. Internal/External to the system context - is this source something you need to design/implement?
+6. Responsibilities - what is the 'source' of the data responsible for and what is it expecting the 'target' to be
+   responsible for?
+
+
 
 ## Be conservative in what you do, be liberal in what you accept from others - Postel's law ##
 
@@ -383,7 +423,7 @@ your system adopting a standardised approach and format to your log messages mak
 and parsing of the messages once collected. See David Humphreys talk on logging. However, when I talk about logging the
 message at the boundaries of the component in this context we want to maintain as much of the original format and
 semantics of the message as possible, including if possible, the ordering of the messages. Typically logging the
-messages at the boundary of the system will involve writing the message to a datastore in it's raw format. The simplest
+messages at the boundary of the system will involve writing the message to a data store in it's raw format. The simplest
 way to do this is simply to serialise the message directly to disk in a file as any attempt to coerce it into a
 different schema for a database is inherently more likely to lose the original format and order.
 
@@ -451,7 +491,7 @@ data model. This meant that the initial system took considerably longer than exp
 quite hard to test and took a lot of time for new programmers to get their heads around when they first started on the
 system.
 
-Also a lot of the more complex queries required to piece together a business view from the abstact data were very
+Also a lot of the more complex queries required to piece together a business view from the abstract data were very
 expensive and took many minutes or even hours to run. Although this wasn't a showstopping problem at the time as, in the
 early 1990's nothing was reported online and the highest frequency of these report was monthly, it did mean that the
 batch processing window got tighter over time as the data grew.
@@ -471,7 +511,7 @@ model messages instead
 
 * data fixed only at edges of system
 * expressive way of sharing data vocabulary across components -Spec / Schema
-* Dynamic (behavioural) modeling first - DFD's, Communication Diagrams, Sequence Diagrams, State Transition Diagrams
+* Dynamic (behavioural) modelling first - DFD's, Communication Diagrams, Sequence Diagrams, State Transition Diagrams
 
 Model messages flowing around the system. Each system node in the graph becomes a component in the system. Each
 component needs to be responsible for one type of transformation or enrichment. This is how you decide about what
@@ -490,7 +530,7 @@ Use localised transformations to more optimal formats
 * local data stores
 * local message formats
 
-Can still have caononical message formats for to localise validation and data cleansing if the 'system' of co-operating
+Can still have canonical message formats for to localise validation and data cleansing if the 'system' of co-operating
 components is in the same domain (DDD?).
 
 Every decision to optimise for common code fixes design decisions so be careful around lossy message formats.
@@ -535,25 +575,25 @@ even a minor one, has several side effects. Any change has an impact on either t
 on the cognitive load on any developer trying to understand the system, or most often, both these effects.
 
 In most cases we focus predominantly on the changes impact on the existing behaviour. Sometimes, like when we are
-carrying out a deliberate 'refactoring' exercise, we focus on the cognitive load of a future developer (possibly our
+carrying out a deliberate 're-factoring' exercise, we focus on the cognitive load of a future developer (possibly our
 future self).
 
 Good development teams do apply a number of disciplines to attempt to keep this future cognitive load to a minimum
 through peer review, pair programming, the application of programming style guides[^4], etc. Although these disciplines
 are incredibly useful they are predicated on something I frequently find is missing, a shared understanding of the
-architecture, it's principles, approaches and tradeoffs. All too often this overall view of the system is either
+architecture, it's principles, approaches and trade offs. All too often this overall view of the system is either
 jealously guarded by the 'ivory tower' architecture team (as if it were some arcane power held over the lowly developers)
 or this overview is fragmented and held in the heads of a number of key individuals but never made explicit or
-coherrent.
+coherent.
 
-How often have you been through a code review that focussed on the stylistic patterns to apply to the code rather than a
+How often have you been through a code review that focused on the stylistic patterns to apply to the code rather than a
 discussion of the design choices and the impact of those choices on existing elements of the system or future changes?
 
 So how do we share a common understanding of the system architecture? I'm not going to get into a discussion of
 design notations, different types of models etc. as there are reams of literature on these subjects.
 
 In my opinion, the key ingredients are a notation or diagramming approach that has few elements and preferably a key to
-enable those not familar with the notation to understand it. Use whatever notation you want as long as it's well
+enable those not familiar with the notation to understand it. Use whatever notation you want as long as it's well
 understood and unambiguous.
 
 The real reason for using a notation or diagram of any sort to express systems architecture is to communicate shared
@@ -594,7 +634,7 @@ a UI can be made in the client responsible for the UI without requesting all the
 
 [^2]: [TODO] Reference Rich Hickey's speculation keynote
 
-[^3]: [TODO] Elaborate on this around each component or service having it's own datastore if required.
+[^3]: [TODO] Elaborate on this around each component or service having it's own data store if required.
 
 [^4]: Personally I find the dogmatic application of style guides to be of limited value and often a distraction. My
 approach to this is to favour the application of the most common stylistic approach for the language based on either the
