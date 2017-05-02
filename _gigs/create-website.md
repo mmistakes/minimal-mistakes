@@ -23,3 +23,5 @@ Have a Question?
 
 Call us toll-free at 1-888-61-GEEKS
 Or live chat with Holland.
+
+{% include paypal-subscribe-widget.html id="ST2XN9RU3J4JY" button="Subscribe | $25/month" %}
