@@ -1,14 +1,7 @@
 ---
 title: "Projects "
-excerpt: "Foo Bar design system including logo mark, website design, and branding applications."
-header:
-  image: /assets/images/unsplash-gallery-image-1.jpg
-  teaser: /assets/images/unsplash-gallery-image-1.jpg
-sidebar:
-  - title: "Role"
-    image: http://placehold.it/350x250
-    image_alt: "logo"
-    text: "Helping you market with data and automation."
+excerpt: "Creating vs. Consuming"
+author_profile: false
 gallery:
   - url: /assets/images/unsplash-gallery-image-1.jpg
     alt: "placeholder image 1"
@@ -19,13 +12,19 @@ gallery:
 permalink: /projects/
 ---
 
+Want to know what I've read? I keep a list of [book summary here]({{ baseurl }}/books){:target="_blank"}.
+
 # Currently Making
+***
+{% for post in site.now %}
+  {% include archive-single.html %}
+{% endfor %}
 
 # Completed Projects
-
+***
 {% for post in site.completed %}
   {% include archive-single.html %}
 {% endfor %}
 
-Want to know what I've read? I keep a list of [book summary here]({{ baseurl }}/books).
+
 
