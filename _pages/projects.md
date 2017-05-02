@@ -12,10 +12,13 @@ gallery:
 permalink: /projects/
 ---
 
-Want to know what I've read? I keep a list of [book summary here]({{ baseurl }}/books).
+Want to know what I've read? I keep a list of [book summary here]({{ baseurl }}/books){:target="_blank"}.
 
 # Currently Making
 ***
+{% for post in site.now %}
+  {% include archive-single.html %}
+{% endfor %}
 
 # Completed Projects
 ***
