@@ -1,11 +1,11 @@
 ---
-title: "Gig"
+title: "Gigs"
 excerpt: "You need help?"
-permalink: /gig/
+permalink: /gigs/
 ---
 
 Hire me!
 
-{% for post in site.gig %}
+{% for post in site.gigs %}
   {% include archive-single.html %}
 {% endfor %}
