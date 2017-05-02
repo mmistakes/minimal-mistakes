@@ -13,7 +13,7 @@ Currently lives in Singapore.
 
 Minimalist, contrarian and taming my lizard brain. 
 
-Motto: [Maranasati]("https://en.wikipedia.org/wiki/Maranasati"). There's only one way to know how a food taste - eat it. 
+Motto: [Maranasati](https://en.wikipedia.org/wiki/Maranasati). There's only one way to know how a food taste - eat it. 
 
 Check out my [project]({{ basepath }}/project/) page to see what I'm doing now. 
 
