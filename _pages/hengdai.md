@@ -2,6 +2,7 @@
 title: "Need a website?"
 categories: gigs
 comments: true
+permalink: /hengdai/
 ---
 
 ## I support you bro.
