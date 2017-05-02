@@ -243,6 +243,9 @@ collections:
   books:
     output: true
     permalink: /:collection/:path/
+  gigs:
+    output: true
+    permalink: /:collection/:path/
     
 
 # Defaults
