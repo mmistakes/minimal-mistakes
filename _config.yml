@@ -298,3 +298,11 @@ defaults:
       layout: single
       author_profile: false
       share: false
+  # _gigs
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      share: false
