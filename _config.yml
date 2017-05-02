@@ -240,6 +240,9 @@ collections:
   now:
     output: true
     permalink: /:collection/:path/
+  books:
+    output: true
+    permalink: /:collection/:path/
     
 
 # Defaults
@@ -280,6 +283,14 @@ defaults:
       author_profile: false
       share: false
    # _completed
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: false
+      share: false
+  # _books
   - scope:
       path: ""
       type: pages
