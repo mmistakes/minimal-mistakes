@@ -5,12 +5,8 @@ tags: data, data mining
 comments: true
 ---
 
-# Portfolio
-***
-- IMDB, Yellow pages, Amazon, Lazada, etc.
+{% include paypal-buynow-widget.html id="W4ANSMJD2T7NQ" button="Get it done | $250" %}
 
-# Description
-***
 If you've just started your business, you'll love data scraping. It's an quick and precise way to collect big-data. Large companies use scraping on a larger scale to gain competitive intelligence. 
 
 You could hire hundreds of Virtual Assistants (VA) to copy-paste data from websites. But this process is slow and the data may contain lots of human error. 
@@ -22,6 +18,10 @@ Say you're trying to get business address from a website. Here's what a VA will 
 4. Repeat for 10,000 companies.
 
 Having worked in various data mining and web scrapping projects, I've built a big-data web harvesting system. You can now get access to my data gathering solution and starting making data-based decisions. 
+
+# Portfolio
+***
+- IMDB, Yellow pages, Amazon, Lazada, etc.
 
 # What you can expect:
 ***
