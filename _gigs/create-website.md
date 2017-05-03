@@ -6,16 +6,6 @@ comments: true
 
 {% include paypal-subscribe-widget.html id="ST2XN9RU3J4JY" button="Subscribe | $25/month" %}
 
-# Portfolio
-***
-- [3than Wong](http://3thanwong.com){:target="_blank"}
-A recipe and food blogger website by a Malaysian chef. 
-
-- [Primo Machine Trader](http://primomachinetrader.com){:target="_blank"}
-A South East Asian startup focused on simplifying selling, buying & leasing heavy machinery.
-
-# Description
-***
 What's the best way to showcase your idea and products? How can you start building a digital brand that you own? 
 
 A Wordpress website is the best Minimal-Viable-Product (MVP) for you. 
@@ -28,6 +18,14 @@ I started this gig as a sharing economy with my friends. I want to help people w
 - A mobile-responsive website
 - 99% server uptime (I had bad experiences with Bluehost or Hostgator so I know how important is this.)
 - Your vision for your business may change as it grows. Your website will be easily adaptable too. Want to transform into an e-commerce site? An e-learning platform? Nothing on Wordpress will restrict you.
+
+# Portfolio
+***
+- [3than Wong](http://3thanwong.com){:target="_blank"}
+A recipe and food blogger website by a Malaysian chef. 
+
+- [Primo Machine Trader](http://primomachinetrader.com){:target="_blank"}
+A South East Asian startup focused on simplifying selling, buying & leasing heavy machinery.
 
 # What we need from you:
 ***
