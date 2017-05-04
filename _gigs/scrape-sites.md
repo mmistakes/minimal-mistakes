@@ -1,13 +1,14 @@
 ---
 title: "Need to extract data from sites?"
 categories: gigs
+excerpt: "If you've just started your business, you'll love data scraping. It's an quick and accurate way to collect big-data."
 tags: data, data mining
 comments: true
 ---
 
 {% include paypal-buynow-widget.html id="WMT4CQV8NK7SL" button="Extract one site | $35" %}
 
-If you've just started your business, you'll love data scraping. It's an quick and precise way to collect big-data. Large companies use scraping on a larger scale to gain competitive intelligence. 
+If you've just started your business, you'll love data scraping. It's an quick and accurate way to collect big-data. Large companies use scraping on a larger scale to gain competitive intelligence. 
 
 You could hire hundreds of Virtual Assistants (VA) to copy-paste data from websites. But this process is slow and the data may contain lots of human error. 
 
