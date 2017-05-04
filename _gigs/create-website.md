@@ -1,16 +1,15 @@
 ---
 title: "Need a website?"
 categories: gigs
+excerpt: "Let's start building your brand."
 comments: true
 ---
 
 {% include paypal-subscribe-widget.html id="ST2XN9RU3J4JY" button="Subscribe | $25/month" %}
 
-What's the best way to showcase your idea and products? How can you start building a digital brand that you own? 
+Want a site that to showcase your idea and products online? A site that can easily change from a blog to an ecommerce in the future? A Wordpress website is the best Minimal-Viable-Product (MVP) for you. 
 
-A Wordpress website is the best Minimal-Viable-Product (MVP) for you. 
-
-I started this gig as a sharing economy with my friends. I want to help people who are just starting out and help them build an online brand.
+I started this gig as a sharing economy with my friends. I'm keen to help people who are just starting out online.
 
 # What you can expect:
 ***
