@@ -5,7 +5,7 @@ tags: data, data mining
 comments: true
 ---
 
-{% include paypal-buynow-widget.html id="W4ANSMJD2T7NQ" button="Get it done | $250" %}
+{% include paypal-buynow-widget.html id="WMT4CQV8NK7SL" button="Extract one site | $35" %}
 
 If you've just started your business, you'll love data scraping. It's an quick and precise way to collect big-data. Large companies use scraping on a larger scale to gain competitive intelligence. 
 
@@ -26,7 +26,7 @@ Having worked in various data mining and web scrapping projects, I've built a bi
 # What you can expect:
 ***
 1. Extracted data organized in CSV files. Can be joined into a single CSV file.
-2. Max 7,500 extracted data.
+2. Max 1,000 extracted data from 1 website.
 
 # What we need from you:
 ***
@@ -50,5 +50,5 @@ Having worked in various data mining and web scrapping projects, I've built a bi
 - Can your system extract Chinese or Korean?
 > Yes!
 
-{% include paypal-buynow-widget.html id="W4ANSMJD2T7NQ" button="Get it done | $250" %}
+{% include paypal-buynow-widget.html id="WMT4CQV8NK7SL" button="Extract one site | $35" %}
 30 Day Money Back Guarantee
