@@ -5,6 +5,10 @@ sitemap: true
 permalink: /contact/
 ---
 
-I'd love to hear from you, so please email me at lim@sshawn.com.
+I love meeting new people. I'd love to hear from you, so please email me at l@sshawn.com.
 
-I want to know your story. If you have an interesting problem, I'm keen to help at my best.
+<form method="POST" action="http://formspree.io/l@sshawn.com">
+  <input type="email" name="email" placeholder="Your email...">
+  <textarea name="message" placeholder="Your message..."></textarea>
+  <button type="submit">Send</button>
+</form>
