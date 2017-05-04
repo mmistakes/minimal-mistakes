@@ -5,9 +5,9 @@ permalink: /about/
 ---
 {% include base_path %}
 
-A marketer that codes. 
+A story teller that codes. 
 
-A quant, story teller, data scientist, automation geek, pianist and speaks 5 languages. I'm fascinated with solving problems with tech and data. 
+A quant, data scientist, pianist and a polygot. I love automating processes so that my mind can focus on understanding human behaviors and making ideas spread.
 
 Currently lives in Singapore.
 
@@ -18,3 +18,5 @@ Motto: [Maranasati](https://en.wikipedia.org/wiki/Maranasati). There's only one 
 Check out my [project]({{ basepath }}/project/){:target="_blank"} page to see what I'm doing now. 
 
 I'll love to [grab a cup of coffee]({{ basepath }}/contact) with you too.
+
+{% include contact-form.html placeholder="Your message..." button="Let talk!" %}
