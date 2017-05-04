@@ -1,0 +1,12 @@
+{% capture id %}{{ page.header.google_presentation.id }}{% endcapture %}
+{% capture start %}{{ page.header.google_presentation.start }}{% endcapture %}
+{% capture loop %}{{ page.header.google_presentation.loop }}{% endcapture %}
+{% capture delay %}{{ page.header.google_presentation.delay }}{% endcapture %}
+{% capture width %}{{ page.header.google_presentation.width }}{% endcapture %}
+{% capture height %}{{ page.header.google_presentation.height }}{% endcapture %}
+
+<div class="responsive-google-presentation-container">
+<!-- this is the embed code provided by Google -->
+  <iframe src="https://docs.google.com/presentation/d/{{ id }}/embed?start={{ start }}&loop={{ loop }}&delayms={{ delay }}" frameborder="0" width="{{ width }}" height="{{ height }}" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<!-- Google embed ends -->
+</div>
