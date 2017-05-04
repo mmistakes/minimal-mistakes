@@ -7,4 +7,4 @@ permalink: /contact/
 
 I love meeting new people. I'd love to hear from you, so please email me at l@sshawn.com.
 
-{% include contact-form.html placeholder="Your message..." button="Send me a mail" %}
+{% include contact-form.html placeholder="Your message..." button="Email me!" %}
