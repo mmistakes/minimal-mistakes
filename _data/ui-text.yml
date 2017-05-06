@@ -663,7 +663,52 @@ gr: &DEFAULT_GR
   loading_label              : "Φόρτωση..."
 gr-GR:
   <<: *DEFAULT_GR
-  
+
+# Swedish
+# -----------------
+sv: &DEFAULT_SV
+  page                       : "Sidan"
+  pagination_previous        : "Föregående"
+  pagination_next            : "Nästa"
+  breadcrumb_home_label      : "Hem"
+  breadcrumb_separator       : "/"
+  menu_label                 : "Meny ridå"
+  toc_label                  : "På denna sida"
+  ext_link_label             : "Direkt länk"
+  less_than                  : "mindre än"
+  minute_read                : "minut läsning"
+  share_on_label             : "Dela på"
+  meta_label                 :
+  tags_label                 : "Taggar:"
+  categories_label           : "Kategorier:"
+  date_label                 : "Uppdaterades:"
+  comments_label             : "Lämna en kommentar"
+  comments_title             : "Kommentarer"
+  more_label                 : "Lär dig mer"
+  related_label              : "Du kanske vill även läsa:"
+  follow_label               : "Följ:"
+  feed_label                 : "Flöde"
+  powered_by                 : "Framställd med"
+  website_label              : "Webbsida"
+  email_label                : "E-post"
+  recent_posts               : "Senaste inlägg"
+  undefined_wpm              : "Odefinerade parametrar words_per_minute i _config.yml"
+  comment_form_info          : "Din e-post adress kommer inte att publiceras. Obligatoriska fält är markerade."
+  comment_form_comment_label : "Kommentar"
+  comment_form_md_info       : "Använd Markdown för text-formateringen."
+  comment_form_name_label    : "Namn"
+  comment_form_email_label   : "E-post adress"
+  comment_form_website_label : "Webdsida (valfritt)"
+  comment_btn_submit         : "Skicka en kommentar"
+  comment_btn_submitted      : "Kommentaren har tagits emot"
+  comment_success_msg        : "Tack för din kommentar! Den kommer att visas på sidan så fort den har godkännts."
+  comment_error_msg          : "Tyvärr det har blivit något fel i en av fälten, se till att du fyller i alla rutor och försök igen."
+  loading_label              : "Laddar..."
+sv-SE:
+  <<: *DEFAULT_SV
+sv-FI:
+  <<: *DEFAULT_SV
+
 # Another locale
 # --------------
 #
