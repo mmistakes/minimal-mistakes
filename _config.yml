@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "Artur Kraft"
 title_separator          : "-"
 name                     : "Artur Kraft"
 description              : "An amazing website."
@@ -77,22 +77,22 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Artur Kraft"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an amazing person."
-  location         : "Somewhere"
+  location         : "Glasgow, UK"
   email            :
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : https://fb.com/arturkraft
   foursquare       :
   github           :
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : https://instagram.com/artur.kraft
   lastfm           :
   linkedin         :
   pinterest        :
