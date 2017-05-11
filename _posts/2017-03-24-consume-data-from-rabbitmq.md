@@ -32,7 +32,7 @@ publishing data to client via websocket.
 
 - [Set up a Raspberry PI 3 ]({{ site.url }}{{ site.baseurl }}/raspberry/setup-raspberry)
 - [Interacting with DHT22 Sensor]({{ site.url }}{{ site.baseurl }}/raspberry/dht22-raspberry)
-- [A server or your own computer with Docker]({{ site.url }}{{ site.baseurl }}/computer/install-docker)
+- [A server or your own computer with Docker]({{ site.url }}{{ site.baseurl }}/linux/install-docker)
 - [Git installed](https://git-scm.com/download/linux)
 - [Push data to rabbitMQ]({{ site.url }}{{ site.baseurl }}/computer/push-data-on-rabbitmq)
 - [Install InfluxDB]({{ site.url }}{{ site.baseurl }}/computer/install-influxdb)
