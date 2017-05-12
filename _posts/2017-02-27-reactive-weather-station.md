@@ -51,7 +51,7 @@ The objective of this tutorial is to design a full reactive architecture interac
 
 
 | Component        |    Role       | Description  |
-| ------------- |:-------------:| -----:|
+| ------------- |:-------------:|-------------|
 | Raspberry PI 3   | μService | The Raspberry PI get data sensor and push them over RabbitMQ |
 | RabbitMQ  | MOM(message-oriented middleware) | RabbitMQ is message broker that implements the Advanced Message Queuing Protocol (AMQP)  see more [here](https://www.rabbitmq.com/features.html)|
 | Reactive-server  | Proxy | The server has 2 functions: consumes data from the RabbitMQ and push data directly on the socket |
@@ -135,10 +135,14 @@ services:
 
 c. Run
 ```bash
+docker-compose pull
+docker-compose build
 docker-compose up -d
 ```
-d. Go to http://YOUR_HOST:8089
+d. Go to http://${YOUR_HOST}:8089
+
+[Show online version here](http://hermes.ddns.net:8089)
 
 ### Final Result
 
-ScreenShots
+{% include figure image_path="/assets/images/final-result.png" alt="Final result" caption="Final result" %}

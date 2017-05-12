@@ -27,23 +27,37 @@ The objective of this tutorial is to develop a reactive server which consuming d
 publishing data to client via websocket.
 
 - [Prerequisites](#prerequisites)
+- [Architecture overview](#architecture-overview)
+- [Setup environment](#setup-environment)
+- [Consume data from Rabbitmq](#consume-data-from-rabbitmq)
+- [Store data into InfluxDB](#store-data-into-influxdb)
+- [Create Rest API with Swagger](#create-rest-api-with-swagger)
+- [Publish data to client via Websocket](#publish-data-to-client-via-websocket)
+- [Final Result](#final-result)
+
 
 ###  Prerequisites
 
 - [Set up a Raspberry PI 3 ]({{ site.url }}{{ site.baseurl }}/raspberry/setup-raspberry)
 - [Interacting with DHT22 Sensor]({{ site.url }}{{ site.baseurl }}/raspberry/dht22-raspberry)
-- [A server or your own computer with Docker]({{ site.url }}{{ site.baseurl }}/linux/install-docker)
-- [Git installed](https://git-scm.com/download/linux)
-- [Push data to rabbitMQ]({{ site.url }}{{ site.baseurl }}/computer/push-data-on-rabbitmq)
-- [Install InfluxDB]({{ site.url }}{{ site.baseurl }}/computer/install-influxdb)
+- [Push data to RabbitMQ]({{ site.url }}{{ site.baseurl }}/computer/push-data-on-rabbitmq)
+- [InfluxDB]({{ site.url }}{{ site.baseurl }}/computer/install-influxdb)
 
-
-### Overview
+### Architecture overview
 
 {% include figure image_path="/assets/images/consume-data-from-rabbitmq.png" alt="Reactive Server Overview" caption="Reactive Server Overview" %}
 
 
-### Clone the project
+### Setup environment
+
+##### Prerequisites
+
+- [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html)
+- [Maven](https://maven.apache.org/download.cgi)
+- [Docker]({{ site.url }}{{ site.baseurl }}/linux/install-docker)
+- [Git](https://git-scm.com/download/linux)
+
+##### Clone the project
 
 [Get source here](https://github.com/jluccisano/reactive-server)
 
@@ -51,12 +65,23 @@ publishing data to client via websocket.
 git clone git@github.com:jluccisano/reactive-server.git
 ```
 
-### Step 1: Consume data from Rabbitmq
-
-
+##### Run
 
 ```bash
-git checkout step1-consumeDataFromRabbitMQ
+mv application.tpl.yml application.yml
+``` 
+- Set your value into application.yml
+
+- Start server
+
+```bash
+mvn spring-boot:run -Drun.profiles=dev
+```
+
+### Consume data from Rabbitmq
+
+```bash
+git checkout -b step1-consumeDataFromRabbitMQ origin/step1-consumeDataFromRabbitMQ
 ```
 #### Configuration properties
 
@@ -117,6 +142,17 @@ public class RabbitMQConfig {
 ```
 #### Create consumer
 
+{% plantuml %}
+left to right direction
+agent producer
+agent consumer
+storage exchange
+queue queue
+producer -- exchange
+exchange -- queue
+queue -- consumer
+{% endplantuml %}
+
 
 ```java
 @Service
@@ -138,17 +174,7 @@ public class ReceiveHandlerImpl implements ReceiveHandler {
     
 }
 ```
-#### Run
 
-```bash
-mv application.tpl.yml application.yml
-``` 
-- Set your value into application.yml
-
-- Start server
-```bash
-mvn spring-boot:run -Drun.profiles=dev
-```
 
 #### Result
 
@@ -156,10 +182,25 @@ mvn spring-boot:run -Drun.profiles=dev
 2017-05-11 13:48:51.283  INFO 16434 --- [cTaskExecutor-1] com.jls.service.impl.ReceiveHandlerImpl  : Message(expire=43869000, created=1494503330, data=DHT22Sensor{temperature='23.799999237060547', humidity=47.29999923706055})
 ```
 
-### Step 2: Store data into InfluxDB
+### Store data into InfluxDB
 
 ```bash
-git checkout step2-store-data-into-influxDB
+git checkout -b step2-store-data-into-influxDB origin/step2-store-data-into-influxDB
+```
+
+#### Maven dependencies
+
+```xml
+<dependency>
+    <groupId>com.github.miwurster</groupId>
+    <artifactId>spring-data-influxdb</artifactId>
+    <version>1.5</version>
+</dependency>
+<dependency>
+    <groupId>org.influxdb</groupId>
+    <artifactId>influxdb-java</artifactId>
+    <version>2.5</version>
+</dependency>
 ```
 #### Configuration
 
@@ -245,7 +286,7 @@ public class ReceiveHandlerImpl implements ReceiveHandler {
 
 #### Result
 
-```bash
+```text
 bash-4.3# influx
 Connected to http://localhost:8086 version 1.2.0
 InfluxDB shell version: 1.2.0
@@ -256,11 +297,13 @@ Using database influx_db_name
 ```
 
 
-### Step 3: Create Rest API with Swagger
+### Create Rest API with Swagger
 
 ```bash
-git checkout step3-Create-REST-API-Swagger
+git checkout -b origin/step3-create-rest-api-with-swagger step3-create-rest-api-with-swagger
 ```
+
+#### Maven dependencies
 
 ```xml
 <dependency>
@@ -277,7 +320,7 @@ git checkout step3-Create-REST-API-Swagger
 
 #### Swagger Config
 
-```bash
+```java
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
@@ -294,7 +337,7 @@ public class SwaggerConfig {
 
 ```
 
-```bash
+```java
 @SpringBootApplication
 @Import({WebConfig.class,
 		JacksonConfig.class,
@@ -317,7 +360,7 @@ public class ReactiveServerApplication extends WebMvcConfigurerAdapter {
 
 #### Controller
 
-```bash
+```java
 @RestController
 @RequestMapping("/api/v1/sensor/dht22")
 @Api(value = "dht22", description = "DHT22 Sensor data")
@@ -391,26 +434,180 @@ public class DHT22Controller {
 
 }
 ```
+#### Result
+
+[http://localhost:8084/swagger-ui.html](http://localhost:8084/swagger-ui.html)
+
+{% include figure image_path="/assets/images/step3-swagger1.png" alt="Swagger Overview" caption="Swagger Overview" %}
 
 
-http://YOUR_HOST:YOUR_PORT/swagger-ui.html
+{% include figure image_path="/assets/images/step3-swagger2.png" alt="Get fresh data" caption="Get fresh data" %}
 
-### Step 4: Forward data to client via Websocket
+
+### Publish data to client via Websocket
 
 ```bash
-git co step4-publish-to-websocket
+git checkout -b step4-publish-to-websocket origin/step4-publish-to-websocket
 ```
 
-```bash
-java -jar target/reactive-server-0.0.1-SNAPSHOT.jar
+#### Maven dependency
+
+```xml
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-websocket</artifactId>
+    <version>4.3.3.RELEASE</version>
+</dependency>
+```
+
+#### Configuration
+
+```java
+@Configuration
+@EnableWebSocketMessageBroker
+public class WebSocketConfig extends AbstractWebSocketMessageBrokerConfigurer {
+
+    @Override
+    public void configureMessageBroker(MessageBrokerRegistry config) {
+        config.enableSimpleBroker("/queue/");
+        config.setApplicationDestinationPrefixes("/app");
+    }
+
+    @Override
+    public void registerStompEndpoints(StompEndpointRegistry registry) {
+        registry.addEndpoint("/stomp").setAllowedOrigins("*").withSockJS();
+    }
+
+}
+```
+
+#### Service
+
+```java
+@Service
+public class PublishServiceImpl implements PublishService {
+
+    @Autowired
+    SimpMessagingTemplate messagingTemplate;
+
+    public void publish(String destination, Object payload) {
+        messagingTemplate.convertAndSend(destination, payload.toString());
+    }
+
+}
+```
+
+##### Forward
+
+```java
+@Service
+public class ReceiveHandlerImpl implements ReceiveHandler {
+
+    @Autowired
+    PublishServiceImpl publishService;
+
+    @Autowired
+    InfluxDBService influxDBService;
+
+
+    private static final Logger logger = LoggerFactory.getLogger(ReceiveHandlerImpl.class);
+
+    @RabbitListener(bindings = @QueueBinding(
+            value = @Queue(value = "${spring.rabbitmq.queue}", durable = "true"),
+            exchange = @Exchange(value = "${spring.rabbitmq.exchange}", type = ExchangeTypes.HEADERS, durable = "true"),
+            arguments = {
+                    @Argument(name = "x-match", value = "all"),
+                    @Argument(name = "gatewayId", value = "${spring.rabbitmq.gatewayId}")
+            })
+    )
+    public void handleMessage(@Payload Message message, @Header("gatewayId") String gatewayId) {
+        logger.info(new String(message.toString()));
+
+        Point point = Point.measurement("dht22")
+                .time(System.currentTimeMillis(), TimeUnit.MILLISECONDS)
+                .tag("gatewayId",gatewayId)
+                .addField("temperature",message.getData().getTemperature())
+                .addField("humidity", message.getData().getHumidity())
+                .build();
+
+        influxDBService.write(point);
+        publishService.publish("/queue/DHT22",message.toString());
+    }
+}
+```
+
+#### Result
+
+```text
+2017-05-12 09:11:03.826  INFO 1729 --- [cTaskExecutor-1] com.jls.service.impl.PublishServiceImpl  : [>] Publish: Message(expire=60537000, created=1494573062, data=DHT22Sensor{temperature='23.200000762939453', humidity=52.5}) ;destination: /queue/DHT22
 ```
 
 ### Final Result
 
-```bash
-docker pull jluccisano/reactive-server
+
+```yaml
+version: '2'
+services:
+  reactive-server:
+    image: "jluccisano/reactive-server:latest"
+    environment:
+      - PORT=8084
+      - RABBITMQ_ENDPOINT=amqp://rabbit_user:rabbit_password@rabbitmq:5672/myvhost
+      - RABBITMQ_EXCHANGE=your_exchange_name
+      - RABBITMQ_QUEUE=your_queue_name
+      - RABBITMQ_GATEWAYID=your_gateway_id
+      - INFLUXDB_URL=http://influxdb:8086
+      - INFLUXDB_USERNAME=influx_username
+      - INFLUXDB_PASSWORD=influx_password
+      - INFLUXDB_DATABASE=influx_db_name
+      - INFLUXDB_RETENTION_POLICY=influx_rp_name
+    ports:
+      - "8084:8084"
+    links:
+      - "rabbitmq:rabbitmq"
+      - "influxdb:influxdb"
+    depends_on:
+      - "rabbitmq"
+      - "influxdb"
+  rabbitmq:
+    image:  "rabbitmq:3-management"
+    environment:
+      - RABBITMQ_DEFAULT_USER=rabbit_user
+      - RABBITMQ_DEFAULT_PASS=rabbit_password
+      - RABBITMQ_DEFAULT_VHOST=myvhost
+    ports:
+     - "5672:5672"
+     - "8092:15672"
+  influxdb:
+    image: "appcelerator/influxdb"
+    volumes:
+      - './resources/init_script.influxql:/etc/extra-config/influxdb/init_script.influxql:ro'
+    ports:
+      - "8083:8083"
+      - "8086:8086"
+  grafana:
+    image: 'grafana/grafana'
+    links:
+      - "influxdb:influxdb"
+    depends_on:
+      - "influxdb"
+    ports:
+      - '3600:3000'
+  device-mock:
+    build:
+      context: ./resources
+      dockerfile: stub.dockerfile
+    environment:
+      - RABBITMQ_ENDPOINT=amqp://rabbit_user:rabbit_password@rabbitmq:5672/myvhost
+      - RABBITMQ_EXCHANGE=your_exchange_name
+      - RABBITMQ_GATEWAYID=your_gateway_id
+      - PUBLISH_INTERVAL=60
 ```
 
-```bash
-docker run --name reactive-server -p 8084:8084 -d jluccisano/reactive-server:latest
+```yaml
+docker-compose up -d
 ```
+
+#### Go Further
+
+- [Consume data from a reactive client](#{{ site.url }}{{ site.baseurl }}/computer/consume-data-from-reactive-client)
