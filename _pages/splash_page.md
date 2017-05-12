@@ -21,7 +21,7 @@ feature_row1:
     btn_label: "Read More"
     btn_class: "btn--inverse"
 feature_row2:
-  - image_path: /assets/images/anthony-rossbach-59486.jpg
+  - image_path: /assets/images/anthony-rossbach-59486.JPG
     alt: "placeholder image 2"
     title: "Create a sprinkler system"
     excerpt: 'Create and control a sprinkler system with a Raspberry PI (In progress...)'
@@ -36,6 +36,14 @@ feature_row3:
     url: /project/nextrun
     btn_label: "Read More"
     btn_class: "btn--inverse"
+feature_row4:
+  - image_path: /assets/images/Raspberry_Pi_3_Model_B.jpg
+    alt: "placeholder image 2"
+    title: "Security alarm"
+    excerpt: 'Alarming system with Raspberry PI (Coming Soon)'
+    url: /project/alarming-system
+    btn_label: "Read More"
+    btn_class: "btn--inverse"
 ---
 {% include feature_row id="intro" type="center" %}
 
@@ -44,3 +52,5 @@ feature_row3:
 {% include feature_row id="feature_row2" type="right" %}
 
 {% include feature_row id="feature_row3" type="left" %}
+
+{% include feature_row id="feature_row4" type="right" %}
