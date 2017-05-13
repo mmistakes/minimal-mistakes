@@ -7,14 +7,14 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "Ziyad Alshehri Blog"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : "Ziyad Blog"
+description              : "Cybersecurity researcher and graduate student, with more than five years of experience in network security and penetration testing."
+url                      : "https://zshehri.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/assets/images/zshehri_blog.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -55,7 +55,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "eng_zd"
 facebook:
   username               :
   app_id                 :
@@ -77,11 +77,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  name             : "Ziyad Alshehri"
+  avatar           : "/assets/images/ziyad-bio.jpg"
+  bio              : "Cybersecurity Researcher"
+  location         : "Boston,MA"
+  email            : "ziyad@about.me"
   uri              :
   bitbucket        :
   codepen          :
@@ -89,18 +89,18 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "zshehri"
   google_plus      :
-  keybase          :
-  instagram        :
+  keybase          : "ziyad"
+  instagram        : "ziy.ad"
   lastfm           :
-  linkedin         :
+  linkedin         : "zalshehri"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "eng_zd"
   vine             :
   weibo            :
   xing             :
