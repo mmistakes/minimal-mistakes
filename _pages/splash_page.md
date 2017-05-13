@@ -37,7 +37,7 @@ feature_row3:
     btn_label: "Read More"
     btn_class: "btn--inverse"
 feature_row4:
-  - image_path: /assets/images/Raspberry_Pi_3_Model_B.jpg
+  - image_path: /assets/images/alarming.jpg
     alt: "placeholder image 2"
     title: "Security alarm"
     excerpt: 'Alarming system with Raspberry PI (Coming Soon)'

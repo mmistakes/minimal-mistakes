@@ -2,9 +2,9 @@
 title: "Security alarm with Raspberry"
 related: true
 header:
-  overlay_image: /assets/images/Raspberry_Pi_3_Model_B.jpg
+  overlay_image: /assets/images/alarming.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-  teaser: /assets/images/Raspberry_Pi_3_Model_B.jpg
+  teaser: /assets/images/alarming.jpg
 categories:
   - Project
 tags:
