@@ -2,8 +2,6 @@
 title: "Install Docker"
 related: true
 header:
-
-  overlay_filter: "0.1  "
   overlay_image: /assets/images/boba-jovanovic-65138.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
   teaser: /assets/images/boba-jovanovic-65138.jpg

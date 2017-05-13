@@ -2,10 +2,7 @@
 title: "Setup a Raspberry PI 3"
 related: true
 header:
-  overlay_color: "#333"
-  overlay_filter: "0.5"
   overlay_image: /assets/images/ben-moore-101.jpg
-  caption: ""
   teaser: /assets/images/ben-moore-101.jpg
 categories:
   - Raspberry

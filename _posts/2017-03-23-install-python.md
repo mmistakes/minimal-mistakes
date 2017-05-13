@@ -2,8 +2,6 @@
 title: "Install Python"
 related: true
 header:
-  overlay_color: "#333"
-  overlay_filter: "0.5"
   overlay_image: /assets/images/python.png
   teaser: /assets/images/python.png
 categories:

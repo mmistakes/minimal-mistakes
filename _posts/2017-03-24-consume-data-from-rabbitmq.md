@@ -2,11 +2,9 @@
 title: "Consume data from RabbitMQ"
 related: true
 header:
-  overlay_color: "#333"
-  overlay_filter: "0.5"
-  overlay_image: /assets/images/caspar-rubin-224229.jpg
+  overlay_image: /assets/images/ray-hennessy-118035.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-  teaser: /assets/images/caspar-rubin-224229.jpg
+  teaser: /assets/images/ray-hennessy-118035.jpg
 categories:
   - Computer
 tags:
@@ -141,17 +139,6 @@ public class RabbitMQConfig {
 }
 ```
 #### Create consumer
-
-{% plantuml %}
-left to right direction
-agent producer
-agent consumer
-storage exchange
-queue queue
-producer -- exchange
-exchange -- queue
-queue -- consumer
-{% endplantuml %}
 
 
 ```java

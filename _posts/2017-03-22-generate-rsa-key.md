@@ -2,8 +2,6 @@
 title: "Generating new SSH Key"
 related: true
 header:
-  overlay_color: "#333"
-  overlay_filter: "0.5"
   overlay_image: /assets/images/ssh.jpg
   teaser: /assets/images/ssh.jpg
 categories:

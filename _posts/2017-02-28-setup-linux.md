@@ -2,8 +2,6 @@
 title: "Raspbian basic administration"
 related: true
 header:
-  overlay_color: "#333"
-  overlay_filter: "0.5"
   overlay_image: /assets/images/linux.jpg
   teaser: /assets/images/linux.jpg
 categories:

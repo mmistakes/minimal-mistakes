@@ -2,8 +2,6 @@
 title: "Install GIT"
 related: true
 header:
-  overlay_color: "#333"
-  overlay_filter: "0.1"
   overlay_image: /assets/images/6-30-12_Git.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
   teaser: /assets/images/6-30-12_Git.jpg

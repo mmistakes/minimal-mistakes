@@ -2,8 +2,6 @@
 title: "Create a reactive Weather Station"
 related: true
 header:
-  overlay_color: "#333"
-  overlay_filter: "0.7"
   overlay_image: /assets/images/jordan-ladikos-62738.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
   teaser: /assets/images/jordan-ladikos-62738.jpg

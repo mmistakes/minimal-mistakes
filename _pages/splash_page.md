@@ -5,8 +5,6 @@ permalink: /
 date: 2016-03-23T11:48:41-04:00
 author_profile: true
 header:
-  overlay_color: "#333"
-  overlay_filter: "0.3"
   overlay_image: /assets/images/caspar-rubin-224229.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 excerpt: "Share and learn more knowledges to go even further"
@@ -23,7 +21,7 @@ feature_row1:
     btn_label: "Read More"
     btn_class: "btn--inverse"
 feature_row2:
-  - image_path: /assets/images/anthony-rossbach-59486.JPG
+  - image_path: /assets/images/anthony-rossbach-59486.jpg
     alt: "placeholder image 2"
     title: "Create a sprinkler system"
     excerpt: 'Create and control a sprinkler system with a Raspberry PI (In progress...)'

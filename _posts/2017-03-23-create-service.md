@@ -2,8 +2,6 @@
 title: "Create a Linux service"
 related: true
 header:
-  overlay_color: "#333"
-  overlay_filter: "0.5"
   overlay_image: /assets/images/linux.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
   teaser: /assets/images/linux.jpg

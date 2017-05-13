@@ -2,8 +2,6 @@
 title: "Consume data from reactive client"
 related: true
 header:
-  overlay_color: "#333"
-  overlay_filter: "0.5"
   overlay_image: /assets/images/markus-spiske-109588.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
   teaser: /assets/images/markus-spiske-109588.jpg

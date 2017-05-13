@@ -2,11 +2,9 @@
 title: "Create a sprinkler system"
 related: true
 header:
-  overlay_color: "#333"
-  overlay_filter: "0.3"
-  overlay_image: /assets/images/caspar-rubin-224229.jpg
+  overlay_image: /assets/images/anthony-rossbach-59486.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-  teaser: /assets/images/caspar-rubin-224229.jpg
+  teaser: /assets/images/anthony-rossbach-59486.jpg
 categories:
   - Automation
 tags:

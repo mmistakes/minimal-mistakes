@@ -2,8 +2,6 @@
 title: "Push data to RabbitMQ"
 related: true
 header:
-  overlay_color: "#333"
-  overlay_filter: "0.5"
   overlay_image: /assets/images/ray-hennessy-118035.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
   teaser: /assets/images/ray-hennessy-118035.jpg
