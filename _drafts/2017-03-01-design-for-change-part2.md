@@ -276,6 +276,7 @@ I will try and address some of these concerns in the next few blog posts.
 
 # Design for Change #
 
+
 So far in these blogs I have not mentioned where programming paradigms fit. There is a reason that imperative
 programming versus declarative programming or functional programming vs object oriented programming have not entered the
 discussion. These paradigms are about ways of writing code and not about how to determine what components make up a
@@ -392,7 +393,14 @@ Thinking about the source of the message helps identify some major architectural
 6. Responsibilities - what is the 'source' of the data responsible for and what is it expecting the 'target' to be
    responsible for?
 
+### Message Target ###
 
+This is the mirror of examining the source of the message but looking at the message flow in the opposite direction can
+give different insights into the same points as examining the message source. I find that examining the message target
+is particularly useful for clarifying the latency, timing and responsibilities. If you deliberately think about the
+source's expectations around latency, timing and responsibilities in isolation and then do the same for the target's
+expectations any conflicts between these two are where your architectural decisions lie. It's also useful to apply role
+playing techniques and have people play both the message source and the target.
 
 ## Be conservative in what you do, be liberal in what you accept from others - Postel's law ##
 
