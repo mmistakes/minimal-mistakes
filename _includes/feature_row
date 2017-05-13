@@ -4,6 +4,12 @@
   {% assign feature_row = page.feature_row %}
 {% endif %}
 
+{% if page.author and site.data.authors[page.author] %}
+  {% assign author = site.data.authors[page.author] %}
+{% else %}
+  {% assign author = site.author %}
+{% endif %}
+
 <div class="feature__wrapper">
 
   {% for f in feature_row %}
@@ -33,12 +39,12 @@
             <h2 style="text-decoration: none !important;" class="archive__item-title">{{ f.title }}</h2>
           {% endif %}
 
-          {% if author.avatar %}
+          {% if author.avatar and f.show_avatar == true %}
               <div class="author__avatar">
                 {% if author.avatar contains "://" %}
                   <img src="{{ author.avatar }}" alt="{{ author.name }}" itemprop="image">
                 {% else %}
-                  <img src="{{ author.avatar | absolute_url }}" class="author__avatar" alt="{{ author.name }}" itemprop="image">
+                  <img src="{{ author.avatar | absolute_url }}" class="author__avatar" style="display: block;margin: 0 auto;" alt="{{ author.name }}" itemprop="image">
                 {% endif %}
               </div>
           {% endif %}

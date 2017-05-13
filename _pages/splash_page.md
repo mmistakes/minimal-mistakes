@@ -10,7 +10,9 @@ header:
   overlay_image: /assets/images/caspar-rubin-224229.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 excerpt: "Share and learn more knowledges to go even further"
-intro: 
+
+intro:
+  - show_avatar: true
   - excerpt: "I'm a Full Stack Developer with 8 years of experience. I acquired some knowledge in different area which allow me to better understand things to go even further. I always want to learn more, that's why I created this blog in order to share my knowledge."
 feature_row1:
   - image_path: /assets/images/jordan-ladikos-62738.jpg
