@@ -1,10 +1,10 @@
 ---
-title: "Design for change (part 2) [draft title - need something better]"
-excerpt: "Behaviour first- Data first class"
+title: "The Early Abstraction turns into a Worm - Software by Design in a Functional Programming World (part 2)"
+excerpt: "Abstractions are the way we manage to deliver complex software systems and therefore are a tool we need to
+apply judiciously."
 layout: single
 comments: true
 ---
-
 
 # The Early Abstraction turns into a Worm #
 
@@ -37,16 +37,18 @@ without rewriting it or even redeploying by changing the values of the switches 
 change much faster?
 
 I've been involved with a number of systems that have used this approach to respond to business change. Approaches
-varied from properties files that contained hundreds of settings, to configuration in databases to rules engines that
+varied from properties files that contained hundreds of settings, to configuration in databases, to rules engines that
 had their own user interfaces and data stores to allow business users to change the behaviour of systems directly.
 
-So why do I feel this approach doesn't work?
+_So why do I feel this approach doesn't work?_
 
 It's impossible to second guess what the next business requirement will be. Most of the systems I've seen that take the
 configuration approach were written in the 80's, 90's or early 00's and even then the pace of change was high enough to
 make trying to second guess what a business requires in a years time impossible. Even government has rapid changes to
 implement. Secretaries of state and ministers change, sometimes after only a few months in the job, and the new incumbent
 has their own approach.
+
+### Externalise ###
 
 Given this the only way to cope with change through configuration is to determine all the possible factors that could
 change and externalise these. Even if this were possible (and I've seen systems that came close) the code required to
@@ -56,6 +58,8 @@ to read, understand, change and verify a complex domain specific set of rules fo
 rules. This is a tricky, slow, and error prone process. It means that most highly configurable business systems like
 this are notoriously difficult and slow to change.
 
+### Rules engine ###
+
 Even using a rules engine designed to manage externalised logic adds a layer of complexity in interfacing with this
 engine that makes changing anything not inside the scope of the rules very difficult.
 
@@ -64,9 +68,16 @@ in development as they tend not to appreciate the impact of rules changes on non
 performance or security. They also don't always appreciate how to rigorously test any changes and rules engine based
 systems rarely have provision for a test environment.
 
+In addition most rules engines have little or no provision for version control and roll back. Even when they do you have,
+to manage rules running on different versions of data, supporting backward compatibility across changes in data schema
+or migrating data in line with rules changes. These are complex, error prone concerns for an experienced development
+team let alone someone whose expertise lies elsewhere.
+
+### Configurable? ###
+
 Configuration is a useful technique to cope with changes in run time environment and broad brush changes to code paths
 such as feature toggling or switches for A-B testing. However, it's too crude a tool for dealing with changing business
-rules. I would caveat this with if you business involves developing expert tools or middleware to solve very specific
+rules. I would caveat this with if your business involves developing expert tools or middleware to solve very specific
 problems then a heavy element of configuration is useful but for most business problems developing a comprehensive
 configurable system is more expense than it's worth.
 
@@ -242,7 +253,7 @@ abstractions, roles and responsibilities correct from the start as changing them
 
 One of the strongest architectural implementations that I frequently see adopted as a solution to the team communication
 boundary is the use of microservices. The principle is to use the, by now infamous, inverse Conway's Law to your
-advantage. Conway's Law[^5] states that "organisations which design systems ... are constrained to produce designs which
+advantage. Conway's Law[^1] states that "organisations which design systems ... are constrained to produce designs which
 are copies of the communication structures of these organisations". Inverse Conway's Law tries to use this phenomenon by
 organising the teams to constrain the required system design.
 
@@ -276,3 +287,5 @@ right levels of abstraction early and defer some decisions about abstractions to
 make changing these abstractions later in our systems lifecycle as easy as possible.
 
 I will try and address some of these concerns in the next few blog posts.
+
+[^1]: [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law)
