@@ -7,7 +7,7 @@ author_profile: true
 header:
   overlay_image: /assets/images/caspar-rubin-224229.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-excerpt: "Share and learn more knowledges to go even further"
+excerpt: "Share and learn more knowledge to go even further"
 
 intro:
   - show_avatar: true
