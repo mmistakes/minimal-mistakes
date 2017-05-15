@@ -6,6 +6,8 @@ layout: single
 comments: true
 ---
 
+<a href="https://clipartfest.com/download/9f06c752ec07be1951c27133a748026731f533a1.html" title="Image from clipartfest.com"><img src="https://img.clipartfest.com/3a7b21d420bcbf638779ed76a5836e6f_early-bird-gets-the-worm-pun-early-bird-catches-the-worm-clipart_500-375.jpeg" width="500" alt="early bird catches the worm clipart" /></a>
+
 # The Early Abstraction turns into a Worm #
 
 In my first post in this series I ended by saying that I would elaborate on what 'deferring decisions in design' meant. I was a
