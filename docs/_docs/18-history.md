@@ -4,10 +4,14 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-04-27T16:01:29-04:00
+last_modified_at: 2017-05-16T08:19:50-04:00
 ---
 
 ## Unreleased
+
+### Enhancements
+
+- Add Greek localized UI text strings. [#996](https://github.com/mmistakes/minimal-mistakes/pull/996)
 
 ### Bug Fixes
 
