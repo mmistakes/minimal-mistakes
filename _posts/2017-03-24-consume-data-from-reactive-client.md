@@ -26,6 +26,8 @@ The objective of this tutorial is to develop a reactive client which consuming t
 
 
 - [Prerequisites](#prerequisites)
+- [Architecture overview](#architecture-overview)
+- [Setup environment](#setup-environment)
 - [Create a simple ReactJS component](#create-a-simple-reactjs-component)
 - [Create a ReactJS socket module via STOMP and sockJS](#create-a-reactjs-socket-module-via-stomp-and-sockjs)
 - [Get data from Rest API](#get-data-from-rest-api)
@@ -34,20 +36,30 @@ The objective of this tutorial is to develop a reactive client which consuming t
 
 ###  Prerequisites
 
+You must be aware of these posts to understand the environment.
+
 - [Set up a Raspberry PI 3]({{ site.url }}{{ site.baseurl }}/raspberry/setup-raspberry)
 - [Interacting with DHT22 Sensor]({{ site.url }}{{ site.baseurl }}/raspberry/dht22-raspberry)
 - [A server or your own computer with Docker]({{ site.url }}{{ site.baseurl }}/linux/install-docker)
 - [Install Git (optional)](https://git-scm.com/download/linux)
 - [Push data to rabbitMQ]({{ site.url }}{{ site.baseurl }}/computer/push-data-on-rabbitmq)
-- [Install InfluxDB]({{ site.url }}{{ site.baseurl }}/computer/install-influxdb)
+- [Setup InfluxDB]({{ site.url }}{{ site.baseurl }}/computer/install-influxdb)
 - [Consume data from Reactive-server]({{ site.url }}{{ site.baseurl }}/computer/consume-data-from-rabbitmq)
 
-### Overview
+### Architecture overview
 
 {% include figure image_path="/assets/images/consume-data-from-reactive-client.png" alt="Reactive Client Overview" caption="Reactive Client Overview" %}
 
 
-### Clone the project:
+### Setup environment
+
+##### Prerequisites
+
+- [NodeJs](https://nodejs.org/en/download/package-manager/)
+- [Gulp](http://gulpjs.com/)
+- [Compass](http://compass-style.org/install/)
+- [Docker]({{ site.url }}{{ site.baseurl }}/linux/install-docker)
+- [Git](https://git-scm.com/download/linux)
 
 [Get source here](https://github.com/jluccisano/reactive-client)
 

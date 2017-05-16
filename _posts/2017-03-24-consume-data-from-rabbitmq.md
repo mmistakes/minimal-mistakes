@@ -36,10 +36,12 @@ publishing data to client via websocket.
 
 ###  Prerequisites
 
+You must be aware of these posts to understand the environment.
+
 - [Set up a Raspberry PI 3 ]({{ site.url }}{{ site.baseurl }}/raspberry/setup-raspberry)
 - [Interacting with DHT22 Sensor]({{ site.url }}{{ site.baseurl }}/raspberry/dht22-raspberry)
 - [Push data to RabbitMQ]({{ site.url }}{{ site.baseurl }}/computer/push-data-on-rabbitmq)
-- [InfluxDB]({{ site.url }}{{ site.baseurl }}/computer/install-influxdb)
+- [Setup InfluxDB]({{ site.url }}{{ site.baseurl }}/computer/install-influxdb)
 
 ### Architecture overview
 
