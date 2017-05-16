@@ -30,7 +30,7 @@ feature_row:
   - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
     title: "Placeholder 3"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
-last_modified_at: 2016-11-15T12:11:48-05:00
+last_modified_at: 2017-05-16T11:45:00-04:00
 ---
 
 {% include toc icon="gears" title="Helpers" %}
@@ -238,7 +238,7 @@ header:
 
 ## Table of Contents
 
-To include an [auto-generated table of contents](http://kramdown.rubyforge.org/converter/html.html#toc) for posts and pages, add the following helper before any actual content in your post or page.
+To include an [auto-generated table of contents](https://kramdown.gettalong.org/converter/html.html#toc) for posts and pages, add the following helper before any actual content in your post or page.
 
 ```liquid
 {% raw %}{% include toc %}{% endraw %}
