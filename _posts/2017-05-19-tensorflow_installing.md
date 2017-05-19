@@ -2,6 +2,7 @@
 layout: single
 title: "Installing TensorFlow in remote Ubuntu 16.04 via ssh"
 tags: [sysadmin, tensorflow, AI, cuda]
+date: 2017-05-19 22:59:59
 ---
 
 I will basically follow the [TensorFlow instructions for Ubuntu 16.04](https://www.tensorflow.org/install/install_linux). I do want to use GPU, and I am doing it via ssh (maybe useful if you are doing the same in a server in the cloud, AWS p2 , or similar)
