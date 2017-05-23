@@ -6,3 +6,6 @@ categories: blog
 ---
 
 first post!
+```python
+print("Hello World")
+```
