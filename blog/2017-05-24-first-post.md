@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "first post"
+title: first post
 date: 2017-05-24
 permalink: /firstpost/
 ---
