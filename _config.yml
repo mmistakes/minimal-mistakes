@@ -18,7 +18,7 @@ teaser                   : "/assets/images/penguin_sliding.jpg"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments: true
-  provider               : "disqus"#, "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : "disqus" #"discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
     shortname            : "minjunkwak"# https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
