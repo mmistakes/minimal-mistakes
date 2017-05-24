@@ -87,9 +87,9 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "https://www.facebook.com/minjun.kwak.395"
   foursquare       :
-  github           :
+  github           : "https://github.com/Hanuu"
   google_plus      :
   keybase          :
   instagram        :
@@ -97,7 +97,7 @@ author:
   linkedin         :
   pinterest        :
   soundcloud       :
-  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
+  stackoverflow    : "minjun-kwak/8057612" #"123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
   twitter          :
