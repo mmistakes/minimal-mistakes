@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: single
 title: "first post"
 date: 2017-05-24
 categories: blog
