@@ -78,7 +78,7 @@ analytics:
 # Site Author
 author:
   name             : "MINJUN KWAK"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profile.jpg"# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Electric and Electronic Engineering in Korea University. A sergeant in the U.S Army as a KATUSA."
   location         : "Republic of Korea"
   email            : "kreateark@gmail.com"
