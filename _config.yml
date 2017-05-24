@@ -14,7 +14,7 @@ description              : "An amazing website."
 url                      : "https://minjunkwak.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "hanuu/MINJUNKWAK"
-teaser                   : "/assets/images/penguin_sliding.jpg"
+teaser                   : /assets/images/penguin_sliding.jpg
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -79,7 +79,7 @@ analytics:
 author:
   name             : "MINJUN KWAK"
   avatar           : "/assets/images/profile.png"# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Electric and Electronic Engineering in Korea University. A sergeant in the U.S Army as a KATUSA."
+  bio              : "Electric and Electronic Engineering in Korea University. A Sergeant in the U.S Army as a KATUSA."
   location         : "Republic of Korea"
   email            : "kreateark@gmail.com"
   uri              :
