@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/agile_geek
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://devcycle.co.uk
+  * I am agile_geek (https://keybase.io/agile_geek) on keybase.
+  * I have a public key ASCUGREwtGPjzrgbEptRRKZFvpmu7pbh8YGzCxJSF5Hj7Ao
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "012094191130b463e3ceb81b129b5144a645be99aeee96e1f181b30b12521791e3ec0a",
+            "host": "keybase.io",
+            "kid": "012094191130b463e3ceb81b129b5144a645be99aeee96e1f181b30b12521791e3ec0a",
+            "uid": "95fcddcc23af109fc68bcc58d38b8c19",
+            "username": "agile_geek"
+        },
+        "service": {
+            "hostname": "devcycle.co.uk",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.23"
+    },
+    "ctime": 1495699308,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1495699186,
+        "hash": "4f3b9b60882487091eb4b9412b45a37077642f5906fc4f4e2ec671a634dfaecccd444015a5ab021c1deb9ba8145cf622d4e58ef40f805a46470f03edfded5b57",
+        "seqno": 1109570
+    },
+    "prev": "7c21ae1f9be131a7f2e57f06a03f1e2e1d772bd77265332a6ac159e574d0ce53",
+    "seqno": 6,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEglBkRMLRj4864GxKbUUSmRb6Zru6W4fGBswsSUheR4+wKp3BheWxvYWTFAvh7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwOTQxOTExMzBiNDYzZTNjZWI4MWIxMjliNTE0NGE2NDViZTk5YWVlZTk2ZTFmMTgxYjMwYjEyNTIxNzkxZTNlYzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwOTQxOTExMzBiNDYzZTNjZWI4MWIxMjliNTE0NGE2NDViZTk5YWVlZTk2ZTFmMTgxYjMwYjEyNTIxNzkxZTNlYzBhIiwidWlkIjoiOTVmY2RkY2MyM2FmMTA5ZmM2OGJjYzU4ZDM4YjhjMTkiLCJ1c2VybmFtZSI6ImFnaWxlX2dlZWsifSwic2VydmljZSI6eyJob3N0bmFtZSI6ImRldmN5Y2xlLmNvLnVrIiwicHJvdG9jb2wiOiJodHRwOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4yMyJ9LCJjdGltZSI6MTQ5NTY5OTMwOCwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDk1Njk5MTg2LCJoYXNoIjoiNGYzYjliNjA4ODI0ODcwOTFlYjRiOTQxMmI0NWEzNzA3NzY0MmY1OTA2ZmM0ZjRlMmVjNjcxYTYzNGRmYWVjY2NkNDQ0MDE1YTVhYjAyMWMxZGViOWJhODE0NWNmNjIyZDRlNThlZjQwZjgwNWE0NjQ3MGYwM2VkZmRlZDViNTciLCJzZXFubyI6MTEwOTU3MH0sInByZXYiOiI3YzIxYWUxZjliZTEzMWE3ZjJlNTdmMDZhMDNmMWUyZTFkNzcyYmQ3NzI2NTMzMmE2YWMxNTllNTc0ZDBjZTUzIiwic2Vxbm8iOjYsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RA/eUKPmkrNK4taz/exPWqR2MVpsQ9xJCPFaqepZnJlU9nMULFx4BSQEg0sV1RI+O9QK3eSvv947WtAgB1gcNKD6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIEJZDl6ZeeC/6ruWxrU/2jgPWU2MyO7t3LTZ+JtXm1rDo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/agile_geek
+
+==================================================================
