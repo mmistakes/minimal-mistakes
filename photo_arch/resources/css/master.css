@@ -1,0 +1,507 @@
+/* GLOBAL */
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	text-align:center;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	padding: 20px 0;
+}
+img {
+	border: 0;
+}
+/* TYPOGRAPHY */
+body, h1, h2, h3, h4, h5, h6, p, a {
+	background-color:inherit;
+	color: #b3b3b3;
+	font-size: 12px;
+	font-family: helvetica, arial, tahoma, verdana, sans-serif;
+}
+/* LINKS */
+a, a:link, a:hover {
+	text-decoration:underline;
+	color:inherit;
+	cursor:pointer;
+}
+a:link a:visited a:hover, a:active {
+	color:inherit;
+	text-decoration:none;
+}
+/* MISC */
+.clear {
+	clear: both;
+}
+.borderTopLeft {
+	border-top: 1px solid #787878;
+	border-left: 1px solid #787878;
+}
+.borderBottomRight {
+	border-right: 1px solid #787878;
+	border-bottom: 1px solid #787878;
+}
+.borderRight {
+	border-right: 1px solid #787878;
+}
+.borderRightDotted {
+	border-right: 1px dotted #787878;
+}
+/* SITE WRAPPER */
+#wrapper_large, #wrapper_thumb {
+	text-align:left;
+	width: 807px;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+/* ID PLATE */
+#idplate {
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+#idplate .logo {
+}
+/* SITE TITLE */
+#sitetitle {
+	margin-bottom: 10px;
+	border-bottom: 1px dotted #7f7f7f;
+}
+#sitetitle h1 {
+	background-color:inherit;
+	font-size: 20px;
+}
+/* COLLECTION HEADER */
+#collectionHeader {
+	margin-bottom: 15px;
+}
+#collectionHeader h1 {
+	font-size: 14px;
+}
+#collectionHeader p {
+	line-height: 16px;
+	margin-top: 5px;
+}
+/* COLLECTION INLINE */
+#collectionInline {
+	float: left;
+	position: relative;
+	color:inherit;
+	background-color: #b3b3b3;
+width: 321px /*2 x CellWidth + 1px Gap*/
+;
+height: 482px /*3 x CellHeight + 2px Gap*/
+;
+	overflow: hidden;
+}
+#collectionInline .padding {
+	padding: 15px;
+}
+#collectionInline h1 {
+	background-color:inherit;
+	color: #4c4c4c;
+	font-size: 14px;
+}
+#collectionInline p {
+	background-color:inherit;
+	color: #4c4c4c;
+	line-height: 16px;
+	margin-top: 5px;
+}
+/* STYLE SWITCHER */
+#styleswitcher {
+	float: left;
+	margin-bottom: 10px;
+	border-right: 1px solid #787878;
+}
+#styleswitcher img {
+	float: left;
+	border-left: 1px solid #787878;
+	border-bottom: 1px solid #787878;
+	width: 12px;
+	height: 7px;
+}
+/* PAGINATION */
+.pagination {
+	float: right;
+	margin-bottom: 10px;
+	padding: 0;
+}
+.pagination ul {
+	margin: 0;
+	padding: 0;
+}
+.pagination li {
+	float: left;
+	list-style: none;
+	padding: 5px;
+}
+.pagination li, .pagination a {
+}
+.pagination .previous {
+	font-weight: bold;
+	margin-left: 25px;
+}
+.pagination .next {
+	font-weight: bold;
+}
+.pagination .readout {
+	font-weight: bold;
+}
+.pagination .current {
+	border: solid 1px #7f7f7f;
+}
+/* QUICK JUMP */
+#quickjump {
+	float: right;
+	margin-bottom: 10px;
+	padding: 0;
+}
+/* CONTACT */
+#contact {
+	/*float: left;
+*/
+	margin-bottom: 10px;
+	padding: 5px 0;
+}
+#contact span, #contact a {
+}
+/* STAGE */
+#stage, #stage2, #index {
+	float: left;
+	position: relative;
+	margin: 0;
+}
+
+#stage, #stage2 {
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #7f7f7f;
+}
+
+/* PREVIEW FULL */
+#previewFull {
+	float: left;
+	position: relative;
+	color:inherit;
+	background-color: #191919;
+}
+#previewFull .padding {
+	padding-top: 15px;
+}
+/* TRANSPORT CONTROLS */
+#previewSmall .previewSmallNav {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 15px;
+}
+/* PAGINATION */
+.previewFullNav ul {
+	margin: 0;
+	padding: 5px;
+}
+.previewFullNav li {
+	display: inline;
+	padding: 10px;
+}
+/* INDEX - GRID */
+.thumbnail {
+	float: left;
+	position: relative;
+	color:inherit;
+	background-color: #949494;
+	width: 160px;
+	height: 160px;
+	overflow: hidden;
+}
+.selectedThumbnail, .thumbnail:hover {
+	color:inherit;
+	background-color: #a1a1a1;
+}
+.emptyThumbnail {
+	float: left;
+	position: relative;
+	color:inherit;
+	background-color: #949494;
+	width: 160px;
+	height: 160px;
+	overflow: hidden;
+}
+/* INDEX */
+.selected {
+	color:inherit;
+	background-color: #a1a1a1;
+}
+.selected:hover {
+	color:inherit;
+	background-color: #a1a1a1;
+}
+.selected .alignmentInner img {
+	border: solid 3px white;
+	padding: 0;
+	margin: 0;
+}
+.itemNumber {
+	z-index: 0;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	background-color:inherit;
+	color: #9c9c9c;
+	font-size: 40px;
+	font-weight: bold;
+	letter-spacing: -1px;
+}
+.fullSize {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.sendMail {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+/* INDEX - LIST */
+.row {
+	position: relative;
+	color:inherit;
+	background-color: #a1a1a1;
+width: 804px /*5 x CellWidth + 4px Gap*/
+;
+	height: 160px;
+	overflow: hidden;
+}
+.cellThumbnail {
+	float: left;
+	position: relative;
+	color:inherit;
+	background-color: #949494;
+	width: 200px;
+	height: 100%;
+	overflow: hidden;
+}
+.cellThumbnail:hover {
+	color:inherit;
+	background-color: #949494;
+}
+.cellDescription {
+	float: left;
+	position: relative;
+	width: 350px;
+	height: 100%;
+	overflow: hidden;
+}
+.cellDescription .padding {
+	padding: 10px;
+}
+.cellDescription h1 {
+	background-color:inherit;
+	color: #E5E5E5;
+	font-size: 14px;
+}
+.cellDescription p {
+	background-color:inherit;
+	color: #E5E5E5;
+	line-height: 16px;
+	margin-top: 5px;
+}
+.cellMetaData {
+	float: left;
+	position: relative;
+	color:inherit;
+	background-color: #9D9D9D;
+	width: 250px;
+	height: 100%;
+	overflow: hidden;
+}
+.cellMetaDataContainer {
+	width: 250px;
+}
+.cellMetaDataLabel {
+	float: left;
+	width: 40%;
+	text-align: right;
+}
+.cellMetaDataLabel p {
+	background-color:inherit;
+	color: #e5e5e5;
+	font-size: 10px;
+	line-height: 12px;
+	padding-right: 3px;
+}
+.cellMetaDataData {
+	float: left;
+	width: 60%;
+	text-align: left;
+}
+.cellMetaDataData p, .cellMetaDataData a {
+	background-color:inherit;
+	color: #E5E5E5;
+	font-size: 10px;
+	line-height: 12px;
+	font-weight: bold;
+	padding-left: 3px;
+}
+/* PROPER ALIGNMENT INSIDE CELLS */
+.alignmentOuterGrid {
+	z-index: 1;
+	position: static;
+	text-align: center;
+	display: table;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.alignmentOuter {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.alignmentOuter {
+	position: static;
+	text-align: center;
+	display: table;
+}
+
+.alignmentMiddle {
+	position: static;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.alignmentInner {
+	position: static;
+}
+.AdjustZIndex {
+	position: relative;
+}
+/* Metadata Formatting */
+.previewFullMetadata hr {
+	border:0;
+	height: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+
+#detailTitle {
+	margin: 10px 0 0 0;
+	float:left;
+	clear:both;
+	text-align: center;
+	width: 100%;
+}
+
+.detailNav {
+	width: 100%;
+	float:left;
+	clear: both;
+	text-align: center;
+
+}
+
+.detailNav ul {
+	margin: 10px auto;
+	text-align: center;
+}
+
+.detailNav ul li {
+	display:inline;
+	text-align: center;
+	list-style: none;
+	padding: 5px;
+}
+
+
+
+#detailImage {
+	text-align: center;
+	width: 100%;
+}
+
+#detailCaption {
+	margin: 10px;
+	text-align: center;
+}
+
+
+.previewMetadataRow {
+	display:block;
+	font-size: 11px;
+	text-align:center;
+	clear:both;
+}
+
+.previewMetadataLabel {
+	margin-right: 3px;
+	display:inline;
+	font-size: 11px;
+	text-align:right;
+	clear:both;
+}
+
+
+.previewMetadataData {
+	display:inline;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.preview {
+	border: 1px solid black;
+	position: relative;
+}
+
+.thumb {
+	border: 1px solid black;
+	position: relative;
+}
+
+.dropShadow {
+	background: url(../misc/shadow.png) right bottom no-repeat;
+	display: block;
+	float: left;
+	margin: 13px -10px -10px 10px;
+	position: relative;
+}
+
+
+.dropShadow:before, .dropShadow:after {
+	background: inherit;
+	content: " ";
+	display: block;
+	height: 10px;
+	width: 10px;
+}
+
+.dropShadow:before {
+	background-position: right top;
+	margin: -10px 0 0 auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.dropShadow:after {
+	background-position: left bottom;
+	margin: -13px 0 0 -10px;
+}
+
+.dropShadow .inner {
+	display: block;
+	left: -10px;
+	margin: 0;
+	overflow: hidden;
+	position: relative;
+	top: -13px;
+}

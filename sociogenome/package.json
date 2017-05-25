@@ -1,0 +1,25 @@
+{
+  "name": "minimal-mistakes-theme",
+  "author": "Michael Rose <michael@mademistakes.com>",
+  "homepage": "http://mmistakes.github.io/minima-mistakes/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mmistakes/minimal-mistakes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mmistakes/minimal-mistakes/issues"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-jshint": "~0.6.3",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-watch": "~0.5.2",
+    "grunt-recess": "~0.3.5",
+    "grunt-contrib-imagemin": "~0.2.0",
+    "grunt-svgmin": "~0.2.0"
+  }
+}
