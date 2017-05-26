@@ -15,7 +15,7 @@ In my case, I will modify the compile flags of the test driver of the module.
 CreateTestDriver(IsotropicWavelets "${Libraries}" "${IsotropicWaveletsTests}")
 
 #Add coverage compile options
-set(COVERAGE_FLAGS "-coverage -fprofile-arcs -ftest-coverage")
+set(COVERAGE_FLAGS "-g -O0 -coverage -fprofile-arcs -ftest-coverage")
 set_target_properties(IsotropicWaveletsTestDriver
   PROPERTIES COMPILE_FLAGS "${CMAKE_CXX_FLAGS} ${COVERAGE_FLAGS}"
                LINK_FLAGS "-fprofile-arcs"
@@ -33,7 +33,7 @@ Coverage files `.gcno` will be generated in the same folder than the object file
 
 Now run your test:
 
-I have a little bash function to run tests, if I want to change the test to run I just have to change the `CTEST_ARGS` variable, for example: `export CTEST_ARGS='-R FrequencyBandPass -V'`.
+I have a little bash script to run itk tests, if I want to change the test to run I just have to change the `CTEST_ARGS` variable, for example: `export CTEST_ARGS='-R FrequencyBandPass -V'`.
 
 ```bash
 export CTEST_ARGS='-L IsotropicWavelet'
@@ -49,15 +49,15 @@ To visualize the data stored in those `.gcda` we can use `lcov` and `genhtml` to
 In `arch-linux`, `lcov` is in the [AUR](https://aur.archlinux.org/packages/lcov/).
 
 ```bash
-export GCOV_PREFIX="$HOME/Software/ITK/build/Modules/Remote/IsotropicWavelets/test/CMakeFiles/IsotropicWaveletsTestDriver.dir"
+export COVERAGE_PREFIX="$HOME/Software/ITK/build/Modules/Remote/IsotropicWavelets/test/CMakeFiles/IsotropicWaveletsTestDriver.dir"
 ```
 
-You can use: `lcov --directory $GCOV_PREFIX --zerocounters` to clean the coverage data before a new run of your tests.
+You can use: `lcov --directory $COVERAGE_PREFIX --zerocounters` to clean the coverage data before a new run of your tests.
 
 When the data is up-to-date, use:
 
 ```
-lcov --directory $GCOV_PREFIX --capture --output-file $GCOV_PREFIX/app.info
+lcov --directory $COVERAGE_PREFIX --capture --output-file $COVERAGE_PREFIX/app.info
 ```
 
 This will parse all `.gcda` files in the directory.
@@ -65,20 +65,60 @@ This will parse all `.gcda` files in the directory.
 Now use `genhtml`:
 
 ```bash
-genhtml --output-directory $GCOV_PREFIX/coverage \
+genhtml --output-directory $COVERAGE_PREFIX/coverage \
         --demangle-cpp --num-spaces 2 --sort \
         --title "Coverage" \
         --function-coverage --branch-coverage --legend \
-        $GCOV_PREFIX/app.info
+        $COVERAGE_PREFIX/app.info
 ```
 
 Then use your favourite browser to open the html report:
 
 ```
-firefox $GCOV_PREFIX/coverage/index.html
+firefox $COVERAGE_PREFIX/coverage/index.html
 ```
 
 ![lcov-screenshot]({{ site.url }}/assets/images/2017-05-25-lcov.png)
 
 Well, it seems I have some work to do!
+
+I have put these functions in a bash script `coverage.sh`:
+
+```bash
+#!/bin/bash
+# GCOV_PREFIX and GCOV_PREFIX_STRIP are env variables for lcov to change where .gcda files are generated http://bobah.net/book/export/html/2
+export COVERAGE_PREFIX="$HOME/Software/ITK/build/Modules/Remote/IsotropicWavelets/test/CMakeFiles/IsotropicWaveletsTestDriver.dir"
+
+function lcovclean(){
+    lcov --directory $COVERAGE_PREFIX --zerocounters
+}
+
+function lcovrun(){
+    lcov --directory $COVERAGE_PREFIX --capture --output-file $COVERAGE_PREFIX/app.info
+}
+
+function lcovgen(){
+    genhtml --output-directory $COVERAGE_PREFIX/coverage \
+            --demangle-cpp --num-spaces 2 --sort \
+            --title "Coverage" \
+            --function-coverage --branch-coverage --legend \
+            $COVERAGE_PREFIX/app.info
+}
+
+function lcovopen(){
+    firefox $COVERAGE_PREFIX/coverage/index.html &
+}
+
+function cleantest(){
+    lcovclean && test
+}
+
+function dolcov(){
+    lcovrun && lcovgen && lcovopen
+}
+
+function lcovall(){
+    cleantest && dolcov
+}
+```
 
