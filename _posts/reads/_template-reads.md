@@ -11,6 +11,10 @@ header:
 tags: [art, biography, comedy, economics, entertainment, finances, geography, history, life lessons, parenting, productivity, psychology, sociology, sci-fi, software development, technology, technical writing, writing]
 ---
 
-[![Don't Make Me Think by Steve Krug](/images/cover_DontMakeMeThing_SteveKrug_150.jpg "Don't Make Me Think by Steve Krug"){: .align-right }](http://www.amazon.com/Dont-Make-Think-Revisited-Usability/dp/0321965515/)
+[![Book by Author](/images/cover_NAME.jpg "Book by Author"){: .align-right }](http://www.amazon.com/)
 
 TEXT GOES HERE 
+
+<p align="center">~ ~ ~</p>
+
+---
