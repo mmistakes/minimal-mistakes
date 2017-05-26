@@ -58,9 +58,9 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : tod_hilton
+  username               : hiltontod
 facebook:
-  username               : todchilton
+  username               : hiltontod
   app_id                 :
   publisher              :
 og_image                 : "images/default-thumb.png" # Open Graph/Twitter default site image
@@ -90,13 +90,13 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : todchilton
+  facebook         : hiltontod
   foursquare       :
   github           : tod-hilton
   goodreads        : # todhilton # Need to see if there's an image to be used
   google_plus      :
   keybase          :
-  instagram        : todhilton
+  instagram        : hiltontod
   lastfm           :
   linkedin         : todhilton
   medium           : todhilton
@@ -105,7 +105,7 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          : tod_hilton
+  twitter          : hiltontod
   vine             :
   weibo            :
   xing             :
