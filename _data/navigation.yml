@@ -10,82 +10,40 @@ main:
     url: https://reg.isuo.org/preschools/view/id/40964
 
 sidebar-menu:
-  - title: Getting Started
+  - title: Наша школа
     children:
-      - title: "Quick-Start Guide"
+      - title: "Як нас знайти"
         url: /docs/quick-start-guide/
-      - title: "Structure"
+      - title: "Історія школи"
         url: /docs/structure/
-      - title: "Installation"
+      - title: "Наші досягнення"
         url: /docs/installation/
-      - title: "Upgrading"
+      - title: "Візитка"
         url: /docs/upgrading/
 
-  - title: Customization
-    children:
-      - title: "Configuration"
-        url: /docs/configuration/
-      - title: "Navigation"
-        url: /docs/navigation/
-      - title: "UI Text"
-        url: /docs/ui-text/
-      - title: "Authors"
-        url: /docs/authors/
-      - title: "Layouts"
-        url: /docs/layouts/
+  - title: Звіти директора
+    url: /yoyoyo
 
-  - title: Content
+  - title: Управління
     children:
-      - title: "Working with Posts"
+      - title: "Графік прийому громадян"
         url: /docs/posts/
-      - title: "Working with Pages"
+      - title: "Мережа класів"
         url: /docs/pages/
-      - title: "Working with Collections"
+      - title: "Адміністрація школи"
         url: /docs/collections/
-      - title: "Helpers"
+      - title: "Правила прийому до 1 класу"
         url: /docs/helpers/
-      - title: "Utility Classes"
+      - title: "Схема управління"
         url: /docs/utility-classes/
 
-  - title: Extras
+  - title: Навчальний процес
     children:
-      - title: "Stylesheets"
+      - title: "Розклад дзвінків"
         url: /docs/stylesheets/
-      - title: "JavaScript"
+      - title: "Графік навчального процесу"
         url: /docs/javascript/
-  - title: Extras
-    children:
-      - title: "Stylesheets"
-        url: /docs/stylesheets/
-      - title: "JavaScript"
+      - title: "Позакласні заняття"
         url: /docs/javascript/
-  - title: Extras
-    children:
-      - title: "Stylesheets"
-        url: /docs/stylesheets/
-      - title: "JavaScript"
-        url: /docs/javascript/
-  - title: Extras
-    children:
-      - title: "Stylesheets"
-        url: /docs/stylesheets/
-      - title: "JavaScript"
-        url: /docs/javascript/
-  - title: Extras
-    children:
-      - title: "Stylesheets"
-        url: /docs/stylesheets/
-      - title: "JavaScript"
-        url: /docs/javascript/
-  - title: Extras
-    children:
-      - title: "Stylesheets"
-        url: /docs/stylesheets/
-      - title: "JavaScript"
-        url: /docs/javascript/
-  - title: Extras
-    children:
-      - title: "Stylesheets"
-        url: /docs/stylesheets/
-      - title: "JavaScript"
+      - title: "Конкурси"
         url: /docs/javascript/
