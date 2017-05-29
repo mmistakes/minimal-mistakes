@@ -60,7 +60,7 @@
 
     {% comment %} Link next page {% endcomment %}
     {% if paginator.next_page %}
-      <li><a href="{{ site.paginate_path | replace: ':num', paginator.next_page | replace: '//', '/' | absolute_url }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a></li></a></li>
+      <li><a href="{{ site.paginate_path | replace: ':num', paginator.next_page | replace: '//', '/' | absolute_url }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a></li>
     {% else %}
       <li><a href="#" class="disabled"><span aria-hidden="true">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</span></a></li>
     {% endif %}
