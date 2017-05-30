@@ -8,6 +8,7 @@
 ### Bug Fixes
 
 - Toggle close button on `mouseleave`. [#975](https://github.com/mmistakes/minimal-mistakes/issues/975)
+- Remove extraneous `</a>` and `</li>` tags from `paginator.html` include. [#1038](https://github.com/mmistakes/minimal-mistakes/pull/1038)
 
 ### Maintenance
 

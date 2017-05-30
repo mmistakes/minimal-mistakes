@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-05-30T08:09:30-04:00
+last_modified_at: 2017-05-30T08:13:43-04:00
 ---
 
 ## Unreleased
@@ -17,6 +17,7 @@ last_modified_at: 2017-05-30T08:09:30-04:00
 ### Bug Fixes
 
 - Toggle close button on `mouseleave`. [#975](https://github.com/mmistakes/minimal-mistakes/issues/975)
+- Remove extraneous `</a>` and `</li>` tags from `paginator.html` include. [#1038](https://github.com/mmistakes/minimal-mistakes/pull/1038)
 
 ### Maintenance
 
