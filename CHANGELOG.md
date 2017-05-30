@@ -2,7 +2,7 @@
 
 ### Enhancements
 
-- Add Greek localized UI text strings. [#996](https://github.com/mmistakes/minimal-mistakes/pull/996)
+- Add Swedish localized UI text strings. [#996](https://github.com/mmistakes/minimal-mistakes/pull/996)
 - Add Bitbucket social icon color. [#1009](https://github.com/mmistakes/minimal-mistakes/pull/1009)
 
 ### Bug Fixes

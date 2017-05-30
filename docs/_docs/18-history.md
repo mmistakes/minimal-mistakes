@@ -4,14 +4,14 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-05-16T08:22:48-04:00
+last_modified_at: 2017-05-30T08:09:30-04:00
 ---
 
 ## Unreleased
 
 ### Enhancements
 
-- Add Greek localized UI text strings. [#996](https://github.com/mmistakes/minimal-mistakes/pull/996)
+- Add Swedish localized UI text strings. [#996](https://github.com/mmistakes/minimal-mistakes/pull/996)
 - Add Bitbucket social icon color. [#1009](https://github.com/mmistakes/minimal-mistakes/pull/1009)
 
 ### Bug Fixes
