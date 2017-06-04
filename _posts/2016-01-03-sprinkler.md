@@ -74,8 +74,11 @@ Hydraulic components
 {% include figure image_path="/assets/images/sprinkler_plan_masse_hydro_schema.png" alt="Final result" caption="Network" %}
 
 
+5. Dig trenches
 
-5. Création des trancheés
+{% include figure image_path="/assets/images/sprinkler/trenches" alt="Trenches" caption="Trenches" %}
+
+
 6. Mise en place des tuyaux, des coudes, des té et des turbines
 7. Raccordement des électrovannes
 8. Raccordement à l'arrivée d'eau
