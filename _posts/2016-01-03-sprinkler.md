@@ -62,9 +62,19 @@ Hydraulic components
 ### Hydraulic wiring
 
 1. Calcul du débit
-2. Définition des zones
-3. Création du réseau
-4. Plan des turbines par zone
+
+
+2. Zones
+
+{% include figure image_path="/assets/images/sprinkler_plan_masse.png" alt="Final result" caption="Zones" %}
+
+
+3. Network
+
+{% include figure image_path="/assets/images/sprinkler_plan_masse_hydro_schema.png" alt="Final result" caption="Network" %}
+
+
+
 5. Création des trancheés
 6. Mise en place des tuyaux, des coudes, des té et des turbines
 7. Raccordement des électrovannes
