@@ -93,7 +93,7 @@ Hydraulic components
 
 | Component        | Site           | Price  |
 | ------------- |:-------------:| -----:|
-| ![Minion](/assets/images/sprinkler/coude_25_FF.jpg) | [Jardinet](https://www.jardinet.fr) | 22.10 EUR |
+| ![Minion](/assets/images/sprinkler/coude_25_FF.jpg =25%) | [Jardinet](https://www.jardinet.fr) | 22.10 EUR |
 
 6. Wire des tuyaux, des coudes, des té et Rotors
 
@@ -153,12 +153,11 @@ python control_relay.py 1 1
 
 
 14. Installation de l'écran
-15. Creation du boitier
+15. Installation du boitier électric
+
+
+
 16. Développement du logiciel en mode manuel kivy
-17. Test
-18. Create un mode scénario pour piloter les zones à la suite
-19. Raccordement au réseau électrique tableau
-20. Résultat final
 
 
 ### Install Kivy
@@ -177,6 +176,12 @@ https://kivy.org/docs/guide/basic.html
 
 
 ### Create Scenario
+
+
+
+
+19. Raccordement au réseau électrique tableau
+
 
 
 ### Final Result
