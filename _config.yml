@@ -6,7 +6,8 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en_US"
+locale                   : "en"
+og_locale                : "en_US"
 title                    : "Practice makes perfect"
 title_separator          : "-"
 name                     : "Joseph Luccisano"
