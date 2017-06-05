@@ -91,15 +91,16 @@ Hydraulic components
 
 {% include figure image_path="/assets/images/sprinkler/valves.jpg" alt="Valves" caption="Valves" %}
 
-| Component        | Site           | Price  |
+6. Wire des tuyaux, des coudes, des té et Rotors
+
+
+| Component        | Quantity           | Price  |
 | ------------- |:-------------:| -----:|
 | ![Minion](/assets/images/sprinkler/coude_25_FF.jpg) |  | |
 | ![Minion](/assets/images/sprinkler/coude_taraudage_central_25x05.jpg) |  | |
 | ![Minion](/assets/images/sprinkler/te_compression_25.jpg) |  | |
 | ![Minion](/assets/images/sprinkler/coude_compression_25_F20x27_25.jpg) |  | |
-
-
-6. Wire des tuyaux, des coudes, des té et Rotors
+| ![Minion](/assets/images/sprinkler/tuyau_25.jpg) |  | |
 
 {% include figure image_path="/assets/images/sprinkler/rotors.jpg" alt="Rotors" caption="Rotors" %}
 

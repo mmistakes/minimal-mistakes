@@ -2,6 +2,7 @@
 title: "Setup a Raspberry PI 3"
 related: true
 header:
+  image: /assets/images/ben-moore-101.jpg
   overlay_image: /assets/images/ben-moore-101.jpg
   teaser: /assets/images/ben-moore-101.jpg
 categories:
