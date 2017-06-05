@@ -39,7 +39,7 @@ Electronic components
 Hydraulic components
 
 
-{% include figure image_path="/assets/images/sprinkler/hydro_components.jpg" alt="Hydro components" caption="Hydro components" %}
+{% include figure image_path="/assets/images/sprinkler/hydro_components.JPG" alt="Hydro components" caption="Hydro components" %}
 
 
 | Component        | Site           | Price  |
@@ -102,7 +102,7 @@ Hydraulic components
 | ![Minion](/assets/images/sprinkler/coude_compression_25_F20x27_25.jpg) |  | |
 | ![Minion](/assets/images/sprinkler/tuyau_25.jpg) |  | |
 
-{% include figure image_path="/assets/images/sprinkler/rotors.jpg" alt="Rotors" caption="Rotors" %}
+{% include figure image_path="/assets/images/sprinkler/rotors.JPG" alt="Rotors" caption="Rotors" %}
 
 7. Raccordement électrique
 
