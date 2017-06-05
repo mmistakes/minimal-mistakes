@@ -11,7 +11,7 @@ title                    : "God is good"
 title_separator          : "-"
 name                     : "Peter Wang"
 description              : "Praise the Lord"
-url                      : "http://wangxiaoli.me"
+url                      : http://wangxiaoli.me
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "pearlojos/blog"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -60,7 +60,7 @@ facebook:
   username               : "pearlojos@gmail.com"
   app_id                 : "272598816540048"
   publisher              : "Peter Wang's blog"
-og_image                 : "https://pbs.twimg.com/profile_images/581448584287027200/Hkm5JQSo.jpg"
+og_image                 : https://pbs.twimg.com/profile_images/581448584287027200/Hkm5JQSo.jpg
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
