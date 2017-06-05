@@ -38,6 +38,10 @@ Electronic components
 
 Hydraulic components
 
+
+{% include figure image_path="/assets/images/sprinkler/hydro_components.jpg" alt="Hydro components" caption="Hydro components" %}
+
+
 | Component        | Site           | Price  |
 | ------------- |:-------------:| -----:|
 | Gate van Rainbird DV 1" 24V | [Jardinet](https://www.jardinet.fr) | 22.10 EUR |
@@ -74,18 +78,28 @@ Hydraulic components
 {% include figure image_path="/assets/images/sprinkler_plan_masse_hydro_schema.png" alt="Final result" caption="Network" %}
 
 
-5. Dig trenches
+4. Dig trenches
 
 {% include figure image_path="/assets/images/sprinkler/trenches.jpg" alt="Trenches" caption="Trenches" %}
 
-6. Wire valves box
+5. Wire valves box
 
 {% include figure image_path="/assets/images/sprinkler/valves_box.jpg" alt="Valves box" caption="Valves box" %}
 
+6. Water main supply
 
-6. Mise en place des tuyaux, des coudes, des té et des turbines
-7. Raccordement des électrovannes
-8. Raccordement à l'arrivée d'eau
+{% include figure image_path="/assets/images/sprinkler/water_main_supply.jpg" alt="Water main supply" caption="Water main supply" %}
+
+7. Valves
+
+{% include figure image_path="/assets/images/sprinkler/valves.jpg" alt="Valves" caption="Valves" %}
+
+
+6. Wire des tuyaux, des coudes, des té et Rotors
+
+{% include figure image_path="/assets/images/sprinkler/rotors.jpg" alt="Rotors" caption="Rotors" %}
+
+
 9. Test manuel et ajustements
 10. Raccordement électrique
 11. Raccordement au relay
