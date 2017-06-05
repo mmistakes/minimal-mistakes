@@ -96,11 +96,11 @@ Hydraulic components
 
 | Component        | Quantity           | Price  |
 | ------------- |:-------------:| -----:|
-| ![Minion](/assets/images/sprinkler/coude_25_FF.jpg) |  | |
-| ![Minion](/assets/images/sprinkler/coude_taraudage_central_25x05.jpg) |  | |
-| ![Minion](/assets/images/sprinkler/te_compression_25.jpg) |  | |
-| ![Minion](/assets/images/sprinkler/coude_compression_25_F20x27_25.jpg) |  | |
-| ![Minion](/assets/images/sprinkler/tuyau_25.jpg) |  | |
+| ![Minion](/assets/images/sprinkler/coude_25_FF.jpg =120x) |  | |
+| ![Minion](/assets/images/sprinkler/coude_taraudage_central_25x05.jpg =120x) |  | |
+| ![Minion](/assets/images/sprinkler/te_compression_25.jpg =120x) |  | |
+| ![Minion](/assets/images/sprinkler/coude_compression_25_F20x27_25.jpg =120x) |  | |
+| ![Minion](/assets/images/sprinkler/tuyau_25.jpg =120x) |  | |
 
 {% include figure image_path="/assets/images/sprinkler/rotors.JPG" alt="Rotors" caption="Rotors" %}
 
