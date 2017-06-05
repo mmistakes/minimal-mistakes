@@ -76,7 +76,7 @@ Hydraulic components
 
 5. Dig trenches
 
-{% include figure image_path="/assets/images/sprinkler/trenches" alt="Trenches" caption="Trenches" %}
+{% include figure image_path="/assets/images/sprinkler/trenches.jpg" alt="Trenches" caption="Trenches" %}
 
 
 6. Mise en place des tuyaux, des coudes, des té et des turbines
