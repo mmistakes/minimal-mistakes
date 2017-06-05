@@ -62,7 +62,6 @@ Hydraulic components
 
 {% include figure image_path="/assets/images/schema_sprinkler.png" alt="Sprinkler Overview" caption="Sprinkler Overview" %}
 
-
 ### Hydraulic wiring
 
 1. Calcul du débit
@@ -72,11 +71,9 @@ Hydraulic components
 
 {% include figure image_path="/assets/images/sprinkler_plan_masse.png" alt="Final result" caption="Zones" %}
 
-
 3. Network
 
 {% include figure image_path="/assets/images/sprinkler_plan_masse_hydro_schema.png" alt="Final result" caption="Network" %}
-
 
 4. Dig trenches
 
@@ -94,17 +91,67 @@ Hydraulic components
 
 {% include figure image_path="/assets/images/sprinkler/valves.jpg" alt="Valves" caption="Valves" %}
 
+| Component        | Site           | Price  |
+| ------------- |:-------------:| -----:|
+| ![Minion](/assets/images/sprinkler/coude_25_FF.jpg) | [Jardinet](https://www.jardinet.fr) | 22.10 EUR |
 
 6. Wire des tuyaux, des coudes, des té et Rotors
 
 {% include figure image_path="/assets/images/sprinkler/rotors.jpg" alt="Rotors" caption="Rotors" %}
 
+7. Raccordement électrique
 
-9. Test manuel et ajustements
-10. Raccordement électrique
+{% include figure image_path="/assets/images/sprinkler/valves_box_final.jpg" alt="Valves box final" caption="Valves box final" %}
+
+
 11. Raccordement au relay
+
+
 12. Branchement du relay avec le Raspberry
-13. Test-gpio open vanne
+
+
+13. Control valves with Raspberry PI
+
+```python
+#!/usr/bin/python
+import RPi.GPIO as GPIO
+
+GPIO.setmode(GPIO.BOARD)
+
+relayIO = { "1": 15, "2": 16, "3": 17, "4": 18, "5": 19}
+
+def setState(relay, state):
+	GPIO.output(relayIO[relay], state)
+
+	if getState(relay) != state:
+		print("relay: " + relay + "is not set to " + state)
+
+	print("relay: " + relay + "is set to " + getState(relay))
+
+def getState(relay):
+	return GPIO.input(relayIO[relay])
+
+def main():
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--relay', help='Set relay 1/2/3/4/5', required=True)
+    parser.add_argument('--state',help='Set state high=1 or low=0', required=True)
+
+    args = parser.parse_args()
+
+    setState(args.relay, args.state)
+
+if __name__ == '__main__':
+    main()
+```
+
+Output:
+
+```python
+python control_relay.py 1 1
+```
+
+
 14. Installation de l'écran
 15. Creation du boitier
 16. Développement du logiciel en mode manuel kivy
@@ -133,6 +180,14 @@ https://kivy.org/docs/guide/basic.html
 
 
 ### Final Result
+
+
+### Useful
+
+1⁄2" = 15/21
+3⁄4" = 20/27
+1" = 26/34
+11⁄4" = 33/42
 
 
 
