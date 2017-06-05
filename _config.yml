@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "God is good"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : "Peter Wang"
+description              : "Praise the Load"
+url                      : http://wangxiaoli.me
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "pearlojos/blog"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -55,12 +55,12 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "pearlojos"
 facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 : # Open Graph/Twitter default site image
+  username               : "pearlojos@gmail.com"
+  app_id                 : "272598816540048"
+  publisher              : "Peter Wang's blog"
+og_image                 : "https://pbs.twimg.com/profile_images/581448584287027200/Hkm5JQSo.jpg"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -77,11 +77,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Peter Wang"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  bio              : "I am a Christian."
+  location         : "Ningbo, China"
+  email            : "pearlojos@gmail.com"
   uri              :
   bitbucket        :
   codepen          :
