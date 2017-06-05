@@ -93,7 +93,11 @@ Hydraulic components
 
 | Component        | Site           | Price  |
 | ------------- |:-------------:| -----:|
-| ![Minion](/assets/images/sprinkler/coude_25_FF.jpg =25%) | [Jardinet](https://www.jardinet.fr) | 22.10 EUR |
+| ![Minion](/assets/images/sprinkler/coude_25_FF.jpg) |  | |
+| ![Minion](/assets/images/sprinkler/coude_taraudage_central_25x05.jpg) |  | |
+| ![Minion](/assets/images/sprinkler/te_compression_25.jpg) |  | |
+| ![Minion](/assets/images/sprinkler/coude_compression_25_F20x27_25.jpg) |  | |
+
 
 6. Wire des tuyaux, des coudes, des té et Rotors
 
@@ -101,8 +105,9 @@ Hydraulic components
 
 7. Raccordement électrique
 
-{% include figure image_path="/assets/images/sprinkler/valves_box_final.jpg" alt="Valves box final" caption="Valves box final" %}
+{% include figure image_path="/assets/images/sprinkler/sprinkler_electric_part.png" alt="Sprinkler electric part" caption="Sprinkler electric part" %}
 
+{% include figure image_path="/assets/images/sprinkler/valves_box_final.jpg" alt="Valves box final" caption="Valves box final" %}
 
 11. Raccordement au relay
 
