@@ -78,6 +78,10 @@ Hydraulic components
 
 {% include figure image_path="/assets/images/sprinkler/trenches.jpg" alt="Trenches" caption="Trenches" %}
 
+6. Wire valves box
+
+{% include figure image_path="/assets/images/sprinkler/valves_box.jpg" alt="Valves box" caption="Valves box" %}
+
 
 6. Mise en place des tuyaux, des coudes, des té et des turbines
 7. Raccordement des électrovannes
