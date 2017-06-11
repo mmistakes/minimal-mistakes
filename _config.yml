@@ -12,9 +12,9 @@ title                    : "DTP Group"
 title_separator          : "-"
 name                     : &name "John Joseph M. Carrasco"
 description              : &description "Website for the ATP Group at the Institute for Theoretical Physics, CEA-Saclay.  We explore scattering amplitudes, gravity, and quantum field theory."
-url                      : "" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "http://fancyphysics.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/lab" # the subpath of your site, e.g. "/blog"
-repository               : "dtp-group"
+repository               : "dtp-group/dtp-group"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
