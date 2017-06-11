@@ -1,0 +1,10 @@
+rm .editorconfig
+rm .gitattributes
+rm .github
+rm -rf ./docs
+rm -rf ./test
+rm CHANGELOG.md
+rm minimal-mistakes-jekyll.gemspec
+rm screenshot-layouts.png
+rm screenshot.png
+
