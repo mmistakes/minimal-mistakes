@@ -43,7 +43,7 @@ and maybe with better prices.
  2. Write image into the SD Card
  
  Follow this [guide](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) according to your OS
- or Follow this [tutorial](http://michaelcrump.net/the-magical-command-to-get-sdcard-formatted-for-fat32/). Here my commands on 
+ or follow this [tutorial](http://michaelcrump.net/the-magical-command-to-get-sdcard-formatted-for-fat32/). Here my commands on 
  my Mac.
     
 a. Retrieve the SD card mount point
@@ -130,7 +130,7 @@ e. Enable SSH
 
 In order to enable SSH, all you need to do is to put a file called ssh in the /boot/ directory.
  
- ```bash
+```bash
 cd /Volumes/boot
 ```
 ```bash
@@ -254,7 +254,7 @@ Enter new UNIX password:
 Retype new UNIX password:
 passwd: password updated successfully
 ````
-See this post in order to perform Raspbian basic administration [here]({{ site.url }}{{ site.baseurl }}/linux/setup-linux)
+See this post in order to perform Raspbian basic administration [here]({{ site.url }}{{ site.baseurl }}/raspberry/setup-linux)
 
 ### Update the Rasbpian
 
@@ -421,10 +421,10 @@ You can now unplug your ethernet wire and reboot
 sudo reboot
 ```
  
-Great !! now you can access to your Raspberry PI anywhere on your LAN with statuc IP address over Wifi or Ethernet. 
+Great !! now you can access to your Raspberry PI anywhere on your LAN with static IP address over Wifi or Ethernet. 
 
 Note: if you want to access to your Raspberry outside your LAN. You must
-forward port of your router.
+forward port on your router.
 
 Useful links: 
  - [Automatically connect a raspberry pi to a wifi network]("http://weworkweplay.com/play/automatically-connect-a-raspberry-pi-to-a-wifi-network/")
