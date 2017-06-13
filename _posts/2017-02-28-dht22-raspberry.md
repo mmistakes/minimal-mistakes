@@ -2,6 +2,7 @@
 title: "Interacting with DHT22 Sensor"
 related: true
 header:
+  image: /assets/images/caspar-rubin-224229.jpg
   overlay_image: /assets/images/caspar-rubin-224229.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
   teaser: /assets/images/caspar-rubin-224229.jpg
