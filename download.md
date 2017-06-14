@@ -16,13 +16,13 @@ Import as Maven dependency:
 <dependency>
   <groupId>org.bigiot.lib</groupId>
   <artifactId>bigiot-lib-core</artifactId>
-  <version>0.7.1</version>
+  <version>0.7.3</version>
 </dependency>
 ```
 
 Import as Gradle dependency: 
 ```xml
-compile 'org.bigiot.lib:bigiot-lib-core:0.7.1'
+compile 'org.bigiot.lib:bigiot-lib-core:0.7.3'
 ```
 
 ### Advanced Lib
@@ -34,13 +34,13 @@ Import as Maven dependency:
 <dependency>
   <groupId>org.bigiot.lib</groupId>
   <artifactId>bigiot-lib-advanced</artifactId>
-  <version>0.7.1</version>
+  <version>0.7.3</version>
 </dependency>
 ```
 
 Import as Gradle dependency:  
 ```xml
-compile 'org.bigiot.lib:bigiot-lib-advanced:0.7.1'
+compile 'org.bigiot.lib:bigiot-lib-advanced:0.7.3'
 ```
 
 ### Embedded Spark
@@ -52,13 +52,13 @@ Import as Maven dependency:
 <dependency>
   <groupId>org.bigiot.lib</groupId>
   <artifactId>bigiot-lib-embeddedspark</artifactId>
-  <version>0.7.1</version>
+  <version>0.7.3</version>
 </dependency>
 ```
 
 Import as Gradle dependency:  
 ```xml
-compile 'org.bigiot.lib:bigiot-lib-embeddedspark:0.7.1'
+compile 'org.bigiot.lib:bigiot-lib-embeddedspark:0.7.3'
 ```
 
 ### Android
@@ -70,12 +70,12 @@ Import as Maven dependency:
 <dependency>
   <groupId>org.bigiot.lib.android</groupId>
   <artifactId>bigiotlib</artifactId>
-  <version>0.7.1</version>
+  <version>0.7.2</version>
 </dependency>
 ```
 
 Import as Gradle dependency:  
 ```xml
-compile 'org.bigiot.lib.android:bigiotlib:0.7.1'
+compile 'org.bigiot.lib.android:bigiotlib:0.7.2'
 ```
 
