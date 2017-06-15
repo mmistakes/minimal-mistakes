@@ -2,6 +2,7 @@
 title: "Create a reactive weather station"
 related: true
 header:
+  image: /assets/images/jordan-ladikos-62738.jpg
   overlay_image: /assets/images/jordan-ladikos-62738.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
   teaser: /assets/images/jordan-ladikos-62738.jpg
@@ -149,7 +150,7 @@ docker-compose up -d
 
 Go to http://${YOUR_HOST}:8089
 
-[Show online version here](http://hermes.ddns.net:8089)
+[Show online version here](http://192.95.25.173:8089)
 
 ### Final Result
 
