@@ -30,7 +30,7 @@ feature_row:
   - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
     title: "Placeholder 3"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
-modified: 2016-11-15T12:11:48-05:00
+last_modified_at: 2017-05-16T11:45:00-04:00
 ---
 
 {% include toc icon="gears" title="Helpers" %}
@@ -238,7 +238,7 @@ header:
 
 ## Table of Contents
 
-To include an [auto-generated table of contents](http://kramdown.rubyforge.org/converter/html.html#toc) for posts and pages, add the following helper before any actual content in your post or page.
+To include an [auto-generated table of contents](https://kramdown.gettalong.org/converter/html.html#toc) for posts and pages, add the following helper before any actual content in your post or page.
 
 ```liquid
 {% raw %}{% include toc %}{% endraw %}
@@ -315,7 +315,7 @@ sidebar:
 **ProTip:** If you're applying the same navigation list to several pages setting it as a [Front Matter default](https://jekyllrb.com/docs/configuration/#front-matter-defaults) is the better option.
 {: .notice--info}
 
-The theme's documentation is built with the `nav_list` helper so if you'd like an example to dissect take a look at `navigation.yml`, `_config.yml` and `_doc` collection in the [`/docs/`] folder(https://github.com/{{ site.repository }}/tree/master/docs/) of this repo.
+The theme's documentation is built with the `nav_list` helper so if you'd like an example to dissect take a look at `navigation.yml`, `_config.yml` and `_doc` collection in the [`/docs/` folder](https://github.com/{{ site.repository }}/tree/master/docs/) of this repo.
 
 To add a navigation list to a post or page's main content instead of the sidebar use the include this way:
 

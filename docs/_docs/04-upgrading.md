@@ -2,7 +2,7 @@
 title: "Upgrading"
 permalink: /docs/upgrading/
 excerpt: "Instructions and suggestions for upgrading the theme."
-modified: 2016-11-03T10:16:34-04:00
+last_modified_at: 2016-11-03T10:16:34-04:00
 ---
 
 If you're using the Ruby Gem version of the theme upgrading is fairly painless.

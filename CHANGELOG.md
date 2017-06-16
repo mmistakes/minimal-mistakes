@@ -1,3 +1,51 @@
+## Unreleased
+
+### Enhancements
+
+- Add Swedish localized UI text strings. [#996](https://github.com/mmistakes/minimal-mistakes/pull/996)
+- Add Bitbucket social icon color. [#1009](https://github.com/mmistakes/minimal-mistakes/pull/1009)
+
+### Bug Fixes
+
+- Toggle close button on `mouseleave`. [#975](https://github.com/mmistakes/minimal-mistakes/issues/975)
+- Remove extraneous `</a>` and `</li>` tags from `paginator.html` include. [#1038](https://github.com/mmistakes/minimal-mistakes/pull/1038)
+
+### Maintenance
+
+- Add mention of Greek localized UI text strings to theme documentation. [#972](https://github.com/mmistakes/minimal-mistakes/pull/972)
+
+## [4.4.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.4.1)
+
+### Enhancements
+
+- Add Greek localized UI text strings. [#958](https://github.com/mmistakes/minimal-mistakes/pull/958)
+
+### Bug Fixes
+
+- Fix `video` helper to load Vimeo videos over https. [#945](https://github.com/mmistakes/minimal-mistakes/pull/945)
+- Fix close menu button that was removed when updating Greedy navigation script. [#969](https://github.com/mmistakes/minimal-mistakes/issues/969)
+
+## [4.4.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.4.0)
+
+### Enhancements
+
+- Move SCSS partials to `/_sass/minimal-mistakes` for easier CSS customization. 
+- Replace `modified` with `last_modified_at` to leverage various Jekyll plugins that utilize this variable. [#930](https://github.com/mmistakes/minimal-mistakes/pull/930)
+- Add Lithuanian localized UI text. [#924](https://github.com/mmistakes/minimal-mistakes/pull/924)
+- Improve print stylesheet by increasing text contrast, removing elements that don't need to be printed, expanding URLs, and reducing amount of blank pages. [#909](https://github.com/mmistakes/minimal-mistakes/issues/909)
+
+### Maintenance
+
+- Remove extra word in comment. [#911](https://github.com/mmistakes/minimal-mistakes/pull/911)
+- Fix typo in Utility Class docs. [#915](https://github.com/mmistakes/minimal-mistakes/pull/915)
+
+## [4.3.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.3.1)
+
+### Bug Fixes
+
+- Fix `.masthead` and `.page__footer` overlapping full screen video elements. [#933](https://github.com/mmistakes/minimal-mistakes/issues/933)
+- Correctly show Related Posts heading when UI Text data file is omitted and `related: true` in YAML Front Matter. [#901](https://github.com/mmistakes/minimal-mistakes/pull/901)
+
 ## [4.3.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.3.0)
 
 ### Enhancements

@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-modified: 2016-11-29T08:44:22-05:00
+last_modified_at: 2016-11-29T08:44:22-05:00
 ---
 
 Settings that affect your entire site can be changed in [Jekyll's configuration file](https://jekyllrb.com/docs/configuration/): `_config.yml`, found in the root of your project. If you don't have this file you'll need to copy or create one using the theme's [default `_config.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml) as a base.
@@ -280,7 +280,7 @@ atom_feed:
   path: "http://feeds.feedburner.com/youFeedname"
 ```
 
-**Note:** By default the site feed is linked in two locations: inside the [`<head>` element]({{ gh_repo }}/master/_includes/head.html) and at the bottom of every page in the [site footer](https://github.com/{{ site.repository }}/master/_includes/footer.html).
+**Note:** By default the site feed is linked in two locations: inside the [`<head>` element](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/head.html) and at the bottom of every page in the [site footer](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/footer.html).
 {: .notice--info}
 
 ### SEO, Social Sharing, and Analytics Settings

@@ -6,10 +6,10 @@
 -->
 
 - [ ] This is a question about using the theme.
-- [ ] I believe this to be a bug with the theme --- not Jekyll, GitHub Pages or one of the bundled plugins.
 - [ ] This is a feature request.
 - [ ] I have updated all gems with `bundle update`.
 - [ ] I have tested locally with `bundle exec jekyll build`.
+- [ ] I believe this to be a bug with the theme --- not Jekyll, GitHub Pages or one of the bundled plugins.
 
 ---
 
