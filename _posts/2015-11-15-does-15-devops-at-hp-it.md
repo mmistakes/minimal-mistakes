@@ -1,5 +1,5 @@
 ---
-title:  "DevOps at HP IT, DevOps Enterprise Summit 2015"
+title:  ":movie_camera: DevOps at HP IT, DevOps Enterprise Summit 2015"
 excerpt: "Experience report: almost one year in kicking off a DevOps
 transformation at HP IT."
 published: true
