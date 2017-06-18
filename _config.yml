@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Home"
+title                    : "Olivier Jacques on DevOps and ChatOps"
 title_separator          : "-"
 name                     : "Olivier Jacques"
 description              : "Projects, slides, videos, tutorials."
