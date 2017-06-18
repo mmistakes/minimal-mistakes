@@ -1,6 +1,7 @@
 ---
 title:  "ChatOps: a simple ChatBot with Hubot"
 excerpt: "After a short intro on ChatOps, let's setup our first ChatBot for DevOps, with Hubot."
+published: false
 categories:
 - blog
 tags:
