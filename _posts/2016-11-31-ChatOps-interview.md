@@ -36,7 +36,7 @@ where we discuss ChatOps.
 
 # Beyond text chat
 
-I have also been looking at piloting hubot through voice. This works quite well,
+I have also been looking at controlling hubot through voice. This works quite well,
 and definitely has a wow effect (albeit not that useful in an open space).
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Hacking to integrate <a href="https://twitter.com/hashtag/hubot?src=hash">#hubot</a>, <a href="https://twitter.com/hashtag/slack?src=hash">#slack</a> and <a href="https://twitter.com/hashtag/AmazonEcho?src=hash">#AmazonEcho</a>. Kind of fun! <a href="https://twitter.com/hashtag/chatops?src=hash">#chatops</a> <a href="https://t.co/070426v4WU">pic.twitter.com/070426v4WU</a></p>&mdash; Olivier Jacques (@ojacques2) <a href="https://twitter.com/ojacques2/status/798273792887889920">November 14, 2016</a></blockquote>
