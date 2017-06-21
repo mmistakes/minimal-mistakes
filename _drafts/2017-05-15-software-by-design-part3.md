@@ -1,11 +1,17 @@
 ---
-title: "Design for change (part 3) [draft title - need something better]"
-excerpt: "Behaviour first- Data first class"
+title: "Message in a Bottle - Software by Design in a Functional Programming World (part 3)"
+excerpt: "Good systems are like sauces, it's all in the folding and reduction"
 layout: single
 comments: true
+header:
+  overlay_image: /message-in-bottle.png
+  overlay_filter: 0.25 # same as adding an opacity of 0.5 to a black background
+  caption: "Message in a bottle"
 ---
 
-# Design for Change #
+
+
+# Message in a Bottle #
 
 
 So far in these blogs I have not mentioned where programming paradigms fit. There is a reason that imperative
@@ -222,10 +228,10 @@ original). Typically, this function takes two inputs, an accumulating 'result' a
 collection being folded over. A folding, or reducing, function takes each element, makes decisions and/or
 transformations and accumulates the result. The simplest example would be to sum up a collection of numbers.
 
-In the case of a larger component, it might be responsible for consuming, transforming each message from a stream of messages (in a
-queue or sent from another component via a synchronous mechanism like HTTP). It might then emit the resulting
-transformed message by sending it to another component for additional work. This would be synonymous with a 'map'
-function.
+In the case of a larger component, it might be responsible for consuming, transforming each message from a stream of
+messages (in a queue or sent from another component via a synchronous mechanism like HTTP). It might then emit the
+resulting transformed message by sending it to another component for additional work. This would be synonymous with a
+'map' function.
 
 Alternatively, the component might consume the messages and accumulate some result (possibly statefully in a data
 store). This would be synonymous with a 'fold' or 'reduce' function.
@@ -289,9 +295,13 @@ that logical components become easier to rewrite or replace with components that
 ### Immutable components ###
 
 Considering each component as a high level, large granularity function can also fit well with the recent concept of
-delivering code as immutable deployment units. This approach has well supported recently by technologies like Docker. If
-we consider the deployment unit as an immutable, versioned snapshot we can simplify issues like rolling back changes by
-redeploying the previous immutable version of the component.
+delivering code as immutable deployment units, although it's not a prerequisite. This approach has been well supported
+recently by technologies like Docker. If we consider the deployment unit as an immutable, versioned snapshot we can
+simplify issues like rolling back changes by redeploying the previous immutable version of the component.
+
+# Conclusions #
+
+## What about Object Oriented Programming? ##
 
 So where does this leave a paradigm like object-oriented programming? Well, if we look
 at [Alan Kay's definition of OOP](http://userpage.fu-berlin.de/~ram/pub/pub_jf47ht81Ht/doc_kay_oop_en):
@@ -302,11 +312,23 @@ at [Alan Kay's definition of OOP](http://userpage.fu-berlin.de/~ram/pub/pub_jf47
 
 this definition shares a lot of the concepts that I highlighted in deriving component design. Therefore, if we consider
 OOP as fundamentally message passing and local state this fits really well with my functional programming analogy to
-components. I think the only danger with thinking about components as OOP 'classes' is that most developers exposure to
+components.
+
+I think the only danger with thinking about components as OOP 'classes' is that most developers exposure to
 OOP is far from Smalltalk or Lisp (which is what Alan Kay had in mind). This focus on 'classes' will frequently slip
 into thinking of mutable state and deep inheritance hierarchies which can lead to muddling responsibilities and
 entangling our designs.
 
-[TODO] Write something about versioning? Reference Rich's speculation talk?
+## Consider Data in Motion ##
+
+I hope that I've given some food for thought about how to discover components in a system by looking at data but
+considering the data in motion rather than at rest. I also believe that the details of the data are less important in
+making high level decisions than the view of the data as messages flowing through a system.
+
+In this blog I've only really provided a high level sketch of how I design systems. I haven't talked much about specific
+techniques (like Domain Driven Design) or diagrams (UML, etc.) to express the mental model of the system, and that's
+deliberate. Those things are important and can be incorporated into my approach as required but I really just wanted to
+outline some ways of thinking about systems that help me. As with all things you read and try, YMMV but I hope these
+thoughts are at least of interest.
 
 [^1]: Remember not to conflate `component` and `deployment unit`. They are not synonymous.
