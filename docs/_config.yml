@@ -80,8 +80,8 @@ analytics:
 # Site Author
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
-  avatar           : "/assets/images/michael-rose.jpg"
-  bio              : "Just another boring, tattooed, time traveling, designer."
+  avatar           : "/assets/images/person.jpg"
+  bio              : ":-)"
   location         : "Buffalo, NY"
   email            :
   uri              : "https://mademistakes.com"
@@ -94,7 +94,7 @@ author:
   github           : "mmistakes"
   google_plus      :
   keybase          :
-  instagram        : "mmistakes"
+  instagram        : 
   lastfm           :
   linkedin         :
   pinterest        :
