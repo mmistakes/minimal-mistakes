@@ -3,13 +3,14 @@ title: "Message in a Bottle - Software by Design in a Functional Programming Wor
 excerpt: "Good systems are like sauces, it's all in the folding and reduction"
 layout: single
 comments: true
+read_time: true
+share: true
+related: true
 header:
   overlay_image: /message-in-bottle.png
   overlay_filter: 0.25 # same as adding an opacity of 0.5 to a black background
   caption: "Message in a bottle"
 ---
-
-
 
 # Message in a Bottle #
 
@@ -30,7 +31,7 @@ number of techniques that can be adopted to help identify where to 'cleave' a sy
 to minimise the inertia introduced by the adoption of an abstraction.
 
 I mentioned earlier that focusing on the model of the static elements of data as a data or object model in isolation
-can lead to focusing on the wrong abstraction.
+can lead to focusing on the abstractions early, before the problem space is fully understood.
 
 One technique I use to avoid this issue is rather than modelling the static view of the data, model the dynamic flow of
 the data through the system. Think about what events are raised and the actors that raise them? What transformations and
@@ -119,8 +120,6 @@ the parable of ['boiling a frog'](https://en.wikipedia.org/wiki/Boiling_frog), i
 
 Identifying the source of a message in a system is key. Especially if the source is external.
 
-[TODO] - example diagrams modelling message flow in a system.
-
 Thinking about the source of the message helps identify some major architectural characteristics.
 
 1. Timing - when and what triggers the message?
@@ -131,6 +130,8 @@ Thinking about the source of the message helps identify some major architectural
 5. Internal/External to the system context - is this source something you need to design/implement?
 6. Responsibilities - what is the 'source' of the data responsible for and what is it expecting the 'target' to be
    responsible for?
+7. Accuracy/completeness - how accurate and/or complete will the payload of the message be? Do we need to validate and
+   enhance the message from other sources?
 
 ### Message Target ###
 
@@ -139,7 +140,44 @@ give different insights into the same points as examining the message source. I 
 is particularly useful for clarifying the latency, timing and responsibilities. If you deliberately think about the
 source's expectations around latency, timing and responsibilities in isolation and then do the same for the target's
 expectations any conflicts between these two are where your architectural decisions lie. It's also useful to apply role
-playing techniques and have people play both the message source and the target.
+playing techniques and have people play both the message source and
+the target.
+
+## Message Flow ##
+
+Here is a simplistic example of how modelling messages helps to drive out possible architectures. This example is by no
+means complete or representative of a specific architecture but simply a 'straw man' for discussion.
+
+If we imagine an eCommerce system, one of the things we would need to do is capture products and prices from our
+suppliers.
+
+![image-center](/images/Architecture Blog - 16.png){: .align-center}
+
+As we can see by examining the flow of messages we are left with a number of questions around message timing, sources,
+targets, frequency, completeness, accuracy. Looking at even this simple example we have to ask:
+
+1. Have we got the initial responsibilities of the sources and targets of the messages correct?
+2. Can we determine the sequencing of messages?
+3. Have we got time sensitive messages?
+4. Does message order matter?
+5. What latency can we accept?
+6. What do we do with incomplete payloads? (Answering this in detail is dependent on message content as not all of the
+   message payload will have equal importance)
+
+Notice at this point I have made no judgements on how I might hold state (databases, etc) or even if I will need to hold
+state, let alone how I might model the message payload.
+
+By digging into these questions we might extend this initial naive model like so:
+
+![image-center](/images/Architecture Blog - 17.png){: .align-center}
+
+At this point we have firmed up the roles and responsibilities of our components a little bit but these are still
+logical components and are not in anyway representative of the deployment units we may chose. At this point we may still
+consider the system as one giant monolith or, as we break it down further, we may decide to create a number of
+microservices[^2].
+
+We still have a lot of questions about timing, latency, sensitivity to data loss, etc. but I hope this example has
+started to show how just thinking about the messages for even a few minutes starts to raise the right questions?
 
 ## Be conservative in what you do, be liberal in what you accept from others - Postel's law ##
 
@@ -148,7 +186,7 @@ system or an external actor) then the question to be asked is what to do with th
 
 In the ideal situation, where the message is completely under the control of your system, it will already be in the
 appropriate format for your component to parse and process. However, frequently the message will either be raised by an
-entity external to your system and, even when it's another system component if the calling semantics are not in-process
+entity external to your system and, even when it's another system component, if the calling semantics are not in-process
 and/or enforced by a statically checked API then your component will still need to validate the message and enforce some
 kind of 'contract' on the context and shape of the data.
 
@@ -249,7 +287,7 @@ However, we have to do this at the right level of granularity. We don't want to 
 level function. This is another reason that I leave looking at the detailed content of the messages until later in the
 design lifecycle and always bear in mind that each 'component' does not have to be separate deployment unit.
 
-By considering the messages at a larger granularity tends to allow us to imagine each component as a much higher level
+Considering the messages at a larger granularity tends to allow us to imagine each component as a much higher level
 function, for example a message could be an order, a trade, a product, or even an entire product catalogue. We should
 also group these 'functions' together based on their responsibilities, i.e. messages that may return a single product or
 multiple products would sit in the same component. However, having many messages with different contexts dealt with by
@@ -272,7 +310,7 @@ pushing these to the 'edges' of the component.
 
 If you are not familiar with functional programming this might not make much sense. Most FP languages and approaches
 tend to emphasise 'pure' functions. A 'pure' function is one that only operates on the inputs given and produces an
-output without effecting anything else.
+output without affecting anything else.
 
 This means that given the same input it will always result in the same output regardless of how often it's called. The
 implication of keeping most functions pure is that most will do no input/output or state changes.
@@ -331,4 +369,11 @@ deliberate. Those things are important and can be incorporated into my approach 
 outline some ways of thinking about systems that help me. As with all things you read and try, YMMV but I hope these
 thoughts are at least of interest.
 
-[^1]: Remember not to conflate `component` and `deployment unit`. They are not synonymous.
+[^1]: Remember not to conflate 'component' and 'deployment unit'. They are not synonymous.
+
+[^2]: You will also notice I've used a notation that bears a superficial likeness to UML but it's actually no particular
+      notation (actually in UML this would be best represented as a communication diagram with different symbols for
+      interfaces, controllers and entities). I am agnositic about notation, but I would suggest you establish a notation that
+      works for whatever your trying to convey to your audience. Adding a key to your diagrams for anything in your notation
+      that is not obvious or you want to highlight is also useful as it saves your audience having to context switch to a
+      tutorial or similar to understand your meaning.
