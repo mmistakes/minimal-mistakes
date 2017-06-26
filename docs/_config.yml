@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Minimal Mistakes"
+title                    : "Blurb"
 title_separator          : "-"
 name                     : &name "Michael Rose" # &name is a YAML anchor which can be *referenced later
-description              : &description "A flexible Jekyll theme for your blog or site with a minimalist aesthetic."
-url                      : https://mmistakes.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/minimal-mistakes" # the subpath of your site, e.g. "/blog"
-repository               : "mmistakes/minimal-mistakes"
+description              : &description "description"
+url                      : https://coliff.github.io
+baseurl                  : "/mm" # the subpath of your site, e.g. "/blog"
+repository               : ""
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -55,11 +55,11 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter "mmistakes"
-facebook:
-  username               : &facebook "michaelrose"
-  app_id                 :
-  publisher              :
+  username               : &twitter "coliff"
+#facebook:
+#  username               : &facebook "michaelrose"
+#  app_id                 :
+#  publisher              :
 og_image                 : "/assets/images/site-logo.png" # Open Graph/Twitter default site image
 # For specifying social profiles, used in _includes/seo.html
 # - https://developers.google.com/structured-data/customize/social-profiles
@@ -80,8 +80,8 @@ analytics:
 # Site Author
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
-  avatar           : "/assets/images/michael-rose.jpg"
-  bio              : "Just another boring, tattooed, time traveling, designer."
+  avatar           : "/assets/images/person.jpg"
+  bio              : ":-)"
   location         : "Buffalo, NY"
   email            :
   uri              : "https://mademistakes.com"
@@ -94,7 +94,7 @@ author:
   github           : "mmistakes"
   google_plus      :
   keybase          :
-  instagram        : "mmistakes"
+  instagram        : 
   lastfm           :
   linkedin         :
   pinterest        :
