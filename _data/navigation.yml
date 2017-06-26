@@ -1,11 +1,13 @@
 # main links
 main:
   - title: "Новини"
-    url: /news/
+    url: /
   - title: "Розклад"
     url: http://nvk125h.klasna.com/uk/site/rozklad.html
   - title: "Фінансова діяльність"
-    url: /finance/
+    url: /
+  - title: "Звіт директора"
+    url: /reports
   - title: "Онлайн реєстрація до ДНЗ"
     url: https://reg.isuo.org/preschools/view/id/40964
 

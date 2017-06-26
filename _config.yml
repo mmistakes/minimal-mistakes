@@ -6,10 +6,10 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "ru"
+locale                   : "ua"
 title                    : "НВК 125"
 title_separator          : "-"
-name                     : "Олексій"
+name                     : "НВК 125 м. Дніпро"
 description              : "Офіційний сайт НВК № 125 у м. Дніпро. Школа № 125 "
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -77,11 +77,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  name             : "Христюк Олена Георгіївна"
+  avatar           : "/assets/images/director.jpg"
+  bio              : "Директор КЗО НВК №125 ДМР"
+  location         : "м. Дніпро"
+  email            : "nvk125@dnepredu.dp.ua"
   uri              :
   bitbucket        :
   codepen          :
