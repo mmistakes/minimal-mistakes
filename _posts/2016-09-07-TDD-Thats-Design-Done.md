@@ -1,3 +1,15 @@
+---
+title: "TDD - That's Design Done"
+excerpt: "... a fine grained tool, and as such should be used where appropriate but it's not a religion."
+layout: single
+comments: true
+header:
+  overlay_image: /green-stop-light-clipart-658-traffic-light-design.png
+  overlay_filter: 0.25 # same as adding an opacity of 0.5 to a black background
+  caption: "That's design done"
+  teaser: /green-stop-light-clipart-658-traffic-light-design.png
+---
+
 # TDD - That's Design Done #
 
 For many years now there have been internet flame wars about TDD in

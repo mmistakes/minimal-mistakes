@@ -8,6 +8,7 @@ header:
   overlay_image: /early-bird.jpeg
   overlay_filter: 0.25 # same as adding an opacity of 0.5 to a black background
   caption: "Image from clipartfest.com"
+  teaser: /early-bird.jpeg
 ---
 
 

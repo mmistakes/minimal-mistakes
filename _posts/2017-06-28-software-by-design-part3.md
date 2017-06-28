@@ -10,6 +10,7 @@ header:
   overlay_image: /message-in-bottle.png
   overlay_filter: 0.25 # same as adding an opacity of 0.5 to a black background
   caption: "Message in a bottle"
+  teaser: /message-in-bottle.png
 ---
 
 # Message in a Bottle #
@@ -151,7 +152,10 @@ means complete or representative of a specific architecture but simply a 'straw 
 If we imagine an eCommerce system, one of the things we would need to do is capture products and prices from our
 suppliers.
 
-![image-center](/images/Architecture Blog - 16.png){: .align-center}
+<figure>
+	<img src="/images/Architecture Blog - 16.png">
+	<figcaption>Initial message flow - eCommerce products population.</figcaption>
+</figure>
 
 As we can see by examining the flow of messages we are left with a number of questions around message timing, sources,
 targets, frequency, completeness, accuracy. Looking at even this simple example we have to ask:
@@ -169,7 +173,10 @@ state, let alone how I might model the message payload.
 
 By digging into these questions we might extend this initial naive model like so:
 
-![image-center](/images/Architecture Blog - 17.png){: .align-center}
+<figure>
+	<img src="/images/Architecture Blog - 17.png">
+	<figcaption>Enhanced message flow - eCommerce products population.</figcaption>
+</figure>
 
 At this point we have firmed up the roles and responsibilities of our components a little bit but these are still
 logical components and are not in anyway representative of the deployment units we may chose. At this point we may still
@@ -322,6 +329,11 @@ Of course in reality some functions will have side effects but by keeping most p
 these functions will gravitate towards the 'edges' of the system. If we imaging the functions in a component as a chain
 of 'boxes' that take a message and output another altered message, the function at the 'start' of that chain has to
 accept input and the function at the 'end' of that chain produces some output.
+
+<figure>
+	<img src="/images/Architecture Blog - 18.png">
+	<figcaption>Side effects at the edges.</figcaption>
+</figure>
 
 So thinking about each component as a function with side effects at the input and output 'edges' again supports
 composing components. This means that we can deploy several 'components' composed together in a single deployment unit

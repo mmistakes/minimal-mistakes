@@ -13,8 +13,10 @@ permalink: /blog/
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts }}</h3>
 
+<div class="grid-wrapper">
 {% for post in site.posts %}
-  {% include archive-single.html %}
+  {% include archive-single.html type="grid" %}
 {% endfor %}
+</div>
 
 {% include paginator.html %}

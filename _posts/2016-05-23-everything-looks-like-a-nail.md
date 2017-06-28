@@ -1,8 +1,13 @@
 ---
 title: "Everything looks like a nail"
-excerpt: "Every thing looks like a nail"
+excerpt: "Everything looks like a nail"
 layout: single
 comments: true
+header:
+  overlay_image: /hammer.jpg
+  overlay_filter: 0.25 # same as adding an opacity of 0.5 to a black background
+  caption: "Everything looks like a nail"
+  teaser: /hammer.jpg
 ---
 
 I have been involved in recruiting for technical positions for over 20 years for various organisations, also as a consultant and independent contractor I have been on the other side of the fence as an applicant to countless roles in different organisations.  Given this experience I want to briefly talk about one of the strongest anti-patterns I see in recruiting for technical roles - narrow overly-focused job specifications.
