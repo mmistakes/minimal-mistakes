@@ -9,7 +9,8 @@ minimal_mistakes_skin    : "default" # "air", "contrast", "dark", "dirt", "mint"
 
 # Site Settings
 locale                   : "ua"
-title                    : "НВК 125"
+logo_name                : "НВК 125"
+title                    : "Офіційний сайт НВК № 125 у м. Дніпро"
 title_separator          : "-"
 name                     : "Офіційний сайт НВК № 125 у м. Дніпро. Школа № 125 КЗО “Навчально-виховний комплекс"
 description              : "Офіційний сайт НВК № 125 у м. Дніпро. Школа № 125 "

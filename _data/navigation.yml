@@ -24,7 +24,7 @@ sidebar-menu:
         url: /docs/upgrading/
 
   - title: Звіти директора
-    url: /yoyoyo
+    url: /reports
 
   - title: Управління
     children:
