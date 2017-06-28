@@ -1,11 +1,11 @@
 # main links
 main:
   - title: "Новини"
-    url: /
+    url: /news
   - title: "Розклад"
-    url: http://nvk125h.klasna.com/uk/site/rozklad.html
+    url: http://mz.com.ua/diary/schedule?class_id=4682569
   - title: "Фінансова діяльність"
-    url: /
+    url: /finance
   - title: "Звіт директора"
     url: /reports
   - title: "Онлайн реєстрація до ДНЗ"
