@@ -18,8 +18,7 @@ The objective of this tutorial is to create and control a sprinkler system with 
 
 - [Hydraulic part](#hydraulic-part)
     - [Zones definition](#zones-definition)
-    
-
+   
 - [Prerequisites](#prerequisites)
 - [Hydraulic](#hydraulic-wiring)
   - [Zones](#hydraulic-wiring)
@@ -52,7 +51,7 @@ Important: Separate drop by drop irrigation and lawn irrigation.
 
 Note: I used [draw.io](https://www.draw.io) to create the plan below.
 
-{% include figure image_path="/assets/images/sprinkler_plan_masse.png" alt="Final result" caption="Zones" %}
+{% include figure image_path="/assets/images/sprinkler_plan_masse.png" alt="Ground plan" caption="Zones" %}
 
 | Zone        | Description           | Diameter (mm) | Surface  | Turbine
 | ------------- |:-------------:| ------| ------| -----:|
@@ -61,18 +60,6 @@ Note: I used [draw.io](https://www.draw.io) to create the plan below.
 | C | Lawn irrigation  | 25 | ? | 4 |
 | D | Lawn irrigation  | 25 | ? | 3 |
 | E | Drop by drop irrigation  | 16 | ? | - |
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ### Prerequisites
@@ -132,7 +119,7 @@ Hydraulic components
 
 ### Hydraulic wiring
 
-1. Calcul du débit
+1. Water inflow level
 
 TODO
 
@@ -151,39 +138,42 @@ TODO
 
 3. Network
 
-At first, you need to locate your water mains inlet. 
+- Locate your water mains inlet
 
-Vous devez d'abord identifier où se trouve votre ou vos arrivée(s) d'eau. C'est là que votre
-regard avec les électrovannes devra se trouver. Ensuite tout le réseau sera établi à partir de se point
-de départ
-Le but est d'optimiser le tracer pour utiliser le moins possible de tuyau. De plus,
-il est judicieux de longer au maximum les murs. Il sera plus facile d'intervenir pour faire de la
-maintenance. Alors que si le réseau en plein milieu du terrain il faudra creuser dans votre beau
-gazon... 
-Les turbines doivent se trouver en priorité dans les coins afin d'optimiser la couverture d'arrosage.
-ex: photo couverture de hunter
-Le tuyau 16mm flex permmettra de déporter les turbines aux bons endroits à partir du réseau principal
-25mm.
-Type de turbine rainbird 3500 spécification. 
-Schéma de couverture
+- Define valves box location
 
-Dans mon réseau j'ai ajouté un réseau 25mm pour alimenter une douche solaire pour la piscine.
+This location must be strategic to optimize pipe length and pressure loss.
 
-{% include figure image_path="/assets/images/sprinkler_plan_masse_hydro_schema.png" alt="Final result" caption="Network" %}
+- Place your rotors
+
+Rotors must be place at first in the corner of each zone.
+
+{% include figure image_path="/assets/images/sprinkler/rotors_coverage.gif" alt="Rotors coverage" caption="Rotors coverage" %}
+
+-  Place your main network (25mm pipe) as closely as possible to rotors.
+
+You can follow your house wall in order to facilitate the maintenance.
+
+- Place your secondary network (16mm pipe) to join main network and rotors.
+
+You can adjust easily the secondary network with flexible pipe (16mm)
+
+Sprinkler hydraulic plan
+
+{% include figure image_path="/assets/images/sprinkler_plan_masse_hydro_schema.png" alt="Sprinkler hydraulic plan" caption="Sprinkler hydraulic plan" %}
 
 4. Dig trenches
 
-- Création des tranchée de 25cm de profondeur sur 20cm
+- Dig trenches:  25cm depth and 20cm wide.
 
+- Roll out and cut the pipe. Leave a margin in order to join easily connectors.
 
-Dérouler et couper le tuyau grossièremment afin d'avoir de la marge pour faire les raccords de jonction
-
-Outillage:
-- Pioche ou trancheuse
-- 1 bèche
-- Cutter
-- 1 mètre
-- 1 cordo
+Tools:
+- Pickaxe
+- Spade
+- Stanley knife
+- Tape
+- Guiding line
 
 Materiel
 
@@ -197,18 +187,17 @@ Materiel
 
 5. Wire valves box
 
-Outillage:
-- Pioche
-- 1 bèche
-- Cutter
-- 1 mètre
+Tools:
+- Pickaxe
+- Spade
+- Stanley knife
+- Tape
 
-Le regard doit se trouver au plus près de l'arrivée d'eau afin de perdre le moins de pression possible.
-Creuser un trou très large afin d'avoir une facilité d'accès pour vos réglages.
-Installer un lit de cailloux au fond voir photo ci-dessous. Cela permettra d'avoir une installation
-saine pour les électrovannes. En effet, il y aura forcément des pertes d'eau donc si vous êtes au 
-contact de la terre cela se transformera en bout.
-Découper les emplacements en plastique où vous souhaitez faire passer vos sorties des EV.
+- Dig a large hole in order to easily working.
+
+- Create a bed of pebbles for stability and avoiding mud after water leak.
+
+- Cut out the plastic entrance for each valves.
 
 | Photo        | Description           | 
 | ------------- |:-------------:|
@@ -218,19 +207,21 @@ Découper les emplacements en plastique où vous souhaitez faire passer vos sort
 
 6. Water main supply
 
-Outillage:
-- Clé à molette
-- Ruban
-- Cutter
+Now the valves box installed, we can connect to the water supply.
 
+In my case, I had planned a 25mm pipe under my house to join directly my garden. So I just added
+a brass union to join the water supply with my 1/4 turn gate.
 
-Maintenant que le regard est installé, nous pouvons faire venir l'arrivée d'eau à l'intérieur.
-J'avais prévu une tuyau 25mm passant sous ma maison qui arrive directement au regard. Il me suffit
-de rajouter un raccord en laiton avec un peu de tuyau 25mm pour rejoindre le regard et enfin
-de mettre une vanne. J'ai choisi une vanne 1/4 de tour pour plus de faciliter d'accès. J'ai une autre
-vanne dans mon garage qui contrôle ce réseau ce qui me permet de pouvoir couper directement. Utile
-pour l'hiver car comme cela pas d'eau sous la maison qui pourrait geler.
+Tools:
+- Wrench
+- Teflon tape
+- Stanley knife
 
+Note: 
+
+- I also another 1/4 turn gate in my garage in order to turn off easily in each side. Useful to avoid water pipe
+freezes.
+ 
 
 | Photo        | Description           | 
 | ------------- |:-------------:|
@@ -245,17 +236,23 @@ pour l'hiver car comme cela pas d'eau sous la maison qui pourrait geler.
 
 7. Valves
 
-Pour installer les électrovannes il va falloir un peu de réflexion afin de pouvoir tout faire passer.
-Chaque projet aura donc un ajustement différent voici ce que j'ai utilisé.
-Comme vous pouvez le constater j'ai une vanne en plus qui me permet d'alimenter ma douche solaire.
-De plus j'ai prévu une sortie pour un manomètre utile pour controler la pression du réseau mais
-cela est facultatif. Dans mon cas j'ai du faire un montage sur 2 étages afin que tout passe dans 
-mon regard prévu pour 5 EV.
+Each project will be different according to your number of valves, the location, the valves box... 
+So you need to pay attention to design your installation.
+In my case, I designed with 2 floors in order to install: 5 valves, 2 gates and 1 manometers. 
 
-Mettre du ruban sur tous les taraudages qui ne contiennent pas de joint.
+Note: 
 
-Chaque electrovanne on un raccord compression pour rejoindre le tuyau du réseau principal 25mm.
-Un réducteur de pression est utilisé pour le réseau goutte à goute qui repare en 16mm
+- Put teflon on each threading which don't contain any seal.
+
+- Every valves are compression connector to join the main network (25mm).
+
+- A pressure reducing is used for drop by drop network (16mm).
+
+- I added another 1/4 gate for supplying my solar shower.
+
+- I added a manometer to control the network pressure.
+
+- Don't forget to keep few space for the electrical part.
 
 | Photo        | Description           | 
 | ------------- |:-------------:|
@@ -303,35 +300,10 @@ Un réducteur de pression est utilisé pour le réseau goutte à goute qui repar
 | ![Réduction de pression](/assets/images/sprinkler/barrette_12_dominos_2.5mm_Legrand.jpg){:height="48px" width="96px"}  | Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars | 
 | ![Réduction de pression](/assets/images/sprinkler/tuyau_polyethylene_16mm_25m.jpg){:height="48px" width="96px"}  | Tuyau polyethylène 25mm 25m HD 6BarsTuyau polyethylène 25mm 25m HD 6Bars | 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                          
             
-
-                  
-                  
-                          
 {% include figure image_path="/assets/images/sprinkler/valves.jpg" alt="Valves" caption="Valves" %}
 
-6. Wire des tuyaux, des coudes, des té et Rotors
+6. Wire pipes, elbows, tees et rotors
 
 
 | Component        | Quantity           | Price  |
@@ -344,125 +316,212 @@ Un réducteur de pression est utilisé pour le réseau goutte à goute qui repar
 
 {% include figure image_path="/assets/images/sprinkler/rotors.JPG" alt="Rotors" caption="Rotors" %}
 
-7. Raccordement électrique
+7. Electrical connection
 
-- il faut tout d'abord amener l'électricité jusqu'au regard. comme vous pouvez le constater
-sur la photo j'ai une gaine qui passe sous ma maison. Cette gaine arrive directement à mon tableau électrique.
-J'y fais passer un câble multi-conducteur 7 brins. 
-j'utilise des boitiers de dérivation pour protéger les parties sensibles de la pluie.
-voir photo
+- Join electrical box to valves boxes with 7 multi-conductor wire
+
+- Install one distribution box at the entrance of the valves box.
+
  
-Outillage:
-- Tournevis d'électricien
-- pince coupante
-- pince à dénuder
+Tools:
+- Electrical screwdriver
+- Wire cutter
+- Wire stripper
 
 Materiel:
-- dominos
-- boitier de dérivation
-- raccord séries
-
+- Domino bar
+- Distribution box
+- Compact Splicing Connectors
 
 {% include figure image_path="/assets/images/sprinkler/sprinkler_electric_part.png" alt="Sprinkler electric part" caption="Sprinkler electric part" %}
 
 {% include figure image_path="/assets/images/sprinkler/valves_box_final.jpg" alt="Valves box final" caption="Valves box final" %}
 
-11. Raccordement au relay
+11. Relay connection (Power electronics)
 
-Côté puissance.
+- Connect power supply to solenoid valve 24V.
 
 Materiel:
-- Transformateur 220/24
-- Relay
-
-Les EV sont une solenoïde 24V. J'ai donc un transformateur 220/24V
+- Transformer 220V AC/24V AC
+- Relay AC 250V 10A ; DC 30V 10A
 
 
-12. Branchement du relay avec le Raspberry
+12. Connect relay with Raspberry PI (Control electronics)
 
-côté commande
+- Each relay are supplied in 3.3V via Raspberry PI.
  
-Les relays sont alimentés en 5V via le Raspberry PI et un GPIO est associé à une input d'un relay
-
-Materiel:
+Tools:
 - 1 Raspberry
 
 13. Control valves with Raspberry PI
 
-Maintenant que le câblage la partie commande et puissance sont établis nous pouvons controler les EV via le Raspberry PI.
-Etant donné q'un GPIO commande un relay, nous pouvons par impulsion activer ou désactiver une EV. Pour ce faire
-j'ai écrit un progamme en python qui permet de piloter les GPIO
+{% include figure image_path="/assets/images/sprinkler/electronic_part.jpg" alt="Electronic part" caption="Electronic part" %}
+
 
 - Prerequisites
+
 Setup raspberry 
 install python
 git
 
+
 ```python
 #!/usr/bin/python
 import RPi.GPIO as GPIO
+import argparse
+import sys
 
+GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD)
 
-relayIO = { "1": 15, "2": 16, "3": 17, "4": 18, "5": 19}
+# GPIO/BOARD | Relay IN | Rotors | Zone
+# 22/15	     | R2 IN2   | 1      | B
+# 18/12	     | R1 IN2   | 2      | A
+# 24/18	     | R1 IN3   | 3      | D
+# 17/11	     | R1 IN4   | 4      | C
+# 27/13	     | R2 IN1   | 5      | E
 
-def setState(relay, state):
-	GPIO.output(relayIO[relay], state)
+class RelayControl(object):
 
-	if getState(relay) != state:
-		print("relay: " + relay + "is not set to " + state)
+	def set(self):
+		parser = argparse.ArgumentParser(
+		    description='Set relay state high=1 or low=0')
 
-	print("relay: " + relay + "is set to " + getState(relay))
+		parser.add_argument('--relay', help='Set relay 1/2/3/4/5 or *', required=False)
+		parser.add_argument('--state',help='Set state high=1 or low=0', required=False)
 
-def getState(relay):
-	return GPIO.input(relayIO[relay])
+		args = parser.parse_args(sys.argv[2:])
 
-def main():
+		if args.relay:
+			print 'Set relay=%(0)s to state=%(1)s' % { '0' : args.relay, '1' : args.state }
+			GPIO.setup(self.relayIO[args.relay], GPIO.OUT)
+			GPIO.output(self.relayIO[args.relay], int(args.state))       
+			GPIO.cleanup()
+		else:
+			print 'Set all relay to state=%s' % args.state
+			self.setAll(args.state)
+			
+	def toggle(self):
+		parser = argparse.ArgumentParser(
+		    description='Toggle relay value')
 
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--relay', help='Set relay 1/2/3/4/5', required=True)
-    parser.add_argument('--state',help='Set state high=1 or low=0', required=True)
+		parser.add_argument('--relay', help='Set relay 1/2/3/4/5', required=False)
 
-    args = parser.parse_args()
+		args = parser.parse_args(sys.argv[2:])
+		print 'Toggle relay=%s' % args.relay
 
-    setState(args.relay, args.state)
+		GPIO.setup(self.relayIO[args.relay], GPIO.OUT)
+		GPIO.output(self.relayIO[args.relay], not GPIO.input(self.relayIO[args.relay]))
+		GPIO.cleanup()
 
+	def get(self):
+		parser = argparse.ArgumentParser(
+		    description='Set relay state high=1 or low=0')
+
+		parser.add_argument('--relay', help='Set relay 1/2/3/4/5 or *', required=False)
+
+		args = parser.parse_args(sys.argv[2:])
+
+		if args.relay:
+			print 'Get relay=%s' % args.relay
+			GPIO.setup(self.relayIO[args.relay], GPIO.OUT)
+			print 'state=' + str(GPIO.input(int(self.relayIO[args.relay])))
+			GPIO.cleanup()
+		else:
+			print 'Get all relay state'
+			print 'states=' + str(self.getAll())
+
+	def getAll(self):
+		chan_list = []
+		state_list = []
+		for relay in self.relayIO:
+			chan_list.append(self.relayIO[relay])
+		GPIO.setup(chan_list, GPIO.OUT)
+		for relay in self.relayIO:
+			state_list.append(GPIO.input(int(self.relayIO[relay])))
+		GPIO.cleanup()
+		return state_list
+
+	def setAll(self, state):
+		chan_list = []
+		for relay in self.relayIO:
+			chan_list.append(self.relayIO[relay])
+		GPIO.setup(chan_list, GPIO.OUT)
+		GPIO.output(chan_list, int(state))
+		GPIO.cleanup()
+
+	def __init__(self):
+		
+		self.relayIO = { "1": 15, "2": 12, "3": 18, "4": 11, "5": 13}
+		
+		parser = argparse.ArgumentParser(
+		    description='Relay control',
+		    usage='''relay <command> [<args>]
+		The most commonly used relay commands are:
+		   set     Set relay value high or low
+		   get     Get relay value high or low
+		   toggle  Toggle relay value
+		''')
+		parser.add_argument('command', help='Subcommand to run')
+		# parse_args defaults to [1:] for args, but you need to
+		# exclude the rest of the args too, or validation will fail
+		args = parser.parse_args(sys.argv[1:2])
+		if not hasattr(self, args.command):
+		    print 'Unrecognized command'
+		    parser.print_help()
+		    exit(1)
+		# use dispatch pattern to invoke method with same name
+		getattr(self, args.command)()
+	
 if __name__ == '__main__':
-    main()
+    RelayControl()
 ```
 
-
-
-En exécutant la commande suivante on ouvre la vanne 1 
+Get state of each valve
 
 ```python
-python control_relay.py 1 1
+python relay_control.py get
 ```
 
+Get state of specific valve
 
-14. Installation de l'écran
+```python
+python relay_control.py get --relay 1
+```
 
-Maintenant que nous avons un programme qui permet de piloter les EV. Nous allons pouvoir créer une IHM plus sexy.
-L'idée est de pouvoir encastrer le raspberry PI dans un tableau avec un écran tactile.
+Set state of specific valve
 
-Materiel:
-- Un écran
-- Un boitier tableau electric
+```python
+python relay_control.py set --relay 1 --state 1
+```
+
+Set state of each valve
+
+```python
+python relay_control.py set --state 1
+```
+
+Toggle state of specific valve
+
+```python
+python relay_control.py toggle --relay 1
+```
+
+14. Display
+
+Tools:
+- Display
+- Electrical box
 
 
-15. Installation du boitier électric
+15. Set up electrical box
 
-Actuellement le raspberry est actuellement alimenté par une prise standard. L'idée est de pouvoir l'incorporer
-directement au tableau avec un disjonteur.
+- Replace power outlet by circuit breaker.
 
-- disjoncteur din ??
+Tools:
+- circuit breaker Din rail
 
-16. Développement du logiciel en mode manuel kivy
-
-Kivy est un framework multi plateforme écrit en python. J'ai fait ce choix car il est
-multi-plateforme ce qui permettra de piloter le programme via l'écran tactile ou
-depuis mon smartphone
-
+16. Create multi-plateform IHM with Kivy
 
 ### Install Kivy
 
