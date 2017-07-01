@@ -181,7 +181,7 @@ By digging into these questions we might extend this initial naive model like so
 At this point we have firmed up the roles and responsibilities of our components a little bit but these are still
 logical components and are not in anyway representative of the deployment units we may chose. At this point we may still
 consider the system as one giant monolith or, as we break it down further, we may decide to create a number of
-microservices[^2].
+microservices[^1].
 
 We still have a lot of questions about timing, latency, sensitivity to data loss, etc. but I hope this example has
 started to show how just thinking about the messages for even a few minutes starts to raise the right questions?
@@ -213,7 +213,7 @@ at the point of reception by your component.
 At this point it's worth a quick sidebar on the subject of logging. In the case of logging events raised internally by
 your system adopting a standardised approach and format to your log messages makes it much easier to automate searching
 and parsing of the messages once
-collected. [See David Humphreys talk on logging](https://skillsmatter.com/skillscasts/9155-log-all-the-things) for some
+collected. [See David Humphrey's talk on logging](https://skillsmatter.com/skillscasts/9155-log-all-the-things) for some
 pointers on how to log within an application or service.
 
 However, I am talking about logging the message at the boundaries of the component. In this context we want to maintain
@@ -264,7 +264,7 @@ messages transforming them or folds over (or reduces) the stream of messages to 
 
 If you are not familiar with functional programming paradigms that previous paragraph warrants some explanation.
 
-'Mapping' over a collection is the concept of applying a function to each element of the collection in turn emiting a
+'Mapping' over a collection is the concept of applying a function to each element of the collection in turn emitting a
 new transformed element to a new collection.
 
 Whereas a 'fold' is the concept of applying a function over each element in
@@ -298,7 +298,7 @@ Considering the messages at a larger granularity tends to allow us to imagine ea
 function, for example a message could be an order, a trade, a product, or even an entire product catalogue. We should
 also group these 'functions' together based on their responsibilities, i.e. messages that may return a single product or
 multiple products would sit in the same component. However, having many messages with different contexts dealt with by
-the same component may be warning sign that this is actually more than one component[^1].
+the same component may be warning sign that this is actually more than one component[^2].
 
 ### Composable/Decomposable Components ###
 
@@ -381,11 +381,11 @@ deliberate. Those things are important and can be incorporated into my approach 
 outline some ways of thinking about systems that help me. As with all things you read and try, YMMV but I hope these
 thoughts are at least of interest.
 
-[^1]: Remember not to conflate 'component' and 'deployment unit'. They are not synonymous.
-
-[^2]: You will also notice I've used a notation that bears a superficial likeness to UML but it's actually no particular
+[^1]: You will also notice I've used a notation that bears a superficial likeness to UML but it's actually no particular
       notation (actually in UML this would be best represented as a communication diagram with different symbols for
-      interfaces, controllers and entities). I am agnositic about notation, but I would suggest you establish a notation that
-      works for whatever your trying to convey to your audience. Adding a key to your diagrams for anything in your notation
+      interfaces, controllers and entities). I am agnostic about notation, but I would suggest you establish a notation that
+      works for whatever you're trying to convey to your audience. Adding a key to your diagrams for anything in your notation
       that is not obvious or you want to highlight is also useful as it saves your audience having to context switch to a
       tutorial or similar to understand your meaning.
+
+[^2]: Remember not to conflate 'component' and 'deployment unit'. They are not synonymous.
