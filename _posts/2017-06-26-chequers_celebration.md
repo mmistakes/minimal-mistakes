@@ -1,9 +1,7 @@
---- 
-layout: post
-title: "Celebrating at Chequers"
-date: 2017-06-26 20:30
-categories: ["Chequers Pub"]
-tags: ["Dan", "Lee", "Tristan", "Ben"]
-location: "Chequers, High street, Oxford, UK"
---- 
-To celebrate the monetary award for my research project I went to Chequers with those still left in Oxford. I paid for an uncharicteristic round in celebration, with Lee inevitably buying my second in celebration also. We spent the evening discussing our secondary schools and the differences between the state schools of Dan, Lee, Ben and myself and Tristan's RGS and Eton.
+---
+title: "Page A"
+permalink: /page-a/
+date: 2011-06-23T18:38:52+00:00
+---
+
+Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
