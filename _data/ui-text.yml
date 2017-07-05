@@ -708,6 +708,51 @@ sv-SE:
   <<: *DEFAULT_SV
 sv-FI:
   <<: *DEFAULT_SV
+ 
+# Dutch
+# -----------------
+nl: &DEFAULT_NL
+  page                       : "Pagina"
+  pagination_previous        : "Vorige"
+  pagination_next            : "Volgende"
+  breadcrumb_home_label      : "Home"
+  breadcrumb_separator       : "/"
+  menu_label                 : "Wissel Menu"
+  toc_label                  : "Op deze pagina"
+  ext_link_label             : "Directe Link"
+  less_than                  : "minder dan"
+  minute_read                : "minuut gelezen"
+  share_on_label             : "Deel op"
+  meta_label                 :
+  tags_label                 : "Labels:"
+  categories_label           : "Categorieën:"
+  date_label                 : "Bijgewerkt:"
+  comments_label             : "Laat een reactie achter"
+  comments_title             : "Commentaren"
+  more_label                 : "Meer informatie"
+  related_label              : "Bekijk ook eens"
+  follow_label               : "Volg:"
+  feed_label                 : "Feed"
+  powered_by                 : "Aangedreven door"
+  website_label              : "Website"
+  email_label                : "Email"
+  recent_posts               : "Recente berichten"
+  undefined_wpm              : "Niet gedefinieerde parameter words_per_minute bij _config.yml"
+  comment_form_info          : "Uw e-mailadres wordt niet gepubliceerd. Verplichte velden zijn gemarkeerd"
+  comment_form_comment_label : "Commentaar"
+  comment_form_md_info       : "Markdown wordt ondersteund."
+  comment_form_name_label    : "Naam"
+  comment_form_email_label   : "E-mailadres"
+  comment_form_website_label : "Website (optioneel)"
+  comment_btn_submit         : "Commentaar toevoegen"
+  comment_btn_submitted      : "Toegevoegd"
+  comment_success_msg        : "Bedankt voor uw reactie! Het zal op de site worden weergegeven zodra het is goedgekeurd."
+  comment_error_msg          : "Sorry, er is een fout opgetreden bij uw inzending. Zorg ervoor dat alle vereiste velden zijn voltooid en probeer het opnieuw."
+  loading_label              : "Laden..."
+nl-BE:
+  <<: *DEFAULT_NL
+nl-NL:
+  <<: *DEFAULT_NL
 
 # Another locale
 # --------------
