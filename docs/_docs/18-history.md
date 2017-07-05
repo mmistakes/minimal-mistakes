@@ -23,6 +23,7 @@ last_modified_at: 2017-07-05T12:09:11-04:00
 ### Maintenance
 
 - Add mention of Greek localized UI text strings to theme documentation. [#972](https://github.com/mmistakes/minimal-mistakes/pull/972)
+- Update Greek localized UI text strings. [#1054](https://github.com/mmistakes/minimal-mistakes/pull/1054)
 
 ## [4.4.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.4.1)
 
