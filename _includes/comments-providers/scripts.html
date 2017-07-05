@@ -7,8 +7,11 @@
   {% include /comments-providers/discourse.html %}
 {% when "facebook" %}
   {% include /comments-providers/facebook.html %}
+{% comment %}
+<!--Google-plus comments are handled on _includes/comments.html-->
 {% when "google-plus" %}
   {% include /comments-providers/google-plus.html %}
+{% endcomment %}
 {% when "staticman" %}
   {% include /comments-providers/staticman.html %}
 {% when "custom" %}
