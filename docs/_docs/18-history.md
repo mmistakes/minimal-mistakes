@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-07-05T12:09:11-04:00
+last_modified_at: 2017-07-05T12:26:23-04:00
 ---
 
 ## Unreleased
@@ -14,6 +14,7 @@ last_modified_at: 2017-07-05T12:09:11-04:00
 - Add Swedish localized UI text strings. [#996](https://github.com/mmistakes/minimal-mistakes/pull/996)
 - Add Dutch localized UI text strings. [#1081](https://github.com/mmistakes/minimal-mistakes/pull/1081)
 - Add Bitbucket social icon color. [#1009](https://github.com/mmistakes/minimal-mistakes/pull/1009)
+- Add GitLab to author sidebar. [#1050](https://github.com/mmistakes/minimal-mistakes/pull/1050)
 
 ### Bug Fixes
 
