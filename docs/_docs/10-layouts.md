@@ -7,7 +7,7 @@ single_layout_gallery:
     alt: "single layout with header example"
   - image_path: /assets/images/mm-layout-single-meta.png
     alt: "single layout with comments and related posts"
-last_modified_at: 2017-02-24T15:23:34-05:00
+last_modified_at: 2017-07-05T15:41:36-04:00
 ---
 
 {% include toc icon="columns" title="Included Layouts" %}
@@ -149,6 +149,13 @@ To produce something like this:
   <img src="{{ '/assets/images/mm-archive-grid-view-example.jpg' | absolute_url }}" alt="archive grid view example">
   <figcaption>Grid view example.</figcaption>
 </figure>
+
+Teaser images are assigned similar to header images using the following YAML Front Matter:
+
+```yaml
+header:
+  teaser: path-to-teaser-image.jpg
+```
 
 **Note:** More information on using this `_include` can be found under [**Helpers**]({{ "/docs/helpers/" | absolute_url }}).
 {: .notice--info}
