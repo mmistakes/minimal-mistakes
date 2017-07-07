@@ -1,7 +1,7 @@
 ---
 title: "Markup: Syntax Highlighting"
 excerpt: "Post displaying the various ways of highlighting code in Markdown."
-last_modified_at: 2016-09-09T09:55:10-04:00
+last_modified_at: 2017-07-07T15:32:43-04:00
 header:
   teaser: "assets/images/markup-syntax-highlighting-teaser.jpg"
 tags: 
@@ -98,4 +98,4 @@ Indentation matters. Be sure the indent of the code block aligns with the first 
 
 An example of a Gist embed below.
 
-{% gist mmistakes/6589546 %}
+<script src="https://gist.github.com/mmistakes/77c68fbb07731a456805a7b473f47841.js"></script>
