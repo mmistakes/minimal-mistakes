@@ -754,6 +754,49 @@ nl-BE:
 nl-NL:
   <<: *DEFAULT_NL
 
+# Indonesian
+# -----------------
+id: &DEFAULT_ID
+  page                       : "Halaman"
+  pagination_previous        : "Kembali"
+  pagination_next            : "Maju"
+  breadcrumb_home_label      : "Home"
+  breadcrumb_separator       : "/"
+  menu_label                 : "Menu Toggle"
+  toc_label                  : "Pada Halaman Ini"
+  ext_link_label             : "Link langsung"
+  less_than                  : "Kurang dari"
+  minute_read                : "Waktu baca"
+  share_on_label             : "Berbagi di"
+  meta_label                 :
+  tags_label                 : "Golongan:"
+  categories_label           : "Kategori:"
+  date_label                 : "Diupdate:"
+  comments_label             : "Tinggalkan komentar"
+  comments_title             : "Komentar"
+  more_label                 : "Pelajari lagi"
+  related_label              : "Anda juga akan suka"
+  follow_label               : "Ikuti:"
+  feed_label                 : "Feed"
+  powered_by                 : "Didukung oleh"
+  website_label              : "Website"
+  email_label                : "Email"
+  recent_posts               : "Posting terbaru"
+  undefined_wpm              : "Parameter terdeskripsi words_per_minute di _config.yml"
+  comment_form_info          : "Email Anda tidak akan dipublish. Kolom yang diperlukan ditandai"
+  comment_form_comment_label : "Komentar"
+  comment_form_md_info       : "Markdown disupport."
+  comment_form_name_label    : "Nama"
+  comment_form_email_label   : "Alamat email"
+  comment_form_website_label : "Website (opsional)"
+  comment_btn_submit         : "Submit Komentar"
+  comment_btn_submitted      : "Telah disubmit"
+  comment_success_msg        : "Terimakasih atas komentar Anda! Komentar ini akan tampil setelah disetujui."
+  comment_error_msg          : "Maaf, ada kesalahan pada submisi Anda. Pastikan seluruh kolom sudah dilengkapi dan coba kembali."
+  loading_label              : "Sedang meload..."
+id-ID:
+  <<: *DEFAULT_ID
+
 # Another locale
 # --------------
 #
