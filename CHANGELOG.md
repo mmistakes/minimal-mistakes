@@ -2,8 +2,7 @@
 
 ### Enhancements
 
-- Add Swedish localized UI text strings. [#996](https://github.com/mmistakes/minimal-mistakes/pull/996)
-- Add Dutch localized UI text strings. [#1081](https://github.com/mmistakes/minimal-mistakes/pull/1081)
+- Add Swedish, Dutch, and Indonesian localized UI text strings. [#996](https://github.com/mmistakes/minimal-mistakes/pull/996) [#1081](https://github.com/mmistakes/minimal-mistakes/pull/1081) [#1101](https://github.com/mmistakes/minimal-mistakes/pull/1101)
 - Add Bitbucket social icon color. [#1009](https://github.com/mmistakes/minimal-mistakes/pull/1009)
 - Add GitLab to author sidebar. [#1050](https://github.com/mmistakes/minimal-mistakes/pull/1050)
 
