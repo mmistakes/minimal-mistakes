@@ -100,7 +100,7 @@ about in earlier posts - the early imposition of canonical data models being pri
 So, how exactly do you design a system without considering a data store as a starting point?
 
 It comes back to modelling the 'flow of data' rather than modelling the data as a detached separate concept. If we look
-at the messages that are required for a system to carry out it's requirements we can model several things.
+at the messages that are required for a system to carry out its requirements we can model several things.
 
 ### Message Content ###
 
@@ -326,7 +326,7 @@ This may seem fairly useless at first thought. If a component is unable to accep
 be able to do anything.
 
 Of course in reality some functions will have side effects but by keeping most pure (only dependent on their inputs)
-these functions will gravitate towards the 'edges' of the system. If we imaging the functions in a component as a chain
+these functions will gravitate towards the 'edges' of the system. If we imagine the functions in a component as a chain
 of 'boxes' that take a message and output another altered message, the function at the 'start' of that chain has to
 accept input and the function at the 'end' of that chain produces some output.
 
