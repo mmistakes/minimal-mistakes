@@ -34,6 +34,8 @@ You guessed it, [hlint](https://github.com/ndmitchell/hlint). Introducing [dange
 
 Here is an example of Danger controlling [hlintBot and commenting on a pull request](https://github.com/blender/Rome/pull/83).
 
+![](http://i.imgur.com/vSBiErs.png)
+
 # danger-hlint
 
 [danger-hlint](https://github.com/blender/danger-hlint) is plugin for Danger and ruby gem. The core of `danger-hlint` is the [lint](https://github.com/blender/danger-hlint/blob/master/lib/hlint/plugin.rb#L31)
