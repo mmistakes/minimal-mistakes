@@ -184,7 +184,7 @@ timezone: "Asia/Taipei" # http://en.wikipedia.org/wiki/List_of_tz_database_time_
 
 
 # Plugins (previously gems:)
-plugins:
+plugins_dir:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
