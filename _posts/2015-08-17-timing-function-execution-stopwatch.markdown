@@ -5,8 +5,6 @@ date: 2015-08-17T23:01:45+02:00
 categories: ios
 tags: [ios, objective-c, cocoa, cocoa-touch, foundation, swift, stopwatch]
 comments: true
-image:
-  feature: timing-with-stopwatch.jpg
 ---
 
 When writing software it always good practice to keep an eye on how much resources will be used by our code at run time.
@@ -15,7 +13,7 @@ Resources are for example time, memory, disks space, battery power etc. etc.
 Measuring resource usage at run time is called __Profiling__. Specifically in this article I will be addressing __Time Profiling__.
 
 If you work on Apple platforms you should be familiar with Instruments. The __Time Profiler__ within Instruments is
-at your disposal to help you analyze where your application is spending most of it's cpu time and eliminate bottlenecks. 
+at your disposal to help you analyze where your application is spending most of it's cpu time and eliminate bottlenecks.
 
 In this article however I will not be dealing with the Time Profiler at all. An overview tutorial on how to use
 the Time Profiler is available here: [iOS SDK: Time Profiling with Instruments](http://code.tutsplus.com/tutorials/ios-sdk-time-profiling-with-instruments--mobile-9403).
@@ -23,7 +21,7 @@ the Time Profiler is available here: [iOS SDK: Time Profiling with Instruments](
 Instead I will present a quicker solution to answer the question: _"How long will this take?"_.
 This solution can be used while developing (e.g. for sanity checks) or if you need a permanent log every time your code runs (e.g. in debug builds).
 
-The basic functionality needed to time the execution of a certain piece of code is very similar to the one of a stop watch. 
+The basic functionality needed to time the execution of a certain piece of code is very similar to the one of a stop watch.
 
 ##Replicating a Stop Watch
 
@@ -40,7 +38,7 @@ Some stop watches allow you to start an stop multiple timers, which translates t
 That looks pretty simple and should be enough to help us answer our _"How long will this take?"_ question.
 
 However we can keep thing even more
-simple, and avoid dealing with timers all together. We're instead just going to log the start/stop time of an event. 
+simple, and avoid dealing with timers all together. We're instead just going to log the start/stop time of an event.
 This will be the base for our stop watch.
 
 In code it will look as follows:
@@ -57,8 +55,8 @@ StopWatch.stopEvent("important function")
 
 ### A Stop Watch Event
 
-Since we're going to base our timing on measuring the difference between start/stop time of an event, it's pretty clear that 
-we need to have at least 2 properties in our ``StopWatchEvent`` class. 
+Since we're going to base our timing on measuring the difference between start/stop time of an event, it's pretty clear that
+we need to have at least 2 properties in our ``StopWatchEvent`` class.
 
 * A start time
 * A stop time
@@ -72,7 +70,7 @@ stop watch event.
 {% highlight swift %}
 
 public enum StopWatchEventState: Int {
-    
+
     case Undefined = 0
     case Started
     case Stopped
@@ -96,11 +94,11 @@ At the bare minimum our StopWatch class is going to look as follows:
 public class StopWatch {
 
     private (set) public var events = [String:StopWatchEvent]()    
-    
+
     public func startEvent(name:String) -> StopWatchEvent {
         //TODO
     }
-    
+
     public func stopEvent(name:String) -> StopWatchEvent? {
         //TODO
     }

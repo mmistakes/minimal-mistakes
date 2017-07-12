@@ -3,8 +3,6 @@ layout: post
 title: "Debugging Carthage Dependencies"
 categories: ios
 tags: [ios, carthage, swift]
-image:
-  feature: debugging-carthage-dependencies.jpg
 date: 2016-12-07T00:22:27+01:00
 comments: true
 ---

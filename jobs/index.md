@@ -3,12 +3,10 @@ layout: page
 title: Jobs
 tags: [jobs, hire, work]
 modified: 2015-11-03T15:45:00+01:00
-image:
-  feature: jobs.jpg
 ---
 
 
-Want to work with me at my current position at [Sharecare](https://www.sharecare.com)? 
+Want to work with me at my current position at [Sharecare](https://www.sharecare.com)?
 
 
 Check out the positions below and don't hesitate to get in touch with me via my contacs on the left.
@@ -19,12 +17,12 @@ Check out the positions below and don't hesitate to get in touch with me via my 
 
 
 # Senior iOS Mobile Developer
- 
+
 For our rapidly growing R&D Center in __Berlin, Germany__ we are looking for a __Senior iOS Developer__.
- 
-## Area of responsibility 
-The iOS Developer will be responsible for programming mobile applications  and SDK for the iOS platform. 
- 
+
+## Area of responsibility
+The iOS Developer will be responsible for programming mobile applications  and SDK for the iOS platform.
+
 ## Duties and Functions
 
 The candidate will be tasked with:
@@ -34,33 +32,33 @@ The candidate will be tasked with:
 - Documentation solutions when required
 - Debug, profile and optimize code
 - Write unit tests
-- Work in an extreme programming, scrum methodologies. 
+- Work in an extreme programming, scrum methodologies.
 - Managed by client apps manager
 - Integrate 3rd party components
 - Deployment to app store
- 
+
 ## Requirements
 - At least 4 years experience developing native iOS apps
 - Fluent in English
 - Fluent in Objective-C
 - Object oriented programming
- 
+
 ## Knowledge and Experience
 - Familiarity with AppStore app submission process
 - Thorough knowledge of Objective-C, Swift ( advantage) and Cocoa Touch
-- Familiarity with Functional and Reactive Programming is a plus 
+- Familiarity with Functional and Reactive Programming is a plus
 - Advantages: Server side development, Android or Web development
-- Advantages: iWatch development 
+- Advantages: iWatch development
 - Full control using OSX, Git , XCode , XCTest
 - Strong UI/UX orientation
 - Experience in Client server architecture and web paradigma
 
-#Senior  Android Developer 
+#Senior  Android Developer
 For our rapidly growing R&D Center in __Berlin, Germany__ we are looking for an Android Developer.
- 
-## Area of responsibility 
-The developer will be directly responsible for the design and implementation of the company's Android SDK and flagship app. 
- 
+
+## Area of responsibility
+The developer will be directly responsible for the design and implementation of the company's Android SDK and flagship app.
+
 ## Duties and Functions
 The candidate will be tasked with:
 
@@ -69,33 +67,33 @@ The candidate will be tasked with:
 - Documentation solutions when required
 - Debug, profile and optimize code
 - Write unit tests
-- Work in an extreme programming, scrum methodologies. 
+- Work in an extreme programming, scrum methodologies.
 - Integrate 3rd party components
 - Deployment to Play Store
 
 ## Requirements
 - At least 4 years experience developing native Android apps
-- Fluent in English 
-- Object oriented programming,  design patterns , etc 
+- Fluent in English
+- Object oriented programming,  design patterns , etc
 
 ## Knowledge and Experience
-- Understanding of sensor , audio , video technologies in the android platform 
-- Understanding of low level hooks to the android OS 
+- Understanding of sensor , audio , video technologies in the android platform
+- Understanding of low level hooks to the android OS
 - Familiarity with Google Play Store and app submission process
 - Thorough knowledge of Java, Android SDK, Android NDK
 - Advantages: Server side development, iOS development
 - Git, JUnit, IntelliJ
 - Strong UI/UX orientation
 - Experience in client server architecture and web paradigma
- 
+
 
 # Senior Backend Developer (Java)
 
 For our rapidly growing R&D Center in __Berlin, Germany__ we are looking for a Senior Backend Developer (Java).
- 
-## Area of responsibility 
-The developer will be responsible for programming our Java server platform. 
- 
+
+## Area of responsibility
+The developer will be responsible for programming our Java server platform.
+
 ## Duties and Functions
 The candidate will be tasked with:
 
@@ -107,11 +105,11 @@ The candidate will be tasked with:
 - Troubleshoot downtime and high-scale performance issues
 - Support systems integration, monitoring and stability
 - Document important processes , knowledge
- 
+
 ## Requirements
-- At least 8 years experience developing server 
+- At least 8 years experience developing server
 - Fluent in English
- 
+
 ## Knowledge and Experience
 - Profound OOP methodologies, web technologies guru
 - Java 8, Spring MVC, JUnit, JMeter, Maven, Gradle
@@ -119,9 +117,9 @@ The candidate will be tasked with:
 - IntelliJ IDEA, Git, Jenkins, Unix, Bash
 - AWS, EC2, ELB, S3, ElastiCache
 - Autodidact, fast learner
-- Writing unit tests 
-- Technical documentation 
-- Software modeling techniques 
+- Writing unit tests
+- Technical documentation
+- Software modeling techniques
 
 ## Advantages
 - Native mobile development (iOS / Android)

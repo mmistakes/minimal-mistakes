@@ -5,13 +5,11 @@ date:   2015-07-26 00:00:00
 categories: ios
 tags: [ios, objective-c, cocoa, cocoa-touch, foundation, swift]
 comments: true
-image:
-  feature: nsdata-deadbeef.jpg
 ---
 
-It is sometimes useful to get a hexadecimal string representation of the contents of NSData just the way they are stored in memory. 
+It is sometimes useful to get a hexadecimal string representation of the contents of NSData just the way they are stored in memory.
 This is the case, for example, when you want to communicate to your backend service the value of the push token assigned to your device by
-Apple's Push Notifications Services. 
+Apple's Push Notifications Services.
 
 If your push token is stored in memory as _0xDEADBEEF_, then the string "deadbeef" is exactly what you
 want to send to your backend service.
@@ -24,17 +22,17 @@ func dataToHexString(data:NSData) -> String{
 
     let pointer = UnsafePointer<UInt8>(data.bytes)
     let count = data.length
-    
+
     // Get our buffer pointer and make an array out of it
     let buffer = UnsafeBufferPointer<UInt8>(start:pointer, count:count)
     let array = [UInt8](buffer)
-    
+
     let pushToken = reduce(array, "") { (s:String, int:UInt8) -> String in
-        
+
         let chars = String(format:"%02x", int)
         return s.stringByAppendingString(String(chars))
     }
-    
+
     return pushToken
 }
 
@@ -50,7 +48,7 @@ In Swift:
 {% highlight swift %}
 
 if let data = "Hello".dataUsingEncoding(NSUTF8StringEncoding) {
-    
+
     let string = NSString(data: data!, encoding: NSUTF8StringEncoding)
 }
 

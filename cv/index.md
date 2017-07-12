@@ -3,8 +3,6 @@ layout: page
 title: My Curriculum Vitae
 modified: 2014-07-31T13:23:02.362000-04:00
 excerpt: "Tommaso Piazza's CV. iOS and OSX Developer"
-image:
-  feature: curriculum.jpg
 ---
 
 {% include _toc.html %}
@@ -31,7 +29,7 @@ My list of competences include:
 </figure>
 
 
-[Feingold Technologies](http://www.feingoldtech.net/en/) makes the technology that keeps 
+[Feingold Technologies](http://www.feingoldtech.net/en/) makes the technology that keeps
 [Sharecare](https://www.sharecare.com/) a leading company in the e-Health market.
 
 ### My role in Sharecare
@@ -64,16 +62,16 @@ To sum up, my responsibilities at Wire:
 * Development, testing and maintenance of the iOS client.
 * Development, testing and maintenance of the OSX client.
 * Development and maintenance of build machines, build pipeline and build tools.
-* Defining and structuring of functionalities throughout the whole technological stack. 
+* Defining and structuring of functionalities throughout the whole technological stack.
 * Work with designers, stake holder and other technical teams to define and implement features.
 
 Technologies & Processes:
 
 * UIKit, Core Animation, Core Graphics, Core Data, Core Audio, Autolayout, AVFoundation
-* Objective-C, Swift, Python, Haskell, Bash 
+* Objective-C, Swift, Python, Haskell, Bash
 * JSON, YAML, REST
 * Amazon AWS, Github, Git, Jenkins, Gitflow
-* Scrum, Agile, Pair-Programming, TDD, Jira 
+* Scrum, Agile, Pair-Programming, TDD, Jira
 
 
 
@@ -87,8 +85,8 @@ In 2012 I joined [Wooga](https://wooga.com) to help make millions of players enj
 
 ### Pearl's Peril
 
-[Pearl's Peril](http://www.wooga.com/games/pearlsperil/) is a hidden object game played by over 25 million players. Week by week, unlock fresh adventures and new stories. From the bottom of the Pacific to the top of the Eiffel Tower, revisit the golden age of exploration and get swept away on a truly thrilling adventure. 
-Challenge your friends with weekly score competitions, build your own fantastic island and become a super sleuth. With hundreds of beautiful hidden object scenes for you to discover, thousands of items to find, and a huge array of puzzles to complete, you’ll have the time of your life with Pearl’s Peril. 
+[Pearl's Peril](http://www.wooga.com/games/pearlsperil/) is a hidden object game played by over 25 million players. Week by week, unlock fresh adventures and new stories. From the bottom of the Pacific to the top of the Eiffel Tower, revisit the golden age of exploration and get swept away on a truly thrilling adventure.
+Challenge your friends with weekly score competitions, build your own fantastic island and become a super sleuth. With hundreds of beautiful hidden object scenes for you to discover, thousands of items to find, and a huge array of puzzles to complete, you’ll have the time of your life with Pearl’s Peril.
 
 <figure class="half">
     <img src="/images/wooga/wooga-pp-1.jpeg"></a>
@@ -99,7 +97,7 @@ Challenge your friends with weekly score competitions, build your own fantastic 
 #### My role on Peal's Peril
 Working in a mixed competence team of about 30 people, I developed the [iOS version](https://itunes.apple.com/en/app/pearls-peril/id594802437?mt=8) of Pearl’s Peril, an hidden object game with episodic content.   
 
-On a everyday basis I collaborated with other front-end and back-end engineers to deliver the best technical quality and user experience for social games on the iOS platform. 
+On a everyday basis I collaborated with other front-end and back-end engineers to deliver the best technical quality and user experience for social games on the iOS platform.
 
 My responsibilities:
 
@@ -107,7 +105,7 @@ My responsibilities:
 * Giving technical feedback to game designers and product owners
 * Integrate the work of game artists into the game.
 
-Adopting an agile work flow, I worked on a number of different features of the game. I have implemented parts of the core game loop, including the city builder mechanics and hidden object scenes, as well as the network engine, the Downloadable Content (DLC) subsystem, the sound engine, and various parts of the user interface. 
+Adopting an agile work flow, I worked on a number of different features of the game. I have implemented parts of the core game loop, including the city builder mechanics and hidden object scenes, as well as the network engine, the Downloadable Content (DLC) subsystem, the sound engine, and various parts of the user interface.
 
 The content intensive project has posed several challenges on the technical side originating both from targeting multiple resolution devices as well as keeping the DLC and app bundle size to the minimum.
 
@@ -115,10 +113,10 @@ The content intensive project has posed several challenges on the technical side
 Technologies & Processes:
 
 * UIKit, Core Animation, Core Graphics, Core Data, Core Audio, Autolayout, AVFoundation, Cocos 2D
-* Objective-C, Bash 
+* Objective-C, Bash
 * JSON, REST
 * Amazon AWS, Github, Git, Jenkins,
-* Scrum, Agile, Pair-Programming, Jira 
+* Scrum, Agile, Pair-Programming, Jira
 
 
 
@@ -147,7 +145,7 @@ Technologies:
 
 Durated is a e-commerce platform with an ethical twist. Sellers share trough the application how their products are made and how they come to market. Durated promotes positive change in retail by revealing the bigger picture. By telling the stories of the people and processes involved in crafting our carefully curated selection, Durates wants to empower customers with deeper knowledge and connection to the brands and objects customers invest in.
 
-For Durated I developed the iPad prototype application for the 2013 [Berlin Fashion Week](http://www.fashion-week-berlin.com/en.html) 
+For Durated I developed the iPad prototype application for the 2013 [Berlin Fashion Week](http://www.fashion-week-berlin.com/en.html)
 
 <figure class="half">
     <img src="/images/durated/durated-proto-1.jpg">
@@ -158,7 +156,7 @@ For Durated I developed the iPad prototype application for the 2013 [Berlin Fash
 Technologies:
 
 * UIKit, Core Animation, Core Graphics, Core Data
-* Objective-C 
+* Objective-C
 * JSON, REST
 
 

@@ -13,7 +13,7 @@ highlighter: rouge
 sass:
   sass_dir: _sass
   style: compressed
-gems:
+pugins:
   - jekyll-sitemap
 
 theme: minimal-mistakes-jekyll

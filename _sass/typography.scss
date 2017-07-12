@@ -132,6 +132,7 @@ blockquote {
 
 p {
 	margin: 0 0 $indent-var;
+	@include font(18);
 	// sibling indentation
   @if $paragraph-indent == true {
     & + p {
@@ -151,7 +152,7 @@ tt, code, kbd, samp, pre {
 p,
 li {
 	code {
-		@include font-rem(12);
+		@include font-rem(14);
 		line-height: 1.5;
 		white-space: nowrap;
 		margin: 0 2px;
@@ -162,7 +163,7 @@ li {
 	}
 }
 pre {
-	@include font-rem(12);
+	@include font-rem(14);
 	line-height: 1.5;
 	overflow-x: auto;
 }
