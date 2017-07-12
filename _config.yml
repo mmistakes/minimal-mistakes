@@ -7,20 +7,20 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "My Post University Life"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+name                     : "Shin-Fu Wu"
+description              : "This blog is the record of my life after receiving my master's degree. Mostly, it's about me, holding my diploma, crying alone ..."
+url                      : "https://KodeWorker.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "/blog" # the subpath of your site, e.g. "/blog"
+repository               : "KodeWorker/MyPostUniversityLife" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "kodeworker" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -55,9 +55,9 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "TWtalks"
 facebook:
-  username               :
+  username               : "KWbuster"
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
@@ -67,7 +67,12 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-
+    - "https://github.com/KodeWorker"
+    - "https://www.facebook.com/KWbuster"
+    - "https://twitter.com/kwtalks"
+    - "https://instagram.com/KWbuster"
+    - "https://www.linkedin.com/in/shin-fu-wu-875089114/"
+    - "https://plus.google.com/108553769535652392779"
 # Analytics
 analytics:
   provider               : false # false (default), "google", "google-universal", "custom"
@@ -77,23 +82,23 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  name             : "Shin-Fu Wu"
+  avatar           : "/assets/image/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "I am currently working on intelligent manufacturing systems in CITC, ITRI. I enjoy reading/writing and learning new skills. I also invested most of my free time in my small code projects."
+  location         : "Hsinchu, Taiwan"
+  email            : "fxp61005@gmail.com"
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "KWbuster"
   foursquare       :
-  github           :
+  github           : "KodeWorker"
   gitlab           :
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "KWbuster"
   lastfm           :
   linkedin         :
   pinterest        :
@@ -101,7 +106,7 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "KWTalks"
   vine             :
   weibo            :
   xing             :
@@ -175,7 +180,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: "Asia/Taipei" # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
