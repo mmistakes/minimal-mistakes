@@ -1,3 +1,9 @@
+## Unreleased
+
+### Enhancements
+
+- Add scrollbar to sidebars with overflowing content that extends outside the viewport's height. [#706](https://github.com/mmistakes/minimal-mistakes/issues/706)
+
 ## [4.4.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.4.2)
 
 ### Enhancements

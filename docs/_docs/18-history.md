@@ -4,8 +4,14 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-07-07T15:45:45-04:00
+last_modified_at: 2017-07-12T11:57:08-04:00
 ---
+
+## Unreleased
+
+### Enhancements
+
+- Add scrollbar to sidebars with overflowing content that extends outside the viewport's height. [#706](https://github.com/mmistakes/minimal-mistakes/issues/706)
 
 ## [4.4.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.4.2)
 
