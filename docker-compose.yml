@@ -1,5 +1,5 @@
 jekyll:
-  image: jekyll/jekyll:3.5.0
+  image: ytoku/m3:3.5.0
   volumes:
     - ".:/srv/jekyll"
   ports:
