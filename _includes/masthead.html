@@ -3,7 +3,7 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         <a class="site-title" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
-        <ul class="visible-links">
+<!--        <ul class="visible-links">
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
@@ -12,7 +12,7 @@
             {% endif %}
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
-        </ul>
+</ul> -->
         <button><div class="navicon"></div></button>
         <ul class="hidden-links hidden"></ul>
       </nav>
