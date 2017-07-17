@@ -180,7 +180,7 @@ timezone: # "America/Chicago" # http://en.wikipedia.org/wiki/List_of_tz_database
 
 
 # Plugins (previously gems:)
-plugins:
+plugins_dir:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
