@@ -134,7 +134,7 @@ In order to enable SSH, all you need to do is to put a file called ssh in the /b
 cd /Volumes/boot
 ```
 ```bash
-boot touch ssh
+touch ssh
 ```
 
 See more [here](https://www.raspberrypi.org/blog/a-security-update-for-raspbian-pixel/)
