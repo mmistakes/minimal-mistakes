@@ -55,10 +55,10 @@ Note: I used [draw.io](https://www.draw.io) to create the plan below.
 
 | Zone        | Description           | Diameter (mm) | Surface  | Turbine
 | ------------- |:-------------:| ------| ------| -----:|
-| A | Lawn irrigation  | 25 | ? | 2 |
-| B | Lawn irrigation  | 25 | ? | 4 |
-| C | Lawn irrigation  | 25 | ? | 4 |
-| D | Lawn irrigation  | 25 | ? | 3 |
+| A | Lawn irrigation  | 25 | 21.5m2 | 2 |
+| B | Lawn irrigation  | 25 | 76m2 | 4 |
+| C | Lawn irrigation  | 25 | 45m2 | 4 |
+| D | Lawn irrigation  | 25 | 45m2 | 3 |
 | E | Drop by drop irrigation  | 16 | ? | - |
 
 
