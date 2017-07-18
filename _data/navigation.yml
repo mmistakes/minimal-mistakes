@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "Home"
-    url: https://rellimmot.github.io/home/
+    url: /pages/home/
   - title: "Ditto"
     url: https://www.youtube.com/watch?v=ODKTITUPusM
   # - title: "About"
@@ -13,10 +13,10 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
   - title: "Posts"
-    url: https://rellimmot.github.io/posts/
+    url: /year-archive/
   - title: "Portfolio"
-    url: https://rellimmot.github.io/portfolio/
+    url: /portfolio/
   - title: "About"
-    url: https://rellimmot.github.io/about/
+    url: /about/
   - title: "Contact"
-    url: https://rellimmot.github.io/contact/
+    url: /contact/
