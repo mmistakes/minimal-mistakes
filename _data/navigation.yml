@@ -10,3 +10,5 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+  - title: "Posts"
+    url: https://rellimmot.github.io/posts/
