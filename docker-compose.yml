@@ -4,4 +4,4 @@ jekyll:
     - ".:/srv/jekyll"
   ports:
     - "4000:4000"
-  command: jekyll serve --watch --incremental
+  command: jekyll serve --unpublished --watch --incremental
