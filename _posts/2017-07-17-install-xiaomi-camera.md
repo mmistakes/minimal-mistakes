@@ -6,20 +6,34 @@ header:
   overlay_image: /assets/images/ben-moore-101.jpg
   teaser: /assets/images/ben-moore-101.jpg
 categories:
-  - Raspberry
+  - Computer
 tags:
-  - Raspberry PI
   - Linux
   - SSH
 ---
 The objective of this tutorial is to set up a Xiaomi Camera 
 
 - [Prerequisites](#prerequisites)
+- [Hacking](#hacking)
+    - [flashing](#flashing)
+    - [qr](#qr)
+- [Synology Surveillance](#synology_surveillance)
+
+### Prerequisites
+
+- Components < 60 EUR:
+
+| Component        | Site           | Price  |
+| ------------- |:-------------:| -----:|
+| Xiaomi XiaoFang Camera IP   | [Gearbest](http://www.gearbest.com/blog/how-to/ap-mode-to-connect-xiaomi-1080p-smart-ip-camera-to-phone-1323) | 37.69 EUR |
+| Micro SD Card (32 Go class 10)  | [Amazon](https://www.amazon.com) | 9.99 EUR |
+| Total: |      |    56.67 EUR |
+
 
 
 http://rostylesbonstuyaux.fr/tuto-jeedom-camera-ip-xiaomi-xiaofang-1080p/
 
-http://www.gearbest.com/blog/how-to/ap-mode-to-connect-xiaomi-1080p-smart-ip-camera-to-phone-1323
+
 
 
 
@@ -80,3 +94,51 @@ Nmap done: 256 IP addresses (6 hosts up) scanned in 2.69 seconds
 ```
 
 http://192.168.0.18/cgi-bin/hello.cgi
+
+set static ip on specific mac address on your router 
+
+not update the firmware otherwise downgrade it
+
+https://ahkhai.com/tag/surveillance-station/
+
+https://miui-france.org/threads/utilisation-de-la-xiaomi-smart-camera-avec-synology.22774/
+
+Known issue https
+
+https://home-assistant.io/components/camera.synology/
+
+sudo vim /volume1/@appstore/SurveillanceStation/device_pack/camera_support/Xiaomi.conf
+
+```bash
+[Xiaomi*XiaoFang]
+api = custom
+default_fps_h264_1920×1080 = 10
+default_image-quality = 5
+h264 = rtsp
+mpeg4 = rtsp
+mjpeg = rtsp
+motion = h264,mpeg4,mjpeg
+motion_param = sensitivity,threshold
+rtsp_keepalive = none
+rtsp_protocol = auto,udp,tcp
+resolutions_mjpeg = 1280x720,1920×1080
+resolutions_mpeg4 = 1280x720,1920×1080
+resolutions_h264 = 1280x720,1920×1080
+fps_mjpeg_[1280x720,1920×1080] = 5,10,15,20,25,30
+fps_mpeg4_[1280x720,1920×1080] = 5,10,15,20,25,30
+fps_h264_[1280x720,1920×1080] = 5,10,15,20,25,30
+audio_format = G726,PCM
+default_audio_format = PCM
+```
+
+
+http://www.gearbest.com/ip-cameras/pp_487830.html
+
+
+ sudo vim /volume1/document/SSCamExport_export-xiaomi/.ExpCam
+
+refresh before import 
+
+path = '/unicast'
+live_path = '/unicast'
+http://www.androidpimp.com/home-security-cameras/xiaomi-xiaofang-review
