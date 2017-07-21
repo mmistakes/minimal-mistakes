@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-07-21T16:25:27-04:00
+last_modified_at: 2017-07-21T16:31:48-04:00
 ---
 
 ## Unreleased
@@ -12,7 +12,7 @@ last_modified_at: 2017-07-21T16:25:27-04:00
 ### Enhancements
 
 - Add scrollbar to sidebars with overflowing content that extends outside the viewport's height. [#706](https://github.com/mmistakes/minimal-mistakes/issues/706)
-- Add missing Spanish UI text strings. [#1118]
+- Add missing Spanish UI text strings. [#1118](https://github.com/mmistakes/minimal-mistakes/pull/1118)
 - Update Susy to version 3 and rewrite grid CSS to be more readable.
 
 ### Bug Fixes

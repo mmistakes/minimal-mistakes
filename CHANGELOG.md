@@ -3,7 +3,7 @@
 ### Enhancements
 
 - Add scrollbar to sidebars with overflowing content that extends outside the viewport's height. [#706](https://github.com/mmistakes/minimal-mistakes/issues/706)
-- Add missing Spanish UI text strings. [#1118]
+- Add missing Spanish UI text strings. [#1118](https://github.com/mmistakes/minimal-mistakes/pull/1118)
 - Update Susy to version 3 and rewrite grid CSS to be more readable.
 
 ### Bug Fixes
