@@ -92,6 +92,7 @@ author:
   facebook         : *facebook
   foursquare       :
   github           : "mmistakes"
+  gitlab           :
   google_plus      :
   keybase          :
   instagram        : "mmistakes"
@@ -195,7 +196,7 @@ defaults:
       related: true
   # _pages
   - scope:
-      path: ""
+      path: "_pages"
       type: pages
     values:
       layout: single

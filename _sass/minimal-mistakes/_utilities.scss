@@ -191,6 +191,11 @@ body:hover .visually-hidden button {
     color: $behance-color;
   }
 
+  .fa-bitbucket,
+  .fa-bitbucket-square {
+    color: $bitbucket-color;
+  }
+
   .fa-dribbble {
     color: $dribbble-color;
   }
@@ -483,7 +488,7 @@ a.reversefootnote {
 
 /*
    Responsive Video Embed
-      ========================================================================== */
+   ========================================================================== */
 
 .responsive-video-container {
   position: relative;
@@ -504,3 +509,10 @@ a.reversefootnote {
   }
 }
 
+// full screen video fixes
+:-webkit-full-screen-ancestor {
+   .masthead,
+   .page__footer {
+    position: static;
+  }
+}

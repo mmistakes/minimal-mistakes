@@ -68,6 +68,7 @@ $info-color                 : #52adc8 !default;
 
 /* brands */
 $behance-color              : #1769FF !default;
+$bitbucket-color            : #205081 !default;
 $dribbble-color             : #ea4c89 !default;
 $facebook-color             : #3b5998 !default;
 $flickr-color               : #ff0084 !default;
@@ -95,7 +96,7 @@ $link-color-hover           : mix(#000, $link-color, 25%) !default;
 $link-color-visited         : mix(#fff, $link-color, 25%) !default;
 $masthead-link-color        : $primary-color !default;
 $masthead-link-color-hover  : mix(#000, $primary-color, 25%) !default;
-
+$navicon-link-color-hover   : mix(#fff, $primary-color, 75%) !default;
 
 /*
    Breakpoints
