@@ -1,6 +1,10 @@
 # main links links
 main:
-  - title: "ABOUT"
-    url: /about/
-  - title: "The archive"
-    url: /year-archive/
+#  - title: "ABOUT"
+#    url: /about/
+
+  - title: "TIME ARCHIVE"
+    url: /time-archive/
+
+  - title: "TAG ARCHIVE"
+    url: /tag-archive/
