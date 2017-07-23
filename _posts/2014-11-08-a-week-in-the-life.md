@@ -5,7 +5,7 @@ tags:
   - industry
   - research
   - academia
-  - PhD
+  - phd
   - work
 excerpt: My first week of work in the industry after transitioning from academia
 ---

@@ -3,7 +3,7 @@ title: "Crossing the barriers: my personal path through science"
 tags:
   - science
   - research
-  - PhD
+  - phd
   - life
 excerpt: My path through science and crossing disciplines boundaries
 ---

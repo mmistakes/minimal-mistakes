@@ -5,7 +5,7 @@ tags:
   - data-science
   - linguistics
   - words
-  - PhD
+  - phd
   - research
 excerpt: Data visualisation over the text of my PhD thesis on language evolution
 ---
