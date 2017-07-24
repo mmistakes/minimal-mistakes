@@ -45,7 +45,11 @@
       {% endif %}
     </div>
   {% else %}
+    {% if page.header.image_description %}
+    <img src="{{ img_path }}" alt="{{ page.header.image_description }}" class="page__hero-image">
+    {% else %}
     <img src="{{ img_path }}" alt="{{ page.title }}" class="page__hero-image">
+    {% endif %}
   {% endif %}
   {% if page.header.caption %}
     <span class="page__hero-caption">{{ page.header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
