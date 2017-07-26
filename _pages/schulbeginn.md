@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Schulbeginn"
-permalink: /schulstart/
+permalink: /schulbeginn/
 author_profile: false
 excerpt: "Alles Wichtige zur Einschulung und zum Schulstart"
 modified: 2017-03-07T10:55:00+01:00
@@ -130,11 +130,3 @@ in unserem Sekretariat abholen oder direkt hier herunterladen und ausfüllen.<br
 [<i class="fa fa-external-link">&nbsp;&nbsp;</i>Formularseite](https://www.berlin.de/sen/bjf/service/formulare/#hort){: .btn .btn--info}
 [<i class="fa fa-download">&nbsp;&nbsp;</i>Formular für die Hortbetreuung von Schulanfänger*innen](https://www.berlin.de/sen/bjf/service/formulare/antrag_auf_erganzende_forderung_und_betreuung_jahrgangsstufen_1_bis_4.pdf){: .btn .btn--success}
 {: .notice--info}
-
----
-
-**TODO:** \\
-Die Seite wurde am Beispiel dieser Grundschule,
-[die ein Schulanfänger Konzept](http://www.gs-am-hügel.de/paegogische-konzepte/einschulung-als-prozess.html) und
-[ein Fahrplan für die Eltern](http://www.gs-am-hügel.de/hinweise-zum-schulanfang/index.html) haben.
-{: .notice--warning}
