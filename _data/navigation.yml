@@ -26,7 +26,7 @@ ags:
     url: '/ags/#floeten_ag'
   - title: "<i class='fa'>🎹</i> AG Klavier"
     url: '/ags/#klavier_ag'
-  - title: "<i class='fa'> 🎸 </i> AG Gitarre"
+  - title: "<i class='fa'>🎸</i> AG Gitarre"
     url: '/ags/#gitarre_ag'
   - title: "<i class='fa'>♚</i> AG Schach"
     url: '/ags/#schach_ag'

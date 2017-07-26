@@ -20,6 +20,7 @@ können. Vor allem die Kursgebühren können sich ändern.
 {: .notice--warning}
 
 # Kursangebote im Schuljahr 2017/18
+{: #toc}
 
 <table>
   <thead>
@@ -36,19 +37,28 @@ können. Vor allem die Kursgebühren können sich ändern.
     </tr>
     <tr>
       <td>12:45 - 15:30</td>
-      <td>Flöten<br><i>Frau Bölke</i></td>
+      <td>
+        <a href="#floeten_ag"><i class="fa fa-music">&nbsp;</i>Flöten</a><br>
+        <i>Frau Bölke</i>
+      </td>
       <td>1 - 6</td>
       <td>Aula</td>
     </tr>
     <tr>
       <td>13:40 - 14:25</td>
-      <td>Englisch für Kids (Stufe I)<br>Frau Eumann</td>
+      <td>
+        <a href="#englisch_ag"><i class='fa fa-gbp'>&nbsp;</i>Englisch für Kids (Stufe I)</a><br>
+        <i>Frau Eumann</i>
+      </td>
       <td>1 - 2</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
       <td>14:35 - 15:20</td>
-      <td>Englisch für Kids (Stufe II)<br>Frau Eumann</td>
+      <td>
+        <a href="#englisch_ag"><i class='fa fa-gbp'>&nbsp;</i>Englisch für Kids (Stufe II)</a><br>
+        <i>Frau Eumann</i>
+      </td>
       <td>1 - 2</td>
       <td>&nbsp;</td>
     </tr>
@@ -57,25 +67,39 @@ können. Vor allem die Kursgebühren können sich ändern.
     </tr>
     <tr>
       <td>13:15 - 14:00</td>
-      <td>Basteln<br>Frau Bölke</td>
+      <td>
+        <a href="#basteln_ag"><i class='fa fa-paper-plane'>&nbsp;</i>Basteln</a><br>
+        <i>Frau Bölke</i>
+      </td>
       <td>1 - 2</td>
-      <td>Werkst.</td>
+      <td>Werkraum</td>
     </tr>
     <tr>
       <td>13:30 - 15:00</td>
-      <td>Gitarrenunterricht<br>Frau Findeisen</td>
+      <td>
+        <a href="#gitarre_ag"><i class='fa'>🎸&nbsp;</i>Gitarrenunterricht</a><br>
+        <i>Frau Findeisen</i>
+      </td>
       <td>2 - 6</td>
       <td>Religionsraum</td>
     </tr>
+    <!--
     <tr>
       <td>13:30 - 17:00</td>
-      <td>Klavierunterricht<br>Musikschule Spandau</td>
+      <td>
+        <a href="#klavier_ag"><i class='fa'>🎹&nbsp;</i>Klavierunterricht</a><br>
+        <i>Musikschule Spandau</i>
+      </td>
       <td>1 - 6</td>
       <td>Musikraum</td>
     </tr>
+    -->
     <tr>
       <td>14:00 - 15:30</td>
-      <td>Türkischunterricht für Muttersprachler<br>Herr Keser</td>
+      <td>
+        Türkischunterricht für Muttersprachler<br>
+        <i>Herr Keser</i>
+      </td>
       <td>1 - 6</td>
       <td>Raum 304</td>
     </tr>
@@ -84,19 +108,28 @@ können. Vor allem die Kursgebühren können sich ändern.
     </tr>
     <tr>
       <td>13:40 - 14:20</td>
-      <td>Fußball<br>N.N.</td>
+      <td>
+        <a href="#fussball_ag"><i class='fa fa-futbol-o'>&nbsp;</i>Fußball</a><br>
+        <i>N.N.</i>
+      </td>
       <td>4 - 6</td>
-      <td>Halle</td>
+      <td>Turnhalle</td>
     </tr>
     <tr>
       <td>13:40 - 14:25</td>
-      <td>Kleine Spiele<br>Frau Hornig.</td>
+      <td>
+        <a href="#kleine_spiele_ag"><i class='fa fa-group'>&nbsp;</i>Kleine Spiele</a><br>
+        <i>Frau Hornig.</i>
+      </td>
       <td>1 - 2</td>
-      <td>Halle</td>
+      <td>Turnhalle</td>
     </tr>
     <tr>
-      <td>13:30 - 18:00</td>
-      <td>Klavierunterricht<br>Musikschule Spandau</td>
+      <td>13:30 - 18:30</td>
+      <td>
+        <a href="#klavier_ag"><i class='fa'>🎹&nbsp;</i>Klavierunterricht</a><br>
+        <i>Musikschule Spandau</i>
+      </td>
       <td>1 - 6</td>
       <td>Musikraum</td>
     </tr>
@@ -105,19 +138,28 @@ können. Vor allem die Kursgebühren können sich ändern.
     </tr>
     <tr>
       <td>13:30 - 15:00</td>
-      <td>Töpfern<br>Frau Lehmann</td>
+      <td>
+        <a href="#toepfern_ag"><i class='fa fa-tint'>&nbsp;</i>Töpfern</a><br>
+        <i>Frau Lehmann</i>
+      </td>
       <td>3 - 6</td>
-      <td>Werkst.</td>
+      <td>Werkraum</td>
     </tr>
     <tr>
       <td>14:30 - 16:00</td>
-      <td>Schach<br>Herr Keser</td>
+      <td>
+        <a href="#schach_ag"><i class='fa'>♚&nbsp;</i>Schach</a><br>
+        <i>Herr Keser</i>
+      </td>
       <td>1 - 6</td>
       <td>Raum 304</td>
     </tr>
     <tr>
       <td>15:00 - 18:00</td>
-      <td>Kuttersegeln<br>Herr Hantschick</td>
+      <td>
+        <a href="#kuttersegeln_ag"><i class='fa fa-anchor'>&nbsp;</i>Kuttersegeln</a><br>
+        <i>Herr Hantschick</i>
+      </td>
       <td>3 - 6</td>
       <td>Wassersportheim Gatow</td>
     </tr>
@@ -126,26 +168,35 @@ können. Vor allem die Kursgebühren können sich ändern.
     </tr>
     <tr>
       <td>13:30 - 14:30</td>
-      <td>Werken/Handarbeiten<br>Frau Bölke</td>
+      <td>
+        <a href="#werken_ag"><i class='fa fa-gavel'>&nbsp;</i>Werken / Handarbeiten</a><br>
+        <i>Frau Bölke</i>
+      </td>
       <td>3 - 5</td>
-      <td>Werkst.</td>
+      <td>Werkraum</td>
     </tr>
     <tr>
       <td>14:00 - 16:00</td>
-      <td>Zirkus AG<br>Frau Linke</td>
+      <td>
+        <a href="#zirkus_ag"><i class="fa">🎪&nbsp;</i>Zirkus</a><br>
+        <i>Frau Linke</i>
+      </td>
       <td>1 - 6</td>
       <td>Turnhalle</td>
     </tr>
     <tr>
       <td>14:30 - 16:00</td>
-      <td>Türkischunterricht für Muttersprachler<br>Herr Keser</td>
+      <td>
+        Türkischunterricht für Muttersprachler<br>
+        <i>Herr Keser</i>
+      </td>
       <td>1 - 6</td>
       <td>Raum 304</td>
     </tr>
   </tbody>
 </table>
 
-## <i class='fa fa-gbp'></i> AG Englisch
+## <i class='fa fa-gbp'>&nbsp;</i>AG Englisch
 {: #englisch_ag}
 
 In den Kursen begegnen die Kinder der englischen Sprache auf spielerische Weise.
@@ -155,7 +206,7 @@ englische Sätze zu sprechen.
 
 | Kursleiter*in | Wann? | Wo? | Für wen? |
 |---|---|---|---|
-| Frau [<i class='fa fa-globe'></i> Karen Eumann](http://www.karen-eumann.de) | montags, 13:40 - 14:25 (Stufe I) und <br> 14:35 - 15:20 (Stufe II) | In der Brandwerder | 1. und 2. Klasse |
+| Frau [<i class='fa fa-globe'>&nbsp;</i>Karen Eumann](http://www.karen-eumann.de) | montags, 13:40 - 14:25 (Stufe I) und <br> 14:35 - 15:20 (Stufe II) | N.N | 1. und 2. Klasse |
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
@@ -164,7 +215,7 @@ englische Sätze zu sprechen.
 [Anmelden](https://www.karen-eumann.de/app/download/9183188198/Download+Anmeldung+school.pdf?t=1393085067){: .btn .btn--success}
 {: .text-right}
 
-## <i class='fa fa-paper-plane'></i> AG Basteln
+## <i class='fa fa-paper-plane'>&nbsp;</i>AG Basteln
 {: #basteln_ag}
 
 {% include figure image_path="http://www.foerderverein-brandwerder.de/sites/default/files/artikel_bilder/werken-basteln-gross.jpg" caption="<small>Förderverein Brandwerder</small>" %}{: .align-left style='max-width: 300px; max-height: 300px' }
@@ -187,7 +238,7 @@ unterstützt.
 |---|---|---|
 | N.N. | 10€ einmalig und 5€ pro Monat | N.N |
 
-## <i class='fa fa-gavel'></i> AG Werken
+## <i class='fa fa-gavel'>&nbsp;</i>AG Werken
 {: #werken_ag}
 
 {% include figure image_path="http://www.foerderverein-brandwerder.de/sites/default/files/artikel_bilder/werken-basteln-gross.jpg" caption="<small>Förderverein Brandwerder</small>" %}{: .align-left style='max-width: 300px; max-height: 300px' }
@@ -213,7 +264,7 @@ unterstützt.
 |---|---|---|
 | N.N. | N.N. | N.N. |
 
-## <i class='fa fa-headphones'></i> AG Handarbeit
+## <i class='fa fa-headphones'>&nbsp;</i>AG Handarbeit
 {: #handarbeits_ag}
 
 Kinder sind von Natur aus wissbegierig und kreativ. Bei der Handarbeits-AG
@@ -236,7 +287,7 @@ unterstützt.
 |---|---|---|
 | N.N. | N.N. | N.N. |
 
-## <i class='fa fa-tint'></i> AG Töpfern
+## <i class='fa fa-tint'>&nbsp;</i>AG Töpfern
 {: #toepfern_ag}
 
 N.N
@@ -249,7 +300,7 @@ N.N
 |---|---|---|
 | N.N | N.N | N.N |
 
-## <i class="fa fa-music"></i> AG Flöten
+## <i class="fa fa-music">&nbsp;</i>AG Flöten
 {: #floeten_ag}
 
 Der Mensch liebt von Natur aus die Musik. Studien zeigen, dass das Erlernen bzw.
@@ -273,7 +324,7 @@ unterstützt.
 |---|---|---|
 | N.N | N.N | N.N |
 
-## <i class="fa">🎹</i> AG Klavier
+## <i class="fa">🎹&nbsp;</i>AG Klavier
 {: #klavier_ag}
 
 N.N
@@ -286,7 +337,7 @@ N.N
 |---|---|---|
 | N.N | N.N | N.N |
 
-## <i class="fa"> 🎸 </i> AG Gitarre
+## <i class="fa">🎸&nbsp;</i>AG Gitarre
 {: #gitarre_ag}
 
 N.N
@@ -299,7 +350,7 @@ N.N
 |---|---|---|
 | N.N | N.N | N.N |
 
-## <i class="fa">♚</i> AG Schach
+## <i class="fa">♚&nbsp;</i>AG Schach
 {: #schach_ag}
 
 {% include figure image_path="http://www.foerderverein-brandwerder.de/sites/default/files/artikel_bilder/schach-gross.jpg" caption='<small>"[Chess bishop](https://commons.wikimedia.org/wiki/File:Chess_bishop_1000.jpg)" by [Petr Novák](https://commons.wikimedia.org/wiki/User:Che) / [CC BY-SA 2.5](http://creativecommons.org/licenses/by-sa/2.5)</small>' %}{: .align-left style='max-width: 300px; max-height: 300px' }
@@ -331,7 +382,7 @@ unterstützt.
 |---|---|---|
 | N.N | kostenfrei | N.N |
 
-## <i class="fa">🎪</i> AG Zirkus
+## <i class="fa">🎪&nbsp;</i>AG Zirkus
 {: #zirkus_ag}
 
 Die Arbeitsgemeinschaft „Brandwerder - Zirkus“ existiert bereits 10 Jahre. Dem
@@ -384,7 +435,7 @@ unterstützt.
 |---|---|---|
 | N.N | N.N, 3 Probestunden | N.N |
 
-## <i class='fa fa-group'></i> AG Kleine Spiele
+## <i class='fa fa-group'>&nbsp;</i>AG Kleine Spiele
 {: #kleine_spiele_ag}
 
 N.N
@@ -397,7 +448,7 @@ N.N
 |---|---|---|
 | N.N | kostenfrei | N.N |
 
-## <i class='fa fa-anchor'></i> AG Kuttersegeln
+## <i class='fa fa-anchor'>&nbsp;</i>AG Kuttersegeln
 {: #kuttersegeln_ag}
 
 N.N
@@ -410,7 +461,7 @@ N.N
 |---|---|---|
 | N.N | N.N | N.N |
 
-## <i class='fa'>🏃</i> AG Leichtathletik / Basketball
+## <i class='fa'>🏃&nbsp;</i>AG Leichtathletik / Basketball
 {: #leichtathletik_ag}
 
 N.N
@@ -423,7 +474,7 @@ N.N
 |---|---|---|
 | N.N | kostenfrei | N.N |
 
-## <i class='fa fa-futbol-o'></i> AG Fußball
+## <i class='fa fa-futbol-o'>&nbsp;</i>AG Fußball
 {: #fussball_ag}
 
 N.N
