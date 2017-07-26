@@ -331,7 +331,7 @@ N.N
 
 | Kursleiter*in | Wann? | Wo? | Für wen? |
 |---|---|---|---|
-| Frau Zheng | dienstags, 13:30 - 17:00 (mehrere Gruppen), mittwochs, 13:30 - 17:00 | Musikraum | 1. - 6. Klasse |
+| Frau Zheng | mittwochs, 13:30 - 18:30 (mehrere Gruppen) | Musikraum | 1. - 6. Klasse |
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
