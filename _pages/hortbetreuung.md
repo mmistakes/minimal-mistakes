@@ -45,8 +45,7 @@ abwechslungsreiche Spielmöglichkeiten.
 {: #vhg }
 
 Im Rahmen der VHG wird Ihr Kind im Zeitraum von 7:30 Uhr bis 13:30 Uhr
-verlässlich von uns betreut, d.h. selbst bei kurzfristigem Unterrichtsausfall
-oder an Spezialtagen wie z.B. Zeugnisausgabe, Wandertagen.
+verlässlich von uns betreut, selbst dann, wenn es keinen Unterricht hat.
 
 # Ergänzende Förderung und Betreuung (kostenpflichtig)
 {: #hort }

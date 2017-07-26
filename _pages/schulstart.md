@@ -1,9 +1,9 @@
 ---
 layout: single
-title: "Schulstart"
+title: "Schulbeginn"
 permalink: /schulstart/
 author_profile: false
-excerpt: "Alles Wichtige zum Schulstart und zur Einschulung."
+excerpt: "Alles Wichtige zur Einschulung und zum Schulstart"
 modified: 2017-03-07T10:55:00+01:00
 header:
   overlay_color: "#fff"
@@ -17,7 +17,7 @@ sidebar:
 *[JabL]:    Jahrgangsbezogenes Lernen (klassisches Unterrichtskonzept)
 *[SAPH]:    Schulanfangsphase
 
-# <i class="fa fa-calendar"></i> Termine rundum die Einschulung
+# <i class="fa fa-calendar"></i> Termine rund um die Einschulung
 {: #termine}
 
 Die wichtigsten Daten zum Schuljahr 2018/19 in einem Überblick.

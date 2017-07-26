@@ -8,19 +8,11 @@ classes:
 header:
   overlay_color: "#fff"
   overlay_image: /assets/images/mm-home-page-feature.jpg
-  cta_label: "<i class='fa fa-info'>&nbsp;&nbsp;</i>Informationen zum Schulstart 2018/19"
+  cta_label: "<i class='fa fa-info'>&nbsp;&nbsp;</i>Informationen zum Schulbeginn 2018/19"
   cta_url: "/schulstart/"
   cta_class: "btn--success"
   caption:
 feature_row:
-  - image_path: /assets/images/feature-hort.jpg
-    alt: "Hortbetreuung"
-    title: "Halbtagsgrundschule"
-    excerpt: "Ihr Kind wird in der Schulzeit zwischen 07:30 - 13:30 von uns
-    verlässlich betreut. Für Familien mit mehr Betreuungsbedarf gibt es einen
-    Ganztagsbetrieb von 6.00 Uhr bis 18.00 Uhr."
-    url: "/hortbetreuung/"
-    btn_label: "<i class='fa fa-info'>&nbsp;&nbsp;</i>Mehr erfahren"
   - image_path: /assets/images/feature-einschulung.jpg
     alt: "Schulstart"
     title: "Start in die Schule"
@@ -28,6 +20,14 @@ feature_row:
     Sie? Was müssen Sie machen? Und vor allem was können Sie erwarten? Erfahren
     Sie alles Wichtige zum Thema Schulanfang."
     url: "/schulstart/"
+    btn_label: "<i class='fa fa-info'>&nbsp;&nbsp;</i>Mehr erfahren"
+  - image_path: /assets/images/feature-hort.jpg
+    alt: "Hortbetreuung"
+    title: "Ergänzende Förderung und Betreuung"
+    excerpt: "Ihr Kind wird in der Schulzeit zwischen 07:30 - 13:30 von uns
+    verlässlich betreut. Für Familien mit mehr Betreuungsbedarf gibt es einen
+    Ganztagsbetrieb von 6.00 Uhr bis 18.00 Uhr."
+    url: "/hortbetreuung/"
     btn_label: "<i class='fa fa-info'>&nbsp;&nbsp;</i>Mehr erfahren"
   - image_path: /assets/images/feature-ags.jpg
     alt: "AG Angebote der Schule"
@@ -49,5 +49,15 @@ feature_row:
     btn_label: "<i class='fa fa-external-link'>&nbsp;&nbsp;</i>Zur Seite des Fördervereins"
     btn_class: btn--success
 ---
+
+{{comment}}<!--
+  - image_path: /assets/images/feature-hort.jpg
+    alt: ""
+    title: "Über die Schule"
+    excerpt: "Unsere Philosophie, Unterrichtszeiten und Kollegium"
+    url: "/hortbetreuung/"
+    btn_label: "<i class='fa fa-info'>&nbsp;&nbsp;</i>Mehr erfahren"
+-->
+{{endcomment}}
 
 {% include feature_row %}
