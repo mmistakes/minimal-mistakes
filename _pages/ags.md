@@ -1,9 +1,9 @@
 ---
 layout: single
-title: "AG Angebote"
+title: "Arbeitsgemeinschaften"
 permalink: /ags/
 author_profile: false
-excerpt: "Alles wichtige über die Arbeitsgemeinschaften an der Brandwerder."
+excerpt: "Alles Wichtige über die Arbeitsgemeinschaften (AGs) an der Brandwerder."
 modified: 2017-03-09T22:08:00+01:00
 header:
   overlay_color: "#fff"
@@ -12,16 +12,140 @@ sidebar:
   nav: 'ags'
 ---
 
+Arbeitsgemeinschaften (AGs) sind außerunterrichtliche Angebote auf freiwilliger
+Basis. Eine regelmäßige Teilnahme ist Voraussetzung.
+
 **Achtung**: Bitte beachten Sie, dass alle hier genannten Daten abweichen
 können. Vor allem die Kursgebühren können sich ändern.
 {: .notice--warning}
 
-# Kursangebote im Schuljahr 2016/17
+# Kursangebote im Schuljahr 2017/18
 
-**TODO**: Übersicht über alle AGs (siehe AGs 2016-17.xls)
-{: .notice--warning}
+<table>
+  <thead>
+    <tr>
+      <th>Wann</th>
+      <th>Thema</th>
+      <th>Kl.</th>
+      <th>Ort</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="6">Montag</td>
+    </tr>
+    <tr>
+      <td>12:45 - 15:30</td>
+      <td>Flöten<br><i>Frau Bölke</i></td>
+      <td>1 - 6</td>
+      <td>Aula</td>
+    </tr>
+    <tr>
+      <td>13:40 - 14:25</td>
+      <td>Englisch für Kids (Stufe I)<br>Frau Eumann</td>
+      <td>1 - 2</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>14:35 - 15:20</td>
+      <td>Englisch für Kids (Stufe II)<br>Frau Eumann</td>
+      <td>1 - 2</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="6">Dienstag</td>
+    </tr>
+    <tr>
+      <td>13:15 - 14:00</td>
+      <td>Basteln<br>Frau Bölke</td>
+      <td>1 - 2</td>
+      <td>Werkst.</td>
+    </tr>
+    <tr>
+      <td>13:30 - 15:00</td>
+      <td>Gitarrenunterricht<br>Frau Findeisen</td>
+      <td>2 - 6</td>
+      <td>Religionsraum</td>
+    </tr>
+    <tr>
+      <td>13:30 - 17:00</td>
+      <td>Klavierunterricht<br>Musikschule Spandau</td>
+      <td>1 - 6</td>
+      <td>Musikraum</td>
+    </tr>
+    <tr>
+      <td>14:00 - 15:30</td>
+      <td>Türkischunterricht für Muttersprachler<br>Herr Keser</td>
+      <td>1 - 6</td>
+      <td>Raum 304</td>
+    </tr>
+    <tr>
+      <td colspan="6">Mittwoch</td>
+    </tr>
+    <tr>
+      <td>13:40 - 14:20</td>
+      <td>Fußball<br>N.N.</td>
+      <td>4 - 6</td>
+      <td>Halle</td>
+    </tr>
+    <tr>
+      <td>13:40 - 14:25</td>
+      <td>Kleine Spiele<br>Frau Hornig.</td>
+      <td>1 - 2</td>
+      <td>Halle</td>
+    </tr>
+    <tr>
+      <td>13:30 - 18:00</td>
+      <td>Klavierunterricht<br>Musikschule Spandau</td>
+      <td>1 - 6</td>
+      <td>Musikraum</td>
+    </tr>
+    <tr>
+      <td colspan="6">Donnerstag</td>
+    </tr>
+    <tr>
+      <td>13:30 - 15:00</td>
+      <td>Töpfern<br>Frau Lehmann</td>
+      <td>3 - 6</td>
+      <td>Werkst.</td>
+    </tr>
+    <tr>
+      <td>14:30 - 16:00</td>
+      <td>Schach<br>Herr Keser</td>
+      <td>1 - 6</td>
+      <td>Raum 304</td>
+    </tr>
+    <tr>
+      <td>15:00 - 18:00</td>
+      <td>Kuttersegeln<br>Herr Hantschick</td>
+      <td>3 - 6</td>
+      <td>Wassersportheim Gatow</td>
+    </tr>
+    <tr>
+      <td colspan="6">Freitag</td>
+    </tr>
+    <tr>
+      <td>13:30 - 14:30</td>
+      <td>Werken/Handarbeiten<br>Frau Bölke</td>
+      <td>3 - 5</td>
+      <td>Werkst.</td>
+    </tr>
+    <tr>
+      <td>14:00 - 16:00</td>
+      <td>Zirkus AG<br>Frau Linke</td>
+      <td>1 - 6</td>
+      <td>Turnhalle</td>
+    </tr>
+    <tr>
+      <td>14:30 - 16:00</td>
+      <td>Türkischunterricht für Muttersprachler<br>Herr Keser</td>
+      <td>1 - 6</td>
+      <td>Raum 304</td>
+    </tr>
+  </tbody>
+</table>
 
-## <i class='fa fa-gbp'></i> Englisch in der Schulanfangsphase (SAPH)
+## <i class='fa fa-gbp'></i> AG Englisch
 {: #englisch_ag}
 
 In den Kursen begegnen die Kinder der englischen Sprache auf spielerische Weise.
@@ -29,9 +153,9 @@ Durch englische Geschichten wird das Hörverständnis der Kinder gefördert und
 durch spielerische Aktivitäten und Aufgaben werden die Kinder angeregt erste
 englische Sätze zu sprechen.
 
-| Kursleiterin | Wann? | Wo? | Für wen? |
+| Kursleiter*in | Wann? | Wo? | Für wen? |
 |---|---|---|---|
-| Frau [<i class='fa fa-globe'></i> Karen Eumann](http://www.karen-eumann.de) | Montags, 13:40 - 14:25 | In der Brandwerder | 1. und 2. Klasse |
+| Frau [<i class='fa fa-globe'></i> Karen Eumann](http://www.karen-eumann.de) | montags, 13:40 - 14:25 (Stufe I) und <br> 14:35 - 15:20 (Stufe II) | In der Brandwerder | 1. und 2. Klasse |
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
@@ -40,7 +164,7 @@ englische Sätze zu sprechen.
 [Anmelden](https://www.karen-eumann.de/app/download/9183188198/Download+Anmeldung+school.pdf?t=1393085067){: .btn .btn--success}
 {: .text-right}
 
-## <i class='fa fa-paper-plane'></i> Basteln AG
+## <i class='fa fa-paper-plane'></i> AG Basteln
 {: #basteln_ag}
 
 {% include figure image_path="http://www.foerderverein-brandwerder.de/sites/default/files/artikel_bilder/werken-basteln-gross.jpg" caption="<small>Förderverein Brandwerder</small>" %}{: .align-left style='max-width: 300px; max-height: 300px' }
@@ -55,15 +179,15 @@ Die AG wird vom
 [Förderverein](http://www.foerderverein-brandwerder.de/bastel-ag-der-grundschule-brandwerder)
 unterstützt.
 
-| Kursleiterin | Wann? | Wo? | Für wen? |
+| Kursleiter*in | Wann? | Wo? | Für wen? |
 |---|---|---|---|
-| Frau Bölke | Dienstags, 13:15 - 14:00 | In der Brandwerder, Werkstatt | 1. - 2. Klasse |
+| Frau Bölke | dienstags, 13:15 - 14:00 | Werkraum | 1. - 2. Klasse |
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
-| ??? | ??? | ??? |
+| N.N. | 10€ einmalig und 5€ pro Monat | N.N |
 
-## <i class='fa fa-gavel'></i> Werken AG
+## <i class='fa fa-gavel'></i> AG Werken
 {: #werken_ag}
 
 {% include figure image_path="http://www.foerderverein-brandwerder.de/sites/default/files/artikel_bilder/werken-basteln-gross.jpg" caption="<small>Förderverein Brandwerder</small>" %}{: .align-left style='max-width: 300px; max-height: 300px' }
@@ -81,15 +205,15 @@ Die AG wird vom
 [Förderverein](http://www.foerderverein-brandwerder.de/werken-ag-der-grundschule-brandwerder)
 unterstützt.
 
-| Kursleiterin | Wann? | Wo? | Für wen? |
+| Kursleiter*in | Wann? | Wo? | Für wen? |
 |---|---|---|---|
-| Frau Bölke | Freitags, 12:30 - 13:45 | In der Brandwerder, Werkstatt | 2. - 3. Klasse |
+| Frau Bölke | freitags, 12:30 - 13:45 | Werkraum | 2. - 3. Klasse |
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
-| ??? | ??? | ??? |
+| N.N. | N.N. | N.N. |
 
-## <i class='fa fa-headphones'></i> Handarbeits AG
+## <i class='fa fa-headphones'></i> AG Handarbeit
 {: #handarbeits_ag}
 
 Kinder sind von Natur aus wissbegierig und kreativ. Bei der Handarbeits-AG
@@ -104,31 +228,28 @@ Die AG wird vom
 [Förderverein](http://www.foerderverein-brandwerder.de/handarbeits-ag-der-grundschule-brandwerder)
 unterstützt.
 
-| Kursleiterin | Wann? | Wo? | Für wen? |
+| Kursleiter*in | Wann? | Wo? | Für wen? |
 |---|---|---|---|
-| Frau Bölke | Freitags, 13:45 - 14:45 | In der Brandwerder, Werkstatt | 3. - 5 Klasse |
+| Frau Bölke | freitags, 13:45 - 14:45 | Werkraum | 3. - 5 Klasse |
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
-| ??? | ??? | ??? |
+| N.N. | N.N. | N.N. |
 
-## <i class='fa fa-tint'></i> Töpfern AG
+## <i class='fa fa-tint'></i> AG Töpfern
 {: #toepfern_ag}
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-no sea takimata sanctus est.
+N.N
 
-| Kursleiterin | Wann? | Wo? | Für wen? |
+| Kursleiter*in | Wann? | Wo? | Für wen? |
 |---|---|---|---|
-| ??? | ??? | In der Brandwerder | ?? |
+| Frau Lehmann | donnerstags, 13:30 - 15:00 | Werkraum | 3. - 6. Klasse |
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
-| ??? | ??? | ??? |
+| N.N | N.N | N.N |
 
-## <i class="fa">𝄞</i> Flöten AG
+## <i class="fa fa-music"></i> AG Flöten
 {: #floeten_ag}
 
 Der Mensch liebt von Natur aus die Musik. Studien zeigen, dass das Erlernen bzw.
@@ -144,47 +265,41 @@ Die AG wird vom
 [Förderverein](http://www.foerderverein-brandwerder.de/floeten-ag-der-grundschule-brandwerder)
 unterstützt.
 
-| Kursleiterin | Wann? | Wo? | Für wen? |
+| Kursleiter*in | Wann? | Wo? | Für wen? |
 |---|---|---|---|
-| Frau Bölke | Gruppe I: Montags, 12:45 - 15:00<br>Gruppe II: Donnerstags, 13:45 - 15:00 | In der Brandwerder, Aula | 1. - 6. Klasse |
+| Frau Bölke | montags, 12:45 - 15:30 (mehrere Gruppen) | Aula | 1. - 6. Klasse |
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
-| ??? | ??? | ??? |
+| N.N | N.N | N.N |
 
-## <i class='fa fa-music'></i> Musical AG
-{: #musical_ag}
+## <i class="fa">🎹</i> AG Klavier
+{: #klavier_ag}
 
-Die Musik ist ein Element von essentieller Bedeutung. Es ist bekannt, welch
-wohltuende Wirkung die Musik auf den Körper und den Geist hat und dass vor allem
-die Entwicklung von Kindern positiv beeinflusst werden kann.
+N.N
 
-Aus diesem Grund wurde 2001 die Musical-AG ins Leben gerufen und ist seitdem ein
-fester und bedeutsamer Bestandteil der Grundschule am Brandwerder geworden.
-
-Zu Beginn des Schuljahres findet ein Aufruf an alle Schülerinnen und Schüler ab
-der 4. Klassenstufe statt, die Freude am Singen und Interesse an der
-schauspielerischen Darstellung haben. Nachdem bei einem Casting die Auswahl für
-die zu besetzenden Rollen getroffen wurde, findet anschließend immer mittwochs
-in der Aula die Musical-AG statt, bei der die Lieder und Handlungen von den
-Akteuren einstudiert werden.
-
-Am Ende des Schuljahres kommt dann der langersehnte große Augenblick, an dem
-alle Darsteller mit der Musical-Aufführung ihr Können stolz präsentieren können.
-
-Die AG wird vom
-[Förderverein](http://www.foerderverein-brandwerder.de/musical-ag-der-grundschule-brandwerder)
-unterstützt.
-
-| Kursleiter | Wann? | Wo? | Für wen? |
+| Kursleiter*in | Wann? | Wo? | Für wen? |
 |---|---|---|---|
-| Herr Schurwanz | Mittwochs, 1,5 Std. | In der Brandwerder | Ab 4. Klassenstufe |
+| Frau Zheng | dienstags, 13:30 - 17:00 (mehrere Gruppen), mittwochs, 13:30 - 17:00 | Musikraum | 1. - 6. Klasse |
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
-| ??? | ??? | ??? |
+| N.N | N.N | N.N |
 
-## <i class="fa">♚</i> Schach AG
+## <i class="fa"> 🎸 </i> AG Gitarre
+{: #gitarre_ag}
+
+N.N
+
+| Kursleiter*in | Wann? | Wo? | Für wen? |
+|---|---|---|---|
+| Frau Findeisen | dienstags, 13:30 - 15:00 (mehrere Gruppen) | Religionsraum | 2. - 6. Klasse |
+
+| Material | Kosten | Teilnehmerzahl |
+|---|---|---|
+| N.N | N.N | N.N |
+
+## <i class="fa">♚</i> AG Schach
 {: #schach_ag}
 
 {% include figure image_path="http://www.foerderverein-brandwerder.de/sites/default/files/artikel_bilder/schach-gross.jpg" caption='<small>"[Chess bishop](https://commons.wikimedia.org/wiki/File:Chess_bishop_1000.jpg)" by [Petr Novák](https://commons.wikimedia.org/wiki/User:Che) / [CC BY-SA 2.5](http://creativecommons.org/licenses/by-sa/2.5)</small>' %}{: .align-left style='max-width: 300px; max-height: 300px' }
@@ -208,15 +323,15 @@ Die AG wird vom
 [Förderverein](http://www.foerderverein-brandwerder.de/schach-ag-der-grundschule-brandwerder)
 unterstützt.
 
-| Kursleiterin | Wann? | Wo? | Für wen? |
+| Kursleiter*in | Wann? | Wo? | Für wen? |
 |---|---|---|---|
-| Herr Keser | Dienstags, 13:30 - 15:00 | In der Brandwerder, BK-Raum | 1. - 6. Klasse |
+| Herr Keser | donnerstags, 14:30 - 16:00 | Raum 304 | 1. - 6. Klasse |
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
-| ??? | ??? | ??? |
+| N.N | kostenfrei | N.N |
 
-## <i class='fa fa-ticket'></i> Zirkus AG
+## <i class="fa">🎪</i> AG Zirkus
 {: #zirkus_ag}
 
 Die Arbeitsgemeinschaft „Brandwerder - Zirkus“ existiert bereits 10 Jahre. Dem
@@ -261,26 +376,62 @@ Die AG wird vom
 [Förderverein](http://www.foerderverein-brandwerder.de/zirkus-ag-der-grundschule-brandwerder)
 unterstützt.
 
-| Kursleiterin | Wann? | Wo? | Für wen? |
+| Kursleiter*in | Wann? | Wo? | Für wen? |
 |---|---|---|---|
-| Frau Linke | Freitags, 14:00 - 16:00 | In der Brandwerder, Sporthalle | 1. - 6. Klasse |
+| Frau Linke | freitags, 14:00 - 16:00 | Sporthalle | 1. - 6. Klasse |
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
-| ??? | ???, 3 Probestunden | ??? |
+| N.N | N.N, 3 Probestunden | N.N |
 
-## <i class='fa fa-futbol-o'></i> Fussball AG
+## <i class='fa fa-group'></i> AG Kleine Spiele
+{: #kleine_spiele_ag}
+
+N.N
+
+| Kursleiter*in | Wann? | Wo? | Für wen? |
+|---|---|---|---|
+| Frau Hornig | N.N. | Sporthalle | 1. - 2. Klasse |
+
+| Material | Kosten | Teilnehmerzahl |
+|---|---|---|
+| N.N | kostenfrei | N.N |
+
+## <i class='fa fa-anchor'></i> AG Kuttersegeln
+{: #kuttersegeln_ag}
+
+N.N
+
+| Kursleiter*in | Wann? | Wo? | Für wen? |
+|---|---|---|---|
+| Herr Hantschick | 15:00 - 18:00 | Wassersportheim Gatow | 3. - 6. Klasse |
+
+| Material | Kosten | Teilnehmerzahl |
+|---|---|---|
+| N.N | N.N | N.N |
+
+## <i class='fa'>🏃</i> AG Leichtathletik / Basketball
+{: #leichtathletik_ag}
+
+N.N
+
+| Kursleiter*in | Wann? | Wo? | Für wen? |
+|---|---|---|---|
+| Frau Krüger | N.N. | Sporthalle | 4. - 6. Klasse |
+
+| Material | Kosten | Teilnehmerzahl |
+|---|---|---|
+| N.N | kostenfrei | N.N |
+
+## <i class='fa fa-futbol-o'></i> AG Fußball
 {: #fussball_ag}
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-no sea takimata sanctus est.
+N.N
 
-| Kursleiterin | Wann? | Wo? | Für wen? |
+| Kursleiter*in | Wann? | Wo? | Für wen? |
 |---|---|---|---|
-| ??? | ??? | In der Brandwerder | ?? |
+| N.N | N.N | Sporthalle | 4. - 6. Klasse |
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
-| ??? | ??? | ??? |
+| N.N | N.N | N.N |

@@ -1,9 +1,9 @@
 ---
 layout: single
-title: "Hortangebot"
+title: "Ergänzende Förderung und Betreuung"
 permalink: /hortbetreuung/
 author_profile: false
-excerpt: "Alles wichtige über den Hortbetrieb."
+excerpt: "Alles zum Hortgebäude, zur verlässlichen Halbtagsgrundschule, sowie zum Mittagessen"
 modified: 2017-03-07T10:55:00+01:00
 header:
   overlay_color: "#fff"
@@ -16,64 +16,50 @@ header:
 *[SAPH]:    Schulanfangsphase
 *[VHG]:     verlässliche Halbtagsgrundschule
 
-Unsere Schule ist eine sogenannte verlässliche Halbtagsgrundschule mit offenem
+
+Unsere Schule ist eine verlässliche Halbtagsgrundschule (VHG) mit offenem
 Ganztagsbetrieb.
 
-Unser Erzieherteam besteht derzeit aus zehn Erziehern, welche Ihr Kind im Hort
-in einem festen Gruppenverband betreuen.
+Das Team besteht derzeit aus neun Erzieherinnen und einem Erzieher, welche Ihr
+Kind im Hort in einem festen Gruppenverband betreuen.
 
-Im Gegenzug zu anderen Bundesländern, sind bei uns die Erzieher auch während des
-Unterrichts dabei und unterstützen somit Ihr Kind und die Lehrkraft im
-Unterricht.
+Im Gegenzug zu anderen Bundesländern sind bei uns die Erzieher*innen auch
+während des Unterrichts dabei und unterstützen somit Ihr Kind und die Lehrkraft
+im Unterricht.
 {: .notice--info }
 
-**TODO:**
-Sind eigentlich die Erzieher nur in der SAPH mit im Unterricht beteiligt?
-Vielleicht noch positiv hervorheben, dass dadurch die Hort-Eltern-Lehrer
-kommunikation besser funktioniert.
-{: .notice--warning}
+[<i class="fa fa-download">&nbsp;&nbsp;</i>Flyer zu unserem Hortangebot](/assets/files/Grundschule_am_Brandwerder_Hort_Flyer.pdf){: .btn .btn--success}
 
-# Hortgebäude
+# Hortgebäude und Außengelände
 
-**TODO:**
-2008 fertiggestellt; bilder einfügen
-{: .notice--warning}
+Das Hortgebäude befindet sich auf dem Schulgelände, in dem drei Räume während
+der Nachmittagsbetreuung genutzt werden. Zusätzlich stehen vier Räume im
+Schulhaus zur Verfügung.
 
+Unserer Außenbereich erstreckt sich über mehrere Grünflächenabschnitte mit
+vielen Bäumen, Büschen und einigen Ecken mit Bänken zum Ausruhen. Außerdem
+bieten unter anderem das Baumhaus, die Kletterspinne und der große Fußballplatz
+abwechslungsreiche Spielmöglichkeiten.
 
-# Verlässliche Halbtagsgrundschule (VHG; für alle Kinder kostenfrei)
+# Verlässliche Halbtagsgrundschule (VHG)
 {: #vhg }
 
-Ihr Kind wird im Zeitraum von 7:30 Uhr bis 13:30 Uhr verlässlich und kostenlos
-von uns betreut. Verlässlich bedeutet, dass z.B. an Tagen mit kürzeren
-Stundenplänen -- ihr Kind hat z.B. Montags nur bis zur 5. Stunde -- oder bei
-Unterrichtsausfall Ihr Kind immer in diesem Zeitraum entweder von Lehrkräften
-oder Erziehern betreut wird.
+Im Rahmen der VHG wird Ihr Kind im Zeitraum von 7:30 Uhr bis 13:30 Uhr
+verlässlich von uns betreut, d.h. selbst bei kurzfristigem Unterrichtsausfall
+oder an Spezialtagen wie z.B. Zeugnisausgabe, Wandertagen.
 
-Wenn Sie für diese Basis-Betreuung entschieden haben, so bekommt Ihr Kind in der
-Regel kein Mittagessen in der Schule.
-
-Diese Angebot der Betreuung gilt nicht in den Ferien, dazu brauchen sie eine
-ergänzende Betreuung. Mehr Informationen im Abschnitt „[Betreuung in den
-Ferien](/hortbetreuung#ferienbetreuung)“.
-
-**TODO:**
-Was ist mit der Schulpflicht? Kann man Kinder nach der 5. Stunde abholen, falls
-sie nur 5 Stunden haben?
-{: .notice--warning}
-
-# Ergänzende Förderung und Betreuung/Hort (kostenpflichtig)
+# Ergänzende Förderung und Betreuung (kostenpflichtig)
 {: #hort }
 
-Ergänzend zur verlässliche Halbtagsgrundschule, bieten wir einen Ganztagsbetrieb
-von 6:00 Uhr bis 18:00 Uhr am.
+Sie haben die Möglichkeit durch Module weitere Betreuungszeiten zu erwerben.
 
-Sie können auf Antrag folgende Betreuungszeiten in Anspruch nehmen:
+Ergänzend zur verlässliche Halbtagsgrundschule bieten wir einen Ganztagsbetrieb
+von 6:00 Uhr bis 18:00 Uhr an:
 
-* 6:00 Uhr - 7:30 Uhr
-* 13:30 Uhr - 16:00 Uhr
-* 13:30 Uhr - 18:00 Uhr
-* 6:00 Uhr - 16:00 Uhr
-* 6:00 Uhr - 18:00 Uhr
+* 6:00 Uhr - 7:30 Uhr (Frühmodul)
+* 13:30 Uhr - 16:00 Uhr (Nachmittagsmodul)
+* 16:00 Uhr - 18:00 Uhr (Spätmodul)
+* 7:30 Uhr - 13:30 Uhr (Ferienmodul)
 
 In allen Angeboten ab 13:30 (Nachmittagsbetreuung) wird Ihr Kind bei den
 Hausaufgaben betreut und nimmt am Mittagessen teil.
@@ -104,7 +90,8 @@ In den Jahrgangsstufen 1 bis 4, ist die Ferienbetreuung in dem Beitrag der
 ergänzenden Betreuung enthalten. Wenn Sie nur das Angebot der verlässliche
 Halbtagsgrundschule annehmen, so haben Sie **keine** Ferienbetreuung.
 
-In den Jahrgangsstufen 5 bis 6, wird Ihr Kind in den Ferien **nicht** betreut.
+In den Jahrgangsstufen 5 bis 6, wird Ihr Kind in den Ferien auf Antrag betreut
+werden.
 
 Sie können für Ihr Kind -- egal welcher Jahrgangsstufe -- eine kostenpflichtige
 Ferienbetreuung beantragen. Die Betreuungszeiten sind die selben wie bei der
@@ -113,44 +100,28 @@ ergänzende Betreuung, hinzu kommt der Zeitraum 07:30 - 13:30.
 Die Formulare finden Sie im Abschnitt [ergänzende
 Betreuung](/hortbetreuung/#hort).
 
-Kinder die im Zeitraum zwischen dem Ende des Kitajahres (bis zum 31.7.) und
-Beginn des Schuljahres (ab dem 1.8., die Einschulung findet meistens später
-statt) betreut werden müssen, füllen den Antrag auf ergänzende Betreuung für die
-Jahrgangsstufen 1 bis 4 ganz normal aus. Damit wird Ihr Kind automatisch in der
-Übergangszeit bis zum Schulstart betreut.
+Während der Sommerferien ist die Einrichtung nicht geschlossen, jedoch sollte
+aus pädagogischen Gründen jedes Kind in dieser Zeit drei Wochen Urlaub bekommen.
 {: .notice--info}
-
-**TODO:**
-Muss das Kind 3 Wochen am Stück im Schuljahr aus dem Hort genommen werden? Wie
-ist das beim Übergang von Kita -> Schule, da auch? Wie ist das bei uns an der
-Schule, immer in den Sommerferien?<br><br>
-Wo müssen die Kinder in der Ferienzeit hingebracht werden?
-{: .notice--warning}
 
 # Mittagessen
 
 Ihr Kind kann in unserer Schule an einem Mittagessen teilnehmen. Wenn Ihr Kind
-in der ergänzenden Betreuung ist, so ist in den Gebühren das Mittagessen
+in der ergänzenden Betreuung ist, so ist das Mittagessen in den Gebühren
 enthalten.
 
-Derzeit werden wir von der [Firma LUNA](http://www.luna.de/) (Vollwert Catering)
-täglich mit frischem Schulessen versorgt, welches über eine Mitarbeiterin in der
-Mena (im Hortgebäude) an Ihr Kind in einem sozialen Gruppenumfeld ausgeteilt und
-verzehrt wird.
+Derzeit werden wir von der [GREENs UNLIMITED](http://www.greens-unlimited.de/)
+(Vollwert Catering) täglich mit frischem Schulessen versorgt, welches über eine
+Mitarbeiterin in der Mena (im Hortgebäude) an Ihr Kind in einem sozialen
+Gruppenumfeld ausgeteilt und verzehrt wird.
 
-Das Catering-Unternehmen wird alle 3 Jahre vom Schulamt europaweit
+Das Catering-Unternehmen wird alle drei Jahre vom Schulamt europaweit
 ausgeschrieben, wobei die Lehrer-, Schüler und Elternschaft einen signifikanten
 und direkten Einfluss auf die Auswahl des Unternehmens haben. Die nächste
-Ausschreibung findet zum 1.8.2017 statt.
+Ausschreibung findet zum 1.8.2020 statt.
 
-**TODO:**
-Gibt es auch eine Möglichkeit auch Mittagessen ohne ergänzende Förderung?
-Was ist mit älteren Kindern? Wann sind die Essenszeiten?
-Etwas über die Essensrichtung sagen?
-{: .notice--warning}
+# Noch Fragen?
 
-# Noch offene Fragen?
-
-Sollte Sie noch offene Fragen haben, dann können Sie sich an unsere
+Sollte Sie noch Fragen haben, dann können Sie sich an unsere
 koordinierende Erzieherin -- [Simone
 Melz](/kontakt#koordinierende_erzieherin) -- wenden.

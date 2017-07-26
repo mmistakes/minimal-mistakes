@@ -12,29 +12,37 @@ main:
   #   url: /sitemap/
 
 ags:
-  - title: '<i class="fa fa-gbp"></i> Englisch AG'
+  - title: "<i class='fa fa-gbp'></i> AG Englisch"
     url: '/ags/#englisch_ag'
-  - title: '<i class="fa fa-paper-plane"></i> Basteln AG'
+  - title: "<i class='fa fa-paper-plane'></i> AG Basteln"
     url: '/ags/#basteln_ag'
-  - title: '<i class="fa fa-gavel"></i> Werken AG'
+  - title: "<i class='fa fa-gavel'></i> AG Werken"
     url: '/ags/#werken_ag'
-  - title: '<i class="fa fa-headphones"></i> Handarbeits AG'
+  - title: "<i class='fa fa-headphones'></i> AG Handarbeit"
     url: '/ags/#handarbeits_ag'
-  - title: '<i class="fa fa-tint"></i> Töpfern AG'
+  - title: "<i class='fa fa-tint'></i> AG Töpfern"
     url: '/ags/#toepfern_ag'
-  - title: '<i class="fa">𝄞</i> Flöten AG'
+  - title: "<i class='fa fa-music'></i> AG Flöten"
     url: '/ags/#floeten_ag'
-  - title: '<i class="fa fa-music"></i> Musical AG'
-    url: '/ags/#musical_ag'
-  - title: '<i class="fa">♚</i> Schach AG'
+  - title: "<i class='fa'>🎹</i> AG Klavier"
+    url: '/ags/#klavier_ag'
+  - title: "<i class='fa'> 🎸 </i> AG Gitarre"
+    url: '/ags/#gitarre_ag'
+  - title: "<i class='fa'>♚</i> AG Schach"
     url: '/ags/#schach_ag'
-  - title: '<i class="fa fa-ticket"></i> Zirkus AG'
+  - title: "<i class='fa'>🎪</i> AG Zirkus"
     url: '/ags/#zirkus_ag'
-  - title: '<i class="fa fa-futbol-o"></i> Fussball AG'
+  - title: "<i class='fa fa-group'></i> AG Kleine Spiele"
+    url: '/ags/#kleine_spiele_ag'
+  - title: "<i class='fa fa-anchor'></i> AG Kuttersegeln"
+    url: '/ags/#kuttersegeln_ag'
+  - title: "<i class='fa'>🏃</i> AG Leichtathletik / Basketball"
+    url: '/ags/#leichtathletik_ag'
+  - title: "<i class='fa fa-futbol-o'></i> AG Fußball"
     url: '/ags/#fussball_ag'
 
 schulstart:
-  - title: '<i class="fa fa-calendar"></i> Termine rundum Einschulung'
+  - title: '<i class="fa fa-calendar"></i> Termine rundum die Einschulung'
     url: '/schulstart/#termine'
   - title: '<i class="fa fa-picture-o"></i> Kurzporträt unserer Schule'
     url: '/schulstart/#portrait'
@@ -42,5 +50,5 @@ schulstart:
     url: '/schulstart/#anmeldung'
   - title: '<i class="fa fa-stethoscope"></i> Einschulungsuntersuchung'
     url: '/schulstart/#untersuchung'
-  - title: '<i class="fa fa-child"></i> Anmeldung zur ergänzenden Betreuung (Schulhort)'
+  - title: '<i class="fa fa-child"></i> Anmeldung zur ergänzenden Förderung und Betreuung'
     url: '/schulstart/#hort'
