@@ -331,7 +331,7 @@ N.N
 
 | Kursleiter*in | Wann? | Wo? | Für wen? |
 |---|---|---|---|
-| Frau Zheng | mittwochs, 13:30 - 18:30 (mehrere Gruppen) | Musikraum | 1. - 6. Klasse |
+| Frau [<i class='fa fa-globe'>&nbsp;</i>Zheng](http://www.musikschule-spandau-berlin.de/34-0-Startseite.html) | mittwochs, 13:30 - 18:30 (mehrere Gruppen) | Musikraum | 1. - 6. Klasse |
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
