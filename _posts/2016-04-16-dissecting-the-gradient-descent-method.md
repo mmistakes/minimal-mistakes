@@ -9,7 +9,7 @@ tags:
 excerpt: A tutorial on the Gradient Descent method, done from scratch
 ---
 
-A full Jupyter notebook outlining what is done in this post is reachable [here](https://github.com/martinapugliese/ds-playground/blob/master/supervised-learning/Gradient%20Descent.ipynb).
+A full Jupyter notebook outlining what is done in this post is reachable [here](https://github.com/martinapugliese/tales-science-data/blob/master/maths/algorithms/gradient-descent.ipynb).
 
 Gradient Descent is a mathematical optimization method used to minimize functions in the form of a sum: 
 
