@@ -25,6 +25,8 @@ gallery:
     image_path: /assets/images/posts/2017/07/zustrich-z-klounom/kloun-9.jpg
   - url: /assets/images/posts/2017/07/zustrich-z-klounom/kloun-10.jpg
     image_path: /assets/images/posts/2017/07/zustrich-z-klounom/kloun-10.jpg
+categories:
+  - Табір Зернятко
 ---
 
 {% include gallery caption="Фото" %}
