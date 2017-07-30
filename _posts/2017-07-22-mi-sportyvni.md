@@ -35,6 +35,8 @@ gallery:
     image_path: /assets/images/posts/2017/07/mi-sportyvni/sport-14.jpg
   - url: /assets/images/posts/2017/07/mi-sportyvni/sport-15.jpg
     image_path: /assets/images/posts/2017/07/mi-sportyvni/sport-15.jpg
+categories:
+  - Табір Зернятко
 ---
 
 {% include gallery caption="Фото" %}
