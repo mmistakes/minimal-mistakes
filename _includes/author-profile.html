@@ -147,6 +147,14 @@
         </li>
       {% endif %}
 
+      {% if author.stackexchange %}
+      <li>
+        <a href="https://stackexchange.com/users/{{ author.stackexchange }}" itemprop="sameAs">
+          <i class="fa fa-fw fa-stack-exchange" aria-hidden="true"></i> Stackexchange
+        </a>
+      </li>
+      {% endif %}
+
       {% if author.lastfm %}
         <li>
           <a href="https://last.fm/user/{{ author.lastfm }}" itemprop="sameAs">
