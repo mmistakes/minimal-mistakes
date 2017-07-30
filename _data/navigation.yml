@@ -12,40 +12,13 @@ main:
     url: https://reg.isuo.org/preschools/view/id/40964
 
 sidebar-menu:
+  - title: Головна
+    url: /
   - title: Наша школа
+    url: /news
     children:
-      - title: "Як нас знайти"
-        url: /docs/quick-start-guide/
-      - title: "Історія школи"
-        url: /docs/structure/
-      - title: "Наші досягнення"
-        url: /docs/installation/
       - title: "Візитка"
-        url: /docs/upgrading/
+        url: /contacts
 
   - title: Звіти директора
     url: /reports
-
-  - title: Управління
-    children:
-      - title: "Графік прийому громадян"
-        url: /docs/posts/
-      - title: "Мережа класів"
-        url: /docs/pages/
-      - title: "Адміністрація школи"
-        url: /docs/collections/
-      - title: "Правила прийому до 1 класу"
-        url: /docs/helpers/
-      - title: "Схема управління"
-        url: /docs/utility-classes/
-
-  - title: Навчальний процес
-    children:
-      - title: "Розклад дзвінків"
-        url: /docs/stylesheets/
-      - title: "Графік навчального процесу"
-        url: /docs/javascript/
-      - title: "Позакласні заняття"
-        url: /docs/javascript/
-      - title: "Конкурси"
-        url: /docs/javascript/
