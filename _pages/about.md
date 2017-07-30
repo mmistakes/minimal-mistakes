@@ -23,7 +23,7 @@ Hi! :relaxed:. I'm Harsh Gadgil, a data scientist and software developer residin
 
 ## More About Me
 
-I currently work as a data engineer at Bell Canada. I graduated with a masters degree in Computer Science in April 2017, specializing in Data Mining, at the University of Guelph, Canada. I also hold a Bachelor's degree in Computer Engineering from the [University of Pune](http://www.unipune.ac.in/). Due to my engineering background, I'm deeply passionate about building solutions to complex problems to improve people's lives. Due to my science background, I enjoy critically reasoning about the technical nuances and empirical evaluation of such solutions. 
+I currently work as a data engineer at Bell Canada. I graduated with a masters degree in Computer Science in April 2017, specializing in Data Mining, at the [University of Guelph](http://www.uoguelph.ca/). I also hold a Bachelor's degree in Computer Engineering from the [University of Pune](http://www.unipune.ac.in/). Due to my engineering background, I'm deeply passionate about building solutions to complex problems to improve people's lives. Due to my science background, I enjoy critically reasoning about the technical nuances and empirical evaluation of such solutions. 
 
 ## What I Do
 
