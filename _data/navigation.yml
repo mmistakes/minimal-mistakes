@@ -17,7 +17,7 @@ docs:
       - title: "Get the Source Code"
         url: /sourceCode
       - title: "JavaDoc"
-        url: /comingSoon/
+        url: https://big-iot.gitlab.io/lib-java/
       - title: "Wiki"
         url: /comingSoon/
 main:
