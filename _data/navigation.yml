@@ -21,7 +21,7 @@ docs:
       - title: "Wiki"
         url: /comingSoon/
 main:
-  - title: "Download API v0.7"
+  - title: "Download API v0.8"
     url: /download
   - title: "Visit the (pre-release) Marketplace"
     url: https://market.big-iot.org
