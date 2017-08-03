@@ -45,7 +45,7 @@ To override the default [Sass](http://sass-lang.com/guide) (located in theme's
 
 1. Copy directly from the Minimal Mistakes theme gem
 
-   - Go to your local Basically Basic gem installation directory (run 
+   - Go to your local Minimal Mistakes gem installation directory (run 
      `bundle show minimal-mistakes-jekyll` to get the path to it).
    - Copy the contents of `/assets/css/main.scss` from there to 
      `<your_project>`.
