@@ -309,19 +309,56 @@ a. Edit
 sudo vim /etc/wpa_supplicant/wpa_supplicant.conf
 ```
 
+
+
 b. Adapt according to your security protocol
+
+See specification [wpa_supplicant.conf](http://w1.fi/gitweb/gitweb.cgi?p=hostap.git;a=blob_plain;f=wpa_supplicant/wpa_supplicant.conf)
+
 ```text
-country=FR
-ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
-update_config=1
-network={
- ssid="YOUR_NETWORK_SSID"
- psk="xxxxxxxxxx"
- proto=WPA
- key_mgmt=WPA-PSK
- pairwise=TKIP
- auth_alg=OPEN
-}
+# proto: list of accepted protocols
+# WPA = WPA/IEEE 802.11i/D3.0
+# RSN = WPA2/IEEE 802.11i (also WPA2 can be used as an alias for RSN)
+# If not set, this defaults to: WPA RSN
+proto=WPA
+
+# key_mgmt: list of accepted authenticated key management protocols
+# WPA-PSK = WPA pre-shared key (this requires 'psk' field)
+# WPA-EAP = WPA using EAP authentication (this can use an external
+#	program, e.g., Xsupplicant, for IEEE 802.1X EAP Authentication
+# IEEE8021X = IEEE 802.1X using EAP authentication and (optionally) dynamically
+#	generated WEP keys
+# NONE = WPA is not used; plaintext or static WEP could be used
+# If not set, this defaults to: WPA-PSK WPA-EAP
+key_mgmt=WPA-PSK
+# auth_alg: list of allowed IEEE 802.11 authentication algorithms
+# OPEN = Open System authentication (required for WPA/WPA2)
+# SHARED = Shared Key authentication (requires static WEP keys)
+# LEAP = LEAP/Network EAP (only used with LEAP)
+# If not set, automatic selection is used (Open System with LEAP enabled if
+# LEAP is allowed as one of the EAP methods).
+auth_alg=OPEN
+# pairwise: list of accepted pairwise (unicast) ciphers for WPA
+# CCMP = AES in Counter mode with CBC-MAC [RFC 3610, IEEE 802.11i/D7.0]
+# TKIP = Temporal Key Integrity Protocol [IEEE 802.11i/D7.0]
+# NONE = Use only Group Keys (deprecated, should not be included if APs support
+#	pairwise keys)
+# If not set, this defaults to: CCMP TKIP
+pairwise=CCMP
+
+# psk: WPA preshared key; 256-bit pre-shared key
+# The key used in WPA-PSK mode can be entered either as 64 hex-digits, i.e.,
+# 32 bytes or as an ASCII passphrase (in which case, the real PSK will be
+# generated using the passphrase and SSID). ASCII passphrase must be between
+# 8 and 63 characters (inclusive).
+# This field is not needed, if WPA-EAP is used.
+# Note: Separate tool, wpa_passphrase, can be used to generate 256-bit keys
+# from ASCII passphrase. This process uses lot of CPU and wpa_supplicant
+# startup and reconfiguration time can be optimized by generating the PSK only
+# only when the passphrase or SSID has actually changed.
+
+psk=*******
+
 ```
 
 c. Edit 
