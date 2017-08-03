@@ -2,7 +2,7 @@
    STYLE RESETS
    ========================================================================== */
 
-@include border-box-sizing;
+* { box-sizing: border-box; }
 
 html {
   /* apply a natural box layout model to all elements */

@@ -12,13 +12,15 @@
   z-index: 20;
 
   &__inner-wrap {
-    @include container;
     @include clearfix;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    max-width: 100%;
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: justify;
-     justify-content: space-between;
-    padding: 1em 1em 1em;
+    justify-content: space-between;
     font-family: $sans-serif-narrow;
 
     @include breakpoint($x-large) {
@@ -47,7 +49,11 @@
 }
 
 .masthead__menu {
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
   width: 100%;
+  clear: both;
 
   .site-nav {
     margin-left: 0;
