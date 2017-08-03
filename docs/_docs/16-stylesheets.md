@@ -164,7 +164,7 @@ And `$susy` is used for setting [the grid](http://susy.oddbird.net/) the theme u
 
 ### Disabling Animations
 
-You can disable either the fade-in intro animation, element tranisition animations, or both by overriding the corresponding variables. For example if you wanted to disable all animations you could include the following lines:
+You can disable either the fade-in intro animation, element transition animations, or both by overriding the corresponding variables. For example if you wanted to disable all animations you could include the following lines:
 
 ```scss
 $intro-transition  : none;
