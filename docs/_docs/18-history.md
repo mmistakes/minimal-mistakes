@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-08-03T16:18:35-04:00
+last_modified_at: 2017-08-04T11:58:25-04:00
 ---
 
 ## Unreleased
@@ -20,6 +20,7 @@ last_modified_at: 2017-08-03T16:18:35-04:00
 ### Bug Fixes
 
 - Fix Sass `DEPRECATION WARNING: Passing a string to call()` by [upgrading Susy to version 3](https://github.com/mmistakes/minimal-mistakes/commit/387f8149d6270b876f224a57a07062ffb0647938). [#1114](https://github.com/mmistakes/minimal-mistakes/issues/1114)
+- Fix disappearing author profile links due to tapping the "Follow" button and changing a browser's viewport width to > `$lg`. [#1136](https://github.com/mmistakes/minimal-mistakes/issues/1136)
 
 ### Maintenance
 
