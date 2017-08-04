@@ -7,6 +7,7 @@
 - Update Susy to version 3 and rewrite grid CSS to be more readable.
 - Refactor intro animations into a separate Sass variable `$intro-transition` to allow for customizing. [#1147](https://github.com/mmistakes/minimal-mistakes/pull/1147)
 - Add [**jekyll-data**](https://github.com/ashmaroli/jekyll-data) as a dependency to read data files from theme-gem. [#1131](https://github.com/mmistakes/minimal-mistakes/pull/1131)
+- Add support for customizing header image alternative text through YAML Front Matter. [#1138](https://github.com/mmistakes/minimal-mistakes/pull/1138)
 
 ### Bug Fixes
 
