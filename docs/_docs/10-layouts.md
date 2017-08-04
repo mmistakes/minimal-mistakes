@@ -273,6 +273,14 @@ header:
   image: http://some-site.com/assets/images/image.jpg
 ```
 
+To provide a custom alt tag for screen readers:
+
+```yaml
+header:
+  image: /assets/images/unsplash-image-1.jpg
+  image_description: "A description of the image"
+```
+
 To include a caption or attribution for the image:
 
 ```yaml
