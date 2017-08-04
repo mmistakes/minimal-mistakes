@@ -1,4 +1,4 @@
-## Unreleased
+## [4.5.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.5.0)
 
 ### Enhancements
 
@@ -18,6 +18,7 @@
 
 - Replace reference to "Basically Basic theme" with **Minimal Mistakes**. [#1149](https://github.com/mmistakes/minimal-mistakes/pull/1149)
 - Add documentation for disabling CSS3 animations. [#1150](https://github.com/mmistakes/minimal-mistakes/pull/1150)
+- Update quickstart, installation, and overriding defaults documentation. [#1151](https://github.com/mmistakes/minimal-mistakes/pull/1151)
 
 ## [4.4.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.4.2)
 

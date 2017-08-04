@@ -4,10 +4,10 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-08-04T12:24:12-04:00
+last_modified_at: 2017-08-04T12:32:47-04:00
 ---
 
-## Unreleased
+## [4.5.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.5.0)
 
 ### Enhancements
 
@@ -27,6 +27,7 @@ last_modified_at: 2017-08-04T12:24:12-04:00
 
 - Replace reference to "Basically Basic theme" with **Minimal Mistakes**. [#1149](https://github.com/mmistakes/minimal-mistakes/pull/1149)
 - Add documentation for disabling CSS3 animations. [#1150](https://github.com/mmistakes/minimal-mistakes/pull/1150)
+- Update quickstart, installation, and overriding defaults documentation. [#1151](https://github.com/mmistakes/minimal-mistakes/pull/1151)
 
 ## [4.4.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.4.2)
 
