@@ -267,6 +267,14 @@
          </li>
       {% endif %}
 
+      {% if author.meetup %}
+         <li>
+           <a href="https://www.meetup.com/members/{{ author.meetup }}" itemprop="sameAs">
+             <i class="fa fa-fw fa-meetup" aria-hidden="true"></i> Meetup
+           </a>
+         </li>
+      {% endif %}
+
       {% include author-profile-custom-links.html %}
     </ul>
   </div>
