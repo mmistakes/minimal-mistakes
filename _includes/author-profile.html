@@ -315,6 +315,14 @@
         {% endif %}
       {% endif %}
 
+      {% if author.skype %}
+         <li>
+           <a href="skype:{{ author.skype }}?chat" itemprop="sameAs">
+             <i class="fa fa-fw fa-skype" aria-hidden="true"></i> Skype
+           </a>
+         </li>
+      {% endif %}
+
       {% include author-profile-custom-links.html %}
     </ul>
   </div>
