@@ -254,7 +254,15 @@
       {% if author.reddit %}
          <li>
            <a href="https://www.reddit.com/user/{{ author.reddit }}" itemprop="sameAs">
-             <i class="fa fa-fw fa-reddit" aria-hidden="true"></i> reddit
+             <i class="fa fa-fw fa-reddit" aria-hidden="true"></i> Reddit
+           </a>
+         </li>
+      {% endif %}
+
+      {% if author.vk %}
+         <li>
+           <a href="https://www.vk.com/{{ author.vk }}" itemprop="sameAs">
+             <i class="fa fa-fw fa-vk" aria-hidden="true"></i> VK
            </a>
          </li>
       {% endif %}
