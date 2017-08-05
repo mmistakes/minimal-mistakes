@@ -251,6 +251,14 @@
          </li>
       {% endif %}
 
+      {% if author.reddit %}
+         <li>
+           <a href="https://www.reddit.com/user/{{ author.reddit}}" itemprop="sameAs">
+             <i class="fa fa-fw fa-reddit" aria-hidden="true"></i> reddit
+           </a>
+         </li>
+      {% endif %}
+
       {% include author-profile-custom-links.html %}
     </ul>
   </div>
