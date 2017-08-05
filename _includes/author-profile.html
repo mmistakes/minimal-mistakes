@@ -59,6 +59,22 @@
         </li>
       {% endif %}
 
+      {% if author.paypal %}
+        {% if author.paypal contains "://" %}
+          <li>
+            <a href="{{ author.paypal }}" itemprop="sameAs">
+              <i class="fa fa-fw fa-paypal" aria-hidden="true"></i> Paypal
+            </a>
+          </li>
+        {% else author.paypal %}
+          <li>
+            <a href="https://www.paypal.me/{{ author.paypal }}" itemprop="sameAs">
+              <i class="fa fa-fw fa-paypal" aria-hidden="true"></i> Paypal
+            </a>
+          </li>
+        {% endif %}
+      {% endif %}
+
       {% if author.twitter %}
         <li>
           <a href="https://twitter.com/{{ author.twitter }}" itemprop="sameAs">
