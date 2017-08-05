@@ -97,6 +97,8 @@ author:
   lastfm           :
   linkedin         :
   pinterest        :
+  quora            :
+  reddit           :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
@@ -106,8 +108,6 @@ author:
   weibo            :
   xing             :
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
-  quora            :
-  reddit           :
 
 # Reading Files
 include:
