@@ -283,6 +283,22 @@
          </li>
       {% endif %}
 
+      {% if author.yelp %}
+        {% if author.yelp contains "://" %}
+          <li>
+            <a href="{{ author.yelp }}" itemprop="sameAs">
+              <i class="fa fa-fw fa-yelp" aria-hidden="true"></i> Yelp
+            </a>
+          </li>
+        {% else author.yelp %}
+          <li>
+            <a href="https://{{ author.yelp }}.yelp.com/" itemprop="sameAs">
+              <i class="fa fa-fw fa-yelp" aria-hidden="true"></i> Yelp
+            </a>
+          </li>
+        {% endif %}
+      {% endif %}
+
       {% include author-profile-custom-links.html %}
     </ul>
   </div>
