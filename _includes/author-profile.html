@@ -275,6 +275,14 @@
          </li>
       {% endif %}
 
+      {% if author.angellist %}
+         <li>
+           <a href="https://angel.co/{{ author.angellist }}" itemprop="sameAs">
+             <i class="fa fa-fw fa-angellist" aria-hidden="true"></i> AngelList
+           </a>
+         </li>
+      {% endif %}
+
       {% include author-profile-custom-links.html %}
     </ul>
   </div>
