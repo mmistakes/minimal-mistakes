@@ -315,6 +315,14 @@
         {% endif %}
       {% endif %}
 
+      {% if author.twitch %}
+         <li>
+           <a href="https://twitch.tv/{{ author.twitch }}" itemprop="sameAs">
+             <i class="fa fa-fw fa-twitch" aria-hidden="true"></i> Twitch
+           </a>
+         </li>
+      {% endif %}
+
       {% if author.skype %}
          <li>
            <a href="skype:{{ author.skype }}?chat" itemprop="sameAs">
