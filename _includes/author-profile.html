@@ -243,6 +243,14 @@
         </li>
       {% endif %}
 
+      {% if author.quora %}
+         <li>
+           <a href="https://www.quora.com/profile/{{ author.quora}}" itemprop="sameAs">
+             <i class="fa fa-fw fa-quora" aria-hidden="true"></i> Quora
+           </a>
+         </li>
+      {% endif %}
+
       {% include author-profile-custom-links.html %}
     </ul>
   </div>
