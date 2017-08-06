@@ -1,3 +1,9 @@
+## Unreleased
+
+### Enhancements
+
+- Add Greek localized UI text strings. [#1159](https://github.com/mmistakes/minimal-mistakes/pull/1159)
+
 ## [4.5.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.5.0)
 
 ### Enhancements
