@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-08-06T10:31:32-04:00
+last_modified_at: 2017-08-06T10:43:26-04:00
 ---
 
 ## Unreleased
@@ -12,6 +12,7 @@ last_modified_at: 2017-08-06T10:31:32-04:00
 ### Enhancements
 
 - Add Greek localized UI text strings. [#1159](https://github.com/mmistakes/minimal-mistakes/pull/1159)
+- Remove blank YAML Front Matter from JavaScript banner. [#1158](https://github.com/mmistakes/minimal-mistakes/issues/1158)
 
 ## [4.5.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.5.0)
 
