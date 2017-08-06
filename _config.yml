@@ -83,6 +83,7 @@ author:
   location         : "Somewhere"
   email            :
   uri              :
+  angellist        :
   bitbucket        :
   codepen          :
   dribbble         :
@@ -96,17 +97,24 @@ author:
   instagram        :
   lastfm           :
   linkedin         :
+  meetup           :
+  paypal           : # https://paypal.me/yourname
   pinterest        :
+  quora            :
+  reddit           :
+  skype            :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
+  twitch           :
   twitter          :
+  vk               :
   vine             :
   weibo            :
   xing             :
+  yelp             : # "https://username.yelp.com"
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
-
 
 # Reading Files
 include:
