@@ -36,7 +36,7 @@ A few changes are necessary to Abdul's code to get it to work with Spark 2.x. Sp
 
 Here is what the final application looks like:
 
-The `Spark` class:
+The `Spark` singleton object:
 {% highlight scala linenos %}
 import java.util.Properties
 import com.google.common.collect.Lists
