@@ -41,6 +41,18 @@ Then run Bundler to install the theme gem and dependencies:
 bundle install
 ```
 
+#### Ruby Gem method with a local minimal-mistakes repository
+
+If you are planning to make more involved changes to the theme, like adding more social shares, reordering the icons in the author information or adjust several theme-files, there is an easy way to use a local copy of *minimal-mistakes* with the gem-based method.
+
+For this, download or clone the [mininmal-mistakes repository](https://github.com/mmistakes/minimal-mistakes) to a local folder and change the `Gemfile` of your site to use this local copy
+
+```ruby
+gem "minimal-mistakes-jekyll", path: "path/to/local/minimal-mistakes"
+```
+If you like to be able to incorporate updates, one easy way is to create a local `my-site` branch inside your *minimal-mistakes* repository, where you make adjustments as you wish.
+On the `master` branch you can pull updates from GitHub and merge the changes to your `my-site` branch.
+
 ### GitHub Pages Compatible Method
 
 Fork the [Minimal Mistakes theme](https://github.com/mmistakes/minimal-mistakes/fork), then rename the repo to **USERNAME.github.io** --- replacing **USERNAME** with your GitHub username.
