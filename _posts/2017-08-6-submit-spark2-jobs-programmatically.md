@@ -88,12 +88,13 @@ The `SparkClient` class:
 import org.apache.hadoop.conf.Configuration;
 import org.apache.spark.SparkConf;
 import org.apache.spark.deploy.yarn.Client;
+import org.apache.spark.deploy.yarn.ClientArguments;
 import java.util.Arrays;
 import java.util.List;
 
 public class SparkClient {
   public static void run(List<String> args, SparkConf sparkConf) {
-    ClientArguments cArgs = new ClientArguments(args.ToArray(new String[args.size()]), sparkConf);
+    ClientArguments cArgs = new ClientArguments(args.ToArray(new String[args.size()]));
     Client client = new Client(cArgs, new Configuration(), sparkConf);
 
     // Submit the Spark app
