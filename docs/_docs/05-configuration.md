@@ -137,7 +137,7 @@ Breadcrumb start link text and separator character can both be changed in the [U
 
 ### Reading Time
 
-Enable estimated reading time snippets with `read_time: true` in YAML Front Matter. `200` has been set as the default words per minute value --- which can be changed by adjusting `words_per_minutes: ` in `_config.yml`.
+Enable estimated reading time snippets with `read_time: true` in YAML Front Matter. `200` has been set as the default words per minute value --- which can be changed by adjusting `words_per_minute: ` in `_config.yml`.
 
 ![reading time example]({{ "/assets/images/mm-read-time-example.jpg" | absolute_url }})
 
