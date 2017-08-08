@@ -24,9 +24,13 @@
 
   @include breakpoint($large) {
     float: right;
-    width: span(10 of 12);
-    padding-left: gutter(0.5 of 12);
-    padding-right: gutter(2 of 12);
+    width: calc(100% - #{$right-sidebar-width-narrow});
+    padding-right: $right-sidebar-width-narrow;
+  }
+
+  @include breakpoint($x-large) {
+    width: calc(100% - #{$right-sidebar-width});
+    padding-right: $right-sidebar-width;
   }
 
   .page__inner-wrap {
@@ -409,9 +413,11 @@
 
   @include breakpoint($large) {
     float: right;
-    width: span(10 of 12);
-    padding-left: gutter(0.5 of 12);
-    padding-right: gutter(2 of 12);
+    width: calc(100% - #{$right-sidebar-width-narrow});
+  }
+
+  @include breakpoint($x-large) {
+    width: calc(100% - #{$right-sidebar-width});
   }
 
   a {
