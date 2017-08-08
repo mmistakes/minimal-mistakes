@@ -6,6 +6,7 @@
 - Remove blank YAML Front Matter from JavaScript banner. [#1158](https://github.com/mmistakes/minimal-mistakes/issues/1158)
 - Improve `page` and `archive` layouts to visually center main content and harmonize sidebar widths and placement. [#1166](https://github.com/mmistakes/minimal-mistakes/pull/1166)
 - Increase font-size of code blocks.
+- Reduce indent of nested "table of contents" links.
 
 ### Maintenance
 
