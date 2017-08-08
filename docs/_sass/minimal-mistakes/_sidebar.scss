@@ -31,10 +31,6 @@
     }
   }
 
-  @include breakpoint($x-large) {
-    padding-right: 0;
-  }
-
   h2, h3, h4, h5, h6 {
     margin-bottom: 0;
     font-family: $sans-serif-narrow;
@@ -55,15 +51,18 @@
   margin-bottom: 1em;
 
   @include breakpoint($large) {
-    position: relative;
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
     width: $right-sidebar-width-narrow;
-    margin-left: span(0.5 of 12);
+    margin-right: -1 * $right-sidebar-width-narrow;
+    padding-left: 1em;
     z-index: 10;
   }
 
   @include breakpoint($x-large) {
     width: $right-sidebar-width;
+    margin-right: -1 * $right-sidebar-width;
   }
 }
 

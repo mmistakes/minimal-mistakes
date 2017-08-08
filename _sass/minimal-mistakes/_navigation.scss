@@ -58,6 +58,7 @@
 
 .pagination {
   @include clearfix();
+  float: left;
   margin-top: 1em;
   padding-top: 1em;
   width: 100%;

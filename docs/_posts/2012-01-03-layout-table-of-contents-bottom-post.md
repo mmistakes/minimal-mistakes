@@ -1,5 +1,5 @@
 ---
-title: "Layout: Post with Table Of Contents"
+title: "Layout: Post with Table Of Contents Included at Bottom"
 header:
   image: assets/images/unsplash-image-9.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
@@ -7,9 +7,7 @@ tags:
   - table of contents
 ---
 
-{% include toc title="Unique Title" icon="file-text" %}
-
-Testing Kramdown auto-generated table of contents with unique title and icon assigned in the include like so:
+Testing Kramdown auto-generated table of contents included near the end of post content. If positioned correctly with CSS, it should appear in aligned (and to the right) of the main content.
 
 ```liquid
 {% raw %}{% include toc title="Unique Title" icon="file-text" %}{% endraw %}
@@ -98,3 +96,5 @@ Make any link standout more when applying the `.btn` class.
 
 **Watch out!** You can also add notices by appending `{: .notice}` to a paragraph.
 {: .notice}
+
+{% include toc title="Unique Title" icon="file-text" %}

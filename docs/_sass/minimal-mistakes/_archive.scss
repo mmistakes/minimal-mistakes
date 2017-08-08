@@ -5,14 +5,15 @@
 .archive {
   margin-bottom: 2em;
 
-  @include breakpoint($medium) {
-    width: span(12 of 12);
-  }
-
   @include breakpoint($large) {
     float: right;
-    padding-left: gutter(0.5 of 12);
-    width: span(10 of 12);
+    width: calc(100% - #{$right-sidebar-width-narrow});
+    padding-right: $right-sidebar-width-narrow;
+  }
+
+  @include breakpoint($x-large) {
+    width: calc(100% - #{$right-sidebar-width});
+    padding-right: $right-sidebar-width;
   }
 
   a {
@@ -84,17 +85,6 @@
    ========================================================================== */
 
 .list__item {
-  @include breakpoint($medium) {
-    padding-right: $right-sidebar-width-narrow;
-  }
-
-  @include breakpoint($large) {
-    padding-right: $right-sidebar-width;
-  }
-
-  @include breakpoint($x-large) {
-    padding-right: $right-sidebar-width-wide;
-  }
 
   .page__meta {
     margin: 0 0 4px;
