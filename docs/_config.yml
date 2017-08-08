@@ -254,8 +254,8 @@ permalink: /:categories/:title/
 timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
-# Plugins
-gems:
+# Plugins (formerly gems:)
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
