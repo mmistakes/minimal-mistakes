@@ -1,8 +1,8 @@
 main:
-  - title: "Quick-Start Guide"
-    url: /docs/quick-start-guide/
+  - title: "About Me"
+    url: /_pages/about.md
   - title: "Posts"
-    url: /year-archive/
+    url: /_posts/
   - title: "Categories"
     url: /categories/
   - title: "Tags"
@@ -11,5 +11,4 @@ main:
     url: /page-archive/
   - title: "Collections"
     url: /collection-archive/
-  - title: "External Link"
-    url: https://google.com
+  
