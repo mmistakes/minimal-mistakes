@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-08-08T15:19:23-04:00
+last_modified_at: 2017-08-09T08:20:21-04:00
 ---
 
 ## Unreleased
@@ -16,6 +16,10 @@ last_modified_at: 2017-08-08T15:19:23-04:00
 - Improve `page` and `archive` layouts to visually center main content and harmonize sidebar widths and placement. [#1166](https://github.com/mmistakes/minimal-mistakes/pull/1166)
 - Increase font-size of code blocks.
 - Reduce indent of nested "table of contents" links.
+
+## Bug Fixes
+
+- Fix positioning of sidebar table of contents when using `layout: splash`. [#1169](https://github.com/mmistakes/minimal-mistakes/issues/1169)
 
 ### Maintenance
 

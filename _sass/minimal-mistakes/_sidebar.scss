@@ -66,6 +66,19 @@
   }
 }
 
+.splash .sidebar__right {
+
+  @include breakpoint($large) {
+    position: relative;
+    float: right;
+    margin-right: 0;
+  }
+
+  @include breakpoint($x-large) {
+    margin-right: 0;
+  }
+}
+
 /*
    Author profile and links
    ========================================================================== */

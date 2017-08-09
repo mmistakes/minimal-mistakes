@@ -8,6 +8,10 @@
 - Increase font-size of code blocks.
 - Reduce indent of nested "table of contents" links.
 
+## Bug Fixes
+
+- Fix positioning of sidebar table of contents when using `layout: splash`. [#1169](https://github.com/mmistakes/minimal-mistakes/issues/1169)
+
 ### Maintenance
 
 - Fix typo `words_per_minute` typo in documentation. [#1164](https://github.com/mmistakes/minimal-mistakes/pull/1164)
