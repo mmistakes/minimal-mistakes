@@ -16,6 +16,7 @@
 
 - Fix typo `words_per_minute` typo in documentation. [#1164](https://github.com/mmistakes/minimal-mistakes/pull/1164)
 - Remove outside and right borders in `table`s.
+- Adjust width of `.sidebar` to match `.sidebar__right`.
 
 ## [4.5.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.5.0)
 

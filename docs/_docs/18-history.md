@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-08-09T08:20:21-04:00
+last_modified_at: 2017-08-09T08:30:18-04:00
 ---
 
 ## Unreleased
@@ -25,6 +25,7 @@ last_modified_at: 2017-08-09T08:20:21-04:00
 
 - Fix typo `words_per_minute` typo in documentation. [#1164](https://github.com/mmistakes/minimal-mistakes/pull/1164)
 - Remove outside and right borders in `table`s.
+- Adjust width of `.sidebar` to match `.sidebar__right`.
 
 ## [4.5.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.5.0)
 

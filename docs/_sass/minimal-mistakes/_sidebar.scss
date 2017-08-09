@@ -15,7 +15,7 @@
 
   @include breakpoint($large) {
     float: left;
-    width: span(2 of 12);
+    width: calc(#{$right-sidebar-width-narrow} - 1em);
     opacity: 0.75;
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
@@ -29,6 +29,10 @@
       /* calculate height of nav list */
       height: calc(100vh - 90px - 2em); // viewport height - approx. masthead height - main content top margin
     }
+  }
+
+  @include breakpoint($x-large) {
+    width: calc(#{$right-sidebar-width} - 1em);
   }
 
   h2, h3, h4, h5, h6 {
