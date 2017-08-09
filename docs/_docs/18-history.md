@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-08-09T09:02:47-04:00
+last_modified_at: 2017-08-09T12:59:12-04:00
 ---
 
 ## Unreleased
@@ -16,6 +16,7 @@ last_modified_at: 2017-08-09T09:02:47-04:00
 - Improve `page` and `archive` layouts to visually center main content and harmonize sidebar widths and placement. [#1166](https://github.com/mmistakes/minimal-mistakes/pull/1166)
 - Increase font-size of code blocks.
 - Reduce indent of nested "table of contents" links.
+- Extend [archive grid view](https://mmistakes.github.io/minimal-mistakes/docs/layouts/) to the right to better fill the page.
 
 ## Bug Fixes
 
@@ -27,6 +28,7 @@ last_modified_at: 2017-08-09T09:02:47-04:00
 - Fix typo `words_per_minute` typo in documentation. [#1164](https://github.com/mmistakes/minimal-mistakes/pull/1164)
 - Remove outside and right borders in `table`s.
 - Adjust width of `.sidebar` to match `.sidebar__right`.
+- Add sample documents to ["portfolio" collection](https://mmistakes.github.io/minimal-mistakes/portfolio/) for testing grid view.
 
 ## [4.5.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.5.0)
 
