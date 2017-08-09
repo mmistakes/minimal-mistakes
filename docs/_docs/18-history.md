@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-08-09T08:30:18-04:00
+last_modified_at: 2017-08-09T09:02:47-04:00
 ---
 
 ## Unreleased
@@ -20,6 +20,7 @@ last_modified_at: 2017-08-09T08:30:18-04:00
 ## Bug Fixes
 
 - Fix positioning of sidebar table of contents when using `layout: splash`. [#1169](https://github.com/mmistakes/minimal-mistakes/issues/1169)
+- Fix "follow" links `z-index` order to avoid overlapping issues. [#1167](https://github.com/mmistakes/minimal-mistakes/issues/1167)
 
 ### Maintenance
 

@@ -7,11 +7,16 @@
    ========================================================================== */
 
 .sidebar {
+  @include clearfix();
+  margin-bottom: 1em;
   -webkit-transform: translate3d(0, 0 , 0);
           transform: translate3d(0, 0 , 0);
 
-  @include clearfix();
-  margin-bottom: 1em;
+  @include breakpoint(max-width $large) {
+    /* fix z-index order of follow links */
+    position: relative;
+    z-index: 10;
+  }
 
   @include breakpoint($large) {
     float: left;
