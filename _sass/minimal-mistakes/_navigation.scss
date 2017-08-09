@@ -7,15 +7,14 @@
    ========================================================================== */
 
 .breadcrumbs {
-  @include container;
   @include clearfix;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 auto;
+  max-width: 100%;
   padding-left: 2em;
   padding-right: 2em;
   font-family: $sans-serif;
-  -webkit-animation: intro 0.3s both;
-          animation: intro 0.3s both;
+  -webkit-animation: $intro-transition;
+          animation: $intro-transition;
   -webkit-animation-delay: 0.30s;
           animation-delay: 0.30s;
 
@@ -34,11 +33,12 @@
     font-size: $type-size-6;
 
     @include breakpoint($large) {
-      @include span(10 of 12 last);
+      float: right;
+      width: span(10 of 12);
     }
 
     @include breakpoint($x-large) {
-      @include prefix(0.5 of 12);
+      padding-left: gutter(0.5 of 12);
     }
   }
 
@@ -57,10 +57,11 @@
    ========================================================================== */
 
 .pagination {
-  @include full();
   @include clearfix();
+  float: left;
   margin-top: 1em;
   padding-top: 1em;
+  width: 100%;
 
   ul {
     margin: 0;
@@ -275,7 +276,7 @@
 
       &:hover {
         color: $masthead-link-color-hover;
-        background: mix(#fff, $primary-color, 75%);
+        background: $navicon-link-color-hover;
       }
     }
 
@@ -433,14 +434,7 @@
     margin-left: -0.5em;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    color: #fff;
     font-weight: bold;
-    background: $primary-color;
-    border-radius: $border-radius;
-
-    &:hover {
-      color: #fff;
-    }
   }
 
   @include breakpoint(max-width ($large - 1px)) {
@@ -543,7 +537,7 @@
   }
 
   li ul > li a {
-    padding-left: 2rem;
+    padding-left: 1.75rem;
     font-weight: normal;
   }
 

@@ -1,4 +1,4 @@
-{% case site.categories.type %}
+{% case site.category_archive.type %}
   {% when "liquid" %}
     {% assign path_type = "#" %}
   {% when "jekyll-archives" %}
@@ -9,7 +9,7 @@
   {% assign path_type = nil %}
   {% assign crumb_path = '/' %}
 {% else %}
-  {% assign crumb_path = site.categories.path %}
+  {% assign crumb_path = site.category_archive.path %}
 {% endif %}
 
 <nav class="breadcrumbs">

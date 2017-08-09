@@ -45,7 +45,7 @@ To override the default [Sass](http://sass-lang.com/guide) (located in theme's
 
 1. Copy directly from the Minimal Mistakes theme gem
 
-   - Go to your local Basically Basic gem installation directory (run 
+   - Go to your local Minimal Mistakes gem installation directory (run 
      `bundle show minimal-mistakes-jekyll` to get the path to it).
    - Copy the contents of `/assets/css/main.scss` from there to 
      `<your_project>`.
@@ -161,3 +161,12 @@ And `$susy` is used for setting [the grid](http://susy.oddbird.net/) the theme u
   <img src="{{ '/assets/images/mm-susy-grid-overlay.jpg' | absolute_url }}" alt="Susy grid overlay for debugging">
   <figcaption>Susy grid debug overlay enabled.</figcaption>
 </figure>
+
+### Disabling Animations
+
+You can disable either the fade-in intro animation, element transition animations, or both by overriding the corresponding variables. For example if you wanted to disable all animations you could include the following lines:
+
+```scss
+$intro-transition  : none;
+$global-transition : none;
+```
