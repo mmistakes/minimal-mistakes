@@ -1,5 +1,5 @@
 main:
-  - title: "About Me Direct"
-    url: /_pages/about.md
-  - title: "About Me Shortcut"
+  - title: "Xoke on the Web"
+    url: /xoke/
+  - title: "About Me"
     url: /about/
