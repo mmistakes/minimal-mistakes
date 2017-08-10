@@ -1,5 +1,5 @@
 main:
   - title: "About Me Direct"
     url: /_pages/about.md
-  - title: "About Me Static"
-    url: /about
+  - title: "About Me Shortcut"
+    url: /about/
