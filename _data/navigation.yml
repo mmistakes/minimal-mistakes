@@ -1,3 +1,5 @@
 main:
+  - title: "Notes"
+    url: https://github.com/Xoke/octo-spork
   - title: "About Me"
     url: /about/
