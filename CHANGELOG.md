@@ -20,6 +20,7 @@
 - Remove outside and right borders in `table`s.
 - Adjust width of `.sidebar` to match `.sidebar__right`.
 - Add sample documents to ["portfolio" collection](https://mmistakes.github.io/minimal-mistakes/portfolio/) for testing grid view.
+- Fix typo in stylesheets documentation. [#1170](https://github.com/mmistakes/minimal-mistakes/pull/1170)
 
 ## [4.5.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.5.0)
 

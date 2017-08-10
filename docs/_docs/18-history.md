@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-08-09T12:59:12-04:00
+last_modified_at: 2017-08-10T14:46:00-04:00
 ---
 
 ## Unreleased
@@ -29,6 +29,7 @@ last_modified_at: 2017-08-09T12:59:12-04:00
 - Remove outside and right borders in `table`s.
 - Adjust width of `.sidebar` to match `.sidebar__right`.
 - Add sample documents to ["portfolio" collection](https://mmistakes.github.io/minimal-mistakes/portfolio/) for testing grid view.
+- Fix typo in stylesheets documentation. [#1170](https://github.com/mmistakes/minimal-mistakes/pull/1170)
 
 ## [4.5.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.5.0)
 
