@@ -55,7 +55,7 @@ To override the default [Sass](http://sass-lang.com/guide) (located in theme's
 
    - Copy the contents of [assets/css/main.scss](https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss) 
      to `<your_project>`.
-   - Customize want you want inside `<your_project/assets/css/main.scss`.
+   - Customize what you want inside `<your_project/assets/css/main.scss`.
 
 **Note:** To make more extensive changes and customize the Sass partials bundled 
 in the gem. You will need to copy the complete contents of the `_sass` directory 
