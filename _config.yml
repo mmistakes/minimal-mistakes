@@ -92,7 +92,7 @@ author:
   github           :
   gitlab           :
   google_plus      :
-  keybase          :
+  keybase          : 
   instagram        :
   lastfm           :
   linkedin         :
@@ -101,7 +101,7 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "Xoke"
   vine             :
   weibo            :
   xing             :
@@ -111,9 +111,7 @@ author:
 # Reading Files
 include:
   - .htaccess
-  - _pages
-  
-include: ["_pages"]
+  - /_pages/
 
 exclude:
   - "*.sublime-project"
