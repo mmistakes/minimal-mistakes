@@ -1,7 +1,7 @@
 {% if site.comments.discourse.server %}
-{% capture canonical %}{% if site.permalink contains '.html' %}{{ page.url | absolute_url }}{% else %}{{ page.url | absolute_url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
+{% capture canonical %}{{ page.url | replace: 'index.html','' | prepend: site.baseurl | prepend: site.url }}{% endcapture %}
 <script type="text/javascript">
-    DiscourseEmbed = { discourseUrl: '//{{ site.comments.discourse.server }}/',
+    DiscourseEmbed = { discourseUrl: '{{ site.comments.discourse.server }}/',
                        discourseEmbedUrl: '{{ canonical }}' };
    (function () {
      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
