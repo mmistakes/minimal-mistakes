@@ -881,7 +881,7 @@ da: &DEFAULT_DA
   comment_error_msg          : "Desværre skete der en fejl. Prøv igen, mens du sørger for at alle obligatoriske felter er udfyldt."
   loading_label              : "Indlæser..."
 da-DK:
-  <<: *DEFAULT_DK
+  <<: *DEFAULT_DA
 
 # Another locale
 # --------------
