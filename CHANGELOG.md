@@ -23,6 +23,7 @@
 - Adjust width of `.sidebar` to match `.sidebar__right`.
 - Add sample documents to ["portfolio" collection](https://mmistakes.github.io/minimal-mistakes/portfolio/) for testing grid view.
 - Fix typo in stylesheets documentation. [#1170](https://github.com/mmistakes/minimal-mistakes/pull/1170)
+- Add note about setting Discourse `server` as a scheme-less URL (eg. `meta.discourse.com` and not `http://meta.discourse.com`) in `_config.yml`. [#1182](https://github.com/mmistakes/minimal-mistakes/issues/1182)
 
 ## [4.5.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.5.0)
 
