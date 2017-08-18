@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-08-10T14:46:00-04:00
+last_modified_at: 2017-08-18T12:20:59-04:00
 ---
 
 ## Unreleased
@@ -17,6 +17,7 @@ last_modified_at: 2017-08-10T14:46:00-04:00
 - Increase font-size of code blocks.
 - Reduce indent of nested "table of contents" links.
 - Extend [archive grid view](https://mmistakes.github.io/minimal-mistakes/docs/layouts/) to the right to better fill the page.
+- URL encode title and page URL in social share links. [#1177](https://github.com/mmistakes/minimal-mistakes/pull/1177)
 
 ## Bug Fixes
 
