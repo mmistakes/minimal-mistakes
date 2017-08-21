@@ -1,3 +1,13 @@
+## Unreleased
+
+### Enhancements
+
+### Bug Fixes
+
+### Maintenance
+
+- Fix license URL in README file. [#1189](https://github.com/mmistakes/minimal-mistakes/pull/1189)
+
 ## [4.5.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.5.1)
 
 ### Enhancements
