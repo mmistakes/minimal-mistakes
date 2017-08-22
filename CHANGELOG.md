@@ -2,9 +2,9 @@
 
 ### Enhancements
 
-### Bug Fixes
+- Add `.page__comments-form` to "non-printing" selectors in print styles. [#1195](https://github.com/mmistakes/minimal-mistakes/pull/1195)
 
-### Maintenance
+### Bug Fixes
 
 - Fix license URL in README file. [#1189](https://github.com/mmistakes/minimal-mistakes/pull/1189)
 
