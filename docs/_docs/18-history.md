@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-08-22T14:47:05-04:00
+last_modified_at: 2017-08-22T15:32:24-04:00
 ---
 
 ## Unreleased
@@ -16,6 +16,7 @@ last_modified_at: 2017-08-22T14:47:05-04:00
 ### Bug Fixes
 
 - Fix license URL in README file. [#1189](https://github.com/mmistakes/minimal-mistakes/pull/1189)
+- Reduce amount of blank pages when printing in Chrome. [#1196](https://github.com/mmistakes/minimal-mistakes/issues/1196)
 
 ## [4.5.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.5.1)
 

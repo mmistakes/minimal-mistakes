@@ -7,6 +7,7 @@
 ### Bug Fixes
 
 - Fix license URL in README file. [#1189](https://github.com/mmistakes/minimal-mistakes/pull/1189)
+- Reduce amount of blank pages when printing in Chrome. [#1196](https://github.com/mmistakes/minimal-mistakes/issues/1196)
 
 ## [4.5.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.5.1)
 
