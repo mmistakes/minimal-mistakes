@@ -50,8 +50,8 @@
   following these setup instructions: 
   https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/
 
-  And provide a complete log by running `bundle exec jekyll --trace --verbose` 
-  and including this output in the filed issue.
+  Then provide a complete log by running `bundle exec jekyll --trace --verbose` 
+  and include this output in the filed issue.
 
   Screenshots can also be included if they help illustrate a behavior.
 -->
