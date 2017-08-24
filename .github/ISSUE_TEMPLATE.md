@@ -47,7 +47,8 @@
   server locally.
 
   If an error occurred on GitHub Pages when pushing, please test a local version
-  following these setup instructions: https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/
+  following these setup instructions: 
+  https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/
 
   And provide a complete log by running `bundle exec jekyll --trace --verbose` 
   and including this output in the filed issue.
