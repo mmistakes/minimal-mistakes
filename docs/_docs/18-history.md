@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-08-28T10:47:14-04:00
+last_modified_at: 2017-08-28T11:53:25-04:00
 ---
 
 ## Unreleased
@@ -19,6 +19,7 @@ last_modified_at: 2017-08-28T10:47:14-04:00
 - Fix license URL in README file. [#1189](https://github.com/mmistakes/minimal-mistakes/pull/1189)
 - Reduce amount of blank pages when printing in Chrome. [#1196](https://github.com/mmistakes/minimal-mistakes/issues/1196)
 - Fix Chinese `date_label` translation in `ui-text.yml`. [#1205](https://github.com/mmistakes/minimal-mistakes/pull/1205)
+- Remove `#disqus_thread` duplicate  from `comments-providers/disqus.html` as it is already in `comments.html` include. [#1199](https://github.com/mmistakes/minimal-mistakes/issues/1199)
 
 ## [4.5.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.5.1)
 
