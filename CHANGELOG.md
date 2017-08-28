@@ -3,11 +3,13 @@
 ### Enhancements
 
 - Add `.page__comments-form` to "non-printing" selectors in print styles. [#1195](https://github.com/mmistakes/minimal-mistakes/pull/1195)
+- Add LinkedIn and Steam author sidebar examples to `_config.yml`. [#1203](https://github.com/mmistakes/minimal-mistakes/pull/1203) [#1204](https://github.com/mmistakes/minimal-mistakes/pull/1204)
 
 ### Bug Fixes
 
 - Fix license URL in README file. [#1189](https://github.com/mmistakes/minimal-mistakes/pull/1189)
 - Reduce amount of blank pages when printing in Chrome. [#1196](https://github.com/mmistakes/minimal-mistakes/issues/1196)
+- Fix Chinese `date_label` translation in `ui-text.yml`. [#1205](https://github.com/mmistakes/minimal-mistakes/pull/1205)
 
 ## [4.5.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.5.1)
 
