@@ -327,7 +327,7 @@ zh: &DEFAULT_ZH
   meta_label                 :
   tags_label                 : "标签:"
   categories_label           : "分类:"
-  date_label                 : "最新的:"
+  date_label                 : "更新时间:"
   comments_label             : "留下评论"
   comments_title             : "评论"
   more_label                 : "了解更多"
