@@ -2,7 +2,7 @@
 title: "Quick-Start Guide"
 permalink: /docs/quick-start-guide/
 excerpt: "How to quickly install and setup Minimal Mistakes for use with GitHub Pages."
-last_modified_at: 2017-08-04T12:37:48-04:00
+last_modified_at: 2017-08-29T15:54:09-04:00
 redirect_from:
   - /theme-setup/
 ---
@@ -94,6 +94,9 @@ If you forked or downloaded the `minimal-mistakes-jekyll` repo you can safely re
 ## Setup Your Site
 
 Depending on the path you took installing Minimal Mistakes you'll setup things a little differently.
+
+**ProTip:** The source code and content files for this site can be found in the [`/docs` folder](https://github.com/mmistakes/minimal-mistakes/tree/master/docs) if you want to copy or learn from them.
+{: .notice--info}
 
 ### Starting Fresh
 
