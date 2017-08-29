@@ -593,7 +593,7 @@ Which would create category and tag links in the breadcrumbs and page meta like:
 
 If you have the luxury of using Jekyll Plugins then [**jekyll-archives**][jekyll-archives] will make your life much easier as category and tag pages are created for you.
 
-First, you need to make sure that the `jekyll-archives` plugin is installed. Either run `gem install jekyll-archives` or add the following to your `Gemfile`:
+First, you'll need to make sure that the `jekyll-archives` plugin is installed. Either run `gem install jekyll-archives` or add the following to your `Gemfile`:
 ```
 group :jekyll_plugins do
   gem "jekyll-archives"
