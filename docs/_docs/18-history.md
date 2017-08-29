@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-08-28T11:53:25-04:00
+last_modified_at: 2017-08-29T15:00:09-04:00
 ---
 
 ## Unreleased
@@ -13,6 +13,7 @@ last_modified_at: 2017-08-28T11:53:25-04:00
 
 - Add `.page__comments-form` to "non-printing" selectors in print styles. [#1195](https://github.com/mmistakes/minimal-mistakes/pull/1195)
 - Add LinkedIn and Steam author sidebar examples to `_config.yml`. [#1203](https://github.com/mmistakes/minimal-mistakes/pull/1203) [#1204](https://github.com/mmistakes/minimal-mistakes/pull/1204)
+- Clarify documentation for `jekyll-archives` plugin and how to install. [#1206](https://github.com/mmistakes/minimal-mistakes/pull/1206) [#811](https://github.com/mmistakes/minimal-mistakes/issues/811)
 
 ### Bug Fixes
 
