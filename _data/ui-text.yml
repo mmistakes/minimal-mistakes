@@ -322,7 +322,7 @@ zh: &DEFAULT_ZH
   toc_label                  : "在本页上"
   ext_link_label             : "直接链接"
   less_than                  : "少于"
-  minute_read                : "分钟 阅读"
+  minute_read                : "分钟读完"
   share_on_label             : "分享"
   meta_label                 :
   tags_label                 : "标签:"
