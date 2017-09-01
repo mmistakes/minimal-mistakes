@@ -18,7 +18,7 @@ See what's new in the [CHANGELOG](CHANGELOG.md).
 ## Notable Features
 
 - "Gemified" for easier install/upgrading
-- Compatible with Jekyll 3.x and GitHub Pages
+- Compatible with Jekyll 3.5 and GitHub Pages
 - Support for Jekyll's built-in Sass/SCSS preprocessor
 - Several responsive layout options (single, archive index, splash, and paginated home page)
 - SEO optimized with support for [Twitter Cards](https://dev.twitter.com/cards/overview) and [Open Graph](http://ogp.me/) data
