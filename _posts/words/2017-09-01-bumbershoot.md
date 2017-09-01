@@ -1,6 +1,6 @@
 ---
 title: "Why I won't be going to Bumbershoot this year"
-excerpt: &excerpt "A growth mindset is based on the belief that your basic qualities are things you can cultivate through your efforts."
+excerpt: &excerpt "Bumbershoot used to be an eclectic festival full of local art, theatre, comedy, and music where you encountered all types of people."
 tweet: "Why I won't be going to Bumbershoot this year" 
 modified: 2017-09-01
 category: words
