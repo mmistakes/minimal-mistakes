@@ -85,21 +85,22 @@
       line-height: 1.5;
       text-align: center;
       text-decoration: none;
-      color: mix(#fff, $gray, 25%);
-      border: 1px solid $light-gray;
+      color: $muted-text-color;
+      border: 1px solid mix(#000, $border-color, 25%);
       border-radius: 0;
 
       &:hover {
         color: $link-color-hover;
       }
 
-      &.current {
+      &.current,
+      &.current.disabled {
         color: #fff;
         background: $primary-color;
       }
 
       &.disabled {
-        color: mix(#fff, $gray, 75%);
+        color: rgba($muted-text-color, 0.5);
         pointer-events: none;
         cursor: not-allowed;
       }
@@ -133,12 +134,12 @@
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: $link-color;
-    border: 1px solid $light-gray;
+    color: $muted-text-color;
+    border: 1px solid mix(#000, $border-color, 25%);
     border-radius: $border-radius;
 
     &:hover {
-      color: $link-color-hover;
+      @include yiq-contrasted($muted-text-color);
     }
 
     &:first-child {
@@ -153,7 +154,7 @@
     }
 
     &.disabled {
-      color: mix(#fff, $gray, 75%);
+      color: rgba($muted-text-color, 0.5);
       pointer-events: none;
       cursor: not-allowed;
     }

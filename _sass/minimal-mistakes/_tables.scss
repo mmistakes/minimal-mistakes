@@ -15,8 +15,8 @@ table {
 }
 
 thead {
-  background-color: $lighter-gray;
-  border-bottom: 2px solid $light-gray;
+  background-color: $border-color;
+  border-bottom: 2px solid mix(#000, $border-color, 25%);
 }
 
 th {
@@ -27,7 +27,7 @@ th {
 
 td {
   padding: 0.5em;
-  border-bottom: 1px solid $light-gray;
+  border-bottom: 1px solid mix(#000, $border-color, 25%);
 }
 
 tr,
