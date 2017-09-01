@@ -47,11 +47,6 @@ $type-size-8                  : 0.625em !default;  // ~10px
    Colors
    ========================================================================== */
 
-$yiq-contrasted-dark-default  : #000 !default;
-$yiq-contrasted-light-default : #fff !default;
-$yiq-contrasted-threshold     : 150 !default;
-$yiq-debug                    : false !default;
-
 $gray                         : #7a8288 !default;
 $dark-gray                    : mix(#000, $gray, 40%) !default;
 $darker-gray                  : mix(#000, $gray, 60%) !default;
@@ -70,6 +65,12 @@ $success-color                : #62c462 !default;
 $warning-color                : #f89406 !default;
 $danger-color                 : #ee5f5b !default;
 $info-color                   : #52adc8 !default;
+
+/* YIQ color contrast */
+$yiq-contrasted-dark-default  : $dark-gray !default;
+$yiq-contrasted-light-default : #fff !default;
+$yiq-contrasted-threshold     : 175 !default;
+$yiq-debug                    : false !default;
 
 /* brands */
 $behance-color                : #1769FF !default;
@@ -93,7 +94,6 @@ $vimeo-color                  : #1ab7ea !default;
 $vine-color                   : #00bf8f !default;
 $youtube-color                : #bb0000 !default;
 $xing-color                   : #006567 !default;
-
 
 /* links */
 $link-color                   : $info-color !default;
