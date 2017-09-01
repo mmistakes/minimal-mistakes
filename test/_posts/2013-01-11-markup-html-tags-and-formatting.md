@@ -110,7 +110,8 @@ Make any link standout more when applying the `.btn` class.
 <a href="#" class="btn--success">Success Button</a>
 ```
 
-[Primary Button](#){: .btn}
+[Default Button](#){: .btn}
+[Primary Button](#){: .btn .btn--primary}
 [Success Button](#){: .btn .btn--success}
 [Warning Button](#){: .btn .btn--warning}
 [Danger Button](#){: .btn .btn--danger}
@@ -119,7 +120,8 @@ Make any link standout more when applying the `.btn` class.
 [Light Outline Button](#){: .btn .btn--light-outline}
 
 ```markdown
-[Primary Button Text](#link){: .btn}
+[Default Button Text](#link){: .btn}
+[Primary Button Text](#link){: .btn .btn--primary}
 [Success Button Text](#link){: .btn .btn--success}
 [Warning Button Text](#link){: .btn .btn--warning}
 [Danger Button Text](#link){: .btn .btn--danger}
@@ -128,16 +130,16 @@ Make any link standout more when applying the `.btn` class.
 [Light Outline Button](#link){: .btn .btn--light-outline}
 ```
 
-[X-Large Button](#){: .btn .btn--x-large}
-[Large Button](#){: .btn .btn--large}
-[Default Button](#){: .btn}
-[Small Button](#){: .btn .btn--small}
+[X-Large Button](#){: .btn .btn--primary .btn--x-large}
+[Large Button](#){: .btn .btn--primary .btn--large}
+[Default Button](#){: .btn .btn--primary }
+[Small Button](#){: .btn .btn--primary .btn--small}
 
 ```markdown
-[X-Large Button](#link){: .btn .btn--x-large}
-[Large Button](#link){: .btn .btn--large}
-[Default Button](#link){: .btn}
-[Small Button](#link){: .btn .btn--small}
+[X-Large Button](#link){: .btn .btn--primary .btn--x-large}
+[Large Button](#link){: .btn .btn--primary .btn--large}
+[Default Button](#link){: .btn .btn--primary }
+[Small Button](#link){: .btn .btn--primary .btn--small}
 ```
 
 ## Notices
