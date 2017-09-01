@@ -8,12 +8,12 @@
 - Clarify documentation for `jekyll-archives` plugin and how to install. [#1206](https://github.com/mmistakes/minimal-mistakes/pull/1206)
 - Clarify documentation around taxonomy page and index generation. [#1207](https://github.com/mmistakes/minimal-mistakes/pull/1207)
 - Fix "Posts by tag" grammar in documentation. [#1209](https://github.com/mmistakes/minimal-mistakes/pull/1209)
+- Improve Chinese `date_label` and `minute_read` translations in `ui-text.yml`. [#1205](https://github.com/mmistakes/minimal-mistakes/pull/1205) [#1211](https://github.com/mmistakes/minimal-mistakes/pull/1211)
 
 ### Bug Fixes
 
 - Fix license URL in README file. [#1189](https://github.com/mmistakes/minimal-mistakes/pull/1189)
 - Reduce amount of blank pages when printing in Chrome. [#1196](https://github.com/mmistakes/minimal-mistakes/issues/1196)
-- Fix Chinese `date_label` translation in `ui-text.yml`. [#1205](https://github.com/mmistakes/minimal-mistakes/pull/1205)
 - Remove `#disqus_thread` duplicate  from `comments-providers/disqus.html` as it is already in `comments.html` include. [#1199](https://github.com/mmistakes/minimal-mistakes/issues/1199)
 
 ## [4.5.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.5.1)
