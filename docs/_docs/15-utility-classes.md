@@ -2,7 +2,7 @@
 title: "Utility Classes"
 permalink: /docs/utility-classes/
 excerpt: "CSS classes for aligning text/image, styling buttons and notices, and more."
-last_modified_at: 2016-11-03T11:32:25-04:00
+last_modified_at: 2017-09-01T11:54:44-04:00
 ---
 
 {% include toc icon="gears" title="Utility Classes" %}
@@ -108,15 +108,16 @@ The image above should extend outside of the parent container on right.
 
 ## Buttons
 
-Make any link standout more when applying the `.btn` class.
+Make any link standout more when applying the `.btn .btn--primary` classes.
 
 ```html
-<a href="#" class="btn">Link Text</a>
+<a href="#" class="btn btn--primary">Link Text</a>
 ```
 
 | Button Type   | Example | Class | Kramdown |
 | ------        | ------- | ----- | ------- |
 | Default       | [Text](#link){: .btn} | `.btn` | `[Text](#link){: .btn}` |
+| Primary       | [Text](#link){: .btn .btn--primary} | `.btn .btn--primary` | `[Text](#link){: .btn .btn--primary}` |
 | Success       | [Text](#link){: .btn .btn--success} | `.btn .btn--success` | `[Text](#link){: .btn .btn--success}` |
 | Warning       | [Text](#link){: .btn .btn--warning} | `.btn .btn--warning` | `[Text](#link){: .btn .btn--warning}` |
 | Danger        | [Text](#link){: .btn .btn--danger} | `.btn .btn--danger` | `[Text](#link){: .btn .btn--danger}` |
@@ -126,10 +127,10 @@ Make any link standout more when applying the `.btn` class.
 
 | Button Size | Example | Class | Kramdown |
 | ----------- | ------- | ----- | -------- |
-| X-Large     | [X-Large Button](#){: .btn .btn--x-large} | `.btn .btn--x-large` | `[Text](#link){: .btn .btn--x-large}` |
-| Large       | [Large Button](#){: .btn .btn--large} | `.btn .btn--large` | `[Text](#link){: .btn .btn--large}` |
-| Default     | [Default Button](#){: .btn} | `.btn` | `[Text](#link){: .btn}` |
-| Small       | [Small Button](#){: .btn .btn--small} | `.btn .btn--small` | `[Text](#link){: .btn .btn--small}` |
+| X-Large     | [X-Large Button](#){: .btn .btn--primary .btn--x-large} | `.btn .btn--primary .btn--x-large` | `[Text](#link){: .btn .btn--primary .btn--x-large}` |
+| Large       | [Large Button](#){: .btn .btn--primary .btn--large} | `.btn .btn--primary .btn--large` | `[Text](#link){: .btn .btn--primary .btn--large}` |
+| Default     | [Default Button](#){: .btn .btn--primary} | `.btn .btn--primary` | `[Text](#link){: .btn .btn--primary }` |
+| Small       | [Small Button](#){: .btn .btn--primary .btn--small} | `.btn .btn--primary .btn--small` | `[Text](#link){: .btn .btn--primary .btn--small}` |
 
 ## Notices
 
