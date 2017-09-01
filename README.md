@@ -37,7 +37,7 @@ See what's new in the [CHANGELOG](CHANGELOG.md).
 | [Post with a Gallery][gallery-post] | A post showing several images wrapped in `<figure>` elements. |
 | [Sample Collection Page][sample-collection] | Single page from a collection. |
 | [Categories Archive][categories-archive] | Posts grouped by category. |
-| [Tags Archive][tags-archive] | Posts grouped by tags. |
+| [Tags Archive][tags-archive] | Posts grouped by tag. |
 
 Additional sample posts are available under [posts archive][year-archive] on the demo site. Source files for these (and the entire demo site) can be found in [`/docs`](docs).
 
