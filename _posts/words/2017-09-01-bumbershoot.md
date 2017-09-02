@@ -109,3 +109,5 @@ Bumbershoot used to be a Seattle festival full of eclectic art, music, and exper
 -   [Has Seattle lost Bumbershoot to the corporate concert monster?](http://mynorthwest.com/12142/has-seattle-lost-bumbershoot-to-the-corporate-concert-monster/) (2015)
 -   [Deep in debt, One Reel seeks deal to keep Bumbershoot alive](http://www.seattletimes.com/seattle-news/deep-in-debt-one-reel-seeks-deal-to-keep-bumbershoot-alive/) (2014)
 -   [Is Seattle's Intense Bumbergrumbling Really Merited?](http://archive.seattleweekly.com/home/960645-129/is-seattles-intense-bumbergrumbling-really-merited) (2015)
+
+_Also posted at [Medium.com/words-and-whiskey](https://medium.com/words-and-whiskey/only-a-few-years-ago-as-recently-as-2014-bumbershoot-was-an-eclectic-festival-full-of-local-art-54b6a1ef3bc6)._
