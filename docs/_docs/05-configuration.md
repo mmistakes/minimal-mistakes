@@ -588,7 +588,8 @@ tag_archive:
 
 Which would create category and tag links in the breadcrumbs and page meta like: `/categories/#foo` and `/tags/#foo`.
 
-**Note:** these are simply hash (fragment) links into the full taxonomy index pages. For them to resolve properly, the category and tag index pages need to exist at [`/categories/index.html`](https://github.com/{{ site.repository }}/blob/master/docs/_pages/category-archive.html) (copy to `_pages/category-archive.html`) and [`/tags/index.html`](https://github.com/{{ site.repository }}/blob/master/docs/_pages/tag-archive.html) (copy to `_pages/tag-archive.html`). {: .notice--warning}
+**Note:** these are simply hash (fragment) links into the full taxonomy index pages. For them to resolve properly, the category and tag index pages need to exist at [`/categories/index.html`](https://github.com/{{ site.repository }}/blob/master/docs/_pages/category-archive.html) (copy to `_pages/category-archive.html`) and [`/tags/index.html`](https://github.com/{{ site.repository }}/blob/master/docs/_pages/tag-archive.html) (copy to `_pages/tag-archive.html`). 
+{: .notice--warning}
 
 If you have the luxury of using Jekyll Plugins, then [**jekyll-archives**][jekyll-archives] will create a better experience as discrete  taxonomy pages would be generated, and their corresponding links would be "real" (not just hash/fragment links into a larger index). However, the plugin will not generate the taxonomy index pages (`category-archive.html` and `_pages/tag-archive.html`) so you'd still need to manually create them if you'd like to have them (see note above).
 
