@@ -17,3 +17,8 @@ $link-color-visited: mix(#000, $link-color, 25%) !default;
 $masthead-link-color: $text-color !default;
 $masthead-link-color-hover: mix(#000, $text-color, 20%) !default;
 $navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
+
+.author__urls.social-icons .fa,
+.page__footer-follow .social-icons .fa {
+  color: inherit;
+}
