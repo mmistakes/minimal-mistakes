@@ -6,21 +6,21 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en"
-title                    : "Site Title"
+locale                   : "nl"
+title                    : "CookieCrumbles"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+name                     : "Mr. Crumbles"
+description              : "Sysadmin blog"
+url                      : "https://cookiecrumbles.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : #"/cookiecrumbles.github.io"
+repository               : #"CookieCrumbles/cookiecrumbles.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "https-cookiecrumbles-github-io-blog" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -55,7 +55,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : CoekieCrumbles
 facebook:
   username               :
   app_id                 :
@@ -70,17 +70,17 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : google # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : UA-97342523-1
 
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
+  name             : "K.Stroobants"
+  avatar           : "/assets/images/cookie.jpg"
+  bio              : "Sysadmin interested in Powershell, SCCM, WPA, AD, GPO, WINDB, Troubleshooting ..."
+  location         : "Flanders, Belgium"
   email            :
   uri              :
   bitbucket        :
@@ -89,19 +89,18 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
-  gitlab           :
+  github           : "CookieCrumbles"
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : "kristof-stroobants-1220106"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
-  steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
+  steam            :
   tumblr           :
-  twitter          :
+  twitter          :  CoekieCrumbles
   vine             :
   weibo            :
   xing             :
@@ -238,10 +237,12 @@ defaults:
   - scope:
       path: ""
       type: posts
-    values:
-      layout: single
+    values:    
+      layout: single      
       author_profile: true
-      read_time: true
-      comments: # true
+      #read_time: true
+      comments:  true
       share: true
       related: true
+     # sidebar:
+     #   nav: "docs"
