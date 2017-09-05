@@ -143,6 +143,10 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
+# Liquid
+liquid:
+  error_mode: strict
+
 
 # Conversion
 markdown: kramdown
