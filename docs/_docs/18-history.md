@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-09-04T21:14:27-04:00
+last_modified_at: 2017-09-04T21:28:52-04:00
 ---
 
 ## Unreleased
@@ -26,7 +26,7 @@ last_modified_at: 2017-09-04T21:14:27-04:00
 - Reduce amount of blank pages when printing in Chrome. [#1196](https://github.com/mmistakes/minimal-mistakes/issues/1196)
 - Remove `#disqus_thread` duplicate  from `comments-providers/disqus.html` as it is already in `comments.html` include. [#1199](https://github.com/mmistakes/minimal-mistakes/issues/1199)
 - Fix Liquid syntax errors in `tag-list.html` and `category-list.html` includes by removing parenthesis in `assign`s. [#1223](https://github.com/mmistakes/minimal-mistakes/issues/1223)
-- Fix Fix Liquid syntax error: "Expected id but found open_square in `"{{page.[include.id] }}"`" in `gallery` include.
+- Fix Liquid syntax error: "Expected id but found open_square in {% raw %}`"{{page.[include.id] }}"`"{% endraw %} in `gallery` and `feature_row` includes.
 - Fix Liquid syntax error: "Expected end_of_string but found pipe in `"name in __names | sort"`" in `group-by-array` include.
 
 ## [4.5.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.5.1)
