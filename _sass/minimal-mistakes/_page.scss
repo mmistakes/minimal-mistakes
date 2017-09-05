@@ -19,7 +19,9 @@
     max-width: $x-large;
   }
 }
-
+.about{
+   font-size: 17px;
+}
 .page {
 
   @include breakpoint($large) {
