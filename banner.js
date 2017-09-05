@@ -5,7 +5,11 @@ const script = fs.readFileSync(filename);
 const padStart = str => ('0' + str).slice(-2)
 const dateObj = new Date;
 const date = `${dateObj.getFullYear()}-${padStart(dateObj.getMonth() + 1)}-${padStart(dateObj.getDate())}`;
-const banner = `/*!
+const banner = `---
+layout:
+---
+
+/*!
  * Minimal Mistakes Jekyll Theme ${pkg.version} by ${pkg.author}
  * Copyright ${dateObj.getFullYear()} Michael Rose - mademistakes.com | @mmistakes
  * Licensed under ${pkg.license}
