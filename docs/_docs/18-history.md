@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-09-05T15:14:03-04:00
+last_modified_at: 2017-09-06T09:16:04-04:00
 ---
 
 ## Unreleased
@@ -22,7 +22,7 @@ last_modified_at: 2017-09-05T15:14:03-04:00
 - Add [YIQ Color Contrast](https://github.com/easy-designs/yiq-color-contrast) mixin for determining lightness of a color.
 - DRY up button CSS using Sass lists and YIQ Color Contrast mixin.
 - Add `btn--primary` button class. Note: elements that were previously using only a `.btn` class will now also need `.btn--primary` (eg. `<a class="btn btn--primary" href="#">my link</a>`).
-- Add `contrast`, `dark`, and `sunrise` skin color options. [#1208](https://github.com/mmistakes/minimal-mistakes/issues/1208)
+- Add `contrast`, `dark`, `dirt`, and `sunrise` skin color options. [#1208](https://github.com/mmistakes/minimal-mistakes/issues/1208)
 
 ### Bug Fixes
 
