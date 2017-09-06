@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-09-05T12:58:56-04:00
+last_modified_at: 2017-09-06T15:01:51-04:00
 ---
 
 ## Unreleased
@@ -21,6 +21,7 @@ last_modified_at: 2017-09-05T12:58:56-04:00
 - Add note to Quick-Start Guide about GitHub Pages hosting alternatives that allow 3rd party gem themes and Jekyll plugins.
 - Add note to configuration documentation about Cloudflare minification as an alternative to `layout: compress`. [#1217](https://github.com/mmistakes/minimal-mistakes/pull/1217)
 - Show 4 latest posts in "You May Also Enjoy" module when `related: true` and no related posts are found due to `lsi` ([latent semantic indexing](https://en.wikipedia.org/wiki/Latent_semantic_analysis#Latent_semantic_indexing)) being disabled on GitHub Pages. [#554](https://github.com/mmistakes/minimal-mistakes/issues/554)
+- Truncate archive item titles' that overflow with an ellipsis. [#1213]
 
 ### Bug Fixes
 

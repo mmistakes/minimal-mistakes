@@ -37,6 +37,8 @@
 .archive__item-title {
   margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   a + a {
     opacity: 0.5;
