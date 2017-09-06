@@ -13,7 +13,7 @@
 - Add [YIQ Color Contrast](https://github.com/easy-designs/yiq-color-contrast) mixin for determining lightness of a color.
 - DRY up button CSS using Sass lists and YIQ Color Contrast mixin.
 - Add `btn--primary` button class. **Note:** elements that were previously using only a `.btn` class will now also need `.btn--primary` (eg. `<a class="btn btn--primary" href="#">my link</a>`).
-- Add `contrast`, `dark`, `dirt`, and `sunrise` skin color options. [#1208](https://github.com/mmistakes/minimal-mistakes/issues/1208)
+- Add `air`, `contrast`, `dark`, `dirt`, and `sunrise` skin color options. [#1208](https://github.com/mmistakes/minimal-mistakes/issues/1208)
 
 ### Bug Fixes
 
