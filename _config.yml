@@ -7,9 +7,9 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "Donghyeon Won's Page"
 title_separator          : "-"
-name                     : "Your Name"
+name                     : "Donghyeon Won"
 description              : "An amazing website."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -77,10 +77,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  name             : "Donghyeon"
+  avatar           : "images/profile.jpg"
   bio              : "I am an amazing person."
-  location         : "Somewhere"
+  location         : "LA"
   email            :
   uri              :
   bitbucket        :
