@@ -1,1 +1,1 @@
-permalink: /portfolio.html
+permalink: /portfolio.html.
