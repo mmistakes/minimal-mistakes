@@ -1,9 +1,3 @@
-
-
-`This is literally just an example taken from the`
-`documentation template.`
-`https://github.com/mmistakes/minimal-mistakes/blob/master/docs/_docs/20-docs-2-2.md`
-
 ---
 title: "1.0 Documentation Pages Example"
 permalink: /portfolio/01-docs-template/
