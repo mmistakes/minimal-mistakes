@@ -1,1 +1,1 @@
-	permalink: /contact/
+	permalink: /contact.html

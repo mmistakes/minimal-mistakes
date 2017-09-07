@@ -1,1 +1,1 @@
-	permalink: /about/
+	permalink: /about.html
