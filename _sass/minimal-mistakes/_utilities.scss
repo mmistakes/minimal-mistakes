@@ -114,7 +114,9 @@ body:hover .visually-hidden button {
 .cf { clear: both; }
 
 .wrapper {
-  @include container();
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 

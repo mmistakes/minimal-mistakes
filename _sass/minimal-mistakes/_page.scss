@@ -3,13 +3,15 @@
    ========================================================================== */
 
 #main {
-  @include container;
   @include clearfix;
+  margin-left: auto;
   margin-top: 2em;
+  margin-right: auto;
   padding-left: 1em;
   padding-right: 1em;
-  -webkit-animation: intro 0.3s both;
-          animation: intro 0.3s both;
+  -webkit-animation: $intro-transition;
+          animation: $intro-transition;
+  max-width: 100%;
   -webkit-animation-delay: 0.35s;
           animation-delay: 0.35s;
 
@@ -19,19 +21,34 @@
 }
 
 .page {
+
   @include breakpoint($large) {
-    @include span(10 of 12 last);
-    @include prefix(0.5 of 12);
-    @include suffix(2 of 12);
+    float: right;
+    width: calc(100% - #{$right-sidebar-width-narrow});
+    padding-right: $right-sidebar-width-narrow;
+  }
+
+  @include breakpoint($x-large) {
+    width: calc(100% - #{$right-sidebar-width});
+    padding-right: $right-sidebar-width;
   }
 
   .page__inner-wrap {
-    @include full();
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    clear: both;
 
     .page__content,
     .page__meta,
     .page__share {
-      @include full();
+      position: relative;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+      clear: both;
     }
   }
 }
@@ -113,8 +130,8 @@
   position: relative;
   margin-bottom: 2em;
   @include clearfix;
-  -webkit-animation: intro 0.3s both;
-          animation: intro 0.3s both;
+  -webkit-animation: $intro-transition;
+          animation: $intro-transition;
   -webkit-animation-delay: 0.25s;
           animation-delay: 0.25s;
 
@@ -126,8 +143,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-animation: intro 0.3s both;
-            animation: intro 0.3s both;
+    -webkit-animation: $intro-transition;
+            animation: $intro-transition;
     -webkit-animation-delay: 0.25s;
             animation-delay: 0.25s;
 
@@ -288,7 +305,11 @@
    ========================================================================== */
 
 .page__comments {
-  @include full();
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  clear: both;
 }
 
 .page__comments-title {
@@ -385,14 +406,19 @@
    ========================================================================== */
 
 .page__related {
+  @include clearfix();
+  float: left;
   margin-top: 2em;
   padding-top: 1em;
   border-top: 1px solid $border-color;
-  @include clearfix();
-  float: left;
 
   @include breakpoint($large) {
-    @include pre(2.5 of 12);
+    float: right;
+    width: calc(100% - #{$right-sidebar-width-narrow});
+  }
+
+  @include breakpoint($x-large) {
+    width: calc(100% - #{$right-sidebar-width});
   }
 
   a {
