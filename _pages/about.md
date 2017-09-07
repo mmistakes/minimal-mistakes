@@ -16,7 +16,7 @@ last_modified_at: 2017-02-14T14:28:13-05:00
 ---
 
 Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your personal site, blog, or portfolio on GitHub or self-hosting on your own server. As the name implies --- styling is purposely minimalistic to be enhanced and customized by you :smile:.
-<!---
+
 {% include gallery id="layouts_gallery" caption="Examples of included layouts `splash`, `single`, and `archive`." %}
 
 [Install the Theme]({{ "/docs/quick-start-guide/" | absolute_url }}){: .btn .btn--success .btn--large}
@@ -46,9 +46,9 @@ Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your
 
 For even more demo pages check the [posts archive][year-archive].
 
-[gallery-post]: {{ "" | absolute_url }}{% post_url 20110-09-09-post-gallery %}
-[html-tags-post]: {{ "" | absolute_url }}{% post_url 2013-01-11-markup-html-tags-and-formatting %}
-[syntax-post]: {{ "" | absolute_url }}{% post_url 2013-08-16-markup-syntax-highlighting %}
+[gallery-post]: {{ "" | absolute_url }}
+[html-tags-post]: {{ "" | absolute_url }}
+[syntax-post]: {{ "" | absolute_url }}
 [categories-archive]: {{ "/categories/" | absolute_url }}
 [tags-archive]: {{ "/tags/" | absolute_url }}
 [year-archive]: {{ "/year-archive/" | absolute_url }}
@@ -77,4 +77,3 @@ For even more demo pages check the [posts archive][year-archive].
 ---
 
 Minimal Mistakes is designed, developed, and maintained by Michael Rose. Just another boring, tattooed, designer from Buffalo New York.
--->
