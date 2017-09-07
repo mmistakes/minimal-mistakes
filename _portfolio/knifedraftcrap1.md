@@ -2,8 +2,8 @@
 title: "Basic Homemade Knife"
 excerpt: "Photographic step-by-step DIY showing how I made my first knife [on a whim.]"
 header:
-  image: /assets/images/unsplash-gallery-image-3.jpg
-  teaser: assets/images/unsplash-gallery-image-3-th.jpg
+  image: https://i.imgur.com/CyDPDEA.jpg
+  teaser: https://i.imgur.com/CyDPDEA.jpg
 sidebar:
   - title: "DIY"
     image: http://placehold.it/350x250
@@ -32,11 +32,11 @@ This knife was the best gift I've ever given thus far, and one of the prettiest 
 
 To have a good knife you need a good template. I wanted to make a good kitchen knife that was right-sized to my girlfriend's petite hands. I laid out all my kitchen knives and thought about what I liked and did not like about them. I also browsed around <a href="http://dcknives.blogspot.com/">http://dcknives.blogspot.com</a> to see what I liked and did not like. Drawn to size in which it will fit on the 1084 steel stock I bought.
 
-  <li><img src="http://i.imgur.com/H4wEGbs.jpg" /></li>
-  <li><img src="http://i.imgur.com/HlzsFAc.jpg" /></li>
-  <li><img src="http://i.imgur.com/VKZPVUH.jpg" /></li>
-  <li><img src="http://i.imgur.com/adD5tnd.jpg" /></li>
-  <li><img src="http://i.imgur.com/Q9Ak4AJ.jpg" /></li>
+  <img src="http://i.imgur.com/H4wEGbs.jpg" /></li>
+  <img src="http://i.imgur.com/HlzsFAc.jpg" /></li>
+  <img src="http://i.imgur.com/VKZPVUH.jpg" /></li>
+  <img src="http://i.imgur.com/adD5tnd.jpg" /></li>
+  <img src="http://i.imgur.com/Q9Ak4AJ.jpg" /></li>
 
 Pencil, graphing paper, and ruler your way to a design you like.
 
@@ -65,19 +65,27 @@ I just used a little water to lay the template flat on the knife.
 This allows for easy cutting.
 <a href="http://i.imgur.com/Q9Ak4AJ.jpg"><img height="225" src="https://images-blogger-opensocial.googleusercontent.com/gadgets/proxy?url=http%3A%2F%2Fi.imgur.com%2FQ9Ak4AJr.jpg&amp;container=blogger&amp;gadget=a&amp;rewriteMime=image%2F*" width="400" /></a>
 
+
 Oh wow. This project is really coming together!
+
 
 There you have your proposed final design in steel. Cut that steel and make rough cuts to remove material that brings it to shape.
 
+
 <a href="http://i.imgur.com/Gp0Umjs.jpg"><img height="225" src="https://images-blogger-opensocial.googleusercontent.com/gadgets/proxy?url=http%3A%2F%2Fi.imgur.com%2FGp0Umjsr.jpg&amp;container=blogger&amp;gadget=a&amp;rewriteMime=image%2F*" width="400" /></a>
+
 
 Make rough cuts with an angle grinder.
 
+
 After enough rough cuts you get to this point. Make plenty of relief cuts to go at it with the grinding disc easier.
+
 
 relief cuts to go at it with the grinding disc easier.
 
+
 <a href="https://i.imgur.com/Dc7SVoz.jpg"><img height="400" src="https://i.imgur.com/Dc7SVozr.jpg" width="225" /></a>
+
 
 This makes grinding away the excess easier.
 
