@@ -8,7 +8,7 @@ tags:
   - First Post
   - rellimmot
 ---
-I fell as though I might have enough free time to begin documenting projects I get myself into; past, present, and future projects. I've been told enough times that I need to document my work, have a portfolio, take more photos, write more how-to's, et cetera. This "blog" aims at providing a public view of my projects and ideas, in order to both help others with my methods and discoveries and to act as a portfolio and digital resume for my career..
+I fell as though I might have enough free time to begin documenting projects I get myself into; past, present, and future projects. I've been told enough times that I need to document my work, have a portfolio, take more photos, write more how-to's, et cetera. This "blog" aims at providing a public view of my projects and ideas, in order to both help others with my methods and discoveries and to act as a portfolio and digital resume for my career.
 
 <!--more-->
 
