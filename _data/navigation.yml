@@ -1,9 +1,9 @@
 # main links
 main:
   - title: "Home"
-    url: /pages/home/
-  - title: "Ditto"
-    url: https://www.youtube.com/watch?v=ODKTITUPusM
+    url: /
+#  - title: "Ditto"
+#    url: https://www.youtube.com/watch?v=ODKTITUPusM
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
