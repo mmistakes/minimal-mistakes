@@ -270,4 +270,4 @@ defaults:
       share: true
 
       # added to clear GitHub API error per https://github.com/DIYbiosphere/sphere/issues/140
-      github: [metadata]
+      github: [metadata] encoding: UTF-8 kramdown: input: GFM hard_wrap: false
