@@ -33,7 +33,7 @@ Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your
 - UI localized text in English (default), Brazilian Portuguese, Chinese, French, German, Italian, Korean, Nepali (Nepalese), Russian, Spanish, and Turkish
 
 ## Demo Pages
-
+<!---
 | Name                                        | Description                                           |
 | ------------------------------------------- | ----------------------------------------------------- |
 | [Post with Header Image][header-image-post] | A post with a large header image. |
@@ -45,8 +45,8 @@ Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your
 | [Tags Archive][tags-archive] | Posts grouped by tags. |
 
 For even more demo pages check the [posts archive][year-archive].
-<!---
-[gallery-post]: {{ "" | absolute_url }}{% post_url 2010-09-09-post-gallery %}
+
+[gallery-post]: {{ "" | absolute_url }}{% post_url 20110-09-09-post-gallery %}
 [html-tags-post]: {{ "" | absolute_url }}{% post_url 2013-01-11-markup-html-tags-and-formatting %}
 [syntax-post]: {{ "" | absolute_url }}{% post_url 2013-08-16-markup-syntax-highlighting %}
 [categories-archive]: {{ "/categories/" | absolute_url }}
