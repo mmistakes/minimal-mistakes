@@ -22,7 +22,7 @@ gallery:
     image_path: assets/images/unsplash-gallery-image-3-th.jpg
     alt: "placeholder image 3"
 ---
-{% include gallery caption="This is a gallery to go along with this. :)" %}
+{% include gallery caption="This is a gallery to go along with this! :)" %}
 <div>
 </div>
 <div>
