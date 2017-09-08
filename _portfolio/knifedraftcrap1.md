@@ -164,94 +164,10 @@ Up next: Straight razor project? After I finished the handle I went back and rea
 I used an automotive rotary buffer and wool yarn pad, and Meguiars polish. This of course after it was already relatively shiny after stepping it up to 1000grit hand sanding. If you use a rotary buffer, mount it in a vice, wear leather gloves, and use a lot of caution. If the buffer catches the blade the wrong way it'll send it straight into you.
 
 I can again in retrospect see that I could have been a little better to sit at lower grits for longer because you can see sanding texture beneath the shine of exactly that. If you don't want to take this step, I recommend treating your scales to a layer of polyurethane sealant, mineral oil, or even a CyanoAcrylate coating (super glue sealing, of which you should google because that's a whole other tutorial).
-
-{% include gallery id="gallery2"%}
-
-
-
-Add caption
-
-
-
-
-
-
-
-
-
-
-
+### Before and After
+{% include gallery id="gallery2"%}<figcaption>Before and After</figcaption>
 Isn't she lovely?
+## Conclusion
+You can do this too! <a href="https://www.reddit.com/r/DIY/comments/47is7b/an_answer_to_a_very_common_question_how_do_i_get/">SEE THIS THREAD</a>, it was my inspiration, interpolate what I did with what he did, and hit the googles on a few other knife DIYs and you should be in good shape to make your own with pretty basic tools.
 
-
-
-
-
-
-
-You can do this too! SEE THIS THREAD, it was my inspiration, interpolate what I did with what he did, and hit the googles on a few other knife DIYs and you should be in good shape to make your own with pretty basic tools: <a href="https://www.reddit.com/r/DIY/comments/47is7b/an_answer_to_a_very_common_question_how_do_i_get/">https://www.reddit.com/r/DIY/comments/47is7b/an_answer_to_a_very_common_question_how_do_i_get/</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-How I made a knife using basic hand tools and no prior knife making experience.
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a href="https://i.imgur.com/n7y5BHX.jpg"><img height="225" src="https://i.imgur.com/n7y5BHXr.jpg" width="400" /></a>
-
-
-
-
-I used mosaic pins to pin the scales in place.
-
-I did not make my pretty mosaic knife pins, I found it on eBay for about $15. It's 5mm thick. I don't own a drill press, nor a 5mm drill bit. Didn't make things any easier. 3/16" bit is NOT a substitute for 5mm. Get a 3/16" pin for a 3/16" hole or a 5mm pin for a 5mm hole, man. I used super glue to secure the pin and fill any voids and holes, then ran it over the belt sander to level out. I decided in my case it would be best to pin after gluing given my lack of drill press. I couldn't tell you either way whether or not it made things easier, but I felt as if without a nice drill press and rig I was bound to drill holes in the wrong places. If you have steady hands and go slowly, you will do just fine with a hand drill here.
-
-<a href="https://i.imgur.com/tMco8HQ.jpg"><img height="225" src="https://i.imgur.com/tMco8HQr.jpg" width="400" /></a>
-
-
-
-
-Lots of sandpaper and file shaping later.
-
-After pinning and leveling, go at the handle with a set of files until you get your desired shape. This shape was mostly done with a file, then I went over it with hand sanding just to smooth it all out- started with 220 grit and worked up to 600 grit.</div>
-<a href="https://i.imgur.com/ocdq7ED.jpg"><img height="225" src="https://i.imgur.com/ocdq7EDr.jpg" width="400" /></a>
-
-The blade is sharp enough to shave effortlessly!
-Up next: Straight razor project? After I finished the handle I went back and readdressed the knife that I had re-sanded progressively up to 1000 grit. To sharpen the blade edge I set it in a vice and at a more aggressive angle I sharpened the knife- to put this in text would be difficult so I suggest you view blade filing videos. Another solution is to build this beautiful jig from this Gogh knives video <a href="http://goughcustom.com/blog/2013-08-16-making-a-filing-jig/making-and-using-a-bevel-filing-jig.html">http://goughcustom.com/blog/2013-08-16-making-a-filing-jig/making-and-using-a-bevel-filing-jig.html</a> I also suggest looking through his other materials as this guy does incredible work. Another item of note is to make sure you bring your knife to a hard surface such as a counter and make cutting motions to see if it's the swing you want. Then chop down and kneel down to look at the gap between the blade edge and the counter- is there a gap? You may want to grind and resharpen- this happened to me twice.
-<a href="https://i.imgur.com/qz8S94E.jpg"><img height="400" src="https://i.imgur.com/qz8S94Er.jpg" width="225" /></a>
-
-Optionally, you can polish your blade and handle to a high gloss.
-I used an automotive rotary buffer and wool yarn pad, and Meguiars polish. This of course after it was already relatively shiny after stepping it up to 1000grit hand sanding. I can in retrospect see that I could have been a little better to sit at lower grits for longer because you can see sanding texture beneath the shine of exactly that. If you don't want to take this step, I recommend treating your scales to a layer of polyurethane sealant, mineral oil, or even a CyanoAcrylate coating (super glue sealing, of which you should google because that's a whole other tutorial).
-<a href="https://i.imgur.com/FPTwvVl.jpg"><img height="640" src="https://i.imgur.com/FPTwvVlr.jpg" width="360" /></a>
-
-Isn't she lovely?
-You can do this too! SEE THIS THREAD, it was my inspiration, interpolate what I did with what he did, and hit the googles on a few other knife DIYs and you should be in good shape to make your own with pretty basic tools: <a href="https://www.reddit.com/r/DIY/comments/47is7b/an_answer_to_a_very_common_question_how_do_i_get/">https://www.reddit.com/r/DIY/comments/47is7b/an_answer_to_a_very_common_question_how_do_i_get/</a>
-
-How I made a knife using basic hand tools and no prior knife making experience.
-
-
-Finished Product!
-
-This knife was the best gift I've ever given thus far, and one of the prettiest things I've ever made. Are you good with sandpaper and an angle grinder? You can do this too! This thread was my inspiration: https://www.reddit.com/r/DIY/comments/47is7b/an_answer_to_a_very_common_question_how_do_i_get/.
-
-To have a good knife you need a good template. I wanted to make a good kitchen knife that was right-sized to my girlfriend's petite hands. I laid out all my kitchen knives and thought about what I liked and did not like about them. I also browsed around http://dcknives.blogspot.com/ to see what I liked and did not like. Drawn to size in which it will fit on the 1084 steel stock I bought.
+I hope that this served as some degree of inspiration. This is my experience and it's not necessarily meant to be a step-by-step. You're going to find that you'll take ideas from here and there to form your own method, so read, read, read.
