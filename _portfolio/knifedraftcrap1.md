@@ -190,8 +190,7 @@ I used an automotive rotary buffer and wool yarn pad, and Meguiars polish. This 
 I can again in retrospect see that I could have been a little better to sit at lower grits for longer because you can see sanding texture beneath the shine of exactly that. If you don't want to take this step, I recommend treating your scales to a layer of polyurethane sealant, mineral oil, or even a CyanoAcrylate coating (super glue sealing, of which you should google because that's a whole other tutorial).
 ### Before and After
 
-{% include gallery id="gallery2"%}
-*Before and After*
+{% include gallery id="gallery2" caption="Before and After" %}
 
 Isn't she lovely?
 ## Conclusion
