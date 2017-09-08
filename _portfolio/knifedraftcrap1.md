@@ -9,7 +9,7 @@ sidebar:
     image: https://i.imgur.com/tUWO48f.jpg
     image_alt: "logo"
     text: "Photo documented DIY highlighting how I made my first knife [on a whim.]"
-gallery:
+gallery1:
   - url: https://i.imgur.com/HlzsFAc.jpg
     image_path: http://i.imgur.com/HlzsFAc.jpg
     alt: "Template Cutout"
@@ -28,7 +28,7 @@ gallery2:
     alt: "After Polishing"
 ---
 {% include toc title="Table of Contents" icon="file-text" %}
-{% include gallery %}
+{% include gallery id="gallery1"%}
 ## Design and Template
 This knife was the best gift I've ever given thus far, and one of the prettiest things I've ever made. Are you good with sandpaper and an angle grinder? You can do this too! This thread was my inspiration: ["How do I get started making knives?" Here's a way to do it.](https://www.reddit.com/r/DIY/comments/47is7b/an_answer_to_a_very_common_question_how_do_i_get)
 
@@ -165,7 +165,7 @@ I used an automotive rotary buffer and wool yarn pad, and Meguiars polish. This 
 
 I can again in retrospect see that I could have been a little better to sit at lower grits for longer because you can see sanding texture beneath the shine of exactly that. If you don't want to take this step, I recommend treating your scales to a layer of polyurethane sealant, mineral oil, or even a CyanoAcrylate coating (super glue sealing, of which you should google because that's a whole other tutorial).
 
-{% include gallery2 %}
+{% include gallery id="gallery2"%}
 
 
 
