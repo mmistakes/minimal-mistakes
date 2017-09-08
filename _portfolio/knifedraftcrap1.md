@@ -32,6 +32,7 @@ This knife was the best gift I've ever given thus far, and one of the prettiest 
 
 To have a good knife you need a good template. I wanted to make a good kitchen knife that was right-sized to my girlfriend's petite hands. I laid out all my kitchen knives and thought about what I liked and did not like about them. I also browsed around <a href="http://dcknives.blogspot.com/">http://dcknives.blogspot.com</a> to see what I liked and did not like. Drawn to size in which it will fit on the 1084 steel stock I bought.
 ![Markdown Image](http://i.imgur.com/HlzsFAc.jpg)
+<figcaption>The point at which I was hesitant to open a can of worms project but was too far to stop.</figcaption>
   <img src="http://i.imgur.com/HlzsFAc.jpg" /></li>
   <img src="http://i.imgur.com/VKZPVUH.jpg" /></li>
   <img src="http://i.imgur.com/adD5tnd.jpg" /></li>
