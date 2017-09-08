@@ -121,12 +121,12 @@ The tempering step heats the knife at a non-critical temperature to slightly sof
 
 ## More Sanding
 ![Ready to sand again](https://i.imgur.com/NL46gA3.jpg)
-<figcaption>Time to sand again!</figcaption>
+*Time to sand again!*
 
 All that work sanding before and we have to do it all again.
 
 ![Sanding again](https://i.imgur.com/P9qcXhB.jpg)
-<figcaption>Hand sanding for me, mostly lots of hand sanding.</figcaption>
+*Hand sanding for me, mostly lots of hand sanding.*
 
 I started by getting all the carbon and burnt oil off with the flap wheel and belt sander, then threw it in the vice and went at it with lots of grueling hand sanding. Grits: 80, 150, 220, 360, 400Wet, 600W, 800W, 1000W. Wood belt sander was used to shape and smooth at 50 and 220 grits.
 
@@ -134,7 +134,7 @@ In retrospect, I wish I'd spent more time in each step of grit. Sure, the finish
 ## Scales
 ### Stabilized Dyed Maple Scales
 ![Scales Mockup](https://i.imgur.com/nmj7ta3.jpg)
-<figcaption>Mocking up stabilized maple scales.</figcaption>
+*Mocking up stabilized maple scales.*
 
 You need to acquire some scales. You can use anything from pallet wood, micarta, some fallen tree, or go online and find some pre-stabilized scales, or stabilize your own, get you some nice pretty matched maple and some minwax wood hardener and some dye (industrial textile dye for this example), mix it up and drop your wood in, put it in a vacuum for a day, then put under great pressure for a day. If you don't have access to fancy vacuum/pressure chambers or anything you should do it at home with jars! See this: <a href="http://dcknives.blogspot.com/p/wood-stabilization.html">DC Knives: Wood Stabilization</a> and this: <a href="http://theshaveden.com/forums/threads/stabilizing-wood-in-a-homemade-vacuum-chamber.28802/">Homemade Vacuum Chamber Scale Stabilization</a> When your scales are ready, make sure you take and shape the blade-side before gluing them to the blade- it's a lot harder to shape this side after you've glued them in place.
 
@@ -147,47 +147,47 @@ Acraglas gun epoxy needs the perfect 4:1 ratio. I did not use the Acraglas Gel, 
 I had some lovely hypodermic needles that made metering the 4:1 epoxy ratio very easy, mix for 4mins, hit it with a blowdryer a bit to make it less runny, and apply!
 ### Scale Clamping
 ![Scale Gluing/Drying Jig](https://i.imgur.com/ZSkoK9a.jpg)
-<figcaption>I hit it with a blow dryer to get things sped up, then let it set overnight.</figcaption>
+*I hit it with a blow dryer to get things sped up, then let it set overnight.*
 
 The set time for Acraglas is 10+ hours. You can use a quicker epoxy or even super glue but the best epoxies take a long time to set. Full cure time is 5+ days with Acraglas. If it works with guns very well it will work with my knife.
 ![Clamped Knife](https://i.imgur.com/1aH4yJV.jpg)
-<figcaption>Clamped in place til the epoxy is set overnight.</figcaption>
+*Clamped in place til the epoxy is set overnight.*
 
 ### Shaping a Handle
 ![Scale Shaping](https://i.imgur.com/yZ3gYup.jpg)
-<figcaption>Start shaping the scales.</figcaption>
+*Start shaping the scales.*
 
 At this point, I put the knife in a vice with softer (than steel) wood on each side to protect it. I went at it with a rough file til I hit steel all the way around.
 ![Shaped Scale Profile](https://i.imgur.com/dyZg2BH.jpg)
-<figcaption>Isn't she lovely?</figcaption>
+*Isn't she lovely?*
 
 Things are going to start looking very pretty at this point.
 
 ![Shaped Scale](https://i.imgur.com/CxZMezK.jpg)
-<figcaption>Shaped!</figcaption>
+*Shaped!*
 
 Shape it with the file until you get something more knife-like.
 ### Pinning the Scales
 ![Pinning](https://i.imgur.com/n7y5BHX.jpg)
-<figcaption>I used mosaic pins to pin the scales in place.</figcaption>
+*I used mosaic pins to pin the scales in place.*
 
 I did not make my pretty mosaic knife pins, I found it on eBay for about $15. It's 5mm thick. I don't own a drill press, nor a 5mm drill bit. Didn't make things any easier. 3/16" bit is NOT a substitute for 5mm. Get a 3/16" pin for a 3/16" hole or a 5mm pin for a 5mm hole, man. I used super glue to secure the pin and fill any voids and holes, then ran it over the belt sander to level out. I decided in my case it would be best to pin after gluing given my lack of drill press. I couldn't tell you either way whether or not it made things easier, but I felt as if without a nice drill press and rig I was bound to drill holes in the wrong places. If you have steady hands and go slowly, you will do just fine with a hand drill here.
-![Gorgeous Scales](https://i.imgur.com/tMco8HQ.jpg)<figcaption>Lots of sandpaper and file shaping later.</figcaption>
+![Gorgeous Scales](https://i.imgur.com/tMco8HQ.jpg)*Lots of sandpaper and file shaping later.*
 After pinning and leveling, go at the handle with a set of files until you get your desired shape. This shape was mostly done with a file, then I went over it with hand sanding just to smooth it all out- started with 220 grit and worked up to 600 grit.
 
 ## Polishing and Sharpening
 ### Sharpening
-![Sharp!](https://i.imgur.com/ocdq7ED.jpg)<figcaption>The blade is sharp enough to shave effortlessly!</figcaption>
+![Sharp!](https://i.imgur.com/ocdq7ED.jpg)*The blade is sharp enough to shave effortlessly!*
 Up next: Straight razor project? After I finished the handle I went back and readdressed the knife that I had re-sanded progressively up to 1000 grit. To sharpen the blade edge I set it in a vice and at a more aggressive angle I sharpened the knife- to put this in text would be difficult so I suggest you view blade filing videos. Another solution is to build this beautiful jig from <a href="http://goughcustom.com/blog/2013-08-16-making-a-filing-jig/making-and-using-a-bevel-filing-jig.html">this Gogh knives video</a>. I also suggest looking through his other materials as this guy does incredible work. Another item of note is to make sure you bring your knife to a hard surface such as a counter and make cutting motions to see if it's the swing you want. Then chop down and kneel down to look at the gap between the blade edge and the counter- is there a gap? You may want to grind and resharpen- this happened to me twice.
 ### Polishing
-![Polished](https://i.imgur.com/qz8S94E.jpg)<figcaption>Optionally, you can polish your blade and handle to a high gloss.</figcaption>
+![Polished](https://i.imgur.com/qz8S94E.jpg)*Optionally, you can polish your blade and handle to a high gloss.*
 I used an automotive rotary buffer and wool yarn pad, and Meguiars polish. This of course after it was already relatively shiny after stepping it up to 1000grit hand sanding. If you use a rotary buffer, mount it in a vice, wear leather gloves, and use a lot of caution. If the buffer catches the blade the wrong way it'll send it straight into you.
 
 I can again in retrospect see that I could have been a little better to sit at lower grits for longer because you can see sanding texture beneath the shine of exactly that. If you don't want to take this step, I recommend treating your scales to a layer of polyurethane sealant, mineral oil, or even a CyanoAcrylate coating (super glue sealing, of which you should google because that's a whole other tutorial).
 ### Before and After
 <figure>
 {% include gallery id="gallery2"%}
-<figcaption>Before and After</figcaption>
+*Before and After*
 </figure>
 Isn't she lovely?
 ## Conclusion
