@@ -9,16 +9,6 @@ sidebar:
     image: http://i.imgur.com/tUWO48f.jpg
     image_alt: "logo"
     text: "Photographic step-by-step DIY showing how I made my first knife [on a whim.]"
-  - title: "Ingredients"
-    text: "Cutoff disks
-    grinding disks
-    60 grit flap wheels
-    Acraglas epoxy
-    sanding belts (50 and 220)
-    steel stock (1084 here)
-    hearing and eye PPE
-    your scales (micarta/wood(stabilized/raw)/G10/etc)
-Sandpaper used: 80, 120, 220, 300, 400W, 600W, 800W, 1000W"
 gallery:
   - url: http://i.imgur.com/HlzsFAc.jpg
     image_path: http://i.imgur.com/HlzsFAc.jpg
@@ -47,106 +37,55 @@ I was hesitant to open a can of worms moving past this point and into actually m
 	</figcaption>
 </figure>
 
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
-<tr><td style="text-align: center;"><a href="http://i.imgur.com/tUWO48f.jpg" style="margin-left: auto; margin-right: auto;"><img height="400" src="https://images-blogger-opensocial.googleusercontent.com/gadgets/proxy?url=http%3A%2F%2Fi.imgur.com%2FtUWO48fr.jpg&amp;container=blogger&amp;gadget=a&amp;rewriteMime=image%2F*" width="234" /></a></td></tr>
-<tr><td class="tr-caption" style="text-align: center;">Tools and materials</td></tr>
-</tbody></table>
-Cutoff disks, grinding disks, 60 grit flap wheels, Acraglas epoxy, sanding belts (50 and 220), steel, hearing and eye PPE, and some 1084 steel stocks, and whatever you're going to use for scales (micarta, wood, stabilized wood, G10, et cetera)
-<div>
-Sandpaper used: 80, 120, 220, 300, 400W, 600W, 800W, 1000W
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
-<tr><td style="text-align: center;"><a href="http://i.imgur.com/VKZPVUH.jpg" style="margin-left: auto; margin-right: auto;"><img height="225" src="https://images-blogger-opensocial.googleusercontent.com/gadgets/proxy?url=http%3A%2F%2Fi.imgur.com%2FVKZPVUHr.jpg&amp;container=blogger&amp;gadget=a&amp;rewriteMime=image%2F*" width="400" /></a></td></tr>
-<tr><td class="tr-caption" style="text-align: center;">I dampened the pretty knife and slapped it on some steel.</td></tr>
-</tbody></table>
-I just used a little water to lay the template flat on the knife.
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
-<tr><td style="text-align: center;"><a href="http://i.imgur.com/adD5tnd.jpg" style="margin-left: auto; margin-right: auto;"><img height="225" src="https://images-blogger-opensocial.googleusercontent.com/gadgets/proxy?url=http%3A%2F%2Fi.imgur.com%2FadD5tndr.jpg&amp;container=blogger&amp;gadget=a&amp;rewriteMime=image%2F*" width="400" /></a></td></tr>
-<tr><td class="tr-caption" style="text-align: center;">Then I spray painted the steel.</td></tr>
-</tbody></table>
+##Tools and Materials
+![Tools and Materials](http://i.imgur.com/tUWO48f.jpg)
+###Tools
+We've all got different tools in our shops, working with what I had at the time and on a budget I got most of the work done with a basic belt sander (not optimal for knifemaking), an angle grinder, a vice, and other basic hand and power tools.
+###Materials
+* Cutoff disks
+* Grinding disks
+* 60 grit flap wheels
+* Acraglas epoxy
+* Sanding belts (50 and 220)
+* Hearing and eye PPE
+* 1084 steel stock
+* Whatever you're going to use for scales (micarta, wood, stabilized wood, G10, et cetera)
+* Homemade forge
+* Quenching oil
+* Sandpaper: 80, 120, 220, 300, 400W, 600W, 800W, 1000W
 
-This allows for easy cutting.
-<a href="http://i.imgur.com/Q9Ak4AJ.jpg"><img height="225" src="https://images-blogger-opensocial.googleusercontent.com/gadgets/proxy?url=http%3A%2F%2Fi.imgur.com%2FQ9Ak4AJr.jpg&amp;container=blogger&amp;gadget=a&amp;rewriteMime=image%2F*" width="400" /></a>
-
-
-Oh wow. This project is really coming together!
-
-
-There you have your proposed final design in steel. Cut that steel and make rough cuts to remove material that brings it to shape.
-
-
-<a href="http://i.imgur.com/Gp0Umjs.jpg"><img height="225" src="https://images-blogger-opensocial.googleusercontent.com/gadgets/proxy?url=http%3A%2F%2Fi.imgur.com%2FGp0Umjsr.jpg&amp;container=blogger&amp;gadget=a&amp;rewriteMime=image%2F*" width="400" /></a>
-
-
-Make rough cuts with an angle grinder.
-
-
+##Cutting
+Now that the steel is templated I cut that steel sizing the bar to length, then made rough cuts to remove material that brings it to shape.
+![Angle Grinder Cuts](http://i.imgur.com/Gp0Umjs.jpg)
 After enough rough cuts you get to this point. Make plenty of relief cuts to go at it with the grinding disc easier.
+With the angle grinder, I notched out the handle to make it easier work to grind off the excess. This makes grinding away the excess easier. These are just relief cuts, don't cut too deep! Don't take risks here because the angle grinder has got some bite through this unhardened steel.
+![Relief Cuts](https://i.imgur.com/Dc7SVoz.jpg)
+With a larger grinder wheel, grind off the extra bits to shape it all out.
 
-
-relief cuts to go at it with the grinding disc easier.
-
-
-<a href="https://i.imgur.com/Dc7SVoz.jpg"><img height="400" src="https://i.imgur.com/Dc7SVozr.jpg" width="225" /></a>
-
-
-This makes grinding away the excess easier.
-
-
-Relief cuts, dont cut too deep!
-
-
-
-
-<a href="https://i.imgur.com/dm19R1l.jpg"><img height="225" src="https://i.imgur.com/dm19R1lr.jpg" width="400" /></a>
-
-I'd say that's a pretty knife shaped piece of steel!
-
-
-Things are starting to take shape. Up to this point we've only worked at it with the grinding disc and cutoff wheel.
-
-
-
-
-<a href="https://i.imgur.com/twc70iK.jpg"><img height="225" src="https://i.imgur.com/twc70iKr.jpg" width="400" /></a>
-
-More grinding and shaping.
-
-
+##Shaping
+![Knife shaped piece of steel.](https://i.imgur.com/dm19R1l.jpg)
+I'd say that's a pretty knife shaped piece of steel! At this point I was wishing I had a bench grinder, but surprised at how much you can do with a Hazard Fraught 4" Angle Grinder if you have the patience and wrist.
+![Belt sanding begin](https://i.imgur.com/twc70iK.jpg)
 At this point, start to work a bevel into what will eventually become your blade. You can choose to just use a flap disc and angle grinder or a combination of that and a sanding belt to shape it. I used mostly 50grit sanding on a wood sanding belt to shape the bevel and level things out.
 
 
+I used mostly 50grit sanding on a wood sanding belt to shape the bevel and level things out. This setup wasn't optimal but it's what I had around and certainly got the job done. It's no [knifemaking belt sander](http://www.grizzly.com/products/Knife-Belt-Sander-Buffer/G1015) for certain.
 
-
-
-
-I used mostly 50grit sanding on a wood sanding belt to shape the bevel and level things out.
-
-
-
-
-<a href="https://i.imgur.com/CKs5gpF.jpg"><img height="400" src="https://i.imgur.com/CKs5gpFr.jpg" width="225" /></a>
-
-More grinding and shaping. I've beveled the knife to about 0.5mm thickness.
-
+![Blade Shaping](https://i.imgur.com/CKs5gpF.jpg)
+More grinding and shaping. I've beveled the knife to about 0.5mm thickness at the edge. Both sides are shaped and beveled out. Take your time here. It's all about patience and checking your work continuously. Remove too much material and you're either starting fresh or making yourself a smaller knife.
 
 Don't grind it too thin at this point or else it will warp easily when you quench it. Get it as smooth and gorgeous as possible with your flap disc or sanding belt.
 
-
-
-
-<a href="https://i.imgur.com/NAEJZRQ.jpg"><img height="225" src="https://i.imgur.com/NAEJZRQr.jpg" width="400" /></a>
-
+![Shiny](https://i.imgur.com/NAEJZRQ.jpg)
 Starting to look nice. We're about ready to get it hot!
-
 
 Sand and make it very pretty! At this point you see the knife in the previous image has been run through sandpaper, stepped up to about 400 grit in this photo. I deemed this ready for fire.
 
 
 
 
-<a href="https://i.imgur.com/LhlIajS.jpg"><img height="400" src="https://i.imgur.com/LhlIajSr.jpg" width="225" /></a>
-
-This is my homemade forge.
+![Homemade Knife Forge](https://i.imgur.com/LhlIajS.jpg)
+This is my homemade knife forge.
 
 
 MAPP gas torch, propane torch, garden edgers from home depot and flat concrete slabs. If it's not fire blocks it will crack is what teh internet said. Sure enough I got one use out of these edgers and they cracked. They served their purpose and were like $2/ea. I used wet dirt to seal up any holes and level the whole deal out.
