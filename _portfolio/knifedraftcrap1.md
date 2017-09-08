@@ -120,7 +120,8 @@ The Currie point is red hot, hot enough to where a magnet does not stick to it. 
 You'll note there's no photo of the knife being quenched. This operation has to happen quickly and you must keep safety in mind. If I had a helper I'd put them on safety and photography duty.
 ### Cooling and Tempering
 Since the knife came out of quench around 65RC hardness, we need to soften it back to about 60RC to have it just right and not too brittle. 2hrs at 450F, cool to room temp, 2hrs at 450F again. Otherwise, your knife will crack easily.
-![Quenched Knife in Oven](https://i.imgur.com/KjDAIfw.jpg)<figcaption>Bake at 450F 2 hrs, cool, repeat. It is at this point you'll be happy you used a non-petroleum oil for quenching, like sunflower oil.</figcaption>
+![Quenched Knife in Oven](https://i.imgur.com/KjDAIfw.jpg)
+*Bake at 450F 2 hrs, cool, repeat. It is at this point you'll be happy you used a non-petroleum oil for quenching, like sunflower oil.*
 The tempering step heats the knife at a non-critical temperature to slightly soften it. The tempered blade will hold a nice edge and still retain its strength and flexibility. If you skip tempering, your knife may be too hard, thus it could be too brittle.
 
 ## More Sanding
