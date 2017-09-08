@@ -23,20 +23,17 @@ gallery:
     alt: "Hardened and Tempered"
 ---
 {% include gallery caption="This is a gallery to go along with this." %}
-
-<figure>
-  <img src="http://i.imgur.com/H4wEGbs.jpg" alt="archive layout example">
-<figcaption>The point at which I was hesitant to open a can of worms project but was too far to stop.</figcaption>
-</figure>
 This knife was the best gift I've ever given thus far, and one of the prettiest things I've ever made. Are you good with sandpaper and an angle grinder? You can do this too! This thread was my inspiration: <a href="https://www.reddit.com/r/DIY/comments/47is7b/an_answer_to_a_very_common_question_how_do_i_get">"How do I get started making knives?" Here's a way to do it.</a>
 
 To have a good knife you need a good template. I wanted to make a good kitchen knife that was right-sized to my girlfriend's petite hands. I laid out all my kitchen knives and thought about what I liked and did not like about them. I also browsed around <a href="http://dcknives.blogspot.com/">http://dcknives.blogspot.com</a> to see what I liked and did not like. Drawn to size in which it will fit on the 1084 steel stock I bought.
-![Markdown Image](http://i.imgur.com/HlzsFAc.jpg)
-<figcaption>The point at which I was hesitant to open a can of worms project but was too far to stop.</figcaption>
-  <img src="http://i.imgur.com/HlzsFAc.jpg" /></li>
-  <img src="http://i.imgur.com/VKZPVUH.jpg" /></li>
-  <img src="http://i.imgur.com/adD5tnd.jpg" /></li>
-  <img src="http://i.imgur.com/Q9Ak4AJ.jpg" /></li>
+![Template Cutout](http://i.imgur.com/HlzsFAc.jpg)
+<figcaption>I was hesitant to open a can of worms here but I was too far to stop.</figcaption>
+  <figure class="third">
+	<img src="http://i.imgur.com/VKZPVUH.jpg">
+	<img src="http://i.imgur.com/adD5tnd.jpg">
+	<img src="http://i.imgur.com/Q9Ak4AJ.jpg" style="filter:FlipH." >
+	<figcaption>Caption describing these three images.</figcaption>
+</figure>
 
 Pencil, graphing paper, and ruler your way to a design you like.
 
