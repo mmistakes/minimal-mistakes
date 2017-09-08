@@ -203,6 +203,8 @@ figure {
 // added per https://stackoverflow.com/questions/19331362/using-an-image-caption-in-markdown-jekyll
 // for image captions
 img + em {
+  font-size: .8rem;
+  color: light-grey;
 }
 
   > a {
