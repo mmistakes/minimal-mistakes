@@ -31,15 +31,6 @@ gallery2:
 {% include gallery id="gallery1"%}
 ## Design and Template
 This knife was the best gift I've ever given thus far, and one of the prettiest things I've ever made. Are you good with sandpaper and an angle grinder? You can do this too! This thread was my inspiration: ["How do I get started making knives?" Here's a way to do it.](https://www.reddit.com/r/DIY/comments/47is7b/an_answer_to_a_very_common_question_how_do_i_get)
-{% include gallery id="gallery1"%}
-## Design and Template
-This knife was the best gift I've ever given thus far, and one of the prettiest things I've ever made. Are you good with sandpaper and an angle grinder? You can do this too! This thread was my inspiration: ["How do I get started making knives?" Here's a way to do it.](https://www.reddit.com/r/DIY/comments/47is7b/an_answer_to_a_very_common_question_how_do_i_get)
-{% include gallery id="gallery1"%} 
-## Design and Template
-This knife was the best gift I've ever given thus far, and one of the prettiest things I've ever made. Are you good with sandpaper and an angle grinder? You can do this too! This thread was my inspiration: ["How do I get started making knives?" Here's a way to do it.](https://www.reddit.com/r/DIY/comments/47is7b/an_answer_to_a_very_common_question_how_do_i_get)
-{% include gallery id="gallery1"%}
-## Design and Template
-This knife was the best gift I've ever given thus far, and one of the prettiest things I've ever made. Are you good with sandpaper and an angle grinder? You can do this too! This thread was my inspiration: ["How do I get started making knives?" Here's a way to do it.](https://www.reddit.com/r/DIY/comments/47is7b/an_answer_to_a_very_common_question_how_do_i_get)
 
 To have a good knife you should start with a good template. I wanted to make a good kitchen knife that was right-sized to my girlfriend's small hands. I laid out all my kitchen knives and thought about what I liked and did not like about them. I also browsed around [dcknives.blogspot.com](http://dcknives.blogspot.com/) to see what I liked and did not like. Drawn to size in which it will fit on the 1084 steel stock I bought.
 ![Template Cutout](http://i.imgur.com/HlzsFAc.jpg)
@@ -106,11 +97,6 @@ MAPP gas torch, propane torch, garden edgers from home depot and flat concrete s
 I'll note here that I'm using 1084 steel in case you forgot. This steel was chosen because it's a great balance of all properties important to a beginner knifemaker, despite its iron content lending it capable of rusting if not cared for, but also because it's dead simple to harden. Heat it up to its (relatively low) Curie Point and test that you've reached that temp by making sure a magnet wont stick to it, then quench it in oil quickly. Fancier metals require ovens with obscene temperatures, fancy cooling methods, and fancy tempering. We're pretty basic at this point, so keep that in mind.
 
 ![Homemade Torch Forge Setup](https://i.imgur.com/CN2fmg6.jpg)*Getting hot!*
-![Homemade Torch Forge Setup](https://i.imgur.com/CN2fmg6.jpg)*Getting hot!*
-![Homemade Torch Forge Setup](https://i.imgur.com/CN2fmg6.jpg)
-*Getting hot!*
-![Homemade Torch Forge Setup](https://i.imgur.com/CN2fmg6.jpg)
-*Getting hot!*
 
 ### Pre-quench Preparation
 
