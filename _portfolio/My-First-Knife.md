@@ -67,7 +67,6 @@ After enough rough cuts you get to this point. Make plenty of relief cuts to go 
 With the angle grinder, I notched out the handle to make it easier work to grind off the excess. This makes grinding away the excess easier. These are just relief cuts, don't cut too deep! Don't take risks here because the angle grinder has got some bite through this unhardened steel.
 ![Relief Cuts](https://i.imgur.com/Dc7SVoz.jpg)
 With a larger grinder wheel, grind off the extra bits to shape it all out.
-
 ## Shaping
 ![Knife shaped piece of steel.](https://i.imgur.com/dm19R1l.jpg)
 I'd say that's a pretty knife shaped piece of steel! At this point I was wishing I had a bench grinder, but surprised at how much you can do with a Hazard Fraught 4" Angle Grinder if you have the patience and wrist.
