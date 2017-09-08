@@ -6,11 +6,19 @@ header:
   teaser: https://i.imgur.com/CyDPDEA.jpg
 sidebar:
   - title: "DIY"
-    image: http://placehold.it/350x250
+    image: http://i.imgur.com/tUWO48f.jpg
     image_alt: "logo"
     text: "Photographic step-by-step DIY showing how I made my first knife [on a whim.]"
   - title: "Ingredients"
-    text: "Write what materials I needed here"
+    text: "Cutoff disks
+    grinding disks
+    60 grit flap wheels
+    Acraglas epoxy
+    sanding belts (50 and 220)
+    steel stock (1084 here)
+    hearing and eye PPE
+    your scales (micarta/wood(stabilized/raw)/G10/etc)
+Sandpaper used: 80, 120, 220, 300, 400W, 600W, 800W, 1000W"
 gallery:
   - url: http://i.imgur.com/HlzsFAc.jpg
     image_path: http://i.imgur.com/HlzsFAc.jpg
@@ -22,26 +30,23 @@ gallery:
     image_path: https://i.imgur.com/NL46gA3r.jpg
     alt: "Hardened and Tempered"
 ---
+{% include toc title="Table of Contents" icon="file-text" %}
 {% include gallery caption="This is a gallery to go along with this." %}
-This knife was the best gift I've ever given thus far, and one of the prettiest things I've ever made. Are you good with sandpaper and an angle grinder? You can do this too! This thread was my inspiration: <a href="https://www.reddit.com/r/DIY/comments/47is7b/an_answer_to_a_very_common_question_how_do_i_get">"How do I get started making knives?" Here's a way to do it.</a>
+##Design and Template
+This knife was the best gift I've ever given thus far, and one of the prettiest things I've ever made. Are you good with sandpaper and an angle grinder? You can do this too! This thread was my inspiration: ["How do I get started making knives?" Here's a way to do it.](https://www.reddit.com/r/DIY/comments/47is7b/an_answer_to_a_very_common_question_how_do_i_get)
 
-To have a good knife you need a good template. I wanted to make a good kitchen knife that was right-sized to my girlfriend's petite hands. I laid out all my kitchen knives and thought about what I liked and did not like about them. I also browsed around <a href="http://dcknives.blogspot.com/">http://dcknives.blogspot.com</a> to see what I liked and did not like. Drawn to size in which it will fit on the 1084 steel stock I bought.
+To have a good knife you should start with a good template. I wanted to make a good kitchen knife that was right-sized to my girlfriend's small hands. I laid out all my kitchen knives and thought about what I liked and did not like about them. I also browsed around [dcknives.blogspot.com](http://dcknives.blogspot.com/) to see what I liked and did not like. Drawn to size in which it will fit on the 1084 steel stock I bought.
 ![Template Cutout](http://i.imgur.com/HlzsFAc.jpg)
-<figcaption>I was hesitant to open a can of worms here but I was too far to stop.</figcaption>
+Pencil, graphing paper, and ruler your way to a design you like. I cut my design out of the paper with an Xacto blade.
+I was hesitant to open a can of worms moving past this point and into actually making the thing but I was too far to stop.
   <figure class="third">
 	<img src="http://i.imgur.com/VKZPVUH.jpg">
 	<img src="http://i.imgur.com/adD5tnd.jpg">
 	<img src="http://i.imgur.com/Q9Ak4AJ.jpg" style="filter:FlipH." >
-	<figcaption>Caption describing these three images.</figcaption>
+	<figcaption>To template the design onto steel, I wet my steel stock and spread it on. The moisture allowed for easy adjustment. After patting it dry I spray painted it then peeled the template away.
+	</figcaption>
 </figure>
 
-Pencil, graphing paper, and ruler your way to a design you like.
-
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
-<tr><td style="text-align: center;"><a href="http://i.imgur.com/HlzsFAc.jpg" style="margin-left: auto; margin-right: auto;"><img height="225" src="https://images-blogger-opensocial.googleusercontent.com/gadgets/proxy?url=http%3A%2F%2Fi.imgur.com%2FHlzsFAcr.jpg&amp;container=blogger&amp;gadget=a&amp;rewriteMime=image%2F*" width="400" /></a></td></tr>
-<tr><td class="tr-caption" style="text-align: center;">Pretty knife indeed.</td></tr>
-</tbody></table>
-I cut my design out of the paper with an Xacto blade.
 <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
 <tr><td style="text-align: center;"><a href="http://i.imgur.com/tUWO48f.jpg" style="margin-left: auto; margin-right: auto;"><img height="400" src="https://images-blogger-opensocial.googleusercontent.com/gadgets/proxy?url=http%3A%2F%2Fi.imgur.com%2FtUWO48fr.jpg&amp;container=blogger&amp;gadget=a&amp;rewriteMime=image%2F*" width="234" /></a></td></tr>
 <tr><td class="tr-caption" style="text-align: center;">Tools and materials</td></tr>
