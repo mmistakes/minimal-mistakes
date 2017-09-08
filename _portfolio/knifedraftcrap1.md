@@ -40,12 +40,11 @@ I was hesitant to open a can of worms moving past this point and into actually m
 	<img src="http://i.imgur.com/VKZPVUH.jpg">
 	<img src="http://i.imgur.com/adD5tnd.jpg">
 	<img src="http://i.imgur.com/Q9Ak4AJ.jpg" style="filter:FlipH." >
-	<figcaption>To template the design onto steel, I wet my steel stock and spread it on. The moisture allowed for easy adjustment. After patting it dry I spray painted it then peeled the template away.
-	</figcaption>
-</figure>
-
+  </figure>
+To template the design onto steel, I wet my steel stock and spread it on. The moisture allowed for easy adjustment. After patting it dry I spray painted it then peeled the template away.
 ## Tools and Materials
 ![Tools and Materials](http://i.imgur.com/tUWO48f.jpg)
+
 ### Tools
 We've all got different tools in our shops, working with what I had at the time and on a budget I got most of the work done with a basic belt sander (not optimal for knifemaking), an angle grinder, a vice, and other basic hand and power tools.
 ### Materials
@@ -74,7 +73,6 @@ With a larger grinder wheel, grind off the extra bits to shape it all out.
 I'd say that's a pretty knife shaped piece of steel! At this point I was wishing I had a bench grinder, but surprised at how much you can do with a Hazard Fraught 4" Angle Grinder if you have the patience and wrist.
 ![Belt sanding begin](https://i.imgur.com/twc70iK.jpg)
 At this point, start to work a bevel into what will eventually become your blade. You can choose to just use a flap disc and angle grinder or a combination of that and a sanding belt to shape it. I used mostly 50grit sanding on a wood sanding belt to shape the bevel and level things out.
-
 
 I used mostly 50grit sanding on a wood sanding belt to shape the bevel and level things out. This setup wasn't optimal but it's what I had around and certainly got the job done. It's no [knifemaking belt sander](http://www.grizzly.com/products/Knife-Belt-Sander-Buffer/G1015) for certain.
 
@@ -119,7 +117,8 @@ Since the knife came out of quench around 65RC hardness, we need to soften it ba
 The tempering step heats the knife at a non-critical temperature to slightly soften it. The tempered blade will hold a nice edge and still retain its strength and flexibility. If you skip tempering, your knife may be too hard, thus it could be too brittle.
 
 ## More Sanding
-![Ready to sand again](https://i.imgur.com/NL46gA3.jpg)<figcaption>Time to sand again!</figcaption>
+![Ready to sand again](https://i.imgur.com/NL46gA3.jpg)
+<figcaption>Time to sand again!</figcaption>
 All that work sanding before and we have to do it all again.
 
 ![Sanding again](https://i.imgur.com/P9qcXhB.jpg)<figcaption>Hand sanding for me, mostly lots of hand sanding.</figcaption>
