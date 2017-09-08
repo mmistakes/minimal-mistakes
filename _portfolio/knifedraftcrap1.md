@@ -8,7 +8,7 @@ sidebar:
   - title: "DIY"
     image: https://i.imgur.com/tUWO48f.jpg
     image_alt: "logo"
-    text: "Photo documented DIY highlighting how I made my first knife [on a whim.]"
+    text: "Photo documented DIY highlighting how I made my first knife."
 gallery1:
   - url: https://i.imgur.com/HlzsFAc.jpg
     image_path: http://i.imgur.com/HlzsFAc.jpg
@@ -197,4 +197,3 @@ Isn't she lovely?
 You can do this too! <a href="https://www.reddit.com/r/DIY/comments/47is7b/an_answer_to_a_very_common_question_how_do_i_get/">SEE THIS THREAD</a>, it was my inspiration, interpolate what I did with what he did, and hit the googles on a few other knife DIYs and you should be in good shape to make your own with pretty basic tools.
 
 I hope that this served as some degree of inspiration. This is my experience and it's not necessarily meant to be a step-by-step. You're going to find that you'll take ideas from here and there to form your own method, so read, read, read.
-{% include toc title="Table of Contents" icon="file-text" %}
