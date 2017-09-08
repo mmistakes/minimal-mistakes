@@ -108,7 +108,7 @@ I thought this was a nice touch. Another note here is you can see I cut my choil
 You'll want to make all these last minute bits happen now. It's far more difficult when the metal is hardened.
 ### Heating to Curie Point
 ![Hot Knife](https://i.imgur.com/6FAxTfB.jpg)
-Heat to the Currie point of 1084 for about 3-5min. Then quench in oil very quickly. I used sunflower oil.
+*Heat to the Currie point of 1084 for about 3-5min. Then quench in oil very quickly. I used sunflower oil.*
 
 The Currie point is red hot, hot enough to where a magnet does not stick to it. 1440F for 1084. Here's a little reading you should do for heat treatment of 1084: <a href="https://evenheat-kiln.com/?p=heat-treating-information">Evenheat Tech Info: Heat Treating Information</a>
 
@@ -117,6 +117,7 @@ You'll note there's no photo of the knife being quenched. This operation has to 
 Since the knife came out of quench around 65RC hardness, we need to soften it back to about 60RC to have it just right and not too brittle. 2hrs at 450F, cool to room temp, 2hrs at 450F again. Otherwise, your knife will crack easily.
 ![Quenched Knife in Oven](https://i.imgur.com/KjDAIfw.jpg)
 *Bake at 450F 2 hrs, cool, repeat. It is at this point you'll be happy you used a non-petroleum oil for quenching, like sunflower oil.*
+
 The tempering step heats the knife at a non-critical temperature to slightly soften it. The tempered blade will hold a nice edge and still retain its strength and flexibility. If you skip tempering, your knife may be too hard, thus it could be too brittle.
 
 ## More Sanding
@@ -178,9 +179,11 @@ After pinning and leveling, go at the handle with a set of files until you get y
 ## Polishing and Sharpening
 ### Sharpening
 ![Sharp!](https://i.imgur.com/ocdq7ED.jpg)*The blade is sharp enough to shave effortlessly!*
+
 Up next: Straight razor project? After I finished the handle I went back and readdressed the knife that I had re-sanded progressively up to 1000 grit. To sharpen the blade edge I set it in a vice and at a more aggressive angle I sharpened the knife- to put this in text would be difficult so I suggest you view blade filing videos. Another solution is to build this beautiful jig from <a href="http://goughcustom.com/blog/2013-08-16-making-a-filing-jig/making-and-using-a-bevel-filing-jig.html">this Gogh knives video</a>. I also suggest looking through his other materials as this guy does incredible work. Another item of note is to make sure you bring your knife to a hard surface such as a counter and make cutting motions to see if it's the swing you want. Then chop down and kneel down to look at the gap between the blade edge and the counter- is there a gap? You may want to grind and resharpen- this happened to me twice.
 ### Polishing
 ![Polished](https://i.imgur.com/qz8S94E.jpg)*Optionally, you can polish your blade and handle to a high gloss.*
+
 I used an automotive rotary buffer and wool yarn pad, and Meguiars polish. This of course after it was already relatively shiny after stepping it up to 1000grit hand sanding. If you use a rotary buffer, mount it in a vice, wear leather gloves, and use a lot of caution. If the buffer catches the blade the wrong way it'll send it straight into you.
 
 I can again in retrospect see that I could have been a little better to sit at lower grits for longer because you can see sanding texture beneath the shine of exactly that. If you don't want to take this step, I recommend treating your scales to a layer of polyurethane sealant, mineral oil, or even a CyanoAcrylate coating (super glue sealing, of which you should google because that's a whole other tutorial).
