@@ -182,9 +182,10 @@ I used an automotive rotary buffer and wool yarn pad, and Meguiars polish. This 
 
 I can again in retrospect see that I could have been a little better to sit at lower grits for longer because you can see sanding texture beneath the shine of exactly that. If you don't want to take this step, I recommend treating your scales to a layer of polyurethane sealant, mineral oil, or even a CyanoAcrylate coating (super glue sealing, of which you should google because that's a whole other tutorial).
 ### Before and After
+<figure>
 {% include gallery id="gallery2"%}
 <figcaption>Before and After</figcaption>
-
+</figure>
 Isn't she lovely?
 ## Conclusion
 You can do this too! <a href="https://www.reddit.com/r/DIY/comments/47is7b/an_answer_to_a_very_common_question_how_do_i_get/">SEE THIS THREAD</a>, it was my inspiration, interpolate what I did with what he did, and hit the googles on a few other knife DIYs and you should be in good shape to make your own with pretty basic tools.
