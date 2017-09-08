@@ -90,13 +90,13 @@ Sand and make it very pretty! At this point you see the knife in the previous im
 
 ![Homemade Knife Forge](https://i.imgur.com/LhlIajS.jpg)
 *This is my homemade knife forge.*
- 
+
 ### Materials
 MAPP gas torch, propane torch, garden edgers from home depot and flat concrete slabs. If it's not fire blocks it will crack is what teh internets said. Sure enough I got one use out of these edgers and they cracked. They served their purpose and were like $2/ea. I used wet dirt to seal up any holes and level the whole deal out. I highly recommend at least one of the torches be a MAPP gas torch (yellow can); you'll thank me. I'd imagine you may not even need the forge if you just use one or two MAPP torches, they're just so effective.
 
 I'll note here that I'm using 1084 steel in case you forgot. This steel was chosen because it's a great balance of all properties important to a beginner knifemaker, despite its iron content lending it capable of rusting if not cared for, but also because it's dead simple to harden. Heat it up to its (relatively low) Curie Point and test that you've reached that temp by making sure a magnet wont stick to it, then quench it in oil quickly. Fancier metals require ovens with obscene temperatures, fancy cooling methods, and fancy tempering. We're pretty basic at this point, so keep that in mind.
 
-![Homemade Torch Forge Setup](https://i.imgur.com/CN2fmg6.jpg)<figcaption>Getting hot!</figcaption>
+![Homemade Torch Forge Setup](https://i.imgur.com/CN2fmg6.jpg)*Getting hot!*
 
 ### Pre-quench Preparation
 
