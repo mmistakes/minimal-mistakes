@@ -22,7 +22,7 @@ gallery:
 ---
 {% include toc title="Table of Contents" icon="file-text" %}
 {% include gallery caption="This is a gallery to go along with this." %}
-##Design and Template
+## Design and Template
 This knife was the best gift I've ever given thus far, and one of the prettiest things I've ever made. Are you good with sandpaper and an angle grinder? You can do this too! This thread was my inspiration: ["How do I get started making knives?" Here's a way to do it.](https://www.reddit.com/r/DIY/comments/47is7b/an_answer_to_a_very_common_question_how_do_i_get)
 
 To have a good knife you should start with a good template. I wanted to make a good kitchen knife that was right-sized to my girlfriend's small hands. I laid out all my kitchen knives and thought about what I liked and did not like about them. I also browsed around [dcknives.blogspot.com](http://dcknives.blogspot.com/) to see what I liked and did not like. Drawn to size in which it will fit on the 1084 steel stock I bought.
@@ -37,11 +37,11 @@ I was hesitant to open a can of worms moving past this point and into actually m
 	</figcaption>
 </figure>
 
-##Tools and Materials
+## Tools and Materials
 ![Tools and Materials](http://i.imgur.com/tUWO48f.jpg)
-###Tools
+### Tools
 We've all got different tools in our shops, working with what I had at the time and on a budget I got most of the work done with a basic belt sander (not optimal for knifemaking), an angle grinder, a vice, and other basic hand and power tools.
-###Materials
+### Materials
 * Cutoff disks
 * Grinding disks
 * 60 grit flap wheels
@@ -54,7 +54,7 @@ We've all got different tools in our shops, working with what I had at the time 
 * Quenching oil
 * Sandpaper: 80, 120, 220, 300, 400W, 600W, 800W, 1000W
 
-##Cutting
+## Cutting
 Now that the steel is templated I cut that steel sizing the bar to length, then made rough cuts to remove material that brings it to shape.
 ![Angle Grinder Cuts](http://i.imgur.com/Gp0Umjs.jpg)
 After enough rough cuts you get to this point. Make plenty of relief cuts to go at it with the grinding disc easier.
@@ -62,7 +62,7 @@ With the angle grinder, I notched out the handle to make it easier work to grind
 ![Relief Cuts](https://i.imgur.com/Dc7SVoz.jpg)
 With a larger grinder wheel, grind off the extra bits to shape it all out.
 
-##Shaping
+## Shaping
 ![Knife shaped piece of steel.](https://i.imgur.com/dm19R1l.jpg)
 I'd say that's a pretty knife shaped piece of steel! At this point I was wishing I had a bench grinder, but surprised at how much you can do with a Hazard Fraught 4" Angle Grinder if you have the patience and wrist.
 ![Belt sanding begin](https://i.imgur.com/twc70iK.jpg)
