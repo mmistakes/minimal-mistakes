@@ -97,7 +97,12 @@ MAPP gas torch, propane torch, garden edgers from home depot and flat concrete s
 I'll note here that I'm using 1084 steel in case you forgot. This steel was chosen because it's a great balance of all properties important to a beginner knifemaker, despite its iron content lending it capable of rusting if not cared for, but also because it's dead simple to harden. Heat it up to its (relatively low) Curie Point and test that you've reached that temp by making sure a magnet wont stick to it, then quench it in oil quickly. Fancier metals require ovens with obscene temperatures, fancy cooling methods, and fancy tempering. We're pretty basic at this point, so keep that in mind.
 
 ![Homemade Torch Forge Setup](https://i.imgur.com/CN2fmg6.jpg)*Getting hot!*
- 
+![Homemade Torch Forge Setup](https://i.imgur.com/CN2fmg6.jpg)*Getting hot!*
+![Homemade Torch Forge Setup](https://i.imgur.com/CN2fmg6.jpg)
+*Getting hot!*
+![Homemade Torch Forge Setup](https://i.imgur.com/CN2fmg6.jpg)
+*Getting hot!*
+
 ### Pre-quench Preparation
 
 While things are heating up, this may be a good point to go over your quench: And another note- make sure you buy a steel that can be liquid quenched like this- I choose 1084 because it's forgiving and very easy to heat treat. Have a fire extinguisher and a bucket of water handy. Pour an oil (motor oil, vegetable oil, I used sunflower oil) into a tall enough container for your blade. You're going to dunk your blade into this oil as quickly as safely possible after your blade is heated to it's critical temperature.
