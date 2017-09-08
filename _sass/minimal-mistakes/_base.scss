@@ -200,6 +200,10 @@ figure {
     -webkit-transition: $global-transition;
     transition: $global-transition;
   }
+// added per https://stackoverflow.com/questions/19331362/using-an-image-caption-in-markdown-jekyll
+// for image captions
+img + em {
+}
 
   > a {
     display: block;
