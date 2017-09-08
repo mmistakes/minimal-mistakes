@@ -29,9 +29,8 @@ gallery2:
 ---
 {% include toc title="Table of Contents" icon="file-text" %}
 {% include gallery id="gallery1"%}
- 
 ## Design and Template
-This knife was the best gift I've ever given thus far, and one of the prettiest things I've ever made. Are you good with sandpaper and an angle grinder? You can do this too! This thread was my inspiration: ["How do I get started making knives?" Here's a way to do it.](https://www.reddit.com/r/DIY/comments/47is7b/an_answer_to_a_very_common_question_how_do_i_get)
+This knife was the best gift I've ever given thus far, and one of the prettiest things I've ever made. Are you good with sandpaper and an angle grinder? You can do this too! This thread was my inspiration: ["How do I get started making knives?" Here's a way to do it!](https://www.reddit.com/r/DIY/comments/47is7b/an_answer_to_a_very_common_question_how_do_i_get)
 
 To have a good knife you should start with a good template. I wanted to make a good kitchen knife that was right-sized to my girlfriend's small hands. I laid out all my kitchen knives and thought about what I liked and did not like about them. I also browsed around [dcknives.blogspot.com](http://dcknives.blogspot.com/) to see what I liked and did not like. Drawn to size in which it will fit on the 1084 steel stock I bought.
 ![Template Cutout](http://i.imgur.com/HlzsFAc.jpg)
