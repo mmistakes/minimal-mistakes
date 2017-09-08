@@ -174,6 +174,7 @@ Shape it with the file until you get something more knife-like.
 
 I did not make my pretty mosaic knife pins, I found it on eBay for about $15. It's 5mm thick. I don't own a drill press, nor a 5mm drill bit. Didn't make things any easier. 3/16" bit is NOT a substitute for 5mm. Get a 3/16" pin for a 3/16" hole or a 5mm pin for a 5mm hole, man. I used super glue to secure the pin and fill any voids and holes, then ran it over the belt sander to level out. I decided in my case it would be best to pin after gluing given my lack of drill press. I couldn't tell you either way whether or not it made things easier, but I felt as if without a nice drill press and rig I was bound to drill holes in the wrong places. If you have steady hands and go slowly, you will do just fine with a hand drill here.
 ![Gorgeous Scales](https://i.imgur.com/tMco8HQ.jpg)*Lots of sandpaper and file shaping later.*
+
 After pinning and leveling, go at the handle with a set of files until you get your desired shape. This shape was mostly done with a file, then I went over it with hand sanding just to smooth it all out- started with 220 grit and worked up to 600 grit.
 
 ## Polishing and Sharpening
@@ -188,10 +189,10 @@ I used an automotive rotary buffer and wool yarn pad, and Meguiars polish. This 
 
 I can again in retrospect see that I could have been a little better to sit at lower grits for longer because you can see sanding texture beneath the shine of exactly that. If you don't want to take this step, I recommend treating your scales to a layer of polyurethane sealant, mineral oil, or even a CyanoAcrylate coating (super glue sealing, of which you should google because that's a whole other tutorial).
 ### Before and After
-<figure>
+
 {% include gallery id="gallery2"%}
 *Before and After*
-</figure>
+
 Isn't she lovely?
 ## Conclusion
 You can do this too! <a href="https://www.reddit.com/r/DIY/comments/47is7b/an_answer_to_a_very_common_question_how_do_i_get/">SEE THIS THREAD</a>, it was my inspiration, interpolate what I did with what he did, and hit the googles on a few other knife DIYs and you should be in good shape to make your own with pretty basic tools.
