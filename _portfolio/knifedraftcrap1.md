@@ -12,27 +12,26 @@ sidebar:
   - title: "Ingredients"
     text: "Write what materials I needed here"
 gallery:
-  - url: /assets/images/unsplash-gallery-image-1.jpg
-    image_path: assets/images/unsplash-gallery-image-1-th.jpg
-    alt: "placeholder image 1"
-  - url: /assets/images/unsplash-gallery-image-2.jpg
-    image_path: assets/images/unsplash-gallery-image-2-th.jpg
-    alt: "placeholder image 2"
-  - url: /assets/images/unsplash-gallery-image-3.jpg
-    image_path: assets/images/unsplash-gallery-image-3-th.jpg
-    alt: "placeholder image 3"
+  - url: http://i.imgur.com/HlzsFAc.jpg
+    image_path: http://i.imgur.com/HlzsFAc.jpg
+    alt: "Template Cutout"
+  - url: http://i.imgur.com/Gp0Umjs.jpg
+    image_path: http://i.imgur.com/Gp0Umjs.jpg
+    alt: "Steel Stock Trimming"
+  - url: https://i.imgur.com/NL46gA3r.jpg
+    image_path: https://i.imgur.com/NL46gA3r.jpg
+    alt: "Hardened and Tempered"
 ---
-{% include gallery caption="This is a gallery to go along with this!!! :)" %}
-<div>
-</div>
-<div>
-<img alt="Finished Product!" height="360" src="https://i.imgur.com/CyDPDEA.jpg" width="640" /></div>
+{% include gallery caption="This is a gallery to go along with this." %}
 
+<figure>
+  <img src="http://i.imgur.com/H4wEGbs.jpg" alt="archive layout example">
+<figcaption>The point at which I was hesitant to open a can of worms project but was too far to stop.</figcaption>
+</figure>
 This knife was the best gift I've ever given thus far, and one of the prettiest things I've ever made. Are you good with sandpaper and an angle grinder? You can do this too! This thread was my inspiration: <a href="https://www.reddit.com/r/DIY/comments/47is7b/an_answer_to_a_very_common_question_how_do_i_get">"How do I get started making knives?" Here's a way to do it.</a>
 
 To have a good knife you need a good template. I wanted to make a good kitchen knife that was right-sized to my girlfriend's petite hands. I laid out all my kitchen knives and thought about what I liked and did not like about them. I also browsed around <a href="http://dcknives.blogspot.com/">http://dcknives.blogspot.com</a> to see what I liked and did not like. Drawn to size in which it will fit on the 1084 steel stock I bought.
-
-  <img src="http://i.imgur.com/H4wEGbs.jpg" /></li>
+![Markdown Image](http://i.imgur.com/HlzsFAc.jpg)
   <img src="http://i.imgur.com/HlzsFAc.jpg" /></li>
   <img src="http://i.imgur.com/VKZPVUH.jpg" /></li>
   <img src="http://i.imgur.com/adD5tnd.jpg" /></li>
