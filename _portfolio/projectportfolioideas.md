@@ -14,13 +14,13 @@ sidebar:
 ---
 
 * 3d printing as a whole? Things I've learned? Tips?
-* - Those Vex wheels. Write about customizing them.
+* Those Vex wheels. Write about customizing them.
 * Lil' iMac G3
 * Big Mac Pro
 * Mining Rig
 * Subaru stuff, if you can find the photos
-* - Maybe a quickie on the Thule mount flipping and basket fitment
-* - Check NASIOC for your threads.
+* Maybe a quickie on the Thule mount flipping and basket fitment
+* Check NASIOC for your threads.
 * Marx Generator. Maybe not too much to add, but some links to good writeups and a "what I learned" on my own project.
 * General article about the robot
 * General article about Lenny
