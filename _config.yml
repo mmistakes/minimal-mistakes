@@ -245,3 +245,8 @@ defaults:
       comments: # true
       share: true
       related: true
+
+# Jekyll compilation
+strict_front_matter: true
+liquid:
+ error_mode: strict
