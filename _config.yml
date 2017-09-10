@@ -252,7 +252,7 @@ defaults:
       share: true
       related: true
 
-  # _pages
+  # _pages o man 
   - scope:
       path: ""
       type: pages
