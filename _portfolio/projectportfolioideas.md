@@ -15,7 +15,7 @@ sidebar:
 
 * 3d printing as a whole? Things I've learned? Tips?
 * Those Vex wheels. Write about customizing them.
-* Lil' iMac G3
+* Lil' iMac G3 and plans on G4
 * Big Mac Pro
 * Mining Rig
 * Subaru stuff, if you can find the photos
