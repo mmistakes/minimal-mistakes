@@ -271,3 +271,8 @@ defaults:
 
       # added to clear GitHub API error per https://github.com/DIYbiosphere/sphere/issues/140
       github: [metadata]
+
+
+# trying to force SSL (apparently this part is recommended for search engines)
+url: https://rellimmot.com   # with the https protocol
+enforce_ssl: rellimmot.com   # without any protocol

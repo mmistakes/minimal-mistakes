@@ -1,5 +1,12 @@
 <meta charset="utf-8">
 
+<!-- This script added per https://sheharyar.me/blog/free-ssl-for-github-pages-with-custom-domains/ -->
+<script type="text/javascript">
+    var host = "rellimmot.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+</script>
+
 {% include seo.html %}
 
 <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | absolute_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
