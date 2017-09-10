@@ -113,6 +113,7 @@ author:
 include:
   - .htaccess
   - /_pages
+  - .well-known/acme-challenge
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -252,7 +253,7 @@ defaults:
       share: true
       related: true
 
-  # _pages o man 
+  # _pages o man
   - scope:
       path: ""
       type: pages
