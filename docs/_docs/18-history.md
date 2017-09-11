@@ -24,7 +24,7 @@ last_modified_at: 2017-09-11T12:14:10-04:00
 - Truncate archive item titles' that overflow with an ellipsis. [#1213](https://github.com/mmistakes/minimal-mistakes/issues/1213)
 - Test strict Front Matter in `/test` site. [#1236](https://github.com/mmistakes/minimal-mistakes/pull/1236)
 - Rename `gems` key to `plugins`. [#1239](https://github.com/mmistakes/minimal-mistakes/pull/1239)
-- Add feature to include or override scripts in `<head>` and before `</body>` using `head_scripts` and `footer_scipts` arrays in `_config.yml`.
+- Add feature to include or override scripts in `<head>` and before `</body>` using `head_scripts` and `footer_scripts` arrays in `_config.yml`.
 
 ### Bug Fixes
 
