@@ -14,7 +14,7 @@ excerpt: "This is the Project Log of Thomas George Miller. This is my honest att
 intro:
   - excerpt: 'Please view my Portfolio to find articles documenting my work. As the articles grow in population, Ill sort them into collections. As of now theyre seemingly random given the wide variety of hobbies I get caught up in.'
 feature_row:
-  - image_path: assets/images/siteimage/poplatedbreadboard1080x857.jpg
+  - image_path: assets/images/siteimages/poplatedbreadboard1080x857.jpg
     alt: "Projects"
     title: "Projects"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
