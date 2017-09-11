@@ -7,6 +7,7 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: /assets/images/siteimages/burnedchassis2096x913.jpg
+<<<<<<< HEAD
 [//]: #  (cta_label: "Download")
 [//]: #  (cta_url: "https://github.com/rellimmot/rellimmot.github.io/")
   caption: "Photo: [**rellimmot**](https://www.rellimmot.com)"
@@ -14,6 +15,16 @@ excerpt: "This is the Project Log of Thomas George Miller. This is my honest att
 I am a lifelong hobbyist, veteran, and early career Electrical Engineer currently living in New Orleans."
 intro:
   - excerpt: 'Please view my Portfolio to find articles documenting my work. As the articles grow in population, I'll sort them into collections. As of now they're seemingly random given the wide variety of hobbies I get caught up in.'
+=======
+  cta_label: "Download"
+  cta_url: "https://github.com/mmistakes/minimal-mistakes/"
+  cta_label: "Downloads"
+  cta_url: "https://github.com/mmistakes/minimal-mistakes/"
+  caption: "Photo: [**rellimmot**](https://www.rellimmot.com)"
+excerpt: "Bacon ipsum dolor sit amet salami ham hock ham, hamburger corned beef short ribs kielbasa biltong t-bone drumstick tri-tip tail sirloin pork chop."
+intro:
+  - excerpt: 'Nullam suscipit et nam, tellus velit pellentesque at malesuada, enim eaque. Quis nulla, netus tempor in diam gravida tincidunt, *proin faucibus* voluptate felis id sollicitudin. Centered with `type="center"`'
+>>>>>>> ad72d94e8bf1c7992cc76224a2fdc4e134b53eb4
 feature_row:
   - image_path: assets/images/unsplash-gallery-image-1-th.jpg
     alt: "placeholder image 1"
