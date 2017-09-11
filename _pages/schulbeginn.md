@@ -54,8 +54,8 @@ werden kann - können Sie direkt auf der Seite der [Senatsverwaltung für Bildun
 Jugend und Familie
 ](https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/anmeldung/)
 nachsehen.<br/><br/>
-[<i class="fa fa-download">&nbsp;&nbsp;</i>Plakat zur Anmeldung der Schulanfänger 2018/19](https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/anmeldung/plakat_anmeldung_schulanfaenger_2018_web.pdf){: .btn .btn--success}
 [<i class="fa fa-download">&nbsp;&nbsp;</i>Flyer zum Schulstart 2018/19](https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/anmeldung/flyer_schulanmeldung_web.pdf){: .btn .btn--success}
+[<i class="fa fa-download">&nbsp;&nbsp;</i>Info zur Anmeldung der Schulanfänger 2018/19](https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/anmeldung/plakat_anmeldung_schulanfaenger_2018_web.pdf){: .btn .btn--success}
 [<i class="fa fa-download">&nbsp;&nbsp;</i>Umfangreiche Informationen zum Schulbeginn 2018/19](https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/schulbeginn_web.pdf){: .btn .btn--success}
 {: .notice--info}
 

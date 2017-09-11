@@ -120,3 +120,10 @@ Formulierungen dieses Textes der geltenden Rechtslage nicht, nicht mehr oder
 nicht vollständig entsprechen sollten, bleiben die übrigen Teile des Dokumentes
 in ihrem Inhalt und ihrer Gültigkeit davon unberührt. Dies stellt die neue
 Vorlagenseite dar.
+
+## Quellenhinweis
+
+### Lizenzierte Bilder
+
+[129269131 - children's hands sculpts](/assets/images/feature-ags.jpg) \\
+Copyrighthinweis: "Fotolia © sushytska"
