@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "Home"
-    url: /
+    url: /splash-page/
 #  - title: "Ditto"
 #    url: https://www.youtube.com/watch?v=ODKTITUPusM
   # - title: "Resume"
@@ -17,6 +17,6 @@ main:
   - title: "Portfolio"
     url: /portfolio/
   - title: "Resume"
-    url: /Resume/
+    url: /resume/
   - title: "Contact"
     url: /contact/
