@@ -12,7 +12,7 @@ header:
   caption: "Photo: [**rellimmot**](https://www.rellimmot.com)"
 excerpt: "This is the Project Log of Thomas George Miller. This is my honest attempt at documenting my work, and my sharing creative methods. This site is in at early stage. I am a lifelong hobbyist, veteran, and early career Electrical Engineer currently living in New Orleans."
 intro:
-  - excerpt: '*proin faucibus* voluptate felis id sollicitudin. Centered with `type="center"`'
+  - excerpt: 'hi'
 feature_row:
   - image_path: assets/images/unsplash-gallery-image-1-th.jpg
     alt: "placeholder image 1"
