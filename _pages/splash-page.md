@@ -7,8 +7,6 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: /assets/images/siteimages/burnedchassis2096x913.jpg
-[//]: #  (cta_label: "Download")
-[//]: #  (cta_url: "https://github.com/rellimmot/rellimmot.github.io/")
   caption: "Photo: [**rellimmot**](https://www.rellimmot.com)"
 excerpt: "This is the Project Log of Thomas George Miller. This is my honest attempt at documenting my work, and my sharing creative methods. This site is in at early stage.
 I am a lifelong hobbyist, veteran, and early career Electrical Engineer currently living in New Orleans."
