@@ -4,7 +4,7 @@ main:
     url: /
 #  - title: "Ditto"
 #    url: https://www.youtube.com/watch?v=ODKTITUPusM
-  # - title: "About"
+  # - title: "Resume"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
   #   url: /year-archive/
@@ -16,7 +16,7 @@ main:
     url: /year-archive/
   - title: "Portfolio"
     url: /portfolio/
-  - title: "About"
-    url: /about/
+  - title: "Resume"
+    url: /Resume/
   - title: "Contact"
     url: /contact/
