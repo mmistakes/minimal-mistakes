@@ -12,11 +12,7 @@ sidebar:
   nav: 'schulstart'
 ---
 
-{{comment}}<!-- Abkürzungen von Begriffen -->{{endcomment}}
-*[JÜL]:     Jahrgangsübergreifendes Lernen oder auch 1-2-3 Klasse genannt.
-*[JabL]:    Jahrgangsbezogenes Lernen (klassisches Unterrichtskonzept)
-*[SAPH]:    Schulanfangsphase
-*[eFöB]:    ergänzende Förderung und Betreuung
+{% include abkuerzungen.md %}
 
 # <i class="fa fa-calendar"></i> Termine rund um die Einschulung
 {: #termine}

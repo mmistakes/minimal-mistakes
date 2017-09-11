@@ -6,6 +6,8 @@ permalink: /impressum/
 author_profile: false
 ---
 
+{% include abkuerzungen.md %}
+
 ## Schulleitung der Grundschule am Brandwerder
 
 *Stephanie Lehmann, Schulleiterin* \\

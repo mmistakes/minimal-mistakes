@@ -6,6 +6,8 @@ permalink: /anfahrt/
 author_profile: false
 ---
 
+{% include abkuerzungen.md %}
+
 *Grundschule am Brandwerder 05G23* \\
 *Spandauer Str. 86* \\
 *13591 Berlin-Spandau*

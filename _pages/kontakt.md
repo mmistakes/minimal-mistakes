@@ -6,6 +6,8 @@ permalink: /kontakt/
 author_profile: false
 ---
 
+{% include abkuerzungen.md %}
+
 {{comment}}<!--
 {% include figure image_path="/assets/images/Kollegiumsfoto_small.jpg" caption="<small>Unser Kollegium, Schuljahr 2016/17</small>" %}
 -->
