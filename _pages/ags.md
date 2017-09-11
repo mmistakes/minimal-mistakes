@@ -109,7 +109,7 @@ können. Vor allem die Kursgebühren können sich ändern.
     </tr>
     -->
     <tr>
-      <td>14:00 - 15:30</td>
+      <td>13:30 - 15:00</td>
       <td>
         Türkischunterricht für Muttersprachler<br>
         <i>Herr Keser</i>
@@ -151,7 +151,7 @@ können. Vor allem die Kursgebühren können sich ändern.
       <td>Werkraum</td>
     </tr>
     <tr>
-      <td>14:30 - 16:00</td>
+      <td>13:30 - 15:00</td>
       <td>
         <a href="#schach_ag"><i class='fa'>♚&nbsp;</i>Schach</a><br>
         <i>Herr Keser</i>
@@ -190,7 +190,7 @@ können. Vor allem die Kursgebühren können sich ändern.
       <td>Sporthalle</td>
     </tr>
     <tr>
-      <td>14:30 - 16:00</td>
+      <td>13:30 - 15:00</td>
       <td>
         Türkischunterricht für Muttersprachler<br>
         <i>Herr Keser</i>
@@ -263,7 +263,7 @@ unterstützt.
 
 | Kursleiter*in | Wann? | Wo? | Für wen? |
 |---|---|---|---|
-| Frau Bölke | freitags, 12:30 - 13:45 | Werkraum | 2. - 3. Klasse |
+| Frau Bölke | freitags, 13:30 - 14:30 | Werkraum | 2. - 3. Klasse |
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
@@ -381,7 +381,7 @@ unterstützt.
 
 | Kursleiter*in | Wann? | Wo? | Für wen? |
 |---|---|---|---|
-| Herr Keser | donnerstags, 14:30 - 16:00 | Raum 304 | 1. - 6. Klasse |
+| Herr Keser | donnerstags, 13:30 - 15:00 | Raum 304 | 1. - 6. Klasse |
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
