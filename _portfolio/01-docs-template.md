@@ -65,7 +65,7 @@ minimal-mistakes/
 ├── _posts/                      # MarkDown formatted posts
 ├── _sass/                       # Sass stylesheets
 ├── _templates/                  # used by Octopress to define YAML variables for new posts/pages
-├── about/                       # sample about page
+├── Resume/                       # sample about page
 ├── assets/
 |    ├── css/                    # compiled stylesheets
 |    ├── fonts/                  # webfonts
