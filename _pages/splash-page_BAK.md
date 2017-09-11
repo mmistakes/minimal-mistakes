@@ -10,10 +10,9 @@ header:
   cta_label: "Download"
   cta_url: "https://github.com/mmistakes/minimal-mistakes/"
   caption: "Photo: [**rellimmot**](https://www.rellimmot.com)"
-excerpt: "This is the Project Log of Thomas George Miller. This is my honest attempt at documenting my work, and my sharing creative methods. This site is in at early stage.
-I am a lifelong hobbyist, veteran, and early career Electrical Engineer currently living in New Orleans."
+excerpt: "This is the Project Log of Thomas George Miller. This is my honest attempt at documenting my work, and my sharing creative methods. This site is in at early stage. I am a lifelong hobbyist, veteran, and early career Electrical Engineer currently living in New Orleans."
 intro:
-  - excerpt: 'Please view my Portfolio to find articles documenting my work. As the articles grow in population, I'll sort them into collections. As of now they're seemingly random given the wide variety of hobbies I get caught up in.'
+  - excerpt: 'Please view my Portfolio to find articles documenting my work. As the articles grow in population, Ill sort them into collections. As of now theyre seemingly random given the wide variety of hobbies I get caught up in.'
 feature_row:
   - image_path: assets/images/siteimage/poplatedbreadboard1080x857.jpg
     alt: "Projects"
