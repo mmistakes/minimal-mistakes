@@ -18,6 +18,7 @@ Wir sind eine zweizügige, verlässliche Halbtagsgrundschule die in diesem
 Schuljahr von rund 300 Kindern besucht wird.
 
 ## JÜL-Konzept:
+{: #juel_konzept}
 
 Das Konzept des jahrgangsübergreifenden Lernens (JÜL) bestimmt den Unterricht in
 den Klassen 1 - 3.
@@ -30,6 +31,8 @@ unterschiedlichen Lernausgangslagen zu orientieren, die Lernangebote
 entsprechend anzupassen und inklusiv zu arbeiten.
 
 Die individuelle Förderung steht im Mittelpunkt.
+
+[<i class="fa fa-download">&nbsp;&nbsp;</i>Umfangreiche Informationen zu JÜL-Klassen (pdf)](https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/mdb-sen-bildung-bildungswege-grundschule-flexible_schulanfangsphase.pdf){: .btn .btn--success}
 
 ## Das sind unsere Unterrichtszeiten:
 

@@ -96,7 +96,7 @@ und 54% Schüler haben, die von 13 Erziehern und 24 Lehrkräften betreut werden
 *Stephanie Lehmann, Schulleitung*
 {: .text-right }
 
-[<i class="fa fa-download">&nbsp;&nbsp;</i>Informationen zu JÜL-Klassen](https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/mdb-sen-bildung-bildungswege-grundschule-flexible_schulanfangsphase.pdf){: .btn .btn--success}
+[<i class="fa fa-info">&nbsp;&nbsp;</i>Erfahren Sie mehr über JÜL-Klassen]({{'schule/#juel_konzept' | absolute_url }}){: .btn}
 
 # <i class="fa fa-file-text-o"></i> Anmeldung der Schulanfänger*innen
 {: #anmeldung}
