@@ -60,32 +60,38 @@ nachsehen.<br/><br/>
 # <i class="fa fa-picture-o"></i> Kurzporträt unserer Schule
 {: #portrait}
 
-Die Grundschule am Brandwerder bietet sowohl das klassische Klassenkonzept
-(JabL) als auch eine Jahrgangsmischung (JÜL über Dreijahrgänge) in der flexiblen
-Schulanfangsphase (SAPH) an.
+Wir sind eine zweizügige, [verlässliche Halbtagsgrundschule](/hortbetreuung#vhg)
+mit rund 300 Kindern, die von 28
+Lehrer\*innen und 10 Erzieher\*innen unterrichtet und gefördert werden.
+Verlässlich bedeutet, dass Ihr Kind in der Schulzeit von 7:30 - 13:30 Uhr
+untergebracht ist. Die Betreuung kann kostenpflichtig auf die Zeiten von 6:00
+bis 18:00 ausgeweitet werden ([eFöB/Hort](/hortbetreuung#hort)).
 
-Derzeit haben wir eine JabL-Klasse (1a) und drei JÜL-Klassen (A1, A2, A3). In
+In den Klassen 1, 2, 3 wird jahrgangsübergreifend gelernt. Die Kinder der
+Jahrgangsstufen 4-6 haben im Rahmen der Sportbetonung vier statt drei Stunden
+Sport.
+
+<!-- Derzeit haben wir eine JabL-Klasse (1a) und drei JÜL-Klassen (A1, A2, A3). In
 den JÜL-Klassen sind Erstklässler, Zweitklässler und Drittklässer gemischt, so
 dass die älteren Kinder Ihrem Kind den Einstieg in den Ablauf der Schule
 erleichtern. Diese Erfahrung geben dann Ihre Kinder später „ihren Erstis“  stolz
 weiter. Am Ende der dritten Klassen werden dann die drei JÜL-Klassen in eine
 vierte Klasse (4b) zusammengelegt. Auf der anderen Seite bieten JabL-Klassen
 eine stabile Klassengemeinschaft über die gesamte Grundschulzeit. Sie können bei
-der Anmeldung Ihre Präferenz der Unterrichtsform angeben.
-
-Unsere Schule ist eine [verlässliche Halbtagsgrundschule](/hortbetreuung#vhg)
-(Betreuung in der Schulzeit von 07:30 - 13:30) mit [offenem
-Ganztagsbetrieb](/hortbetreuung#hort) (Betreuung kann auf 6:00 - 18:00
-ausgeweitet werden, kostenpflichtig).
+der Anmeldung Ihre Präferenz der Unterrichtsform angeben. -->
 
 Wir bieten schon ab der ersten Klasse eine [Vielzahl an AGs](/ags) an. So wird
 z.B. ein Englisch-Kurs angeboten, wo Ihr Kind spielerisch Englisch lernen kann
 (regulär fängt der Schulenglisch in der dritten Klasse an). Wir haben, aber auch
 Sport-, Musik- und Kunstangebote.
 
-Derzeit befinden sich 318 Schüler auf unserer Schule, wobei wir 46% Schülerinnen
+Wir laden Sie ein, bei uns zu hospitieren und sich mit den Abläufen vertraut zu machen.
+Schnuppern Sie gerne in den Schulalltag einer Klasse hinein. Bitte vereinbaren
+Sie hierzu einen Termin im [Sekretariat](/kontakt/#sekretariat).
+
+<!-- Derzeit befinden sich 318 Schüler auf unserer Schule, wobei wir 46% Schülerinnen
 und 54% Schüler haben, die von 13 Erziehern und 24 Lehrkräften betreut werden
-([Stand 16/17](https://www.berlin.de/sen/bildung/schule/berliner-schulen/schulverzeichnis/Schulportrait.aspx?IDSchulzweig=16764)).
+([Stand 16/17](https://www.berlin.de/sen/bildung/schule/berliner-schulen/schulverzeichnis/Schulportrait.aspx?IDSchulzweig=16764)). -->
 
 *Stephanie Lehmann, Schulleitung*
 {: .text-right }

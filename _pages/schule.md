@@ -3,7 +3,7 @@ layout: single
 title: "Unsere Schule"
 permalink: /schule/
 author_profile: false
-excerpt: "JÜL-Konzept, Unterrichtszeiten und Kollegium."
+excerpt: "JÜL-Konzept, Unterrichtszeiten und Kollegium"
 modified: 2017-03-07T10:55:00+01:00
 header:
   overlay_color: "#fff"
