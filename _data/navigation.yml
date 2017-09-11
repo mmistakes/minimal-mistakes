@@ -32,14 +32,15 @@ ags:
     url: '/ags/#schach_ag'
   - title: "<i class='fa'>🎪</i> AG Zirkus"
     url: '/ags/#zirkus_ag'
-  - title: "<i class='fa fa-group'></i> AG Kleine Spiele"
-    url: '/ags/#kleine_spiele_ag'
-  - title: "<i class='fa fa-anchor'></i> AG Kuttersegeln"
-    url: '/ags/#kuttersegeln_ag'
   - title: "<i class='fa'>🏃</i> AG Leichtathletik / Basketball"
     url: '/ags/#leichtathletik_ag'
   - title: "<i class='fa fa-futbol-o'></i> AG Fußball"
     url: '/ags/#fussball_ag'
+
+# - title: "<i class='fa fa-group'></i> AG Kleine Spiele"
+#   url: '/ags/#kleine_spiele_ag'
+# - title: "<i class='fa fa-anchor'></i> AG Kuttersegeln"
+#   url: '/ags/#kuttersegeln_ag'
 
 schulstart:
   - title: '<i class="fa fa-calendar"></i> Termine rundum die Einschulung'

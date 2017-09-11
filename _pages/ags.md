@@ -24,6 +24,9 @@ können. Vor allem die Kursgebühren können sich ändern.
 # Kursangebote im Schuljahr 2017/18
 {: #toc}
 
+**Achtung**: AG Beginn ab 25.09.2017, Zirkus ab 06.10.2017.
+{: .notice--warning}
+
 <table>
   <thead>
     <tr>
@@ -85,6 +88,15 @@ können. Vor allem die Kursgebühren können sich ändern.
       <td>2 - 6</td>
       <td>Religionsraum</td>
     </tr>
+    <tr>
+      <td>13:45 - 15:15</td>
+      <td>
+        <a href="#fussball_ag"><i class='fa fa-futbol-o'>&nbsp;</i>Fußball</a><br>
+        <i>Herr Wieting</i>
+      </td>
+      <td>4 - 6</td>
+      <td>Sporthalle</td>
+    </tr>
     <!--
     <tr>
       <td>13:30 - 17:00</td>
@@ -108,24 +120,15 @@ können. Vor allem die Kursgebühren können sich ändern.
     <tr>
       <td colspan="6">Mittwoch</td>
     </tr>
-    <tr>
-      <td>13:40 - 14:20</td>
-      <td>
-        <a href="#fussball_ag"><i class='fa fa-futbol-o'>&nbsp;</i>Fußball</a><br>
-        <i>N.N.</i>
-      </td>
-      <td>4 - 6</td>
-      <td>Turnhalle</td>
-    </tr>
-    <tr>
+    <!-- <tr>
       <td>13:40 - 14:25</td>
       <td>
         <a href="#kleine_spiele_ag"><i class='fa fa-group'>&nbsp;</i>Kleine Spiele</a><br>
         <i>Frau Hornig.</i>
       </td>
       <td>1 - 2</td>
-      <td>Turnhalle</td>
-    </tr>
+      <td>Sporthalle</td>
+    </tr> -->
     <tr>
       <td>13:30 - 18:30</td>
       <td>
@@ -156,7 +159,7 @@ können. Vor allem die Kursgebühren können sich ändern.
       <td>1 - 6</td>
       <td>Raum 304</td>
     </tr>
-    <tr>
+    <!-- <tr>
       <td>15:00 - 18:00</td>
       <td>
         <a href="#kuttersegeln_ag"><i class='fa fa-anchor'>&nbsp;</i>Kuttersegeln</a><br>
@@ -164,7 +167,7 @@ können. Vor allem die Kursgebühren können sich ändern.
       </td>
       <td>3 - 6</td>
       <td>Wassersportheim Gatow</td>
-    </tr>
+    </tr> -->
     <tr>
       <td colspan="6">Freitag</td>
     </tr>
@@ -184,7 +187,7 @@ können. Vor allem die Kursgebühren können sich ändern.
         <i>Frau Linke</i>
       </td>
       <td>1 - 6</td>
-      <td>Turnhalle</td>
+      <td>Sporthalle</td>
     </tr>
     <tr>
       <td>14:30 - 16:00</td>
@@ -437,7 +440,7 @@ unterstützt.
 |---|---|---|
 | N.N | N.N, 3 Probestunden | N.N |
 
-## <i class='fa fa-group'>&nbsp;</i>AG Kleine Spiele
+<!-- ## <i class='fa fa-group'>&nbsp;</i>AG Kleine Spiele
 {: #kleine_spiele_ag}
 
 N.N
@@ -448,9 +451,9 @@ N.N
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
-| N.N | kostenfrei | N.N |
+| N.N | kostenfrei | N.N | -->
 
-## <i class='fa fa-anchor'>&nbsp;</i>AG Kuttersegeln
+<!-- ## <i class='fa fa-anchor'>&nbsp;</i>AG Kuttersegeln
 {: #kuttersegeln_ag}
 
 N.N
@@ -461,7 +464,7 @@ N.N
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
-| N.N | N.N | N.N |
+| N.N | N.N | N.N | -->
 
 ## <i class='fa'>🏃&nbsp;</i>AG Leichtathletik / Basketball
 {: #leichtathletik_ag}
@@ -483,7 +486,7 @@ N.N
 
 | Kursleiter*in | Wann? | Wo? | Für wen? |
 |---|---|---|---|
-| N.N | N.N | Sporthalle | 4. - 6. Klasse |
+| Herr Wieting | dienstags, 13:45 - 15:15 | Sporthalle | 4. - 6. Klasse |
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
