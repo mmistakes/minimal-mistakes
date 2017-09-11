@@ -6,7 +6,7 @@ header:
   teaser: assets/images/unsplash-gallery-image-1-th.jpg
 sidebar:
   - title: "Project idears."
-    image: http://placehold.it/350x250
+    image: https://placehold.it/350x250
     image_alt: "logo"
     text: "Projects. All the projects."
   - title: "Stuff"

@@ -100,7 +100,7 @@
 
   $attrs: 'fill="#{$colors}" width="#{$image-width}"';
   $svg: 'data:image/svg+xml,';
-  $svg: $svg + '%3Csvg xmlns="http://www.w3.org/2000/svg" #{$attrs} %3E';
+  $svg: $svg + '%3Csvg xmlns="https://www.w3.org/2000/svg" #{$attrs} %3E';
   $svg: $svg + $gradient;
 
   @for $column from 1 through length($columns) {

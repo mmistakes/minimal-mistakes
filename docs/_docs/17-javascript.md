@@ -33,11 +33,11 @@ If you add additional scripts to `assets/js/plugins/` and would like them concat
 
 ## Build Process
 
-In an effort to reduce dependencies a set of [**npm scripts**](https://css-tricks.com/why-npm-scripts/) are used to build `main.min.js` instead of task runners like [Gulp](http://gulpjs.com/) or [Grunt](http://gruntjs.com/). If those tools are more your style then by all means use them instead :wink:.
+In an effort to reduce dependencies a set of [**npm scripts**](https://css-tricks.com/why-npm-scripts/) are used to build `main.min.js` instead of task runners like [Gulp](https://gulpjs.com/) or [Grunt](https://gruntjs.com/). If those tools are more your style then by all means use them instead :wink:.
 
 To get started:
 
-1. Install [Node.js](http://nodejs.org/).
+1. Install [Node.js](https://nodejs.org/).
 2. `cd` to the root of your project.
 3. Install all of the dependencies by running `npm install`.
 

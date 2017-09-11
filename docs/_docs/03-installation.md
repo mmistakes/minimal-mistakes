@@ -56,7 +56,7 @@ defaults:
 
 If this is your first time using Jekyll be sure to read through the [official documentation](https://jekyllrb.com/docs/home/) before jumping in. This guide assumes you have Ruby v2 installed and a basic understanding of how Jekyll works.
 
-To keep your sanity and better manage dependencies I strongly urge you to [install Bundler](http://bundler.io/) with `gem install bundler` and use the following `Gemfile`:
+To keep your sanity and better manage dependencies I strongly urge you to [install Bundler](https://bundler.io/) with `gem install bundler` and use the following `Gemfile`:
 
 ```ruby
 source "https://rubygems.org"

@@ -26,7 +26,7 @@ Currently the English[^yaml-anchors] main keys in [`_data/ui-text.yml`](https://
 
 If you're are interested in localizing them into other languages feel free to submit a pull request and I will be happy to look it over.
 
-[^yaml-anchors]: `en-US`, and `en-GB` use [YAML anchors](http://www.yaml.org/spec/1.2/spec.html#id2785586) to reference the values in `en` as to not repeat them.
+[^yaml-anchors]: `en-US`, and `en-GB` use [YAML anchors](https://www.yaml.org/spec/1.2/spec.html#id2785586) to reference the values in `en` as to not repeat them.
 
 Many of the label based keys like `meta_label`, `categories_label`, `tags_label`, `share_on_label`, and `follow_label` can be left blank if you'd like to omit them from view. It really depends on you and if you want an even more minimal look to your site.
 

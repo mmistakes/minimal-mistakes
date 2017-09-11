@@ -333,7 +333,7 @@ last_modified_at: 2017-07-12T11:57:08-04:00
 
 ### Maintenance
 
-- Add note to docs about using `url: http://localhost:4000` when working locally.
+- Add note to docs about using `url: https://localhost:4000` when working locally.
 
 ## [3.4.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.2)
 
@@ -662,7 +662,7 @@ last_modified_at: 2017-07-12T11:57:08-04:00
 
 - Rebuilt the entire theme: layouts, includes, stylesheets, scripts, you name it.
 - Refreshed the look and feel while staying true to the original design of the theme (author sidebar/main content).
-- Replaced grid system with [Susy](http://susy.oddbird.net/).
+- Replaced grid system with [Susy](https://susy.oddbird.net/).
 - Replaced Grunt tasks with `npm` scripts.
 - Removed Google Fonts and replaced with system fonts to improve performance (they can be [added back](https://mmistakes.github.io/minimal-mistakes/docs/stylesheets/) if desired)
 - Greatly improved [theme documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
@@ -809,12 +809,12 @@ last_modified_at: 2017-07-12T11:57:08-04:00
 
 ### Bug Fixes
 
-- Removed [Typeplate](http://typeplate.com/) styles. Was [causing issues with newer versions of Less](https://github.com/typeplate/typeplate.github.io/issues/108) and is no longer maintained.
+- Removed [Typeplate](https://typeplate.com/) styles. Was [causing issues with newer versions of Less](https://github.com/typeplate/typeplate.github.io/issues/108) and is no longer maintained.
 
 ### Enhancements
 
-- Added [image attribution](http://mmistakes.github.io/minimal-mistakes/theme-setup/#feature-images) for post and page feature images.
-- Added [404 page](http://mmistakes.github.io/minimal-mistakes/404.html).
+- Added [image attribution](https://mmistakes.github.io/minimal-mistakes/theme-setup/#feature-images) for post and page feature images.
+- Added [404 page](https://mmistakes.github.io/minimal-mistakes/404.html).
 - Cleaned up various Less variables to better align with naming conventions used in other MM Jekyll themes.
 - Removed Chrome Frame references.
 - Added global CSS3 transitions to text and block elements.

@@ -7,7 +7,7 @@ redirect_from:
   - /theme-setup/
 ---
 
-Minimal Mistakes has been developed as a [Jekyll theme gem](http://jekyllrb.com/docs/themes/) for easier use. It is also 100% compatible with GitHub Pages --- just with a more involved installation process.
+Minimal Mistakes has been developed as a [Jekyll theme gem](https://jekyllrb.com/docs/themes/) for easier use. It is also 100% compatible with GitHub Pages --- just with a more involved installation process.
 
 {% include toc %}
 
@@ -49,7 +49,7 @@ Fork the [Minimal Mistakes theme](https://github.com/mmistakes/minimal-mistakes/
   <img src="{{ '/assets/images/mm-theme-fork-repo.png' | absolute_url }}" alt="fork Minimal Mistakes">
 </figure>
 
-**Note:** Your Jekyll site should be viewable immediately at <http://USERNAME.github.io>. If it's not, you can force a rebuild by **Customizing Your Site** (see below for more details).
+**Note:** Your Jekyll site should be viewable immediately at <https://USERNAME.github.io>. If it's not, you can force a rebuild by **Customizing Your Site** (see below for more details).
 {: .notice--warning}
 
 If you're hosting several Jekyll based sites under the same GitHub username you will have to use Project Pages instead of User Pages. Essentially you rename the repo to something other than **USERNAME.github.io** and create a `gh-pages` branch off of `master`. For more details on how to set things up check [GitHub's documentation](https://help.github.com/articles/user-organization-and-project-pages/).
@@ -120,7 +120,7 @@ If you're migrating a site already using Minimal Mistakes and haven't customized
 
 Start by removing `_includes`, `_layouts`, `_sass`, `assets` folders and all files within. You won't need these anymore as they're bundled with the theme gem.
 
-If you customized any of these files leave them alone, and only remove the untouched ones. If done correctly your modified versions should [override](http://jekyllrb.com/docs/themes/#overriding-theme-defaults) the versions bundled with the theme and be used by Jekyll instead.
+If you customized any of these files leave them alone, and only remove the untouched ones. If done correctly your modified versions should [override](https://jekyllrb.com/docs/themes/#overriding-theme-defaults) the versions bundled with the theme and be used by Jekyll instead.
 
 #### Update Gemfile
 

@@ -173,7 +173,7 @@
     word-wrap: break-word;
   }
 
-  a[href^='http://']:after,
+  a[href^='https://']:after,
   a[href^='https://']:after,
   a[href^='ftp://']:after {
     content: " (" attr(href) ")";

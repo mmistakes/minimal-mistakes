@@ -11,10 +11,10 @@ sidebar:
     text: "Photo documented DIY highlighting how I made my first knife."
 gallery1:
   - url: https://i.imgur.com/HlzsFAc.jpg
-    image_path: http://i.imgur.com/HlzsFAc.jpg
+    image_path: https://i.imgur.com/HlzsFAc.jpg
     alt: "Template Cutout"
   - url: https://i.imgur.com/Gp0Umjs.jpg
-    image_path: http://i.imgur.com/Gp0Umjs.jpg
+    image_path: https://i.imgur.com/Gp0Umjs.jpg
     alt: "Steel Stock Trimming"
   - url: https://i.imgur.com/NL46gA3r.jpg
     image_path: https://i.imgur.com/NL46gA3r.jpg
@@ -32,18 +32,18 @@ gallery2:
 ## Design and Template
 This knife was the best gift I've ever given thus far, and one of the prettiest things I've ever made. Are you good with sandpaper and an angle grinder? You can do this too! This thread was my inspiration: ["How do I get started making knives?" Here's a way to do it!](https://www.reddit.com/r/DIY/comments/47is7b/an_answer_to_a_very_common_question_how_do_i_get)
 
-To have a good knife you should start with a good template. I wanted to make a good kitchen knife that was right-sized to my girlfriend's small hands. I laid out all my kitchen knives and thought about what I liked and did not like about them. I also browsed around [dcknives.blogspot.com](http://dcknives.blogspot.com/) to see what I liked and did not like. Drawn to size in which it will fit on the 1084 steel stock I bought.
-![Template Cutout](http://i.imgur.com/HlzsFAc.jpg)
+To have a good knife you should start with a good template. I wanted to make a good kitchen knife that was right-sized to my girlfriend's small hands. I laid out all my kitchen knives and thought about what I liked and did not like about them. I also browsed around [dcknives.blogspot.com](https://dcknives.blogspot.com/) to see what I liked and did not like. Drawn to size in which it will fit on the 1084 steel stock I bought.
+![Template Cutout](https://i.imgur.com/HlzsFAc.jpg)
 Pencil, graphing paper, and ruler your way to a design you like. I cut my design out of the paper with an Xacto blade.
 I was hesitant to open a can of worms moving past this point and into actually making the thing but I was too far to stop.
   <figure class="third">
-	<img src="http://i.imgur.com/VKZPVUH.jpg">
-	<img src="http://i.imgur.com/adD5tnd.jpg">
-	<img src="http://i.imgur.com/Q9Ak4AJ.jpg" style="filter:FlipH." >
+	<img src="https://i.imgur.com/VKZPVUH.jpg">
+	<img src="https://i.imgur.com/adD5tnd.jpg">
+	<img src="https://i.imgur.com/Q9Ak4AJ.jpg" style="filter:FlipH." >
   </figure>
 To template the design onto steel, I wet my steel stock and spread it on. The moisture allowed for easy adjustment. After patting it dry I spray painted it then peeled the template away.
 ## Tools and Materials
-![Tools and Materials](http://i.imgur.com/tUWO48f.jpg)
+![Tools and Materials](https://i.imgur.com/tUWO48f.jpg)
 
 ### Tools
 We've all got different tools in our shops, working with what I had at the time and on a budget I got most of the work done with a basic belt sander (not optimal for knifemaking), an angle grinder, a vice, and other basic hand and power tools.
@@ -62,7 +62,7 @@ We've all got different tools in our shops, working with what I had at the time 
 
 ## Cutting
 Now that the steel is templated I cut that steel sizing the bar to length, then made rough cuts to remove material that brings it to shape.
-![Angle Grinder Cuts](http://i.imgur.com/Gp0Umjs.jpg)
+![Angle Grinder Cuts](https://i.imgur.com/Gp0Umjs.jpg)
 After enough rough cuts you get to this point. Make plenty of relief cuts to go at it with the grinding disc easier.
 With the angle grinder, I notched out the handle to make it easier work to grind off the excess. This makes grinding away the excess easier. These are just relief cuts, don't cut too deep! Don't take risks here because the angle grinder has got some bite through this unhardened steel.
 ![Relief Cuts](https://i.imgur.com/Dc7SVoz.jpg)
@@ -73,7 +73,7 @@ I'd say that's a pretty knife shaped piece of steel! At this point I was wishing
 ![Belt sanding begin](https://i.imgur.com/twc70iK.jpg)
 At this point, start to work a bevel into what will eventually become your blade. You can choose to just use a flap disc and angle grinder or a combination of that and a sanding belt to shape it. I used mostly 50grit sanding on a wood sanding belt to shape the bevel and level things out.
 
-I used mostly 50grit sanding on a wood sanding belt to shape the bevel and level things out. This setup wasn't optimal but it's what I had around and certainly got the job done. It's no [knifemaking belt sander](http://www.grizzly.com/products/Knife-Belt-Sander-Buffer/G1015) for certain.
+I used mostly 50grit sanding on a wood sanding belt to shape the bevel and level things out. This setup wasn't optimal but it's what I had around and certainly got the job done. It's no [knifemaking belt sander](https://www.grizzly.com/products/Knife-Belt-Sander-Buffer/G1015) for certain.
 
 ![Blade Shaping](https://i.imgur.com/CKs5gpF.jpg)
 More grinding and shaping. I've beveled the knife to about 0.5mm thickness at the edge. Both sides are shaped and beveled out. Take your time here. It's all about patience and checking your work continuously. Remove too much material and you're either starting fresh or making yourself a smaller knife.
@@ -136,7 +136,7 @@ In retrospect, I wish I'd spent more time in each step of grit. Sure, the finish
 ![Scales Mockup](https://i.imgur.com/nmj7ta3.jpg)
 *Mocking up stabilized maple scales.*
 
-You need to acquire some scales. You can use anything from pallet wood, micarta, some fallen tree, or go online and find some pre-stabilized scales, or stabilize your own, get you some nice pretty matched maple and some minwax wood hardener and some dye (industrial textile dye for this example), mix it up and drop your wood in, put it in a vacuum for a day, then put under great pressure for a day. If you don't have access to fancy vacuum/pressure chambers or anything you should do it at home with jars! See this: <a href="http://dcknives.blogspot.com/p/wood-stabilization.html">DC Knives: Wood Stabilization</a> and this: <a href="http://theshaveden.com/forums/threads/stabilizing-wood-in-a-homemade-vacuum-chamber.28802/">Homemade Vacuum Chamber Scale Stabilization</a> When your scales are ready, make sure you take and shape the blade-side before gluing them to the blade- it's a lot harder to shape this side after you've glued them in place.
+You need to acquire some scales. You can use anything from pallet wood, micarta, some fallen tree, or go online and find some pre-stabilized scales, or stabilize your own, get you some nice pretty matched maple and some minwax wood hardener and some dye (industrial textile dye for this example), mix it up and drop your wood in, put it in a vacuum for a day, then put under great pressure for a day. If you don't have access to fancy vacuum/pressure chambers or anything you should do it at home with jars! See this: <a href="https://dcknives.blogspot.com/p/wood-stabilization.html">DC Knives: Wood Stabilization</a> and this: <a href="https://theshaveden.com/forums/threads/stabilizing-wood-in-a-homemade-vacuum-chamber.28802/">Homemade Vacuum Chamber Scale Stabilization</a> When your scales are ready, make sure you take and shape the blade-side before gluing them to the blade- it's a lot harder to shape this side after you've glued them in place.
 
 I'll note that I'm pinning my scales. I do like another method I saw where a recess was cut into the metal on both sides where a rod clipping from a metal clothes hangar sat in, then the scales were clamped to indent the wood for the rod. Either method prevents the scales from falling off due to the lateral forces your wrist will put on them.
 
@@ -180,7 +180,7 @@ After pinning and leveling, go at the handle with a set of files until you get y
 ### Sharpening
 ![Sharp!](https://i.imgur.com/ocdq7ED.jpg)*The blade is sharp enough to shave effortlessly!*
 
-Up next: Straight razor project? After I finished the handle I went back and readdressed the knife that I had re-sanded progressively up to 1000 grit. To sharpen the blade edge I set it in a vice and at a more aggressive angle I sharpened the knife- to put this in text would be difficult so I suggest you view blade filing videos. Another solution is to build this beautiful jig from <a href="http://goughcustom.com/blog/2013-08-16-making-a-filing-jig/making-and-using-a-bevel-filing-jig.html">this Gogh knives video</a>. I also suggest looking through his other materials as this guy does incredible work. Another item of note is to make sure you bring your knife to a hard surface such as a counter and make cutting motions to see if it's the swing you want. Then chop down and kneel down to look at the gap between the blade edge and the counter- is there a gap? You may want to grind and resharpen- this happened to me twice.
+Up next: Straight razor project? After I finished the handle I went back and readdressed the knife that I had re-sanded progressively up to 1000 grit. To sharpen the blade edge I set it in a vice and at a more aggressive angle I sharpened the knife- to put this in text would be difficult so I suggest you view blade filing videos. Another solution is to build this beautiful jig from <a href="https://goughcustom.com/blog/2013-08-16-making-a-filing-jig/making-and-using-a-bevel-filing-jig.html">this Gogh knives video</a>. I also suggest looking through his other materials as this guy does incredible work. Another item of note is to make sure you bring your knife to a hard surface such as a counter and make cutting motions to see if it's the swing you want. Then chop down and kneel down to look at the gap between the blade edge and the counter- is there a gap? You may want to grind and resharpen- this happened to me twice.
 ### Polishing
 ![Polished](https://i.imgur.com/qz8S94E.jpg)*Optionally, you can polish your blade and handle to a high gloss.*
 

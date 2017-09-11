@@ -21,7 +21,7 @@ See what's new in the [CHANGELOG](CHANGELOG.md).
 - Compatible with Jekyll 3.x and GitHub Pages
 - Support for Jekyll's built-in Sass/SCSS preprocessor
 - Several responsive layout options (single, archive index, splash, and paginated home page)
-- SEO optimized with support for [Twitter Cards](https://dev.twitter.com/cards/overview) and [Open Graph](http://ogp.me/) data
+- SEO optimized with support for [Twitter Cards](https://dev.twitter.com/cards/overview) and [Open Graph](https://ogp.me/) data
 - Optional [header images](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#headers), [custom sidebars](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#sidebars), [table of contents](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#table-of-contents), [galleries](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#gallery), related posts, [breadcrumb links](https://mmistakes.github.io/minimal-mistakes/docs/configuration/#breadcrumb-navigation-beta), [navigation lists](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#navigation-list), and more.
 - Commenting support (powered by [Disqus](https://disqus.com/), [Facebook](https://developers.facebook.com/docs/plugins/comments), Google+, [Discourse](https://www.discourse.org/), static-based via [Staticman](https://staticman.net/), and custom).
 - [Google Analytics](https://www.google.com/analytics/) support.
@@ -102,7 +102,7 @@ Theme documentation and demo pages can be found in the [`/docs`](docs) if submit
 
 To set up your environment to develop this theme, run `bundle install`.
 
-To test the theme, run `bundle exec rake preview` and open your browser at `http://localhost:4000/test/`. This starts a Jekyll server using content in the `test/` directory. As modifications are made to the theme and test site, it will regenerate and you should see the changes in the browser after a refresh.
+To test the theme, run `bundle exec rake preview` and open your browser at `https://localhost:4000/test/`. This starts a Jekyll server using content in the `test/` directory. As modifications are made to the theme and test site, it will regenerate and you should see the changes in the browser after a refresh.
 
 ---
 
@@ -119,18 +119,18 @@ To test the theme, run `bundle exec rake preview` and open your browser at `http
 ### Icons + Demo Images:
 
 - [The Noun Project](https://thenounproject.com) -- Garrett Knoll, Arthur Shlain, and [tracy tam](https://thenounproject.com/tracytam)
-- [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
+- [Font Awesome](https://fortawesome.github.io/Font-Awesome/)
 - [Unsplash](https://unsplash.com/)
 
 ### Other:
 
-- [Jekyll](http://jekyllrb.com/)
-- [jQuery](http://jquery.com/)
-- [Susy](http://susy.oddbird.net/)
-- [Breakpoint](http://breakpoint-sass.com/)
-- [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/)
-- [FitVids.JS](http://fitvidsjs.com/)
-- Greedy Navigation - [lukejacksonn](http://codepen.io/lukejacksonn/pen/PwmwWV)
+- [Jekyll](https://jekyllrb.com/)
+- [jQuery](https://jquery.com/)
+- [Susy](https://susy.oddbird.net/)
+- [Breakpoint](https://breakpoint-sass.com/)
+- [Magnific Popup](https://dimsemenov.com/plugins/magnific-popup/)
+- [FitVids.JS](https://fitvidsjs.com/)
+- Greedy Navigation - [lukejacksonn](https://codepen.io/lukejacksonn/pen/PwmwWV)
 - [jQuery Smooth Scroll](https://github.com/kswedberg/jquery-smooth-scroll)
 
 ---

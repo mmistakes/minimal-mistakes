@@ -272,7 +272,7 @@ foo:
     url: /link-1-page-url/
 
   - title: "Link 2 Title"
-    url: http://external-link.com
+    url: https://external-link.com
 
   - title: "Link 3 Title"
     url: /link-3-page-url/

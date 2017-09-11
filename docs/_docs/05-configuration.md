@@ -52,7 +52,7 @@ Used to assign a site author. Don't worry, you can override the site author with
 
 *Example:* `name: "Michael Rose"`.
 
-**ProTip:** If you want to get crafty with your YAML you can use [anchors](http://www.yaml.org/spec/1.2/spec.html#id2785586) to reuse values. For example `foo: &var "My String"` allows you to reuse `"My String"` elsewhere in `_config.yml` like so... `bar: *var`. You'll see a few examples of this in the provided Jekyll config.
+**ProTip:** If you want to get crafty with your YAML you can use [anchors](https://www.yaml.org/spec/1.2/spec.html#id2785586) to reuse values. For example `foo: &var "My String"` allows you to reuse `"My String"` elsewhere in `_config.yml` like so... `bar: *var`. You'll see a few examples of this in the provided Jekyll config.
 {: .notice--info}
 
 ### Site Description
@@ -67,7 +67,7 @@ The base hostname and protocol for your site. If you're hosting with GitHub Page
 
 GitHub Pages now [forces `https://` for new sites](https://help.github.com/articles/securing-your-github-pages-site-with-https/) so be mindful of that when setting your URL to avoid mixed-content warnings.
 
-**Note:** Jekyll 3.3 overrides this value with `url: http://localhost:4000` when running `jekyll serve` locally in development. If you want to avoid this behavior set `JEKYLL_ENV=production` to [force the environment](http://jekyllrb.com/docs/configuration/#specifying-a-jekyll-environment-at-build-time) to production.
+**Note:** Jekyll 3.3 overrides this value with `url: https://localhost:4000` when running `jekyll serve` locally in development. If you want to avoid this behavior set `JEKYLL_ENV=production` to [force the environment](https://jekyllrb.com/docs/configuration/#specifying-a-jekyll-environment-at-build-time) to production.
 {: .notice--warning}
 
 ### Site Base URL
@@ -78,7 +78,7 @@ In the case of the Minimal Mistakes demo site it's hosted on GitHub at <https://
 
 For more information on how to properly use `site.url` and `site.baseurl` as intended by the Jekyll maintainers, check [Parker Moore's post on the subject](https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/).
 
-**Note:** When using `baseurl` remember to include it as part of your path when testing your site locally. Values of `url: ` and `baseurl: "/blog"` would make your local site visible at `http://localhost:4000/blog` and not `http://localhost:4000`.
+**Note:** When using `baseurl` remember to include it as part of your path when testing your site locally. Values of `url: ` and `baseurl: "/blog"` would make your local site visible at `https://localhost:4000/blog` and not `https://localhost:4000`.
 {: .notice--warning}
 
 ### Site Repository
@@ -277,7 +277,7 @@ By default the theme links to `feed.xml` generated in the root of your site by t
 
 ```yaml
 atom_feed:
-  path: "http://feeds.feedburner.com/youFeedname"
+  path: "https://feeds.feedburner.com/youFeedname"
 ```
 
 **Note:** By default the site feed is linked in two locations: inside the [`<head>` element](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/head.html) and at the bottom of every page in the [site footer](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/footer.html).
@@ -312,7 +312,7 @@ bing_site_verification: "0FC3FD70512616B052E755A56F8952D"
 
 #### Alexa
 
-To [claim your site](http://www.alexa.com/siteowners/claim) with Alexa add the provided verification ID `alexa_site_verification: "yourVerificationID"`.
+To [claim your site](https://www.alexa.com/siteowners/claim) with Alexa add the provided verification ID `alexa_site_verification: "yourVerificationID"`.
 
 #### Yandex
 
@@ -445,7 +445,7 @@ author:
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "My awesome biography constrained to a sentence or two goes here."
   email  : # optional
-  uri    : "http://your-site.com"
+  uri    : "https://your-site.com"
 ```
 
 Social media links are all optional, include the ones you want visible. In most cases you just need to add the username. If you're unsure double check `_includes/author-profile.html` to see how the URL is constructed.
@@ -458,7 +458,7 @@ Nothing out of the ordinary here. `include` and `exclude` may be the only things
 
 ## Conversion and Markdown Processing
 
-Again nothing out of the ordinary here as the theme adheres to the defaults used by GitHub Pages. [**Kramdown**](http://kramdown.gettalong.org/) for Markdown conversion, [**Rouge**](http://rouge.jneen.net/) syntax highlighting, and incremental building disabled. Change them if you need to.
+Again nothing out of the ordinary here as the theme adheres to the defaults used by GitHub Pages. [**Kramdown**](https://kramdown.gettalong.org/) for Markdown conversion, [**Rouge**](https://rouge.jneen.net/) syntax highlighting, and incremental building disabled. Change them if you need to.
 
 ## Front Matter Defaults
 
@@ -530,12 +530,12 @@ The paginator only works on files with name `index.html`. To use pagination in a
 paginate_path: /recent/page:num/
 ```
 
-**Please note:** When using Jekyll's default [pagination plugin](http://jekyllrb.com/docs/pagination/) `paginator.posts` can only be called once. If you're looking for something more powerful that can paginate category, tag, and collection pages I suggest [**jekyll-paginate-v2**](https://github.com/sverrirs/jekyll-paginate-v2).
+**Please note:** When using Jekyll's default [pagination plugin](https://jekyllrb.com/docs/pagination/) `paginator.posts` can only be called once. If you're looking for something more powerful that can paginate category, tag, and collection pages I suggest [**jekyll-paginate-v2**](https://github.com/sverrirs/jekyll-paginate-v2).
 {: .notice--info}
 
 ### Timezone
 
-This sets the timezone environment variable, which Ruby uses to handle time and date creation and manipulation. Any entry from the [IANA Time Zone Database](http://en.wikipedia.org/wiki/List_of_tz_database_time_zones) is valid. The default is the local time zone, as set by your operating system.
+This sets the timezone environment variable, which Ruby uses to handle time and date creation and manipulation. Any entry from the [IANA Time Zone Database](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) is valid. The default is the local time zone, as set by your operating system.
 
 ```yaml
 timezone: America/New_York
@@ -618,7 +618,7 @@ If you care at all about performance (and really who doesn't) compressing the HT
 
 If you're hosting with GitHub Pages there aren't many options afforded to you for optimizing the HTML Jekyll generates. Thankfully there is some Liquid wizardry you can use to strip whitespace and comments to reduce file size.
 
-There's a variety of configurations and caveats to using the `compress` layout, so be sure to read through the [documentation](http://jch.penibelst.de/) if you decide to make change the defaults set in the theme's `_config.yml`.
+There's a variety of configurations and caveats to using the `compress` layout, so be sure to read through the [documentation](https://jch.penibelst.de/) if you decide to make change the defaults set in the theme's `_config.yml`.
 
 ```yaml
 compress_html:
