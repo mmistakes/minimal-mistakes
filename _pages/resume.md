@@ -17,6 +17,7 @@ last_modified_at: 2017-02-14T14:28:13-05:00
 type-size-5: 0.5em
 type-size-4: 0.5em
 type-size-6: 0.5em
+font-size: 0.5em
 ---
 
 {% include toc title="Table of Contents" icon="file-text" %}
