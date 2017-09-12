@@ -2,7 +2,7 @@
 title: "JavaScript"
 permalink: /docs/javascript/
 excerpt: "Instructions for customizing and building the theme's scripts."
-last_modified_at: 2017-09-11T12:38:43-04:00
+last_modified_at: 2017-09-12T12:25:08-04:00
 ---
 
 The theme's [`assets/js/main.min.js`] script is built from several vendor, jQuery plugins, and other scripts found in [`assets/js/`](https://github.com/mmistakes/minimal-mistakes/tree/master/assets/js).
@@ -31,15 +31,17 @@ If you add additional scripts to `assets/js/plugins/` and would like them concat
 
 You can also add scripts to the `<head>` or closing `</body>` elements by adding paths to following arrays in `_config.yml`.
 
-```
+**Example:**
+
+```yaml
 head_scripts:
-  - /assets/js/your-custom-head-script.js
   - https://code.jquery.com/jquery-3.2.1.min.js
+  - /assets/js/your-custom-head-script.js
 footer_scripts:
   - /assets/js/your-custom-footer-script.js
 ```
 
-**Note:** If you assign `footer_scripts` the theme's `/assets/js/main.min.js` file will be deactivated. This script includes jQuery and various other plugins that you'll need to find replacements for them or include separately.
+**Note:** If you assign `footer_scripts` the theme's `/assets/js/main.min.js` file will be deactivated. This script includes jQuery and various other plugins that you'll need to find replacements for and include separately.
 {: .notice--warning}
 
 ---
