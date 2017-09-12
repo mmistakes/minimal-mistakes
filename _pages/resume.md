@@ -14,10 +14,6 @@ layouts_gallery:
     image_path: /assets/images/mm-layout-archive.png
     alt: "archive layout example"
 last_modified_at: 2017-02-14T14:28:13-05:00
-type-size-5: 0.5em
-type-size-4: 0.5em
-type-size-6: 0.5em
-font-size: 0.5em
 ---
 
 {% include toc title="Table of Contents" icon="file-text" %}
@@ -187,19 +183,19 @@ Asst. Kennel Manager, Shreveport, LA
 
 C/C++, HTML, VB, MATLAB, Python, OpenCV, ASM, CSS, Java  *(ordered by proficiency)*
 
-## **OS:**
+## **OS**
 Windows (most proficient), Mac OS (very proficient), Linux (proficient)
 
-## **Software:**
+## **Software**
 
-### Programming/Development:
+### Programming/Development
 Visual Studio, Arduino IDE, CMD/PowerShell/Bash, Anaconda, MATLAB, Mathematica, MiniTab, Unscrambler X, Git, PuTTY/SSH
 
-### CAD/3DP/CNC/Engineering:
+### CAD/3DP/CNC/Engineering
 Dassault SolidWorks, Autodesk Fusion 360, Inventor, AutoCAD, Maya, Blender, Simplify3D, Netfabb, MatterControl, Mach 4, LinuxCNC, Multisim, EAGLE, Altium Designer
 
-###  Productivity/Design:
+###  Productivity/Design
 MS Word, Excel, PowerPoint, OneNote, Visio, Adobe Photoshop, Illustrator, TeamViewer, VNC
 
-## **Microcontrollers:**
+## **Microcontrollers**
 Arduino, Teensy, Atmel AVR, Raspberry Pi, BeagleBone, BASIC Stamp, et al.
