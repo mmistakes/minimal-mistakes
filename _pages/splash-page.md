@@ -10,7 +10,7 @@ header:
   caption: "Photo: [**rellimmot**](https://www.rellimmot.com)"
 excerpt: "This is my Project Log. This is my honest attempt at documenting my work, and my sharing creative methods. This site is in at early stage. I am a lifelong hobbyist, veteran, and early career Electrical Engineer currently living in New Orleans. I like to make and fix everything, especially airplanes, cars, and electronics. Sometimes I make art."
 intro:
-  - excerpt: 'Please view my Portfolio to find articles documenting my work. As the articles grow in population, I’ll sort them into collections. As of now they’re seemingly random given the wide variety of hobbies I get caught up in.'
+  - excerpt: 'View my Portfolio to find articles documenting my work. As the articles grow in population, I’ll sort them into collections. As of now they’re seemingly random given the wide variety of hobbies I get caught up in.'
 feature_row:
   - image_path: https://www.rellimmot.com/assets/images/siteimages/poplatedbreadboard600x400.jpg
     alt: "Portfolio"
@@ -58,6 +58,7 @@ feature_row:
 
 
 {% include sidebar-mod.html %}
+Posts
 {% capture written_year %}'None'{% endcapture %}
 {% for post in site.posts %}
   {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
