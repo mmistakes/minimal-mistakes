@@ -18,7 +18,7 @@ feature_row:
     alt: "Portfolio"
     title: "Portfolio"
     excerpt: "Writeups for a variety of projects I've done."
-    permalink: /portfolio/
+    permalink: https://www.rellimmot.com/portfolio/
   - image_path: assets/images/siteimages/meinthelab600x400.jpg
     alt: "Resume/About"
     title: "Resume/About"
