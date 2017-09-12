@@ -25,7 +25,7 @@ author_profile: false
 * stellvertretende Schulleitung: Tanja Esch ({% include email email='t.esch@brandwerder.de' %})
 
 Wir sind gerne für Sie da, allerdings können wir Ihr Anliegen unter Umständen
-nicht immer sofort erledigen.  Bitter vereinbaren Sie einen Termin für ein
+nicht immer sofort erledigen. Bitte vereinbaren Sie einen Termin für ein
 Gespräch über das [Sekretariat](/kontakt#sekretariat). Oder senden Sie uns
 einfach eine E-Mail. So können wir uns Zeit für Ihr Anliegen nehmen.
 {:.notice--warning}

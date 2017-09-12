@@ -173,7 +173,7 @@ Schülerinnen und Schüler können im Einzelfall nur aus einem wichtigen Grund v
 <li>persönlichen Gründen, wie z.B. einem Arztbesuch, der aus darzulegenden Gründen nicht in der unterrichtsfreien Zeit stattfinden kann,</li>
 <li>familiären Gründen, wie Eheschließungen oder Todesfälle im engsten Familienkreis,</li>
 <li>Teilnahme an Vorstellungsgesprächen und Berufsberatungen sowie Informations-  und Beratungsveranstaltungen der Hochschulen in Vorbereitung auf die nachfolgende Ausbildung,</li>
-<li>Reisen während der Unterrichtszeit, die nach einem schulärztlichen Gutachten dringend 2 erforderlich sind oder für die das Jugendamt dringende soziale Gründe geltend macht und die aus darzulegenden Gründen nicht in der Ferienzeit stattfinden können.  
+<li>Reisen während der Unterrichtszeit, die nach einem schulärztlichen Gutachten dringend erforderlich sind oder für die das Jugendamt dringende soziale Gründe geltend macht und die aus darzulegenden Gründen nicht in der Ferienzeit stattfinden können.
 Beurlaubungen unmittelbar vor oder nach den Ferien sollen nicht genehmigt werden, es sei denn, es handelt sich um einen wichtigen und unaufschiebbaren Ausnahmefall. Als ein solcher Ausnahmefall ist der vorzeitige Antritt oder die verspätete Rückkehr von einer Urlaubsreise nicht anzusehen (vgl. Senatsverwaltung für Bildung, Jugend und Wissenschaft: „Ausführungsvorschriften über Beurlaubung und Befreiung vom Unterricht, vom 19. November 2014, S. 1-2“).</li>
 </ol>
 </li>
