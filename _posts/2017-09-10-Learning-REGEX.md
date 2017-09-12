@@ -1,6 +1,6 @@
 ---
 Layout: post
-title: Learning REGEX (and used with Powershell)
+title: Learning REGEX (and use with Powershell)
 Author_profile: true
 Tags: 'PS, Scrape, REGEX'
 published: true
