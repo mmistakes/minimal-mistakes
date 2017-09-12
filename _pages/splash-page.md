@@ -48,8 +48,8 @@ feature_row:
 #     url: "#test-link"
 #     btn_label: "Read More"
 #     btn_class: "btn--inverse"
+author_profile: false
 sidebar:
-  - author_profile: false
   - name: ""
   - bio: ""
   - title: "Title"
