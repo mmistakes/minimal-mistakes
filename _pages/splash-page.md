@@ -48,14 +48,24 @@ feature_row:
 #     url: "#test-link"
 #     btn_label: "Read More"
 #     btn_class: "btn--inverse"
+sidebar:
+  - title: "Title"
+    image: http://placehold.it/350x250
+    image_alt: "image"
+    text: "Some text here."
+  - title: "Another Title"
+    text: "More text here."
 ---
 
 {% include feature_row id="intro" type="center"%}
 
 {% include feature_row %}
 
-{% for post in paginator.posts %}
+------
+{% include sidebar.html %}
+
+{% capture written_year %}'None'{% endcapture %}
+{% for post in site.posts %}
+  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
   {% include archive-single.html %}
 {% endfor %}
-
-{% include paginator.html %}
