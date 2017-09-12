@@ -49,6 +49,8 @@ feature_row:
 #     btn_label: "Read More"
 #     btn_class: "btn--inverse"
 sidebar:
+  - name: ""
+  - bio: ""
   - title: "Title"
     image: http://placehold.it/350x250
     image_alt: "image"
