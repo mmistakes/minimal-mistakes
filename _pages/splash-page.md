@@ -48,13 +48,6 @@ feature_row:
 #     url: "#test-link"
 #     btn_label: "Read More"
 #     btn_class: "btn--inverse"
-sidebar:
-  - name: ""
-  - title: "Title"
-    image: http://placehold.it/350x250
-    image_alt: "image"
-    text: "Some text here."
-
 ---
 
 {% include feature_row id="intro" type="center"%}
