@@ -26,7 +26,7 @@ feature_row:
     url: /resume/
     btn_label: "Read More"
     btn_class: "btn--inverse"
-  - image_path: <a href="http://www.google.com"><img src="https://www.rellimmot.com/assets/images/siteimages/poplatedbreadboard600x400.jpg"></a>
+  - image_path: <a href="http://www.google.com">https://www.rellimmot.com/assets/images/siteimages/poplatedbreadboard600x400.jpg</a>
     title: "Placeholder 3"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
 feature_row2:
