@@ -15,14 +15,15 @@ intro:
   - excerpt: 'Please view my Portfolio to find articles documenting my work. As the articles grow in population, I’ll sort them into collections. As of now they’re seemingly random given the wide variety of hobbies I get caught up in.'
 feature_row:
   - image_path: assets/images/siteimages/poplatedbreadboard600x400.jpg
-    alt: "placeholder image 1"
-    title: "Placeholder 1"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
-    alt: "placeholder image 2"
-    title: "Placeholder 2"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    url: "#test-link"
+    alt: "Portfolio"
+    title: "Portfolio"
+    excerpt: "Writeups for a variety of projects I've done."
+    permalink: /portfolio/
+  - image_path: assets/images/siteimages/meinthelab600x400.jpg
+    alt: "Resume/About"
+    title: "Resume/About"
+    excerpt: "My resume and about me page."
+    url: /resume/
     btn_label: "Read More"
     btn_class: "btn--inverse"
   - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
