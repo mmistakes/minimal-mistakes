@@ -29,9 +29,9 @@ New Orleans, LA
 
 [tommiller@rellimmot.com](mailto:tommiller@rellimmot.com)
 
-## ***Objective***
+# ***Objective***
 
-## ***Qualifications Summary***
+# ***Qualifications Summary***
 
 -   Electrical/Computer Engineer with lifelong hobby of computer
     fabrication, build, repair, programming, server, and networking.
@@ -46,9 +46,9 @@ New Orleans, LA
     projects; constantly seeking additional skills and gaining technical
     saavy.
 
-## ***Experience***
+# ***Experience***
 
-### **Aircraft Avionics Systems Technician - US Air Force**
+## **Aircraft Avionics Systems Technician - US Air Force**
 Craftsman—Technical Sergeant, E-6, Barksdale AFB, LA
 
 *7/06-7/10—Active Duty, 7/10-Current—AF Reserves*
@@ -68,7 +68,7 @@ Craftsman—Technical Sergeant, E-6, Barksdale AFB, LA
 -   Directs training, demonstrates tasks, supervises airmen in training,
     and inspects work performed.
 
-### **Instrumentation Engineer - US Department of Agriculture**
+## **Instrumentation Engineer - US Department of Agriculture**
 Cotton Structures & Quality, Agricultural Research Service
 Southern Regional Research Center, New Orleans, LA
 
@@ -93,9 +93,9 @@ Southern Regional Research Center, New Orleans, LA
 -   Compose research findings into an academically publishable format to
     co-author with research scientists.
 
-### **Energy Policy Research Intern — US Department of Energy**
+## **Energy Policy Research Intern — US Department of Energy**
 Federal Energy Management Program
-Air Force Energy Office - The Pentagon, Washington DC
+Air Force Energy Office, The Pentagon, Washington DC
 *5/15-8/15*
 
 -   Serve as technical advisor on distributed energy resilience,
@@ -121,10 +121,10 @@ Air Force Energy Office - The Pentagon, Washington DC
 -   Serve as subject matter expert in B-52 bomber reengining program and
     in solar photovoltaic systems.
 
-**Photovoltaic Solar System Installer—Lead Technician and System
-Design** *7/10-1/13*
+## **Photovoltaic Solar System Installer - One Planet Solar**
+Lead Technician and System Design, Shreveport, LA
 
-### **One Planet Solar, Shreveport, LA**
+*7/10-1/13*
 
 -   Install solar electric photovoltaic renewable energy systems,
     battery bank and backup, on residential and commercial roof and
@@ -144,9 +144,10 @@ Design** *7/10-1/13*
 -   Build comprehensive automated site analysis and system design
     proposal suite for design, invoicing, and system sales.
 
-### **Kennel Volunteer—Asst. Kennel Manager** *3/07-6/11*
+## **Kennel Volunteer - Pet Savers Animal Shelter**
+Asst. Kennel Manager, Shreveport, LA
 
-### **Pet Savers Animal Shelter, Shreveport, LA**
+*3/07-6/11*
 
 -   No-kill shelter volunteer for homeless dogs and cats; some
     afternoons, sole volunteer on Sundays; 90 dogs, 40 cats.
@@ -158,11 +159,12 @@ Design** *7/10-1/13*
 
 -   Foster home participant; rehabilitated and found homes for 30+ dogs.
 
-## ***Education***
+# ***Education***
 
-### **Electrical Engineering—University of New Orleans, LA** *1/13-5/17*
+## **Electrical Engineering — University of New Orleans, LA**
+**Computer Engineering Concentration, Computer Science Minor**
 
-#### **Computer Engineering Concentration, Computer Science Minor**
+*1/13-5/17*
 
 -   Awarded Bachelors of Science in Electrical Engineering in May 2017.
 
@@ -173,35 +175,31 @@ Design** *7/10-1/13*
     Interfacing, Computer Organization, Computer Networks & Telecom, and
     Data & Computer Communications.
 
-### **Avionics Systems Technology—Community College of the Air Force**
+## **Avionics Systems Technology — Community College of the Air Force**
+
 *5/12-5/15*
 
 -   Awarded Associates in Avionics Systems Technology in May 2015.
 
-## ***Technical Skills, Projects,*** ***and Volunteering / Affiliations***
+# ***Technical Skills, Projects, and Affiliations***
 
-### **Coding Languages** (ordered by proficiency)**:** C/C++, HTML, VB,
-MATLAB, Python, OpenCV, ASM, CSS, Java
+## **Coding Languages**
 
-### **OS:** Windows (most proficient), Mac OS (very proficient), Linux
-(proficient)
+C/C++, HTML, VB, MATLAB, Python, OpenCV, ASM, CSS, Java  *(ordered by proficiency)*
 
-### **Software:**
-#### Programming/Development: Visual Studio, Arduino IDE,
-CMD/PowerShell/Bash, Anaconda, MATLAB,
+## **OS:**
+Windows (most proficient), Mac OS (very proficient), Linux (proficient)
 
-> Mathematica, MiniTab, Unscrambler X, Git, PuTTY/SSH
+## **Software:**
 
-#### CAD/3DP/CNC/Engineering: Dassault SolidWorks, Autodesk Fusion 360,
-Inventor, AutoCAD, Maya,
+### Programming/Development:
+Visual Studio, Arduino IDE, CMD/PowerShell/Bash, Anaconda, MATLAB, Mathematica, MiniTab, Unscrambler X, Git, PuTTY/SSH
 
-Blender, Simplify3D, Netfabb, MatterControl, Mach 4, LinuxCNC, Multisim,
-EAGLE, Altium Designer
+### CAD/3DP/CNC/Engineering:
+Dassault SolidWorks, Autodesk Fusion 360, Inventor, AutoCAD, Maya, Blender, Simplify3D, Netfabb, MatterControl, Mach 4, LinuxCNC, Multisim, EAGLE, Altium Designer
 
-####  Productivity/Design: MS Word, Excel, PowerPoint, OneNote, Visio, Adobe
-> Photoshop, Illustrator,
->
-> TeamViewer, VNC
+###  Productivity/Design:
+MS Word, Excel, PowerPoint, OneNote, Visio, Adobe Photoshop, Illustrator, TeamViewer, VNC
 
-### **Microcontrollers:** Arduino, Teensy, Atmel AVR, Raspberry Pi,
-BeagleBone, BASIC Stamp, et al.
+## **Microcontrollers:**
+Arduino, Teensy, Atmel AVR, Raspberry Pi, BeagleBone, BASIC Stamp, et al.
