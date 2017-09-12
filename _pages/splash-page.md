@@ -64,7 +64,7 @@ sidebar:
 {% include feature_row %}
 
 ------
-{% include author-profile.html name='false' bio=false location=false %}
+{% include author-profile.html name=false bio="false" location=false %}
 {% include sidebar.html %}
 
 {% capture written_year %}'None'{% endcapture %}
