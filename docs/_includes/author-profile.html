@@ -131,6 +131,14 @@
         </li>
       {% endif %}
 
+      {% if author.gitlab %}
+        <li>
+          <a href="https://gitlab.com/{{ author.gitlab }}" itemprop="sameAs">
+            <i class="fa fa-fw fa-gitlab" aria-hidden="true"></i> Gitlab
+          </a>
+        </li>
+      {% endif %}
+
       {% if author.stackoverflow %}
         <li>
           <a href="https://www.stackoverflow.com/users/{{ author.stackoverflow }}" itemprop="sameAs">
