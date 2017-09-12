@@ -78,9 +78,15 @@ analytics:
 
 # Site Author
 author:
+<<<<<<< HEAD
   name             :
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : 
+=======
+  name             : "Thomas Miller"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : ""
+>>>>>>> 7dc8215103de304c36977252114e5caee48cdca0
   location         : "New Orleans, LA"
   email            : "rellimmot@rellimmot.com"
   uri              : "https://www.rellimmot.com"
