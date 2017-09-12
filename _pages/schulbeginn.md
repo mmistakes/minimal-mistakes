@@ -82,8 +82,8 @@ der Anmeldung Ihre Präferenz der Unterrichtsform angeben. -->
 
 Wir bieten schon ab der ersten Klasse eine [Vielzahl an AGs](/ags) an. So wird
 z.B. ein Englisch-Kurs angeboten, wo Ihr Kind spielerisch Englisch lernen kann
-(regulär fängt der Schulenglisch in der dritten Klasse an). Wir haben, aber auch
-Sport-, Musik- und Kunstangebote.
+(regulär fängt der Englischunterricht in der dritten Klasse an). Wir haben,
+aber auch Sport-, Musik- und Kunstangebote.
 
 Wir laden Sie ein, bei uns zu hospitieren und sich mit den Abläufen vertraut zu machen.
 Schnuppern Sie gerne in den Schulalltag einer Klasse hinein. Bitte vereinbaren
