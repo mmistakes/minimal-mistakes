@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-last_modified_at: 2017-09-12T09:22:39-04:00
+last_modified_at: 2017-09-12T10:38:09-04:00
 ---
 
 Settings that affect your entire site can be changed in [Jekyll's configuration file](https://jekyllrb.com/docs/configuration/): `_config.yml`, found in the root of your project. If you don't have this file you'll need to copy or create one using the theme's [default `_config.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml) as a base.
@@ -31,6 +31,9 @@ Easily change the color scheme of the theme using one of the provided "skins":
 ```yaml
 minimal_mistakes_skin : "default" # "air", "contrast", "dark", "dirt", "mint", "sunrise"
 ```
+
+**Note:** If you have made edits to the theme's CSS files be sure to update [`/assets/css/main.scss`](https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss) to include `@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin` before the `minimal-mistakes` import.
+{: .notice--warning}
 
 #### Air skin: `air`
 {:.no_toc}
