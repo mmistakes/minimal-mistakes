@@ -49,14 +49,14 @@ feature_row:
 #     btn_label: "Read More"
 #     btn_class: "btn--inverse"
 sidebar:
+  - author_profile: false
   - name: ""
   - bio: ""
   - title: "Title"
     image: http://placehold.it/350x250
     image_alt: "image"
     text: "Some text here."
-  - title: "Another Title"
-    text: "More text here."
+
 ---
 
 {% include feature_row id="intro" type="center"%}
