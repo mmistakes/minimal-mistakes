@@ -4,8 +4,7 @@ daysUntilStale: 30
 daysUntilClose: 7
 # Issues with these labels will never be considered stale
 exemptLabels:
-  - pinned
-  - security
+  - "Status: Accepted"
 # Label to use when marking an issue as stale
 staleLabel: "Status: Stale"
 # Comment to post when marking an issue as stale. Set to `false` to disable
