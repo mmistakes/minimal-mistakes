@@ -145,10 +145,8 @@ Asst. Kennel Manager, Shreveport, LA
 -   No-kill shelter volunteer for homeless dogs and cats; some
     afternoons, sole volunteer on Sundays; 90 dogs, 40 cats.
 
--   Cleaning duties and management of kennel operations and adoptions
-    facilitation.
-
--   Facility, mechanical, plumbing, HVAC, and electrical repair.
+-   Cleaning duties and management of kennel operations, adoptions
+    and facility repair.
 
 -   Foster home participant; rehabilitated and found homes for 30+ dogs.
 
