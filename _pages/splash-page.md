@@ -1,5 +1,5 @@
 ---
-title: "Splash Page"
+title: "Thomas George Miller"
 layout: splash
 permalink: /splash-page/
 date: 2016-03-23T11:48:41-04:00
@@ -10,25 +10,22 @@ header:
   cta_label: "Download"
   cta_url: "https://github.com/mmistakes/minimal-mistakes/"
   caption: "Photo: [**rellimmot**](https://www.rellimmot.com)"
-excerpt: "This is the Project Log of Thomas George Miller. This is my honest attempt at documenting my work, and my sharing creative methods. This site is in at early stage. I am a lifelong hobbyist, veteran, and early career Electrical Engineer currently living in New Orleans."
+excerpt: "This is my Project Log. This is my honest attempt at documenting my work, and my sharing creative methods. This site is in at early stage. I am a lifelong hobbyist, veteran, and early career Electrical Engineer currently living in New Orleans."
 intro:
   - excerpt: 'Please view my Portfolio to find articles documenting my work. As the articles grow in population, I’ll sort them into collections. As of now they’re seemingly random given the wide variety of hobbies I get caught up in.'
 feature_row:
   - image_path: https://www.rellimmot.com/assets/images/siteimages/poplatedbreadboard600x400.jpg
     alt: "Portfolio"
-    title: "Portfolio"
-    excerpt: "Writeups for a variety of projects I've done."
+    title: <a href="/portfolio/" style="color:#494e52">Portfolio</a>
+    excerpt: <a href="/portfolio/" style="color:#494e52">Writeups for a variety of projects I've done.</a>
     permalink: https://www.rellimmot.com/portfolio/
   - image_path: assets/images/siteimages/meinthelab600x400.jpg
     alt: "Resume/About"
-    title: "Resume/About"
-    excerpt: "My resume and about me page."
-    url: /resume/
-    btn_label: "Read More"
-    btn_class: "btn--inverse"
+    title: <a href="/resume/" style="color:#494e52">Resume/About</a>
+    excerpt: <a href="/resume/" style="color:#494e52">My resume and about me page.</a>
   - image_path: https://www.rellimmot.com/assets/images/siteimages/poplatedbreadboard600x400.jpg
-    title: "Placeholder 3"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    title: <a href="/year-archive/" style="color:#494e52">Posts</a>
+    excerpt: <a href="/year-archive/" style="color:#494e52">Blog type articles and writeups.</a>
 feature_row2:
   - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
     alt: "placeholder image 2"
