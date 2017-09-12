@@ -14,7 +14,9 @@ layouts_gallery:
     image_path: /assets/images/mm-layout-archive.png
     alt: "archive layout example"
 last_modified_at: 2017-02-14T14:28:13-05:00
-
+type-size-5: 0.5em
+type-size-4: 0.5em
+type-size-6: 0.5em
 ---
 
 {% include toc title="Table of Contents" icon="file-text" %}
@@ -47,6 +49,7 @@ New Orleans, LA
 
 ### **Aircraft Avionics Systems Technician - US Air Force**
 Craftsman—Technical Sergeant, E-6, Barksdale AFB, LA
+
 *7/06-7/10—Active Duty, 7/10-Current—AF Reserves*
 
 -   Malfunction troubleshooting, maintenance, installation, programming,
@@ -67,6 +70,7 @@ Craftsman—Technical Sergeant, E-6, Barksdale AFB, LA
 ### **Instrumentation Engineer - US Department of Agriculture**
 Cotton Structures & Quality, Agricultural Research Service
 Southern Regional Research Center, New Orleans, LA
+
 *6/14-Current*
 
 -   Develop and design specifications for instrumentation on cotton
