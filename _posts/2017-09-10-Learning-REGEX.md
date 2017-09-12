@@ -7,7 +7,7 @@ published: true
 date: '2017-09-10'
 ---
 ## Short introduction
-So at our national branch, we have what's called a **service monitor**.
+So at our head branch, we have what's called a **service monitor**.
 It is a website where the status of certain national applications is being displayed.
 Years ago a colleague created a sort off slideshow-ish website that displays certain data.
 
