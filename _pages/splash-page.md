@@ -24,38 +24,38 @@ feature_row:
   - image_path: https://www.rellimmot.com/assets/images/siteimages/afbylakewbrak600x400.jpg
     title: <a href="/year-archive/" style="color:#494e52">Posts</a>
     excerpt: <a href="/year-archive/" style="color:#494e52">Blog type articles and writeups.</a>
-feature_row2:
-  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
-    alt: "placeholder image 2"
-    title: "Placeholder Image Left Aligned"
-    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Left aligned with `type="left"`'
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--inverse"
-feature_row3:
-  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
-    alt: "placeholder image 2"
-    title: "Placeholder Image Right Aligned"
-    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Right aligned with `type="right"`'
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--inverse"
-feature_row4:
-  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
-    alt: "placeholder image 2"
-    title: "Placeholder Image Center Aligned"
-    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Centered with `type="center"`'
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--inverse"
+#  feature_row2:
+#   - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+#     alt: "placeholder image 2"
+#     title: "Placeholder Image Left Aligned"
+#     excerpt: 'This is some sample content that goes here with **Markdown** formatting. Left aligned with `type="left"`'
+#     url: "#test-link"
+#     btn_label: "Read More"
+#     btn_class: "btn--inverse"
+# feature_row3:
+#   - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+#     alt: "placeholder image 2"
+#     title: "Placeholder Image Right Aligned"
+#     excerpt: 'This is some sample content that goes here with **Markdown** formatting. Right aligned with `type="right"`'
+#     url: "#test-link"
+#     btn_label: "Read More"
+#     btn_class: "btn--inverse"
+# feature_row4:
+#   - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+#     alt: "placeholder image 2"
+#     title: "Placeholder Image Center Aligned"
+#     excerpt: 'This is some sample content that goes here with **Markdown** formatting. Centered with `type="center"`'
+#     url: "#test-link"
+#     btn_label: "Read More"
+#     btn_class: "btn--inverse"
 ---
 
-{% include feature_row id="intro" type="center" link="https://www.google.com" %}
+{% include feature_row id="intro" type="center"%}
 
-{% include feature_row link="https://www.google.com" %}
+{% include feature_row %}
 
-{% include feature_row id="feature_row2" type="left" %}
+{% for post in paginator.posts %}
+  {% include archive-single.html %}
+{% endfor %}
 
-{% include feature_row id="feature_row3" type="right" %}
-
-{% include feature_row id="feature_row4" type="center" %}
+{% include paginator.html %}
