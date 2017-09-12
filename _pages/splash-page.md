@@ -50,8 +50,9 @@ feature_row:
 #     btn_class: "btn--inverse"
 author_profile: false
 sidebar:
+  - author.name: false
+  - author.bio: false
   - name: ""
-  - bio: ""
   - title: "Title"
     image: http://placehold.it/350x250
     image_alt: "image"
