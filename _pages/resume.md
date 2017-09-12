@@ -20,7 +20,6 @@ last_modified_at: 2017-02-14T14:28:13-05:00
 
 
 # **Thomas Miller**
-
 New Orleans, LA
 
 [tommiller@rellimmot.com](mailto:tommiller@rellimmot.com)
