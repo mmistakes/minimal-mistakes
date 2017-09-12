@@ -21,7 +21,7 @@ feature_row:
     alt: "Resume/About"
     title: <a href="/resume/" style="color:#494e52">Resume/About</a>
     excerpt: <a href="/resume/" style="color:#494e52">My resume and about me page.</a>
-  - image_path: https://www.rellimmot.com/assets/images/siteimages/poplatedbreadboard600x400.jpg
+  - image_path: https://www.rellimmot.com/assets/images/siteimages/afbylakewbrak600x400.jpg
     title: <a href="/year-archive/" style="color:#494e52">Posts</a>
     excerpt: <a href="/year-archive/" style="color:#494e52">Blog type articles and writeups.</a>
 feature_row2:
