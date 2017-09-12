@@ -48,10 +48,7 @@ feature_row:
 #     url: "#test-link"
 #     btn_label: "Read More"
 #     btn_class: "btn--inverse"
-author_profile: false
 sidebar:
-  - author.name: false
-  - author.bio: false
   - name: ""
   - title: "Title"
     image: http://placehold.it/350x250
@@ -65,9 +62,9 @@ sidebar:
 {% include feature_row %}
 
 ------
-{% include author-profile.html name=false bio="false" location=false %}
-{% include sidebar.html %}
 
+
+{% include sidebar-mod.html %}
 {% capture written_year %}'None'{% endcapture %}
 {% for post in site.posts %}
   {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
