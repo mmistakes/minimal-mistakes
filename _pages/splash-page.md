@@ -26,7 +26,7 @@ feature_row:
     url: /resume/
     btn_label: "Read More"
     btn_class: "btn--inverse"
-  - image_path: [![foo](https://www.rellimmot.com/assets/images/siteimages/poplatedbreadboard600x400.jpg)](https://www.rellimmot.com/assets/images/siteimages/poplatedbreadboard600x400.jpg)
+  - image_path: https://www.rellimmot.com/assets/images/siteimages/poplatedbreadboard600x400.jpg
     title: "Placeholder 3"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
 feature_row2:
@@ -55,9 +55,9 @@ feature_row4:
     btn_class: "btn--inverse"
 ---
 
-{% include feature_row id="intro" type="center" %}
+{% include feature_row id="intro" type="center" link="https://www.google.com" %}
 
-{% include feature_row %}
+{% include feature_row link="https://www.google.com" %}
 
 {% include feature_row id="feature_row2" type="left" %}
 
