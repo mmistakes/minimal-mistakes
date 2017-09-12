@@ -1,6 +1,7 @@
 ---
 permalink: /resume/
 title: "Resume"
+layout: splash
 excerpt: "If this text is still here, I haven't completed this page yet."
 layouts_gallery:
   - url: /assets/images/mm-layout-splash.png
@@ -19,13 +20,11 @@ last_modified_at: 2017-02-14T14:28:13-05:00
 {% include toc title="Table of Contents" icon="file-text" %}
 
 
-# **Thomas George Miller**
+# **Thomas Miller**
 
 New Orleans, LA
 
-tommiller@rellimmot.com
-
-rellimmot.com
+[tommiller@rellimmot.com](mailto:tommiller@rellimmot.com)
 
 ## ***Objective***
 
@@ -46,10 +45,9 @@ rellimmot.com
 
 ## ***Experience***
 
-**Aircraft Avionics Systems Technician—Craftsman—Technical Sergeant,
-E-6** *7/06-7/10—Active Duty,*
-
-### **US Air Force, Barksdale AFB, LA** *7/10-Current—AF Reserves*
+### **Aircraft Avionics Systems Technician - US Air Force**
+Craftsman—Technical Sergeant, E-6, Barksdale AFB, LA
+*7/06-7/10—Active Duty, 7/10-Current—AF Reserves*
 
 -   Malfunction troubleshooting, maintenance, installation, programming,
     and modification of integrated avionics systems on
@@ -66,10 +64,10 @@ E-6** *7/06-7/10—Active Duty,*
 -   Directs training, demonstrates tasks, supervises airmen in training,
     and inspects work performed.
 
-### **Instrumentation Engineer—Cotton Textile Research** *6/14-Current*
-
-**US Department of Agriculture, Southern Regional Research Center, New
-Orleans, LA**
+### **Instrumentation Engineer - US Department of Agriculture**
+Cotton Structures & Quality, Agricultural Research Service
+Southern Regional Research Center, New Orleans, LA
+*6/14-Current*
 
 -   Develop and design specifications for instrumentation on cotton
     textile systems at laboratory and industrial scale.
@@ -90,10 +88,10 @@ Orleans, LA**
 -   Compose research findings into an academically publishable format to
     co-author with research scientists.
 
-### **Energy Policy Research Intern—Federal Energy Management Program**
+### **Energy Policy Research Intern — US Department of Energy**
+Federal Energy Management Program
+Air Force Energy Office - The Pentagon, Washington DC
 *5/15-8/15*
-
-### **US Department of Energy—The Pentagon, Washington DC**
 
 -   Serve as technical advisor on distributed energy resilience,
     microgrids, and renewable energy systems to the office of the Asst.
