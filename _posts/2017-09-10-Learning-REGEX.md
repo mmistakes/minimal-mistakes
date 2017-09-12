@@ -6,8 +6,6 @@ Tags: 'PS, Scrape, REGEX'
 published: true
 date: '2017-09-10'
 ---
-# Learning REGEX in combination with Powershell
-
 ## Short introduction
 So at our national branch, we have what's called a **service monitor**.
 It is a website where the status of certain national applications is being displayed.
