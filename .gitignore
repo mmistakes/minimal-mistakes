@@ -12,3 +12,5 @@ example/_site
 Gemfile.lock
 node_modules
 npm-debug.log*
+
+.*.swp
