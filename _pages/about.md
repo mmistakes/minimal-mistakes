@@ -22,8 +22,8 @@ NANOGrav is one of three PTAs that jointly form the [International Pulsar Timing
 Over my life, I've lived in New York, Pennsylvania, Oregon, Montana, and now West Virginia.
 The banner photo is a view down Porcupine Rd from [my favorite forest service cabin][porc] in the Crazy Mountains north of Livingston, Montana.
 
-[gwac][https://gwac.wvu.edu]
-[ligo][http://www.ligo.org]
-[nano][http://www.nanograv.org]
-[ipta][http://www.ipta4gw.org]
-[porc][https://www.google.com/maps/@46.1127739,-110.4733903,702m/data=!3m1!1e3]
+[gwac]: https://gwac.wvu.edu
+[ligo]: http://www.ligo.org
+[nano]: http://www.nanograv.org
+[ipta]: http://www.ipta4gw.org
+[porc]: https://www.google.com/maps/@46.1127739,-110.4733903,702m/data=!3m1!1e3
