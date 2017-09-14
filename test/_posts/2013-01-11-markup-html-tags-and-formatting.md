@@ -102,17 +102,6 @@ Do It Live
   3. List item three
   4. List item four
 
-## Forms
-
-<form>
-  <fieldset>
-    <legend>Personalia:</legend>
-    Name: <input type="text" size="30"><br>
-    Email: <input type="text" size="30"><br>
-    Date of birth: <input type="text" size="10">
-  </fieldset>
-</form>
-
 ## Buttons
 
 Make any link standout more when applying the `.btn` class.
@@ -121,8 +110,7 @@ Make any link standout more when applying the `.btn` class.
 <a href="#" class="btn--success">Success Button</a>
 ```
 
-[Default Button](#){: .btn}
-[Primary Button](#){: .btn .btn--primary}
+[Primary Button](#){: .btn}
 [Success Button](#){: .btn .btn--success}
 [Warning Button](#){: .btn .btn--warning}
 [Danger Button](#){: .btn .btn--danger}
@@ -131,8 +119,7 @@ Make any link standout more when applying the `.btn` class.
 [Light Outline Button](#){: .btn .btn--light-outline}
 
 ```markdown
-[Default Button Text](#link){: .btn}
-[Primary Button Text](#link){: .btn .btn--primary}
+[Primary Button Text](#link){: .btn}
 [Success Button Text](#link){: .btn .btn--success}
 [Warning Button Text](#link){: .btn .btn--warning}
 [Danger Button Text](#link){: .btn .btn--danger}
@@ -141,37 +128,22 @@ Make any link standout more when applying the `.btn` class.
 [Light Outline Button](#link){: .btn .btn--light-outline}
 ```
 
-[X-Large Button](#){: .btn .btn--primary .btn--x-large}
-[Large Button](#){: .btn .btn--primary .btn--large}
-[Default Button](#){: .btn .btn--primary }
-[Small Button](#){: .btn .btn--primary .btn--small}
+[X-Large Button](#){: .btn .btn--x-large}
+[Large Button](#){: .btn .btn--large}
+[Default Button](#){: .btn}
+[Small Button](#){: .btn .btn--small}
 
 ```markdown
-[X-Large Button](#link){: .btn .btn--primary .btn--x-large}
-[Large Button](#link){: .btn .btn--primary .btn--large}
-[Default Button](#link){: .btn .btn--primary }
-[Small Button](#link){: .btn .btn--primary .btn--small}
+[X-Large Button](#link){: .btn .btn--x-large}
+[Large Button](#link){: .btn .btn--large}
+[Default Button](#link){: .btn}
+[Small Button](#link){: .btn .btn--small}
 ```
 
 ## Notices
 
-**Watch out!** This paragraph of text has been [emphasized](#) with the `{: .notice}` class.
+**Watch out!** You can also add notices by appending `{: .notice}` to a paragraph.
 {: .notice}
-
-**Watch out!** This paragraph of text has been [emphasized](#) with the `{: .notice--primary}` class.
-{: .notice--primary}
-
-**Watch out!** This paragraph of text has been [emphasized](#) with the `{: .notice--info}` class.
-{: .notice--info}
-
-**Watch out!** This paragraph of text has been [emphasized](#) with the `{: .notice--warning}` class.
-{: .notice--warning}
-
-**Watch out!** This paragraph of text has been [emphasized](#) with the `{: .notice--success}` class.
-{: .notice--success}
-
-**Watch out!** This paragraph of text has been [emphasized](#) with the `{: .notice--danger}` class.
-{: .notice--danger}
 
 ## HTML Tags
 
