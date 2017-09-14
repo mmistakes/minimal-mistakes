@@ -15,12 +15,13 @@
   height: auto;
   /* sticky footer fix end */
   margin-top: 3em;
-  color: $muted-text-color;
+  color: mix(#fff, $gray, 25%);
   -webkit-animation: $intro-transition;
           animation: $intro-transition;
   -webkit-animation-delay: 0.45s;
           animation-delay: 0.45s;
-  background-color: $footer-background-color;
+  background-color: $lighter-gray;
+  border-top: 1px solid $light-gray;
 
   footer {
     @include clearfix;
@@ -45,7 +46,7 @@
   }
 
   .fa {
-    color: $muted-text-color;
+    color: mix(#fff, $gray, 25%);
   }
 }
 

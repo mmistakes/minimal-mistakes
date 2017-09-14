@@ -85,22 +85,21 @@
       line-height: 1.5;
       text-align: center;
       text-decoration: none;
-      color: $muted-text-color;
-      border: 1px solid mix(#000, $border-color, 25%);
+      color: mix(#fff, $gray, 25%);
+      border: 1px solid $light-gray;
       border-radius: 0;
 
       &:hover {
         color: $link-color-hover;
       }
 
-      &.current,
-      &.current.disabled {
+      &.current {
         color: #fff;
         background: $primary-color;
       }
 
       &.disabled {
-        color: rgba($muted-text-color, 0.5);
+        color: mix(#fff, $gray, 75%);
         pointer-events: none;
         cursor: not-allowed;
       }
@@ -134,12 +133,12 @@
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: $muted-text-color;
-    border: 1px solid mix(#000, $border-color, 25%);
+    color: $link-color;
+    border: 1px solid $light-gray;
     border-radius: $border-radius;
 
     &:hover {
-      @include yiq-contrasted($muted-text-color);
+      color: $link-color-hover;
     }
 
     &:first-child {
@@ -154,7 +153,7 @@
     }
 
     &.disabled {
-      color: rgba($muted-text-color, 0.5);
+      color: mix(#fff, $gray, 75%);
       pointer-events: none;
       cursor: not-allowed;
     }
@@ -263,7 +262,7 @@
     padding: 5px;
     border: 1px solid $border-color;
     border-radius: $border-radius;
-    background: $background-color;
+    background: #fff;
     box-shadow: 0 2px 4px 0 rgba(#000, 0.16), 0 2px 10px 0 rgba(#000, 0.12);
 
     &.hidden {
@@ -302,7 +301,7 @@
       width: 0;
       border-style: solid;
       border-width: 0 10px 10px;
-      border-color: $background-color transparent;
+      border-color: #fff transparent;
       display: block;
       z-index: 1;
     }
@@ -495,7 +494,7 @@
   color: $gray;
   text-transform: uppercase;
   letter-spacing: 1px;
-  background-color: $background-color;
+  background-color: #fff;
   border: 1px solid $border-color;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
@@ -519,14 +518,15 @@
   a {
     display: block;
     padding: 0.5rem 1rem;
-    color: $muted-text-color;
+    color: $gray;
     font-size: $type-size-7;
     font-weight: bold;
     line-height: 1.5;
     border-bottom: 1px solid $border-color;
 
     &:hover {
-      color: $text-color;
+      color: #000;
+      background: $lighter-gray;
     }
   }
 
