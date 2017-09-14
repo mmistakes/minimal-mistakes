@@ -26,7 +26,7 @@
   margin: 1.414em 0 0;
   padding-bottom: 0.5em;
   font-size: $type-size-5;
-  color: $muted-text-color;
+  color: mix(#fff, $gray, 25%);
   border-bottom: 1px solid $border-color;
 
   + .list__item .archive__item-title {
@@ -37,8 +37,6 @@
 .archive__item-title {
   margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
-  overflow: hidden;
-  text-overflow: ellipsis;
 
   a + a {
     opacity: 0.5;
@@ -72,7 +70,6 @@
 }
 
 .archive__item:hover {
-
   .archive__item-teaser {
     box-shadow: 0 0 10px rgba(#000, 0.25);
   }
