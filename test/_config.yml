@@ -6,6 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 theme                    : "minimal-mistakes-jekyll"
+minimal_mistakes_skin    : "default" # "air", "contrast", "dark", "dirt", "mint", "sunrise"
 
 # Site Settings
 locale                   : "en"
@@ -143,6 +144,10 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
+# Liquid
+strict_front_matter: true
+liquid:
+  error_mode: strict
 
 # Conversion
 markdown: kramdown

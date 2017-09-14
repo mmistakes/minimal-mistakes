@@ -4,6 +4,8 @@
 
 form {
   margin: 0 0 5px 0;
+  padding: 1em;
+  background-color: $form-background-color;
 
   fieldset {
     margin-bottom: 5px;
@@ -19,7 +21,6 @@ form {
     padding: 0;
     color: $text-color;
     border: 0;
-    border-bottom: 1px solid mix(#fff, #000, 80%);
     white-space: normal;
   }
 
@@ -80,14 +81,10 @@ select {
   padding: 0.25em;
   margin-bottom: 0.5em;
   color: $text-color;
-  background-color: #fff;
-  border: 1px solid mix(#fff, #000, 80%);
+  background-color: $background-color;
+  border: $border-color;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
-
-  &:hover {
-    border-color: mix(#fff, $primary-color, 50%);
-  }
 }
 
 .input-mini {
@@ -224,6 +221,7 @@ textarea:focus {
   border-color: $primary-color;
   outline: 0;
   outline: thin dotted \9;
+  box-shadow: inset 0 1px 3px rgba($text-color, 0.06), 0 0 5px rgba($primary-color, 0.7);
 }
 
 input[type="file"]:focus,
@@ -240,7 +238,7 @@ select:focus {
 
 .help-block,
 .help-inline {
-  color: $info-color;
+  color: $muted-text-color;
 }
 
 .help-block {
@@ -382,7 +380,7 @@ select:focus {
   color: #000;
   border-width: 2px !important;
   border-style: solid !important;
-  border-color: lighten(#000,50);
+  border-color: $border-color;
   border-radius: $border-radius;
 }
 

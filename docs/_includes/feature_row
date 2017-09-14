@@ -1,5 +1,5 @@
 {% if include.id %}
-  {% assign feature_row = page.[include.id] %}
+  {% assign feature_row = page[include.id] %}
 {% else %}
   {% assign feature_row = page.feature_row %}
 {% endif %}

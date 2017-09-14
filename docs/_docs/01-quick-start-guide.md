@@ -2,7 +2,7 @@
 title: "Quick-Start Guide"
 permalink: /docs/quick-start-guide/
 excerpt: "How to quickly install and setup Minimal Mistakes for use with GitHub Pages."
-last_modified_at: 2017-08-04T12:37:48-04:00
+last_modified_at: 2017-09-01T09:27:53-04:00
 redirect_from:
   - /theme-setup/
 ---
@@ -13,8 +13,7 @@ Minimal Mistakes has been developed as a [Jekyll theme gem](http://jekyllrb.com/
 
 ## Installing the Theme
 
-If you're running Jekyll v3.3+ and self-hosting you can quickly install the theme as Ruby gem.
-If you're hosting with GitHub Pages you'll have to use the old "repo fork" method or directly copy all of the theme files[^structure] into your site.
+If you're running Jekyll v3.5+ and self-hosting you can quickly install the theme as a Ruby gem. If you're hosting with GitHub Pages you'll have to use the old "repo fork" method or directly copy all of the theme files[^structure] into your site.
 
 [^structure]: See [**Structure** page]({{ "/docs/structure/" | absolute_url }}) for a list of theme files and what they do.
 
@@ -76,6 +75,13 @@ end
 
 Then run `bundle update` and verify that all gems install properly.
 
+**GitHub Pages Alternatives:** Looking to host your site for free and install/update the theme painlessly? [Netflify][netlify-jekyll], [GitLab Pages][gitlab-jekyll], and [Continuous Integration (CI) services][ci-jekyll] have you covered. In most cases all you need to do is connect your repository to them, create a simple configuration file, and install the theme following the [Ruby Gem Method](#ruby-gem-method) above.
+{: .notice--info}
+
+[netlify-jekyll]: https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/
+[gitlab-jekyll]: https://about.gitlab.com/2016/04/07/gitlab-pages-setup/
+[ci-jekyll]: https://jekyllrb.com/docs/continuous-integration/
+
 ### Remove the Unnecessary
 
 If you forked or downloaded the `minimal-mistakes-jekyll` repo you can safely remove the following folders and files:
@@ -94,6 +100,9 @@ If you forked or downloaded the `minimal-mistakes-jekyll` repo you can safely re
 ## Setup Your Site
 
 Depending on the path you took installing Minimal Mistakes you'll setup things a little differently.
+
+**ProTip:** The source code and content files for this site can be found in the [`/docs` folder](https://github.com/mmistakes/minimal-mistakes/tree/master/docs) if you want to copy or learn from them.
+{: .notice--info}
 
 ### Starting Fresh
 
