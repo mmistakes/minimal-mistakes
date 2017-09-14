@@ -194,3 +194,13 @@ MS Word, Excel, PowerPoint, OneNote, Visio, Adobe Photoshop, Illustrator, TeamVi
 
 ## **Microcontrollers**
 Arduino, Teensy, Atmel AVR, Raspberry Pi, BeagleBone, BASIC Stamp, et al.
+
+## UNO Robotics Club
+Served as Mentor and Sensor Design Lead for 2016/2017 IEEE Robotics Competition.
+-	Instrumental in UNO robots scoring 1st, 5th, 8th, and 10th place out of 36 robotics teams from 13 colleges.
+## NASA LAACES High Altitude Ballooning
+Flew payloads to near-space for instrumentation research.
+-	Wrote firmware for a low cost GPS unit which performed better than professional unit.
+-	Refuted claims of accuracy for a pressure sensor commonly used in high altitude ballooning.
+## International Society of Automation UNO Student Chapter
+Vice President 2015-2017
