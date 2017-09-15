@@ -47,6 +47,21 @@ einfach eine E-Mail. So können wir uns Zeit für Ihr Anliegen nehmen.
 | Hort/Mensa | (030) 3670952 - 31 | {% include email email='hort@brandwerder.de' %} |
 | Insel | (030) 3670952 - 26 | {% include email email='hort@brandwerder.de' %} |
 
+## Sozialberatung
+{: #sozialberatung}
+
+{% include author-profile.html author='Nina Sykora' %}{: .align-right}
+
+* Nina Sykora
+* E-Mail: {% include email email='nsykora@g-casablanca.de' %}
+* Telefon: (030) 3670952 - 0
+* Büro: (030) 308322711 (Team ambulante Hilfen)
+* Mobil: 0157 73845475
+* Web: [<i class="fa fa-external-link">&nbsp;</i>Casablanca in Spandau](http://www.g-casablanca.de/taetigkeitsfelder/jugendhilfe-und-schule/sozial-und-elternberatung-an-schulen)
+* Sprechzeiten: Di 9:30 - 11:30
+
+[<i class="fa fa-download">&nbsp;&nbsp;</i>Flyer zur Sozialberatung von Casablanca](/assets/files/Sozialberatung_Casablanca_Flyer.pdf){: .btn .btn--success}
+
 ## Ihre Ansprechpartner*innen
 
 Die E-Mail Kontaktdaten erhalten Sie über das Sekretariat.
