@@ -95,7 +95,7 @@ können. Vor allem die Kursgebühren können sich ändern.
         <i>Frau Findeisen</i>
       </td>
       <td>2 - 6</td>
-      <td>Religionsraum</td>
+      <td>Musikraum</td>
     </tr>
     <tr>
       <td>13:45 - 15:15</td>
@@ -360,7 +360,7 @@ Jede Gruppe hat 30min Unterricht.
 
 | Kursleiter*in | Wann? | Wo? | Für wen? |
 |---|---|---|---|
-| Frau Findeisen | montags und dienstags, 13:30 - 15:00 (mehrere Gruppen) | Religionsraum (montags), Musikraum (dienstags) | 2. - 6. Klasse |
+| Frau Findeisen | montags und dienstags, 13:30 - 15:00 (mehrere Gruppen) | Musikraum | 2. - 6. Klasse |
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
