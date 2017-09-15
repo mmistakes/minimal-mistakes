@@ -36,12 +36,12 @@ Die individuelle Förderung steht im Mittelpunkt.
 
 ## Das sind unsere Unterrichtszeiten:
 
-|Einlass | 07:50 Uhr |
+|Einlass | 7:50 Uhr |
 | ---|----|
-|1. Stunde | 08:00 Uhr - 08:45 Uhr |
-|2. Stunde | 08:50 Uhr - 09:35 Uhr |
+|1. Stunde | 8:00 Uhr - 8:45 Uhr |
+|2. Stunde | 8:50 Uhr - 9:35 Uhr |
 |Große Pause | |
-|3. Stunde | 09:55 Uhr - 10:40 Uhr |
+|3. Stunde | 9:55 Uhr - 10:40 Uhr |
 |4. Stunde | 10:45 Uhr - 11:30 Uhr |
 |Große Pause | |
 |5. Stunde | 11:55 Uhr - 12:40 Uhr |

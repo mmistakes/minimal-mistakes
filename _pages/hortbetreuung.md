@@ -94,7 +94,7 @@ werden.
 
 Sie können für Ihr Kind -- egal welcher Jahrgangsstufe -- eine kostenpflichtige
 Ferienbetreuung beantragen. Die Betreuungszeiten sind die selben wie bei der
-ergänzende Betreuung, hinzu kommt der Zeitraum 07:30 - 13:30.
+ergänzende Betreuung, hinzu kommt der Zeitraum 7:30 - 13:30.
 
 Die Formulare finden Sie im Abschnitt [ergänzende
 Betreuung](/hortbetreuung/#hort).
