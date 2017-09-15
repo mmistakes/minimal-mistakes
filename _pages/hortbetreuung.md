@@ -64,7 +64,7 @@ In allen Angeboten ab 13:30 (Nachmittagsbetreuung) wird Ihr Kind bei den
 Hausaufgaben betreut und nimmt am Mittagessen teil.
 
 Für die Regelung während der Ferienzeit lesen Sie bitte den Abschnitt
-„[Betreuung in den Ferien](/hortbetreuung#ferienbetreuung)“.
+„[Betreuung in den Ferien](/hortbetreuung/#ferienbetreuung)“.
 
 Die monatlichen Betreuungskosten setzen sich aus 23€ für das Mittagessen und
 einem vom Betreuungzeitraum, Anzahl an Schul- und Kitakindern und
@@ -123,4 +123,4 @@ Ausschreibung findet zum 1.8.2020 statt.
 
 Sollte Sie noch Fragen haben, dann können Sie sich an unsere
 koordinierende Erzieherin -- [Simone
-Melz](/kontakt#koordinierende_erzieherin) -- wenden.
+Melz](/kontakt/#koordinierende_erzieherin) -- wenden.

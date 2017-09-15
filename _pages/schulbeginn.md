@@ -60,12 +60,12 @@ nachsehen.<br/><br/>
 # <i class="fa fa-picture-o"></i> Kurzporträt unserer Schule
 {: #portrait}
 
-Wir sind eine zweizügige, [verlässliche Halbtagsgrundschule](/hortbetreuung#vhg)
+Wir sind eine zweizügige, [verlässliche Halbtagsgrundschule](/hortbetreuung/#vhg)
 mit rund 300 Kindern, die von 28
 Lehrer\*innen und 10 Erzieher\*innen unterrichtet und gefördert werden.
 Verlässlich bedeutet, dass Ihr Kind in der Schulzeit von 7:30 - 13:30 Uhr
 untergebracht ist. Die Betreuung kann kostenpflichtig auf die Zeiten von 6:00
-bis 18:00 ausgeweitet werden ([eFöB/Hort](/hortbetreuung#hort)).
+bis 18:00 ausgeweitet werden ([eFöB/Hort](/hortbetreuung/#hort)).
 
 In den Klassen 1, 2, 3 wird jahrgangsübergreifend gelernt. Die Kinder der
 Jahrgangsstufen 4-6 haben im Rahmen der Sportbetonung vier statt drei Stunden
