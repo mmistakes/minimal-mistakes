@@ -1,4 +1,6 @@
-{% if page.author and site.data.authors[page.author] %}
+{% if include.author and site.data.authors[include.author] %}
+  {% assign author = site.data.authors[include.author] %}
+{% elsif page.author and site.data.authors[page.author] %}
   {% assign author = site.data.authors[page.author] %}
 {% else %}
   {% assign author = site.author %}
