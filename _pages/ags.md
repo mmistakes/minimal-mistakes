@@ -50,6 +50,15 @@ können. Vor allem die Kursgebühren können sich ändern.
       <td>Aula</td>
     </tr>
     <tr>
+      <td>13:30 - 15:00</td>
+      <td>
+        <a href="#gitarre_ag"><i class='fa'>🎸&nbsp;</i>Gitarrenunterricht</a><br>
+        <i>Frau Findeisen</i>
+      </td>
+      <td>2 - 6</td>
+      <td>Musikraum</td>
+    </tr>
+    <tr>
       <td>13:40 - 14:25</td>
       <td>
         <a href="#englisch_ag"><i class='fa fa-gbp'>&nbsp;</i>Englisch für Kids (Stufe I)</a><br>
@@ -347,9 +356,11 @@ N.N
 
 N.N
 
+Jede Gruppe hat 30min Unterricht.
+
 | Kursleiter*in | Wann? | Wo? | Für wen? |
 |---|---|---|---|
-| Frau Findeisen | dienstags, 13:30 - 15:00 (mehrere Gruppen) | Religionsraum | 2. - 6. Klasse |
+| Frau Findeisen | montags und dienstags, 13:30 - 15:00 (mehrere Gruppen) | Religionsraum (montags), Musikraum (dienstags) | 2. - 6. Klasse |
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
