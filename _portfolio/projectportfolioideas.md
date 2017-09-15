@@ -42,4 +42,3 @@ sidebar:
 * Lessons on LiPo battery pack making
 * WRX drivetrain swaps, frankensteining, and the gradual decision to go 6-speed
 * Surplus auction
-<div class="grid" data-isotope='{ "itemSelector": ".grid-item", "layoutMode": "fitRows" }'>
