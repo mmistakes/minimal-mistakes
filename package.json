@@ -30,5 +30,9 @@
     "add-banner": "node banner.js",
     "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
     "build:js": "npm run uglify && npm run add-banner"
+  },
+  "dependencies": {
+    "isotope": "^1.0.0-alpha.3",
+    "isotope-layout": "^3.0.4"
   }
 }
