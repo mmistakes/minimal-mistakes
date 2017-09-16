@@ -5,7 +5,7 @@
 {% endif %}
 
 {% if post.id %}
-  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" | strip %}
 {% else %}
   {% assign title = post.title %}
 {% endif %}
@@ -20,7 +20,7 @@
           {% else %}
             "{{ teaser | absolute_url }}"
           {% endif %}
-          alt="">
+          alt="{{ title }}">
       </div>
     {% endif %}
     <h2 class="archive__item-title" itemprop="headline">
