@@ -40,12 +40,12 @@ minimal-mistakes
 
 ## Customizing
 
-To override the default [Sass](https://sass-lang.com/guide) (located in theme's 
+To override the default [Sass](http://sass-lang.com/guide) (located in theme's 
 `_sass` directory), do one of the following:
 
 1. Copy directly from the Minimal Mistakes theme gem
 
-   - Go to your local Basically Basic gem installation directory (run 
+   - Go to your local Minimal Mistakes gem installation directory (run 
      `bundle show minimal-mistakes-jekyll` to get the path to it).
    - Copy the contents of `/assets/css/main.scss` from there to 
      `<your_project>`.
@@ -55,7 +55,7 @@ To override the default [Sass](https://sass-lang.com/guide) (located in theme's
 
    - Copy the contents of [assets/css/main.scss](https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss) 
      to `<your_project>`.
-   - Customize want you want inside `<your_project/assets/css/main.scss`.
+   - Customize what you want inside `<your_project/assets/css/main.scss`.
 
 **Note:** To make more extensive changes and customize the Sass partials bundled 
 in the gem. You will need to copy the complete contents of the `_sass` directory 
@@ -153,11 +153,20 @@ Change the mood of your site by altering a few color variables. `$body-color`, `
 
 ### Breakpoints and Grid Stuff
 
-Probably won't need to touch these, but they're there if you need to. Width variables are used with the [`@include breakpoint()`](https://breakpoint-sass.com/) mixin to adapt the design of certain elements.
+Probably won't need to touch these, but they're there if you need to. Width variables are used with the [`@include breakpoint()`](http://breakpoint-sass.com/) mixin to adapt the design of certain elements.
 
-And `$susy` is used for setting [the grid](https://susy.oddbird.net/) the theme uses. Uncommenting the lines under `debug` can be useful if you want to show the columns when adjusting the layout.
+And `$susy` is used for setting [the grid](http://susy.oddbird.net/) the theme uses. Uncommenting the lines under `debug` can be useful if you want to show the columns when adjusting the layout.
 
 <figure>
   <img src="{{ '/assets/images/mm-susy-grid-overlay.jpg' | absolute_url }}" alt="Susy grid overlay for debugging">
   <figcaption>Susy grid debug overlay enabled.</figcaption>
 </figure>
+
+### Disabling Animations
+
+You can disable either the fade-in intro animation, element transition animations, or both by overriding the corresponding variables. For example if you wanted to disable all animations you could include the following lines:
+
+```scss
+$intro-transition  : none;
+$global-transition : none;
+```

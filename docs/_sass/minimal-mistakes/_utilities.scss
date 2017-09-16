@@ -6,7 +6,7 @@
    Visibility
    ========================================================================== */
 
-/* https://www.456bereastreet.com/archive/200711/screen_readers_sometimes_ignore_displaynone/ */
+/* http://www.456bereastreet.com/archive/200711/screen_readers_sometimes_ignore_displaynone/ */
 
 .hidden {
   display: none;
@@ -57,7 +57,7 @@ body:hover .visually-hidden button {
   background: #fff;
   z-index: 100000;
   text-decoration: none;
-  box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 }
 
 
@@ -114,7 +114,9 @@ body:hover .visually-hidden button {
 .cf { clear: both; }
 
 .wrapper {
-  @include container();
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 
@@ -183,7 +185,7 @@ body:hover .visually-hidden button {
 
 .social-icons {
   .fa {
-    color: #000;
+    color: $text-color;
   }
 
   .fa-behance,

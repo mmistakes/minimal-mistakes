@@ -15,7 +15,7 @@ To attribute an author to a post or page that is different from the site author 
 
 Billy Rick:
   name: "Billy Rick"
-  uri: "https://thewhip.com"
+  uri: "http://thewhip.com"
   email: "billy@rick.com"
   bio: "What do you want, jewels? I am a very extravagant man."
   avatar: "/assets/images/bio-photo-2.jpg"

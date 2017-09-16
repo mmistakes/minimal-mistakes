@@ -7,15 +7,14 @@
    ========================================================================== */
 
 .breadcrumbs {
-  @include container;
   @include clearfix;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 auto;
+  max-width: 100%;
   padding-left: 2em;
   padding-right: 2em;
   font-family: $sans-serif;
-  -webkit-animation: intro 0.3s both;
-          animation: intro 0.3s both;
+  -webkit-animation: $intro-transition;
+          animation: $intro-transition;
   -webkit-animation-delay: 0.30s;
           animation-delay: 0.30s;
 
@@ -34,11 +33,12 @@
     font-size: $type-size-6;
 
     @include breakpoint($large) {
-      @include span(10 of 12 last);
+      float: right;
+      width: span(10 of 12);
     }
 
     @include breakpoint($x-large) {
-      @include prefix(0.5 of 12);
+      padding-left: gutter(0.5 of 12);
     }
   }
 
@@ -57,10 +57,11 @@
    ========================================================================== */
 
 .pagination {
-  @include full();
   @include clearfix();
+  float: left;
   margin-top: 1em;
   padding-top: 1em;
+  width: 100%;
 
   ul {
     margin: 0;
@@ -84,21 +85,22 @@
       line-height: 1.5;
       text-align: center;
       text-decoration: none;
-      color: mix(#fff, $gray, 25%);
-      border: 1px solid $light-gray;
+      color: $muted-text-color;
+      border: 1px solid mix(#000, $border-color, 25%);
       border-radius: 0;
 
       &:hover {
         color: $link-color-hover;
       }
 
-      &.current {
+      &.current,
+      &.current.disabled {
         color: #fff;
         background: $primary-color;
       }
 
       &.disabled {
-        color: mix(#fff, $gray, 75%);
+        color: rgba($muted-text-color, 0.5);
         pointer-events: none;
         cursor: not-allowed;
       }
@@ -132,12 +134,12 @@
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: $link-color;
-    border: 1px solid $light-gray;
+    color: $muted-text-color;
+    border: 1px solid mix(#000, $border-color, 25%);
     border-radius: $border-radius;
 
     &:hover {
-      color: $link-color-hover;
+      @include yiq-contrasted($muted-text-color);
     }
 
     &:first-child {
@@ -152,7 +154,7 @@
     }
 
     &.disabled {
-      color: mix(#fff, $gray, 75%);
+      color: rgba($muted-text-color, 0.5);
       pointer-events: none;
       cursor: not-allowed;
     }
@@ -261,7 +263,7 @@
     padding: 5px;
     border: 1px solid $border-color;
     border-radius: $border-radius;
-    background: #fff;
+    background: $background-color;
     box-shadow: 0 2px 4px 0 rgba(#000, 0.16), 0 2px 10px 0 rgba(#000, 0.12);
 
     &.hidden {
@@ -300,7 +302,7 @@
       width: 0;
       border-style: solid;
       border-width: 0 10px 10px;
-      border-color: #fff transparent;
+      border-color: $background-color transparent;
       display: block;
       z-index: 1;
     }
@@ -493,7 +495,7 @@
   color: $gray;
   text-transform: uppercase;
   letter-spacing: 1px;
-  background-color: #fff;
+  background-color: $background-color;
   border: 1px solid $border-color;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
@@ -517,15 +519,14 @@
   a {
     display: block;
     padding: 0.5rem 1rem;
-    color: $gray;
+    color: $muted-text-color;
     font-size: $type-size-7;
     font-weight: bold;
     line-height: 1.5;
     border-bottom: 1px solid $border-color;
 
     &:hover {
-      color: #000;
-      background: $lighter-gray;
+      color: $text-color;
     }
   }
 
@@ -536,7 +537,7 @@
   }
 
   li ul > li a {
-    padding-left: 2rem;
+    padding-left: 1.75rem;
     font-weight: normal;
   }
 

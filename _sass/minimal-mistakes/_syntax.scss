@@ -19,7 +19,7 @@ figure.highlight {
     top: 0;
     right: 0;
     padding: 0.5em;
-    background-color: $lighter-gray;
+    background-color: $border-color;
     content: "\f121";
     font-family: "fontawesome" !important;
     line-height: 1;
@@ -49,7 +49,7 @@ figure.highlight {
     /* line numbers*/
     &.gutter {
       padding-right: 1em;
-      color: $light-gray;
+      color: rgba($muted-text-color, 0.5);
     }
   }
 
@@ -62,7 +62,7 @@ figure.highlight {
 
 /*
    Solarized Light
-   https://ethanschoonover.com/solarized
+   http://ethanschoonover.com/solarized
 
    SOLARIZED HEX      ROLE
    --------- -------- ------------------------------------------

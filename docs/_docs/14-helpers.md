@@ -57,7 +57,7 @@ The Liquid based taxonomy archives found amongst the demo pages rely on this hel
 | Description                   |                          |                             |
 | -----------                   | ------------------------ | --------------------------- |
 | All posts grouped by category | [Source][category-array] | [Demo][category-array-demo] |
-| All posts grouped by tags     | [Source][tag-array]      | [Demo][tag-array-demo]      |
+| All posts grouped by tag     | [Source][tag-array]      | [Demo][tag-array-demo]      |
 
 [category-array]: https://github.com/{{ site.repository }}/blob/master/docs/_pages/category-archive.html
 [category-array-demo]: {{ "/categories/" | absolute_url }}
@@ -272,7 +272,7 @@ foo:
     url: /link-1-page-url/
 
   - title: "Link 2 Title"
-    url: https://external-link.com
+    url: http://external-link.com
 
   - title: "Link 3 Title"
     url: /link-3-page-url/

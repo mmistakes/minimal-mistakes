@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 2em 0 0.5em;
   line-height: 1.2;
   font-family: $header-font-family;
-  /* font-weight: bold; */
+  font-weight: bold;
 }
 
 h1 {
@@ -118,7 +118,12 @@ a {
 
   &:hover,
   &:active {
+    color: $link-color-hover;
     outline: 0;
+  }
+
+  &:visited {
+    color: $link-color-visited;
   }
 }
 
@@ -141,7 +146,7 @@ td > code {
   padding-bottom: 0.1rem;
   font-size: $type-size-6;
   background: $code-background-color;
-  border: 1px solid $lighter-gray;
+  border: 1px solid $border-color;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
 
@@ -200,12 +205,6 @@ figure {
     -webkit-transition: $global-transition;
     transition: $global-transition;
   }
-// added per https://stackoverflow.com/questions/19331362/using-an-image-caption-in-markdown-jekyll
-// for image captions
-img + em {
-  font-size: .8rem;
-  color: light-grey;
-}
 
   > a {
     display: block;
@@ -242,20 +241,16 @@ img + em {
 
 figcaption {
   margin-bottom: 0.5em;
-  color: mix(#fff, $text-color, 25%);
+  color: $muted-text-color;
   font-family: $caption-font-family;
   font-size: $type-size-6;
 
   a {
-    color: inherit;
-    text-decoration: none;
-    border-bottom: 1px solid $light-gray;
     -webkit-transition: $global-transition;
     transition: $global-transition;
 
     &:hover {
-      color: #000;
-      border-bottom-color: #000;
+      color: $link-color-hover;
     }
   }
 }

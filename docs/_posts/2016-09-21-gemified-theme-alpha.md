@@ -7,7 +7,7 @@ tags:
   - update
 ---
 
-Jekyll [themes distributed as Ruby gems](https://jekyllrb.com/docs/themes/) are finally here to make installing and upgrading much easier. Gone are the days of forking a repo just to "install it". Or dealing with merge conflicts when pulling in upstream commits to "upgrade it".
+Jekyll [themes distributed as Ruby gems](http://jekyllrb.com/docs/themes/) are finally here to make installing and upgrading much easier. Gone are the days of forking a repo just to "install it". Or dealing with merge conflicts when pulling in upstream commits to "upgrade it".
 
 {% include toc title="Getting Started" %}
 
@@ -24,7 +24,7 @@ If you're migrating a site already using Minimal Mistakes and haven't customized
 
 Remove `_includes`, `_layouts`, `_sass`, `assets` folders and files within. You won't need these anymore as they're bundled in the theme.
 
-If you customized any of these then leave them alone and only remove the untouched ones. If setup correctly your modified versions should act as [overrides](https://jekyllrb.com/docs/themes/#overriding-theme-defaults) to the versions bundled with the theme.
+If you customized any of these then leave them alone and only remove the untouched ones. If setup correctly your modified versions should act as [overrides](http://jekyllrb.com/docs/themes/#overriding-theme-defaults) to the versions bundled with the theme.
 
 ## Step 2: Update `Gemfile`
 

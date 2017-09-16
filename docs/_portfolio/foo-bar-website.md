@@ -6,7 +6,7 @@ header:
   teaser: /assets/images/foo-bar-identity-th.jpg
 sidebar:
   - title: "Role"
-    image: https://placehold.it/350x250
+    image: http://placehold.it/350x250
     image_alt: "logo"
     text: "Designer, Front-End Developer"
   - title: "Responsibilities"

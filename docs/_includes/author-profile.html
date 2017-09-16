@@ -4,7 +4,7 @@
   {% assign author = site.author %}
 {% endif %}
 
-<div itemscope itemtype="https://schema.org/Person">
+<div itemscope itemtype="http://schema.org/Person">
 
   {% if author.avatar %}
     <div class="author__avatar">
@@ -29,7 +29,7 @@
     <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button>
     <ul class="author__urls social-icons">
       {% if author.location %}
-        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
           <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">{{ author.location }}</span>
         </li>
       {% endif %}
@@ -127,6 +127,14 @@
         <li>
           <a href="https://github.com/{{ author.github }}" itemprop="sameAs">
             <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      {% endif %}
+
+      {% if author.gitlab %}
+        <li>
+          <a href="https://gitlab.com/{{ author.gitlab }}" itemprop="sameAs">
+            <i class="fa fa-fw fa-gitlab" aria-hidden="true"></i> Gitlab
           </a>
         </li>
       {% endif %}

@@ -65,7 +65,7 @@ A Jekyll layout that compresses HTML in pure Liquid. To enable add `layout: comp
 **Note:** Has been known to mangle markup and break JavaScript... especially if inline `// comments` are present. For this reason it has been disabled by default.
 {: .notice--danger}
 
-* [Documentation](https://jch.penibelst.de/)
+* [Documentation](http://jch.penibelst.de/)
 
 ## Single Layout
 
@@ -98,15 +98,10 @@ Essentially the same as `single` with markup adjustments and some modules remove
   <figcaption>List view example.</figcaption>
 </figure>
 
-<figure>
-  <img src="{{ '/assets/images/paragraph-no-indent.png' | absolute_url }}" alt="screen shot of paragraphs with indent style disabled">
-  <figcaption>Example of paragraphs with $paragraph-indent disabled.</figcaption>
-</figure>
-
 Below are sample archive pages you can easily drop into your project, taking care to rename `permalink`, `title`, or the filename to fit your site. Each is 100% compatible with GitHub Pages.
 
 * [All Posts Grouped by Category -- List View][posts-categories]
-* [All Posts Grouped by Tags -- List View][posts-tags]
+* [All Posts Grouped by Tag -- List View][posts-tags]
 * [All Posts Grouped by Year -- List View][posts-year]
 * [All Posts Grouped by Collection -- List View][posts-collection]
 * [Portfolio Collection -- Grid View][portfolio-collection]
@@ -184,7 +179,7 @@ The **Tags Archive** page that responds to urls such as `/tags/#tips` looks some
 ---
 layout: archive
 permalink: /tags/
-title: "Posts by Tags"
+title: "Posts by Tag"
 author_profile: true
 ---
 
@@ -231,7 +226,7 @@ Then adjust the `paginate_path` in **_config.yml** to match.
 
 ```yaml
 paginate_path: /blog/page:num
-```
+``` 
 
 **Note:** Jekyll can only paginate a single `index.html` file. If you'd like to paginate more pages (e.g. category indexes) you'll need the help of a custom plugin. For more pagination related settings check the [**Configuration**]({{ "/docs/configuration/#paginate" | absolute_url }}) section.
 {: .notice--info}
@@ -257,7 +252,7 @@ Feature blocks can be assigned and aligned to the `left`, `right`, or `center` w
 
 To add some visual punch to a post or page, a large full-width header image can be included.
 
-Be sure to resize your header images. `~1280px` is a good width if you aren't [responsively serving up images](https://alistapart.com/article/responsive-images-in-practice). Through the magic of CSS they will scale up or down to fill the container. If you go with something too small it will look like garbage when upscaled, and something too large will hurt performance.
+Be sure to resize your header images. `~1280px` is a good width if you aren't [responsively serving up images](http://alistapart.com/article/responsive-images-in-practice). Through the magic of CSS they will scale up or down to fill the container. If you go with something too small it will look like garbage when upscaled, and something too large will hurt performance.
 
 **Please Note:** Paths for image headers, overlays, teasers, [galleries]({{ "/docs/helpers/#gallery" | absolute_url }}), and [feature rows]({{ "/docs/helpers/#feature-row" | absolute_url }}) have changed and require a full path. Instead of just `image: filename.jpg` you'll need to use the full path eg: `image: /assets/images/filename.jpg`. The preferred location is now `/assets/images/`, but can be placed elsewhere or external hosted. This all applies for image references in `_config.yml` and `author.yml` as well.
 {: .notice--danger}
@@ -275,7 +270,15 @@ For externally hosted images include the full image path instead of just the fil
 
 ```yaml
 header:
-  image: https://some-site.com/assets/images/image.jpg
+  image: http://some-site.com/assets/images/image.jpg
+```
+
+To provide a custom alt tag for screen readers:
+
+```yaml
+header:
+  image: /assets/images/unsplash-image-1.jpg
+  image_description: "A description of the image"
 ```
 
 To include a caption or attribution for the image:
@@ -383,7 +386,7 @@ defaults:
 
 The theme comes pre-built with a selection of links for the most common social media networks. These are all optional and can be [assigned in `_config.yml`]({{ "/docs/configuration/" | absolute_url }}).
 
-To add more links you'll need to crack open [`_includes/author-profile-custom-links.html`](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/author-profile-custom-links.html) and add the appropriate `<li>` markup shown below.
+To add more links you'll need to crack open [`_includes/author-profile-custom-links.html`](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/author-profile-custom-links.html) and add the appropriate `<li>` markup shown below. 
 
 **Please note:** Links added here will appear after the ones in [`_includes/author-profile.html`](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/author-profile.html). If you'd like to change the order of appearance you'll need to edit that file directly.
 {: .notice--info}
@@ -401,7 +404,7 @@ To add more links you'll need to crack open [`_includes/author-profile-custom-li
 To add a new link you'll need three things:
 
 1. Destination URL
-2. [Font Awesome icon](https://fontawesome.io/icons/) (`fa-` class)
+2. [Font Awesome icon](http://fontawesome.io/icons/) (`fa-` class)
 3. Label for the link
 
 It's up to you if you want to wrap it in a `{% raw %}{% if %} ... {% endif %}{% endraw %}`conditional and add a variable to `_config.yml`. If you don't plan to change it then hard-coding the string is perfectly acceptable.
@@ -409,7 +412,7 @@ It's up to you if you want to wrap it in a `{% raw %}{% if %} ... {% endif %}{% 
 Let's run through how you'd add a new link that points to a Reddit profile. Starting with the three things from above:
 
 1. `https://www.reddit.com/user/username`
-2. [`fa-reddit`](https://fontawesome.io/icon/reddit/)
+2. [`fa-reddit`](http://fontawesome.io/icon/reddit/)
 3. `Reddit`
 
 And plug them into the appropriate locations:
@@ -442,16 +445,16 @@ Simply add a `color` declaration and the corresponding hex code.
 
 ```scss
 .social-icons {
-
+  
   .fa-reddit {
     color: #ff4500;
   }
 }
-```
+``` 
 
 ![Reddit link in author profile with color]({{ "/assets/images/mm-author-profile-reddit-color.png" | absolute_url }})
 
-**ProTip:** For bonus points you can add it as a Sass `$variable` that you set in [`_variables.scss`](https://github.com/mmistakes/minimal-mistakes/blob/master/_sass/_variables.scss) like the other ["brand" colors](https://brandcolors.net/). You'll need to add this file to `/_sass/` as well if you're using the Ruby Gem version of the theme.
+**ProTip:** For bonus points you can add it as a Sass `$variable` that you set in [`_variables.scss`](https://github.com/mmistakes/minimal-mistakes/blob/master/_sass/_variables.scss) like the other ["brand" colors](http://brandcolors.net/). You'll need to add this file to `/_sass/` as well if you're using the Ruby Gem version of the theme.
 {: .notice--info}
 
 **Please please please** don't submit [pull requests]({{ "/docs/contributing/" | absolute_url }}) adding in support for "missing" social media links. I'm trying to keep things down to the minimum (hence the theme's name) and have no interest in merging such PRs :expressionless:.
@@ -473,7 +476,7 @@ Multiple blocks can also be added by following the example below:
 ```yaml
 sidebar:
   - title: "Title"
-    image: https://placehold.it/350x250
+    image: http://placehold.it/350x250
     image_alt: "image"
     text: "Some text here."
   - title: "Another Title"
@@ -503,7 +506,7 @@ To start, add a new key to `_data/navigation.yml`. This will be referenced later
 
 **Sample sidebar menu links:**
 
-```yaml
+```yaml 
 docs:
   - title: Getting Started
     children:
@@ -597,7 +600,7 @@ The important parts to change are:
 
 1. Share point URL *eg. `https://www.reddit.com/submit?url=`
 2. Link `title`
-3. [Font Awesome icon](https://fontawesome.io/icons/) (`fa-` class)
+3. [Font Awesome icon](http://fontawesome.io/icons/) (`fa-` class)
 4. Link label
 
 ![Reddit social share link button]({{ "/assets/images/mm-social-share-links-reddit-gs.png" | absolute_url }})
@@ -615,7 +618,7 @@ $social:
 (reddit, #ff4500;)
 ```
 
-**ProTip:** For bonus points you can add it as a Sass `$variable` that you set in `_variables.scss` like the other ["brand" colors](https://brandcolors.net/).
+**ProTip:** For bonus points you can add it as a Sass `$variable` that you set in `_variables.scss` like the other ["brand" colors](http://brandcolors.net/).
 {: .notice--info}
 
 Add the new `.btn--reddit` class to the `<a>` element from earlier, [compile `main.css`]({{ "/docs/stylesheets/" | absolute_url }}) and away you go.

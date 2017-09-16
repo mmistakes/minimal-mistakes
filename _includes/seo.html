@@ -112,7 +112,7 @@
 {% if site.og_image %}
   <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
+      "@context": "http://schema.org",
       "@type": "Organization",
       "url": {{ seo_url | jsonify }},
       "logo": {{ site.og_image | absolute_url | jsonify }}
@@ -123,7 +123,7 @@
 {% if site.social %}
   <script type="application/ld+json">
     {
-      "@context" : "https://schema.org",
+      "@context" : "http://schema.org",
       "@type" : "{% if site.social.type %}{{ site.social.type }}{% else %}Person{% endif %}",
       "name" : "{{ site.social.name | default: site.name }}",
       "url" : {{ seo_url | jsonify }},

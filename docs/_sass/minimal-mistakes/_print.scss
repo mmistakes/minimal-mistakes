@@ -15,19 +15,20 @@
   }
 
   html {
-    font-size: 16px;
     margin: 0;
     padding: 0;
+    min-height: auto !important;
+    font-size: 16px;
   }
 
   body {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
+    margin: 0 auto;
     background: #fff !important;
     color: #000 !important;
     font-size: 1rem;
     line-height: 1.5;
-    margin: 0 auto;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
 
@@ -173,7 +174,7 @@
     word-wrap: break-word;
   }
 
-  a[href^='https://']:after,
+  a[href^='http://']:after,
   a[href^='https://']:after,
   a[href^='ftp://']:after {
     content: " (" attr(href) ")";
@@ -183,6 +184,16 @@
   abbr[title]:after,
   acronym[title]:after {
     content: " (" attr(title) ")";
+  }
+
+  #main {
+    max-width: 100%;
+  }
+
+  .page {
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
 
   .page-break,
@@ -228,11 +239,14 @@
   .pagination,
   .ads,
   .page__footer,
+  .page__comments-form,
   .author__avatar,
   .author__content,
   .author__urls-wrapper,
   .nav__list,
+  .sidebar,
   .adsbygoogle {
     display: none !important;
+    height: 1px !important;
   }
 }

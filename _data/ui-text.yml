@@ -78,17 +78,17 @@ es: &DEFAULT_ES
   email_label                : "Email"
   recent_posts               : "Entradas recientes"
   undefined_wpm              : "Parametro words_per_minute (Palabras por minuto) no definido en _config.yml"
-  comment_form_info          :
-  comment_form_comment_label :
-  comment_form_md_info       :
-  comment_form_name_label    :
-  comment_form_email_label   :
-  comment_form_website_label :
-  comment_btn_submit         :
-  comment_btn_submitted      :
-  comment_success_msg        :
-  comment_error_msg          :
-  loading_label              :
+  comment_form_info          : "Su dirección de correo no será publicada. Se han resaltado los campos requeridos"
+  comment_form_comment_label : "Comentario"
+  comment_form_md_info       : "Markdown está soportado."
+  comment_form_name_label    : "Nombre"
+  comment_form_email_label   : "Dirección de E-mail"
+  comment_form_website_label : "Sitio web (opcional)"
+  comment_btn_submit         : "Enviar Commentario"
+  comment_btn_submitted      : "Enviado"
+  comment_success_msg        : "Gracias por su comentario!, Este se visualizará en el sitio una vez haya sido aprobado"
+  comment_error_msg          : "Lo sentimos, ha ocurrido un error al enviar su comentario. Por favor asegurese que todos los campos han sido diligenciados e intente de nuevo"
+  loading_label              : "Cargando..."
 es-ES:
   <<: *DEFAULT_ES
 es-CO:
@@ -322,12 +322,12 @@ zh: &DEFAULT_ZH
   toc_label                  : "在本页上"
   ext_link_label             : "直接链接"
   less_than                  : "少于"
-  minute_read                : "分钟 阅读"
+  minute_read                : "分钟读完"
   share_on_label             : "分享"
   meta_label                 :
   tags_label                 : "标签:"
   categories_label           : "分类:"
-  date_label                 : "最新的:"
+  date_label                 : "更新时间:"
   comments_label             : "留下评论"
   comments_title             : "评论"
   more_label                 : "了解更多"
@@ -708,7 +708,7 @@ sv-SE:
   <<: *DEFAULT_SV
 sv-FI:
   <<: *DEFAULT_SV
- 
+
 # Dutch
 # -----------------
 nl: &DEFAULT_NL
@@ -796,6 +796,92 @@ id: &DEFAULT_ID
   loading_label              : "Sedang meload..."
 id-ID:
   <<: *DEFAULT_ID
+
+# Vietnamese
+# -----------------
+vi: &DEFAULT_VI
+  page                       : "Trang"
+  pagination_previous        : "Trước"
+  pagination_next            : "Sau"
+  breadcrumb_home_label      : "Trang chủ"
+  breadcrumb_separator       : "/"
+  menu_label                 : "Menu"
+  toc_label                  : "Tại trang này"
+  ext_link_label             : "Đường dẫn trực tiếp"
+  less_than                  : "nhỏ hơn"
+  minute_read                : "phút đọc"
+  share_on_label             : "Chia sẻ tại"
+  meta_label                 :
+  tags_label                 : "Nhãn:"
+  categories_label           : "Chủ đề:"
+  date_label                 : "Cập nhật:"
+  comments_label             : "Để lại bình luận"
+  comments_title             : "Bình luận"
+  more_label                 : "Mở rộng"
+  related_label              : "Có thể bạn cũng thích"
+  follow_label               : "Theo dõi:"
+  feed_label                 : "Feed"
+  powered_by                 : "Được hỗ trợ bởi"
+  website_label              : "Website"
+  email_label                : "Email"
+  recent_posts               : "Bài viết mới"
+  undefined_wpm              : "Chưa định nghĩa thông số words_per_minute tại _config.yml"
+  comment_form_info          : "Email của bạn sẽ được giữ bí mật. Các phần bắt buộc được đánh dấu."
+  comment_form_comment_label : "Bình luận"
+  comment_form_md_info       : "Hỗ trợ Markdown."
+  comment_form_name_label    : "Tên"
+  comment_form_email_label   : "Địa chỉ email"
+  comment_form_website_label : "Website (không bắt buộc)"
+  comment_btn_submit         : "Gửi bình luận"
+  comment_btn_submitted      : "Đã được gửi"
+  comment_success_msg        : "Cảm ơn bạn đã bình luận! Bình luận sẽ xuất hiện sau khi được duyệt."
+  comment_error_msg          : "Rất tiếc, có lỗi trong việc gửi bình luận. Hãy đảm bảo toàn bộ các phần bắt buộc đã được điền đầy đủ và thử lại."
+  loading_label              : "Đang tải..."
+vi-VN:
+  <<: *DEFAULT_VI
+
+# Danish
+# ------
+da: &DEFAULT_DA
+  page                       : "Side"
+  pagination_previous        : "Forrige"
+  pagination_next            : "Næste"
+  breadcrumb_home_label      : "Home"
+  breadcrumb_separator       : "/"
+  menu_label                 : "Vis/skjul menu"
+  toc_label                  : "På denne side"
+  ext_link_label             : "Direkte link"
+  less_than                  : "mindre end"
+  minute_read                : "minutters læsning"
+  share_on_label             : "Del på"
+  meta_label                 :
+  tags_label                 : "Nøgleord:"
+  categories_label           : "Kategorier:"
+  date_label                 : "Opdateret:"
+  comments_label             : "Skriv en kommentar"
+  comments_title             : "Kommentarer"
+  more_label                 : "Lær mere"
+  related_label              : "Måske kan du også lide"
+  follow_label               : "Følg:"
+  feed_label                 : "Feed"
+  powered_by                 : "Drives af"
+  website_label              : "Website"
+  email_label                : "E-mail"
+  recent_posts               : "Seneste indlæg"
+  undefined_wpm              : "Parameteren words_per_minute er ikke defineret i _config.yml"
+  comment_form_info          : "Din e-mail bliver ikke offentliggjort. Obligatoriske felter er markeret"
+  comment_form_comment_label : "Kommentar"
+  comment_form_md_info       : "Markdown er understøttet."
+  comment_form_name_label    : "Navn"
+  comment_form_email_label   : "E-mail"
+  comment_form_website_label : "Website (frivillig)"
+  comment_btn_submit         : "Send kommentar"
+  comment_btn_submitted      : "Sendt"
+  comment_success_msg        : "Tak for din kommentar! Den bliver vist på siden, så snart den er godkendt."
+  comment_error_msg          : "Desværre skete der en fejl. Prøv igen, mens du sørger for at alle obligatoriske felter er udfyldt."
+  loading_label              : "Indlæser..."
+da-DK:
+  <<: *DEFAULT_DA
 
 # Another locale
 # --------------
