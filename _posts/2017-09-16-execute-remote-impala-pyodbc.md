@@ -12,9 +12,9 @@ I love using Python for data science. The language is simple and elegant, and a 
 
 I also love using [Impala](https://impala.incubator.apache.org/). With Impala, unlike with [Hive](https://hive.apache.org/), I don't have to wait for several minutes to simply get the maximum value in a field. What I don't love, however, is using `impala-shell` to execute Impala queries on the command line. Although there are several tools such as [DbVisualizer](https://www.dbvis.com/) that allow connecting to Impala via JDBC and viewing results in a user-friendly tabular format, they restrict data processing to SQL, and SQL is usually not the language of choice for serious wrangling or analysis of Big Data. 
 
-In this post, I discuss how to connect to a remote Impala host and execute queries using `pyodbc`, and convert the results into a `pandas` `DataFrame` for analysis. I use Jupyter Notebook, but you can use your favorite IDE.
+In this post, I discuss how to connect to a remote Impala daemon and execute queries using `pyodbc`, and convert the results into a `pandas` `DataFrame` for analysis. I use Jupyter Notebook, but you can use your favorite IDE.
 
-First, you need to download the [Cloudera Impala ODBC Driver](https://www.cloudera.com/downloads/connectors/impala/odbc/2-5-39.html) and set up an ODBC data source that points to your Impala host. I'm not going to go into the details of the setup here; you can find detailed information in the [Cloudera ODBC Driver documentation](https://www.cloudera.com/documentation/other/connectors/impala-odbc/latest.html). 
+First, you need to download the [Cloudera Impala ODBC Driver](https://www.cloudera.com/downloads/connectors/impala/odbc/2-5-39.html) and set up an ODBC data source that points to your Impala daemon. I'm not going to go into the details of the setup here; you can find detailed information in the [Cloudera ODBC Driver documentation](https://www.cloudera.com/documentation/other/connectors/impala-odbc/latest.html). 
 
 Once you have the ODBC source set up and tested, it's time to connect and start writing queries! The code below shows a minimal example of how a simple query can be executed remotely, and how the results can be fetched into a `pandas` `DataFrame`. 
 
@@ -30,7 +30,7 @@ def as_pandas_DataFrame(cursor);
     return pandas.DataFrame([dict(zip(names, row)) for row in cursor], columns=names)
 
 # Configuration settings for the ODBC connection
-cfg = {'DSN': '<DSN_name>', 'host': '<remote_impala_host>', 
+cfg = {'DSN': '<DSN_name>', 'host': '<remote_impala_daemon>', 
         'port': '<port_number_impala_daemon>', 
         'username': '<username>', 'password': '<password>'}
 
