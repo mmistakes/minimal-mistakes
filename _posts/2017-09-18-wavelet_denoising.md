@@ -1,16 +1,13 @@
 ---
-title: "Wavelet Denoising: a basic demonstration"
+title: "Wavelet Denoising for gravitational wave detection"
 modified:
 categories: blog
-excerpt: "???"
+excerpt: "a basic demonstration with simulated data"
 tags: [research, ligo]
-date: 2017-09-15
+date: 2017-09-18
 header:
-  teaser: /images/wavelet_denoising/??.png
+  teaser: /images/wavelet_denoising/wavelet_denoising_basics_34_1.png
 ---
-<script type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML
-</script>
 
 For this post I'm taking you through a conceptual demonstration of the `FastBurst` algorithm to find gravitational wave (GW) bursts in LIGO data.
 This analysis uses no *a priori* knowledge of GW waveforms.
