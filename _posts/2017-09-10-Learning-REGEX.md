@@ -223,4 +223,4 @@ With the Powershell built-in regex function -match() i wasn't able to do this.
 
 The output of the script looks like this:
 
-![regex]({{site.baseurl}}/assets/images/learningregex/regex.png)
+![regex]({{site.baseurl}}/assets/images/LearningREGEX/regex.png)
