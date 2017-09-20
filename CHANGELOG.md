@@ -1,3 +1,9 @@
+## Unreleased
+
+### Enhancements
+
+- Add `alt` description to avatar image. [#1226](https://github.com/mmistakes/minimal-mistakes/pull/1226)
+
 ## [4.6.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.6.0)
 
 ### Enhancements
