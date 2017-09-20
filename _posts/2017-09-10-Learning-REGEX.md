@@ -6,7 +6,7 @@ Tags: 'PS, Scrape, REGEX'
 published: true
 date: '2017-09-10'
 header:
-  image: /assets/images/france01_1920x500.jpg
+  image: /assets/images/headers/regex.png
 ---
 ## Short introduction
 So at our head branch, we have what's called a **service monitor**.
