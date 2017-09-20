@@ -1,0 +1,8 @@
+{% capture presentation_id %}{{ page.header.google_presentation.id }}{% endcapture %}
+{% capture presentation_start %}{{ page.header.google_presentation.start }}{% endcapture %}
+{% capture presentation_loop %}{{ page.header.google_presentation.loop }}{% endcapture %}
+{% capture presentation_delay %}{{ page.header.google_presentation.delay }}{% endcapture %}
+{% capture presentation_width %}{{ page.header.google_presentation.width }}{% endcapture %}
+{% capture presentation_height %}{{ page.header.google_presentation.height }}{% endcapture %}
+
+{% include google_presentation id=presentation_id start=presentation_start loop=presentation_loop delay=presentation_delay width=presentation_width height=presentation_height %}

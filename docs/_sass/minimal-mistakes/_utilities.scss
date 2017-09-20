@@ -518,3 +518,14 @@ a.reversefootnote {
     position: static;
   }
 }
+
+/*
+   Responsive Google Presentation Embed
+      as seen in http://dev-notes.eu/2016/09/embed-google-slides-in-jekyll/
+      ========================================================================== */
+
+.responsive-google-presentation-container {
+  iframe {
+    max-width: 100%;
+  }
+}
