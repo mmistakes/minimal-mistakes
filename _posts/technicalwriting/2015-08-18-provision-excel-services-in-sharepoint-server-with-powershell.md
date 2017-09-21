@@ -3,6 +3,7 @@ title: "Provision Excel Services in Sharepoint Server with Powershell"
 excerpt: &excerpt "How to provision Excel Services using PowerShell cmdlets with 
 each step explained, leaving you with a complete script to setup Excel 
 Services in SharePoint."
+modified: 2017-09-20
 category: technicalwriting
 author_profile: false
 related: false
@@ -87,6 +88,7 @@ You should be familiar with the following technologies, at least to a small exte
 
     a.  Start –> All Programs –> Microsoft SharePoint 2010 Products –> 
         SharePoint 2010 Management Shell 
+        
     b.  Alternatively, you can open a regular PowerShell prompt and add 
         the Microsoft.SharePoint.PowerShell snap-in with the following command: 
 
