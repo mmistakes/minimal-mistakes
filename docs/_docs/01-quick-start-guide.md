@@ -2,7 +2,7 @@
 title: "Quick-Start Guide"
 permalink: /docs/quick-start-guide/
 excerpt: "How to quickly install and setup Minimal Mistakes for use with GitHub Pages."
-last_modified_at: 2017-09-01T09:27:53-04:00
+last_modified_at: 2017-09-21T16:16:40-04:00
 redirect_from:
   - /theme-setup/
 ---
@@ -130,9 +130,10 @@ Edit `_config.yml`. Then:
 
 If you're migrating a site already using Minimal Mistakes and haven't customized any of the theme files things upgrading will be easier for you.
 
-Start by removing `_includes`, `_layouts`, `_sass`, `assets` folders and all files within.
+Start by removing the following folders: `_includes`, `_layouts`, `_sass`, `assets/css`, `assets/fonts`, `assets/js` and the files within. You won't need these anymore as they're bundled with the theme gem --- unless you intend to [override them](http://jekyllrb.com/docs/themes/#overriding-theme-defaults).
 
-You won't need these anymore as they're bundled with the theme gem.
+**Note:** When clearing out the `assets` folder be sure to leave any files you've added. This includes images, CSS, or JavaScript that aren't already [bundled in the theme](https://github.com/mmistakes/minimal-mistakes/tree/master/assets). 
+{: .notice--warning}
 
 From `v4.5.0` onwards, you don't have to maintain a copy of the default data files viz. `_data/ui-text.yml` and `_data/navigation.yml` either.
 The default files are read-in automatically via the [`jekyll-data`](https://github.com/ashmaroli/jekyll-data) plugin.
