@@ -1,6 +1,7 @@
 ---
 title: Talks
 permalink: /talks
+published: true
 ---
 
 * [IoT meets Serverless](/assets/slides/iot_meets_serverless.pdf)
@@ -11,6 +12,6 @@ permalink: /talks
 
 * [Write code for humans, not machines](/assets/pdfs/writeCodeForHumans.pdf)
 	* Any average programmer can write code by sitting hours and hours, pushing themselves through the sleepless nights but what it takes to write a better readable code?.  
-	Forget about the design patterns, I will be talking ground zero from naming variables to handling errors in your python code. After the talk the audience will know how to get started with good programming habits and how not to annoy the code readers/maintainers:)
+	Forget about the design patterns, I will be talking ground zero from naming variables to handling errors in your python code. After the talk the audience will know how to get started with good programming habits and how not to annoy the code readers/maintainers:)      
 	*[Slides](/assets/pdfs/writeCodeForHumans.pdf)
 	* Events : [ChennaiPy meetup, July 2017](http://chennaipy.org/)
