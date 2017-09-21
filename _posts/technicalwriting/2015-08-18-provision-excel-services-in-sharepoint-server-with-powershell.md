@@ -18,15 +18,15 @@ featured:
 
 _Before reading..._
 
-* _Target Audience:_ This article targets IT Pros, DevOps and System 
-Administrators working in a SharePoint Server environment. 
-* _Scenario:_ While providing a full PowerShell script to provision (setup) 
-Excel Services, it also explains each section of the process, line by 
-line, showing how the code pieces fit together. 
-* _Sources:_ I wrote 100% of the content, including the PowerShell code, 
-without an editor providing input. The information was derived from my 
-experience as a SDET (software development engineer in test) with Excel 
-Services at Microsoft. 
+*   _Target Audience:_ This article targets IT Pros, DevOps and System 
+    Administrators working in a SharePoint Server environment. 
+*   _Scenario:_ While providing a full PowerShell script to provision (setup) 
+    Excel Services, it also explains each section of the process, line by 
+    line, showing how the pieces of code fit together. 
+*   _Sources:_ I wrote 100% of the content, including the PowerShell code, 
+    without an editor providing input. The information was derived from my 
+    experience as a SDET (software development engineer in test) with Excel 
+    Services at Microsoft. 
 
 _...and here's the sample._
 
@@ -37,67 +37,64 @@ SharePoint administrators are able to setup, deploy and configure
 running on [SharePoint Server 2010](https://msdn.microsoft.com/en-us/library/office/dd776256(v=office.12).aspx) 
 using [PowerShell](http://www.microsoft.com/powershell). In this article, 
 you’ll see how to provision Excel Services using PowerShell cmdlets 
-(pronounced “command-lets”). Each step will be explained and, in the end, 
-you’ll have a complete script to setup Excel Services in SharePoint.
+(pronounced “command-lets”). Each step will be explained and you'll
+have a complete script to setup Excel Services in SharePoint.
 
 The purpose of this PowerShell script will be to:
 
-1. Remove any existing occurrences of Excel Services 
-2. Remove the existing Internet Information Server (IIS) Application Pool used by Excel Services 
-3. Provision (setup) Excel Services with the domain user account running the script 
-4. Start Excel Services 
+1.  Remove any existing occurrences of Excel Services. 
+2.  Remove the existing Internet Information Server (IIS) Application Pool used by Excel Services. 
+3.  Provision (setup) Excel Services with the domain user account running the script. 
+4.  Start Excel Services. 
 
 ## Contents ##
 
-1. [Prerequisites](#prerequisites) 
-2. [Getting Ready](#getting-ready) 
-3. [The Script &ndash; Set Constants](#the-script--set-constants) 
-4. [The Script – Initial Clean Up](#the-script--initial-clean-up) 
-5. [The Script – Add SharePoint Managed Account](#the-script--add-sharepoint-managed-account) 
-6. [The Script – Provision Excel Services](#the-script--provision-excel-services) 
-7. [The Script – Run Excel Services](#the-script-run-excel-services) 
-8. [The Full Script](#the-full-script) 
-9. [Summary](#summary) 
+1.  [Prerequisites](#prerequisites) 
+2.  [Getting Ready](#getting-ready) 
+3.  [The Script &ndash; Set Constants](#the-script--set-constants) 
+4.  [The Script – Initial Clean Up](#the-script--initial-clean-up) 
+5.  [The Script – Add SharePoint Managed Account](#the-script--add-sharepoint-managed-account) 
+6.  [The Script – Provision Excel Services](#the-script--provision-excel-services) 
+7.  [The Script – Run Excel Services](#the-script-run-excel-services) 
+8.  [The Full Script](#the-full-script) 
+9.  [Summary](#summary) 
 10. [Resources](#resources)
 
 ## Prerequisites ##
 
-Before we proceed, you must have a SharePoint Server 2010 farm and the 
-ability to login as a member of the 
+Before we proceed, you must have a SharePoint Server 2010 farm and be a member of the 
 [SharePoint Farm Administrators group](https://msdn.microsoft.com/en-us/library/Cc767417.aspx). 
-It is assumed that you are familiar with the following technologies, at 
-least to a small extent.
+You should be familiar with the following technologies, at least to a small extent.
 
-* [Excel Services](https://msdn.microsoft.com/en-us/library/office/ms517343(v=office.14).aspx) &ndash; 
-Allows you to view and edit [Excel](http://www.microsoft.com/excel) workbooks 
-in your browser that are located in SharePoint document libraries. 
-* [SharePoint Server 2010](https://msdn.microsoft.com/en-us/library/ee557323(office.14).aspx) &ndash; 
-The server platform required by Excel Services. 
-    * Previously, the version of SharePoint 2007 that ran Excel Services 
-    was called Microsoft Office SharePoint Server (MOSS). 
-* [Internet Information Systems (IIS)](https://technet.microsoft.com/en-us/library/cc753433(v=ws.10).aspx) 
-&ndash; Web server and platform that runs on Windows Server 2008. 
-* [PowerShell](http://www.microsoft.com/powershell) &ndash; A scripting 
-language and platform used by Windows operating systems.
+*   [Excel Services](https://msdn.microsoft.com/en-us/library/office/ms517343(v=office.14).aspx) &ndash; 
+    Allows you to view and edit [Excel](http://www.microsoft.com/excel) workbooks 
+    in your browser that are located in SharePoint document libraries. 
+*   [SharePoint Server 2010](https://msdn.microsoft.com/en-us/library/ee557323(office.14).aspx) &ndash; 
+    The server platform required by Excel Services. 
+    *   The previous version of SharePoint (2007) that ran Excel Services 
+        was called Microsoft Office SharePoint Server (MOSS). 
+*   [Internet Information Systems (IIS)](https://technet.microsoft.com/en-us/library/cc753433(v=ws.10).aspx) 
+    &ndash; Web server and platform that runs on Windows Server 2008. 
+*   [PowerShell](http://www.microsoft.com/powershell) &ndash; A scripting 
+    language and platform used by Windows operating systems.
 
 ## Getting Ready ##
 
-1. Log in to your SharePoint server as a user who is a member of the Farm 
-Administrators group. If you have a multiple-server farm configured, any 
-server in the farm will work. 
-2. Open PowerShell with the SharePoint snap-in: 
+1.  Log in to your SharePoint server. You must be a member of the Farm 
+    Administrators group. If you have a multiple-server farm configured, any 
+    server in the farm will work. 
+2.  Open PowerShell with the SharePoint snap-in.
 
-    a. Start –> All Programs –> Microsoft SharePoint 2010 Products –> 
-    SharePoint 2010 Management Shell 
-
-    b. Alternatively, you can open a regular PowerShell prompt and add 
-    the Microsoft.SharePoint.PowerShell snap-in with the following command: 
+    a.  Start –> All Programs –> Microsoft SharePoint 2010 Products –> 
+        SharePoint 2010 Management Shell 
+    b.  Alternatively, you can open a regular PowerShell prompt and add 
+        the Microsoft.SharePoint.PowerShell snap-in with the following command: 
 
         Add-PSSnapin Microsoft.SharePoint.PowerShell
 
 ## The Script – Set Constants ##
 
-In order to run the script, some required variables need to be set.
+In order to run the script, some variables need to be set.
 
 ```powershell
 6 ##### Set constants
@@ -141,10 +138,10 @@ Service Application Proxies with Excel Services in the name. These are
 piped `|` into the `Remove-SPServiceApplicationProxy` cmdlet, which deletes 
 them.
 
-* Service Application Proxies are the virtual link between Web Applications, 
-such as Excel Services, and the SharePoint service. They understand the 
-load-balancing scheme for a service, communicate to service machine 
-instance(s) and enable inter-farm services.
+*   Service Application Proxies are the virtual link between Web Applications, 
+    such as Excel Services, and the SharePoint service. They understand the 
+    load-balancing scheme for a service, communicate to service machine 
+    instance(s) and enable inter-farm services.
 
 _Line 15_ &ndash; `Get-SPExcelServiceApplication` retrieves any Excel Service 
 Applications and pipes them into the `Remove-SPServiceApplication` cmdlet, 
@@ -152,7 +149,7 @@ which deletes them.
 
 _Line 17_ &ndash; `Remove-SPServiceApplicationPool` deletes the SharePoint 
 Service Application Pool and IIS Application Pool named ExcelServicesAppPool. 
-That value is contained in $IISAppPool, which was defined on line 9.
+That value is contained in `$IISAppPool`, which was defined on line 9.
 
 ## The Script – Add SharePoint Managed Account ##
 
@@ -161,7 +158,7 @@ and web applications, it must be registered with SharePoint as a Managed
 Account. In this example, you’ll be using the account you’re logged in as 
 to run Excel Services.
 
-_Note, you can use a different Active Directory account to run Excel Services, but how to do so is not covered in this guide._
+**Note:** You can use a different Active Directory account to run Excel Services, but how to do so is not covered in this guide.
 
 ```powershell
 19 ##### Add user account as a SPManagedAccount, if it isn't already, so we can use it to run the application pool
@@ -178,24 +175,25 @@ _Note, you can use a different Active Directory account to run Excel Services, b
 _Line 20_ &ndash; Determine if the current logged in user, as defined 
 earlier in line 7, is registered in SharePoint as a Managed Account. 
 This is done by searching for the user name with `Get-SPManagedAccount` 
-and creating a SPManagedAccount object variable called $ManagedAccount.
+and creating a SPManagedAccount object variable called `$ManagedAccount`.
 
 _Line 22_ &ndash; If the Managed Account **is not found** (meaning that 
-$ManagedAccount is null) _OR_ **running under a different user** account 
-(meaning that it’s different than $ServiceAccount), then **add the current 
+`$ManagedAccount` is null) _OR_ **running under a different user** account 
+(meaning that it’s different than `$ServiceAccount`), then **add the current 
 user as a SharePoint Managed Account** (in _lines 25 and 26_). Otherwise, 
 the current user is already registered as a Managed Account with SharePoint 
 and does not need to be added again.
 
-_Line 25_ &ndash; Request the credentials (password) for the current user be 
-typed in manually and create a Credential object.
+_Line 25_ &ndash; Prompt the current user to enter their password in order 
+to create a Credential Object.
 
-_Line 26_ &ndash; `New-SPManagedAccount` creates a new SharePoint Managed Account for the current user.
+_Line 26_ &ndash; `New-SPManagedAccount` creates a new SharePoint Managed 
+Account with the current user's credentials.
 
 ## The Script – Provision Excel Services ##
 
-Create a new instance of Excel Services with a new IIS Application Pool
-, using the constants defined in the beginning of the script.
+Using the constant variables defined in the beginning of the script, create 
+a new instance of Excel Services with a new IIS Application Pool.
 
 ```powershell
 29 ##### Provision Excel Services using a new IIS application pool
@@ -211,7 +209,7 @@ the Excel Service in SharePoint.
 ## The Script – Run Excel Services ##
 
 Now that Excel Service exists on the SharePoint server, it still needs to 
-be started so it can process requests to view and edit Excel workbooks.
+be started so it can process the requests to view and edit Excel workbooks.
 
 ```powershell
 34 ##### Start Excel Services:
@@ -220,19 +218,23 @@ be started so it can process requests to view and edit Excel workbooks.
 ```
 
 _Line 36_ &ndash; Find the SharePoint service that was just created by 
-using `Get-SPServiceInstance` on the server with a piped `|` where clause for a service name that contains Excel. Then run `Start-SPServiceInstance` on the object you just found to start the service running.
+using `Get-SPServiceInstance` with a piped `|` where clause for a service name 
+that contains Excel. Then run `Start-SPServiceInstance` on the object 
+found to start the service running.
 
-_Note: In PowerShell, the pipe `|` carries the results from the first cmdlet to the next one, and so on. Breaking down the cmdlets from line 36, they translate as follows:_
+**Note:** In PowerShell, the pipe `|` carries the results from the first cmdlet to the next one, and so on. Breaking down the cmdlets from line 36, they translate as follows:
 
-* `Get-SPServiceInstance -Server $env:computername` &ndash; Retrieves all SharePoint services running on the local server 
-* `where {$_.TypeName.Contains(‘Excel’)}` &ndash; Reduces the list of services to any that contain the string ‘Excel’ 
-* `Start-SPServiceInstance` &ndash; Starts those SharePoint services found in the previous step, that contain the string ‘Excel’ 
+*   `Get-SPServiceInstance -Server $env:computername` &ndash; Retrieves all SharePoint services running on the local server 
+*   `where {$_.TypeName.Contains(‘Excel’)}` &ndash; Reduces the list of services to those that contain the string ‘Excel’ 
+*   `Start-SPServiceInstance` &ndash; Starts the SharePoint services containing the string ‘Excel’ in the name (found in the previous step)
 
 ## The Full Script ##
 
-Here is the full script! To run this, copy/paste the contents below into a text editor and save it as a .ps1 file (example: ProvisionExcelServices.ps1).
+Here is the full script. To run this, copy/paste the contents below into a text editor and save it as a .ps1 file (example: ProvisionExcelServices.ps1).
 
-_Note: The script must be run from the SharePoint 2010 Management Shell or a PowerShell prompt with the Microsoft.SharePoint.PowerShell add-in loaded (see [Getting Ready](#getting-ready) for details of how to do so)._
+**Note:** The script must be run from the SharePoint 2010 Management Shell or a 
+PowerShell prompt with the Microsoft.SharePoint.PowerShell add-in loaded 
+(see [Getting Ready](#getting-ready) for details).
 
 ```powershell
  1 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -273,7 +275,7 @@ _Note: The script must be run from the SharePoint 2010 Management Shell or a Pow
 36 Get-SPServiceInstance -Server $env:computername | where {$_.TypeName.Contains('Excel')} | Start-SPServiceInstance;
 ```
 
-There is your complete PowerShell script to enable 
+This PowerShell script will enable 
 [Excel Services](https://msdn.microsoft.com/en-us/library/office/ms517343(v=office.14).aspx) 
 on a [SharePoint Server 2010](https://msdn.microsoft.com/en-us/library/office/dd776256(v=office.12).aspx) 
 farm. Please note the requirements listed earlier in [Getting Ready](#getting-ready).
@@ -282,33 +284,33 @@ farm. Please note the requirements listed earlier in [Getting Ready](#getting-re
 
 Through the course of this document, you’ve learned how to:
 
-* Remove a SharePoint service application via PowerShell 
-* Create a new Excel Services SharePoint service application via PowerShell 
-* Start a SharePoint service application via PowerShell 
-* Register an Active Directory user as a SharePoint Managed Account 
-* Understand piping and using the pipe character `|` in PowerShell 
-* Automate the provisioning of Excel Services via PowerShell, increasing efficiency and repeatability
+* Remove a SharePoint service application via PowerShell. 
+* Create a new Excel Services SharePoint service application via PowerShell. 
+* Start a SharePoint service application via PowerShell. 
+* Register an Active Directory user as a SharePoint Managed Account. 
+* Understand piping and using the pipe character `|` in PowerShell. 
+* Automate the provisioning of Excel Services via PowerShell, increasing efficiency and repeatability.
 
 ## Resources ##
 
-* [Excel Services (SharePoint Server 2010)](https://msdn.microsoft.com/en-us/library/office/ms517343(v=office.14).aspx) 
-    * [Getting Started with Excel Services](https://msdn.microsoft.com/en-us/library/office/ms519581(v=office.14).aspx) 
-    * [Excel Services Administration (SharePoint Server 2010)](https://technet.microsoft.com/en-us/library/ee681487(v=office.14).aspx) 
-    * [Manage Excel Services with Windows PowerShell (SharePoint Server 2010)](https://technet.microsoft.com/en-us/library/ff191201(v=office.14).aspx) 
-* [SharePoint Server 2010](https://msdn.microsoft.com/en-us/library/office/dd776256(v=office.12).aspx) 
-    * [Managed Accounts in SharePoint 2010](http://blogs.technet.com/b/wbaer/archive/2010/04/11/managed-accounts.aspx) by Bill Bae 
-* [PowerShell](http://www.microsoft.com/powershell) 
-    * [Windows PowerShell for SharePoint](https://technet.microsoft.com/en-us/library/ee890108.aspx) 
-    * [Excel Services cmdlets in SharePoint Server](https://technet.microsoft.com/en-us/library/ee906545.aspx) 
-* PowerShell cmdlets used in this script:
-    * [Get-SPExcelServiceApplication](https://technet.microsoft.com/en-us/library/ff607559.aspx) 
-    * [Get-SPManagedAccount](https://technet.microsoft.com/en-us/library/ff607835.aspx) 
-    * [Get-SPServiceApplicationProxy](https://technet.microsoft.com/en-us/library/ff607727.aspx) 
-    * [Get-SPServiceInstance](https://technet.microsoft.com/en-us/library/ff607570.aspx) 
-    * [New-SPExcelServiceApplication](https://technet.microsoft.com/en-us/library/ff607809.aspx) 
-    * [New-SPManagedAccount](https://technet.microsoft.com/en-us/library/ff607831.aspx) 
-    * [New-SPServiceApplicationPool](https://technet.microsoft.com/en-us/library/ff607595.aspx) 
-    * [Remove-SPServiceApplication](https://technet.microsoft.com/en-us/library/ff607874.aspx) 
-    * [Remove-SPServiceApplicationPool](https://technet.microsoft.com/en-us/library/ff607921.aspx) 
-    * [Remove-SPServiceApplicationProxy](https://technet.microsoft.com/en-us/library/ff607876.aspx) 
-    * [Start-SPServiceInstance](https://technet.microsoft.com/en-us/library/ff607965.aspx) 
+*   [Excel Services (SharePoint Server 2010)](https://msdn.microsoft.com/en-us/library/office/ms517343(v=office.14).aspx) 
+    *   [Getting Started with Excel Services](https://msdn.microsoft.com/en-us/library/office/ms519581(v=office.14).aspx) 
+    *   [Excel Services Administration (SharePoint Server 2010)](https://technet.microsoft.com/en-us/library/ee681487(v=office.14).aspx) 
+    *   [Manage Excel Services with Windows PowerShell (SharePoint Server 2010)](https://technet.microsoft.com/en-us/library/ff191201(v=office.14).aspx) 
+*   [SharePoint Server 2010](https://msdn.microsoft.com/en-us/library/office/dd776256(v=office.12).aspx) 
+    *   [Managed Accounts in SharePoint 2010](http://blogs.technet.com/b/wbaer/archive/2010/04/11/managed-accounts.aspx) by Bill Bae 
+*   [PowerShell](http://www.microsoft.com/powershell) 
+    *   [Windows PowerShell for SharePoint](https://technet.microsoft.com/en-us/library/ee890108.aspx) 
+    *   [Excel Services cmdlets in SharePoint Server](https://technet.microsoft.com/en-us/library/ee906545.aspx) 
+*   PowerShell cmdlets used in this script:
+    *   [Get-SPExcelServiceApplication](https://technet.microsoft.com/en-us/library/ff607559.aspx) 
+    *   [Get-SPManagedAccount](https://technet.microsoft.com/en-us/library/ff607835.aspx) 
+    *   [Get-SPServiceApplicationProxy](https://technet.microsoft.com/en-us/library/ff607727.aspx) 
+    *   [Get-SPServiceInstance](https://technet.microsoft.com/en-us/library/ff607570.aspx) 
+    *   [New-SPExcelServiceApplication](https://technet.microsoft.com/en-us/library/ff607809.aspx) 
+    *   [New-SPManagedAccount](https://technet.microsoft.com/en-us/library/ff607831.aspx) 
+    *   [New-SPServiceApplicationPool](https://technet.microsoft.com/en-us/library/ff607595.aspx) 
+    *   [Remove-SPServiceApplication](https://technet.microsoft.com/en-us/library/ff607874.aspx) 
+    *   [Remove-SPServiceApplicationPool](https://technet.microsoft.com/en-us/library/ff607921.aspx) 
+    *   [Remove-SPServiceApplicationProxy](https://technet.microsoft.com/en-us/library/ff607876.aspx) 
+    *   [Start-SPServiceInstance](https://technet.microsoft.com/en-us/library/ff607965.aspx) 
