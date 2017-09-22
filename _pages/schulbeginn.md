@@ -61,7 +61,7 @@ nachsehen.<br/><br/>
 {: #portrait}
 
 Wir sind eine zweizügige, [verlässliche Halbtagsgrundschule](/hortbetreuung/#vhg)
-mit rund 300 Kindern, die von 28
+in Spandau mit rund 300 Kindern, die von 28
 Lehrer\*innen und 10 Erzieher\*innen unterrichtet und gefördert werden.
 Verlässlich bedeutet, dass Ihr Kind in der Schulzeit von 7:30 - 13:30 Uhr
 untergebracht ist. Die Betreuung kann kostenpflichtig auf die Zeiten von 6:00

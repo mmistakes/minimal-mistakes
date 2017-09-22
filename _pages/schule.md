@@ -14,8 +14,8 @@ header:
 
 ## Über die Schule
 
-Wir sind eine zweizügige, verlässliche Halbtagsgrundschule die in diesem
-Schuljahr von rund 300 Kindern besucht wird.
+Wir sind eine zweizügige, verlässliche Halbtagsgrundschule in Spandau die in
+diesem Schuljahr von rund 300 Kindern besucht wird.
 
 ## JÜL-Konzept:
 {: #juel_konzept}
