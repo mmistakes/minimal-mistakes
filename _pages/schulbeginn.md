@@ -80,7 +80,7 @@ vierte Klasse (4b) zusammengelegt. Auf der anderen Seite bieten JabL-Klassen
 eine stabile Klassengemeinschaft über die gesamte Grundschulzeit. Sie können bei
 der Anmeldung Ihre Präferenz der Unterrichtsform angeben. -->
 
-Wir bieten schon ab der ersten Klasse eine [Vielzahl an AGs](/ags) an. So wird
+Wir bieten schon ab der ersten Klasse eine [Vielzahl an AGs](/ags/) an. So wird
 z.B. ein Englisch-Kurs angeboten, wo Ihr Kind spielerisch Englisch lernen kann
 (regulär fängt der Englischunterricht in der dritten Klasse an). Wir haben,
 aber auch Sport-, Musik- und Kunstangebote.
