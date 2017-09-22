@@ -174,4 +174,4 @@ November 2014, S. 1-2“).</li>
 
 ## Kontakt
 
-Unsere Kontaktseite finden Sie [hier](/kontakt).
+Unsere Kontaktseite finden Sie [hier](/kontakt/).
