@@ -18,11 +18,11 @@ Forget about the design patterns, I will be talking ground zero from naming vari
 ##### Events : [ChennaiPy meetup, July 2017](http://chennaipy.org/)
 
 
-## [Concurrency vs Parallelism](/assets/pdfs/concurrency_vs_parallelism.pdf)     
+## [Concurrency vs Parallelism](/assets/slides/concurrency_vs_parallelism.pdf)     
 Tasks can be made embarrassingly parallel by crunching up the resources and using all CPU cores. 
 What if your resources are limited, How do we achieve the speed in execution of tasks?. In this talk 
 we will discuss about achieving near parallelism with limited resources but at the same time knowing 
 concurrency is not parallelism using real world examples.       
-##### [Slides](/assets/pdfs/concurrency_vs_parallelism.pdf)
+##### [Slides](/assets/slides/concurrency_vs_parallelism.pdf)
 ##### [Code](https://github.com/DudeWhoCode/talks/tree/master/concurrency_vs_parallelism)
 ##### Events : [ChennaiPy meetup, September 2017](http://chennaipy.org/)
