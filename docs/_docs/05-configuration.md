@@ -315,7 +315,7 @@ Transform user comments into `_data` files that live inside of your GitHub repos
 
 ###### Configure Staticman
 
-Default settings have been provided in `_config.yml`. The important ones to set are  `provider: "staticman"`, `branch`, and `path`. View the [full list of configurations](https://github.com/eduardoboucas/staticman#jekyll-configuration).
+Default settings have been provided in `_config.yml`. The important ones to set are  `provider: "staticman"`, `branch`, and `path`. View the [full list of configurations](https://staticman.net/docs/configuration).
 
 **Note:** Staticman is currently only compatible with GitHub based repositories. [Support for GitLab Pages](https://github.com/eduardoboucas/staticman/issues/22) is planned but not available yet.
 {: .notice--warning} 
