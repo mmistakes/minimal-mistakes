@@ -186,7 +186,6 @@ tr-TR:
   <<: *DEFAULT_TR
 
 # Portuguese
-# -----------------
 pt: &DEFAULT_PT
   page                       : "Página"
   pagination_previous        : "Anterior"
@@ -225,6 +224,9 @@ pt: &DEFAULT_PT
   comment_success_msg        : "Obrigado pelo seu comentário! Será visível no site logo que aprovado."
   comment_error_msg          : "Lamento, ocorreu um erro na sua submissão. Por favor verifique se todos os campos obrigatórios estão corretamente preenchidos e tente novamente."
   loading_label              : "A carregar..."
+pt-PT:
+  <<: *DEFAULT_PT
+
 # Brazilian Portuguese
 pt-BR:
   page                       : "Página"
@@ -253,19 +255,17 @@ pt-BR:
   email_label                : "Email"
   recent_posts               : "Postagens recentes"
   undefined_wpm              : "Parâmetro indefinido em word_per_minute no _config.yml"
-  comment_form_info          :
-  comment_form_comment_label :
-  comment_form_md_info       :
-  comment_form_name_label    :
-  comment_form_email_label   :
-  comment_form_website_label :
-  comment_btn_submit         :
-  comment_btn_submitted      :
-  comment_success_msg        :
-  comment_error_msg          :
-  loading_label              :
-pt-PT:
-  <<: *DEFAULT_PT
+  comment_form_info          : "Seu email não será publicado. Os campos obrigatórios estão marcados"
+  comment_form_comment_label : "Comentário"
+  comment_form_md_info       : "Markdown é suportado."
+  comment_form_name_label    : "Nome"
+  comment_form_email_label   : "Email"
+  comment_form_website_label : "Site (opcional)"
+  comment_btn_submit         : "Enviar Comentário"
+  comment_btn_submitted      : "Enviado"
+  comment_success_msg        : "Obrigado pelo seu comentário! Ele aparecerá no site assim que for aprovado."
+  comment_error_msg          : "Desculpe, ocorreu um erro no envio. Por favor verifique se todos os campos obrigatórios foram preenchidos e tente novamente."
+  loading_label              : "Carregando..."
 
 # Italian
 # -----------------
