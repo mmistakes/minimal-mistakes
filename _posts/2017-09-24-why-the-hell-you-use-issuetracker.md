@@ -2,7 +2,7 @@
 title: 'Why the hell you should use an issue tracker anyways?'
 date: 2017-09-17T14:14:12.952Z
 header:
-  teaser: /assets/images/learning_tweet.png
+  teaser: /assets/images/issuetracker_yoda.jpg
 keywords:
   - developers
   - issuetracker
