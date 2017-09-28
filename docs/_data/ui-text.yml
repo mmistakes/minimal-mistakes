@@ -254,7 +254,7 @@ pt-BR:
   website_label              : "Site"
   email_label                : "Email"
   recent_posts               : "Postagens recentes"
-  undefined_wpm              : "Parâmetro indefinido em word_per_minute no _config.yml"
+  undefined_wpm              : "Parâmetro indefinido em words_per_minute no _config.yml"
   comment_form_info          : "Seu email não será publicado. Os campos obrigatórios estão marcados"
   comment_form_comment_label : "Comentário"
   comment_form_md_info       : "Markdown é suportado."
