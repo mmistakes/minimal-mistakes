@@ -399,7 +399,7 @@ Through this process you:
 8.  Saw how to iterate through folders and subfolders recursively with PowerShell 
 9.  Saw how to change the local folder path format to work with S3 folder format
 
-With this framework in place, you can later expand the script to do a number 
+With this framework in place, you can expand the script to do a number 
 of other things. Such as run once per day with a scheduled task (automate to 
 improve efficiency), delete old folders/files from S3 as they’re no longer 
 used (reducing your S3 storage cost), or only upload new/changed files to S3 
