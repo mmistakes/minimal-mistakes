@@ -184,7 +184,7 @@ timezone: Asia/Calcutta # https://en.wikipedia.org/wiki/List_of_tz_database_time
 
 
 # Plugins (previously gems:)
-plugins:
+plugins_dir:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
@@ -245,7 +245,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: true
       share: true
