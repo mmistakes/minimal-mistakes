@@ -29,29 +29,27 @@ In order to try the examples or to get started for development, you have to setu
 
 
 If you want to try the tutorial by yourself, you can download our example projects source code package (https://github.com/BIG-IoT/example-projects), which gives you a quick start. It contains multiple subprojects, in this tutorial we will use: java-example-consumer and java-example-provider that come as Gradle projects. 
-Download both of these projects and if you haven’t done so yet, install Gradle. We had good experience using the Eclipse plugin “buildship”. So, in Eclipse menu bar choose “Help” -> “Eclipse Marketplace”. Search for “buildship”, search and install ![Buildship Gradle Integration](../tutResources/installGradle.png). You have to accept the license conditions; Eclipse is restarted after that.
+Download both of these projects and if you haven’t done so yet, install Gradle. We had good experience using the Eclipse plugin “buildship”. So, in Eclipse menu bar choose “Help” -> “Eclipse Marketplace”. Search for “buildship”, search and install ![Buildship Gradle Integration](../installGradle.png). You have to accept the license conditions; Eclipse is restarted after that.
 
 
 We recommend that you start from a fresh workspace. This is the case if you just installed Eclipse else just switch to a new workspace. 
 In order to setup the BIG IoT examples as new Java project, proceed as follows:
-Choose “File” -> ![Import](../tutResources/importGradle.png)
-Select ![Gradle\Gradle Project](../tutResources/importGradleProject.png).
+Choose “File” -> ![Import](../importGradle.png)
+Select ![Gradle\Gradle Project](../importGradleProject.png).
 Hit “Next”
-In the ![Project root directory](../tutResources/importGradleProjectRoot.png) text field, set the folder to where the example projects are located. It takes a while until all dependencies are retrieved via Gradle.
+In the ![Project root directory](../importGradleProjectRoot.png) text field, set the folder to where the example projects are located. It takes a while until all dependencies are retrieved via Gradle.
 In the following, you probably receive the question if you want to override the Eclipse project descriptors. Choose 'Overwrite'.
-You have now imported the example projects into ![Eclipse](../tutResources/eclipseExampleProject.png).
+You have now imported the example projects into ![Eclipse](../eclipseExampleProject.png).
 
 ### Registration on the Marketplace
 
 Before you can use the examples you have to create a provider and a consumer first on the BIG IoT Marketplace.
 
-Please visit the Marketplace [here](https://market.big-iot.org) to do that. There you find a yellow login button in the lower left corner. Click it and authenticate with your Google or GitHub account. Then, you’ll find the text “New Organization”. Click it and create your organization. Now, you should see a screen similar to ![this](../tutorialResources/marketplace.png).
-As you can see my organization has the name “Rain Cloud”. Now, we have to create a provider for the demo. Therefore, click on “My Providers” and then on “+ Provider”.Find a good name for your provider and hit “Save”.
-![ProviderScreen](../tutorial/providerscreen.png).
+Please visit the Marketplace [here](https://market.big-iot.org) to do that. There you find a yellow login button in the lower left corner. Click it and authenticate with your Google or GitHub account. Then, you’ll find the text “New Organization”. Click it and create your organization. Now, you should see a screen similar to ![this](../marketplace.png).
+As you can see my organization has the name “Rain Cloud”. Now, we have to create a provider for the demo. Therefore, click on “My Providers” and then on “+ Provider”. Find a good name for your provider and hit ![Save](../providerscreen.png).
 
 Now, it is important, that you transfer the credentials to your example code. This is a two-step process. First we copy the Provider ID to the clipboard. Therefore click on “Copy ID to Clipboard”. Then switch to eclipse and open the provider example. It is located in in the sub-project java-example-provider below “src/main/java/org/bigiot/examples/ExampleProvider.java”.
-There, you have to paste the ID as the value of PROVIDER_ID as in the screenshot below.
-![ProviderCode](../tutorial/providerCode.png]
+There, you have to paste the ID as the value of PROVIDER_ID as in the screenshot ![below](../providerCode.png).
 Now, you have to insert the provider secret. Switch back to your browser window with the marketplace and click on “Load Provider Secret” and then click again on “Copy Secret to Clipboard”. Switch back to Eclipse and paste it between the exclamation marks as value for PROVIDER_SECRET.
 
 Now, you start the example provider: Select the file ExampleProvider.java in the “Project Explorer”, in the menu bar hit “Run” -> “Run as” -> “Java Application”. Accept the firewall dialogue. The provider is now running, it offers a parking availability service, which is registered in the background and deployed as a web service on your machine.
