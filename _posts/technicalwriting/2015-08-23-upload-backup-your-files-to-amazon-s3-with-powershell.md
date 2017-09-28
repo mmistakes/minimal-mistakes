@@ -326,7 +326,7 @@ function RecurseFolders([string]$path) {
 ### 6.D. Full PowerShell script ###
 
 Here is a full PowerShell script that will backup/upload a directory 
-(including all of the subdirectories) from your local computer to an 
+(including all subdirectories) from your local computer to an 
 Amazon S3 Bucket.
 
 ```powershell
