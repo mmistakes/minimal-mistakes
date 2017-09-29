@@ -125,10 +125,10 @@ Die individuelle Förderung steht im Mittelpunkt.
   * T-Shirt
   * Sporthose/Leggings
   * feste Sportschuhe, die nur für die Halle sind (ggf. mit Klettverschluss)
-* Bei schönem Wetter kann Sportunterricht auch im Freien stattfinden. Komme
-  deshalb an Sporttagen in bequemen Schuhen, in denen Ihr Kind draußen rennen,
-  springen und spielen kann (oder bitte ein zweites Paar Sportschuhe für draußen
-  im Sportbeutel).
+* Bei schönem Wetter kann der Sportunterricht auch im Freien stattfinden. Bitte
+  denken Sie an bequeme Schuhe, in denen Ihr Kind draußen rennen, springen und
+  spielen kann (oder packen Sie bitte ein zweites Paar Sportschuhe für draußen
+  in den Sportbeutel).
 * Bei langen Haaren bitte an ein Haargummi denken. Am besten Ihr Kind kommt bereits mit einem Zopf in die Schule!
 * An Sporttagen bitte keinen **Schmuck** (Ohrringe, Ringe, Ketten, Armbänder) tragen. Schmuck ist im Sportunterricht nicht erlaubt!
 
