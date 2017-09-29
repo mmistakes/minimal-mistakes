@@ -28,13 +28,13 @@ Anschlussmöglichkeiten für Fahrräder.
 ## Öffentlicher Nahverkehr
 
 Unsere Schule ist über die Busse 131 an der Station
-[Brandwerder](https://fahrinfo.bvg.de/Fahrinfo/bin/stboard.bin/en?ld=0.1&time=12:10&input=9037122&start=1&view=STATIONINFO&)
+[Brandwerder](https://fahrinfo.bvg.de/Fahrinfo/bin/stboard.bin/dn?start=1&input=900037122&adjustStBoard=yes&boardType=depRT)
 (alle 20 min, Laufweg 5 Minuten) und M32 an der Station
-[Magistratsweg/Brunsbütteler Damm](https://fahrinfo.bvg.de/Fahrinfo/bin/stboard.bin/en?ld=0.1&time=09:14&input=9037101&start=1&view=STATIONINFO&)
+[Magistratsweg/Brunsbütteler Damm](https://fahrinfo.bvg.de/Fahrinfo/bin/stboard.bin/dn?start=1&input=900037101&adjustStBoard=yes&boardType=depRT)
 (alle 5-10 min, Laufweg 7 Minuten) erreichbar.
 
 In der Nähe befindet sich auch der Regionalbahnhof
-[Berlin-Staaken](https://fahrinfo.bvg.de/barrierefrei/bin/stboard.bin/en?ld=0.1&time=07:20&input=9743855&start=1&view=STATIONINFO&)
+[Berlin-Staaken](https://fahrinfo.bvg.de/Fahrinfo/bin/stboard.bin/dn?start=1&input=900029305&adjustStBoard=yes&boardType=depRT)
 (Laufweg 15 Minuten), wo die Regionalbahnen RB4 und RB13 halten.
 
 ## Auto
