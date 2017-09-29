@@ -63,7 +63,7 @@ einfach eine E-Mail. So können wir uns Zeit für Ihr Anliegen nehmen.
 * Büro: (030) 308322711 (Team ambulante Hilfen)
 * Mobil: 0157 73845475
 * Web: [<i class="fa fa-external-link">&nbsp;</i>Casablanca in Spandau](http://www.g-casablanca.de/taetigkeitsfelder/jugendhilfe-und-schule/sozial-und-elternberatung-an-schulen)
-* Sprechzeiten: Di 9:30 - 11:30
+* Sprechzeiten: Di 9:30 - 11:30 Uhr
 
 [<i class="fa fa-download">&nbsp;&nbsp;</i>Flyer zur Sozialberatung von Casablanca](/assets/files/Sozialberatung_Casablanca_Flyer.pdf){: .btn .btn--success}
 
