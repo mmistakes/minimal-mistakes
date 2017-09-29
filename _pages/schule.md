@@ -12,10 +12,14 @@ header:
 
 {% include abkuerzungen.md %}
 
-## Über die Schule
+## Über die Grundschule am Brandwerder
 
-Wir sind eine zweizügige, verlässliche Halbtagsgrundschule in Spandau die in
-diesem Schuljahr von rund 300 Kindern besucht wird.
+Wir sind eine zweizügige, verlässliche Halbtagsgrundschule in Spandau/Staaken
+die in diesem Schuljahr von rund 300 Kindern besucht wird.
+
+## Unser Team
+
+{% include figure image_path="/assets/images/kollegium_2017_18.jpg" alt="Team der Grundschule am Brandwerder vom Schuljahr 2017/2018." caption="" %}
 
 ## JÜL-Konzept:
 {: #juel_konzept}
