@@ -21,6 +21,11 @@ author_profile: false
 
 ## Schulleitung
 
+{% include author-profile.html author='Stephanie Lehmann' %}{: .align-left}
+{% include author-profile.html author='Tanja Esch' %}{: .align-right}
+
+<div style="clear:both;"></div>
+
 * Schulleitung: Stephanie Lehmann ({% include email email='s.lehmann@brandwerder.de' %})
 * stellvertretende Schulleitung: Tanja Esch ({% include email email='t.esch@brandwerder.de' %})
 
