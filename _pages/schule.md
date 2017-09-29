@@ -172,6 +172,26 @@ November 2014, S. 1-2“).</li>
 </li>
 </ol>
 
+## Sozialberatung Casablanca
+
+{% include author-profile.html author='Nina Sykora' %}{: .align-right}
+
+An unserer Schule wird eine Sozialberatung von Frau Sykora angeboten. Dieses
+Angebot kann von allen im Schulwesen beteiligten Personen wahrgenommen werden,
+d.h. Frau Sykora ist als unabhängige, externe Person für alle Schüler\*innen,
+Eltern, Lehrer\*innen und Erzieher\*innen da, um zu vermitteln, zu schlichten
+und zu helfen.
+
+Sie bietet an...
+* Ein offenes Beratungsangebot
+* Vermittlung in Konfliktsituationen
+* Beratung in Krisensituationen
+* Erziehungsberatung
+* Unterstützung bei Verdacht auf Kindeswohlgefährdung
+* Vermittlung weiterer Hilfen (Gesundheit, Ämter, Freizeit etc.)
+
+Sprechzeiten und Kontaktdaten finden Sie [hier](/kontakt/#sozialberatung).
+
 ## Kontakt
 
 Unsere Kontaktseite finden Sie [hier](/kontakt/).
