@@ -28,7 +28,9 @@
   </div>
 
   <div class="author__urls-wrapper">
+    {% if author.uri %}
     <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button>
+    {% endif %}
     <ul class="author__urls social-icons">
       {% if author.location %}
         <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
