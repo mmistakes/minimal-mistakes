@@ -101,7 +101,7 @@ und 54% Schüler haben, die von 13 Erziehern und 24 Lehrkräften betreut werden
 # <i class="fa fa-file-text-o"></i> Anmeldung der Schulanfänger*innen
 {: #anmeldung}
 
-In der Zeit vom 04. Oktober bis 17. Oktober 2017 melden Sie ihr
+In der Zeit vom 4. Oktober bis 17. Oktober 2017 melden Sie ihr
 schulpflichtiges Kind in der [für Sie zuständigen
 Grundschule](https://www.bildung.berlin.de/Umkreissuche/) an.
 
