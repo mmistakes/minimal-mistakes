@@ -7,6 +7,6 @@ main:
   - title: "Projects"
     url: /year-archive/
   - title: "Testing"
-    url: /_pages/test/
+    url: /_pages/test.md
   # - title: "Sitemap"
   #   url: /sitemap/
