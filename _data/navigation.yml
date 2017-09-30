@@ -2,8 +2,6 @@
 main:
   - title: "CV"
     url: /CV_main.pdf
-  - title: "Projects"
-    url: /project/
   - title: "Testing"
     url: /testing/
  
