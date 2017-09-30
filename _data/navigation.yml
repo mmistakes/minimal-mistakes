@@ -1,11 +1,11 @@
 # main links
 main:
-  - title: "About"
-    url: /about/
+  #- title: "About"
+  #  url: /about/
   - title: "CV"
     url: /CV_main.pdf
   - title: "Projects"
-    url: /year-archive/
+    url: /project/
   - title: "Testing"
-    url: /docs/installation/
+    url: /testing/
  
