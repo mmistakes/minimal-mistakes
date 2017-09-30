@@ -1,6 +1,6 @@
 ---
 title: "Testing"
-permalink: /testing/
+permalink: /testing/test
 excerpt: "Instructions for installing the theme for new and existing Jekyll based sites."
 last_modified_at: 2017-08-04T12:38:01-04:00
 ---
