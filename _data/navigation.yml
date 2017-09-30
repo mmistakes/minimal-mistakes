@@ -6,7 +6,7 @@ main:
     url: /CV_main.pdf
   - title: "Projects"
     url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
+  - title: "Testing"
+    url: /_pages/test.html
   # - title: "Sitemap"
   #   url: /sitemap/
