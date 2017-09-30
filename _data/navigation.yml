@@ -8,5 +8,5 @@ main:
     url: /year-archive/
   - title: "Testing"
     url: /docs/installation/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "About"
+    url: /about/
