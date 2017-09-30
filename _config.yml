@@ -83,7 +83,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Senior undergraduate in UC Berkeley."
   location         : "University of California, Berkeley"
-  email            :
+  email            : "xsong@berkeley.edu"
   uri              :
   bitbucket        :
   codepen          :
@@ -97,7 +97,7 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : "xingyou-song-355629a1" 
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
