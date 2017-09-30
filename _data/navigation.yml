@@ -4,6 +4,6 @@ main:
     url: /about/
   - title: "CV"
     url: /CV_main.pdf
-  - title: "Testing"
-    url: /testing/
+  - title: "Projects"
+    url: /project/
  
