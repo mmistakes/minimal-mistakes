@@ -1,5 +1,5 @@
 ---
-layout: page
+
 title: "Testing"
 permalink: /test/
 excerpt: "Instructions for installing the theme for new and existing Jekyll based sites."

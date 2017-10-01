@@ -5,11 +5,10 @@ excerpt: "Instructions for installing the theme for new and existing Jekyll base
 last_modified_at: 2017-08-04T12:38:01-04:00
 ---
 
-## Install the Theme
+## Class Projects and Expository Papers
 
-There are several ways to install the theme:
 
-**1.** For a **new site**, install the `minimal-mistakes-jekyll` theme gem or fork the Minimal Mistakes repo on GitHub following the steps outlined in the [*Quick-Start Guide*]({{ "/docs/quick-start-guide/" | absolute_url }}).
+**Probabilistically Checkable Proofs Final Paper**: [*Quick-Start Guide*]({{ "/pdfs/PCP Project.pdf" | absolute_url }}).
 
 **2.** For an **existing site** follow the **Ruby Gem Method** steps outlined in the [*Quick-Start Guide*]({{ "/docs/quick-start-guide/" | absolute_url }}). If you plan to host with GitHub Pages I suggest you fork and rename the theme's repo, then clone it locally by running `git clone https://github.com/USERNAME/REPONAME.git` --- replacing **USERNAME** and **REPONAME** with your own. 
 
