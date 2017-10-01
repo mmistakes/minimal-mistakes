@@ -3,7 +3,7 @@ main:
   - title: "About"
     url: /about/
   - title: "CV"
-    url: /CV_main.pdf
+    url: /CV/
   - title: "Projects"
     url: /project/
  
