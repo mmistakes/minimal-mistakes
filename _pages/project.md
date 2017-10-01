@@ -8,15 +8,14 @@ last_modified_at: 2017-08-04T12:38:01-04:00
 
 
 ---
-
-
 ## Class Projects and Expository Papers
 
 
 **Probabilistically Checkable Proofs Final Paper**: [*PCP in Hardness of Approximation Proofs*]({{ "/pdfs/PCP Project.pdf" | absolute_url }}). Summary of PCP results used to prove the inapproximability of monotone submodular optimization as well as MAX-CSP problems, such as the MAX-CUT problem, for [CS 294 - Probabilistically Checkable and Interactive Proof Systems](https://people.eecs.berkeley.edu/~alexch/classes/CS294-S2017.html)
 
-**Delaunay Triangulation**: 
+**Delaunay Triangulation**: C++ code for Delaunay Triangulation [CS 294 - Computational Geometry](https://people.eecs.berkeley.edu/~jrs/274s17/)
 
+**Property Testing Final Paper**: [**]({{ "/pdfs/Submodularity_Property Teting.pdf" | absolute_url }}). Recent developments in property testing and optimization for submodular functions: [CS 294 - Property Testing](https://people.eecs.berkeley.edu/~alexch/classes/CS294-F2016.html)
 
 **2.** For an **existing site** follow the **Ruby Gem Method** steps outlined in the [*Quick-Start Guide*]({{ "/docs/quick-start-guide/" | absolute_url }}). If you plan to host with GitHub Pages I suggest you fork and rename the theme's repo, then clone it locally by running `git clone https://github.com/USERNAME/REPONAME.git` --- replacing **USERNAME** and **REPONAME** with your own. 
 
