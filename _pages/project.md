@@ -4,11 +4,18 @@ permalink: /project/
 excerpt: "Instructions for installing the theme for new and existing Jekyll based sites."
 last_modified_at: 2017-08-04T12:38:01-04:00
 ---
+## Publications and Manuscripts
+
+
+---
+
 
 ## Class Projects and Expository Papers
 
 
-**Probabilistically Checkable Proofs Final Paper**: [*Quick-Start Guide*]({{ "/pdfs/PCP Project.pdf" | absolute_url }}). Summary of PCP results used to prove the inapproximability of monotone submodular optimization as well as MAX-CSP problems, such as the MAX-CUT problem. 
+**Probabilistically Checkable Proofs Final Paper**: [*PCP in Hardness of Approximation Proofs*]({{ "/pdfs/PCP Project.pdf" | absolute_url }}). Summary of PCP results used to prove the inapproximability of monotone submodular optimization as well as MAX-CSP problems, such as the MAX-CUT problem, for [CS 294 - Probabilistically Checkable and Interactive Proof Systems](https://people.eecs.berkeley.edu/~alexch/classes/CS294-S2017.html)
+
+**Delaunay Triangulation**: 
 
 
 **2.** For an **existing site** follow the **Ruby Gem Method** steps outlined in the [*Quick-Start Guide*]({{ "/docs/quick-start-guide/" | absolute_url }}). If you plan to host with GitHub Pages I suggest you fork and rename the theme's repo, then clone it locally by running `git clone https://github.com/USERNAME/REPONAME.git` --- replacing **USERNAME** and **REPONAME** with your own. 
