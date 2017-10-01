@@ -11,8 +11,8 @@ last_modified_at: 2017-02-14T14:28:13-05:00
 --- 
 ## Work Experience
 
-**Summer 2017:** Quantitative Research Internship at **Citadel LLC** - Worked in the Global Quantitative Strategies (GQS) team under the Equities Market Making (EMM) group at Citadel Securities.
+**Summer 2017:** Quantitative Research Internship at **Citadel LLC** - Worked in the Global Quantitative Strategies (GQS) team under the Equities Market Making (EMM) group at Citadel Securities. Used a variety of robust clustering algorithms (DBSCAN, subspace clustering, spectral) and computer vision techniques for noisy popular foreign stock return data. Optimized the factor models and robust dimensionality reduction techniques for better stock return prediction and trading systems. Also investigated client trade data for strategic patterns and toxic behaviors. Wrote two internal reports detailing the results. 
 
-**Summer 2016:** Student Research Internship at **Microsoft Research Asia (MSRA)** - Worked under Professor Wei Chen on social network, optimization, and multiarmed bandits. 
+**Summer 2016:** Student Research Internship at **Microsoft Research Asia (MSRA)** - Worked under Professor Wei Chen and other interns on social network (independent cascade models), optimization (submodular optimization), and multiarmed bandits (Thomspon Sampling).
 
 
