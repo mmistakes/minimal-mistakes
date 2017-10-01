@@ -14,7 +14,7 @@ last_modified_at: 2017-08-04T12:38:01-04:00
 
 **Delaunay Triangulation**: C++ code for Delaunay Triangulation: [Full Code](https://github.com/Srizzle/Delaunay-Triangulation) for class [CS 294 - Computational Geometry](https://people.eecs.berkeley.edu/~jrs/274s17/)
 
-**Property Testing Final Paper**: [*Submodularity in Property Testing and Optimization*]({{ "/pdfs/Submodularity_Property Teting.pdf" | absolute_url }}). Recent developments in property testing and optimization for submodular functions: [CS 294 - Property Testing](https://people.eecs.berkeley.edu/~alexch/classes/CS294-F2016.html)
+**Property Testing Final Paper**: [*Submodularity in Property Testing and Optimization*]({{ "/pdfs/Submodularity Property Testing.pdf" | absolute_url }}). Recent developments in property testing and optimization for submodular functions: [CS 294 - Property Testing](https://people.eecs.berkeley.edu/~alexch/classes/CS294-F2016.html)
 
 **Online Local Learning**: [*Online Local Learning Developments*]({{ "/pdfs/281B_writeup.pdf" | absolute_url }}). Recent developments in online local learning and online convex optimization from class [CS 281B](http://www.stat.berkeley.edu/~bartlett/courses/2014spring-cs281bstat241b/) (Learning Theory)
 
