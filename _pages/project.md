@@ -1,5 +1,5 @@
 ---
-title: "Projects"
+title: "Miscallenous Projects and Papers"
 permalink: /project/
 excerpt: "Instructions for installing the theme for new and existing Jekyll based sites."
 last_modified_at: 2017-08-04T12:38:01-04:00
@@ -8,7 +8,7 @@ last_modified_at: 2017-08-04T12:38:01-04:00
 
 
 ---
-## Class Projects and Expository Papers
+## Class Projects, Expository Papers
 
 
 **Probabilistically Checkable Proofs Final Paper**: [*PCP in Hardness of Approximation Proofs*]({{ "/pdfs/PCP Project.pdf" | absolute_url }}). Summary of PCP results used to prove the inapproximability of monotone submodular optimization as well as MAX-CSP problems, such as the MAX-CUT problem, for [CS 294 - Probabilistically Checkable and Interactive Proof Systems](https://people.eecs.berkeley.edu/~alexch/classes/CS294-S2017.html)
@@ -20,3 +20,5 @@ last_modified_at: 2017-08-04T12:38:01-04:00
 **Online Local Learning**: [*Online Local Learning Developments*]({{ "/pdfs/281B_writeup.pdf" | absolute_url }}). Recent developments in online local learning and online convex optimization from class [CS 281B](http://www.stat.berkeley.edu/~bartlett/courses/2014spring-cs281bstat241b/)
 
 **Inapproximability of MAX-CUT**: [*MAX-CUT Inapproximability*]({{ "/pdfs/270_writeup.pdf" | absolute_url }}). A readthrough of the PCP theorem applied on the famous Max-Cut paper by Khot for CS 270.
+---
+## Data Analysis
