@@ -11,7 +11,7 @@ last_modified_at: 2017-02-14T14:28:13-05:00
 ## Internships
 
 
-**Summer 2017:** Citadel LLC - Worked in the Global Quantitative Strategies (GQS) team under the Equities Market Making (EMM) group at Citadel Securities. 
+**Summer 2017:** Citadel LLC - Worked in the Global Quantitative Strategies (GQS) team under the Equities Market Making (EMM) group at Citadel Securities.
 
 **Summer 2016:** Microsoft Research Asia - Worked under Professor Wei Chen on social network, optimization, and multiarmed bandits. 
 

@@ -10,15 +10,18 @@ last_modified_at: 2017-08-04T12:38:01-04:00
 ---
 ## Class Projects, Expository Papers
 
-
 **Probabilistically Checkable Proofs Final Paper**: [*PCP in Hardness of Approximation Proofs*]({{ "/pdfs/PCP Project.pdf" | absolute_url }}). Summary of PCP results used to prove the inapproximability of monotone submodular optimization as well as MAX-CSP problems, such as the MAX-CUT problem, for [CS 294 - Probabilistically Checkable and Interactive Proof Systems](https://people.eecs.berkeley.edu/~alexch/classes/CS294-S2017.html)
 
 **Delaunay Triangulation**: C++ code for Delaunay Triangulation [CS 294 - Computational Geometry](https://people.eecs.berkeley.edu/~jrs/274s17/)
 
 **Property Testing Final Paper**: [*Submodularity in Property Testing and Optimization*]({{ "/pdfs/Submodularity_Property Teting.pdf" | absolute_url }}). Recent developments in property testing and optimization for submodular functions: [CS 294 - Property Testing](https://people.eecs.berkeley.edu/~alexch/classes/CS294-F2016.html)
 
-**Online Local Learning**: [*Online Local Learning Developments*]({{ "/pdfs/281B_writeup.pdf" | absolute_url }}). Recent developments in online local learning and online convex optimization from class [CS 281B](http://www.stat.berkeley.edu/~bartlett/courses/2014spring-cs281bstat241b/)
+**Online Local Learning**: [*Online Local Learning Developments*]({{ "/pdfs/281B_writeup.pdf" | absolute_url }}). Recent developments in online local learning and online convex optimization from class [CS 281B](http://www.stat.berkeley.edu/~bartlett/courses/2014spring-cs281bstat241b/) (Learning Theory)
 
-**Inapproximability of MAX-CUT**: [*MAX-CUT Inapproximability*]({{ "/pdfs/270_writeup.pdf" | absolute_url }}). A readthrough of the PCP theorem applied on the famous Max-Cut paper by Khot for CS 270.
+**Inapproximability of MAX-CUT**: [*MAX-CUT Inapproximability*]({{ "/pdfs/270_writeup.pdf" | absolute_url }}). A readthrough of the PCP theorem applied on the famous Max-Cut paper by Khot for CS 270 (Advanced Algorithms)
 ---
 ## Data Analysis
+
+**BART Ridership Prediction**: [*Bart Ridership*]({{ "/pdfs/citadel_writeup_spring_2017.pdf" | absolute_url }}). Data analysis for Citadel Datathon (Spring 2017) using BART ridership data for prediction. [Full Code](https://github.com/Srizzle/Citadel-Datathon-Spring-2017)
+
+**AirBnB Housing Price Analysis**: [*Most important Factors for AirBnB Pricing*]({{ "/pdfs/citadel_writeup_fall_2017.pdf" | absolute_url }}). Data analysis for Citadel Datathon (Fall 2017) to analyze most import factors that affect AirBnB prices. [Full Code](https://github.com/Srizzle/Citadel-Datathon-Fall-2017)
