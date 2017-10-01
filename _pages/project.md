@@ -19,7 +19,9 @@ last_modified_at: 2017-08-04T12:38:01-04:00
 **Online Local Learning**: [*Online Local Learning Developments*]({{ "/pdfs/281B_writeup.pdf" | absolute_url }}). Recent developments in online local learning and online convex optimization from class [CS 281B](http://www.stat.berkeley.edu/~bartlett/courses/2014spring-cs281bstat241b/) (Learning Theory)
 
 **Inapproximability of MAX-CUT**: [*MAX-CUT Inapproximability*]({{ "/pdfs/270_writeup.pdf" | absolute_url }}). A readthrough of the PCP theorem applied on the famous Max-Cut paper by Khot for CS 270 (Advanced Algorithms)
+
 ---
+
 ## Data Analysis
 
 **BART Ridership Prediction**: [*Bart Ridership*]({{ "/pdfs/citadel_writeup_spring_2017.pdf" | absolute_url }}). Data analysis for Citadel Datathon (Spring 2017) using BART ridership data for prediction. [Full Code](https://github.com/Srizzle/Citadel-Datathon-Spring-2017)
