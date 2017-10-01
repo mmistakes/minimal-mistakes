@@ -24,6 +24,7 @@ last_modified_at: 2017-08-04T12:38:01-04:00
 
 ## Data Analysis
 
+**AirBnB Housing Price Analysis**: [*Most important Factors for AirBnB Pricing*]({{ "/pdfs/citadel_writeup_fall_2017.pdf" | absolute_url }}). Data analysis for Citadel Datathon (Fall 2017) to analyze most import factors that affect AirBnB prices. [Full Code](https://github.com/Srizzle/Citadel-Datathon-Fall-2017)
+
 **BART Ridership Prediction**: [*Bart Ridership*]({{ "/pdfs/citadel_writeup_spring_2017.pdf" | absolute_url }}). Data analysis for Citadel Datathon (Spring 2017) using BART ridership data for prediction. [Full Code](https://github.com/Srizzle/Citadel-Datathon-Spring-2017)
 
-**AirBnB Housing Price Analysis**: [*Most important Factors for AirBnB Pricing*]({{ "/pdfs/citadel_writeup_fall_2017.pdf" | absolute_url }}). Data analysis for Citadel Datathon (Fall 2017) to analyze most import factors that affect AirBnB prices. [Full Code](https://github.com/Srizzle/Citadel-Datathon-Fall-2017)
