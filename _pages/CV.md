@@ -17,7 +17,7 @@ last_modified_at: 2017-08-04T12:38:01-04:00
 
 
 | Class                                                      | Term          | Instructor                                   |
-| -----------------------------------------------------------| ------------- | -------------------------------------------- |
+| -----------------------------------------------------------|:------------- |:-------------------------------------------- |
 | Deep Learning for Financial Applications  (CS 294-136)     | Fall 2017     | Francois Belleti, Laurent El Ghaoui          |
 | Deep Learning Special Topics (CS 294-131)                  | Fall 2017     | Dawn Song, Trevor Darrell                    |
 | Probabilistically Checkable Proofs (CS 294 - )             | Spring 2017   | Igor Shinkar, Alessandro Chiesa              |
