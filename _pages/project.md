@@ -12,7 +12,7 @@ last_modified_at: 2017-08-04T12:38:01-04:00
 
 **Probabilistically Checkable Proofs Final Paper**: [*PCP in Hardness of Approximation Proofs*]({{ "/pdfs/PCP Project.pdf" | absolute_url }}). Summary of PCP results used to prove the inapproximability of monotone submodular optimization as well as MAX-CSP problems, such as the MAX-CUT problem, for [CS 294 - Probabilistically Checkable and Interactive Proof Systems](https://people.eecs.berkeley.edu/~alexch/classes/CS294-S2017.html)
 
-**Delaunay Triangulation**: C++ code for Delaunay Triangulation [Full Code](https://github.com/Srizzle/Delaunay-Triangulation) for class [CS 294 - Computational Geometry](https://people.eecs.berkeley.edu/~jrs/274s17/)
+**Delaunay Triangulation**: C++ code for Delaunay Triangulation: [Full Code](https://github.com/Srizzle/Delaunay-Triangulation) for class [CS 294 - Computational Geometry](https://people.eecs.berkeley.edu/~jrs/274s17/)
 
 **Property Testing Final Paper**: [*Submodularity in Property Testing and Optimization*]({{ "/pdfs/Submodularity_Property Teting.pdf" | absolute_url }}). Recent developments in property testing and optimization for submodular functions: [CS 294 - Property Testing](https://people.eecs.berkeley.edu/~alexch/classes/CS294-F2016.html)
 

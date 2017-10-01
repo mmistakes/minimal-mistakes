@@ -6,7 +6,8 @@ last_modified_at: 2017-02-14T14:28:13-05:00
 ---
 ## Introduction
 
-**Hi there!** I'm currently a senior at UC Berkeley studying machine learning, CS theory theory, and math. 
+**Hi there!** I'm currently a senior at UC Berkeley studying machine learning, CS theory theory, and math. I'll post about paper reviews, literature, and other cool topics I find on this blog. 
+
 --- 
 ## Internships
 
