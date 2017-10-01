@@ -66,9 +66,10 @@ og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : Person
+  type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
-  links: ["https://songrizzle.wordpress.com/"]
+  links: # An array of links to social media profiles
+
 # Analytics
 analytics:
   provider               : false # false (default), "google", "google-universal", "custom"
@@ -83,7 +84,7 @@ author:
   bio              : "Senior undergraduate in UC Berkeley."
   location         : "University of California, Berkeley"
   email            : "xsong@berkeley.edu"
-  uri              :
+  uri              : "https://songrizzle.wordpress.com/"
   bitbucket        :
   codepen          :
   dribbble         :
