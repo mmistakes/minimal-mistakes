@@ -26,10 +26,10 @@ last_modified_at: 2017-08-04T12:38:01-04:00
 | Online Algorithms  (CS 294 - 128 )                         | Fall   2016   | Nikhil Bansal                                |
 | Property Testing (CS 294 - )                               | Fall   2016   | Igor Shinkar, Alessandro Chiesa              |
 | Combinatorial and Advanced Algorithms (CS 270)             | Spring 2016   | Christos Papadmitriou                        |
-| Online Convex Optimization, Stat. Learning The (CS 281B)   | Spring 2016   | Peter Bartlett                               |
+| Online Convex Optimization, Stat. Learning Theory (CS 281B)| Spring 2016   | Peter Bartlett                               |
 | Theory's Greatest Hits (CS 294 - 122)                      | Spring 2016   | Prasad Raghavendra                           |
 | Matrix Computations (Math 221)                             | Spring 2016   | James Demmel 	                            |
 | Spectral Graph Theory (CS 294-109)                         | Spring 2016   | Luca Trevisan 	                            |
 | Cryptography (CS 276)                                      | Fall 2015     | Alessandro Chiesa                            |
 | Statistical Learning Theory (CS 281A)                      | Fall 2015     | Peter Bartlett	                            |
-| Algebraic Topology (Math 215A   )                          | Fall 2015     | Jenny Harrison	                            |
+| Algebraic Topology (Math 215A)                             | Fall 2015     | Jenny Harrison	                            |
