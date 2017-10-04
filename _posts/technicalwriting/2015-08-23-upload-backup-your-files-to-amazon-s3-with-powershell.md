@@ -41,7 +41,7 @@ to the cloud or triggering the upload of new files to your site are critical
 functions that can be scripted to improve efficiency and make the processes 
 resilient.
 
-In this document, you’ll learn how to upload files to Amazon’s 
+In this document, you’ll learn how to upload files to Amazon 
 [Simple Storage Service](http://aws.amazon.com/s3/) (S3) using [PowerShell](https://microsoft.com/powershell). 
 You’ll create an Amazon Web Services (AWS) 
 account that will allow you to manage AWS users and groups via Identity and 
@@ -52,7 +52,7 @@ use PowerShell to recursively iterate through directories to
 upload files to S3.
 
 If you’re _new to Amazon S3 and need to start from scratch_, this is a 
-**beginning-to-end walkthrough** of how to upload your files to Amazon’s 
+**beginning-to-end walkthrough** of how to upload your files to Amazon 
 Simple Storage Service (S3) using PowerShell.
 
 A breakdown of the process (detailed steps are further below):
@@ -64,7 +64,7 @@ A breakdown of the process (detailed steps are further below):
 2.  [Create a user and group via Amazon’s Identity and Access Management (IAM) 
     to perform the backup/upload](#2-create-a-user-and-group)
 
-3.  [Create a bucket in Amazon’s Simple Storage Service (S3) to hold your files](#3-create-a-bucket-in-s3)  
+3.  [Create a bucket in Amazon Simple Storage Service (S3) to hold your files](#3-create-a-bucket-in-s3)  
 
 4.  [Install AWS Tools for Windows PowerShell, which contains the modules 
     needed to access AWS](#4-install-aws-tools-for-windows-powershell)  
@@ -110,10 +110,9 @@ IAM. Keep these guidelines in mind:
 -   Create a group to backup/upload files with the appropriate permissions 
 -   Create a user for accessing S3 during the backup/upload from PowerShell 
 
-Here is a synopsis of the steps for you to follow. You can find detailed 
-instructions for how to create an account and group in the video titled 
+You can find detailed instructions for how to create an account and group in the video titled 
 _"Getting Started with AWS Identity and Access Management"_ at IAM’s 
-[Getting Started](http://aws.amazon.com/iam/getting-started/).
+[Getting Started](http://aws.amazon.com/iam/getting-started/). The following is a synopsis.
 
 1.  Login to AWS Management Console with your Root account or an 
     Administrator account (if you created a separate one) 
@@ -130,7 +129,7 @@ _"Getting Started with AWS Identity and Access Management"_ at IAM’s
     -   In order to access the Amazon S3 buckets via PowerShell, your IAM user 
         (_backupOperator_) will need both an **Access Key ID** and a **Secret 
         Access Key** (to specify in the PowerShell script for authentication). 
-    -   To do this, log into the AWS Management Console and: 
+    -   To create an access key, log into the AWS Management Console and: 
         1.  Select **Users** 
         2.  Select the user name previously created 
         3.  Scroll down and select **Create Access Key** 
@@ -198,7 +197,8 @@ for you, allowing you to begin working with the AWS PowerShell Cmdlets
 immediately.
 
 When using the default _Windows PowerShell_ prompt, you will need to manually 
-import the AWSPowerShell module and run the `Initialize-AWSDefaultscmdlet`.
+import the AWSPowerShell module and run the `Initialize-AWSDefaultscmdlet` using 
+the following commands.
 
 ```powershell
 PS C:\> Import-Module “C:\Program Files (x86)\AWS Tools\PowerShell\AWSPowerShell\AWSPowerShell.psd1”
