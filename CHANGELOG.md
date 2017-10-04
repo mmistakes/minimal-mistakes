@@ -8,6 +8,7 @@
 - Add missing Brazilian Portuguese translations to `ui-text.yml`. [#1278](https://github.com/mmistakes/minimal-mistakes/pull/1278)
 - Update font stack documentation. [#1292](https://github.com/mmistakes/minimal-mistakes/pull/1292)
 - Improve accessibility of navigation menu button. [#1099](https://github.com/mmistakes/minimal-mistakes/issues/1099)
+- Add Naver Webmaster Tools verification. [#1286](https://github.com/mmistakes/minimal-mistakes/pull/1286)
 
 ### Bug Fixes
 

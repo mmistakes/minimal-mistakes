@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-last_modified_at: 2017-09-25T09:17:57-04:00
+last_modified_at: 2017-10-04T11:30:01-04:00
 ---
 
 Settings that affect your entire site can be changed in [Jekyll's configuration file](https://jekyllrb.com/docs/configuration/): `_config.yml`, found in the root of your project. If you don't have this file you'll need to copy or create one using the theme's [default `_config.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml) as a base.
@@ -398,13 +398,29 @@ Into `_config.yml`
 bing_site_verification: "0FC3FD70512616B052E755A56F8952D"
 ```
 
+#### Naver Webmaster Tools
+
+To verify site ownership you will need to [create a Naver account](https://nid.naver.com/user2/joinGlobal.nhn?lang=en_US&m=init) and then **Add your site** via [Naver Webmaster Tools](http://webmastertool.naver.com/).
+
+Much like Google and Bing you'll be provided with a meta description:
+
+```html
+<meta name="naver-site-verification" content="6BF5A01C0E650B479B612AC5A2184144">`
+```
+
+Which you can add to your `_config.yml` like so:
+
+```yaml
+naver-site-verification: "6BF5A01C0E650B479B612AC5A2184144"
+```
+
 #### Alexa
 
 To [claim your site](http://www.alexa.com/siteowners/claim) with Alexa add the provided verification ID `alexa_site_verification: "yourVerificationID"`.
 
 #### Yandex
 
-To verify site ownership copy and paste the string inside of `name`:
+To verify site ownership copy and paste the string inside of `content`:
 
 ```html
 <meta name='yandex-verification' content='2132801JL' />
