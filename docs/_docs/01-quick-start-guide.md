@@ -116,6 +116,22 @@ The bundled data files are:
 - [`_data/ui-text.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml) - UI text [documentation]({{ "/docs/ui-text/" | absolute_url }})
 - [`_data/navigation.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_data/navigation.yml) - navigation [documentation]({{ "/docs/navigation/" | absolute_url }})
 
+#### Docker
+
+There is also a Docker environment. This way, you don't need to install Ruby environment.
+
+You need Docker and docker-compose.
+
+Once you cloned a fresh install of Minimal Mistakes, run:
+
+``` bash
+docker-compose up
+```
+
+Wait for images download and mount, then you'll be able to access to:
+
+http://0.0.0.0:4000
+
 ### Starting from `jekyll new`
 
 Scaffolding out a site with the `jekyll new` command requires you to modify a few files that it creates.
