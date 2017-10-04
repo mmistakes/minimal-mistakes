@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-10-03T08:30:40-04:00
+last_modified_at: 2017-10-04T08:07:18-04:00
 ---
 
 ## Unreleased
@@ -15,6 +15,7 @@ last_modified_at: 2017-10-03T08:30:40-04:00
 - Clarify documentation about which `assets` folders and files to remove when migrating to the gem version of the theme. [#1268](https://github.com/mmistakes/minimal-mistakes/issues/1268)
 - Add note about Staticman GitHub compatibility. [#1273](https://github.com/mmistakes/minimal-mistakes/issues/1273)
 - Add missing Brazilian Portuguese translations to `ui-text.yml`. [#1278](https://github.com/mmistakes/minimal-mistakes/pull/1278)
+- Update font stack documentation. [#1292](https://github.com/mmistakes/minimal-mistakes/pull/1292)
 
 ### Bug Fixes
 

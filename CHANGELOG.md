@@ -6,6 +6,7 @@
 - Clarify documentation about which `assets` folders and files to remove when migrating to the gem version of the theme. [#1268](https://github.com/mmistakes/minimal-mistakes/issues/1268)
 - Add note about Staticman GitHub compatibility. [#1273](https://github.com/mmistakes/minimal-mistakes/issues/1273)
 - Add missing Brazilian Portuguese translations to `ui-text.yml`. [#1278](https://github.com/mmistakes/minimal-mistakes/pull/1278)
+- Update font stack documentation. [#1292](https://github.com/mmistakes/minimal-mistakes/pull/1292)
 
 ### Bug Fixes
 
