@@ -96,7 +96,7 @@ You should be familiar with the following technologies, at least to a small exte
 
 ## The Script – Set Constants ##
 
-In order to run the script, some variables need to be set.
+To run the script required variables need to be set.
 
 ```powershell
 6 ##### Set constants
@@ -110,13 +110,13 @@ Windows Active Directory environment, which requires user authentication.
 The credentials of the user logged into the server, running the PowerShell 
 cmdlets, will be used to authenticate when Excel Services is running. The 
 script reads the environment variables for the user’s domain and name, 
-`$env:UserDomain` and `$env:UserName`, respectively.
+`$env:UserDomain` and `$env:UserName`.
 
-_Line 8_ &ndash; The SharePoint service should have a descriptive name. In 
-this case, it will be called ExcelServices.
+_Line 8_ &ndash; Give the SharePoint service a descriptive name, such as 
+ExcelServices.
 
 _Line 9_ &ndash; IIS will create a separate IIS Application Pool for the new 
-SharePoint service. This service should also have a descriptive name, such 
+SharePoint service. Give this service a descriptive name, such 
 as ExcelServicesAppPool, instead of the name SharePoint provides by default.
 
 ## The Script – Initial Clean Up ##
@@ -151,11 +151,11 @@ which deletes them.
 
 _Line 17_ &ndash; `Remove-SPServiceApplicationPool` deletes the SharePoint 
 Service Application Pool and IIS Application Pool named ExcelServicesAppPool. 
-That value is contained in `$IISAppPool`, which was defined on line 9.
+That value is contained in `$IISAppPool`, which is defined on line 9.
 
 ## The Script – Add SharePoint Managed Account ##
 
-In order for an Active Directory user account to manage SharePoint services 
+For an Active Directory user account to manage SharePoint services 
 and web applications, it must be registered with SharePoint as a Managed 
 Account. In this example, you’ll be using the account you’re logged in as 
 to run Excel Services.
@@ -175,7 +175,7 @@ to run Excel Services.
 ``` 
 
 _Line 20_ &ndash; Determine if the current logged in user, as defined 
-earlier in line 7, is registered in SharePoint as a Managed Account. 
+in line 7, is registered in SharePoint as a Managed Account. 
 This is done by searching for the user name with `Get-SPManagedAccount` 
 and creating a SPManagedAccount object variable called `$ManagedAccount`.
 
@@ -219,7 +219,7 @@ be started so it can process the requests to view and edit Excel workbooks.
 36 Get-SPServiceInstance -Server $env:computername | where {$_.TypeName.Contains('Excel')} | Start-SPServiceInstance;
 ```
 
-_Line 36_ &ndash; Find the SharePoint service that was just created by 
+_Line 36_ &ndash; Find the SharePoint service that was created by 
 using `Get-SPServiceInstance` with a piped `|` where clause for a service name 
 that contains Excel. Then run `Start-SPServiceInstance` on the object 
 found to start the service running.
@@ -232,7 +232,7 @@ found to start the service running.
 
 ## The Full Script ##
 
-Here is the full script. To run this, copy/paste the contents below into a text editor and save it as a .ps1 file (example: ProvisionExcelServices.ps1).
+The following is the full script. To run this, copy/paste the contents below into a text editor and save it as a .ps1 file (example: ProvisionExcelServices.ps1).
 
 **Note:** The script must be run from the SharePoint 2010 Management Shell or a 
 PowerShell prompt with the Microsoft.SharePoint.PowerShell add-in loaded 
