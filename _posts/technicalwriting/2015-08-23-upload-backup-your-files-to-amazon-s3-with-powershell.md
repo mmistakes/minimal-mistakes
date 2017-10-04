@@ -61,7 +61,7 @@ A breakdown of the process (detailed steps are further below):
 
     a.  You can try most of the AWS services for [free for a year](http://aws.amazon.com/free/).
 
-2.  [Create a user and group via Amazon’s Identity and Access Management (IAM) 
+2.  [Create a user and group via Amazon Identity and Access Management (IAM) 
     to perform the backup/upload](#2-create-a-user-and-group)
 
 3.  [Create a bucket in Amazon Simple Storage Service (S3) to hold your files](#3-create-a-bucket-in-s3)  
