@@ -48,18 +48,18 @@ account that will allow you to manage AWS users and groups via Identity and
 Access Management (IAM) as well as work with S3 buckets and folders. After 
 installing the AWS Tools for Windows PowerShell, you’ll configure 
 the prerequisites for connecting to AWS via PowerShell. And finally, you’ll 
-use PowerShell to recursively iterated through directories to 
+use PowerShell to recursively iterate through directories to 
 upload files to S3.
 
 If you’re _new to Amazon S3 and need to start from scratch_, this is a 
 **beginning-to-end walkthrough** of how to upload your files to Amazon’s 
 Simple Storage Service (S3) using PowerShell.
 
-A quick breakdown of the process (detailed steps are further below):
+A breakdown of the process (detailed steps are further below):
 
 1.  [Create an Amazon account to access Amazon Web Services (AWS)](#1-create-an-amazon-root-account)
 
-    a.  You can play with most of the AWS services for [free for a year](http://aws.amazon.com/free/).
+    a.  You can try most of the AWS services for [free for a year](http://aws.amazon.com/free/).
 
 2.  [Create a user and group via Amazon’s Identity and Access Management (IAM) 
     to perform the backup/upload](#2-create-a-user-and-group)
@@ -74,7 +74,7 @@ A quick breakdown of the process (detailed steps are further below):
 6.  [Write a PowerShell script that copies files from your local computer to 
     the Amazon S3 bucket you previously created](#6-powershell-script-to-uploadbackup-files-to-amazon-s3)  
 
-    a.  The script will use the credentials of the backup user previously created.  
+    a.  The script will use the credentials of the backup user created.  
 
     b.  The script will be a PowerShell framework script to get you started.  
 
@@ -86,7 +86,7 @@ logic making it as specific or complex as necessary for your situation.
 
 ## 1. Create an Amazon root account ##
 
-Fortunately, Amazon has made this simple. Navigate to 
+Amazon has made this simple. Navigate to 
 [Amazon AWS](http://aws.amazon.com/) and select "Create a Free Account." 
 Follow the steps outlined.
 
@@ -102,7 +102,7 @@ experience under your belt.
 
 ## 2. Create a user and group ##
 
-In order to access the AWS services, you’ll need to create an account via 
+To access the AWS services, create a group and user account via 
 IAM. Keep these guidelines in mind:
 
 -   Follow [IAM’s Best Practices](http://docs.aws.amazon.com/IAM/latest/UserGuide/IAMBestPractices.html) 
@@ -118,12 +118,12 @@ _"Getting Started with AWS Identity and Access Management"_ at IAM’s
 1.  Login to AWS Management Console with your Root account or an 
     Administrator account (if you created a separate one) 
     -   Navigate to [Amazon AWS](http://aws.amazon.com/) -> select **My Account** 
-        in the top right -> select **AWS Management Console** from the drop down list 
+        in the top right -> select **AWS Management Console** from the drop-down list 
 2.  Create a group with access to S3 buckets called _S3BackupOperators_  
-    -   Set permissions for this group to **AmazonS3FullAccess** so that all 
-        members have the necessary access to S3 buckets you use for backups/uploads. 
+    -   Set permissions for this group to **AmazonS3FullAccess** so that members 
+        have the necessary access and permissions to perform backups/uploads. 
 3.  Create a user for accessing the S3 buckets called _backupOperator_ 
-    -   Add this user to the _S3BackupOperators_ group previously created, 
+    -   Add this user to the _S3BackupOperators_ group, 
         from which they will inherit the permissions they need to 
         write files to the S3 buckets. 
 4.  Generate Access Keys for the user
@@ -139,7 +139,7 @@ _"Getting Started with AWS Identity and Access Management"_ at IAM’s
 
 ## 3. Create a bucket in S3 ##
 
-You will need an Amazon S3 bucket to hold your files. A bucket is analogous 
+You will need an Amazon S3 bucket to hold your files, which is analogous 
 to a directory/folder on your local computer. More information can be found 
 at [Working with Amazon S3 Buckets](http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingBucket.html). 
 
@@ -147,7 +147,7 @@ Follow the instructions at [Create a Bucket](http://docs.aws.amazon.com/AmazonS3
 and name it something relevant, such as Backups. 
 
 _Note: Because the AmazonS3FullAccess policy was applied to the S3BackupOperators 
-group, all members of that group have add/delete permissions to your S3 buckets. 
+group, members of that group have add/delete permissions to your S3 buckets. 
 If you would like to further restrict access for that group to only the Backups 
 bucket, review the documentation at 
 [Managing Access Permissions to Your Amazon S3 Resources](https://docs.aws.amazon.com/AmazonS3/latest/dev/s3-access-control.html)_.
@@ -193,12 +193,12 @@ You might need to import the AWSPowerShell modele, depending on which
 PowerShell prompt you use.
 
 When using the _Windows PowerShell **for AWS**_ prompt, the AWSPowerShell 
-module is automatically imported and the Initialize-AWSDefaults cmdlet run 
+module is automatically imported and the `Initialize-AWSDefaults` cmdlet run 
 for you, allowing you to begin working with the AWS PowerShell Cmdlets 
 immediately.
 
 When using the default _Windows PowerShell_ prompt, you will need to manually 
-import the AWSPowerShell module and run the Initialize-AWSDefaultscmdlet.
+import the AWSPowerShell module and run the `Initialize-AWSDefaultscmdlet`.
 
 ```powershell
 PS C:\> Import-Module “C:\Program Files (x86)\AWS Tools\PowerShell\AWSPowerShell\AWSPowerShell.psd1”
@@ -213,7 +213,7 @@ The previous steps prepared you to copy files from your computer to
 Amazon S3 using PowerShell.
 
 The full script will be shown at the end of this document. Meanwhile, 
-let’s step through the areas of the script.
+let’s step through the sections of the script.
 
 ### 6.A. Set constant variables ###
 
@@ -226,8 +226,8 @@ First, set the constant variables that will be used in the script.
 | `$config` | AmazonS3Config object to hold configuration options, such as **RegionEndpoint** and **ServiceURL** | These depend on your AWS account settings. In this example, the account uses the **US-WEST-2** region endpoint. <br> `RegionEndpoint = us-west-2` <br> `ServiceURL = https://s3-us-west-2.amazonaws.com/` |
 
 _Note: To find out which Region your account is using, login to the AWS 
-Management Console and note the Region specified in the URL. This example 
-uses **US-WEST-2** and is seen as follows: [https://us-west-2.console.aws.amazon.com/console/home?nc2=h_m_mc&region=us-west-2#](https://us-west-2.console.aws.amazon.com/console/home?nc2=h_m_mc&region=us-west-2#)_
+Management Console and note the Region specified in the URL. The following example 
+uses **US-WEST-2**: [https://us-west-2.console.aws.amazon.com/console/home?nc2=h_m_mc&region=us-west-2#](https://us-west-2.console.aws.amazon.com/console/home?nc2=h_m_mc&region=us-west-2#)_
 
 Commands to set the user’s Key variables (using the Access Keys 
 previously generated) and to instantiate the AmazonS3Config object to hold 
@@ -257,7 +257,7 @@ $client=[Amazon.AWSClientFactory]::CreateAmazonS3Client($accessKeyID,$secretAcce
 
 ### 6.C. Upload/backup files via PowerShell ###
 
-With PowerShell, you have several options of how to go about uploading 
+With PowerShell, you have several options for uploading 
 your files.
 
 -   Copy specific files from a single folder or multiple directories. 
@@ -267,7 +267,7 @@ your files.
 
 #### Copy specific files ####
 
-To **copy specific files**, use commands similar to the following:
+To copy specific files, use the following commands.
 
 ```powershell
 Write-S3Object -BucketName Backups -File “C:\Documents\Business\FinancialReports.xlsx” -Key “/Documents/Business/FinancialReports.xlsx”
@@ -280,7 +280,7 @@ Cmdlet documentation for more information._
 
 #### Copy all files in a directory ####
 
-To **copy all the files in a directory**, use a command similar to the following:
+To copy all the files in a directory, use the following command.
 
 ```powershell
 Write-S3Object -BucketName Backups -Folder “C:\Pictures\Family” -KeyPrefix “/Pictures/Family”
@@ -291,8 +291,8 @@ Cmdlet documentation for more information._
 
 #### Copy a directory and subdirectories ####
 
-To **copy a directory and the subdirectories**, use a function to iterate 
-through the subdirectories recursively, similar to the following:
+To copy a directory and the subdirectories, use the following function to iterate 
+through the subdirectories recursively.
 
 ```powershell
 function RecurseFolders([string]$path) {
@@ -325,7 +325,7 @@ function RecurseFolders([string]$path) {
 
 ### 6.D. Full PowerShell script ###
 
-Here is a full PowerShell script that will backup/upload a directory 
+The following is a full PowerShell script that will backup/upload a directory 
 (including all subdirectories) from your local computer to an 
 Amazon S3 Bucket.
 
