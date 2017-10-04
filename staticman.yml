@@ -100,5 +100,5 @@ comments:
     enabled: true
     siteKey: "6LdRBykTAAAAAFB46MnIu6ixuxwu9W1ihFF8G60Q"
     # Encrypt reCaptcha secret key using Staticman /encrypt endpoint
-    # For more inforrmation, https://staticman.net/docs/encryption
+    # For more information, https://staticman.net/docs/encryption
     secret: "PznnZGu3P6eTHRPLORniSq+J61YEf+A9zmColXDM5icqF49gbunH51B8+h+i2IvewpuxtA9TFoK68TuhUp/X3YKmmqhXasegHYabY50fqF9nJh9npWNhvITdkQHeaOqnFXUIwxfiEeUt49Yoa2waRR7a5LdRAP3SVM8hz0KIBT4="

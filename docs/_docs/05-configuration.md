@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-last_modified_at: 2017-10-04T11:30:01-04:00
+last_modified_at: 2017-10-04T16:31:28-04:00
 ---
 
 Settings that affect your entire site can be changed in [Jekyll's configuration file](https://jekyllrb.com/docs/configuration/): `_config.yml`, found in the root of your project. If you don't have this file you'll need to copy or create one using the theme's [default `_config.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml) as a base.
@@ -241,14 +241,15 @@ To disable reading time for a post, add `read_time: false` its YAML Front Matter
 
 [**Disqus**](https://disqus.com/), [**Discourse**](https://www.discourse.org/), [**Facebook**](https://developers.facebook.com/docs/plugins/comments), **Google+**, and static-based commenting via [**Staticman**](https://staticman.net/) are built into the theme. First set the comment provider you'd like to use: 
 
-| Name            | Comment Provider  |
-| ----            | ----------------  |
-| **disqus**      | Disqus            |
-| **discourse**   | Discourse         |
-| **facebook**    | Facebook Comments |
-| **google-plus** | Google+ Comments  |
-| **staticman**   | Staticman         |
-| **custom**      | Other             |
+| Name             | Comment Provider          |
+| ----             | ----------------          |
+| **disqus**       | Disqus                    |
+| **discourse**    | Discourse                 |
+| **facebook**     | Facebook Comments         |
+| **google-plus**  | Google+ Comments          |
+| **staticman_v2** | Staticman v2              |
+| **staticman**    | Staticman v1 (deprecated) |
+| **custom**       | Other                     |
 
 Then add `comments: true` to each document you want comments visible on.
 
@@ -311,24 +312,62 @@ Transform user comments into `_data` files that live inside of your GitHub repos
 ###### Add Staticman as a Collaborator
 
 1. Allow Staticman push access to your GitHub repository by clicking on **Settings**, then the **Collaborators** tab and adding `staticmanapp` as a collaborator.
-2. To accept the pending invitation visit: `https://api.staticman.net/v1/connect/{your GitHub username}/{your repository name}`. Consult the Staticman "[Get Started](https://staticman.net/get-started)" guide for more info.
+2. To accept the pending invitation visit: `https://api.staticman.net/v2/connect/{your GitHub username}/{your repository name}`. Consult the Staticman "[Get Started](https://staticman.net/get-started)" guide for more info.
 
 ###### Configure Staticman
 
-Default settings have been provided in `_config.yml`. The important ones to set are  `provider: "staticman"`, `branch`, and `path`. View the [full list of configurations](https://staticman.net/docs/configuration).
+**Staticman v2**
 
-**Note:** Staticman is currently only compatible with GitHub based repositories. [Support for GitLab Pages](https://github.com/eduardoboucas/staticman/issues/22) is planned but not available yet.
-{: .notice--warning} 
+Default settings have been provided in [`staticman.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/staticman.yml) and are commented to guide you through setup. View the [full list of configurations](https://staticman.net/docs/configuration).
+
+```yaml
+# staticman.yml (defaults)
+comments:
+  allowedFields      : ["name", "email", "url", "message"]
+  branch             : "master"
+  commitMessage      : "New comment"
+  filename           : "comment-{@timestamp}"
+  format             : "yaml"
+  generatedFields:
+    date:
+      type           : "date"
+      options:
+        format       : "iso8601"
+  moderation         : true
+  path               : "/_data/comments/{options.slug}" (default)
+  requiredFields     : ["name", "email", "message"]
+  transforms:
+    email            : md5
+```
+
+These settings need to be added to your `_config.yml` file as well:
+
+```yaml
+# _config.yml (defaults)
+repository  : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+comments:
+  provider  : "staticman_v2"
+staticman:
+  branch    : "master"
+```
 
 **Branch setting:** This is the branch comment files will be sent to via pull requests. If you host your site on GitHub Pages it will likely be `master` unless your repo is setup as a project --- use `gh-pages` in that case.
 {: .notice--info}
 
+**Note:** Staticman is currently only compatible with GitHub based repositories. [Support for GitLab Pages](https://github.com/eduardoboucas/staticman/issues/22) is planned but not available yet.
+{: .notice--warning} 
+
+**Staticman v1 (deprecated)**
+
+Default settings have been provided in `_config.yml`. The important ones to set are  `provider: "staticman"`, `branch`, and `path`. View the [full list of configurations](https://staticman.net/docs/configuration).
+
 ```yaml
+# _config.yml (defaults)
 comments:
   provider: "staticman"
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : # "master", "gh-pages"
+  branch                 : "master"
   commitMessage          : "New comment."
   filename               : comment-{@timestamp}
   format                 : "yml"
@@ -346,14 +385,28 @@ staticman:
 
 ###### Comment Moderation
 
-By default comment moderation is enabled in `_config.yml`. As new comments are submitted Staticman will send a pull request. Merging these in will approve the comment, close the issue, and automatically rebuild your site (if hosted on GitHub Pages).
+By default comment moderation is enabled in `staticman.yml`. As new comments are submitted Staticman will send a pull request. Merging these in will approve the comment, close the issue, and automatically rebuild your site (if hosted on GitHub Pages).
 
 To skip this moderation step simply set `moderation: false`.
 
-**ProTip:** Create a GitHub webhook that sends a `POST` request to the following payload URL `https://api.staticman.net/v1/webhook` and triggers a "Pull request" event to delete Staticman branches on merge.
+**ProTip:** Create a GitHub webhook that sends a `POST` request to the following payload URL `https://api.staticman.net/v2/webhook` and triggers a "Pull request" event to delete Staticman branches on merge.
 {: .notice--info}
 
 ![pull-request webhook]({{ "/assets/images/mm-staticman-pr-webhook.jpg" | absolute_url }})
+
+###### reCAPTCHA Support (v2 only)
+
+To enable Google's reCAPTCHA to aid in spam detection you'll need to:
+
+1. Apply for [reCAPTCHA API](https://www.google.com/recaptcha) keys and register your site using the reCAPTCHA V2 type.
+2. Add your site and secret keys to `staticman.yml` and `_config.yml`. Be sure to properly encrypt your secret key using [Staticman's encrypt endpoint](https://staticman.net/docs/encryption).
+
+```yaml
+reCaptcha:
+  enabled: true
+  siteKey: # "6LdRBykTAAAAAFB46MnIu6ixuxwu9W1ihFF8G60Q"
+  secret: # "PznnZGu3P6eTHRPLORniSq+J61YEf+A9zmColXDM5icqF49gbunH51B8+h+i2IvewpuxtA9TFoK68TuhUp/X3YKmmqhXasegHYabY50fqF9nJh9npWNhvITdkQHeaOqnFXUIwxfiEeUt49Yoa2waRR7a5LdRAP3SVM8hz0KIBT4="
+```
 
 ##### Other Comment Providers
 
