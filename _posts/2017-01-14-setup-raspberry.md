@@ -61,18 +61,18 @@ Output:
    2:                  Apple_HFS Macintosh HD            499.2 GB   disk0s2
    3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
 
-/dev/disk1 (external, physical):
+/dev/disk2 (external, physical):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:     FDisk_partition_scheme                        *15.9 GB    disk1
-   1:             Windows_FAT_32 NO NAME                 15.9 GB    disk1s1 
+   0:     FDisk_partition_scheme                        *15.9 GB    disk2
+   1:             Windows_FAT_32 NO NAME                 15.9 GB    disk2s1 
 ```
     
-Note: We can see the SD Card is mounted on "dev/disk1 (external, physical)" 
+Note: We can see the SD Card is mounted on "dev/disk2 (external, physical)" 
     
 b. Format the SD Card 
 
 ```bash
- sudo diskutil eraseDisk FAT32 RASPBIAN MBRFormat /dev/disk1
+ sudo diskutil eraseDisk FAT32 RASPBIAN MBRFormat /dev/disk2
 ```
 
 Template: 
@@ -83,34 +83,34 @@ Output:
 
 ```bash
 Password:
-Started erase on disk1
+Started erase on disk2
 Unmounting disk
 Creating the partition map
 Waiting for partitions to activate
-Formatting disk1s1 as MS-DOS (FAT32) with name RASPBIAN
+Formatting disk2s1 as MS-DOS (FAT32) with name RASPBIAN
 512 bytes per physical sector
-/dev/rdisk1s1: 31085888 sectors in 1942868 FAT32 clusters (8192 bytes/cluster)
+/dev/rdisk2s1: 31085888 sectors in 1942868 FAT32 clusters (8192 bytes/cluster)
 bps=512 spc=16 res=32 nft=2 mid=0xf8 spt=32 hds=255 hid=2 drv=0x80 bsec=31116286 bspf=15179 rdcl=2 infs=1 bkbs=6
 Mounting disk
-Finished erase on disk1
+Finished erase on disk2
 ```
 
 c. Unmount the SD Card
 
 ```bash
- diskutil unmountDisk /dev/disk1
+ diskutil unmountDisk /dev/disk2
 ```
 
 Output:
 
 ```bash
-Unmount of all volumes on disk1 was successful
+Unmount of all volumes on disk2 was successful
 ```
 
 d. Write image into the SD Card
 
 ```bash
-sudo dd bs=1m if=/Users/Lucci/Downloads/2017-03-02-raspbian-jessie.img  of=/dev/disk1
+sudo dd bs=1m if=/Users/Lucci/Downloads/2017-03-02-raspbian-jessie.img  of=/dev/disk2
 ```
 
 template: 
@@ -142,13 +142,14 @@ See more [here](https://www.raspberrypi.org/blog/a-security-update-for-raspbian-
 f. Eject the SD Card
   
 ```bash
-diskutil eject /dev/disk1
+cd ..
+diskutil eject /dev/disk2
 ``` 
 
 Output:
 
 ```bash
-Disk /dev/disk1 ejected
+Disk /dev/disk2 ejected
 ```
 Now, the SD Card is ready to use.
 
@@ -283,24 +284,18 @@ source-directory /etc/network/interfaces.d
 auto lo
 iface lo inet loopback
 
-iface eth0 inet manual
-
-allow-hotplug wlan0
-iface wlan0 inet manual
-    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
-
-allow-hotplug wlan1
-iface wlan1 inet manual
-    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
-```
-
-Adapt with your own configuration
-```text
+auto eth0
 iface eth0 inet static
-    address 192.168.0.18
+    address 192.168.0.13
     netmask 255.255.255.0
     gateway 192.168.0.254
 ```
+
+or Set Permanent DHCP IP on your router
+
+{% include figure image_path="/assets/images/setup-permanent-dhcp.png" alt="Set up permanent IP" caption="Set up permanent IP" %}
+
+For me it's a best practise.
 
 ### Enable WIFI
 
@@ -308,8 +303,6 @@ a. Edit
 ```
 sudo vim /etc/wpa_supplicant/wpa_supplicant.conf
 ```
-
-
 
 b. Adapt according to your security protocol
 
@@ -321,12 +314,13 @@ Generate key
 sudo wpa_passphrase "testing" "testingPassword" >> /etc/wpa_supplicant/wpa_supplicant.conf
 ```
 
+Note don't forget to remove the comment with your clear password
+
 ```text
    country=FR
    network={
            ssid="freebox_lucci1"
            psk=22889c61e999b046d86190ca2dc9a9a82c80027f8f28a6372d760a8320a91858
-           scan_ssid=1
    }
 
 ```
@@ -336,17 +330,11 @@ c. Edit
 sudo vim /etc/network/interfaces
 ```
 
-d. Adapt according to your own configuration
-
-Set wlan0 as primary interface to lookup.
-```text
-auto wlan0
-```
 e. Set static IP and wpa-conf to wlan0
 ```text
-allow-hotplug wlan0
+auto wlan0
 iface wlan0 inet static
-    address 192.168.0.18
+    address 192.168.0.13
     netmask 255.255.255.0
     gateway 192.168.0.254
     wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
@@ -362,24 +350,24 @@ Final config
 # Include files from /etc/network/interfaces.d:
 source-directory /etc/network/interfaces.d
 
-auto wlan0
-iface lo inet loopback
+# The loopback network interface
+ auto lo
+ iface lo inet loopback
 
+# The primary network interface
+allow-hotplug eth0
 iface eth0 inet static
-    address 192.168.0.18
-    netmask 255.255.255.0
-    gateway 192.168.0.254
+        address 192.168.0.11
+        netmask 255.255.255.0
+        gateway 192.168.0.254
 
-allow-hotplug wlan0
+# Wi-Fi
+auto wlan0
 iface wlan0 inet static
-    address 192.168.0.18
-    netmask 255.255.255.0
-    gateway 192.168.0.254
-    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
-
-allow-hotplug wlan1
-iface wlan1 inet manual
-    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+        address 192.168.0.13
+        netmask 255.255.255.0
+        gateway 192.168.0.254
+        wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf 
 ```
 
 f. Check config
@@ -424,12 +412,12 @@ ip link show wlan0
 h. Wait for network
 
 ```bash
-sudo rasp-config
+sudo raspi-config
 ```
 
-{% include figure image_path="/assets/images/rasp-config-1.png" alt="Set wait for network" caption="Set wait for network" %}
+{% include figure image_path="/assets/images/raspconfig-1.png" alt="Set wait for network" caption="Set wait for network" %}
 
-{% include figure image_path="/assets/images/rasp-config-1.png" alt="Set wait for network" caption="Set wait for network" %}
+{% include figure image_path="/assets/images/raspconfig-1.png" alt="Set wait for network" caption="Set wait for network" %}
 
 h. Reboot
 
