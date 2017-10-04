@@ -1,0 +1,58 @@
+/* https://mentormate.com/blog/css-postit-note/ */
+.postit {
+  line-height: 1;
+  text-align:center;
+  width: 275px;
+  margin: 25px;
+  padding-top:1em;
+  padding-bottom:1em;
+  min-height:150px;
+  position:relative;
+  border:1px solid #E8E8E8;
+  border-top:45px solid #fdfd86;
+  font-size:22px;
+  border-bottom-right-radius: 60px 5px;
+  display:inline-block;
+  background: #ffff88; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(81%,#ffff88), color-stop(82%,#ffff88), color-stop(82%,#ffff88), color-stop(100%,#ffffc6)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* IE10+ */
+  background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* W3C */
+  @include breakpoint($small) {
+    padding-top:35px;
+    min-height:250px;
+    border-top:60px solid #fdfd86;
+  }
+}
+
+.postit:after {
+  content: "";
+  position:absolute;
+  z-index:-1;
+  right:-0px; bottom:20px;
+  width:200px;
+  height: 25px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow:2px 15px 5px rgba(0, 0, 0, 0.40);
+  -moz-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+  -webkit-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+  -o-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+  -ms-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+  transform: matrix(-1, -0.1, 0, 1, 0, 0);
+}
+
+.postit__wrapper {
+
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  transform: rotate(2deg);
+  @include breakpoint($small) {
+    transform: rotate(2deg);
+    float: right;
+  }
+}

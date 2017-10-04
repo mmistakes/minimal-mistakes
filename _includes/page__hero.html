@@ -25,6 +25,14 @@
 <div class="page__hero{% if page.header.overlay_color or page.header.overlay_image %}--overlay{% endif %}"
   style="{% if page.header.overlay_color %}background-color: {{ page.header.overlay_color | default: 'transparent' }};{% endif %} {% if overlay_img_path %}background-image: {% if overlay_filter %}linear-gradient({{ overlay_filter }}, {{ overlay_filter }}), {% endif %}url('{{ overlay_img_path }}');{% endif %}"
 >
+  {% if page.header.postit %}
+  <div class="postit__wrapper">
+    <a class="postit" {% if page.header.postit.url %} href="{{ page.header.postit.url | absolute_url }}" {% endif %}>
+      <h1>{{ page.header.postit.headline }}</h1>
+      <span>{{ page.header.postit.caption }}</span>
+    </a>
+  </div>
+  {% endif %}
   {% if page.header.overlay_color or page.header.overlay_image %}
     <div class="wrapper">
       <h1 class="page__title" itemprop="headline">
