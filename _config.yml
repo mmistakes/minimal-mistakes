@@ -12,7 +12,7 @@ locale                   : "en"
 title                    : "Sarah's Notes"
 title_separator          : "-"
 name                     : "Sarah Penir"
-description              : "A compilation of the things i've learned over time"
+description              : "A compilation of the things I've learned over time"
 url                      : "https://sarahpenir.github.io" # the base hostname & protocol for your site e.g. 
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -85,8 +85,8 @@ analytics:
 author:
   name             : "Sarah Penir"
   avatar           : "https://avatars0.githubusercontent.com/u/8283751?v=4&s=400" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Sarah here, a knowledge hoarder. This is a self-serving space that compiles some of the things I've learned over time mostly about coding, bioinformatics, and statistics."
-  location         : "PH"
+  bio              : "I'm a knowledge hoarder. This is a self-serving space that compiles some of the things I've learned over time mostly about coding, bioinformatics, and statistics."
+  location         : "Manila, PH"
   email            :
   uri              :
   bitbucket        :
