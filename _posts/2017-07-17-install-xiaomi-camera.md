@@ -131,14 +131,14 @@ audio_format = G726,PCM
 default_audio_format = PCM
 ```
 
-
 http://www.gearbest.com/ip-cameras/pp_487830.html
 
-
- sudo vim /volume1/document/SSCamExport_export-xiaomi/.ExpCam
+sudo vim /volume1/document/SSCamExport_export-xiaomi/.ExpCam
 
 refresh before import 
 
 path = '/unicast'
 live_path = '/unicast'
 http://www.androidpimp.com/home-security-cameras/xiaomi-xiaofang-review
+
+see more [here](https://github.com/samtap/fang-hacks)
