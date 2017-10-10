@@ -317,6 +317,8 @@ sudo wpa_passphrase "testing" "testingPassword" >> /etc/wpa_supplicant/wpa_suppl
 Note don't forget to remove the comment with your clear password
 
 ```text
+   ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+   update_config=1 
    country=FR
    network={
            ssid="freebox_lucci1"
@@ -351,18 +353,14 @@ Final config
 source-directory /etc/network/interfaces.d
 
 # The loopback network interface
- auto lo
- iface lo inet loopback
+auto lo
+iface lo inet loopback
 
-# The primary network interface
-allow-hotplug eth0
-iface eth0 inet static
-        address 192.168.0.11
-        netmask 255.255.255.0
-        gateway 192.168.0.254
+# Ethernet
+iface eth0 inet dhcp
 
 # Wi-Fi
-auto wlan0
+allow-hotplug wlan0
 iface wlan0 inet static
         address 192.168.0.13
         netmask 255.255.255.0
