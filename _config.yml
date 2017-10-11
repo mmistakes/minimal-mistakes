@@ -9,7 +9,7 @@ minimal_mistakes_skin    : "dark" # "air", "contrast", "dark", "dirt", "mint", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "reBooted"
+title                    : "reBooted 4 embedded software"
 title_separator          : "|"
 name                     : "Eddy Kim"
 description              : "remastered embedded software"
@@ -85,7 +85,7 @@ analytics:
 author:
   name             : "Eddy Kim"
   avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "rebooted eddy !"
+  bio              : "rebooted eddy"
   location         : "Seoul, South Korea"
   email            : "eddykim72@outlook.com"
   uri              :
