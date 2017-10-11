@@ -235,6 +235,9 @@ compress_html:
   ignore:
     envs: development
 
+sidebar:
+  nav: "sidemenu"
+
 # Defaults
 defaults:
   # _posts
@@ -247,6 +250,4 @@ defaults:
       read_time: true
       comments: true
       share: true
-      related: true
-sidebar:
-  nav: "sidemenu"      
+      related: true   
