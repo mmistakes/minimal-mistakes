@@ -2,7 +2,7 @@
 main:
   - title: "Quick-Start Guide"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "About"
+  - title: "나?"
     url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "Sample Posts"
     url: /year-archive/
@@ -16,7 +16,7 @@ sidemenu:
     children:
       - title: "C/C++"
         url: /
-        
+
   - title: Technical Notes
     children:
         - title: "C/C++"
