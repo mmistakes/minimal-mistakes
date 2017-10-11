@@ -235,7 +235,9 @@ compress_html:
   ignore:
     envs: development
 
-
+sidebar:
+  nav: "sidemenu"
+  
 # Defaults
 defaults:
   # _posts

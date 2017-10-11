@@ -11,12 +11,13 @@ main:
   - title: "Sitemap"
     url: /sitemap/
 
-sidebar_left:
-  - title: "Embedded Software"
+sidemenu:
+  - title: Embedded Software
     children:
       - title: "C/C++"
         url: /
-  - title: "Technical Notes"
+        
+  - title: Technical Notes
     children:
         - title: "C/C++"
           url: /
