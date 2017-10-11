@@ -85,7 +85,7 @@ analytics:
 author:
   name             : "Eddy Kim"
   avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "rebooted eddy"
+  bio              : "Less is more..."
   location         : "Seoul, South Korea"
   email            : "eddykim72@outlook.com"
   uri              :
@@ -235,11 +235,10 @@ compress_html:
   ignore:
     envs: development
 
-sidebar:
-  nav: "sidemenu"
-
 # Defaults
 defaults:
+  sidebar:
+    nav: "sidemenu"  
   # _posts
   - scope:
       path: ""
