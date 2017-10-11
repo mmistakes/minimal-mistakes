@@ -9,7 +9,7 @@ minimal_mistakes_skin    : "dark" # "air", "contrast", "dark", "dirt", "mint", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Eddy - Reboot"
+title                    : "Eddy - Rebooted"
 title_separator          : "|"
 name                     : "Eddy Kim"
 description              : "remastered software"
@@ -84,7 +84,7 @@ analytics:
 # Site Author
 author:
   name             : "Eun Kwon(Eddy) Kim"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio-photo.png"
   bio              : "?!"
   location         : "Seoul, South Korea"
   email            : "eddykim72@outlook.com"
