@@ -5,7 +5,7 @@ excerpt: "The lecture programme for the ShanghAI Lectures 2017"
 permalink: /programme/
 ---
 
-### The Lecture Programme for the ShanghAI Lectures 2017 is coming soon!!! Check back soon!
+### The Lecture Programme for the ShanghAI Lectures 2017 is coming!!! Check back soon!
 
 
 ### Lecture 1: Artificial Intelligence: things can be seen differently
