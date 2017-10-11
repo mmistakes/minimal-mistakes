@@ -84,8 +84,8 @@ analytics:
 # Site Author
 author:
   name             : "Eddy Kim"
-  avatar           : "/assets/images/bio-photo.png"
-  bio              : "?!"
+  avatar           : #"/assets/images/bio-photo.png"
+  bio              : "rebooted eddy !"
   location         : "Seoul, South Korea"
   email            : "eddykim72@outlook.com"
   uri              :
