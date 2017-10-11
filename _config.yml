@@ -237,8 +237,6 @@ compress_html:
 
 # Defaults
 defaults:
-  sidebar:
-    nav: "sidemenu"  
   # _posts
   - scope:
       path: ""
