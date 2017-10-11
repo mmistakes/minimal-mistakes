@@ -1,9 +1,12 @@
 ---
-title: "The Lecture Programme for the ShanghAI Lectures 2017 is coming soon!!! Check back soon!"
+title: "Lecture Programme"
 layout: single
 excerpt: "The lecture programme for the ShanghAI Lectures 2017"
 permalink: /programme/
 ---
+
+### The Lecture Programme for the ShanghAI Lectures 2017 is coming soon!!! Check back soon!
+
 
 ### Lecture 1: Artificial Intelligence: things can be seen differently
 * 2016-10-27  09:30 to 11:00 CEST [Recording](https://youtu.be/s68ULSvdJtc)
