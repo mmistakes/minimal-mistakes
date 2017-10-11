@@ -1,7 +1,7 @@
 ---
-title: "Lecture Programme"
+title: "The Lecture Programme for the ShanghAI Lectures 2017 is coming soon!!! Check back soon!"
 layout: single
-excerpt: "The lecture programme for the ShanghAI Lectures 2017 is coming soon!!! Check back soon!"
+excerpt: "The lecture programme for the ShanghAI Lectures 2017"
 permalink: /programme/
 ---
 
