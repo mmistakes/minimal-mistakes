@@ -8,7 +8,7 @@
 minimal_mistakes_skin    : "dark" # "air", "contrast", "dark", "dirt", "mint", "sunrise"
 
 # Site Settings
-locale                   : "en"
+locale                   : "ko-KR"
 title                    : "Eddy - Reboot"
 title_separator          : "|"
 name                     : "Eddy Kim"
