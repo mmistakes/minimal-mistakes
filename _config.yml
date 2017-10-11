@@ -9,7 +9,7 @@ minimal_mistakes_skin    : "default" # "air", "contrast", "dark", "dirt", "mint"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "reBooted embedded software"
+title                    : "reBooted embedded software..."
 title_separator          : "|"
 name                     : "Eddy Kim"
 description              : "remastered embedded software"
