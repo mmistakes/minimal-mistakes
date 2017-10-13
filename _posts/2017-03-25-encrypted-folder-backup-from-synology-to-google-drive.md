@@ -10,6 +10,10 @@ tags:
  - encryption
  - backup
 ---
+**UPDATE:** Google Drive doesn't automatically empty trash. So if you use this method and files get moved to trash because you deleted them from your NAS or created a new version then your Google Drive storage will explode and it's all in the trash. See the section on [cleanup](#how-to-do-a-bulk-empty-of-google-drive-trash) for the solution.
+{: .notice--success}
+
+
 Synology Cloud Sync is very useful and particularly powerful when paired with Hyper Backup. However, there are some more complex scenarios that aren't supported if you're interested in encrypted backups to your favorite cloud provider. For instance:
 1. Selecting a root folder on the synology that is encrypted
 2. Backing up a mix of encrypted folders and non-encrypted folders
@@ -73,3 +77,16 @@ $ find . -name '*_TailCharacterConflict' -print0 | xargs -0 rename 's/\.\_.*_Tai
 ```bash
 $ diff -rq /path/to/orig /path/to/gdrive_version
 ```
+
+## How to do a bulk empty of Google Drive trash
+Google Drive doesn't automatically empty trash. So if you use this method and files get moved to trash because you deleted them from your NAS or created a new version then your Google Drive storage will explode and it's all in the trash.
+
+Going to the webpage and emptying the trash could take forever, so I found a great project that does this programmatically. I don't have it scripted to run on a regular basis yet, but that would be easily doable. The project is called [rclone](https://rclone.org/) - it's open source and super useful.
+
+At the time of writing the Google Drive cleanup feature wasn't available in the official release yet, so I downloaded the beta. Then I ran the following:
+```bash
+$ rclone config #this prompted sharing a login with the appropriate Google account which you have to do
+$ rclone cleanup
+```
+
+That's it. Within a few minutes I noticed the total used storage on Google Drive starting draw down to a more reasonable number and within an hour or two it matched what I expected from my NAS backup.
