@@ -34,6 +34,15 @@ sidebar-menu:
         url: /management/schedule
       - title: "Мережа класів"
         url: /management/classes
+      - title: "Педагогічний колектив"
+        url: /management/teachers
+
+  - title: Навчальний процес
+    children:
+      - title: Режим роботи
+        url: /process/mode
+      - title: Розклад
+        url: http://mz.com.ua/school-wall/3541
 
   - title: Звіти директора
     url: /reports
