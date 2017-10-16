@@ -2,6 +2,8 @@
 title: "Граємо, співаємо"
 sidebar:
   nav: "sidebar-menu"
+header:
+  teaser: /assets/images/posts/2017/07/graemo-spivaemo/graemo-spivaemo-0.jpg
 gallery:
   - url: /assets/images/posts/2017/07/graemo-spivaemo/graemo-spivaemo-0.jpg
     image_path: /assets/images/posts/2017/07/graemo-spivaemo/graemo-spivaemo-0.jpg
