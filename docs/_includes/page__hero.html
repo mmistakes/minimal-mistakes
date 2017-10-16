@@ -22,6 +22,14 @@
   {% capture overlay_filter %}rgba(0, 0, 0, {{ page.header.overlay_filter }}){% endcapture %}
 {% endif %}
 
+{% if page.header.image_description %}
+  {% assign image_description = page.header.image_description %}
+{% else %}
+  {% assign image_description = page.title %}
+{% endif %}
+
+{% assign image_description = image_description | markdownify | strip_html | strip_newlines | escape_once %}
+
 <div class="page__hero{% if page.header.overlay_color or page.header.overlay_image %}--overlay{% endif %}"
   style="{% if page.header.overlay_color %}background-color: {{ page.header.overlay_color | default: 'transparent' }};{% endif %} {% if overlay_img_path %}background-image: {% if overlay_filter %}linear-gradient({{ overlay_filter }}, {{ overlay_filter }}), {% endif %}url('{{ overlay_img_path }}');{% endif %}"
 >
@@ -45,7 +53,7 @@
       {% endif %}
     </div>
   {% else %}
-    <img src="{{ img_path }}" alt="{{ page.title }}" class="page__hero-image">
+    <img src="{{ img_path }}" alt="{{ image_description }}" class="page__hero-image">
   {% endif %}
   {% if page.header.caption %}
     <span class="page__hero-caption">{{ page.header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>

@@ -2,7 +2,7 @@
 title: "Installation"
 permalink: /docs/installation/
 excerpt: "Instructions for installing the theme for new and existing Jekyll based sites."
-last_modified_at: 2017-04-04T12:44:56-04:00
+last_modified_at: 2017-08-04T12:38:01-04:00
 ---
 
 ## Install the Theme
@@ -74,16 +74,19 @@ source "https://rubygems.org"
 
 # To upgrade, run `bundle update`.
 
-gem "jekyll", "~> 3.3.0"
+gem "jekyll", "~> 3.5"
 gem "minimal-mistakes-jekyll"
 
-# If you have any plugins, put them here!
+# The following plugins are automatically loaded by the theme-gem:
+#   gem "jekyll-paginate"
+#   gem "jekyll-sitemap"
+#   gem "jekyll-gist"
+#   gem "jekyll-feed"
+#   gem "jemoji"
+#   gem "jekyll-data"
+#
+# If you have any other plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-paginate"
-  gem "jekyll-sitemap"
-  gem "jekyll-gist"
-  gem "jekyll-feed"
-  gem "jemoji"
 end
 ```
 

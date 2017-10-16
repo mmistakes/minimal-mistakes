@@ -2,17 +2,127 @@
 
 ### Enhancements
 
-- Add Swedish localized UI text strings. [#996](https://github.com/mmistakes/minimal-mistakes/pull/996)
+- Add `alt` description to avatar image. [#1226](https://github.com/mmistakes/minimal-mistakes/pull/1226)
+- Clarify documentation about which `assets` folders and files to remove when migrating to the gem version of the theme. [#1268](https://github.com/mmistakes/minimal-mistakes/issues/1268)
+- Add note about Staticman GitHub compatibility. [#1273](https://github.com/mmistakes/minimal-mistakes/issues/1273)
+- Add missing Brazilian Portuguese translations to `ui-text.yml`. [#1278](https://github.com/mmistakes/minimal-mistakes/pull/1278)
+- Update font stack documentation. [#1292](https://github.com/mmistakes/minimal-mistakes/pull/1292)
+- Improve accessibility of navigation menu button. [#1099](https://github.com/mmistakes/minimal-mistakes/issues/1099)
+- Add Naver Webmaster Tools verification. [#1286](https://github.com/mmistakes/minimal-mistakes/pull/1286)
+- Add support for Staticman v2 endpoint and reCAPTCHA.
+
+### Bug Fixes
+
+- Fix system font rendering in Chrome on macOS/OS X. [#1290](https://github.com/mmistakes/minimal-mistakes/pull/1290)
+
+## [4.6.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.6.0)
+
+### Enhancements
+
+- Test strict Front Matter in `/test` site. [#1236](https://github.com/mmistakes/minimal-mistakes/pull/1236)
+- Rename `gems` key to `plugins`. [#1239](https://github.com/mmistakes/minimal-mistakes/pull/1239)
+- Add [YIQ Color Contrast](https://github.com/easy-designs/yiq-color-contrast) mixin for determining lightness of a color.
+- DRY up button CSS using Sass lists and YIQ Color Contrast mixin.
+- Add `btn--primary` button class. **Note:** elements that were previously using only a `.btn` class will now also need `.btn--primary` (eg. `<a class="btn btn--primary" href="#">my link</a>`).
+- Add `air`, `contrast`, `dark`, `dirt`, `mint`, and `sunrise` skin color options. [#1208](https://github.com/mmistakes/minimal-mistakes/issues/1208)
+- Allow scripts in `<head>` and before `</body>` to be added/overridden with `head_scripts` and `footer_scripts` arrays in `_config.yml`. [#1241](https://github.com/mmistakes/minimal-mistakes/pull/1241)
+- Update JavaScript dependencies: jQuery `v3.2.1`, jQuery Smooth Scroll `v2.2.0`, and Magnific Popup `v1.1.0`. [#328690652](https://github.com/mmistakes/minimal-mistakes/pull/1241#issuecomment-328690652)
+
+## [4.5.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.5.2)
+
+### Enhancements
+
+- Add `.page__comments-form` to "non-printing" selectors in print styles. [#1195](https://github.com/mmistakes/minimal-mistakes/pull/1195)
+- Add LinkedIn and Steam author sidebar examples to `_config.yml`. [#1203](https://github.com/mmistakes/minimal-mistakes/pull/1203) [#1204](https://github.com/mmistakes/minimal-mistakes/pull/1204)
+- Remove the http-equiv="cleartype" meta tag. [#1087](https://github.com/mmistakes/minimal-mistakes/pull/1087)
+- Clarify documentation for `jekyll-archives` plugin and how to install. [#1206](https://github.com/mmistakes/minimal-mistakes/pull/1206)
+- Clarify documentation around taxonomy page and index generation. [#1207](https://github.com/mmistakes/minimal-mistakes/pull/1207)
+- Fix "Posts by tag" grammar in documentation. [#1209](https://github.com/mmistakes/minimal-mistakes/pull/1209)
+- Improve Chinese `date_label` and `minute_read` translations in `ui-text.yml`. [#1205](https://github.com/mmistakes/minimal-mistakes/pull/1205) [#1211](https://github.com/mmistakes/minimal-mistakes/pull/1211)
+- Add note to Quick-Start Guide about GitHub Pages hosting alternatives that allow 3rd party gem themes and Jekyll plugins.
+- Add note to configuration documentation about Cloudflare minification as an alternative to `layout: compress`. [#1217](https://github.com/mmistakes/minimal-mistakes/pull/1217)
+- Show 4 latest posts in "You May Also Enjoy" module when `related: true` and no related posts are found due to `lsi` ([latent semantic indexing](https://en.wikipedia.org/wiki/Latent_semantic_analysis#Latent_semantic_indexing)) being disabled on GitHub Pages. [#554](https://github.com/mmistakes/minimal-mistakes/issues/554)
+- Truncate archive item titles' that overflow with an ellipsis. [#1213](https://github.com/mmistakes/minimal-mistakes/issues/1213)
+
+### Bug Fixes
+
+- Fix license URL in README file. [#1189](https://github.com/mmistakes/minimal-mistakes/pull/1189)
+- Reduce amount of blank pages when printing in Chrome. [#1196](https://github.com/mmistakes/minimal-mistakes/issues/1196)
+- Remove `#disqus_thread` duplicate  from `comments-providers/disqus.html` as it is already in `comments.html` include. [#1199](https://github.com/mmistakes/minimal-mistakes/issues/1199)
+- Fix Liquid syntax errors in `tag-list.html` and `category-list.html` includes by removing parenthesis in `assign`s. [#1223](https://github.com/mmistakes/minimal-mistakes/issues/1223)
+- Fix Liquid syntax error: "Expected id but found open_square in `"{{ page.[include.id] }}"`" in `gallery` and `feature_row` includes.
+- Fix Liquid syntax error: "Expected end_of_string but found pipe in `"name in __names | sort"`" in `group-by-array` include.
+
+## [4.5.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.5.1)
+
+### Enhancements
+
+- Add Greek and Danish localized UI text strings. [#1159](https://github.com/mmistakes/minimal-mistakes/pull/1159) [#1188](https://github.com/mmistakes/minimal-mistakes/pull/1188)
+- Remove blank YAML Front Matter from JavaScript banner. [#1158](https://github.com/mmistakes/minimal-mistakes/issues/1158)
+- Improve `page` and `archive` layouts to visually center main content and harmonize sidebar widths and placement. [#1166](https://github.com/mmistakes/minimal-mistakes/pull/1166)
+- Increase font-size of code blocks.
+- Reduce indent of nested "table of contents" links.
+- Extend [archive grid view](https://mmistakes.github.io/minimal-mistakes/docs/layouts/) to the right to better fill the page.
+- URL encode title and page URL in social share links. [#1177](https://github.com/mmistakes/minimal-mistakes/pull/1177)
+- Replace old Disqus script with new Universal Embed Code. [#1179](https://github.com/mmistakes/minimal-mistakes/pull/1179)
+
+### Bug Fixes
+
+- Fix positioning of sidebar table of contents when using `layout: splash`. [#1169](https://github.com/mmistakes/minimal-mistakes/issues/1169)
+- Fix "follow" links `z-index` order to avoid overlapping issues. [#1167](https://github.com/mmistakes/minimal-mistakes/issues/1167)
+
+### Maintenance
+
+- Fix typo `words_per_minute` typo in documentation. [#1164](https://github.com/mmistakes/minimal-mistakes/pull/1164)
+- Remove outside and right borders in `table`s.
+- Adjust width of `.sidebar` to match `.sidebar__right`.
+- Add sample documents to ["portfolio" collection](https://mmistakes.github.io/minimal-mistakes/portfolio/) for testing grid view.
+- Fix typo in stylesheets documentation. [#1170](https://github.com/mmistakes/minimal-mistakes/pull/1170)
+- Add note about setting Discourse `server` as a scheme-less URL (eg. `meta.discourse.com` and not `http://meta.discourse.com`) in `_config.yml`. [#1182](https://github.com/mmistakes/minimal-mistakes/issues/1182)
+
+## [4.5.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.5.0)
+
+### Enhancements
+
+- Add scrollbar to sidebars with overflowing content that extends outside the viewport's height. [#706](https://github.com/mmistakes/minimal-mistakes/issues/706)
+- Add missing Spanish UI text strings. [#1118](https://github.com/mmistakes/minimal-mistakes/pull/1118)
+- Update Susy to version 3 and rewrite grid CSS to be more readable.
+- Refactor intro animations into a separate Sass variable `$intro-transition` to allow for customizing. [#1147](https://github.com/mmistakes/minimal-mistakes/pull/1147)
+- Add [**jekyll-data**](https://github.com/ashmaroli/jekyll-data) as a dependency to read data files from theme-gem. [#1131](https://github.com/mmistakes/minimal-mistakes/pull/1131)
+- Add support for customizing header image alternative text through YAML Front Matter. [#1138](https://github.com/mmistakes/minimal-mistakes/pull/1138)
+
+### Bug Fixes
+
+- Fix Sass `DEPRECATION WARNING: Passing a string to call()` by [upgrading Susy to version 3](https://github.com/mmistakes/minimal-mistakes/commit/387f8149d6270b876f224a57a07062ffb0647938). [#1114](https://github.com/mmistakes/minimal-mistakes/issues/1114)
+- Fix disappearing author profile links due to tapping the "Follow" button and changing a browser's viewport width to > `$lg`. [#1136](https://github.com/mmistakes/minimal-mistakes/issues/1136)
+
+### Maintenance
+
+- Replace reference to "Basically Basic theme" with **Minimal Mistakes**. [#1149](https://github.com/mmistakes/minimal-mistakes/pull/1149)
+- Add documentation for disabling CSS3 animations. [#1150](https://github.com/mmistakes/minimal-mistakes/pull/1150)
+- Update quickstart, installation, and overriding defaults documentation. [#1151](https://github.com/mmistakes/minimal-mistakes/pull/1151)
+
+## [4.4.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.4.2)
+
+### Enhancements
+
+- Add Swedish, Dutch, and Indonesian localized UI text strings. [#996](https://github.com/mmistakes/minimal-mistakes/pull/996) [#1081](https://github.com/mmistakes/minimal-mistakes/pull/1081) [#1101](https://github.com/mmistakes/minimal-mistakes/pull/1101)
 - Add Bitbucket social icon color. [#1009](https://github.com/mmistakes/minimal-mistakes/pull/1009)
+- Add GitLab to author sidebar. [#1050](https://github.com/mmistakes/minimal-mistakes/pull/1050)
+- Add Sass variable for navicon link hover color. [#1089](https://github.com/mmistakes/minimal-mistakes/pull/1089) [#1088](https://github.com/mmistakes/minimal-mistakes/pull/1088)
 
 ### Bug Fixes
 
 - Toggle close button on `mouseleave`. [#975](https://github.com/mmistakes/minimal-mistakes/issues/975)
 - Remove extraneous `</a>` and `</li>` tags from `paginator.html` include. [#1038](https://github.com/mmistakes/minimal-mistakes/pull/1038)
+- Fix Google+ comments provider includes. [#1092](https://github.com/mmistakes/minimal-mistakes/issues/1092)
+- Replace category variable used in `_includes/breadcrumbs.html` to `site.category_archive` to avoid conflicts with `site.categories`. [#1063](https://github.com/mmistakes/minimal-mistakes/pull/1063) [#329](https://github.com/mmistakes/minimal-mistakes/issues/329)
 
 ### Maintenance
 
 - Add mention of Greek localized UI text strings to theme documentation. [#972](https://github.com/mmistakes/minimal-mistakes/pull/972)
+- Update Greek localized UI text strings. [#1054](https://github.com/mmistakes/minimal-mistakes/pull/1054)
+- Add documentation for adding teaser images in grid view using `header.teaser`.
 
 ## [4.4.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.4.1)
 

@@ -102,6 +102,17 @@ Do It Live
   3. List item three
   4. List item four
 
+## Forms
+
+<form>
+  <fieldset>
+    <legend>Personalia:</legend>
+    Name: <input type="text" size="30"><br>
+    Email: <input type="text" size="30"><br>
+    Date of birth: <input type="text" size="10">
+  </fieldset>
+</form>
+
 ## Buttons
 
 Make any link standout more when applying the `.btn` class.

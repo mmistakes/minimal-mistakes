@@ -2,10 +2,12 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-last_modified_at: 2016-11-29T08:44:22-05:00
+last_modified_at: 2017-10-04T16:31:28-04:00
 ---
 
 Settings that affect your entire site can be changed in [Jekyll's configuration file](https://jekyllrb.com/docs/configuration/): `_config.yml`, found in the root of your project. If you don't have this file you'll need to copy or create one using the theme's [default `_config.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml) as a base.
+
+{% include toc %}
 
 **Note:** for technical reasons, `_config.yml` is NOT reloaded automatically when used with `jekyll serve`. If you make any changes to this file, please restart the server process for them to be applied.
 {: .notice--warning}
@@ -21,6 +23,71 @@ If you're using the Ruby gem version of the theme you'll need this line to activ
 ```yaml
 theme: minimal-mistakes-jekyll
 ```
+
+### Skin
+
+Easily change the color scheme of the theme using one of the provided "skins":
+
+```yaml
+minimal_mistakes_skin : "default" # "air", "contrast", "dark", "dirt", "mint", "sunrise"
+```
+
+**Note:** If you have made edits to the theme's CSS files be sure to update [`/assets/css/main.scss`](https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss) to include `@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin` before the `minimal-mistakes` import.
+{: .notice--warning}
+
+#### Air skin: `air`
+{:.no_toc}
+
+<figure class="half">
+    <a href="{{ site.baseurl }}/assets/images/air-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/air-skin-archive.png"></a>
+    <a href="{{ site.baseurl }}/assets/images/air-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/air-skin-post.png"></a>
+    <figcaption>Calm and blue.</figcaption>
+</figure>
+
+#### Contrast skin: `contrast`
+{:.no_toc}
+
+<figure class="half">
+    <a href="{{ site.baseurl }}/assets/images/contrast-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/contrast-skin-archive.png"></a>
+    <a href="{{ site.baseurl }}/assets/images/contrast-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/contrast-skin-post.png"></a>
+    <figcaption>Retro feel with bold blue links and inverted footer.</figcaption>
+</figure>
+
+#### Dark skin: `dark`
+{:.no_toc}
+
+<figure class="half">
+    <a href="{{ site.baseurl }}/assets/images/dark-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/dark-skin-archive.png"></a>
+    <a href="{{ site.baseurl }}/assets/images/dark-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/dark-skin-post.png"></a>
+    <figcaption>Inverted palette, white text on a dark background.</figcaption>
+</figure>
+
+#### Dirt skin: `dirt`
+{:.no_toc}
+
+<figure class="half">
+    <a href="{{ site.baseurl }}/assets/images/dirt-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/dirt-skin-archive.png"></a>
+    <a href="{{ site.baseurl }}/assets/images/dirt-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/dirt-skin-post.png"></a>
+    <figcaption>Earthy tones.</figcaption>
+</figure>
+
+#### Mint skin: `mint`
+{:.no_toc}
+
+<figure class="half">
+    <a href="{{ site.baseurl }}/assets/images/mint-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/mint-skin-archive.png"></a>
+    <a href="{{ site.baseurl }}/assets/images/mint-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/mint-skin-post.png"></a>
+    <figcaption>Minty fresh green.</figcaption>
+</figure>
+
+#### Sunrise skin: `sunrise`
+{:.no_toc}
+
+<figure class="half">
+    <a href="{{ site.baseurl }}/assets/images/sunrise-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/sunrise-skin-archive.png"></a>
+    <a href="{{ site.baseurl }}/assets/images/sunrise-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/sunrise-skin-post.png"></a>
+    <figcaption>Oranges and red.</figcaption>
+</figure>
 
 ### Site Locale
 
@@ -89,7 +156,7 @@ Add your repository name with organization to your site's configuration file, `_
 repository: "username/repo-name"
 ```
 
-"NWO" stands for "name with owner." It is GitHub lingo for the username of the owner of the repository plus a forward slash plus the name of the repository, e.g. '**mmistakes/minimal-mistakes**', where '**mmistakes**' is the owner and '**minimal-mistakes**' is the repository name.
+"NWO" stands for "name with owner." It is GitHub lingo for the username of the owner of the repository plus a forward slash plus the name of the repository, e.g. `mmistakes/minimal-mistakes`, where **mmistakes** is the owner and **minimal-mistakes** is the repository name.
 
 Your `site.github.*` fields should fill in like normal. If you run Jekyll with the --verbose flag, you should be able to see all the API calls made.
 
@@ -99,6 +166,21 @@ If you don't set `repository` correctly you may see the following error when try
 {: .notice--danger}
 
 For more information on how `site.github` data can be used with Jekyll check out [`github-metadata`'s documentation](https://github.com/jekyll/github-metadata).
+
+### Site Scripts
+
+Add scripts to the `<head>` or closing `</body>` elements by assigning paths to either `head_scripts` and/or `footer_scripts`.
+
+For example, to add a CDN version of jQuery to page's head along with a custom script you'd do the following:
+
+```yaml
+head_scripts:
+  - https://code.jquery.com/jquery-3.2.1.min.js
+  - /assets/js/your-custom-head-script.js
+```
+
+Consult the [JavaScript documentation]({{ site.baseurl }}{% link _docs/17-javascript.md %}) for more information on working with theme scripts.
+{: .notice--info}
 
 ### Site Default Teaser Image
 
@@ -137,7 +219,7 @@ Breadcrumb start link text and separator character can both be changed in the [U
 
 ### Reading Time
 
-Enable estimated reading time snippets with `read_time: true` in YAML Front Matter. `200` has been set as the default words per minute value --- which can be changed by adjusting `words_per_minutes: ` in `_config.yml`.
+Enable estimated reading time snippets with `read_time: true` in YAML Front Matter. `200` has been set as the default words per minute value --- which can be changed by adjusting `words_per_minute: ` in `_config.yml`.
 
 ![reading time example]({{ "/assets/images/mm-read-time-example.jpg" | absolute_url }})
 
@@ -159,14 +241,15 @@ To disable reading time for a post, add `read_time: false` its YAML Front Matter
 
 [**Disqus**](https://disqus.com/), [**Discourse**](https://www.discourse.org/), [**Facebook**](https://developers.facebook.com/docs/plugins/comments), **Google+**, and static-based commenting via [**Staticman**](https://staticman.net/) are built into the theme. First set the comment provider you'd like to use: 
 
-| Name            | Comment Provider  |
-| ----            | ----------------  |
-| **disqus**      | Disqus            |
-| **discourse**   | Discourse         |
-| **facebook**    | Facebook Comments |
-| **google-plus** | Google+ Comments  |
-| **staticman**   | Staticman         |
-| **custom**      | Other             |
+| Name             | Comment Provider          |
+| ----             | ----------------          |
+| **disqus**       | Disqus                    |
+| **discourse**    | Discourse                 |
+| **facebook**     | Facebook Comments         |
+| **google-plus**  | Google+ Comments          |
+| **staticman_v2** | Staticman v2              |
+| **staticman**    | Staticman v1 (deprecated) |
+| **custom**       | Other                     |
 
 Then add `comments: true` to each document you want comments visible on.
 
@@ -205,6 +288,9 @@ comments:
   discourse:
     server               : # meta.discourse.org
 ```
+
+**Note:** Do not include `http://` or `https://` when setting your Discourse `server`. The theme automatically prepends the URL `//`, following a scheme-less pattern.
+{: .notice--info}
   
 ##### Facebook Comments
 
@@ -226,21 +312,62 @@ Transform user comments into `_data` files that live inside of your GitHub repos
 ###### Add Staticman as a Collaborator
 
 1. Allow Staticman push access to your GitHub repository by clicking on **Settings**, then the **Collaborators** tab and adding `staticmanapp` as a collaborator.
-2. To accept the pending invitation visit: `https://api.staticman.net/v1/connect/{your GitHub username}/{your repository name}`. Consult the Staticman "[Get Started](https://staticman.net/get-started)" guide for more info.
+2. To accept the pending invitation visit: `https://api.staticman.net/v2/connect/{your GitHub username}/{your repository name}`. Consult the Staticman "[Get Started](https://staticman.net/get-started)" guide for more info.
 
 ###### Configure Staticman
 
-Default settings have been provided in `_config.yml`. The important ones to set are  `provider: "staticman"`, `branch`, and `path`. View the [full list of configurations](https://github.com/eduardoboucas/staticman#jekyll-configuration).
+**Staticman v2**
+
+Default settings have been provided in [`staticman.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/staticman.yml) and are commented to guide you through setup. View the [full list of configurations](https://staticman.net/docs/configuration).
+
+```yaml
+# staticman.yml (defaults)
+comments:
+  allowedFields      : ["name", "email", "url", "message"]
+  branch             : "master"
+  commitMessage      : "New comment"
+  filename           : "comment-{@timestamp}"
+  format             : "yaml"
+  generatedFields:
+    date:
+      type           : "date"
+      options:
+        format       : "iso8601"
+  moderation         : true
+  path               : "/_data/comments/{options.slug}" (default)
+  requiredFields     : ["name", "email", "message"]
+  transforms:
+    email            : md5
+```
+
+These settings need to be added to your `_config.yml` file as well:
+
+```yaml
+# _config.yml (defaults)
+repository  : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+comments:
+  provider  : "staticman_v2"
+staticman:
+  branch    : "master"
+```
 
 **Branch setting:** This is the branch comment files will be sent to via pull requests. If you host your site on GitHub Pages it will likely be `master` unless your repo is setup as a project --- use `gh-pages` in that case.
 {: .notice--info}
 
+**Note:** Staticman is currently only compatible with GitHub based repositories. [Support for GitLab Pages](https://github.com/eduardoboucas/staticman/issues/22) is planned but not available yet.
+{: .notice--warning} 
+
+**Staticman v1 (deprecated)**
+
+Default settings have been provided in `_config.yml`. The important ones to set are  `provider: "staticman"`, `branch`, and `path`. View the [full list of configurations](https://staticman.net/docs/configuration).
+
 ```yaml
+# _config.yml (defaults)
 comments:
   provider: "staticman"
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : # "master", "gh-pages"
+  branch                 : "master"
   commitMessage          : "New comment."
   filename               : comment-{@timestamp}
   format                 : "yml"
@@ -258,14 +385,28 @@ staticman:
 
 ###### Comment Moderation
 
-By default comment moderation is enabled in `_config.yml`. As new comments are submitted Staticman will send a pull request. Merging these in will approve the comment, close the issue, and automatically rebuild your site (if hosted on GitHub Pages).
+By default comment moderation is enabled in `staticman.yml`. As new comments are submitted Staticman will send a pull request. Merging these in will approve the comment, close the issue, and automatically rebuild your site (if hosted on GitHub Pages).
 
 To skip this moderation step simply set `moderation: false`.
 
-**ProTip:** Create a GitHub webhook that sends a `POST` request to the following payload URL `https://api.staticman.net/v1/webhook` and triggers a "Pull request" event to delete Staticman branches on merge.
+**ProTip:** Create a GitHub webhook that sends a `POST` request to the following payload URL `https://api.staticman.net/v2/webhook` and triggers a "Pull request" event to delete Staticman branches on merge.
 {: .notice--info}
 
 ![pull-request webhook]({{ "/assets/images/mm-staticman-pr-webhook.jpg" | absolute_url }})
+
+###### reCAPTCHA Support (v2 only)
+
+To enable Google's reCAPTCHA to aid in spam detection you'll need to:
+
+1. Apply for [reCAPTCHA API](https://www.google.com/recaptcha) keys and register your site using the reCAPTCHA V2 type.
+2. Add your site and secret keys to `staticman.yml` and `_config.yml`. Be sure to properly encrypt your secret key using [Staticman's encrypt endpoint](https://staticman.net/docs/encryption).
+
+```yaml
+reCaptcha:
+  enabled: true
+  siteKey: # "6LdRBykTAAAAAFB46MnIu6ixuxwu9W1ihFF8G60Q"
+  secret: # "PznnZGu3P6eTHRPLORniSq+J61YEf+A9zmColXDM5icqF49gbunH51B8+h+i2IvewpuxtA9TFoK68TuhUp/X3YKmmqhXasegHYabY50fqF9nJh9npWNhvITdkQHeaOqnFXUIwxfiEeUt49Yoa2waRR7a5LdRAP3SVM8hz0KIBT4="
+```
 
 ##### Other Comment Providers
 
@@ -310,13 +451,29 @@ Into `_config.yml`
 bing_site_verification: "0FC3FD70512616B052E755A56F8952D"
 ```
 
+#### Naver Webmaster Tools
+
+To verify site ownership you will need to [create a Naver account](https://nid.naver.com/user2/joinGlobal.nhn?lang=en_US&m=init) and then **Add your site** via [Naver Webmaster Tools](http://webmastertool.naver.com/).
+
+Much like Google and Bing you'll be provided with a meta description:
+
+```html
+<meta name="naver-site-verification" content="6BF5A01C0E650B479B612AC5A2184144">`
+```
+
+Which you can add to your `_config.yml` like so:
+
+```yaml
+naver-site-verification: "6BF5A01C0E650B479B612AC5A2184144"
+```
+
 #### Alexa
 
 To [claim your site](http://www.alexa.com/siteowners/claim) with Alexa add the provided verification ID `alexa_site_verification: "yourVerificationID"`.
 
 #### Yandex
 
-To verify site ownership copy and paste the string inside of `name`:
+To verify site ownership copy and paste the string inside of `content`:
 
 ```html
 <meta name='yandex-verification' content='2132801JL' />
@@ -583,12 +740,21 @@ tag_archive:
 
 Which would create category and tag links in the breadcrumbs and page meta like: `/categories/#foo` and `/tags/#foo`.
 
-**Note:** for these links to resolve properly, category and tag index pages need to exist at [`/categories/index.html`](https://github.com/{{ site.repository }}/blob/master/docs/_pages/category-archive.html) and [`/tags/index.html`](https://github.com/{{ site.repository }}/blob/master/docs/_pages/tag-archive.html). The necessary Liquid code to build these pages can be taken from the demo site.
+**Note:** these are simply hash (fragment) links into the full taxonomy index pages. For them to resolve properly, the category and tag index pages need to exist at [`/categories/index.html`](https://github.com/{{ site.repository }}/blob/master/docs/_pages/category-archive.html) (copy to `_pages/category-archive.html`) and [`/tags/index.html`](https://github.com/{{ site.repository }}/blob/master/docs/_pages/tag-archive.html) (copy to `_pages/tag-archive.html`). 
 {: .notice--warning}
 
-If you have the luxury of using Jekyll Plugins then [**jekyll-archives**][jekyll-archives] will make your life much easier as category and tag pages are created for you.
+If you have the luxury of using Jekyll Plugins, then [**jekyll-archives**][jekyll-archives] will create a better experience as discrete  taxonomy pages would be generated, and their corresponding links would be "real" (not just hash/fragment links into a larger index). However, the plugin will not generate the taxonomy index pages (`category-archive.html` and `_pages/tag-archive.html`) so you'd still need to manually create them if you'd like to have them (see note above).
 
-Change `type` to `jekyll-archives` and apply the following [configurations](https://github.com/jekyll/jekyll-archives/blob/master/docs/configuration.md):
+First, you'll need to make sure that the `jekyll-archives` plugin is installed. Either run `gem install jekyll-archives` or add the following to your `Gemfile`:
+```
+group :jekyll_plugins do
+  gem "jekyll-archives"
+end
+```
+
+Then run `bundle install`.
+
+Now that the plugin is installed, change `type` to `jekyll-archives` and apply the following [configurations](https://github.com/jekyll/jekyll-archives/blob/master/docs/configuration.md):
 
 ```yaml
 category_archive:
@@ -628,3 +794,7 @@ compress_html:
 ```
 
 **Caution:** Inline JavaScript comments can cause problems with `compress.html`, so be sure to `/* comment this way */` and avoid `// these sorts of comments`.
+{: .notice--warning}
+
+**Note:** CDN services such as CloudFlare provide optional automatic minification for HTML, CSS, and JavaScript. If you are serving your site via such a service and have minification enabled, this configuration might be redundant.
+{: .notice--info}

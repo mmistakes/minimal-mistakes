@@ -2,7 +2,7 @@
 title: "JavaScript"
 permalink: /docs/javascript/
 excerpt: "Instructions for customizing and building the theme's scripts."
-last_modified_at: 2016-11-03T11:35:42-04:00
+last_modified_at: 2017-09-12T12:41:33-04:00
 ---
 
 The theme's [`assets/js/main.min.js`] script is built from several vendor, jQuery plugins, and other scripts found in [`assets/js/`](https://github.com/mmistakes/minimal-mistakes/tree/master/assets/js).
@@ -18,7 +18,7 @@ minimal mistakes
 |  |  |   └── jquery.smooth-scroll.min.js  # make same-page links scroll smoothly
 |  |  ├── vendor
 |  |  |   └── jquery
-|  |  |       └── jquery-1.12.1.min.js
+|  |  |       └── jquery-3.2.1.min.js
 |  |  ├── _main.js                         # jQuery plugin settings and other scripts
 |  |  └── main.min.js                      # concatenated and minified scripts
 ```
@@ -28,6 +28,21 @@ minimal mistakes
 To modify or add your own scripts include them in [`assets/js/_main.js`](https://github.com/mmistakes/minimal-mistakes/blob/master/assets/js/_main.js) and then rebuild using `npm run build:js`. See below for more details.
 
 If you add additional scripts to `assets/js/plugins/` and would like them concatenated with the others, be sure to update the `uglify` script in [`package.json`](https://github.com/mmistakes/minimal-mistakes/blob/master/package.json). Same goes for scripts that you remove.
+
+You can also add scripts to the `<head>` or closing `</body>` elements by adding paths to following arrays in `_config.yml`.
+
+**Example:**
+
+```yaml
+head_scripts:
+  - https://code.jquery.com/jquery-3.2.1.min.js
+  - /assets/js/your-custom-head-script.js
+footer_scripts:
+  - /assets/js/your-custom-footer-script.js
+```
+
+**Note:** If you assign `footer_scripts` the theme's `/assets/js/main.min.js` file will be deactivated. This script includes jQuery and various other plugins that you'll need to find replacements for and include separately.
+{: .notice--warning}
 
 ---
 
