@@ -10,6 +10,7 @@
 - Improve accessibility of navigation menu button. [#1099](https://github.com/mmistakes/minimal-mistakes/issues/1099)
 - Add Naver Webmaster Tools verification. [#1286](https://github.com/mmistakes/minimal-mistakes/pull/1286)
 - Add support for Staticman v2 endpoint and reCAPTCHA.
+- Add Polish localized UI text strings. [#1304](https://github.com/mmistakes/minimal-mistakes/pull/1304)
 
 ### Bug Fixes
 

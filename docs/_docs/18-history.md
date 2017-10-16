@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-10-04T16:33:00-04:00
+last_modified_at: 2017-10-16T12:40:54-04:00
 ---
 
 ## Unreleased
@@ -19,6 +19,7 @@ last_modified_at: 2017-10-04T16:33:00-04:00
 - Improve accessibility of navigation menu button. [#1099](https://github.com/mmistakes/minimal-mistakes/issues/1099)
 - Add Naver Webmaster Tools verification. [#1286](https://github.com/mmistakes/minimal-mistakes/pull/1286)
 - Add support for Staticman v2 endpoint and reCAPTCHA.
+- Add Polish localized UI text strings. [#1304](https://github.com/mmistakes/minimal-mistakes/pull/1304)
 
 ### Bug Fixes
 
