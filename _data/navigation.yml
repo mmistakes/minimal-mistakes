@@ -3,7 +3,7 @@ main:
   - title: "Новини"
     url: /news
   - title: "Розклад"
-    url: http://mz.com.ua/diary/schedule?class_id=4682569
+    url: http://mz.com.ua/school-wall/3541
   - title: "Фінансова діяльність"
     url: /finance
   - title: "Звіт директора"
@@ -17,12 +17,23 @@ sidebar-menu:
   - title: Наша школа
     url: /news
     children:
-      - title: "Візитка"
+      - title: "Як нас знайти"
         url: /contacts
       - title: "Досягнення"
         url: /achievements
       - title: "Історія"
         url: /history
+
+  - title: Управління
+    children:
+      - title: "Основні завдання"
+        url: /management/main
+      - title: "Адміністрація школи"
+        url: /management/administration
+      - title: "Графік чергування"
+        url: /management/schedule
+      - title: "Мережа класів"
+        url: /management/classes
 
   - title: Звіти директора
     url: /reports
