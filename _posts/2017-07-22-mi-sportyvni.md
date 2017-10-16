@@ -2,6 +2,8 @@
 title: "Ми спортивні"
 sidebar:
   nav: "sidebar-menu"
+header:
+  teaser: /assets/images/posts/2017/07/mi-sportyvni/sport-0.jpg
 gallery:
   - url: /assets/images/posts/2017/07/mi-sportyvni/sport-0.jpg
     image_path: /assets/images/posts/2017/07/mi-sportyvni/sport-0.jpg

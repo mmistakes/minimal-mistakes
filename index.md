@@ -13,7 +13,7 @@ feature_row:
   - image_path: /assets/images/index/memory.jpg
     alt: "Пам'ятаємо! Перемагаємо!"
     title: "Пам'ятаємо! Перемагаємо!"
-    url: "/news"
+    url: "/victory"
     excerpt: "Річниця визволення Дніпра у Другій світовій війні."
     btn_class: "btn--primary"
     btn_label: "Читати"
@@ -21,21 +21,21 @@ feature_row:
     alt: "Річниця народження Тараса Шевеченко"
     title: "Тарас Шевченко"
     excerpt: "Вшанування пам'яті Т. Г. Шевченка"
-    url: "/categories/#%D1%88%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%BE"
+    url: "/shevchenko"
     btn_class: "btn--primary"
     btn_label: "Читати"
   - image_path: /assets/images/index/ato.jpg
     alt: "АТО Україна"
     title: "Дай нам силу й відвагу Україні на славу"
     excerpt: "Новини та заходи, з національно-патріотичного виховання. Волонтерська допомога. Воїни АТО - захисники України."
-    url: "/news"
+    url: "/ato"
     btn_class: "btn--primary"
     btn_label: "Читати"
   - image_path: /assets/images/index/tabir.jpg
     alt: "Літній табір Зернятко"
     title: "Літній табір 'Зернятко'"
     excerpt: "Літній табір 'Зернятко'"
-    url: "/categories/#%D1%82%D0%B0%D0%B1%D1%96%D1%80-%D0%B7%D0%B5%D1%80%D0%BD%D1%8F%D1%82%D0%BA%D0%BE"
+    url: "/camp"
     btn_class: "btn--primary"
     btn_label: "Читати"
 github:

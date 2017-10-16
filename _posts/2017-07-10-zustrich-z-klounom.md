@@ -2,6 +2,8 @@
 title: "Зустріч з клоуном Гошкою"
 sidebar:
   nav: "sidebar-menu"
+header:
+  teaser: /assets/images/posts/2017/07/zustrich-z-klounom/kloun-0.jpg
 gallery:
   - url: /assets/images/posts/2017/07/zustrich-z-klounom/kloun-0.jpg
     image_path: /assets/images/posts/2017/07/zustrich-z-klounom/kloun-0.jpg

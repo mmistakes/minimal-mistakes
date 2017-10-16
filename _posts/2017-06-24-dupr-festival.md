@@ -2,6 +2,8 @@
 title: "Участь команди ДЮПР в районному та міському Всеукраїнському фестивалі юних пожежних"
 sidebar:
   nav: "sidebar-menu"
+header:
+  teaser: /assets/images/posts/2017/06/dupr-festival/dupr-festival-0.jpg
 gallery:
   - url: /assets/images/posts/2017/06/dupr-festival/dupr-festival-0.jpg
     image_path: /assets/images/posts/2017/06/dupr-festival/dupr-festival-0.jpg

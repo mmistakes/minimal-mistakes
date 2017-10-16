@@ -2,6 +2,8 @@
 title: "Веселі старти з елементами футболу"
 sidebar:
   nav: "sidebar-menu"
+header:
+  teaser: /assets/images/posts/2017/06/veseli-starti/veseli-starti-0.jpg
 gallery:
   - url: /assets/images/posts/2017/06/veseli-starti/veseli-starti-0.jpg
     image_path: /assets/images/posts/2017/06/veseli-starti/veseli-starti-0.jpg
