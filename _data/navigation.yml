@@ -21,6 +21,8 @@ sidebar-menu:
         url: /contacts
       - title: "Досягнення"
         url: /achievements
+      - title: "Історія"
+        url: /history
 
   - title: Звіти директора
     url: /reports
