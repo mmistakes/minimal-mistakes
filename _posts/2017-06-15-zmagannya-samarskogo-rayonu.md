@@ -4,6 +4,8 @@ sidebar:
   nav: "sidebar-menu"
 categories:
   - Змагання
+header:
+  teaser: /assets/images/posts/2017/06/zmagannya-samarskogo-rayonu/zmagannya-samarskogo-rayonu-0.jpg
 gallery:
   - url: /assets/images/posts/2017/06/zmagannya-samarskogo-rayonu/zmagannya-samarskogo-rayonu-0.jpg
     image_path: /assets/images/posts/2017/06/zmagannya-samarskogo-rayonu/zmagannya-samarskogo-rayonu-0.jpg
