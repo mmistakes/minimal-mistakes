@@ -19,6 +19,8 @@ sidebar-menu:
     children:
       - title: "Візитка"
         url: /contacts
+      - title: "Досягнення"
+        url: /achievements
 
   - title: Звіти директора
     url: /reports
