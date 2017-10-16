@@ -45,7 +45,7 @@ To override the default [Sass](http://sass-lang.com/guide) (located in theme's
 
 1. Copy directly from the Minimal Mistakes theme gem
 
-   - Go to your local Basically Basic gem installation directory (run 
+   - Go to your local Minimal Mistakes gem installation directory (run 
      `bundle show minimal-mistakes-jekyll` to get the path to it).
    - Copy the contents of `/assets/css/main.scss` from there to 
      `<your_project>`.
@@ -55,7 +55,7 @@ To override the default [Sass](http://sass-lang.com/guide) (located in theme's
 
    - Copy the contents of [assets/css/main.scss](https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss) 
      to `<your_project>`.
-   - Customize want you want inside `<your_project/assets/css/main.scss`.
+   - Customize what you want inside `<your_project/assets/css/main.scss`.
 
 **Note:** To make more extensive changes and customize the Sass partials bundled 
 in the gem. You will need to copy the complete contents of the `_sass` directory 
@@ -89,7 +89,7 @@ By default the theme uses [system fonts](https://medium.com/designing-medium/sys
 ```scss
 /* system typefaces */
 $serif      : Georgia, Times, serif;
-$sans-serif : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$sans-serif : -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 $monospace  : Monaco, Consolas, "Lucida Console", monospace;
 ```
 
@@ -114,7 +114,7 @@ Not a fan of the refreshed typography of the theme and want to revert back an ol
 
 ```scss
 $serif              : "PT Serif", Georgia, Times, serif;
-$sans-serif-narrow  : "PT Sans Narrow", -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$sans-serif-narrow  : "PT Sans Narrow", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 
 $global-font-family : $serif;
 $header-font-family : $sans-serif-narrow;
@@ -161,3 +161,12 @@ And `$susy` is used for setting [the grid](http://susy.oddbird.net/) the theme u
   <img src="{{ '/assets/images/mm-susy-grid-overlay.jpg' | absolute_url }}" alt="Susy grid overlay for debugging">
   <figcaption>Susy grid debug overlay enabled.</figcaption>
 </figure>
+
+### Disabling Animations
+
+You can disable either the fade-in intro animation, element transition animations, or both by overriding the corresponding variables. For example if you wanted to disable all animations you could include the following lines:
+
+```scss
+$intro-transition  : none;
+$global-transition : none;
+```
