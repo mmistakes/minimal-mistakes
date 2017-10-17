@@ -5,11 +5,11 @@ sidebar:
   nav: "docs"
 ---
 
-Using our Maven **[repository](https://nexus.big-iot.org/content/repositories/releases/)**, you can easily download the API and incorporate it into your project:
+Using our Maven **[repository](https://nexus.big-iot.org/content/repositories/releases/)**, you can import the BIG IoT Lib into your software project:
 
 ### Core Lib
 
-The basic functionality of the BIG IoT API for providers and consumers. This lib is Java 7 compliant.
+The basic functionality of the BIG IoT Lib for providers and consumers. This lib is Java 7 compliant.
 
 Import as Maven dependency: 
 ```xml
@@ -27,7 +27,7 @@ compile 'org.eclipse.bigiot.lib:bigiot-lib-core:0.9.5'
 
 ### Advanced Lib
 
-This lib extends the *Core Lib* and contains advanced features. It is Java 8 compliant and supports language elements such as CompletableFutures and lambdas.
+This lib extends the *Core Lib* and contains advanced features. It is Java 8 compliant and supports language elements such as CompletableFutures and functional interfaces.
 
 Import as Maven dependency: 
 ```xml
