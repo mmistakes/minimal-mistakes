@@ -12,7 +12,7 @@ docs:
         url: /consumerPerspective
   - title: "Resources"
     children:
-      - title: "Download the API"
+      - title: "Download BIG IoT Lib"
         url: /download
       - title: "Get the Source Code"
         url: /sourceCode
@@ -21,7 +21,7 @@ docs:
       - title: "Wiki"
         url: /comingSoon/
 main:
-  - title: "Download API"
+  - title: "Download BIG IoT Lib"
     url: /download
   - title: "Visit the (pre-release) Marketplace"
     url: https://market.big-iot.org
