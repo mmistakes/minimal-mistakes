@@ -23,7 +23,7 @@ docs:
 main:
   - title: "Download BIG IoT Lib"
     url: /download
-  - title: "Visit the (pre-release) Marketplace"
+  - title: "Visit the Marketplace"
     url: https://market.big-iot.org
   - title: "Visit the Project behind"
     url: http://big-iot.org
