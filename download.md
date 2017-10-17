@@ -14,15 +14,15 @@ The basic functionality of the BIG IoT API for providers and consumers. This lib
 Import as Maven dependency: 
 ```xml
 <dependency>
-  <groupId>org.bigiot.lib</groupId>
+  <groupId>org.eclipse.bigiot.lib</groupId>
   <artifactId>bigiot-lib-core</artifactId>
-  <version>0.8.0</version>
+  <version>0.9.5</version>
 </dependency>
 ```
 
 Import as Gradle dependency: 
 ```xml
-compile 'org.bigiot.lib:bigiot-lib-core:0.8.0'
+compile 'org.eclipse.bigiot.lib:bigiot-lib-core:0.9.5'
 ```
 
 ### Advanced Lib
@@ -32,15 +32,15 @@ This lib extends the *Core Lib* and contains advanced features. It is Java 8 com
 Import as Maven dependency: 
 ```xml
 <dependency>
-  <groupId>org.bigiot.lib</groupId>
+  <groupId>org.eclipse.bigiot.lib</groupId>
   <artifactId>bigiot-lib-advanced</artifactId>
-  <version>0.8.0</version>
+  <version>0.9.5</version>
 </dependency>
 ```
 
 Import as Gradle dependency:  
 ```xml
-compile 'org.bigiot.lib:bigiot-lib-advanced:0.8.0'
+compile 'org.eclipse.bigiot.lib:bigiot-lib-advanced:0.9.5'
 ```
 
 ### Embedded Spark
@@ -50,15 +50,15 @@ This lib extends the *Advanced Lib* and embedds a lightweight Web server ([Spark
 Import as Maven dependency: 
 ```xml
 <dependency>
-  <groupId>org.bigiot.lib</groupId>
+  <groupId>org.eclipse.bigiot.lib</groupId>
   <artifactId>bigiot-lib-embeddedspark</artifactId>
-  <version>0.8.0</version>
+  <version>0.9.5</version>
 </dependency>
 ```
 
 Import as Gradle dependency:  
 ```xml
-compile 'org.bigiot.lib:bigiot-lib-embeddedspark:0.8.0'
+compile 'org.eclipse.bigiot.lib:bigiot-lib-embeddedspark:0.9.5'
 ```
 
 ### Android
