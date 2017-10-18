@@ -1,28 +1,26 @@
 docs:
+  - title: "BIG IoT Lib"
+    children:
+      - title: "Download"
+        url: /download
+      - title: "Relase Notes"
+        url: /releaseNotes
+      - title: "Examples on GitHub"
+        url: https://github.com/BIG-IoT/example-projects
+      - title: "JavaDoc"
+        url: https://big-iot.gitlab.io/lib-java/
   - title: "Developer Guide"
     children:
-      - title: "Introduction"
-        url: /index.html
       - title: "Getting started"
         url: /tutorial
         children:
-      - title: "Provide IoT Offerings"
+      - title: "Provider Tutorial"
         url: /providerPerspective
-      - title: "Consume IoT Offerings"
+      - title: "Consumer Tutorial"
         url: /consumerPerspective
-  - title: "Resources"
-    children:
-      - title: "Download BIG IoT Lib"
-        url: /download
-      - title: "Get the Source Code"
-        url: /sourceCode
-      - title: "JavaDoc"
-        url: https://big-iot.gitlab.io/lib-java/
-      - title: "Wiki"
-        url: /comingSoon/
 main:
-  - title: "Download BIG IoT Lib"
-    url: /download
+  - title: "Get Started"
+    url: /tutorial
   - title: "Visit the Marketplace"
     url: https://market.big-iot.org
   - title: "Visit the Project behind"
