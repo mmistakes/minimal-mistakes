@@ -5,7 +5,11 @@ sidebar:
   nav: "docs"
 ---
 
+**You'll find the most recent version number of the Big IoT Lib in the [Release Notes](/releaseNotes)**
+
 Using our Maven **[repository](https://nexus.big-iot.org/content/repositories/releases/)**, you can import the BIG IoT Lib into your software project:
+
+*Make sure you replace x.y.z with the correct version number*
 
 ### Core Lib
 
@@ -16,49 +20,49 @@ Import as Maven dependency:
 <dependency>
   <groupId>org.eclipse.bigiot.lib</groupId>
   <artifactId>bigiot-lib-core</artifactId>
-  <version>0.9.5</version>
+  <version>x.y.z</version>
 </dependency>
 ```
 
 Import as Gradle dependency: 
 ```xml
-compile 'org.eclipse.bigiot.lib:bigiot-lib-core:0.9.5'
+compile 'org.eclipse.bigiot.lib:bigiot-lib-core:x.y.z'
 ```
 
 ### Advanced Lib
 
-This lib extends the *Core Lib* and contains advanced features. It is Java 8 compliant and supports language elements such as CompletableFutures and functional interfaces.
+This lib extends the Core Lib and introduces lambda as well as asynchronous computation support via functional interfaces and *CompletableFuture*.  It requires Java 8+.
 
 Import as Maven dependency: 
 ```xml
 <dependency>
   <groupId>org.eclipse.bigiot.lib</groupId>
   <artifactId>bigiot-lib-advanced</artifactId>
-  <version>0.9.5</version>
+  <version>x.y.z</version>
 </dependency>
 ```
 
 Import as Gradle dependency:  
 ```xml
-compile 'org.eclipse.bigiot.lib:bigiot-lib-advanced:0.9.5'
+compile 'org.eclipse.bigiot.lib:bigiot-lib-advanced:x.y.z'
 ```
 
 ### Embedded Spark
 
-This lib extends the *Advanced Lib* and embedds a lightweight Web server ([Spark](http://sparkjava.com/)). Particularly, if you want to provide IoT offerings this can be the basis for building a gateway to your platform or service.
+This extends the Advanced Lib with an implementation for deploying your offering on the programmatic Web server ([Spark](http://sparkjava.com/)). You can use this lib, if you your BIG IoT Offering is provider side integrated on a gateway service.
 
 Import as Maven dependency: 
 ```xml
 <dependency>
   <groupId>org.eclipse.bigiot.lib</groupId>
   <artifactId>bigiot-lib-embeddedspark</artifactId>
-  <version>0.9.5</version>
+  <version>x.y.z</version>
 </dependency>
 ```
 
 Import as Gradle dependency:  
 ```xml
-compile 'org.eclipse.bigiot.lib:bigiot-lib-embeddedspark:0.9.5'
+compile 'org.eclipse.bigiot.lib:bigiot-lib-embeddedspark:x.y.z'
 ```
 
 ### Android
@@ -70,12 +74,12 @@ Import as Maven dependency:
 <dependency>
   <groupId>org.bigiot.lib.android</groupId>
   <artifactId>bigiotlib</artifactId>
-  <version>0.7.2</version>
+  <version>x.y.z</version>
 </dependency>
 ```
 
 Import as Gradle dependency:  
 ```xml
-compile 'org.bigiot.lib.android:bigiotlib:0.7.2'
+compile 'org.bigiot.lib.android:bigiotlib:x.y.z'
 ```
 
