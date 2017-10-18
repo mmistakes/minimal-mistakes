@@ -156,6 +156,7 @@ lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
+theme: minima
 
 # Markdown Processing
 kramdown:
