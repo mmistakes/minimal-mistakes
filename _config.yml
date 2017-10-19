@@ -203,15 +203,6 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-#  - jekyll-coffeescript
-#  - jekyll-github-metadata
-#  - jekyll-relative-links
-#  - jekyll-optional-front-matter
-#  - jekyll-readme-index
-#  - jekyll-default-layout
-#  - jekyll-titles-from-headings
-
-
 
 # Archives
 #  Type
