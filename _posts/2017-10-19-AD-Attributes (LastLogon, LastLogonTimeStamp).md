@@ -133,8 +133,6 @@ Having done a little bit of research after reading this post, i came across [the
 This seems to be confirming the theory.
 
 
-
-
 ----------
 
 
@@ -145,8 +143,7 @@ In this script i do a check on the server name to slightly show different data. 
 I've left it in because you'll see N/A or N/F mentioned in the explanation above and more specifically within the tables. This is so you would know where it originates from.
 
 ```javascript
-## PARAMETERS
-$DCs  = Get-ADDomainController -Filter * | Select-Object name -ExpandProperty Name # List all RODC and DC's
+$DCs  = Get-ADDomainController -Filter * | Select-Object name -ExpandProperty Name 
 
 $now = Get-Date
 $Result = @()
@@ -161,8 +158,10 @@ if(!(Test-Path -Path $env:USERPROFILE\desktop\AD_ANALYSIS\$ou)){
 
 Write-Debug "Starting to traverse DC's."
 
-<#  Go through all the domain controllers and for each domaincontroller retrieve the LastLogon,
-    Name and SamAccountname for each users in our OU. #>
+<#  
+Go through all the domain controllers and for each domaincontroller retrieve the LastLogon,
+Name and SamAccountname for each users in our OU. 
+#>
 
 foreach ($dc in $DCs) {
     Write-Debug "Gathering information from $dc."
@@ -202,12 +201,12 @@ $Result.GetEnumerator() |
 ConvertTo-Csv -Delimiter ";" -NoTypeInformation  |
 out-file $outputFolderProblemPossibleProblemCases -Force
 
-    ## OPTIONAL, add "sep;" so that if you double click the CSV, it automatically formats it into columns.
+    #OPTIONAL, add "sep;" so that if you double click the CSV, it automatically formats it into columns.
     $Content = Get-Content $outputFolderProblemPossibleProblemCases
     $seperator = '"sep=;"'
     Set-Content $outputFolderProblemPossibleProblemCases -value $seperator,$content
 
-$Result.GetEnumerator() | Sort-Object -Property 'SamAccount' | ft # TECHNIQUE TO SORT A HASH-TABLE
+$Result.GetEnumerator() | Sort-Object -Property 'SamAccount' | ft #TECHNIQUE TO SORT A HASH-TABLE
 Write-Output "Script finished."
 ```
 
@@ -223,12 +222,12 @@ Write-Output "Script finished."
 ## Stuff i learned along the way
 
 This trick adds "sep=;" on the first line of your CSV file. When you double click it, Excel will now know how to split the data into columns. This way you don't have to import it to get it in a readable format.
+
 ```javascript
  $Content = Get-Content $outputFolderProblemPossibleProblemCases
  $seperator = '"sep=;"'
  Set-Content $outputFolderProblemPossibleProblemCases -value $seperator,$content
  ```
-
 Next is a little trick to sort a Hash-table.
 
 ```javascript
