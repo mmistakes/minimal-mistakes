@@ -243,9 +243,6 @@ compress_html:
 # Defaults
 defaults:
 # sidebar
-sidebar:
-  title: "Sample Title"
-  nav: sidebar-sample
   # _posts
   - scope:
       path: ""
@@ -257,3 +254,5 @@ sidebar:
       comments: true
       share: true
       related: true
+      sidebar:
+        nav: "sidebar-sample"
