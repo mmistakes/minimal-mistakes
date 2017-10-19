@@ -13,7 +13,7 @@ According to most documentation, you should use **LastLogonTimeStamp** to find o
 
 The page provides a detailed explanation (sort of) and shows you how to retrieve stale objects with the use of Powershell.
 
-```Powershell
+```javascript
 Search-ADAccount -AccountInactive -DateTime ((get-date).adddays(-30)) -UsersOnly
 | select Name, LastLogonDate,SamAccountName
 ```
@@ -143,7 +143,7 @@ This script is a leftover from what i initialy made seeing that i was building m
 In this script i do a check on the server name to slightly show different data. This is not needed anymore.
 I've left it in because you'll see N/A or N/F mentioned in the explanation above and more specifically within the tables. This is so you would know where it originates from.
 
-```Powershell
+```javascript
 ## PARAMETERS
 $DCs  = Get-ADDomainController -Filter * | Select-Object name -ExpandProperty Name # List all RODC and DC's
 
@@ -222,7 +222,7 @@ Write-Output "Script finished."
 ## Stuff i learned along the way
 
 This trick adds "sep=;" on the first line of your CSV file. When you double click it, Excel will now know how to split the data into columns. This way you don't have to import it to get it in a readable format.
- ```Powershell
+```javascript
  $Content = Get-Content $outputFolderProblemPossibleProblemCases
  $seperator = '"sep=;"'
  Set-Content $outputFolderProblemPossibleProblemCases -value $seperator,$content
@@ -230,7 +230,7 @@ This trick adds "sep=;" on the first line of your CSV file. When you double clic
 
 Next is a little trick to sort a Hash-table.
 
- ```Powershell
+```javascript
 $Result.GetEnumerator() | Sort-Object -Property 'SamAccount' | ft
  ```
 
