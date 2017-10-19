@@ -242,6 +242,10 @@ compress_html:
 
 # Defaults
 defaults:
+# sidebar
+sidebar:
+  title: "Sample Title"
+  nav: sidebar-sample
   # _posts
   - scope:
       path: ""
