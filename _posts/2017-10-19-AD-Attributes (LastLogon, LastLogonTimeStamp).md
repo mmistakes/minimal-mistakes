@@ -176,11 +176,13 @@ foreach ($dc in $DCs) {
             $DaysSinceLastActivity = ($now - $lastlogon).Days
         }
         else {
+  			<# If a Writable doesn't contain the value, we need to catch that #>
             if($dc -like "*s51*"){
-                $lastlogon = "N/F" <# If a Writable doesn't contain the value, we need to catch that #>
+                $lastlogon = "N/F" 
                 $DaysSinceLastActivity = "N/F"
-            }else{
-                $lastlogon = "N/A" <# Because some users have never been on a certain RODC, we need to catch that too #>
+            <# Because some users have never been on a certain RODC, we need to catch that too #>
+             }else{
+                $lastlogon = "N/A" 
                 $DaysSinceLastActivity = "N/A"
             }
         }
@@ -193,7 +195,7 @@ foreach ($dc in $DCs) {
                 LastLogonTimeStamp         = [datetime]::FromFileTime($user.LastLogonTimeStamp)
                 LastLogonDate              = $user.LastLogonDate
             }
-        #  }# if
+        
     }# foreach user
 }# foreach dc
 
@@ -206,7 +208,8 @@ out-file $outputFolderProblemPossibleProblemCases -Force
     $seperator = '"sep=;"'
     Set-Content $outputFolderProblemPossibleProblemCases -value $seperator,$content
 
-$Result.GetEnumerator() | Sort-Object -Property 'SamAccount' | ft #TECHNIQUE TO SORT A HASH-TABLE
+#TECHNIQUE TO SORT A HASH-TABLE
+$Result.GetEnumerator() | Sort-Object -Property 'SamAccount' | ft 
 Write-Output "Script finished."
 ```
 
