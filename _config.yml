@@ -32,7 +32,7 @@ comments:
     colorscheme          : "dark" # "light" (default), "dark"
 staticman:
   allowedFields          : # ['name', 'email', 'url', 'message']
-  branch                 : # "master"
+  branch                 : "master"
   commitMessage          : # "New comment."
   filename               : # comment-{@timestamp}
   format                 : # "yml"
@@ -95,7 +95,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "eddykim72"
   gitlab           :
   google_plus      :
   keybase          :
@@ -156,8 +156,6 @@ lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
-theme: minima
-
 # Markdown Processing
 kramdown:
   input: GFM
@@ -188,14 +186,15 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
-  - jekyll-feed
-  - jekyll-coffeescript
-  - jekyll-github-metadata
-  - jekyll-relative-links
-  - jekyll-optional-front-matter
-  - jekyll-readme-index
-  - jekyll-default-layout
-  - jekyll-titles-from-headings
+  - jemoji
+#  - jekyll-feed
+#  - jekyll-coffeescript
+#  - jekyll-github-metadata
+#  - jekyll-relative-links
+#  - jekyll-optional-front-matter
+#  - jekyll-readme-index
+#  - jekyll-default-layout
+#  - jekyll-titles-from-headings
   - jemoji
 
 # mimic GitHub Pages with --safe
@@ -204,14 +203,15 @@ whitelist:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jekyll-coffeescript
-  - jekyll-github-metadata
-  - jekyll-relative-links
-  - jekyll-optional-front-matter
-  - jekyll-readme-index
-  - jekyll-default-layout
-  - jekyll-titles-from-headings
-  - jemoji
+  - jemoji
+#  - jekyll-coffeescript
+#  - jekyll-github-metadata
+#  - jekyll-relative-links
+#  - jekyll-optional-front-matter
+#  - jekyll-readme-index
+#  - jekyll-default-layout
+#  - jekyll-titles-from-headings
+
 
 
 # Archives
@@ -262,4 +262,4 @@ defaults:
       read_time: true
       comments: true
       share: true
-      related: true   
+      related: true
