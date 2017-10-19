@@ -186,7 +186,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
-  - jemoji
+  - jemoji
 #  - jekyll-feed
 #  - jekyll-coffeescript
 #  - jekyll-github-metadata
@@ -195,7 +195,6 @@ plugins:
 #  - jekyll-readme-index
 #  - jekyll-default-layout
 #  - jekyll-titles-from-headings
-  - jemoji
 
 # mimic GitHub Pages with --safe
 whitelist:
