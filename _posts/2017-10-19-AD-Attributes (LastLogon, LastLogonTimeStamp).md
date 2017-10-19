@@ -175,11 +175,11 @@ foreach ($dc in $DCs) {
             $DaysSinceLastActivity = ($now - $lastlogon).Days
         }
         else {
-  			# If a Writable doesn't contain the value, we need to catch that 
+  			#If a Writable does not contain the value, we need to catch that 
             if($dc -like "*s51*"){
                 $lastlogon = "N/F" 
                 $DaysSinceLastActivity = "N/F"
-            # Because some users have never been on a certain RODC, we need to catch that too
+            #Because some users have never been on a certain RODC, we need to catch that too
              }else{
                 $lastlogon = "N/A" 
                 $DaysSinceLastActivity = "N/A"
