@@ -30,7 +30,6 @@ I started by checking users of whom i knew to be at home due to reason X or Y.
 
 ### Not a stale object
 But when i looked at the LastLogonTimeStamp for such a user, i got confused. Have a look at the data my script pulled for user E.
-<span style="font-size: 12px">
 
 | SamAccount | Name   | Server   | DaysSinceLastActivity | LastLogon        | LastLogonDate    | LastLogonTimeStamp |
 |------------|--------|----------|--------------------------|------------------|------------------|--------------------|
@@ -59,7 +58,7 @@ But when i looked at the LastLogonTimeStamp for such a user, i got confused. Hav
 | 1160       | User E | Server23 | **319**                  | 02-12-2016 15:44 | 12-10-2017 12:10 | 12-10-2017 12:10   |
 | 1160       | User E | Server24 | N/F                      | N/F              | 12-10-2017 12:10 | 12-10-2017 12:10   |
 | 1160       | User E | Server25 | N/F                      | N/F              | 12-10-2017 12:10 | 12-10-2017 12:10   |
-</span>
+
 I knew that User E had been at home for a long time, so i assumed this would turn up as a stale object.
 Except, it didn't. This is where all the confusion started (at least for me). The LastLogon value confirmed my expectations, but the LastLogonTimeStamp didn't. How could there be such a big gap?
 
