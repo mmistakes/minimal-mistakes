@@ -4,7 +4,7 @@ Author_profile: true
 Tags: 'AD, Powershell, StaleObjects'
 date: '2017-10-19'
 ---
-# AD-objects and its attributs - finding stale objects.
+# Finding stale AD-objects.
 The idea was to clean up stale objects in Active Directory, starting with user accounts. This was a lot more complex than i had anticipated. (Well unless i would have taken the cmdlet Search-ADAccount for granted and just accepted its magic. I didn't ... . )
 
 Here goes ...
