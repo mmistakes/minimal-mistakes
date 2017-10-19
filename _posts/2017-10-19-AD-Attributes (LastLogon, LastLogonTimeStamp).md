@@ -158,10 +158,9 @@ if(!(Test-Path -Path $env:USERPROFILE\desktop\AD_ANALYSIS\$ou)){
 
 Write-Debug "Starting to traverse DC's."
 
-<#  
-Go through all the domain controllers and for each domaincontroller retrieve the LastLogon,
-Name and SamAccountname for each users in our OU. 
-#>
+# Go through all the domain controllers and for each domaincontroller retrieve the LastLogon,
+# Name and SamAccountname for each users in our OU. 
+
 
 foreach ($dc in $DCs) {
     Write-Debug "Gathering information from $dc."
@@ -176,11 +175,11 @@ foreach ($dc in $DCs) {
             $DaysSinceLastActivity = ($now - $lastlogon).Days
         }
         else {
-  			<# If a Writable doesn't contain the value, we need to catch that #>
+  			# If a Writable doesn't contain the value, we need to catch that 
             if($dc -like "*s51*"){
                 $lastlogon = "N/F" 
                 $DaysSinceLastActivity = "N/F"
-            <# Because some users have never been on a certain RODC, we need to catch that too #>
+            # Because some users have never been on a certain RODC, we need to catch that too
              }else{
                 $lastlogon = "N/A" 
                 $DaysSinceLastActivity = "N/A"
