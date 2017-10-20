@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-10-20T12:36:57-04:00
+last_modified_at: 2017-10-20T14:22:30-04:00
 toc: true
 ---
 
@@ -21,6 +21,7 @@ toc: true
 - Add Naver Webmaster Tools verification. [#1286](https://github.com/mmistakes/minimal-mistakes/pull/1286)
 - Add support for Staticman v2 endpoint and reCAPTCHA.
 - Add Polish localized UI text strings. [#1304](https://github.com/mmistakes/minimal-mistakes/pull/1304)
+- Add toggleable table of contents via YAML Front Matter. Note: `toc` helper include will be deprecated in next major version. [#1222](https://github.com/mmistakes/minimal-mistakes/issues/1222) 
 
 ### Bug Fixes
 
