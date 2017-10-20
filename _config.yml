@@ -255,4 +255,5 @@ defaults:
       share: true
       related: true
       sidebar:
-        nav: "sidebar-sample"
+        title: "Sample Title"
+        nav: sidebar-sample
