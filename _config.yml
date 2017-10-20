@@ -9,7 +9,7 @@ minimal_mistakes_skin    : "dark" # "air", "contrast", "dark", "dirt", "mint", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Embedded Software Factory~"
+title                    : "Embedded Software Factory !!!"
 title_separator          : "|"
 name                     : "Eddy Kim"
 description              : "remastered embedded software"
@@ -240,6 +240,10 @@ compress_html:
   ignore:
     envs: development
 
+sidebar:
+  title: "Sample Title"
+  nav: sidebar-sample
+  
 # Defaults
 defaults:
 # sidebar
@@ -247,7 +251,7 @@ defaults:
   - scope:
       path: ""
       type: posts
-    values:
+      values:
       layout: single
       author_profile: true
       read_time: true
