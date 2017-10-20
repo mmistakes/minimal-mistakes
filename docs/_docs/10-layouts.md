@@ -7,7 +7,7 @@ single_layout_gallery:
     alt: "single layout with header example"
   - image_path: /assets/images/mm-layout-single-meta.png
     alt: "single layout with comments and related posts"
-last_modified_at: 2017-10-20T12:35:41-04:00
+last_modified_at: 2017-10-20T14:26:10-04:00
 toc: true
 toc_label: "Included Layouts"
 toc_icon: "columns"
@@ -83,6 +83,28 @@ The layout you'll likely use the most --- sidebar and main content combo.
 {% include gallery id="single_layout_gallery" caption="Image header and meta info examples for `single` layout" %}
 
 Assign with `layout: single`, or better yet apply as a [Front Matter default]({{ "/docs/configuration/#front-matter-defaults" | absolute_url }}) in `_config.yml`.
+
+### Table of Contents
+
+Auto-generated table of contents list for your posts and pages can be enabled by adding `toc: true` to the YAML Front Matter.
+
+![table of contents example]({{ "/assets/images/mm-toc-helper-example.jpg" | absolute_url }})
+
+| Parameter   | Required | Description | Default |
+| ---------   | -------- | ----------- | ------- |
+| **toc**     | Optional | Show table of contents. (boolean) | `false` |
+| **toc_label** | Optional | Table of contents title. (string) | `toc_label` in UI Text data file. |
+| **toc_icon**  | Optional | Table of contents icon, displays before the title. (string) | [Font Awesome](https://fortawesome.github.io/Font-Awesome/icons/) <i class="fa fa-file-text"></i> **file-text** icon. Any other FA icon can be used instead. |
+
+**TOC example with custom title and icon**
+
+```yaml
+---
+toc: true
+toc_label: "My Table of Contents"
+toc_icon: "gear"
+---
+```
 
 ## Archive Layout
 
