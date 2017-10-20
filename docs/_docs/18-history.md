@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-10-16T12:40:54-04:00
+last_modified_at: 2017-10-20T15:54:30-04:00
 ---
 
 ## Unreleased
@@ -24,6 +24,7 @@ last_modified_at: 2017-10-16T12:40:54-04:00
 ### Bug Fixes
 
 - Fix system font rendering in Chrome on macOS/OS X. [#1290](https://github.com/mmistakes/minimal-mistakes/pull/1290)
+- Fix extra padding in syntax highlighted code blocks due to Rouge 2 adding `<div class="highlight"></div>` to markup.
 
 ## [4.6.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.6.0)
 

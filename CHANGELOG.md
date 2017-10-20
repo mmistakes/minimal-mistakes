@@ -15,6 +15,7 @@
 ### Bug Fixes
 
 - Fix system font rendering in Chrome on macOS/OS X. [#1290](https://github.com/mmistakes/minimal-mistakes/pull/1290)
+- Fix extra padding in syntax highlighted code blocks due to Rouge 2 adding `<div class="highlight"></div>` to markup.
 
 ## [4.6.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.6.0)
 
