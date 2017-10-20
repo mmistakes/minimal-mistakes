@@ -118,10 +118,10 @@ If we would have done the same query, on the same day with the same parameters, 
 
 
 ## LastLogon
-Before the working of LastLogonTimeSpan became more clear to me, i was thinking about using the LastLogon value to find my stale AD-objects.
+Before the working of LastLogonTimeStamp became more clear to me, i was thinking about using the LastLogon value to find my stale AD-objects.
 I was under the impression that only **writable** DC's had these values since they were responsible for the authentication proces.
 
-Since i was thinking that the LastLogonTimeSpan was a wrong value, it would have made sense to retrieve just these (LastLogon) values.
+Since i was thinking that the LastLogonTimeStamp was a wrong value, it would have made sense to retrieve just these (LastLogon) values.
 
 But this was not the case. There were more than a few instances where a RODC had a LastLogon value.
 I had no clue as to why that was and so i posted a new topic over on [Reddit.](https://www.reddit.com/r/sysadmin/comments/76q4km/ad_lastlogon_date_replication/)
