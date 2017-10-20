@@ -1,15 +1,15 @@
 ---
 title:  "Gemified Theme -- Beta Release"
-last_modified_at: 2016-11-03T11:45:04-04:00
+last_modified_at: 2017-10-20T12:29:16-04:00
 categories: 
   - Jekyll
 tags:
   - update
+toc: true
+toc_label: "Getting Started"
 ---
 
 Hot on the heels of Jekyll v3.3.0 is a beta release of Minimal Mistakes... as a gemified theme.
-
-{% include toc title="Getting Started" %}
 
 [`minimal-mistakes-jekyll`](https://rubygems.org/gems/minimal-mistakes-jekyll) can only be used with Jekyll proper. If you're hosting on GitHub Pages or using that gem the theme won't work. 3rd party themes haven't been white-listed so it's a no go for now.
 

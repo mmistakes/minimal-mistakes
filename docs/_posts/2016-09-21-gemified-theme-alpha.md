@@ -1,15 +1,15 @@
 ---
 title:  "Gemified Theme -- Alpha Release"
-last_modified_at: 2016-11-03T11:46:00-04:00
+last_modified_at: 2017-10-20T12:29:34-04:00
 categories: 
   - Jekyll
 tags:
   - update
+toc: true
+toc_label: "Getting Started"
 ---
 
 Jekyll [themes distributed as Ruby gems](http://jekyllrb.com/docs/themes/) are finally here to make installing and upgrading much easier. Gone are the days of forking a repo just to "install it". Or dealing with merge conflicts when pulling in upstream commits to "upgrade it".
-
-{% include toc title="Getting Started" %}
 
 If you're interested in testing out Minimal Mistakes as a gemified theme read on. There are a few caveats though:
 
