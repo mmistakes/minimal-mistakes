@@ -5,26 +5,24 @@ header:
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 tags:
   - table of contents
+toc: true
+toc_label: "Unique Title"
+toc_icon: "heart"
 ---
 
-{% include toc title="Unique Title" icon="file-text" %}
+Enable table of contents on post or page by adding `toc: true` to its YAML Front Matter. The title and icon can also be changed with:
 
-Testing Kramdown auto-generated table of contents with unique title and icon assigned in the include like so:
-
-```liquid
-{% raw %}{% include toc title="Unique Title" icon="file-text" %}{% endraw %}
+```yaml
+---
+toc: true
+toc_label: "Unique Title"
+toc_icon: "heart"  # corresponding Font Awesome icon name (without fa prefix)
+---
 ```
 
 ## HTML Elements
 
 Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
-
-<h1>Heading 1</h1>
-<h2>Heading 2</h2>
-<h3>Heading 3</h3>
-<h4>Heading 4</h4>
-<h5>Heading 5</h5>
-<h6>Heading 6</h6>
 
 ## Body text
 
