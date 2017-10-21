@@ -1,12 +1,48 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Новини"
+    url: /news
+  - title: "Розклад"
+    url: http://mz.com.ua/school-wall/3541
+  - title: "Фінансова діяльність"
+    url: /finance
+  - title: "Звіт директора"
+    url: /reports
+  - title: "Онлайн реєстрація до ДНЗ"
+    url: https://reg.isuo.org/preschools/view/id/40964
+
+sidebar-menu:
+  - title: Головна
+    url: /
+  - title: Наша школа
+    url: /news
+    children:
+      - title: "Як нас знайти"
+        url: /contacts
+      - title: "Досягнення"
+        url: /achievements
+      - title: "Історія"
+        url: /history
+
+  - title: Управління
+    children:
+      - title: "Основні завдання"
+        url: /management/main
+      - title: "Адміністрація школи"
+        url: /management/administration
+      - title: "Графік чергування"
+        url: /management/schedule
+      - title: "Мережа класів"
+        url: /management/classes
+      - title: "Педагогічний колектив"
+        url: /management/teachers
+
+  - title: Навчальний процес
+    children:
+      - title: Режим роботи
+        url: /process/mode
+      - title: Розклад
+        url: http://mz.com.ua/school-wall/3541
+
+  - title: Звіти директора
+    url: /reports

@@ -8,15 +8,16 @@
 minimal_mistakes_skin    : "default" # "air", "contrast", "dark", "dirt", "mint", "sunrise"
 
 # Site Settings
-locale                   : "en"
-title                    : "Site Title"
+locale                   : "ua"
+logo_name                : "НВК 125"
+title                    : "Офіційний сайт НВК № 125 у м. Дніпро"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Офіційний сайт НВК № 125 у м. Дніпро. Школа № 125 КЗО “Навчально-виховний комплекс"
+description              : "Офіційний сайт НВК № 125 у м. Дніпро. Школа № 125 "
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/assets/images/index/building.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -78,16 +79,16 @@ social:
 analytics:
   provider               : false # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : UA-108234326-1
 
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  name             : "Христюк Олена Георгіївна"
+  avatar           : "/assets/images/director.jpg"
+  bio              : "Директор КЗО НВК №125 ДМР"
+  location         : "м. Дніпро"
+  email            : "nvk125@dnepredu.dp.ua"
   uri              :
   bitbucket        :
   codepen          :
@@ -118,6 +119,7 @@ author:
 include:
   - .htaccess
   - _pages
+  - _posts
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -179,9 +181,9 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+paginate: 8 # amount of posts to show
+paginate_path: news/page:num/
+timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
@@ -246,7 +248,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: # true
       share: true
