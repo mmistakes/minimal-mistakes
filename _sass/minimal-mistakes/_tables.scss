@@ -33,5 +33,7 @@ td {
 tr,
 td,
 th {
+  border-right: 1px solid mix(#000, $border-color, 25%);
+  border-left: 1px solid mix(#000, $border-color, 25%);
   vertical-align: middle;
 }
