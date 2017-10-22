@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Контактии"
+title: "Контакти"
 permalink: /contacts/
 sidebar:
   nav: "sidebar-menu"

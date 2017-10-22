@@ -52,8 +52,8 @@ sidebar:
 				<span style="font-size:11px;">Предмет закупки або види робіт</span></td>
 		</tr>
 		<tr>
-			<td>
-				<span style="font-size:11px;">Листопад</span></td>
+			<td rowspan="3">
+				<span style="font-size:11px;">2013</span></td>
 			<td>
 				<span style="font-size:11px;">2970,00</span></td>
 			<td>
@@ -79,8 +79,6 @@ sidebar:
 		</tr>
 		<tr>
 			<td>
-				<span style="font-size:11px;">Грудень</span></td>
-			<td>
 				<span style="font-size:11px;">3018,60</span></td>
 			<td>
 				<span style="font-size:11px;">Медобладнання</span></td>
@@ -104,8 +102,6 @@ sidebar:
 				&nbsp;</td>
 		</tr>
 		<tr>
-			<td>
-				<span style="font-size:11px;">Січень-грудень</span></td>
 			<td>
 				<span style="font-size:11px;">38503,67</span></td>
 			<td>
@@ -131,7 +127,7 @@ sidebar:
 		</tr>
 		<tr>
 			<td>
-				<span style="font-size:11px;">2014 рік</span></td>
+				<span style="font-size:11px;">2014</span></td>
 			<td>
 				&nbsp;</td>
 			<td>
@@ -847,5 +843,264 @@ sidebar:
 			<td>
 				&nbsp;</td>
 		</tr>
+
+    <tr>
+      <td rowspan="7">
+        <span style="font-size:11px;">2017 (на 15.10.2017)</span></td>
+      <td>
+        <span style="font-size:11px;">&nbsp;</span></td>
+      <td>
+        <span style="font-size:11px;">Вивіз сміття</span></td>
+      <td>
+        &nbsp;</td>
+      <td>
+        &nbsp;</td>
+      <td>
+        &nbsp;</td>
+      <td>
+        &nbsp;</td>
+      <td>
+        <span style="font-size:11px;">650,00</span></td>
+      <td>
+        <span style="font-size:11px;">Фасадна вивіска</span></td>
+      <td>
+        <span style="font-size:11px;">Перевірка приладів котельної</span></td>
+      <td>
+        <span style="font-size:11px;">110117,00</span></td>
+      <td>
+        <span style="font-size:11px;">Зовнішнє утеплення і зовнішнє фарбування приміщення ДНЗ (роботи виконані, оплата триває)</span></td>
+    </tr>
+
+    <tr>
+      <td>
+        <p class="western" style="margin-bottom: 0in; line-height: 100%">
+          <span style="font-size:11px;">&nbsp;</span></p>
+      </td>
+      <td>
+        <span style="font-size:11px;">
+          техобслуговування котельні
+        </span></td>
+      <td>
+        &nbsp;</td>
+      <td>
+        &nbsp;</td>
+      <td>
+        &nbsp;</td>
+      <td>
+        &nbsp;</td>
+      <td>
+        <span style="font-size:11px;">576,00</span>
+      </td>
+      <td>
+        <span style="font-size:11px;">Концертні костюми</span>
+      </td>
+      <td>
+        <span style="font-size:11px;">Перевірка та дозаправка  вогнегасників</span>
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p class="western" style="margin-bottom: 0in; line-height: 100%">
+          <span style="font-size:11px;">&nbsp;</span></p>
+      </td>
+      <td>
+        <span style="font-size:11px;">
+          техобслуговування установки доочищення пітної води
+        </span></td>
+      <td>
+        &nbsp;</td>
+      <td>
+        &nbsp;</td>
+      <td>
+        &nbsp;</td>
+      <td>
+        &nbsp;</td>
+      <td>
+        <span style="font-size:11px;">2000,00</span>
+      </td>
+      <td>
+        <span style="font-size:11px;">Кришки парт</span>
+      </td>
+      <td>
+        <span style="font-size:11px;">Косметичний ремонт рекреацій</span>
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p class="western" style="margin-bottom: 0in; line-height: 100%">
+          <span style="font-size:11px;">&nbsp;</span></p>
+      </td>
+      <td>
+        <span style="font-size:11px;">
+          Дератизація, дезінсекція
+        </span></td>
+      <td>
+        &nbsp;</td>
+      <td>
+        &nbsp;</td>
+      <td>
+        &nbsp;</td>
+      <td>
+        &nbsp;</td>
+      <td>
+        <span style="font-size:11px;">&nbsp;</span>
+      </td>
+      <td>
+        <span style="font-size:11px;">&nbsp;</span>
+      </td>
+      <td>
+        <span style="font-size:11px;">Косметичний ремонт класів</span>
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p class="western" style="margin-bottom: 0in; line-height: 100%">
+          <span style="font-size:11px;">&nbsp;</span></p>
+      </td>
+      <td>
+        <span style="font-size:11px;">
+          Відкачка вигрібної каналізаційної системи
+        </span></td>
+      <td>
+        &nbsp;</td>
+      <td>
+        &nbsp;</td>
+      <td>
+        &nbsp;</td>
+      <td>
+        &nbsp;</td>
+      <td>
+        <span style="font-size:11px;">&nbsp;</span>
+      </td>
+      <td>
+        <span style="font-size:11px;">&nbsp;</span>
+      </td>
+      <td>
+        <span style="font-size:11px;">Ремонт принтерів</span>
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p class="western" style="margin-bottom: 0in; line-height: 100%">
+          <span style="font-size:11px;">&nbsp;</span></p>
+      </td>
+      <td>
+        <span style="font-size:11px;">
+          Промивка системи опалення
+        </span></td>
+      <td>
+        &nbsp;</td>
+      <td>
+        &nbsp;</td>
+      <td>
+        &nbsp;</td>
+      <td>
+        &nbsp;</td>
+      <td>
+        <span style="font-size:11px;">&nbsp;</span>
+      </td>
+      <td>
+        <span style="font-size:11px;">&nbsp;</span>
+      </td>
+      <td>
+        <span style="font-size:11px;">Доставка підручників, комп’ютерів</span>
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p class="western" style="margin-bottom: 0in; line-height: 100%">
+          <span style="font-size:11px;">&nbsp;</span></p>
+      </td>
+      <td>
+        <span style="font-size:11px;">
+          &nbsp;
+        </span></td>
+      <td>
+        &nbsp;</td>
+      <td>
+        &nbsp;</td>
+      <td>
+        &nbsp;</td>
+      <td>
+        &nbsp;</td>
+      <td>
+        <span style="font-size:11px;">&nbsp;</span>
+      </td>
+      <td>
+        <span style="font-size:11px;">&nbsp;</span>
+      </td>
+      <td>
+        <span style="font-size:11px;">Аналіз питної води</span>
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        &nbsp;
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span style="font-size:14px;"><b>Усього</b></span></td>
+      <td>
+        &nbsp;</td>
+      <td>
+        &nbsp;</td>
+      <td>
+        &nbsp;</td>
+      <td>
+        &nbsp;</td>
+      <td>
+        &nbsp;</td>
+      <td>
+        &nbsp;</td>
+      <td>
+        <span style="font-size:14px;"><b>3226,00</b></span></td>
+      <td>
+        &nbsp;</td>
+      <td>
+        &nbsp;</td>
+      <td>
+        <span style="font-size:14px;"><b>110117,00</b></span></td>
+      <td>
+        &nbsp;</td>
+    </tr>
+
 	</tbody>
 </table>
