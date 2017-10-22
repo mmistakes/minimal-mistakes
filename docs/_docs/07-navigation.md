@@ -3,6 +3,7 @@ title: "Navigation"
 permalink: /docs/navigation/
 excerpt: "Instructions on how to customize the main navigation and enabling breadcrumb links."
 last_modified_at: 2016-11-03T10:50:03-04:00
+toc: true
 ---
 
 ## Masthead
