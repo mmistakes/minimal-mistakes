@@ -1,47 +1,32 @@
 ---
 layout: single
-title: "Педагогічний колектив"
+title: "Наші педагоги"
 permalink: /management/teachers/
 sidebar:
   nav: "sidebar-menu"
-gallery:
-  - url: /assets/images/pages/management/teachers/teachers-0.jpg
-    image_path: /assets/images/pages/management/teachers/teachers-0.jpg
-    title: "Прозоровська Галина Валентинівна, вчитель початкової школи."
-  - url: /assets/images/pages/management/teachers/teachers-1.jpg
-    image_path: /assets/images/pages/management/teachers/teachers-1.jpg
-    title: " Тенета Ніна Василівна, вчитель української мови та літератури."
-  - url: /assets/images/pages/management/teachers/teachers-2.jpg
-    image_path: /assets/images/pages/management/teachers/teachers-2.jpg
-    title: "Іванова Олена Миколаївна, вчитель музики."
-  - url: /assets/images/pages/management/teachers/teachers-3.jpg
-    image_path: /assets/images/pages/management/teachers/teachers-3.jpg
-    title: "Черноус Галина Іванівна, вчитель історії та географії."
-  - url: /assets/images/pages/management/teachers/teachers-4.jpg
-    image_path: /assets/images/pages/management/teachers/teachers-4.jpg
-    title: "Козорог Людмила Миколаївна, вихователь ДНЗ."
-  - url: /assets/images/pages/management/teachers/teachers-5.jpg
-    image_path: /assets/images/pages/management/teachers/teachers-5.jpg
-    title: "Ганістрат Світлана Володимирівна, заступник директора з НВР, вчитель англійської мови"
-  - url: /assets/images/pages/management/teachers/teachers-6.jpg
-    image_path: /assets/images/pages/management/teachers/teachers-6.jpg
-    title: "Товстолєс Олег Вікторович, вчитель фізичного виховання."
-  - url: /assets/images/pages/management/teachers/teachers-7.jpg
-    image_path: /assets/images/pages/management/teachers/teachers-7.jpg
-    title: "Шаманська Валентина Наумівна, педагог-організатор, вчитель математики."
-  - url: /assets/images/pages/management/teachers/teachers-8.jpg
-    image_path: /assets/images/pages/management/teachers/teachers-8.jpg
-    title: "Христюк Олена Георгіївна, директор НВК №125, вчитель хімії"
-  - url: /assets/images/pages/management/teachers/teachers-9.jpg
-    image_path: /assets/images/pages/management/teachers/teachers-9.jpg
-    title: "Литвиненко Олена Василівна, педагог-організатор, вчитель початкової школи."
-  - url: /assets/images/pages/management/teachers/teachers-10.jpg
-    image_path: /assets/images/pages/management/teachers/teachers-10.jpg
-    title: "Самарська Раїса Василівна, вчитель початкової школи."
-  - url: /assets/images/pages/management/teachers/teachers-11.jpg
-    image_path: /assets/images/pages/management/teachers/teachers-11.jpg
-    title: "Ушакова Ольга Володимирівна, заступник директора по ДНЗ, вчитель аочаткових класів."
 
 ---
 
-{% include gallery caption="Наші вчителі" %}
+| №  з/п | Прізвище, ім’я та по-батькові    | Який предмет викладає                 |
+|--------|----------------------------------|---------------------------------------|
+| 1.     | Христюк Олена Георгіївна         | Хімія, біологія                       |
+| 2.     | Ганістрат Світлана Володимирівна | Англійська мова, біологія             |
+| 3.     | Ушакова Ольга Володимирівна      | Початкова школа                       |
+| 4.     | Шаманська Валентина Наумівна     | Математика                            |
+| 5.     | Горбунова Вікторія Миколаївна    | Математика, інформатика               |
+| 6.     | Черноус Галина Іванівна          | Історія, географія, правознавство     |
+| 7.     | Самарська Раїса Василівна        | Початкова школа                       |
+| 8.     | Тенета Ніна Василівна            | Українська мова і література          |
+| 9.     | Товстолєс Олег Вікторович        | Фізичне виховання                     |
+| 10.    | Козорог Людмила Миколаївна       | Дошкільне виховання                   |
+| 11.    | Прозоровська Галина Валентинівна | Початкова школа                       |
+| 12.    | Міхальський Олег Михайлович      | Англійська мова, зарубіжна література |
+| 13.    | Литвиненко Олена Василівна       | Початкова школа                       |
+| 14.    | Кравцова Ольга Вікторівна        | Дошкільне виховання                   |
+| 15.    | Лубинець Олена Миколаївна        | Дошкільне виховання                   |
+| 16.    | Гостєва Юлія Вікторівна          | Курс «Година психолога»               |
+| 17.    | Іванова Олена Миколаївна         | Музичне мистецтво                     |
+| 18.    | Кобильська Ірина Григорівна      | Фізика                                |
+| 19.    | Головко Тетяна Миколаївна        | Географія, зарубіжна література       |
+| 20.    | Косенко Тетяна Михайлівна        | Інформатика                           |
+| 21.    | Грицак Тетяна Сергіївна          | Дошкільне виховання                   |
