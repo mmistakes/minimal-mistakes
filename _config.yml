@@ -160,10 +160,7 @@ incremental: false
 
 
 # Header
-excerpt: "Machine Learning Geek"
-header:
-  overlay_image: /assets/images/header.jpg
-  overlay_filter: 0.5
+
 
 # Markdown Processing
 kramdown:
@@ -257,3 +254,7 @@ defaults:
       comments: # true
       share: true
       related: true
+    excerpt: "Machine Learning Geek"
+    header:
+     overlay_image: /assets/images/header.jpg
+     overlay_filter: 0.5
