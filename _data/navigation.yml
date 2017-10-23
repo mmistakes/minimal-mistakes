@@ -3,13 +3,13 @@ main:
   - title: "Новини"
     url: /news
   - title: "Розклад"
-    url: http://mz.com.ua/school-wall/3541
+    url: /syllabus
   - title: "Фінансова діяльність"
     url: /finance
   - title: "Звіт директора"
     url: /reports
   - title: "Онлайн реєстрація до ДНЗ"
-    url: https://reg.isuo.org/preschools/view/id/40964
+    url: /registration
 
 sidebar-menu:
   - title: Головна
@@ -42,7 +42,7 @@ sidebar-menu:
       - title: Режим роботи
         url: /process/mode
       - title: Розклад
-        url: http://mz.com.ua/school-wall/3541
+        url: /syllabus
 
   - title: Звіти директора
     url: /reports
