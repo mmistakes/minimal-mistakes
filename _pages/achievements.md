@@ -5,6 +5,22 @@ title: "Наші досягнення"
 sidebar:
   nav: "sidebar-menu"
 gallery:
+  - url: /assets/images/pages/achievements/2017/achievement-0.jpg
+    image_path: /assets/images/pages/achievements/2017/achievement-0.jpg
+  - url: /assets/images/pages/achievements/2017/achievement-1.jpg
+    image_path: /assets/images/pages/achievements/2017/achievement-1.jpg
+  - url: /assets/images/pages/achievements/2017/achievement-2.jpg
+    image_path: /assets/images/pages/achievements/2017/achievement-2.jpg
+  - url: /assets/images/pages/achievements/2017/achievement-3.jpg
+    image_path: /assets/images/pages/achievements/2017/achievement-3.jpg
+  - url: /assets/images/pages/achievements/2017/achievement-4.jpg
+    image_path: /assets/images/pages/achievements/2017/achievement-4.jpg
+  - url: /assets/images/pages/achievements/2017/achievement-5.jpg
+    image_path: /assets/images/pages/achievements/2017/achievement-5.jpg
+  - url: /assets/images/pages/achievements/2017/achievement-6.jpg
+    image_path: /assets/images/pages/achievements/2017/achievement-6.jpg
+  - url: /assets/images/pages/achievements/2017/achievement-7.jpg
+    image_path: /assets/images/pages/achievements/2017/achievement-7.jpg
   - url: /assets/images/pages/achievements/old--0.jpg
     image_path: /assets/images/pages/achievements/old--0.jpg
   - url: /assets/images/pages/achievements/old--1.jpg
