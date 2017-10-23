@@ -11,7 +11,7 @@ minimal_mistakes_skin    : "dark" # "air", "contrast", "dark", "dirt", "mint", "
 
 # Site Settings
 locale                   : "en"
-title                    : "My Blog"
+title                    : "Machine Learning Geek"
 title_separator          : "-"
 name                     : "Andrew Tirto Kusumo"
 description              : "Andrew Tirto Kusumo - Personal Blog"
