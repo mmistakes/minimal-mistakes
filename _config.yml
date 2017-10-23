@@ -7,6 +7,17 @@
 
 minimal_mistakes_skin    : "dark" # "air", "contrast", "dark", "dirt", "mint", "sunrise", "default"
 
+# Header
+---
+excerpt: "Machine Learning Geek"
+header:
+ overlay_image: /assets/images/header.jpg
+ overlay_filter: 0.5
+ caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+ cta_label: "More Info"
+ cta_url: "https://unsplash.com"
+---
+
 # Site Settings
 locale                   : "en"
 title                    : "My Blog"
@@ -158,13 +169,7 @@ lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
----
-# Header
-    excerpt: "Machine Learning Geek"
-    header:
-     overlay_image: /assets/images/header.jpg
-     overlay_filter: 0.5
----
+
 
 # Markdown Processing
 kramdown:
