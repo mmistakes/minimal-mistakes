@@ -1,5 +1,6 @@
 ---
 layout: splash
+title: "Офіційний сайт НВК № 125 у м. Дніпро"
 permalink: /
 header:
   overlay_color: "#5e616c"
@@ -48,8 +49,6 @@ intro:
 {: .notice}
 
 <img src="/assets/images/posts/2017/10/photos/photo-8.jpg" alt="" itemprop="image">
-
-
 
 {% include feature_row id="intro" type="center" %}
 
