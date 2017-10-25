@@ -16,7 +16,7 @@ It makes documentation discoverable thanks to full text search, anyone can contr
 using the [fork/pull workflow](https://guides.github.com/introduction/flow/). 
 
 I can also enable continuous integration for this documentation to automatically check for 
-dead links or spelling mistakes and add a badge  [![Build status](https://travis-ci.org/ojacques/ojacques.github.io.svg?branch=master)](https://travis-ci.org/ojacques/ojacques.github.io) for the health of my documentation (this is an actual badge for this web site).
+dead links or spelling mistakes and add a badge  [![Build status](https://travis-ci.org/ojacques/ojacques.github.io.svg?branch=master)](https://travis-ci.org/ojacques/ojacques.github.io) for the health of my documentation (this is an actual badge for this web site). 
 
 # Markdown
 
