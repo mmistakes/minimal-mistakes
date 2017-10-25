@@ -3,7 +3,7 @@ title:  "Technical documentation in GitHub :octocat:"
 excerpt: "Writing technical documentation in GitHub using Markdown and embedding other document types such as Word, Excel, PowerPoint and Visio"
 published: true
 header:
-  image: https://ojacques.github.io/images/blog-embed-office-in-github.jpg
+  image: https://ojacques.github.io/images/blog-tech-doc-embed-office.jpg
 categories:
 - blog
 tags:
