@@ -7,7 +7,7 @@ single_layout_gallery:
     alt: "single layout with header example"
   - image_path: /assets/images/mm-layout-single-meta.png
     alt: "single layout with comments and related posts"
-last_modified_at: 2017-10-20T14:26:10-04:00
+last_modified_at: 2017-10-26T15:42:42-04:00
 toc: true
 toc_label: "Included Layouts"
 toc_icon: "columns"
@@ -379,6 +379,19 @@ header:
   cta_label: "More Info"
   cta_url: "https://unsplash.com"
 ```
+
+### OpenGraph & Twitter Card Images
+
+By default the large page header or overlay images are used for sharing previews. If you'd like to set this image to something else use `page.header.og_image` like:
+
+```yaml
+header:
+  image: /assets/images/your-page-image.jpg
+  og_image: /assets/images/your-og-image.jpg
+```
+
+**ProTip:** `og_image` is useful for setting OpenGraph images on pages that don't have a header or overlay image.
+{: .notice--info}
 
 ---
 
