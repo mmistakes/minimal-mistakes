@@ -6,11 +6,11 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en"
-title                    : "just another statistical blog"
-title_separator          : "-"
-name                     : "David Dai"
-description              : "Statistical trainee, aspiring statistical trainer"
+# locale                   : "en"
+# title                    : "just another statistical blog"
+# title_separator          : "-"
+# name                     : "David Dai"
+# description              : "Statistical trainee, aspiring statistical trainer"
 url                      : "https://dwhdai.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "https://github.com/dwhdai/dwhdai.github.io"
