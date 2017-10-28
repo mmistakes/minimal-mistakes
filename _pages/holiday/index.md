@@ -593,8 +593,8 @@ sidebar:
 </tr>
 <tr>
 <td valign="top" width="62" height="22">
-<p class="western" lang="uk-UA" align="center"><span style="font-size: xx-small;">04/11/17</span></p>
-<p class="western" lang="uk-UA" align="center"><span style="font-size: xx-small;">субота</span></p>
+<p class="western" lang="uk-UA" align="center"><span style="font-size: small;">04/11/17</span></p>
+<p class="western" lang="uk-UA" align="center"><span style="font-size: small;">субота</span></p>
 </td>
 <td width="87">
 <p class="western" lang="uk-UA" align="center"><span style="color: #009900;"><span style="font-size: small;">10.00-12.15</span></span></p>
