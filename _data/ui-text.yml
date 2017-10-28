@@ -926,6 +926,49 @@ da: &DEFAULT_DA
 da-DK:
   <<: *DEFAULT_DA
 
+# Polish
+# ------
+pl: &DEFAULT_PL
+  page                       : "Strona"
+  pagination_previous        : "Poprzednia"
+  pagination_next            : "Następna"
+  breadcrumb_home_label      : "Strona główna"
+  breadcrumb_separator       : "/"
+  menu_label                 : "Przełącz menu"
+  toc_label                  : "Spis treści"
+  ext_link_label             : "Link bezpośredni"
+  less_than                  : "mniej niż"
+  minute_read                : "minut(y)"
+  share_on_label             : "Udostępnij"
+  meta_label                 :
+  tags_label                 : "Tagi:"
+  categories_label           : "Kategorie:"
+  date_label                 : "Ostatnia aktualizacja:"
+  comments_label             : "Zostaw komentarz"
+  comments_title             : "Komentarze"
+  more_label                 : "Dowiedz się więcej"
+  related_label              : "Także może Ci się spodobać"
+  follow_label               : "Śledź:"
+  feed_label                 : "Feed"
+  powered_by                 : "Powstało dzięki"
+  website_label              : "Strona"
+  email_label                : "Email"
+  recent_posts               : "Najnowsze wpisy"
+  undefined_wpm              : "Parametr words_per_minute nie został zdefiniowany w _config.yml."
+  comment_form_info          : "Twój adres email nie będzie udostępiony. Wymagane pola są oznaczone."
+  comment_form_comment_label : "Skomentuj"
+  comment_form_md_info       : "Markdown jest wspierany"
+  comment_form_name_label    : "Imię"
+  comment_form_email_label   : "Adres email"
+  comment_form_website_label : "Strona www (opcjonalna)"
+  comment_btn_submit         : "Skomentuj"
+  comment_btn_submitted      : "Komentarz dodany"
+  comment_success_msg        : "Dziękuję za Twój komentarz! Zostanie dodany po akceptacji."
+  comment_error_msg          : "Niestety wystąpił błąd. Proszę upewnij się, że wszystkie wymagane pola zostały wypełnione i spróbuj ponownie."
+  loading_label              : "Trwa ładowanie strony..."
+da-PL:
+  <<: *DEFAULT_PL
+
 # Another locale
 # --------------
 #
