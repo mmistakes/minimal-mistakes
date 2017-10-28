@@ -39,6 +39,20 @@ feature_row:
     url: "/camp"
     btn_class: "btn--primary"
     btn_label: "Читати"
+  - image_path: /assets/images/index/patriotic.jpg
+    alt: "Національно-патріотичне виховання"
+    title: "Національно-патріотичне виховання"
+    excerpt: "Національно-патріотичне виховання"
+    url: "/patriotic"
+    btn_class: "btn--primary"
+    btn_label: "Читати"
+  - image_path: /assets/images/index/holiday.jpg
+    alt: "Плани канікул"
+    title: "Плани канікул"
+    excerpt: "Плани канікул"
+    url: "/holiday"
+    btn_class: "btn--primary"
+    btn_label: "Читати"
 github:
   - excerpt: '{::nomarkdown}<iframe style="display: inline-block;" src="https://ghbtns.com/github-btn.html?user=mmistakes&repo=minimal-mistakes&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe> <iframe style="display: inline-block;" src="https://ghbtns.com/github-btn.html?user=mmistakes&repo=minimal-mistakes&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>{:/nomarkdown}'
 intro:
