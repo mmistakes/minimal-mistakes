@@ -68,5 +68,5 @@ permalink: /programme/
 * *Grab Bag, Summary and topics to discuss* 
 * Lecturer: Fabio Bonsignorio
 * Guest lecture by Rolf Pfeifer:
-  * Em. Prof. University of Zurich
+  * Em. Prof. University of Zurich, Zurich, Switzerland
   * *"How the Body Shapes the Way We Think: 10 Years later"* 
