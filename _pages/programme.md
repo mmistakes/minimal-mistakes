@@ -5,74 +5,68 @@ excerpt: "The lecture programme for the ShanghAI Lectures 2017"
 permalink: /programme/
 ---
 
-### The Lecture Programme for the ShanghAI Lectures 2017 is coming!!! Check back soon!
+### The Lecture Programme for the ShanghAI Lectures 2017 !!! Check back soon! we will add recordings and slides from the lecture!!!
 
 
-### Lecture 1: Artificial Intelligence: things can be seen differently
-* 2016-10-27  09:30 to 11:00 CEST [Recording](https://youtu.be/s68ULSvdJtc)
-* *Artificial Intelligence: things can be seen differently* [Pdf](/slides/Lecture01SlidesFabV1.1ShownPDF.pdf) 
+### Lecture 1: Embodied Intelligence in Natural and Artificial Agents
+* 2017-10-26  09:30 to 11:00 CEST 
+* *Embodied Intelligence in Natural and Artificial Agents: Robotics is coming of age* 
 * Lecturer: Fabio Bonsignorio
-* Site introductions and student challenges
+* Site introductions 
 
-### Lecture 2: A Theory of Embodied Intelligence
-* 2016-11-03 09:30 to 11:00 CET [Recording](https://youtu.be/lO7HL1BgHXA)
-* *A Theory of Embodied Intelligence* [Pdf](/slides/Lecture02SlidesFabV1.1ShownPDF.pdf) 
+### Lecture 2: Towards a Theory of Embodied Intelligence
+* 2017-11-02 09:30 to 11:00 CET 
+* *Embodiment: concept and models* 
 * Lecturer: Fabio Bonsignorio
-* Guest lecture by Rolf Pfeifer: 
-  * Osaka University, Japan and Shanghai Jiao Tong University, China
-  * *"Coping with the robotic hype - a soft materials approach"*
+* Guest lecture by Josh Bongard: 
+  * Vermont Complex Systems Center, University of Vermont, USA
+  * *"Evolving and developing soft robots"*
 
 ### Lecture 3: Intelligent Systems: Properties and Principles
-* 2016-11-10 09:30 to 11:00 CET [Recording](https://youtu.be/gUIUWFidKUo)
-* *Intelligent Systems: Properties and Principles* [Pdf](/slides/Lecture03SlidesFabV1.1ShownPDF.pdf) 
+* 2017-11-09 09:30 to 11:00 CET 
+* *Intelligent Systems: Properties and Principles* 
 * Lecturer: Fabio Bonsignorio
-* The 2016 Kōans! by Martin F. Stoelen
-* Guest lecture by Florian Roehrbein:
-  * Robotics and Embedded Systems group, Technical University of Munich
-  * *"Tools for Virtual Neurorobotics"*
+* Guest lecture by Olivier Michel:
+  * Cyberbotics, Lausanne, Switzerland
+  * *"Robotbenchmark: a web-based robotics simulation to compare control algorithms on standard benchmarks"*
 
 ### Lecture 4: Evolution: Cognition from Scratch
-* 2016-11-17 09:30 to 11:00 CET [Recording](https://youtu.be/uuSOWYaMUgI)
-* *Evolution: Cognition from Scratch* [Pdf](/slides/Lecture04SlidesFabV1.1ShownPDF.pdf) 
+* 2017-11-16 09:30 to 11:00 CET 
+* *Evolution: Cognition from Scratch* 
 * Lecturer: Fabio Bonsignorio
-* Guest Lecture by Mirko Kovac:
+ Young Researcher Guest Lecture by Francesco Corucci:
+  * 3D Nexttech, Livorno, Italy
+  * *"Evolutionary Developmental Soft Robotics: Towards Adaptive and Intelligent Machines Following Nature's Approach to Design"* 
+* Guest Lecture by Nicolas Rojas:
   * Imperial College, London, UK
-  * *"Bio-inspired Aerial Robotics for Future Cities"* [Pdf](/slides/2016-11 Shanghai Lectures.pdf)
+  * *"Enhancing in-hand manipulation via mechanical intelligence"* 
 
-### Lecture 5: Collective Intelligence: Cognition from Interaction
-* 2016-11-24 09:30 to 11:00 CET [Recording](https://youtu.be/AROq1rmz6j0)
-* *Collective Intelligence: Cognition from Interaction* [Pdf](/slides/Lecture05SlidesFabV1.1PDF.pdf) 
-* Lecturer: Fabio Bonsignorio
-* Guest Lecture by Gianluca Baldassare:
-  * CNR-ISTC, Rome, Italy
-  * *"The European project GOAL-Robots aiming to build robots that can learn motor skills in an open-ended fashion driven by curiosity"* [Pdf](/slides/161123Baldassarre-ShangaiLectureSuGOALRobots_WithCentredVideoPicturs.pdf)
-
-### Lecture 6: Morphological Computation, Self-Organization of Behaviors and Adaptive Morphologies
-* 2016-12-01 09:30 to 11:00 CET [Recording](https://youtu.be/6TtbQ2DicPY)
+### Lecture 5: Morphological Computation, Self-Organization of Behaviors and Adaptive Morphologies
+* 2017-11-23 09:30 to 11:00 CET [Recording](https://youtu.be/6TtbQ2DicPY)
 * *Morphological Computation, Self-Organization of Behaviors and Adaptive Morphologies* [Pdf](/slides/Lecture06SlidesFabV1.1PDF.pdf)
 * Lecturer: Fabio Bonsignorio
-* Guest Lecture by Josh Bongard:
-  * Vermont Complex Systems Center, University of Vermont, US
-  * *"Co-evolution of brain and body morphologies"* [Pdf](/slides/2016_ShanghAI_bongard.pdf) 
-  
-### Lecture 7: Live from Vienna: EUCognition Meeting 2016
-* 2016-12-8  09:20 to 10:40 CET
-* *Live from Vienna: EUCognition Meeting 2016* [Pdf](/slides/intro_eucog.pdf)
-* David Vernon and Markus Vincze:
-  * *"What Do Industrial Developers and End-Users Expect from a Cognitive Robot?"* [Pdf](/slides/Industry_Requirements_Vernon_Vincze.pdf)
-* Florian Röhrbein:
-  * *"Neurorobotics, a strategic pillar of Human Brain Project"* [Pdf](/slides/2016-12-08-Wien-euCog.pdf)
-* Ron Chrisley and Aaron Sloman:
-  * *"Architectural Requirements for Consciousness"* [Pdf](/slides/Chrisley%20and%20Sloman%20-%20Architectural%20Requirements%20for%20Consciousness.pdf)
-* Fabio Bonsignorio:
-  * *"Open Issues in Cognitive Embodied AI Architectures for New Robotics"* [Pdf](/slides/EuCog2016BonsignoriokeyPDF.pdf)
+* Guest Lecture by : Keyan Ghazi-Zahedi
+  * Max Planck Institute for Mathematics, Berlin, Germany
+  * *"Mathematical Models of Morphological Computation"*  
 
-### Lecture  8: Future Trends: Grab Bag, Summary, Discussion
-* 2016-12-15 09:30 to 11:00 CET
-* *Future Trends, Round Table, Summary* [Recording](https://youtu.be/ADgTEFJ8fPA)
+### Lecture 6: Collective Intelligence: Cognition from Interaction
+* 2017-11-30 09:30 to 11:00 CET 
+* *Emerging Intelligence: Cognition from Interaction, Development and Evolution * 
 * Lecturer: Fabio Bonsignorio
-* *"The GummiArm Project"* [Pdf](/slides/mstoelen_gummiarm_shail2016.pdf)
-  * Lecturer: Martin F. Stoelen
-* Guest lecture by Florian Roehrbein (rescheduled):
-  * Robotics and Embedded Systems group, Technical University of Munich
-  * *"Tools for Virtual Neurorobotics"* [Pdf](/slides/2016-12-15-ShanghAI-Roehrbein.pdf)
+* Guest Lecture by Martin Stoelen:
+  * University of Plymouth, Plymouth, UK
+  * *"Co-developing brain and body, in the field"* 
+  
+### Lecture 7: The Road Ahead
+* 2017-12-7  09:30 to 11:00 CET
+* *The Road to a New Paradigm Robotics* 
+* Lecturer: Fabio Bonsignorio
+* Guest Lecture: To Be Announced
+
+### Lecture  8: Grab Bag, Summary, Discussion
+* 2016-12-15 09:30 to 11:00 CET
+* *Grab Bag, Summary and topics to discuss* 
+* Lecturer: Fabio Bonsignorio
+* Guest lecture by Rolf Pfeifer:
+  * Em. Prof. University of Zurich
+  * *"How the Body Shapes the Way We Think: 10 Years later"* 
