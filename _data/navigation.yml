@@ -23,6 +23,8 @@ sidebar-menu:
         url: /achievements
       - title: "Історія"
         url: /history
+      - title: "Газета 'Шкільна орбіта'"
+        url: /school-newspaper
 
   - title: Управління
     children:

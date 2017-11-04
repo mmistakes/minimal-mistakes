@@ -59,6 +59,16 @@ intro:
   - excerpt: 'Слідкуйте за нами у соціальних мережах &nbsp; [<i class="fa fa-youtube"></i> nvk125](https://www.youtube.com/channel/UCWUxpJfzRRRTuKxtSuTN08A){: .btn .btn--danger}'
 ---
 
+## Останні новини
+
+<div class="grid__wrapper">
+  {% for post in site.posts limit:8 %}
+    {% include archive-single.html type="grid" %}
+  {% endfor %}
+</div>
+
 {% include feature_row id="intro" type="center" %}
+
+## Сторінки
 
 {% include feature_row %}
