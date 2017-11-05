@@ -9,7 +9,7 @@ minimal_mistakes_skin    : "contrast" # "air", "contrast", "dark", "dirt", "mint
 
 # Site Settings
 locale                   : "en_GB"
-title                    : "Little pieces on nonsense"
+title                    : "Little pieces of (non)sense"
 title_separator          : "-"
 name                     : "Giulio Troccoli-Allard"
 description              : "Pieces of knowledge gathered during my years of working as a developer."
@@ -251,3 +251,10 @@ defaults:
       comments: # true
       share: true
       related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
