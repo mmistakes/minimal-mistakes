@@ -107,7 +107,7 @@ $defaultCredentials =  $cred.UseDefaultCredentials
 [HtmlAgilityPack.HtmlDocument]$doc = $web.Load($url,"GET","ourproxy:80",$defaultCredentials)
  ```
 This solved the authentication issues. I also experimented a little with Proxy-authentication.
-I've commented out that code in the [full script]() for future reference.
+I've commented out that code in the [full script](https://github.com/CookieCrumbles/Get-fromlansweeper) for future reference.
 
 ### Selecting data with XPath
 The next step was using the XPath-technique to select a certain row in a table. I used the chrome-web-developer tools to go through the HTML code.
