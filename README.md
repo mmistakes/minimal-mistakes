@@ -38,9 +38,9 @@ This theme comes in seven different skins (including the default one).
 | --- | --- | --- |
 | ![dirt skin](https://mmistakes.github.io/minimal-mistakes/assets/images/dirt-skin-archive.png) | ![mint skin](https://mmistakes.github.io/minimal-mistakes/assets/images/mint-skin-archive.png) | ![sunrise skin](https://mmistakes.github.io/minimal-mistakes/assets/images/sunrise-skin-archive.png) |
 
-| `aqua` | `neon` |  |
+| `aqua` | `neon` | --- |
 | --- | --- | --- |
-| ![aqua skin](https://mmistakes.github.io/minimal-mistakes/assets/images/aqua-skin-archive.png) | ![neon skin](https://mmistakes.github.io/minimal-mistakes/assets/images/neon-skin-archive.png) | |
+| ![aqua skin](https://mmistakes.github.io/minimal-mistakes/assets/images/aqua-skin-archive.png) | ![neon skin](https://mmistakes.github.io/minimal-mistakes/assets/images/neon-skin-archive.png) | ![transparent-400x404](https://user-images.githubusercontent.com/1376749/32458764-72a67bc8-c2fb-11e7-88c5-861a837f2709.gif) |
 
 ## Demo Pages
 
