@@ -15,6 +15,7 @@
 - Refactor seo.html include to DRY-up page image handling.
 - Add support for setting what image is used by OpenGraph and Twitter via `page.header.og_image`. [#1316](https://github.com/mmistakes/minimal-mistakes/issues/1316)
 - Fix the spelling of some product names in the author profile. [#1328](https://github.com/mmistakes/minimal-mistakes/pull/1328)
+- Add `aqua` skin. [#1336](https://github.com/mmistakes/minimal-mistakes/pull/1336)
 
 ### Bug Fixes
 

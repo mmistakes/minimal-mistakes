@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-last_modified_at: 2017-10-20T12:34:20-04:00
+last_modified_at: 2017-11-06T11:26:27-05:00
 toc: true
 ---
 
