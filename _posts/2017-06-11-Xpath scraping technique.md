@@ -15,7 +15,7 @@ But again that's too slow and cumbursome.
 
 So i first started this idea with a small simple script almost a year ago.
 
-``` Powershell
+```javascript
 function Get-phone {
     [cmdletbinding()]
     param(
@@ -53,12 +53,12 @@ The description holds the department for which the user works.
 Else, if you don't know the SamAccountName, you can look for the normal name like "Jan" or "Matthews".
 
 So running the code :
-``` Powershell
+```javascript
  Get-phone SamAccountName
  ```
  Would get you:
 
- ``` Powershell
+```javascript
  Name            :  Smith John
 SamAccountName  :  smjxyz
 Mobile          :  (089) / 636-48018
@@ -100,7 +100,7 @@ HtmlAgilityPack.HtmlDocument Load(string url, string proxyHost, int proxyPort, s
 HtmlAgilityPack.HtmlDocument Load(**string url, string method, System.Net.WebProxy proxy, System.Net.NetworkCredential credentials**)
 
 So putting those two together got me to
-``` Powershell
+```javascript
 $cred = new-object System.Net.NetworkCredential
 $defaultCredentials =  $cred.UseDefaultCredentials
 
@@ -112,10 +112,11 @@ I've commented out that code in the [full script]() for future reference.
 ### Selecting data with XPath
 The next step was using the XPath-technique to select a certain row in a table. I used the chrome-webdeveloper tools to go through the HTML code.
 
-![Lansweeper]({{site.baseurl}}/assets/images/xpathscraping/shell.png)
+![Lansweeper]({{site.baseurl}}/assets/images/xpathscraping/lasweeper.png)
+
 <sup> Please note that i have highly sanitized this image and filled it up with mock-up data (a part from my name).<sup>
 
-``` Powershell
+```javascript
 $lastknownpc = ([HtmlAgilityPack.HtmlNodeCollection]$nodes = $doc.DocumentNode.SelectNodes("//html[1]/body[1]//div[@id='Maincontent']//td[@id = 'usercontent']//table[5]//tr[2]//td[3]")).innerText
 $lastdatelist = ([HtmlAgilityPack.HtmlNodeCollection]$nodes = $doc.DocumentNode.SelectNodes("//html[1]/body[1]//div[@id='Maincontent']//td[@id = 'usercontent']//table[$td]//tr//td[2]")).innerText
  ```
@@ -131,14 +132,14 @@ $lastdate = ([HtmlAgilityPack.HtmlNodeCollection]$nodes = $doc.DocumentNode.Sele
 
  I wanted to showcase the lastknow pc (and most likely the active one) a bit more so i wrote a quick and dirty solution:
 
-``` Powershell
+```javascript
 write-host "Last logged on to computer:"($lastknownpclist | select -First 1 -Skip 1)"@"($lastdatelist | select -First 1 -Skip 1)  -ForegroundColor Green
 ```
 This will print me the last and probably active using computer in a green color in my prompt window.
 
 The next and final step is to show the history of different devices where the user has logged on to.
 
-``` Powershell
+```javascript
 $arr = @()
 for($i = 1; $i -lt $lastknownpclist.count; $i ++) # $i has to be 1 because of the TH (table-header)
 {
@@ -176,6 +177,7 @@ Finally i include this function within the **get-phone** function i showed your 
 So the final output of the get-phone function would now be :
 
 ![shell]({{site.baseurl}}/assets/images/xpathscraping/shell.png)
+
 <sup> Please note that i have sanitized this image and filled it up with mock-up data (a part from my name).</sup>
 
 So now i have all the data i need with one simple function. :)
