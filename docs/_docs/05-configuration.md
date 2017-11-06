@@ -28,7 +28,7 @@ theme: minimal-mistakes-jekyll
 Easily change the color scheme of the theme using one of the provided "skins":
 
 ```yaml
-minimal_mistakes_skin : "default" # "air", "contrast", "dark", "dirt", "mint", "sunrise"
+minimal_mistakes_skin : "default" # "air", "aqua", "contrast", "dark", "dirt", "mint", "sunrise"
 ```
 
 **Note:** If you have made edits to the theme's CSS files be sure to update [`/assets/css/main.scss`](https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss) to include `@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin` before the `minimal-mistakes` import.
@@ -41,6 +41,15 @@ minimal_mistakes_skin : "default" # "air", "contrast", "dark", "dirt", "mint", "
     <a href="{{ site.baseurl }}/assets/images/air-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/air-skin-archive.png"></a>
     <a href="{{ site.baseurl }}/assets/images/air-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/air-skin-post.png"></a>
     <figcaption>Calm and blue.</figcaption>
+</figure>
+
+#### Aqua skin: `aqua`
+{:.no_toc}
+
+<figure class="half">
+    <a href="{{ site.baseurl }}/assets/images/aqua-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/aqua-skin-archive.png"></a>
+    <a href="{{ site.baseurl }}/assets/images/aqua-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/aqua-skin-post.png"></a>
+    <figcaption>Just like water.</figcaption>
 </figure>
 
 #### Contrast skin: `contrast`
