@@ -124,7 +124,7 @@ This code would give me the second row of that table. But then i got thinking, m
 
 So i changed my code to :
 
-``` Powershell
+```javascript
 $lastknownpclist = ([HtmlAgilityPack.HtmlNodeCollection]$nodes = $doc.DocumentNode.SelectNodes("//html[1]/body[1]//div[@id='Maincontent']//td[@id = 'usercontent']//table[$td]//tr//td[3]")).innerText
 $lastdate = ([HtmlAgilityPack.HtmlNodeCollection]$nodes = $doc.DocumentNode.SelectNodes("//html[1]/body[1]//div[@id='Maincontent']//td[@id = 'usercontent']//table[5]//tr[2]//td[2]")).innerText
  ```
