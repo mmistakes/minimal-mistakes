@@ -112,7 +112,7 @@ I've commented out that code in the [full script]() for future reference.
 ### Selecting data with XPath
 The next step was using the XPath-technique to select a certain row in a table. I used the chrome-webdeveloper tools to go through the HTML code.
 
-![Lansweeper]({{site.baseurl}}/assets/images/xpathscraping/lansweeper.PNG)
+![Lansweeper]({{site.baseurl}}/assets/images/xpathscraping/lansweeper.png)
 
 <sup> Please note that i have highly sanitized this image and filled it up with mock-up data (a part from my name).<sup>
 
