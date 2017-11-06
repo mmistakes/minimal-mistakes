@@ -40,7 +40,7 @@ This theme comes in seven different skins (including the default one).
 
 | `aqua` | `neon` | `plum` |
 | --- | --- | --- |
-| ![aqua skin](https://mmistakes.github.io/minimal-mistakes/assets/images/aqua-skin-archive.png) | ![neon skin](https://mmistakes.github.io/minimal-mistakes/assets/images/neon-skin-archive.png) | ![transparent-400x404](https://user-images.githubusercontent.com/1376749/32458764-72a67bc8-c2fb-11e7-88c5-861a837f2709.gif) |
+| ![aqua skin](https://mmistakes.github.io/minimal-mistakes/assets/images/aqua-skin-archive.png) | ![neon skin](https://mmistakes.github.io/minimal-mistakes/assets/images/neon-skin-archive.png) | ![plum skin](https://mmistakes.github.io/minimal-mistakes/assets/images/plum-skin-archive.png) |
 
 ## Demo Pages
 
