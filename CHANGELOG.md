@@ -17,6 +17,7 @@
 - Fix the spelling of some product names in the author profile. [#1328](https://github.com/mmistakes/minimal-mistakes/pull/1328)
 - Add `aqua` and `neon` skins. [#1336](https://github.com/mmistakes/minimal-mistakes/pull/1336)
 - Update **jekyll-toc** with heading classes fix. [#1337](https://github.com/mmistakes/minimal-mistakes/pull/1337)
+- Remove `+` from Google+ author link to allow non-vanity URLs. [#1319]
 
 ### Bug Fixes
 
