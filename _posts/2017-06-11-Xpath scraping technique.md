@@ -50,7 +50,7 @@ So this basically means that if you **know** the SamAccountName, it will retriev
 Some of these values are self-explanatory but some aren't. POBox is used as an internal reference code, some users forget them so it's easy to add it to the list for a quick retrieval.
 The description holds the department for which the user works.
 
-Else, if you don't know the SamAccountName, you can look for the normal name like "Jan" or "Matthews".
+Else, if you **don't know** the SamAccountName, you can look for the normal name like "Jan" or "Matthews".
 
 So running the code :
 ```javascript
