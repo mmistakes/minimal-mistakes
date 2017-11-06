@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-11-06T12:30:30-05:00
+last_modified_at: 2017-11-06T16:14:47-05:00
 toc: true
 ---
 
@@ -25,7 +25,7 @@ toc: true
 - Refactor seo.html include to DRY-up page image handling.
 - Add support for setting what image is used by OpenGraph and Twitter via `page.header.og_image`. [#1316](https://github.com/mmistakes/minimal-mistakes/issues/1316)
 - Fix the spelling of some product names in the author profile. [#1328](https://github.com/mmistakes/minimal-mistakes/pull/1328)
-- Add `aqua` and `neon` skins. [#1336](https://github.com/mmistakes/minimal-mistakes/pull/1336)
+- Add `aqua`, `neon`, and `plum` skins. [#1336](https://github.com/mmistakes/minimal-mistakes/pull/1336)
 - Update **jekyll-toc** with heading classes fix. [#1337](https://github.com/mmistakes/minimal-mistakes/pull/1337)
 - Remove `+` from Google+ author link to allow non-vanity URLs. [#1319]
 
