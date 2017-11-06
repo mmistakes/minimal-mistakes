@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-11-06T11:26:18-05:00
+last_modified_at: 2017-11-06T11:28:50-05:00
 toc: true
 ---
 
@@ -26,6 +26,7 @@ toc: true
 - Add support for setting what image is used by OpenGraph and Twitter via `page.header.og_image`. [#1316](https://github.com/mmistakes/minimal-mistakes/issues/1316)
 - Fix the spelling of some product names in the author profile. [#1328](https://github.com/mmistakes/minimal-mistakes/pull/1328)
 - Add `aqua` skin. [#1336](https://github.com/mmistakes/minimal-mistakes/pull/1336)
+- Update **jekyll-toc** with heading classes fix. [#1337](https://github.com/mmistakes/minimal-mistakes/pull/1337)
 
 ### Bug Fixes
 
