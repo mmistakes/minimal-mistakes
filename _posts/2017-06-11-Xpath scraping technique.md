@@ -74,7 +74,7 @@ POBox           :  012345
  So i decided to create a new function that scrapes the data i want from our local hosted Lansweeper webserver and show that along with the previously mentioned data.
  I decided to use HTMLAgilityPack in combination with *XPath*. A technique i have not used very much since i only recently discovered it's existence.
 
-### Problem : Windows authentification
+### Problem : Windows authentication
 
  The first and biggest problem i ran into, was the fact that Lansweeper uses Windows-Authentication.
  The authentication  is based on the membership of an Active Directory group.
@@ -106,7 +106,7 @@ $defaultCredentials =  $cred.UseDefaultCredentials
 
 [HtmlAgilityPack.HtmlDocument]$doc = $web.Load($url,"GET","ourproxy:80",$defaultCredentials)
  ```
-This solved the authentication issues. I also experimented a little with Proxy-authentification.
+This solved the authentication issues. I also experimented a little with Proxy-authentication.
 I've commented out that code in the [full script]() for future reference.
 
 ### Selecting data with XPath
