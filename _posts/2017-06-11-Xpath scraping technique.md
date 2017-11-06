@@ -11,7 +11,7 @@ Now you can type in the name in Outlook and look for it, but i find this too cum
 We also have this great tool called Lansweeper. It's a network-inventory tool that scan's your network and keeps everything up to date (inventory wise).
 
 Lansweeper has a connection with Active Directory, so i could find the user's phone number here as well.
-But again that's too slow and cumbursome.
+But again that's too slow and cumbersome.
 
 So i first started this idea with a small simple script almost a year ago.
 
