@@ -5,9 +5,16 @@ sidebar:
   nav: "sidebar-menu"
 ---
 
-Інформація по НВК № 125 щодо фінансової діяльності закладу з питання використання коштів на покращення матеріально-технічної бази
+{% for post in site.pages %}
+  {% if post.categories contains "Фінансовий звіт" %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
 
 [Фінансовий звіт батьківської ради КЗО НВК 2016](https://drive.google.com/open?id=0B0xNmQOswTH4cTUzX3J1d0ZyNEE){:target="_blank"}
+
+Інформація по НВК № 125 щодо фінансової діяльності закладу з питання використання коштів на покращення матеріально-технічної бази
 
 <table>
 	<tbody>
