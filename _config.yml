@@ -5,7 +5,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en"
@@ -85,7 +85,7 @@ analytics:
 author:
   name             : "Andrés Angelini"
   avatar           : "https://avatars1.githubusercontent.com/u/29132347?s=400&u=a6c7fb69168e6b34f37bf50d709a5b5b11bc6480&v=4" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
+  bio              : "A self proclaimed Alchemist trying to discover the right mix of art, code and love to make beatiful creations."
   location         : "Montevideo, Uruguay."
   email            :
   uri              :
