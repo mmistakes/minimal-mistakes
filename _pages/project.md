@@ -22,7 +22,6 @@ last_modified_at: 2017-08-04T12:38:01-04:00
 
 **Elliptic Curve Generation**: [*Constructing Pairing Friendly Elliptic Curves*]({{ "/pdfs/Crypto_writeup.pdf" | absolute_url }}). Report on constructing specific elliptic curves for cryptographic purposes, based on methods found in "A Taxonomy of Pairing-Friendly Elliptic Curves" (2010)
 ---
-
 ## Data Analysis
 
 **AirBnB Housing Price Analysis**: [*Most important Factors for AirBnB Pricing*]({{ "/pdfs/citadel_writeup_fall_2017.pdf" | absolute_url }}). Data analysis for Citadel Datathon (Fall 2017) to analyze most import factors that affect AirBnB prices. [Full Code](https://github.com/Srizzle/Citadel-Datathon-Fall-2017)
