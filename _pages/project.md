@@ -18,9 +18,11 @@ last_modified_at: 2017-08-04T12:38:01-04:00
 
 **Online Local Learning**: [*Online Local Learning Developments*]({{ "/pdfs/281B_writeup.pdf" | absolute_url }}). Recent developments in online local learning and online convex optimization from class [CS 281B](http://www.stat.berkeley.edu/~bartlett/courses/2014spring-cs281bstat241b/) (Learning Theory)
 
+**Elliptic Curve Generation**: [*Constructing Pairing Friendly Elliptic Curves*]({{ "/pdfs/Crypto_writeup.pdf" | absolute_url }}). Report on constructing specific elliptic curves for cryptographic purposes, based on methods found in "A Taxonomy of Pairing-Friendly Elliptic Curves" (2010), from [CS 276](https://people.eecs.berkeley.edu/~alexch/classes/CS276-F2015.html).
+
 **Inapproximability of MAX-CUT**: [*MAX-CUT Inapproximability*]({{ "/pdfs/270_writeup.pdf" | absolute_url }}). A readthrough of the PCP theorem applied on the famous Max-Cut paper by Khot for CS 270 (Advanced Algorithms)
 
-**Elliptic Curve Generation**: [*Constructing Pairing Friendly Elliptic Curves*]({{ "/pdfs/Crypto_writeup.pdf" | absolute_url }}). Report on constructing specific elliptic curves for cryptographic purposes, based on methods found in "A Taxonomy of Pairing-Friendly Elliptic Curves" (2010).
+
 
 ---
 ## Data Analysis
