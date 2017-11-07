@@ -1,0 +1,267 @@
+/* ======= Base ======= */
+body {
+    font-family: 'Roboto', sans-serif;  
+    color: @text-color-secondary;
+    background: @smoky-white;
+    font-size: 14px;
+    padding: 30px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6  {
+    font-weight: 700;
+}
+
+a {
+    color: darken(@theme-color, 15%);
+    .transition (all 0.4s ease-in-out);
+    &:hover {
+        text-decoration: underline;
+        color: darken(@theme-color, 30%);
+    }
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+p {
+    line-height: 1.5;
+}
+
+.wrapper {
+    background:@theme-color;
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+    .box-shadow(0px 2px 4px rgba(0,0,0,0.1));
+}
+
+.sidebar-wrapper {
+    background: @theme-color;
+    position: absolute;
+    right: 0;
+    width: 240px;
+    height: 100%;
+    min-height: 800px;
+    color: #fff;
+    a {
+        color: #fff;
+    }
+    .profile-container {
+        padding: 30px;
+        //background: darken(@theme-color, 10%);
+        background: rgba(0, 0, 0, 0.2);
+        text-align: center;
+        color: #fff;
+    }
+    .name {
+        font-size: 32px;
+        font-weight: 900;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .tagline {
+        color: rgba(256, 256, 256, 0.6);
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .profile {
+        margin-bottom: 15px;
+    }
+    .contact-list {
+        .fa {
+            margin-right: 5px;
+            font-size: 18px;
+            vertical-align: middle;
+        }
+        li {
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .email {
+            .fa {
+                font-size: 14px;
+            }
+        }
+    }
+    .container-block {
+        padding: 30px;
+    }
+    .container-block-title {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    .degree {
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    .education-container {
+        .item {
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .meta {
+            color: rgba(256, 256, 256, 0.6);
+            font-weight: 500;
+            margin-bottom: 0px;
+            margin-top: 0;
+        }
+        .time {
+            color: rgba(256, 256, 256, 0.6);
+            font-weight: 500;
+            margin-bottom: 0px;
+        }
+    }
+    .languages-container {
+        .lang-desc {
+            color: rgba(256, 256, 256, 0.6);
+        }
+    }
+    
+    .languages-list {
+        margin-bottom: 0;
+        li {
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    
+    .interests-list {
+        margin-bottom: 0;
+        li {
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.main-wrapper {
+    background: #fff;
+    padding: 60px;
+    padding-right: 300px;
+    .section-title {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 500;
+        color: darken(@theme-color, 15%);
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 20px;
+        .fa {
+            width: 30px;
+            height: 30px;
+            margin-right: 8px;
+            display: inline-block;
+            color: #fff;
+            .border-radius(50%);
+            background: darken(@theme-color, 15%);
+            text-align: center;
+            padding-top: 8px;
+            font-size: 16px;
+            position: relative;
+            top: -2px;
+        }
+
+    }
+    .section {
+        margin-bottom: 60px;
+    }
+    
+    .experiences-section {
+        .item {
+            margin-bottom: 30px;
+        }
+    }
+    .upper-row {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 2px;
+    }
+    .job-title {
+        color: @text-color;
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 500;
+    }
+    .time {
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: @text-grey;
+    }
+    .company {
+        margin-bottom: 10px;
+        color: @text-grey;
+    }
+    
+    .project-title {
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    .projects-section {
+        .intro {
+            margin-bottom: 30px;
+        }
+        .item {
+            margin-bottom: 15px;
+        }
+    }
+    
+}
+
+
+.skillset {
+    .item {
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+    .level-title {
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+    .level-bar {
+        height: 12px;
+        background: @smoky-white;
+    }
+    .level-bar-inner {
+        height: 12px;
+        background: lighten(@theme-color, 15%);
+    }
+}
+
+
+
+
+.footer {
+    padding: 30px;
+    padding-top: 60px;
+    .copyright {
+        line-height: 1.6;
+        color: @text-color-secondary;
+        font-size: 13px;       
+    }  
+    
+    .fa-heart {
+        color: @heart;
+    }
+    
+}

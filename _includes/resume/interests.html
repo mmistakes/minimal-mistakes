@@ -1,0 +1,13 @@
+{% if site.data.resume.interests %}
+<div class="interests-container container-block">
+
+  <h2 class="container-block-title">Interests</h2>
+
+    <ul class="list-unstyled interests-list">
+      {% for interest in site.data.resume.interests %}
+      <li>{{ interest.item }}</li>
+      {% endfor %}
+    </ul>
+
+</div><!--//interests-->
+{% endif %}

@@ -1,0 +1,15 @@
+{% if site.data.resume.educations %}
+<div class="education-container container-block">
+
+  <h2 class="container-block-title">Education</h2>
+
+  {% for education in site.data.resume.educations %}
+    <div class="item">
+      <h4 class="degree">{{ education.degree }}</h4>
+      <h5 class="meta">{{ education.university }}</h5>
+      <div class="time">{{ education.time }}</div>
+    </div><!--//item-->
+  {% endfor %}
+
+</div><!--//education-container-->
+{% endif %}
