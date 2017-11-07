@@ -5,18 +5,18 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-minimal_mistakes_skin    : "default" # "air", "contrast", "dark", "dirt", "mint", "sunrise"
+minimal_mistakes_skin    : "mint" # ""default" # "air", "contrast", "dark", "dirt", "mint", "sunrise"
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "The ARS Agricultural Microbiomes Group"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Adam R. Rivers"
+description              : "Advancing agriculture by through the application of microbiome science and machine learning"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : /assets/images/nersc300-500.jpg # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -83,11 +83,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  name             : "Adam R. Rivers, PhD"
+  avatar           : "assets/images/rivers1.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Computational biologist and microbial ecologist
+                        using microbiome data and machine learning to create a
+                        safe, productive, and sustainable agricultural systems."
+
+  location         : "Gainesville, Florida"
+  email            : "adam.rivers@ars.usda.gov"
   uri              :
   bitbucket        :
   codepen          :
@@ -95,19 +98,19 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "arivers"
   gitlab           :
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : adam-rivers-65007854# "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
-  twitter          :
+  twitter          : adam_rivers
   vine             :
   weibo            :
   xing             :
@@ -142,8 +145,6 @@ exclude:
   - Rakefile
   - README
   - tmp
-  - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimal Mistakes /test
 keep_files:
   - .git
   - .svn
@@ -237,6 +238,12 @@ compress_html:
   ignore:
     envs: development
 
+# Collections
+collections:
+  projects:
+      output: true
+      permalink: /:collection/:path/
+
 
 # Defaults
 defaults:
@@ -251,3 +258,17 @@ defaults:
       comments: # true
       share: true
       related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+ #_projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: true
