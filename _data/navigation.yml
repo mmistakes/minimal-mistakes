@@ -45,6 +45,8 @@ sidebar-menu:
         url: /process/mode
       - title: Розклад
         url: /syllabus
+      - title: Освітні програми
+        url: /process/programs/
 
   - title: Звіти директора
     url: /reports
