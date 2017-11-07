@@ -3,7 +3,7 @@ title: "Vica: A classifier for highly divergent DNA and RNA viruses"
 header:
   overlay_image: /assets/images/bacteriophage_P2.jpg
   og_image: /assets/images/bacteriophage_P2.jpg
-  teaser: /assets/images/bacteriophage_P2_300.jpg
+  teaser: /assets/images/Bacteriophage_P2_300.jpg
   caption: "Photo Credit: [Mostafa Fatehi](https://commons.wikimedia.org/wiki/File:PhageP2.jpg)"
 excerpt: "Applying machine learning to identify highly divergent viruses in metagenome and metatranscriptome data"
 categories:
