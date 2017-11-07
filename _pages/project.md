@@ -20,6 +20,7 @@ last_modified_at: 2017-08-04T12:38:01-04:00
 
 **Inapproximability of MAX-CUT**: [*MAX-CUT Inapproximability*]({{ "/pdfs/270_writeup.pdf" | absolute_url }}). A readthrough of the PCP theorem applied on the famous Max-Cut paper by Khot for CS 270 (Advanced Algorithms)
 
+**Elliptic Curve Generation**: [*Constructing Pairing Friendly Elliptic Curves*]({{ "/pdfs/Crypto_writeup.pdf" | absolute_url }}). Report on constructing specific elliptic curves for cryptographic purposes, based on methods found in "A Taxonomy of Pairing-Friendly Elliptic Curves" (2010)
 ---
 
 ## Data Analysis
