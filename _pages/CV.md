@@ -6,7 +6,7 @@ last_modified_at: 2017-08-04T12:38:01-04:00
 ---
 ## Curricula Vitae and Resume 
 
-(last updated 9/30/2017)
+(last updated 11/7/2017)
 
 [CV Long]({{ "/pdfs/CV_PhD.pdf" | absolute_url }})
 
