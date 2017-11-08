@@ -4,9 +4,15 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-11-06T20:21:46-05:00
+last_modified_at: 2017-11-07T20:11:48-05:00
 toc: true
 ---
+
+## Unreleased
+
+### Enhancements
+
+- Use [jekyll-remote-theme](https://github.com/benbalter/jekyll-remote-theme) for demo site. [#1339](https://github.com/mmistakes/minimal-mistakes/issues/1339)
 
 ## [4.7.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.7.0)
 
@@ -27,7 +33,7 @@ toc: true
 - Fix the spelling of some product names in the author profile. [#1328](https://github.com/mmistakes/minimal-mistakes/pull/1328)
 - Add `aqua`, `neon`, and `plum` skins. [#1336](https://github.com/mmistakes/minimal-mistakes/pull/1336)
 - Update **jekyll-toc** with heading classes fix. [#1337](https://github.com/mmistakes/minimal-mistakes/pull/1337)
-- Remove `+` from Google+ author link to allow non-vanity URLs. [#1319]
+- Remove `+` from Google+ author link to allow non-vanity URLs. [#1319](https://github.com/mmistakes/minimal-mistakes/pull/1319)
 
 ### Bug Fixes
 
