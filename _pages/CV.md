@@ -8,7 +8,7 @@ last_modified_at: 2017-08-04T12:38:01-04:00
 
 (last updated 9/30/2017)
 
-[CV Long]({{ "/pdfs/CV_main.pdf" | absolute_url }})
+[CV Long]({{ "/pdfs/CV_PhD.pdf" | absolute_url }})
 
 [Resume (CV Short)]({{ "/pdfs/CV_short.pdf" | absolute_url }})
 
