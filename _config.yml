@@ -263,10 +263,9 @@ resume:
   name: *name
   tagline: Lead Web Developer
   pic: gravatar.jpeg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
-  summary: 'Summarise your career here lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-  You can <a href="#" target="_blank">download this free resume/CV template here</a>. Aenean
-  commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-  montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.'
+  summary: 'I have been a developer for 20 years, with the last 7 using PHP and specialising in web technologies
+  in a LAMP environment with Zend Framework 1 and most recently with Laravel and Lumen. I have worked on big mainframes
+  as well as small web servers. I have built product from scratch as well as maintained and enhanced existing ones.'
 
   #sidebar links
   email: *email

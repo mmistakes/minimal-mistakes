@@ -1,28 +1,70 @@
 - experience:
-  role: Lead Developer
-  time: 2015 - Present
-  company: Startup Hubs, San Francisco
-  details: "Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing
-  elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
-  magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-  pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.
-  <br> <br>
-  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-  laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-  architecto beatae vitae dicta sunt explicabo."
+  role: Lead Backend Developer
+  time: 2017 - Present
+  company: London Review of Books, London
+  details: ""
 - experience:
-  role: Senior Software Engineer
-  time: 2014 - 2015
-  company: Google, London
-  details: "Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing
-  elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
-  magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-  pellentesque eu, pretium quis, sem."
+  role: Backend Developer
+  company: Your Favourite Story
+  time: January 2017 - March 2017
+  details: "<ul>
+  <li>Built internal web-based tool to upload files to client server</li>
+  </ul>"
 - experience:
-  role: UI Developer
-  time: 2012 - 2014
-  company: Amazon, London
-  details: "Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing
-  elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
-  magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-  pellentesque eu, pretium quis, sem."
+  role: Web Developer
+  time: January 2016 - December 2016
+  company: City A.M., London
+  details: "<ul>
+  <li>Build a new API server in Lumen 5.2</li>
+  <li>Worked on upgrading two sites from Laravel 4.2 to 5.2</li>
+  <li>Worked on rebranding of old site</li>
+  <li>Continued working on existing in-house CMS for new features and bug-fixing</li>
+  <li>Daily use of GIT for branching and merging</li>
+  </ul>"
+- experience:
+  role: PHP Developer
+  time: January 2011 - October 2016
+  company: Mediatel, London
+  details: "<ul>
+  <li>Mentored a Junior developer on Mediatel products, our coding standards, Zend Framework and general OOPHP</li>
+  <li>Contributed to the development of a mapping feature in our core product using PostGIS, TinyOWS, Mapnik and React.</li>
+  <li>Developed new website, front (JavaScript and jQuery) and back-end (PHP, MySQL and ZF1), for company’s events, with
+  booking and payment facilities (PayPal API), and provided support and training on how to use it (from an admin point of view)</li>
+  <li>Designed, coded (PHP, MySQL and ZF1)and implemented a process to load survey data from different providers, using
+  XML to defined what to import.</li>
+  </ul>"
+- experience:
+  role: Technical Consultant
+  time: August 2006 - December 2010
+  company: Linedata Services (UK) Ltd, London
+  details: "<ul>
+  <li>Developed a framework of Perl scripts and classes to help Subversion administrators and users</li>
+  <li>Provided internal and external technical support</li>
+  <li>Managed the migration from CMS on OpenVMS to Subversion on Linux</li>
+  </ul>"
+- experience:
+  role: Analyst Programmer
+  time: March 2001 - August 2006
+  company: Linedata Services (UK) Ltd, London
+  details: "<ul>
+  <li>Added new functionality and scripts to help developers and tester in using subversion</li>
+  <li>Co-managed, designed and developed the Subversion system, a Control Management System, for few of our products</li>
+  <li>Improved the development process on Unix platforms with scripts (written in ksh and using awk and sed) for developers</li>
+  <li>Developed a new connector to retrieve market data from specific vendors</li>
+  <li>Designed a new functionality to import financial data from an external source via XML. The XML document was
+  written against a XML Schema</li>
+  <li>Developed for a real time back office investment management, administration, portfolio valuation and investment
+  reporting solution. The product is platform-independent, with only a small kernel developed for a specific environment</li>
+  </ul>"
+- experience:
+  role: Analyst Programmer
+  time: June 1998 - November 2000
+  company: S.T. – Sistemi Telematici, Palmanova (Italy)
+  details: "<ul>
+  <li>Coordinated a group of 5 programmers in a redesigning project. The code was written in C and COBOL, with embedded
+  SQL. All the procedures ran on a Unix machine with Informix</li>
+  <li>Developed, upgraded and managed applications to administrate vehicular traffic for a motorway company. The
+  procedures were written in C with embedded SQL, and ran on a AIX machine with IBM Universal Database</li>
+  <li>Developed software for a business firm. All coded in COBOL with Embedded SQL. All procedures ran on a Unix-like
+  machine in a Task Manager environment (CICS)</li>
+  </ul>"
