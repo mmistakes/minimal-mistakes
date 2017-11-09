@@ -12,7 +12,7 @@ When planning to do the rebuild, one of things that bugged my mind the most were
 
 ### The objective
 
-![board concept][board]
+![board concept image][board]
 
 In the spirit of doing everything as modular as it can be so as to keep thing simple and reusable I came up with these final requirements for the boards:
 
@@ -23,4 +23,4 @@ In the spirit of doing everything as modular as it can be so as to keep thing si
 
 
 
-[board]:({{ "/assets/img/board_concept.jpg" | absolute_url }}) "board concept"
+[board]:({{ "/assets/img/board_concept.svg" | absolute_url }}) "board concept image"
