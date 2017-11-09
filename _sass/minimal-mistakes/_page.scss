@@ -4,9 +4,9 @@
 
 #main {
   @include clearfix;
-  margin-left: 1cm;
+  margin-left: auto;
   margin-top: 2em;
-  margin-right: 1cm;
+  margin-right: auto;
   padding-left: 1em;
   padding-right: 1em;
   -webkit-animation: $intro-transition;
@@ -35,8 +35,8 @@
 
   .page__inner-wrap {
     float: left;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 1cm;
+    margin-right: 1cm;
     width: 100%;
     clear: both;
 
