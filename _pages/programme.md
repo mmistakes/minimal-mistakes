@@ -45,7 +45,7 @@ permalink: /programme/
 * 2017-11-23 09:30 to 11:00 CET
 * *Morphological Computation, Self-Organization of Behaviors and Adaptive Morphologies* 
 * Lecturer: Fabio Bonsignorio
-* Guest Lecture by : Keyan Ghazi-Zahedi
+* Guest Lecture by Keyan Ghazi-Zahedi
   * Max Planck Institute for Mathematics, Berlin, Germany
   * *"Quantifying Morphological Computation"*  
 
