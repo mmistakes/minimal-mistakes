@@ -34,8 +34,8 @@ permalink: /programme/
 * 2017-11-16 09:30 to 11:00 CET 
 * *Evolution: Cognition from Scratch* 
 * Lecturer: Fabio Bonsignorio
- Young Researcher Guest Lecture by Francesco Corucci:
-  * 3D Nexttech, Livorno, Italy
+* Young Researcher Guest Lecture by Francesco Corucci:
+  * 3D Nextech srl, Livorno, Italy
   * *"Evolutionary Developmental Soft Robotics: Towards Adaptive and Intelligent Machines Following Nature's Approach to Design"* 
 * Guest Lecture by Nicolas Rojas:
   * Imperial College, London, UK
@@ -47,7 +47,7 @@ permalink: /programme/
 * Lecturer: Fabio Bonsignorio
 * Guest Lecture by : Keyan Ghazi-Zahedi
   * Max Planck Institute for Mathematics, Berlin, Germany
-  * *"Mathematical Models of Morphological Computation"*  
+  * *"Quantifying Morphological Computation"*  
 
 ### Lecture 6: Collective Intelligence: Cognition from Interaction
 * 2017-11-30 09:30 to 11:00 CET 
@@ -61,7 +61,12 @@ permalink: /programme/
 * 2017-12-7  09:30 to 11:00 CET
 * *The Road to a New Paradigm Robotics* 
 * Lecturer: Fabio Bonsignorio
-* Guest Lecture: To Be Announced
+* Young Researcher Guest Lecture by Marcello Calisti:
+  * The BioRobotics Institute, SSSA, Pisa, Italy
+  * *"Soft Locomotion"* 
+* Guest Lecture by Ruairi Glynn:
+  * The Bartlett School of Architecture, UCL, London, UK
+  * *"Animating Art & Architecture"* 
 
 ### Lecture  8: Grab Bag, Summary, Discussion
 * 2016-12-15 09:30 to 11:00 CET
