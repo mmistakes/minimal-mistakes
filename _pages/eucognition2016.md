@@ -1,14 +1,12 @@
 ---
-title: "Live from the 2016 EUCognition Meeting"
+title: "The 2017 EUCognition Meeting"
 layout: single
-excerpt: "A live stream from the EUCognition Meeting in Vienna, December 2016."
+excerpt: "The EUCognition Meeting in Zurich, November 2017."
 permalink: /eucognition2016/
 ---
 
-We will be streaming live the 2016 EUCognition Meeting in Vienna on the 8th of December, from 09:20 CET.
+You might be interested in the EUCognition Meeting in Zurich
 
-Go to stream [here](http://teachingsupport.tuwien.ac.at/lecturetube_live/lecturetube_live_bei_tuwel_ausfall/).
+See programme [here](http://www.eucognition.org/index.php?page=2017-zurich-programme).
 
-See programme [here](/programme/).
-
-More info on the event [here](http://www.eucognition.org/index.php?page=2016-vienna-general-info).
+More info on the event [here](http://eucognition.org/index.php?page=2017-zurich-general-info/).
