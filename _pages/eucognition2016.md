@@ -5,7 +5,7 @@ excerpt: "The EUCognition Meeting in Zurich, November 2017."
 permalink: /eucognition2016/
 ---
 
-You might be interested in the EUCognition Meeting in Zurich
+In November the 2017 EUCognition Meeting will be held in Zurich
 
 See programme [here](http://www.eucognition.org/index.php?page=2017-zurich-programme).
 
