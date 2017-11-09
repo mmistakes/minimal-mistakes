@@ -14,14 +14,6 @@ And what a mistake it was. As soon as typed my first and very basic lines of cod
 
 It is from this perspective then that I want to share my discorveries and tribulations as I carry on with this journey through the incredible universe of coding, FOSS and beyond, and let it be known and forever recorded for all travellers to see.
 
-### Who I am, in a nutshell:
-
-- 3D Character Designer and Animator.
-- Web Developer.
-- FOSS advocate.
-- Someone passionate about Japanese language and culture.
-- An alchemist, of course. ;)
-
 ### Contact me
 
 [email@domain.com](mailto:email@domain.com)
