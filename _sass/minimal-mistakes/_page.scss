@@ -45,8 +45,8 @@
     .page__share {
       position: relative;
       float: left;
-      margin-left: 0;
-      margin-right: 0;
+      margin-left: 1cm;
+      margin-right: 1cm;
       width: 100%;
       clear: both;
     }
@@ -80,7 +80,7 @@
 
   /* paragraph indents */
   p {
-    margin: 0 0 $indent-var;
+    margin: 1cm 1cm $indent-var;
 
     /* sibling indentation*/
     @if $paragraph-indent == true {
@@ -254,7 +254,7 @@
   font-size: $type-size-6;
 
   p {
-    margin: 0;
+    margin: 1cm;
   }
 
   a {
