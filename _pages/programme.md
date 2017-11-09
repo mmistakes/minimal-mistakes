@@ -5,7 +5,7 @@ excerpt: "The lecture programme for the ShanghAI Lectures 2017"
 permalink: /programme/
 ---
 
-### The Lecture Programme for the ShanghAI Lectures 2017 !!! Check back soon! We will add recordings and slides from the lectures!!!
+### The Lecture Programme for the ShanghAI Lectures 2017 !!! Check back! We will add recordings and slides from the lectures soon!!!
 
 
 ### Lecture 1: Embodied Intelligence in Natural and Artificial Agents
