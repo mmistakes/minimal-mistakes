@@ -63,7 +63,7 @@ permalink: /programme/
 * Lecturer: Fabio Bonsignorio
 * Young Researcher Guest Lecture by Marcello Calisti:
   * The BioRobotics Institute, SSSA, Pisa, Italy
-  * *"Soft Locomotion"* 
+  * *"Bioinspired approaches to design and control of mobile soft robots"* 
 * Guest Lecture by Ruairi Glynn:
   * The Bartlett School of Architecture, UCL, London, UK
   * *"Animating Art & Architecture"* 
