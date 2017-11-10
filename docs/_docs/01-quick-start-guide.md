@@ -2,13 +2,13 @@
 title: "Quick-Start Guide"
 permalink: /docs/quick-start-guide/
 excerpt: "How to quickly install and setup Minimal Mistakes for use with GitHub Pages."
-last_modified_at: 2017-11-07T20:48:04-05:00
+last_modified_at: 2017-11-08T09:30:30-05:00
 redirect_from:
   - /theme-setup/
 toc: true
 ---
 
-Minimal Mistakes has been developed as a [Jekyll theme gem](http://jekyllrb.com/docs/themes/) for easier use. It is also 100% compatible with GitHub Pages --- just with a more involved installation process.
+Minimal Mistakes has been developed as a [Jekyll theme gem](http://jekyllrb.com/docs/themes/) for easier use. It is also 100% compatible with GitHub Pages --- just with slightly different installation process.
 
 ## Installing the Theme
 
@@ -50,22 +50,14 @@ gem "github-pages", group: :jekyll_plugins
 gem "jekyll-remote-theme"
 ```
 
-Then run `bundle update` and verify that all gems install properly.
+Run `bundle update` and verify that all gems install properly.
 
-Finally add `jekyll-remote-theme` to the `plugins` (previously gems) array in your `_config.yml` file like so:
+Then add [`jekyll-remote-theme`](https://github.com/benbalter/jekyll-remote-theme) to the `plugins` (previously gems) array in your `_config.yml` file like so:
 
 ```
 plugins:
   - jekyll-remote-theme
 ```
-
-You can also install the theme by forking or copying all of the theme files[^structure] into your site.
-
-To do so fork the [Minimal Mistakes theme](https://github.com/mmistakes/minimal-mistakes/fork), then rename the repo to **USERNAME.github.io** --- replacing **USERNAME** with your GitHub username.
-
-<figure>
-  <img src="{{ '/assets/images/mm-theme-fork-repo.png' | absolute_url }}" alt="fork Minimal Mistakes">
-</figure>
 
 **Note:** Your Jekyll site should be viewable immediately at <http://USERNAME.github.io>. If it's not, you can force a rebuild by **Customizing Your Site** (see below for more details).
 {: .notice--warning}
@@ -76,15 +68,13 @@ If you're hosting several Jekyll based sites under the same GitHub username you 
   <img src="{{ '/assets/images/mm-gh-pages.gif' | absolute_url }}" alt="creating a new branch on GitHub">
 </figure>
 
-Replace the contents of `Gemfile` found in the root of your Jekyll site with the following:
+You can also install the theme by copying all of the theme files[^structure] into your project.
 
-```ruby
-source "https://rubygems.org"
+To do so fork the [Minimal Mistakes theme](https://github.com/mmistakes/minimal-mistakes/fork), then rename the repo to **USERNAME.github.io** --- replacing **USERNAME** with your GitHub username.
 
-gem "github-pages", group: :jekyll_plugins
-```
-
-Then run `bundle update` and verify that all gems install properly.
+<figure>
+  <img src="{{ '/assets/images/mm-theme-fork-repo.png' | absolute_url }}" alt="fork Minimal Mistakes">
+</figure>
 
 **GitHub Pages Alternatives:** Looking to host your site for free and install/update the theme painlessly? [Netflify][netlify-jekyll], [GitLab Pages][gitlab-jekyll], and [Continuous Integration (CI) services][ci-jekyll] have you covered. In most cases all you need to do is connect your repository to them, create a simple configuration file, and install the theme following the [Ruby Gem Method](#ruby-gem-method) above.
 {: .notice--info}
