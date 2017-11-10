@@ -1,24 +1,12 @@
 - intro:
-  description: "You can list your side projects or open source libraries in this section. Lorem ipsum dolor
-  sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus."
+  description: "Most of my work has been done when working and is therefore copyrighted. Here are the few examples
+  of projects I am working on or have contributed to"
 
 - project:
-  title: Velocity
-  link: "#hook"
-  tagline: "A responsive website template designed to help startups promote, market and sell their products."
+  title: London Volleyball Association
+  link: "https://github.com/troccoli/lva"
+  tagline: "An attempt to write a more modern site for the LVA League Admins"
 - project:
-  title: DevStudio
-  link: "#"
-  tagline: "A responsive website template designed to help web developers/designers market their services."
-- project:
-  title: Tempo
-  link: "#"
-  tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-- project:
-  title: Atom
-  link: "#"
-  tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-- project:
-  title: Delta
-  link: "#"
-  tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+  title: iCal
+  link: "https://github.com/troccoli/iCal"
+  tagline: "A fork of the original markuspoerschke/iCal repo, to which I contributed."
