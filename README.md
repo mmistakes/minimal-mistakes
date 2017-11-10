@@ -28,7 +28,7 @@ Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your
 
 ## Skins (Color Variations)
 
-This theme comes in seven different skins (including the default one).
+This theme comes in nine different skins (including the default one).
 
 | `air` | `contrast` | `dark` |
 | --- | --- | --- |
