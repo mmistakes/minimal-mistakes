@@ -35,16 +35,18 @@ While the bulletin type will be used for dispaying the menu sections, the sign t
 Once decided how the board should look like and how each of its versions will be used, it was time to set our goals.
 
 - Must be resizeable in height, width or both simultaneously.
-- Should not require any extra html element. Adding the proper class to any element should be all that is needed.
 - Only use a single file for the graphics to avoid unnecessary http requests.
+- Should not require any extra html element. Adding the proper class to any element should be all that is needed.
 - Must be cached by the browser.
 - Falls back gracefully for browsers that do not support the features used.
 
-### Step 1: making it resizeable
+### Feature 1: making it resizeable
 
-This is by far the most important feature in order to make the new IU responsive. But in order to achieve it, I needed to dive deep into inner workings of SVGs, particulary, their [SVG Coordinate Systems and Transformations](https://www.sarasoueidan.com/blog/svg-coordinate-systems/).
+This is by far the most important feature in order to make the new IU responsive. But in order to achieve it, we need to dive deep into the inner workings of SVGs, in particulary, their [Coordinate Systems and Transformations](https://www.w3.org/TR/SVG/coords.html). As I mentioned back at the begining, Sara Soueidan has an [amazing  article](https://www.sarasoueidan.com/blog/svg-coordinate-systems/) on the topic.
 
-We need the board to stretch both horizontally and verticaly. However, there are some parts of the board that shouldn't resize so we have to split the board into different pieces. Let's see then how each part behave and decide how we split it according to that.
+Anyways, the key here is the ['preserveAspectRatio'](https://www.w3.org/TR/SVG/coords.html#PreserveAspectRatioAttribute) attribute, which has two parameters, `<align>` and `<meetOrSlice>`. Basically, these two dictate how the SVG's content will behave when it changes size. `<align>` has many possible options to choose from while `<meetOrSlice>` has only two: 'meet' or 'slice', which will be ignored if `<align>` is 'none'. And this is exactly what we want because it will tell the content to stretch, instead of scaling while preserving its aspect ratio. But for all these to work, there is one more attribute that needs to be set: `<viewBox>`. With this one you can set the width and height of the SVG, making it ingore its instrinsic size if already had one and thus giving it a concrete aspect ratio. For now, just keep in mind that these two attributes can be used both in SVG elements as well as 'symbol' elements. In time, this will prove to be incredible valuable.
+
+With the stretching thing figured out, let's now focus on how each part of the board behaves because while some of them need to stretch in one direction or the other, some shouldn't and some, besides not stretching, even need to repeat themselves to form a tile. According to these behaviors that we will use to decide how to split the board.
 
 - Top and bottom sides of the frames should stretch horizontally.
 - Left and right sides of the frames should stretch vertically.
@@ -55,7 +57,7 @@ We need the board to stretch both horizontally and verticaly. However, there are
 - Planks should not resize, instead they should be tiled.
 - The shading of the planks should resize horizontally and be tiled vertically.
 
-In total, I ended up with a total of 12 pieces for the bulletin type, and 13 for sign one, 5 of them which are shared by both.
+In total, I ended up with 12 pieces for the bulletin type, and 13 for the sign one, 5 of them which are shared by both.
 
 For bulletin:
 
@@ -85,5 +87,9 @@ Shared by both:
 - The shadow of the horizontal sides of the frame.
 - Top chains.
 - Bottom chains.
+
+Perhaps you are wondering why I'm making a distintion between both types of boards since they seem to share so much. Well, the thing is that the dimensions of the corners between the two are different and not in percentages. This means that we would need a way to substract a value in pixel from a value in percetage, and currently, there is no equivalent of the `calc()` function for SVGs. Fortunately, we can get around this by using multiple backgrounds in CSS, each with a different size. For example, for the horizontal sides of the frame, we set the SVG element width to 100%, and then we use it as a background image with a width of 100% minus the width of the corner. In other words: `background-size: calc(100% - $corner-wdith)`.
+
+
 
 [board]:({{ "/assets/img/board_concept.svg" | absolute_url }}) "board concept image"
