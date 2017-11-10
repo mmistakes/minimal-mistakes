@@ -2,13 +2,15 @@
   role: Lead Backend Developer
   time: 2017 - Present
   company: London Review of Books, London
-  details: ""
+  details: "<ul>
+  <li>Working on rewriting the website using Laravel 5.5</li>
+  </ul>"
 - experience:
   role: Backend Developer
   company: Your Favourite Story
   time: January 2017 - March 2017
   details: "<ul>
-  <li>Built internal web-based tool to upload files to client server</li>
+  <li>Built internal web-based tool to upload files to client server, using Lumen 5.2</li>
   </ul>"
 - experience:
   role: Web Developer
