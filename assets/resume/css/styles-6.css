@@ -66,6 +66,17 @@ p {
   min-height: 800px;
   color: #fff;
 }
+.sidebar-wrapper .btn-primary {
+  background: #4B6A78;
+  border-color: #4B6A78;
+}
+.sidebar-wrapper .btn-primary:hover {
+  background: #97AAC3;
+  border-color: #97AAC3;
+}
+.sidebar-wrapper .pdf-download {
+  margin-top: 20px;
+}
 .sidebar-wrapper a {
   color: #fff;
 }
