@@ -108,7 +108,9 @@ To update the theme run `bundle update`.
    bundle
    ```
 
-3. Add `jekyll-remote-theme` to the `plugins` (previously gems) array in your `_config.yml` file:
+3. Add `remote_theme: "mmistakes/minimal-mistakes"` to your `_config.yml` file.
+
+4. Add `jekyll-remote-theme` to the `plugins` (previously gems) array in your `_config.yml` file:
 
    ```yaml
    plugins:

@@ -2,7 +2,7 @@
 title: "Quick-Start Guide"
 permalink: /docs/quick-start-guide/
 excerpt: "How to quickly install and setup Minimal Mistakes for use with GitHub Pages."
-last_modified_at: 2017-11-08T09:30:30-05:00
+last_modified_at: 2017-11-10T11:25:59-05:00
 redirect_from:
   - /theme-setup/
 toc: true
@@ -51,6 +51,8 @@ gem "jekyll-remote-theme"
 ```
 
 Run `bundle update` and verify that all gems install properly.
+
+Add `remote_theme: "mmistakes/minimal-mistakes"` to your `_config.yml` file.
 
 Then add [`jekyll-remote-theme`](https://github.com/benbalter/jekyll-remote-theme) to the `plugins` (previously gems) array in your `_config.yml` file like so:
 
