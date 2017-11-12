@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-last_modified_at: 2017-11-06T16:17:34-05:00
+last_modified_at: 2017-11-12T17:19:32-05:00
 toc: true
 ---
 
@@ -334,6 +334,9 @@ comments:
 ##### Static-Based Comments via Staticman
 
 Transform user comments into `_data` files that live inside of your GitHub repository by enabling Staticman.
+
+**Note:** Looking to migrate comments from a Wordpress based site? Give [this tool](https://github.com/arthurlacoste/wordpress-comments-jekyll-staticman) a try.
+{: .notice--info}
 
 ###### Add Staticman as a Collaborator
 
