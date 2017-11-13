@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-11-12T17:22:45-05:00
+last_modified_at: 2017-11-13T08:09:29-05:00
 toc: true
 ---
 
@@ -18,6 +18,7 @@ toc: true
 ### Bug Fixes
 
 - Change `http` to `https` for Jekyll and Browserhappy links. [#1342](https://github.com/mmistakes/minimal-mistakes/pull/1342) [#1343](https://github.com/mmistakes/minimal-mistakes/pull/1343)
+- Change `http` author profile links to `https` when supported. [#1349](https://github.com/mmistakes/minimal-mistakes/pull/1349)
 
 ## [4.7.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.7.0)
 
