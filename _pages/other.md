@@ -13,6 +13,5 @@ I have volunteered in the past in math competitions. For copies of old exams we 
 [Berkeley Math Tournament 2016 ]({{ "/pdfs/bmt2016_all.pdf" | absolute_url }})
 [ASDAN 2016]({{ "/pdfs/asdan2016_all.pdf" | absolute_url }})
 
-
 ---
 
