@@ -6,4 +6,6 @@ main:
     url: /CV/
   - title: "Projects"
     url: /project/
+  - title: "Other"
+  	url: /other/
  
