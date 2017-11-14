@@ -9,7 +9,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en"
-title                    : "The Aclhemist's Journal"
+title                    : "The Alchemist's Journal"
 title_separator          : "-"
 name                     : "Andrés Angelini"
 description              : "An artist's journey into the world of coding."
