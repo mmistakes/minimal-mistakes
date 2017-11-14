@@ -42,11 +42,9 @@ Once decided how the board should look like and how each of its versions will be
 
 ### Feature 1: making it resizeable
 
-This is by far the most important feature in order to make the new IU responsive. But in order to achieve it, we need to dive deep into the inner workings of SVGs, in particulary, their [Coordinate Systems and Transformations](https://www.w3.org/TR/SVG/coords.html). As I mentioned back at the begining, Sara Soueidan has an [amazing  article](https://www.sarasoueidan.com/blog/svg-coordinate-systems/) on the topic.
+This is by far the most important feature in order to make the new IU responsive, so we need to look carefully at the board design and plan all this out.
 
-Anyways, the two keys of the puzzle here are the ['viewBox'](https://www.w3.org/TR/SVG/coords.html#ViewBoxAttribute) and  ['preserveAspectRatio'](https://www.w3.org/TR/SVG/coords.html#PreserveAspectRatioAttribute) attributes. The first one, which is required for the second to work, lets you stablish the dimensions and thus the aspect ratio of `<svg>` and `<symbol>` elements and ignore their intrinsic values. The second has two parameters, `<align>` and `<meetOrSlice>`. Basically, these two dictate how the SVG's content will behave when it changes size. `<align>` has many possible options to choose from to position the content while `<meetOrSlice>` has only two: `'meet'` or `'slice'`. `'meet'` will try to fit the content in its container and `'slice'` will slice it if it doesn't fit the container. However, both of them will be ignored if `<align>` is set to `'none'`. And this is exactly what we want because it will tell the content to stretch, instead of scaling while preserving its aspect ratio.
-
-With the stretching thing figured out, let's now focus on how each part of the board behaves because while some of them need to stretch in one direction or the other, some shouldn't and some, besides not stretching, have to be tiled. These behaviors are what we will use to decide how to split the board.
+By analazying the structure of board and how we expected to behave, it becomes clear that while there are some pieces that should stretch in one direction or the other, there are other pieces that should remain unchanged and even some that should be tiled. It would be logical then to group them according to their behaviour:
 
 - Top and bottom sides of the frames should stretch horizontally.
 - Left and right sides of the frames should stretch vertically.
@@ -57,7 +55,7 @@ With the stretching thing figured out, let's now focus on how each part of the b
 - Planks should not resize, instead they should be tiled.
 - The shading of the planks should resize horizontally and be tiled vertically.
 
-In total, I ended up with 12 pieces for the bulletin type, and 13 for the sign one, 5 of them which are shared by both.
+In total, I ended up with 12 pieces for the bulletin type, and 13 for the sign one, 5 of which are shared by both.
 
 For bulletin:
 
@@ -88,7 +86,18 @@ Shared by both:
 - Top chains.
 - Bottom chains.
 
-Perhaps you are wondering why I'm making a distintion between both types of boards since they seem to share so much. Well, the thing is that the dimensions of the corners between the two are different and not in percentages. This means that we would need a way to substract a value in pixels from a value in percetage, and currently, there is no equivalent of the `calc()` function for SVGs. Fortunately, we can get around this by using multiple backgrounds in CSS, each with a different size. For example, for the horizontal sides of the frame, we set the SVG element width to 100%, and then we use it as a background image with a width of 100% minus the width of the corner. In other words: `background-size: calc(100% - $corner-wdith)`.
+Perhaps you are wondering why I'm making a distintion between both types of boards since they seem to share so much. Well, the thing is that the dimensions of the corners between the two are different and not in percentages. This means that we would need a way to substract a value in pixels from a value in percetage, and currently, there is no equivalent of the `calc()` function for SVGs. Fortunately, we can get around this by using multiple backgrounds in CSS, each with a different size. For example, for the horizontal sides of the frame, we set the SVG element width to 100%, and then we use it as a background image with a width of 100% minus the width of the corner. In other words: `background-size: calc(100% - $corner-wdith)`. But we'll focus on this later on.
+
+Now that we have set ourselves a plan, it's time get our hands dirty and try to achieve our goal,
+and to do that we need to dive deep into the inner workings of SVGs, in particulary, their [Coordinate Systems and Transformations](https://www.w3.org/TR/SVG/coords.html). As I mentioned back at the begining, Sara Soueidan has an [amazing  article](https://www.sarasoueidan.com/blog/svg-coordinate-systems/) on the topic.
+
+Anyways, the two keys of the puzzle here are the ['viewBox'](https://www.w3.org/TR/SVG/coords.html#ViewBoxAttribute) and  ['preserveAspectRatio'](https://www.w3.org/TR/SVG/coords.html#PreserveAspectRatioAttribute) attributes. The first one, which is required for the second to work, lets you stablish the dimensions and thus the aspect ratio of `<svg>` and `<symbol>` elements and ignore their intrinsic values. The second has two parameters, `<align>` and `<meetOrSlice>`. Basically, these two dictate how the SVG's content will behave when it changes size. `<align>` has many possible options to choose from to position the content while `<meetOrSlice>` has only two: `'meet'` or `'slice'`. `'meet'` will try to fit the content in its container and `'slice'` will slice it if it doesn't fit the container. However, both of them will be ignored if `<align>` is set to `'none'`. And this is exactly what we want because it will tell the content to stretch, instead of scaling while preserving its aspect ratio.
+
+<p data-height="300" data-theme-id="0" data-slug-hash="bYrBqe" data-default-tab="html" data-user="andresangelini" data-embed-version="2" data-pen-title="SVG preserveAspectRatio set to none" class="codepen">See the Pen <a href="https://codepen.io/andresangelini/pen/bYrBqe/">stretcheable SVG</a> by Andrés Angelini (<a href="https://codepen.io/andresangelini">@andresangelini</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+This is all fine and dandy if all we want is to have an SVG stretch. But what we're really looking for is to have elements inside an SVG stretch, and not the SVG itself.
+
 
 
 
