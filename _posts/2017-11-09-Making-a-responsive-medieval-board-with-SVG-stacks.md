@@ -1,20 +1,20 @@
-If you think you know all about SVG, think again. Besides letting us create amazing graphics that don't get blurred when resized, these little friends bring us a whole myriad of possibilities. But it's not until we go beyond making simple icon sets that we start to see all the wonders they have to offer us.
+If you think you know all about SVGs, think again. Besides letting us create amazing graphics that don't get blurred when resized, these little friends bring us a whole myriad of possibilities. But it's not until we go beyond making simple icon sets that we start to see all the wonders they have to offer us.
 
-If you know what I mean, then this post is probably not for you. But if you don't, then please join me in this thrilling adventure as we take a deep dive into wild territory. Start you CSS pre-processors and open your favourite code editor. It's going to be a long ride!
+If you know what I mean, then this post is probably not for you. But if you don't, then please join me in this thrilling adventure as we take a deep dive into wild territory. Pack your CSS pre-processor and open your favourite code editor. It's going to be a long ride!
 
-### Prologue
+### Some context
 
-But before we start, let me give you some background. All began when I decided to do a complete rebuild of my site, whose purpose was to showcase my work as a 3D Character Designer. The whole concept of the site was to look and feel like a videogame and in particular, like a JRPG, since I am big fan of those. To put it simple, as far as design goes, while the site's background displays a party of heroes on a picturesque scene, a set of matching medieval style boards hanging on chains compose the user interface, thus resembling the welcome menu of a real videogame. And all of it is done with plain HTML, CSS and JavaScript. Pretty awesome, right?
+But before we start, let me give you some background. All began when I decided to do a complete rebuild of my site, whose purpose was to showcase my work as a 3D Character Designer. The whole concept of the site was to look and feel like a JRPG, since it's the style I'm going after. To achieve this goal, I had the user interface look like that of a videogame of such genre. Specifically, it would be composed by a set of medieval boards hanged by chains.
 
-I think you are already starting to see where the challenges start to arise. Leaving aside the 3d stuff, the UI itself it's not a common practice in today's web development world. A world where the phrase "responsive desing" is an absolute must. I though I had it all figured it out, though; I would just use a different version of the board with the chains included in a rasterized image (namely PNGs) for each breakpoint using CSS media quaries. Simple, right? No, not even close. Although I somehow managed to achieve what I wanted, as you can imagine, this quickly became an over complicated set of images that had to be updated one by one with every change in any of them. No! Say no more. There had to be a better solution.
+I think you are already starting to see where the challenges start to arise.  Making this interfence responsive wasn't going to be an easy task. But being as foolish as I was, I though I had it all figured it out, though; I would just use a different version of the board with the chains included in a rasterized image (namely PNGs) for each breakpoint using CSS media quaries. Simple, right? No, not even close. Although I somehow managed to achieve what I wanted, this quickly became an over complicated set of images that had to be updated one by one with every change made to any of them. A complete waste of browser resources and a hell of a maintanence nightmare! There had to be a better solution.
 
 ### SVG to the rescue!
 
-When planning to do the rebuild, one of things that bugged my mind the most were those damn PNG files. I knew that I should have been using SVGs all along, and so while sailing the endless waters of the internets in search of more in-depth information, I came across Sara Soueidan's amazing articles on [SVG Coordinate Systems and Transformations](https://www.sarasoueidan.com/blog/svg-coordinate-systems/). In the rare case you haven't checked it out yet, I think you really should. And since you are there, check out her other works since they are very eloquent and a real delight to read. Anyways, I had finally confirmed that what I wanted to do was actually possible, and so from here on, I will try to explain in detail the steps I took in order to achieve what I wanted.
+When planning to do the rebuild, one of things that bugged my mind the most were those damn PNG files. I knew that I should have been using SVGs all along, and so while sailing the endless waters of the internets in search of more in-depth information, I came across Sara Soueidan's amazing article on [SVG Coordinate Systems and Transformations](https://www.sarasoueidan.com/blog/svg-coordinate-systems/). In the rare case you haven't checked it out yet, I think you really should. And since you are there, check out her other works since they are very eloquent and a real delight to read. Anyways, I had finally confirmed that what I wanted to do was actually possible, and so from here on, I will try to explain in detail the steps I took in order to achieve it.
 
 
 
-### Design
+### The design
 
 ![board concept image][board]
 
@@ -28,9 +28,7 @@ It resembles to a bulletin board used back in medieval times to post announcemen
 
 Looking more like a sign right at the top of a store, not only are the corners of this other one smaller, but it has the option to have two pairs of chains; one at the top and one at the bottom so it can be hanged among other signs. However, it has no title plaque.
 
-### Purpose
-
-While the bulletin type will be used for dispaying the menu sections, the sign type will serve as the menu buttons. Both, the menu and the menu sections will slide up and down, depending on whether they are active or not, but functionality is not our concern right now.
+In this way, I'd use the bulletin type for the sections and the sign one for the menu buttons.
 
 ### The objectives
 
@@ -40,7 +38,7 @@ Once decided how the board should look like and how each of its versions will be
 - Only use a single file for the graphics to avoid unnecessary http requests.
 - Should not require any extra html element. Adding the proper class to any element should be all that is needed.
 - Must be cached by the browser.
-- Falls back gracefully for browsers that do not support the features used.
+- Must be visually consistant across browsers. Otherwise, it should flag those that are not supported.
 
 ### Feature 1: making it resizeable
 
