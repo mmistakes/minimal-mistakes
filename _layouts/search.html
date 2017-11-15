@@ -21,10 +21,12 @@ layout: default
     {% endunless %}
 
     {{ content }}
-    
-    <input placeholder="Search..." type="search" id="search" class="search-input">
-    <div id="results"></div>
 
+    <form>
+      <input placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: "Enter your search term..." }}" type="search" id="search" class="search-input">
+    </form>
+
+    <div id="results"></div>
 
   </div>
 </div>
