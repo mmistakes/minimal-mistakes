@@ -2,7 +2,7 @@
 title: "Quick-Start Guide"
 permalink: /docs/quick-start-guide/
 excerpt: "How to quickly install and setup Minimal Mistakes for use with GitHub Pages."
-last_modified_at: 2017-11-10T11:25:59-05:00
+last_modified_at: 2017-11-15T09:49:52-05:00
 redirect_from:
   - /theme-setup/
 toc: true
@@ -41,7 +41,10 @@ bundle install
 
 ### GitHub Pages Compatible Methods
 
-If you're hosting with GitHub Pages follow these steps instead:
+If you're hosting with GitHub Pages follow these steps instead.
+
+**Note:** [jekyll-remote-theme](https://github.com/benbalter/jekyll-remote-theme) is currently in beta on GitHub Pages. In my tests it works as advertised, with the occasional failure due to missing `_includes` and `_layouts` --- your results may vary.
+{: .notice-warning}
 
 Replace `gem "jekyll"` with:
 
@@ -60,6 +63,8 @@ Then add [`jekyll-remote-theme`](https://github.com/benbalter/jekyll-remote-them
 plugins:
   - jekyll-remote-theme
 ```
+
+---
 
 **Note:** Your Jekyll site should be viewable immediately at <http://USERNAME.github.io>. If it's not, you can force a rebuild by **Customizing Your Site** (see below for more details).
 {: .notice--warning}
