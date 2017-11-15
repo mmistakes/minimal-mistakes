@@ -33,6 +33,7 @@ minimal-mistakes
 |  ├── compress.html           # compresses HTML in pure Liquid
 |  ├── default.html            # base for all other layouts
 |  ├── home.html               # home page
+|  ├── search.html             # search page
 |  ├── single.html             # single document (post/page/etc)
 |  └── splash.html             # splash page
 ├── _sass                      # SCSS partials
