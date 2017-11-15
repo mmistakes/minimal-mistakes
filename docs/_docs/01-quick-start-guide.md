@@ -44,7 +44,7 @@ bundle install
 If you're hosting with GitHub Pages follow these steps instead.
 
 **Note:** [jekyll-remote-theme](https://github.com/benbalter/jekyll-remote-theme) is currently in beta on GitHub Pages. In my tests it works as advertised, with the occasional failure due to missing `_includes` and `_layouts` --- your results may vary.
-{: .notice-warning}
+{: .notice--warning}
 
 Replace `gem "jekyll"` with:
 
