@@ -16,3 +16,6 @@ I have volunteered in the past in math competitions. For copies of old exams we 
 
 ---
 
+## Course Notes 
+
+For CS 294-136 (Deep Learning for Financial Applications) notes, see [here](https://www.dropbox.com/sh/a0qvkg4rppkc862/AACyqtRHJ-rsoZiut-ADf83fa?dl=0). 

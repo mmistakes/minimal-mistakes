@@ -1,13 +1,9 @@
 ---
 title: "First Post"
 categories:
-  - Deep Learning
+  - admin
 tags:
-  - deep
-  - learning
-  - machine
-  - learning
-  - optimization
+  - administration
 ---
 
-Testing!
+Testing! Hi! This will be my new website from now on, for any academic purposes. 
