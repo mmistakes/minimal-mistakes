@@ -44,6 +44,8 @@ Once decided how the board should look like and how each of its versions will be
 
 This is by far the most important feature in order to make the new IU responsive, so to begin with, we need to look carefully at the board design and plan all this out.
 
+#### Setting a plan
+
 By analazying the structure of the board and how we expected it to behave, it becomes clear that while there are some pieces that should stretch in one direction or the other, there are other pieces that should remain unchanged and even some that should be tiled. It would be logical then to group them according to their behaviour:
 
 - Top and bottom sides of the frames should stretch horizontally.
@@ -86,12 +88,16 @@ Shared by both:
 - Top chains.
 - Bottom chains.
 
+#### Making an SVG stretch with 'viewBox' and 'preserveAspectRatio' attributes
+
 Now that we have a clear path to follow, we are ready to start thinking about how we are going to make an SVG stretch, and to do that we need to dive deep into the inner workings of SVGs, in particulary, their [Coordinate Systems and Transformations](https://www.w3.org/TR/SVG/coords.html). As I mentioned back at the begining, Sara Soueidan has an [amazing  article](https://www.sarasoueidan.com/blog/svg-coordinate-systems/) on the topic.
 
 After reading through both materials it becomes clear that the two keys of the puzzle here are the ['viewBox'](https://www.w3.org/TR/SVG/coords.html#ViewBoxAttribute) and  ['preserveAspectRatio'](https://www.w3.org/TR/SVG/coords.html#PreserveAspectRatioAttribute) attributes. The first one, which is required for the second to work, lets you stablish the content's position and dimensions and thus the aspect ratio of `<svg>` and `<symbol>` elements and ignore their intrinsic values. The second has two parameters, `<align>` and `<meetOrSlice>`. Basically, these two dictate how the SVG's content will behave when it changes size. `<align>` has many possible options to choose from to align the content while `<meetOrSlice>` has only two: `'meet'` or `'slice'`. `'meet'` will try to fit the content in its container and `'slice'` will slice it if it doesn't fit the container. However, both of them will be ignored if `<align>` is set to `'none'`. And this is exactly what we want because it will tell the content to stretch, instead of scaling while preserving its aspect ratio.
 
 <p data-height="300" data-theme-id="0" data-slug-hash="bYrBqe" data-default-tab="html" data-user="andresangelini" data-embed-version="2" data-pen-title="SVG preserveAspectRatio set to none" class="codepen">See the Pen <a href="https://codepen.io/andresangelini/pen/bYrBqe/">stretcheable SVG</a> by Andrés Angelini (<a href="https://codepen.io/andresangelini">@andresangelini</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+#### Making SVG elements stretch using `<symbol>` and `<use>` elements.
 
 This is all fine and dandy if all we want is to have an SVG stretch. But what we're really looking for is to have elements inside an SVG stretch, and not the SVG itself. How do we go about doing that? Well, first we need to understand a little bit how SVGs are structured. Remember that I said that the `<viewBox>` attribute could only be used in `<svg>` and `<symbol>` elements? This is becuase an SVG can also be an element, in other words, it can be nested inside an SVG. However, we will focus on the `<symbol>` element and the reason why will become clear once we learn its nature and that of the SVG itself.
 
@@ -103,5 +109,9 @@ With all this information digested, we can now create reusable shapes by nesting
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 Try resizing your browser window. Do you see how the upper side of the frame streches horizontally? Now, try also changing its width either directly on the `<symbol>` element or overrinding it on the `<use>` element. Isn't it amazing? All in all, this might seem like a trivial thing but in reality, it's a big step towards our main goal of having a full fledged responsive board. Now, we only need to repeat this same process with all the other pieces that need to stretch.
+
+#### Better organization of reusable elements with `<defs>`
+
+If we look closely at each part, it's clear that most of them are basically the same but with some minor differences such as their color, position, rotation, size, etc. So it would be only logical to create some basic shapes which the rest of the parts would be based from.
 
 [board]:({{ "/assets/img/board_concept.svg" | absolute_url }}) "board concept image"
