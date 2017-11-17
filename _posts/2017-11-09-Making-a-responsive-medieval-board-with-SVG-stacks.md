@@ -112,6 +112,77 @@ Try resizing your browser window. Do you see how the upper side of the frame str
 
 #### Better organization of reusable elements with `<defs>`
 
-If we look closely at each part, it's clear that most of them are basically the same but with some minor differences such as their color, position, rotation, size, etc. So it would be only logical to create some basic shapes which the rest of the parts would be based from.
+If we look closely at each part, it's clear that most of them are basically the same but with some minor differences such as their color, position, rotation, size, etc. So it would be only logical to define some basic shapes and use them as templates for the rest of the parts. Well, meet `<defs>`. This element allows us to do just that; "define" a bunch of reusable elements without actually displaying them.
+
+Let's see a simple example of how this would work:
+
+<p data-height="265" data-theme-id="0" data-slug-hash="aVVrBW" data-default-tab="html,result" data-user="andresangelini" data-embed-version="2" data-pen-title="Defs in SVGs" class="codepen">See the Pen <a href="https://codepen.io/andresangelini/pen/aVVrBW/">Defs in SVGs</a> by Andrés Angelini (<a href="https://codepen.io/andresangelini">@andresangelini</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+As you can see, we "define" a basic shape and then "use" it inside a "symbol" to make it stretch, all inside the <defs>. Up to this point, neither the <path> nor the <symbol> are displayed. Lastly, we "use" the stretcheable <symbol> version elsewhere, outside the <defs>.
+
+#### Namespacing
+
+Before moving on onto the rest of the pieces, we should start thinking about using some kind of naming system for our elements IDs, so that we can clearly recognize what is what and thus avoid any potencial name collision. So far, we have three types of elements: basic shapes (the actual base graphics, such as `<path>`), their modifications (i.e.: our reused path made to stretch) and their implementations (when we `<use>` something outside `<defs>` ). This is where [namespaces](https://en.wikipedia.org/wiki/Namespace) really come in handy. Basically, we are going to prepend an abbreviated version of its category to each element name. I'll go ahead and add some usefull categories and their corresponding namespaces into a table for future reference.
+
+| Name          | Namespace | Definition  |
+| ------------- |:---------:| -----------:|
+| basic shape   | bs        | A shape defined only by its structure without any modification applied and meant to be reused.|
+| component     | c         | A reusable part made up from one or more basic shapes or even other components with modifications applied.      |
+| pattern       | p         | A design used to fill a basic shape or component.|
+| clip path     | cp        | A path used to define the visible area of a basic shape or component.
+| layer         | l         | The final result meant to be used as a background image.|
+
+Let's use the top part of the frame again as an example to see how this would look like.
+
+```xml
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <!-- Reusable graphics or templates. -->
+  <defs>
+    <!-- BASIC SHAPES -->
+    <path id='bs-side' d='m 0,0 c 301.53,5.7865 603.05,5.7864 904.58,0 l 0,11.9 C 603.1,17.691 301.57,17.692 0,11.9 Z'/>
+
+    <!-- COMPONENTS -->
+    <symbol id='c-horizontal-side' width='100%' height='16.25' viewBox='0 0 905 16.25' preserveAspectRatio='none'>
+      <use xlink:href='#side' fill='#442d18'>
+    </symbol>
+  </defs>
+
+  <!-- Use the graphic. -->
+  <use xlink:href='#c-horizontal-side'>
+
+</svg>
+```
+
+Pretty neat, right? But we will see the true usefullness of namespaces once we have all the pieces of the board altogether.
+
+#### Styling the SVG
+
+By the way, isn't there anything bothering you? Ok, see that "fill" attribute in our `<use>` element? Since we have some many parts that share the same color, wouldn't it be wise to define our colors once [so we don't have to repeat ourselves](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself). How could we do that, you ask? Easy. Luckily for us, SVGs have a `<style>` element that cane be used to style any element with using good old CSS like this:
+
+```xml
+<style>
+        .frame--color-diffuse {fill: #442d18;}
+        .frame--color-specular {fill: #76522e;}
+        .frame--color-depth {fill: #2b1c0f;}
+        .frame--color-shadow {fill: #68300e;}
+        .plaque--color-diffuse {fill: #bfa162;}
+        .plaque--color-specular {fill: #d7bb7d;}
+        .plaque--color-depth {fill: #5f1802;}
+        .plaque--color-shadow {fill: #2b1c0f;}
+        .nail--color-diffuse {fill: #553d30;}
+        .nail--color-specular {fill: #968378;}
+        .nail--color-depth {fill: #372318;}
+        .planks--color-diffuse {fill: #a2703f;}
+        .planks--color-shade {fill: #673110;}
+        .planks--color-shadow {stroke: #5f2301;}
+        .planks--color-specular {stroke: #b98f65;}
+        .link--color-diffuse {fill: #433d18;}
+        .link--color-specular {fill: #746b2e;}
+        .link--color-shadow {fill: #2a260f;}
+</style>
+```
+
+The pattern you see in my class names is using [B.E.M.](http://getbem.com/introduction/). As such, their structure is [block]-[modifier] where I namespaced the [modifier] for easier reading.
 
 [board]:({{ "/assets/img/board_concept.svg" | absolute_url }}) "board concept image"
