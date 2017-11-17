@@ -15,6 +15,7 @@ anchors:
   stackoverflow: &stackoverflow "1366144/giuliot"
 
 minimal_mistakes_skin    : "contrast" # "air", "contrast", "dark", "dirt", "mint", "sunrise"
+github: [metadata]
 
 # Site Settings
 locale                   : "en_GB"
