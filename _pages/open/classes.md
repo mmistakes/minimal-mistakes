@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Мережа класів на 2017-2018 н.р."
-permalink: /management/classes/
+permalink: /open/classes/
 sidebar:
   nav: "sidebar-menu"
 ---

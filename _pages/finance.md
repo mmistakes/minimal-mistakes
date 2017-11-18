@@ -5,7 +5,7 @@ sidebar:
   nav: "sidebar-menu"
 ---
 
-{% for post in site.pages %}
+{% for post in site.pages reversed %}
   {% if post.categories contains "Фінансовий звіт" %}
     {% include archive-single.html %}
   {% endif %}

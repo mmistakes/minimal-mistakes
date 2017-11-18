@@ -26,18 +26,13 @@ sidebar-menu:
       - title: "Газета 'Шкільна орбіта'"
         url: /school-newspaper
 
+  - title: Відкритий доступ
+    url: /open
+
   - title: Управління
     children:
       - title: "Основні завдання"
         url: /management/main
-      - title: "Адміністрація школи"
-        url: /management/administration
-      - title: "Графік чергування"
-        url: /management/schedule
-      - title: "Мережа класів"
-        url: /management/classes
-      - title: "Педагогічний колектив"
-        url: /management/teachers
 
   - title: Навчальний процес
     children:
@@ -45,8 +40,6 @@ sidebar-menu:
         url: /process/mode
       - title: Розклад
         url: /syllabus
-      - title: Освітні програми
-        url: /process/programs/
 
   - title: Звіти директора
     url: /reports

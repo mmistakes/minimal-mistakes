@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Графік чергування адміністрації"
-permalink: /management/schedule/
+permalink: /open/schedule/
 sidebar:
   nav: "sidebar-menu"
 ---

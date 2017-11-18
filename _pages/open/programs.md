@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Освітні програми"
-permalink: /process/programs/
+permalink: /open/programs/
 sidebar:
   nav: "sidebar-menu"
 ---

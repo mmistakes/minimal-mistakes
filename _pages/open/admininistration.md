@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Адміністрація школи"
-permalink: /management/administration/
+permalink: /open/administration/
 sidebar:
   nav: "sidebar-menu"
 

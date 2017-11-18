@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Наші педагоги"
-permalink: /management/teachers/
+permalink: /open/teachers/
 sidebar:
   nav: "sidebar-menu"
 
