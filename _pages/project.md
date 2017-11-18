@@ -7,7 +7,7 @@ geometry: margin=3cm
 ---
 ## Publications and Manuscripts
 
-**Online Submodular Optimization in Network Games (Unfinished draft, for PhD Apps)**: [*Online Submodular Optimization in Network Games*]({{ "/pdfs/Submodular Network Game.pdf" | absolute_url }}). Currently an unfinished draft applying online submodular optimization (both maximization and minimization) to competitive cascade games. 
+**Online Submodular Optimization in Network Games (Unfinished draft)**: [*Online Submodular Optimization in Network Games*]({{ "/pdfs/Submodular Network Game.pdf" | absolute_url }}). Currently an unfinished draft applying online submodular optimization (both maximization and minimization) to competitive cascade games. 
 
 ---
 ## Class Projects, Expository Papers
