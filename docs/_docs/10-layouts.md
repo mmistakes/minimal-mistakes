@@ -7,7 +7,7 @@ single_layout_gallery:
     alt: "single layout with header example"
   - image_path: /assets/images/mm-layout-single-meta.png
     alt: "single layout with comments and related posts"
-last_modified_at: 2017-10-26T15:42:42-04:00
+last_modified_at: 2017-11-15T15:01:40-05:00
 toc: true
 toc_label: "Included Layouts"
 toc_icon: "columns"
@@ -36,6 +36,7 @@ Class names corresponding to each layout are automatically added to the `<body>`
 | ---------------- | --------------------------- |
 | archive          | `.layout--archive`          |
 | archive-taxonomy | `.layout--archive-taxonomy` |
+| search           | `.layout--search`           |
 | single           | `.layout--single`           |
 | splash           | `.layout--splash`           |
 | home             | `.layout--home`             |
@@ -217,7 +218,7 @@ author_profile: true
 {% endfor %}{% endraw %}
 ```
 
-### Home Page
+## Home Page Layout
 
 A derivative archive page layout to be used as a simple home page. It is built to show a paginated list of recent posts based off of the [pagination settings]({{ "/docs/configuration/#paginate" | absolute_url }}) in `_config.yml`.
 
@@ -268,6 +269,14 @@ For full-width landing pages that need a little something extra add `layout: spl
 
 Feature blocks can be assigned and aligned to the `left`, `right`, or `center` with a sprinkling of YAML. For full details on how to use the `feature_row` helper check the [**Content**]({{ "/docs/helpers/" | absolute_url }}) section or review a [sample splash page](https://github.com/{{ site.repository }}/blob/master/docs/_pages/splash-page.md).
 
+## Search Page Layout
+
+A page with a search form. Add `layout: search` to the YAML Front Matter similar to [this example](https://github.com/mmistakes/minimal-mistakes/blob/master/docs/_pages/search.md) on the demo site.
+
+![search page layout example]({{ "/assets/images/search-layout-example.png" | absolute_url }})
+
+**ProTip:** Add a link to this page in the masthead navigation.
+{: .notice--info}
 
 ---
 
@@ -475,7 +484,7 @@ To end up with:
 
 To add a touch of color to the default black (`#000`) icon a few more steps are necessary.
 
-Start by copying [`_utilities.scss`](https://github.com/mmistakes/minimal-mistakes/blob/master/_sass/_utilities.scss) `<site root>/_sass`. Open it up to the icon section (it's near the bottom) and nest a new class beneath `.social-icons` that matches the one used to declare the Font Awesome icon. In our case `.fa-reddit`.
+Start by copying [`_utilities.scss`](https://github.com/mmistakes/minimal-mistakes/blob/master/_sass/minimal-mistakes/_utilities.scss) `<site root>/_sass`. Open it up to the icon section (it's near the bottom) and nest a new class beneath `.social-icons` that matches the one used to declare the Font Awesome icon. In our case `.fa-reddit`.
 
 Simply add a `color` declaration and the corresponding hex code.
 
@@ -490,7 +499,7 @@ Simply add a `color` declaration and the corresponding hex code.
 
 ![Reddit link in author profile with color]({{ "/assets/images/mm-author-profile-reddit-color.png" | absolute_url }})
 
-**ProTip:** For bonus points you can add it as a Sass `$variable` that you set in [`_variables.scss`](https://github.com/mmistakes/minimal-mistakes/blob/master/_sass/_variables.scss) like the other ["brand" colors](http://brandcolors.net/). You'll need to add this file to `/_sass/` as well if you're using the Ruby Gem version of the theme.
+**ProTip:** For bonus points you can add it as a Sass `$variable` that you set in [`_variables.scss`](https://github.com/mmistakes/minimal-mistakes/blob/master/_sass/minimal-mistakes/_variables.scss) like the other ["brand" colors](http://brandcolors.net/). You'll need to add this file to `/_sass/` as well if you're using the Ruby Gem version of the theme.
 {: .notice--info}
 
 **Please please please** don't submit [pull requests]({{ "/docs/contributing/" | absolute_url }}) adding in support for "missing" social media links. I'm trying to keep things down to the minimum (hence the theme's name) and have no interest in merging such PRs :expressionless:.

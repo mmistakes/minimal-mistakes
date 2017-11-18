@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-last_modified_at: 2017-10-20T12:34:20-04:00
+last_modified_at: 2017-11-12T17:19:32-05:00
 toc: true
 ---
 
@@ -28,7 +28,7 @@ theme: minimal-mistakes-jekyll
 Easily change the color scheme of the theme using one of the provided "skins":
 
 ```yaml
-minimal_mistakes_skin : "default" # "air", "contrast", "dark", "dirt", "mint", "sunrise"
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 ```
 
 **Note:** If you have made edits to the theme's CSS files be sure to update [`/assets/css/main.scss`](https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss) to include `@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin` before the `minimal-mistakes` import.
@@ -41,6 +41,15 @@ minimal_mistakes_skin : "default" # "air", "contrast", "dark", "dirt", "mint", "
     <a href="{{ site.baseurl }}/assets/images/air-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/air-skin-archive.png"></a>
     <a href="{{ site.baseurl }}/assets/images/air-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/air-skin-post.png"></a>
     <figcaption>Calm and blue.</figcaption>
+</figure>
+
+#### Aqua skin: `aqua`
+{:.no_toc}
+
+<figure class="half">
+    <a href="{{ site.baseurl }}/assets/images/aqua-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/aqua-skin-archive.png"></a>
+    <a href="{{ site.baseurl }}/assets/images/aqua-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/aqua-skin-post.png"></a>
+    <figcaption>Just like water.</figcaption>
 </figure>
 
 #### Contrast skin: `contrast`
@@ -77,6 +86,24 @@ minimal_mistakes_skin : "default" # "air", "contrast", "dark", "dirt", "mint", "
     <a href="{{ site.baseurl }}/assets/images/mint-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/mint-skin-archive.png"></a>
     <a href="{{ site.baseurl }}/assets/images/mint-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/mint-skin-post.png"></a>
     <figcaption>Minty fresh green.</figcaption>
+</figure>
+
+#### Neon skin: `neon`
+{:.no_toc}
+
+<figure class="half">
+    <a href="{{ site.baseurl }}/assets/images/neon-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/neon-skin-archive.png"></a>
+    <a href="{{ site.baseurl }}/assets/images/neon-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/neon-skin-post.png"></a>
+    <figcaption>Inverted palette, white text on a dark background.</figcaption>
+</figure>
+
+#### Neon skin: `plum`
+{:.no_toc}
+
+<figure class="half">
+    <a href="{{ site.baseurl }}/assets/images/plum-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/plum-skin-archive.png"></a>
+    <a href="{{ site.baseurl }}/assets/images/plum-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/plum-skin-post.png"></a>
+    <figcaption>Purple reigns supreme.</figcaption>
 </figure>
 
 #### Sunrise skin: `sunrise`
@@ -307,6 +334,9 @@ comments:
 ##### Static-Based Comments via Staticman
 
 Transform user comments into `_data` files that live inside of your GitHub repository by enabling Staticman.
+
+**Note:** Looking to migrate comments from a Wordpress based site? Give [this tool](https://github.com/arthurlacoste/wordpress-comments-jekyll-staticman) a try.
+{: .notice--info}
 
 ###### Add Staticman as a Collaborator
 

@@ -77,7 +77,7 @@
 
       {% if author.google_plus %}
         <li>
-          <a href="https://plus.google.com/+{{ author.google_plus }}" itemprop="sameAs">
+          <a href="https://plus.google.com/{{ author.google_plus }}" itemprop="sameAs">
             <i class="fa fa-fw fa-google-plus-square" aria-hidden="true"></i> Google+
           </a>
         </li>
@@ -134,7 +134,7 @@
       {% if author.gitlab %}
         <li>
           <a href="https://gitlab.com/{{ author.gitlab }}" itemprop="sameAs">
-            <i class="fa fa-fw fa-gitlab" aria-hidden="true"></i> Gitlab
+            <i class="fa fa-fw fa-gitlab" aria-hidden="true"></i> GitLab
           </a>
         </li>
       {% endif %}
@@ -142,7 +142,7 @@
       {% if author.stackoverflow %}
         <li>
           <a href="https://www.stackoverflow.com/users/{{ author.stackoverflow }}" itemprop="sameAs">
-            <i class="fa fa-fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow
+            <i class="fa fa-fw fa-stack-overflow" aria-hidden="true"></i> Stack Overflow
           </a>
         </li>
       {% endif %}
@@ -206,7 +206,7 @@
       {% if author.soundcloud %}
         <li>
           <a href="https://soundcloud.com/{{ author.soundcloud }}" itemprop="sameAs">
-            <i class="fa fa-fw fa-soundcloud" aria-hidden="true"></i> Soundcloud
+            <i class="fa fa-fw fa-soundcloud" aria-hidden="true"></i> SoundCloud
           </a>
         </li>
       {% endif %}

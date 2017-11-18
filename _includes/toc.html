@@ -1,5 +1,7 @@
 {% capture tocWorkspace %}
     {%- comment -%}
+        Version 1.0.2
+
         "...like all things liquid - where there's a will, and ~36 hours to spare, there's usually a/some way" ~jaybe
 
         Usage:
@@ -44,10 +46,11 @@
         {% assign indentAmount = headerLevel | minus: minHeader | add: 1 %}
         {% assign _workspace = node | split: '</h' %}
 
-        {% assign _idWorkspace = _workspace[0] | split: '"' %}
-        {% assign html_id = _idWorkspace[1] %}
+        {% assign _idWorkspace = _workspace[0] | split: 'id="' %}
+        {% assign _idWorkspace = _idWorkspace[1] | split: '"' %}
+        {% assign html_id = _idWorkspace[0] %}
 
-        {% capture _hAttrToStrip %}{{ headerLevel }} id="{{ html_id }}">{% endcapture %}
+        {% capture _hAttrToStrip %}{{ _workspace[0] | split: '>' | first }}>{% endcapture %}
         {% assign header = _workspace[0] | replace: _hAttrToStrip, '' %}
 
         {% assign space = '' %}
@@ -69,5 +72,4 @@
         {% capture my_toc %}{: #{{ include.id }}}
 {{ my_toc | lstrip }}{% endcapture %}
     {% endif %}
-{% endcapture %}{% assign tocWorkspace = '' %}
-{{ my_toc | markdownify }}
+{% endcapture %}{% assign tocWorkspace = '' %}{{ my_toc | markdownify | strip }}
