@@ -1,4 +1,18 @@
-## Unreleased
+## [4.7.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.7.1)
+
+### Enhancements
+
+- Add search layout powered by [Lunr](https://lunrjs.com/). [#1353](https://github.com/mmistakes/minimal-mistakes/pull/1353)
+- Use [jekyll-remote-theme](https://github.com/benbalter/jekyll-remote-theme) for demo site. [#1339](https://github.com/mmistakes/minimal-mistakes/issues/1339)
+- Add note about WordPress to Staticman comment migration tool in documentation. [#1346](https://github.com/mmistakes/minimal-mistakes/issues/1346)
+
+### Bug Fixes
+
+- Change `http` to `https` for Jekyll and Browserhappy links. [#1342](https://github.com/mmistakes/minimal-mistakes/pull/1342) [#1343](https://github.com/mmistakes/minimal-mistakes/pull/1343)
+- Change `http` author profile links to `https` when supported. [#1349](https://github.com/mmistakes/minimal-mistakes/pull/1349)
+- Fix broken SCSS partial links in layouts documentation. [#1351](https://github.com/mmistakes/minimal-mistakes/issues/1351)
+
+## [4.7.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.7.0)
 
 ### Enhancements
 
@@ -14,6 +28,10 @@
 - Add toggleable table of contents via YAML Front Matter. Note: `toc` helper include will be deprecated in next major version. [#1222](https://github.com/mmistakes/minimal-mistakes/issues/1222)
 - Refactor seo.html include to DRY-up page image handling.
 - Add support for setting what image is used by OpenGraph and Twitter via `page.header.og_image`. [#1316](https://github.com/mmistakes/minimal-mistakes/issues/1316)
+- Fix the spelling of some product names in the author profile. [#1328](https://github.com/mmistakes/minimal-mistakes/pull/1328)
+- Add `aqua`, `neon`, and `plum` skins. [#1336](https://github.com/mmistakes/minimal-mistakes/pull/1336)
+- Update **jekyll-toc** with heading classes fix. [#1337](https://github.com/mmistakes/minimal-mistakes/pull/1337)
+- Remove `+` from Google+ author link to allow non-vanity URLs. [#1319](https://github.com/mmistakes/minimal-mistakes/pull/1319)
 
 ### Bug Fixes
 
