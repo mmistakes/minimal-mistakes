@@ -18,8 +18,8 @@ Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your
 - Bundled as a "theme gem" for easier install/upgrading.
 - Compatible with GitHub Pages.
 - Support for Jekyll's built-in Sass/SCSS preprocessor.
-- Seven different skins (color variations).
-- Several responsive layout options (single, archive index, splash, and paginated home page).
+- Nine different skins (color variations).
+- Several responsive layout options (single, archive index, search, splash, and paginated home page).
 - Optimized for search engines with support for [Twitter Cards](https://dev.twitter.com/cards/overview) and [Open Graph](http://ogp.me/) data
 - Optional [header images](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#headers), [custom sidebars](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#sidebars), [table of contents](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#table-of-contents), [galleries](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#gallery), related posts, [breadcrumb links](https://mmistakes.github.io/minimal-mistakes/docs/configuration/#breadcrumb-navigation-beta), [navigation lists](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#navigation-list), and more.
 - Commenting support (powered by [Disqus](https://disqus.com/), [Facebook](https://developers.facebook.com/docs/plugins/comments), Google+, [Discourse](https://www.discourse.org/), static-based via [Staticman v1 and v2](https://staticman.net/), and custom).
@@ -28,7 +28,7 @@ Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your
 
 ## Skins (Color Variations)
 
-This theme comes in seven different skins (including the default one).
+This theme comes in nine different skins (including the default one).
 
 | `air` | `contrast` | `dark` |
 | --- | --- | --- |
@@ -37,6 +37,10 @@ This theme comes in seven different skins (including the default one).
 | `dirt` | `mint` | `sunrise` |
 | --- | --- | --- |
 | ![dirt skin](https://mmistakes.github.io/minimal-mistakes/assets/images/dirt-skin-archive.png) | ![mint skin](https://mmistakes.github.io/minimal-mistakes/assets/images/mint-skin-archive.png) | ![sunrise skin](https://mmistakes.github.io/minimal-mistakes/assets/images/sunrise-skin-archive.png) |
+
+| `aqua` | `neon` | `plum` |
+| --- | --- | --- |
+| ![aqua skin](https://mmistakes.github.io/minimal-mistakes/assets/images/aqua-skin-archive.png) | ![neon skin](https://mmistakes.github.io/minimal-mistakes/assets/images/neon-skin-archive.png) | ![plum skin](https://mmistakes.github.io/minimal-mistakes/assets/images/plum-skin-archive.png) |
 
 ## Demo Pages
 
@@ -61,33 +65,63 @@ Additional sample posts are available under [posts archive][year-archive] on the
 [tags-archive]: https://mmistakes.github.io/minimal-mistakes/tags/
 [year-archive]: https://mmistakes.github.io/minimal-mistakes/year-archive/
 
-## Usage
+## Installation
 
-For detailed instructions on how to configure, customize, add content, and more read the [theme's documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
+There are three ways to install the theme: as a Ruby gem (for self-hosted sites), as a Ruby gem + jekyll-remote-theme plugin (GitHub Pages hosted sites), or forking/directly copying all of the theme files into your project.
 
-**Note:** Gem version of the theme requires Jekyll v3.3+ and is not currently supported on [GitHub Pages](https://pages.github.com/). You can still use the theme with GitHub Pages, you'll just need to install using the old "[repo fork method](https://mmistakes.github.io/minimal-mistakes/docs/installation/)".
+### Ruby Gem Method
 
-## Quick Start
+1. Install the theme as a Ruby Gem by adding it to your `Gemfile` like so:
 
-Add this line to your Jekyll site's `Gemfile`:
+   ```ruby
+   gem "minimal-mistakes-jekyll"
+   ```
 
-```ruby
-gem "minimal-mistakes-jekyll"
-```
+2. Fetch and update bundled gems by running the following [Bundler](http://bundler.io/) command:
 
-Add this line to your Jekyll site's `_config.yml` file:
+   ```bash
+   bundle
+   ```
 
-```yaml
-theme: minimal-mistakes-jekyll
-```
+3. Set the `theme` in your project's Jekyll `_config.yml` file:
 
-Then run Bundler to install the theme gem and dependencies:
-
-```bash
-bundle install
-```
+   ```yaml
+   theme: minimal-mistakes-jekyll
+   ```
 
 To update the theme run `bundle update`.
+
+## GitHub Pages Compatible Methods
+
+1. Create/replace the contents of your `Gemfile` with the following:
+
+   ```ruby
+   source "https://rubygems.org"
+
+   gem "github-pages", group: :jekyll_plugins
+   gem "jekyll-remote-theme"
+   ```
+
+2. Fetch and update bundled gems by running the following [Bundler](http://bundler.io/) command:
+
+   ```bash
+   bundle
+   ```
+
+3. Add `remote_theme: "mmistakes/minimal-mistakes"` to your `_config.yml` file.
+
+4. Add `jekyll-remote-theme` to the `plugins` (previously gems) array in your `_config.yml` file:
+
+   ```yaml
+   plugins:
+     - jekyll-remote-theme
+   ```
+
+**Note:** [jekyll-remote-theme](https://github.com/benbalter/jekyll-remote-theme) is currently in beta on GitHub Pages. In my tests it works as advertised, with the occasional failure due to missing `_includes` and `_layouts` --- your results may vary.
+
+## Usage
+
+For detailed instructions on how to configure, customize, add/migrate content, and more read the [theme's documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
 
 ---
 

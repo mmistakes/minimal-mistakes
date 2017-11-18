@@ -11,5 +11,10 @@
   <script src="{{ '/assets/js/main.min.js' | absolute_url }}"></script>
 {% endif %}
 
+{% if page.layout == 'search' %}
+  <script src="{{ '/assets/js/lunr.min.js' | absolute_url }}"></script>
+  <script src="{{ '/assets/js/lunr-en.js' | absolute_url }}"></script>
+{% endif %}
+
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}

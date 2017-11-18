@@ -40,6 +40,8 @@ en: &DEFAULT_EN
   comment_success_msg        : "Thanks for your comment! It will show on the site once it has been approved."
   comment_error_msg          : "Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again."
   loading_label              : "Loading..."
+  search_placeholder_text    : "Enter your search term..."
+  results_found              : "Result(s) found"
 en-US:
   <<: *DEFAULT_EN
 en-CA:
