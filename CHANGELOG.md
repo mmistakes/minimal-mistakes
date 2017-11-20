@@ -1,5 +1,9 @@
 ## Unreleased
 
+### Enhancements
+
+- Open social share links in a new window. [#1357](https://github.com/mmistakes/minimal-mistakes/pull/1357)
+
 ### Bug Fixes
 
 - Fix `post.content` typo in `assets/js/lunr-en.js`. [#1354](https://github.com/mmistakes/minimal-mistakes/pull/1354)
