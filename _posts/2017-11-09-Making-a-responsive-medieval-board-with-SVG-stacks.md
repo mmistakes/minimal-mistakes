@@ -158,7 +158,7 @@ Pretty neat, right? But we will see the true usefullness of namespaces once we h
 
 #### Styling the SVG
 
-By the way, isn't there anything bothering you? Ok, see that "fill" attribute in our `<use>` element? Since we have some many parts that share the same color, wouldn't it be wise to define our colors once [so we don't have to repeat ourselves](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself). How could we do that, you ask? Easy. Luckily for us, SVGs have a `<style>` element that cane be used to style any element with using good old CSS like this:
+Since we are polishing things up, there is something else we could improve. See that "fill" attribute in our `<use>` element? We have a lot of them sharing the same color among many parts. Wouldn't it be wise to define our colors once [so we don't have to repeat ourselves](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself). How could we do that, you ask? Easy. Luckily for us, SVGs have a `<style>` element that cane be used to style any element with using good old CSS like this:
 
 ```xml
 <style>
@@ -183,6 +183,18 @@ By the way, isn't there anything bothering you? Ok, see that "fill" attribute in
 </style>
 ```
 
-The pattern you see in my class names is using [B.E.M.](http://getbem.com/introduction/). As such, their structure is [block]-[modifier] where I namespaced the [modifier] for easier reading.
+The pattern you see in my class names is using the [B.E.M.](http://getbem.com/introduction/) methodology. As such, their structure is [block]-[modifier] where I namespaced the [modifier] for easier reading.
+
+#### Inverting an SVG element
+
+One of the best feachures of SVGs is the ability to transform reusable elements. This is done by applying a `transform` attribute to a `<use>` element. Let's mirror then our newly created `c-horizontal-side element` vertically to make the bottom side of the frame.
+
+```xml
+  <use xlink:href='#c-clipped-horizontal-side-specular' y='-100%' transform='scale(1, -1) translate(0 16.25)'/>
+```
+
+Here's the explanation. The `transform` attribute has a `scale()` parameter that flips the element when assigned a negative value. Sadly, though, it might also move it depending on where its axis is, which means that unless it's a graphic you created yourself, usually in a vector graphic software such as Inskcape, it's located on the top left corner. To deal with this and put it back in its right place, we need to move it in the same direction it was transformed. In this case, we changed its scale only in the `y` axis by setting it to `-1` (we left `x` set to `1` which actually does nothing), so we correct it by setting `y=-100%`. Finally, we add a `translate()` parameter to the `transform` attribute to move it upwards a bit. This is because we must leave a gap for the depth effect of the bottom side of the frame.
+
+
 
 [board]:({{ "/assets/img/board_concept.svg" | absolute_url }}) "board concept image"
