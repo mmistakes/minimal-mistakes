@@ -1,3 +1,9 @@
+## Unreleased
+
+### Bug Fixes
+
+- Fix `post.content` typo in `assets/js/lunr-en.js`. [#1354](https://github.com/mmistakes/minimal-mistakes/pull/1354)
+
 ## [4.7.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.7.1)
 
 ### Enhancements
