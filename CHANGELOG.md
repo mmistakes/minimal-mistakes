@@ -3,6 +3,7 @@
 ### Bug Fixes
 
 - Fix `post.content` typo in `assets/js/lunr-en.js`. [#1354](https://github.com/mmistakes/minimal-mistakes/pull/1354)
+- Fix "lunr-en.js:1 Uncaught SyntaxError: Unexpected token <" in `assets/js/lunr-en.js`. [#1356](https://github.com/mmistakes/minimal-mistakes/pull/1356)
 
 ## [4.7.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.7.1)
 

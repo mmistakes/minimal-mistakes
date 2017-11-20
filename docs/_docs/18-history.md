@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-11-20T15:02:09-05:00
+last_modified_at: 2017-11-20T15:05:40-05:00
 toc: true
 ---
 
@@ -13,6 +13,7 @@ toc: true
 ### Bug Fixes
 
 - Fix `post.content` typo in `assets/js/lunr-en.js`. [#1354](https://github.com/mmistakes/minimal-mistakes/pull/1354)
+- Fix "lunr-en.js:1 Uncaught SyntaxError: Unexpected token <" in `assets/js/lunr-en.js`. [#1356](https://github.com/mmistakes/minimal-mistakes/pull/1356)
 
 ## [4.7.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.7.1)
 
