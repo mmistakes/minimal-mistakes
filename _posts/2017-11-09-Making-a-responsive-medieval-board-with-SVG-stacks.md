@@ -38,11 +38,11 @@ Once decided how the board should look like and how each of its versions will be
 
 ## 1. Making the board resizeable
 
-This is by far the most important feature in order to make the new IU responsive, so to begin with, we need to look carefully at the board design and plan all this out.
+This is by far the most important feature in order to make the new IU responsive, so to begin with, we need to look carefully at the board design to see how each of its parts should behave.
 
-### Setting a plan
+### Analizying its structure
 
-By analazying the structure of the board and how we expected it to behave, it becomes clear that while there are some pieces that should stretch in one direction or the other, there are other pieces that should remain unchanged and even some that should be tiled. It would be logical then to group them together according to their behaviour:
+By inspecting the board carefully, it becomes clear that while there are some pieces that should stretch in one direction or the other, there are other pieces that should remain unchanged and even some that should be tiled. It would be logical then to group them together according to their behaviour:
 
 - Top and bottom sides of the frames should stretch horizontally.
 - Left and right sides of the frames should stretch vertically.
@@ -84,14 +84,16 @@ Shared by both:
 - Top chains.
 - Bottom chains.
 
+Now that we have a deeper understanding of the board's structure, let's tackle each problem separately, one at a time.
+
 ### Making an SVG stretch with 'viewBox' and 'preserveAspectRatio' attributes
 
-Now that we have a clear path to follow, we are ready to start thinking about how we are going to make an SVG stretch, and to do that we need to dive deep into the inner workings of SVGs, in particulary, their [Coordinate Systems and Transformations](https://www.w3.org/TR/SVG/coords.html). As I mentioned back at the begining, Sara Soueidan has an [amazing  article](https://www.sarasoueidan.com/blog/svg-coordinate-systems/) on the topic.
+First, we have the problem of how to make an SVG stretch. To find a solution to this, we need to dive deep into the inner workings of SVGs, in particulary, their [Coordinate Systems and Transformations](https://www.w3.org/TR/SVG/coords.html). As I mentioned back at the begining, Sara Soueidan has an [amazing  article](https://www.sarasoueidan.com/blog/svg-coordinate-systems/) on the topic.
 
 After reading through both materials it becomes clear that the two keys of the puzzle here are the ['viewBox'](https://www.w3.org/TR/SVG/coords.html#ViewBoxAttribute) and  ['preserveAspectRatio'](https://www.w3.org/TR/SVG/coords.html#PreserveAspectRatioAttribute) attributes. The first one, which is required for the second to work, lets you stablish the content's position and dimensions and thus the aspect ratio of `<svg>` and `<symbol>` elements and ignore their intrinsic values. The second has two parameters, `<align>` and `<meetOrSlice>`. Basically, these two dictate how the SVG's content will behave when it changes size. `<align>` has many possible options to choose from to align the content while `<meetOrSlice>` has only two: `'meet'` or `'slice'`. `'meet'` will try to fit the content in its container and `'slice'` will slice it if it doesn't fit the container. However, both of them will be ignored if `<align>` is set to `'none'`. And this is exactly what we want because it will tell the content to stretch, instead of scaling while preserving its aspect ratio.
 
-<p data-height="300" data-theme-id="0" data-slug-hash="bYrBqe" data-default-tab="html" data-user="andresangelini" data-embed-version="2" data-pen-title="SVG preserveAspectRatio set to none" class="codepen">See the Pen <a href="https://codepen.io/andresangelini/pen/bYrBqe/">stretcheable SVG</a> by Andrés Angelini (<a href="https://codepen.io/andresangelini">@andresangelini</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+<p data-height="265" data-theme-id="0" data-slug-hash="bYrBqe" data-default-tab="html,result" data-user="andresangelini" data-embed-version="2" data-pen-title="stretcheable SVG" class="codepen">See the Pen <a href="https://codepen.io/andresangelini/pen/bYrBqe/">stretcheable SVG</a> by Andrés Angelini (<a href="https://codepen.io/andresangelini">@andresangelini</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async="async" src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 ### Making SVG elements stretch using `<symbol>` and `<use>` elements.
 
@@ -101,10 +103,42 @@ As you probably already know, SVGs are no more than images drawn through math, a
 
 With all this information digested, we can now create reusable shapes by nesting them inside `<symbol>` elements and have them stretch by setting their `<viewBox>` attribute to values in percentages and `<preserveAspectRatio>` to `'none'` like we did before and then "use" them with the `<use>` element, all this inside a single SVG file.
 
-<p data-height="265" data-theme-id="0" data-slug-hash="EbwKZo" data-default-tab="html" data-user="andresangelini" data-embed-version="2" data-pen-title="stretcheable SVG element" class="codepen">See the Pen <a href="https://codepen.io/andresangelini/pen/EbwKZo/">stretcheable SVG element</a> by Andrés Angelini (<a href="https://codepen.io/andresangelini">@andresangelini</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+<p data-height="265" data-theme-id="0" data-slug-hash="EbwKZo" data-default-tab="html,result" data-user="andresangelini" data-embed-version="2" data-pen-title="stretcheable SVG element" class="codepen">See the Pen <a href="https://codepen.io/andresangelini/pen/EbwKZo/">stretcheable SVG element</a> by Andrés Angelini (<a href="https://codepen.io/andresangelini">@andresangelini</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async="async" src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
-Try resizing your browser window. Do you see how the upper side of the frame streches horizontally? Now, try also changing its width either directly on the `<symbol>` element or overrinding it on the `<use>` element. Isn't it amazing? All in all, this might seem like a trivial thing but in reality, it's a big step towards our main goal of having a full fledged responsive board. Now, we only need to repeat this same process with all the other pieces that need to stretch.
+Try resizing your browser window. Do you see how the upper side of the frame streches horizontally? Now, try also changing its width either directly on the `<symbol>` element or overrinding it on the `<use>` element. Isn't it amazing? All in all, this might seem like a trivial thing but in reality, it's a big step towards our main goal of having a full fledged responsive board. We'll repeat this same process later with all the other pieces that need to stretch.
+
+### Rotating SVG elements
+
+One of the best features of SVGs is their ability to transform reusable elements. This is easily done by appling a `transform` attribute which has many parameters that can be chained together by leaving a space between them. We'll focus on the `translate()` and `scale()` parameters for now. Both of them accept a value pair, one for `x` and another for `y`, but what these values can be differs. While `translate()` only accept unitless decimal numbers (positive or negative), `scale()` only allows ranges from `1` to `-1`, where `1` will do nothing on that axis, `0` will make it infinitely thing to the point of dissapearing completely, and `-1` will flip it. There is one caveat, though. The flipping depends on where the element axis is, which usually is on its top left corner if such element was not created in a vector graphic software. This means that in most cases when you apply a `scale()`, the element will also be translated.
+
+### Clipping SVG elements
+
+Looking carefully at the top side of the frame, you'll notice that if left as it is, it will visible right through the holes of the top chains. Since we want to reuse this piece for all four sides of the frame, we would have to find some way to "cut" a hole right where the holes are without modifying the orher sides. This is where the `clip-path` attribute comes into play. Its only parameter, `url()`, allows us to reference to **a path or any basic shape** to define **the visible area** of our element. This might feel counter intuitive at first since most image manipulation software out there have us accostumed to the opposite. Also, note that `<symbol>` elements cannot be used as `clip-path`. This is quite sad because their ability of being stretcheable through the use of `viewBox` and `preserveAspectRatio` would really come in handy. Fortunately for us, there is another way this can be dealt with. Let's try to remove the center part of the frame's top side where the entire title area should be. Remember though, what we have to define is the visible area, which means we need to use three separated pieces: one to cover just a little bit of top side in its entire width, and one for each side.
+
+```xml
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Clip path -->
+  <clipPath id='top-side-clip-path'>
+    <rect x='0' y='0' width='100%' height='7'/>
+    <rect x='-90%' y='0' width='100%' height='100%' transform='translate(3.16 0)'/>
+    <rect x='90%' y='0' width='100%' height='100%' transform='translate(-3.16 0)'/>
+  </clipPath>
+
+  <!-- Reusable graphic or template. -->
+  <symbol id='horizontal-side' width='100%' height='16.25' viewBox='0 0 905 16.25' preserveAspectRatio='none'>
+    <path d='m 0,0 c 301.53,5.7865 603.05,5.7864 904.58,0 l 0,11.9 C 603.1,17.691 301.57,17.692 0,11.9 Z' fill='#442d18'/>
+  </symbol>
+
+  <!-- Use the graphic. -->
+  <use xlink:href='#horizontal-side' clip-path='url(#top-side-clip-path)'/>
+</svg>
+```
+The end result should look something like this:
+
+<p data-height="265" data-theme-id="0" data-slug-hash="ooqder" data-default-tab="html,result" data-user="andresangelini" data-embed-version="2" data-pen-title="clip-path on a stretchable SVG element" class="codepen">See the Pen <a href="https://codepen.io/andresangelini/pen/ooqder/">clip-path on a stretchable SVG element</a> by Andrés Angelini (<a href="https://codepen.io/andresangelini">@andresangelini</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async="async" src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 ### Better organization of reusable elements with `<defs>`
 
@@ -180,32 +214,3 @@ Since we are polishing things up, there is something else we could improve. See 
 ```
 
 The pattern you see in my class names is using the [B.E.M.](http://getbem.com/introduction/) methodology. As such, their structure is [block]-[modifier] where I namespaced the [modifier] for easier reading.
-
-### Clipping SVG elements
-
-Looking carefully at the top side of the frame, you'll notice that if left as it is, it will visible right through the holes for the top chains. Since we want to reuse this piece for all four sides of the frame, we would have to find some way to "cut" a hole right where the holes are without modifying the orher sides. This is where the `clip-path` attribute comes into play. Its only parameter, `url()`, allows us to reference to **a path or any basic shape** to define **the visible area** of our element. This might feel counter intuitive at first since most image manipulation software out there have us accostumed to the opposite. Also, note that `<symbol>` elements cannot be used as `clip-path`. This is quite sad because their ability of being stretcheable through the use of `viewBox` and `preserveAspectRatio` would really come in handy. Fortunately for us, there is another way this can be dealt with. Let's try to remove the center part of the frame's top side where the entire title area should be. Remember though, what we have to define is the visible area, so that means we need to use three separated pieces to do this: one to cover just a little bit of top side in its entire width, and one for each side. It should look something like this:
-
-```xml
-<!-- CLIP PATHS -->
-<clipPath id='cp-horizontal-side-bottom'>
-  <rect x='0' y='0' width='100%' height='7'/>
-  <rect x='-90%' y='0' width='100%' height='100%' transform='translate(3.16 0)'/>
-  <rect x='90%' y='0' width='100%' height='100%' transform='translate(2.16 0)'/>
-  <use xlink:href='#bs-side-bottom' x='-100%' transform='scale(-1, 1) translate(1 0)'/>
-</clipPath>
-
-<!-- LAYERS -->
-<g id='l-bulletin-horizontal-sides' class='layer'>
-  <use xlink:href='#c-horizontal-side' clip-path='url(#cp-horizontal-side-bottom)' class='frame--color-diffuse' width='100%' height='16.25'/>
-</g>
-```
-
-### Inverting SVG elements
-
-One of the best features of SVGs is the ability to transform reusable elements. This is done by applying a `transform` attribute to a `<use>` element. Let's mirror then our newly created `c-horizontal-side` element vertically to make the bottom side of the frame.
-
-```xml
-  <use xlink:href='#c-clipped-horizontal-side-specular' y='-100%' transform='scale(1, -1) translate(0 16.25)'/>
-```
-
-Here's the explanation. The `transform` attribute has a `scale()` parameter that flips the element when assigned a negative value. Sadly, though, it might also move it depending on where its axis is, which means that unless it's a graphic you created yourself, usually in a vector graphic software such as Inskcape, it's located on the top left corner. To deal with this and put it back in its right place, we need to move it in the same direction it was transformed. In this case, we changed its scale only in the `y` axis by setting it to `-1` (we left `x` set to `1` which actually does nothing), so we correct it by setting `y=-100%`. Finally, we add a `translate()` parameter to the `transform` attribute to move it upwards a bit. This is because we must leave a gap for the depth effect of the bottom side of the frame.
