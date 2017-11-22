@@ -30,19 +30,19 @@ In this way, I'd use the bulletin type for the sections and the sign one for the
 
 Once decided how the board should look like and how each of its versions will be used, it was time to set our goals.
 
-- Must be resizeable in height, width or both simultaneously.
-- Only use a single file for the graphics to avoid unnecessary http requests.
-- Should not require any extra html element. Adding the proper class to any element should be all that is needed.
-- Must be cached by the browser.
-- Must be visually consistant across browsers. Otherwise, it should flag those that are not supported.
+1. Must be resizeable in height, width or both simultaneously.
+2. Only use a single file for the graphics to avoid unnecessary http requests.
+3. Should not require any extra html element. Adding the proper class to any element should be all that is needed.
+4. Must be cached by the browser.
+5. Must be visually consistant across browsers. Otherwise, it should flag those that are not supported.
 
-## Making the board resizeable
+## 1. Making the board resizeable
 
 This is by far the most important feature in order to make the new IU responsive, so to begin with, we need to look carefully at the board design and plan all this out.
 
 ### Setting a plan
 
-By analazying the structure of the board and how we expected it to behave, it becomes clear that while there are some pieces that should stretch in one direction or the other, there are other pieces that should remain unchanged and even some that should be tiled. It would be logical then to group them according to their behaviour:
+By analazying the structure of the board and how we expected it to behave, it becomes clear that while there are some pieces that should stretch in one direction or the other, there are other pieces that should remain unchanged and even some that should be tiled. It would be logical then to group them together according to their behaviour:
 
 - Top and bottom sides of the frames should stretch horizontally.
 - Left and right sides of the frames should stretch vertically.
