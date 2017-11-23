@@ -110,7 +110,21 @@ Try resizing your browser window. Do you see how the upper side of the frame str
 
 ### Rotating SVG elements
 
-One of the best features of SVGs is their ability to transform reusable elements. This is easily done by appling a `transform` attribute which has many parameters that can be chained together by leaving a space between them. We'll focus on the `translate()` and `scale()` parameters for now. Both of them accept a value pair, one for `x` and another for `y`, but what these values can be differs. While `translate()` only accept unitless decimal numbers (positive or negative), `scale()` only allows ranges from `1` to `-1`, where `1` will do nothing on that axis, `0` will make it infinitely thing to the point of dissapearing completely, and `-1` will flip it. There is one caveat, though. The flipping depends on where the element axis is, which usually is on its top left corner if such element was not created in a vector graphic software. This means that in most cases when you apply a `scale()`, the element will also be translated.
+One of the best features of SVGs is their ability to transform reusable elements. This is easily done by applying a `transform` attribute which has many parameters that can be chained together by leaving a space between them. We'll focus on the `rotate()` and `translate` parameters for now. While `rotate()` only accepts a single unitless value representing degrees, `translate()` takes a unitless value pair (positive or negative), one for each axis. Let's use a copy of our newly created top side of the frame to see how this works.
+
+```xml
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path id='side' d='m 0,0 c 301.53,5.7865 603.05,5.7864 904.58,0 l 0,11.9 C 603.1,17.691 301.57,17.692 0,11.9 Z'/>
+
+  <symbol id='vertical-side' width='16.25px' height='100%' viewBox='0 0 16.25 905' preserveAspectRatio='none'>
+    <use xlink:href='#side' transform='rotate(-90) translate(-905 0)'/>
+  </symbol>
+</svg>
+```
+
+### Inverting SVG elements
+
+One of the best features of SVGs is their ability to transform reusable elements. This is easily done by applying a `transform` attribute which has many parameters that can be chained together by leaving a space between them. We'll focus on the `translate()` and `scale()` parameters for now. Both of them accept a value pair, one for `x` and another for `y`, but what these values can be differs. While `translate()` only accept unitless decimal numbers (positive or negative), `scale()` only allows ranges from `1` to `-1`, where `1` will do nothing on that axis, `0` will make it infinitely thing to the point of dissapearing completely, and `-1` will flip it. There is one caveat, though. The flipping depends on where the element axis is, which usually is on its top left corner if such element was not created in a vector graphic software. This means that in most cases when you apply a `scale()`, the element will also be translated.
 
 ### Clipping SVG elements
 
