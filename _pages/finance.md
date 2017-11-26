@@ -12,7 +12,7 @@ sidebar:
 {% endfor %}
 
 
-[Фінансовий звіт батьківської ради КЗО НВК 2016](https://drive.google.com/open?id=0B0xNmQOswTH4cTUzX3J1d0ZyNEE){:target="_blank"}
+[Фінансовий звіт батьківської ради КЗО НВК](https://drive.google.com/open?id=0B0xNmQOswTH4cTUzX3J1d0ZyNEE){:target="_blank"}
 
 Інформація по НВК № 125 щодо фінансової діяльності закладу з питання використання коштів на покращення матеріально-технічної бази
 
