@@ -4,7 +4,6 @@ title: "Наші педагоги"
 permalink: /open/teachers/
 sidebar:
   nav: "sidebar-menu"
-
 ---
 
 | №  з/п | Прізвище, ім’я та по-батькові    | Який предмет викладає                 |
