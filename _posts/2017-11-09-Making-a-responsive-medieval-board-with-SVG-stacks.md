@@ -190,6 +190,53 @@ The end result should look something like this:
 <p data-height="265" data-theme-id="0" data-slug-hash="ooqder" data-default-tab="html,result" data-user="andresangelini" data-embed-version="2" data-pen-title="clip-path on a stretchable SVG element" class="codepen">See the Pen <a href="https://codepen.io/andresangelini/pen/ooqder/">clip-path on a stretchable SVG element</a> by Andrés Angelini (<a href="https://codepen.io/andresangelini">@andresangelini</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async="async" src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
+### Using `<pattern>`
+
+The board's chains are perfect for introducing a new type of element: `<pattern>`. As its name implies, this element will let us use one or more elements to create repeatable graphics to fill other elements with. The good news is that, besides basic shapes, it also allows referencing to `<symbol>` through `<use>` elements, which means we can use stretchables elements inside the `<pattern>`. Although we won't need this feature for our chains because they don't stretch, we will need it later on for making the board's wood texture. But for nor, let's focus on the chains.
+
+Before attemphing anything, let's see how the chains are made up to better understand what we need to do. At a glance, we can clearly see there are two main pieces: a link seen from the front and another from the side, each with three levels of shading. Both graphics are repeated indefinitely, starting from the bottom in case of the top chains, and from the top in the case of the bottom chains. This is basically telling us that we'll need to create two pairs of chains since there is no way to invert a `<pattern>`, and even if there was, we couldn't because the direction of our shading would reveal the trick otherwise.
+
+So, if would split the chains up into their basic shapes, this what we'd had:
+
+```xml
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <rect id='link-profile-diffuse' x='0' y='0' width='6.6490554' height='37.4776338' rx='3.32452782' ry='3.32452782' fill='#433d18'/>
+  <path id='link-profile-specular' d='m 3.3096216...' fill='#746b2e'/>
+  <path id='link-profile-shadow' d='m 4.4817173...' fill='#2a260f'/>
+  <path id='link-front-diffuse' d='M 10.488082...' fill='#433d18'/>
+  <path id='link-front-specular' d='M 10.488082...' fill='#746b2e'/>
+  <path id='link-front-shadow' d='m 16.919798...' fill='#2a260f'/>
+</svg>
+```
+
+Please note that I have shortened the `d` attribute for simplicity. Check the Codepen snippet down below to see the complete version. Anyways, we have a total six basic shapes; one rect with rounded corners and five paths made on Inkscpate, in my case. Now we'll use these new shapes to make two compositions representing each link.
+
+```xml
+...
+
+  <symbol id='link-profile'>
+    <use xlink:href='#link-profile-diffuse'></use>
+    <use xlink:href='#link-profile-shadow'></use>
+    <use xlink:href='#link-profile-specular'></use>
+    </symbol>
+
+    <symbol id='link-front'>
+    <use xlink:href='#link-front-diffuse'></use>
+    <use xlink:href='#link-front-shadow'></use>
+    <use xlink:href='#link-front-specular'></use>
+  </symbol>
+```
+
+With both of our main pieces of the chain ready, you would think that we could start making a `<pattern>` out of them, but unfortunately, there is a small problem. The chains start out with the links sideways because that's how they are used to hook the board, so we need a way to offset the chains front links from the side links. In toher words, the top chains should have their links at the bottom have their bottom parts perfectly aligned with the chains' bottom, and viceversa for the bottom chains. To solve this conundrum, we have to make two different `<pattern>`s, one for each link, and then offset the front ones.
+
+```xml
+...
+<g id='links-front'>
+  <use xlink:href='#link-front' transform='translate(0 -22.986)'></use>
+  <use xlink:href='#link-front' transform='translate(0 22.986)'></use>
+</g>
+```
+
 ### Improving organization with `<defs>`
 
 If we look closely at each part, it's clear that most of them are basically the same but with some minor differences such as their color, position, rotation, size, etc. So it would be only logical to define some basic shapes and use them as templates for the rest of the parts. Well, meet `<defs>`. This element allows us to do just that; "define" a bunch of reusable elements without actually displaying them.
