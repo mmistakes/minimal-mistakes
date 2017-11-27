@@ -14,7 +14,7 @@ var idx = lunr(function () {
 {% for c in site.collections %}
   {% assign docs = c.docs %}
   {% for doc in docs %}
-    {% if doc.search == true %}
+    {% unless doc.search == false %}
       idx.add({
         title: {{ doc.title | jsonify }},
         excerpt: {{ doc.content | strip_html | truncatewords: 20 | jsonify }},
@@ -23,7 +23,7 @@ var idx = lunr(function () {
         id: {{ count }}
       });
       {% assign count = count | plus: 1 %}
-    {% endif %}
+    {% endunless %}
   {% endfor %}
 {% endfor %}
 
@@ -36,7 +36,7 @@ var store = [
     {% endif %}
     {% assign docs = c.docs %}
     {% for doc in docs %}
-      {% if doc.search == true %}
+      {% unless doc.search == false %}
         {% if doc.header.teaser %}
           {% capture teaser %}{{ doc.header.teaser }}{% endcapture %}
         {% else %}
@@ -53,7 +53,7 @@ var store = [
               {{ teaser | absolute_url | jsonify }}
             {% endif %}
         }{% unless forloop.last and l %},{% endunless %}
-      {% endif %}
+      {% endunless %}
     {% endfor %}
   {% endfor %}]
 

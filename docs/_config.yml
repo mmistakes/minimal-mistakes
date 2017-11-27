@@ -58,9 +58,8 @@ atom_feed:
 # SEO Related
 google_site_verification : "UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y" # Replace this with your ID, or delete
 bing_site_verification   :
-alexa_site_verification  :
 yandex_site_verification :
-naver-site-verification  :
+naver_site_verification  :
 
 # Social Sharing
 twitter:
@@ -203,7 +202,6 @@ defaults:
       comments: true
       share: true
       related: true
-      search: true
   # _pages
   - scope:
       path: "_pages"
@@ -223,7 +221,6 @@ defaults:
       comments: false
       sidebar:
         nav: "docs"
-      search: true
   # _recipes
   - scope:
       path: ""
@@ -233,7 +230,6 @@ defaults:
       author_profile: true
       share: true
       comments: true
-      search: true
   # _pets
   - scope:
       path: ""
@@ -243,7 +239,6 @@ defaults:
       author_profile: true
       share: true
       comment: true
-      search: true
   # _portfolio
   - scope:
       path: ""
@@ -252,7 +247,6 @@ defaults:
       layout: single
       author_profile: false
       share: true
-      search: true
 
 
 # Sass/SCSS
