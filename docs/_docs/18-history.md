@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-11-20T15:17:27-05:00
+last_modified_at: 2017-11-27T12:12:41-05:00
 toc: true
 ---
 
@@ -14,6 +14,8 @@ toc: true
 
 * Open social share links in a new window. [#1357](https://github.com/mmistakes/minimal-mistakes/pull/1357)
 * Remove Alexa.com verification due to retiring of "[Claim Your Site](https://support.alexa.com/hc/en-us/articles/219135887)" feature. [#1350](https://github.com/mmistakes/minimal-mistakes/issues/1350)
+* Disable analytics in `development` environment. [#1362](https://github.com/mmistakes/minimal-mistakes/pull/1362)
+* Disable comments in `development` environment. [#1363](https://github.com/mmistakes/minimal-mistakes/pull/1363)
 
 ### Bug Fixes
 

@@ -4,6 +4,8 @@
 
 * Open social share links in a new window. [#1357](https://github.com/mmistakes/minimal-mistakes/pull/1357)
 * Remove Alexa.com verification due to retiring of "[Claim Your Site](https://support.alexa.com/hc/en-us/articles/219135887)" feature. [#1350](https://github.com/mmistakes/minimal-mistakes/issues/1350)
+* Disable analytics in `development` environment. [#1362](https://github.com/mmistakes/minimal-mistakes/pull/1362)
+* Disable comments in `development` environment. [#1363](https://github.com/mmistakes/minimal-mistakes/pull/1363)
 
 ### Bug Fixes
 
