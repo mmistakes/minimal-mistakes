@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-last_modified_at: 2017-11-27T11:28:31-05:00
+last_modified_at: 2017-11-27T12:11:11-05:00
 toc: true
 ---
 
@@ -292,6 +292,10 @@ defaults:
 ```
 
 If you add `comments: false` to a post's YAML Front Matter it will override the default and disable comments for just that post.
+
+**Note:** Comments are disabled by default in `development`. To enable when testing/building locally be sure to set
+`JEKYLL_ENV=production` to [force the environment](http://jekyllrb.com/docs/configuration/#specifying-a-jekyll-environment-at-build-time) to production.
+{: .notice--info}
 
 ##### Disqus
 
@@ -611,6 +615,10 @@ analytics:
 ```
 
 To use another provider not included with the theme set `provider: "custom"` then add their embed code to `_includes/analytics-providers/custom.html`.
+
+**Note:** Analytics are disabled by default in `development`. To enable when testing/building locally be sure to set
+`JEKYLL_ENV=production` to [force the environment](http://jekyllrb.com/docs/configuration/#specifying-a-jekyll-environment-at-build-time) to production.
+{: .notice--info}
 
 ## Site Author
 
