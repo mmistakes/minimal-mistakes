@@ -203,6 +203,7 @@ defaults:
       comments: true
       share: true
       related: true
+      search: true
   # _pages
   - scope:
       path: "_pages"
@@ -222,6 +223,7 @@ defaults:
       comments: false
       sidebar:
         nav: "docs"
+      search: true
   # _recipes
   - scope:
       path: ""
@@ -231,6 +233,7 @@ defaults:
       author_profile: true
       share: true
       comments: true
+      search: true
   # _pets
   - scope:
       path: ""
@@ -240,6 +243,7 @@ defaults:
       author_profile: true
       share: true
       comment: true
+      search: true
   # _portfolio
   - scope:
       path: ""
@@ -248,6 +252,7 @@ defaults:
       layout: single
       author_profile: false
       share: true
+      search: true
 
 
 # Sass/SCSS

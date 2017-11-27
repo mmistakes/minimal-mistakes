@@ -14,14 +14,16 @@ var idx = lunr(function () {
 {% for c in site.collections %}
   {% assign docs = c.docs %}
   {% for doc in docs %}
-    idx.add({
-      title: {{ doc.title | jsonify }},
-      excerpt: {{ doc.content | strip_html | truncatewords: 20 | jsonify }},
-      categories: {{ doc.categories | jsonify }},
-      tags: {{ doc.tags | jsonify }},
-      id: {{ count }}
-    });
-    {% assign count = count | plus: 1 %}
+    {% if doc.search == true %}
+      idx.add({
+        title: {{ doc.title | jsonify }},
+        excerpt: {{ doc.content | strip_html | truncatewords: 20 | jsonify }},
+        categories: {{ doc.categories | jsonify }},
+        tags: {{ doc.tags | jsonify }},
+        id: {{ count }}
+      });
+      {% assign count = count | plus: 1 %}
+    {% endif %}
   {% endfor %}
 {% endfor %}
 
@@ -34,22 +36,24 @@ var store = [
     {% endif %}
     {% assign docs = c.docs %}
     {% for doc in docs %}
-      {% if doc.header.teaser %}
-        {% capture teaser %}{{ doc.header.teaser }}{% endcapture %}
-      {% else %}
-        {% assign teaser = site.teaser %}
+      {% if doc.search == true %}
+        {% if doc.header.teaser %}
+          {% capture teaser %}{{ doc.header.teaser }}{% endcapture %}
+        {% else %}
+          {% assign teaser = site.teaser %}
+        {% endif %}
+        {
+          "title": {{ doc.title | jsonify }},
+          "url": {{ doc.url | absolute_url | jsonify }},
+          "excerpt": {{ doc.content | strip_html | truncatewords: 20 | jsonify }},
+          "teaser":
+            {% if teaser contains "://" %}
+              {{ teaser | jsonify }}
+            {% else %}
+              {{ teaser | absolute_url | jsonify }}
+            {% endif %}
+        }{% unless forloop.last and l %},{% endunless %}
       {% endif %}
-      {
-        "title": {{ doc.title | jsonify }},
-        "url": {{ doc.url | absolute_url | jsonify }},
-        "excerpt": {{ doc.content | strip_html | truncatewords: 20 | jsonify }},
-        "teaser":
-          {% if teaser contains "://" %}
-            {{ teaser | jsonify }}
-          {% else %}
-            {{ teaser | absolute_url | jsonify }}
-          {% endif %}
-      }{% unless forloop.last and l %},{% endunless %}
     {% endfor %}
   {% endfor %}]
 

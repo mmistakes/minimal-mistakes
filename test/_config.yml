@@ -261,6 +261,7 @@ defaults:
       read_time: true
       share: true
       related: true
+      search: true
   # _pages
   - scope:
       path: "_pages"
@@ -276,6 +277,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
+      search: true
   # _pets
   - scope:
       path: ""
@@ -284,6 +286,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
+      search: true
   # _portfolio
   - scope:
       path: ""
@@ -292,3 +295,4 @@ defaults:
       layout: single
       author_profile: false
       share: true
+      search: true
