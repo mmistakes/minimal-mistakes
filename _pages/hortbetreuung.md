@@ -30,6 +30,21 @@ im Unterricht.
 
 [<i class="fa fa-download">&nbsp;&nbsp;</i>Flyer zu unserem Hortangebot](/assets/files/Grundschule_am_Brandwerder_Hort_Flyer.pdf){: .btn .btn--success}
 
+# Schließzeiten
+
+| 22.12.2017 - 02.01.2018 | Weihnachtsschließzeit |
+| 05.02.2018 - 09.02.2018 | Winterferien |
+| 05.03.2018 | Schließtag (Studientag der Schule) |
+| 26.03.2018 - 06.03.2018 | Osterferien |
+| 30.04.2018 | Schließtag |
+| 11.05.2018 | Schließtag |
+| 22.05.2018 | Pfingstferien |
+| 05.07.2018 - 16.08.2018 | Sommerferien verminderter Betrieb (3 Wochen Urlaub für ihr Kind) |
+| 17.08.2018 | Schließtag |
+| 22.10.2018 - 02.11.2018 | Oktoberferien |
+| 24.12.2018 - 05.01.2019 | Weihnachtsschließzeit |
+
+
 # Hortgebäude und Außengelände
 
 Das Hortgebäude befindet sich auf dem Schulgelände, in dem drei Räume während
