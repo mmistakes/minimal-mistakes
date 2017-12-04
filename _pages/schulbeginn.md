@@ -24,6 +24,7 @@ Die wichtigsten Daten zum Schuljahr 2018/19 in einem Überblick.
 | | Ihr Kind wurde im Zeitraum vom 1. Oktober 2011 bis zum 30. September 2012 geboren? Herzlichen Glückwunsch zu Ihrem baldigen **Schulkind**. |
 | Freitag, 04.10.2017 bis Freitag, 17.10.2017  | [<i class="fa fa-file-text-o">&nbsp;</i>**Anmeldung**](#anmeldung) der Schulanfänger*innen im Sekretariat. |
 |  | **Hospitation:** Sie können in der Schule hospitieren und sich mit den Abläufen vertraut machen. Schnuppern Sie gerne in den Schulalltag einer Klasse hinein. Bitte vereinbaren Sie hierzu einen Termin im Sekretariat.  |
+| Freitag, 13.04.2018 und Samstag, 14.04.2018| Brandwerder-Kinder machen Zirkus, kommen Sie zur Vorstellung! Erwachsene 7€ und Kinder 5€. |
 | Dienstag, 31.07.2018 | Melden Sie Ihr Kind rechtzeitig zur [<i class="fa fa-child">&nbsp;</i>**Hortbetreuung**](#hort) an, so dass Ihr Kind am 01.08.2018 von unserem Hort betreut werden kann.  |
 | Samstag, 25.08.2018 | Endlich! Wir feiern die Einschulung in der Aula |
 | Montag, 27.08.2018 | Der **erste Schultag.** |
