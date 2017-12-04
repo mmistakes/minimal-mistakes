@@ -38,6 +38,8 @@ einfach eine E-Mail. So können wir uns Zeit für Ihr Anliegen nehmen.
 ## Sekretariat
 {: #sekretariat}
 
+{% include author-profile.html author='Nicole Herrmann' %}{: .align-right}
+
 * Nicole Herrmann
 * E-Mail: {% include email email='sekretariat@brandwerder.de' %}
 * Telefon: (030) 3670952 - 0
@@ -69,7 +71,7 @@ einfach eine E-Mail. So können wir uns Zeit für Ihr Anliegen nehmen.
 
 ## Ihre Ansprechpartner*innen
 
-Die E-Mail Kontaktdaten erhalten Sie über das Sekretariat.
+Die E-Mail Kontaktdaten der Lehrer*innen erhalten Sie über das Sekretariat.
 
 {{comment}}<!--
 |   | E-Mail |

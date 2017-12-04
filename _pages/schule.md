@@ -3,7 +3,7 @@ layout: single
 title: "Unsere Schule"
 permalink: /schule/
 author_profile: false
-excerpt: "JÜL-Konzept, Unterrichtszeiten und Kollegium"
+excerpt: "Über uns, Kooperationen, Veranstaltungen, JÜL-Konzept, Unterrichtszeiten und Kollegium"
 modified: 2017-03-07T10:55:00+01:00
 header:
   overlay_color: "#fff"
@@ -14,8 +14,52 @@ header:
 
 ## Über die Grundschule am Brandwerder
 
-Wir sind eine zweizügige, verlässliche Halbtagsgrundschule in Spandau/Staaken
+Wir sind eine zweizügige, verlässliche Halbtagsgrundschule in Spandau/Staaken,
 die in diesem Schuljahr von rund 300 Kindern besucht wird.
+
+Wir setzen Schwerpunkte im selbstständigen und sozialen Lernen. Die
+unterschiedlichen Interessen und Begabungen des Kindes werden aufgegriffen und
+durch entsprechende Lerninhalte gefördert.
+
+### Unsere Kooperationen
+
+Wir sind bestrebt, Übergänge so gut wie möglich zu gestalten und pflegen
+folgende Kooperationen:
+
+Im Bereich Übergang Oberschule kooperieren wir mit dem
+[<i class="fa fa-external-link">&nbsp;</i>Carl-Friedrich-von-Siemens-Gymnasium](http://cfvsiemens.de),
+dem
+[<i class="fa fa-external-link">&nbsp;</i>Lily-Braun-Gymnasium](https://lily-braun-gymnasium.de)
+sowie der Integrierten Sekundarschule (ISS)
+[<i class="fa fa-external-link">&nbsp;</i>Schule an der Jungfernheide](https://schule-an-der-jungfernheide.de).
+
+Hier pflegen wir einen engen Kontakt. Die Kinder der sechsten Klassen haben die
+Möglichkeit, im Unterricht der Oberschulen zu hospitieren. Gleichzeitig
+stellen die Oberschüler*innen ihre Schule vor.
+
+Unsere Kooperations-Kitas sind die
+[<i class="fa fa-external-link">&nbsp;</i>Kita Zauberschiff](http://kita-nordwest.de/einrichtung_allgemein.php?id=48)
+sowie die
+[<i class="fa fa-external-link">&nbsp;</i>Kita Arche-Noah](http://www.kirchengemeinde-staaken.de/page/1183/kita-arche-noah).
+Gemeinsam mit Ihren Erzieher*innen besuchen die Kinder den Unterricht und sind
+zu den Schulveranstaltungen eingeladen. Gleichzeitig befinden wir uns in engem
+Austausch und sind gerne Gast der Elternversammlungen.
+
+### Veranstaltungen der Schulgemeinschaft
+
+Wir führen gemeinschaftliche Schulveranstaltungen durch wie etwa Sommerfeste,
+Zirkus in der Schule und Aktivitäten zur Weihnachtszeit. Fest verankert ist
+auch der Brandwerder-Cup, der immer  in den letzten Tagen vor den Sommerferien
+durchgeführt wird. Klassen absolvieren ausgewählte sportliche Aufgaben und
+treten gegeneinander an. Teamwork steht hier im Mittelpunkt.
+
+### Mittwochsverkauf - Schulfrühstück
+
+Viele Eltern engagieren sich für die Schulgemeinschaft. Mittwochs in der ersten
+großen Pause sorgen Sie für das leibliche Wohl der Kinder. Für 50 Cent das
+Stück gibt es Brötchen, Brezeln, Waffeln und vieles mehr. Helfer*innen werden
+immer gebraucht und  sind herzlich eingeladen sich gegen 8:00 Uhr in der
+Schulküche zu treffen.
 
 ## Unser Team
 
