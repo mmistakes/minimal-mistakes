@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-11-28T08:41:19-05:00
+last_modified_at: 2017-12-04T14:48:06-05:00
 toc: true
 ---
 
@@ -17,6 +17,7 @@ toc: true
 * Disable analytics in `development` environment. [#1362](https://github.com/mmistakes/minimal-mistakes/pull/1362)
 * Disable comments in `development` environment. [#1363](https://github.com/mmistakes/minimal-mistakes/pull/1363)
 * Exclude specific pages/posts from search index by adding `search: false` to the YAML Front Matter. [#1369](https://github.com/mmistakes/minimal-mistakes/pull/1369)
+* Add optional `description` key to masthead links for clarifying their purpose with the `title` attribute. [#1380](https://github.com/mmistakes/minimal-mistakes/pull/1380)
 
 ### Bug Fixes
 
