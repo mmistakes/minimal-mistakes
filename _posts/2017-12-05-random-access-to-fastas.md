@@ -8,6 +8,8 @@ tags:
   - compression
   - Pbgzip
   - Pyfaidx
+header:
+  teaser: "assets/images/greyson-joralemon-299735.jpg"
 
 ---
 
