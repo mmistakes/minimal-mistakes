@@ -192,24 +192,49 @@ The end result should look something like this:
 
 ### Using `<pattern>`
 
-The board's chains are perfect for introducing a new type of element: `<pattern>`. As its name implies, this element will let us use one or more elements to create repeatable graphics to fill other elements with. The good news is that, besides basic shapes, it also allows referencing to `<symbol>` through `<use>` elements, which means we can use stretchables elements inside the `<pattern>`. Although we won't need this feature for our chains because they don't stretch, we will need it later on for making the board's wood texture. But for nor, let's focus on the chains.
+The board's chains are perfect for introducing a new type of element: `<pattern>`. As its name implies, this element will let us use one or more elements to create repeatable graphics to fill other elements with. The good news is that, besides basic shapes, it also allows referencing to `<symbol>` through `<use>` elements, which means we can use stretchables elements inside the `<pattern>`. Although we won't need this feature for our chains because they don't stretch, we will need it later on for making the board's wood texture. But for now, let's focus on the chains.
 
-Before attemphing anything, let's see how the chains are made up to better understand what we need to do. At a glance, we can clearly see there are two main pieces: a link seen from the front and another from the side, each with three levels of shading. Both graphics are repeated indefinitely, starting from the bottom in case of the top chains, and from the top in the case of the bottom chains. This is basically telling us that we'll need to create two pairs of chains since there is no way to invert a `<pattern>`, and even if there was, we couldn't because the direction of our shading would reveal the trick otherwise.
+Before attemphing anything, let's see how the chains are made up to better understand what we need to do.
 
-So, if would split the chains up into their basic shapes, this what we'd had:
+Top chains:
+
+![Top chains][topChains]
+
+Bottom chains:
+
+![Bottom chains][bottomChains]
+
+At a glance, we can clearly see there are two main pieces: a link seen from the front and another from the side, each with three levels of shading, like this:
+
+<p data-height="265" data-theme-id="0" data-slug-hash="vWPRxz" data-default-tab="result" data-user="andresangelini" data-embed-version="2" data-pen-title="chain link composition" class="codepen">See the Pen <a href="https://codepen.io/andresangelini/pen/vWPRxz/">chain link composition</a> by Andrés Angelini (<a href="https://codepen.io/andresangelini">@andresangelini</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async="async" src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+So, if were to split the chains up into their basic shapes, this is what we'd had:
 
 ```xml
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-  <rect id='link-profile-diffuse' x='0' y='0' width='6.6490554' height='37.4776338' rx='3.32452782' ry='3.32452782' fill='#433d18'/>
-  <path id='link-profile-specular' d='m 3.3096216...' fill='#746b2e'/>
-  <path id='link-profile-shadow' d='m 4.4817173...' fill='#2a260f'/>
-  <path id='link-front-diffuse' d='M 10.488082...' fill='#433d18'/>
-  <path id='link-front-specular' d='M 10.488082...' fill='#746b2e'/>
-  <path id='link-front-shadow' d='m 16.919798...' fill='#2a260f'/>
+  <symbol id='link-profile-diffuse'>
+    <rect x='0' y='0' width='6.6490554' height='37.4776338' rx='3.32452782' ry='3.32452782' fill='#433d18'/>
+  </symbol>
+  <symbol id='link-profile-specular'>
+    <path d='m 3.3096216...' fill='#746b2e'/>
+  </symbol>
+  <symbol id='link-profile-shadow'>
+    <path d='m 4.4817173...' fill='#2a260f'/>
+  </symbol>
+  <symbol id='link-front-diffuse'>
+    <path d='M 10.488082...' fill='#433d18'/>
+  </symbol>
+  <symbol id='link-front-specular'>
+    <path d='M 10.488082...' fill='#746b2e'/>
+  </symbol>
+  <symbol id='link-front-shadow'>
+    <path d='m 16.919798...' fill='#2a260f'/>
+  </symbol>
 </svg>
 ```
 
-Please note that I have shortened the `d` attribute for simplicity. Check the Codepen snippet down below to see the complete version. Anyways, we have a total six basic shapes; one rect with rounded corners and five paths made on Inkscpate, in my case. Now we'll use these new shapes to make two compositions representing each link.
+Please note that I have shortened the `d` attribute for simplicity. Check the Codepen snippet down below to see the complete version. Anyways, we have a total of six basic shapes; one rect with rounded corners and five paths made on Inkscpate, in my case. Now we'll use these new shapes to make two compositions representing each link.
 
 ```xml
 ...
@@ -218,24 +243,45 @@ Please note that I have shortened the `d` attribute for simplicity. Check the Co
     <use xlink:href='#link-profile-diffuse'></use>
     <use xlink:href='#link-profile-shadow'></use>
     <use xlink:href='#link-profile-specular'></use>
-    </symbol>
+  </symbol>
 
-    <symbol id='link-front'>
+  <symbol id='link-front'>
     <use xlink:href='#link-front-diffuse'></use>
     <use xlink:href='#link-front-shadow'></use>
     <use xlink:href='#link-front-specular'></use>
   </symbol>
 ```
 
-With both of our main pieces of the chain ready, you would think that we could start making a `<pattern>` out of them, but unfortunately, there is a small problem. The chains start out with the links sideways because that's how they are used to hook the board, so we need a way to offset the chains front links from the side links. In toher words, the top chains should have their links at the bottom have their bottom parts perfectly aligned with the chains' bottom, and viceversa for the bottom chains. To solve this conundrum, we have to make two different `<pattern>`s, one for each link, and then offset the front ones.
+Now, let's try to make a pattern out of each of them and then offset the front links to make our final composition with both types of links.
 
 ```xml
 ...
-<g id='links-front'>
-  <use xlink:href='#link-front' transform='translate(0 -22.986)'></use>
-  <use xlink:href='#link-front' transform='translate(0 22.986)'></use>
-</g>
+  <pattern id='links-profile' x='0' y='100%' width='100%' height='45.9403662' patternUnits='userSpaceOnUse'>
+    <use xlink:href='#link-profile' transform='translate(7 0)'></use>
+  </pattern>
 ```
+
+The `<pattern>`'s `height`, `width` and `patternUnit` attributes are extremely important. The first two define the size of the pattern to be repeated, while the last one sets whether these values, as well as the elemets' inside `pattern`, are relative to the global coordinate system or to the element which `pattern` is applied to. It's important to note that with the later, values range from `0` to `1`, where `1` it's equivalent to `100%` and `0.5` is equivalent to `50%`. The `pattern` values in question are `userSpaceOnUse` (the default one), to use the global coordinates system, and `objectBoundingBox`, to use the local ones. For either case, however, the `pattern`'s origin remains the same: in the top left corner of the element it's applied to.
+
+With all this new information under our belt, we determine that we want the width of our pattern to take the whole with of its container, and that its height should be `45.94`, which is equal to a link's height plus the space between the links. We also want these values to be independent of the container so we make sure to set `patternUnits='userSpaceOnUse'`, even though this is the default value to avoid having issues with some browsers. Then, we center the links horizontally by setting `transform='translate(7 0)'` on the link graphic inside `<patter>`.
+
+The result looks like the figure 1 in the following codepen:
+
+<p data-height="338" data-theme-id="0" data-slug-hash="xPBapB" data-default-tab="result" data-user="andresangelini" data-embed-version="2" data-pen-title="Making an extensible chain with SVG patterns" class="codepen">See the Pen <a href="https://codepen.io/andresangelini/pen/xPBapB/">Making an extensible chain with SVG patterns</a> by Andrés Angelini (<a href="https://codepen.io/andresangelini">@andresangelini</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async="async" src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+So far so good, but there is one more thing we need to do. As it is now, the profile links are sticked to the top, and since these ones are meant to be used for the top chains, we want them to stick the bottom as in figure 2. To do that, we just set `y='100%'` on the `<pattern>` itself, then translate its content `8.5` downwards with `transform='translate(0 8.5)'`, and that's it!
+
+Now we can move onto doing the same with the front links.
+
+```xml
+...
+  <pattern id='links-front' x='0' y='100%' width='100%' height='45.9403662' patternUnits='userSpaceOnUse'>
+    <use xlink:href='#link-front' transform='translate(0 8.4927324)'></use>
+  </pattern>
+```
+
+We basically repeat the same process, only this time using the a front link inside the `<pattern>`.
 
 ### Improving organization with `<defs>`
 
@@ -311,3 +357,9 @@ Since we are polishing things up, there is something else we could improve. See 
 ```
 
 The pattern you see in my class names is using the [B.E.M.](http://getbem.com/introduction/) methodology. As such, their structure is [block]-[modifier] where I namespaced the [modifier] for easier reading.
+
+
+
+
+[topChains]: https://cdn.rawgit.com/andresangelini/f3415703d9665bc6d2e0fcdefd90c252/raw/8a9d7f56730094d681762638c76db1df3ffdd538/topChains.svg "Top chains"
+[bottomChains]: https://cdn.rawgit.com/andresangelini/96fc2fe2937f63997f972f203509bb28/raw/04eb599bf86ffce922d53071c8a10013743a3436/bottomChains.svg "Bottom chains"
