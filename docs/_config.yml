@@ -58,9 +58,8 @@ atom_feed:
 # SEO Related
 google_site_verification : "UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y" # Replace this with your ID, or delete
 bing_site_verification   :
-alexa_site_verification  :
 yandex_site_verification :
-naver-site-verification  :
+naver_site_verification  :
 
 # Social Sharing
 twitter:
@@ -109,7 +108,7 @@ author:
   linkedin         :
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    : # https://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
   twitter          : *twitter
@@ -260,7 +259,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
