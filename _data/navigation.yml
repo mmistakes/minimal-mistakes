@@ -6,8 +6,6 @@ main:
     url: /syllabus
   - title: "Відкритий доступ "
     url: /open
-  - title: "Звіт директора"
-    url: /reports
   - title: "Онлайн реєстрація до ДНЗ"
     url: /registration
 
