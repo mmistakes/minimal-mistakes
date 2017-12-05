@@ -59,7 +59,7 @@ $(document).ready(function() {
     var query = $(this).val();
     var result = idx.search(query);
     resultdiv.empty();
-    resultdiv.prepend('<p>'+result.length+' {{ site.data.ui-text[site.locale].results_found | default: "Result(s) found" }}</p>');
+    resultdiv.prepend('<p class="results__found">'+result.length+' {{ site.data.ui-text[site.locale].results_found | default: "Result(s) found" }}</p>');
     for (var item in result) {
       var ref = result[item].ref;
       if(store[ref].teaser){
