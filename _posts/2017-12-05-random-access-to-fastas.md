@@ -71,7 +71,7 @@ keys and call the records.
 
 ```python
 import random
-import Pyfaidx
+import pyfaidx
 
 def shuffle_keys(fastaobj):
     """take the Pyfaidx file and return a shuffled list of the keys"""
