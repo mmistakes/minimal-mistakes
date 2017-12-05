@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Розклад роботи гуртків"
-permalink: /open/workshop/
+permalink: /process/workshop/
 sidebar:
   nav: "sidebar-menu"
 ---

@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Правила прийому вихованців до ДНЗ НВК"
-permalink: /open/rules/
+permalink: /open/rules-dnz/
 sidebar:
   nav: "sidebar-menu"
 ---

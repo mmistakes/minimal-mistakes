@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /finance/
+permalink: /open/finance/
 sidebar:
   nav: "sidebar-menu"
 ---

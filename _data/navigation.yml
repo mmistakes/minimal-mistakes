@@ -4,8 +4,8 @@ main:
     url: /news
   - title: "Розклад"
     url: /syllabus
-  - title: "Фінансова діяльність"
-    url: /finance
+  - title: "Відкритий доступ "
+    url: /open
   - title: "Звіт директора"
     url: /reports
   - title: "Онлайн реєстрація до ДНЗ"
@@ -40,6 +40,8 @@ sidebar-menu:
         url: /process/mode
       - title: Розклад
         url: /syllabus
+      - title: Розклад роботи гуртків
+        url: /process/workshop
 
   - title: Звіти директора
     url: /reports

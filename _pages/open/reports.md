@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Звіт директора КЗО НВК № 125 ДМР (2016-2017 н.р.)"
-permalink: /reports/
+permalink: open/report/
 author_profile: true
 ---
 

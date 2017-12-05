@@ -31,7 +31,7 @@ sidebar:
   </td>
   <td width="306">
   <p align="center">&nbsp;</p>
-  <p align="center">1 / 0, 5 ставки</p>
+  <p align="center">1 / 0,5 ставки</p>
   </td>
   </tr>
   <tr valign="top">
@@ -41,7 +41,7 @@ sidebar:
   </td>
   <td width="306">
   <p align="center">&nbsp;</p>
-  <p align="center">1 / 0, 25 ставки</p>
+  <p align="center">1 / 0,25 ставки</p>
   </td>
   </tr>
   <tr valign="top">
@@ -52,7 +52,17 @@ sidebar:
   </td>
   <td width="306">
   <p align="center">&nbsp;</p>
-  <p align="center">1 / 0, 5 ставки</p>
+  <p align="center">1 / 0,5 ставки</p>
+  </td>
+  </tr>
+  <tr valign="top">
+  <td width="306" height="49">
+  <p align="center">&nbsp;</p>
+  <p align="center">«Вчитель початкової школи. 2018-2019 н. р.» - </p>
+  </td>
+  <td width="306">
+  <p align="center">&nbsp;</p>
+  <p align="center">1 / 1 ставки</p>
   </td>
   </tr>
 </tbody>
