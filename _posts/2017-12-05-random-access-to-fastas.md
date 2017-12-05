@@ -98,7 +98,7 @@ for sequential access there is also  an option to read ahead into a
 buffer: ```genes = pyfaidx.Fasta('tests/data/genes.fasta', number=10000)```.
 
 ## Reading compressed data
-IF you are working with fastas large enough to warrant Pyfaidx chances are you
+If you are working with fastas large enough to warrant Pyfaidx chances are you
 don't want to unzip those files, plus gzipped files can be processed more
 quickly for IO bound processes. Pyfaidx can read
 [blocked gzip format](https://blastedbio.blogspot.com/2011/11/bgzf-blocked-bigger-better-gzip.html)

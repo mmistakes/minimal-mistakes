@@ -86,7 +86,7 @@ author:
   name             : "Adam R. Rivers, PhD"
   avatar           : "assets/images/rivers1.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Computational biologist and microbial ecologist
-                        using microbiome data and machine learning to create a
+                        using microbiome data and machine learning to create
                         safe, productive, and sustainable agricultural systems."
 
   location         : "Gainesville, Florida"
@@ -104,7 +104,7 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : adam-rivers-65007854# "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : adam-rivers-65007854 # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
