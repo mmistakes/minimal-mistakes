@@ -30,10 +30,10 @@ and I've found it to be fast and pretty straightforward to use.
 * Anaconda: [https://anaconda.org/bioconda/pyfaidx](https://anaconda.org/bioconda/pyfaidx)
 {: .notice--info}
 
-## getting started
+## Getting started
 In its most basic usage you create a Pyfaidx fasta object:
 
-```python3
+```python
 import pyfaidx
 
 genes = pyfaidx.Fasta('tests/data/genes.fasta')
@@ -69,7 +69,7 @@ While this is not in any particular order if will return the same order with
 each call  if you need pseudorandom sampling you can simply randomize the
 keys and call the records.
 
-```python3
+```python
 import random
 import Pyfaidx
 
