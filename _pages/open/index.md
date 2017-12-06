@@ -42,5 +42,8 @@ sidebar:
 21. [Розмір плати за навчання, підготовку, перепідготовку, підвищення кваліфікацій](/open/prices)
 22. [Кошторис закладу](/open/estimate/)
 23. [Фінансовий звіт](https://docs.google.com/spreadsheets/d/1bUdMxZAl-Lgllxh1Pz0WEKhV_WbI2w420UIuQfAu850/edit#gid=780042493)
+- [Фінансовий звіт батьківскьої ради](/open/finance-parents/)
+- [Фінансовий звіт за вересень 2017 рік](/finance-2017/)
+- [Фінансовий звіт за жовтень 2017 рік](/finance-10-2017/)
 
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 85.0847%;"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQkvmLKzxKORuFa337EiGbU-cw2NXc-hpLPnHZN1oQwwZsRG2_R_Geo0Z1-nzovnucKuTm9WLpjzwWM/pubhtml?widget=true&amp;headers=false" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen></iframe></div>
