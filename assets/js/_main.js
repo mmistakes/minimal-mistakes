@@ -32,7 +32,8 @@ $(document).ready(function() {
 
   // Search toggle
   $(".search__toggle").on("click", function() {
-    $("#masthead_search_form_wrap").toggleClass("open");
+    $(".search-content").toggleClass("open");
+    $(".initial-content").toggleClass("hidden");
     // set focus on input
     setTimeout(function() {
       $("#search").focus();
