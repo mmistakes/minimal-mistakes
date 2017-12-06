@@ -198,11 +198,11 @@ Before attemphing anything, let's see how the chains are made up to better under
 
 Top chains:
 
-![Top chains][topChains]
+![Top chains][top chains svg]
 
 Bottom chains:
 
-![Bottom chains][bottomChains]
+![Bottom chains][bottom chains svg]
 
 At a glance, we can clearly see there are two main pieces: a link seen from the front and another from the side, each with three levels of shading, like this:
 
@@ -261,16 +261,21 @@ Now, let's try to make a pattern out of each of them and then offset the front l
   </pattern>
 ```
 
-The `<pattern>`'s `height`, `width` and `patternUnit` attributes are extremely important. The first two define the size of the pattern to be repeated, while the last one sets whether these values, as well as the elemets' inside `pattern`, are relative to the global coordinate system or to the element which `pattern` is applied to. It's important to note that with the later, values range from `0` to `1`, where `1` it's equivalent to `100%` and `0.5` is equivalent to `50%`. The `pattern` values in question are `userSpaceOnUse` (the default one), to use the global coordinates system, and `objectBoundingBox`, to use the local ones. For either case, however, the `pattern`'s origin remains the same: in the top left corner of the element it's applied to.
+The `<pattern>`'s `height`, `width` and `patternUnit` attributes are extremely important. The first two define the size of the pattern to be repeated, while the last one sets whether these values, as well as the elemets' inside `<pattern>`, are relative to the global coordinate system or to the element which `<pattern>` is applied to. It's important to note that with the later, values range from `0` to `1`, where `1` it's equivalent to `100%` and `0.5` is equivalent to `50%`. The `patternUnits` values in question are `userSpaceOnUse` (the default one), to use the global coordinates system, and `objectBoundingBox`, to use the local ones.
 
-With all this new information under our belt, we determine that we want the width of our pattern to take the whole with of its container, and that its height should be `45.94`, which is equal to a link's height plus the space between the links. We also want these values to be independent of the container so we make sure to set `patternUnits='userSpaceOnUse'`, even though this is the default value to avoid having issues with some browsers. Then, we center the links horizontally by setting `transform='translate(7 0)'` on the link graphic inside `<patter>`.
+With all this new information under our belt, we determine that we want the width of our pattern to take the whole with of its container, and that its height should be `45.94` pixels, which is equal to a link's height plus the space between the links. We also want these values to be independent of the container so we make sure to set `patternUnits='userSpaceOnUse'`, even though this is the default value to avoid having issues with some browsers. Then, we center the links horizontally by setting `transform='translate(7 0)'` on the link graphic inside `<pattern>`. Finally, we use a `<rect>` with a `width` equal or bigger to `23` pixels, since that's the width of the chains, and a `height` of `100%` to take the full height of the SVG. The reason for this is that we want to use the SVG boundries as a mask and hide out anything outside them, just like we do when using `overflow: hidden;` in CSS. To apply our `<pattern>` on this element, we have to introduce a new attribute: `fill`. Although it's commonly used to `fill` elements with a plain color, it might also be used to reference to a `<pattern>` using the `url(#elementIdName)` we've seen earlier with the `clip-path` attribute.
 
-The result looks like the figure 1 in the following codepen:
+```xml
+...
+  <rect width='23' height='100%' fill='url(#links-profile)'/>
+```
+
+The result looks like the [figure 1][chains pen] in the following codepen:
 
 <p data-height="338" data-theme-id="0" data-slug-hash="xPBapB" data-default-tab="result" data-user="andresangelini" data-embed-version="2" data-pen-title="Making an extensible chain with SVG patterns" class="codepen">See the Pen <a href="https://codepen.io/andresangelini/pen/xPBapB/">Making an extensible chain with SVG patterns</a> by Andrés Angelini (<a href="https://codepen.io/andresangelini">@andresangelini</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async="async" src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
-So far so good, but there is one more thing we need to do. As it is now, the profile links are sticked to the top, and since these ones are meant to be used for the top chains, we want them to stick the bottom as in figure 2. To do that, we just set `y='100%'` on the `<pattern>` itself, then translate its content `8.5` downwards with `transform='translate(0 8.5)'`, and that's it!
+So far so good, but there is one more thing we need to do. As it is now, the profile links are sticked to the top, and since these ones are meant to be used for the top chains, we want them to stick to the bottom as in [figure 2][chains pen]. To do that, we just set `y='100%'` on the `<pattern>` itself, then translate its content `8.5` pixels downwards with `transform='translate(0 8.5)'`, and that's it!
 
 Now we can move onto doing the same with the front links.
 
@@ -279,9 +284,37 @@ Now we can move onto doing the same with the front links.
   <pattern id='links-front' x='0' y='100%' width='100%' height='45.9403662' patternUnits='userSpaceOnUse'>
     <use xlink:href='#link-front' transform='translate(0 8.4927324)'></use>
   </pattern>
+
+  <rect width='23' height='100%' fill='url(#links-front)'/>
 ```
 
-We basically repeat the same process, only this time using the a front link inside the `<pattern>`.
+We basically repeat the same process, only this time using the front link element as the `<pattern>`, as seen in [figure 3][chains pen]. All there is to do now is to move these front links upwards. We determine that the amount should be something around `-23` pixels, so we go ahead and set a new `<rect>` with the same values as the previous one for all atributes except `y`, which we set to be equal to `-23` pixels.
+
+```xml
+...
+  <rect y='-23' width='23' height='100%' fill='url(#links-front)'/>
+```
+
+And... what've just happened here? By looking at [figure 4][chains pen], it seems that the `<pattern>` doesn't "follow" our `<rect>`. Remember that we set `patternUnits` to `userSpaceOnUse`? Well, here we are seeing its effect in action. When we did that we told our `<pattern>` to have its position independent from the element it's referenced to and use its own `x` and `y` attributes. You might ask then why we didn't use `objectBoundingBox` instead, but this wouldn't have worked either because that would have meant all our `<pattern>`'s attributes including the attributes of the elements inside it would have been dependent on the `<rect>` dimensions, and we want the `<pattern>` height to be `45,49` pixels.
+
+Fortunately, the solution is as simple as applying a `transform` attribute like this: `transform='translate('0 -23')'`. Why? Because while `x` and `y` set the original position of an element, `transform` just moves it, including any `pattern` it might reference to, like you see in [figure 5][chains pen].
+
+```xml
+...
+  <rect width='23' height='100%' transform='translate(0 -23)' fill='url(#links-front)'/>
+```
+
+The final result as seen in [figure 6][chains pen] is the simple composition of the two pattern of links combined together.
+
+```xml
+...
+  <symbol id='top-chain'>
+    <rect width='23' height='100%' transform='translate(0 -23)' fill='url(#links-front)'/>
+    <rect width='23' height='100%' fill='url(#links-profile)'/>
+  </symbol>
+```
+
+By wrapping these two up in a `<symbol>` we make the chains reusable, which is exactly what we want since we'll need a total of four.
 
 ### Improving organization with `<defs>`
 
@@ -361,5 +394,6 @@ The pattern you see in my class names is using the [B.E.M.](http://getbem.com/in
 
 
 
-[topChains]: https://cdn.rawgit.com/andresangelini/f3415703d9665bc6d2e0fcdefd90c252/raw/8a9d7f56730094d681762638c76db1df3ffdd538/topChains.svg "Top chains"
-[bottomChains]: https://cdn.rawgit.com/andresangelini/96fc2fe2937f63997f972f203509bb28/raw/04eb599bf86ffce922d53071c8a10013743a3436/bottomChains.svg "Bottom chains"
+[top chains svg]: https://cdn.rawgit.com/andresangelini/f3415703d9665bc6d2e0fcdefd90c252/raw/8a9d7f56730094d681762638c76db1df3ffdd538/top chains svg.svg "Top chains"
+[bottom chains svg]: https://cdn.rawgit.com/andresangelini/96fc2fe2937f63997f972f203509bb28/raw/04eb599bf86ffce922d53071c8a10013743a3436/bottom chains svg.svg "Bottom chains"
+[chains pen]: https://codepen.io/andresangelini/pen/xPBapB/
