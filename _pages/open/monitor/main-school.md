@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Проведення ДПА в основній школі"
-permalink: /open/monitor/first-school/
+permalink: /open/monitor/main-school/
 sidebar:
   nav: "sidebar-menu"
 ---
