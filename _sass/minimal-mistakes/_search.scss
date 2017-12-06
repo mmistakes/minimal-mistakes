@@ -32,12 +32,8 @@
 .search-content {
   display: none;
   visibility: hidden;
-  opacity: 0;
   padding-top: 1em;
   padding-bottom: 1em;
-  background: $background-color;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
 
   &__inner-wrap {
     width: 100%;
@@ -45,6 +41,10 @@
     margin-right: auto;
     padding-left: 1em;
     padding-right: 1em;
+    -webkit-animation: $intro-transition;
+    animation: $intro-transition;
+    -webkit-animation-delay: 0.15s;
+    animation-delay: 0.15s;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -73,7 +73,6 @@
   &.open {
     display: block;
     visibility: visible;
-    opacity: 1;
 
     &::after {
       content: "";
