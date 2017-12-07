@@ -55,6 +55,8 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
+search                   : true # true, false (default)
+
 # SEO Related
 google_site_verification : "UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y" # Replace this with your ID, or delete
 bing_site_verification   :

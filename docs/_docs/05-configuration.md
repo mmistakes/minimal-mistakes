@@ -457,6 +457,16 @@ atom_feed:
 **Note:** By default the site feed is linked in two locations: inside the [`<head>` element](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/head.html) and at the bottom of every page in the [site footer](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/footer.html). 
 {: .notice--info}
 
+### Site Search
+
+Enable basic site search powered by [Lunr](https://lunrjs.com/) by adding the following to `_config.yml`:
+
+```yaml
+search: true
+```
+
+![masthead search example]({{ "/assets/images/masthead-search.gif" | absolute_url }})
+
 ### SEO, Social Sharing, and Analytics Settings
 
 All optional, but a good idea to take the time setting up to improve SEO and links shared from the site.
