@@ -636,6 +636,7 @@ author:
   bio    : "My awesome biography constrained to a sentence or two goes here."
   email  : # optional
   uri    : "http://your-site.com"
+  home   : # null (default), "absolute or relative url to link to author home"
 ```
 
 Social media links are all optional, include the ones you want visible. In most cases you just need to add the username. If you're unsure double check `_includes/author-profile.html` to see how the URL is constructed.

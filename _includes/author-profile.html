@@ -10,29 +10,27 @@
     <div class="author__avatar">
       {% if author.avatar contains "://" %}
         {% assign author_src = author.avatar %}
-        {% assign author_class = "" %}
       {% else %}
         {% assign author_src = author.avatar | absolute_url %}
-        {% assign author_class = "author__avatar" %}
       {% endif %}
 
-      {% if author.linkback %}
-        {% if author.linkback contains "://" %}
-          {% assign author_link = author.linkback %}
+      {% if author.home %}
+        {% if author.home contains "://" %}
+          {% assign author_link = author.home %}
         {% else %}
-          {% assign author_link = author.linkback | absolute_url %}
+          {% assign author_link = author.home | absolute_url %}
         {% endif %}
         <a href="{{ author_link }}">
-          <img src="{{ author_src }}" class="{{ author_class }}" alt="{{ author.name }}" itemprop="image">
+          <img src="{{ author_src }}" alt="{{ author.name }}" itemprop="image">
         </a>
       {% else %}
-        <img src="{{ author_src }}" class="{{ author_class }}" alt="{{ author.name }}" itemprop="image">
+        <img src="{{ author_src }}" alt="{{ author.name }}" itemprop="image">
       {% endif %}
     </div>
   {% endif %}
 
   <div class="author__content">
-    {% if author.linkback %}
+    {% if author.home %}
       <a href="{{ author_link }}"><h3 class="author__name" itemprop="name">{{ author.name }}</h3></a>
     {% else %}
       <h3 class="author__name" itemprop="name">{{ author.name }}</h3>
