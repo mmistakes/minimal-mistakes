@@ -644,13 +644,19 @@ The `single` layout has an option to enable social links at the bottom of posts 
 
 To enable these links add `share: true` to a post or page's YAML Front Matter or use a [default](https://jekyllrb.com/docs/configuration/#front-matter-defaults) in your `_config.yml` to apply more globally.
 
-If you'd like to add, remove, or change the order of these default links you can do so by editing [`_includes/social-share.html`](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/social-share.html).
+If you'd like to remove or change the order of these default links you can do so by editing [`_includes/social-share.html`](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/social-share.html).
 
 Let's say you wanted to replace the Google+ button with a Reddit one. Simply replace the HTML with the following:
 
 ```html
 {% raw %}<a href="https://www.reddit.com/submit?url={{ page.url | absolute_url }}&title={{ page.title }}" class="btn" title="{{ site.data.ui-text[site.locale].share_on_label }} Reddit"><i class="fa fa-fw fa-reddit" aria-hidden="true"></i><span> Reddit</span></a>{% endraw %}
 ```
+
+If you'd like to add more links you can either edit [`_includes/social-share.html`](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/social-share.html) directly or you can add additional links or customization to [`_includes/social-share-custom-links.html`](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/social-hare-custom-links.html) and add your link there.
+
+**Please note:** Links added here will appear after the ones in [`_includes/social-share.html`](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/social-share.html). If you'd like to change the order of appearance you'll need to edit that file directly.
+{: .notice--info}
+
 
 The important parts to change are:
 
