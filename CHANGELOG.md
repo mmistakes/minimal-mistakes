@@ -10,7 +10,6 @@
 * Add optional `description` key to masthead links for clarifying their purpose with the `title` attribute. [#1380](https://github.com/mmistakes/minimal-mistakes/pull/1380)
 * Incorporate site search into masthead. [#1383](https://github.com/mmistakes/minimal-mistakes/pull/1383)
 * Update gem dependencies. [#1388](https://github.com/mmistakes/minimal-mistakes/pull/1388)
-* Fix zh-HK UI text to point to Traditional Chinese. [#1374](https://github.com/mmistakes/minimal-mistakes/issues/1374) [#1389](https://github.com/mmistakes/minimal-mistakes/pull/1389)
 
 ### Bug Fixes
 
@@ -19,6 +18,7 @@
 * Rename Naver verification `naver_site_verification` to be consistent with other site variables.
 * Fix button class in "Post with Table Of Contents" demo content. [#1368](https://github.com/mmistakes/minimal-mistakes/pull/1368)
 * Fix capitalization of WordPress in documentation. [#1381](https://github.com/mmistakes/minimal-mistakes/pull/1381)
+* Fix zh-HK UI text to point to Traditional Chinese. [#1374](https://github.com/mmistakes/minimal-mistakes/issues/1374) [#1389](https://github.com/mmistakes/minimal-mistakes/pull/1389)
 
 ## [4.7.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.7.1)
 
