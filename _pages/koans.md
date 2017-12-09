@@ -5,15 +5,9 @@ excerpt: "The student group project kōans for the ShanghAI Lectures."
 permalink: /koans/
 ---
 
-**2016 projects**
+**2017 projects**
 
-  * Group 9: 
-    * <a href="https://github.com/SwarmBehavior"><img src="/images/enemy_food.png"/></a> [GitHub](https://github.com/SwarmBehavior) [YouTube](https://youtu.be/S0-sPr4_bp8)
-    * Kōan 9: “Useful” robot collaboration from local rules 
-    * Raul Sosa San Frutos, Irene Cortés Lafuente, Adrian Hernandez Gimeno 
-  * Under construction...
-
-**Timetable** (subject to change)
+**Timetable** 
 
   * 11 December: Kōans published
   * 18 December: **Deadline**, register and select a Kōan
@@ -29,7 +23,7 @@ permalink: /koans/
     * Ideas, plans and current progress 
     * Graded by your tutor(s), send via email
   * Group presentations (75%)
-    *  Cisco WebEX or Google Hangouts or similar, we are flexible
+    * Cisco WebEX or Google Hangouts, WeChat or similar, we are flexible
     * Evaluated by a presentation panel
 
 
