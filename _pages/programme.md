@@ -12,6 +12,7 @@ permalink: /programme/
 * 2017-10-26  09:30 to 11:00 CEST 
 * *Embodied Intelligence in Natural and Artificial Agents: Robotics is coming of age* 
 * Lecturer: Fabio Bonsignorio
+* The Lecture's PDF is [here](https://shanghai-lectures.github.io/slides/Lecture1_2017Oct26IntroPDF.pdf).
 * Site introductions 
 
 ### Lecture 2: Towards a Theory of Embodied Intelligence
