@@ -15,11 +15,11 @@ permalink: /koans/
 
 **Timetable** (subject to change)
 
-  * 10 November: Kōans published
-  * 15 November: **Deadline**, register and select a Kōan
-  * 17 November: Student groups published
-  * 22 December (Extended): **Deadline**, preliminary design report
-  * End of January: **Group presentations**
+  * 11 December: Kōans published
+  * 18 December: **Deadline**, register and select a Kōan
+  * 21 December: Student groups published
+  * 15 January: **Deadline**, preliminary design report
+  * End of January until Mid March: **Group presentations**
   
   
 **Grading scheme**
@@ -29,12 +29,12 @@ permalink: /koans/
     * Ideas, plans and current progress 
     * Graded by your tutor(s), send via email
   * Group presentations (75%)
-    * Vidyo or Google Hangouts or similar, we are flexible
+    *  Cisco WebEX or Google Hangouts or similar, we are flexible
     * Evaluated by a presentation panel
 
 
 **Resources**
 
-See the 2016 intro presentation "Group Project Kōans" [here](https://docs.google.com/presentation/d/1gfiMubkEwLBoKpMSd-DNq-61g0BOI_d6F8CeacI_pso/edit?usp=sharing). Pdf version [here](https://shanghai-lectures.github.io/slides/shail_koans_2016.pdf).
+See the 2017 intro presentation "Group Project Kōans"  Pdf version [here](https://shanghai-lectures.github.io/slides/SHAIL2017_KoansPDF.pdf).
 
-See the 2015 kōans [here](https://shanghai-lectures.github.io/archives/koans.html).
+
