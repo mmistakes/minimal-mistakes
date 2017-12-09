@@ -19,6 +19,7 @@ permalink: /programme/
 * 2017-11-02 09:30 to 11:00 CET 
 * *Embodiment: concept and models* 
 * Lecturer: Fabio Bonsignorio
+* The Lecture's PDF is [here](https://shanghai-lectures.github.io/slides/Lecture2_2017Nov2EmbodimentPDF.pdf).
 * Guest lecture by Josh Bongard: 
   * Vermont Complex Systems Center, University of Vermont, USA
   * *"Evolving and developing soft robots"*
