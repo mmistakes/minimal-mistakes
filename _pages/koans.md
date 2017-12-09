@@ -22,6 +22,7 @@ permalink: /koans/
     * Repository Wiki on e.g. GitHub/GitCafé (preferred) or 4 page (max) report 
     * Ideas, plans and current progress 
     * Graded by your tutor(s), send via email
+    
   * Group presentations (75%)
     * Cisco WebEX or Google Hangouts, WeChat or similar, we are flexible
     * Evaluated by a presentation panel
