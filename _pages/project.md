@@ -10,7 +10,9 @@ geometry: margin=3cm
 **Online Submodular Optimization in Network Games (Unfinished draft)**: [*Online Submodular Optimization in Network Games*]({{ "/pdfs/Submodular Network Game.pdf" | absolute_url }}). Currently an unfinished draft applying online submodular optimization (both maximization and minimization) to competitive cascade games. 
 
 ---
-## Class Projects, Expository Papers
+## Class Projects, Code, Expository Papers
+
+**Robust Adversarial Reinforcement Learning**: [*Report*]({{ "/pdfs/RARL.pdf" | absolute_url }}), [Full Code](https://github.com/Jekyll1021/RARL). Report for [CS 294-131 Special Topics in Deep Learning](https://berkeley-deep-learning.github.io/cs294-131-f17/). Re-implementation of [Robust Adversarial Reinforcement Learning](http://proceedings.mlr.press/v70/pinto17a/pinto17a.pdf), with algorithmic game theory analysis. Experiments were extended to Berkeley DeepDrive LIDAR data (for pedestrian setting training) and image dataset CIFAR-10. 
 
 **Probabilistically Checkable Proofs Final Paper**: [*PCP in Hardness of Approximation Proofs*]({{ "/pdfs/PCP Project.pdf" | absolute_url }}). Summary of PCP results used to prove the inapproximability of monotone submodular optimization as well as MAX-CSP problems, such as the MAX-CUT problem, for [CS 294 - Probabilistically Checkable and Interactive Proof Systems](https://people.eecs.berkeley.edu/~alexch/classes/CS294-S2017.html)
 
