@@ -28,6 +28,7 @@ permalink: /programme/
 * 2017-11-09 09:30 to 11:00 CET 
 * *Intelligent Systems: Properties and Principles* 
 * Lecturer: Fabio Bonsignorio
+* The Lecture's PDF is [here](https://shanghai-lectures.github.io/slides/Lecture3_2017Nov9PrinciplesPDF.pdf).
 * Guest lecture by Olivier Michel:
   * Cyberbotics, Lausanne, Switzerland
   * *"Robotbenchmark: a web-based robotics simulation to compare control algorithms on standard benchmarks"*
