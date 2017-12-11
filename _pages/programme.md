@@ -45,27 +45,33 @@ permalink: /programme/
 * Guest Lecture by Nicolas Rojas:
   * Imperial College, London, UK
   * *"Enhancing in-hand manipulation via mechanical intelligence"* 
+  *The Lecture's PDF is [here](https://shanghai-lectures.github.io/slides/OlivierMichel2017Nov9RobotBenchPDF.pdf).
 
 ### Lecture 5: Morphological Computation, Self-Organization of Behaviors and Adaptive Morphologies
 * 2017-11-23 09:30 to 11:00 CET
 * *Morphological Computation, Self-Organization of Behaviors and Adaptive Morphologies* 
 * Lecturer: Fabio Bonsignorio
+*The Lecture's PDF is [here](https://shanghai-lectures.github.io/slides/Lecture5_2017Nov23McPDF.pdf).
 * Guest Lecture by Keyan Ghazi-Zahedi
   * Max Planck Institute for Mathematics, Berlin, Germany
   * *"Quantifying Morphological Computation"*  
+  *The Lecture's PDF is [here](https://shanghai-lectures.github.io/slides/Keyan Ghazi-Zahedi2017Nov23QMC.pdf).
 
 ### Lecture 6: Collective Intelligence: Cognition from Interaction
 * 2017-11-30 09:30 to 11:00 CET 
 * *Emerging Intelligence: Cognition from Interaction, Development and Evolution * 
 * Lecturer: Fabio Bonsignorio
+*The Lecture's PDF is [here](https://shanghai-lectures.github.io/slides/Lecture6_2017Nov30EmergingPDF.pdf).
 * Guest Lecture by Martin Stoelen:
   * University of Plymouth, Plymouth, UK
   * *"Co-developing brain and body, in the field"* 
+  *The Lecture's PDF is [here](https://shanghai-lectures.github.io/slides/shail_nov2017, Martin.F.Stoelen.pdf).
   
 ### Lecture 7: The Road Ahead
 * 2017-12-7  09:30 to 11:00 CET
 * *The Road to a New Paradigm Robotics* 
 * Lecturer: Fabio Bonsignorio
+ *The Lecture's PDF is [here](https://shanghai-lectures.github.io/slides/Lecture7_2017Dec7TheRoadAheadPDF.pdf).
 * Young Researcher Guest Lecture by Marcello Calisti:
   * The BioRobotics Institute, SSSA, Pisa, Italy
   * *"Bioinspired approaches to design and control of mobile soft robots"* 
