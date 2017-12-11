@@ -21,6 +21,6 @@ Base Price: The base price for that SKU
 Markup: A markup, in percent (ie. 120) or dollars (ie. 5)
 Markup Type: Specify if markup is percent or dollars
 
-Do not include headers in your CSV file. If the upload fails, doulbe check the format.
+Do not include headers in your CSV file. If the upload fails, double check the format.
 
 If you need any help loading in price lists, email [support@convictional.com](mailto:support@convictional.com)
