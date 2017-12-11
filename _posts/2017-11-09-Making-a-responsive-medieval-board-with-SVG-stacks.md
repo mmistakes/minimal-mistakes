@@ -14,6 +14,9 @@ When planning to do the rebuild, one of things that bugged my mind the most were
 
 ## The design
 
+<p data-height="265" data-theme-id="0" data-slug-hash="EXjqRv" data-default-tab="result" data-user="andresangelini" data-embed-version="2" data-pen-title="Medieval Board" class="codepen">See the Pen <a href="https://codepen.io/andresangelini/pen/EXjqRv/">Medieval Board</a> by Andrés Angelini (<a href="https://codepen.io/andresangelini">@andresangelini</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async="async" src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
 As you can see in the concept design above, the overall idea is to have both, the menu buttons and the menu sections themselves, use the medieval style board but with some minor differences for each type. Since I want to make them as reusable as possible, I want both types to have names that are not tied to their specific functions. Insted, I opted for naming them according to their appearence.
 
 ### Type 1: bulletin board
@@ -209,7 +212,7 @@ At a glance, we can clearly see there are two main pieces: a link seen from the 
 <p data-height="265" data-theme-id="0" data-slug-hash="vWPRxz" data-default-tab="result" data-user="andresangelini" data-embed-version="2" data-pen-title="chain link composition" class="codepen">See the Pen <a href="https://codepen.io/andresangelini/pen/vWPRxz/">chain link composition</a> by Andrés Angelini (<a href="https://codepen.io/andresangelini">@andresangelini</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async="async" src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
-So, if were to split the chains up into their basic shapes, this is what we'd get:
+So, if were to split the chains up into their basic shapes, this is what we'd had:
 
 ```xml
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -234,7 +237,7 @@ So, if were to split the chains up into their basic shapes, this is what we'd ge
 </svg>
 ```
 
-Please note that I have shortened the `d` attribute for simplicity. Check the Codepen snippet down below to see the complete version. Anyways, we have a total of six basic shapes; one rect with rounded corners and five paths made on a graphic application. Now we'll use these new shapes to make two compositions representing each link.
+Please note that I have shortened the `d` attribute for simplicity. Check the Codepen snippet down below to see the complete version. Anyways, we have a total of six basic shapes; one rect with rounded corners and five paths made on a graphical application, in my case. Now we'll use these new shapes to make two compositions representing each link.
 
 ```xml
 ...
@@ -315,6 +318,15 @@ The final result as seen in [figure 6][chains pen] is the simple composition of 
 ```
 
 By wrapping these two up in a `<symbol>` we make the chains reusable, which is exactly what we want since we'll need a total of four.
+
+Let's try another application of `<pattern>`. This time, we'll make the wooden texture of the board that we mentioned earlier. Again, we start off by identifying the basic shapes that make out our composition.
+
+```xml
+...
+  <path d='m205.37 133.88v568h568v-568z' fill='#a2703f'/>
+  <use xlink:href='#bs-grooves' fill='#5f2301'/>
+  <use xlink:href='#bs-grooves' fill='#746b2e' transform='translate(0 2.8421)'/>
+```
 
 ### Improving organization with `<defs>`
 
