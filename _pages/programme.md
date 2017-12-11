@@ -37,6 +37,7 @@ permalink: /programme/
 * 2017-11-16 09:30 to 11:00 CET 
 * *Evolution: Cognition from Scratch* 
 * Lecturer: Fabio Bonsignorio
+* The Lecture's PDF is [here](https://shanghai-lectures.github.io/slides/Lecture4_2017Nov16EvolutionCognitionFromScratchPDF.pdf).
 * Young Researcher Guest Lecture by Francesco Corucci:
   * 3D Nextech srl, Livorno, Italy
   * *"Evolutionary Developmental Soft Robotics: Towards Adaptive and Intelligent Machines Following Nature's Approach to Design"* 
