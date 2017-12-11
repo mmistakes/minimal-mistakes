@@ -321,12 +321,42 @@ By wrapping these two up in a `<symbol>` we make the chains reusable, which is e
 
 Let's try another application of `<pattern>`. This time, we'll make the wooden texture of the board that we mentioned earlier. Again, we start off by identifying the basic shapes that make out our composition.
 
+- A background filled with a plain color.
+- The lit area of the planks' grooves.
+- The unlit area of the planks' grooves.
+
+As we can see, the last two ones are actually the same with a different color, so we could just make a copy for each and then assign the colors.
+
 ```xml
 ...
-  <path d='m205.37 133.88v568h568v-568z' fill='#a2703f'/>
-  <use xlink:href='#bs-grooves' fill='#5f2301'/>
-  <use xlink:href='#bs-grooves' fill='#746b2e' transform='translate(0 2.8421)'/>
+  <symbol>
+    <path id='grooves' d='m205.36 680.53c158.58...' opacity='0.5' stroke-width='2.8421' fill='none'/>
+  </symbol>
 ```
+
+Then, we make our new pattern but using a group this time to apply a transform to all its contents at the same time.
+
+```xml
+...
+  <pattern id='planks' x='0' y='0' width='568' height='568' patternUnits='userSpaceOnUse'>
+    <g transform='translate(-205.28 -133.88)'>
+      <path d='m205.37 133.88v568h568v-568z' fill='#a2703f'/>
+      <use xlink:href='#grooves' fill='#746b2e'/>
+      <use xlink:href='#grooves' fill='#2a260f' transform='translate(0 2.8421)'/>
+    </g>
+  </pattern>
+```
+
+Finnaly, we apply this new `<pattern>` to a simple `<rect>`.
+
+```xml
+...
+  <rect width='100%' height='100%' fill='url(#planks)'/>
+```
+
+The end result looks like this:
+
+
 
 ### Improving organization with `<defs>`
 
