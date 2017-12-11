@@ -14,6 +14,9 @@ When planning to do the rebuild, one of things that bugged my mind the most were
 
 ## The design
 
+<p data-height="265" data-theme-id="0" data-slug-hash="EXjqRv" data-default-tab="result" data-user="andresangelini" data-embed-version="2" data-pen-title="Medieval Board" class="codepen">See the Pen <a href="https://codepen.io/andresangelini/pen/EXjqRv/">Medieval Board</a> by Andrés Angelini (<a href="https://codepen.io/andresangelini">@andresangelini</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async="async" src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
 As you can see in the concept design above, the overall idea is to have both, the menu buttons and the menu sections themselves, use the medieval style board but with some minor differences for each type. Since I want to make them as reusable as possible, I want both types to have names that are not tied to their specific functions. Insted, I opted for naming them according to their appearence.
 
 ### Type 1: bulletin board
@@ -234,7 +237,7 @@ So, if were to split the chains up into their basic shapes, this is what we'd ha
 </svg>
 ```
 
-Please note that I have shortened the `d` attribute for simplicity. Check the Codepen snippet down below to see the complete version. Anyways, we have a total of six basic shapes; one rect with rounded corners and five paths made on Inkscpate, in my case. Now we'll use these new shapes to make two compositions representing each link.
+Please note that I have shortened the `d` attribute for simplicity. Check the Codepen snippet down below to see the complete version. Anyways, we have a total of six basic shapes; one rect with rounded corners and five paths made on a graphical application, in my case. Now we'll use these new shapes to make two compositions representing each link.
 
 ```xml
 ...
@@ -263,7 +266,7 @@ Now, let's try to make a pattern out of each of them and then offset the front l
 
 The `<pattern>`'s `height`, `width` and `patternUnit` attributes are extremely important. The first two define the size of the pattern to be repeated, while the last one sets whether these values, as well as the elemets' inside `<pattern>`, are relative to the global coordinate system or to the element which `<pattern>` is applied to. It's important to note that with the later, values range from `0` to `1`, where `1` it's equivalent to `100%` and `0.5` is equivalent to `50%`. The `patternUnits` values in question are `userSpaceOnUse` (the default one), to use the global coordinates system, and `objectBoundingBox`, to use the local ones.
 
-With all this new information under our belt, we determine that we want the width of our pattern to take the whole with of its container, and that its height should be `45.94` pixels, which is equal to a link's height plus the space between the links. We also want these values to be independent of the container so we make sure to set `patternUnits='userSpaceOnUse'`, even though this is the default value to avoid having issues with some browsers. Then, we center the links horizontally by setting `transform='translate(7 0)'` on the link graphic inside `<pattern>`. Finally, we use a `<rect>` with a `width` equal or bigger to `23` pixels, since that's the width of the chains, and a `height` of `100%` to take the full height of the SVG. The reason for this is that we want to use the SVG boundries as a mask and hide out anything outside them, just like we do when using `overflow: hidden;` in CSS. To apply our `<pattern>` on this element, we have to introduce a new attribute: `fill`. Although it's commonly used to `fill` elements with a plain color, it might also be used to reference to a `<pattern>` using the `url(#elementIdName)` we've seen earlier with the `clip-path` attribute.
+With all this new information under our belt, we determine that we want the width of our pattern to take the whole width of its container, and that its height should be `45.94` pixels, which is equal to a link's height plus the space between the links. We also want these values to be independent of the container so we make sure to set `patternUnits='userSpaceOnUse'`, even though this is the default value to avoid having issues with some browsers. Then, we center the links horizontally by setting `transform='translate(7 0)'` on the link graphic inside `<pattern>`. Finally, we use a `<rect>` with a `width` equal or bigger to `23` pixels, since that's the width of the chains, and a `height` of `100%` to take the full height of the SVG. The reason for this is that we want to use the SVG boundries as a mask and hide out anything outside them, just like we do when using `overflow: hidden;` in CSS. To apply our `<pattern>` on this element, we have to introduce a new attribute: `fill`. Although it's commonly used to `fill` elements with a plain color, it might also be used to reference to a `<pattern>` using the `url(#elementIdName)` we've seen earlier with the `clip-path` attribute.
 
 ```xml
 ...
@@ -315,6 +318,15 @@ The final result as seen in [figure 6][chains pen] is the simple composition of 
 ```
 
 By wrapping these two up in a `<symbol>` we make the chains reusable, which is exactly what we want since we'll need a total of four.
+
+Let's try another application of `<pattern>`. This time, we'll make the wooden texture of the board that we mentioned earlier. Again, we start off by identifying the basic shapes that make out our composition.
+
+```xml
+...
+  <path d='m205.37 133.88v568h568v-568z' fill='#a2703f'/>
+  <use xlink:href='#bs-grooves' fill='#5f2301'/>
+  <use xlink:href='#bs-grooves' fill='#746b2e' transform='translate(0 2.8421)'/>
+```
 
 ### Improving organization with `<defs>`
 
