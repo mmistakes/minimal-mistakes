@@ -32,6 +32,7 @@ permalink: /programme/
 * Guest lecture by Olivier Michel:
   * Cyberbotics, Lausanne, Switzerland
   * *"Robotbenchmark: a web-based robotics simulation to compare control algorithms on standard benchmarks"*
+  The Lecture's PDF is [here](https://shanghai-lectures.github.io/slides/OlivierMichel2017Nov9RobotBenchPDF.pdf).
 
 ### Lecture 4: Evolution: Cognition from Scratch
 * 2017-11-16 09:30 to 11:00 CET 
