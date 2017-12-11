@@ -4,9 +4,15 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-12-07T19:10:10-05:00
+last_modified_at: 2017-12-11T12:39:02-05:00
 toc: true
 ---
+
+## Unreleased
+
+### Enhancements
+
+* Add linkback functionality to author avatar and name in sidebar via `author.home`. [#1386](https://github.com/mmistakes/minimal-mistakes/pull/1386)
 
 ## [4.8.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.8.0)
 

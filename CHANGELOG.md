@@ -1,3 +1,9 @@
+## Unreleased
+
+### Enhancements
+
+* Add linkback functionality to author avatar and name in sidebar via `author.home`. [#1386](https://github.com/mmistakes/minimal-mistakes/pull/1386)
+
 ## [4.8.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.8.0)
 
 ### Enhancements
