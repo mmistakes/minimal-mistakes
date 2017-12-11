@@ -209,7 +209,7 @@ At a glance, we can clearly see there are two main pieces: a link seen from the 
 <p data-height="265" data-theme-id="0" data-slug-hash="vWPRxz" data-default-tab="result" data-user="andresangelini" data-embed-version="2" data-pen-title="chain link composition" class="codepen">See the Pen <a href="https://codepen.io/andresangelini/pen/vWPRxz/">chain link composition</a> by Andrés Angelini (<a href="https://codepen.io/andresangelini">@andresangelini</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async="async" src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
-So, if were to split the chains up into their basic shapes, this is what we'd had:
+So, if were to split the chains up into their basic shapes, this is what we'd get:
 
 ```xml
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -234,7 +234,7 @@ So, if were to split the chains up into their basic shapes, this is what we'd ha
 </svg>
 ```
 
-Please note that I have shortened the `d` attribute for simplicity. Check the Codepen snippet down below to see the complete version. Anyways, we have a total of six basic shapes; one rect with rounded corners and five paths made on Inkscpate, in my case. Now we'll use these new shapes to make two compositions representing each link.
+Please note that I have shortened the `d` attribute for simplicity. Check the Codepen snippet down below to see the complete version. Anyways, we have a total of six basic shapes; one rect with rounded corners and five paths made on a graphic application. Now we'll use these new shapes to make two compositions representing each link.
 
 ```xml
 ...
@@ -263,7 +263,7 @@ Now, let's try to make a pattern out of each of them and then offset the front l
 
 The `<pattern>`'s `height`, `width` and `patternUnit` attributes are extremely important. The first two define the size of the pattern to be repeated, while the last one sets whether these values, as well as the elemets' inside `<pattern>`, are relative to the global coordinate system or to the element which `<pattern>` is applied to. It's important to note that with the later, values range from `0` to `1`, where `1` it's equivalent to `100%` and `0.5` is equivalent to `50%`. The `patternUnits` values in question are `userSpaceOnUse` (the default one), to use the global coordinates system, and `objectBoundingBox`, to use the local ones.
 
-With all this new information under our belt, we determine that we want the width of our pattern to take the whole with of its container, and that its height should be `45.94` pixels, which is equal to a link's height plus the space between the links. We also want these values to be independent of the container so we make sure to set `patternUnits='userSpaceOnUse'`, even though this is the default value to avoid having issues with some browsers. Then, we center the links horizontally by setting `transform='translate(7 0)'` on the link graphic inside `<pattern>`. Finally, we use a `<rect>` with a `width` equal or bigger to `23` pixels, since that's the width of the chains, and a `height` of `100%` to take the full height of the SVG. The reason for this is that we want to use the SVG boundries as a mask and hide out anything outside them, just like we do when using `overflow: hidden;` in CSS. To apply our `<pattern>` on this element, we have to introduce a new attribute: `fill`. Although it's commonly used to `fill` elements with a plain color, it might also be used to reference to a `<pattern>` using the `url(#elementIdName)` we've seen earlier with the `clip-path` attribute.
+With all this new information under our belt, we determine that we want the width of our pattern to take the whole width of its container, and that its height should be `45.94` pixels, which is equal to a link's height plus the space between the links. We also want these values to be independent of the container so we make sure to set `patternUnits='userSpaceOnUse'`, even though this is the default value to avoid having issues with some browsers. Then, we center the links horizontally by setting `transform='translate(7 0)'` on the link graphic inside `<pattern>`. Finally, we use a `<rect>` with a `width` equal or bigger to `23` pixels, since that's the width of the chains, and a `height` of `100%` to take the full height of the SVG. The reason for this is that we want to use the SVG boundries as a mask and hide out anything outside them, just like we do when using `overflow: hidden;` in CSS. To apply our `<pattern>` on this element, we have to introduce a new attribute: `fill`. Although it's commonly used to `fill` elements with a plain color, it might also be used to reference to a `<pattern>` using the `url(#elementIdName)` we've seen earlier with the `clip-path` attribute.
 
 ```xml
 ...
