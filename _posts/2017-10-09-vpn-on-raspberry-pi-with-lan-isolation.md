@@ -16,6 +16,8 @@ This guide walks through setting up a VPN server (OpenVPN) on a Raspberry Pi usi
 
 {% include figure image_path="/assets/images/VPN_LAN_isolation.png" alt="VPN LAN Isolation Diagram" caption="Diagram of VPN with LAN isolation using Raspberry PI" %}
 
+**Updated:** This post has been updated to include instructions for whitelisting IPs for specific clients.
+{: .notice--success}
 
 **Note:** These packages change daily. This was built/documented in Fall 2017 so your mileage may vary.
 {: .notice--info}
@@ -88,6 +90,54 @@ sudo iptables -A FORWARD -s 10.8.0.0/24 -d 192.168.0.0/24 -j DROP
 ### Save iptables configuration
 If you want to have the iptables configuration load by default, then follow the instructions here: [Persistent Iptables Rules in Ubuntu 16.04 Xenial ](http://dev-notes.eu/2016/08/persistent-iptables-rules-in-ubuntu-16-04-xenial-xerus/)
 
+### Whitelist device for VPN LAN access
+There are cases where you may want to allow access to the LAN from certain devices. For you example, you may want your laptop to have unrestricted access while limiting any other users. Here's what I did, but Marin Nikolov has a [great post](http://dnaeon.github.io/static-ip-addresses-in-openvpn/) explaining the details.
+
+Create the client config directory to store client-specific settings.
+```bash
+sudo mkdir /etc/openvpn/ccd
+```
+Create a file in that directory with the same name as the profile you're wanting to whitelist. For example, if you did a ``pivpn add foo``, then create a file named ``foo`` in the ccd directory.
+
+In the file, add the following line:
+```bash
+ifconfig-push <IP-to-whitelist> <subnet mask>
+```
+Where ``<IP-to-whitelist>`` is the openvpn IP you want to reserve for your specific client. For instance, if openvpn is assigning IPs in the 10.8.0.0/24 range, then you might pick 10.8.0.50 for your client. So it would look like this:
+```bash
+ifconfig-push 10.8.0.50 255.255.255.0
+```
+Now add the directory to the openvpn configuration so it knows to look there. Edit ```/etc/openvpn/server.conf``` and add the following line:
+```bash
+client-config-dir /etc/openvpn/ccd
+```
+
+Now we have to make sure the client gets the same IP address each time. Create a new file under the ``/etc/openvpn/`` directory called ``ipp.txt`` and add the following line to it.
+```bash
+<profile name of client>,<IP-to-assign>
+```
+So in our example, it would be:
+```bash
+foo,10.8.0.50
+```
+
+Now make sure openvpn knows about this by adding the following line to ``/etc/openvpn/server.conf``:
+```bash
+ifconfig-pool-persist /etc/openvpn/ipp.txt
+```
+
+Okay, let's restart openvpn now to put the changes into effect:
+```bash
+$ sudo service openvpn restart
+```
+
+Don't forget to add this whitelisted IP address to your iptables rules:
+```bash
+$ sudo iptables -I FORWARD <position num> -s 10.8.0.50 -d 192.168.0.0/24 -j ACCEPT
+```
+
+And following the instructions above, you can persist these firewall changes.
+
 ## Conclusion
 Okay. That's it. You should now have a personal VPN hosted in your LAN that prevents VPN traffic from LAN access.
 
@@ -101,3 +151,4 @@ Okay. That's it. You should now have a personal VPN hosted in your LAN that prev
 * <https://tecadmin.net/enable-logging-in-iptables-on-linux/#>
 * <http://dev-notes.eu/2016/08/persistent-iptables-rules-in-ubuntu-16-04-xenial-xerus/>
 * Awesome diagram built using <https://www.draw.io/>
+* <http://dnaeon.github.io/static-ip-addresses-in-openvpn/>
