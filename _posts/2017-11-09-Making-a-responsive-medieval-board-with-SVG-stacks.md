@@ -329,22 +329,21 @@ As we can see, the last two ones are actually the same with a different color, s
 
 ```xml
 ...
-  <symbol>
-    <path id='grooves' d='m205.36 680.53c158.58...' opacity='0.5' stroke-width='2.8421' fill='none'/>
+  <symbol id='grooves'>
+    <path d='m205.36 680.53c158.58...' opacity='0.5' stroke-width='2.8421' fill='none'/>
   </symbol>
 ```
 
-Then, we make our new pattern but using a group this time to apply a transform to all its contents at the same time.
+Then, we make our new pattern and add a path with a shape of a rectangule to set a background color. We also use two copies of the planks grooves, each one with
+a different color and we move the last one a little bit downwards.
 
 ```xml
 ...
-  <pattern id='planks' x='0' y='0' width='568' height='568' patternUnits='userSpaceOnUse'>
-    <g transform='translate(-205.28 -133.88)'>
-      <path d='m205.37 133.88v568h568v-568z' fill='#a2703f'/>
-      <use xlink:href='#grooves' fill='#746b2e'/>
-      <use xlink:href='#grooves' fill='#2a260f' transform='translate(0 2.8421)'/>
-    </g>
-  </pattern>
+<pattern id='planks' x='0' y='0' width='568' height='568' patternUnits='userSpaceOnUse'>
+  <path d='m205.37 133.88v568h568v-568z' fill='#a2703f' transform='translate(-205.28 -133.88)'/>
+  <use xlink:href='#grooves' stroke='#5f2301'/>
+  <use xlink:href='#grooves' stroke='#b98f65' transform='translate(0 2.8421)'/>
+</pattern>
 ```
 
 Finnaly, we apply this new `<pattern>` to a simple `<rect>`.
@@ -356,7 +355,52 @@ Finnaly, we apply this new `<pattern>` to a simple `<rect>`.
 
 The end result looks like this:
 
+<p data-height="265" data-theme-id="0" data-slug-hash="JMPQpg" data-default-tab="html,result" data-user="andresangelini" data-embed-version="2" data-pen-title="SVG pattern independent of container size" class="codepen">See the Pen <a href="https://codepen.io/andresangelini/pen/JMPQpg/">SVG pattern independent of container size</a> by Andrés Angelini (<a href="https://codepen.io/andresangelini">@andresangelini</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async="async" src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
+There is one more pattern we need to tackle: the planks shades. For this last one, we want the shades to stretch only on the horizontal axis. Even more, we also want to reuse one side to use it on the opposite side.
+
+As always, we begin by defining a basic shape and make it stretch horizontally at the same time since we are at it.
+
+```xml
+...
+<symbol id='shade' viewBox='0 0 307 768' preserveAspectRatio='none'>
+  <path fill='#673110' opacity='0.1' d='m0 0v764.57h270...'/>
+</symbol>
+```
+
+The pattern we are going to make requires some more thought, though. We need the shades to stretch horizontally, but not vertically. Since we want to reuse the same basic shape while avoiding being too much repetitive, we'll have to offset each shade, which in turn will make have to create more copies so as to prevent having any gaps in the pattern.
+
+```xml
+...
+<!-- Define a pattern that stretches horizontally. -->
+<pattern id='shades' x='0' y='0' width='100%' height='760' patternUnits='userSpaceOnUse'>
+  <g id='left-shades'>
+    <!-- Four shades on the left side with different horizontal offsets. -->
+    <use id='shade-1' xlink:href='#shade' x='0' y='0' width='50%' height='765'/>
+    <use id='shade-2' xlink:href='#shade' x='-15%' y='200' width='50%' height='765'/>
+    <use id='shade-3' xlink:href='#shade' x='-20%' y='400' width='50%' height='765'/>
+    <use id='shade-4' xlink:href='#shade' x='-30%' y='600' width='50%' height='765'/>
+    <!-- Three vertical copies with different vertical offsets. -->
+    <g transform='translate(0 -761.5)'>
+      <use xlink:href='#shade-2'/>
+      <use xlink:href='#shade-3'/>
+      <use xlink:href='#shade-4'/>
+    </g>
+  </g>
+
+  <!-- Copy and invert left side shades to use the right. -->
+  <use xlink:href='#left-shades' x='-100%' transform='scale(-1, 1)'/>
+</pattern>
+
+<!-- Apply pattern to an element. -->
+<rect width='100%' height='100%' fill='url(#shades)'/>
+```
+
+The final result can be seen here:
+
+<p data-height="265" data-theme-id="0" data-slug-hash="wpvYgb" data-default-tab="html,result" data-user="andresangelini" data-embed-version="2" data-pen-title="Having an SVG pattern stretch only horizontally." class="codepen">See the Pen <a href="https://codepen.io/andresangelini/pen/wpvYgb/">Having an SVG pattern stretch only horizontally.</a> by Andrés Angelini (<a href="https://codepen.io/andresangelini">@andresangelini</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async="async" src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 ### Improving organization with `<defs>`
 
