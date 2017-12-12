@@ -334,7 +334,7 @@ As we can see, the last two ones are actually the same with a different color, s
   </symbol>
 ```
 
-Then, we make our new pattern and add a path with a shape of a rectangule to set a background color. We also use two copies of the planks grooves, each one with
+Then, we make our new pattern and add a path with a shape of a rectangle to set a background color. We also use two copies of the planks grooves, each one with
 a different color and we move the last one a little bit downwards.
 
 ```xml
@@ -397,10 +397,23 @@ The pattern we are going to make requires some more thought, though. We need the
 <rect width='100%' height='100%' fill='url(#shades)'/>
 ```
 
-The final result can be seen here:
+Take a better look at the code here:
 
 <p data-height="265" data-theme-id="0" data-slug-hash="wpvYgb" data-default-tab="html,result" data-user="andresangelini" data-embed-version="2" data-pen-title="Having an SVG pattern stretch only horizontally." class="codepen">See the Pen <a href="https://codepen.io/andresangelini/pen/wpvYgb/">Having an SVG pattern stretch only horizontally.</a> by Andrés Angelini (<a href="https://codepen.io/andresangelini">@andresangelini</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async="async" src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+### Clipping SVG elements with complex shapes.
+
+As you have probably realized already, we can't just apply these patterns to simple rectangles because they would be visible through the board's frames and holes. We obviously need to clip them, but here's the catch: while the corners to be removed are of a fixed size, the parts that need to be visible must stretch. Remember also, that what we define by using clip-path is the visible are and no the other way around. However, we have no way of defining a clip-path that has these characteristics. Nonetheless, we can achieve the same result by, once again, taking a more indirect approach.
+
+```xml
+...
+<clipPath id='cp-bulletin-tl-corner'>
+      <use xlink:href='#bs-planks-area' transform='translate(7.5 46)'/>
+      <use xlink:href='#bs-planks-area' transform='translate(33 33)'/>
+      <use xlink:href='#bs-planks-area' transform='translate(46 7.5)'/>
+</clipPath>
+```
 
 ### Improving organization with `<defs>`
 
