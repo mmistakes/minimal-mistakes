@@ -1,10 +1,12 @@
 # main links
 main:
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Developers"
+    url: http://docs.convictional.com/
+  - title: "Resources"
+    url: https://convictional.com/blogs/resources
+  - title: "Support"
+    url: http://help.convictional.com
+  - title: "Contact"
+    url: https://convictional.com/pages/contact
+  - title: "SIGN IN ➔"
+    url: https://app.convictional.com/
