@@ -86,8 +86,8 @@ author:
   name             : "Convictional Help"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              :
-  location         : "Waterloo, ON"
-  email            :
+  location         :
+  email            : "support@convictional.com"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
