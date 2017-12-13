@@ -16,7 +16,7 @@ Go to your partners store (or your own if connecting your own shop) and add "/ad
 
 You want everything before .myshopify.com in the URL (ie. "shop"). Here is a picture.
 
-![shop-name](https://github.com/rogerkirkness/convictional-help/blob/master/assets/images/shop-name.png?raw=true)
+![shop-name](https://github.com/rogerkirkness/convictional-help/blob/master/assets/images/shop.png?raw=true)
 
 Copy/paste that into the Shopify Shop Name field when you are setting up a partner.
 
