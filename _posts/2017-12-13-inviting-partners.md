@@ -15,7 +15,7 @@ Typically you already have an email for your trading partner. Getting the shop n
 Go to your partners store (or your own if connecting your own shop) and add "/admin" to the end of the URL. A new URL for the store will appear in the format: shop.myshopify.com.
 
 You want everything before .myshopify.com in the URL (ie. "shop"). Here is a picture. 
-![shop-name](https://https://raw.githubusercontent.com/rogerkirkness/convictional-help/blob/master/assets/images/shop-name.png?raw=true)
+![shop-name](https://github.com/rogerkirkness/convictional-help/blob/master/assets/images/shop-name.png?raw=true)
 
 Copy/paste that into the Shopify Shop Name field when you are setting up a partner.
 
