@@ -466,7 +466,7 @@ Now, we apply the second `clip-path` to a copy of this result, and again, we wra
   </symbol>
 ```
 
-And we repeat this same process for the rest of the `clip-path`s except, of course, the very last one which we do want to displya since it will be our final result.
+And we repeat this same process for the rest of the `clip-path`s.
 
 ```xml
 ...
@@ -478,11 +478,26 @@ And we repeat this same process for the rest of the `clip-path`s except, of cour
     <use xlink:href='#clipped-bulletin-br-corner' clip-path='url(#bulletin-bl-corner)'/>
   </symbol>
 
-  <use xlink:href='#clipped-bulletin-bl-corner' clip-path='url(#bulletin-holes)'/>
+  <symbol id='clipped-bulletin-planks'>
+    <use xlink:href='#clipped-bulletin-bl-corner' clip-path='url(#bulletin-holes)'/>
+  </symbol>
 </svg>
 ```
 
-You can see the resulting shape in [figure 5][complex clip-path pen] in the code pen above together with all the previous stages leading to it.
+You can see the resulting shape in [figure 5][complex clip-path pen] in the code pen above together with all the previous stages leading up to it.
+
+All there is to do now is just making two copies of this clipped shape (one for the planks and one for their shading) and add a `fill` attribute to apply our previously made `pattern`s and voila! We get the planks and shading pattern fitting perfectly into the table.
+
+```xml
+...
+  <use xlink:href='#clipped-bulletin-planks' fill='url(#planks)'/>
+  <use xlink:href='#clipped-bulletin-planks' fill='url(#shades)'/>
+```
+
+It should look like [figure 4][pattern on a complex clipped element] of this new code pen:
+
+<p data-height="265" data-theme-id="0" data-slug-hash="dJozLp" data-default-tab="result" data-user="andresangelini" data-embed-version="2" data-pen-title="Applying an SVG pattern on a clipped complex shape" class="codepen">See the Pen <a href="https://codepen.io/andresangelini/pen/dJozLp/">Applying an SVG pattern on a clipped complex shape</a> by Andrés Angelini (<a href="https://codepen.io/andresangelini">@andresangelini</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async="async" src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 ### Improving organization with `<defs>`
 
@@ -566,3 +581,4 @@ The pattern you see in my class names is using the [B.E.M.](http://getbem.com/in
 [bottom chains svg]: https://cdn.rawgit.com/andresangelini/96fc2fe2937f63997f972f203509bb28/raw/04eb599bf86ffce922d53071c8a10013743a3436/bottom chains svg.svg "Bottom chains"
 [chains pen]: https://codepen.io/andresangelini/pen/xPBapB/
 [complex clip-path pen]: https://codepen.io/andresangelini/pen/vpYbPP/
+[pattern on a complex clipped element]: https://codepen.io/andresangelini/pen/dJozLp
