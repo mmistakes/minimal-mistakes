@@ -14,9 +14,12 @@ geometry: margin=3cm
 
 **Robust Adversarial Reinforcement Learning**: [*Report*]({{ "/pdfs/RARL.pdf" | absolute_url }}), [Full Code](https://github.com/Jekyll1021/RARL). Report for [CS 294-131 Special Topics in Deep Learning](https://berkeley-deep-learning.github.io/cs294-131-f17/). Re-implementation of [Robust Adversarial Reinforcement Learning](http://proceedings.mlr.press/v70/pinto17a/pinto17a.pdf), with algorithmic game theory analysis. Experiments were extended to Berkeley DeepDrive LIDAR data (for pedestrian setting training) and image dataset CIFAR-10. 
 
-**Probabilistically Checkable Proofs Final Paper**: [*PCP in Hardness of Approximation Proofs*]({{ "/pdfs/PCP Project.pdf" | absolute_url }}). Summary of PCP results used to prove the inapproximability of monotone submodular optimization as well as MAX-CSP problems, such as the MAX-CUT problem, for [CS 294 - Probabilistically Checkable and Interactive Proof Systems](https://people.eecs.berkeley.edu/~alexch/classes/CS294-S2017.html)
 
 **Delaunay Triangulation**: C++ code for Delaunay Triangulation: [Full Code](https://github.com/Srizzle/Delaunay-Triangulation) for class [CS 294 - Computational Geometry](https://people.eecs.berkeley.edu/~jrs/274s17/)
+
+
+---
+## Expository Papers
 
 **Property Testing Final Paper**: [*Submodularity in Property Testing and Optimization*]({{ "/pdfs/Submodularity Property Testing.pdf" | absolute_url }}). Recent developments in property testing and optimization for submodular functions: [CS 294 - Property Testing](https://people.eecs.berkeley.edu/~alexch/classes/CS294-F2016.html)
 
@@ -26,7 +29,7 @@ geometry: margin=3cm
 
 **Inapproximability of MAX-CUT**: [*MAX-CUT Inapproximability*]({{ "/pdfs/270_writeup.pdf" | absolute_url }}). A readthrough of the PCP theorem applied on the famous Max-Cut paper by Khot for CS 270 (Advanced Algorithms)
 
-
+**Probabilistically Checkable Proofs Final Paper**: [*PCP in Hardness of Approximation Proofs*]({{ "/pdfs/PCP Project.pdf" | absolute_url }}). Summary of PCP results used to prove the inapproximability of monotone submodular optimization as well as MAX-CSP problems, such as the MAX-CUT problem, for [CS 294 - Probabilistically Checkable and Interactive Proof Systems](https://people.eecs.berkeley.edu/~alexch/classes/CS294-S2017.html)
 
 ---
 ## Data Analysis
