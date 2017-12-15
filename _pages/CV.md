@@ -7,7 +7,7 @@ geometry: margin=3cm
 ---
 ## Curricula Vitae and Resume 
 
-(last updated 11/7/2017)
+(last updated 12/15/2017)
 
 [CV Long]({{ "/pdfs/CV_PhD.pdf" | absolute_url }})
 
