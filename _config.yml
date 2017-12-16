@@ -14,7 +14,7 @@ title                    : "Impedance Mismatch"
 title_separator          : "-"
 name                     : "Jacob DePriest"
 description              : "A blog about tech projects and coding."
-url                      : "https://www.impedancemismatch.io" # the base hostname & protocol for your site
+url                      : "https://impedancemismatch.io" # the base hostname & protocol for your site
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : jdepriest/jdepriest.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
