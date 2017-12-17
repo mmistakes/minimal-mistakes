@@ -119,6 +119,16 @@ curl -sSL https://get.docker.com | sh
 
 See more [here](https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/)
 
+### Link data into other disk
+
+systemctl stop docker
+
+mv /var/lib/docker /home/jluccisano/docker
+
+ln -s /home/jluccisano/docker /var/lib/docker
+
+systemctl start docker
+
 
 
 
