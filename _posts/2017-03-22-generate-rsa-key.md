@@ -60,3 +60,25 @@ If you don't have pbcopy, you can install it easily. Here an example for
 ```bash
 ssh-copy-id -i ~/.ssh/id_rsa.pub -p X username@address
 ```
+
+### Create Alias
+
+```
+cd ~/.ssh/
+touch config
+subl -a config
+```
+
+```
+Host syno
+ Hostname luccihermes.synology.me
+ User jluccisano
+ Port 87
+ AddKeysToAgent yes
+ UseKeychain yes
+ IdentityFile ~/.ssh/id_rsa_syno
+```
+
+```
+ssh syno
+```
