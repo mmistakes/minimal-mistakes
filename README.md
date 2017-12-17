@@ -10,6 +10,6 @@ put deploy_key.pub into github
 
 encrypt the private key
 
-
-
 /root/.gem/ruby/2.4.0/gems/travis-1.8.8/bin/travis encrypt-file deploy_key --add
+
+bundle exec jekyll serve
