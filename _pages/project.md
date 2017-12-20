@@ -43,3 +43,7 @@ geometry: margin=3cm
 
 **BART Ridership Prediction**: [*Bart Ridership*]({{ "/pdfs/citadel_writeup_spring_2017.pdf" | absolute_url }}). Data analysis for Citadel Datathon (Spring 2017) using BART ridership data for prediction. [Full Code](https://github.com/Srizzle/Citadel-Datathon-Spring-2017)
 
+---
+## Older Works
+
+**Quantum Cellular Automata Models for General Dirac Equation (Old High School)**: [*Arxiv*](https://arxiv.org/abs/1610.02425) - Part of work I did at UCSD Quantum Algorithms Group under Professor David Meyer.   
