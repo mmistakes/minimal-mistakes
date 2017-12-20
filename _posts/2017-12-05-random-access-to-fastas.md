@@ -117,6 +117,6 @@ non-parallel version. using pbgzip is simple.
 gzip -d -c sequences.fasta.gz | pbgzip -c -n [number_of_threads] -6 > sequences.fasta.bfgz
 ```
 
-Be sure to save a thread for gzip when you specify '-t' for pbgzip. Now you have
+Be sure to save a thread for gzip when you specify '-n' for pbgzip. Now you have
 a  file compatible with Pyfaidx. you can delete your original file too since
 .bfgz can be read by gzip.
