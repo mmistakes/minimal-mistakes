@@ -114,7 +114,7 @@ bgzip. It compresses files in a fraction of the time required for the
 non-parallel version. using pbgzip is simple.
 
 ```bash
-gzip -d -c sequences.fasta.gz | pbgzip -c -t [number_of_threads] -6 > sequences.fasta.bfgz
+gzip -d -c sequences.fasta.gz | pbgzip -c -n [number_of_threads] -6 > sequences.fasta.bfgz
 ```
 
 Be sure to save a thread for gzip when you specify '-t' for pbgzip. Now you have
