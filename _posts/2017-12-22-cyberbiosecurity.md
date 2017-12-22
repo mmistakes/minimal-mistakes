@@ -9,7 +9,6 @@ tags:
   - cyberbiosecurity
 header:
   teaser: "assets/images/jason-blackeye-198848.jpg"
-
 ---
 
 
