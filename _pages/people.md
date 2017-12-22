@@ -20,7 +20,7 @@ _PhD Massachusetts Institute of Technology / Woods Hole Oceanographic Institutio
 I am a microbial ecologist turned computational biologist. I began my career woking on
 nutrient limitation in marine phytoplankton and became involved in metagenomics early.
 During the Deepwater Horizon oil spill I applied metatranscriptomics to
-understand the fate of oil an gas released. In 2014 A became a reseach
+understand the fate of oil and gas released. In 2014 A became a reseach
 scientist at the Joint Genome Institute, a part of Lawrence Berkeley National
 Laboratory. I was the head of the Metagenome Program at JGI until 2017.  In January of 2017
 I joined the Agricultural Research Service to start  the Agricultural Microbiomes Group.  
