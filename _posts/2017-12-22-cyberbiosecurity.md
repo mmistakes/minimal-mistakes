@@ -8,14 +8,14 @@ tags:
   - biosecurity
   - cyberbiosecurity
 header:
-  teaser: "assets/images/jayson-blackeye-198848.jpg"
+  teaser: "assets/images/jason-blackeye-198848.jpg"
 
 ---
 
 
 Our Office of National Programs at the USDA-ARS recently sent around an article
-from [Perccoud et al. (2018)](https://doi.org/10.1016/j.tibtech.2017.10.012)
-on the risks to data and computer systems from security
+from [Perccoud et al. (2018)](https://doi.org/10.1016/j.tibtech.2017.10.012) on
+the risks to data and computer systems from security
 holes in bioinformatics software. Perhaps most interestingly, it highlighted work
 by [Ney et al. (2017)](https://www.usenix.org/system/files/conference/usenixsecurity17/sec17-ney.pdf) where DNA was synthesized to exploit a software vulnerability during the processing of
 sequence data.
