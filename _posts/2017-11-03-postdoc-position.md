@@ -5,6 +5,8 @@ categories:
  - posts
 tags:
  - jobs
+ header:
+   teaser: "clem-onojeghuo-210707.jpg"
 ---
 
 ### The Agricultural microbiomes group has funded a postdoc position with Dr. Chris Reisch at the University of Florida
