@@ -14,7 +14,7 @@ header:
 ---
 
 
-There are often times in bioinfromatics when I find myself needing to sample
+There are often times in bioinformatics when I find myself needing to sample
 large fasta files randomly. RefSeq is currently about 250GB compressed; this
 is not the sort of file you want your scripts making multiple passes through.
 
