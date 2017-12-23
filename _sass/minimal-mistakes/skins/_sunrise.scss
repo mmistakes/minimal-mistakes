@@ -1,0 +1,26 @@
+/* ==========================================================================
+   Sunrise skin
+   ========================================================================== */
+
+/* Colors */
+$dark-gray: #0e2431 !default;
+$background-color: #e8d5b7 !default;
+$text-color: #000 !default;
+$muted-text-color: $dark-gray !default;
+$primary-color: #fc3a52 !default;
+$border-color: mix(#000, $background-color, 20%) !default;
+$code-background-color: mix(#fff, $background-color, 20%) !default;
+$code-background-color-dark: mix(#000, $background-color, 10%) !default;
+$form-background-color: mix(#fff, $background-color, 15%) !default;
+$footer-background-color: #f9b248 !default;
+$link-color: mix(#000, $primary-color, 10%) !default;
+$link-color-hover: mix(#fff, $link-color, 25%) !default;
+$link-color-visited: mix(#000, $link-color, 25%) !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: mix(#000, $text-color, 20%) !default;
+$navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
+
+.author__urls.social-icons .fa,
+.page__footer-follow .social-icons .fa {
+  color: inherit;
+}

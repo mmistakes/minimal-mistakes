@@ -4,7 +4,7 @@ header:
   image: /assets/images/data-engineering.jpg
   teaser: assets/images/2017-08-06-submit-spark2-jobs-programmatically/spark.png
 excerpt: "Submit Spark 2 apps programmatically, from anywhere within your code."
-categories: 
+categories:
   - data-engineering
 ---
 
@@ -16,19 +16,19 @@ This is my first post in the [Data Engineering][data-engineering-category] categ
 [Spark](http://spark.apache.org/) - originally developed as part of a research project[^spark-research] at the University of California, Berkeley and now an Apache Software Foundation project - is a framework for distributed computation. Spark was originally developed for a specific type of applications - iterative ones that reuse intermediate results (e.g., ML algorithms). The idea is to store these intermediate results in memory (in contrast to [mapreduce](https://hadoop.apache.org/docs/r1.2.1/mapred_tutorial.html), which does not efficiently persist results in memory), thus significantly speeding up subsequent computations on this in-memory data. The primary abstraction in Spark is the *Resilient Distributed Dataset*[^rdd], which is a dataset that can reside in distributed memory in a computing cluster.  
 
 ## The Problem
-Spark applications are usually submitted to YARN using a `spark-submit` command. In cases where this capability is needed progammatically, Spark provides the [`SparkLauncher`](http://spark.apache.org/docs/1.6.0/api/java/index.html?org/apache/spark/launcher/package-summary.html) class which allows the submission of Spark apps as a child process, that can then be monitored using an elegant [Monitoring](https://spark.apache.org/docs/latest/monitoring.html) API. 
+Spark applications are usually submitted to YARN using a `spark-submit` command. In cases where this capability is needed progammatically, Spark provides the [`SparkLauncher`](http://spark.apache.org/docs/1.6.0/api/java/index.html?org/apache/spark/launcher/package-summary.html) class which allows the submission of Spark apps as a child process, that can then be monitored using an elegant [Monitoring](https://spark.apache.org/docs/latest/monitoring.html) API.
 
-However, I find that the API documentation for the `SparkLauncher` class is woefully minimal. In [this](http://blog.rocana.com/how-to-submit-spark-jobs-to-yarn-from-java) blog post, Abdul Bashar puts together a comprehensive working example of how Spark 1.x apps can be submitted programmatically. However, he rightly notes the instructions are for Spark 1.x, and that since that Spark is notorious for breaking backward compatibility, they may not work with Spark 2.x. 
+However, I find that the API documentation for the `SparkLauncher` class is woefully minimal. In [this](http://blog.rocana.com/how-to-submit-spark-jobs-to-yarn-from-java) blog post, Abdul Bashar puts together a comprehensive working example of how Spark 1.x apps can be submitted programmatically. However, he rightly notes the instructions are for Spark 1.x, and that since that Spark is notorious for breaking backward compatibility, they may not work with Spark 2.x.
 
-Turns out Abdul's prediction is correct. The instructions no longer work with Spark 2.x. This blog post attempts to fix that. 
+Turns out Abdul's prediction is correct. The instructions no longer work with Spark 2.x. This blog post attempts to fix that.
 
-**Note:** Although not required, the reader should read Abdul's [post](http://blog.rocana.com/how-to-submit-spark-jobs-to-yarn-from-java) before reading this one, because I only briefly explain the changes to Abdul's code necessary to work with Spark 2.x, without going into details of the rest of the code that remains unchanged. 
+**Note:** Although not required, the reader should read Abdul's [post](http://blog.rocana.com/how-to-submit-spark-jobs-to-yarn-from-java) before reading this one, because I only briefly explain the changes to Abdul's code necessary to work with Spark 2.x, without going into details of the rest of the code that remains unchanged.
 {: .notice--warning}
 
-In Abdul's post, the astute reader may notice that there is significant duplication of configuration settings between `SparkConf` and `ClientArguments`. To remedy this redundancy, [this](https://issues.apache.org/jira/browse/SPARK-12343) JIRA sub-task suggests changing the visibility of `Client` and `ClientArguments` to `private` to prevent client code from directly interacting with them, and [this](https://github.com/apache/spark/pull/11603) pull request implements these changes. However, in the meantime, no concrete documentation explains how to deal with these breaking changes. 
+In Abdul's post, the astute reader may notice that there is significant duplication of configuration settings between `SparkConf` and `ClientArguments`. To remedy this redundancy, [this](https://issues.apache.org/jira/browse/SPARK-12343) JIRA sub-task suggests changing the visibility of `Client` and `ClientArguments` to `private` to prevent client code from directly interacting with them, and [this](https://github.com/apache/spark/pull/11603) pull request implements these changes. However, in the meantime, no concrete documentation explains how to deal with these breaking changes.
 
 ## The Solution
-A few changes are necessary to Abdul's code to get it to work with Spark 2.x. Specifically, 
+A few changes are necessary to Abdul's code to get it to work with Spark 2.x. Specifically,
 
 1. The `--addJars` argument has been replaced with the `SparkConf` configuration setting `spark.yarn.dist.files`,
 2. The `ClientArguments` constructor no longer needs a `SparkConf` object as a parameter, and
@@ -50,8 +50,8 @@ import scala.collection.JavaConversions_
   */
 object Spark {
 
-  def submit(jobName: String, jobClass: String, applicationJar: String, 
-             sparkProperties: Properties, additionalJars: Array[String], 
+  def submit(jobName: String, jobClass: String, applicationJar: String,
+             sparkProperties: Properties, additionalJars: Array[String],
              files: Array[String]): Unit = {
 
     val args = Lists.newArrayList("--jar", applicationJar, "--class", jobClass)
@@ -70,7 +70,7 @@ object Spark {
       sparkConf.set("spark.yarn.dist.files", files.mkString(","))
     }
 
-    // Set all remaining sparkConf properties 
+    // Set all remaining sparkConf properties
     // (e.g., spark.executor.cores, spark.driver.cores, ...)
     for(e <- sparkProperties.entrySet) {
       sparkConf.set(e.getKey.toString, e.getValue.toString)
@@ -81,7 +81,7 @@ object Spark {
 }
 {% endhighlight %}
 
-On line 39, observe that the `run()` method  of the `SparkClient` class is called. The `SparkClient` class represents the Java wrapper that we shall use to submit our Spark app to YARN in `yarn-cluster` mode. 
+On line 39, observe that the `run()` method  of the `SparkClient` class is called. The `SparkClient` class represents the Java wrapper that we shall use to submit our Spark app to YARN in `yarn-cluster` mode.
 
 The `SparkClient` class:
 {% highlight java linenos %}
@@ -99,7 +99,7 @@ public class SparkClient {
 
     // Submit the Spark app
     client.run();
-  }	
+  }
 }
 {% endhighlight %}
 
