@@ -56,7 +56,7 @@ var store = [
 $(document).ready(function() {
   $('input#search').on('keyup', function () {
     var resultdiv = $('#results');
-    var query = $(this).val().toLowerCase();
+    var query = $(this).val().toLowerCase().replace(":", "");
     var result =
       idx.query(function (q) {
         query.split(lunr.tokenizer.separator).forEach(function (term) {
