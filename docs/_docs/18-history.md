@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-12-28T13:49:48-05:00
+last_modified_at: 2017-12-28T13:51:40-05:00
 toc: true
 ---
 
@@ -13,6 +13,7 @@ toc: true
 ### Enhancements
 
 * Add linkback functionality to author avatar and name in sidebar via `author.home`. [#1386](https://github.com/mmistakes/minimal-mistakes/pull/1386)
+* Add Japanese localized UI text strings. [#1411](https://github.com/mmistakes/minimal-mistakes/pull/1411)
 
 ### Bug Fixes
 
