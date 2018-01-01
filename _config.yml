@@ -252,3 +252,5 @@ defaults:
       comments: # true
       share: true
       related: true
+      header:
+        show_overlay_excerpt: true
