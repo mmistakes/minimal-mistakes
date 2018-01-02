@@ -339,13 +339,14 @@ header:
 
 To overlay text on top of a header image you have a few more options:
 
-| Name               | Description | Default |
-| ----               | ----------- | ------- |
-| **overlay_image**  | Header image you'd like to overlay. Same rules as `header.image` from above. | |
-| **overlay_filter** | Color/opacity to overlay on top of the header image eg: `0.5` or `rgba(255, 0, 0, 0.5)`. |
-| **excerpt**        | Auto-generated page excerpt is added to the overlay text or can be overridden. | |
-| **cta_label**      | Call to action button text label. | `more_label` in UI Text data file |
-| **cta_url**        | Call to action button URL. | |
+| Name                     | Description | Default |
+| ----                     | ----------- | ------- |
+| **overlay_image**        | Header image you'd like to overlay. Same rules as `header.image` from above. | |
+| **overlay_filter**       | Color/opacity to overlay on top of the header image eg: `0.5` or `rgba(255, 0, 0, 0.5)`. |
+| **show_overlay_excerpt** | Display excerpt in the overlay text | true |
+| **excerpt**              | Auto-generated page excerpt is added to the overlay text or can be overridden. | |
+| **cta_label**            | Call to action button text label. | `more_label` in UI Text data file |
+| **cta_url**              | Call to action button URL. | |
 
 With this YAML Front Matter:
 
