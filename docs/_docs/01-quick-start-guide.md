@@ -41,17 +41,7 @@ bundle install
 
 ### GitHub Pages Method
 
-GitHub Pages has added [full support](https://github.com/blog/2464-use-any-theme-with-github-pages) for any GitHub-hosted theme.
-
-Replace `gem "jekyll"` with:		
-		
-```ruby		
-gem "github-pages", group: :jekyll_plugins			
-```		
-		
-Run `bundle update` and verify that all gems install properly.
-
-Add `remote_theme: "mmistakes/minimal-mistakes"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
+GitHub Pages has added [full support](https://github.com/blog/2464-use-any-theme-with-github-pages) for any GitHub-hosted theme. Add `remote_theme: "mmistakes/minimal-mistakes"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
 
 ---
 
