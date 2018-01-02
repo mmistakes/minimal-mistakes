@@ -39,30 +39,11 @@ Then run Bundler to install the theme gem and dependencies:
 bundle install
 ```
 
-### GitHub Pages Compatible Methods
+### GitHub Pages Method
 
-If you're hosting with GitHub Pages follow these steps instead.
+GitHub Pages has added [full support](https://github.com/blog/2464-use-any-theme-with-github-pages) for any GitHub-hosted theme.
 
-**Note:** [jekyll-remote-theme](https://github.com/benbalter/jekyll-remote-theme) is currently in beta on GitHub Pages. In my tests it works as advertised, with the occasional failure due to missing `_includes` and `_layouts` --- your results may vary.
-{: .notice--warning}
-
-Replace `gem "jekyll"` with:
-
-```
-gem "github-pages", group: :jekyll_plugins
-gem "jekyll-remote-theme"
-```
-
-Run `bundle update` and verify that all gems install properly.
-
-Add `remote_theme: "mmistakes/minimal-mistakes"` to your `_config.yml` file.
-
-Then add [`jekyll-remote-theme`](https://github.com/benbalter/jekyll-remote-theme) to the `plugins` (previously gems) array in your `_config.yml` file like so:
-
-```
-plugins:
-  - jekyll-remote-theme
-```
+Add `remote_theme: "mmistakes/minimal-mistakes"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
 
 ---
 
