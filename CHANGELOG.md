@@ -1,3 +1,11 @@
+## Unreleased
+
+### Enhancements
+
+* Add `show_overlay_excerpt` for disabling overlay image excerpt text. [#1436](https://github.com/mmistakes/minimal-mistakes/pull/1436)
+
+### Bug Fixes
+
 ## [4.8.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.8.1)
 
 ### Enhancements

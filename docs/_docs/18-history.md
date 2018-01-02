@@ -4,9 +4,17 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2017-12-28T14:07:05-05:00
+last_modified_at: 2018-01-02T16:12:35-05:00
 toc: true
 ---
+
+## Unreleased
+
+### Enhancements
+
+* Add `show_overlay_excerpt` for disabling overlay image excerpt text. [#1436](https://github.com/mmistakes/minimal-mistakes/pull/1436)
+
+### Bug Fixes
 
 ## [4.8.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.8.1)
 
