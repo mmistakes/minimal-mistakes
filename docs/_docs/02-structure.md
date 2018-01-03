@@ -2,7 +2,7 @@
 title: "Structure"
 permalink: /docs/structure/
 excerpt: "How the theme is organized and what all of the files are for."
-last_modified_at: 2016-10-06T22:39:43-04:00
+last_modified_at: 2018-01-03T12:03:59-05:00
 ---
 
 Nothing clever here :wink:. Layouts, data files, and includes are all placed in their default locations. Stylesheets and scripts in `assets`, and a few development related files in the project's root directory.
@@ -40,8 +40,6 @@ minimal-mistakes
 ├── assets
 |  ├── css
 |  |  └── main.scss            # main stylesheet, loads SCSS partials from _sass
-|  ├── fonts
-|  |  └── fontawesome-webfont  # Font Awesome webfonts
 |  ├── images                  # image assets for posts/pages/collections/etc.
 |  ├── js
 |  |  ├── plugins              # jQuery plugins

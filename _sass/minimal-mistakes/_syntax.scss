@@ -13,13 +13,12 @@ figure.highlight {
   background-color: $code-background-color;
 
   /* code block icon */
-  &:before {
+  &::before {
     position: absolute;
     top: 0;
     right: 0;
     padding: 0.5em;
-    content: "\f121";
-    font-family: "fontawesome" !important;
+    content: "</>";
     line-height: 1;
     background-color: $border-color;
     border-top-right-radius: $border-radius;
