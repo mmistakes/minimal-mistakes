@@ -12,20 +12,6 @@ figure.highlight {
   border-radius: $border-radius;
   background-color: $code-background-color;
 
-  /* code block icon */
-  &::before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 0.5em;
-    content: "</>";
-    line-height: 1;
-    background-color: $border-color;
-    border-top-right-radius: $border-radius;
-    text-transform: none;
-    speak: none;
-  }
-
   pre.highlight {
     margin: 0;
     padding: 1em;
