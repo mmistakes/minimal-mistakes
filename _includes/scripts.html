@@ -12,8 +12,9 @@
 {% endif %}
 
 {% if site.search == true or page.layout == 'search' %}
+  {% assign lang = site.locale | slice: 0,2 | default: "en" %}
   <script src="{{ '/assets/js/lunr.min.js' | absolute_url }}"></script>
-  <script src="{{ '/assets/js/lunr-en.js' | absolute_url }}"></script>
+  <script src="{{ '/assets/js/lunr-' | append: lang | append: '.js' | absolute_url }}"></script>
 {% endif %}
 
 {% include analytics.html %}
