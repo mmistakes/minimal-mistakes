@@ -9,10 +9,8 @@ figure.highlight {
   font-family: $monospace;
   font-size: $type-size-6;
   line-height: 1.8;
-  border: 1px solid $border-color;
   border-radius: $border-radius;
   background-color: $code-background-color;
-  box-shadow: $box-shadow;
 
   &:before {
     position: absolute;
