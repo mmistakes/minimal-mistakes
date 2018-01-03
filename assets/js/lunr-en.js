@@ -9,6 +9,8 @@ var idx = lunr(function () {
   this.field('tags')
   this.ref('id')
 
+  this.pipeline.remove(lunr.trimmer)
+
   {% assign count = 0 %}
   {% for c in site.collections %}
     {% assign docs = c.docs | where_exp:'doc','doc.search != false' %}
@@ -56,7 +58,7 @@ var store = [
 $(document).ready(function() {
   $('input#search').on('keyup', function () {
     var resultdiv = $('#results');
-    var query = $(this).val().toLowerCase().replace(":", "");
+    var query = $(this).val().toLowerCase();
     var result =
       idx.query(function (q) {
         query.split(lunr.tokenizer.separator).forEach(function (term) {
