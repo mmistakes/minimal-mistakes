@@ -44,11 +44,13 @@ figure.highlight {
 
   td {
     padding: 5px;
+    width: calc(100% - 1em);
     border: 0;
 
     /* line numbers*/
     &.gutter {
       padding-right: 1em;
+      width: 1em;
       color: rgba($muted-text-color, 0.5);
     }
   }
