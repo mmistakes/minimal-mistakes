@@ -91,7 +91,7 @@ There are three ways to install the theme: as a Ruby gem (for self-hosted sites)
 
 To update the theme run `bundle update`.
 
-## GitHub Pages Compatible Methods
+## GitHub Pages Method
 
 1. Create/replace the contents of your `Gemfile` with the following:
 
@@ -108,14 +108,7 @@ To update the theme run `bundle update`.
    bundle
    ```
 
-3. Add `remote_theme: "mmistakes/minimal-mistakes"` to your `_config.yml` file.
-
-4. Add `jekyll-remote-theme` to the `plugins` (previously gems) array in your `_config.yml` file:
-
-   ```yaml
-   plugins:
-     - jekyll-remote-theme
-   ```
+3. Add `remote_theme: "mmistakes/minimal-mistakes"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
 
 ## Usage
 
