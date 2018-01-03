@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-01-03T09:53:03-05:00
+last_modified_at: 2018-01-03T10:12:37-05:00
 toc: true
 ---
 
@@ -14,10 +14,12 @@ toc: true
 
 * Add `show_overlay_excerpt` for disabling overlay image excerpt text. [#1436](https://github.com/mmistakes/minimal-mistakes/pull/1436)
 * Update remote theme installation instructions in Quick Start Guide. [#1439](https://github.com/mmistakes/minimal-mistakes/pull/1439)
+* Reduce visual weight of code blocks.
 
 ### Bug Fixes
 
 * Fix code block extra white-space when using [Jekyll's highlight tag](https://jekyllrb.com/docs/templates/#code-snippet-highlighting) with `linenos`. [#1437](https://github.com/mmistakes/minimal-mistakes/issues/1437)
+* Round top-right corner of code block icon.
 
 ## [4.8.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.8.1)
 
