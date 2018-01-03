@@ -155,7 +155,7 @@ To test the theme, run `bundle exec rake preview` and open your browser at `http
 ### Icons + Demo Images:
 
 - [The Noun Project](https://thenounproject.com) -- Garrett Knoll, Arthur Shlain, and [tracy tam](https://thenounproject.com/tracytam)
-- [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
+- [Font Awesome](http://fontawesome.io/)
 - [Unsplash](https://unsplash.com/)
 
 ### Other:
