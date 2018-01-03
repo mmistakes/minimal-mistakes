@@ -91,7 +91,7 @@ There are three ways to install the theme: as a Ruby gem (for self-hosted sites)
 
 To update the theme run `bundle update`.
 
-## GitHub Pages Method
+### GitHub Pages Method
 
 1. Create/replace the contents of your `Gemfile` with the following:
 
@@ -99,7 +99,6 @@ To update the theme run `bundle update`.
    source "https://rubygems.org"
 
    gem "github-pages", group: :jekyll_plugins
-   gem "jekyll-remote-theme"
    ```
 
 2. Fetch and update bundled gems by running the following [Bundler](http://bundler.io/) command:
