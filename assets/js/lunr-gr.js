@@ -453,35 +453,6 @@ var greekStemmer = function (token) {
   })
 }
 
-var idx = lunr(function () {
-  this.field('title')
-  this.field('excerpt')
-  this.field('categories')
-  this.field('tags')
-  this.ref('id')
-
-  this.pipeline.remove(lunr.trimmer)
-  this.pipeline.add(greekStemmer)
-  this.pipeline.remove(lunr.stemmer)
-
-  {% assign count = 0 %}
-  {% for c in site.collections %}
-    {% assign docs = c.docs | where_exp:'doc','doc.search != false' %}
-    {% for doc in docs %}
-      this.add({
-          title: {{ doc.title | jsonify }},
-          excerpt: {{ doc.content | strip_html | truncatewords: 20 | jsonify }},
-          categories: {{ doc.categories | jsonify }},
-          tags: {{ doc.tags | jsonify }},
-          id: {{ count }}
-      })
-      {% assign count = count | plus: 1 %}
-    {% endfor %}
-  {% endfor %}
-});
-
-console.log( jQuery.type(idx) );
-
 var store = [
   {% for c in site.collections %}
     {% if forloop.last %}
@@ -496,8 +467,10 @@ var store = [
       {% endif %}
       {
         "title": {{ doc.title | jsonify }},
+        "excerpt": {{ doc.content | strip_html | strip_newlines | jsonify }},
+        "categories": {{ doc.categories | jsonify }},
+        "tags": {{ doc.tags | jsonify }},
         "url": {{ doc.url | absolute_url | jsonify }},
-        "excerpt": {{ doc.content | strip_html | truncatewords: 20 | jsonify }},
         "teaser":
           {% if teaser contains "://" %}
             {{ teaser | jsonify }}
@@ -507,6 +480,30 @@ var store = [
       }{% unless forloop.last and l %},{% endunless %}
     {% endfor %}
   {% endfor %}]
+
+var idx = lunr(function () {
+  this.field('title')
+  this.field('excerpt')
+  this.field('categories')
+  this.field('tags')
+  this.ref('id')
+
+  this.pipeline.remove(lunr.trimmer)
+  this.pipeline.add(greekStemmer)
+  this.pipeline.remove(lunr.stemmer)
+
+  for (var item in store) {
+    this.add({
+      title: store[item].title,
+      excerpt: store[item].excerpt,
+      categories: store[item].categories,
+      tags: store[item].tags,
+      id: item
+    })
+  }
+});
+
+console.log( jQuery.type(idx) );
 
 $(document).ready(function() {
   $('input#search').on('keyup', function () {

@@ -2,33 +2,6 @@
 layout: null
 ---
 
-var idx = lunr(function () {
-  this.field('title')
-  this.field('excerpt')
-  this.field('categories')
-  this.field('tags')
-  this.ref('id')
-
-  this.pipeline.remove(lunr.trimmer)
-
-  {% assign count = 0 %}
-  {% for c in site.collections %}
-    {% assign docs = c.docs | where_exp:'doc','doc.search != false' %}
-    {% for doc in docs %}
-      this.add({
-          title: {{ doc.title | jsonify }},
-          excerpt: {{ doc.content | strip_html | truncatewords: 20 | jsonify }},
-          categories: {{ doc.categories | jsonify }},
-          tags: {{ doc.tags | jsonify }},
-          id: {{ count }}
-      })
-      {% assign count = count | plus: 1 %}
-    {% endfor %}
-  {% endfor %}
-});
-
-console.log( jQuery.type(idx) );
-
 var store = [
   {% for c in site.collections %}
     {% if forloop.last %}
@@ -43,8 +16,10 @@ var store = [
       {% endif %}
       {
         "title": {{ doc.title | jsonify }},
+        "excerpt": {{ doc.content | strip_html | strip_newlines | jsonify }},
+        "categories": {{ doc.categories | jsonify }},
+        "tags": {{ doc.tags | jsonify }},
         "url": {{ doc.url | absolute_url | jsonify }},
-        "excerpt": {{ doc.content | strip_html | truncatewords: 20 | jsonify }},
         "teaser":
           {% if teaser contains "://" %}
             {{ teaser | jsonify }}
@@ -55,6 +30,28 @@ var store = [
     {% endfor %}
   {% endfor %}]
 
+var idx = lunr(function () {
+  this.field('title')
+  this.field('excerpt')
+  this.field('categories')
+  this.field('tags')
+  this.ref('id')
+
+  this.pipeline.remove(lunr.trimmer)
+
+  for (var item in store) {
+    this.add({
+      title: store[item].title,
+      excerpt: store[item].excerpt,
+      categories: store[item].categories,
+      tags: store[item].tags,
+      id: item
+    })
+  }
+});
+
+console.log( jQuery.type(idx) );
+
 $(document).ready(function() {
   $('input#search').on('keyup', function () {
     var resultdiv = $('#results');
@@ -62,7 +59,7 @@ $(document).ready(function() {
     var result =
       idx.query(function (q) {
         query.split(lunr.tokenizer.separator).forEach(function (term) {
-          q.term(term, {  boost: 100 })
+          q.term(term, { boost: 100 })
           if(query.lastIndexOf(" ") != query.length-1){
             q.term(term, {  usePipeline: false, wildcard: lunr.Query.wildcard.TRAILING, boost: 10 })
           }
@@ -85,7 +82,7 @@ $(document).ready(function() {
               '<div class="archive__item-teaser">'+
                 '<img src="'+store[ref].teaser+'" alt="">'+
               '</div>'+
-              '<p class="archive__item-excerpt" itemprop="description">'+store[ref].excerpt+'</p>'+
+              '<p class="archive__item-excerpt" itemprop="description">'+store[ref].excerpt.split(" ").splice(0,20).join(" ")+'</p>'+
             '</article>'+
           '</div>';
       }
@@ -96,7 +93,7 @@ $(document).ready(function() {
               '<h2 class="archive__item-title" itemprop="headline">'+
                 '<a href="'+store[ref].url+'" rel="permalink">'+store[ref].title+'</a>'+
               '</h2>'+
-              '<p class="archive__item-excerpt" itemprop="description">'+store[ref].excerpt+'</p>'+
+              '<p class="archive__item-excerpt" itemprop="description">'+store[ref].excerpt.split(" ").splice(0,20).join(" ")+'</p>'+
             '</article>'+
           '</div>';
       }
