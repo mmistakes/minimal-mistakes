@@ -19,9 +19,9 @@
   {% else %}
     {% assign lang = "en" %}
   {% endcase %}
-  <script src="{{ '/assets/js/lunr/lunr.min.js' | absolute_url }}"></script>
-  <script src="{{ '/assets/js/lunr/lunr-store.js' | absolute_url }}"></script>
-  <script src="{{ '/assets/js/lunr/lunr-' | append: lang | append: '.js' | absolute_url }}"></script>
+  <script defer src="{{ '/assets/js/lunr/lunr.min.js' | absolute_url }}"></script>
+  <script defer src="{{ '/assets/js/lunr/lunr-store.js' | absolute_url }}"></script>
+  <script defer src="{{ '/assets/js/lunr/lunr-' | append: lang | append: '.js' | absolute_url }}"></script>
 {% endif %}
 
 {% include analytics.html %}
