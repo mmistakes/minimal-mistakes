@@ -1,5 +1,5 @@
 ---
-title: "Design for change (part 3) [draft title - need something better]"
+title: "Design for change (part 4) [draft title - need something better]"
 excerpt: "Behaviour first- Data first class"
 layout: single
 comments: true
