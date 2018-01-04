@@ -9,13 +9,13 @@
 .sidebar {
   @include clearfix();
   margin-bottom: 1em;
-  -webkit-transform: translate3d(0, 0 , 0);
-          transform: translate3d(0, 0 , 0);
 
   @include breakpoint(max-width $large) {
     /* fix z-index order of follow links */
     position: relative;
     z-index: 10;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
   @include breakpoint($large) {
@@ -23,7 +23,7 @@
     width: calc(#{$right-sidebar-width-narrow} - 1em);
     opacity: 0.75;
     -webkit-transition: opacity 0.2s ease-in-out;
-            transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
 
     &:hover {
       opacity: 1;
@@ -32,7 +32,9 @@
     &.sticky {
       overflow-y: auto;
       /* calculate height of nav list */
-      height: calc(100vh - 90px - 2em); // viewport height - approx. masthead height - main content top margin
+      height: calc(
+        100vh - 90px - 2em
+      ); // viewport height - approx. masthead height - main content top margin
     }
   }
 
@@ -40,12 +42,17 @@
     width: calc(#{$right-sidebar-width} - 1em);
   }
 
-  h2, h3, h4, h5, h6 {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     margin-bottom: 0;
     font-family: $sans-serif-narrow;
   }
 
-  p, li {
+  p,
+  li {
     font-family: $sans-serif;
     font-size: $type-size-6;
     line-height: 1.5;
@@ -76,7 +83,6 @@
 }
 
 .splash .sidebar__right {
-
   @include breakpoint($large) {
     position: relative;
     float: right;
