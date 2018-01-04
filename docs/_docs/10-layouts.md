@@ -7,7 +7,7 @@ single_layout_gallery:
     alt: "single layout with header example"
   - image_path: /assets/images/mm-layout-single-meta.png
     alt: "single layout with comments and related posts"
-last_modified_at: 2017-12-06T14:58:04-05:00
+last_modified_at: 2018-01-03T11:22:31-05:00
 toc: true
 toc_label: "Included Layouts"
 toc_icon: "columns"
@@ -95,7 +95,7 @@ Auto-generated table of contents list for your posts and pages can be enabled by
 | ---------   | -------- | ----------- | ------- |
 | **toc**     | Optional | Show table of contents. (boolean) | `false` |
 | **toc_label** | Optional | Table of contents title. (string) | `toc_label` in UI Text data file. |
-| **toc_icon**  | Optional | Table of contents icon, displays before the title. (string) | [Font Awesome](https://fortawesome.github.io/Font-Awesome/icons/) <i class="fa fa-file-text"></i> **file-text** icon. Any other FA icon can be used instead. |
+| **toc_icon**  | Optional | Table of contents icon, displays before the title. (string) | [Font Awesome](https://fontawesome.com/icons?d=gallery&s=solid&m=free) <i class="fas fa-file-alt"></i> **file-alt** icon. Other FA icons can be used instead. |
 
 **TOC example with custom title and icon**
 
@@ -103,7 +103,7 @@ Auto-generated table of contents list for your posts and pages can be enabled by
 ---
 toc: true
 toc_label: "My Table of Contents"
-toc_icon: "gear"
+toc_icon: "cog"
 ---
 ```
 
@@ -453,7 +453,7 @@ To add more links you'll need to crack open [`_includes/author-profile-custom-li
 ```html
 <li>
   <a href="https://whatever-social-network.com/username">
-    <i class="fa fa-fw" aria-hidden="true"></i> Awesome Social Network
+    <i class="fab fa-fw" aria-hidden="true"></i> Awesome Social Network
   </a>
 </li>
 ```
@@ -461,7 +461,7 @@ To add more links you'll need to crack open [`_includes/author-profile-custom-li
 To add a new link you'll need three things:
 
 1. Destination URL
-2. [Font Awesome icon](http://fontawesome.io/icons/) (`fa-` class)
+2. [Font Awesome icon](https://fontawesome.com/icons?d=gallery) (`fa-` class)
 3. Label for the link
 
 It's up to you if you want to wrap it in a `{% raw %}{% if %} ... {% endif %}{% endraw %}`conditional and add a variable to `_config.yml`. If you don't plan to change it then hard-coding the string is perfectly acceptable.
@@ -477,7 +477,7 @@ And plug them into the appropriate locations:
 ```html
 <li>
   <a href="[1]">
-    <i class="fa fa-fw [2]" aria-hidden="true"></i> [3]
+    <i class="fab fa-fw [2]" aria-hidden="true"></i> [3]
   </a>
 </li>
 ```
@@ -487,7 +487,7 @@ To end up with:
 ```html
 <li>
   <a href="https://www.reddit.com/user/username">
-    <i class="fa fa-fw fa-reddit" aria-hidden="true"></i> Reddit
+    <i class="fab fa-fw fa-reddit" aria-hidden="true"></i> Reddit
   </a>
 </li>
 ```
@@ -650,7 +650,7 @@ If you'd like to add, remove, or change the order of these default links you can
 Let's say you wanted to replace the Google+ button with a Reddit one. Simply replace the HTML with the following:
 
 ```html
-{% raw %}<a href="https://www.reddit.com/submit?url={{ page.url | absolute_url }}&title={{ page.title }}" class="btn" title="{{ site.data.ui-text[site.locale].share_on_label }} Reddit"><i class="fa fa-fw fa-reddit" aria-hidden="true"></i><span> Reddit</span></a>{% endraw %}
+{% raw %}<a href="https://www.reddit.com/submit?url={{ page.url | absolute_url }}&title={{ page.title }}" class="btn" title="{{ site.data.ui-text[site.locale].share_on_label }} Reddit"><i class="fab fa-fw fa-reddit" aria-hidden="true"></i><span> Reddit</span></a>{% endraw %}
 ```
 
 The important parts to change are:
@@ -681,7 +681,7 @@ $social:
 Add the new `.btn--reddit` class to the `<a>` element from earlier, [compile `main.css`]({{ "/docs/stylesheets/" | absolute_url }}) and away you go.
 
 ```html
-{% raw %}<a href="https://www.reddit.com/submit?url={{ page.url | absolute_url }}&title={{ page.title }}" class="btn btn--reddit" title="{{ site.data.ui-text[site.locale].share_on_label }} Reddit"><i class="fa fa-fw fa-reddit" aria-hidden="true"></i><span> Reddit</span></a>{% endraw %}
+{% raw %}<a href="https://www.reddit.com/submit?url={{ page.url | absolute_url }}&title={{ page.title }}" class="btn btn--reddit" title="{{ site.data.ui-text[site.locale].share_on_label }} Reddit"><i class="fab fa-fw fa-reddit" aria-hidden="true"></i><span> Reddit</span></a>{% endraw %}
 ```
 
 ![Reddit social share link button]({{ "/assets/images/mm-social-share-links-reddit-color.png" | absolute_url }})

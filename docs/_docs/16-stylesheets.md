@@ -2,7 +2,7 @@
 title: "Stylesheets"
 permalink: /docs/stylesheets/
 excerpt: "Instructions for customizing and building the theme's stylesheets."
-last_modified_at: 2017-04-18T12:34:31-04:00
+last_modified_at: 2018-01-03T12:05:16-05:00
 ---
 
 The theme's `assets/css/main.css` file is built from several SCSS partials located in [`_sass/`](https://github.com/mmistakes/minimal-mistakes/tree/master/_sass) and is structured as follows:
@@ -13,7 +13,6 @@ minimal-mistakes
 |  └── minimal-mistakes
 |     ├── vendor               # vendor SCSS partials
 |     |   ├── breakpoint       # media query mixins
-|     |   ├── font-awesome     # Font Awesome icons
 |     |   ├── magnific-popup   # Magnific Popup lightbox
 |     |   └── susy             # Susy grid system
 |     ├── _animations.scss     # animations
@@ -84,7 +83,7 @@ The size of the indent can also be customized by changing the value of `$indent-
 
 ### Font Stacks
 
-By default the theme uses [system fonts](https://medium.com/designing-medium/system-shock-6b1dc6d6596f#.rb81vgn7i) for all of the font stacks (serif, sans-serif, and monospace). This is done in part to provide a clean base for you to build off of and to improve performance since we aren't loading any custom webfonts[^font-awesome] by default.
+By default the theme uses [system fonts](https://medium.com/designing-medium/system-shock-6b1dc6d6596f#.rb81vgn7i) for all of the font stacks (serif, sans-serif, and monospace). This is done in part to provide a clean base for you to build off of and to improve performance since we aren't loading any custom webfonts by default.
 
 ```scss
 /* system typefaces */
@@ -92,8 +91,6 @@ $serif      : Georgia, Times, serif;
 $sans-serif : -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 $monospace  : Monaco, Consolas, "Lucida Console", monospace;
 ```
-
-[^font-awesome]: Apart from [Font Awesome](https://fortawesome.github.io/Font-Awesome/) icon webfonts.
 
 Sans-serif fonts have been used for most of the type, with serifs reserved for captions. If you wish to change this you'll need to poke around the various `SCSS` partials and modify `font-family` declarations.
 
