@@ -70,7 +70,7 @@ G : Il 24 giugno 2017 feci il mio primo live, si trattava del concerto di fine a
   <img src="{{ site.url }}{{ site.baseurl }}/images/giovanni3.jpg" alt="">
 </figure> 
 
-G : A settembre 2017 io ed un compagno di percorso accademico, **Mirko Pirozzi**, chitarrista, decidemmo di approfondire quanto studiato in musica di insieme formando una band tutta nostra. Cominciammo la ricerca e formazione del gruppo. Partimmo con l'idea di fare una Rock Cover Band coprendo i classici dagli anni '60 fino alla fine degli '80. Usando degli annunci cominciammo a provare con varie persone, e fu lì che conobbi **Biagio Anzalone**, bassista nonché cantante professionista. Biagio da poco suonava il basso, aveva sempre suonato la chitarra ed ovviamente cantato ma aveva il desiderio di suonare in una band come bassista ed era davvero bravo. Purtroppo dopo le prime prove decise di abbandonarci per altri progetti. Fu lui che mi iniziò allo strumento, fu suo il primo basso che approcciai, così per gioco.
+G : A settembre 2017 io ed un compagno di percorso accademico, **Mirko Pirozzi**, chitarrista, decidemmo di approfondire quanto studiato in musica di insieme formando una band tutta nostra. Cominciammo la ricerca e formazione del gruppo. Partimmo con l'idea di fare una Rock Cover Band coprendo i classici dagli anni '60 fino alla fine degli '80. Usando degli annunci cominciammo a provare con varie persone, e fu lì che conobbi **Biagio Anzalone**, bassista nonché cantante professionista. Biagio da poco suonava il basso, aveva sempre suonato la chitarra ed ovviamente cantato ma aveva il desiderio di suonare in una band come bassista ed era davvero bravo. Purtroppo dopo le prime prove decise di abbandonarci per altri progetti. Fu lui che mi iniziò allo strumento, fu suo il primo basso su cui misi le mani, così per gioco.
 
 ## M : Finalmente siamo arrivati al periodo da bassista! raccontaci un po' come sono andate le cose.
 
@@ -80,7 +80,7 @@ G : Fui da subito particolarmente colpito da questo strumento, incuriosito da qu
 
 Mi appassionai in particolar modo al basso: mi piaceva il timbro e il fatto che si suona a mani libere, a stretto contatto con lo strumento. Decisi che volevo continuare, approfondire lo strumento, a quel punto non volevo far altro che suonare il basso. 
 
-In quel periodo io a Mirko eravamo ancora alla ricerca di componenti nuovi per la nostra band ma qualcosa era appunto cambiato, da due chitarre diventammo una chitarra ed un basso. Con non poco scetticismo da parte sua, lo convinsi a formare una band di cui io avrei suonato il basso.
+In quel periodo io e Mirko eravamo ancora alla ricerca di componenti nuovi per la nostra band ma qualcosa era appunto cambiato, da due chitarre diventammo una chitarra ed un basso. Con non poco scetticismo da parte sua, lo convinsi a formare una band in cui io avrei suonato il basso.
 
 Nonostante abbia iniziato da poco, diversi amici, musicisti e non, mi hanno detto che dopo pochi mesi suono meglio il basso che la chitarra! Sarà una questione di feeling particolare con lo strumento. Sicuramente la formazione di chitarra mi è stata ed è tutt'oggi fondamentale.
 
