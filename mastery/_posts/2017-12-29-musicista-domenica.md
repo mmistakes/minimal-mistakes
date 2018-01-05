@@ -98,7 +98,7 @@ G : Si, non hai torto. Mentre sui vari siti di annunci cercavo membri per la tri
 
 G: Beh, nel tempo libero oltre a suonare curo una [**pagina Facebook**](https://www.facebook.com/giosundaymusic/) e un [**canale Instagram**](https://www.instagram.com/giosundaymusic/), sui cui pubblico video dei miei arrangiamenti, cover, e qualche collaborazione con altre persone. Lo faccio principalmente per tenere traccia dei pezzi che studio o riarrangio e per non dimenticare il lavoro fatto, per riascoltarmi. Suono, ma non mi sono mai limitato a fare solo quello, dato che mi piace, mi "auto produco", ovvero registro da me audio e video per poi eseguirne il montaggio.
 
-L'idea e il nome della pagina Facebook, [**Gio Sunday Music**](https://www.facebook.com/giosundaymusic/), vengono dal 2016: ogni domenica con mia sorella **Angela Ruotolo** a cui piaceva cantare registravamo qualcosa.
+L'idea e il nome della pagina Facebook, [**Gio Sunday Music**](https://www.facebook.com/giosundaymusic/), risalgono al 2016: ogni domenica con mia sorella **Angela Ruotolo** a cui piaceva cantare registravamo qualcosa.
 
 <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fgiosundaymusic%2Fvideos%2F1809702939321658%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
 
