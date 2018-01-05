@@ -16,7 +16,12 @@ var store = [
       {% endif %}
       {
         "title": {{ doc.title | jsonify }},
-        "excerpt": {{ doc.content | strip_html | strip_newlines | jsonify }},
+        "excerpt":
+          {% if site.search_full_content == true %}
+            {{ doc.content | strip_html | strip_newlines | jsonify }},
+          {% else %}
+            {{ doc.content | strip_html | strip_newlines | truncatewords: 50 | jsonify }},
+          {% endif %}
         "categories": {{ doc.categories | jsonify }},
         "tags": {{ doc.tags | jsonify }},
         "url": {{ doc.url | absolute_url | jsonify }},
