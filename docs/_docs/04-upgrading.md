@@ -43,16 +43,16 @@ To double check, run `git remote -v` and verify that you can fetch from `origin 
 
 To add it you can do the following:
 
-```bash
-$ git remote add upstream https://github.com/{{ site.repository }}.git
+```terminal
+git remote add upstream https://github.com/{{ site.repository }}.git
 ```
 
 ### Pull Down Updates
 
 Now you can pull any commits made to theme's `master` branch with:
 
-```bash
-$ git pull upstream master
+```terminal
+git pull upstream master
 ```
 
 Depending on the amount of customizations you've made after forking, there's likely to be merge conflicts. Work through any conflicting files Git flags, staging the changes you wish to keep, and then commit them.
