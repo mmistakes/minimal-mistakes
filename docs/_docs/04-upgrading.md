@@ -2,7 +2,7 @@
 title: "Upgrading"
 permalink: /docs/upgrading/
 excerpt: "Instructions and suggestions for upgrading the theme."
-last_modified_at: 2018-01-05T08:23:01-05:00
+last_modified_at: 2018-01-05T08:35:23-05:00
 toc: true
 ---
 
@@ -29,7 +29,7 @@ Simply run `bundle update` if you're using Bundler (have a `Gemfile`) or `gem up
 
 When hosting with GitHub Pages you'll need to push up a commit to force a rebuild with the latest [theme release](https://github.com/mmistakes/minimal-mistakes/releases).
 
-An empty commit will get the job done too if you don't have anything to commit at the moment:
+An empty commit will get the job done too if you don't have anything to push at the moment:
 
 ```terminal
 git commit --allow-empty -m "Force rebuild of site"
