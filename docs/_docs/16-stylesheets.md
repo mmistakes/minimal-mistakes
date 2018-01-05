@@ -2,7 +2,7 @@
 title: "Stylesheets"
 permalink: /docs/stylesheets/
 excerpt: "Instructions for customizing and building the theme's stylesheets."
-last_modified_at: 2018-01-03T12:05:16-05:00
+last_modified_at: 2018-01-05T08:51:05-05:00
 ---
 
 The theme's `assets/css/main.css` file is built from several SCSS partials located in [`_sass/`](https://github.com/mmistakes/minimal-mistakes/tree/master/_sass) and is structured as follows:
@@ -147,6 +147,180 @@ $type-size-8 : 0.625em;  // ~10px
 ### Colors
 
 Change the mood of your site by altering a few color variables. `$body-color`, `$background-color`, `$text-color`, `$link-color`, and `$masthead-link-color` will have the most affect when changed.
+
+#### Syntax Highlighting
+
+To make customizing the colors used in code highlighted blocks, a base of sixteen colors ([Base16](http://chriskempson.com/projects/base16/)) have been used.
+
+Code block colors can easily be changed by overriding any of the following color variables:
+
+##### Default
+
+![default-code-block]({{ '/assets/images/default-code-block.jpg' | absolute_url }})
+
+```scss
+/* default syntax highlighting (base16) */
+$base00: #263238;
+$base01: #2e3c43;
+$base02: #314549;
+$base03: #546e7a;
+$base04: #b2ccd6;
+$base05: #eeffff;
+$base06: #eeffff;
+$base07: #ffffff;
+$base08: #f07178;
+$base09: #f78c6c;
+$base0a: #ffcb6b;
+$base0b: #c3e88d;
+$base0c: #89ddff;
+$base0d: #82aaff;
+$base0e: #c792ea;
+$base0f: #ff5370;
+```
+
+##### Contrast
+
+![contrast-code-block]({{ '/assets/images/contrast-code-block.jpg' | absolute_url }})
+
+```scss
+/* contrast syntax highlighting (base16) */
+$base00: #000000;
+$base01: #242422;
+$base02: #484844;
+$base03: #6c6c66;
+$base04: #918f88;
+$base05: #b5b3aa;
+$base06: #d9d7cc;
+$base07: #fdfbee;
+$base08: #ff6c60;
+$base09: #e9c062;
+$base0a: #ffffb6;
+$base0b: #a8ff60;
+$base0c: #c6c5fe;
+$base0d: #96cbfe;
+$base0e: #ff73fd;
+$base0f: #b18a3d;
+```
+
+##### Dark
+
+![dark-code-block]({{ '/assets/images/dark-code-block.jpg' | absolute_url }})
+
+```scss
+/* dark syntax highlighting (base16) */
+$base00: #ffffff;
+$base01: #e0e0e0;
+$base02: #d0d0d0;
+$base03: #b0b0b0;
+$base04: #000000;
+$base05: #101010;
+$base06: #151515;
+$base07: #202020;
+$base08: #ff0086;
+$base09: #fd8900;
+$base0a: #aba800;
+$base0b: #00c918;
+$base0c: #1faaaa;
+$base0d: #3777e6;
+$base0e: #ad00a1;
+$base0f: #cc6633;
+```
+
+##### Dirt
+
+![dirt-code-block]({{ '/assets/images/dirt-code-block.jpg' | absolute_url }})
+
+```scss
+/* dirt syntax highlighting (base16) */
+$base00: #231e18;
+$base01: #302b25;
+$base02: #48413a;
+$base03: #9d8b70;
+$base04: #b4a490;
+$base05: #cabcb1;
+$base06: #d7c8bc;
+$base07: #e4d4c8;
+$base08: #d35c5c;
+$base09: #ca7f32;
+$base0a: #e0ac16;
+$base0b: #b7ba53;
+$base0c: #6eb958;
+$base0d: #88a4d3;
+$base0e: #bb90e2;
+$base0f: #b49368;
+```
+
+##### Neon
+
+![neon-code-block]({{ '/assets/images/neon-code-block.jpg' | absolute_url }})
+
+```scss
+/* neon syntax highlighting (base16) */
+$base00: #ffffff;
+$base01: #e0e0e0;
+$base02: #d0d0d0;
+$base03: #b0b0b0;
+$base04: #000000;
+$base05: #101010;
+$base06: #151515;
+$base07: #202020;
+$base08: #ff0086;
+$base09: #fd8900;
+$base0a: #aba800;
+$base0b: #00c918;
+$base0c: #1faaaa;
+$base0d: #3777e6;
+$base0e: #ad00a1;
+$base0f: #cc6633;
+```
+
+##### Plum
+
+![plum-code-block]({{ '/assets/images/plum-code-block.jpg' | absolute_url }})
+
+```scss
+/* plum syntax highlighting (base16) */
+$base00: #ffffff;
+$base01: #e0e0e0;
+$base02: #d0d0d0;
+$base03: #b0b0b0;
+$base04: #000000;
+$base05: #101010;
+$base06: #151515;
+$base07: #202020;
+$base08: #ff0086;
+$base09: #fd8900;
+$base0a: #aba800;
+$base0b: #00c918;
+$base0c: #1faaaa;
+$base0d: #3777e6;
+$base0e: #ad00a1;
+$base0f: #cc6633;
+```
+
+##### Sunrise
+
+![sunrise-code-block]({{ '/assets/images/sunrise-code-block.jpg' | absolute_url }})
+
+```scss
+/* sunrise syntax highlighting (base16) */
+$base00: #1d1f21;
+$base01: #282a2e;
+$base02: #373b41;
+$base03: #969896;
+$base04: #b4b7b4;
+$base05: #c5c8c6;
+$base06: #e0e0e0;
+$base07: #ffffff;
+$base08: #cc6666;
+$base09: #de935f;
+$base0a: #f0c674;
+$base0b: #b5bd68;
+$base0c: #8abeb7;
+$base0d: #81a2be;
+$base0e: #b294bb;
+$base0f: #a3685a;
+```  
 
 ### Breakpoints and Grid Stuff
 
