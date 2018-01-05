@@ -3,8 +3,11 @@ main:
 #  - title: "ABOUT"
 #    url: /about/
 
-  - title: "TIME ARCHIVE"
+  - title: "Time Archive"
     url: /time-archive/
 
-  - title: "TAG ARCHIVE"
-    url: /tag-archive/
+  # - title: "TAG ARCHIVE"
+  #   url: /tag-archive/
+
+  - title: "Mastery"
+    url: /mastery/
