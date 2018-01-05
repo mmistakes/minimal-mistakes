@@ -2,13 +2,38 @@
 title: "Upgrading"
 permalink: /docs/upgrading/
 excerpt: "Instructions and suggestions for upgrading the theme."
-last_modified_at: 2016-11-03T10:16:34-04:00
+last_modified_at: 2018-01-05T08:23:01-05:00
 toc: true
 ---
 
-If you're using the Ruby Gem version of the theme upgrading is fairly painless.
+If you're using the Ruby Gem or remote theme versions of Minimal Mistakes, upgrading is fairly painless.
+
+To check which version you are currently using, view the source of your built site and you should something similar to:
+
+```
+<!--
+  Minimal Mistakes Jekyll Theme 4.9.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+```
+
+At the top of every `.html` file, `/assets/css/main.css`, and `/assets/js/main.min.js`.
+
+## Ruby Gem
 
 Simply run `bundle update` if you're using Bundler (have a `Gemfile`) or `gem update minimal-mistakes-jekyll` if you're not.
+
+## Remote Theme
+
+When hosting with GitHub Pages you'll need to push up a commit to force a rebuild with the latest [theme release](https://github.com/mmistakes/minimal-mistakes/releases).
+
+An empty commit will get the job done too if you don't have anything to commit at the moment:
+
+```terminal
+git commit --allow-empty -m "Force rebuild of site"
+```
 
 ## Use Git
 
@@ -47,3 +72,8 @@ Here's a quick checklist of the important folders/files you'll want to be mindfu
 | `_data/navigation.yml` | Safe to keep. Verify that there were no major structural changes or additions. |
 | `_data/ui-text.yml`    | Safe to keep. Verify that there were no major structural changes or additions. |
 | `_config.yml`          | Safe to keep. Verify that there were no major structural changes or additions. |
+
+---
+
+**Note:** If you're not seeing the latest version, be sure to flush browser and CDN caches. Depending on your hosting environment older versions of `/assets/css/main.css`, `/assets/js/main.min.js`, or `*.html` may be cached.
+{: .notice--info}
