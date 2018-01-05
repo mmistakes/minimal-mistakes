@@ -1,4 +1,4 @@
-## Unreleased
+## [4.9.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.9.0)
 
 ### Enhancements
 
