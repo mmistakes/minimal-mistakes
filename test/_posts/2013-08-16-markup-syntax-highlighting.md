@@ -88,15 +88,29 @@ Indentation matters. Be sure the indent of the code block aligns with the first 
 
 An example of a code blocking using Jekyll's [`{% raw %}{% highlight %}{% endraw %}` tag](https://jekyllrb.com/docs/templates/#code-snippet-highlighting).
 
-{% highlight html linenos %}
-{% raw %}<nav class="pagination" role="navigation">
-  {% if page.previous %}
-    <a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}">Previous article</a>
-  {% endif %}
-  {% if page.next %}
-    <a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}">Next article</a>
-  {% endif %}
-</nav><!-- /.pagination -->{% endraw %}
+{% highlight javascript linenos %}
+// 'gulp html' -- does nothing
+// 'gulp html --prod' -- minifies and gzips HTML files for production
+gulp.task('html', () => {
+  return gulp.src(paths.siteFolderName + paths.htmlPattern)
+    .pipe(when(argv.prod, htmlmin({
+      removeComments: true,
+      collapseWhitespace: true,
+      collapseBooleanAttributes: false,
+      removeAttributeQuotes: false,
+      removeRedundantAttributes: false,
+      minifyJS: true,
+      minifyCSS: true
+    })))
+    .pipe(when(argv.prod, size({title: 'optimized HTML'})))
+    .pipe(when(argv.prod, gulp.dest(paths.siteFolderName)))
+    .pipe(when(argv.prod, gzip({append: true})))
+    .pipe(when(argv.prod, size({
+      title: 'gzipped HTML',
+      gzip: true
+    })))
+    .pipe(when(argv.prod, gulp.dest(paths.siteFolderName)))
+});
 {% endhighlight %}
 
 {% highlight wl linenos %}
