@@ -9,6 +9,7 @@
 * Update Font Awesome 5 [SVG with JavaScript version](https://fontawesome.com/how-to-use/svg-with-js). [#1446](https://github.com/mmistakes/minimal-mistakes/pull/1446)
   * Note: if Font Awesome icons were used in the content of posts/pages or custom table of contents, find and replace any icons that have different names between version 4 and 5. Make sure to read the [complete list](https://fontawesome.com/how-to-use/upgrading-from-4#icon-name-changes-full) on Font Awesome's site.
 * Reduce size of Lunr.js search JSON data and introduce `site.search_full_content` flag for limiting size of JSON file. [#1449](https://github.com/mmistakes/minimal-mistakes/pull/1449)
+* Improve syntax highlighting styles. [#1450](https://github.com/mmistakes/minimal-mistakes/pull/1450)
 
 ### Bug Fixes
 
