@@ -2,7 +2,8 @@
 title: "Stylesheets"
 permalink: /docs/stylesheets/
 excerpt: "Instructions for customizing and building the theme's stylesheets."
-last_modified_at: 2018-01-05T08:51:05-05:00
+last_modified_at: 2018-01-05T08:52:56-05:00
+toc: true
 ---
 
 The theme's `assets/css/main.css` file is built from several SCSS partials located in [`_sass/`](https://github.com/mmistakes/minimal-mistakes/tree/master/_sass) and is structured as follows:
