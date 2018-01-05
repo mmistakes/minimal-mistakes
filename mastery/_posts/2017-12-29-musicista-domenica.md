@@ -55,7 +55,7 @@ Pochi mesi dopo (siamo nel 2013) comprai la mia prima chitarra, una [Gibson SG](
 
 G : Ho da sempre avuto un approccio da autodidatta ma ad un certo punto, a settembre 2016, iniziai a sentire dei limiti che volevo assolutamente superare. Per questo mi iscrissi ad un'accademia musicale, la Lizard di Fiesole, che ha una succursale qui a Giugliano. Volevo colmare il gap teorico che avevo e migliorare la mia tecnica. 
 
-Ho frequentato un anno di chitarra hard-rock/metal suonando brani degli Eagles, AC-DC, Jimi Hendrix, Van Halen e tanto altro; ho curato la parte teorica e di armonia e nello stesso anno ho cominciato a fare musica d'insieme:  con diversi alunni dell'accademia si formavano delle band con lo scopo di imparare a suonare assieme e di tirare su una decina di brani per un concerto finale in cui io spesso ricoprivo il ruolo di chitarra solista: tra i vari brani facemmo "Harden my heart" dei Quarterflash, qualcosa di James Bay, mentre di italiano eseguimmo "Sono solo parole" di Noemi, in cui arrangiai io stesso un breve assolo finale. 
+Ebbi l'occasione di studiare con il grande maestro **Livio Lamonea**. Ho frequentato un anno di chitarra hard-rock/metal suonando brani degli Eagles, AC-DC, Jimi Hendrix, Van Halen e tanto altro; ho curato la parte teorica e di armonia e nello stesso anno ho cominciato a fare musica d'insieme:  con diversi alunni dell'accademia si formavano delle band con lo scopo di imparare a suonare assieme e di tirare su una decina di brani per un concerto finale in cui io spesso ricoprivo il ruolo di chitarra solista: tra i vari brani facemmo "Harden my heart" dei Quarterflash, qualcosa di James Bay, mentre di italiano eseguimmo "Sono solo parole" di Noemi, in cui arrangiai io stesso un breve assolo finale. 
 
 La mia tecnica era ancora embrionale e grazie a quest'anno di accademia ebbi la possibilità di crescere molto come musicista e come persona. 
 
@@ -70,7 +70,7 @@ G : Il 24 giugno 2017 feci il mio primo live, si trattava del concerto di fine a
   <img src="{{ site.url }}{{ site.baseurl }}/images/giovanni3.jpg" alt="">
 </figure> 
 
-G : A settembre 2017 io ed un compagno di percorso accademico, **Mirko Pirozzi**, chitarrista, decidemmo di approfondire quanto studiato in musica di insieme formando una band tutta nostra. Cominciammo la ricerca e formazione del gruppo. Partimmo con l'idea di fare una Rock Cover Band coprendo i classici dagli anni '60 fino alla fine degli '80. Usando degli annunci cominciammo a provare con varie persone, e fu lì che conobbi Biagio Anzalone, bassista nonché cantante professionista. Biagio da poco suonava il basso, aveva sempre suonato la chitarra ed ovviamente cantato ma aveva il desiderio di suonare in una band come bassista ed era davvero bravo. Purtroppo dopo le prime prove decise di abbandonarci per altri progetti. Fu lui che mi iniziò allo strumento, fu suo il primo basso che approcciai, così per gioco.
+G : A settembre 2017 io ed un compagno di percorso accademico, **Mirko Pirozzi**, chitarrista, decidemmo di approfondire quanto studiato in musica di insieme formando una band tutta nostra. Cominciammo la ricerca e formazione del gruppo. Partimmo con l'idea di fare una Rock Cover Band coprendo i classici dagli anni '60 fino alla fine degli '80. Usando degli annunci cominciammo a provare con varie persone, e fu lì che conobbi **Biagio Anzalone**, bassista nonché cantante professionista. Biagio da poco suonava il basso, aveva sempre suonato la chitarra ed ovviamente cantato ma aveva il desiderio di suonare in una band come bassista ed era davvero bravo. Purtroppo dopo le prime prove decise di abbandonarci per altri progetti. Fu lui che mi iniziò allo strumento, fu suo il primo basso che approcciai, così per gioco.
 
 ## M : Finalmente siamo arrivati al periodo da bassista! raccontaci un po' come sono andate le cose.
 
@@ -98,7 +98,7 @@ G : Si, non hai torto. Mentre sui vari siti di annunci cercavo membri per la tri
 
 G: Beh, nel tempo libero oltre a suonare curo una [**pagina Facebook**](https://www.facebook.com/giosundaymusic/) e un [**canale Instagram**](https://www.instagram.com/giosundaymusic/), sui cui pubblico video dei miei arrangiamenti, cover, e qualche collaborazione con altre persone. Lo faccio principalmente per tenere traccia dei pezzi che studio o riarrangio e per non dimenticare il lavoro fatto, per riascoltarmi. Suono, ma non mi sono mai limitato a fare solo quello, dato che mi piace, mi "auto produco", ovvero registro da me audio e video per poi eseguirne il montaggio.
 
-L'idea e il nome della pagina Facebook, [**Gio Sunday Music**](https://www.facebook.com/giosundaymusic/), vengono dal 2016: ogni domenica con mia sorella Angela Ruotolo a cui piaceva cantare registravamo qualcosa.
+L'idea e il nome della pagina Facebook, [**Gio Sunday Music**](https://www.facebook.com/giosundaymusic/), vengono dal 2016: ogni domenica con mia sorella **Angela Ruotolo** a cui piaceva cantare registravamo qualcosa.
 
 <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fgiosundaymusic%2Fvideos%2F1809702939321658%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
 
