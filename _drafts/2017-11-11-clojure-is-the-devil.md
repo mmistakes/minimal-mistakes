@@ -53,7 +53,7 @@ As you may know Clojure is a dynamic language and it's also a relatively young l
 facts give some advantages but bring along some baggage.
 
 As Clojure is quite young I think the Clojure development community is still figuring out the best patterns and idioms
-to apply and the pitfalls to avoid. Although languages like Java and C# probably have more inherent flaws than CLojure
+to apply and the pitfalls to avoid. Although languages like Java and C# probably have more inherent flaws than Clojure
 their usage patterns are well understood in most situations and therefore, once these patterns are learned, they're
 flaws are papered over quite well.
 
@@ -196,7 +196,13 @@ One of the Clojure developers I worked with and have a lot of respect for (John 
 namespaces to separate out the data manipulation code that requires, and in some ways defines the 'shape' of the data,
 so that developers have one place to go to find that mental model. Although, I agree with this approach, this only
 tackles part of the problem. The 'data model' for the data at the interfaces of the system, input and output, can be
-isolated in this way but the data into and out of each function is linked to the function.
+isolated in this way.
+
+## Scheming Specs ##
+
+However, the data flowing into and out of each function is linked to the function. Judiciously using namespaces to group
+functions that manipulate data at the boundaries of the system is a useful technique, however each functions 'interface'
+depends on where it is in the call stack so there is a requirement to define the interfaces to a function.
 
 Clojure 1.9 provides Spec to help with exactly this problem and before Spec there was Plumatic Schema [TODO - provide
 references to Spec and Schema]. The advantage of both of these libraries is that you can move fast, not specifying the
@@ -206,7 +212,110 @@ arguably worst?) of both worlds between static and dynamic typing.
 However, specifying the arguments to every function in detail without a compiler to verify that specification is a very
 laborious task. In addition, in my experience, just like adding tests later, adding Spec/Schema later rarely happens.
 
+I've also found, due to the inertia provided by the effort of layering on Spec or Schema after the implementation of
+functions, it's usually only carried out at the boundaries of the system again.
+
+## Models that are mental ##
+
+I've found, in any Clojure/Clojurescript code bases that are more than trivial in size, the effort of building and
+maintaining this mental model of the data through a pipeline of functions becomes considerable. This effort gets worse
+exponentially dependent on coding style differences therefore the number of developers working on a code base has a
+drastic effect on the cognitive load required to build and maintain the model of the data and it's changes as it
+progresses through various functions.
+
+At this point I have to diverge a bit to how I learn things and how I come to an understanding of the systems,
+technologies and languages I work with. My learning style [TODO - research learning styles and cite references] is best
+described as learning through doing combined with reinforcement through repetition. I tend, as do most people, to make
+judgements and assumptions through pattern matching. I learn patterns and what they mean, search for those patterns when
+scanning code and then replace the pattern I've identified with the learned concept. This is what allows me to scan code
+and make sense of it at a reasonable pace.
+
+Even given this pattern matching I often have to apply the associated pattern to the inputs to produce a model of the
+outputs i.e. the local data model input for that function produces the local output model which becomes the input to the
+next function and so on. Therefore the pattern matching alone is not enough as I still need to maintain the mental data
+model passed between functions to make sense of them.
+
+Fortunately, the Clojure community does tend to conform to a number of idioms that mainly cover naming and how to
+de-structure and re-structure data in the small. These idioms, once learned, make it much easier to pattern match to an
+idiom at a glance and make assumptions about what is happening without reading in detail.
+
+However, these are only idioms and they are not mandated by the language or the compiler. In addition, these idioms are
+mostly about the small stuff. There don't yet seem to be any universal idioms for the larger things, like organising
+code into namespaces. These idioms are arriving fast and are adopted quickly in the community. For example, the use of
+Spec/Schema, the use of core.async to provide asynchronous communication or even to decouple parts of a system.
+
+However, Clojure is still fairly young and these idioms and (to use a dirty word in the community) patterns are
+constantly evolving being tested and sometimes rejected. For example, just a few years ago Stuart Sierra's component
+library seem to universally pepper all code bases. It was often miss-used[^1] as a substitute for dependency injection
+and therefore appear liberally scattered through the code base at multiple levels. This over use of a good thing
+resulted in some code smells that have since been recognised as it resulted in artificial coupling and complication.
+
+# Seeking Clojure #
+
+So, I've spent some time talking about generic issues I have with larger more complex Clojure/Clojurescript code bases
+which mainly comes down to being able to work out what the shape of the data is at the time a particular function is
+called plus needing higher level idioms (or patterns) that I can use to relieve the cognitive load and shortcut having
+to decode every function in detail to make sense of what I'm reading.
+
+## Maintaining Mental Data Model ##
+
+### So is this just a problem in Clojure? ###
+
+_Of course not._
+
+Other dynamic languages, such as Ruby and Javascript, also don't enforce the types input and output to a function/method
+and therefore require the building and maintenance of this metal data model.
+
+### Is this just a problem for dynamically typed languages? ###
+
+_Of course not._
+
+The issue of maintaining a mental model of the shape of the data is obviously a requirement in a dynamically
+typed language as the compiler doesn't enforce me specifying the input and output type(s) and defining the type(s)
+somewhere centrally. However, even in a statically typed system, there will often be multiple values for a type and
+therefore your mental model of the data becomes less about the 'shape' (which can be looked up in the type definition)
+and becomes more about the values of a complex type.
+
+It is worth recognising though that good typing systems (mostly Hindley-Milner derived systems) do constrain the problem
+of mental model maintenance to only runtime state.
+
+## Patterns (you idiom!)  ##
+
+### Does only Clojure have issues with missing patterns or idioms? ###
+
+_Of course not._
+
+It's even more ridiculous to suggest that Clojure/Clojurescripts missing patterns and idioms are only applicable to
+Clojure. At it's furthest logical extension, if a language had every idiom/pattern it would inherently contain every
+program ever written or every program ever to be written.
+
+### You've been frame-worked ###
+
+I am again going to say something that is heresy in the Clojure. Clojure has a philosophy of using libraries composed
+together in preference for frameworks. To diverge a little here, I like Luke VanderHart's definition of a framework, if
+we consider a system as a tree the libraries would be leaves on the tree and a framework would be the trunk and major
+branches.
+
+What is the advantage of composing libraries together? You can shape your tree anyway you would like. It's up to you how
+you compose the libraries to form what you require.
+
+However, using libraries composed together comes with a cost. The cost is that every tree is unique and shaped
+differently so it takes cognitive load to build the mental model of the 'tree'.
+
+Frameworks give the basic shape of the tree for 'free'. The cost in most frameworks is that you have to learn a more
+complex 'tree' if you need it to do something obscure you have to work out how to configure the correct 'branch' or
+'twig', or, in the worst case, you may not be able to do the obscure thing inside the framework. However, with a small
+effort, you can learn the trunk and the main branches and then rely on applying this pattern to all similar systems.
+
+One of the issues I feel Clojure has is that there are few frameworks and almost none that are universally
+accepted. Interestingly, I think that the Clojurescript community is slightly ahead of Clojure here, in that Reagent is arguably the
+most popular 'micro-framework' that is used, even Re-frame is built on top of Reagent.
+
 
 
 The things I want to talk about apply equally to others but other languages manifest these concerns
 differently. Although many will focus on the issues here being a fac
+
+[^1]: Stuart has been quite clear that the intent of his component library is to support the reloading required in a
+    REPL driven style of development. The rule of thumb is that a 'component' has a lifecycle i.e. it has a start and a
+    stop with, optionally, associated set up and tear down.
