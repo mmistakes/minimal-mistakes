@@ -119,4 +119,4 @@ This, along the previous post linked at the start of this one, concludes this sh
 
 The questions which to me arise from this small work though, and are very interesting, would be *the differences in Heaps' behaviour of different languages is determined by which interplay between grammatical and lexical richness?* and also *would a Heaps' analysis be able to shed light on this question anyway or is it still not enough?*. We'll definitely need more and deeper investigations to try to answer.
 
-All code used here can be found in [this Jupyter notebook](http://nbviewer.jupyter.org/github/martinapugliese/quantify-languages/blob/master/Heaps%27s%20laws%20different%20languages.ipynb).
+All code used here can be found in [this Jupyter notebook](http://nbviewer.jupyter.org/github.com/martinapugliese/the-talking-data/tree/master/quantifying-natural-languages/blob/master/Heaps%27s%20laws%20different%20languages.ipynb).

@@ -103,7 +103,9 @@ Now, throwing away the starting part of the curve for each corpus, we find what 
 
 In conclusion, seems like our qualitative impression on the Polish corpus is reflected in a higher exponent, but let us bear in mind that this has to be taken with a pinch of salt as this corpus is small. Also, the reason of the slightly waving trend in the Machado corpus is not really clear; it might be due to inner trends in the novels composing the whole corpus of the author which we are here totally ignoring.
 
-All code used here can be found in [this Jupyter notebook](http://nbviewer.jupyter.org/github/martinapugliese/quantify-languages/blob/master/Heaps%27s%20laws%20different%20languages.ipynb).
+All code used here can be found in [this Jupyter notebook](http://nbviewer.jupyter.org/github.com/martinapugliese/the-talking-data/tree/master/quantifying-natural-languages/blob/master/Heaps%27s%20laws%20different%20languages.ipynb).
+
+https://
 
 ## Some journal references 
 
