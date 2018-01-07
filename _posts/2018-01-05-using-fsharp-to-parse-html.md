@@ -19,7 +19,7 @@ let test = Product.GetSample()
 
 This is when I run into a problem. In the talk that [Evelina Gabasova](http://evelinag.com/) gave the data on IMDB was in a nice table. This meant that the TypeProvider could detect it automatically and provide it as a nice property of the `test` object in the above example. My problem is that the data I need is in the Description area of the page, specifically the `<span>` with the attribute `itemprop="description"`. I am trying to turn this information:
 
-```
+```html
 <span itemprop="description">
 	<p>
 		<strong>WHAT IT IS&nbsp;</strong>
@@ -56,7 +56,7 @@ This means that I need a different approach. Thankfully, F# delivered.
 # Using HTML Parser
 If the `HtmlProvider` does not give you what you need for HTML parsing then `FSharp.Data` also has a handy [HTML Parser](http://fsharp.github.io/FSharp.Data/library/HtmlParser.html) which includes some excellent documentation and examples. I put together a new script to extract the data from the website.
 
-```
+```fsharp
 #I "./packages"
 #r "FSharp.Data/lib/net40/FSharp.Data.dll"
 open FSharp.Data
