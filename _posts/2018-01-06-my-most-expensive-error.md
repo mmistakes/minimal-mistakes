@@ -30,4 +30,21 @@ I'll be honest, I didn't actually catch this bug. I put this code in production 
 ## F# Units of Measure Save the Day
 For the last several years I have been moving toward more and more strict programming languages. When I heard that F# allows you to put Units of Measure on your numbers, I fell in love. I have longed for such a feature. So many errors can be eliminated when dealing with numbers if you can track and enforce units alighment in numbers.
 
-Because my soul never settled with my initial Python solution, I decided to rewrite the fee calcultion.
+Because my soul never settled with my initial Python solution, I decided to rewrite the fee calcultion. When I started I immediately declare the Units of Measure that I would need:
+
+```fsharp
+// Units of Measure Types
+[<Measure>] type USD (* US Dollar *)
+[<Measure>] type lb (* Imperial pound *)
+```
+
+I could then write my fee calculation with the Units of Measure on the numbers to ensure everything worked. When I did this I immediately saw the mistake. You will notice in this new function that I do multiply by the `feeRate`.
+
+```fsharp
+// New fee function
+let calculateWeightFee (baseFee : decimal<USD>) (weightFeeCutoff : decimal<lb>) 
+    (feeRate : decimal<USD/lb>) (weight : decimal<lb>) =
+    baseFee + (max 0M<lb> (weight - weightFeeCutoff)) * feeRate
+```
+
+I felt pretty stupid after such an obvious mistake. Fortunately, the previous version of the code was only in production for a couple of days. Now granted, better unit testing would have caught this. This post is not meant to disparage Python, or any other language, in any way. Rather, I am highlighting that F# is eliminating an entire class of errors for me and making me more productive. I much prefer the compiler barking at me about my units not matching than me spending hours or days hunting for where I missed a multiplication or a division. It feels great knowing that my units line up and that if I miss a small detail like this, the compiler will gently guide me back to sanity.
