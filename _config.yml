@@ -9,10 +9,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Matthew Crews"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Matthew Crews"
+description              : "My life with F#, Optimization, and Machine Learning"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -22,7 +22,7 @@ words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "matthewcrews"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -62,7 +62,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "McCrews"
 facebook:
   username               :
   app_id                 :
@@ -84,10 +84,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  name             : "Matthew Crews"
+  avatar           : "https://avatars3.githubusercontent.com/u/1593215?s=460&v=4"
   bio              : "I am an amazing person."
-  location         : "Somewhere"
+  location         : "Portland, OR"
   email            :
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
@@ -103,10 +103,10 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : "mattcrews"
   pinterest        :
   soundcloud       :
-  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
+  stackoverflow    : "288360/matthew-crews"
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
   twitter          :
@@ -253,3 +253,5 @@ defaults:
       comments: # true
       share: true
       related: true
+      
+remote_theme: "mmistakes/minimal-mistakes"
