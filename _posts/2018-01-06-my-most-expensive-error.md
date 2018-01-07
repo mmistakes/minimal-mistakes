@@ -8,7 +8,7 @@ One of the most difficult parts of putting together algorithms has been making s
 When I am writing in R, Python, or C# I don't have any kind of Units of Measure checking. This has led to a lot of frustrating debugging in the past where I missed some simple multiplication or division in my code. These types of bugs can be really nefarious because you can often get numbers which seem sensible at first but then blow up when outlier data is introduced.
 
 ## The Initial Error
-I was tasked with writing a simple fee calculation for our products on Amazon. We need to know the impact of the new fees on our costing before the new fees go into effect. This is such a simple thing. On my first pass I decided to just throw something together in Python. When I did this, I made a very expensive mistake. Can you see it?
+I was tasked with writing a simple fee calculation for our products on Amazon. We need to know the impact of the new fees on our costing before they go into effect. This is such a simple thing. On my first pass I decided to just throw something together in Python. When I did this, I made a very expensive mistake. Can you see it?
 
 ```python
 def calculate_item_fba_fee(cost_config, item):
@@ -25,12 +25,12 @@ The `fee` value is composed of a `base_fee` and a $ per pound fee if the weight 
 
 You may see the error now, I never multiply the overage weight by the $/lb fee rate. If you look at the units of the fee calculation I am adding the `base_fee`, which is in USD (US Dollars), to `lbs`. That does not make any sense. You can't add different types of units, but most languages will let you do this all day. This was insidious because for most of our items, the fee was right. Only in cases where the item was over 2.0 lbs did we get a wrong fee.
 
-I'll be honest, I didn't actually catch this bug. I put this code in production but I never felt really good about it. I couldn't explain it but there was disquite in my soul. I was already starting to rewrite parts of our system in F# so I decided that I would rewrite this little piece while it was fresh in my head.
+I'll be honest, I didn't actually catch this bug. I put this code in production but I never felt really good about it. I couldn't explain it but there was disquite in my soul. I was already starting to rewrite parts of our system in F# so I decided that I would rewrite this little piece while it was fresh in my mind.
 
 ## F# Units of Measure Save the Day
-For the last several years I have been moving toward more and more strict programming languages. When I heard that F# allows you to put Units of Measure on your numbers, I fell in love. I have longed for such a feature. So many errors can be eliminated when dealing with numbers if you can track and enforce units alighment in numbers.
+For the last several years I have been moving toward more and more strict programming languages. When I heard that F# allows you to put Units of Measure on your numbers, I fell in love. I have longed for such a feature. So many errors can be eliminated when dealing with numbers if you can track and enforce units alignment in numbers.
 
-Because my soul never settled with my initial Python solution, I decided to rewrite the fee calcultion. When I started I immediately declare the Units of Measure that I would need:
+Because my soul never settled with my initial Python solution, I decided to rewrite the fee calcultion. When I started I immediately declared the Units of Measure that I would need:
 
 ```fsharp
 // Units of Measure Types
@@ -38,7 +38,7 @@ Because my soul never settled with my initial Python solution, I decided to rewr
 [<Measure>] type lb (* Imperial pound *)
 ```
 
-I could then write my fee calculation with the Units of Measure on the numbers to ensure everything worked. When I did this I immediately saw the mistake. You will notice in this new function that I do multiply by the `feeRate`.
+I then wrote my fee calculation with the Units of Measure on the numbers to ensure everything matched. I then immediately saw the mistake. You will notice in this new function that I do multiply by the `feeRate`.
 
 ```fsharp
 // New fee function
