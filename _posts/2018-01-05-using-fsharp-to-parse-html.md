@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 At work I have been tasked with extracting the product description information for several of our products to be used as an import for an external system. Normally I would just write a query for the database to get all of this information but in this case I do not have access to the database directly. Even if I did have it, I am not familiar with the schema so I would rather not have to spend the effort digging into if I do not have to. I have been putting off this project since it was not high priority but recently I came across an excellent talk by [Evelina Gabasova at NDC Oslo](https://www.youtube.com/watch?v=K_AlkvZsUus&t=1219s) where she showed the use of TypeProviders to connect to IMDB to extract data on cast members of Star Wars. As I watched this I had a eureka moment, "Why not just use F# to pull the data directly from the website instead of dealing with the SQL Schema?"
 
