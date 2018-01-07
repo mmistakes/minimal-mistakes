@@ -9,7 +9,7 @@ When I am writing in R, Python, or C# I don't have any kind of Units of Measure 
 
 I was tasked with writing a simpel fee calculation for our products on Amazon. We wanted to be able to calcualte the impact of the new fees to the cost of our products before the new fees went into effect. This is such a simple thing. On my first pass I decided to just throw something together in Python. When I did this, I made a very expensive mistake. Can you see it?
 
-'''
+'''python
 def calculate_item_fba_fee(cost_config, item):
     weight_tiers = cost_config[item['item_size']]['WeightTiers']
     weight_tier = [tier for tier in weight_tiers if
