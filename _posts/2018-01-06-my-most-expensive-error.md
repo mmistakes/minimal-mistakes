@@ -14,6 +14,10 @@ def calculate_item_fba_fee(cost_config, item):
     weight_tiers = cost_config[item['item_size']]['WeightTiers']
     weight_tier = [tier for tier in weight_tiers if
                    (tier['MinWeight'] < item['item_weight']) & (tier['MaxWeight'] >= item['item_weight'])][0]
-    fee = weight_tier['BaseFee'] + max(0.0, item['item_weight'] - weight_tier['PerLbFeeWeightStart'])
+    fee = weight_tier['BaseFee'] + max(0.0, item['item_weight'] - weight_tier['weight_fee_lb_cutoff'])
     return fee
 ```
+
+This is a simple function which is taking a `Dictionary`, `cost_config`, which holds some configuartion values and a row of a Pandas `DataFrame`, `item`. The first line of the function looks up the weight tiers which may apply to the item. It then searches through the tiers to find the `weight_tier` which matches the weight of the `item`. It then calculates the fee, which is where the error is.
+
+The `fee` value is composed of a `base_fee` and a per pound fee, if the weight is above the `weight_fee_lb_cutoff` value. I calculate the weight overage by taking the max of 0 and the items weight minus the PerLbFee cutoff weight. If the item is under the Weight
