@@ -1,7 +1,7 @@
 ---
 published: true
 ---
-The title for this may be a little over the top but it is not far from the truth. I am wanting to show how Units of Measure in F# can protect against some of the most insidious types of errors.
+The title for this may be a little over the top but it is not far from the truth. I am wanting to show how Units of Measure in F# can protect against some of the most insidious types of errors, mismatched units.
 
 One of the most difficult parts of putting together algorithms has been making sure that the Units of Measure for numbers match. For example, you shuold not be able to add lbs and cm, it doesn't make sense. In most programming languages though, a number is just a number. You may be working with a strict language which requires you to convert from `int` to `float` before multiplying, but many will do this implicility.
 
