@@ -8,4 +8,4 @@ I am developer and analyist working for an e-commerce retailer based in Portland
 
 I use C# and SQL as necessary. I use R when I cannot find what I need in F#.
 
-Feel free to reach out to me on twitter (@McCrews) or LinkedIn. If you have any question regarding using F# and what the transition is like, I would love to chat!
+Feel free to reach out to me on Twitter (@McCrews) or LinkedIn. If you have any question regarding using F# and what the transition is like, I would love to chat!
