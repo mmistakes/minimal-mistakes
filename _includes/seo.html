@@ -110,10 +110,10 @@
 <link rel="canonical" href="{{ canonical_url }}">
 
 {% if paginator.previous_page %}
-  <link rel="prev" href="{{ paginator.previous_page_path | prepend: seo_url }}">
+  <link rel="prev" href="{{ paginator.previous_page_path | absolute_url }}">
 {% endif %}
 {% if paginator.next_page %}
-  <link rel="next" href="{{ paginator.next_page_path | prepend: seo_url }}">
+  <link rel="next" href="{{ paginator.next_page_path | absolute_url }}">
 {% endif %}
 
 {% if site.og_image %}
