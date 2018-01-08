@@ -1,34 +1,51 @@
-<!-- begin SEO -->
-{% if site.url %}
-  {% assign seo_url = site.url | append: site.baseurl %}
-{% endif %}
-{% assign seo_url = seo_url | default: site.github.url %}
+<!-- begin _includes/seo.html -->
+{%- if site.url -%}
+  {%- assign seo_url = site.url | append: site.baseurl -%}
+{%- endif -%}
+{%- assign seo_url = seo_url | default: site.github.url -%}
 
-{% if page.title %}
-  {% assign seo_title = page.title | append: " " | append: site.title_separator | append: " " | append: site.title %}
-{% endif %}
+{%- if page.title -%}
+  {%- assign seo_title = page.title | append: " " | append: site.title_separator | append: " " | append: site.title -%}
+{%- endif -%}
 
-{% if seo_title %}
-  {% assign seo_title = seo_title | markdownify | strip_html | strip_newlines | escape_once %}
-{% endif %}
+{%- if seo_title -%}
+  {%- assign seo_title = seo_title | markdownify | strip_html | strip_newlines | escape_once -%}
+{%- endif -%}
 
-{% assign canonical_url = page.url | replace: "index.html", "" | absolute_url %}
+{%- assign canonical_url = page.url | replace: "index.html", "" | absolute_url %}
+
+{%- assign seo_description = page.description | default: page.excerpt | default: site.description -%}
+{%- if seo_description -%}
+  {%- assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once -%}
+{%- endif -%}
+
+{%- assign author = page.author | default: page.authors[0] | default: site:author -%}
+{%- assign author = site.data.authors[author] | default: author -%}
+
+{%- if author.twitter -%}
+  {%- assign author_twitter = author.twitter | replace: "@", "" -%}
+{%- endif -%}
+
+{%- assign page_large_image = page.header.og_image | default: page.header.overlay_image | default: page.header.image -%}
+{%- unless page_large_image contains '://' -%}
+  {%- assign page_large_image = page_large_image | absolute_url -%}
+{%- endunless -%}
+{%- assign page_large_image = page_large_image | escape -%}
+
+{%- assign page_teaser_image = page.header.teaser | default: site.og_image -%}
+{%- unless page_teaser_image contains '://' -%}
+  {%- assign page_teaser_image = page_teaser_image | absolute_url -%}
+{%- endunless -%}
+{%- assign page_teaser_image = page_teaser_image | escape -%}
+
+{%- assign site_og_image = site.og_image -%}
+{%- unless site_og_image contains '://' -%}
+  {%- assign site_og_image = site_og_image | absolute_url -%}
+{%- endunless -%}
+{%- assign site_og_image = site_og_image | escape -%}
 
 <title>{{ seo_title | default: site.title }}{% if paginator %}{% unless paginator.page == 1 %} {{ site.title_separator }} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}{% endif %}</title>
-
-{% assign seo_description = page.description | default: page.excerpt | default: site.description %}
-{% if seo_description %}
-  {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once %}
-{% endif %}
-
 <meta name="description" content="{{ seo_description }}">
-
-{% assign author = page.author | default: page.authors[0] | default: site:author %}
-{% assign author = site.data.authors[author] | default: author %}
-
-{% if author.twitter %}
-  {% assign author_twitter = author.twitter | replace: "@", "" %}
-{% endif %}
 
 {% if author.name %}
   <meta name="author" content="{{ author.name | default: author }}">
@@ -46,24 +63,6 @@
 {% if page.excerpt %}
   <meta property="og:description" content="{{ seo_description }}">
 {% endif %}
-
-{% assign page_large_image = page.header.og_image | default: page.header.overlay_image | default: page.header.image %}
-{% unless page_large_image contains '://' %}
-  {% assign page_large_image = page_large_image | absolute_url %}
-{% endunless %}
-{% assign page_large_image = page_large_image | escape %}
-
-{% assign page_teaser_image = page.header.teaser | default: site.og_image %}
-{% unless page_teaser_image contains '://' %}
-  {% assign page_teaser_image = page_teaser_image | absolute_url %}
-{% endunless %}
-{% assign page_teaser_image = page_teaser_image | escape %}
-
-{% assign site_og_image = site.og_image %}
-{% unless site_og_image contains '://' %}
-  {% assign site_og_image = site_og_image | absolute_url %}
-{% endunless %}
-{% assign site_og_image = site_og_image | escape %}
 
 {% if page_large_image %}
   <meta property="og:image" content="{{ page_large_image }}">
@@ -153,4 +152,4 @@
 {% if site.naver-site-verification %}
   <meta name="naver-site-verification" content="{{ site.naver-site-verification }}">
 {% endif %}
-<!-- end SEO -->
+<!-- end _includes/seo.html -->
