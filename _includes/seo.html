@@ -66,6 +66,12 @@
 {% endunless %}
 {% assign site_og_image = site_og_image | escape %}
 
+{% if page_large_image %}
+  <meta property="og:image" content="{{ page_large_image }}">
+{% elsif page_teaser_image %}
+  <meta property="og:image" content="{{ page_teaser_image }}">
+{% endif %}
+
 {% if site.twitter.username %}
   <meta name="twitter:site" content="@{{ site.twitter.username | replace: "@", "" }}">
   <meta name="twitter:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
@@ -87,6 +93,10 @@
   {% endif %}
 {% endif %}
 
+{% if page.date %}
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+{% endif %}
+
 {% if site.facebook %}
   {% if site.facebook.publisher %}
     <meta property="article:publisher" content="{{ site.facebook.publisher }}">
@@ -97,16 +107,6 @@
   {% endif %}
 {% endif %}
 
-{% if page_large_image %}
-  <meta property="og:image" content="{{ page_large_image }}">
-{% elsif page_teaser_image %}
-  <meta property="og:image" content="{{ page_teaser_image }}">
-{% endif %}
-
-{% if page.date %}
-  <meta property="og:type" content="article">
-  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
-{% endif %}
 <link rel="canonical" href="{{ canonical_url }}">
 
 {% if paginator.previous_page %}
