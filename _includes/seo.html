@@ -23,21 +23,20 @@
 
 <meta name="description" content="{{ seo_description }}">
 
-{% assign seo_author = page.author | default: page.author[0] | default: site.author.name %}
-{% if seo_author %}
-  {% if seo_author.twitter %}
-    {% assign seo_author_twitter = seo_author.twitter %}
-  {% else %}
-    {% if site.data.authors and site.data.authors[seo_author] %}
-      {% assign seo_author_twitter = site.data.authors[seo_author].twitter  %}
-    {% else %}
-      {% assign seo_author_twitter = seo_author  %}
-    {% endif %}
-  {% endif %}
-  {% assign seo_author_twitter = seo_author_twitter | replace: "@", "" %}
+{% assign author = page.author | default: page.authors[0] | default: site:author %}
+{% assign author = site.data.authors[author] | default: author %}
+
+{% if author.twitter %}
+  {% assign author_twitter = author.twitter | replace: "@", "" %}
 {% endif %}
 
-<meta name="author" content="{{ seo_author }}">
+{% if author.name %}
+  <meta name="author" content="{{ author.name | default: author }}">
+{% endif %}
+
+{% if page.date %}
+  <meta property="og:type" content="article">
+{% endif %}
 
 <meta property="og:locale" content="{{ site.locale | replace: "-", "_" | default: "en_US" }}">
 <meta property="og:site_name" content="{{ site.title }}">
