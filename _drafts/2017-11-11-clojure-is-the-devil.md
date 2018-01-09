@@ -130,7 +130,7 @@ easy to understand, then there is no working documentation of the implementation
 the design when required is that much harder and slower.
 
 This is also a reason why, although I like property based testing to thoroughly 'validate' the invariants in the
-function I think it completely fails in documenting the design. I personally find example based tests that show
+function I think it fails in documenting the design. I personally find example based tests that show
 the expected output for a given input much more informative.
 
 # Lack of Clojure... #
@@ -154,7 +154,15 @@ will have experienced someone asking you a question or insisting you attend a me
 a problem and you dropping that mental model on the floor. It can take many minutes or even an hour or more to
 re-assemble this mental model to the same point so you can continue your work.
 
-Given, this anything that helps a developer build and maintain a mental model is worth having.
+### Why mental models matter? ###
+
+Why does supporting the building a mental model matter?
+
+It's been widely researched [TODO cite sources here] that developer typically spend xx% [TODO cite percentages here]
+reading code. We spend much more time reading our own old code or reading someone else's code. We need to read code in
+order to determine how to fix a bug, where to add this new feature, etc.
+
+Given this effort spent in reading and understanding code, anything that helps a developer build and maintain a mental model is worth having.
 
 One of the [opinions](#clojures-opinions) in Clojure/Clojurescript is that of defaulting to immutable data. As discussed
 here and elsewhere, treating data as immutable has the effect of pushing the state changes in a system to its
@@ -181,39 +189,6 @@ Often in order to work out the inputs and outputs of a function you need to trac
 functions in order to just work out what the data looks like. Although you also frequently have to do this with
 statically typed languages to determine the exact values of the types you can at least determine what the types are by
 looking at the type signature is. This is one of the big disadvantages of a dynamically typed language.
-
-## Name your spaces  ##
-
-In my opinion one of the most important features of Clojure/Clojurescript is it's ability to gather functions into
-namespaces. In addition good naming of arguments and local references is just as important. Zac Tellman has some great
-thoughts on naming in his ['Elements of Clojure'](https://leanpub.com/elementsofclojure) book.
-
-If namespaces and naming of variables are used effectively they can help minimise the cognitive load of holding a mental
-model of the inputs and outputs to a function. Good naming of arguments and local references can give you a head start
-in figuring out what the input and output data looks like.
-
-One of the Clojure developers I worked with and have a lot of respect for (John Cowie) suggested that developers use
-namespaces to separate out the data manipulation code that requires, and in some ways defines the 'shape' of the data,
-so that developers have one place to go to find that mental model. Although, I agree with this approach, this only
-tackles part of the problem. The 'data model' for the data at the interfaces of the system, input and output, can be
-isolated in this way.
-
-## Scheming Specs ##
-
-However, the data flowing into and out of each function is linked to the function. Judiciously using namespaces to group
-functions that manipulate data at the boundaries of the system is a useful technique, however each functions 'interface'
-depends on where it is in the call stack so there is a requirement to define the interfaces to a function.
-
-Clojure 1.9 provides Spec to help with exactly this problem and before Spec there was Plumatic Schema [TODO - provide
-references to Spec and Schema]. The advantage of both of these libraries is that you can move fast, not specifying the
-input and output data, to start with and add the detail when the problem is better understood. Getting the best (and
-arguably worst?) of both worlds between static and dynamic typing.
-
-However, specifying the arguments to every function in detail without a compiler to verify that specification is a very
-laborious task. In addition, in my experience, just like adding tests later, adding Spec/Schema later rarely happens.
-
-I've also found, due to the inertia provided by the effort of layering on Spec or Schema after the implementation of
-functions, it's usually only carried out at the boundaries of the system again.
 
 ## Models that are mental ##
 
@@ -311,10 +286,78 @@ One of the issues I feel Clojure has is that there are few frameworks and almost
 accepted. Interestingly, I think that the Clojurescript community is slightly ahead of Clojure here, in that Reagent is arguably the
 most popular 'micro-framework' that is used, even Re-frame is built on top of Reagent.
 
+So I would contend that having an accepted widely adopted set of frameworks for common problems (web development,
+distributed stream processing, distributed messaging, etc.) provides developers, use the recognition of patterns in
+code, with a short hand to enable them to build a mental model of the system.
 
+This is where I disagree with most of the Clojure community. Frameworks are not evil (yes, even Spring is not evil - I
+remember J2EE where every EJB needed an interface to be implemented!). Frameworks are important. They provide capability
+out of the box to solve the common problems that, typically, I've seen solved over and over again in different ways in
+Clojure/Clojurescript code bases.
 
-The things I want to talk about apply equally to others but other languages manifest these concerns
-differently. Although many will focus on the issues here being a fac
+More importantly, in my opinion, frameworks provide patterns that, once learned (and learned once), give the developer a
+short hand to recognise what the system is doing.
+
+If you can scan code and quickly identify, through the use of standard patterns in a framework, that this code is
+parsing HTTP, this code is doing verification/validation but this code is the heart of the business problem it speeds up
+understanding.
+
+## Name your spaces  ##
+
+In my opinion one of the most important features of Clojure/Clojurescript is it's ability to gather functions into
+namespaces. In addition good naming of arguments and local references is just as important. Zac Tellman has some great
+thoughts on naming in his ['Elements of Clojure'](https://leanpub.com/elementsofclojure) book.
+
+If namespaces and naming of variables are used effectively they can help minimise the cognitive load of holding a mental
+model of the inputs and outputs to a function. Good naming of arguments and local references can give you a head start
+in figuring out what the input and output data looks like.
+
+One of the Clojure developers I worked with and have a lot of respect for (John Cowie) suggested that developers use
+namespaces to separate out the data manipulation code that requires, and in some ways defines the 'shape' of the data,
+so that developers have one place to go to find that mental model. Although, I agree with this approach, this only
+tackles part of the problem. The 'data model' for the data at the interfaces of the system, input and output, can be
+isolated in this way.
+
+## Scheming Specs ##
+
+The data flowing into and out of each function is linked to the function. Judiciously using namespaces to group
+functions that manipulate data at the boundaries of the system is a useful technique, however each functions 'interface'
+depends on where it is in the call stack so there is a requirement to define the interfaces to a function.
+
+Clojure 1.9 provides Spec to help with exactly this problem and before Spec there was Plumatic Schema [TODO - provide
+references to Spec and Schema]. The advantage of both of these libraries is that you can move fast, not specifying the
+input and output data, to start with and add the detail when the problem is better understood. Getting the best (and
+arguably worst?) of both worlds between static and dynamic typing.
+
+However, specifying the arguments to every function in detail without a compiler to verify that specification is a very
+laborious task. In addition, in my experience, just like adding tests later, adding Spec/Schema later rarely happens.
+
+I've also found, due to the inertia provided by the effort of layering on Spec or Schema after the implementation of
+functions, it's usually only carried out at the boundaries of the system again.
+
+# [TODO - suggestions to fix issues above] #
+
+  * Naming
+  * Namespaces for the business data model
+  * Namespaces for the operational concerns
+  * Keep code simple
+  * Solve the business problem
+  * Spec or Schema used as you develop to document/enforce the business data model
+  * TDD - tests by example to document the expected i/o's in a function
+  * smaller more generic functions composed in larger ones - obvious but I see far too many specific fn's cos they're
+  easier to build
+  * separate business rules from the operational concerns of the system (ideally, delegate the operational concerns to
+    a framework)
+  * Write code for understandability first
+      * pair programming
+      * code reviews
+  * Discipline
+  * Discipline
+  * Discipline
+
+The things I have talked about apply equally to other langauges but other languages manifest these concerns
+differently. Typically, other languages have widely adopted frameworks and patterns/idioms. TDD is often better accepted
+in other languages as an approach that brings benefits beyond feedback and verification.
 
 [^1]: Stuart has been quite clear that the intent of his component library is to support the reloading required in a
     REPL driven style of development. The rule of thumb is that a 'component' has a lifecycle i.e. it has a start and a
