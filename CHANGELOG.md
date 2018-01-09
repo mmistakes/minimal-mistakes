@@ -4,6 +4,7 @@
 
 * Simplify year archive Liquid.
 * Add documentation on how to downgrade theme.
+* Improve greedy navigation's layout when JavaScript is disabled.
 
 ### Bug Fixes
 

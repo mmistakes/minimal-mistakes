@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-01-08T20:19:26-05:00
+last_modified_at: 2018-01-09T13:56:57-05:00
 toc: true
 ---
 
@@ -14,6 +14,7 @@ toc: true
 
 * Simplify year archive Liquid.
 * Add documentation on how to downgrade theme.
+* Improve greedy navigation's layout when JavaScript is disabled.
 
 ### Bug Fixes
 
