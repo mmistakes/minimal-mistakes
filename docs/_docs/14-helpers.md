@@ -30,7 +30,7 @@ feature_row:
   - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
     title: "Placeholder 3"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
-last_modified_at: 2018-01-09T14:23:09-05:00
+last_modified_at: 2018-01-09T14:26:13-05:00
 toc: true
 toc_label: "Helpers"
 toc_icon: "cogs"
@@ -220,20 +220,20 @@ header:
 
 ### Vimeo
 
-To embed the following Vimeo video at url `https://vimeo.com/97649261` into a post or page's main content you'd use: 
+To embed the following Vimeo video at url `https://vimeo.com/212731897` into a post or page's main content you'd use: 
 
 ```liquid
-{% raw %}{% include video id="97649261" provider="vimeo" %}{% endraw %}
+{% raw %}{% include video id="212731897" provider="vimeo" %}{% endraw %}
 ```
 
-{% include video id="97649261" provider="vimeo" %}
+{% include video id="212731897" provider="vimeo" %}
 
 To embed it as a video header you'd use the following YAML Front Matter
 
 ```yaml
 header:
   video:
-    id: 97649261
+    id: 212731897
     provider: vimeo
 ```
 
