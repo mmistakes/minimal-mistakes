@@ -2,7 +2,7 @@
 title: "Stylesheets"
 permalink: /docs/stylesheets/
 excerpt: "Instructions for customizing and building the theme's stylesheets."
-last_modified_at: 2018-01-05T08:52:56-05:00
+last_modified_at: 2018-01-09T09:59:16-05:00
 toc: true
 ---
 
@@ -177,6 +177,30 @@ $base0c: #89ddff;
 $base0d: #82aaff;
 $base0e: #c792ea;
 $base0f: #ff5370;
+```
+
+##### Solarized Light
+
+![solarized-light-code-block]({{ '/assets/images/solarized-light-code-block.jpg' | absolute_url }})
+
+```scss
+/* solarized light syntax highlighting (base16) */
+$base00: #fafafa !default;
+$base01: #073642 !default;
+$base02: #586e75 !default;
+$base03: #657b83 !default;
+$base04: #839496 !default;
+$base05: #586e75 !default;
+$base06: #eee8d5 !default;
+$base07: #fdf6e3 !default;
+$base08: #dc322f !default;
+$base09: #cb4b16 !default;
+$base0a: #b58900 !default;
+$base0b: #859900 !default;
+$base0c: #2aa198 !default;
+$base0d: #268bd2 !default;
+$base0e: #6c71c4 !default;
+$base0f: #d33682 !default;
 ```
 
 ##### Contrast
