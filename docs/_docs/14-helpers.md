@@ -30,10 +30,10 @@ feature_row:
   - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
     title: "Placeholder 3"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
-last_modified_at: 2018-01-03T11:30:42-05:00
+last_modified_at: 2018-01-09T14:23:09-05:00
 toc: true
 toc_label: "Helpers"
-toc_icon: "gears"
+toc_icon: "cogs"
 ---
 
 You can think of these Jekyll helpers as little shortcuts. Since GitHub Pages doesn't allow most plugins --- [custom tags](https://jekyllrb.com/docs/plugins/#tags) are out. Instead the theme leverages [**includes**](https://jekyllrb.com/docs/templates/#includes) to do something similar.
