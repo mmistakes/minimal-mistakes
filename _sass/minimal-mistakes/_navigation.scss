@@ -309,6 +309,16 @@
   }
 }
 
+.no-js {
+  .greedy-nav {
+    .visible-links {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      overflow: visible;
+    }
+  }
+}
+
 /*
      Navigation list
      ========================================================================== */
