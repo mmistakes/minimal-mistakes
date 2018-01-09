@@ -3,6 +3,7 @@
 ### Enhancements
 
 * Simplify year archive Liquid.
+* Add documentation on how to downgrade theme.
 
 ### Bug Fixes
 
