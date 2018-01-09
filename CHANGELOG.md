@@ -5,8 +5,11 @@
 * Simplify year archive Liquid.
 * Add documentation on how to downgrade theme.
 * Improve greedy navigation's layout when JavaScript is disabled.
+* Improve SEO include by grouping similar tags, reducing white-space, and adding `article:modified_time`. [#1456](https://github.com/mmistakes/minimal-mistakes/pull/1456)
 
 ### Bug Fixes
+
+* Allow`author` to accept an object or string. [#289](https://github.com/mmistakes/minimal-mistakes/issues/289)
 
 ## [4.9.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.9.0)
 
