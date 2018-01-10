@@ -2,7 +2,7 @@
 title: "License"
 permalink: /docs/license/
 excerpt: "License for Minimal Mistakes Jekyll Theme."
-last_modified_at: 2017-12-11T09:25:55-05:00
+last_modified_at: 2018-01-10T11:22:01-05:00
 ---
 
 The MIT License (MIT)
@@ -68,3 +68,7 @@ Jekyll Group-By-Array is distributed under the terms of the [MIT License](http:/
 Minimal Mistakes incorporates [@allejo's Pure Liquid Jekyll Table of Contents](https://allejo.io/blog/a-jekyll-toc-in-liquid-only/),
 Copyright (c) 2017 Vladimir Jimenez.
 Pure Liquid Jekyll Table of Contents is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
+Minimal Mistakes incorporates [Lunr](http://lunrjs.com),
+Copyright (c) 2017 Oliver Nightingale.
+Lunr is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
