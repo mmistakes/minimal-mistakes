@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-01-09T14:01:19-05:00
+last_modified_at: 2018-01-10T11:15:27-05:00
 toc: true
 ---
 
@@ -16,6 +16,7 @@ toc: true
 * Add documentation on how to downgrade theme.
 * Improve greedy navigation's layout when JavaScript is disabled.
 * Improve SEO include by grouping similar tags, reducing white-space, and adding `article:modified_time`. [#1456](https://github.com/mmistakes/minimal-mistakes/pull/1456)
+* Minify `assets/js/lunr/lunr.js`.
 
 ### Bug Fixes
 
