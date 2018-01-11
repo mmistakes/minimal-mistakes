@@ -1,11 +1,11 @@
 # main links
 main:
   - title: "Developers"
-    url: http://docs.convictional.com/
+    url: http://docs.convictional.com
+  - title: "Help Center"
+    url: http://help.convictional.com
   - title: "Resources"
     url: https://convictional.com/blogs/resources
-  - title: "Support"
-    url: http://help.convictional.com
   - title: "Contact"
     url: https://convictional.com/pages/contact
   - title: "Sign In ➔"
