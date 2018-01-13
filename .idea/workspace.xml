@@ -1,0 +1,1232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e64b8336-f5dc-4095-80a1-cbcb070eb8b8" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/.editorconfig" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.github/CONTRIBUTING.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.github/stale.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/Gemfile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_config.dev.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_config.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/authors.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/chocolate-chip-cookies/comment-1473870213530.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/chocolate-chip-cookies/comment-1478213467992.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/chocolate-chip-cookies/comment-1500181304581.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/chocolate-chip-cookies/comment-1500214855350.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/gemified-theme-beta/comment-1479508047505.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/gemified-theme-beta/comment-1480591890264.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/gemified-theme-beta/comment-1482532165381.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/gemified-theme-beta/comment-1483456786593.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/gemified-theme-beta/comment-1483457152038.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/layout-comments/comment-1470944006665.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/layout-comments/comment-1470944162041.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/layout-comments/comment-1472308473018.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/layout-comments/comment-1514406795156.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/layout-comments/comment-1514407115153.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/layout-header-image-horizontal/comment-1483124729757.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/layout-header-image-horizontal/comment-1483128389943.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/layout-header-image-text-readability/comment-1474306861206.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/layout-header-image-text-readability/comment-1479253931238.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/layout-header-image-text-readability/comment-1479265677846.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/layout-header-overlay-image/comment-1512840683260.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/layout-header-overlay-image/comment-1513110608614.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/layout-header-overlay-image/comment-1513111329875.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/layout-header-overlay-image/comment-1513111563922.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/layout-related-posts/comment-1500183131535.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/layout-related-posts/comment-1500214974083.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/layout-sidebar-nav-list/comment-1492811460488.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/layout-sidebar-nav-list/comment-1492812977693.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/layout-table-of-contents-post/comment-1512118683486.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/markup-more-images/comment-1472040323579.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/markup-more-images/comment-1472146638519.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/markup-syntax-highlighting/comment-1470969665387.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/markup-syntax-highlighting/comment-1478928407894.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/markup-syntax-highlighting/comment-1487758246637.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/markup-syntax-highlighting/comment-1505403032256.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/markup-syntax-highlighting/comment-1505403241808.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/markup-syntax-highlighting/comment-1514836962551.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/post-future-date/comment-1472064560364.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/post-future-date/comment-1472786137736.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/post-gallery/comment-1500055247314.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/post-gallery/comment-1500056210776.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/post-modified/comment-1497284119888.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/post-modified/comment-1497284892766.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/post-video-youtube/comment-1506623182288.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/post-video-youtube/comment-1506623710918.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/post-video-youtube/comment-1506632190623.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/welcome-to-jekyll/comment-1470942205700.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/welcome-to-jekyll/comment-1470942247755.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/welcome-to-jekyll/comment-1470942265819.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/welcome-to-jekyll/comment-1470942493518.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/welcome-to-jekyll/comment-1471823346931.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/welcome-to-jekyll/comment-1471834988411.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/welcome-to-jekyll/comment-1472786599470.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/welcome-to-jekyll/comment-1474328950155.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/welcome-to-jekyll/comment-1500505983331.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/comments/welcome-to-jekyll/comment-1507141538771.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/navigation.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_data/ui-text.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_docs/01-quick-start-guide.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_docs/02-structure.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_docs/03-installation.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_docs/04-upgrading.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_docs/05-configuration.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_docs/06-overriding-theme-defaults.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_docs/07-navigation.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_docs/08-ui-text.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_docs/09-authors.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_docs/10-layouts.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_docs/11-posts.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_docs/12-pages.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_docs/13-collections.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_docs/14-helpers.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_docs/15-utility-classes.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_docs/16-stylesheets.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_docs/17-javascript.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_docs/18-history.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_docs/19-contributing.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_docs/20-docs-2-2.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_docs/21-license.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_drafts/post-draft.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_layouts/default.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_pages/404.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_pages/about.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_pages/archive-layout-with-content.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_pages/category-archive.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_pages/collection-archive.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_pages/home.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_pages/lorem-ipsum.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_pages/page-a.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_pages/page-archive.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_pages/page-b.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_pages/portfolio-archive.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_pages/recipes-archive.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_pages/sample-page.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_pages/sitemap.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_pages/splash-page.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_pages/tag-archive.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_pages/terms.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_pages/year-archive.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_pets/lhasa-apso.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_pets/tabby.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_portfolio/baz-boom-identity.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_portfolio/fizz-bang-identity.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_portfolio/foo-bar-website.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_portfolio/ginger-gulp-identity.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2009-05-15-edge-case-nested-and-mixed-lists.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2009-06-01-edge-case-many-tags.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2009-07-02-edge-case-many-categories.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2009-08-06-edge-case-no-body-content.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2009-09-05-edge-case-no-yaml-title.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2009-10-05-edge-case-title-should-not-overflow-the-content-area.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2009-10-05-edge-case-very-long-title.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2010-01-07-post-modified.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2010-01-07-post-standard.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2010-01-08-post-chat.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2010-02-05-post-notice.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2010-02-05-post-quote.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2010-03-07-post-link.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2010-06-02-post-video-youtube.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2010-08-05-post-header-image-og-override.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2010-08-05-post-header-overlay-image-og-override.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2010-08-05-post-image-linked.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2010-08-05-post-image-standard.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2010-08-05-post-teaser-image-og-override.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2010-08-06-post-image-linked-caption.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2010-08-07-post-image-caption.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2010-09-09-post-gallery.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2010-09-10-post-twitter-embeds.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2010-10-25-post-future-date.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2012-01-02-layout-comments-disabled.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2012-01-02-layout-comments.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2012-01-02-layout-read-time-disabled.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2012-01-02-layout-read-time.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2012-01-02-layout-related-posts-disabled.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2012-01-02-layout-related-posts.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2012-01-02-layout-sharing-disabled.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2012-01-02-layout-sharing.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2012-01-03-layout-read-time-comments-sharing-related-posts-disabled.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2012-01-03-layout-table-of-contents-post.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2012-03-14-layout-code-excerpt-generated.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2012-03-14-layout-excerpt-defined.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2012-03-14-layout-excerpt-generated.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2012-03-15-layout-author-override.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2012-03-15-layout-author-sidebar-disabled.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2012-03-15-layout-header-image-external.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2012-03-15-layout-header-image-horizontal.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2012-03-15-layout-header-image-text-readability.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2012-03-15-layout-header-image-vertical.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2012-03-15-layout-header-overlay-color.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2012-03-15-layout-header-overlay-image.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2012-03-15-layout-more-tag.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2012-03-15-layout-sidebar-custom.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2012-03-15-layout-sidebar-nav-list.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2012-05-22-markup-text-readability.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2013-01-05-markup-title-with-markup.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2013-01-05-markup-title-with-special-characters.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2013-01-09-markup-text-alignment.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2013-01-10-markup-image-alignment.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2013-01-11-markup-html-tags-and-formatting.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2013-05-22-markup-more-images.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2013-08-16-markup-syntax-highlighting.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2016-02-24-welcome-to-jekyll.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2016-09-21-gemified-theme-alpha.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2016-10-06-gemified-theme-beta.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2017-01-23-layout-header-video.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_posts/2017-11-28-post-exclude-search.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_recipes/chocolate-chip-cookies.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_recipes/oatmeal-cookies.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/_recipes/peanut-butter-cookies.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/3953273590_704e3899d5_m.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/500x300.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/air-skin-archive-large.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/air-skin-archive.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/air-skin-post-large.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/air-skin-post.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/android-chrome-144x144.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/android-chrome-192x192.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/android-chrome-36x36.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/android-chrome-48x48.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/android-chrome-72x72.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/android-chrome-96x96.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/apple-touch-icon-114x114.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/apple-touch-icon-120x120.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/apple-touch-icon-144x144.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/apple-touch-icon-152x152.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/apple-touch-icon-180x180.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/apple-touch-icon-57x57.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/apple-touch-icon-60x60.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/apple-touch-icon-72x72.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/apple-touch-icon-76x76.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/apple-touch-icon-precomposed.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/apple-touch-icon.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/aqua-skin-archive-large.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/aqua-skin-archive.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/aqua-skin-post-large.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/aqua-skin-post.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/bio-photo-2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/bio-photo.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/browserconfig.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/contrast-code-block.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/contrast-skin-archive-large.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/contrast-skin-archive.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/contrast-skin-post-large.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/contrast-skin-post.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/dark-code-block.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/dark-skin-archive-large.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/dark-skin-archive.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/dark-skin-post-large.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/dark-skin-post.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/default-code-block.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/dirt-code-block.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/dirt-skin-archive-large.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/dirt-skin-archive.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/dirt-skin-post-large.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/dirt-skin-post.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/facebook-share-example.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/favicon-16x16.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/favicon-32x32.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/favicon-96x96.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/favicon.ico" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/foo-bar-identity-th.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/foo-bar-identity.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/image-alignment-1200x4002.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/image-alignment-150x150.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/image-alignment-300x200.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/image-alignment-580x300.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/manifest.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/markup-syntax-highlighting-teaser.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/masthead-search.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/michael-rose.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mint-skin-archive-large.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mint-skin-archive.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mint-skin-post-large.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mint-skin-post.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-archive-grid-view-example.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-author-profile-reddit-color.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-author-profile-reddit-gs.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-author-sidebar-example.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-breadcrumbs-example.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-browser-mockups.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-bundle-install.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-custom-sidebar-example.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-custom-sidebar-nav.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-customizable-feature.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-free-feature.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-gh-pages.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-github-copy-repo-url.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-github-edit-config.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-header-overlay-black-filter.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-header-overlay-red-filter.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-home-page-feature.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-home-post-pagination-example.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-layout-archive-taxonomy.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-layout-archive.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-layout-examples.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-layout-single-header.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-layout-single-meta.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-layout-single.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-layout-splash.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-paragraph-indent-example.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-portfolio-collection-example.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-priority-plus-masthead.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-read-time-example.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-responsive-feature.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-single-header-example.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-single-header-overlay-example.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-single-header-overlay-fill-example.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-social-share-links-default.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-social-share-links-reddit-color.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-social-share-links-reddit-gs.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-staticman-pr-webhook.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-susy-grid-overlay.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-teaser-images-example.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-theme-fork-repo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-theme-post-600.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-theme-post-750.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-toc-helper-example.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-twitter-card-summary-image.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-twitter-card-summary-large.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mm-ui-text-labels.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mstile-144x144.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mstile-150x150.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mstile-310x150.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mstile-310x310.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/mstile-70x70.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/neon-code-block.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/neon-skin-archive-large.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/neon-skin-archive.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/neon-skin-post-large.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/neon-skin-post.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/page-header-image.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/page-header-og-image.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/page-header-overlay-image.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/page-header-teaser.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/paragraph-indent.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/paragraph-no-indent.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/plum-code-block.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/plum-skin-archive-large.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/plum-skin-archive.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/plum-skin-post-large.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/plum-skin-post.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/safari-pinned-tab.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/search-layout-example.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/site-logo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/solarized-light-code-block.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/sunrise-code-block.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/sunrise-skin-archive-large.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/sunrise-skin-archive.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/sunrise-skin-post-large.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/sunrise-skin-post.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/unsplash-gallery-image-1-th.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/unsplash-gallery-image-1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/unsplash-gallery-image-2-th.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/unsplash-gallery-image-2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/unsplash-gallery-image-3-th.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/unsplash-gallery-image-3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/unsplash-gallery-image-4-th.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/unsplash-gallery-image-4.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/unsplash-image-1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/unsplash-image-10.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/unsplash-image-11.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/unsplash-image-2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/unsplash-image-3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/unsplash-image-4.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/unsplash-image-5.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/unsplash-image-6.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/unsplash-image-7.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/unsplash-image-8.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/images/unsplash-image-9.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/screenshot-layouts.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/docs/screenshot.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/screenshot-layouts.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/screenshot.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/Gemfile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_config.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_data/authors.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_data/navigation.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_pages/404.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_pages/archive-layout-with-content.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_pages/category-archive.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_pages/collection-archive.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_pages/lorem-ipsum.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_pages/page-a.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_pages/page-archive.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_pages/page-b.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_pages/portfolio-archive.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_pages/recipes-archive.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_pages/sample-page.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_pages/sitemap.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_pages/splash-page.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_pages/tag-archive.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_pages/terms.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_pages/year-archive.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_pets/lhasa-apso.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_pets/tabby.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_portfolio/baz-boom-identity.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_portfolio/fizz-bang-identity.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_portfolio/foo-bar-website.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_portfolio/ginger-gulp-identity.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2009-05-15-edge-case-nested-and-mixed-lists.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2009-06-01-edge-case-many-tags.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2009-07-02-edge-case-many-categories.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2009-08-06-edge-case-no-body-content.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2009-09-05-edge-case-no-yaml-title.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2009-10-05-edge-case-title-should-not-overflow-the-content-area.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2009-10-05-edge-case-very-long-title.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2010-01-07-post-modified.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2010-01-07-post-standard.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2010-01-08-post-chat.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2010-02-05-post-notice.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2010-02-05-post-quote.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2010-03-07-post-link.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2010-06-02-post-video-youtube.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2010-08-05-post-header-image-og-override.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2010-08-05-post-header-overlay-image-og-override.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2010-08-05-post-image-linked.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2010-08-05-post-image-standard.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2010-08-05-post-teaser-image-og-override.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2010-08-06-post-image-linked-caption.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2010-08-07-post-image-caption.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2010-09-09-post-gallery.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2010-09-10-post-twitter-embeds.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2010-10-25-post-future-date.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2012-01-02-layout-comments-disabled.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2012-01-02-layout-comments.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2012-01-02-layout-read-time-disabled.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2012-01-02-layout-read-time.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2012-01-02-layout-related-posts-disabled.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2012-01-02-layout-related-posts.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2012-01-02-layout-sharing-disabled.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2012-01-02-layout-sharing.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2012-01-03-layout-read-time-comments-sharing-related-posts-disabled.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2012-01-03-layout-table-of-contents-post.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2012-03-14-layout-code-excerpt-generated.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2012-03-14-layout-excerpt-defined.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2012-03-14-layout-excerpt-generated.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2012-03-15-layout-author-override.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2012-03-15-layout-author-sidebar-disabled.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2012-03-15-layout-header-image-external.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2012-03-15-layout-header-image-horizontal.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2012-03-15-layout-header-image-text-readability.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2012-03-15-layout-header-image-vertical.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2012-03-15-layout-header-overlay-color.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2012-03-15-layout-header-overlay-image.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2012-03-15-layout-more-tag.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2012-03-15-layout-sidebar-custom.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2012-03-15-layout-sidebar-nav-list.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2012-05-22-markup-text-readability.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2013-01-05-markup-title-with-markup.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2013-01-05-markup-title-with-special-characters.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2013-01-09-markup-text-alignment.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2013-01-10-markup-image-alignment.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2013-01-11-markup-html-tags-and-formatting.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2013-05-22-markup-more-images.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2013-08-16-markup-syntax-highlighting.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2016-02-24-welcome-to-jekyll.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2017-01-23-layout-header-video.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_posts/2017-11-28-post-exclude-search.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_recipes/chocolate-chip-cookies.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_recipes/oatmeal-cookies.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/_recipes/peanut-butter-cookies.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/3953273590_704e3899d5_m.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/500x300.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/bio-photo-2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/bio-photo.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/facebook-share-example.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/foo-bar-identity-th.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/foo-bar-identity.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/image-alignment-1200x4002.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/image-alignment-150x150.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/image-alignment-300x200.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/image-alignment-580x300.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/markup-syntax-highlighting-teaser.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-archive-grid-view-example.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-author-profile-reddit-color.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-author-profile-reddit-gs.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-author-sidebar-example.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-breadcrumbs-example.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-browser-mockups.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-bundle-install.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-custom-sidebar-example.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-custom-sidebar-nav.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-customizable-feature.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-free-feature.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-gh-pages.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-github-copy-repo-url.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-github-edit-config.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-header-overlay-black-filter.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-header-overlay-red-filter.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-home-page-feature.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-home-post-pagination-example.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-layout-archive-taxonomy.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-layout-archive.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-layout-examples.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-layout-single-header.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-layout-single-meta.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-layout-single.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-layout-splash.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-paragraph-indent-example.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-portfolio-collection-example.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-priority-plus-masthead.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-read-time-example.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-responsive-feature.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-single-header-example.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-single-header-overlay-example.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-single-header-overlay-fill-example.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-social-share-links-default.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-social-share-links-reddit-color.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-social-share-links-reddit-gs.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-staticman-pr-webhook.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-susy-grid-overlay.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-teaser-images-example.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-theme-fork-repo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-theme-post-600.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-theme-post-750.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-toc-helper-example.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-twitter-card-summary-image.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-twitter-card-summary-large.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/mm-ui-text-labels.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/page-header-image.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/page-header-og-image.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/page-header-overlay-image.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/page-header-teaser.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/paragraph-indent.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/paragraph-no-indent.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/safari-pinned-tab.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/unsplash-gallery-image-1-th.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/unsplash-gallery-image-1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/unsplash-gallery-image-2-th.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/unsplash-gallery-image-2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/unsplash-gallery-image-3-th.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/unsplash-gallery-image-3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/unsplash-gallery-image-4-th.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/unsplash-gallery-image-4.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/unsplash-image-1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/unsplash-image-10.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/unsplash-image-11.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/unsplash-image-2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/unsplash-image-3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/unsplash-image-4.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/unsplash-image-5.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/unsplash-image-6.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/unsplash-image-7.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/unsplash-image-8.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/assets/images/unsplash-image-9.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test/index.html" afterPath="" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="minimal-mistakes-jekyll.gemspec" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/minimal-mistakes-jekyll.gemspec">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navigation.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ui-text.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_data/ui-text.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="67" lean-forward="false" selection-start-line="2" selection-start-column="67" selection-end-line="2" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="614" />
+    <option name="y" value="1011" />
+    <option name="width" value="2109" />
+    <option name="height" value="1149" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>AOP</id>
+          </State>
+          <State>
+            <id>Abstraction issuesJava</id>
+          </State>
+          <State>
+            <id>ActionScript specificJavaScript</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Correctness</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Correctness &gt; Messages</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Performance</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Security</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Usability</id>
+          </State>
+          <State>
+            <id>Android Lint for Kotlin</id>
+          </State>
+          <State>
+            <id>Application Server Specific Inspections</id>
+          </State>
+          <State>
+            <id>ArquillianJava</id>
+          </State>
+          <State>
+            <id>Assignment issuesJava</id>
+          </State>
+          <State>
+            <id>Assignment issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Bitwise operation issuesJava</id>
+          </State>
+          <State>
+            <id>Bitwise operation issuesJavaScript</id>
+          </State>
+          <State>
+            <id>CDI(Contexts and Dependency Injection) issues</id>
+          </State>
+          <State>
+            <id>Class metricsJava</id>
+          </State>
+          <State>
+            <id>Class structureJava</id>
+          </State>
+          <State>
+            <id>Cloning issuesJava</id>
+          </State>
+          <State>
+            <id>Code maturity issuesJava</id>
+          </State>
+          <State>
+            <id>Code quality toolsJavaScript</id>
+          </State>
+          <State>
+            <id>Code style issuesJava</id>
+          </State>
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>CodeSpring CoreSpring</id>
+          </State>
+          <State>
+            <id>Compiler issuesJava</id>
+          </State>
+          <State>
+            <id>Concurrency annotation issuesJava</id>
+          </State>
+          <State>
+            <id>Control flow issuesJava</id>
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Cucumber Java</id>
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Data flow issuesJava</id>
+          </State>
+          <State>
+            <id>Data flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Declaration redundancyJava</id>
+          </State>
+          <State>
+            <id>Dependency issuesJava</id>
+          </State>
+          <State>
+            <id>ECMAScript 6 migration aidsJavaScript</id>
+          </State>
+          <State>
+            <id>Encapsulation issuesJava</id>
+          </State>
+          <State>
+            <id>Error handlingJava</id>
+          </State>
+          <State>
+            <id>Error handlingJavaScript</id>
+          </State>
+          <State>
+            <id>Faces Model</id>
+          </State>
+          <State>
+            <id>Finalization issuesJava</id>
+          </State>
+          <State>
+            <id>Flow type checkerJavaScript</id>
+          </State>
+          <State>
+            <id>GPath inspectionsGroovy</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GeneralJava</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>Google Web Toolkit issues</id>
+          </State>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>Hibernate Issues</id>
+          </State>
+          <State>
+            <id>ImportsJava</id>
+          </State>
+          <State>
+            <id>Inheritance issuesJava</id>
+          </State>
+          <State>
+            <id>Initialization issuesJava</id>
+          </State>
+          <State>
+            <id>Internationalization issuesJava</id>
+          </State>
+          <State>
+            <id>J2ME SupportJava</id>
+          </State>
+          <State>
+            <id>J2ME issuesJava</id>
+          </State>
+          <State>
+            <id>JBoss Seam issues</id>
+          </State>
+          <State>
+            <id>JPA issues</id>
+          </State>
+          <State>
+            <id>JSP Inspections</id>
+          </State>
+          <State>
+            <id>JUnit issuesJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Java 5Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java 7Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java 8Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java 9Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java EE issues</id>
+          </State>
+          <State>
+            <id>Java language level issuesJava</id>
+          </State>
+          <State>
+            <id>Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>JavaBeans issuesJava</id>
+          </State>
+          <State>
+            <id>JavaFX</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript function metricsJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript validity issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Javadoc issuesJava</id>
+          </State>
+          <State>
+            <id>Kotlin</id>
+          </State>
+          <State>
+            <id>Language Injection</id>
+          </State>
+          <State>
+            <id>Logging issuesJava</id>
+          </State>
+          <State>
+            <id>Manifest</id>
+          </State>
+          <State>
+            <id>Memory issuesJava</id>
+          </State>
+          <State>
+            <id>Method metricsJava</id>
+          </State>
+          <State>
+            <id>Modularization issuesJava</id>
+          </State>
+          <State>
+            <id>Naming ConventionsGroovy</id>
+          </State>
+          <State>
+            <id>Naming conventionsJava</id>
+          </State>
+          <State>
+            <id>Naming conventionsJavaScript</id>
+          </State>
+          <State>
+            <id>Numeric issuesJava</id>
+          </State>
+          <State>
+            <id>OSGi</id>
+          </State>
+          <State>
+            <id>Packaging issuesJava</id>
+          </State>
+          <State>
+            <id>Performance issuesJava</id>
+          </State>
+          <State>
+            <id>Plugin DevKit</id>
+          </State>
+          <State>
+            <id>Portability issuesJava</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsGroovy</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsGroovy</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
+          <State>
+            <id>Probable bugsJavaScript</id>
+          </State>
+          <State>
+            <id>Properties Files</id>
+          </State>
+          <State>
+            <id>Properties FilesJava</id>
+          </State>
+          <State>
+            <id>RESTful Web Service</id>
+          </State>
+          <State>
+            <id>Reflective access issuesJava</id>
+          </State>
+          <State>
+            <id>Resource management issuesJava</id>
+          </State>
+          <State>
+            <id>Security issuesJava</id>
+          </State>
+          <State>
+            <id>Serialization issuesJava</id>
+          </State>
+          <State>
+            <id>Spring</id>
+          </State>
+          <State>
+            <id>Spring CoreSpring</id>
+          </State>
+          <State>
+            <id>Spring DataSpring</id>
+          </State>
+          <State>
+            <id>Struts</id>
+          </State>
+          <State>
+            <id>Struts 1Struts</id>
+          </State>
+          <State>
+            <id>StyleGroovy</id>
+          </State>
+          <State>
+            <id>TestNGJava</id>
+          </State>
+          <State>
+            <id>Threading issuesGroovy</id>
+          </State>
+          <State>
+            <id>Threading issuesJava</id>
+          </State>
+          <State>
+            <id>TypeScript</id>
+          </State>
+          <State>
+            <id>Verbose or redundant code constructsJava</id>
+          </State>
+          <State>
+            <id>Visibility issuesJava</id>
+          </State>
+          <State>
+            <id>Web Services</id>
+          </State>
+          <State>
+            <id>WebSocket issues</id>
+          </State>
+          <State>
+            <id>toString() issuesJava</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource ProjectPane="true" />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="percyvega.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="percyvega.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="percyvega.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="percyvega.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e64b8336-f5dc-4095-80a1-cbcb070eb8b8" name="Default" comment="" />
+      <created>1515823961561</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1515823961561</updated>
+      <workItem from="1515823964180" duration="752000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="752000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="614" y="1011" width="2109" height="1149" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963716" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/minimal-mistakes-jekyll.gemspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/ui-text.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="67" lean-forward="false" selection-start-line="2" selection-start-column="67" selection-end-line="2" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
