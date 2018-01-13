@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-01-10T11:15:27-05:00
+last_modified_at:2018-01-12T20:43:37-05:00
 toc: true
 ---
 
@@ -22,6 +22,7 @@ toc: true
 ### Bug Fixes
 
 * Allow`author` to accept an object or string. [#289](https://github.com/mmistakes/minimal-mistakes/issues/289)
+* Fix syntax highlighting line number styling inconsistency. [#1467](https://github.com/mmistakes/minimal-mistakes/issues/1467)
 
 ## [4.9.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.9.0)
 
