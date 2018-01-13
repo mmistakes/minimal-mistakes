@@ -31,7 +31,8 @@ figure.highlight {
     border: 0;
 
     /* line numbers*/
-    &.gutter {
+    &.gutter,
+    &.rouge-gutter {
       padding-right: 1em;
       width: 1em;
       color: $base04;
@@ -40,7 +41,8 @@ figure.highlight {
     }
 
     /* code */
-    &.code {
+    &.code,
+    &.rouge-code {
       padding-left: 1em;
     }
   }
