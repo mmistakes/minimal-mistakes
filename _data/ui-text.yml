@@ -883,6 +883,8 @@ da: &DEFAULT_DA
   comment_success_msg        : "Tak for din kommentar! Den bliver vist på siden, så snart den er godkendt."
   comment_error_msg          : "Desværre skete der en fejl. Prøv igen, mens du sørger for at alle obligatoriske felter er udfyldt."
   loading_label              : "Indlæser..."
+  search_placeholder_text    : "Hvad leder du efter..."
+  results_found              : "Resultat(er) fundet"
 da-DK:
   <<: *DEFAULT_DA
 
