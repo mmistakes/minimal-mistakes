@@ -1,8 +1,10 @@
 ---
 
-layout: default
+layout: single
 header:
-  image: /assets/images/IMG_0793.JPG
+  overlay_image: ../assets/images/IMG_0793.JPG
+ title: Road to Code
+
 
 ---
 
