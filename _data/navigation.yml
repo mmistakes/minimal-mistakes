@@ -1,10 +1,10 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
+   - title: "Home"
+      url: https://autumnj.github.io/
+   - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
+   - title: "Contact"
   #   url: /year-archive/
   # - title: "Sample Collections"
   #   url: /collection-archive/
