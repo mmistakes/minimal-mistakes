@@ -3,9 +3,9 @@ main:
    - title: "Home"
       url: https://autumnj.github.io/
    - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+      url: /_pages/about.md
    - title: "Contact"
-  #   url: /year-archive/
+      url: /_pages/contact.md
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
