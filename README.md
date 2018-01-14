@@ -1,0 +1,1 @@
+This is a blog to practice using GitHub & GitHub Pages. And tell the world about the cool things I learn, and my awesome cat. 
