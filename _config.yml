@@ -53,11 +53,11 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
+search                   : true, #false (default)
 search_full_content      : # true, false (default)
 
 # SEO Related
-google_site_verification :
+google_site_verification : google1c07a4c135ad5f12.html
 bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
