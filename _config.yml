@@ -250,11 +250,11 @@ defaults:
   # _posts
   - scope:
       path: ""
-      type: posts, pages
+      type: posts
     values:
       layout: single
-      #header: 
-      #  image: "/assets/images/IMG_0793.JPG"
+      header: 
+        image: "/assets/images/IMG_0793.JPG"
       author_profile: true
       read_time: true
       comments: # true
