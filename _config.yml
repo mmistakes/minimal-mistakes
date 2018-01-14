@@ -254,7 +254,7 @@ defaults:
     values:
       layout: single
       header: 
-        image: "/assets/images/IMG_0793.JPG"
+        image: /assets/images/IMG_0793.JPG
       author_profile: true
       read_time: true
       comments: # true

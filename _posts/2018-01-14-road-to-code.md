@@ -2,7 +2,7 @@
 
 layout: single
 header:
-  overlay_image: ../assets/images/IMG_0793.JPG
+  image: /assets/images/IMG_0793.JPG
  title: Road to Code
 
 
