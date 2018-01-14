@@ -30,9 +30,19 @@
         <a href="{{ post.url | absolute_url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
-    {% if post.read_time %}
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
-    {% endif %}
+    <ul class="page__meta">
+      {% if post.date and include.date_show %}
+        <li>
+          {% assign date_format = include.date_format | default: "%B %-d, %Y" %}
+          <i class="far fa-calendar" aria-hidden="true"></i> {{ post.date | date: date_format }}
+        </li>
+      {% endif %}
+      {% if post.read_time %}
+        <li>
+          <i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}
+        </li>
+      {% endif %}
+    </ul>
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>
 </div>

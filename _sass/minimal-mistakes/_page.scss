@@ -251,6 +251,23 @@
   font-family: $sans-serif;
   font-size: $type-size-6;
 
+  ul.& {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin-right: 10px;
+    }
+  }
+
   p {
     margin: 0;
   }
