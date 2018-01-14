@@ -18,7 +18,7 @@ description              : "A blog about my tech journey, with my cat."
 url                      : https://autumnj.github.io/
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : AutumnJ/github.io
-teaser                   : /assets/images/IMG_0793.JPG
+teaser                   : "/assets/images/IMG_0793.JPG"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -57,7 +57,7 @@ search                   : true, #false (default)
 search_full_content      : # true, false (default)
 
 # SEO Related
-google_site_verification : google1c07a4c135ad5f12.html
+google_site_verification : "google1c07a4c135ad5f12.html"
 bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
@@ -75,7 +75,7 @@ og_image                 : # Open Graph/Twitter default site image
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  links: "www.linkedin.com/in/autumn-j-4a8b7756"
 
 # Analytics
 analytics:
@@ -87,9 +87,9 @@ analytics:
 # Site Author
 author:
   name             : "AutumnJ"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/IMG_5193.JPG"
   bio              : "I'm into tech, and my cat."
-  location         : "Somewhere"
+  location         : 
   email            :
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
@@ -99,13 +99,13 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : AutumnJ
   gitlab           :
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : autumn-j-4a8b7756 # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
