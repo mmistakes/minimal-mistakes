@@ -1,11 +1,10 @@
 # main links
-main:
-   - title: "Home"
-      url: https://autumnj.github.io/
-   - title: "About"
-      url: /_pages/about.md
-   - title: "Contact"
-      url: /_pages/contact.md
+#   - title: "Home"
+   #  url: https://autumnj.github.io/
+ #  - title: "About"
+  #   url: /_pages/about.md
+  # - title: "Contact"
+   #  url: /_pages/contact.md
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
