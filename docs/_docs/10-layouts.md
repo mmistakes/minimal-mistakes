@@ -218,6 +218,14 @@ author_profile: true
 {% endfor %}{% endraw %}
 ```
 
+You can optionally display the date of each post by passing the `date_show` argument to the `{% raw %}{% include archive-single.html date_show=true %}{% endraw %}`. Moreover, [date format](https://learn.cloudcannon.com/jekyll/date-formatting/) that by default looks like `January 19, 2018`, is changeable via one additional argument - `date_format`. Let's take a look at quick and simple example:
+
+{% raw %}
+```
+{% include archive-single.html date_show=true date_format="%B %Y" %}
+```
+{% endraw %}
+
 ## Home Page Layout
 
 A derivative archive page layout to be used as a simple home page. It is built to show a paginated list of recent posts based off of the [pagination settings]({{ "/docs/configuration/#paginate" | absolute_url }}) in `_config.yml`.
