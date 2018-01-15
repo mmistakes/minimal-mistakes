@@ -65,7 +65,7 @@ let r = add 1. 2. // r : float
 let r2 = add 1 2 // compiler error
 ```
 
-The `inline` keyword can be added the beginning of the function to have the compiler deduce the types at the point the function is used.
+The `inline` keyword can be added to the beginning of the function to have the compiler deduce the types at the point the function is used.
 
 ```fsharp
 let inline add a b =
@@ -88,4 +88,4 @@ let inline (/!) a b =
 // val (/!) : a:'a -> b:'b -> 'c option (requires member (/) and member get_Zero and equality)
 ```
 
-This is exactly what we were looking for in the beginning. Now when we use our new operator we are forced to deal with a situation where divisor is possibly `0`. Now, this solution for dealing with a possible `0` divisor may not be for everyone. Perhaps having to deal with the `None` scenario is too cumbersome for you. I find that I like have this additional safety in place because it forces me to write more robust code.
+This is exactly what we were looking for in the beginning. Now when we use our new operator we are forced to deal with a situation where the divisor is possibly `0`. This solution for dealing with a possible `0` divisor may not be for everyone. Perhaps having to deal with the `None` scenario is too cumbersome for you. I find that I like having this additional safety in place because it forces me to write more robust code.
