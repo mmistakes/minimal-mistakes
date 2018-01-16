@@ -19,6 +19,8 @@ geometry: margin=3cm
 
 | Class                                                      | Term          | Instructor                                   |
 | -----------------------------------------------------------|:------------- |:-------------------------------------------- |
+| Applications of Parallel Computers (CS 267)                | Spring 2018   | Aydin Buluç, James Demmel, Katherine Yelick  |
+| Operating Systems and Systems Programming (CS 162)         | Spring 2018   | Anthony Joseph, Jonathan Ragan-Kelley        |
 | Deep Learning for Financial Applications  (CS 294-136)     | Fall 2017     | Francois Belleti, Laurent El Ghaoui          |
 | Deep Learning Special Topics (CS 294-131)                  | Fall 2017     | Dawn Song, Trevor Darrell                    |
 | Probabilistically Checkable Proofs (CS 294 - )             | Spring 2017   | Igor Shinkar, Alessandro Chiesa              |
