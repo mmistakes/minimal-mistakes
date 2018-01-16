@@ -51,10 +51,11 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
 
-remote_theme             : "mmistakes/minimal-mistakes"
+# percy
+search                   : true # true, false (default)
+search_full_content      : true # true, false (default)
+#teaser                   : /assets/images/mm-teaser-images-example.jpg # default post teaser image
 
 # SEO Related
 google_site_verification :
@@ -195,7 +196,6 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-  - jekyll-remote-theme
 
 
 # mimic GitHub Pages with --safe
@@ -205,7 +205,6 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-  - jekyll-remote-theme
 
 
 # Archives
