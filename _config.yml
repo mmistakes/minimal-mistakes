@@ -49,7 +49,7 @@ staticman:
 reCaptcha:
   siteKey                :
   secret                 :
-atom_feed:
+feed:
   path                   : # blank (default) uses feed.xml
 search                   : # true, false (default)
 search_full_content      : # true, false (default)
