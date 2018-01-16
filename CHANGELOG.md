@@ -14,6 +14,7 @@
 
 * Allow`author` to accept an object or string. [#289](https://github.com/mmistakes/minimal-mistakes/issues/289)
 * Fix syntax highlighting line number styling inconsistency. [#1467](https://github.com/mmistakes/minimal-mistakes/issues/1467)
+* Fix author sidebar icon colors for dark skins. [#1482](https://github.com/mmistakes/minimal-mistakes/issues/1482)
 
 ## [4.9.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.9.0)
 
