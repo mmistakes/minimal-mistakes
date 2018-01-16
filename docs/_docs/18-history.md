@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-01-15T16:22:56-05:00
+last_modified_at: 2018-01-16T08:08:57-05:00
 toc: true
 ---
 
@@ -18,7 +18,7 @@ toc: true
 * Improve SEO include by grouping similar tags, reducing white-space, and adding `article:modified_time`. [#1456](https://github.com/mmistakes/minimal-mistakes/pull/1456)
 * Minify `assets/js/lunr/lunr.js`.
 * Improve calculation of Greedy navigation's `availableSpace`.
-* Add Danish translations for new search strings. [#1472](https://github.com/mmistakes/minimal-mistakes/pull/1472)
+* Add Danish and Russian translations for new search strings. [#1472](https://github.com/mmistakes/minimal-mistakes/pull/1472) [#1477](https://github.com/mmistakes/minimal-mistakes/pull/1477)
 
 ### Bug Fixes
 
