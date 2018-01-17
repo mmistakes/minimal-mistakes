@@ -7,8 +7,9 @@
 -->
 
 - [ ] This is a question about using the theme.
-- [ ] This is a feature request.
+- [ ] This is a feature request or enhancement.
 - [ ] I believe this to be a bug with the theme.
+  - [ ] I am using the latest version of the theme.
   - [ ] I have updated all gems with `bundle update`.
   - [ ] I have tested locally with `bundle exec jekyll build`.
 
