@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-01-16T17:40:01-05:00
+last_modified_at: 2018-01-17T12:57:06-05:00
 toc: true
 ---
 
@@ -19,12 +19,17 @@ toc: true
 * Minify `assets/js/lunr/lunr.js`.
 * Improve calculation of Greedy navigation's `availableSpace`.
 * Add Danish and Russian translations for new search strings. [#1472](https://github.com/mmistakes/minimal-mistakes/pull/1472) [#1477](https://github.com/mmistakes/minimal-mistakes/pull/1477)
+* Indicate that archive title's are links with an underline.
+* Remove `base_path` include from `/test` pages.
+* Reduce font-size of page meta in list/grid items.
+* Improve feature row styling when used with `archive` layout. [#1484](https://github.com/mmistakes/minimal-mistakes/issues/1484)
 
 ### Bug Fixes
 
 * Allow`author` to accept an object or string. [#289](https://github.com/mmistakes/minimal-mistakes/issues/289)
 * Fix syntax highlighting line number styling inconsistency. [#1467](https://github.com/mmistakes/minimal-mistakes/issues/1467)
 * Fix author sidebar icon colors for dark skins. [#1482](https://github.com/mmistakes/minimal-mistakes/issues/1482)
+* Remove misleading underline hover state on feature row items.
 
 ## [4.9.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.9.0)
 
