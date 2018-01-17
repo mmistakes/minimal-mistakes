@@ -2,6 +2,7 @@
 title: "Signing up"
 date: 2017-12-15
 ---
+Updated: 2018-01-16
 
 Signing up for Convictional is quite straight forward. There are three fields:
 

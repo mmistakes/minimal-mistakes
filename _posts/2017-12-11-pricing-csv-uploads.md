@@ -3,7 +3,7 @@ title: "Pricing CSV Uploads"
 date: 2017-12-11
 ---
 
-Updated: 2018-01-11
+Updated: 2018-01-17
 
 If you prefer to upload CSV files instead of using our API for pricing we now support it.
 
