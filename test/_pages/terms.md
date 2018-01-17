@@ -4,7 +4,6 @@ title: "Terms and Privacy Policy"
 last_modified_at: 2016-06-06
 ---
 
-{% include base_path %}
 {% include toc %}
 
 ## Privacy Policy
