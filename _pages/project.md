@@ -16,7 +16,7 @@ geometry: margin=3cm
 ---
 ## Code (Class Projects)
 
-**Sentiment Analysis for Stock Market Prediction**: [*Report*]({{ "/pdfs/sentiment.pdf" | absolute_url }}), [Full Code](https://github.com/jorpro/DeepTimeSeries). Report for CS 294-136 Deep Learning Financial Time Series. Used [Stanford CoreNLP](https://stanfordnlp.github.io/CoreNLP/), [NLTK](http://www.nltk.org/) for event extraction and mood sentiment scores. Used LSTM, ConvNets, and word embeddings for news feature conversion, to predict day-to-day prices from related articles on [Reuters](https://www.reuters.com/finance/stocks/company-news).
+**Sentiment Analysis for Stock Market Prediction**: [*Report*]({{ "/pdfs/sentiment.pdf" | absolute_url }}), [Full Code](https://github.com/Srizzle/Deep-Time-Series). Report for CS 294-136 Deep Learning Financial Time Series. Used [Stanford CoreNLP](https://stanfordnlp.github.io/CoreNLP/), [NLTK](http://www.nltk.org/) for event extraction and mood sentiment scores. Used LSTM, ConvNets, and word embeddings for news feature conversion, to predict day-to-day prices from related articles on [Reuters](https://www.reuters.com/finance/stocks/company-news).
 
 **Robust Adversarial Reinforcement Learning**: [*Report*]({{ "/pdfs/RARL.pdf" | absolute_url }}), [Full Code](https://github.com/Jekyll1021/RARL). Report for [CS 294-131 Special Topics in Deep Learning](https://berkeley-deep-learning.github.io/cs294-131-f17/). Re-implementation of [Robust Adversarial Reinforcement Learning](http://proceedings.mlr.press/v70/pinto17a/pinto17a.pdf), with algorithmic game theory analysis. Experiments were extended to Berkeley DeepDrive LIDAR data (for pedestrian setting training) and image dataset CIFAR-10. 
 
