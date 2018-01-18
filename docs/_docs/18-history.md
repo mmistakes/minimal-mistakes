@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-01-17T14:38:12-05:00
+last_modified_at: 2018-01-18T10:26:34-05:00
 toc: true
 ---
 
@@ -30,7 +30,8 @@ toc: true
 * Fix syntax highlighting line number styling inconsistency. [#1467](https://github.com/mmistakes/minimal-mistakes/issues/1467)
 * Fix author sidebar icon colors for dark skins. [#1482](https://github.com/mmistakes/minimal-mistakes/issues/1482)
 * Remove misleading underline hover state on feature row items.
-* Properly escape quotes in `site.social.name` and `site.name`. [#1485](https://github.com/mmistakes/minimal-mistakes/pull/1485) 
+* Properly escape quotes in `site.social.name` and `site.name`. [#1485](https://github.com/mmistakes/minimal-mistakes/pull/1485)
+* Fix typo in upgrading documentation. [#1487](https://github.com/mmistakes/minimal-mistakes/pull/1487)
 
 ## [4.9.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.9.0)
 

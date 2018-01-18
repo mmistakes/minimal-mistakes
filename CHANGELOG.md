@@ -20,7 +20,8 @@
 * Fix syntax highlighting line number styling inconsistency. [#1467](https://github.com/mmistakes/minimal-mistakes/issues/1467)
 * Fix author sidebar icon colors for dark skins. [#1482](https://github.com/mmistakes/minimal-mistakes/issues/1482)
 * Remove misleading underline hover state on feature row items.
-* Properly escape quotes in `site.social.name` and `site.name`. [#1485](https://github.com/mmistakes/minimal-mistakes/pull/1485) 
+* Properly escape quotes in `site.social.name` and `site.name`. [#1485](https://github.com/mmistakes/minimal-mistakes/pull/1485)
+* Fix typo in upgrading documentation. [#1487](https://github.com/mmistakes/minimal-mistakes/pull/1487)
 
 ## [4.9.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.9.0)
 
