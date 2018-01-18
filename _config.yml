@@ -18,7 +18,7 @@ description              : "A blog about my tech journey, with my cat."
 url                      : https://autumnj.github.io/
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : AutumnJ/github.io
-teaser                   : #"/assets/images/IMG_0793.JPG"  
+teaser                   : "/assets/images/IMG_5191.JPG"
 #header                   : "/assets/images/IMG_0793.JPG"             
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
