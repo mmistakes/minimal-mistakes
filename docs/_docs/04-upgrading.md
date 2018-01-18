@@ -8,7 +8,7 @@ toc: true
 
 If you're using the [Ruby Gem]({{ "/docs/quick-start-guide/#ruby-gem-method" | absolute_url }}) or [remote theme]({{ "/docs/quick-start-guide/#github-pages-method" | absolute_url }}) versions of Minimal Mistakes, upgrading is fairly painless.
 
-To check which version you are currently using, view the source of your built site and you should something similar to:
+To check which version you are currently using, view the source of your built site and you should see something similar to:
 
 ```
 <!--
