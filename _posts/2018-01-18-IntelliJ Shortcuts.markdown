@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "IntelliJ Shortcuts"
-date:   2018-01-12 18:00:00 -0500
+date:   2018-01-18 18:00:00 -0500
 categories: IT
 tag: [macos,intellij,shortcuts]
 ---
@@ -19,3 +19,7 @@ Bookmarks
 - ⌥ F13: toggle bookmark with mnemonic
 - ⌃0...⌃9: go to numbered bookmark
 - ⌘ F3: show bookmarks
+
+Breakpoints
+- ⌘ F8: toggle breakpoint
+- ⌘ ⇧ F8: view breakpoints
