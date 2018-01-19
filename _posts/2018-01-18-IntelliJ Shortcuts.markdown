@@ -1,25 +1,32 @@
 ---
 layout: single
 title:  "IntelliJ Shortcuts"
-date:   2018-01-18 18:00:00 -0500
+date:   2018-01-18 00:00:00 -0500
 categories: IT
 tag: [macos,intellij,shortcuts]
 ---
 Legend
-- Command ⌘
-- Shift ⇧
-- Option ⌥
-- Control ⌃
+- Command: ⌘
+- Shift: ⇧
+- Option: ⌥
+- Control: ⌃
 
 Various
-- ⌥ F12: toggle the terminal tool window visibility
+- Toggle the terminal tool window visibility: ⌥ F12
 
 Bookmarks
-- F3: toggle bookmark
-- ⌥ F13: toggle bookmark with mnemonic
-- ⌃0...⌃9: go to numbered bookmark
-- ⌘ F3: show bookmarks
+- Toggle bookmark: F3
+- Toggle bookmark with mnemonic: ⌥ F13
+- Go to numbered bookmark: ⌃0...⌃9
+- Show bookmarks: ⌘ F3
 
 Breakpoints
-- ⌘ F8: toggle breakpoint
-- ⌘ ⇧ F8: view breakpoints
+- Toggle breakpoint: ⌘ F8
+- View breakpoints: ⌘ ⇧ F8
+
+Debugging
+- Step over / into: F8 / F7
+- Smart step into / Step out Run to cursor: ⇧ F7 / ⇧ F8
+- Run to cursor: ⌥ F9
+- Evaluate expression: ⌥ F8
+- Resume program: ⌘ ⌥ R

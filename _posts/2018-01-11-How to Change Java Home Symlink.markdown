@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "How to Change Java Home Symlink"
-date:   2018-01-11 18:00:00 -0500
+date:   2018-01-11 00:00:00 -0500
 categories: IT
 tag: [macos,java]
 ---
