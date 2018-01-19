@@ -1,9 +1,9 @@
 ---
-layout: single
-title:  "IntelliJ Shortcuts"
-date:   2018-01-18 00:00:00 -0500
-categories: IT
-tag: [macos,intellij,shortcuts]
+layout:           single
+title:            "IntelliJ Shortcuts"
+date:             2018-01-18 00:00:00 -0500
+categories:       IT
+tag:              [macos,intellij,shortcuts]
 ---
 Legend
 - Command: ⌘
@@ -11,8 +11,10 @@ Legend
 - Option: ⌥
 - Control: ⌃
 
-Various
-- Toggle the terminal tool window visibility: ⌥ F12
+Execution
+- Run program: ⌃ R
+- Debug program: ⌃ D
+- Stop JVM: ⌘ F2
 
 Bookmarks
 - Toggle bookmark: F3
@@ -30,3 +32,6 @@ Debugging
 - Run to cursor: ⌥ F9
 - Evaluate expression: ⌥ F8
 - Resume program: ⌘ ⌥ R
+
+Various
+- Toggle the terminal tool window visibility: ⌥ F12

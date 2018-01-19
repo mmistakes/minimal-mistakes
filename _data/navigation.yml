@@ -1,12 +1,11 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+   - title: "Bible"
+     url: /categories/#bible
+     description: "Bible-related posts"
+   - title: "IT"
+     url: /categories/#it
+     description: "IT-related posts"
+   - title: "Resume"
+     url: /resume/
+     description: "Résumé, Curriculum Vitae"
