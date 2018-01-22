@@ -88,7 +88,7 @@ analytics:
 # Site Author
 author:
   name             : "Percy Vega"
-  avatar           : /assets/images/Percy_Vega.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : /assets/images/PV-smiling.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Saved by grace. Java, Spring, Clean Code."
   location         : "Fort Lauderdale, Florida"
   email            : percy@percyvega.com
