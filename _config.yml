@@ -5,11 +5,11 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en"
-title                    : "Convictional Help"
+title                    : "Convictional Help Center"
 title_separator          : "-"
 name                     : "Convictional Commerce"
 description              : "Help and FAQs"
@@ -83,10 +83,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Convictional Help"
+  name             : "Convictional Support"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              :
-  location         :
+  location         : "Waterloo, Ontario, Canada"
   email            : "support@convictional.com"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
@@ -247,7 +247,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: true
       comments: false
       share: false

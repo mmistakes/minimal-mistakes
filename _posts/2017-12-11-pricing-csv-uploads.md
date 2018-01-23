@@ -1,10 +1,7 @@
 ---
 title: "Pricing CSV Uploads"
-date: 2017-12-11
+date: 2018-01-23
 ---
-
-Updated: 2018-01-23
-***
 
 To import pricing via CSV, please use the following format:
 
@@ -27,7 +24,7 @@ ie. 12345,Price List,2018-01-23,2018-03-15,USD,1.2,120,99,54321,9.99,5,fixed
 * Markup Type: Specify if markup is percent or dollars
 
 
-Some final tips:
+#### Requirements
 * Do not include headers in your CSV file. 
 * Only upload one price list (ie. code) per file.
 * If the upload fails, double check the format.
