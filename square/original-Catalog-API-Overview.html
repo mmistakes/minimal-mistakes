@@ -303,22 +303,22 @@ for sale through a Square merchant account. The Catalog v2 API replaces Square's
 efficiency and expanded functionality, including individual and batch support for:</p>
 <ul>
 <li>Retrieval</li>
-<li>Upsert (insert or update), and</li>
-<li>Delete.</li>
+<li>Upsert (insert or update)<object style="background-color: yellow">, and</object></li>
+<li>Delete<object style="background-color: yellow">.</object></li>
 </ul>
 <p>The Catalog API lets developers handle simple tasks with minimal endpoint calls while still providing functionality
 needed by more sophisticated applications.</p>
 </section><section class="article-section"><h2>
 <a id="requirements-and-limitations" class="anchor" href="https://docs.connect.squareup.com/articles/catalog-overview#requirements-and-limitations" aria-hidden="true"><span class="icon icon-link" aria-hidden="true"></span></a>Requirements and limitations</h2>
 <ul>
-<li>The Square Catalog API does not provide integrated inventory management. Inventory management is currently handled
+<li>The <object style="background-color: yellow">Square</object> Catalog API does not provide integrated inventory management. Inventory management is currently handled
 with the <a href="https://docs.connect.squareup.com/api/connect/v1#navsection-inventory">Inventory API (v1)</a>
 </li>
-<li>All Catalog calls must include <a href="https://docs.connect.squareup.com/api/connect/v2#requestandresponseheaders">an authorization token in the header</a> for
+<li>All <object style="background-color: yellow">Catalog</object> calls must include <a href="https://docs.connect.squareup.com/api/connect/v2#requestandresponseheaders">an authorization token in the header</a> for
 the targeted merchant account. Anonymous catalog calls are not allowed.</li>
 <li>Applications using the Catalog API must have <code>ITEMS_READ</code> and <code>ITEMS_WRITE</code>
 <a href="https://docs.connect.squareup.com/api/oauth#permissionscope">permissions</a> for the targeted merchant account.</li>
-<li>The Square Catalog API is not supported in <a href="https://docs.connect.squareup.com/articles/using-sandbox">sandbox mode</a> at this time.</li>
+<li>The <object style="background-color: yellow">Square</object> Catalog API is not supported in <a href="https://docs.connect.squareup.com/articles/using-sandbox">sandbox mode</a> at this time.</li>
 </ul>
 </section><section class="article-section"><h2>
 <a id="the-catalog-object-model" class="anchor" href="https://docs.connect.squareup.com/articles/catalog-overview#the-catalog-object-model" aria-hidden="true"><span class="icon icon-link" aria-hidden="true"></span></a>The Catalog object model</h2>
@@ -345,8 +345,8 @@ or hot drinks vs. cold drinks).</li>
 </ul>
 <h3>
 <a id="catalog-items-variations-and-modifiers" class="anchor" href="https://docs.connect.squareup.com/articles/catalog-overview#catalog-items-variations-and-modifiers" aria-hidden="true"><span class="icon icon-link" aria-hidden="true"></span></a><object style="background-color: yellow">Catalog</object> items, variations, &amp; modifiers</h3>
-<p style="background-color: yellow">When working with Square Catalog, it's important to understand the distinction between catalog items, variations, and
-modifiers:</p>
+<p>When working with <object style="background-color: yellow">Square Catalog</object>, it's important to understand the distinction between catalog items, variations, and
+modifiers<object style="background-color: yellow">:</object></p>
 <ul>
 <li>
 <strong style="background-color: yellow">catalog item</strong> — the core representation of a thing — in other words, the product — to be sold (<object style="background-color: yellow">e.g.,</object> a latte).</li>
@@ -360,9 +360,9 @@ an additional cost (<object style="background-color: yellow">e.g.,</object> a me
 <a id="catalog-items-versus-variations" class="anchor" href="https://docs.connect.squareup.com/articles/catalog-overview#catalog-items-versus-variations" aria-hidden="true"><span class="icon icon-link" aria-hidden="true"></span></a>Catalog items <object style="background-color: yellow">versus</object> variations</h4>
 <p style="background-color: yellow">Catalog items can represent:</p>
 <ul>
-<li><object style="background-color: yellow">digital</object> or physical items (<object style="background-color: yellow">e.g.,</object> a PDF printable, coffee),</li>
-<li><object style="background-color: yellow">services</object> (<object style="background-color: yellow">e.g.,</object> personal training, dog walking), and/or</li>
-<li><object style="background-color: yellow">donations</object> and dues (<object style="background-color: yellow">e.g.,</object> artistic patronage, club memberships).</li>
+<li><object style="background-color: yellow">digital</object> or physical items (<object style="background-color: yellow">e.g.,</object> a PDF printable, coffee)<object style="background-color: yellow">,</object></li>
+<li><object style="background-color: yellow">services</object> (<object style="background-color: yellow">e.g.,</object> personal training, dog walking)<object style="background-color: yellow">, and/or</object></li>
+<li><object style="background-color: yellow">donations</object> and dues (<object style="background-color: yellow">e.g.,</object> artistic patronage, club memberships)<object style="background-color: yellow">.</object></li>
 </ul>
 <p>A <code>CatalogItem</code> does not have a price or SKU because it represents the high-level product, not the actual item/service
 being sold. For example:</p>
