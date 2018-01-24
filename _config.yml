@@ -90,7 +90,7 @@ author:
   name             : "Percy Vega"
   avatar           : /assets/images/PV-smiling.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Saved by grace. Java, Spring, Clean Code."
-  location         : "Fort Lauderdale, Florida"
+  location         : "Fort Lauderdale, FL"
   email            : percy@percyvega.com
   uri              : http://www.HagiosTech.com
   home             : # null (default), "absolute or relative url to link to author home"
