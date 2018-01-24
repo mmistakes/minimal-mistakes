@@ -231,7 +231,7 @@
       Release Notes    </h2>
     <span class="article-toc-arrow"></span>
   </div>
-  <ul class="article-toc-subsection">
+  <ul class="article-toc-subsection" style="background-color: yellow">
     
     <li class="article-toc-item"><a href="https://docs.connect.squareup.com/articles/square-sdk-release-notes-2018-01-16">Square SDK Release Notes (2018-01-16)</a></li>
     <li class="article-toc-item"><a href="https://docs.connect.squareup.com/articles/square-api-release-notes-2017-11-10">Square API Release Notes (2017-11-10)</a></li>
@@ -273,7 +273,7 @@
     Specs at a glance
   </div>
     <div class="specs__section">
-      <strong>Language Support</strong>
+      <strong style="background-color: yellow">Language Support</strong>
       <ul class="specs__list">
           <li>HTTP</li>
           <li><a href="https://github.com/square/connect-csharp-sdk/">C#</a></li>
@@ -293,7 +293,7 @@
       <strong>Resources</strong>
       <ul class="specs__list">
           <li><a href="https://docs.connect.squareup.com/api/connect/v2#navsection-catalog">Technical Reference</a></li>
-          <li><a href="https://github.com/square/catalog-api-demo">Sample App (Java)</a></li>
+          <li><a href="https://github.com/square/catalog-api-demo">Sample App (<object style="background-color: yellow">Java</object>)</a></li>
           <li><a href="https://squareup.com/dashboard/items/library">Square Dashboard</a></li>
       </ul>
     </div>
@@ -324,12 +324,12 @@ the targeted merchant account. Anonymous catalog calls are not allowed.</li>
 <a id="the-catalog-object-model" class="anchor" href="https://docs.connect.squareup.com/articles/catalog-overview#the-catalog-object-model" aria-hidden="true"><span class="icon icon-link" aria-hidden="true"></span></a>The Catalog object model</h2>
 <p>The Catalog API packages all its information as a CatalogObject, which is a generalized wrapper for all the classes
 across Catalog's object model, including:</p>
-<ul>
+<ul style="background-color: yellow">
 <li>
 <code>CatalogItem</code> — core product information; used to configure the top-level entities of a catalog (e.g., Latte).</li>
 <li>
 <code>CatalogItemVariation</code> — one or more incarnations of a product; used to represent the actual item being sold with an
-assigned price and SKU (e.g. Small, Medium, Large).</li>
+assigned price and SKU (<object style="background-color: yellow">e.g.,</object> Small, Medium, Large).</li>
 <li>
 <code>CatalogModifier</code> — information about an individual modifier; used to provide customization information for a
 product (e.g., Whole Milk, Skim Milk, Almond Milk).</li>
@@ -344,32 +344,32 @@ or hot drinks vs. cold drinks).</li>
 <code>CatalogTax</code> — taxation information; used to configure tax requirements for items in the catalog.</li>
 </ul>
 <h3>
-<a id="catalog-items-variations-and-modifiers" class="anchor" href="https://docs.connect.squareup.com/articles/catalog-overview#catalog-items-variations-and-modifiers" aria-hidden="true"><span class="icon icon-link" aria-hidden="true"></span></a>Catalog items, variations, &amp; modifiers</h3>
-<p>When working with Square Catalog, it's important to understand the distinction between catalog items, variations, and
+<a id="catalog-items-variations-and-modifiers" class="anchor" href="https://docs.connect.squareup.com/articles/catalog-overview#catalog-items-variations-and-modifiers" aria-hidden="true"><span class="icon icon-link" aria-hidden="true"></span></a><object style="background-color: yellow">Catalog</object> items, variations, &amp; modifiers</h3>
+<p style="background-color: yellow">When working with Square Catalog, it's important to understand the distinction between catalog items, variations, and
 modifiers:</p>
 <ul>
 <li>
-<strong>catalog item</strong> — the core representation of a thing — in other words, the product — to be sold (e.g., a latte).</li>
+<strong style="background-color: yellow">catalog item</strong> — the core representation of a thing — in other words, the product — to be sold (<object style="background-color: yellow">e.g.,</object> a latte).</li>
 <li>
-<strong>variation</strong> — the instantiation of a specific catalog item with an assigned price and SKU (e.g., a medium latte).</li>
+<strong style="background-color: yellow">variation</strong> — the instantiation of a specific catalog item with an assigned price and SKU (<object style="background-color: yellow">e.g.,</object> a medium latte).</li>
 <li>
-<strong>modifier</strong> — a product customization applicable to one or more variations that may (or may not) be associated with
-an additional cost (e.g., a medium latte with whole milk and no foam).</li>
+<strong style="background-color: yellow">modifier</strong> — a product customization applicable to one or more variations that may (or may not) be associated with
+an additional cost (<object style="background-color: yellow">e.g.,</object> a medium latte with whole milk and no foam).</li>
 </ul>
 <h4>
-<a id="catalog-items-versus-variations" class="anchor" href="https://docs.connect.squareup.com/articles/catalog-overview#catalog-items-versus-variations" aria-hidden="true"><span class="icon icon-link" aria-hidden="true"></span></a>Catalog items versus variations</h4>
-<p>Catalog items can represent:</p>
+<a id="catalog-items-versus-variations" class="anchor" href="https://docs.connect.squareup.com/articles/catalog-overview#catalog-items-versus-variations" aria-hidden="true"><span class="icon icon-link" aria-hidden="true"></span></a>Catalog items <object style="background-color: yellow">versus</object> variations</h4>
+<p style="background-color: yellow">Catalog items can represent:</p>
 <ul>
-<li>digital or physical items (e.g., a PDF printable, coffee),</li>
-<li>services (e.g., personal training, dog walking), and/or</li>
-<li>donations and dues (e.g., artistic patronage, club memberships).</li>
+<li><object style="background-color: yellow">digital</object> or physical items (<object style="background-color: yellow">e.g.,</object> a PDF printable, coffee),</li>
+<li><object style="background-color: yellow">services</object> (<object style="background-color: yellow">e.g.,</object> personal training, dog walking), and/or</li>
+<li><object style="background-color: yellow">donations</object> and dues (<object style="background-color: yellow">e.g.,</object> artistic patronage, club memberships).</li>
 </ul>
 <p>A <code>CatalogItem</code> does not have a price or SKU because it represents the high-level product, not the actual item/service
 being sold. For example:</p>
 <table>
   <thead>
-    <tr>
-      <th><i>If merchants offer...</i></th>
+    <tr style="background-color: yellow">
+      <th ><i>If merchants offer...</i></th>
       <th><i>Some possible catalog items are...</i></th>
     </tr>
   </thead>
@@ -431,7 +431,7 @@ to a purchase or used in a transaction. Variations represent the specific versio
 an assigned SKU and price). For example:</p>
 <table>
   <thead>
-    <tr>
+    <tr style="background-color: yellow">
       <th><i>If the catalog item is...</i></th>
       <th><i>Some possible variants are...</i></th>
     </tr>
@@ -533,9 +533,10 @@ dependent on the products being offered.</p>
     </tr>
   </tbody>
 </table>
-<p>But <strong>every catalog item must have at least one variation</strong> so this won't work. One solution is group "Fitness
-evaluation" and "Nutritional evaluation" under a common offering — Health evaluation — with two variations: one for
-fitness level and one for nutrition. For example:</p>
+
+<p><object style="background-color: yellow">But <strong>every catalog item must have at least one variation</strong> so this won't work.</object> 
+  One solution is group "Fitness evaluation" and "Nutritional evaluation" under a common offering — Health evaluation — with 
+  two variations: one for fitness level and one for nutrition. For example:</p>
 <table>
   <thead>
     <tr>
@@ -573,7 +574,7 @@ fitness level and one for nutrition. For example:</p>
     </tr>
   </tbody>
 </table>
-<p>But consider a situation where some of the evaluations don't need to be in-person. In this case, it might make more
+<p><object style="background-color: yellow">But</object> consider a situation where some of the evaluations don't need to be in-person. In this case, it might make more
 sense to keep the original product listing and add variations based on how the evaluation takes place. For example:</p>
 <table>
   <thead>
@@ -623,15 +624,15 @@ sense to keep the original product listing and add variations based on how the e
 <p>Forcing a product to have at least one variation may seem arbitrary, but it's an important distinction when you add in
 modifications. Different versions of a given product may have:</p>
 <ul>
-<li>different SKUs,</li>
-<li>different prices,</li>
-<li>only be offered in specific store locations, or</li>
-<li>offered in specific quantities based on location.</li>
+<li><object style="background-color: yellow">different</object> SKUs<object style="background-color: yellow">,</object></li>
+<li><object style="background-color: yellow">different</object> prices<object style="background-color: yellow">,</object></li>
+<li><object style="background-color: yellow">only</object> be offered in specific store locations<object style="background-color: yellow">, or</object></li>
+<li><object style="background-color: yellow">offered</object> in specific quantities based on location<object style="background-color: yellow">.</object></li>
 </ul>
 <p>Differentiating between the idea of a product (<code>CatalogItem</code>) and its manifestation (<code>CatalogItemVariation</code>), creates
 greater flexibility in distribution chain and inventory management without requiring excessive duplication.</p>
 <h4>
-<a id="variations-versus-modifiers" class="anchor" href="https://docs.connect.squareup.com/articles/catalog-overview#variations-versus-modifiers" aria-hidden="true"><span class="icon icon-link" aria-hidden="true"></span></a>Variations versus modifiers</h4>
+<a id="variations-versus-modifiers" class="anchor" href="https://docs.connect.squareup.com/articles/catalog-overview#variations-versus-modifiers" aria-hidden="true"><span class="icon icon-link" aria-hidden="true"></span></a>Variations <object style="background-color: yellow">versus</object> modifiers</h4>
 <p>Modifiers (<code>CatalogModifier</code>) are <strong>customizations</strong> to a product associated with a specific transaction. They are
 related to variations in that they have an associated price, but they don't have SKUs. The lack of SKU means they are
 product agnostic, but it also means that they cannot have a quantity.</p>
@@ -665,11 +666,11 @@ product agnostic, but it also means that they cannot have a quantity.</p>
 <p>The difference between variations and modifications is that <strong>modifications are only relevant when a product can be
 customized as part of an order</strong>. For example:</p>
 <ul>
-<li>Selecting a preferred pickup window for a dog walking service (e.g., early morning, afternoon, early evening).</li>
-<li>Selecting a wrapping paper pattern when the purchase is a gift (e.g., blue, green, stripes, polka dots).</li>
-<li>Selecting custom embroidery patterns for a jersey (e.g., bees, gophers, a ham sandwich).</li>
+<li>Selecting a preferred pickup window for a dog walking service (<object style="background-color: yellow">e.g.,</object> early morning, afternoon, early evening).</li>
+<li>Selecting a wrapping paper pattern when the purchase is a gift (<object style="background-color: yellow">e.g.,</object> blue, green, stripes, polka dots).</li>
+<li>Selecting custom embroidery patterns for a jersey (<object style="background-color: yellow">e.g.,</object> bees, gophers, a ham sandwich).</li>
 </ul>
-<p>In each of these cases, the specific <code>CatalogItemVariation</code> — i.e., the thing being added to a purchase — is irrelevant
+<p>In each of these cases, the specific <code>CatalogItemVariation</code> — <object style="background-color: yellow">i.e.,</object> the thing being added to a purchase — is irrelevant
 to the customization. For example, a pickup window is equally relevant whether the customer orders a 30-minute walk or
 a 60 minute walk, the wrapping paper selected applies regardless of the gift purchased, and the size of the jersey
 doesn't affect the custom embroidery selected.</p>
@@ -678,7 +679,7 @@ doesn't affect the custom embroidery selected.</p>
 <p>The <code>CatalogCategory</code> object provides a basic structure for organizing the items in a catalog. Categories are listed on
 the "Categories" page of the Square Dashboard and in the "Categories" tab of the Items applet in the Square Point of
 Sale app.</p>
-<p>While category names are entirely arbitrary (e.g., "Hot Drinks", "Team Favorites", "Quetzalcoatlus"), they should make
+<p>While category names are entirely arbitrary (<object style="background-color: yellow">e.g.,</object> "Hot Drinks", "Team Favorites", "Quetzalcoatlus"), they should make
 sense when displayed in the Dashboard or POS. Categories can be useful for making a large catalog easier to look up and
 manage, but they should be designed with care as a given catalog item may only belong to one category.</p>
 <h3>
@@ -697,17 +698,17 @@ parallel with <code>CatalogItem</code> objects. When a new <code>CatalogItem</co
 <code>CatalogTax</code> object is explicitly provided. Taxes are listed on the "Taxes" page of the Square Dashboard.</p>
 <p><code>CatalogTax</code> can be defined as:</p>
 <ul>
-<li>an additive tax — added on top of the price of items they're applied to. For example, if an additive 10% tax is
+<li><object style="background-color: yellow">an additive</object> tax — added on top of the price of items they're applied to. For example, if an additive 10% tax is
 applied to a $100 item, the total is $110.</li>
-<li>an inclusive tax — assumed to already be included in the price of the items they apply to. For example, if an
+<li><object style="background-color: yellow">an inclusive</object> tax — assumed to already be included in the price of the items they apply to. For example, if an
 inclusive 10% tax is applied to a $100 item, the total is still $100, and the actual base cost of the item is
 assumed to be $90.91, with $9.09 of the total being the tax amount.</li>
 </ul>
 <p>Once defined, taxes are applied to payments during one of the following phases:</p>
 <ul>
-<li>the subtotal phase — taxes applied during the subtotal phase are applied only to the base cost of applicable items.
+<li><object style="background-color: yellow">the subtotal</object> phase — taxes applied during the subtotal phase are applied only to the base cost of applicable items.
 The vast majority of taxes are applied during this phase.</li>
-<li>the total phase — taxes applied during the total phase are applied to the base cost of applicable items, and to any
+<li><object style="background-color: yellow">the total</object> phase — taxes applied during the total phase are applied to the base cost of applicable items, and to any
 tax amounts applied to those items during the subtotal phase.</li>
 </ul>
 <p>In the case that a <code>CatalogItem</code> is subject to both additive and inclusive taxes, the additive tax only applies to the
@@ -718,7 +719,7 @@ additive tax, the 5% additive tax applies to the $90.91 base price of the item (
 <p>The Catalog API includes bulk endpoints to help reduce the number of API calls required for catalog management and
 pagination of large result sets to reduce server load. Changes made with the Catalog API are stored in Square's database
 and immediately visible in the Square Dashboard and Square Point of Sale across all merchant locations.</p>
-<p>All exchanges with Catalog endpoints use the CatalogObject data type, which is a generalized wrapper for configuring
+<p style="background-color: yellow">All exchanges with Catalog endpoints use the CatalogObject data type, which is a generalized wrapper for configuring
 common parameters (e.g, type, id) and package the entity-specific information for each of the core types in Catalog's
 object model:</p>
 <div class="CodeRay" id="">
@@ -828,7 +829,7 @@ of type <code>ITEM_VARIATION</code>:</p>
 
 <h3>
 <a id="idempotency-keys" class="anchor" href="https://docs.connect.squareup.com/articles/catalog-overview#idempotency-keys" aria-hidden="true"><span class="icon icon-link" aria-hidden="true"></span></a>Idempotency Keys</h3>
-<p>Idempotency keys are strings that are unique across all change requests made by an application to Catalog and required
+<p>Idempotency keys are strings that are unique across all change requests made by an application to <object style="background-color: yellow">Catalog</object> and required
 for any transaction that could alter data in the catalog. If an identical request is issued, with an unchanged
 idempotency key, the server will return the same response that it returned for the original request.</p>
 <p>Keys should only be reused when it makes sense to retry an identical request. All attempts to reuse an idempotency key
@@ -836,8 +837,8 @@ with a new (or altered) request will fail. Square stores request and response bo
 but applications should not plan on being able to retry a request from days or weeks in the past.</p>
 <h3>
 <a id="pagination" class="anchor" href="https://docs.connect.squareup.com/articles/catalog-overview#pagination" aria-hidden="true"><span class="icon icon-link" aria-hidden="true"></span></a>Pagination</h3>
-<p>All Catalog endpoints that have the potential to return a large number of objects employ pagination. For large result
-sets, the endpoint returns an initial subset (i.e., the first page) of objects and a pagination cursor. The pagination
+<p>All <object style="background-color: yellow">Catalog</object> endpoints that have the potential to return a large number of objects employ pagination. For large result
+sets, the endpoint returns an initial subset (<object style="background-color: yellow">i.e.,</object> the first page) of objects and a pagination cursor. The pagination
 cursor is either set to a string that represents the current place in the result set or the empty string if the current
 page is the final page of results. To fetch the next page, the cursor is appended to the original query request before
 calling the endpoint again.</p>
