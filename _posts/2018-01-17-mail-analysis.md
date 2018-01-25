@@ -85,7 +85,7 @@ df['date'] = df['date'].apply(lambda x: pd.to_datetime(x, errors='coerce', utc=T
 df = df[df['date'].notna()]
 ```
 
-Now lets print out some basic info. It looks like I have 72,728 emails from my gmail account (I'm actually dissappointed I haven't collected more over the 10 years that I've been using gmail.). We can also see that there are some `null` values for each of the variables but we will deal with those in turn.
+Now lets print out some basic info. It looks like I have 72,728 emails from my gmail account (I'm actually disappointed I haven't collected more over the 10 years that I've been using gmail.). We can also see that there are some `null` values for each of the variables but we will deal with those in turn.
 
 
 ```python
@@ -444,9 +444,9 @@ plot_tod_vs_year(recvd, ax[1], title='Received', add_milwaukee=True, add_pasaden
 ![png](/images/2018-01-17-mail-analysis/mail_analysis_31_1.png)
 
 
-There are lot of things to notices in the plots above. First off, the red points indicate the time that I spend during my Ph.D in Milwaukee and the green points are the time that I spend in Pasadena during my postdoc. Overall there is a slight trend towards starting earlier and you can see that my schedule started to change at the end of my Post-doc as I started to get up earlier and thus started sending emails earlier. Another cool feature is the line in the "Sent" plot around mid 2013. During this time I was on a month long trip around the world with 2 weeks in Thailand, one in England and one in Poland so it makes sense that I would be sending emails very early in EST. In general it looks like I don't send many emails before 8 am and slow down around 5 or 6. You can just make out that there is definitely a lower densigy of emails after 4:30-5:00 after my Ph.D as I try to have more of a work-life balance nowadays.
+There are lot of things to notices in the plots above. First off, the red points indicate the time that I spend during my Ph.D in Milwaukee and the green points are the time that I spend in Pasadena during my postdoc. Overall there is a slight trend towards starting earlier and you can see that my schedule started to change at the end of my Post-doc as I started to get up earlier and thus started sending emails earlier. Another cool feature is the line in the "Sent" plot around mid 2013. During this time I was on a month long trip around the world with 2 weeks in Thailand, one in England and one in Poland so it makes sense that I would be sending emails very early in EST. In general it looks like I don't send many emails before 8 am and slow down around 5 or 6. You can just make out that there is definitely a lower density of emails after 4:30-5:00 after my Ph.D as I try to have more of a work-life balance nowadays.
 
-In the "Received" plot trends are a bit harder to make out without splitting it by sender (which we will do in a second). One feature is that a lot of the received emails in my Padadena years are not significantly delayed which indicates that the majority of senders are also in the Pacific time zone. You can also see the two email lists (around 8:30 and 9 PM, and dropping with time zone) which are the arxiv emailers for astro-ph and gr-qc. I stopped subscribing to those in early 2017 which you can also see.
+In the "Received" plot trends are a bit harder to make out without splitting it by sender (which we will do in a second). One feature is that a lot of the received emails in my Pasadena years are not significantly delayed which indicates that the majority of senders are also in the Pacific time zone. You can also see the two email lists (around 8:30 and 9 PM, and dropping with time zone) which are the arxiv emailers for astro-ph and gr-qc. I stopped subscribing to those in early 2017 which you can also see.
 
 There are definitely some interesting trends here. Lets break things down a bit further
 
@@ -570,7 +570,7 @@ In terms of incoming mail there are also two large peaks, one around late 2014 a
 
 ### Who do I communicate with?
 
-It is interesting to see who I communicate with the most. A simple way to do this is to just sort by the value counts of the email adresses. Of course this only received emails since we are not tackling the problem of sorting out multiple recipients here. Nonetheless, this is a good proxy.
+It is interesting to see who I communicate with the most. A simple way to do this is to just sort by the value counts of the email addresses. Of course this only received emails since we are not tackling the problem of sorting out multiple recipients here. Nonetheless, this is a good proxy.
 
 
 ```python
@@ -591,7 +591,7 @@ plt.legend(handles=labels, bbox_to_anchor=[1.4, 0.9], fontsize=12, shadow=True);
 ![png](/images/2018-01-17-mail-analysis/mail_analysis_40_0.png)
 
 
-The plot above is actually really cool! We can see the different "eras" of my career by looking at who I correspond most with as a function of year. At the start of my email history is when my graduate adivisor was Maura and thus she is the top correspondent in those years. In 2011 I went to UWM and my graduate adivisor was Xavi and he was my main email correspondent from 2011-2014. I still have a large correspondence with Xavi partly because he is heading up our collaborations so I get a lot of emails from him anyway, nonetheless you can see a sharp drop in mid 2014 when I moved to Pasadena for my postdoc. From about mid 2012 to 2016 I had a lot of correspondence with Rutger. We worked closely while I was in Milwaukee and then we were both in Pasadena together from 2014 - 2016 so he was a major correspondent then. He left the field in early 2016 and you can see a sharp drop in email correspondence. I also started working with Steve at the end of my time in Milwaukee and then we were both in Pasadena together and thus he was a main correspondent from 2014 - present. Our email has dropped off in the last 1.5 years, however because we have started using Slack!
+The plot above is actually really cool! We can see the different "eras" of my career by looking at who I correspond most with as a function of year. At the start of my email history is when my graduate advisor was Maura and thus she is the top correspondent in those years. In 2011 I went to UWM and my graduate advisor was Xavi and he was my main email correspondent from 2011-2014. I still have a large correspondence with Xavi partly because he is heading up our collaborations so I get a lot of emails from him anyway, nonetheless you can see a sharp drop in mid 2014 when I moved to Pasadena for my postdoc. From about mid 2012 to 2016 I had a lot of correspondence with Rutger. We worked closely while I was in Milwaukee and then we were both in Pasadena together from 2014 - 2016 so he was a major correspondent then. He left the field in early 2016 and you can see a sharp drop in email correspondence. I also started working with Steve at the end of my time in Milwaukee and then we were both in Pasadena together and thus he was a main correspondent from 2014 - present. Our email has dropped off in the last 1.5 years, however because we have started using Slack!
 
 Thee isn't to much information to glean from the email count vs hour other than peak time are approximately 9am - 6pm. There is one thing that is interesting in that there is a peak in emails between me, Steve, and Rutger around late 2015. At this time we had a potential Gravitational Wave candidate in the data we were analyzing and thus had a huge email chain related to this. Side note: it was not a gravitational wave!
 
@@ -686,4 +686,4 @@ So you can see that there is still quite a bit of planning with words like "tele
 
 ## More personal analytics
 
-This was the first post in a planned series of personal analytics. Next I plan to map out my google maps data over the years and I also plan to dive into 2 years of fitbit data. Stay tuned!
+This was the first post in a planned series of personal analytics. Next I plan to map out my google maps data over the years and I also plan to dive into 2 years of Fitbit data. Stay tuned!
