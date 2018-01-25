@@ -1,9 +1,9 @@
 ---
-layout: single
-title:  "How to Change Java Versions using jEnv"
-date:   2018-01-10 00:00:00 -0500
-categories: IT
-tag: [macos,java,jenv]
+layout:           single
+title:            "How to Change Java Versions using jEnv"
+date:             2018-01-10 00:00:00 -0500
+categories:       IT
+tag:              [macos,java,jenv]
 ---
 
 {% highlight shell %}
