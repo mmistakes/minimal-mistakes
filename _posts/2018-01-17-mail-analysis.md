@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Personal Analytics Part 1: Gmail"
-date:   2018-01-24
+date:   2018-01-17
 ---
 
 
