@@ -260,7 +260,7 @@ defaults:
       comments: true
       share: true
       related: true
-      permalink: /post/:year-:month-:day-:title
+      permalink: /post/:year-:month-:day-:title/
   # _pages
   - scope:
       path: ""
