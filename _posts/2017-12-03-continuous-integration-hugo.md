@@ -45,7 +45,7 @@ added the material. Now, on Github go to "Settings" and click on "Branches". Fro
 here, set your default branch to "hugo". Then go to "Integrations & Services" and
 add Travis CI.
 
-In a similar manner to a [previous post]({{ site.baseurl }}{% post_url 2017-11-20-2017-11-20-automating-jupyter-slides %}), you will need to
+In a similar manner to a [previous post]({{ site.baseurl }}{% post_url 2017-11-20-automating-jupyter-slides %}), you will need to
 [log in to Travis with your Github account](https://docs.travis-ci.com/user/getting-started/)
 and enable builds for your repository. You will also need to
 [create a personal access token](https://github.com/settings/tokens).
