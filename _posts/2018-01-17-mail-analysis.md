@@ -1,6 +1,7 @@
 ---
 layout: single
 title:  "Personal Analytics Part 1: Gmail"
+og_image: /images/2018-01-17-mail-analysis/mail_analysis_50_0.png
 date:   2018-01-17
 ---
 
