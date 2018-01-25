@@ -6,6 +6,8 @@ main:
      url: /portfolio/
    - title: "Publications"
      url: /publications/
+   - title: "CV"
+     url: /JAE-cv.pdf
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"

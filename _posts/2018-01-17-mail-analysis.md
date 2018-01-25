@@ -1,37 +1,17 @@
 ---
 layout: single
 title:  "Personal Analytics Part 1: Gmail"
-excerpt: ""
-date:   2018-01-17
-categories: jekyll update
+date:   2018-01-24
 ---
 
-```python
-from __future__ import (absolute_import, division, print_function, unicode_literals)
-import numpy as np
-import mailbox
-import csv
-import pandas as pd
-import pytz
-import re
-import matplotlib.pyplot as plt
-from matplotlib.ticker import MaxNLocator
-import matplotlib.gridspec as gridspec
-import matplotlib.patches as mpatches
-from wordcloud import WordCloud
-import datetime
-from scipy.ndimage.filters import gaussian_filter
-from scipy.interpolate import interp1d
 
-from private import email_dict
+Most of us are sending or receiving tens to hundreds of emails daily. I have been using email regularly since my undergrad days in 2008 so I thought it would be a neat project to [download my gmail data](https://takeout.google.com/settings/takeout) and analyze it to find out any interesting trends.
 
-% matplotlib inline
-%config InlineBackend.figure_format = 'retina'
-```
+This post will detail the exploration of my Gmail account going back to 2018 but the code should be applicable (with some minor modifications) to your emails as well!
 
-# Read in Data and explore
+## Read in Data and explore
 
-Get `mbox` data [here](https://takeout.google.com/settings/takeout).
+Get `mbox` data [here](https://takeout.google.com/settings/takeout). Note that we only deal with Gmail data here. If you can get your email into `mbox` format then this should probably work as well but the tags may be different.
 
 
 ```python
@@ -81,6 +61,8 @@ for key in mbox[0].keys():
 
 
 For the purposes of this analysis we really only want to keep `Subject`, `To`, `From`, `Date`, and `X-Gmail-Labels`. The first four are self explanatory and the last will tell us if the message was in "Sent" mail or in my inbox. We will also keep `X-GM-THIRD` which is a variable that keeps track of email threads.
+
+### Convert to csv
 
 So to simplify our lives, lets make a csv containing only those value for all of the messages. After this, we can use `pandas` to read the csv into a dataframe.
 
@@ -325,7 +307,7 @@ df.head()
 
 
 
-## Convert times
+### Convert times
 
 Before we start our actual analysis we want to convert the timestamps and add some auxiliary variables. We will do the following
 
@@ -387,7 +369,7 @@ df.index = df['date']
 del df['date']
 ```
 
-# Analysis
+## Analysis
 
 Our data is now nice and cleaned so lets start to take a look at some of the basic characteristics.
 
@@ -425,7 +407,6 @@ def plot_tod_vs_year(df, ax, color='C0', s=0.5, title='', add_milwaukee=False, a
         ind += idx
         df[idx].plot.scatter('year', 'timeofday', s=s, alpha=0.6, ax=ax, color='C3')
 
-
     if add_pasadena:
         start = datetime.datetime(2014, 8, 15, tzinfo=est)
         stop = datetime.datetime(2017, 7, 1, tzinfo=est)
@@ -459,14 +440,7 @@ plot_tod_vs_year(recvd, ax[1], title='Received', add_milwaukee=True, add_pasaden
 ```
 
 
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x118eea898>
-
-
-
-
-![png](mail_analysis_files/mail_analysis_29_1.png)
+![png](/images/2018-01-17-mail-analysis/mail_analysis_31_1.png)
 
 
 There are lot of things to notices in the plots above. First off, the red points indicate the time that I spend during my Ph.D in Milwaukee and the green points are the time that I spend in Pasadena during my postdoc. Overall there is a slight trend towards starting earlier and you can see that my schedule started to change at the end of my Post-doc as I started to get up earlier and thus started sending emails earlier. Another cool feature is the line in the "Sent" plot around mid 2013. During this time I was on a month long trip around the world with 2 weeks in Thailand, one in England and one in Poland so it makes sense that I would be sending emails very early in EST. In general it looks like I don't send many emails before 8 am and slow down around 5 or 6. You can just make out that there is definitely a lower densigy of emails after 4:30-5:00 after my Ph.D as I try to have more of a work-life balance nowadays.
@@ -475,13 +449,7 @@ In the "Received" plot trends are a bit harder to make out without splitting it 
 
 There are definitely some interesting trends here. Lets break things down a bit further
 
-* top 10 senders and receivers
-* waterfall of count vs time of day per month
-* time between replies in a thread
-* incoming outgoing vs year
-
-
-## Incoming vs. Outgoing trends
+### Incoming vs. Outgoing trends
 
 Lets take a look at hour my incoming and outgoing mail evolved over the 2009-2018 period and also how it evolves over a day (averaged over total usage back to 2009).
 
@@ -592,14 +560,14 @@ plt.legend(handles=[p1, p2], bbox_to_anchor=[1.45, 0.7], fontsize=14, shadow=Tru
 ```
 
 
-![png](mail_analysis_files/mail_analysis_36_0.png)
+![png](/images/2018-01-17-mail-analysis/mail_analysis_37_0.png)
 
 
 In the plot above we get a good summary of aggregate values both as a function of year and time of day. The first obvious point is that there are many more incoming emails than outgoing emails at all times. It is also clear that I've had peaks in sent emails in the high point of my Ph.D research in late 2013 into mid 2014 and also at the beginning of 2017. During the last year of my Ph.D I was scrambling to get lots of research finished for my thesis and at the beginning of last year I was trying to finish up projects (thus sending lots of emails) getting ready for job hunting. Also, my peak email time seems to be around 10:00 am and 2:30 pm and there is a dip around lunch time. Basically you can expect to almost never expect to get an email from me before 7:00 am but don't be surprised to get plenty around midnight!
 
 In terms of incoming mail there are also two large peaks, one around late 2014 and other around early 2017. The first peak has to do with finishing my Ph.D and then the subsequent drop in emails after I started my Post-doc. The second peak corresponds to a GitHub notification emailer as we will see next.
 
-## Who do I communicate with?
+### Who do I communicate with?
 
 It is interesting to see who I communicate with the most. A simple way to do this is to just sort by the value counts of the email adresses. Of course this only received emails since we are not tackling the problem of sorting out multiple recipients here. Nonetheless, this is a good proxy.
 
@@ -619,14 +587,14 @@ plt.legend(handles=labels, bbox_to_anchor=[1.4, 0.9], fontsize=12, shadow=True);
 ```
 
 
-![png](mail_analysis_files/mail_analysis_39_0.png)
+![png](/images/2018-01-17-mail-analysis/mail_analysis_40_0.png)
 
 
 The plot above is actually really cool! We can see the different "eras" of my career by looking at who I correspond most with as a function of year. At the start of my email history is when my graduate adivisor was Maura and thus she is the top correspondent in those years. In 2011 I went to UWM and my graduate adivisor was Xavi and he was my main email correspondent from 2011-2014. I still have a large correspondence with Xavi partly because he is heading up our collaborations so I get a lot of emails from him anyway, nonetheless you can see a sharp drop in mid 2014 when I moved to Pasadena for my postdoc. From about mid 2012 to 2016 I had a lot of correspondence with Rutger. We worked closely while I was in Milwaukee and then we were both in Pasadena together from 2014 - 2016 so he was a major correspondent then. He left the field in early 2016 and you can see a sharp drop in email correspondence. I also started working with Steve at the end of my time in Milwaukee and then we were both in Pasadena together and thus he was a main correspondent from 2014 - present. Our email has dropped off in the last 1.5 years, however because we have started using Slack!
 
 Thee isn't to much information to glean from the email count vs hour other than peak time are approximately 9am - 6pm. There is one thing that is interesting in that there is a peak in emails between me, Steve, and Rutger around late 2015. At this time we had a potential Gravitational Wave candidate in the data we were analyzing and thus had a huge email chain related to this. Side note: it was not a gravitational wave!
 
-## What are my most active days?
+### What are my most active days?
 
 So far we have looked at emails separated by time-of-day or by year but not by day. I could be interesting to see which days are my most active email days in terms of incoming and outgoing mail.
 
@@ -643,7 +611,7 @@ plt.grid(ls=':', color='k', alpha=0.5)
 ```
 
 
-![png](mail_analysis_files/mail_analysis_42_0.png)
+![png](/images/2018-01-17-mail-analysis/mail_analysis_43_0.png)
 
 
 So it looks like my daily email load is pretty even among incoming and outgoing per day (as fraction of emails per week, there are way more incoming than outgoing overall). It also looks like my daily email load is approximately equal Monday - Thursday, a bit lower on Friday and significantly lower on Saturday and Sunday. We can guess that the email load is lower on Friday because there are fewer emails later in the day than during other weekdays. Furthermore, we can guess that the opposite is true on Sunday in that there may be more emails later in the day in preparation for the week ahead. So lets take a look at email as a function of hour.
@@ -672,12 +640,7 @@ plt.legend(loc='upper left')
 
 
 
-    <matplotlib.legend.Legend at 0x13b1b2dd8>
-
-
-
-
-![png](mail_analysis_files/mail_analysis_44_1.png)
+![png](/images/2018-01-17-mail-analysis/mail_analysis_45_1.png)
 
 
 Ok, so the plot above is a little messy but lets try to make sense of it. We are plotting the fraction of weekly emails per hour, so if you summed up the values for the incoming mail curve on Wednesday you would get back the weekly fraction in the first bar plot above. The solid lines are for incoming mail and the dashed lines are for outgoing mail. Overall we wee similar trends as before with a tighter distribution around 8 - 6 for outgoing emails and a broader distribution for incoming emails.
@@ -685,7 +648,11 @@ Ok, so the plot above is a little messy but lets try to make sense of it. We are
 As I hypothesized above, the Friday and Sunday counts are lower because I don't send or receive as many emails later in the day on Friday, and conversely, I receive and send more emails later in the day on Sunday. It is also interesting that my weekend emails (both incoming and outgoing) are pretty similar up until around 3:30 - 4:00 pm on Sunday where the emails start to pick up again.
 
 
-## What am I emailing about?
+### What am I emailing about?
+
+There are plenly of awesome sophisticated things one could do with email text but for fun, lets just make a word-cloud of the subjects to try to get a base idea of what I"m emailing about.
+
+Lets remove the arxiv mailing list since that will contaminate our word clout with a bunch of email list boilerplate.
 
 
 ```python
@@ -697,7 +664,7 @@ text = ' '.join(map(str, sent['subject'].values))
 
 ```python
 # Create the wordcloud object
-stopwords = ['Re', 'received', 'crosses']
+stopwords = ['Re', 'Fwd']
 wrd = WordCloud(width=480, height=480, margin=0, collocations=False)
 for sw in stopwords:
     wrd.stopwords.add(sw)
@@ -708,66 +675,14 @@ plt.figure(figsize=(15,15))
 plt.imshow(wordcloud, interpolation='bilinear')
 plt.axis("off")
 plt.margins(x=0, y=0)
-plt.show()
-
 ```
 
 
-![png](mail_analysis_files/mail_analysis_48_0.png)
+![png](/images/2018-01-17-mail-analysis/mail_analysis_50_0.png)
 
 
+So you can see that there is still quite a bit of planning with words like "telecon" and "tomorrow", "meeting" but it is pretty clear that I work in a collaboration called NANOGrav and having telecons and meetings are a big deal. We also deal with "data" a lot and I do a lot of "noise" analysis.
 
-```python
-tod = df[df['timeofday'].notna()]['timeofday'].values
-year = df[df['year'].notna()]['year'].values
-Ty = year.max() - year.min()
-T = tod.max() - tod.min()
-bins = int(T / dt)
-if weight_fun is None:
-    weights = 1 / (np.ones_like(tod) * Ty * 365.25 / dt)
-else:
-    weights = weight_fun(df)
-if smooth:
-    hst, xedges = np.histogram(tod, bins=bins, weights=weights);
-    x = np.delete(xedges, -1) + 0.5*(xedges[1] - xedges[0])
-    hst = gaussian_filter(hst, sigma=0.75)
-```
+## More personal analytics
 
-
-```python
-hrs = df.hour.value_counts()
-```
-
-
-```python
-plt.figure(figsize=(12, 8))
-for ct, yr in enumerate(df.year_int.unique()):
-    df_y = recvd[recvd['year_int']==yr]
-    hrs = df_y.hour.value_counts()
-    plt.scatter(hrs.index, np.ones(len(hrs))*yr, s=(hrs.values/hrs.values.max()+0.005)**2 * 300, color='C0', alpha=0.9)
-
-    df_y = sent[sent['year_int']==yr]
-    hrs = df_y.hour.value_counts()
-    if len(hrs):
-        plt.scatter(hrs.index, np.ones(len(hrs))*yr, s=(hrs.values/hrs.values.max()+0.005)**2 * 300, color='C1', alpha=0.9)
-ax = plt.gca()
-ax.set_xlim(-0.5, 24)
-ax.xaxis.set_major_locator(MaxNLocator(13))
-ax.set_xticklabels([datetime.datetime.strptime(str(int(np.mod(ts, 24))), "%H").strftime("%I %p")
-                    for ts in ax.get_xticks()]);
-
-ax.yaxis.set_major_locator(MaxNLocator(12, integer=True, prune=None))
-
-
-```
-
-
-![png](mail_analysis_files/mail_analysis_51_0.png)
-
-
-## df.year_int.unique()
-
-
-```python
-df.year
-```
+This was the first post in a planned series of personal analytics. Next I plan to map out my google maps data over the years and I also plan to dive into 2 years of fitbit data. Stay tuned!
