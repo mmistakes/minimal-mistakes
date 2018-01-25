@@ -5,11 +5,11 @@ main:
    - title: "Portfolio"
      url: /portfolio/
    - title: "Publications"
-     url: /publications/
+     url: /publication/
    - title: "CV"
      url: /JAE-cv.pdf
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+   - title: "Posts"
+     url: /year-archive/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
