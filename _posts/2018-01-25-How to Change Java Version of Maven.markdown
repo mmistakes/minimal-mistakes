@@ -1,6 +1,6 @@
 ---
 layout:           single
-title:            "How to Change Java Version of Maven and Mac OS X"
+title:            "How to Change Java Version of Maven"
 date:             2018-01-25 00:00:00 -0500
 categories:       IT
 tag:              [macos,java,maven]
@@ -17,6 +17,12 @@ OS name: "mac os x", version: "10.13.1", arch: "x86_64", family: "mac"
 {% endhighlight %}
 
 {% highlight shell %}
+~> echo $JAVA_HOME
+
+~>
+{% endhighlight %}
+
+{% highlight shell %}
 ~> /usr/libexec/java_home
 /Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home
 {% endhighlight %}
@@ -27,17 +33,6 @@ Matching Java Virtual Machines (2):
     1.8.0_131, x86_64:	"Java SE 8"	/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home
     1.7.0_80, x86_64:	"Java SE 7"	/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home
 
-/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home
-{% endhighlight %}
-
-{% highlight shell %}
-~> echo $JAVA_HOME
-
-~>
-{% endhighlight %}
-
-{% highlight shell %}
-~> /usr/libexec/java_home
 /Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home
 {% endhighlight %}
 
@@ -58,4 +53,9 @@ Java version: 1.7.0_80, vendor: Oracle Corporation
 Java home: /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre
 Default locale: en_US, platform encoding: UTF-8
 OS name: "mac os x", version: "10.13.1", arch: "x86_64", family: "mac"
+{% endhighlight %}
+
+{% highlight shell %}
+~> /usr/libexec/java_home
+/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home
 {% endhighlight %}
