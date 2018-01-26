@@ -253,6 +253,4 @@ defaults:
       comments: # true
       share: true
       related: true
-plugins:
-  - jekyll-remote-theme
-remote_theme: benbalter/retlab
+theme: minimal-mistakes-jekyll
