@@ -52,7 +52,7 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
 search                   : # true, false (default)
-search_full_content      : # true, false (default)
+search_full_content      : true # true, false (default)
 
 # SEO Related
 google_site_verification :
@@ -84,11 +84,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
+  name             : "张三"
+  avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "狂拽炫酷吊炸天！"
   location         : "Beijing"
-  email            :
+  email            : "sunchao0427@qq.com"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
@@ -96,8 +96,8 @@ author:
   dribbble         :
   flickr           :
   facebook         :
-  foursquare       :
-  github           :
+  foursquare       : 
+  github           :  "https://github.com/sunchao0427"
   gitlab           :
   google_plus      :
   keybase          :
@@ -111,7 +111,7 @@ author:
   tumblr           :
   twitter          :
   vine             :
-  weibo            :
+  weibo            : "https://weibo.com/u/2377235865/home?wvr=5&lf=reg"
   xing             :
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
 
@@ -183,7 +183,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:  Asia/Shanghai # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
@@ -250,7 +250,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments:  true
       share: true
       related: true
 remote_theme: "mmistakes/minimal-mistakes"
