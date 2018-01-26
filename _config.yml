@@ -11,7 +11,7 @@ minimal_mistakes_skin    : "contrast" # "default"  "air", "aqua", "contrast", "d
 locale                   : "zh_CN" # zh_CN  en-US
 title                    : "作品展"
 title_separator          : "-"
-name                     : "QQ5277"
+name                     : "sunchao"
 description              : "An amazing website."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -84,10 +84,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "高倩倩"
+  name             : "Gaoqian~"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an amazing person."
-  location         : "北京"
+  location         : "Beijing"
   email            :
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
