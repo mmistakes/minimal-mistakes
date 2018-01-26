@@ -9,7 +9,7 @@ minimal_mistakes_skin    : "contrast" # "default"  "air", "aqua", "contrast", "d
 
 # Site Settings
 locale                   : "zh_CN" # zh_CN  en-US
-title                    : "Qian~'works Show"
+title                    : "works Show"
 title_separator          : "-"
 name                     : "sunchao"
 description              : "An amazing website."
@@ -84,7 +84,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Gaoqian~"
+  name             : "Name"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an amazing person."
   location         : "Beijing"
