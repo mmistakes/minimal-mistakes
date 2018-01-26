@@ -253,3 +253,5 @@ defaults:
       comments: # true
       share: true
       related: true
+plugins:
+  - jekyll-remote-theme
