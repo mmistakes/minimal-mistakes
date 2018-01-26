@@ -255,3 +255,4 @@ defaults:
       related: true
 plugins:
   - jekyll-remote-theme
+remote_theme: benbalter/retlab
