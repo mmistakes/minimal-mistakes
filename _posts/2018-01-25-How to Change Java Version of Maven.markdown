@@ -37,7 +37,8 @@ Matching Java Virtual Machines (2):
 {% endhighlight %}
 
 {% highlight shell %}
-~> export JAVA_HOME=`/usr/libexec/java_home -v "1.7.*"`
+~> echo 'export JAVA_HOME=`/usr/libexec/java_home -v "1.7*"`' >> ~/.zshrc
+~> exit
 {% endhighlight %}
 
 {% highlight shell %}
