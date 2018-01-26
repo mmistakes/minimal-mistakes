@@ -6,6 +6,9 @@ layout: default
   {% include page__hero.html %}
 {% elsif page.header.video.id and page.header.video.provider %}
   {% include page__hero_video.html %}
+
+  {% include figure image_path="/assets/images/unsplash-image-10.jpg" alt="this is a placeholder image" caption="This is a figure caption." %}
+  
 {% endif %}
 
 <div id="main" role="main">
@@ -20,3 +23,4 @@ layout: default
     </section>
   </article>
 </div>
+

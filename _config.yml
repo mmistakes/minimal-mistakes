@@ -247,7 +247,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: splash
+      layout: default
       author_profile: true
       read_time: true
       comments:  true
