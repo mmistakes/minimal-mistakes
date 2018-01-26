@@ -8,7 +8,7 @@
 minimal_mistakes_skin    : "aqua" # "default"  "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "zh_CN" # zh_CN  en-US
 title                    : "作品展"
 title_separator          : "-"
 name                     : "QQ5277"
@@ -84,10 +84,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "高倩倩"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an amazing person."
-  location         : "Somewhere"
+  location         : "北京"
   email            :
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
