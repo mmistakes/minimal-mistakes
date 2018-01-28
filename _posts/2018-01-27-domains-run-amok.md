@@ -103,19 +103,19 @@ module TimeSeries =
         | TimeSeries.String t -> sf t
 
     let first (ts : TimeSeries) =
-        let f = fun (t : Observation<'a> []) -> t.[0].Value
+        let f = fun (t : array<Observation<'a>>) -> t.[0].Value
         map (f >> AnalysisResult.Decimal) (f >> AnalysisResult.String) ts
 
     let last (ts : TimeSeries) =
-        let f = fun (t : Observation<'a> []) -> t.[-1].Value
+        let f = fun (t : array<Observation<'a>>) -> t.[-1].Value
         map (f >> AnalysisResult.Decimal) (f >> AnalysisResult.String) ts
 
     let mean (ts : TimeSeries) =
         let df =
-            fun (t : Observation<decimal> []) ->
+            fun (t : array<Observation<decimal>>) ->
                 t |> Array.averageBy (fun x -> x.Value) |> AnalysisResult.Decimal
         let sf =
-            fun (t : Observation<string> []) -> "" |> AnalysisResult.String
+            fun (t : array<Observation<string>>) -> "" |> AnalysisResult.String
         map df sf ts
 ```
 
