@@ -2,7 +2,7 @@
 title: "Installation"
 permalink: /docs/installation/
 excerpt: "Instructions for installing the theme for new and existing Jekyll based sites."
-last_modified_at: 2017-11-07T20:47:57-05:00
+last_modified_at: 2018-01-03T11:30:48-05:00
 toc: true
 ---
 
@@ -16,7 +16,7 @@ If you plan to host with GitHub Pages be sure to properly setup [**jekyll-remote
 
 **3.** And for those who'd like to make substantial edits to the theme, it can be downloaded as a ZIP file to customize.
 
-[<i class="fa fa-download"></i> Download Minimal Mistakes Theme](https://github.com/mmistakes/minimal-mistakes/archive/master.zip){: .btn .btn--success}
+[<i class="fas fa-download"></i> Download Minimal Mistakes Theme](https://github.com/mmistakes/minimal-mistakes/archive/master.zip){: .btn .btn--success}
 
 **ProTip:** Be sure to remove `/docs` and `/test` if you forked or downloaded Minimal Mistakes. These folders contain documentation and test pages for the theme and you probably don't littering up in your repo.
 {: .notice--info}

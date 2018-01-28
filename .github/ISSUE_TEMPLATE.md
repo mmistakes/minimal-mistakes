@@ -7,8 +7,9 @@
 -->
 
 - [ ] This is a question about using the theme.
-- [ ] This is a feature request.
+- [ ] This is a feature request or enhancement.
 - [ ] I believe this to be a bug with the theme.
+  - [ ] I am using the latest version of the theme.
   - [ ] I have updated all gems with `bundle update`.
   - [ ] I have tested locally with `bundle exec jekyll build`.
 
@@ -50,7 +51,7 @@
   following these setup instructions: 
   https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/
 
-  Then provide a complete log by running `bundle exec jekyll --trace --verbose` 
+  Then provide a complete log by running `bundle exec jekyll build --trace --verbose` 
   and include this output in the filed issue.
 
   Screenshots can also be included if they help illustrate a behavior.

@@ -9,11 +9,20 @@
   {% endfor %}
 {% else %}
   <script src="{{ '/assets/js/main.min.js' | absolute_url }}"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 {% endif %}
 
-{% if page.layout == 'search' %}
-  <script src="{{ '/assets/js/lunr.min.js' | absolute_url }}"></script>
-  <script src="{{ '/assets/js/lunr-en.js' | absolute_url }}"></script>
+{% if site.search == true or page.layout == "search" %}
+  {% assign lang = site.locale | slice: 0,2 | default: "en" %}
+  {% case lang %}
+  {% when "gr" %}
+    {% assign lang = "gr" %}
+  {% else %}
+    {% assign lang = "en" %}
+  {% endcase %}
+  <script src="{{ '/assets/js/lunr/lunr.min.js' | absolute_url }}"></script>
+  <script src="{{ '/assets/js/lunr/lunr-store.js' | absolute_url }}"></script>
+  <script src="{{ '/assets/js/lunr/lunr-' | append: lang | append: '.js' | absolute_url }}"></script>
 {% endif %}
 
 {% include analytics.html %}

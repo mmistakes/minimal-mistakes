@@ -14,7 +14,7 @@
   {% assign category_hashes = page_categories | split: ',' | sort %}
 
   <p class="page__taxonomy">
-    <strong><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].categories_label | default: "Categories:" }} </strong>
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].categories_label | default: "Categories:" }} </strong>
     <span itemprop="keywords">
     {% for hash in category_hashes %}
       {% assign keyValue = hash | split: '#' %}

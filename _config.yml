@@ -52,6 +52,8 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
+search                   : # true, false (default)
+search_full_content      : # true, false (default)
 
 # SEO Related
 google_site_verification :
@@ -89,6 +91,7 @@ author:
   location         : "м. Дніпро"
   email            : "nvk125@dnepredu.dp.ua"
   uri              :
+  home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
   dribbble         :

@@ -55,6 +55,9 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
+search                   : true # true, false (default)
+search_full_content      : true # true, false (default)
+
 # SEO Related
 google_site_verification : "UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y" # Replace this with your ID, or delete
 bing_site_verification   :
@@ -93,6 +96,7 @@ author:
   location         : "Buffalo, NY"
   email            :
   uri              : "https://mademistakes.com"
+  home             : "https://mademistakes.com"
   bitbucket        :
   codepen          :
   dribbble         :
@@ -269,7 +273,6 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-  - jekyll-remote-theme
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -278,7 +281,6 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-  - jekyll-remote-theme
 
 
 # Archives
