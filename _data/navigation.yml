@@ -1,13 +1,18 @@
-# main links links
 main:
 #  - title: "ABOUT"
 #    url: /about/
 
-  - title: "Time Archive"
-    url: /time-archive/
+  # - title: "Data"
+  #   url: /
 
-  # - title: "TAG ARCHIVE"
-  #   url: /tag-archive/
+  # - title: "Coding"
+  #   url: /coding/
+
+  - title: "Projects"
+    url: /projects/
 
   - title: "Mastery"
     url: /mastery/
+
+  - title: "Time Archive"
+    url: /time-archive/
