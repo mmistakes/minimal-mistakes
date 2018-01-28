@@ -36,6 +36,17 @@ This doesn't seem bad so far. Now I need to add some basic functions for analyzi
 
 ```fsharp
 module TimeSeries =
+    let private create observedType t : TimeSeries =
+        t
+        |> Seq.map (fun (t, v) -> {DateTime = t; Value = observedType v})
+        |> Seq.toArray
+
+    let fromDecimal s : TimeSeries =
+        create ObservedValue.Decimal s
+
+    let fromString s : TimeSeries =
+        create ObservedValue.String s
+
     let first (ts : TimeSeries) =
         ts.[0].Value
 
@@ -74,6 +85,18 @@ Now let's try to implement our analysis functions again. Don't judge me for what
 
 ```fsharp
 module TimeSeries =
+    let private create observedType t : TimeSeries =
+        t
+        |> Seq.map (fun (t, v) -> {DateTime = t; Value = v})
+        |> Seq.toArray
+        |> observedType
+
+    let fromDecimal t =
+        create TimeSeries.Decimal t
+
+    let fromString t =
+        create TimeSeries.String t
+
     let private map df sf ts =
         match ts with
         | TimeSeries.Decimal t -> df t
@@ -129,38 +152,46 @@ type AnalysisResult =
     | String of string
 
 module TimeSeries =
-    let first (ts : TimeSeries<'a>) =
+    let private create t : TimeSeries<'a>=
+        t
+        |> Seq.map (fun (t, v) -> {DateTime = t; Value = v} )
+        |> Seq.toArray
+
+    let private first (ts : TimeSeries<'a>) =
         ts.[0].Value
 
-    let last (ts : TimeSeries<'a>) =
+    let private last (ts : TimeSeries<'a>) =
         ts.[-1].Value
 
-    let inline mean (ts : TimeSeries<'a>) =
-        ts |> Array.averageBy (fun x -> x.Value)
+    let inline private mean (ts : TimeSeries<'a>) =
+        ts
+        |> Array.averageBy (fun x -> x.Value)
 
-module DecimalSeries =
-    open TimeSeries
+    module DecimalSeries =
+        let create t : DecimalSeries =
+            create t
 
-    let first (ds : DecimalSeries) =
-        first ds |> AnalysisResult.Decimal
+        let first (ds : DecimalSeries) =
+            first ds |> AnalysisResult.Decimal
 
-    let last (ds : DecimalSeries) =
-        last ds |> AnalysisResult.Decimal
+        let last (ds : DecimalSeries) =
+            last ds |> AnalysisResult.Decimal
 
-    let mean (ds : DecimalSeries) =
-        mean ds |> AnalysisResult.Decimal
+        let mean (ds : DecimalSeries) =
+            mean ds |> AnalysisResult.Decimal
 
-module StringSeries =
-    open TimeSeries
+    module StringSeries =
+        let create t : StringSeries =
+            create t
 
-    let first (ds : StringSeries) =
-        first ds |> AnalysisResult.String
+        let first (ds : StringSeries) =
+            first ds |> AnalysisResult.String
 
-    let last (ds : StringSeries) =
-        last ds |> AnalysisResult.String
+        let last (ds : StringSeries) =
+            last ds |> AnalysisResult.String
 ```
 
-One thing to note, I had to add the keyword `inline` to the `mean` function in the `TimeSeries` module. This makes the compiler figure out the types at the point the function is used. Now I am still not really proud of this code yet but it is accomplishing most of my goals. I am getting code reuse while being able to control which functions can be used by which type of `TimeSeries`. Now, if I only define `create` functions for the `DecimalSeries` and `StringSeries` types, it should not be possible to call a `TimeSeries` function with an invalid `TimeSeries` sub-type.
+One thing to note, I had to add the keyword `inline` to the `mean` function in the `TimeSeries` module. This makes the compiler figure out the types at the point the function is used. Now I am still not really proud of this code yet but it is accomplishing most of my goals. I am getting code reuse while being able to control which functions can be used by which type of `TimeSeries`. Since I only define a `create` function for the `DecimalSeries` and `StringSeries` types, I don't have to fear someone creating a random `TimeSeries<'a>` if they follow the convention of using the `create` function. The functions for `TimeSeries` are also private and can only be called from the sub-modules `DecimalSeries` and `StringSeries`.
 
 ## Conclusion
 
