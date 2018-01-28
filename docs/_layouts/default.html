@@ -3,8 +3,8 @@
 
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.7.0 by Michael Rose
-  Copyright 2017 Michael Rose - mademistakes.com | @mmistakes
+  Minimal Mistakes Jekyll Theme 4.9.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
 -->
@@ -19,19 +19,27 @@
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
-    {{ content }}
+    <div class="initial-content">
+      {{ content }}
 
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <div align="center" style="margin: 1em 0;">
-    <ins class="adsbygoogle"
-         style="display:block; border-bottom: initial;"
-         data-ad-client="ca-pub-7328585512091257"
-         data-ad-slot="3049671934"
-         data-ad-format="auto"></ins>
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <div align="center" style="margin: 1em 0;">
+        <ins class="adsbygoogle"
+             style="display:block; border-bottom: initial;"
+             data-ad-client="ca-pub-7328585512091257"
+             data-ad-slot="3049671934"
+             data-ad-format="auto"></ins>
+        </div>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
     </div>
-    <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+
+    {% if site.search == true %}
+      <div class="search-content">
+        {% include search_form.html %}
+      </div>
+    {% endif %}
 
     <div class="page__footer">
       <footer>

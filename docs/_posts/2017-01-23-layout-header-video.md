@@ -42,19 +42,19 @@ header:
 
 ### Vimeo
 
-To embed the following Vimeo video at url `https://vimeo.com/97649261` into a post or page's main content you'd use: 
+To embed the following Vimeo video at url `https://vimeo.com/212731897` into a post or page's main content you'd use: 
 
 ```liquid
-{% raw %}{% include video id="97649261" provider="vimeo" %}{% endraw %}
+{% raw %}{% include video id="212731897" provider="vimeo" %}{% endraw %}
 ```
 
-{% include video id="97649261" provider="vimeo" %}
+{% include video id="212731897" provider="vimeo" %}
 
 To embed it as a video header you'd use the following YAML Front Matter
 
 ```yaml
 header:
   video:
-    id: 97649261
+    id: 212731897
     provider: vimeo
 ```

@@ -2,13 +2,13 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-last_modified_at: 2017-11-27T12:11:11-05:00
+last_modified_at: 2018-01-04T20:29:29-05:00
 toc: true
 ---
 
 Settings that affect your entire site can be changed in [Jekyll's configuration file](https://jekyllrb.com/docs/configuration/): `_config.yml`, found in the root of your project. If you don't have this file you'll need to copy or create one using the theme's [default `_config.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml) as a base.
 
-**Note:** for technical reasons, `_config.yml` is NOT reloaded automatically when used with `jekyll serve`. If you make any changes to this file, please restart the server process for them to be applied. 
+**Note:** for technical reasons, `_config.yml` is NOT reloaded automatically when used with `jekyll serve`. If you make any changes to this file, please restart the server process for them to be applied.
 {: .notice--warning}
 
 Take a moment to look over the configuration file included with the theme. Comments have been added to provide examples and default values for most settings. Detailed explanations of each can be found below.
@@ -35,6 +35,7 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 {: .notice--warning}
 
 #### Air skin: `air`
+
 {:.no_toc}
 
 <figure class="half">
@@ -44,6 +45,7 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 </figure>
 
 #### Aqua skin: `aqua`
+
 {:.no_toc}
 
 <figure class="half">
@@ -53,6 +55,7 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 </figure>
 
 #### Contrast skin: `contrast`
+
 {:.no_toc}
 
 <figure class="half">
@@ -62,6 +65,7 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 </figure>
 
 #### Dark skin: `dark`
+
 {:.no_toc}
 
 <figure class="half">
@@ -71,6 +75,7 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 </figure>
 
 #### Dirt skin: `dirt`
+
 {:.no_toc}
 
 <figure class="half">
@@ -80,6 +85,7 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 </figure>
 
 #### Mint skin: `mint`
+
 {:.no_toc}
 
 <figure class="half">
@@ -89,6 +95,7 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 </figure>
 
 #### Neon skin: `neon`
+
 {:.no_toc}
 
 <figure class="half">
@@ -98,6 +105,7 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 </figure>
 
 #### Neon skin: `plum`
+
 {:.no_toc}
 
 <figure class="half">
@@ -107,6 +115,7 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 </figure>
 
 #### Sunrise skin: `sunrise`
+
 {:.no_toc}
 
 <figure class="half">
@@ -319,7 +328,7 @@ comments:
     server               : # meta.discourse.org
 ```
 
-**Note:** Do not include `http://` or `https://` when setting your Discourse `server`. The theme automatically prepends the URL `//`, following a scheme-less pattern. 
+**Note:** Do not include `http://` or `https://` when setting your Discourse `server`. The theme automatically prepends the URL `//`, following a scheme-less pattern.
 {: .notice--info}
 
 ##### Facebook Comments
@@ -339,13 +348,13 @@ comments:
 
 Transform user comments into `_data` files that live inside of your GitHub repository by enabling Staticman.
 
-**Note:** Looking to migrate comments from a WordPress based site? Give [this tool](https://github.com/arthurlacoste/wordpress-comments-jekyll-staticman) a try. 
+**Note:** Looking to migrate comments from a WordPress based site? Give [this tool](https://github.com/arthurlacoste/wordpress-comments-jekyll-staticman) a try.
 {: .notice--info}
 
 ###### Add Staticman as a Collaborator
 
 1. Allow Staticman push access to your GitHub repository by clicking on **Settings**, then the **Collaborators** tab and adding `staticmanapp` as a collaborator.
-2. To accept the pending invitation visit: `https://api.staticman.net/v2/connect/{your GitHub username}/{your repository name}`. Consult the Staticman "[Get Started](https://staticman.net/get-started)" guide for more info.
+2. To accept the pending invitation visit: `https://api.staticman.net/v2/connect/{your GitHub username}/{your repository name}`. Consult the Staticman "[Get Started](https://staticman.net/docs/index.html)" guide for more info.
 
 ###### Configure Staticman
 
@@ -384,10 +393,10 @@ staticman:
   branch    : "master"
 ```
 
-**Branch setting:** This is the branch comment files will be sent to via pull requests. If you host your site on GitHub Pages it will likely be `master` unless your repo is setup as a project --- use `gh-pages` in that case. 
+**Branch setting:** This is the branch comment files will be sent to via pull requests. If you host your site on GitHub Pages it will likely be `master` unless your repo is setup as a project --- use `gh-pages` in that case.
 {: .notice--info}
 
-**Note:** Staticman is currently only compatible with GitHub based repositories. [Support for GitLab Pages](https://github.com/eduardoboucas/staticman/issues/22) is planned but not available yet. 
+**Note:** Staticman is currently only compatible with GitHub based repositories. [Support for GitLab Pages](https://github.com/eduardoboucas/staticman/issues/22) is planned but not available yet.
 {: .notice--warning}
 
 **Staticman v1 (deprecated)**
@@ -422,7 +431,7 @@ By default comment moderation is enabled in `staticman.yml`. As new comments are
 
 To skip this moderation step simply set `moderation: false`.
 
-**ProTip:** Create a GitHub webhook that sends a `POST` request to the following payload URL `https://api.staticman.net/v2/webhook` and triggers a "Pull request" event to delete Staticman branches on merge. 
+**ProTip:** Create a GitHub webhook that sends a `POST` request to the following payload URL `https://api.staticman.net/v2/webhook` and triggers a "Pull request" event to delete Staticman branches on merge.
 {: .notice--info}
 
 ![pull-request webhook]({{ "/assets/images/mm-staticman-pr-webhook.jpg" | absolute_url }})
@@ -454,8 +463,27 @@ atom_feed:
   path: "http://feeds.feedburner.com/youFeedname"
 ```
 
-**Note:** By default the site feed is linked in two locations: inside the [`<head>` element](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/head.html) and at the bottom of every page in the [site footer](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/footer.html). 
+**Note:** By default the site feed is linked in two locations: inside the [`<head>` element](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/head.html) and at the bottom of every page in the [site footer](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/footer.html).
 {: .notice--info}
+
+### Site Search
+
+Enable basic site search powered by [Lunr](https://lunrjs.com/) by adding the following to `_config.yml`:
+
+```yaml
+search: true
+```
+
+![masthead search example]({{ "/assets/images/masthead-search.gif" | absolute_url }})
+
+To index the full content of your documents set `search_full_content` to `true` in `_config.yml`:
+
+```yaml
+search_full_content: true
+```
+
+**Note:** If you have length posts or a large amount of them the size of search index could impact page load performance. Setting `search_full_content` back to `false` (the default) restricts indexing the first 50 words of post's and collection documents.
+{: .notice--warning}
 
 ### SEO, Social Sharing, and Analytics Settings
 
@@ -465,7 +493,7 @@ All optional, but a good idea to take the time setting up to improve SEO and lin
 
 Formerly known as [Google Webmaster Tools](https://www.google.com/webmasters/tools/), add your [verification code](https://support.google.com/analytics/answer/1142414?hl=en) like so: `google_site_verification: "yourVerificationCode"`.
 
-**Note:** You likely won't have to do this if you verify site ownership through **Google Analytics** instead. 
+**Note:** You likely won't have to do this if you verify site ownership through **Google Analytics** instead.
 {: .notice--warning}
 
 #### Bing Webmaster Tools
@@ -531,7 +559,7 @@ twitter:
 
 And if I assign `@mmistakes` as an author account it will appear in the Twitter Card along with `@mmistakes-theme`, attributed as a creator of the page being shared.
 
-**Note**: You need to [apply for Twitter Cards](https://dev.twitter.com/docs/cards) and validate they're working on your site before they will begin showing up. 
+**Note**: You need to [apply for Twitter Cards](https://dev.twitter.com/docs/cards) and validate they're working on your site before they will begin showing up.
 {: .notice--warning}
 
 ##### Facebook Open Graph
@@ -551,7 +579,7 @@ facebook:
   username: "michaelrose"  # https://www.facebook.com/michaelrose
 ```
 
-**ProTip:** To debug Open Graph data use [this tool](https://developers.facebook.com/tools/debug/og/object?q=https%3A%2F%2Fmademistakes.com) to test your pages. If content changes aren't reflected you will probably have to hit the **Fetch new scrape information** button to refresh. 
+**ProTip:** To debug Open Graph data use [this tool](https://developers.facebook.com/tools/debug/og/object?q=https%3A%2F%2Fmademistakes.com) to test your pages. If content changes aren't reflected you will probably have to hit the **Fetch new scrape information** button to refresh.
 {: .notice--info}
 
 ##### Open Graph Default Image
@@ -626,7 +654,7 @@ Used as the defaults for defining what appears in the author sidebar.
 
 ![author sidebar example]({{ "/assets/images/mm-author-sidebar-example.jpg" | absolute_url }})
 
-**Note:** For sites with multiple authors these values can be overridden post by post with custom YAML Front Matter and a data file. For more information on how that works see below. 
+**Note:** For sites with multiple authors these values can be overridden post by post with custom YAML Front Matter and a data file. For more information on how that works see below.
 {: .notice--info}
 
 ```yaml
@@ -636,6 +664,7 @@ author:
   bio    : "My awesome biography constrained to a sentence or two goes here."
   email  : # optional
   uri    : "http://your-site.com"
+  home   : # null (default), "absolute or relative url to link to author home"
 ```
 
 Social media links are all optional, include the ones you want visible. In most cases you just need to add the username. If you're unsure double check `_includes/author-profile.html` to see how the URL is constructed.
@@ -701,7 +730,7 @@ And of course any default value can be overridden by settings in a post, page, o
 
 The default permalink style used by the theme is `permalink: /:categories/:title/`. If you have a post named `2016-01-01-my-post.md` with `categories: foo` in the YAML Front Matter, Jekyll will generate `_site/foo/my-post/index.html`.
 
-**Note:** If you plan on enabling breadcrumb links --- including category names in permalinks is a big part of how those are created. 
+**Note:** If you plan on enabling breadcrumb links --- including category names in permalinks is a big part of how those are created.
 {: .notice--warning}
 
 ### Paginate
@@ -720,7 +749,7 @@ The paginator only works on files with name `index.html`. To use pagination in a
 paginate_path: /recent/page:num/
 ```
 
-**Please note:** When using Jekyll's default [pagination plugin](http://jekyllrb.com/docs/pagination/) `paginator.posts` can only be called once. If you're looking for something more powerful that can paginate category, tag, and collection pages I suggest [**jekyll-paginate-v2**](https://github.com/sverrirs/jekyll-paginate-v2). 
+**Please note:** When using Jekyll's default [pagination plugin](http://jekyllrb.com/docs/pagination/) `paginator.posts` can only be called once. If you're looking for something more powerful that can paginate category, tag, and collection pages I suggest [**jekyll-paginate-v2**](https://github.com/sverrirs/jekyll-paginate-v2).
 {: .notice--info}
 
 ### Timezone
@@ -759,7 +788,7 @@ The theme ships with support for taxonomy (category and tag) pages. GitHub Pages
 
 The default `type` is set to use Liquid.
 
-**Note:** `category_archive` and `tag_archive` were previously named `categories` and `tags`. Names were changed to avoid possible conflicts with `site.categories` and `site.tags`. 
+**Note:** `category_archive` and `tag_archive` were previously named `categories` and `tags`. Names were changed to avoid possible conflicts with `site.categories` and `site.tags`.
 {: .notice--danger}
 
 ```yaml
@@ -773,7 +802,7 @@ tag_archive:
 
 Which would create category and tag links in the breadcrumbs and page meta like: `/categories/#foo` and `/tags/#foo`.
 
-**Note:** these are simply hash (fragment) links into the full taxonomy index pages. For them to resolve properly, the category and tag index pages need to exist at [`/categories/index.html`](https://github.com/{{ site.repository }}/blob/master/docs/_pages/category-archive.html) (copy to `_pages/category-archive.html`) and [`/tags/index.html`](https://github.com/{{ site.repository }}/blob/master/docs/_pages/tag-archive.html) (copy to `_pages/tag-archive.html`). 
+**Note:** these are simply hash (fragment) links into the full taxonomy index pages. For them to resolve properly, the category and tag index pages need to exist at [`/categories/index.html`](https://github.com/{{ site.repository }}/blob/master/docs/\_pages/category-archive.html) (copy to `_pages/category-archive.html`) and [`/tags/index.html`](https://github.com/{{ site.repository }}/blob/master/docs/\_pages/tag-archive.html) (copy to `_pages/tag-archive.html`).
 {: .notice--warning}
 
 If you have the luxury of using Jekyll Plugins, then [**jekyll-archives**][jekyll-archives] will create a better experience as discrete taxonomy pages would be generated, and their corresponding links would be "real" (not just hash/fragment links into a larger index). However, the plugin will not generate the taxonomy index pages (`category-archive.html` and `_pages/tag-archive.html`) so you'd still need to manually create them if you'd like to have them (see note above).
@@ -809,7 +838,7 @@ jekyll-archives:
     tag: /tags/:name/
 ```
 
-**Note:** The `archive-taxonomy` layout used by jekyll-archives is provided with the theme and can be found in the `_layouts` folder. 
+**Note:** The `archive-taxonomy` layout used by jekyll-archives is provided with the theme and can be found in the `_layouts` folder.
 {: .notice--info}
 
 ## HTML Compression
@@ -827,8 +856,8 @@ compress_html:
     envs: development  # disable compression in dev environment
 ```
 
-**Caution:** Inline JavaScript comments can cause problems with `compress.html`, so be sure to `/* comment this way */` and avoid `// these sorts of comments`. 
+**Caution:** Inline JavaScript comments can cause problems with `compress.html`, so be sure to `/* comment this way */` and avoid `// these sorts of comments`.
 {: .notice--warning}
 
-**Note:** CDN services such as CloudFlare provide optional automatic minification for HTML, CSS, and JavaScript. If you are serving your site via such a service and have minification enabled, this configuration might be redundant. 
+**Note:** CDN services such as CloudFlare provide optional automatic minification for HTML, CSS, and JavaScript. If you are serving your site via such a service and have minification enabled, this configuration might be redundant.
 {: .notice--info}
