@@ -1,0 +1,37 @@
+.page__taxonomy-item {
+  background-color: $non-sense-colour;
+  color: $sense-colour;
+  &:visited {
+    color: $sense-colour;
+  }
+  &:hover {
+    background-color: $sense-colour;
+    color: $non-sense-colour;
+  }
+}
+
+#tags {
+  .page__taxonomy {
+    font-size: $type-size-6;
+  }
+}
+
+.page__hero--overlay {
+  height: 600px;
+  @media screen and (max-width: $small) {
+    height: 150px;
+  }
+  @media screen and (min-width: $small+1) and (max-width: $medium) {
+    height: 200px;
+  }
+  @media screen and (min-width: $medium+1) and (max-width: $medium-wide) {
+    height: 250px;
+  }
+  @media screen and (min-width: $medium-wide+1) and (max-width: $large) {
+    height: 350px;
+  }
+  @media screen and (min-width: $large+1) and (max-width: $x-large) {
+    height: 500px;
+  }
+}
+

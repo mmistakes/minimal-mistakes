@@ -3,7 +3,10 @@
   time: April 2017 - Present
   company: London Review of Books, London
   details: "<ul>
-  <li>Working on rewriting the website using Laravel 5.5</li>
+  <li>Setting up development sites on AWS</li>
+  <li>Supporting the frontend developers</li>
+  <li>Building API to retrieve content and support an SPA</li>
+  <li>Working on rewriting the website using Laravel 5.5, gathering requirements, writing tests and code, preparing for demos, etc.</li>
   </ul>"
 - experience:
   role: Backend Developer
@@ -32,7 +35,7 @@
   <li>Contributed to the development of a mapping feature in our core product using PostGIS, TinyOWS, Mapnik and React.</li>
   <li>Developed new website, front (JavaScript and jQuery) and back-end (PHP, MySQL and ZF1), for company’s events, with
   booking and payment facilities (PayPal API), and provided support and training on how to use it (from an admin point of view)</li>
-  <li>Designed, coded (PHP, MySQL and ZF1)and implemented a process to load survey data from different providers, using
+  <li>Designed, coded (PHP, MySQL and ZF1) and implemented a process to load survey data from different providers, using
   XML to defined what to import.</li>
   </ul>"
 - experience:
