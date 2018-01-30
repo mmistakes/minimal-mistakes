@@ -8,7 +8,7 @@ tag:              [macos,intellij,shortcuts]
 Legend
 - Shift: ⇧
 - Control: ⌃
-- Option: ⌥
+- Alt/Option: ⌥
 - Command: ⌘
 
 Execution
