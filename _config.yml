@@ -24,7 +24,7 @@ title                    : "Little pieces of (non)sense"
 title_separator          : "-"
 name                     : *name
 description              : "Pieces of knowledge gathered during my years of working as a developer."
-url                      : https://*website # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://troccoli.it # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/hero500x300.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
