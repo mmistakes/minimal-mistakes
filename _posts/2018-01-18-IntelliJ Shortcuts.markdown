@@ -6,10 +6,10 @@ categories:       IT
 tag:              [macos,intellij,shortcuts]
 ---
 Legend
-- Command: ⌘
 - Shift: ⇧
-- Option: ⌥
 - Control: ⌃
+- Option: ⌥
+- Command: ⌘
 
 Execution
 - Run program: ⌃ R
@@ -35,3 +35,4 @@ Debugging
 
 Various
 - Toggle the terminal tool window visibility: ⌥ F12
+- Surround with: ⌥⌘T
