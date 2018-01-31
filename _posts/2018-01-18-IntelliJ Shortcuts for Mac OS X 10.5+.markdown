@@ -34,10 +34,21 @@ Debugging
 - Evaluate expression: ⌥ F8
 - Resume program: ⌘ ⌥ R
 
-Various
-- Toggle the terminal tool window visibility: ⌥ F12
+Editing
 - Surround with: ⌥ ⌘ T
 - Suggestions: ⌥ ⏎
 - Generate: ⌃ ⏎
+- Multiple cursors: ⇧ ⌥ Clicks
+- Toggle Column Selection mode: ⇧ ⌘ 8
+- Smart line join: ⇧ ⌃ J
+- Format code: ⌥ ⌘ L
+- Organize imports: ⌃ ⌥ O
+- Basic code completion: ⌃ Space
+- Smart code completion: ⌃ ⇧ Space
+
+Various
+- Dictionary of actions or options: ⇧ ⌘ A
+- Toggle the terminal tool window visibility: ⌥ F12
 - Preferences: ⌘ ,
 - Project Structure: ⌘ ;
+- Next / previous highlight: F2 / ⇧ F2
