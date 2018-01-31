@@ -13,6 +13,9 @@
        <h3 class="tagline">{{site.resume.tagline}}</h3>
        {% endif %}
 
+       {% if site.resume.pdf %}
+       <h4><a href="{{site.baseurl}}/assets/resume/{{ site.resume.pdf }}" alt="Download resume" target="_blank"><i class="fa fa-download"></i> PDF</a></h4>
+       {% endif %}
    </div><!--//profile-container-->
 
    <div class="contact-container container-block">

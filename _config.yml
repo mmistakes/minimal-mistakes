@@ -254,6 +254,7 @@ resume:
   url: 'http://webjeda.com'
   baseurl: '/resume' #change it according to your repository name
 
+  pdf: "troccoli-allard-resume.pdf"
   # Enable one of these styles by removing #. Style will be applied only after restarting the build or serve.
   #style: styles-2
   #style: styles-3
