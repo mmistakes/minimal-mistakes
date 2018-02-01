@@ -13,6 +13,8 @@
 * Remove `base_path` include from `/test` pages.
 * Reduce font-size of page meta in list/grid items.
 * Improve feature row styling when used with `archive` layout. [#1484](https://github.com/mmistakes/minimal-mistakes/issues/1484)
+* Improve German translations. [#1511](https://github.com/mmistakes/minimal-mistakes/pull/1511)
+* Update Font Awesome to `5.0.6`. [#1513](https://github.com/mmistakes/minimal-mistakes/pull/1513)
 
 ### Bug Fixes
 
