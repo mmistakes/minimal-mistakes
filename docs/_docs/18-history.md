@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-01-23T15:59:05-05:00
+last_modified_at: 2018-02-01T07:32:00-05:00
 toc: true
 ---
 
@@ -23,7 +23,8 @@ toc: true
 * Remove `base_path` include from `/test` pages.
 * Reduce font-size of page meta in list/grid items.
 * Improve feature row styling when used with `archive` layout. [#1484](https://github.com/mmistakes/minimal-mistakes/issues/1484)
-* Fix `border-bottom` for Gist line numbers.
+* Improve German translations. [#1511](https://github.com/mmistakes/minimal-mistakes/pull/1511)
+* Update Font Awesome to `5.0.6`. [#1513](https://github.com/mmistakes/minimal-mistakes/pull/1513)
 
 ### Bug Fixes
 
@@ -33,6 +34,8 @@ toc: true
 * Remove misleading underline hover state on feature row items.
 * Properly escape quotes in `site.social.name` and `site.name`. [#1485](https://github.com/mmistakes/minimal-mistakes/pull/1485)
 * Fix typo in upgrading documentation. [#1487](https://github.com/mmistakes/minimal-mistakes/pull/1487)
+* Fix `border-bottom` for Gist line numbers.
+* Replace `|` with HTML entity when used as title separator. [#760](https://github.com/mmistakes/minimal-mistakes/issues/760)
 
 ## [4.9.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.9.0)
 

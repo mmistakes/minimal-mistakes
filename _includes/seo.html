@@ -4,8 +4,12 @@
 {%- endif -%}
 {%- assign seo_url = seo_url | default: site.github.url -%}
 
+{% if site.title_separator %}
+  {% assign title_separator = site.title_separator | default: '-' | replace: '|', '&#124;' %}
+{% endif %}
+
 {%- if page.title -%}
-  {%- assign seo_title = page.title | append: " " | append: site.title_separator | append: " " | append: site.title -%}
+  {%- assign seo_title = page.title | append: " " | append: title_separator | append: " " | append: site.title -%}
 {%- endif -%}
 
 {%- if seo_title -%}
@@ -50,7 +54,7 @@
   {%- assign og_type = "website" -%}
 {%- endif -%}
 
-<title>{{ seo_title | default: site.title }}{% if paginator %}{% unless paginator.page == 1 %} {{ site.title_separator }} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}{% endif %}</title>
+<title>{{ seo_title | default: site.title }}{% if paginator %}{% unless paginator.page == 1 %} {{ title_separator }} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}{% endif %}</title>
 <meta name="description" content="{{ seo_description }}">
 
 {% if author.name %}

@@ -207,7 +207,7 @@ Getting our science styling on with H<sub>2</sub>O, which should push the "2" do
 
 ### Superscript Tag
 
-Still sticking with science and Isaac Newton's E = MC<sup>2</sup>, which should lift the 2 up.
+Still sticking with science and Albert Einstein's E = MC<sup>2</sup>, which should lift the 2 up.
 
 ### Variable Tag
 
