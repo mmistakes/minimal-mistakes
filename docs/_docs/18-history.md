@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-01-18T10:26:34-05:00
+last_modified_at: 2018-01-23T15:59:05-05:00
 toc: true
 ---
 
@@ -23,6 +23,7 @@ toc: true
 * Remove `base_path` include from `/test` pages.
 * Reduce font-size of page meta in list/grid items.
 * Improve feature row styling when used with `archive` layout. [#1484](https://github.com/mmistakes/minimal-mistakes/issues/1484)
+* Fix `border-bottom` for Gist line numbers.
 
 ### Bug Fixes
 
