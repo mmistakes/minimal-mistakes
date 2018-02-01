@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-last_modified_at: 2018-01-04T20:29:29-05:00
+last_modified_at: 2018-02-01T14:40:00-05:00
 toc: true
 ---
 
@@ -482,7 +482,7 @@ To index the full content of your documents set `search_full_content` to `true` 
 search_full_content: true
 ```
 
-**Note:** If you have length posts or a large amount of them the size of search index could impact page load performance. Setting `search_full_content` back to `false` (the default) restricts indexing the first 50 words of post's and collection documents.
+**Note:** Large amounts of posts will increase the size of the search index, impacting page load performance. Setting `search_full_content` to `false` (the default) restricts indexing to the first 50 words of body content.
 {: .notice--warning}
 
 ### SEO, Social Sharing, and Analytics Settings
