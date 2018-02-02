@@ -1,23 +1,14 @@
 ---
 title: "Inviting Partners / Shops"
-date: 2017-12-13
+date: 2018-01-31
 ---
 
-Convictional connects you to your trading partners or other shops. In this help doc we will help you learn how to invite a partner or shop and connect them to you.
+Convictional connects you to trading partners and other shops under your control. This document will help you invite and connect with your trading partners.
 
-In order to invite a partner, you need some information: 
-* The email for the partner (or your own if it is your shop)
-* The Shopify Shop Name
-* The price list (optional) you want to assign them to
+To invite a partner, you will need their email address. Once you have it, create the partner in the Convictional admin under partners. 
 
-Typically you already have an email for your trading partner. Getting the shop name is pretty easy if you know the URL of their store. 
+To do that, click "Create" and enter their email, a code that you can use to refer to them in the future and what price list you want to assign them. Under relationship, set it to 'child' as that will allow you to get their orders and push them data.
 
-Go to your partners store (or your own if connecting your own shop) and add "/admin" to the end of the URL. A new URL for the store will appear in the format: shop.myshopify.com.
+Once you have done that, click Create Partner. Next, click "Invite" on their record in the partner master. This will send them an email with a link to sign up and connect their shop. 
 
-You want everything before .myshopify.com in the URL (ie. "shop"). Here is a picture.
-
-![shop](https://github.com/rogerkirkness/convictional-help/blob/master/assets/images/shop.png?raw=true)
-
-Copy/paste that into the Shopify Shop Name field when you are setting up a partner.
-
-Once you have done that, click Create Partner. Next, click "Invite" on their record in the partner master. This will send them an email with a link to sign up and connect their shop.
+Once they are connected you will automatically start to receive their orders that contain your products and be able to push product, fulfillment and inventory information back to them.

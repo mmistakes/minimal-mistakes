@@ -24,9 +24,6 @@ var idx = lunr(function () {
     {% assign count = count | plus: 1 %}
   {% endfor %}
 {% endfor %}
-
-console.log( jQuery.type(idx) );
-
 var store = [
   {% for c in site.collections %}
     {% if forloop.last %}
