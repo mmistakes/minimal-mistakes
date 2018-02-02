@@ -186,7 +186,7 @@ analytics:
 author:
   name             : *name
   avatar           : /assets/images/gravatar.jpeg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Britalian, Olympic Drummer, a bit of a geek (just a bit)"
+  bio              : "Britalian, Olympic Drummer, mad baker and a bit of a geek (just a bit)"
   location         : "London, UK"
   email            : *email
   uri              :
