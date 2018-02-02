@@ -52,16 +52,6 @@
   }
 }
 
-.queen .page {
-  @include breakpoint($large) {
-    padding-right: 0;
-  }
-
-  @include breakpoint($x-large) {
-    padding-right: 0;
-  }
-}
-
 .page__title {
   margin-top: 0;
   line-height: 1;
@@ -429,18 +419,34 @@
   }
 }
 
-.queen .page__related {
-  @include breakpoint($large) {
-    padding-right: 0;
-  }
-
-  @include breakpoint($x-large) {
-    padding-right: 0;
-  }
-}
-
 .page__related-title {
   margin-bottom: 10px;
   font-size: $type-size-6;
   text-transform: uppercase;
+}
+
+/*
+   Wide Pages
+   ========================================================================== */
+
+.wide {
+  .page {
+    @include breakpoint($large) {
+      padding-right: 0;
+    }
+
+    @include breakpoint($x-large) {
+      padding-right: 0;
+    }
+  }
+
+  .page__related {
+    @include breakpoint($large) {
+      padding-right: 0;
+    }
+
+    @include breakpoint($x-large) {
+      padding-right: 0;
+    }
+  }
 }
