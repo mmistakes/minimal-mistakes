@@ -11,12 +11,12 @@ using an API. I found HAL pretty simple and straightforward, and quite enough fo
 First of all, let me start by briefly explaining what HAL is. You can find more information
 [here](https://en.wikipedia.org/wiki/Hypertext_Application_Language).
 
-HAL stands for Hypertext Application Language, and it is an way to standardise how to pass information
-to clients who consume your API. The data returned is in JSON format and it consists of mainly three parts:
+HAL stands for Hypertext Application Language, and it is a way to standardise how to pass information
+to clients who consume your APIs. The data returned is in JSON format and it consists of mainly three parts:
 
 - the data about the resource itself, called _state_
-- a ```_links``` section with endpoints to get more information about the resource
-- an ```_embedded``` section with other resources (in HAL format) related to resource in question.
+- a `_links` section with endpoints to get more information about the resource
+- an `_embedded` section with other resources (in HAL format) related to resource in question.
 
 For example, a response from an API to get data about a book could look something like the following
 
@@ -56,8 +56,8 @@ class HalResource
 }
 ```
 
-Now, I needed to define setter methods for them. The setter methods for the ```$state``` and
-```$links``` properties are quite straightforward:
+Now, I needed to define setter methods for them. The setter methods for the `$state` and
+`$links` properties are quite straightforward:
 
 ```php
 public function setState(CastToHalContract $state): self
@@ -79,13 +79,13 @@ public function addLink($ref, $href): self
 }
 ```
 
-Note the use of the ```toJsonHal()``` method. More on it later.
+Note the use of the `toJsonHal()` method. More on it later.
 
 I chose to have them return the object itself so that I can nicely chain these calls when
 building the API response.
 
-The setter for the ```$embedded``` property is slightly more complicated. I decided to have two
-setter methods: one to add another ```HalResource``` object directly and one to add a collection
+The setter for the `$embedded` property is slightly more complicated. I decided to have two
+setter methods: one to add another `HalResource` object directly and one to add a collection
 of Eloquent models. This way the controller will be so  much easier to read and understand.
 
 ```php
@@ -109,11 +109,11 @@ public function addEmbeddedResources($ref, Collection $collection)
 
 They are not quite the same. As per HAL specification, an embedded resource is a fully fledged HAL
 resource, with embedded resource as well if necessary.
-This can be achieved with the ```addEmbeddedResource()```
-method, but not with the ```addEmbeddedResources()``` (note the plural) method. This is because
-the latter works on Collections of model and creates HAL resources on the fly with only the state
-set. This was enough for what I needed and therefore I did not look into a more sophisticated
-way of adding embedded resources.
+
+This can be achieved with the `addEmbeddedResource()` method, but not with the `addEmbeddedResources()`
+(note the plural) method. This is because the latter works on Collections of model and creates HAL resources
+on the fly with only the state set. This was enough for what I needed and therefore I did not look
+into a more sophisticated way of adding embedded resources.
 
 Finally, I needed a method to transform this object into an array, ready to be returned by the API.
 
@@ -154,7 +154,7 @@ That's it, just one method. Every model that you would like to return as a HAL r
 to implement this contract and off you go.
 
 I worked for a magazine at the time, so an issue had articles and contributors associated with it.
-I already had the ```Issue``` model class defined, all I needed to do was to implement the ```toJasonHal()``` method.
+I already had the `Issue` model class defined, all I needed to do was to implement the `toJasonHal()` method.
 
 ```php
 class Issue extends Model implements CastToHalContract
@@ -174,13 +174,13 @@ class Issue extends Model implements CastToHalContract
     ///...
 ```
 
-One thing to notice here is the inclusion of the ```_links``` section. You may think this is wrong
+One thing to notice here is the inclusion of the `_links` section. You may think this is wrong
 as I have defined a setter method for it and I should be using it. And you're probably right.
 The thing is though, I want to be 100% sure that the link to itself is always present, so instead
-of relying on me remembering to call the ```addLink()``` method I decided to make my life
-easier by always including it in the implementation of the ```toJasonHal()``` method.
-Also notice that the implementation of the ```addLink()``` method does not allow the developer
-to add a ```self``` link. This is to prevent accidentally adding the wrong link.
+of relying on me remembering to call the `addLink()` method I decided to make my life
+easier by always including it in the implementation of the `toJasonHal()` method.
+Also notice that the implementation of the `addLink()` method does not allow the developer
+to add a `self` link. This is to prevent accidentally adding the wrong link.
 
 I was now ready to put everything together in the controller.
 
@@ -212,7 +212,7 @@ public function info(LegacyIssue $issue)
 Let's go through the controller and see what it does.
 
 The first thing is to set the state of the new HAL resource. Notice that this will use the
-model implementation of the ```toJasonHal()``` method.
+model implementation of the `toJasonHal()` method.
 
 Then I add the endpoint for the previous and next Issue resource, if any, and the embedded
 resources.
