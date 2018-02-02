@@ -1,17 +1,14 @@
 ---
 title: "Signing up"
-date: 2017-12-15
+date: 2018-01-31
 ---
-Updated: 2018-01-16
 
-Signing up for Convictional is quite straight forward. There are three fields:
+Signing up for Convictional is quite straight forward:
 
-* Email, use your business email.
-* Password, use whatever you like, the longer the better.
-* Shop, your Shopify shop name or myShopify URL
+### Fields
+* Email: use your business email.
+* Password: the longer the better.
+* Platform: select the platform you use.
+* URL/Shop: more fields will appear, depending on your platform
 
-To find your shop name, go to your Shopify admin and copy/paste the URL:
-
-![shop-name](https://github.com/rogerkirkness/convictional-help/blob/master/assets/images/shop.png?raw=true)
-
-Click or tap sign up and you will have a new account on Convictional.
+Click sign up and you will have an account on Convictional.

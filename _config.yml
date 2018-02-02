@@ -9,7 +9,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "en"
-title                    : "Convictional Help Center"
+title                    : "Help Center - Convictional Commerce"
 title_separator          : "-"
 name                     : "Convictional Commerce"
 description              : "Help and FAQs"
@@ -28,7 +28,7 @@ comments:
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
-    num_posts            : # 5 (default)
+    num_posts            : 10
     colorscheme          : # "light" (default), "dark"
 staticman:
   allowedFields          : # ['name', 'email', 'url', 'message']
