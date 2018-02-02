@@ -14,6 +14,8 @@ anchors:
   facebook: &facebook "giulio.troccoli.allard"
   linkedin: &linkedin "giulio-troccoli"
   stackoverflow: &stackoverflow "1366144/giuliot"
+  main_image: &main_image "/assets/images/hero.jpg"
+  teaser_image: &teaser_image "/assets/images/hero500x300.jpg"
 
 minimal_mistakes_skin    : "contrast" # "air", "contrast", "dark", "dirt", "mint", "sunrise"
 github: [metadata]
@@ -27,7 +29,7 @@ description              : "Pieces of knowledge gathered during my years of work
 url                      : http://troccoli.it # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "troccoli/troccoli.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/hero500x300.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : *teaser_image # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -165,7 +167,7 @@ facebook:
   username               : *facebook
   app_id                 :
   publisher              :
-og_image                 : /assets/images/hero.jpg # Open Graph/Twitter default site image
+og_image                 : *main_image # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -394,6 +396,8 @@ defaults:
       comments: true
       share: true
       related: true
+      header:
+        image: *main_image
   # _pages
   - scope:
       path: ""
