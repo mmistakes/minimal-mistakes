@@ -52,6 +52,16 @@
   }
 }
 
+.queen .page {
+  @include breakpoint($large) {
+    padding-right: 0;
+  }
+
+  @include breakpoint($x-large) {
+    padding-right: 0;
+  }
+}
+
 .page__title {
   margin-top: 0;
   line-height: 1;
@@ -416,6 +426,16 @@
   a {
     color: inherit;
     text-decoration: none;
+  }
+}
+
+.queen .page__related {
+  @include breakpoint($large) {
+    padding-right: 0;
+  }
+
+  @include breakpoint($x-large) {
+    padding-right: 0;
   }
 }
 
