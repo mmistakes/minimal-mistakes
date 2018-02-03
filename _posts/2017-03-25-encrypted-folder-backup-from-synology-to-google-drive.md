@@ -86,7 +86,7 @@ Going to the webpage and emptying the trash could take forever, so I found a gre
 At the time of writing the Google Drive cleanup feature wasn't available in the official release yet, so I downloaded the beta. Then I ran the following:
 ```bash
 $ rclone config #this prompted sharing a login with the appropriate Google account which you have to do
-$ rclone cleanup
+$ rclone cleanup remote:
 ```
 
 That's it. Within a few minutes I noticed the total used storage on Google Drive starting draw down to a more reasonable number and within an hour or two it matched what I expected from my NAS backup.
