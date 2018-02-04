@@ -32,10 +32,6 @@ gallery:
 excerpt: "Why you should port your Word resume to LaTeX."
 ---
 
-<script type="text/javascript" async
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
 For several years, I've had an old school resume prepared in Microsoft Word. Although I neither loved nor hated it, I knew that there had to be a better way. Enter $$\LaTeX$$ resume templates:
 
 {% include gallery class="full" caption="Sample $$\LaTeX$$ resume templates" %}
