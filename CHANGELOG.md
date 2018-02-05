@@ -15,6 +15,7 @@
 * Improve feature row styling when used with `archive` layout. [#1484](https://github.com/mmistakes/minimal-mistakes/issues/1484)
 * Improve German translations. [#1511](https://github.com/mmistakes/minimal-mistakes/pull/1511)
 * Update Font Awesome to `5.0.6`. [#1513](https://github.com/mmistakes/minimal-mistakes/pull/1513)
+* Add `wide` variant to single layout. [#1516](https://github.com/mmistakes/minimal-mistakes/pull/1516)
 
 ### Bug Fixes
 
