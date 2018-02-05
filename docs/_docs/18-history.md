@@ -19,7 +19,7 @@ toc: true
 * Minify `assets/js/lunr/lunr.js`.
 * Improve calculation of Greedy navigation's `availableSpace`.
 * Add Danish and Russian translations for new search strings. [#1472](https://github.com/mmistakes/minimal-mistakes/pull/1472) [#1477](https://github.com/mmistakes/minimal-mistakes/pull/1477)
-* Indicate that archive title's are links with an underline.
+* Indicate that archive titles are links with an underline.
 * Remove `base_path` include from `/test` pages.
 * Reduce font-size of page meta in list/grid items.
 * Improve feature row styling when used with `archive` layout. [#1484](https://github.com/mmistakes/minimal-mistakes/issues/1484)
