@@ -3,5 +3,5 @@ _assets/js/lunr/* linguist-vendored
 _assets/js/plugins/* linguist-vendored
 _assets/js/vendor/* linguist-vendored
 assets/fonts/* linguist-vendored
-assets/js/main.min.js
+assets/js/main.min.js linguist-vendored
 assets/js/vendor/* linguist-vendored
