@@ -15,7 +15,7 @@ To check which version you are currently using, view the source of your built si
   Minimal Mistakes Jekyll Theme 4.9.0 by Michael Rose
   Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
-  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
 ```
 
