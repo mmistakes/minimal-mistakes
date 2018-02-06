@@ -1,4 +1,5 @@
 <div class="search-content__inner-wrap">
-  <input type="text" id="search" class="search-input" tabindex="-1" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}" />
+  <label class="visually-hidden" for="search">Site Search</label>
+  <input type="text" id="search" class="search-input" aria-describedby="result_count" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}" />
   <div id="results" class="results"></div>
 </div>

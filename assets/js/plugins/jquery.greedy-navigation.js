@@ -9,6 +9,7 @@ $(document).ready(function() {
   var $vlinks = $("nav.greedy-nav .visible-links");
   var $hlinks = $("nav.greedy-nav .hidden-links");
 
+
   var numOfItems = 0;
   var totalSpace = 0;
   var closingTime = 1000;
@@ -61,8 +62,10 @@ $(document).ready(function() {
   });
 
   $btn.on("click", function() {
+    var $this = $(this);
     $hlinks.toggleClass("hidden");
-    $(this).toggleClass("close");
+    $this.toggleClass("close");
+    $this.attr("aria-expanded") === "true" ? $this.attr("aria-expanded","false") : $this.attr("aria-expanded", "true");
     clearTimeout(timer);
   });
 
