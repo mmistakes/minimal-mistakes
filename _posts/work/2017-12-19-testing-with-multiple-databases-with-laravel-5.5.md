@@ -146,7 +146,7 @@ public function boot()
 
 I'm sure you have noticed I check for the environment before registering the listener. This is because
 I want to be able to rollback the databases only when running Laravel Dusk. I could run the tests with
-`APP_ENV=dusk php artisan dusk`. However, I am bound to forget about setting the ` APP_ENV` variable
+`APP_ENV=dusk php artisan dusk`. However, I am bound to forget about setting the `APP_ENV` variable
 before running Dusk and thus cluttering my database with rubbish data. Instead, I take advantage of the fact
 that Laravel Dusk looks for a special `.env` file to use ([read here](https://laravel.com/docs/5.5/dusk#environment-handling)).
 So, I simply create a `.env.dusk.local` file (which I had anyway because of other settings) and set the
