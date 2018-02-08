@@ -10,3 +10,10 @@ main:
     url: https://convictional.com/pages/contact
   - title: "Sign In ➔"
     url: https://app.convictional.com/
+    
+docs:
+  - title: "Getting Started"
+    children:
+      -title: "Signing up"
+       url: http://help.convictional.com/signing-up/
+    
