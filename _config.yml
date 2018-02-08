@@ -232,7 +232,6 @@ tag_archive:
 
 
 # HTML Compression
-# - http://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
@@ -249,8 +248,8 @@ defaults:
       sidebar:
         nav: "docs"
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: false
-      share: true
-      related: true
+      share: false
+      related: false
