@@ -9,8 +9,7 @@ main:
   - title: "Contact"
     url: https://convictional.com/pages/contact
   - title: "Sign In ➔"
-    url: https://app.convictional.com/
-    
+    url: https://app.convictional.com/  
 docs:
   - title: "Getting Started"
     children:
