@@ -246,10 +246,11 @@ defaults:
       path: ""
       type: posts
     values:
-      nav: "docs"
+      sidebar:
+        nav: "docs"
       layout: single
       author_profile: true
       read_time: true
       comments: false
-      share: false
-      related: false
+      share: true
+      related: true
