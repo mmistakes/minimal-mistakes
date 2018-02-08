@@ -1,15 +1,9 @@
 # main links
 main:
-  - title: "Developers"
-    url: http://docs.convictional.com
-  - title: "Help Center"
-    url: http://help.convictional.com
-  - title: "Resources"
-    url: https://convictional.com/blogs/resources
-  - title: "Contact"
+  - title: "Support"
     url: https://convictional.com/pages/contact
   - title: "Sign In ➔"
-    url: https://app.convictional.com/  
+    url: https://app.convictional.com
 docs:
   - title: "Getting Started"
     children:
@@ -27,5 +21,15 @@ docs:
         url: http://help.convictional.com/partners-csv-uploads/
       - title: "Uploading prices"
         url: http://help.convictional.com/pricing-csv-uploads/
+  - title: "Menu"
+    children:
+      - title: "API Documentation"
+        url: http://docs.convictional.com/
+      - title: "Resources and Blog"
+        url: https://convictional.com/blogs/resources
+      - title: "Contact Support"
+        url: https://convictional.com/pages/contact
+      - title: "Login / Sign up"
+        url: https://app.convictional.com
       
     
