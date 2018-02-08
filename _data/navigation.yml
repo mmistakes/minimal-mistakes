@@ -13,6 +13,6 @@ main:
 docs:
   - title: "Getting Started"
     children:
-      -title: "Signing up"
-       url: http://help.convictional.com/signing-up/
+      - title: "Signing up"
+        url: http://help.convictional.com/signing-up/
     
