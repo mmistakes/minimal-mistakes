@@ -34,5 +34,5 @@ geometry: margin=3cm
 | Matrix Computations (Math 221)                             | Spring 2016   | James Demmel 	                            |
 | Spectral Graph Theory (CS 294-109)                         | Spring 2016   | Luca Trevisan 	                            |
 | Cryptography (CS 276)                                      | Fall 2015     | Alessandro Chiesa                            |
-| Statistical Learning Theory (CS 281A)                      | Fall 2015     | Peter Bartlett	                            |
+| Statistical Learning Theory/Graphical Models (CS 281A)     | Fall 2015     | Peter Bartlett	                            |
 | Algebraic Topology (Math 215A)                             | Fall 2015     | Jenny Harrison	                            |
