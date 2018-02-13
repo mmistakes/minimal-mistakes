@@ -7,20 +7,36 @@ main:
 docs:
   - title: "Getting Started"
     children:
+      - title: "Quickstart"
+        url: http://help.convictional.com/quick-start/
       - title: "Signing up"
         url: http://help.convictional.com/signing-up/
+      - title: "Configuration"
+        url: http://help.convictional.com/configuration/
       - title: "Inviting partners"
         url: http://help.convictional.com/inviting-partners/
-      - title: "Handling terms payments"
+      - title: "Setup card-on-file payments"
+        url: http://help.convictional.com/card-on-file-stripe/
+      - title: "Setup terms payments"
         url: http://help.convictional.com/connecting-apruve/
-  - title: "Importing Files"
-    children: 
-      - title: "Uploading products"
+  - title: "Importing Records"
+    children:
+      - title: "Importing orders"
+        url: http://help.convictional.com/importing-orders/
+      - title: "Importing products"
         url: http://help.convictional.com/products-csv-uploads/
-      - title: "Uploading partners"
+      - title: "Importing partners"
         url: http://help.convictional.com/partners-csv-uploads/
-      - title: "Uploading prices"
+      - title: "Importing pricing"
         url: http://help.convictional.com/pricing-csv-uploads/
+  - title: "Ongoing"
+    children:
+      - title: "Using logs"
+        url: http://help.convictional.com/using-logs/
+  - title: "For Partners"
+    children:
+      - title: "Quickstart"
+        url: http://help.convictional.com/for-drop-shippers/
   - title: "Menu"
     children:
       - title: "API Documentation"

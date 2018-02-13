@@ -1,6 +1,7 @@
 ---
 title: "Importing Prices"
 date: 2018-01-31
+toc: true
 ---
 
 To import pricing via CSV, please use the following format:

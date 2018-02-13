@@ -1,7 +1,9 @@
 ---
 title: "Connecting Apruve for Payments"
 date: 2018-01-05
+toc: true
 ---
+## Introduction
 Convictional allows you to automate payments from your trading partners through our integration with Apruve. 
 
 To connect Apruve with your Convictional account:

@@ -1,6 +1,7 @@
 ---
 title: "Signing up"
 date: 2018-01-31
+toc: true
 ---
 
 Signing up for Convictional is quite straight forward:

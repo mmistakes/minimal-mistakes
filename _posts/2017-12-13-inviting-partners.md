@@ -1,6 +1,7 @@
 ---
 title: "Inviting Partners / Shops"
 date: 2018-01-31
+toc: true
 ---
 
 Convictional connects you to trading partners and other shops under your control. This document will help you invite and connect with your trading partners.
