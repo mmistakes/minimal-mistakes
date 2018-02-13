@@ -1,6 +1,7 @@
 ---
-title: "Partner CSV Uploads"
+title: "Importing Partners"
 date: 2018-01-31
+toc: true
 ---
 
 #### Introduction

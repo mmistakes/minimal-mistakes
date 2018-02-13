@@ -1,5 +1,5 @@
 ---
-title: "Prices CSV Uploads"
+title: "Importing Prices"
 date: 2018-01-31
 ---
 
