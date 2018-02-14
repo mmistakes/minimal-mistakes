@@ -1,12 +1,12 @@
 ---
-title: "Inviting Partners / Shops"
+title: "Inviting Partners"
 date: 2018-01-31
 toc: true
 ---
-
+## Introduction
 Convictional connects you to trading partners and other shops under your control. This document will help you invite and connect with your trading partners.
 
-To invite a partner, you will need their email address. Once you have it, create the partner in the Convictional admin under partners. 
+To invite a partner, you will need their email address. In order to invite a partner, you need to create the partner in the Convictional admin under partners:
 
 To do that, click "Create" and enter their email, a code that you can use to refer to them in the future and what price list you want to assign them. Under relationship, set it to 'child' as that will allow you to get their orders and push them data.
 
