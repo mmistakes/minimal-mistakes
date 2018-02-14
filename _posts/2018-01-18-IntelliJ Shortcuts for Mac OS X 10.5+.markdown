@@ -34,15 +34,18 @@ Debugging
 - Evaluate expression: ⌥ F8
 - Resume program: ⌘ ⌥ R
 
-Editing
-- Surround with: ⌥ ⌘ T
-- Suggestions: ⌥ ⏎
-- Generate: ⌃ ⏎
+Editing Existing Code
 - Multiple cursors: ⇧ ⌥ Clicks
 - Toggle Column Selection mode: ⇧ ⌘ 8
 - Smart line join: ⇧ ⌃ J
 - Format code: ⌥ ⌘ L
 - Organize imports: ⌃ ⌥ O
+- Change method signature: ⌘ F6 
+
+Editing New Code
+- Surround with: ⌥ ⌘ T
+- Suggestions: ⌥ ⏎
+- Generate: ⌃ ⏎
 - Basic code completion: ⌃ Space
 - Smart code completion: ⌃ ⇧ Space
 
