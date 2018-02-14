@@ -37,13 +37,7 @@ docs:
     children:
       - title: "Quickstart"
         url: http://help.convictional.com/for-drop-shippers/
-  - title: "Menu"
+  - title: "For Developers"
     children:
       - title: "API Documentation"
         url: http://docs.convictional.com/
-      - title: "Resources and Blog"
-        url: https://convictional.com/blogs/resources
-      - title: "Contact Support"
-        url: https://convictional.com/pages/contact
-      - title: "Login / Sign up"
-        url: https://app.convictional.com

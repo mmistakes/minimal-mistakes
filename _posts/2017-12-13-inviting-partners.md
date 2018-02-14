@@ -4,10 +4,11 @@ date: 2018-01-31
 toc: true
 ---
 ## Introduction
-This document helps you understand how to invite your trading partners to connect with you.
+This document helps you understand how to invite your trading partners to connect with you and start trading.
 
 ### Step One
-To invite a partner, you will need their email address and a price list to assign them. In order to invite a partner, you need to create the partner in the Convictional admin under partners:
+To invite a partner, you will need their email address and a price list to assign them. In order to invite a partner, you need to create the partner:
+
 ![createPartner](https://github.com/rogerkirkness/convictional-help/blob/master/assets/images/createPartner.png?raw=true)
 
 #### Fields
@@ -17,9 +18,8 @@ To invite a partner, you will need their email address and a price list to assig
 * Relationship: is this a drop shipping partner? Use 'child'
 
 ### Step Two
-Once you have all the fields completed, you can click submit. A partner will be created in the Convictional system that you can manage through the API or admin. Now you need to invite them.
+Now that you have created a partner, the next step is to invite them to trade with you.On the partners screen there is a link you can click to invite your partner. Click that link when you are ready to send them an invite to connect with you:
 
-On the partners screen there is a link you can click to invite your partner. Click that link when you are ready to send them an invite to connect with you:
 ![createPartner](https://github.com/rogerkirkness/convictional-help/blob/master/assets/images/partnerInvite.png?raw=true)
 
 ### Step Three
