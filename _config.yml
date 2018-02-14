@@ -225,6 +225,7 @@ defaults:
       path: ""
       type: posts
     values:
+      breadcrumbs: true
       sidebar:
         nav: "docs"
       layout: single
