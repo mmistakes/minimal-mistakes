@@ -18,11 +18,11 @@ To invite a partner, you will need their email address and a price list to assig
 * Relationship: is this a drop shipping partner? Use 'child'
 
 ### Step Two
-Now that you have created a partner, the next step is to invite them to trade with you.On the partners screen there is a link you can click to invite your partner. Click that link when you are ready to send them an invite to connect with you:
+Now that you have created a partner, the next step is to invite them. Each partner has a link you can click to invite them:
 
 ![createPartner](https://github.com/rogerkirkness/convictional-help/blob/master/assets/images/partnerInvite.png?raw=true)
 
 ### Step Three
-Once you click invite, we will send them an email with a link to sign up and connect with you. You can see the status of their invitation and whether the invite has been sent on their record.
+We will send them an email with a link to sign up. You can see the status of their invitation and whether the invite has been sent on their record.
 
 We recommend that you only activate partners after they are signed up and connected with you. This allows you to ensure you have all the information you need to start trading with them.
