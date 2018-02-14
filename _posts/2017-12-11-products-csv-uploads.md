@@ -26,7 +26,3 @@ ie. 12345,true,A Great Product,Vendor,Beauty,"Tags, Tags, Tags",54321,A Great Va
 * Do not include headers in your CSV file.
 * If the upload fails, double check the format.
 * Leave empty spaces for optional fields (ie. ",,,")
-
-
-
-
