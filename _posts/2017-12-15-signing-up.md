@@ -3,13 +3,14 @@ title: "Signing up"
 date: 2018-01-31
 toc: true
 ---
+## Introduction
 
-Signing up for Convictional is quite straight forward:
+Thanks for dedicing to join Convictional, we are excited to have you on board. Signing up is easy, just follow these steps:
 
 ### Fields
 * Email: use your business email.
 * Password: the longer the better.
 * Platform: select the platform you use.
-* URL/Shop: more fields will appear, depending on your platform
+* URL/Shop: the URL for your shop admin.
 
-Click sign up and you will have an account on Convictional.
+Click sign up and we will create an account for you. You will receive an email with some more information on how to get setup.

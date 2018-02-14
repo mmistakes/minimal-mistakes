@@ -5,10 +5,13 @@ sidebar:
   nav: "docs"
 ---
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+<h2>Guides</h2>
+<p>
+  Welcome to Convictional! Learn more about the Convictional platform by selecting a guide on the left. We can help with almost any kind of commerce integration requirement you have.
+</p>
 
 {% for post in paginator.posts %}
-  {% include archive-single.html %}
+  {% include archive-single.html type="grid" %}
 {% endfor %}
 
 {% include paginator.html %}
