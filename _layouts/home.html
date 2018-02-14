@@ -4,14 +4,13 @@ author_profile: false
 sidebar:
   nav: "docs"
 ---
-
-<h2>Guides</h2>
+<h1>Guides</h1>
 <p>
-  Welcome to Convictional! Learn more about the Convictional platform by selecting a guide on the left. We can help with almost any kind of commerce integration requirement you have.
+  Welcome to Convictional! Learn more about the Convictional platform by selecting a guide on the left. We can help with almost any kind of commerce integration requirement you have. Get in touch with support if you need any help.
 </p>
 
 {% for post in paginator.posts %}
-  {% include archive-single.html type="grid" %}
+  {% include archive-single.html %}
 {% endfor %}
 
 {% include paginator.html %}
