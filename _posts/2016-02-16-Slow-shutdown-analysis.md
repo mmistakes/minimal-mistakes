@@ -135,8 +135,7 @@ This seems to happen 4 times per key, why? Is this what the word "loop" in "KiId
 
 ### Conclusion
 
-I send this up to management but there was never any word back. 
-I did some further reading and came to the conclusion i was looking in the good direction.
+I did some further reading and came to the conclusion i was looking in the right direction.
 
 My conclusion was correct, it only took a few more months after which there was a new version released of McAfee. When we updated to the newer version, the complaints were gone.
 
