@@ -481,7 +481,7 @@ The default search uses [**Lunr**](https://lunrjs.com/) to build a search index 
 
 #### Algolia
 
-For faster and more relevant search ([see demo](https://mmistakes.github.io/jekyll-theme-basically-basic-algolia-search/)):
+For faster and more relevant search ([see demo](https://mmistakes.github.io/minimal-mistakes-algolia-search/)):
 
 1. Add the [`jekyll-algolia`](https://github.com/algolia/jekyll-algolia) gem to your `Gemfile`, in the `:jekyll_plugins` section.
 
