@@ -1,3 +1,9 @@
+## Unreleased
+
+### Enhancements
+
+* Add support for [Algolia](https://www.algolia.com/) search provider. [#1416](https://github.com/mmistakes/minimal-mistakes/issues/1416)
+
 ## [4.9.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.9.1)
 
 ### Enhancements

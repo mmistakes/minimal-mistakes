@@ -4,9 +4,15 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-02-05T14:38:43-05:00
+last_modified_at: 2018-02-16T12:45:12-05:00
 toc: true
 ---
+
+## Unreleased
+
+### Enhancements
+
+* Add support for [Algolia](https://www.algolia.com/) search provider. [#1416](https://github.com/mmistakes/minimal-mistakes/issues/1416)
 
 ## [4.9.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.9.1)
 
