@@ -1,5 +1,9 @@
 ## Unreleased
 
+### Enhancements
+
+* Update jQuery to version `3.3.1`. [#1491](https://github.com/mmistakes/minimal-mistakes/issues/1491)
+
 ### Bug Fixes
 
 * Focus Algolia search input after clicking on search toggle.
