@@ -4,9 +4,15 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-02-16T14:25:39-05:00
+last_modified_at: 2018-02-16T15:12:42-05:00
 toc: true
 ---
+
+## Unreleased
+
+### Bug Fixes
+
+* Focus Algolia search input after clicking on search toggle.
 
 ## [4.10.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.10.0)
 

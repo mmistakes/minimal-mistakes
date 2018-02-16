@@ -1,3 +1,9 @@
+## Unreleased
+
+### Bug Fixes
+
+* Focus Algolia search input after clicking on search toggle.
+
 ## [4.10.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.10.0)
 
 ### Enhancements
