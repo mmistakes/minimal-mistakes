@@ -105,3 +105,21 @@
     margin-bottom: 0;
   }
 }
+
+/* Algolia search */
+
+.ais-search-box {
+  max-width: 100% !important;
+  margin-bottom: 2em;
+}
+
+.archive__item-title .ais-Highlight {
+  color: $link-color;
+  font-style: normal;
+  text-decoration: underline;
+}
+.archive__item-excerpt .ais-Highlight {
+  color: $link-color;
+  font-style: normal;
+  font-weight: bold;
+}
