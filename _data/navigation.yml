@@ -10,8 +10,6 @@ main:
     url: /registration
 
 sidebar-menu:
-  - title: Головна
-    url: /
   - title: Наша школа
     url: /news
     children:
@@ -24,15 +22,31 @@ sidebar-menu:
       - title: "Газета 'Шкільна орбіта'"
         url: /school-newspaper
 
-  - title: Відкритий доступ
-    url: /open
+  - title: Виховна робота
+    children:
+      - title: Акції
+        url: /contests
+      - title: Екскурсії
+        url: /excursions
+      - title: Заходи
+        url: /actions
+      - title: Канікули
+        url: /holiday
+      - title: Літній табір
+        url: /camp
+      - title: Наші таланти
+        url: /talents
+      - title: Профілактична робота
+        url: /preventive_work
+      - title: Штаб національного патріотичного виховання
+        url: /patriotic
 
   - title: Управління
     children:
       - title: "Основні завдання"
         url: /management/main
 
-  - title: Навчальний процес
+  - title: Освітній процес
     children:
       - title: Режим роботи
         url: /process/mode
