@@ -1,6 +1,6 @@
 {
   "name": "minimal-mistakes",
-  "version": "4.9.0",
+  "version": "4.10.0",
   "description": "Minimal Mistakes Jekyll theme npm build scripts",
   "repository": {
     "type": "git",
@@ -23,7 +23,7 @@
   },
   "scripts": {
     "uglify":
-      "uglifyjs assets/js/vendor/jquery/jquery-3.2.1.min.js assets/js/plugins/jquery.fitvids.js assets/js/plugins/jquery.greedy-navigation.js assets/js/plugins/jquery.magnific-popup.js assets/js/plugins/jquery.smooth-scroll.min.js assets/js/_main.js -c -m -o assets/js/main.min.js",
+      "uglifyjs assets/js/vendor/jquery/jquery-3.3.1.min.js assets/js/plugins/jquery.fitvids.js assets/js/plugins/jquery.greedy-navigation.js assets/js/plugins/jquery.magnific-popup.js assets/js/plugins/jquery.smooth-scroll.min.js assets/js/_main.js -c -m -o assets/js/main.min.js",
     "add-banner": "node banner.js",
     "watch:js":
       "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",

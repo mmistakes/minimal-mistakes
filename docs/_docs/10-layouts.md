@@ -80,10 +80,22 @@ The layout you'll likely use the most --- sidebar and main content combo.
 * Optional social sharing links module
 * Optional comments module
 * Optional related posts module
+* Wide page variant
 
 {% include gallery id="single_layout_gallery" caption="Image header and meta info examples for `single` layout" %}
 
 Assign with `layout: single`, or better yet apply as a [Front Matter default]({{ "/docs/configuration/#front-matter-defaults" | absolute_url }}) in `_config.yml`.
+
+### Wide Page
+
+To expand the main content to the right, filling the space of what is normally occupied by the table of contents. Add the following to a post or page's YAML Front Matter:
+
+```yaml
+classes: wide
+```
+
+**Note:** If the page contains a table of contents, it will no longer appear to the right. Instead it will be forced into the main content container directly following the page's title.
+{: .notice--info}
 
 ### Table of Contents
 
