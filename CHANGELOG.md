@@ -3,6 +3,7 @@
 ### Enhancements
 
 * Update jQuery to version `3.3.1`. [#1491](https://github.com/mmistakes/minimal-mistakes/issues/1491)
+* Add link to jekyll-algolia's `files_to_exclude` documentation.
 
 ### Bug Fixes
 

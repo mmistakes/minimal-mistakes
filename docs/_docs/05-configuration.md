@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-last_modified_at: 2018-02-16T12:49:45-05:00
+last_modified_at: 2018-02-19T08:09:39-05:00
 toc: true
 ---
 
@@ -529,6 +529,9 @@ For faster and more relevant search ([see demo](https://mmistakes.github.io/mini
    Note that `ALGOLIA_API_KEY` should be set to your admin API key.
 
 To use the Algolia search with GitHub Pages hosted sites follow [this deployment guide](https://community.algolia.com/jekyll-algolia/github-pages.html). Or this guide for [deploying on Netlify](https://community.algolia.com/jekyll-algolia/netlify.html).
+
+**Note:** The Jekyll Algolia plugin can be configured in several ways. Be sure to check out [their full documentation](https://community.algolia.com/jekyll-algolia/options.html "Algolia configuration") on how to exclude files and other valuable settings.
+{: .notice--info}
 
 ### SEO, Social Sharing, and Analytics Settings
 
