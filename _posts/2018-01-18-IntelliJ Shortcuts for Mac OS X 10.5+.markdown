@@ -11,11 +11,22 @@ Legend
 - Alt/Option: ⌥
 - Command: ⌘
 - Enter/Return: ⏎
+- Right arrow: →
+- Left arrow: ←
+- Up arrow: ↑
+- Down arrow: ↓
 
 Execution
 - Run program: ⌃ R
 - Debug program: ⌃ D
 - Stop JVM: ⌘ F2
+
+Debugging
+- Step over / into: F8 / F7
+- Smart step into / Step out Run to cursor: ⇧ F7 / ⇧ F8
+- Run to cursor: ⌥ F9
+- Evaluate expression: ⌥ F8
+- Resume program: ⌘ ⌥ R
 
 Bookmarks
 - Toggle bookmark: F3
@@ -26,13 +37,6 @@ Bookmarks
 Breakpoints
 - Toggle breakpoint: ⌘ F8
 - View breakpoints: ⌘ ⇧ F8
-
-Debugging
-- Step over / into: F8 / F7
-- Smart step into / Step out Run to cursor: ⇧ F7 / ⇧ F8
-- Run to cursor: ⌥ F9
-- Evaluate expression: ⌥ F8
-- Resume program: ⌘ ⌥ R
 
 Editing Existing Code
 - Multiple cursors: ⇧ ⌥ Clicks
@@ -49,9 +53,12 @@ Editing New Code
 - Basic code completion: ⌃ Space
 - Smart code completion: ⌃ ⇧ Space
 
+Navigation
+- Next / previous highlight: F2 / ⇧ F2
+- Next / previous location: ⌥ ⌘ ← / ⌥ ⌘ →
+
 Various
 - Dictionary of actions or options: ⇧ ⌘ A
 - Toggle the terminal tool window visibility: ⌥ F12
 - Preferences: ⌘ ,
 - Project Structure: ⌘ ;
-- Next / previous highlight: F2 / ⇧ F2
