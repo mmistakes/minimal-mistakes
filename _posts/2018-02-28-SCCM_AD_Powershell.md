@@ -8,16 +8,19 @@ date: '2018-02-28'
 ---
 Before i can explain the script, i'll explain the way we work.
 Back when we were using SCCM 2007, our SCCM was a real mess. We had too many advertisements, collections, ... .
+
 So i came up with a new method of working in light of the deployment of a new OS (Windows 7).
 
 The goal of this project was two-sided:
 
-1) Make the deployment of software as transparant and logical as possible.
-2) Make it possible for non-helpdesk or non-SysAdmins (yes i mean the developers ![]({{site.baseurl}}/assets/images/SCCMcollections/omg.png) ) to deploy software to a spare computer, this without a deep knowlegde of SCCM.
+1.   Make the deployment of software as transparant and logical as possible.
+2.   Make it possible for non-helpdesk or non-SysAdmins (yes i mean the developers ![]({{site.baseurl}}/assets/images/SCCMcollections/omg.png) ) to deploy software to a spare computer, this without a deep knowlegde of SCCM.
 
 The method was designed with SCCM 2007 but it has transitionned into SCCM 2012.
 Having said that, SCCM 2007 was *a lot easier* to "see" what was going on.
+
 Therefore, the screenshots that you'll see below, are old screenshots from SCCM 2007 which i photoshopped so that they don't contain corporate\sensitive information.
+
 So if you see some font that isn't quite right, you know why :).
 
 **The basic idea is that a computer only needs to be added into an Active-Directory computergroup**. 
