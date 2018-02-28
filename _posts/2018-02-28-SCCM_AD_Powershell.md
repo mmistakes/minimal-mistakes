@@ -1,15 +1,11 @@
 ---
 Layout: post
-title: New SCCM-collections (with query based membership based on AD) created by Powershell
+title: SCCM-collections (with query based membership based on AD) created by Powershell
 Author_profile: true
 Tags: 'PS, SCCM, AD'
 published: true
 date: '2018-02-28'
-header:
-  image: /assets/images/headers/sccm.jpg
 ---
-# New SCCM-collections (with query based membership based on AD) created by Powershell .
-
 Before i can explain the script, i'll explain the way we work.
 Back when we were using SCCM 2007, our SCCM was a real mess. We had too many advertisements, collections, ... .
 So i came up with a new method of working in light of the deployment of a new OS (Windows 7).
