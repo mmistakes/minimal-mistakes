@@ -2,12 +2,14 @@
 main:
   - title: "Profile"
     url: https://gastd.github.io/profile/
+    description: "Profile page"
 
   - title: "Portifolio"
     url: https://gastd.github.io/portifolio
 
   - title: "My Projects"
     url: https://gastd.github.io/projects/
+    description: "Projects that I'd work"
 
   # - title: "Sample Pages"
     # url: https://mmistakes.github.io/minimal-mistakes/page-archive/
