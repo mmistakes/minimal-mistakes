@@ -44,7 +44,7 @@ Now to make this more visible, i created a graphical representation of this work
 
 # Deployment of Windows 10
 
-Fast forward few yeasr and we are now almost ready to start deploying Windows 10. So we need to get our systems ready to go.
+Fast forward few years and we are now almost ready to start deploying Windows 10. So we need to get our systems ready to go.
 I will still be maintaining the same method of deployment as described above. 
 The issue is that Windows 7 will still be active during the deployment of Windows 10. This means that i need to be able to deploy software to both Windows 7 and Windows 10.
 
