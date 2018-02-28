@@ -29,14 +29,10 @@ This way, you don't have to be in SCCM at all. This computergroup will serve as 
 The method goes as follows:
 
 1.   You create a computergroup in AD e.g: CG_Marketing, CG_ICT,CG_Financial
-   
 2.   In SCCM you create a **"Department Collection"** with the same name : CG_Marketing, CG_ICT, CG_Financial, ...
 	 <br/>2.1   You add a query-membership to the AD group with the same name.
-
 4.   You create an **"Application collection"**. I made them with a prefix of "app". APP_Office, APP_Bizaggi, ...
-   
 5.   You create an advertisement\deployment for this APP_ collection and deploy it to the **"Application collection"**.
-  
 6.   You add the **"Department collection"** as a member to the  **"Application collection(s)"** aka: the software it needs.
 
 This way, when you look at the membership of an "Application Collection" you can immediatly see which departments are getting this software installed. Again, this was a lot more visible in SCCM 2007.
