@@ -1,0 +1,52 @@
+---
+date: 2018-03-04
+tags: 
+- Draft2
+author: louiszgm
+layout: post
+title: Draft2
+excerpt: Draft2
+categories: 
+- Draft2
+---
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">家长管理iOS整体架构</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1">V1.2.1</h3>
+<div class="outline-text-3" id="text-1-1">
+
+<div class="figure">
+<p><img src="http://oz1ngniz9.bkt.clouddn.com/V1.2.1%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1.png" alt="V1.2.1%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1.png" />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2">V1.4.0</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+家长管理V1.4.0开始，开始了模块化之路。在原有的架构上抽象了业务模块层和通用组件层
+</p>
+
+
+<div class="figure">
+<p><img src="http://oz1ngniz9.bkt.clouddn.com/V1.4.0%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1.png" alt="V1.4.0%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1.png" />
+</p>
+</div>
+
+<p>
+将原有工程中的网络组件抽离出来作为一个单独的工程，同时也将网络组件所依赖的所有组件放在一起。
+</p>
+
+<p>
+V1.4.0中新的业务模块都会放在业务模块层中单独的作为一个工程管理
+</p>
+
+<p>
+主工程和业务模块都依赖了通用组件层，这是防止在模块化失败时，也能够实现组件化和各业务模块的集中化管理。从而也不会影响业务的迭代。
+</p>
+</div>
+</div>
+</div>
