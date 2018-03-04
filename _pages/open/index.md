@@ -48,5 +48,6 @@ sidebar:
 - [Фінансовий звіт за жовтень 2017 рік](/finance-10-2017/)
 - [Фінансовий звіт за грудень 2017 рік](/finance-12-2017/)
 - [Фінансовий звіт за січень 2018 рік](/finance-01-2018/)
+- [Фінансовий звіт за лютий 2018 рік](/finance-02-2018/)
 
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 85.0847%;"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQkvmLKzxKORuFa337EiGbU-cw2NXc-hpLPnHZN1oQwwZsRG2_R_Geo0Z1-nzovnucKuTm9WLpjzwWM/pubhtml?widget=true&amp;headers=false" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen></iframe></div>

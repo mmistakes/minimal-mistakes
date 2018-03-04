@@ -5,6 +5,12 @@ title: "Наші досягнення"
 sidebar:
   nav: "sidebar-menu"
 gallery:
+  - url: /assets/images/pages/achievements/2018/winners-0.jpg
+    image_path: /assets/images/pages/achievements/2018/winners-0.jpg
+  - url: /assets/images/pages/achievements/2018/winners-1.jpg
+    image_path: /assets/images/pages/achievements/2018/winners-1.jpg
+  - url: /assets/images/pages/achievements/2018/winners-2.jpg
+    image_path: /assets/images/pages/achievements/2018/winners-2.jpg
   - url: /assets/images/pages/achievements/new-0.jpg
     image_path: /assets/images/pages/achievements/new-0.jpg
   - url: /assets/images/pages/achievements/2017/achievement-0.jpg
