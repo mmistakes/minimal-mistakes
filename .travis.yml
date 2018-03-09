@@ -2,7 +2,7 @@ language: ruby
 cache: bundler
 gemfile: docs/Gemfile
 script:
-  - bundle exec jekyll --source docs --destination docs/_site --config docs/_config.yml algolia
+  - bundle exec jekyll algolia --source docs --destination docs/_site --config docs/_config.yml
 branches:
   only:
     # Change this to gh-pages if you're deploying using the gh-pages branch
