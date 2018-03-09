@@ -1,5 +1,6 @@
 language: ruby
 cache: bundler
+gemfile: docs/Gemfile
 script:
   - bundle exec jekyll algolia --config _config.yml
 branches:
