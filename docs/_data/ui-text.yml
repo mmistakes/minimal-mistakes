@@ -52,7 +52,7 @@ en-AU:
   <<: *DEFAULT_EN
 
 # Spanish
-# --------------
+# -------
 es: &DEFAULT_ES
   page                       : "Página"
   pagination_previous        : "Anterior"
@@ -97,7 +97,7 @@ es-CO:
   <<: *DEFAULT_ES
 
 # French
-# -----------------
+# ------
 fr: &DEFAULT_FR
   page                       : "Page"
   pagination_previous        : "Précédent"
@@ -145,7 +145,7 @@ fr-CH:
   <<: *DEFAULT_FR
 
 # Turkish
-# -----------------
+# -------
 tr: &DEFAULT_TR
   page                       : "Sayfa"
   pagination_previous        : "Önceki"
@@ -188,6 +188,7 @@ tr-TR:
   <<: *DEFAULT_TR
 
 # Portuguese
+# ----------
 pt: &DEFAULT_PT
   page                       : "Página"
   pagination_previous        : "Anterior"
@@ -228,7 +229,6 @@ pt: &DEFAULT_PT
   loading_label              : "A carregar..."
 pt-PT:
   <<: *DEFAULT_PT
-
 # Brazilian Portuguese
 pt-BR:
   page                       : "Página"
@@ -270,7 +270,7 @@ pt-BR:
   loading_label              : "Carregando..."
 
 # Italian
-# -----------------
+# -------
 it: &DEFAULT_IT
   page                       : "Pagina"
   pagination_previous        : "Precedente"
@@ -313,7 +313,7 @@ it-IT:
   <<: *DEFAULT_IT
 
 # Chinese  (zh-CN Chinese - China)
-# -----------------
+# --------------------------------
 zh: &DEFAULT_ZH_HANS
   page                       : "页面"
   pagination_previous        : "向前"
@@ -397,15 +397,16 @@ zh-TW: &DEFAULT_ZH_HANT
   loading_label              : "載入中..."
 zh-HK:
   <<: *DEFAULT_ZH_HANT
+
 # German / Deutsch
-# -----------------
+# ----------------
 de: &DEFAULT_DE
   page                       : "Seite"
   pagination_previous        : "Vorherige"
   pagination_next            : "Nächste"
-  breadcrumb_home_label      : "Home"
+  breadcrumb_home_label      : "Start"
   breadcrumb_separator       : "/"
-  menu_label                 :
+  menu_label                 : "Menü ein-/ausschalten"
   toc_label                  : "Auf dieser Seite"
   ext_link_label             : "Direkter Link"
   less_than                  : "weniger als"
@@ -415,13 +416,13 @@ de: &DEFAULT_DE
   tags_label                 : "Tags:"
   categories_label           : "Kategorien:"
   date_label                 : "Aktualisiert:"
-  comments_label             : "Hinterlassen sie einen Kommentar"
+  comments_label             : "Hinterlassen Sie einen Kommentar"
   comments_title             : "Kommentare"
   more_label                 : "Mehr anzeigen"
   related_label              : "Ihnen gefällt vielleicht auch"
   follow_label               : "Folgen:"
   feed_label                 : "Feed"
-  powered_by                 : "Powered by"
+  powered_by                 : "Möglich durch"
   website_label              : "Webseite"
   email_label                : "E-Mail"
   recent_posts               : "Aktuelle Beiträge"
@@ -430,12 +431,12 @@ de: &DEFAULT_DE
   comment_form_comment_label : "Kommentar"
   comment_form_md_info       : "Markdown wird unterstützt."
   comment_form_name_label    : "Name"
-  comment_form_email_label   : "E-Mail Addresse"
+  comment_form_email_label   : "E-Mail-Addresse"
   comment_form_website_label : "Webseite (optional)"
   comment_btn_submit         : "Kommentar absenden"
   comment_btn_submitted      : "Versendet"
-  comment_success_msg        : "Danke für ihren Kommentar! Er wird auf der Seite angezeigt, nachdem er geprüft wurde."
-  comment_error_msg          : "Entschuldigung, es gab einen Fehler. Bitte füllen sie alle benötigten Felder aus und versuchen sie es erneut."
+  comment_success_msg        : "Danke für Ihren Kommentar! Er wird auf der Seite angezeigt, nachdem er geprüft wurde."
+  comment_error_msg          : "Entschuldigung, es gab einen Fehler. Bitte füllen Sie alle benötigten Felder aus und versuchen Sie es erneut."
   loading_label              : "Lade..."
 de-DE:
   <<: *DEFAULT_DE
@@ -451,7 +452,7 @@ de-LU:
   <<: *DEFAULT_DE
 
 # Nepali (Nepal)
-# -----------------
+# --------------
 ne: &DEFAULT_NE
   page                       : "पृष्‍ठ"
   pagination_previous        : "अघिल्लो"
@@ -494,7 +495,7 @@ ne-NP:
   <<: *DEFAULT_NE
 
 # Korean
-# --------------
+# ------
 ko: &DEFAULT_KO
   page                       : "페이지"
   pagination_previous        : "이전"
@@ -582,7 +583,7 @@ ru-RU:
   <<: *DEFAULT_RU
 
 # Lithuanian / Lietuviškai
-# -----------------
+# ------------------------
 lt: &DEFAULT_LT
   page                       : "Puslapis"
   pagination_previous        : "Ankstesnis"
@@ -625,7 +626,7 @@ lt-LT:
   <<: *DEFAULT_LT
 
 # Greek
-# --------------
+# -----
 gr: &DEFAULT_GR
   page                       : "Σελίδα"
   pagination_previous        : "Προηγούμενo"
@@ -670,7 +671,7 @@ gr-GR:
   <<: *DEFAULT_GR
 
 # Swedish
-# -----------------
+# -------
 sv: &DEFAULT_SV
   page                       : "Sidan"
   pagination_previous        : "Föregående"
@@ -715,7 +716,7 @@ sv-FI:
   <<: *DEFAULT_SV
 
 # Dutch
-# -----------------
+# -----
 nl: &DEFAULT_NL
   page                       : "Pagina"
   pagination_previous        : "Vorige"
@@ -760,7 +761,7 @@ nl-NL:
   <<: *DEFAULT_NL
 
 # Indonesian
-# -----------------
+# ----------
 id: &DEFAULT_ID
   page                       : "Halaman"
   pagination_previous        : "Kembali"
@@ -803,7 +804,7 @@ id-ID:
   <<: *DEFAULT_ID
 
 # Vietnamese
-# -----------------
+# ----------
 vi: &DEFAULT_VI
   page                       : "Trang"
   pagination_previous        : "Trước"
@@ -934,7 +935,7 @@ da-PL:
   <<: *DEFAULT_PL
 
 # Japanese
-# -----------------
+# --------
 ja: &DEFAULT_JA
   page                       : "ページ"
   pagination_previous        : "前へ"
