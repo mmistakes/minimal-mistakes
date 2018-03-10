@@ -1,5 +1,6 @@
 ---
 title: "Підручники для 5-го класу на 2018-2019 н.р."
+permalink: /open/books-5-grade/
 sidebar:
   nav: "sidebar-menu"
 ---
