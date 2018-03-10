@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-02-16T15:18:36-05:00
+last_modified_at: 2018-03-09T15:20:14-05:00
 toc: true
 ---
 
@@ -13,6 +13,9 @@ toc: true
 ### Enhancements
 
 * Update jQuery to version `3.3.1`. [#1491](https://github.com/mmistakes/minimal-mistakes/issues/1491)
+* Add link to jekyll-algolia's `files_to_exclude` documentation.
+* Update Font Awesome to version [`5.0.7`](https://github.com/FortAwesome/Font-Awesome/blob/master/CHANGELOG.md). [#1555](https://github.com/mmistakes/minimal-mistakes/pull/1555)
+* Activate Algolia search for documentation site. [#1570](https://github.com/mmistakes/minimal-mistakes/issues/1570)
 
 ### Bug Fixes
 

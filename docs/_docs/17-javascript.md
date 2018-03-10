@@ -18,7 +18,7 @@ minimal mistakes
 |  |  |   └── jquery.smooth-scroll.min.js  # make same-page links scroll smoothly
 |  |  ├── vendor
 |  |  |   └── jquery
-|  |  |       └── jquery-3.2.1.min.js
+|  |  |       └── jquery-3.3.1.min.js
 |  |  ├── _main.js                         # jQuery plugin settings and other scripts
 |  |  └── main.min.js                      # concatenated and minified scripts
 ```
@@ -35,7 +35,7 @@ You can also add scripts to the `<head>` or closing `</body>` elements by adding
 
 ```yaml
 head_scripts:
-  - https://code.jquery.com/jquery-3.2.1.min.js
+  - https://code.jquery.com/jquery-3.3.1.min.js
   - /assets/js/your-custom-head-script.js
 footer_scripts:
   - /assets/js/your-custom-footer-script.js
