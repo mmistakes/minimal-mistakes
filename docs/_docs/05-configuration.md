@@ -679,13 +679,14 @@ Analytics is disabled by default. To enable globally select one of the following
 | -------------------- | --------------------------------------------------------------- |
 | **google**           | [Google Standard Analytics](https://www.google.com/analytics/)  |
 | **google-universal** | [Google Universal Analytics](https://www.google.com/analytics/) |
+| **google-gtag**      | [Google Analytics Global Site Tag)](https://www.google.com/analytics/) |
 | **custom**           | Other analytics providers                                       |
 
 For Google Analytics add your Tracking Code:
 
 ```yaml
 analytics:
-  provider: "google-universal"
+  provider: "google-gtag"
   google:
     tracking_id: "UA-1234567-8"
 ```
