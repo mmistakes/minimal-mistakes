@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-03-12T19:25:32-04:00
+last_modified_at: 2018-03-12T19:28:30-04:00
 toc: true
 ---
 
@@ -17,6 +17,7 @@ toc: true
 * Update Font Awesome to version [`5.0.8`](https://github.com/FortAwesome/Font-Awesome/blob/master/CHANGELOG.md). [#1561](https://github.com/mmistakes/minimal-mistakes/pull/1561)
 * Activate Algolia search for documentation site. [#1570](https://github.com/mmistakes/minimal-mistakes/issues/1570)
 * Add missing German translations. [#1577](https://github.com/mmistakes/minimal-mistakes/pull/1577)
+* Add support for Google Analytics with global site tag (gtag.js) [#1563](https://github.com/mmistakes/minimal-mistakes/pull/1563)
 
 ### Bug Fixes
 
