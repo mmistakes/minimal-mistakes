@@ -438,6 +438,8 @@ de: &DEFAULT_DE
   comment_success_msg        : "Danke für Ihren Kommentar! Er wird auf der Seite angezeigt, nachdem er geprüft wurde."
   comment_error_msg          : "Entschuldigung, es gab einen Fehler. Bitte füllen Sie alle benötigten Felder aus und versuchen Sie es erneut."
   loading_label              : "Lade..."
+  search_placeholder_text    : "Suchbegriff eingeben..."
+  results_found              : "Ergebnis(se) gefunden"
 de-DE:
   <<: *DEFAULT_DE
 de-AT:
@@ -931,7 +933,7 @@ pl: &DEFAULT_PL
   comment_success_msg        : "Dziękuję za Twój komentarz! Zostanie dodany po akceptacji."
   comment_error_msg          : "Niestety wystąpił błąd. Proszę upewnij się, że wszystkie wymagane pola zostały wypełnione i spróbuj ponownie."
   loading_label              : "Trwa ładowanie strony..."
-da-PL:
+pl-PL:
   <<: *DEFAULT_PL
 
 # Japanese

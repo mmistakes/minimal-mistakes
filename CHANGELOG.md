@@ -4,8 +4,9 @@
 
 * Update jQuery to version `3.3.1`. [#1491](https://github.com/mmistakes/minimal-mistakes/issues/1491)
 * Add link to jekyll-algolia's `files_to_exclude` documentation.
-* Update Font Awesome to version [`5.0.7`](https://github.com/FortAwesome/Font-Awesome/blob/master/CHANGELOG.md). [#1555](https://github.com/mmistakes/minimal-mistakes/pull/1555)
+* Update Font Awesome to version [`5.0.8`](https://github.com/FortAwesome/Font-Awesome/blob/master/CHANGELOG.md). [#1561](https://github.com/mmistakes/minimal-mistakes/pull/1561)
 * Activate Algolia search for documentation site. [#1570](https://github.com/mmistakes/minimal-mistakes/issues/1570)
+* Add missing German translations. [#1577](https://github.com/mmistakes/minimal-mistakes/pull/1577)
 
 ### Bug Fixes
 
