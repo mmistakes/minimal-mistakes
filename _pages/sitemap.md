@@ -9,7 +9,7 @@ author_profile: false
 Hier finden Sie eine Auflistung aller unserer Inhalte auf unserer Website. Wir
 sind auch freundlich zu unseren automatisierten Besuchern (z.B. google suche und
 co), denn für dich gibt es auch eine [XML version]({{ "sitemap.xml" |
-absolute_url }}) zum einfacheren verdauen.
+relative_url }}) zum einfacheren verdauen.
 
 <h2>Seiten</h2>
 {% for post in site.pages %}

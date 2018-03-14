@@ -19,7 +19,7 @@
         {% if img.url contains "://" %}
           "{{ img.url }}"
         {% else %}
-          "{{ img.url | absolute_url }}"
+          "{{ img.url | relative_url }}"
         {% endif %}
         {% if img.title %}title="{{ img.title }}"{% endif %}
       >
@@ -27,7 +27,7 @@
           {% if img.image_path contains "://" %}
             "{{ img.image_path }}"
           {% else %}
-            "{{ img.image_path | absolute_url }}"
+            "{{ img.image_path | relative_url }}"
           {% endif %}
           alt="{% if img.alt %}{{ img.alt }}{% endif %}">
       </a>
@@ -36,7 +36,7 @@
         {% if img.image_path contains "://" %}
           "{{ img.image_path }}"
         {% else %}
-          "{{ img.image_path | absolute_url }}"
+          "{{ img.image_path | relative_url }}"
         {% endif %}
         alt="{% if img.alt %}{{ img.alt }}{% endif %}">
     {% endif %}

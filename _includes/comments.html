@@ -9,14 +9,14 @@
         <section id="disqus_thread"></section>
       {% when "facebook" %}
         <h4 class="page__comments-title">{{ comments_label }}</h4>
-        <section class="fb-comments" data-href="{{ page.url | absolute_url }}" data-mobile="true" data-num-posts="{{ site.comments.facebook.num_posts | default: 5 }}" data-width="100%" data-colorscheme="{{ site.comments.facebook.colorscheme | default: 'light' }}"></section>
+        <section class="fb-comments" data-href="{{ page.url | relative_url }}" data-mobile="true" data-num-posts="{{ site.comments.facebook.num_posts | default: 5 }}" data-width="100%" data-colorscheme="{{ site.comments.facebook.colorscheme | default: 'light' }}"></section>
       {% when "google-plus" %}
         <h4 class="page__comments-title">{{ comments_label }}</h4>
         <section id="g-comments" class="g-comments">Loading Google+ Comments ...</section>
         <script>
           function initComment() {
             gapi.comments.render("g-comments", {
-              href: "{{ page.url | absolute_url }}",
+              href: "{{ page.url | relative_url }}",
               width: "624",
               first_party_property: "BLOGGER",
               view_type: "FILTERED_POSTMOD"

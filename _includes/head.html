@@ -2,20 +2,20 @@
 
 {% include seo.html %}
 
-<link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | absolute_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+<link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
-<link rel="manifest" href="/assets/icons/manifest.json">
-<link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="/assets/icons/favicon.ico">
-<meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
+<link rel="apple-touch-icon" sizes="76x76" href="{{ '/assets/icons/apple-touch-icon.png' | relative_url }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/icons/favicon-32x32.png' | relative_url }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/icons/favicon-16x16.png' | relative_url }}">
+<link rel="manifest" href="{{ '/assets/icons/manifest.json' | relative_url }}">
+<link rel="mask-icon" href="{{ '/assets/icons/safari-pinned-tab.svg' | relative_url }}" color="#5bbad5">
+<link rel="shortcut icon" href="{{ '/assets/icons/favicon.ico' | relative_url }}">
+<meta name="msapplication-config" content="{{ '/assets/icons/browserconfig.xml' | relative_url }}">
 <meta name="theme-color" content="#ffffff">
 
 <script>
@@ -23,7 +23,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="{{ '/assets/css/main.css' | absolute_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
 <!--[if lte IE 9]>
   <style>
