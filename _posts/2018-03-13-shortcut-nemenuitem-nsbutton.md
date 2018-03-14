@@ -100,3 +100,7 @@ Besides, if you switch shortcuts of these two menu items, the default visible wi
 1. [https://stackoverflow.com/a/6230866/353927](https://stackoverflow.com/a/6230866/353927)
 2. [Human Interface Guidelines](https://developer.apple.com/macos/human-interface-guidelines/menus/menu-anatomy/)
 
+## 8. Demo Project
+
+[Here](https://github.com/cool8jay/KeyEquivelant) is demo project.
+
