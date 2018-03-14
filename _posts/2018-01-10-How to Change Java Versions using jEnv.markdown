@@ -31,12 +31,12 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.131-b11, mixed mode)
 * oracle64-1.8.0.131 (set by /Users/oeuser/.jenv/version)
 {% endhighlight %}
 
-# To change it globally
 {% highlight shell %}
+   # To change it globally
 ~> jenv global oracle64-1.7.0.80       
-# Only for this directory
+   # Only for this directory
 ~> jenv local oracle64-1.7.0.80       
-# Only for this shell instance
+   # Only for this shell instance
 ~> jenv shell oracle64-1.7.0.80       
 {% endhighlight %}
 
