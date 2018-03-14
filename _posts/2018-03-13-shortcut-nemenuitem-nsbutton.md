@@ -82,8 +82,8 @@ Besides, if you switch shortcuts of these two menu items, the default visible wi
 
 ## 5. Some Design Guideline
 
-1. Do NOT add shortcut for contextual menu. [Link](https://developer.apple.com/macos/human-interface-guidelines/menus/contextual-menus/)
-2. Do NOT conflict with system shortcuts or other popular shortcuts, like `⌘C` (copy), `⇧⌘Q` (Log out account)，etc.
+1. Do **NOT** add shortcut for contextual menu. [Link](https://developer.apple.com/macos/human-interface-guidelines/menus/contextual-menus/)
+2. Do **NOT** conflict with system shortcuts or other popular shortcuts, like `⌘C` (copy), `⇧⌘Q` (Log out account)，etc.
 3. Only add shortcut for frequently used action, to relieve user's learning and remembering burden. For example, about, is a rarely-used  action, it does not need a shortcut.
 
 ## 6. Other Weird Facts
