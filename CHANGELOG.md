@@ -1,3 +1,7 @@
+## Unreleased
+
+* Add default `theme` and `remote_theme` values to `_config.yml`.
+
 ## [4.10.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.10.1)
 
 ### Enhancements

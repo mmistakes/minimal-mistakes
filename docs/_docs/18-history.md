@@ -4,9 +4,13 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-03-12T19:29:34-04:00
+last_modified_at: 2018-03-14T12:54:07-04:00
 toc: true
 ---
+
+## Unreleased
+
+* Add default `theme` and `remote_theme` values to `_config.yml`.
 
 ## [4.10.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.10.1)
 
