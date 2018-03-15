@@ -60,7 +60,7 @@ Following 1 line of code, sets menuItem's shortcut as `⇧⌘E`.
 
 Option key has an alias, Alternate key, it is called so when holding it, the menu item will appear in a different way. 
 
-In Apple's <Human Interface Guidelines>, this menu item is called [Dynamic Menu Items](https://developer.apple.com/macos/human-interface-guidelines/menus/menu-anatomy/), and invisible by default.
+In Apple's *Human Interface Guidelines*, this menu item is called [Dynamic Menu Items](https://developer.apple.com/macos/human-interface-guidelines/menus/menu-anatomy/), and invisible by default.
 
 For instance, click MacOS desktop's left top `` key, then hold option key, you will see, "About This Mac" changes to "System Information..." and its triggered action changes too.
 
@@ -68,7 +68,7 @@ For instance, click MacOS desktop's left top `` key, then hold option key, yo
 
 In xib, to implement this:
 
-1. Add 2 NSMenuItem，they MUST be adjacent, no more menu item between them.
+1. Add 2 NSMenuItem, they MUST be adjacent, no more menu item between them.
 2. Set valid shortcut for them, and the second's shortcut MUST be the first's shortcut, plus `⌥` key.
 3. Check Alternate property for the second NSMenuItem.
 
@@ -83,7 +83,7 @@ Besides, in step 2, if you switch shortcuts of these two menu items, the default
 ## 5. Some Design Guideline
 
 1. Do **NOT** add shortcut for contextual menu. [Link](https://developer.apple.com/macos/human-interface-guidelines/menus/contextual-menus/)
-2. Do **NOT** conflict with system shortcuts or other popular shortcuts, like `⌘C` (copy), `⇧⌘Q` (Log out account)，etc.
+2. Do **NOT** conflict with system shortcuts or other popular shortcuts, like `⌘C` (copy), `⇧⌘Q` (Log out account), etc.
 3. Only add shortcut for frequently used action, to relieve user's learning and remembering burden. For example, about, is a rarely-used  action, it does not need a shortcut.
 
 ## 6. Other Weird Facts
@@ -98,7 +98,7 @@ Besides, in step 2, if you switch shortcuts of these two menu items, the default
 ## 7. Reference
 
 1. [https://stackoverflow.com/a/6230866/353927](https://stackoverflow.com/a/6230866/353927)
-2. [Human Interface Guidelines](https://developer.apple.com/macos/human-interface-guidelines/menus/menu-anatomy/)
+2. [*Human Interface Guidelines*](https://developer.apple.com/macos/human-interface-guidelines/menus/menu-anatomy/)
 
 ## 8. Demo Project
 
