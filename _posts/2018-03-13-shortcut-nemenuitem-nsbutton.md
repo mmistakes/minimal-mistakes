@@ -76,7 +76,7 @@ Now, run the app and it will works as above `` key example.
 
 ![](https://user-images.githubusercontent.com/55504/37417755-03bbaffc-27ec-11e8-8cad-b9445ae05777.gif)
 
-Besides, if you switch shortcuts of these two menu items, the default visible will be the second one instead. They're still alternate!
+Besides, in step 2, if you switch shortcuts of these two menu items, the default visible will be the second one instead, while they're still **alternate**.
 
 ![](https://user-images.githubusercontent.com/55504/37417756-040844fc-27ec-11e8-9539-ff3e068b7c15.gif)
 
