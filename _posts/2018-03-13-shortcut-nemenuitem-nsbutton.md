@@ -10,9 +10,9 @@ Shortcut key, or hot key, is called `Key Equivalent` in Mac development. To use 
 
 Among NSControl's subclass, NSMenuItem and NSButton supports key equivalent, which can be implemented in programmatic way or by changing xib object property. 
 
-## 1. Combination of Key Equivalent 
+## 1. Composition of Key Equivalent 
 
-Normally two parts, some(or no) modifier keys and one normal key.
+Normally, key equivalent is composite of two parts: some(or no) modifier keys and one normal key.
 
 There are 4 possible modifier keys:
 
