@@ -62,7 +62,7 @@ Option key has an alias, Alternate key, it is called so when holding it, the men
 
 In Apple's *Human Interface Guidelines*, this menu item is called [Dynamic Menu Items](https://developer.apple.com/macos/human-interface-guidelines/menus/menu-anatomy/), and invisible by default.
 
-For instance, click MacOS desktop's left top `` key, then hold option key, you will see, "About This Mac" changes to "System Information..." and its triggered action changes too.
+For instance, click MacOS desktop's left top `` menu item, then hold option key, you will see, "About This Mac" changes to "System Information..." and its triggered action changes too.
 
 ![](https://user-images.githubusercontent.com/55504/37418708-cde64e8a-27ed-11e8-884a-022c6a51fe6d.gif)
 
@@ -72,7 +72,7 @@ In xib, to implement this:
 2. Set valid shortcut for them, and the second's shortcut MUST be the first's shortcut, plus `⌥` key.
 3. Check Alternate property for the second NSMenuItem.
 
-Now, run the app and it will works as above `` key example.
+Now, run the app and it will works as above `` menu item example.
 
 ![](https://user-images.githubusercontent.com/55504/37417755-03bbaffc-27ec-11e8-8cad-b9445ae05777.gif)
 
@@ -83,7 +83,7 @@ Besides, in step 2, if you switch shortcuts of these two menu items, the default
 ## 5. Some Design Guideline
 
 1. Do **NOT** add shortcut for contextual menu. [Link](https://developer.apple.com/macos/human-interface-guidelines/menus/contextual-menus/)
-2. Do **NOT** conflict with system shortcuts or other popular shortcuts, like `⌘C` (copy), `⇧⌘Q` (Log out account), etc.
+2. Do **NOT** conflict with system shortcuts or other popular shortcuts, like `⇧⌘Q` (log out account), `⌘C` (copy), etc.
 3. Only add shortcut for frequently used action, to relieve user's learning and remembering burden. For example, about, is a rarely-used  action, it does not need a shortcut.
 
 ## 6. Other Weird Facts
