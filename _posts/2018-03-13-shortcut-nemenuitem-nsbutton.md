@@ -6,7 +6,7 @@ toc_label: "Table Of Content"
 toc_icon: "columns"  # corresponding Font Awesome icon name (without fa prefix)
 ---
 
-Shortcut key, or hot key, is called Key Equivalent in Mac development. To use it, just press corresponding key combination, it will trigger predefined application function.
+Shortcut key, or hot key, is called `Key Equivalent` in Mac development. To use it, just press corresponding key combination, it will trigger predefined application function.
 
 Among NSControl's subclass, NSMenuItem and NSButton supports key equivalent, which can be implemented in programmatic way or by changing xib object property. 
 
@@ -60,7 +60,7 @@ Following 1 line of code, sets menuItem's shortcut as `⇧⌘E`.
 
 Option key has an alias, Alternate key, it is called so when holding it, the menu item will appear in a different way. 
 
-In Apple's <Human Interface Guidelines>, this menu item is [Dynamic Menu Items](https://developer.apple.com/macos/human-interface-guidelines/menus/menu-anatomy/), and invisible by default.
+In Apple's <Human Interface Guidelines>, this menu item is called [Dynamic Menu Items](https://developer.apple.com/macos/human-interface-guidelines/menus/menu-anatomy/), and invisible by default.
 
 For instance, click MacOS desktop's left top `` key, then hold option key, you will see, "About This Mac" changes to "System Information..." and its triggered action changes too.
 
