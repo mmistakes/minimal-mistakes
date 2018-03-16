@@ -51,22 +51,22 @@ If shortcut includes `⇧` key, the input field will show an Alternates button, 
 
 Following code sets menuItem's shortcut as `E`.
 
-```objc
+{% highlight objective_c linenos %}
 [menuItem setKeyEquivalentModifierMask:!NSEventModifierFlagCommand];
 [menuItem setKeyEquivalent:@"e"];
-```
+{% endhighlight %}
 
 Following code sets menuItem's shortcut as `⌘E`.
 
-```objc
+{% highlight objective_c linenos %}
 [menuItem setKeyEquivalent:@"e"];
-```
+{% endhighlight %}
 
 Following code sets menuItem's shortcut as `⇧⌘E`.
 
-```objc
+{% highlight objective_c linenos %}
 [menuItem setKeyEquivalent:@"E"];
-```
+{% endhighlight %}
 
 ### 3.2 Symbol Key
 
@@ -94,17 +94,17 @@ Symbol | Name | Unicode
 
 Following code sets menuItem's shortcut as `⌘↩`.
 
-```objc
+{% highlight objective_c linenos %}
 NSString *s = [NSString stringWithFormat:@"%c", NSCarriageReturnCharacter];
 [menuItem setKeyEquivalent:s];
-```
+{% endhighlight %}
 
 Following code sets menuItem's shortcut as `⌘↑`.
 
-```objc
+{% highlight objective_c linenos %}
 NSString *s = [NSString stringWithFormat:@"%C", 0x001e];
 [menuItem setKeyEquivalent:s];
-```
+{% endhighlight %}
 
 **Attention:** the format specifiers are different, the latter **MUST** use `%C`.
 {: .notice--danger}
