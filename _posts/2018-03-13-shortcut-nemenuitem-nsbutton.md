@@ -109,7 +109,7 @@ NSString *s = [NSString stringWithFormat:@"%C", 0x001e];
 **Attention:** the format specifiers are different, the latter **MUST** use `%C`.
 {: .notice--danger}
 
-One more thing, the Key Equivalent displayed by NSMenuItem is different than the symbol printed on some keyboards and in xib. The end
+One more thing, the shortcut displayed by NSMenuItem is different than the symbol printed on some keyboards and in xib.
 
 In xib | Running application
 --- | --- 
@@ -118,14 +118,14 @@ In xib | Running application
 Some keyboard models:
 
 <a href="https://user-images.githubusercontent.com/55504/37498987-5c8c51ca-28fc-11e8-880e-5389466e76ee.jpg" target="_blank">
-<img width="150" alt="Apple - Magic Keyboard with Numeric Keypad" src="https://user-images.githubusercontent.com/55504/37498987-5c8c51ca-28fc-11e8-880e-5389466e76ee.jpg" />
+<img width="150" alt="" src="https://user-images.githubusercontent.com/55504/37498987-5c8c51ca-28fc-11e8-880e-5389466e76ee.jpg" />
 </a>
 <figure>
   <figcaption>Apple - Magic Keyboard with Numeric Keypad</figcaption>
 </figure>
  
 <a href="https://user-images.githubusercontent.com/55504/37498988-5cd81308-28fc-11e8-9423-a70fe8c2aa5f.jpg" target="_blank">
-<img width="150" alt="Belkin - YourType Bluetooth Wireless Keypad" src="https://user-images.githubusercontent.com/55504/37498988-5cd81308-28fc-11e8-9423-a70fe8c2aa5f.jpg" />
+<img width="150" alt="" src="https://user-images.githubusercontent.com/55504/37498988-5cd81308-28fc-11e8-9423-a70fe8c2aa5f.jpg" />
 </a>
 <figure>
   <figcaption>Belkin - YourType Bluetooth Wireless Keypad</figcaption>
