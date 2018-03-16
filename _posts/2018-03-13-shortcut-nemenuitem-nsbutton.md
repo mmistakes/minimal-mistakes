@@ -51,20 +51,20 @@ If shortcut includes `⇧` key, the input field will show an Alternates button, 
 
 Following 2 lines of code, sets menuItem's shortcut as `E`.
 
-```
+```objc
 [menuItem setKeyEquivalentModifierMask:!NSEventModifierFlagCommand];
 [menuItem setKeyEquivalent:@"e"];
 ```
 
 Following 1 line of code, sets menuItem's shortcut as `⌘E`.
 
-```
+```objc
 [menuItem setKeyEquivalent:@"e"];
 ```
 
 Following 1 line of code, sets menuItem's shortcut as `⇧⌘E`.
 
-```
+```objc
 [menuItem setKeyEquivalent:@"E"];
 ```
 
@@ -93,7 +93,7 @@ Symbol | Name | Unicode
 
 Then, following is an example of setting menuItem's shortcut as `⌘↩`.
 
-```
+```objc
 NSString *s = [NSString stringWithFormat:@"%C", NSCarriageReturnCharacter];
 [menuItem setKeyEquivalent:s];
 ```
