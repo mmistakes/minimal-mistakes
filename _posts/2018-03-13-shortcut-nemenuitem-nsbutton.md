@@ -51,20 +51,20 @@ If shortcut includes `⇧` key, the input field will show an Alternates button, 
 
 Following 2 lines of code, sets menuItem's shortcut as `E`.
 
-```objc
+```
 [menuItem setKeyEquivalentModifierMask:!NSEventModifierFlagCommand];
 [menuItem setKeyEquivalent:@"e"];
 ```
 
 Following 1 line of code, sets menuItem's shortcut as `⌘E`.
 
-```objc
+```
 [menuItem setKeyEquivalent:@"e"];
 ```
 
 Following 1 line of code, sets menuItem's shortcut as `⇧⌘E`.
 
-```objc
+```
 [menuItem setKeyEquivalent:@"E"];
 ```
 
@@ -89,11 +89,12 @@ Symbol | Name | Unicode
 ⇞ | Page Up | 0x21de 
 ⇟ | Page Down | 0x21df
 
-`NSBackspaceCharacter`, `NSTabCharacter`, `NSCarriageReturnCharacter` are defined in *NSText.h*, others are not. All of them (except 4 arrow keys) can be found [here](https://unicode-table.com/en). Arrow keys do not use 0x2190, 0x2191, 0x2192, 0x2193, I don't know the reason. 
+**Note:** `NSBackspaceCharacter`, `NSTabCharacter`, `NSCarriageReturnCharacter` are defined in *NSText.h*, others are not. All of them (except 4 arrow keys) can be found [here](https://unicode-table.com/en). Arrow keys do not use 0x2190, 0x2191, 0x2192, 0x2193, I don't know the reason. 
+{: .notice--info}
 
 Then, following is an example of setting menuItem's shortcut as `⌘↩`.
 
-```objc
+```
 NSString *s = [NSString stringWithFormat:@"%C", NSCarriageReturnCharacter];
 [menuItem setKeyEquivalent:s];
 ```
@@ -109,14 +110,16 @@ Some keyboard models:
 <a href="https://user-images.githubusercontent.com/55504/37498987-5c8c51ca-28fc-11e8-880e-5389466e76ee.jpg" target="_blank">
 <img width="150" alt="Apple - Magic Keyboard with Numeric Keypad" src="https://user-images.githubusercontent.com/55504/37498987-5c8c51ca-28fc-11e8-880e-5389466e76ee.jpg" />
 </a>
-
-*Apple - Magic Keyboard with Numeric Keypad*
+<figure>
+  <figcaption>Apple - Magic Keyboard with Numeric Keypad</figcaption>
+</figure>
  
 <a href="https://user-images.githubusercontent.com/55504/37498988-5cd81308-28fc-11e8-9423-a70fe8c2aa5f.jpg" target="_blank">
 <img width="150" alt="Belkin - YourType Bluetooth Wireless Keypad" src="https://user-images.githubusercontent.com/55504/37498988-5cd81308-28fc-11e8-9423-a70fe8c2aa5f.jpg" />
 </a>
-
-*Belkin - YourType Bluetooth Wireless Keypad*
+<figure>
+  <figcaption>Belkin - YourType Bluetooth Wireless Keypad</figcaption>
+</figure>
 
 ## 4. Dynamic Menu Items
 
