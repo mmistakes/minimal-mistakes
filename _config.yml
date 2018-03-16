@@ -260,4 +260,12 @@ defaults:
       share: false
       related: false
 
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
 remote_theme: "mmistakes/minimal-mistakes"
