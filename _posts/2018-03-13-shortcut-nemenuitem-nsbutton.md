@@ -49,20 +49,20 @@ If shortcut includes `⇧` key, the input field will show an Alternates button, 
 
 ### 3.1 Normal Key
 
-Following 2 lines of code, sets menuItem's shortcut as `E`.
+Following code sets menuItem's shortcut as `E`.
 
 ```
 [menuItem setKeyEquivalentModifierMask:!NSEventModifierFlagCommand];
 [menuItem setKeyEquivalent:@"e"];
 ```
 
-Following 1 line of code, sets menuItem's shortcut as `⌘E`.
+Following code sets menuItem's shortcut as `⌘E`.
 
 ```
 [menuItem setKeyEquivalent:@"e"];
 ```
 
-Following 1 line of code, sets menuItem's shortcut as `⇧⌘E`.
+Following code sets menuItem's shortcut as `⇧⌘E`.
 
 ```
 [menuItem setKeyEquivalent:@"E"];
@@ -92,18 +92,28 @@ Symbol | Name | Unicode
 **Note:** `NSBackspaceCharacter`, `NSTabCharacter`, `NSCarriageReturnCharacter` are defined in *NSText.h*, others are not. All of them (except 4 arrow keys) can be found [here](https://unicode-table.com/en). Arrow keys do not use 0x2190, 0x2191, 0x2192, 0x2193, I don't know the reason. 
 {: .notice--info}
 
-Then, following is an example of setting menuItem's shortcut as `⌘↩`.
+Following code sets menuItem's shortcut as `⌘↩`.
 
 ```
-NSString *s = [NSString stringWithFormat:@"%C", NSCarriageReturnCharacter];
+NSString *s = [NSString stringWithFormat:@"%c", NSCarriageReturnCharacter];
 [menuItem setKeyEquivalent:s];
 ```
 
-One more thing, the Key Equivalent displayed by NSMenuItem is different than the symbol printed on some keyboards and in xib.
+Following code sets menuItem's shortcut as `⌘↑`.
+
+```
+NSString *s = [NSString stringWithFormat:@"%C", 0x001e];
+[menuItem setKeyEquivalent:s];
+```
+
+**Attention:** the format specifiers are different, the latter **MUST** use `%C`.
+{: .notice--danger}
+
+One more thing, the Key Equivalent displayed by NSMenuItem is different than the symbol printed on some keyboards and in xib. The end
 
 In xib | Running application
 --- | --- 
-<img width="150" alt="" src="https://user-images.githubusercontent.com/55504/37469962-6f291d78-28a1-11e8-871b-6cf5138bbaa4.png"> | <img width="150" alt="" src="https://user-images.githubusercontent.com/55504/37504064-0c47a87a-2917-11e8-8b2a-04fe40496065.png">
+<img width="200" alt="" src="https://user-images.githubusercontent.com/55504/37520582-9bb5dd4c-2958-11e8-9c6e-0e442beca151.png"> | <img width="200" alt="" src="https://user-images.githubusercontent.com/55504/37520583-9bf7487c-2958-11e8-8363-1e3990fe26bc.png">
 
 Some keyboard models:
 
