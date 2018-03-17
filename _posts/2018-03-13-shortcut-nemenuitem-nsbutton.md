@@ -1,6 +1,6 @@
 ---
 title:  "Shortcut of NSMenuItem and NSButton"
-date:   2018-03-13 19:59:07 +0800
+date:   2018-03-13 19:51:07 +0800
 toc: true
 toc_label: "Table Of Content"
 toc_icon: "columns"  # corresponding Font Awesome icon name (without fa prefix)
@@ -109,7 +109,7 @@ NSString *s = [NSString stringWithFormat:@"%C", 0x001e];
 **Attention:** the format specifiers are different, the latter **MUST** use `%C`.
 {: .notice--danger}
 
-One more thing, the shortcut displayed by NSMenuItem is different than the symbol printed on some keyboards and in xib.
+One more thing, the shortcuts displayed by menu items are different than the symbols on xib canvas and those printed on some keyboards.
 
 In xib | Running application
 --- | --- 
@@ -143,9 +143,9 @@ For instance, click MacOS desktop's left top `` menu item, then hold option k
 
 In xib, to implement this:
 
-1. Add 2 NSMenuItem, they MUST be adjacent, no more menu item between them.
-2. Set valid shortcut for them, and the second's shortcut MUST be the first's shortcut, plus `⌥` key.
-3. Check Alternate property for the second NSMenuItem.
+1. Add 2 NSMenuItem, they **MUST** be adjacent, no other menu item between them.
+2. Set valid shortcut for them, and the second's shortcut **MUST** be the first's shortcut, plus `⌥` key.
+3. Check **Alternate** property for the second NSMenuItem.
 
 Now, run the app and it will works as above `` menu item example.
 
@@ -167,7 +167,7 @@ Besides, in step 2, if you switch shortcuts of these two menu items, the default
 2. `⌃⌥⇧1` and `⇧1` can not exist together, or the former triggers the latter's action.
 3. `⌃⌥⇧1` and `⌃⇧1` can not exist together, or the former triggers the latter's action.
 4. `⌃⇧A`, its log info shows incorrectly for **⌃A**, both in code and xib. What's more, In code, if `keyEquivalent` is a capitalized alphabet and `keyEquivalentModifierMask` does not include `NSEventModifierFlagShift`, system will add `⇧` automatically in the shortcut UI.
-5. `⌘=` and `⇧⌘=` can both trigger the menu item's action.
+5. In xib, set a menu item or button's Key Equivalent with `⇧`, `⌘`, `=`, and choose alternates as `⌘+`, then `⌘=` and `⇧⌘=` can both trigger its action.
 6. When setting `keyEquivalentModifierMask` for NSButton, it can not include `NSEventModifierFlagControl`, or shortcut will not work.
 
 ## 7. Reference
