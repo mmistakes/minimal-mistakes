@@ -89,7 +89,7 @@ Symbol | Name | Unicode
 ⇞ | Page Up | 0x21de 
 ⇟ | Page Down | 0x21df
 
-**Note:** `NSBackspaceCharacter`, `NSTabCharacter`, `NSCarriageReturnCharacter` are defined in *NSText.h*, others are not. All of them (except 4 arrow keys) can be found [here](https://unicode-table.com/en). Arrow keys do not use 0x2190, 0x2191, 0x2192, 0x2193, I don't know the reason. 
+**Note:** `NSBackspaceCharacter`, `NSTabCharacter`, `NSCarriageReturnCharacter` are defined in *NSText.h*, others are not. All of them (except 4 arrow keys) can be found [here](https://unicode-table.com/en){:target="_blank"}. Arrow keys do not use 0x2190, 0x2191, 0x2192, 0x2193, I don't know the reason. 
 {: .notice--info}
 
 Following code sets menuItem's shortcut as `⌘↩`.
@@ -135,7 +135,7 @@ Some keyboard models:
 
 Option key has an alias, Alternate key, it is called so when holding it, the menu item will appear in a different way. 
 
-In Apple's *Human Interface Guidelines*, this menu item is called [Dynamic Menu Items](https://developer.apple.com/macos/human-interface-guidelines/menus/menu-anatomy/), and invisible by default.
+In Apple's *Human Interface Guidelines*, this menu item is called [Dynamic Menu Items](https://developer.apple.com/macos/human-interface-guidelines/menus/menu-anatomy/){:target="_blank"}, and invisible by default.
 
 For instance, click MacOS desktop's left top `` menu item, then hold option key, you will see, "About This Mac" changes to "System Information..." and its triggered action changes too.
 
@@ -157,7 +157,7 @@ Besides, in step 2, if you switch shortcuts of these two menu items, the default
 
 ## 5. Some Design Guideline
 
-1. Do **NOT** add shortcut for contextual menu. [Link](https://developer.apple.com/macos/human-interface-guidelines/menus/contextual-menus/)
+1. Do **NOT** add shortcut for contextual menu. [Link](https://developer.apple.com/macos/human-interface-guidelines/menus/contextual-menus/){:target="_blank"}
 2. Do **NOT** conflict with system shortcuts or other popular shortcuts, like `⇧⌘Q` (log out account), `⌘C` (copy), etc.
 3. Only add shortcut for frequently used action, to relieve user's learning and remembering burden. For example, about, is a rarely-used  action, it does not need a shortcut.
 
@@ -172,11 +172,11 @@ Besides, in step 2, if you switch shortcuts of these two menu items, the default
 
 ## 7. Reference
 
-1. [*Human Interface Guidelines*](https://developer.apple.com/macos/human-interface-guidelines/menus/menu-anatomy/)
-2. [*Application Menu and Pop-up List Programming Topics*](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/MenuList/Articles/SettingMenuKeyEquiv.html#//apple_ref/doc/uid/20000264-BBCDCAIG)
-3. [https://stackoverflow.com/a/6230866/353927](https://stackoverflow.com/a/6230866/353927)
-4. [Unicode character table](https://unicode-table.com/en)
+1. [*Human Interface Guidelines*](https://developer.apple.com/macos/human-interface-guidelines/menus/menu-anatomy/){:target="_blank"}
+2. [*Application Menu and Pop-up List Programming Topics*](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/MenuList/Articles/SettingMenuKeyEquiv.html#//apple_ref/doc/uid/20000264-BBCDCAIG){:target="_blank"}
+3. [https://stackoverflow.com/a/6230866/353927](https://stackoverflow.com/a/6230866/353927){:target="_blank"}
+4. [Unicode character table](https://unicode-table.com/en){:target="_blank"}
 
 ## 8. Demo Project
 
-[Here](https://github.com/cool8jay/KeyEquivelant) is demo project.
+[Here](https://github.com/cool8jay/KeyEquivelant){:target="_blank"} is demo project.
