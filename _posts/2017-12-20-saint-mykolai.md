@@ -15,7 +15,6 @@ gallery:
     image_path: /assets/images/posts/2017/12/saint-mykolai/mykolai-3.jpg
   - url: /assets/images/posts/2017/12/saint-mykolai/mykolai-4.jpg
     image_path: /assets/images/posts/2017/12/saint-mykolai/mykolai-4.jpg
-
 ---
 
 Фото

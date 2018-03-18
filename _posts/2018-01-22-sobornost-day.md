@@ -33,6 +33,8 @@ gallery:
     image_path: /assets/images/posts/2018/01/sobornost-day/sobornost-12.jpg
   - url: /assets/images/posts/2018/01/sobornost-day/sobornost-13.jpg
     image_path: /assets/images/posts/2018/01/sobornost-day/sobornost-13.jpg
+categories:
+  - Акції
 ---
 
 22 січня учні нашої школи разом з вчителями провели флешмоб до Дня Соборності України. Взявшись за руки і утворивши ланцюг єдності ми хочемо, знаємо і віримо, що Україна буде завжди єдиною міцною державою.

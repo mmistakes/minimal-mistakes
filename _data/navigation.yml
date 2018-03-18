@@ -40,6 +40,8 @@ sidebar-menu:
         url: /preventive_work
       - title: Штаб національного патріотичного виховання
         url: /patriotic
+      - title: Волонтерська допомога
+        url: /volunteer
 
   - title: Управління
     children:

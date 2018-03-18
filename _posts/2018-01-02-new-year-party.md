@@ -75,6 +75,8 @@ gallery:
     image_path: /assets/images/posts/2018/01/new-year/new-year-34.jpg
   - url: /assets/images/posts/2018/01/new-year/new-year-35.jpg
     image_path: /assets/images/posts/2018/01/new-year/new-year-35.jpg
+categories:
+  - Заходи
 ---
 
 {% include gallery caption="Фото" %}

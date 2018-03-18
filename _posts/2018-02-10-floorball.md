@@ -15,6 +15,8 @@ gallery:
     image_path: /assets/images/posts/2018/02/floorball/floorball-3.jpg
   - url: /assets/images/posts/2018/02/floorball/floorball-4.jpg
     image_path: /assets/images/posts/2018/02/floorball/floorball-4.jpg
+categories:
+  - Заходи
 ---
 
 

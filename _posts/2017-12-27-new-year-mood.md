@@ -33,7 +33,6 @@ gallery:
     image_path: /assets/images/posts/2017/12/new-year/new-year-12.jpg
   - url: /assets/images/posts/2017/12/new-year/new-year-13.jpg
     image_path: /assets/images/posts/2017/12/new-year/new-year-13.jpg
-
 ---
 
 Фото

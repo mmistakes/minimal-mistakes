@@ -25,7 +25,6 @@ gallery:
     image_path: /assets/images/posts/2017/12/buildings/buildings-8.jpg
   - url: /assets/images/posts/2017/12/buildings/buildings-9.jpg
     image_path: /assets/images/posts/2017/12/buildings/buildings-9.jpg
-
 ---
 
 Наші майстри мріють
