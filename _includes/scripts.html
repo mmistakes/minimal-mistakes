@@ -3,12 +3,12 @@
     {% if script contains "://" %}
       {% capture script_path %}{{ script }}{% endcapture %}
     {% else %}
-      {% capture script_path %}{{ script | absolute_url }}{% endcapture %}
+      {% capture script_path %}{{ script | relative_url }}{% endcapture %}
     {% endif %}
     <script src="{{ script_path }}"></script>
   {% endfor %}
 {% else %}
-  <script src="{{ '/assets/js/main.min.js' | absolute_url }}"></script>
+  <script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
   <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 {% endif %}
 

@@ -1,6 +1,12 @@
 ## Unreleased
 
+### Enhancements
+
 * Add default `theme` and `remote_theme` values to `_config.yml`.
+
+### Bug Fixes
+
+* Replace `absolute_url` filter with `relative_url` where it makes sense (asset/nagivation related paths). [#1588](https://github.com/mmistakes/minimal-mistakes/issues/1588)
 
 ## [4.10.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.10.1)
 

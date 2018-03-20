@@ -5,6 +5,6 @@
 {% else %}
   {% assign lang = "en" %}
 {% endcase %}
-<script src="{{ '/assets/js/lunr/lunr.min.js' | absolute_url }}"></script>
-<script src="{{ '/assets/js/lunr/lunr-store.js' | absolute_url }}"></script>
-<script src="{{ '/assets/js/lunr/lunr-' | append: lang | append: '.js' | absolute_url }}"></script>
+<script src="{{ '/assets/js/lunr/lunr.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/lunr/lunr-store.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/lunr/lunr-' | append: lang | append: '.js' | relative_url }}"></script>
