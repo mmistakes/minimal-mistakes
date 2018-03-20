@@ -38,7 +38,7 @@ layout: archive
         <h2 class="archive__subtitle">{{ tag[0] }}</h2>
         <div class="entries-{{ page.entries_layout | default: 'list' }}">
           {% for post in tag.last %}
-            {% include archive-single.html %}
+            {% include archive-single.html type=page.entries_layout %}
           {% endfor %}
         </div>
         <a href="#page-title" class="back-to-top">{{ site.data.text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
