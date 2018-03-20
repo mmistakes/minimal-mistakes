@@ -3,7 +3,7 @@
 ### Enhancements
 
 * Add default `theme` and `remote_theme` values to `_config.yml`.
-* Add new layouts (`posts`, `categories`, `tags`, `collection`, `category`, and `tag`) for easier archive page creation.(https://github.com/mmistakes/minimal-mistakes/issues/1582)
+* Add new layouts (`posts`, `categories`, `tags`, `collection`, `category`, and `tag`) for easier archive page creation.
 
 ### Bug Fixes
 
