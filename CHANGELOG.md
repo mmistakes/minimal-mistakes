@@ -7,6 +7,7 @@
 ### Bug Fixes
 
 * Replace `absolute_url` filter with `relative_url` where it makes sense (asset/nagivation related paths). [#1588](https://github.com/mmistakes/minimal-mistakes/issues/1588)
+* Fix search excerpts that run together because of implied spaces.
 
 ## [4.10.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.10.1)
 

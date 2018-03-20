@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-03-20T11:35:28-04:00
+last_modified_at: 2018-03-20T11:48:04-04:00
 toc: true
 ---
 
@@ -17,6 +17,7 @@ toc: true
 ### Bug Fixes
 
 * Replace `absolute_url` filter with `relative_url` where it makes sense (asset/nagivation related paths). [#1588](https://github.com/mmistakes/minimal-mistakes/issues/1588)
+* Fix search excerpts that run together because of implied spaces.
 
 ## [4.10.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.10.1)
 
