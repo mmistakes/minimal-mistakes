@@ -295,7 +295,7 @@
   }
 }
 
-.taxonomy-section {
+.taxonomy__section {
   margin-bottom: 2em;
   padding-bottom: 1em;
 
@@ -312,25 +312,25 @@
     border: 0;
   }
 
-  + .taxonomy-section {
+  + .taxonomy__section {
     margin-top: 2em;
   }
 }
 
-.taxonomy-title {
+.taxonomy__title {
   margin-bottom: 0.5em;
   color: lighten($text-color, 60%);
 }
 
-.taxonomy-count {
+.taxonomy__count {
   color: lighten($text-color, 50%);
 }
 
-.taxonomy-index {
+.taxonomy__index {
   display: grid;
   grid-column-gap: 2em;
   grid-template-columns: repeat(2, 1fr);
-  margin: 0;
+  margin: 1.414em 0;
   padding: 0;
   font-size: 0.75em;
   list-style: none;
