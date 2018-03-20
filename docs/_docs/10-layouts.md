@@ -7,7 +7,7 @@ single_layout_gallery:
     alt: "single layout with header example"
   - image_path: /assets/images/mm-layout-single-meta.png
     alt: "single layout with comments and related posts"
-last_modified_at: 2018-01-03T11:22:31-05:00
+last_modified_at: 2018-03-20T15:06:31-04:00
 toc: true
 toc_label: "Included Layouts"
 toc_icon: "columns"
@@ -188,7 +188,7 @@ header:
 **Note:** More information on using this `_include` can be found under [**Helpers**]({{ "/docs/helpers/" | absolute_url }}).
 {: .notice--info}
 
-### Taxonomy Archive
+## Taxonomy Archives
 
 If you have the luxury of using Jekyll plugins, the creation of category and tag archives is greatly simplified. Simply enable support for the [`jekyll-archives`](https://github.com/jekyll/jekyll-archives) plugin with a few `_config.yml` settings as noted in the [**Configuration**]({{ "/docs/configuration/#archive-settings" | absolute_url }}) section and you're good to go.
 
@@ -196,20 +196,87 @@ If you have the luxury of using Jekyll plugins, the creation of category and tag
 
 If you're not using the `jekyll-archives` plugin then you need to create archive pages yourself. Sample taxonomy archives can be found by grabbing the Markdown sources below and adding to your site.
 
-| Name                 | HTML Source |
-| -------------------- | --- |
-| [Categories Archive](https://mmistakes.github.io/minimal-mistakes/categories/) | [category-archive.md](https://github.com/mmistakes/minimal-mistakes/blob/master/docs/_pages/category-archive.md) |
-| [Tags Archive](https://mmistakes.github.io/minimal-mistakes/tags/) | [tag-archive.md](https://github.com/mmistakes/minimal-mistakes/blob/master/docs/_pages/tag-archive.md) |
+| Name                 | Layout | Example |
+| -------------------- | ------ | ------ |
+| [Posts Archive](https://mmistakes.github.io/minimal-mistakes/year-archive/) | `layout: posts` | [year-archive.md](https://github.com/mmistakes/minimal-mistakes/blob/master/docs/_pages/year-archive.md) |
+| [Categories Archive](https://mmistakes.github.io/minimal-mistakes/categories/) | `layout: categories` | [category-archive.md](https://github.com/mmistakes/minimal-mistakes/blob/master/docs/_pages/category-archive.md) |
+| [Category Archive](https://mmistakes.github.io/minimal-mistakes/categories/edge-case/) | `layout: category` | [edge-case.md](https://github.com/mmistakes/minimal-mistakes/blob/master/docs/_pages/edge-case.md) |
+| [Tags Archive](https://mmistakes.github.io/minimal-mistakes/tags/) | `layout: tags` | [tag-archive.md](https://github.com/mmistakes/minimal-mistakes/blob/master/docs/_pages/tag-archive.md) |
+| [Tag Archive](https://mmistakes.github.io/minimal-mistakes/tags/markup/) | `layout: tag` | [markup.md](https://github.com/mmistakes/minimal-mistakes/blob/master/docs/_pages/markup.md) |
+| [Collection Archive](https://mmistakes.github.io/minimal-mistakes/recipes-archive/) | `layout: collection` | [recipes-archive.md](https://github.com/mmistakes/minimal-mistakes/blob/master/docs/_pages/recipes-archive.md) |
 
-The **Tags Archive** page that responds to urls such as `/tags/#tips` looks something like this:
+**Note:** By default, documents are shown in a list view. To change to a grid view add `entries_layout: grid` to the page's front matter.
+{: .notice--info}
 
-```html
----
-title: "Posts by Tag"
-layout: tags
-permalink: /tags/
-author_profile: true
----
+### `layout: posts`
+
+This layout displays all posts grouped by the year they were published. It accommodates the same front matter as `layout: archive`.
+
+### `layout: categories`
+
+This layout displays all posts grouped category. It accommodates the same front matter as `layout: archive`.
+
+### `layout: tags`
+
+This layout displays all posts grouped by tag. It accommodates the same front matter as `layout: archive`.
+
+### `layout: collection`
+
+This layout displays all documents grouped by a specific collection. It accommodates the same front matter as `layout: archive` with the addition of the following:
+
+```yaml
+collection: # collection name
+entries_layout: # list (default), grid
+show_excerpts: # true (default), false
+sort_by: # date (default) title
+sort_order: # forward (default), reverse
+```
+
+To create a page showing all documents in the `recipes` collection you'd create `recipes.md` in the root of your project and add this front matter:
+
+```yaml
+title: Recipes
+layout: collection
+permalink: /recipes/
+collection: recipes
+```
+
+If you want to sort the collection by title add `sort_by: title`. If you want reverse sorting, add `sort_order: reverse`.
+
+### `layout: category`
+
+This layout displays all posts grouped by a specific category. It accommodates the same front matter as `layout: archive` with the addition of the following:
+
+```yaml
+taxonomy: # category name
+entries_layout: # list (default), grid
+```
+
+To create a page showing all posts assigned to the category `foo` you'd create `foo.md` and add this front matter:
+
+```yaml
+title: Foo
+layout: category
+permalink: /categories/foo/
+taxonomy: foo
+```
+
+### `layout: tag`
+
+This layout displays all posts grouped by a specific tag. It accommodates the same front matter as `layout: archive` with the addition of the following:
+
+```yaml
+taxonomy: # tag name
+entries_layout: # list (default), grid
+```
+
+To create a page showing all posts assigned to the tag `foo bar` you'd create `foo-bar.md` and add this front matter:
+
+```yaml
+title: Foo Bar
+layout: tag
+permalink: /tags/foo-bar/
+taxonomy: foo bar
 ```
 
 ## Home Page Layout
