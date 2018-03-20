@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-03-20T11:48:04-04:00
+last_modified_at: 2018-03-20T15:28:11-04:00
 toc: true
 ---
 
@@ -13,6 +13,7 @@ toc: true
 ### Enhancements
 
 * Add default `theme` and `remote_theme` values to `_config.yml`.
+* Add new layouts (`posts`, `categories`, `tags`, `collection`, `category`, and `tag`) for easier archive page creation.(https://github.com/mmistakes/minimal-mistakes/issues/1582)
 
 ### Bug Fixes
 

@@ -40,6 +40,11 @@ Class names corresponding to each layout are automatically added to the `<body>`
 | single           | `.layout--single`           |
 | splash           | `.layout--splash`           |
 | home             | `.layout--home`             |
+| posts            | `.layout--posts`            |
+| categories       | `.layout--categories`       |
+| category         | `.layout--category`         |
+| tags             | `.layout--tags`             |
+| tag              | `.layout--tag`              |
 
 Using YAML Front Matter you can also assign custom classes to target with CSS or JavaScript. Perfect for "art directed" posts or adding custom styles to specific pages.
 
