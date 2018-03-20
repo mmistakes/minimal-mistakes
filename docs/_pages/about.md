@@ -12,7 +12,7 @@ layouts_gallery:
   - url: /assets/images/mm-layout-archive.png
     image_path: /assets/images/mm-layout-archive.png
     alt: "archive layout example"
-last_modified_at: 2018-01-10T11:22:24-05:00
+last_modified_at: 2018-03-20T16:00:39-04:00
 toc: true
 ---
 
@@ -20,7 +20,7 @@ Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your
 
 {% include gallery id="layouts_gallery" caption="Examples of included layouts `splash`, `single`, and `archive`." %}
 
-[Install the Theme]({{ "/docs/quick-start-guide/" | absolute_url }}){: .btn .btn--success .btn--large}
+[Install the Theme]({{ "/docs/quick-start-guide/" | relative_url }}){: .btn .btn--success .btn--large}
 
 ## Notable Features
 
@@ -49,14 +49,14 @@ Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your
 
 For even more demo pages check the [posts archive][year-archive].
 
-[header-image-post]: {{ "" | absolute_url }}{% post_url 2012-03-15-layout-header-image-text-readability %}
-[gallery-post]: {{ "" | absolute_url }}{% post_url 2010-09-09-post-gallery %}
-[html-tags-post]: {{ "" | absolute_url }}{% post_url 2013-01-11-markup-html-tags-and-formatting %}
-[syntax-post]: {{ "" | absolute_url }}{% post_url 2013-08-16-markup-syntax-highlighting %}
-[sample-collection]: {{ "/recipes/chocolate-chip-cookies/" | absolute_url }}
-[categories-archive]: {{ "/categories/" | absolute_url }}
-[tags-archive]: {{ "/tags/" | absolute_url }}
-[year-archive]: {{ "/year-archive/" | absolute_url }}
+[header-image-post]: {{ "" | relative_url }}{% post_url 2012-03-15-layout-header-image-text-readability %}
+[gallery-post]: {{ "" | relative_url }}{% post_url 2010-09-09-post-gallery %}
+[html-tags-post]: {{ "" | relative_url }}{% post_url 2013-01-11-markup-html-tags-and-formatting %}
+[syntax-post]: {{ "" | relative_url }}{% post_url 2013-08-16-markup-syntax-highlighting %}
+[sample-collection]: {{ "/recipes/chocolate-chip-cookies/" | relative_url }}
+[categories-archive]: {{ "/categories/" | relative_url }}
+[tags-archive]: {{ "/tags/" | relative_url }}
+[year-archive]: {{ "/year-archive/" | relative_url }}
 
 ---
 

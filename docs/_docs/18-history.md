@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-03-20T15:28:11-04:00
+last_modified_at: 2018-03-20T16:00:27-04:00
 toc: true
 ---
 
@@ -17,7 +17,7 @@ toc: true
 
 ### Bug Fixes
 
-* Replace `absolute_url` filter with `relative_url` where it makes sense (asset/nagivation related paths). [#1588](https://github.com/mmistakes/minimal-mistakes/issues/1588)
+* Replace `relative_url` filter with `relative_url` where it makes sense (asset/nagivation related paths). [#1588](https://github.com/mmistakes/minimal-mistakes/issues/1588)
 * Fix search excerpts that run together because of implied spaces.
 
 ## [4.10.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.10.1)
@@ -470,7 +470,7 @@ toc: true
 ### Enhancements
 
 * "Gemify" theme ~> `gem "minimal-mistakes-jekyll"`
-* Replace `base_path` include with `absolute_url` filter where possible.
+* Replace `base_path` include with `relative_url` filter where possible.
 * Allow images to be placed in other folders. Remove `/images/` only restriction and encourage placement in `/assets/images/` instead. **Full paths are now required. If upgrading from MM 3.4 add `/images/` before filenames in Front Matter and `_config.yml` variables.**
 * Add [home `layout`](https://github.com/mmistakes/minimal-mistakes/blob/master/_layouts/home.html)
 * Added missing Turkish translations for UI text. [#621](https://github.com/mmistakes/minimal-mistakes/pull/621)

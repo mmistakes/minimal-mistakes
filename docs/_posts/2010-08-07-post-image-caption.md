@@ -8,7 +8,7 @@ tags:
 ---
 
 {% capture fig_img %}
-![Foo]({{ "/assets/images/unsplash-gallery-image-3.jpg" | absolute_url }})
+![Foo]({{ "/assets/images/unsplash-gallery-image-3.jpg" | relative_url }})
 {% endcapture %}
 
 <figure>
