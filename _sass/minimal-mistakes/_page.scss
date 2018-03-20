@@ -308,6 +308,7 @@
   }
 
   .archive__subtitle {
+    clear: both;
     border: 0;
   }
 
@@ -354,6 +355,7 @@
 
 .back-to-top {
   display: block;
+  clear: both;
   color: lighten($text-color, 50%);
   font-size: 0.6em;
   text-transform: uppercase;
