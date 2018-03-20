@@ -53,18 +53,6 @@ Instead of repeating `{% raw %}{{ site.url }}{{ site.baseurl }}{% endraw %}` ove
 
   A liquid include file for Jekyll that allows an object to be grouped by an array.
 
-The Liquid based taxonomy archives found amongst the demo pages rely on this helper.
-
-| Description                   |                          |                             |
-| -----------                   | ------------------------ | --------------------------- |
-| All posts grouped by category | [Source][category-array] | [Demo][category-array-demo] |
-| All posts grouped by tag     | [Source][tag-array]      | [Demo][tag-array-demo]      |
-
-[category-array]: https://github.com/{{ site.repository }}/blob/master/docs/_pages/category-archive.html
-[category-array-demo]: {{ "/categories/" | absolute_url }}
-[tag-array]: https://github.com/{{ site.repository }}/blob/master/docs/_pages/tag-archive.html
-[tag-array-demo]: {{ "/tags/" | absolute_url }}
-
 ## Figure
 
 Generate a `<figure>` element with a single image and caption.
