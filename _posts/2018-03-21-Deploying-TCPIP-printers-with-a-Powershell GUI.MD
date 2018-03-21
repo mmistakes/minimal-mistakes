@@ -6,6 +6,14 @@ Tags: 'Powershell, TCP/IP, Windows 10'
 published: true
 date: '2018-03-21'
 ---
+---
+Layout: post
+title: Deploying TCP/IP printers with a Powershell GUI
+Author_profile: true
+Tags: 'Powershell, TCP/IP, Windows 10'
+published: true
+date: '2018-03-21'
+---
 # TCP/IP printers in the remote offices
 
 ## 1 CURRENT SITUATION
@@ -74,7 +82,7 @@ This way it's always clear what port belongs to which printer.
 ### 3.2 IP-assignments
 Each remote office has its own IP-range that is made up as follows:
 
-![ipranges]({{site.baseurl}}/assets/images/tcpipprinterstableip.png)
+![ipranges]({{site.baseurl}}/assets/images/tcpipprinters/tableip.png)
 
 At each remote office, the first 15 Ip-adressess of that range will be used for printers.
 We will be working with what's called "Lease reservations", also known as "DHCP\IP reservations".
@@ -152,7 +160,7 @@ With the current OS-image comes the setting that Windows manages your default pr
 <br/>
 <br/>
 
-![access on service]({{site.baseurl}}/assets/images/tcpipprinterswindowsmanagesdefaultprinter.PNG)
+![access on service]({{site.baseurl}}/assets/images/tcpipprinters/windowsmanagesdefaultprinter.PNG)
 
 
 ## 3 ISSUES ALONG THE WAY
@@ -198,8 +206,8 @@ I created a GPO that allows for the stop and start of the printspooler by a defa
 With a tool provided by Microsoft (subinacl.exe) you can see the ACL permissions set on a service.
 <br/>After applying the GPO, the tool shows that our GM108_DomainUsers have access to restarting the Printspool service.
 
-![access on service]({{site.baseurl}}/assets/images/tcpipprinterssubinacl1.PNG)
-![access on service]({{site.baseurl}}/assets/images/tcpipprinterssubinacl2.PNG)
+![access on service]({{site.baseurl}}/assets/images/tcpipprinters/subinacl1.PNG)
+![access on service]({{site.baseurl}}/assets/images/tcpipprinters/subinacl2.PNG)
 
 <span style="color:red"></span>
 
@@ -215,8 +223,8 @@ The new user however, **can't delete the printer installed by its predecessor**.
 To get around this issue, we add our own ACL-settings.
 After adding them, the ACL-list looks as follows:
 
-![access on service]({{site.baseurl}}/assets/images/tcpipprintersacl1.PNG)
-![access on service]({{site.baseurl}}/assets/images/tcpipprintersacl2.PNG)
+![access on service]({{site.baseurl}}/assets/images/tcpipprinters/acl1.PNG)
+![access on service]({{site.baseurl}}/assets/images/tcpipprinters/acl2.PNG)
 
 With these settings, each user on that machine is capable of deleting the printer that has this ACL-list.
 
@@ -260,7 +268,7 @@ It makes sure that
   - Prints non-duplex
   - Prints on the manual tray 
 
-![proces]({{site.baseurl}}/assets/images/tcpipprintersprintpreferences.png)
+![proces]({{site.baseurl}}/assets/images/tcpipprinters/printpreferences.png)
 
 ### 3.4 Desciding on the printdriver
 
@@ -282,7 +290,7 @@ When a federation want to use the GUI, the only piece of code they need to adjus
 
 In the **parameters.csv** you'll find the following parameters:
 
-```javascript
+```Powershell
 parameter;value
 federation;CM Leuven
 networkpath;\\server\printers\TCPPrinter
@@ -294,7 +302,7 @@ These parameters can easily be adjusted per federation.
 At the same location as the parametersfile, you'll find all resources that are being used by the GUI.
 
 
-![proces]({{site.baseurl}}/assets/images/tcpipprintersresources.png)
+![proces]({{site.baseurl}}/assets/images/tcpipprinters/resources.png)
 
 ### 3.6 Toast notification
 
@@ -302,7 +310,7 @@ I first started out with an old method , the balloon notification. The process w
 
 The biggest issue was the icon that was being displayed way too small.
 
-```javascript
+```Powershell
 #Load the required assemblies
 [void][System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms")
 #Remove any registered events related to notifications
@@ -384,18 +392,18 @@ but it **does not work** on
 	OS Version: 10.0.16299 N/A Build 16299
 
 The reason for that is the following piece of code:
-```javascript
+```Powershell
 $AppID = "$($parameters.appid)" 
 ```
 
 I named the AppID as i wanted it to be *"CM Leuven - Loketprinter v1.0"*.
 This would make it more recognizable for the end user, as it would be clear what application is showing them the notification.
 
-![proces]({{site.baseurl}}/assets/images/tcpipprinterstoast1.png)
+![proces]({{site.baseurl}}/assets/images/tcpipprinters/toast1.png)
 
 In Windows settings\notification this application name would then show up on  Build 15063.
 
-![proces]({{site.baseurl}}/assets/images/tcpipprinterstoast2.png)
+![proces]({{site.baseurl}}/assets/images/tcpipprinters/toast2.png)
 
 In Build 16299 however, this is no longer the case.
 
@@ -405,7 +413,7 @@ From there i made my way over to the [official Microsoft Documentation](https://
 
 You can use the start-apps by Microsoft as the "provider" for your notification.
 
-```javascript
+```Powershell
 Get-StartApps | select * | Sort-Object name
 ```
 
@@ -414,7 +422,7 @@ I also reformatted the code and used a different, more reablable way of building
  	
 	$app = 'Microsoft.Windows.ControlPanel'
 
-```javascript
+```Powershell
 FUNCTION ShowToast
 {
     $Image = "$($env:TEMP)\cm.png"
@@ -450,19 +458,19 @@ ShowToast
 
 This is what it looks like now on both versions of the OS.
 
-![proces]({{site.baseurl}}/assets/images/tcpipprinterstoast3.png)
+![proces]({{site.baseurl}}/assets/images/tcpipprinters/toast3.png)
 
 
 ## 4 USING THE GUI
 
-![proces]({{site.baseurl}}/assets/images/tcpipprintersgui1.png)
+![proces]({{site.baseurl}}/assets/images/tcpipprinters/gui1.png)
 
 I kept the GUI as simple as possible.
 When you open the tool, it will read the contents of the CSV-file and generate a clickable list.<br/>
 All printers will be sorted per location.  
 You can just open the location where you are currently at and you will see the available printers.
 
-![proces]({{site.baseurl}}/assets/images/tcpipprintersgui2.png)
+![proces]({{site.baseurl}}/assets/images/tcpipprinters/gui2.png)
 
 The names of the printers are the same names that you'll find on the physical label on the printer you are currently sitting at.
 The "Install printer" button will only be available when you have selected a printer. 
@@ -473,11 +481,11 @@ When the installation has completed, it will automatically bring you to the "Pri
 This is just for reassuring the user that everything went well. <br />
 Here they can verify the newly installed printer as being their new default printing device.
 
-![proces]({{site.baseurl}}/assets/images/tcpipprintersgui3.png)
+![proces]({{site.baseurl}}/assets/images/tcpipprinters/gui3.png)
 
 When the installation is finished, a notification is pushed to the screen.
 
-![proces]({{site.baseurl}}/assets/images/tcpipprinterstoast3.png)
+![proces]({{site.baseurl}}/assets/images/tcpipprinters/toast3.png)
 ----------
 # IT-STAFF GUIDELINES
 
@@ -489,13 +497,13 @@ When we have to deploy a new printer, no developer needs to be engaged to add it
 Just by adding the values into the GUI the printer will be available for the end-user.
 
 
-![proces]({{site.baseurl}}/assets/images/tcpipprintersnewprinter.png)
+![proces]({{site.baseurl}}/assets/images/tcpipprinters/newprinter.png)
 
 ----------
 
 ## 2 PROCEDURE: REPLACING A PRINTER
 
-![proces]({{site.baseurl}}/assets/images/tcpipprintersreplaceprinter.png)
+![proces]({{site.baseurl}}/assets/images/tcpipprinters/replaceprinter.png)
 
 ----------
 
@@ -504,7 +512,7 @@ Just by adding the values into the GUI the printer will be available for the end
 During the installation, for each step the GUI goes through, a logentry is made.
 The log is kept on the local disk and looks as follows:
 
-![proces]({{site.baseurl}}/assets/images/tcpipprinterslogs.png)
+![proces]({{site.baseurl}}/assets/images/tcpipprinters/logs.png)
 
 On the local machine, you can easily access them via the environment variable : %appdata%\PrinterLogs or going to that pad remotely : 	\\\computer\c$\Users\username\AppData\Roaming\PrinterLogs.
 For each process/step it will tell you if it was a succes or not. If it failed, it will catch the Powershell-error and write it down.
