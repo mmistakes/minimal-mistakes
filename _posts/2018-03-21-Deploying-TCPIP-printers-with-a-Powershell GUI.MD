@@ -490,13 +490,13 @@ When we have to deploy a new printer, no developer needs to be engaged to add it
 Just by adding the values into the GUI the printer will be available for the end-user.
 
 
-![proces]({{site.baseurl}}/assets/images/tcpipprinters/newprinter.PNG)
+![proces]({{site.baseurl}}/assets/images/tcpipprinters/NEWPRINTER.png)
 
 ----------
 
 ## 2 PROCEDURE: REPLACING A PRINTER
 
-![proces]({{site.baseurl}}/assets/images/tcpipprinters/replaceprinter.PNG)
+![proces]({{site.baseurl}}/assets/images/tcpipprinters/REPLACEPRINTER.png)
 
 ----------
 
