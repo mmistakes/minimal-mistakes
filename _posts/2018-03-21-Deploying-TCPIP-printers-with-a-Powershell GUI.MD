@@ -75,7 +75,7 @@ This way it's always clear what port belongs to which printer.
 ### 3.2 IP-assignments
 Each remote office has its own IP-range that is made up as follows:
 
-![ipranges]({{site.baseurl}}/assets/images/tcpipprinters/tableip.png)
+![ipranges]({{site.baseurl}}/assets/images/tcpipprinters/tableIP.png)
 
 At each remote office, the first 15 Ip-adressess of that range will be used for printers.
 We will be working with what's called "Lease reservations", also known as "DHCP\IP reservations".
@@ -199,8 +199,8 @@ I created a GPO that allows for the stop and start of the printspooler by a defa
 With a tool provided by Microsoft (subinacl.exe) you can see the ACL permissions set on a service.
 <br/>After applying the GPO, the tool shows that our GM108_DomainUsers have access to restarting the Printspool service.
 
-![access on service]({{site.baseurl}}/assets/images/tcpipprinters/subinacl1.PNG)
-![access on service]({{site.baseurl}}/assets/images/tcpipprinters/subinacl2.PNG)
+![access on service]({{site.baseurl}}/assets/images/tcpipprinters/subinacl1.png)
+![access on service]({{site.baseurl}}/assets/images/tcpipprinters/subinacl2.png)
 
 <span style="color:red"></span>
 
@@ -261,7 +261,7 @@ It makes sure that
   - Prints non-duplex
   - Prints on the manual tray 
 
-![proces]({{site.baseurl}}/assets/images/tcpipprinters/printpreferences.png)
+![proces]({{site.baseurl}}/assets/images/tcpipprinters/printpreferences.PNG)
 
 ### 3.4 Desciding on the printdriver
 
@@ -276,14 +276,14 @@ Therefore i wanted to created the tool in such a way that it can be easily adopt
 
 In the code, there is only one hardcoded reference:
 
-```Powershell
+```javascript
 $parameterlist = Import-Csv "\\server\printers\TCPPrinter\parameters.csv" -Delimiter ";"
 ```
 When a federation want to use the GUI, the only piece of code they need to adjust, it the location of the parameterlist. <br/> Then, compile a new EXE and they are good to go.
 
 In the **parameters.csv** you'll find the following parameters:
 
-```Powershell
+```javascript
 parameter;value
 federation;CM Leuven
 networkpath;\\server\printers\TCPPrinter
@@ -295,7 +295,7 @@ These parameters can easily be adjusted per federation.
 At the same location as the parametersfile, you'll find all resources that are being used by the GUI.
 
 
-![proces]({{site.baseurl}}/assets/images/tcpipprinters/resources.png)
+![proces]({{site.baseurl}}/assets/images/tcpipprinters/resources.PNG)
 
 ### 3.6 Toast notification
 
@@ -303,7 +303,7 @@ I first started out with an old method , the balloon notification. The process w
 
 The biggest issue was the icon that was being displayed way too small.
 
-```Powershell
+```javascript
 #Load the required assemblies
 [void][System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms")
 #Remove any registered events related to notifications
@@ -331,7 +331,7 @@ So i searched the internet and stumbled upon **Toast notifications**.
 I found a sample code over at [deploywindows.com](https://deploywindows.com/2018/01/15/want-to-become-a-windows-10-toast-balloon-expert-with-or-without-microsoft-intune/)
 
 From there i adjusted the code and made it to be the following
-```Powershell
+```javascript
 # https://deploywindows.com/2018/01/15/want-to-become-a-windows-10-toast-balloon-expert-with-or-without-microsoft-intune/
 # Toast overview: https://msdn.microsoft.com/en-us/library/windows/apps/hh779727.aspx
 # Toasts templates: https://msdn.microsoft.com/en-us/library/windows/apps/hh761494.aspx
@@ -385,18 +385,18 @@ but it **does not work** on
 	OS Version: 10.0.16299 N/A Build 16299
 
 The reason for that is the following piece of code:
-```Powershell
+```javascript
 $AppID = "$($parameters.appid)" 
 ```
 
 I named the AppID as i wanted it to be *"CM Leuven - Loketprinter v1.0"*.
 This would make it more recognizable for the end user, as it would be clear what application is showing them the notification.
 
-![proces]({{site.baseurl}}/assets/images/tcpipprinters/toast1.png)
+![proces]({{site.baseurl}}/assets/images/tcpipprinters/toast1.PNG)
 
 In Windows settings\notification this application name would then show up on  Build 15063.
 
-![proces]({{site.baseurl}}/assets/images/tcpipprinters/toast2.png)
+![proces]({{site.baseurl}}/assets/images/tcpipprinters/toast2.PNG)
 
 In Build 16299 however, this is no longer the case.
 
@@ -406,7 +406,7 @@ From there i made my way over to the [official Microsoft Documentation](https://
 
 You can use the start-apps by Microsoft as the "provider" for your notification.
 
-```Powershell
+```javascript
 Get-StartApps | select * | Sort-Object name
 ```
 
@@ -415,7 +415,7 @@ I also reformatted the code and used a different, more reablable way of building
  	
 	$app = 'Microsoft.Windows.ControlPanel'
 
-```Powershell
+```javascript
 FUNCTION ShowToast
 {
     $Image = "$($env:TEMP)\cm.png"
@@ -451,19 +451,19 @@ ShowToast
 
 This is what it looks like now on both versions of the OS.
 
-![proces]({{site.baseurl}}/assets/images/tcpipprinters/toast3.png)
+![proces]({{site.baseurl}}/assets/images/tcpipprinters/toast3.PNG)
 
 
 ## 4 USING THE GUI
 
-![proces]({{site.baseurl}}/assets/images/tcpipprinters/gui1.png)
+![proces]({{site.baseurl}}/assets/images/tcpipprinters/GUI1.png)
 
 I kept the GUI as simple as possible.
 When you open the tool, it will read the contents of the CSV-file and generate a clickable list.<br/>
 All printers will be sorted per location.  
 You can just open the location where you are currently at and you will see the available printers.
 
-![proces]({{site.baseurl}}/assets/images/tcpipprinters/gui2.png)
+![proces]({{site.baseurl}}/assets/images/tcpipprinters/GUI2.PNG)
 
 The names of the printers are the same names that you'll find on the physical label on the printer you are currently sitting at.
 The "Install printer" button will only be available when you have selected a printer. 
@@ -474,11 +474,11 @@ When the installation has completed, it will automatically bring you to the "Pri
 This is just for reassuring the user that everything went well. <br />
 Here they can verify the newly installed printer as being their new default printing device.
 
-![proces]({{site.baseurl}}/assets/images/tcpipprinters/gui3.png)
+![proces]({{site.baseurl}}/assets/images/tcpipprinters/GUI3.PNG)
 
 When the installation is finished, a notification is pushed to the screen.
 
-![proces]({{site.baseurl}}/assets/images/tcpipprinters/toast3.png)
+![proces]({{site.baseurl}}/assets/images/tcpipprinters/toast3.PNG)
 ----------
 # IT-STAFF GUIDELINES
 
@@ -490,13 +490,13 @@ When we have to deploy a new printer, no developer needs to be engaged to add it
 Just by adding the values into the GUI the printer will be available for the end-user.
 
 
-![proces]({{site.baseurl}}/assets/images/tcpipprinters/newprinter.png)
+![proces]({{site.baseurl}}/assets/images/tcpipprinters/newprinter.PNG)
 
 ----------
 
 ## 2 PROCEDURE: REPLACING A PRINTER
 
-![proces]({{site.baseurl}}/assets/images/tcpipprinters/replaceprinter.png)
+![proces]({{site.baseurl}}/assets/images/tcpipprinters/replaceprinter.PNG)
 
 ----------
 
