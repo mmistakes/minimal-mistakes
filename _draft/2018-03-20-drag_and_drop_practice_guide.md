@@ -69,7 +69,7 @@ In AppKit,
 * NSTextView, conforms to `NSDraggingSource` protocol.
 * NSCollectionView, conforms to `NSDraggingSource` and `NSDraggingDestination` protocols.
 
-The `NSDraggingInfo` protocol declares methods that supply information about a dragging session. They are designed to be invoked from within a class's implementation of `NSDraggingDestination` protocol methods. AppKit automatically passes an object that conforms to the `NSDraggingInfo` protocol as the argument to each of the methods defined by `NSDraggingDestination`. `NSDraggingInfo` messages should be sent to this object; you never need to create a class that implements the `NSDraggingInfo` protocol.
+> The `NSDraggingInfo` protocol declares methods that supply information about a dragging session. They are designed to be invoked from within a class's implementation of `NSDraggingDestination` protocol methods. AppKit automatically passes an object that conforms to the `NSDraggingInfo` protocol as the argument to each of the methods defined by `NSDraggingDestination`. `NSDraggingInfo` messages should be sent to this object; you never need to create a class that implements the `NSDraggingInfo` protocol.
 
 So, all NSView can be the dragging destination.
 
