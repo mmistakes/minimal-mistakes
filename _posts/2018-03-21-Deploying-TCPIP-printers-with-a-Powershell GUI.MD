@@ -75,7 +75,7 @@ This way it's always clear what port belongs to which printer.
 ### 3.2 IP-assignments
 Each remote office has its own IP-range that is made up as follows:
 
-![ipranges]({{site.baseurl}}/assets/images/tcpipprinters/tableIP.png)
+![ipranges]({{site.baseurl}}/assets/images/tcpipprinters/tableIP.PNG)
 
 At each remote office, the first 15 Ip-adressess of that range will be used for printers.
 We will be working with what's called "Lease reservations", also known as "DHCP\IP reservations".
