@@ -282,7 +282,7 @@ When a federation want to use the GUI, the only piece of code they need to adjus
 
 In the **parameters.csv** you'll find the following parameters:
 
-```Powershell
+```javascript
 parameter;value
 federation;CM Leuven
 networkpath;\\server\printers\TCPPrinter
@@ -302,7 +302,7 @@ I first started out with an old method , the balloon notification. The process w
 
 The biggest issue was the icon that was being displayed way too small.
 
-```Powershell
+```javascript
 #Load the required assemblies
 [void][System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms")
 #Remove any registered events related to notifications
@@ -384,7 +384,7 @@ but it **does not work** on
 	OS Version: 10.0.16299 N/A Build 16299
 
 The reason for that is the following piece of code:
-```Powershell
+```javascript
 $AppID = "$($parameters.appid)" 
 ```
 
@@ -405,7 +405,7 @@ From there i made my way over to the [official Microsoft Documentation](https://
 
 You can use the start-apps by Microsoft as the "provider" for your notification.
 
-```Powershell
+```javascript
 Get-StartApps | select * | Sort-Object name
 ```
 
@@ -414,7 +414,7 @@ I also reformatted the code and used a different, more reablable way of building
  	
 	$app = 'Microsoft.Windows.ControlPanel'
 
-```Powershell
+```javascript
 FUNCTION ShowToast
 {
     $Image = "$($env:TEMP)\cm.png"
