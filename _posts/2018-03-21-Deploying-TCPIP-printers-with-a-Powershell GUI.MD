@@ -6,14 +6,7 @@ Tags: 'Powershell, TCP/IP, Windows 10'
 published: true
 date: '2018-03-21'
 ---
----
-Layout: post
-title: Deploying TCP/IP printers with a Powershell GUI
-Author_profile: true
-Tags: 'Powershell, TCP/IP, Windows 10'
-published: true
-date: '2018-03-21'
----
+
 # TCP/IP printers in the remote offices
 
 ## 1 CURRENT SITUATION
