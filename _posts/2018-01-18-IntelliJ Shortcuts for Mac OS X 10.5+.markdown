@@ -5,6 +5,7 @@ date:             2018-01-18 00:00:00 -0500
 categories:       IT
 tag:              [macos,intellij,shortcuts]
 ---
+
 Legend
 - Shift: ⇧
 - Control: ⌃
