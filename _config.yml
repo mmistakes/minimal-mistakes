@@ -11,19 +11,19 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+remote_theme           : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "sunrise" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Site Title"
-title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+locale                   : "de"
+title                    : "Cylas AG"
+title_separator          : "|"
+name                     : "Reiner Boes & Beate Lang"
+description              : "Internationaler Lasergraviermaschinen Exporteur"
+url                      : "https://cylasweb.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+repository               : "CylasWeb/CylasWeb.github.io"
+teaser                   : "https://dummyimage.com/500x400/a6a6a6/000000&text=Gro%C3%9Fes+Bild"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -90,35 +90,35 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : google # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          :
 
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Reiner Boes"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
+  bio              : "Machine Architect"
+  location         : "Chemnitz, Germany"
   email            :
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
-  bitbucket        :
+  bitbucket        : "test"
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         :  
   foursquare       :
   github           :
-  gitlab           :
+  gitlab           : "test"
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
   linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
-  soundcloud       :
+  soundcloud       : "test"
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
@@ -266,3 +266,14 @@ defaults:
       comments: # true
       share: true
       related: true
+      
+# Defaults
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+
+      
