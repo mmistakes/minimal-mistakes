@@ -150,7 +150,7 @@ können. Vor allem die Kursgebühren können sich ändern.
     <tr>
       <td colspan="6">Donnerstag</td>
     </tr>
-    <tr>
+    <!--<tr>
       <td>13:30 - 15:00</td>
       <td>
         <a href="#toepfern_ag"><i class='fa fa-tint'>&nbsp;</i>Töpfern</a><br>
@@ -158,7 +158,7 @@ können. Vor allem die Kursgebühren können sich ändern.
       </td>
       <td>3 - 6</td>
       <td>Werkraum</td>
-    </tr>
+    </tr>-->
     <tr>
       <td>13:30 - 15:00</td>
       <td>
@@ -301,6 +301,7 @@ unterstützt.
 |---|---|---|
 | N.N. | N.N. | N.N. |
 
+<!--
 ## <i class='fa fa-tint'>&nbsp;</i>AG Töpfern
 {: #toepfern_ag}
 
@@ -313,6 +314,7 @@ N.N
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
 | N.N | N.N | N.N |
+-->
 
 ## <i class="fa fa-music">&nbsp;</i>AG Flöten
 {: #floeten_ag}

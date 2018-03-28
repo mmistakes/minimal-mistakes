@@ -20,8 +20,8 @@ ags:
     url: '/ags/#werken_ag'
   - title: "<i class='fa fa-headphones'></i> AG Handarbeit"
     url: '/ags/#handarbeits_ag'
-  - title: "<i class='fa fa-tint'></i> AG Töpfern"
-    url: '/ags/#toepfern_ag'
+  # - title: "<i class='fa fa-tint'></i> AG Töpfern"
+  #   url: '/ags/#toepfern_ag'
   - title: "<i class='fa fa-music'></i> AG Flöten"
     url: '/ags/#floeten_ag'
   - title: "<i class='fa'>🎹</i> AG Klavier"
