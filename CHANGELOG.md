@@ -4,6 +4,10 @@
 
 * Update Font Awesome to version `5.0.9`. [#1605](https://github.com/mmistakes/minimal-mistakes/pull/1605)
 
+### Bug Fixes
+
+* Use correct text string for "Back to Top" link. [#1595](https://github.com/mmistakes/minimal-mistakes/issues/1595)
+
 ## [4.11.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.11.1)
 
 ### Enhancements
