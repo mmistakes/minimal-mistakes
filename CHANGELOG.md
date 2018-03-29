@@ -1,3 +1,9 @@
+## Unreleased
+
+### Enhancements
+
+* Update Font Awesome to version `5.0.9`. [#1605](https://github.com/mmistakes/minimal-mistakes/pull/1605)
+
 ## [4.11.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.11.1)
 
 ### Enhancements

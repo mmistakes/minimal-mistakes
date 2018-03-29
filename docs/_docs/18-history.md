@@ -4,9 +4,15 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-03-20T17:32:27-04:00
+last_modified_at: 2018-03-29T12:35:02-04:00
 toc: true
 ---
+
+## Unreleased
+
+### Enhancements
+
+* Update Font Awesome to version `5.0.9`. [#1605](https://github.com/mmistakes/minimal-mistakes/pull/1605)
 
 ## [4.11.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.11.1)
 
