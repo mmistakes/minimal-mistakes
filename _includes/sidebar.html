@@ -1,10 +1,6 @@
 {% if page.author_profile or layout.author_profile or page.sidebar %}
   <div class="sidebar sticky">
-  {% if page.author_profile or layout.author_profile %}
-    {% assign author = page.author | default: page.authors[0] | default: site.author %}
-    {% assign author = site.data.authors[author] | default: author %}
-    {% include author-profile.html author=author links="true" %}
-  {% endif %}
+  {% if page.author_profile or layout.author_profile %}{% include author-profile.html author=author links="true" %}{% endif %}
   {% if page.sidebar %}
     {% for s in page.sidebar %}
       {% if s.image %}
