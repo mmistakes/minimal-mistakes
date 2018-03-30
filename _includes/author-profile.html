@@ -1,5 +1,4 @@
-{% assign author = page.author | default: page.authors[0] | default: site.author %}
-{% assign author = site.data.authors[author] | default: author %}
+{% assign author = include.author %}
 
 <div itemscope itemtype="http://schema.org/Person">
 
@@ -39,6 +38,7 @@
     {% endif %}
   </div>
 
+  {% if include.links == "true" %}
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button>
     <ul class="author__urls social-icons">
@@ -260,4 +260,5 @@
       {% include author-profile-custom-links.html %}
     </ul>
   </div>
+  {% endif %}
 </div>
