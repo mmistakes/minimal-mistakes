@@ -1,14 +1,14 @@
 ---
 layout: single
-title: "Ліцензований обсяг та фактична кількість осіб"
+title: "Відомості про кількісні та якісні показники кадрового забезпечення освітньої діяльності у сфері загальної середньої освіти"
 permalink: /open/staff/
 sidebar:
   nav: "sidebar-menu"
 ---
 
-<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 85.0847%;"><iframe src="https://drive.google.com/file/d/1z6lxc8p8VZALosGC4Y2unzEhJ5Lzrr80/preview" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen></iframe></div>
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 85.0847%;"><iframe src="https://drive.google.com/file/d/1Re4WP3d2difDgh1IDpM1iuBEujUVPvrl/preview" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen></iframe></div>
 
 <br>
 <br>
 
-<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 85.0847%;"><iframe src="https://drive.google.com/file/d/1yun5wYL3WLbazeIQ1urovdRXFkT9jlJq/preview" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen></iframe></div>
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 85.0847%;"><iframe src="https://drive.google.com/file/d/16WZ3hJUXj_bBQKUWT_WBcsIoWZIKEMaf/preview" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen></iframe></div>
