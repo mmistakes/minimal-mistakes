@@ -983,6 +983,52 @@ ja: &DEFAULT_JA
 ja-JP:
   <<: *DEFAULT_JA
 
+# Slovak
+# -----------------
+sk: &DEFAULT_SK
+  page                       : "Stránka"
+  pagination_previous        : "Predošlá"
+  pagination_next            : "Ďalšia"
+  breadcrumb_home_label      : "Domov"
+  breadcrumb_separator       : "/"
+  menu_label                 : "Menu"
+  toc_label                  : "Obsah"
+  ext_link_label             : "Priamy odkaz"
+  less_than                  : "menej ako"
+  minute_read                : "minút"
+  share_on_label             : "Zdieľaj na"
+  meta_label                 :
+  tags_label                 : "Tagy:"
+  categories_label           : "Kategórie:"
+  date_label                 : "Aktualizované:"
+  comments_label             : "Zanechaj odkaz"
+  comments_title             : "Komentáre"
+  more_label                 : "Dozvedieť sa viac"
+  related_label              : "Podobné články"
+  follow_label               : "Sleduj:"
+  feed_label                 : "Zoznam"
+  powered_by                 : "Stránka vytvorená pomocou"
+  website_label              : "Web stránka"
+  email_label                : "Email"
+  recent_posts               : "Najnovšie príspevky"
+  undefined_wpm              : "Nedefinovaný parameter words_per_minute v _config.yml"
+  comment_form_info          : "Tvoja emailová adresa nebude publikovaná. Požadované polia sú označené"
+  comment_form_comment_label : "Komentár"
+  comment_form_md_info       : "Markdown je podporovaný."
+  comment_form_name_label    : "Meno"
+  comment_form_email_label   : "Emailová adresa"
+  comment_form_website_label : "Webstránka (voliteľné)"
+  comment_btn_submit         : "Vlož komentár"
+  comment_btn_submitted      : "Vložený"
+  comment_success_msg        : "Ďakujem za tvoj komentár! Po schválení bude zobrazený na stránke."
+  comment_error_msg          : "Prepáč, pri ukladaní nastala chyba. Ubezpeč sa prosím, že si vyplnil všetky požadované polia a skús znova."
+  loading_label              : "Načítava sa..."
+  search_placeholder_text    : "Zadaj hľadaný výraz..."
+  results_found              : "Nájdených výsledkov"
+  back_to_top                : "Na začiatok stránky"
+sk-SK:
+  <<: *DEFAULT_SK
+
 # Another locale
 # --------------
 #

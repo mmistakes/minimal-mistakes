@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-03-30T18:39:37-04:00
+last_modified_at: 2018-04-10T08:42:49-04:00
 toc: true
 ---
 
@@ -13,6 +13,7 @@ toc: true
 ### Enhancements
 
 * Update Font Awesome to version `5.0.9`. [#1605](https://github.com/mmistakes/minimal-mistakes/pull/1605)
+* Add Slovak localized UI text strings. [#1613](https://github.com/mmistakes/minimal-mistakes/pull/1613)
 
 ### Bug Fixes
 

@@ -3,6 +3,7 @@
 ### Enhancements
 
 * Update Font Awesome to version `5.0.9`. [#1605](https://github.com/mmistakes/minimal-mistakes/pull/1605)
+* Add Slovak localized UI text strings. [#1613](https://github.com/mmistakes/minimal-mistakes/pull/1613)
 
 ### Bug Fixes
 
