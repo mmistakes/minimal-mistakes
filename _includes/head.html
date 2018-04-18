@@ -2,7 +2,7 @@
 
 {% include seo.html %}
 
-<link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | absolute_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+<link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -14,7 +14,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="{{ '/assets/css/main.css' | absolute_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
 <!--[if lte IE 9]>
   <style>
@@ -36,7 +36,7 @@
     {% if script contains "://" %}
       {% capture script_path %}{{ script }}{% endcapture %}
     {% else %}
-      {% capture script_path %}{{ script | absolute_url }}{% endcapture %}
+      {% capture script_path %}{{ script | relative_url }}{% endcapture %}
     {% endif %}
     <script src="{{ script_path }}"></script>
   {% endfor %}

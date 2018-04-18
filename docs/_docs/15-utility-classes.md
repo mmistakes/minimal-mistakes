@@ -2,10 +2,11 @@
 title: "Utility Classes"
 permalink: /docs/utility-classes/
 excerpt: "CSS classes for aligning text/image, styling buttons and notices, and more."
-last_modified_at: 2017-09-01T11:54:44-04:00
+last_modified_at: 2018-03-20T16:00:15-04:00
+toc: true
+toc_label: "Utility Classes"
+toc_icon: "gears"
 ---
-
-{% include toc icon="gears" title="Utility Classes" %}
 
 Using the Kramdown Markdown renderer with Jekyll allows you to add [block](http://kramdown.gettalong.org/quickref.html#block-attributes) and [inline attributes](http://kramdown.gettalong.org/quickref.html#inline-attributes). This is nice if you want to add custom styling to text and image, and still write in Markdown.
 
@@ -68,7 +69,7 @@ No wrap text.
 
 Position images with the following classes.
 
-![image-center]({{ "/assets/images/image-alignment-580x300.jpg" | absolute_url }}){: .align-center}
+![image-center]({{ "/assets/images/image-alignment-580x300.jpg" | relative_url }}){: .align-center}
 
 The image above happens to be **centered**.
 
@@ -78,7 +79,7 @@ The image above happens to be **centered**.
 
 ---
 
-![image-left]({{ "/assets/images/image-alignment-150x150.jpg" | absolute_url }}){: .align-left} The rest of this paragraph is filler for the sake of seeing the text wrap around the 150×150 image, which is **left aligned**. There should be plenty of room above, below, and to the right of the image. Just look at him there --- Hey guy! Way to rock that left side. I don't care what the right aligned image says, you look great. Don't let anyone else tell you differently.
+![image-left]({{ "/assets/images/image-alignment-150x150.jpg" | relative_url }}){: .align-left} The rest of this paragraph is filler for the sake of seeing the text wrap around the 150×150 image, which is **left aligned**. There should be plenty of room above, below, and to the right of the image. Just look at him there --- Hey guy! Way to rock that left side. I don't care what the right aligned image says, you look great. Don't let anyone else tell you differently.
 
 ```markdown
 ![image-left](/assets/images/filename.jpg){: .align-left}
@@ -86,7 +87,7 @@ The image above happens to be **centered**.
 
 ---
 
-![image-right]({{ "/assets/images/image-alignment-300x200.jpg" | absolute_url }}){: .align-right}
+![image-right]({{ "/assets/images/image-alignment-300x200.jpg" | relative_url }}){: .align-right}
 
 And now we're going to shift things to the **right align**. Again, there should be plenty of room above, below, and to the left of the image. Just look at him there --- Hey guy! Way to rock that right side. I don't care what the left aligned image says, you look great. Don't let anyone else tell you differently.
 
@@ -96,7 +97,7 @@ And now we're going to shift things to the **right align**. Again, there should 
 
 ---
 
-![full]({{ "/assets/images/image-alignment-1200x4002.jpg" | absolute_url }})
+![full]({{ "/assets/images/image-alignment-1200x4002.jpg" | relative_url }})
 {: .full}
 
 The image above should extend outside of the parent container on right.

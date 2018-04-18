@@ -2,7 +2,7 @@
 title: "Structure"
 permalink: /docs/structure/
 excerpt: "How the theme is organized and what all of the files are for."
-last_modified_at: 2016-10-06T22:39:43-04:00
+last_modified_at: 2018-03-20T15:19:22-04:00
 ---
 
 Nothing clever here :wink:. Layouts, data files, and includes are all placed in their default locations. Stylesheets and scripts in `assets`, and a few development related files in the project's root directory.
@@ -29,18 +29,23 @@ minimal-mistakes
 |  └── ...
 ├── _layouts
 |  ├── archive-taxonomy.html   # tag/category archive for Jekyll Archives plugin
-|  ├── archive.html            # archive listing documents in an array
+|  ├── archive.html            # archive base
+|  ├── categories.html         # archive listing posts grouped by category
+|  ├── category.html           # archive listing posts grouped by specific category
+|  ├── collection.html         # archive listing documents in a specific collection
 |  ├── compress.html           # compresses HTML in pure Liquid
 |  ├── default.html            # base for all other layouts
 |  ├── home.html               # home page
+|  ├── posts.html              # archive listing posts grouped by year
+|  ├── search.html             # search page
 |  ├── single.html             # single document (post/page/etc)
+|  ├── tag.html                # archive listing posts grouped by specific tag
+|  ├── tags.html               # archive listing posts grouped by tags
 |  └── splash.html             # splash page
 ├── _sass                      # SCSS partials
 ├── assets
 |  ├── css
 |  |  └── main.scss            # main stylesheet, loads SCSS partials from _sass
-|  ├── fonts
-|  |  └── fontawesome-webfont  # Font Awesome webfonts
 |  ├── images                  # image assets for posts/pages/collections/etc.
 |  ├── js
 |  |  ├── plugins              # jQuery plugins

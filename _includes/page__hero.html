@@ -1,19 +1,19 @@
 {% if page.header.image contains "://" %}
   {% capture img_path %}{{ page.header.image }}{% endcapture %}
 {% else %}
-  {% capture img_path %}{{ page.header.image | absolute_url }}{% endcapture %}
+  {% capture img_path %}{{ page.header.image | relative_url }}{% endcapture %}
 {% endif %}
 
 {% if page.header.cta_url contains "://" %}
   {% capture cta_path %}{{ page.header.cta_url }}{% endcapture %}
 {% else %}
-  {% capture cta_path %}{{ page.header.cta_url | absolute_url }}{% endcapture %}
+  {% capture cta_path %}{{ page.header.cta_url | relative_url }}{% endcapture %}
 {% endif %}
 
 {% if page.header.overlay_image contains "://" %}
   {% capture overlay_img_path %}{{ page.header.overlay_image }}{% endcapture %}
 {% elsif page.header.overlay_image %}
-  {% capture overlay_img_path %}{{ page.header.overlay_image | absolute_url }}{% endcapture %}
+  {% capture overlay_img_path %}{{ page.header.overlay_image | relative_url }}{% endcapture %}
 {% endif %}
 
 {% if page.header.overlay_filter contains "rgba" %}
@@ -42,11 +42,11 @@
           {{ page.title | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}
         {% endif %}
       </h1>
-      {% if page.excerpt %}
+      {% if page.header.show_overlay_excerpt != false and page.excerpt %}
         <p class="page__lead">{{ page.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}</p>
       {% endif %}
       {% if site.read_time and page.read_time %}
-        <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+        <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
       {% endif %}
       {% if page.header.cta_url %}
         <p><a href="{{ cta_path }}" class="btn btn--light-outline btn--large">{{ page.header.cta_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>

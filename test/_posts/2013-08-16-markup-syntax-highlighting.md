@@ -1,12 +1,13 @@
 ---
 title: "Markup: Syntax Highlighting"
 excerpt: "Post displaying the various ways of highlighting code in Markdown."
-last_modified_at: 2016-09-09T09:55:10-04:00
+last_modified_at: 2018-01-03T09:45:06-05:00
 header:
   teaser: "assets/images/markup-syntax-highlighting-teaser.jpg"
 tags: 
   - code
   - syntax highlighting
+toc: true
 ---
 
 Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.[^1]
@@ -46,17 +47,6 @@ GitHub Flavored Markdown [fenced code blocks](https://help.github.com/articles/c
 </nav><!-- /.pagination -->{% endraw %}
 ```
 
-{% highlight html linenos %}
-{% raw %}<nav class="pagination" role="navigation">
-  {% if page.previous %}
-    <a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}">Previous article</a>
-  {% endif %}
-  {% if page.next %}
-    <a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}">Next article</a>
-  {% endif %}
-</nav><!-- /.pagination -->{% endraw %}
-{% endhighlight %}
-
 ```ruby
 module Jekyll
   class TagIndex < Page
@@ -93,6 +83,42 @@ Indentation matters. Be sure the indent of the code block aligns with the first 
    ```
         
 3. Now you can do this.
+
+### Jekyll Highlight Tag
+
+An example of a code blocking using Jekyll's [`{% raw %}{% highlight %}{% endraw %}` tag](https://jekyllrb.com/docs/templates/#code-snippet-highlighting).
+
+{% highlight javascript linenos %}
+// 'gulp html' -- does nothing
+// 'gulp html --prod' -- minifies and gzips HTML files for production
+gulp.task('html', () => {
+  return gulp.src(paths.siteFolderName + paths.htmlPattern)
+    .pipe(when(argv.prod, htmlmin({
+      removeComments: true,
+      collapseWhitespace: true,
+      collapseBooleanAttributes: false,
+      removeAttributeQuotes: false,
+      removeRedundantAttributes: false,
+      minifyJS: true,
+      minifyCSS: true
+    })))
+    .pipe(when(argv.prod, size({title: 'optimized HTML'})))
+    .pipe(when(argv.prod, gulp.dest(paths.siteFolderName)))
+    .pipe(when(argv.prod, gzip({append: true})))
+    .pipe(when(argv.prod, size({
+      title: 'gzipped HTML',
+      gzip: true
+    })))
+    .pipe(when(argv.prod, gulp.dest(paths.siteFolderName)))
+});
+{% endhighlight %}
+
+{% highlight wl linenos %}
+Module[{},
+  Sqrt[2]
+  4
+]
+{% endhighlight %}
 
 ### GitHub Gist Embed
 

@@ -1,15 +1,15 @@
 ---
 title:  "Gemified Theme -- Alpha Release"
-last_modified_at: 2016-11-03T11:46:00-04:00
+last_modified_at: 2018-03-20T16:00:58-04:00
 categories: 
   - Jekyll
 tags:
   - update
+toc: true
+toc_label: "Getting Started"
 ---
 
 Jekyll [themes distributed as Ruby gems](http://jekyllrb.com/docs/themes/) are finally here to make installing and upgrading much easier. Gone are the days of forking a repo just to "install it". Or dealing with merge conflicts when pulling in upstream commits to "upgrade it".
-
-{% include toc title="Getting Started" %}
 
 If you're interested in testing out Minimal Mistakes as a gemified theme read on. There are a few caveats though:
 
@@ -68,17 +68,17 @@ Run `bundle install` (or `bundle update` if you're updating an existing repo) to
 
 Add `theme: "minimal-mistakes-jekyll"` to your `_config.yml` file.
 
-If you're migrating from an existing Minimal Mistakes site you shouldn't have to change anything else after this. If it's a new site consult then docs to [properly config]({{ "/docs/configuration/" | absolute_url }}).
+If you're migrating from an existing Minimal Mistakes site you shouldn't have to change anything else after this. If it's a new site consult then docs to [properly config]({{ "/docs/configuration/" | relative_url }}).
 
-**Please Note:** Paths for image headers, overlays, teasers, [galleries]({{ "/docs/helpers/#gallery" | absolute_url }}), and [feature rows]({{ "/docs/helpers/#feature-row" | absolute_url }}) have changed and now require a full path. Instead of just `image: filename.jpg` you'll need to use the full path eg: `image: assets/images/filename.jpg`. The preferred location is now `assets/images` but can be placed elsewhere or external hosted. This applies for image references in `_config.yml` and `author.yml`.
+**Please Note:** Paths for image headers, overlays, teasers, [galleries]({{ "/docs/helpers/#gallery" | relative_url }}), and [feature rows]({{ "/docs/helpers/#feature-row" | relative_url }}) have changed and now require a full path. Instead of just `image: filename.jpg` you'll need to use the full path eg: `image: assets/images/filename.jpg`. The preferred location is now `assets/images` but can be placed elsewhere or external hosted. This applies for image references in `_config.yml` and `author.yml`.
 {: .notice--danger}
 
 ## Step 5: `jekyll new` Tweaks
 
 If this is a new site be sure to add the following files to `_data/` and customize as you see fit. There is currently no way of bundling them in with the theme, so be sure to consult the docs on how to properly use both.
 
-- [`_data/ui-text.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml) - UI text [documentation]({{ "/docs/ui-text/" | absolute_url }})
-- [`_data/navigation.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_data/navigation.yml) - navigation [documentation]({{ "/docs/navigation/" | absolute_url }})
+- [`_data/ui-text.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml) - UI text [documentation]({{ "/docs/ui-text/" | relative_url }})
+- [`_data/navigation.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_data/navigation.yml) - navigation [documentation]({{ "/docs/navigation/" | relative_url }})
 
 You'll also need to: 
 

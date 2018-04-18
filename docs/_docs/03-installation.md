@@ -2,30 +2,26 @@
 title: "Installation"
 permalink: /docs/installation/
 excerpt: "Instructions for installing the theme for new and existing Jekyll based sites."
-last_modified_at: 2017-08-04T12:38:01-04:00
+last_modified_at: 2018-03-20T15:59:00-04:00
+toc: true
 ---
 
 ## Install the Theme
 
-There are several ways to install the theme:
+**1.** For a **new site**, install the `minimal-mistakes-jekyll` theme gem or fork the Minimal Mistakes repo on GitHub following the steps outlined in the [*Quick-Start Guide*]({{ "/docs/quick-start-guide/" | relative_url }}).
 
-**1.** For a **new site**, install the `minimal-mistakes-jekyll` theme gem or fork the Minimal Mistakes repo on GitHub following the steps outlined in the [*Quick-Start Guide*]({{ "/docs/quick-start-guide/" | absolute_url }}).
+If you plan to host with GitHub Pages be sure to properly setup [**jekyll-remote-theme**](https://github.com/benbalter/jekyll-remote-theme) as it is required for the theme to work properly. 
 
-**2.** For an **existing site** follow the **Ruby Gem Method** steps outlined in the [*Quick-Start Guide*]({{ "/docs/quick-start-guide/" | absolute_url }}). If you plan to host with GitHub Pages I suggest you fork and rename the theme's repo, then clone it locally by running `git clone https://github.com/USERNAME/REPONAME.git` --- replacing **USERNAME** and **REPONAME** with your own. 
+**2.** For an **existing site** follow the steps outlined in the [*Quick-Start Guide*]({{ "/docs/quick-start-guide/" | relative_url }}). Then work through the guidelines below for migration and setup.
 
-<figure>
-  <img src="{{ '/assets/images/mm-github-copy-repo-url.jpg' | absolute_url }}" alt="copy GitHub repo URL">
-  <figcaption>Tap the copy to clipboard button (outlined in red above) to grab your GitHub repo's path.</figcaption>
-</figure>
+**3.** And for those who'd like to make substantial edits to the theme, it can be downloaded as a ZIP file to customize.
 
-**3.** And for those who don't want to mess with Git, you can download the theme as a ZIP file to work with locally.
+[<i class="fas fa-download"></i> Download Minimal Mistakes Theme](https://github.com/mmistakes/minimal-mistakes/archive/master.zip){: .btn .btn--success}
 
-[<i class="fa fa-download"></i> Download Minimal Mistakes Theme](https://github.com/mmistakes/minimal-mistakes/archive/master.zip){: .btn .btn--success}
-
-**ProTip:** Be sure to remove `/docs` and `/test` if you forked Minimal Mistakes. These folders contain documentation and test pages for the theme and you probably don't littering up in your repo.
+**ProTip:** Be sure to remove `/docs` and `/test` if you forked or downloaded Minimal Mistakes. These folders contain documentation and test pages for the theme and you probably don't littering up in your repo.
 {: .notice--info}
 
----
+## Theme Migration
 
 To move over any existing content you'll want to copy the contents of your `_posts` folder to the new site. Along with any pages, collections, data files, images, or other assets you may have.
 
@@ -103,7 +99,7 @@ $ bundle install
 {: .notice--warning}
 
 <figure>
-  <img src="{{ '/assets/images/mm-bundle-install.gif' | absolute_url }}" alt="bundle install in Terminal window">
+  <img src="{{ '/assets/images/mm-bundle-install.gif' | relative_url }}" alt="bundle install in Terminal window">
 </figure>
 
 Depending on what gems you already have installed you may have to run `bundle update` to clear up any dependency issues. Bundler is usually pretty good at letting you know what gems need updating or have issues installing, to further investigate.

@@ -2,7 +2,7 @@
 title: "Working with Posts"
 permalink: /docs/posts/
 excerpt: "Suggestions and Front Matter defaults for working with posts."
-last_modified_at: 2016-11-03T11:12:40-04:00
+last_modified_at: 2018-03-20T15:59:57-04:00
 ---
 
 Posts are stored in the `_posts` directory and named according to the `YEAR-MONTH-DAY-title.MARKUP` format as per [the usual](https://jekyllrb.com/docs/posts/).
@@ -31,7 +31,7 @@ defaults:
       related: true
 ```
 
-Adding the above to `_config.yml` will assign the `single` layout and enable: *author profile*, *reading time*, *comments*, [*social sharing links*]({{ "/docs/layouts/#social-sharing-links" | absolute_url }}), and *related posts*, for all posts.
+Adding the above to `_config.yml` will assign the `single` layout and enable: *author profile*, *reading time*, *comments*, [*social sharing links*]({{ "/docs/layouts/#social-sharing-links" | relative_url }}), and *related posts*, for all posts.
 
 **ProTip:** Remember to write unique `excerpt` descriptions for each post for improved SEO and archive listings.
 {: .notice--info}
