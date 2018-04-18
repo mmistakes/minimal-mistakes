@@ -14,7 +14,7 @@ title                    : "GameDev Ģirts Ķesteris"
 title_separator          : "-"
 name                     : "Ģirts Ķesteris"
 description              : "Portfolio"
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://sacristan.github.io"
 baseurl                  : "/"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -110,8 +110,8 @@ author:
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
-  steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
-  tumblr           :
+  steam            : "gsacristan"
+  tumblr           : 
   twitter          : "Sacristan_G"
   vine             :
   weibo            :
@@ -190,7 +190,6 @@ paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
@@ -252,7 +251,6 @@ collections:
 
 # Defaults
 defaults:
-  # _pages
   - scope:
       path: "_pages"
       type: pages
