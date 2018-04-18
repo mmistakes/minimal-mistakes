@@ -10,10 +10,10 @@ minimal_mistakes_skin    : "dark" #"default", # "air", "aqua", "contrast", "dark
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Minimal Mistakes Development Test Site"
+title                    : "GameDev Ģirts Ķesteris"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "Minimal Mistakes theme test."
+name                     : "Ģirts Ķesteris"
+description              : "Portfolio"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -49,8 +49,8 @@ staticman:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : true # true, false (default)
-search_full_content      : true # true, false (default)
+search                   : false # true, false (default)
+search_full_content      : false # true, false (default)
 search_provider          : "algolia"
 algolia:
   application_id         : "QB6HVGBSBA"
@@ -65,7 +65,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : "mmistakes"
+  username               : #"mmistakes"
 facebook:
   username               :
   app_id                 :
@@ -88,7 +88,7 @@ analytics:
 # Site Author
 author:
   name             : "Ģirts Ķesteris"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio-photo.jpg"
   bio              : #"I am an amazing person."
   location         : "Latvia"
   email            : "girts.kesteris@gmail.com"
@@ -244,12 +244,12 @@ compress_html:
   ignore:
     envs: development
 
-
 # Collections
 collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
+
 # Defaults
 defaults:
   # _pages
@@ -261,7 +261,7 @@ defaults:
       author_profile: true
   # _portfolio
   - scope:
-      path: ""
+      path: "_portfolio"
       type: portfolio
     values:
       layout: single
