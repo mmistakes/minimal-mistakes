@@ -53,6 +53,7 @@ I had a great conversation with Adam Bertram, who won a PowerShell Community Awa
 Josh Duffield was freaking awesome to meet! He wrote a blog post a few months ago about being a craftsman that really resonated with me. I started to realize that I should treat what I do as a craft. I discovered this article around the same time that I read "Be the Master" by Don Jones. It kinda changed the way that I viewed my career. Thanks for the great content, Josh.
 
 I ran into [Mark Kraus](https://twitter.com/markekraus) and had to get a photo with him. My long term goal for myself is to have a grasp on technology to the degree that he does. It's so awesome to see what he's done with the web cmdlets and he is super helpful in the community. I actually bought him reddit gold at one point because I was shocked at how friendly and open he is to sharing his knowledge so it was cool to meet him in person. Rock on, Mark!
+
 ![MarkKrause]({{ "/assets/MarkKrause.jpg" | absolute_url}})
 
 Fred really helped me feel like I was ready for the Summit. He helped me a bunch leading into the Summit and even walked me through my first contribution to a project on Github! He re-ignited my fire for PowerShell Studio as well. His passion for Powershell is infectious!
