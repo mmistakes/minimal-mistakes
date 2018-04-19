@@ -52,21 +52,27 @@ Me, Josh, and Fred!
 ![postdinner]({{ "/assets/postdinner-min.jpg" | absolute_url}})
 Mathias, Jeffery, Scott, Fred, Josh, and me!
 
+## Tavern Hall
+
+Tavern Hall seemed to be the most relaxed and social event. Everybody got a few free drinks and by this point in the week most people felt more comfortable coming out of their shell. Tavern hall had some great games. I bumped into [Mike Robbins]
+
 ## Meeting Mentors/Friends
 
- Earlier in my PowerShell journey [Josh King](https://twitter.com/WindosNZ) would stream himself writing powershell code on youtube. He taught me how to write a function that accepts pipeline input. He demystified what a high level PowerSheller is really like. Seeing him code made me realize that I could do it  also. I didn't need to be some kind of supergenius in order to write cohesive modules. I just needed to plan things out appropriately. Several months after that he DM'ed me on twitter asking if I had started posting on Github yet. Thanks to his kick I got started! I was lucky enough to run into him several times at the conference, even having an awesome dinner with him. In the months leading up to the summit he was one person that I would always recognize in the Virtual User groups because he, like me, couldn't get enough! He demystified a lot of things for me and encouraged me to do more. Thanks, Josh!
+ Earlier in my PowerShell journey [Josh King](https://twitter.com/WindosNZ) would stream himself writing powershell code on youtube. He taught me how to write a function that accepts pipeline input. He demystified what a high level PowerSheller is really like. Seeing him code made me realize that I could do it  also. I didn't need to be some kind of supergenius in order to write cohesive modules. I just needed to plan things out appropriately. Several months after that he DM'ed me on twitter asking if I had started posting on Github yet. Thanks to his kick I got started! I was lucky enough to run into him several times at the conference, even having an awesome dinner with him. In the months leading up to the summit he was one person that I would always recognize in the Virtual User groups because he, like me, cant get enough PowerShell! He demystified a lot of things for me and encouraged me to do more. Thanks, Josh!
 
 I had a great conversation with Adam Bertram, who won a PowerShell Community Award for his contributions! As a matter of fact, the comment from my submission was displayed on his powerpoint slide along with a few others. My comment began with 'Adam knows his shit..', but continued on to talk about how the most impactful stuff that I got from his was actually more of his self-help content. It ended up being a funny conversation starter and I had a great talk with Adam. His [article](https://www.adamtheautomator.com/introverts-guide-tech-conferences/) on how to handle conferences helped me really helped me to feel prepared for the conference. He also bugged me on twitter about starting a blog, thanks for that!
 
 Josh Duffield was freaking awesome to meet! He wrote a blog post a few months ago about being a craftsman that really resonated with me. I started to realize that I should treat what I do as a craft. I discovered this article around the same time that I read "Be the Master" by Don Jones. It kinda changed the way that I viewed my career. Thanks for the great content, Josh.
 
 I ran into [Mark Kraus](https://twitter.com/markekraus) and had to get a photo with him. My long term goal for myself is to have a grasp on technology to the degree that he does. It's so awesome to see what he's done with the web cmdlets and he is super helpful in the community. I actually bought him reddit gold at one point because I was shocked at how friendly and open he is to sharing his knowledge so it was cool to meet him in person. Rock on, Mark!
-
 ![Mark]({{ "/assets/mark.jpg" | absolute_url}})
 
-Fred really helped me feel like I was ready for the Summit. He helped me a bunch leading into the Summit and even walked me through my first contribution to a project on Github! He re-ignited my fire for PowerShell Studio as well. His passion for Powershell is infectious!
+Fred really helped me feel like I was ready for the Summit. He helped me a bunch leading into the Summit and even walked me through my first contribution to a project on Github! He re-ignited my fire for PowerShell Studio as well. His passion for Powershell is infectious and I really appreciate how much time he spent on me!
 
-I got to meet both [Jeffrey Snover](https://twitter.com/jsnover) and [Jason Helmick](https://twitter.com/theJasonHelmick), their [MVA course](https://mva.microsoft.com/en-US/training-courses/getting-started-with-microsoft-powershell-8276) really got me going with powershell. I didn't get to grab a photo with Jason, but I did get one with [Bruce Payette](https://twitter.com/BrucePayette) and Jeffrey Snover.
+I got to meet both [Jeffrey Snover](https://twitter.com/jsnover) and [Jason Helmick](https://twitter.com/theJasonHelmick), their [MVA course](https://mva.microsoft.com/en-US/training-courses/getting-started-with-microsoft-powershell-8276) really got me going with powershell. I didn't get to grab a photo with Jason, but I did get one with a hungry [Bruce Payette](https://twitter.com/BrucePayette) and Jeffrey Snover.
+![Killing it!]({{ "/assets/snovermebruce.jpg" | absolute_url}})
+
+[Chris Gardner](https://twitter.com/HalbaradKenafin) is super active on the [PowerShell Slack](http://slack.poshcode.org/) and has helped me on several occasions. I was looking forward to meeting him, but on the second night I wondered how I hadn't run into him yet. It turns out that I just hadn't connected the dots that he was actually Chris Gardner. He works with this lively developer, [Riccardo Viglianisi](https://twitter.com/CaptainShmaser), who is an absolute blast to hang out with. After the pub crawl on Thursday 7 of us got an UberX to head back to the Hotel for the night. It turns out that we had the coolest Uber driver ever and she let us play music. We had our own version of Karaoke and it was so much fun just letting loose.
 
 ## Major Takeaways
 
