@@ -32,7 +32,7 @@ There was an event that evening that involved Alchohol and talking, which is a c
 
 I went out to dinner with a large group and ended up stumbling into Kris Powell (the man that I yelled at from an Uber) and Jordan Hammond who both work for a company that makes a product that we use at work, PDQ. They both post blog articles and occasionaly host the weekly webcast that they do. We got to talk shop about their product and got to talk about some awesome powershell stuff. Their webcasts originally got me started into automation and prompted me to buy the first Month of Lunches book. 
 
-![Kris Powell (left) and Jordan Hammand(right)]({{"/assets/images/pdqguys.jpg" | absolute_url}})
+![Kris Powell (left) and Jordan Hammand(right)]({{"/assets/pdqguys.jpg" | absolute_url}})
 
 I went back for a drink at the hotel bar and ran into a whole slew of fantastic people that I would grow closer with as the week went on. It was so special to just feel comfortable walking up to a group of PowerShellers and just hop right in. I got so much fantastic advice from people over the course of the week in that bar/lounge area. I got to become friends with quite a few killer people. A lot of the social events ended up being more valuable than some of the sessions and that isn't to downplay the sessions; they were fantastic. There just something about being able to have a conversation with other people and share experiences and different things we've encountered in PowerShell. 
 
@@ -40,7 +40,7 @@ I went back for a drink at the hotel bar and ran into a whole slew of fantastic 
 
 After going back and forth several times I decided that I was going to go through with the lightning demo. I nervously typed up my entry and submitted it to Warren Frame. I'm usually comfortable on stages, but it was pretty intimidating being in front of a whole bunch of people. I nervously sipped down my coffee and headed on stage. It went well and I was relieved that I had actually done it. I look forward to being more comfortable on stage next time and it was a great chance to get my feet wet. Thanks so much to [Chris Gardner](https://twitter.com/HalbaradKenafin) and [Herb Martin](https://twitter.com/HerbMartin) for really encouraging me to do the lightning demo. There were a lot of really interesting lightning demos and I was mostly just relieved that I had gotten it out of the way.
 
-![Lightning Demo! -Photo by @LazyWinAdm]({{ "/assets/images/lightningdemo.jpg" | absolute_url}})
+![Lightning Demo! -Photo by @LazyWinAdm]({{ "/assets/lightningdemo.jpg" | absolute_url}})
 
 I decided to get a few people together to go to dinner.
 
