@@ -46,12 +46,11 @@ After going back and forth several times I decided that I was going to go throug
 
 After the lightning dinners were over I decided to get a few people together to go to dinner. I think that a conversation with Fred, Josh King, and Mathias would be fantastic so I reached out to them and made plans. We went to a great dinner and got a couple of friends, [Jeffrey Hayes](https://twitter.com/jeffery_hayes) and [Scott Dowling](https://twitter.com/ScriptingKnurd) joined us. If you are going to be a first time summiteer you definitely should reach out to people and take initiative. We went to a place that Fred really raved about. We had great food and great conversations.
 
-![Andrew Josh Fred]({{ "/assets/andrewjoshfred.jpg" | absolute_url}})
+![Andrew Josh Fred]({{ "/assets/andrewjoshfred-min.jpg" | absolute_url}})
 Me, Josh, and Fred!
 
-![postdinner]({{ "/assets/postdinner.jpg" | absolute_url}})
+![postdinner]({{ "/assets/postdinner-min.jpg" | absolute_url}})
 Mathias, Jeffery, Scott, Fred, Josh, and me!
-
 
 ## Meeting Mentors/Friends
 
