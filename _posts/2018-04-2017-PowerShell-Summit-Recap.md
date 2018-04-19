@@ -33,9 +33,14 @@ There was an event that evening that involved Alchohol and talking, which is a c
 
 #### Dinner and Drinks - Hey awesome guy!
 
-I went out to dinner with a large group and ended up stumbling into Kris Powell (the man that I yelled at from an Uber) and Jordan Hammond who both work for a company that makes a product that we use at work, PDQ. They both post blog articles and sometimes host the weekly webcast that they do. We got to talk shop about their product and got to talk about some awesome powershell stuff. Their webcasts originally got me started into automation and prompted me to buy the first Month of Lunches book. 
+I went out to dinner with a large group and ended up stumbling into Kris Powell (the man that I yelled at from an Uber) and Jordan Hammond who both work for a company that makes a product that we use at work, PDQ. They both post blog articles and occasionaly host the weekly webcast that they do. We got to talk shop about their product and got to talk about some awesome powershell stuff. Their webcasts originally got me started into automation and prompted me to buy the first Month of Lunches book. 
 
 ![Kris Powell (left) and Jordan Hammand(right)](/assets/pdqguys.jpg){:class="img-responsive"}
+
+
+I went back for a drink at the hotel bar and ran into a whole slew of fantastic people that I would grow closer with as the week went on. It was so special to just feel comfortable walking up to a group of PowerShellers and just hop right in. I got so much fantastic advice from people over the course of the week in that bar/lounge area. I got to become friends with quite a few killer people. A lot of the social events ended up being more valuable than some of the sessions and that isn't to downplay the sessions; they were fantastic. There just something about being able to have a conversation with other people and share experiences and different things we've encountered in PowerShell. 
+
+
 
 #### Lightning Demo!
 
@@ -59,7 +64,9 @@ Josh Duffield was freaking awesome to meet! He wrote a blog post a few months ag
 
 Fred really helped me feel like I was ready for the Summit. He helped me a bunch leading into the Summit and even walked me through my first contribution to a project on Github! He re-ignited my fire for PowerShell Studio as well. His passion for Powershell is infectious!
 
-I got to meet both [JefferySnover](https://twitter.com/jsnover) and [Jason Helmick](https://twitter.com/theJasonHelmick), their MVA series really got me going in PowerShell early on. I particularly like how 
+I got to meet both [Jeffrey Snover](https://twitter.com/jsnover) and [Jason Helmick](https://twitter.com/theJasonHelmick), their [MVA course](https://mva.microsoft.com/en-US/training-courses/getting-started-with-microsoft-powershell-8276) really got me going with powershell. I didn't get to grab a photo with Jason, but I did get one with [Bruce Payette](https://twitter.com/BrucePayette) and Jeffrey Snover.
+
+
 
 #### Major Takeaways
 
@@ -76,21 +83,4 @@ I learned that taking the initiative and starting conversations can be extremely
 I made so many great friends at this event. 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-#### First Uber Ride + Corgis(sort of)!
-
- 
-#### Hotel, Motel, Seattle Marriott
-
+I was talking to [Charles Jones](https://twitter.com/charleswj81) and when he described the way that he approaches learning about things it really gave me insight into some changes that I need to be making in my approach. 
