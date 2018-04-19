@@ -1,4 +1,4 @@
-`````# PowerShell Summit
+## PowerShell Summit
 
 Goodness gracious that was fun! I was fortunate enough to attend the PowerShell Summit after getting the Scholarship. That was the best week of my life. It was something that I was massively looking forward to for so long. I was super nervous, but I also knew that it would be an amazing time and an amazing oppourtunity. I'm going to go over some of the major takeaways for me at this event and then I will hit on some of the awesome social interactions that I had.
 
