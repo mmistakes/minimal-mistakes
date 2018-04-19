@@ -1,8 +1,8 @@
-## PowerShell Summit
+# PowerShell Summit
 
 Goodness gracious that was fun! I was fortunate enough to attend the PowerShell Summit after getting the Scholarship. That was the best week of my life. It was something that I was massively looking forward to for so long. I was super nervous, but I also knew that it would be an amazing time and an amazing oppourtunity. I'm going to go over some of the major takeaways for me at this event and then I will hit on some of the awesome social interactions that I had.
 
-#### Scholarship!!!
+## Scholarship
 
 I was browsing twitter and keeping up with all of the cool new PowerShell happenings when I stumbled across the scholarship application form. As I started reading through it I knew that this was an amazing opportunity that I couldn't pass on. I got a babysitter for the kids and began writing my application. I touched on all of the fantastic things that PowerShell has enabled me to do so far, as we all some of the adversity that I have experienced in life. I submitted it not feeling all too confident, but was satisfied that I at least took the opportunity.
 
@@ -12,12 +12,9 @@ This came at such a perfect point in my life as well. Just a few months prior to
 
 I guess this is a bit of an aside, but I can't stress the timing of everything. Things were pretty dark for me and it felt like receiving this opportunity was my chance to move on and get some awesome things going in my life. Everything about this whole experience has felt so surreal, maybe I will be able to have a better understanding of everything in the future because it still feels like I'm living a dream.
 
-So now that I have the scholarship, what am I going to do with it? I had no choice but to try to dive as deep into powershell as I could in the months leading up to the Summit. I reread the MoL books, played with PS at every opportunity, and read as many blogs as I could get my hands on. In the end I think that I ended up burning myself out a bit, but it worked out. I got tons of help from some awesome community members along the way. 
+So now that I have the scholarship, what am I going to do with it? I had no choice but to try to dive as deep into powershell as I could in the months leading up to the Summit. I reread the MoL books, played with PS at every opportunity, and read as many blogs as I could get my hands on. In the end I think that I ended up burning myself out a bit, but it worked out. I got tons of help from some awesome community members along the way.
 
-
-
-
-#### Trip Time
+### Trip Time
 
 Whew I had an insane amount of anxiety prior to this trip. I've been working from home for a while now and leaving that environment was really strange.  I didn't sleep at all the night before my flight, but I knew that I was going to have fun once I got there. I got some advice from the community that I should do a lightning demo without question. They told me that it was a fantastic chance to get some experience speaking. I decided that I wasn't going to worry about committing to the lightning demo quite yet. I needed to arrive and get acclimated before I threw on a bit more stress. It was always in the back of my head though, darn anxiety!
 
@@ -31,7 +28,7 @@ I arrive at the Hotel and get settled in. The anxiety is gone for the most part 
 
 There was an event that evening that involved Alchohol and talking, which is a combination that I'm fond of. I met up with this awesome dude, [Mark Kellerman](https://twitter.com/mkellerman) and we chatted for a bit which broke the ice for me at the event. This was his first time at the Summit as well and I felt much more relaxed after having a conversation with someone and realizing that everyone here is a person, not a rockstar like I want to believe.  I went full social butterfly mode. I don't really know what it was, but everything felt so right and comfortable. I felt like I was with my people. I bumped into several people at the event, and eventually ran into [Fred](https://twitter.com/FredWeinmann) and [Mathias Jessen](https://twitter.com/IISResetMe). We went out for dinner and I had a blast. The whole time I was just in shock that I was getting along so well with everyone and how nice everyone was. It felt like a big family. I went to bed reassured that I was in the right place and I knew that the rest of the trip had a whole lot more awesome in store.
 
-#### Dinner and Drinks - Hey awesome guy!
+#### Dinner and Drinks - Hey awesome guy
 
 I went out to dinner with a large group and ended up stumbling into Kris Powell (the man that I yelled at from an Uber) and Jordan Hammond who both work for a company that makes a product that we use at work, PDQ. They both post blog articles and occasionaly host the weekly webcast that they do. We got to talk shop about their product and got to talk about some awesome powershell stuff. Their webcasts originally got me started into automation and prompted me to buy the first Month of Lunches book. 
 
@@ -40,19 +37,13 @@ I went out to dinner with a large group and ended up stumbling into Kris Powell 
 
 I went back for a drink at the hotel bar and ran into a whole slew of fantastic people that I would grow closer with as the week went on. It was so special to just feel comfortable walking up to a group of PowerShellers and just hop right in. I got so much fantastic advice from people over the course of the week in that bar/lounge area. I got to become friends with quite a few killer people. A lot of the social events ended up being more valuable than some of the sessions and that isn't to downplay the sessions; they were fantastic. There just something about being able to have a conversation with other people and share experiences and different things we've encountered in PowerShell. 
 
+#### Lightning Demo
 
-
-#### Lightning Demo!
-
-After going back and forth several times I decided that I was going to go through with the lightning demo. I nervously typed up my entry and submitted it to Warren Frame. I'm usually comfortable on stages, but it was pretty intimidating being in front of a whole bunch of people. I nervously sipped down my coffee and headed on stage. It went well and I was relieved that I had actually done it. I look forward to being more comfortable on stage next time and it was a great chance to get my feet wet. Thanks so much to [Chris Gardner](https://twitter.com/HalbaradKenafin) and [Herb Martin](https://twitter.com/HerbMartin) for really encouraging me to do the lightning demo. There were a lot of really interesting lightning demos and I was mostly just relieved that I had gotten it out of the way. 
+After going back and forth several times I decided that I was going to go through with the lightning demo. I nervously typed up my entry and submitted it to Warren Frame. I'm usually comfortable on stages, but it was pretty intimidating being in front of a whole bunch of people. I nervously sipped down my coffee and headed on stage. It went well and I was relieved that I had actually done it. I look forward to being more comfortable on stage next time and it was a great chance to get my feet wet. Thanks so much to [Chris Gardner](https://twitter.com/HalbaradKenafin) and [Herb Martin](https://twitter.com/HerbMartin) for really encouraging me to do the lightning demo. There were a lot of really interesting lightning demos and I was mostly just relieved that I had gotten it out of the way.
 
 ![Lightning Demo! -Photo by @LazyWinAdm](/assets/lightningdemo.jpg){:class="img-responsive"}
 
-
-
 I decided to get a few people together to go to dinner.
-
-#### 
 
 #### Meeting Mentors/Friends
 
@@ -66,8 +57,6 @@ Fred really helped me feel like I was ready for the Summit. He helped me a bunch
 
 I got to meet both [Jeffrey Snover](https://twitter.com/jsnover) and [Jason Helmick](https://twitter.com/theJasonHelmick), their [MVA course](https://mva.microsoft.com/en-US/training-courses/getting-started-with-microsoft-powershell-8276) really got me going with powershell. I didn't get to grab a photo with Jason, but I did get one with [Bruce Payette](https://twitter.com/BrucePayette) and Jeffrey Snover.
 
-
-
 #### Major Takeaways
 
 - I'm in the right place doing the right things in life right now.
@@ -80,7 +69,6 @@ I think that Ican provide something to the community and I look forward to contr
 
 I learned that taking the initiative and starting conversations can be extremely rewarding. I had some AMAZING interactions with lots of 
 
-I made so many great friends at this event. 
+I made so many great friends at this event.
 
-
-I was talking to [Charles Jones](https://twitter.com/charleswj81) and when he described the way that he approaches learning about things it really gave me insight into some changes that I need to be making in my approach. 
+I was talking to [Charles Jones](https://twitter.com/charleswj81) and when he described the way that he approaches learning about things it really gave me insight into some changes that I need to be making in my approach.
