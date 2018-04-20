@@ -14,6 +14,7 @@
               <a href="{{ domain }}{{ link.url }}" {% if link.description %}title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
             </li>
           {% endfor %}
+          <a href="#" id="open-popup" onclick ="showMailingPopUp(); return false;">Join Newsletter</a>
         </ul>
         {% if site.search == true %}
         <button class="search__toggle" type="button">
