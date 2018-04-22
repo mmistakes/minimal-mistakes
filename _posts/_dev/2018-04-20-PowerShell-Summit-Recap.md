@@ -73,9 +73,7 @@ I ran into [Mark Kraus](https://twitter.com/markekraus) and had to get a photo w
 
 Fred really helped me feel like I was ready for the Summit. He helped me a bunch leading into the Summit and even walked me through my first contribution to a project on Github! He re-ignited my fire for PowerShell Studio as well. His passion for Powershell is infectious and I really appreciate how much time he spent on me!
 
-[Chris Gardner](https://twitter.com/HalbaradKenafin) is super active on the [PowerShell Slack](http://slack.poshcode.org/) and has helped me on several occasions. I was looking forward to meeting him, but on the second night I wondered how I hadn't run into him yet. It turns out that I just hadn't connected the dots that he was actually Chris Gardner. He works with this lively developer, [Riccardo Viglianisi](https://twitter.com/CaptainShmaser), who is an absolute blast to hang out with. After the pub crawl on Thursday 7 of us got an UberX to head back to the Hotel for the night. It turns out that we had the coolest Uber driver ever and she let us play music. We had our own version of Karaoke and it was so much fun just letting loose.
-
-I really could keep going all day long, but I'm not sure that would be a good read. 
+[Chris Gardner](https://twitter.com/HalbaradKenafin) is super active on the [PowerShell Slack](http://slack.poshcode.org/) and has helped me on several occasions. This guy loves talking about PowerShell. He was so friendly on the PowerShell Slack and made me feel a lot more comfortable posting questions. I've been able to provide for others what he provided for me, which is awesome. He works with this lively developer, [Riccardo Viglianisi](https://twitter.com/CaptainShmaser), who is an absolute blast to hang out with. After the pub crawl on Thursday 7 of us got an UberX to head back to the Hotel for the night. It turns out that we had the coolest Uber driver ever and she let us play music. We had our own version of Karaoke and it was so much fun just letting loose.
 
 ## Major Takeaways
 
