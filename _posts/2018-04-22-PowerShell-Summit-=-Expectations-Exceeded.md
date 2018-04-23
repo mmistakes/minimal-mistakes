@@ -69,8 +69,8 @@ I had a great conversation with [Adam Bertram](https://twitter.com/adbertram), w
 I ran into [Mark Kraus](https://twitter.com/markekraus) and had to get a photo with him. My long term goal for myself is to have a grasp on technology to the degree that he does. It's so awesome to see what he's done with the web cmdlets and he is super helpful in the community. I actually bought him reddit gold at one point because I was shocked at how friendly and open he is to sharing his knowledge so it was cool to meet him in person. Rock on, Mark!
 ![Mark]({{ "/assets/mark.jpg" | absolute_url}})
 
-[Mike F Robbins](https://twitter.com/mikefrobbins) is . Have you checked out his [blog](http://mikefrobbins.com/)? The man is a work horse! What got me the most about Mike is how down to earth and approachable he is. I tune into his [usergroup](http://mspsug.com/) meetings frequently and look forward to unmuting my mic next time and saying hi!
-![MikeRobbins]({{ "/assets/mikefrobbins.jpg" | absolute_url}})
+[Mike F Robbins](https://twitter.com/mikefrobbins) is such a down-to-earth and wholesome guy. Have you checked out his [blog](http://mikefrobbins.com/)? The man is a work horse! What got me the most about Mike is how approachable he is. I tune into his [usergroup](http://mspsug.com/) meetings frequently and look forward to unmuting my mic next time and saying hi!
+![MikeRobbins]({{ "/assets/mikerobbins.jpg" | absolute_url}})
 
 [Richard Siddaway](https://twitter.com/RSiddaway) was a name that I knew was well-respected in the community, but I wasn't familiar with his content going into the Summit. I had several conversations with him over the week and he really made me feel comfortable and welcome. The week started with him introducing me to Jeffrey Snover, and ended with him hooking me up with signed copies of his books. PowerShell in Action is the best technical book I've ever read. It may be the timing of me starting to read it directly after priming my brain at the Summit, but it's pretty technical and still manages to keep a human voice behind it.
 
