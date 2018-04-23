@@ -1,5 +1,3 @@
-# PowerShell Summit - Expectations Exceeded
-
 Holy cow, that was one of the best weeks of my life. This is more of a story than a direct event recap, but I hope that you will follow along. I was fortunate enough to attend the [PowerShell + DevOps Global Summit](https://powershell.org/summit/) after becoming their first [scholarship](https://powershell.org/2017/11/10/powershell-devops-global-summit-2018-scholarship-recipient/) recipient. I could preface things more, but let's just jump in.
 
 ## Pre-Scholarship Quarter-Life Crisis
@@ -89,4 +87,4 @@ I made so many great friends at this event and didn't want to spend too much tim
 - It's okay to be super into something and totally nerd out on it.
 - PowerShell rocks!
 
-The real magic of the event doesn't come from the PowerShell content, but from being immersed in the community. The secret sauce that makes the Summit such a special place is the people. Thank you so much to Powershell.org for everything and I hope that I can be a good model for future scholarship applicants to emulate.
+The real magic of the event doesn't come from the PowerShell content, but from being immersed in the community. The secret sauce that makes the Summit such a special place is the people. Thank you so much to [Powershell.org](https://powershell.org/) for everything and I hope that I can be a good model for future scholarship recipients to emulate.
