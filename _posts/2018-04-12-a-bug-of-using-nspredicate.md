@@ -20,7 +20,7 @@ When running, if user type some symbol characters in text field, like, backslash
 
 After some goggling, I find people with my same problem.
 
-[https://stackoverflow.com/a/13757112/353927](https://stackoverflow.com/a/13757112/353927)
+[https://stackoverflow.com/a/13757112/353927](https://stackoverflow.com/a/13757112/353927){:target="_blank"}
 
 So, as a rule, do **NOT** format the input parameter of method `predicateWithFormat:` in advance, because in `predicateWithFormat:`, it handles some escaping issue for you.
 
