@@ -16,7 +16,7 @@ _In addition, the blog title is deliberately controversial and slightly self dep
 not a strong element of truth. I do feel that my personal experience with Clojure has soured me slightly to a language I
 still love._
 
-Recently I've been working as a Clojure developer on several Clojure and ClojureScript code bases and I've found them to
+Recently I've been working as a Clojure developer on several Clojure and Clojurescript code bases and I've found them to
 share some concerning issues. I can only speak about my experiences and I am sure that these would translate to other
 languages but in this case I'm talking about disillusion with a 'personal hero' (Clojure) in the same way people who
 meet their hero's sometimes feel disappointment.
@@ -35,7 +35,7 @@ others easy. I've stated before that [constraints](https://twitter.com/agile_gee
 thing](https://chrishowejones.wordpress.com/2015/11/04/the-physics-of-software-or-why-i-am-not-a-software-engineer/).
 
 Clojure favours a functional programming style. Although Clojure ultimately ends up compiled to class files
-and JVM bytecode it's really heavy going to try and write Clojure in an imperative style or using an OOP paradigm.
+and JVM byte code it's really heavy going to try and write Clojure in an imperative style or using an OOP paradigm.
 
 Clojure treats data as immutable by default. Although it's possible to write Clojure using mutable data structures and
 'uncontrolled' mutable references it's hard work. The effect of immutable data and controlled mutable references to
@@ -43,7 +43,7 @@ immutable data (e.g. atoms, refs, agents) is that time is treated as a first cla
 
 Changes in state over time are represented as a stream of snapshots of data.
 
-This treatment of data changes over time and the way Clojure defaults to immutablilty tends to move state management to
+This treatment of data changes over time and the way Clojure defaults to immutability tends to move state management to
 the 'edges' of the system. This means that generally Clojure systems tend to have the majority of the code acting as
 pure functions that take in data, transform it and output new data.
 
@@ -67,12 +67,12 @@ on the path to your data.
 Dynamic languages allow you to write and change your code rapidly but that ability comes with a price.
 
 The price of a dynamic language is often described as the fact that compilers cannot type check data at compile time and
-therefore bugs that would be found at compile time creep into runtime and, if your testing is not thorough, into
+therefore bugs that would be found at compile time creep into run time and, if your testing is not thorough, into
 production.
 
 Although true, my personal experience is this is not a big a problem as some might claim. Given that you should adopt a
 thorough testing regime to validate your solution against your design and, more importantly, your business problem, if
-your test feedback loop is short enough this cost of dynamic languages is not enough to negagte the benefits of moving
+your test feedback loop is short enough this cost of dynamic languages is not enough to negate the benefits of moving
 fast.
 
 Before I move off the subject of compile time checking I want to address the argument of many adherents of
@@ -158,9 +158,13 @@ re-assemble this mental model to the same point so you can continue your work.
 
 Why does supporting the building a mental model matter?
 
-It's been widely researched [TODO cite sources here] that developer typically spend xx% [TODO cite percentages here]
-reading code. We spend much more time reading our own old code or reading someone else's code. We need to read code in
-order to determine how to fix a bug, where to add this new feature, etc.
+It's been annocadotely cited developers typically spend 70%+ reading code [[What do Programmers do
+ anyway?](https://blogs.msdn.microsoft.com/peterhal/2006/01/04/what-do-programmers-really-do-anyway-aka-part-2-of-the-yardstick-saga/)]. There
+ is research that suggests that when maintaining code 62% of the code read by a developer is used for context and is not
+ directly changed during the maintenance [[Towards Understanding How Developers Spend Their Effort During Maintenance
+ Activities](http://swat.polymtl.ca/~foutsekh/docs/wcre13main-idm125-p-19100-submitted.pdf)].  We spend much more time
+ reading our own old code or reading someone else's code. We need to read code in order to determine how to fix a bug,
+ where to add this new feature, etc.
 
 Given this effort spent in reading and understanding code, anything that helps a developer build and maintain a mental model is worth having.
 
@@ -199,11 +203,12 @@ drastic effect on the cognitive load required to build and maintain the model of
 progresses through various functions.
 
 At this point I have to diverge a bit to how I learn things and how I come to an understanding of the systems,
-technologies and languages I work with. My learning style [TODO - research learning styles and cite references] is best
-described as learning through doing combined with reinforcement through repetition. I tend, as do most people, to make
-judgements and assumptions through pattern matching. I learn patterns and what they mean, search for those patterns when
-scanning code and then replace the pattern I've identified with the learned concept. This is what allows me to scan code
-and make sense of it at a reasonable pace.
+technologies and languages I work with. My learning style is best described as learning through doing, combined with
+reinforcement through repetition. So in [Honey and Mumford's learning
+styles](https://resources.eln.io/honey-and-mumford-learning-styles/) I would probably sit somewhere between Activist and
+Pragmatist. I tend, as do lots of people, to make judgements and assumptions through pattern matching. I learn patterns
+and what they mean, search for those patterns when scanning code and then replace the pattern I've identified with the
+learned concept. This is what allows me to scan code and make sense of it at a reasonable pace.
 
 Even given this pattern matching I often have to apply the associated pattern to the inputs to produce a model of the
 outputs i.e. the local data model input for that function produces the local output model which becomes the input to the
@@ -223,13 +228,13 @@ However, Clojure is still fairly young and these idioms and (to use a dirty word
 constantly evolving being tested and sometimes rejected. For example, just a few years ago Stuart Sierra's component
 library seem to universally pepper all code bases. It was often miss-used[^1] as a substitute for dependency injection
 and therefore appear liberally scattered through the code base at multiple levels. This over use of a good thing
-resulted in some code smells that have since been recognised as it resulted in artificial coupling and complication.
+resulted in some code smells that have since been recognised, as it resulted in artificial coupling and complication.
 
 # Seeking Clojure #
 
 So, I've spent some time talking about generic issues I have with larger more complex Clojure/Clojurescript code bases
-which mainly comes down to being able to work out what the shape of the data is at the time a particular function is
-called plus needing higher level idioms (or patterns) that I can use to relieve the cognitive load and shortcut having
+which mainly comes down to; being able to work out what the shape of the data is at the time a particular function is
+called, plus needing higher level idioms (or patterns) that I can use to relieve the cognitive load and shortcut having
 to decode every function in detail to make sense of what I'm reading.
 
 ## Maintaining Mental Data Model ##
@@ -252,7 +257,7 @@ therefore your mental model of the data becomes less about the 'shape' (which ca
 and becomes more about the values of a complex type.
 
 It is worth recognising though that good typing systems (mostly Hindley-Milner derived systems) do constrain the problem
-of mental model maintenance to only runtime state.
+of mental model maintenance to only run time state.
 
 ## Patterns (you idiom!)  ##
 
@@ -260,7 +265,7 @@ of mental model maintenance to only runtime state.
 
 _Of course not._
 
-It's even more ridiculous to suggest that Clojure/Clojurescripts missing patterns and idioms are only applicable to
+It's even more ridiculous to suggest that Clojure/Clojurescript missing patterns and idioms are only applicable to
 Clojure. At it's furthest logical extension, if a language had every idiom/pattern it would inherently contain every
 program ever written or every program ever to be written.
 
@@ -312,11 +317,33 @@ If namespaces and naming of variables are used effectively they can help minimis
 model of the inputs and outputs to a function. Good naming of arguments and local references can give you a head start
 in figuring out what the input and output data looks like.
 
-One of the Clojure developers I worked with and have a lot of respect for (John Cowie) suggested that developers use
-namespaces to separate out the data manipulation code that requires, and in some ways defines the 'shape' of the data,
+One of the Clojure developers I worked with and have a lot of respect for ([John Cowie](https://twitter.com/johnacowie)) suggested that developers use
+namespaces to separate out the data manipulation code that requires, and in some ways defines, the 'shape' of the data
 so that developers have one place to go to find that mental model. Although, I agree with this approach, this only
 tackles part of the problem. The 'data model' for the data at the interfaces of the system, input and output, can be
 isolated in this way.
+
+Having said that there are frequently significant points in the transition of data from one state to another where
+judicious use of namespaces to cluster functions that describe the transition of one state to another can be collected
+together even if this state is transient. Recognising these state transition points and the decision to model the state
+at this point is a key skill. This is an area where having a static typing system tends to force thought about how to
+model data where a dynamic typing system can make the decisions more lazily, which is easier when discovering the shape
+of a problem but carries an ongoing cost in maintenance if the model is not made explicit in refactoring.
+
+## Separate your concerns ##
+
+The idea of separation of concerns is closely tied into the discussion above on namespaces and on the discussions below
+on function naming and sizing.
+
+Keeping code that is purely about operational or cross cutting concerns separate from the code that describes the
+business problems makes it easier to reason about.
+
+At it's simplest, there should be namespaces that are about operational/cross cutting concerns, namespaces describing
+the business problem and namespaces that effectively wire things from the other two together. That last category is much
+reduce by the use of a framework, but taking on a framework comes with the cost of making the way things are wired up
+implicit rather than explicit.
+
+Where I've seen large Clojure and ClojureScript codebases go astray is in not separating out these three concerns.
 
 ## Scheming Specs ##
 
@@ -324,10 +351,11 @@ The data flowing into and out of each function is linked to the function. Judici
 functions that manipulate data at the boundaries of the system is a useful technique, however each functions 'interface'
 depends on where it is in the call stack so there is a requirement to define the interfaces to a function.
 
-Clojure 1.9 provides Spec to help with exactly this problem and before Spec there was Plumatic Schema [TODO - provide
-references to Spec and Schema]. The advantage of both of these libraries is that you can move fast, not specifying the
-input and output data, to start with and add the detail when the problem is better understood. Getting the best (and
-arguably worst?) of both worlds between static and dynamic typing.
+Clojure 1.9 provides Spec to help with exactly this problem and before Spec there was Plumatic Schema
+[[spec](https://clojure.org/guides/spec) and [schema](https://github.com/plumatic/schema)]. The advantage of both of
+these libraries is that you can move fast, not specifying the input and output data, to start with and add the detail
+when the problem is better understood. Getting the best (and arguably worst?) of both worlds between static and dynamic
+typing.
 
 However, specifying the arguments to every function in detail without a compiler to verify that specification is a very
 laborious task. In addition, in my experience, just like adding tests later, adding Spec/Schema later rarely happens.
@@ -335,30 +363,85 @@ laborious task. In addition, in my experience, just like adding tests later, add
 I've also found, due to the inertia provided by the effort of layering on Spec or Schema after the implementation of
 functions, it's usually only carried out at the boundaries of the system again.
 
-# [TODO - suggestions to fix issues above] #
+I wonder if there's a discipline, like TDD, that would encourage this documentation of data models as an integral part
+of the development cycle. However, as is the case with most things that support code maintenance and readability, this
+always comes down to developer discipline.
 
-  * Naming
-  * Namespaces for the business data model
-  * Namespaces for the operational concerns
-  * Keep code simple
-  * Solve the business problem
-  * Spec or Schema used as you develop to document/enforce the business data model
-  * TDD - tests by example to document the expected i/o's in a function
-  * smaller more generic functions composed in larger ones - obvious but I see far too many specific fn's cos they're
-  easier to build
-  * separate business rules from the operational concerns of the system (ideally, delegate the operational concerns to
-    a framework)
-  * Write code for understandability first
-      * pair programming
-      * code reviews
-  * Discipline
-  * Discipline
-  * Discipline
+## Simple and small ##
 
-The things I have talked about apply equally to other langauges but other languages manifest these concerns
+Keeping functions very simple and small helps to promote functional composition and therefore reuse. In addition, each
+small function is easier to understand in isolation. If this is combined with naming functions and function arguments in
+a way that facilitates understanding at a glance this helps alleviate the cognitive load of scanning and understanding
+code.
+
+Clojure code can frequently get 'dense' so don't be afraid to split code up into smaller functions. Use 'scoping' within
+functions to add clarity such as using let or letfn and temporary variables. Using named functions (even locally named
+in a let or letfn) instead of lambdas for anything other than trivial functions helps with intent and makes code more
+readable.
+
+## Name your function ##
+
+Naming functions and function arguments is critical to understanding the code base when reading it and as developers
+spend approximately 70% of our time reading and understanding code already written taking time to get names right is
+worth the effort.
+
+Obviously naming functions in a way that clearly indicates their purpose is a good practice that should be followed
+regardless of programming language.
+
+Naming arguments is a slightly more contentious discussion. There's a school of thought in the functional programming
+world in particular that suggests that functions can be decomposed to the point that they are very generic. Once
+functions are decomposed to the point that they are highly parameterically polymorphic then argument names become more
+generic as the function can support many types and therefore the argument names must be generic by definition. This
+tends to lead to argument names such as `x` or `xs` [[When x, y and z are great variable
+names](http://blog.ploeh.dk/2015/08/17/when-x-y-and-z-are-great-variable-names/)]. However, functions higher up the call
+stack, that are the point of composition of many of these generic functions probably need more specific function names
+and argument names.
+
+## 'Pair' down your code ##
+
+Using pair programming provides a number of advantages. I like to think of modern software development techniques as
+being all about feedback. I've already mentioned TDD and REPL based development provides this kind of feedback, as does
+BDD, but Pair Programming provides more than one feedback loop.
+
+Pairing on code can help provide feedback on whether the code is still focused on solving the problem; as the Navigator
+can keep an eye on 'the forest' while the Driver focuses on 'the tree'. By this I mean the person watching and
+commenting (the Navigator) is keeping their focus on the design of the code and how it solves the bigger problem and the
+person typing (the Driver) is keeping their focus on the detailed implementation and low level design.
+
+However, pairing also provides another feedback loop. Having two people agree on names, how far to decompose a function,
+how to structure the code etc. means that the code is more likely to be understood by a third or fourth person.
+
+# Conclusion #
+
+The things I have talked about apply equally to other languages but other languages manifest these concerns
 differently. Typically, other languages have widely adopted frameworks and patterns/idioms. TDD is often better accepted
 in other languages as an approach that brings benefits beyond feedback and verification.
 
-[^1]: Stuart has been quite clear that the intent of his component library is to support the reloading required in a
-    REPL driven style of development. The rule of thumb is that a 'component' has a lifecycle i.e. it has a start and a
-    stop with, optionally, associated set up and tear down.
+The conclusion I draw is very subjective but for me it's that I've seen a lot of Clojure that get's the job done but has
+less focus on maintainability of code.
+
+This all comes down to developer discipline.
+
+It is possible using REPL driven development to safely produce Clojure that provides the required functionality with
+little or no supporting tests to document those REPL based experiments for others (or for the future self of the
+author!).
+
+It is common for Clojure code to not clearly separate the business problem from the cross cutting concerns. This is in
+no way unique to Clojure but other languages that use frameworks and patterns more tend to encourage this
+separation. This is not always the best separation, how many web applications are just separated by their function as a
+web app rather than the business function? For example, I must have read dozens of codebases that have packages and
+namespaces that are named, view, model and controllers. However, having something that encourages this separation is a
+good start.
+
+I have rarely seen the clear documentation of data flowing between states in functions in the Clojure/ClojureScript code
+bases I've worked with.
+
+My feelings are that these issues are more to do with a lot of Clojure/ClojureScript developers being new converts to
+the language and are focused on just getting stuff to work rather than an inherent problem with the language. Having
+said that I can't say I don't have 'type envy' when looking at languages such as Elm and Haskell.
+
+If there's one developer discipline I think may help with these issues it's probably Pair Programming. Having two
+developers agree that the code is understandable is exponentially better than one developers view of the code when they
+have a clear mental model of the code at the time of writing.
+
+[^1]: Stuart has been quite clear that the intent of his component library is to support the reloading required in a REPL driven style of development. The rule of thumb is that a 'component' has a lifecycle i.e. it has a start and a stop with, optionally, associated set up and tear down.
