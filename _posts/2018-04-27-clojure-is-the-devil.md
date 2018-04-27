@@ -301,7 +301,7 @@ accepted. Interestingly, I think that the Clojurescript community is slightly ah
 most popular 'micro-framework' that is used, even Re-frame is built on top of Reagent.
 
 So I would contend that having an accepted widely adopted set of frameworks for common problems (web development,
-distributed stream processing, distributed messaging, etc.) provides developers, use the recognition of patterns in
+distributed stream processing, distributed messaging, etc.) provides developers, using the recognition of patterns in
 code, with a short hand to enable them to build a mental model of the system.
 
 This is where I disagree with most of the Clojure community. Frameworks are not evil (yes, even Spring is not evil - I
