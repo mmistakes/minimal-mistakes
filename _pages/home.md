@@ -14,14 +14,6 @@ feature_row:
     btn_label: "Learn More"
     btn_class: "btn--info"
     caption: "Photo credit: Adam Rivers"
-  - image_path: /assets/images/clem-onojeghuo-210707.jpg
-    alt: "Help Wanted"
-    title: "Postdoc available"
-    excerpt: "A joint UF-ARS postdoc is available"
-    url: "/posts/postdoc-position"
-    caption: "Photo credit: Clem Onojeghuo on [Unsplash](https://unsplash.com/photos/fY8Jr4iuPQM)"
-    btn_label: "Learn More"
-    btn_class: "btn--info"
   - image_path: /assets/images/metatranscriptomics.jpg
     alt: "Posts"
     title: "Posts and News"
