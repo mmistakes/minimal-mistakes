@@ -63,7 +63,7 @@ facts give some advantages but bring along some baggage.
 
 As Clojure is quite young I think the Clojure development community is still figuring out the best patterns and idioms
 to apply and the pitfalls to avoid. Although languages like Java and C# probably have more inherent flaws than Clojure
-their usage patterns are well understood in most situations and therefore, once these patterns are learned, they're
+their usage patterns are well understood in most situations and therefore, once these patterns are learned, their
 flaws are papered over quite well.
 
 As stated above Clojure is dynamically typed. Some of the advantages of a dynamic language are that it's great at
@@ -154,7 +154,8 @@ learning curve for Clojure is worth it are predicated on whether 'you want to ta
 time'. I agree with this assessment but I would use the same phrase as justification for most of my complaints about the
 impact of using Clojure without a lot of discipline.
 
-Most of the pain I've felt on the larger evolving Clojure/Clojurescript codebases I've worked come down to one thing,
+Most of the pain I've felt on the larger evolving
+Clojure/Clojurescript codebases I've worked on comes down to one thing,
 holding a mental model of the system in my head.
 
 All codebases require a developer to build, maintain and persist a mental model of the system in her head. This mental
@@ -201,13 +202,13 @@ depths of the system this is often really hard. It's often not obvious what the 
 Often in order to work out the inputs and outputs of a function you need to trace backwards through the stack of
 functions in order to just work out what the data looks like. Although you also frequently have to do this with
 statically typed languages to determine the exact values of the types you can at least determine what the types are by
-looking at the type signature is. This is one of the big disadvantages of a dynamically typed language.
+looking at the type signature. This is one of the big disadvantages of a dynamically typed language.
 
 ## Models that are mental ##
 
 I've found, in any Clojure/Clojurescript code bases that are more than trivial in size, the effort of building and
 maintaining this mental model of the data through a pipeline of functions becomes considerable. This effort gets worse
-exponentially dependent on coding style differences therefore the number of developers working on a code base has a
+exponentially dependent on coding style differences, therefore the number of developers working on a code base has a
 drastic effect on the cognitive load required to build and maintain the model of the data and it's changes as it
 progresses through various functions.
 
@@ -234,9 +235,9 @@ code into namespaces. These idioms are arriving fast and are adopted quickly in 
 Spec/Schema, the use of core.async to provide asynchronous communication or even to decouple parts of a system.
 
 However, Clojure is still fairly young and these idioms and (to use a dirty word in the community) patterns are
-constantly evolving being tested and sometimes rejected. For example, just a few years ago Stuart Sierra's component
+constantly evolving, being tested and sometimes rejected. For example, just a few years ago Stuart Sierra's component
 library seem to universally pepper all code bases. It was often miss-used[^1] as a substitute for dependency injection
-and therefore appear liberally scattered through the code base at multiple levels. This over use of a good thing
+and therefore appeared liberally scattered through the code base at multiple levels. This over use of a good thing
 resulted in some code smells that have since been recognised, as it resulted in artificial coupling and complication.
 
 # Seeking Clojure #
@@ -292,7 +293,7 @@ However, using libraries composed together comes with a cost. The cost is that e
 differently so it takes cognitive load to build the mental model of the 'tree'.
 
 Frameworks give the basic shape of the tree for 'free'. The cost in most frameworks is that you have to learn a more
-complex 'tree' if you need it to do something obscure you have to work out how to configure the correct 'branch' or
+complex 'tree'. If you need it to do something obscure you have to work out how to configure the correct 'branch' or
 'twig', or, in the worst case, you may not be able to do the obscure thing inside the framework. However, with a small
 effort, you can learn the trunk and the main branches and then rely on applying this pattern to all similar systems.
 
@@ -403,7 +404,7 @@ functions are decomposed to the point that they are highly parameterically polym
 generic as the function can support many types and therefore the argument names must be generic by definition. This
 tends to lead to argument names such as `x` or `xs` [[When x, y and z are great variable
 names](http://blog.ploeh.dk/2015/08/17/when-x-y-and-z-are-great-variable-names/)]. However, functions higher up the call
-stack, that are the point of composition of many of these generic functions probably need more specific function names
+stack, that are the point of composition of many of these generic functions, probably need more specific function names
 and argument names.
 
 ## 'Pair' down your code ##
