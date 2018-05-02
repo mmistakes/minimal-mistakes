@@ -12,16 +12,16 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" #"default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "DatAI"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+name                     : "Marko Mitic"
+description              : "A blog on every day Data Science and Machine Learning problems."
+url                      : "https://mmitic.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
@@ -35,10 +35,10 @@ comments:
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
-    num_posts            : # 5 (default)
+    num_posts            : 3 # 5 (default)
     colorscheme          : # "light" (default), "dark"
 staticman:
-  allowedFields          : # ['name', 'email', 'url', 'message']
+  allowedFields          : ['name', 'email', 'url', 'message']
   branch                 : # "master"
   commitMessage          : # "New comment."
   filename               : # comment-{@timestamp}
@@ -97,10 +97,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Marko Mitic"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
+  bio              : "Data Scientist"
+  location         : "Serbia"
   email            :
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
