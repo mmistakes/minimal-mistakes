@@ -689,6 +689,7 @@ analytics:
   provider: "google-gtag"
   google:
     tracking_id: "UA-1234567-8"
+    anonymize_ip: false # default
 ```
 
 To use another provider not included with the theme set `provider: "custom"` then add their embed code to `_includes/analytics-providers/custom.html`.
