@@ -1,6 +1,6 @@
 language: ruby
 cache: bundler
-gemfile: docs/Gemfile
+gemfile: docs/Gemfile.travis
 script:
   - bundle exec jekyll algolia --source docs --destination docs/_site --config docs/_config.travis.yml
 branches:
