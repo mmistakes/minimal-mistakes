@@ -66,7 +66,6 @@ capacityConstraints =
         (flow.sum('*',i,j) <= capacity[i,j] for i,j in arcs), "capacity")
 ```
 
-
 There is also special sauce occuring in the `flow.sum('*',i,j)` syntax. `flow` is a dictionary which is indexed by a 3 element tuple. What this `sum()` method is doing is summing across all elements in the dictionary which fit the pattern. The `*` symbol is a wildcard and will match against any element. This is a powerful way to sum across dimensions of the optimization model.
 
 #### With Gurobi.Fsharp
