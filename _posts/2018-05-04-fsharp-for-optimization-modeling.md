@@ -2,7 +2,7 @@ I recently attended a training event hosted by Gurobi. For those who don't know,
 
 Using a mathematical solver requires the ability to formulate models and at this time one of the easiest languages for doing that is Python. Python is a great language for many use cases. One is providing a quick and easy means of formulating models that can then be fed to a solver. I was able to spend some time with one of the engineers who implemented Gurobi's Python library, `gurobipy`. He pointed to the formulation of the `netflow` problem as an example of how terse and concise Python could be for modeling.
 
-Since I love F#, I naturally wanted to see if I could accomplish the same thing using F#. What started as a silly proof of concept is slowly turning into a more full fledged library for wrapping the Gurobi .NET library in a functional F# wrapper. Below I give an example of how the power of functions in F# allows us to nearly duplicate the functionality of Python.
+Since I love F#, I naturally wanted to see if I could accomplish the same thing using F#. What started as a silly proof of concept is slowly turning into a more full fledged library for wrapping the Gurobi .NET library in a functional F# wrapper. Below I give an example of how the power of functions in F# allows us to nearly duplicate the functionality of Python. The library I am working on can be [found here](https://github.com/matthewcrews/fsharp-gurobi-test).
 
 > ***Note*** I am not saying one language is better than another. I merely like to challenge myself with formulating ideas in different languages. It forces me to translate across paradigms which I find a useful exercise for the mind.
 
