@@ -1,3 +1,6 @@
+---
+published: true
+---
 I recently attended a training event hosted by Gurobi. For those who don't know, Gurobi produces one of the best mathematical solvers in the industry. It was a great event and we were able to spend ample time with engineers and experts in the field.
 
 Using a mathematical solver requires the ability to formulate models and at this time one of the easiest languages for doing that is Python. Python is a great language for many use cases. One is providing a quick and easy means of formulating models that can then be fed to a solver. I was able to spend some time with one of the engineers who implemented Gurobi's Python library, `gurobipy`. He pointed to the formulation of the `netflow` problem as an example of how terse and concise Python could be for modeling.
@@ -12,13 +15,15 @@ The following shows an example of a network flow problem provided by Gurobi and 
 
 > ***Disclaimer***: All Python code is copyrighted by Gurobi Optimization, LLC
 
-### Creating a model
+### Creating a Model
 
 #### Python
 
 In Python the creation of the model and decision variables is quite straightforward.
 
 ```python
+# Copyright 2018, Gurobi Optimization, LLC
+
 # Create optimization model
 m = Model('netflow')
 
@@ -26,20 +31,22 @@ m = Model('netflow')
 flow = m.addVars(commodities, arcs, obj=cost, name="flow")
 ```
 
-#### F#
+#### With Gurobi.Fsharp
 
-In F# we have a similar syntax but instead of `flow` being a `Dictionary` of decision variables, we produce a `Map<string list, GRBDecVar>` which is essentially the same for our purposes.
+In F# we have a similar syntax but instead of `flow` being a `Dictionary` of decision variables indexed by tuples, we produce a `Map<string list, GRBDecVar>` which is essentially the same for our purposes. I am using `string list` as the index instead of tuples because we need an indexer which has dynamic length. I could do it with tuples but it would be less straightforward.
 
 ```fsharp
 // Create a new instance of the Gurobi Environment object
 // to host models
+// create: GRBEnv
 let env = Environment.create
 
 // Create a new model with the environment variable
+// create: env:GRBEnv -> name:string -> GRBModel
 let m = Model.create env "netflow"
 
 // Create a Map of decision variables for the model
-// addVarsForMap <model> <lower bound> <upper bound> <type> <input Map>
+// addVarsForMap: model:GRBModel -> lowerBound:float -> upperBound:float -> varType:string -> indexMap:Map<'a,float>
 let flow = Model.addVarsForMap m 0.0 INF CONTINUOUS costs
 ```
 
@@ -62,11 +69,12 @@ capacityConstraints =
 
 There is also special sauce occuring in the `flow.sum('*',i,j)` syntax. `flow` is a dictionary which is indexed by a 3 element tuple. What this `sum()` method is doing is summing across all elements in the dictionary which fit the pattern. The `*` symbol is a wildcard and will match against any element. This is a powerful way to sum across dimensions of the optimization model.
 
-#### F#
+#### With Gurobi.Fsharp
 
-In F# we can do something similar but instead of having a generator we pass in a lambda to create the constraints.
+In F# we can do something similar but instead of having a generator we pass in a lambda to create the constraints. The sinature of this function for creating the constraint set is: `model->string->string list->(Map<string list, Gurobi.GRBConstr)`
 
 ```fsharp
+// addConstrs: model:GRBModel -> setName:string -> setIndexes: string list list -> constraintFunc:(string list -> ConstraintTuple) -> Map<string list, GRBConstr>
 let capacityConstraints =
     Model.addConstrs m "capacity" arcs
         (fun [i; j] -> (sum flow ["*"; i; j] <== capacity.[[i; j]]))
