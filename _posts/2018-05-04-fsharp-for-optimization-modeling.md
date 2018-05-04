@@ -1,5 +1,3 @@
-# F# for Mathematical Modeling
-
 I recently attended a training event hosted by Gurobi. For those who don't know, Gurobi produces one of the best mathematical solvers in the industry. It was a great event and we were able to spend ample time with engineers and experts in the field.
 
 Using a mathematical solver requires the ability to formulate models and at this time one of the easiest languages for doing that is Python. Python is a great language for many use cases. One is providing a quick and easy means of formulating models that can then be fed to a solver. I was able to spend some time with one of the engineers who implemented Gurobi's Python library, `gurobipy`. He pointed to the formulation of the `netflow` problem as an example of how terse and concise Python could be for modeling.
