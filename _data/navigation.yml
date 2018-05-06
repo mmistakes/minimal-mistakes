@@ -56,6 +56,8 @@ sidebar-menu:
         url: /syllabus
       - title: Розклад роботи гуртків
         url: /process/workshop
+      - title: Сторінка психолога
+        url: /process/psychologist
 
   - title: Звіти директора
     url: /open/report
