@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Consistent Testin"
+title                    : "Consistent Testing"
 title_separator          : "-"
 name                     : "Eugene Kovalcov"
 description              : "Hi, I need to know what is it in order to think"
@@ -98,11 +98,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Eugene Kovalcov"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  bio              : "Привет, возможно, тут будут хорошие статьи о SoapUI, ISQTB, переводы статей J.Bach и M.Bolton"
+  location         : "Omsk"
+  email            : e.kovalcov@gmail.com
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
