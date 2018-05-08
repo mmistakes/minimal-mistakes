@@ -4,13 +4,15 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-05-08T10:40:25-04:00
+last_modified_at: 2018-05-08T10:44:59-04:00
 toc: true
 ---
 
 ## Unreleased
 
 ### Enhancements
+
+* Add GitLab social icon brand color. [#1653](https://github.com/mmistakes/minimal-mistakes/issues/1653)
 
 ### Bug Fixes
 

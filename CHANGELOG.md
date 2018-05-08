@@ -2,6 +2,8 @@
 
 ### Enhancements
 
+* Add GitLab social icon brand color. [#1653](https://github.com/mmistakes/minimal-mistakes/issues/1653)
+
 ### Bug Fixes
 
 * Fix "Back to Top" links on pages that use [header overlays](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#header-overlay).
