@@ -6,6 +6,7 @@
 
 ### Bug Fixes
 
+* Update example Reddit social share interpolation syntax in documentation. [#1656](https://github.com/mmistakes/minimal-mistakes/issues/1656)
 * Fix "Back to Top" links on pages that use [header overlays](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#header-overlay).
 
 ## [4.11.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.11.2)
