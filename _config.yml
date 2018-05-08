@@ -100,7 +100,7 @@ analytics:
 author:
   name             : "Eugene Kovalcov"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Привет, возможно, тут будут хорошие статьи о SoapUI, ISQTB, переводы статей J.Bach и M.Bolton"
+  bio              : "Привет, возможно, тут будут хорошие статьи о SoapUI, технологиям, инструментам, переводы статей J.Bach и M.Bolton"
   location         : "Omsk"
   email            : e.kovalcov@gmail.com
   uri              :
