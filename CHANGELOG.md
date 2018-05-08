@@ -1,3 +1,11 @@
+## Unreleased
+
+### Enhancements
+
+### Bug Fixes
+
+* Fix "Back to Top" links on pages that use [header overlays](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#header-overlay).
+
 ## [4.11.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.11.2)
 
 ### Enhancements

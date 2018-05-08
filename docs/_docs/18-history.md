@@ -4,9 +4,17 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-05-03T19:31:32-04:00
+last_modified_at: 2018-05-08T10:40:25-04:00
 toc: true
 ---
+
+## Unreleased
+
+### Enhancements
+
+### Bug Fixes
+
+* Fix "Back to Top" links on pages that use [header overlays](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#header-overlay).
 
 ## [4.11.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.11.2)
 
