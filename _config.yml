@@ -19,13 +19,13 @@ locale                   : "en-US"
 title                    : "Consistent Testing"
 title_separator          : "-"
 name                     : "Eugene Kovalcov"
-description              : "Hi, I need to know what is it in order to think"
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "Software testing blog"
+url                      : "https://ekovalcov.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
+# words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
@@ -100,7 +100,7 @@ analytics:
 author:
   name             : "Eugene Kovalcov"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Привет, возможно, тут будут хорошие статьи о SoapUI, ISQTB, переводы статей J.Bach и M.Bolton"
+  bio              : "Привет, возможно, тут будут хорошие статьи о SoapUI, технологиям, инструментам, переводы статей J.Bach и M.Bolton"
   location         : "Omsk"
   email            : e.kovalcov@gmail.com
   uri              :
