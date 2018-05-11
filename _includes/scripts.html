@@ -17,6 +17,8 @@
   {%- case search_provider -%}
     {%- when "lunr" -%}
       {% include search/lunr-search-scripts.html %}
+    {%- when "google" -%}
+      {% include search/google-search-scripts.html %}
     {%- when "algolia" -%}
       {% include search/algolia-search-scripts.html %}
   {%- endcase -%}
