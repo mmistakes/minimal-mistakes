@@ -2,11 +2,13 @@
 
 ### Enhancements
 
+* Add "Pets" sample archive page to documentation site. [#1664](https://github.com/mmistakes/minimal-mistakes/pull/1664)
 * Add GitLab social icon brand color. [#1653](https://github.com/mmistakes/minimal-mistakes/issues/1653)
 * Prevent line breaks between FontAwesome icon and text in footer social links. [#1659](https://github.com/mmistakes/minimal-mistakes/issues/1659)
 
 ### Bug Fixes
 
+* Fix link to "Recipes" sample archive on documentation site. [#1664](https://github.com/mmistakes/minimal-mistakes/pull/1664)
 * Update example Reddit social share interpolation syntax in documentation. [#1656](https://github.com/mmistakes/minimal-mistakes/issues/1656)
 * Fix "Back to Top" links on pages that use [header overlays](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#header-overlay).
 
