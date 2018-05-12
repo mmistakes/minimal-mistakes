@@ -1,23 +1,23 @@
 One of the reasons that I love F# is that is makes it incredibly easy to model domains. By creating a Domain Model which represents the business domain it becomes relatively easy to create workflows and algorithms which streamline business process. In this post I show how to create types for a domain which are summable, a feature I use frequently in my work.
 
-## Eliminating Errors by Restricting the Domain
+## The Value of Restricting Values
 
-When I have to create a new Domain Model one of the first things that I do is define the basic building blocks that I am going to work with (Costs, Items, Sales Rates, Days of Inventory, etc.) . For example, when I cam creating an algorithm to evaluate the financial viability of a product on our marketplaces I have to calculate various costs, I therefore create a `Cost` type. In my domain, a `Cost` is never negative therefore I can create a constructor which will enforce this behavior.
+When I have to create a new Domain Model one of the first things that I do is define type aliases of `decimal` for the basic building blocks that I am going to work with (Costs, Items, Sales Rates, Days of Inventory, etc.). For example, when I am creating an algorithm to evaluate the financial viability of a product on marketplaces I have to calculate costs, I therefore create a `Cost` type. In my domain, a `Cost` is never negative therefore I can create a constructor which will enforce this behavior.
 
 ```fsharp
-type Cost = Cost of decimal // Define a type alias for decimal
+type Cost = Cost of decimal // Define a type alias 'Cost' for decimal
 
 module Cost =
-    let create c =
-        if c <= 0 then // Check that the value is greater than 0.0M
-            None
+    let create c =      // Function for creating 'Cost' values
+        if c <= 0 then  // Check that the value is greater than 0.0M
+            None        // Return None if outside bounds
         else
-            Some(Cost c)
+            Some(Cost c)// Return input wrapped in a 'Cost' value
 ```
 
-The beautiful thing about this is that when I am working with a `Cost` type I never have to worry about it being negative. This is a powerful thing when it comes to composing algorithms because I have eliminated a whole host of possible values that I would need to handle. It is amazing how easy it is for a negative number to sneak in and cause havoc. I force myself to deal with this bad data at the boundary of the domain instead of inside the algorithm performing the analysis.
+The beautiful thing about this is that when I am working with a `Cost` type I never have to worry about it being negative. This is a powerful thing when it comes to composing algorithms because I have eliminated a whole host of possible values that I would need to handle. It is amazing how easy it is for a negative numbers to sneak in and cause havoc. I force myself to deal with this bad data at the boundary of the domain instead of inside the algorithm performing the analysis.
 
-## The Downside
+## The Downside: Where Did Addition Go?
 
 There is a downside to doing this though, basic math operations will not work. At this point if I try to add two different `Cost` values I will get a compiler error.
 
@@ -25,7 +25,7 @@ There is a downside to doing this though, basic math operations will not work. A
 let totalCost = cost1 + cost2 // Error: The type 'Cost' does not support the '+' operator
 ```
 
-Fortunately this is easy to overcome. All we need to do is implement this `+` operator for the type.
+Fortunately this is easy to overcome. All we need to do is implement the `+` operator for the type. We do this by adding a `static member` to our type alias. We add the keyword `with` to the end of our previous type alias definition and provide the `+` static member.
 
 ```fsharp
 // Updated definition of 'Cost'
@@ -34,9 +34,9 @@ type Cost = Cost of decimal with
         Cost (c1 + c2)
 ```
 
-The arguments for the `+` function may look a little odd so let me explain. By declaring the arguments of the function as `(Cost c1, Cost c2)` I am telling the compiler that I expect a `Cost` type as the input and I want you to unpack the value inside of `Cost` and put it in `c1` and `c2` respectively. This allows me to work with the `decimal` values inside of the `Cost` type. The function itself adds the two values together and then wraps the result in a `Cost`. New when we go to add two `Cost` values we no longer get an error.
+The arguments for the `+` function may look a little odd so let me explain. By declaring the arguments of the function as `(Cost c1, Cost c2)` I am telling the compiler that I expect a `Cost` type as the input and I want you to unpack the value inside of `Cost` and put it in the `c1` and `c2` values respectively. This allows me to work with the `decimal` values inside of the `Cost` type. The function itself adds the two values together and then wraps the result in a `Cost`. New when we go to add two `Cost` values we no longer get an error.
 
-The beauty of this is that I have maintained control over the values that `Cost` can take on. I declared a `create` function which insures positive values. I only allow addition of `Cost` types which means that a `Cost` will only ever be positive. Some people may brush this off as trivial but as someone who has seen the damage that can happen from values going outside of the expected range, this extra work for reliability and peace of mind is worth it.
+The beauty of this is that I have maintained control over the values that `Cost` can take on. I declared a `create` function which insures positive values. I only allow addition of `Cost` types which means that a `Cost` will only ever be positive. Some people may brush this off as trivial but as someone who has seen the damage that can happen from values going outside of the expected range, this extra work for reliability and peace of mind is worth it. For me, it is more efficient to ensure values cannot go outside their allowed bounds through controlling construction and operator definitions than to have value checks all over the place.
 
 ```fsharp
 let totalCost = cost1 + cost2
@@ -48,7 +48,7 @@ let totalCost = cost1 + cost2
 Well, that is great and all but what happens when we have a `List` of `Cost` values and we want to sum them. What happens then?
 
 ```fsharp
-let totalCost =
+let sumCosts =
     [cost1; cost2]
     |> List.sum // Error: The type 'Cost' does not support the operator 'get_Zero'
 ```
@@ -64,3 +64,16 @@ type Cost = Cost of decimal with
     static member Zero =
         Cost 0.0M
 ```
+
+Now when we try to sum a list of `Cost` values we get the expected result.
+
+```fsharp
+let sumCosts =
+    [cost1; cost2]
+    |> List.sum
+// Result: val sumCosts : Cost = Cost 15.0M
+```
+
+## Freedom Through Constraints
+
+The more I dive into Domain Driven Design with F#, the more I love it. By ensuring values comply with expectations at the boundary of the domain, I am freed to reason about my algorithms without worrying data going awry inside the domain. While it takes a few more keystrokes to define operations on these domain types, I hope that showed you that it takes little effort in F# and can lead to more reliable and robust code. Keep calm and curry on!

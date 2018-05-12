@@ -15,8 +15,8 @@ module Cost =
 let cost1 = Cost 10.0M
 let cost2 = Cost 5.0M
 
-// let totalCost = cost1 + cost2
+let totalCost = cost1 + cost2
 
-let totalCost = 
+let sumCosts = 
     [cost1; cost2]
     |> List.sum
