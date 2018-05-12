@@ -336,17 +336,3 @@ compress_html:
 head_scripts:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/config/TeX-MML-AM_CHTML.js
-
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: # true
-      share: true
-      related: true
