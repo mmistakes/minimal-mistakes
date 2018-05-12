@@ -7,6 +7,7 @@
 
 # Site Settings
 remote_theme             : "mmistakes/minimal-mistakes"
+# theme: minimal-mistakes-jekyll
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 locale                   : "en-US"
 title                    : "opensorceror's blog"
@@ -72,13 +73,12 @@ social:
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
     - "https://twitter.com/hgadgil29"
-    - "https://facebook.com/michaelrose"
 
-# Analytics
-analytics:
-  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
-  google:
-    tracking_id          : "UA-88847706-1"
+# # Analytics
+# analytics:
+#   provider               : "google-universal" # false (default), "google", "google-universal", "custom"
+#   google:
+#     tracking_id          : "UA-88847706-1"
 
 
 # Site Author
@@ -312,4 +312,5 @@ compress_html:
     envs: development
 
 head_scripts:
-  - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/config/TeX-MML-AM_CHTML.js
