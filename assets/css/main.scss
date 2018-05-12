@@ -5,4 +5,23 @@
 @charset "utf-8";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+
+// syntax highlighting from the "contrast" skin
+// https://mmistakes.github.io/minimal-mistakes/docs/stylesheets/#colors
+$base00: #000000 !important;
+$base01: #242422 !important;
+$base02: #484844 !important;
+$base03: #6c6c66 !important;
+$base04: #918f88 !important;
+$base05: #b5b3aa !important;
+$base07: #fdfbee !important;
+$base08: #ff6c60 !important;
+$base09: #e9c062 !important;
+$base0a: #ffffb6 !important;
+$base0b: #a8ff60 !important;
+$base0c: #c6c5fe !important;
+$base0d: #96cbfe !important;
+$base0e: #ff73fd !important;
+$base0f: #b18a3d !important;
+
 @import "minimal-mistakes"; // main partials
