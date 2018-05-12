@@ -52,9 +52,9 @@ type MagicConstraintFunction = model:Model -> constraintBuilder:(index -> constr
 
 Now, I am going to point out right off the bat that this is not purely function. The process of creating constraints is mutating the `Model` object. I am not worried about that. I am  focused on creating a productive environment for creating optimization models, not maintaining functional purity. The goal is to create a syntactically F# idiomatic way of doing this. I am not going to go to the effort to create a monad for managing all of this state mutation.
 
-## Creating Constraints
+## Generating Constraints
 
-The first thing that I needed to be able to tackle was the creation of `Constraints` in an F# idiomatic way. The Gurobi .NET library is Object Oriented and therefore is wanting the user to call methods on an instance of an object, a `Model` object in this case. The `addContr` method in the Gurobi library has two overloads but the one I wanted to use has the following method signature:
+The first thing that I needed to be able to tackle was the creation of `Constraints` in an F# idiomatic way. The Gurobi .NET library is Object Oriented and therefore is wanting the user to call methods on an instance of an object, a `Model` object in this case. The `addConstr` method in the Gurobi library has two overloads but the one I wanted to use has the following method signature:
 
 ```csharp
 GRBModel.addConstr(expr1:GRBLinExpr, sense: char, expr2:GRBLinExpr, name:string): GRBConstr
@@ -62,11 +62,11 @@ GRBModel.addConstr(expr1:GRBLinExpr, sense: char, expr2:GRBLinExpr, name:string)
 
 In mathematical terms the `expr1` is the left hand side of the equation, the `sense` is the comparison type, the `expr2` is the right hand side, and the `name` parameter is the name given to the constraint. If your constraint was the following:
 
-```
-2x1 + 3x2 <= 4x3
+```math
+2*x + 3*y <= 4*z
 ```
 
-`2x1 + 3x2` would be the `expr1`, `<=` would be the `sense`, `4x3` would be `expr2`. This is simple enough to turn into something more idiomatic for F#. I created a `Model` module to hold all of the functions for interacting with `Model` objects. The function for creating a single constraint is the following:
+`2*x + 3*y` would be `expr1`, `<=` would be the `sense`, and `4*z` would be `expr2`. This is simple enough to turn into something more idiomatic for F#. I created a `Model` module to hold all of the functions for interacting with `Model` objects. The function for creating a single constraint is the following:
 
 ```fsharp
 module Model =
@@ -86,6 +86,10 @@ let addConstrs (m:GRBModel) (setName:string) (indices: 'a list) (constraintFunc:
     |> Map.ofList
 ```
 
-This function makes it ridiculously simple to pass in a function for generating constraints based on a set of indices. The obvious restriction is that the `indices` must be of the same type that the `constraintFunc` takes as input. The result of this function will be a `Map<'a, GRBConstr>`.
+This function makes it simple to pass in a function for generating constraints based on a set of indices. The obvious restriction is that the `indices` must be of the same type that the `constraintFunc` takes as input. The result of this function will be a `Map<'a, GRBConstr>`. I should also note that the name for the constraint is automatically generated so that all constraints in a given set will have a consistent naming scheme. This makes debugging easier when trying to understand which constraint is causing you problems.
 
 > ***Note***: I am including type annotations to make the code easier to follow. The actual source code does not have these because it is not required. The F# compiler is smart enough to figure them out based on context.
+
+Now I have a functions for generating a set of constraints based on a list of indices and a function for transforming those indices into constraints. At this point I ran into a problem with operators.
+
+## Operator Overloading
