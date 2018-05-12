@@ -1,28 +1,41 @@
 <!--
-  Before submitting please search open and closed issues at 
-  https://github.com/mmistakes/minimal-mistakes/issues to avoid duplication.
-
-  Feel free to use the following as a template and remove or add fields as you see fit. You can convert `[ ]` into `[x]` to check boxes.
+  Before opening a new issue please:
+  
+  - Verify you have the latest versions of Jekyll and Minimal Mistakes 
+    installed by running `bundle update`.
+  - Thoroughly read the theme's documentation at
+    https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - Search all issues at https://github.com/mmistakes/minimal-mistakes/issues 
+    for solutions and to avoid duplication.
+  - Ask for help at https://talk.jekyllrb.com/
+  
+  After exhausting these suggestions use the format below.
 -->
 
-- [ ] This is a question about using the theme.
-- [ ] I believe this to be a bug with the theme --- not Jekyll, GitHub Pages or one of the bundled plugins.
-- [ ] This is a feature request.
-- [ ] I have updated all gems with `bundle update`.
-- [ ] I have tested locally with `bundle exec jekyll build`.
-
----
-
-## Environment informations
+## Description
 
 <!--
-  Please include theme version, `github-pages --version`, and the operating system you are on or tested with.
+  Describe the issue or proposed feature enhancement.
 -->
 
-- **Minimal Mistakes version:** 
-- **`github-pages` or `jekyll` gem version:** 
-- **Operating system:** 
+## Environment
 
+<!--
+  Please include theme version, Jekyll version, public git repository, whether 
+  you are hosting with GitHub Pages, and the operating system you tested with.
+
+  Issues without a link to a public repository or ZIP file will likely go ignored.
+  Being able to see your actual files is necessary to troubleshoot, as most 
+  issues stem from invalid/missing YAML Front Matter, a mis-configured _config.sys 
+  file, or problematic site content. 
+-->
+
+- Minimal Mistakes version:
+- Ruby gem or remote theme version:
+- Jekyll version:
+- Git repository URL:
+- Operating system:
+- GitHub Pages hosted (if yes provide URL to site):
 
 ---
 
@@ -35,11 +48,16 @@
 ## Steps to reproduce the behavior
 
 <!--
-  Include a link to a public repository or ZIP file so that they can more easily be reproduced. Being able to see your actual files helps troubleshooting as most issues stem from missing YAML Front Matter, a mis-configured `_config.sys` file, or `_posts` content. 
+  Describe the steps you took for this problem to exist. Such as: you installed
+  the theme, customized _config.yml, added your own posts, and started up a 
+  Jekyll server locally.
 
-  Describe the steps you took for this problem to exist. Such as you cloned the theme, customized `_config.yml`, added your own posts, and started up a Jekyll server locally.
+  If an error occurred on GitHub Pages when pushing, please test a local version
+  following these setup instructions: 
+  https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/
 
-  If an error occurred on GitHub Pages when pushing, please build locally and provide a complete log by running `bundle exec jekyll --trace --verbose` and including this output in the filed issue.
+  Then provide a complete log by running `bundle exec jekyll build --trace --verbose` 
+  and include this output in the filed issue.
 
   Screenshots can also be included if they help illustrate a behavior.
 -->
