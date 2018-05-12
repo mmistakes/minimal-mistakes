@@ -5,8 +5,8 @@ header:
   caption: "Photo credit: [**User D4N13l3 on DeviantArt**](http://d4n13l3.deviantart.com/art/do-androids-read-Robot-book-325505227)"
   teaser: assets/images/robot_reading_book.jpg
 excerpt: "An interactive story to introduce the area of machine learning to beginners."
-categories: 
-  - machine-learning
+categories:
+  - data-science
 ---
 
 Over the past few weeks, I've had people from several walks of life ask about my research. I've always had to tailor my answer to the person asking the question. When my mother would ask me, I would always say "We'll talk about it later". Asked by my brother, an engineer, I would make sure that the description would be more apt, such as "I'm linking large noisy datasets together to discover the same entities, with the goal of analyzing them". Asked by an elderly friend, the reply would promptly be "Same old. Trying to teach a computer to do my bidding."
@@ -36,4 +36,4 @@ Great. Now you know again what cats and dogs look like, and now you can get back
 Now imagine that the nurse is you, and "you" is the computer. And the computer can identify a lot more than cats and dogs with extremely high precision, but you must first teach it how to.
 
 
-Welcome, fellow apprentice, to the world of Machine Learning. 
+Welcome, fellow apprentice, to the world of Machine Learning.
