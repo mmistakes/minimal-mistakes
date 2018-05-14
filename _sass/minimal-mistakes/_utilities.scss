@@ -277,6 +277,12 @@ body:hover .visually-hidden button {
   .fa-twitter-square {
     color: $twitter-color;
   }
+  
+  .fa-microblog,
+  .fa-microblog-square {
+	  color: $microblog-color;
+	  fill: $microblog-color;
+  }
 
   .fa-vimeo,
   .fa-vimeo-square,

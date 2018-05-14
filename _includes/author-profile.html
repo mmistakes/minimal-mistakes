@@ -201,6 +201,17 @@
         </li>
       {% endif %}
 
+	  	  
+      {% if author.microblog %}
+        <li>
+          <a href="https://micro.blog/{{ author.microblog }}" itemprop="sameAs">
+			<svg class="svg-inline--fa fa-microblog-square fa-w-14 fa-fw" aria-hidden="true">
+			  <use xlink:href="./assets/images/microblog.svg#Layer_1" /></svg>
+            <i class="fa-microblog-square" aria-hidden="true"></i> Micro.blog
+          </a>
+        </li>
+      {% endif %}
+
       {% if author.youtube %}
         {% if author.youtube contains "://" %}
           <li>
