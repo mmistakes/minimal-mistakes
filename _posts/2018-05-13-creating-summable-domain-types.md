@@ -34,7 +34,7 @@ type Cost = Cost of decimal with
         Cost (c1 + c2)
 ```
 
-The arguments for the `+` function may look a little odd so let me explain. By declaring the arguments of the function as `(Cost c1, Cost c2)` I am telling the compiler that I expect a `Cost` type as the input and I want you to unpack the value inside of `Cost` and put it in the `c1` and `c2` values respectively. This allows me to work with the `decimal` values inside of the `Cost` type. The function itself adds the two values together and then wraps the result in a `Cost`. New when we go to add two `Cost` values we no longer get an error.
+The arguments for the `+` function may look a little odd so let me explain. By declaring the arguments of the function as `(Cost c1, Cost c2)` I am telling the compiler that I expect a `Cost` type as the input and I want you to unpack the value inside of `Cost` and put it in the `c1` and `c2` values respectively. This allows me to work with the `decimal` values inside of the `Cost` type. The function itself adds the two values together and then wraps the result in a `Cost`. Now when we go to add two `Cost` values we no longer get an error.
 
 The beauty of this is that I have maintained control over the values that `Cost` can take on. I declared a `create` function which insures positive values. I only allow addition of `Cost` types which means that a `Cost` will only ever be positive. Some people may brush this off as trivial but as someone who has seen the damage that can happen from values going outside of the expected range, this extra work for reliability and peace of mind is worth it. For me, it is more efficient to ensure values cannot go outside their allowed bounds through controlling construction and operator definitions than to have value checks all over the place.
 
@@ -76,4 +76,4 @@ let sumCosts =
 
 ## Freedom Through Constraints
 
-The more I dive into Domain Driven Design with F#, the more I love it. By ensuring values comply with expectations at the boundary of the domain, I am freed to reason about my algorithms without worrying data going awry inside the domain. While it takes a few more keystrokes to define operations on these domain types, I hope that showed you that it takes little effort in F# and can lead to more reliable and robust code. Keep calm and curry on!
+The more I dive into Domain Driven Design with F#, the more I love it. By ensuring values comply with expectations at the boundary of the domain, I am freed to reason about my algorithms without worrying about data going awry inside the domain. While it takes a few more keystrokes to define operations on these domain types, I hope that I showed you that it takes little effort in F# and can lead to more reliable and robust code. Keep calm and curry on!
