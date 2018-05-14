@@ -11,11 +11,11 @@ When I have to create a new Domain Model one of the first things that I do is de
 type Cost = Cost of decimal // Define a type alias 'Cost' for decimal
 
 module Cost =
-    let create c =      // Function for creating 'Cost' values
-        if c <= 0 then  // Check that the value is greater than 0.0M
-            None        // Return None if outside bounds
+    let create c =         // Function for creating 'Cost' values
+        if c <= 0M then    // Check that the value is greater than 0.0M
+            None           // Return None if outside bounds
         else
-            Some(Cost c)// Return input wrapped in a 'Cost' value
+            Some(Cost c)   // Return input wrapped in a 'Cost' value
 ```
 
 The beautiful thing about this is that when I am working with a `Cost` type I never have to worry about it being negative. This is a powerful thing when it comes to composing algorithms because I have eliminated a whole host of possible values that I would need to handle. It is amazing how easy it is for a negative numbers to sneak in and cause havoc. I force myself to deal with this bad data at the boundary of the domain instead of inside the algorithm performing the analysis.
