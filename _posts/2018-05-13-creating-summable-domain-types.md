@@ -1,4 +1,4 @@
-One of the reasons that I love F# is that is makes it incredibly easy to model domains. By creating a Domain Model which represents the business domain it becomes relatively easy to create workflows and algorithms which streamline business process. In this post I show how to create types for a domain which are summable, a feature I use frequently in my work.
+One of the reasons that I love F# is that is makes it incredibly easy to model domains. By creating a Domain Model which represents the business domain it becomes relatively easy to create workflows and algorithms which streamline business processes. In this post I show how to create types for a domain which are summable, a feature I use frequently in my work.
 
 ## The Value of Restricting Values
 
