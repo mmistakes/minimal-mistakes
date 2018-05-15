@@ -47,6 +47,8 @@ sidebar-menu:
     children:
       - title: "Основні завдання"
         url: /management/main
+      - title: Звіти директора
+        url: /open/report
 
   - title: Освітній процес
     children:
@@ -60,11 +62,8 @@ sidebar-menu:
         url: /process/psychologist
       - title: Корисна інформація
         url: /links
-
-  - title: Звіти директора
-    url: /open/report
-  - title: Корисна інформація
-    url: /links
+      - title: Корисна інформація
+        url: /links
 
 dnz-menu:
   - title: Дошкільне відділення
