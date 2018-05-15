@@ -533,6 +533,28 @@ To use the Algolia search with GitHub Pages hosted sites follow [this deployment
 **Note:** The Jekyll Algolia plugin can be configured in several ways. Be sure to check out [their full documentation](https://community.algolia.com/jekyll-algolia/options.html "Algolia configuration") on how to exclude files and other valuable settings.
 {: .notice--info}
 
+#### Google Custom Search Engine
+
+Add a Google search box to your site.
+
+1. Create a **New search engine** in [Google Custom Search Engine](https://cse.google.com/cse/all), give it an appropriate name and setup "Sites to search" to your liking.
+
+2. Under **Look and feel** choose the "Results only" layout and a theme (*Minimalist* is a good choice to match the default look of the Minimal Mistakes).
+   
+   ![Google Custom Search Engine layout]({{ '/assets/images/google-custom-search-engine-layout.png' | relative_url }})
+
+3. Select "Save & Get Code" and grab your search engine ID from the line that begins with `var cx = 'YOUR_SEARCH_ENGINE_ID'`.
+
+4. Add your search engine ID to `_config.yml` like so:
+   
+   ```yaml
+   google:
+     search_engine_id: YOUR_SEARCH_ENGINE_ID
+   ```
+
+**Note:** If your site is new and hasn't been indexed by Google yet, search will be incomplete and won't provide accurate results.
+{: .notice-info}
+
 ### SEO, Social Sharing, and Analytics Settings
 
 All optional, but a good idea to take the time setting up to improve SEO and links shared from the site.
