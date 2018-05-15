@@ -1,9 +1,9 @@
 ---
 layout: single
 title: "Онлайн реєстрація до ДНЗ"
-permalink: /registration/
+permalink: /dnz/registration/
 sidebar:
-  nav: "sidebar-menu"
+  nav: "dnz-menu"
 ---
 [Реєстрація](https://reg.isuo.org/preschools/view/id/40964){: .btn .btn--warning  .btn--x-large}
 {: .text-center}

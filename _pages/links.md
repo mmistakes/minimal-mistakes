@@ -1,9 +1,14 @@
 ---
 layout: single
-title: "Корисні посилання"
+title: "Корисні інформація"
 permalink: /links/
 sidebar:
   nav: "sidebar-menu"
+gallery:
+  - url: /assets/images/pages/ad/law2.jpg
+    image_path: /assets/images/pages/ad/law2.jpg
+  - url: /assets/images/pages/ad/law1.jpg
+    image_path: /assets/images/pages/ad/law1.jpg
 ---
 
 - [http://osvita.ua/legislation/Ser_osv/56072/](http://osvita.ua/legislation/Ser_osv/56072/)
@@ -12,3 +17,5 @@ sidebar:
 - [http://intranet.tdmu.edu.ua](http://intranet.tdmu.edu.ua)
 - [https://nenc.gov.ua/](https://nenc.gov.ua/)
 - [http://www.dxdigitals.info/2013/08/elektronni-shkilni-pidruchniki-Ukraina.html](http://www.dxdigitals.info/2013/08/elektronni-shkilni-pidruchniki-Ukraina.html)
+
+{% include gallery caption="Реклама" %}

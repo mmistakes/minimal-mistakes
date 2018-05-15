@@ -6,8 +6,8 @@ main:
     url: /syllabus
   - title: "Відкритий доступ "
     url: /open
-  - title: "Онлайн реєстрація до ДНЗ"
-    url: /registration
+  - title: "Дошкільне відділення"
+    url: /dnz/registration
 
 sidebar-menu:
   - title: Наша школа
@@ -61,5 +61,29 @@ sidebar-menu:
 
   - title: Звіти директора
     url: /open/report
-  - title: Корисні посилання
+  - title: Корисна інформація
     url: /links
+
+dnz-menu:
+  - title: Дошкільне відділення
+    children:
+      - title: Загальна інформація
+        url: /dnz/info
+      - title: Умови прийняття
+        url: /dnz/rules
+      - title: Працівники
+        url: /dnz/workers
+      - title: Організація харчування
+        url: /dnz/meal
+      - title: Оздоровчо-розвивальне середовище
+        url: /dnz/health
+      - title: Сторінка музичного керівника
+        url: /dnz/music
+      - title: Батьківська сторінка
+        url: /dnz/parents
+      - title: Медична сторінка
+        url: /dnz/med
+      - title: Електронна реєстрація
+        url: /dnz/registration
+      - title: Фінансові звіти
+        url: /dnz/finance
