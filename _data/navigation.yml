@@ -58,6 +58,8 @@ sidebar-menu:
         url: /process/workshop
       - title: Сторінка психолога
         url: /process/psychologist
+      - title: Корисна інформація
+        url: /links
 
   - title: Звіти директора
     url: /open/report
