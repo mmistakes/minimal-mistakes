@@ -9,7 +9,7 @@
         s.parentNode.insertBefore(gcse, s);
     })();
 
-    function executeQuery() {
+    function googleCustomSearchExecute() {
         var input = document.getElementById('cse-search-input-box-id');
         var element = google.search.cse.element.getElement('searchresults-only0');
         if (input.value == '') {
@@ -23,7 +23,7 @@
     {% if site.google.instant_search %}
     $(document).ready(function () {
         $('input#cse-search-input-box-id').on('keyup', function () {
-            executeQuery();
+            googleCustomSearchExecute();
         }
         );
     });
