@@ -553,7 +553,7 @@ Add a Google search box to your site.
    ```
 
 **Note:** If your site is new and hasn't been indexed by Google yet, search will be incomplete and won't provide accurate results.
-{: .notice-info}
+{: .notice--info}
 
 ### SEO, Social Sharing, and Analytics Settings
 
