@@ -5,10 +5,10 @@ One of the reasons that I love F# is that is makes it incredibly easy to model d
 
 ## The Value of Restricting Values
 
-When I have to create a new Domain Model one of the first things that I do is define type aliases of `decimal` for the basic building blocks that I am going to work with (Costs, Items, Sales Rates, Days of Inventory, etc.). For example, when I am creating an algorithm to evaluate the financial viability of a product on marketplaces I have to calculate costs, I therefore create a `Cost` type. In my domain, a `Cost` is never negative therefore I can create a constructor which will enforce this behavior.
+When I have to create a new Domain Model one of the first things that I do is define a single case Discriminated Union of `decimal` for the basic building blocks that I am going to work with (Costs, Items, Sales Rates, Days of Inventory, etc.). For example, when I am creating an algorithm to evaluate the financial viability of a product on marketplaces I have to calculate costs, I therefore create a `Cost` type. In my domain, a `Cost` is never negative therefore I can create a constructor which will enforce this behavior.
 
 ```fsharp
-type Cost = Cost of decimal // Define a type alias 'Cost' for decimal
+type Cost = Cost of decimal // Define a single case DU 'Cost' for decimal
 
 module Cost =
     let create c =         // Function for creating 'Cost' values
