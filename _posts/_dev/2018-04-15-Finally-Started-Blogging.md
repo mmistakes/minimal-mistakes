@@ -1,3 +1,0 @@
-# Holy Cow I'm blogging!
-
-I finally decided that it was time to start blogging. This was mainly inspired from the great conversations that I had at the PowerShell Summit from last week. There is no cost to doing it and it's going to help ME learn more. I just wish that I would've done this earlier. I think that I'm going to post an article about how to setup a quick PowerShell blogging using Jekyll and Gitpages.
