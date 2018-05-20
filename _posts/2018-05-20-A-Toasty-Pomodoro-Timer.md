@@ -1,4 +1,8 @@
-I've been putting some thought into how I can use my time more effectively lately and stumbled upon the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique). The basic idea is that you work for 25 minutes and then take a 5 minute break. 
+---
+classes: wide
+---
+
+I've been putting some thought into how I can use my time more effectively lately and stumbled upon the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique). The basic idea is that you work for 25 minutes and then take a 5 minute break.
 
 ## PowerShell Time
 
