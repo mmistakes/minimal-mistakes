@@ -214,4 +214,4 @@ One of my favorite things about PowerShell is how it empowers you and is also so
 - Add an image to your toast
 - Whatever your heart desires
 
-This post is the first of its kind and I would really appreciate any and all feedback! You can follow me on twitter [@PlaAndrew22](https://twitter.com/PlaAndrew22)
+This post is the first of its kind and I would appreciate any and all feedback! You can reach me on twitter [@PlaAndrew22](https://twitter.com/PlaAndrew22)
