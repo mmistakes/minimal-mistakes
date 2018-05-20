@@ -58,7 +58,7 @@ Get-Job -Name 'Pomodoro Timer' | Receive-Job
 
 ![Yucky red text]({{"/assets/secondserrorpomodoro.jpg" | absolute_url}})
 
-It can't validate the parameter $Seconds. Jobs run in seperate runspaces from your powershell console. This means that it doesn't know what $seconds is because it was defined in your console, not inside the job. To get around this we need to pass our arguments to the -ArgumentList parameter of Start-Job. We will also need to call our variables with a prepended 'using:' Let's take a look
+This error is from the -seconds parameter. Jobs run in seperate runspaces from your powershell console. This means that it doesn't know what $seconds is because it was defined in our console, not inside the job. To get around this we need to pass our arguments to the -ArgumentList parameter of Start-Job. We will also need to call our variables with a prepended 'using:' Let's take a look
 
 ```powershell
     $seconds = 10
@@ -213,3 +213,5 @@ One of my favorite things about PowerShell is how it empowers you and is also so
 - Customize $messages and put your own happy reminders in there
 - Add an image to your toast
 - Whatever your heart desires
+
+This post is the first of its kind and I would really appreciate any and all feedback! You can follow me on twitter [@PlaAndrew22](https://twitter.com/PlaAndrew22)

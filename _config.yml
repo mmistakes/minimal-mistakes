@@ -12,14 +12,14 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "mint" # "default", "aqua","air "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "default", "aqua","air "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Andrew Pla's Blog"
+title                    : "Andrew Pla's PowerShell Blog"
 title_separator          : "-"
 name                     : "Andrew Pla"
-description              : "This is just a site for me to share the stuff that I'm learning/doing."
+description              : "This is a site for me to share the stuff that I'm learning/doing and talk about PowerShell."
 url                      : "https://AndrewPla.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -75,7 +75,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : PlaAndrew22
+  username               : "PlaAndrew22"
 facebook:
   username               :
   app_id                 :
@@ -90,9 +90,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google-gtag" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "UA-119538689-1"
 
 
 # Site Author
