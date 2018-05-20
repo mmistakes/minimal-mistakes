@@ -56,7 +56,7 @@ Our toast notification went off, but we didn't get that nice 10 second delay. Le
 Get-Job -Name 'Pomodoro Timer' | Receive-Job
 ```
 
-![Yucky red text]({{"/assets/a-toasty-pomodoro-timer\secondserrorpomodoro.jpg" | absolute_url}})
+![Yucky red text]({{"/assets/secondserrorpomodoro.jpg" | absolute_url}})
 
 It can't validate the parameter $Seconds. Jobs run in seperate runspaces from your powershell console. This means that it doesn't know what $seconds is because it was defined in your console, not inside the job. To get around this we need to pass our arguments to the -ArgumentList parameter of Start-Job. We will also need to call our variables with a prepended 'using:' Let's take a look
 
