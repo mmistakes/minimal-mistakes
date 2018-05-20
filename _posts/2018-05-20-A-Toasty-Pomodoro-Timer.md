@@ -2,7 +2,7 @@
 classes: wide
 ---
 
-I've been putting some thought into how I can use my time more effectively lately and stumbled upon the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique). The very basic idea is that you work for 25 minutes and then take a 5 minute break. The idea is that if you structure your time like that you will be more productive and able to focus better.
+I've been putting some thought into how I can use my time more effectively lately and stumbled upon the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique). The basic idea is that you work for 25 minutes and then take a 5 minute break. 
 
 ## PowerShell Time
 
@@ -56,7 +56,7 @@ Our toast notification went off, but we didn't get that nice 10 second delay. Le
 Get-Job -Name 'Pomodoro Timer' | Receive-Job
 ```
 
-![Yucky red text]({{"/assets/A-Toasty-Pomodoro-Timer\SecondsErrorPomodoro.jpg" | absolute_url}})
+![Yucky red text]({{"/assets/a-toasty-pomodoro-timer\secondserrorpomodoro.jpg" | absolute_url}})
 
 It can't validate the parameter $Seconds. Jobs run in seperate runspaces from your powershell console. This means that it doesn't know what $seconds is because it was defined in your console, not inside the job. To get around this we need to pass our arguments to the -ArgumentList parameter of Start-Job. We will also need to call our variables with a prepended 'using:' Let's take a look
 
@@ -130,9 +130,7 @@ function Start-PomodoroTimer
 		Length of timer
 	
 	.PARAMETER Sound
-		
 		Credit to Jeff Wouters for the Imperial March: http://jeffwouters.nl/index.php/2012/03/get-your-geek-on-with-powershell-and-some-music/
-		
 	
 	.EXAMPLE
 		PS C:\> Start-PomodoroTimer
@@ -168,8 +166,6 @@ function Start-PomodoroTimer
 		'Relax, you earned it'
 	)
 	
-	
-	
 	if ($Sound -match 'Imperial March')
 	{
 		Start-Job -Name 'Pomodoro Timer' -ArgumentList $Messages, $Minutes -ScriptBlock {
@@ -195,7 +191,6 @@ function Start-PomodoroTimer
 			[console]::beep(349, 350)
 			[console]::beep(523, 150)
 			[console]::beep(440, 1000)
-			
 		} 
 	}
 	else
