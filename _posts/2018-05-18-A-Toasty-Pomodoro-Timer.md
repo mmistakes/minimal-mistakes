@@ -18,43 +18,45 @@ This is a module that allows us to easily display toast notifications. It's one 
     New-BurntToastNotification -Text 'Is it toasty in here, or is it just me?'
 ```
 
-
-That's nice and works fine, but let's spice it up a bit. One of the many [cool things](https://king.geek.nz/tags/#crouton) we can do is quickly turn our toast into an alarm. We can add sound and a snooze/dismiss button by using the -Sound and -SnoozeandDismiss button, respectively. You will also notice that there is a new command, Start-Sleep. We are going to be using this to delay the toast in a bit.
+That's nice and works fine, but let's spice it up a bit. One of the [cool things](https://king.geek.nz/tags/#crouton) we can do with this module is quickly turn our toast into an alarm. We can add sound and a snooze/dismiss button by using the -Sound and -SnoozeandDismiss button, respectively. You will also notice that there is a new command, Start-Sleep. We are going to be using this to delay the toast in a bit. We'll play around with just a few seconds for now, but will end up using 25 minutes in the final functions.
 
 ```powershell
     Start-Sleep -Seconds 3
     New-BurntToastNotification -Text 'Timer complete' -SnoozeandDismiss -Sound Alarm
 ```
 
-## This is a job for Start-Job
+## This is a job for... Start-Job
 
-After running the function I want control to return to the console. Our goal is to increase productivity and having a powershell terminal dedicated to our timer isn't very productive. We are going to create a job named 'Pomodoro Timer' that will contain our Start-Sleep and New-BurntToastNotification commands. Let's try some code.
+After running the function I want control to return to the console. Our goal is to increase productivity and having a PowerShell terminal dedicated to our timer isn't very productive. We are going to create a job named 'Pomodoro Timer' that will contain our Start-Sleep and New-BurntToastNotification commands. Let's try some code.
 
 ```powershell
     $sb = {
         Start-Sleep -Seconds 3
         New-BurntToastNotification -Text 'Timer complete' -SnoozeandDismiss -Sound Alarm
     }
-    Start-Job -Name 'Pomodoro Timer' -ScriptBlock $sb 
+    Start-Job -Name 'Pomodoro Timer' -ScriptBlock $sb
 ```
 
-That works well on it's own, but variables are awesome and we should use some because we are going to end up parameterizing this and turning it into a function anyways. Let's try this again, but this time let's use a variable.
+That works well on it's own, but variables are awesome and we should use some because we are going to end up parameterizing this and turning it into a function anyways. Let's try this again, but this time let's use a variable to hold the number of seconds.
 
 ```powershell
     $seconds = 10
     $sb = {
         Start-Sleep -Seconds $seconds
-        New-BurntToastNotification -Text 'Timer complete' -SnoozeandDismiss -Sound Alarm
+        New-BurntToastNotification -Text 'Timer complete' -SnoozeandDismiss -Sound 'Alarm'
     }
-    Start-Job -Name 'Pomodoro Timer' -ScriptBlock $sb 
+    Start-Job -Name 'Pomodoro Timer' -ScriptBlock $sb
 ```
 
 ## Ruh Roh
+
 Our toast notification went off, but we didn't get that nice 10 second delay. Let's check the output of our job and see if it points us in the right direction.
 
 ```powershell
 Get-Job -Name 'Pomodoro Timer' | Receive-Job
 ```
+
+![Yucky red text]({{"/assets/A-Toasty-Pomodoro-Timer\SecondsErrorPomodoro.jpg" | absolute_url}})
 
 It can't validate the parameter $Seconds. Jobs run in seperate runspaces from your powershell console. This means that it doesn't know what $seconds is because it was defined in your console, not inside the job. To get around this we need to pass our arguments to the -ArgumentList parameter of Start-Job. We will also need to call our variables with a prepended 'using:' Let's take a look
 
@@ -68,7 +70,8 @@ It can't validate the parameter $Seconds. Jobs run in seperate runspaces from yo
 ```
 
 ## Friendly Reminder
-We now have the important code, but we gotta do some more fun stuff so let's ditch the lame 'Timer Complete' and get a nice message. After a nice 25 minute work session wouldn't it be nice to get a friendly message? Let's do it.
+
+We now have the important code, but we gotta do some more fun stuff so let's ditch the lame 'Timer Complete' and get a nice message. After a 25 minute work session wouldn't it be nice to get a friendly message? Let's do it.
 
 ```powershell
     # Create an array of nice messages :)
@@ -79,6 +82,7 @@ We now have the important code, but we gotta do some more fun stuff so let's dit
 ```
 
 ## Sounds Good
+
 The -Sound parameter of New-BurntToastNotification is good, but not fun enough for me. Let's borrow some code from [Jeff Wouters](http://jeffwouters.nl/index.php/2012/03/get-your-geek-on-with-powershell-and-some-music/) to add some flavor. It's also a bit of a shoutout to everyone's favorite PowerShell Stormtrooper :)
 
 ```powershell
@@ -104,18 +108,12 @@ The -Sound parameter of New-BurntToastNotification is good, but not fun enough f
     # worth
 ```
 
-It's worth noting that there is a lot of fun stuff you can do with audio here, I just wanted to keep things simple (uh whoops) for this post so I didn't take advantage of playing any external files, but you can find more about using custom sound with BurntToast [here](https://king.geek.nz/2018/04/02/crouton-sounds/).
-
-## Closing thoughts
-One of my favorite things about PowerShell is how it not only enables you to do powerful stuff, it also allows you to be expressive and is just plain fun! The function is by no means complete and there are a lot of cool things that you can do with it still:
-- Play an mp3 when your toast completes
-- Add a -Silent parameter
-- Write pomodoro info to a logfile to keep track of your day
-- Customize $messages and put your own happy reminders in there.
-- 
-- Whatever your heart desires
+It's worth noting that there is a lot of fun stuff you can do with audio here, I just wanted to keep things simple for this post so I didn't take advantage of playing any external files, but you can find more about using custom sounds with BurntToast [here](https://king.geek.nz/2018/04/02/crouton-sounds/).
 
 ## Finished Function
+
+Feel free to throw it into your profile. Better yet, throw it into your editor of choice and make it yours :)
+I'll keep an updated version [here](https://github.com/AndrewPla/PowerShell-Toolery-and-Foolery/tree/master/Start-PomodoroTimer)
 
 ```powershell
 function Start-PomodoroTimer
@@ -125,16 +123,17 @@ function Start-PomodoroTimer
 		Creates a Pomodoro Timer that displays a toast notification when complete.
 	
 	.DESCRIPTION
-		Creates a Pomodoro Timer that displays a toast notification when complete. It creates a job named 'Pomodoro Timer'
+		Creates a Pomodoro Timer that displays a toast notification when complete. It creates a job
 		This function requires the BurntToast module by Josh King @WindosNZ 
 	
 	.PARAMETER Minutes
 		Length of timer
 	
 	.PARAMETER Sound
-        Specify the sound that plays when timer is complete.
+		
 		Credit to Jeff Wouters for the Imperial March: http://jeffwouters.nl/index.php/2012/03/get-your-geek-on-with-powershell-and-some-music/
 		
+	
 	.EXAMPLE
 		PS C:\> Start-PomodoroTimer
 	
@@ -148,7 +147,7 @@ function Start-PomodoroTimer
 		[int]
 		$Minutes = 25,
 		
-		# There are a lot more different sounds available, but I'm a simple man.
+		# There are a lot more different sounds available, but that takes up too much space.
 		[ValidateSet('Alarm',
 					 'SMS',
 					 'Imperial March'
@@ -169,45 +168,53 @@ function Start-PomodoroTimer
 		'Relax, you earned it'
 	)
 	
-	# Put our lovely Imperial March into a variable to make the job scriptblock a bit prettier
-	$ImperialMarch = {
-		[console]::beep(440, 500)
-		[console]::beep(440, 500)
-		[console]::beep(440, 500)
-		[console]::beep(349, 350)
-		[console]::beep(523, 150)
-		[console]::beep(440, 500)
-		[console]::beep(349, 350)
-		[console]::beep(523, 150)
-		[console]::beep(440, 1000)
-		[console]::beep(659, 500)
-		[console]::beep(659, 500)
-		[console]::beep(659, 500)
-		[console]::beep(698, 350)
-		[console]::beep(523, 150)
-		[console]::beep(415, 500)
-		[console]::beep(349, 350)
-		[console]::beep(523, 150)
-		[console]::beep(440, 1000)
-	}
+	
 	
 	if ($Sound -match 'Imperial March')
 	{
-		Start-Job -ScriptBlock {
+		Start-Job -Name 'Pomodoro Timer' -ArgumentList $Messages, $Minutes -ScriptBlock {
 			Start-Sleep -Seconds (60 * $using:Minutes)
 			New-BurntToastNotification -Text "Timer complete. Suggestion: $($using:Messages | Get-Random)." -SnoozeAndDismiss
-			Write-Verbose 'Waiting for toast sound to finish, then IMPERIAL MARCH'
+			# Waiting for toast ding to finish, then IMPERIAL MARCH
 			Start-Sleep -Seconds 1
-			& $ImperialMarch
-
-		} -ArgumentList $Messages, $Minutes, $ImperialMarch
+			[console]::beep(440, 500)
+			[console]::beep(440, 500)
+			[console]::beep(440, 500)
+			[console]::beep(349, 350)
+			[console]::beep(523, 150)
+			[console]::beep(440, 500)
+			[console]::beep(349, 350)
+			[console]::beep(523, 150)
+			[console]::beep(440, 1000)
+			[console]::beep(659, 500)
+			[console]::beep(659, 500)
+			[console]::beep(659, 500)
+			[console]::beep(698, 350)
+			[console]::beep(523, 150)
+			[console]::beep(415, 500)
+			[console]::beep(349, 350)
+			[console]::beep(523, 150)
+			[console]::beep(440, 1000)
+			
+		} 
 	}
 	else
 	{
-		Start-Job -ScriptBlock {
+		Start-Job -Name 'Pomodoro Timer' -ArgumentList $Messages, $Minutes -ScriptBlock {
 			Start-Sleep -Seconds (60 * $using:Minutes)
 			New-BurntToastNotification -Text "Pomodoro Timer complete. Suggestion: $($Using:Messages | Get-Random)." -SnoozeAndDismiss -Sound $Sound
-		}
+		} 
 	}
 }
 ```
+
+## Closing Thoughts
+
+One of my favorite things about PowerShell is how it empowers you and is also so much fun. This function is by no means complete and there are a lot of cool things that you can do with it still:
+
+- Play an mp3 when your toast completes
+- Add a -Silent parameter
+- Write pomodoro info to a logfile to keep track of your day
+- Customize $messages and put your own happy reminders in there
+- Add an image to your toast
+- Whatever your heart desires
