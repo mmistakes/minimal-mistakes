@@ -1,9 +1,12 @@
+---
+classes: wide
+---
+
 I've been putting some thought into how I can use my time more effectively lately and stumbled upon the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique). The very basic idea is that you work for 25 minutes and then take a 5 minute break. The idea is that if you structure your time like that you will be more productive and able to focus better.
-Pomodoro Timers  are a great tool to increase productivity and I regularly use them. The idea is that you work in 25 minute intervals followed by a 5 minute break.
 
 ## PowerShell Time
 
-Enough of that real life mumbo jumbo, it's time for some PowerShell! This is a perfect chance for me to write code  Our main goal is to get a 25 minute timer that lets us know when it's done. I want a fancy toast notification when it's finished, and for that I will be using the [BurntToast module](https://github.com/Windos/BurntToast). This module requires PowerShell version 5 and Windows 10. Install it by running:
+This seems like a cool opportunity to come up with a function. This is a function that is for personal use so we can have some fun with it! I want a fancy toast notification when it's finished, and for that I will be using the [BurntToast module](https://github.com/Windos/BurntToast). This module requires PowerShell version 5 and Windows 10. Install it by running:
 
 ```powershell
     Install-Module BurntToast -Scope CurrentUser
@@ -109,6 +112,7 @@ One of my favorite things about PowerShell is how it not only enables you to do 
 - Add a -Silent parameter
 - Write pomodoro info to a logfile to keep track of your day
 - Customize $messages and put your own happy reminders in there.
+- 
 - Whatever your heart desires
 
 ## Finished Function
