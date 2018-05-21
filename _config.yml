@@ -22,7 +22,7 @@ name                     : "Andrew Pla"
 description              : "This is a site for me to share the stuff that I'm learning/doing and talk about PowerShell."
 url                      : "https://AndrewPla.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "andrewpla/andrewpla.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200

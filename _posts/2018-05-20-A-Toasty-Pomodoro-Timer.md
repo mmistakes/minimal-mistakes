@@ -1,8 +1,12 @@
 ---
 classes: wide
+toc: true
+header:
+  image: /assets/tomatoman.jpg
+
 ---
 
-I've been putting some thought into how I can use my time more effectively lately and stumbled upon the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique). The basic idea is that you work for 25 minutes and then take a 5 minute break.
+I've been putting some thought into how I can use my time more effectively and stumbled upon the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique). The overly-simplified concept is that you work for 25 minutes and then take a 5 minute break. These are called Pomodoro timers and we are going to make our own with PowerShell
 
 ## PowerShell Time
 
@@ -112,7 +116,8 @@ It's worth noting that there is a lot of fun stuff you can do with audio here, I
 
 ## Finished Function
 
-Feel free to throw it into your profile. Better yet, throw it into your editor of choice and make it yours :)
+I took the liberty of throwing together all that we've looked at so far into a function. I put this function into my profile so I can reuse it easily.
+
 I'll keep an updated version [here](https://github.com/AndrewPla/PowerShell-Toolery-and-Foolery/tree/master/Start-PomodoroTimer)
 
 ```powershell
@@ -124,7 +129,7 @@ function Start-PomodoroTimer
 	
 	.DESCRIPTION
 		Creates a Pomodoro Timer that displays a toast notification when complete. It creates a job
-		This function requires the BurntToast module by Josh King @WindosNZ 
+		This function requires the BurntToast module by Josh King @WindosNZ
 	
 	.PARAMETER Minutes
 		Length of timer
@@ -145,7 +150,7 @@ function Start-PomodoroTimer
 		[int]
 		$Minutes = 25,
 		
-		# There are a lot more different sounds available, but that takes up too much space.
+		# There are a lot more sounds available, but that takes up too much space
 		[ValidateSet('Alarm',
 					 'SMS',
 					 'Imperial March'
@@ -191,14 +196,14 @@ function Start-PomodoroTimer
 			[console]::beep(349, 350)
 			[console]::beep(523, 150)
 			[console]::beep(440, 1000)
-		} 
+		}
 	}
 	else
 	{
 		Start-Job -Name 'Pomodoro Timer' -ArgumentList $Messages, $Minutes -ScriptBlock {
 			Start-Sleep -Seconds (60 * $using:Minutes)
 			New-BurntToastNotification -Text "Pomodoro Timer complete. Suggestion: $($Using:Messages | Get-Random)." -SnoozeAndDismiss -Sound $Sound
-		} 
+		}
 	}
 }
 ```
@@ -214,4 +219,4 @@ One of my favorite things about PowerShell is how it empowers you and is also so
 - Add an image to your toast
 - Whatever your heart desires
 
-This post is the first of its kind and I would appreciate any and all feedback! You can reach me on twitter [@PlaAndrew22](https://twitter.com/PlaAndrew22)
+If you end up making any improvements to it, do me a favor and drop a pull request so we can all benefit from your work. This post is the first of its kind and I would appreciate any and all feedback! You can reach me on twitter [@PlaAndrew22](https://twitter.com/PlaAndrew22)
