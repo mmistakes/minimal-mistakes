@@ -40,6 +40,9 @@ en: &DEFAULT_EN
   comment_success_msg        : "Thanks for your comment! It will show on the site once it has been approved."
   comment_error_msg          : "Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again."
   loading_label              : "Loading..."
+  search_placeholder_text    : "Enter your search term..."
+  results_found              : "Result(s) found"
+  back_to_top                : "Back to top"
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -50,7 +53,7 @@ en-AU:
   <<: *DEFAULT_EN
 
 # Spanish
-# --------------
+# -------
 es: &DEFAULT_ES
   page                       : "Página"
   pagination_previous        : "Anterior"
@@ -95,7 +98,7 @@ es-CO:
   <<: *DEFAULT_ES
 
 # French
-# -----------------
+# ------
 fr: &DEFAULT_FR
   page                       : "Page"
   pagination_previous        : "Précédent"
@@ -143,7 +146,7 @@ fr-CH:
   <<: *DEFAULT_FR
 
 # Turkish
-# -----------------
+# -------
 tr: &DEFAULT_TR
   page                       : "Sayfa"
   pagination_previous        : "Önceki"
@@ -186,6 +189,7 @@ tr-TR:
   <<: *DEFAULT_TR
 
 # Portuguese
+# ----------
 pt: &DEFAULT_PT
   page                       : "Página"
   pagination_previous        : "Anterior"
@@ -226,7 +230,6 @@ pt: &DEFAULT_PT
   loading_label              : "A carregar..."
 pt-PT:
   <<: *DEFAULT_PT
-
 # Brazilian Portuguese
 pt-BR:
   page                       : "Página"
@@ -268,7 +271,7 @@ pt-BR:
   loading_label              : "Carregando..."
 
 # Italian
-# -----------------
+# -------
 it: &DEFAULT_IT
   page                       : "Pagina"
   pagination_previous        : "Precedente"
@@ -311,8 +314,8 @@ it-IT:
   <<: *DEFAULT_IT
 
 # Chinese  (zh-CN Chinese - China)
-# -----------------
-zh: &DEFAULT_ZH
+# --------------------------------
+zh: &DEFAULT_ZH_HANS
   page                       : "页面"
   pagination_previous        : "向前"
   pagination_next            : "向后"
@@ -351,13 +354,11 @@ zh: &DEFAULT_ZH
   comment_error_msg          : "很抱歉，您的提交存在错误。请确保所有必填字段都已填写正确，然后再试一次。"
   loading_label              : "正在加载..."
 zh-CN:
-  <<: *DEFAULT_ZH
-zh-HK:
-  <<: *DEFAULT_ZH
+  <<: *DEFAULT_ZH_HANS
 zh-SG:
-  <<: *DEFAULT_ZH
+  <<: *DEFAULT_ZH_HANS
 # Taiwan (Traditional Chinese)
-zh-TW:
+zh-TW: &DEFAULT_ZH_HANT
   page                       : "頁面"
   pagination_previous        : "較舊"
   pagination_next            : "較新"
@@ -395,16 +396,18 @@ zh-TW:
   comment_success_msg        : "感謝您的留言！ 審核後將會顯示在站上。"
   comment_error_msg          : "抱歉，部份資料輸入有問題。請確認資料填寫正確後再試一次。"
   loading_label              : "載入中..."
+zh-HK:
+  <<: *DEFAULT_ZH_HANT
 
 # German / Deutsch
-# -----------------
+# ----------------
 de: &DEFAULT_DE
   page                       : "Seite"
   pagination_previous        : "Vorherige"
   pagination_next            : "Nächste"
-  breadcrumb_home_label      : "Home"
+  breadcrumb_home_label      : "Start"
   breadcrumb_separator       : "/"
-  menu_label                 :
+  menu_label                 : "Menü ein-/ausschalten"
   toc_label                  : "Auf dieser Seite"
   ext_link_label             : "Direkter Link"
   less_than                  : "weniger als"
@@ -414,13 +417,13 @@ de: &DEFAULT_DE
   tags_label                 : "Tags:"
   categories_label           : "Kategorien:"
   date_label                 : "Aktualisiert:"
-  comments_label             : "Hinterlassen sie einen Kommentar"
+  comments_label             : "Hinterlassen Sie einen Kommentar"
   comments_title             : "Kommentare"
   more_label                 : "Mehr anzeigen"
   related_label              : "Ihnen gefällt vielleicht auch"
   follow_label               : "Folgen:"
   feed_label                 : "Feed"
-  powered_by                 : "Powered by"
+  powered_by                 : "Möglich durch"
   website_label              : "Webseite"
   email_label                : "E-Mail"
   recent_posts               : "Aktuelle Beiträge"
@@ -429,13 +432,15 @@ de: &DEFAULT_DE
   comment_form_comment_label : "Kommentar"
   comment_form_md_info       : "Markdown wird unterstützt."
   comment_form_name_label    : "Name"
-  comment_form_email_label   : "E-Mail Addresse"
+  comment_form_email_label   : "E-Mail-Addresse"
   comment_form_website_label : "Webseite (optional)"
   comment_btn_submit         : "Kommentar absenden"
   comment_btn_submitted      : "Versendet"
-  comment_success_msg        : "Danke für ihren Kommentar! Er wird auf der Seite angezeigt, nachdem er geprüft wurde."
-  comment_error_msg          : "Entschuldigung, es gab einen Fehler. Bitte füllen sie alle benötigten Felder aus und versuchen sie es erneut."
+  comment_success_msg        : "Danke für Ihren Kommentar! Er wird auf der Seite angezeigt, nachdem er geprüft wurde."
+  comment_error_msg          : "Entschuldigung, es gab einen Fehler. Bitte füllen Sie alle benötigten Felder aus und versuchen Sie es erneut."
   loading_label              : "Lade..."
+  search_placeholder_text    : "Suchbegriff eingeben..."
+  results_found              : "Ergebnis(se) gefunden"
 de-DE:
   <<: *DEFAULT_DE
 de-AT:
@@ -450,7 +455,7 @@ de-LU:
   <<: *DEFAULT_DE
 
 # Nepali (Nepal)
-# -----------------
+# --------------
 ne: &DEFAULT_NE
   page                       : "पृष्‍ठ"
   pagination_previous        : "अघिल्लो"
@@ -493,7 +498,7 @@ ne-NP:
   <<: *DEFAULT_NE
 
 # Korean
-# --------------
+# ------
 ko: &DEFAULT_KO
   page                       : "페이지"
   pagination_previous        : "이전"
@@ -575,11 +580,13 @@ ru: &DEFAULT_RU
   comment_success_msg        : "Спасибо за Ваш комментарий! Он будет опубликован на сайте после проверки."
   comment_error_msg          : "К сожалению, произошла ошибка с отправкой комментария. Пожалуйста, убедитесь, что все обязательные поля заполнены и попытайтесь снова."
   loading_label              : "Отправка..."
+  search_placeholder_text    : "Введите поисковый запрос..."
+  results_found              : "Найдено"
 ru-RU:
   <<: *DEFAULT_RU
 
 # Lithuanian / Lietuviškai
-# -----------------
+# ------------------------
 lt: &DEFAULT_LT
   page                       : "Puslapis"
   pagination_previous        : "Ankstesnis"
@@ -622,7 +629,7 @@ lt-LT:
   <<: *DEFAULT_LT
 
 # Greek
-# --------------
+# -----
 gr: &DEFAULT_GR
   page                       : "Σελίδα"
   pagination_previous        : "Προηγούμενo"
@@ -661,11 +668,13 @@ gr: &DEFAULT_GR
   comment_success_msg        : "Ευχαριστούμε για το σχόλιό σας! Θα εμφανιστεί στην ιστοσελίδα αφού εγκριθεί."
   comment_error_msg          : "Λυπούμαστε, παρουσιάστηκε σφάλμα με την υποβολή σας. Παρακαλούμε βεβαιωθείτε ότι έχετε όλα τα απαιτούμενα πεδία συμπληρωμένα και δοκιμάστε ξανά."
   loading_label              : "Φόρτωση..."
+  search_placeholder_text    : "Εισάγετε όρο αναζήτησης..."
+  results_found              : "Αποτελέσματα"
 gr-GR:
   <<: *DEFAULT_GR
 
 # Swedish
-# -----------------
+# -------
 sv: &DEFAULT_SV
   page                       : "Sidan"
   pagination_previous        : "Föregående"
@@ -710,7 +719,7 @@ sv-FI:
   <<: *DEFAULT_SV
 
 # Dutch
-# -----------------
+# -----
 nl: &DEFAULT_NL
   page                       : "Pagina"
   pagination_previous        : "Vorige"
@@ -755,7 +764,7 @@ nl-NL:
   <<: *DEFAULT_NL
 
 # Indonesian
-# -----------------
+# ----------
 id: &DEFAULT_ID
   page                       : "Halaman"
   pagination_previous        : "Kembali"
@@ -798,7 +807,7 @@ id-ID:
   <<: *DEFAULT_ID
 
 # Vietnamese
-# -----------------
+# ----------
 vi: &DEFAULT_VI
   page                       : "Trang"
   pagination_previous        : "Trước"
@@ -880,6 +889,9 @@ da: &DEFAULT_DA
   comment_success_msg        : "Tak for din kommentar! Den bliver vist på siden, så snart den er godkendt."
   comment_error_msg          : "Desværre skete der en fejl. Prøv igen, mens du sørger for at alle obligatoriske felter er udfyldt."
   loading_label              : "Indlæser..."
+  search_placeholder_text    : "Hvad leder du efter..."
+  results_found              : "Resultat(er) fundet"
+  back_to_top                : "Tilbage til toppen"
 da-DK:
   <<: *DEFAULT_DA
 
@@ -923,8 +935,99 @@ pl: &DEFAULT_PL
   comment_success_msg        : "Dziękuję za Twój komentarz! Zostanie dodany po akceptacji."
   comment_error_msg          : "Niestety wystąpił błąd. Proszę upewnij się, że wszystkie wymagane pola zostały wypełnione i spróbuj ponownie."
   loading_label              : "Trwa ładowanie strony..."
-da-PL:
+pl-PL:
   <<: *DEFAULT_PL
+
+# Japanese
+# --------
+ja: &DEFAULT_JA
+  page                       : "ページ"
+  pagination_previous        : "前へ"
+  pagination_next            : "次へ"
+  breadcrumb_home_label      : "ホーム"
+  breadcrumb_separator       : "/"
+  menu_label                 : "メニュー"
+  toc_label                  : "目次"
+  ext_link_label             : "リンク"
+  less_than                  :
+  minute_read                :
+  share_on_label             : "共有"
+  meta_label                 :
+  tags_label                 : "タグ:"
+  categories_label           : "カテゴリー:"
+  date_label                 : "更新日時:"
+  comments_label             : "コメントする"
+  comments_title             : "コメント"
+  more_label                 : "さらに詳しく"
+  related_label              : "関連記事"
+  follow_label               : "フォロー"
+  feed_label                 :
+  powered_by                 :
+  website_label              :
+  email_label                :
+  recent_posts               : "最近の投稿"
+  undefined_wpm              : "パラメータ words_per_minute が _config.yml で定義されていません"
+  comment_form_info          : "メールアドレスが公開されることはありません。次の印のある項目は必ず入力してください:"
+  comment_form_comment_label : "コメント"
+  comment_form_md_info       : "Markdown を使用できます"
+  comment_form_name_label    : "名前"
+  comment_form_email_label   : "メールアドレス"
+  comment_form_website_label : "URL (任意)"
+  comment_btn_submit         : "コメントを送信する"
+  comment_btn_submitted      : "送信しました"
+  comment_success_msg        : "コメントありがとうございます！　コメントは承認されるとページに表示されます。"
+  comment_error_msg          : "送信エラーです。必須項目がすべて入力されていることを確認して再送信してください。"
+  loading_label              : "読み込み中..."
+  search_placeholder_text    : "検索キーワードを入力してください..."
+  results_found              : "件"
+ja-JP:
+  <<: *DEFAULT_JA
+
+# Slovak
+# -----------------
+sk: &DEFAULT_SK
+  page                       : "Stránka"
+  pagination_previous        : "Predošlá"
+  pagination_next            : "Ďalšia"
+  breadcrumb_home_label      : "Domov"
+  breadcrumb_separator       : "/"
+  menu_label                 : "Menu"
+  toc_label                  : "Obsah"
+  ext_link_label             : "Priamy odkaz"
+  less_than                  : "menej ako"
+  minute_read                : "minút"
+  share_on_label             : "Zdieľaj na"
+  meta_label                 :
+  tags_label                 : "Tagy:"
+  categories_label           : "Kategórie:"
+  date_label                 : "Aktualizované:"
+  comments_label             : "Zanechaj odkaz"
+  comments_title             : "Komentáre"
+  more_label                 : "Dozvedieť sa viac"
+  related_label              : "Podobné články"
+  follow_label               : "Sleduj:"
+  feed_label                 : "Zoznam"
+  powered_by                 : "Stránka vytvorená pomocou"
+  website_label              : "Web stránka"
+  email_label                : "Email"
+  recent_posts               : "Najnovšie príspevky"
+  undefined_wpm              : "Nedefinovaný parameter words_per_minute v _config.yml"
+  comment_form_info          : "Tvoja emailová adresa nebude publikovaná. Požadované polia sú označené"
+  comment_form_comment_label : "Komentár"
+  comment_form_md_info       : "Markdown je podporovaný."
+  comment_form_name_label    : "Meno"
+  comment_form_email_label   : "Emailová adresa"
+  comment_form_website_label : "Webstránka (voliteľné)"
+  comment_btn_submit         : "Vlož komentár"
+  comment_btn_submitted      : "Vložený"
+  comment_success_msg        : "Ďakujem za tvoj komentár! Po schválení bude zobrazený na stránke."
+  comment_error_msg          : "Prepáč, pri ukladaní nastala chyba. Ubezpeč sa prosím, že si vyplnil všetky požadované polia a skús znova."
+  loading_label              : "Načítava sa..."
+  search_placeholder_text    : "Zadaj hľadaný výraz..."
+  results_found              : "Nájdených výsledkov"
+  back_to_top                : "Na začiatok stránky"
+sk-SK:
+  <<: *DEFAULT_SK
 
 # Another locale
 # --------------

@@ -52,7 +52,7 @@
             <p class="small">{{ site.data.ui-text[site.locale].comment_form_info | default: "Your email address will not be published. Required fields are marked" }} <span class="required">*</span></p>
             <form id="new_comment" class="page__comments-form js-form form" method="post" action="https://api.staticman.net/v2/entry/{{ site.repository }}/{{ site.staticman.branch }}/comments">
               <div class="form__spinner">
-                <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+                <i class="fas fa-spinner fa-spin fa-3x fa-fw"></i>
                 <span class="sr-only">{{ site.data.ui-text[site.locale].loading_label | default: "Loading..." }}</span>
               </div>
 
@@ -77,17 +77,19 @@
                 <input type="hidden" name="options[slug]" value="{{ page.slug }}">
                 <label for="comment-form-location">Not used. Leave blank if you are a human.</label>
                 <input type="text" id="comment-form-location" name="fields[hidden]" autocomplete="off"/>
-                <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.reCaptcha.siteKey }}">
-                <input type="hidden" name="options[reCaptcha][secret]" value="{{ site.reCaptcha.secret }}">
+                {% if site.reCaptcha.siteKey %}<input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.reCaptcha.siteKey }}">{% endif %}
+                {% if site.reCaptcha.secret %}<input type="hidden" name="options[reCaptcha][secret]" value="{{ site.reCaptcha.secret }}">{% endif %}
               </div>
               <!-- Start comment form alert messaging -->
               <p class="hidden js-notice">
                 <strong class="js-notice-text"></strong>
               </p>
               <!-- End comment form alert messaging -->
-              <div class="form-group">
-                <div class="g-recaptcha" data-sitekey="{{ site.reCaptcha.siteKey }}"></div>
-              </div>
+              {% if site.reCaptcha.siteKey %}
+                <div class="form-group">
+                  <div class="g-recaptcha" data-sitekey="{{ site.reCaptcha.siteKey }}"></div>
+                </div>
+              {% endif %}
               <div class="form-group">
                 <button type="submit" id="comment-form-submit" tabindex="5" class="btn btn--primary btn--large">{{ site.data.ui-text[site.locale].comment_btn_submit | default: "Submit Comment" }}</button>
               </div>
@@ -124,7 +126,7 @@
             <p class="small">{{ site.data.ui-text[site.locale].comment_form_info | default: "Your email address will not be published. Required fields are marked" }} <span class="required">*</span></p>
             <form id="new_comment" class="page__comments-form js-form form" method="post" action="https://api.staticman.net/v1/entry/{{ site.repository }}/{{ site.staticman.branch }}">
               <div class="form__spinner">
-                <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+                <i class="fas fa-spinner fa-spin fa-3x fa-fw"></i>
                 <span class="sr-only">{{ site.data.ui-text[site.locale].loading_label | default: "Loading..." }}</span>
               </div>
 
