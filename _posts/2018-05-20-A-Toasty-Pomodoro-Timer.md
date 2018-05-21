@@ -1,15 +1,16 @@
 ---
 classes: wide
 toc: true
+image: /assets/tomatoman.jpg
 header:
   teaser: /assets/tomatoman.jpg
 ---
 
-I've been putting some thought into how I can use my time more effectively and stumbled upon the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique). The overly-simplified concept is that you work for 25 minutes and then take a 5 minute break. These are called Pomodoro timers and we are going to make our own with PowerShell
+I've been putting some thought into how I can use my time more effectively and stumbled upon the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique). The overly-simplified concept is that you work for 25 minutes and then take a 5 minute break. These are called Pomodoro timers and we are going to make our own with PowerShell.
 
 ## PowerShell Time
 
-This seems like a cool opportunity to come up with a function. This is a function that is for personal use so we can have some fun with it! I want a fancy toast notification when it's finished, and for that I will be using the [BurntToast module](https://github.com/Windos/BurntToast). BurntToast is a fantastic module written by [Josh King](https://twitter.com/WindosNZ) who also happens to have a pretty killer [blog](https://king.geek.nz/) filled with PowerShell goodness. This module requires Windows 10 and PowerShell v5. We can install BurntToast by running:
+This seems like a cool opportunity to come up with a function. This function is for personal use so we can have some fun with it! I want a fancy toast notification when it's finished and for that I will be using the [BurntToast module](https://github.com/Windos/BurntToast). BurntToast is a fantastic module written by [Josh King](https://twitter.com/WindosNZ) who also happens to have a pretty killer [blog](https://king.geek.nz/) filled with PowerShell goodness. This module requires Windows 10 and PowerShell v5. We can install BurntToast by running:
 
 ```powershell
     Install-Module 'BurntToast' -Scope CurrentUser
