@@ -10,10 +10,10 @@ I've been putting some thought into how I can use my time more effectively and s
 
 ## PowerShell Time
 
-This seems like a cool opportunity to come up with a function. This is a function that is for personal use so we can have some fun with it! I want a fancy toast notification when it's finished, and for that I will be using the [BurntToast module](https://github.com/Windos/BurntToast). This module requires PowerShell version 5 and Windows 10. Install it by running:
+This seems like a cool opportunity to come up with a function. This is a function that is for personal use so we can have some fun with it! I want a fancy toast notification when it's finished, and for that I will be using the [BurntToast module](https://github.com/Windos/BurntToast). BurntToast is a fantastic module written by [Josh King](https://twitter.com/WindosNZ) who also happens to have a pretty killer [blog](https://king.geek.nz/) filled with PowerShell goodness. This module requires Windows 10 and PowerShell v5. We can install BurntToast by running:
 
 ```powershell
-    Install-Module BurntToast -Scope CurrentUser
+    Install-Module 'BurntToast' -Scope CurrentUser
 ```
 
 This is a module that allows us to easily display toast notifications. It's one of my favorite modules to play with because you can get instant results and it just makes you feel powerful :) Once you have the module installed you can quickly generate your first toast notification by running:
@@ -26,7 +26,7 @@ That's nice and works fine, but let's spice it up a bit. One of the [cool things
 
 ```powershell
     Start-Sleep -Seconds 3
-    New-BurntToastNotification -Text 'Timer complete' -SnoozeandDismiss -Sound Alarm
+    New-BurntToastNotification -Text 'Timer complete' -SnoozeandDismiss -Sound 'Alarm'
 ```
 
 ## This is a job for... Start-Job
@@ -36,7 +36,7 @@ After running the function I want control to return to the console. Our goal is 
 ```powershell
     $sb = {
         Start-Sleep -Seconds 3
-        New-BurntToastNotification -Text 'Timer complete' -SnoozeandDismiss -Sound Alarm
+        New-BurntToastNotification -Text 'Timer complete' -SnoozeandDismiss -Sound 'Alarm'
     }
     Start-Job -Name 'Pomodoro Timer' -ScriptBlock $sb
 ```
