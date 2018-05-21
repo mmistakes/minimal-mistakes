@@ -1,13 +1,17 @@
 ---
 classes: wide
 toc: true
-image: /assets/tomatoman.jpg
-thumbnail: /assets/tomatoman.jpg
+image: "/assets/tomatoman.jpg"
+thumbnail: "/assets/tomatoman.jpg"
 header:
-  teaser: /assets/tomatoman.jpg
+  teaser: "/assets/tomatoman.jpg"
 ---
 
+
+
 I've been putting some thought into how I can use my time more effectively and stumbled upon the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique). The overly-simplified concept is that you work for 25 minutes and then take a 5 minute break. These are called Pomodoro timers and we are going to make our own with PowerShell.
+
+![Tomato Time!]({{"/assets/tomatoman.jpg" | absolute_url}})
 
 ## PowerShell Time
 
