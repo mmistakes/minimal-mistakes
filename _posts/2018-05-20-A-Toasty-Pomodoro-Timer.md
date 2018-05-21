@@ -121,9 +121,19 @@ It's worth noting that there is a lot of fun stuff you can do with audio here, I
 
 ## Finished Function
 
-I took the liberty of throwing together all that we've looked at so far into a function. I put this function into my profile so I can reuse it easily.
+I took the liberty of throwing together all that we've looked at so far into a function. I put this function into my profile so I can reuse it easily. This next bit of code will check to see if you have a profile and if you don't it will create one, then it opens up the profile file using your default program.
 
-I'll keep an updated version [here](https://github.com/AndrewPla/PowerShell-Toolery-and-Foolery/tree/master/Start-PomodoroTimer)
+```powershell
+# Create a profile if one doesn't exist already
+if (-not (Test-Path $profile))
+{
+	New-item -ItemType file -Path $profile
+}
+# Open up the profile so we can paste the function in there
+Invoke-Item $profile
+```
+
+Paste the code below into your profile. Save your profile, then restart your PowerShell console and you will have access to Start-PomodoroTimer.
 
 ```powershell
 function Start-PomodoroTimer
@@ -212,6 +222,8 @@ function Start-PomodoroTimer
 	}
 }
 ```
+
+I'll keep an updated version [here](https://github.com/AndrewPla/PowerShell-Toolery-and-Foolery/tree/master/Start-PomodoroTimer)
 
 ## Closing Thoughts
 
