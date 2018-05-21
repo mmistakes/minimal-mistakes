@@ -2,6 +2,7 @@
 classes: wide
 toc: true
 image: /assets/tomatoman.jpg
+thumbnail: /assets/tomatoman.jpg
 header:
   teaser: /assets/tomatoman.jpg
 ---
