@@ -17,9 +17,9 @@ minimal_mistakes_skin    : "dark" # "default", "aqua","air "contrast", "dark", "
 # Site Settings
 locale                   : "en-US"
 title                    : "Andrew Pla's PowerShell Blog"
-title_separator          : "-"
-name                     : "Andrew Pla"
-description              : "This is a site for me to share the stuff that I'm learning/doing and talk about PowerShell."
+title_separator          : ">_"
+name                     : &name "Andrew Pla"
+description              : &description "This is a site for me to share the stuff that I'm learning/doing and talk about PowerShell."
 url                      : "https://AndrewPla.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "andrewpla/andrewpla.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -65,7 +65,7 @@ algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
   search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : # true (default), false
+  powered_by             : false # true (default), false
 
 # SEO Related
 google_site_verification :
@@ -197,8 +197,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
+timezone: America/New_York
 
 # Plugins (previously gems:)
 plugins:
