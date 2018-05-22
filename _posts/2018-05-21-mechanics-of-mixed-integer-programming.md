@@ -1,3 +1,4 @@
+
 # Why are we doing this?
 
 If you have spend any time with me you will know that I am passionate about Optimization. Now, you may pass this off as a bit of geekiness on my part but the reason I care about Optimization is that it has profound implications for how we care for people. When I get a moment to describe Optimization to someone the way I start off is by saying, "Optimization is the mathematics of caring for people." If you care about making the world a better place for humanity, then you should care about Optimization.
@@ -26,7 +27,7 @@ Step 0: Create a LP Relaxtion of the original problem and solve it. Check for th
 
 - Integer Solution: All of the integer decision variables have taken on integral values. We are done since the solution to the LP Relaxation and the IP problem are the same.
 
-- Fractional Solution: Some or all of the Integer Decision Variables have taken on fractional values and have not met the integrality requirements. We set \(BestUpperBound = z^{*}\) where \(z^{*}\) is the objective value for the initial LP relaxation and  \(BestLowerBound = -\infty\). Select one of the Integer Decision Variables and branch on it. For example, if \(x_1 = 1.5\) in the initial solution and it is supposed to be an integer we would create a branch with a new constraint \(x_1\leq1.0\) and a separate branch where \(x_{1}\geq2.0\).
+- Fractional Solution: Some or all of the Integer Decision Variables have taken on fractional values and have not met the integrality requirements. We set \(BestUpperBound = z^\ast\) where \(z^\ast\) is the objective value for the initial LP relaxation and  \(BestLowerBound = -\infty\). Select one of the Integer Decision Variables and branch on it. For example, if \(x_1 = 1.5\) in the initial solution and it is supposed to be an integer we would create a branch with a new constraint \(x_1\leq1.0\) and a separate branch where \(x_{1}\geq2.0\).
 
 After we have solved the relaxation we check for the following conditions:
 
