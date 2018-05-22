@@ -11,6 +11,9 @@ main:
   - title: "Projects"
     url: /projects/
 
+  - title: "Places"
+    url: /places/
+
   - title: "Mastery"
     url: /mastery/
 
