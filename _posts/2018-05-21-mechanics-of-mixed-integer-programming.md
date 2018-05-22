@@ -15,7 +15,7 @@ Branch and Bound is a method for recursively solving LP Relaxations and at each 
 
 Let's put together a rough outline of how the Brand and Bound algorithm works. For that we will need some parameters.
 
-\(P =\) Our Initial Problem \
+\(P =\) Our Initial Problem  
 \(P_{LP} =\) The LP Relaxation of our initial problem
 
 
