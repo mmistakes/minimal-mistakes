@@ -14,8 +14,8 @@ Branch and Bound is a method for recursively solving LP Relaxations and at each 
 
 Let's put together a rough outline of how the Brand and Bound algorithm works. For that we will need some parameters.
 
-$P =$ Our Initial Problem\
-$P_{LP} =$ The LP Relaxation of our initial problem
+\(P =\) Our Initial Problem\
+\(P_{LP} =\) The LP Relaxation of our initial problem
 
 
 Step 0: Create a LP Relaxtion of the original problem and solve it. Check for the following conditions:
@@ -26,7 +26,7 @@ Step 0: Create a LP Relaxtion of the original problem and solve it. Check for th
 
 - Integer Solution: All of the integer decision variables have taken on integral values. We are done since the solution to the LP Relaxation and the IP problem are the same.
 
-- Fractional Solution: Some or all of the Integer Decision Variables have taken on fractional values and have not met the integrality requirements. We set $BestUpperBound = z^*$ where $z^*$ is the objective value for the initial LP relaxation and  $BestLowerBound = -\infty$. Select one of the Integer Decision Variables and branch on it. For example, if $x_1 = 1.5$ in the initial solution and it is supposed to be an integer we would create a branch with a new constraint $x_1\leq1.0$ and a separate branch where $x_{1}\geq2.0$.
+- Fractional Solution: Some or all of the Integer Decision Variables have taken on fractional values and have not met the integrality requirements. We set \(BestUpperBound = z^*\) where \(z^*\) is the objective value for the initial LP relaxation and  \(BestLowerBound = -\infty\). Select one of the Integer Decision Variables and branch on it. For example, if \(x_1 = 1.5\) in the initial solution and it is supposed to be an integer we would create a branch with a new constraint \(x_1\leq1.0\) and a separate branch where \(x_{1}\geq2.0\).
 
 After we have solved the relaxation we check for the following conditions:
 
