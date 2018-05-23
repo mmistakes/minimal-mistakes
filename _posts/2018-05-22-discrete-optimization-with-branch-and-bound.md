@@ -27,7 +27,7 @@ Let's put together a rough outline of how the Brand and Bound algorithm works. F
 
 $P =$ Our Initial Problem  
 $P_{LP} =$ The LP Relaxation of our initial problem  
-$z^\ast$  
+$z^\ast =$ The objective function value for $P_{LP}$  
 $P^n =$ The $n^{th}$ subproblem of problem $P$  
 $P^n_{LP} =$ The LP relaxation of the $P^n$ problem  
 $z^n =$ The objective function value for the solution to $P^n$   
