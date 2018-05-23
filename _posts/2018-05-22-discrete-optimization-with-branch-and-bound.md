@@ -41,7 +41,7 @@ Create a LP Relaxation of the original problem, \[P\], and solve it. We refer to
 
 #### Infeasible
 
-If the problem is infeasible at this stage we are done. If there is no solution to the \[P_{LP}\], then there is no solution to the original problem \[P\].
+If the problem is infeasible at this stage we are done. If there is no solution to the \[P_{LP}\] there is no solution to the original problem \[P\].
 
 #### Unbounded
 
