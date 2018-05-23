@@ -80,7 +80,7 @@ If while solving $P_{LP}^n$ you find the solution is infeasible you can "prune" 
 
 If $z^n \leq Z_{LB}$ we can prune this branch. If we are on the first iteration of the problem though $Z_{LB} = -\infty$ so no node will be eliminated by this check. In Step 5 we update this value so eventually it will be an effective means of guiding our search down the tree.
 
-Now, why can we prune based on $z^n \leq Z_{LB}$ you may ask. This is because we know that there is another branch which guarantees better solutions than the current branch. There is no point in us spending time searching down this branch because we already know we can do just as well if not better searching a different branch. If we have not pruned based on this test proceed to Step 5 or Step 6 depending on the condition of the solution.
+Now, why can we prune based on $z^n \leq Z_{LB}$ you may ask. This is because we know that there is another branch which guarantees better solutions than the current branch. There is no point in us spending time searching down this branch because we already know we can do just as well if not better searching a somewhere else. If we have not pruned based on this test proceed to Step 5 or Step 6 depending on the condition of the solution.
 
 ### Step 5: Check for Integrality
 
