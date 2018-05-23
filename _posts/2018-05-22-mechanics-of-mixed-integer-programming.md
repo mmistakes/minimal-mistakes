@@ -1,9 +1,11 @@
 ---
 published: true
 ---
-If you have spend any time with me you will know that I am passionate about Optimization. Now, you may pass this off as a bit of geekiness on my part but the reason I care about Optimization is that it has profound implications for how we care for people. When I get a moment to describe Optimization to someone the way I start off is by saying, "Optimization is the mathematics of caring for people." If you care about making the world a better place for humanity, then you should care about Optimization.
+If you have spent any time with me you will know that I am passionate about Optimization. Now, you may pass this off as a bit of geekiness on my part but the reason I care about Optimization is that it has profound implications for how we care for people. When I get a moment to describe Optimization to someone the way I start off is by saying, "Optimization is the mathematics of caring for people." If you care about making the world a better place for humanity, then you should care about Optimization.
 
 The difficulty is that Optimization is often shrouded in mystery due to the math. My hope in this series is to clarify the mathematics of Optimization and make it more approachable. This will be the resource I wish I had when going through school. My desire is that by the end of the series you will have a firmer footing as you begin to scale the beautiful heights of Optimization and you come to enjoy it as art and as a tool for serving others.
+
+>Note: I am not putting these posts out in a particular order. Right now I am just writing on what I am researching currently. When the series is complete I will recompile them into a more sensible order. The field is vast so I may jump around as I focus on different areas in my professional life.
 
 ## Integer and Mixed Integer Programming
 
