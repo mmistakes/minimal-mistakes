@@ -9,15 +9,19 @@ categories:
   - Automation
 tags:
   - Raspberry PI
-  - Hidraulic
+  - Hydraulic
   - Electronic
-  
+  - Electrical
+  - Python
+  - Linux
+  - SSH
+  - REST
+  - Internet of Things  
 ---
 The objective of this tutorial is to create and control a sprinkler system with a Raspberry PI.
 
 - [Hydraulic part]({{ site.url }}{{ site.baseurl }}/automation/sprinkler-hydraulic)
-- [Electrical part]({{ site.url }}{{ site.baseurl }}/automation/sprinkler-electrical)
-- [Electronic part]({{ site.url }}{{ site.baseurl }}/automation/sprinkler-electronic)
+- [Electonic part]({{ site.url }}{{ site.baseurl }}/automation/sprinkler-elec)
 - [Software part]({{ site.url }}{{ site.baseurl }}/automation/sprinkler-software)
 
 ### Final Result

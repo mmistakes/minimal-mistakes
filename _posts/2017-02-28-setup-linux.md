@@ -22,18 +22,25 @@ The objective of this tutorial is to set up basic configuration of Raspbian dist
 
 ### Create user
 
+Change password root
+
+Why use "adduser" instead of "useradd" ?
+
 a. Add user
 ```bash
-useradd new_user
+adduser new_user
 ```
 b. Set password
 ```bash
 passwd new_user
 ```
+install sudo
+
+apt-get install sudo
+
 c. Add new user as sudoers
-```bash 
-sudo echo 'new_user ALL=(ALL) ALL' >> /etc/sudoers
-```
+
+
 d. Add new user in groups root,adm,sudo
 ```bash
 usermod -a -G root,adm,sudo new_user
@@ -43,16 +50,16 @@ usermod -a -G root,adm,sudo new_user
 
 a. Create group 
 ```bash
-groupadd sshusers
+addgroup sshusers
 ```
 b. Add new_user into the group
 ```bash
-usermod -a -G sshusers new_user
+addgroup new_user sshusers
 ```
 
 a. Edit ssh config
 ```
-sudo vim /etc/ssh/sshd_config
+vim /etc/ssh/sshd_config
 ```
 b. Change default parameters
 
@@ -60,35 +67,102 @@ b. Change default parameters
 ```text
 Port X
 ```
-example: 
-```bash
-ssh new_user@address -p X
-```
-- No permit root login
-```text
-PermitRootLogin no
-```
+
 see more [here](https://mediatemple.net/community/products/dv/204643810/how-do-i-disable-ssh-login-for-the-root-user)
 
 - Allow a specific group and user is a good practices
 ```text
 AllowGroups sshusers
-AllowUsers new_user
 ```
 
 c. Restart service
 
 ```bash
-sudo /etc/init.d/ssh restart
-```
-or
-```bash
 systemctl restart ssh.service
 ```
+
+exit
+
+example: 
+```bash
+ssh new_user@server-address -p X
+```
+
+```
+sudo vim /etc/ssh/sshd_config
+```
+
+- No permit root login
+```text
+PermitRootLogin no
+```
+
+```bash
+sudo systemctl restart ssh.service
+```
+Create a key
+
+PubkeyAuthentication yes
+
+See create an ssh rsa key
+
+Host nextrun2
+ Hostname hostname
+ User jluccisano
+ Port 22
+ AddKeysToAgent yes
+ UseKeychain yes
+ IdentityFile ~/.ssh/id_rsa
+
+ssh-copy-id -i ~/.ssh/id_rsa.pub -p 85 user@hostname
+
+ssh nextrun2
+
+
 - Get list of services
 ```bash
 systemctl list-units --type=service 
 ```
+
+image configure_rsync_backup.png
+
+#### Rsync 
+
+sudo apt-get install rsync
+
+sudo vi /etc/default/rsync
+et modifier la ligne RSYNC à true
+
+RSYNC_ENABLE=true
+
+
+sudo adduser rsync_user
+
+sudo vi /etc/rsyncd.conf
+
+
+```txt
+uid = rsync_user
+gid = rsync_user
+max connections = 4
+[nas_rsync]
+path = /home/rsync_user
+comment = Synchro des fichiers avec mon NAS
+read only = false
+```
+
+sudo chown -R rsync_user:rsync /home/rsync_user
+
+sudo chmod -R 775  /home/rsync_user
+
+sudo systemctl status rsync.service
+
+sudo systemctl enable rsync.service
+
+addgroup sshusers rsync_user
+
+sudo systemctl restart ssh.service
+
 
 ### Install zsh and oh-my-zsh (optional)
 
