@@ -1,0 +1,17 @@
+current directory: C:/Users/Matthew/Documents/GitHub/matthewcrews.github.io/vendor/cache/ruby/2.4.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+C:/Ruby24-x64/bin/ruby.exe -r ./siteconf20180524-5776-1izi04k.rb extconf.rb
+creating Makefile
+
+current directory: C:/Users/Matthew/Documents/GitHub/matthewcrews.github.io/vendor/cache/ruby/2.4.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" clean
+
+current directory: C:/Users/Matthew/Documents/GitHub/matthewcrews.github.io/vendor/cache/ruby/2.4.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR="
+generating ruby_http_parser-x64-mingw32.def
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.so
+
+current directory: C:/Users/Matthew/Documents/GitHub/matthewcrews.github.io/vendor/cache/ruby/2.4.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20180524-5776-tyosa1

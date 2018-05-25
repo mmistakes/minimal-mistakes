@@ -1,0 +1,33 @@
+current directory: C:/Users/Matthew/Documents/GitHub/matthewcrews.github.io/vendor/cache/ruby/2.4.0/gems/wdm-0.1.1/ext/wdm
+C:/Ruby24-x64/bin/ruby.exe -r ./siteconf20180524-5776-1xmoecz.rb extconf.rb
+checking for -lkernel32... yes
+checking for windows.h... yes
+checking for ruby.h... yes
+checking for HAVE_RUBY_ENCODING_H... yes
+checking for rb_thread_call_without_gvl()... yes
+creating Makefile
+
+current directory: C:/Users/Matthew/Documents/GitHub/matthewcrews.github.io/vendor/cache/ruby/2.4.0/gems/wdm-0.1.1/ext/wdm
+make "DESTDIR=" clean
+
+current directory: C:/Users/Matthew/Documents/GitHub/matthewcrews.github.io/vendor/cache/ruby/2.4.0/gems/wdm-0.1.1/ext/wdm
+make "DESTDIR="
+generating wdm_ext-x64-mingw32.def
+compiling entry.c
+compiling memory.c
+compiling monitor.c
+compiling queue.c
+compiling rb_change.c
+compiling rb_monitor.c
+rb_monitor.c: In function 'rb_monitor_run_bang':
+rb_monitor.c:509:29: warning: implicit declaration of function 'rb_thread_call_without_gvl'; did you mean 'rb_thread_wait_for'? [-Wimplicit-function-declaration]
+         waiting_succeeded = rb_thread_call_without_gvl(wait_for_changes, monitor->process_event, stop_monitoring, monitor);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                             rb_thread_wait_for
+compiling utils.c
+compiling wdm.c
+linking shared-object wdm_ext.so
+
+current directory: C:/Users/Matthew/Documents/GitHub/matthewcrews.github.io/vendor/cache/ruby/2.4.0/gems/wdm-0.1.1/ext/wdm
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 wdm_ext.so ./.gem.20180524-5776-1r0tmrg

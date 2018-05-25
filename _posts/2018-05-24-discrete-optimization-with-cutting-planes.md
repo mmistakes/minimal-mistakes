@@ -1,0 +1,5 @@
+Previously I described how we can perform Discrete Optimization using the Branch and Bound technique. Today I want to describe another fundamental technique which is often a subcomponent of more advanced solution algorithms, Cutting Planes. Cutting Planes is a technique that was initially created by Gomory in (date). It is like the Branch and Bound technique in that uses an LP Relaxation to search for solutions but it has a different mechanism for excluding nonintegral solutions. Branch and Bound would subdivide the solution space by branching on the values that a decision variable can take on by creating constraints which would restrict the decision variable to either take on the value of the adjacent integer values.
+
+Cutting Planes actually introduces as series of additional constraints which slowly constricts the solution space. It does this in such a way that none of the feasible integral solutions are eliminated from the feasible set of values though.
+
+![Diagram Image](../assets/discrete-optimization-with-cutting-planes/test.jpg)
