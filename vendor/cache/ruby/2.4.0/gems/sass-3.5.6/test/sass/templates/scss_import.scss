@@ -1,0 +1,12 @@
+$preconst: hello;
+
+@mixin premixin {pre-mixin: here}
+
+@import "importee.sass", "scss_importee", "basic.sass", "basic.css", "../results/complex.css";
+@import "part\
+ial.sass";
+
+nonimported {
+  myconst: $preconst;
+  otherconst: $postconst;
+  @include postmixin; }

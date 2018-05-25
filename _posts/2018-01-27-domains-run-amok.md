@@ -1,5 +1,9 @@
 ---
 published: true
+layout: post
+title: Domains Run Amok
+date: 2018-01-27
+categories: fsharp domain-driven-design
 ---
 I am a huge fan of Domain Driven Design and I have been trying to apply it more and more. I ran into a problem last week that kept beating me over the head though. I kept using a bottom up approach and kept coming up with terrible solutions. Finally, I took a more outside to in approach which cleaned up the solution. I credit [Mark Seemann](http://blog.ploeh.dk/) for the idea to work from the outside in. I am wanting to show some of the difficulties you can run into using a bottom up approach so that others don't make the same mistakes that I did. Hopefully this little exercise helps provide others some guidance on how to get unstuck when attempting Domain Driven Design.
 

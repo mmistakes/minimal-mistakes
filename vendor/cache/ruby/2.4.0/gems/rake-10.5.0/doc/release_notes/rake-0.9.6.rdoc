@@ -1,0 +1,64 @@
+= Rake 0.9.6 Released
+
+Rake version 0.9.6 contains a number of fixes mainly for merging
+Rake into the Ruby source tree and fixing tests.
+
+== Changes
+
+=== Bug Fixes (0.9.6)
+
+* Better trace output when using a multi-threaded Rakefile.
+* Arg parsing is now consistent for tasks and multitasks.
+* Skip exit code test in versions of Ruby that don't support it well.
+
+Changes for better integration with the Ruby source tree:
+
+* Fix version literal for Ruby source tree build.
+* Better loading of libraries for testing in Ruby build.
+* Use the ruby version provided by Ruby's tests.
+
+== What is Rake
+
+Rake is a build tool similar to the make program in many ways. But
+instead of cryptic make recipes, Rake uses standard Ruby code to
+declare tasks and dependencies. You have the full power of a modern
+scripting language built right into your build tool.
+
+== Availability
+
+The easiest way to get and install rake is via RubyGems ...
+
+  gem install rake    (you may need root/admin privileges)
+
+Otherwise, you can get it from the more traditional places:
+
+Home Page:: http://github.com/jimweirich/rake
+Download::  http://rubyforge.org/project/showfiles.php?group_id=50
+GitHub::    git://github.com/jimweirich/rake.git
+
+== Thanks
+
+As usual, it was input from users that drove a alot of these changes. The
+following people either contributed patches, made suggestions or made
+otherwise helpful comments.  Thanks to ...
+
+* Aaron Patterson
+* Dylan Smith
+* Jo Liss
+* Jonas Pfenniger
+* Kazuki Tsujimoto
+* Michael Bishop
+* Michael Elufimov
+* NAKAMURA Usaku
+* Ryan Davis
+* Sam Grönblom
+* Sam Phippen
+* Sergio Wong
+* Tay Ray Chuan
+* grosser
+* quix
+
+Also, many thanks to Eric Hodel for assisting with getting this release
+out the door.
+
+-- Jim Weirich

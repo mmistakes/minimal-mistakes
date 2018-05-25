@@ -1,0 +1,29 @@
+inherit_gem:
+  jekyll: .rubocop.yml
+
+AllCops:
+  TargetRubyVersion: 2.3
+  Include:
+    - lib/*.rb
+
+  Exclude:
+    - .rubocop.yml
+    - .codeclimate.yml
+    - .travis.yml
+    - .gitignore
+    - .rspec
+
+    - Gemfile.lock
+    - CHANGELOG.md
+    - readme.md
+    - README.md
+    - Readme.md
+    - ReadMe.md
+    - COPYING
+    - LICENSE
+
+    - test/**/*
+    - vendor/**/*
+    - features/**/*
+    - script/**/*
+    - spec/**/*
