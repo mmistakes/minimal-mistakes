@@ -2,7 +2,6 @@
 published: true
 title: F# for Optimization Modeling
 date: 2018-05-04
-categories: fsharp optimization
 ---
 I recently attended a training event hosted by Gurobi. For those who don't know, Gurobi produces one of the best mathematical solvers in the industry. It was a great event and we were able to spend ample time with engineers and experts in the field.
 
