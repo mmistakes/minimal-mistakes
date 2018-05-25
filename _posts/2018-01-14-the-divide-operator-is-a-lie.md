@@ -1,6 +1,5 @@
 ---
 published: true
-layout: post
 title: The Divide Operator is a Lie
 date: 2018-01-14
 categories: fsharp

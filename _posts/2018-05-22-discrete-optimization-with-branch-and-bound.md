@@ -1,6 +1,5 @@
 ---
 published: true
-layout: post
 title: Discrete Optimization with Branch and Bound
 date: 2018-05-22
 categories: optimization algorithms mip

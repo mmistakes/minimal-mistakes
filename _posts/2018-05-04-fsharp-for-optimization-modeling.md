@@ -1,6 +1,5 @@
 ---
 published: true
-layout: post
 title: F# for Optimization Modeling
 date: 2018-05-04
 categories: fsharp optimization

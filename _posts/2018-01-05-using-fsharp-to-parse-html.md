@@ -1,6 +1,5 @@
 ---
 published: true
-layout: post
 title: Using F# to Parse HTML
 date: 2018-01-05
 categories: fsharp

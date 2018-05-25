@@ -1,6 +1,5 @@
 ---
 published: true
-layout: post
 title: Domains Run Amok
 date: 2018-01-27
 categories: fsharp domain-driven-design

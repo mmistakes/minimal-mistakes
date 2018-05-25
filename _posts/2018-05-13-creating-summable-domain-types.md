@@ -1,6 +1,5 @@
 ---
 published: true
-layout: post
 title: Creating Summable Domain Types
 date: 2018-05-13
 categories: fsharp domain-driven-design

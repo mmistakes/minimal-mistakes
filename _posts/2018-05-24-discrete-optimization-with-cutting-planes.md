@@ -1,6 +1,5 @@
 ---
 published: true
-layout: post
 title: Discrete Optimization with Cutting Planes
 date: 2018-05-25
 categories: optimization algorithms mip

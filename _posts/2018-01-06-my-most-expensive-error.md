@@ -1,6 +1,5 @@
 ---
 published: true
-layout: post
 title: My Most Expensive error
 date: 2018-01-06
 categories: fsharp domain-driven-design
