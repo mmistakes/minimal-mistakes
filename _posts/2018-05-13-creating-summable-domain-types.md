@@ -1,5 +1,9 @@
 ---
 published: true
+layout: post
+title: Creating Summable Domain Types
+date: 2018-05-13
+categories: fsharp domain-driven-design
 ---
 One of the reasons that I love F# is that is makes it incredibly easy to model domains. By creating a Domain Model which represents the business domain it becomes relatively easy to create workflows and algorithms which streamline business processes. In this post I show how to create types for a domain which are summable, a feature I use frequently in my work.
 

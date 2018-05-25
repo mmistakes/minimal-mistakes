@@ -1,5 +1,9 @@
 ---
 published: true
+layout: post
+title: The Divide Operator is a Lie
+date: 2018-01-14
+categories: fsharp
 ---
 One of the things that most attracted me to F# is the ability to accurately model your domain. What first turned me on to this was a talk by [Scott Wlaschin on Functional programming design patterns](https://www.youtube.com/watch?v=E8I19uA-wGY&t=1102s). Scott has a more focused talk on [Domain Modeling Made Functional](https://www.youtube.com/watch?v=Up7LcbGZFuo&t=229s) that he did a few years later and a [book with the same title](https://fsharpforfunandprofit.com/books/). This whole concept was blowing my mind. The idea of modeling your domain such that illegal states are unrepresentable sounds immensely satisfying to me.
 

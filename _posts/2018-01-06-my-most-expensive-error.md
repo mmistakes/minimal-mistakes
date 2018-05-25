@@ -1,5 +1,9 @@
 ---
 published: true
+layout: post
+title: My Most Expensive error
+date: 2018-01-06
+categories: fsharp domain-driven-design
 ---
 The title for this may be a little over the top but it is not far from the truth. I am wanting to show how Units of Measure in F# can protect against some of the most insidious types of errors, mismatched units.
 

@@ -1,3 +1,10 @@
+---
+published: true
+layout: post
+title: Discrete Optimization with Cutting Planes
+date: 2018-05-25
+categories: optimization algorithms mip
+---
 Previously I described how we can perform Discrete Optimization using the Branch and Bound technique. Today I want to describe another foundational technique for Discrete Optimization, Cutting Planes. Cutting Planes is like the Branch and Bound technique in that it uses a series of LP Relaxations to search for solutions. Where it is different from Branch and Bound is in how it refines the LP Formulations. Branch and Bound would subdivide the solution space by branching on a decision variable and creating two new subproblems. Instead, what Cutting Planes does is iteratively add constraints which eliminate the nonintegral solutions from the feasible space while not eliminating any feasible integral solutions. These constraints that we add are called "Cuts" because they are cutting off nonintegral solutions from the feasible space.
 
 ## The Cutting Planes Algorithm
