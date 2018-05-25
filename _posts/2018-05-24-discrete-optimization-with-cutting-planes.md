@@ -4,9 +4,9 @@ Previously I described how we can perform Discrete Optimization using the Branch
 
 Conceptually the Cutting Plane Algorithm is rather simple. It is made up of the following three steps.
 
-1) Solve the LP Relaxation of the Current Problem
-2) Check if the integrality requirements of the original problem have been met. If so, terminate, an optimal solution has been found. If integrality has not been achieved proceed to Step 3.
-3) Add a constraint to the problem which removes the current optimal solution from the feasible space but does not eliminate any of the integer feasible solutions. Return to Step 1
+- Step 1: Solve the LP Relaxation of the Current Problem
+- Step 2: has been found. If integrality has not been achieved proceed to Step 3.
+- Step 3: Add a constraint to the problem which removes the current optimal solution from the feasible space but does not eliminate any of the integer feasible solutions. Return to Step 1
 
 > Obviously you need to check for infeasibility and unboundedness as well. If either one of those conditions arise, terminate.
 
@@ -22,18 +22,18 @@ If we take the LP Relaxation of this problem the optimum would be at the interse
 
 ![Solution to Initial LP](../assets/2018-05-24-discrete-optimization-with-cutting-planes/2018-05-25-11-49-17.png)
 
-We have labeled the solution to this initial LP $Z^0_{LP}$. The superscript indicates which iteration this is the solution to and the $LP$ subscript indicates it is a solution to the LP Relaxation. We check if the integrality requirements of the original problem have been met. They have not since the optimal solution to the LP does not lie on integer values for $x_1$ and $x_2$. Now we need to generate a new constraint that we can add to the problem which removes $Z^0_{LP}$ from the feasible space but does not eliminate any of the integer feasible solutions.
+We have labeled the solution to this initial LP $Z_{LP}^{0}$ . The superscript indicates which iteration this is the solution to and the $LP$ subscript indicates it is a solution to the LP Relaxation. We check if the integrality requirements of the original problem have been met. They have not since the optimal solution to the LP does not lie on integer values for $x_1$ and $x_2$. Now we need to generate a new constraint that we can add to the problem which removes $Z_{LP}^{0}$ from the feasible space but does not eliminate any of the integer feasible solutions.
 
-Later we will go over some methods for calculating these constraints. For now let's just use visual analysis. One of the easiest constraints that we can add is $x_2 \leq 4$. It removes $Z^0_{LP}$ from the feasible space but does not cut off any of our integer feasible solutions. Let's add this constraint and redraw our problem.
+Later we will go over some methods for calculating these constraints. For now let's just use visual analysis. One of the easiest constraints that we can add is $x_2 \leq 4$. It removes $Z_{LP}^{0}$ from the feasible space but does not cut off any of our integer feasible solutions. Let's add this constraint and redraw our problem.
 
 ![Solution to LP^1](../assets/2018-05-24-discrete-optimization-with-cutting-planes/2018-05-25-11-49-50.png)
 
-I have taken the liberty of marking the new solution, $Z^1_{LP}$. The good news is that now $x_2$ has taken on an integer value but $x_1$ has not. $x_1$ lies between $2$ and $3$ so we need to add another constraint. Again we can just look at the problem and see we can add the constraint $x_1 + x_2 \leq 6$. This does not remove any integer feasible solutions but it will remove $Z^1_{LP}$ from the feasible space. Let's add this constraint and see what we get.
+I have taken the liberty of marking the new solution $Z_{LP}^{1}$ on the diagram. The good news is that now $x_2$ has taken on an integer value but $x_1$ has not. $x_1$ lies between $2$ and $3$ so we need to add another constraint. Again we can just look at the problem and see we can add the constraint $x_1 + x_2 \leq 6$. This does not remove any integer feasible solutions but it will remove $Z_{LP}^{1}$ from the feasible space. Let's add this constraint and see what we get.
 
 ![Solution to LP^2](../assets/2018-05-24-discrete-optimization-with-cutting-planes/2018-05-25-11-54-09.png)
 
-We have added the constraint of $x_1 + x_2 \leq 6$ and resolved. Our new solution $Z^2_{LP}$ lies on integral values of $x_1$ and $x_2$. We can now end our search since we have found a solution which meets the integrality requirements of the original problem.
+We have added the constraint of $x_1 + x_2 \leq 6$ and resolved. Our new solution $Z_{LP}^{2}$ lies on integral values of $x_1$ and $x_2$. We can now end our search since we have found a solution which meets the integrality requirements of the original problem.
 
 ## Next Steps
 
-This walkthrough had some nice pictures but you should have this nagging question, "How do we generate these cuts?" In this problem it was easy to see which cuts were and were not feasible. We just chose some obvious ones based on what we could see. We need to be able to do this in much higher dimensions though. Next time we will introduce some of the most common cuts and how we generate them. Today we just wanted to lay a conceptual foundation for how Cutting Planes worked. Next time we will get into the math of how we find these good cuts.
+This walkthrough had some nice pictures but you should have this nagging question, "How do we generate these cuts?" In this problem it was easy to see which cuts were and were not feasible. We just chose some obvious ones based on what we could see. We need to be able to do this in much higher dimensions though. Next time we will introduce some of the most common cuts and how we generate them. Today we just wanted to lay a conceptual foundation for how Cutting Planes worked. I hope you enjoyed the post and I always welcome feedback!
