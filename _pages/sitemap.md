@@ -13,7 +13,9 @@ relative_url }}) zum einfacheren verdauen.
 
 <h2>Seiten</h2>
 {% for post in site.pages %}
+  {% if post.sitemap != false %}
   {% include archive-single.html %}
+  {% endif %}
 {% endfor %}
 
 {% if site.posts.size > 0 %}
