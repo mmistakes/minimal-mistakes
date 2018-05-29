@@ -1,0 +1,7 @@
+---
+sitemap: false
+---
+User-agent: *
+Disallow: /zirkus2018/
+
+Sitemap: {{ "/sitemap.xml" | absolute_url }}
