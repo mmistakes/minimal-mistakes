@@ -1,5 +1,4 @@
 ---
-layout:           single
 title:            "Crafting the Message"
 date:             2018-04-30 00:00:00 -0500
 categories:       Bible

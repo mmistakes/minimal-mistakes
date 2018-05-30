@@ -1,5 +1,4 @@
 ---
-layout:           single
 title:            "Maven Plugins"
 date:             2018-04-12 00:00:00 -0500
 categories:       IT

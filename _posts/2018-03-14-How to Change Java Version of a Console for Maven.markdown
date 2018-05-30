@@ -1,5 +1,4 @@
 ---
-layout:           single
 title:            "How to Change Java Version of a Console for Maven"
 date:             2018-03-14 00:00:00 -0500
 categories:       IT

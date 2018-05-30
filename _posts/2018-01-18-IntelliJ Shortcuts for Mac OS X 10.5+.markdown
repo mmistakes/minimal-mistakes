@@ -1,5 +1,4 @@
 ---
-layout:           single
 title:            "IntelliJ Shortcuts for Mac OS X 10.5+"
 date:             2018-01-18 00:00:00 -0500
 categories:       IT

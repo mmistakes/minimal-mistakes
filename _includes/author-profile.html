@@ -8,14 +8,14 @@
       {% if author.avatar contains "://" %}
         {% assign author_src = author.avatar %}
       {% else %}
-        {% assign author_src = author.avatar | absolute_url %}
+        {% assign author_src = author.avatar | relative_url %}
       {% endif %}
 
       {% if author.home %}
         {% if author.home contains "://" %}
           {% assign author_link = author.home %}
         {% else %}
-          {% assign author_link = author.home | absolute_url %}
+          {% assign author_link = author.home | relative_url %}
         {% endif %}
         <a href="{{ author_link }}">
           <img src="{{ author_src }}" alt="{{ author.name }}" itemprop="image">

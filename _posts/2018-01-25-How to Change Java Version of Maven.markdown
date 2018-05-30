@@ -1,5 +1,4 @@
 ---
-layout:           single
 title:            "How to Change Java Version of Maven"
 date:             2018-01-25 00:00:00 -0500
 categories:       IT

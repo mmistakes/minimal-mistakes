@@ -1,5 +1,4 @@
 ---
-layout:           single
 title:            "The Unsurprising Friction Between DEV and OPS"
 date:             2018-03-23 00:00:00 -0500
 categories:       IT
