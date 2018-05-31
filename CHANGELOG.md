@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+* Add support for "sticking" table of contents to top of page via `toc_sticky: true` YAML Front Matter.
 * Add support for captioning images in feature row helper via `image_caption` YAML Front Matter. [#1440](https://github.com/mmistakes/minimal-mistakes/issues/1440)
 * Add [Google Custom Search Engine](https://cse.google.com/cse) support. [#1652](https://github.com/mmistakes/minimal-mistakes/issues/1652)
 * Update Font Awesome to version [`5.0.13`](https://github.com/FortAwesome/Font-Awesome/blob/master/CHANGELOG.md)
