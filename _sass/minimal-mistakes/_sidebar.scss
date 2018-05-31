@@ -74,6 +74,14 @@
     margin-right: -1 * $right-sidebar-width-narrow;
     padding-left: 1em;
     z-index: 10;
+
+    &.sticky {
+      @include clearfix();
+      position: -webkit-sticky;
+      position: sticky;
+      top: 2em;
+      float: right;
+    }
   }
 
   @include breakpoint($x-large) {
@@ -279,6 +287,7 @@
 
 .wide .sidebar__right {
   margin-bottom: 1em;
+
   @include breakpoint($large) {
     position: initial;
     top: initial;
@@ -287,6 +296,10 @@
     margin-right: initial;
     padding-left: initial;
     z-index: initial;
+
+    &.sticky {
+      float: none;
+    }
   }
 
   @include breakpoint($x-large) {
