@@ -38,8 +38,9 @@ Let's only grab the download links and save them to a variable for reuse in our 
     $downloads = Invoke-WebRequest -uri 'http://mtcb.pwop.com' |
     Select-Object -ExpandProperty 'links' |
     Where-Object -Property 'innerhtml' -like 'download'
-# Specify whatever path you want the files to go to
-foreach ($download in $downloads) {
+
+    # Specify whatever path you want the files to go to
+    foreach ($download in $downloads) {
     $songName = $download.href -split '/' | Select-Object -last 1
     Invoke-WebRequest -Uri $download.href -OutFile "C:\Music\MTCB\$name"
 }
