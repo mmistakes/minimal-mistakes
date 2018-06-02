@@ -1,5 +1,6 @@
 ---
 classes: wide
+title: testing post-name
 ---
 
 After my last post where we [wrote a function the start a pomodoro timer](https://andrewpla.github.io/A-Toasty-Pomodoro-Timer/), I got a tweet from [Michael Teske](https://twitter.com\teskemj) sharing some awesome music to use during your pomodoro timers.
@@ -18,7 +19,7 @@ The full-length songs are 25 minutes long which works perfectly for us because P
 
 Invoke-WebRequest is a pretty slick command that allows us to get content from a web page. We can use this to go through all of the sample songs and download each of them.
 
-Let's look at the webpage to see what we are working with.
+Let's look at the webpage to see what we are working with. Note: I am using PowerShell Version 5 and haven't tested on PowerShell Core... yet!
 
 ```powershell
     Invoke-WebRequest -uri 'http://mtcb.pwop.com'
