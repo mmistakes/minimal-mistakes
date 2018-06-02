@@ -2,7 +2,7 @@
 classes: wide
 ---
 
-After my last post where we [wrote a function the start a pomodoro timer](https://andrewpla.github.io/A-Toasty-Pomodoro-Timer/), I got a tweet from [Michael Teske](https://twitter.com\teskemj) sharing some awesome music to use during your pomodoro.
+After my last post where we [wrote a function the start a pomodoro timer](https://andrewpla.github.io/A-Toasty-Pomodoro-Timer/), I got a tweet from [Michael Teske](https://twitter.com\teskemj) sharing some awesome music to use during your pomodoro timers.
 
 ![Tweet from a #Legend!]({{"/assets/tesketweet.png" | absolute_url}})
 
@@ -30,17 +30,14 @@ That's a whole bunch of stuff that we don't need so let's just grab the links.
     Invoke-WebRequest -uri 'http://mtcb.pwop.com' | Select-Object -ExpandProperty 'links'
 ```
 
-Let's only grab the download links and save them to a variable for reuse.
+## Finished Code
 
-'''powershell
-    $downloads = Invoke-WebRequest -uri 'http://mtcb.pwop.com' | 
-    Select-Object -ExpandProperty 'links' |
-    Where-Object -Property 'innerhtml' -like 'download'
-'''
-
-Now we have all the download links inside of a variable we can loop through it and download the files. 
+Let's only grab the download links and save them to a variable for reuse in our loop.
 
 ```powershell
+    $downloads = Invoke-WebRequest -uri 'http://mtcb.pwop.com' |
+    Select-Object -ExpandProperty 'links' |
+    Where-Object -Property 'innerhtml' -like 'download'
 # Specify whatever path you want the files to go to
 foreach ($download in $downloads) {
     $songName = $download.href -split '/' | Select-Object -last 1
