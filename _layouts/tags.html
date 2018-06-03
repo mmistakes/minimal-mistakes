@@ -1,8 +1,11 @@
 ---
 layout: archive
+minimum_tag_count: 1
 ---
 
 {{ content }}
+
+{% assign tags_min = page.minimum_tag_count %}
 
 <ul class="taxonomy__index">
   {% assign tags_max = 0 %}
@@ -11,7 +14,7 @@ layout: archive
       {% assign tags_max = tag[1].size %}
     {% endif %}
   {% endfor %}
-  {% for i in (1..tags_max) reversed %}
+  {% for i in (tags_min..tags_max) reversed %}
     {% for tag in site.tags %}
       {% if tag[1].size == i %}
         <li>
@@ -31,7 +34,7 @@ layout: archive
   {% endif %}
 {% endfor %}
 
-{% for i in (1..tags_max) reversed %}
+{% for i in (tags_min..tags_max) reversed %}
   {% for tag in site.tags %}
     {% if tag[1].size == i %}
       <section id="{{ tag[0] | slugify | downcase }}" class="taxonomy__section">
