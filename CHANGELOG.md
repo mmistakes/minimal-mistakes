@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+* Add Hungarian localized UI text strings. [#1682](https://github.com/mmistakes/minimal-mistakes/pull/1682)
 * DRY `tags_max` calculation in tags.html layout. [#1696](https://github.com/mmistakes/minimal-mistakes/pull/1696)
 * DRY `categories_max` calculation in categories.html layout.
 * Add support for "sticking" table of contents to top of page via `toc_sticky: true` YAML Front Matter.

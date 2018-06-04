@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-06-04T11:58:16-04:00
+last_modified_at: 2018-06-04T12:06:05-04:00
 toc: true
 ---
 
@@ -12,6 +12,7 @@ toc: true
 
 ### Enhancements
 
+* Add Hungarian localized UI text strings. [#1682](https://github.com/mmistakes/minimal-mistakes/pull/1682)
 * DRY `tags_max` calculation in tags.html layout. [#1696](https://github.com/mmistakes/minimal-mistakes/pull/1696)
 * DRY `categories_max` calculation in categories.html layout.
 * Add support for "sticking" table of contents to top of page via `toc_sticky: true` YAML Front Matter.
