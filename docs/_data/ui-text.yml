@@ -1029,6 +1029,52 @@ sk: &DEFAULT_SK
 sk-SK:
   <<: *DEFAULT_SK
 
+# Hungarian
+# -----------------
+hu: &DEFAULT_HU
+  page                       : "Oldal"
+  pagination_previous        : "Előző"
+  pagination_next            : "Következő"
+  breadcrumb_home_label      : "Kezdőlap"
+  breadcrumb_separator       : "/"
+  menu_label                 : "Menü nyit/zár"
+  toc_label                  : "Ezen az oldalon"
+  ext_link_label             : "Közvetlen Link"
+  less_than                  : "kevesebb mint"
+  minute_read                : "eltöltött percek"
+  share_on_label             : "Megosztás"
+  meta_label                 :
+  tags_label                 : "Tagek:"
+  categories_label           : "Kategóriák:"
+  date_label                 : "Frissítve:"
+  comments_label             : "Szólj hozzá!"
+  comments_title             : "Hozzászólások"
+  more_label                 : "Tovább"
+  related_label              : "Ajánlások"
+  follow_label               : "Követés:"
+  feed_label                 : "Folyam"
+  powered_by                 : "Powered by"
+  website_label              : "Honlap"
+  email_label                : "Email"
+  recent_posts               : "Friss cikkek"
+  undefined_wpm              : "Ismeretlen paraméter words_per_minute : _config.yml"
+  comment_form_info          : "Az e-mail címed nem lesz publikus. A csillagozott mezők kitöltése kötelező."
+  comment_form_comment_label : "Hozzászólás"
+  comment_form_md_info       : "Támogatott formázási mód: Markdown"
+  comment_form_name_label    : "Név"
+  comment_form_email_label   : "Email cím"
+  comment_form_website_label : "Honlap (nem kötelező):"
+  comment_btn_submit         : "Hozzászólás elküldése"
+  comment_btn_submitted      : "Hozzászólás elküldve"
+  comment_success_msg        : "Köszönjük a Hozzászólást! A Hozzászólások csak előzetes moderáció után lesznek publikusak."
+  comment_error_msg          : "Hoppá, hiba történt a beküldés közben. Kérlek ellenőrizd hogy minden kötelező mező ki van-e töltve."
+  loading_label              : "Betöltés..."
+  search_placeholder_text    : "Keresendő szöveg..."
+  results_found              : "Találatok:"
+  back_to_top                : "Oldal tetejére"
+hu-HU:
+  <<: *DEFAULT_HU
+
 # Another locale
 # --------------
 #
