@@ -2,6 +2,8 @@
 
 ### Enhancements
 
+* DRY `tags_max` calculation in tags.html layout. [#1696](https://github.com/mmistakes/minimal-mistakes/pull/1696)
+* DRY `categories_max` calculation in categories.html layout.
 * Add support for "sticking" table of contents to top of page via `toc_sticky: true` YAML Front Matter.
 * Add support for captioning images in feature row helper via `image_caption` YAML Front Matter. [#1440](https://github.com/mmistakes/minimal-mistakes/issues/1440)
 * Add [Google Custom Search Engine](https://cse.google.com/cse) support. [#1652](https://github.com/mmistakes/minimal-mistakes/issues/1652)

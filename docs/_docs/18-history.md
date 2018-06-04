@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-05-31T10:23:36-04:00
+last_modified_at: 2018-06-04T11:58:16-04:00
 toc: true
 ---
 
@@ -12,6 +12,8 @@ toc: true
 
 ### Enhancements
 
+* DRY `tags_max` calculation in tags.html layout. [#1696](https://github.com/mmistakes/minimal-mistakes/pull/1696)
+* DRY `categories_max` calculation in categories.html layout.
 * Add support for "sticking" table of contents to top of page via `toc_sticky: true` YAML Front Matter.
 * Add support for captioning images in feature row helper via `image_caption` YAML Front Matter. [#1440](https://github.com/mmistakes/minimal-mistakes/issues/1440)
 * Add [Google Custom Search Engine](https://cse.google.com/cse) support. [#1652](https://github.com/mmistakes/minimal-mistakes/issues/1652)
