@@ -6,7 +6,7 @@ header:
   overlay_image: /assets/images/julia-bielawska-379153.jpg
   og_image: /assets/images/julia-bielawska-379153.jpg
   caption: "Photo Credit: [Julia Bielawska](https://unsplash.com/photos/Ch0sT9hzABg)"
-  teaser: //assets/images/julia-bielawska-300.jpg
+  teaser: /assets/images/julia-bielawska-300.jpg
   excerpt: "We are working on a new compositional count statistical and lab method for rapidly genotyping thousands of plants from a single Illumina sequencing run"
 categories:
   - projects
