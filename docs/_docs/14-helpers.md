@@ -30,7 +30,7 @@ feature_row:
   - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
     title: "Placeholder 3"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
-last_modified_at: 2018-05-15T15:36:46-04:00
+last_modified_at: 2018-06-11T07:56:49-04:00
 toc: true
 toc_label: "Helpers"
 toc_icon: "cogs"
@@ -241,6 +241,7 @@ Add `toc: true` to the YAML Front Matter of any post or page.
 | **toc**     | Optional | Show table of contents. (boolean) | `false` |
 | **toc_label** | Optional | Table of contents title. (string) | `toc_label` in UI Text data file. |
 | **toc_icon**  | Optional | Table of contents icon, displays before the title. (string) | [Font Awesome](https://fontawesome.com/icons?d=gallery&s=solid&m=free) <i class="fas fa-file-alt"></i> **file-alt** icon. Other FA icons can be used instead. |
+| **toc_sticky** | Optional | Stick table of contents to top of screen. |
 
 **TOC example with custom title and icon**
 
