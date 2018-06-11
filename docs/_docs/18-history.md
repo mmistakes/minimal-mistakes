@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-06-04T12:10:55-04:00
+last_modified_at: 2018-06-11T08:17:18-04:00
 toc: true
 ---
 
@@ -25,6 +25,7 @@ toc: true
 
 ### Bug Fixes
 
+* Set default `title_separator`. [#1701](https://github.com/mmistakes/minimal-mistakes/pull/1701)
 * Fix `naver_site_verification` typo in /_includes/seo.html. [#1687](https://github.com/mmistakes/minimal-mistakes/pull/1687)
 * Fix table of contents missing borders. [#1675](https://github.com/mmistakes/minimal-mistakes/issues/1675)
 * Fix link to "Recipes" sample archive on documentation site. [#1664](https://github.com/mmistakes/minimal-mistakes/pull/1664)
