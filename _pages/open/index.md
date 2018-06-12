@@ -56,5 +56,8 @@ sidebar:
 - [Фінансовий звіт за лютий 2018 рік](/finance-02-2018/)
 - [Фінансовий звіт за березень 2018 рік](/finance-03-2018/)
 - [Фінансовий звіт за квітень 2018 рік](/finance-04-2018/)
+- [Фінансовий звіт за період січень - березень 2018 рік](/finance-01-04-2018/)
+
+30. [Конкурсний відбір на посаду директора НВК №125](/announcement/)
 
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 85.0847%;"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQkvmLKzxKORuFa337EiGbU-cw2NXc-hpLPnHZN1oQwwZsRG2_R_Geo0Z1-nzovnucKuTm9WLpjzwWM/pubhtml?widget=true&amp;headers=false" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen></iframe></div>

@@ -13,6 +13,8 @@ sidebar-menu:
   - title: Наша школа
     url: /news
     children:
+      - title: "Конкурсний відбір керівника закладу"
+        url: /announcement
       - title: "Як нас знайти"
         url: /contacts
       - title: "Досягнення"
