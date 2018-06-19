@@ -3,7 +3,7 @@ title: How to – AddRemove references in Visual Studio Code
 categories: 
   - dev
 tags:
-  - c#
+  - csharp
   - vscode
 ---
 
