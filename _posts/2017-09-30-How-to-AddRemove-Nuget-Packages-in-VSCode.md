@@ -3,7 +3,7 @@ title:  How to - AddRemove Nuget Packages in VS Code
 categories: 
   - dev
 tags:
-  - c "#"
+  - csharp
   - vscode
 ---
 

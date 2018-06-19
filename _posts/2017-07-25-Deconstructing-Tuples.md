@@ -3,7 +3,7 @@ title:  "Deconstructing Tuples in C# 7"
 categories: 
   - dev
 tags:
-  - c# 
+  - csharp
 ---
 
 We discussed Tuples in the previous [post](http://blog.ajalex.com/2017/05/26/tuples-in-c-7-0/). They give an easy to use interface, when we need only a subset of members from the class using a single function. But, what if we need to make it more implicit, without having to call a function. C#, now offers the `Deconstruct` function.  
