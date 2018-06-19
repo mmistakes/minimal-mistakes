@@ -45,8 +45,8 @@
       {% if author.location %}
         <!-- <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
           <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">{{ author.location }}</span>
-        </li> -->
-        <a itemprop="homeLocation" itemscope itemtype="https://en.wikipedia.org/wiki/{{ author.location }}">
+        </li> -->        
+        <a itemprop="homeLocation" href="https://en.wikipedia.org/wiki/{{ author.location }}">
           <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> {{ author.location }}
         </a>
       {% endif %}
