@@ -104,6 +104,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am a software developer by profession and passion, musician, photographer (a bit), loves driving."
   location         : "Vazhakulam"
+  location_alias   : "Vazhakulam (Pineapple City)"
   email            : blog.ajalex@outlook.com
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
