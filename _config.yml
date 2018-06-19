@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "ajalex.com"
 title_separator          : "-"
 name                     : "Alen Alex"
-description              : "A tech blog by Alen Alex"
+description              : "Tech writeups by Alen Alex"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -102,7 +102,7 @@ analytics:
 author:
   name             : "Alen Alex"
   avatar           : /assets/images/ajalex_avatar.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am a software developer by profession and passion, musician, photographer (a bit), loves driving."
+  bio              : "I am a software developer by profession and passion, musician, photographer (a bit), loves driving... Note : The content of the blog reflects my personal opinions and not that of my employer."
   location         : "Vazhakulam"
   location_alias   : "Vazhakulam (Pineapple City)"
   email            : blog.ajalex@outlook.com
