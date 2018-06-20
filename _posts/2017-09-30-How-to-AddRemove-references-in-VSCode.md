@@ -8,7 +8,7 @@ tags:
   - how-to
 ---
 
-Adding references and nuget packages to projects is a common thing in development. I have already written a blog on [how to add/reomve nuget packages in vs code]({% post_url 2017-09-30-How-to-AddRemove-Nuget-Packages-in-VSCode %}).
+Adding references and nuget packages to projects is a common thing in development. I have already written a blog on [how to add/reomve nuget packages in vs code]({% 2017-09-30-How-to-AddRemove-Nuget-Packages-in-VSCode %}).
 
 How to - Add reference to another project
 -----------------------------------------
