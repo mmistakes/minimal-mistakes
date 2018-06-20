@@ -5,6 +5,7 @@ categories:
 tags:
   - csharp
   - vscode
+  - how-to
 ---
 
 Those who have used Visual Studio, would know how easy it is to add a Nuget package or a reference to a project. But, this has not been the case with VS Code. VS Code follows a command line first behavior. Although someone could argue that there is a plugin for all sort of tasks. But, I say, using command line is fun.
