@@ -36,7 +36,8 @@ Bookmarks
 
 Breakpoints
 - Toggle breakpoint: ⌘ F8
-- View breakpoints: ⌘ ⇧ F8
+- Edit breakpoint: ⌘ ⇧ F8 (when cursor is on breakpoint LOC)
+- View breakpoints: ⌘ ⇧ F8 (when cursor is not on breakpoint LOC)
 
 Editing Existing Code
 - Multiple cursors: ⇧ ⌥ Clicks
