@@ -1,5 +1,5 @@
 ---
-title:  How to - AddRemove Nuget Packages in VS Code
+title:  How to - Add/Remove Nuget Packages in VS Code
 categories: 
   - dev
 tags:
