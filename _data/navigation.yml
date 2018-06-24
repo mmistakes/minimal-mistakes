@@ -7,9 +7,13 @@ main:
   - title: "Portfolio"
     url: https://gastd.github.io/portfolio
 
-  - title: "My Projects"
-    url: https://gastd.github.io/projects/
-    description: "Projects that I'd work"
+  - title: "Resume"
+    url: https://gastd.github.io/resume/
+    description: "My Resume"
+
+  # - title: "My Projects"
+  #   url: https://gastd.github.io/projects/
+  #   description: "Projects that I'd work"
 
   # - title: "Sample Pages"
     # url: https://mmistakes.github.io/minimal-mistakes/page-archive/
