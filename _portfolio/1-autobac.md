@@ -1,6 +1,6 @@
 ---
 title: "Autobac"
-excerpt: "Baz Boom design system including logo mark, website design, and branding applications."
+excerpt: "Implemented a solution for automating Antibiogram in C++ with OpenCV."
 header:
   image: /assets/images/thought-catalog-612432-unsplash.jpg
   teaser: /assets/images/thought-catalog-612432-unsplash-th.jpg

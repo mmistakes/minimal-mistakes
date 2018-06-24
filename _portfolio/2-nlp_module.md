@@ -1,6 +1,6 @@
 ---
 title: "NLP Module"
-excerpt: "Foo Bar design system including logo mark, website design, and branding applications."
+excerpt: "A 'chatbot' system for control a mobile robot using speech recognition."
 header:
   image: /assets/images/fsm.jpg
   teaser: /assets/images/audiokinect.jpg

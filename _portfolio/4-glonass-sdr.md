@@ -1,6 +1,6 @@
 ---
 title: "Glonass SDR"
-excerpt: "Ginger Gulp design system including logo mark, website design, and branding applications."
+excerpt: "Implementation of Acquisition and Tracking blocks of the GLONASS version of GNSS-SDR."
 header:
   image: /assets/images/glonas-sdr.png
   teaser: assets/images/glonas-sdr.png
@@ -10,7 +10,7 @@ sidebar:
     image_alt: "logo"
     text: "Software Developer"
   - title: "Responsibilities"
-    text: "Reuters try PR stupid commenters should isn't a business model"
+    text: "Provide a fully functional implementation of a GNSS receiver working with GLONASS L1 SP signals"
 gallery:
   - url: /assets/images/unsplash-gallery-image-1.jpg
     image_path: assets/images/unsplash-gallery-image-1-th.jpg
@@ -23,8 +23,168 @@ gallery:
     alt: "placeholder image 3"
 ---
 
-Pictures of Goats section West Seattle Blog dingbat newspaper rubber cement Google+ newsroom cafe news.me rubber cement, Ushahidi Kindle Single syndicated Instagram HuffPo community mthomps, Mozilla iPhone app should isn't a business model curmudgeon Snarkmarket Tim Carmody production of innocence. Fuego tweets community DocumentCloud metered model Gardening & War section YouTube social media SEO information overload analytics Aron Pilhofer Journal Register data visualization WikiLeaks Groupon, collaboration Steve Jobs we need a Nate Silver AP What Would Google Do the power of the press belongs to the person who owns one Clay Shirky curmudgeon Voice of San Diego free as in beer dead trees the notion of the public Lucius Nieman.
+## Project Goal
 
-{% include gallery caption="This is a sample gallery to go along with this case study." %}
+  The main goal of this project is to provide a fully functional implementation of a GNSS receiver working with GLONASS L1 SP signals, delivering RINEX files and an on-the-fly navigation solution. In order to achieve it the *acquisition* and *tracking* blocks were implemented in GNSS-SDR. The following picture shows a generic software GNSS receiver.
 
-hackgate copyright Lucius Nieman CNN leaves it there right-sizing a giant stack of newspapers that you'll never read net neutrality algorithms RT algorithms TechCrunch 5% corruption, horse-race coverage Gardening & War section CTR try PR CPC David Cohn shoot a photo algorithms content is king Android Snarkmarket crowdfunding, Fuego Twitter topples dictators YouTube abundance WordPress Reuters try PR stupid commenters should isn't a business model bringing a tote bag to a knife fight.
+<p align="center">
+<figure><img src="http://i.imgur.com/2mEN0DY.png"></figure>
+<h4 align="center">Generic software GNSS receiver [1].</h4>
+</p>
+
+
+## Introduction
+  The GNSS-SDR project is an open source GNSS software-defined receiver. It is currently working with GPS and Galileo systems. In order to enhance performance and availability an addition was proposed: add Glonass system into the receiver, the Russian counterpart of GPS and Galileo.
+
+  The GNSS-SDR can be a testbed for the GNSS community, given that it already has a lot of features implemented, as configurables signal sources and several signal processing algorithms. This saves time and development effort allowing developers and researchers easily adding new feature and making any kind of tests.
+
+  This report documents the implementation of the first modules for a Glonass SDR. The GNSS-SDR has five main blocks that goes processing the incoming signal, computing the position of the satellites and estimating the position of the receiver. The first two blocks, Acquisition and Tracking are the subjects of this report.
+
+
+## Glonass Signal Model
+  The Glonass constellation has 24 satellites distributed in 3 rough circular orbital planes [2]. These satellites use frequency–division multiple access (FDMA) signal structure, transmitting in two bands: 
+  
+  * L1: 1602 + K * 0.5625 MHz;
+  * L2: 1246 + K * 0.4375 MHz;
+
+  Where K = [-7;6] is the channel number. In the L1 band, two signals are transmitted: a standard precision and an obfuscated high precision signal. The FDMA system allows the satellites to send same PRN code using the BPSK modulation. The below picture shows the spectra of GLONASS signals in L1.
+
+<p>
+<figure><img src="http://www.navipedia.net/images/2/2e/GLONASS_Sig_Plan_Fig_2.png"></figure>
+<h4 align="center">Spectra of GLONASS signals in L1. Source: <a href="http://www.navipedia.net/index.php/GLONASS_Signal_Plan">Navipedia</a></h4>
+</p>
+
+### Dataset
+  The algorithms used in this work were tested against simulated and real signals. The simulated data was firstly generated using a signal simulator built in Matlab. Another simulator was built for unit tests using the gnss-sdr signal generator that was expanded to generate Glonass L1 CA signal. The real signal was captured with NT 1065 front end. The total time recorded was of 63 seconds. The capture was made at University of Colorado Boulder with antenna on position 40.007986, -105.262706 on August 31 2016. Mr. [Damian Miralles](https://github.com/dmiralles2009/) shared this file with the author. For the sake of this report, only the results for real signal will be shown.
+
+## Acquisition
+  There are several blocks in GNSS-SDR software that process the signal retrieved from a front end until the data come through to calculation of the position of receiver. The first block is Acquisition, the purpose of this block is find all the satellites that are visible to the front end’s antenna and discover in which Doppler frequency shift and Code Delay are these satellite signals.
+
+<p>
+<figure><img src="http://i.imgur.com/v9jpwgp.png"></figure>
+<h4 align="center">PCPS Algorithm [2].</h4>
+</p>
+
+  The algorithm used in this work was the Parallel Code Phase Search (PCPS) due to it’s advantage of using Fourier Transform to search parallely the Code Delay. The GNSS-SDR already uses this algorithm to acquire GPS and Galileo signals. This implementation was extended to deal with FDMA system, which is the system used by GLONASS satellites. Unit-tests were written for GLONASS PCPS Acquisition following the testing pattern already set by the Mentors.
+
+  The output for this algorithm is a 2D grid and its dimensions are doppler frequency and code delay. If a satellite is visible a significant peak is presented as in Figure below. If a satellite is not visible there will be no significant peak, just noise. To distinguish between them a threshold must be set.
+
+<p>
+<figure><img src="http://i.imgur.com/UBX8fii.png"></figure>
+<h4 align="center">Expected output from PCPS Algorithm [3].</h4>
+</p>
+<p align="center">
+<figure><img src="http://i.imgur.com/rEeEOQ8.png"></figure>
+<h4 align="center">Output from PCPS Algorithm for a not visible satellite [2].</h4>
+</p>
+
+### Results
+  As described in dataset section, a real signal was captured on August 31 2016. Gpredict program can tell that several satellites were visible on this date. For the sake of this report, only two satellites were picked, SV’s 11 and 12. The Figures below show the acquisition plot for each one of these satellites.
+
+<p>
+<figure><img src="http://i.imgur.com/EtiPlN9.png"></figure>
+<h4 align="center">Plot of the acquisition with real signal for the satellite 11.</h4>
+<figure><img align="center" src="http://i.imgur.com/AM2ZRzG.png"></figure>
+<h4 align="center">Plot of the acquisition with real signal for the satellite 12.</h4>
+</p>
+
+These acquisitions were made with 125 Hz of Doppler step. The X axis is the acquired Doppler shift and Y axis is the Code Delay.
+
+## Tracking
+  The Acquisition output is a rough estimation of the Doppler Shift and Code Delay that the satellites signals are suffering. To retrieve the navigation data from those signals, the Doppler and Code Delay estimations must be better refined and tracked. This is the purpose of the tracking block. For that, two filters for tracking each one of the properties, doppler and code delay, were implemented. 
+
+<p>
+<figure><img src="http://i.imgur.com/0SLAbZC.png"></figure>
+<h4 align="center">Navigation data being retrieved [2].</h4>
+</p>
+
+  The carrier filter implemented is a Costas loop that it's a Phase Locked Loop insensitive to bit transitions. The discriminator of this filter tries to keep all the energy of the signal in the in-phase arm. The PRN code is tracked with a Delay Locked Loop. The idea behind the DLL is to correlate the input signal with three replicas of the code with a spacing of half chip, this replicas are called Early, Prompt and Late.
+
+<p>
+<figure><img src="http://i.imgur.com/41xsk6v.png"></figure>
+<h4 align="center">Carrier wave tracking loop [2].</h4>
+<figure><img src="http://i.imgur.com/I7k9w98.png"></figure>
+<h4 align="center">PRN Code tracking loop [2].</h4>
+</p>
+
+  For the Doppler, a PLL Costas loop was implemented, furthermore, for the Code Delay, a DLL was implemented. A Carrier-Aided track was also implemented. In this tracking, the Doppler loop aids the code loop reducing the noise in the code loop measurements. As done for the acquisition, unit-tests were also written for the tracking.
+
+  The discriminator used in PLL Costas is the two quadrant arctan and the discriminator used in DLL Noncoherent Early minus Late envelope normalized discriminator.
+
+<p>
+<figure><img src="http://i.imgur.com/HtVH6gQ.png"></figure>
+<h4 align="center">Carrier-Aided tracking loop [4].</h4>
+</p>
+
+### Results
+  After a successful acquisition, the tracking has began. Both tracking filters must lock the signal and track. The figure below shows the output from no aided loop. In Correlation Results, the Prompt correlators are the highest values showing both carrier and code being tracked and locked.
+
+<p>
+<figure><img src="http://i.imgur.com/TBRmXNE.png"></figure>
+<h4 align="center">Glonass tracking for the SV 11.</h4>
+</p>
+
+  Zooming the bits of the navigation message, the raw data can be see.
+
+<p>
+<figure><img src="http://i.imgur.com/vjIbqYV.png"></figure>
+<h4 align="center">Raw data from Glonass tracking.</h4>
+</p>
+
+  Similar figures can be seen for the carrier-aided loop. The main difference between them is the PLL discriminator that is less noisy.
+
+<p>
+<figure><img src="http://i.imgur.com/f35jpsI.png"></figure>
+<h4 align="center">Output from Carrier-Aided loop.</h4>
+<figure><img src="http://i.imgur.com/EZf8Zj9.png"></figure>
+<h4 align="center">Output from Carrier-Aided loop with zoom.</h4>
+</p>
+
+
+<!-- ## Road Map -->
+  <!-- The first step was building a signal simulator for GLONASS L1 SP signals in Matlab, a controlled environment that could be testbed for implementations. The first block of a generic software receiver is the Acquisition. It's purpose is to identify all the visible satellites to the user. With that in mind, a first implementation of an acquisition algorithm was also made in Matlab. The Parallel Code Phase Search (PCPS) was the acquisition algorithm chosen. This algorithm was tested and validated with the signal simulator previously built. The GNSS-SDR already uses this algorithm to acquire GPS and Galileo signals. This implementation was extended to deal with FDMA system, which is the system used by GLONASS satellites. Unit-tests were written for GLONASS PCPS Acquisition following the testing pattern already set by the Mentors. -->
+
+  <!-- The Acquisition output is a rough estimation of the Doppler Shift and Code Delay that the satellites signals are suffering. To retrieve the navigation data from those signals, the Doppler and Code Delay estimations must be refined. This is the purpose of the tracking block. For that, two filters for tracking each one of the properties, doppler and code delay, were implemented. For the Doppler, a PLL Costas loop was implemented, futhermore, for the Code Delay, a DLL was implemented. A Carrier-Aided track was also implemented. In this tracking, the Doppler loop aids the code loop reducing the noise in the code loop measurements. As done for the acquisition, unit-tests were also written for the tracking. -->
+
+
+## The Story so Far
+  Here is the breakdown of our major milestones:
+
+  - [4f9a6d0](https://github.com/gnss-sdr/gnss-sdr/commit/4f9a6d0e88aa56486bde318737671bb76eb75796) Add pcps acquisition adapter for glonass l1 ca signal.
+  - [b333bb2](https://github.com/gnss-sdr/gnss-sdr/commit/b333bb2c78fd811689cf2726eab14af70a77cff7) Add Glonass L1 C/A channel to the block factory.
+  - [6307ac2](https://github.com/gnss-sdr/gnss-sdr/commit/6307ac288095172d549d517f91bebec255001a59) Add FDMA protocol to pcps algorithm.
+  - [442656a](https://github.com/gnss-sdr/gnss-sdr/commit/442656ad869bbff51c47b3ca218209755ed3b37c) Add unit-test for glonass pcps acquisition.
+  - [22da2ad](https://github.com/gnss-sdr/gnss-sdr/commit/22da2ad606a280e328bb178858cce6cbdc9a20a2) Add adapter for Glonass L1 C/A tracking.
+  - [b69f203](https://github.com/gnss-sdr/gnss-sdr/commit/b69f20396743e88fc94b4686e614313f083c8752) Add gnuradio block for glonass tracking.
+  - [c2e04a2](https://github.com/gnss-sdr/gnss-sdr/commit/c2e04a23c6610d230d7fdc824c59533e1520f8f0) Add Glonass Tracking block to block factory.
+  - [d95419d](https://github.com/gnss-sdr/gnss-sdr/commit/d95419d6703c07cdec90ca94b1d27c31b627ac53) Add Glonass C Aid track adapter.
+  - [8763689](https://github.com/gnss-sdr/gnss-sdr/commit/8763689cb09f60c301c5bc1670d4f77517ff3c75) Add Glonass C Aid tracking block to the block factory.
+  - [d3038dd](https://github.com/gnss-sdr/gnss-sdr/commit/d3038dd162dbd7018d6eb1f9c6dc00f696af005f) Add unit test for new tracking blocks.
+
+  *A [pull request](https://github.com/gnss-sdr/gnss-sdr/pull/63) was made but due to some issues in automatically merge, the code was manually merged into another branch.*
+
+
+## Future Work
+
+  In order to the GNSS-SDR work properly with GLONASS L1 SP signals the navigation data must be decoded, which implies calculating the observables and computing the PVT solution. The last two blocks were already implemented in GNSS-SDR by the Mentors for GPS and Galileo, these blocks work with several GNSS systems including GLONASS. Mr. Damian Miralles implemented a telemetry decoder for Glonass navigation bits and the RINEX printer.
+
+  For future work, acquisition, tracking and telemetry block must be tested together with a real signal. This work only tested the first two blocks together. In the current GNSS-SDR implementation, two satellites that are in the same FDMA channel can be acquired simultaneously. This occurs because satellites in opposite points of an orbital plane transmit signal in equal frequencies. This issue can cause a channel which has lost a satellite beginning to track another satellite with the same ID, or even the same satellite under a different ID.
+
+
+## Acknowledgements
+
+  I would like to thank my mentors that guided me through this work, providing me support and feedback. I would also like to acknowledge them for the well documented and clear software provided. That clearness saved me tremendous amounts of time on my implementations. I have obtained massive experience towards signal processing and software testing with the present work.
+
+  A huge thank to Mr. Damian Miralles that provided me a file with real GLONASS signal, only with this I was able to test my work with real noisy input. And I am glad that it worked!
+
+  Last but not least, I would like to thank Google for providing me such experience. This work gave me the opportunity to explore deeper the community of open source software and to realize it's true potential about spreading and sharing knowledge with the whole world. 
+
+## Bibliography
+
+[1] K. Borre, Software-defined GPS and Galileo receiver: a single-frequency approach. Boston: Birkhhäuser, 2007.
+
+[2] GLONASS ICD, 1998. Technical report. v.4.0.
+
+[3] B. Hofmann-Wellenhof, H. Lichtenegger, and E. Wasle, GNSS--global navigation satellite systems GPS, GLONASS, Galileo, and more. Wien: Springer, 2008.
+
+[4] E. D. Kaplan and C. Hegarty, Understanding GPS: principles and applications. Norwood: Artech House, 2006.

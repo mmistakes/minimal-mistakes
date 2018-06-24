@@ -1,6 +1,6 @@
 ---
 title: "Need4SS"
-excerpt: "Fizz Bang design system including logo mark, website design, and branding applications."
+excerpt: "Development of an autonomous driver to the TORCS simulator in order to compete in the SCRC, a former GECCO Competition."
 header:
   image: /assets/images/need4ss.png
   teaser: assets/images/need4ss-th.png
