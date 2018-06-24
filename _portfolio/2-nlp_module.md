@@ -2,18 +2,18 @@
 title: "NLP Module"
 excerpt: "Foo Bar design system including logo mark, website design, and branding applications."
 header:
-  image: /assets/images/foo-bar-identity.jpg
-  teaser: /assets/images/foo-bar-identity-th.jpg
+  image: /assets/images/graph.jpg
+  teaser: /assets/images/audiokinect.jpg
 sidebar:
   - title: "Role"
-    image: http://placehold.it/350x250
+    image: graph.jpg
     image_alt: "logo"
-    text: "Designer, Front-End Developer"
+    text: "Undergraduate Researcher"
   - title: "Responsibilities"
     text: "Reuters try PR stupid commenters should isn't a business model"
 gallery:
-  - url: /assets/images/unsplash-gallery-image-1.jpg
-    image_path: assets/images/unsplash-gallery-image-1-th.jpg
+  - url: /assets/images/aramis.jpg
+    image_path: assets/images/aramis-th.jpg
     alt: "placeholder image 1"
   - url: /assets/images/unsplash-gallery-image-2.jpg
     image_path: assets/images/unsplash-gallery-image-2-th.jpg

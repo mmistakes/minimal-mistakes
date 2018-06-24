@@ -2,13 +2,13 @@
 title: "Glonass SDR"
 excerpt: "Ginger Gulp design system including logo mark, website design, and branding applications."
 header:
-  image: /assets/images/unsplash-gallery-image-3.jpg
-  teaser: assets/images/unsplash-gallery-image-3-th.jpg
+  image: /assets/images/glonas-sdr.png
+  teaser: assets/images/glonas-sdr.png
 sidebar:
   - title: "Role"
-    image: http://placehold.it/350x250
+    image: /assets/images/glonas-sdr.png
     image_alt: "logo"
-    text: "Designer, Front-End Developer"
+    text: "Software Developer"
   - title: "Responsibilities"
     text: "Reuters try PR stupid commenters should isn't a business model"
 gallery:

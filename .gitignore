@@ -27,3 +27,13 @@ codekit-config.json
 .sass-cache
 _asset_bundler_cache
 _site
+codekit-config.json
+example/_site
+Gemfile.lock
+node_modules
+npm-debug.log*
+
+# new post
+assets/images/qt5 (copy).png
+assets/images/qt5.png
+_posts/2018-02-27-mastering-Qt-5.md

@@ -2,13 +2,13 @@
 title: "Need4SS"
 excerpt: "Fizz Bang design system including logo mark, website design, and branding applications."
 header:
-  image: /assets/images/unsplash-gallery-image-2.jpg
-  teaser: assets/images/unsplash-gallery-image-2-th.jpg
+  image: /assets/images/need4ss.png
+  teaser: assets/images/need4ss-th.png
 sidebar:
   - title: "Role"
-    image: http://placehold.it/350x250
+    image: assets/images/need4ss.png
     image_alt: "logo"
-    text: "Designer, Front-End Developer"
+    text: "Undergraduate Researcher"
   - title: "Responsibilities"
     text: "Reuters try PR stupid commenters should isn't a business model"
 gallery:
