@@ -1,6 +1,6 @@
 ---
 title: "Glonass SDR"
-excerpt: "Implementation of Acquisition and Tracking blocks of the GLONASS version of GNSS-SDR."
+excerpt: "Software Defined Radio for GLONASS system."
 header:
   image: /assets/images/glonas-sdr.png
   teaser: assets/images/glonas-sdr.png
@@ -10,7 +10,7 @@ sidebar:
     image_alt: "logo"
     text: "Software Developer"
   - title: "Responsibilities"
-    text: "Provide a fully functional implementation of a GNSS receiver working with GLONASS L1 SP signals"
+    text: "Implementation of Acquisition and Tracking blocks of the GLONASS version of GNSS-SDR"
 gallery:
   - url: /assets/images/unsplash-gallery-image-1.jpg
     image_path: assets/images/unsplash-gallery-image-1-th.jpg

@@ -1,6 +1,6 @@
 ---
 title: "Autobac"
-excerpt: "Implemented a solution for automating Antibiogram in C++ with OpenCV."
+excerpt: "Solution for automating Antibiogram test."
 header:
   image: /assets/images/thought-catalog-612432-unsplash.jpg
   caption: "Photo credit: [**Thought Catalog**](https://www.thoughtcatalog.com) in [**Unsplash**](https://unsplash.com)"
@@ -11,7 +11,7 @@ sidebar:
     image_alt: "logo"
     text: "Software Developer"
   - title: "Responsibilities"
-    text: "Reuters try PR stupid commenters should isn't a business model"
+    text: "Implement a solution for automating Antibiogram in C++ with OpenCV"
 gallery:
   - url: assets/images/autobac-1.jpg
     image_path: assets/images/autobac-1-th.jpg

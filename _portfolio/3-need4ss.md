@@ -1,6 +1,6 @@
 ---
 title: "Need4SS"
-excerpt: "Development of an autonomous driver to the TORCS simulator in order to compete in the SCRC, a former GECCO Competition."
+excerpt: "An autonomous driver to the TORCS simulator in order to compete in the SCRC."
 header:
   image: /assets/images/need4ss.png
   teaser: assets/images/need4ss-th.png
@@ -10,7 +10,7 @@ sidebar:
     image_alt: "logo"
     text: "Undergraduate Researcher"
   - title: "Responsibilities"
-    text: "Reuters try PR stupid commenters should isn't a business model"
+    text: "Develop an autonomous driver to the TORCS simulator in order to compete in the SCRC, a former GECCO Competition"
 gallery:
   - url: /assets/images/unsplash-gallery-image-1.jpg
     image_path: assets/images/unsplash-gallery-image-1-th.jpg

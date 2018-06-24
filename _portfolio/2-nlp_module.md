@@ -1,6 +1,6 @@
 ---
 title: "NLP Module"
-excerpt: "A 'chatbot' system for control a mobile robot using speech recognition."
+excerpt: "A 'chatbot' system for control a mobile robot"
 header:
   image: /assets/images/fsm.jpg
   teaser: /assets/images/audiokinect.jpg
@@ -10,7 +10,7 @@ sidebar:
     image_alt: "logo"
     text: "Undergraduate Researcher"
   - title: "Responsibilities"
-    text: "Reuters try PR stupid commenters should isn't a business model"
+    text: "Send commands to an autonomous robot using speech recognition"
 gallery:
   - url: /assets/images/aramis.jpg
     image_path: assets/images/aramis-th.jpg
