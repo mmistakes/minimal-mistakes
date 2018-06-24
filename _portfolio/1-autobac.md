@@ -3,6 +3,7 @@ title: "Autobac"
 excerpt: "Implemented a solution for automating Antibiogram in C++ with OpenCV."
 header:
   image: /assets/images/thought-catalog-612432-unsplash.jpg
+  caption: "Photo credit: [**Thought Catalog**](https://www.thoughtcatalog.com) in [**Unsplash**](https://unsplash.com)"
   teaser: /assets/images/thought-catalog-612432-unsplash-th.jpg
 sidebar:
   - title: "Role"
