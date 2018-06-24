@@ -1,5 +1,5 @@
-Bitte verbreiten Sie dieses Video nicht über soziale Platformen (facebook,
-youtube, etc..) weiter, oder anderen öffentlich zugänglichen Webseiten. Dieses
-Video ist rein für den privaten Gebrauch vorgesehen und schließt somit eine
-kommerzielle Nutzung aus.
+Bitte verbreiten Sie dieses Video nicht über soziale Plattformen (facebook,
+youtube, etc..), oder auf anderen öffentlich zugänglichen Webseiten. Dieses
+Video ist ausschließlich für den privaten Gebrauch vorgesehen und schließt
+somit eine kommerzielle Nutzung aus.
 {: .notice--info }
