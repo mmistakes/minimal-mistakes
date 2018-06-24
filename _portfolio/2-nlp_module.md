@@ -2,11 +2,11 @@
 title: "NLP Module"
 excerpt: "Foo Bar design system including logo mark, website design, and branding applications."
 header:
-  image: /assets/images/graph.jpg
+  image: /assets/images/fsm.jpg
   teaser: /assets/images/audiokinect.jpg
 sidebar:
   - title: "Role"
-    image: graph.jpg
+    image: /assets/images/fsm.jpg
     image_alt: "logo"
     text: "Undergraduate Researcher"
   - title: "Responsibilities"
