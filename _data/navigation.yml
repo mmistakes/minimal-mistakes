@@ -4,8 +4,8 @@ main:
     url: https://gastd.github.io/profile/
     description: "Profile page"
 
-  - title: "Portifolio"
-    url: https://gastd.github.io/portifolio
+  - title: "Portfolio"
+    url: https://gastd.github.io/portfolio
 
   - title: "My Projects"
     url: https://gastd.github.io/projects/
