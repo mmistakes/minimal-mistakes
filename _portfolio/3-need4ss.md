@@ -10,7 +10,7 @@ sidebar:
     image_alt: "logo"
     text: "Undergraduate Researcher"
   - title: "Responsibilities"
-    text: "Develop an autonomous driver to the TORCS simulator in order to compete in the Simulated Car Racing Championship, a former GECCO Competition"
+    text: "Develop an autonomous driver to the TORCS simulator in order to compete in the SCRC, a former GECCO Competition"
 gallery:
   - url: /assets/images/unsplash-gallery-image-1.jpg
     image_path: assets/images/unsplash-gallery-image-1-th.jpg
