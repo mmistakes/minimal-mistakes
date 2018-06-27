@@ -8,9 +8,6 @@ tag:
   - static-site
 ---
 
-Intro
------
-
 I have been hosting my blog using wordpress for the past 1 year. Wordpress, although is easy to use, is quite heavy and was too much work for me.
 
 I wanted to write my posts as `markdown` files (which wordpress supports through plugins like [WP Editor.md](https://wordpress.org/plugins/wp-editormd/)).  
