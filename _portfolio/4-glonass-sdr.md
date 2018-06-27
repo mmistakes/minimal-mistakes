@@ -11,16 +11,27 @@ sidebar:
     text: "Software Developer"
   - title: "Responsibilities"
     text: "Implementation of Acquisition and Tracking blocks of the GLONASS version of GNSS-SDR"
-gallery:
-  - url: /assets/images/unsplash-gallery-image-1.jpg
-    image_path: assets/images/unsplash-gallery-image-1-th.jpg
-    alt: "placeholder image 1"
-  - url: /assets/images/unsplash-gallery-image-2.jpg
-    image_path: assets/images/unsplash-gallery-image-2-th.jpg
-    alt: "placeholder image 2"
-  - url: /assets/images/unsplash-gallery-image-3.jpg
-    image_path: assets/images/unsplash-gallery-image-3-th.jpg
-    alt: "placeholder image 3"
+acquisition_gallery:
+  - url: https://i.imgur.com/EtiPlN9.png
+    image_path: https://i.imgur.com/EtiPlN9.png
+    alt: "Plot of the acquisition with real signal for the satellite 11."
+  - url: https://i.imgur.com/AM2ZRzG.png
+    image_path: https://i.imgur.com/AM2ZRzG.png
+    alt: "Plot of the acquisition with real signal for the satellite 12."
+tracking_gallery:
+  - url: https://i.imgur.com/TBRmXNE.png
+    image_path: https://i.imgur.com/TBRmXNE.png
+    alt: "Glonass tracking for the SV 11."
+  - url: https://i.imgur.com/vjIbqYV.png
+    image_path: https://i.imgur.com/vjIbqYV.png
+    alt: "Glonass tracking for the SV 11 with zoom."
+tracking_aided_gallery:
+  - url: https://i.imgur.com/f35jpsI.png
+    image_path: https://i.imgur.com/f35jpsI.png
+    alt: "Output from Carrier-Aided loop."
+  - url: https://i.imgur.com/EZf8Zj9.png
+    image_path: https://i.imgur.com/EZf8Zj9.png
+    alt: "Output from Carrier-Aided loop with zoom."
 ---
 
 ## Project Goal
@@ -29,7 +40,7 @@ gallery:
 
 <figure class="align-center">
   <img src="https://i.imgur.com/2mEN0DY.png" alt="">
-  <figcaption>Generic software GNSS receiver [1]</figcaption>
+  <figcaption>Generic software GNSS receiver [1].</figcaption>
 </figure>
 
 
@@ -60,85 +71,69 @@ gallery:
 ## Acquisition
   There are several blocks in GNSS-SDR software that process the signal retrieved from a front end until the data come through to calculation of the position of receiver. The first block is Acquisition, the purpose of this block is find all the satellites that are visible to the front end’s antenna and discover in which Doppler frequency shift and Code Delay are these satellite signals.
 
-<p>
-<figure><img src="https://i.imgur.com/v9jpwgp.png"></figure>
-<h4 align="center">PCPS Algorithm [2].</h4>
-</p>
+<figure class="align-center">
+  <img src="https://i.imgur.com/v9jpwgp.png">
+  <figcaption>PCPS Algorithm [2].</figcaption>
+</figure>
 
   The algorithm used in this work was the Parallel Code Phase Search (PCPS) due to it’s advantage of using Fourier Transform to search parallely the Code Delay. The GNSS-SDR already uses this algorithm to acquire GPS and Galileo signals. This implementation was extended to deal with FDMA system, which is the system used by GLONASS satellites. Unit-tests were written for GLONASS PCPS Acquisition following the testing pattern already set by the Mentors.
 
   The output for this algorithm is a 2D grid and its dimensions are doppler frequency and code delay. If a satellite is visible a significant peak is presented as in Figure below. If a satellite is not visible there will be no significant peak, just noise. To distinguish between them a threshold must be set.
 
-<p>
-<figure><img src="https://i.imgur.com/UBX8fii.png"></figure>
-<h4 align="center">Expected output from PCPS Algorithm [3].</h4>
-</p>
-<p align="center">
-<figure><img src="https://i.imgur.com/rEeEOQ8.png"></figure>
-<h4 align="center">Output from PCPS Algorithm for a not visible satellite [2].</h4>
-</p>
+<figure class="align-center">
+  <img src="https://i.imgur.com/UBX8fii.png">
+  <figcaption>Expected output from PCPS Algorithm [3].</figcaption>
+</figure>
+<figure class="align-center">
+  <img src="https://i.imgur.com/rEeEOQ8.png">
+  <figcaption>Output from PCPS Algorithm for a not visible satellite [2].</figcaption>
+</figure>
 
 ### Results
   As described in dataset section, a real signal was captured on August 31 2016. Gpredict program can tell that several satellites were visible on this date. For the sake of this report, only two satellites were picked, SV’s 11 and 12. The Figures below show the acquisition plot for each one of these satellites.
 
-<p>
-<figure><img src="https://i.imgur.com/EtiPlN9.png"></figure>
-<h4 align="center">Plot of the acquisition with real signal for the satellite 11.</h4>
-<figure><img align="center" src="https://i.imgur.com/AM2ZRzG.png"></figure>
-<h4 align="center">Plot of the acquisition with real signal for the satellite 12.</h4>
-</p>
+{% include gallery id="acquisition_gallery" class="full" caption="Plot of the acquisition with real signal for the satellite 11 and 12." %}
 
 These acquisitions were made with 125 Hz of Doppler step. The X axis is the acquired Doppler shift and Y axis is the Code Delay.
 
 ## Tracking
   The Acquisition output is a rough estimation of the Doppler Shift and Code Delay that the satellites signals are suffering. To retrieve the navigation data from those signals, the Doppler and Code Delay estimations must be better refined and tracked. This is the purpose of the tracking block. For that, two filters for tracking each one of the properties, doppler and code delay, were implemented. 
 
-<p>
-<figure><img src="https://i.imgur.com/0SLAbZC.png"></figure>
-<h4 align="center">Navigation data being retrieved [2].</h4>
-</p>
+<figure class="align-center">
+  <img src="https://i.imgur.com/0SLAbZC.png">
+  <figcaption>Navigation data being retrieved [2].</figcaption>
+</figure>
 
   The carrier filter implemented is a Costas loop that it's a Phase Locked Loop insensitive to bit transitions. The discriminator of this filter tries to keep all the energy of the signal in the in-phase arm. The PRN code is tracked with a Delay Locked Loop. The idea behind the DLL is to correlate the input signal with three replicas of the code with a spacing of half chip, this replicas are called Early, Prompt and Late.
 
-<p>
-<figure><img src="https://i.imgur.com/41xsk6v.png"></figure>
-<h4 align="center">Carrier wave tracking loop [2].</h4>
-<figure><img src="https://i.imgur.com/I7k9w98.png"></figure>
-<h4 align="center">PRN Code tracking loop [2].</h4>
-</p>
+<figure class="align-center">
+  <img src="https://i.imgur.com/41xsk6v.png">
+  <figcaption>Carrier wave tracking loop [2].</figcaption>
+</figure>
+<figure class="align-center">
+  <img src="https://i.imgur.com/I7k9w98.png">
+  <figcaption>PRN Code tracking loop [2].</figcaption>
+</figure>
 
   For the Doppler, a PLL Costas loop was implemented, furthermore, for the Code Delay, a DLL was implemented. A Carrier-Aided track was also implemented. In this tracking, the Doppler loop aids the code loop reducing the noise in the code loop measurements. As done for the acquisition, unit-tests were also written for the tracking.
 
   The discriminator used in PLL Costas is the two quadrant arctan and the discriminator used in DLL Noncoherent Early minus Late envelope normalized discriminator.
 
-<p>
-<figure><img src="https://i.imgur.com/HtVH6gQ.png"></figure>
-<h4 align="center">Carrier-Aided tracking loop [4].</h4>
-</p>
+<figure class="align-center">
+  <img src="https://i.imgur.com/HtVH6gQ.png">
+  <figcaption>Carrier-Aided tracking loop [4].</figcaption>
+</figure>
 
 ### Results
   After a successful acquisition, the tracking has began. Both tracking filters must lock the signal and track. The figure below shows the output from no aided loop. In Correlation Results, the Prompt correlators are the highest values showing both carrier and code being tracked and locked.
 
-<p>
-<figure><img src="https://i.imgur.com/TBRmXNE.png"></figure>
-<h4 align="center">Glonass tracking for the SV 11.</h4>
-</p>
+{% include gallery id="tracking_gallery" class="full" caption="Glonass tracking for the SV 11." %}
 
   Zooming the bits of the navigation message, the raw data can be see.
 
-<p>
-<figure><img src="https://i.imgur.com/vjIbqYV.png"></figure>
-<h4 align="center">Raw data from Glonass tracking.</h4>
-</p>
-
   Similar figures can be seen for the carrier-aided loop. The main difference between them is the PLL discriminator that is less noisy.
 
-<p>
-<figure><img src="https://i.imgur.com/f35jpsI.png"></figure>
-<h4 align="center">Output from Carrier-Aided loop.</h4>
-<figure><img src="https://i.imgur.com/EZf8Zj9.png"></figure>
-<h4 align="center">Output from Carrier-Aided loop with zoom.</h4>
-</p>
+{% include gallery id="tracking_aided_gallery" class="full" caption="Carrier-aided tracking for the SV 11." %}
 
 
 <!-- ## Road Map -->
