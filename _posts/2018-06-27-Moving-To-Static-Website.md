@@ -1,6 +1,5 @@
 ---
 title:  "Moving from Wordpress to GitHub Pages"
- date:   2018-06-27 14:28:00 +0530
 categories: blogging
 description: Tuples in C# 7
 tag: 
