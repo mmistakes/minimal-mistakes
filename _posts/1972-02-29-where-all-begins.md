@@ -26,3 +26,4 @@ You can find older stuff also on <a href="https://blogs.msdn.microsoft.com/nicol
 > Morbi neque. Aliquam erat volutpat. Integer ultrices lobortis eros.
 
 
+<a href="https://mmistakes.github.io/minimal-mistakes/docs/pages/" target="_blank">https://mmistakes.github.io/minimal-mistakes/docs/pages/</a>

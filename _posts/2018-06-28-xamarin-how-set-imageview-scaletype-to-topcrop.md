@@ -35,7 +35,8 @@ namespace CaledosLab.Runner.Android.Controls
         }
 
         [TargetApi(Value = (int)BuildVersionCodes.Lollipop)]
-        public TopCropInsideImageView(Context context, IAttributeSet attrs, int defStyleAttr, int defStyleRes) : base(context, attrs, defStyleAttr, defStyleRes)
+        public TopCropInsideImageView(Context context, IAttributeSet attrs, int defStyleAttr, int defStyleRes) 
+        : base(context, attrs, defStyleAttr, defStyleRes)
         {
             init();
         }
