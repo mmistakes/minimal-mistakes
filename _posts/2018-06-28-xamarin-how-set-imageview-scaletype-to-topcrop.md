@@ -1,5 +1,5 @@
 ﻿---
-title: Hot to set ImageView ScaleType to TOPCROP
+title: How to set ImageView ScaleType to TOPCROP
 tags: [xamarin, android, csharp, ImageView]
 ---
 Yesterday I have had the need to align TopCrop an image inside an Android ImageView. Unfortunally Android ImageView doesn't allow this crop style, so I have implemented it by my own starting from a java sample.
