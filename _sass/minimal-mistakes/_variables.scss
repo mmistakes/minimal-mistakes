@@ -106,23 +106,23 @@ $masthead-link-color: $primary-color !default;
 $masthead-link-color-hover: mix(#000, $primary-color, 25%) !default;
 $navicon-link-color-hover: mix(#fff, $primary-color, 75%) !default;
 
-/* syntax highlighting (solarized) */
-$base00: #fafafa !default;
-$base01: #073642 !default;
-$base02: #586e75 !default;
-$base03: #657b83 !default;
-$base04: #839496 !default;
-$base05: #586e75 !default;
-$base06: #eee8d5 !default;
-$base07: #fdf6e3 !default;
-$base08: #dc322f !default;
-$base09: #cb4b16 !default;
-$base0a: #b58900 !default;
-$base0b: #859900 !default;
-$base0c: #2aa198 !default;
-$base0d: #268bd2 !default;
-$base0e: #6c71c4 !default;
-$base0f: #d33682 !default;
+/* syntax highlighting (base16) */
+$base00: #263238 !default;
+$base01: #2e3c43 !default;
+$base02: #314549 !default;
+$base03: #546e7a !default;
+$base04: #b2ccd6 !default;
+$base05: #eeffff !default;
+$base06: #eeffff !default;
+$base07: #ffffff !default;
+$base08: #f07178 !default;
+$base09: #f78c6c !default;
+$base0a: #ffcb6b !default;
+$base0b: #c3e88d !default;
+$base0c: #89ddff !default;
+$base0d: #82aaff !default;
+$base0e: #c792ea !default;
+$base0f: #ff5370 !default;
 
 /*
    Breakpoints
