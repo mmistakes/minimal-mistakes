@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Where all begins
-categories: [test, firstpost]
+tags: [test, firstpost]
 ---
+
 This is the *very first* post of my brand new blog.
 
 You can find older stuff also on <a href="https://blogs.msdn.microsoft.com/nicold" target="_blank">my MSDN blog</a>
