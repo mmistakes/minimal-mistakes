@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: Where all begins
 tags: [test, firstpost]
 ---
