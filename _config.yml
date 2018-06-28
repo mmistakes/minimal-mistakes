@@ -269,9 +269,4 @@ defaults:
       comments: # true
       share: true
       related: true
-    header:
-      overlay_image: /assets/images/unsplash-image-1.jpg
-      overlay_filter: rgba(255, 0, 0, 0.5)
-      caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-      cta_label: "More Info"
-      cta_url: "https://unsplash.com"
+    
