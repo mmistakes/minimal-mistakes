@@ -92,9 +92,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : google # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "UA-107582837-2"
     anonymize_ip         : # true, false (default)
 
 
@@ -110,7 +110,7 @@ author:
   bitbucket        :
   codepen          :
   dribbble         :
-  flickr           :
+  flickr           : "https://www.flickr.com/photos/15216811@N06/"
   facebook         :
   foursquare       :
   github           :
