@@ -12,14 +12,14 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "neon" # "default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 title                    : "JDsnyke"
 title_separator          : "-"
 name                     : "Janith Dissanayake"
-description              : "An amazing website."
+description              : "My Personal Github Pages Blog"
 url                      : "https://jdsnyke.tk" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "JDsnyke/jdsnyke.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -58,8 +58,8 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
+search                   : true # true, false (default)
+search_full_content      : true # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
@@ -77,7 +77,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : Animated2Monkey
+  username               :
 facebook:
   username               :
   app_id                 :
@@ -102,7 +102,7 @@ analytics:
 author:
   name             : "Janith Dissanayake"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Anime NERD and 8 bit music lover, interested in Microbiology and Physiotherapy"
+  bio              : "Anime NERD and 8 bit Music lover"
   location         : "Planet Earth"
   email            : "shurikan117@live.com"
   uri              :
@@ -113,7 +113,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/JDsnyke"
+  github           : "JDsnyke"
   gitlab           :
   google_plus      :
   keybase          :
