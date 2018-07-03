@@ -91,7 +91,6 @@ If you forked or downloaded the `minimal-mistakes-jekyll` repo you can safely re
 - `/docs`
 - `/test`
 - `CHANGELOG.md`
-- `minimal-mistakes-jekyll.gemspec`
 - `README.md`
 - `screenshot-layouts.png`
 - `screenshot.png`
