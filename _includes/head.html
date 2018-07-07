@@ -9,6 +9,10 @@
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+{% if site.theme_color %}
+  <meta name="theme-color" content="{{ site.theme_color }}">
+{% endif %}
+
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
