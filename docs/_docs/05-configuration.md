@@ -124,6 +124,14 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
     <figcaption>Oranges and red.</figcaption>
 </figure>
 
+### Theme Color
+
+Optionally set the toolbar color on select browsers using `site.theme_color` to go with your skin. Check [this](https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android) for more information.
+
+```yaml
+theme_color              : "#252a34" # https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+```
+
 ### Site Locale
 
 `site.locale` is used to declare the primary language for each web page within the site.
@@ -540,13 +548,13 @@ Add a Google search box to your site.
 1. Create a **New search engine** in [Google Custom Search Engine](https://cse.google.com/cse/all), give it an appropriate name and setup "Sites to search" to your liking.
 
 2. Under **Look and feel** choose the "Results only" layout and a theme (*Minimalist* is a good choice to match the default look of the Minimal Mistakes).
-   
+
    ![Google Custom Search Engine layout]({{ '/assets/images/google-custom-search-engine-layout.png' | relative_url }})
 
 3. Select "Save & Get Code" and grab your search engine ID from the line that begins with `var cx = 'YOUR_SEARCH_ENGINE_ID'`.
 
 4. Add your search engine ID to `_config.yml` like so:
-   
+
    ```yaml
    google:
      search_engine_id: YOUR_SEARCH_ENGINE_ID
