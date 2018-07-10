@@ -55,8 +55,12 @@ tracking_aided_gallery:
 ## Glonass Signal Model
   The Glonass constellation has 24 satellites distributed in 3 rough circular orbital planes [2]. These satellites use frequency–division multiple access (FDMA) signal structure, transmitting in two bands: 
   
-  * L1: 1602 + K * 0.5625 MHz;
-  * L2: 1246 + K * 0.4375 MHz;
+  * <p><span id="l1_glonass_band">...</span></p>
+  * <p><span id="l2_glonass_band">...</span></p>
+<script>
+katex.render("L_1 = 1602 + K * 0.5625 MHz", l1_glonass_band);
+katex.render("L_2 = 1246 + K * 0.4375 MHz", l2_glonass_band);
+</script>
 
   Where K = [-7;6] is the channel number. In the L1 band, two signals are transmitted: a standard precision and an obfuscated high precision signal. The FDMA system allows the satellites to send same PRN code using the BPSK modulation. The below picture shows the spectra of GLONASS signals in L1.
 
@@ -66,7 +70,7 @@ tracking_aided_gallery:
 </figure>
 
 ### Dataset
-  The algorithms used in this work were tested against simulated and real signals. The simulated data was firstly generated using a signal simulator built in Matlab. Another simulator was built for unit tests using the gnss-sdr signal generator that was expanded to generate Glonass L1 CA signal. The real signal was captured with NT 1065 front end. The total time recorded was of 63 seconds. The capture was made at University of Colorado Boulder with antenna on position 40.007986, -105.262706 on August 31 2016. Mr. [Damian Miralles](https://github.com/dmiralles2009/) shared this file with the author. For the sake of this report, only the results for real signal will be shown.
+  The algorithms used in this work were tested against simulated and real signals. The simulated data was firstly generated using a signal simulator built in Matlab. Another simulator was built for unit tests using the gnss-sdr signal generator that was expanded to generate Glonass L1 CA signal. The real signal was captured with NT 1065 front end. The total time recorded was of 63 seconds. The capture was made at University of Colorado Boulder with antenna on position `40.007986, -105.262706` on August 31 2016. Mr. [Damian Miralles](https://github.com/dmiralles2009/) shared this file with the author. For the sake of this report, only the results for real signal will be shown.
 
 ## Acquisition
   There are several blocks in GNSS-SDR software that process the signal retrieved from a front end until the data come through to calculation of the position of receiver. The first block is Acquisition, the purpose of this block is find all the satellites that are visible to the front end’s antenna and discover in which Doppler frequency shift and Code Delay are these satellite signals.

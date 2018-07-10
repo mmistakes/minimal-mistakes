@@ -1,6 +1,7 @@
 /* ==========================================================================
    jQuery plugin settings and other scripts
    ========================================================================== */
+//= require ./katex
 
 $(document).ready(function() {
   // FitVids init
