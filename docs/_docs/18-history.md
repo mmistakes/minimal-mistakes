@@ -4,9 +4,15 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-06-22T16:19:35-04:00
+last_modified_at: 2018-07-10T16:00:16-04:00
 toc: true
 ---
+
+## Unreleased
+
+### Enhancements
+
+* Add missing French translations. [#1741](https://github.com/mmistakes/minimal-mistakes/pull/1741)
 
 ## [4.12.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.12.0)
 

@@ -1,3 +1,9 @@
+## Unreleased
+
+### Enhancements
+
+* Add missing French translations. [#1741](https://github.com/mmistakes/minimal-mistakes/pull/1741)
+
 ## [4.12.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.12.0)
 
 ### Enhancements
