@@ -1,6 +1,6 @@
 //= require katex/dist/katex
 
-// render LaTeX equation
+/*render LaTeX equation*/
 $(function() {
     $("span.math").replaceWith(function() {
         var tex = $(this).text();
@@ -31,7 +31,7 @@ $(function() {
     });
 });
 
-// copy LaTeX equation
+/*copy LaTeX equation*/
 $(document).on("copy", function(event) {
     event = event.originalEvent;
     var selection = window.getSelection();
