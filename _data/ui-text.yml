@@ -105,7 +105,7 @@ fr: &DEFAULT_FR
   pagination_next            : "Suivant"
   breadcrumb_home_label      : "Accueil"
   breadcrumb_separator       : "/"
-  menu_label                 :
+  menu_label                 : "Menu"
   toc_label                  : "Sur cette page"
   ext_link_label             : "Lien direct"
   less_than                  : "moins de"
@@ -116,7 +116,7 @@ fr: &DEFAULT_FR
   categories_label           : "Catégories :"
   date_label                 : "Mis à jour :"
   comments_label             : "Laisser un commentaire"
-  comments_title             :
+  comments_title             : "Commentaires"
   more_label                 : "Lire plus"
   related_label              : "Vous pourriez aimer aussi"
   follow_label               : "Contact"
@@ -126,7 +126,6 @@ fr: &DEFAULT_FR
   email_label                : "Email"
   recent_posts               : "Posts récents"
   undefined_wpm              : "Le paramètre words_per_minute n'est pas défini dans _config.yml"
-  comments_title             : "Commentaires"
   comment_form_info          : "Votre adresse email ne sera pas visible. Les champs obligatoires sont marqués"
   comment_form_comment_label : "Commentaire"
   comment_form_md_info       : "Markdown est supporté."
