@@ -5,7 +5,7 @@ tags: [test, firstpost]
 
 This is the *very first* post of my brand new blog.
 
-You can find older stuff also on <a href="https://blogs.msdn.microsoft.com/nicold" target="_blank">my MSDN blog</a>
+You can find my other stuff also on <a href="https://blogs.msdn.microsoft.com/nicold" target="_blank">my MSDN blog</a>
 
 
 > Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
