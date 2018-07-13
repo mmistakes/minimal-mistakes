@@ -60,7 +60,7 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
-search_provider          : # lunr (default), algolia, google
+search_provider          : lunr # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
@@ -101,7 +101,7 @@ analytics:
 # Site Author
 author:
   name             : "Janith Dissanayake"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio-photo.jpg"
   bio              : "Anime NERD and 8 bit Music lover"
   location         : "Planet Earth"
   email            : "shurikan117@live.com"
@@ -111,7 +111,7 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "Shurikan117"
   foursquare       :
   github           : "JDsnyke"
   gitlab           :
@@ -121,15 +121,15 @@ author:
   lastfm           :
   linkedin         : "janith-dissanayake" # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
-  soundcloud       :
-  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
+  soundcloud       : "shurikan117"
+  stackoverflow    : "7772943/shurikan117" # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : "shurikan117" # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
-  twitter          :
+  twitter          : "Animated2Monkey"
   vine             :
   weibo            :
   xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  youtube          : "https://www.youtube.com/channel/UC6fIwZLlPJLrK79zfycPXUw" # "https://youtube.com/c/MichaelRoseDesign"
 
 
 # Reading Files
