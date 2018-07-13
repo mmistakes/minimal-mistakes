@@ -1,9 +1,15 @@
 # main links
 main:
+  - title: "About"
+    url: /about
   - title: "Blog"
     url: /blog
-  - title: "Donate"
-    url: /donate
+  - title: "Support Me"
+    url: /support
+  - title: "Terms & Policies"
+    url: /terms
+  - title: "Sitemap"
+    url: /sitemap
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
