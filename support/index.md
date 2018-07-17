@@ -1,0 +1,48 @@
+---
+title: Support Me
+layout: single
+author_profile: false
+permalink: /support
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/unsplash-support-image.jpg
+  caption: "[**?**](https://unsplash.com/photos/fJTqyZMOh18)"
+excerpt: "Every little bit helps."
+---
+
+## Donate
+
+If you’d like to send a donation my way, use one of the buttons below.
+
+<a href="/support/donate-btc" target="_blank"><img src="https://img.shields.io/badge/Donate%20BTC-1AQrV5YKDv3WnwEYddHr5UFtiTLUvQ5pQr-orange.svg?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAABcVBMVEUAAAD//wD/qgD/vwD/1AD/zAD/vwD/wwD+xgD+uw3/vwz+wgz+wQr+xAn+vAn+vwn+wQj+wAT+wQT+wgn+vwn+wAj+wQb+wgb/wAb+wAX+wQX+wgX+wAX+wQX+wAb/wQb+wQb+wAb+wQf+wQf+wAf+wAf/wQf+wQf+wQb+wAb+wQb+wAb+wAb+wQb+wAb+wAf+wAf+wQf+wQf+wQf+wAf+wQf+wAf+wQf+wQf+wAf+wAf+wAb+wAb+wQb+wQb+wAb+wAb+wQb+wQb+wAf+wAf+wQf+wQf+wAf+wAf/wQf/wgz/ww7/ww//wxD/xBL/xhr/xhv/xhz/xx7/yCP/ySf/yir/zTT/zTX/zTf/zjz/0Uf/0Uj/007/1lv/11//12D/2GH/2GL/2mn/2mv/3Xf/4IP/4Yb/4oj/4or/553/557/55//6KP/66z/663/8MH/8cX/887/9ND/9NH/9NL/9db/9tn/9tr/997/+OD/+OGNLM4BAAAASXRSTlMAAgMEBgoQERITFBUZGhscHTU2Nzg5U1RVVldYWlt3eHl6hIWGh4iRkpOWl5iam6usra6xs7bR0tPU1eHi4+Tl6uvs7e73+Pn6ME/sdQAAAZ5JREFUeAHd1FcT0kAQwPENGBVUCmJXigKCQRFBARGlBI61994Vey+i+fTeg7M5bvaS8ZXfA7OTuz9zMJODtRTJFpun3fnc7R0vbLcgTKpyDhWDchKCxI8K1IgjcTDaP0HGaB/wNhxDAycKDPskGrVt5vtpP6cVAZ16Hs/z/n0QBzQHkA/IHlixZRwWDGOgqqu7yZt76KuBIiW4QHp3mZ7PEuCroBaQt0hKQKyzWoDShZsLT7pNC2csCnYgE0gf5fgcSYaCoiF4JceXSPIUnDAEn+T4GEmDgh4XnL/1Wk7La0i6FLh6QP48Rd+YAmEKft5HhTAH5NtDNnDZH3312S/P+32XO1KXC6QXcvyApENB0xDckONX7m8tGIKLclwiyVGQNQQP5PgZSZoCa8AFV558l+OCFvoWkLIW+H5cp4VD4EsKQ/DlDj2fbgOFwwbvH10yvKIQC78ENsGKvWHBTtDUg4PDoIu2/vOqBLsdsN8GRtRBg2oEeLtHyBjuAqPNtRlqptWNECRR6qOif3ArhLEy+UZnIsTkVCOXtmAd/QVCJJYlhSwQOwAAAABJRU5ErkJggg==" alt="Donate with Bitcoin"></a>
+
+<a href="/support/donate-eth" target="_blank"><img src="https://img.shields.io/badge/Donate%20ETH-0x2729F47611dC42758A2f918668E32f464e5d231B-blue.svg?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAABelBMVEUAAAD///9/f/9///9/f/9/v7+Rttp/n7+UqtR/o9qZqt1vj7+lpeGZpdiQm92fqt+cpteDldOcpN6LktiGmtacqdehp9mdqdqKldKHltWhptqMldeep9ufqNidqNlyhMmKlNCfptuLmNKLldCgptmJlNGep9qfp9uKktKJldCdp9qeqNqIldGeqNmHlM+eqNp2hMqfp9qIlNCIktKfp9mfqNmHk9GGktGHk8+eqNqeqNmEks6fp9pxgMeFkdCUntWep9qfqNmFkNCeqNmEj8+EkM6eqNmfp9meqNqfqNlvfMeCjs+fqNqep9mBjc6fqNqBjM6eqNl3hcufp9mAjM5/jc2fp9p/is1pd8R+isx+is2fp9l8isyfp9p9iMxkc8N8iMyfqNl6iMt7h8uep9lca8Bda8BebsFfbsFhb8FjcMJndMRreMZufcdygcl3g8p4hst5hst5h8t6hst6h8t9ic2Bjs6GktCMl9KSnNWXoNebpdiep9qfqNrSYI+lAAAAZXRSTlMAAQICBAQHCAwODxARFBcYGh0fISYnKSouMTE6OjtER0hIS01RWVpdZ2hpanZ5fH+DhoiUlZaYp6iut7m7vL+/xMXGztPU1NXW4OHl5efr6+3u7/Dx8vP2+Pj4+Pv7/P39/f7+/sjDJJYAAAGcSURBVHjaxZNXU8JAFIWvBRF77xWxACqKIFbsXbE3EHuwlwt23f8umzUT4qRsnvjeksk3OSc5C+nD4QVT5K0el5oS/ATnwASNlwQTTuAmZ5EQxEMbt+AhVMAgcFIVYULCDlxkTBIm4E4Wl+AikoAB4KBkWxYuajmEYSILuMKxCZIqoNd4E0rBcCF+ohRwzmgT/4WE02gTSsFgIR7C+Pl8u314RkZQdxOU749XREG4un9ioez6m/h6f6GPCUlid4+6C3GJWZAhMMRkAa1NiFmUgphMYyETLItSYMm2VIXeMKoLws04qGIdOlUTrpfzQYuK2fh/IXbQDBp0VANAW0gpnPTRmwOqQu68r1CuIoWnrw0XgSp1kXW3RarCwotXiXbQwE3IQutfFTE8e9+Q/vEcYVVY+JDBMS1YShpRWkX+ZkfloENDlCRJqYLxLtClhwq0ivTfR0GfzDHlidvIBgOK11KF0xowpOksRegGDvplYRp4sExJwq4VuCjbZMJFPXDiYIIXuPFRYRb4yZkhuG8DE1TunbeAKToHIU38AvDdAK0PhKloAAAAAElFTkSuQmCC" alt="Donate with Ethereum"></a>
+
+<a href="https://kutt.it/jdsnyke-altcoin" target="_blank"><img src="https://img.shields.io/badge/Donate%20ALT-Changelly-lightgrey.svg?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAB7FBMVEUAAAD/AAD/fwD/VQD/fwD/ZgD/fwD+bQD/XwD+cQD/ZgD+cwD/agD+bQD/aQD+awD/cgD+bQD+cwD+bgD+awD+bQD+cgD/bgD+bAD+bQD+cQD+cgD+bwD/bAD+cAD+bgD+bgD+bAD+cAD+bgD+cQD+bwD+bQD+bwD+bQD+cAD/cAD+bQP+bwP/bwD+bwD+bgD+bgP+cAD+cAP+bgD+bgD+bgL/bwD+bwD+bgD+cAD+bwD/bgD+bwD+bgD+bgD+bgL+cQD+bwD+bgD+bgD+bwD+bgD+bQD+bgD+bwD/bgD+bwD+bgD+bwD+bgD+bgH+bgD+bgD+bwH+bwD/bgD+bwD+bgH+bwD+bwH+bwD+bgH+bwH+bgD+bwD+bgD+bwD+bwD+bwH+bwD+bgD+bwD/bwD+bwD+bwH+bwD+bgD+bwD+bgD+bgH+bwD+bwD+bgD+bgL+bwL+bgL+bwD+bwD+bgL+bwD+bgD/bwL+bgD+bwL+bwD+bgD+bgD+bwL+bgL+bwD+bgD+bwD+bgD+bwD+bgD+bwD+bgD+bwD+bwL+bwD+bwL+bwD+bgD+bwD+bgL+bwD+bgD+bwD+bgD+bgL+bwD+bwL+bwD+bgD+bwD+bgD+bwD+bwD+bwL+bgD+bgD+bwD+bwL/bwD/bwH/bwJY0/0ZAAAAoXRSTlMAAQIDBAUGBwgJCgsMDhETFBUWFxocHR4hIyQmJygrLC4vMjU2Nzg5Oj1ESElQUlNTVFRaXF9gYmNkZWZnaGpqbG5vcXJzdHZ3eHl6foGBg4SFh4iJiouLjI+QlJmanJ6io6apqqysrq+wtLa3ucHBw8TFx8nKy8zNztDS1NXW19na29zd3uLl5efn6Onq6+zt7u/v8fHz9PX29/j4+fv+/rHav24AAAJFSURBVHgB3dT7N5RfFAbwZ77m+2IGebsTCUXTpaTQZUqlC12ULopUoiQqXaimortB0kikxpQz5x9tn7HmdM7MWe/42ee3Z+1ncWb2XoMlKa381J1Xk5Hw1wE/FmH1xSCLO4OUcq9H2D/bkcruEFOtBTD0vOty7dbCdBhYN1jM9459pfb/3nU+F4BeHjM/8qi9sQIaz30mvK3JhKKJS1NlUFmx/uxxNzSVsj9RAk3sPe+KkCCPL4iOJYz2MPLCRiLXNBcYOwyNHaL+exvJ+sSfp+GXFVC1ifcXwaCVkz80boNijdjXCZhUUX+wmcY/1X9xSXyfbpgUcx6wrWEqnIOUFqRcAyP3XH8OUEeFURfiNov9emDWkg0ga4YqGxB3mlIHHPVQpU6mu5T2wtFRqnTL9JrSRjgSr34m0ySlZXCUT5VhmcQWLDjyUCUs029KHjhKF6cg0zdK+XCUS5Vx7UOXw1E5VQZk6qZ0BI78VLmlLa4HjjqpckgmnzhGL4DsFph5f1ClQMa08YXF5/TPuWF0gAovlXyVcjDDDnBeDBPrIxWOqXsUm2ge5JxXwaSBxqGspN8MTlphUCZOoR6qleKcopzzPiRb9ZmGb9KhOSn6ZNqV3Bd7jZRCUzQWpb6Ql3TYo4wchKZkgsdVQmM1hBm5AE3ZFJeaoMja/4kJ513QVDS2Px6Z5zG9YpG+Aq+1fJO/c4YJs9UwySjcVnulKzAEoICpnq5HKruU+ofq/5DS2Xj7170dbizCzmu3Hz55cLN+SyaWpL8IlzEvd+seVgAAAABJRU5ErkJggg==" alt="Donate with Altcoin"></a>
+
+<a href="/support/donate-cpu" target="_blank"><img src="https://img.shields.io/badge/Donate%20CPU-Hash%20Power-yellow.svg?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAATlBMVEUAAABLs0tIrVFPr09LrFJNsU1LrFJLr09MrlBLrlBMr09Lr09Mr09MrlBMr09MrlBLrlBLr083R085Uk86U09GkVBGklBHkk9Mr1D/mADwB1MGAAAAEnRSTlMAGxwdIiQlqausrezt7vDx8vMwruWlAAAAkElEQVR42t2VORKAIBAExRs8QFDB/39UjSydcikNRO2EZDqYLVii/zEtwPkdIeHKnaBEjvm4dgQVA6F0JAUIHS1IEJyHywIM0yesmTDCYPQOY3cCljb6QO+ZkgYeFrA0ClD6VcILx3rjamBp2x/yY+j3QAuPbI0NdXWRCVrgIOTkMm7SCGCFPIu3PPv6H/c7Zq0SawMmVeF2AAAAAElFTkSuQmCC" alt="Donate with CPU Power"></a>
+
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=3EPELN3KBGBXU&lc=LK&item_name=JDsnyke%20Donation&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted" target="_blank"><img src="https://img.shields.io/badge/Donate%20USD-Paypal-green.svg?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAABuVBMVEUAAAAA//8Af/8Af78AkdoAn98fX78cccYAmeUAlOkVar8OY8YAneYAnOETYsQSZL8AnuQAnOYYYr0AmOESY8AFnOcUZL4Em+UEmuUEnOYUZsEDnOMTZMEWZb8UZcADmeQDmuUDmeYVZb4VZL8CnOYVZL8UZcAVZMECmuQCm+UVZcAVZL8DmuUDmuQDmuUVZb8UZL8VZL8UZcADm+QDmuQCm+UUZMACm+QUZb8VZMACm+QUZb8ZXbMCm+UCmuUZXLIdUKgeTKUhR6MiQZ4JidoGj94LftIScMIfSaYUZcACmuUcUKwlPJkkOpcCmuQNec4Cm+QEleEJitgUZMAUZb8lO5gCm+UmN5YCmuQKhNMDmuQmOpYDmOMYWLQlOJUmOJURb8gUZcADm+UKidcDm+QKi9gYXLgDmuQUZcAJjNkDmuUDm+UVZcADm+UVZL8YXroDmuQUZMAnNpInNZQHkNsnNZMnNZQUZMADmuUSacInNZMDmuUVZMADmuUVZb8FluEDm+QUZL8nNZIDmuUoNJIEmeQoNZMEmeMEmOQVZL8VZMAWY74nNJMDmuQVZcAVZMADm+UVZcAoNZNPNQX1AAAAkHRSTlMAAQIEBwgICQoMDBIVGhocHR8fIyksMzs9Pj5BQkRJTlFTU1RdYGJrdXZ2gYSJjI2VmKOkpausrq60uLq8vb6/v7/AwMHCw8PDxMbHx8jLzM3NztDR0dLS09XW1tfX19rb29zc39/f4ODh4uPj5ubm5+fn6Onq6uvt7e3v8PHy9PX19ff3+Pj5+vr7+/v8/P2rrLy+AAABaUlEQVR4Ae3UVXcTYRjE8SEIBHeH4O4Q3D3B3QXq7u7u7fPuJ64kc7rP7rt7tqe3+V3P/3aQszArPhq30Zobx1YizG7jU7wPIU4Zv5FDIcFVY9G5GYHKjc0FBNlgrJoQ5LCxW48A57kobHXcvhVdTiyBRYrBQ0cpEJHXW+CztIfBK7UfH5YZzdvgtd1Qgwo+yZzvy+FxnPsqR7knGUfgcYnBC7Xvrc8GN+Hxj8EjFdyXrHxoawx9ce//dDHog7af+7F+1742T6gU2mkGv1z73yVCkoZ2i8FzhxpvD8m8c1Bi7Qxezm4H6348eDYgbjuhbDX0Xqw+x6Ac5b5F7A5Cu8jgjVhdgccHBo/FJh2HtnqSwTuxSK6Cx17upzrE52si5GH+itL2/86ZHbC4zuApp90bEaaSwRMGdxEqxeAng7OIJD7B4AAi2SO0DpGc5L4M0VxjkEQ01QxOIJJNQrsQydoKyXi7DIuRMw0c/thXRW0uEwAAAABJRU5ErkJggg==" alt="Donate with PayPal"></a>
+
+<a href="https://brave.com/psx942" target="_blank"><img src="/assets/images/switch-banner.png" alt="Switch to Brave"></a>
+
+## Buy Something
+
+If you shop on [Amazon.com](https://amzn.to/2NjA2EU), using my referral link below will earn me a small commission if you end up buying something. I also maintain an Amazon Wish List if you are feeling extra generous.
+
+[Shop Amazon](https://amzn.to/2NjA2EU){: .btn .btn--success}
+
+[My Wish List](http://a.co/3w4sAGV){: .btn .btn--info}
+
+## Spread the Word
+
+Have a website or use social networking sites like Twitter, Facebook, Google+, Tumblr, or Pinterest? Please consider sharing the content found on JDsnyke or linking to [https://jdsnyke.tk](https://jdsnyke.tk)
+
+## Subscribe to the Feeds
+
+The main feed for everything posted on JDsnyke.
+
+[Subscribe](https://jdsnyke.tk/feed.xml){: .btn .btn--warning}
+
+<!--Inspiration for this page taken from https://mademistakes.com/support/-->
