@@ -24,7 +24,7 @@ url                      : "https://jdsnyke.tk" # the base hostname & protocol f
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "JDsnyke/jdsnyke.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-# breadcrumbs            : false # true, false (default)
+# breadcrumbs              : false # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
@@ -72,24 +72,30 @@ google:
   instant_search         : # false (default), true
 # SEO Related
 google_site_verification :
-bing_site_verification   :
-yandex_site_verification :
+bing_site_verification   : "FC150E68D82B95772742437AE142A4AB"
+yandex_site_verification : "9063008c8106be02"
 naver_site_verification  :
 
 # Social Sharing
 twitter:
   username               : "Animated2Monkey"
 facebook:
-  username               :
+  username               : "Shurikan117"
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : "/assets/images/bio-photo.jpg" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  type                   : "Person" # Person or Organization (defaults to Person)
+  name                   : "Janith Dissanayake" # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - "https://twitter.com/Animated2Monkey"
+    - "https://facebook.com/Shurikan117"
+    - "https://youtube.com/channel/UC6fIwZLlPJLrK79zfycPXUw"
+    - "https://github.com/JDsnyke"
+    - "https://linkedin.com/in/janith-dissanayake"
+
 
 # Analytics
 analytics:
@@ -106,7 +112,7 @@ author:
   bio              : "Anime NERD and 8 bit Music lover"
   location         : "Planet Earth"
   email            : "shurikan117@live.com"
-  uri              :
+  uri              : "https://jdsnyke.tk"
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
@@ -130,7 +136,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          : "https://www.youtube.com/channel/UC6fIwZLlPJLrK79zfycPXUw" # "https://youtube.com/c/MichaelRoseDesign"
+  youtube          : "https://youtube.com/channel/UC6fIwZLlPJLrK79zfycPXUw" # "https://youtube.com/c/MichaelRoseDesign"
 
 
 # Reading Files
@@ -198,7 +204,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 8 # amount of posts to show
+paginate: 12 # amount of posts to show
 paginate_path: /blog/page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 

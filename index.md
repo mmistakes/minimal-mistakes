@@ -6,9 +6,7 @@ header:
   overlay_filter: "0.5"
   overlay_image: /assets/images/unsplash-image-1.jpg
   caption: "[**?**](https://unsplash.com/photos/v_8xUFwLpE4)"
-excerpt: |
-  Welcome! <br>
-  Feel free to take a look around :smile:
+excerpt: "Welcome!"
 intro:
   - excerpt: '"Slay. Evil. Immediately." - Saito Hajime'
 feature_row:

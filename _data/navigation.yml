@@ -10,6 +10,8 @@ main:
     url: /support
   - title: "Terms & Policies"
     url: /terms
+  - title: "Contact Me"
+    url: /contact
   - title: "Sitemap"
     url: /sitemap
   # - title: "About"

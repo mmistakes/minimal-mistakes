@@ -1,5 +1,5 @@
 ---
-title: Contact
+title: Contact Me
 layout: single
 author_profile: false
 permalink: /contact
