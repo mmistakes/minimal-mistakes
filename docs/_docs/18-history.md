@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-07-10T16:00:16-04:00
+last_modified_at: 2018-07-19T11:26:24-04:00
 toc: true
 ---
 
@@ -12,6 +12,7 @@ toc: true
 
 ### Enhancements
 
+* Add documentation note to update root `Gemfile` when forking theme.
 * Add missing French translations. [#1741](https://github.com/mmistakes/minimal-mistakes/pull/1741)
 
 ## [4.12.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.12.0)
