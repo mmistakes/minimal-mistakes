@@ -4,7 +4,7 @@ author_profile: true
 read_time: true
 comments: true
 share: true
-title: tweet-by- Animated2Monkey
+title: tweet-by-Animated2Monkey
 date: July 19, 2018 at 08:48AM
 categories: Twitter
 ---
