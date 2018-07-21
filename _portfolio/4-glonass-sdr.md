@@ -65,7 +65,7 @@ katex.render("L_2 = 1246 + K * 0.4375 MHz", l2_glonass_band);
   Where K = [-7;6] is the channel number. In the L1 band, two signals are transmitted: a standard precision and an obfuscated high precision signal. The FDMA system allows the satellites to send same PRN code using the BPSK modulation. The below picture shows the spectra of GLONASS signals in L1.
 
 <figure class="align-center">
-  <img src="https://gssc.esa.int/navipedia/images/2/2e/GLONASS_Sig_Plan_Fig_2.png">
+  <img src="/assets/images/GLONASS_Sig_Plan_Fig_2.png">
   <figcaption>Spectra of GLONASS signals in L1. Source: <a href="https://gssc.esa.int/navipedia/index.php/GLONASS_Signal_Plan">Navipedia</a></figcaption>
 </figure>
 
