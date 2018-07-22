@@ -1,8 +1,14 @@
 ---
 title: "Portfolio"
-layout: collection
+layout: collection-splash
 permalink: /portfolio/
 collection: portfolio
+date: 2016-03-23T11:48:41-04:00
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/storm-painting-unsplash.jpg
+  caption: "Photo credit: [**Daniel Cheung**](https://unsplash.com/@danielkcheung) on [**Unsplash**](https://unsplash.com)"
 entries_layout: grid
 classes: wide
 ---
