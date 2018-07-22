@@ -1,6 +1,8 @@
 ---
 title: "Glonass SDR"
 excerpt: "Software Defined Radio for GLONASS system."
+toc: true
+toc_sticky: true
 header:
   image: /assets/images/glonas-sdr.png
   teaser: assets/images/glonas-sdr.png
