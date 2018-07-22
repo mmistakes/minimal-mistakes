@@ -102,7 +102,7 @@ analytics:
 author:
   name             : "Alen Alex"
   avatar           : /assets/images/ajalex_avatar.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am a software developer by profession and passion, along with a bit of music, photography to add :)... \n Please do note that the content of the blog reflects my personal opinions and not that of my employer."
+  bio              : "Software developer @ Microsoft, with a bit of music and photography in the blood :)... \n The content of the blog reflects my personal opinions and not that of my employer."
   location         : "Vazhakulam"
   location_alias   : "Vazhakulam (Pineapple City)"
   email            : blog.ajalex@outlook.com
