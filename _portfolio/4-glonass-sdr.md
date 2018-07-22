@@ -5,7 +5,7 @@ toc: true
 toc_sticky: true
 header:
   image: /assets/images/glonas-sdr.png
-  teaser: assets/images/glonas-sdr.png
+  teaser: assets/images/what-is-gnss-sdr.jpg
 sidebar:
   - title: "Role"
     image: /assets/images/glonas-sdr.png
@@ -35,6 +35,8 @@ tracking_aided_gallery:
     image_path: https://i.imgur.com/EZf8Zj9.png
     alt: "Output from Carrier-Aided loop with zoom."
 ---
+
+## Summary
 
 ## Project Goal
 
