@@ -9,7 +9,7 @@ header:
   overlay_filter: "0.5"
   overlay_image: /assets/images/storm-painting-unsplash.jpg
   caption: "Photo credit: [**Daniel Cheung**](https://unsplash.com/@danielkcheung) on [**Unsplash**](https://unsplash.com)"
-excerpt: "My work documented."
+excerpt: "My documented work."
 entries_layout: grid
 classes: wide
 defaults:
