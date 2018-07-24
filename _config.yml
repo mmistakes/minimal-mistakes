@@ -268,12 +268,13 @@ resume:
   name: *name
   tagline: Lead Backend Developer
   pic: gravatar.jpeg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
-  summary: 'I have been a developer for more than 20 years, with the last 8 using PHP and specialising in web technologies.
-  in a LAMP/LEMP environment. I have used ZF1 and most recently Laravel and Lumen, which are my preferred choices.
-  I have built product from scratch as well as maintained and enhanced existing ones.
-  <br/><br/>
-  I would like to move towards a more leading position, to take a step-back for development and where I would be able
-  to also mentor more junior developers.'
+  summary: 'I have been working as a developer for 20 years. I started as a C developer and did that for more than 10 years. I then realised my future as a C developer was limited to legacy code. So I decided to move into Web Development and got a CoHE in Web Design Technologies, just to make sure I got the basics right.
+  
+During my almost 8 years as a Web Developer I learned a lot, about coding standards, Design Patterns, DRY and SOLID, agile and scrum, DB optimisation, UI and UX, TDD and BDD, and much more.
+
+I'm passionate about writing clean, clear, documented, testable (and tested) code. I particularly enjoy refactoring legacy code. It's quite satisfactory to see the transformation of a set of unstructured and tangled code into a beatifully clean and well-organised collection of code.
+
+I also like mentoring more junior developers. It's very gratifying to help someone to become a better developer.'
 
   #sidebar links
   email: *email
