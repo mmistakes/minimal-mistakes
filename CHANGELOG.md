@@ -6,6 +6,10 @@
 * Add documentation note to update root `Gemfile` when forking theme.
 * Add missing French translations. [#1741](https://github.com/mmistakes/minimal-mistakes/pull/1741)
 
+### Bug Fixes
+
+* Fix `read_time` logic in header image overlay. [#1756](https://github.com/mmistakes/minimal-mistakes/pull/1756)
+
 ## [4.12.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.12.0)
 
 ### Enhancements

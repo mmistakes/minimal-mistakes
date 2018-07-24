@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-07-24T10:39:51-04:00
+last_modified_at: 2018-07-24T10:44:32-04:00
 toc: true
 ---
 
@@ -15,6 +15,10 @@ toc: true
 * Update Font Awesome to version [`5.2.0`](https://github.com/FortAwesome/Font-Awesome/blob/master/CHANGELOG.md). [#1754](https://github.com/mmistakes/minimal-mistakes/pull/1754)
 * Add documentation note to update root `Gemfile` when forking theme.
 * Add missing French translations. [#1741](https://github.com/mmistakes/minimal-mistakes/pull/1741)
+
+### Bug Fixes
+
+* Fix `read_time` logic in header image overlay. [#1756](https://github.com/mmistakes/minimal-mistakes/pull/1756)
 
 ## [4.12.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.12.0)
 
