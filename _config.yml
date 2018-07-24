@@ -266,7 +266,7 @@ resume:
 
   #Profile information
   name: *name
-  tagline: Lead Backend Developer
+  tagline: Senior Backend Developer
   pic: gravatar.jpeg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
   summary: "I have been working as a developer for 20 years. I started as a C developer and did that for more than 10 years.
   I then realised my future as a C developer was limited to legacy code. So I decided to move into Web Development and got a CoHE in
