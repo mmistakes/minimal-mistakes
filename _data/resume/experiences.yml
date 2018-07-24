@@ -1,43 +1,51 @@
 - experience:
   role: Lead Backend Developer
-  time: April 2017 - Present
+  time: April 2017 - August 2018
   company: London Review of Books, London
-  details: "<ul>
-  <li>Setting up development sites on AWS</li>
-  <li>Supporting the frontend developers</li>
-  <li>Building API to retrieve content and support an SPA</li>
-  <li>Working on rewriting the website using Laravel 5.5, gathering requirements, writing tests and code, preparing for demos, etc.</li>
+  details: "I was hired to lead a team of developers (initially just me and a front-end developer) for a digital transformation project.
+Although that prospect did not materialse, in that capacity, I
+<ul>
+<li>worked on rewriting the website using Laravel 5.5, gathering requirements, writing tests and code, preparing for demos, etc.</li>
+<li>setup up CI and CD, using GitLab and Envoyer</li>
+<li>built RESTful APIs to support a SPA</li>
+<li>supported the front-end developer</li>
+<li>setup a development site in AWS</li>
   </ul>"
 - experience:
   role: Backend Developer
   company: Your Favourite Story
   time: January 2017 - March 2017
-  details: "<ul>
-  <li>Built internal web-based tool to upload files to client server, using Lumen 5.2</li>
-  </ul>"
+  details: "In my short experience at YFS, I build RESTful API using Lumen 5.2 to upload files to a 3rd-party file server and to support a users kiosk to be put up in some of the client's shops."
 - experience:
   role: Web Developer
   time: January 2016 - December 2016
   company: City A.M., London
-  details: "<ul>
-  <li>Build a new API server in Lumen 5.2</li>
-  <li>Worked on upgrading two sites from Laravel 4.2 to 5.2</li>
-  <li>Worked on rebranding of old site</li>
-  <li>Continued working on existing in-house CMS for new features and bug-fixing</li>
-  <li>Daily use of GIT for branching and merging</li>
-  </ul>"
+  details: "I was part of a small but tight web team (three developers and one designer).
+  The web team was mainly responsible for the in-house CMS and the website. During my time here I
+  <ul>
+<li>oversaw the upgrading of the site and the CMS from Laravel 4.2 to Laravel 5.2</li>
+<li>worked alongside the designer to rebrand the site</li>
+<li>built a new API server in Lumen 5.2 to power some part of the site (we were working to refactor some heavily used pages to SPA)</li>
+</ul>
+My daily work involved using GIT for branching and merging and Jira for tickets and general development cycle."
 - experience:
   role: PHP Developer
   time: January 2011 - October 2016
   company: Mediatel, London
-  details: "<ul>
-  <li>Mentored a Junior developer on Mediatel products, our coding standards, Zend Framework and general OOPHP</li>
-  <li>Contributed to the development of a mapping feature in our core product using PostGIS, TinyOWS, Mapnik and React.</li>
-  <li>Developed new website, front (JavaScript and jQuery) and back-end (PHP, MySQL and ZF1), for company’s events, with
-  booking and payment facilities (PayPal API), and provided support and training on how to use it (from an admin point of view)</li>
-  <li>Designed, coded (PHP, MySQL and ZF1) and implemented a process to load survey data from different providers, using
-  XML to defined what to import.</li>
-  </ul>"
+  details: "At Mediatel I was involved in designing and implementing a data loading process from different providers.
+  The loader used an XML configuration file to define what, and sometime how, to import.
+I was also responsible for the development of their new Events website. This involved building both the back-end, using Zend Framework 1,
+PHP and MySQL, and the front-end, using JavaScript and jQuery. I also implemented a payment facility, using PayPal APIs. 
+As the sole member of the team involved in this project, I
+<ul>
+<li>gathered business requirments and turned them into techincal requirements</li>
+<li>orginised meetings with the stakeholders to keep them informed</li>
+<li>conducted demos to make sure the product was meeting the stakeholders' expectations</li>
+<li>provided support and training on how to use the new admin side of the site.</li>
+<ul>
+I was also involved in the development of a mapping feature in our core product using PostGIS, TinyOWS, Mapnik and React.
+<br/><br/>
+Finally, during my last couple of years at Mediatel, I mentored a Junior Developer on Mediatel products, our coding standards, Zend Framework and general OOPHP."
 - experience:
   role: Technical Consultant
   time: August 2006 - December 2010
