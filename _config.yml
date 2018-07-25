@@ -14,6 +14,8 @@ anchors:
   facebook: &facebook "giulio.troccoli.allard"
   linkedin: &linkedin "giulio-troccoli"
   stackoverflow: &stackoverflow "1366144/giuliot"
+  main_image: &main_image "/assets/images/hero.jpg"
+  teaser_image: &teaser_image "/assets/images/hero500x300.jpg"
 
 minimal_mistakes_skin    : "contrast" # "air", "contrast", "dark", "dirt", "mint", "sunrise"
 github: [metadata]
@@ -24,14 +26,14 @@ title                    : "Little pieces of (non)sense"
 title_separator          : "-"
 name                     : *name
 description              : "Pieces of knowledge gathered during my years of working as a developer."
-url                      : https://troccoli.it # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : http://troccoli.it # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/hero500x300.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+repository               : "troccoli/troccoli.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser                   : *teaser_image # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
+  provider               : "staticman_v2" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -42,24 +44,24 @@ comments:
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
 staticman:
-  allowedFields          : # ['name', 'email', 'url', 'message']
-  branch                 : # "master"
-  commitMessage          : # "New comment."
-  filename               : # comment-{@timestamp}
-  format                 : # "yml"
-  moderation             : # true
-  path                   : # "/_data/comments/{options.slug}" (default)
-  requiredFields         : # ['name', 'email', 'message']
+  allowedFields: ["name", "email", "url", "message"]
+  branch: "master"
+  commitMessage: "New comment"
+  filename: "comment-{@timestamp}"
+  format: "yaml"
+  moderation: true
+  path: "_data/comments/{options.slug}"
+  requiredFields: ["name", "email", "message"]
   transforms:
-    email                : # "md5"
+    email: md5
   generatedFields:
     date:
-      type               : # "date"
+      type: "date"
       options:
-        format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+        format: "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 reCaptcha:
-  siteKey                :
-  secret                 :
+  siteKey: "6LdMB0QUAAAAAP-4knv3ZhEZ5MH5hlh3k770ef1W"
+  secret: "oHdy1lIgtXru0ioJ5j9AteVudzmhPyY8maOsN8cM1OtDUkYY4iSWMStc1fxUsYztBY7yWx3Erjg+Z5xhv5MBXTCJgAQCM8NXf0hgTKDsnOB2y0jwf3RAiMYQeolxEOuT5n7TuodR3SNI+3LKyaY6LPLuMWINpo66e+5RdU4Iezs="
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
@@ -77,7 +79,7 @@ facebook:
   username               : *facebook
   app_id                 :
   publisher              :
-og_image                 : /assets/images/hero.jpg # Open Graph/Twitter default site image
+og_image                 : *main_image # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -96,7 +98,7 @@ analytics:
 author:
   name             : *name
   avatar           : /assets/images/gravatar.jpeg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Britalian, Olympic Drummer, a bit of a geek (just a bit)"
+  bio              : "Britalian, Olympic Drummer, mad baker and a bit of a geek (just a bit)"
   location         : "London, UK"
   email            : *email
   uri              :
@@ -251,9 +253,10 @@ compress_html:
 resume:
   # Site Settings
   title: My Resume
-  url: 'http://webjeda.com'
+  url: 'http://troccoli.it/resume/'
   baseurl: '/resume' #change it according to your repository name
 
+  pdf: "troccoli-allard-resume.pdf"
   # Enable one of these styles by removing #. Style will be applied only after restarting the build or serve.
   #style: styles-2
   #style: styles-3
@@ -263,14 +266,22 @@ resume:
 
   #Profile information
   name: *name
-  tagline: Lead Backend Developer
+  tagline: Senior Backend Developer
   pic: gravatar.jpeg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
-  summary: 'I have been a developer for more than 20 years, with the last 8 using PHP and specialising in web technologies.
-  in a LAMP/LEMP environment. I have used ZF1 and most recently Laravel and Lumen, which are my preferred choices.
-  I have built product from scratch as well as maintained and enhanced existing ones.
-  <br/><br/>
-  I would like to move towards a more leading position, to take a step-back for development and where I would be able
-  to also mentor more junior developers.'
+  summary: "I have been working as a developer for 20 years. I started as a C developer and did that for more than 10 years.
+  I then realised my future as a C developer was limited to legacy code. So I decided to move into Web Development and got a CoHE in
+  Web Design Technologies, just to make sure I got the basics right.
+<br/><br/>
+During my almost 8 years as a Web Developer I learned a lot, about coding standards, Design Patterns, DRY and SOLID, agile and scrum,
+DB optimisation, UI and UX, TDD and BDD, and much more.
+<br/><br/>
+I'm passionate about writing clean, clear, documented, testable (and tested) code. I particularly enjoy refactoring legacy code.
+It's quite satisfactory to see the transformation of a set of unstructured and tangled code into a beautifully clean and well-organised
+collection of code.
+<br/><br/>
+I also like mentoring more junior developers. It's very gratifying to help someone to become a better developer.
+<br/><br/>
+I am available from October 2018."
 
   #sidebar links
   email: *email
@@ -302,9 +313,11 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
+      header:
+        image: *main_image
   # _pages
   - scope:
       path: ""

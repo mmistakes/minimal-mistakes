@@ -61,29 +61,29 @@ comments:
   #   type: "comment"
 
   # Name of the site. Used in notification emails.
-  # name: "Your Site"
+  name: "Little pieces of (non)sense"
 
   # Notification settings. When enabled, users can choose to receive notifications
   # via email when someone adds a reply or a new comment. This requires an account
   # with Mailgun, which you can get for free at http://mailgun.com.
-  # notifications:
+  notifications:
     # Enable notifications
-    # enabled: true
+    enabled: true
 
     # (!) ENCRYPTED
     #
     # Mailgun API key
-    # apiKey: ""
+    apiKey: "O4g5BafRZWvYA40L4Ag9ACqBBDiTU1LaHpeVhee8EgBHBP01nmbqLo85pl3HexjZA59yttsprH6l4Q9wT+OTQPOWJOMaWV7+4xj1wGzpI3YqVrg5hesC0P5ARK5smHa5dBSnn9FBKo5DQJ19uXdBFdLW5zupjFruXgqQi0XexJ0="
 
     # (!) ENCRYPTED
     #
     # Mailgun domain (encrypted)
-    # domain: ""
+    domain: "WtpAEsHFaPptwv+vVuebvZWpG18Y+yO34fxdISyj13M9tcDaDyyIqnuUgzUQ+MsQ3g40RdMDFp5M2lhqRVkwwUYxZwQcd6zn4HNpgN8IC0HvO+L0Db1H7m+msgWMF6rAa0tWtXXVM/bhFe9UiELhtmCaJv2bZI28vjnUon5zOa8="
 
   # (*) REQUIRED
   #
   # Destination path (directory) for the data files. Accepts placeholders.
-  path: "docs/_data/comments/{options.slug}" # "/_data/comments/{options.slug}" (default)
+  path: "_data/comments/{options.slug}"
 
   # Names of required files. If any of these isn't in the request or is empty,
   # an error will be thrown.
@@ -98,7 +98,7 @@ comments:
   # Register your domain at https://www.google.com/recaptcha/ and choose reCAPTCHA V2
   reCaptcha:
     enabled: true
-    siteKey: "6LdRBykTAAAAAFB46MnIu6ixuxwu9W1ihFF8G60Q"
+    siteKey: "6LdMB0QUAAAAAP-4knv3ZhEZ5MH5hlh3k770ef1W"
     # Encrypt reCaptcha secret key using Staticman /encrypt endpoint
     # For more information, https://staticman.net/docs/encryption
-    secret: "PznnZGu3P6eTHRPLORniSq+J61YEf+A9zmColXDM5icqF49gbunH51B8+h+i2IvewpuxtA9TFoK68TuhUp/X3YKmmqhXasegHYabY50fqF9nJh9npWNhvITdkQHeaOqnFXUIwxfiEeUt49Yoa2waRR7a5LdRAP3SVM8hz0KIBT4="
+    secret: "oHdy1lIgtXru0ioJ5j9AteVudzmhPyY8maOsN8cM1OtDUkYY4iSWMStc1fxUsYztBY7yWx3Erjg+Z5xhv5MBXTCJgAQCM8NXf0hgTKDsnOB2y0jwf3RAiMYQeolxEOuT5n7TuodR3SNI+3LKyaY6LPLuMWINpo66e+5RdU4Iezs="
