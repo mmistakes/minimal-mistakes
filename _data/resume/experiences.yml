@@ -6,7 +6,7 @@
 Although that prospect did not materialise, in that capacity, I
 <ul>
 <li>worked on rewriting the website using Laravel 5.5, gathering requirements, writing tests and code, preparing for demos, etc.</li>
-<li>setup up CI and CD, using GitLab and Envoyer</li>
+<li>setup CI and CD, using GitLab and Envoyer</li>
 <li>built RESTful APIs to support a SPA</li>
 <li>supported the front-end developer</li>
 <li>setup a development site in AWS</li>
