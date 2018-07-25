@@ -34,7 +34,7 @@ gallery:
   
   "_Antibiotic susceptibility testing (AST) is usually carried out to determine which antibiotic will be most successful in treating a bacterial infection in vivo. Small wafers containing antibiotics are placed onto a plate upon which bacteria are growing. If the bacteria are sensitive to the antibiotic, a clear ring, or zone of inhibition, is seen around the wafer indicating poor growth. The results of the test are reported on the antibiogram._"[^WIKI_AST]
 
-  In the disk diffusion test[^WIKI_DDT], the zones sizes are usually measured by an human nowadays. This process take time. But a faster method can quickly select the best treatment to a new bacteria type in case of emergency. Professor Marcelino Andrade[^LATTES_MARC] and his student Luan Costa saw this problem and developed a solution in MATALB. Processing taken pictures of wafers with bacterias and antibiotics they could print a report where the antibiotics were ranked. They wanted to build a 
+  In the disk diffusion test[^WIKI_DDT], the zones sizes are usually measured by an human nowadays. This process take time. But a faster method can quickly select the best treatment to a new bacteria type in case of emergency. Professor Marcelino Andrade[^LATTES_MARC] and his student Luan Costa saw this problem and developed a solution in MATALB. Processing pictures taken of wafers with bacterias and antibiotics they could print a report where the antibiotics were ranked. They wanted to build a 
 
 
 
