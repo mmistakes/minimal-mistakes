@@ -1,15 +1,26 @@
 # Local development
 
-In the project root directory run the following command to generate the site
+The site needs to be built and served by a web browser. To do them at the same time
+use the following command, in the root of your project:
+
+```bash
+bundle exec jekyll serve
+```
+
+This command will also watch for changes in the site and rebuild it automatically.
+
+If you prefer not to use the server provided by Jekyll you need to first build the site
+with
 
 ```bash
 bundle exec jekyll build
 ```
 
-If you would like the site to be regenerated automatically with every change then add the ```--watch``` option
-
-Don't forget to run a web server to serve your site. You can use the PHP built-in one with the following command
+And then use a web server to serve the site, like for example the PHP built-in one
 
 ```bash
 php -S localhost:8080 -t _site
 ```
+
+P.S. For some reason using the PHP built-in server does nto work well when rebulding the
+site because of some style changes. I would recommend using Jekyll to serve the site.
