@@ -11,5 +11,5 @@ If you would like the site to be regenerated automatically with every change the
 Don't forget to run a web server to serve your site. You can use the PHP built-in one with the following command
 
 ```bash
-php -S localhost:8080 _site/index.html
+php -S localhost:8080 -t _site
 ```
