@@ -253,7 +253,7 @@ compress_html:
 resume:
   # Site Settings
   title: My Resume
-  url: 'http://webjeda.com'
+  url: 'http://troccoli.it/resume/'
   baseurl: '/resume' #change it according to your repository name
 
   pdf: "troccoli-allard-resume.pdf"

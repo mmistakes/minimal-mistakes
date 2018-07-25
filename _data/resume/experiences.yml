@@ -3,7 +3,7 @@
   time: April 2017 - August 2018
   company: London Review of Books, London
   details: "I was hired to lead a team of developers (initially just me and a front-end developer) for a digital transformation project.
-Although that prospect did not materialise, in that capacity, I
+Although that prospect did not materialise, in that capacity, I:
 <ul>
 <li>worked on rewriting the website using Laravel 5.5, gathering requirements, writing tests and code, preparing for demos, etc.</li>
 <li>setup CI and CD, using GitLab and Envoyer</li>
@@ -21,7 +21,7 @@ Although that prospect did not materialise, in that capacity, I
   time: January 2016 - December 2016
   company: City A.M., London
   details: "I was part of a small but tight web team (three developers and one designer).
-  The web team was mainly responsible for the in-house CMS and the website. During my time here I
+  The web team was mainly responsible for the in-house CMS and the website. During my time here I:
   <ul>
 <li>oversaw the upgrading of the site and the CMS from Laravel 4.2 to Laravel 5.2</li>
 <li>worked alongside the designer to rebrand the site</li>
@@ -36,7 +36,7 @@ My daily work involved using GIT for branching and merging and Jira for tickets 
   The loader used an XML configuration file to define what, and sometime how, to import.
 I was also responsible for the development of their new Events website. This involved building both the back-end, using Zend Framework 1,
 PHP and MySQL, and the front-end, using JavaScript and jQuery. I also implemented a payment facility, using PayPal APIs. 
-As the sole member of the team involved in this project, I
+As the sole member of the team involved in this project, I:
 <ul>
 <li>gathered business requirements and turned them into technical requirements</li>
 <li>organised meetings with the stakeholders to keep them informed</li>
