@@ -100,7 +100,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Veronica Yan"
+  name             : 
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Data Science/ Analysis Project"
   location         : 
