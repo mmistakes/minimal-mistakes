@@ -6,11 +6,14 @@ toc: true
 ---
 
 
-I am **Alen Alex**.  
+I am **Alen Joseph Alex**. (I like to be called as _Alen_).  
+
+![Alen Alex](/assets/images/ajalex_avatar.jpg)  
+
 I am a software developer at **Microsoft**.  
 
 
-I started my career in _2011_, and have been having fun since ;).
+I have worked at various companies since _2011_, and been having a lot of fun ;).
 
 Here is a look at my career.
 
@@ -37,18 +40,18 @@ I am part of _Supply Chain Engineering_ which is part of _Core Service Engineeri
 Well, life is more than just career. More about _me_:
 
 * **Music**  
-I've been into _music_ since my childhood. Having born into a family where everyone has some bit of _music_ in their life one way or other.  
-Every one in my Mother's family sings well, and my Father writes songs/poems.  
-Both my Sisters sing well.  
-And, as for me, I'm into _Musical Instruments_.
-I am majorly a keyboardist. I have also put my hand into Guitar and Drums, but I'm no expert at either.  
-_Rythums_ excite me. Be it _drums_, or any sort of _percussion_. I enjoy beating rythm on the _table_, or on _myself_ or _anywhere_ that makes sound.  
+I've been into _music_ since my childhood. Having born into a family where everyone has some bit of _music_ in their life one way or another.  
+And, as for me, I'm into _Musical Instruments_.  
+I am majorly a keyboardist.  
+I started playing keyboard for the church choir in my 4th standard.  
+I have also put my hand into Guitar and Drums, but I'm no expert at either.  
+_Rythums_ excite me. Be it _drums_, or any sort of _percussion instruments_. I enjoy beating rythm on the _table_, or on _myself_ or _anywhere_ that makes sound.  
 I am part of a _Gospel Band_ named _[Deo Gratias](https://www.facebook.com/DeoGratiasband/)_. 
 
 ----------------------------------
 
 * **Photography**  
-I've liked _photography_ from my school time, although I didn't have a _camera_ back then. I would get my friends' camera and take pics anytime I got a chance. I was the man behind the _camera_ for many of the short films that we did while I was at college.  
+I've liked _photography_ from my school time, although I didn't have a _camera_ back then. I would get my friends' camera and take pics anytime I got a chance. I was the man behind the _camera_ for many of the short films that we did while at college.  
 I now have a _Canon 700 D_ to play around with.  
 I have uploaded a few of my pics here at [500px](https://500px.com/alenalex114).
 
@@ -59,4 +62,4 @@ I have a few repos at Github, one of which is this blogpost. You could find them
 
 ----------------------------------
 
-You could also follow me at [facebook](https://www.facebook.com/alenjalex) (I'm not an active facebook user, by the way), [LinkedIn](https://www.linkedin.com/in/alenalex/) and [Twitter](twitter.com/alenjalex).
+You can also follow me at [facebook](https://www.facebook.com/alenjalex) (I'm not an active facebook user, by the way), [LinkedIn](https://www.linkedin.com/in/alenalex/) and [Twitter](twitter.com/alenjalex). You could also get to me through my [email](mailto:alen.alex@outlook.com)
