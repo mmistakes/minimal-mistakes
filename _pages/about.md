@@ -8,7 +8,10 @@ toc: true
 
 I am **Alen Joseph Alex**. (I like to be called as _Alen_).  
 
-![Alen Alex]({{ /assets/images/ajalex_avatar.jpg | absolute_url }})  
+<p align="left">
+<img src="{{ "/assets/images/ajalex_avatar.jpg"  | absolute_url }}" alt="Alen Alex" align="middle"/>
+</p>
+
 
 I am a software developer at **Microsoft**.  
 
