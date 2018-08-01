@@ -55,7 +55,7 @@ I am part of a _Gospel Band_ named _[Deo Gratias](https://www.facebook.com/DeoGr
 
 * **Photography**  
 I've liked _photography_ from my school time, although I didn't have a _camera_ back then. I would get my friends' camera and take pics anytime I got a chance. I was the man behind the _camera_ for many of the short films that we did while at college.  
-I now have a _Canon 700 D_ to play around with.  
+I now have a _Canon EOS 700 D_ to play around with.  
 I have uploaded a few of my pics here at [500px](https://500px.com/alenalex114).
 
 ---------------------------------
