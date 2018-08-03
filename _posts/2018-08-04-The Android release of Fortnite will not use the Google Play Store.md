@@ -1,0 +1,14 @@
+---
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+title: The Android release of Fortnite will not use the Google Play Store
+date: August 04, 2018 at 01:06AM
+categories: Tech News
+---
+<img class="align-center" src="%20http://ifttt.com/images/no_image_card.png">
+<p>Following its release on nearly every other major platform, Fortnite is finally arriving on Android. However, those hoping to download it through Google's app storefront are in for a surprise: the game will use its own dedicated launcher that must be downloaded directly from Epic's website.</p><p>In a [frequently asked questions session with Eurogamer](https://www.eurogamer.net/articles/digitalfoundry-2018-fortnite-on-android-doesnt-use-google-play-confirmed), Epic's TIm Sweeney provides a few reasons as to why the massively popular free-to-play online multiplayer shooter is forgoing distribution on the https://alternativeto.net/software/android-market/. One of the first reasons Sweeney mentions is that Epic believes "gamers will benefit from competition among software sources on Android."</p><p>In addition to this, Sweeney confirms that, if Epic had this same option for release on iOS, they would have forgone releasing on the https://alternativeto.net/software/app-store/ as well. Sweeney states, when prompted about this method posing a security risk for those that may be deceived by a malicious installer masking itself as Fortnite, stated that users "should look carefully at the source of software [they are] installing, and only install software from sources [they] trust."</p><p>Sweeney goes on to state that this move is motivated by Epic's desire to foster "a direct relationship with [its] customers on all platforms where that's possible." He also admits that the 30% store tax imposed not only in the Google Play Store, but also on storefronts such as the iOS App Store, Nintendo eShop, PlayStation Store, https://alternativeto.net/software/steam/, and the Xbox Store, is one that Epic will avoid whenever possible. This explains why Fortnite isn't available on storefronts such as Steam or the https://alternativeto.net/software/mac-app-store/.</p><p>A release date has not been confirmed, however, sites such as [XDA Developers](https://www.xda-developers.com/fortnite-mobile-on-android-google-play-store/) and [9to5Google](https://9to5google.com/2018/07/26/source-fortnite-for-android-note-9-release-date/) are stating a rumor that the game will be formally revealed at Samsung's August 9th Galaxy Unpacked presentation as a 30-day timed exclusive for the yet-to-be-revealed Galaxy Note 9.</p>
+
+<a class="btn btn--info" href="https://alternativeto.net/news/2018/8/the-android-release-of-fortnite-will-not-use-the-google-play-store">View Complete Article</a>
