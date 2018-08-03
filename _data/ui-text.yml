@@ -109,7 +109,7 @@ fr: &DEFAULT_FR
   toc_label                  : "Sur cette page"
   ext_link_label             : "Lien direct"
   less_than                  : "moins de"
-  minute_read                : "minute de lecture"
+  minute_read                : "minute(s) de lecture"
   share_on_label             : "Partager sur"
   meta_label                 :
   tags_label                 : "Tags :"
@@ -137,6 +137,9 @@ fr: &DEFAULT_FR
   comment_success_msg        : "Merci pour votre commentaire, il sera visible sur le site une fois approuvé."
   comment_error_msg          : "Désolé, une erreur est survenue lors de la soumission. Vérifiez que les champs obligatoires ont été remplis et réessayez."
   loading_label              : "Chargement..."
+  search_placeholder_text    : "Entrez votre recherche..."
+  results_found              : "Aucun résultat trouvé"
+  back_to_top                : "Retour en haut"
 fr-FR:
   <<: *DEFAULT_FR
 fr-BE:
