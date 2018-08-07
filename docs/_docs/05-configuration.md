@@ -376,7 +376,7 @@ comments:
       options:
         format       : "iso8601"
   moderation         : true
-  path               : "/_data/comments/{options.slug}" (default)
+  path               : "_data/comments/{options.slug}"
   requiredFields     : ["name", "email", "message"]
   transforms:
     email            : md5
