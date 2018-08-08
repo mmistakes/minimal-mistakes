@@ -2,10 +2,9 @@
 
 ### Enhancements
 
-* Add missing French localized UI text strings. [#1769](https://github.com/mmistakes/minimal-mistakes/pull/1769)
+* Add missing French localized UI text strings. [#1769](https://github.com/mmistakes/minimal-mistakes/pull/1769) [#1741](https://github.com/mmistakes/minimal-mistakes/pull/1741)
 * Update Font Awesome to version [`5.2.0`](https://github.com/FortAwesome/Font-Awesome/blob/master/CHANGELOG.md). [#1754](https://github.com/mmistakes/minimal-mistakes/pull/1754)
 * Add documentation note to update root `Gemfile` when forking theme.
-* Add missing French translations. [#1741](https://github.com/mmistakes/minimal-mistakes/pull/1741)
 
 ### Bug Fixes
 
