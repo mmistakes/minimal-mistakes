@@ -30,7 +30,7 @@ feature_row:
   - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
     title: "Placeholder 3"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
-last_modified_at: 2018-03-20T16:00:09-04:00
+last_modified_at: 2018-06-11T07:56:49-04:00
 toc: true
 toc_label: "Helpers"
 toc_icon: "cogs"
@@ -134,15 +134,16 @@ Designed to compliment the [`splash`]({{ "/docs/layouts/#splash-page-layout" | r
 
 To add a feature row containing three content blocks with text and image, add the following YAML Front Matter
 
-| Name           | Required     | Description | Default |
-| ----           | -----------  | ----------- | ------- |
-| **image_path** | **Required** | Full path to image eg: `/assets/images/filename.jpg`. Use absolute URLS for those hosted externally. | |
-| **alt**        | Optional     | Alternate text for image. | |
-| **title**      | Optional     | Content block title. | |
-| **excerpt**    | Optional     | Content block excerpt text. Markdown is allowed. | |
-| **url**        | Optional     | URL that the button should link to. | |
-| **btn_label**  | Optional     | Button text label. | `more_label` in UI Text data file. |
-| **btn_class**  | Optional     | Button style. See [utility classes]({{ "/docs/utility-classes/#buttons" | relative_url }}) for options. | `btn` |
+| Name              | Required     | Description | Default |
+| ----              | -----------  | ----------- | ------- |
+| **image_path**    | **Required** | Full path to image eg: `/assets/images/filename.jpg`. Use absolute URLS for those hosted externally. | |
+| **image_caption** | Optional     | Caption for image, Markdown is supported eg: `"Image from [Unsplash](https://unsplash.com)" | |
+| **alt**           | Optional     | Alternate text for image. | |
+| **title**         | Optional     | Content block title. | |
+| **excerpt**       | Optional     | Content block excerpt text. Markdown is allowed. | |
+| **url**           | Optional     | URL that the button should link to. | |
+| **btn_label**     | Optional     | Button text label. | `more_label` in UI Text data file. |
+| **btn_class**     | Optional     | Button style. See [utility classes]({{ "/docs/utility-classes/#buttons" | relative_url }}) for options. | `btn` |
 
 ```yaml
 feature_row:
@@ -240,6 +241,7 @@ Add `toc: true` to the YAML Front Matter of any post or page.
 | **toc**     | Optional | Show table of contents. (boolean) | `false` |
 | **toc_label** | Optional | Table of contents title. (string) | `toc_label` in UI Text data file. |
 | **toc_icon**  | Optional | Table of contents icon, displays before the title. (string) | [Font Awesome](https://fontawesome.com/icons?d=gallery&s=solid&m=free) <i class="fas fa-file-alt"></i> **file-alt** icon. Other FA icons can be used instead. |
+| **toc_sticky** | Optional | Stick table of contents to top of screen. | `false` |
 
 **TOC example with custom title and icon**
 

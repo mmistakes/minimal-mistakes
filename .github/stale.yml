@@ -6,7 +6,6 @@ daysUntilClose: 7
 exemptLabels:
   - "Status: Accepted"
   - "Status: Under Consideration"
-  - "Status: Review Needed"
 # Label to use when marking an issue as stale
 staleLabel: "Status: Stale"
 # Comment to post when marking an issue as stale. Set to `false` to disable

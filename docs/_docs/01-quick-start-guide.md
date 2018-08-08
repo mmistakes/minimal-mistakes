@@ -2,7 +2,7 @@
 title: "Quick-Start Guide"
 permalink: /docs/quick-start-guide/
 excerpt: "How to quickly install and setup Minimal Mistakes for use with GitHub Pages."
-last_modified_at: 2018-03-20T15:58:49-04:00
+last_modified_at: 2018-07-19T11:31:38-04:00
 redirect_from:
   - /theme-setup/
 toc: true
@@ -95,6 +95,9 @@ If you forked or downloaded the `minimal-mistakes-jekyll` repo you can safely re
 - `README.md`
 - `screenshot-layouts.png`
 - `screenshot.png`
+
+**Note:** If forking the theme be sure to update `Gemfile` as well. The one found at the root of the project is for building the theme's Ruby gem and is missing dependencies. To properly setup a [`Gemfile`](https://github.com/mmistakes/minimal-mistakes/blob/master/docs/Gemfile) with the theme, consult the "[Install Dependencies](https://mmistakes.github.io/minimal-mistakes/docs/installation/#install-dependencies)" section.
+{: .notice--warning}
 
 ## Setup Your Site
 

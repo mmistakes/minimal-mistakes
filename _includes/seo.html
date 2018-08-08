@@ -4,9 +4,7 @@
 {%- endif -%}
 {%- assign seo_url = seo_url | default: site.github.url -%}
 
-{% if site.title_separator %}
-  {% assign title_separator = site.title_separator | default: '-' | replace: '|', '&#124;' %}
-{% endif %}
+{% assign title_separator = site.title_separator | default: '-' | replace: '|', '&#124;' %}
 
 {%- if page.title -%}
   {%- assign seo_title = page.title | append: " " | append: title_separator | append: " " | append: site.title -%}
@@ -160,7 +158,7 @@
 {% if site.yandex_site_verification %}
   <meta name="yandex-verification" content="{{ site.yandex_site_verification }}">
 {% endif %}
-{% if site.naver-site-verification %}
-  <meta name="naver-site-verification" content="{{ site.naver-site-verification }}">
+{% if site.naver_site_verification %}
+  <meta name="naver-site-verification" content="{{ site.naver_site_verification }}">
 {% endif %}
 <!-- end _includes/seo.html -->

@@ -9,7 +9,7 @@
   {% endfor %}
 {% else %}
   <script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
-  <script src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 {% endif %}
 
 {% if site.search == true or page.layout == "search" %}
@@ -17,6 +17,8 @@
   {%- case search_provider -%}
     {%- when "lunr" -%}
       {% include search/lunr-search-scripts.html %}
+    {%- when "google" -%}
+      {% include search/google-search-scripts.html %}
     {%- when "algolia" -%}
       {% include search/algolia-search-scripts.html %}
   {%- endcase -%}
