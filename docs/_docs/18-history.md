@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-08-09T09:24:46-04:00
+last_modified_at: 2018-08-09T15:46:33-04:00
 toc: true
 ---
 
@@ -12,6 +12,10 @@ toc: true
 
 ### Enhancements
 
+* Improve side navigation spacing in relation to masthead.
+* Style archive links with appropriate link color.
+* Adjust feature row spacing and font-sizes.
+* Use sentence case and increase font-sizes for improved readability in table of contents.
 * Add `{{ content }}` to `home` layout. [#1775](https://github.com/mmistakes/minimal-mistakes/pull/1775)
 
 ## [4.12.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.12.1)

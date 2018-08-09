@@ -2,6 +2,10 @@
 
 ### Enhancements
 
+* Improve side navigation spacing in relation to masthead.
+* Style archive links with appropriate link color.
+* Adjust feature row spacing and font-sizes.
+* Use sentence case and increase font-sizes for improved readability in table of contents.
 * Add `{{ content }}` to `home` layout. [#1775](https://github.com/mmistakes/minimal-mistakes/pull/1775)
 
 ## [4.12.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.12.1)
