@@ -4,9 +4,15 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-08-07T23:04:58-04:00
+last_modified_at: 2018-08-09T09:24:46-04:00
 toc: true
 ---
+
+## Unreleased
+
+### Enhancements
+
+* Add `{{ content }}` to `home` layout. [#1775](https://github.com/mmistakes/minimal-mistakes/pull/1775)
 
 ## [4.12.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.12.1)
 

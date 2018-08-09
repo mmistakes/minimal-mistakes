@@ -1,3 +1,9 @@
+## Unreleased
+
+### Enhancements
+
+* Add `{{ content }}` to `home` layout. [#1775](https://github.com/mmistakes/minimal-mistakes/pull/1775)
+
 ## [4.12.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.12.1)
 
 ### Enhancements
