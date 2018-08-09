@@ -1,0 +1,14 @@
+---
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+title: Discord implementing a store into its client, Nitro users get access to games
+date: August 10, 2018 at 02:31AM
+categories: Tech News
+---
+<img class="align-center" src="%20http://ifttt.com/images/no_image_card.png">
+<p>Discord users will soon be able to not only talk about games with the app, but buy, launch, and play them, too.</p><p>According to [Discord's announcement of its official in-app store](https://blog.discordapp.com/the-discord-store-beta-9a35596fdd4), 50,000 Canadian Discord users will be the first to beta test the new feature. The initial lineup of games that will be purchasable from Discord directly include:<br/>- https://alternativeto.net/software/dead-cells/<br/>- https://alternativeto.net/software/frostpunk/<br/>- Omensight<br/>- Into the Breach<br/>- https://alternativeto.net/software/spellforce/ 3<br/>- The Banner Saga 3<br/>- https://alternativeto.net/software/pillars-of-eternity/ II: Deadfire<br/>- https://alternativeto.net/software/hollow-knight/<br/>- Moonlighter<br/>- This is the Police 2<br/>- https://alternativeto.net/software/starbound/</p><p>On top of games being offered on a storefront, subscribers to https://alternativeto.net/software/discord-app/'s Nitro service will now have access to games with their subscription. At launch, these games include:<br/>- Saints Row: The Third – The Full Package and Saints Row IV – Game of the Century Edition from the https://alternativeto.net/software/saints-row-series-/ series<br/>- Metro: Last Light Redux<br/>- Lost Horizon<br/>- https://alternativeto.net/software/darksiders-series-/: Warmastered Edition<br/>- Darksiders II: Deathinitive Edition<br/>- https://alternativeto.net/software/kathy-rain/<br/>- Gonner<br/>- https://alternativeto.net/software/kingdom-new-lands/<br/>- https://alternativeto.net/software/system-shock/<br/>- https://alternativeto.net/software/super-meat-boy/<br/>- https://alternativeto.net/software/bridge-constructor/</p><p>In addition to being able to purchase, download, and launch games from Discord directly, the game-centric messaging, voice, and video chat app will also be able to scan users' computers for other video game storefronts and games, allowing users to launch the game directly from Discord regardless of what storefront it was purchased from. Discord will automatically launch both the storefront's client and the game.</p><p>These features do not have a final launch date, and Discord noted that "...things may change by the time we’re ready to launch. What you see today will likely not be what you see in the future."</p>
+
+<a class="btn btn--info" href="https://alternativeto.net/news/2018/8/discord-implementing-a-store-into-its-client-nitro-users-get-access-to-games">View Complete Article</a>
