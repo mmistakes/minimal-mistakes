@@ -8,8 +8,6 @@
 
 .sidebar {
   @include clearfix();
-  margin-bottom: 1em;
-
   @include breakpoint(max-width $large) {
     /* fix z-index order of follow links */
     position: relative;
@@ -31,15 +29,20 @@
 
     &.sticky {
       overflow-y: auto;
-      /* calculate height of nav list */
-      height: calc(
-        100vh - 90px - 2em
-      ); // viewport height - approx. masthead height - main content top margin
+      /* calculate height of nav list
+         viewport height - nav height - masthead x-padding
+      */
+      height: calc(100vh - #{$nav-height} - 2em);
     }
   }
 
   @include breakpoint($x-large) {
     width: calc(#{$right-sidebar-width} - 1em);
+  }
+
+  > * {
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 
   h2,

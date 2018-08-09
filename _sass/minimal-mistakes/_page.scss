@@ -5,7 +5,6 @@
 #main {
   @include clearfix;
   margin-left: auto;
-  margin-top: 2em;
   margin-right: auto;
   padding-left: 1em;
   padding-right: 1em;
@@ -34,6 +33,7 @@
 
   .page__inner-wrap {
     float: left;
+    margin-top: 1em;
     margin-left: 0;
     margin-right: 0;
     width: 100%;
