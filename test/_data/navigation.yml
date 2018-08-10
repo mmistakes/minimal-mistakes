@@ -8,6 +8,12 @@ main:
     url: /collection-archive/
   - title: "Sitemap"
     url: /sitemap/
+  - title: "Extra Menu Item 1"
+    url: /
+  - title: "Extra Menu Item 2"
+    url: /
+  - title: "Extra Menu Item Long Title"
+    url: /
 
 # sidebar navigation list sample
 sidebar-sample:
