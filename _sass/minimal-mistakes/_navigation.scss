@@ -200,8 +200,9 @@
   }
 
   &__toggle {
-    -ms-flex-item-align: stretch;
-    align-self: stretch;
+    -ms-flex-item-align: center;
+    align-self: center;
+    height: $nav-toggle-height;
     border: 0;
     outline: none;
     color: #fff;
