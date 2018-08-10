@@ -1,24 +1,27 @@
 # taherbs.github.io
 
-Personal site/blog files.
+Personal website/blog repo.
 
 ## Run locally
 
-Assuming development on a Unix-based OS - first, install RVM. Then:
+### Prequisites
+* Docker
+* Docker-compose
+* Make
 
+### Command
 ```bash
-$ gem install bundler
+# Run the website
+$ make start
 
-# for nokogiri successful install
-$ export CC=/usr/bin/gcc
+# Stop the website
+$ make stop
 
-$ bundle install
-```
+# Refresh the website
+$ make refresh
 
-Once above is complete, can run locally:
-
-```bash
-$ jekyll serve -H 0.0.0.0 --drafts
+# Show logs
+$ make logs
 ```
 
 Navigate in browser to `http://<IP>:4000/` to view files, including draft files.
@@ -26,4 +29,4 @@ Navigate in browser to `http://<IP>:4000/` to view files, including draft files.
 ## Push to github.io
 
 Simply commit your code, then `git push origin master`, wait a few minutes, and then
-visit the Blog URL: https://jekhokie.github.io.
+visit the Blog URL: https://taherbs.github.io.

@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  ### jekyll Container ###
+  jekyll:
+    image: jekyll/jekyll
+    container_name: jekyll_taherbs
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./:/srv/jekyll
+    command: ["/bin/sh", "-c", "jekyll serve"] 
