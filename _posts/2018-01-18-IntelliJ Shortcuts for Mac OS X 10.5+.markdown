@@ -59,6 +59,7 @@ Navigation
 - Next / previous location: ⌥ ⌘ ← / ⌥ ⌘ →
 
 Various
+- View call hierarchy: ⌃ ⌥ H
 - Dictionary of actions or options: ⇧ ⌘ A
 - Toggle the terminal tool window visibility: ⌥ F12
 - Preferences: ⌘ ,
