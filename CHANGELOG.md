@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+* Update Staticman commit message to include commentor's name.
 * Improve side navigation spacing in relation to masthead.
 * Style archive links with appropriate link color.
 * Adjust feature row spacing and font-sizes.

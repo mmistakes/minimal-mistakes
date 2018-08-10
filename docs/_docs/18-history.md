@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-08-09T15:46:33-04:00
+last_modified_at: 2018-08-10T08:03:53-04:00
 toc: true
 ---
 
@@ -12,6 +12,7 @@ toc: true
 
 ### Enhancements
 
+* Update Staticman commit message to include commentor's name.
 * Improve side navigation spacing in relation to masthead.
 * Style archive links with appropriate link color.
 * Adjust feature row spacing and font-sizes.

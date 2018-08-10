@@ -367,7 +367,7 @@ Default settings have been provided in [`staticman.yml`](https://github.com/mmis
 comments:
   allowedFields      : ["name", "email", "url", "message"]
   branch             : "master"
-  commitMessage      : "New comment"
+  commitMessage      : "New comment by {fields.name}"
   filename           : "comment-{@timestamp}"
   format             : "yaml"
   generatedFields:
@@ -410,7 +410,7 @@ comments:
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
   branch                 : "master"
-  commitMessage          : "New comment."
+  commitMessage          : "New comment by {fields.name}"
   filename               : comment-{@timestamp}
   format                 : "yml"
   moderation             : true
