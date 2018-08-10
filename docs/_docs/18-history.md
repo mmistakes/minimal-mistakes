@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-08-10T08:03:53-04:00
+last_modified_at: 2018-08-10T08:59:14-04:00
 toc: true
 ---
 
@@ -12,6 +12,7 @@ toc: true
 
 ### Enhancements
 
+* Add `.emoji` class to author sidebar to normalize image sizes. [#1780](https://github.com/mmistakes/minimal-mistakes/pull/1780)
 * Update Staticman commit message to include commentor's name.
 * Improve side navigation spacing in relation to masthead.
 * Style archive links with appropriate link color.
