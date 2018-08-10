@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Lear, Experiment and Do"
+title                    : "Learn, Experiment and Do"
 title_separator          : "-"
 name                     : "Med Taher Ben Salem/taherbs"
-description              : "This is my amazing webside"
+description              : "This is my webside"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
