@@ -72,5 +72,9 @@ task :preview do
     # You pressed Ctrl-C, oh my!
   end
 
+  task :build do
+    system "env LANG=\"en_US.UTF-8\" bundle exec jekyll build"
+  end
+
   Jekyll::Commands::Serve.process(options)
 end
