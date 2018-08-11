@@ -1,12 +1,9 @@
+# Makefile to automate the container roll-up
 APP_SERVICE_NAME="jekyll_taherbs"
-
-.PHONY: build
-build:
-	docker-compose -f docker-compose.yml build -d
 
 .PHONY: start
 start:
-	docker-compose -f docker-compose.yml up
+	docker-compose -f docker-compose.yml up -d
 
 .PHONY: stop
 stop:
