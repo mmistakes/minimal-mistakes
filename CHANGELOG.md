@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+* Use relative links for masthead navigation menu items when possible. [#1784](https://github.com/mmistakes/minimal-mistakes/pull/1784)
 * Add `.emoji` class to author sidebar to normalize image sizes. [#1780](https://github.com/mmistakes/minimal-mistakes/pull/1780)
 * Update Staticman commit message to include commentor's name.
 * Improve side navigation spacing in relation to masthead.
