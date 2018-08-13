@@ -527,7 +527,7 @@ Here comes the interesting part. Since we can't apply the `clip-path`s altogethe
 <p data-height="265" data-theme-id="0" data-slug-hash="vpYbPP" data-default-tab="result" data-user="andresangelini" data-embed-version="2" data-pen-title="Clipping SVG elements with complex shapes" class="codepen">See the Pen <a href="https://codepen.io/andresangelini/pen/vpYbPP/">Clipping SVG elements with complex shapes</a> by Andrés Angelini (<a href="https://codepen.io/andresangelini">@andresangelini</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async="async" src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
-First, we apply our first `clip-path` on a simple `<rect>`, like we've been doing so far, and then wrap it up in a `<symbol>` because we don't want it to be seen. Of course, we add an `id` attribute to this `<symbol>` so that we can reference to it. Please note that this differs from what you see in the pen example because in that case, we do want to display each stage. If we were to display it, we would see what we see in [figure 1][comlpex clip-path pen].
+First, we apply our first `clip-path` on a simple `<rect>`, like we've been doing so far, and then wrap it up in a `<symbol>` because we don't want it to be seen. Of course, we add an `id` attribute to this `<symbol>` so that we can reference to it. Please note that this differs from what you see in the pen example because in that case, we do want to display each stage. If we were to display it, we would see what we see in [figure 1][complex clip-path pen].
 
 ```xml
 ...
@@ -578,7 +578,14 @@ It should look like [figure 4][pattern on a complex clipped element] of this new
 <p data-height="265" data-theme-id="0" data-slug-hash="dJozLp" data-default-tab="result" data-user="andresangelini" data-embed-version="2" data-pen-title="Applying an SVG pattern on a clipped complex shape" class="codepen">See the Pen <a href="https://codepen.io/andresangelini/pen/dJozLp/">Applying an SVG pattern on a clipped complex shape</a> by Andrés Angelini (<a href="https://codepen.io/andresangelini">@andresangelini</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async="async" src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
+Now we can do the same with the metal plaque where the title goes. But let's recap how its structure is and what we need to do here first.
 
+The plaque is made with two peaces of fixed sixe on each side and one center piece, which is what actually need to strech. That is what we have just done the wooden pattern of the board. We onlu need to change a few things.
+
+```xml
+...
+
+```
 
 
 
