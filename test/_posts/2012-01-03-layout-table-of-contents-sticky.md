@@ -1,5 +1,5 @@
 ---
-title: "Layout: Post with Sticky Table Of Contents"
+title: "Layout: Post with Sticky Table of Contents"
 tags:
   - table of contents
 toc: true
