@@ -540,16 +540,23 @@
   }
 
   li ul > li a {
-    padding-left: 1.75rem;
+    padding-left: 1.5rem;
     font-weight: normal;
   }
 
-  /* hide sub sub links on small screens*/
-  li > ul li {
-    display: none;
+  li ul li ul > li a {
+    padding-left: 2rem;
+  }
 
-    @include breakpoint($medium) {
-      display: block;
-    }
+  li ul li ul li ul > li a {
+    padding-left: 2.5rem;
+  }
+
+  li ul li ul li ul li ul > li a {
+    padding-left: 3rem;
+  }
+
+  li ul li ul li ul li ul li ul > li a {
+    padding-left: 3.5rem
   }
 }
