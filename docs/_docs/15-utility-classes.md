@@ -2,10 +2,10 @@
 title: "Utility Classes"
 permalink: /docs/utility-classes/
 excerpt: "CSS classes for aligning text/image, styling buttons and notices, and more."
-last_modified_at: 2018-03-20T16:00:15-04:00
+last_modified_at: 2018-08-15T09:53:10-04:00
 toc: true
 toc_label: "Utility Classes"
-toc_icon: "gears"
+toc_icon: "cogs"
 ---
 
 Using the Kramdown Markdown renderer with Jekyll allows you to add [block](http://kramdown.gettalong.org/quickref.html#block-attributes) and [inline attributes](http://kramdown.gettalong.org/quickref.html#inline-attributes). This is nice if you want to add custom styling to text and image, and still write in Markdown.
