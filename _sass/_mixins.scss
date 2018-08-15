@@ -1,0 +1,120 @@
+// UTILS ====================================
+
+@mixin clearfix () {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin tab-focus () {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+// MEDIA QUERIES (MQ) ====================================
+
+// MQ - HELPERS ------------------
+@function breakpoint-next ($name, $breakpoints, $breakpoint-names: map-keys($breakpoints)) {
+  $n: index($breakpoint-names, $name);
+  @return if($n < length($breakpoint-names), nth($breakpoint-names, $n + 1), null);
+}
+
+@function breakpoint-min ($name, $breakpoints) {
+  $min: map-get($breakpoints, $name);
+  @return if($min != 0, $min, null);
+}
+
+@function breakpoint-max ($name, $breakpoints) {
+  $next: breakpoint-next($name, $breakpoints);
+  @return if($next, breakpoint-min($next, $breakpoints) - 1px, null);
+}
+
+// MQ - EXPOSED ------------------
+@mixin mq-up ($name, $breakpoints: $mq-breakpoints) {
+  $min: breakpoint-min($name, $breakpoints);
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin mq-down ($name, $breakpoints: $mq-breakpoints) {
+  $max: breakpoint-max($name, $breakpoints);
+  @if $max {
+    @media (max-width: $max) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin mq-only ($name, $breakpoints: $mq-breakpoints) {
+  @include mq-up ($name, $breakpoints) {
+    @include mq-down ($name, $breakpoints) {
+      @content;
+    }
+  }
+}
+
+// Makes the @content apply between the min and max breakpoints
+@mixin mq-between ($lower, $upper, $breakpoints: $mq-breakpoints) {
+  @include mq-up ($lower, $breakpoints) {
+    @include mq-down ($upper, $breakpoints) {
+      @content;
+    }
+  }
+}
+
+// GRID ====================================
+
+@mixin make-container ($max-widths: $container-widths) {
+  @each $breakpoint, $container-width in $max-widths {
+    @include mq-up($breakpoint) {
+      max-width: $container-width;
+    }
+  }
+}
+
+// TEXT ====================================
+
+@mixin make-link ($color, $color-hover, $color-bg) {
+  color: $color;
+  text-shadow: 0.04545em 0 0 $color-bg,
+  0.09091em 0 0 $color-bg,
+  0.13636em 0 0 $color-bg,
+  -0.04545em 0 0 $color-bg,
+  -0.09091em 0 0 $color-bg,
+  -0.13636em 0 0 $color-bg,
+  0 0.04545em 0 $color-bg,
+  0 0.09091em 0 $color-bg,
+  0 -0.04545em 0 $color-bg,
+  0 -0.09091em 0 $color-bg;
+  background-image: linear-gradient($color, $color);
+  background-position: 0 1.10em;
+  background-size: 1px 1px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    color: $color-hover;
+    text-decoration: none;
+    background-image: linear-gradient($color-hover, $color-hover);
+  }
+
+  &:focus {
+    outline: 0;
+    transition: none;
+    text-shadow: none;
+    background: $color;
+    color: $color-bg;
+    text-decoration: none;
+  }
+}

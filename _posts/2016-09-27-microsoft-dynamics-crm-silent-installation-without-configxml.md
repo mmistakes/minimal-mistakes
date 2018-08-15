@@ -1,5 +1,4 @@
 ---
-layout: single
 title: "Microsoft Dynamics CRM silent installation without config.xml"
 description: ""
 category: [Microsoft Dynamics CRM]

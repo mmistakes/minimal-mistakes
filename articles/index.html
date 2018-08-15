@@ -1,0 +1,48 @@
+---
+layout: page
+title: Articles
+subtitle: Stuffs I write about
+desc: Stuffs I write about
+---
+{% if paginator.page == 1 %}
+  {% for post in site.posts limit: 2 %}
+<link rel="prerender" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
+  {% endfor %}
+{% endif %}
+
+<ul class="post-list">
+  {% for post in paginator.posts %}
+  <li class="post">
+    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+      <h4 class="post-title">{{ post.title }}</h4>
+      <time class="post-date" datetime="{{ post.date }}">
+      {% assign d = post.date | date: "%-d" %}
+      {% assign m = post.date | date: "%B" %}
+      {% case m %}
+        {% when 'April' or 'May' or 'June' or 'July' %}{{ m }}
+        {% when 'September' %}Sept.
+        {% else %}{{ post.date | date: "%b" }}.
+        {% endcase %}
+      {% case d %}
+        {% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
+      {{ post.date | date: "%Y" }}
+      </time>
+      <p class="post-desc">{% if post.desc %}{{ post.desc }}{% else %}{{ post.excerpt }}{% endif %}</p>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+<!-- post-list -->
+
+<ol class="pager">
+  {% if paginator.previous_page %}
+  <li class="pager-prev">
+    <a href="{{ paginator.previous_page_path }}">Previous</a>
+  </li>
+  {% endif %}
+  {% if paginator.next_page %}
+  <li class="pager-next">
+    <a href="{{ paginator.next_page_path }}">Next</a>
+  </li>
+  {% endif %}
+</ol>

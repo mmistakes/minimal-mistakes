@@ -1,5 +1,4 @@
 ---
-layout: single
 title: "TelOne Directory Enquiry using PowerShell"
 description: ""
 category: 

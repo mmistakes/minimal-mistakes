@@ -1,0 +1,89 @@
+// COLORS ====================================
+
+// COLORS - INDEX ------------------
+$gray-dark:                 #333;
+$gray:                      #55595c;
+$gray-light:                #818a91;
+$gray-lighter:              #eceeef;
+$gray-lightest:             #fafaf8;
+
+$blue:                      #4072AF;
+$light-blue:                lighten($blue, 45%);
+$dark-blue:                 darken($blue, 20%);
+
+$ligt-yellow:               #fcf8e3;
+
+$red:                       #bd4147;
+
+// COLORS - BRAND ------------------
+$brand-color:               $blue;
+$brand-light-color:         $light-blue;
+$brand-secondary:           $gray-dark;
+$text-muted:                $gray-light;
+
+// GLOBALS  ====================================
+
+$body-bg:                   $gray-lightest;
+$body-color:                $gray-dark;
+
+// GLOBALS - LINKS ------------------
+$link-color:                $brand-color;
+$link-decoration:           none;
+$link-hover-color:          $dark-blue;
+$link-hover-decoration:     underline;
+
+// GLOBALS - SPACERS ------------------
+$spacer:                    1rem;
+$spacer0:                   $spacer/2;
+$spacer1:                   $spacer * 1.5;
+$spacer2:                   $spacer * 2;
+$spacer3:                   $spacer * 2.5;
+$spacer4:                   $spacer * 3;
+
+// GLOBALS - BORDERS ------------------
+$border-width:              1px;
+$border-radius:             .25rem;
+$border-radius-sm:          .2rem;
+$border-radius-lg:          .3rem;
+
+// GLOBALS - FONTS ------------------
+$font-family:               "Lora", sans-serif;
+$font-family-monospace:     Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-heading:              "Lato", serif;
+
+$lh:                        1.5;
+$lh-sm:                     1.1;
+$lh-md:                     1.6;
+
+$fs-root:                   16px;
+$fs:                        1rem;
+$fs-md:                     1.25rem;
+
+$fs-h1:                     1.602em;
+$fs-h2:                     1.424rem;
+$fs-h3:                     1.266rem;
+$fs-h4:                     1.125rem;
+$fs-h5:                     1rem;
+$fs-h6:                     0.889rem;
+
+$fs-md-h1:                  2.441rem;
+$fs-md-h2:                  1.953rem;
+$fs-md-h3:                  1.563rem;
+$fs-md-h4:                  1.25rem;
+$fs-md-h5:                  1rem;
+$fs-md-h6:                  .8rem;
+
+// RESPONSIVE ====================================
+
+$mq-breakpoints: (
+  xs: 0,
+  sm: 480px,
+  md: 768px,
+  lg: 1024px
+);
+
+$container-widths: (
+  sm: 620px,
+  md: 748px
+);
+

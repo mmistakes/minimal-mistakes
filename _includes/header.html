@@ -1,0 +1,23 @@
+<header class="site-header">
+  <p>
+    Mziyabo's Blog
+  </p>
+  <h1 class="site-title">
+    
+    <a href="{{ site.baseurl }}/" title="Home page">
+      <!-- <img class="site-logo" src="{{ site.baseurl }}/assets/img/logo.svg"> -->
+    </a>
+  </h1>
+
+  <nav class="site-nav">
+    {% for link in site.navigation %}
+      {% assign current = nil %}
+      {% if page.url contains link.url %}
+        {% assign current = 'class="current"' %}
+      {% endif %}
+    <a href="{{ link.url | prepend: site.baseurl }}" {{ current }} {% if link.desc %} title="{{ link.desc }}" {% endif %}>{{ link.title }}</a>
+    {% endfor %}
+  </nav>
+
+</header>
+<!-- site-header -->

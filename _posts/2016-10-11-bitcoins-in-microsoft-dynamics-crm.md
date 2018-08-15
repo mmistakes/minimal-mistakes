@@ -1,5 +1,4 @@
 ---
-layout: single
 title: "Bitcoins and blockchains in Microsoft Dynamics CRM"
 description: ""
 category: 

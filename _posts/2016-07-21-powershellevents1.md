@@ -1,5 +1,4 @@
 ---
-layout: single
 title: "PowerShell FileWatcher"
 description: ""
 category: PowerShell

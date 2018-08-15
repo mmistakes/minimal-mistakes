@@ -1,5 +1,4 @@
 ---
-layout: single
 title: "Applying Apache Kafka Integration in Microsoft Dynamics CRM"
 description: ""
 category: Microsoft Dynamics CRM

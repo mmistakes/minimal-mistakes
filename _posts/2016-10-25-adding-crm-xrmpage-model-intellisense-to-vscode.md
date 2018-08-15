@@ -1,5 +1,4 @@
 ---
-layout: single
 title: "Adding Dynamics CRM xrm object model intellisense to VSCode"
 description: ""
 category: 

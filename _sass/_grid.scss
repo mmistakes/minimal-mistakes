@@ -1,0 +1,57 @@
+/* Set up some rules to govern the grid */
+.grid {
+  display: block;
+  clear: both;
+  @include clearfix();
+}
+
+.grid .unit {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+
+/* This ensures the outer gutters are equal to the (doubled) inner gutters. */
+.grid .unit:first-child { padding-left: 20px;  }
+.grid .unit:last-child  { padding-right: 20px; }
+
+/* Nested grids already have padding though, so let's nuke it */
+.unit .unit:first-child { padding-left: 0;  }
+.unit .unit:last-child  { padding-right: 0; }
+.unit .grid:first-child > .unit { padding-top: 0; }
+.unit .grid:last-child > .unit  { padding-bottom: 0; }
+
+/* Let people nuke the gutters/padding completely in a couple of ways */
+.no-gutters .unit,
+.unit.no-gutters {
+  padding: 0 !important;
+}
+
+.grid .whole            { width: 100%; }
+.grid .half             { width: 50%; }
+.grid .one-third        { width: 33.3332%; }
+.grid .two-thirds       { width: 66.6665%; }
+.grid .one-quarter,
+.grid .one-fourth       { width: 25%; }
+.grid .three-quarters,
+.grid .three-fourths,   { width: 75%; }
+.grid .one-fifth,       { width: 20%; }
+.grid .two-fifths,      { width: 40%; }
+.grid .three-fifths,    { width: 60%; }
+.grid .four-fifths,     { width: 80%; }
+.grid .golden-small,    { width: 38.2716%; }
+.grid .golden-large,    { width: 61.7283%; }
+
+@include mq-down (sm) {
+  /* Stack anything that isn't full-width on smaller screens
+     and doesn't provide the no-stacking-on-mobiles class */
+  .grid:not(.no-stacking-on-mobiles) > .unit {
+    width: 100% !important;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .unit .grid .unit {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}

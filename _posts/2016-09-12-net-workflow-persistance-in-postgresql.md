@@ -1,5 +1,4 @@
 ---
-layout: single
 title: ".NET Workflow persistance in PostgreSQL"
 description: ""
 category: 

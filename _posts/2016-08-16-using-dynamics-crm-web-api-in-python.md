@@ -1,5 +1,4 @@
 ---
-layout: single
 title: "Using the Microsoft Dynamics CRM Web API in Python"
 description: ""
 category: [Microsoft Dynamics CRM]

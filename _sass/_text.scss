@@ -1,0 +1,123 @@
+// TEXT ====================================
+
+// TEXT - HEADINGS ------------------
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: $spacer0;
+  font-family: $font-heading;
+  line-height: $lh-sm;
+  color: inherit;
+}
+
+h1 { font-size: $fs-h1; }
+h2 { font-size: $fs-h2; }
+h3 { font-size: $fs-h3; }
+h4 { font-size: $fs-h4; }
+h5 { font-size: $fs-h5; }
+h6 { font-size: $fs-h6; }
+
+@include mq-up(md) {
+  h1 { font-size: $fs-md-h1; }
+  h2 { font-size: $fs-md-h2; }
+  h3 { font-size: $fs-md-h3; }
+  h4 { font-size: $fs-md-h4; }
+  h5 { font-size: $fs-md-h5; }
+  h6 { font-size: $fs-md-h6; }
+}
+
+// TEXT - UTILS ------------------
+.lead {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  p { margin-bottom: 1.5rem; }
+}
+
+.pretty-links {
+  a { @include make-link($link-color, $link-hover-color, $body-bg); }
+}
+
+hr {
+  margin: $spacer 0 $spacer1;
+  border: 0;
+  border-top: 5px solid $brand-light-color;
+}
+
+small,
+.small {
+  font-size: 80%;
+  font-weight: normal;
+}
+
+@include mq-up(md) {
+  .lead { font-size: 1.5rem; }
+}
+
+// TEXT - CODE ------------------
+mark,
+.mark {
+  padding: .2em;
+  background-color: $ligt-yellow;
+}
+
+code, kbd,
+pre, samp {
+  font-family: $font-family-monospace;
+}
+
+code {
+  padding: .2rem .4rem;
+  font-size: 90%;
+  color: $red;
+  background-color: $gray-lightest;
+  border-radius: $border-radius;
+}
+
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 90%;
+  color: $gray-dark;
+
+  code {
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+    border-radius: 0;
+  }
+}
+
+blockquote {
+  margin: $spacer 0 $spacer $spacer;
+  font-size: .85em;
+  line-height: 1.6;
+}
+
+
+@include mq-up(md) {
+  blockquote {
+    margin: $spacer2 0 $spacer2 $spacer2;
+    font-size: .85em;
+    line-height: 1.8;
+  }
+}
+
+.pre-scrollable {
+  max-height: 340px;
+  overflow-y: scroll;
+}
+
+kbd {
+  padding: .2rem .4rem;
+  font-size: 90%;
+  color: #fff;
+  background-color: $gray-dark;
+  border-radius: $border-radius-sm;
+
+  kbd {
+    padding: 0;
+    font-size: 100%;
+    font-weight: bold;
+  }
+}

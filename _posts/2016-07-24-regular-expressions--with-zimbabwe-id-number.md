@@ -1,5 +1,4 @@
 ---
-layout: single
 title: "Regular Expressions- with Zimbabwe Id Number"
 description: ""
 category: Regular Expressions
