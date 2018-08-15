@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-08-13T08:01:34-04:00
+last_modified_at: 2018-08-15T09:41:05-04:00
 toc: true
 ---
 
@@ -12,6 +12,8 @@ toc: true
 
 ### Enhancements
 
+* Update [jekyll-toc](https://github.com/allejo/jekyll-toc) to `v1.0.5`.
+* Support heading levels 1-6 in table of contents with proper indentation styling. [#1782](https://github.com/mmistakes/minimal-mistakes/issues/1782)
 * Use relative links for masthead navigation menu items when possible. [#1784](https://github.com/mmistakes/minimal-mistakes/pull/1784)
 * Add `.emoji` class to author sidebar to normalize image sizes. [#1780](https://github.com/mmistakes/minimal-mistakes/pull/1780)
 * Update Staticman commit message to include commentor's name.
