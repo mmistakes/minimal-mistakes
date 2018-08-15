@@ -34,7 +34,7 @@ Download the files:
 <a href="https://github.com/AdrianHordyk/lbspr/zipball/master" class="fa fa-download"><span> LBSPR R Package </span></a>
 
 ## LBSPR R Shiny App
-<iframe src="http://william-static.bnr.la/shiny/LBSPR/" height="1600px" width="100%" frameBorder="0">
+<iframe src="http://william-static.bnr.la:3838/LBSPR/" height="1600px" width="100%" frameBorder="0">
   Your browser doesn't support iframes
 </iframe>
 
