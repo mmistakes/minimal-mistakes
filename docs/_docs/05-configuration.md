@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-last_modified_at: 2018-03-20T15:59:26-04:00
+last_modified_at: 2018-08-15T09:50:11-04:00
 toc: true
 ---
 
@@ -306,7 +306,7 @@ If you add `comments: false` to a post's YAML Front Matter it will override the 
 `JEKYLL_ENV=production` to [force the environment](http://jekyllrb.com/docs/configuration/#specifying-a-jekyll-environment-at-build-time) to production.
 {: .notice--info}
 
-##### Disqus
+#### Disqus
 
 To use Disqus you'll need to create an account and [shortname](https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-). Once you have both update `_config.yml` to:
 
@@ -317,7 +317,7 @@ comments:
     shortname: "your-disqus-shortname"
 ```
 
-##### Discourse
+#### Discourse
 
 For guidance on how to set up Discourse for embedding comments from a topic on a post page, [consult this guide](https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963).
 
@@ -331,7 +331,7 @@ comments:
 **Note:** Do not include `http://` or `https://` when setting your Discourse `server`. The theme automatically prepends the URL `//`, following a scheme-less pattern.
 {: .notice--info}
 
-##### Facebook Comments
+#### Facebook Comments
 
 To enable Facebook Comments choose how many comments you'd like visible per post and the color scheme of the widget.
 
@@ -344,19 +344,19 @@ comments:
     colorscheme          : # "light" (default), "dark"
 ```
 
-##### Static-Based Comments via Staticman
+#### Static-Based Comments via Staticman
 
 Transform user comments into `_data` files that live inside of your GitHub repository by enabling Staticman.
 
 **Note:** Looking to migrate comments from a WordPress based site? Give [this tool](https://github.com/arthurlacoste/wordpress-comments-jekyll-staticman) a try.
 {: .notice--info}
 
-###### Add Staticman as a Collaborator
+##### Add Staticman as a Collaborator
 
 1. Allow Staticman push access to your GitHub repository by clicking on **Settings**, then the **Collaborators** tab and adding `staticmanapp` as a collaborator.
 2. To accept the pending invitation visit: `https://api.staticman.net/v2/connect/{your GitHub username}/{your repository name}`. Consult the Staticman "[Get Started](https://staticman.net/docs/index.html)" guide for more info.
 
-###### Configure Staticman
+##### Configure Staticman
 
 **Staticman v2**
 
@@ -425,7 +425,7 @@ staticman:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 ```
 
-###### Comment Moderation
+##### Comment Moderation
 
 By default comment moderation is enabled in `staticman.yml`. As new comments are submitted Staticman will send a pull request. Merging these in will approve the comment, close the issue, and automatically rebuild your site (if hosted on GitHub Pages).
 
@@ -436,7 +436,7 @@ To skip this moderation step simply set `moderation: false`.
 
 ![pull-request webhook]({{ "/assets/images/mm-staticman-pr-webhook.jpg" | relative_url }})
 
-###### reCAPTCHA Support (v2 only)
+##### reCAPTCHA Support (v2 only)
 
 To enable Google's reCAPTCHA to aid in spam detection you'll need to:
 
@@ -450,7 +450,7 @@ reCaptcha:
   secret: # "PznnZGu3P6eTHRPLORniSq+J61YEf+A9zmColXDM5icqF49gbunH51B8+h+i2IvewpuxtA9TFoK68TuhUp/X3YKmmqhXasegHYabY50fqF9nJh9npWNhvITdkQHeaOqnFXUIwxfiEeUt49Yoa2waRR7a5LdRAP3SVM8hz0KIBT4="
 ```
 
-##### Other Comment Providers
+#### Other Comment Providers
 
 To use another provider not included with the theme set `provider: "custom"` then add their embed code to `_includes/comments-providers/custom.html`.
 
