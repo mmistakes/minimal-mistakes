@@ -13,4 +13,5 @@ Name | Icon | Description
 [Wordor](http://wordor.strikingly.com/){:target="_blank"} | ![]({{ site.url }}{{ site.baseurl }}/assets/images/works/wordor.png) | English word speller.
 [SoftBox](http://softbox.strikingly.com/){:target="_blank"} | ![]({{ site.url }}{{ site.baseurl }}/assets/images/works/softbox.png) | Use Mac as a soft box.
 [DaysPast](http://dayspast.strikingly.com/){:target="_blank"} | ![]({{ site.url }}{{ site.baseurl }}/assets/images/works/dayspast.png) | Days past notifier.
+[Pica](http://pica.strikingly.com/){:target="_blank"} | ![]({{ site.url }}{{ site.baseurl }}/assets/images/works/pica.png) | A stockbook for your Mac icons.
 
