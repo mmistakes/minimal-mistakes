@@ -580,12 +580,25 @@ It should look like [figure 4][pattern on a complex clipped element] of this new
 
 Now we can do the same with the metal plaque where the title goes. But let's recap how its structure is and what we need to do here first.
 
-The plaque is made with two peaces of fixed sixe on each side and one center piece, which is what actually need to strech. That is what we have just done the wooden pattern of the board. We onlu need to change a few things.
+The plaque is made with two peaces of fixed size on each side and one center piece, which is what actually need to stretch. That is what we have just done with the wooden pattern of the board. We only need to change a few things.
+
+First, we add our basic shapes inside the `defs`.
 
 ```xml
+<defs>
 ...
+  <path id='bs-plaque-side' d='...'/>
+  <rect id='bs-plaque-center' x='0' y='9.16' width='100%' height='35.67'/>
+  <path id='bs-plaque-specular-left' d='...'/>
+  <path id='bs-plaque-specular-right' d='...'/>
+  <path id='bs-plaque-side-shadow' d='...'/>
 
+  <circle id='bs-nail' cx='15.095px' cy='17.831px' r='4.866px'/>
+  <path id='bs-nail-specular' d='...'/>
+</defs>
 ```
+
+Then, we crate the `clip-paths`, also inside the `defs`. Since we define the visible area, we'll just create two of them covering the full length of the plaque and slide one of them slightly to the right and the other slightly to the left.
 
 
 
