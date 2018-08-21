@@ -85,8 +85,14 @@ Die monatlichen Betreuungskosten setzen sich aus 23€ für das Mittagessen und
 einem vom Betreuungzeitraum, Anzahl an Schul- und Kitakindern und
 Bruttojahreseinkommen abhängigen Eigenanteil (4€ - 243€) zusammen.
 
+<!-- {% include outdated.md %} -->
+<!-- Gesetzestext zur Kostenbeiteiligung: http://gesetze.berlin.de/jportal/?quelle=jlink&query=TagEinrKostBetG+BE+Anlage+2&psml=bsbeprod.psml&max=true -->
+
+<!--
 [<i class="fa fa-external-link">&nbsp;&nbsp;</i>Übersichtsseite zum Kostenbeitrag](https://www.berlin.de/sen/jugend/familie-und-kinder/kindertagesbetreuung/kostenbeteiligung/){: .btn .btn--info}
-[<i class="fa fa-download">&nbsp;&nbsp;</i>Kostentabelle zur ergänzenden Betreuung](https://www.berlin.de/sen/jugend/familie-und-kinder/kindertagesbetreuung/kostenbeteiligung/anlagen_2_2a_betreuungsanteil.pdf){: .btn .btn--success}
+-->
+
+[<i class="fa fa-download">&nbsp;&nbsp;</i>Kostentabelle zur ergänzenden Betreuung bis 31.07.2019](https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/jugendamt/fachdienste/leistungsbereich/mdb-01.08.2012_tkbg_anlagen_2_und_2a.pdf){: .btn .btn--success}
 
 Die notwendigen Formulare zur Anmeldung einer ergänzenden Betreuung können Sie
 in unserem Sekretariat abholen oder direkt hier herunterladen und ausfüllen.<br/><br/>
