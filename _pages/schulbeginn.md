@@ -106,7 +106,7 @@ und 54% Schüler haben, die von 13 Erziehern und 24 Lehrkräften betreut werden
 *Stephanie Lehmann, Schulleitung*
 {: .text-right }
 
-[<i class="fa fa-info">&nbsp;&nbsp;</i>Erfahren Sie mehr über JÜL-Klassen]({{'schule/#juel_konzept' | relative_url }}){: .btn}
+[<i class="fa fa-info">&nbsp;&nbsp;</i>Erfahren Sie mehr über JÜL-Klassen]({{'schule/#juel_konzept' | relative_url }}){: .btn .btn--primary}
 
 # <i class="fa fa-file-text-o"></i> Anmeldung der Schulanfänger*innen
 {: #anmeldung}
@@ -138,7 +138,7 @@ Termin zugesendet**.
 
 Bitte vergessen Sie nicht Ihr Kind bei Bedarf zur eFöB anzumelden.
 
-[<i class="fa fa-info">&nbsp;&nbsp;</i>Erfahren Sie mehr über unseren Hort]({{'hortbetreuung' | relative_url }}){: .btn}
+[<i class="fa fa-info">&nbsp;&nbsp;</i>Erfahren Sie mehr über unseren Hort]({{'hortbetreuung' | relative_url }}){: .btn .btn--primary}
 
 Die notwendigen Formulare zur Anmeldung einer ergänzenden Betreuung können Sie
 in unserem Sekretariat abholen oder direkt hier herunterladen und ausfüllen.<br/><br/>
