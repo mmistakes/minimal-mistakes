@@ -17,19 +17,25 @@ sidebar:
 # <i class="fa fa-calendar"></i> Termine rund um die Einschulung
 {: #termine}
 
-{% include outdated.md %}
+<!-- {% include outdated.md %} -->
 
-Die wichtigsten Daten zum Schuljahr 2018/19 in einem Überblick.
+Die wichtigsten Daten zum Schuljahr **2018/19** in einem Überblick.
 
 | Termine |  Veranstaltung |
 |---|---|
-| | Ihr Kind wurde im Zeitraum vom 1. Oktober 2011 bis zum 30. September 2012 geboren? Herzlichen Glückwunsch zu Ihrem baldigen **Schulkind**. |
-| Freitag, 04.10.2017 bis Freitag, 17.10.2017  | [<i class="fa fa-file-text-o">&nbsp;</i>**Anmeldung**](#anmeldung) der Schulanfänger*innen im Sekretariat. |
-|  | **Hospitation:** Sie können in der Schule hospitieren und sich mit den Abläufen vertraut machen. Schnuppern Sie gerne in den Schulalltag einer Klasse hinein. Bitte vereinbaren Sie hierzu einen Termin im Sekretariat.  |
-| Freitag, 13.04.2018 und Samstag, 14.04.2018| Brandwerder-Kinder machen Zirkus, kommen Sie zur Vorstellung! Erwachsene 7€ und Kinder 5€. |
-| Dienstag, 31.07.2018 | Melden Sie Ihr Kind rechtzeitig zur [<i class="fa fa-child">&nbsp;</i>**Hortbetreuung**](#hort) an, so dass Ihr Kind am 01.08.2018 von unserem Hort betreut werden kann.  |
-| Samstag, 25.08.2018 | Endlich! Wir feiern die Einschulung in der Aula |
+| Samstag, 25.08.2018 | Endlich! Wir feiern die Einschulung in der Aula: 9:00 Uhr Klassen A1, A2, A3, 10:30 Uhr Klassen A4, A5, A6 |
 | Montag, 27.08.2018 | Der **erste Schultag.** |
+
+Die wichtigsten Daten zum Schuljahr **2019/20** in einem Überblick.
+
+| Termine |  Veranstaltung |
+|---|---|
+| | Ihr Kind wurde im Zeitraum vom 1. Oktober 2012 bis zum 30. September 2013 geboren? Herzlichen Glückwunsch zu Ihrem baldigen **Schulkind**. |
+| Freitag, 04.10.2018 bis Freitag, 17.10.2018  | [<i class="fa fa-file-text-o">&nbsp;</i>**Anmeldung**](#anmeldung) der Schulanfänger*innen im Sekretariat. |
+|  | **Hospitation:** Sie können in der Schule hospitieren und sich mit den Abläufen vertraut machen. Schnuppern Sie gerne in den Schulalltag einer Klasse hinein. Bitte vereinbaren Sie hierzu einen Termin im Sekretariat.  |
+| Dienstag, 31.07.2019 | Melden Sie Ihr Kind rechtzeitig zur [<i class="fa fa-child">&nbsp;</i>**Hortbetreuung**](#hort) an, so dass Ihr Kind am 01.08.2019 von unserem Hort betreut werden kann.  |
+| Samstag, 10.08.2019 | Endlich! Wir feiern die Einschulung in der Aula |
+| Montag, 12.08.2018 | Der **erste Schultag.** |
 
 {{comment}}<!--
 **TODO**:
@@ -43,6 +49,7 @@ Die wichtigsten Daten zum Schuljahr 2018/19 in einem Überblick.
 | Juni 2017 | **Kennlernnachmittag:** An diesem Nachmittag lernen die Kinder ihre neue Klasse kennen: Mitschüler und Mitschülerinnen, Lehrkraft und Klassenraum – dann ist alles nicht mehr so fremd! Die Eltern erhalten in dieser Zeit alle wichtigen Informationen zum Ablauf der Einschulung und der ersten Schultage. |
 | Dienstag, 31.07.2017 | Letzter Kita-Tag. Melden Sie Ihr Kind rechtzeitig zur **Hortbetreuung** an, so dass Ihr Kind am 1.8.2017 von unserem Hort betreut werden kann.  |
 | Samstag, 09.09.2017 | Endlich! Wir feiern die Einschulung in der Aula: 9:00 Uhr Klasse 1a, 10:30 Uhr Klassen A1, A2, A3 |
+| Freitag, 13.04.2018 und Samstag, 14.04.2018| Brandwerder-Kinder machen Zirkus, kommen Sie zur Vorstellung! Erwachsene 7€ und Kinder 5€. |
 {: .notice--warning}
 -->{{endcomment}}
 
@@ -53,9 +60,9 @@ werden kann - können Sie direkt auf der Seite der [Senatsverwaltung für Bildun
 Jugend und Familie
 ](https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/anmeldung/)
 nachsehen.<br/><br/>
-[<i class="fa fa-download">&nbsp;&nbsp;</i>Flyer zum Schulstart 2018/19](https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/anmeldung/flyer_schulanmeldung_web.pdf){: .btn .btn--success}
-[<i class="fa fa-download">&nbsp;&nbsp;</i>Info zur Anmeldung der Schulanfänger 2018/19](https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/anmeldung/plakat_anmeldung_schulanfaenger_2018_web.pdf){: .btn .btn--success}
-[<i class="fa fa-download">&nbsp;&nbsp;</i>Umfangreiche Informationen zum Schulbeginn 2018/19](https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/schulbeginn_web.pdf){: .btn .btn--success}
+[<i class="fa fa-download">&nbsp;&nbsp;</i>Flyer zum Schulstart 2019/20](https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/anmeldung/flyer_schulanmeldung-web.pdf){: .btn .btn--success}
+[<i class="fa fa-download">&nbsp;&nbsp;</i>Info zur Anmeldung der Schulanfänger 2019/20](https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/anmeldung/plakat_anmeldung_schulanfaenger_web.pdf){: .btn .btn--success}
+[<i class="fa fa-download">&nbsp;&nbsp;</i>Umfangreiche Informationen zum Schulbeginn 2019/20](https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/schulbeginn_web.pdf){: .btn .btn--success}
 {: .notice--info}
 
 ---
@@ -104,9 +111,9 @@ und 54% Schüler haben, die von 13 Erziehern und 24 Lehrkräften betreut werden
 # <i class="fa fa-file-text-o"></i> Anmeldung der Schulanfänger*innen
 {: #anmeldung}
 
-{% include outdated.md %}
+<!-- {% include outdated.md %} -->
 
-In der Zeit vom 4. Oktober bis 17. Oktober 2017 melden Sie ihr
+In der Zeit vom 4. Oktober bis 17. Oktober 2018 melden Sie ihr
 schulpflichtiges Kind in der [für Sie zuständigen
 Grundschule](https://www.bildung.berlin.de/Umkreissuche/) an.
 
