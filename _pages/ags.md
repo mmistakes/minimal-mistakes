@@ -17,6 +17,8 @@ sidebar:
 Arbeitsgemeinschaften (AGs) sind außerunterrichtliche Angebote auf freiwilliger
 Basis. Eine regelmäßige Teilnahme ist Voraussetzung.
 
+{% include outdated.md %}
+
 **Achtung**: Bitte beachten Sie, dass alle hier genannten Daten abweichen
 können. Vor allem die Kursgebühren können sich ändern.
 {: .notice--warning}

@@ -100,6 +100,8 @@ Die individuelle Förderung steht im Mittelpunkt.
 
 ## Ferientermine
 
+{% include outdated.md %}
+
 <table>
   <thead>
     <tr>
