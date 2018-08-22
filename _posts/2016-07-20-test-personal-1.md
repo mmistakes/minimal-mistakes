@@ -1,8 +1,8 @@
 ---
-title: "Test1"
+title: "Test Travel"
 date: 2016-07-20
-tags: [Devops, test1]
-category: Tech
+tags: [Personal, London]
+category: Travel
 excerpt: "test1 page"
 search: true
 ---

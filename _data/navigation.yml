@@ -1,11 +1,21 @@
 # main links
 main:
-  - title: "Tech"
+  - title: "TechStream"
     url: /techstream/
-  - title: "Travel"
+  - title: "TravelStream"
     url: /travelstream/
   - title: "About Me"
     url: /about/
+  - title: Support
+    url: /support.html
+    sublinks:
+      - title: FAQ
+        url: /faq.html
+      - title: Documentation
+        url: /documentation.html
+      - title: separator
+      - title: Customer Support
+        url: /customer-support.html
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
