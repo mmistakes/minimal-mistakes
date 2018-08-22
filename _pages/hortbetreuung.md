@@ -32,6 +32,9 @@ im Unterricht.
 
 # Schließzeiten
 
+<!-- {{% include outdated.md %}} -->
+
+<!--
 | 22.12.2017 - 02.01.2018 | Weihnachtsschließzeit |
 | 05.02.2018 - 09.02.2018 | Winterferien |
 | 05.03.2018 | Schließtag (Studientag der Schule) |
@@ -41,6 +44,8 @@ im Unterricht.
 | 22.05.2018 | Pfingstferien |
 | 05.07.2018 - 16.08.2018 | Sommerferien verminderter Betrieb (3 Wochen Urlaub für ihr Kind) |
 | 17.08.2018 | Schließtag |
+-->
+
 | 22.10.2018 - 02.11.2018 | Oktoberferien |
 | 24.12.2018 - 05.01.2019 | Weihnachtsschließzeit |
 
