@@ -1,0 +1,14 @@
+---
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+title: Valve deploys open-source Proton tool for Linux gaming
+date: August 23, 2018 at 03:26AM
+categories: Tech News
+---
+<img class="align-center" src="%20http://ifttt.com/images/no_image_card.png">
+<p>Valve has just announced and deployed a new piece of open-source software to enable Linux to run games that could only previously run on Windows.</p><p>This compatibility solution for Windows games on Steam not natively compatible with Linux distributions comes eight years after Valve launched its Steam Play cross-purchasing program for users to run compatible games on Windows, macOS, and Linux operating systems without having to pay for them more than once.</p><p>[According to its official announcement](https://steamcommunity.com/games/221410/announcements/detail/1696055855739350561) Valve's push for this new and improved version of Steam Play started two years ago with direct financial and development support of open-source software including as https://alternativeto.net/software/wine/ and https://alternativeto.net/software/dxvk/.</p><p>The open-source software that Valve has announced and is utilizing is called https://alternativeto.net/software/proton-by-valve-software/. Based on Wine, it offers the following improvements to Linux gaming on https://alternativeto.net/software/steam/, according to the official announcement:<br/>- Windows games with no Linux version currently available can now be installed and run directly from the Linux Steam client, complete with native Steamworks and OpenVR support.<br/>- DirectX 11 and 12 implementations are now based on Vulkan, resulting in improved game compatibility and reduced performance impact.<br/>- Fullscreen support has been improved: fullscreen games will be seamlessly stretched to the desired display without interfering with the native monitor resolution or requiring the use of a virtual desktop.<br/>- Improved game controller support: games will automatically recognize all controllers supported by Steam. Expect more out-of-the-box controller compatibility than even the original version of the game.<br/>- Performance for multi-threaded games has been greatly improved compared to vanilla Wine.</p><p>This improved Steam Play is now available for beta testing. Valve did not provide a time table for when the software would launch outside of beta.</p><p>Additional coverage of Valve's announcement:<br/>[Ars Technica](https://arstechnica.com/gaming/2018/08/valves-steam-play-uses-vulkan-to-bring-more-windows-games-to-linux/)<br/>[Engadget](https://www.engadget.com/2018/08/22/steam-play-linux-windows-games-compatible/)<br/>[gHacks](https://www.ghacks.net/2018/08/22/steam-improves-windows-game-support-for-linux/)</p>
+
+<a class="btn btn--info" href="https://alternativeto.net/news/2018/8/valve-deploys-open-source-proton-tool-for-linux-gaming">View Complete Article</a>
