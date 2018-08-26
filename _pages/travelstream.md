@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Travel"
+title: "Travel Stream"
 permalink: /travelstream/
 author_profile: true
 ---

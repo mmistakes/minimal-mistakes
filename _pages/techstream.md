@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Tech"
+title: "Tech Stream"
 permalink: /techstream/
 author_profile: true
 ---
