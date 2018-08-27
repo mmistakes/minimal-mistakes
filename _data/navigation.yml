@@ -1,12 +1,21 @@
 # main links
 main:
-  - title: "TechStream"
+  - title: "Tech Stream"
     url: /techstream/
-  - title: "TravelStream"
+  - title: Support
+    sublinks:
+      - title: FAQ
+        url: /about/
+      - title: Documentation
+        url: /about/
+      - title: separator
+      - title: Customer Support
+        url: /about/
+  - title: "Travel Stream"
     url: /travelstream/
   - title: "About Me"
     url: /about/
-  - title: Support
+  - title: Support2
     sublinks:
       - title: FAQ
         url: /about/
