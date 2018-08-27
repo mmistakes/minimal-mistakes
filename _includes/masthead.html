@@ -11,16 +11,12 @@
                 {% endif %}
                 {% if link.sublinks %}
                     <li class="dropdown {{ class }}">
-                        <a href="{{ site.baseurl }}{{ link.url }}" class="    dropdown-toggle" data-toggle="dropdown" role="button"     aria-haspopup="true" aria-expanded="false">{{ link.title }} <span class="caret"></span></a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }}    <i class="fa fa-caret-down fa-sm" aria-hidden="true"></i><span class="caret"></span></a>
                         <ul class="dropdown-content">
                             {% for sublink in link.sublinks %}
-                                {% if sublink.title == 'separator' %}
-                                    <li role="separator" class="divider"></li>
-                                {% else %}
-                                    <li>
-                                        <a href="{{ site.baseurl }}{{ sublink.url }}">    {{ sublink.title }}</a>
-                                    </li>
-                                {% endif %}
+                                <li>
+                                    <a href="{{ site.baseurl }}{{ sublink.url }}">    {{ sublink.title }}</a>
+                                </li>
                             {% endfor %}
                         </ul>
                     </li>
