@@ -2,33 +2,30 @@
 main:
   - title: "Tech Stream"
     url: /techstream/
+  - title: "Travel Stream"
+    url: /travelstream/
+  - title: "About Me"
+    url: /about/
   - title: Support
     sublinks:
       - title: FAQ
         url: /about/
       - title: Documentation
         url: /about/
-      - title: separator
       - title: Customer Support
         url: /about/
-  - title: "Travel Stream"
-    url: /travelstream/
-  - title: "About Me"
-    url: /about/
-  - title: Support2
-    sublinks:
-      - title: FAQ
-        url: /about/
-      - title: Documentation
-        url: /about/
-      - title: separator
-      - title: Customer Support
-        url: /about/
+
+
+  # TITLE/URL EXAMPLE
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  #
+  # DROP DOWN BUTTON EXAMPLE
+  # - title: Support
+  #   sublinks:
+  #     - title: FAQ
+  #       url: /faq/
+  #     - title: Documentation
+  #       url: /Documentation/
+  #     - title: Customer Support
+  #       url: /Support/
