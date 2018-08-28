@@ -1,13 +1,19 @@
 # main links
 main:
+  - title: "About Me"
+    url: /about/
   - title: "Tech Stream"
     url: /techstream/
   - title: "Travel Stream"
     url: /travelstream/
-  - title: "About Me"
-    url: /about/
-
-
+  - title: Archive
+    sublinks:
+      - title: By Tag
+        url: /tags/
+      - title: By Category
+        url: /categories/
+      - title: By Year
+        url: /year-archive/
   # TITLE/URL EXAMPLE
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
