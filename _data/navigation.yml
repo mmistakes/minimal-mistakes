@@ -6,14 +6,6 @@ main:
     url: /travelstream/
   - title: "About Me"
     url: /about/
-  - title: Support
-    sublinks:
-      - title: FAQ
-        url: /about/
-      - title: Documentation
-        url: /about/
-      - title: Customer Support
-        url: /about/
 
 
   # TITLE/URL EXAMPLE
