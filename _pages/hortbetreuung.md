@@ -32,7 +32,7 @@ im Unterricht.
 
 # Schließzeiten
 
-<!-- {{% include outdated.md %}} -->
+<!-- {% include outdated.md %} -->
 
 <!--
 | 22.12.2017 - 02.01.2018 | Weihnachtsschließzeit |
