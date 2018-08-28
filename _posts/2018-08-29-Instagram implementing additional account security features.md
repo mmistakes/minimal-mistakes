@@ -1,0 +1,14 @@
+---
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+title: Instagram implementing additional account security features
+date: August 29, 2018 at 02:48AM
+categories: Tech News
+---
+<img class="align-center" src="%20http://ifttt.com/images/no_image_card.png">
+<p>The popular photo-focused social network is adding account verification, an "About This Account" feature, and support for third party authentication methods as alternatives to its default text-based two-factor authentication login system.</p><p>In [a blog post detailing these new security features](https://instagram-press.com/blog/2018/08/28/new-tools-to-help-keep-instagram-safe/), Mike Krieger, Instagram's Co-founder and Chief Technical Officer, stated that the social network is aiming to make its users safe and focusing on "stopping bad actors before they cause harm."</p><p>The "About This Account" function will detail statistics such as when the account was created, what country it's located in, username changes from the past year, and advertisements that the account is running. This feature is slated to be implemented "in the coming weeks," with users that have a large amount of followers being able to preview what information will be made publicly available. Worldwide access to the feature is planned to be implemented shortly thereafter.</p><p>In addition, users with a high follower account will be able to request verification, with [an Instagram Help Center page](https://help.instagram.com/854227311295302) describing the process.</p><p>The last announcement made was support for third party authenticator apps such as https://alternativeto.net/software/authy/ and https://alternativeto.net/software/duo-mobile/. Support for these authenticators will allow users to forgo sending a text message with an authentication code to sign in to their https://alternativeto.net/software/instagram/ account on new devices.  This is especially useful if your number on file with Instagram has changed or been stolen. This feature will be available for all Instagram users "in the coming weeks."</p><p>Additional coverage:<br/>[Engadget](https://www.engadget.com/2018/08/28/instagram-popular-account-authenticity/)<br/>[The Verge](https://www.theverge.com/2018/8/28/17791450/instagram-verified-request-verification-status)<br/>[VentureBeat](https://venturebeat.com/2018/08/28/instagram-adds-support-for-third-party-authenticators-to-let-you-bypass-text-based-2fa/)</p>
+
+<a class="btn btn--info" href="https://alternativeto.net/news/2018/8/instagram-implementing-additional-account-security-features">View Complete Article</a>
