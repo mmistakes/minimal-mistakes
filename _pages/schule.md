@@ -242,6 +242,10 @@ Sie bietet an...
 
 Sprechzeiten und Kontaktdaten finden Sie [hier](/kontakt/#sozialberatung).
 
+## Hausordnung
+
+Sie finden die Hausordnung der Grundschule am Brandwerder [hier](/hausordnung/).
+
 ## Kontakt
 
 Unsere Kontaktseite finden Sie [hier](/kontakt/).
