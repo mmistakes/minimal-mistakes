@@ -195,11 +195,9 @@ abgeben).  Bitte legen Sie Arzttermine in die unterrichtsfreie Zeit
 
 ## Beurlaubung vom Unterricht aus wichtigen Gründen
 
-<ol style='list-style: none'>
-<li>
-(1) Schülerinnen und Schüler können im Einzelfall nur aus einem wichtigen Grund
-vom Unterricht beurlaubt werden (§ 46 Abs. 5 Satz 1 SchulG). Von einem
-wichtigen Grund kann insbesondere ausgegangen werden bei
+Schülerinnen und Schüler können im Einzelfall nur aus einem wichtigen Grund
+vom Unterricht beurlaubt werden (<a href="http://gesetze.berlin.de/jportal/?quelle=jlink&query=SchulG+BE+%C2%A7+46&psml=bsbeprod.psml&max=true#P46-A5">§46 Abs. 5 Satz 1 SchulG</a>).
+Von einem wichtigen Grund kann insbesondere ausgegangen werden bei
 <ol style='list-style: none'>
 <li>a) persönlichen Gründen, wie z.B. einem Arztbesuch, der aus darzulegenden
 Gründen nicht in der unterrichtsfreien Zeit stattfinden kann,</li>
@@ -215,12 +213,22 @@ Ferienzeit stattfinden können. Beurlaubungen unmittelbar vor oder nach den
 Ferien sollen nicht genehmigt werden, es sei denn, es handelt sich um einen
 wichtigen und unaufschiebbaren Ausnahmefall. Als ein solcher Ausnahmefall ist
 der vorzeitige Antritt oder die verspätete Rückkehr von einer Urlaubsreise
-nicht anzusehen (vgl. Senatsverwaltung für Bildung, Jugend und Wissenschaft:
+nicht anzusehen.</li>
+</ol>
+
+<small>
+(vgl. Senatsverwaltung für Bildung, Jugend und Wissenschaft:
 „Ausführungsvorschriften über Beurlaubung und Befreiung vom Unterricht, vom 19.
-November 2014, S. 1-2“).</li>
-</ol>
-</li>
-</ol>
+November 2014, S. 1-2“)
+</small>
+
+**Hinweis:**
+Für eine detailierte Darstellung der Rechtsvorschriften können Sie direkt auf
+der Seite der
+[Senatsverwaltung für Bildung, Jugend und Familie](https://www.berlin.de/sen/bildung/schule/rechtsvorschriften/)
+nachsehen.<br/><br/>
+[<i class="fa fa-download">&nbsp;&nbsp;</i>Ausführungsvorschriften über Beurlaubung und Befreiung vom Unterricht (pdf)](https://www.berlin.de/sen/bildung/schule/rechtsvorschriften/mdb-sen-bildung-rechtsvorschriften-av_schulpflicht.pdf){: .btn .btn--success}
+{: .notice--info}
 
 ## Sozialberatung Casablanca
 
