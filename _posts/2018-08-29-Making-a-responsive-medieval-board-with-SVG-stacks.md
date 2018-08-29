@@ -39,4 +39,54 @@ Once decided how the board should look like and how each of its versions will be
 4. Must be cached by the browser.
 5. Must be visually consistant across browsers. Otherwise, it should flag those that are not supported.
 
-With our objectives already laid out, this is a good time to take a break. As I said before, this is a long journey and would better be prepared for it, perhaps with a warm cup of coffee. Your call. ;)
+With a clear set of goals already laid out, let's begin by thinking how we are going to make the board resizeable.
+
+## 1. Making the board resizeable
+
+This is by far the most important feature in order to make the new IU responsive, so to begin with, we need to look carefully at the board design to see how each of its parts should behave.
+
+### Analizying its structure
+
+By inspecting the board carefully, it becomes clear that while there are some pieces that should stretch in one direction or the other, there are other pieces that should remain unchanged and even some that should be tiled. It would be logical then to group them together according to their behaviour:
+
+- Top and bottom sides of the frames should stretch horizontally.
+- Left and right sides of the frames should stretch vertically.
+- Corners should not resize.
+- The area of the frame where the chains are hooked should resize horizontally but should never be shorter that the combined width of the holes.
+- Title plaque should resize horizontally but should have a minimum width.
+- Chains should not resize, but be tiled vertically.
+- Planks should not resize, instead they should be tiled.
+- The shading of the planks should resize horizontally and be tiled vertically.
+
+In total, I ended up with 12 pieces for the bulletin type, and 13 for the sign one, 5 of which are shared by both.
+
+For bulletin:
+
+- Bulletin title plaque.
+- Bulletin corners.
+- Bulletin horizontal sides of the frame.
+- Bulletin holes area.
+- Bulletin corners depth.
+- Bulletin corners shadow.
+- Bulletin holes area shadow.
+- Bulletin planks.
+
+For sign:
+
+- Sign corners.
+- Sign horizontal sides of the frame.
+- Sign holes areas (both top and bottom).
+- Sign corners depth.
+- Sign corners shadow.
+- Sign holes area shadow.
+- Sign planks.
+
+Shared by both:
+
+- Vertical sides of the frames.
+- The depth of the horizontal sides of the frame.
+- The shadow of the horizontal sides of the frame.
+- Top chains.
+- Bottom chains.
+
+Now that we have a deeper understanding of the board's structure, let's talk tackle each problem separately, one at a time.
