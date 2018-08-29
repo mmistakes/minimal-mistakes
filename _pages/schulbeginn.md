@@ -19,13 +19,6 @@ sidebar:
 
 <!-- {% include outdated.md %} -->
 
-Die wichtigsten Daten zum Schuljahr **2018/19** in einem Überblick.
-
-| Termine |  Veranstaltung |
-|---|---|
-| Samstag, 25.08.2018 | Endlich! Wir feiern die Einschulung in der Aula: 9:00 Uhr Klassen A1, A2, A3, 10:30 Uhr Klassen A4, A5, A6 |
-| Montag, 27.08.2018 | Der **erste Schultag.** |
-
 Die wichtigsten Daten zum Schuljahr **2019/20** in einem Überblick.
 
 | Termine |  Veranstaltung |
