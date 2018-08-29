@@ -100,74 +100,17 @@ Die individuelle Förderung steht im Mittelpunkt.
 
 ## Ferientermine
 
-{% include outdated.md %}
+<!-- {% include outdated.md %} -->
 
-<table>
-  <thead>
-    <tr>
-      <th>Schuljahr 2017/18</th>
-      <th>Ferienbeginn</th>
-      <th>Ferienende</th>
-      <th>erster Unterrichtstag</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Unterrichtsfreier Tag</td>
-      <td>Mo, 02.10.2017</td>
-      <td>&nbsp;</td>
-      <td>Mi, 04.10.2017</td>
-    </tr>
-    <tr>
-      <td>Herbstferien</td>
-      <td>Mo, 23.10.2017</td>
-      <td>Fr, 03.11.2017</td>
-      <td>Mo, 06.11.2017&nbsp;</td>
-    </tr>
-    <tr>
-      <td>Weihnachtsferien</td>
-      <td>Do, 21.12.2017</td>
-      <td>Di, 02.01.2018</td>
-      <td>Mi, 03.01.2018</td>
-    </tr>
-    <tr>
-      <td>Winterferien</td>
-      <td>Mo, 05.02.2018</td>
-      <td>Fr, 09.02.2018</td>
-      <td>Mo, 12.02.2018</td>
-    </tr>
-    <tr>
-      <td>Osterferien</td>
-      <td>Mo, 26.03.2018</td>
-      <td>Fr, 06.04.2018</td>
-      <td>Mo, 09.04.2018</td>
-    </tr>
-    <tr>
-      <td>Unterrichtsfreier Tag</td>
-      <td>Mo, 30.04.2018</td>
-      <td>&nbsp;</td>
-      <td>Mi, 02.05.2018</td>
-    </tr>
-    <tr>
-      <td>Unterrichtsfreier Tag</td>
-      <td>Fr, 11.05.2018</td>
-      <td>&nbsp;</td>
-      <td>Mo, 14.05.2018</td>
-    </tr>
-    <tr>
-      <td>Pfingstferien</td>
-      <td>Di, 22.05.2018</td>
-      <td>&nbsp;</td>
-      <td>Mi, 23.05.2018</td>
-    </tr>
-    <tr>
-      <td>Sommerferien</td>
-      <td>Do, 05.07.2018</td>
-      <td>Fr, 17.08.2018</td>
-      <td>Mo, 20.08.2018</td>
-    </tr>
-  </tbody>
-</table>
+| Schuljahr 2018/19     | Ferienbeginn   | Ferienende     | erster Unterrichtstag |
+|-------------------    |--------------  |------------    |-----------------------|
+| Herbstferien          | Mo, 22.10.2018 | Fr, 02.11.2018 | Mo, 05.11.2018        |
+| Weihnachtsferien      | Sa, 22.12.2018 | Sa, 05.01.2019 | Mo, 07.01.2019        |
+| Winterferien          | Mo, 04.02.2019 | Sa, 09.02.2019 | Mo, 11.02.2019        |
+| Osterferien           | Mo, 15.04.2019 | Fr, 26.04.2019 | Mo, 29.04.2019        |
+| Unterrichtsfreier Tag | Fr, 31.05.2019 |                | Mo, 03.06.2019        |
+| Pfingstferien         | Di, 11.06.2019 |                | Mi, 12.06.2019        |
+| Sommerferien          | Do, 20.06.2019 | Fr, 02.08.2019 | Mo, 05.08.2019        |
 
 ## Wichtiges zum Sportunterricht
 
