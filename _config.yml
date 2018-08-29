@@ -9,7 +9,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en"
-title                    : "The Aclhemist's Journal"
+title                    : "The Alchemist's Journal"
 title_separator          : "-"
 name                     : "Andrés Angelini"
 description              : "An artist's journey into the world of coding."
@@ -85,7 +85,7 @@ analytics:
 author:
   name             : "Andrés Angelini"
   avatar           : "https://avatars1.githubusercontent.com/u/29132347?s=400&u=a6c7fb69168e6b34f37bf50d709a5b5b11bc6480&v=4" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "A self proclaimed alchemist in his quest for the right mix of art, code and love in order to make beatiful creations."
+  bio              : "A self proclaimed alchemist in his never-ending quest for the perfect mix of art, code and love in order to make beatiful creations."
   location         : "Montevideo, Uruguay."
   email            :
   uri              :
