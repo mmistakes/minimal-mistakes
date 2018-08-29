@@ -38,3 +38,5 @@ Once decided how the board should look like and how each of its versions will be
 3. Should not require any extra html element. Adding the proper class to any element should be all that is needed.
 4. Must be cached by the browser.
 5. Must be visually consistant across browsers. Otherwise, it should flag those that are not supported.
+
+With our objectives already laid out, this is a good time to take a break. As I said before, this is a long journey and would better be prepared for it, perhaps with a warm cup of coffee. Your call. ;)
