@@ -654,7 +654,7 @@ Now they are ready to `use` anytime you like. The end result should look somethi
 <p data-height="331" data-theme-id="0" data-slug-hash="YOzYxL" data-default-tab="html,result" data-user="andresangelini" data-pen-title="stretching only some areas of an SVG" class="codepen">See the Pen <a href="https://codepen.io/andresangelini/pen/YOzYxL/">stretching only some areas of an SVG</a> by Andrés Angelini (<a href="https://codepen.io/andresangelini">@andresangelini</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-
+This is quite literally the last piece we needed to build the board. Although we haven't finished yet, the rest of our tasks should be somehow trivial.
 
 
 [D.R.Y]: https://en.wikipedia.org/wiki/Don%27t_repeat_yourself
