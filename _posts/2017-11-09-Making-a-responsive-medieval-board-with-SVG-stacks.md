@@ -600,6 +600,61 @@ First, we add our basic shapes inside the `defs`.
 
 Then, we crate the `clip-paths`, also inside the `defs`. Since we define the visible area, we'll just create two of them covering the full length of the plaque and slide one of them slightly to the right and the other slightly to the left.
 
+```xml
+<defs>
+...
+  <clipPath id='cp-plaque-left-side'>
+    <rect x='18' y='0' width='100%' height='100%'/>
+  </clipPath>
+
+  <clipPath id='cp-plaque-right-side'>
+    <rect x='-18' y='0' width='100%' height='100%'/>
+</clipPath>
+</defs>
+```
+
+We are ready now to start building our components. We start off with the nails since they are very easy to make.
+
+```xml
+<defs>
+...
+  <symbol id='c-plaque-nail'>
+    <use href='#bs-nail' class='nail--color-depth' transform='translate(0 2.08)'/>
+    <use href='#bs-nail' class='nail--color-diffuse'/>
+    <use href='#bs-nail-specular' class='nail--color-specular'/>
+  </symbol>
+</defs>
+```
+
+The only thing worth mentioning here is the order we `use` our basic shapes. Just like in HTML, what we add in a line in the editor goes on "top" or closer to our point of view (or Z axis) and thus covering whatever is "below" or behind it, so when building our components we start with the shadow layer, then the depth, followed by the diffuse one and finally the specular one, if present. The plaque center is one more example of this. We will build it in this way as a `group` so that we can `clip` next.
+
+```xml
+<defs>
+  <g id='c-unclipped-plaque-center'>
+    <use href='#bs-plaque-center' class='plaque--color-shadow' transform='translate(0 4.32)'/>
+    <use href='#bs-plaque-center' class='plaque--color-depth' transform='translate(0 2.16)'/>
+    <use href='#bs-plaque-center' class='plaque--color-diffuse'/>
+    <rect x='0' y='9.16' width='100%' height='2.16' class='plaque--color-specular'/>
+  </g>
+</defs>
+```
+
+Finally, we `clip` it in a simple two step process by applying one of our `clip-path`s to an instance of the plaque center and then aplpying the other `clip-path` to that same clipped instance we got as a result, just like we did earlier with bulletin corners.
+
+```xml
+<defs>
+...
+  <use id='c-clipped-plaque-left' href='#c-unclipped-plaque-center' clip-path='url(#cp-plaque-left-side)'/>
+  <use id='clipped-plaque-center' href='#c-clipped-plaque-left' clip-path='url(#cp-plaque-right-side'/>
+</defs>
+```
+
+Now they are ready to `use` anytime you like. The end result should look something like this:
+
+<p data-height="331" data-theme-id="0" data-slug-hash="YOzYxL" data-default-tab="html,result" data-user="andresangelini" data-pen-title="stretching only some areas of an SVG" class="codepen">See the Pen <a href="https://codepen.io/andresangelini/pen/YOzYxL/">stretching only some areas of an SVG</a> by Andrés Angelini (<a href="https://codepen.io/andresangelini">@andresangelini</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+
 
 
 [D.R.Y]: https://en.wikipedia.org/wiki/Don%27t_repeat_yourself
