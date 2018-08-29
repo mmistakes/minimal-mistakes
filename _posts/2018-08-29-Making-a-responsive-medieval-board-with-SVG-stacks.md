@@ -89,4 +89,4 @@ Shared by both:
 - Top chains.
 - Bottom chains.
 
-Now that we have a deeper understanding of the board's structure, we can start tackling each problem individually, one at a time. But first, we should probably take a break, perhaps with a warm cup of coffee. Believe me, we'll probabl need it. ;)
+Now that we have a deeper understanding of the board's structure, we can start tackling each problem individually, one at a time. But first, we should probably take a break, perhaps with a warm cup of coffee. Believe me, we'll probably need it. ;)
