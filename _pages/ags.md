@@ -234,7 +234,7 @@ englische Sätze zu sprechen.
 ## <i class='fa fa-paper-plane'>&nbsp;</i>AG Basteln
 {: #basteln_ag}
 
-{% include figure image_path="/assets/images/ag_werken-basteln-gross.jpg" caption="<small>Förderverein Brandwerder</small>" %}{: .align-left style='max-width: 300px; max-height: 300px' }
+{% include figure image_path="/assets/images/ag_werken-basteln-gross.jpg" alt="Bastel AG" caption="<small>Förderverein Brandwerder</small>" %}{: .align-left style='max-width: 300px; max-height: 300px' }
 Das Basteln fördert nicht nur die Kreativität und Motorik sondern auch die
 Konzentrationsfähigkeit. Die Kinder können mit Hilfe von verschiedenen
 Basteltechniken kleine Kunstwerke aus unterschiedlichen Materialien erstellen.
@@ -257,7 +257,7 @@ unterstützt.
 ## <i class='fa fa-gavel'>&nbsp;</i>AG Werken
 {: #werken_ag}
 
-{% include figure image_path="/assets/images/ag_werken-basteln-gross.jpg" caption="<small>Förderverein Brandwerder</small>" %}{: .align-left style='max-width: 300px; max-height: 300px' }
+{% include figure image_path="/assets/images/ag_werken-basteln-gross.jpg" alt="Werken AG" caption="<small>Förderverein Brandwerder</small>" %}{: .align-left style='max-width: 300px; max-height: 300px' }
 In der Werken-AG lernen die Kinder mit Laubsäge, Holzfeilen, Schleifpapier,
 Hammer, Nägel und Farbe umzugehen. Hierbei werden verschiedene Werkverfahren
 vorgestellt, wie zum Beispiel sägen, bohren, feilen und raspeln, die jeder
@@ -373,7 +373,7 @@ Jede Gruppe hat 30min Unterricht.
 ## <i class="fa">♚&nbsp;</i>AG Schach
 {: #schach_ag}
 
-{% include figure image_path="https://upload.wikimedia.org/wikipedia/commons/e/e6/Chess_bishop_1000.jpg" caption='<small>"[Chess bishop](https://commons.wikimedia.org/wiki/File:Chess_bishop_1000.jpg)" by [Petr Novák](https://commons.wikimedia.org/wiki/User:Che) / [CC BY-SA 2.5](http://creativecommons.org/licenses/by-sa/2.5)</small>' %}{: .align-left style='max-width: 300px; max-height: 300px' }
+{% include figure image_path="https://upload.wikimedia.org/wikipedia/commons/e/e6/Chess_bishop_1000.jpg" alt="Schach AG"  caption='<small>"[Chess bishop](https://commons.wikimedia.org/wiki/File:Chess_bishop_1000.jpg)" by [Petr Novák](https://commons.wikimedia.org/wiki/User:Che) / [CC BY-SA 2.5](http://creativecommons.org/licenses/by-sa/2.5)</small>' %}{: .align-left style='max-width: 300px; max-height: 300px' }
 Schach ist das populärste Brettspiel in Europa und gilt als offizielle Sportart.
 Bei diesem strategischen Brettspiel wird nicht nur das logische Denken und die
 Konzentration gefördert, sondern auch gleichzeitig das Selbstbewusstsein und

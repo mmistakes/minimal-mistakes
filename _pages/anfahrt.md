@@ -15,7 +15,7 @@ author_profile: false
 ## Schulwegplan
 
 <figure>
-  <img src="/assets/images/schulwegplan-cropped.png">
+  <img src="/assets/images/schulwegplan-cropped.png" alt="Schulwegplan">
   <figcaption>{{ '[Schulwegplan (PDF)](/assets/files/05G23-Grundschule_am_Brandwerder.pdf) von CÖGA mbH, [Bild in original Größe](/assets/images/schulwegplan.svg)' | markdownify | remove: "<p>" | remove: "</p>" }}</figcaption>
 </figure>
 
