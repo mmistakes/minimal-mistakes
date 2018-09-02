@@ -7,7 +7,7 @@ before_script:
   - openssl req -x509 -out localhost.crt -keyout localhost.key -newkey rsa:2048 -nodes -sha256 -subj '/CN=localhost' -extensions EXT -config <( printf "[dn]\nCN=localhost\n[req]\ndistinguished_name = dn\n[EXT]\nsubjectAltName=DNS:localhost\nkeyUsage=digitalSignature\nextendedKeyUsage=serverAuth")
 script:
   - bundle exec jekyll serve --ssl-key=./localhost.key --ssl-cert=./localhost.crt --detach
-  - bundle exec htmlproofer ./_site --only-4xx --check-favicon --check_opengraph --check-html --check_img_http --enforce_https
+  - bundle exec htmlproofer ./_site --only-4xx --check-favicon --check_opengraph --check-html --check_img_http # --enforce_https
 after_script:
   - pkill -f jekyll
 env:
