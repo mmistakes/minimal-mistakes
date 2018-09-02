@@ -40,7 +40,7 @@ stellen die Oberschüler*innen ihre Schule vor.
 Unsere Kooperations-Kitas sind die
 [<i class="fa fa-external-link">&nbsp;</i>Kita Zauberschiff](http://kita-nordwest.de/einrichtung_allgemein.php?id=48)
 sowie die
-[<i class="fa fa-external-link">&nbsp;</i>Kita Arche-Noah](http://www.kirchengemeinde-staaken.de/page/1183/kita-arche-noah).
+[<i class="fa fa-external-link">&nbsp;</i>Kita Arche-Noah](https://www.kirchengemeinde-staaken.de/page/1183/kita-arche-noah).
 Gemeinsam mit Ihren Erzieher*innen besuchen die Kinder den Unterricht und sind
 zu den Schulveranstaltungen eingeladen. Gleichzeitig befinden wir uns in engem
 Austausch und sind gerne Gast der Elternversammlungen.

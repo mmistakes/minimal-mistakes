@@ -222,7 +222,7 @@ englische Sätze zu sprechen.
 
 | Kursleiter*in | Wann? | Wo? | Für wen? |
 |---|---|---|---|
-| Frau [<i class='fa fa-globe'>&nbsp;</i>Karen Eumann](http://www.karen-eumann.de) | montags, 13:40 - 14:25 (Stufe I) und <br> 14:35 - 15:20 (Stufe II) | N.N | 1. und 2. Klasse |
+| Frau [<i class='fa fa-globe'>&nbsp;</i>Karen Eumann](https://www.karen-eumann.de) | montags, 13:40 - 14:25 (Stufe I) und <br> 14:35 - 15:20 (Stufe II) | N.N | 1. und 2. Klasse |
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
@@ -243,7 +243,7 @@ Künstler stolz sondern stärkt auch das Selbstbewusstsein. Selbstverständlich
 können die Kinder ihre Werke mit nach Hause nehmen.
 
 Die AG wird vom
-[Förderverein](http://www.foerderverein-brandwerder.de/bastel-ag-der-grundschule-brandwerder)
+[Förderverein](https://www.foerderverein-brandwerder.de/bastel-ag-der-grundschule-brandwerder)
 unterstützt.
 
 | Kursleiter*in | Wann? | Wo? | Für wen? |
@@ -269,7 +269,7 @@ Die fertiggestellten Arbeiten können die Kinder selbstverständlich mit nach
 Hause nehmen.
 
 Die AG wird vom
-[Förderverein](http://www.foerderverein-brandwerder.de/werken-ag-der-grundschule-brandwerder)
+[Förderverein](https://www.foerderverein-brandwerder.de/werken-ag-der-grundschule-brandwerder)
 unterstützt.
 
 | Kursleiter*in | Wann? | Wo? | Für wen? |
@@ -292,7 +292,7 @@ Die fertiggestellten Arbeiten können die Kinder selbstverständlich mit nach
 Hause nehmen.
 
 Die AG wird vom
-[Förderverein](http://www.foerderverein-brandwerder.de/handarbeits-ag-der-grundschule-brandwerder)
+[Förderverein](https://www.foerderverein-brandwerder.de/handarbeits-ag-der-grundschule-brandwerder)
 unterstützt.
 
 | Kursleiter*in | Wann? | Wo? | Für wen? |
@@ -331,7 +331,7 @@ bereitet das gemeinsame Musizieren besonders viel Spaß, vor allem bei den
 Schulaufführungen, bei denen die Kinder ihr Können stolz präsentieren können.
 
 Die AG wird vom
-[Förderverein](http://www.foerderverein-brandwerder.de/floeten-ag-der-grundschule-brandwerder)
+[Förderverein](https://www.foerderverein-brandwerder.de/floeten-ag-der-grundschule-brandwerder)
 unterstützt.
 
 | Kursleiter*in | Wann? | Wo? | Für wen? |
@@ -373,7 +373,7 @@ Jede Gruppe hat 30min Unterricht.
 ## <i class="fa">♚&nbsp;</i>AG Schach
 {: #schach_ag}
 
-{% include figure image_path="https://upload.wikimedia.org/wikipedia/commons/e/e6/Chess_bishop_1000.jpg" alt="Schach AG"  caption='<small>"[Chess bishop](https://commons.wikimedia.org/wiki/File:Chess_bishop_1000.jpg)" by [Petr Novák](https://commons.wikimedia.org/wiki/User:Che) / [CC BY-SA 2.5](http://creativecommons.org/licenses/by-sa/2.5)</small>' %}{: .align-left style='max-width: 300px; max-height: 300px' }
+{% include figure image_path="https://upload.wikimedia.org/wikipedia/commons/e/e6/Chess_bishop_1000.jpg" alt="Schach AG"  caption='<small>"[Chess bishop](https://commons.wikimedia.org/wiki/File:Chess_bishop_1000.jpg)" by [Petr Novák](https://commons.wikimedia.org/wiki/User:Che) / [CC BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/)</small>' %}{: .align-left style='max-width: 300px; max-height: 300px' }
 Schach ist das populärste Brettspiel in Europa und gilt als offizielle Sportart.
 Bei diesem strategischen Brettspiel wird nicht nur das logische Denken und die
 Konzentration gefördert, sondern auch gleichzeitig das Selbstbewusstsein und
@@ -391,7 +391,7 @@ werden, wobei ganz klar der spielerische Aspekt immer im Vordergrund steht.
 Das Schachspiel ist also eine wertvolle Ergänzung zum schulischen Unterricht.
 
 Die AG wird vom
-[Förderverein](http://www.foerderverein-brandwerder.de/schach-ag-der-grundschule-brandwerder)
+[Förderverein](https://www.foerderverein-brandwerder.de/schach-ag-der-grundschule-brandwerder)
 unterstützt.
 
 | Kursleiter*in | Wann? | Wo? | Für wen? |
@@ -444,7 +444,7 @@ ganze Schuljahr hinweg jedes Training wahrnehmen, damit die Aufführung gelingen
 kann.
 
 Die AG wird vom
-[Förderverein](http://www.foerderverein-brandwerder.de/zirkus-ag-der-grundschule-brandwerder)
+[Förderverein](https://www.foerderverein-brandwerder.de/zirkus-ag-der-grundschule-brandwerder)
 unterstützt.
 
 | Kursleiter*in | Wann? | Wo? | Für wen? |
