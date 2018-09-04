@@ -1091,7 +1091,7 @@ ro: &DEFAULT_RO
   menu_label                 : "Comută meniul"
   toc_label                  : "Pe această pagină"
   ext_link_label             : "Link direct"
-  less_than                  : "mai mic decât"
+  less_than                  : "mai puțin de"
   minute_read                : "minute de citit"
   share_on_label             : "Distribuie pe"
   meta_label                 :
