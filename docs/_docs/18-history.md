@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-09-05T15:18:48-04:00
+last_modified_at: 2018-09-05T15:28:14-04:00
 toc: true
 ---
 
@@ -12,6 +12,7 @@ toc: true
 
 ### Bug Fixes
 
+* Fix sidebar navigation list toggle. [#1819](https://github.com/mmistakes/minimal-mistakes/issues/1819)
 * Fix hover animation for links with `:visited` state. [#1820](https://github.com/mmistakes/minimal-mistakes/issues/1820)
 
 ## [4.12.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.12.2)
