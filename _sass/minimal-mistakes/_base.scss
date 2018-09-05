@@ -130,14 +130,13 @@ a {
     @extend %tab-focus;
   }
 
-  &:hover,
-  &:active {
-    color: $link-color-hover;
-    outline: 0;
-  }
-
   &:visited {
     color: $link-color-visited;
+  }
+
+  &:hover {
+    color: $link-color-hover;
+    outline: 0;
   }
 }
 
