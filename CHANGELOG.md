@@ -1,3 +1,9 @@
+## Unreleased
+
+### Bug Fixes
+
+* Fix hover animation for links with `:visited` state. [#1820](https://github.com/mmistakes/minimal-mistakes/issues/1820)
+
 ## [4.12.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.12.2)
 
 ### Enhancements
