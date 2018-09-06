@@ -13,6 +13,7 @@
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+theme_color              : # https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
 
 # Site Settings
 locale                   : "en-US"
