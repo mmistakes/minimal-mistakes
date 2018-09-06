@@ -1,0 +1,14 @@
+---
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+title: Free support for Windows 10 releases extended, paid support for Windows 7 announced
+date: September 07, 2018 at 01:38AM
+categories: Tech News
+---
+<img class="align-center" src="%20http://ifttt.com/images/no_image_card.png">
+<p>Microsoft is extending support for older versions of its flagship Windows operating system up to 30 months for enterprise and education users.</p><p>In [a post on its Microsoft 365 Blog](https://www.microsoft.com/en-us/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/), Corporate Vice President for Office and Windows Marketing Jared Spataro detailed the multiple steps that the company is taking in order to help enterprise users "make the shift to a modern desktop." One of these steps is the announcement of an extended support timeline for Windows 10 and, more interestingly, Windows 7.</p><p>For https://alternativeto.net/software/windows-10/, Microsoft notes that all currently supported versions of the operating system will be supported for 30 months from their release dates for enterprise and education users. This 30 month support window will apply to all future Windows 10 Education and Enterprise updates that are scheduled for a September release. For all Education and Enterprise updates that are scheduled for a March release, as well as all Windows 10 Home, Pro, and https://alternativeto.net/software/microsoft-office-365/ releases, the 18 month support period will be maintained.</p><p>For https://alternativeto.net/software/windows-7/, Spataro announced a paid Windows 7 Extended Security Updates plan that will extend from the currently scheduled free support end date, January 14, 2020, to January 2023. This plan will be sold on a per-device basis, with the price increasing each year. The plan will be available to all Windows 7 Professional and Enterprise users.</p><p>Additional coverage:<br/>[Microsoft 365 Blog](https://www.microsoft.com/en-us/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)<br/>[Ars Technica](https://arstechnica.com/gadgets/2018/09/windows-10-support-extended-again-september-releases-now-get-30-months/)<br/>[gHacks](https://www.ghacks.net/2018/09/06/extended-security-updates-for-windows-7-and-longer-windows-10-servicing/)<br/>[VentureBeat](https://venturebeat.com/2018/09/06/microsoft-extends-windows-10-enterprise-and-education-support-announces-paid-windows-7-security-updates/)</p>
+
+<a class="btn btn--info" href="https://alternativeto.net/news/2018/9/free-support-for-windows-10-releases-extended-paid-extended-support-for-windows-7-announced">View Complete Article</a>
