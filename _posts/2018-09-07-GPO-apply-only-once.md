@@ -15,14 +15,14 @@ So recently i had a new problem. Our new line op laptops didn't have a driver to
 Since not all branch-offices use a port-replicator, the drivers are not included in our basic image when staging a computer.
 For reasons i won't disclose, using SCCM was not an option. So i looked into multiple options.
 
-1. Do a manual installation on the device.
+### 1) Do a manual installation on the device.
 
 Yeah right. I'm not doing that. It's more than 350 computers!
 Having said that, i did wanna know if there were commandline-switches added to the setup.
 Turns out there was, interesting ... . The first thing i did was to test out if i could install it just manually using these switches.
 This seemed to be working really well.
 
-2. Powershell baby!
+### 2) Powershell baby!
 
 After finding out the setup had commandline-switches, i figured i could try to see if a remote installation via Powershell could work.
 Some tinkering  later and i had a script where it would make a remote connection and install the portreplicator software.
@@ -120,7 +120,7 @@ Installing the driver would be as simple as :
 
 I figured this option would be my backup option. I had one more idea...
 
-3. Use a GPO apply once installation method.
+### 3) Use a GPO apply once installation method.
 
 So i have used this in the past. You basically create a **run-once** registry key. This key will be applied on the next boot.
 The idea is to create a scheduled task that will be automatically initiated in the late afternoon. Once this task has done its job, it has to self-delete, Mission Impossible style (no explosions tho).
