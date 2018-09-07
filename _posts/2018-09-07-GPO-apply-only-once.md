@@ -15,14 +15,14 @@ So recently i had a new problem. Our new line op laptops didn't have a driver to
 Since not all branch-offices use a port-replicator, the drivers are not included in our basic image when staging a computer.
 For reasons i won't disclose, using SCCM was not an option. So i looked into multiple options.
 
-### 1) Do a manual installation on the device.
+1. Do a manual installation on the device.
 
 Yeah right. I'm not doing that. It's more than 350 computers!
 Having said that, i did wanna know if there were commandline-switches added to the setup.
 Turns out there was, interesting ... . The first thing i did was to test out if i could install it just manually using these switches.
 This seemed to be working really well.
 
-### 2) Powershell baby!
+2. Powershell baby!
 
 After finding out the setup had commandline-switches, i figured i could try to see if a remote installation via Powershell could work.
 Some tinkering  later and i had a script where it would make a remote connection and install the portreplicator software.
@@ -120,7 +120,7 @@ Installing the driver would be as simple as :
 
 I figured this option would be my backup option. I had one more idea...
 
-### 3) Use a GPO apply once installation method.
+3. Use a GPO apply once installation method.
 
 So i have used this in the past. You basically create a **run-once** registry key. This key will be applied on the next boot.
 The idea is to create a scheduled task that will be automatically initiated in the late afternoon. Once this task has done its job, it has to self-delete, Mission Impossible style (no explosions tho).
@@ -134,7 +134,8 @@ This made it quite confusing on how my quotes should go. It appeared that the re
 
 So after a lot of trials and **errors** (especially those), i got that to work. 
 
-![gpo]({{site.baseurl}}/assets/images/GPOapplyOnce/1.png)
+![gpo]({{site.baseurl}}/assets/images/GPOapplyOnce/1.PNG)
+<span style="font-size:10px;color:gray"Please note that you can right-click on an image an see it in a new tab, this way you see its full format.</span>
 
 Notice that i remoted the spaces in the executables name. This was causing issues and removing them was the fastest solution.
 
@@ -143,20 +144,21 @@ I could have just edited the GPO to not only run once during testing, but what f
 
 So i digged a little deeper into Group Policy. Turns out that when you create a "task" in a GPO, like say copying a file, it creates a XML where it keeps track of all your chosen options.
 
-![gpo]({{site.baseurl}}/assets/images/GPOapplyOnce/2.png)
+![gpo]({{site.baseurl}}/assets/images/GPOapplyOnce/2.PNG)
+<span style="font-size:10px;color:gray"Please note that you can right-click on an image an see it in a new tab, this way you see its full format.</span>
 
 One of those options is called **FilterRunOnce ID**. This idea is stored in the computers registry. More specifically, it is stored over at 
 
-![gpo]({{site.baseurl}}/assets/images/GPOapplyOnce/3.png)
+![gpo]({{site.baseurl}}/assets/images/GPOapplyOnce/3.PNG)
+<span style="font-size:10px;color:gray"Please note that you can right-click on an image an see it in a new tab, this way you see its full format.</span>
 
 By storing this value into the registry, it knows not to apply this part of the group policy again.
 If you were to remove this key, it would get re-applied once more.
 
-![gpo]({{site.baseurl}}/assets/images/GPOapplyOnce/4.png)
+![gpo]({{site.baseurl}}/assets/images/GPOapplyOnce/4.PNG)
+<span style="font-size:10px;color:gray"Please note that you can right-click on an image an see it in a new tab, this way you see its full format.</span>
 
 Knowing this might be useful in later endeavors. This is why i chose to share it here.
 Maybe someone else was wondering how this worked...
 
 Funny how installing a simple driver can lead into more insight of the inner workings of Group Policy :-)
-
-
