@@ -134,7 +134,7 @@ This made it quite confusing on how my quotes should go. It appeared that the re
 
 So after a lot of trials and **errors** (especially those), i got that to work. 
 
-![gpo]({{site.baseurl}}/assets/images/GPOapplyOnce/1.PNG)
+![gpo]({{site.baseurl}}/assets/images/GPOapplyOnce/1.png)
 
 <span style="font-size:10px;color:gray">Please note that you can right-click on an image an see it in a new tab, this way you see its full format.</span>
 
@@ -145,20 +145,20 @@ I could have just edited the GPO to not only run once during testing, but what f
 
 So i digged a little deeper into Group Policy. Turns out that when you create a "task" in a GPO, like say copying a file, it creates a XML where it keeps track of all your chosen options.
 
-![gpo]({{site.baseurl}}/assets/images/GPOapplyOnce/2.PNG)
+![gpo]({{site.baseurl}}/assets/images/GPOapplyOnce/2.png)
 
 <span style="font-size:10px;color:gray">Please note that you can right-click on an image an see it in a new tab, this way you see its full format.</span>
 
 One of those options is called **FilterRunOnce ID**. This idea is stored in the computers registry. More specifically, it is stored over at 
 
-![gpo]({{site.baseurl}}/assets/images/GPOapplyOnce/3.PNG)
+![gpo]({{site.baseurl}}/assets/images/GPOapplyOnce/3.png)
 
 <span style="font-size:10px;color:gray">Please note that you can right-click on an image an see it in a new tab, this way you see its full format.</span>
 
 By storing this value into the registry, it knows not to apply this part of the group policy again.
 If you were to remove this key, it would get re-applied once more.
 
-![gpo]({{site.baseurl}}/assets/images/GPOapplyOnce/4.PNG)
+![gpo]({{site.baseurl}}/assets/images/GPOapplyOnce/4.png)
 
 <span style="font-size:10px;color:gray">Please note that you can right-click on an image an see it in a new tab, this way you see its full format.</span>
 
