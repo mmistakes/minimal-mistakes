@@ -149,7 +149,7 @@ So i digged a little deeper into Group Policy. Turns out that when you create a 
 
 <span style="font-size:10px;color:gray">Please note that you can right-click on an image an see it in a new tab, this way you see its full format.</span>
 
-One of those options is called **FilterRunOnce ID**. This ID is stored in the computers registry. More specifically, it's stored over at 
+One of those options is called **FilterRunOnce ID**. This ID is stored in the computers registry.  
 
 ![gpo]({{site.baseurl}}/assets/images/GPOapplyOnce/3.png)
 
