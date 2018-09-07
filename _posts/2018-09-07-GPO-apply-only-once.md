@@ -7,11 +7,11 @@ published: true
 date: '2018-09-07'
 ---
 
-Every so often you need a Group Policy that will be applied just once.
+Every so often you need a Group Policy (or a part of it) that will be applied just once.
 Set a setting and be done with it. I have used this in the past to deploy a scheduled task or quickly deploy an executable to a few computers.
 These are all examples of situations where you need the GPO to do his thing once and not more than once.
 
-So recently i had a new problem. Our new line op laptops didn't have a driver to use with a port-replicator.
+So recently i had a new problem. Our new models of laptops didn't have a driver to use with a port-replicator.
 Since not all branch-offices use a port-replicator, the drivers are not included in our basic image when staging a computer.
 For reasons i won't disclose, using SCCM was not an option. So i looked into multiple options.
 
@@ -25,7 +25,7 @@ This seemed to be working really well.
 ### 2) Powershell baby!
 
 After finding out the setup had commandline-switches, i figured i could try to see if a remote installation via Powershell could work.
-Some tinkering  later and i had a script where it would make a remote connection and install the portreplicator software.
+I created a script where it would make a remote connection and install the portreplicator software.
 
 ```javascript
 	<#
@@ -138,7 +138,7 @@ So after a lot of trials and **errors** (especially those), i got that to work.
 
 <span style="font-size:10px;color:gray">Please note that you can right-click on an image an see it in a new tab, this way you see its full format.</span>
 
-Notice that i remoted the spaces in the executables name. This was causing issues and removing them was the fastest solution.
+Notice that i removed the spaces in the executables name. This was causing issues and removing them was the fastest solution.
 
 While testing this, i had multiple devices at hand but after a while i ran out of "blank" devices where the GPO did not run on.
 I could have just edited the GPO to not only run once during testing, but what fun would that be?
@@ -149,7 +149,7 @@ So i digged a little deeper into Group Policy. Turns out that when you create a 
 
 <span style="font-size:10px;color:gray">Please note that you can right-click on an image an see it in a new tab, this way you see its full format.</span>
 
-One of those options is called **FilterRunOnce ID**. This idea is stored in the computers registry. More specifically, it is stored over at 
+One of those options is called **FilterRunOnce ID**. This ID is stored in the computers registry. More specifically, it's stored over at 
 
 ![gpo]({{site.baseurl}}/assets/images/GPOapplyOnce/3.png)
 
