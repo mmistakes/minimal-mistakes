@@ -177,6 +177,14 @@
         </li>
       {% endif %}
 
+      {% if author.mastodon %}
+        <li>
+          <a href="{{ author.mastodon }}" itemprop="sameAs">
+            <i class="fab fa-fw fa-mastodon" aria-hidden="true"></i> Mastodon
+          </a>
+        </li>
+      {% endif %}
+
       {% if author.pinterest %}
         <li>
           <a href="https://www.pinterest.com/{{ author.pinterest }}" itemprop="sameAs">
