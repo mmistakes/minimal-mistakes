@@ -70,6 +70,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
+# For specifying social profiles
 og_image                 : "/assets/images/bio-photo.jpg"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
@@ -106,6 +107,8 @@ author:
   instagram        :
   lastfm           :
   linkedin         :
+  mastodon         : # "https://mastodon.instance/@username"
+  mastodon:    
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
