@@ -411,8 +411,9 @@ To overlay text on top of a header image you have a few more options:
 | **overlay_filter**       | Color/opacity to overlay on top of the header image eg: `0.5` or `rgba(255, 0, 0, 0.5)`. |
 | **show_overlay_excerpt** | Display excerpt in the overlay text | true |
 | **excerpt**              | Auto-generated page excerpt is added to the overlay text or can be overridden. | |
-| **cta_label**            | Call to action button text label. | `more_label` in UI Text data file |
-| **cta_url**              | Call to action button URL. | |
+| **actions**              | Call to action button links (`actions` array: `label` and `url`). More than one button link can be assigned. | |
+| **cta_label**            | Deprecated, use `actions` instead. Call to action button text label. | `more_label` in UI Text data file |
+| **cta_url**              | Deprecated, use `actions` instead. Call to action button URL. | |
 
 With this YAML Front Matter:
 
@@ -421,8 +422,9 @@ excerpt: "This post should display a **header with an overlay image**, if the th
 header:
   overlay_image: /assets/images/unsplash-image-1.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-  cta_label: "More Info"
-  cta_url: "https://unsplash.com"
+  actions:
+    - label: "More Info"
+      url: "https://unsplash.com"
 ```
 
 You'd get a header image overlaid with text and a call to action button like this:
@@ -449,8 +451,9 @@ header:
   overlay_image: /assets/images/unsplash-image-1.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-  cta_label: "More Info"
-  cta_url: "https://unsplash.com"
+  actions:
+    - label: "Download"
+      url: "https://github.com"
 ```
 
 Or if you want to do more fancy things, go full rgba:
@@ -463,8 +466,23 @@ header:
   overlay_image: /assets/images/unsplash-image-1.jpg
   overlay_filter: rgba(255, 0, 0, 0.5)
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-  cta_label: "More Info"
-  cta_url: "https://unsplash.com"
+  actions:
+    - label: "Download"
+      url: "https://github.com"
+```
+
+Multiple call to action button links can be assigned like this:
+
+```yaml
+excerpt: "This post should display a **header with an overlay image**, if the theme supports it."
+header:
+  overlay_image: /assets/images/unsplash-image-1.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  actions:
+    - label: "Foo Button"
+      url: "#foo"
+    - label: "Bar Button"
+      url: "#bar"
 ```
 
 ### OpenGraph & Twitter Card Images
