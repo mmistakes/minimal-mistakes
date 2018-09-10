@@ -70,9 +70,6 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-mastodon:
-  username               :
-  instance               :    
 # For specifying social profiles
 og_image                 : "/assets/images/bio-photo.jpg"
 # For specifying social profiles
@@ -110,6 +107,7 @@ author:
   instagram        :
   lastfm           :
   linkedin         :
+  mastodon         : # "https://mastodon.instance/@username"
   mastodon:    
   pinterest        :
   soundcloud       :
