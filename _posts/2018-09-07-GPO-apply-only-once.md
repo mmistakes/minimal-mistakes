@@ -28,94 +28,94 @@ After finding out the setup had commandline-switches, i figured i could try to s
 I created a script where it would make a remote connection and install the portreplicator software.
 
 ```javascript
-	<#
-	.NOTES
-	===========================================================================
-	 Created on:   	21-08-2018 13:17
-	 Created by:   	Stroobants Kristof
-	 Filename:     	Install-USBReplicator.ps1
-	===========================================================================
-	.DESCRIPTION
-	    Perform a remote installation of the USB-Replicator drivers for the HP devices by opening a PS-Session.
+<#
+.NOTES
+===========================================================================
+    Created on:   	21-08-2018 13:17
+    Created by:   	Stroobants Kristof
+    Filename:     	Install-USBReplicator.ps1
+===========================================================================
+.DESCRIPTION
+    Perform a remote installation of the USB-Replicator drivers for the HP devices by opening a PS-Session.
+
+.EXAMPLE
+    If you want to restart the computer after installation, you have to specify it with the -restartcomputer parameter
+    install-USBReplicator -computername XXX -restartcomputer 1
+#>
+$VerbosePreference = "continue"
+Function Install-USBReplicator
+{
+    PARAM (
+        [Parameter(Mandatory = $True, Position = 1)]
+        [string]$computername,
+    
+        [Parameter(Mandatory = $false, Position = 2)]
+        [bool]$RestartComputer
+    )
+
+    TRY
+    {
+        IF (Test-Connection -ComputerName "$ComputerName.domain.com" -Count 3)
+        {
+            TRY
+            {
+                Write-verbose "Start to copy files!"
+                $copy = Copy-Item -Path "\\servername\USBReplicator\sp88800" -Destination "\\$computername.domain.com\c$\windows\temp\" -Recurse -Force -Verbose -PassThru -ErrorAction silentlyContinue
+                Write-Verbose "Let's create a remote session on $computername."
+                IF ($copy)
+                {
+                    $session = New-PSSession "$computername.domain.com"
+                    Invoke-Command -Session $session -ArgumentList $RestartComputer -ScriptBlock {
+                        # THe restart SWITCH-option on the .EXE does not alwyas seem to work. This is why i build in my own parameter.
+                        # By default the installation will start WITH the no-restart option
+                        IF ($args[0])
+                        {
+                            & 'c:\windows\temp\sp88800\HP USB-C Universal Dock Installer.exe' /SP- /VERYSILENT /SUPPRESSMSGBOXES /log="C:\ProgramData\COMPANYNAME\WORKSTATIONMANAGEMENT\LOGS\08_USBPortReplicator.txt"                           
+                        }
+                        ELSE
+                        { 
+                            & 'c:\windows\temp\sp88800\HP USB-C Universal Dock Installer.exe' /SP- /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /log="C:\ProgramData\COMPANYNAME\WORKSTATIONMANAGEMENT\LOGS\08_USBPortReplicator.txt"
+                        }
+
+                    }
+                    Write-Verbose "Trigger the remote session that will start the installation."
+                    Enter-PSSession -Session $session -ErrorAction Stop
+                }
+                # wait 20 seconds, just in case and show some feedback to the user
+                DO
+                {
+                    FOR ($i = 0; $i -lt 20; $i++)
+                    {
+                        Write-host "." -NoNewline -ForegroundColor Yellow
+                        sleep -Seconds 1
+                    }
+                }WHILE ($i -lt 20)
+                ""
+                Write-Verbose "Installation Finished, closing session."
+                Remove-PSSession -Session $session
+                # If EXE has no /norestart switch, it SHOULD always restart after installation, but after testing it became clear this does not always work;
+                # prolly because the invoke-command and it being run in a different session
+                IF ($RestartComputer) {Restart-Computer -ComputerName $computername -Force} 
+            }
+            CATCH
+            {
+                $error[0] | fl * -Force
+            }
+        }
+    }
+    CATCH
+    {
+        $error[0] | fl * -Force
+    }
+}# end function
 	
-	.EXAMPLE
-	    If you want to restart the computer after installation, you have to specify it with the -restartcomputer parameter
-	    install-USBReplicator -computername XXX -restartcomputer 1
-	#>
-	$VerbosePreference = "continue"
-	Function Install-USBReplicator
-	{
-	    PARAM (
-	        [Parameter(Mandatory = $True, Position = 1)]
-	        [string]$computername,
-	    
-	        [Parameter(Mandatory = $false, Position = 2)]
-	        [bool]$RestartComputer
-	    )
-	
-	    TRY
-	    {
-	        IF (Test-Connection -ComputerName "$ComputerName.domain.com" -Count 3)
-	        {
-	            TRY
-	            {
-	                Write-verbose "Start to copy files!"
-	                $copy = Copy-Item -Path "\\servername\USBReplicator\sp88800" -Destination "\\$computername.domain.com\c$\windows\temp\" -Recurse -Force -Verbose -PassThru -ErrorAction silentlyContinue
-	                Write-Verbose "Let's create a remote session on $computername."
-	                IF ($copy)
-	                {
-	                    $session = New-PSSession "$computername.domain.com"
-	                    Invoke-Command -Session $session -ArgumentList $RestartComputer -ScriptBlock {
-	                        # THe restart SWITCH-option on the .EXE does not alwyas seem to work. This is why i build in my own parameter.
-	                        # By default the installation will start WITH the no-restart option
-	                        IF ($args[0])
-	                        {
-	                            & 'c:\windows\temp\sp88800\HP USB-C Universal Dock Installer.exe' /SP- /VERYSILENT /SUPPRESSMSGBOXES /log="C:\ProgramData\COMPANYNAME\WORKSTATIONMANAGEMENT\LOGS\08_USBPortReplicator.txt"                           
-	                        }
-	                        ELSE
-	                        { 
-	                            & 'c:\windows\temp\sp88800\HP USB-C Universal Dock Installer.exe' /SP- /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /log="C:\ProgramData\COMPANYNAME\WORKSTATIONMANAGEMENT\LOGS\08_USBPortReplicator.txt"
-	                        }
-	
-	                    }
-	                    Write-Verbose "Trigger the remote session that will start the installation."
-	                    Enter-PSSession -Session $session -ErrorAction Stop
-	                }
-	                # wait 20 seconds, just in case and show some feedback to the user
-	                DO
-	                {
-	                    FOR ($i = 0; $i -lt 20; $i++)
-	                    {
-	                        Write-host "." -NoNewline -ForegroundColor Yellow
-	                        sleep -Seconds 1
-	                    }
-	                }WHILE ($i -lt 20)
-	                ""
-	                Write-Verbose "Installation Finished, closing session."
-	                Remove-PSSession -Session $session
-	                # If EXE has no /norestart switch, it SHOULD always restart after installation, but after testing it became clear this does not always work;
-	                # prolly because the invoke-command and it being run in a different session
-	                IF ($RestartComputer) {Restart-Computer -ComputerName $computername -Force} 
-	            }
-	            CATCH
-	            {
-	                $error[0] | fl * -Force
-	            }
-	        }
-	    }
-	    CATCH
-	    {
-	        $error[0] | fl * -Force
-	    }
-	}# end function
-	
-	#$pc = read-host "Computername?" 
+#$pc = read-host "Computername?" 
 ```
 
 Installing the driver would be as simple as :
 
 ```javascript
-	Install-USBReplicator -computername $pc -RestartComputer 1
+Install-USBReplicator -computername $pc -RestartComputer 1
 ```
 
 I figured this option would be my backup option. I had one more idea...
