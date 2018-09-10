@@ -1,5 +1,9 @@
 ## Unreleased
 
+### Enhancements
+
+* Add support to [gallery helper](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#gallery) for defining column layout (`half`, `third`, or single `''`). [#1821](https://github.com/mmistakes/minimal-mistakes/issues/1821)
+
 ### Bug Fixes
 
 * Fix sidebar navigation list toggle. [#1819](https://github.com/mmistakes/minimal-mistakes/issues/1819)
