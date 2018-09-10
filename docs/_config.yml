@@ -103,32 +103,19 @@ author:
   avatar           : "/assets/images/michael-rose.jpg"
   bio              : "Just another boring, tattooed, time traveling, designer."
   location         : "Buffalo, NY"
-  email            :
-  uri              : "https://mademistakes.com"
-  home             : "https://mademistakes.com"
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         : *facebook
-  foursquare       :
-  github           : "mmistakes"
-  gitlab           :
-  google_plus      :
-  keybase          :
-  instagram        : "mmistakes"
-  lastfm           :
-  linkedin         :
-  pinterest        :
-  soundcloud       :
-  stackoverflow    : # https://stackoverflow.com/users/123456/username
-  steam            :
-  tumblr           :
-  twitter          : *twitter
-  vine             :
-  weibo            :
-  xing             :
-  youtube          :
+  links:
+    - label: "Made Mistakes"
+      icon: "fas fa-fw fa-link"
+      url: "https://mademistakes.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/mmistakes"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/mmistakes"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/mmistakes"
 
 
 # Reading Files

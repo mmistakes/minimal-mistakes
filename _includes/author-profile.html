@@ -48,6 +48,14 @@
         </li>
       {% endif %}
 
+      {% if author.links %}
+        {% for link in author.links %}
+          {% if link.label and link.url %}
+            <li><a href="{{ link.url }}"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label }}</a></li>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+
       {% if author.uri %}
         <li>
           <a href="{{ author.uri }}" itemprop="url">
