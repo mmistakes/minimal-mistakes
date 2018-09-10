@@ -23,6 +23,7 @@ The English[^yaml-anchors] main keys in [`_data/ui-text.yml`](https://github.com
 - Japanese
 - Nepali (Nepalese)
 - Polish
+- Romanian
 - Russian
 - Slovak
 - Spanish (Español)
