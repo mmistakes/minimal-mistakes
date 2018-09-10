@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+- Add Romanian localized UI text strings. [#1814](https://github.com/mmistakes/minimal-mistakes/pull/1814)
 - Improve author link flexibility. [#1581](https://github.com/mmistakes/minimal-mistakes/issues/1581)
 - Improve footer link flexibility.
 - Deprecate `cta_label` and `cta_url` in header overlay in favor of new `actions` array that allows for multiple "call to action" button links. [#1461](https://github.com/mmistakes/minimal-mistakes/issues/1461)

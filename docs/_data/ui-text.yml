@@ -1080,6 +1080,52 @@ hu: &DEFAULT_HU
 hu-HU:
   <<: *DEFAULT_HU
 
+# Romanian
+# -----------------
+ro: &DEFAULT_RO
+  page                       : "Pagina"
+  pagination_previous        : "Anterior"
+  pagination_next            : "Următor"
+  breadcrumb_home_label      : "Acasă"
+  breadcrumb_separator       : "/"
+  menu_label                 : "Comută meniul"
+  toc_label                  : "Pe această pagină"
+  ext_link_label             : "Link direct"
+  less_than                  : "mai puțin de"
+  minute_read                : "minute de citit"
+  share_on_label             : "Distribuie pe"
+  meta_label                 :
+  tags_label                 : "Etichete:"
+  categories_label           : "Categorii:"
+  date_label                 : "Actualizat:"
+  comments_label             : "Lasă un comentariu"
+  comments_title             : "Comentarii"
+  more_label                 : "Citește mai departe"
+  related_label              : "S-ar putea să-ți placă"
+  follow_label               : "Urmărește:"
+  feed_label                 : "Feed RSS"
+  powered_by                 : "Cu sprijinul"
+  website_label              : "Site"
+  email_label                : "Email"
+  recent_posts               : "Articole recente"
+  undefined_wpm              : "Parametru words_per_minute nedefinit în _config.yml"
+  comment_form_info          : "Adresa ta de email nu va fi făcută publică. Câmpurile marcate sunt obligatorii"
+  comment_form_comment_label : "Comentariu"
+  comment_form_md_info       : "Markdown este suportat."
+  comment_form_name_label    : "Nume"
+  comment_form_email_label   : "Adresă de email"
+  comment_form_website_label : "Site (opțional)"
+  comment_btn_submit         : "Trimite comentariul"
+  comment_btn_submitted      : "Trimis"
+  comment_success_msg        : "Mulțumesc pentru comentariu! Va apărea pe site în momentul în care va fi aprobat."
+  comment_error_msg          : "Scuze, este o problemă cu comentariul tău. Asigură-te că toate câmpurile obligatorii au fost completate și încearcă din nou."
+  loading_label              : "Se încarcă..."
+  search_placeholder_text    : "Caută ceva..."
+  results_found              : "Rezultate găsite"
+  back_to_top                : "Înapoi în susul paginii"
+ro-RO:
+  <<: *DEFAULT_RO
+
 # Another locale
 # --------------
 #
