@@ -38,15 +38,6 @@ toc_icon: "cogs"
 
 You can think of these Jekyll helpers as little shortcuts. Since GitHub Pages doesn't allow most plugins --- [custom tags](https://jekyllrb.com/docs/plugins/#tags) are out. Instead the theme leverages [**includes**](https://jekyllrb.com/docs/templates/#includes) to do something similar.
 
-## Base Path
-
-**Deprecated**. Use `relative_url` filter instead.
-
-Instead of repeating `{% raw %}{{ site.url }}{{ site.baseurl }}{% endraw %}` over and over again to create absolute URLs, you can use `{% raw %}{{ base_path }}{% endraw %}` instead. Simply add `{% raw %}{% include base_path %}{% endraw %}` to layouts, posts, pages, collections, or other includes and you're good to go.
-
-**ProTip:** It's a good practice to use absolute URL paths for assets (especially post images) so they correctly resolve in the site's XML feeds. Example: `{% raw %}{{ "/assets/images/filename.jpg" | relative_url }}{% endraw %}` ~> `https://yourdoamin.com/assets/images/filename.jpg`
-{: .notice--info}
-
 ## Group by Array
 
 [Jekyll Group-By-Array](https://github.com/mushishi78/jekyll-group-by-array) by Max White.

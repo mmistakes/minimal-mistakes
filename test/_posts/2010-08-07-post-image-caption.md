@@ -7,10 +7,8 @@ tags:
   - Post Formats
 ---
 
-{% include base_path %}
-
 {% capture fig_img %}
-![Foo]({{ basepath }}/assets/images/unsplash-gallery-image-3.jpg)
+![Foo]({{ '/assets/images/unsplash-gallery-image-3.jpg' | relative_url }})
 {% endcapture %}
 
 <figure>

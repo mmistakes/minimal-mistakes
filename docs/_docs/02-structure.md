@@ -20,7 +20,6 @@ minimal-mistakes
 |  ├── comments-providers      # snippets for comments (Disqus, Facebook, Google+, and custom)
 |  ├── footer                  # custom snippets to add to site footer
 |  ├── head                    # custom snippets to add to site head
-|  ├── base_path               # site.url + site.baseurl shortcut
 |  ├── feature_row             # feature row helper
 |  ├── gallery                 # image gallery helper
 |  ├── group-by-array          # group by array helper for archives

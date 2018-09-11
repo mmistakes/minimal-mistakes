@@ -1,3 +1,9 @@
+## Unreleased
+
+### Enhancements
+
+- Remove deprecated `base_path` include helper.
+
 ## [4.13.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.13.0)
 
 ### Enhancements

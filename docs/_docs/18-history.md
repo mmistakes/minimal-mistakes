@@ -4,9 +4,15 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-09-10T19:36:45-04:00
+last_modified_at: 2018-09-11T09:58:11-04:00
 toc: true
 ---
+
+## Unreleased
+
+### Enhancements
+
+- Remove deprecated `base_path` include helper.
 
 ## [4.13.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.13.0)
 
