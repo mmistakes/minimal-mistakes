@@ -1,0 +1,7 @@
+_id: f65d4470-b5ac-11e8-a1b7-df997e15fc27
+message: "its problem whith \"iconutil\" and High Sierra.\r\niconutil -c iconset app.icns - has 10 *.png\r\niconutil -c icns app.iconset - open in Preview.app only 8 png\r\nbut if again extract from generated app.icns - 10 png."
+name: Victor
+email: 697e9ec7614d241573209f4755092291
+url: ''
+hidden: ''
+date: '2018-09-11T10:25:11.090Z'
