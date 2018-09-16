@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+- Remove unneeded `HandheldFriendly` and `MobileOptimized` meta tags. [#1837](https://github.com/mmistakes/minimal-mistakes/pull/1837)
 - Update Font Awesome to version `5.3.1`. [#1830](https://github.com/mmistakes/minimal-mistakes/pull/1830)
 - Always load Google 404 Linkhelp script over HTTPS. [#1829](https://github.com/mmistakes/minimal-mistakes/pull/1829)
 - Remove deprecated `base_path` include helper.
