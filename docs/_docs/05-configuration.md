@@ -441,7 +441,7 @@ To skip this moderation step simply set `moderation: false`.
 To enable Google's reCAPTCHA to aid in spam detection you'll need to:
 
 1. Apply for [reCAPTCHA API](https://www.google.com/recaptcha) keys and register your site using the reCAPTCHA V2 type.
-2. Add your site and secret keys to `staticman.yml` and `_config.yml`. Be sure to properly encrypt your secret key using [Staticman's encrypt endpoint](https://staticman.net/docs/encryption).
+2. Add your site and secret keys to `_config.yml`. Be sure to properly encrypt your secret key using [Staticman's encrypt endpoint](https://staticman.net/docs/encryption).
 
 ```yaml
 reCaptcha:
