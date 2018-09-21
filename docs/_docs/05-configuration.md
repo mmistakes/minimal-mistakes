@@ -351,6 +351,9 @@ Transform user comments into `_data` files that live inside of your GitHub repos
 **Note:** Looking to migrate comments from a WordPress based site? Give [this tool](https://github.com/arthurlacoste/wordpress-comments-jekyll-staticman) a try.
 {: .notice--info}
 
+**Note:** Please note that as of September 2018, Staticman is reaching GitHub API limits due to its popularity, and it is recommended by its maintainer that users deploy their own instances for production (use `site.staticman.endpoint`).
+{: .notice--warning}
+
 ##### Add Staticman as a Collaborator
 
 1. Allow Staticman push access to your GitHub repository by clicking on **Settings**, then the **Collaborators** tab and adding `staticmanapp` as a collaborator.
@@ -389,8 +392,8 @@ These settings need to be added to your `_config.yml` file as well:
 repository  : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 comments:
   provider  : "staticman_v2"
-staticman:
-  branch    : "master"
+  staticman:
+    branch    : "master"
 ```
 
 **Branch setting:** This is the branch comment files will be sent to via pull requests. If you host your site on GitHub Pages it will likely be `master` unless your repo is setup as a project --- use `gh-pages` in that case.
