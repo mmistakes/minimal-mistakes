@@ -106,7 +106,7 @@ function listEvents(auth) {
           updated: .updated\
         }]', events, {input: 'json', output: 'json'})
         .then((output) => {
-          fs.writeFile(CALENDAR_DATA_PATH, JSON.stringify(output), (err) => {
+          fs.writeFile(CALENDAR_DATA_PATH, JSON.stringify(output, null, 2), (err) => {
             if (err) console.error(err);
             console.log('Calendar data stored to', CALENDAR_DATA_PATH);
           });
