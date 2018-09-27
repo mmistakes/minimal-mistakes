@@ -23,10 +23,11 @@ matrix:
     install: npm install
     if: branch == master
     script:
+      - git checkout master
       - node ./create_calendar.js
       - |
         if ! git diff --quiet ../_data/calendar.yml ; then
             git add ../_data/calendar.yml
             git commit -m "Updated Calendar"
-            git push https://$GITHUB_TOKEN@github.com/$TRAVIS_REPO_SLUG master
+            git push https://$GITHUB_TOKEN@github.com/$TRAVIS_REPO_SLUG.git master
         fi
