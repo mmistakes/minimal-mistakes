@@ -1,47 +1,57 @@
-{% if include.id %}
-  {% assign feature_row = page.[include.id] %}
-{% else %}
-  {% assign feature_row = page.feature_row %}
-{% endif %}
+{% assign calendar = site.data.calendar %}
 
 <div class="feature__wrapper">
 
-  {% for f in feature_row %}
+  {% for event in calendar %}
 
-    {% if f.url contains "://" %}
-      {% capture f_url %}{{ f.url }}{% endcapture %}
+    {% if event.url contains "://" %}
+      {% capture f_url %}{{ event.url }}{% endcapture %}
     {% else %}
-      {% capture f_url %}{{ f.url | relative_url }}{% endcapture %}
+      {% capture f_url %}{{ event.url | relative_url }}{% endcapture %}
     {% endif %}
 
     <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
       <div class="archive__item">
-        {% if f.image_path %}
+        {% if event.image_path %}
           <div class="archive__item-teaser">
             <img src=
-              {% if f.image_path contains "://" %}
-                "{{ f.image_path }}"
+              {% if event.image_path contains "://" %}
+                "{{ event.image_path }}"
               {% else %}
-                "{{ f.image_path | relative_url }}"
+                "{{ event.image_path | relative_url }}"
               {% endif %}
-            alt="{% if f.alt %}{{ f.alt }}{% endif %}">
+            alt="{% if event.alt %}{{ event.alt }}{% endif %}">
           </div>
         {% endif %}
 
         <div class="archive__item-body">
-          {% if f.title %}
-            <h2 class="archive__item-title">{{ f.title }}</h2>
+          {% if event.title %}
+            <h2 class="archive__item-title"><small><i class="fa fa-calendar">&nbsp;</i>{{ event.title }}</small></h2>
           {% endif %}
 
-          {% if f.excerpt %}
             <div class="archive__item-excerpt">
-              {{ f.excerpt | markdownify }}
+              {{ event.excerpt | default: "*Noch keine Beschreibung!*" | markdownify }}
             </div>
-          {% endif %}
 
-          {% if f.url %}
-            <p><a href="{{ f_url }}" class="btn {{ f.btn_class }}">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
+
+          <div class="archive__item-excerpt">
+          {% if event.start.date and event.end.date %}
+              <p><i>{{ event.start.date | date: "%d.%m.%Y" }} - {{ event.end.date | date: "%d.%m.%Y" }}</i></p>
+          {% elsif event.start.date_time and event.end.date_time %}
+            {% capture start_date %}{{event.start.date_time | date: "%d.%m.%Y"}}{% endcapture %}
+            {% capture end_date %}{{event.end.date_time | date: "%d.%m.%Y"}}{% endcapture %}
+            {% capture start_time %}{{event.start.date_time | date: "%H:%M"}}{% endcapture %}
+            {% capture end_time %}{{event.end.date_time | date: "%H:%M"}}{% endcapture %}
+            {% if start_date == end_date %}
+              <p><i>{{start_date}} | {{ start_time }} - {{ end_time }}</i></p>
+            {% else %}
+              <p><i>{{start_date}} {{ start_time }} - {{end_date}} {{ end_time }}</i></p>
+            {% endif %}
           {% endif %}
+          {% if event.url %}
+            <a href="{{ f_url }}" class="btn btn--info btn--small" title='{{ "Termin abonnieren / Download als ICS-Datei" }}'><i class="fa fa-calendar"></i></a>
+          {% endif %}
+          </div>
         </div>
       </div>
     </div>
