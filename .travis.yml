@@ -1,15 +1,32 @@
 language: ruby
 cache: bundler
-install:
-  - bundle install
-  - bundle add html-proofer
-before_script:
-  - openssl req -x509 -out localhost.crt -keyout localhost.key -newkey rsa:2048 -nodes -sha256 -subj '/CN=localhost' -extensions EXT -config <( printf "[dn]\nCN=localhost\n[req]\ndistinguished_name = dn\n[EXT]\nsubjectAltName=DNS:localhost\nkeyUsage=digitalSignature\nextendedKeyUsage=serverAuth")
-script:
-  - bundle exec jekyll serve --ssl-key=./localhost.key --ssl-cert=./localhost.crt --detach
-  - bundle exec htmlproofer ./_site --only-4xx --check-favicon --check_opengraph --check-html --check_img_http # --enforce_https
-after_script:
-  - pkill -f jekyll
+
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+
+matrix:
+  include:
+  - name: "Unit Tests"
+    install:
+      - bundle install
+      - bundle add html-proofer
+    before_script:
+      - openssl req -x509 -out localhost.crt -keyout localhost.key -newkey rsa:2048 -nodes -sha256 -subj '/CN=localhost' -extensions EXT -config <( printf "[dn]\nCN=localhost\n[req]\ndistinguished_name = dn\n[EXT]\nsubjectAltName=DNS:localhost\nkeyUsage=digitalSignature\nextendedKeyUsage=serverAuth")
+    script:
+      - bundle exec jekyll serve --ssl-key=./localhost.key --ssl-cert=./localhost.crt --detach
+      - bundle exec htmlproofer ./_site --only-4xx --check-favicon --check_opengraph --check-html --check_img_http # --enforce_https
+    after_script:
+      - pkill -f jekyll
+  - name: "Update Calendar"
+    before_install: cd .calendar
+    install: npm install
+    if: branch == master
+    script:
+      - node ./create_calendar.js
+      - |
+        if ! git diff --quiet ../_data/calendar.yml ; then
+            git add ../_data/calendar.yml
+            git commit -m "Updated Calendar"
+            git push https://$GITHUB_TOKEN@github.com/$TRAVIS_REPO_SLUG master
+        fi
