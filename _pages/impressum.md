@@ -11,6 +11,7 @@ author_profile: false
 ## Schulleitung der Grundschule am Brandwerder
 
 *Stephanie Lehmann, Schulleiterin* \\
+*Tanja Esch, Konrektorin*\\
 *Spandauer Str. 86* \\
 13591 Berlin-Spandau
 
@@ -27,7 +28,10 @@ E-Mail: {% include email email='s.lehmann@brandwerder.de' %}
 Telefon: (030) 3303-2230 \\
 Telefax: (030) 3303-3958
 
-## Verantwortlicher für das journalistisch-redaktionelle Angebot i.S.d. § 55 II RStV
+## Verantwortlicher
+
+Verantwortliche für das journalistisch-redaktionelle Angebot i.S.d. § 55 II
+RStV, sowie gem. Art. 4 Abs. 7 EU-Datenschutz-Grundverordnung (EU-DSGVO), ist:
 
 *Stephanie Lehmann, Schulleiterin* \\
 *Spandauer Str. 86* \\
@@ -36,6 +40,12 @@ Telefax: (030) 3303-3958
 Telefon: (030) 3670952 - 0 \\
 Telefax: (030) 3670952 - 10 \\
 E-Mail: {% include email email='s.lehmann@brandwerder.de' %}
+
+## Datenschutzbeauftragter
+
+Wir haben für unsere Schule einen Datenschutzbeauftragten bestellt. Sie
+erreichen ihn unter {% include email email='datenschutz@brandwerder.de' %} oder
+unserer Postadresse mit dem Zusatz „der Datenschutzbeauftragte“.
 
 ## Haftungshinweis:
 
@@ -129,3 +139,6 @@ Vorlagenseite dar.
 
 [129269131 - children's hands sculpts](/assets/images/feature-ags.jpg) \\
 Copyrighthinweis: "Fotolia © sushytska"
+
+[3D illustration image of a gavel - auction hammer - free to use in your projects 08.jpg](https://commons.wikimedia.org/wiki/File:3D_illustration_image_of_a_gavel_-_auction_hammer_-_free_to_use_in_your_projects_08.jpg) \\
+Copyrighthinweis: "https://commons.wikimedia.org © Quince Media"
