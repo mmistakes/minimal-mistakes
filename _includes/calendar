@@ -1,0 +1,60 @@
+{% assign calendar = site.data.calendar %}
+
+<div class="feature__wrapper">
+
+  {% for event in calendar %}
+
+    {% if event.url contains "://" %}
+      {% capture f_url %}{{ event.url }}{% endcapture %}
+    {% else %}
+      {% capture f_url %}{{ event.url | relative_url }}{% endcapture %}
+    {% endif %}
+
+    <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
+      <div class="archive__item">
+        {% if event.image_path %}
+          <div class="archive__item-teaser">
+            <img src=
+              {% if event.image_path contains "://" %}
+                "{{ event.image_path }}"
+              {% else %}
+                "{{ event.image_path | relative_url }}"
+              {% endif %}
+            alt="{% if event.alt %}{{ event.alt }}{% endif %}">
+          </div>
+        {% endif %}
+
+        <div class="archive__item-body">
+          {% if event.title %}
+            <h2 class="archive__item-title"><small><i class="fa fa-calendar">&nbsp;</i>{{ event.title }}</small></h2>
+          {% endif %}
+
+            <div class="archive__item-excerpt">
+              {{ event.excerpt | default: "*Noch keine Beschreibung!*" | markdownify }}
+            </div>
+
+
+          <div class="archive__item-excerpt">
+          {% if event.start.date and event.end.date %}
+              <p><i>{{ event.start.date | date: "%d.%m.%Y" }} - {{ event.end.date | date: "%d.%m.%Y" }}</i></p>
+          {% elsif event.start.date_time and event.end.date_time %}
+            {% capture start_date %}{{event.start.date_time | date: "%d.%m.%Y"}}{% endcapture %}
+            {% capture end_date %}{{event.end.date_time | date: "%d.%m.%Y"}}{% endcapture %}
+            {% capture start_time %}{{event.start.date_time | date: "%H:%M"}}{% endcapture %}
+            {% capture end_time %}{{event.end.date_time | date: "%H:%M"}}{% endcapture %}
+            {% if start_date == end_date %}
+              <p><i>{{start_date}} | {{ start_time }} - {{ end_time }}</i></p>
+            {% else %}
+              <p><i>{{start_date}} {{ start_time }} - {{end_date}} {{ end_time }}</i></p>
+            {% endif %}
+          {% endif %}
+          {% if event.url %}
+            <a href="{{ f_url }}" class="btn btn--info btn--small" title='{{ "Termin abonnieren / Download als ICS-Datei" }}'><i class="fa fa-calendar"></i></a>
+          {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+
+</div>

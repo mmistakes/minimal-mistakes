@@ -1,0 +1,24 @@
+{
+  "name": "brandwerder-calendar",
+  "version": "1.0.0",
+  "description": "Brandwerder calendar build scripts",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/brandwerder/www.brandwerder.de"
+  },
+  "keywords": [],
+  "author": "Marcel Ehrhardt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brandwerder/www.brandwerder.de/issues"
+  },
+  "homepage": "https://www.brandwerder.de",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "googleapis": "~27.0.0",
+    "node-jq": "~1.3.0"
+  }
+}
