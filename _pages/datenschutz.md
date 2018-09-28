@@ -12,6 +12,14 @@ header:
 
 # Datenschutzerklärung
 
+## Schule
+
+Wir informieren Sie, welche personenbezogenen Daten wir erheben, wofür diese
+benötigt werden, wie wir sie verarbeiten sowie über Ihre Rechte nach geltendem
+Datenschutzrecht.
+
+[<i class="fa fa-download">&nbsp;</i>Informationen über die Verarbeitung personenbezogener Daten in der Schule (pdf) ](/assets/files/Datenschutzerklärung_Bestandsschüler.pdf){: .btn .btn--success}
+
 ## Webseite
 
 ### 1. Verantwortlicher und Datenschutzbeauftragter
@@ -134,3 +142,8 @@ Browser-Verlauf manuell zu löschen.] -->
 
 <!-- 1: Diesen Absatz können Sie entfernern, wenn Sie keine Cookies verwenden bzw.
 müssen ihn in Anhängigkeit von den eingesetzten Cookies anpassen. -->
+
+
+### 5. Nutzung von Diensten und Inhalten Dritter
+
+Wir
