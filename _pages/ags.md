@@ -17,16 +17,16 @@ sidebar:
 Arbeitsgemeinschaften (AGs) sind außerunterrichtliche Angebote auf freiwilliger
 Basis. Eine regelmäßige Teilnahme ist Voraussetzung.
 
-{% include outdated.md %}
+<!-- {% include outdated.md %} -->
 
 **Achtung**: Bitte beachten Sie, dass alle hier genannten Daten abweichen
 können. Vor allem die Kursgebühren können sich ändern.
 {: .notice--warning}
 
-# Kursangebote im Schuljahr 2017/18
+# Kursangebote im Schuljahr 2018/19
 {: #toc}
 
-**Achtung**: AG Beginn ab 25.09.2017, Zirkus ab 06.10.2017.
+**Achtung**: AG Beginn ab 10.09.2018, Zirkus ab 05.10.2018.
 {: .notice--warning}
 
 <table>
@@ -43,7 +43,7 @@ können. Vor allem die Kursgebühren können sich ändern.
       <td colspan="6">Montag</td>
     </tr>
     <tr>
-      <td>12:45 - 15:30</td>
+      <td>12:15 - 15:15</td>
       <td>
         <a href="#floeten_ag"><i class="fa fa-music">&nbsp;</i>Flöten</a><br>
         <i>Frau Bölke</i>
@@ -51,7 +51,7 @@ können. Vor allem die Kursgebühren können sich ändern.
       <td>1 - 6</td>
       <td>Aula</td>
     </tr>
-    <tr>
+    <!-- <tr>
       <td>13:30 - 15:00</td>
       <td>
         <a href="#gitarre_ag"><i class='fa'>🎸&nbsp;</i>Gitarrenunterricht</a><br>
@@ -59,39 +59,21 @@ können. Vor allem die Kursgebühren können sich ändern.
       </td>
       <td>2 - 6</td>
       <td>Musikraum</td>
-    </tr>
-    <tr>
-      <td>13:40 - 14:25</td>
-      <td>
-        <a href="#englisch_ag"><i class='fa fa-gbp'>&nbsp;</i>Englisch für Kids (Stufe I)</a><br>
-        <i>Frau Eumann</i>
-      </td>
-      <td>1 - 2</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>14:35 - 15:20</td>
-      <td>
-        <a href="#englisch_ag"><i class='fa fa-gbp'>&nbsp;</i>Englisch für Kids (Stufe II)</a><br>
-        <i>Frau Eumann</i>
-      </td>
-      <td>1 - 2</td>
-      <td>&nbsp;</td>
-    </tr>
+    </tr> -->
     <tr>
       <td colspan="6">Dienstag</td>
     </tr>
     <tr>
-      <td>13:15 - 14:00</td>
+      <td>13:30 - 15:00</td>
       <td>
-        <a href="#basteln_ag"><i class='fa fa-paper-plane'>&nbsp;</i>Basteln</a><br>
-        <i>Frau Bölke</i>
+        Türkischunterricht für Muttersprachler<br>
+        <i>Herr Keser</i>
       </td>
-      <td>1 - 2</td>
-      <td>Werkraum</td>
+      <td>1 - 6</td>
+      <td>Raum 304</td>
     </tr>
     <tr>
-      <td>13:30 - 15:00</td>
+      <td>13:30 - 16:30</td>
       <td>
         <a href="#gitarre_ag"><i class='fa'>🎸&nbsp;</i>Gitarrenunterricht</a><br>
         <i>Frau Findeisen</i>
@@ -100,7 +82,7 @@ können. Vor allem die Kursgebühren können sich ändern.
       <td>Musikraum</td>
     </tr>
     <tr>
-      <td>13:45 - 15:15</td>
+      <td>13:30 - 15:00</td>
       <td>
         <a href="#fussball_ag"><i class='fa fa-futbol-o'>&nbsp;</i>Fußball</a><br>
         <i>Herr Wieting</i>
@@ -119,7 +101,7 @@ können. Vor allem die Kursgebühren können sich ändern.
       <td>Musikraum</td>
     </tr>
     -->
-    <tr>
+    <!-- <tr>
       <td>13:30 - 15:00</td>
       <td>
         Türkischunterricht für Muttersprachler<br>
@@ -127,7 +109,7 @@ können. Vor allem die Kursgebühren können sich ändern.
       </td>
       <td>1 - 6</td>
       <td>Raum 304</td>
-    </tr>
+    </tr> -->
     <tr>
       <td colspan="6">Mittwoch</td>
     </tr>
@@ -141,6 +123,33 @@ können. Vor allem die Kursgebühren können sich ändern.
       <td>Sporthalle</td>
     </tr> -->
     <tr>
+      <td>12:45 - 13:30</td>
+      <td>
+        <a href="#englisch_ag"><i class='fa fa-gbp'>&nbsp;</i>Englisch für Kids (Stufe I/II)</a><br>
+        <i>Frau Eumann</i>
+      </td>
+      <td>1 - 2</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>12:45 - 13:45</td>
+      <td>
+        <a href="#fussball_ag"><i class='fa fa-futbol-o'>&nbsp;</i>Fußball</a><br>
+        <i>Herr Wieting</i>
+      </td>
+      <td>Sterne (3. Jahrgangsstufe)</td>
+      <td>Sporthalle</td>
+    </tr>
+    <tr>
+      <td>13:15 - 14:00</td>
+      <td>
+        <a href="#basteln_ag"><i class='fa fa-paper-plane'>&nbsp;</i>Basteln</a><br>
+        <i>Frau Bölke</i>
+      </td>
+      <td>1 - 2</td>
+      <td>Werkraum</td>
+    </tr>
+    <tr>
       <td>13:30 - 18:30</td>
       <td>
         <a href="#klavier_ag"><i class='fa'>🎹&nbsp;</i>Klavierunterricht</a><br>
@@ -152,23 +161,32 @@ können. Vor allem die Kursgebühren können sich ändern.
     <tr>
       <td colspan="6">Donnerstag</td>
     </tr>
-    <!--<tr>
-      <td>13:30 - 15:00</td>
-      <td>
-        <a href="#toepfern_ag"><i class='fa fa-tint'>&nbsp;</i>Töpfern</a><br>
-        <i>Frau Lehmann</i>
-      </td>
-      <td>3 - 6</td>
-      <td>Werkraum</td>
-    </tr>-->
     <tr>
-      <td>13:30 - 15:00</td>
+      <td>13:30 - 14:30</td>
       <td>
         <a href="#schach_ag"><i class='fa'>♚&nbsp;</i>Schach</a><br>
         <i>Herr Keser</i>
       </td>
       <td>1 - 6</td>
       <td>Raum 304</td>
+    </tr>
+    <tr>
+      <td>14:00 - 15:00</td>
+      <td>
+        <a href="#werken_ag"><i class='fa fa-gavel'>&nbsp;</i>Werken</a><br>
+        <i>Frau Bölke</i>
+      </td>
+      <td>3 - 4</td>
+      <td>Werkraum</td>
+    </tr>
+    <tr>
+      <td>14:30 - 15:30</td>
+      <td>
+        <a href="#leichtathletik_ag"><i class='fa'>🏃&nbsp;</i>Leichtathletik</a><br>
+        <i>Frau Lehmann</i>
+      </td>
+      <td>4 - 6</td>
+      <td>Sporthalle</td>
     </tr>
     <!-- <tr>
       <td>15:00 - 18:00</td>
@@ -183,16 +201,7 @@ können. Vor allem die Kursgebühren können sich ändern.
       <td colspan="6">Freitag</td>
     </tr>
     <tr>
-      <td>13:30 - 14:30</td>
-      <td>
-        <a href="#werken_ag"><i class='fa fa-gavel'>&nbsp;</i>Werken / Handarbeiten</a><br>
-        <i>Frau Bölke</i>
-      </td>
-      <td>3 - 5</td>
-      <td>Werkraum</td>
-    </tr>
-    <tr>
-      <td>14:00 - 16:00</td>
+      <td>13:30 - 16:00</td>
       <td>
         <a href="#zirkus_ag"><i class="fa">🎪&nbsp;</i>Zirkus</a><br>
         <i>Frau Linke</i>
@@ -200,39 +209,36 @@ können. Vor allem die Kursgebühren können sich ändern.
       <td>1 - 6</td>
       <td>Sporthalle</td>
     </tr>
-    <tr>
-      <td>13:30 - 15:00</td>
-      <td>
-        Türkischunterricht für Muttersprachler<br>
-        <i>Herr Keser</i>
-      </td>
-      <td>1 - 6</td>
-      <td>Raum 304</td>
-    </tr>
   </tbody>
 </table>
 
 ## <i class='fa fa-gbp'>&nbsp;</i>AG Englisch
 {: #englisch_ag}
 
+<!-- {% include outdated.md %} -->
+
 In den Kursen begegnen die Kinder der englischen Sprache auf spielerische Weise.
 Durch englische Geschichten wird das Hörverständnis der Kinder gefördert und
 durch spielerische Aktivitäten und Aufgaben werden die Kinder angeregt erste
 englische Sätze zu sprechen.
 
+Beginn: 07.11.2018
+
 | Kursleiter*in | Wann? | Wo? | Für wen? |
 |---|---|---|---|
-| Frau [<i class='fa fa-globe'>&nbsp;</i>Karen Eumann](https://www.karen-eumann.de) | montags, 13:40 - 14:25 (Stufe I) und <br> 14:35 - 15:20 (Stufe II) | N.N | 1. und 2. Klasse |
+| Frau [<i class='fa fa-globe'>&nbsp;</i>Karen Eumann](https://www.karen-eumann.de) | mittwochs, 12:45 - 13:30 (Stufe I/II) | N.N | 1. und 2. Klasse |
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
-| Sunshine - Early Start Edition | einmalig 8€ oder 10€ + 24,30€ pro Monat, 1 Probestunde | 8 - 14 Kinder |
+| Sunshine - Early Start Edition | einmalig 10€ + 24,30€ pro Monat, 1 Probestunde | 8 - 14 Kinder |
 
 [Anmelden](https://www.karen-eumann.de/app/download/9183188198/Download+Anmeldung+school.pdf?t=1393085067){: .btn .btn--success}
 {: .text-right}
 
 ## <i class='fa fa-paper-plane'>&nbsp;</i>AG Basteln
 {: #basteln_ag}
+
+<!-- {% include outdated.md %} -->
 
 {% include figure image_path="/assets/images/ag_werken-basteln-gross.jpg" alt="Bastel AG" caption="<small>Förderverein Brandwerder</small>" %}{: .align-left style='max-width: 300px; max-height: 300px' }
 Das Basteln fördert nicht nur die Kreativität und Motorik sondern auch die
@@ -248,7 +254,7 @@ unterstützt.
 
 | Kursleiter*in | Wann? | Wo? | Für wen? |
 |---|---|---|---|
-| Frau Bölke | dienstags, 13:15 - 14:00 | Werkraum | 1. - 2. Klasse |
+| Frau Bölke | mittwochs, 13:15 - 14:00 | Werkraum | 1. - 2. Klasse |
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
@@ -256,6 +262,8 @@ unterstützt.
 
 ## <i class='fa fa-gavel'>&nbsp;</i>AG Werken
 {: #werken_ag}
+
+<!-- {% include outdated.md %} -->
 
 {% include figure image_path="/assets/images/ag_werken-basteln-gross.jpg" alt="Werken AG" caption="<small>Förderverein Brandwerder</small>" %}{: .align-left style='max-width: 300px; max-height: 300px' }
 In der Werken-AG lernen die Kinder mit Laubsäge, Holzfeilen, Schleifpapier,
@@ -274,14 +282,16 @@ unterstützt.
 
 | Kursleiter*in | Wann? | Wo? | Für wen? |
 |---|---|---|---|
-| Frau Bölke | freitags, 13:30 - 14:30 | Werkraum | 2. - 3. Klasse |
+| Frau Bölke | donnerstags, 14:00 - 15:00 | Werkraum | 3. - 4. Klasse |
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
 | N.N. | N.N. | N.N. |
 
-## <i class='fa fa-headphones'>&nbsp;</i>AG Handarbeit
+<!-- ## <i class='fa fa-headphones'>&nbsp;</i>AG Handarbeit
 {: #handarbeits_ag}
+
+{% include outdated.md %}
 
 Kinder sind von Natur aus wissbegierig und kreativ. Bei der Handarbeits-AG
 lernen die Kinder den Umgang und die Verarbeitung von verschiedenen Textilien
@@ -301,11 +311,13 @@ unterstützt.
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
-| N.N. | N.N. | N.N. |
+| N.N. | N.N. | N.N. | -->
 
 <!--
 ## <i class='fa fa-tint'>&nbsp;</i>AG Töpfern
 {: #toepfern_ag}
+
+{% include outdated.md %}
 
 N.N
 
@@ -321,12 +333,14 @@ N.N
 ## <i class="fa fa-music">&nbsp;</i>AG Flöten
 {: #floeten_ag}
 
+<!-- {% include outdated.md %} -->
+
 Der Mensch liebt von Natur aus die Musik. Studien zeigen, dass das Erlernen bzw.
 das Spielen eines Instruments bereits im Kindesalter die Intelligenz für das
 ganze Leben prägt. Das Musizieren stärkt sowohl die geistigen als auch die
 sozialen Fähigkeiten und ist daher pädagogisch besonders wertvoll.
 
-Die Kinder lernen in zwei kleinen Gruppen das Blockflötenspielen. Hierbei
+Die Kinder lernen in mehreren kleinen Gruppen das Blockflötenspielen. Hierbei
 bereitet das gemeinsame Musizieren besonders viel Spaß, vor allem bei den
 Schulaufführungen, bei denen die Kinder ihr Können stolz präsentieren können.
 
@@ -336,14 +350,16 @@ unterstützt.
 
 | Kursleiter*in | Wann? | Wo? | Für wen? |
 |---|---|---|---|
-| Frau Bölke | montags, 12:45 - 15:30 (mehrere Gruppen) | Aula | 1. - 6. Klasse |
+| Frau Bölke | montags, 12:15 - 15:15 (mehrere Gruppen) | Aula | 1. - 6. Klasse |
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
-| N.N | N.N | N.N |
+| N.N | auf Anfrage | N.N |
 
 ## <i class="fa">🎹&nbsp;</i>AG Klavier
 {: #klavier_ag}
+
+<!-- {% include outdated.md %} -->
 
 N.N
 
@@ -358,13 +374,15 @@ N.N
 ## <i class="fa">🎸&nbsp;</i>AG Gitarre
 {: #gitarre_ag}
 
+<!-- {% include outdated.md %} -->
+
 N.N
 
 Jede Gruppe hat 30min Unterricht.
 
 | Kursleiter*in | Wann? | Wo? | Für wen? |
 |---|---|---|---|
-| Frau Findeisen | montags und dienstags, 13:30 - 15:00 (mehrere Gruppen) | Musikraum | 2. - 6. Klasse |
+| Frau Findeisen | dienstags, 13:30 - 16:30 (mehrere Gruppen) | Musikraum | 2. - 6. Klasse |
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
@@ -372,6 +390,8 @@ Jede Gruppe hat 30min Unterricht.
 
 ## <i class="fa">♚&nbsp;</i>AG Schach
 {: #schach_ag}
+
+<!-- {% include outdated.md %} -->
 
 {% include figure image_path="https://upload.wikimedia.org/wikipedia/commons/e/e6/Chess_bishop_1000.jpg" alt="Schach AG"  caption='<small>"[Chess bishop](https://commons.wikimedia.org/wiki/File:Chess_bishop_1000.jpg)" by [Petr Novák](https://commons.wikimedia.org/wiki/User:Che) / [CC BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/)</small>' %}{: .align-left style='max-width: 300px; max-height: 300px' }
 Schach ist das populärste Brettspiel in Europa und gilt als offizielle Sportart.
@@ -396,7 +416,7 @@ unterstützt.
 
 | Kursleiter*in | Wann? | Wo? | Für wen? |
 |---|---|---|---|
-| Herr Keser | donnerstags, 13:30 - 15:00 | Raum 304 | 1. - 6. Klasse |
+| Herr Keser | donnerstags, 13:30 - 14:30 | Raum 304 | 1. - 6. Klasse |
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
@@ -404,6 +424,8 @@ unterstützt.
 
 ## <i class="fa">🎪&nbsp;</i>AG Zirkus
 {: #zirkus_ag}
+
+<!-- {% include outdated.md %} -->
 
 Die Arbeitsgemeinschaft „Brandwerder - Zirkus“ existiert bereits 10 Jahre. Dem
 Zirkusteam liegt sehr daran, den Schülerinnen und Schülern ein Angebot zu
@@ -447,16 +469,20 @@ Die AG wird vom
 [Förderverein](https://www.foerderverein-brandwerder.de/zirkus-ag-der-grundschule-brandwerder)
 unterstützt.
 
+Beginn: 05.10.2018
+
 | Kursleiter*in | Wann? | Wo? | Für wen? |
 |---|---|---|---|
-| Frau Linke | freitags, 14:00 - 16:00 | Sporthalle | 1. - 6. Klasse |
+| Frau Linke | freitags, 13:30 - 16:00 | Sporthalle | 1. - 6. Klasse |
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
-| N.N | N.N, 3 Probestunden | N.N |
+| N.N | auf Anfrage, 3 Probestunden | N.N |
 
 <!-- ## <i class='fa fa-group'>&nbsp;</i>AG Kleine Spiele
 {: #kleine_spiele_ag}
+
+{% include outdated.md %}
 
 N.N
 
@@ -471,6 +497,8 @@ N.N
 <!-- ## <i class='fa fa-anchor'>&nbsp;</i>AG Kuttersegeln
 {: #kuttersegeln_ag}
 
+{% include outdated.md %}
+
 N.N
 
 | Kursleiter*in | Wann? | Wo? | Für wen? |
@@ -481,14 +509,16 @@ N.N
 |---|---|---|
 | N.N | N.N | N.N | -->
 
-## <i class='fa'>🏃&nbsp;</i>AG Leichtathletik / Basketball
+## <i class='fa'>🏃&nbsp;</i>AG Leichtathletik
 {: #leichtathletik_ag}
 
-N.N
+<!-- {% include outdated.md %} -->
+
+Training der Schulmannschaft und für Interessierte.
 
 | Kursleiter*in | Wann? | Wo? | Für wen? |
 |---|---|---|---|
-| Frau Krüger | N.N. | Sporthalle | 4. - 6. Klasse |
+| Frau Lehmann | N.N. | Sporthalle | 4. - 6. Klasse |
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|
@@ -497,11 +527,13 @@ N.N
 ## <i class='fa fa-futbol-o'>&nbsp;</i>AG Fußball
 {: #fussball_ag}
 
+<!-- {% include outdated.md %} -->
+
 N.N
 
 | Kursleiter*in | Wann? | Wo? | Für wen? |
 |---|---|---|---|
-| Herr Wieting | dienstags, 13:45 - 15:15 | Sporthalle | 4. - 6. Klasse |
+| Herr Wieting | dienstags, 13:30 - 15:00 (4.-6. Klasse), mittwochs, 12:45 - 13:45 (3. Klasse) | Sporthalle | 3. - 6. Klasse |
 
 | Material | Kosten | Teilnehmerzahl |
 |---|---|---|

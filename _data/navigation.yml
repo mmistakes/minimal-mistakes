@@ -18,8 +18,8 @@ ags:
     url: '/ags/#basteln_ag'
   - title: "<i class='fa fa-gavel'></i> AG Werken"
     url: '/ags/#werken_ag'
-  - title: "<i class='fa fa-headphones'></i> AG Handarbeit"
-    url: '/ags/#handarbeits_ag'
+  # - title: "<i class='fa fa-headphones'></i> AG Handarbeit"
+  #   url: '/ags/#handarbeits_ag'
   # - title: "<i class='fa fa-tint'></i> AG Töpfern"
   #   url: '/ags/#toepfern_ag'
   - title: "<i class='fa fa-music'></i> AG Flöten"
@@ -32,7 +32,7 @@ ags:
     url: '/ags/#schach_ag'
   - title: "<i class='fa'>🎪</i> AG Zirkus"
     url: '/ags/#zirkus_ag'
-  - title: "<i class='fa'>🏃</i> AG Leichtathletik / Basketball"
+  - title: "<i class='fa'>🏃</i> AG Leichtathletik"
     url: '/ags/#leichtathletik_ag'
   - title: "<i class='fa fa-futbol-o'></i> AG Fußball"
     url: '/ags/#fussball_ag'
