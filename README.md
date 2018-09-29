@@ -48,3 +48,8 @@ I'm interested in following subjects.
         - Education Features
         - Wiki Features
   - More Practical & Effective & No more tedious works.
+
+# References
+
+This blog is based on jekyll and mmistakes. Later see the links to customize blog.
+https://mmistakes.github.io/minimal-mistakes/
