@@ -41,7 +41,7 @@ conda search python
 
 
 <!-- Images Reference Links -->
-[conda-search]: assets\img\2018-10-01-Anaconda-Managing-Python\conda-search.png
+[conda-search]: /assets/img/2018-10-01-Anaconda-Managing-Python/conda-search.png
 
 
 
