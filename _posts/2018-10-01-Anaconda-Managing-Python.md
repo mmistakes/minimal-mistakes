@@ -28,20 +28,73 @@ Python 버전 리스트를 확인한다.
 conda search python
 ```
 
-![Alt][conda-search]
+명령어를 실행하면 아래와 같이 설치가능한 python 버전이 출력된다.
+
+![Conda Search 명령어][conda-search]
+
+## Conda Python 3.5 버전 설치
+
+### 새로운 환경 생성하기
+
+아래의 명령을 입력하면 새로운 환경이 만들어진다. 그리고 conda env list 를 통해서 생성된 환경을 확인할 수 있다.
+```
+conda create -n py35 python=3.5 anaconda
+
+#
+# To activate this environment, use
+#
+#     $ conda activate py35
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+```
+
+명령 실행 화면은 아래와 같다.
+
+![Conda Create 명령어][conda-create]
+
+### py35 환경 확인하기
+
+아래의 명령어를 통해 현재 생성된 환경을 확인할 수 있다.
+
+```
+conda env list
+```
+
+생성된 환경을 확인할 수 있다.
+![Conda Env List 명령어][conda-env-list]
+
+### py35 활성화 하기
+
+생성된 환경을 활성화 한다.
+
+```
+# Ex. activate [env_name]
+activate py35
+```
+
+생성한 환경이 shell 에 설정됨을 확인할 수 있다.
+
+![activate 명령어][activate-py35]
 
 # 참조
-[Conda 정의][1]
-[Conda 파이선 버전 관리][1]
+- [Conda 정의][1]
+- [Conda 파이선 버전 관리][2]
+- [Conda Env 활성화][3]
 
 <!-- Reference Links -->
 
 [1]: https://conda.io/docs/index.html "Conda"
 [2]: https://conda.io/docs/user-guide/tasks/manage-python.html "Conda manage python"
+[3]: https://conda.io/docs/user-guide/tasks/manage-environments.html#activate-env "Activate Env"
 
 
 <!-- Images Reference Links -->
 [conda-search]: /assets/img/2018-10-01-Anaconda-Managing-Python/conda-search.png
+[conda-create]: /assets/img/2018-10-01-Anaconda-Managing-Python/conda-create.png
+[conda-env-list]: /assets/img/2018-10-01-Anaconda-Managing-Python/conda-env-list.png
+[activate-py35]: /assets/img/2018-10-01-Anaconda-Managing-Python/activate-py35.png
 
 
 
