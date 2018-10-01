@@ -2,10 +2,16 @@
 title: Managing Python Version in Conda
 key: 20181001
 tags: conda python
-excerpt: ""
+excerpt: "Conda 를 통한 파이썬 버전 관리"
 ---
 
+# Summary
+
 Conda 를 통해서 파이썬 버전을 관리함
+
+# 과제
+
+Docker 와 어떻게 상화 작용할까?
 
 <!-- more -->
 
