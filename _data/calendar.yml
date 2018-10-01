@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "1. Fachkonferenz NaWi",
-    "title": "1. Fachkonferenz NaWi",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=N21qM2NxOW8xMzlsM29vajNmcTZpZjlzbTAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2018-10-01T15:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2018-10-01T16:30:00+02:00"
-    },
-    "created": "2018-09-17T09:05:35.000Z",
-    "updated": "2018-09-17T09:05:35.096Z"
-  },
-  {
-    "image_path": null,
     "alt": "1. Deutsch Fachkonferenz",
     "title": "1. Deutsch Fachkonferenz",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2018-08-26T09:17:07.000Z",
     "updated": "2018-08-26T09:17:07.164Z"
+  },
+  {
+    "image_path": null,
+    "alt": "1. Treffen Arbeitsgruppe Kunst",
+    "title": "1. Treffen Arbeitsgruppe Kunst",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MGVxMHE3czdkbXQyMTNxOHBvZzUxajB2cDggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2018-10-09T11:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2018-10-09T12:30:00+02:00"
+    },
+    "created": "2018-09-17T09:04:54.000Z",
+    "updated": "2018-09-17T09:04:54.789Z"
   }
 ]
