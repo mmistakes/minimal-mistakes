@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+- Make entire feature and archive items "clickable". [#1864](https://github.com/mmistakes/minimal-mistakes/pull/1864)
 - Allow custom Staticman endpoints. [#1842](https://github.com/mmistakes/minimal-mistakes/issues/1842)
 - Remove `type="text/css"` from Algolia script includes. [#1836](https://github.com/mmistakes/minimal-mistakes/pull/1836)
 - Remove unneeded `HandheldFriendly` and `MobileOptimized` meta tags. [#1837](https://github.com/mmistakes/minimal-mistakes/pull/1837)
