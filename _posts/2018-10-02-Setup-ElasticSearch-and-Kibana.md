@@ -206,11 +206,15 @@ Kibana 가 구동되면 Cluster 정보 또한 자동으로 등록한다.
 
 ![kibana 관리 화면][kibana-mgmt]
 
+# TO DO (과제)
+
+이제 요구하는 사항을 모두 만족하였으므로 다음 단계에 진입할 수 있다.
+물론 메모리 최적화 등의 단계에 대한 언급이 필요하지만 이를 다음으로 돌린다.
+
+우선적으로 해야할 영역은 `logstash` 설치와 `template index` 생성이 필요하다.
 
 # 참조
 - [ElasticSearch Configuration Options][1]
-
-
 
 <!-- References Link -->
 
