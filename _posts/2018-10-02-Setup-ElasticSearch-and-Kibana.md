@@ -182,6 +182,29 @@ sudo systemctl enable kibana.service
 sudo service kibana start
 ```
 
+## Kibana 설정(Configuration)
+
+`/etc/kibana/kibana.yml` 설정 파일을 수정한다. 수정 뒤에 kibana 서비스를 재시작한다.
+
+```
+server.port: 5601 # kibana 접속 포트
+server.host: "192.168.2.195" # 바인딩할 로컬 서버 주소, 192.168.2.195 로만 접속 가능
+elasticsearch.url: "http://192.168.2.195:9200" # 접속할 elasticsearch 주소
+```
+
+kibana 서비스 재기동
+
+```
+sudo service kibana stop & sudo service kibana start # 서비스 재기동
+```
+
+## Kibana 구동 화면
+
+Kibana 가 구동되면 Cluster 정보 또한 자동으로 등록한다.
+
+![kibana 모니터링 화면][kibana-monitoring]
+
+![kibana 관리 화면][kibana-mgmt]
 
 
 # 참조
@@ -202,6 +225,10 @@ This is a sample code to write down reference link in markdown document.
 <!-- Images Reference Links -->
 
 <!--
+When you use image link just put it on the document.
+
+![kibana 모니터링 화면][kibana-monitoring]
+
 This is sample code to embed an image in markdown document.s
 [kibana-monitoring]: /assets/img/2018-10-02-Setup-ElasticSearch-and-Kibana/kibana-cluster-overview.png
 -->
