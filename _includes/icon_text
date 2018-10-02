@@ -1,0 +1,10 @@
+{%- if include.icon -%}
+{%- if include.icon contains "fa-" -%}
+{% assign icon_fontawesome = include.icon %}
+{% assign icon_unicode = null %}
+{% else %}
+{% assign icon_fontawesome = null %}
+{% assign icon_unicode = include.icon %}
+{%- endif -%}
+<i class="fa {{icon_fontawesome}}">{{icon_unicode}}&nbsp;</i>
+{%- endif -%}{{include.text}}

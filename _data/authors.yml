@@ -17,3 +17,15 @@ Nicole Herrmann:
   name: "Nicole Herrmann"
   bio: "Sekretariat"
   avatar: "/assets/images/n.herrmann.jpg"
+
+Karen Eumann:
+  name: "Karen Eumann"
+  bio: "English AG Lehrer"
+  avatar: null
+  uri: https://www.karen-eumann.de
+
+Musikschule Spandau:
+  name: "Musikschule Spandau"
+  bio: "Klavierlehrer"
+  avatar: null
+  uri: http://www.musikschule-spandau-berlin.de/34-0-Startseite.html
