@@ -11,7 +11,7 @@ Django 개발 환경 구축 시 Docker 를 이용하는 방법을 다룬다.
 
 <!--More-->
 
-# 
+#
 
 
 # 참조
@@ -20,6 +20,10 @@ Django 개발 환경 구축 시 Docker 를 이용하는 방법을 다룬다.
 
 <!-- References Link -->
 
+<!--
+This is a sample code to write down reference link in markdown document.
+[1]: https://docs.docker.com/compose/django/ "compose django"
+-->
 [1]: https://docs.docker.com/compose/django/ "compose django"
 
 <!-- Images Reference Links -->
