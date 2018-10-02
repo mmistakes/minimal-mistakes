@@ -113,6 +113,9 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
+    - label: "Mastodon"
+      icon: "fab fa-fw fa-mastodon"
+      # url: 
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -135,6 +138,9 @@ footer:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
+    - label: "Mastodon"
+      icon: "fab fa-fw fa-mastodon"
+      # url: 
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       # url:
