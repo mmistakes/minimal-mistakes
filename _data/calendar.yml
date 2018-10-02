@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "1. Deutsch Fachkonferenz",
-    "title": "1. Deutsch Fachkonferenz",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NWRvOHUzMHZuOGVhZHJ0Y2ZlYzhyYXJsbGYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2018-10-02T15:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2018-10-02T16:30:00+02:00"
-    },
-    "created": "2018-09-17T09:02:25.000Z",
-    "updated": "2018-09-17T09:02:49.855Z"
-  },
-  {
-    "image_path": null,
     "alt": "Anmeldezeitraum Schulanfänger*innen im Schuljahr 2019/20",
     "title": "Anmeldezeitraum Schulanfänger*innen im Schuljahr 2019/20",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2018-09-17T09:04:54.000Z",
     "updated": "2018-09-17T09:04:54.789Z"
+  },
+  {
+    "image_path": null,
+    "alt": "1. Gesamtkonferenz",
+    "title": "1. Gesamtkonferenz",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NzNrOWs4Z2RwY2tkbHNyMGszdGRrb3E3N3IgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2018-10-09T16:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2018-10-09T18:30:00+02:00"
+    },
+    "created": "2018-09-28T15:16:40.000Z",
+    "updated": "2018-09-28T15:16:40.840Z"
   }
 ]
