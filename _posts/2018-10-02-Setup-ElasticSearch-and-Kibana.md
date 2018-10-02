@@ -167,6 +167,21 @@ elasticsearch 는 Tuning이 필요하다고 한다. 여러 자료를 살펴보�
 |:---:|:---:|:---:|:---:|
 |master.node|||2018.10.02|elasticearch.yml|
 
+# Install(설치) Kibana
+
+설치 방법에는 특별한 내용이 없다. 단순히 반복한다.
+
+```
+wget https://artifacts.elastic.co/downloads/kibana/kibana-6.4.1-amd64.deb
+shasum -a 512 kibana-6.4.1-amd64.deb  
+sudo dpkg -i kibana-6.4.1-amd64.deb
+```
+
+```
+sudo systemctl enable kibana.service
+sudo service kibana start
+```
+
 
 
 # 참조
@@ -176,11 +191,23 @@ elasticsearch 는 Tuning이 필요하다고 한다. 여러 자료를 살펴보�
 
 <!-- References Link -->
 
+<!--
+This is a sample code to write down reference link in markdown document.
 [1]: https://docs.docker.com/compose/django/ "compose django"
+-->
+
 [1]: https://www.elastic.co/guide/en/elasticsearch/reference/index.html "elasticsearch configuration options"
 
 
 <!-- Images Reference Links -->
+
+<!--
+This is sample code to embed an image in markdown document.s
+[kibana-monitoring]: /assets/img/2018-10-02-Setup-ElasticSearch-and-Kibana/kibana-cluster-overview.png
+-->
+
+[kibana-monitoring]: /assets/img/2018-10-02-Setup-ElasticSearch-and-Kibana/kibana-cluster-overview.png
+[kibana-mgmt]: /assets/img/2018-10-02-Setup-ElasticSearch-and-Kibana/kibana-mgmt.png
 
 <!-- End of Documents -->
 
