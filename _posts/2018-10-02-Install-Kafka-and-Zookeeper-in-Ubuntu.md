@@ -33,7 +33,8 @@ tar -xvf zookeeper-3.4.12.tar.gz
 
 - [Apache-Kafka-클러스터링-구축-및-테스트][1]
   - 정리가 가장 잘되어 있음
-
+- [Apache Kafka Quick Start 공식 문서][5]
+  - 공식 문서가 좋다.
 
 <!-- References Link -->
 
@@ -46,7 +47,7 @@ This is a sample code to write down reference link in markdown document.
 <!-- Images Reference Links -->
 [3]: http://programist.tistory.com/entry/Apache-Kafka-%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81-%EA%B5%AC%EC%B6%95-%EB%B0%8F-%ED%85%8C%EC%8A%A4%ED%8A%B8 "Apache-Kafka-클러스터링-구축-및-테스트"
 [4]: https://taetaetae.github.io/2017/11/02/what-is-kafka/ "what-is-kafka"
-
+[5]: http://kafka.apache.org/quickstart "Apache Kafka Quick Start"
 <!--
 When you use image link just put it on the document.
 
