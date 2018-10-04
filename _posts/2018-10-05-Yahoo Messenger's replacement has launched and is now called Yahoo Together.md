@@ -1,0 +1,20 @@
+---
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+title: Yahoo Messenger's replacement has launched and is now called Yahoo Together
+date: October 05, 2018 at 12:11AM
+categories: Tech News
+---
+<img class="align-center" src="%20http://d2.alternativeto.net/dist/icons/yahoo-messenger_81351.png?width=36&amp;height=36&amp;mode=crop&amp;upscale=false">
+<p><p>Following Yahoo Messenger's shutdown on July 17th, the company primarily known for its search engine has been testing a successor, known until now as Yahoo Squirrel.</p>
+<p><a href="https://alternativeto.net/news/2018/6/yahoo-messenger-s-shutdown-date-is-july-17th-redirecting-users-to-squirrel" rel="nofollow">As covered back in June</a>, Yahoo Squirrel, officially billed as <a href='//alternativeto.net/software/yahoo-messenger/'><img alt='Small Yahoo! Messenger icon' class='mini-app-icon' src='//d2.alternativeto.net/dist/icons/yahoo-messenger_81351.png?width=36&height=36&mode=crop&upscale=false' />Yahoo! Messenger</a>'s successor, was more centered on group conversations instead of Messenger's more one-on-one dynamic. Now that it is known as <a href='//alternativeto.net/software/yahoo-squirrel/'><img alt='Small Yahoo Together icon' class='mini-app-icon' src='//d2.alternativeto.net/dist/icons/yahoo-squirrel_133386.png?width=36&height=36&mode=crop&upscale=false' />Yahoo Together</a>, this has not changed. Yahoo Together is more similar to <a href='//alternativeto.net/software/discord-app/'><img alt='Small Discord icon' class='mini-app-icon' src='//d2.alternativeto.net/dist/icons/discord-app_108230.png?width=36&height=36&mode=crop&upscale=false' />Discord</a> than it is to Yahoo Messenger in how it approaches conversation management.</p>
+<p>As <a href="https://www.engadget.com/2018/10/04/yahoo-together-group-chat-app/" rel="nofollow">Mariella Moon at Engadget notes</a>, Yahoo Together has a few features that are worth noting. This includes a searchable shared file library in each group conversation, enabling people that utilize Yahoo Together for collaboration or productivity to easily access files previously uploaded. Of course, at that point, collaboration software such as <a href='//alternativeto.net/software/slack/'><img alt='Small Slack icon' class='mini-app-icon' src='//d2.alternativeto.net/dist/icons/slack_59044.png?width=36&height=36&mode=crop&upscale=false' />Slack</a> may be more appropriate. There is also &quot;smart alert&quot; functionality that parses dates and times in messages and allows users to click on them in order to set a reminder that will notify the user when that time comes to pass.</p>
+<p>Again, as noted back in June, messaging services like Yahoo Messenger that are less focused on group conversations include <a href='//alternativeto.net/software/signal-private-messenger/'><img alt='Small Signal icon' class='mini-app-icon' src='//d2.alternativeto.net/dist/icons/signal-private-messenger_104976.png?width=36&height=36&mode=crop&upscale=false' />Signal</a>, <a href='//alternativeto.net/software/telegram/'><img alt='Small Telegram icon' class='mini-app-icon' src='//d2.alternativeto.net/dist/icons/telegram_122545.png?width=36&height=36&mode=crop&upscale=false' />Telegram</a>, and <a href='//alternativeto.net/software/whatsapp/'><img alt='Small WhatsApp Messenger icon' class='mini-app-icon' src='//d2.alternativeto.net/dist/icons/whatsapp_58669.png?width=36&height=36&mode=crop&upscale=false' />WhatsApp Messenger</a>.</p>
+<p>Further coverage:<br />
+<a href="https://www.engadget.com/2018/10/04/yahoo-together-group-chat-app/" rel="nofollow">Engadget</a><br />
+<a href="https://www.theverge.com/2018/10/4/17935276/yahoo-together-app-announced-android-ios-slack-clone" rel="nofollow">The Verge</a></p>
+</p>
+<a class="btn btn--info" href="https://alternativeto.net/news/2018/10/yahoo-messenger-s-replacement-has-launched-is-now-called-yahoo-together">View Complete Article</a>
