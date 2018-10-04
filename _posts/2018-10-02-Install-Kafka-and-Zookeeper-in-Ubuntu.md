@@ -13,21 +13,49 @@ P.S Filebeat 를 기반으로 IIS Log 를 수집해 본다.
 
 <!--more-->
 
-- Kafka 설치
 
-```
-wget http://apache.mirror.cdnetworks.com/kafka/2.0.0/kafka_2.11-2.0.0.tgz
-tar -xvf kafka_2.11-2.0.0.tgz
-```
-
-
-- Zookeeper 설치
+# Zookeeper 설치
 
 ```
 wget http://apache.mirror.cdnetworks.com/zookeeper/stable/zookeeper-3.4.12.tar.gz
 tar -xvf zookeeper-3.4.12.tar.gz
 ```
 
+# Kafka 설치
+
+```
+wget http://apache.mirror.cdnetworks.com/kafka/2.0.0/kafka_2.11-2.0.0.tgz
+tar -xvf kafka_2.11-2.0.0.tgz
+```
+
+## Kafka 테스팅
+
+Kafka 가 잘 구성되었는지 테스트 한다.
+
+# Kafka Monitoring
+
+Kafka 가 잘 구동하는지 모니터링한다.
+
+## Kafka Offset Monitoring
+
+Kafka Offset Monitor 를 구성하여 logstash Consumer 와 Metricbeat Producer 의 상태를 확인한다.
+
+jar 파일을 다운로드 후 아래의 명령어를 실행한다.
+
+```
+java -cp KafkaOffsetMonitor-assembly-0.2.1.jar \
+     com.quantifind.kafka.offsetapp.OffsetGetterWeb \
+     --zk zk-server1,zk-server2 \
+     --port 8080 \
+     --refresh 10.seconds \
+     --retain 2.days
+```
+
+>  zk the ZooKeeper hosts
+ port on what port will the app be available
+ refresh how often should the app refresh and store a point in the DB
+ retain how long should points be kept in the DB
+ dbName where to store the history (default 'offsetapp')
 
 # 참조
 
@@ -35,6 +63,7 @@ tar -xvf zookeeper-3.4.12.tar.gz
   - 정리가 가장 잘되어 있음
 - [Apache Kafka Quick Start 공식 문서][5]
   - 공식 문서가 좋다.
+- [Kafka Offset Monitor][6]
 
 <!-- References Link -->
 
@@ -48,6 +77,8 @@ This is a sample code to write down reference link in markdown document.
 [3]: http://programist.tistory.com/entry/Apache-Kafka-%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81-%EA%B5%AC%EC%B6%95-%EB%B0%8F-%ED%85%8C%EC%8A%A4%ED%8A%B8 "Apache-Kafka-클러스터링-구축-및-테스트"
 [4]: https://taetaetae.github.io/2017/11/02/what-is-kafka/ "what-is-kafka"
 [5]: http://kafka.apache.org/quickstart "Apache Kafka Quick Start"
+[6]: http://quantifind.github.io/KafkaOffsetMonitor/ "Kafka Offset Monitor"
+
 <!--
 When you use image link just put it on the document.
 
