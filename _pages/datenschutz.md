@@ -18,9 +18,19 @@ Wir informieren Sie, welche personenbezogenen Daten wir erheben, wofür diese
 benötigt werden, wie wir sie verarbeiten sowie über Ihre Rechte nach geltendem
 Datenschutzrecht.
 
-[<i class="fa fa-download">&nbsp;</i>Informationen über die Verarbeitung personenbezogener Daten in der Schule (pdf) ](/assets/files/Datenschutzerklärung_Bestandsschüler.pdf){: .btn .btn--success}
+Informationen über die Verarbeitung personenbezogener Daten in der Schule:
+* [<i class="fa fa-download">&nbsp;</i>Schulanmeldung (ab Schuljahr 2019/20) (pdf) ](/assets/files/Datenschutzerklärung_Schulanmeldung.pdf){: .btn .btn--success}
+* [<i class="fa fa-download">&nbsp;</i>Bestandsschüler (Einschulung vor Schuljahr 2019/20) (pdf) ](/assets/files/Datenschutzerklärung_Bestandsschüler.pdf){: .btn .btn--success}
 
 ## Webseite
+
+### 0. Vorwort
+
+Wir haben uns das Ziel gesetzt keine persönlichen Daten zu sammeln, verwerten
+oder zu verkaufen. Dazu verwenden wir eine rein statisch generierte Webseite
+([Quelltext](https://github.com/brandwerder/www.brandwerder.de)), speichern
+keine Cookies und versuchen die direkte Einbindung von Drittanbietern so weit
+wie möglich zu vermeiden.
 
 ### 1. Verantwortlicher und Datenschutzbeauftragter
 
@@ -90,6 +100,8 @@ Abs. 1 S. 1 lit. f EU-DSGVO):
 * Betriebssystem und dessen Oberfläche
 * Sprache und Version der Browsersoftware.
 
+Diese Daten werden maximal für 7 Tage gespeichert und dann gelöscht.
+
 Zusätzlich zu den zuvor genannten Daten werden bei Ihrer Nutzung unserer
 Website Cookies auf Ihrem Rechner gespeichert. Bei Cookies handelt es sich um
 kleine Textdateien, die auf Ihrer Festplatte dem von Ihnen verwendeten Browser
@@ -143,7 +155,32 @@ Browser-Verlauf manuell zu löschen.] -->
 <!-- 1: Diesen Absatz können Sie entfernern, wenn Sie keine Cookies verwenden bzw.
 müssen ihn in Anhängigkeit von den eingesetzten Cookies anpassen. -->
 
+### 5. Auftragsverarbeiter
 
-### 5. Nutzung von Diensten und Inhalten Dritter
+Wir verwenden [STRATO AG](https://strato.de) als E-Mail Provider und
+DNS Provider, mit denen wir einen Auftragsverarbeitungsvertrag geschlossen
+haben (siehe
+[Datenschutzerklärung](https://www.strato.de/faq/article/2763/Fragen-zur-Auftragsverarbeitungsvertrag-AVV-und-der-neuen-EU-Datenschutzgrundverordnung-DSGVO.html#adv_neu)).
+Des Weiteren benutzen wir [Github Pages](https://pages.github.com/) als Hoster
+dieser Seite (siehe [Datenschutzerklärung](https://help.github.com/articles/github-privacy-statement/)).
 
-Wir
+### 6. Nutzung von Diensten und Inhalten Dritter
+
+Wir benutzen Drittdienste um eine bessere Nutzererfahrung anzubieten.
+
+#### OpenStreetMap
+
+Wir binden die Landkarten des Dienstes "OpenStreetMap" ein
+(https://www.openstreetmap.org), welche das Kartenmaterial unter der [Open
+Data Commons Open Database Lizenz
+(ODbL)](https://en.wikipedia.org/wiki/Open_Database_License) anbietet und von
+der [OpenStreetMap Foundation (OSMF)](https://www.osmfoundation.org/)
+bereit gestellt wird. [Datenschutzerklärung von
+OpenStreetMap](https://wiki.openstreetmap.org/wiki/Privacy_Policy).
+
+Nach unserer Kenntnis werden die Daten der Nutzer durch OpenStreetMap
+ausschließlich zu Zwecken der Darstellung der Kartenfunktionen und
+Zwischenspeicherung der gewählten Einstellungen verwendet. Zu diesen Daten
+können insbesondere IP-Adressen und Standortdaten der Nutzer gehören, die
+jedoch nicht ohne deren Einwilligung (im Regelfall im Rahmen der Einstellungen
+ihrer Mobilgeräte vollzogen), erhoben werden.
