@@ -51,6 +51,36 @@ java -cp KafkaOffsetMonitor-assembly-0.2.1.jar \
      --retain 2.days
 ```
 
+## Kafka Manager 사용
+
+Kafka Manager 를 설치하여 구동 한다.
+
+```
+git clone https://github.com/yahoo/kafka-manager
+sbt clean dist
+cd target/universal
+unzip kafka-manager-1.3.3.21
+
+```
+
+`application.conf` 파일을 수정한다.
+
+```
+vim conf/application.conf
+
+.... (중략) ...
+kafka-manager.zkhosts="192.168.2.195:2181"
+.... (중략) ...
+```
+
+kafka manager 를 구동한다.
+
+```
+bin/kafka-manager
+```
+
+구동화면 추가 예정
+
 >  zk the ZooKeeper hosts
  port on what port will the app be available
  refresh how often should the app refresh and store a point in the DB
