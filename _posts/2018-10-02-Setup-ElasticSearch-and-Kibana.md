@@ -135,6 +135,15 @@ node.data: true # 주석을 해제한다.
 
 ```
 
+## ElasticSearch index 리스트 출력
+
+JSON 인터페이스를 통해 indices 를 확인할 수 있다. 더불어 `?v&pretty` 옵션을 추가한다면 테이블 형태의 결과를 확인 가능하다.
+
+```
+curl -XGET 'localhost:9200/_cat/indices?v&pretty'
+```
+
+![indices 리스트 화면][list-indices]
 
 ## Directory Structure of ElasticSearch (ElasticSearch 디렉터리 구조)
 
@@ -239,7 +248,7 @@ This is sample code to embed an image in markdown document.s
 
 [kibana-monitoring]: /assets/img/2018-10-02-Setup-ElasticSearch-and-Kibana/kibana-cluster-overview.png
 [kibana-mgmt]: /assets/img/2018-10-02-Setup-ElasticSearch-and-Kibana/kibana-mgmt.png
-
+[list-indices]: /assets/img/2018-10-02-Setup-ElasticSearch-and-Kibana/elastic-search-index.png
 <!-- End of Documents -->
 
 If you like the post, don't forget to give me a star :star2:.
