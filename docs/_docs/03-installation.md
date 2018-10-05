@@ -2,7 +2,7 @@
 title: "Installation"
 permalink: /docs/installation/
 excerpt: "Instructions for installing the theme for new and existing Jekyll based sites."
-last_modified_at: 2018-03-20T15:59:00-04:00
+last_modified_at: 2018-10-04T20:16:07-04:00
 toc: true
 ---
 
@@ -20,6 +20,9 @@ If you plan to host with GitHub Pages be sure to properly setup [**jekyll-remote
 
 **ProTip:** Be sure to remove `/docs` and `/test` if you forked or downloaded Minimal Mistakes. These folders contain documentation and test pages for the theme and you probably don't littering up in your repo.
 {: .notice--info}
+
+**Note:** The theme uses the [jekyll-include-cache](https://github.com/benbalter/jekyll-include-cache) plugin which will need to be installed in your `Gemfile` and added to the `plugins` array of `_config.yml`. Otherwise you'll throw `Unknown tag 'include_cached'` errors at build.
+{: .notice--warning}
 
 ## Theme Migration
 
@@ -80,6 +83,7 @@ gem "minimal-mistakes-jekyll"
 #   gem "jekyll-feed"
 #   gem "jemoji"
 #   gem "jekyll-data"
+#   gem "jekyll-include-cache"
 #
 # If you have any other plugins, put them here!
 group :jekyll_plugins do
@@ -95,7 +99,7 @@ To maintain a local Jekyll environment in sync with GitHub Pages replace the `ge
 $ bundle install
 ```
 
-**Note:** The [GitHub Pages gem](https://github.com/github/pages-gem) installs additional dependencies that may need to be added to your `Gemfile` if you decide to remove the `gem "github-pages"` eg. `jekyll-paginate`, `jekyll-sitemap`, `jekyll-feed`, etc.
+**Note:** The [GitHub Pages gem](https://github.com/github/pages-gem) installs additional dependencies that may need to be added to your `Gemfile` if you decide to remove the `gem "github-pages"` eg. `jekyll-paginate`, `jekyll-sitemap`, `jekyll-feed`, `jekyll-include-cache`, etc.
 {: .notice--warning}
 
 <figure>

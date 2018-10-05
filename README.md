@@ -72,6 +72,8 @@ Additional sample posts are available under [posts archive][year-archive] on the
 
 There are three ways to install the theme: as a Ruby gem (for self-hosted sites), as a Ruby gem + jekyll-remote-theme plugin (GitHub Pages hosted sites), or forking/directly copying all of the theme files into your project.
 
+**Note:** The theme uses the [jekyll-include-cache](https://github.com/benbalter/jekyll-include-cache) plugin which will need to be installed in your `Gemfile` and added to the `plugins` array of `_config.yml`. Otherwise you'll throw `Unknown tag 'include_cached'` errors at build.
+
 ### Ruby Gem Method
 
 1. Install the theme as a Ruby Gem by adding it to your `Gemfile` like so:
