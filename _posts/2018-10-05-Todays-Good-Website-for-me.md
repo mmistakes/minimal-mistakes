@@ -52,6 +52,16 @@ ELK 도커를 구성하기 위한 상세한 가이드가 매력적이다.
 링크
 - [elk-docker guide/documentation][3]
 
+# 항상 ML 그리고 ML 을 염원하라 (Machine Learning)
+
+머신 러닝 그는 멀지만 가까운 친구....
+
+해야 되는데... 하고 싶은데... 학습량이 너무 많아... 환장하겠다는...
+
+링크
+- [모두를 위한 머신러닝/딥러닝 강의][4]
+
+
 <!-- References Link -->
 
 <!--
@@ -62,6 +72,7 @@ This is a sample code to write down reference link in markdown document.
 [1]: https://novemberde.github.io/list.html "KH BYUN's dev log"
 [2]: https://discuss.elastic.co/t/kibana-dashboard-error-set-fielddata-true-on-fieldname/82812 "discuss elastic - fielddata error in kibana"
 [3]: https://elk-docker.readthedocs.io/#forwarding-logs-filebeat "elk-docker guide/documentation"
+[4]: https://hunkim.github.io/ml/ "모두를 위한 머신러닝/딥러닝 강의"
 <!-- Images Reference Links -->
 
 <!--
