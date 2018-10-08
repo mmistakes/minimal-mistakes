@@ -35,6 +35,10 @@ metricbeat.modules:
   period: 60s
 ```
 
+# Install Metricbeat as Windows Services
+
+
+
 # 참조
 - [Metricbeat module Windows Sample][1]
   - Metricbeat 모듈 설정 샘플(본문 첨부 참조)
