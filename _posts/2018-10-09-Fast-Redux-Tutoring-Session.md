@@ -4,6 +4,7 @@ key: 20181009
 tags: reactjs redux
 excerpt: "빠른 Redux 개인 교습 제공"
 toc: true
+toc_sticky: true
 ---
 
 - Summaries
