@@ -18,57 +18,6 @@
   },
   {
     "image_path": null,
-    "alt": "1. Studientag: Schule und Hort geschlossen",
-    "title": "1. Studientag: Schule und Hort geschlossen",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NGR0M2huZ3Y3b3JyOTgybTE5YmE2NTFxbWsgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2018-10-08",
-      "date_time": null
-    },
-    "end": {
-      "date": "2018-10-09",
-      "date_time": null
-    },
-    "created": "2018-08-26T09:17:07.000Z",
-    "updated": "2018-08-26T09:17:07.164Z"
-  },
-  {
-    "image_path": null,
-    "alt": "1. Treffen Arbeitsgruppe Kunst",
-    "title": "1. Treffen Arbeitsgruppe Kunst",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MGVxMHE3czdkbXQyMTNxOHBvZzUxajB2cDggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2018-10-09T11:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2018-10-09T12:30:00+02:00"
-    },
-    "created": "2018-09-17T09:04:54.000Z",
-    "updated": "2018-09-17T09:04:54.789Z"
-  },
-  {
-    "image_path": null,
-    "alt": "1. Gesamtkonferenz",
-    "title": "1. Gesamtkonferenz",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NzNrOWs4Z2RwY2tkbHNyMGszdGRrb3E3N3IgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2018-10-09T16:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2018-10-09T18:30:00+02:00"
-    },
-    "created": "2018-09-28T15:16:40.000Z",
-    "updated": "2018-09-28T15:16:40.840Z"
-  },
-  {
-    "image_path": null,
     "alt": "1. Treffen Arbeitsgruppe Musik",
     "title": "1. Treffen Arbeitsgruppe Musik",
     "excerpt": null,
@@ -100,5 +49,56 @@
     },
     "created": "2018-08-26T09:21:08.000Z",
     "updated": "2018-08-26T09:21:08.564Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Laternenfest",
+    "title": "Laternenfest",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MG9taXAxbGwwOGE4MWRodWRtNnVvdDJxNHAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2018-11-13T16:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2018-11-13T18:00:00+01:00"
+    },
+    "created": "2018-08-26T09:18:45.000Z",
+    "updated": "2018-08-26T09:18:45.743Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Weihnachtssingen",
+    "title": "Weihnachtssingen",
+    "excerpt": "Veranstaltung in der Aula, Eltern herzlich willkommen!",
+    "url": "https://www.google.com/calendar/event?eid=MGtnc3VwdWVoa284Z3JobDFjam8yaG8yZ2wgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2018-12-21T11:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2018-12-21T12:00:00+01:00"
+    },
+    "created": "2018-08-26T09:19:44.000Z",
+    "updated": "2018-08-26T09:19:44.638Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Hort geschlossen",
+    "title": "Hort geschlossen",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NXV0ZG9jbG5jbm9sZmQ5NGM1OHJia2d0NHAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2018-12-27",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-01-05",
+      "date_time": null
+    },
+    "created": "2018-08-14T14:23:35.000Z",
+    "updated": "2018-08-14T14:23:35.382Z"
   }
 ]
