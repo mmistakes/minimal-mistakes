@@ -5,6 +5,10 @@ tags: reactjs redux
 excerpt: "빠른 Redux 개인 교습 제공"
 toc: true
 toc_sticky: true
+header:
+  video:
+    id: XsxDH4HcOWA
+    provider: youtube
 ---
 
 - Summaries
@@ -13,6 +17,7 @@ Redux 튜토리얼은 React 프레임워크를 힘을 충분히 활용하지 않
 
 <!-- more -->
 
+{% include video id="XsxDH4HcOWA" provider="youtube" %}
 
 
 
