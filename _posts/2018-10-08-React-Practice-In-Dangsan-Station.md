@@ -3,6 +3,9 @@ title: React Practice In Dangsan Station
 key: 20181008
 tags: reactjs nodejs practice
 excerpt: "당산역에서 React 연습"
+toc: true
+toc_label: "Table of React Practice"
+toc_icon: "gear"
 ---
 
 - Summaries
