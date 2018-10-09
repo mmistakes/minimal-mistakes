@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-10-04T20:16:47-04:00
+last_modified_at: 2018-10-09T13:55:44-04:00
 toc: true
 ---
 
@@ -23,6 +23,7 @@ toc: true
 
 ### Bug Fixes
 
+- Fix Lunr search index merging words. [#1883](https://github.com/mmistakes/minimal-mistakes/issues/1883)
 - Properly apply `relative_url` filter to internal links in header overlay `actions` array.
 
 ## [4.13.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.13.0)
