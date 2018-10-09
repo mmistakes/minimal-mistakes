@@ -3,6 +3,8 @@ title: Applying mmistakes in github.io
 key: 20181001
 tags: mmistakes github
 excerpt: "github.io 에서 jekyll mmistakes 구성하기"
+toc: true
+toc_sticky: true
 ---
 
 # Summaries
@@ -24,7 +26,7 @@ Jekyll 을 이용해서 github 에 블로그를 구성하였다. 여기에 팁�
 |excerpt|여기서 처음보긴하는데 |
 
 
-```
+```markdown
 title: "Applying mmistakes in github.io"
 key: 20181001
 tags: mmistakes github
@@ -34,11 +36,26 @@ excerpt: "Foo Bar design system including logo mark, website design, and brandin
 
 # jekyll 코드 블록 삽입
 
-추가 예정 ... 언젠가는 ?? 
+추가 예정 ... 언젠가는 ??
 
-## 참조
 
-#
+# Embed Youtube in Markdown
+
+아래와 같이 코드를 마크다운 문서에 입력한다.
+
+```
+{% include video id="XsxDH4HcOWA" provider="youtube" %}
+```
+
+Sample: 
+{% include video id="XsxDH4HcOWA" provider="youtube" %}
+
+
+
+# 참조
+- [mmistakes' syntax highlighting][1]
+- [mmistakes' helpers][2]
 
 <!-- References Link -->
 [1]: https://mmistakes.github.io/minimal-mistakes/markup-syntax-highlighting/ ""
+[2]: https://mmistakes.github.io/minimal-mistakes/docs/helpers/# "mmistakes' helpers"
