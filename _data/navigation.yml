@@ -4,8 +4,6 @@ main:
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "Introduction"
     url: https://userprofileguide.github.io/A-Guidebook-To-User-Profile-with-Data-Science/
-  - title: "About"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "Sample Posts"
     url: /year-archive/
   - title: "Sample Collections"
