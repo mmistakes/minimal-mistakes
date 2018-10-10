@@ -288,5 +288,3 @@ defaults:
       comments: # true
       share: true
       related: true
-
-theme: "minimal_mistakes_jekyll"
