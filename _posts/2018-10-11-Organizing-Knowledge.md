@@ -106,4 +106,47 @@ toc_sticky: true
     - 변화하는 기능 변화에 대응
 - 서버 어플리케이션 지정
   - django 기반
--
+- 클라이언트 어플리케이션
+  - Menu 기반 구성
+    - React Routing
+    - Layout 디자인
+      - 다양한 Layout 구조를 지정
+    - 다국어 지원
+      - boilerplate 에 보면 다국어를 지원하는 구조가 있다.
+  - 컴포넌트 개발
+    - Dumb, Smart 컴포넌트를 적절히 사용하여 단위 기능 컴포넌트를 개발한다.
+    - 프로젝트 디렉터리 구조 관리가 중요한데 시뮬레이션이 필요하다.
+  - 위지윅 방식의 문제 풀이 서비스 구현
+    - 단위 코드를 작성하여 예상한 결과가 구현될 수 있는지 확인한다.
+- 오픈소스 프로젝트 찾아보기
+  - react 를 기반으로 원하는 기능을 개발하여 공개했다면 조금의 수정으로 구현할 수 있다.
+- django server side rendering
+  - 장고를 기반으로 server side rendering 을 할 수 있다고 한다. 방법을 정리해 둔다.
+- push 기능 관리
+  - chrome 의 알림 기능을 활용하여 push 받을 수 있도록 한다.
+    - [integrating push notifications in your node react web app][1]
+    - [React PWA (Progressive Web Application) Guide App][2]
+    - [Code Lab Push Notifications][3]
+
+
+<!-- References Link -->
+[1]: https://medium.com/@jasminejacquelin/integrating-push-notifications-in-your-node-react-web-app-4e8d8190a52c "integrating push notifications in your node react web app"
+[2]: https://github.com/codebusking/react-pwa-guide-app "react-pwa-guide-app"
+[3]: https://developers.google.com/web/fundamentals/codelabs/push-notifications/ "Code Lab Push Notifications in google Developers"
+
+<!-- Images Reference Links -->
+
+<!--
+When you use image link just put it on the document.
+
+![kibana 모니터링 화면][kibana-monitoring]
+
+This is sample code to embed an image in markdown document.s
+[kibana-monitoring]: /assets/img/2018-10-02-Setup-ElasticSearch-and-Kibana/kibana-cluster-overview.png
+-->
+
+<!-- End of Documents -->
+
+If you like the post, don't forget to give me a star :star2:.
+
+<iframe src="https://ghbtns.com/github-btn.html?user=code-machina&repo=code-machina.github.io&type=star&count=true"  frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
