@@ -4,13 +4,11 @@ permalink: /samples/
 author_profile: false
 ---
 
-To download my C.V. in .pdf format, click [here.](/pdfs/KenBenoitCV.pdf)
-
 ### Menu
 
-- [Qualifications](qualifications)
-- [Publications](publications)
-- [Grants and Awards](grants-and-awards)
-- [Service](service)
-- [Teaching](teaching)
-- [Conference and Presentations](conferences)
+
+- 银行征信系统
+
+- 社交网络
+
+- 购物网站
