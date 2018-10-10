@@ -36,7 +36,14 @@
 
           <div class="archive__item-excerpt">
           {% if event.start.date and event.end.date %}
-              <p><i>{{ event.start.date | date: "%d.%m.%Y" }} - {{ event.end.date | date: "%d.%m.%Y" }}</i></p>
+              {% capture start_date %}{{event.start.date | date: "%d.%m.%Y"}}{% endcapture %}
+              {% comment %}-60 um auf den vorherigen Tag zu kommen{% endcomment %}
+              {% capture end_date %}{{event.end.date | date: "%s" | minus: 60 | date: "%d.%m.%Y"}}{% endcapture %}
+              {% if start_date == end_date %}
+                <p><i>{{ start_date }}</i></p>
+              {% else %}
+                <p><i>{{ start_date }} - {{ end_date }}</i></p>
+              {% endif %}
           {% elsif event.start.date_time and event.end.date_time %}
             {% capture start_date %}{{event.start.date_time | date: "%d.%m.%Y"}}{% endcapture %}
             {% capture end_date %}{{event.end.date_time | date: "%d.%m.%Y"}}{% endcapture %}
