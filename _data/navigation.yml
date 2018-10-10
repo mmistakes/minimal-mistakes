@@ -1,6 +1,8 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "Introduction"
-    url: https://userprofileguide.github.io/A-Guidebook-To-User-Profile-with-Data-Science/
+  - title: "技术原理"
+    url: /technical_resources/
+  - title: "案例分析"
+    url: /samples/
+  - title: "练习"
+    url: /practice/
