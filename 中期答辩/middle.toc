@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{项目进展}{3}{0}{1}
+\beamer@sectionintoc {2}{现阶段问题}{4}{0}{2}
+\beamer@sectionintoc {3}{财务情况}{5}{0}{3}
+\beamer@sectionintoc {4}{后续工作安排}{6}{0}{4}
