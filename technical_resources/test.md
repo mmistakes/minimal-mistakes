@@ -33,23 +33,24 @@ Python 中的变量赋值不需要类型声明。
 等号（=）用来给变量赋值。
 等号（=）运算符左边是一个变量名,等号（=）运算符右边是存储在变量中的值。例如：
 
-<pre><code>
+```
 counter = 100 # 赋值整型变量<br>
 miles = 1000.0 # 浮点型<br>
 name = "John" # 字符串
 print counter<br>
 print miles<br>
 print name
-</code></pre>
+```
 
 以上实例中，100，1000.0和"John"分别赋值给counter，miles，name变量。
 执行以上程序会输出如下结果：
 
-<pre><code>
+
+```
 100<br>
 1000.0<br>
 John
-</code></pre>
+```
 
 ###### 2.标准数据类型
 在内存中存储的数据可以有多种类型。<br>
