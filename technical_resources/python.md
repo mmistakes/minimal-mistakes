@@ -1,6 +1,6 @@
 ---
-title: "Python技术基础"
-type: cv
+title: "技术基础"
+path: ""
 ---
 
 
@@ -34,23 +34,23 @@ Python 中的变量赋值不需要类型声明。
 等号（=）用来给变量赋值。
 等号（=）运算符左边是一个变量名,等号（=）运算符右边是存储在变量中的值。例如：
 
-```
+<pre><code>
 counter = 100 # 赋值整型变量<br>
 miles = 1000.0 # 浮点型<br>
 name = "John" # 字符串
 print counter<br>
 print miles<br>
-print name``
-```
+print name
+</code></pre>
 
 以上实例中，100，1000.0和"John"分别赋值给counter，miles，name变量。
 执行以上程序会输出如下结果：
 
-```
+<pre><code>
 100<br>
 1000.0<br>
 John
-```
+</code></pre>
 
 ###### 2.标准数据类型
 在内存中存储的数据可以有多种类型。<br>
@@ -107,7 +107,7 @@ python的字串列表有2种取值顺序:
 
 加号（+）是字符串连接运算符，星号（\*）是重复操作。如下实例：
 
-<pre><code>
+<per><code>
 str = 'Hello World!'
 print str           
 print str[0]        <br>
@@ -118,7 +118,7 @@ print str + "TEST"
 </code></pre>
 
 以上实例输出结果:
-<pre><code>
+<code>
 Hello World!<br>
 H<br>
 llo<br>
@@ -145,7 +145,7 @@ print list[1:3]          <br>
 print list[2:]           <br>
 print tinylist * 2       <br>
 print list + tinylist    <br>
-</pre></code>
+</code></pre>
 以上实例输出结果：
 
 <pre><code>
@@ -155,7 +155,7 @@ runoob<br>
 [2.23, 'john', 70.2]<br>
 [123, 'john', 123, 'john']<br>
 ['runoob', 786, 2.23, 'john', 70.2, 123, 'john']
-</pre></code>
+</code></pre>
 ###### (4) 元组
 
 元组是另一个数据类型，类似于List（列表）。
@@ -181,24 +181,24 @@ print tinydict.values()    <br>
 
 输出结果为：
 
-<pre><code>
+<code>
 This is one <br>
 This is two<br>
 {'dept': 'sales', 'code': 6734, 'name': 'john'}<br>
 ['dept', 'code', 'name']<br>
 ['sales', 6734, 'john']<br>
-</code></pre>
+</code>
 
 ###### (6) 数据类型转换
 
 
-| 函数             | 描述            |
+|函数             | 描述            |
 | :-------------: | :-------------: |
 | int(x [,base])  | 将x转换为一个整数 |
-|  long(x[,base]) | 将x转换为一个长整数 |
-| float(x)        | 将x转换到一个浮点数 |
-| str(x)          | 将对象 x 转换为字符串 |
-| tuple(s)        | 将序列 s 转换为一个元组 |
+|  long(x[,base]) | 将x转换为一个长整数|
+| float(x)        | 将x转换到一个浮点数|
+| str(x)          | 将对象 x 转换为字符串|
+| tuple(s)        | 将序列 s 转换为一个元组|
 | list(s)         | 将序列 s 转换为一个列表 |
 
 ##### Python运算符
@@ -229,28 +229,28 @@ This is two<br>
 
 ###### 2. 比较运算符
 
-| 运算符          | 描述           | 实例           |
+| 运算符          | 描述           |实例           |
 | :------------- | :------------- |:------------- |
-| ==             | 等于 - 比较对象是否相等 | (a == b) 返回 False      |
-| !=             | 不等于 - 比较两个对象是否不相等|(a != b) 返回 true |
-| >              | 大于 - 返回x是否大于y | (a > b) 返回 False |
-| <              | 小于 - 返回x是否小于y | (a < b) 返回 true  |
-| >=             | 大于等于 - 返回x是否大于等于y | (a >= b) 返回 False |
-| <=             | 小于等于 - 返回x是否小于等于y | (a <= b) 返回 true |
-| <>             | 不等于 - 比较两个对象是否不相等 | (a <> b) 返回 true |
+| ==             | 等于 - 比较对象是否相等|(a == b) 返回 False      |
+| !=             |不等于 - 比较两个对象是否不相等|(a != b) 返回 true|
+| >              | 大于 - 返回x是否大于y|(a > b) 返回 False |
+| <              | 小于 - 返回x是否小于y|(a < b) 返回 true  |
+| >=             |大于等于 - 返回x是否大于等于y|(a >= b) 返回 False|
+| <=             |小于等于 - 返回x是否小于等于y|(a <= b) 返回 true|
+| <>             |不等于 - 比较两个对象是否不相等|(a <> b) 返回 true|
 
 
 ###### 3. 赋值运算符
 
-| 运算符          | 描述           | 实例           |
+| 运算符          | 描述           |实例           |
 | :------------- | :------------- |:------------- |
-| =              | 简单的赋值运算符| c = a + b 将 a + b 的运算结果赋值为 c|
-| +=             | 加法赋值运算符  | c += a 等效于 c = c + a|
-| -=             | 减法赋值运算符  | c -= a 等效于 c = c - a|
-| \* =       | 乘法赋值运算符  | c \*= a 等效于 c = c \* a|
+| =              | 简单的赋值运算符|c = a + b 将 a + b 的运算结果赋值为 c|
+| +=             | 加法赋值运算符  |c += a 等效于 c = c + a|
+| -=             | 减法赋值运算符  |c -= a 等效于 c = c - a|
+| *=             | 乘法赋值运算符  |c \*= a 等效于 c = c \* a|
 | /=             | 除法赋值运算符  |c /= a 等效于 c = c / a|
 | %=             | 取模赋值运算符  |c %= a 等效于 c = c % a|
-| \**=            | 幂赋值运算符    |c \**= a 等效于 c = c ** a|
+| **=            | 幂赋值运算符    |c \**= a 等效于 c = c ** a|
 | //=            | 取整除赋值运算符|c //= a 等效于 c = c // a|
 
 ###### 4. 位运算符
@@ -309,10 +309,10 @@ Python程序语言指定任何非0和非空（null）值为true，0 或者 null�
 Python 编程中 if 语句用于控制程序的执行，基本形式为:
 
 
-``if 判断条件:``
+<code>if 判断条件:</code>
 
     执行语句……
-``else:``
+<code>else:</code>
 
     执行语句……
 
@@ -320,8 +320,7 @@ Python 编程中 if 语句用于控制程序的执行，基本形式为:
 else 为可选语句，当需要在条件不成立时执行内容则可以执行相关语句
 
 当判断条件为多个值时，可以使用以下形式：
-
-``if 判断条件1:``
+if 判断条件1:
 
     执行语句1……
 
@@ -389,14 +388,14 @@ else 为可选语句，当需要在条件不成立时执行内容则可以执行
 def functionname( parameters ):
   <code>"函数_文档字符串"
   function_suite<br>
-  return [expression]</pre></code>
+  return [expression]</code></pre>
 
 <pre><code>
 def printme( str ):
    "打印传入的字符串到标准显示设备上"
    print str
    return
-</pre></code>
+</code></pre>
 
 ###### 2. 函数调用
 定义一个函数只给了函数一个名称，指定了函数里包含的参数，和代码块结构。
@@ -426,9 +425,9 @@ Python 提供了必要的函数和方法进行默认情况下的文件基本操�
 
 你必须先用Python内置的open()函数打开一个文件，创建一个file对象，相关的方法才可以调用它进行读写<br>
 语法：
-<pre><code>
+<code>
 file object = open(file_name , access_mode, buffering)
-</code></pre>
+</code>
 
 各个参数的细节如下：
 * file_name：file_name变量是一个包含了你要访问的文件名称的字符串值
@@ -514,7 +513,7 @@ fo.close()
 
 结果如下：
 
-``文件名:  foo.txt``
+<code>文件名:  foo.txt</code>
 
 ###### (4). write()方法
 
@@ -523,7 +522,7 @@ write()方法不会在字符串的结尾添加换行符('\n')：
 
 语法：
 
-`` fileObject.write(string)``
+<code>fileObject.write(string)</code>
 
 在这里，被传递的参数是要写入到已打开文件的内容
 
