@@ -137,7 +137,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-       url: https://github.com/userprofileguide/userprofileguide.github.io
+      #url: 
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
