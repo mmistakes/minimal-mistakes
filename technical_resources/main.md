@@ -6,5 +6,3 @@ author_profile: false
 
 
 - [Python](python)
-
-- [test](test)
