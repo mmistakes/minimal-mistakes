@@ -5,4 +5,4 @@ author_profile: false
 ---
 
 
-- [Python 简介](python)
+- [Python](python)
