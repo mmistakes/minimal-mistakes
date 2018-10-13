@@ -1,18 +1,11 @@
 # Authors
 
-Billy Rick:
-  name        : "Billy Rick"
-  uri         : "http://thewhip.com"
-  email       : "billy@rick.com"
-  bio         : "What do you want, jewels? I am a very extravagant man."
+Mark Mitchell:
+  name        : "Mark Mitchell"
+  uri         : "mitch103.github.io"
+  email       : "mitch103@go.stockton.edu"
+  bio         : "B.A. in Sociology, Minor in Spanish"
   avatar      : "bio-photo-2.jpg"
   twitter     : "extravagantman"
   google_plus : "BillyRick"
 
-Cornelius Fiddlebone:
-  name        : "Cornelius Fiddlebone"
-  email       : "cornelius@thewhip.com"
-  bio         : "I ordered what?"
-  avatar      : "bio-photo.jpg"
-  twitter     : "rhymeswithsackit"
-  google_plus : "CorneliusFiddlebone"
