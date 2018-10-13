@@ -7,8 +7,8 @@ author_profile: false
 ### Menu
 
 
-- 银行征信系统
+- [银行征信系统](bank)
 
-- 社交网络
+- [社交网络](social_media)
 
-- 购物网站
+- [购物网站](shopping)
