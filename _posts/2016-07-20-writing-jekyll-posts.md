@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: Blogging Like a Hacker
 ---
 # Heading 1
