@@ -27,6 +27,8 @@ Aufgaben u.a.: Mailverteiler; Elternbrief; Stammtisch; Website; FAQ; Willkommens
 
 ## Mailinglisten
 
+* Allgemeine Informationen zu Mailinglisten (für die Eltern) <br>
+  [<i class="fa fa-download">&nbsp;&nbsp;</i>Flyer über die Mailinglisten für die Eltern](/assets/files/gev_mailingliste_flyer.pdf){: .btn .btn--success}
 * Wie man sich auf der Verwaltungsplatform der Mailinglisten registriert, sich anmeldet und die Klassenmailingliste findet <br>
   [<i class="fa fa-download">&nbsp;&nbsp;</i>Anleitung zur Registrierung, Anmeldung und eigenen Liste](/assets/files/gev_mailingliste_1_anmelden.pdf){: .btn .btn--success}
 * Wie man Eltern in eine Mailingliste einträgt und wie man Sie wieder austrägt <br>
