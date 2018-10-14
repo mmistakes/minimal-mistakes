@@ -102,7 +102,7 @@ analytics:
 # Site Author
 author:
   name             : "Jack Stepek - Fly1ngSc0tsman"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "https://pbs.twimg.com/profile_images/1050505802312806401/KAE9DwKI_400x400.jpg"
   bio              : "Consultant, Pentester, proud Glaswegian; I will have my coffee in this life or the next."
   location         : "Glasgow, Scotland"
   email            :
