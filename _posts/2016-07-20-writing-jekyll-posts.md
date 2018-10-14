@@ -1,3 +1,7 @@
+---
+layout: post
+title: Blogging Like a Hacker
+---
 # Heading 1
 ## Heading 2
 ## Heading 3
