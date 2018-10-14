@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.10.12)  12 OCT 2018 22:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.10.12)  13 OCT 2018 20:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1513,7 +1513,7 @@ File: c70zhhei.fd 2009/09/23 4.8.2
 )
 Package CJKpunct Info: use punctuation spaces for family 'zhhei' with punctstyl
 e (quanjiao) on input line 18.
-<bg.png, id=84, 691.08188pt x 499.11469pt>
+<bg.png, id=85, 691.08188pt x 499.11469pt>
 File: bg.png Graphic file (type png)
 <use bg.png>
 Package pdftex.def Info: bg.png  used on input line 18.
@@ -1524,49 +1524,103 @@ File: zhwindowsfonts.tex 2018/05/01 v2.4.14 Windows font map loader for pdfTeX
 and DVIPDFMx (CTEX)
 ) [1
 
- <./bg.png>] (./middle.toc)
-File: bg.png Graphic file (type png)
-<use bg.png>
-Package pdftex.def Info: bg.png  used on input line 21.
-(pdftex.def)             Requested size: 378.20863pt x 273.14662pt.
- [2
-
-]
+ <./bg.png>]
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 26.
 File: bg.png Graphic file (type png)
 <use bg.png>
 Package pdftex.def Info: bg.png  used on input line 26.
 (pdftex.def)             Requested size: 378.20863pt x 273.14662pt.
+[2
+
+] (./middle.toc)
+File: bg.png Graphic file (type png)
+<use bg.png>
+Package pdftex.def Info: bg.png  used on input line 30.
+(pdftex.def)             Requested size: 378.20863pt x 273.14662pt.
  [3
 
 ]
+LaTeX Font Info:    Try loading font information for U+msa on input line 42.
+ (d:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 42.
+
+(d:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 42.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <7> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 42.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <5> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 42.
 File: bg.png Graphic file (type png)
 <use bg.png>
-Package pdftex.def Info: bg.png  used on input line 32.
+Package pdftex.def Info: bg.png  used on input line 42.
 (pdftex.def)             Requested size: 378.20863pt x 273.14662pt.
  [4
 
 ]
-File: bg.png Graphic file (type png)
-<use bg.png>
-Package pdftex.def Info: bg.png  used on input line 36.
-(pdftex.def)             Requested size: 378.20863pt x 273.14662pt.
- [5
+<website1.png, id=213, 938.21947pt x 500.29768pt>
+File: website1.png Graphic file (type png)
+<use website1.png>
+Package pdftex.def Info: website1.png  used on input line 56.
+(pdftex.def)             Requested size: 204.89142pt x 109.25697pt.
+<website2.png, id=214, 945.96268pt x 536.86285pt>
+File: website2.png Graphic file (type png)
+<use website2.png>
+Package pdftex.def Info: website2.png  used on input line 56.
+(pdftex.def)             Requested size: 192.50905pt x 109.25697pt.
 
-]
+Overfull \hbox (20.51563pt too wide) in paragraph at lines 56--56
+[][] 
+ []
+
+
+Overfull \hbox (8.13326pt too wide) in paragraph at lines 56--56
+[]  
+ []
+
 File: bg.png Graphic file (type png)
 <use bg.png>
-Package pdftex.def Info: bg.png  used on input line 40.
+Package pdftex.def Info: bg.png  used on input line 56.
+(pdftex.def)             Requested size: 378.20863pt x 273.14662pt.
+[5
+
+ <./website1.PNG> <./website2.PNG>]
+File: bg.png Graphic file (type png)
+<use bg.png>
+Package pdftex.def Info: bg.png  used on input line 63.
 (pdftex.def)             Requested size: 378.20863pt x 273.14662pt.
  [6
 
 ]
+<finance.png, id=246, 502.44858pt x 302.41554pt>
+File: finance.png Graphic file (type png)
+<use finance.png>
+Package pdftex.def Info: finance.png  used on input line 70.
+(pdftex.def)             Requested size: 299.52412pt x 180.27776pt.
 File: bg.png Graphic file (type png)
 <use bg.png>
-Package pdftex.def Info: bg.png  used on input line 44.
+Package pdftex.def Info: bg.png  used on input line 70.
 (pdftex.def)             Requested size: 378.20863pt x 273.14662pt.
  [7
+
+ <./finance.PNG>]
+File: bg.png Graphic file (type png)
+<use bg.png>
+Package pdftex.def Info: bg.png  used on input line 77.
+(pdftex.def)             Requested size: 378.20863pt x 273.14662pt.
+ [8
+
+]
+File: bg.png Graphic file (type png)
+<use bg.png>
+Package pdftex.def Info: bg.png  used on input line 85.
+(pdftex.def)             Requested size: 378.20863pt x 273.14662pt.
+ [9
 
 ]
 \tf@nav=\write6
@@ -1578,25 +1632,26 @@ Package pdftex.def Info: bg.png  used on input line 44.
 \tf@snm=\write8
 \openout8 = `middle.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 46.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 46.
- (./middle.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 46.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 46.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 87.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 87.
+
+(./middle.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 87.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 87.
 Package rerunfilecheck Info: File `middle.out' has not changed.
 (rerunfilecheck)             Checksum: E2927625C4CDC69D1C36DCC3F24F9466;324.
  ) 
 Here is how much of TeX's memory you used:
- 33002 strings out of 493905
- 609286 string characters out of 6158409
+ 33167 strings out of 493905
+ 612021 string characters out of 6158409
  641579 words of memory out of 5000000
- 35996 multiletter control sequences out of 15000+600000
- 563210 words of font info for 122 fonts, out of 8000000 for 9000
+ 36131 multiletter control sequences out of 15000+600000
+ 568596 words of font info for 139 fonts, out of 8000000 for 9000
  372 hyphenation exceptions out of 8191
  48i,19n,63p,769b,787s stack positions out of 5000i,500n,10000p,200000b,80000s
-{d:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/Windows/Fonts/sim
-hei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/F
-onts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/W
+<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/s
+imhei.ttf><c:/Windows/Fonts/simhei.ttf>{d:/texlive/2018/texmf-dist/fonts/enc/dv
+ips/base/8r.enc}<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/W
 indows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.t
 tf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/
 simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Window
@@ -1610,13 +1665,15 @@ mhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/
 Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/
 Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.
 ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts
-/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><d:/texli
-ve/2018/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><d:/texlive/2018/texmf-d
-ist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on middle.pdf (7 pages, 225113 bytes).
+/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windo
+ws/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><
+c:/Windows/Fonts/simhei.ttf><d:/texlive/2018/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.
+pfb><d:/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on middle.pdf (9 pages, 787714 bytes).
 PDF statistics:
- 388 PDF objects out of 1000 (max. 8388607)
- 268 compressed objects within 3 object streams
- 19 named destinations out of 1000 (max. 500000)
- 262 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 457 PDF objects out of 1000 (max. 8388607)
+ 318 compressed objects within 4 object streams
+ 23 named destinations out of 1000 (max. 500000)
+ 293 words of extra memory for PDF output out of 10000 (max. 10000000)
 
