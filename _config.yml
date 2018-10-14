@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Fly1ngSc0tsman.io"
 title_separator          : "-"
 name                     : "Fly1ngSc0tsman"
-description              : "An amazing website."
+description              : "Fly1ngSc0tsman.io Information Security Blog"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -101,10 +101,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Jack Stepek - Fly1ngSc0tsman"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
+  bio              : "Consultant, Pentester, proud Glaswegian; I will have my coffee in this life or the next."
+  location         : "Glasgow, Scotland"
   email            :
   links:
     - label: "Email"
