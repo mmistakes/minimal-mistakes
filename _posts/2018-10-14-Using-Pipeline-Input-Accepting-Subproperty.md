@@ -1,9 +1,9 @@
 ---
 classes: wide
-title: Accessing Pipeline Input Subproperty Without Accepting the whole Object!
+title: Input Object Subproperty Tip - Get the value without accepting the whole object!
 ---
 
-I was recently working on the TOPdeskPS module and came across the need to access a subproperty of an object that was being input.
+I was recently working on the [TOPdeskPS](https://github.com/andrewpla/topdeskps) module and came across the need to access a subproperty of an object that was being input.
 
 ```powershell
 [pscustomobject]@{
@@ -39,7 +39,7 @@ See below for a simplified version of the code.
     (
         [Parameter(Mandatory = $true,
             ValueFromPipelineByPropertyName = $true)]
-        # locations alias to accept the parent property of the linkid
+        # locations alias to capture the parent property of the linkid
         [Alias('locations')]
         $LinkId,
 
