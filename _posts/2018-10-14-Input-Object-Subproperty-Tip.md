@@ -20,7 +20,7 @@ This is a representation of the actual object that I was working with.
 ```powershell
 [pscustomboject]@{
         AssetId = 'ABCD-1234'
-        locations = ([pscustombject]@{
+        locations = ([pscustomobject]@{
             linkId = 'DEFG-5678'
             branch = 'branchName'
         })
