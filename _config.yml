@@ -75,7 +75,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : "PlaAndrew22"
+  username               : "AndrewPlaTech"
 facebook:
   username               :
   app_id                 :
@@ -99,7 +99,7 @@ analytics:
 author:
   name             : "Andrew Pla"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am passionate about PowerShell and love sharing my enthusiasm with anyone who will listen."
+  bio              : "I love PowerShell and building tools that last."
   location         : "Florida"
   email            : 
   uri              :
@@ -122,7 +122,7 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
-  twitter          : "PlaAndrew22"
+  twitter          : "AndrewPlaTech"
   vine             :
   weibo            :
   xing             :
