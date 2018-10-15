@@ -1,5 +1,5 @@
 ---
-layout: pages
+layout: page
 title: Fly1ngSc0tsman@1337# cat aboutMe
 permalink: /about/
 ---
