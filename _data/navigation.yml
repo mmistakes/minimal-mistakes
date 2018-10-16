@@ -2,7 +2,7 @@
 main:
   - title: "Home"
     url: /
-  - title: "About Mee"
+  - title: "About Me"
     url: /about-me/
   - title: "Year Archive"
 	url: /year-archive/
