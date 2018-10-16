@@ -9,11 +9,13 @@ toc: true
 
 ## Tools
 
-- [Visual Studio Code](https://code.visualstudio.com/) is a streamlined code editor with support for development operations like debugging, task running and version control.
+[Visual Studio Code](https://code.visualstudio.com/) is a streamlined code editor with support for development operations like debugging, task running and version control.
 
 ## Modules
 
 [PowerShell Framework](https://psframework.org)
 
 CredentialManager - Install-Module CredentialManager
+
+[Pester](https://github.com/pester/Pester) - PowerShell testing framework
 
