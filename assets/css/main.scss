@@ -3,22 +3,22 @@
 $link-color: brown;
 
 /* syntax highlighting */
-$base00: "263238" # blue-gray-900
-$base01: "37474F" # blue-gray-800
-$base02: "455A64" # blue-gray-700
-$base03: "546E7A" # blue-gray-600
-$base04: "90A4AE" # blue-gray-300
-$base05: "B0BEC5" # blue-gray-200
-$base06: "CFD8DC" # blue-gray-100
-$base07: "ECEFF1" # blue-gray-50
-$base08: "FF1744" # red-a400
-$base09: "FF9100" # orange-a400
-$base0A: "FFC400" # amber-a400
-$base0B: "00E676" # green-a400
-$base0C: "00B0FF" # light-blue-a400
-$base0D: "2979FF" # blue-a400
-$base0E: "651FFF" # deep-purple-a400
-$base0F: "8D6E63" # brown-400
+$base00: "263238" ;
+$base01: "37474F" ;
+$base02: "455A64" ;
+$base03: "546E7A" ;
+$base04: "90A4AE" ;
+$base05: "B0BEC5" ;
+$base06: "CFD8DC" ;
+$base07: "ECEFF1" ;
+$base08: "FF1744" ;
+$base09: "FF9100" ;
+$base0A: "FFC400" ;
+$base0B: "00E676" ;
+$base0C: "00B0FF" ;
+$base0D: "2979FF" ;
+$base0E: "651FFF" ;
+$base0F: "8D6E63" ;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
