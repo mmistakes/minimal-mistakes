@@ -2,8 +2,8 @@
 main:
   - title: "Home"
     url: /
-  - title: "About Me"
-    url: /About-Me.md
+  - title: "About Mee"
+    url: /about-me/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
