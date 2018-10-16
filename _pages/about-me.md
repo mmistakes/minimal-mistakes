@@ -1,5 +1,4 @@
 ---
-layout: page
 title: About Andrew
 published: true
 permalink: /about-me/
