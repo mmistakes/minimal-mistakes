@@ -101,7 +101,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I love PowerShell and building tools that last."
   location         : "Florida"
-  email            :
+  email            : "AndrewPla@outlook.com"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
@@ -126,7 +126,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          :
+  youtube          : "https://www.youtube.com/channel/UChhXDsZHiokackXsBD_NSlw"
 
 
 # Reading Files
