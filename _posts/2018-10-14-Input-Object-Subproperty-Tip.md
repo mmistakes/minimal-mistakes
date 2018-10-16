@@ -18,7 +18,7 @@ Using the sample above, we need to access BOTH Property1 and Property2. We could
 This is a representation of the actual object that I was working with.
 
 ```powershell
-[pscustomboject]@{
+[pscustomobject]@{
         AssetId = 'ABCD-1234'
         locations = ([pscustomobject]@{
             linkId = 'DEFG-5678'
@@ -29,7 +29,43 @@ This is a representation of the actual object that I was working with.
 
 In our above sample I need both the AssetId and the linkId from the incoming object. I ended up using ValuefromPipelinebyPropertyName and utilizing a parameter alias so I could capture the 'Locations' property from the incoming object. Inside my function I then refer to the LinkId by using $Linkid.LinkId
 
-See below for a simplified version of the code.
+Now let's create a function that allows us to view this in action. Run this function in your console so we can access it
+
+```powershell
+function Get-InputSubproperty{
+    param (
+        [Parameter(ValuefromPipelinebyPropertyName)]
+        $AssetId,
+
+        [Parameter(Valuefrompipelinebypropertyname)]
+        # we set an alias so that we can capture the parent property of our LinkId, locations.
+        [Alias('locations')]
+        $LinkId
+    )
+    process {
+        [pscustomobject]@{
+            AssetId = $AssetId
+            # We need to access the property inside $LinkId.
+            # We captured the parent property, Locations, from the input object so we need to refer to the linkId inside the object.
+            LinkId = $LinkId.linkid
+        }
+    }
+}
+```
+
+Now let's try accessing the subproperty
+
+```powershell
+    [pscustomobject]@{
+        AssetId = 'ABCD-1234'
+        locations = ([pscustomobject]@{
+            linkId = 'DEFG-5678'
+            branch = 'branchName'
+        })
+} | Get-InputSubproperty
+```
+
+This is the body of the code that I ended up with.
 
 ```powershell
 
