@@ -1,9 +1,7 @@
 # main links
 main:
-   - title: "About Me"
-   url: /_pages/about.md
-   - title: "Test"
-     url: https://google.com
+  - title: "Home"
+    url: /
    #- title: "Home"
   #    url: "/_pages/home.md"
   # - title: "Sample Collections"
