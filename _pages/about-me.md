@@ -9,8 +9,8 @@ I'm a Systems Engineer working out of Florida. I enjoy writing tools that last a
 
 ## Contact
 
-[Email: AndrewPla@Outlook.com]("mailto:andrewpla@outlook.com")
+[Email: AndrewPla@Outlook.com](mailto:andrewpla@outlook.com)
 
-[Twitter: AndrewPlaTech]("https://twitter.com/AndrewPlaTech")
+[Twitter: AndrewPlaTech](https://twitter.com/AndrewPlaTech)
 
-[Github: AndrewPla]("https://github.com/AndrewPla")
+[Github: AndrewPla](https://github.com/AndrewPl")
