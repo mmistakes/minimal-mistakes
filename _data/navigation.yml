@@ -6,7 +6,7 @@ main:
     url: /about-me/
   - title: "Posts"
     url: /posts/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
+  - title: "Projects"
+    url: /projects/
   # - title: "Sitemap"
   #   url: /sitemap/
