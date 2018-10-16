@@ -64,6 +64,7 @@ Now let's try accessing the subproperty
         })
 } | Get-InputSubproperty
 ```
+As you can see, we are able to easily access the linkId with nice pipeline support.
 
 This is the body of the code that I ended up with.
 
@@ -95,5 +96,7 @@ This is the body of the code that I ended up with.
 ```
 
 # Closing Thoughts
+
+If you work with API's and haven't tried using PowerShell to do so then I highly recommend you give it a shot. I'm always so pleased with how easy it is to make great tools with PowerShell that provide great value.
 
 I thought this was a pretty clever workaround. Thanks to [Chris Gardner](https://twitter.com/halbaradkenafin) for the idea. I highly recommend that you join the PowerShell slack community if you haven't already. You can use [Discord](https://j.mp/psdiscord), [Slack](https://j.mp/psdiscord), or IRC.
