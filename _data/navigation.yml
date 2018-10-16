@@ -2,8 +2,8 @@
 main:
   - title: "Home"
     url: /
-   #- title: "Home"
-  #    url: "/_pages/home.md"
+  - title: "About Me"
+    url: "/_pages/About-Me.md"
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
