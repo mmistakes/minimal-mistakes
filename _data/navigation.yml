@@ -2,8 +2,8 @@
 main:
    - title: "About Me"
    url: "/_pages/about.md"
-  # - title: "Posts"
-  #   url: /year-archive/
+   - title: "Test"
+     url: "google.com"`
    #- title: "Home"
   #    url: "/_pages/home.md"
   # - title: "Sample Collections"
