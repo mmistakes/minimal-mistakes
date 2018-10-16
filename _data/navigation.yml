@@ -3,7 +3,7 @@ main:
   - title: "Home"
     url: /
   - title: "About Me"
-    url: "/_pages/About-Me.md"
+    url: /About-Me.md
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
