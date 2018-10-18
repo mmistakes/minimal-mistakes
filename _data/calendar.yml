@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Anmeldezeitraum Schulanfänger*innen im Schuljahr 2019/20",
-    "title": "Anmeldezeitraum Schulanfänger*innen im Schuljahr 2019/20",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NGcxb2d2MWg2bWlybmg2amhhcnNldTMyNDQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2018-10-04",
-      "date_time": null
-    },
-    "end": {
-      "date": "2018-10-18",
-      "date_time": null
-    },
-    "created": "2018-08-20T08:11:27.000Z",
-    "updated": "2018-08-20T08:11:28.009Z"
-  },
-  {
-    "image_path": null,
     "alt": "Herbstferien",
     "title": "Herbstferien",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2018-09-28T15:19:13.000Z",
     "updated": "2018-09-28T15:19:13.634Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Hort geschlossen",
+    "title": "Hort geschlossen",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=M2NjZzcxN2F2MDJhaDhnNDZpcXNsYzFxZjcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-05-31",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-06-01",
+      "date_time": null
+    },
+    "created": "2018-08-14T14:23:01.000Z",
+    "updated": "2018-08-14T14:23:01.854Z"
   }
 ]
