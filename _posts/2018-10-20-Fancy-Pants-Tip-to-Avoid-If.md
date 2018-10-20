@@ -9,7 +9,6 @@ If you are newer to PS or are unfamiliar with some constructs then let's quickly
 
 ### Arrays
 
-
 ```powershell
 # This creates an array of 2 values. Arrays are good at holding multiple values
 @('value1','Value2')
@@ -98,7 +97,6 @@ else {
     $ContentType = "application/octet-stream"
 }
 ```
-
 
 ## Read More
 
