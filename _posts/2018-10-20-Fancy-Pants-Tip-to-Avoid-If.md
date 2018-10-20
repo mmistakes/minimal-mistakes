@@ -81,8 +81,6 @@ Write-Host "Our Office will be $newOfficeColor"
 Our Office will be CorporateGrayscale
 ```
 
-#### Super clean and fancy new code
-
 This is the actual new code that I used, followed by what I had before
 
 ````powershell
