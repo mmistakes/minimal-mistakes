@@ -63,6 +63,7 @@ True
 
 Here's the code! This goes from 6 lines of code if you use the formatting that I do for If, Else statements.
 
+#### Let's Paint the Office
 ```powershell
 $newOfficeColor = @($preference, "CorporateGrayscale" -ne $null)[0]
 Write-Host "Our Office will be $newOfficeColor"
@@ -77,13 +78,13 @@ else {
 }
 Write-Host "Our Office will be $newOfficeColor"
 Our Office will be CorporateGrayscale
+```
 
+#### Super clean and fancy new code
 
-#####################################
+This is the actual new code that I used, followed by what I had before
 
-# this is the actual new code that I used, followed by what I had before
-
-# Super clean and fancy new code
+````powershell
 $mimeType = [System.Web.MimeMapping]::GetMimeMapping($File)
 $ContentType = @($mimeType, "application/octet-stream" -ne $null)[0]
 
