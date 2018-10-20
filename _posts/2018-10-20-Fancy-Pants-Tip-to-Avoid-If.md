@@ -78,11 +78,12 @@ else {
 }
 Write-Host "Our Office will be $newOfficeColor"
 Our Office will be CorporateGrayscale
-```
 
-#### Actual Code and What it Replaced
 
-```powershell
+#####################################
+
+# this is the actual new code that I used, followed by what I had before
+
 # Super clean and fancy new code
 $mimeType = [System.Web.MimeMapping]::GetMimeMapping($File)
 $ContentType = @($mimeType, "application/octet-stream" -ne $null)[0]
