@@ -63,8 +63,7 @@ True
 
 Here's the code! This goes from 6 lines of code if you use the formatting that I do for If, Else statements.
 
-```powerShell
-
+```powershell
 $newOfficeColor = @($preference, "CorporateGrayscale" -ne $null)[0]
 Write-Host "Our Office will be $newOfficeColor"
 Our Office will be CorporateGrayscale
