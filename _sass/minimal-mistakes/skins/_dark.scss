@@ -40,3 +40,7 @@ $base0f: #cc6633 !default;
 .page__footer-follow .social-icons .svg-inline--fa {
   color: inherit;
 }
+
+.ais-search-box .ais-search-box--input {
+  background-color: $form-background-color;
+}
