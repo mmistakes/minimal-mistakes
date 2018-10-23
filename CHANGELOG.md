@@ -17,6 +17,7 @@
 
 - Fix Lunr search index merging words. [#1883](https://github.com/mmistakes/minimal-mistakes/issues/1883)
 - Properly apply `relative_url` filter to internal links in header overlay `actions` array.
+- Revert cached includes (`include_cached`) for comment and analytics providers. [#1905](https://github.com/mmistakes/minimal-mistakes/issues/1905)
 
 ## [4.13.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.13.0)
 
