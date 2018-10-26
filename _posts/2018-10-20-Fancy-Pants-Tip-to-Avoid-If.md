@@ -10,7 +10,7 @@ $Selection = @($preference, "Default" -ne $null)[0]
 
 ## Quick Refresher
 
-If you are newer to PS or are unfamiliar with some constructs then let's quickly cover them before jumping to the important bit.
+Let's do a quick review of arrays and comparison operators if they aren't fresh in your mind.
 
 ### Arrays
 
@@ -60,8 +60,6 @@ $NonExistentVariable -eq $null
 ## Code Time
 
 Here's the code! This goes from 6 lines of code if you use the formatting that I do for If, Else statements.
-
-#### Let's Paint the Office
 
 ```powershell
 # We need to select a new office color. We would like to use the color in $preference.
