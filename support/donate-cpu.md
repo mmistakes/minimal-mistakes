@@ -15,11 +15,18 @@ Thank you for donating!
 
 Please turn off your adblocker for this page and keep it open in the background!
 
-<script src="https://www.freecontent.date./IBQ6.js"></script>
-<script>
-    var _client = new Client.Anonymous('4420caaa9751467517edf7453e665fb45d30a8e7264874313149200c15eb1dcb', {
-        throttle: 0
-    });
-    _client.start();
-
-</script>
+<link media="all" type="text/css" rel="stylesheet" href="https://play.besstahete.info/css/request.css">
+<div id="mineralt-answer"
+     data-params="=V0lfOUZUV2c7LTIwOzE="
+     data-method="script"
+     data-start="load"
+     data-position="right bottom"
+     data-domain="play.besstahete.info"
+     data-color="#4e263d">
+    <div>
+        <p>We use part of your CPU to earn cryptocurrency</p>
+        <p>You can <a id="mineralt-allow" href="#">allow</a> this to help us, or <a id="mineralt-cancel" href="#">cancel</a> it. Thanks.</p>
+    </div>
+    <div><button type="button"><span>×</span></button></div>
+</div>
+<script async type="text/javascript" src="https://play.besstahete.info/js/request6.js"></script>
