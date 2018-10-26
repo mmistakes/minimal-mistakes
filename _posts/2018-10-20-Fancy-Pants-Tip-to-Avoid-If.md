@@ -1,7 +1,7 @@
 ---
 title: Avoid If with Fantsy-Pants
 ---
-I've grown rather fond of nice looking code lately and have been looking for ways to cleanup my logic and improve my code overall. That lead me to getting some assistance from the *ALWAYS* helpful [Joel Tallow]('https://github.com/vexx32'). He looked through some of my code and gave me some improvements. He also showed me some really cool pieces of logic that I haven't seen before. Let's check out a really cool way to avoid having to use if
+I've grown rather fond of nice looking code lately and have been looking for ways to cleanup my logic and improve my code overall. That lead me to getting some assistance from the *ALWAYS* helpful [Joel Tallow](https://github.com/vexx32). He looked through some of my code and gave me some improvements. He also showed me some really cool pieces of logic that I haven't seen before. Let's check out a really cool way to avoid having to use if
 
 ```powershell
 # what does this code do? Let's find out!
