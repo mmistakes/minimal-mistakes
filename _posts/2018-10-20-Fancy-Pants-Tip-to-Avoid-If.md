@@ -3,9 +3,14 @@ title: Avoid If with Fantsy-Pants
 ---
 I've grown rather fond of nice looking code lately and have been looking for ways to cleanup my logic and improve my code overall. That lead me to getting some assistance from the *ALWAYS* helpful [Joel Tallow]('https://github.com/vexx32'). He looked through some of my code and gave me some improvements. He also showed me some really cool pieces of logic that I haven't seen before. Let's check out a really cool way to avoid having to use if
 
+```powershell
+# what does this code do? Let's find out!
+$Selection = @($preference, "Default" -ne $null)[0]
+```
+
 ## Quick Refresher
 
-If you are newer to PS or are unfamiliar with some constructs then let's quickly cover them before jumping to the important bit. If you'd prefer to jump ahead then go for it!
+If you are newer to PS or are unfamiliar with some constructs then let's quickly cover them before jumping to the important bit.
 
 ### Arrays
 
@@ -15,7 +20,6 @@ If you are newer to PS or are unfamiliar with some constructs then let's quickly
 
 # To verify that this is of the array type, Run
 @('value1','value2') -is [array]
-True
 ```
 
 ### Indexing
@@ -25,15 +29,13 @@ True
 # We put the index number inside []
 # [0] returns the first  value in the array, which is value1.
 @('value1','Value2')[0]
-value1
 
 # [1] returns the second value in the array (counting starts at 0), which is value2.
 @('value1','value2','value3')[1]
-value2
 
 # to get the last value in the array, we specify [-1]
 @('value1','value2','value3')[1]
-value3
+
 ```
 
 ### Comparison Operators
@@ -42,21 +44,17 @@ value3
 # Comparison operators compare things and then tell us if the comparison was true or false.
 # Is 'Toby' the same string as 'Scranton Strangler'?
 'Toby' -eq 'Scranton Strangler'
-False
 # darn, we almost had him.
 
 'Pinocchio' -eq 'Real Boy'
-False
 # ouch, poor guy
-
 
 # We can also determine if things are Null or not
 'Michael' -eq $null
-False
 
-# We haven't defined the variable, so it doesn't exist yet.
+# We haven't defined the NonExistentVariable yet, so it doesn't exist yet.
 $NonExistentVariable -eq $null
-True
+
 ```
 
 ## Code Time
@@ -66,9 +64,12 @@ Here's the code! This goes from 6 lines of code if you use the formatting that I
 #### Let's Paint the Office
 
 ```powershell
+# We need to select a new office color. We would like to use the color in $preference.
+# if $preference is null, then we will return 'CorporateGrayscale'
 $newOfficeColor = @($preference, "CorporateGrayscale" -ne $null)[0]
-Write-Host "Our Office will be $newOfficeColor"
-Our Office will be CorporateGrayscale
+# We have an array with a comparison. This effectively filters out any null values.
+# we then select the [0] value, which will either be $preference or "corporateGrayscal"
+# I hope that someone defined $preference 0_0
 
 # This is how I traditionally would have handled something like this
 if ($preference){
@@ -77,13 +78,9 @@ if ($preference){
 else {
     $newOfficeColor = "CorporateGrayscale"
 }
-Write-Host "Our Office will be $newOfficeColor"
-Our Office will be CorporateGrayscale
-```
 
-This is the actual new code that I used, followed by what I had before
 
-````powershell
+# This is the actual code that was updated
 $mimeType = [System.Web.MimeMapping]::GetMimeMapping($File)
 $ContentType = @($mimeType, "application/octet-stream" -ne $null)[0]
 
