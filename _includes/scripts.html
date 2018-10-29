@@ -5,11 +5,11 @@
     {% else %}
       {% capture script_path %}{{ script | relative_url }}{% endcapture %}
     {% endif %}
-    <script src="{{ script_path }}"></script>
+    <script src="{{ script_path }} async"></script>
   {% endfor %}
 {% else %}
-  <script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
-  <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="{{ '/assets/js/main.min.js' | relative_url }} async"></script>
+  <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" async></script>
 {% endif %}
 
 {% if site.search == true or page.layout == "search" %}
