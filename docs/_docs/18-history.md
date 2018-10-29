@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-10-23T10:38:36-04:00
+last_modified_at: 2018-10-29T08:54:43-04:00
 toc: true
 ---
 
@@ -25,6 +25,7 @@ toc: true
 
 ### Bug Fixes
 
+- Fix breadcrumb navigation alignment. [#1917](https://github.com/mmistakes/minimal-mistakes/issues/1917)
 - Fix Algolia search link positioning. [#1904](https://github.com/mmistakes/minimal-mistakes/pull/1904)
 - Fix Lunr search index merging words. [#1883](https://github.com/mmistakes/minimal-mistakes/issues/1883)
 - Properly apply `relative_url` filter to internal links in header overlay `actions` array.

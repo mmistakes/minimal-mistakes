@@ -15,6 +15,7 @@
 
 ### Bug Fixes
 
+- Fix breadcrumb navigation alignment. [#1917](https://github.com/mmistakes/minimal-mistakes/issues/1917)
 - Fix Algolia search link positioning. [#1904](https://github.com/mmistakes/minimal-mistakes/pull/1904)
 - Fix Lunr search index merging words. [#1883](https://github.com/mmistakes/minimal-mistakes/issues/1883)
 - Properly apply `relative_url` filter to internal links in header overlay `actions` array.

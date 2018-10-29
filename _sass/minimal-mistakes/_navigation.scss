@@ -10,18 +10,13 @@
   @include clearfix;
   margin: 0 auto;
   max-width: 100%;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
   font-family: $sans-serif;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
-
-  @include breakpoint($large) {
-    padding-left: 1em;
-    padding-right: 1em;
-  }
 
   @include breakpoint($x-large) {
     max-width: $x-large;
@@ -34,11 +29,11 @@
 
     @include breakpoint($large) {
       float: right;
-      width: span(10 of 12);
+      width: calc(100% - #{$right-sidebar-width-narrow});
     }
 
     @include breakpoint($x-large) {
-      padding-left: gutter(0.5 of 12);
+      width: calc(100% - #{$right-sidebar-width});
     }
   }
 
