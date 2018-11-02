@@ -20,6 +20,7 @@ Note : This system can only work when your AD is up-to-date and well maintained.
 This also means that **all our users** have a Description and\or department value. (the tool catches the cases where this is not the case but you get the idea)  
 </div>  
   
+ 
 In the past we did this all by hand but when done by different people it tends to get messy. Some use caps where others do not, some start with the first name others with the last name, ... .  
 
 After the creation of the computer, we would manually re-enter those values into a software to create a label to attach to the computer.
