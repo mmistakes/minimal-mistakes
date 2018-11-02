@@ -13,6 +13,7 @@ The GUI is made with Powershell Studio 2018.
   
 In AD we create a computer-object , give it a name and a description.  
 The description consists out of the owners name and the department he/she works for.  
+d
 <div style="color:gray; font-size: 14px;">  
 Note : This system can only work when your AD is up-to-date and well maintained.  
   
@@ -20,6 +21,7 @@ This also means that **all our users** have a Description and\or department valu
 </div>  
   
 In the past we did this all by hand but when done by different people it tends to get messy. Some use caps where others do not, some start with the first name others with the last name, ... .  
+
 After the creation of the computer, we would manually re-enter those values into a software to create a label to attach to the computer.
 Since we have to get +- 250 laptops unrolled in max 3-4 weeks time, i needed a faster more precise way.  
   
@@ -35,12 +37,13 @@ The names of the computer-groups match the existing departments within the firm.
   
 Before i explain how it works, this is how it looks like (please excuse the heavy redaction of data in the pictures) :  
   
-![]({{site.baseurl}}/assets/images/SCCMStagingGUI/gui.png)  
+![]({{site.baseurl}}/assets/images/SCCMStagingGUI/gui.PNG)  
   
 On the left-hand-side, all existing users in our OU are listed in a gridview. First, you select the user for whom you are creating the laptop, AKA its new owner. It also shows the description and department per user. If a value exists for the Department, it will use that in the description of the computer. It will automatically convert it into a full CAPS description. This way all computer-descriptions will have the same appearance.  
   
 Next we have a function that checks AD for the existing computer-names and then generates all remaining, non-existing names within a chosen range.  
 With our chosen range we have a possibility of 1296 unique computer-names, so we are future proof.  
+
 Each time you press the "Create computer"-button, the list automatically gets regenerated so that you'll never have 2 objects with the same name.  
 The system automatically selects the first possible computer-name.  
   
@@ -57,12 +60,13 @@ As a visual reference on the bottom of the application, you can always see the w
 
 Once the computer has created the new computer-object, it will ask you whether or not you'd like to create a label.  
 When you press "YES" it will create a label via a Dymo label printer.  
+
 This is how that works:  
   
 With the Dymo software, you create a label, a template. On that label you can create several fields or values.  
 The software allows you to name these fields, give them a unique identifier if you will.  
   
-![]({{site.baseurl}}/assets/images/SCCMStagingGUI/dymo.png)  
+![]({{site.baseurl}}/assets/images/SCCMStagingGUI/dymo.PNG)  
   
 So on our label, you'll have computer-name, department, user, date.  
   
