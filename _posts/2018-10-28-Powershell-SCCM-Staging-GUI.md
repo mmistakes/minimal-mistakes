@@ -1,11 +1,11 @@
 ---
-title: Powershell-SCCM-Staging-GUI
+title: "Powershell-SCCM-Staging-GUI"
 classes: wide
-Author_profile: true
 Tags: 'Powershell, Staging, Powershell Studio, Windows 10'
-published: true
-date: '2018-10-28'
+
 ---
+
+
 
 This is a tool that i created in the spring of this year (2018) but will be used a lot in the upcoming weeks.  
 The goal of the tool was to make the process of staging a computer a faster and more reliable process.  
