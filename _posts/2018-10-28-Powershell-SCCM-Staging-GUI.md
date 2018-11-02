@@ -5,6 +5,7 @@ Author_profile: true
 Tags: 'Powershell, Staging, Powershell Studio, Windows 10'
 published: true
 date: '2018-10-28'
+classes: wide
 ---
 
 This is a tool that i created in the spring of this year (2018) but will be used a lot in the upcoming weeks.  
