@@ -244,5 +244,6 @@ defaults:
       comments:  true
       share: true
       related: true
+      classes: "wide"
      # sidebar:
      #   nav: "docs"
