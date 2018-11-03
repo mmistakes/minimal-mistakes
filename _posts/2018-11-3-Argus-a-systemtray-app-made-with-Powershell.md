@@ -1,3 +1,6 @@
+---
+published: false
+---
 # Argus, my favorite dog!
 
 Hi!
