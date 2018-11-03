@@ -1,6 +1,7 @@
 ---
 title: "TEST Wide Single Layout Page"
 classes: wide
+published: true
 excerpt: "A page with `classes: wide` set to expand the main content's width."
 ---
 
