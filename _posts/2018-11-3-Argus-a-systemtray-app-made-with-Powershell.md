@@ -89,7 +89,7 @@ This way users can quickly change there default printer.
 So this is what Argus looks like as a finished product
 
 <p float="left" align="middle">
-  <img src=https://github.com/CookieCrumbles/cookiecrumbles.github.io/blob/master/assets/images/argus/GUI2.png?raw=true" width="50%" />
+  <img src=https://github.com/CookieCrumbles/cookiecrumbles.github.io/blob/master/assets/images/argus/GUI.png?raw=true" width="50%" />
   <img src="https://github.com/CookieCrumbles/cookiecrumbles.github.io/blob/master/assets/images/argus/GUI2.png?raw=true" width="50%" /> 
 </p>
 
