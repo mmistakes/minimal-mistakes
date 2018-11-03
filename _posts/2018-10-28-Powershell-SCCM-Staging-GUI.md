@@ -1,6 +1,5 @@
 ---
-layout: single
-classes: wide
+
 ---
 
 
