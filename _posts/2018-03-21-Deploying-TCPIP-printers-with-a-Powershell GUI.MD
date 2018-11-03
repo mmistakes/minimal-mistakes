@@ -132,7 +132,6 @@ During the development of this tool, i encoutered some questions that needed to 
     
 > After testing it became clear that a user can indeed install printdrivers when its with a GUID of *4d36e979-e325-11ce-bfc1-08002be10318*. 
 > This is done by Group Policy, more information can be found over at:  
-
 >   - [Microsoft reference](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors)
 >   - [GPO Settings](https://theitbros.com/allow-non-admins-install-printer-drivers-via-gpo/)
 <br/><br/>
@@ -145,12 +144,9 @@ During the development of this tool, i encoutered some questions that needed to 
 
 - Can a default user manage his/her default printer?
    - [x] <span style="color:#00a8f3"> Yes, but we need a GPO for this</span>
-<div style="color:gray;background:#f7f7f7;padding-left:30px">
-<br/>
-With the current OS-image comes the setting that Windows manages your default printer. Users can disable this via the control panel. There is also the possibility via GPO, this is currently implemented as a test. The tool works fine even without the setting changed. Users would just have to set their default-printer themselves.
-<br/><br/>
-</div>
-<br/>
+
+> With the current OS-image comes the setting that Windows manages your default printer. Users can disable this via the control panel. There is also the possibility via GPO, this is currently implemented as a test. The tool works fine even without the setting changed. Users would just have to set their default-printer themselves.
+
 <br/>
 
 ![access on service]({{site.baseurl}}/assets/images/tcpipprinters/windowsmanagesdefaultprinter.PNG)
