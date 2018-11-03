@@ -1,5 +1,6 @@
 ---
 layout: single
+published: true
 ---
 This is a tool that i created in the spring of this year (2018) but will be used a lot in the upcoming weeks.  
 The goal of the tool was to make the process of staging a computer a faster and more reliable process.  
