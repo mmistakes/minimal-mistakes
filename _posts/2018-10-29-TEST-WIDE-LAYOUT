@@ -1,8 +1,10 @@
 ---
-title: "TEST Wide Single Layout Page"
+Layout: post
 classes: wide
+title: TEST PAGE
+Author_profile: true
 published: true
-excerpt: "A page with `classes: wide` set to expand the main content's width."
+date: '2018-10-07'
 ---
 
 When using `layout: single` add the following front matter to a page or post to widen the main content:
