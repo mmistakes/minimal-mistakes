@@ -1,5 +1,5 @@
 ---
-Layout: post
+Layout: single
 classes: wide
 title: TEST PAGE
 Author_profile: true
