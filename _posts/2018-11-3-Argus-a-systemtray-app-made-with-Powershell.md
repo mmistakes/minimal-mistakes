@@ -5,7 +5,7 @@ published: false
 
 Hi!
 
-This blog-post is about one of the projects i'm most proud of! The development of "Argus" started around March of 2018. This project grew whilst working on it. I have tried to structure this blog-post as best as i could. Here goes ...
+This blog-post is about one of the projects i'm most proud of! The development of "Argus" started around March of 2018. This project grew whilst working on it. I have tried to structure this blog-post as best as i could but in truth most ideas and discoveries were made during the development. Here goes ...
 
 ## The birth of the idea
 One part of my job is being part of the help desk. When called by a customer or colleague, i usually ask for their computer-name. Most users tend to not know the name by heart (*com'on guys!)* or have a hard time figuring out where to find it. With the deployment of Windows 10 this became even more prevalent.
@@ -19,37 +19,37 @@ A user named *Lee_Dailey* linked to a script over at the Microsoft's script gall
 This would make things SO much easier to explain to them. 
 
 ## Oh oh, XAML (WPF)
-When opening the script, i found out that the GUI was in XAML-format. So it used the Windows Presentation Framework or WPF in short. When i first started with Powerhell GUI's i had came a cross WPF but I had never used this before and had always skipped past it because i always use PS Studio.
+When opening the script, i found out that the GUI was in XAML-format. So it used the Windows Presentation Framework or WPF in short. When i first started with Powerhell GUI's i had come a cross WPF but I had never used this before and had always skipped past it because i always use PS Studio.
 
 So after doing my research i concluded that the *easiest way* to edit this was to install Visual Studio Community edition, a free version of Visual Studio.
 
-Some parts were a true struggle like creating a button with a drop-down menu or creating a hoover effect on a button. The amount of code it generated for that was, in my opinion, insane. Anyway,  I'm glad that i found my way into XAML, i'm no expert by any means but at least now i have some experience with it.
+Some parts were a true struggle like creating a button with a drop-down menu or creating a hoover effect on a button. The amount of code it generated for that was, in my opinion, insane. Anyway,  I'm glad that i stumbled into XAML, i'm no expert by any means but at least now i have **some experience** with it.
 
-So after **a lot of googling** and tinkering i had my basic design finished and i decided on what content i needed in the application. The result looked like this :
+So after **a lot of Googling** and tinkering i had my basic design finished and i decided on what content i needed in the application. The result looked like this :
 
 IMAGE: DESIGN.PNG
 
 ## XAML in Powershell Studio ?
-So the next big question was **" How the hell am i going to get this into an executable? "**
+So the next big question was **" How the hell am i going to get this into an executable? "** This would mean that i would combine Winforms and WPF.
 
-Since the example script was ready to go, i figured i would try to get that into an exe first. So i opened up Powershell studio 2018 and after some configuration and trial & error, i got a working sytemtray app, designed with XAML and running as a compiled EXE.
+Since the example script was ready to go, i figured i would try to get that into an EXE first. So i opened up Powershell Studio 2018 and after some configuration and trial & error, i got a working sytemtray app, designed with XAML and running as a compiled EXE.
 
 This lead me to believe that my project was a doable one. 
 
 ## One EXE - no installation needed
-The application is one EXE and that's it. When the application starts, it **creates** the DLL  for MahApps  and all its images that it needs in a temp-location. This temp location is under the APPDATA of the user in question. So you have *no issues with user-permissions*.
+The application is one EXE and that's it. When the application starts, it **creates** the DLL  for MahApps  and all its images (banner, icons, images for toast notifications)  in a temp-location. This temp -ocation is under the APPDATA of the user who starts the application. So you have no issues with *user-permissions*.
 
 ```powershell
 $env:temp
 ```
-I'm creating the DLL and the images thanks to the following function:
+I'm creating the DLL and the images thanks to the following functions:
 
 ```powershell
 [System.Convert]::ToBase64String
 [System.Convert]::FromBase64String
 ```
 
-This allows you to store the data\content from the DLL or an image into a variable (hash).
+This allows you to store the data\content from the DLL or  image into a variable (hash).
 This looks something like :
 
 ```powershell
@@ -64,7 +64,7 @@ Set-Content -Path $env:temp\MahApps.Metro.dll -Value $MahAppsMetro -Encoding Byt
 
 # Expanding on the idea
 
-Next i started to look for more useful additions. I ended up with the following features :
+I looked for additional features and this is what i ended up with:
 
 - a link to the helpdesk-system to create a ticket\call
 - a link to our service-monitor to check if there are issues with program\service X or Y
@@ -84,7 +84,15 @@ Anyway, with the Helpdesk-button on the top and the wheel-cog on the buttom left
 The green cog will just start the command 
 > control printers
 
-This way users can quickly change there default printer.
+This way users can quickly change there default printer. 
+
+So this is what Argus looks like as a finished product
+
+<p float="left" align="middle">
+  <img src=https://github.com/CookieCrumbles/cookiecrumbles.github.io/blob/master/assets/images/argus/GUI2.png?raw=true" width="50%" />
+  <img src="https://github.com/CookieCrumbles/cookiecrumbles.github.io/blob/master/assets/images/argus/GUI2.png?raw=true" width="50%" /> 
+</p>
+
 
 ## SOS-warning system
 
@@ -104,6 +112,6 @@ We also already have a service-monitor that i could scrape.
 ### Argus was born
 
 I incorporated a function within within the system-tray application and named it Argus. This would become the name of the application.
-Argus looks for a JSON-file on it's own harddrive every 60 seconds.
+Argus looks for a JSON-file on it's own hard-drive every 60 seconds.
 
 
