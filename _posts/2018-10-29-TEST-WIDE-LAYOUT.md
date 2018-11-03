@@ -1,6 +1,6 @@
 ---
 classes: wide
-title: TEST PAGE 11
+title: TEST PAGE 
 published: true
 date: '2018-10-07'
 ---
