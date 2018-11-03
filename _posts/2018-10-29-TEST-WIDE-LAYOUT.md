@@ -1,8 +1,6 @@
 ---
-Layout: single
 classes: wide
 title: TEST PAGE 1
-Author_profile: true
 published: true
 date: '2018-10-07'
 ---
