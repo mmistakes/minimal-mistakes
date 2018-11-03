@@ -127,16 +127,16 @@ During the development of this tool, i encoutered some questions that needed to 
   - [x] <span style="color:#00a8f3">Yes</span>
 - Can a plain-user install printdrivers themselves ?
   - [x] <span style="color:#00a8f3">Yes</span>
-<div style="color:gray;background:#f7f7f7;padding-left:30px">
-<br/>
-    
-After testing it became clear that a user can indeed install printdrivers when its with a GUID of *4d36e979-e325-11ce-bfc1-08002be10318*. <br/>
-This is done by Group Policy, more information can be found over at:  <br/>
 
-  - [Microsoft reference](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors)
-  - [GPO Settings](https://theitbros.com/allow-non-admins-install-printer-drivers-via-gpo/)
+
+    
+> After testing it became clear that a user can indeed install printdrivers when its with a GUID of *4d36e979-e325-11ce-bfc1-08002be10318*. 
+> This is done by Group Policy, more information can be found over at:  
+
+>   - [Microsoft reference](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors)
+>   - [GPO Settings](https://theitbros.com/allow-non-admins-install-printer-drivers-via-gpo/)
 <br/><br/>
-</div>
+
 
 - Will we install individual drivers per printertype or one Generic driver?
   - [x] <span style="color:#00a8f3">  We chose to install the Generic Canon printer driver</span>
