@@ -1,5 +1,6 @@
 ---
 Layout: post
+classes: wide
 title: GPO-Apply only once
 Author_profile: true
 Tags: 'Powershell, GPO, Windows 10'
