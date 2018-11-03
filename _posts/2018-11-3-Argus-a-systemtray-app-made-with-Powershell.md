@@ -2,7 +2,7 @@
 
 Hi!
 
-This blog post is about one of the projects i'm most proud of! The development started around March of 2018.
+This blog post is about one of the projects i'm most proud of! The development of "Argus" started around March of 2018.
 
 One part of my job is being part of the help desk. When called by a customer or colleague, i usually ask for their computer-name. Most users tend to not know the name by heart (com'on guys!) or have a hard time figuring out where to find it. With the deployment of Windows 10 this became even more prevalent.
 
@@ -32,6 +32,34 @@ Since the example script was ready to go, i figured i would try to get that into
 
 This lead me to believe that my project was a doable one. 
 
+## One EXE 
+The application is one EXE and that's it. When the application starts, it **creates** the DLL  for MahApps  and all its images that it needs in a temp-location. This temp location is under the APPDATA of the user in question. So you have no issues with user-permissions.
+
+```powershell
+$env:temp
+```
+
+I'm creating the DLL and the images thanks to the following function:
+
+```powershell
+ [System.Convert]::ToBase64String
+ [System.Convert]::FromBase64String
+```
+
+This allows you to store the data\content from the DLL or an image into a variable (hash).
+This looks something like :
+
+```powershell
+$MahAppsMetro = [System.Convert]::FromBase64String('TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQA ..... ')
+```
+You can then create the file with the following code :
+
+```powershell
+	Set-Content -Path $env:temp\MahApps.Metro.dll -Value $MahAppsMetro -Encoding Byte
+```
+
+
+
 # Expanding on the idea
 
 Next i started to look for more useful additions. I ended up with the following features :
@@ -51,13 +79,29 @@ Now that i'm writing this article and i'm reviewing the XAML\MAhapps  part, it's
 
 Anyway, with the Helpdesk-button on the top and the wheel-cog on the buttom left, i had most of my features implemented. The gray wheel cog will open a fly-in menu that has the option to install a printer. This would open the [TCP\IP-printtool](https://cookiecrumbles.github.io/Deploying-TCPIP-printers-with-a-Powershell-GUI/) i wrote about.
 
-The green wheel cog will just start the command 
+The green cog will just start the command 
 > control printers
 
-This way users can quikly change there default printer.
+This way users can quickly change there default printer.
 
 ## SOS-warning system
 
-Some years ago we were unfortunate enough to have both the exchange-server as the telecommunication-server down at the same time. The problem he; aside the obvious one, was that we couldn't reach and inform our users about the issues. 
+### Background story
+Some years ago we were unfortunate enough to have both the exchange-server as the telecommunication-server down at the same time. The problem here, aside the obvious, was that we couldn't reach and inform our users about the issues. 
 
-This 
+Afterwards a college asks if we could figure out some sort of SOS\Emergency system if this were ever to happen again.
+
+Back when i was in high-school we used to use NET SEND to send a message to a computer or user. 
+
+In Active Directory, we have computer groups per department. So it wouldn't be too hard to figure out what computers we'd like to reach. As long as we had network, it is doable.
+
+One request of the end-user was that the message or notification would not be to intrusive. This brought me back to the toast-notifications that would just pop-up for a few seconds to then disappear. 
+
+We also already have a service-monitor that i could scrape.
+
+### Argus was born
+
+I incorporated a function within within the system-tray application and named it Argus. This would become the name of the application.
+Argus looks for a JSON-file on it's own harddrive every 60 seconds.
+
+
