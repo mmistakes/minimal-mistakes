@@ -3,7 +3,7 @@ layout: single
 ---
 This is a tool that i created in the spring of this year (2018) but will be used a lot in the upcoming weeks.  
 The goal of the tool was to make the process of staging a computer a faster and more reliable process.  
-The GUI is made with Powershell Studio 2018..
+The GUI is made with Powershell Studio 2018 v.
   
 In AD we create a computer-object , give it a name and a description.  
 The description consists out of the owners name and the department he/she works for.  
