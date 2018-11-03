@@ -2,18 +2,19 @@
 
 Hi!
 
-This blog post is about one of the projects i'm most proud of! The development of "Argus" started around March of 2018.
-
-One part of my job is being part of the help desk. When called by a customer or colleague, i usually ask for their computer-name. Most users tend to not know the name by heart (com'on guys!) or have a hard time figuring out where to find it. With the deployment of Windows 10 this became even more prevalent.
+This blog-post is about one of the projects i'm most proud of! The development of "Argus" started around March of 2018. This project grew whilst working on it. I have tried to structure this blog-post as best as i could. Here goes ...
 
 ## The birth of the idea
+One part of my job is being part of the help desk. When called by a customer or colleague, i usually ask for their computer-name. Most users tend to not know the name by heart (*com'on guys!)* or have a hard time figuring out where to find it. With the deployment of Windows 10 this became even more prevalent.
+
 So one day i was reading r/Powershell over at Reddit and i found  [this](https://www.reddit.com/r/PowerShell/comments/8ovw38/_/e06kepd/) post.
 
-A user linked to a script over at Microsoft's script gallery. I took a look and the screenshot kinda gave me the idea to build this for our users. 
+A user named *Lee_Dailey* linked to a script over at the Microsoft's script gallery. I took a look and the screenshot kinda gave me the idea to build this for our end-users. 
 
 ![enter image description here](https://i1.gallery.technet.s-msft.com/windows-powershell-system-792a1db9/image/file/181340/1/untitled.png)
 
 This would make things SO much easier to explain to them. 
+
 ## Oh oh, XAML (WPF)
 When opening the script, i found out that the GUI was in XAML-format. So it used the Windows Presentation Framework or WPF in short. When i first started with Powerhell GUI's i had came a cross WPF but I had never used this before and had always skipped past it because i always use PS Studio.
 
@@ -32,18 +33,17 @@ Since the example script was ready to go, i figured i would try to get that into
 
 This lead me to believe that my project was a doable one. 
 
-## One EXE 
-The application is one EXE and that's it. When the application starts, it **creates** the DLL  for MahApps  and all its images that it needs in a temp-location. This temp location is under the APPDATA of the user in question. So you have no issues with user-permissions.
+## One EXE - no installation needed
+The application is one EXE and that's it. When the application starts, it **creates** the DLL  for MahApps  and all its images that it needs in a temp-location. This temp location is under the APPDATA of the user in question. So you have *no issues with user-permissions*.
 
 ```powershell
 $env:temp
 ```
-
 I'm creating the DLL and the images thanks to the following function:
 
 ```powershell
- [System.Convert]::ToBase64String
- [System.Convert]::FromBase64String
+[System.Convert]::ToBase64String
+[System.Convert]::FromBase64String
 ```
 
 This allows you to store the data\content from the DLL or an image into a variable (hash).
@@ -55,9 +55,8 @@ $MahAppsMetro = [System.Convert]::FromBase64String('TVqQAAMAAAAEAAAA//8AALgAAAAA
 You can then create the file with the following code :
 
 ```powershell
-	Set-Content -Path $env:temp\MahApps.Metro.dll -Value $MahAppsMetro -Encoding Byte
+Set-Content -Path $env:temp\MahApps.Metro.dll -Value $MahAppsMetro -Encoding Byte
 ```
-
 
 
 # Expanding on the idea
