@@ -1,5 +1,6 @@
 ---
 title: "Powershell-SCCM-Staging-GUI"
+layout: single
 classes: wide
 Tags: 'Powershell, Staging, Powershell Studio, Windows 10'
 
