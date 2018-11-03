@@ -8,14 +8,14 @@ main:
   # - title: "Coding"
   #   url: /coding/
 
-  - title: "Projects"
-    url: /projects/
-
-  - title: "Places"
-    url: /places/
-
-  - title: "Mastery"
-    url: /mastery/
-
-  - title: "Time Archive"
-    url: /time-archive/
+  # - title: "Projects"
+  #   url: /projects/
+  #
+  # - title: "Places"
+  #   url: /places/
+  #
+  # - title: "Mastery"
+  #   url: /mastery/
+  #
+  # - title: "Time Archive"
+  #   url: /time-archive/

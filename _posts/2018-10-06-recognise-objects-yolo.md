@@ -1,5 +1,5 @@
 ---
-title: An very shallow overview of YOLO and Darknet
+title: A very shallow overview of YOLO and Darknet
 tags:
   - neural-networks
   - machine-learning
@@ -102,4 +102,4 @@ The material mentioned, collated here just to repeat ourselves, as these are all
 * [The official website of Darknet/YOLO](https://pjreddie.com/darknet/yolo/)
 * A [post](https://hackernoon.com/understanding-yolo-f5a74bbc7967) about the YOLO paper, introducing its concepts, if you prefer having a higher-level overview/summary
 * This [repo](https://github.com/AlexeyAB/darknet) is darknet with added support for Linux and Windows
-* A [tutorial](https://www.arunponnusamy.com/yolo-object-detection-opencv-python.html) about using YOLO from opencv 
+* A [tutorial](https://www.arunponnusamy.com/yolo-object-detection-opencv-python.html) about using YOLO from opencv
