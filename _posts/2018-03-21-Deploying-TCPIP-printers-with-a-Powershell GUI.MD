@@ -225,7 +225,7 @@ Another route that a (malicious or clumbsy) user might try to take is the printm
 
 So there is no risk involved with importing this custom ACL-list.
 
-<div style="color:gray;background:#f7f7f7;padding-left:30px">
+<div style="color:gray;background:#f7f7f7;padding-left:30px;font-size: 0.75em;">
 <br/>
 For some reason the following SID get's added during the installation although it's not in my pre-populated ACL-list.
 <br/>
