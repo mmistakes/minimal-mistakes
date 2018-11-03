@@ -225,18 +225,13 @@ Another route that a (malicious or clumbsy) user might try to take is the printm
 
 So there is no risk involved with importing this custom ACL-list.
 
-<div style="color:gray;background:#f7f7f7;padding-left:30px;font-size: 0.75em;">
-<br/>
-For some reason the following SID get's added during the installation although it's not in my pre-populated ACL-list.
-<br/>
-S-1-15-3-1024-4044835139-2658482041-3127973164-329287231-3865880861-1938685643-461067658-1087000422
-<br/><br/>
-Windows adds this SID regardless of the fact that i import my own ACL list. Why? That's not clear.<br/> 
-The best information i've found on this topic is over at : <br/>
+> For some reason the following SID get's added during the installation although it's not in my pre-populated ACL-list.
+> S-1-15-3-1024-4044835139-2658482041-3127973164-329287231-3865880861-1938685643-461067658-1087000422
+> Windows adds this SID regardless of the fact that i import my own ACL list. Why? That's not clear.<br/> 
+> The best information i've found on this topic is over at : 
+>  
+>   - [Technet](https://social.technet.microsoft.com/Forums/ie/de-DE/3e7d85e3-d0e1-4e79-8141-0bbf8faf3644/windows-10-anniversary-update-the-case-of-the-mysterious-account-sid-causing-the-flood-of-dcom?forum=win10itprosetup)
 
-  - [Technet](https://social.technet.microsoft.com/Forums/ie/de-DE/3e7d85e3-d0e1-4e79-8141-0bbf8faf3644/windows-10-anniversary-update-the-case-of-the-mysterious-account-sid-causing-the-flood-of-dcom?forum=win10itprosetup)
-  <br/><br/>
-</div>
 
 ### 3.3 Importing printpreferences
 
