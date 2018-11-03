@@ -127,7 +127,7 @@ During the development of this tool, i encoutered some questions that needed to 
   - [x] <span style="color:#00a8f3">Yes</span>
 - Can a plain-user install printdrivers themselves ?
   - [x] <span style="color:#00a8f3">Yes</span>
-<div style="color:gray;;background:#f7f7f7;padding-left:30px">
+<div style="color:gray;background:#f7f7f7;padding-left:30px">
 <br/>
     
 After testing it became clear that a user can indeed install printdrivers when its with a GUID of *4d36e979-e325-11ce-bfc1-08002be10318*. <br/>
