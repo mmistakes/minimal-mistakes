@@ -162,6 +162,8 @@ cool.
 
 [![GHC 2018 - Ada Grace Anita wall](/images/ghc2018-6-ada-grace-anita-wall-400.jpg "GHC 2018 - Ada Grace Anita wall"){: .align-right }](/images/ghc2018-6-ada-grace-anita-wall.jpg)
 
+</br></br></br></br></br></br>
+
 ## Opening Keynote
 
 [![GHC 2018 - Opening Keynote](/images/ghc2018-7-opening-keynote-panorama-1000.jpg "GHC 2018 - Opening Keynote"){: .align-center }](/images/ghc2018-7-opening-keynote-panorama.jpg)
