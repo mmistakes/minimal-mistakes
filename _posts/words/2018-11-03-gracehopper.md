@@ -111,8 +111,8 @@ energized and hopeful for our future.
       by the Center for Women and Business at Bentley University; includes
       suggestions for how men can be allies, how women can encourage men to
       be allies, and how to launch a male allies group.
-   -  [Women in the Workplace 2018](https://www.mckinsey.com/featured-insights/gender-equality/women-in-the-workplace-2018)
-      by McKinsey & Company; a summary of the full report, available at
+   -  A summary of [Women in the Workplace 2018](https://www.mckinsey.com/featured-insights/gender-equality/women-in-the-workplace-2018)
+      by McKinsey & Company; the full report is available at
       [WomenInTheWorkplace.com](https://womenintheworkplace.com/).
    -  [Men in the Workplace](https://fairygodboss.com/research/men-and-gender-equality)
       by Fairygodboss and Artemis Connection; an exploration of what men think
