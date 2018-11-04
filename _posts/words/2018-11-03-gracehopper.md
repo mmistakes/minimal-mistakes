@@ -52,7 +52,7 @@ with audience members afterwards. The attendees (mostly women) were welcoming
 and open to others around them, sharing personal experiences and connecting with
 authenticity. I felt welcome to be present and encouraged to participate.
 
-[![GHC 2018 - Ada Grace Anita poster](/images/ghc2018-2-ada-grace-anita-poster-400.jpg "GHC 2018 - Ada Grace Anita poster"){: .align-right }](/images/ghc2018-2-ada-grace-anita-poster.jpg)
+[![GHC 2018 - Ada Grace Anita poster](/images/ghc2018-2-ada-grace-anita-poster-250.jpg "GHC 2018 - Ada Grace Anita poster"){: .align-right }](/images/ghc2018-2-ada-grace-anita-poster.jpg)
 
 Notes about each session I attended are found below, but it's worth calling out
 that **Male Allies** was well worth the time. The room was pretty full (150-300
