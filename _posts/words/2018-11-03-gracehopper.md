@@ -17,6 +17,8 @@ toc: true
 toc_label: "GHC 2018"
 ---
 
+{% include toc %}
+
 # Thoughts in a page
 
 A male friend asked me, "why would a guy want to attend [Grace Hopper](https://ghc.anitab.org/)?"
