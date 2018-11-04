@@ -1,7 +1,7 @@
 ---
 title: "Thoughts on Grace Hopper Celebration 2018"
 excerpt: &excerpt "Bumbershoot used to be an eclectic festival full of local art, theatre, comedy, and music where you encountered all types of people."
-tweet: "Thoughts on Grace Hopper Celebration 2018"
+tweet: "A guy's thoughts after attending Grace Hopper Celebration 2018."
 modified: 2018-11-03
 category: words
 image: "ghc2018-1-we-are-here-1600x500.jpg"
