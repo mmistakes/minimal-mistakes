@@ -131,6 +131,8 @@ energized and hopeful for our future.
 -  [@ghc](https://twitter.com/HiltonTod/lists/ghc) - my Twitter list of
    speakers, panelists, and smart people from GHC18
 
+---
+
 # Session Thoughts and Notes
 
 ## Google Kickoff
