@@ -13,29 +13,9 @@ tags: [sociology, software-development, technology]
 fullwidth: true
 featured:
 ads: false
+toc: true
+toc_label: "GHC 2018"
 ---
-
-- [Thoughts in a page](#thoughts-in-a-page)
-   - [Conference observations](#conference-observations)
-   - [Lessons learned](#lessons-learned)
-   - [How to be an ally](#how-to-be-an-ally)
-   - [Resources](#resources)
-- [Session Thoughts and Notes](#session-thoughts-and-notes)
-   - [Google Kickoff](#google-kickoff)
-   - [Opening Keynote](#opening-keynote)
-   - [Male Allies](#male-allies)
-   - [How Will Tech Power Up an Inclusive Workforce?](#how-will-tech-power-up-an-inclusive-workforce)
-   - [The Art of Self-Promotion](#the-art-of-self-promotion)
-   - [Google Breakfast](#google-breakfast)
-   - [Falling Into Tech: The Non-Traditional Path](#falling-into-tech-the-non-traditional-path)
-   - [Building Your Persona](#building-your-persona)
-   - [How to Foster an Authentic and Consistent Personal Brand](#how-to-foster-an-authentic-and-consistent-personal-brand)
-   - [Changing the Tires at 60 MPH - A User Migration Story](#changing-the-tires-at-60-mph---a-user-migration-story)
-   - [An Introvert's Guide to Networking](#an-introvert's-guide-to-networking)
-   - [Gender Partnership - Building an Inclusive Future](#gender-partnership---building-an-inclusive-future)
-   - [Breaking Up the Boys' Club of Silicon Valley](#breaking-up-the-boys'-club-of-silicon-valley)
-   - [Team Up for (Un)comfortable Conversations at Work](#team-up-for-uncomfortable-conversations-at-work)
-   - [Google booth at the Friday night Celebration Party](#google-booth-at-the-friday-night-celebration-party)
 
 # Thoughts in a page
 
@@ -92,6 +72,8 @@ energized and hopeful for our future.
 [![GHC 2018 - Google career booth](/images/ghc2018-3-career-booth-400.jpg "GHC 2018 - Google career booth"){: .align-left }](/images/ghc2018-3-career-booth.jpg)
 
 [![GHC 2018 - Google bicycle cab](/images/ghc2018-4-bicycle-cab-400.jpg "GHC 2018 - Google bicycle cab"){: .align-right }](/images/ghc2018-4-bicycle-cab.jpg)
+
+---
 
 ## Conference observations
 
@@ -162,7 +144,7 @@ cool.
 
 [![GHC 2018 - Ada Grace Anita wall](/images/ghc2018-6-ada-grace-anita-wall-400.jpg "GHC 2018 - Ada Grace Anita wall"){: .align-right }](/images/ghc2018-6-ada-grace-anita-wall.jpg)
 
-</br></br></br></br></br></br>
+---
 
 ## Opening Keynote
 
