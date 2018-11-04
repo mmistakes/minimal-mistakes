@@ -138,9 +138,9 @@ energized and hopeful for our future.
 A huge warehouse party with food, drinks, games, art, and ~800 Googlers. Very
 cool.
 
-[![GHC 2018 - Big G](/images/ghc2018-5-g-400.jpg "GHC 2018 - Big G"){: .align-right }](/images/ghc2018-5-g.jpg)
-
 > Ability is universal, opportunity is not.
+
+[![GHC 2018 - Big G](/images/ghc2018-5-g-400.jpg "GHC 2018 - Big G"){: .align-center }](/images/ghc2018-5-g.jpg)
 
 [![GHC 2018 - Ada Grace Anita wall](/images/ghc2018-6-ada-grace-anita-wall-400.jpg "GHC 2018 - Ada Grace Anita wall"){: .align-center }](/images/ghc2018-6-ada-grace-anita-wall.jpg)
 
