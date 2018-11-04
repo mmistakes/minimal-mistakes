@@ -112,17 +112,19 @@ energized and hopeful for our future.
       suggestions for how men can be allies, how women can encourage men to
       be allies, and how to launch a male allies group.
    -  [Women in the Workplace 2018](https://www.mckinsey.com/featured-insights/gender-equality/women-in-the-workplace-2018)
-      by McKinsey & Company.
+      by McKinsey & Company; a summary of the full report, available at
+      [WomenInTheWorkplace.com](https://womenintheworkplace.com/).
    -  [Men in the Workplace](https://fairygodboss.com/research/men-and-gender-equality)
       by Fairygodboss and Artemis Connection; an exploration of what men think
       of gender diversity in the workplace.
    -  [The State of Gender Diversity in the Workplace 2016](https://fairygodboss.com/research/gender-equality-2016-report)
-      by Fairygodboss.
+      by Fairygodboss; interesting statistics from various studies and suggestions
+      for employers to improve their recruitment and retention of women.
 -  Watch:
    -  Code: Debugging the Gender Gap (on [Netflix](https://www.netflix.com/title/80130565))
    -  [bias](https://www.biasfilm.com/) "highlights the nature of implicit bias,
       the grip it holds on our social and professional lives, and what it will
-      take to induce change.
+      take to induce change."
 
 ## Resources
 
@@ -137,8 +139,9 @@ energized and hopeful for our future.
 
 ## Google Kickoff
 
-A huge warehouse party with food, drinks, games, art, and ~800 Googlers. Very
-cool.
+A huge warehouse party for Google employees the Tuesday night
+before the conference began, with food, drinks, games, art,
+and ~800 Googlers. Very cool.
 
 > Ability is universal, opportunity is not.
 
@@ -361,7 +364,7 @@ What drew you into tech?
 -  Tech enables everyone and has the opportunity to help with poverty and
    other inequitable areas.
 -  To affect more people and help society, en masse.
--  Loves a good challenge and there are _tons _of problems in technology to
+-  Loves a good challenge and there are _tons_ of problems in technology to
    solve.
 
 Words of advice:
@@ -431,7 +434,7 @@ their personal brand, and handled misinterpretations of it.
    by huge applause]
 -  Determine what you're interested in and then try to find a niche.
 -  Avoid the "rescue me" mentality that comes from "if I work really hard
-   someone will notice me and give me a great job with lots of money." Find
+   someone will notice me and give me a great job with lots of money." Look for
    jobs you want and then work towards them.
 -  Ask your friends and coworkers what people say about you when you're not
    present. Honest people will give you the truth without being assholes.
@@ -446,10 +449,10 @@ _Presented by Beilan Wang of HBO
 ([@HBOCareers](https://twitter.com/HBOcareers))._
 
 I worked with Beilan at HBO when she was engaged on this project. They had to
-migrate all of the users (millions) from HBO Now, serviced completely by a third
-party, to the infrastructure built in-house by HBO for [HBO
-Go](https://hbogo.com). It was fascinating to see her explain the depth and care
-with which her team approached this gargantuan task. She also used some
+migrate all of the users (millions) from [HBO Now](https://hbonow.com), serviced
+completely by a third party, to the infrastructure built in-house by HBO for
+[HBO Go](https://hbogo.com). It was fascinating to see her explain the depth and
+care with which her team approached this gargantuan task. She also used some
 entertaining Game of Thrones examples to make a point about the difficulties of
 handling name changes in the middle of a migration (hint: Jon Snow).
 
@@ -467,7 +470,7 @@ Recommendations from Jessica:
    will build a small network.
 -  Promote your work with brown bag presentations at work or small meetups.
 -  Find a mentor to help you build your skills and your network.
--  Networking is not small talk (the bane of introvert's).
+-  Networking is not small talk (the bane of introverts).
    -  Make a connection with personal observations and use those as
       conversation starters.
    -  Help others. Find a pain point in their life and then help them, if
