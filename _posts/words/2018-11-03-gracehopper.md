@@ -34,8 +34,6 @@ women trying to get tickets up until the conference began, but the encouraging
 reception I received from female attendees reinforced my decision, they want men
 to be involved.
 
-[![GHC 2018 - Ada Grace Anita poster](/images/ghc2018-2-ada-grace-anita-poster-400.jpg "GHC 2018 - Ada Grace Anita poster"){: .align-right }](/images/ghc2018-2-ada-grace-anita-poster.jpg)
-
 As a man, I was definitely in the minority; I estimate there were three to five
 hundred men walking around amidst the 20,000 attendees. It's worth noting this
 provided me a very tiny window into what women in tech experience every single
@@ -54,6 +52,8 @@ with audience members afterwards. The attendees (mostly women) were welcoming
 and open to others around them, sharing personal experiences and connecting with
 authenticity. I felt welcome to be present and encouraged to participate.
 
+[![GHC 2018 - Ada Grace Anita poster](/images/ghc2018-2-ada-grace-anita-poster-400.jpg "GHC 2018 - Ada Grace Anita poster"){: .align-right }](/images/ghc2018-2-ada-grace-anita-poster.jpg)
+
 Notes about each session I attended are found below, but it's worth calling out
 that **Male Allies** was well worth the time. The room was pretty full (150-300
 people) and split almost fifty-fifty across gender. The moderator and four
@@ -71,11 +71,9 @@ Getting from one session to another often meant a 20 minute walk. By the end of
 the four days, I was physically and mentally exhausted, yet intellectually
 energized and hopeful for our future.
 
-[![GHC 2018 - Google career booth](/images/ghc2018-3-career-booth-400.jpg "GHC 2018 - Google career booth"){: .align-left }](/images/ghc2018-3-career-booth.jpg)
+[![GHC 2018 - Google career booth](/images/ghc2018-3-career-booth-400.jpg "GHC 2018 - Google career booth"){: .align-center }](/images/ghc2018-3-career-booth.jpg)
 
-[![GHC 2018 - Google bicycle cab](/images/ghc2018-4-bicycle-cab-400.jpg "GHC 2018 - Google bicycle cab"){: .align-right }](/images/ghc2018-4-bicycle-cab.jpg)
-
----
+[![GHC 2018 - Google bicycle cab](/images/ghc2018-4-bicycle-cab-400.jpg "GHC 2018 - Google bicycle cab"){: .align-center }](/images/ghc2018-4-bicycle-cab.jpg)
 
 ## Conference observations
 
@@ -142,11 +140,11 @@ cool.
 
 > Ability is universal, opportunity is not.
 
-[![GHC 2018 - Big G](/images/ghc2018-5-g-400.jpg "GHC 2018 - Big G"){: .align-left }](/images/ghc2018-5-g.jpg)
+[![GHC 2018 - Big G](/images/ghc2018-5-g-400.jpg "GHC 2018 - Big G")](/images/ghc2018-5-g.jpg)
 
-[![GHC 2018 - Ada Grace Anita wall](/images/ghc2018-6-ada-grace-anita-wall-400.jpg "GHC 2018 - Ada Grace Anita wall"){: .align-right }](/images/ghc2018-6-ada-grace-anita-wall.jpg)
+&nbsp;&nbsp;&nbsp;&nbsp;
 
----
+[![GHC 2018 - Ada Grace Anita wall](/images/ghc2018-6-ada-grace-anita-wall-400.jpg "GHC 2018 - Ada Grace Anita wall")](/images/ghc2018-6-ada-grace-anita-wall.jpg)
 
 ## Opening Keynote
 
