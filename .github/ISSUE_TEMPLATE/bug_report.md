@@ -12,7 +12,7 @@ about: "Is something not working as expected?"
     https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - Search all issues at https://github.com/mmistakes/minimal-mistakes/issues 
     for solutions and to avoid duplication.
-  - Ask for help at https://talk.jekyllrb.com/
+  - Ask for help at http://talk.jekyllrb.com/
   
   After exhausting these suggestions use the format below.
 -->
