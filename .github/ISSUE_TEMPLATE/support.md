@@ -12,7 +12,7 @@ about: "Having trouble working with the theme?"
     https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - Search all issues at https://github.com/mmistakes/minimal-mistakes/issues 
     for solutions and to avoid duplication.
-  - Ask for help at https://talk.jekyllrb.com/
+  - Ask for help at http://talk.jekyllrb.com/
   
   After exhausting these suggestions ask your question below.
 
