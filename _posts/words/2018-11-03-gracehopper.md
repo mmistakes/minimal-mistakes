@@ -212,11 +212,6 @@ Haile Owusu ([@hailekofi](https://twitter.com/hailekofi)), Wayne Barlow
 This was a great discussion, especially for men new to the concept of calling
 themselves an ally.
 
-_Haile:_ 
-
->  We can't fix the problems of inequity by treating everyone the same,
-   you'll end up stabilizing the existing situation."
-
 The misconceptions about being a male ally:
 
 -  It's often not received as a positive by other men, especially if they
@@ -268,6 +263,9 @@ colleagues after the [#metoo](https://twitter.com/hashtag/metoo) movement.
 -  Reflect on your own behavior. If you do something offensive, it's not the
    end of the world but it is an opportunity to learn and grow.
 -  Don't re-victimize someone.
+
+>  Haile: We can't fix the problems of inequity by treating everyone the same,
+   you'll end up stabilizing the existing situation.
 
 ## How Will Tech Power Up an Inclusive Workforce?
 
