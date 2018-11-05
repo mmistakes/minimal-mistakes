@@ -180,9 +180,10 @@ outside after the age of 12 in a refugee camp, she created a jump rope (the
 Pulse) to do the same thing and even demonstrated it on stage (see 1:08:01 in
 the [keynote video](https://www.youtube.com/watch?v=o7QO0VRTDUE)).
 
--  Just because it's not your plan doesn't mean it's not your destiny.
--  "If I wasn't a black woman, I don't think I would have gotten this far.
-   Being underestimated was the best thing that has ever happened to me."
+>  Just because it's not your plan doesn't mean it's not your destiny.
+
+>  If I wasn't a black woman, I don't think I would have gotten this far.
+   Being underestimated was the best thing that has ever happened to me.
 
 **Mariana Costa Checa** ([@mcostach](https://twitter.com/mcostach)), co-founder
 of [Laboratoria](http://www.laboratoria.la/) in Peru, was the Abie Award winner
@@ -211,8 +212,10 @@ Haile Owusu ([@hailekofi](https://twitter.com/hailekofi)), Wayne Barlow
 This was a great discussion, especially for men new to the concept of calling
 themselves an ally.
 
-_Haile:_ We can't fix the problems of inequity by treating everyone the same,
-you'll end up stabilizing the existing situation.
+_Haile:_ 
+
+>  We can't fix the problems of inequity by treating everyone the same,
+   you'll end up stabilizing the existing situation."
 
 The misconceptions about being a male ally:
 
@@ -514,7 +517,7 @@ Recommendations from the working group and presenters:
    after work or golfing.
 -  Handling inappropriate jokes:
    -  Ask the person to explain the joke. "I don't understand that, could
-      you explain it?" :)
+      you explain it?"
 
 -  Have different genders and members of other groups (ethnicity, race)
    review items (swag, advertisements) before ordering.
