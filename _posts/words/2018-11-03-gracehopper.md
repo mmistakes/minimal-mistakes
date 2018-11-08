@@ -391,7 +391,7 @@ Ayanna Howard ([@robotsmarts](https://twitter.com/robotsmarts) of
 [@zyrobotics](https://twitter.com/zyrobotics)), both of
 [@CRAWomen](https://twitter.com/CRAWomen)._
 
-**People don't remember content, they remember how you made them feel.**
+> People don't remember content, they remember how you made them feel.
 
 First impressions are important!
 
@@ -424,7 +424,7 @@ Summers ([@ErinEngineering](https://twitter.com/ErinEngineering)), Irene Ryabaya
 ([@IreneRyab](https://twitter.com/IreneRyab)), and Cindy Alvarez
 ([@CindyAlvarez](https://twitter.com/CindyAlvarez))._
 
-**Your brand is what people say about you when you're not in the room.**
+> Your brand is what people say about you when you're not in the room.
 
 This was an interesting discussion with women who have started their own
 successful businesses and risen to executive ranks in companies. Topics such as
