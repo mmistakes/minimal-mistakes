@@ -8,7 +8,7 @@ category: reads
 image: "cover_BadFeminist_RoxaneGay_200.jpg"
 header:
   teaser: "cover_BadFeminist_RoxaneGay.jpg"
-tags: [biography, life lessons, sociology, writing]
+tags: [biography, life-lessons, sociology, writing]
 ---
 
 [![Bad Feminist by Roxane Gay](/images/cover_BadFeminist_RoxaneGay_200.jpg "Bad Feminist by Roxane Gay"){: .align-right }](https://www.amazon.com/Bad-Feminist-Essays-Roxane-Gay/dp/0062282719/)
