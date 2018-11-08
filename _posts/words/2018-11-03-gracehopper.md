@@ -55,7 +55,7 @@ authenticity. I felt welcome to be present and encouraged to participate.
 [![GHC 2018 - Ada Grace Anita poster](/images/ghc2018-2-ada-grace-anita-poster-250.jpg "GHC 2018 - Ada Grace Anita poster"){: .align-right }](/images/ghc2018-2-ada-grace-anita-poster.jpg)
 
 Notes about each session I attended are found below, but it's worth calling out
-that **Male Allies** was well worth the time. The room was pretty full (150-300
+that **[Male Allies](#male-allies)** was well worth the time. The room was pretty full (150-300
 people) and split almost fifty-fifty across gender. The moderator and four
 panelists had a great discussion covering misconceptions about male allyship,
 examples of good and bad allies, being an ally when it comes to hiring
