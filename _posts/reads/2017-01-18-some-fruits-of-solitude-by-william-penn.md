@@ -8,7 +8,7 @@ category: reads
 image: "cover_SomeFruitsOfSolitude_WilliamPenn_200.jpg"
 header:
   teaser: "cover_SomeFruitsOfSolitude_WilliamPenn.jpg"
-tags: [finances, history, life lessons, productivity, psychology, sociology]
+tags: [finances, history, life-lessons, productivity, psychology, sociology]
 ---
 
 [![Some Fruits of Solitude by William Penn](/images/cover_SomeFruitsOfSolitude_WilliamPenn_200.jpg "Some Fruits of Solitude by William Penn"){: .align-right }](https://www.amazon.com/gp/product/B01MD056OO/)
