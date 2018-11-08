@@ -8,7 +8,7 @@ category: reads
 image: "cover_BattleHymnOfTheTigerMother_AmyChua_200.jpg"
 header:
   teaser: "cover_BattleHymnOfTheTigerMother_AmyChua_200.jpg"
-tags: [biography, comedy, entertainment, life lessons, parenting, sociology,]
+tags: [biography, comedy, entertainment, life-lessons, parenting, sociology,]
 ---
 
 [![Battle Hymn of the Tiger Mother by Amy Chua](/images/cover_BattleHymnOfTheTigerMother_AmyChua_200.jpg "Battle Hymn of the Tiger Mother by Amy Chua"){: .align-right }](https://smile.amazon.com/Battle-Hymn-Tiger-Mother-Chua/dp/0143120581/)
