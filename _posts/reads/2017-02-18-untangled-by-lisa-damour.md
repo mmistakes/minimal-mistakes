@@ -8,7 +8,7 @@ category: reads
 image: "cover_Untangled_LisaDamour_200.jpg"
 header:
   teaser: "cover_Untangled_LisaDamour.jpg"
-tags: [life lessons, parenting, psychology, sociology,]
+tags: [life-lessons, parenting, psychology, sociology,]
 ---
 
 [![Untangled by Dr. Lisa Damour](/images/cover_Untangled_LisaDamour_200.jpg "Untangled by Dr. Lisa Damour"){: .align-right }](https://www.amazon.com/Untangled-Guiding-Teenage-Transitions-Adulthood/dp/0553393073/)
