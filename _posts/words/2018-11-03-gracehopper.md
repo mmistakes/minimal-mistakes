@@ -1,6 +1,6 @@
 ---
 title: "Thoughts on Grace Hopper Celebration 2018"
-excerpt: &excerpt "Bumbershoot used to be an eclectic festival full of local art, theatre, comedy, and music where you encountered all types of people."
+excerpt: &excerpt "A guy's thoughts after attending Grace Hopper Celebration 2018 in Houston, Texas with 20,000+ women...and a few hundred men."
 tweet: "A guy's thoughts after attending Grace Hopper Celebration 2018."
 modified: 2018-11-03
 category: words
