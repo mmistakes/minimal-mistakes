@@ -8,7 +8,7 @@ category: reads
 image: "cover_title_author_200.jpg"
 header:
   teaser: "cover_title_author.jpg"
-tags: [life lessons, parenting, psychology, sociology]
+tags: [life-lessons, parenting, psychology, sociology]
 ---
 
 [![Mindset by Dr. Carol Dweck](/images/cover_Mindset_CarolDweck_200.jpg "Mindset by Dr. Carol Dweck"){: .align-right }](https://smile.amazon.com/Mindset-Psychology-Carol-S-Dweck/dp/0345472322/)
