@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+- Add `rel="nofollow noopener noreferrer"` to author profile links. [#1924](https://github.com/mmistakes/minimal-mistakes/pull/1924)
 - Improve color contrast of primary buttons and links.
 - Add Hindi localized UI text strings. [#1888](https://github.com/mmistakes/minimal-mistakes/pull/1888)
 - Update Lunr to `2.3.3`. [#1885](https://github.com/mmistakes/minimal-mistakes/pull/1885)

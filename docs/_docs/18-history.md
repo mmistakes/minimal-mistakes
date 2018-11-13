@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-11-13T09:35:43-05:00
+last_modified_at: 2018-11-13T09:37:37-05:00
 toc: true
 ---
 
@@ -12,6 +12,7 @@ toc: true
 
 ### Enhancements
 
+- Add `rel="nofollow noopener noreferrer"` to author profile links. [#1924](https://github.com/mmistakes/minimal-mistakes/pull/1924)
 - Improve color contrast of primary buttons and links.
 - Add Hindi localized UI text strings. [#1888](https://github.com/mmistakes/minimal-mistakes/pull/1888)
 - Update Lunr to `2.3.3`. [#1885](https://github.com/mmistakes/minimal-mistakes/pull/1885)
