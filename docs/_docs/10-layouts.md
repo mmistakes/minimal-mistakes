@@ -7,7 +7,7 @@ single_layout_gallery:
     alt: "single layout with header example"
   - image_path: /assets/images/mm-layout-single-meta.png
     alt: "single layout with comments and related posts"
-last_modified_at: 2018-03-20T15:59:52-04:00
+last_modified_at: 2018-11-13T09:29:44-05:00
 toc: true
 toc_label: "Included Layouts"
 toc_icon: "columns"
@@ -337,7 +337,7 @@ Feature blocks can be assigned and aligned to the `left`, `right`, or `center` w
 
 ## Search Page Layout
 
-A page with a search form. Add `layout: search` to the YAML Front Matter similar to [this example](https://github.com/mmistakes/minimal-mistakes/blob/master/docs/_pages/search.md) on the demo site.
+A page with a search form. Add `layout: search` to the YAML Front Matter similar to [this example](https://github.com/mmistakes/minimal-mistakes/blob/master/test/_pages/search.md) on the test site.
 
 ![search page layout example]({{ "/assets/images/search-layout-example.png" | relative_url }})
 
