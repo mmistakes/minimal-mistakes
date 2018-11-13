@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-10-29T10:09:31-04:00
+last_modified_at: 2018-11-13T09:35:43-05:00
 toc: true
 ---
 
@@ -20,7 +20,7 @@ toc: true
 - Allow custom Staticman endpoints. [#1842](https://github.com/mmistakes/minimal-mistakes/issues/1842)
 - Remove `type="text/css"` from Algolia script includes. [#1836](https://github.com/mmistakes/minimal-mistakes/pull/1836)
 - Remove unneeded `HandheldFriendly` and `MobileOptimized` meta tags. [#1837](https://github.com/mmistakes/minimal-mistakes/pull/1837)
-- Update Font Awesome to version `5.3.1`. [#1830](https://github.com/mmistakes/minimal-mistakes/pull/1830)
+- Update Font Awesome to version `5.5.0` and add `integrity` hash. [#1922](https://github.com/mmistakes/minimal-mistakes/pull/1922)
 - Always load Google 404 Linkhelp script over HTTPS. [#1829](https://github.com/mmistakes/minimal-mistakes/pull/1829)
 - Remove deprecated `base_path` include helper.
 
