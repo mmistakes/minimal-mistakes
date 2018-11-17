@@ -123,7 +123,15 @@ print(result)
 
 ## 3. Performance Test
 
-WMI Class 는 클래스마다 수집하는 속도가 상이하다. 따라서 아래의 간단한 스크립트를 통해서 데이터를 가져오는 속도를 측정할 수 있다.
+WMI Class 는 클래스마다 수집하는 속도가 상이하다. 따라서 아래의 간단한 스크립트를 통해서 데이터를 가져오는 속도를 측정할 수 있다. 수집할 만한 데이터를 알아보기 위해서 다음과 같이 Powershell 명령을 사용해서 목록을 확인한다.
+
+```Powershell
+# Disk 와 관련된 WMI Class 리스트를 반환한다.
+$> Get-WmiObject -list | Select-Object "name" | findstr Disk
+
+```
+
+
 
 ```python
 from wmi_client_wrapper import WmiClientWrapper as wcw
@@ -152,6 +160,14 @@ pprint(result, indet=4)
   > 성능 측정 결과 수집하고자 하는 WMI 클래스에 따라 속도가 다름을 확인했다.
 
 성능 지표  
+
+아래의 성능 지표는 네트워크 상태 및 다른 요인에 의해서 영향을 받을 수 있으므로 다음과 같이 여긴다.
+
+- 실제 측정 시간 : `real_time = time + alpha`
+- Alpha 값 : `alpha > 0 or alpha < 0`
+
+그러나 클래스 마다 수집 속도에 대한 우위는 상대적이므로 우열을 가릴 수 있다.
+
 |Class|Performance|
 |:---:|:---:|
 |Win32_Processor| 1.14s|
@@ -159,8 +175,43 @@ pprint(result, indet=4)
 |Win32_LogicalDisk|0.042s|
 |Win32_DiskDrive|0.17s|
 |Win32_PerfFormattedData_Counters_FileSystemDiskActivity|0.37s|
+|Win32_ComputerSystemProduct|0.38s|
+|Win32_SystemResources|0.169s|
+|Win32_NetworkAdapter|0.217s|
 
-## 
+## 4. Windows 환경에서 Remote WMI 수집을 허용하기
+
+윈도우 환경에서 원격 WMI 접근을 기본적으로 차단하고 있다. 물론, 수집하려는 대상에 대해서 허용을 할 수 있다. 다음과 같은 절차가 반드시 필요로하다.
+
+```Powershell
+$> Get-Service winrm # 서비스의 상태를 확인한다. Default 는 Stop 이다.
+$> Enable-PSRemoting -Force # 강제로 구동한다. 
+# or, $> Enable-PSRemoting -SkipNetworkProfileCheck
+
+```
+
+### 4.1. Trouble Shooting : Network Profile Check Step
+
+PSRemoting 을 활성화 하는 경우 Network 프로파일 체크를 수행하여 아래와 같은 메시지를 출력한다.
+이는 특정 네트워크 프로파일 중에 Public 인 것이 있으므로 이를 변경해야 함을 경고한다.
+
+이 경우 아래와 같이 명령어를 입력하여 해결한다.
+```Powershell
+$> Enable-PSRemoting -SkipNetworkProfileCheck
+```
+
+```Powershell
+Message = WinRM firewall exception will not work since one of the network connection types on this machine is set to Public. Change the network connection type to either Domain or Private and try again.
+```
+
+### 4.2. Security : Powershell Remoting Security
+
+원격에서 Powershell Remoting 이 가능해진 만큼 Security Hardness 전략이 중요하다.
+
+> PowerShell Remoting 및 WinRM은 다음 포트에서 수신 대기합니다.
+>> - HTTP: 5985
+>> - HTTPS: 5986
+
 
 
 <!-- Images Reference Links -->
