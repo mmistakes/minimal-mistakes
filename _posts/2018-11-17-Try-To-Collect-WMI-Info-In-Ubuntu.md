@@ -183,10 +183,15 @@ pprint(result, indet=4)
 
 윈도우 환경에서 원격 WMI 접근을 기본적으로 차단하고 있다. 물론, 수집하려는 대상에 대해서 허용을 할 수 있다. 다음과 같은 절차가 반드시 필요로하다.
 
+|참조|
+|:---|
+|1. [Enable WMI Remoting in Windows 10][2]|
+
 ```Powershell
 $> Get-Service winrm # 서비스의 상태를 확인한다. Default 는 Stop 이다.
 $> Enable-PSRemoting -Force # 강제로 구동한다. 
 # or, $> Enable-PSRemoting -SkipNetworkProfileCheck
+$> winrm quickconfig # 설정을 검증한다.
 
 ```
 
@@ -212,15 +217,25 @@ Message = WinRM firewall exception will not work since one of the network connec
 >> - HTTP: 5985
 >> - HTTPS: 5986
 
+## 5. 결론 (Conclusion)
 
+이번 토픽에서는 Ubuntu 환경에서 WMI 모듈을 빌드하고 이를 Python 인터페이스를 통해서 사용하는 과정을 살펴보았다. 이 내용은 shred 프로젝트에 큰 도움이 되는 요소라고 생각되며 다음과 같이 결론을 내린다.
+
+- Ubuntu 12, 14, 16, 18 환경에서 WMI 모듈을 빌드
+- winrm 서비스를 구동하여 WMI Remoting 을 허용
+- wmi-client-wrapper 를 통해서 wmi 정보를 수집하는 python 코드
+- wmi 클래스 원격 수집 성능 체크
 
 <!-- Images Reference Links -->
 [wmi-perf]: /assets/img/2018-11-17-Try-To-Collect-WMI-Info-In-Ubuntu/wmi_perf.png
 
 <!-- External Reference Links -->
+
 [1]: https://www.shellandco.net/wmic-command-ubuntu-16-04-lts/ "Wmic Command in Ubuntu 16.04 LTS"
+[2]: https://stackoverflow.com/questions/38859777/windows-10-wmic-wmi-remote-access-denied-with-local-administrator "Windows 10 Enable Wmi Remoting"
 
 ---
+
 <!-- End Of Documents -->
 If you like the post, don't forget to give me a star :star2:.
 
