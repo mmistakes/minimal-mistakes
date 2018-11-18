@@ -1,6 +1,6 @@
 ---
 title: Celery, Django, Docker 를 결합하기
-key: 20181117
+key: 20181118
 tags: django docker celery wmi
 excerpt: "프로젝트 shred 의 일부로서 도커를 통해 Celery, Django 등을 결합한다."
 toc: true
@@ -13,7 +13,7 @@ toc_sticky: true
 
 ## 0. Summary
 
-이 토픽에서는 Shred 프로젝트를 좀 더 강화해 보겠다. 우선, Redis 를 사용해야 하므로 Redis 를 구동한다. 그리고 Docker 컴파일 시에 Shred 프로젝트를 구동하기 위해서 Ubuntu 16.04 환경의 Docker 파일을 만들 것이다. 그러나 wmi 모듈을 빌드해야 하므로 이 환경을 빌드한 Dockerfile 을 만든다. 더불어 필요한 Dockerfile 들을 생성한다. 마지막으로 Celery 를 고도화 하기 위한 스터디를 진행한다. 
+이 토픽에서는 Shred 프로젝트를 좀 더 강화해 보겠다. 우선, Redis 를 사용해야 하므로 Redis 를 구동한다. 그리고 Docker 컴파일 시에 Shred 프로젝트를 구동하기 위해서 Ubuntu 16.04 환경의 Docker 파일을 만들 것이다. 그러나 wmi 모듈을 빌드해야 하므로 이 환경을 빌드한 Dockerfile 을 만든다. 더불어 필요한 Dockerfile 들을 생성한다. 마지막으로 Celery 를 고도화 하기 위한 스터디를 진행한다.
 
 Celery 를 고도화하는 방법이란, 다음의 요구사항을 만족시켜야 한다.
 
