@@ -2,7 +2,7 @@
 title: "Quick-Start Guide"
 permalink: /docs/quick-start-guide/
 excerpt: "How to quickly install and setup Minimal Mistakes for use with GitHub Pages."
-last_modified_at: 2018-10-04T20:15:56-04:00
+last_modified_at: 2018-11-18T12:59:42-05:00
 redirect_from:
   - /theme-setup/
 toc: true
@@ -30,10 +30,13 @@ Add this line to your Jekyll site's `Gemfile`:
 gem "minimal-mistakes-jekyll"
 ```
 
-Add this line to your Jekyll site's `_config.yml` file:
+Add these lines to your Jekyll site's `_config.yml` file:
 
 ```yaml
 theme: minimal-mistakes-jekyll
+
+plugins:
+  - jekyll-include-cache
 ```
 
 Then run Bundler to install the theme gem and dependencies:
@@ -50,11 +53,20 @@ Replace `gem "jekyll"` with:
 		
 ```ruby		
 gem "github-pages", group: :jekyll_plugins			
-```		
+```
+
+Add `gem "jekyll-include-cache"`
 		
 Run `bundle update` and verify that all gems install properly.
 
 Add `remote_theme: "mmistakes/minimal-mistakes"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
+
+Add `jekyll-include-cache` to `plugins` like so:
+
+```yaml
+plugins:
+  - jekyll-include-cache
+```
 
 You may also optionally specify a branch, [tag](https://github.com/mmistakes/minimal-mistakes/tags), or commit to use by appending an @ and the Git ref (e.g., `mmistakes/minimal-mistakes@4.9.0` or `mmistakes/minimal-mistakes@bbf3cbc5fd64a3e1885f3f99eb90ba92af84063d`). If you don't specify a Git ref, the master branch will be used.
 
