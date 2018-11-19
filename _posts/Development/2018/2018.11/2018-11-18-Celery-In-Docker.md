@@ -112,7 +112,48 @@ Celery 를 구성하고 yaml 파일에 등록된 호스트마다 Task 를 부여
 - 방안 1. django 프로젝트의 `setting.py` 에 작업을 동적으로 생성하는 방향을 생각한다.
 - 방안 2. celery 문서를 정독한다. 그리고 활용할 방안을 모색한다.
 
-2018.11.18 - 그리고 나는 맥도날드에서 버거를 사먹는다. ㅋㅋㅋㅋ
+> 2018.11.18 - 그리고 나는 맥도날드에서 버거를 사먹는다. ㅋㅋㅋㅋ
+
+### 2.2 Celery, Celery-django-beat
+
+## 3. Dockerfile 최적화
+
+Dockerfile 을 작성하여 빌드하다보니 용량이 너무 커져버린다. `1.6gb` 는 너무 크다. 따라서 이미지의 크기를 최소화해본다.
+
+### 3.1 pre-built wmic, winexe shipping
+
+기존에 빌드한 wmic, winexe 파일을 복사해 두고 이를 이미지에 넣어둔다. 불길한 예감이 드는게 `RUN apt-get install -y -qq python3=3.5.1* python3-pip` 라인에서 시간이 많이 걸린다. 미리 빌드한 모듈을 넣음으로써 이미지 내에서 빌드하는 수고를 덜 수 있다.
+
+```bash
+FROM ubuntu:16.04
+MAINTAINER code-machina <gbkim1988@gmail.com>
+
+RUN apt-get update
+RUN apt-get install -y -qq python3=3.5.1* python3-pip
+RUN mkdir /data /data/tool
+COPY ./bin/wmic /data/tool
+COPY ./bin/winexe /data/tool
+RUN cp /data/tool/wmic /usr/local/bin
+RUN cp /data/tool/winexe /usr/local/bin
+
+EXPOSE 80
+EXPOSE 443
+```
+
+
+### 3.2 FROM gbkim1988/shred:@version
+
+새롭게 단장한 이미지를 바탕으로 프로젝트 파일을 옮기고 docker scaling 을 한다.
+docker scaling 은 celery worker 의 노드 수를 높이기 위함이다.
+
+다음과 같은 스텝으로 작업하면 원하는 바를 이룰 수 있을 것으로 생각된다.
+
+1. Ubuntu 16.04 Docker install
+2. gbkim1988/shred image pull
+3. Composer.yml: 
+    - Push Worker Script to image
+    - Redis 구성
+1. shred:0.3.1 composer.yml 작성
 
 
 <!-- Image link references -->
