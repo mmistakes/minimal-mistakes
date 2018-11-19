@@ -361,6 +361,10 @@ Transform user comments into `_data` files that live inside of your GitHub repos
 
 ##### Configure Staticman
 
+**Staticman v3**
+
+Due to the support for GitLab, the URL scheme has been changed.  Bewteen `v3` and `/entry`, one needs to input a Git service provider (either `github` or `gitlab`).  Apart from that, the setup for GitHub remains the same.
+
 **Staticman v2**
 
 Default settings have been provided in [`staticman.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/staticman.yml) and are commented to guide you through setup. View the [full list of configurations](https://staticman.net/docs/configuration).
@@ -399,7 +403,7 @@ comments:
 **Branch setting:** This is the branch comment files will be sent to via pull requests. If you host your site on GitHub Pages it will likely be `master` unless your repo is setup as a project --- use `gh-pages` in that case.
 {: .notice--info}
 
-**Note:** Staticman is currently only compatible with GitHub based repositories. [Support for GitLab Pages](https://github.com/eduardoboucas/staticman/issues/22) is planned but not available yet.
+**Note:** Staticman is currently compatible with GitHub and GitLab based repositories. [Support for GitLab Pages](https://github.com/eduardoboucas/staticman/issues/22) is already available at [Staticman v3](https://github.com/eduardoboucas/staticman/pull/219).
 {: .notice--warning}
 
 **Staticman v1 (deprecated)**
