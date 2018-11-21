@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-last_modified_at: 2018-11-19T15:35:29-05:00
+last_modified_at: 2018-11-21T14:46:33-05:00
 toc: true
 ---
 
@@ -274,7 +274,7 @@ To disable reading time for a post, add `read_time: false` its YAML Front Matter
 
 ### Comments
 
-[**Disqus**](https://disqus.com/), [**Discourse**](https://www.discourse.org/), [**Facebook**](https://developers.facebook.com/docs/plugins/comments), **Google+**, and static-based commenting via [**Staticman**](https://staticman.net/) are built into the theme. First set the comment provider you'd like to use:
+[**Disqus**](https://disqus.com/), [**Discourse**](https://www.discourse.org/), [**Facebook**](https://developers.facebook.com/docs/plugins/comments), **Google+**, [**utterances**](https://utteranc.es/), and static-based commenting via [**Staticman**](https://staticman.net/) are built into the theme. First set the comment provider you'd like to use:
 
 | Name             | Comment Provider          |
 | ---------------- | ------------------------- |
@@ -284,6 +284,7 @@ To disable reading time for a post, add `read_time: false` its YAML Front Matter
 | **google-plus**  | Google+ Comments          |
 | **staticman_v2** | Staticman v2              |
 | **staticman**    | Staticman v1 (deprecated) |
+| **utterances**   | utterances                |
 | **custom**       | Other                     |
 
 Then add `comments: true` to each document you want comments visible on.
@@ -323,9 +324,9 @@ For guidance on how to set up Discourse for embedding comments from a topic on a
 
 ```yaml
 comments:
-  provider               : "discourse"
+  provider: "discourse"
   discourse:
-    server               : # meta.discourse.org
+    server: # meta.discourse.org
 ```
 
 **Note:** Do not include `http://` or `https://` when setting your Discourse `server`. The theme automatically prepends the URL `//`, following a scheme-less pattern.
@@ -337,11 +338,31 @@ To enable Facebook Comments choose how many comments you'd like visible per post
 
 ```yaml
 comments:
-  provider               : "facebook"
+  provider: "facebook"
   facebook:
-    appid                : # optional
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    appid: # optional
+    num_posts: # 5 (default)
+    colorscheme: # "light" (default), "dark"
+```
+
+#### utterances Comments
+
+To use utterances you will need to [install the app](https://github.com/apps/utterances) to your GitHub repository by adding the following to `_config.yml`:
+
+```yaml
+repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+```
+
+**Note:** Make sure the repo is public, otherwise your readers will not be able to view the issues/comments. The [issues feature](https://guides.github.com/features/issues/) also needs to be active on your repo.
+{: .notice--warning}
+
+To enable utterances on the front end set `comments.provider` and the color theme of the widget. 
+
+```yaml
+comments:
+  provider: "utterances"
+  utterances:
+    theme: "github-light" # "github-dark"
 ```
 
 #### Static-Based Comments via Staticman
@@ -361,11 +382,11 @@ Transform user comments into `_data` files that live inside of your GitHub repos
 
 ##### Configure Staticman
 
-**Staticman v3**
+###### Staticman v3
 
 Due to the support for GitLab, the URL scheme has been changed.  Bewteen `v3` and `/entry`, one needs to input a Git service provider (either `github` or `gitlab`).  Apart from that, the setup for GitHub remains the same.
 
-**Staticman v2**
+###### Staticman v2
 
 Default settings have been provided in [`staticman.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/staticman.yml) and are commented to guide you through setup. View the [full list of configurations](https://staticman.net/docs/configuration).
 
@@ -406,7 +427,7 @@ comments:
 **Note:** Staticman is currently compatible with GitHub and GitLab based repositories. [Support for GitLab Pages](https://github.com/eduardoboucas/staticman/issues/22) is already available at [Staticman v3](https://github.com/eduardoboucas/staticman/pull/219).
 {: .notice--warning}
 
-**Staticman v1 (deprecated)**
+###### Staticman v1 (deprecated)
 
 Default settings have been provided in `_config.yml`. The important ones to set are `provider: "staticman"`, `branch`, and `path`. View the [full list of configurations](https://staticman.net/docs/configuration).
 
