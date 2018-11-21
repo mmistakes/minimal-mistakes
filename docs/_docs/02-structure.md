@@ -17,7 +17,7 @@ minimal-mistakes
 |  └── ui-text.yml             # text used throughout the theme's UI
 ├── _includes
 |  ├── analytics-providers     # snippets for analytics (Google and custom)
-|  ├── comments-providers      # snippets for comments (Disqus, Facebook, Google+, and custom)
+|  ├── comments-providers      # snippets for comments
 |  ├── footer                  # custom snippets to add to site footer
 |  ├── head                    # custom snippets to add to site head
 |  ├── feature_row             # feature row helper
