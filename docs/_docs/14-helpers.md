@@ -173,7 +173,7 @@ And then drop-in the feature row include in the body where you'd like it to appe
 
 ## Responsive Video Embed
 
-Embed a video from YouTube or Vimeo that responsively sizes to fit the width of its parent.
+Embed a video from YouTube or Vimeo that responsively sizes to fit the width of its parent. To help with GDPR compliance, the theme is using the privacy enhanced version of both providers out of the box.
 
 | Parameter  | Required     | Description                                                |
 | ---------- | ------------ | ---------------------------------------------------------- |
