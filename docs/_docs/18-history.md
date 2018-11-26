@@ -4,11 +4,11 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-11-25T20:55:50-05:00
+last_modified_at: 2018-11-25T22:20:59-05:00
 toc: true
 ---
 
-## Unreleased
+## [4.14.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.14.0)
 
 ### Enhancements
 
