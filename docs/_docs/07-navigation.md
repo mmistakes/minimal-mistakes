@@ -6,6 +6,8 @@ last_modified_at: 2018-03-20T15:59:40-04:00
 toc: true
 ---
 
+Customize site navigational links through a Jekyll data file.
+
 ## Masthead
 
 The masthead links use a "priority plus" design pattern. Meaning, show as many navigation items that will fit horizontally with a toggle to reveal the rest.
@@ -39,7 +41,7 @@ Optionally, you can add a `description` key per title in the `main` key. This `d
 **ProTip:** Put the most important links first so they're always visible and not hidden behind the **menu toggle**.
 {: .notice--info}
 
-## Breadcrumbs (Beta)
+## Breadcrumbs (beta)
 
 Enable breadcrumb links to help visitors better navigate deep sites. Because of the fragile method of implementing them they don't always produce accurate links reliably. For best results:
 
@@ -66,6 +68,6 @@ breadcrumb_home_label : "Start"
 breadcrumb_separator  : ">"
 ```
 
-## Custom Sidebar Navigation Menu
+## Custom sidebar navigation menu
 
 See the [**sidebars** documentation]({{ "/docs/layouts/#custom-sidebar-navigation-menu" | relative_url }}) for information on setting up a custom navigation menu.

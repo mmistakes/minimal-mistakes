@@ -46,7 +46,7 @@ footer_scripts:
 
 ---
 
-## Build Process
+## Build process
 
 In an effort to reduce dependencies a set of [**npm scripts**](https://css-tricks.com/why-npm-scripts/) are used to build `main.min.js` instead of task runners like [Gulp](http://gulpjs.com/) or [Grunt](http://gruntjs.com/). If those tools are more your style then by all means use them instead :wink:.
 

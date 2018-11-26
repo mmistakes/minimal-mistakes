@@ -2,7 +2,7 @@
 title: "Stylesheets"
 permalink: /docs/stylesheets/
 excerpt: "Instructions for customizing and building the theme's stylesheets."
-last_modified_at: 2018-03-20T16:00:22-04:00
+last_modified_at: 2018-11-25T19:47:43-05:00
 toc: true
 ---
 
@@ -71,7 +71,7 @@ $link-color: red;
 
 Before any `@import` lines.
 
-### Paragraph Indention 
+### Paragraph indention 
 
 To mimic the look of type set in a printed book or manuscript you may want to enable paragraph indention. When `$paragraph-indent` is set to `true` indents are added to each sibling and the margin below each paragraph is removed.
 
@@ -82,7 +82,7 @@ To mimic the look of type set in a printed book or manuscript you may want to en
 
 The size of the indent can also be customized by changing the value of `$indent-var`.
 
-### Font Stacks
+### Font stacks
 
 By default the theme uses [system fonts](https://medium.com/designing-medium/system-shock-6b1dc6d6596f#.rb81vgn7i) for all of the font stacks (serif, sans-serif, and monospace). This is done in part to provide a clean base for you to build off of and to improve performance since we aren't loading any custom webfonts by default.
 
@@ -98,7 +98,7 @@ Sans-serif fonts have been used for most of the type, with serifs reserved for c
 **ProTip:** To use webfonts from services like [Adobe TypeKit](https://typekit.com/) or [Google Fonts](https://www.google.com/fonts) simply update the font stacks and then add their scripts to `_includes/head/custom.html`.
 {: .notice--info}
 
-#### Typography from Older Versions
+#### Typography from older versions
 
 Not a fan of the refreshed typography of the theme and want to revert back an older version? Easy enough.
 
@@ -118,7 +118,7 @@ $global-font-family : $serif;
 $header-font-family : $sans-serif-narrow;
 ```
 
-### Type Scale
+### Type scale
 
 Wherever possible type scale variables have been used instead of writing out fixed sizes. This makes updating much easier by changing values in one file. 
 
@@ -149,7 +149,7 @@ $type-size-8 : 0.625em;  // ~10px
 
 Change the mood of your site by altering a few color variables. `$body-color`, `$background-color`, `$text-color`, `$link-color`, and `$masthead-link-color` will have the most affect when changed.
 
-#### Syntax Highlighting
+#### Syntax highlighting
 
 To make customizing the colors used in code highlighted blocks, a base of sixteen colors ([Base16](http://chriskempson.com/projects/base16/)) have been used.
 
@@ -179,7 +179,7 @@ $base0e: #c792ea;
 $base0f: #ff5370;
 ```
 
-##### Solarized Light
+##### Solarized light
 
 ![solarized-light-code-block]({{ '/assets/images/solarized-light-code-block.jpg' | relative_url }})
 
@@ -347,7 +347,7 @@ $base0e: #b294bb;
 $base0f: #a3685a;
 ```  
 
-### Breakpoints and Grid Stuff
+### Breakpoints and grid stuff
 
 Probably won't need to touch these, but they're there if you need to. Width variables are used with the [`@include breakpoint()`](http://breakpoint-sass.com/) mixin to adapt the design of certain elements.
 
@@ -358,7 +358,7 @@ And `$susy` is used for setting [the grid](http://susy.oddbird.net/) the theme u
   <figcaption>Susy grid debug overlay enabled.</figcaption>
 </figure>
 
-### Disabling Animations
+### Disabling animations
 
 You can disable either the fade-in intro animation, element transition animations, or both by overriding the corresponding variables. For example if you wanted to disable all animations you could include the following lines:
 

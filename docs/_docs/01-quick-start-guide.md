@@ -2,15 +2,15 @@
 title: "Quick-Start Guide"
 permalink: /docs/quick-start-guide/
 excerpt: "How to quickly install and setup Minimal Mistakes for use with GitHub Pages."
-last_modified_at: 2018-11-18T12:59:42-05:00
+last_modified_at: 2018-11-25T19:29:40-05:00
 redirect_from:
   - /theme-setup/
 toc: true
 ---
 
-Minimal Mistakes has been developed as a [Jekyll theme gem](http://jekyllrb.com/docs/themes/) for easier use. It is also 100% compatible with GitHub Pages --- just with slightly different installation process.
+Minimal Mistakes has been developed as a [Gem-based theme](http://jekyllrb.com/docs/themes/) for easier use. It is also 100% compatible with GitHub Pages when used as a remote theme.
 
-## Installing the Theme
+## Installing the theme
 
 If you're running Jekyll v3.5+ and self-hosting you can quickly install the theme as a Ruby gem.
 
@@ -22,53 +22,57 @@ If you're running Jekyll v3.5+ and self-hosting you can quickly install the them
 **Note:** The theme uses the [jekyll-include-cache](https://github.com/benbalter/jekyll-include-cache) plugin which will need to be installed in your `Gemfile` and added to the `plugins` array of `_config.yml`. Otherwise you'll throw `Unknown tag 'include_cached'` errors at build.
 {: .notice--warning}
 
-### Ruby Gem Method
+### Gem-based method
 
-Add this line to your Jekyll site's `Gemfile`:
+With Gem-based themes, directories such as the `assets`, `_layouts`, `_includes`, and `_sass` are stored in the theme’s gem, hidden from your immediate view. This allows for easier installation and updating as you don't have to manage any of the theme files. 
 
-```ruby
-gem "minimal-mistakes-jekyll"
-```
+To install as a Gem-based theme:
 
-Add these lines to your Jekyll site's `_config.yml` file:
+1. Add the following to your `Gemfile`:
 
-```yaml
-theme: minimal-mistakes-jekyll
+   ```ruby
+   gem "minimal-mistakes-jekyll"
+   ```
 
-plugins:
-  - jekyll-include-cache
-```
+2. Fetch and update bundled gems by running the following [Bundler](http://bundler.io/) command:
 
-Then run Bundler to install the theme gem and dependencies:
+   ```bash
+   bundle
+   ```
 
-```bash
-bundle install
-```
+3. Set the `theme` in your project's Jekyll `_config.yml` file:
 
-### GitHub Pages Method
+   ```yaml
+   theme: minimal-mistakes-jekyll
+   ```
 
-GitHub Pages has added [full support](https://github.com/blog/2464-use-any-theme-with-github-pages) for any GitHub-hosted theme.
+To update the theme run `bundle update`.
 
-Replace `gem "jekyll"` with:		
-		
-```ruby		
-gem "github-pages", group: :jekyll_plugins			
-```
+### Remote theme method
 
-Add `gem "jekyll-include-cache"`
-		
-Run `bundle update` and verify that all gems install properly.
+Remote themes are similar to Gem-based themes, but do not require `Gemfile` changes or whitelisting making them ideal for sites hosted with GitHub Pages.
 
-Add `remote_theme: "mmistakes/minimal-mistakes"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
+To install as a remote theme:
 
-Add `jekyll-include-cache` to `plugins` like so:
+1. Create/replace the contents of your `Gemfile` with the following:
 
-```yaml
-plugins:
-  - jekyll-include-cache
-```
+   ```ruby
+   source "https://rubygems.org"
 
-You may also optionally specify a branch, [tag](https://github.com/mmistakes/minimal-mistakes/tags), or commit to use by appending an @ and the Git ref (e.g., `mmistakes/minimal-mistakes@4.9.0` or `mmistakes/minimal-mistakes@bbf3cbc5fd64a3e1885f3f99eb90ba92af84063d`). If you don't specify a Git ref, the master branch will be used.
+   gem "github-pages", group: :jekyll_plugins
+   ```
+
+2. Add `jekyll-include-cache` to the `plugins` array of your `_config.yml`.
+
+3. Fetch and update bundled gems by running the following [Bundler](http://bundler.io/) command:
+
+   ```bash
+   bundle
+   ```
+
+4. Add `remote_theme: "mmistakes/minimal-mistakes@4.13.0"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
+
+You may also optionally specify a branch, [tag](https://github.com/mmistakes/minimal-mistakes/tags), or commit to use by appending an @ and the Git ref (e.g., `mmistakes/minimal-mistakes@4.9.0` or `mmistakes/minimal-mistakes@bbf3cbc5fd64a3e1885f3f99eb90ba92af84063d`). This is useful when rolling back to older versions of the theme. If you don't specify a Git ref, the latest on `master` will be used.
 
 ---
 

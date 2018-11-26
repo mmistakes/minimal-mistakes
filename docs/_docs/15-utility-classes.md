@@ -2,7 +2,7 @@
 title: "Utility Classes"
 permalink: /docs/utility-classes/
 excerpt: "CSS classes for aligning text/image, styling buttons and notices, and more."
-last_modified_at: 2018-08-15T09:53:10-04:00
+last_modified_at: 2018-11-25T19:46:43-05:00
 toc: true
 toc_label: "Utility Classes"
 toc_icon: "cogs"
@@ -13,7 +13,7 @@ Using the Kramdown Markdown renderer with Jekyll allows you to add [block](http:
 **Jekyll 3:** Kramdown is the default for `jekyll new` sites and those hosted on GitHub Pages. Not using Kramdown? That's OK. The following classes are still available when used with standard HTML.
 {: .notice--warning}
 
-## Text Alignment
+## Text alignment
 
 Align text blocks with the following classes.
 
@@ -65,7 +65,7 @@ No wrap text.
 {: .text-nowrap}
 ```
 
-## Image Alignment
+## Image alignment
 
 Position images with the following classes.
 

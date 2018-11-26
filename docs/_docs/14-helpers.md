@@ -30,7 +30,7 @@ feature_row:
   - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
     title: "Placeholder 3"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
-last_modified_at: 2018-06-11T07:56:49-04:00
+last_modified_at: 2018-11-25T19:46:11-05:00
 toc: true
 toc_label: "Helpers"
 toc_icon: "cogs"
@@ -38,7 +38,7 @@ toc_icon: "cogs"
 
 You can think of these Jekyll helpers as little shortcuts. Since GitHub Pages doesn't allow most plugins --- [custom tags](https://jekyllrb.com/docs/plugins/#tags) are out. Instead the theme leverages [**includes**](https://jekyllrb.com/docs/templates/#includes) to do something similar.
 
-## Group by Array
+## Group by array
 
 [Jekyll Group-By-Array](https://github.com/mushishi78/jekyll-group-by-array) by Max White.
 
@@ -120,7 +120,7 @@ And then drop-in the gallery include in the body where you'd like it to appear.
 **More Gallery Goodness:** A few more examples and [source code](https://github.com/{{ site.repository }}/blob/master/docs/\_posts/2010-09-09-post-gallery.md) can be seen in [this sample gallery post]({{ "" | relative_url }}{% post_url 2010-09-09-post-gallery %}).
 {: .notice--info}
 
-## Feature Row
+## Feature row
 
 Designed to compliment the [`splash`]({{ "/docs/layouts/#splash-page-layout" | relative_url }}) page layout as a way of arranging and aligning "feature blocks" containing text or image.
 
@@ -171,7 +171,7 @@ And then drop-in the feature row include in the body where you'd like it to appe
 **More Feature Row Goodness:** A [few more examples]({{ "/splash-page/" | relative_url }}) and [source code](https://github.com/{{ site.repository }}/blob/master/docs/\_pages/splash-page.md) can be seen in the demo site.
 {: .notice--info}
 
-## Responsive Video Embed
+## Responsive video embed
 
 Embed a video from YouTube or Vimeo that responsively sizes to fit the width of its parent. To help with GDPR compliance, the theme is using the privacy enhanced version of both providers out of the box.
 
@@ -218,7 +218,7 @@ header:
     provider: vimeo
 ```
 
-## Table of Contents
+## Table of contents
 
 Auto-generated table of contents list for your posts and pages can be enabled using two methods.
 
@@ -273,7 +273,7 @@ To include a Kramdown [auto-generated table of contents](https://kramdown.gettal
 {% raw %}{% include toc icon="cog" title="My Table of Contents" %}{% endraw %}
 ```
 
-## Navigation List
+## Navigation list
 
 Include an unordered list of links to be used as sidebar navigation with the `nav_list` helper.
 
