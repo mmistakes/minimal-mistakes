@@ -1,3 +1,9 @@
+## [4.14.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.14.1)
+
+### Bug Fixes
+
+- Fix closed navicon on hover.
+
 ## [4.14.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.14.0)
 
 ### Enhancements
