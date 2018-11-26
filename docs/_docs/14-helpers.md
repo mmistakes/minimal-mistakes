@@ -30,7 +30,7 @@ feature_row:
   - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
     title: "Placeholder 3"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
-last_modified_at: 2018-11-25T19:46:11-05:00
+last_modified_at: 2018-11-25T20:47:01-05:00
 toc: true
 toc_label: "Helpers"
 toc_icon: "cogs"
@@ -173,12 +173,12 @@ And then drop-in the feature row include in the body where you'd like it to appe
 
 ## Responsive video embed
 
-Embed a video from YouTube or Vimeo that responsively sizes to fit the width of its parent. To help with GDPR compliance, the theme is using the privacy enhanced version of both providers out of the box.
+Embed a video from YouTube, Vimeo, or Google Drive that responsively sizes to fit the width of its parent. To help with GDPR compliance, the theme is using the privacy enhanced version of YouTube and Vimeo providers out of the box.
 
 | Parameter  | Required     | Description                                                |
 | ---------- | ------------ | ---------------------------------------------------------- |
 | `id`       | **Required** | ID of the video                                            |
-| `provider` | **Required** | Hosting provider of the video, either `youtube` or `vimeo` |
+| `provider` | **Required** | Hosting provider of the video: `youtube`, vimeo`, or `google-drive` |
 
 ### YouTube
 
@@ -216,6 +216,25 @@ header:
   video:
     id: 212731897
     provider: vimeo
+```
+
+### Google Drive
+
+To embed the following Google Drive video at url `https://drive.google.com/file/d/1u41lIbMLbV53PvMbyYc9HzvBug5lNWaO/preview` into a post or page's main content you'd use:
+
+```liquid
+{% raw %}{% include video id="1u41lIbMLbV53PvMbyYc9HzvBug5lNWaO" provider="google-drive" %}{% endraw %}
+```
+
+{% include video id="1u41lIbMLbV53PvMbyYc9HzvBug5lNWaO" provider="google-drive" %}
+
+To embed it as a video header you'd use the following YAML Front Matter
+
+```yaml
+header:
+  video:
+    id: 212731897
+    provider: google-drive
 ```
 
 ## Table of contents
