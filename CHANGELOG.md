@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+- Change remaining schema.org markup to `https`. [#1978](https://github.com/mmistakes/minimal-mistakes/pull/1978)
 - Update NPM dependencies.
 
 ## [4.14.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.14.1)

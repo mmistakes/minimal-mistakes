@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-11-27T08:26:44-05:00
+last_modified_at: 2018-11-27T09:08:43-05:00
 toc: true
 ---
 
@@ -12,6 +12,7 @@ toc: true
 
 ### Enhancements
 
+- Change remaining schema.org markup to `https`. [#1978](https://github.com/mmistakes/minimal-mistakes/pull/1978)
 - Update NPM dependencies.
 
 ## [4.14.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.14.1)
