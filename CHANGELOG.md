@@ -1,3 +1,9 @@
+## Unreleased
+
+### Enhancements
+
+- Update NPM dependencies.
+
 ## [4.14.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.14.1)
 
 ### Bug Fixes
