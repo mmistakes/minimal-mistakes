@@ -155,6 +155,12 @@ docker scaling 은 celery worker 의 노드 수를 높이기 위함이다.
     - Redis 구성
 1. shred:0.3.1 composer.yml 작성
 
+### 3.3 Docker(도커) 스웜(Swarm) 설치 (Ubuntu 16.04)
+
+Docker Swarm 을 4 대 서버에 구축한 뒤 테스트를 위해 Replica 를 생성하고 이를 Swarm 이 예상한대로 잘 분배하는지 확인하고자 한다.
+
+
+
 
 <!-- Image link references -->
 
