@@ -3,6 +3,7 @@ title: "Glonass SDR"
 excerpt: "Software Defined Radio for GLONASS system."
 toc: true
 toc_sticky: true
+katex: true
 header:
   image: /assets/images/glonas-sdr.png
   teaser: assets/images/what-is-gnss-sdr.jpg
@@ -59,14 +60,11 @@ tracking_aided_gallery:
 ## Glonass Signal Model
   The Glonass constellation has 24 satellites distributed in 3 rough circular orbital planes [2]. These satellites use frequency–division multiple access (FDMA) signal structure, transmitting in two bands: 
   
-  * <p><span id="l1_glonass_band">...</span></p>
-  * <p><span id="l2_glonass_band">...</span></p>
-<script>
-katex.render("L_1 = 1602 + K * 0.5625 MHz", l1_glonass_band);
-katex.render("L_2 = 1246 + K * 0.4375 MHz", l2_glonass_band);
-</script>
+<!-- \\[ \int_{-\infty}^\infty e^{-x^2}\,dx =\sqrt{\pi} \\] -->
+  * \\(L_1 = 1602 + K * 0.5625\\) MHz
+  * \\(L_2 = 1246 + K * 0.4375\\) MHz
 
-  Where K = [-7;6] is the channel number. In the L1 band, two signals are transmitted: a standard precision and an obfuscated high precision signal. The FDMA system allows the satellites to send same PRN code using the BPSK modulation. The below picture shows the spectra of GLONASS signals in L1.
+  Where K = \\([-7;6]\\) is the channel number. In the L1 band, two signals are transmitted: a standard precision and an obfuscated high precision signal. The FDMA system allows the satellites to send same PRN code using the BPSK modulation. The below picture shows the spectra of GLONASS signals in L1.
 
 <figure class="align-center">
   <img src="/assets/images/GLONASS_Sig_Plan_Fig_2.png">
