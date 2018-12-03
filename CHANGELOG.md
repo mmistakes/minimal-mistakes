@@ -5,6 +5,10 @@
 - Change remaining schema.org markup to `https`. [#1978](https://github.com/mmistakes/minimal-mistakes/pull/1978)
 - Update NPM dependencies.
 
+### Bug Fixes
+
+- Fix Google Custom Search JavaScript error when not using Instant Search. [#1983](https://github.com/mmistakes/minimal-mistakes/pull/1983)
+
 ## [4.14.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.14.1)
 
 ### Bug Fixes
