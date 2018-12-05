@@ -4,7 +4,7 @@
       <nav id="site-nav" class="greedy-nav">
         <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
         <ul class="visible-links">
-          {%- for link in site.data.navigation.main -%}
+          <!-- {%- for link in site.data.navigation.main -%}
             {%- if link.url contains '://' -%}
               {%- assign url = link.url -%}
             {%- else -%}
@@ -13,7 +13,7 @@
             <li class="masthead__menu-item">
               <a href="{{ url }}" {% if link.description %}title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
             </li>
-          {%- endfor -%}
+          {%- endfor -%} -->
         </ul>
         {% if site.search == true %}
         <button class="search__toggle" type="button">
