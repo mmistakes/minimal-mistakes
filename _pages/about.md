@@ -6,7 +6,7 @@ sitemap: false
 permalink: /about/
 ---
 
-DevCycle is an IT consultancy with just thirty years of
+DevCycle is an IT consultancy with just over thirty years of
 Architecture, Design and Software Development experience. We also have
 over nineteen years of Lean and Agile coaching experience.
 
