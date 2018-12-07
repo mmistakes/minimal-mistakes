@@ -38,6 +38,7 @@ Our services include consultancy on, but not limited to, the following:
 * Software Development in:
   - Clojure/ClojureScript
   - Java
+  - Scala
   - Javascript
   - Ruby/Rails
 * Software Development Process
