@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "First Blog Post"
+excerpt: "I'm starting a blog ..."
 ---
 
 Hi, I'm Dan and this is my blog.
