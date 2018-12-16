@@ -261,4 +261,4 @@ defaults:
       read_time: false
       comments: true
       share: true
-      related: true
+      related: false
