@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Why Jesus is awesome"
+blog: faith
 tags: jesus-is-awesome
 ---
 
