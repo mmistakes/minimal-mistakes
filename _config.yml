@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "VCarpinelli"
 title_separator          : "-"
-name                     : "Your Name"
+name                     : "Vincent Carpinelli"
 description              : "An amazing website."
 url                      : https://VCarpinelli.GitHub.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : /# the subpath of your site, e.g. "/blog"
@@ -100,11 +100,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Vincent Carpinelli"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  bio              : "Stockton University Undergrad Business Student"
+  location         : "Galloway, NJ"
+  email            : VinceCarpinelli@gmail.com
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
