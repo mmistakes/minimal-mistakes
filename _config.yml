@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Minyoung's Github personal page"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Minyoung Jeong"
+description              : "An amazing website for SQL and Python(pandas, numpy and scikit mostly)"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
