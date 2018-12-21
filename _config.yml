@@ -32,7 +32,7 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 
 # SEO Related
-google_site_verification :
+google_site_verification : wz9UaGcoByyyDCld14szQiHTaU0_yDpgEbbOfI9C0SY
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
