@@ -1,5 +1,5 @@
 /**
- * lunr - http://lunrjs.com - A bit like Solr, but much smaller and not as bright - 2.3.3
+ * lunr - http://lunrjs.com - A bit like Solr, but much smaller and not as bright - 2.3.5
  * Copyright (C) 2018 Oliver Nightingale
  * @license MIT
  */
@@ -54,7 +54,7 @@ var lunr = function (config) {
   return builder.build()
 }
 
-lunr.version = "2.3.3"
+lunr.version = "2.3.5"
 /*!
  * lunr.utils
  * Copyright (C) 2018 Oliver Nightingale
@@ -675,7 +675,7 @@ lunr.Pipeline.prototype.run = function (tokens) {
 
       if (result === void 0 || result === '') continue
 
-      if (result instanceof Array) {
+      if (Array.isArray(result)) {
         for (var k = 0; k < result.length; k++) {
           memo.push(result[k])
         }
@@ -1460,13 +1460,13 @@ lunr.TokenSet.fromFuzzyString = function (str, editDistance) {
 
       if (frame.str.length == 1) {
         noEditNode.final = true
-      } else {
-        stack.push({
-          node: noEditNode,
-          editsRemaining: frame.editsRemaining,
-          str: frame.str.slice(1)
-        })
       }
+
+      stack.push({
+        node: noEditNode,
+        editsRemaining: frame.editsRemaining,
+        str: frame.str.slice(1)
+      })
     }
 
     // deletion
@@ -2289,7 +2289,7 @@ lunr.Index.load = function (serializedIndex) {
   var attrs = {},
       fieldVectors = {},
       serializedVectors = serializedIndex.fieldVectors,
-      invertedIndex = {},
+      invertedIndex = Object.create(null),
       serializedInvertedIndex = serializedIndex.invertedIndex,
       tokenSetBuilder = new lunr.TokenSet.Builder,
       pipeline = lunr.Pipeline.load(serializedIndex.pipeline)
