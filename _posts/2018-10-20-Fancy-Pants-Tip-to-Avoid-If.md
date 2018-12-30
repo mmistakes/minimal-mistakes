@@ -1,11 +1,11 @@
 ---
-title: Avoid If with Fantsy-Pants
+title: Comparisons Inside Arrays - Useful and
 ---
-I've grown rather fond of nice looking code lately and have been looking for ways to cleanup my logic and improve my code overall. That lead me to getting some assistance from the *ALWAYS* helpful [Joel Tallow](https://github.com/vexx32). He looked through some of my code and gave me some improvements. He also showed me some really cool pieces of logic that I haven't seen before. Let's check out a really cool way to avoid having to use if
+I recently got some assistance from the *ALWAYS* helpful [Joel Tallow](https://github.com/vexx32) with looking for ways to improve my code. He looked through some code and gave me some improvements. He also showed me some really cool bits of code and this post will cover one that I thought was useful.
 
 ```powershell
 # what does this code do? Let's find out!
-$Selection = @($preference, "Default" -ne $null)[0]
+$selection = @($preference, "Default" -ne $null)[0]
 ```
 
 ## Quick Refresher
@@ -22,7 +22,7 @@ Let's do a quick review of arrays and comparison operators if they aren't fresh 
 @('value1','value2') -is [array]
 ```
 
-### Indexing
+### Array Indexing
 
 ```powershell
 # We can use an index number to select which value we want out of the array
@@ -50,16 +50,29 @@ Let's do a quick review of arrays and comparison operators if they aren't fresh 
 # ouch, poor guy
 
 # We can also determine if things are Null or not
-'Michael' -eq $null
+$null -eq 'Michael'
+
+5 -lt 6
 
 # We haven't defined the NonExistentVariable yet, so it doesn't exist yet.
-$NonExistentVariable -eq $null
+$null -eq $NonExistentVariable
 
 ```
 
-## Code Time
+### Comparison Operators Within Arrays
 
-Here's the code! This goes from 6 lines of code if you use the formatting that I do for If, Else statements.
+```powershell
+# Let's have an array and put a comparison operator in it.
+# This allows us to sort of filter
+@(1,2,3 -GT 1)
+
+@('','notBlank' -notlike '')
+
+# Create an array without any null values.
+@($NonExistentVariable, 'string' -ne $null)
+```
+
+## Code Time
 
 ```powershell
 # We need to select a new office color. We would like to use the color in $preference.
@@ -67,7 +80,7 @@ Here's the code! This goes from 6 lines of code if you use the formatting that I
 $newOfficeColor = @($preference, "CorporateGrayscale" -ne $null)[0]
 # We have an array with a comparison. This effectively filters out any null values.
 # we then select the [0] value, which will either be $preference or "corporateGrayscal"
-# I hope that someone defined $preference 0_0
+# I hope that someone defined $preference 0_O
 
 # This is how I traditionally would have handled something like this
 if ($preference){
