@@ -12,7 +12,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<link rel="stylesheet" href="{% if page.blog %}{{ '/assets/css/' | append: page.blog | append: '-blog.css' | relative_url }}{% else %}{{ '/assets/css/main.css' | relative_url }}{% endif %}">
 
 <!--[if lte IE 9]>
   <style>
