@@ -12,11 +12,11 @@
 
 # Site Settings
 locale                   : "en-GB"
-title                    : "Dan Carter's Blog"
+title                    : "Dan Carter"
 title_separator          : "-"
 name                     : "Dan"
 description              : 
-url                      : https://blog.worldcuppredictions2018.co.uk
+url                      : https://carterdan.net
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -82,7 +82,7 @@ author:
       # url: mailto:your.name@email.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://blog.worldcuppredictions2018.co.uk"
+      url: "https://carterdan.net"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
