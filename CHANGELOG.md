@@ -9,6 +9,7 @@
 
 ### Bug Fixes
 
+- Fix Spanish `comments_label` and `comments_title` UI text strings. [#1997](https://github.com/mmistakes/minimal-mistakes/pull/1997)
 - Allow sidebar navigation with custom sidebar content. [#1986](https://github.com/mmistakes/minimal-mistakes/issues/1986)
 - Fix Google Custom Search JavaScript error when not using Instant Search. [#1983](https://github.com/mmistakes/minimal-mistakes/pull/1983)
 

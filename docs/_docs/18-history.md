@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at:2019-01-01T16:40:29-05:00
+last_modified_at: 2019-01-01T16:42:42-05:00
 toc: true
 ---
 
@@ -19,6 +19,7 @@ toc: true
 
 ### Bug Fixes
 
+- Fix Spanish `comments_label` and `comments_title` UI text strings. [#1997](https://github.com/mmistakes/minimal-mistakes/pull/1997)
 - Allow sidebar navigation with custom sidebar content. [#1986](https://github.com/mmistakes/minimal-mistakes/issues/1986)
 - Fix Google Custom Search JavaScript error when not using Instant Search. [#1983](https://github.com/mmistakes/minimal-mistakes/pull/1983)
 
