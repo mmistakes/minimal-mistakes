@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-12-04T14:19:34-05:00
+last_modified_at: 2019-01-01T16:03:55-05:00
 toc: true
 ---
 
@@ -12,6 +12,7 @@ toc: true
 
 ### Enhancements
 
+- Update Font Awesome to 5.6.0. [#1995](https://github.com/mmistakes/minimal-mistakes/pull/1995)
 - Change remaining schema.org markup to `https`. [#1978](https://github.com/mmistakes/minimal-mistakes/pull/1978)
 - Update NPM dependencies.
 
