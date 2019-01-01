@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+- Remove unused JavaScript variables from Staticman comment script. [#1996](https://github.com/mmistakes/minimal-mistakes/pull/1996)
 - Update Font Awesome to 5.6.0. [#1995](https://github.com/mmistakes/minimal-mistakes/pull/1995)
 - Change remaining schema.org markup to `https`. [#1978](https://github.com/mmistakes/minimal-mistakes/pull/1978)
 - Update NPM dependencies.
