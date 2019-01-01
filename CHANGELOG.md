@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+- Update Lunr to 2.3.5. [#2010](https://github.com/mmistakes/minimal-mistakes/pull/2010)
 - Shorten Internet Explorer conditional statement in `_includes/head.html`. [#2006](https://github.com/mmistakes/minimal-mistakes/pull/2006)
 - Add Persian localized UI text strings. [#2004](https://github.com/mmistakes/minimal-mistakes/pull/2004)
 - Remove unused JavaScript variables from Staticman comment script. [#1996](https://github.com/mmistakes/minimal-mistakes/pull/1996)
