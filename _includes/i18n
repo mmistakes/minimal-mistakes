@@ -1,0 +1,1 @@
+{{ site.data.ui-text[site.locale][include.textvar] | default: site.data.ui-text[en-US][include.textvar] }}
