@@ -19,10 +19,10 @@
     {% for crumb in crumbs offset: 1 %}
       {% if forloop.first %}
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="{{ site.url }}{{ site.baseurl }}/" itemprop="item"><span itemprop="name">{{ site.data.ui-text[site.locale].breadcrumb_home_label | default: "Home" }}</span></a>
+          <a href="{{ site.url }}{{ site.baseurl }}/" itemprop="item"><span itemprop="name">{% include i18n item="breadcrumb_home_label" %}</span></a>
           <meta itemprop="position" content="{{ i }}" />
         </li>
-        <span class="sep">{{ site.data.ui-text[site.locale].breadcrumb_separator | default: "/" }}</span>
+        <span class="sep">{% include i18n item="breadcrumb_separator" %}</span>
       {% endif %}
       {% if forloop.last %}
         <li class="current">{{ page.title }}</li>
@@ -32,7 +32,7 @@
           <a href="{{ crumb | downcase | replace: '%20', '-' | prepend: path_type | prepend: crumb_path | relative_url }}" itemprop="item"><span itemprop="name">{{ crumb | replace: '-', ' ' | replace: '%20', ' ' | capitalize }}</span></a>
           <meta itemprop="position" content="{{ i }}" />
         </li>
-        <span class="sep">{{ site.data.ui-text[site.locale].breadcrumb_separator | default: "/" }}</span>
+        <span class="sep">{% include i18n item="breadcrumb_separator" %}</span>
       {% endif %}
     {% endfor %}
   </ol>

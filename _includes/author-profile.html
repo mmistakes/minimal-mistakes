@@ -59,7 +59,7 @@
       {% if author.uri %}
         <li>
           <a href="{{ author.uri }}" itemprop="url">
-            <i class="fas fa-fw fa-link" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].website_label | default: "Website" }}
+            <i class="fas fa-fw fa-link" aria-hidden="true"></i>{% include i18n item="website_label" %}
           </a>
         </li>
       {% endif %}
@@ -68,7 +68,7 @@
         <li>
           <a href="mailto:{{ author.email }}">
             <meta itemprop="email" content="{{ author.email }}" />
-            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].email_label | default: "Email" }}
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> {% include i18n item="email_label" %}
           </a>
         </li>
       {% endif %}
