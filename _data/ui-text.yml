@@ -9,6 +9,7 @@ en: &DEFAULT_EN
   breadcrumb_home_label      : "Home"
   breadcrumb_separator       : "/"
   menu_label                 : "Toggle menu"
+  search_label               : "Toggle search"
   toc_label                  : "On this page"
   ext_link_label             : "Direct link"
   less_than                  : "less than"
@@ -61,6 +62,7 @@ es: &DEFAULT_ES
   breadcrumb_home_label      : "Inicio"
   breadcrumb_separator       : "/"
   menu_label                 :
+  search_label               :
   toc_label                  : "Contenidos"
   ext_link_label             : "Enlace"
   less_than                  : "menos de"
@@ -70,8 +72,8 @@ es: &DEFAULT_ES
   tags_label                 : "Etiquetas:"
   categories_label           : "Categorías:"
   date_label                 : "Actualizado:"
-  comments_label             : "Comentar"
-  comments_title             :
+  comments_label             : "Dejar un comentario"
+  comments_title             : "Comentar"
   more_label                 : "Ver más"
   related_label              : "Podrías ver también"
   follow_label               : "Seguir:"
@@ -106,6 +108,7 @@ fr: &DEFAULT_FR
   breadcrumb_home_label      : "Accueil"
   breadcrumb_separator       : "/"
   menu_label                 : "Menu"
+  search_label               :
   toc_label                  : "Sur cette page"
   ext_link_label             : "Lien direct"
   less_than                  : "moins de"
@@ -156,6 +159,7 @@ tr: &DEFAULT_TR
   breadcrumb_home_label      : "Ana Sayfa"
   breadcrumb_separator       : "/"
   menu_label                 :
+  search_label               :
   toc_label                  : "İçindekiler"
   ext_link_label             : "Doğrudan Bağlantı"
   less_than                  : "Şu süreden az: "
@@ -199,6 +203,7 @@ pt: &DEFAULT_PT
   breadcrumb_home_label      : "Início"
   breadcrumb_separator       : "/"
   menu_label                 :
+  search_label               :
   toc_label                  : "Nesta Página"
   ext_link_label             : "Link Direto"
   less_than                  : "menos de"
@@ -240,6 +245,7 @@ pt-BR:
   breadcrumb_home_label      : "Home"
   breadcrumb_separator       : "/"
   menu_label                 :
+  search_label               :
   toc_label                  : "Nesta página"
   ext_link_label             : "Link direto"
   less_than                  : "menos que"
@@ -281,6 +287,7 @@ it: &DEFAULT_IT
   breadcrumb_home_label      : "Home"
   breadcrumb_separator       : "/"
   menu_label                 :
+  search_label               :
   toc_label                  : "Indice della pagina"
   ext_link_label             : "Link"
   less_than                  : "meno di"
@@ -327,6 +334,7 @@ zh: &DEFAULT_ZH_HANS
   breadcrumb_home_label      : "首页"
   breadcrumb_separator       : "/"
   menu_label                 : "切换菜单"
+  search_label               :
   toc_label                  : "在本页上"
   ext_link_label             : "直接链接"
   less_than                  : "少于"
@@ -370,6 +378,7 @@ zh-TW: &DEFAULT_ZH_HANT
   breadcrumb_home_label      : "首頁"
   breadcrumb_separator       : "/"
   menu_label                 : "切換選單"
+  search_label               :
   toc_label                  : "本頁"
   ext_link_label             : "外部連結"
   less_than                  : "少於"
@@ -413,6 +422,7 @@ de: &DEFAULT_DE
   breadcrumb_home_label      : "Start"
   breadcrumb_separator       : "/"
   menu_label                 : "Menü ein-/ausschalten"
+  search_label               :
   toc_label                  : "Auf dieser Seite"
   ext_link_label             : "Direkter Link"
   less_than                  : "weniger als"
@@ -468,6 +478,7 @@ ne: &DEFAULT_NE
   breadcrumb_home_label      : "गृह"
   breadcrumb_separator       : "/"
   menu_label                 : "टगल मेनु"
+  search_label               :
   toc_label                  : "यो पृष्‍ठमा"
   ext_link_label             : "सिधा सम्पर्क"
   less_than                  : "कम्तिमा"
@@ -511,6 +522,7 @@ ko: &DEFAULT_KO
   breadcrumb_home_label      : "Home"
   breadcrumb_separator       : "/"
   menu_label                 : "토글 메뉴"
+  search_label               :
   toc_label                  : "On This Page"
   ext_link_label             : "직접 링크"
   less_than                  : "최대"
@@ -554,6 +566,7 @@ ru: &DEFAULT_RU
   breadcrumb_home_label      : "Главная"
   breadcrumb_separator       : "/"
   menu_label                 : "Выпадающее меню"
+  search_label               :
   toc_label                  : "Содержание"
   ext_link_label             : "Прямая ссылка"
   less_than                  : "менее"
@@ -599,6 +612,7 @@ lt: &DEFAULT_LT
   breadcrumb_home_label      : "Pagrindinis"
   breadcrumb_separator       : "/"
   menu_label                 : "Meniu rodymas"
+  search_label               :
   toc_label                  : "Turinys"
   ext_link_label             : "Tiesioginė nuoroda"
   less_than                  : "mažiau nei"
@@ -642,6 +656,7 @@ gr: &DEFAULT_GR
   breadcrumb_home_label      : "Αρχική"
   breadcrumb_separator       : "/"
   menu_label                 : "Μενού"
+  search_label               :
   toc_label                  : "Περιεχόμενα"
   ext_link_label             : "Εξωτερικός Σύνδεσμος"
   less_than                  : "Λιγότερο από"
@@ -687,6 +702,7 @@ sv: &DEFAULT_SV
   breadcrumb_home_label      : "Hem"
   breadcrumb_separator       : "/"
   menu_label                 : "Meny ridå"
+  search_label               :
   toc_label                  : "På denna sida"
   ext_link_label             : "Direkt länk"
   less_than                  : "mindre än"
@@ -732,6 +748,7 @@ nl: &DEFAULT_NL
   breadcrumb_home_label      : "Home"
   breadcrumb_separator       : "/"
   menu_label                 : "Wissel Menu"
+  search_label               :
   toc_label                  : "Op deze pagina"
   ext_link_label             : "Directe Link"
   less_than                  : "minder dan"
@@ -777,6 +794,7 @@ id: &DEFAULT_ID
   breadcrumb_home_label      : "Home"
   breadcrumb_separator       : "/"
   menu_label                 : "Menu Toggle"
+  search_label               :
   toc_label                  : "Pada Halaman Ini"
   ext_link_label             : "Link langsung"
   less_than                  : "Kurang dari"
@@ -820,6 +838,7 @@ vi: &DEFAULT_VI
   breadcrumb_home_label      : "Trang chủ"
   breadcrumb_separator       : "/"
   menu_label                 : "Menu"
+  search_label               :
   toc_label                  : "Tại trang này"
   ext_link_label             : "Đường dẫn trực tiếp"
   less_than                  : "nhỏ hơn"
@@ -863,6 +882,7 @@ da: &DEFAULT_DA
   breadcrumb_home_label      : "Home"
   breadcrumb_separator       : "/"
   menu_label                 : "Vis/skjul menu"
+  search_label               :
   toc_label                  : "På denne side"
   ext_link_label             : "Direkte link"
   less_than                  : "mindre end"
@@ -909,6 +929,7 @@ pl: &DEFAULT_PL
   breadcrumb_home_label      : "Strona główna"
   breadcrumb_separator       : "/"
   menu_label                 : "Przełącz menu"
+  search_label               :
   toc_label                  : "Spis treści"
   ext_link_label             : "Link bezpośredni"
   less_than                  : "mniej niż"
@@ -952,6 +973,7 @@ ja: &DEFAULT_JA
   breadcrumb_home_label      : "ホーム"
   breadcrumb_separator       : "/"
   menu_label                 : "メニュー"
+  search_label               :
   toc_label                  : "目次"
   ext_link_label             : "リンク"
   less_than                  :
@@ -997,6 +1019,7 @@ sk: &DEFAULT_SK
   breadcrumb_home_label      : "Domov"
   breadcrumb_separator       : "/"
   menu_label                 : "Menu"
+  search_label               :
   toc_label                  : "Obsah"
   ext_link_label             : "Priamy odkaz"
   less_than                  : "menej ako"
@@ -1043,6 +1066,7 @@ hu: &DEFAULT_HU
   breadcrumb_home_label      : "Kezdőlap"
   breadcrumb_separator       : "/"
   menu_label                 : "Menü nyit/zár"
+  search_label               :
   toc_label                  : "Ezen az oldalon"
   ext_link_label             : "Közvetlen Link"
   less_than                  : "kevesebb mint"
@@ -1089,6 +1113,7 @@ ro: &DEFAULT_RO
   breadcrumb_home_label      : "Acasă"
   breadcrumb_separator       : "/"
   menu_label                 : "Comută meniul"
+  search_label               :
   toc_label                  : "Pe această pagină"
   ext_link_label             : "Link direct"
   less_than                  : "mai puțin de"
@@ -1135,6 +1160,7 @@ pa: &DEFAULT_PA
   breadcrumb_home_label      : "ਘਰ"
   breadcrumb_separator       : "/"
   menu_label                 : "ਟੌਗਲ ਮੀਨੂ"
+  search_label               :
   toc_label                  : "ਇਸ ਸਫ਼ੇ 'ਤੇ"
   ext_link_label             : "ਸਿੱਧਾ ਸੰਪਰਕ"
   less_than                  : "ਤੋਂ ਘੱਟ"
@@ -1171,6 +1197,53 @@ pa: &DEFAULT_PA
   back_to_top                : "ਵਾਪਸ ਚੋਟੀ 'ਤੇ ਜਾਓ"
 pa-IN:
   <<: *DEFAULT_PA  
+
+# Persian (Farsi)
+# --------------
+fa: &DEFAULT_FA
+  page                       : "صفحه"
+  pagination_previous        : "قبلی"
+  pagination_next            : "بعدی"
+  breadcrumb_home_label      : "صفحه اصلی"
+  breadcrumb_separator       : "/"
+  menu_label                 : "فهرست"
+  toc_label                  : "در این صفحه"
+  ext_link_label             : "لینک مستقیم"
+  less_than                  : " "
+  minute_read                : "(طول مطالعه (دقیقه"
+  share_on_label             : "اشتراک گذاری در"
+  meta_label                 :
+  tags_label                 : "تگ ها: "
+  categories_label           : "دسته بندی ها: "
+  date_label                 : "به روز شده در: "
+  comments_label             : "ارسال نظر"
+  comments_title             : "نظرات"
+  more_label                 : "ادامه مطلب"
+  related_label              : "ممکن است از این مطالب نیز لذت ببرید"
+  follow_label               : "دنبال کنید: "
+  feed_label                 : "خوراک"
+  powered_by                 : "طراحی شده توسط"
+  website_label              : "سایت اینترنتی"
+  email_label                : "پست الکترونیک"
+  recent_posts               : "آخرین مطالب"
+  undefined_wpm              : ".(words_per_minute) _config.yml متغیر اشتباه در"
+  comment_form_info          : ".آدرس ایمیل شما منتشر نخواهد شد. فیلدهای اجباری مشخص شده اند"
+  comment_form_comment_label : "دیدگاه"
+  comment_form_md_info       : ".پشتیبانی می شود Markdown"
+  comment_form_name_label    : "نام"
+  comment_form_email_label   : "پست الکترونیک"
+  comment_form_website_label : "سایت اینترنتی (اختیاری)"
+  comment_btn_submit         : "ارسال نظر"
+  comment_btn_submitted      : "ارسال شد"
+  comment_success_msg        : ".باتشکر از ارسال دیدگاه! پس از تأیید، این دیدگاه در سایت نشان داده خواهد شد"
+  comment_error_msg          : ".متاسفانه در ارسال شما خطایی بود. لطفا مطمئن شوید تمام فیلدهای مورد نیاز تکمیل شده و دوباره امتحان کنید"
+  loading_label              : "...بارگذاری"
+  search_placeholder_text    : "...عبارت جستجوی خود را وارد کنید"
+  results_found              : "نتایج"
+  back_to_top                : "بازگشت به بالا"
+fa-IR:
+  <<: *DEFAULT_FA
+
 # Another locale
 # --------------
 #
