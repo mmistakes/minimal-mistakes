@@ -1,0 +1,21 @@
+---
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+title: Windows 10 is now more used than Windows 7
+date: January 03, 2019 at 12:25PM
+categories: Tech News
+---
+<img class="align-center" src="%20http://d2.alternativeto.net/dist/icons/windows-10_82838.png?width=36&amp;height=36&amp;mode=crop&amp;upscale=false">
+<p><p>After several years, the current version of Windows has overtaken the previous king of the operating system market.</p>
+<p>According to <a href="https://netmarketshare.com/operating-system-market-share.aspx?options=%7B%22filter%22%3A%7B%22%24and%22%3A%5B%7B%22deviceType%22%3A%7B%22%24in%22%3A%5B%22Desktop%2Flaptop%22%5D%7D%7D%5D%7D%2C%22dateLabel%22%3A%22Trend%22%2C%22attributes%22%3A%22share%22%2C%22group%22%3A%22platformVersion%22%2C%22sort%22%3A%7B%22share%22%3A-1%7D%2C%22id%22%3A%22platformsDesktopVersions%22%2C%22dateInterval%22%3A%22Monthly%22%2C%22dateStart%22%3A%222018-01%22%2C%22dateEnd%22%3A%222018-12%22%2C%22segments%22%3A%22-1000%22%7D" rel="nofollow">the NetApplications.com-operated NetMarketShare usage statistics website</a>, <a href='//alternativeto.net/software/windows-10/'><img alt='Small Windows 10 icon' class='mini-app-icon' src='//d2.alternativeto.net/dist/icons/windows-10_82838.png?width=36&height=36&mode=crop&upscale=false' />Windows 10</a> has overtaken Windows 7 in worldwide usage in December of 2018. This comes three-and-a-half years after the release of Windows 10. To quote VentureBeat's succinct analysis: &quot;Windows 10 had 38.14 percent market share in November and gained 1.08 percentage points in December to hit 39.22 percent.&quot;</p>
+<p>With this move, however, still belies a fact set to become more troubling: As of December of 2018, nearly 37 percent of all Internet-connected computer users still actively choose to use <a href='//alternativeto.net/software/windows-7/'><img alt='Small Windows 7 icon' class='mini-app-icon' src='//d2.alternativeto.net/dist/icons/windows-7_94498.png?width=36&height=36&mode=crop&upscale=false' />Windows 7</a> over the later released <a href='//alternativeto.net/software/windows-8/'><img alt='Small Windows 8 icon' class='mini-app-icon' src='//d2.alternativeto.net/dist/icons/windows-8_33098.png?width=36&height=36&mode=crop&upscale=false' />Windows 8</a> and Windows 10. This is despite the fact that Windows 7 will reach its end of life in January of 2020. For users that either cannot or will not opt into <a href="https://alternativeto.net/news/2018/9/free-support-for-windows-10-releases-extended-paid-extended-support-for-windows-7-announced" rel="nofollow">the extended support timeline for Windows 7 for enterprise and education</a>, this will pose a danger of incompatibility with future versions of their most used apps, not to mention potential security vulnerabilities.</p>
+<p>As far as other versions of Windows in terms of market share, <a href='//alternativeto.net/software/windows-vista/'><img alt='Small Windows Vista icon' class='mini-app-icon' src='//d2.alternativeto.net/dist/icons/windows-vista_106474.png?width=36&height=36&mode=crop&upscale=false' />Windows Vista</a> no longer has statistically significant usage according to NetMarketShare, with a .2 percent market share for December of 2018. <a href='//alternativeto.net/software/windows-xp/'><img alt='Small Windows XP icon' class='mini-app-icon' src='//d2.alternativeto.net/dist/icons/windows-xp_82835.png?width=36&height=36&mode=crop&upscale=false' />Windows XP</a>, on the other hand, stands at 4.54 percent. Windows XP stopped receiving updates in April of 2014.</p>
+<p>Further coverage:<br />
+<a href="https://arstechnica.com/gadgets/2019/01/windows-10-edges-past-windows-7-to-become-most-widely-used-windows/" rel="nofollow">Ars Technica</a><br />
+<a href="https://www.theverge.com/2019/1/2/18164916/microsoft-windows-10-market-share-passes-windows-7-statistics" rel="nofollow">The Verge</a><br />
+<a href="https://venturebeat.com/2019/01/01/net-applications-windows-10-passes-windows-7-in-market-share/" rel="nofollow">VentureBeat</a></p>
+</p>
+<a class="btn btn--info" href="https://alternativeto.net/news/2019/1/windows-10-is-now-more-used-than-windows-7">View Complete Article</a>
