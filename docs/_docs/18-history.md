@@ -4,9 +4,15 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2019-01-01T19:10:40-05:00
+last_modified_at: 2019-01-04T12:33:20-05:00
 toc: true
 ---
+
+## Unreleased
+
+### Enhancements
+
+- Clicking table of contents links changes URL has fragment. [#2019](https://github.com/mmistakes/minimal-mistakes/pull/2019)
 
 ## [4.14.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.14.2)
 
