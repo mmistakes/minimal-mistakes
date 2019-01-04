@@ -61,26 +61,24 @@ $(document).ready(function() {
     }, 400);
   });
 
-  // init smooth scroll
+  // Smooth scrolling
 
-  // Bind the hashchange event listener
+  // Bind the hashchange event listener to support back/forward buttons
   $(window).bind("hashchange", function (event) {
     $.smoothScroll({
-      // Replace '#/' with '#' to go to the correct target
-      scrollTarget: location.hash.replace(/^\#\/?/, "#"),
+      scrollTarget: location.hash,
       offset: -20
     });
   });
+  // Override clicking on links to smooth scroll
   $('a[href*="#"]').bind("click", function (event) {
-    // Remove '#' from the hash.
-    var hash = this.hash.replace(/^#/, "");
-    if (this.pathname === location.pathname && hash) {
+    if (this.pathname === location.pathname && this.hash) {
       event.preventDefault();
-      // Change '#' (removed above) to '#/' so it doesn't jump without the smooth scrolling
-      location.hash = "#/" + hash;
+      history.pushState(null, null, this.hash);
+      $(window).trigger("hashchange");
     }
   });
-  // Trigger hashchange event on page load if there is a hash in the URL.
+  // Smooth scroll on page load if there is a hash in the URL.
   if (location.hash) {
     $(window).trigger("hashchange");
   }
