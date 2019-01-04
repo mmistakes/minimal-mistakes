@@ -61,8 +61,27 @@ $(document).ready(function() {
     }, 400);
   });
 
-  // init smooth scroll
-  $("a").smoothScroll({ offset: -20 });
+  // Smooth scrolling
+
+  // Bind popstate event listener to support back/forward buttons.
+  $(window).bind("popstate", function (event) {
+    $.smoothScroll({
+      scrollTarget: location.hash,
+      offset: -20
+    });
+  });
+  // Override clicking on links to smooth scroll
+  $('a[href*="#"]').bind("click", function (event) {
+    if (this.pathname === location.pathname && this.hash) {
+      event.preventDefault();
+      history.pushState(null, null, this.hash);
+      $(window).trigger("popstate");
+    }
+  });
+  // Smooth scroll on page load if there is a hash in the URL.
+  if (location.hash) {
+    $(window).trigger("popstate");
+  }
 
   // add lightbox class to all image links
   $(
