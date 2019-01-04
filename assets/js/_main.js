@@ -63,8 +63,8 @@ $(document).ready(function() {
 
   // Smooth scrolling
 
-  // Bind the hashchange event listener to support back/forward buttons
-  $(window).bind("hashchange", function (event) {
+  // Bind popstate event listener to support back/forward buttons.
+  $(window).bind("popstate", function (event) {
     $.smoothScroll({
       scrollTarget: location.hash,
       offset: -20
@@ -75,12 +75,12 @@ $(document).ready(function() {
     if (this.pathname === location.pathname && this.hash) {
       event.preventDefault();
       history.pushState(null, null, this.hash);
-      $(window).trigger("hashchange");
+      $(window).trigger("popstate");
     }
   });
   // Smooth scroll on page load if there is a hash in the URL.
   if (location.hash) {
-    $(window).trigger("hashchange");
+    $(window).trigger("popstate");
   }
 
   // add lightbox class to all image links
