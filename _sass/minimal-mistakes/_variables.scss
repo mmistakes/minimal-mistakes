@@ -61,6 +61,7 @@ $muted-text-color: mix(#fff, $text-color, 35%) !default;
 $border-color: $lighter-gray !default;
 $form-background-color: $lighter-gray !default;
 $footer-background-color: $lighter-gray !default;
+$active-color: mix($light-gray, $lighter-gray, 50%) !default;
 
 $primary-color: #6f777d !default;
 $success-color: #3fa63f !default;

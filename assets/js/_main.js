@@ -64,10 +64,13 @@ $(document).ready(function() {
   // Smooth scrolling
 
   // Bind popstate event listener to support back/forward buttons.
+  var smoothScrolling = false;
   $(window).bind("popstate", function (event) {
     $.smoothScroll({
       scrollTarget: location.hash,
-      offset: -20
+      offset: -20,
+      beforeScroll: function() { smoothScrolling = true; },
+      afterScroll: function() { smoothScrolling = false; }
     });
   });
   // Override clicking on links to smooth scroll
@@ -82,6 +85,44 @@ $(document).ready(function() {
   if (location.hash) {
     $(window).trigger("popstate");
   }
+
+  // Scrollspy equivalent: update hash fragment while scrolling.
+  var timer;
+  $(window).scroll(function() {
+    // Don't run while smooth scrolling (from clicking on a link).
+    if (smoothScrolling) return;
+    // Debounce: only run after 250 ms of no scrolling.
+    clearTimeout(timer);
+    timer = setTimeout(function () {
+      var scrollTop = $(window).scrollTop() + 20;  // 20 = offset
+      var links = [];
+      $("nav.toc a").each(function() {
+        var link = $(this);
+        var href = link.attr("href");
+        if (href && href[0] == "#") {
+          var element = $(href);
+          links.push({
+            link: link,
+            href: href,
+            top: element.offset().top
+          });
+          link.removeClass('active');
+        }
+      });
+      for (var i = 0; i < links.length; i++) {
+        var top = links[i].top;
+        var bottom = (i < links.length - 1 ? links[i+1].top : Infinity);
+        if (top <= scrollTop && scrollTop < bottom) {
+          // Mark all ancestors as active
+          links[i].link.parents("li").children("a").addClass('active');
+          if (links[i].href !== location.hash) {
+            history.replaceState(null, null, links[i].href);
+          }
+          break;
+        }
+      }
+    }, 250);
+  });
 
   // add lightbox class to all image links
   $(
