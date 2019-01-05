@@ -1,20 +1,20 @@
 [
   {
     "image_path": null,
-    "alt": "Hort geschlossen",
-    "title": "Hort geschlossen",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NXV0ZG9jbG5jbm9sZmQ5NGM1OHJia2d0NHAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "alt": "2. GEV",
+    "title": "2. GEV",
+    "excerpt": "19:00 Uhr, Mensa",
+    "url": "https://www.google.com/calendar/event?eid=N20ydWVkMzljMTlsdDFlZDJzMnBtZGl2aGogaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
-      "date": "2018-12-27",
-      "date_time": null
+      "date": null,
+      "date_time": "2019-01-23T19:00:00+01:00"
     },
     "end": {
-      "date": "2019-01-05",
-      "date_time": null
+      "date": null,
+      "date_time": "2019-01-23T21:00:00+01:00"
     },
-    "created": "2018-08-14T14:23:35.000Z",
-    "updated": "2018-08-14T14:23:35.382Z"
+    "created": "2019-01-05T13:41:41.000Z",
+    "updated": "2019-01-05T13:42:37.539Z"
   },
   {
     "image_path": null,
@@ -35,19 +35,70 @@
   },
   {
     "image_path": null,
-    "alt": "Hort geschlossen",
-    "title": "Hort geschlossen",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M2NjZzcxN2F2MDJhaDhnNDZpcXNsYzFxZjcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "alt": "Halbjahreszeugnisse für die Klassen ",
+    "title": "Halbjahreszeugnisse für die Klassen ",
+    "excerpt": "Unterrichtsschluss nach der 3. Stunde um 10:40 Uhr für alle Kinder",
+    "url": "https://www.google.com/calendar/event?eid=NmRjNjh2YnRmcjN1dGk1ODUwZzkxM2k2aHEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
-      "date": "2019-05-31",
+      "date": null,
+      "date_time": "2019-02-01T10:40:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-02-01T10:40:00+01:00"
+    },
+    "created": "2019-01-05T13:47:41.000Z",
+    "updated": "2019-01-05T13:47:41.584Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Winterferien",
+    "title": "Winterferien",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MDJwdm9hazdoNXY1aGZkaWJ1c3Q1MGIwdGsgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-02-04",
       "date_time": null
     },
     "end": {
-      "date": "2019-06-01",
+      "date": "2019-02-09",
       "date_time": null
     },
-    "created": "2018-08-14T14:23:01.000Z",
-    "updated": "2018-08-14T14:23:01.854Z"
+    "created": "2019-01-05T13:48:12.000Z",
+    "updated": "2019-01-05T13:48:12.869Z"
+  },
+  {
+    "image_path": null,
+    "alt": "2. Gesamtkonferenz",
+    "title": "2. Gesamtkonferenz",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MGowazU4Mm5pZjUxNnA1cGhkbTNyb2Q1a2ogaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-02-19T16:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-02-19T18:00:00+01:00"
+    },
+    "created": "2019-01-05T13:43:15.000Z",
+    "updated": "2019-01-05T13:43:15.265Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Schulfasching",
+    "title": "Schulfasching",
+    "excerpt": "Die gesamte Schule feiert!",
+    "url": "https://www.google.com/calendar/event?eid=M3JydHIwMmpvMXBhMGJ0ODIzYmNwMjl2OHYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-03-05T08:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-03-05T13:30:00+01:00"
+    },
+    "created": "2019-01-05T13:45:18.000Z",
+    "updated": "2019-01-05T13:45:18.458Z"
   }
 ]
