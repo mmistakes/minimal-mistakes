@@ -11,8 +11,7 @@ I was writing a script earlier this week and came across the need to iterate ove
 
 ## Code Sample
 
-<script src="https://gist.github.com/AndrewPla/650209134a3ea887a31104085628bd9c
-"></script>
+<script src="https://gist.github.com/AndrewPla/650209134a3ea887a31104085628bd9c.js"></script>
 
 ## Hidden PSObject Property
 
