@@ -104,30 +104,39 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  name             : "Roozbeh Farhoodi"
+  avatar           : "/assets/images/bio-photo.jpg"
+  bio              : "Postdoctoral researcher in computational neuroscience"
+  location         : "University of Pennsylvania, Philadelphia, USA"
+  email            : "roozbehfarhoodi@gmail.com"
   links:
-    - label: "Email"
+      - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:your.name@email.com
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: mailto:roozbehfarhoodi@gmail.com
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+      url: "https://twitter.com/aha_momentum"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      url: "https://www.facebook.com/roozbeh.farhoudi"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/RoozbehFarhoodi"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://www.instagram.com/roozbehfarhoodi/" 
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/roozbeh-farhoodi-9751286a/"
+    - label: "Youtube"
+      icon: "fas fa-fw fa-youtube"
+      url: "https://www.youtube.com/channel/UC6OHSrPEUJZkRT04sJnMpgw"
+    - label: "Soundcloud"
+      icon: "fas fa-fw fa-soundcloud"
+      url: "https://soundcloud.com/roozbeh-farhoudi"
+    - label: "Goodread"
+      icon: "fab fa-fw fa-twitter-goodread"
+      url: "https://www.goodreads.com/user/show/50136496-roozbeh-farhoodi"
 
 # Site Footer
 footer:
