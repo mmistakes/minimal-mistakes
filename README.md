@@ -1,4 +1,4 @@
-# [Personal Homepage of Roozbeh]
+# Personal Homepage of Roozbeh
 
 Hi there, thanks for visiting my homepage. I used [Minimal Mistakes Jekyll theme](https://mmistakes.github.io/minimal-mistakes/) to make this page which is a flexible two-column Jekyll theme, perfect for building personal sites, blogs, and portfolios. As the name implies, styling is purposely minimalistic to be enhanced and customized by you.
 
