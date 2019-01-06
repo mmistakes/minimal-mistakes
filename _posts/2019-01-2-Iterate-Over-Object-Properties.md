@@ -49,8 +49,8 @@ $objMembers = $object.psobject.Members | where-object membertype -like 'noteprop
 
 These are some great posts that go a bit deeper on things and provide lots of relevant info.
 
-https://powershellexplained.com/2016-10-28-powershell-everything-you-wanted-to-know-about-pscustomobject/
+- [https://powershellexplained.com/2016-10-28-powershell-everything-you-wanted-to-know-about-pscustomobject/](https://powershellexplained.com/2016-10-28-powershell-everything-you-wanted-to-know-about-pscustomobject/)
 
-https://ramblingcookiemonster.wordpress.com/2014/11/22/exploring-powershell-objects-flattening/
+- [https://ramblingcookiemonster.wordpress.com/2014/11/22/exploring-powershell-objects-flattening/](https://ramblingcookiemonster.wordpress.com/2014/11/22/exploring-powershell-objects-flattening/)
 
-https://stackoverflow.com/questions/37688708/iterate-over-psobject-properties-in-powershell
+- [https://stackoverflow.com/questions/37688708/iterate-over-psobject-properties-in-powershell](https://stackoverflow.com/questions/37688708/iterate-over-psobject-properties-in-powershell)
