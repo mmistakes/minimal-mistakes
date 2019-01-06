@@ -1,8 +1,11 @@
 # main links
 main:
-  - title: "Research"
-    url: /research/
-  - title: "Publications"
-    url: /publications/
-  - title: "Posts"
-   url: /posts/
+  - title: "Quick-Start Guide"
+    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+# main:
+#   - title: "Research"
+#     url: /research/
+#   - title: "Publications"
+#     url: /publications/
+#   - title: "Posts"
+#    url: /posts/
