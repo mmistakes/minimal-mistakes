@@ -16,13 +16,13 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "AHA MOMENTS"
+title                    : "About"
 title_separator          : "-"
 name                     : "Roozbeh Farhoodi"
 description              : "Personal website"
-url                      : "https://github.com/RoozbehFarhoodi"
-baseurl                  : ""
-repository               : "https://github.com/RoozbehFarhoodi"
+url                      : # "https://github.com/RoozbehFarhoodi"
+baseurl                  : # ""
+repository               : # "https://github.com/RoozbehFarhoodi"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : true #, false (default)
 permalink                : /:categories/:title/
