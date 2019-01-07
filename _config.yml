@@ -23,7 +23,7 @@ description              : "Personal website"
 url                      : # "https://github.com/RoozbehFarhoodi"
 baseurl                  : # ""
 repository               : # "https://github.com/RoozbehFarhoodi"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/assets/images/background.jpg"
 breadcrumbs              : true #, false (default)
 permalink                : /:categories/:title/
 words_per_minute         : 200
