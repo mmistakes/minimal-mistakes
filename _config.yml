@@ -108,7 +108,7 @@ author:
   avatar           : "/assets/images/bio-image.jpg"
   bio              : "Postdoctoral researcher in computational neuroscience"
   location         : "University of Pennsylvania, <br/> Philadelphia, USA"
-  email            : "roozbehfarhoodi@gmail.com"
+  #email            : "roozbehfarhoodi@gmail.com"
   links:
     - label: "roozbehfarhoodi@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
