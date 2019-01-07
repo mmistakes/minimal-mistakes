@@ -110,7 +110,7 @@ author:
   location         : "University of Pennsylvania, Philadelphia, USA"
   email            : "roozbehfarhoodi@gmail.com"
   links:
-    - label: "Email"
+    - label: "roozbehfarhoodi@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
       url: mailto:roozbehfarhoodi@gmail.com
     - label: "Twitter"
