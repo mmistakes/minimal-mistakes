@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "default", "dark", "dirt"
 locale                   : "en-US"
 title                    : "Home"
 title_separator          : "-"
-name                     : "Roozbeh Farhoodi"
+name                     : "Home"
 description              : "Personal website"
 url                      : # "https://github.com/RoozbehFarhoodi"
 baseurl                  : # ""
@@ -74,7 +74,7 @@ google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google_site_verification :
+google_site_verification : "googlea77671f08e771c11.html"
 bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
@@ -107,7 +107,7 @@ author:
   name             : "Roozbeh Farhoodi"
   avatar           : "/assets/images/bio-image.jpg"
   bio              : "Postdoctoral researcher in computational neuroscience"
-  location         : "University of Pennsylvania, <br/> Philadelphia, USA"
+  location         : "Philadelphia, PA"
   #email            : "roozbehfarhoodi@gmail.com"
   links:
     - label: "roozbehfarhoodi@gmail.com"
