@@ -8,3 +8,5 @@ main:
     url: /publications/
   - title: "Posts"
     url: /posts/
+  - title: "About"
+    url: /about/
