@@ -349,6 +349,7 @@ comments:
   provider: "utterances"
   utterances:
     theme: "github-light" # "github-dark"
+    issue_term: "pathname"
 ```
 
 #### Static-based comments via Staticman
