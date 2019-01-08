@@ -14,7 +14,11 @@
   {%- assign seo_title = seo_title | markdownify | strip_html | strip_newlines | escape_once -%}
 {%- endif -%}
 
-{%- assign canonical_url = page.url | replace: "index.html", "" | absolute_url %}
+{% if page.canonical_url %}
+  {%- assign canonical_url = page.canonical_url %}
+{% else %}
+  {%- assign canonical_url = page.url | replace: "index.html", "" | absolute_url %}
+{% endif %}
 
 {%- assign seo_description = page.description | default: page.excerpt | default: site.description -%}
 {%- if seo_description -%}
