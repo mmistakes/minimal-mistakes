@@ -7,7 +7,7 @@ single_layout_gallery:
     alt: "single layout with header example"
   - image_path: /assets/images/mm-layout-single-meta.png
     alt: "single layout with comments and related posts"
-last_modified_at: 2018-11-25T19:45:55-05:00
+last_modified_at: 2019-01-08T08:31:40-05:00
 toc: true
 toc_label: "Included Layouts"
 toc_icon: "columns"
@@ -63,6 +63,22 @@ Outputs:
 
 ```html
 <body class="layout--splash landing dark-theme">
+```
+
+### Canonical URL
+
+You can set custom Canonical URL for a page by specifying `canonical_url` option in pages YAML Front Matter. For example, if you have the following:
+
+```yaml
+layout: single
+title: Title of Your Post
+canonical_url: "https://yoursite.com/custom-canonical-url"
+```
+
+This will generate the following in the `<head>` of your page:
+
+```html
+<link rel="canonical" href="https://yoursite.com/custom-canonical-url" />
 ```
 
 ## Compress layout

@@ -4,7 +4,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2019-01-08T08:21:55-05:00
+last_modified_at: 2019-01-08T08:24:03-05:00
 toc: true
 ---
 
@@ -12,6 +12,7 @@ toc: true
 
 ### Enhancements
 
+- Allow custom canonical url on a page-by-page basis. [#2021](https://github.com/mmistakes/minimal-mistakes/pull/2021)
 - Update table of contents navigation based on scroll position to indicate which link is currently active in the viewport. [#2020](https://github.com/mmistakes/minimal-mistakes/pull/2020)
 - Clicking table of contents links changes URL has fragment. [#2019](https://github.com/mmistakes/minimal-mistakes/pull/2019)
 
