@@ -6,20 +6,12 @@ $(document).ready(function() {
   // Sticky footer
   var bumpIt = function() {
       $("body").css("margin-bottom", $(".page__footer").outerHeight(true));
-    },
-    didResize = false;
+    };
 
   bumpIt();
-
-  $(window).resize(function() {
-    didResize = true;
-  });
-  setInterval(function() {
-    if (didResize) {
-      didResize = false;
-      bumpIt();
-    }
-  }, 250);
+  $(window).resize(jQuery.throttle(250, function() {
+    bumpIt();
+  }));
 
   // FitVids init
   $("#main").fitVids();
@@ -64,10 +56,13 @@ $(document).ready(function() {
   // Smooth scrolling
 
   // Bind popstate event listener to support back/forward buttons.
+  var smoothScrolling = false;
   $(window).bind("popstate", function (event) {
     $.smoothScroll({
       scrollTarget: location.hash,
-      offset: -20
+      offset: -20,
+      beforeScroll: function() { smoothScrolling = true; },
+      afterScroll: function() { smoothScrolling = false; }
     });
   });
   // Override clicking on links to smooth scroll
@@ -82,6 +77,39 @@ $(document).ready(function() {
   if (location.hash) {
     $(window).trigger("popstate");
   }
+
+  // Scrollspy equivalent: update hash fragment while scrolling.
+  $(window).scroll(jQuery.throttle(250, function() {
+    // Don't run while smooth scrolling (from clicking on a link).
+    if (smoothScrolling) return;
+    var scrollTop = $(window).scrollTop() + 20;  // 20 = offset
+    var links = [];
+    $("nav.toc a").each(function() {
+      var link = $(this);
+      var href = link.attr("href");
+      if (href && href[0] == "#") {
+        var element = $(href);
+        links.push({
+          link: link,
+          href: href,
+          top: element.offset().top
+        });
+        link.removeClass('active');
+      }
+    });
+    for (var i = 0; i < links.length; i++) {
+      var top = links[i].top;
+      var bottom = (i < links.length - 1 ? links[i+1].top : Infinity);
+      if (top <= scrollTop && scrollTop < bottom) {
+        // Mark all ancestors as active
+        links[i].link.parents("li").children("a").addClass('active');
+        if (links[i].href !== location.hash) {
+          history.replaceState(null, null, links[i].href);
+        }
+        break;
+      }
+    }
+  }));
 
   // add lightbox class to all image links
   $(

@@ -186,6 +186,7 @@ To test the theme, run `bundle exec rake preview` and open your browser at `http
 - [FitVids.JS](http://fitvidsjs.com/)
 - [GreedyNav.js](https://github.com/lukejacksonn/GreedyNav)
 - [jQuery Smooth Scroll](https://github.com/kswedberg/jquery-smooth-scroll)
+- [jQuery throttle / debounce](http://benalman.com/projects/jquery-throttle-debounce-plugin/)
 - [Lunr](http://lunrjs.com)
 
 ---
@@ -243,6 +244,10 @@ Magnific Popup is distributed under the terms of the MIT License.
 Minimal Mistakes incorporates [jQuery Smooth Scroll](https://github.com/kswedberg/jquery-smooth-scroll),
 Copyright (c) 2017 Karl Swedberg.
 jQuery Smooth Scroll is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
+Minimal Mistakes incorporates [jQuery throttle / debounce](http://benalman.com/projects/jquery-throttle-debounce-plugin/),
+Copyright (c) 2010 "Cowboy" Ben Alman.
+jQuery throttle / debounce is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
 Minimal Mistakes incorporates [GreedyNav.js](https://github.com/lukejacksonn/GreedyNav),
 Copyright (c) 2015 Luke Jackson.
