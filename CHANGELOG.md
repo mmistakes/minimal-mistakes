@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+- Update table of contents navigation based on scroll position to indicate which link is currently active in the viewport. [#2020](https://github.com/mmistakes/minimal-mistakes/pull/2020)
 - Clicking table of contents links changes URL has fragment. [#2019](https://github.com/mmistakes/minimal-mistakes/pull/2019)
 
 ## [4.14.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.14.2)
