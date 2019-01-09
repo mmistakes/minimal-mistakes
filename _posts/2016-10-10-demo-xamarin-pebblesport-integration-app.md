@@ -1,10 +1,9 @@
 ---
-layout: post
 title: Demo Xamarin PebbleSport integration app
 date: 2016-10-10 16:34
 author: nicold
 comments: true
-categories: [.NET, android, bluetooth, pebble, pebblekit, smartwatch, Uncategorized, xamarin]
+tags: [.NET, android, bluetooth, pebble, pebblekit, smartwatch, Uncategorized, xamarin]
 ---
 
 <p style="text-align: left">If you are looking for a Xamarin Android sample that show how to manage the Pebble Sport app from a Xamarin Project, I have just released on github a sample for you!:-)</p>

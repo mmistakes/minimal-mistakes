@@ -1,5 +1,4 @@
 ---
-layout: post
 title: First message
 date: 2005-07-28 05:22
 author: nicold
