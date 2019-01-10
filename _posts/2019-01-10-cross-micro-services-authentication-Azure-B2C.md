@@ -10,7 +10,7 @@ In this context, it is easy to have web solutions composed by dozen of microserv
 
 These APIs can provide anonymous access to their services, but in the real world often they must be authenticated. This means that once a user authenticates to an identity provider, an easy way to have a "single sign on" to dozens of microservices is needed.
 
-To add more complexity, a generic API implemented as microservice, could require information from another microservice|API and so on (API to API authenticated call).
+To add more complexity, a generic API implemented as microservice, could require information from another microservice or another API (API to API authenticated call).
 
 **At the times of the Active Directory integrated authentication, the solution was quite easy**: the developer turned ON the flag "authenticated user only" on IIS and all, magically, was secured but with the *classical* limitation of these old times: all machines must trust a common Active Directory (yes, the scenario can become more *inclusive* with trusted domains and forests but this is not the scope of this post). 
 
@@ -18,7 +18,7 @@ Each time you needed to integrate a 3th party service outside of this trust, the
 
 In nowadays we are lucky, OpenID Connect and OAUTH2 have changed (or have opened…) the world of authentication and authorization. 
 
-Azure Active Directory B2C, Microsoft's cloud-based identity and access management solution for consumer-facing web and mobile applications now can come in the game. It is an highly-available global service that scales to hundreds of millions of consumer identities. Built on an enterprise-grade secure platform, Azure Active Directory B2C keeps your business and your consumers protected and supports open standards such as OpenID Connect OAUTH2.
+<a href="https://azure.microsoft.com/en-us/services/active-directory-b2c/" target="_blank">Azure Active Directory B2C</a>, Microsoft's cloud-based identity and access management solution for consumer-facing web and mobile applications now can come in the game. It is an highly-available global service that scales to hundreds of millions of consumer identities. Built on an enterprise-grade secure platform, Azure Active Directory B2C keeps your business and your consumers protected and supports open standards such as OpenID Connect OAUTH2.
 
 If you need to architect a **microservices based solution** that uses the <a href="https://docs.microsoft.com/en-us/office365/enterprise/hybrid-modern-auth-overview#BKMK_WhatisModAuth" target="_blank">modern authentication</a> to provide its services to millions of authenticated users stored on Azure B2C, here you can find a step by step configuration based on .NET Core, Angular and Xamarin.
 
