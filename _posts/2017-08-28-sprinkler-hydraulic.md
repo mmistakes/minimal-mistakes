@@ -183,7 +183,7 @@ freezes.
 
 | Zone          | Description   | Quantity      | Unit price    | Total  |
 |:-------------:|:-------------:|:-------------:|:-------------:|:------:|
-| ![coude_laiton](/assets/images/sprinkler/vanne_integrale_manette_papillon_FF_26x34.jpg){:height="48px"width="48px"} | Gate FF 26x34 | 1 | 10.75 | 10.75
+| ![coude_laiton](/assets/images/sprinkler/vanne_integrale_manette_papillon_FF_26x34.jpg){:height="48px" width="48px"} | Gate FF 26x34 | 1 | 10.75 | 10.75
 | ![coude_laiton](/assets/images/sprinkler/coude_laiton_19x25.jpg){:height="48px" width="96px"}  | Brass elbow 19x25| 1 | 7.5 | 7.5
 | ![raccord_laiton](/assets/images/sprinkler/raccord_laiton_M_19x25.jpg){:height="48px" width="96px"}  | Brass adapter male 19x25 | 1 | 4.25 | 4.25
 | ![mamelon_F_20x27_M_26x34](/assets/images/sprinkler/mamelon_F_20x27_M_26x34.jpg){:height="48px" width="96px"}  | Brass nipple Female 20/27 -> Male 26/34 | 1 | 4.08 | 4.08
@@ -230,8 +230,8 @@ In my case, I designed with 2 floors in order to install: 5 valves, 2 gates and 
 | ![Te_compression_25](/assets/images/sprinkler/te_compression_25.jpg){:height="96px" width="96px"} | Compression tee| 4 | 4.05 | 16.2
 | ![Coude_compression_25](/assets/images/sprinkler/coude_compression_25_F20x27_25.jpg){:height="96px" width="96px"}|Compression fitting female tee | 9 | 4.65 | 41.85
 | ![Tube_deport](/assets/images/sprinkler/tube_déport_SPX_FLEX_30m.jpg){:height="48px" width="96px"}  |  swing pipe 30m SPX-FLEX 30m | 2 | 27.0 | 54.0
-| ![Tuyau_polyethylene](/assets/images/sprinkler/tuyau_polyethylène_25mm_25m_HD_6Bars.jpg){:height="48px"width="96px"}  | polyethylene irrigation pipe 25mm 50m HD 6Bars| 3 | 30.9 | 92.7
-| ![Turbine_escamotable](/assets/images/sprinkler/turbine_escamotable_RAIN_BIRD_3504_PC_1_2"_F.jpg){:height="48px"width="96px"}  | Rotor RAIN BIRD 3504 PC (1/2" F) | 13 | 6.97 | 90.61
+| ![Tuyau_polyethylene](/assets/images/sprinkler/tuyau_polyethylène_25mm_25m_HD_6Bars.jpg){:height="48px" width="96px"}  | polyethylene irrigation pipe 25mm 50m HD 6Bars| 3 | 30.9 | 92.7
+| ![Turbine_escamotable](/assets/images/sprinkler/turbine_escamotable_RAIN_BIRD_3504_PC_1_2"_F.jpg){:height="48px" width="96px"}  | Rotor RAIN BIRD 3504 PC (1/2" F) | 13 | 6.97 | 90.61
 | ![Coude_tube_déport](/assets/images/sprinkler/coude_tube_déport_SBE_50_16 x_1_2".jpg){:height="48px" width="96px"}|Swing Pipe - 1/2" MNPT Elbow | 13 | 0.24 | 3.12
 | ![Coude_16mm](/assets/images/sprinkler/coude_16mm_F_1demi_M.jpg){:height="48px" width="96px"}  | Swing Pipe - 3/4" MNPT Elbow | 13 | 0.24 | 3.12
 | - | - | - | - | 356.3
@@ -258,7 +258,7 @@ Components:
 | ![mamelon-34-polyp-noir](/assets/images/sprinkler/mamelon-34-polyp-noir.jpg){:height="48px" width="96px"}  | Nipple PVC male/male 3/4" | 1 | 1.09 | 1.09
 | ![reducteur_34_femelle_male](/assets/images/sprinkler/reducteur_34_femelle_male.jpg){:height="48px" width="96px"}  | Pressure Regulator 3/4" Hose Thread 25PSI female/male 3/4"  | 1 | 5.99 | 5.99
 | ![adaptateur-de-montage](/assets/images/sprinkler/adaptateur-de-montage.jpg){:height="48px" width="96px"}  | Thread adaptator male 3/4" -> 16mm  | 1 | 0.42 | 0.42
-| ![tuyau_polyethylene_16mm_25m](/assets/images/sprinkler/tuyau_polyethylene_16mm_25m.jpg){:height="48px"width="96px"}  | polyethylene irrigation pipe 16mm 25m | 5 | 6.90 | 34.5
+| ![tuyau_polyethylene_16mm_25m](/assets/images/sprinkler/tuyau_polyethylene_16mm_25m.jpg){:height="48px" width="96px"}  | polyethylene irrigation pipe 16mm 25m | 5 | 6.90 | 34.5
 | ![coude_16mm](/assets/images/sprinkler/coude_16mm.jpg){:height="48px" width="96px"}  | Elbow 16mm  |  6 | 0.25 | 1.50
 | ![jonction_16mm](/assets/images/sprinkler/jonction_16mm.jpg){:height="48px" width="96px"}  | Adapter 16mm | 6 | 0.25 | 1.50
 | ![te_16mm_MM](/assets/images/sprinkler/té_16mm_MM.jpg){:height="48px" width="96px"}  | Tee 16mm  | 4 | 0.54 | 2.16
