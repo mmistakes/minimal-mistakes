@@ -1,13 +1,20 @@
 ---
-title: Iterate over Object Properties by Using PSObject
+title: Iterate Over PSCustomObject Properties by Using THIS Hidden Property
 excerpt: "Got a pscustomobject that you want to iterate through? Use the .psobject hidden property!"
 tags:
 - PowerShell
 - pscustomobject
 - Get-Member
+
+image: "/assets/freaking-pegasus-or-something.jpg"
+thumbnail: "/assets/freaking-pegasus-or-something.jpg"
+header:
+  teaser: "/assets/freaking-pegasus-or-something.jpg"
 ---
 
-I was writing a script earlier this week and came across the need to iterate over the properties of a `[pscustomobject]`. I started writing a `foreach` loop and realized that I forgot how to iterate over each property in a pscustomobject. Sounds like the perfect excuse to freshen up on it and document it for myself for the next time I forget!
+I was writing some `code` earlier this week and came across the need to iterate over the properties of a `[pscustomobject]`. I wanted a function to be able to accept a `pscustomobject` and use all of the members to form a body on the fly. This command is for an api so I wanted to make it reusable with future versions of the api that may include new parameters.
+
+I started writing a `foreach` loop and realized that I forgot how to iterate over each property in a `pscustomobject`. Sounds like the perfect excuse to freshen up on it and document it for the next time I forget :)
 
 ## Code Sample
 
@@ -15,13 +22,13 @@ I was writing a script earlier this week and came across the need to iterate ove
 
 ## Hidden PSObject Property
 
-PSCustomObjects have a hidden property named psobject. This property contains base object metadata. Let's look at the hidden properties of a `pscustomobject` using the `-force` parameter of Get-Member.
+`PSCustomObjects` have a hidden property named psobject. This property contains base object metadata. Let's look at the hidden properties of a `pscustomobject` using the `-force` parameter of `Get-Member`.
 
-```powershell
+```
 
-> $object = [pscustomobject]@{ Key1 = 'Val1' ; Key2 = 'Val2' }
+$object = [pscustomobject]@{ Key1 = 'Val1' ; Key2 = 'Val2' }
 
-> $object | Get-Member -Force
+$object | Get-Member -Force
 
    TypeName: System.Management.Automation.PSCustomObject
 
@@ -40,14 +47,22 @@ Key1        NoteProperty string Key1=Val1
 Key2        NoteProperty string Key2=Val2
 ```
 
-Let's grab all of the properties by using the .psobject property. We only want to grab noteproperties because there will be other properties that we dont want to iterate over.
-```powershell
+Let's grab all of the properties by using the .psobject property. We only want to grab `noteproperties` because there will be other properties that we dont want to iterate over.
+
+```
 $objMembers = $object.psobject.Members | where-object membertype -like 'noteproperty'
+
+#create an empty hashtable to add stuff to.
+$form = @{}
+
+foreach ($obj in $objMembers) {
+   $form.add( "$($obj.name)", "$($obj.Value)")
+}
 ```
 
 ### Read More
 
-These are some great posts that go a bit deeper on things and provide lots of relevant info.
+These are some great posts that go a bit deeper on `pscustomobjects` and provide lots of relevant info.
 
 - [https://powershellexplained.com/2016-10-28-powershell-everything-you-wanted-to-know-about-pscustomobject/](https://powershellexplained.com/2016-10-28-powershell-everything-you-wanted-to-know-about-pscustomobject/)
 
