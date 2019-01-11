@@ -55,7 +55,24 @@ If you don't have pbcopy, you can install it easily. Here an example for
 [ArchLinux](https://gist.github.com/chriscandy/753eb149e9735e852b0b) users.
 
 
-### Sending SSH key to a server 
+### Sending SSH key to a server
+
+https://www.skyminds.net/se-connecter-depuis-un-serveur-vers-un-nas-synology-avec-des-cles-ssh-sans-mot-de-passe/
+
+sudo vim /etc/ssh/sshd_config
+
+Protocol 2
+LoginGraceTime 2m
+RSAAuthentication yes
+PubkeyAuthentication yes
+AuthorizedKeysFile      .ssh/authorized_keys
+
+chmod 700 /var/services/homes/jluccisano/.ssh
+chmod 644 /var/services/homes/jluccisano/.ssh/authorized_keys
+chmod 755 /var/services/homes/jluccisano
+
+
+sudo synoservicectl --reload sshd
 
 ```bash
 ssh-copy-id -i ~/.ssh/id_rsa.pub -p X username@address

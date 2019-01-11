@@ -143,3 +143,11 @@ git checkout -b develop origin/develop
 ```bash
 git log --format=fuller
 ```
+
+- Create tags
+
+
+```bash
+git tag -a 1.3 -m "v1.3"
+git push --tags
+```

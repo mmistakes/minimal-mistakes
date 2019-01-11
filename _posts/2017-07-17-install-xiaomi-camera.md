@@ -31,14 +31,23 @@ The objective of this tutorial is to set up a Xiaomi Camera
 
 
 
+diskutil partitionDisk /dev/disk2 GPT FAT32 PART1 100M ExFAT PART2 R
+
+wget https://github.com/samtap/fang-hacks/releases/download/0.2.0/fanghacks_v0.2.0.zip
+
+
+
 http://rostylesbonstuyaux.fr/tuto-jeedom-camera-ip-xiaomi-xiaofang-1080p/
 
 
 
 
 
+
+
+
 ```bash
-sudo diskutil eraseDisk FAT32 CAMERA MBRFormat /dev/disk1
+sudo diskutil eraseDisk FAT32 CAMERA MBRFormat /dev/disk2
 
 Started erase on disk1
 Unmounting disk
@@ -52,12 +61,12 @@ Mounting disk
 Finished erase on disk1
 
 
-diskutil unmountDisk /dev/disk1
+diskutil unmountDisk /dev/disk2
 
 Unmount of all volumes on disk1 was successful
 
 
-sudo dd bs=1m if=/Users/Lucci/Downloads/fanghacks_v0.2.0.img  of=/dev/disk1
+sudo dd bs=1m if=/Users/Lucci/Downloads/fanghacks_v0.2.0.img  of=/dev/disk2
 ```
 
 CTRL-T
@@ -142,3 +151,6 @@ live_path = '/unicast'
 http://www.androidpimp.com/home-security-cameras/xiaomi-xiaofang-review
 
 see more [here](https://github.com/samtap/fang-hacks)
+
+
+https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks

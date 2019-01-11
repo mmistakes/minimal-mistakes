@@ -51,4 +51,12 @@ uname -m
 
 ```bash
 find . ! -newermt 2017-09-06 -exec rm -rf {} \;
-``
+```
+
+Find list of extension in a tree
+
+find . -type f | perl -ne 'print $1 if m/\.([^.\/]+)$/' | sort -u
+
+Find by extension
+
+find . -type f  -name "*.mp*"
