@@ -1,6 +1,8 @@
 ---
 classes: wide
 title: Input Object Subproperty Tip - Get the value without accepting the whole object!
+tags:
+- PowerShell
 ---
 
 I was recently working on the [TOPdeskPS](https://github.com/andrewpla/topdeskps) module and came across the need to access a subproperty of an object that was being input.

@@ -1,6 +1,8 @@
 ---
 classes: wide
 title: Updating HelpUri for a Large Module
+tags:
+- PowerShell
 ---
 Contributing to open source is something that I really enjoy doing and want to do more of. I have been using the [PowerShell Framework](https://psframework.org) while developing modules lately (check it out!) and realized that despite having a website and a copy of all of the commands', running Get-Help with the -Online switch wasn't taking me to the online help for that command. Looks like a slight oversight, but this is a great opportunity to contribute back to a project that I use frequently. Also, it should be noted that the project is maintained by [Fred](https://twitter.com/FredWeinmann) and he's awesome.
 
@@ -34,7 +36,7 @@ You can grab the current version of the file from my [Github](https://github.com
 param
 (
 	$baseUrl = 'https://psframework.org/documentation/commands/PSFramework/',
-	
+
 	$Path = 'C:\Repos\PowershellFrameworkCollective\psframework\PSFramework\functions'
 )
 $Files = Get-ChildItem $Path -Recurse -filter '*.ps1'
@@ -45,13 +47,13 @@ $Results = foreach ($File in $Files) {
 	$CommandUrl = $baseUrl + $CommandName
 	$HelpUri = "[CmdletBinding(HelpUri = '$CommandUrl')]"
 	$NewHelpUri = ", HelpUri = '$CommandUrl')"
-	
+
 	#region Grab the current Cmdletbinding
 	$Content = Get-Content $File.FullName
 	$cmdletbinding = ($Content | Select-String -Pattern 'cmdletbinding' | Out-String).trim()
 	$CmdletBinding = $CmdletBinding.tostring()
 	#endregion Grab the current Cmdletbinding
-	
+
 	#region Create the New CmdletBinding
 	if ($cmdletbinding -like '*=*') {
 		$NewCmdletBinding = $CmdletBinding.replace(')', "$NewHelpUri")
@@ -72,7 +74,7 @@ $Results = foreach ($File in $Files) {
 $Results | Out-GridView -PassThru | ForEach-Object -Process {
 	$content = [System.IO.File]::ReadAllText($_.filename).Replace($_.CmdletBinding, $_.newcmdletbinding)
 	$Result = [System.IO.File]::WriteAllText($_.filename, $content)
-	
+
 	[pscustomobject]@{
 		CommandName = $_.commandName
 		CmdletBinding = $_.cmdletbinding

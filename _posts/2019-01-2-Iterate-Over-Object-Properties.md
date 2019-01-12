@@ -5,6 +5,7 @@ tags:
 - PowerShell
 - pscustomobject
 - Get-Member
+classes: wide
 
 image: /assets/freaking-pegasus-or-something.jpg
 thumbnail: /assets/freaking-pegasus-or-something.jpg

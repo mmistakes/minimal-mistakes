@@ -1,5 +1,5 @@
 ---
-title: Comparisons Inside Arrays - Useful and
+title: Comparisons Inside Arrays - Useful and Fancy!
 ---
 I recently got some assistance from the *ALWAYS* helpful [Joel Tallow](https://github.com/vexx32) with looking for ways to improve my code. He looked through some code and gave me some improvements. He also showed me some really cool bits of code and this post will cover one that I thought was useful.
 
