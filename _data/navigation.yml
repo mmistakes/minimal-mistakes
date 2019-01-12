@@ -10,3 +10,543 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Theme Setup &#8211; bblog</title>
+<meta name="description" content="Instructions on how to install and customize the Jekyll theme Minimal Mistakes.">
+<meta name="keywords" content="">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Theme Setup">
+<meta name="twitter:description" content="Instructions on how to install and customize the Jekyll theme Minimal Mistakes.">
+<meta name="twitter:site" content="@billbrown">
+<meta name="twitter:creator" content="@billbrown">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://bbrown.info/images/sample-image-3.jpg">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Theme Setup">
+<meta property="og:description" content="Instructions on how to install and customize the Jekyll theme Minimal Mistakes.">
+<meta property="og:url" content="http://bbrown.info/theme-setup/">
+<meta property="og:site_name" content="bblog">
+
+<meta property="og:image" content="http://bbrown.info/images/sample-image-3.jpg">
+
+
+
+
+
+
+<link rel="canonical" href="http://bbrown.info/theme-setup/">
+<link href="http://bbrown.info/feed.xml" type="application/atom+xml" rel="alternate" title="bblog Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://bbrown.info/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+	<script src="http://bbrown.info/assets/js/vendor/html5shiv.min.js"></script>
+	<script src="http://bbrown.info/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://bbrown.info/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://bbrown.info/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://bbrown.info/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://bbrown.info/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://bbrown.info/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://bbrown.info/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://bbrown.info/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body class="page">
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="http://bbrown.info/">bblog</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        
+				    
+				        
+				    
+				    <li><a href="http://bbrown.info/about/" >About</a></li>
+				
+				    
+				        
+				    
+				    <li><a href="http://bbrown.info/posts/" >Archive</a></li>
+				
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+  <div class="image-wrap">
+  <img src=
+    
+      "http://bbrown.info/images/sample-image-3.jpg"
+    
+  alt="Theme Setup feature image">
+  
+    <span class="image-credit">Photo Credit: <a href="http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/">WeGraphics</a></span>
+  
+  </div><!-- /.image-wrap -->
+
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+
+	<img src="https://avatars0.githubusercontent.com/u/5862?v=3&s=460" class="bio-photo" alt="Bill Brown bio photo">
+
+
+  <h3 itemprop="name">Bill Brown</h3>
+  <p>A complicated man.</p>
+  
+  <a href="http://twitter.com/billbrown" class="author-social" target="_blank"><i class="fa fa-fw fa-twitter-square"></i> Twitter</a>
+  
+  
+  
+  
+  
+  
+  <a href="http://github.com/bbrown" class="author-social" target="_blank"><i class="fa fa-fw fa-github"></i> Github</a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+  </div>
+  <article class="page">
+    <h1>Theme Setup</h1>
+    <div class="article-wrap">
+      <section id="table-of-contents" class="toc">
+  <header>
+    <h3><i class="fa fa-book"></i> Overview</h3>
+  </header>
+<div id="drawer">
+<ul id="markdown-toc">
+  <li><a href="#installation" id="markdown-toc-installation">Installation</a></li>
+  <li><a href="#running-jekyll" id="markdown-toc-running-jekyll">Running Jekyll</a></li>
+  <li><a href="#scaffolding" id="markdown-toc-scaffolding">Scaffolding</a></li>
+  <li><a href="#site-setup" id="markdown-toc-site-setup">Site Setup</a>    <ul>
+      <li><a href="#site-wide-configuration" id="markdown-toc-site-wide-configuration">Site Wide Configuration</a>        <ul>
+          <li><a href="#title" id="markdown-toc-title">title</a></li>
+          <li><a href="#url" id="markdown-toc-url">url</a></li>
+          <li><a href="#google-analytics-and-webmaster-tools" id="markdown-toc-google-analytics-and-webmaster-tools">Google Analytics and Webmaster Tools</a></li>
+        </ul>
+      </li>
+      <li><a href="#navigation-links" id="markdown-toc-navigation-links">Navigation Links</a></li>
+    </ul>
+  </li>
+  <li><a href="#adding-new-content-with-octopress" id="markdown-toc-adding-new-content-with-octopress">Adding New Content with Octopress</a>    <ul>
+      <li><a href="#new-post" id="markdown-toc-new-post">New Post</a></li>
+      <li><a href="#new-page" id="markdown-toc-new-page">New Page</a></li>
+    </ul>
+  </li>
+  <li><a href="#layouts-and-content" id="markdown-toc-layouts-and-content">Layouts and Content</a>    <ul>
+      <li><a href="#post-and-page" id="markdown-toc-post-and-page">Post and Page</a></li>
+      <li><a href="#post-index-page" id="markdown-toc-post-index-page">Post Index Page</a></li>
+      <li><a href="#feature-images" id="markdown-toc-feature-images">Feature Images</a></li>
+      <li><a href="#thumbnails-for-og-and-twitter-cards" id="markdown-toc-thumbnails-for-og-and-twitter-cards">Thumbnails for OG and Twitter Cards</a></li>
+      <li><a href="#author-override" id="markdown-toc-author-override">Author Override</a></li>
+      <li><a href="#kramdown-table-of-contents" id="markdown-toc-kramdown-table-of-contents">Kramdown Table of Contents</a></li>
+      <li><a href="#paragraph-indentation" id="markdown-toc-paragraph-indentation">Paragraph Indentation</a></li>
+      <li><a href="#videos" id="markdown-toc-videos">Videos</a></li>
+      <li><a href="#social-sharing-links" id="markdown-toc-social-sharing-links">Social Sharing Links</a></li>
+    </ul>
+  </li>
+  <li><a href="#further-customization" id="markdown-toc-further-customization">Further Customization</a></li>
+  <li><a href="#questions" id="markdown-toc-questions">Questions?</a></li>
+  <li><a href="#license" id="markdown-toc-license">License</a></li>
+</ul>
+
+  </div>
+</section>
+<!-- /#table-of-contents -->
+
+<h2 id="installation">Installation</h2>
+
+<p>Minimal Mistakes now requires <a href="http://jekyllrb.com/">Jekyll</a> 2.2+. Make sure to run <code>gem update jekyll</code> if you aren’t on the latest version or <code>gem install jekyll</code> if this is your first time installing it.</p>
+
+<p>If you are creating a new Jekyll site using Minimal Mistakes follow these steps:</p>
+
+<ol>
+  <li>Fork the <a href="http://github.com/mmistakes/minimal-mistakes/fork">Minimal Mistakes repo</a>.</li>
+  <li>Clone the repo you just forked and rename it.</li>
+  <li><a href="http://bundler.io">Install Bundler</a> <code>gem install bundler</code> and Run <code>bundle install</code> to install all dependencies (Jekyll, <a href="https://github.com/jekyll/jekyll-sitemap">Jekyll-Sitemap</a>, <a href="https://github.com/octopress/octopress">Octopress</a>, etc)</li>
+  <li>Update <code>config.yml</code>, add navigation, and replace demo posts and pages with your own. Full details below.</li>
+</ol>
+
+<p>If you want to use Minimal Mistakes with an existing Jekyll site follow these steps:</p>
+
+<ol>
+  <li><a href="https://github.com/mmistakes/minimal-mistakes/archive/master.zip">Download Minimal Mistakes</a> and unzip.</li>
+  <li>Rename <code>minimal-mistakes-master</code> to something meaningful ie: <code>new-site</code></li>
+  <li>Run <code>bundle install</code> to install all dependencies (Jekyll, <a href="https://github.com/jekyll/jekyll-sitemap">Jekyll-Sitemap</a>, <a href="https://github.com/octopress/octopress">Octopress</a>, etc)</li>
+  <li>Remove demo posts/pages and replace with your own posts, pages, and any other content you want to move over.</li>
+  <li>Update posts’ and pages’ YAML to match variables used by Minimal Mistakes. Full details below.</li>
+  <li>Update <code>_config.yml</code> and add navigation links. Full details below.</li>
+</ol>
+
+<p class="notice"><strong>Pro-tip:</strong> Delete the <code>gh-pages</code> branch after cloning and start fresh by branching off <code>master</code>. There is a bunch of garbage in <code>gh-pages</code> used for the theme’s demo site that I’m guessing you won’t want.</p>
+
+<hr />
+
+<h2 id="running-jekyll">Running Jekyll</h2>
+
+<p>If <code>jekyll build</code> and <code>jekyll serve</code> throw errors you may have to run Jekyll with <code>bundled exec</code> instead.</p>
+
+<blockquote>
+  <p>In some cases, running executables without bundle exec may work, if the executable happens to be installed in your system and does not pull in any gems that conflict with your bundle.</p>
+
+  <p>However, this is unreliable and is the source of considerable pain. Even if it looks like it works, it may not work in the future or on another machine.</p>
+</blockquote>
+
+<div class="highlight"><pre><code class="language-text" data-lang="text">bundle exec jekyll build
+
+bundle exec jekyll serve</code></pre></div>
+
+<hr />
+
+<h2 id="scaffolding">Scaffolding</h2>
+
+<p>How Minimal Mistakes is organized and what the various files are. All posts, layouts, includes, stylesheets, assets, and whatever else is grouped nicely under the root folder. The compiled Jekyll site outputs to <code>_site/</code>.</p>
+
+<div class="highlight"><pre><code class="language-text" data-lang="text">minimal-mistakes/
+├── _includes/
+|    ├── _author-bio.html        # bio stuff layout. pulls optional owner data from _config.yml
+|    ├── _browser-upgrade.html   # prompt to install a modern browser for &lt; IE9
+|    ├── _disqus_comments.html   # Disqus comments script
+|    ├── _footer.html            # site footer
+|    ├── _head.html              # site head
+|    ├── _navigation.html        # site top navigation
+|    ├── _open-graph.html        # Twitter Cards and Open Graph meta data
+|    └── _scripts.html           # site scripts
+├── _layouts/
+|    ├── home.html               # homepage layout
+|    ├── page.html               # page layout
+|    ├── post-index.html         # post index layout
+|    └── post.html               # single post layout
+├── _posts/                      # MarkDown formatted posts
+├── _sass/                       # Sass stylesheets
+├── _templates/                  # used by Octopress to define YAML variables for new posts/pages
+├── about/                       # sample about page
+├── assets/
+|    ├── css/                    # compiled stylesheets
+|    ├── fonts/                  # webfonts
+|    ├── js/
+|    |   ├── _main.js            # main JavaScript file, plugin settings, etc
+|    |   ├── plugins/            # scripts and jQuery plugins to combine with _main.js
+|    |   ├── scripts.min.js      # concatenated and minified _main.js + plugin scripts
+|    |   └── vendor/             # vendor scripts to leave alone and load as is
+|    └── less/
+├── images/                      # images for posts and pages
+├── 404.md                       # 404 page
+├── feed.xml                     # Atom feed template
+├── index.md                     # sample homepage. lists 5 latest posts 
+├── posts/                       # sample post index page. lists all posts in reverse chronology
+└── theme-setup/                 # theme setup page. safe to remove</code></pre></div>
+
+<hr />
+
+<h2 id="site-setup">Site Setup</h2>
+
+<p>A quick checklist of the files you’ll want to edit to get up and running.</p>
+
+<h3 id="site-wide-configuration">Site Wide Configuration</h3>
+
+<p><code>_config.yml</code> is your friend. Open it up and personalize it. Most variables are self explanatory but here’s an explanation of each if needed:</p>
+
+<h4 id="title">title</h4>
+
+<p>The title of your site… shocker!</p>
+
+<p>Example <code>title: My Awesome Site</code></p>
+
+<h4 id="url">url</h4>
+
+<p>Used to generate absolute urls in <code>sitemap.xml</code>, <code>feed.xml</code>, and for generating canonical URLs in <code>&lt;head&gt;</code>. When developing locally either comment this out or use something like <code>http://localhost:4000</code> so all assets load properly. <em>Don’t include a trailing <code>/</code></em>.</p>
+
+<p>Examples:</p>
+
+<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">url</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">http://mmistakes.github.io/minimal-mistakes</span>
+<span class="l-Scalar-Plain">url</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">http://localhost:4000</span>
+<span class="l-Scalar-Plain">url</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">//cooldude.github.io</span>
+<span class="l-Scalar-Plain">url</span><span class="p-Indicator">:</span></code></pre></div>
+
+<h4 id="google-analytics-and-webmaster-tools">Google Analytics and Webmaster Tools</h4>
+
+<p>Google Analytics UA and Webmaster Tool verification tags can be entered under <code>owner</code> in <code>_config.yml</code>. For more information on obtaining these meta tags check <a href="http://support.google.com/webmasters/bin/answer.py?hl=en&amp;answer=35179">Google Webmaster Tools</a> and <a href="https://ssl.bing.com/webmaster/configure/verify/ownership">Bing Webmaster Tools</a> support.</p>
+
+<h3 id="navigation-links">Navigation Links</h3>
+
+<p>To set what links appear in the top navigation edit <code>_data/navigation.yml</code>. Use the following format to set the URL and title for as many links as you’d like. <em>External links will open in a new window.</em></p>
+
+<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="p-Indicator">-</span> <span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Portfolio</span>
+  <span class="l-Scalar-Plain">url</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">/portfolio/</span>
+
+<span class="p-Indicator">-</span> <span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Made Mistakes</span>
+  <span class="l-Scalar-Plain">url</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">http://mademistakes.com</span></code></pre></div>
+
+<hr />
+
+<h2 id="adding-new-content-with-octopress">Adding New Content with Octopress</h2>
+
+<p>While completely optional, I’ve included Octopress and some starter templates to automate the creation of new posts and pages. To take advantage of it start by installing the <a href="https://github.com/octopress/octopress">Octopress</a> gem if it isn’t already.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>gem install octopress --pre</code></pre></div>
+
+<h3 id="new-post">New Post</h3>
+
+<p>Default command</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>octopress new post <span class="s2">&quot;Post Title&quot;</span></code></pre></div>
+
+<p>Default works great if you want all your posts in one directory, but if you’re like me and want to group them into subfolders like <code>/posts</code>, <code>/portfolio</code>, etc. Then this is the command for you. By specifying the DIR it will create a new post in that folder and populate the <code>categories:</code> YAML with the same value.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>octopress new post <span class="s2">&quot;New Post Title&quot;</span> --dir posts</code></pre></div>
+
+<h3 id="new-page">New Page</h3>
+
+<p>To create a new page use the following command.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>octopress new page new-page/</code></pre></div>
+
+<p>This will create a page at <code>/new-page/index.md</code></p>
+
+<hr />
+
+<h2 id="layouts-and-content">Layouts and Content</h2>
+
+<p>Explanations of the various <code>_layouts</code> included with the theme and when to use them.</p>
+
+<h3 id="post-and-page">Post and Page</h3>
+
+<p>These two layouts are very similar. Both have an author sidebar, allow for large feature images at the top, and optional Disqus comments. The only real difference is the post layout includes related posts at the end of the page.</p>
+
+<h3 id="post-index-page">Post Index Page</h3>
+
+<p>A <a href="http://bbrown.info/posts/">sample index page</a> listing all posts grouped by the year they were published has been provided. The name can be customized to your liking by editing a few references. For example, to change <strong>Posts</strong> to <strong>Writing</strong> update the following:</p>
+
+<ul>
+  <li>In <code>_config.yml</code> under <code>links:</code> rename the title and URL to the following:</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">links</span><span class="p-Indicator">:</span>
+  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Writing</span>
+    <span class="l-Scalar-Plain">url</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">/writing/</span></code></pre></div>
+
+<ul>
+  <li>Rename <code>posts/index.md</code> to <code>writing/index.md</code> and update the YAML front matter accordingly.</li>
+  <li>Update the <strong>View all posts</strong> link in the <code>post.html</code> layout found in <code>_layouts</code> to match title and URL set previously.</li>
+</ul>
+
+<h3 id="feature-images">Feature Images</h3>
+
+<p>A good rule of thumb is to keep feature images nice and wide so you don’t push the body text too far down. An image cropped around around 1024 x 256 pixels will keep file size down with an acceptable resolution for most devices. If you want to serve these images responsively I’d suggest looking at the <a href="https://github.com/robwierzbowski/jekyll-picture-tag">Jekyll Picture Tag</a> plugin<sup id="fnref:plugins"><a href="#fn:plugins" class="footnote">1</a></sup>.</p>
+
+<p>The post and page layouts make the assumption that the feature images live in the <code>images/</code> folder. To add a feature image to a post or page just include the filename in the front matter like so. It’s probably best to host all your images from this folder, but you can hotlink from external sources if you desire.</p>
+
+<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">image</span><span class="p-Indicator">:</span>
+  <span class="l-Scalar-Plain">feature</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">feature-image-filename.jpg</span>
+  <span class="l-Scalar-Plain">thumb</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">thumbnail-image.jpg</span> <span class="c1">#keep it square 200x200 px is good</span></code></pre></div>
+
+<p>To add attribution to a feature image use the following YAML front matter on posts or pages. Image credits appear directly below the feature image with a link back to the original source if supplied.</p>
+
+<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">image</span><span class="p-Indicator">:</span>
+  <span class="l-Scalar-Plain">feature</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">feature-image-filename.jpg</span>
+  <span class="l-Scalar-Plain">credit</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Michael Rose</span> <span class="c1">#name of the person or site you want to credit</span>
+  <span class="l-Scalar-Plain">creditlink</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">http://mademistakes.com</span> <span class="c1">#url to their site or licensing</span></code></pre></div>
+
+<h3 id="thumbnails-for-og-and-twitter-cards">Thumbnails for OG and Twitter Cards</h3>
+
+<p>Feature and thumbnail images are used by <a href="https://developers.facebook.com/docs/opengraph/">Open Graph</a> and <a href="https://dev.twitter.com/docs/cards">Twitter Cards</a> as well. If you don’t assign a thumbnail the default graphic <em>(default-thumb.png)</em> is used. I’d suggest changing this to something more meaningful — your logo or avatar are good options.</p>
+
+<p class="notice"><strong>Pro-Tip</strong>: You need to <a href="https://dev.twitter.com/docs/cards">apply for Twitter Cards</a> before they will begin showing up when links to your site are shared.</p>
+
+<h3 id="author-override">Author Override</h3>
+
+<p>By making use of data files you can assign different authors for each post.</p>
+
+<p>Start by modifying <code>authors.yml</code> file in the <code>_data</code> folder and add your authors using the following format.</p>
+
+<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="c1"># Authors</span>
+
+<span class="l-Scalar-Plain">billy_rick</span><span class="p-Indicator">:</span>
+  <span class="l-Scalar-Plain">name</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Billy Rick</span>
+  <span class="l-Scalar-Plain">web</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">http://thewhip.com</span>
+  <span class="l-Scalar-Plain">email</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">billy@rick.com</span>
+  <span class="l-Scalar-Plain">bio</span><span class="p-Indicator">:</span> <span class="s">&quot;What</span><span class="nv"> </span><span class="s">do</span><span class="nv"> </span><span class="s">you</span><span class="nv"> </span><span class="s">want,</span><span class="nv"> </span><span class="s">jewels?</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">am</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">very</span><span class="nv"> </span><span class="s">extravagant</span><span class="nv"> </span><span class="s">man.&quot;</span>
+  <span class="l-Scalar-Plain">avatar</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">bio-photo-2.jpg</span>
+  <span class="l-Scalar-Plain">twitter</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">extravagantman</span>
+  <span class="l-Scalar-Plain">google</span><span class="p-Indicator">:</span>
+    <span class="l-Scalar-Plain">plus</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">+BillyRick</span>
+
+<span class="l-Scalar-Plain">cornelius_fiddlebone</span><span class="p-Indicator">:</span>
+  <span class="l-Scalar-Plain">name</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Cornelius Fiddlebone</span>
+  <span class="l-Scalar-Plain">email</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">cornelius@thewhip.com</span>
+  <span class="l-Scalar-Plain">bio</span><span class="p-Indicator">:</span> <span class="s">&quot;I</span><span class="nv"> </span><span class="s">ordered</span><span class="nv"> </span><span class="s">what?&quot;</span>
+  <span class="l-Scalar-Plain">avatar</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">bio-photo.jpg</span>
+  <span class="l-Scalar-Plain">twitter</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">rhymeswithsackit</span>
+  <span class="l-Scalar-Plain">google</span><span class="p-Indicator">:</span>
+    <span class="l-Scalar-Plain">plus</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">+CorneliusFiddlebone</span></code></pre></div>
+
+<p>To assign Billy Rick as an author for our post. We’d add the following YAML front matter to a post:</p>
+
+<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">author</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">billy_rick</span></code></pre></div>
+
+<h3 id="kramdown-table-of-contents">Kramdown Table of Contents</h3>
+
+<p>To include an auto-generated <strong>table of contents</strong> for posts and pages, add the following <code>_include</code> before the actual content. <a href="http://kramdown.rubyforge.org/converter/html.html#toc">Kramdown will take care of the rest</a> and convert all headlines into list of links.</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html">{% include _toc.html %}</code></pre></div>
+
+<h3 id="paragraph-indentation">Paragraph Indentation</h3>
+
+<p>By default the margin below paragraphs has been removed and indent added to each. This is an intentional design decision to mimic the look of type set in a printed book or manuscript.</p>
+
+<figure>
+  <img src="http://bbrown.info/images/paragraph-indent.png" alt="screen shot of paragraphs with default indent style set" />
+  <figcaption>Example of the default paragraph style (indented first line and bottom margin removed).</figcaption>
+</figure>
+
+<p>To disable the indents and add spacing between paragraphs change the following line in <code>_sass/variables.scss</code> from <code>true !default</code> to <code>false</code> like so.</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">$</span><span class="nt">paragraph-indent</span><span class="o">:</span> <span class="nt">false</span><span class="o">;</span></code></pre></div>
+
+<figure>
+  <img src="http://bbrown.info/images/paragraph-no-indent.png" alt="screen shot of paragraphs with indent style disabled" />
+  <figcaption>Example of paragraphs with $paragraph-indent disabled.</figcaption>
+</figure>
+
+<h3 id="videos">Videos</h3>
+
+<p>Video embeds are responsive and scale with the width of the main content block with the help of <a href="http://fitvidsjs.com/">FitVids</a>.</p>
+
+<p>Not sure if this only effects Kramdown or if it’s an issue with Markdown in general. But adding YouTube video embeds causes errors when building your Jekyll site. To fix add a space between the <code>&lt;iframe&gt;</code> tags and remove <code>allowfullscreen</code>. Example below:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;iframe</span> <span class="na">width=</span><span class="s">&quot;560&quot;</span> <span class="na">height=</span><span class="s">&quot;315&quot;</span> <span class="na">src=</span><span class="s">&quot;http://www.youtube.com/embed/PWf4WUoMXwg&quot;</span> <span class="na">frameborder=</span><span class="s">&quot;0&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;/iframe&gt;</span></code></pre></div>
+
+<h3 id="social-sharing-links">Social Sharing Links</h3>
+
+<p>Social sharing links for Twitter, Facebook, and Google+ are included on posts/pages by default. To hide them on specific posts or pages add <code>share: false</code> to the YAML Front Matter. If you’d like to use different social networks modify <code>_includes/_social-share.html</code> to your liking. Icons are set using <a href="http://fontawesome.io">Font Awesome</a>.</p>
+
+<hr />
+
+<h2 id="further-customization">Further Customization</h2>
+
+<p>Jekyll 2.x added support for Sass files making it much easier to modify a theme’s fonts and colors. By editing values found in <code>_sass/variables.scss</code> you can fine tune the site’s colors and typography.</p>
+
+<p>For example if you wanted a red background instead of white you’d change <code>$bodycolor: #fff;</code> to <code>$bodycolor: $cc0033;</code>.</p>
+
+<p>To modify the site’s JavaScript files I setup a Grunt build script to lint/concatenate/minify all scripts into <code>scripts.min.js</code>. <a href="http://nodejs.org/">Install Node.js</a>, then <a href="http://gruntjs.com/getting-started">install Grunt</a>, and then finally install the dependencies for the theme contained in <code>package.json</code>:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">npm install</code></pre></div>
+
+<p>From the theme’s root, use <code>grunt</code> concatenate JavaScript files, and optimize .jpg, .png, and .svg files in the <code>images/</code> folder. You can also use <code>grunt dev</code> in combination with <code>jekyll build --watch</code> to watch for updates JS files that Grunt will then automatically re-build as you write your code which will in turn auto-generate your Jekyll site when developing locally.</p>
+
+<hr />
+
+<h2 id="questions">Questions?</h2>
+
+<p>Found a bug or aren’t quite sure how something works? By all means Ping me on Twitter <a href="http://twitter.com/mmistakes">@mmistakes</a> or <a href="https://github.com/mmistakes/minimal-mistakes/issues/new">file a GitHub Issue</a>. And if you make something cool with this theme feel free to let me know.</p>
+
+<hr />
+
+<h2 id="license">License</h2>
+
+<p>This theme is free and open source software, distributed under the MIT License. So feel free to use this Jekyll theme on your site without linking back to me or including a disclaimer.</p>
+<div class="footnotes">
+  <ol>
+    <li id="fn:plugins">
+      <p>If you’re using GitHub Pages to host your site be aware that plugins are disabled. You’ll need to build your site locally and then manually deploy if you want to use this sweet plugin. <a href="#fnref:plugins" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      
+        <hr />
+        <div class="social-share">
+  <h4>Share on</h4>
+  <ul>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text=http://bbrown.info/theme-setup/index.html" class="twitter" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=http://bbrown.info/theme-setup/index.html" class="facebook" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+    </li>
+    <li>
+      <a href="https://plus.google.com/share?url=http://bbrown.info/theme-setup/index.html" class="google-plus" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
+    </li>
+  </ul>
+</div><!-- /.social-share -->
+      
+    </div><!-- /.article-wrap -->
+    
+  </article>
+</div><!-- /#index -->
+
+<div class="footer-wrap">
+  <footer>
+    
+
+<span>&copy; 2015 Bill Brown. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a> theme.</span>
+
+  </footer>
+</div><!-- /.footer-wrap -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://bbrown.info/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://bbrown.info/assets/js/scripts.min.js"></script>
+
+          
+
+</body>
+</html>
