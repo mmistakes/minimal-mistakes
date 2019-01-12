@@ -6,15 +6,17 @@ tags:
 - pscustomobject
 - Get-Member
 
-image: "/assets/freaking-pegasus-or-something.jpg"
-thumbnail: "/assets/freaking-pegasus-or-something.jpg"
+image: /assets/freaking-pegasus-or-something.jpg
+thumbnail: /assets/freaking-pegasus-or-something.jpg
 header:
-  teaser: "/assets/freaking-pegasus-or-something.jpg"
+  teaser: /assets/freaking-pegasus-or-something.jpg
 ---
 
 I was writing some `code` earlier this week and came across the need to iterate over the properties of a `[pscustomobject]`. I wanted a function to be able to accept a `pscustomobject` and use all of the members to form a body on the fly. This command is for an api so I wanted to make it reusable with future versions of the api that may include new parameters.
 
 I started writing a `foreach` loop and realized that I forgot how to iterate over each property in a `pscustomobject`. Sounds like the perfect excuse to freshen up on it and document it for the next time I forget :)
+
+![Epic picture with PEgasus and some rocky stuff in the sky.]({{"/assets/freaking-pegasus-or-something.jpg" | absolute_url}})
 
 ## Code Sample
 
