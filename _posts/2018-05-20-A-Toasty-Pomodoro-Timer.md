@@ -1,6 +1,5 @@
 ---
 classes: wide
-toc: true
 image: "/assets/tomatoman.jpg"
 thumbnail: "/assets/tomatoman.jpg"
 header:
@@ -141,30 +140,30 @@ function Start-PomodoroTimer
 <#
 	.SYNOPSIS
 		Creates a Pomodoro Timer that displays a toast notification when complete.
-	
+
 	.DESCRIPTION
 		Creates a Pomodoro Timer that displays a toast notification when complete. It creates a job
 		This function requires the BurntToast module by Josh King @WindosNZ
-	
+
 	.PARAMETER Minutes
 		Length of timer
-	
+
 	.PARAMETER Sound
 		Credit to Jeff Wouters for the Imperial March: http://jeffwouters.nl/index.php/2012/03/get-your-geek-on-with-powershell-and-some-music/
-	
+
 	.EXAMPLE
 		PS C:\> Start-PomodoroTimer
-	
+
 	.NOTES
 		You can download the BurntToast Module by running: Install-Module BurntToast -Scope CurrentUser
 		This requires Windows 10 and PowerShell v5
 #>
-	
+
 	[CmdletBinding()]
 	param (
 		[int]
 		$Minutes = 25,
-		
+
 		# There are a lot more sounds available, but that takes up too much space
 		[ValidateSet('Alarm',
 					 'SMS',
@@ -172,9 +171,9 @@ function Start-PomodoroTimer
 					 )]
 		[String]
 		$Sound = 'Imperial March'
-		
+
 	)
-	
+
 	$Messages = @(
 		'Go stretch a bit',
 		'Call a loved one',
@@ -185,7 +184,7 @@ function Start-PomodoroTimer
 		'Clean up your workspace',
 		'Relax, you earned it'
 	)
-	
+
 	if ($Sound -match 'Imperial March')
 	{
 		Start-Job -Name 'Pomodoro Timer' -ArgumentList $Messages, $Minutes -ScriptBlock {
