@@ -1,5 +1,5 @@
 ---
-title: "Create a Sprinkler: Hydraulic part"
+title: "Create a sprinkler system: Hydraulic part"
 related: true
 header:
   overlay_image: /assets/images/sprinkler/hydro_components.JPG

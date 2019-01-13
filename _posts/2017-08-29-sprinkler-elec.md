@@ -1,5 +1,5 @@
 ---
-title: "Electrical part"
+title: "Create a sprinkler system: Electrical part"
 related: true
 header:
   overlay_image: /assets/images/anthony-rossbach-59486.jpg
@@ -18,7 +18,7 @@ tags:
 ---
 
 The aim of this tutorial is to wire the electrical part of a sprinkler system. At the end of this tutorial,
-We have able to control the sprinkler system from a Raspberry PI.
+we will be able to control the sprinkler system from a Raspberry PI.
 
 - [Electrical part](#electrical-part)
 - [Electronic part](#electronic-part)
@@ -202,4 +202,4 @@ python zone_control.py toggle --zone 1
 ```
 
 Now we are able to control sprinkler system from a Raspberry PI. That's already a good point but we need to 
-control directly from his smartphone and from anywhere... Go to the next tutorial.
+control directly from his mobile and from anywhere... Go to the next tutorial.
