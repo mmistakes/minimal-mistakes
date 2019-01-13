@@ -21,20 +21,8 @@ The aim of this tutorial is to wire the electrical part of a sprinkler system. A
 We have able to control the sprinkler system from a Raspberry PI.
 
 - [Electrical part](#electrical-part)
-  - [Prerequisites](#rerequisites)
-  - [Overview](#overview)
-  - [Components](#components)
-  - [Wiring](#wiring)
 - [Electronic part](#electronic-part)
-  - [Prerequisites](#rerequisites)
-  - [Overview](#overview)
-  - [Components](#components)
-  - [Wiring](#wiring)
 - [Software part](#software-part)
-  - [Prerequisites](#rerequisites)
-  - [Overview](#overview)
-  - [Program](#program)
-  - [Test](#test)
 
 
 ## Electrical part
@@ -66,7 +54,7 @@ box final" %}
 
 #### Electrical connection
 
-- Join electrical box to valves boxes with 7 multi-conductor wire
+- Join electrical box to valves boxes with 7 multi-conductors wire
 - Install one distribution box at the entrance of the valves box.
 - Connect power supply to solenoid valve 24V with a transformer.
 
@@ -75,21 +63,6 @@ box final" %}
 {: .notice--info}
 
 {% include figure image_path="/assets/images/sprinkler/sprinkler_electric_part.png" alt="Sprinkler electric part" caption="Sprinkler electric part" %}
-
-#### Relay connection (Power electronics)
-
-
-TODO.
-
-**Tools**: electrical box.
- 
- 
-#### Set up electrical box
- 
- - Replace power outlet by circuit breaker.
- 
-**Tools**: circuit breaker Din rail
-
 
 ## Electronic part
 
@@ -100,7 +73,8 @@ TODO.
  
 ### Overview 
 
-{% include figure image_path="/assets/images/sprinkler/electronic_part.jpg" alt="Electronic part" caption="Electronic part" %}
+{% include figure image_path="/assets/images/sprinkler/electrical_part.jpg" alt="Electronic part" caption="Electronic 
+part" %}
 
 ### Components
 
@@ -137,6 +111,12 @@ Get clone from github or this project.
 git clone https://github.com/jluccisano/rpi-sprinkler-control.git
 ```
 
+See more details:
+
+```bash
+https://github.com/jluccisano/raspberry-scripts/tree/master/scripts/home-automation
+```
+
 Follow install step describe in the README.md.
 
 ```bash
@@ -159,6 +139,11 @@ Location: /home/pi/.local/lib/python2.7/site-packages
 Requires:
 ```
 
+### Create a service
+
+[See more]({{ site.url }}{{ site.baseurl }}/linux/create-service)
+
+
 ```bash
 [Unit]
 Description=Home Automation Server
@@ -178,7 +163,6 @@ WantedBy=multi-user.target
 
 ### Install release package
 
-TODO.
 - Connect to Rpi via SSH
 - Install package
 - Create Service
@@ -199,23 +183,23 @@ Get state of specific zone
 python zone_control.py get --zone 1
 ```
 
- Set state of specific valve
+Set state of specific valve
 
 ```python
 python zone_control.py set --zone 1 --state 1
 ```
 
- Set state of each valve
+Set state of each valve
 
 ```python
 python zone_control.py set --state 1
 ```
 
- Toggle state of specific valve
+Toggle state of specific valve
 
 ```python
 python zone_control.py toggle --zone 1
 ```
 
 Now we are able to control sprinkler system from a Raspberry PI. That's already a good point but we need to 
-control directly from his smartphone... Go to the next tutorial.
+control directly from his smartphone and from anywhere... Go to the next tutorial.
