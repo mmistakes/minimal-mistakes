@@ -10,3 +10,20 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+<p>And for giggles one more gallery just to make sure this works. To fill page content container add <code class="highlighter-rouge">class="full"</code>.</p>
+
+<figure class="half full">
+  
+    
+      <img src="/minimal-mistakes/assets/images/unsplash-gallery-image-2-th.jpg" alt="placeholder image 2" />
+    
+  
+    
+      <img src="/minimal-mistakes/assets/images/unsplash-gallery-image-4-th.jpg" alt="placeholder image 4" />
+    
+  
+  
+    <figcaption>This is a third gallery example with two images and fills the entire content container.
+</figcaption>
+  
+</figure>
