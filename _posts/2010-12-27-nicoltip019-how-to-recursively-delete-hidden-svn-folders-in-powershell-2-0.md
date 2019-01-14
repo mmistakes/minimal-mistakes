@@ -1,0 +1,5 @@
+---
+title: NicolTIP#019: How to recursively delete (hidden) SVN Folders in PowerShell 2.0
+tags: [delete, powershell, Script, svn]
+---
+<p>Super easy script from <a href="http://thepursuitofalife.com/recursively-deleting-svn-folders-in-powershell-2-0/" target="_blank">The Pursuite of Life Blog</a>, that I ‘m copying here in order to keep it in my toolbox<img style="border-bottom-style: none; border-right-style: none; border-top-style: none; border-left-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/49/62/metablogapi/5430.wlEmoticon-smile_423A274B.png" original-url="http://blogs.msdn.com/cfs-file.ashx/__key/CommunityServer-Blogs-Components-WeblogFiles/00-00-00-49-62-metablogapi/5430.wlEmoticon_2D00_smile_5F00_423A274B.png" /></p>  <p><font size="3" face="Courier New">(get-childitem -recurse -force | where-object { $_.PsIsContainer -eq $true -and $_.Name -eq &quot;.svn&quot; } ) | remove-item –recurse –force</font></p>
