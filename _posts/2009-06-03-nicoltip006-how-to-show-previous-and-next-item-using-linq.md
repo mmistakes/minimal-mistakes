@@ -1,5 +1,5 @@
 ---
-title: NicolTIP#006: how to show previous and next item using LINQ
+title: NicolTIP#006- how to show previous and next item using LINQ
 tags: [c#, LINQ, NicolTIP]
 ---
 <p>I had a table on SQL 2005 I am accessing it via LINQ. I had to select an item via a “where” condition (see below).</p>  <p><font face="Courier New">var item = (from snap in adc.Snapshots     <br />&#160;&#160;&#160;&#160;&#160; where snap.file == image      <br />&#160;&#160;&#160;&#160;&#160; select snap).First();</font></p> <!--CRLF-->  <p>The problem was that I needed to identify the previous item and the next item too because we had to show them on a web page. Talking with some collgues of mine we found the following way that looks quite smart:</p>  <p><font face="Courier New">var previous = adc.Snapshots.OrderByDescending(s =&gt; s.InsertDateTime).Where(s =&gt; string.Compare(s.file, image) &lt; 0).FirstOrDefault();      <br />var item = adc.Snapshots.OrderBy(s =&gt; s.InsertDateTime).Where(s =&gt; s.file == image).SingleOrDefault();       <br />var next = adc.Snapshots.OrderBy(s =&gt; s.InsertDateTime).Where(s =&gt; string.Compare(s.file, image) &gt; 0).FirstOrDefault();</font></p>

@@ -1,5 +1,5 @@
 ---
-title: NicolTIP#003: How to install Windows SharePoint Services 3.0 Tools - Visual Studio 2008 Extensions, Version 1.2 on Windows Vista
+title: NicolTIP#003- How to install Windows SharePoint Services 3.0 Tools - Visual Studio 2008 Extensions, Version 1.2 on Windows Vista
 tags: [MOSS, NicolTIP, Registry, Sharepoint, Visual Studio]
 ---
 <p>If you try to install <a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=7bf65b28-06e2-4e87-9bad-086e32185e68" target="_blank">Windows SharePoint Services 3.0 Tools - Visual Studio 2008 Extensions, Version 1.2</a> on Windows Vista, you will get an error message telling you that you have to install Windows SharePoint Services 3.0 in order to install the tools. Windows SharePoint Services 3.0 (WSS 3.0) doesn't support non Windows Servers OS, so it's not possible to install WSS 3.0 on Windows Vista, which means you will not be able to install VS 2008 Extensions on your development machine.</p>  <p>This happens because setup just checks on the registry the presence of a specific key. To avoid this behavior and install these extensions on Vista (but should work on XP as well) just write the following key on your machine registry:</p>  <p><strong>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\Web Server Extensions\12.0]      <br /><em>&quot;Sharepoint&quot;=&quot;Installed&quot;</em></strong></p>

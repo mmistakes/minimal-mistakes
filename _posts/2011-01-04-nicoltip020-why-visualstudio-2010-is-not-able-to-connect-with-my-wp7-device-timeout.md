@@ -1,5 +1,5 @@
 ---
-title: NicolTIP#020: Why VisualStudio 2010 is not able to connect with my WP7 device? (timeout)
+title: NicolTIP#020- Why VisualStudio 2010 is not able to connect with my WP7 device? (timeout)
 tags: [Debuging, NicolTIP, Visual Studio, WP7]
 ---
 <p>Today without any reason VisualStudio was not able to connect with the WP7 device. When I selected “deploy solution” I received the following error:</p>  <pre><pre style="background-color: #fbfbfb; margin: 0em; width: 100%; font-family: consolas,&#39;Courier New&#39;,courier,monospace; font-size: 12px">------ Deploy started: Project: ...

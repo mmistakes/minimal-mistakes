@@ -1,5 +1,5 @@
 ---
-title: NicolTIP#010: How to rename and manage file names of your video (and audio?) library with powershell on Windows 7:-)
+title: NicolTIP#010- How to rename and manage file names of your video (and audio?) library with powershell on Windows 7:-)
 categories: [File, NicolTIP, powershell, Rename, Script, Scrubs, wmv]
 ---
 <p>This week end I encoded some my old DVD in wmv file because I’m destroying my old DVD player and I don’t want to buy a blue ray disk (I’m sorry Sony:-).</p>  <p>After the encoding arrived the boring time to organize file names, and because now PowerShell is available to everyone OOB with Windows 7, this sounds like a good opportunity for me to test my skills in that area.</p>  <p>(these tricks can be usable and useful even if you download series from torrent &amp; co. but because it seems something not so legal, please do not ping me about this topic:-)</p>  <p>&#160;</p>  <p><strong>Well, lets’ start with a list of files</strong>:</p>  <p>&#160;</p>  <p></p>  <pre><pre style="background-color: #fbfbfb; margin: 0em; width: 100%; font-family: consolas,&#39;Courier New&#39;,courier,monospace; font-size: 12px">PS C:\TEMP\temp&gt; dir

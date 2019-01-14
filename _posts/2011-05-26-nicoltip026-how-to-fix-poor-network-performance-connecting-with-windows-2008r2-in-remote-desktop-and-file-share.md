@@ -1,5 +1,5 @@
 ---
-title: NicolTIP#026: How to fix poor network performance connecting with windows 2008/R2 in Remote Desktop and File Share
+title: NicolTIP#026- How to fix poor network performance connecting with windows 2008/R2 in Remote Desktop and File Share
 date: 2011-05-26 15:51
 tags: [Netsh, NicolTIP, remote desktop, SOHO, windows 2008, windows 2008 R2, Windows 2008R2]
 ---

@@ -1,5 +1,5 @@
 ---
-title: NicolTIP#009: How to Sysprep a machine with Windows 2003, Windows 2008 / 2008R2, Windows 7
+title: NicolTIP#009- How to Sysprep a machine with Windows 2003, Windows 2008 / 2008R2, Windows 7
 tags: [clone, NicolTIP, sysprep, Window 7, Windows 2003, windows 2008, windows 2008 R2]
 ---
 <p>I&rsquo;m writing here because every time I need to set up a bunch of virtual machines, I have to go back and look up where to find the Sysprep tool and how to use it.</p>

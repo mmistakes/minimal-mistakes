@@ -1,5 +1,5 @@
 ---
-title: NicolTIP#022: How to remove Windows 7 and Windows 2008R2 backup Files…
+title: NicolTIP#022- How to remove Windows 7 and Windows 2008R2 backup Files…
 tags: [Clean, disk, NicolTIP, powershell, SP1, Window 7, windows 2008 R2, Windows 2008R2]
 ---
 <p>…created during service pack 1 (SP1) installation via PowerShell.</p>  <p>Run Powershell in elevated mode (run as administrator) and type:</p>  <pre><pre style="background-color: #fbfbfb; margin: 0em; width: 100%; font-family: consolas,&#39;Courier New&#39;,courier,monospace; font-size: 12px">Dism.exe /online /cleanup-image /spsuperseded</pre></pre>

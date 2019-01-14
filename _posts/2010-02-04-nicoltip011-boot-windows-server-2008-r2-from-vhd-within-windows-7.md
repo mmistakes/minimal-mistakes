@@ -1,5 +1,5 @@
 ---
-title: NicolTIP#011: Boot Windows Server 2008 R2 from VHD within Windows 7
+title: NicolTIP#011- Boot Windows Server 2008 R2 from VHD within Windows 7
 date: 2010-02-04 07:25
 tags: [bcdedit, boot, diskpart, NicolTIP, vhd, Window 7, windows 2008 R2]
 ---
