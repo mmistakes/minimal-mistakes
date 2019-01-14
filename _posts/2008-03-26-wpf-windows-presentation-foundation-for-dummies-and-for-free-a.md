@@ -1,0 +1,6 @@
+---
+title: WPF - Windows Presentation Foundation - for dummies (and for free:-)A
+date: 2008-03-26 10:50
+tags: [WPF]
+---
+<p>As you discovered from my previous post, today I'm working on WPF, Again on codeproject, I found this series of articles that can be a good start point to understand basics on WPF, XAML, resources, styles...</p>  <p>&#160;</p>  <p><a title="WPF- A Beginner&#39;s Guide - Part 1 of n" href="http://www.codeproject.com/KB/WPF/BeginWPF1.aspx">WPF- A Beginner's Guide - Part 1 of n</a> - Layout</p>  <p><a title="WPF - A Beginners guide part 2 of n" href="http://www.codeproject.com/KB/WPF/BeginWPF2.aspx">WPF - A Beginners guide part 2 of n</a> - XAML and Resources</p>  <p><a title="WPF - A Beginners guide part 3 of n" href="http://www.codeproject.com/KB/WPF/BeginWPF3.aspx">WPF - A Beginners guide part 3 of n</a> - Commands and Events</p>  <p><a title="WPF- A Beginner&#39;s Guide - Part 4 of n" href="http://www.codeproject.com/KB/WPF/BeginWPF4.aspx">WPF- A Beginner's Guide - Part 4 of n</a> - Dependency Properties</p>  <p><a title="WPF- A Beginner&#39;s Guide - Part 5 of n" href="http://www.codeproject.com/KB/WPF/BeginWPF5.aspx">WPF- A Beginner's Guide - Part 5 of n</a> - Data Binding</p>  <p><a title="Templates" href="http://www.codeproject.com/KB/WPF/BeginWPF6.aspx">WPF - A Beginner's Guide - Part 6 of n</a> - Templates</p>

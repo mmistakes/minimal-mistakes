@@ -1,0 +1,5 @@
+---
+title: HowTo: Unblock restricted file attachments in Microsoft Outlook 2007
+tags: [outlook, Uncategorized]
+---
+<p>If you want (REALLY WANT :-) to change the Outlook file attachments security levels (i.e. to read e .exe file attached to a received email), and you know how to use the regedit.exe tool, you can follow the procedure below: </p>  <ul>   <li>Start...Run...&quot;regedit&quot;</li>    <li>Go to HKEY_CURRENT_USER\Software\Microsoft\Office\12.0\Outlook\Security </li>    <li>Create a new string value called <strong>Level1Remove</strong> </li>    <li>Enter in the file extensions you want to use, such as .exe or .bat </li>    <li>You can have multiple file types separated by a semicolon like this: &quot;.exe;.com&quot;</li>    <li>Close and open outlook. </li> </ul>  <p>To avoid risks, I suggest to keep the string &quot;Level1Remove&quot; in the registry ONLY for the strict necessary.</p>  <p>More info on <a href="http://www.devcow.com/blogs/adnrg/archive/2006/07/25/Unblock_restricted_file_attachments_in_Microsoft_Outlook.aspx" target="_blank">.NET Atlanta Regular Guys</a> blog.</p>
