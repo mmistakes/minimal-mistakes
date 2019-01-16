@@ -126,7 +126,7 @@ To install:
    bundle
    ```
 
-4. Add `remote_theme: "mmistakes/minimal-mistakes@4.15.0"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
+4. Add `remote_theme: "mmistakes/minimal-mistakes@4.15.1"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
 
 ## Usage
 

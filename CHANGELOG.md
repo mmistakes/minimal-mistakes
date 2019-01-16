@@ -1,3 +1,9 @@
+## [4.15.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.15.1)
+
+### Bug Fixes
+
+- Fix empty `<img>` when `site_logo` is not assigned. [#2026](https://github.com/mmistakes/minimal-mistakes/pull/2026#issuecomment-454809876)
+
 ## [4.15.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.15.0)
 
 ### Enhancements
