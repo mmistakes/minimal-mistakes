@@ -1,37 +1,37 @@
----
-title: Cross (micro)services authentication with Azure B2C 
+﻿---
+title: Cross (micro) services authentication with Azure B2C
 tags: [AzureAD, AzureB2C, microservices, OAUTH2, OpenIDConnect, dotnetcore, xamarin]
 ---
 
 
-Microservices  is an architectural style that structures an application as a collection of loosely coupled services, which implement business capabilities. The microservice architecture enables the continuous delivery/deployment of large, complex applications. It also enables an organization to evolve its technology stack.
+Microservices is an architectural style that structures an application as a collection of loosely coupled services, which implement business capabilities. The microservice architecture enables the continuous delivery/deployment of large, complex applications. It also enables an organization to evolve its technology stack.
 
-In contexts like this, it is easy to have web solutions composed by dozen of microservices, that exposes indipendent APIs. 
+In contexts like this, it is easy to have web solutions composed by dozens of microservices, that exposes independent APIs. 
 
-These APIs can provide anonymous access to their services, but in the real world often they must be authenticated. This means that once a user authenticates to an identity provider, an easy way to have a "single sign on" to dozens of microservices is needed.
+These APIs can provide anonymous access to their services, but in the real world often they must be authenticated. This means that once a user authenticates to an identity provider, an easy way to have a "single sign-on" to dozens of microservices is needed.
 
-To add more complexity, a generic API implemented as microservice, could require information from another microservice or another API (API to API authenticated call).
+To add more complexity, a generic API implemented as microservice could require information from another microservice or another API (API to API authenticated call).
 
 **At the times of the Active Directory integrated authentication, the solution was quite easy**: the developer turned ON the flag "authenticated user only" on IIS and all, magically, was secured but with the *classical* limitation of these old times: all machines must trust a common Active Directory (yes, the scenario can become more *inclusive* with trusted domains and forests but this is not the scope of this post). 
 
-In nowadays we are lucky, OpenID Connect and OAUTH2 have changed (or have opened…) the world of authentication and authorization. 
+Nowadays, we are lucky, OpenID Connect and OAUTH2 have changed (or have opened…) the world of authentication and authorization. 
 
-<a href="https://azure.microsoft.com/en-us/services/active-directory-b2c/" target="_blank">Azure Active Directory B2C</a>, Microsoft's cloud-based identity and access management solution for consumer-facing web and mobile applications now can come in the game. It is an highly-available global service that scales to hundreds of millions of consumer identities. Built on an enterprise-grade secure platform, Azure Active Directory B2C keeps your business and your consumers protected and supports open standards such as OpenID Connect OAUTH2.
+<a href="https://azure.microsoft.com/en-us/services/active-directory-b2c/" target="_blank">Azure Active Directory B2C</a>, Microsoft's cloud-based identity and access management solution for consumer-facing web and mobile applications can now come in the game. It is an highly-available global service that scales to hundreds of millions of consumer identities. Built on an enterprise-grade secure platform, Azure Active Directory B2C keeps your business and your consumers protected and support open standards such as OpenID Connect OAUTH2.
 
-If you need to architect a **microservices based solution** that uses the <a href="https://docs.microsoft.com/en-us/office365/enterprise/hybrid-modern-auth-overview#BKMK_WhatisModAuth" target="_blank">modern authentication</a> to provide its services to millions of authenticated users stored on Azure B2C, here you can find a step by step configuration walktrough based on .NET Core, Angular and Xamarin.
+If you need to architect a **microservices based solution** that uses the <a href="https://docs.microsoft.com/en-us/office365/enterprise/hybrid-modern-auth-overview#BKMK_WhatisModAuth" target="_blank">modern authentication</a> to provide its services to millions of authenticated users stored on Azure B2C, here you can find a step by step configuration walkthrough based on .NET Core, Angular and Xamarin.
 
 Whatever the purpose of your service is, you'll have:
 
 * dozen of autheed APIs ( => user authentication)
 * different clients and technologies ( => Mobile, Single Page App)
-* single sign on cross APIs
+* single sign-on cross APIs 
 * APIs that internally needs to call other APIs ( => preserving the user context)
 
 this means that you'll need to manage how to:
 
 * authenticate users
 * call one or more APIs in the user context from mobile
-* call one or more APIs in the user context from web app
+* call one or more APIs in the user context from the web app
 * nested API calls
 
 as shown in the following schema
@@ -43,11 +43,11 @@ In <a href="https://github.com/nicolgit/Azure-B2C-playground" target="_blank">th
 
 * An Azure B2C instance
 * A "Calculator API"
-* A "Scientific Calculator API" that impersonating the calling user calls the Calculator API
-* A Web Appication (Single Page Application) that authenticates on Azure B2C and calls both Calculator and Scientific Calculator
+* A "Scientific Calculator API" that the  impersonator calls the Calculator API
+* A Web Application (Single Page Application) that authenticates on Azure B2C and calls both Calculator and Scientific Calculator
 * A Xamarin Form Application that authenticates on Azure B2C and calls both Calculator and Scientific Calculator
 
-While all the detail and the step by step and the code is on github, here I want  only summarize the main steps and few takeaways I have learned in implementing the solution (**).
+While all the detail and the step by step and the code is on GitHub, here I want to only summarize the main steps and few takeaways I have learned in implementing the solution (**).
 
 ![web calculator](..\assets\post\2019-01\web-calculator.PNG)
 ![mobile calculator](..\assets\post\2019-01\mobile-calculator.jpg)
@@ -60,10 +60,10 @@ The steps are straightforward, starting from Azure B2C service:
 * Enter a name for the application. 
 * Redirect URI
 
-Depending the scenario you can select "**Implicit flow**" for Single page application, or "**Include Native API**" for mobile application.
+Depending on the scenario you can select "**Implicit flow**" for Single page application, or "**Include Native API**" for mobile application.
 
-# Use library for authentication
-For each type of application there is a free (and open source) library that will save your day, avoiding you have to reinventi the wheel.
+# Use the library for authentication
+For each type of application, there is a free (and open source) library that will save your day, avoiding you having to reinvent the wheel.
 
 
 | Solution | Library Name | Repository
@@ -75,13 +75,13 @@ For each type of application there is a free (and open source) library that will
 
 
 # For API2API call Disable ValidateAudience check
-By default Microsoft.AspNetCore.Authentication.JwtBearer middleware verifies if the token and the API audience match(*). This means that in a cross API call, that happens when WebCalculator calls ApiScientificCalculator using the same bearer, you will receive the following message:
+By default, Microsoft.AspNetCore.Authentication.JwtBearer middleware verifies if the token and the API audience match(*). This means that in a cross API call, that happens when WebCalculator calls ApiScientificCalculator using the same bearer, you will receive the following message:
 
 	AuthenticationFailed: IDX10214: Audience validation failed. Audiences: '<guid>'. Did not match: validationParameters.ValidAudience: '<guid>' or validationParameters.ValidAudiences: 'null'.
 
-This because both clientid "WebCalculator" and clientid "APIScientificCalculator" want to access to same API (APICalculator).
+This is because both clientid "WebCalculator" and clientid "APIScientificCalculator" want to access the same API (APICalculator).
 
-In order to avoid this, in calculatorAPI>Startup>ConfigureServices you need to add the following
+In order to avoid this, in calculatorAPI>Startup>ConfigureServices, you need to add the following
 
 ```csharp
 var tokenValidationParameters = new TokenValidationParameters
@@ -112,7 +112,7 @@ and the following
               });
 ```
 
-where you are telling "dear middlewhere, please do not validate Audience on each call" :-)
+where you are telling "dear middleware, please do not validate Audience on each call" :-)
 
 (*) Validation of the audience, mitigates forwarding attacks. For example, a site that receives a token, could not replay it to another side.
 
