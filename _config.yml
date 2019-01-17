@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Nicolblog"
+title                    : "NicolD blog"
 title_separator          : "-"
 name                     : "NicolD || NicolGit personal blog"
 description              : "What an amazing blog."
@@ -111,21 +111,21 @@ author:
   codepen          :
   dribbble         :
   flickr           : "photos/15216811@N06/"
-  facebook         :
+  facebook         : "nicola.delfino"
   foursquare       :
-  github           :
+  github           : "nicolgit"
   gitlab           :
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "nicolgramm"
   lastfm           :
-  linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : "nicoladelfino" # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
-  twitter          :
+  twitter          : "nicoltwit"
   vine             :
   weibo            :
   xing             :
