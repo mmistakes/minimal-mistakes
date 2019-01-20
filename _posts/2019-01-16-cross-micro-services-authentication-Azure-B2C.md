@@ -74,46 +74,95 @@ For each type of application, there is a free (and open source) library that wil
 
 
 
-# For API2API call Disable ValidateAudience check
-By default, Microsoft.AspNetCore.Authentication.JwtBearer middleware verifies if the token and the API audience match(*). This means that in a cross API call, that happens when WebCalculator calls ApiScientificCalculator using the same bearer, you will receive the following message:
+# Configure ValidAudiences for API2API call 
+By default, Microsoft.AspNetCore.Authentication.JwtBearer middleware verifies if the token and the API audience match. This means that in a cross API call, that happens i.e. when WebCalculator calls ApiScientificCalculator using the same bearer, you will receive the following message:
 
 	AuthenticationFailed: IDX10214: Audience validation failed. Audiences: '<guid>'. Did not match: validationParameters.ValidAudience: '<guid>' or validationParameters.ValidAudiences: 'null'.
 
 This is because both clientid "WebCalculator" and clientid "APIScientificCalculator" want to access the same API (APICalculator).
 
-In order to avoid this, in calculatorAPI>Startup>ConfigureServices, you need to add the following
+In order to avoid this, in ValidAudiences we have to enumerate all the Audiences authorized to use the API. 
+
+Looking at schema above, API Calculator and API Scientific Calculator are backend API called by different services, so more validaudiences must be set.
+
+
+| API        | Valid Audiences |
+|------------|-----------------|
+| Calculator | Calculator - ScientificCalculator - WebCalculator - postman    |
+| ScientificCalculator |    ScientificCalculator - WebCalculator - postman  |
+
+
+For the Calculator API, In calculatorAPI>Startup>ConfigureServices, you need to add the following
 
 ```csharp
 var tokenValidationParameters = new TokenValidationParameters
-         {
-             RequireExpirationTime = true,
-             RequireSignedTokens = true,
-             SaveSigninToken = false,
-             ValidateActor = false,
-             ValidateAudience = false, // default WAS TRUE
-             ValidateIssuer = true,
-             ValidateIssuerSigningKey = false,
-             ValidateLifetime = true
-         };
-```
+            {
+                RequireExpirationTime = true,
+                RequireSignedTokens = true,
+                SaveSigninToken = false,
+                ValidateActor = false,
+                ValidateAudience = true,
+                ValidateIssuer = true,
+                ValidateIssuerSigningKey = false,
+                ValidateLifetime = true,
+                ValidAudiences = new string[] {
+                    Configuration["AzureAdB2C:ClientId"],   // API Calculator
+                    "9f3d61b2-e38e-4c22-88ed-3f6735e40e0a", // API Scientific Calculator
+                    "c07391de-3205-4496-a704-4607b18b64f9",  // WebCalculator 
+                    "d668afda-f613-43f7-89e4-5425496ebdf2", // postman
+                }
+            };
 
-and the following
-
-```csharp
-.AddJwtBearer(jwtOptions =>
+services.AddAuthentication(options =>
+            {
+                options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(jwtOptions =>
               {
                   jwtOptions.Authority = $"https://login.microsoftonline.com/tfp/{Configuration["AzureAdB2C:Tenant"]}/{Configuration["AzureAdB2C:Policy"]}/v2.0/";
                   jwtOptions.Audience = Configuration["AzureAdB2C:ClientId"];
-                  jwtOptions.TokenValidationParameters = tokenValidationParameters; // ADD THIS LINE TOO
+                  jwtOptions.TokenValidationParameters = tokenValidationParameters;
                   jwtOptions.Events = new JwtBearerEvents
                   {
                       OnAuthenticationFailed = AuthenticationFailed
                   };
               });
+
 ```
 
-where you are telling "dear middleware, please do not validate Audience on each call" :-)
+While for the Scientific Calculator API, you need to add:
 
-(*) Validation of the audience, mitigates forwarding attacks. For example, a site that receives a token, could not replay it to another side.
 
-(**) All the discussion and the concept we have described are valid ALSO for Azure B2B authenticated applications.
+```csharp
+var tokenValidationParameters = new TokenValidationParameters
+            {
+                RequireExpirationTime = true,
+                RequireSignedTokens = true,
+                SaveSigninToken = false,
+                ValidateActor = false,
+                ValidateAudience = true,
+                ValidateIssuer = true,
+                ValidateIssuerSigningKey = false,
+                ValidateLifetime = true,
+                ValidAudiences = new string[] {
+                    Configuration["AzureAdB2C:ClientId"],    // API Scientific Calculator
+                    "c07391de-3205-4496-a704-4607b18b64f9",  // WebCalculator 
+                    "d668afda-f613-43f7-89e4-5425496ebdf2",  // postman
+                }
+            };
+
+            services.AddAuthentication(options =>
+            {
+                options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(jwtOptions =>
+            {
+                jwtOptions.Authority = $"https://login.microsoftonline.com/tfp/{Configuration["AzureAdB2C:Tenant"]}/{Configuration["AzureAdB2C:Policy"]}/v2.0/";
+                jwtOptions.Audience = Configuration["AzureAdB2C:ClientId"];
+                jwtOptions.TokenValidationParameters = tokenValidationParameters; // ADD THIS LINE TOO
+                jwtOptions.Events = new JwtBearerEvents
+                {
+                    OnAuthenticationFailed = AuthenticationFailed
+                };
+            });
+
+
+
