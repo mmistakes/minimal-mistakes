@@ -133,6 +133,7 @@ While for the Scientific Calculator API, you need to add:
 
 
 ```csharp
+
 var tokenValidationParameters = new TokenValidationParameters
             {
                 RequireExpirationTime = true,
@@ -163,6 +164,5 @@ var tokenValidationParameters = new TokenValidationParameters
                     OnAuthenticationFailed = AuthenticationFailed
                 };
             });
-
 
 
