@@ -108,8 +108,8 @@ analytics:
 author:
   name             : "Piotr Lewandowski"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Gdańsk, Poland"
+  bio              : # "Chcę rozwiązywać trudne problemy"
+  location         : "Gdańsk"
   email            : "piotr@petlew.com"
   links:
     - label: "Email"
