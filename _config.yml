@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "pl-PL"
-title                    : "Blog"
+title                    : "Blog Piotra Lewandowskiego"
 title_separator          : "-"
 name                     : "Piotr Lewandowski"
 description              : "Blog Piotra Lewandowskiego"
