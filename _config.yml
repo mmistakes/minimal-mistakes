@@ -114,7 +114,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: piotr@petlew.com
+      # url: piotr@petlew.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://petlew.com"
