@@ -1,5 +1,6 @@
 ---
 title: "Layout: More Tag"
+excerpt_separator: <!--more-->
 categories:
   - Layout
   - Uncategorized
@@ -11,7 +12,7 @@ tags:
 
 This content is before the [excerpt separator tag](http://jekyllrb.com/docs/posts/#post-excerpts).
 
-Right after this sentence there should be a **continue reading** link of some sort in archive-index pages.
+Additional content before the more tag.
 
 <!--more-->
 
