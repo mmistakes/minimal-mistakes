@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "2. GEV",
-    "title": "2. GEV",
-    "excerpt": "19:00 Uhr, Mensa",
-    "url": "https://www.google.com/calendar/event?eid=N20ydWVkMzljMTlsdDFlZDJzMnBtZGl2aGogaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-01-23T19:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-01-23T21:00:00+01:00"
-    },
-    "created": "2019-01-05T13:41:41.000Z",
-    "updated": "2019-01-05T13:42:37.539Z"
-  },
-  {
-    "image_path": null,
     "alt": "2. Fachkonferenz Englisch",
     "title": "2. Fachkonferenz Englisch",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2019-01-05T13:45:18.000Z",
     "updated": "2019-01-05T13:45:18.458Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Projekt !RESPECT  Gewaltfrei Lernen",
+    "title": "Projekt !RESPECT  Gewaltfrei Lernen",
+    "excerpt": "Projekt Gewaltfrei Lernen für alle (Kinder, Lehrkräfte, Eltern)",
+    "url": "https://www.google.com/calendar/event?eid=bjZndDNqcDczZXNib2VhZHVtZnRqdjlhZDAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-03-25",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-04-10",
+      "date_time": null
+    },
+    "created": "2018-12-09T15:40:33.000Z",
+    "updated": "2019-01-05T13:50:17.215Z"
   }
 ]
