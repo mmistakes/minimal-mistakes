@@ -2,6 +2,7 @@
 
 ### Bug Fixes
 
+- Fix `site.logo` false positives. [#2026](https://github.com/mmistakes/minimal-mistakes/pull/2026#issuecomment-455770730)
 - Add empty `alt` attribute to `site.logo` image. [#2035](https://github.com/mmistakes/minimal-mistakes/pull/2035)
 
 ## [4.15.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.15.1)
