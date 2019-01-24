@@ -392,7 +392,19 @@ Transform user comments into `_data` files that live inside of your GitHub repos
 
 ###### Staticman v3
 
-Due to the support for GitLab, the URL scheme has been changed.  Bewteen `v3` and `/entry`, one needs to input a Git service provider (either `github` or `gitlab`).  Apart from that, the setup for GitHub remains the same.
+Due to the support for GitLab, the URL scheme has been changed.  Bewteen `v3/entry/` and `/{your Git username}`, one needs to input a Git service provider (either `github` or `gitlab`).  For example
+
+    https://{your Staticman v3 API}/v3/entry/github/{your Git username}/{your repository name}/...
+
+```yaml
+# _config.yml (defaults)
+repository  : # Git username/repo-name e.g. "mmistakes/minimal-mistakes"
+comments:
+  provider  : "staticman_v2"
+  staticman:
+    branch    : "master"
+    endpoint  : https://{your Staticman v3 API}/v3/entry/github/
+```
 
 ###### Staticman v2
 
