@@ -1,5 +1,9 @@
 ## Unreleased
 
+### Enhancements
+
+- Add Malayalam localized UI text strings. [#2037](https://github.com/mmistakes/minimal-mistakes/pull/2037)
+
 ### Bug Fixes
 
 - Fix `site.logo` false positives. [#2026](https://github.com/mmistakes/minimal-mistakes/pull/2026#issuecomment-455770730)

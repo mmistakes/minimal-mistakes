@@ -4,11 +4,15 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2019-01-23T20:04:54-05:00
+last_modified_at: 2019-01-23T20:20:42-05:00
 toc: true
 ---
 
 ## Unreleased
+
+### Enhancements
+
+- Add Malayalam localized UI text strings. [#2037](https://github.com/mmistakes/minimal-mistakes/pull/2037)
 
 ### Bug Fixes
 
