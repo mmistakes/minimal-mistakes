@@ -59,7 +59,7 @@ $(document).ready(function() {
   var smoothScrolling = false;
   $(window).bind("popstate", function (event) {
     $.smoothScroll({
-      scrollTarget: location.hash,
+      scrollTarget: decodeURI(location.hash),
       offset: -20,
       beforeScroll: function() { smoothScrolling = true; },
       afterScroll: function() { smoothScrolling = false; }
@@ -74,7 +74,7 @@ $(document).ready(function() {
     }
   });
   // Smooth scroll on page load if there is a hash in the URL.
-  if (location.hash) {
+  if (decodeURI(location.hash)) {
     $(window).trigger("popstate");
   }
 
@@ -103,13 +103,13 @@ $(document).ready(function() {
       if (top <= scrollTop && scrollTop < bottom) {
         // Mark all ancestors as active
         links[i].link.parents("li").children("a").addClass('active');
-        if (links[i].href !== location.hash) {
+        if (links[i].href !== decodeURI(location.hash)) {
           history.replaceState(null, null, links[i].href);
         }
         return;
       }
     }
-    if ('#' !== location.hash) {
+    if ('#' !== decodeURI(location.hash)) {
       history.replaceState(null, null, '#');
     }
   }));
