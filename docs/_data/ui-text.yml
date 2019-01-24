@@ -1244,6 +1244,55 @@ fa: &DEFAULT_FA
 fa-IR:
   <<: *DEFAULT_FA
 
+
+# Malayalam
+# -----------------
+ml: &DEFAULT_ML
+  page                       : "പേജ്"
+  pagination_previous        : "തിരികെ"
+  pagination_next            : "മുന്നോട്ട്"
+  breadcrumb_home_label      : "ഹോം"
+  breadcrumb_separator       : "/"
+  menu_label                 : "ടോഗിൾ മെനു"
+  search_label               : "ടോഗിൾ സെർച്ച്"
+  toc_label                  : "ഈ പേജിൽ"
+  ext_link_label             : "ലിങ്കിലേക് പോകാൻ"
+  less_than                  : "ഏതാണ്ട്"
+  minute_read                : "മിനിറ്റ് ദൈർഖ്യം"
+  share_on_label             : "ഷെയർ  ചെയ്യുവാൻ "
+  meta_label                 :
+  tags_label                 : "ടാഗുകൾ:"
+  categories_label           : "വിഭാഗങ്ങൾ:"
+  date_label                 : "അവസാന മാറ്റം:"
+  comments_label             : "അഭിപ്രായം രേഖപ്പെടുത്തുക"
+  comments_title             : "അഭിപ്രായങ്ങൾ"
+  more_label                 : "കൂടുതൽ  അറിയുവാൻ"
+  related_label              : "നിങ്ങൾക് ഇതും ഇഷ്ടപ്പെട്ടേക്കാം"
+  follow_label               : "പിന്തുടരുക:"
+  feed_label                 : "ഫീഡ്"
+  powered_by                 : "പവേർഡ് ബൈ"
+  website_label              : "വെബ്സൈറ്റ്"
+  email_label                : "ഇ-മെയിൽ"
+  recent_posts               : "സമീപകാല പോസ്റ്റുകൾ"
+  undefined_wpm              : "Config.yml ലെ words_per_minute പരാമീറ്റർ നിർവചിച്ചിട്ടില്ല."
+  comment_form_info          : "നിങ്ങളുടെ ഇമെയിൽ വിലാസം പ്രസിദ്ധീകരിക്കില്ല. ആവശ്യമായ ഫീൽഡുകൾ അടയാളപ്പെടുത്തി."
+  comment_form_comment_label : "കമന്റ്"
+  comment_form_md_info       : "Markdown സപ്പോർട്ട് ചെയ്യുന്നതാണ്."
+  comment_form_name_label    : "പേര്"
+  comment_form_email_label   : "ഇ-മെയിൽ"
+  comment_form_website_label : "വെബ്സൈറ് (ഓപ്ഷണൽ)"
+  comment_btn_submit         : "അഭിപ്രായം രേഖപ്പെടുത്തുക"
+  comment_btn_submitted      : "രേഖപ്പെടുത്തി"
+  comment_success_msg        : "നിങ്ങളുടെ അഭിപ്രായത്തിന് നന്ദി! ഇത് അംഗീകരിച്ചുകഴിഞ്ഞാൽ ഇത് സൈറ്റിൽ പ്രദർശിപ്പിക്കും."
+  comment_error_msg          : "ക്ഷമിക്കണം, നിങ്ങളുടെ സമർപ്പണവുമായി ബന്ധപ്പെട്ട് ഒരു പിശകുണ്ടായിരുന്നു. ആവശ്യമായ എല്ലാ ഫീൽഡുകളും പൂർത്തിയായിട്ടുണ്ടെന്ന് ഉറപ്പുവരുത്തുക, വീണ്ടും ശ്രമിക്കുക."
+  loading_label              : "ലോഡിംഗ്..."
+  search_placeholder_text    : "നിങ്ങളുടെ തിരയൽ പദം നൽകുക..."
+  results_found              : "ഫലം (കൾ) കണ്ടെത്തി"
+  back_to_top                : "മുകളിലേയ്ക്ക്"
+ml-IN:
+  <<: *DEFAULT_ML
+
+
 # Another locale
 # --------------
 #
