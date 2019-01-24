@@ -4,9 +4,15 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2019-01-16T11:06:09-05:00
+last_modified_at: 2019-01-23T19:35:45-05:00
 toc: true
 ---
+
+## Unreleased
+
+### Bug Fixes
+
+- Add empty `alt` attribute to `site.logo` image. [#2035](https://github.com/mmistakes/minimal-mistakes/pull/2035)
 
 ## [4.15.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.15.1)
 
