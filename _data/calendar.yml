@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "2. Fachkonferenz Englisch",
-    "title": "2. Fachkonferenz Englisch",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NDMyazY4aThkczNwZ3JncHM4NnFwNWZibnUgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-01-24T15:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-01-24T16:30:00+01:00"
-    },
-    "created": "2018-09-28T15:19:13.000Z",
-    "updated": "2018-09-28T15:19:13.634Z"
-  },
-  {
-    "image_path": null,
     "alt": "Halbjahreszeugnisse für die Klassen ",
     "title": "Halbjahreszeugnisse für die Klassen ",
     "excerpt": "Unterrichtsschluss nach der 3. Stunde um 10:40 Uhr für alle Kinder",
@@ -100,5 +83,22 @@
     },
     "created": "2018-12-09T15:40:33.000Z",
     "updated": "2019-01-05T13:50:17.215Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Osterferien",
+    "title": "Osterferien",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=Nm5yazh0b3JmbzgxNmkzcmRpMHZlN3RpcGQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-04-15",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-04-27",
+      "date_time": null
+    },
+    "created": "2019-01-05T13:39:23.000Z",
+    "updated": "2019-01-05T13:40:12.645Z"
   }
 ]
