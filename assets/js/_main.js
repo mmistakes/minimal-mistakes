@@ -74,7 +74,7 @@ $(document).ready(function() {
     }
   });
   // Smooth scroll on page load if there is a hash in the URL.
-  if (decodeURI(location.hash)) {
+  if (location.hash) {
     $(window).trigger("popstate");
   }
 
@@ -109,7 +109,7 @@ $(document).ready(function() {
         return;
       }
     }
-    if ('#' !== decodeURI(location.hash)) {
+    if ('#' !== location.hash) {
       history.replaceState(null, null, '#');
     }
   }));
