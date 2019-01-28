@@ -14,6 +14,8 @@ We are going to learn how to backup the TOPdesk database using PowerShell. By de
 
 Before you will be able to interact with folders you will need to ensure that you have the appropriate permissions. The TOPdesk account that you use will need the relevant permissions. All of these commands are being run in a SAAS version of TOPdesk.
 
+*Note: You don't need ALL of these permissions, use the minimum required for your situation.*
+
 ![WebDAVPerms]({{ "/assets/td-webdav.png" | absolute_url}})
 
 ## Map WebDAV as a PSDrive
