@@ -1,6 +1,74 @@
 [
   {
     "image_path": null,
+    "alt": "5b Aquarium",
+    "title": "5b Aquarium",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NThibXVwcDVrNWo0NmFlYmtvN2NjNWtyY2EgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-01-29T08:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-01-29T13:30:00+01:00"
+    },
+    "created": "2019-01-24T06:45:05.000Z",
+    "updated": "2019-01-28T08:22:17.765Z"
+  },
+  {
+    "image_path": null,
+    "alt": "4a Bibliothek",
+    "title": "4a Bibliothek",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=N2o0M2w2a2g2NmxwdnZ1N3ZvOG90czE2aGQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-01-29T09:25:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-01-29T13:00:00+01:00"
+    },
+    "created": "2019-01-09T11:19:19.000Z",
+    "updated": "2019-01-28T08:22:30.085Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A3 Projekt Gartenarbeitsschule",
+    "title": "A3 Projekt Gartenarbeitsschule",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MThocGNmc2hqczVkZDliaWQ5NDFsbmQ1YzYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-01-30T07:45:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-01-30T12:00:00+01:00"
+    },
+    "created": "2018-09-06T05:49:37.000Z",
+    "updated": "2019-01-28T08:22:46.915Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A4 Bibliothek",
+    "title": "A4 Bibliothek",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NmZ1amtlNjEya2o1ZDJpODVpaTBxdHAzYjcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-01-31T10:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-01-31T12:00:00+01:00"
+    },
+    "created": "2019-01-14T06:50:51.000Z",
+    "updated": "2019-01-28T08:23:00.443Z"
+  },
+  {
+    "image_path": null,
     "alt": "Halbjahreszeugnisse für die Klassen ",
     "title": "Halbjahreszeugnisse für die Klassen ",
     "excerpt": "Unterrichtsschluss nach der 3. Stunde um 10:40 Uhr für alle Kinder",
@@ -32,73 +100,5 @@
     },
     "created": "2019-01-05T13:48:12.000Z",
     "updated": "2019-01-05T13:48:12.869Z"
-  },
-  {
-    "image_path": null,
-    "alt": "2. Gesamtkonferenz",
-    "title": "2. Gesamtkonferenz",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MGowazU4Mm5pZjUxNnA1cGhkbTNyb2Q1a2ogaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-02-19T16:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-02-19T18:00:00+01:00"
-    },
-    "created": "2019-01-05T13:43:15.000Z",
-    "updated": "2019-01-05T13:43:15.265Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Schulfasching",
-    "title": "Schulfasching",
-    "excerpt": "Die gesamte Schule feiert!",
-    "url": "https://www.google.com/calendar/event?eid=M3JydHIwMmpvMXBhMGJ0ODIzYmNwMjl2OHYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-03-05T08:30:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-03-05T13:30:00+01:00"
-    },
-    "created": "2019-01-05T13:45:18.000Z",
-    "updated": "2019-01-05T13:45:18.458Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Projekt !RESPECT  Gewaltfrei Lernen",
-    "title": "Projekt !RESPECT  Gewaltfrei Lernen",
-    "excerpt": "Projekt Gewaltfrei Lernen für alle (Kinder, Lehrkräfte, Eltern)",
-    "url": "https://www.google.com/calendar/event?eid=bjZndDNqcDczZXNib2VhZHVtZnRqdjlhZDAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-03-25",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-04-10",
-      "date_time": null
-    },
-    "created": "2018-12-09T15:40:33.000Z",
-    "updated": "2019-01-05T13:50:17.215Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Osterferien",
-    "title": "Osterferien",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=Nm5yazh0b3JmbzgxNmkzcmRpMHZlN3RpcGQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-04-15",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-04-27",
-      "date_time": null
-    },
-    "created": "2019-01-05T13:39:23.000Z",
-    "updated": "2019-01-05T13:40:12.645Z"
   }
 ]
