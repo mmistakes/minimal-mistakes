@@ -8,8 +8,6 @@ tags:
 classes: wide
 ---
 
-# Downloading TOPdesk Database Backups with PowerShell
-
 We are going to learn how to backup the TOPdesk database using PowerShell. By default TOPdesk takes a full backup daily and keeps it for 3 days. I want to take my own backups and keep them for longer.
 
 ## Setup
