@@ -15,9 +15,6 @@ layouts_gallery:
                   - url: /assets/images/Resume-3.png
                     image_path: /assets/images/Resume-3.png
                     alt: "Resume 3"
-                  - url: /assets/images/Resume-4.png
-                    image_path: /assets/images/Resume-4.png
-                    alt: "Resume 4"
 ---
 
 {% include gallery id="layouts_gallery" caption="" %}
