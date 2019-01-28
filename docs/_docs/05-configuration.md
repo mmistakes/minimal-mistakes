@@ -392,7 +392,7 @@ Transform user comments into `_data` files that live inside of your GitHub repos
 
 ###### Staticman v3
 
-Due to the [support for GitLab](https://github.com/eduardoboucas/staticman/pull/219), the URL scheme has been changed.  Bewteen `v3/entry/` and `/{your Git username}`, one needs to input a Git service provider (either `github` or `gitlab`).  For example
+Due to the [support for GitLab](https://github.com/eduardoboucas/staticman/pull/219), the URL scheme has been changed.  Between `v3/entry/` and `/{your Git username}`, one needs to input a Git service provider (either `github` or `gitlab`).  For example
 
     https://{your Staticman v3 API}/v3/entry/github/{your Git username}/{your repository name}/...
 
