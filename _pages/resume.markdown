@@ -1,6 +1,6 @@
 ---
 layout:           single
-title:            "Resume (LinkedIn version)"
+title:            "Resume"
 date:             2018-01-18 00:00:00 -0500
 share:            true
 author_profile:   true
