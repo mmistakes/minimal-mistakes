@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "A3 Projekt Gartenarbeitsschule",
-    "title": "A3 Projekt Gartenarbeitsschule",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MThocGNmc2hqczVkZDliaWQ5NDFsbmQ1YzYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-01-30T07:45:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-01-30T12:00:00+01:00"
-    },
-    "created": "2018-09-06T05:49:37.000Z",
-    "updated": "2019-01-28T08:22:46.915Z"
-  },
-  {
-    "image_path": null,
     "alt": "A4 Bibliothek",
     "title": "A4 Bibliothek",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2019-01-05T13:43:15.000Z",
     "updated": "2019-01-05T13:43:15.265Z"
+  },
+  {
+    "image_path": null,
+    "alt": "A4 Bibliothek",
+    "title": "A4 Bibliothek",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NjVvZWhkajVpYzU2dGtjcnA1OXJlazc3N2ogaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-02-22T07:50:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-02-22T10:00:00+01:00"
+    },
+    "created": "2019-01-14T06:51:45.000Z",
+    "updated": "2019-01-28T08:23:43.233Z"
   }
 ]
