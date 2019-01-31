@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "A4 Bibliothek",
-    "title": "A4 Bibliothek",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NmZ1amtlNjEya2o1ZDJpODVpaTBxdHAzYjcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-01-31T10:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-01-31T12:00:00+01:00"
-    },
-    "created": "2019-01-14T06:50:51.000Z",
-    "updated": "2019-01-28T08:23:00.443Z"
-  },
-  {
-    "image_path": null,
     "alt": "Halbjahreszeugnisse für die Klassen ",
     "title": "Halbjahreszeugnisse für die Klassen ",
     "excerpt": "Unterrichtsschluss nach der 3. Stunde um 10:40 Uhr für alle Kinder",
@@ -100,5 +83,22 @@
     },
     "created": "2019-01-14T06:51:45.000Z",
     "updated": "2019-01-28T08:23:43.233Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Filmvorstellung",
+    "title": "Filmvorstellung",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MW5qYmlva3ZnbnExN2MxOGR2YzNkZ2RscHIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-02-22T17:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-02-22T19:00:00+01:00"
+    },
+    "created": "2019-01-28T11:29:53.000Z",
+    "updated": "2019-01-28T11:29:53.713Z"
   }
 ]
