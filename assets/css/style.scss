@@ -1,0 +1,27 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+@import "variables";
+
+/*
+ Add my custom css
+*/
+// body {
+//   font-family: sans-serif;
+//   font-size: 30px;
+// }
+
+// html body {
+//   font-family: serif;
+//   font-size: 1em;
+// }
+// $base-font-family: 'Arvo', "Helvetica Neue", Helvetica, Arial, sans-serif;
+// $base-font-family: 'Nanum Gothic', sans-serif;
+html body {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+

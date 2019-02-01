@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/* Post Custom CSS
+*/
+
+h1.cm-cover-title {
+  font-size: 30pt;
+}
+
+p.cm-cover-subtitle {
+  font-size: 12pt;
+  opacity: .8;
+}
+
+.cm-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cm-right {
+  justify-content: flex-end;
+}
+
+.cm-author {
+  font-size: 10pt;
+  font-style: italic;
+}
+
+.cm-seperator {
+  width: 20%;
+  height: 10px;
+  border-bottom: 2px solid $cm-post-border-color;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+// 포스트 타이틀
+.cm-title {
+  // 중앙 정렬
+  // border-bottom: 1px solid #976868;
+  // padding-bottom: 10px;
+  // border-bottom-width: 1px;
+  color: $cm-post-title-color;
+  // 폰트 크기 변경
+  font-size: $cm-post-title-font-size;
+}

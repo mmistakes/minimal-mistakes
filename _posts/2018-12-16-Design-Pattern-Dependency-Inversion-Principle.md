@@ -1,6 +1,8 @@
 ---
 layout: post
-title: (주말 공부) (디자인 패턴) 의존성 역전 원칙 (Dependency Inversion Principle)
+title: "디자인패턴 의존성 역전 원칙 (DIP)"
+subtitle: "C# 으로 풀어보는 의존성 역전 원칙.."
+author: "코마"
 key: 20181216
 tags: pattern DesignPattern DIP DependencyInversionPrinciple 의존성_역전
 excerpt: "디자인 패턴에서 의존성 역전 원칙(Dependency Inversion Principle)을 살펴보고 실제로 어떻게 적용할지를 살펴본다."
