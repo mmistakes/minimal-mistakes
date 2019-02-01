@@ -3,6 +3,8 @@ layout: default
 ---
 
 <!-- Title 영역 -->
+<div class="cm-top-padding"></div>
+
 <div class="cm-container">
   <div class="cm-title">
     <h1 class="cm-cover-title">
@@ -27,15 +29,31 @@ layout: default
     <div class="cm-seperator"></div>
 </div>
 
+{{ content }}
 
+<div class="cm-container">
+    <div class="cm-seperator"></div>
+</div>
+
+<!-- 작가의 다른 포스트를 추천 (필터 기준 tag, author, top 3) -->
+<div class="cm-top-padding"></div>
+
+
+<div class="cm-container cm-left">
+  <div class="cm-title">
+    <h6 class="cm-cover-title">
+      이 작가의 다음 글 감상
+    </h6>
+  </div>
+</div>
 
 
 <ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
-
-{{ content }}
+    {% for post in site.posts limit:5 %}
+      {% if page.author and page.author == post.author and page.url != post.url %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>

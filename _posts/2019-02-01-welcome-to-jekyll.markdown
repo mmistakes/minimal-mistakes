@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
+author: "코마"
 date:   2019-02-01 14:34:34 +0900
 categories: jekyll update
-author: code-machina
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

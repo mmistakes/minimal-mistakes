@@ -2,7 +2,6 @@
 
 /* Post Custom CSS
 */
-
 h1.cm-cover-title {
   font-size: 30pt;
 }
@@ -20,6 +19,14 @@ p.cm-cover-subtitle {
 
 .cm-right {
   justify-content: flex-end;
+}
+
+.cm-left {
+  justify-content: flex-start;
+}
+
+.cm-top-padding {
+  padding-top: 50px;
 }
 
 .cm-author {
