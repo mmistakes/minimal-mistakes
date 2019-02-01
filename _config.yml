@@ -16,8 +16,7 @@
 title: 코마의 훈훈한 공간
 email: gbkim1988@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  좋은 기술이란 무엇일까요? 기술이 가져올 미래는 무엇일까요? 기술이 주는 가치는 무엇일까요?
-  기술의 의의를 고민하며 좋은 정보를 제공하기 위해 노력합니다.
+  좋은 기술을 쉬운 언어로 전달드립니다.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://code-machina.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: gbkim1988
@@ -31,6 +30,7 @@ plugins:
 header_pages:
   - about.md
   - portfolio.md
+show_excerpts: true
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
