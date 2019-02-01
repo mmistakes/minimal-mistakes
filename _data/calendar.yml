@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Halbjahreszeugnisse für die Klassen ",
-    "title": "Halbjahreszeugnisse für die Klassen ",
-    "excerpt": "Unterrichtsschluss nach der 3. Stunde um 10:40 Uhr für alle Kinder",
-    "url": "https://www.google.com/calendar/event?eid=NmRjNjh2YnRmcjN1dGk1ODUwZzkxM2k2aHEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-02-01T10:40:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-02-01T10:40:00+01:00"
-    },
-    "created": "2019-01-05T13:47:41.000Z",
-    "updated": "2019-01-05T13:47:41.584Z"
-  },
-  {
-    "image_path": null,
     "alt": "Winterferien",
     "title": "Winterferien",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2019-01-28T11:29:53.000Z",
     "updated": "2019-01-28T11:29:53.713Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Schulfasching",
+    "title": "Schulfasching",
+    "excerpt": "Die gesamte Schule feiert!",
+    "url": "https://www.google.com/calendar/event?eid=M3JydHIwMmpvMXBhMGJ0ODIzYmNwMjl2OHYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-03-05T08:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-03-05T13:30:00+01:00"
+    },
+    "created": "2019-01-05T13:45:18.000Z",
+    "updated": "2019-01-05T13:45:18.458Z"
   }
 ]
