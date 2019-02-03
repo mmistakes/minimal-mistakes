@@ -16,7 +16,7 @@
 title: 코마의 훈훈한 공간
 email: gbkim1988@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  좋은 기술을 쉬운 언어로 전달드립니다.
+  좋은 IT 기술을 쉽게 그리고 간편하게 읽도록 도와드립니다. (외주 작업 진행 문의 받습니다.)
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://code-machina.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: gbkim1988
