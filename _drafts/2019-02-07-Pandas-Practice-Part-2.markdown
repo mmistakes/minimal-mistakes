@@ -3,7 +3,7 @@ layout: post
 title:  "Pandas 를 이용한 데이터 분석 Part 2"
 subtitle: "CSV 파일을 읽고 Series 객체를 다루어보기"
 author: "코마"
-date:   2019-02-06 00:00:00 +0900
+date:   2019-02-07 03:00:00 +0900
 categories: [ "python", "pandas", "data_analysis", "csv" ]
 excerpt_separator: <!--more-->
 ---
