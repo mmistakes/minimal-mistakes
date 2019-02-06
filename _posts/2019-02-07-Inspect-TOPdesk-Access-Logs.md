@@ -10,7 +10,7 @@ toc: true
 
 Do you know who has logged into your TOPdesk environment? Did you know that TOPdesk offers you access logs? Unfortunately the process to access these is rather cumbersome. Manually downloading and reviewing the Access Logs would take too long. Let's use PowerShell to help us improve our log review process.
 
-### Setup
+## Setup
 
 Before we can begin downloading any access logs we need to ensure that we have read permissions for Access Logs.
 
@@ -38,7 +38,7 @@ Set-Location TOPdesk:\accesslogs
 
 ```
 
-### Download zip containing logs
+## Download zip containing logs
 
 If you run `Get-ChildItem` you will notice that there is a folder created for each month. Inside each folder there are access logs for each day.
 
@@ -92,7 +92,7 @@ $LogFile = Get-Item -Path ($newfile.fullname).replace('.zip','')
 Get-Content $LogFile
 ```
 
-### Parse Access Log and create report
+## Parse Access Log and create report
 
 If you have been following along, then you can tell that this log isn't the best and it needs to be parsed further. `PowerShell` to the rescue!
 
@@ -106,12 +106,12 @@ Let's write a script that will create a log that is much easier to read.
 
 Each line of the log file corresponds to a request. We will be able to throw all of the content into a variable and then `foreach` through them all. Let's give it a shot.
 
-### Finally
+### Final Gist
 
 This is a gist showing how to return objects for yesterdays access log file. I would NOT use this as a finsihed product. Go through it one time and then wrap it up in a script that meets your needs. For a cleaner implementation please see the [`TOPdeskPS` module](https://github.com/andrewpla/topdeskps)
 
 <script src="https://gist.github.com/AndrewPla/23080ccc157a82a750f48a629914ddc5.js"></script>
 
-### Resources
+## Resources
 
 * [https://blogs.msdn.microsoft.com/powershell/2019/01/18/parsing-text-with-powershell-1-3/](https://blogs.msdn.microsoft.com/powershell/2019/01/18/parsing-text-with-powershell-1-3/)
