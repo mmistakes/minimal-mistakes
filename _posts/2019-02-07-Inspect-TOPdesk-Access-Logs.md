@@ -18,6 +18,8 @@ Before we can begin downloading any access logs we need to ensure that we have r
 
 ![WebDAVPerms]({{ "/assets/td-webdav.png" | absolute_url}})
 
+## Create PSDrive
+
 Once permissions are set let's create a `PSDrive`.
 
 ```
