@@ -126,7 +126,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          : "https://www.youtube.com/channel/UChhXDsZHiokackXsBD_NSlw"
+  youtube          : #"https://www.youtube.com/channel/UChhXDsZHiokackXsBD_NSlw"
 
 
 # Reading Files
