@@ -98,7 +98,7 @@ analytics:
 # Site Author
 author:
   name             : "Andrew Pla"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I love PowerShell and building tools that last."
   location         : "Florida"
   email            : "AndrewPla@outlook.com"
