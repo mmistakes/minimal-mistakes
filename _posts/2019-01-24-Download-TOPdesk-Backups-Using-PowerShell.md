@@ -86,8 +86,6 @@ Looks like our file is too large.
 
 I want to add this command to my `TOPdeskPS` module. This module is cross-platform, so I want to choose a method that works on BOTH PS Core and Windows PowerShell.
 
-I will use `[System.Net.WebClient]` as I will be able to access it from both. Let's give it a shot!
-
-### Gist
+I will use `[System.Net.WebClient]` as I will be able to access it from both.
 
 <script src="https://gist.github.com/AndrewPla/22aced2413e91d15a449c59c021d7176.js"></script>
