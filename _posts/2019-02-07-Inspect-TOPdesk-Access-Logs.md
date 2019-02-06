@@ -5,6 +5,7 @@ tags:
 - Access Logs
 - TOPdesk
 classes: wide
+toc:true
 ---
 
 Do you know who has logged into your TOPdesk environment? Did you know that TOPdesk offers you access logs? Unfortunately the process to access these is rather cumbersome. Manually downloading and reviewing the Access Logs would take too long. Let's use PowerShell to help us improve our log review process.
@@ -108,7 +109,6 @@ Each line of the log file corresponds to a request. We will be able to throw all
 ### Finally
 
 This is a gist showing how to return objects for yesterdays access log file. I would NOT use this as a finsihed product. Go through it one time and then wrap it up in a script that meets your needs. For a cleaner implementation please see the [`TOPdeskPS` module](https://github.com/andrewpla/topdeskps)
-
 
 <script src="https://gist.github.com/AndrewPla/23080ccc157a82a750f48a629914ddc5.js"></script>
 
