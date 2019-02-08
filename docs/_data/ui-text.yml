@@ -701,8 +701,8 @@ sv: &DEFAULT_SV
   pagination_next            : "Nästa"
   breadcrumb_home_label      : "Hem"
   breadcrumb_separator       : "/"
-  menu_label                 : "Meny ridå"
-  search_label               :
+  menu_label                 : "Växla menyläge"
+  search_label               : "Växla sökläge"
   toc_label                  : "På denna sida"
   ext_link_label             : "Direkt länk"
   less_than                  : "mindre än"
@@ -725,15 +725,18 @@ sv: &DEFAULT_SV
   undefined_wpm              : "Odefinerade parametrar words_per_minute i _config.yml"
   comment_form_info          : "Din e-post adress kommer inte att publiceras. Obligatoriska fält är markerade."
   comment_form_comment_label : "Kommentar"
-  comment_form_md_info       : "Använd Markdown för text-formateringen."
+  comment_form_md_info       : "Stöd för Markdown finns."
   comment_form_name_label    : "Namn"
   comment_form_email_label   : "E-post adress"
   comment_form_website_label : "Webdsida (valfritt)"
   comment_btn_submit         : "Skicka en kommentar"
   comment_btn_submitted      : "Kommentaren har tagits emot"
   comment_success_msg        : "Tack för din kommentar! Den kommer att visas på sidan så fort den har godkännts."
-  comment_error_msg          : "Tyvärr det har blivit något fel i en av fälten, se till att du fyller i alla rutor och försök igen."
-  loading_label              : "Laddar..."
+  comment_error_msg          : "Tyvärr det har blivit något fel i ett av fälten, se till att du fyllt i alla obligatoriska fält och försök igen."
+  loading_label              : "Laddar...",
+  search_placeholder_text    : "Fyll i sökterm..."
+  results_found              : "Resultat funna"
+  back_to_top                : "Tillbaka till toppen"
 sv-SE:
   <<: *DEFAULT_SV
 sv-FI:
