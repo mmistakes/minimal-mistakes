@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Winterferien",
-    "title": "Winterferien",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MDJwdm9hazdoNXY1aGZkaWJ1c3Q1MGIwdGsgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-02-04",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-02-09",
-      "date_time": null
-    },
-    "created": "2019-01-05T13:48:12.000Z",
-    "updated": "2019-01-05T13:48:12.869Z"
-  },
-  {
-    "image_path": null,
     "alt": "4b Bibliothek",
     "title": "4b Bibliothek",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2019-01-05T13:45:18.000Z",
     "updated": "2019-01-05T13:45:18.458Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Projekt !RESPECT  Gewaltfrei Lernen",
+    "title": "Projekt !RESPECT  Gewaltfrei Lernen",
+    "excerpt": "Projekt Gewaltfrei Lernen für alle (Kinder, Lehrkräfte, Eltern)",
+    "url": "https://www.google.com/calendar/event?eid=bjZndDNqcDczZXNib2VhZHVtZnRqdjlhZDAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-03-25",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-04-10",
+      "date_time": null
+    },
+    "created": "2018-12-09T15:40:33.000Z",
+    "updated": "2019-01-05T13:50:17.215Z"
   }
 ]
