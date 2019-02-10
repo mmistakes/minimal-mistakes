@@ -69,7 +69,7 @@ $(document).ready(function() {
   var smoothScrolling = false;
   $(window).bind("popstate", function (event) {
     $.smoothScroll({
-      scrollTarget: location.hash,
+      scrollTarget: decodeURI(location.hash),
       offset: -20,
       beforeScroll: function() { smoothScrolling = true; },
       afterScroll: function() { smoothScrolling = false; }
@@ -113,7 +113,7 @@ $(document).ready(function() {
       if (top <= scrollTop && scrollTop < bottom) {
         // Mark all ancestors as active
         links[i].link.parents("li").children("a").addClass('active');
-        if (links[i].href !== location.hash) {
+        if (links[i].href !== decodeURI(location.hash)) {
           history.replaceState(null, null, links[i].href);
         }
         return;
