@@ -11,6 +11,17 @@ cd ./code-machina.github.io/
 sudo bundle exec jekyll serve
 ```
 
+## Minima 수정
+
+- minima local 위치 찾기
+
+```bash
+bundle show minima
+```
+
+- 변경 대상 복사
+
+
 ## 구현 예정
 
 |기능|설명|구현|

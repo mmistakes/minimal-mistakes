@@ -6,6 +6,11 @@ h1.cm-cover-title {
   font-size: 30pt;
 }
 
+div.cm-doc-foot {
+  font-size: 18pt;
+  margin-bottom: 10px;
+}
+
 p.cm-cover-subtitle {
   font-size: 12pt;
   opacity: .8;
@@ -42,6 +47,7 @@ p.cm-cover-subtitle {
   margin-bottom: 35px;
 }
 
+
 // 포스트 타이틀
 .cm-title {
   // 중앙 정렬
@@ -51,4 +57,41 @@ p.cm-cover-subtitle {
   color: $cm-post-title-color;
   // 폰트 크기 변경
   font-size: $cm-post-title-font-size;
+}
+
+.cm-sidebar {
+  display: none;
+}
+
+@media (min-width: 1350px) {
+  // Code-machina 편집 
+  // Floating Table Of Content (ToC)
+  .cm-sidebar {
+    display: inline-block;
+    float: right;
+    position: fixed;
+    right: 0;
+    background-color: white;
+    // width: 252px;
+    // padding: 24px;
+    // margin-right: 50px;
+    border: 1px solid;
+    padding: 4px 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #767676;
+    
+  }
+  div.cm-sidebar > ul {
+
+  };
+
+  div.cm-sidebar > ul > li {
+    position: relative;
+    display: block;
+    padding: 4px 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #767676;
+  }
 }
