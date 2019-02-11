@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "4b Bibliothek",
-    "title": "4b Bibliothek",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MjJmdnM3aWR1NnJ1bnE1ZW5jbTlkaTE4YzIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-02-11T09:30:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-02-11T12:30:00+01:00"
-    },
-    "created": "2019-01-11T09:20:57.000Z",
-    "updated": "2019-01-28T08:23:27.294Z"
-  },
-  {
-    "image_path": null,
     "alt": "2. Gesamtkonferenz",
     "title": "2. Gesamtkonferenz",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2018-12-09T15:40:33.000Z",
     "updated": "2019-01-05T13:50:17.215Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Elternabend für alle Klassen",
+    "title": "Elternabend für alle Klassen",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NWQydmFtNXU3MWhhOHQwZjdzcmNkaG82a28gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-03-26T17:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-03-26T19:00:00+01:00"
+    },
+    "created": "2019-01-28T11:33:38.000Z",
+    "updated": "2019-01-28T11:33:38.050Z"
   }
 ]
