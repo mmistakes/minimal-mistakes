@@ -1,11 +1,12 @@
 ---
 title: "History"
+classes: wide
 permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
 last_modified_at: 2019-02-11T16:02:54-05:00
-toc: true
+toc: false
 ---
 
 ## Unreleased
