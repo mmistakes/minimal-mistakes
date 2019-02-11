@@ -19,6 +19,9 @@ sudo bundle exec jekyll serve
 bundle show minima
 ```
 
+- 편집할 파일을 불러오기
+
+
 - 변경 대상 복사
 
 
