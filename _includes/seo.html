@@ -59,6 +59,10 @@
 <title>{{ seo_title | default: site.title }}{% if paginator %}{% unless paginator.page == 1 %} {{ title_separator }} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}{% endif %}</title>
 <meta name="description" content="{{ seo_description }}">
 
+{% if page.keywords %}
+  <meta name="keywords" content="{{ page.keywords }}">
+{% endif %}
+
 {% if author.name %}
   <meta name="author" content="{{ author.name | default: author }}">
 {% endif %}
