@@ -32,6 +32,8 @@ header_pages:
   - about.md
   - portfolio.md
 show_excerpts: true
+google_analytics: UA-134340962-1
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
