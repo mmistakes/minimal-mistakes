@@ -74,4 +74,4 @@ After dabbling ourselves a little bit in math, we should implement ELM. We will 
 
 ## Sample Implementation on MNIST dataset
 
-Jupyter notebook is available [here](link)
+Jupyter notebook is available [here](https://github.com/navaro1/navaro1.github.io/blob/master/_resources/Extreme%20Learning%20Machine.ipynb)
