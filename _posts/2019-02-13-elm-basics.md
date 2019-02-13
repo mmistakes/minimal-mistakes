@@ -40,7 +40,7 @@ Where bold dot mean vector dot product.
 
 As you can see a connection between layers can be represented by a matrix.
 
-### So what so extreme?
+### So what is so extreme?
 
 Now that we understand now SLFN look like we can get back to Extreme Learning Machines. The idea is simple - let's assign a random value from continuous distribution (for people a little bit less math savvy, it's just random), do the same for all values of the $w$ vector. After that, we can directly calculate the value of the matrix representing the second connection, which we will denote as $\hat{\beta}$.
 
