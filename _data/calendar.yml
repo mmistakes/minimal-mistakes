@@ -54,18 +54,18 @@
     "image_path": null,
     "alt": "Schulfasching",
     "title": "Schulfasching",
-    "excerpt": "Die gesamte Schule feiert!",
-    "url": "https://www.google.com/calendar/event?eid=M3JydHIwMmpvMXBhMGJ0ODIzYmNwMjl2OHYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MnJsNjZrbXZ1aWRkNGI2NGNkZXBsbzRsdmMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
-      "date": null,
-      "date_time": "2019-03-05T08:30:00+01:00"
+      "date": "2019-03-04",
+      "date_time": null
     },
     "end": {
-      "date": null,
-      "date_time": "2019-03-05T13:30:00+01:00"
+      "date": "2019-03-05",
+      "date_time": null
     },
-    "created": "2019-01-05T13:45:18.000Z",
-    "updated": "2019-01-05T13:45:18.458Z"
+    "created": "2019-02-14T06:35:31.000Z",
+    "updated": "2019-02-14T06:35:31.071Z"
   },
   {
     "image_path": null,
