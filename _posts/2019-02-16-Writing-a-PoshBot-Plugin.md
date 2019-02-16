@@ -16,7 +16,9 @@ This post will go through the process of writing and publishing a PoshBot module
 
 ### What is PoshBot
 
-PoshBot is a PowerShell-based chat bot. It can be extended by importing plugins which are just PowerShell modules. The ability to extend the functionality of the chatbot by writing PowerShell is my favorite part :)
+PoshBot is a PowerShell-based chat bot. It can be extended by importing plugins which are just PowerShell modules. The ability to extend the functionality of the chatbot by writing PowerShell is my favorite part. Checkout the project on [Github](https://github.com/poshbotio/PoshBot)
+
+If you don't have TOPdesk and are just reading this because you love #PowerShell you should definitely follow take a few minutes to setup a personal slack for your PoshBot. You can get up and running with PoshBot in just a few minutes.
 
 ### Planning
 
@@ -26,9 +28,11 @@ I like tracking my changes with github issues. So let's create one. We are going
 
 You can checkout the PoshBot documentation at [link](http://docs.poshbot.io/en/latest/)
 
-## Setup
+### Setup
 
 There is a little bit of prep work required for us before we can really dig into things.
+
+We need to setup Slack and create a TOPdesk operator account.
 
 #### Create New Slack Workspace
 
@@ -37,31 +41,10 @@ Before we can develop a PoshBot plugin it will be helpful to have a test PoshBot
 ![Create New Slack Workspace]({{"/assets/newworkspace.png" | absolute_url}})
 
 
-#### Create TOPdesk Operator Account
-
- You should begin my creating a dedicated operator account in TOPdesk with the appropriate permissions, operator groups, category filters, etc. This account will also need API access and you must login and generate an application password. If you want to use the `!Get-TdAsset` command then you will need to ensure that the operator has access to asset management.
-
-I created an operator named poshbot.
-
-```
-> Get-TdOperator poshbot | Select loginname
-
-loginName
----------
-POSHBOT
-```
-
-#### Generate TOPdesk Application Password
-
-We need to generate an application password from the TOPdesk operator account that we created. Login to TOPdesk with that account, then select My Settings in the top right.
-
-![Open TOPdesk Settings]({{"/assets/tdmysettings.png" | absolute_url}})
-
-Scroll to the bottom of your settings and you can select "Add" to create a new application password. Store this into a password manager of your choice and we are good to go.
-
 #### Add PoshBot to Slack
 
-I need to setup my bot by using the link at [link](https://my.slack.com/services/new/bot). Make sure to take note of any api key.
+Setup the bot by using the link at [link](https://my.slack.com/services/new/bot). Make sure to take note of the api key.
+
 
 #### Start PoshBot
 
@@ -99,13 +82,38 @@ Now we have PoshBot running. Let's send a DM to our bot with a test command to v
 
 Ouch, looks like it's working.
 
+
+#### Create TOPdesk Operator Account
+
+ You should begin my creating a dedicated operator account in TOPdesk with the appropriate permissions, operator groups, category filters, etc. This account will also need API access and you must login and generate an application password. If you want to use the `!Get-TdAsset` command then you will need to ensure that the operator has access to asset management.
+
+I created an operator named poshbot.
+
+```
+> Get-TdOperator poshbot | Select loginname
+
+loginName
+---------
+POSHBOT
+```
+
+#### Generate TOPdesk Application Password
+
+We need to generate an application password from the TOPdesk operator account that we created. Login to TOPdesk with that account, then select My Settings in the top right.
+
+![Open TOPdesk Settings]({{"/assets/tdmysettings.png" | absolute_url}})
+
+Scroll to the bottom of your settings and you can select "Add" to create a new application password. Store this into a password manager of your choice and we are good to go.
+
+
+
 ### Writing the Module
 
 This is a simple module so we will just use a psm1 and a psd1 file. We will need to create a dependency on the Poshbot and TOPdeskPS modules. We require the PoshBot Module because we are going to be using the `New-PoshBotCardResponse` command. We need the TOPdeskPS module because we will be using it to connect to and retrieve incidents from TOPdesk for us. We will be using the `Get-TdAsset`, `Get-TdIncident`, and `Connect-TdService`
 
 #### Create .psd1 + .psm1 file
 
-I'm borrowing this code from the PoshBot Docs. I'd normally use plaster, but I'm trying to keep things nice and simple with this one.
+I'm borrowing this code from the PoshBot Docs. I normally use plaster to template my projects, but I'm trying to keep things nice and simple with this one.
 
 ```powershell
 
@@ -197,7 +205,7 @@ $myBotConfig | Start-PoshBot
 
 
 
-### Write Get-TdIncident
+#### Write Get-TdIncident
 
 This command is going to return incidents. We need to have parameters to accept the plugin configuration that sets up our credentials/url.
 
@@ -387,7 +395,7 @@ function Get-TdIncident {
 
 ```
 
-### Write Get-TdAsset
+#### Write Get-TdAsset
 
 Now that I've done this once already, creating this second command *should* mostly be copy/pasta with a few tweaks along the way.
 
@@ -455,7 +463,7 @@ function Get-TdAsset {
 }
 ```
 
-### Bask in Glory (Temporarily)
+#### Bask in Glory (Temporarily)
 
 So things are good so far. Let's take a look at what gets output.
 
@@ -482,7 +490,7 @@ Publish-Module -name poshbot.topdesk -nugetapikey $apikey -repository psgallery
 
 ### Final Thoughts
 
-That was a lot of fun. Hopefully someone else gets some use out of the module
+That was a lot of fun. Hopefully someone else gets some use out of the module. If you still haven't setup PoshBot for yourself you have my blessing to do so now.
 
 Checkout the PoshBot.TOPdesk module here: [https://github.com/AndrewPla/PoshBot.TOPdesk](https://github.com/AndrewPla/PoshBot.TOPdesk)
 
