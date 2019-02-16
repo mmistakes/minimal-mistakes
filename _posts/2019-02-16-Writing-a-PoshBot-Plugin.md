@@ -1,5 +1,5 @@
 ---
-title: Writnig a PoshBot Plugin to Display Tickets and Assets
+title: Writing a PoshBot Plugin to Display TOPdesk Tickets and Assets
 tags:
 - PowerShell
 - PoshBot
@@ -442,3 +442,7 @@ Publish-Module -name poshbot.topdesk -nugetapikey $apikey -repository psgallery
 ### Final Thoughts
 
 That was a lot of fun. Hopefully someone else gets some use out of the module
+
+Checkout the PoshBot.TOPdesk module here: [https://github.com/AndrewPla/PoshBot.TOPdesk](https://github.com/AndrewPla/PoshBot.TOPdesk)
+
+Checkout the TOPdeskPS Module here [https://github.com/AndrewPla/TOPdeskPS](https://github.com/AndrewPla/TOPdeskPS)
