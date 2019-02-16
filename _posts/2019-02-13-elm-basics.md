@@ -22,7 +22,7 @@ There are two _neurons_ in the input layer, three in the hidden layer and one in
 
 We will be more interested in connections, which are represented by arrows in the image. Every arrow represents weight of that connection. In order to calculate value $l_{1}$ we need to do the following:
 
-$$l_{1} = g(x_{1} * w_{11} + x_{2} * w_{12} + b_{1})$$
+$$l_{1} = g(x_{1} \cdot w_{11} + x_{2} \cdot w_{12} + b_{1})$$
 
 Let's unpack this equation. $w_{11}, w_{12}$ are aformentioned weights connecting $x_{1}, x_{2}$ to to $l_1$ and $g$ is an [activation function](https://en.wikipedia.org/wiki/Activation_function). If you do not know why bother with an activation function - it helps neural net learn learn complicated dependencies. You can read about this on [this stackexchange post](https://ai.stackexchange.com/questions/5493/what-is-the-purpose-of-an-activation-function-in-neural-networks). What is $b_{1}$? It is a parameter called bias. It "moves" our function in proper direction if needed. My intuition goes as follows: We can have whole family of functions $x^{2} + b$, but in order to precisely identify which one I am talking about I need to pinpoint $b$ parameter which is a bias. In function $x^{2} + 4$, it is 4 that represent the bias. Now, with a little help of matrices we can write equation for _j-th_ sample:
 
