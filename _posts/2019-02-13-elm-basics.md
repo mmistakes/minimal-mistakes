@@ -29,11 +29,11 @@ Let's unpack this equation. $w_{11}, w_{12}$ are aformentioned weights connectin
 $$
 H_{j} = 
 \begin{bmatrix}
-g(x_{j1} * w_{11} + x_{j2} * w_{12} + b_{1}) & g(x_{j1} * w_{21} + x_{2} * w_{22} + b_{2}) & g(x_{j1} * w_{31} + x_{j2} * w_{32} + b_{3}) \\
+g(x_{j1} \cdot w_{11} + x_{j2} \cdot w_{12} + b_{1}) & g(x_{j1} \cdot w_{21} + x_{2} \cdot w_{22} + b_{2}) & g(x_{j1} \cdot w_{31} + x_{j2} \cdot w_{32} + b_{3}) \\
 \end{bmatrix} \\
 = 
 \begin{bmatrix}
-g(\boldsymbol{x_j \cdot w_{1}} + b_{1}) & g(\boldsymbol{x_j \cdot w_{2}} + b_{2}) & g(\boldsymbol{x_j \cdot w_{3}} + b_{3}) \\
+g(\boldsymbol{x_{j}w_{1}} + b_{1}) & g(\boldsymbol{x_{j}w_{2}} + b_{2}) & g(\boldsymbol{x_{j}w_{3}} + b_{3}) \\
 \end{bmatrix}
 $$
 Where bold dot mean vector dot product.
