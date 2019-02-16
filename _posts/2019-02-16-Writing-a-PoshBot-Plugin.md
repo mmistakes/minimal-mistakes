@@ -187,8 +187,7 @@ $pbc | Save-PoshBotConfiguration -Path ~/.poshbot/bot.psd1
 Now we can start poshbot again, only this time we need to grab the config file that we just created at ~/.poshbot/bot.psd1
 
 
-
-Going forward, we can start the bot using the below code. If you are using this on a production environment I would use an operator with the minimum required permissions and store the .psd1 in a secure location.
+Going forward, we can start the bot using the below code. If you are using this on a production environment I would use an operator with the minimum required permissions and properly protect your .psd1 file.
 
 ```powershell
 # Start the bot using our newly stored creds
@@ -202,6 +201,9 @@ $myBotConfig | Start-PoshBot
 
 This command is going to return incidents. We need to have parameters to accept the plugin configuration that sets up our credentials/url.
 
+To accept parameter input from the plugin configuration that we set in the last step we need to add `[PoshBot.FromConfig('ConfigName')]` to each Parameter.
+
+We need 3 parameters that accept input from the config system: `'TOPdeskCredential'`, `'TOPdeskUrl`', and `'ApplicationPassword'`
 This is what the function looks like when completed
 
 ```powershell
@@ -263,7 +265,7 @@ function Get-TdIncident {
         [Switch]
         $ApplicationPassword
     )
-    Import-Module TOPdeskps -RequiredVersion 0.1.0
+    Import-Module TOPdeskps -MinimumVersion 0.1.0
 
     Connect-TdService -Credential $TOPdeskCredential -Url $TOPdeskUrl -ApplicationPassword:$ApplicationPassword -usertype 'Operator'
 
@@ -387,7 +389,7 @@ function Get-TdIncident {
 
 ### Write Get-TdAsset
 
-Now that I've done this once already, creating this second command *should* mostly be copy/pasta, but I'm sure I'll find a way to muck it up.
+Now that I've done this once already, creating this second command *should* mostly be copy/pasta with a few tweaks along the way.
 
 This is what the finished function looks like
 
@@ -432,7 +434,7 @@ function Get-TdAsset {
     )
 
     # have to specify version for some reason
-    Import-Module TOPdeskPS -RequiredVersion 0.1.0
+    Import-Module TOPdeskPS -MinimumVersion 0.1.0
 
     Connect-TdService -Credential $TOPdeskCredential -Url $TOPdeskUrl -ApplicationPassword:$ApplicationPassword -usertype 'Operator'
 
@@ -485,3 +487,5 @@ That was a lot of fun. Hopefully someone else gets some use out of the module
 Checkout the PoshBot.TOPdesk module here: [https://github.com/AndrewPla/PoshBot.TOPdesk](https://github.com/AndrewPla/PoshBot.TOPdesk)
 
 Checkout the TOPdeskPS Module here [https://github.com/AndrewPla/TOPdeskPS](https://github.com/AndrewPla/TOPdeskPS)
+
+If you want to make the module better, please contribute. If you have suggestions or just want to chat, you can reach me on twitter at [@AndrewPlaTech](https://twitter.com/AndrewPlaTech)
