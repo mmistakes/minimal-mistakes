@@ -7,6 +7,12 @@ tags:
 - TOPdesk
 classes: wide
 toc: true
+
+image: /assets/graycomputernotepad.jpg
+thumbnail: /assets/graycomputernotepad.jpg
+header:
+  teaser: /assets/graycomputernotepad.jpg
+
 ---
 
 I've been using PoshBot daily for a few months now and really enjoy it. I want to be able to view tickets from my regular Teams chat. If I want to talk to someone about a ticket, it would be nice if we could look at the ticket in the same program as our chat, right? Wouldn't it be nice if you could look at your assets in your chat client?
