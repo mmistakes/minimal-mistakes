@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "2. Gesamtkonferenz",
-    "title": "2. Gesamtkonferenz",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MGowazU4Mm5pZjUxNnA1cGhkbTNyb2Q1a2ogaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-02-19T16:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-02-19T18:00:00+01:00"
-    },
-    "created": "2019-01-05T13:43:15.000Z",
-    "updated": "2019-01-05T13:43:15.265Z"
-  },
-  {
-    "image_path": null,
     "alt": "A4 Bibliothek",
     "title": "A4 Bibliothek",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2019-02-18T11:42:54.000Z",
     "updated": "2019-02-18T11:42:54.307Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Unterrichtsfrei",
+    "title": "Unterrichtsfrei",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=ZGxmcTFxMTZtbDRsZHQ1NGc1bnVlMzh0YmsgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-03-08",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-03-09",
+      "date_time": null
+    },
+    "created": "2019-02-18T18:00:34.000Z",
+    "updated": "2019-02-18T18:00:34.396Z"
   }
 ]
