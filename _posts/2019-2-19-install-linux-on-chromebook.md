@@ -1,7 +1,7 @@
 ---
 title: Installing Linux on Chromebook
 excerpt: How to install linux on a Chromebook using Crouton
-date: 2018-11-04 11:32:00 +0000
+date: 2019-2-19 11:32:00 +0000
 layout: single
 categories: posts
 tags:
