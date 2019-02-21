@@ -1,9 +1,12 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+ # - title: "Quick-Start Guide"
+ #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "About" # 네비게이션 바에 표시 되는 이름
+    url: "/about/" # 클릭시 이동할 URL
+    # url: https://mmistakes.github.io/minimal-mistakes/about/ 
+  - title: "Category"
+    url: "/categories/"
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
