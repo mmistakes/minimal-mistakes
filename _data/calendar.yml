@@ -54,7 +54,7 @@
     "image_path": null,
     "alt": "Schulfasching",
     "title": "Schulfasching",
-    "excerpt": null,
+    "excerpt": "\n8:00 -12:50 Uhr\nDie ganze Schule feiert. Eltern sind herzlich eingeladen mitzumachen!",
     "url": "https://www.google.com/calendar/event?eid=MnJsNjZrbXZ1aWRkNGI2NGNkZXBsbzRsdmMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
       "date": "2019-03-04",
@@ -65,7 +65,7 @@
       "date_time": null
     },
     "created": "2019-02-14T06:35:31.000Z",
-    "updated": "2019-02-14T06:35:31.071Z"
+    "updated": "2019-02-21T08:20:41.111Z"
   },
   {
     "image_path": null,
