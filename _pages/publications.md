@@ -4,29 +4,27 @@ title: Publications
 author_profile: true
 ---
 
-Google Scholar page [here](https://scholar.google.com/citations?user=gAMVsrkAAAAJ&hl=en), and CV.
+Google Scholar page [here](https://scholar.google.com/citations?user=gAMVsrkAAAAJ&hl=en), and CV[pdf](https://www.biorxiv.org/content/early/2018/01/15/248385).
 
 ## Articles
 
-###### 2018
-3 - Roozbeh Farhoodi, Benjamin J. Lansdell and Konrad P. Kording, "Quantifying the effect of staining methods on extracted neuron morphology" <sup>**submitted** 
+### 2019
+Joshua Glaser, Ari Benjamin, Roozbeh Farhoodi and  Konrad Kording, "The Roles of Supervised Machine Learning in Systems Neuroscience", Progress in neurobiology, 2019 ([pdf](https://arxiv.org/abs/1805.08239))
 
-2 - Joshua Glaser, Ari Benjamin, Roozbeh Farhoodi and  Konrad Kording, "The Roles of Supervised Machine Learning in Systems Neuroscience", arxiv, 2017 ([pdf](https://arxiv.org/abs/1805.08239)) <sup>**submitted** 
+### 2018
+Roozbeh Farhoodi, Benjamin Lansdell, Konrad P. Kording, “Quantifying the effect of staining methods on extracted neuron morphology”, Neuro Informatics (INCF), Montréal, Canada, August 2018
 
-1 - Roozbeh Farhoodi and Konrad P. Kording, "Sampling Neuron Morphology", Biorxiv, 2018 ([pdf](https://www.biorxiv.org/content/early/2018/01/15/248385)) <sup>**submitted** 
+Roozbeh Farhoodi, David Rolnick and Konrad P. Kording, "Neuron dendrograms uncover asymmetrical motifs", Computational and Systems Neuroscience (Cosyne), Denver, USA, March 2018
 
-###### 2017
-1 - Konrad P. Kording, Ari S. Benjamin, Roozbeh Farhoodi and Joshua Glaser, "The Roles of Machine Learning in Biomedical Science", Frontiers of Engineering: Reports on Leading-Edge Engineering from the 2017, pp. 61-71 ([pdf](https://www.naefrontiers.org/File.aspx?id=185177))
+Roozbeh Farhoodi and Konrad P. Kording, "Sampling Neuron Morphology", Biorxiv, 2018 ([pdf](https://www.biorxiv.org/content/early/2018/01/15/248385))
+
+### 2017
+Konrad P. Kording, Ari S. Benjamin, Roozbeh Farhoodi and Joshua Glaser, "The Roles of Machine Learning in Biomedical Science", Frontiers of Engineering: Reports on Leading-Edge Engineering from the 2017, pp. 61-71 ([pdf](https://www.naefrontiers.org/File.aspx?id=185177))
+
+Roozbeh Farhoodi, Pavan Ramkumar and Konrad P. Kording, "Deep learning approach towards generating neuronal morphology",Computational and Systems Neuroscience (Cosyne), Salt Lake City, USA, February 2017
 
 
-## Peer-reviewed Posters
-3 - Roozbeh Farhoodi, Benjamin J. Lansdell, Konrad P. Kording, “Quantifying the effect of staining methods on extracted neuron morphology”, Conference on Cognitive Computational Neuroscience (CCN), Philadelphia, USA, 2018.
-
-2 - Roozbeh Farhoodi, David Rolnick and Konrad P. Kording, "Neuron dendrograms uncover asymmetrical motifs", Computational and Systems Neuroscience (Cosyne), Denver, USA, March 2018
-
-3 - Roozbeh Farhoodi, Pavan Ramkumar and Konrad P. Kording, "Deep learning approach towards generating neuronal morphology",Computational and Systems Neuroscience (Cosyne), Salt Lake City, USA, February 2017
-
-## Farsi
+## In Farsi
 8 - Roozbeh Farhoodi, "Ten Simple Rules for Structuring Papers", Translated to Farsi from [here](https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1005619&type=printable), unpublished, 2018 ([pdf](https://www.dropbox.com/s/3s5ixt146v9lnoy/10%20simple%20rules%20for%20structuring%20paper.pdf?dl=0))
 
 7 - Roozbeh Farhoodi, "A Geometrical Proof for a Limit Theorem in Probability", Sharif Math Magazine, No.7 (2015), pp 61-65 ([pdf](https://www.dropbox.com/s/ejaignf0qbzppl2/A%20Geometrical%20Proof%20for%20a%20limit%20theorem%20in%20Probability.pdf?dl=0))
