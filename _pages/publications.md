@@ -11,9 +11,9 @@ author_profile: true
 ### 2019
 3 - Samantha Ing-Esteves* , Roozbeh Farhoodi, and Julie L. Lefebvre, "Representing neural reconstructions as cyclic graphs allows investigation of contact-dependent models of dendrite self-avoidance", Canadian Association for Neuroscience(CAN), Toronto Canada, May 2019
 
-2 - Samantha Ing-Esteves* , Roozbeh Farhoodi, and Julie L. Lefebvre, "4D analysis of cyclic graph reconstructions is needed to determine the molecular requirements for single neuron identity during circuit wiring", Computational and Systems Neuroscience (Cosyne), Cascais, Portugal, March 2019 
+2 - Samantha Ing-Esteves* , Roozbeh Farhoodi, and Julie L. Lefebvre, "4D analysis using cycling graph reconstructions to investigate dendrite self-recognition and self-avoidance", Computational and Systems Neuroscience (Cosyne), Cascais, Portugal, March 2019 
 
-1 - Joshua Glaser*, Ari Benjamin*, Roozbeh Farhoodi* and  Konrad Kording, "The Roles of Supervised Machine Learning in Systems Neuroscience", Progress in neurobiology, 2019 ([pdf](https://arxiv.org/abs/1805.08239))
+1 - Joshua Glaser*, Ari Benjamin*, Roozbeh Farhoodi* and  Konrad Kording, "The Roles of Supervised Machine Learning in Systems Neuroscience", Progress in Neurobiology, 2019 ([pdf](https://arxiv.org/abs/1805.08239))
 
 ### 2018
 3 - Roozbeh Farhoodi*, Benjamin Lansdell*, Konrad P. Kording, “Quantifying the effect of staining methods on extracted neuron morphology”, Neuro Informatics (INCF), Montréal, Canada, August 2018
@@ -23,7 +23,9 @@ author_profile: true
 1 - Roozbeh Farhoodi* and Konrad P. Kording, "Sampling Neuron Morphology", Biorxiv, 2018 ([pdf](https://www.biorxiv.org/content/early/2018/01/15/248385))
 
 ### 2017
-2 - Konrad P. Kording*, Ari S. Benjamin, Roozbeh Farhoodi and Joshua Glaser, "The Roles of Machine Learning in Biomedical Science", Frontiers of Engineering: Reports on Leading-Edge Engineering from the 2017, pp. 61-71 ([pdf](https://www.naefrontiers.org/File.aspx?id=185177))
+3 - Konrad P. Kording*, Ari S. Benjamin, Roozbeh Farhoodi and Joshua Glaser, "The Roles of Machine Learning in Biomedical Science", Frontiers of Engineering: Reports on Leading-Edge Engineering from the 2017, pp. 61-71 ([pdf](https://www.naefrontiers.org/File.aspx?id=185177))
+
+2 - Roozbeh Farhoodi,  "Classification and Generating of neuron Morphologies", Invited talk at Janelia Research Campus, Ashburn, USA, June 2017
 
 1 - Roozbeh Farhoodi*, Pavan Ramkumar and Konrad P. Kording, "Deep learning approach towards generating neuronal morphology", Computational and Systems Neuroscience (Cosyne), Salt Lake City, USA, February 2017
 
