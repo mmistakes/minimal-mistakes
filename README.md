@@ -2,6 +2,15 @@
 
 Minima 를 기반으로 커스터마이징 중인 Jekyll 블로그입니다.
 
+## 로컬 jekyll 빌드
+
+로컬에서 동작하는지 알아보기 위해서는 ruby 를 설치해야 합니다. 저는 Windows 10 에서 WSL 을 사용하고 있습니다. 따라서 Ubuntu 16.04 에서 설치하는 방법을 가이드 드리도록 하겠습니다.
+
+```bash
+$> sudo apt-get install ruby-full build-essential zlib1g-dev
+$> gem install jekyll bundler
+```
+
 ## 실행 방법
 
 ```bash
