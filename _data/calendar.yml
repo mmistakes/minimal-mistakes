@@ -18,6 +18,23 @@
   },
   {
     "image_path": null,
+    "alt": "2. Schulkonferenz",
+    "title": "2. Schulkonferenz",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MmZ1cmx0dW9uODhzMTdxbnJxcTBjcGhtZDggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-02-28T15:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-02-28T17:00:00+01:00"
+    },
+    "created": "2019-02-26T19:43:02.000Z",
+    "updated": "2019-02-26T19:43:12.969Z"
+  },
+  {
+    "image_path": null,
     "alt": "Schulfasching",
     "title": "Schulfasching",
     "excerpt": "\n8:00 -12:50 Uhr\nDie ganze Schule feiert. Eltern sind herzlich eingeladen mitzumachen!",
@@ -83,22 +100,5 @@
     },
     "created": "2018-12-09T15:40:33.000Z",
     "updated": "2019-01-05T13:50:17.215Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Elternabend für alle Klassen",
-    "title": "Elternabend für alle Klassen",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NWQydmFtNXU3MWhhOHQwZjdzcmNkaG82a28gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-03-26T17:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-03-26T19:00:00+01:00"
-    },
-    "created": "2019-01-28T11:33:38.000Z",
-    "updated": "2019-01-28T11:33:38.050Z"
   }
 ]
