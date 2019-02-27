@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "5a Ägyptisches Museum",
-    "title": "5a Ägyptisches Museum",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MXZ0OG42aDdta2FxM29tMHJtNjc1NWYyMGYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-02-27T08:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-02-27T13:30:00+01:00"
-    },
-    "created": "2019-02-18T11:42:09.000Z",
-    "updated": "2019-02-18T11:42:09.342Z"
-  },
-  {
-    "image_path": null,
     "alt": "2. Schulkonferenz",
     "title": "2. Schulkonferenz",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2018-12-09T15:40:33.000Z",
     "updated": "2019-01-05T13:50:17.215Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Elternabend für alle Klassen",
+    "title": "Elternabend für alle Klassen",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NWQydmFtNXU3MWhhOHQwZjdzcmNkaG82a28gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-03-26T17:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-03-26T19:00:00+01:00"
+    },
+    "created": "2019-01-28T11:33:38.000Z",
+    "updated": "2019-01-28T11:33:38.050Z"
   }
 ]
