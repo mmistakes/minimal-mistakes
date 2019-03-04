@@ -199,6 +199,9 @@ header:
     provider: youtube
 ```
 
+**Tip:** if you'd like to start the video at a particular timestamp, you can append `?start=110` (for instance) to the video `id` in order to have the video start at 1:50.
+{: .notice--info }
+
 ### Vimeo
 
 To embed the following Vimeo video at url `https://vimeo.com/212731897` into a post or page's main content you'd use:
