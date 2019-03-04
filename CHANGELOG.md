@@ -4,6 +4,10 @@
 
 - Add missing Chinese text strings. [#2072](https://github.com/mmistakes/minimal-mistakes/pull/2072)
 
+### Bug Fixes
+
+- Loosen Bundler dependency in ruby gem.
+
 ## [4.15.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.15.2)
 
 ### Enhancements

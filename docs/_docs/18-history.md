@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2019-03-03T19:03:35-05:00
+last_modified_at: 2019-03-04T16:54:24-05:00
 toc: false
 ---
 
@@ -14,6 +14,10 @@ toc: false
 ### Enhancements
 
 - Add missing Chinese text strings. [#2072](https://github.com/mmistakes/minimal-mistakes/pull/2072)
+
+### Bug Fixes
+
+- Loosen Bundler dependency in ruby gem.
 
 ## [4.15.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.15.2)
 
