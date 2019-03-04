@@ -43,8 +43,8 @@ Nested and mixed lists are an interesting beast. It's a corner case to make sure
 * unordered item 
   1. ordered
   2. ordered 
-    * unordered item
-    * unordered item
+     * unordered item
+     * unordered item
 * unordered item
 * unordered item
 
