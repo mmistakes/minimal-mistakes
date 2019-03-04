@@ -52,6 +52,23 @@
   },
   {
     "image_path": null,
+    "alt": "13:30 Saph Treffen",
+    "title": "13:30 Saph Treffen",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=cnZjb2QzbnB0ZWxraDFmanZrdGE1MGExM2MgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-03-18T13:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-03-18T14:30:00+01:00"
+    },
+    "created": "2019-03-04T12:27:35.000Z",
+    "updated": "2019-03-04T12:27:35.184Z"
+  },
+  {
+    "image_path": null,
     "alt": "Projekt !RESPECT  Gewaltfrei Lernen",
     "title": "Projekt !RESPECT  Gewaltfrei Lernen",
     "excerpt": "Projekt Gewaltfrei Lernen für alle (Kinder, Lehrkräfte, Eltern)",
@@ -83,22 +100,5 @@
     },
     "created": "2019-01-28T11:33:38.000Z",
     "updated": "2019-01-28T11:33:38.050Z"
-  },
-  {
-    "image_path": null,
-    "alt": "3. GEV",
-    "title": "3. GEV",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M3Mxc2Y2bjMwMGNqaXU1NGY1aTN1bG1xbmcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-03-27T18:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-03-27T19:00:00+01:00"
-    },
-    "created": "2019-01-28T11:34:11.000Z",
-    "updated": "2019-01-28T11:34:11.911Z"
   }
 ]
