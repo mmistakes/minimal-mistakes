@@ -281,14 +281,13 @@ To disable reading time for a post, add `read_time: false` its YAML Front Matter
 
 ### Comments
 
-[**Disqus**](https://disqus.com/), [**Discourse**](https://www.discourse.org/), [**Facebook**](https://developers.facebook.com/docs/plugins/comments), **Google+**, [**utterances**](https://utteranc.es/), and static-based commenting via [**Staticman**](https://staticman.net/) are built into the theme. First set the comment provider you'd like to use:
+[**Disqus**](https://disqus.com/), [**Discourse**](https://www.discourse.org/), [**Facebook**](https://developers.facebook.com/docs/plugins/comments), [**utterances**](https://utteranc.es/), and static-based commenting via [**Staticman**](https://staticman.net/) are built into the theme. First set the comment provider you'd like to use:
 
 | Name             | Comment Provider          |
 | ---------------- | ------------------------- |
 | **disqus**       | Disqus                    |
 | **discourse**    | Discourse                 |
 | **facebook**     | Facebook Comments         |
-| **google-plus**  | Google+ Comments          |
 | **staticman_v2** | Staticman v2              |
 | **staticman**    | Staticman v1 (deprecated) |
 | **utterances**   | utterances                |

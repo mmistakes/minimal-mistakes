@@ -23,7 +23,7 @@ masthead_title           : "Custom Title" # overrides the website title displaye
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "utterances", "custom"
+  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "utterances", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
