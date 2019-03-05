@@ -5,21 +5,15 @@
 $(document).ready(function() {
   // Sticky footer
   var bumpIt = function() {
-      $("body").css("margin-bottom", $(".page__footer").outerHeight(true));
-    },
-    didResize = false;
+    $("body").css("margin-bottom", $(".page__footer").outerHeight(true));
+  };
 
   bumpIt();
-
-  $(window).resize(function() {
-    didResize = true;
-  });
-  setInterval(function() {
-    if (didResize) {
-      didResize = false;
+  $(window).resize(
+    jQuery.throttle(250, function() {
       bumpIt();
-    }
-  }, 250);
+    })
+  );
 
   // FitVids init
   $("#main").fitVids();
