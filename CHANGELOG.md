@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+- Remove Google+ social sharing button, comment provider, and author link configs from theme.
 - Add missing Chinese text strings. [#2072](https://github.com/mmistakes/minimal-mistakes/pull/2072)
 
 ### Bug Fixes
