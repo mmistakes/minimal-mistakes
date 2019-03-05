@@ -1,9 +1,15 @@
 {% assign words_per_minute = site.words_per_minute | default: 200 %}
 
 {% if post.read_time %}
-  {% assign words = post.content | strip_html | number_of_words %}
+  {% assign contents = post.content | strip_html %}
 {% elsif page.read_time %}
-  {% assign words = page.content | strip_html | number_of_words %}
+  {% assign contents = page.content | strip_html %}
+{% endif %}
+
+{% if site.words_count_method == "size" %}
+  {% assign words = contents | size %}
+{% else %}
+  {% assign words = contents | number_of_words %}
 {% endif %}
 
 {% if words < words_per_minute %}
