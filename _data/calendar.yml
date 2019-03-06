@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "5a Gartenarbeitsschule",
-    "title": "5a Gartenarbeitsschule",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M2E4MXBwNjNxM203NzBtamN1MWMxY2hib3EgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-03-06T08:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-03-06T14:15:00+01:00"
-    },
-    "created": "2019-02-18T11:42:54.000Z",
-    "updated": "2019-02-18T11:42:54.307Z"
-  },
-  {
-    "image_path": null,
     "alt": "Unterrichtsfrei",
     "title": "Unterrichtsfrei",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2019-01-28T11:34:11.000Z",
     "updated": "2019-01-28T11:34:11.911Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Osterferien",
+    "title": "Osterferien",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=Nm5yazh0b3JmbzgxNmkzcmRpMHZlN3RpcGQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-04-15",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-04-27",
+      "date_time": null
+    },
+    "created": "2019-01-05T13:39:23.000Z",
+    "updated": "2019-01-05T13:40:12.645Z"
   }
 ]
