@@ -9,7 +9,7 @@ Minimal Mistakes is a flexible two-column Jekyll theme, perfect for building per
 
 :sparkles: See what's new in the [CHANGELOG](CHANGELOG.md).
 
-**If you enjoy this theme, please consider [supporting me](https://www.paypal.me/mmistakes) for developing and maintaining it.**
+**If you enjoy this theme, please consider [supporting me](https://www.paypal.me/mmistakes) to continue developing and maintaining it.**
 
 [![Support via PayPal](https://cdn.rawgit.com/twolfson/paypal-github-button/1.0.0/dist/button.svg)](https://www.paypal.me/mmistakes)
 
