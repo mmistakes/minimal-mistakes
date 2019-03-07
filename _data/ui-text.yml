@@ -1198,7 +1198,7 @@ pa: &DEFAULT_PA
   comment_success_msg        : "ਤੁਹਾਡੀਆਂ ਟਿੱਪਣੀਆਂ ਲਈ ਧੰਨਵਾਦ! ਇਹ ਮਨਜ਼ੂਰੀ ਮਿਲਣ ਦੇ ਬਾਅਦ ਸਾਈਟ 'ਤੇ ਦਿਖਾਇਆ ਜਾਵੇਗਾ।"
   comment_error_msg          : "ਮੁਆਫ ਕਰਨਾ, ਤੁਹਾਡੀ ਅਧੀਨਗੀ ਵਿੱਚ ਕੋਈ ਗਲਤੀ ਹੋਈ ਸੀ ਕਿਰਪਾ ਕਰਕੇ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਸਾਰੇ ਲੋੜੀਂਦੇ ਖੇਤਰ ਪੂਰੇ ਹੋ ਗਏ ਹਨ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
   loading_label              : "ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ..."
-  search_placeholder_text    : "ਆਪਣੀ ਖੋਜ ਦੇ ਸ਼ਬਦ ਨੂੰ ਦਰਜ ਕਰੋ..."
+  search_placeholder_text    : "ਆਪਣੀ ਖੋਜ ਦੇ ਸ਼ਬਦ ਨੂੰ ਦਰਜ ਕਰੋ..."
   results_found              : "ਨਤੀਜਾ ਮਿਲਿਆ/ਮਿਲੇ"
   back_to_top                : "ਵਾਪਸ ਚੋਟੀ 'ਤੇ ਜਾਓ"
 pa-IN:
@@ -1291,14 +1291,56 @@ ml: &DEFAULT_ML
   comment_btn_submitted      : "രേഖപ്പെടുത്തി"
   comment_success_msg        : "നിങ്ങളുടെ അഭിപ്രായത്തിന് നന്ദി! ഇത് അംഗീകരിച്ചുകഴിഞ്ഞാൽ ഇത് സൈറ്റിൽ പ്രദർശിപ്പിക്കും."
   comment_error_msg          : "ക്ഷമിക്കണം, നിങ്ങളുടെ സമർപ്പണവുമായി ബന്ധപ്പെട്ട് ഒരു പിശകുണ്ടായിരുന്നു. ആവശ്യമായ എല്ലാ ഫീൽഡുകളും പൂർത്തിയായിട്ടുണ്ടെന്ന് ഉറപ്പുവരുത്തുക, വീണ്ടും ശ്രമിക്കുക."
-  loading_label              : "ലോഡിംഗ്..."
+  loading_label              : "ലോഡിംഗ്..."
   search_placeholder_text    : "നിങ്ങളുടെ തിരയൽ പദം നൽകുക..."
   results_found              : "ഫലം (കൾ) കണ്ടെത്തി"
   back_to_top                : "മുകളിലേയ്ക്ക്"
 ml-IN:
   <<: *DEFAULT_ML
 
-
+# Catalan
+# --------------
+ca-ES: &DEFAULT_CA_ES
+  page                       : "Pàgina"
+  pagination_previous        : "Anterior"
+  pagination_next            : "Següent"
+  breadcrumb_home_label      : "Inici"
+  breadcrumb_separator       : "/"
+  menu_label                 : "Desplega menú"
+  toc_label                  : "Contingut"
+  ext_link_label             : "Enllaç"
+  less_than                  : "menys de"
+  minute_read                : "minuts de lectura"
+  share_on_label             : "Compartir"
+  meta_label                 :
+  tags_label                 : "Etiquetes:"
+  categories_label           : "Categories:"
+  date_label                 : "Actualitzat:"
+  comments_label             : "Comentar"
+  comments_title             :
+  more_label                 : "Veure més"
+  related_label              : "També pot interessar-te:"
+  follow_label               : "Segueix-me:"
+  feed_label                 : "Feed"
+  powered_by                 : "Funciona gràcies a"
+  website_label              : "Lloc web"
+  email_label                : "Email"
+  recent_posts               : "Posts recents"
+  undefined_wpm              : "Paràmetre words_per_minute (Paraules per minut) no definida a _config.yml"
+  comment_form_info          : "El teu email no será publicat. S'han ressaltat els camps requerits"
+  comment_form_comment_label : "Comentari"
+  comment_form_md_info       : "Markdown soportat."
+  comment_form_name_label    : "Nom"
+  comment_form_email_label   : "Direcció d'email"
+  comment_form_website_label : "Lloc web (opcional)"
+  comment_btn_submit         : "Enviar Commentari"
+  comment_btn_submitted      : "Enviat"
+  comment_success_msg        : "Gracies pel teu comentari!, Serà visible un cop hagi estat aprovat"
+  comment_error_msg          : "Ho sentim, hi ha hagut un error al enviar el teu comentari. Si us plau, asegura't que tots els camps han estat omplerts i torna-ho a intentar"
+  loading_label              : "Carregant..."
+ca-ES:
+  <<: *DEFAULT_CA_ES
+  
 # Another locale
 # --------------
 #
