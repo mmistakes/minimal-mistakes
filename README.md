@@ -9,6 +9,7 @@ Minima 를 기반으로 커스터마이징 중인 Jekyll 블로그입니다.
 ```bash
 $> sudo apt-get install ruby-full build-essential zlib1g-dev
 $> gem install jekyll bundler
+$> bundle install
 ```
 
 ## 실행 방법
