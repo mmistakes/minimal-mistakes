@@ -11,11 +11,11 @@ author_profile: true
 ### 2019
 4 - Samantha Ing-Esteves*, Roozbeh Farhoodi, and Julie L. Lefebvre, "Representing neural reconstructions as cyclic graphs allows investigation of contact-dependent models of dendrite self-avoidance", Canadian Association for Neuroscience (CAN), Toronto Canada, May 2019
 
-3 - Roozbeh Farhoodi*, Khashayar Filom*, Ilenna Jones and Konrad Kording, "On Functions Implemented in Trees", The Science of Deep Learning, Washington D.C., March 2019
+3 - Roozbeh Farhoodi *, Khashayar Filom *, Ilenna Jones and Konrad Kording, "On Functions Implemented in Trees", The Science of Deep Learning, Washington D.C., March 2019
 
 2 - Samantha Ing-Esteves*, Roozbeh Farhoodi, and Julie L. Lefebvre, "4D analysis using cycling graph reconstructions to investigate dendrite self-recognition and self-avoidance", Computational and Systems Neuroscience (Cosyne), Cascais, Portugal, March 2019 
 
-1 - Joshua Glaser*, Ari Benjamin*, Roozbeh Farhoodi* and  Konrad Kording, "The Roles of Supervised Machine Learning in Systems Neuroscience", Progress in Neurobiology, 2019 ([pdf](https://arxiv.org/abs/1805.08239))
+1 - Joshua Glaser*, Ari Benjamin *, Roozbeh Farhoodi* and  Konrad Kording, "The Roles of Supervised Machine Learning in Systems Neuroscience", Progress in Neurobiology, 2019 ([pdf](https://arxiv.org/abs/1805.08239))
 
 ### 2018
 3 - Roozbeh Farhoodi*, Benjamin Lansdell*, Konrad P. Kording, “Quantifying the effect of staining methods on extracted neuron morphology”, Neuro Informatics (INCF), Montréal, Canada, August 2018
