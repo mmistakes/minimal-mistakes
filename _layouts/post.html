@@ -35,6 +35,10 @@ layout: post-nav
   <div class="cm-seperator"></div>
 </div>
 
+{%- if site.disqus.shortname -%}
+  {%- include disqus_comments.html -%}
+{%- endif -%}
+
 <!-- 작가의 다른 포스트를 추천 (필터 기준 tag, author, top 3) -->
 <div class="cm-top-padding"></div>
 

@@ -34,6 +34,8 @@ header_pages:
 show_excerpts: true
 google_analytics: UA-134340962-1
 permalink: /:year/:month/:day/:title:output_ext
+disqus:
+  shortname: code-machina
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
