@@ -9,7 +9,9 @@ author_profile: true
 ## Articles, Posters and talks
 
 ### 2019
-3 - Samantha Ing-Esteves* , Roozbeh Farhoodi, and Julie L. Lefebvre, "Representing neural reconstructions as cyclic graphs allows investigation of contact-dependent models of dendrite self-avoidance", Canadian Association for Neuroscience(CAN), Toronto Canada, May 2019
+4 - Roozbeh Farhoodi*, Khashayar Filom*, Ilenna Jones, Konrad Kording, "On Functions Implemented in Trees", The Science of Deep Learning, Washington D.C., March 2019
+
+3 - Samantha Ing-Esteves* , Roozbeh Farhoodi, and Julie L. Lefebvre, "Representing neural reconstructions as cyclic graphs allows investigation of contact-dependent models of dendrite self-avoidance", Canadian Association for Neuroscience (CAN), Toronto Canada, May 2019
 
 2 - Samantha Ing-Esteves* , Roozbeh Farhoodi, and Julie L. Lefebvre, "4D analysis using cycling graph reconstructions to investigate dendrite self-recognition and self-avoidance", Computational and Systems Neuroscience (Cosyne), Cascais, Portugal, March 2019 
 
