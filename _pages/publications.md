@@ -4,7 +4,7 @@ title: Publications
 author_profile: true
 ---
 
-[Google Scholar](https://scholar.google.com/citations?user=gAMVsrkAAAAJ&hl=en) and [CV](https://www.dropbox.com/s/90cng3ad0r3zf2p/Resume_Roozbeh_Farhoodi.pdf?dl=0).
+[Google Scholar](https://scholar.google.com/citations?user=gAMVsrkAAAAJ&hl=en) and [CV](https://www.dropbox.com/s/81ufjimbl0szmw3/Resume-Roozbeh-Farhoodi.pdf?dl=0).
 
 ## Articles, Posters and talks
 
