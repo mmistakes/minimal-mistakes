@@ -6,7 +6,7 @@ author_profile: true
 
 [Google Scholar](https://scholar.google.com/citations?user=gAMVsrkAAAAJ&hl=en) and [CV](https://www.dropbox.com/s/81ufjimbl0szmw3/Resume-Roozbeh-Farhoodi.pdf?dl=0).
 
-## Articles, Posters and talks
+## Articles, Posters and talks (in chronological order)
 
 ### 2019
 4 - Samantha Ing-Esteves* , Roozbeh Farhoodi, and Julie L. Lefebvre, "Representing neural reconstructions as cyclic graphs allows investigation of contact-dependent models of dendrite self-avoidance", Canadian Association for Neuroscience (CAN), Toronto, Canada.
