@@ -18,7 +18,7 @@ author_profile: true
 1 - Joshua Glaser* , Ari Benjamin* , Roozbeh Farhoodi* and  Konrad Kording, "The Roles of Supervised Machine Learning in Systems Neuroscience", Progress in Neurobiology, [paper](https://arxiv.org/abs/1805.08239)
 
 ### 2018
-3 - Roozbeh Farhoodi* , Benjamin Lansdell* , Konrad P. Kording, “Quantifying the effect of staining methods on extracted neuron morphology”, Neuro Informatics (INCF), [poster](https://arxiv.org/abs/1805.08239)
+3 - Roozbeh Farhoodi* , Benjamin Lansdell* , Konrad P. Kording, “Quantifying the effect of staining methods on extracted neuron morphology”, Neuro Informatics (INCF), [poster](https://www.dropbox.com/s/55qu402obqbsq1l/quantifying-staining-methods-on-morph.pdf?dl=0)
 
 2 - Roozbeh Farhoodi* , David Rolnick* and Konrad P. Kording, "Neuron dendrograms uncover asymmetrical motifs", Computational and Systems Neuroscience (Cosyne), Denver, USA, [poster](https://www.dropbox.com/s/i25rzq886rzbgzf/Asymmetric%20dendrite.pdf?dl=0)
 
