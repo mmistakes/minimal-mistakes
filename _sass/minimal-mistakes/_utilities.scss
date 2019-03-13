@@ -104,6 +104,23 @@ body:hover .visually-hidden button {
 }
 
 /*
+   Task lists
+   ========================================================================== */
+
+.task-list {
+  padding:0;
+
+  li {
+    list-style-type: none;
+  }
+
+  .task-list-item-checkbox {
+    margin-right: 0.5em;
+    opacity: 1;
+  }
+}
+
+/*
    Alignment
    ========================================================================== */
 

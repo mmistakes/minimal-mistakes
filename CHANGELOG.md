@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+- Add styling for [GFM task lists](https://help.github.com/en/articles/about-task-lists#creating-task-lists). [#2092](https://github.com/mmistakes/minimal-mistakes/issues/2092)
 - Update Google Universal Analytics to load async. [#2079](https://github.com/mmistakes/minimal-mistakes/pull/2079)
 - Remove Google+ social sharing button, comment provider, and author link configs from theme.
 - Add missing Chinese text strings. [#2072](https://github.com/mmistakes/minimal-mistakes/pull/2072)
