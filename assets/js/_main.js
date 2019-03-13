@@ -68,7 +68,8 @@ $(document).ready(function() {
   // Smooth scrolling
   var scroll = new SmoothScroll('a[href*="#"]', {
     offset: 20,
-    speed: 300
+    speed: 400,
+    speedAsDuration: true
   });
 
   // Gumshoe scroll spy init
