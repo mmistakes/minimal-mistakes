@@ -9,7 +9,7 @@ author_profile: true
 ## Articles, Posters and talks
 
 ### 2019
-4 - Samantha Ing-Esteves* , Roozbeh Farhoodi, and Julie L. Lefebvre, "Representing neural reconstructions as cyclic graphs allows investigation of contact-dependent models of dendrite self-avoidance", Canadian Association for Neuroscience (CAN), Toronto Canada
+4 - Samantha Ing-Esteves* , Roozbeh Farhoodi, and Julie L. Lefebvre, "Representing neural reconstructions as cyclic graphs allows investigation of contact-dependent models of dendrite self-avoidance", Canadian Association for Neuroscience (CAN), Toronto, Canada.
 
 3 - Roozbeh Farhoodi* , Khashayar Filom* , Ilenna Jones and Konrad Kording, "On Functions Implemented in Trees", The Science of Deep Learning, Washington D.C., [poster](https://www.dropbox.com/s/xa3q9ie8hae8gti/Tree_Function_Space_poster.pdf?dl=0)
 
@@ -27,12 +27,12 @@ author_profile: true
 ### 2017
 3 - Konrad P. Kording* , Ari S. Benjamin, Roozbeh Farhoodi and Joshua Glaser, "The Roles of Machine Learning in Biomedical Science", Frontiers of Engineering: Reports on Leading-Edge Engineering from the 2017, pp. 61-71 [paper](https://www.naefrontiers.org/File.aspx?id=185177)
 
-2 - Roozbeh Farhoodi,  "Classification and Generating of neuron Morphologies", Invited talk at Janelia Research Campus, Ashburn, USA
+2 - Roozbeh Farhoodi,  "Classification and Generating of neuron Morphologies", Invited talk at Janelia Research Campus, Ashburn, USA.
 
 1 - Roozbeh Farhoodi* , Pavan Ramkumar and Konrad P. Kording, "Deep learning approach towards generating neuronal morphology", Computational and Systems Neuroscience (Cosyne), Salt Lake City, USA, [poster](https://www.dropbox.com/s/5rvzlehf5q5hl8u/Deep%20learning.pdf?dl=0)
 
 ### 2016
-1 - Roozbeh Farhoodi* and Konrad P. Kording, "Electrical imaging from high density neural recordings", Society for Neuroscience (SfN), San Diego, USA
+1 - Roozbeh Farhoodi* and Konrad P. Kording, "Electrical imaging from high density neural recordings", Society for Neuroscience (SfN), San Diego, USA.
 
 ## In Farsi
 8 - Roozbeh Farhoodi, "Ten Simple Rules for Structuring Papers", Translated to Farsi from [here](https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1005619&type=printable), unpublished, 2018 ([pdf](https://www.dropbox.com/s/3s5ixt146v9lnoy/10%20simple%20rules%20for%20structuring%20paper.pdf?dl=0))
