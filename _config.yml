@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Roozbeh Farhoodi"
   avatar           : "/assets/images/bio-image.jpg"
-  bio              : "Postdoctoral researcher in computational neuroscience"
+  bio              : "Computational neuroscience" #"Postdoctoral researcher in computational neuroscience"
   location         : "Philadelphia, PA"
   #email            : "roozbehfarhoodi@gmail.com"
   links:
