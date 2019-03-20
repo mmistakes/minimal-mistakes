@@ -37,7 +37,8 @@
   }
 
   @include breakpoint($x-large) {
-    width: calc(#{$right-sidebar-width} - 1em);
+    width: calc(#{$right-sidebar-width} - 4em);
+    //width: calc(#{$right-sidebar-width} - 1em);
   }
 
   > * {
@@ -54,7 +55,13 @@
     font-family: $sans-serif-narrow;
   }
 
-  p,
+  p {
+    font-family: $sans-serif;
+    font-size: $type-size-7;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
   li {
     font-family: $sans-serif;
     font-size: $type-size-6;
