@@ -2,6 +2,7 @@
 permalink: /about/
 title: "About"
 excerpt: ""
+classes: wide
 ---
 
 <br>
