@@ -2,11 +2,11 @@
 permalink: /about/
 title: "About"
 excerpt: ""
-classes: wide
 ---
 
 <br>
-안녕하세요. 저는 최종명입니다. 현재 NCSOFT 에서 취약점 점검과 함께 점검에 필요한 도구들을 개발하고 있으며, 시스템 프로그래밍/운영체제/리버스 엔지니어링 및 취약점 분석에 기술적인 흥미를 갖고 있습니다. 가톨릭대학교에서 컴퓨터공학을 전공했으며, 연구 그룹 NULL@ROOT 에서 보안 및 개발 관련 연구를 진행하고 있습니다. 
+&nbsp;안녕하세요. 저는 최종명입니다. 현재 NCSOFT 에서 취약점 점검과 함께 점검에 필요한 도구들을 개발하고 있으며, 시스템 프로그래밍/운영체제/리버스 엔지니어링 및 취약점 분석에 흥미를 갖고 있습니다. 가톨릭대학교에서 컴퓨터공학을 전공했으며, 연구 그룹 NULL@ROOT 에서 보안 및 개발 관련 연구를 진행하고 있습니다. 
+{: style="color: gray; font-size: 0.8em; margin-left: 1em;"}
 
 <!--
 <i class="fa fa-camera-retro"></i> fa-camera-retro
