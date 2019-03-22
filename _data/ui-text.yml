@@ -141,7 +141,7 @@ fr: &DEFAULT_FR
   comment_error_msg          : "Désolé, une erreur est survenue lors de la soumission. Vérifiez que les champs obligatoires ont été remplis et réessayez."
   loading_label              : "Chargement..."
   search_placeholder_text    : "Entrez votre recherche..."
-  results_found              : "Aucun résultat trouvé"
+  results_found              : "Résultat(s) trouvé(s)"
   back_to_top                : "Retour en haut"
 fr-FR:
   <<: *DEFAULT_FR
