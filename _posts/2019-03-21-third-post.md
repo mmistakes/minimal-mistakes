@@ -1,9 +1,9 @@
 ---
 layout: single
-title:  "Markdown Showcase"
-date:   2019-03-21 21:00:00
-categories: sample
-tags: linux
+title:  "Markdown Blowcase"
+date:   2019-03-21 22:30:00
+categories: stuff
+tags: comments
 comments: true
 ---
 
