@@ -876,6 +876,9 @@ vi: &DEFAULT_VI
   comment_success_msg        : "Cảm ơn bạn đã bình luận! Bình luận sẽ xuất hiện sau khi được duyệt."
   comment_error_msg          : "Rất tiếc, có lỗi trong việc gửi bình luận. Hãy đảm bảo toàn bộ các phần bắt buộc đã được điền đầy đủ và thử lại."
   loading_label              : "Đang tải..."
+  search_placeholder_text    : "Nhập từ khóa cần tìm..."
+  results_found              : "Kết quả tìm được"
+  back_to_top                : "Lên đầu trang"
 vi-VN:
   <<: *DEFAULT_VI
 
