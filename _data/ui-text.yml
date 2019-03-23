@@ -245,23 +245,23 @@ pt-BR:
   breadcrumb_home_label      : "Home"
   breadcrumb_separator       : "/"
   menu_label                 :
-  search_label               :
+  search_label               : "Buscar"
   toc_label                  : "Nesta página"
   ext_link_label             : "Link direto"
   less_than                  : "menos que"
   minute_read                : "minuto(s) de leitura"
-  share_on_label             : "Compartilhe em"
+  share_on_label             : "Compartilhe: "
   meta_label                 :
   tags_label                 : "Tags:"
   categories_label           : "Categorias:"
   date_label                 : "Atualizado em:"
   comments_label             : "Deixe um comentário"
-  comments_title             :
+  comments_title             : "Comentários"
   more_label                 : "Aprenda mais"
-  related_label              : "Talvez você goste também"
-  follow_label               : "Acompanhe em"
+  related_label              : "Talvez você também goste"
+  follow_label               : "Acompanhe no"
   feed_label                 : "Feed"
-  powered_by                 : "Feito com"
+  powered_by                 : "Desenvolvido com"
   website_label              : "Site"
   email_label                : "Email"
   recent_posts               : "Postagens recentes"
@@ -277,6 +277,8 @@ pt-BR:
   comment_success_msg        : "Obrigado pelo seu comentário! Ele aparecerá no site assim que for aprovado."
   comment_error_msg          : "Desculpe, ocorreu um erro no envio. Por favor verifique se todos os campos obrigatórios foram preenchidos e tente novamente."
   loading_label              : "Carregando..."
+  back_to_top                : "Voltar para o topo"
+  search_placeholder_text    : "Pesquisar..."
 
 # Italian
 # -------
