@@ -4,6 +4,6 @@ title: About
 permalink: /about/
 ---
 
-####Ray Lyon
+#### Ray Lyon
 
-Writer, entrepreneur, world changer.
+I'm hoping to learn as much as possible about Linux systems administration and documenet it along the way. 
