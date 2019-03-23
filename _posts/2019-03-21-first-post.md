@@ -3,7 +3,7 @@ layout: single
 title:  "The Linux Admin Project"
 date:   2019-03-22 22:45:00
 categories: [Linux Administration]
-tags: linux
+tags: linux hardware personal homelab
 comments: true
 ---
 
