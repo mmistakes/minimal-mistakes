@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "활자 중독의 데이터 "
+title                    : "활자 중독의 데이터 분석가"
 title_separator          : "-"
 name                     : "Creed of Maestro"
 description              : "활자 중독의 데이터 분석가"
