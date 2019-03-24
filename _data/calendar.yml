@@ -52,6 +52,23 @@
   },
   {
     "image_path": null,
+    "alt": "Mitgliederversammlung Förderverein",
+    "title": "Mitgliederversammlung Förderverein",
+    "excerpt": "Mensa",
+    "url": "https://www.google.com/calendar/event?eid=MDFvdTZzY2cyNzY0OG1jZTJodTNqZTB2OGUgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-04-09T19:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-04-09T21:00:00+02:00"
+    },
+    "created": "2019-03-24T10:28:10.000Z",
+    "updated": "2019-03-24T10:28:10.787Z"
+  },
+  {
+    "image_path": null,
     "alt": "Fußballturnier der 4. - 6. Klassen",
     "title": "Fußballturnier der 4. - 6. Klassen",
     "excerpt": null,
@@ -83,22 +100,5 @@
     },
     "created": "2019-03-10T16:09:41.000Z",
     "updated": "2019-03-10T16:09:42.017Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Osterferien",
-    "title": "Osterferien",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=Nm5yazh0b3JmbzgxNmkzcmRpMHZlN3RpcGQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-04-15",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-04-27",
-      "date_time": null
-    },
-    "created": "2019-01-05T13:39:23.000Z",
-    "updated": "2019-01-05T13:40:12.645Z"
   }
 ]
