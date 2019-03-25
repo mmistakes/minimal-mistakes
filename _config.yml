@@ -31,7 +31,8 @@ words_per_minute         : 200
 comments:
   provider               : "disqus" # fals"disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : "springinthefall-github-io"
+    shortname            : "XXX
+    "
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
