@@ -10,21 +10,21 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme                  : "minimal-mistakes-jekyll"
+theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "ko"
+locale                   : "ko-KR"
 title                    : "계획충의 2019年"
 title_separator          : "-"
 name                     : "Wandering Rookie"
 description              : "코딩 새싹 lv.1"
-url                      : "https://springinthefall.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+url                      : "https://springinthefall.github.io/"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "springinthefall.springinthefall.github.io/" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/logo1.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -107,14 +107,14 @@ analytics:
 # Site Author
 author:
   name             : "Bomi Kang"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/pro-photo.jpg"
   bio              : "1일1코딩 하겠습니다..."
   location         : "Busan, Republic of korea"
   email            : "oblivionb@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      "oblivionb@naver.com" # url: mailto:your.name@email.com
+      url: mailto:oblivionb@naver.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -126,10 +126,10 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      "https://github.com/SpringintheFall" # url: "https://github.com/"
+      url: "https://github.com/SpringintheFall"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      "https://instagram.com/osakalog" # url: "https://instagram.com/"
+      url: "https://instagram.com/osakalog"
 
 # Site Footer
 footer:
