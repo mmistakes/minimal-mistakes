@@ -23,7 +23,7 @@ description              : "코딩 새싹 lv.1"
 url                      : "https://springinthefall.github.io/"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "springinthefall.springinthefall.github.io/" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : path of fallback teaser image, e.g. "/assets/images/pro1.png"
 logo                     : "/assets/images/logo1.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -92,7 +92,7 @@ og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
+  type                   : Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
 
@@ -106,7 +106,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Bomi Kang"
+  name             : "Wandering Rookie"
   avatar           : "/assets/images/pro-photo.jpg"
   bio              : "1일1코딩 하겠습니다..."
   location         : "Busan, Republic of korea"
