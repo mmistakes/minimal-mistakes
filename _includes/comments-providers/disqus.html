@@ -1,3 +1,4 @@
+{% if site.comments.disqus.shortname %}
   <script>
     var disqus_config = function () {
       this.page.url = "{{ page.url | absolute_url }}";  // Replace PAGE_URL with your page's canonical URL variable
