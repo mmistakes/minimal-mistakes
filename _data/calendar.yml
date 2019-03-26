@@ -18,23 +18,6 @@
   },
   {
     "image_path": null,
-    "alt": "Elternabend für alle Klassen",
-    "title": "Elternabend für alle Klassen",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NWQydmFtNXU3MWhhOHQwZjdzcmNkaG82a28gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-03-26T17:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-03-26T18:30:00+01:00"
-    },
-    "created": "2019-01-28T11:33:38.000Z",
-    "updated": "2019-03-10T09:12:01.528Z"
-  },
-  {
-    "image_path": null,
     "alt": "3. GEV",
     "title": "3. GEV",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2019-03-10T16:09:41.000Z",
     "updated": "2019-03-10T16:09:42.017Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Osterferien",
+    "title": "Osterferien",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=Nm5yazh0b3JmbzgxNmkzcmRpMHZlN3RpcGQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-04-15",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-04-27",
+      "date_time": null
+    },
+    "created": "2019-01-05T13:39:23.000Z",
+    "updated": "2019-01-05T13:40:12.645Z"
   }
 ]
