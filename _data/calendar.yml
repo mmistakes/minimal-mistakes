@@ -18,23 +18,6 @@
   },
   {
     "image_path": null,
-    "alt": "3. GEV",
-    "title": "3. GEV",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M3Mxc2Y2bjMwMGNqaXU1NGY1aTN1bG1xbmcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-03-27T18:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-03-27T19:00:00+01:00"
-    },
-    "created": "2019-01-28T11:34:11.000Z",
-    "updated": "2019-01-28T11:34:11.911Z"
-  },
-  {
-    "image_path": null,
     "alt": "Mitgliederversammlung Förderverein",
     "title": "Mitgliederversammlung Förderverein",
     "excerpt": "Mensa",
@@ -100,5 +83,22 @@
     },
     "created": "2019-01-05T13:39:23.000Z",
     "updated": "2019-01-05T13:40:12.645Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Elternaktionstag ",
+    "title": "Elternaktionstag ",
+    "excerpt": "Erwachsene und Kinder machen das Schulhaus und Schulgelände schöner",
+    "url": "https://www.google.com/calendar/event?eid=MG5tOTJqY2ZvM2gyYWhhNDN1MmlxdmJqMGUgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-05-04T10:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-05-04T13:00:00+02:00"
+    },
+    "created": "2019-01-28T11:31:27.000Z",
+    "updated": "2019-03-24T10:34:50.788Z"
   }
 ]
