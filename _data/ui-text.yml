@@ -1301,7 +1301,52 @@ ml: &DEFAULT_ML
 ml-IN:
   <<: *DEFAULT_ML
 
-
+# Hindi
+# -----------------
+hi: &DEFAULT_HI
+  page                       : "पृष्ठ"
+  pagination_previous        : "पिछला"
+  pagination_next            : "अगला"
+  breadcrumb_home_label      : "घर"
+  breadcrumb_separator       : "/"
+  menu_label                 : "टॉगल मेनू"
+  toc_label                  : "इस पृष्ठ पर"
+  ext_link_label             : "सीधा संपर्क"
+  less_than                  : "से कम"
+  minute_read                : "मिनट में पढ़ सकते हैं"
+  share_on_label             : "साझा करें"
+  meta_label                 :
+  tags_label                 : "अंकितक:"
+  categories_label           : "श्रेणियाँ:"
+  date_label                 : "अपडेट किया गया:"
+  comments_label             : "एक टिप्पणी छोड़ें"
+  comments_title             : "टिप्पणियाँ"
+  more_label                 : "और अधिक जानें"
+  related_label              : "आप इसका भी आनंद ले सकते हैं"
+  follow_label               : "अनुसरण करे:"
+  feed_label                 : "फ़ीड"
+  powered_by                 : "द्वारा संचालित"
+  website_label              : "वेबसाइट"
+  email_label                : "ईमेल"
+  recent_posts               : "हाल के पोस्ट"
+  undefined_wpm              : "_config.yml पर अपरिभाषित पैरामीटर words_per_minute"
+  comment_form_info          : "आपका ईमेल पता प्रकाशित नहीं किया जाएगा। अपेक्षित स्थानों को रेखांकित कर दिया गया है"
+  comment_form_comment_label : "टिप्पणी"
+  comment_form_md_info       : "मार्कडाउन की अनुमति है।"
+  comment_form_name_label    : "नाम"
+  comment_form_email_label   : "ईमेल पता"
+  comment_form_website_label : "वेबसाइट (ऐच्छिक)"
+  comment_btn_submit         : "टिप्पणी भेजें"
+  comment_btn_submitted      : "प्रस्तुत"
+  comment_success_msg        : "आपके कमेंट के लिए धन्यवाद! इसे स्वीकृति मिलने के बाद साइट पर दिखाया जाएगा।"
+  comment_error_msg          : "क्षमा करें, आपके सबमिशन के साथ एक त्रुटि हुई थी। कृपया सुनिश्चित करें कि सभी आवश्यक फ़ील्ड पूरा हो गए हैं और पुनः प्रयास करें।"
+  loading_label              : "लोड हो रहा है..."
+  search_placeholder_text    : "अपना खोज शब्द दर्ज करें..."
+  results_found              : "परिणाम मिला/मिले"
+  back_to_top                : "शीर्ष पर वापस"
+hi-IN:
+  <<: *DEFAULT_HI
+  
 # Another locale
 # --------------
 #
