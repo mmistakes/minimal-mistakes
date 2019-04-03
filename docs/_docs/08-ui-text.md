@@ -30,6 +30,7 @@ The English[^yaml-anchors] main keys in [`_data/ui-text.yml`](https://github.com
 - Slovak
 - Spanish (Español)
 - Swedish
+- Thai
 - Turkish (Türkçe)
 - Vietnamese
 
