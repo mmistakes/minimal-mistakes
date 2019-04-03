@@ -13,6 +13,7 @@
 
 ### Bug Fixes
 
+- Fix table of contents active link styling.
 - Add missing Hindi localized UI text strings. [#2105](https://github.com/mmistakes/minimal-mistakes/pull/2105) [#2106](https://github.com/mmistakes/minimal-mistakes/pull/2106)
 - Fix Brazilian Portuguese text strings. [#2098](https://github.com/mmistakes/minimal-mistakes/pull/2098)
 - Fix typo in French `results_found` text string. [#2096](https://github.com/mmistakes/minimal-mistakes/pull/2096)
