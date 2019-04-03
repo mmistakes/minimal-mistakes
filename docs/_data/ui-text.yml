@@ -141,7 +141,7 @@ fr: &DEFAULT_FR
   comment_error_msg          : "Désolé, une erreur est survenue lors de la soumission. Vérifiez que les champs obligatoires ont été remplis et réessayez."
   loading_label              : "Chargement..."
   search_placeholder_text    : "Entrez votre recherche..."
-  results_found              : "Aucun résultat trouvé"
+  results_found              : "Résultat(s) trouvé(s)"
   back_to_top                : "Retour en haut"
 fr-FR:
   <<: *DEFAULT_FR
@@ -245,23 +245,23 @@ pt-BR:
   breadcrumb_home_label      : "Home"
   breadcrumb_separator       : "/"
   menu_label                 :
-  search_label               :
+  search_label               : "Buscar"
   toc_label                  : "Nesta página"
   ext_link_label             : "Link direto"
   less_than                  : "menos que"
   minute_read                : "minuto(s) de leitura"
-  share_on_label             : "Compartilhe em"
+  share_on_label             : "Compartilhe: "
   meta_label                 :
   tags_label                 : "Tags:"
   categories_label           : "Categorias:"
   date_label                 : "Atualizado em:"
   comments_label             : "Deixe um comentário"
-  comments_title             :
+  comments_title             : "Comentários"
   more_label                 : "Aprenda mais"
-  related_label              : "Talvez você goste também"
-  follow_label               : "Acompanhe em"
+  related_label              : "Talvez você também goste"
+  follow_label               : "Acompanhe no"
   feed_label                 : "Feed"
-  powered_by                 : "Feito com"
+  powered_by                 : "Desenvolvido com"
   website_label              : "Site"
   email_label                : "Email"
   recent_posts               : "Postagens recentes"
@@ -277,6 +277,8 @@ pt-BR:
   comment_success_msg        : "Obrigado pelo seu comentário! Ele aparecerá no site assim que for aprovado."
   comment_error_msg          : "Desculpe, ocorreu um erro no envio. Por favor verifique se todos os campos obrigatórios foram preenchidos e tente novamente."
   loading_label              : "Carregando..."
+  back_to_top                : "Voltar para o topo"
+  search_placeholder_text    : "Pesquisar..."
 
 # Italian
 # -------
@@ -366,6 +368,9 @@ zh: &DEFAULT_ZH_HANS
   comment_success_msg        : "感谢您的评论！被批准后它会立即在此站点展示。"
   comment_error_msg          : "很抱歉，您的提交存在错误。请确保所有必填字段都已填写正确，然后再试一次。"
   loading_label              : "正在加载..."
+  search_placeholder_text    : "输入您要搜索的关键词..."
+  results_found              : "条记录匹配"
+  back_to_top                : "返回顶部"
 zh-CN:
   <<: *DEFAULT_ZH_HANS
 zh-SG:
@@ -873,6 +878,9 @@ vi: &DEFAULT_VI
   comment_success_msg        : "Cảm ơn bạn đã bình luận! Bình luận sẽ xuất hiện sau khi được duyệt."
   comment_error_msg          : "Rất tiếc, có lỗi trong việc gửi bình luận. Hãy đảm bảo toàn bộ các phần bắt buộc đã được điền đầy đủ và thử lại."
   loading_label              : "Đang tải..."
+  search_placeholder_text    : "Nhập từ khóa cần tìm..."
+  results_found              : "Kết quả tìm được"
+  back_to_top                : "Lên đầu trang"
 vi-VN:
   <<: *DEFAULT_VI
 
@@ -1295,6 +1303,53 @@ ml: &DEFAULT_ML
 ml-IN:
   <<: *DEFAULT_ML
 
+# Thailand
+# --------------
+th: &DEFAULT_TH
+  page                       : "หน้า"
+  pagination_previous        : "ก่อนหน้า"
+  pagination_next            : "ถัดไป"
+  breadcrumb_home_label      : "หน้าแรก"
+  breadcrumb_separator       : "/"
+  menu_label                 : "พับเมนู"
+  search_label               : "พับการค้นหา"
+  toc_label                  : "บนหน้านี้"
+  ext_link_label             : "ลิงก์โดยตรง"
+  less_than                  : "น้อยกว่า"
+  minute_read                : "นาที ในการอ่าน"
+  share_on_label             : "แชร์ไปที่"
+  meta_label                 :
+  tags_label                 : "แท็ก:"
+  categories_label           : "หมวดหมู่:"
+  date_label                 : "อัพเดตล่าสุด:"
+  comments_label             : "แสดงความคิดเห็น"
+  comments_title             : "ความคิดเห็น"
+  more_label                 : "อ่านต่อ"
+  related_label              : "คุณอาจจะชอบสิ่งนี้"
+  follow_label               : "ติดตาม:"
+  feed_label                 : "ฟืดข่าว"
+  powered_by                 : "ขับเคลื่อนโดย"
+  website_label              : "เว็บไซต์"
+  email_label                : "อีเมล"
+  recent_posts               : "โพสล่าสุด"
+  undefined_wpm              : "ไม่สามารถระบุพารามิเตอร์ words_per_minute ได้ใน _config.yml"
+  comment_form_info          : "อีเมลของคุณไม่สามารถโพสสาธารณะได้ กรุณากรอกช่องที่ระบุด้วยเครื่องหมายดอกจันไว้"
+  comment_form_comment_label : "แสดงความคิดเห็น"
+  comment_form_md_info       : "มาร์กดาวน์ได้รับการสนับสนุน"
+  comment_form_name_label    : "ชื่อ"
+  comment_form_email_label   : "ที่อยู่อีเมล"
+  comment_form_website_label : "เว็บไซต์ (ตัวเลือก)"
+  comment_btn_submit         : "ส่งความคิดเห็น"
+  comment_btn_submitted      : "ส่งเรียบร้อยแล้ว"
+  comment_success_msg        : "ขอบคุณสำหรับการแสดงความคิดเห็น! ความคิดเห็นจะได้รับการแสดงหลังจากได้รับการยืนยัน"
+  comment_error_msg          : "ขออภัย, มีบางอย่างผิดพลาดจากการส่งแบบฟอร์ม กรุณาตรวจทานทุกช่อง และลองส่งใหม่อีกครั้ง"
+  loading_label              : "กำลังโหลด..."
+  search_placeholder_text    : "ใส่คำค้นหาของคุณ..."
+  results_found              : "ผลการค้นหา พบ"
+  back_to_top                : "กลับด้านบน"
+th-TH:
+  <<: *DEFAULT_TH
+
 # Hindi
 # -----------------
 hi: &DEFAULT_HI
@@ -1340,7 +1395,7 @@ hi: &DEFAULT_HI
   back_to_top                : "शीर्ष पर वापस"
 hi-IN:
   <<: *DEFAULT_HI
-  
+
 # Another locale
 # --------------
 #
