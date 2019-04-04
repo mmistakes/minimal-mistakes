@@ -1,12 +1,10 @@
 # main links
 main:
- # - title: "Quick-Start Guide"
- #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "About"
-    url: https://mmistakes.github.io/bisunny/about/
-  - title: "Archive"
-    url: /year-archive/
+  - title: "About" # 네비게이션 바에 표시 되는 이름
+    url: "/about/" # 클릭시 이동할 URL
+  - title: "Category"
+    url: /categories/
   # - title: "Sample Collections"
   #   url: /collection-archive/
-  - title: "Sitemap"
-    url: /sitemap/
+# - title: "Sitemap"
+ #   url: /sitemap/
