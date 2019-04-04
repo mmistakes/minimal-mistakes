@@ -21,7 +21,7 @@ title_separator          : "-"
 name                     : "bisunny's BLOG"
 description              : "Today I Learned in my blog"
 url                      : "https://sunnykim91.github.io" # the base hostname & protocol for your site e.g. 
-baseurl                  :  "/blog" # the subpath of your site, e.g. 
+baseurl                  :  "/bisunny" # the subpath of your site, e.g. 
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
