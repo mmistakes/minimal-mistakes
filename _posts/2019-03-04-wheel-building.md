@@ -9,6 +9,8 @@ categories:
   - Sport
 tags:
   - Sport
+  - Mécanique
+  - Cyclisme
 ---
 
 - [Caractéristiques](#caracteristiques)
@@ -70,7 +72,6 @@ sur 2 livres Roger Musson et Jobst ?. Que je vous conseille de lire. Ce sont de 
 ouvrages qui permettent de comprendre comment fonctionne une roue et tous les éléments. Et explique
 comment les monter. Le but de cet article n'est pas d'expliquer tout ça, l'idée c'est d'expliquer
 mes choix pour arriver à finaliser ma roue.
-
 Et surtout un bon petit jeu de mots "ne pas réinventé la roue"
 {: .text-justify}
 
@@ -125,6 +126,8 @@ Peut pas avoir 30 paires. Mais 2 ou 3 paires on peut couvrir un grand nombre de 
 
 # Composants
 ## Jante
+
+![moyeu](/assets/images/wheel-building/jante1.jpg){: .align-center :height="320px" width="320px"}
 
 Caractéristiques:
 - Matériau: carbone , T800 3K (TODO)
@@ -297,6 +300,7 @@ au moment de la mise sous tension. La longueur des rayons va dépendre du moyeu,
 du nombre de rayons et la manière dont on veut lacer les rayons. En gros tout ce qui a été choisi
 précédement va rentrer en paramètre pour définir la longueur des rayons. Vous l'aurez bien compris, 
 c'est pourquoi on ne peut pas acheter les rayons avant d'avoir choisi tous les éléments précédent.
+{: .text-justify}
 
 Pour ce faire, il va falloir récolter un certain nombre de paramètres afin de pouvoir déterminer la bonne
 longueur. Certaines mesures peuvent être récoltées auprès des fabriquants mais il y a souvent des erreurs 
@@ -323,7 +327,7 @@ tendu. En dessous, j'ai simplifié les 2 schemas en 2 triangles HLR et LSF avec 
 que l'on va pouvoir substituer.
 
 
-![moyeu](/assets/images/wheel-building/erd_demonstration4.jpeg){:.align-center :height="480px" width="480px"}
+![moyeu](/assets/images/wheel-building/erd_demonstration4.jpg){:.align-center :height="480px" width="480px"}
 
 Triangle HLR
 - H = La distance entre le centre du moyeu et le trou où va se loger le rayon
@@ -891,8 +895,8 @@ les rayons au moment du laçage, on le verra à l'étape suivante. La technique 
 du logo du moyeu et compté 3 trous vers la gauche on le verra ensuite pourquoi 3. Mais simplement lors du laçage
 avec un croisements par 2, ça va tomber pile poil en face la valve.
 
-![moyeu](/assets/images/wheel-building/lacage_step10.jpg){:height="320px" width="320px"}
-![moyeu](/assets/images/wheel-building/lacage_step11.jpg){:height="320px" width="320px"}
+![moyeu](/assets/images/wheel-building/lacage_step10.jpg){:height="240px" width="240px"}
+![moyeu](/assets/images/wheel-building/lacage_step11.jpg){:height="240px" width="240px"}
 
 -------
 ### Etape 2: 
@@ -957,28 +961,95 @@ roue complètement lacé de chaque côté.
     
 ## Mise sous tension et dévoilage
 
-La roue est prête pour être mise sous tension, je vais la posée sur le centreur de 
+La roue est prête pour être dévoilé et être mise sous tension. J'installe la roue sur le centreur de 
+roue et c'est partie. Pour cette partie, il faut encore une fois prendre son temps car je n'ai aucune expérience
+dans ce domaine contrairement à un professionnel qui peu faire ça très vite. Il s'agit d'un coup de main à prendre
+à force de le faire. J'ai du recommencer plusieurs fois avant d'arriver au résultat final, mais on apprend de ses
+erreurs comme on dit. Donc j'ai mis plusieurs heures pour y arriver mais ça en valait le coup.
+{: .text-justify}
 
 ![moyeu](/assets/images/wheel-building/lacage_step17.jpg){: .align-center :height="320px" width="320px"}
 
+### Etape 1
 
-1) j'ai commencé par mettre les écrous au même niveau
-2) Ensuite j'ai appliqué petit à petit un serrage
+J'ai tout d'abord serrer tous les rayons au même niveau, j'ai pris comme repère le filetage du rayons. Donc j'ai 
+visser chaque rayon jusqu'à que le filetage ne soit plus visible.
+{: .text-justify}
+
+### Etape 2
+
+A l'aide de la jauge de centrage je vérifie l'état de mon alignement. Pour l'instant il est complètement faux ce qui
+normal. Mais on constate bien qu'il va ramener le moyeu au centre de la jante. Pour cela il va falloir plus visser
+les rayons d'un côté. Donc pour faire simple, si je visse les rayons côté cassette cela va ramener la jante vers la 
+droite (Quand on sert les rayons il faut bien comprendre que c'est la jante qui bouge et pas le moyeu) et inversement
+si je sers ce de gauche. Donc selon l'état de l'alignement il faut jouer sur les rayons de gauche et droite. Donc
+je sers de 2 tours de tournevis sur chaque rayon à droite et 1 tour pour les rayons côté gauche. Il faut savoir
+que plus on va avancer dans la mise sous tension plus il faudra limiter le nombre de tour jusqu'à faire des quarts 
+de tour pour les derniers adjustements. Si on ne fait pas progressivement, il sera impossible de dévoiler la roue
+dans les étapes suivantes.
+{: .text-justify}
+
+### Etape 3
+
+J'ai serré mes rayons des 2 côtés de manière équilibré afin d'arriver à un alignement un peu près correct, j'ai 2mm
+d'erreur ce qui est normal à cette étape. Mais il est pas la peine de continuer si l'erreur est plus grande car plus
+les rayons seront sous tension plus il sera difficile de corriger une erreur d'alignement. J'ai donc vérifié 
+l'alignement fréquememnt tout au long de la mise sous tension. On constate bien l'alignement à obtenir dans le schema
+ci-dessous.
+{: .text-justify}
+
+![moyeu](/assets/images/wheel-building/alignement1.jpg){: .align-center :height="320px" width="320px"}
+
+Voici quelques liens intéressants:
+
+[Jauge d'alignement](https://www.youtube.com/watch?v=Vnkqy2nnsrY)
+
+### Etape 4
+
+La roue à maintenant un alignement correct, je vais pouvoir continuer la mise sous tension. Je vais dans cette étape
+dévoilé la roue. Donc avec le centreur c'est assez simple mais il faut prendre son temps. J'ai utilisé du ruban 
+adéhsif pour mettre des repères sur les rayons qui posent problèmes. Ensuite, comme je l'ai dit précédement si je veux
+ramener ma jante à droite, je serre les rayons qui sont rattachés à la partie droite du moyeu et inversement pour 
+l'autre côté. Ce qui veut dire aussi qu'il est possible à cette étape de devoir déserrer un peu certain rayon. 
+J'effectue des quarts de tour et je regarde le résultat et j'itère jusqu'à obtenir une roue non voilée. On peu sentir
+si des rayons sont moins tendus que d'autres il faut essayer d'arriver à avoir une tension uniforme, on peut le faire
+facilement au touché, juste pressant sur les rayons entres eux.
+{: .text-justify}
+
+[Dévoilé une roue](https://www.youtube.com/watch?v=gJgH63gQmrE)
+
+### Etape 5
+
+La roue est dévoilée et alignée, il faut maintenant finalisé la mise sous tension. Je fais des quarts de tours sur tous
+les rayons tout en vérifiant de garder l'alignement et de ne pas voilée la roue. Je sens que ma roue commence à être
+bien, rien qu'au touché on sent qu'ils sont bons. Il est normal que les rayons côté droit soit plus tendu que ce de
+gauche de part la géométrie du moyeu. Il est surtout important que la tension côté cassette soit bonnes sur tous
+les rayons car c'est de ce côté que les forces vont être le plus sollicitées. J'utilise enfin un tensionmètre 
+pour vérifier que j'ai une tension équivalent pour tous les rayons de chaque côté. Pour le niveau de tension il 
+y a plusieurs école, les gens qui utilisent juste le touché ou le son quand on pince les rayons et d'autres à la valeur
+de la tension. J'avoue que la méthode au touché suffit car il faut savoir que des rayons trop tendu n'apporteront pas
+plus de rigidité et au contraire fatigué le rayon plus rapidement. Evidement un rayon pas assez tendu aura aussi des 
+conséquences sur la longétivité des rayons et de résistance au poids du bonhomme et aux contraintes  de la route. Donc
+il faut trouver le bon compromis, moi j'ai fait au touché puis vérifier au tensionmètre pour voir ce que ça valait.
+Mais je n'ai pas mis exactement la tension indiqué pour mon poids. 
+{: .text-justify}
+
 
 ## Assemblage
 
 La roue nue est prête, il faut maintenant possible d'assembler les éléments pour qu'elle puisse
 intérargir avec la route et l'attacher au cadre du vélo. Je ne vais pas détailler ce que j'ai fait
 car ce serait réinventer la "roue", voici des videos Youtube qui correspondent à ce que j'ai fait.
+{: .text-justify}
 
 ### Mise en place du prolongateur de valve.
 
 [Prolongateur de valve](https://www.youtube.com/watch?v=EbA5ZBZa5IQ)
 
 
-![moyeu](/assets/images/wheel-building/prolongateur_valve_miche.jpg){:.align-center :height="240px" width="240px"} 
-![moyeu](/assets/images/wheel-building/prolongateur1.jpg){: .align-center :height="320px" width="320px"}
-![moyeu](/assets/images/wheel-building/prolongateur2.jpg){: .align-center :height="320px" width="320px"}
+![moyeu](/assets/images/wheel-building/prolongateur_valve_miche.jpg){:height="240px" width="240px"} 
+![moyeu](/assets/images/wheel-building/prolongateur1.jpg){:height="240px" width="240px"}
+![moyeu](/assets/images/wheel-building/prolongateur2.jpg){:height="240px" width="240px"}
 
 
 - Une petite clé est souvent livré avec les prolongateurs de valve afin d'enleve l'obu facilement
@@ -1001,10 +1072,9 @@ afin que la colle adhère plus facilement.
 
 ### Cassette
 
-[Installation d'un cassette](https://www.youtube.com/watch?v=9KAaP7pbFV0)
+[Installation d'une cassette](https://www.youtube.com/watch?v=9KAaP7pbFV0)
 
 ![moyeu](/assets/images/wheel-building/cassette1.jpg){: .align-center :height="320px" width="320px"}
-
 
 - Je profite du changement de cassette pour bien la nettoyer et dégraisser
 {: .notice--primary}
@@ -1012,24 +1082,48 @@ afin que la colle adhère plus facilement.
 
 ## Mise sous pression
 
-Pourquoi ? La pression et si importante pour l’adhérence au sol….
+Il est temps de confler le boyau, je mets 9-10Bars en général. Tout dépend de la limite indiqué par le revendeur
+et ce qui est recommender par la jante. Mais plus on pourra mettre de pression, plus le boyau aura moins d'adhérence
+avec le sol donc moins de frottement et donc plus de vitesse pour le même effort fourni. Le seul compromis c'est que
+plus on a de pression plus on perd on confort car le moindre choc est plus répercuté jusqu'au cycliste. Avec moins de
+pression les chocs sont plus absorbés par le boyau. Encore une fois un compromis à faire.
+{: .text-justify}
+
 
 ## Attache rapide
+
+Pour les attaches rapide, j'en ai pas acheté de nouveaux, j'utilise les meême pour toutes mes roues c'est pas 
+contraignant à interchanger. Il est tout de même important d'avoir une bonne paire d'attache rapide surtout en terme
+de légèreté car il est facile d'alourdir la roue en prenant du bas de gamme, ce serait dommage de perdre les 
+grammes gagnés sur le moyeu et la jante...
+{: .text-justify}
+
 ## Patin de freins
 
-Special pour jante carbone sur boyau
-
-Alors depuis que je roule en boyau effectivement on a un peu moins de freinage 
+Etant donné que sur une jante à boyau le freinage va se faire directement sur le boyau contraiement sur des jantes
+à pneu où un cercle en alu est rajouté. Il faut donc des pâtins de freins spéciaux, moi j'utilise des SwissStop Flash
+Pro qui fonctionne sur tout type de jante ce qui est pratique quand je mets mes roues à pneu. 
 
 ## Premier test et ajustements
 
+Etant donné que j'ai opté pour une roue de largeur 25mm, il faut que j'écarte un peu mon étrier de frein afin que ma
+roue puisse passer. Mon étrier est compatible avec des jantes jusqu'à 28mm donc pas de souci mais ça se vérifie avant
+d'acheter. C'est assez facile avec une clé allen, c'est vite régler. J'installe la roue sans problème et voilà le
+résultat en image ci-dessous.
+{: .text-justify}
+
+{% include video id="k5iI5SE_gyE" provider="youtube" %}
+
+Le vélo est prêt pour le test sur route, c'est parti ! la preuve en images !
+
+{% include video id="rDqBviw5A_M" provider="youtube" %}
 
 
 # Récaptitulatif des coûts 
 
 Une roue arrière coûte plus cher, plus de rayons, moyeu plus cher, plus de rayons et une cassette.
 
-Roue nue
+### Roue nue
 
 | Description                                 | Poids    | Quantité  | Prix unit. | Prix Total  | Poids Total |
 |:-------------------------------------------:|:--------:|:---------:|:----------:|:-----------:|:-----------:|
@@ -1039,13 +1133,16 @@ Roue nue
 | Ecrous Sapim Double Square Rouge            |  0.4g    |   24      |  0.30      |   7.2       |    9.6g     |
 | Total                                       |          |           |            |   223.65    |    860g     |
 
-Accessoires:
+### Accessoires
 
+| Description                                 | Poids    | Quantité  | Prix unit. | Prix Total  | Poids Total |
+|:-------------------------------------------:|:--------:|:---------:|:----------:|:-----------:|:-----------:|
 | Boyau Vittoria CX 25c 320TPI                | 250g      |  1        |  34.99     |   34.99     |   250g     |
 | Prolongateur Miche 70mm rouge (vendu par 2) | 10g       |  1        |  16.99     |   16.99     |   10g      |
 | Attache rapide Mavic Arrière Axe 9mm 130mm  | 50g       |  1        |  25.00     |   25.00     |   50g      |
 | Cassette 11s Shimano                        | 228g      |  1        |  59.99     |   59.99     |   228g     |
-| Total                                       |           |           |            |    136.97   |   538g `   |
+| Patins de freins Swiss Stop flash Pro       |   -       |  2        |  14.99     |   14.99     |   -        | 
+| Total                                       |           |           |            |   151.96    |   538g     |
 
 # Conclusion
 
@@ -1054,21 +1151,21 @@ l'expérience. Pour ma part, je suis très fier du résultat et je projette de m
 montage (Moyeu straight pull) et pourquoi pas monter son vélo soi-même. 
 {: .text-justify}
 
+![moyeu](/assets/images/wheel-building/result1.jpg){:height="320px" width="320px"} 
+
+![moyeu](/assets/images/wheel-building/result2.jpg){:height="320px" width="320px"} 
+
+![moyeu](/assets/images/wheel-building/result3.jpg){:height="320px" width="320px"} 
+
+![moyeu](/assets/images/wheel-building/result4.jpg){:height="320px" width="320px"} 
 
 
 # Références
 
-[Professionnal Guide to Wheel Building](https://www.wheelpro.co.uk/wheelbuilding/book.php) - Roger Musson
-[Bicycle Wheel](http://caravan.hobby.ru/materiel/Bicycle_Wheel_-_Jobst_Brandt.pdf) - Jobst Brandt
-[Le montage de roues](http://mgagnon.net/velo/roue_montage.fr.php) - Sheldon Brown et John Allen
+- [Professionnal Guide to Wheel Building](https://www.wheelpro.co.uk/wheelbuilding/book.php) - Roger Musson
+- [Bicycle Wheel](http://caravan.hobby.ru/materiel/Bicycle_Wheel_-_Jobst_Brandt.pdf) - Jobst Brandt
+- [Le montage de roues](http://mgagnon.net/velo/roue_montage.fr.php) - Sheldon Brown et John Allen
 
-
-
-
-![moyeu](/assets/images/wheel-building/compas_a_pointe.jpeg){:height="120px" width="120px"} 
-![moyeu](/assets/images/wheel-building/compas_a_pointe.jpeg){:height="120px" width="120px"} 
-![moyeu](/assets/images/wheel-building/equerre.jpeg){:height="120px" width="120px"} 
-![moyeu](/assets/images/wheel-building/galliper.jpeg){:height="120px" width="120px"} 
 
 
 
