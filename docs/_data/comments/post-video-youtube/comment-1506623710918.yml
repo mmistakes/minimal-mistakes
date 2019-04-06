@@ -1,0 +1,7 @@
+_id: c23d9d40-a47b-11e7-adb3-e700074bdbd8
+message: "@siva - I suspect if you open your web browser's web development tools and take a look at the console you'll see some script errors.\r\n\r\njQuery and the Magnific Popup scripts are loaded at the bottom of every page right before the [closing `</body>` tag](https://github.com/mmistakes/minimal-mistakes/blob/master/_layouts/default.html#L31). You're trying to configure MP in your post which is before the core scripts have a chance to load.\r\n\r\nYou'll need to add your custom scripts after those. Couple of ways you can do that depending on how you're using the theme.\r\n\r\n1. Edit `_layouts/default.html` and place after the scripts.html include.\r\n2. Edit [`_includes/scripts.html`](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/scripts.html) and place after all scripts.\r\n3. Use the new [`footer_scripts` config](https://mmistakes.github.io/minimal-mistakes/docs/javascript/) to add your own custom script."
+name: Michael Rose
+email: 1ce71bc10b86565464b612093d89707e
+url: 'https://mademistakes.com'
+hidden: ''
+date: '2017-09-28T18:35:10.917Z'

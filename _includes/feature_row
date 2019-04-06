@@ -1,13 +1,7 @@
 {% if include.id %}
-  {% assign feature_row = page.[include.id] %}
+  {% assign feature_row = page[include.id] %}
 {% else %}
   {% assign feature_row = page.feature_row %}
-{% endif %}
-
-{% if page.author and site.data.authors[page.author] %}
-  {% assign author = site.data.authors[page.author] %}
-{% else %}
-  {% assign author = site.author %}
 {% endif %}
 
 <div class="feature__wrapper">
@@ -17,7 +11,7 @@
     {% if f.url contains "://" %}
       {% capture f_url %}{{ f.url }}{% endcapture %}
     {% else %}
-      {% capture f_url %}{{ f.url | absolute_url }}{% endcapture %}
+      {% capture f_url %}{{ f.url | relative_url }}{% endcapture %}
     {% endif %}
 
     <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
@@ -28,26 +22,20 @@
               {% if f.image_path contains "://" %}
                 "{{ f.image_path }}"
               {% else %}
-                "{{ f.image_path | absolute_url }}"
+                "{{ f.image_path | relative_url }}"
               {% endif %}
             alt="{% if f.alt %}{{ f.alt }}{% endif %}">
+            {% if f.image_caption %}
+              <span class="archive__item-caption">{{ f.image_caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+            {% endif %}
           </div>
         {% endif %}
 
         <div class="archive__item-body">
           {% if f.title %}
-            <h2 style="text-decoration: none !important;" class="archive__item-title">{{ f.title }}</h2>
+            <h2 class="archive__item-title">{{ f.title }}</h2>
           {% endif %}
 
-          {% if author.avatar and f.show_avatar == true %}
-              <div class="author__avatar">
-                {% if author.avatar contains "://" %}
-                  <img src="{{ author.avatar }}" alt="{{ author.name }}" itemprop="image">
-                {% else %}
-                  <img src="{{ author.avatar | absolute_url }}" class="author__avatar" style="display: block;margin: 0 auto;" alt="{{ author.name }}" itemprop="image">
-                {% endif %}
-              </div>
-          {% endif %}
           {% if f.excerpt %}
             <div class="archive__item-excerpt">
               {{ f.excerpt | markdownify }}
