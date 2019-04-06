@@ -135,6 +135,10 @@ Don't forget to add this whitelisted IP address to your iptables rules:
 ```bash
 $ sudo iptables -I FORWARD <position num> -s 10.8.0.50 -d 192.168.0.0/24 -j ACCEPT
 ```
+**Note:** It's important that the whitelisted IPs come before DROP line we added earlier. 
+You can see the order by typing "iptables -L --line-numbers".
+Make sure you choose a 'position num' that comes before the the DROP line.
+{: .notice--info}
 
 And following the instructions above, you can persist these firewall changes.
 
