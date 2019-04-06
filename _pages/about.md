@@ -54,8 +54,8 @@ classes: wide
 
 - Webkit 에서의 익스플로잇 공격 및 분석 방법 연구
 - 번역 자료
-    - Attacking Javascript Engine [링크](https://null2root.github.io/blog/2019/04/06/Attacking-JavaScript-Engines-kor.html)  
-    - Pwn2Own 2017 CachedCall [링크](https://null2root.github.io/blog/2019/04/06/Pwn2Own-2017-cachedcall-kor.html)  
+    - Attacking Javascript Engine [\[Link\]](https://null2root.github.io/blog/2019/04/06/Attacking-JavaScript-Engines-kor.html)  
+    - Pwn2Own 2017 CachedCall [\[Link\]](https://null2root.github.io/blog/2019/04/06/Pwn2Own-2017-cachedcall-kor.html)  
 - 문서
     - 삽질의 기록
 {: style="color: gray; font-size: 0.8em; margin: 1em; "}
