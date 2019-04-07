@@ -112,9 +112,9 @@ author:
   location         : "Nashville, TN"
   email            :
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/adamnagel"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/adamnagel"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/adamnagel"
@@ -125,9 +125,9 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/adamnagel"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/adamnagel"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/adamnagel"
@@ -275,7 +275,6 @@ defaults:
       comments: # true
       share: true
       related: true
-
   # _pages
   - scope:
       path: ""
