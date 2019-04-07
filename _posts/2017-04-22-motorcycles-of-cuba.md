@@ -1,6 +1,6 @@
 ---
 header:
-  overlay_image: https://cdn-images-1.medium.com/max/2600/1*oDLgNJGstRw-f17RpWX9FQ.jpeg
+  image: https://cdn-images-1.medium.com/max/2600/1*oDLgNJGstRw-f17RpWX9FQ.jpeg
 ---
 
 Motorized 2-wheel transportation is pervasive in Cuba. They’re cheap, quick, and easy to maneuver around the crumbling roads. While the rumbling, diesel-retrofitted automobiles of the 50’s and 60’s are the sexy pinup models of Cuban transportation, it’s clear that motorcycles and scooters are the pragmatic choice.
