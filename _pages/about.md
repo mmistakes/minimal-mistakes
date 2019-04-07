@@ -6,6 +6,6 @@ toc: false
 
 This is a test in the `_pages` section
 
-YearZero.us is named for one of my favorite albums by Nine Inch Nails.
+`yearzero.us` is named for one of my favorite albums by Nine Inch Nails.
 
 ![Year Zero](https://upload.wikimedia.org/wikipedia/en/0/02/Nine_Inch_Nails_-_Year_Zero.png)
