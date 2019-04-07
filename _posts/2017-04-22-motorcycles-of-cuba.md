@@ -1,6 +1,7 @@
 ---
 header:
   image: https://cdn-images-1.medium.com/max/2600/1*oDLgNJGstRw-f17RpWX9FQ.jpeg
+  caption: "A 250cc MZ motorcycle on the streets of Havana. Photo credit: Adam Nagel"
 
 gallery:
 - url: /assets/images/2017-04-22-motorcycles-of-cuba/2017-03-MotorcyclesOfCuba-5432.jpg
