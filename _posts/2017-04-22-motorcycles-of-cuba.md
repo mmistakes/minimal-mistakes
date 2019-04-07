@@ -10,6 +10,9 @@ Motorized 2-wheel transportation is pervasive in Cuba. They’re cheap, quick, a
 	<figcaption>A Suzuki GN125H in Havana. Photo Credit: Adam Nagel</figcaption>
 </figure>
 
+![full](/assets/images/2017-04-22-motorcycles-of-cuba/2017-03-MotorcyclesOfCuba-5519.jpg)
+{: .full}
+
 Among motorcycles, 125cc four-strokes are most common overall. 250cc MZs are also common, while the 350cc Jawa is more rare. The occasional 100cc two-stroke chainsaw whizzes by. Out in the countryside, an Africa Twin rumbled by as part of a touring group and looked like a monster among the smaller Cuban bikes.
 
 When it comes to new bikes, 125cc Suzukis are the clear favorite. The Chinese Ava Jaguar plug-in electric motorcycle is a surprisingly popular new motorcycle.
