@@ -136,10 +136,12 @@ footer:
       url: "https://www.instagram.com/adam.nagel/"
 
 
-# Reading Files
+# Reading
+include: ["_pages"]
 include:
   - .htaccess
   - _pages
+  - _posts
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
