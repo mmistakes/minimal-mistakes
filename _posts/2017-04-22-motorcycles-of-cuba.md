@@ -1,14 +1,6 @@
 ---
-title: "Motorcycles of Cuba"
-layout: splash
 header:
-  overlay_color: "#000"
-  overlay_filter: "0.5"
-  overlay_image: https://cdn-images-1.medium.com/max/2600/1*oDLgNJGstRw-f17RpWX9FQ.jpeg
-  caption: "Photo credit: Adam Nagel"
-excerpt: "Bacon ipsum dolor sit amet salami ham hock ham, hamburger corned beef short ribs kielbasa biltong t-bone drumstick tri-tip tail sirloin pork chop."
-intro:
-  - excerpt: 'Nullam suscipit et nam, tellus velit pellentesque at malesuada, enim eaque. Quis nulla, netus tempor in diam gravida tincidunt, *proin faucibus* voluptate felis id sollicitudin. Centered with `type="center"`'
+  image: https://cdn-images-1.medium.com/max/2600/1*oDLgNJGstRw-f17RpWX9FQ.jpeg
 ---
 
 Motorized 2-wheel transportation is pervasive in Cuba. They’re cheap, quick, and easy to maneuver around the crumbling roads. While the rumbling, diesel-retrofitted automobiles of the 50’s and 60’s are the sexy pinup models of Cuban transportation, it’s clear that motorcycles and scooters are the pragmatic choice.
