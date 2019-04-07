@@ -82,7 +82,5 @@ Among the Suzukis, MZs, Jawas, and Avas are the occasional older brand, such as 
 {: .full}
 As with everything in Cuba, the motorcycles and their locations are obscenely photogenic.
 
-{% include gallery caption="350cc Jawas in “Red Style” and “Black Style” in Havana. Photo Credit: Adam Nagel" %}
-{: .full}
-{% include gallery id="gallery2" caption="A 250cc MZ and a 100cc Suzuki 2-stroke in Havana. Photo Credit: Adam Nagel" %}
-{: .full}
+{% include gallery caption="350cc Jawas in “Red Style” and “Black Style” in Havana. Photo Credit: Adam Nagel" class="full" %}
+{% include gallery id="gallery2" caption="A 250cc MZ and a 100cc Suzuki 2-stroke in Havana. Photo Credit: Adam Nagel" class="full" %}
