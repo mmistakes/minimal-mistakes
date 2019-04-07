@@ -6,11 +6,21 @@ gallery:
 - url: /assets/images/2017-04-22-motorcycles-of-cuba/2017-03-MotorcyclesOfCuba-5432.jpg
   image_path: /assets/images/2017-04-22-motorcycles-of-cuba/2017-03-MotorcyclesOfCuba-5432.jpg
   alt: "Red Style 350cc Jawa in Havana. Photo Credit: Adam Nagel"
-  title: "Image 1 title caption"
+  title: "Red Style 350cc Jawa in Havana. Photo Credit: Adam Nagel"
 - url: /assets/images/2017-04-22-motorcycles-of-cuba/2017-03-MotorcyclesOfCuba-4818.jpg
   image_path: /assets/images/2017-04-22-motorcycles-of-cuba/2017-03-MotorcyclesOfCuba-4818.jpg
   alt: "Black Style 350cc Jawa in Havana. Photo Credit: Adam Nagel"
   title: "Black Style 350cc Jawa in Havana. Photo Credit: Adam Nagel"
+
+gallery2:
+- url: /assets/images/2017-04-22-motorcycles-of-cuba/2017-03-MotorcyclesOfCuba-5494.jpg
+  image_path: /assets/images/2017-04-22-motorcycles-of-cuba/2017-03-MotorcyclesOfCuba-5494.jpg
+  alt: "A 250cc MZ in Havana. Photo Credit: Adam Nagel"
+  title: "A 250cc MZ in Havana. Photo Credit: Adam Nagel"
+- url: /assets/images/2017-04-22-motorcycles-of-cuba/2017-03-MotorcyclesOfCuba-5494.jpg
+  image_path: /assets/images/2017-04-22-motorcycles-of-cuba/2017-03-MotorcyclesOfCuba-5494.jpg
+  alt: "A 100cc Suzuki 2-stroke in Havana. Photo Credit: Adam Nagel"
+  title: "A 100cc Suzuki 2-stroke in Havana. Photo Credit: Adam Nagel"
 ---
 
 Motorized 2-wheel transportation is pervasive in Cuba. They’re cheap, quick, and easy to maneuver around the crumbling roads. While the rumbling, diesel-retrofitted automobiles of the 50’s and 60’s are the sexy pinup models of Cuban transportation, it’s clear that motorcycles and scooters are the pragmatic choice.
@@ -60,3 +70,7 @@ Among the Suzukis, MZs, Jawas, and Avas are the occasional older brand, such as 
 As with everything in Cuba, the motorcycles and their locations are obscenely photogenic.
 
 {% include gallery caption="350cc Jawas in “Red Style” and “Black Style” in Havana. Photo Credit: Adam Nagel" %}
+{: .full}
+
+{% include gallery id="gallery2" caption="A 250cc MZ and a 100cc Suzuki 2-stroke in Havana. Photo Credit: Adam Nagel" %}
+{: .full}
