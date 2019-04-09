@@ -105,7 +105,7 @@ classes: wide
 
 <i class="far fa-caret-square-right" style="margin-top: 1em"></i>
 **Pwning & Reverse Engineering**{: style="margin-left: 1em;"}, '@ 남부발전'
-*Aug. 2016*{: style="color: gray; font-size: 0.6em; margin: 1em;"}
+*Jul. 2018*{: style="color: gray; font-size: 0.6em; margin: 1em;"}
 
 - 취약점 공격 기법 및 리버스 엔지니어링 강의
 {: style="color: gray; font-size: 0.8em; margin: 1em; "}
