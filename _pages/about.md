@@ -100,7 +100,7 @@ classes: wide
 
 - IoT 펌웨어 분석 및 공격 기법에 대한 정리
 - 실습 자료 공유 
-- 강의 자료 [Link]()
+- 강의 자료 [Link](https://www.slideshare.net/secret/i14Ri4tgmn4XZR)
 {: style="color: gray; font-size: 0.8em; margin: 1em; "}
 
 <i class="far fa-caret-square-right" style="margin-top: 1em"></i>
@@ -116,7 +116,6 @@ classes: wide
 
 - AES 암호화의 원리와 응용
 - CTF 문제 풀이
-- 강의 자료 [Link]()
 {: style="color: gray; font-size: 0.8em; margin: 1em; "}
 
 <i class="far fa-caret-square-right" style="margin-top: 1em"></i>
@@ -124,7 +123,6 @@ classes: wide
 *Jul. 2016 - Sep. 2016*{: style="color: gray; font-size: 0.6em; margin: 1em;"}
 
 - 리버스 엔지니어링 스킬 전반에 관한 강의 
-- 강의 자료 [Link]()
 {: style="color: gray; font-size: 0.8em; margin: 1em; "}
 
 <i class="far fa-caret-square-right" style="margin-top: 1em"></i>
@@ -133,7 +131,6 @@ classes: wide
 
 - Concolic Execution 에 대한 소개
 - Triton 의 내부 구조, 사용 방법 및 응용
-- 강의 자료 [Link]()
 {: style="color: gray; font-size: 0.8em; margin: 1em; "}
 
 <i class="far fa-caret-square-right" style="margin-top: 1em"></i>
