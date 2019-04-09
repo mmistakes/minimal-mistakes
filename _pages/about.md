@@ -54,10 +54,11 @@ classes: wide
 
 - Webkit 에서의 익스플로잇 공격 및 분석 방법 연구
 - 번역 자료
-    - Attacking Javascript Engine [\[Link\]](https://null2root.github.io/blog/2019/04/06/Attacking-JavaScript-Engines-kor.html)  
-    - Pwn2Own 2017 CachedCall [\[Link\]](https://null2root.github.io/blog/2019/04/06/Pwn2Own-2017-cachedcall-kor.html)  
+    - Attacking Javascript Engine [Link](https://null2root.github.io/blog/2019/04/06/Attacking-JavaScript-Engines-kor.html)  
+    - Pwn2Own 2017 CachedCall [Link](https://null2root.github.io/blog/2019/04/06/Pwn2Own-2017-cachedcall-kor.html)  
 - 문서
-    - 삽질의 기록
+    - CVE-2016-4622 삽질의 기록 [Link](https://null2root.github.io/blog/2019/04/09/CVE-2016-4622-digging.html)  
+    - Butterfree Writeup - 객체의 Butterfly/Vector 구조 및 공격 [Link](https://null2root.github.io/blog/2019/04/09/Butterfree-Codegate-19.html)
 {: style="color: gray; font-size: 0.8em; margin: 1em; "}
 
 <i class="far fa-caret-square-right" style="margin-top: 1em"></i>
