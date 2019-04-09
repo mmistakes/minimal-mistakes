@@ -2,7 +2,7 @@
 title: "JavaScript"
 permalink: /docs/javascript/
 excerpt: "Instructions for customizing and building the theme's scripts."
-last_modified_at: 2018-01-03T19:12:35-05:00
+last_modified_at: 2019-04-03T15:25:36-04:00
 ---
 
 The theme's `assets/js/main.min.js` script is built from several vendor, jQuery plugins, and other scripts found in [`assets/js/`](https://github.com/mmistakes/minimal-mistakes/tree/master/assets/js).
@@ -39,6 +39,8 @@ head_scripts:
   - /assets/js/your-custom-head-script.js
 footer_scripts:
   - /assets/js/your-custom-footer-script.js
+after_footer_scripts:
+  - /assets/js/custom-script-loads-after-footer.js
 ```
 
 **Note:** If you assign `footer_scripts` the theme's `/assets/js/main.min.js` file will be deactivated. This script includes jQuery and various other plugins that you'll need to find replacements for and include separately.
