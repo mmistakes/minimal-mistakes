@@ -1,6 +1,7 @@
 ---
 title: "Ma première roue artisanale"
 related: true
+toc: true
 header:
   overlay_image: /assets/images/wheel-building/cover.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
@@ -12,41 +13,6 @@ tags:
   - Mécanique
   - Cyclisme
 ---
-
-- [Caractéristiques](#caracteristiques)
-
-- [Composants](#composants)
-    - [Jante](#jante)
-    - [Moyeu](#moyeu)
-    - [Rayons](#rayons)
-    - [Ecrous](#ecrous)
-    - [Boyau](#boyau)
-    - [Attache rapide](#attache-rapide)
-    - [Cassette](#cassette)
-    - [Patin de freins](#patin-de-freins)
-- [Conception](#conception)
-    - [Longueur des rayons](#longueur-des-rayons)
-- [Montage](#montage)
-    - [Outils](#outils)
-    - [Laçage](#lacage)
-    - [Mise sous tension](#mise-sous-tension)
-    - [Boyau](#boyau)
-    - [Prolongateur de valve](#prolongateur-de-valve)
-    - [Cassette](#cassette)
-    - [Mise sous pression](#mise-sous-pression)
-    - [Attache rapide](#attache-rapide)
-    - [Patin de freins](#patin-de-freins)
-    - [Premier test et ajustements](#premier-test-ajustements)
-- [Récapitulatif des coûts](#recapitulatif-des-coups)
-- [Conclusion](#conclusion)
-- [Références](#références)
-
-Quoi ?
-
-Pourquoi ?
-
-Comment ?
-
 
 Tout au long de cet article, j’explique les choix que j’ai fait pour mon usage personnel. 
 Je veux réaliser une roue aérodynamique et rigide pour rouler sur le plat (ou peu vallonnée)
@@ -125,138 +91,206 @@ Peut pas avoir 30 paires. Mais 2 ou 3 paires on peut couvrir un grand nombre de 
 {: .text-justify}
 
 # Composants
+
+Je vais détailler les différents composants que j'ai choisi selon mon besoin.
+{: .text-justify}
+
 ## Jante
+
+### La hauteur
+
+Etant donné que je recherche une roue aérodynamique spécifiquement pour rouler sur du plat. Je vais
+prendre une hauteur de jante haute 88mm. Le top serait une roue pleine mais elle me servirait que très rarement
+alors qu'une 88mm sera tout de même assez dynamique pour passer des portions vallonnées. Pour choisir il faut
+faire les meilleures compromis par rapport à son besoin, son terrain de jeu et les conditions environementales.
+Donc une 88mm me paraît un bon compromis pour être assez dynamique pour passer sur des parties vallonnées et
+de pouvoir en profiter régulièrement. Une roue pleine dans le Lauragais, je pourrais la sortir 2 fois par an.
+{: .text-justify}
+
+### La largeur
+
+Des études ont montrée que l'évacution de l'air sur une jante plus large à l'arrière favoriserait l'aérodynamisme. 
+De plus, qui dit plus large dit plus de confort donc je vais essayer d'opter pour une largeur de 25mm qui est un peu
+à la mode.
+{: .text-justify}
+
+### Nombre de trous
+
+Moins il y a de rayons, plus la roue sera aériodynamique. Mais cela fragilise la roue forcément même si on est léger.
+Il faut penser au freinage et au sprint à plein puissance. Mettre 20 rayons à l'avant ne pose pas de problème mais
+pour une roue arrière il est plus judicieux de partir sur 24. Sur les moyeux dit Straight Pull (avec des rayons droit)
+on peut mettre 20 à l'arrière car les rayons droit sont moins fragile. Je pense que je testerai ce type de montage
+pour ma prochaine paire. Enfin mettre plus de 24 aurait l'effet inverse. Le bon compromis serait de mettre une roue
+à bâton (à la Jalabert). Un peu plus passe partout qu'une roue pleine. J'ai opté pour un montage classique avec des 
+trous symétriques. Il existe des jantes asymétrique (TODO mettre un lien).
+{: .text-justify}
+
+### Matériau
+
+Pas de surprise, je pars sur de la fibre de carbone type 3K T800 comme la majorité des roues carbones du marché.
+Légère et rigide
+{: .text-justify}
+
+### Boyau
+
+Je choisi une jante spéciale boyau, je détaillerai mon choix pneu/boyau dans un chapitre dédié plus loin.
+{: .text-justify}
 
 ![moyeu](/assets/images/wheel-building/jante1.jpg){: .align-center :height="320px" width="320px"}
 
 Caractéristiques:
-- Matériau: carbone , T800 3K (TODO)
-- Boyau ou Pneu
-    - Hauteur
-- Nombre de trous
-- Largeur
+- Diamètre: 700C
+- Matériau: carbone , T800 3K
+- Type: Boyau
+- Hauteur: 88mm
+- Nombre de trous: 24
+- Largeur: 25mm
+- Finition: Matte UD
+- Poids: 520g +/-5g
 
-Ce que j’ai choisi…
+J'ai trouvé un fournisseur parmi tant d'autres sur AliExpress, il y a du choix. Après il faut trouver un 
+fournisseur sérieux. Une bonne évaluation, un bon nombre de vente, un descriptif détaillé des frais de livraison, de
+la garantie. J'ai pu échanger directement par message très rapidement, le temps de livraison correct, je suis
+très satisfait, il faudra voir à long terme sur l'utilisation. Mais à la livraison, j'étais bleuffé par la qualité
+visuelle.
+{: .text-justify}
 
-![moyeu](/assets/images/wheel-building/cover.jpg){:height="120px" width="120px"} 
-![moyeu](/assets/images/wheel-building/rim2.jpeg){:height="120px" width="120px"} 
-![moyeu](/assets/images/wheel-building/rim3.jpeg){:height="120px" width="120px"} 
+![moyeu](/assets/images/wheel-building/rim2.jpeg){:height="320px" width="320px"} 
+![moyeu](/assets/images/wheel-building/rim3.jpeg){:height="320px" width="320px"} 
+
+- Prix: 67.36€, dont 36.51€ de frais de port, soit un total 103.87€
 
 ## Moyeu
 
-Caractéristiques:
-
-- Matériau : Alu
-- Taille de la flange (rayons plus cours donc plus de rigidité)
-- Le Nombre de trou 
-- Le poids
-- Les roulements (entretien, qualité…)
-
-Moyeu compatible avec son groupe (11 vitesses corps Shimano)
-
-Ce que j’ai choisi par rapport à mon choix de jante.
-
-Entraxe Ecartement de 130mm spécificité du cadre.
-
-j'ai dans un premier regardé qu'est-ce qu'il faisait c'est un bon moyeu ou pas. Sur le marché
-il y a tous les prix donc le plus cher est-ce vraiment le mieux ? La question est-ce qu'il 
-correspond à mon besoin.
+Le moyeu est sans doute le composant le plus important d'une roue. Il est donc très important de choisir
+un moyeu de bonne qualité, s'il faut mettre de l'argent c'est bien sur le moyeu. Mais il existe plein de bon
+moyeu mais qui seront utile selon le contexte. Un moyeu léger permettra un meilleur dynamisme et un moyeu plus
+lourd plus d'inertie. La hauteur des flasques ou flanges sont importantes, plus elles sont larges, plus les rayons seront
+courts plus la roue sera rigide et inversement. Plus d'informations [ici](https://www.roue-carbone.com/guide-achat/le-moyeu-de-roue-de-velo).
+ Enfin il y a pleins d'autres paramètres à prendre en compte:
 {: .text-justify}
 
-Poids
-Billes céramique
-Entretien
-Matériau
-Hauteur de flange
+- La largeur du cadre sur lequel va s'installer le moyeu (130mm dans mon cas, ce qui est courant sur les vélos de route)
+- La matière qui va forcément impacter sur le poids (Alu ou Carbone)
+- Le type de roulements c'est ce qui souvent fait monter les prix. De bons roulements qui permettent le moins
+de frottements est donc moins de perte. Il existe des roulements en céramiques très couteux. Il faut aussi
+regarder la qualité des joints, si vous avez des bons roulements mais dès que vous sortez sous la pluie de saleté
+s'encrasse dedans, et bien on perd tout son efficacité. Et enfin, il faut regarder l'entretien s'il  y en a.
+- Il faut regarder le type de cassette Shimano, Compagnolo et le nombre de vitesses 
+- Le nombre de trous de chaque côté, selon le montage que l'on veut faire.
+- Le type de freinage à disque ou v-brake
+- Classique ou Straight Pull. Les moyeus Straight Pull sont  à la mode car ils pronent une meilleur longétivité
+en utilisant des rayons droit et par le fait on peut mettre un peu moins de rayons donc meilleur aérodynamisme
+(Je testerai sur une prochaine paire, apparamment ça n'a pas encore été prouvé donc laissons le temps et les retour
+ d'expériences plus que le marketing).
+ 
+Pour ma première roue, je n'ai pas voulu directement prendre le plus haut gamme (ça monte à 500 euros). Je me suis
+intéressé sur le marché meilleur qualité/prix. La marque américaine Novatec est un bon compromis car il est possible
+de ce l'est procuré directement en Chine. Il me faut un moyeu:
 
-![moyeu](/assets/images/wheel-building/hub_novatec.jpeg){:height="120px" width="120px"} 
-![moyeu](/assets/images/wheel-building/hub_novatec2.jpeg){:height="120px" width="120px"} 
-![moyeu](/assets/images/wheel-building/hub_novatec3.jpeg){:height="120px" width="120px"} 
-![moyeu](/assets/images/wheel-building/moyeu_ar_1.jpeg){:height="120px" width="120px"} 
+- Entraxe de 130mm
+- Compatible Shimano 11v
+- Frein v-brake
+- Rayons J-bend (coudé)
+- Je souhaite faire une roue 24 trous avec 2 croisements de chaque côté. Il me faut donc un moyeu avec 12 trous de 
+chaque côté.
+- En Alu et léger.
+- Une hauteur de flasque (flange) haute mais pas trop.
+- Roulement avec peu d'entretien et bien éprouvé.
 
-Il existe des moyeu straight pull un peu à la mode sois disant plus 
-moins de 
+J'ai choisi le moyeu [Novatec F482SB](http://www.novatecusa.net/product/f482sb-sl-11s/) 
+qui répond à mes spécifications ci-dessus.
+
+![moyeu](/assets/images/wheel-building/hub_novatec2.jpeg){:height="200px" width="200px"} 
+![moyeu](/assets/images/wheel-building/hub_novatec3.jpeg){:height="200px" width="200px"} 
+![moyeu](/assets/images/wheel-building/moyeu_ar_1.jpeg){:height="200px" width="200px"} 
+
+Prix: 59.98€ frais de port compris
 
 ## Rayons
 
-Etant que je recherche une roue aérodynamique, je me suis direct tourné vers des rayons plat.
+Etant donné que je veux réaliser une roue aérodynamique, je me suis direct tourné vers des rayons plat.
+Il y a 2 grandes marques qui ressortent dans le domaine Sapim et Dt-Swiss. J'ai choisi les Sapim CX-Ray,
+qui sont léger, très fins et résistants (acier) [Sapim CX-Ray](https://www.sapim.be/spokes/aero/cx-ray).
 
-Pourquoi les Sapim: poids, materiau, tension N/mm
+Attention ne surtout pas acheter les rayons maintenant. Un chapitre sera dédié pour cela plus loin.
+{: .notice--danger}
 
-J’ai fait un choix de rayons mais attention ne surtout pas acheter les rayons maintenant
-Il faut d’abord calculer leurs longueurs exactes.
-{: .text-justify}
+![moyeu](/assets/images/wheel-building/rayon2.jpeg){: .align-center :height="320px" width="320px"} 
 
-Caractéristiques:
+- Il est possible de choisir la couleur
+- De plus, j'ai pris des rayons type J-Bend (coudé), il existe des rayons droits qui sont destinés
+à des moyeus Straight Pull. Les rayons de ce type se fatigue moins car ils n'ont pas de coude.
+Je pense que je testerai sur une autre paire.
+{: .notice--primary}
 
-- Matière
-- Poids
-- Diamètre
-- Forme (plat)
-- Couleur
-
-Ce que j’ai choisi
-
-
-![moyeu](/assets/images/wheel-building/rayon1.jpeg){:height="120px" width="120px"} 
-![moyeu](/assets/images/wheel-building/rayon2.jpeg){:height="120px" width="120px"} 
+Prix: 2.20€ unitaire
 
 ## Ecrous
 
-Caractéristiques:
-
-- Matière
-- Longueur 12-14-16mm
-- Type de tête (quel type de tournevis)
-- Couleur
-
-Ce que j’ai choisi
-
-
 Concernant les écrous on peut prendre ce que l'on veut, chaque marque propose
-des longueurs différentes ou des têtes différents. Mon choix c'est tourner comme
-pour les rayons chez Sapim et notamment double square. Alors tout simplement
-que les double square on une tête carré ce qui permet d'utiliser cet outil (image).
-Etant donné la hauteur de la jante 88mm ce genre d'outil permet facilement de visser
-on le verra lors du montage.
+des longueurs différentes ou des têtes différentes. Mon choix c'est tourner comme
+pour les rayons, chez Sapim [Double Square](https://www.sapim.be/nipples/design/double-square).
+Alors tout simplement que les Double Square ont une tête carrées ce qui permet d'utiliser cet outil (voir image 
+ci-dessous). Etant donné la hauteur de la jante 88mm ce type d'outil permet facilement de visser
+on le verra lors du montage. Leur mélange Alu et Laiton permet d'être à la fois léger et résistant.
 {: .text-justify}
 
-![moyeu](/assets/images/wheel-building/nipple_black.jpeg){:height="120px" width="120px"} 
-![moyeu](/assets/images/wheel-building/nipple_red.JPG){:height="120px" width="120px"} 
+![moyeu](/assets/images/wheel-building/nipples_screwdriver.jpeg){:.align-center :height="240px" width="240px"} 
+
+
+- Il faut bien regarder la matière, des écrous 100% Alu seront plus fragile. 
+- Attention au type de tête, certaines marques comme dt-swiss on des écrous qui obligent d'utiliser leur outils
+spéciaux.
+- Il faut regarder la taille, il existe des 12-14-16mm, il faut surtout avoir le détail du filetage afin
+on le verra par la suite choisir la bonne longueur des rayons.
+{: .notice--danger}
+
+![moyeu](/assets/images/wheel-building/nipple_red.JPG){: .align-center :height="320px" width="320px"} 
+
+Il existe différente couleurs, j'ai choisi d'alterner des rouges et noires, juste pour le "style"
+{: .notice--primary}
+
+Prix: 0.40€ unitaire
 
 ## Pneu ou Boyau
 
-Pneu
-
-- Plus facile à changer
-- Juste une chambre à air à prendre sur soi
-- Moins cher après crevaison juste une chambre à air
-
-Boyau
-- Confort (les forces radial moins répercuter sur la jante, plus d’épaisseur TPI )
-- Moins soumis au crevaison (lente)
-- Plus léger
-- Toujours avoir un spare 
-- Difficile à changer 
-- Installation 
-- Plus cher quand crevaison
-- Plus de pression
-- Freinage moins précis (sauf si votre moyeu est à disque biensûr) 
-
-Pour moi ils sont un peu plus performant car plus léger et plus confortable encore faut-il en choisir un de bonne qualité.
-Depuis que je roule en boyau, je ne voudrais plus revenir au pneu mais c’est mon avis perso.
-Mais il est important de choisir un boyau ou pneu de bonne qualité car ce serait dommage de perdre l’effort mis dans les
-Composants sous-jacents. C’est-à-dire que le boyau ou pneu est le dernier élément avant la route donc il faut pouvoir
-Transmettre le maximum de la force avec le moins de perte.
+C'est toujours la grande question chez les cyclistes. Je vais vous donner mon avis personnel à ce sujet. Le boyau
+et le pneu offrent tout d'eux des caractéristiques différentes de part leurs conceptions et peuvent apportés des 
+avantages différentq tout dépend  encore des compromis que vous êtes prêts à faire selon son besoin. Dans
+tous les cas un pneu de bonne qualité sera toujours meilleur qu'un boyau entrée de gamme et inversemment. Il y a
+déjà beaucoup d'articles qui parlent de ce sujet, je vous invite à lire celui qui résume bien le sujet
 {: .text-justify}
 
+[Différence entre Pneu ou Boyau](https://www.roue-carbone.com/guide-achat/difference-entre-pneu-boyau-de-velo)
 
-1. Caractéristiques
+Même si le boyau a beaucoup de points négatifs en terme de praticité, en effet:
+- Il faut toujours avoir un spare sur soi
+- l'installation est un peu plus périeuse et longue, il faut le faire en plusieurs étapes et il faut acheter de la 
+colle.
+- Une crevaison est onéreuse car il faut changer le boyau et pas juste changer la chambre à aire
+- Le freinage moins précis (sauf si votre moyeu est à disque biensûr) 
 
-- La largeur
+Mais elles apportent des avantages en terme de performance, ils sont souvent plus léger pour une gamme équivalente
+en pneu, ils absorbent mieux les défauts de la route ce qui les rend plus performant et aussi plus confortable. De plus
+on peu mettre une plus grande pression ce qui permet moins d'adhérence avec le sol et donc moins de 
+frottement. Mais encore faut-il en choisir un de bonne qualité. Depuis que je roule en boyau, je ne voudrais plus revenir 
+au pneu mais c’est mon avis perso. Mais il est important de choisir un boyau ou pneu de bonne qualité car ce serait 
+dommage de perdre l’effort mis dans les composants sous-jacents. C’est-à-dire que le boyau ou pneu est le dernier 
+élément avant la route donc il faut pouvoir transmettre le maximum de la force avec le moins de perte.
+{: .text-justify}
+
+Quelles sont les caractéristiques à prendre en compte dans le choix d'un boyau ou un pneu ?
+
+### TPI
+
+### Largeur
+
 La largeur va d’abord dépendre de la largeur de la jante.  Voir dans le paragraphe suivant
 
+[Choisir un pneu](https://www.alltricks.fr/surl/commentchoisirsespneusroute_v2)
 
+[23 ou 25mm](https://www.matosvelo.fr/index.php?post/2013/04/14/23-ou-25mm-quelle-section-choisir-sur-la-route)
 23 ou 25
 TODO: trouver un tableau récapitulatif avec les associations possible.
 
@@ -273,22 +307,49 @@ Plus confortable
 
 Rendement quasi identique alors pourquoi se priver du confort :-)
 
+Ce qu'il faut regarder pour choisir un boyau
 
-- TPI
+### Autres
+
+
 - Matière
-- Longueur de valve:
+- Le type de valve
+- La longueur de la valve
+
 La longueur de valve est importante pour savoir quelle taille de prolongateur de valve, j’aurai besoin.
 
-2. Ce que j’ai choisi
+- Poids:
+- Prix: 
 
-- Prix: 34.99
+Enfin voici ce que j'ai choisi en terme de qualité/prix et mes besoins:
 
-
-Moins de freingage
+Boyau Vittoria CX 
+- 25c 
+- 320 TPI  
+- 250g
+- 34.99€
 
 ## Attache rapide
+
+J'utilise les mêmes pour toutes mes roues donc pas utile d'en racheter. Ce qui est important c'est le poids
+donc si vous avez des attaches rapides bas de gamme, il est préférable d'en avoir une paire légère. Ce serait dommage
+de perdre tous le poids gagnés par les composants précédents.
+{: .text-justify}
+
 ## Cassette
+
+Pour la cassette, c'est pareil. Pas forcément utile d'en avoir pour chaque roue ou dans un premier temps. Interchanger
+la cassette prends une dizaine de minute et ça à l'avantage de pouvoir bien la nettoyer. Tout dépends si vous changer
+de roue à chaque sortie ou de temps en temps. Une cassette coûte environ 50-60 euros donc on peut s'en sortir avec
+une dans un premier puis en acheter par la suite pour switcher rapidement.
+{: .text-justify}
+
 ## Patin de freins
+
+Etant donné que j'ai opté pour une jante carbone, il me faut des pâtins de freins adaptés. J'ai opté pour les SwissStop
+FlashPro Black Prince qui ont l'avantage d'être aussi compatible sur les jantes en Alu, ce qui permet de ne pas
+interchanger quand je prends mes roues à pneus en hiver ou sur Home trainer.
+{: .text-justify}
 
 # Conception
 
@@ -1047,10 +1108,9 @@ car ce serait réinventer la "roue", voici des videos Youtube qui correspondent 
 [Prolongateur de valve](https://www.youtube.com/watch?v=EbA5ZBZa5IQ)
 
 
-![moyeu](/assets/images/wheel-building/prolongateur_valve_miche.jpg){:height="240px" width="240px"} 
-![moyeu](/assets/images/wheel-building/prolongateur1.jpg){:height="240px" width="240px"}
-![moyeu](/assets/images/wheel-building/prolongateur2.jpg){:height="240px" width="240px"}
-
+![moyeu](/assets/images/wheel-building/prolongateur1.jpg){:height="200px" width="200px"}
+![moyeu](/assets/images/wheel-building/prolongateur2.jpg){:height="200px" width="200px"}
+![moyeu](/assets/images/wheel-building/prolongateur_valve_miche.jpg){:height="200px" width="200px"} 
 
 - Une petite clé est souvent livré avec les prolongateurs de valve afin d'enleve l'obu facilement
 - Il existe des anti-vibrateurs à coller afin que la valve ne vibre sur la jante pendant que l'on roule. En effet
@@ -1128,10 +1188,10 @@ Une roue arrière coûte plus cher, plus de rayons, moyeu plus cher, plus de ray
 | Description                                 | Poids    | Quantité  | Prix unit. | Prix Total  | Poids Total |
 |:-------------------------------------------:|:--------:|:---------:|:----------:|:-----------:|:-----------:|
 | Jante Carbone H=88mm L=25mm;24 Trous;Boyau  |  525g    |   1       |  103.67    |   103.67    |    525g     |
-| Moyeu Novatec FS482SB 24 Trous              |  229g    |   1       |  59.98     |   59.98     |    229g     |
+| Moyeu Novatec FS482SB 24 Trous              |  228g    |   1       |  59.98     |   59.98     |    228g     |
 | Rayons Sapim CX-Ray Noir                    |  4g      |   24      |  2.20      |   52.8      |    96g      |
 | Ecrous Sapim Double Square Rouge            |  0.4g    |   24      |  0.30      |   7.2       |    9.6g     |
-| Total                                       |          |           |            |   223.65    |    860g     |
+| Total                                       |          |           |            |   223.65    |    859g     |
 
 ### Accessoires
 
@@ -1151,13 +1211,10 @@ l'expérience. Pour ma part, je suis très fier du résultat et je projette de m
 montage (Moyeu straight pull) et pourquoi pas monter son vélo soi-même. 
 {: .text-justify}
 
-![moyeu](/assets/images/wheel-building/result1.jpg){:height="320px" width="320px"} 
-
-![moyeu](/assets/images/wheel-building/result2.jpg){:height="320px" width="320px"} 
-
-![moyeu](/assets/images/wheel-building/result3.jpg){:height="320px" width="320px"} 
-
-![moyeu](/assets/images/wheel-building/result4.jpg){:height="320px" width="320px"} 
+![moyeu](/assets/images/wheel-building/result1.jpg){:height="200px" width="240px"} 
+![moyeu](/assets/images/wheel-building/result2.jpg){:height="240px" width="240px"} 
+![moyeu](/assets/images/wheel-building/result3.jpg){:height="240px" width="240px"} 
+![moyeu](/assets/images/wheel-building/result4.jpg){:height="240px" width="240px"} 
 
 
 # Références
