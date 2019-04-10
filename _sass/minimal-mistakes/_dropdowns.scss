@@ -1,0 +1,142 @@
+//
+// Dropdown menus
+// --------------------------------------------------
+
+$zindex-dropdown: 1000;
+$transition-collapse: height 0.35s ease !default;
+
+.collapse {
+  &:not(.show) {
+    display: none;
+  }
+
+  &.in {
+    display: block;
+  }
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: $transition-collapse;
+  transition: $transition-collapse;
+}
+
+// The dropdown wrapper (div)
+.dropdown {
+  position: relative;
+}
+
+// Prevent the focus on the dropdown toggle when closing dropdowns
+.dropdown-toggle:focus {
+  outline: 0;
+}
+
+// The dropdown menu (ul)
+.dropdown-menu {
+  display: none; // none by default, but block on "open" of the menu
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: $zindex-dropdown;
+  float: left;
+  min-width: 160px;
+  padding: 5px;
+  margin: 15px 0 0; // override default ul
+  text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
+  list-style: none;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  background: $background-color;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(#000, 0.16),
+    0 2px 10px 0 rgba(#000, 0.12);
+  box-shadow: 0 2px 4px 0 rgba(#000, 0.16), 0 2px 10px 0 rgba(#000, 0.12);
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -11px;
+    right: 10px;
+    width: 0;
+    border-style: solid;
+    border-width: 0 10px 10px;
+    border-color: $border-color transparent;
+    display: block;
+    z-index: 0;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    width: 0;
+    border-style: solid;
+    border-width: 0 10px 10px;
+    border-color: $background-color transparent;
+    display: block;
+    z-index: 1;
+  }
+
+  // Links within the dropdown menu
+  > li {
+    display: block;
+    border-bottom: 1px solid $border-color;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  > li > a {
+    display: block;
+    clear: both;
+    white-space: nowrap; // prevent links from randomly breaking onto new lines
+    margin: 0;
+    padding: $navbar-padding-vertical $navbar-padding-horizontal;
+    font-size: $type-size-5;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: $masthead-link-color-hover;
+      background: $navicon-link-color-hover;
+    }
+  }
+}
+
+// Active state
+.dropdown-menu > .active > a {
+  &,
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    outline: 0;
+  }
+}
+
+
+// Open state for the dropdown
+.open {
+  // Show the menu
+  > .dropdown-menu {
+    display: block;
+  }
+
+  // Remove the outline when :focus is triggered
+  > a {
+    outline: 0;
+  }
+}
+
+// Backdrop to catch body clicks on mobile, etc.
+.dropdown-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: ($zindex-dropdown - 10);
+}

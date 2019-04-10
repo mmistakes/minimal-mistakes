@@ -7,23 +7,17 @@
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        {% unless logo_path == empty %}
-          <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt=""></a>
-        {% endunless %}
-        <a class="site-title" href="{{ '/' | relative_url }}">{{ site.masthead_title | default: site.title }}</a>
-        <ul class="visible-links">
-          {%- for link in site.data.navigation.main -%}
-            {%- if link.url contains '://' -%}
-              {%- assign url = link.url -%}
-            {%- else -%}
-              {%- assign url = link.url | relative_url -%}
-            {%- endif -%}
-            <li class="masthead__menu-item">
-              <a href="{{ url }}" {% if link.description %}title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
-            </li>
-          {%- endfor -%}
-        </ul>
+      <nav id="site-nav" class="navbar">
+        <div class="navbar-header">
+          {% unless logo_path == empty %}
+            <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt=""></a>
+          {% endunless %}
+          <a class="site-title" href="{{ '/' | relative_url }}">{{ site.masthead_title | default: site.title }}</a>
+        </div>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#masthead-navbar-collapse" aria-expanded="false">
+          <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
+          <div class="navicon"></div>
+        </button>
         {% if site.search == true %}
         <button class="search__toggle" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Toggle search" }}</span>
@@ -32,11 +26,32 @@
           </svg>
         </button>
         {% endif %}
-        <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
-          <div class="navicon"></div>
-        </button>
-        <ul class="hidden-links hidden"></ul>
+        <div id="masthead-navbar-collapse" class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+            {%- for link in site.data.navigation.main -%}
+              {%- if link.url contains '://' -%}
+                {%- assign url = link.url -%}
+              {%- else -%}
+                {%- assign url = link.url | relative_url -%}
+              {%- endif -%}
+              <li class="{% if link.children != null %}dropdown{% endif %}">
+                <a href="{{ url }}" {% if link.description %}title="{{ link.description }}"{% endif %} {% if link.children != null %}class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"{% endif %}>{{ link.title }} {% if link.children != null %}<i class="fas fa-angle-down"></i>{% endif %}</a>
+                {% if link.children != null %}
+                  <ul class="dropdown-menu">
+                  {% for child in link.children %}
+                    {% if child.url contains "://" %}
+                      {% assign child_url = child.url %}
+                    {% else %}
+                      {% assign child_url = child.url | relative_url %}
+                    {% endif %}
+                    <li><a href="{{ child_url }}" class="{{ active }}">{{ child.title }}</a></li>
+                  {% endfor %}
+                  </ul>
+                {% endif %}
+              </li>
+            {%- endfor -%}
+          </ul>
+        </div>
       </nav>
     </div>
   </div>

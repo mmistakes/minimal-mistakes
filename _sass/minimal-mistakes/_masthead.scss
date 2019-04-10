@@ -40,6 +40,7 @@
 }
 
 .site-logo img {
+  margin-right: 0.5rem;
   max-height: 2rem;
 }
 
@@ -69,20 +70,26 @@
   }
 
   ul {
+    clear: both;
     margin: 0;
     padding: 0;
-    clear: both;
     list-style-type: none;
+
+    @include breakpoint($medium) {
+      height: $nav-height;
+      line-height: $nav-height;
+    }
   }
-}
 
-.masthead__menu-item {
-  display: block;
-  list-style-type: none;
-  white-space: nowrap;
+  a {
+    color: $masthead-link-color;
 
-  &--lg {
-    padding-right: 2em;
-    font-weight: 700;
+    &:hover {
+      color: $masthead-link-color-hover;
+    }
+  }
+
+  .dropdown-menu {
+    height: auto;
   }
 }

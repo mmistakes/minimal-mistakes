@@ -2,18 +2,27 @@
 main:
   - title: "About"
     url: https://mmistakes.github.io/minimal-mistakes/about/
-  - title: "Posts"
-    url: /year-archive/
-  - title: "Collections"
-    url: /collection-archive/
+  - title: "Content"
+    url: #
+    children:
+      - title: "Posts by Year"
+        url: /year-archive/
+      - title: "Posts by Tag"
+        url: /tags-archive/
+      - title: "Posts by Category"
+        url: /categories-archive/
+      - title: "Collections"
+        url: /collection-archive/
+      - title: "Splash Page"
+        url: /splash-page/
+      - title: "Recipes"
+        url: /recipes-archive/
+      - title: "Portfolio"
+        url: /portfolio/
   - title: "Sitemap"
     url: /sitemap/
-  - title: "Extra Menu Item 1"
-    url: /
-  - title: "Extra Menu Item 2"
-    url: /
-  - title: "Extra Menu Item Long Title"
-    url: /
+  - title: "Terms"
+    url: /terms/
 
 # sidebar navigation list sample
 sidebar-sample:

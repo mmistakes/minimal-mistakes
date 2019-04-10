@@ -9,6 +9,7 @@
 }
 
 .search__toggle {
+  float: right;
   margin-left: 1rem;
   margin-right: 1rem;
   height: $nav-toggle-height;
@@ -58,7 +59,8 @@
     padding: 0;
     border: none;
     outline: none;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     background-color: transparent;
     font-size: $type-size-3;
 

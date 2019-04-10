@@ -3,6 +3,168 @@
    ========================================================================== */
 
 /*
+  Navigation bar
+  ========================================================================== */
+
+.navbar {
+  @include clearfix();
+  position: relative;
+  min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
+  margin-bottom: $navbar-margin-bottom;
+  border: 1px solid transparent;
+}
+
+.navbar-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+}
+
+.navbar-collapse {
+  clear: both;
+  overflow-x: visible;
+  border-top: 1px solid transparent;
+  -webkit-overflow-scrolling: touch;
+
+  &.in {
+    overflow-y: auto;
+  }
+
+  @include breakpoint($medium) {
+    clear: none;
+    float: right;
+    width: auto;
+    border-top: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+
+    &.collapse {
+      display: block !important;
+      height: auto !important;
+      padding-bottom: 0; // Override default setting
+      overflow: visible !important;
+    }
+
+    &.in {
+      overflow-y: visible;
+    }
+  }
+}
+
+// Navbar toggle
+//
+// Custom button for toggling the `.navbar-collapse`, powered by the collapse
+// JavaScript plugin.
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  height: $nav-toggle-height;
+  padding: 9px 10px;
+  margin-right: $navbar-padding-horizontal;
+  background-color: transparent;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 1px solid transparent;
+
+  // We remove the `outline` here, but later compensate by attaching `:hover`
+  // styles to `:focus`.
+  &:focus {
+    outline: 0;
+  }
+
+  @include breakpoint($medium) {
+    display: none;
+  }
+}
+
+
+// Navbar nav links
+//
+// Builds on top of the `.nav` components with its own modifier class to make
+// the nav the full height of the horizontal nav (above 768px).
+
+.navbar-nav {
+  margin: ($navbar-padding-vertical / 2) -$navbar-padding-horizontal;
+
+  > li > a {
+    display: block;
+    padding-top: $navbar-padding-vertical;
+    padding-bottom: $navbar-padding-vertical;
+  }
+
+  @include breakpoint(max-width $medium) {
+    // Dropdowns get custom display when collapsed
+    .open .dropdown-menu {
+      position: static;
+      float: none;
+      width: auto;
+      margin-top: 0;
+      background-color: transparent;
+      border: 0;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+
+      > li > a {
+        &:hover,
+        &:focus {
+          background-image: none;
+        }
+      }
+    }
+  }
+
+  // Uncollapse the nav
+  @include breakpoint($medium) {
+    float: left;
+    margin: 0;
+
+    > li {
+      float: left;
+
+      > a {
+        padding: $navbar-padding-vertical $navbar-padding-horizontal;
+      }
+    }
+  }
+}
+
+// Dropdown menus
+
+// Menu position and menu carets
+.navbar-nav > li > .dropdown-menu {
+  margin-top: 0.25rem;
+}
+
+// Menu position and menu caret support for dropups via extra dropup class
+.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
+  margin-bottom: 0;
+}
+
+// Component alignment
+//
+// Repurpose the pull utilities as their own navbar utilities to avoid specificity
+// issues with parents and chaining. Only do this when the navbar is uncollapsed
+// though so that navbar contents properly stack and align in mobile.
+//
+// Declared after the navbar components to ensure more specificity on the margins.
+
+@include breakpoint($medium) {
+  .navbar-left  {
+    float: left;
+  }
+
+  .navbar-right {
+    float: right;
+    margin-right: -$navbar-padding-horizontal;
+
+    ~ .navbar-right {
+      margin-right: 0;
+    }
+  }
+}
+
+/*
    Breadcrumb navigation links
    ========================================================================== */
 
@@ -162,169 +324,6 @@
   margin-top: 2em;
   padding-top: 2em;
   border-top: 1px solid $border-color;
-}
-
-/*
-     Priority plus navigation
-     ========================================================================== */
-
-.greedy-nav {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  min-height: $nav-height;
-  background: $background-color;
-
-  a {
-    display: block;
-    margin: 0 1rem;
-    color: $masthead-link-color;
-    text-decoration: none;
-
-    &:hover {
-      color: $masthead-link-color-hover;
-    }
-
-    &.site-logo {
-      margin-left: 0;
-      margin-right: 0.5rem;
-    }
-
-    &.site-title {
-      margin-left: 0;
-    }
-  }
-
-  &__toggle {
-    -ms-flex-item-align: center;
-    align-self: center;
-    height: $nav-toggle-height;
-    border: 0;
-    outline: none;
-    background-color: transparent;
-    cursor: pointer;
-  }
-
-  .visible-links {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    overflow: hidden;
-
-    li {
-      -webkit-box-flex: 0;
-      -ms-flex: none;
-      flex: none;
-    }
-
-    a {
-      position: relative;
-
-      &:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        height: 4px;
-        background: $primary-color;
-        width: 100%;
-        -webkit-transition: $global-transition;
-        transition: $global-transition;
-        -webkit-transform: scaleX(0) translate3d(0, 0, 0);
-        transform: scaleX(0) translate3d(0, 0, 0); // hide
-      }
-
-      &:hover:before {
-        -webkit-transform: scaleX(1);
-        -ms-transform: scaleX(1);
-        transform: scaleX(1); // reveal
-      }
-    }
-  }
-
-  .hidden-links {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    margin-top: 15px;
-    padding: 5px;
-    border: 1px solid $border-color;
-    border-radius: $border-radius;
-    background: $background-color;
-    -webkit-box-shadow: 0 2px 4px 0 rgba(#000, 0.16),
-      0 2px 10px 0 rgba(#000, 0.12);
-    box-shadow: 0 2px 4px 0 rgba(#000, 0.16), 0 2px 10px 0 rgba(#000, 0.12);
-
-    &.hidden {
-      display: none;
-    }
-
-    a {
-      margin: 0;
-      padding: 10px 20px;
-      font-size: $type-size-5;
-
-      &:hover {
-        color: $masthead-link-color-hover;
-        background: $navicon-link-color-hover;
-      }
-    }
-
-    &:before {
-      content: "";
-      position: absolute;
-      top: -11px;
-      right: 10px;
-      width: 0;
-      border-style: solid;
-      border-width: 0 10px 10px;
-      border-color: $border-color transparent;
-      display: block;
-      z-index: 0;
-    }
-
-    &:after {
-      content: "";
-      position: absolute;
-      top: -10px;
-      right: 10px;
-      width: 0;
-      border-style: solid;
-      border-width: 0 10px 10px;
-      border-color: $background-color transparent;
-      display: block;
-      z-index: 1;
-    }
-
-    li {
-      display: block;
-      border-bottom: 1px solid $border-color;
-
-      &:last-child {
-        border-bottom: none;
-      }
-    }
-  }
-}
-
-.no-js {
-  .greedy-nav {
-    .visible-links {
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      overflow: visible;
-    }
-  }
 }
 
 /*
