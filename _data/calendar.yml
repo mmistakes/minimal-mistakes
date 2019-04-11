@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Fußballturnier der 4. - 6. Klassen",
-    "title": "Fußballturnier der 4. - 6. Klassen",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=ZW04c2Y5dmU5bDZzNGM2Z2pkMGEydnQ4Z2sgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-04-11",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-04-12",
-      "date_time": null
-    },
-    "created": "2019-03-10T16:09:10.000Z",
-    "updated": "2019-03-10T16:09:10.577Z"
-  },
-  {
-    "image_path": null,
     "alt": "Letzter Schultag vor den Osterferien: nach Plan",
     "title": "Letzter Schultag vor den Osterferien: nach Plan",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2019-02-18T11:43:43.000Z",
     "updated": "2019-02-18T11:43:43.835Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Radfahrprüfung 4a",
+    "title": "Radfahrprüfung 4a",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=N3RoNmp0NGF0Mjg0YWZkNmtyZmQza3R0MDkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-05-21T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-05-21T11:00:00+02:00"
+    },
+    "created": "2019-02-13T07:15:58.000Z",
+    "updated": "2019-03-21T08:30:36.429Z"
   }
 ]
