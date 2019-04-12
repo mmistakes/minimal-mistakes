@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Letzter Schultag vor den Osterferien: nach Plan",
-    "title": "Letzter Schultag vor den Osterferien: nach Plan",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MDd2dWkyMWJ2bW1ucXYxOWI2amU2aWpwOGMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-04-12",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-04-13",
-      "date_time": null
-    },
-    "created": "2019-03-10T16:09:41.000Z",
-    "updated": "2019-03-10T16:09:42.017Z"
-  },
-  {
-    "image_path": null,
     "alt": "Osterferien",
     "title": "Osterferien",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2019-02-13T07:15:58.000Z",
     "updated": "2019-03-21T08:30:36.429Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Radfahrpüfung",
+    "title": "Radfahrpüfung",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=N2RxamE0YmxvcWI0YzJyNnIyams2cHRpOGEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-05-21T10:15:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-05-21T11:15:00+02:00"
+    },
+    "created": "2019-02-13T07:16:49.000Z",
+    "updated": "2019-02-13T07:18:03.537Z"
   }
 ]
