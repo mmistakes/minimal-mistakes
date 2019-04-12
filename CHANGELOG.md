@@ -1,3 +1,9 @@
+## Unreleased
+
+### Bug Fixes
+
+- Fix Gumshoe related JavaScript error on pages without a table of contents. [#2124](https://github.com/mmistakes/minimal-mistakes/pull/2124)
+
 ## [4.16.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.16.0)
 
 ### Enhancements

@@ -5,9 +5,15 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2019-04-09T21:23:10-04:00
+last_modified_at: 2019-04-12T11:43:51-04:00
 toc: false
 ---
+
+## Unreleased
+
+### Bug Fixes
+
+- Fix Gumshoe related JavaScript error on pages without a table of contents. [#2124](https://github.com/mmistakes/minimal-mistakes/pull/2124)
 
 ## [4.16.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.16.0)
 
