@@ -389,7 +389,7 @@ Triangle HLR
 - Phi = Angle que va prendre le rayon selon le nombre de croisements
 {: .notice--primary}
 
-![moyeu](/assets/images/wheel-building/erd_demonstration4.jpg){:.align-center :height="320px" width="320px"}
+![moyeu](/assets/images/wheel-building/erd_demonstration6.jpg){:.align-center :height="320px" width="320px"}
 
 Triangle LSF
 - L = Longueur intermédiaire calculer dans le triangle HLR
@@ -397,7 +397,7 @@ Triangle LSF
 - F = La distance entre la flange du moyeu et son milieu
 {: .notice--primary}
 
-![moyeu](/assets/images/wheel-building/erd_demonstration6.jpg){:.align-center :height="320px" width="320px"}
+![moyeu](/assets/images/wheel-building/erd_demonstration4.jpg){:.align-center :height="320px" width="320px"}
 
 
 Donc dans un premier temps, je vais décrire comment prendre les différentes mesures sur la jante et le moyeu. Puis
