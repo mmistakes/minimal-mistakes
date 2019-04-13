@@ -273,6 +273,9 @@ compress_html:
   ignore:
     envs: development
 
+head_scripts:
+  - http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
 
 # Defaults
 defaults:

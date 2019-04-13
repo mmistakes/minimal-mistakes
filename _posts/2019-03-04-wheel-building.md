@@ -14,35 +14,39 @@ tags:
   - Cyclisme
 ---
 
-Tout au long de cet article, j’explique les choix que j’ai fait pour mon usage personnel. 
-Je veux réaliser une roue aérodynamique et rigide pour rouler sur le plat (ou peu vallonnée)
-Ex: Triathlon, CLM
+Dans cet article je vais décrire toutes les étapes qui m'ont permis de réaliser ma première roue artisanale.
+
+Dès que j'ai débuté le vélo je me suis très vite intéressé aux roues de vélo et compris l'importance 
+qu'elles avaient en terme de performance, de confort et de sensation. J'ai acheté plusieurs paires bon marché sans me
+soucier de tous les critères que l'on verra à travers cet article. Puis je me suis fait monter une paire
+de roue artisanale (38mm) par un professionnel. Des roues qui passent partout, elles sont légères ce qui les
+rend réactives et leur hauteur  permet d'avoir une touche d'aérodynamisme. Un jour, un rayon m'a lâché et c'est à 
+partir de là que j'ai commencé à m'intéresser au roue. En effet, j'ai commencé par réparer mon rayon cassé ce qui 
+m'a amené à entamé mes recherches et approfondir mes connaissances sur le sujet. Je suis passionné de sport et de part 
+mon métier d'ingénieur, je suis toujours à soif de connaissance et d'apprendre de nouvelles choses. Je me suis lancé
+dans ce nouveau challenge avec pour objectif de réaliser une roue spécifique pour les parcours plats que l'on 
+retrouve sur certain triathlon ou duathlon que j'ai l'habitude de pratiquer. Une roue aérodynamique qui une fois lancée
+offre une bonne inertie et assez légère et rigide pour pouvoir relancer efficacement et transmettre avec le moins de
+perte possible toute la puissance fourni par le bonhomme.
 {: .text-justify}
 
-Je suis passionné de sport et de part mon métier d'ingénieur, je suis toujours à soif
-de connaissance et d'apprendre de nouvelles choses. Quand j'ai débuté le vélo je me suis très
-vite intéressé au roue de vélo, et très vite compris l'intérêt qu'elles pouvaient apporter
-pour la qualité, la performance et le confort. Je me suis fait monter par un professionnel
-mes premières roues carbonnes artisanales. 38mm de hauteur, 23mm de large sur boyau, 24 rayons
-à l'arrière (dont 8 radial à côté gauche) et 20 rayons à l'avant avec 2 croisemments. Je reviendrais
-plus loin pour expliquer chaque paramètre leur caractéristiques. C'est roue sont top, elle m'apporte
-une réactivité et un confort. Idéal pour la montage et parcours vallonnée. Ce sont vraiment des bonnes
-roues. Au bout de 4 ans, un rayon m'a lâché, je me suis dit qu'est-ce que je fais, je fais des km
-pour faire réparer ma roue où si je le faisais moi-même. Et j'ai commencé à me documenter sur la 
-réparation d'un simple rayon qui lâche et au fur et à mesure que je me documentais, je vite trouver
-intérêt à comprendre comment tout cela fonctionnait. J'avais déjà pour projet de me faire une roue
-arrière aerodynamique et du coup c'était l'occasion d'essayer de le faire soi-même. Je me suis vite
-rendu compte qu'il était assez facile de se procurer tout le matériel. Dans un premier temps
-j'ai fait pas mal de recherche sur internet, lu des tas d'articles et puis je suis tombé
-sur 2 livres Roger Musson et Jobst ?. Que je vous conseille de lire. Ce sont de très beaux
-ouvrages qui permettent de comprendre comment fonctionne une roue et tous les éléments. Et explique
-comment les monter. Le but de cet article n'est pas d'expliquer tout ça, l'idée c'est d'expliquer
-mes choix pour arriver à finaliser ma roue.
-Et surtout un bon petit jeu de mots "ne pas réinventé la roue"
+Mon but est de ne pas "réinventer la roue", je vais donc essentiellement partager mon retour d'expérience,
+partager ce que j'ai appris, les choix que j'ai fait, les articles et les livres qui m'ont permis de finaliser ma 
+première roue. Je détaillerai toutes les étapes pour bien choisir tous les composants, puis je partagerai l'expérience
+du montage jusqu'au premier test sur route.
 {: .text-justify}
 
 
 # Caractéristiques
+
+Une roue parfaite, adaptée pour tous les parcours
+ et conditions climatiques n'existe pas. C'est pourquoi les cyclistes possèdent généralement plusieurs paires que ce soit
+juste pour avoir une paire pour l'entrainement et une pour la compétition. Il est possible de réaliser aujourd'hui de nombreux montages
+pour répondre à tout type de parcours (Montagne, plat ou vallonnée), condition climatique (sens et force du vent, 
+pluie) et le type de coureur (grimpeur, rouleur, puncheur...). Vous comprenez qu'avec tout ces paramètres il faudrait
+20 paires dans son garage pour répondre à toutes ces conditions ce qui est assez difficile à réaliser surtout pour 
+faire accepter ça à sa femme. Il faut donc faire des compromis, pour cela il faut se poser les bonnes questions:
+quel est vraiment mon besoin ?.
 
 La force Radial:
 Vient essentiellement du poids du cycliste.
@@ -257,21 +261,20 @@ Prix: 0.40€ unitaire
 
 C'est toujours la grande question chez les cyclistes. Je vais vous donner mon avis personnel à ce sujet. Le boyau
 et le pneu offrent tout d'eux des caractéristiques différentes de part leurs conceptions et peuvent apportés des 
-avantages différentq tout dépend  encore des compromis que vous êtes prêts à faire selon son besoin. Dans
+avantages différents tout dépend  encore des compromis que vous êtes prêts à faire selon votre besoin. Dans
 tous les cas un pneu de bonne qualité sera toujours meilleur qu'un boyau entrée de gamme et inversemment. Il y a
-déjà beaucoup d'articles qui parlent de ce sujet, je vous invite à lire celui qui résume bien le sujet
+déjà beaucoup d'articles qui parlent de ce sujet, je vous invite à lire celui qui résume bien le sujet:
+[Différence entre Pneu ou Boyau](https://www.roue-carbone.com/guide-achat/difference-entre-pneu-boyau-de-velo){:target="_blank"}
 {: .text-justify}
 
-[Différence entre Pneu ou Boyau](https://www.roue-carbone.com/guide-achat/difference-entre-pneu-boyau-de-velo)
-
-Même si le boyau a beaucoup de points négatifs en terme de praticité, en effet:
+Même si le boyau a beaucoup de points négatifs en terme de praticité:
 - Il faut toujours avoir un spare sur soi
 - l'installation est un peu plus périeuse et longue, il faut le faire en plusieurs étapes et il faut acheter de la 
 colle.
 - Une crevaison est onéreuse car il faut changer le boyau et pas juste changer la chambre à aire
 - Le freinage moins précis (sauf si votre moyeu est à disque biensûr) 
 
-Mais elles apportent des avantages en terme de performance, ils sont souvent plus léger pour une gamme équivalente
+Mais ils apportent des avantages en terme de performance, ils sont souvent plus léger pour une gamme équivalente
 en pneu, ils absorbent mieux les défauts de la route ce qui les rend plus performant et aussi plus confortable. De plus
 on peu mettre une plus grande pression ce qui permet moins d'adhérence avec le sol et donc moins de 
 frottement. Mais encore faut-il en choisir un de bonne qualité. Depuis que je roule en boyau, je ne voudrais plus revenir 
@@ -284,50 +287,40 @@ Quelles sont les caractéristiques à prendre en compte dans le choix d'un boyau
 
 ### TPI
 
+TPI = Threads Per Inch
+
+Il s'agit du nombre de fils constituant la carcassse.
+
+Plus la valeur est haute plus la carcasse sera à la fois souple (car les fils sont plus fins) et difficle à percer mais
+ au détriment du poids, enfin tout dépend des matériaux.
+{: .text-justify}
+
 ### Largeur
 
-La largeur va d’abord dépendre de la largeur de la jante.  Voir dans le paragraphe suivant
+[A chaque jante sa largeur de pneu](https://engineerstalk.mavic.com/fr/a-chaque-jante-sa-largeur-de-pneu/){:target="_blank"}
 
-[Choisir un pneu](https://www.alltricks.fr/surl/commentchoisirsespneusroute_v2)
-
-[23 ou 25mm](https://www.matosvelo.fr/index.php?post/2013/04/14/23-ou-25mm-quelle-section-choisir-sur-la-route)
-23 ou 25
-TODO: trouver un tableau récapitulatif avec les associations possible.
-
-23
-
-Plus léger
-Plus flexible
-
-
-25
-
-Plus aérodynamique car l’écoulement de l’air se fait mieux sur les côtés
-Plus confortable
-
-Rendement quasi identique alors pourquoi se priver du confort :-)
-
-Ce qu'il faut regarder pour choisir un boyau
+Après voir lu cet article, on comprend bien l'intérêt d'avoir une largeur plus large à l'arrière notamment quand
+on recherche de l'aérodynamisme et en plus améliore le confort, c'est pourquoi j'ai choisi une jante 25mm
+et des boyaux 25mm
+{: .text-justify}
 
 ### Autres
 
+Il y a plein d'autres paramètres qu'il faut regarder notamment le type de valve et surtout sa longueur. En effet,
+étant donné la hauteur de jante de 88mm il me faudra un prolongateur de valve. Il faut également prêter attention
+à la matière qui va jouer sur les performances: adhérence, l'usure, le comportement sur route mouillé... Il faut
+enfin regarder le poids et biensûr de trouver le meilleur rapport qualité prix par rapport à son besoin et budget.
 
-- Matière
-- Le type de valve
-- La longueur de la valve
+Enfin voici ce que j'ai choisi en terme de rapport qualité/prix et répondant à mes besoins:
 
-La longueur de valve est importante pour savoir quelle taille de prolongateur de valve, j’aurai besoin.
+Les Boyau Vittoria CX ont vraiment des caractéristiques haut de gamme pour un prix raisonnable. J'avais déjà
+ choisi ces boyaux pour mes 38mm, j'en suis très content depuis des années et plusieurs milliers de kilomètres.
 
-- Poids:
-- Prix: 
-
-Enfin voici ce que j'ai choisi en terme de qualité/prix et mes besoins:
-
-Boyau Vittoria CX 
+- Valve Presta 34 mm
 - 25c 
 - 320 TPI  
 - 250g
-- 34.99€
+- Prix: 34.99€
 
 ## Attache rapide
 
@@ -388,7 +381,6 @@ tendu. En dessous, j'ai simplifié les 2 schemas en 2 triangles HLR et LSF avec 
 que l'on va pouvoir substituer.
 
 
-![moyeu](/assets/images/wheel-building/erd_demonstration4.jpg){:.align-center :height="480px" width="480px"}
 
 Triangle HLR
 - H = La distance entre le centre du moyeu et le trou où va se loger le rayon
@@ -397,13 +389,16 @@ Triangle HLR
 - Phi = Angle que va prendre le rayon selon le nombre de croisements
 {: .notice--primary}
 
-![moyeu](/assets/images/wheel-building/erd_demonstration3.jpeg){:.align-center :height="480px" width="480px"}
+![moyeu](/assets/images/wheel-building/erd_demonstration4.jpg){:.align-center :height="320px" width="320px"}
 
 Triangle LSF
 - L = Longueur intermédiaire calculer dans le triangle HLR
 - S = La longueur du rayon 
 - F = La distance entre la flange du moyeu et son milieu
 {: .notice--primary}
+
+![moyeu](/assets/images/wheel-building/erd_demonstration6.jpg){:.align-center :height="320px" width="320px"}
+
 
 Donc dans un premier temps, je vais décrire comment prendre les différentes mesures sur la jante et le moyeu. Puis
 dans un second temps je vais pouvoir en déduire la valeur de L dans le triangle HLR et enfin  substituer L dans le 
@@ -422,7 +417,7 @@ c'est mon avis personnel. Cette façon vient du livre de Roger Musson (TODO)
 {: .text-justify}
 
 
-![moyeu](/assets/images/wheel-building/erd3.jpeg){:.align-center :height="480px" width="480px"}
+![moyeu](/assets/images/wheel-building/erd3.jpg){:.align-center :height="480px" width="480px"}
 
 Donc il suffit de prendre 2 rayons, 2 écrous, du ruban adhésif, un élastique et un pied 
 à coulisse (une simple mètre peu suffire).
@@ -465,8 +460,8 @@ suivantes.
  roue arrière étant donné qu'il y a la cassette à prendre en compte.
 {: .text-justify}
 
-![moyeu](/assets/images/wheel-building/hub_mesures.jpeg){:.align-center :height="480px" width="480px"} 
-
+![moyeu](/assets/images/wheel-building/erd_demonstration5.jpg){:height="320px" width="320px"}
+![moyeu](/assets/images/wheel-building/erd_demonstration3.jpg){:height="320px" width="320px"}
 
 a) La valeur de X est facile à déterminer, il s'agit de la largeur du moyeu là où le moyeu sera installé sur le cadre
  (entraxe). 
@@ -484,7 +479,7 @@ Pour y arriver il faut mesurer y et z pour ce faire j'ai utilisé un bout de boi
 pouvoir poser l'extrémité du moyeu de chaque côté
 {: .text-justify}
 
-![moyeu](/assets/images/wheel-building/flange_support.jpeg){:height="480px" width="480px"} 
+![moyeu](/assets/images/wheel-building/flange_support.jpeg){: .align-center :height="320px" width="320px"} 
 
 Ensuite j'ai positionné le moyeu et j'ai les pris les mesures de chaque côté à l'aide d'une équerre.
 
@@ -494,9 +489,7 @@ Ensuite j'ai positionné le moyeu et j'ai les pris les mesures de chaque côté 
 Voici les valeurs relevées.
 
 $$
-Y = 29mm
-$$
-$$
+Y = 29mm \\
 Z = 48mm
 $$
 
@@ -504,10 +497,8 @@ Etant donné que le trait en pointillé bleu représente le milieu du moyeu X/2 
 la valeur de C et D.
 
 $$
-C = X/2 - Y = 130/2 - 29 = 36mm
-$$
-$$
-D = X/2 - Z = 130/2 - 48 = 17mm
+C = X/2 - Y = 130/2 - 29 = \boxed{36mm} \\
+D = X/2 - Z = 130/2 - 48 = \boxed{17mm}
 $$
 
 c) Maintenant je vais mesurer A et B pour déterminer la valeur de H (voir schema TODO). Et donc H n'est ni plus ni moins
@@ -556,7 +547,7 @@ On obtient un angle 15° x 4 = 60°.
 Maintenant j'ai tout ce qu'il faut pour appliquer la loi du cosinus et obtenir la valeur de L.
 
 TODO refaire un schema
-![moyeu](/assets/images/wheel-building/erd_demonstration4.jpg){:.align-center :height="480px" width="480px"}
+![moyeu](/assets/images/wheel-building/erd_demonstration6.jpg){:.align-center :height="480px" width="480px"}
 
 
 $$
@@ -666,9 +657,7 @@ S = \sqrt{36^2 + 20.5^2 + 235.5^2 - 2*235.5*20.5cos(60°)} \\
 S = \sqrt{1296 + 420.25 + 55460.25 - 9655.5*cos(60°)} \\
 S = \sqrt{57176.5 - 9655.5*0.5} \\
 S = \sqrt{57176.5 - 4827.75} \\
-S = \sqrt{52348.75}
-$$
-$$
+S = \sqrt{52348.75} \\
 \boxed{
 S = 228.798mm
 }
@@ -690,14 +679,11 @@ S = \sqrt{17^2 + 24.5^2 + 235.5^2 - 2*235.5*24.5cos(60°)} \\
 S = \sqrt{289 + 600.25 + 55460.25 - 11539.5*cos(60°)} \\
 S = \sqrt{56349.5 - 11539.5*0.5} \\
 S = \sqrt{56349.5 - 5769.75} \\
-S = \sqrt{50579.75}
-$$
-$$
+S = \sqrt{50579.75} \\
 \boxed{
 S = 224.899mm
 }
 $$
-
 
 ### Ajustement 1
 
@@ -744,7 +730,9 @@ $$
 On peut mettre à jour la formule comme ceci:
 
 $$
+\boxed{
 S = \sqrt{F^2 + H^2 + R^2 - 2RHcos\varphi} - r
+}
 $$
 
 ### Ajustement 2
@@ -758,6 +746,7 @@ l'élongation du rayon je vais utiliser le [Loi de Hooke](https://fr.wikipedia.o
 ![moyeu](/assets/images/wheel-building/elongation.jpeg){:.align-center :height="480px" width="480px"}
 
 Loi de Hooke appliquer à un cylindre
+
 $$
 L'/L = 1/E * F/A \\
 L' = F/A * L/E
@@ -770,15 +759,17 @@ Avec
 Soit 210 GPA
 
 - L = Longueur du rayon précédemment calculé
-L Gauche = 227.498mm = 0.227498m \\
-L Droite = 223.599mm = 0.223599m \\
+- L Gauche = 227.498mm = 0.227498m
+- L Droite = 223.599mm = 0.223599m
 
 - F = Force = Masse * Accélération = m * a
 
 Masse maximale = 100kg
 
 $$
+\boxed{
 Accélération = 9.81m/s^2
+}
 $$
 
 - A = L'aire de la section = π * R^2
@@ -810,7 +801,7 @@ $$
 Longueur réelle avant d'être étiré:
 
 $$
-227.498 - 0.601 = 226.897mm
+227.498 - 0.601 = \boxed{226.897mm}
 $$
 
 Côté droit:
@@ -823,14 +814,16 @@ $$
 Longueur réelle avant d'être étiré:
 
 $$
-223.599 - 0.591 = 222.999mm
+223.599 - 0.591 = \boxed{222.999mm}
 $$
 
 
 La formule final devient:
 
 $$
+\boxed{
 S = \sqrt{F^2 + H^2 + R^2 - 2RHcos\varphi} - r - L'
+}
 $$
 
 
@@ -1008,7 +1001,7 @@ Voici le résultat si j'affiche les rayons des 2 côtés.
 
 ![moyeu](/assets/images/wheel-building/lacage_step4.jpg){: .align-center :height="320px" width="320px"}
 
-![moyeu](/assets/images/wheel-building/lacage_step14.jpg){:height="240px" width="240px"}
+![moyeu](/assets/images/wheel-building/lacage_step14.jpg){: .align-center :height="320px" width="320px"}
 
 -------
 ### Etape 6: 
