@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Artificialimpact"
 title_separator          : "-"
 name                     : "Artificialimpact"
 description              : "An amazing website."
