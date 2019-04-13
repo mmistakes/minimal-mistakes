@@ -11,7 +11,8 @@ excerpt: "Share and learn more knowledge to go even further"
 
 intro:
   - show_avatar: true
-  - excerpt: "I'm a Full Stack Developer with 10 years of experience. I acquired some knowledge in different area which allow me to better understand things to go even further. I always want to learn more, that's why I created this blog in order to share my knowledge."
+  - excerpt: "I'm a DevOps Engineer with 10 years of experience. I acquired some knowledge in different area which allow me to 
+  better understand things to go even further. I always want to learn more, that's why I created this blog in order to share my knowledge."
 feature_row1:
   - image_path: /assets/images/wheel-building/result4.jpg
     alt: "placeholder image 2"
