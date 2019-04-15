@@ -14,84 +14,104 @@ tags:
   - Cyclisme
 ---
 
-Dans cet article je vais décrire toutes les étapes qui m'ont permis de réaliser ma première roue artisanale.
+Dans cet article, je vais décrire toutes les étapes qui m'ont permis de réaliser ma première roue artisanale.
 
-Dès que j'ai débuté le vélo je me suis très vite intéressé aux roues de vélo et compris l'importance 
-qu'elles avaient en terme de performance, de confort et de sensation. J'ai acheté plusieurs paires bon marché sans me
-soucier de tous les critères que l'on verra à travers cet article. Puis je me suis fait monter une paire
-de roue artisanale (38mm) par un professionnel. Des roues qui passent partout, elles sont légères ce qui les
-rend réactives et leur hauteur  permet d'avoir une touche d'aérodynamisme. Un jour, un rayon m'a lâché et c'est à 
-partir de là que j'ai commencé à m'intéresser au roue. En effet, j'ai commencé par réparer mon rayon cassé ce qui 
-m'a amené à entamé mes recherches et approfondir mes connaissances sur le sujet. Je suis passionné de sport et de part 
-mon métier d'ingénieur, je suis toujours à soif de connaissance et d'apprendre de nouvelles choses. Je me suis lancé
-dans ce nouveau challenge avec pour objectif de réaliser une roue spécifique pour les parcours plats que l'on 
-retrouve sur certain triathlon ou duathlon que j'ai l'habitude de pratiquer. Une roue aérodynamique qui une fois lancée
-offre une bonne inertie et assez légère et rigide pour pouvoir relancer efficacement et transmettre avec le moins de
-perte possible toute la puissance fourni par le bonhomme.
+Dès que j'ai débuté le vélo, je me suis très vite intéressé aux roues de vélo et compris l'importance 
+qu'elles avaient en terme de performance, de confort et de sensations. J'ai acheté plusieurs paires bon marché sans me
+soucier de tous les critères. Puis je me suis fait monter une paire de roue artisanale (en 38mm) par un professionnel. 
+Des roues qui passent partout, elles sont légères ce qui les rend réactives et leurs hauteurs permettent d'avoir une 
+touche d'aérodynamisme. Un jour, un rayon m'a lâché et c'est à partir de là que j'ai commencé à m'intéresser aux roues. 
+En effet, j'ai commencé par réparer mon rayon cassé ce qui m'a amené à entamer mes recherches et approfondir mes 
+connaissances sur le sujet. Je suis passionné de sport, toujours à soif de connaissances et d'apprendre de 
+nouvelles choses. Je me suis lancé dans ce nouveau challenge avec pour objectif de réaliser une roue spécifique 
+pour optimiser l'aérodynamisme, sur des parcours plats que l'on retrouve sur certains triathlon ou duathlon 
+que j'ai l'habitude de participer. Une roue aérodynamique qui une fois lancée
+offre une bonne inertie. Mais aussi assez légère et rigide pour pouvoir la relancer efficacement. Et enfin 
+transmettre avec le moins de perte possible, toute la puissance fournie par le cycliste.
 {: .text-justify}
 
 Mon but est de ne pas "réinventer la roue", je vais donc essentiellement partager mon retour d'expérience,
 partager ce que j'ai appris, les choix que j'ai fait, les articles et les livres qui m'ont permis de finaliser ma 
-première roue. Je détaillerai toutes les étapes pour bien choisir tous les composants, puis je partagerai l'expérience
-du montage jusqu'au premier test sur route.
+première roue. Dans un premier temps, je détaillerai toutes les étapes qui m'ont permis de bien choisir tous les 
+composants, puis je partagerai l'expérience du montage et enfin je terminerai par mon premier test sur route.
 {: .text-justify}
 
 
 # Caractéristiques
 
-Une roue parfaite, adaptée pour tous les parcours
- et conditions climatiques n'existe pas. C'est pourquoi les cyclistes possèdent généralement plusieurs paires que ce soit
-juste pour avoir une paire pour l'entrainement et une pour la compétition. Il est possible de réaliser aujourd'hui de nombreux montages
-pour répondre à tout type de parcours (Montagne, plat ou vallonnée), condition climatique (sens et force du vent, 
-pluie) et le type de coureur (grimpeur, rouleur, puncheur...). Vous comprenez qu'avec tout ces paramètres il faudrait
+Une roue parfaite, adaptée pour tous les parcours et conditions climatiques n'existe pas. C'est pourquoi les 
+cyclistes possèdent généralement plusieurs paires que ce soit juste pour avoir une paire pour l'entrainement et une 
+pour la compétition. Il est possible de réaliser aujourd'hui de nombreux montages pour répondre à tout type de 
+parcours (Montagne, plat ou vallonnée), condition climatique (sens et force du vent, 
+pluie) et le type de coureur (grimpeur, rouleur, puncheur...). Vous comprenez qu'avec tous ces paramètres il faudrait
 20 paires dans son garage pour répondre à toutes ces conditions ce qui est assez difficile à réaliser surtout pour 
-faire accepter ça à sa femme. Il faut donc faire des compromis, pour cela il faut se poser les bonnes questions:
-quel est vraiment mon besoin ?.
+faire accepter ça à sa femme. Il faut donc faire des compromis, pour cela il faut se poser les bonnes questions.
+{: .text-justify}
 
-La force Radial:
-Vient essentiellement du poids du cycliste.
+Une bonne roue ne veut rien dire si elle n'est pas remis dans le contexte du parcours, l'environnement ou encore
+le type de cycliste. Je vais essayer de décrire les propriétés physiques d'une roue afin de pouvoir déterminer
+sur quelle paramètres il faut jouer pour réaliser la roue dont on a réellement besoin.
 
-Latéral:
-Quand on se fait en danseuse
+Une roue est soumis à 3 forces radial, latéral et torsional. C'est avec ces 3 forces que l'ont va pouvoir parler
+de la rigidité de la roue. La force radial c'est la force induit par le poids du cycliste et la compression
+avec la route. Donc une bonne roue devra supporter le poids du cycliste sans se déformer. Une jante carbone ou alu
+d'aujourd'hui offrent ce qu'il faut pour largement supporter cette charge. La force latéral va être soumis à la 
+roue quand le cycliste va se mettre en danseuse et la force torsional va être provoqué par la puissance développé
+dans le coup pédale jusqu'au moyeu. Pour la force Torsional et Latéral, un moyeu costaud et des rayons bien tendu
+vont permettre le moins de déformation et donc retransmettre le maximum de la puissance dévéloppé jusqu'à la route.
+Plus la roue retransmet la puissance développé plus la roue est rigide. 
+{: .text-justify}
 
-Torsional:
-Quand on appuie sur la pédale
+TODO schema
 
-Rigidité
-- Radial
-- Latéral
-- Torsional
+Ensuite une roue a un déplacement cinétique ce qui va permettre d'obtenir de l'inertie. Pour 
+avoir le plus d'inertie possible il faut optimiser son aérodynamisme mais pas que. En effet, plus on sera lourd
+plus on ira vite une fois lancée. Mais il sera judicieux de plus optimiser l'aérodynamisme que d'augmenter le poids
+car plus on sera lourd plus ce sera dure d'atteindre le moment d'inertie. A l'image d'un train qui emettre un couple
+énorme au démarrage puis une fois lancée fournir très peu d'énergie. Mais pour un cycliste, qui a besoin de faire des
+relance en permanence cela n'est pas possible.
+{: .text-justify}
 
-- On joue sur le nombre de rayons , 24 est un bon compromis
-- 
+Pour obtenir une roue aérodynamique, la hauteur de jante, le nombre de rayons, la largeur de la jante ou encore le 
+nombre de rayons et leur forme. L'idéal est une roue pleine, l'air s'écoule directement vers l'extérieur. Elle sera 
+aussi plus lourde donc une fois lancée aura une inertie optimum. Le cycliste pourra aller plus vite en fournissant la
+ même puissance. Mais la roue pleine est très plus dur à relancer et si le vent est de côté ça devient un fardeau. 
+ Donc une roue pleine pour faire
+du chrono sur terrain plat avec un vent favorable. Le compromis est donc de jouer la hauteur de la jante, par example
+une 88mm offrira plus d'aerodynamisme qu'une 38mm car une surface d'évacuation de l'air plus grande. Mais il faudra
+faire attention à ne pas avoir trop de rayons car qui dit plus de rayons dit plus de frottement donc une perte. Et il
+faudra opter pour des rayons plats afin de limiter ces frottements. La largeur de la jante pourra aussi contribuer
+à la bonne évacuation de l'air et enfin il faudra un moyeu qui offrira le moins de frottement au niveau des roulements.
+De plus l'aérodynamisme va se jouer à l'arrière à l'avant ça beaucoup moins d'importance car dans tous les cas l'air
+devra passer la largeur du cycliste. Il faut aussi penser que plus la hauteur de roue à l'avant sera haute plus le vélo
+sera moins magnable. Le gain entre mettre une roue 50 ou 88  à l'avant est tellement négligeable qu'il vaut mieux 
+préféré le bon controle du vélo. Enfin, l'inertie va se sentir seulement à plus 30-35km/h donc si vous n'êtes pas 
+capable d'atteindre cette vitesse ça ne sert à rien. Trop de cycliste ont des vélos qui ne sont pas capable d'envoyer
+et qui souffre tous les dimanches. Certes c'est beau, ça fait pro mais pas adapté.
+{: .text-justify}
 
+Pour obtenir une roue dynamique qui répond à toutes les attaques, il faudra une roue légère donc il faudra optimiser
+le poids de tous les composants mais il faudra qu'elle soit assez rigide pour subir la force latéral en danseuse. Donc
+une roue carbone aura plus de répondant. Pour faire du parcours vallonnée avec beaucoup de relance une paire de 38mm
+avec un moyeu léger permet à la fois dynamisme et une touche d'aérodynamisme. C'est vraiment la roue polyvalente
+car même si il y a du veny,ça passe. Elles sont vraiment un bon compromis et on en voit de plus dans les peletons.
+{: .text-justify}
 
-- Une jante haute
-- Une flange haute
-- Plus de rayons
+Pour faire de la pure montagne il faudra la roue la plus légère possible donc il faudra jouer sur une hauteur de jante
+basse, pas large, peu de rayons et un moyeu léger.
+{: .text-justify}
 
-Aérodynamique
-- Il faut rouler à une certaine vitesse
-- Une jambes haute 
-- Largeur de la jante
-- Qualité du boyau
+Pour faire des parcours de plaine en groupe, pour cycliste type rouleur ou sprinteur, on pourra opter pour une paire de
+50mm mais en prenant un moyeu avec des flasques hautes ce qui permettra d'être plus rigide car les rayons seront plus
+ court. Une roue à la fois aérodynamique assez facile à relancer pour tenir les roues et d'envoyer du gros braquet
+ pour les sprints
+{: .text-justify}
 
-Dynamique
-- Légèreté du moyeu
-- Moins de rayons
-
-Confort:
-- La qualité du boyau
-- La largeur de la jante et boyau
-
-Une bonne roue résulte d’une bonne combinaison de tous ses composants selon le besoin du coureur:
-- Le type de parcours (vallonnée, vent, montagne)
-- Le type du coureur (poids, puissance)
-
+Il existe encore plein de combinaisons possible étant donné le nombre de paramètres. 
+Une bonne roue résulte d’une bonne combinaison de tous ses composants selon le besoin du coureur.
 Et surtout on peut pas dire que c’est une bonne roue parce qu’elle est belle au visuel.
-
 Ce que je conseille, c’est d’avoir plusieurs type de roue selon le parcours et les conditions. C’est sûr on
-Peut pas avoir 30 paires. Mais 2 ou 3 paires on peut couvrir un grand nombre de cas.
+Peut pas en avoir 30 paires. Mais 2 ou 3 paires on peut couvrir un grand nombre de cas.
 {: .text-justify}
 
 # Composants
@@ -412,8 +432,8 @@ mais en prenons en compte la distance où va vraiment se loger les rayons dans l
 est fourni quand on achète une jante mais ils ne prennent souvent pas en compte le type d'ecrou, il s'agit
 du diamète à l'intérieur de la jante. Mon fournisseur ma donnée 464.5mm, on verra qu'au final
 nous serons très loin de cette valeur. Alors comment le mesurer, j'ai regardé pas mal de vidéos et de
-tutoriaux et celui qui m'a paru le plus simple, précis et efficace est le suivant, encore une fois
-c'est mon avis personnel. Cette façon vient du livre de Roger Musson (TODO)
+tutoriaux, et celui qui m'a paru le plus simple, précis et efficace est le suivant, encore une fois
+c'est mon avis personnel.
 {: .text-justify}
 
 
@@ -928,15 +948,36 @@ Le tensiomètre va permettre de vérifier la bonne tension sur l'ensemble des ra
 
 ## Laçage
 
-Tout est décrit dans la littérature et il y a plein de video sur youtube pour aider à comprendre
-mais le top c'est cette application que j'ai trouvé par hasard qui est énorme. Elle permet d'avoir
-une à 360° et selon le nombre de rayons et de croisements que l'on souhaite faire. On va pouvoir
-décomposer chaque étape est pouvoir regarder sous tous les angles. 
+Tout est décrit dans la littérature et il y a pleins de videos sur Youtube pour aider à comprendre
+mais le top c'est cette application [Rad 3D](https://appadvice.com/app/rad-3d/1103912788) que j'ai trouvé par hasard. 
+Elle permet d'avoir unevue à 360° et selon le nombre de rayons et de croisements que l'on souhaite faire. On va pouvoir
+décomposer chaque étape est pouvoir regarder sous tous les angles. Je vais détailler les étapes pour mon type de 
+montage, en effet, il y a plusieurs façon de lacé.:
 
-- TODO Radial pas radial
-- TODO type de laçage 
-- TODO 2 croisements
-- TODO application 3D
+- Radial: Les rayons ne ce croisent pas. On retrouve se type de montage sur les roues avant mais parfois sur le  côté
+gauche du moyeu à l'arrière ce qui n'a qu'un intérêt en terme d'esthétisme. De plu, un montage radial fragilise la roue 
+surtout au niveau du freinage. Mes roues 38mm que j'avais fait monter, à l'arrière ont 8 rayons radial à gauche et 16 
+rayons avec 2 croisements à droite. Je comprends pourquoi ma roue chasse quand je sprint en danseuse. En effet les 8 rayons radiaux 
+sont la cause de se déséquilibre.
+
+Il existe 3 autres type de laçage  
+- A: Un lacage symétrique du côté gauche et côté droit (cassette). Les rayons qui sortent du moyeu vers l'extérieur
+vont croisés les rayons qui sortent par l'intérieur  en passant en-dessous.
+- B: Un autre lacage symétrique est de faire l'inverse du précédement.
+
+C'est de type de montage n'apporte rien en terme de performance. Par contre ils ont une légère différence au freinage
+notamment si on a des freins à disque. En effet, lors du freinage les rayons vont se tirer avec le premier type
+de laçage, les rayons vont être tirer vers l'intérieur alors que dans l'autre cas vers l'extérieur ce qui pourrait
+toucher le disque de frein. L'autre différence c'est qu'à l'inverse lors du pédalage, le lacage de type A vont tirer
+vers l'extérieur ce qui pourrait venir toucher la cassette... Après d'après ce que j'ai lu, il y a souvent largement
+assez d'espace pour ne pas toucher la cassette ou le frein à disque. 
+{: .text-justify}
+
+- Enfin, un dernier montage spécifique Shimano pour freins à disque pour les roues arrière que l'ont peut trouver
+sur internet.
+
+J'ai donc fait le choix de faire mon laçage de type A. 
+
 
 ![moyeu](/assets/images/wheel-building/lacage_step9.jpg){: .align-center :height="320px" width="320px"}
 
