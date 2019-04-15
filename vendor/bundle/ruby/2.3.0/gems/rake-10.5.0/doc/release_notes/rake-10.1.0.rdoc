@@ -1,0 +1,61 @@
+= Rake 10.1.0 Released
+
+== Changes in Version 10.1
+
+=== New Features
+
+* Add support for variable length task argument lists. If more actual
+  arguments are supplied than named arguments, then the extra
+  arguments values will be in args.extras.
+
+* Application name is not displayed in the help banner. (Previously
+  "rake" was hardcoded, now rake-based applications can display their
+  own names).
+
+=== Bug Fixes
+
+Bug fixes include:
+
+* Fix backtrace suppression issues.
+
+* Rules now explicit get task arguments passed to them.
+
+* Rename FileList#exclude? to FileList#exclude_from_list? to avoid
+  conflict with new Rails method.
+
+* Clean / Clobber tasks now report failure to remove files.
+
+* Plus heaps of internal code cleanup.
+
+== What is Rake
+
+Rake is a build tool similar to the make program in many ways. But
+instead of cryptic make recipes, Rake uses standard Ruby code to
+declare tasks and dependencies. You have the full power of a modern
+scripting language built right into your build tool.
+
+== Availability
+
+The easiest way to get and install rake is via RubyGems ...
+
+  gem install rake    (you may need root/admin privileges)
+
+Otherwise, you can get it from the more from GitHub:
+
+GitHub::    git://github.com/jimweirich/rake.git
+
+== Thanks
+
+As usual, it was input from users that drove a lot of these changes.
+The following people contributed patches, made suggestions or made
+otherwise helpful comments. Thanks to ...
+
+* Michael Nikitochkin (general code cleanup)
+* Vipul A M (general code cleanup)
+* Dennis Bell (variable length task argument lists)
+* Jacob Swanner (rules arguments)
+* Rafael Rosa Fu (documentation typo)
+* Stuart Nelson (install.rb fixes)
+* Lee Hambley (application name in help banner)
+
+-- Jim Weirich

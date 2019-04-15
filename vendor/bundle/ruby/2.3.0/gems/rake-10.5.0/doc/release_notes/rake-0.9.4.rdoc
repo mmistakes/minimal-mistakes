@@ -1,0 +1,60 @@
+= Rake 0.9.4 Released
+
+Rake version 0.9.4 contains a number of bug fixes.
+
+== Changes
+
+=== Bug Fixes (0.9.4)
+
+* Exit status with failing tests is not correctly set to non-zero.
+
+* Simplified syntax for phony task (for older versions of RDoc).
+
+* Stand alone FileList usage gets glob function (without loading in
+  extra dependencies)
+
+== What is Rake
+
+Rake is a build tool similar to the make program in many ways. But
+instead of cryptic make recipes, Rake uses standard Ruby code to
+declare tasks and dependencies. You have the full power of a modern
+scripting language built right into your build tool.
+
+== Availability
+
+The easiest way to get and install rake is via RubyGems ...
+
+  gem install rake    (you may need root/admin privileges)
+
+Otherwise, you can get it from the more traditional places:
+
+Home Page:: http://github.com/jimweirich/rake
+Download::  http://rubyforge.org/project/showfiles.php?group_id=50
+GitHub::    git://github.com/jimweirich/rake.git
+
+== Thanks
+
+As usual, it was input from users that drove a alot of these changes. The
+following people either contributed patches, made suggestions or made
+otherwise helpful comments.  Thanks to ...
+
+* Aaron Patterson
+* Dylan Smith
+* Jo Liss
+* Jonas Pfenniger
+* Kazuki Tsujimoto
+* Michael Bishop
+* Michael Elufimov
+* NAKAMURA Usaku
+* Ryan Davis
+* Sam Grönblom
+* Sam Phippen
+* Sergio Wong
+* Tay Ray Chuan
+* grosser
+* quix
+
+Also, many thanks to Eric Hodel for assisting with getting this release
+out the door.
+
+-- Jim Weirich

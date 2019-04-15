@@ -1,0 +1,20 @@
+current directory: /home/lua/Blog/site/rodrigowerberich.github.io/vendor/bundle/ruby/2.3.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/usr/bin/ruby2.3 -r ./siteconf20190414-20945-1wbjvvy.rb extconf.rb
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /home/lua/Blog/site/rodrigowerberich.github.io/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/eventmachine-1.2.7/mkmf.log
+
+current directory: /home/lua/Blog/site/rodrigowerberich.github.io/vendor/bundle/ruby/2.3.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" clean
+
+current directory: /home/lua/Blog/site/rodrigowerberich.github.io/vendor/bundle/ruby/2.3.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR="
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.so
+
+current directory: /home/lua/Blog/site/rodrigowerberich.github.io/vendor/bundle/ruby/2.3.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 fastfilereaderext.so ./.gem.20190414-20945-wiqe89

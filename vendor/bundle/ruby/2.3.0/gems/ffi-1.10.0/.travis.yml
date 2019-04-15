@@ -1,0 +1,43 @@
+dist: trusty
+sudo: false
+group: beta
+language: ruby
+before_install:
+  - gem install bundler
+script:
+  - bundle exec rake compile || bundle exec rake compile
+  - bundle exec rake test
+os:
+  - linux
+  - osx
+rvm:
+  - 2.3.8
+  - 2.4.5
+  - 2.5.3
+  - 2.6.0
+  - ruby-head
+  - system
+env:
+  - CC=gcc
+  - CC=clang
+matrix:
+  allow_failures:
+    - rvm: system
+    - os: osx
+      rvm: ruby-head
+  exclude: # ruby 2.4.2 needs build with xcode9 or later on osx
+    - os: osx
+      rvm: 2.4.2
+  include:
+    - os: osx
+      osx_image: xcode9.1
+      rvm: 2.4.2
+      env:
+      - CC=gcc
+    - os: osx
+      osx_image: xcode9.1
+      rvm: 2.4.2
+      env:
+      - CC=clang
+after_failure:
+  - "find build -name mkmf.log | xargs cat"
