@@ -1,5 +1,9 @@
 ## Unreleased
 
+### Enhancements
+
+- Update jQuery to v3.4.0. [#2129](https://github.com/mmistakes/minimal-mistakes/pull/2129)
+
 ### Bug Fixes
 
 - Fix Gumshoe related JavaScript error on pages without a table of contents. [#2124](https://github.com/mmistakes/minimal-mistakes/pull/2124)
