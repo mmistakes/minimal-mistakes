@@ -1079,8 +1079,8 @@ vissé chaque rayon jusqu'à que le filetage ne soit plus visible.
 A l'aide de la jauge de centrage je vérifie l'état de mon alignement. Pour l'instant il est complètement faux ce qui 
 normal. Mais on constate bien qu'il va ramener le moyeu au centre de la jante. Pour cela il va falloir plus visser 
 les rayons d'un côté. Donc pour faire simple, si je visse les rayons côté cassette cela va ramener la jante vers la 
-droite (Quand on sert les rayons il faut bien comprendre que c'est la jante qui bouge et pas le moyeu) et inversement 
-si je sers ce de gauche. Donc selon l'état de l'alignement il faut jouer sur les rayons de gauche et droite. Donc 
+droite (quand on sert les rayons il faut bien comprendre que c'est la jante qui bouge et pas le moyeu) et inversement 
+si je sers ce de gauche. Donc selon l'état de l'alignement il faut jouer sur les rayons de gauche et de droite. Donc, 
 je sers de 2 tours de tournevis sur chaque rayon à droite et 1 tour pour les rayons côté gauche. Il faut savoir 
 que plus on va avancer dans la mise sous tension plus il faudra limiter le nombre de tour jusqu'à faire des quarts 
 de tour pour les derniers ajustements. Si on ne fait pas progressivement, il sera impossible de dévoiler la roue 
@@ -1089,10 +1089,10 @@ dans les étapes suivantes.
 
 ### Etape 3
 
-J'ai serré mes rayons des 2 côtés de manière équilibré afin d'arriver à un alignement un peu près correct, j'ai 2mm
-d'erreur ce qui est normal à cette étape. Mais il est pas la peine de continuer si l'erreur est plus grande car plus
+J'ai serré mes rayons des 2 côtés de manière équilibré afin d'arriver à un alignement à peu près correct, j'ai 2mm 
+d'erreur ce qui est normal à cette étape. Mais c'est pas la peine de continuer si l'erreur est plus grande, car plus 
 les rayons seront sous tension plus il sera difficile de corriger une erreur d'alignement. J'ai donc vérifié 
-l'alignement fréquememnt tout au long de la mise sous tension. On constate bien l'alignement à obtenir dans le schema
+l'alignement fréquemment tout au long de la mise sous tension. On constate bien l'alignement à obtenir dans le schéma 
 ci-dessous.
 {: .text-justify}
 
@@ -1104,40 +1104,40 @@ Voici quelques liens intéressants:
 
 ### Etape 4
 
-La roue à maintenant un alignement correct, je vais pouvoir continuer la mise sous tension. Je vais dans cette étape
-dévoilé la roue. Donc avec le centreur c'est assez simple mais il faut prendre son temps. J'ai utilisé du ruban 
-adéhsif pour mettre des repères sur les rayons qui posent problèmes. Ensuite, comme je l'ai dit précédement si je veux
+La roue a maintenant un alignement correct, je vais pouvoir continuer la mise sous tension. Je vais dans cette étape 
+dévoiler la roue. Donc avec le centreur c'est assez simple, mais il faut prendre son temps. J'ai utilisé du ruban 
+adhésif pour mettre des repères sur les rayons qui posent problèmes. Ensuite, comme je l'ai dit précédemment si je veux 
 ramener ma jante à droite, je serre les rayons qui sont rattachés à la partie droite du moyeu et inversement pour 
-l'autre côté. Ce qui veut dire aussi qu'il est possible à cette étape de devoir déserrer un peu certain rayon. 
-J'effectue des quarts de tour et je regarde le résultat et j'itère jusqu'à obtenir une roue non voilée. On peu sentir
-si des rayons sont moins tendus que d'autres il faut essayer d'arriver à avoir une tension uniforme, on peut le faire
-facilement au touché, juste pressant sur les rayons entres eux.
+  l'autre côté. Ce qui veut dire aussi qu'il est possible à cette étape de devoir desserrer un peu certain rayon. 
+J'effectue des quarts de tour et je regarde le résultat et j'itère jusqu'à obtenir une roue non voilée. On peut sentir 
+si des rayons sont moins tendus que d'autres il faut essayer d'arriver à avoir une tension uniforme, on peut le faire 
+facilement au toucher, juste pressant sur les rayons entre eux.
 {: .text-justify}
 
 [Dévoilé une roue](https://www.youtube.com/watch?v=gJgH63gQmrE)
 
 ### Etape 5
 
-La roue est dévoilée et alignée, il faut maintenant finalisé la mise sous tension. Je fais des quarts de tours sur tous
-les rayons tout en vérifiant de garder l'alignement et de ne pas voilée la roue. Je sens que ma roue commence à être
-bien, rien qu'au touché on sent qu'ils sont bons. Il est normal que les rayons côté droit soit plus tendu que ce de
-gauche de part la géométrie du moyeu. Il est surtout important que la tension côté cassette soit bonnes sur tous
-les rayons car c'est de ce côté que les forces vont être le plus sollicitées. J'utilise enfin un tensionmètre 
+La roue est dévoilée et alignée, il faut maintenant finaliser la mise sous tension. Je fais des quarts de tours sur 
+tous les rayons tout en vérifiant de garder l'alignement et de ne pas voilée la roue. Je sens que ma roue commence à être 
+bien, rien qu'au toucher on sent qu'ils sont bons. Il est normal que les rayons côté droit soit plus tendu que ce de 
+gauche de part la géométrie du moyeu. Il est surtout important que la tension, côté cassette soit bonne sur tous 
+les rayons, car c'est de ce côté que les forces vont être le plus sollicitées. J'utilise enfin un tensiomètre 
 pour vérifier que j'ai une tension équivalent pour tous les rayons de chaque côté. Pour le niveau de tension il 
-y a plusieurs école, les gens qui utilisent juste le touché ou le son quand on pince les rayons et d'autres à la valeur
-de la tension. J'avoue que la méthode au touché suffit car il faut savoir que des rayons trop tendu n'apporteront pas
-plus de rigidité et au contraire fatigué le rayon plus rapidement. Evidement un rayon pas assez tendu aura aussi des 
-conséquences sur la longétivité des rayons et de résistance au poids du bonhomme et aux contraintes  de la route. Donc
-il faut trouver le bon compromis, moi j'ai fait au touché puis vérifier au tensionmètre pour voir ce que ça valait.
-Mais je n'ai pas mis exactement la tension indiqué pour mon poids. 
+y a plusieurs écoles, des gens utilisent juste le toucher ou le son, quand on pince les rayons et d'autres à la 
+valeur de la tension. J'avoue que la méthode au toucher suffit, car il faut savoir que des rayons trop tendus n'apporteront 
+pas plus de rigidité et au contraire fatigué le rayon plus rapidement. Evidemment un rayon pas assez tendu aura aussi
+ des conséquences sur la longévité des rayons et de résistance au poids du bonhomme et aux contraintes  de la route. Donc 
+il faut trouver le bon compromis, moi j'ai fait au toucher puis vérifier au tensiomètre pour voir ce que ça valait. 
+Mais je n'ai pas mis exactement la tension indiquée pour mon poids. 
 {: .text-justify}
 
 
 ## Assemblage
 
-La roue nue est prête, il faut maintenant possible d'assembler les éléments pour qu'elle puisse
-intérargir avec la route et l'attacher au cadre du vélo. Je ne vais pas détailler ce que j'ai fait
-car ce serait réinventer la "roue", voici des videos Youtube qui correspondent à ce que j'ai fait.
+La roue nue est prête, il faut maintenant possible d'assembler les éléments pour qu'elle puisse 
+interargir avec la route et l'attacher au cadre du vélo. Je ne vais pas détailler ce que j'ai fait, 
+car ce serait "réinventer la roue", voici des videos Youtube qui correspondent à ce que j'ai fait.
 {: .text-justify}
 
 ### Mise en place du prolongateur de valve.
@@ -1149,22 +1149,22 @@ car ce serait réinventer la "roue", voici des videos Youtube qui correspondent 
 ![moyeu](/assets/images/wheel-building/prolongateur2.jpg){:height="200px" width="200px"}
 ![moyeu](/assets/images/wheel-building/prolongateur_valve_miche.jpg){:height="200px" width="200px"} 
 
-- Une petite clé est souvent livré avec les prolongateurs de valve afin d'enleve l'obu facilement
-- Il existe des anti-vibrateurs à coller afin que la valve ne vibre sur la jante pendant que l'on roule. En effet
-contrairement à une valve de chambre à air qui ne bougera pas à la mise sous pression, sur un boyau c'est différent
-le boyau plus rigide ne permet pas cela. Les prolongateurs de valve Miche contiennent directement leurs anti-vibrateurs
-qui sont top. Sinon il est possible de mettre juste de passer un ruban adhésif gratuit mais moins esthétique.
+- Une petite clé est souvent livrée avec les prolongateurs de valve afin d'enleve l'obu facilement 
+- Il existe des anti-vibrateurs à coller afin que la valve ne vibre sur la jante pendant que l'on roule. En effet, 
+contrairement à une valve de chambre à air qui ne bougera pas à la mise sous pression, sur un boyau c'est différent 
+le boyau plus rigide ne permet pas cela. Les prolongateurs de valve Miche contiennent directement leurs anti-vibrateurs 
+qui sont top. Sinon il est possible de mettre juste de passer un ruban adhésif gratuit, mais moins esthétique.
 {: .notice--primary}
 
 ### Collage du boyau
 
 [Collage du boyau](https://www.youtube.com/watch?v=R7_9_BGsdGo)
 
-- J'ai une vieille jante que j'ai récupéré dans une déchetterie que j'utilise essentiellement pour étendre
-mes boyaux avant collage.
-- Je ponce la jante pour enlever l'ancienne colle ou quand la jante est neuve pour la rendre un peu rugueuse
-afin que la colle adhère plus facilement.
-- J'utilise de l'essence F pour nettoyer ma jante pour enlever tous les résidus de colle qui débordent.
+- J'ai une vieille jante que j'ai récupéré dans une déchetterie que j'utilise essentiellement pour étendre 
+mes boyaux avant collage. 
+- Je ponce la jante pour enlever l'ancienne colle ou quand la jante est neuve pour la rendre un peu rugueuse 
+afin que la colle adhère plus facilement. 
+- J'utilise de l'essence F pour nettoyer ma jante pour enlever tous les résidus de colle qui débordent. 
 {: .notice--primary}
 
 ### Cassette
@@ -1173,39 +1173,39 @@ afin que la colle adhère plus facilement.
 
 ![moyeu](/assets/images/wheel-building/cassette1.jpg){: .align-center :height="320px" width="320px"}
 
-- Je profite du changement de cassette pour bien la nettoyer et dégraisser
+- Je profite du changement de cassette pour bien la nettoyer et dégraisser.
 {: .notice--primary}
 
 
 ## Mise sous pression
 
-Il est temps de confler le boyau, je mets 9-10Bars en général. Tout dépend de la limite indiqué par le revendeur
-et ce qui est recommender par la jante. Mais plus on pourra mettre de pression, plus le boyau aura moins d'adhérence
-avec le sol donc moins de frottement et donc plus de vitesse pour le même effort fourni. Le seul compromis c'est que
-plus on a de pression plus on perd on confort car le moindre choc est plus répercuté jusqu'au cycliste. Avec moins de
-pression les chocs sont plus absorbés par le boyau. Encore une fois un compromis à faire.
+Il est temps de gonfler le boyau, je mets 9-10Bars en général. Tout dépend de la limite indiquée par la marque 
+et ce qui est recommandée par la jante. Mais plus on pourra mettre de pression, plus le boyau aura moins d'adhérence 
+avec le sol donc moins de frottement et donc plus de vitesse pour le même effort fourni. Le seul compromis c'est que 
+plus on a de pression plus on perd en confort, car le moindre choc est plus répercuté jusqu'au cycliste. Avec moins de 
+pression les chocs sont plus absorbés par le boyau. Encore une fois, un compromis à faire.
 {: .text-justify}
 
 
 ## Attache rapide
 
-Pour les attaches rapide, j'en ai pas acheté de nouveaux, j'utilise les meême pour toutes mes roues c'est pas 
-contraignant à interchanger. Il est tout de même important d'avoir une bonne paire d'attache rapide surtout en terme
-de légèreté car il est facile d'alourdir la roue en prenant du bas de gamme, ce serait dommage de perdre les 
+Pour les attaches rapides, j'en ai pas acheté de nouveaux, j'utilise les mêmes pour toutes mes roues ce n'est pas 
+contraignant à interchanger. Il est tout de même important d'avoir une bonne paire d'attache rapide surtout en terme 
+de légèreté, car il est facile d'alourdir la roue en prenant du bas de gamme, ce serait dommage de perdre les 
 grammes gagnés sur le moyeu et la jante...
 {: .text-justify}
 
 ## Patin de freins
 
-Etant donné que sur une jante à boyau le freinage va se faire directement sur le boyau contraiement sur des jantes
-à pneu où un cercle en alu est rajouté. Il faut donc des pâtins de freins spéciaux, moi j'utilise des SwissStop Flash
-Pro qui fonctionne sur tout type de jante ce qui est pratique quand je mets mes roues à pneu. 
+Etant donné que sur une jante à boyau le freinage va se faire directement sur le boyau contrairement sur des jantes 
+à pneu où un cercle en alu est rajouté. Il faut donc des patins de freins spéciaux, moi j'utilise des SwissStop Flash 
+Pro qui fonctionne sur tous types de jante ce qui est pratique quand je mets mes roues à pneu. 
 
 ## Premier test et ajustements
 
-Etant donné que j'ai opté pour une roue de largeur 25mm, il faut que j'écarte un peu mon étrier de frein afin que ma
-roue puisse passer. Mon étrier est compatible avec des jantes jusqu'à 28mm donc pas de souci mais ça se vérifie avant
-d'acheter. C'est assez facile avec une clé allen, c'est vite régler. J'installe la roue sans problème et voilà le
+Etant donné que j'ai opté pour une roue de largeur 25mm, il faut que j'écarte un peu mon étrier de frein afin que ma 
+roue puisse passer. Mon étrier est compatible avec des jantes jusqu'à 28mm donc pas de souci mais ça se vérifie avant 
+d'acheter. C'est assez facile avec une clé Allen, c'est vite réglé. J'installe la roue sans problème et voilà le 
 résultat en image ci-dessous.
 {: .text-justify}
 
@@ -1243,14 +1243,13 @@ Une roue arrière coûte plus cher, plus de rayons, moyeu plus cher, plus de ray
 
 # Conclusion
 
-J'espère que cet article permettra à d'autres perssonnes de trouver des réponses ou de tenter
-l'expérience. Pour ma part, je suis très fier du résultat et je projette de me faire d'autres
-montage (Moyeu straight pull) et pourquoi pas monter son vélo soi-même. 
+J'espère que cet article permettra à d'autres personnes de trouver des réponses ou de tenter 
+l'expérience. Pour ma part, je suis très fier du résultat et je projette de me faire d'autres 
+montages (Moyeu Straight Pull) et pourquoi pas monter mon vélo de A-Z. 
 {: .text-justify}
 
 ![moyeu](/assets/images/wheel-building/result1.jpg){:height="200px" width="240px"} 
 ![moyeu](/assets/images/wheel-building/result2.jpg){:height="240px" width="240px"} 
-![moyeu](/assets/images/wheel-building/result3.jpg){:height="240px" width="240px"} 
 ![moyeu](/assets/images/wheel-building/result4.jpg){:height="240px" width="240px"} 
 
 
