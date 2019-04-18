@@ -14,150 +14,150 @@ tags:
   - Cyclisme
 ---
 
-Dans cet article, je vais décrire toutes les étapes qui m'ont permis de réaliser ma première roue artisanale.
+Dans cet article, je vais décrire toutes les étapes qui m'ont permis de réaliser ma première roue artisanale. 
 
 Dès que j'ai débuté le vélo, je me suis très vite intéressé aux roues de vélo et compris l'importance 
-qu'elles avaient en terme de performance, de confort et de sensations. J'ai acheté plusieurs paires bon marché sans me
-soucier de tous les critères. Puis je me suis fait monter une paire de roue artisanale (en 38mm) par un professionnel. 
+qu'elles avaient en terme de performance, de confort et de sensations. J'ai acheté plusieurs paires, bon marché sans 
+me soucier de tous les critères. Puis je me suis fait monter une paire de roue artisanale (en 38mm) par un professionnel. 
 Des roues qui passent partout, elles sont légères ce qui les rend réactives et leurs hauteurs permettent d'avoir une 
 touche d'aérodynamisme. Un jour, un rayon m'a lâché et c'est à partir de là que j'ai commencé à m'intéresser aux roues. 
-En effet, j'ai commencé par réparer mon rayon cassé ce qui m'a amené à entamer mes recherches et approfondir mes 
-connaissances sur le sujet. Je suis passionné de sport, toujours à soif de connaissances et d'apprendre de 
-nouvelles choses. Je me suis lancé dans ce nouveau challenge avec pour objectif de réaliser une roue spécifique 
-pour optimiser l'aérodynamisme, sur des parcours plats que l'on retrouve sur certains triathlon ou duathlon 
-que j'ai l'habitude de participer. Une roue aérodynamique qui une fois lancée
-offre une bonne inertie. Mais aussi assez légère et rigide pour pouvoir la relancer efficacement. Et enfin 
-transmettre avec le moins de perte possible, toute la puissance fournie par le cycliste.
+En effet, j'ai commencé par réparer mon rayon cassé ce qui m'a amené à entamer mes recherches et approfondir 
+mes connaissances à ce sujet. Je suis passionné de sport, toujours à soif de connaissances et d'apprendre de nouvelles 
+choses. Je me suis lancé dans ce nouveau challenge avec pour objectif de réaliser une roue spécifique pour optimiser 
+l'aérodynamisme, sur des parcours plats que l'on retrouve sur certains Triathlons ou Duathlons que j'ai l'habitude de 
+participer. Une roue aérodynamique qui une fois lancée, offre une bonne inertie. Mais aussi assez légère et rigide 
+pour pouvoir la relancer efficacement. Et enfin transmettre avec le moins de perte possible, toute la puissance 
+fournie par le cycliste.
 {: .text-justify}
 
-Mon but est de ne pas "réinventer la roue", je vais donc essentiellement partager mon retour d'expérience,
+Mon but est de ne pas "réinventer la roue", je vais donc essentiellement partager mon retour d'expérience, 
 partager ce que j'ai appris, les choix que j'ai fait, les articles et les livres qui m'ont permis de finaliser ma 
 première roue. Dans un premier temps, je détaillerai toutes les étapes qui m'ont permis de bien choisir tous les 
-composants, puis je partagerai l'expérience du montage et enfin je terminerai par mon premier test sur route.
+composants. Puis, je partagerai l'expérience du montage et enfin je terminerai par mon premier test sur route.
 {: .text-justify}
 
 
 # Caractéristiques
 
-Une roue parfaite, adaptée pour tous les parcours et conditions climatiques n'existe pas. C'est pourquoi les 
-cyclistes possèdent généralement plusieurs paires que ce soit juste pour avoir une paire pour l'entrainement et une 
-pour la compétition. Il est possible de réaliser aujourd'hui de nombreux montages pour répondre à tout type de 
-parcours (Montagne, plat ou vallonnée), condition climatique (sens et force du vent, 
-pluie) et le type de coureur (grimpeur, rouleur, puncheur...). Vous comprenez qu'avec tous ces paramètres il faudrait
-20 paires dans son garage pour répondre à toutes ces conditions ce qui est assez difficile à réaliser surtout pour 
-faire accepter ça à sa femme. Il faut donc faire des compromis, pour cela il faut se poser les bonnes questions.
+Une roue adaptée à tous les parcours et toutes les conditions climatiques n'existe pas. C'est pourquoi les 
+cyclistes possèdent généralement plusieurs paires que ce soit pour avoir une paire pour l'entrainement et une 
+pour la compétition ou pour répondre à des épreuves différentes. Il est possible de réaliser, aujourd'hui de nombreux 
+montages pour répondre à tous les types de parcours (Montagne, plat ou vallonnée), de conditions climatiques (sens et 
+force du vent, pluie) et de coureurs (grimpeur, rouleur, puncheur...). Vous comprenez qu'avec tous ces paramètres, il 
+faudrait 20 paires dans son garage... ce qui est assez difficile à réaliser et
+ surtout difficile à faire accepter ça à sa femme. Il faut donc faire des compromis, pour cela il faut se poser les 
+bonnes questions. Une bonne roue ne veut rien dire sans prendre en compte le contexte du parcours, 
+l'environnement ou encore le type de cycliste. Je vais essayer de décrire les propriétés physiques d'une roue afin de
+ pouvoir déterminer sur quels paramètres, il faudra jouer pour réaliser la roue dont on a réellement besoin.
 {: .text-justify}
 
-Une bonne roue ne veut rien dire si elle n'est pas remis dans le contexte du parcours, l'environnement ou encore
-le type de cycliste. Je vais essayer de décrire les propriétés physiques d'une roue afin de pouvoir déterminer
-sur quelle paramètres il faut jouer pour réaliser la roue dont on a réellement besoin.
-
-Une roue est soumis à 3 forces radial, latéral et torsional. C'est avec ces 3 forces que l'ont va pouvoir parler
-de la rigidité de la roue. La force radial c'est la force induit par le poids du cycliste et la compression
-avec la route. Donc une bonne roue devra supporter le poids du cycliste sans se déformer. Une jante carbone ou alu
-d'aujourd'hui offrent ce qu'il faut pour largement supporter cette charge. La force latéral va être soumis à la 
-roue quand le cycliste va se mettre en danseuse et la force torsional va être provoqué par la puissance développé
-dans le coup pédale jusqu'au moyeu. Pour la force Torsional et Latéral, un moyeu costaud et des rayons bien tendu
-vont permettre le moins de déformation et donc retransmettre le maximum de la puissance dévéloppé jusqu'à la route.
-Plus la roue retransmet la puissance développé plus la roue est rigide. 
+Une roue est soumis à 3 types d'effort qui vont provoquer une déformation: radiale, latérale et torsion. C'est avec 
+ces 3 types d'effort que l'ont va pouvoir parler de la rigidité de la roue. L'effort radial, c'est la force induit 
+par le poids du cycliste et la compression avec la route. Donc une bonne roue devra supporter le poids du cycliste 
+sans se déformer. Une jante en carbone ou en aluminium offrent aujourd'hui largement de quoi supporter cette charge. 
+La force latérale va être soumis à la roue quand le cycliste va se mettre en danseuse et l'effort de torsion va être
+ provoqué par la puissance développée dans le coup pédale jusqu'au moyeu. Pour l'effort de torsion et latéral, un moyeu
+ costaud et des rayons bien tendus vont permettre le moins de déformation et donc retransmettre le maximum de la 
+puissance développée jusqu'à la route. Plus la roue retransmet la puissance développée plus la roue est rigide. 
 {: .text-justify}
 
-TODO schema
+![Type d'effort](/assets/images/wheel-building/type_efforts.jpg){: .align-center :height="320px" width="320px"}
 
-Ensuite une roue a un déplacement cinétique ce qui va permettre d'obtenir de l'inertie. Pour 
-avoir le plus d'inertie possible il faut optimiser son aérodynamisme mais pas que. En effet, plus on sera lourd
-plus on ira vite une fois lancée. Mais il sera judicieux de plus optimiser l'aérodynamisme que d'augmenter le poids
-car plus on sera lourd plus ce sera dure d'atteindre le moment d'inertie. A l'image d'un train qui emettre un couple
-énorme au démarrage puis une fois lancée fournir très peu d'énergie. Mais pour un cycliste, qui a besoin de faire des
-relance en permanence cela n'est pas possible.
+Ensuite, une roue a un déplacement cinétique ce qui va permettre d'obtenir de l'inertie. Pour 
+avoir le plus d'inertie possible il faut optimiser son aérodynamisme, mais pas que. En effet, plus on sera lourd 
+plus on ira vite une fois lancée. Mais il sera judicieux de plus optimiser l'aérodynamisme que d'augmenter le poids,  
+car plus on sera lourd plus ce sera dur d'atteindre le moment d'inertie. A l'image d'un train qui doit fournir un 
+couple énorme au démarrage, mais qui une fois lancée fournira très peu d'énergie. Mais pour un cycliste, qui a besoin
+ de faire des relances en permanence cela n'est pas possible.
 {: .text-justify}
 
-Pour obtenir une roue aérodynamique, la hauteur de jante, le nombre de rayons, la largeur de la jante ou encore le 
-nombre de rayons et leur forme. L'idéal est une roue pleine, l'air s'écoule directement vers l'extérieur. Elle sera 
-aussi plus lourde donc une fois lancée aura une inertie optimum. Le cycliste pourra aller plus vite en fournissant la
- même puissance. Mais la roue pleine est très plus dur à relancer et si le vent est de côté ça devient un fardeau. 
- Donc une roue pleine pour faire
-du chrono sur terrain plat avec un vent favorable. Le compromis est donc de jouer la hauteur de la jante, par example
-une 88mm offrira plus d'aerodynamisme qu'une 38mm car une surface d'évacuation de l'air plus grande. Mais il faudra
-faire attention à ne pas avoir trop de rayons car qui dit plus de rayons dit plus de frottement donc une perte. Et il
-faudra opter pour des rayons plats afin de limiter ces frottements. La largeur de la jante pourra aussi contribuer
-à la bonne évacuation de l'air et enfin il faudra un moyeu qui offrira le moins de frottement au niveau des roulements.
-De plus l'aérodynamisme va se jouer à l'arrière à l'avant ça beaucoup moins d'importance car dans tous les cas l'air
-devra passer la largeur du cycliste. Il faut aussi penser que plus la hauteur de roue à l'avant sera haute plus le vélo
-sera moins magnable. Le gain entre mettre une roue 50 ou 88  à l'avant est tellement négligeable qu'il vaut mieux 
-préféré le bon controle du vélo. Enfin, l'inertie va se sentir seulement à plus 30-35km/h donc si vous n'êtes pas 
-capable d'atteindre cette vitesse ça ne sert à rien. Trop de cycliste ont des vélos qui ne sont pas capable d'envoyer
-et qui souffre tous les dimanches. Certes c'est beau, ça fait pro mais pas adapté.
+Pour obtenir une roue aérodynamique, il va falloir jouer sur la hauteur de jante, le nombre de rayons, la largeur de
+ la jante ou encore le nombre de rayons et leur forme. L'idéal est une roue pleine, l'air s'écoule directement vers 
+ l'extérieur. Elle sera  aussi plus lourde donc une fois lancée aura une inertie optimum. Le cycliste pourra aller 
+ plus vite en fournissant la même puissance. Mais la roue pleine est très plus dur à relancer et si le vent est de 
+ côté ça devient un fardeau. Donc une roue pleine pour faire 
+du chrono sur terrain plat avec un vent favorable. Le compromis est donc de jouer la hauteur de la jante, par example 
+une 88mm offrira plus d'aerodynamisme qu'une 38mm car une surface d'évacuation de l'air plus grande. Mais il faudra 
+faire attention à ne pas avoir trop de rayons, car qui dit plus de rayons dit plus de frottement donc plus de 
+frottement. Et il faudra opter pour des rayons plats afin de limiter ces frottements. La largeur de la jante pourra 
+aussi contribuer à la bonne évacuation de l'air et enfin il faudra un moyeu qui offrira le moins de frottements au 
+niveau des roulements. De plus, l'aérodynamisme va se jouer à l'arrière. En effet, à l'avant cela a beaucoup moins 
+d'importance car dans tous les cas l'air devra passer la largeur du cycliste. Il faut aussi penser que plus la 
+hauteur de roue à l'avant sera haute plus le vélo 
+sera moins contrôlable. Le gain entre mettre une roue 50 ou 88  à l'avant est tellement négligeable qu'il vaut mieux 
+préféré le bon contrôle du vélo. Enfin, l'inertie va se sentir seulement à plus 30-35km/h donc si vous n'êtes pas 
+capable d'atteindre cette vitesse ça ne sert à rien. Trop de cycliste ont des vélos qui ne sont pas capables d'envoyer 
+et qui souffre tous les dimanches. Certes c'est beau, ça fait pro, mais pas adapté.
 {: .text-justify}
 
-Pour obtenir une roue dynamique qui répond à toutes les attaques, il faudra une roue légère donc il faudra optimiser
-le poids de tous les composants mais il faudra qu'elle soit assez rigide pour subir la force latéral en danseuse. Donc
-une roue carbone aura plus de répondant. Pour faire du parcours vallonnée avec beaucoup de relance une paire de 38mm
-avec un moyeu léger permet à la fois dynamisme et une touche d'aérodynamisme. C'est vraiment la roue polyvalente
-car même si il y a du veny,ça passe. Elles sont vraiment un bon compromis et on en voit de plus dans les peletons.
+Pour obtenir une roue dynamique qui répond à toutes les attaques, il faudra une roue légère donc il faudra optimiser 
+le poids de tous les composants, mais il faudra qu'elle soit assez rigide pour subir la force latérale en danseuse. 
+Donc une roue carbone aura plus de répondant. Pour faire du parcours vallonnée avec beaucoup de relance une paire de 
+38mm avec un moyeu léger permet à la fois dynamisme et une touche d'aérodynamisme. C'est vraiment la roue polyvalente 
+car même s'il y a du vent, ça passe. Elles sont vraiment un bon compromis et on en voit de plus dans les peletons.
 {: .text-justify}
 
-Pour faire de la pure montagne il faudra la roue la plus légère possible donc il faudra jouer sur une hauteur de jante
+Pour faire de la pure montagne il faudra la roue la plus légère possible donc il faudra jouer sur une hauteur de jante 
 basse, pas large, peu de rayons et un moyeu léger.
 {: .text-justify}
 
 Pour faire des parcours de plaine en groupe, pour cycliste type rouleur ou sprinteur, on pourra opter pour une paire de
-50mm mais en prenant un moyeu avec des flasques hautes ce qui permettra d'être plus rigide car les rayons seront plus
- court. Une roue à la fois aérodynamique assez facile à relancer pour tenir les roues et d'envoyer du gros braquet
- pour les sprints
+50mm mais en prenant un moyeu avec des flasques hautes ce qui permettra d'être plus rigide, car les rayons seront plus
+ courts. Une roue à la fois aérodynamique assez facile à relancer pour tenir les roues du peleton et pouvoir envoyer
+  du gros braquet pour les sprints.
 {: .text-justify}
 
-Il existe encore plein de combinaisons possible étant donné le nombre de paramètres. 
-Une bonne roue résulte d’une bonne combinaison de tous ses composants selon le besoin du coureur.
-Et surtout on peut pas dire que c’est une bonne roue parce qu’elle est belle au visuel.
-Ce que je conseille, c’est d’avoir plusieurs type de roue selon le parcours et les conditions. C’est sûr on
-Peut pas en avoir 30 paires. Mais 2 ou 3 paires on peut couvrir un grand nombre de cas.
+Il existe encore plein de combinaisons possibles étant donné le nombre de paramètres. 
+Une bonne roue résulte d’une bonne combinaison de tous ses composants, selon le besoin du coureur.
+ Et surtout on ne peut pas dire que c’est une bonne roue parce qu’elle est belle au visuel. 
+Ce que je conseille, c’est d’avoir plusieurs types de roue, selon le parcours et les conditions. C’est sûr on 
+ne peut pas en avoir 30 paires. Mais 2 ou 3 paires on peut couvrir un grand nombre de cas.
 {: .text-justify}
 
 # Composants
 
-Je vais détailler les différents composants que j'ai choisi selon mon besoin.
+Je vais détailler les différents composants que j'ai choisis, selon mon besoin.
 {: .text-justify}
 
 ## Jante
 
 ### La hauteur
 
-Etant donné que je recherche une roue aérodynamique spécifiquement pour rouler sur du plat. Je vais
-prendre une hauteur de jante haute 88mm. Le top serait une roue pleine mais elle me servirait que très rarement
-alors qu'une 88mm sera tout de même assez dynamique pour passer des portions vallonnées. Pour choisir il faut
-faire les meilleures compromis par rapport à son besoin, son terrain de jeu et les conditions environementales.
-Donc une 88mm me paraît un bon compromis pour être assez dynamique pour passer sur des parties vallonnées et
+Etant donné que je recherche une roue aérodynamique spécifiquement pour rouler sur du plat. Je vais 
+prendre une hauteur de jante haute 88mm. Le top serait une roue pleine, mais elle me servirait que très rarement 
+alors qu'une 88mm sera tout de même assez dynamique pour passer des portions vallonnées. Pour choisir il faut 
+faire les meilleurs compromis par rapport à son besoin, son terrain de jeu et les conditions environementales. 
+Donc une 88mm me paraît un bon compromis pour être assez dynamique pour passer sur des parties vallonnées et 
 de pouvoir en profiter régulièrement. Une roue pleine dans le Lauragais, je pourrais la sortir 2 fois par an.
 {: .text-justify}
 
 ### La largeur
 
-Des études ont montrée que l'évacution de l'air sur une jante plus large à l'arrière favoriserait l'aérodynamisme. 
-De plus, qui dit plus large dit plus de confort donc je vais essayer d'opter pour une largeur de 25mm qui est un peu
+Des études ont montrée que l'évacuation de l'air sur une jante plus large à l'arrière favoriserait l'aérodynamisme. 
+De plus, qui dit plus large dit plus de confort donc je vais essayer d'opter pour une largeur de 25mm qui est un peu 
 à la mode.
 {: .text-justify}
 
 ### Nombre de trous
 
-Moins il y a de rayons, plus la roue sera aériodynamique. Mais cela fragilise la roue forcément même si on est léger.
-Il faut penser au freinage et au sprint à plein puissance. Mettre 20 rayons à l'avant ne pose pas de problème mais
-pour une roue arrière il est plus judicieux de partir sur 24. Sur les moyeux dit Straight Pull (avec des rayons droit)
-on peut mettre 20 à l'arrière car les rayons droit sont moins fragile. Je pense que je testerai ce type de montage
-pour ma prochaine paire. Enfin mettre plus de 24 aurait l'effet inverse. Le bon compromis serait de mettre une roue
-à bâton (à la Jalabert). Un peu plus passe partout qu'une roue pleine. J'ai opté pour un montage classique avec des 
-trous symétriques. Il existe des jantes asymétrique (TODO mettre un lien).
+Moins il y a de rayons, plus la roue sera aériodynamique. Mais cela fragilise la roue forcément même si on est léger. 
+Il faut penser au freinage et aux sprints à pleine puissance. Mettre 20 rayons à l'avant ne pose pas de problème, mais 
+pour une roue arrière il est plus judicieux de partir sur 24. Sur les moyeux dit Straight Pull (avec des rayons droits) 
+on peut mettre 20 à l'arrière, car les rayons droits sont moins fragiles. Je pense que je testerai ce type de montage 
+pour ma prochaine paire. Enfin mettre plus de 24 aurait l'effet inverse. Le bon compromis serait de mettre une roue 
+à bâton (à la Jalabert), un peu plus passe partout qu'une roue pleine. J'ai opté pour un montage classique avec des 
+trous symétriques. Il existe des jantes asymétriques (TODO mettre un lien).
 {: .text-justify}
 
 ### Matériau
 
-Pas de surprise, je pars sur de la fibre de carbone type 3K T800 comme la majorité des roues carbones du marché.
-Légère et rigide
+Pas de surprise, j'ai choisi de la fibre de carbone type 3K T800 comme la majorité des roues carbones du marché, 
+légère et rigide.
 {: .text-justify}
 
 ### Boyau
 
-Je choisi une jante spéciale boyau, je détaillerai mon choix pneu/boyau dans un chapitre dédié plus loin.
+J'ai choisi une jante à boyau, je détaillerai mon choix pneu/boyau dans un chapitre dédié plus loin.
 {: .text-justify}
 
 ![moyeu](/assets/images/wheel-building/jante1.jpg){: .align-center :height="320px" width="320px"}
@@ -172,11 +172,11 @@ Caractéristiques:
 - Finition: Matte UD
 - Poids: 520g +/-5g
 
-J'ai trouvé un fournisseur parmi tant d'autres sur AliExpress, il y a du choix. Après il faut trouver un 
-fournisseur sérieux. Une bonne évaluation, un bon nombre de vente, un descriptif détaillé des frais de livraison, de
-la garantie. J'ai pu échanger directement par message très rapidement, le temps de livraison correct, je suis
-très satisfait, il faudra voir à long terme sur l'utilisation. Mais à la livraison, j'étais bleuffé par la qualité
-visuelle.
+J'ai trouvé un fournisseur parmi tant d'autres sur AliExpress, il y a du choix. Encore faut-il trouver un 
+fournisseur sérieux. Une bonne évaluation, un bon nombre de ventes, un descriptif détaillé, des frais de livraison 
+correct et une garantie. J'ai pu échanger directement par message très rapidement et le temps de livraison était 
+clairs. Je suis très satisfait, il faudra voir à long terme à l'utilisation. Mais à la livraison, j'étais bluffé par
+ la qualité visuelle.
 {: .text-justify}
 
 ![moyeu](/assets/images/wheel-building/rim2.jpeg){:height="320px" width="320px"} 
@@ -186,31 +186,33 @@ visuelle.
 
 ## Moyeu
 
-Le moyeu est sans doute le composant le plus important d'une roue. Il est donc très important de choisir
-un moyeu de bonne qualité, s'il faut mettre de l'argent c'est bien sur le moyeu. Mais il existe plein de bon
-moyeu mais qui seront utile selon le contexte. Un moyeu léger permettra un meilleur dynamisme et un moyeu plus
-lourd plus d'inertie. La hauteur des flasques ou flanges sont importantes, plus elles sont larges, plus les rayons seront
-courts plus la roue sera rigide et inversement. Plus d'informations [ici](https://www.roue-carbone.com/guide-achat/le-moyeu-de-roue-de-velo).
- Enfin il y a pleins d'autres paramètres à prendre en compte:
+Le moyeu est sans doute le composant le plus important d'une roue. Il est donc très important de choisir 
+un moyeu de bonne qualité, s'il faut mettre de l'argent c'est bien sûr le moyeu. Mais il existe plein de bons 
+moyeux, mais qui seront utiles, selon le contexte. Un moyeu léger permettra un meilleur dynamisme et un moyeu plus 
+lourd plus d'inertie. La hauteur des flasques ou flanges sont importantes, plus elles sont larges, plus les rayons 
+seront courts plus la roue sera rigide et inversement. Plus d'informations [ici](https://www.roue-carbone.com/guide-achat/le-moyeu-de-roue-de-velo).
+ Enfin il y a plein d'autres paramètres à prendre en compte:
 {: .text-justify}
 
 - La largeur du cadre sur lequel va s'installer le moyeu (130mm dans mon cas, ce qui est courant sur les vélos de route)
 - La matière qui va forcément impacter sur le poids (Alu ou Carbone)
-- Le type de roulements c'est ce qui souvent fait monter les prix. De bons roulements qui permettent le moins
-de frottements est donc moins de perte. Il existe des roulements en céramiques très couteux. Il faut aussi
-regarder la qualité des joints, si vous avez des bons roulements mais dès que vous sortez sous la pluie de saleté
-s'encrasse dedans, et bien on perd tout son efficacité. Et enfin, il faut regarder l'entretien s'il  y en a.
-- Il faut regarder le type de cassette Shimano, Compagnolo et le nombre de vitesses 
+- Le type de roulements, c'est ce qui fait souvent monter les prix. De bons roulements qui permettent le moins 
+de frottements possible et donc moins de pertes. Il existe des roulements en céramiques très couteux. Il faut aussi 
+regarder la qualité des joints, si vous avez des bons roulements, mais dès que vous sortez sous la pluie de la saleté 
+s'encrasse dedans et on perd toute l'efficacité. Et enfin, il faut regarder l'entretien s'il y en a.
+- Il faut regarder le type de cassette Shimano, Compagnolo... et le nombre de vitesses 
 - Le nombre de trous de chaque côté, selon le montage que l'on veut faire.
 - Le type de freinage à disque ou v-brake
-- Classique ou Straight Pull. Les moyeus Straight Pull sont  à la mode car ils pronent une meilleur longétivité
-en utilisant des rayons droit et par le fait on peut mettre un peu moins de rayons donc meilleur aérodynamisme
-(Je testerai sur une prochaine paire, apparamment ça n'a pas encore été prouvé donc laissons le temps et les retour
- d'expériences plus que le marketing).
+- Classique ou Straight Pull. Les moyeus Straight Pull sont  à la mode, car ils pronent une meilleure longétivité
+en utilisant des rayons droits et par le fait on peut mettre un peu moins de rayons et donc obtenir meilleur 
+aérodynamisme (Je testerai sur une prochaine paire, apparamment ça n'a pas encore été prouvé donc laissons le temps et 
+les retours d'expériences plus que le marketing).
+{: .text-justify}
  
-Pour ma première roue, je n'ai pas voulu directement prendre le plus haut gamme (ça monte à 500 euros). Je me suis
-intéressé sur le marché meilleur qualité/prix. La marque américaine Novatec est un bon compromis car il est possible
-de ce l'est procuré directement en Chine. Il me faut un moyeu:
+Pour ma première roue, je n'ai pas voulu directement prendre un moyeu haut gamme (ça monte à 500 euros). J'ai 
+cherché un bon rapport qualité/prix. La marque américaine Novatec est un bon compromis, car il est possible 
+d'en acheter directement en Chine et qui dit moins d'intermédiaires dit moins cher. Il me faut donc un moyeu:
+{: .text-justify}
 
 - Entraxe de 130mm
 - Compatible Shimano 11v
@@ -233,9 +235,9 @@ Prix: 59.98€ frais de port compris
 
 ## Rayons
 
-Etant donné que je veux réaliser une roue aérodynamique, je me suis direct tourné vers des rayons plat.
+Etant donné que je veux réaliser une roue aérodynamique, je me suis direct tourné vers des rayons plats.
 Il y a 2 grandes marques qui ressortent dans le domaine Sapim et Dt-Swiss. J'ai choisi les Sapim CX-Ray,
-qui sont léger, très fins et résistants (acier) [Sapim CX-Ray](https://www.sapim.be/spokes/aero/cx-ray).
+qui sont léger, très fins et résistants (en Acier) [Sapim CX-Ray](https://www.sapim.be/spokes/aero/cx-ray).
 
 Attention ne surtout pas acheter les rayons maintenant. Un chapitre sera dédié pour cela plus loin.
 {: .notice--danger}
@@ -244,7 +246,7 @@ Attention ne surtout pas acheter les rayons maintenant. Un chapitre sera dédié
 
 - Il est possible de choisir la couleur
 - De plus, j'ai pris des rayons type J-Bend (coudé), il existe des rayons droits qui sont destinés
-à des moyeus Straight Pull. Les rayons de ce type se fatigue moins car ils n'ont pas de coude.
+à des moyeux Straight Pull. Les rayons de ce type se fatiguent moins car ils n'ont pas de coude.
 Je pense que je testerai sur une autre paire.
 {: .notice--primary}
 
@@ -252,55 +254,55 @@ Prix: 2.20€ unitaire
 
 ## Ecrous
 
-Concernant les écrous on peut prendre ce que l'on veut, chaque marque propose
-des longueurs différentes ou des têtes différentes. Mon choix c'est tourner comme
-pour les rayons, chez Sapim [Double Square](https://www.sapim.be/nipples/design/double-square).
-Alors tout simplement que les Double Square ont une tête carrées ce qui permet d'utiliser cet outil (voir image 
-ci-dessous). Etant donné la hauteur de la jante 88mm ce type d'outil permet facilement de visser
-on le verra lors du montage. Leur mélange Alu et Laiton permet d'être à la fois léger et résistant.
+Concernant les écrous on peut prendre ce que l'on veut, chaque marque propose 
+des longueurs ou des têtes différentes. Mon choix c'est tourné comme 
+pour les rayons, chez Sapim [Double Square](https://www.sapim.be/nipples/design/double-square). 
+Alors tout simplement que les Double Square ont une tête carrée ce qui permet d'utiliser cet outil (voir image 
+ci-dessous). Etant donné la hauteur de la jante (88mm) ce type d'outil permet facilement de visser à l'intérieur, 
+on le verra lors du montage. Le mélange Alu et Laiton permettent d'être à la fois léger et résistant.
 {: .text-justify}
 
 ![moyeu](/assets/images/wheel-building/nipples_screwdriver.jpeg){:.align-center :height="240px" width="240px"} 
 
 
-- Il faut bien regarder la matière, des écrous 100% Alu seront plus fragile. 
-- Attention au type de tête, certaines marques comme dt-swiss on des écrous qui obligent d'utiliser leur outils
+- Il faut bien regarder la matière, des écrous 100% Alu seront plus fragiles. 
+- Attention au type de tête, certaines marques comme Dt-Swiss ont des écrous qui obligent d'utiliser leur outils
 spéciaux.
-- Il faut regarder la taille, il existe des 12-14-16mm, il faut surtout avoir le détail du filetage afin
-on le verra par la suite choisir la bonne longueur des rayons.
+- Il faut regarder la taille, il existe des 12-14-16mm, il faut surtout avoir le détail du filetage afin, 
+on le verra par la suite, choisir la bonne longueur des rayons.
 {: .notice--danger}
 
 ![moyeu](/assets/images/wheel-building/nipple_red.JPG){: .align-center :height="320px" width="320px"} 
 
-Il existe différente couleurs, j'ai choisi d'alterner des rouges et noires, juste pour le "style"
+Il existe différentes couleurs, j'ai choisi d'alterner des rouges et noirs, juste pour le "style"
 {: .notice--primary}
 
 Prix: 0.40€ unitaire
 
 ## Pneu ou Boyau
 
-C'est toujours la grande question chez les cyclistes. Je vais vous donner mon avis personnel à ce sujet. Le boyau
-et le pneu offrent tout d'eux des caractéristiques différentes de part leurs conceptions et peuvent apportés des 
-avantages différents tout dépend  encore des compromis que vous êtes prêts à faire selon votre besoin. Dans
-tous les cas un pneu de bonne qualité sera toujours meilleur qu'un boyau entrée de gamme et inversemment. Il y a
+C'est toujours la grande question chez les cyclistes. Je vais vous donner mon avis personnel à ce sujet. Le boyau 
+et le pneu offrent tous d'eux des caractéristiques différentes de part leurs conceptions et peuvent apporter des 
+avantages différents, tout dépend encore des compromis que vous êtes prêts à faire, selon votre besoin. Dans 
+tous les cas un pneu de bonne qualité sera toujours meilleur qu'un boyau entrée de gamme et inversement. Il y a 
 déjà beaucoup d'articles qui parlent de ce sujet, je vous invite à lire celui qui résume bien le sujet:
 [Différence entre Pneu ou Boyau](https://www.roue-carbone.com/guide-achat/difference-entre-pneu-boyau-de-velo){:target="_blank"}
 {: .text-justify}
 
 Même si le boyau a beaucoup de points négatifs en terme de praticité:
-- Il faut toujours avoir un spare sur soi
-- l'installation est un peu plus périeuse et longue, il faut le faire en plusieurs étapes et il faut acheter de la 
+- Il faut toujours avoir un boyau de rechange sur soi
+- l'installation est un peu plus périlleuse et longue, il faut le faire en plusieurs étapes et il faut acheter de la 
 colle.
-- Une crevaison est onéreuse car il faut changer le boyau et pas juste changer la chambre à aire
-- Le freinage moins précis (sauf si votre moyeu est à disque biensûr) 
+- Une crevaison est onéreuse, car il faut changer le boyau et pas juste changer la chambre à air
+- Le freinage est moins précis, car on freine sur la jante directement (sauf si votre moyeu est à disque bien sûr).
 
-Mais ils apportent des avantages en terme de performance, ils sont souvent plus léger pour une gamme équivalente
-en pneu, ils absorbent mieux les défauts de la route ce qui les rend plus performant et aussi plus confortable. De plus
-on peu mettre une plus grande pression ce qui permet moins d'adhérence avec le sol et donc moins de 
-frottement. Mais encore faut-il en choisir un de bonne qualité. Depuis que je roule en boyau, je ne voudrais plus revenir 
-au pneu mais c’est mon avis perso. Mais il est important de choisir un boyau ou pneu de bonne qualité car ce serait 
-dommage de perdre l’effort mis dans les composants sous-jacents. C’est-à-dire que le boyau ou pneu est le dernier 
-élément avant la route donc il faut pouvoir transmettre le maximum de la force avec le moins de perte.
+Mais ils apportent des avantages en terme de performance, ils sont souvent plus légers pour une gamme équivalente 
+en pneu, ils absorbent mieux les défauts de la route ce qui les rendent plus performant et aussi plus confortable. De 
+plus, on peut mettre une plus grande pression ce qui permet moins d'adhérence avec le sol et donc moins de 
+frottements. Mais encore faut-il en choisir un de qualité. Depuis que je roule en boyau, je ne voudrais plus 
+revenir  au pneu mais c’est mon avis personnel. Mais il est important de choisir un boyau ou pneu de qualité 
+car ce serait dommage de perdre l’effort mis dans les composants sous-jacents. C’est-à-dire que le boyau ou pneu est 
+le dernier élément avant la route donc il faut pouvoir transmettre le maximum de la force avec le moins de pertes.
 {: .text-justify}
 
 Quelles sont les caractéristiques à prendre en compte dans le choix d'un boyau ou un pneu ?
@@ -311,30 +313,32 @@ TPI = Threads Per Inch
 
 Il s'agit du nombre de fils constituant la carcassse.
 
-Plus la valeur est haute plus la carcasse sera à la fois souple (car les fils sont plus fins) et difficle à percer mais
- au détriment du poids, enfin tout dépend des matériaux.
+Plus la valeur est haute plus la carcasse sera à la fois souple (car les fils sont plus fins) et difficile à percer 
+(au détriment du poids, enfin tout dépend des matériaux).
 {: .text-justify}
 
 ### Largeur
 
 [A chaque jante sa largeur de pneu](https://engineerstalk.mavic.com/fr/a-chaque-jante-sa-largeur-de-pneu/){:target="_blank"}
 
-Après voir lu cet article, on comprend bien l'intérêt d'avoir une largeur plus large à l'arrière notamment quand
-on recherche de l'aérodynamisme et en plus améliore le confort, c'est pourquoi j'ai choisi une jante 25mm
-et des boyaux 25mm
+Après avoir lu cet article, on comprend bien l'intérêt d'avoir une largeur plus large à l'arrière notamment quand 
+on recherche de l'aérodynamisme et en plus cela améliore le confort, c'est pourquoi j'ai choisi une jante 25mm 
+et un boyau de 25mm.
 {: .text-justify}
 
 ### Autres
 
-Il y a plein d'autres paramètres qu'il faut regarder notamment le type de valve et surtout sa longueur. En effet,
-étant donné la hauteur de jante de 88mm il me faudra un prolongateur de valve. Il faut également prêter attention
+Il y a plein d'autres paramètres qu'il faut regarder, notamment le type de valve et surtout sa longueur. En effet,
+étant donné la hauteur de jante de 88mm, il me faudra un prolongateur de valve. Il faut également prêter attention
 à la matière qui va jouer sur les performances: adhérence, l'usure, le comportement sur route mouillé... Il faut
-enfin regarder le poids et biensûr de trouver le meilleur rapport qualité prix par rapport à son besoin et budget.
+enfin regarder le poids et bien-sûr de trouver le meilleur rapport qualité/prix par rapport à son besoin et budget.
+{: .text-justify}
 
-Enfin voici ce que j'ai choisi en terme de rapport qualité/prix et répondant à mes besoins:
+Enfin voici ce que j'ai choisi en terme de rapport qualité/prix et répondant à mes besoins: 
 
-Les Boyau Vittoria CX ont vraiment des caractéristiques haut de gamme pour un prix raisonnable. J'avais déjà
- choisi ces boyaux pour mes 38mm, j'en suis très content depuis des années et plusieurs milliers de kilomètres.
+Le Boyau Vittoria CX ont vraiment des caractéristiques, haut de gamme pour un prix raisonnable. J'avais déjà
+ choisi ces boyaux pour mes 38mm, j'en suis très content depuis des années et plusieurs milliers de kilomètres au 
+ compteur.
 
 - Valve Presta 34 mm
 - 25c 
@@ -344,23 +348,23 @@ Les Boyau Vittoria CX ont vraiment des caractéristiques haut de gamme pour un p
 
 ## Attache rapide
 
-J'utilise les mêmes pour toutes mes roues donc pas utile d'en racheter. Ce qui est important c'est le poids
-donc si vous avez des attaches rapides bas de gamme, il est préférable d'en avoir une paire légère. Ce serait dommage
-de perdre tous le poids gagnés par les composants précédents.
+J'utilise les mêmes pour toutes mes roues donc pas utile d'en racheter. Ce qui est important c'est le poids 
+donc si vous avez des attaches rapides bas de gamme, il est préférable d'en avoir une paire légère. Ce serait dommage 
+de perdre tout le poids gagné par les composants précédents.
 {: .text-justify}
 
 ## Cassette
 
-Pour la cassette, c'est pareil. Pas forcément utile d'en avoir pour chaque roue ou dans un premier temps. Interchanger
-la cassette prends une dizaine de minute et ça à l'avantage de pouvoir bien la nettoyer. Tout dépends si vous changer
-de roue à chaque sortie ou de temps en temps. Une cassette coûte environ 50-60 euros donc on peut s'en sortir avec
-une dans un premier puis en acheter par la suite pour switcher rapidement.
+Pour la cassette, c'est pareil. Pas forcément utile d'en avoir pour chaque roue ou dans un premier temps. Interchanger 
+la cassette prend une dizaine de minutes et ça à l'avantage de pouvoir bien la nettoyer. Tout dépend si vous changez 
+de roue à chaque sortie ou de temps en temps. Une cassette coûte environ 50-60 euros donc on peut s'en sortir avec 
+une, dans un premier temps puis, en acheter une autre par la suite pour interchanger rapidement.
 {: .text-justify}
 
 ## Patin de freins
 
-Etant donné que j'ai opté pour une jante carbone, il me faut des pâtins de freins adaptés. J'ai opté pour les SwissStop
-FlashPro Black Prince qui ont l'avantage d'être aussi compatible sur les jantes en Alu, ce qui permet de ne pas
+Etant donné que j'ai opté pour une jante carbone, il me faut des patins de freins adaptés. J'ai opté pour les SwissStop 
+FlashPro Black Prince qui ont l'avantage d'être aussi compatibles sur les jantes en Alu, ce qui permet de ne pas 
 interchanger quand je prends mes roues à pneus en hiver ou sur Home trainer.
 {: .text-justify}
 
@@ -368,71 +372,69 @@ interchanger quand je prends mes roues à pneus en hiver ou sur Home trainer.
 
 ## Longueur des rayons
 
-Le choix de la bonne longueur des rayons est sans doute la partie la plus importante et la
-plus délicate. En effet, se tromper de 1mm trop court ou trop long peu empêcher le montage de la roue 
-au moment de la mise sous tension. La longueur des rayons va dépendre du moyeu, de la jante,
-du nombre de rayons et la manière dont on veut lacer les rayons. En gros tout ce qui a été choisi
-précédement va rentrer en paramètre pour définir la longueur des rayons. Vous l'aurez bien compris, 
-c'est pourquoi on ne peut pas acheter les rayons avant d'avoir choisi tous les éléments précédent.
+Le choix de la bonne longueur des rayons est sans doute la partie la plus importante et la 
+plus délicate. En effet, se tromper de 1mm trop court ou trop long peut empêcher le montage de la roue 
+au moment de la mise sous tension. La longueur des rayons va dépendre du moyeu, de la jante, 
+du nombre de rayons et la manière dont on veut lacer les rayons. En gros tout ce qui a été choisi 
+précédemment va rentrer en paramètre pour définir la longueur des rayons. Vous l'aurez bien compris, 
+c'est pourquoi on ne peut pas acheter les rayons avant d'avoir choisi tous les éléments précédents.
 {: .text-justify}
 
-Pour ce faire, il va falloir récolter un certain nombre de paramètres afin de pouvoir déterminer la bonne
-longueur. Certaines mesures peuvent être récoltées auprès des fabriquants mais il y a souvent des erreurs 
-donc comme il faut être très précis autant vérifier soi-même. Tous les paramètres en main, il est possible
-d'utiliser des configurateurs en ligne qui détermineront directement la bonne longueurs de vos rayons.
-Mais je suis curieux... et pour bien maitriser quelque chose, je pense
-qu'il faut vraiment comprendre ce qu'il y a derrière un algorithme, certes très utile pour gagner du
-temps. Donc durant tout ce chapitre je vais démontrer comment je suis arriver à ma longueur de rayons
+Pour ce faire, il va falloir récolter un certain nombre de paramètres afin de pouvoir déterminer la bonne 
+longueur. Certaines mesures peuvent être récoltées auprès des fabricants, mais il y a souvent des erreurs 
+donc comme il faut être très précis autant vérifier soi-même. Tous les paramètres en main, il est possible 
+d'utiliser des configurateurs en ligne qui détermineront directement la bonne longueur de vos rayons. 
+Mais je suis curieux... et pour bien maitriser quelque chose, je pense 
+qu'il faut vraiment comprendre ce qu'il y a derrière un algorithme, certes très utile pour gagner du 
+temps. Donc durant tout ce chapitre je vais démontrer comment je suis arrivé à ma longueur de rayon 
 étape par étape.
 {: .text-justify}
 
 ### Vue d'ensemble
 
-J'aime bien démontrer quelque chose en partant par le résultat final, donc voici ci-dessous une vue d'ensemble de ce
+J'aime bien démontrer quelque chose en partant par le résultat final, donc voici ci-dessous une vue d'ensemble de ce 
 que l'on recherche à déterminer (S). 
 
 ![moyeu](/assets/images/wheel-building/erd_demonstration.jpeg){:.align-left .text-justify :height="480px" width="480px"} 
 
-Dans le schema j'ai représenté une vue de face à gauche et une vue de dessus à droite. Le rayon en position tendu
-est représentée en rouge avec la variable pour l'instant inconnu S que l'on va déterminer.
+Dans ce schéma, j'ai représenté une vue de face à gauche et une vue de dessus à droite. Le rayon en position tendue 
+est représenté en rouge avec la variable pour l'instant inconnue S que l'on va déterminer. 
 On constate que le moyeu est centré par rapport à la jante ce qui provoque un angle pour 
-le rayon pour atteindre la jante. En vert, j'ai représenté l'écrou est surtout où le rayon va se loger en position
-tendu. En dessous, j'ai simplifié les 2 schemas en 2 triangles HLR et LSF avec pour l'instant que des inconnues mais
+le rayon pour atteindre la jante. En vert, j'ai représenté l'écrou est surtout où le rayon va se loger en position 
+tendue. En dessous, j'ai simplifié les 2 schémas en 2 triangles HLR et LSF avec pour l'instant que des inconnus, mais 
 que l'on va pouvoir substituer.
-
-
 
 Triangle HLR
 - H = La distance entre le centre du moyeu et le trou où va se loger le rayon
 - L = Une longueur intermédiaire qui va permettre de faire le lien entre les 2 triangles
 - R'= ERD/2 Il s'agit du rayon effectif de la jante (je vais détailler cela dans le chapitre suivant)
-- Phi = Angle que va prendre le rayon selon le nombre de croisements
+- Phi = Angle que va prendre le rayon, selon le nombre de croisements
 {: .notice--primary}
 
 ![moyeu](/assets/images/wheel-building/erd_demonstration6.jpg){:.align-center :height="320px" width="320px"}
 
 Triangle LSF
-- L = Longueur intermédiaire calculer dans le triangle HLR
+- L = Longueur intermédiaire calculée dans le triangle HLR
 - S = La longueur du rayon 
-- F = La distance entre la flange du moyeu et son milieu
+- F = La distance entre la flasque du moyeu et son milieu
 {: .notice--primary}
 
 ![moyeu](/assets/images/wheel-building/erd_demonstration4.jpg){:.align-center :height="320px" width="320px"}
 
 
-Donc dans un premier temps, je vais décrire comment prendre les différentes mesures sur la jante et le moyeu. Puis
-dans un second temps je vais pouvoir en déduire la valeur de L dans le triangle HLR et enfin  substituer L dans le 
+Donc dans un premier temps, je vais décrire comment prendre les différentes mesures sur la jante et le moyeu. Puis 
+dans un second temps je vais pouvoir en déduire la valeur de L dans le triangle HLR et substituer L dans le 
 triangle LSF afin d'en déduire la valeur de S.
 {: .text-justify}
 
 ### Mesure de l'ERD
 
-L'ERD (Effective Rim Diameter) comme je l'ai dit ci-dessus, il s'agit de la diamètre de la jante
-mais en prenons en compte la distance où va vraiment se loger les rayons dans les écrous. l'ERD
-est fourni quand on achète une jante mais ils ne prennent souvent pas en compte le type d'ecrou, il s'agit
-du diamète à l'intérieur de la jante. Mon fournisseur ma donnée 464.5mm, on verra qu'au final
-nous serons très loin de cette valeur. Alors comment le mesurer, j'ai regardé pas mal de vidéos et de
-tutoriaux, et celui qui m'a paru le plus simple, précis et efficace est le suivant, encore une fois
+L'ERD (Effective Rim Diameter) comme je l'ai dit ci-dessus, il s'agit du diamètre de la jante 
+, mais en prenant en compte la distance où va vraiment se loger les rayons dans les écrous. L'ERD 
+est parfois fourni quand on achète une jante, mais le fournisseur ne prend souvent pas en compte le type d'écrou. Il 
+s'agit du diamètre à l'intérieur de la jante. Mon fournisseur m'a donné un ERD de 464.5mm, on verra qu'au final 
+nous serons très loin de cette valeur. Alors, comment le mesurer ? J'ai regardé pas mal de vidéos et de 
+tutoriaux, celui qui m'a paru le plus simple, précis et efficace est le suivant, encore une fois 
 c'est mon avis personnel.
 {: .text-justify}
 
@@ -440,23 +442,23 @@ c'est mon avis personnel.
 ![moyeu](/assets/images/wheel-building/erd3.jpg){:.align-center :height="480px" width="480px"}
 
 Donc il suffit de prendre 2 rayons, 2 écrous, du ruban adhésif, un élastique et un pied 
-à coulisse (une simple mètre peu suffire).
+à coulisse (un simple mètre peut suffire).
 
-- Je prends les 2 rayons que j'ai acheté séparémment, j'ai pris des 200mm, on peut prendre ce qu'on veut.
+- Je prends les 2 rayons que j'ai acheté séparément, j'ai pris des 200mm, on peut prendre ce qu'on veut.
 
-- On les insèrent dans la jante avec les écrous. Mais là, il faut être rigoureux,
+- On les insère dans la jante avec les écrous. Mais là, il faut être rigoureux, 
 la position du rayon doit arriver exactement où l'on veut qu'il soit quand ce sera sous 
-tension. Moi j'ai choisi des Sapim double square (voir paragraphe ci-dessus) 
+tension. Moi j'ai choisi des Sapim double square (voir paragraphe ci-dessus).
 {: .text-justify}
 
 ![moyeu](/assets/images/wheel-building/double_square.jpeg){:.align-center :height="240px" width="240px"}
 
-Dans ce schema, j'ai représenté là où va se loger le rayon dans l'écrou une fois sur tension.
+Dans ce schéma, j'ai représenté là où va se loger le rayon dans l'écrou une fois sous tension.
 {: .text-justify}
 
 ![moyeu](/assets/images/wheel-building/erd2.jpeg){:.align-center :height="240px" width="240px"}
 
-Les rayons fixés à la bonne position avec les écrous il suffit de raccorder avec un elastique
+Une fois les rayons fixés à la bonne position avec les écrous, il suffit de raccorder avec un élastique 
 et du ruban adhésif (voir image ci-dessous).
 {: .text-justify}
 
@@ -469,15 +471,15 @@ Enfin, il reste plus qu'à prendre la mesure entre les 2 extrémités des rayons
 - ERD = 200 x 2 + 71 = 471mm
 {: .notice--primary}
 
-Très loin des 464.5mm du fournisseur. Et voilà une première valeur que l'on pourra substituer dans les équations
+Très loin des 464.5mm du fournisseur. Et voilà une première valeur que l'on pourra substituer dans les équations 
 suivantes.
 
 
 ### Mesure du moyeu
 
- Le schema ci-dessous représente le moyeu arrière, j'ai représenté le centre de celui en pointillé bleu, c'est là 
+ Le schéma ci-dessous représente le moyeu arrière, j'ai représenté le centre de celui en pointillé bleu, c'est là 
  où la jante devra être aligné. On remarque bien pourquoi les longueurs des rayons ne seront pas les mêmes pour une 
- roue arrière étant donné qu'il y a la cassette à prendre en compte.
+ roue arrière, étant donné qu'il y a la cassette à prendre en compte.
 {: .text-justify}
 
 ![moyeu](/assets/images/wheel-building/erd_demonstration5.jpg){:height="320px" width="320px"}
@@ -485,23 +487,23 @@ suivantes.
 
 a) La valeur de X est facile à déterminer, il s'agit de la largeur du moyeu là où le moyeu sera installé sur le cadre
  (entraxe). 
-Il s'agit d'une valeur normalisée sur les cadres. Sur les vélos de route classiques, cette distance est souvent de 
+Il s'agit d'une valeur normalisée sur les cadres. Sur les vélos de route classique, cette distance est souvent de 
 130mm. C'est un paramètre à prendre en compte avant d'acheter le moyeu, je l'avais préalablement vérifié avant 
-d'acheter mon moyeu (voir chapitre "choix du moyeu")
+d'acheter mon moyeu (voir chapitre "choix du moyeu").
 {: .text-justify}
 
-b) Les valeurs qui vont nous intéresser à de déterminer sont les valeurs C et D qui seront substituées
+b) Les valeurs qui vont nous intéresser à de déterminer sont les valeurs C et D qui seront substituées 
 à H (voir image)
 
 H = C pour les rayons côté gauche et D pour les rayons côté droit.
 
-Pour y arriver il faut mesurer y et z pour ce faire j'ai utilisé un bout de bois où j'ai fait un trou assez gros pour 
+Pour y arriver il faut mesurer "y" et "z" pour ce faire j'ai utilisé un bout de bois où j'ai fait un trou assez gros pour 
 pouvoir poser l'extrémité du moyeu de chaque côté
 {: .text-justify}
 
 ![moyeu](/assets/images/wheel-building/flange_support.jpeg){: .align-center :height="320px" width="320px"} 
 
-Ensuite j'ai positionné le moyeu et j'ai les pris les mesures de chaque côté à l'aide d'une équerre.
+Ensuite, j'ai positionné le moyeu et j'ai les pris les mesures de chaque côté à l'aide d'une équerre.
 
 ![moyeu](/assets/images/wheel-building/hub_mesurement.jpeg){:height="240px" width="240px"} 
 ![moyeu](/assets/images/wheel-building/hub_mesurement2.jpeg){:height="240px" width="240px"} 
@@ -521,20 +523,20 @@ C = X/2 - Y = 130/2 - 29 = \boxed{36mm} \\
 D = X/2 - Z = 130/2 - 48 = \boxed{17mm}
 $$
 
-c) Maintenant je vais mesurer A et B pour déterminer la valeur de H (voir schema TODO). Et donc H n'est ni plus ni moins
- A/2 et B/2. Donc pour mesurer ce diamètre, j'ai utilisé 2 bouts de carton voir schema ci-dessous (difficile à réaliser
- avec un pied à coulisse).
+c) Maintenant je vais mesurer A et B pour déterminer la valeur de H (voir schéma TODO). Et donc H n'est ni plus ni 
+moins A/2 et B/2. Donc pour mesurer ce diamètre, j'ai utilisé 2 bouts de carton voir schéma ci-dessous (difficile à 
+réaliser avec un pied à coulisse).
  {: .text-justify}
 
 ![moyeu](/assets/images/wheel-building/flange_support2.jpeg){:height="480px" width="480px"} 
 
-Ensuite, il suffit de repérer le centre de 2 trous opposés sur la flange et mesurer cette
-distance avec un règle. 
+Ensuite, il suffit de repérer le centre de 2 trous opposés sur la flasque et mesurer cette 
+distance avec une règle. 
 
 ![moyeu](/assets/images/wheel-building/hub_flange_l.jpeg){:height="240px" width="240px"} 
 ![moyeu](/assets/images/wheel-building/hub_flange_r.jpeg){:height="240px" width="240px"} 
 
-J'obtiens les valeurs suivantes
+J'obtiens les valeurs suivantes:
 
 $$
 A = 41mm \\
@@ -547,13 +549,13 @@ $$
 
 ![moyeu](/assets/images/wheel-building/erd_demonstration4.jpg){:.align-center :height="480px" width="480px"}
 
-Donc si on revient au triangle 1 HLR. on connaît H mesuré précédement et ERD aussi
-on va donc pouvoir déterminer la valeur de L. La difficulté dans ce triangle c'est qu'il
-n'est pas rectangle donc on ne peut pas appliquer un simple théorème de Pythagore. Mais on peut démontrer
-la loi du cosinus dans un triangle  à angles aigus utilisant le théorème de Pythagore sur un sous-triangle rectangle
- formé en prenant le pied de la hauteur (voir trait rouge).
+Donc si on revient au triangle 1 HLR. on connaît H mesuré précédemment et l'ERD aussi,
+on va donc pouvoir déterminer la valeur de L. La difficulté dans ce triangle c'est qu'il 
+n'est pas rectangle donc on ne peut pas appliquer un simple théorème de Pythagore. Mais on peut démontrer 
+la loi du cosinus dans un triangle  à angles aigus utilisant le théorème de Pythagore sur un sous-triangle rectangle 
+formé en prenant le pied de la hauteur (voir trait rouge). 
 Pour appliquer ces lois trigonométriques, il nous faut connaître la valeur de l'angle ϕ, ça tombe bien on peut le 
-déterminer ! On connaît le nombre de trous de la jante (24) ! donc l'angle entre chaque trous est de 360°/24 soit 15°.
+déterminer ! On connaît le nombre de trous de la jante (24) ! donc l'angle entre chaque trou est de 360°/24 soit 15°. 
 Etant donné que je vais faire un laçage avec 2 croisements je vais avoir 4 trous de décalage sur chaque rayon. Je 
 détaillerai tout ça dans le chapitre dédié au laçage.
 {: .text-justify}
@@ -604,7 +606,7 @@ $$
 Voilà on a tout ce qu'il faut, je vais maintenant factoriser cette équation pour faciliter les 
 calculs qui vont suivre.
 
-On reconnaît facilement l'idendité remarquable $$(a - b)^2$$
+On reconnaît facilement l'identité remarquable $$(a - b)^2$$
 
 $$
 L^2 = (H sin \varphi)^2 +  \underbrace { \color{Red} {(R - Hcos\varphi)^2} }_{(a - b)^2 = a^2 -2ab + b^2}     \\
@@ -632,19 +634,19 @@ $$
 
 ### Calcul de S
 
-Maintenant grâce à la valeur L, on peut appliquer un simple théorème de pythagore sur le triange LSF afin
+Maintenant grâce à la valeur L, on peut appliquer un simple théorème de Pythagore sur le triangle LSF afin 
 de déterminer S.
 
 ![moyeu](/assets/images/wheel-building/erd_demonstration3.jpg){:.align-center :height="320px" width="320px"}
 
-Théorème de Pythagore sur le LSF avec S comme hypothénuse. 
+Théorème de Pythagore sur le LSF avec S comme hypoténuse. 
 [Théorème de Pythagore](https://fr.wikipedia.org/wiki/Théorème_de_Pythagore)
 
 $$
 S^2 = F^2 + L^2
 $$
 
-Je substitue la valeur de $$L^2$$ , obtenu précédémment
+Je substitue la valeur de $$L^2$$ , obtenu précédemment
 
 $$
 S^2 = F^2 + H^2 + R^2 - 2RHcos\varphi
@@ -661,7 +663,7 @@ $$
 
 #### Calcul de S pour les rayons de gauche
 
-Je reprends le valeurs mesurées précédemment
+Je reprends les valeurs mesurées précédemment
 
 $$
 H = A/2 = 41/2 = 20.5mm \\
@@ -707,10 +709,10 @@ $$
 
 ### Ajustement 1
 
-Sur le schema ci-dessous je représente comment le rayon va se loger dans le trou du moyeu. Pour tous les calculs
+Sur le schéma ci-dessous je représente comment le rayon va se loger dans le trou du moyeu. Pour tous les calculs 
 précédent j'ai pris les mesures au centre du trou du moyeu, notamment pour la mesure de A et B. Mais 
 Si on prend la documentation des rayons SAPIM CX-Ray la longueur du rayon part de l'intérieur  du coude. Donc 
-il faut enlever le rayon du trou du moyeu pour obtenir la taille réelle du rayon (en vert sur le schema)
+il faut enlever le rayon du trou du moyeu pour obtenir la taille réelle du rayon (en vert sur le schéma).
 {: .text-justify}
 
 ![moyeu](/assets/images/wheel-building/erd_demonstration2.jpeg){:.align-center :height="480px" width="480px"} 
@@ -721,7 +723,7 @@ $$
 r = d/2 = 2.6/2 = 1.3mm
 $$
 
-If suffit de soustraire cette valeur au taille de rayon précédemment calculées.
+If suffit de soustraire cette valeur à la taille du rayon précédemment calculée.
 
 Côté gauche
 
@@ -757,15 +759,15 @@ $$
 
 ### Ajustement 2
 
-Maintenant que j'ai les valeurs théoriques, je vais ajuster la formule en prenant en compte
+Maintenant que j'ai les valeurs théoriques, je vais ajuster la formule en prenant en compte 
 les forces physiques qui y seront appliquées. En effet, les rayons mis sous tension vont s'étirer, 
-certes petit peu mais vous allez le voir cela pourrait changer le choix entre 2 tailles de rayons. Donc pour calculer 
-l'élongation du rayon je vais utiliser le [Loi de Hooke](https://fr.wikipedia.org/wiki/Loi_de_Hooke)
+certes un petit peu, mais vous allez le voir cela pourrait changer le choix entre 2 tailles de rayons. Donc pour 
+calculer l'élongation du rayon je vais utiliser le [Loi de Hooke](https://fr.wikipedia.org/wiki/Loi_de_Hooke).
 {: .text-justify}
 
 ![moyeu](/assets/images/wheel-building/elongation.jpeg){:.align-center :height="480px" width="480px"}
 
-Loi de Hooke appliquer à un cylindre
+Loi de Hooke appliquée à un cylindre
 
 $$
 L'/L = 1/E * F/A \\
@@ -778,7 +780,7 @@ Avec
 
 Soit 210 GPA
 
-- L = Longueur du rayon précédemment calculé
+- L = Longueur du rayon précédemment calculée
 - L Gauche = 227.498mm = 0.227498m
 - L Droite = 223.599mm = 0.223599m
 
@@ -793,10 +795,11 @@ Accélération = 9.81m/s^2
 $$
 
 - A = L'aire de la section = π * R^2
-- R est le rayon du rayon avant qu'il soit forgé. En effet les SAPIM CX-Ray sont cylindriques aux extrémitées
-et plat au milieu. Mais avant transformation le rayon était bien cylindrique. Donc il faut faire un peu
-de recherche ou demander directement au fournisseur de rayon pour avoir cette information. Donc les SAPIM
+- R est le rayon du rayon avant qu'il soit forgé. En effet les SAPIM CX-Ray sont cylindriques aux extrémitées 
+et plat au milieu. Mais avant transformation le rayon était bien cylindrique. Donc il faut faire un peu 
+de recherche ou demander directement au fournisseur de rayon pour avoir cette information. Donc les SAPIM 
 CX-RAY font 1.5mm de diamètre avant d'être forgé. 
+
 Soit
 
 $$
@@ -818,7 +821,7 @@ L' = 981/1.76e^-6 * 0.227498/210e^9
 L' = 0.000601m=0.601mm
 $$
 
-Longueur réelle avant d'être étiré:
+Longueur réelle du rayon avant d'être étiré:
 
 $$
 227.498 - 0.601 = \boxed{226.897mm}
@@ -831,14 +834,14 @@ L' = 981/1.76e^-6 * 0.223599/210e^9
 L' = 0.000591m=0.591mm
 $$
 
-Longueur réelle avant d'être étiré:
+Longueur réelle du rayon avant d'être étiré:
 
 $$
 223.599 - 0.591 = \boxed{222.999mm}
 $$
 
 
-La formule final devient:
+La formule finale devient:
 
 $$
 \boxed{
@@ -850,12 +853,12 @@ $$
  
 ### Résultats
 
-Voilà j'ai enfin tous les élements pour enfin commander mes rayons.
+Voilà j'ai enfin tous les éléments pour enfin commander mes rayons.
 
 J'obtiens 226.897 pour côté gauche et 222.999 pour le côté droit. 
-Mais quand on veut commander les rayons les tailles vont de 130-310mm en chiffre paire
-Cela veut dire que l'on peut acheter du 220mm-222mm-224mm-226mm... Alors que choisir selon les résultats obtenus. 
-C'est assez simple il faut pas dépasser un écart de plus d'1mm sinon ça pourrait rendre difficile le
+Mais quand on veut commander les rayons les tailles vont de 130-310mm en chiffre paire 
+Cela veut dire que l'on peut acheter du 220mm-222mm-224mm-226mm... Alors que choisir, selon les résultats obtenus. 
+C'est assez simple il ne faut pas dépasser un écart de plus d'1mm sinon ça pourrait rendre difficile le 
 montage.
 {: .text-justify}
 
@@ -863,8 +866,8 @@ Donc j'ai commandé 12 rayons 226mm pour le côté gauche et 12 rayons 222mm pou
  
 # Montage
 
-Maintenant que j'ai les rayons, les écrous, le moyeu et la jante. J'ai donc tout ce qu'il me faut pour attaquer
-le montage. Enfin, pour ce faire il me manque quelques outils. J'ai investi dans des outils qui seront très vite
+Maintenant que j'ai les rayons, les écrous, le moyeu et la jante. J'ai donc tout ce qu'il me faut pour attaquer 
+le montage. Enfin, pour ce faire il me manque quelques outils. J'ai investi dans des outils qui seront très vite 
 amorti. 
 {: .text-justify}
 
@@ -872,8 +875,8 @@ amorti.
 
 ### Centreur de roue
 
-Le centreur de roue va permettre de dévoiler la roue pendant la mise sous tension, jusqu'à obtenir une roue non voilée.
-Cette outil sera très utile pour entretenir ses roues durant tout son cycle de vie. Tout cycliste devrait en avoir
+Le centreur de roue va permettre de dévoiler la roue pendant la mise sous tension, jusqu'à obtenir une roue non voilée. 
+Cet outil sera très utile pour entretenir ses roues durant tout son cycle de vie. Tout cycliste devrait en avoir 
 à la maison afin de surveiller ces roues de temps en temps, trop de gens roulent avec des roues voilées...
 {: .text-justify}
 
@@ -881,7 +884,7 @@ Cette outil sera très utile pour entretenir ses roues durant tout son cycle de 
 
 ### Une jauge de centrage ou comparateur d'alignement
 
-Cet outil est très important, il va permettre de vérifier que le moyeu est bien aligné avec la jante. Je l'utiliserai
+Cet outil est très important, il va permettre de vérifier que le moyeu est bien aligné avec la jante. Je l'utiliserai 
 comme pour le centreur tout au long de la mise sous tension.
 {: .text-justify}
 
@@ -889,9 +892,9 @@ comme pour le centreur tout au long de la mise sous tension.
 
 ### Un tournevis à ecrous (tête hexagonale)
 
-Mon choix des écrous double square de chez Sapim était surtout pour leur tête hexagonale ce qui m'a permis d'utiliser
-ce type tournevis qui est assez long pour travailler sur des jantes hautes de plus de 80mm. Il y plusieurs type de tête
-d'écrou, de taille et donc des types différents de tournevis. Il y a aussi des marques qui ont leur propre standard
+Mon choix des écrous double square de chez Sapim était surtout pour leur tête hexagonale ce qui m'a permis d'utiliser 
+ce type tournevis qui est assez long pour travailler sur des jantes hautes de plus de 80mm. Il y a plusieurs types de 
+tête d'écrou, de taille et donc des types différents de tournevis. Il y a aussi des marques qui ont leur propre standard 
 comme dt-swiss qui obligent d'acheter leur écrous et d'utiliser leurs outils.
 {: .text-justify}
 
@@ -899,7 +902,7 @@ comme dt-swiss qui obligent d'acheter leur écrous et d'utiliser leurs outils.
 
 ### Clé de maintien pour rayon plat
 
-Cet outil est spécifique au rayon plat, il permet de maintenir le rayon dans la bonne direction pendant le serrage
+Cet outil est spécifique au rayon plat, il permet de maintenir le rayon dans la bonne direction pendant le serrage 
 de l'écrou.
 {: .text-justify}
 
@@ -907,9 +910,9 @@ de l'écrou.
 
 ### Clé à rayon
 
-Contrairement au tournevis qui va permettre de serrer le rayon depuis l'intérieur du rayon, la clé à rayon
-va permettre de régler la tension des rayons directement depuis la tête extérieur ce qui sera utile quand le boyau
-sera installé. Seul bémole l'outil abime la peinture des rayons  de couleur.
+Contrairement au tournevis qui va permettre de serrer le rayon depuis l'intérieur du rayon, la clé à rayon 
+va permettre de régler la tension des rayons directement depuis la tête extérieure ce qui sera utile quand le boyau 
+sera installé. Seul bémol l'outil abime la peinture des rayons  de couleur.
 {: .text-justify}
 
 ![moyeu](/assets/images/wheel-building/cle_rayon.jpeg){:.align-center :height="240px" width="240px"}
@@ -917,7 +920,7 @@ sera installé. Seul bémole l'outil abime la peinture des rayons  de couleur.
 
 ### Ruban adhésif
 
-Le ruban adhésif sera très utile pour mettre des repères sur les rayons pendant le dévoilage de la roue.
+Le ruban adhésif sera très utile pour mettre des repères sur les rayons pendant le dé-voilage de la roue.
 {: .text-justify}
 
 ![moyeu](/assets/images/wheel-building/ruban_adhesif.jpeg){:.align-center :height="240px" width="240px"} 
@@ -948,33 +951,33 @@ Le tensiomètre va permettre de vérifier la bonne tension sur l'ensemble des ra
 
 ## Laçage
 
-Tout est décrit dans la littérature et il y a pleins de videos sur Youtube pour aider à comprendre
-mais le top c'est cette application [Rad 3D](https://appadvice.com/app/rad-3d/1103912788) que j'ai trouvé par hasard. 
-Elle permet d'avoir unevue à 360° et selon le nombre de rayons et de croisements que l'on souhaite faire. On va pouvoir
-décomposer chaque étape est pouvoir regarder sous tous les angles. Je vais détailler les étapes pour mon type de 
-montage, en effet, il y a plusieurs façon de lacé.:
+Tout est décrit dans la littérature et il y a plein de videos sur Youtube pour aider à comprendre 
+, mais le top c'est cette application [Rad 3D](https://appadvice.com/app/rad-3d/1103912788) que j'ai trouvé par hasard. 
+Elle permet d'avoir une vue à 360° selon le nombre de rayons et de croisements que l'on souhaite faire. On va 
+pouvoir décomposer chaque étape et pouvoir regarder sous tous les angles. Je vais détailler les étapes pour mon type de 
+montage, en effet, il y a plusieurs façons de lacer:
 
-- Radial: Les rayons ne ce croisent pas. On retrouve se type de montage sur les roues avant mais parfois sur le  côté
+- Radial: les rayons ne ce croisent pas. On retrouve ce type de montage sur les roues avants, mais parfois sur le  côté 
 gauche du moyeu à l'arrière ce qui n'a qu'un intérêt en terme d'esthétisme. De plu, un montage radial fragilise la roue 
 surtout au niveau du freinage. Mes roues 38mm que j'avais fait monter, à l'arrière ont 8 rayons radial à gauche et 16 
-rayons avec 2 croisements à droite. Je comprends pourquoi ma roue chasse quand je sprint en danseuse. En effet les 8 rayons radiaux 
-sont la cause de se déséquilibre.
+rayons avec 2 croisements à droite. Je comprends pourquoi ma roue chasse quand je sprinte en danseuse. En effet les 8 
+rayons radiaux sont la cause de se déséquilibre.
 
-Il existe 3 autres type de laçage  
-- A: Un lacage symétrique du côté gauche et côté droit (cassette). Les rayons qui sortent du moyeu vers l'extérieur
-vont croisés les rayons qui sortent par l'intérieur  en passant en-dessous.
-- B: Un autre lacage symétrique est de faire l'inverse du précédement.
+Il existe 3 autres type de laçage:
+- A: Un laçage symétrique du côté gauche et côté droit (cassette). Les rayons qui sortent du moyeu vers l'extérieur 
+vont croisés les rayons qui sortent par l'intérieur  en passant en dessous. 
+- B: Un autre laçage symétrique est de faire l'inverse du précédemment. 
 
-C'est de type de montage n'apporte rien en terme de performance. Par contre ils ont une légère différence au freinage
-notamment si on a des freins à disque. En effet, lors du freinage les rayons vont se tirer avec le premier type
-de laçage, les rayons vont être tirer vers l'intérieur alors que dans l'autre cas vers l'extérieur ce qui pourrait
-toucher le disque de frein. L'autre différence c'est qu'à l'inverse lors du pédalage, le lacage de type A vont tirer
-vers l'extérieur ce qui pourrait venir toucher la cassette... Après d'après ce que j'ai lu, il y a souvent largement
+C'est de type de montage n'apporte rien en terme de performance. Par contre, ils ont une légère différence au freinage 
+notamment si on a des freins à disque. En effet, lors du freinage les rayons vont se tirer avec le premier type 
+de laçage, les rayons vont être tirés vers l'intérieur alors que dans l'autre cas vers l'extérieur ce qui pourrait 
+toucher le disque de frein. L'autre différence c'est qu'à l'inverse lors du pédalage, le laçage de type A vont tirer 
+vers l'extérieur ce qui pourrait venir toucher la cassette... D'après ce que j'ai lu, il y a souvent largement 
 assez d'espace pour ne pas toucher la cassette ou le frein à disque. 
 {: .text-justify}
 
-- Enfin, un dernier montage spécifique Shimano pour freins à disque pour les roues arrière que l'ont peut trouver
-sur internet.
+- Enfin, un dernier montage spécifique Shimano pour freins à disque pour les roues arrières que l'on peut 
+trouver sur internet.
 
 J'ai donc fait le choix de faire mon laçage de type A. 
 
@@ -984,11 +987,11 @@ J'ai donc fait le choix de faire mon laçage de type A.
 ### Etape 1: 
 
 ![moyeu](/assets/images/wheel-building/lacage_step1.jpg){: .align-left :height="320px" width="320px"}
-Moyeu côté cassette en face de moi et repère de valve aligné perpendiculairement. Pour avoir une roue bien fini
-le top c'est d'avoir le logo du moyeu aligné avec la valve. Pour y arriver, il suffit de penser à l'angle que va prendre
-les rayons au moment du laçage, on le verra à l'étape suivante. La technique c'est juste de prendre le milieu
-du logo du moyeu et compté 3 trous vers la gauche on le verra ensuite pourquoi 3. Mais simplement lors du laçage
-avec un croisements par 2, ça va tomber pile poil en face la valve.
+Moyeu côté cassette en face de moi et repère de valve aligné perpendiculairement. Pour avoir une roue bien fini 
+le top c'est d'avoir le logo du moyeu aligné avec la valve. Pour y arriver, il suffit de penser à l'angle que va 
+prendre les rayons au moment du laçage, on le verra à l'étape suivante. La technique c'est juste de prendre le milieu 
+du logo du moyeu et compté 3 trous vers la gauche on le verra ensuite pourquoi 3. Mais simplement lors du laçage 
+avec un croisement par 2, ça va tomber pile poil en face la valve.
 
 ![moyeu](/assets/images/wheel-building/lacage_step10.jpg){:height="240px" width="240px"}
 ![moyeu](/assets/images/wheel-building/lacage_step11.jpg){:height="240px" width="240px"}
@@ -997,10 +1000,10 @@ avec un croisements par 2, ça va tomber pile poil en face la valve.
 ### Etape 2: 
 
 ![moyeu](/assets/images/wheel-building/lacage_step6.jpg){: .align-left :height="320px" width="320px"}
-Je commence côté cassette donc bien prendre les bon rayons. Surtout bien les séparer pour ne pas les mélanger...
+Je commence côté cassette donc bien prendre les bons rayons. Surtout bien les séparer pour ne pas les mélanger... 
 A partir de cette étape, il faut prendre son temps. Donc je prends 6 rayons de 222mm (côté cassette) et je pars du 
-centre du moyeu, en rentrant par l'extérieur et j'insère le rayon dans le premier trou à gauche de la valve. Je prends
-un écrou et je le serre légèrement justement pour qu'il tienne seule. Ensuite j'alterne tous les 2 trous côté moyeu
+centre du moyeu, en rentrant par l'extérieur et j'insère le rayon dans le premier trou à gauche de la valve. Je prends 
+un écrou et je le serre légèrement justement pour qu'il tienne seule. Ensuite, j'alterne tous les 2 trous côté moyeu 
 et tous les 4 trous côté jante.
 
 ![moyeu](/assets/images/wheel-building/lacage_step12.jpg){: .align-center :height="320px" width="320px"}
@@ -1009,10 +1012,10 @@ et tous les 4 trous côté jante.
 ### Etape 3: 
 
 ![moyeu](/assets/images/wheel-building/lacage_step7.jpg){: .align-left :height="320px" width="320px"} Je n'affiche
-pas les rayons de l'étape 2 pour une meilleur lisibilité. On retourne la jante, je fais la même opération mais en 
-prenant les rayons de 226mm (côté gauche). Moi j'ai pris des écrous de différentes couleurs juste pour le style, donc
- pour obtenir une alternance j'ai utilisé des rouges
-côté cassette et des noirs côté gauche. De plus de style, ça ma super aider comme repère lors du dévoilage.
+pas les rayons de l'étape 2 pour une meilleure lisibilité. On retourne la jante, je fais la même opération, mais en 
+prenant les rayons de 226mm (côté gauche). Moi j'ai pris des écrous de différentes couleurs juste pour le style, donc 
+ pour obtenir une alternance j'ai utilisé des rouges, 
+côté cassette et des noirs, côté gauche. De plus, ça m'a aidé comme repère lors du dé-voilage.
 
 ![moyeu](/assets/images/wheel-building/lacage_step13.jpg){: .align-center :height="320px" width="320px"}
 
@@ -1020,9 +1023,9 @@ côté cassette et des noirs côté gauche. De plus de style, ça ma super aider
 ### Etape 4: 
 
 ![moyeu](/assets/images/wheel-building/lacage_step2.jpg){: .align-left :height="320px" width="320px"} Idem que 
-précédemment j'ai omis les rayons de l'autre côté pour une meilleur lisibilité.
-Je prends le moyeu côté cassette et je le tourne dans le sens inverse d'une aiguille d'une montre jusqu'à que ça bloque.
-On atteint l'angle voulu dans tous les calculs précédents. Et c'est avec cette rotation que l'on va recentrer le logo
+précédemment j'ai omis les rayons de l'autre côté pour une meilleure lisibilité. 
+Je prends le moyeu côté cassette et je le tourne dans le sens inverse d'une aiguille d'une montre jusqu'à que ça 
+bloque. On atteint l'angle voulu dans tous les calculs précédents. Et c'est avec cette rotation que l'on va recentrer le logo 
 du moyeu en face de la valve. On comprend pourquoi j'ai fait un décalage du moyeu en étape 1.
 
 -------
@@ -1030,9 +1033,9 @@ du moyeu en face de la valve. On comprend pourquoi j'ai fait un décalage du moy
 
 ![moyeu](/assets/images/wheel-building/lacage_step3.jpg){: .align-left :height="320px" width="320px"}
 Je n'affiche que les rayons côté cassette pour que ce soit plus lisible. Donc je reprends de nouveau 6 rayons de 222m 
-(côté cassette) et j'insère les rayons dans les trous restants mais cette
+(côté cassette) et j'insère les rayons dans les trous restants, mais cette 
 fois-ci je vais rentrer par l'intérieur, puis faire un croisement en passant en dessous du rayon adjacent pour 
-atteindre (voir schema ci-dessous). Le rayon doit rejoindre le trou dans la jante comme sur le schema ci-contre.
+atteindre (voir schéma ci-dessous). Le rayon doit rejoindre le trou dans la jante comme sur le schéma ci-contre. 
 Il faut maintenant ne pas hésiter à plier le rayon pour atteindre le trou. Enfin toujours pareil il suffit de juste 
 assez visser pour que le rayon tienne.
 
@@ -1048,39 +1051,39 @@ Voici le résultat si j'affiche les rayons des 2 côtés.
 ### Etape 6: 
 
 ![moyeu](/assets/images/wheel-building/lacage_step5.jpg){: .align-left :height="320px" width="320px"}
-Il suffit maintenant de mettre les 6 derniers rayons de la même manière mais du côté gauche. Voici ci-contre la
+Il suffit maintenant de mettre les 6 derniers rayons de la même manière, mais du côté gauche. Voici ci-contre la 
 roue complètement lacé de chaque côté.
 
 ![moyeu](/assets/images/wheel-building/lacage_step16.jpg){: .align-center :height="320px" width="320px"}
 
     
-## Mise sous tension et dévoilage
+## Mise sous tension et dé-voilage
 
 La roue est prête pour être dévoilé et être mise sous tension. J'installe la roue sur le centreur de 
-roue et c'est partie. Pour cette partie, il faut encore une fois prendre son temps car je n'ai aucune expérience
-dans ce domaine contrairement à un professionnel qui peu faire ça très vite. Il s'agit d'un coup de main à prendre
-à force de le faire. J'ai du recommencer plusieurs fois avant d'arriver au résultat final, mais on apprend de ses
-erreurs comme on dit. Donc j'ai mis plusieurs heures pour y arriver mais ça en valait le coup.
+roue et c'est parti. Pour cette partie, il faut encore une fois prendre son temps, car je n'ai aucune expérience 
+dans ce domaine contrairement à un professionnel qui peut faire ça très vite. Il s'agit d'un coup de main à prendre 
+à force de le faire. J'ai dû recommencer plusieurs fois avant d'arriver au résultat final, mais on apprend de ses 
+erreurs comme on dit. Donc j'ai mis plusieurs heures pour y arriver, mais cela en valait le coup.
 {: .text-justify}
 
 ![moyeu](/assets/images/wheel-building/lacage_step17.jpg){: .align-center :height="320px" width="320px"}
 
 ### Etape 1
 
-J'ai tout d'abord serrer tous les rayons au même niveau, j'ai pris comme repère le filetage du rayons. Donc j'ai 
-visser chaque rayon jusqu'à que le filetage ne soit plus visible.
+J'ai tout d'abord serrer tous les rayons au même niveau, j'ai pris comme repère le filetage du rayon. Donc j'ai 
+vissé chaque rayon jusqu'à que le filetage ne soit plus visible.
 {: .text-justify}
 
 ### Etape 2
 
-A l'aide de la jauge de centrage je vérifie l'état de mon alignement. Pour l'instant il est complètement faux ce qui
-normal. Mais on constate bien qu'il va ramener le moyeu au centre de la jante. Pour cela il va falloir plus visser
+A l'aide de la jauge de centrage je vérifie l'état de mon alignement. Pour l'instant il est complètement faux ce qui 
+normal. Mais on constate bien qu'il va ramener le moyeu au centre de la jante. Pour cela il va falloir plus visser 
 les rayons d'un côté. Donc pour faire simple, si je visse les rayons côté cassette cela va ramener la jante vers la 
-droite (Quand on sert les rayons il faut bien comprendre que c'est la jante qui bouge et pas le moyeu) et inversement
-si je sers ce de gauche. Donc selon l'état de l'alignement il faut jouer sur les rayons de gauche et droite. Donc
-je sers de 2 tours de tournevis sur chaque rayon à droite et 1 tour pour les rayons côté gauche. Il faut savoir
+droite (Quand on sert les rayons il faut bien comprendre que c'est la jante qui bouge et pas le moyeu) et inversement 
+si je sers ce de gauche. Donc selon l'état de l'alignement il faut jouer sur les rayons de gauche et droite. Donc 
+je sers de 2 tours de tournevis sur chaque rayon à droite et 1 tour pour les rayons côté gauche. Il faut savoir 
 que plus on va avancer dans la mise sous tension plus il faudra limiter le nombre de tour jusqu'à faire des quarts 
-de tour pour les derniers adjustements. Si on ne fait pas progressivement, il sera impossible de dévoiler la roue
+de tour pour les derniers ajustements. Si on ne fait pas progressivement, il sera impossible de dévoiler la roue 
 dans les étapes suivantes.
 {: .text-justify}
 
