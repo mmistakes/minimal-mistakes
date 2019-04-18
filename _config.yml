@@ -19,8 +19,8 @@ minimal_mistakes_skin    : "dark" #, "aqua", "contrast", "dark", "dirt", "neon",
 locale                   : "pt-BR"
 title                    : "Um Mecatrônico Desiludido"
 title_separator          : "-"
-name                     : "Rodrigo Werberich da Silva Moreira de Oliveira"
-description              : "An amazing website."
+name                     : "Rodrigo Werberich S. M. de Oliveira"
+description              : "Um blog sobre minhas experiências profissionais e projetos pessoais."
 url                      : https://rodrigowerberich.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -107,9 +107,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Rodrigo Werberich da Silva Moreira de Oliveira"
+  name             : "Rodrigo Werberich S. M. de Oliveira"
   avatar           :  "/assets/images/cartoon-face.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
+  bio              : "Um engenheiro apaixonado pela computação."
   location         : "Brasília, DF"
   email            :
   links:

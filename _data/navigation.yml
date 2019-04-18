@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "Sobre Mim"
+    url: /sobre-mim/
   - title: "Categorias"
     url: /categories/
   - title: "Tags"
