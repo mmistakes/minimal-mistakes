@@ -547,7 +547,7 @@ $$
 
 ### Calcul de L
 
-![moyeu](/assets/images/wheel-building/erd_demonstration4.jpg){:.align-center :height="480px" width="480px"}
+![moyeu](/assets/images/wheel-building/erd_demonstration6.jpg){:.align-center :height="320px" width="320px"}
 
 Donc si on revient au triangle 1 HLR. on connaît H mesuré précédemment et l'ERD aussi,
 on va donc pouvoir déterminer la valeur de L. La difficulté dans ce triangle c'est qu'il 
@@ -562,14 +562,13 @@ détaillerai tout ça dans le chapitre dédié au laçage.
 
 [Loi du cosinus](https://fr.wikipedia.org/wiki/Loi_des_cosinus)
 
-![angle_phi](/assets/images/wheel-building/angle_phi.jpg){:.align-center :height="480px" width="480px"}
+![angle_phi](/assets/images/wheel-building/angle_phi.jpg){:.align-center :height="320px" width="320px"}
 
 On obtient un angle 15° x 4 = 60°.
 
 Maintenant j'ai tout ce qu'il faut pour appliquer la loi du cosinus et obtenir la valeur de L.
 
-TODO refaire un schema
-![moyeu](/assets/images/wheel-building/erd_demonstration6.jpg){:.align-center :height="480px" width="480px"}
+![moyeu](/assets/images/wheel-building/erd_demonstration4.jpg){:.align-center :height="480px" width="480px"}
 
 
 $$
