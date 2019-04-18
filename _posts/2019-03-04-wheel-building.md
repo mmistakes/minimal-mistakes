@@ -636,7 +636,7 @@ $$
 Maintenant grâce à la valeur L, on peut appliquer un simple théorème de Pythagore sur le triangle LSF afin 
 de déterminer S.
 
-![moyeu](/assets/images/wheel-building/erd_demonstration3.jpg){:.align-center :height="320px" width="320px"}
+![moyeu](/assets/images/wheel-building/erd_demonstration4.jpg){:.align-center :height="320px" width="320px"}
 
 Théorème de Pythagore sur le LSF avec S comme hypoténuse. 
 [Théorème de Pythagore](https://fr.wikipedia.org/wiki/Théorème_de_Pythagore)
