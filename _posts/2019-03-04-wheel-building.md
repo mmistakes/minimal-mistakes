@@ -568,7 +568,7 @@ On obtient un angle 15° x 4 = 60°.
 
 Maintenant j'ai tout ce qu'il faut pour appliquer la loi du cosinus et obtenir la valeur de L.
 
-![moyeu](/assets/images/wheel-building/erd_demonstration4.jpg){:.align-center :height="480px" width="480px"}
+![moyeu](/assets/images/wheel-building/erd_demonstration6.jpg){:.align-center :height="480px" width="480px"}
 
 
 $$
