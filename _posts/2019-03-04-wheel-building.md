@@ -540,9 +540,15 @@ J'obtiens les valeurs suivantes:
 
 $$
 A = 41mm \\
-B = 49mm \\
-H = A/2 = 20.5 pour la partie gauche \\
-H = B/2 = 24.5 pour la partie droite
+B = 49mm 
+$$
+pour la partie gauche
+$$
+H = A/2 = 20.5
+$$
+pour la partie droite
+$$
+H = B/2 = 24.5
 $$
 
 ### Calcul de L
@@ -667,7 +673,7 @@ Je reprends les valeurs mesurées précédemment
 $$
 H = A/2 = 41/2 = 20.5mm \\
 F = 36mm \\
-R = ERD/2 = 471/2= 235.5mm
+R = ERD/2 = 471/2= 235.5mm \\
 \varphi = 60°
 $$
 
