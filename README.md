@@ -128,6 +128,8 @@ To install:
 
 4. Add `remote_theme: "mmistakes/minimal-mistakes@4.16.0"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
 
+**Looking for an example?** Fork the [Minimal Mistakes remote theme starter](https://github.com/mmistakes/mm-github-pages-starter) for the quickest method of getting a GitHub Pages hosted site up and running. Replace sample content with your own and configure as needed.
+
 ## Usage
 
 For detailed instructions on how to configure, customize, add/migrate content, and more read the [theme's documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
