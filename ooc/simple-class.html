@@ -1,0 +1,1059 @@
+
+
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.16.0 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="br" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+
+
+
+<!-- begin _includes/seo.html --><title>OOC - Simple Class - Um Mecatrônico Desiludido</title>
+<meta name="description" content="How to create a simple class.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="br">
+<meta property="og:site_name" content="Um Mecatrônico Desiludido">
+<meta property="og:title" content="OOC - Simple Class">
+<meta property="og:url" content="https://rodrigowerberich.github.io//ooc/simple-class">
+
+
+  <meta property="og:description" content="How to create a simple class.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2019-04-15T00:00:00-03:00">
+
+
+
+  <meta property="article:modified_time" content="2019-04-15T03:30:10-03:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://rodrigowerberich.github.io//ooc/simple-class">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Rodrigo Werberich S. M. de Oliveira",
+      "url": "https://rodrigowerberich.github.io/",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Um Mecatrônico Desiludido Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+
+
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/cartoon-face.png" alt=""></a>
+        
+        <a class="site-title" href="/">Um Mecatrônico Desiludido</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/sobre-mim/" >Sobre Mim</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categorias/" >Categorias</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/br" >Tags</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Buscar</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <div class ="dropdown">
+            <button class="dropbtn">
+              
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              
+              
+                  <a href="/ooc/interface" class=""></a>
+              
+                  <a href="/ooc/super-class" class=""></a>
+              
+                  <a href="/ooc/simple-class" class=""></a>
+              
+                  <a href="/ooc/base/br" class="br">br</a>
+              
+                  <a href="/ooc/base/en" class="en">en</a>
+              
+              
+              
+              
+                  <a href="/assets/js/lunr/lunr-en.js" class=""></a>
+              
+                  <a href="/assets/js/lunr/lunr-gr.js" class=""></a>
+              
+                  <a href="/assets/js/lunr/lunr-store.js" class=""></a>
+              
+                  <a href="/assets/css/main.css" class=""></a>
+              
+                  <a href="/sitemap.xml" class=""></a>
+              
+                  <a href="/robots.txt" class=""></a>
+              
+                  <a href="/feed.xml" class=""></a>
+              
+                  <a href="/categorias/" class="br">br</a>
+              
+                  <a href="/" class="br">br</a>
+              
+                  <a href="/sobre-mim/" class="br">br</a>
+              
+                  <a href="/tags/br" class="br">br</a>
+              
+                  <a href="/categories/" class="en">en</a>
+              
+                  <a href="/index-en/" class="en">en</a>
+              
+                  <a href="/about-me/" class="en">en</a>
+              
+                  <a href="/tags/en" class="en">en</a>
+              
+            </div>
+        </div>
+        <!-- <ul>
+          
+          
+            <li>
+              <a href="/ooc/interface" class=""></a>
+            </li>
+          
+            <li>
+              <a href="/ooc/super-class" class=""></a>
+            </li>
+          
+            <li>
+              <a href="/ooc/simple-class" class=""></a>
+            </li>
+          
+            <li>
+              <a href="/ooc/base/br" class="br">br</a>
+            </li>
+          
+            <li>
+              <a href="/ooc/base/en" class="en">en</a>
+            </li>
+          
+          
+          
+          
+            <li>
+              <a href="/assets/js/lunr/lunr-en.js" class=""></a>
+            </li>
+          
+            <li>
+              <a href="/assets/js/lunr/lunr-gr.js" class=""></a>
+            </li>
+          
+            <li>
+              <a href="/assets/js/lunr/lunr-store.js" class=""></a>
+            </li>
+          
+            <li>
+              <a href="/assets/css/main.css" class=""></a>
+            </li>
+          
+            <li>
+              <a href="/sitemap.xml" class=""></a>
+            </li>
+          
+            <li>
+              <a href="/robots.txt" class=""></a>
+            </li>
+          
+            <li>
+              <a href="/feed.xml" class=""></a>
+            </li>
+          
+            <li>
+              <a href="/categorias/" class="br">br</a>
+            </li>
+          
+            <li>
+              <a href="/" class="br">br</a>
+            </li>
+          
+            <li>
+              <a href="/sobre-mim/" class="br">br</a>
+            </li>
+          
+            <li>
+              <a href="/tags/br" class="br">br</a>
+            </li>
+          
+            <li>
+              <a href="/categories/" class="en">en</a>
+            </li>
+          
+            <li>
+              <a href="/index-en/" class="en">en</a>
+            </li>
+          
+            <li>
+              <a href="/about-me/" class="en">en</a>
+            </li>
+          
+            <li>
+              <a href="/tags/en" class="en">en</a>
+            </li>
+          
+        </ul> -->
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="/assets/images/cartoon-face.png" alt="Rodrigo Werberich S. M. de Oliveira" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Rodrigo Werberich S. M. de Oliveira</h3>
+    
+    
+      
+        <p class="author__bio" itemprop="description">
+          Um engenheiro apaixonado pela computação.
+        </p>
+      
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Acompanhe no</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Brasília, DF</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:rodrigowerberich@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://www.facebook.com/RodrigoWSMO" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+          
+        
+          
+            <li><a href="https://github.com/rodrigowerberich" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+          
+        
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="OOC - Simple Class">
+    <meta itemprop="description" content="How to create a simple class.">
+    <meta itemprop="datePublished" content="April 15, 2019">
+    <meta itemprop="dateModified" content="April 15, 2019">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">OOC - Simple Class
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+
+
+
+  6 minuto(s) de leitura
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-cog"></i> Nesta página</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#creating-a-simple-class">Creating a simple class</a>
+    <ul>
+      <li><a href="#public-interface">Public Interface</a></li>
+      <li><a href="#reserved-interface">Reserved Interface</a></li>
+      <li><a href="#implementation-file">Implementation file</a></li>
+    </ul>
+  </li>
+</ul>
+            </nav>
+          </aside>
+        
+        <h1 id="creating-a-simple-class">Creating a simple class</h1>
+
+<p>Let’s start by creating a simple class: the cat. A cat can be really simplified and be represented by a color, a weight, a length and a name. These will be our attributes.</p>
+
+<p>A cat can “talk”, jump and eat, amongst other things. These will be our methods, or interfaces. With than we can begin building our cat class.</p>
+
+<p>In OOC a class is defined by three files,</p>
+
+<ul>
+  <li>the public interface or .h file,</li>
+  <li>the reserved interface or .r file and</li>
+  <li>the implementation or .c file.</li>
+</ul>
+
+<h2 id="public-interface">Public Interface</h2>
+<p>Let’s begin with the public interface, first we must create the class itself, for that we use the <code class="highlighter-rouge">CLASS_DECLARATION</code> macro.</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// File: cat.h</span>
+<span class="cp">#ifndef CAT_H_
+#define CAT_H_
+#include "ooc.h"
+</span>
+<span class="n">CLASS_DECLARATION</span><span class="p">(</span><span class="n">Cat</span><span class="p">);</span>
+
+<span class="cp">#endif </span><span class="cm">/* CAT_H_ */</span><span class="cp">
+</span></code></pre></div></div>
+<p>This macro creates the type <code class="highlighter-rouge">o_Cat</code>, which we will use to refer to cat objects, the descriptor <code class="highlighter-rouge">Cat_d</code>, which is a pointer to an object that knows how to build cat objects. A forward declaration of the <code class="highlighter-rouge">void* initCat()</code>, a function that creates the <code class="highlighter-rouge">Cat_d</code> descriptor (This function must be implemented in the implementation file). And the implementation of the automatic initializer <code class="highlighter-rouge">inline const void* CatClass()</code>, which is what we will use to access the descriptor.</p>
+
+<p>The next step is to create the constructors of your class, to do that we create inline functions that makes cals to the <code class="highlighter-rouge">ooc_new</code> function.</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">...</span>
+<span class="c1">// File: cat.h</span>
+<span class="c1">// Empty constructor</span>
+<span class="k">static</span> <span class="kr">inline</span> <span class="n">o_Cat</span> <span class="n">Cat</span><span class="p">(){</span>
+    <span class="k">return</span> <span class="n">ooc_new</span><span class="p">(</span><span class="n">CatClass</span><span class="p">(),</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="c1">// Complete constructor</span>
+<span class="k">static</span> <span class="kr">inline</span> <span class="n">o_Cat</span> <span class="n">CatSpecified</span><span class="p">(</span><span class="kt">int</span> <span class="n">color</span><span class="p">,</span> <span class="kt">double</span> <span class="n">weight</span><span class="p">,</span> <span class="kt">double</span> <span class="n">length</span><span class="p">,</span> <span class="n">o_String</span> <span class="n">o_name</span><span class="p">){</span>
+    <span class="k">return</span> <span class="n">ooc_new</span><span class="p">(</span><span class="n">CatClass</span><span class="p">(),</span> <span class="n">color</span><span class="p">,</span> <span class="n">weight</span><span class="p">,</span> <span class="n">length</span><span class="p">,</span> <span class="n">o_name</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="p">...</span>
+</code></pre></div></div>
+<p>Now we must specify what our cat can do. We do it simply be creating functions that takes as the first parameter the class object. This is will be our methods:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">...</span>
+<span class="kt">void</span> <span class="n">Cat_jump</span><span class="p">(</span><span class="n">o_Cat</span> <span class="n">self</span><span class="p">,</span> <span class="kt">double</span> <span class="n">distance</span><span class="p">);</span>
+<span class="kt">void</span> <span class="n">Cat_eat</span><span class="p">(</span><span class="n">o_Cat</span> <span class="n">self</span><span class="p">);</span>
+<span class="n">o_String</span> <span class="n">Cat_talk</span><span class="p">(</span><span class="n">o_Cat</span> <span class="n">self</span><span class="p">);</span> 
+<span class="p">...</span>
+</code></pre></div></div>
+<p>With that our basic class public interface file is complete!</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#ifndef CAT_H_
+#define CAT_H_
+#include "ooc.h"
+#include "o_string.h"
+</span><span class="c1">//---- Class declaration</span>
+<span class="n">CLASS_DECLARATION</span><span class="p">(</span><span class="n">Cat</span><span class="p">);</span>
+<span class="c1">//----  Class constructor</span>
+<span class="c1">// Empty constructor</span>
+<span class="k">static</span> <span class="kr">inline</span> <span class="n">o_Cat</span> <span class="n">Cat</span><span class="p">(){</span>
+    <span class="k">return</span> <span class="n">ooc_new</span><span class="p">(</span><span class="n">CatClass</span><span class="p">(),</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="c1">// Complete constructor</span>
+<span class="k">static</span> <span class="kr">inline</span> <span class="n">o_Cat</span> <span class="n">CatSpecified</span><span class="p">(</span><span class="kt">int</span> <span class="n">color</span><span class="p">,</span> <span class="kt">double</span> <span class="n">weight</span><span class="p">,</span> <span class="kt">double</span> <span class="n">length</span><span class="p">,</span> <span class="n">o_String</span> <span class="n">o_name</span><span class="p">){</span>
+    <span class="k">return</span> <span class="n">ooc_new</span><span class="p">(</span><span class="n">CatClass</span><span class="p">(),</span> <span class="n">color</span><span class="p">,</span> <span class="n">weight</span><span class="p">,</span> <span class="n">length</span><span class="p">,</span> <span class="n">o_name</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="c1">//---- Methods</span>
+<span class="c1">// Static methods</span>
+<span class="kt">void</span> <span class="n">Cat_jump</span><span class="p">(</span><span class="n">o_Cat</span> <span class="n">self</span><span class="p">,</span> <span class="kt">double</span> <span class="n">distance</span><span class="p">);</span>
+<span class="kt">void</span> <span class="n">Cat_eat</span><span class="p">(</span><span class="n">o_Cat</span> <span class="n">self</span><span class="p">);</span>
+<span class="n">o_String</span> <span class="n">Cat_talk</span><span class="p">(</span><span class="n">o_Cat</span> <span class="n">self</span><span class="p">);</span>
+<span class="cp">#endif </span><span class="cm">/* CAT_H_ */</span><span class="cp">
+</span></code></pre></div></div>
+
+<h2 id="reserved-interface">Reserved Interface</h2>
+<p>Now we will build the restricted interface for the cat class, this is pretty simple. All we have to do is create the <code class="highlighter-rouge">cat.r</code> file, include the <code class="highlighter-rouge">ooc.r</code> file and the public interface file and implement the struct that represents our data.</p>
+
+<p>Since our cat is described by it’s color, weight, length and name we create a struct <code class="highlighter-rouge">Cat_r</code> with this information.</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#ifndef CAT_R__
+#define CAT_R__
+</span>
+<span class="cp">#include "ooc.r"
+#include "cat.h"
+</span>
+<span class="k">typedef</span> <span class="k">struct</span> <span class="n">Cat_r</span><span class="p">{</span>
+    <span class="k">const</span> <span class="n">Object_r</span>  <span class="n">_</span><span class="p">;</span>
+    <span class="kt">int</span>             <span class="n">color</span><span class="p">;</span>
+    <span class="kt">double</span>           <span class="n">weight</span><span class="p">;</span>
+    <span class="kt">double</span>           <span class="n">length</span><span class="p">;</span>
+    <span class="n">o_String</span>        <span class="n">o_name</span><span class="p">;</span>
+<span class="p">}</span><span class="n">Cat_r</span><span class="p">;</span>
+
+<span class="cp">#endif //CAT_R__
+</span></code></pre></div></div>
+
+<p>There are two very important things to notice in this struct.</p>
+<ul>
+  <li><strong>The struct must be typedef’ed to create a new type</strong>. This new type <strong>must be</strong> the class name followed by <strong>_r</strong>!</li>
+  <li><strong>The first element of the struct must be the base class representation of this class and must be called <em>_</em></strong>!</li>
+</ul>
+
+<p>You must follow these rules or polimorphism and the macros won’t work.</p>
+
+<p>Now we can start with the implementation file</p>
+
+<h2 id="implementation-file">Implementation file</h2>
+
+<p>We’ll start implementing the static linked methods <code class="highlighter-rouge">Cat_jump</code>, <code class="highlighter-rouge">Cat_eat</code> and <code class="highlighter-rouge">Cat_talk</code>.</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include "cat.h"
+#include "cat.r"
+#include "lua_assert.h"
+</span>
+<span class="kt">void</span> <span class="n">Cat_jump</span><span class="p">(</span><span class="n">o_Cat</span> <span class="n">_self</span><span class="p">,</span> <span class="kt">double</span> <span class="n">distance</span><span class="p">){</span>
+    <span class="n">CAST</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">Cat</span><span class="p">);</span>
+    <span class="n">ASSERT</span><span class="p">(</span><span class="n">self</span><span class="p">,);</span>
+    <span class="k">if</span><span class="p">(</span> <span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="n">self</span><span class="o">-&gt;</span><span class="n">length</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">distance</span> <span class="p">){</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">"Jumping %f meters</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">distance</span><span class="p">);</span>
+    <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">"Can't jump that far</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="n">Cat_eat</span><span class="p">(</span><span class="n">o_Cat</span> <span class="n">_self</span><span class="p">){</span>
+    <span class="n">CAST</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">Cat</span><span class="p">);</span>
+    <span class="n">ASSERT</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="p">);</span>
+    <span class="n">self</span><span class="o">-&gt;</span><span class="n">weight</span> <span class="o">+=</span> <span class="mi">0</span><span class="p">.</span><span class="mo">01</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="n">o_String</span> <span class="n">Cat_talk</span><span class="p">(</span><span class="n">o_Cat</span> <span class="n">_self</span><span class="p">){</span>
+    <span class="n">CAST</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">Cat</span><span class="p">);</span>
+    <span class="n">ASSERT</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+    <span class="n">o_String</span> <span class="n">o_talk</span> <span class="o">=</span> <span class="n">OOC_CLONE</span><span class="p">(</span><span class="n">self</span><span class="o">-&gt;</span><span class="n">o_name</span><span class="p">);</span>
+    <span class="n">String_appendC</span><span class="p">(</span><span class="n">o_talk</span><span class="p">,</span> <span class="s">" says meow!"</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">o_talk</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The class methods must always have the first argument called <code class="highlighter-rouge">_self</code> and it represents the object the method is applied to. To ensure that the class methods is being applied to the right object we should always use the <code class="highlighter-rouge">CAST(name_, class_)</code> macro. This macros verifies if a variable with name <strong>“_var_name”</strong> is a subclass of the <code class="highlighter-rouge">Class</code> specified and casts it into a pointer of <code class="highlighter-rouge">Class_r</code>. If the object is not a subclass the cast will return a pointer to <code class="highlighter-rouge">NULL</code>. That is why we use to <code class="highlighter-rouge">ASSERT(assertion_, return_value_)</code> macro to check if the pointer is valid and deal with the error appropriatly.</p>
+
+<p>The base object has three overwritable functions the ooc_ctor (Constructor), the ooc_dtor(Destructor) and ooc_differ(Comparison).</p>
+
+<p>The only one you must alway overwrite is the constructor. If the constructor allocates any memory, you must implement the destructor and if you wan’t to change the default comparison, which compares pointers, you must overwrite the comparison.</p>
+
+<p>To do that you must use the <code class="highlighter-rouge">OVERWRITE_METHOD(func_desc_)</code> macro which takes in a function descriptor (this will be explained later). The function descriptors for the constructor, destructor and difference methods are, respectively, <code class="highlighter-rouge">M_CTOR</code>, <code class="highlighter-rouge">M_DTOR</code> and <code class="highlighter-rouge">M_DIFFER</code>.</p>
+
+<p>So to implement the Cat constructor</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">static</span> <span class="n">OVERWRITE_METHOD</span><span class="p">(</span><span class="n">Cat</span><span class="p">,</span> <span class="n">M_CTOR</span><span class="p">){</span>
+    <span class="n">SUPER_CTOR</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">Cat</span><span class="p">);</span>
+    <span class="n">ASSERT</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+    <span class="n">self</span><span class="o">-&gt;</span><span class="n">color</span> <span class="o">=</span> <span class="n">CTOR_GET_PARAM</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
+    <span class="n">self</span><span class="o">-&gt;</span><span class="n">weight</span> <span class="o">=</span> <span class="n">CTOR_GET_PARAM</span><span class="p">(</span><span class="kt">double</span><span class="p">);</span>
+    <span class="n">self</span><span class="o">-&gt;</span><span class="n">length</span> <span class="o">=</span> <span class="n">CTOR_GET_PARAM</span><span class="p">(</span><span class="kt">double</span><span class="p">);</span>
+    <span class="n">self</span><span class="o">-&gt;</span><span class="n">o_name</span> <span class="o">=</span> <span class="n">CTOR_GET_PARAM</span><span class="p">(</span><span class="n">o_String</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">self</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>The <code class="highlighter-rouge">SUPER_CTOR(self, Cat);</code> will call the super class constructor. If something is wrong the variable self will be set to <code class="highlighter-rouge">NULL</code>. The macro <code class="highlighter-rouge">CTOR_GET_PARAM(type_)</code> will return the next available parameter with the type passed from the variable list. You must retrieve the parameters exactly in the order passed by the constructor.</p>
+
+<p>Since <code class="highlighter-rouge">o_name</code> is an object, the cat object is now responsible for its lifespan, so we must implement the destructor to free the resource when this object is destroyed.</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">static</span> <span class="n">OVERWRITE_METHOD</span><span class="p">(</span><span class="n">Cat</span><span class="p">,</span> <span class="n">M_DTOR</span><span class="p">){</span>
+    <span class="n">SUPER_DTOR</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">Cat</span><span class="p">);</span>
+    <span class="n">ASSERT</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+    <span class="n">OOC_DELETE</span><span class="p">(</span><span class="n">self</span><span class="o">-&gt;</span><span class="n">o_name</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">self</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The <code class="highlighter-rouge">SUPER_CTOR(self, Cat);</code> will call the super class constructor. If something is wrong the variable self will be set to <code class="highlighter-rouge">NULL</code>.</p>
+
+<p>Both the constructor and the destructor should alway return self, unless something wrong occurs, then it must return <code class="highlighter-rouge">NULL</code>.</p>
+
+<p>To end the class implementation all we have to do is create the description class variable <code class="highlighter-rouge">Cat_d</code> and the class initializer <code class="highlighter-rouge">initCat()</code>.</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">const</span> <span class="kt">void</span><span class="o">*</span> <span class="n">Cat_d</span><span class="p">;</span>
+<span class="k">const</span> <span class="kt">void</span><span class="o">*</span> <span class="n">initCat</span><span class="p">(){</span>
+    <span class="k">return</span> <span class="n">ooc_new</span><span class="p">(</span>	
+            <span class="n">ClassClass</span><span class="p">(),</span>               <span class="c1">// MetaClass</span>
+            <span class="s">"Cat"</span><span class="p">,</span>                      <span class="c1">// Class name</span>
+            <span class="n">ObjectClass</span><span class="p">(),</span>              <span class="c1">// Super class</span>
+            <span class="k">sizeof</span><span class="p">(</span><span class="n">Cat_r</span><span class="p">),</span>              <span class="c1">// Size of representation structure</span>
+            <span class="n">LINK_METHOD</span><span class="p">(</span><span class="n">Cat</span><span class="p">,</span> <span class="n">M_CTOR</span><span class="p">),</span>   <span class="c1">// Linking the dynamic methods</span>
+            <span class="n">LINK_METHOD</span><span class="p">(</span><span class="n">Cat</span><span class="p">,</span> <span class="n">M_DTOR</span><span class="p">),</span>
+            <span class="mi">0</span><span class="p">);</span> <span class="c1">// Must alway ends with a zero</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The <code class="highlighter-rouge">initCat()</code> method is called by the <code class="highlighter-rouge">CatClass()</code> automatic initializer, which will assign the object created inside <code class="highlighter-rouge">initCat</code> to the <code class="highlighter-rouge">Cat_d</code> descriptor object. This object contains the blueprint to build Cat objects.</p>
+
+<p>The end implementation file should be something like this:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include "cat.h"
+#include "cat.r"
+#include "lua_assert.h"
+</span>
+<span class="c1">// Static methods ------</span>
+<span class="kt">void</span> <span class="n">Cat_jump</span><span class="p">(</span><span class="n">o_Cat</span> <span class="n">_self</span><span class="p">,</span> <span class="kt">double</span> <span class="n">distance</span><span class="p">){</span>
+    <span class="n">CAST</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">Cat</span><span class="p">);</span>
+    <span class="n">ASSERT</span><span class="p">(</span><span class="n">self</span><span class="p">,);</span>
+    <span class="k">if</span><span class="p">(</span> <span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="n">self</span><span class="o">-&gt;</span><span class="n">length</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">distance</span> <span class="p">){</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">"Jumping %f meters</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">distance</span><span class="p">);</span>
+    <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">"Can't jump that far</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="n">Cat_eat</span><span class="p">(</span><span class="n">o_Cat</span> <span class="n">_self</span><span class="p">){</span>
+    <span class="n">CAST</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">Cat</span><span class="p">);</span>
+    <span class="n">ASSERT</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="p">);</span>
+    <span class="n">self</span><span class="o">-&gt;</span><span class="n">weight</span> <span class="o">+=</span> <span class="mi">0</span><span class="p">.</span><span class="mo">01</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="n">o_String</span> <span class="n">Cat_talk</span><span class="p">(</span><span class="n">o_Cat</span> <span class="n">_self</span><span class="p">){</span>
+    <span class="n">CAST</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">Cat</span><span class="p">);</span>
+    <span class="n">ASSERT</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+    <span class="n">o_String</span> <span class="n">o_talk</span> <span class="o">=</span> <span class="n">OOC_CLONE</span><span class="p">(</span><span class="n">self</span><span class="o">-&gt;</span><span class="n">o_name</span><span class="p">);</span>
+    <span class="n">String_appendC</span><span class="p">(</span><span class="n">o_talk</span><span class="p">,</span> <span class="s">" says meow!"</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">o_talk</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// Dynamic methods -----------</span>
+<span class="c1">// Overwriting object -----------</span>
+<span class="k">static</span> <span class="n">OVERWRITE_METHOD</span><span class="p">(</span><span class="n">Cat</span><span class="p">,</span> <span class="n">M_CTOR</span><span class="p">){</span>
+    <span class="n">SUPER_CTOR</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">Cat</span><span class="p">);</span>
+    <span class="n">ASSERT</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+    <span class="n">self</span><span class="o">-&gt;</span><span class="n">color</span> <span class="o">=</span> <span class="n">CTOR_GET_PARAM</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
+    <span class="n">self</span><span class="o">-&gt;</span><span class="n">weight</span> <span class="o">=</span> <span class="n">CTOR_GET_PARAM</span><span class="p">(</span><span class="kt">double</span><span class="p">);</span>
+    <span class="n">self</span><span class="o">-&gt;</span><span class="n">length</span> <span class="o">=</span> <span class="n">CTOR_GET_PARAM</span><span class="p">(</span><span class="kt">double</span><span class="p">);</span>
+    <span class="n">self</span><span class="o">-&gt;</span><span class="n">o_name</span> <span class="o">=</span> <span class="n">CTOR_GET_PARAM</span><span class="p">(</span><span class="n">o_String</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">self</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="n">OVERWRITE_METHOD</span><span class="p">(</span><span class="n">Cat</span><span class="p">,</span> <span class="n">M_DTOR</span><span class="p">){</span>
+    <span class="n">SUPER_DTOR</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">Cat</span><span class="p">);</span>
+    <span class="n">ASSERT</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+    <span class="n">OOC_DELETE</span><span class="p">(</span><span class="n">self</span><span class="o">-&gt;</span><span class="n">o_name</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">self</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// Descriptor and initializer</span>
+<span class="k">const</span> <span class="kt">void</span><span class="o">*</span> <span class="n">Cat_d</span><span class="p">;</span>
+<span class="k">const</span> <span class="kt">void</span><span class="o">*</span> <span class="n">initCat</span><span class="p">(){</span>
+    <span class="k">return</span> <span class="n">ooc_new</span><span class="p">(</span>	
+            <span class="n">ClassClass</span><span class="p">(),</span>               <span class="c1">// MetaClass</span>
+            <span class="s">"Cat"</span><span class="p">,</span>                      <span class="c1">// Class name</span>
+            <span class="n">ObjectClass</span><span class="p">(),</span>              <span class="c1">// Super class</span>
+            <span class="k">sizeof</span><span class="p">(</span><span class="n">Cat_r</span><span class="p">),</span>              <span class="c1">// Size of representation structure</span>
+            <span class="n">LINK_METHOD</span><span class="p">(</span><span class="n">Cat</span><span class="p">,</span> <span class="n">M_CTOR</span><span class="p">),</span>   <span class="c1">// Linking the dynamic methods</span>
+            <span class="n">LINK_METHOD</span><span class="p">(</span><span class="n">Cat</span><span class="p">,</span> <span class="n">M_DTOR</span><span class="p">),</span>
+            <span class="mi">0</span><span class="p">);</span> <span class="c1">// Must alway ends with a zero</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#c" class="page__taxonomy-item" rel="tag">c</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#classe" class="page__taxonomy-item" rel="tag">Classe</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#ooc" class="page__taxonomy-item" rel="tag">OOC</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categorias: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#ooc" class="page__taxonomy-item" rel="tag">OOC</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Atualizado em:</strong> <time datetime="2019-04-15">April 15, 2019</time></p>
+        
+      </footer>
+
+      
+
+
+<section class="page__share">
+  
+    <h4 class="page__share-title">Compartilhe: </h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=OOC+-+Simple+Class%20https%3A%2F%2Frodrigowerberich.github.io%2F%2Fooc%2Fsimple-class" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhe:  Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Frodrigowerberich.github.io%2F%2Fooc%2Fsimple-class" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhe:  Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Frodrigowerberich.github.io%2F%2Fooc%2Fsimple-class" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhe:  LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+
+
+
+  <nav class="pagination">
+    
+      <a href="/ooc/base/en" class="pagination--pager" title="OOC - Base
+">Anterior</a>
+    
+    
+      <a href="/ooc/super-class" class="pagination--pager" title="OOC - Super Class
+">Próxima</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">Talvez você também goste</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/ooc/interface" rel="permalink">OOC - Interface
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+
+
+
+  6 minuto(s) de leitura
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Instructions how to create an OOC Interface.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/ooc/super-class" rel="permalink">OOC - Super Class
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+
+
+
+  8 minuto(s) de leitura
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">How to create a simple class.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/ooc/base/en" rel="permalink">OOC - Base
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+
+
+
+  menos que 1 minuto(s) de leitura
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">The very basics on how to use OOC.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/ooc/base/br" rel="permalink">OOC - Base
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+
+
+
+  menos que 1 minuto(s) de leitura
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">O básico de como utilizar OOC.
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        
+
+
+<div class="search-content__inner-wrap"><input type="search" id="search" aria-placeholder="Pesquisar..." class="search-input" tabindex="-1" placeholder="Pesquisar..." />
+    <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Acompanhe no</strong></li>
+    
+
+    
+      
+        
+      
+        
+          <li><a href="https://www.facebook.com/RodrigoWSMO" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://github.com/rodrigowerberich" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2019 Rodrigo Werberich S. M. de Oliveira. Desenvolvido com <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://rodrigowerberich.github.io//ooc/simple-class";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/ooc/OOC-2-simple-class"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://rodrigowerberich-github-io.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

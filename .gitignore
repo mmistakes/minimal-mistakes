@@ -13,4 +13,3 @@ Gemfile.lock
 node_modules
 npm-debug.log*
 build
-publish-gh-pages.sh

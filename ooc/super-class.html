@@ -1,0 +1,1258 @@
+
+
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.16.0 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="br" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+
+
+
+<!-- begin _includes/seo.html --><title>OOC - Super Class - Um Mecatrônico Desiludido</title>
+<meta name="description" content="How to create a simple class.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="br">
+<meta property="og:site_name" content="Um Mecatrônico Desiludido">
+<meta property="og:title" content="OOC - Super Class">
+<meta property="og:url" content="https://rodrigowerberich.github.io//ooc/super-class">
+
+
+  <meta property="og:description" content="How to create a simple class.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2019-04-15T00:00:00-03:00">
+
+
+
+  <meta property="article:modified_time" content="2019-04-15T03:30:10-03:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://rodrigowerberich.github.io//ooc/super-class">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Rodrigo Werberich S. M. de Oliveira",
+      "url": "https://rodrigowerberich.github.io/",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Um Mecatrônico Desiludido Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+
+
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/cartoon-face.png" alt=""></a>
+        
+        <a class="site-title" href="/">Um Mecatrônico Desiludido</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/sobre-mim/" >Sobre Mim</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categorias/" >Categorias</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/br" >Tags</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Buscar</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <div class ="dropdown">
+            <button class="dropbtn">
+              
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              
+              
+                  <a href="/ooc/interface" class=""></a>
+              
+                  <a href="/ooc/super-class" class=""></a>
+              
+                  <a href="/ooc/simple-class" class=""></a>
+              
+                  <a href="/ooc/base/br" class="br">br</a>
+              
+                  <a href="/ooc/base/en" class="en">en</a>
+              
+              
+              
+              
+                  <a href="/assets/js/lunr/lunr-en.js" class=""></a>
+              
+                  <a href="/assets/js/lunr/lunr-gr.js" class=""></a>
+              
+                  <a href="/assets/js/lunr/lunr-store.js" class=""></a>
+              
+                  <a href="/assets/css/main.css" class=""></a>
+              
+                  <a href="/sitemap.xml" class=""></a>
+              
+                  <a href="/robots.txt" class=""></a>
+              
+                  <a href="/feed.xml" class=""></a>
+              
+                  <a href="/categorias/" class="br">br</a>
+              
+                  <a href="/" class="br">br</a>
+              
+                  <a href="/sobre-mim/" class="br">br</a>
+              
+                  <a href="/tags/br" class="br">br</a>
+              
+                  <a href="/categories/" class="en">en</a>
+              
+                  <a href="/index-en/" class="en">en</a>
+              
+                  <a href="/about-me/" class="en">en</a>
+              
+                  <a href="/tags/en" class="en">en</a>
+              
+            </div>
+        </div>
+        <!-- <ul>
+          
+          
+            <li>
+              <a href="/ooc/interface" class=""></a>
+            </li>
+          
+            <li>
+              <a href="/ooc/super-class" class=""></a>
+            </li>
+          
+            <li>
+              <a href="/ooc/simple-class" class=""></a>
+            </li>
+          
+            <li>
+              <a href="/ooc/base/br" class="br">br</a>
+            </li>
+          
+            <li>
+              <a href="/ooc/base/en" class="en">en</a>
+            </li>
+          
+          
+          
+          
+            <li>
+              <a href="/assets/js/lunr/lunr-en.js" class=""></a>
+            </li>
+          
+            <li>
+              <a href="/assets/js/lunr/lunr-gr.js" class=""></a>
+            </li>
+          
+            <li>
+              <a href="/assets/js/lunr/lunr-store.js" class=""></a>
+            </li>
+          
+            <li>
+              <a href="/assets/css/main.css" class=""></a>
+            </li>
+          
+            <li>
+              <a href="/sitemap.xml" class=""></a>
+            </li>
+          
+            <li>
+              <a href="/robots.txt" class=""></a>
+            </li>
+          
+            <li>
+              <a href="/feed.xml" class=""></a>
+            </li>
+          
+            <li>
+              <a href="/categorias/" class="br">br</a>
+            </li>
+          
+            <li>
+              <a href="/" class="br">br</a>
+            </li>
+          
+            <li>
+              <a href="/sobre-mim/" class="br">br</a>
+            </li>
+          
+            <li>
+              <a href="/tags/br" class="br">br</a>
+            </li>
+          
+            <li>
+              <a href="/categories/" class="en">en</a>
+            </li>
+          
+            <li>
+              <a href="/index-en/" class="en">en</a>
+            </li>
+          
+            <li>
+              <a href="/about-me/" class="en">en</a>
+            </li>
+          
+            <li>
+              <a href="/tags/en" class="en">en</a>
+            </li>
+          
+        </ul> -->
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="/assets/images/cartoon-face.png" alt="Rodrigo Werberich S. M. de Oliveira" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Rodrigo Werberich S. M. de Oliveira</h3>
+    
+    
+      
+        <p class="author__bio" itemprop="description">
+          Um engenheiro apaixonado pela computação.
+        </p>
+      
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Acompanhe no</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Brasília, DF</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:rodrigowerberich@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://www.facebook.com/RodrigoWSMO" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+          
+        
+          
+            <li><a href="https://github.com/rodrigowerberich" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+          
+        
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="OOC - Super Class">
+    <meta itemprop="description" content="How to create a simple class.">
+    <meta itemprop="datePublished" content="April 15, 2019">
+    <meta itemprop="dateModified" content="April 15, 2019">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">OOC - Super Class
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+
+
+
+  7 minuto(s) de leitura
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-cog"></i> Nesta página</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#creating-a-super-class">Creating a super class</a>
+    <ul>
+      <li><a href="#point---public-interface">Point - Public Interface</a>
+        <ul>
+          <li><a href="#function-descriptors">Function descriptors</a></li>
+        </ul>
+      </li>
+      <li><a href="#point---reserved-interface">Point - Reserved Interface</a></li>
+      <li><a href="#point---implementation-file">Point - Implementation file</a></li>
+      <li><a href="#circle---public-interface">Circle - Public Interface</a></li>
+      <li><a href="#circle-implementation">Circle implementation</a></li>
+    </ul>
+  </li>
+</ul>
+            </nav>
+          </aside>
+        
+        <h1 id="creating-a-super-class">Creating a super class</h1>
+<p>For this example we will create two classes, the Point and the Circle.
+The point has two atributtes, it’s x and y coordinates. And two methods, the move and draw methods.</p>
+
+<p>To move the point we will only add the delta x, and delta y to the currents point position.
+To draw it we will only print “Point at x, y”</p>
+
+<p>The circle follows the same principle, but it also has a radius.
+The move method does exactly the same, but the draw method must print “Circle with radius r at x,y” instead.</p>
+
+<p>To do that we will implement the circle as a subclass of the point. Since the behaviour of the move method is exactly the same it will be a static method and since the draw method changes its behaviour it will have to be a dynamic method.</p>
+
+<h2 id="point---public-interface">Point - Public Interface</h2>
+<p>The structure for static part is exactly the same as the cat example:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#ifndef POINT_H_
+#define POINT_H_
+</span>
+<span class="cp">#include &lt;ooc.h&gt;
+</span>
+<span class="cm">/*------------------------------------------------*/</span>
+<span class="cm">/*----------- ClassVar declaration ---------------*/</span>
+<span class="cm">/*------------------------------------------------*/</span>
+<span class="n">CLASS_DECLARATION</span><span class="p">(</span><span class="n">Point</span><span class="p">);</span>
+
+<span class="k">static</span> <span class="kr">inline</span> <span class="n">o_Point</span> <span class="n">Point</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">){</span>
+    <span class="k">return</span> <span class="n">ooc_new</span><span class="p">(</span><span class="n">PointClass</span><span class="p">(),</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="n">Point_move</span><span class="p">(</span><span class="n">o_Point</span> <span class="n">_self</span><span class="p">,</span> <span class="kt">int</span> <span class="n">delta_x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">delta_y</span><span class="p">);</span> 
+
+<span class="cp">#endif
+</span></code></pre></div></div>
+
+<p>To be able to have dynamically linked methods we must have another type of object, the <strong><em>Metaclass</em></strong>. The metaclass stores a reference to the methods a class can call.  The base metaclass is the class, and all metaclasses must subclass it.</p>
+
+<p>To create a metaclass for the Point just create a class with the name PointClass</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">CLASS_DECLARATION</span><span class="p">(</span><span class="n">PointClass</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p><strong>There should be no constructor for the metaclass!</strong></p>
+
+<p>To declare a dynamic method you must create a function descriptor for that method.</p>
+
+<h3 id="function-descriptors">Function descriptors</h3>
+<p>Function descriptors are use to define a function in one single place,
+and be able to reuse this declaration across the program.</p>
+
+<p>The function descriptor is composed of 3 macros and must obey the following rules:</p>
+<ul>
+  <li>The name must be all caps and start with <code class="highlighter-rouge">M_</code></li>
+  <li>The name must reflect the function the descriptor describes</li>
+  <li>The three macros must start with the names of the descriptor</li>
+</ul>
+
+<p>The three macros are the definition macro, the argument list macro and the parameter list macro</p>
+
+<p>Ex: For a function descriptor called M_COMPARABLE_COMPARE_TO that describes the function:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">Comparable_compareTo</span><span class="p">(</span><span class="k">const</span> <span class="kt">void</span><span class="o">*</span> <span class="n">_self</span><span class="p">,</span> <span class="kt">void</span><span class="o">*</span> <span class="n">_destroyable_other</span><span class="p">)</span>
+</code></pre></div></div>
+<ol>
+  <li>We have the definition macro that has the return type of the function followed by the function name
+    <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="cp">#define M_COMPARABLE_COMPARE_TO_DEF int, Comparable_compareTo
+</span></code></pre></div>    </div>
+  </li>
+  <li>We have the argument list macro which describes the arguments the function takes
+    <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#define M_COMPARABLE_COMPARE_TO_ARG   const void* _self, void* _destroyable_other
+</span></code></pre></div>    </div>
+  </li>
+  <li>And the parameter list which is the <code class="highlighter-rouge">M_COMPARABLE_COMPARE_TO_ARG</code> without the types
+    <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#define M_COMPARABLE_COMPARE_TO_PARAM  _self, _destroyable_other
+</span></code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>So if we want to represent the dynamically linked method</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="n">Point_draw</span><span class="p">(</span><span class="n">o_Point</span> <span class="n">_self</span><span class="p">);</span>
+</code></pre></div></div>
+<p>we must create the <code class="highlighter-rouge">M_POINT_DRAW</code> descriptor</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#define M_POINT_DRAW_DEF   void, Point_draw
+#define M_POINT_DRAW_ARG   o_Point _self
+#define M_POINT_DRAW_PARAM         _self
+</span><span class="n">DYNAMIC_METHOD_HEADER</span><span class="p">(</span><span class="n">M_POINT_DRAW</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>With that the public interface is done</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// File: point.h</span>
+<span class="cp">#ifndef POINT_H_
+#define POINT_H_
+</span>
+<span class="cp">#include &lt;ooc.h&gt;
+</span>
+<span class="cm">/*------------------------------------------------*/</span>
+<span class="cm">/*----------- ClassVar declaration ---------------*/</span>
+<span class="cm">/*------------------------------------------------*/</span>
+<span class="n">CLASS_DECLARATION</span><span class="p">(</span><span class="n">Point</span><span class="p">);</span>
+<span class="n">CLASS_DECLARATION</span><span class="p">(</span><span class="n">PointClass</span><span class="p">);</span>
+
+<span class="k">static</span> <span class="kr">inline</span> <span class="n">o_Point</span> <span class="n">Point</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">){</span>
+    <span class="k">return</span> <span class="n">ooc_new</span><span class="p">(</span><span class="n">PointClass</span><span class="p">(),</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="n">Point_move</span><span class="p">(</span><span class="n">o_Point</span> <span class="n">_self</span><span class="p">,</span> <span class="kt">int</span> <span class="n">delta_x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">delta_y</span><span class="p">);</span> 
+
+<span class="cp">#define M_POINT_DRAW_DEF   void, Point_draw
+#define M_POINT_DRAW_ARG   o_Point _self
+#define M_POINT_DRAW_PARAM         _self
+</span><span class="n">DYNAMIC_METHOD_HEADER</span><span class="p">(</span><span class="n">M_POINT_DRAW</span><span class="p">);</span>
+
+<span class="cp">#endif
+</span></code></pre></div></div>
+
+<h2 id="point---reserved-interface">Point - Reserved Interface</h2>
+
+<p>The Point class representation follows exactly the same structure as the Cat class example.</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;point.h&gt;
+#include &lt;ooc.r&gt;
+</span>
+<span class="k">typedef</span> <span class="k">struct</span> <span class="n">Point_r</span><span class="p">{</span>
+    <span class="k">const</span> <span class="n">Object_r</span> <span class="n">_</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">x</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">y</span><span class="p">;</span>
+<span class="p">}</span><span class="n">Point_r</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>But we must also implement the metaclass PointClass_r representation, it must be a subclass of Class and must have a pointer of the type of our dynamic function.</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">typedef</span> <span class="k">struct</span> <span class="n">PointClass_r</span><span class="p">{</span>
+    <span class="k">const</span> <span class="n">Class_r</span> <span class="n">_</span><span class="p">;</span> <span class="c1">// The superclass is Class, because this is a metaclass</span>
+    <span class="n">CLASS_DYNAMIC_METHOD</span><span class="p">(</span><span class="n">M_POINT_DRAW</span><span class="p">);</span>
+<span class="p">}</span><span class="n">PointClass_r</span><span class="p">;</span>
+
+<span class="n">SUPER_DYNAMIC_METHOD</span><span class="p">(</span><span class="n">M_POINT_DRAW</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>The <code class="highlighter-rouge">CLASS_DYNAMIC_METHOD(M_POINT_DRAW)</code> will create a pointer to a function of the type of function the function descriptor describes.</p>
+
+<p>The <code class="highlighter-rouge">SUPER_DYNAMIC_METHOD(M_POINT_DRAW)</code> will create the super function that allows subclasses to call its superclass version of the function.</p>
+
+<p>The finished restricted interface will look like this</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#ifndef POINT_R_
+#define POINT_R_
+</span>
+<span class="cp">#include &lt;point.h&gt;
+#include &lt;ooc.r&gt;
+</span>
+<span class="k">typedef</span> <span class="k">struct</span> <span class="n">Point_r</span><span class="p">{</span>
+    <span class="k">const</span> <span class="n">Object_r</span> <span class="n">_</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">x</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">y</span><span class="p">;</span>
+<span class="p">}</span><span class="n">Point_r</span><span class="p">;</span>
+
+<span class="k">typedef</span> <span class="k">struct</span> <span class="n">PointClass_r</span><span class="p">{</span>
+    <span class="k">const</span> <span class="n">Class_r</span> <span class="n">_</span><span class="p">;</span>
+    <span class="n">CLASS_DYNAMIC_METHOD</span><span class="p">(</span><span class="n">M_POINT_DRAW</span><span class="p">);</span>
+<span class="p">}</span><span class="n">PointClass_r</span><span class="p">;</span>
+
+<span class="n">SUPER_DYNAMIC_METHOD</span><span class="p">(</span><span class="n">M_POINT_DRAW</span><span class="p">);</span>
+
+<span class="cp">#endif
+</span></code></pre></div></div>
+
+<h2 id="point---implementation-file">Point - Implementation file</h2>
+
+<p>If our class had only the move method the implementation file would look like this</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;point.h&gt;
+#include &lt;point.r&gt;
+#include &lt;lua_assert.h&gt;
+</span>
+<span class="kt">void</span> <span class="n">Point_move</span><span class="p">(</span><span class="n">o_Point</span> <span class="n">_self</span><span class="p">,</span> <span class="kt">int</span> <span class="n">delta_x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">delta_y</span><span class="p">){</span>
+    <span class="n">CAST</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">Point</span><span class="p">);</span>
+    <span class="n">ASSERT</span><span class="p">(</span><span class="n">self</span><span class="p">,);</span>
+    <span class="n">self</span><span class="o">-&gt;</span><span class="n">x</span> <span class="o">+=</span> <span class="n">delta_x</span><span class="p">;</span>
+    <span class="n">self</span><span class="o">-&gt;</span><span class="n">y</span> <span class="o">+=</span> <span class="n">delta_y</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="n">OVERWRITE_METHOD</span><span class="p">(</span><span class="n">Point</span><span class="p">,</span> <span class="n">M_CTOR</span><span class="p">){</span>
+    <span class="n">SUPER_CTOR</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">Point</span><span class="p">);</span>
+    <span class="n">ASSERT</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+    <span class="n">self</span><span class="o">-&gt;</span><span class="n">x</span> <span class="o">=</span> <span class="n">CTOR_GET_PARAM</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
+    <span class="n">self</span><span class="o">-&gt;</span><span class="n">y</span> <span class="o">=</span> <span class="n">CTOR_GET_PARAM</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">self</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">const</span> <span class="kt">void</span><span class="o">*</span> <span class="n">Point_d</span><span class="p">;</span>
+<span class="k">const</span> <span class="kt">void</span><span class="o">*</span> <span class="n">initPoint</span><span class="p">(){</span>
+    <span class="k">return</span> <span class="n">ooc_new</span><span class="p">(</span> <span class="n">ClassClass</span><span class="p">(),</span> <span class="c1">// Metaclass</span>
+            <span class="s">"Point"</span><span class="p">,</span>              <span class="c1">//Name</span>
+            <span class="n">ObjectClass</span><span class="p">(),</span>        <span class="c1">// Superclass</span>
+            <span class="k">sizeof</span><span class="p">(</span><span class="n">Point_r</span><span class="p">),</span>      <span class="c1">// Size of description</span>
+            <span class="n">LINK_METHOD</span><span class="p">(</span><span class="n">Point</span><span class="p">,</span> <span class="n">M_CTOR</span><span class="p">),</span> <span class="c1">// Linking the dynamic methods</span>
+            <span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>But in order to add the dynamically linked method we have to do a couple of extra steps.</p>
+
+<p>First we have to implement the dynamic linkage, to do that we use the <code class="highlighter-rouge">DYNAMIC_METHOD(metaclass__, error_return_, func_desc_)</code> macro.</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">DYNAMIC_METHOD</span><span class="p">(</span><span class="n">PointClass</span><span class="p">,</span> <span class="p">,</span> <span class="n">M_POINT_DRAW</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>The middle parameter is what to return when there is a linkage error, since Point_draw doesn’t return anything, we leave it empty.</p>
+
+<p>Now that the dynamic linkage is up and running we have to create the constructor for our metaclass, this way we will be able to tell our class which function we should point to:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">static</span> <span class="n">OVERWRITE_METHOD</span><span class="p">(</span><span class="n">PointClass</span><span class="p">,</span> <span class="n">M_CTOR</span><span class="p">){</span>
+    <span class="n">SUPER_CTOR</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">PointClass</span><span class="p">);</span>
+    <span class="n">SELECTOR_LOOP</span><span class="p">(</span>
+        <span class="n">FIRST_SELECTOR</span><span class="p">(</span><span class="n">M_POINT_DRAW</span><span class="p">)</span>
+    <span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>The metaclass constructor will always look like this. If you have more than one dynamic linked method you also, for example a method described by, M_POINT_UNDRAW you would use the <code class="highlighter-rouge">ADD_SELECTOR(M_POINT_UNDRAW)</code> after that. e.g,</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">static</span> <span class="n">OVERWRITE_METHOD</span><span class="p">(</span><span class="n">PointClass</span><span class="p">,</span> <span class="n">M_CTOR</span><span class="p">){</span>
+    <span class="n">SUPER_CTOR</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">PointClass</span><span class="p">);</span>
+    <span class="n">SELECTOR_LOOP</span><span class="p">(</span>
+        <span class="n">FIRST_SELECTOR</span><span class="p">(</span><span class="n">M_POINT_DRAW</span><span class="p">)</span>
+        <span class="n">ADD_SELECTOR</span><span class="p">(</span><span class="n">M_POINT_UNDRAW</span><span class="p">)</span>
+    <span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>We must also create the metaclass descriptor and initializer</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">const</span> <span class="kt">void</span><span class="o">*</span> <span class="n">PointClass_d</span><span class="p">;</span>
+<span class="k">const</span> <span class="kt">void</span><span class="o">*</span> <span class="n">initPointClass</span><span class="p">(){</span>
+    <span class="k">return</span> <span class="n">ooc_new</span><span class="p">(</span> <span class="n">ClassClass</span><span class="p">(),</span>
+            <span class="s">"PointClass"</span><span class="p">,</span>
+            <span class="n">ClassClass</span><span class="p">(),</span>
+            <span class="k">sizeof</span><span class="p">(</span><span class="n">PointClass_r</span><span class="p">),</span>
+            <span class="n">LINK_METHOD</span><span class="p">(</span><span class="n">PointClass</span><span class="p">,</span> <span class="n">M_CTOR</span><span class="p">),</span>
+            <span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Now the <code class="highlighter-rouge">M_POINT_DRAW</code> is dynamically linked just like <code class="highlighter-rouge">M_CTOR</code>, so we will have to overwrite it and link it in the <code class="highlighter-rouge">initPoint()</code> method, and also change the point metaclass to be PointClass</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">static</span> <span class="n">OVERWRITE_METHOD</span><span class="p">(</span><span class="n">Point</span><span class="p">,</span> <span class="n">M_POINT_DRAW</span><span class="p">){</span>
+    <span class="n">CAST</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">Point</span><span class="p">);</span>
+    <span class="n">ASSERT</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="p">);</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"Point at %d, %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">self</span><span class="o">-&gt;</span><span class="n">x</span><span class="p">,</span> <span class="n">self</span><span class="o">-&gt;</span><span class="n">y</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">const</span> <span class="kt">void</span><span class="o">*</span> <span class="n">initPoint</span><span class="p">(){</span>
+    <span class="k">return</span> <span class="n">ooc_new</span><span class="p">(</span> <span class="n">PointClassClass</span><span class="p">(),</span> <span class="c1">// New Metaclass</span>
+            <span class="s">"Point"</span><span class="p">,</span>            
+            <span class="n">ObjectClass</span><span class="p">(),</span>
+            <span class="k">sizeof</span><span class="p">(</span><span class="n">Point_r</span><span class="p">),</span>
+            <span class="n">LINK_METHOD</span><span class="p">(</span><span class="n">Point</span><span class="p">,</span> <span class="n">M_CTOR</span><span class="p">),</span>
+            <span class="n">LINK_METHOD</span><span class="p">(</span><span class="n">Point</span><span class="p">,</span> <span class="n">M_POINT_DRAW</span><span class="p">),</span> <span class="c1">// Linking M_POINT_DRAW</span>
+            <span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Our complete implementation file should look similar to this:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// File: point.c</span>
+<span class="cp">#include &lt;point.h&gt;
+#include &lt;point.r&gt;
+#include &lt;lua_assert.h&gt;
+</span>
+<span class="n">DYNAMIC_METHOD</span><span class="p">(</span><span class="n">PointClass</span><span class="p">,</span> <span class="p">,</span> <span class="n">M_POINT_DRAW</span><span class="p">);</span>
+
+<span class="kt">void</span> <span class="n">Point_move</span><span class="p">(</span><span class="n">o_Point</span> <span class="n">_self</span><span class="p">,</span> <span class="kt">int</span> <span class="n">delta_x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">delta_y</span><span class="p">){</span>
+    <span class="n">CAST</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">Point</span><span class="p">);</span>
+    <span class="n">ASSERT</span><span class="p">(</span><span class="n">self</span><span class="p">,);</span>
+    <span class="n">self</span><span class="o">-&gt;</span><span class="n">x</span> <span class="o">+=</span> <span class="n">delta_x</span><span class="p">;</span>
+    <span class="n">self</span><span class="o">-&gt;</span><span class="n">y</span> <span class="o">+=</span> <span class="n">delta_y</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="n">OVERWRITE_METHOD</span><span class="p">(</span><span class="n">Point</span><span class="p">,</span> <span class="n">M_POINT_DRAW</span><span class="p">){</span>
+    <span class="n">CAST</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">Point</span><span class="p">);</span>
+    <span class="n">ASSERT</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="p">);</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"Point at %d, %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">self</span><span class="o">-&gt;</span><span class="n">x</span><span class="p">,</span> <span class="n">self</span><span class="o">-&gt;</span><span class="n">y</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="n">OVERWRITE_METHOD</span><span class="p">(</span><span class="n">Point</span><span class="p">,</span> <span class="n">M_CTOR</span><span class="p">){</span>
+    <span class="n">SUPER_CTOR</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">Point</span><span class="p">);</span>
+    <span class="n">ASSERT</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+    <span class="n">self</span><span class="o">-&gt;</span><span class="n">x</span> <span class="o">=</span> <span class="n">CTOR_GET_PARAM</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
+    <span class="n">self</span><span class="o">-&gt;</span><span class="n">y</span> <span class="o">=</span> <span class="n">CTOR_GET_PARAM</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">self</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="n">OVERWRITE_METHOD</span><span class="p">(</span><span class="n">PointClass</span><span class="p">,</span> <span class="n">M_CTOR</span><span class="p">){</span>
+    <span class="n">SUPER_CTOR</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">PointClass</span><span class="p">);</span>
+    <span class="n">SELECTOR_LOOP</span><span class="p">(</span>
+        <span class="n">FIRST_SELECTOR</span><span class="p">(</span><span class="n">M_POINT_DRAW</span><span class="p">)</span>
+    <span class="p">)</span>
+<span class="p">}</span>
+
+<span class="k">const</span> <span class="kt">void</span><span class="o">*</span> <span class="n">Point_d</span><span class="p">;</span>
+<span class="k">const</span> <span class="kt">void</span><span class="o">*</span> <span class="n">PointClass_d</span><span class="p">;</span>
+<span class="k">const</span> <span class="kt">void</span><span class="o">*</span> <span class="n">initPoint</span><span class="p">(){</span>
+    <span class="k">return</span> <span class="n">ooc_new</span><span class="p">(</span>	<span class="n">PointClassClass</span><span class="p">(),</span>
+            <span class="s">"Point"</span><span class="p">,</span>
+            <span class="n">ObjectClass</span><span class="p">(),</span>
+            <span class="k">sizeof</span><span class="p">(</span><span class="n">Point_r</span><span class="p">),</span>
+            <span class="n">LINK_METHOD</span><span class="p">(</span><span class="n">Point</span><span class="p">,</span> <span class="n">M_CTOR</span><span class="p">),</span>
+            <span class="n">LINK_METHOD</span><span class="p">(</span><span class="n">Point</span><span class="p">,</span> <span class="n">M_POINT_DRAW</span><span class="p">),</span>
+            <span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">const</span> <span class="kt">void</span><span class="o">*</span> <span class="n">initPointClass</span><span class="p">(){</span>
+    <span class="k">return</span> <span class="n">ooc_new</span><span class="p">(</span>	<span class="n">ClassClass</span><span class="p">(),</span>
+            <span class="s">"PointClass"</span><span class="p">,</span>
+            <span class="n">ClassClass</span><span class="p">(),</span>
+            <span class="k">sizeof</span><span class="p">(</span><span class="n">PointClass_r</span><span class="p">),</span>
+            <span class="n">LINK_METHOD</span><span class="p">(</span><span class="n">PointClass</span><span class="p">,</span> <span class="n">M_CTOR</span><span class="p">),</span>
+            <span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>Quick test
+———-
+Now if you include the “point.h” public interface and run the following program</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="n">o_Point</span> <span class="n">o_point</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">);</span>
+    <span class="n">Point_draw</span><span class="p">(</span><span class="n">o_point</span><span class="p">);</span>
+    <span class="n">Point_move</span><span class="p">(</span><span class="n">o_point</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
+    <span class="n">Point_draw</span><span class="p">(</span><span class="n">o_point</span><span class="p">);</span>
+    <span class="n">Point_move</span><span class="p">(</span><span class="n">o_point</span><span class="p">,</span> <span class="o">-</span><span class="mi">15</span><span class="p">,</span> <span class="o">-</span><span class="mi">20</span><span class="p">);</span>
+    <span class="n">Point_draw</span><span class="p">(</span><span class="n">o_point</span><span class="p">);</span>
+    <span class="n">OOC_DELETE</span><span class="p">(</span><span class="n">o_point</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>you should see this as an output</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Point</span> <span class="n">at</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span>
+<span class="n">Point</span> <span class="n">at</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">15</span>
+<span class="n">Point</span> <span class="n">at</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span>
+</code></pre></div></div>
+
+<p>Now we can proceed to the creation of the circle</p>
+
+<h2 id="circle---public-interface">Circle - Public Interface</h2>
+<p>The circle public interface is pretty simple, since it inherits all methods from point we don’t have to declare any method. Only the class and its constructor.</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// File: circle.h</span>
+<span class="cp">#ifndef CIRCLE_H__
+#define CIRCLE_H__
+</span>
+<span class="cp">#include "point.h"
+</span>
+<span class="n">CLASS_DECLARATION</span><span class="p">(</span><span class="n">Circle</span><span class="p">);</span>
+
+<span class="k">static</span> <span class="kr">inline</span> <span class="n">o_Circle</span> <span class="n">Circle</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">,</span> <span class="kt">int</span> <span class="n">radius</span><span class="p">){</span>
+    <span class="k">return</span> <span class="n">ooc_new</span><span class="p">(</span><span class="n">CircleClass</span><span class="p">(),</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">radius</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="cp">#endif //CIRCLE_H__
+</span></code></pre></div></div>
+<p>Circle - Reserved Interface
+————————-</p>
+
+<p>The reserved interface is also pretty straightforward. You have to set the point as the superclass and add the radius field.</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// File: circle.r</span>
+<span class="cp">#ifndef CIRCLE_R__
+#define CIRCLE_R__
+</span>
+<span class="cp">#include "circle.h"
+#include "point.r"
+</span>
+<span class="k">typedef</span> <span class="k">struct</span> <span class="n">Circle_r</span><span class="p">{</span>
+    <span class="k">const</span> <span class="n">Point_r</span> <span class="n">_</span><span class="p">;</span> <span class="c1">//Superclass is Point not Object</span>
+    <span class="kt">int</span> <span class="n">radius</span><span class="p">;</span>
+<span class="p">}</span><span class="n">Circle_r</span><span class="p">;</span>
+
+<span class="cp">#endif //CIRCLE_R__
+</span></code></pre></div></div>
+
+<p>We don’t have to declare the x and y variables because they already exist inside the Point_r struct.</p>
+
+<h2 id="circle-implementation">Circle implementation</h2>
+<p>The implementation is also simple we just overwrite the draw and constructor and initialize the descriptor</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// File: circle.c</span>
+<span class="cp">#include "circle.h"
+#include "circle.r"
+#include "lua_assert.h"
+</span>
+<span class="k">static</span> <span class="n">OVERWRITE_METHOD</span><span class="p">(</span><span class="n">Circle</span><span class="p">,</span> <span class="n">M_POINT_DRAW</span><span class="p">){</span>
+    <span class="n">CAST</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">Circle</span><span class="p">);</span>
+    <span class="n">ASSERT</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="p">);</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"Circle with radius %d at %d, %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">self</span><span class="o">-&gt;</span><span class="n">radius</span><span class="p">,</span> <span class="n">self</span><span class="o">-&gt;</span><span class="n">_</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="n">self</span><span class="o">-&gt;</span><span class="n">_</span><span class="p">.</span><span class="n">y</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="n">OVERWRITE_METHOD</span><span class="p">(</span><span class="n">Circle</span><span class="p">,</span> <span class="n">M_CTOR</span><span class="p">){</span>
+    <span class="n">SUPER_CTOR</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">Circle</span><span class="p">);</span>
+    <span class="n">ASSERT</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+    <span class="n">self</span><span class="o">-&gt;</span><span class="n">radius</span> <span class="o">=</span> <span class="n">CTOR_GET_PARAM</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">self</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">const</span> <span class="kt">void</span><span class="o">*</span> <span class="n">Circle_d</span><span class="p">;</span>
+<span class="k">const</span> <span class="kt">void</span><span class="o">*</span> <span class="n">initCircle</span><span class="p">(){</span>
+    <span class="k">return</span> <span class="n">ooc_new</span><span class="p">(</span><span class="n">PointClassClass</span><span class="p">(),</span>
+            <span class="s">"Circle"</span><span class="p">,</span>
+            <span class="n">PointClass</span><span class="p">(),</span>
+            <span class="k">sizeof</span><span class="p">(</span><span class="n">Circle_r</span><span class="p">),</span>
+            <span class="n">LINK_METHOD</span><span class="p">(</span><span class="n">Circle</span><span class="p">,</span> <span class="n">M_CTOR</span><span class="p">),</span>
+            <span class="n">LINK_METHOD</span><span class="p">(</span><span class="n">Circle</span><span class="p">,</span> <span class="n">M_POINT_DRAW</span><span class="p">),</span>
+            <span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>Analysing the parts we have some noteworthy sections:</p>
+
+<p>In the draw overwriting we have this part:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">printf</span><span class="p">(</span><span class="s">"Circle with radius %d at %d, %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">self</span><span class="o">-&gt;</span><span class="n">radius</span><span class="p">,</span> <span class="n">self</span><span class="o">-&gt;</span><span class="n">_</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="n">self</span><span class="o">-&gt;</span><span class="n">_</span><span class="p">.</span><span class="n">y</span><span class="p">);</span>
+</code></pre></div></div>
+<p>To access the  superclass attributes we have to access it through the superclass struct. Another way to do this is to cast the pointer and access it directly</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">((</span><span class="n">Point_r</span><span class="o">*</span><span class="p">)</span><span class="n">self</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">x</span>
+</code></pre></div></div>
+
+<p>In the constructor we don’t need to initialize the arguments of the Point_r struct because the <code class="highlighter-rouge">SUPER_CTOR(self, Circle);</code> will do that for us. So any calls to <code class="highlighter-rouge">CTOR_GET_PARAM</code> here will get the next parameters after the point parameters.</p>
+
+<p>And that’s it. Now we can run the following program, after including “circle.h”:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="n">o_Point</span> <span class="n">o_point</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">);</span>
+    <span class="n">o_Circle</span> <span class="n">o_circle</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
+    <span class="n">Point_draw</span><span class="p">(</span><span class="n">o_point</span><span class="p">);</span>
+    <span class="n">Point_move</span><span class="p">(</span><span class="n">o_point</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
+    <span class="n">Point_draw</span><span class="p">(</span><span class="n">o_point</span><span class="p">);</span>
+    <span class="n">Point_move</span><span class="p">(</span><span class="n">o_point</span><span class="p">,</span> <span class="o">-</span><span class="mi">15</span><span class="p">,</span> <span class="o">-</span><span class="mi">20</span><span class="p">);</span>
+    <span class="n">Point_draw</span><span class="p">(</span><span class="n">o_point</span><span class="p">);</span>
+    <span class="n">Point_draw</span><span class="p">(</span><span class="n">o_circle</span><span class="p">);</span>
+    <span class="n">Point_move</span><span class="p">(</span><span class="n">o_circle</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+    <span class="n">Point_draw</span><span class="p">(</span><span class="n">o_circle</span><span class="p">);</span>
+    <span class="n">Point_move</span><span class="p">(</span><span class="n">o_circle</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">30</span><span class="p">);</span>
+    <span class="n">Point_draw</span><span class="p">(</span><span class="n">o_circle</span><span class="p">);</span>
+    <span class="n">OOC_DELETE</span><span class="p">(</span><span class="n">o_point</span><span class="p">);</span>
+    <span class="n">OOC_DELETE</span><span class="p">(</span><span class="n">o_circle</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>and the output will be</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Point at 3, 5
+Point at 13, 15
+Point at -2, -5
+Circle with radius 10 at 4, 3
+Circle with radius 10 at 11, 5
+Circle with radius 10 at 8, 35
+</code></pre></div></div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#c" class="page__taxonomy-item" rel="tag">c</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#classe" class="page__taxonomy-item" rel="tag">Classe</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#ooc" class="page__taxonomy-item" rel="tag">OOC</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categorias: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#ooc" class="page__taxonomy-item" rel="tag">OOC</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Atualizado em:</strong> <time datetime="2019-04-15">April 15, 2019</time></p>
+        
+      </footer>
+
+      
+
+
+<section class="page__share">
+  
+    <h4 class="page__share-title">Compartilhe: </h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=OOC+-+Super+Class%20https%3A%2F%2Frodrigowerberich.github.io%2F%2Fooc%2Fsuper-class" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhe:  Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Frodrigowerberich.github.io%2F%2Fooc%2Fsuper-class" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhe:  Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Frodrigowerberich.github.io%2F%2Fooc%2Fsuper-class" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartilhe:  LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+
+
+
+  <nav class="pagination">
+    
+      <a href="/ooc/simple-class" class="pagination--pager" title="OOC - Simple Class
+">Anterior</a>
+    
+    
+      <a href="/ooc/interface" class="pagination--pager" title="OOC - Interface
+">Próxima</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">Talvez você também goste</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/ooc/interface" rel="permalink">OOC - Interface
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+
+
+
+  6 minuto(s) de leitura
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Instructions how to create an OOC Interface.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/ooc/simple-class" rel="permalink">OOC - Simple Class
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+
+
+
+  6 minuto(s) de leitura
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">How to create a simple class.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/ooc/base/en" rel="permalink">OOC - Base
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+
+
+
+  menos que 1 minuto(s) de leitura
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">The very basics on how to use OOC.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/ooc/base/br" rel="permalink">OOC - Base
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+
+
+
+  menos que 1 minuto(s) de leitura
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">O básico de como utilizar OOC.
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        
+
+
+<div class="search-content__inner-wrap"><input type="search" id="search" aria-placeholder="Pesquisar..." class="search-input" tabindex="-1" placeholder="Pesquisar..." />
+    <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Acompanhe no</strong></li>
+    
+
+    
+      
+        
+      
+        
+          <li><a href="https://www.facebook.com/RodrigoWSMO" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://github.com/rodrigowerberich" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2019 Rodrigo Werberich S. M. de Oliveira. Desenvolvido com <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://rodrigowerberich.github.io//ooc/super-class";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/ooc/OOC-3-super-class"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://rodrigowerberich-github-io.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>
