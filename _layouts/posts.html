@@ -1,6 +1,12 @@
 ---
 layout: archive
 ---
+{% if page.locale %}
+  {% assign locale = page.locale %}
+{% else %}
+  {% assign locale = site.locale %}
+{% endif %}
+
 
 {{ content }}
 
@@ -24,6 +30,6 @@ layout: archive
         {% include archive-single.html type=page.entries_layout %}
       {% endfor %}
     </div>
-    <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+    <a href="#page-title" class="back-to-top">{{ site.data.ui-text[locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
   </section>
 {% endfor %}

@@ -1,11 +1,11 @@
 # main links
-main:
+br:
   - title: "Sobre Mim"
     url: /sobre-mim/
   - title: "Categorias"
-    url: /categories/
+    url: /categorias/
   - title: "Tags"
-    url: /tags/
+    url: /tags/pt
   # - title: "Quick-Start Guide"
     # url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
@@ -16,3 +16,10 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+en:
+  - title: "About me"
+    url: /about-me/
+  - title: "Categories"
+    url: /categories/
+  - title: "Tags"
+    url: /tags/en

@@ -215,6 +215,7 @@ module Jekyll
     private
     def assign_pages!
       payload["page"] = document.to_liquid
+      # puts payload["paginator"]
       payload["paginator"] = if document.respond_to?(:pager)
                                document.pager.to_liquid
                              end

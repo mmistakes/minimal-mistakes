@@ -1,3 +1,10 @@
+{% if page.locale %}
+  {% assign locale = page.locale %}
+{% else %}
+  {% assign locale = site.locale %}
+{% endif %}
+
+
 {% if include.id %}
   {% assign feature_row = page[include.id] %}
 {% else %}
@@ -43,7 +50,7 @@
           {% endif %}
 
           {% if f.url %}
-            <p><a href="{{ f_url }}" class="btn {{ f.btn_class }}">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
+            <p><a href="{{ f_url }}" class="btn {{ f.btn_class }}">{{ f.btn_label | default: site.data.ui-text[locale].more_label | default: "Learn More" }}</a></p>
           {% endif %}
         </div>
       </div>

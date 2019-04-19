@@ -1,3 +1,10 @@
+{% if page.locale %}
+  {% assign locale = page.locale %}
+{% else %}
+  {% assign locale = site.locale %}
+{% endif %}
+
+
 {% if site.repository and site.staticman.branch %}
   <script>
     (function ($) {
@@ -5,7 +12,7 @@
       var form = this;
 
       $(form).addClass('disabled');
-      $('#comment-form-submit').html('<i class="fas fa-spinner fa-spin fa-fw"></i> {{ site.data.ui-text[site.locale].loading_label | default: "Loading..." }}');
+      $('#comment-form-submit').html('<i class="fas fa-spinner fa-spin fa-fw"></i> {{ site.data.ui-text[locale].loading_label | default: "Loading..." }}');
 
       $.ajax({
         type: $(this).attr('method'),
@@ -13,17 +20,17 @@
         data: $(this).serialize(),
         contentType: 'application/x-www-form-urlencoded',
         success: function (data) {
-          $('#comment-form-submit').html('{{ site.data.ui-text[site.locale].comment_btn_submitted | default: "Submitted" }}');
+          $('#comment-form-submit').html('{{ site.data.ui-text[locale].comment_btn_submitted | default: "Submitted" }}');
           $('.page__comments-form .js-notice').removeClass('notice--danger');
           $('.page__comments-form .js-notice').addClass('notice--success');
-          showAlert('{{ site.data.ui-text[site.locale].comment_success_msg | default: "Thanks for your comment! It will show on the site once it has been approved." }}');
+          showAlert('{{ site.data.ui-text[locale].comment_success_msg | default: "Thanks for your comment! It will show on the site once it has been approved." }}');
         },
         error: function (err) {
           console.log(err);
-          $('#comment-form-submit').html('{{ site.data.ui-text[site.locale].comment_btn_submit  | default: "Submit Comment" }}');
+          $('#comment-form-submit').html('{{ site.data.ui-text[locale].comment_btn_submit  | default: "Submit Comment" }}');
           $('.page__comments-form .js-notice').removeClass('notice--success');
           $('.page__comments-form .js-notice').addClass('notice--danger');
-          showAlert('{{ site.data.ui-text[site.locale].comment_error_msg | default: "Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again." }}');
+          showAlert('{{ site.data.ui-text[locale].comment_error_msg | default: "Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again." }}');
           $(form).removeClass('disabled');
         }
       });

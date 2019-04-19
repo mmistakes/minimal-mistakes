@@ -1,3 +1,10 @@
+{% if page.locale %}
+  {% assign locale = page.locale %}
+{% else %}
+  {% assign locale = site.locale %}
+{% endif %}
+
+
 <!-- Including InstantSearch.js library and styling -->
 <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.css">
@@ -37,7 +44,7 @@ search.addWidget(
   instantsearch.widgets.searchBox({
     container: '.search-searchbar',
     {% unless site.algolia.powered_by == false %}poweredBy: true,{% endunless %}
-    placeholder: '{{ site.data.ui-text[site.locale].search_placeholder_text | default: "Enter your search term..." }}'
+    placeholder: '{{ site.data.ui-text[locale].search_placeholder_text | default: "Enter your search term..." }}'
   })
 );
 search.addWidget(

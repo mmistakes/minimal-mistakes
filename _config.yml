@@ -16,7 +16,7 @@
 minimal_mistakes_skin    : "dark" #, "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "pt-BR"
+locale                   : "br"
 title                    : "Um Mecatrônico Desiludido"
 title_separator          : "-"
 name                     : "Rodrigo Werberich S. M. de Oliveira"
@@ -110,6 +110,7 @@ author:
   name             : "Rodrigo Werberich S. M. de Oliveira"
   avatar           :  "/assets/images/cartoon-face.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Um engenheiro apaixonado pela computação."
+  bio-en           : "An engineer in love with computer science."
   location         : "Brasília, DF"
   email            :
   links:
@@ -220,7 +221,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 2 # amount of posts to show
 paginate_path: /page:num/
 timezone: America/Sao_Paulo # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 

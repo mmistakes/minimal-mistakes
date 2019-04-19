@@ -15,6 +15,9 @@ module Jekyll
       def generate(site)
         if Pager.pagination_enabled?(site)
           if template = template_page(site)
+            puts "Hello my man"
+            puts template
+            puts template_page(site)
             paginate(site, template)
           else
             Jekyll.logger.warn "Pagination:", "Pagination is enabled, but I couldn't find " +
@@ -40,6 +43,7 @@ module Jekyll
       def paginate(site, page)
         all_posts = site.site_payload['site']['posts']
         all_posts = all_posts.reject { |p| p['hidden'] }
+        all_posts = all_posts.reject { |p| p['locale'] != page['locale'] }
         pages = Pager.calculate_pages(all_posts, site.config['paginate'].to_i)
         (1..pages).each do |num_page|
           pager = Pager.new(site, num_page, all_posts, pages)

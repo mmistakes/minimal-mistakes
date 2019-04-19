@@ -238,7 +238,7 @@ pt: &DEFAULT_PT
 pt-PT:
   <<: *DEFAULT_PT
 # Brazilian Portuguese
-pt-BR:
+br:
   page                       : "Página"
   pagination_previous        : "Anterior"
   pagination_next            : "Próxima"

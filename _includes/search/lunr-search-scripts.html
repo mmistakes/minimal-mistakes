@@ -1,4 +1,11 @@
-{% assign lang = site.locale | slice: 0,2 | default: "en" %}
+{% if page.locale %}
+  {% assign locale = page.locale %}
+{% else %}
+  {% assign locale = site.locale %}
+{% endif %}
+
+
+{% assign lang = locale | slice: 0,2 | default: "en" %}
 {% case lang %}
 {% when "gr" %}
   {% assign lang = "gr" %}

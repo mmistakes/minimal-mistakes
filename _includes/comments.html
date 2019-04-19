@@ -1,5 +1,12 @@
+{% if page.locale %}
+  {% assign locale = page.locale %}
+{% else %}
+  {% assign locale = site.locale %}
+{% endif %}
+
+
 <div class="page__comments">
-  {% capture comments_label %}{{ site.data.ui-text[site.locale].comments_label | default: "Comments" }}{% endcapture %}
+  {% capture comments_label %}{{ site.data.ui-text[locale].comments_label | default: "Comments" }}{% endcapture %}
   {% case site.comments.provider %}
     {% when "discourse" %}
       <h4 class="page__comments-title">{{ comments_label }}</h4>
@@ -16,7 +23,7 @@
           <!-- Start static comments -->
           <div class="js-comments">
             {% if site.data.comments[page.slug] %}
-              <h4 class="page__comments-title">{{ site.data.ui-text[site.locale].comments_title | default: "Comments" }}</h4>
+              <h4 class="page__comments-title">{{ site.data.ui-text[locale].comments_title | default: "Comments" }}</h4>
               {% assign comments = site.data.comments[page.slug] | sort %}
 
               {% for comment in comments %}
@@ -33,29 +40,29 @@
 
           <!-- Start new comment form -->
           <div class="page__comments-form">
-            <h4 class="page__comments-title">{{ site.data.ui-text[site.locale].comments_label | default: "Leave a Comment" }}</h4>
-            <p class="small">{{ site.data.ui-text[site.locale].comment_form_info | default: "Your email address will not be published. Required fields are marked" }} <span class="required">*</span></p>
+            <h4 class="page__comments-title">{{ site.data.ui-text[locale].comments_label | default: "Leave a Comment" }}</h4>
+            <p class="small">{{ site.data.ui-text[locale].comment_form_info | default: "Your email address will not be published. Required fields are marked" }} <span class="required">*</span></p>
             <form id="new_comment" class="page__comments-form js-form form" method="post" action="{{ site.staticman.endpoint | default: 'https://api.staticman.net/v2/entry/' }}{{ site.repository }}/{{ site.staticman.branch }}/comments">
               <div class="form__spinner">
                 <i class="fas fa-spinner fa-spin fa-3x fa-fw"></i>
-                <span class="sr-only">{{ site.data.ui-text[site.locale].loading_label | default: "Loading..." }}</span>
+                <span class="sr-only">{{ site.data.ui-text[locale].loading_label | default: "Loading..." }}</span>
               </div>
 
               <div class="form-group">
-                <label for="comment-form-message">{{ site.data.ui-text[site.locale].comment_form_comment_label | default: "Comment" }} <small class="required">*</small></label>
+                <label for="comment-form-message">{{ site.data.ui-text[locale].comment_form_comment_label | default: "Comment" }} <small class="required">*</small></label>
                 <textarea type="text" rows="3" id="comment-form-message" name="fields[message]" tabindex="1"></textarea>
-                <div class="small help-block"><a href="https://daringfireball.net/projects/markdown/">{{ site.data.ui-text[site.locale].comment_form_md_info | default: "Markdown is supported." }}</a></div>
+                <div class="small help-block"><a href="https://daringfireball.net/projects/markdown/">{{ site.data.ui-text[locale].comment_form_md_info | default: "Markdown is supported." }}</a></div>
               </div>
               <div class="form-group">
-                <label for="comment-form-name">{{ site.data.ui-text[site.locale].comment_form_name_label | default: "Name" }} <small class="required">*</small></label>
+                <label for="comment-form-name">{{ site.data.ui-text[locale].comment_form_name_label | default: "Name" }} <small class="required">*</small></label>
                 <input type="text" id="comment-form-name" name="fields[name]" tabindex="2" />
               </div>
               <div class="form-group">
-                <label for="comment-form-email">{{ site.data.ui-text[site.locale].comment_form_email_label | default: "Email address" }} <small class="required">*</small></label>
+                <label for="comment-form-email">{{ site.data.ui-text[locale].comment_form_email_label | default: "Email address" }} <small class="required">*</small></label>
                 <input type="email" id="comment-form-email" name="fields[email]" tabindex="3" />
               </div>
               <div class="form-group">
-                <label for="comment-form-url">{{ site.data.ui-text[site.locale].comment_form_website_label | default: "Website (optional)" }}</label>
+                <label for="comment-form-url">{{ site.data.ui-text[locale].comment_form_website_label | default: "Website (optional)" }}</label>
                 <input type="url" id="comment-form-url" name="fields[url]" tabindex="4"/>
               </div>
               <div class="form-group hidden" style="display: none;">
@@ -76,7 +83,7 @@
                 </div>
               {% endif %}
               <div class="form-group">
-                <button type="submit" id="comment-form-submit" tabindex="5" class="btn btn--primary btn--large">{{ site.data.ui-text[site.locale].comment_btn_submit | default: "Submit Comment" }}</button>
+                <button type="submit" id="comment-form-submit" tabindex="5" class="btn btn--primary btn--large">{{ site.data.ui-text[locale].comment_btn_submit | default: "Submit Comment" }}</button>
               </div>
             </form>
           </div>
@@ -90,7 +97,7 @@
           <!-- Start static comments -->
           <div class="js-comments">
             {% if site.data.comments[page.slug] %}
-              <h4 class="page__comments-title">{{ site.data.ui-text[site.locale].comments_title | default: "Comments" }}</h4>
+              <h4 class="page__comments-title">{{ site.data.ui-text[locale].comments_title | default: "Comments" }}</h4>
               {% assign comments = site.data.comments[page.slug] | sort %}
 
               {% for comment in comments %}
@@ -107,29 +114,29 @@
 
           <!-- Start new comment form -->
           <div class="page__comments-form">
-            <h4 class="page__comments-title">{{ site.data.ui-text[site.locale].comments_label | default: "Leave a Comment" }}</h4>
-            <p class="small">{{ site.data.ui-text[site.locale].comment_form_info | default: "Your email address will not be published. Required fields are marked" }} <span class="required">*</span></p>
+            <h4 class="page__comments-title">{{ site.data.ui-text[locale].comments_label | default: "Leave a Comment" }}</h4>
+            <p class="small">{{ site.data.ui-text[locale].comment_form_info | default: "Your email address will not be published. Required fields are marked" }} <span class="required">*</span></p>
             <form id="new_comment" class="page__comments-form js-form form" method="post" action="https://api.staticman.net/v1/entry/{{ site.repository }}/{{ site.staticman.branch }}">
               <div class="form__spinner">
                 <i class="fas fa-spinner fa-spin fa-3x fa-fw"></i>
-                <span class="sr-only">{{ site.data.ui-text[site.locale].loading_label | default: "Loading..." }}</span>
+                <span class="sr-only">{{ site.data.ui-text[locale].loading_label | default: "Loading..." }}</span>
               </div>
 
               <div class="form-group">
-                <label for="comment-form-message">{{ site.data.ui-text[site.locale].comment_form_comment_label | default: "Comment" }} <small class="required">*</small></label>
+                <label for="comment-form-message">{{ site.data.ui-text[locale].comment_form_comment_label | default: "Comment" }} <small class="required">*</small></label>
                 <textarea type="text" rows="3" id="comment-form-message" name="fields[message]" tabindex="1"></textarea>
-                <div class="small help-block"><a href="https://daringfireball.net/projects/markdown/">{{ site.data.ui-text[site.locale].comment_form_md_info | default: "Markdown is supported." }}</a></div>
+                <div class="small help-block"><a href="https://daringfireball.net/projects/markdown/">{{ site.data.ui-text[locale].comment_form_md_info | default: "Markdown is supported." }}</a></div>
               </div>
               <div class="form-group">
-                <label for="comment-form-name">{{ site.data.ui-text[site.locale].comment_form_name_label | default: "Name" }} <small class="required">*</small></label>
+                <label for="comment-form-name">{{ site.data.ui-text[locale].comment_form_name_label | default: "Name" }} <small class="required">*</small></label>
                 <input type="text" id="comment-form-name" name="fields[name]" tabindex="2" />
               </div>
               <div class="form-group">
-                <label for="comment-form-email">{{ site.data.ui-text[site.locale].comment_form_email_label | default: "Email address" }} <small class="required">*</small></label>
+                <label for="comment-form-email">{{ site.data.ui-text[locale].comment_form_email_label | default: "Email address" }} <small class="required">*</small></label>
                 <input type="email" id="comment-form-email" name="fields[email]" tabindex="3" />
               </div>
               <div class="form-group">
-                <label for="comment-form-url">{{ site.data.ui-text[site.locale].comment_form_website_label | default: "Website (optional)" }}</label>
+                <label for="comment-form-url">{{ site.data.ui-text[locale].comment_form_website_label | default: "Website (optional)" }}</label>
                 <input type="url" id="comment-form-url" name="fields[url]" tabindex="4"/>
               </div>
               <div class="form-group hidden" style="display: none;">
@@ -143,7 +150,7 @@
               </p>
               <!-- End comment form alert messaging -->
               <div class="form-group">
-                <button type="submit" id="comment-form-submit" tabindex="5" class="btn btn--primary btn--large">{{ site.data.ui-text[site.locale].comment_btn_submit | default: "Submit Comment" }}</button>
+                <button type="submit" id="comment-form-submit" tabindex="5" class="btn btn--primary btn--large">{{ site.data.ui-text[locale].comment_btn_submit | default: "Submit Comment" }}</button>
               </div>
             </form>
           </div>

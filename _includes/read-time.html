@@ -1,5 +1,12 @@
 {% assign words_per_minute = site.words_per_minute | default: 200 %}
 
+{% if page.locale %}
+  {% assign locale = page.locale %}
+{% else %}
+  {% assign locale = site.locale %}
+{% endif %}
+
+
 {% if post.read_time %}
   {% assign words = post.content | strip_html | number_of_words %}
 {% elsif page.read_time %}
@@ -7,9 +14,9 @@
 {% endif %}
 
 {% if words < words_per_minute %}
-  {{ site.data.ui-text[site.locale].less_than | default: "less than" }} 1 {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
+  {{ site.data.ui-text[locale].less_than | default: "less than" }} 1 {{ site.data.ui-text[locale].minute_read | default: "minute read" }}
 {% elsif words == words_per_minute %}
-  1 {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
+  1 {{ site.data.ui-text[locale].minute_read | default: "minute read" }}
 {% else %}
-  {{ words | divided_by:words_per_minute }} {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
+  {{ words | divided_by:words_per_minute }} {{ site.data.ui-text[locale].minute_read | default: "minute read" }}
 {% endif %}

@@ -1,7 +1,7 @@
 ---
 title: "Um pouco sobre mim"
-permalink: /sobre-mim/
-locale: br
+permalink: /about-me/
+locale: en
 ref: about_me
 layout: single
 classes: wide
