@@ -78,8 +78,8 @@ Pour obtenir une roue aérodynamique, il va falloir jouer sur la hauteur de jant
  côté ça devient un fardeau. Donc une roue pleine pour faire 
 du chrono sur terrain plat avec un vent favorable. Le compromis est donc de jouer la hauteur de la jante, par example 
 une 88mm offrira plus d'aerodynamisme qu'une 38mm car une surface d'évacuation de l'air plus grande. Mais il faudra 
-faire attention à ne pas avoir trop de rayons, car qui dit plus de rayons dit plus de frottement donc plus de 
-frottement. Et il faudra opter pour des rayons plats afin de limiter ces frottements. La largeur de la jante pourra 
+faire attention à ne pas avoir trop de rayons, car qui dit plus de rayons dit plus de frottements. Et il faudra opter 
+pour des rayons plats afin de limiter ces frottements. La largeur de la jante pourra 
 aussi contribuer à la bonne évacuation de l'air et enfin il faudra un moyeu qui offrira le moins de frottements au 
 niveau des roulements. De plus, l'aérodynamisme va se jouer à l'arrière. En effet, à l'avant cela a beaucoup moins 
 d'importance car dans tous les cas l'air devra passer la largeur du cycliste. Il faut aussi penser que plus la 
