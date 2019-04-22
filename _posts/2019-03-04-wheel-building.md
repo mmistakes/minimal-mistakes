@@ -22,8 +22,8 @@ me soucier de tous les critères. Puis je me suis fait monter une paire de roue 
 Des roues qui passent partout, elles sont légères ce qui les rend réactives et leurs hauteurs permettent d'avoir une 
 touche d'aérodynamisme. Un jour, un rayon m'a lâché et c'est à partir de là que j'ai commencé à m'intéresser aux roues. 
 En effet, j'ai commencé par réparer mon rayon cassé ce qui m'a amené à entamer mes recherches et approfondir 
-mes connaissances à ce sujet. Je suis passionné de sport, toujours à soif de connaissances et d'apprendre de nouvelles 
-choses. Je me suis lancé dans ce nouveau challenge avec pour objectif de réaliser une roue spécifique pour optimiser 
+mes connaissances à ce sujet. Je suis passionné de sport, toujours à soif de connaissances et de 
+nouveaux défis. Je me suis lancé dans ce nouveau challenge avec pour objectif de réaliser une roue spécifique pour optimiser 
 l'aérodynamisme, sur des parcours plats que l'on retrouve sur certains Triathlons ou Duathlons que j'ai l'habitude de 
 participer. Une roue aérodynamique qui une fois lancée, offre une bonne inertie. Mais aussi assez légère et rigide 
 pour pouvoir la relancer efficacement. Et enfin transmettre avec le moins de perte possible, toute la puissance 
@@ -42,8 +42,8 @@ composants. Puis, je partagerai l'expérience du montage et enfin je terminerai 
 Une roue adaptée à tous les parcours et toutes les conditions climatiques n'existe pas. C'est pourquoi les 
 cyclistes possèdent généralement plusieurs paires que ce soit pour avoir une paire pour l'entrainement et une 
 pour la compétition ou pour répondre à des épreuves différentes. Il est possible de réaliser, aujourd'hui de nombreux 
-montages pour répondre à tous les types de parcours (Montagne, plat ou vallonnée), de conditions climatiques (sens et 
-force du vent, pluie) et de coureurs (grimpeur, rouleur, puncheur...). Vous comprenez qu'avec tous ces paramètres, il 
+montages pour répondre à tous les types de parcours (montagnes, plats ou vallonnées), de conditions climatiques (sens
+ et force du vent, pluie) et de coureur (grimpeur, rouleur, puncheur...). Vous comprenez qu'avec tous ces paramètres, il 
 faudrait 20 paires dans son garage... ce qui est assez difficile à réaliser et
  surtout difficile à faire accepter ça à sa femme. Il faut donc faire des compromis, pour cela il faut se poser les 
 bonnes questions. Une bonne roue ne veut rien dire sans prendre en compte le contexte du parcours, 
@@ -65,16 +65,16 @@ puissance développée jusqu'à la route. Plus la roue retransmet la puissance d
 
 Ensuite, une roue a un déplacement cinétique ce qui va permettre d'obtenir de l'inertie. Pour 
 avoir le plus d'inertie possible il faut optimiser son aérodynamisme, mais pas que. En effet, plus on sera lourd 
-plus on ira vite une fois lancée. Mais il sera judicieux de plus optimiser l'aérodynamisme que d'augmenter le poids,  
+plus on ira vite une fois lancée. Mais il sera judicieux de plus optimiser l'aérodynamisme que d'augmenter le poids, 
 car plus on sera lourd plus ce sera dur d'atteindre le moment d'inertie. A l'image d'un train qui doit fournir un 
 couple énorme au démarrage, mais qui une fois lancée fournira très peu d'énergie. Mais pour un cycliste, qui a besoin
  de faire des relances en permanence cela n'est pas possible.
 {: .text-justify}
 
 Pour obtenir une roue aérodynamique, il va falloir jouer sur la hauteur de jante, le nombre de rayons, la largeur de
- la jante ou encore le nombre de rayons et leur forme. L'idéal est une roue pleine, l'air s'écoule directement vers 
+ la jante ou encore le nombre de rayons et leurs formes. L'idéal est une roue pleine, l'air s'écoule directement vers 
  l'extérieur. Elle sera  aussi plus lourde donc une fois lancée aura une inertie optimum. Le cycliste pourra aller 
- plus vite en fournissant la même puissance. Mais la roue pleine est très plus dur à relancer et si le vent est de 
+ plus vite en fournissant la même puissance. Mais la roue pleine est très plus dure à relancer et si le vent est de 
  côté ça devient un fardeau. Donc une roue pleine pour faire 
 du chrono sur terrain plat avec un vent favorable. Le compromis est donc de jouer la hauteur de la jante, par example 
 une 88mm offrira plus d'aerodynamisme qu'une 38mm car une surface d'évacuation de l'air plus grande. Mais il faudra 
@@ -108,15 +108,15 @@ Pour faire des parcours de plaine en groupe, pour cycliste type rouleur ou sprin
 {: .text-justify}
 
 Il existe encore plein de combinaisons possibles étant donné le nombre de paramètres. 
-Une bonne roue résulte d’une bonne combinaison de tous ses composants, selon le besoin du coureur.
+Une bonne roue résulte d’une bonne combinaison de tous ces composants, selon le besoin du coureur.
  Et surtout on ne peut pas dire que c’est une bonne roue parce qu’elle est belle au visuel. 
 Ce que je conseille, c’est d’avoir plusieurs types de roue, selon le parcours et les conditions. C’est sûr on 
-ne peut pas en avoir 30 paires. Mais 2 ou 3 paires on peut couvrir un grand nombre de cas.
+ne peut pas en avoir 20 paires. Mais 2 ou 3 paires on peut couvrir un grand nombre de cas.
 {: .text-justify}
 
 # Composants
 
-Je vais détailler les différents composants que j'ai choisis, selon mon besoin.
+Je vais détailler les différents composants que j'ai choisi, selon mon besoin.
 {: .text-justify}
 
 ## Jante
@@ -140,13 +140,13 @@ De plus, qui dit plus large dit plus de confort donc je vais essayer d'opter pou
 
 ### Nombre de trous
 
-Moins il y a de rayons, plus la roue sera aériodynamique. Mais cela fragilise la roue forcément même si on est léger. 
+Moins il y a de rayons, plus la roue sera aérodynamique. Mais cela fragilise la roue forcément même si on est léger. 
 Il faut penser au freinage et aux sprints à pleine puissance. Mettre 20 rayons à l'avant ne pose pas de problème, mais 
 pour une roue arrière il est plus judicieux de partir sur 24. Sur les moyeux dit Straight Pull (avec des rayons droits) 
 on peut mettre 20 à l'arrière, car les rayons droits sont moins fragiles. Je pense que je testerai ce type de montage 
 pour ma prochaine paire. Enfin mettre plus de 24 aurait l'effet inverse. Le bon compromis serait de mettre une roue 
 à bâton (à la Jalabert), un peu plus passe partout qu'une roue pleine. J'ai opté pour un montage classique avec des 
-trous symétriques. Il existe des jantes asymétriques (TODO mettre un lien).
+trous symétriques.
 {: .text-justify}
 
 ### Matériau
@@ -172,10 +172,10 @@ Caractéristiques:
 - Finition: Matte UD
 - Poids: 520g +/-5g
 
-J'ai trouvé un fournisseur parmi tant d'autres sur AliExpress, il y a du choix. Encore faut-il trouver un 
+J'ai trouvé un fournisseur parmi tant d'autres sur AliExpress, il y a du choix... Encore faut-il trouver un 
 fournisseur sérieux. Une bonne évaluation, un bon nombre de ventes, un descriptif détaillé, des frais de livraison 
 correct et une garantie. J'ai pu échanger directement par message très rapidement et le temps de livraison était 
-clairs. Je suis très satisfait, il faudra voir à long terme à l'utilisation. Mais à la livraison, j'étais bluffé par
+clair. Je suis très satisfait, il faudra voir à long terme, à l'utilisation. Mais à la livraison, j'étais bluffé par
  la qualité visuelle.
 {: .text-justify}
 
@@ -204,8 +204,8 @@ s'encrasse dedans et on perd toute l'efficacité. Et enfin, il faut regarder l'e
 - Le nombre de trous de chaque côté, selon le montage que l'on veut faire.
 - Le type de freinage à disque ou v-brake
 - Classique ou Straight Pull. Les moyeus Straight Pull sont  à la mode, car ils pronent une meilleure longétivité
-en utilisant des rayons droits et par le fait on peut mettre un peu moins de rayons et donc obtenir meilleur 
-aérodynamisme (Je testerai sur une prochaine paire, apparamment ça n'a pas encore été prouvé donc laissons le temps et 
+en utilisant des rayons droits et par le fait on peut mettre un peu moins de rayons et donc obtenir un meilleur 
+aérodynamisme (Je testerai sur une prochaine paire, apparemment ça n'a pas encore été prouvé donc laissons le temps et 
 les retours d'expériences plus que le marketing).
 {: .text-justify}
  
@@ -401,7 +401,7 @@ Dans ce schéma, j'ai représenté une vue de face à gauche et une vue de dessu
 est représenté en rouge avec la variable pour l'instant inconnue S que l'on va déterminer. 
 On constate que le moyeu est centré par rapport à la jante ce qui provoque un angle pour 
 le rayon pour atteindre la jante. En vert, j'ai représenté l'écrou est surtout où le rayon va se loger en position 
-tendue. En dessous, j'ai simplifié les 2 schémas en 2 triangles HLR et LSF avec pour l'instant que des inconnus, mais 
+tendue. En dessous, j'ai simplifié les 2 schémas en 2 triangles HLR et LSF avec pour l'instant que des inconnues, mais 
 que l'on va pouvoir substituer.
 
 Triangle HLR
@@ -478,7 +478,7 @@ suivantes.
 ### Mesure du moyeu
 
  Le schéma ci-dessous représente le moyeu arrière, j'ai représenté le centre de celui en pointillé bleu, c'est là 
- où la jante devra être aligné. On remarque bien pourquoi les longueurs des rayons ne seront pas les mêmes pour une 
+ où la jante devra être alignée. On remarque bien pourquoi les longueurs des rayons ne seront pas les mêmes pour une 
  roue arrière, étant donné qu'il y a la cassette à prendre en compte.
 {: .text-justify}
 
@@ -492,7 +492,7 @@ Il s'agit d'une valeur normalisée sur les cadres. Sur les vélos de route class
 d'acheter mon moyeu (voir chapitre "choix du moyeu").
 {: .text-justify}
 
-b) Les valeurs qui vont nous intéresser à de déterminer sont les valeurs C et D qui seront substituées 
+b) Les valeurs qui vont nous intéresser à  déterminer sont les valeurs C et D qui seront substituées 
 à H (voir image)
 
 H = C pour les rayons côté gauche et D pour les rayons côté droit.
@@ -503,7 +503,7 @@ pouvoir poser l'extrémité du moyeu de chaque côté
 
 ![moyeu](/assets/images/wheel-building/flange_support.jpeg){: .align-center :height="320px" width="320px"} 
 
-Ensuite, j'ai positionné le moyeu et j'ai les pris les mesures de chaque côté à l'aide d'une équerre.
+Ensuite, j'ai positionné le moyeu et j'ai pris les mesures de chaque côté à l'aide d'une équerre.
 
 ![moyeu](/assets/images/wheel-building/hub_mesurement.jpeg){:height="240px" width="240px"} 
 ![moyeu](/assets/images/wheel-building/hub_mesurement2.jpeg){:height="240px" width="240px"} 
@@ -1075,7 +1075,7 @@ erreurs comme on dit. Donc j'ai mis plusieurs heures pour y arriver, mais cela e
 
 ### Etape 1
 
-J'ai tout d'abord serrer tous les rayons au même niveau, j'ai pris comme repère le filetage du rayon. Donc j'ai 
+J'ai tout d'abord serré tous les rayons au même niveau, j'ai pris comme repère le filetage du rayon. Donc j'ai 
 vissé chaque rayon jusqu'à que le filetage ne soit plus visible.
 {: .text-justify}
 
