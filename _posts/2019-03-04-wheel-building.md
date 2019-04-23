@@ -182,7 +182,7 @@ clair. Je suis très satisfait, il faudra voir à long terme, à l'utilisation. 
 ![moyeu](/assets/images/wheel-building/rim2.jpeg){:height="320px" width="320px"} 
 ![moyeu](/assets/images/wheel-building/rim3.jpeg){:height="320px" width="320px"} 
 
-- Prix: 67.36€, dont 36.51€ de frais de port, soit un total 103.87€
+- Prix: 67.36€, plus 36.51€ de frais de port, soit un total 103.87€
 
 ## Moyeu
 
