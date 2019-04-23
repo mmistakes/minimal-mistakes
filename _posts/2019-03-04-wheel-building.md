@@ -523,7 +523,7 @@ C = X/2 - Y = 130/2 - 29 = \boxed{36mm} \\
 D = X/2 - Z = 130/2 - 48 = \boxed{17mm}
 $$
 
-c) Maintenant je vais mesurer A et B pour déterminer la valeur de H (voir schéma TODO). Et donc H n'est ni plus ni 
+c) Maintenant je vais mesurer A et B pour déterminer la valeur de H. Et donc H n'est ni plus ni 
 moins A/2 et B/2. Donc pour mesurer ce diamètre, j'ai utilisé 2 bouts de carton voir schéma ci-dessous (difficile à 
 réaliser avec un pied à coulisse).
  {: .text-justify}
@@ -555,12 +555,12 @@ $$
 
 ![moyeu](/assets/images/wheel-building/erd_demonstration6.jpg){:.align-center :height="320px" width="320px"}
 
-Donc si on revient au triangle 1 HLR. on connaît H mesuré précédemment et l'ERD aussi,
+Donc si on revient au triangle 1 HLR. on connaît H mesurée précédemment et l'ERD aussi,
 on va donc pouvoir déterminer la valeur de L. La difficulté dans ce triangle c'est qu'il 
 n'est pas rectangle donc on ne peut pas appliquer un simple théorème de Pythagore. Mais on peut démontrer 
-la loi du cosinus dans un triangle  à angles aigus utilisant le théorème de Pythagore sur un sous-triangle rectangle 
-formé en prenant le pied de la hauteur (voir trait rouge). 
-Pour appliquer ces lois trigonométriques, il nous faut connaître la valeur de l'angle ϕ, ça tombe bien on peut le 
+la loi du cosinus dans un triangle  à angles aigus en utilisant le théorème de Pythagore sur un sous-triangle 
+rectangle, en prenant le pied de la hauteur (voir trait rouge). 
+Pour appliquer ces lois trigonométriques, il nous faut connaître la valeur de l'angle ϕ, ça tombe bien on peut la
 déterminer ! On connaît le nombre de trous de la jante (24) ! donc l'angle entre chaque trou est de 360°/24 soit 15°. 
 Etant donné que je vais faire un laçage avec 2 croisements je vais avoir 4 trous de décalage sur chaque rayon. Je 
 détaillerai tout ça dans le chapitre dédié au laçage.
@@ -799,8 +799,8 @@ Accélération = 9.81m/s^2
 }
 $$
 
-- A = L'aire de la section = π * R^2
-- R est le rayon du rayon avant qu'il soit forgé. En effet les SAPIM CX-Ray sont cylindriques aux extrémitées 
+- A = L'aire de la section $$ π * R^2 $$
+- R est le rayon du rayon avant qu'il soit forgé. En effet les SAPIM CX-Ray sont cylindriques aux extrémités 
 et plat au milieu. Mais avant transformation le rayon était bien cylindrique. Donc il faut faire un peu 
 de recherche ou demander directement au fournisseur de rayon pour avoir cette information. Donc les SAPIM 
 CX-RAY font 1.5mm de diamètre avant d'être forgé. 
@@ -860,7 +860,7 @@ $$
 
 Voilà j'ai enfin tous les éléments pour enfin commander mes rayons.
 
-J'obtiens 226.897 pour côté gauche et 222.999 pour le côté droit. 
+J'obtiens 226.897mm pour côté gauche et 222.999mm pour le côté droit. 
 Mais quand on veut commander les rayons les tailles vont de 130-310mm en chiffre paire 
 Cela veut dire que l'on peut acheter du 220mm-222mm-224mm-226mm... Alors que choisir, selon les résultats obtenus. 
 C'est assez simple il ne faut pas dépasser un écart de plus d'1mm sinon ça pourrait rendre difficile le 
@@ -873,7 +873,7 @@ Donc j'ai commandé 12 rayons 226mm pour le côté gauche et 12 rayons 222mm pou
 
 Maintenant que j'ai les rayons, les écrous, le moyeu et la jante. J'ai donc tout ce qu'il me faut pour attaquer 
 le montage. Enfin, pour ce faire il me manque quelques outils. J'ai investi dans des outils qui seront très vite 
-amorti. 
+amortis. 
 {: .text-justify}
 
 ## Outils
@@ -890,17 +890,17 @@ Cet outil sera très utile pour entretenir ses roues durant tout son cycle de vi
 ### Une jauge de centrage ou comparateur d'alignement
 
 Cet outil est très important, il va permettre de vérifier que le moyeu est bien aligné avec la jante. Je l'utiliserai 
-comme pour le centreur tout au long de la mise sous tension.
+comme pour le centreur de roue tout au long de la mise sous tension.
 {: .text-justify}
 
 ![moyeu](/assets/images/wheel-building/gauge.jpeg){:.align-center :height="240px" width="240px"} 
 
 ### Un tournevis à ecrous (tête hexagonale)
 
-Mon choix des écrous double square de chez Sapim était surtout pour leur tête hexagonale ce qui m'a permis d'utiliser 
+Mon choix des écrous Double Square de chez Sapim était surtout pour leur tête hexagonale ce qui m'a permis d'utiliser 
 ce type tournevis qui est assez long pour travailler sur des jantes hautes de plus de 80mm. Il y a plusieurs types de 
 tête d'écrou, de taille et donc des types différents de tournevis. Il y a aussi des marques qui ont leur propre standard 
-comme dt-swiss qui obligent d'acheter leur écrous et d'utiliser leurs outils.
+comme dt-swiss qui oblige d'acheter leurs écrous et d'utiliser leurs outils.
 {: .text-justify}
 
 ![moyeu](/assets/images/wheel-building/nipples_screwdriver.jpeg){:.align-center :height="240px" width="240px"} 
@@ -917,7 +917,7 @@ de l'écrou.
 
 Contrairement au tournevis qui va permettre de serrer le rayon depuis l'intérieur du rayon, la clé à rayon 
 va permettre de régler la tension des rayons directement depuis la tête extérieure ce qui sera utile quand le boyau 
-sera installé. Seul bémol l'outil abime la peinture des rayons  de couleur.
+sera installé. Seul bémol l'outil abime la peinture des rayons de couleur.
 {: .text-justify}
 
 ![moyeu](/assets/images/wheel-building/cle_rayon.jpeg){:.align-center :height="240px" width="240px"}
@@ -962,9 +962,9 @@ Elle permet d'avoir une vue à 360° selon le nombre de rayons et de croisements
 pouvoir décomposer chaque étape et pouvoir regarder sous tous les angles. Je vais détailler les étapes pour mon type de 
 montage, en effet, il y a plusieurs façons de lacer:
 
-- Radial: les rayons ne ce croisent pas. On retrouve ce type de montage sur les roues avants, mais parfois sur le  côté 
-gauche du moyeu à l'arrière ce qui n'a qu'un intérêt en terme d'esthétisme. De plu, un montage radial fragilise la roue 
-surtout au niveau du freinage. Mes roues 38mm que j'avais fait monter, à l'arrière ont 8 rayons radial à gauche et 16 
+- Radial: les rayons ne ce croisent pas. On retrouve ce type de montage sur les roues avants, mais parfois sur le côté 
+gauche du moyeu à l'arrière ce qui n'a qu'un intérêt en terme d'esthétisme. De plus, un montage radial fragilise la 
+roue surtout au niveau du freinage. Mes roues 38mm que j'avais fait monter, à l'arrière ont 8 rayons radial à gauche et 16 
 rayons avec 2 croisements à droite. Je comprends pourquoi ma roue chasse quand je sprinte en danseuse. En effet les 8 
 rayons radiaux sont la cause de se déséquilibre.
 
@@ -973,12 +973,12 @@ Il existe 3 autres type de laçage:
 vont croisés les rayons qui sortent par l'intérieur  en passant en dessous. 
 - B: Un autre laçage symétrique est de faire l'inverse du précédemment. 
 
-C'est de type de montage n'apporte rien en terme de performance. Par contre, ils ont une légère différence au freinage 
+C'est 2 types de montage n'apporte rien en terme de performance. Par contre, ils ont une légère différence au freinage 
 notamment si on a des freins à disque. En effet, lors du freinage les rayons vont se tirer avec le premier type 
 de laçage, les rayons vont être tirés vers l'intérieur alors que dans l'autre cas vers l'extérieur ce qui pourrait 
 toucher le disque de frein. L'autre différence c'est qu'à l'inverse lors du pédalage, le laçage de type A vont tirer 
 vers l'extérieur ce qui pourrait venir toucher la cassette... D'après ce que j'ai lu, il y a souvent largement 
-assez d'espace pour ne pas toucher la cassette ou le frein à disque. 
+assez d'espace pour ne pas toucher la cassette ou le disque. 
 {: .text-justify}
 
 - Enfin, un dernier montage spécifique Shimano pour freins à disque pour les roues arrières que l'on peut 
@@ -995,7 +995,7 @@ J'ai donc fait le choix de faire mon laçage de type A.
 Moyeu côté cassette en face de moi et repère de valve aligné perpendiculairement. Pour avoir une roue bien fini 
 le top c'est d'avoir le logo du moyeu aligné avec la valve. Pour y arriver, il suffit de penser à l'angle que va 
 prendre les rayons au moment du laçage, on le verra à l'étape suivante. La technique c'est juste de prendre le milieu 
-du logo du moyeu et compté 3 trous vers la gauche on le verra ensuite pourquoi 3. Mais simplement lors du laçage 
+du logo du moyeu et compter 3 trous vers la gauche, on le verra ensuite pourquoi 3. Mais simplement lors du laçage 
 avec un croisement par 2, ça va tomber pile poil en face la valve.
 
 ![moyeu](/assets/images/wheel-building/lacage_step10.jpg){:height="240px" width="240px"}
@@ -1008,7 +1008,7 @@ avec un croisement par 2, ça va tomber pile poil en face la valve.
 Je commence côté cassette donc bien prendre les bons rayons. Surtout bien les séparer pour ne pas les mélanger... 
 A partir de cette étape, il faut prendre son temps. Donc je prends 6 rayons de 222mm (côté cassette) et je pars du 
 centre du moyeu, en rentrant par l'extérieur et j'insère le rayon dans le premier trou à gauche de la valve. Je prends 
-un écrou et je le serre légèrement justement pour qu'il tienne seule. Ensuite, j'alterne tous les 2 trous côté moyeu 
+un écrou et je le serre légèrement justement pour qu'il tienne seul. Ensuite, j'alterne tous les 2 trous côté moyeu 
 et tous les 4 trous côté jante.
 
 ![moyeu](/assets/images/wheel-building/lacage_step12.jpg){: .align-center :height="320px" width="320px"}
@@ -1020,7 +1020,7 @@ et tous les 4 trous côté jante.
 pas les rayons de l'étape 2 pour une meilleure lisibilité. On retourne la jante, je fais la même opération, mais en 
 prenant les rayons de 226mm (côté gauche). Moi j'ai pris des écrous de différentes couleurs juste pour le style, donc 
  pour obtenir une alternance j'ai utilisé des rouges, 
-côté cassette et des noirs, côté gauche. De plus, ça m'a aidé comme repère lors du dé-voilage.
+côté cassette et des noirs, côté gauche. De plus, ça m'a aidé en tant que repère lors du dé-voilage.
 
 ![moyeu](/assets/images/wheel-building/lacage_step13.jpg){: .align-center :height="320px" width="320px"}
 
@@ -1064,8 +1064,8 @@ roue complètement lacé de chaque côté.
     
 ## Mise sous tension et dé-voilage
 
-La roue est prête pour être dévoilé et être mise sous tension. J'installe la roue sur le centreur de 
-roue et c'est parti. Pour cette partie, il faut encore une fois prendre son temps, car je n'ai aucune expérience 
+La roue est prête pour être dévoilée et être mise sous tension. J'installe la roue sur le centreur de 
+roue et c'est parti. Pour cette partie, j'ai encore une fois prendre son temps, car je n'ai aucune expérience 
 dans ce domaine contrairement à un professionnel qui peut faire ça très vite. Il s'agit d'un coup de main à prendre 
 à force de le faire. J'ai dû recommencer plusieurs fois avant d'arriver au résultat final, mais on apprend de ses 
 erreurs comme on dit. Donc j'ai mis plusieurs heures pour y arriver, mais cela en valait le coup.
@@ -1085,8 +1085,8 @@ A l'aide de la jauge de centrage je vérifie l'état de mon alignement. Pour l'i
 normal. Mais on constate bien qu'il va ramener le moyeu au centre de la jante. Pour cela il va falloir plus visser 
 les rayons d'un côté. Donc pour faire simple, si je visse les rayons côté cassette cela va ramener la jante vers la 
 droite (quand on sert les rayons il faut bien comprendre que c'est la jante qui bouge et pas le moyeu) et inversement 
-si je sers ce de gauche. Donc selon l'état de l'alignement il faut jouer sur les rayons de gauche et de droite. Donc, 
-je sers de 2 tours de tournevis sur chaque rayon à droite et 1 tour pour les rayons côté gauche. Il faut savoir 
+si je serre ce de gauche. Donc selon l'état de l'alignement il faut jouer sur les rayons de gauche et de droite. Donc, 
+je serre de 2 tours de tournevis sur chaque rayon à droite et 1 tour pour les rayons côté gauche. Il faut savoir 
 que plus on va avancer dans la mise sous tension plus il faudra limiter le nombre de tour jusqu'à faire des quarts 
 de tour pour les derniers ajustements. Si on ne fait pas progressivement, il sera impossible de dévoiler la roue 
 dans les étapes suivantes.
@@ -1128,12 +1128,12 @@ tous les rayons tout en vérifiant de garder l'alignement et de ne pas voilée l
 bien, rien qu'au toucher on sent qu'ils sont bons. Il est normal que les rayons côté droit soit plus tendu que ce de 
 gauche de part la géométrie du moyeu. Il est surtout important que la tension, côté cassette soit bonne sur tous 
 les rayons, car c'est de ce côté que les forces vont être le plus sollicitées. J'utilise enfin un tensiomètre 
-pour vérifier que j'ai une tension équivalent pour tous les rayons de chaque côté. Pour le niveau de tension il 
+pour vérifier que j'ai une tension équivalente pour tous les rayons de chaque côté. Pour le niveau de tension il 
 y a plusieurs écoles, des gens utilisent juste le toucher ou le son, quand on pince les rayons et d'autres à la 
 valeur de la tension. J'avoue que la méthode au toucher suffit, car il faut savoir que des rayons trop tendus n'apporteront 
 pas plus de rigidité et au contraire fatigué le rayon plus rapidement. Evidemment un rayon pas assez tendu aura aussi
- des conséquences sur la longévité des rayons et de résistance au poids du bonhomme et aux contraintes  de la route. Donc 
-il faut trouver le bon compromis, moi j'ai fait au toucher puis vérifier au tensiomètre pour voir ce que ça valait. 
+ des conséquences sur la longévité des rayons et de résistance au poids du cycliste et aux contraintes  de la route. 
+ Donc il faut trouver le bon compromis, moi j'ai fait au toucher puis vérifier au tensiomètre pour voir ce que ça valait. 
 Mais je n'ai pas mis exactement la tension indiquée pour mon poids. 
 {: .text-justify}
 
@@ -1154,8 +1154,8 @@ car ce serait "réinventer la roue", voici des videos Youtube qui correspondent 
 ![moyeu](/assets/images/wheel-building/prolongateur2.jpg){:height="200px" width="200px"}
 ![moyeu](/assets/images/wheel-building/prolongateur_valve_miche.jpg){:height="200px" width="200px"} 
 
-- Une petite clé est souvent livrée avec les prolongateurs de valve afin d'enleve l'obu facilement 
-- Il existe des anti-vibrateurs à coller afin que la valve ne vibre sur la jante pendant que l'on roule. En effet, 
+- Une petite clé est souvent livrée avec les prolongateurs de valve afin d'enlever l'obu facilement 
+- Il existe des anti-vibrateurs à coller afin que la valve ne vibre pas sur la jante pendant que l'on roule. En effet, 
 contrairement à une valve de chambre à air qui ne bougera pas à la mise sous pression, sur un boyau c'est différent 
 le boyau plus rigide ne permet pas cela. Les prolongateurs de valve Miche contiennent directement leurs anti-vibrateurs 
 qui sont top. Sinon il est possible de mettre juste de passer un ruban adhésif gratuit, mais moins esthétique.
@@ -1178,7 +1178,7 @@ afin que la colle adhère plus facilement.
 
 ![moyeu](/assets/images/wheel-building/cassette1.jpg){: .align-center :height="320px" width="320px"}
 
-- Je profite du changement de cassette pour bien la nettoyer et dégraisser.
+- Je profite du changement de cassette pour bien la nettoyer et la dégraisser.
 {: .notice--primary}
 
 
@@ -1186,8 +1186,8 @@ afin que la colle adhère plus facilement.
 
 Il est temps de gonfler le boyau, je mets 9-10Bars en général. Tout dépend de la limite indiquée par la marque 
 et ce qui est recommandée par la jante. Mais plus on pourra mettre de pression, plus le boyau aura moins d'adhérence 
-avec le sol donc moins de frottement et donc plus de vitesse pour le même effort fourni. Le seul compromis c'est que 
-plus on a de pression plus on perd en confort, car le moindre choc est plus répercuté jusqu'au cycliste. Avec moins de 
+avec le sol donc moins de frottements et donc plus de vitesse pour le même effort fourni. Le seul compromis c'est que 
+plus on a de pression plus on perd en confort, car le moindre choc sera répercuté jusqu'au cycliste. Avec moins de 
 pression les chocs sont plus absorbés par le boyau. Encore une fois, un compromis à faire.
 {: .text-justify}
 
@@ -1203,7 +1203,7 @@ grammes gagnés sur le moyeu et la jante...
 ## Patin de freins
 
 Etant donné que sur une jante à boyau le freinage va se faire directement sur le boyau contrairement sur des jantes 
-à pneu où un cercle en alu est rajouté. Il faut donc des patins de freins spéciaux, moi j'utilise des SwissStop Flash 
+à pneu où un cercle en Alu est rajouté. Il faut donc des patins de freins spéciaux, moi j'utilise des SwissStop Flash 
 Pro qui fonctionne sur tous types de jante ce qui est pratique quand je mets mes roues à pneu. 
 
 ## Premier test et ajustements
@@ -1250,7 +1250,7 @@ Une roue arrière coûte plus cher, plus de rayons, moyeu plus cher, plus de ray
 
 J'espère que cet article permettra à d'autres personnes de trouver des réponses ou de tenter 
 l'expérience. Pour ma part, je suis très fier du résultat et je projette de me faire d'autres 
-montages (Moyeu Straight Pull) et pourquoi pas monter mon vélo de A-Z. 
+montages (moyeu Straight Pull) et pourquoi pas monter un vélo complet. 
 {: .text-justify}
 
 ![moyeu](/assets/images/wheel-building/result1.jpg){:height="200px" width="240px"} 
