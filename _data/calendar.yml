@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Osterferien",
-    "title": "Osterferien",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=Nm5yazh0b3JmbzgxNmkzcmRpMHZlN3RpcGQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-04-15",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-04-27",
-      "date_time": null
-    },
-    "created": "2019-01-05T13:39:23.000Z",
-    "updated": "2019-01-05T13:40:12.645Z"
-  },
-  {
-    "image_path": null,
     "alt": "Elternaktionstag ",
     "title": "Elternaktionstag ",
     "excerpt": "Erwachsene und Kinder machen das Schulhaus und Schulgelände schöner",
@@ -49,6 +32,23 @@
     },
     "created": "2019-03-24T10:17:30.000Z",
     "updated": "2019-03-24T10:17:42.959Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Finanzausschuss",
+    "title": "Finanzausschuss",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=amRtNmxpMDY1azA2bjdrM3VuYXRoZjg4ZjQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-05-07T14:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-05-07T15:00:00+02:00"
+    },
+    "created": "2019-04-26T06:59:01.000Z",
+    "updated": "2019-04-26T06:59:14.725Z"
   },
   {
     "image_path": null,
