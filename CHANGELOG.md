@@ -1,3 +1,9 @@
+## [4.16.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.16.2)
+
+### Bug Fixes
+
+- Revert jQuery back to version v3.3.1, v.3.4.0 causes issues with other plugins that haven't been updated. [#2137](https://github.com/mmistakes/minimal-mistakes/issues/2137)
+
 ## [4.16.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.16.1)
 
 ### Enhancements

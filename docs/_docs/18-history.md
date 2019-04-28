@@ -5,9 +5,15 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2019-04-28T14:13:44-04:00
+last_modified_at: 2019-04-28T14:40:50-04:00
 toc: false
 ---
+
+## [4.16.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.16.2)
+
+### Bug Fixes
+
+- Revert jQuery back to version v3.3.1, v.3.4.0 causes issues with other plugins that haven't been updated. [#2137](https://github.com/mmistakes/minimal-mistakes/issues/2137)
 
 ## [4.16.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.16.1)
 
