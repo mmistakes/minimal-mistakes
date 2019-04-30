@@ -1,5 +1,5 @@
 /*!
- * gumshoejs v5.1.0
+ * gumshoejs v5.1.1
  * A simple, framework-agnostic scrollspy script.
  * (c) 2019 Chris Ferdinandi
  * MIT License
@@ -108,12 +108,14 @@
 	 * @param  {Array} contents The content areas
 	 */
 	var sortContents = function (contents) {
-		contents.sort((function (item1, item2) {
-			var offset1 = getOffsetTop(item1.content);
-			var offset2 = getOffsetTop(item2.content);
-			if (offset1 < offset2) return -1;
-			return 1;
-		}));
+		if(contents) {
+			contents.sort((function (item1, item2) {
+				var offset1 = getOffsetTop(item1.content);
+				var offset2 = getOffsetTop(item2.content);
+				if (offset1 < offset2) return -1;
+				return 1;
+			}));
+		}
 	};
 
 	/**
@@ -409,7 +411,7 @@
 
 			// Setup debounce callback
 			timeout = window.requestAnimationFrame((function () {
-				sortContents();
+				sortContents(contents);
 				publicAPIs.detect();
 			}));
 
@@ -422,7 +424,7 @@
 
 			// Undo DOM changes
 			if (current) {
-				deactivate(current);
+				deactivate(current, settings);
 			}
 
 			// Remove event listeners
