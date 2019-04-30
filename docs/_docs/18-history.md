@@ -5,9 +5,19 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2019-04-28T14:40:50-04:00
+last_modified_at: 2019-04-30T08:28:57-04:00
 toc: false
 ---
+
+## Unreleased
+
+### Enhancements
+
+- Update Gumshoe to v5.1.1. [#2140](https://github.com/mmistakes/minimal-mistakes/issues/2140)
+
+### Bug Fixes
+
+- Fix JavaScript error when resizing pages with table of contents. [#2140](https://github.com/mmistakes/minimal-mistakes/issues/2140)
 
 ## [4.16.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.16.2)
 
