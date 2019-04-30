@@ -38,7 +38,7 @@ Möglichkeit, im Unterricht der Oberschulen zu hospitieren. Gleichzeitig
 stellen die Oberschüler*innen ihre Schule vor.
 
 Unsere Kooperations-Kitas sind die
-[<i class="fa fa-external-link">&nbsp;</i>Kita Zauberschiff](http://kita-nordwest.de/einrichtung_allgemein.php?id=48)
+[<i class="fa fa-external-link">&nbsp;</i>Kita Zauberschiff](https://www.kita-nordwest.de/kita/kita-zauberschiff/)
 sowie die
 [<i class="fa fa-external-link">&nbsp;</i>Kita Arche-Noah](https://www.kirchengemeinde-staaken.de/page/1183/kita-arche-noah).
 Gemeinsam mit Ihren Erzieher*innen besuchen die Kinder den Unterricht und sind
