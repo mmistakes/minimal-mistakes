@@ -2,7 +2,7 @@
 title: "JavaScript"
 permalink: /docs/javascript/
 excerpt: "Instructions for customizing and building the theme's scripts."
-last_modified_at: 2019-04-03T15:25:36-04:00
+last_modified_at: 2019-05-02T08:55:27-04:00
 ---
 
 The theme's `assets/js/main.min.js` script is built from several vendor, jQuery plugins, and other scripts found in [`assets/js/`](https://github.com/mmistakes/minimal-mistakes/tree/master/assets/js).
@@ -12,10 +12,12 @@ minimal mistakes
 ├── assets
 |  ├── js
 |  |  ├── plugins
-|  |  |   ├── jquery.fitvids.js            # fluid width video embeds
-|  |  |   ├── jquery.greedy-navigation.js  # priority plus navigation
-|  |  |   ├── jquery.magnific-popup.js     # responsive lightbox
-|  |  |   └── jquery.smooth-scroll.min.js  # make same-page links scroll smoothly
+|  |  |   ├── gumshoe.js                     # simple scrollspy
+|  |  |   ├── jquery.ba-throttle-debounce.js # rate-limit functions
+|  |  |   ├── jquery.fitvids.js              # fluid width video embeds
+|  |  |   ├── jquery.greedy-navigation.js    # priority plus navigation
+|  |  |   ├── jquery.magnific-popup.js       # responsive lightbox
+|  |  |   └── smooth-scroll.js               # make same-page links scroll smoothly
 |  |  ├── vendor
 |  |  |   └── jquery
 |  |  |       └── jquery-3.4.1.js
