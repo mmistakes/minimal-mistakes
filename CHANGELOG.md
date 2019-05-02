@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+- Update jQuery to v3.4.1. [#2137](https://github.com/mmistakes/minimal-mistakes/issues/2137)
 - Update Gumshoe to v5.1.1. [#2140](https://github.com/mmistakes/minimal-mistakes/issues/2140)
 
 ### Bug Fixes
