@@ -18,9 +18,9 @@ minimal mistakes
 |  |  |   └── jquery.smooth-scroll.min.js  # make same-page links scroll smoothly
 |  |  ├── vendor
 |  |  |   └── jquery
-|  |  |       └── jquery-3.3.1.min.js
-|  |  ├── _main.js                         # jQuery plugin settings and other scripts
-|  |  └── main.min.js                      # concatenated and minified scripts
+|  |  |       └── jquery-3.4.1.js
+|  |  ├── _main.js                           # jQuery plugin settings and other scripts
+|  |  └── main.min.js                        # concatenated and minified theme script
 ```
 
 ## Customizing
