@@ -50,6 +50,10 @@
     bottom: 0;
   }
 
+  a[rel="permalink"]::before {
+    content: none;
+  }
+
   a + a {
     opacity: 0.5;
   }
