@@ -21,7 +21,7 @@ feature_row:
   - image_path: 
     alt: "placeholder image 2"
     title: "Simulation Tool"
-    excerpt: "Spawning- and yield-per-recruit models<br> <br>"
+    excerpt: "Spawning- and yield-per-recruit models"
     url: "/YPRsim"
     btn_label: "Go to App"
     btn_class: "btn--inverse"
