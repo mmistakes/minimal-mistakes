@@ -27,7 +27,7 @@ Download the files:
 <a href="https://github.com/AdrianHordyk/lbspr/zipball/master" class="fa fa-download"><span> LBSPR R Package </span></a>
 
 ## LBSPR Simulation App 
-<iframe src="http://server.adrianhordyk.com/shiny/LBSPR_Sim/" height="1600px" width="100%" frameBorder="0">
+<iframe src="http://142.103.48.20:3838/YPRSim/" height="1600px" width="100%" frameBorder="0">
   Your browser doesn't support iframes
 </iframe>
 
