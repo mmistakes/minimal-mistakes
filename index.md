@@ -61,8 +61,9 @@ We invite anyone who is interested in collaborating or contributing to the site 
 ## Applications 
 Click [here](/apps) to go to the interactive applications.
 
-
+<!-- 
 ## Subscribe to our Mailing List
-Click [here](/Subscribe) to subscribe to our mailing list. We will occasionally send emails regarding news or updates of The Barefoot Ecologist's Toolbox. 
+Click [here](/Subscribe) to subscribe to our mailing list. We will occasionally send emails regarding news or updates of The Barefoot Ecologist's Toolbox.
 
 You can unsubscribe at any time and we promise not to share your email address with anyone else!
+-->

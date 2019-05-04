@@ -8,8 +8,6 @@ main:
     url: /about-us
   - title: "Links & References"
     url: /references
-  - title: "Subscribe"
-    url: /Subscribe  
   - title: "Contact Us"
     url: /contact
   - title: "Privacy Policy"
