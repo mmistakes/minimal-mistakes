@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Elternaktionstag ",
-    "title": "Elternaktionstag ",
-    "excerpt": "Erwachsene und Kinder machen das Schulhaus und Schulgelände schöner",
-    "url": "https://www.google.com/calendar/event?eid=MG5tOTJqY2ZvM2gyYWhhNDN1MmlxdmJqMGUgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-05-04T10:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-05-04T13:00:00+02:00"
-    },
-    "created": "2019-01-28T11:31:27.000Z",
-    "updated": "2019-03-24T10:34:50.788Z"
-  },
-  {
-    "image_path": null,
     "alt": "3. Fachkonferenz Sport ",
     "title": "3. Fachkonferenz Sport ",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2019-02-13T07:16:49.000Z",
     "updated": "2019-02-13T07:18:03.537Z"
+  },
+  {
+    "image_path": null,
+    "alt": "3. Gesamtkonferenz",
+    "title": "3. Gesamtkonferenz",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=cmRzdjE3aHNocW1lcTMxMDNncnBpaW42anMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-05-21T16:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-05-21T18:00:00+02:00"
+    },
+    "created": "2019-04-23T07:24:45.000Z",
+    "updated": "2019-04-23T07:24:45.464Z"
   }
 ]
