@@ -20,9 +20,9 @@ feature_row:
     btn_class: "btn--inverse"
   - image_path: 
     alt: "placeholder image 2"
-    title: "Maturity-at-Length"
-    excerpt: "Coming Soon! <br> <br>"
-    url: "/"
+    title: "Equilibrium  Population Simulation"
+    excerpt: "Spawning- and yield-per-recruit modles<br> <br>"
+    url: "/YPRsim"
     btn_label: "Go to App"
     btn_class: "btn--inverse"
 ---
