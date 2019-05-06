@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "3. Fachkonferenz Sport ",
-    "title": "3. Fachkonferenz Sport ",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MGI1OTliMzQzOWZvMmpoMmtsYTg5cnA4ZjUgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-05-06T14:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-05-06T15:30:00+02:00"
-    },
-    "created": "2019-03-24T10:17:30.000Z",
-    "updated": "2019-03-24T10:17:42.959Z"
-  },
-  {
-    "image_path": null,
     "alt": "Finanzausschuss",
     "title": "Finanzausschuss",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2019-04-23T07:24:45.000Z",
     "updated": "2019-04-23T07:24:45.464Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Schulfest 16:00 - 18:30 Uhr",
+    "title": "Schulfest 16:00 - 18:30 Uhr",
+    "excerpt": "Unterrichtsschluss um 12:40 Uhr",
+    "url": "https://www.google.com/calendar/event?eid=dGNsNTRrcnBuZGVsM2Yyb2c2M2txdDk4YmMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-05-24",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-05-25",
+      "date_time": null
+    },
+    "created": "2018-12-09T15:41:51.000Z",
+    "updated": "2019-01-05T13:58:28.113Z"
   }
 ]
