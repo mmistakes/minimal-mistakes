@@ -61,39 +61,42 @@ es: &DEFAULT_ES
   pagination_next            : "Siguiente"
   breadcrumb_home_label      : "Inicio"
   breadcrumb_separator       : "/"
-  menu_label                 :
-  search_label               :
-  toc_label                  : "Contenidos"
-  ext_link_label             : "Enlace"
+  menu_label                 : "Alternar menú"
+  search_label               : "Alternar búsqueda"
+  toc_label                  : "En esta página"
+  ext_link_label             : "Enlace directo"
   less_than                  : "menos de"
-  minute_read                : "minuto de lectura"
-  share_on_label             : "Compartir"
+  minute_read                : "minuto(s) de lectura"
+  share_on_label             : "Compartir en"
   meta_label                 :
   tags_label                 : "Etiquetas:"
   categories_label           : "Categorías:"
   date_label                 : "Actualizado:"
-  comments_label             : "Dejar un comentario"
-  comments_title             : "Comentar"
+  comments_label             : "Deja un comentario"
+  comments_title             : "Comentarios"
   more_label                 : "Ver más"
-  related_label              : "Podrías ver también"
+  related_label              : "Puede que también te interese"
   follow_label               : "Seguir:"
   feed_label                 : "Feed"
-  powered_by                 : "Powered by"
+  powered_by                 : "Funciona con"
   website_label              : "Sitio web"
-  email_label                : "Email"
+  email_label                : "Correo electrónico"
   recent_posts               : "Entradas recientes"
-  undefined_wpm              : "Parametro words_per_minute (Palabras por minuto) no definido en _config.yml"
-  comment_form_info          : "Su dirección de correo no será publicada. Se han resaltado los campos requeridos"
+  undefined_wpm              : "El parámetro words_per_minute (palabras por minuto) no está definido en _config.yml"
+  comment_form_info          : "Tu dirección de correo electrónico no se publicará. Los campos obligatorios están marcados"
   comment_form_comment_label : "Comentario"
-  comment_form_md_info       : "Markdown está soportado."
+  comment_form_md_info       : "Puedes utilizar Markdown"
   comment_form_name_label    : "Nombre"
-  comment_form_email_label   : "Dirección de E-mail"
+  comment_form_email_label   : "Dirección de correo electrónico"
   comment_form_website_label : "Sitio web (opcional)"
-  comment_btn_submit         : "Enviar Commentario"
+  comment_btn_submit         : "Enviar comentario"
   comment_btn_submitted      : "Enviado"
-  comment_success_msg        : "Gracias por su comentario!, Este se visualizará en el sitio una vez haya sido aprobado"
-  comment_error_msg          : "Lo sentimos, ha ocurrido un error al enviar su comentario. Por favor asegurese que todos los campos han sido diligenciados e intente de nuevo"
+  comment_success_msg        : "¡Gracias por tu comentario! Se publicará una vez sea aprobado."
+  comment_error_msg          : "Ha ocurrido un error al enviar el comentario. Asegúrate de completar todos los campos obligatorios e inténtalo de nuevo."
   loading_label              : "Cargando..."
+  search_placeholder_text    : "Términos de búsqueda..."
+  results_found              : "resultado(s) encontrado(s)"
+  back_to_top                : "Volver arriba"
 es-ES:
   <<: *DEFAULT_ES
 es-CO:
@@ -1395,7 +1398,7 @@ hi: &DEFAULT_HI
   back_to_top                : "शीर्ष पर वापस"
 hi-IN:
   <<: *DEFAULT_HI
-  
+
 # Another locale
 # --------------
 #
