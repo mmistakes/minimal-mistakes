@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Finanzausschuss",
-    "title": "Finanzausschuss",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=amRtNmxpMDY1azA2bjdrM3VuYXRoZjg4ZjQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-05-07T14:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-05-07T15:00:00+02:00"
-    },
-    "created": "2019-04-26T06:59:01.000Z",
-    "updated": "2019-04-26T06:59:14.725Z"
-  },
-  {
-    "image_path": null,
     "alt": "Gartenarbeitsschule 5a",
     "title": "Gartenarbeitsschule 5a",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2018-12-09T15:41:51.000Z",
     "updated": "2019-01-05T13:58:28.113Z"
+  },
+  {
+    "image_path": null,
+    "alt": "3. FaKo Deutsch ",
+    "title": "3. FaKo Deutsch ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NjFoZTk2cWtmYXMyOGxrNm83YjFwMmNqNzEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-05-28T14:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-05-28T15:00:00+02:00"
+    },
+    "created": "2019-03-24T10:16:56.000Z",
+    "updated": "2019-03-24T10:16:56.886Z"
   }
 ]
