@@ -5,9 +5,15 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2019-05-03T23:05:18-04:00
+last_modified_at: 2019-05-07T14:54:29-04:00
 toc: false
 ---
+
+## Unreleased
+
+### Bug Fixes
+
+- Fix permalink stacking order and click-able area in archives.
 
 ## [4.16.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.16.3)
 

@@ -1,3 +1,9 @@
+## Unreleased
+
+### Bug Fixes
+
+- Fix permalink stacking order and click-able area in archives.
+
 ## [4.16.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.16.3)
 
 ### Enhancements
