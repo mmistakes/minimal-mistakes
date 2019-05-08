@@ -1,0 +1,25 @@
+---
+layout: null
+permalink: /feed.json
+---
+
+{
+"title": "{{ site.title}}",
+"description": "{{ site.description }}",
+"url": "{{ site.url }}",
+"date": "{{ site.time | date_to_rfc822 }}",
+"posts": [
+{% for post in site.posts %}
+{% if post.hide_from_feed != true %}
+{% if forloop.first != true %},{% endif %}
+{
+"title": "{{ post.title }}",
+"url": "{{ post.url | prepend: site.baseurl }}",
+"date": "{{ post.date | date_to_rfc822 }}",
+"tags": {{ post.tags | jsonify }},
+"categories": {{ post.categories | jsonify }}
+}
+{% endif %}
+{% endfor %}
+]
+}
