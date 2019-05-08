@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Gartenarbeitsschule 5a",
-    "title": "Gartenarbeitsschule 5a",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MDh1MW1mNzBrY202ZGduaGQzdGhsMHB0NjUgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-05-08T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-05-08T13:45:00+02:00"
-    },
-    "created": "2019-02-18T11:43:43.000Z",
-    "updated": "2019-02-18T11:43:43.835Z"
-  },
-  {
-    "image_path": null,
     "alt": "Radfahrprüfung 4a",
     "title": "Radfahrprüfung 4a",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2019-03-24T10:16:56.000Z",
     "updated": "2019-03-24T10:16:56.886Z"
+  },
+  {
+    "image_path": null,
+    "alt": "3. Schulkonferenz ",
+    "title": "3. Schulkonferenz ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=N2lwbGM5dGZiMzFrZDBwaW1qbW0zcmJwYWogaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-05-28T15:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-05-28T17:00:00+02:00"
+    },
+    "created": "2019-03-24T10:16:27.000Z",
+    "updated": "2019-03-24T10:16:27.429Z"
   }
 ]
