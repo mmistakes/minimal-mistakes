@@ -10,7 +10,7 @@ anchors:
   email: &email "giulio@troccoli.it"
   website: &website "troccoli.it"
   github: &github "troccoli"
-  twitter: &twitter "giuliotroccoli"
+  twitter: &twitter "gta_of_london"
   facebook: &facebook "giulio.troccoli.allard"
   linkedin: &linkedin "giulio-troccoli"
   stackoverflow: &stackoverflow "1366144/giuliot"
