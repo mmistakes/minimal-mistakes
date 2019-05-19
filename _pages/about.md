@@ -1,7 +1,10 @@
 ---
-layout: page
+layout: archive
 author_profile: true
-permalink: /about/
+permalink: /projects/
 header:
-  image: /images/channelside.jpeg
+  image: /images/sunshine-skyway-bridge.jpeg
 ---
+
+# Who Am I?
+
