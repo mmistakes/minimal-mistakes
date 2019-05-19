@@ -6,7 +6,9 @@ header:
   image: /images/sunshine-skyway-bridge.jpeg
 ---
 
-<table class="table">
+{% include posts.html %}
+
+<!-- <table class="table">
   <thead class="thead-dark">
     <tr>
       <th scope="col">Summary</th>
@@ -27,4 +29,4 @@ header:
       <td>the Bird</td>
     </tr>
   </tbody>
-</table>
+</table> -->
