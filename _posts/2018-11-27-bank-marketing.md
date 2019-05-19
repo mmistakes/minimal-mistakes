@@ -1,8 +1,9 @@
 ---
-layout: single
 title:  "Bank Marketing"
+excerpt: "Exploratory data analysis for Portuguese bank marketing campaign."
 date:   2018-11-27
-tags: eda visualization
+tags: [eda visualization]
+mathjax: "true"
 ---
 
 ## [GitHub](https://github.com/mkm29/DataScience/blob/master/thinkful/unit/1/capstone/Bank%20Marketing.ipynb)
@@ -45,6 +46,18 @@ So we definitely want to minimize how many customers we call who work in the blu
 
 
 <img src="{{site.baseurl}}/images/posts/1-eda-joint-kde-plot.png">
+
+
+### Feasibility
+In order to determine if this experiment is actually feasible, we need to compute the minimum sample size that we need for each group. A few assumption we made here:
+
+The groups will be the same size
+An even split will result in 2 groups that have equal variance in the output variable being measured (purchase)
+Sales associates work 6 hours a day, 5 days a week (or 108,000 seconds a week). We can find the value of N (sample size), as:
+
+$$ N = \frac{t_{statistic=-1.652}}{0.05}^{2} \cdot 2 \cdot var $$
+
+So N needs to be at least 218.25, and since we cannot have 0.25 of a call we round up to get 219. Therefore group A and group B both need to make 219 calls, or 56564.42 seconds. Since there is a total of 108,000 seconds in a work week (if working 6 hours a day, 5 days a week), this experiment will require at least 75 calls per group, for a total of 150 calls.
 
 
 ### Conclusion
