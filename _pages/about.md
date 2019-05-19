@@ -1,7 +1,7 @@
 ---
-layout: archive
+layout: single
 author_profile: true
-permalink: /projects/
+permalink: /about/
 header:
   image: /images/sunshine-skyway-bridge.jpeg
 ---
