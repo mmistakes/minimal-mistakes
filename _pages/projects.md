@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: default
 author_profile: true
 permalink: /projects/
 header:
