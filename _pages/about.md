@@ -1,13 +1,7 @@
 ---
-title: "Who Am I?"
+layout: page
+author_profile: true
 permalink: /about/
-excerpt: "Brief overview of who I am and what I do."
 header:
-	image: /images/channelside.jpeg
+  image: /images/channelside.jpeg
 ---
-
-# Skills
-
-
-
-# Experience
