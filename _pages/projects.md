@@ -16,7 +16,7 @@ header:
   <tbody>
     <tr>
       <td>Exploratory Data Analysis, forecasting for bank marketing campaign.</td>
-      <td><a href="">GitHub</a></td>
+      <td><a href="#"><i class='fa-fw fa-github'></i></a></td>
     </tr>
     <tr>
       <td>Jacob</td>
