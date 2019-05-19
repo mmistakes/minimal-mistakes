@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Bank Marketing"
 date:   2018-11-27
 tags: eda visualization
