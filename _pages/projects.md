@@ -6,7 +6,7 @@ header:
   image: /images/sunshine-skyway-bridge.jpeg
 ---
 
-{% include posts.html %}
+{{ posts }}
 
 <!-- <table class="table">
   <thead class="thead-dark">
