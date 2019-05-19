@@ -107,7 +107,7 @@ analytics:
 # Site Author
 author:
   name             : "Mitch Murphy"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "https://avatars0.githubusercontent.com/u/146080?s=400&u=d0a6fc6b96e903489e7e6a76813e68dfa7a30533&v=4" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Improving humanity by teaching machines how to learn."
   location         : "Tampa, FL"
   email            :
