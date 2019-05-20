@@ -4,7 +4,8 @@ title: About
 permalink: /about/
 author_profile: true
 header:
-  image: /images/banff.jpeg
+  overlay_image: /images/riverwalk.jpeg
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
 ---
 
 I was born in Toronto, spent the first 5 years of my life outside of Halifax and then my family
