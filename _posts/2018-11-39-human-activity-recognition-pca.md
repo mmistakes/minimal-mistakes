@@ -3,6 +3,7 @@ title:  "Human Activity Recognition Data Visualization and Dimensionality Reduct
 date:   2018-11-30
 excerpt: "Visualizing high dimensional data with the help of PCA"
 tags: [pca visualization dimensionality-reduction]
+pandas_profile: "true"
 header:
   overlay_image: /images/running-stretching.jpeg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
@@ -13,6 +14,15 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 This is 160-dimensional data, so my objectives are to reduce this dimensionality (through PCA) and to visualize the data. Hopefully this provides us greater insight into the problem!
 
 ## Exploratory data Analysis
+
+There are 160 different features, a lot of which can be removed for analysis. We can easily perform this reduction with the following regular expression:
+``` python
+regex = "^(X|user_name|raw_timestamp_part_1|raw_timestamp_part_2|cvtd_timestamp|new_window|num_window|kurtosis|skewness|min|max|stddev|total|var|avg|ampl)"
+```
+
+## Automated Profiling
+
+So the majority of the observations are missing, zero are too highly correlated to include in analysis. The correlation problem can be overcome by transforming those correlated variables using PCA (either dimensionality-reduction or just elimate correlation). Those variables that have high cardinality need to be standardized or normalized, therefore, it would probably be preferrable to scale all input features, then PCA them. In my personal opinion, zero values in features that are represented in 3-dimensional space is not a big problem, as zero is a feasible coordinate.
 
 As suspected, the majority of variable observations are missing with only about 2% of all variables being complete. As stated above, there are over 100 computed metrics (like standard deviation), so we can remove these with a regular expression. This reduces the features from 160 down to 48
 
