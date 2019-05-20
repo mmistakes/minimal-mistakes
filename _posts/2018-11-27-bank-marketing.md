@@ -4,6 +4,7 @@ excerpt: "Exploratory data analysis for Portuguese bank marketing campaign."
 date:   2018-11-27
 tags: [eda visualization]
 mathjax: "true"
+pandas_profile: "true"
 header:
   overlay_image: /images/bank.jpeg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
@@ -39,6 +40,12 @@ The standard deviation of the social-economic variables are high (relative to it
 
 
 <img src="{{site.baseurl}}/images/posts/1-eda-bar-plots.png">
+
+### Automated Profiling
+
+Gathering descriptive statistics can be a tedious process. Gladly, there are libraries that exist that perform all of the data crunching for you. They output a very clear profile of your data. pandas-profiling is one of them. That library offers out-of-the-box statistical profiling of your dataset. Since the dataset we are using is tidy and standardized, we can use the library right away on our dataset.
+
+{% include bank-profile.html %}
 
 
 ### Key Performance Indicator
