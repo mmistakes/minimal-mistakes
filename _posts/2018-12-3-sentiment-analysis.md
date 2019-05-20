@@ -1,8 +1,11 @@
 ---
-title:  "Sentiment Analysis"
+title:  "Sentiment Analysis of Amazon Reviews"
 date:   2018-12-3
-excerpt: "Predict review ratings from Amazon, IMDB reviews"
+excerpt: "Using Amazon reviews to predict IMDB, Yelp reviews"
 tags: [nlp sentiment-analysis]
+header:
+  overlay_image: /images/amazon-alexa.jpeg
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
 ---
 
 For this project we are going to take a overly simplistic approach to predicting sentiment analysis of online reviews: simply count the words associated with positive and negative reviews as well as number of all capitalized words and number of exclamation marks. I suspect that positive reviews contain more exclamation marks while negative reviews tend to have more all capitalized words. In reality, 1 in every 12.8 positive reviews contain an exclamation mark, while only 1 in every 27 negative reviews contain an exclamation mark. This feature could provide good explanatory power so lets include it!

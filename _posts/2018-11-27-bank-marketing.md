@@ -4,6 +4,9 @@ excerpt: "Exploratory data analysis for Portuguese bank marketing campaign."
 date:   2018-11-27
 tags: [eda visualization]
 mathjax: "true"
+header:
+  overlay_image: /images/bank.jpeg
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
 ---
 
 ## [GitHub](https://github.com/mkm29/DataScience/blob/master/thinkful/unit/1/capstone/Bank%20Marketing.ipynb)
