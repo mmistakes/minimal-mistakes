@@ -2,6 +2,7 @@
 
 ### Bug Fixes
 
+- Fix pound symbol not displaying properly for post categories and tags. [#2156](https://github.com/mmistakes/minimal-mistakes/issues/2156)
 - Fix permalink stacking order and click-able area in archives.
 
 ## [4.16.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.16.3)
