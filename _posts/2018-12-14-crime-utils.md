@@ -1,7 +1,7 @@
 ---
 title: "Crime Utilities Script"
 date: 2018-12-14
-excerpt: "A large number of features can cause for regression models, so we will use PLS Regression on the Florida crime )2017) dataset"
+excerpt: "This script contains a variety of functions for reading (crime) data, cleaning it, transforming certain features (log, cube root and binarize), as well as applying the Box cox power transform to our target variable, splitting the data, building and evaluating linear models including Partial Least Squares (PLS) regression."
 tags: [clean, transformation, regression, plsr]
 header:
   overlay_image: /images/fresh-figs.jpeg
