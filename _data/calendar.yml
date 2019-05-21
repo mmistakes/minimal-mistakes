@@ -1,74 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "A2 GAS Hakenfelde",
-    "title": "A2 GAS Hakenfelde",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MGlkdnRzYmo4azNnMDYzaHJscTgydWhzOGYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-05-21T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-05-21T13:00:00+02:00"
-    },
-    "created": "2019-05-20T06:13:35.000Z",
-    "updated": "2019-05-20T06:13:35.698Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Radfahrprüfung 4a",
-    "title": "Radfahrprüfung 4a",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=N3RoNmp0NGF0Mjg0YWZkNmtyZmQza3R0MDkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-05-21T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-05-21T11:00:00+02:00"
-    },
-    "created": "2019-02-13T07:15:58.000Z",
-    "updated": "2019-03-21T08:30:36.429Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Radfahrpüfung",
-    "title": "Radfahrpüfung",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=N2RxamE0YmxvcWI0YzJyNnIyams2cHRpOGEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-05-21T10:15:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-05-21T11:15:00+02:00"
-    },
-    "created": "2019-02-13T07:16:49.000Z",
-    "updated": "2019-02-13T07:18:03.537Z"
-  },
-  {
-    "image_path": null,
-    "alt": "3. Gesamtkonferenz",
-    "title": "3. Gesamtkonferenz",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=cmRzdjE3aHNocW1lcTMxMDNncnBpaW42anMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-05-21T16:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-05-21T18:00:00+02:00"
-    },
-    "created": "2019-04-23T07:24:45.000Z",
-    "updated": "2019-04-23T07:24:45.464Z"
-  },
-  {
-    "image_path": null,
     "alt": "Schulfest 16:00 - 19:00 Uhr",
     "title": "Schulfest 16:00 - 19:00 Uhr",
     "excerpt": "Unterrichtsschluss um 12:40 Uhr",
@@ -100,5 +32,73 @@
     },
     "created": "2019-03-24T10:16:56.000Z",
     "updated": "2019-03-24T10:16:56.886Z"
+  },
+  {
+    "image_path": null,
+    "alt": "3. Schulkonferenz ",
+    "title": "3. Schulkonferenz ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=N2lwbGM5dGZiMzFrZDBwaW1qbW0zcmJwYWogaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-05-28T15:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-05-28T17:00:00+02:00"
+    },
+    "created": "2019-03-24T10:16:27.000Z",
+    "updated": "2019-03-24T10:16:27.429Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Hort geschlossen",
+    "title": "Hort geschlossen",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=M2NjZzcxN2F2MDJhaDhnNDZpcXNsYzFxZjcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-05-31",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-06-01",
+      "date_time": null
+    },
+    "created": "2018-08-14T14:23:01.000Z",
+    "updated": "2018-08-14T14:23:01.854Z"
+  },
+  {
+    "image_path": null,
+    "alt": "unterrichtsfrei",
+    "title": "unterrichtsfrei",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=aG44MWwzdTYwMGtzZ2ZhcmxmZ3J0MnE3Zm8gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-05-31",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-06-01",
+      "date_time": null
+    },
+    "created": "2019-03-10T16:10:12.000Z",
+    "updated": "2019-03-10T16:10:12.159Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Bundesjugendspiele Klassen 3 - 6",
+    "title": "Bundesjugendspiele Klassen 3 - 6",
+    "excerpt": "Die Bundesjugendspiele finden auf dem Schulgelände statt:\nSportsachen !!!\nWir freuen uns über viele Eltern, die helfen wollen",
+    "url": "https://www.google.com/calendar/event?eid=NGRqM3ZsOTNydmZwM3VrYWw1Y3RqczY5MjIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-06-03T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-06-03T13:00:00+02:00"
+    },
+    "created": "2019-03-24T10:24:39.000Z",
+    "updated": "2019-03-24T10:26:44.356Z"
   }
 ]
