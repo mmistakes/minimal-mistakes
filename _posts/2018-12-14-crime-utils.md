@@ -2,7 +2,7 @@
 title: "Crime Utilities Script"
 date: 2018-12-14
 excerpt: "A large number of features can cause for regression models, so we will use PLS Regression on the Florida crime )2017) dataset"
-tags: [clean transformation regression plsr]
+tags: [clean, transformation, regression, plsr]
 header:
   overlay_image: /images/fresh-figs.jpeg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background

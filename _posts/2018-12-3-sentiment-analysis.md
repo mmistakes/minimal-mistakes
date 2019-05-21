@@ -2,7 +2,7 @@
 title:  "Sentiment Analysis of Amazon Reviews"
 date:   2018-12-3
 excerpt: "Using Amazon reviews to predict IMDB, Yelp reviews"
-tags: [nlp sentiment-analysis]
+tags: [nlp, sentiment-analysis]
 header:
   overlay_image: /images/amazon-alexa.jpeg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background

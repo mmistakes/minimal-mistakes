@@ -2,7 +2,7 @@
 title:  "Human Activity Recognition Data Visualization and Dimensionality Reduction"
 date:   2018-11-30
 excerpt: "Visualizing high dimensional data with the help of PCA"
-tags: [pca visualization dimensionality-reduction]
+tags: [pca, visualization, dimensionality-reduction]
 pandas_profile: "true"
 header:
   overlay_image: /images/running-stretching.jpeg

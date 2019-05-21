@@ -2,7 +2,7 @@
 title: "Sentiment analysis with POS Tagging and VADER"
 date: 2018-12-4
 excerpt: "Sentiment analysis of Amazon reviews, with part-of-speech tagging and VADER. "
-tags: [nlp sentiment-analysis pos vader]
+tags: [nlp, sentiment-analysis, part-of-speech, vader]
 header:
   overlay_image: /images/text-eggs.jpeg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background

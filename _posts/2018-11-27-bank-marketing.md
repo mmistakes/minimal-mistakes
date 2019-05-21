@@ -2,7 +2,7 @@
 title:  "Bank Marketing"
 excerpt: "Exploratory data analysis for Portuguese bank marketing campaign."
 date:   2018-11-27
-tags: [eda visualization]
+tags: [eda, visualization]
 mathjax: "true"
 pandas_profile: "true"
 header:
