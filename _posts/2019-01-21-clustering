@@ -4,7 +4,7 @@ date: 2019-01-21
 excerpt: "Can we cluster runners of the 2014 Boston Marathon based on how they finished? Here I use the mean shift, spectral and affinity propogation clustering techniques."
 tags: [clustering, visualization]
 header:
-  overlay_image: /images/affinity.jpeg
+  overlay_image: /images/superheroes.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
 ---
 

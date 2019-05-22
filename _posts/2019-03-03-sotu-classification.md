@@ -1,7 +1,7 @@
 ---
 title: "Ronald Raegan or Bill Clinton? Classification using SOTU Addesses"
 date: 2019-03-03
-excerpt: "Here I take the State Of the Union addresses from Ronald Reagan (1981-1988) and Bill Clinton (1993-2000), split into sentences, tokenize (lemmatize) each sentence and use bag-of-words, tf-idf and doc2vec representations to classify the text."
+excerpt: "Here I take the State Of the Union addresses from Ronald Reagan (1981-1988) and Bill Clinton (1993-2000), split them into sentences, tokenize (lemmatize) each sentence and use bag-of-words, tf-idf and doc2vec representations to classify the text."
 tags: [nlp, bag-of-words, tfidf, doc2vec, deep-learning, classification]
 header:
   overlay_image: /images/american-flag-family.jpeg
