@@ -250,35 +250,36 @@ pt-BR:
   ext_link_label             : "Link direto"
   less_than                  : "menos que"
   minute_read                : "minuto(s) de leitura"
-  share_on_label             : "Compartilhe: "
+  share_on_label             : "Compartilhe"
   meta_label                 :
   tags_label                 : "Tags:"
   categories_label           : "Categorias:"
   date_label                 : "Atualizado em:"
   comments_label             : "Deixe um comentário"
   comments_title             : "Comentários"
-  more_label                 : "Aprenda mais"
+  more_label                 : "Saiba mais"
   related_label              : "Talvez você também goste"
   follow_label               : "Acompanhe no"
   feed_label                 : "Feed"
   powered_by                 : "Desenvolvido com"
   website_label              : "Site"
-  email_label                : "Email"
-  recent_posts               : "Postagens recentes"
-  undefined_wpm              : "Parâmetro indefinido em words_per_minute no _config.yml"
-  comment_form_info          : "Seu email não será publicado. Os campos obrigatórios estão marcados"
+  email_label                : "E-mail"
+  recent_posts               : "Publicações recentes"
+  undefined_wpm              : "Parâmetro words_per_minute indefinido no _config.yml"
+  comment_form_info          : "Seu e-mail não será publicado. Os campos obrigatórios estão marcados"
   comment_form_comment_label : "Comentário"
-  comment_form_md_info       : "Markdown é suportado."
+  comment_form_md_info       : "Você pode usar Markdown."
   comment_form_name_label    : "Nome"
-  comment_form_email_label   : "Email"
+  comment_form_email_label   : "E-mail"
   comment_form_website_label : "Site (opcional)"
-  comment_btn_submit         : "Enviar Comentário"
+  comment_btn_submit         : "Enviar comentário"
   comment_btn_submitted      : "Enviado"
   comment_success_msg        : "Obrigado pelo seu comentário! Ele aparecerá no site assim que for aprovado."
-  comment_error_msg          : "Desculpe, ocorreu um erro no envio. Por favor verifique se todos os campos obrigatórios foram preenchidos e tente novamente."
+  comment_error_msg          : "Desculpe, ocorreu um erro no envio. Verifique se todos os campos obrigatórios foram preenchidos e tente novamente."
   loading_label              : "Carregando..."
-  back_to_top                : "Voltar para o topo"
   search_placeholder_text    : "Pesquisar..."
+  results_found              : "Resultado(s) encontrado(s)"
+  back_to_top                : "Voltar para o topo"
 
 # Italian
 # -------
@@ -1395,7 +1396,7 @@ hi: &DEFAULT_HI
   back_to_top                : "शीर्ष पर वापस"
 hi-IN:
   <<: *DEFAULT_HI
-  
+
 # Another locale
 # --------------
 #
