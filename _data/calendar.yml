@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Schulfest 16:00 - 19:00 Uhr",
-    "title": "Schulfest 16:00 - 19:00 Uhr",
-    "excerpt": "Unterrichtsschluss um 12:40 Uhr",
-    "url": "https://www.google.com/calendar/event?eid=dGNsNTRrcnBuZGVsM2Yyb2c2M2txdDk4YmMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-05-24",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-05-25",
-      "date_time": null
-    },
-    "created": "2018-12-09T15:41:51.000Z",
-    "updated": "2019-05-17T03:28:09.614Z"
-  },
-  {
-    "image_path": null,
     "alt": "3. FaKo Deutsch ",
     "title": "3. FaKo Deutsch ",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2019-03-24T10:24:39.000Z",
     "updated": "2019-03-24T10:26:44.356Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Elternehung im Bürgersaal",
+    "title": "Elternehung im Bürgersaal",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MWhhMmxldjBsZmZvNWRkcTNoNzZtMTVzb3QgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-06-06T10:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-06-06T14:00:00+02:00"
+    },
+    "created": "2019-02-11T12:08:21.000Z",
+    "updated": "2019-02-11T12:08:21.143Z"
   }
 ]
