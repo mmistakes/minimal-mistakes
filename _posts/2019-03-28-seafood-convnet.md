@@ -1,5 +1,5 @@
 ---
-title: "Hot dog or not hot dog? Deep Learning Solution for Image Classification"
+title: "Deep Learning (convnet) Solution for Image Classification: Hot Dog or Not Hot Dog?"
 date: 2019-03-28
 excerpt: "Here I address the simple (or so it seems) question: given an image does it contain a hot dog? The main problem is the lack of training data (images), we augment our data, and then use a 2d convolutional neural network to make our predictions; the optimization algorithm and related hyper-parameters are critical so I discuss those as well."
 tags: [cnn, data-augmentation, opencv, deep-learning, classification]
