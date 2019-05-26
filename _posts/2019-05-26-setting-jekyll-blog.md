@@ -2,6 +2,7 @@
 title: "개인 로컬환경에서 GitHub Blog With jekyll 세팅하기"
 date: 2019-05-26
 categories: setting
+comments: true
 ---
 
 
