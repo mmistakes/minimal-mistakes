@@ -8,6 +8,7 @@
 
 ### Bug Fixes
 
+- Fix arithmetic in `_form.scss` partial. [#2169](https://github.com/mmistakes/minimal-mistakes/pull/2169)
 - Fix pound symbol not displaying properly for post categories and tags. [#2156](https://github.com/mmistakes/minimal-mistakes/issues/2156)
 - Fix permalink stacking order and click-able area in archives.
 

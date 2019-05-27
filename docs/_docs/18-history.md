@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2019-05-26T20:35:57-04:00
+last_modified_at: 2019-05-26T20:37:12-04:00
 toc: false
 ---
 
@@ -19,6 +19,7 @@ toc: false
 
 ### Bug Fixes
 
+- Fix arithmetic in `_form.scss` partial. [#2169](https://github.com/mmistakes/minimal-mistakes/pull/2169)
 - Fix pound symbol not displaying properly for post categories and tags. [#2156](https://github.com/mmistakes/minimal-mistakes/issues/2156)
 - Fix permalink stacking order and click-able area in archives.
 
