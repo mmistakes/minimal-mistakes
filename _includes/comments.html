@@ -6,6 +6,9 @@
       <section id="discourse-comments"></section>
     {% when "disqus" %}
       <h4 class="page__comments-title">{{ comments_label }}</h4>
+      {% if site.comments.disqus.ondemand %}
+        <button type="submit" id="comment-btn-show" tabindex="1" class="btn btn--large btn--primary align-center" style="margin-top: 1em;">{{ site.data.ui-text[site.locale].comment_btn_show | default: "Show comments" }}</button>
+      {% endif %}
       <section id="disqus_thread"></section>
     {% when "facebook" %}
       <h4 class="page__comments-title">{{ comments_label }}</h4>
