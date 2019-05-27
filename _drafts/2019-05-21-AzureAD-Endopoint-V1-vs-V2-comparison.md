@@ -1,75 +1,126 @@
 ---
 layout: post
-title: Engineering Caledos Runner - Code Reuse Metrics
+title: Azure AD Endpoint V1 vs V2
 date: 2017-07-27 17:07
 author: nicold
 comments: true
-categories: [.NET, android, caledos, caledos runner, code metrics, code reuse, multiplatform, mvvmcross, Uncategorized, Universal Windows Platform, UWP, xamarin]
+categories: [Azure, AzureAD, open-id-connect, oauth, clientlibraries, android, ios, modern authentication]
 ---
-<span>This post is the first of a series with the objective to share the experience on multiplatform development I've collected working on <a href="https://api.caledos.com">Caledos Runner</a>'s: a medium-sized fitness app currently publicly available on the <a href="https://play.google.com/store/apps/details?id=com.caledoslab.runner">Google Play Store</a>. The app is part of a side project on which I and <a href="https://it.linkedin.com/in/domenico-dell-olio-66257417">Domenico</a> have been working for some time, and that it is proving to be a great gym for the study of multiplatform development in general and <a href="https://www.xamarin.com/">Xamarin </a>in particular.</span>
-<h1>Background</h1>
-<a href="https://www.microsoft.com/en-us/store/p/caledos-runner/9wzdncrfhzwl">Caledos Runner is a fitness tracking application initially developed for Windows Phone (Silverlight)</a>. With over 1 million downloads, it has an Azure-based backend, and uses many of the device's capabilities, such as motion sensors, gyroscope, Bluetooth devices, and GPS, in a very pushy way. Caledos Runner for Android is developed using Xamarin, and it is born as a refactoring and evolution of the code developed for Windows, with the focus on portability and reuse.
 
-<a href="https://msdnshared.blob.core.windows.net/media/2017/07/caledos-runner-device.jpg"><img width="1500" height="1500" class="aligncenter wp-image-975 size-full" alt="" src="https://msdnshared.blob.core.windows.net/media/2017/07/caledos-runner-device.jpg" /></a>
-<h1>Code Reuse</h1>
-Xamarin's distinctive element is the code reuse: in this post I will try to evaluate the amount of code reused between the different platforms. Although we have released only the <a href="https://play.google.com/store/apps/details?id=com.caledoslab.runner">android version</a>, the code refactoring started on Silverlight version, had the goal to maintain the broadest common code base, despite all the interactions with various platform components (Bluetooth, device sensors, GPS etc. ). As "consumer" solution, one of the main features was to have <strong>total control</strong> over the UI.
+Objective of this memo is to summarize in one single page the main differences between Azure AD Endpoint V1 vs V2, with focus on client libraries and supportability.
 
-With these constraints, we have decided to use a native UI (so no <a href="https://www.xamarin.com/forms">Xamarin Forms</a>), <a href="https://en.wikipedia.org/wiki/Model–view–viewmodel">Model-View-ViewModel</a> as an architectural pattern, and <a href="https://www.mvvmcross.com/">MvvmCross</a> as a reference library, as it seemed to be the one that best interacts with a native UI. On Android it also allows the <a href="https://www.mvvmcross.com/documentation/fundamentals/data-binding">binding from XML</a>, in a way very similar to the XAML binding we have used for years in WPF and Windows Phone.
+Date of comparison: **27 May 2019** 
 
-Having said that, in order to "force us" to the order, we have separated in different projects the components:
-<ul>
- 	<li>Model</li>
- 	<li>ViewModel</li>
- 	<li>View (platform specific)</li>
-</ul>
-for all "non view" platform specific components (sensors, text2speech and so on...), we have used the Inversion of Control (IoC) Pattern and in particular the <a href="https://www.mvvmcross.com/documentation/fundamentals/inversion-of-control-ioc">MvvmCross specific approach</a>. So we have declared in a common PCL all the interfaces and implemented them in a platform specific project.
+In brief:
 
-For all Model components, instead, we have used the <a href="https://msdn.microsoft.com/en-us/library/ff650316.aspx">singleton pattern</a>.
+* V1: **Azure Active Directory Endpoints**: they are supported and there is no ETA for decommissioning
+o	https://login.microsoftonline.com/common/oauth2/authorize 
+* V2: **Microsoft Identity Platform Endpoints**: are supported in production even if not still feature parity and completed. (see notes)
+o	https://login.microsoftonline.com/common/oauth2/v2.0/authorize 
 
-[caption id="attachment_885" align="aligncenter" width="667"]<a href="https://msdnshared.blob.core.windows.net/media/2017/07/caledos-runner-solution-01.png"><img width="667" height="270" class="wp-image-885 size-full" alt="Caledos Runner Solution with platform specific code " src="https://msdnshared.blob.core.windows.net/media/2017/07/caledos-runner-solution-01.png" /></a> Caledos Runner Solution with platform specific code[/caption]
 
-&nbsp;
 
-Caledos Runner has also another characteristic: it is to have a backend developed in .Net, <a href="https://api.caledos.com">hosted on Azure</a>. We have quickly realized that the most logic thing to do was to share more code possible also with the cloud. Infact there are many functions that are used by both devices and cloud, so we have also defined a portion of Model and libraries, strictly PCL, in common with the cloud.
 
-[caption id="attachment_895" align="aligncenter" width="667"]<a href="https://msdnshared.blob.core.windows.net/media/2017/07/caledos-runner-solution-02.png"><img width="667" height="270" class="wp-image-895 size-full" alt="Caledos Runner solution with PCL shared with cloud" src="https://msdnshared.blob.core.windows.net/media/2017/07/caledos-runner-solution-02.png" /></a> Caledos Runner solution with PCL shared with cloud[/caption]
+|  | V1 | V2 | Notes/References
+|----------|----------|----------|----------|
+| Who can sign in | Work<br/>School Account<br/>Guests | Work<br/>School Account</br>Guests</br>Personal (hotmail.com, outlook.com…) | https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison#who-can-sign-in 
+|Incremental and dynamic consent | No | Yes | With the Microsoft identity platform endpoint, you can ignore the static permissions defined in the app registration information in the Azure portal and request permissions incrementally<br/><br/>https://docs.microsoft.com/en-us/azure/active-directory/develop/v1-permissions-and-consent#types-of-consent 
+|App can behave as|	Resource	|Scope (1 Resource -> n Scopes)|https://blogs.msdn.microsoft.com/gianlucb/2017/12/05/azure-ad-scope-based-authorization/ 
+|Well known scopes	|No	|Yes<br/><br/>Offline Access<br/>OpenID,<br/>Profile and Email|https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison#openid-profile-and-email
+|Supported by Microsoft	|Yes	|Yes (*) | (*) The Microsoft identity platform endpoint (V2) doesn't support all Azure AD scenarios and features.<br/><br/>To determine if you should use the Microsoft identity platform endpoint see limitations:<br/><br/> https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison#limitations
+|Protocols supported |OpenID Connect<br/>OAuth<br/>SAML<br/>WS-Federation |OpenID Connect<br/>OAuth
+|Recommended Client Library|ADAL	|MSAL
+|Platform supported (by supported client libraries)	|.NET, JavaScript, iOS, Android, Java, node.js and Python	|.NET, JavaScript, iOS, and Android, node.js
+|Limitations on V2		| |Yes<br/><br/>https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison#limitations<br/><br/>Restrictions on app registrations<br/>Restrictions on redirect URLs<br/>Protocol changes<br/><br/>Restrictions on libraries and SDKs (see below)
 
-Initially, the refactoring started in parallel on PCL components, Android specific views and the corresponding UWP. With Microsoft's slowdown on Windows Mobile platform, we also have slowdown our developments on the specific UI for that operating system (after all we already have a <a href="https://www.microsoft.com/en-us/store/p/caledos-runner/9wzdncrfhzwl">fully working silverlight version</a>), and we have focused our efforts on Android, using UWP as tester to verify how the core components work on more than one platform.
+# Microsoft Identity Platform (V2): Restriction on libraries and SDKs
 
-[caption id="attachment_896" align="aligncenter" width="500"]<a href="https://msdnshared.blob.core.windows.net/media/2017/07/caledos-runner-multiplatform.png"><img width="500" height="460" class="wp-image-896 size-full" alt="Caledos Runner silverlight, android, UWP (on mobile) UWP (on desktop)" src="https://msdnshared.blob.core.windows.net/media/2017/07/caledos-runner-multiplatform.png" /></a> Caledos Runner silverlight, android, UWP (on mobile) UWP (on desktop)[/caption]
-<h1>Some Metric</h1>
-Visual Studio, thanks to "calculate code metrics" tool, allows to analyze some <a href="https://docs.microsoft.com/en-us/visualstudio/code-quality/code-metrics-values">interesting software metrics</a>.
+https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison#restrictions-on-libraries-and-sdks 
 
-[caption id="attachment_897" align="aligncenter" width="923"]<a href="https://msdnshared.blob.core.windows.net/media/2017/07/caledos-runner-code-metrics.png"><img width="923" height="251" class="wp-image-897 size-full" alt="Visual Studio Code Metrics" src="https://msdnshared.blob.core.windows.net/media/2017/07/caledos-runner-code-metrics.png" /></a> Visual Studio Code Metrics[/caption]
+Currently, library support for the Microsoft identity platform endpoint is limited. If you want to use the Microsoft identity platform endpoint in a production application, you have these options: 
 
-With this tool I have measured the number of c# lines of code for each project, and in this way I could measure the actual amount of reusable (and reused!) code. Obviously the tool measures only the c# lines of code, not the xml and graphic part, which in this type of solution has a non-negligible dimension.
 
-&nbsp;
-<p style="text-align: center">total number of lines of code</p>
+| Application Type | Supportability levelo |
+|----------|----------|
+|Web Application	use the generally available server-side middleware to perform sign-in and token validation.|https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-overview#getting-started |
+|Desktop or Mobile Application|	use one of the preview Microsoft Authentication Libraries (MSAL). These libraries are in a production-supported preview, so it is safe to use them in production applications.<br/><br/>https://docs.microsoft.com/en-us/azure/active-directory/develop/reference-v2-libraries|
+Platforms not covered by Microsoft libraries|you can integrate with the Microsoft identity platform endpoint by directly sending and receiving protocol messages in your application code.<br/><br/>https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols|
+|3th party OpenID and OAuth Libraries|The Microsoft identity platform endpoint should be compatible with many open-source protocol libraries without changes.<br/><br/>These libraries are not supported by Microsoft<br/><br/>https://docs.microsoft.com/en-us/azure/active-directory/develop/reference-v2-libraries 
 
-<h1 style="text-align: center"><strong>10679</strong></h1>
-<p style="text-align: center">(July 2017 - Shared + Android)</p>
-&nbsp;
+## Microsoft-supported libraries for V2 Endpoints
+https://docs.microsoft.com/en-us/azure/active-directory/develop/reference-v2-libraries 
 
-The following chart shows the relationship between "PCL Shared" code lines vs. Android specific code lines. The solution has &gt;10K lines of code (July 2017)
-<p style="text-align: center"><a href="https://msdnshared.blob.core.windows.net/media/2017/07/caledos-runner-shared-vs-android-011.png"><img width="570" height="407" class="alignnone size-full wp-image-965" alt="" src="https://msdnshared.blob.core.windows.net/media/2017/07/caledos-runner-shared-vs-android-011.png" /></a></p>
+### Client
+Support disclaimer: “*Please note that during the preview we may make changes to the API, internal cache format, and other mechanisms of this library, which you will be required to take along with bug fixes or feature improvements. This may impact your application. For instance, a change to the cache format may impact your users, such as requiring them to sign in again. An API change may require you to update your code. When we provide the General Availability release we will require you to update to the General Availability version within six months, as applications written using a preview version of library may no longer work*”
 
-<h1 style="text-align: center"><strong>74%</strong></h1>
-<p style="text-align: center">of lines of code are not device specific</p>
-Moving to the "shared" part, the following chart shows the relationship between the code shared with the server, and the code in common only between the various clients (droid, UWP).
 
-<a href="https://msdnshared.blob.core.windows.net/media/2017/07/caledos-runner-server-vs-client-01.png"><img width="521" height="400" class="size-full wp-image-977 aligncenter" alt="" src="https://msdnshared.blob.core.windows.net/media/2017/07/caledos-runner-server-vs-client-01.png" /></a>
-<h1 style="text-align: center"><strong>42%</strong></h1>
-<p style="text-align: center">of lines of code shared with server</p>
-&nbsp;
+| Platform/Library|Status|
+|----------|----------|
+|JS/MSAL.js|Preview|https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-angularjs/README.md 
+|Angular JS (1.x)/MS Angular JS|Preview|https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-angularjs/README.md 
+|.NET/MSAL.NET|Preview|https://github.com/AzureAD/microsoft-authentication-library-for-dotnet 
+|iOS/MSAL objective_C|Preview|https://github.com/AzureAD/microsoft-authentication-library-for-objc 
+|Android/Android MSAL|Preview|https://github.com/AzureAD/microsoft-authentication-library-for-android 
 
-the following chart shows instead the relationship between Model, ViewModel, View and Native parts. View and Native are device specific, but while "View" is code related to UI interaction, "Native" is the code needed to interact with device specific components not related with the UI (text 2 speech, sensors, Bluetooth and so on...)
+### Server
 
-<a href="https://msdnshared.blob.core.windows.net/media/2017/07/caledos-runner-model-viewmodel-view.png"><img width="566" height="372" class="size-full wp-image-955 aligncenter" alt="" src="https://msdnshared.blob.core.windows.net/media/2017/07/caledos-runner-model-viewmodel-view.png" /></a>
-<h1 style="text-align: center"><strong>46% vs 28%</strong></h1>
-<p style="text-align: center">Model vs ViewModel lines of code</p>
-As mentioned above, since the UWP version is a prototype at the moment, at least in terms of the UI and device specific code, in this evaluation, the number of code lines for that operating system has not been taken into account. If Caledos Runner continues to have the interest received on Windows Phone||Mobile, even on Android, the next step will be to implement the iOS UI, then we will probably have still more interesting metrics...
+| Platform/Library | Status |
+|----------|----------|
+|.NET(+ core)<br/>ASP.NET Security<br/>IdentityModel Extensions for .NET|Stable/Supported | https://github.com/aspnet/AspNetCore <br/><br/>https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet 
+|Node/Azure AD Passport|Stable/Supported|https://github.com/AzureAD/passport-azure-ad 
 
-Okay, that's all for now, hope these info are valuable in evaluating the cost/benefit in using Xamarin on a real world consumer app!
+Brokered authentication and Single Sign On (SSO) are in roadmap:
 
-I'm going for a run:-)
+* **Android**: is work in progress, no ETA (https://github.com/AzureAD/microsoft-authentication-library-for-android/pull/550 )
+* **iOS**:  support for authentication broker released (v0.3.0 - Added Auth broker support - https://github.com/AzureAD/microsoft-authentication-library-for-objc/releases ) 
+* **.NET/Xamarin**: in roadmap “Some scenarios, involving conditional access related to a device being 
+enrolled require a broker (Microsoft Company portal or Microsoft Authenticator) to be installed on a device. MSAL.NET is not yet capable of interacting with these brokers, but this is on the backlog” https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/scenarios  
+“[Feature coming in future release of MSAL v3.x] … Brokered Authentication for iOS …” https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Leveraging-the-broker-on-iOS#brokered-authentication-for-ios
+
+## Microsoft Supported Library for V1 Endpoints (ADAL)
+
+https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries 
+
+### Client
+
+https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries#microsoft-supported-client-libraries 
+
+Brokered Authentication and single sign are supported:
+
+| Platform/Library | Status |
+|----------|----------|
+|.NET Client, Windows Store, UWP, Xamarin iOS and Android|Supported|https://github.com/AzureAD/azure-activedirectory-library-for-dotnet 
+|.NET Client, Windows Store, Windows Phone 8.1|Supported|https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/releases/tag/v2.28.4 
+|Javascript|Supported|https://github.com/AzureAD/azure-activedirectory-library-for-js 
+|iOS, macOS|Supported|https://github.com/AzureAD/azure-activedirectory-library-for-objc 
+|Android|Supported|https://github.com/AzureAD/azure-activedirectory-library-for-android 
+
+* https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-v1-enable-sso-ios 
+* https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-v1-enable-sso-android
+
+
+### Server
+
+https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries#microsoft-supported-server-libraries 
+
+
+| Platform/Library | Status |
+|----------|----------|
+|.NET/OWIN|Supported|https://github.com/aspnet/AspNetKatana/tree/dev/src/Microsoft.Owin.Security.ActiveDirectory<br/>https://github.com/aspnet/AspNetKatana/tree/dev/src/Microsoft.Owin.Security.OpenIdConnect<br/>https://github.com/aspnet/AspNetKatana/tree/dev/src/Microsoft.Owin.Security.WsFederation<br/>https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet 
+|Node.js/Azure AD Passport|Supported|https://github.com/AzureAD/passport-azure-ad 
+
+## Breaking Changes
+
+The authentication system alters and adds features on an ongoing basis to improve security and standards compliance. To stay up-to-date with the most recent developments, the following page provides information about the details: https://docs.microsoft.com/en-us/azure/active-directory/develop/reference-breaking-changes 
+
+
+
+
+
+
+
+
+
+
+
+

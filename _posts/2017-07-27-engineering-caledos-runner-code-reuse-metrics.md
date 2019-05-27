@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Engineering Caledos Runner - Code Reuse Metrics
 date: 2017-07-27 17:07
 author: nicold
