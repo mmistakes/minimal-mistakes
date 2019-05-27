@@ -5,12 +5,15 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2019-05-26T20:33:14-04:00
+last_modified_at: 2019-05-26T20:34:26-04:00
 toc: false
 ---
 
 ## Unreleased
 
+### Enhancements
+
+- Update Font Awesome to v5.8.2. [#2150](https://github.com/mmistakes/minimal-mistakes/pull/2150)
 - Add missing Spanish localized UI text strings. [#2149](https://github.com/mmistakes/minimal-mistakes/pull/2149)
 
 ### Bug Fixes
