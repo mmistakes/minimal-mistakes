@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+- Update Brazilian Portuguese localized UI text strings. [#2162](https://github.com/mmistakes/minimal-mistakes/pull/2162)
 - Update Font Awesome to v5.8.2. [#2150](https://github.com/mmistakes/minimal-mistakes/pull/2150)
 - Add missing Spanish localized UI text strings. [#2149](https://github.com/mmistakes/minimal-mistakes/pull/2149)
 
