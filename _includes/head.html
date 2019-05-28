@@ -13,6 +13,9 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+{% if jekyll.environment == 'production' and site.comments.provider and page.comments and site.comments.disqus.shortname and site.comments.disqus.ondemand %}
+<link rel="dns-prefetch" href="https://{{ site.comments.disqus.shortname }}.disqus.com">
+{% endif %}
 
 <!--[if IE ]>
   <style>
