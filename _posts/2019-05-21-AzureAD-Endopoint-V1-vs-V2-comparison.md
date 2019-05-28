@@ -1,6 +1,6 @@
 ---
 title: Azure AD Endpoint V1 vs V2
-date: 2017-07-27 17:07
+date: 2019-05-28 10:10
 author: nicold
 comments: true
 tags: [Azure, AzureAD, open-id-connect, oauth, clientlibraries, android, ios, modern authentication]
