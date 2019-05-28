@@ -1,40 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "3. FaKo Deutsch ",
-    "title": "3. FaKo Deutsch ",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NjFoZTk2cWtmYXMyOGxrNm83YjFwMmNqNzEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-05-28T14:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-05-28T15:00:00+02:00"
-    },
-    "created": "2019-03-24T10:16:56.000Z",
-    "updated": "2019-03-24T10:16:56.886Z"
-  },
-  {
-    "image_path": null,
-    "alt": "3. Schulkonferenz ",
-    "title": "3. Schulkonferenz ",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=N2lwbGM5dGZiMzFrZDBwaW1qbW0zcmJwYWogaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-05-28T15:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-05-28T17:00:00+02:00"
-    },
-    "created": "2019-03-24T10:16:27.000Z",
-    "updated": "2019-03-24T10:16:27.429Z"
-  },
-  {
-    "image_path": null,
     "alt": "Hort geschlossen",
     "title": "Hort geschlossen",
     "excerpt": null,
@@ -100,5 +66,39 @@
     },
     "created": "2019-05-27T07:56:17.000Z",
     "updated": "2019-05-27T07:56:34.864Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Elternehung im Bürgersaal",
+    "title": "Elternehung im Bürgersaal",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MWhhMmxldjBsZmZvNWRkcTNoNzZtMTVzb3QgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-06-06T10:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-06-06T14:00:00+02:00"
+    },
+    "created": "2019-02-11T12:08:21.000Z",
+    "updated": "2019-02-11T12:08:21.143Z"
+  },
+  {
+    "image_path": null,
+    "alt": "schulfrei",
+    "title": "schulfrei",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NmFkOTVnaGZtcTYxdTNicGYyajZpMjh0ZjEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-06-11",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-06-12",
+      "date_time": null
+    },
+    "created": "2019-03-24T10:18:21.000Z",
+    "updated": "2019-03-24T10:18:21.840Z"
   }
 ]
