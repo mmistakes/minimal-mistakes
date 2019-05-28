@@ -3,7 +3,7 @@ title: Azure AD Endpoint V1 vs V2
 date: 2017-07-27 17:07
 author: nicold
 comments: true
-categories: [Azure, AzureAD, open-id-connect, oauth, clientlibraries, android, ios, modern authentication]
+tags: [Azure, AzureAD, open-id-connect, oauth, clientlibraries, android, ios, modern authentication]
 ---
 
 Objective of this memo is to summarize in one single page the main differences between Azure AD Endpoint V1 vs V2, with focus on client libraries and supportability.

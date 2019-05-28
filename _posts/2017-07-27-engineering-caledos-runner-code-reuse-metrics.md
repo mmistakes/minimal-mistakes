@@ -3,7 +3,7 @@ title: Engineering Caledos Runner - Code Reuse Metrics
 date: 2017-07-27 17:07
 author: nicold
 comments: true
-categories: [.NET, android, caledos, caledos runner, code metrics, code reuse, multiplatform, mvvmcross, Uncategorized, Universal Windows Platform, UWP, xamarin]
+tags: [.NET, android, caledos, caledos runner, code metrics, code reuse, multiplatform, mvvmcross, Uncategorized, Universal Windows Platform, UWP, xamarin]
 ---
 
 <span>This post is the first of a series with the objective to share the experience on multiplatform development I've collected working on <a href="https://api.caledos.com">Caledos Runner</a>'s: a medium-sized fitness app currently publicly available on the <a href="https://play.google.com/store/apps/details?id=com.caledoslab.runner">Google Play Store</a>. The app is part of a side project on which I and <a href="https://it.linkedin.com/in/domenico-dell-olio-66257417">Domenico</a> have been working for some time, and that it is proving to be a great gym for the study of multiplatform development in general and <a href="https://www.xamarin.com/">Xamarin </a>in particular.
