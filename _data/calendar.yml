@@ -1,40 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Hort geschlossen",
-    "title": "Hort geschlossen",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M2NjZzcxN2F2MDJhaDhnNDZpcXNsYzFxZjcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-05-31",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-06-01",
-      "date_time": null
-    },
-    "created": "2018-08-14T14:23:01.000Z",
-    "updated": "2018-08-14T14:23:01.854Z"
-  },
-  {
-    "image_path": null,
-    "alt": "unterrichtsfrei",
-    "title": "unterrichtsfrei",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=aG44MWwzdTYwMGtzZ2ZhcmxmZ3J0MnE3Zm8gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-05-31",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-06-01",
-      "date_time": null
-    },
-    "created": "2019-03-10T16:10:12.000Z",
-    "updated": "2019-03-10T16:10:12.159Z"
-  },
-  {
-    "image_path": null,
     "alt": "Bundesjugendspiele Klassen 3 - 6",
     "title": "Bundesjugendspiele Klassen 3 - 6",
     "excerpt": "Die Bundesjugendspiele finden auf dem Schulgelände statt:\nSportsachen !!!\nWir freuen uns über viele Eltern, die helfen wollen",
@@ -100,5 +66,39 @@
     },
     "created": "2019-03-24T10:18:21.000Z",
     "updated": "2019-03-24T10:18:21.840Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Konflikt-Schülerlotsenfest Südpark",
+    "title": "Konflikt-Schülerlotsenfest Südpark",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MzJtbnVpMmE0cWY0Z2FpYzExcnZhMWNxMTEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-06-12T10:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-06-12T14:00:00+02:00"
+    },
+    "created": "2019-02-11T12:10:06.000Z",
+    "updated": "2019-02-11T12:10:06.398Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Brandwerder-Cup für alle Klassen",
+    "title": "Brandwerder-Cup für alle Klassen",
+    "excerpt": "Lustige Wettspiele in alter Tradition der Schule, im Rahmen des Schultages\nEltern sehr herzlich willkommen!",
+    "url": "https://www.google.com/calendar/event?eid=MTU2OWtmbG5pdXNrNjQ2YTQ3MXM5cmRvNWogaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-06-17",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-06-18",
+      "date_time": null
+    },
+    "created": "2019-03-24T10:19:42.000Z",
+    "updated": "2019-03-24T10:19:42.367Z"
   }
 ]
