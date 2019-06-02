@@ -52,8 +52,25 @@
   },
   {
     "image_path": null,
-    "alt": "schulfrei",
-    "title": "schulfrei",
+    "alt": "Staatsprüfung Fr. Bartel: Leh ausplanen! Sporthalle von 7:30 - 9:55 nicht nutzbar!",
+    "title": "Staatsprüfung Fr. Bartel: Leh ausplanen! Sporthalle von 7:30 - 9:55 nicht nutzbar!",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=N3Frb2MyMTUwNjFvZ2h0ZnI5NmkzdWR0c2cgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-06-07",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-06-08",
+      "date_time": null
+    },
+    "created": "2019-06-02T20:21:02.000Z",
+    "updated": "2019-06-02T20:21:20.143Z"
+  },
+  {
+    "image_path": null,
+    "alt": "unterrichtsfrei",
+    "title": "unterrichtsfrei",
     "excerpt": null,
     "url": "https://www.google.com/calendar/event?eid=NmFkOTVnaGZtcTYxdTNicGYyajZpMjh0ZjEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
@@ -65,7 +82,7 @@
       "date_time": null
     },
     "created": "2019-03-24T10:18:21.000Z",
-    "updated": "2019-03-24T10:18:21.840Z"
+    "updated": "2019-06-02T20:21:50.173Z"
   },
   {
     "image_path": null,
@@ -83,22 +100,5 @@
     },
     "created": "2019-02-11T12:10:06.000Z",
     "updated": "2019-02-11T12:10:06.398Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Brandwerder-Cup für alle Klassen",
-    "title": "Brandwerder-Cup für alle Klassen",
-    "excerpt": "Lustige Wettspiele in alter Tradition der Schule, im Rahmen des Schultages\nEltern sehr herzlich willkommen!",
-    "url": "https://www.google.com/calendar/event?eid=MTU2OWtmbG5pdXNrNjQ2YTQ3MXM5cmRvNWogaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-06-17",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-06-18",
-      "date_time": null
-    },
-    "created": "2019-03-24T10:19:42.000Z",
-    "updated": "2019-03-24T10:19:42.367Z"
   }
 ]
