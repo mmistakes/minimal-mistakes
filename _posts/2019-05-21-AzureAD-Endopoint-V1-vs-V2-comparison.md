@@ -6,24 +6,23 @@ comments: true
 tags: [Azure, AzureAD, open-id-connect, oauth, clientlibraries, android, ios, modern authentication]
 ---
 
-Objective of this memo is to summarize in one single page the main differences between Azure AD Endpoint V1 vs V2, with focus on client libraries and supportability.
+The objective of this memo is to summarize in one single page the main differences between Azure AD Endpoint V1 vs V2, with a focus on client libraries and supportability.
 
 Date of comparison: **27 May 2019** 
 
 In brief:
 
-* V1: **Azure Active Directory Endpoints**: they are supported and there is no ETA for decommissioning
-o	https://login.microsoftonline.com/common/oauth2/authorize 
+* V1: **Azure Active Directory Endpoints**: they are supported and there is no ETA for decommissioning https://login.microsoftonline.com/common/oauth2/authorize
 * V2: **Microsoft Identity Platform Endpoints**: are supported in production even if not still feature parity and completed. (see notes)
-o	https://login.microsoftonline.com/common/oauth2/v2.0/authorize 
+o	<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://login.microsoftonline.com/common/oauth2/v2.0/authorize</a> 
 
 
 
 
 |  | V1 | V2 | Notes/References
 |----------|----------|----------|----------|
-| Who can sign in | Work<br/>School Account<br/>Guests | Work<br/>School Account</br>Guests</br>Personal (hotmail.com, outlook.com…) | https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison#who-can-sign-in 
-|Incremental and dynamic consent | No | Yes | With the Microsoft identity platform endpoint, you can ignore the static permissions defined in the app registration information in the Azure portal and request permissions incrementally<br/><br/>https://docs.microsoft.com/en-us/azure/active-directory/develop/v1-permissions-and-consent#types-of-consent 
+| Who can sign in | Work<br/>School Account<br/>Guests | Work<br/>School Account</br>Guests</br>Personal (hotmail.com, outlook.com…) | <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison#who-can-sign-in" target="_blank">https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison#who-can-sign-in</a> 
+|Incremental and dynamic consent | No | Yes | With the Microsoft identity platform endpoint, you can ignore the static permissions defined in the app registration information in the Azure portal and request permissions incrementally<br/><br/><a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/v1-permissions-and-consent#types-of-consent" target="_blank">https://docs.microsoft.com/en-us/azure/active-directory/develop/v1-permissions-and-consent#types-of-consent</a> 
 |App can behave as|	Resource	|Scope (1 Resource -> n Scopes)|https://blogs.msdn.microsoft.com/gianlucb/2017/12/05/azure-ad-scope-based-authorization/ 
 |Well known scopes	|No	|Yes<br/><br/>Offline Access<br/>OpenID,<br/>Profile and Email|https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison#openid-profile-and-email
 |Supported by Microsoft	|Yes	|Yes (*) | (*) The Microsoft identity platform endpoint (V2) doesn't support all Azure AD scenarios and features.<br/><br/>To determine if you should use the Microsoft identity platform endpoint see limitations:<br/><br/> https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison#limitations
