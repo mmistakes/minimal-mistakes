@@ -33,15 +33,15 @@ $global-font-family: $sans-serif !default;
 $header-font-family: $sans-serif !default;
 $caption-font-family: $serif !default;
 
-/* type scale */
-$type-size-1: 2.441em !default; // ~39.056px
-$type-size-2: 1.953em !default; // ~31.248px
-$type-size-3: 1.563em !default; // ~25.008px
-$type-size-4: 1.25em !default; // ~20px
-$type-size-5: 1em !default; // ~16px
-$type-size-6: 0.75em !default; // ~12px
-$type-size-7: 0.6875em !default; // ~11px
-$type-size-8: 0.625em !default; // ~10px
+/* type scale nicold: ridotto del 30% misura dei font */
+$type-size-1:  1.7087em !default; // 2.441em !default; // ~39.056px
+$type-size-2:  1.367em !default; // 1.953em !default; // ~31.248px
+$type-size-3:  1.094em !default; // 1.563em !default; // ~25.008px
+$type-size-4:  0.87em !default; // 1.25em !default; // ~20px
+$type-size-5:  1em !default; // 1em !default; // ~16px
+$type-size-6:  0.52em !default; // 0.75em !default; // ~12px
+$type-size-7:  0.480em !default; // 0.6875em !default; // ~11px
+$type-size-8:  0.437em !default; // 0.625em !default; // ~10px
 
 /*
    Colors
