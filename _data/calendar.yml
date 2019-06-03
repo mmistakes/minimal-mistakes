@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Bundesjugendspiele Klassen 3 - 6",
-    "title": "Bundesjugendspiele Klassen 3 - 6",
-    "excerpt": "Die Bundesjugendspiele finden auf dem Schulgelände statt:\nSportsachen !!!\nWir freuen uns über viele Eltern, die helfen wollen",
-    "url": "https://www.google.com/calendar/event?eid=NGRqM3ZsOTNydmZwM3VrYWw1Y3RqczY5MjIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-06-03T08:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-06-03T13:00:00+02:00"
-    },
-    "created": "2019-03-24T10:24:39.000Z",
-    "updated": "2019-03-24T10:26:44.356Z"
-  },
-  {
-    "image_path": null,
     "alt": "6b Jonas Haus Ra, E",
     "title": "6b Jonas Haus Ra, E",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2019-02-11T12:10:06.000Z",
     "updated": "2019-02-11T12:10:06.398Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Brandwerder-Cup für alle Klassen",
+    "title": "Brandwerder-Cup für alle Klassen",
+    "excerpt": "Lustige Wettspiele in alter Tradition der Schule, im Rahmen des Schultages\nEltern sehr herzlich willkommen!",
+    "url": "https://www.google.com/calendar/event?eid=MTU2OWtmbG5pdXNrNjQ2YTQ3MXM5cmRvNWogaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-06-17",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-06-18",
+      "date_time": null
+    },
+    "created": "2019-03-24T10:19:42.000Z",
+    "updated": "2019-03-24T10:19:42.367Z"
   }
 ]
