@@ -32,20 +32,20 @@ o	<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" targe
 
 # Microsoft Identity Platform (V2): Restriction on libraries and SDKs
 
-https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison#restrictions-on-libraries-and-sdks 
+<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison#restrictions-on-libraries-and-sdks</a> 
 
 Currently, library support for the Microsoft identity platform endpoint is limited. If you want to use the Microsoft identity platform endpoint in a production application, you have these options: 
 
 
 | Application Type | Supportability levelo |
 |----------|----------|
-|Web Application	use the generally available server-side middleware to perform sign-in and token validation.|https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-overview#getting-started |
-|Desktop or Mobile Application|	use one of the preview Microsoft Authentication Libraries (MSAL). These libraries are in a production-supported preview, so it is safe to use them in production applications.<br/><br/>https://docs.microsoft.com/en-us/azure/active-directory/develop/reference-v2-libraries|
-Platforms not covered by Microsoft libraries|you can integrate with the Microsoft identity platform endpoint by directly sending and receiving protocol messages in your application code.<br/><br/>https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols|
-|3th party OpenID and OAuth Libraries|The Microsoft identity platform endpoint should be compatible with many open-source protocol libraries without changes.<br/><br/>These libraries are not supported by Microsoft<br/><br/>https://docs.microsoft.com/en-us/azure/active-directory/develop/reference-v2-libraries 
+|Web Application	use the generally available server-side middleware to perform sign-in and token validation.|<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-overview#getting-started</a> |
+|Desktop or Mobile Application|	use one of the preview Microsoft Authentication Libraries (MSAL). These libraries are in a production-supported preview, so it is safe to use them in production applications.<br/><br/><a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://docs.microsoft.com/en-us/azure/active-directory/develop/reference-v2-libraries</a>|
+Platforms not covered by Microsoft libraries|you can integrate with the Microsoft identity platform endpoint by directly sending and receiving protocol messages in your application code.<br/><br/><a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols</a>|
+|3th party OpenID and OAuth Libraries|The Microsoft identity platform endpoint should be compatible with many open-source protocol libraries without changes.<br/><br/>These libraries are not supported by Microsoft<br/><br/><a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://docs.microsoft.com/en-us/azure/active-directory/develop/reference-v2-libraries</a> 
 
 ## Microsoft-supported libraries for V2 Endpoints
-https://docs.microsoft.com/en-us/azure/active-directory/develop/reference-v2-libraries 
+<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://docs.microsoft.com/en-us/azure/active-directory/develop/reference-v2-libraries</a> 
 
 ### Client
 Support disclaimer: “*Please note that during the preview we may make changes to the API, internal cache format, and other mechanisms of this library, which you will be required to take along with bug fixes or feature improvements. This may impact your application. For instance, a change to the cache format may impact your users, such as requiring them to sign in again. An API change may require you to update your code. When we provide the General Availability release we will require you to update to the General Availability version within six months, as applications written using a preview version of library may no longer work*”
@@ -53,26 +53,26 @@ Support disclaimer: “*Please note that during the preview we may make changes 
 
 | Platform/Library|Status|
 |----------|----------|
-|JS/MSAL.js|Preview|https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-angularjs/README.md 
-|Angular JS (1.x)/MS Angular JS|Preview|https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-angularjs/README.md 
-|.NET/MSAL.NET|Preview|https://github.com/AzureAD/microsoft-authentication-library-for-dotnet 
-|iOS/MSAL objective_C|Preview|https://github.com/AzureAD/microsoft-authentication-library-for-objc 
-|Android/Android MSAL|Preview|https://github.com/AzureAD/microsoft-authentication-library-for-android 
+|JS/MSAL.js|Preview|<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-angularjs/README.md</a> 
+|Angular JS (1.x)/MS Angular JS|Preview|<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-angularjs/README.md</a> 
+|.NET/MSAL.NET|Preview|<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://github.com/AzureAD/microsoft-authentication-library-for-dotnet</a> 
+|iOS/MSAL objective_C|Preview|<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://github.com/AzureAD/microsoft-authentication-library-for-objc</a> 
+|Android/Android MSAL|Preview|<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://github.com/AzureAD/microsoft-authentication-library-for-android</a> 
 
 ### Server
 
 | Platform/Library | Status |
 |----------|----------|
-|.NET(+ core)<br/>ASP.NET Security<br/>IdentityModel Extensions for .NET|Stable/Supported | https://github.com/aspnet/AspNetCore <br/><br/>https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet 
-|Node/Azure AD Passport|Stable/Supported|https://github.com/AzureAD/passport-azure-ad 
+|.NET(+ core)<br/>ASP.NET Security<br/>IdentityModel Extensions for .NET|Stable/Supported | https://github.com/aspnet/AspNetCore <br/><br/><a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet 
+|Node/Azure AD Passport</a>|Stable/Supported|<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://github.com/AzureAD/passport-azure-ad</a> 
 
 Brokered authentication and Single Sign On (SSO) are in roadmap:
 
-* **Android**: is work in progress, no ETA (https://github.com/AzureAD/microsoft-authentication-library-for-android/pull/550 )
-* **iOS**:  support for authentication broker released (v0.3.0 - Added Auth broker support - https://github.com/AzureAD/microsoft-authentication-library-for-objc/releases ) 
+* **Android**: is work in progress, no ETA (<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://github.com/AzureAD/microsoft-authentication-library-for-android/pull/550</a> )
+* **iOS**:  support for authentication broker released (v0.3.0 - Added Auth broker support - <a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://github.com/AzureAD/microsoft-authentication-library-for-objc/releases</a> ) 
 * **.NET/Xamarin**: in roadmap “Some scenarios, involving conditional access related to a device being 
-enrolled require a broker (Microsoft Company portal or Microsoft Authenticator) to be installed on a device. MSAL.NET is not yet capable of interacting with these brokers, but this is on the backlog” https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/scenarios  
-“[Feature coming in future release of MSAL v3.x] … Brokered Authentication for iOS …” https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Leveraging-the-broker-on-iOS#brokered-authentication-for-ios
+enrolled require a broker (Microsoft Company portal or Microsoft Authenticator) to be installed on a device. MSAL.NET is not yet capable of interacting with these brokers, but this is on the backlog” <a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/scenarios</a>  
+“[Feature coming in future release of MSAL v3.x] … Brokered Authentication for iOS …” <a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Leveraging-the-broker-on-iOS#brokered-authentication-for-ios</a>
 
 ## Microsoft Supported Library for V1 Endpoints (ADAL)
 
@@ -80,35 +80,35 @@ https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory
 
 ### Client
 
-https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries#microsoft-supported-client-libraries 
+<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries#microsoft-supported-client-libraries</a> 
 
 Brokered Authentication and single sign are supported:
 
 | Platform/Library | Status |
 |----------|----------|
-|.NET Client, Windows Store, UWP, Xamarin iOS and Android|Supported|https://github.com/AzureAD/azure-activedirectory-library-for-dotnet 
-|.NET Client, Windows Store, Windows Phone 8.1|Supported|https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/releases/tag/v2.28.4 
-|Javascript|Supported|https://github.com/AzureAD/azure-activedirectory-library-for-js 
-|iOS, macOS|Supported|https://github.com/AzureAD/azure-activedirectory-library-for-objc 
-|Android|Supported|https://github.com/AzureAD/azure-activedirectory-library-for-android 
+|.NET Client, Wind<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">ows Store, UWP, Xamarin iOS and </a>Android|Supported|https://github.com/AzureAD/azure-activedirectory-library-for-dotnet 
+|.NET Client, Windows Store, Windows Phone 8.1|Supported|<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/releases/tag/v2.28.4</a> 
+|Javascript|Supported|<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://github.com/AzureAD/azure-activedirectory-library-for-js</a> 
+|iOS, macOS|Supported|<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://github.com/AzureAD/azure-activedirectory-library-for-objc</a> 
+|Android|Supported|<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://github.com/AzureAD/azure-activedirectory-library-for-android</a> 
 
-* https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-v1-enable-sso-ios 
-* https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-v1-enable-sso-android
+* <a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-v1-enable-sso-ios</a> 
+* <a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-v1-enable-sso-android</a>
 
 
 ### Server
 
-https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries#microsoft-supported-server-libraries 
+<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries#microsoft-supported-server-libraries</a> 
 
 
 | Platform/Library | Status |
 |----------|----------|
-|.NET/OWIN|Supported|https://github.com/aspnet/AspNetKatana/tree/dev/src/Microsoft.Owin.Security.ActiveDirectory<br/>https://github.com/aspnet/AspNetKatana/tree/dev/src/Microsoft.Owin.Security.OpenIdConnect<br/>https://github.com/aspnet/AspNetKatana/tree/dev/src/Microsoft.Owin.Security.WsFederation<br/>https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet 
-|Node.js/Azure AD Passport|Supported|https://github.com/AzureAD/passport-azure-ad 
+|.NET/OWIN|Supported|<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://github.com/aspnet/AspNetKatana/tree/dev/src/Microsoft.Owin.Security.ActiveDirectory</a><br/><a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://github.com/aspnet/AspNetKatana/tree/dev/src/Microsoft.Owin.Security.OpenIdConnect</a><br/><a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://github.com/aspnet/AspNetKatana/tree/dev/src/Microsoft.Owin.Security.WsFederation</a><br/><a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet</a> 
+|Node.js/Azure AD Passport|Supported|<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://github.com/AzureAD/passport-azure-ad</a> 
 
 ## Breaking Changes
 
-The authentication system alters and adds features on an ongoing basis to improve security and standards compliance. To stay up-to-date with the most recent developments, the following page provides information about the details: https://docs.microsoft.com/en-us/azure/active-directory/develop/reference-breaking-changes 
+The authentication system alters and adds features on an ongoing basis to improve security and standards compliance. To stay up-to-date with the most recent developments, the following page provides information about the details: <a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://docs.microsoft.com/en-us/azure/active-directory/develop/reference-breaking-changes</a> 
 
 
 
