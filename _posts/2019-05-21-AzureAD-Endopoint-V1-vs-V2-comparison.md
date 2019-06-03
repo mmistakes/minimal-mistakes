@@ -37,7 +37,7 @@ o	<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" targe
 Currently, library support for the Microsoft identity platform endpoint is limited. If you want to use the Microsoft identity platform endpoint in a production application, you have these options: 
 
 
-| Application Type | Supportability levelo |
+| Application Type | Supportability level |
 |----------|----------|
 |Web Application	use the generally available server-side middleware to perform sign-in and token validation.|<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-overview#getting-started</a> |
 |Desktop or Mobile Application|	use one of the preview Microsoft Authentication Libraries (MSAL). These libraries are in a production-supported preview, so it is safe to use them in production applications.<br/><br/><a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://docs.microsoft.com/en-us/azure/active-directory/develop/reference-v2-libraries</a>|
