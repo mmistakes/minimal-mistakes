@@ -12,7 +12,7 @@ Date of comparison: **27 May 2019**
 
 In brief:
 
-* V1: **Azure Active Directory Endpoints**: they are supported and there is no ETA for decommissioning https://login.microsoftonline.com/common/oauth2/authorize
+* V1: **Azure Active Directory Endpoints**: they are supported and there is no ETA for decommissioning <a href="https://login.microsoftonline.com/common/oauth2/authorize" target="_blank">https://login.microsoftonline.com/common/oauth2/authorize</a>
 * V2: **Microsoft Identity Platform Endpoints**: are supported in production even if not still feature parity and completed. (see notes)
 o	<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://login.microsoftonline.com/common/oauth2/v2.0/authorize</a> 
 
@@ -86,7 +86,7 @@ Brokered Authentication and single sign are supported:
 
 | Platform/Library | Status |
 |----------|----------|
-|.NET Client, Wind<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">ows Store, UWP, Xamarin iOS and </a>Android|Supported|https://github.com/AzureAD/azure-activedirectory-library-for-dotnet 
+|.NET Client, Windows Store, UWP, Xamarin iOS and Android|Supported|h<a href="ttps://github.com/AzureAD/azure-activedirectory-library-for-dotnet" target="_blank">ttps://github.com/AzureAD/azure-activedirectory-library-for-dotnet</a> 
 |.NET Client, Windows Store, Windows Phone 8.1|Supported|<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/releases/tag/v2.28.4</a> 
 |Javascript|Supported|<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://github.com/AzureAD/azure-activedirectory-library-for-js</a> 
 |iOS, macOS|Supported|<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://github.com/AzureAD/azure-activedirectory-library-for-objc</a> 
