@@ -76,7 +76,7 @@ enrolled require a broker (Microsoft Company portal or Microsoft Authenticator) 
 
 ## Microsoft Supported Library for V1 Endpoints (ADAL)
 
-https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries 
+<a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries" target="_blank">https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries</a> 
 
 ### Client
 
@@ -86,7 +86,7 @@ Brokered Authentication and single sign are supported:
 
 | Platform/Library | Status |
 |----------|----------|
-|.NET Client, Windows Store, UWP, Xamarin iOS and Android|Supported|h<a href="ttps://github.com/AzureAD/azure-activedirectory-library-for-dotnet" target="_blank">ttps://github.com/AzureAD/azure-activedirectory-library-for-dotnet</a> 
+|.NET Client, Windows Store, UWP, Xamarin iOS and Android|Supported|<a href="https://github.com/AzureAD/azure-activedirectory-library-for-dotnet" target="_blank">https://github.com/AzureAD/azure-activedirectory-library-for-dotnet</a> 
 |.NET Client, Windows Store, Windows Phone 8.1|Supported|<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/releases/tag/v2.28.4</a> 
 |Javascript|Supported|<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://github.com/AzureAD/azure-activedirectory-library-for-js</a> 
 |iOS, macOS|Supported|<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://github.com/AzureAD/azure-activedirectory-library-for-objc</a> 
