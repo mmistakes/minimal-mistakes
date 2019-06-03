@@ -18,18 +18,17 @@ o	<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" targe
 
 
 
-
 |  | V1 | V2 | Notes/References
 |----------|----------|----------|----------|
 | Who can sign in | Work<br/>School Account<br/>Guests | Work<br/>School Account</br>Guests</br>Personal (hotmail.com, outlook.com…) | <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison#who-can-sign-in" target="_blank">https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison#who-can-sign-in</a> 
 |Incremental and dynamic consent | No | Yes | With the Microsoft identity platform endpoint, you can ignore the static permissions defined in the app registration information in the Azure portal and request permissions incrementally<br/><br/><a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/v1-permissions-and-consent#types-of-consent" target="_blank">https://docs.microsoft.com/en-us/azure/active-directory/develop/v1-permissions-and-consent#types-of-consent</a> 
-|App can behave as|	Resource	|Scope (1 Resource -> n Scopes)|https://blogs.msdn.microsoft.com/gianlucb/2017/12/05/azure-ad-scope-based-authorization/ 
-|Well known scopes	|No	|Yes<br/><br/>Offline Access<br/>OpenID,<br/>Profile and Email|https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison#openid-profile-and-email
-|Supported by Microsoft	|Yes	|Yes (*) | (*) The Microsoft identity platform endpoint (V2) doesn't support all Azure AD scenarios and features.<br/><br/>To determine if you should use the Microsoft identity platform endpoint see limitations:<br/><br/> https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison#limitations
+|App can behave as|	Resource	|Scope (1 Resource -> n Scopes)|<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://blogs.msdn.microsoft.com/gianlucb/2017/12/05/azure-ad-scope-based-authorization/</a> 
+|Well known scopes	|No	|Yes<br/><br/>Offline Access<br/>OpenID,<br/>Profile and Email|<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison#openid-profile-and-email</a>
+|Supported by Microsoft	|Yes	|Yes (*) | (*) The Microsoft identity platform endpoint (V2) doesn't support all Azure AD scenarios and features.<br/><br/>To determine if you should use the Microsoft identity platform endpoint see limitations:<br/><br/> <a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison#limitations</a>
 |Protocols supported |OpenID Connect<br/>OAuth<br/>SAML<br/>WS-Federation |OpenID Connect<br/>OAuth
 |Recommended Client Library|ADAL	|MSAL
 |Platform supported (by supported client libraries)	|.NET, JavaScript, iOS, Android, Java, node.js and Python	|.NET, JavaScript, iOS, and Android, node.js
-|Limitations on V2		| |Yes<br/><br/>https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison#limitations<br/><br/>Restrictions on app registrations<br/>Restrictions on redirect URLs<br/>Protocol changes<br/><br/>Restrictions on libraries and SDKs (see below)
+|Limitations on V2		| |Yes<br/><br/><a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison#limitations</a><br/><br/>Restrictions on app registrations<br/>Restrictions on redirect URLs<br/>Protocol changes<br/><br/>Restrictions on libraries and SDKs (see below)
 
 # Microsoft Identity Platform (V2): Restriction on libraries and SDKs
 
