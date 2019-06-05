@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "6b Jonas Haus Ra, E",
-    "title": "6b Jonas Haus Ra, E",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MnR0Z3Y5cDY0cnJnMnFsYmF0cHBlMnFyMnUgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-06-05T08:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-06-05T13:00:00+02:00"
-    },
-    "created": "2019-05-27T07:56:17.000Z",
-    "updated": "2019-05-27T07:56:34.864Z"
-  },
-  {
-    "image_path": null,
     "alt": "Elternehrung im Bürgersaal",
     "title": "Elternehrung im Bürgersaal",
     "excerpt": null,
@@ -28,10 +11,10 @@
     },
     "end": {
       "date": null,
-      "date_time": "2019-06-06T13:00:00+02:00"
+      "date_time": "2019-06-06T12:00:00+02:00"
     },
     "created": "2019-02-11T12:08:21.000Z",
-    "updated": "2019-05-29T03:48:30.314Z"
+    "updated": "2019-06-05T16:47:31.109Z"
   },
   {
     "image_path": null,
@@ -100,5 +83,22 @@
     },
     "created": "2019-03-24T10:19:42.000Z",
     "updated": "2019-03-24T10:19:42.367Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Elternabend für die Schulanfänger*innen",
+    "title": "Elternabend für die Schulanfänger*innen",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=cThzaDV0M2traG0zMmU4cmxybWU0amIwYWcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-06-17T17:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-06-17T19:00:00+02:00"
+    },
+    "created": "2019-05-17T03:25:23.000Z",
+    "updated": "2019-05-17T03:25:23.419Z"
   }
 ]
