@@ -13,8 +13,7 @@ Date of comparison: **27 May 2019**
 In brief:
 
 * V1: **Azure Active Directory Endpoints**: they are supported and there is no ETA for decommissioning <a href="https://login.microsoftonline.com/common/oauth2/authorize" target="_blank">https://login.microsoftonline.com/common/oauth2/authorize</a>
-* V2: **Microsoft Identity Platform Endpoints**: are supported in production even if not still feature parity and completed. (see notes)
-o	<a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://login.microsoftonline.com/common/oauth2/v2.0/authorize</a> 
+* V2: **Microsoft Identity Platform Endpoints**: are supported in production even if not still feature parity and completed. (see notes) <a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize" target="_blank">https://login.microsoftonline.com/common/oauth2/v2.0/authorize</a> 
 
 
 
