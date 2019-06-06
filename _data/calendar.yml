@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Elternehrung im Bürgersaal",
-    "title": "Elternehrung im Bürgersaal",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MWhhMmxldjBsZmZvNWRkcTNoNzZtMTVzb3QgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-06-06T09:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-06-06T12:00:00+02:00"
-    },
-    "created": "2019-02-11T12:08:21.000Z",
-    "updated": "2019-06-05T16:47:31.109Z"
-  },
-  {
-    "image_path": null,
     "alt": "Staatsprüfung Fr. Bartel: Leh ausplanen! Sporthalle von 7:30 - 9:55 nicht nutzbar!",
     "title": "Staatsprüfung Fr. Bartel: Leh ausplanen! Sporthalle von 7:30 - 9:55 nicht nutzbar!",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2019-05-17T03:25:23.000Z",
     "updated": "2019-05-17T03:25:23.419Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Verabschiedung der 6. Klassen",
+    "title": "Verabschiedung der 6. Klassen",
+    "excerpt": "11:30 Uhr: Unterrichtsschluss für die Klassen 1 - 5  ",
+    "url": "https://www.google.com/calendar/event?eid=MDg3cGF1bXN1MGxsMDRuc3Y3cmZoZDMyZ2QgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-06-18T12:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-06-18T13:00:00+02:00"
+    },
+    "created": "2019-03-24T10:21:03.000Z",
+    "updated": "2019-03-24T10:21:03.104Z"
   }
 ]
