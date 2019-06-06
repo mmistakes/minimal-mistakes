@@ -20,7 +20,7 @@ title                    : "Danny Castonguay"
 title_separator          : "-"
 name                     : "Danny Castonguay"
 description              : "Product Leader."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://blog.dannycastonguay.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -66,7 +66,7 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 search                   : # true, false (default)
 search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia, google
+search_provider          : lunr # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
@@ -98,7 +98,7 @@ social:
 
 # Analytics
 analytics:
-  provider               : google # false (default), "google", "google-universal", "custom"
+  provider               : "google-gtag" # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          : UA-141196625-3
     anonymize_ip         : # true, false (default)
@@ -109,26 +109,26 @@ author:
   avatar           : https://avatars0.githubusercontent.com/u/641370?s=400&v=4 # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Product leader."
   location         : "US"
-  email            : danny@talented.app
+  email            : "danny@talented.app"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: mailto:danny@talented.app
-    - label: "Website"
+    - label: "Work"
       icon: "fas fa-fw fa-link"
       url: "https://talented.app"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+      url: "https://twitter.com/dannycast0nguay"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/dannycastonguay"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+    - label: "Resume"
+      icon: "fas fa-fw fa-address-card"
+      url: "https://resume.dannycastonguay.com"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/dannycastonguay/"
 
 # Site Footer
 footer:
