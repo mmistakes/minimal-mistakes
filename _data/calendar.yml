@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Staatsprüfung Fr. Bartel: Leh ausplanen! Sporthalle von 7:30 - 9:55 nicht nutzbar!",
-    "title": "Staatsprüfung Fr. Bartel: Leh ausplanen! Sporthalle von 7:30 - 9:55 nicht nutzbar!",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=N3Frb2MyMTUwNjFvZ2h0ZnI5NmkzdWR0c2cgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-06-07",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-06-08",
-      "date_time": null
-    },
-    "created": "2019-06-02T20:21:02.000Z",
-    "updated": "2019-06-02T20:21:20.143Z"
-  },
-  {
-    "image_path": null,
     "alt": "unterrichtsfrei",
     "title": "unterrichtsfrei",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2019-03-24T10:21:03.000Z",
     "updated": "2019-03-24T10:21:03.104Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Letzter Schultag, Zeugnisausgabe in der 3. Stunde",
+    "title": "Letzter Schultag, Zeugnisausgabe in der 3. Stunde",
+    "excerpt": "Für alle Kinder Unterrichtsschluss um 10:40 Uhr ",
+    "url": "https://www.google.com/calendar/event?eid=NXBsZWhzZ3JqN24xM3Z0ZmNvNmRmM29ucmggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-06-19",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-06-20",
+      "date_time": null
+    },
+    "created": "2019-03-24T10:22:04.000Z",
+    "updated": "2019-03-24T10:22:04.310Z"
   }
 ]
