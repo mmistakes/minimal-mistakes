@@ -5,9 +5,15 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2019-05-26T20:46:18-04:00
+last_modified_at: 2019-06-10T19:30:51-04:00
 toc: false
 ---
+
+## Unreleased
+
+### Enhancements
+
+- Add skip links. [#2182](https://github.com/mmistakes/minimal-mistakes/issues/2182)
 
 ## [4.16.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.16.4)
 

@@ -3,6 +3,10 @@
 # English (default)
 # -----------------
 en: &DEFAULT_EN
+  skip_links                 : "Skip links"
+  skip_primary_nav           : "Skip to primary navigation"
+  skip_content               : "Skip to content"
+  skip_footer                : "Skip to footer"
   page                       : "Page"
   pagination_previous        : "Previous"
   pagination_next            : "Next"
@@ -56,6 +60,10 @@ en-AU:
 # Spanish
 # -------
 es: &DEFAULT_ES
+  skip_links                 :
+  skip_primary_nav           :
+  skip_content               :
+  skip_footer                :
   page                       : "Página"
   pagination_previous        : "Anterior"
   pagination_next            : "Siguiente"
@@ -105,6 +113,10 @@ es-CO:
 # French
 # ------
 fr: &DEFAULT_FR
+  skip_links                 :
+  skip_primary_nav           :
+  skip_content               :
+  skip_footer                :
   page                       : "Page"
   pagination_previous        : "Précédent"
   pagination_next            : "Suivant"
@@ -156,6 +168,10 @@ fr-CH:
 # Turkish
 # -------
 tr: &DEFAULT_TR
+  skip_links                 :
+  skip_primary_nav           :
+  skip_content               :
+  skip_footer                :
   page                       : "Sayfa"
   pagination_previous        : "Önceki"
   pagination_next            : "Sonraki"
@@ -200,6 +216,10 @@ tr-TR:
 # Portuguese
 # ----------
 pt: &DEFAULT_PT
+  skip_links                 :
+  skip_primary_nav           :
+  skip_content               :
+  skip_footer                :
   page                       : "Página"
   pagination_previous        : "Anterior"
   pagination_next            : "Seguinte"
@@ -242,6 +262,10 @@ pt-PT:
   <<: *DEFAULT_PT
 # Brazilian Portuguese
 pt-BR:
+  skip_links                 :
+  skip_primary_nav           :
+  skip_content               :
+  skip_footer                :
   page                       : "Página"
   pagination_previous        : "Anterior"
   pagination_next            : "Próxima"
@@ -287,6 +311,10 @@ pt-BR:
 # Italian
 # -------
 it: &DEFAULT_IT
+  skip_links                 :
+  skip_primary_nav           :
+  skip_content               :
+  skip_footer                :
   page                       : "Pagina"
   pagination_previous        : "Precedente"
   pagination_next            : "Prossima"
@@ -334,6 +362,10 @@ it-IT:
 # Chinese  (zh-CN Chinese - China)
 # --------------------------------
 zh: &DEFAULT_ZH_HANS
+  skip_links                 :
+  skip_primary_nav           :
+  skip_content               :
+  skip_footer                :
   page                       : "页面"
   pagination_previous        : "向前"
   pagination_next            : "向后"
@@ -381,6 +413,10 @@ zh-SG:
   <<: *DEFAULT_ZH_HANS
 # Taiwan (Traditional Chinese)
 zh-TW: &DEFAULT_ZH_HANT
+  skip_links                 :
+  skip_primary_nav           :
+  skip_content               :
+  skip_footer                :
   page                       : "頁面"
   pagination_previous        : "較舊"
   pagination_next            : "較新"
@@ -425,6 +461,10 @@ zh-HK:
 # German / Deutsch
 # ----------------
 de: &DEFAULT_DE
+  skip_links                 :
+  skip_primary_nav           :
+  skip_content               :
+  skip_footer                :
   page                       : "Seite"
   pagination_previous        : "Vorherige"
   pagination_next            : "Nächste"
@@ -481,6 +521,10 @@ de-LU:
 # Nepali (Nepal)
 # --------------
 ne: &DEFAULT_NE
+  skip_links                 :
+  skip_primary_nav           :
+  skip_content               :
+  skip_footer                :
   page                       : "पृष्‍ठ"
   pagination_previous        : "अघिल्लो"
   pagination_next            : "अर्को"
@@ -525,6 +569,10 @@ ne-NP:
 # Korean
 # ------
 ko: &DEFAULT_KO
+  skip_links                 :
+  skip_primary_nav           :
+  skip_content               :
+  skip_footer                :
   page                       : "페이지"
   pagination_previous        : "이전"
   pagination_next            : "다음"
@@ -569,6 +617,10 @@ ko-KR:
 # Russian / Русский
 # -----------------
 ru: &DEFAULT_RU
+  skip_links                 :
+  skip_primary_nav           :
+  skip_content               :
+  skip_footer                :
   page                       : "Страница"
   pagination_previous        : "Предыдущая"
   pagination_next            : "Следующая"
@@ -615,6 +667,10 @@ ru-RU:
 # Lithuanian / Lietuviškai
 # ------------------------
 lt: &DEFAULT_LT
+  skip_links                 :
+  skip_primary_nav           :
+  skip_content               :
+  skip_footer                :
   page                       : "Puslapis"
   pagination_previous        : "Ankstesnis"
   pagination_next            : "Sekantis"
@@ -659,6 +715,10 @@ lt-LT:
 # Greek
 # -----
 gr: &DEFAULT_GR
+  skip_links                 :
+  skip_primary_nav           :
+  skip_content               :
+  skip_footer                :
   page                       : "Σελίδα"
   pagination_previous        : "Προηγούμενo"
   pagination_next            : "Επόμενo"
@@ -705,6 +765,10 @@ gr-GR:
 # Swedish
 # -------
 sv: &DEFAULT_SV
+  skip_links                 :
+  skip_primary_nav           :
+  skip_content               :
+  skip_footer                :
   page                       : "Sidan"
   pagination_previous        : "Föregående"
   pagination_next            : "Nästa"
@@ -754,6 +818,10 @@ sv-FI:
 # Dutch
 # -----
 nl: &DEFAULT_NL
+  skip_links                 :
+  skip_primary_nav           :
+  skip_content               :
+  skip_footer                :
   page                       : "Pagina"
   pagination_previous        : "Vorige"
   pagination_next            : "Volgende"
@@ -800,6 +868,10 @@ nl-NL:
 # Indonesian
 # ----------
 id: &DEFAULT_ID
+  skip_links                 :
+  skip_primary_nav           :
+  skip_content               :
+  skip_footer                :
   page                       : "Halaman"
   pagination_previous        : "Kembali"
   pagination_next            : "Maju"
@@ -844,6 +916,10 @@ id-ID:
 # Vietnamese
 # ----------
 vi: &DEFAULT_VI
+  skip_links                 :
+  skip_primary_nav           :
+  skip_content               :
+  skip_footer                :
   page                       : "Trang"
   pagination_previous        : "Trước"
   pagination_next            : "Sau"
@@ -891,6 +967,10 @@ vi-VN:
 # Danish
 # ------
 da: &DEFAULT_DA
+  skip_links                 :
+  skip_primary_nav           :
+  skip_content               :
+  skip_footer                :
   page                       : "Side"
   pagination_previous        : "Forrige"
   pagination_next            : "Næste"
@@ -938,6 +1018,10 @@ da-DK:
 # Polish
 # ------
 pl: &DEFAULT_PL
+  skip_links                 :
+  skip_primary_nav           :
+  skip_content               :
+  skip_footer                :
   page                       : "Strona"
   pagination_previous        : "Poprzednia"
   pagination_next            : "Następna"
@@ -982,6 +1066,10 @@ pl-PL:
 # Japanese
 # --------
 ja: &DEFAULT_JA
+  skip_links                 :
+  skip_primary_nav           :
+  skip_content               :
+  skip_footer                :
   page                       : "ページ"
   pagination_previous        : "前へ"
   pagination_next            : "次へ"
@@ -1028,6 +1116,10 @@ ja-JP:
 # Slovak
 # -----------------
 sk: &DEFAULT_SK
+  skip_links                 :
+  skip_primary_nav           :
+  skip_content               :
+  skip_footer                :
   page                       : "Stránka"
   pagination_previous        : "Predošlá"
   pagination_next            : "Ďalšia"
@@ -1075,6 +1167,10 @@ sk-SK:
 # Hungarian
 # -----------------
 hu: &DEFAULT_HU
+  skip_links                 :
+  skip_primary_nav           :
+  skip_content               :
+  skip_footer                :
   page                       : "Oldal"
   pagination_previous        : "Előző"
   pagination_next            : "Következő"
@@ -1122,6 +1218,10 @@ hu-HU:
 # Romanian
 # -----------------
 ro: &DEFAULT_RO
+  skip_links                 :
+  skip_primary_nav           :
+  skip_content               :
+  skip_footer                :
   page                       : "Pagina"
   pagination_previous        : "Anterior"
   pagination_next            : "Următor"
@@ -1169,6 +1269,10 @@ ro-RO:
 # Punjabi
 # -----------------
 pa: &DEFAULT_PA
+  skip_links                 :
+  skip_primary_nav           :
+  skip_content               :
+  skip_footer                :
   page                       : "ਸਫ਼ਾ"
   pagination_previous        : "ਪਿਛਲਾ"
   pagination_next            : "ਅਗਲਾ "
@@ -1216,6 +1320,10 @@ pa-IN:
 # Persian (Farsi)
 # --------------
 fa: &DEFAULT_FA
+  skip_links                 :
+  skip_primary_nav           :
+  skip_content               :
+  skip_footer                :
   page                       : "صفحه"
   pagination_previous        : "قبلی"
   pagination_next            : "بعدی"
@@ -1263,6 +1371,10 @@ fa-IR:
 # Malayalam
 # -----------------
 ml: &DEFAULT_ML
+  skip_links                 :
+  skip_primary_nav           :
+  skip_content               :
+  skip_footer                :
   page                       : "പേജ്"
   pagination_previous        : "തിരികെ"
   pagination_next            : "മുന്നോട്ട്"
@@ -1310,6 +1422,10 @@ ml-IN:
 # Thailand
 # --------------
 th: &DEFAULT_TH
+  skip_links                 :
+  skip_primary_nav           :
+  skip_content               :
+  skip_footer                :
   page                       : "หน้า"
   pagination_previous        : "ก่อนหน้า"
   pagination_next            : "ถัดไป"
@@ -1357,6 +1473,10 @@ th-TH:
 # Hindi
 # -----------------
 hi: &DEFAULT_HI
+  skip_links                 :
+  skip_primary_nav           :
+  skip_content               :
+  skip_footer                :
   page                       : "पृष्ठ"
   pagination_previous        : "पिछला"
   pagination_next            : "अगला"

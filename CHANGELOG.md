@@ -1,3 +1,9 @@
+## Unreleased
+
+### Enhancements
+
+- Add skip links. [#2182](https://github.com/mmistakes/minimal-mistakes/issues/2182)
+
 ## [4.16.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.16.4)
 
 ### Enhancements
