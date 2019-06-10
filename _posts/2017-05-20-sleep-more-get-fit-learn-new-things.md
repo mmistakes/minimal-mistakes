@@ -1,5 +1,5 @@
 ---
-title: Sleep more, get fit, learn new things
+title: Sleep More, Get Fit, Learn New Things
 ---
 
 

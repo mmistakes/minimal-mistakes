@@ -1,5 +1,5 @@
 ---
-title: consider using signal
+title: Consider Using Signal
 ---
 
 The Signal Protocol (which was developed by the two creators of Open Whisper Systems, including Moxie Marlinspike - the ex-head of security at Twitter) is implemented in closed source applications like Facebook's Whatsapp, Messenger, Google Allo, etc. The difference is that the Signal app and server code is open source, so it's easier for everyone in the world to ensure that 1) there are no bugs, and 2) the code isn't used to eavesdrop on you. Signal Foundation is non-profit (received 50M in funding) and the team is tiny (but highly talented).

@@ -1,5 +1,5 @@
 ---
-title: Three ideas to improve air travel
+title: Three Ideas to Improve Air Travel
 ---
 
 Dear Concierge Key and the rest of the American Airlines team.
