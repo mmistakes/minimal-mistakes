@@ -1,5 +1,7 @@
 ---
-title: Three Ideas to Improve Air Travel
+title: DRAFT Three Ideas to Improve Air Travel
+category: "Product Design"
+tag: "Airline"
 ---
 
 Dear Concierge Key and the rest of the American Airlines team.

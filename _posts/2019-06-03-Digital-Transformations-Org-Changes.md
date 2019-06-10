@@ -1,5 +1,7 @@
 ---
-title: Digital Transformations Necessitate Org Changes
+title: DRAFT Digital Transformations Necessitate Org Changes
+category: "Digital Transformation"
+tag: ["Organization", "Agile", "Design Sprints", "Conway's law"]
 ---
 
 Aside from the tech giants, established corporations have achieved success without ever learning to write good software fast and efficiently. And even seemingly very technologically competent organizations such as Sony, Blackberry, and Nokia have failed in good part due to poor delivery of digital tools. Delivering product they did, but not ones that met the user experience demanded by the market. 
