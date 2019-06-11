@@ -45,7 +45,6 @@ Thank you,
 
 `<Your name and contact info>`
 
-
 ## 1. Executive summary: use situation, complication, resolution to describe the product
 
 ### 1.1 Situation
@@ -73,20 +72,19 @@ Based on your feedback, we propose a proof of concept phase, followed by a three
 2. *User experience (UX), data gathering, and baseline tool*
     1. Interview stakeholders to understand the desired end user experience.
     2. Gather, test and validate data (internal, external, and vendor).
-    3. Build an basetool that provides private test users with something tangible and is useful.
-    4. Validate that the basetool brings value to the end user.
+    3. Build an prototype that provides private test users with something tangible and is useful.
+    4. Validate that the prototype brings value to the end user.
 3. *Feature expansion*
-    1. Develop the API against which the tools will connect, and setup the base processes (continuous integration/delivery, cyber security, quality assurance and testing, etc.).
+    1. Develop the API against which the product will connect, and setup the base processes (continuous integration/delivery, cyber security, quality assurance and testing, etc.).
     2. Implement and test web tool that connects to data in real time.
-    3. Release the tool for a small set of test users, expanding from the initial private users.
+    3. Release the product to a small set of test users, expanding from the initial private users.
     4. Validate UX hypothesis formulated in Phase 1 and adjust as necessary.
     5. Put in place metric to start to quantitatively (and objectively) measure the operational impact.
-4. *Productionalization*
+4. *Finalize the product and launch*
     1. Decide on the most valuable set of features to include in V1.0 of the product
     2. Implement required processes (cyber security, compliant, documentation, quality assurance, testing, etc.)
     3. Implement, monitor, and stabilize the product.
     4. Prepare deployment, and provide real-time world class support to ensure smooth and sequenced roll out to organization.
-
 
 ## 3. Estimated costs
 
@@ -98,19 +96,45 @@ First is the time and material estiamte. Expect that a product team will have be
 
 Blended market hourly rates for outsourced people in India, Philippines, or Eastern Europe will range from $20 to $80. If the work is performed on site in US/Canada/Europe, expect to pay $60 to $250. Anything more than that you are most likely paying overhead costs to the staffing agency/consulting company. For instance, it is not unheard of to see hourly rates in the $1,000+ range for partners in prestigious consulting firms (similar to top law firms). 
 
+Our estimated time and material cost is `<estimate>`
+
 ### Fixed cost estimate
 
 The main advantage of a fixed cost estimate (e.g., borken down by phase) is its simplicity. The main drawback is that building a product is akin to doing research - the outcomes are always uncertain. While the time and material estimate is biased in favor of the people doing the work (because they have no "deadline"), the fixed cost estiamte is biased in favor of the company purchasing the services. 
+
+Our estimated fixed cost is `<estimate>`
 
 ### Target and cap cost
 
 The contract is based on two figures: the “target price” and the “cap”.  The cap is the maximum that `<company financing the work>` will pay. The target is lower than the cap and the contract gives both parties a financial incentive to meet the target. If we `<provider of work>` come in under the target, the savings are shared equally between both parties.  Likewise, if we come in over the target, the extra cost is shared evenly – but only up to the cap.  If we reach the cap, it acts like a fixed price. The costs listed are target costs. Assume 25% extra for the cap.
 
+### Co-location costs
+
+Estimated colocation costs for each team member staying near New Wales is between $2,000 for 1 week, or $4,300 for one month. We include flights (round trip), travel insurance, accommodation, and per diem.
+
+| | For one week For one month |
+| - | - |
+| Flights | $1,000 | $1,000 |
+| Accomodation | $500 | $1,500 |
+| Insurance, Lyft/Uber, telecom | $175 | $500 |
+| Per diem | $325 | $1,300 |
+| Estimated total | $2,000 | $4,300 |
+
+You will be billed actual cost within reasonable deviations. These costs could be reduced, for instance, by leveraging your existing corporate housing, if available.
+
 ## 4. Product benefits: revenue increase, cost decrease, risk mitigation
+
+While we are flexible on technology underlying your architecture, our understanding is that you have existing infrastructure in `<Azure, AWS, GCP>`. The Architecture below is a starting point for addressing the implementation of your product.
+
+At the core is the simulator engine, written in `<e.g., Python>` and utilizing `<e.g., AWS Lambda>`. On top are the Command Line Interface (CLI) application and an API that calls the engine. The functionality of the simulator engine will be exposed via the API Management service to both the CLI and Web applications. The CLI application will output JSON or CSV files, for use in other applications.
+
+We are aware of legacy tools for `<legacy products>` built in `<e.g., .Net and SQL server>` that connect directly with `<e.g., IBM Maximo>`. Our approach is to build our tools as APIs (e.g., using `<e.g., Apigee>`) to build a service architecture. This will also enable greater efficiency with third parties.
 
 ## 5. Product design: UX 
 
 ## 6. Product implementation: data sources, architecture, tech stack
+
+
 
 ## 7. Processes and tools: quality assurance, testing, cyber security
 
