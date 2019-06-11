@@ -38,7 +38,7 @@ Paint a picture of what future success would look like. It’s easy to skip over
 
 ## Google design sprint
 
-I recommend that you head over to [Alex Jupiter's post](https://medium.theuxblog.com/a-product-design-toolkit-a-sprint-through-google-s-product-design-methodology-412b0743fadf), or watch the [videos](https://www.youtube.com/watch?v=Fc6A2WuEkZI&feature=youtu.be) and the book [](https://amzn.to/2WDMkB2) by Jake Knapp and John Zeratsky from Google Ventures.
+I recommend that you head over to [Alex Jupiter's post](https://medium.theuxblog.com/a-product-design-toolkit-a-sprint-through-google-s-product-design-methodology-412b0743fadf), or watch the [videos](https://www.youtube.com/watch?v=Fc6A2WuEkZI&feature=youtu.be) and the book [Sprint](https://amzn.to/2WDMkB2) by Jake Knapp and John Zeratsky from Google Ventures.
 
 ## Agile, Devops, and Products
 
