@@ -4,7 +4,7 @@ category: "Digital Transformation"
 tag: ["Organization", "Agile", "Design Sprints", "Conway's law"]
 ---
 
-Aside from the tech giants, established corporations have achieved success without ever learning to write good software fast and efficiently. And even seemingly very technologically competent organizations such as Sony, Blackberry, and Nokia have failed in good part due to poor delivery of digital tools. Delivering product they did, but not ones that met the user experience demanded by the market. 
+Aside from the tech giants, established corporations have achieved success without ever depending on their ability to write good software fast and efficiently. And even seemingly very technologically competent organizations such as Sony, Blackberry, and Nokia have failed in good part due to poor delivery of digital tools. Delivering product they did, but not ones that met the user experience demanded by the market. 
 
 Enters the [Digital Transformation (DX)](https://en.wikipedia.org/wiki/Digital_transformation), which includes everything from "going paperless" to applying machine learning in real time to predict outcomes from semi-structured data.
 
@@ -28,7 +28,7 @@ It may be tempting to create the ideal centralized or decentralized org chart fr
 
 # 2. Identify problems worth solving
 
-To mitigate the risks of failures, we recommend narrowing the scope of the teams at the on-set. This gives the team a clearer direction, and allows for a simpler set of metrics to evaluate the progress. For skunkworks type projects, we recommend strong guidelines limiting burn rate, and have clearly defined stage gates to avoid digging a bottomless pit.
+To mitigate the risks of failures, I recommend narrowing the scope of the teams at the on-set. This gives the team a clearer direction, and allows for a simpler set of metrics to evaluate the progress. For skunkworks type projects, I recommend strong guidelines limiting burn rate, and have clearly defined stage gates to avoid digging a bottomless pit.
 
 Start picking a problem in the upper right corner of the feasibility vs. upside matrix. In other words, a highly feasible problem, with high potential upside. Make the scope as narrow as possible without sacrificing the need to have a positive ROI. Now pick a metric that will be easy to measure for the business so that the project’s success will not be debatable. 
 
@@ -38,7 +38,14 @@ Paint a picture of what future success would look like. It’s easy to skip over
 
 ## Google design sprint
 
-I recommend that you head over to [Alex Jupiter's post](https://medium.theuxblog.com/a-product-design-toolkit-a-sprint-through-google-s-product-design-methodology-412b0743fadf), or watch the [videos](https://www.youtube.com/watch?v=Fc6A2WuEkZI&feature=youtu.be) and the [book](https://www.gv.com/sprint/) by Google Ventures.
+I recommend that you head over to [Alex Jupiter's post](https://medium.theuxblog.com/a-product-design-toolkit-a-sprint-through-google-s-product-design-methodology-412b0743fadf), or watch the [videos](https://www.youtube.com/watch?v=Fc6A2WuEkZI&feature=youtu.be) and the book [](https://amzn.to/2WDMkB2) by Jake Knapp and John Zeratsky from Google Ventures.
+
+## Agile, Devops, and Products
+
+Please do not fall into the Agile trap. It's a lot easier to look Agile than to be Agile. And even Nokia, the poster child of Agile in the late 2000s with a market cap of above $90B at the time, failed miserably. Writing large software is one of the most diffucult (and humbly) exercise there is. I highly recommend that you read the following two books on the topic of software delivery:
+
++ [The DevOps Handbook](https://amzn.to/2MIlfYI)
++ [Projects to Product](https://amzn.to/2MFuHMJ)
 
 # 4. Launch to production early
 
