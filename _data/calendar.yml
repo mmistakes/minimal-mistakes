@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "unterrichtsfrei",
-    "title": "unterrichtsfrei",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NmFkOTVnaGZtcTYxdTNicGYyajZpMjh0ZjEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-06-11",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-06-12",
-      "date_time": null
-    },
-    "created": "2019-03-24T10:18:21.000Z",
-    "updated": "2019-06-02T20:21:50.173Z"
-  },
-  {
-    "image_path": null,
     "alt": "Konflikt-Schülerlotsenfest Südpark",
     "title": "Konflikt-Schülerlotsenfest Südpark",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2019-03-24T10:22:04.000Z",
     "updated": "2019-03-24T10:22:04.310Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Sommerferien",
+    "title": "Sommerferien",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MmcxYmhuNnFwOWFrcGdnOWUycmVxNzZrMjkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-06-20",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-08-03",
+      "date_time": null
+    },
+    "created": "2019-03-24T10:30:20.000Z",
+    "updated": "2019-03-24T10:30:20.030Z"
   }
 ]
