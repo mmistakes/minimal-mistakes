@@ -1,7 +1,8 @@
 ---
-title: DRAFT Digital Transformations Necessitate Org Changes
+title: DRAFT How to Execute a Smooth Digital Transformations
 category: "Digital Transformation"
 tag: ["Organization", "Agile", "Design Sprints", "Conway's law"]
+toc: true
 ---
 
 Aside from the tech giants, established corporations have achieved success without ever depending on their ability to write (good, user-centered) software fast and efficiently. And even seemingly very technologically competent and customer-centric organizations such as Sony, Blackberry, and Nokia have failed in good part due to poor delivery of digital products. Delivering products they did, but not ones that met the user experience demanded by the market. 
@@ -15,19 +16,19 @@ I'm not going to rehash here the many [tips](https://www.cio.com/article/3211428
 3. **L**aunch to production early
 4. **K**ill the dogs, and accelerate the stars
 
-The main driver behind this approach is the realization that the analytics journey is filled with uncertainties, but also very rich in opportunities to capture savings, generate revenue, and be better corporate citizens for the environment. 
+The main driver behind this approach is the realization that the building digital products (data science involved or not) is filled with uncertainties, but also very rich in opportunities to capture savings, generate revenue, and be better corporate citizens for the environment. 
 
 # 1. Setup the VC Model
 
 Create a new container organization setup like an internal Venture Capitalist. The Venture Capitalist model is very simple to understand, but sometimes not totally obvious to implement. The fundamental idea is to set aside funds to finance the operation of a series of small product-teams (each with their own Product Manager) and establish a cross-function board accountable for the deployment of the funds and stage gate reviews. It is important that the board be composed of senior leaders who represent the business, and who have a vested interest in seeing both the “funded ideas” and the affected businesses succeed. It is also important that the board be ready to take calculated risks.
 
-## Warning: do not replicate your existing in software
+## 1.1 Warning: do not replicate your existing organization in software
 
 > "organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations." - M. Conway
 
-A strong motivation for creating small independent teams that are unconstrained from the existing organization is that they will be free to find inefficiencies of the current organization. For instance, imagine if Uber had been developed by an incumbent taxi company. A most likely feature would have been a way to contact dispatch, because the head of dispatch wanted to have those features in the app. Parts of your orgnaization will necessarily have to change and evolve, and setting up a VC model protects the product lines from the old habits of the organization.
+A strong motivation for creating small independent teams that are unconstrained from the existing organization is that they will be free to find inefficiencies of the current organization. For instance, imagine if Uber had been developed by an incumbent taxi company. A most likely feature would have been a way to call dispatch, because the head of dispatch wanted to have those features in the app. Parts of your orgnaization will necessarily have to change and evolve, and setting up a VC model protects the product lines from the old habits of the organization.
 
-## Maintain a fluid team structure
+## 1.2 Maintain a fluid team structure
 
 It may be tempting to create the ideal centralized or decentralized org chart from the start of the DX, but since you do not know ahead of time which ideas will succeed and by how much, it is better to delay this rigidity for as long as possible. In the same vein, it is important to be agile and capable of quickly scaling up and down teams. For this reason, a healthy mix of employees, contractors and consultants will be more efficient and adaptive in both the short and long run.
 
@@ -36,9 +37,9 @@ It may be tempting to create the ideal centralized or decentralized org chart fr
 
 To mitigate the risks of failures, I recommend narrowing the scope of the teams at the on-set. This gives the team a clearer direction, and allows for a simpler set of metrics to evaluate the progress. For skunkworks type projects, I recommend strong guidelines limiting burn rate, and have clearly defined stage gates to avoid digging a bottomless pit.
 
-Start picking a problem in the upper right corner of the feasibility vs. upside matrix. In other words, a highly feasible problem, with high potential upside. Make the scope as narrow as possible without sacrificing the need to have a positive ROI. A DX needs to show tangible benefits to shareholders. Now pick a metric that will be easy to measure for the business so that the project’s success will not be debatable. The best metrics have a clear line of sight to either revenue, cost, or risks/compliance metrics. Accuracy here, is less important than precision, and relative improvement.
+Start picking a problem in the upper right corner of the feasibility vs. upside matrix. In other words, a highly feasible problem, with high potential upside. Make the scope as narrow as possible without sacrificing the need to have a positive return on investment (ROI). A DX needs to show tangible benefits to shareholders. Now pick a metric that will be easy to measure for the business so that the project’s success will not be debatable. The best metrics have a clear line of sight to either revenue, cost, or risks/compliance metrics. Accuracy here, is less important than precision, and relative improvement.
 
-## Visualize the future
+## 2.1 Visualize the future
 
 Paint a picture of what future success would look like. It’s easy to skip over this step, but it is integral to the selection the problem space. By creating a clear, crisp picture (or even a video), it is easier to communicate to the affected organization and to the people joining the team what the future looks like. Make it real and involve stakeholders. Equipped with this picture, seek out a seasoned practitioner who will give you the right time of day and who will be overseeing the work from a critical vantage point of view. I highly recommend that you seek outside help and bring this person as a contractor/advisor. 
 
@@ -52,11 +53,11 @@ Your primary goal is to find so called "product market fit" (as originally defin
 
 Engage the relevant stakeholder and do something quick and dirty at first. Pull a small data set and test. The key here is to focus on doing one thing that will move the metric as defined in Step 1. Review and improve on the User Experience and Communication developed in Step 2. Don't build a massive data pipeline unless your product as traction with end-users. Sometimes just a great real-time visual might capture 80% of the value. 
 
-## Google design sprint
+## 3.1 Google design sprint
 
 I recommend that you head over to [Alex Jupiter's post](https://medium.theuxblog.com/a-product-design-toolkit-a-sprint-through-google-s-product-design-methodology-412b0743fadf), or watch the [videos](https://www.youtube.com/watch?v=Fc6A2WuEkZI&feature=youtu.be) and the book [Sprint](https://amzn.to/2WDMkB2) by Jake Knapp and John Zeratsky from Google Ventures.
 
-## Agile, Devops, and Products
+## 3.2 Agile, Devops, and Products
 
 Please do not fall into the Agile trap. It's a lot easier to look Agile than to be Agile. And even Nokia, the poster child of Agile in the late 2000s with a market cap of above $90B at the time, failed miserably. Writing large software is one of the most diffucult (and humbly) exercise there is. I highly recommend that you read the following two books on the topic of software delivery:
 
@@ -67,11 +68,11 @@ Please do not fall into the Agile trap. It's a lot easier to look Agile than to 
 
 Anticipate that the bigger cost of this engine is the long term maintenance, updates and evolution of the product. It's a product, not a project. As long as the product lives, you will incur costs. So ensure that you will set aside budget going forward to maintain and continue to tune the engine. Do not build in a silo or build a shadow IT organization. Instead, leverage your existing IT as much as possible but do not expect that they have infinite resources to support you either. You may need to complement their team with temporary flex resources.
 
-## Kill the dogs
+## 4.1 Kill the dogs
 
 The dogs will be easy to spot and don't be afraid to pull the trigger. The last thing a designer or an engineer wants to do is to work on a doomed project. Everyone will love you for it. If you see a lot of resistance from the team after you've made clear your intentions to stop it, you might want to understand this better. One effective approach is to give the time deliminated sandbox to do everything they can fight from behind and make a good comeback. 
 
-## Accelerate the stars
+## 4.2 Accelerate the stars
 
 Killing the dogs might be the easiest part of this last step. The more difficult one comes from success, because success means that there will players from the old organization who stand to lose relative influence.  But recalling Conway's Law again, it will be a lot easier to scale these new lines of business because they were setup as such from the start.
 

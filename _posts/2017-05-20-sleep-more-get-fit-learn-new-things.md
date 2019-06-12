@@ -2,6 +2,7 @@
 title: DRAFT Sleep More, Get Fit, Learn New Things
 category: "Health"
 tag: ["Sleep", "Fitness", "Learning"]
+toc: true
 ---
 
 

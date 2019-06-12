@@ -2,6 +2,7 @@
 title: DRAFT Process of Learning New Things
 category: "Education"
 tag: "Learning"
+toc: true
 ---
 
 I went to elementary school in the late 80s/early 90s at Ecole Sacre-Coeur, in Bouchervile, Quebec. A secular, boys and girls public school filled with hundreds of middle class kids, mostly whites (french Canadians, catholics turned atheist in majority) with a handful of asians (from Hong Kong?), a few arabs (from Morocco and Lebanon), a couple blacks (from Haiti), and no hispanics, South Asians, or other races/nationalities as far as I recall. Racism, sexism, and other forms of discriminations were foreign to me. 
