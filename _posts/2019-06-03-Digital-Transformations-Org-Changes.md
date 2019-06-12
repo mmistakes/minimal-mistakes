@@ -47,19 +47,19 @@ A good practititioner could be a successful company founder or a University prof
 
 One added benefit of having a credible practitioner is recruting. It will be significantly easier to get the very best talent to want to commit to working with you, and it will mitigate the downside risks for everyone.
 
+## 2.2 Google design sprint
+
+I recommend that you head over to [Alex Jupiter's post](https://medium.theuxblog.com/a-product-design-toolkit-a-sprint-through-google-s-product-design-methodology-412b0743fadf), or watch the [videos](https://www.youtube.com/watch?v=Fc6A2WuEkZI&feature=youtu.be) and the book [Sprint](https://amzn.to/2WDMkB2) by Jake Knapp and John Zeratsky from Google Ventures.
+
 # 3. Launch to production early
 
 Your primary goal is to find so called "product market fit" (as originally defined, I believe, by [Marc Andreesen in 2007](https://web.stanford.edu/class/ee204/ProductMarketFit.html)), or in other words find the "stars" in the [growth share matrix](https://en.wikipedia.org/wiki/Growth%E2%80%93share_matrix) (also known as the BCG matrix). 
 
 Engage the relevant stakeholder and do something quick and dirty at first. Pull a small data set and test. The key here is to focus on doing one thing that will move the metric as defined in Step 1. Review and improve on the User Experience and Communication developed in Step 2. Don't build a massive data pipeline unless your product as traction with end-users. Sometimes just a great real-time visual might capture 80% of the value. 
 
-## 3.1 Google design sprint
+## 3.1 Agile, Devops, and Products
 
-I recommend that you head over to [Alex Jupiter's post](https://medium.theuxblog.com/a-product-design-toolkit-a-sprint-through-google-s-product-design-methodology-412b0743fadf), or watch the [videos](https://www.youtube.com/watch?v=Fc6A2WuEkZI&feature=youtu.be) and the book [Sprint](https://amzn.to/2WDMkB2) by Jake Knapp and John Zeratsky from Google Ventures.
-
-## 3.2 Agile, Devops, and Products
-
-Please do not fall into the Agile trap. It's a lot easier to look Agile than to be Agile. And even Nokia, the poster child of Agile in the late 2000s with a market cap of above $90B at the time, failed miserably. Writing large software is one of the most diffucult (and humbly) exercise there is. I highly recommend that you read the following two books on the topic of software delivery:
+Please do not fall into the Agile trap. It's a lot easier to look Agile than to be Agile. And even Nokia, the poster child of Agile in the late 2000s with a market cap of above $90B at the time, failed miserably. Writing large software is one of the most difficult (and humbly) exercise there is. I highly recommend that you read the following two books on the topic of software delivery:
 
 + [The DevOps Handbook](https://amzn.to/2MIlfYI)
 + [Projects to Product](https://amzn.to/2MFuHMJ)
