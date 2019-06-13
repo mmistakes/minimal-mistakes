@@ -1,11 +1,11 @@
 ---
-title: DRAFT How to Write a Product Proposal 
+title: Make a Great Product out of your Product Proposal 
 category: "Digital Transformation"
 tag: ["Template", "Product", "Letter of Proposal"]
 toc: true
 ---
 
-The primary role of a product proposal document is to get funding from a sponsor, regardless of who the sponsor is. Whether you are a new product manager at a startup or a junior partner consultant seeking the business of a large enterprise (in the middle of a [digital transformation](https://blog.dannycastonguay.com/digital%20transformation/Digital-Transformations-Org-Changes/)), chances are that you are struggling with getting your product proposal accepted. I certainly did when I played such roles before, and quite frankly I still do today.
+The primary role of a product proposal document is to get funding from a sponsor, regardless of who the sponsor is. Whether you are a new product manager at a startup or a junior partner consultant seeking the business of a large enterprise (in the middle of a [digital transformation](https://blog.dannycastonguay.com/digital%20transformation/how-to-make-your-dx-sikly-smooth/)), chances are that you are struggling with getting your product proposal accepted. I certainly did when I played such roles before, and quite frankly I still do today.
 
 With the mindset that a proposal document is a product, whose goal is to discover, persuade and influence others to join a cause, it is in itself a worthwhile exercise for the author (presumably the de facto product manager).
 
