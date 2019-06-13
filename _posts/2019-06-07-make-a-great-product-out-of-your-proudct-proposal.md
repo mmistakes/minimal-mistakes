@@ -9,7 +9,7 @@ The primary role of a product proposal document is to get funding from a sponsor
 
 With the mindset that a proposal document is a product, whose goal is to discover, persuade and influence others to join a cause, it is in itself a worthwhile exercise for the author (presumably the de facto product manager).
 
-I propose here a framework for how to organize a product proposal, as well as a few sample paragraphs which I have used before for each sections. I'm hoping that the framework and these examples will help or inspire entrepreneurs, consultants and product managers out there - please don't be shy and send me your thoughts and feedback.
+I propose here a framework for how to organize a product proposal, as well as a few sample paragraphs which I have used before for each section. I'm hoping that the framework and these examples will help or inspire entrepreneurs, consultants and product managers out there - please don't be shy and send me your thoughts and feedback.
 
 # The PRODUCT Proposal Framework
 
@@ -33,7 +33,7 @@ Here's how the overall framework structure is organized:
 
 The **Personalized letter** serves as a way to tie the context of the last and next conversations you plan on having with the sponsor. This introductory part of the document should be short, and deal more with building a trusted relationship than deep content. 
 
-The **Rundown** serves as a single page document that is broad in scope, but laser sharp on the important details. Think of it as the bullet points that you want your counterpart to use to go persuade a boss, or a board/advisors. It is different from an abstract because those tend to be very short (and academic), and it is also different from an Executive Summary because those tend to focus more on the financial aspect. I want to avoid focussing on the financial upside because it is premature optimization ([the root of all evil](http://www.paulgraham.com/knuth.html)) - in time, it will come if you build something valuable that people want. 
+The **Rundown** serves as a single page document that is broad in scope, but laser sharp on the important details. Think of it as the bullet points that you want your counterpart to use to go persuade a boss, or a board/advisors. It is different from an abstract because those tend to be very short (and academic), and it is also different from an Executive Summary because those tend to focus more on the financial aspect. I want to avoid focussing on the financial upside because it is a premature optimization ([the root of all evil](http://www.paulgraham.com/knuth.html)) - in time, it will come if you build something valuable that people want. 
 
 The **Outline of work** gives a sense of the sequence of steps you plan on taking to deliver the first few months of work. Even if you are a startup and don't know exactly where you are going, it is a good idea to spend at least a few hours initially (and periodically after) to think carefully about sequencing important pieces of work. Agile or not, anticipating the future is smart, as long as you don't fool yourself into thinking that you have perfect foresight and avoid the trap of thinking in terms of "late" or "missed deadlines".
 
@@ -41,9 +41,9 @@ The **Design and user insights** comes next and gives the reader reassurance tha
 
 The **Understanding of implementation challenges** is a necessary section only in so far that you do not yet have complete trust from your sponsor in your ability to deliver good software products, or that there is uncertainty on what's possible to achieve (e.g., you can't do good data science if you don't have data). In many cases it's less about you, and it's a more about the sponsor. For instance, you may have a sponsor who has never built products before, or has prior bitter experiences  (common for both VCs and large Enterprise alike). If at the end of a discussion, your sponsor seems overly focussed on implementation details (e.g., "will you use Apache Kafka?"), then expect that you need to invest more time in detailing the (anticipated) approach up-front. Regardless of the reasons, it's an important section. 
 
-The **Costs estimates** are one of the most critical section to get to a "yes", despite its place (second to last) in the framework. Note that it's better to be upfront and transparent about costs, because it enables the sponsor/investors to do sanity checks on your ability to deliver. If your costs are too low, chances are you are under-estimating the work involved. If your costs are too high, chances are that you are trying to build too much too quickly, or you are just paying people too much. 
+The **Costs estimates** are one of the most critical section to get to a "yes", despite its placement (second to last) in the framework. Note that it's better to be upfront and transparent about costs, because it enables the sponsor/investors to do sanity checks on your ability to deliver. If your costs are too low, chances are you are under-estimating the work involved. If your costs are too high, chances are that you are trying to build too much too quickly, or you are just paying people too much. 
 
-Finally, **Tools and processes** are a bit more mundate, but you can't really do without them, so might as well get everyone aligned on a common language up front. What issue tracker will you use? Where will the team be located? What are expectations in terms of hours? What's the process for Cybersecurity? How will defects be reported? This section is especially important in heavily regulated industries (e.g., financial services). 
+Finally, **Tools and processes** are a bit more mundane, but you can't really do without them, so you might as well get everyone aligned on a common language up front. What issue tracker will you use? Where will the team be located? What are expectations in terms of hours? What's the process for Cybersecurity? How will defects be reported? This section is especially important in heavily regulated industries (e.g., financial services). 
 
 # Sample content
 
@@ -55,7 +55,7 @@ If you have read this far, thank you! A framework alone isn't very useful so I'm
 
 *Dear `<Names>`,*
 
-*Thank you for the invitation to discuss the `<product idea>` opportunity with you. I want to help you achieve `<business goal>` by targetting `<customer segment>` with a brand positioning inspired by `<sample product>`.*
+*Thank you for the invitation to discuss the `<product idea>` opportunity with you. I want to help you achieve `<business goal>` by targeting `<customer segment>` with a brand positioning inspired by `<sample product>`.*
 
 *The `<product>` can be placed in `<channel>`, promoted to people with `<incentives>` to increase adoption, and priced according to `<pricing hypothesis>`.*
 
@@ -102,14 +102,14 @@ If you have read this far, thank you! A framework alone isn't very useful so I'm
 2. *User experience (UX), data gathering, and baseline tool*
     1. *Interview stakeholders to understand the desired end user experience.*
     2. *Gather, test and validate data (internal, external, and vendor).*
-    3. *Build an prototype that provides `<list private test users>` with something tangible and is useful.*
+    3. *Build a prototype that provides `<list private test users>` with something tangible and is useful.*
     4. *Validate that the prototype brings `<desired benefit/value>` to the end user.*
 3. *Feature expansion*
     1. *Develop `<set of features>`*
     2. *Setup the base processes (continuous integration/delivery, cyber security, quality assurance and testing, etc.).*
     3. *Release the product to a small set of test users, expanding from the initial private users.*
     4. *Validate UX hypothesis formulated in Phase 1 and adjust as necessary.*
-    5. *Put in place metric to start to quantitatively (and objectively) measure the operational impact.*
+    5. *Put in place metrics to start to quantitatively (and objectively) measure the operational impact.*
 4. *Finalize the product and launch*
     1. *Decide on the most valuable set of features to include in V0.1 of the product*
     2. *Implement required processes `<(cyber security, compliant, documentation, quality assurance, testing, etc.)>`*
@@ -121,7 +121,7 @@ If you have read this far, thank you! A framework alone isn't very useful so I'm
 *We will be crafting the User Experience alongside Engineering developments and will be just as iterative to ensure things are moving along. We want to start with a base level of clear access to needed information to make sure features are usable from the get go. We will then continually revise and improve application usability based on user feedback. To make the most of `<important featre>` we will be considering things like `<e.g., easy information entry, intuitive controls, and readable output of useful information>`.*
 
 1. *Design. UX Deliverable(s): Low and High Fidelity Prototypes*
-    1. *Low-fidelity Prototypes (Wireframe). Illustrate how the content will be laid out on each screen. We will be omitting any aesthetic design details, focusing on creating a visual framework for stakeholders, designers, and developers. This allows all parties to get a feel of how and where content should be placed.*
+    1. *Low-fidelity Prototypes (Wireframe). Illustrate how the content will be laid out on each screen. We will be omitting any aesthetic design details, focussing on creating a visual framework for stakeholders, designers, and developers. This allows all parties to get a feel of how and where content should be placed.*
     2. *Design Review. The low-fidelity prototype is evaluated against its requirements in order to verify the outcomes of previous activities, and identify issues before committing to - and if need to be re-prioritised - further work.*
     3. *High-Fidelity Prototypes. These will show all the intended visual and typographic design details of the application, as it would be on final output. This will be handed over to the Engineering team for development.*
 2. *Internal Testing (within Staging). UX Deliverable(s): Adjusted High-fidelity Prototypes*
