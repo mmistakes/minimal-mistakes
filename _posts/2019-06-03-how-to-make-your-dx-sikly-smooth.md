@@ -1,5 +1,5 @@
 ---
-title: DRAFT How to Execute a Smooth Digital Transformations
+title: DRAFT How to Make your Digital Transformations Sikly Smooth
 category: "Digital Transformation"
 tag: ["Organization", "Agile", "Design Sprints", "Conway's law"]
 toc: true
@@ -35,9 +35,9 @@ It may be tempting to create the ideal centralized or decentralized org chart fr
 
 # 2. Identify problems worth solving
 
-To mitigate the risks of failures, I recommend narrowing the scope of the teams at the on-set. This gives the team a clearer direction, and allows for a simpler set of metrics to evaluate the progress. For skunkworks type projects, I recommend strong guidelines limiting burn rate, and have clearly defined stage gates to avoid digging a bottomless pit.
+To mitigate the risks of failures, I recommend narrowing the scope of the teams at the on-set. This gives the team a clearer direction, and allows for a simpler set of metrics to evaluate the progress. For skunkworks type products, I recommend strong guidelines limiting burn rate, and have clearly defined stage gates to avoid digging a bottomless pit.
 
-Start picking a problem in the upper right corner of the feasibility vs. upside matrix. In other words, a highly feasible problem, with high potential upside. Make the scope as narrow as possible without sacrificing the need to have a positive return on investment (ROI). A DX needs to show tangible benefits to shareholders. Now pick a metric that will be easy to measure for the business so that the project’s success will not be debatable. The best metrics have a clear line of sight to either revenue, cost, or risks/compliance metrics. Accuracy here, is less important than precision, and relative improvement.
+Start picking a problem in the upper right corner of the feasibility vs. upside matrix. In other words, a highly feasible problem, with high potential upside. Make the scope as narrow as possible without sacrificing the need to have a positive return on investment (ROI). A DX needs to show tangible benefits to shareholders. Now pick a metric that will be easy to measure for the business so that the products’s success will not be debatable. The best metrics have a clear line of sight to either revenue, cost, or risks/compliance metrics. Accuracy here, is less important than precision, and relative improvement.
 
 ## 2.1 Visualize the future
 
