@@ -157,13 +157,11 @@ If you have read this far, thank you! A framework alone isn't very useful so I'm
 
 #### 5.2 Existing data sources
 
-*As part of the initial engagement, a definition and analysis will be done on the existing state of data sources based on variables such as centralization, accessibility, performance, structure, and more. This will be achieved through `<e.g., a “data maturity assessment” (DMA), developed by `[TDWI](https://tdwi.org/pages/maturity-model/big-data-maturity-model-assessment-tool.aspx)`>` and as a result will signal on the current gaps and opportunities.*
+*We will study aspects of existing data sources such as centralization, accessibility, performance, structure, and more. This will be achieved through `<e.g., a “data maturity assessment” (DMA)>` developed by `<e.g.,`[TDWI](https://tdwi.org/pages/maturity-model/big-data-maturity-model-assessment-tool.aspx)`>`. This foundational exercise will give us an understanding of the current gaps and opportunities.*
 
 #### 5.3 New data sources
 
-*Following the analysis of existing data sources, a proposal and plan will be developed which will focus on connecting and structuring the existing data sources and also extending and implementing new data sources that are required to enable the development of the proposed solutions.*
-
-*Based on the data maturity assessment, we can easily identify where gaps lie and how to address those. The major goal is to improve on `<e.g., current base line>` and extend the level of data centralization, integration and having more insightful data. As a relevant example here - `<e.g., dwell times of trucks need further insight and data infrastructure>` to allow for `<e.g., real-time optimizations to be done in real time to increase asset utilization>`.*
+*Following the analysis of existing data sources, we will develop a plan to connect, structure, and extend to new data sources that are required.*
 
 ## 6. Cost estimates
 
@@ -177,7 +175,7 @@ Blended market hourly rates for outsourced people in India, Philippines, or East
 
 ### 6.2 Fixed cost estimate
 
-The main advantage of a fixed cost estimate (e.g., broken down by phase) is its simplicity. The main drawback is that building a product is akin to doing research - the outcomes are always uncertain. While the time and material estimate is biased in favor of the people doing the work (because more time means more money), the fixed cost estimate is biased in favor of the company purchasing the services, as long as the bar on quality is maintained (which unfortunately is often not the case). 
+The main advantage of a fixed cost estimate (e.g., broken down by phase) is its simplicity. The main drawback is that building a product is akin to doing research - the outcomes are always uncertain. While the time and material estimate is biased in favor of the people doing the work (because more time means more money), the fixed cost estimate is biased in favor of the company purchasing the product building services, as long as the bar on quality is maintained (which unfortunately is often not the case). 
 
 ### 6.3 Target and cap cost
 
@@ -185,7 +183,7 @@ This is my preferred contract, but I have yet to meet a procurement team of a la
 
 ### 6.4 Co-location costs
 
-Estimated collocation costs for each team member is between `<e.g., $2,000 for 1 week, or $4,300 for one month>`. We include flights (round trip), travel insurance, accommodation, and per diem.
+*Estimated collocation costs for each team member is between `<e.g., $2,000 for 1 week, or $4,300 for one month>`. We include flights (round trip), travel insurance, accommodation, and per diem.*
 
 | | *For one week* | *For one month* |
 | - | - | - |
@@ -201,17 +199,17 @@ Estimated collocation costs for each team member is between `<e.g., $2,000 for 1
 
 ### 7.1 QA and testing
 
-*Quality assurance, automation and testing are crucial to the process of implementing software with a high degree of quality and reliability. The purpose of such engineers is to provide the necessary tooling, testing and support. This process validates and ensures functioning of software by going through phases such as smoke tests (validating main functionality), comprehensive tests (manual detailed testing and verification for low volume edge cases and mission critical components), and regression tests (validating that older parts of the software still work when the new part is introduced). Finally QA defines the processes and tooling for testing and deployment automation to ensure an auditable release process.*	
+*Quality assurance, automation and testing are crucial to the process of implementing software with a high degree of quality and reliability. This process validates and ensures functioning of software by going through phases such as smoke tests (validating main functionality), comprehensive tests (manual detailed testing and verification for low volume edge cases and mission critical components), and regression tests (validating that older parts of the software still work when the new part is introduced). Finally QA defines the processes and tooling for testing and deployment automation to ensure an auditable release process.*	
 
 ### 7.2 Cyber security
 
-This is to be completed based on `<company>` Cyber Security requirements/processes (sanitized, best in class examples from other clients are available). 
+*This is to be completed based on `<company>` Cyber Security requirements/processes (sanitized, best in class examples from other clients are available).* 
 
 *Best practice is to leverage the help of an expert consultant who is separate from `<the development team>` and provides an audit of the system independent of the implementation.*
 
 ### 7.3 Productivity tools
 
-*We are open to adopting `<company>` preferred/existing set of collaboration tools `<(e.g., Microsoft Team, GitHub)>`. We recommend `<e.g., BitBucket, JIRA, and Confluence>` for engaging with product and technical teams and `<e.g., Slack>` is recommended for team communication.
+*We are open to adopting `<company>` preferred/existing set of collaboration tools `<(e.g., Microsoft Team, GitHub)>`. We recommend `<e.g., BitBucket, JIRA, and Confluence>` for engaging with product and technical teams and `<e.g., Slack>` is recommended for team communication.*
 
 ### 7.4 Processes
 
@@ -223,5 +221,7 @@ To survive and thrive in the age of software, I recommend measuring important me
 
 + [The DevOps Handbook](https://amzn.to/2MIlfYI)
 + [Projects to Product](https://amzn.to/2MFuHMJ)
+
+---
 
 You've reached the end. Now go write that proposal and let me know how it goes.
