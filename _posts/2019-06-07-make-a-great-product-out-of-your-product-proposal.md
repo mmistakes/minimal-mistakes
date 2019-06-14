@@ -93,12 +93,12 @@ If you have read this far, thank you! A framework alone isn't very useful so I'm
 
 ## 3. Outline of work
 
-*Based on your feedback, I propose a proof of concept phase, followed by a three-phased approach to build the two tools, from conception to quantifiable impact. At the end of each of the four phases, a stage gate meeting will be held to review completion of the work and make a decision on the best next steps. All of this will be done in close collaboration with `<relevant teams>`.*
+*Based on your feedback, I propose a proof of concept phase, followed by a three-phased approach to build `<product name>`, from conception to quantifiable impact. At the end of each of the four phases, a stage gate meeting will be held to review completion of the work and make a decision on the best next steps. All of this will be done in close collaboration with `<relevant teams>`.*
 
 1. *Proof of concept (POC)*
     1. *Conduct Google Ventures Design Sprint.*
     2. *Evaluate current data sources and pipelines.*
-    3. *Implement proof of concept `<first feature set>` with base dataset*
+    3. *Implement proof of concept `<first feature set>` with base data set*
 2. *User experience (UX), data gathering, and baseline tool*
     1. *Interview stakeholders to understand the desired end user experience.*
     2. *Gather, test and validate data (internal, external, and vendor).*
