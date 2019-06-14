@@ -5,9 +5,11 @@ tag: "Airline"
 toc: true
 ---
 
-I consider myself as mindful of the environment. For instance, I took a number of courses on sustainability at MIT with [Jason Jay](https://mitsloan.mit.edu/sustainability/video/how-to-keep-conversation-alive-in-a-polarized-world-jason-jay-tedxbocaraton). Yet, in my former job as a consultant, I flew as many miles per year as airline pilots - they can fly a max of 1000 hours per year, and I regularly sat down on airplanes for over 20 hours per week. 
+I consider myself as mindful of the environment in the context of our macro-economy. For instance, I took a number of courses on the topic at MIT with [Jason Jay, Roberto Rigobon, and John Sterman](https://mitsloan.mit.edu/sustainability/team). Yet, in my former job as a consultant, I flew as many miles per year as airline pilots - they can fly a max of 1000 hours per year, and I regularly sat down on airplanes for over 20 hours per week. 
 
-Here's three ideas to improve air travel.
+If you can avoid it, please stay home. For less than the price of a place ticket, you can get yourself a great microphone like the [Blue Yeti](https://amzn.to/2WDTtwr) - totally worth the expense so that you are always heard clearly on conference calls. 
+
+In any case, here's three ideas to improve air travel - I know at least one US airline is listening (thanks for the note!).
 
 # 1. In flight app that learns and remembers customer preferences
 
