@@ -12,11 +12,11 @@ excerpt_separator: <!--more-->
 
 <!--more-->
 
-# 설치 : Golang
+## 설치 : Golang
 
 Golang 개발을 시작하기 위해서는 Golang 실행 파일을 다운받아야 합니다. Google 에서 "Golang" 을 검색하면 간단히 다운로드가 가능합니다.
 
-# 설치 : Visual Studio Code _ Go Extension
+## 설치 : Visual Studio Code _ Go Extension
 
 저는 개발 툴로 Visual Studio Code 를 사용합니다. Go 관련하여 여러 IDE 가 있지만 무료 중에서 가장 좋은 툴이라고 생각합니다. 
 vscode 를 설치하는 방법은 다루지 않겠으나, Go Extension 을 설치하는 방법은 간단히 다루도록 하겠습니다.
@@ -65,13 +65,36 @@ gometalinter --install
 go get -u github.com/go-delve/delve/cmd/dlv
 ```
 
-# Golang : 
+## Golang : 실행 확인
 
+powershell 화면을 실행하고 아래의 명령어를 실행합니다.
 
+```powershell
+mkdir tmp_golang
+cd tmp_golang
+code .
+```
 
-# 참고
+아래의 소스 파일을 만들고 `Ctrl + F5` 를 조합키를 눌러주세요.
+
+```golang
+package main
+
+import "fmt"
+
+func main() {
+  fmt.Printf("Hello\n")
+}
+```
+
+vscode 가 동작하면서 `Hello` 메시지를 출력하면 성공입니다.
+
+## 참고
 
 - [Visual Studio Code : Golang 확장 설치](https://github.com/Microsoft/vscode-go/wiki/Go-tools-that-the-Go-extension-depends-on)
 
+## 결론
 
+이번 시간에는 golang 을 개발할 수 있는 IDE 를 설정해 보았습니다. 시작이 반이라고 합니다. 즐거운 코딩 되시길 바랍니다.
 
+지금까지 **코마**의 훈훈한 블로그 였습니다. 구독해 주셔서 감사합니다. 더욱 발전하는 모습을 보여드리기 위해 노력하도록 하겠습니다.
