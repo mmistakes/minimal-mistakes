@@ -1,5 +1,5 @@
 ---
-title: DRAFT Three Ideas to Make Air Travel Less Miserable
+title: Three Ideas to Make Air Travel Less Miserable
 category: "Product Design"
 tag: "Airline"
 toc: true
