@@ -1,13 +1,13 @@
 ---
-title: DRAFT Three Ideas to Improve Air Travel
+title: DRAFT Three Ideas to Make Air Travel Less Miserable
 category: "Product Design"
 tag: "Airline"
 toc: true
 ---
 
-Dear Concierge Key and the rest of the American Airlines team.
+I consider myself as mindful of the environment. For instance, I took a number of courses on sustainability at MIT with [Jason Jay](https://mitsloan.mit.edu/sustainability/video/how-to-keep-conversation-alive-in-a-polarized-world-jason-jay-tedxbocaraton). Yet, in my former job as a consultant, I flew as many miles per year as airline pilots - they can fly a max of 1000 hours per year, and I regularly sat down on airplanes for over 20 hours per week. 
 
-I’ve been travelling with you a lot over the years and I enjoy thinking of ways to improve our lives with technology. Here are three suggestions for you.
+Here's three ideas to improve air travel.
 
 # 1. In flight app that learns and remembers customer preferences
 
@@ -52,8 +52,6 @@ Partner purchase: Make a minimum purchase of $200 on Amazon
 AAdvantage sign-up: Sign up for an AAdvantage credit card
 
 ---
-
-
 
 Thanks for reading.
 

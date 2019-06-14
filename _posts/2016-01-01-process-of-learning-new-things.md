@@ -21,4 +21,4 @@ That being said, since I don't believe that any of us are very different in our 
 
 I don't value intelligence or abilities much. You can code depth-first-search in Python in 10 minutes? Good for you! Rather, I value the process by which you are learning new things and challenging yourselves. I try to understand whether the software that runs in your head will be able to quickly get up to speed to solve the most important problems that face us. I try to gauge the extent. If you have 10 minutes and can concentrate on watching an animated video, I think it will be worth your time (it was valuable for me): https://www.youtube.com/watch?v=Yl9TVbAal5s&feature=youtu.be
 
-In a subsequent post, I explore a framework I'm proposing for evaluating the strenght of a team member. 
+In a subsequent post, I explore a framework I'm proposing for evaluating the strength of a team member. 
