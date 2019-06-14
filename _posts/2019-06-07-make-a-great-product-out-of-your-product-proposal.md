@@ -65,7 +65,7 @@ If you have read this far, thank you! A framework alone isn't very useful so I'm
 + *`<feature2: benefit2>`*
 + *`<feature3: benefit3>`*
 
-*While there are some tradeoffs to consdier, such as `<list tradeoffs>`, imagine a future where `<product vision>`.*
+*While there are some tradeoffs to consider, such as `<list tradeoffs>`, imagine a future where `<product vision>`.*
 
 *I'm excited to work with you on this because I firmly believe in `<sponsor's company>` role to ensure that `<company purpose>`.*
 
@@ -122,7 +122,7 @@ If you have read this far, thank you! A framework alone isn't very useful so I'm
 
 1. *Design. UX Deliverable(s): Low and High Fidelity Prototypes*
     1. *Low-fidelity Prototypes (Wireframe). Illustrate how the content will be laid out on each screen. We will be omitting any aesthetic design details, focussing on creating a visual framework for stakeholders, designers, and developers. This allows all parties to get a feel of how and where content should be placed.*
-    2. *Design Review. The low-fidelity prototype is evaluated against its requirements in order to verify the outcomes of previous activities, and identify issues before committing to - and if need to be re-prioritised - further work.*
+    2. *Design Review. The low-fidelity prototype is evaluated against its requirements in order to verify the outcomes of previous activities, and identify issues before committing to - and if need to be re-prioritized - further work.*
     3. *High-Fidelity Prototypes. These will show all the intended visual and typographic design details of the application, as it would be on final output. This will be handed over to the Engineering team for development.*
 2. *Internal Testing (within Staging). UX Deliverable(s): Adjusted High-fidelity Prototypes*
     1. *Design QA. To keep the integrity of the user experience, we will conduct Design QA, in collaboration with the Engineering team. This is a step during development, to review the coded version of the UI (prior to testing). This involves working with the Engineers to make updates to the UI in code.*
@@ -170,13 +170,13 @@ Here I provide you with a commentary instead of actually sample paragraphs. I pr
 
 ### 6.1 Time and material estimate
 
-First is the time and material estiamte. Expect that a product team will have between 1 to 10 people at any given time. Anything more than 10 is becoming at risk of too much communication overhead. It is probably wiser to reduce the team size and reduce the set of features. If that's no possible, then consider splitting the product into two products. 
+First is the time and material estimate. Expect that a product team will have between 1 to 10 people at any given time. Anything more than 10 is becoming at risk of too much communication overhead. It is probably wiser to reduce the team size and reduce the set of features. If that's no possible, then consider splitting the product into two products. 
 
 Blended market hourly rates for outsourced people in India, Philippines, or Eastern Europe will range from $20 to $80. If the work is performed on site in US/Canada/Europe, expect to pay $60 to $250. Anything more than that you are most likely paying overhead costs to the staffing agency/consulting company. For instance, it is not unheard of to see hourly rates in the $1,000+ range for partners in prestigious consulting firms (similar to top law firms).
 
 ### 6.2 Fixed cost estimate
 
-The main advantage of a fixed cost estimate (e.g., borken down by phase) is its simplicity. The main drawback is that building a product is akin to doing research - the outcomes are always uncertain. While the time and material estimate is biased in favor of the people doing the work (because more time means more money), the fixed cost estiamte is biased in favor of the company purchasing the services, as long as the bar on quality is maintained (which unfortunately is often not the case). 
+The main advantage of a fixed cost estimate (e.g., broken down by phase) is its simplicity. The main drawback is that building a product is akin to doing research - the outcomes are always uncertain. While the time and material estimate is biased in favor of the people doing the work (because more time means more money), the fixed cost estimate is biased in favor of the company purchasing the services, as long as the bar on quality is maintained (which unfortunately is often not the case). 
 
 ### 6.3 Target and cap cost
 
@@ -184,12 +184,12 @@ This is my preferred contract, but I have yet to meet a procurement team of a la
 
 ### 6.4 Co-location costs
 
-Estimated colocation costs for each team member is between `<e.g., $2,000 for 1 week, or $4,300 for one month>`. We include flights (round trip), travel insurance, accommodation, and per diem.
+Estimated collocation costs for each team member is between `<e.g., $2,000 for 1 week, or $4,300 for one month>`. We include flights (round trip), travel insurance, accommodation, and per diem.
 
 | | *For one week* | *For one month* |
 | - | - | - |
 | *Flights* | *$1,000* | *$1,000* |
-| *Accomodation* | *$500* | *$1,500* |
+| *Accommodation* | *$500* | *$1,500* |
 | *Insurance, Lyft/Uber, telecom* | *$175* | *$500* |
 | *Per diem* | *$325* | *$1,300* |
 | *Estimated total* | *$2,000* | *$4,300* |
