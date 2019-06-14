@@ -120,15 +120,15 @@ If you have read this far, thank you! A framework alone isn't very useful so I'm
 
 *We will be crafting the user experience alongside engineering developments and will be just as iterative to ensure things are moving along. We want to start with a base level of clear access to needed information to make sure features are usable from the get go. We will then continually revise and improve application usability based on user feedback. To make the most of `<important feature>` we will be considering things like `<e.g., easy information entry, intuitive controls, and readable output of useful information>`.*
 
-1. *Design. UX Deliverable(s): Low and High Fidelity Prototypes*
+1. *Design. UX deliverable(s): Low and high fidelity prototypes*
     1. *Low-fidelity prototypes (wireframe). Illustrate how the content will be laid out on each screen. We will be omitting any aesthetic design details, focussing on creating a visual framework for stakeholders, designers, and developers. This allows all parties to get a feel of how and where content should be placed.*
     2. *Design review. The low-fidelity prototype is evaluated against its requirements in order to verify the outcomes of previous activities, and identify issues before committing to - and if need to be re-prioritized - further work.*
     3. *High-fidelity prototypes. These will show all the intended visual and typographic design details of the application, as it would be on final output. This will be handed over to the Engineering team for development.*
 2. *Internal testing (within staging). UX deliverable(s): adjusted high-fidelity prototypes*
     1. *Design quality assurance. To keep the integrity of the user experience, we will conduct Design QA, in collaboration with the engineering team. This is a step during development, to review the coded version of the UI (prior to testing). This involves working with the engineers to make updates to the UI in code.*
-3. *Evaluation *
+3. *Evaluation*
     1. *Post-launch usability testing. To optimize the application’s usage and the viability of its features, we can conduct a usability test, post-launch.*
-    2. *Quantitative - We’ll look at the analytics of the application, and evaluate the necessary data that correlates to UX/UI pain points, such as the number of errors, number of clicks, or time taken to complete the task. From the data gathered, we’ll come up with suggestions for improvements, and potential next steps.	*
+    2. *Quantitative - We’ll look at the analytics of the application, and evaluate the necessary data that correlates to UX/UI pain points, such as the number of errors, number of clicks, or time taken to complete the task. From the data gathered, we’ll come up with suggestions for improvements, and potential next step.*
     3. *Qualitative - We’ll send out a survey, and conduct interviews with the primary and secondary users, to evaluate the features and functionality that can be improved. We’ll propose enhancements that can be made, for future iterations of the application*
 
 *Based on our preliminary study of `<user segment>`, here's a sample user persona and an associated journey map.*
@@ -148,15 +148,16 @@ If you have read this far, thank you! A framework alone isn't very useful so I'm
 
 *While we are flexible on technology underlying your architecture, our understanding is that you have existing infrastructure in `<Azure, AWS, GCP>`. The Architecture below is a starting point for addressing the implementation of your product.*
 
+*`<insert relevant diagrams, like an architecture diagram, data pipelines, etc.>`*   
+
 *At the core is `<e.g., the simulator engine>`, written in `<e.g., Python>` and utilizing `<e.g., AWS Lambda>`. On top are the `<e.g., Command Line Interface (CLI) application and an API that calls the engine>`. The functionality of `<e.g., the simulator engine>` will be exposed via `<e.g., the API Management service to both the CLI and Web applications>`.*
 
 *We are aware of legacy tools for `<legacy products>` built in `<e.g., .Net and SQL server>` that connect directly with `<e.g., IBM Maximo>`. Our approach is to build our tools as APIs (e.g., using `<e.g., Apigee>`) to build a service architecture. This will also enable greater efficiency with third parties.*
 
-*`<insert relevant diagrams, like an architecture diagram, data pipelines, etc.>`*   
 
 #### 5.2 Existing data sources
 
-*As part of the initial engagement, a definition and analysis will be done on the existing state of data sources based on variables such as centralization, accessibility, performance, structure, and more. This will be achieved through `<e.g., a “data maturity assessment” (DMA), developed by [TDWI](https://tdwi.org/pages/maturity-model/big-data-maturity-model-assessment-tool.aspx)>` and as a result will signal on the current gaps and opportunities.*
+*As part of the initial engagement, a definition and analysis will be done on the existing state of data sources based on variables such as centralization, accessibility, performance, structure, and more. This will be achieved through `<e.g., a “data maturity assessment” (DMA), developed by `[TDWI](https://tdwi.org/pages/maturity-model/big-data-maturity-model-assessment-tool.aspx)`>` and as a result will signal on the current gaps and opportunities.*
 
 #### 5.3 New data sources
 
