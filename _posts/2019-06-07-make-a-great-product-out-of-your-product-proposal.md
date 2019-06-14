@@ -118,16 +118,16 @@ If you have read this far, thank you! A framework alone isn't very useful so I'm
 
 ## 4. Design and user insights
 
-*We will be crafting the User Experience alongside Engineering developments and will be just as iterative to ensure things are moving along. We want to start with a base level of clear access to needed information to make sure features are usable from the get go. We will then continually revise and improve application usability based on user feedback. To make the most of `<important featre>` we will be considering things like `<e.g., easy information entry, intuitive controls, and readable output of useful information>`.*
+*We will be crafting the user experience alongside engineering developments and will be just as iterative to ensure things are moving along. We want to start with a base level of clear access to needed information to make sure features are usable from the get go. We will then continually revise and improve application usability based on user feedback. To make the most of `<important feature>` we will be considering things like `<e.g., easy information entry, intuitive controls, and readable output of useful information>`.*
 
 1. *Design. UX Deliverable(s): Low and High Fidelity Prototypes*
-    1. *Low-fidelity Prototypes (Wireframe). Illustrate how the content will be laid out on each screen. We will be omitting any aesthetic design details, focussing on creating a visual framework for stakeholders, designers, and developers. This allows all parties to get a feel of how and where content should be placed.*
-    2. *Design Review. The low-fidelity prototype is evaluated against its requirements in order to verify the outcomes of previous activities, and identify issues before committing to - and if need to be re-prioritized - further work.*
-    3. *High-Fidelity Prototypes. These will show all the intended visual and typographic design details of the application, as it would be on final output. This will be handed over to the Engineering team for development.*
-2. *Internal Testing (within Staging). UX Deliverable(s): Adjusted High-fidelity Prototypes*
-    1. *Design QA. To keep the integrity of the user experience, we will conduct Design QA, in collaboration with the Engineering team. This is a step during development, to review the coded version of the UI (prior to testing). This involves working with the Engineers to make updates to the UI in code.*
+    1. *Low-fidelity prototypes (wireframe). Illustrate how the content will be laid out on each screen. We will be omitting any aesthetic design details, focussing on creating a visual framework for stakeholders, designers, and developers. This allows all parties to get a feel of how and where content should be placed.*
+    2. *Design review. The low-fidelity prototype is evaluated against its requirements in order to verify the outcomes of previous activities, and identify issues before committing to - and if need to be re-prioritized - further work.*
+    3. *High-fidelity prototypes. These will show all the intended visual and typographic design details of the application, as it would be on final output. This will be handed over to the Engineering team for development.*
+2. *Internal testing (within staging). UX deliverable(s): adjusted high-fidelity prototypes*
+    1. *Design quality assurance. To keep the integrity of the user experience, we will conduct Design QA, in collaboration with the engineering team. This is a step during development, to review the coded version of the UI (prior to testing). This involves working with the engineers to make updates to the UI in code.*
 3. *Evaluation *
-    1. *Post-launch Usability Testing. To optimize the application’s usage and the viability of its features, we can conduct a usability test, post-launch.*
+    1. *Post-launch usability testing. To optimize the application’s usage and the viability of its features, we can conduct a usability test, post-launch.*
     2. *Quantitative - We’ll look at the analytics of the application, and evaluate the necessary data that correlates to UX/UI pain points, such as the number of errors, number of clicks, or time taken to complete the task. From the data gathered, we’ll come up with suggestions for improvements, and potential next steps.	*
     3. *Qualitative - We’ll send out a survey, and conduct interviews with the primary and secondary users, to evaluate the features and functionality that can be improved. We’ll propose enhancements that can be made, for future iterations of the application*
 
@@ -135,7 +135,7 @@ If you have read this far, thank you! A framework alone isn't very useful so I'm
 
 *`<insert person and journey map>`*
 
-*We believe that the key pain points are `<pain point>` and the benefits associated with relieving those are `<benefits>`. Therefore, a prioritized list of user stories/features we would like to taclked first include:*
+*We believe that the key pain points are `<pain point>` and the benefits associated with relieving those are `<benefits>`. Therefore, a prioritized list of user stories/features we would like to tackled first include:*
 
 + *`<feature1: benefit1>`*
 + *`<feature2: benefit2>`*
