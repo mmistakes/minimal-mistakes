@@ -1,5 +1,5 @@
 ---
-title: How to Make your Digital Transformations Silky Smooth
+title: Weave your Digital Transformations out of Silk
 category: "Digital Transformation"
 tag: ["Organization", "Agile", "Design Sprints", "Conway's law"]
 toc: true
