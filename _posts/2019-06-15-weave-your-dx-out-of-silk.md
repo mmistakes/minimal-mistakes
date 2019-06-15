@@ -70,7 +70,7 @@ Anticipate that the bigger cost of this engine is the long term maintenance, upd
 
 ## 4.1 Kill the dogs
 
-The dogs will be easy to spot and don't be afraid to pull the trigger. The last thing a designer or an engineer wants to do is to work on a doomed project. Everyone will love you for it. If you see a lot of resistance from the team after you've made clear your intentions to stop it, you might want to understand this better. One effective approach is to give the time deliminated sandbox to do everything they can fight from behind and make a good comeback. 
+The dogs will be easy to spot and don't be afraid to pull the trigger. The last thing a designer or an engineer wants to do is to work on a doomed project. Everyone will love you for it. If you see a lot of resistance from the team after you've made clear your intentions to stop it, you might want to understand this better. One effective approach is to give the team timebox to do everything they can fight from behind and make a good comeback. But not not overuse it, because it won't work nearly as well the second time around.
 
 ## 4.2 Accelerate the stars
 
