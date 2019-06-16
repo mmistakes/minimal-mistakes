@@ -6,7 +6,7 @@ tags:
   - marathon
   - fitness
   - feeling_good
-excerpt:
+excerpt: Running is an amazing activity for body and mind. It is hard work, but it feels so good. I started running more and more lately and have progressed quite well.
 ---
 
 *I've been running (as an amateur, nothing serious) for a while now, and it sort of happened without much planning. It became an integral part of what I am and do now, so am sharing some thoughts, on the run. It's a bit of a stream of consciousness down here.*
