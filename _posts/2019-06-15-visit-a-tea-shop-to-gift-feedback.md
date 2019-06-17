@@ -77,7 +77,7 @@ For example, a real (sanitized) feedback I have given to someone I reported to o
 
 > *I have observed that you have selected the most optimistic scenarios to present to the senior client, and have excluded the more conservative ones. I heard you state the importance to show encouraging results, and I too want to build momentum with the client. However, I find this situation uncomfortable for two reasons: 1) the team has used the words "selection bias" and have confidentially voiced concerns about not being fairly represented, 2) I'm afraid that we may condition our client to expect inflated results, and lose their trust a little. One idea to improve this would be to write down on the page that these are the most optimistic scenarios, and add the rest of the scenarios in the appendix.*
 
-Effectively, I was reminding my boss to be a **scientist**, and I was myself exhibiting the both the **teacher** and the **owner** trait. I hope you find this useful, please don't hesitate to give me feedback. 
+Effectively, I was reminding my boss to be a **scientist**, and I was myself exhibiting the both the **teacher** and the **owner** traits. I hope you find this useful, please don't hesitate to give me feedback. 
 
 ## Further reading and videos
 
