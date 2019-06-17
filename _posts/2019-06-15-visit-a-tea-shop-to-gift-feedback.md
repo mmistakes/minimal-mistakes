@@ -65,7 +65,7 @@ An **Owner** is accountable for quality end products and speaks up - they will u
 
 A **Pioneer** takes responsibility and acts with courage - they will take risks, break new ground, and get their hands dirty with work.
 
-A **Student** embraces feedback with a growth mindset - they open minded about being able to learn anything, and believe that hard work over time pays off more than initial talent.
+A **Student** embraces feedback with a growth mindset - they are open minded about being able to learn anything, and believe that hard work over time pays off more than initial talent.
 
 ------------
 
@@ -76,6 +76,8 @@ A **Student** embraces feedback with a growth mindset - they open minded about b
 For example, a real (sanitized) feedback I have given to someone I reported to once was:
 
 > *I have observed that you have selected the most optimistic scenarios to present to the senior client, and have excluded the more conservative ones. I heard you state the importance to show encouraging results, and I too want to build momentum with the client. However, I find this situation uncomfortable for two reasons: 1) the team has used the words "selection bias" and have confidentially voiced concerns about not being fairly represented, 2) I'm afraid that we may condition our client to expect inflated results, and lose their trust a little. One idea to improve this would be to write down on the page that these are the most optimistic scenarios, and add the rest of the scenarios in the appendix.*
+
+Effectively, I was reminding my boss to be a **scientist**, and I was myself exhibiting the both the **teacher** and the **owner** trait. I hope you find this useful, please don't hesitate to give me feedback. 
 
 ## Further reading and videos
 
