@@ -31,7 +31,7 @@ An effective way to prepare giving someone feedback is to write it down using th
 
 When thinking about a colleague's strengths, I tend to be biased towards the most recent, and most salient events. But by using a more generic and complete framework, I'm able to be more systematic and exhaustive. One design principle of the framework is that it be memorable. 
 
-The acronym for it is "a tea shop". Additionally, instead of coming up with names for the strengths, I came up with professions and the strengths that these personas tend to represent.
+The acronym for it is "a tea shops". Additionally, instead of coming up with names for the strengths, I came up with professions and the strengths that these personas tend to represent.
 
 ## "A tea shops" strength framework
 
