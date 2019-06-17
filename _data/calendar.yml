@@ -1,40 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Brandwerder-Cup für alle Klassen",
-    "title": "Brandwerder-Cup für alle Klassen",
-    "excerpt": "Lustige Wettspiele in alter Tradition der Schule, im Rahmen des Schultages\nEltern sehr herzlich willkommen!",
-    "url": "https://www.google.com/calendar/event?eid=MTU2OWtmbG5pdXNrNjQ2YTQ3MXM5cmRvNWogaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-06-17",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-06-18",
-      "date_time": null
-    },
-    "created": "2019-03-24T10:19:42.000Z",
-    "updated": "2019-03-24T10:19:42.367Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Elternabend für die Schulanfänger*innen",
-    "title": "Elternabend für die Schulanfänger*innen",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=cThzaDV0M2traG0zMmU4cmxybWU0amIwYWcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-06-17T17:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-06-17T19:00:00+02:00"
-    },
-    "created": "2019-05-17T03:25:23.000Z",
-    "updated": "2019-05-17T03:25:23.419Z"
-  },
-  {
-    "image_path": null,
     "alt": "Verabschiedung der 6. Klassen",
     "title": "Verabschiedung der 6. Klassen",
     "excerpt": "11:30 Uhr: Unterrichtsschluss für die Klassen 1 - 5  ",
@@ -100,5 +66,39 @@
     },
     "created": "2019-03-24T10:32:26.000Z",
     "updated": "2019-03-24T10:32:26.651Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Einschulungsfeiern",
+    "title": "Einschulungsfeiern",
+    "excerpt": "Einschulungsfeiern:\n\n9:00 Uhr \n10:30 Uhr",
+    "url": "https://www.google.com/calendar/event?eid=MjlpY2d0YjlidjRicTlvc2Zpb3A1am5maTcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-08-10T09:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-08-10T12:00:00+02:00"
+    },
+    "created": "2019-03-24T10:34:08.000Z",
+    "updated": "2019-03-24T10:34:08.387Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Halloween-Disco",
+    "title": "Halloween-Disco",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=N2huYnBsMXNsZDhnZ3ZrcnN1YmtnMWpnMDggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-10-25T17:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-10-25T19:00:00+02:00"
+    },
+    "created": "2019-01-28T11:35:03.000Z",
+    "updated": "2019-01-28T11:35:03.803Z"
   }
 ]
