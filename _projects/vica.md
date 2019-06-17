@@ -8,6 +8,7 @@ header:
 excerpt: "Applying machine learning to identify highly divergent viruses in metagenome and metatranscriptome data"
 categories:
   - projects
+  - in progress
 tags:
   - viruses
   - phage
@@ -18,8 +19,8 @@ tags:
 
 ## Collaborators
 
-* Qingpeng Zhang - JGI, Walnut Creek, CA
-* Susannah Tringe - JGI Walnut Creek, CA
+* Qingpeng Zhang - Illumina, San Diego, CA
+* Susannah Tringe - JGI,  Walnut Creek, CA
 
 ## Project
 
@@ -33,3 +34,7 @@ are developing a classifier for metagenomic and metatranscriptomic contigs that
 takes information from across the feature spectrum and jointly trains wide
 logistic regression and deep feed-forward neural network models to identify new
 viruses with little homology to existing viruses.
+
+# Software
+
+[ITSxpress on  Github](https://github.com/itsxpress)

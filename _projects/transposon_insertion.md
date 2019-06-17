@@ -10,6 +10,7 @@ header:
   excerpt: "We are working on a new compositional count statistical and lab method for rapidly genotyping thousands of plants from a single Illumina sequencing run"
 categories:
   - projects
+  - in progress
 tags:
   - Transposon
   - compositional data Analysis
@@ -19,13 +20,13 @@ New statistical methods make genotyping faster and more cost effective
 
 ## Collaborators
 
-* Chip Hunter - ARS Gainesville, FL
+* Chip Hunter - USDA-ARS CMAVE, Gainesville, FL
 
 ## Project
 
 Mutant libraries are made using transposon insertion mutagenesis.  Many of these
-have been characterized but in breeding it is neccicary to determine if the mutation is
-wildtype, heterozygous or homozygous. This is often done with qPCR but the
+have been characterized but in breeding it is necessary to determine if the mutation is
+wild-type, heterozygous or homozygous. This is often done with qPCR but the
 process is time-consuming and expensive.  We are working with Chip Hunter to
 develop the statistical methods and software to pull down the mutation sites
 and sequence them in parallel. The project has required us to apply new

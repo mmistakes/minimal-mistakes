@@ -93,7 +93,7 @@ analytics:
 # Site Author
 author:
   name             : "Adam R. Rivers, PhD"
-  avatar           : "assets/images/rivers1.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "assets/images/rivers2.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Computational biologist and microbial ecologist
                         using microbiome data and machine learning to create
                         safe, productive, and sustainable agricultural systems."
@@ -214,14 +214,14 @@ whitelist:
 
 # Archives
 #  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
 #  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
 #  Path (examples)
 #  - Archive page should exist at path when using Liquid method or you can
 #    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path/my-awesome-category/index.html ~> path: /
+  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
+  - <base_path/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
   path: /categories/

@@ -8,6 +8,7 @@ header:
 excerpt: "Viruses found in the native range of the red imported fire ant have the potential to control the pest"
 categories:
   - projects
+  - completed
 tags:
   - viruses
   - Solenopsis invicta
@@ -39,3 +40,8 @@ We are using metagenomics and next generation sequencing to discover new virus
 natural enemies of the fire ant in its native range with the goal of testing and
 releasing new viral pathogens into U.S. S. invicta populations to provide
 natural, sustainable control of this ant.
+
+## Publications
+
+Valles, S.,  Rivers, A. R. 2019. Nine new RNA viruses associated with the fire ant _Solenopsis invicta_
+from its native range. Virus Genes. In press. doi:[10.1007/s11262-019-01652-4](https://doi.org/10.1007/s11262-019-01652-4)

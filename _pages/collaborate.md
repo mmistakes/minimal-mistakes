@@ -12,7 +12,7 @@ header:
 ---
 
 The Agricultural Microbiomes group is part of the Genomics and Bioinformatics Research Unit, a service unit within the ARS. Our unit has 4 principal investigators:
-* [Dr. Brian Scheffler](https://www.ars.usda.gov/southeast-area/stoneville-ms/genomics-and-bioinformatics-research/people/brian-scheffler/) the Research Leader for our unit directs the sequencing lab in Stoneville, MS. He is also the Chief Scientific information officer for ARS.
+* [Dr. Brian Scheffler](https://www.ars.usda.gov/southeast-area/stoneville-ms/genomics-and-bioinformatics-research/people/brian-scheffler/) the Research Leader for our unit directs the sequencing lab in Stoneville, MS. He is also the former Chief Scientific information officer for ARS.
 * [Dr. Amanda Hulse-Kemp](https://www.ars.usda.gov/people-locations/person/?person-id=52597) works on complex polyplid genomes in Raliegh, NC.
 * [Dr. Justin Vaughn](https://www.ars.usda.gov/people-locations/person/?person-id=52434) works on crop genetics in Athens, GA.
 * Me.
@@ -25,6 +25,7 @@ The Agricultural Microbiomes group is part of the Genomics and Bioinformatics Re
 3. **Sequencing Services**. The Unit runs a number of sequencing platforms including Illumina Hiseq 3000, Illumina Miseq, Illumina Nextseq, Pacbio RSII,  PacBio Sequel, and 10X Genomics Chromium. We do sequencing at cost for ARS projects.
 
 ### We collaborate outside ARS
-1. **External Collaborations**. We can act as co-PI's for many grant calls from NSF and NIFA.
+
+1. **External Collaborations**. We can act as co-PI's or collaborators for many grant calls from NSF and NIFA.
 2. **CRADA**. We can work with industry partners through Cooperative Research and Development Agreements. Other mechanisms exist too including funding by Commodity Boards.
 3. **NACA**. Through these agreements we sometimes fund positions at universities to work on specific projects.

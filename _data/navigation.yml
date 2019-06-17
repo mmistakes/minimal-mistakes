@@ -16,6 +16,8 @@ main:
     url: /collaborate/
   - title: "Publications"
     url: /publications/
+  - title: "IP"
+    url: /ip/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"

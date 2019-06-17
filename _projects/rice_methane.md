@@ -10,6 +10,7 @@ header:
 excerpt: "We are working to understand how rice varieties that produce less methane interact with the methanogenic archaea and bacteria in the soil"
 categories:
   - projects
+  - in progress
 tags:
   - methane
   - rice

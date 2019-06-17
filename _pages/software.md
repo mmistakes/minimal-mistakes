@@ -11,20 +11,33 @@ header:
   caption: "Photo credit: Adam Rivers"
 ---
 
-The group is committed to publishing reproducible research by documenting the computational methods we use and making source code publicly available. We have not yet released completed software through USDA but our main account is:
+When we develop software packages we try to use DevOps methods. Our larger projects employ automatic testing and using continuous integration/ continuous development servers (TracisCI and CircleCI).
 
-[USDA-ARS-GBRU Github](https://github.com/usda-ars-gbru)
+Our software is available on the Genomics and Bioinformatics Unit's Github repository
+[USDA-ARS-GBRU Github](https://github.com/usda-ars-gbru).
 
-Older projects are available at:
-* [arivers Github](https://github.com/arivers)
-* [Berkeley Lab Bitbucket](https://bitbucket.org/berkeleylab/)
+When we run data analysis we are committed to publishing reproducible research
+by documenting the computational methods we use in analyses and making the
+source code of those analyses publicly available.
+Examples of our reproducible workflows are:
 
-We are interested in developing containerized applications and adopting more of a devops approach to the deployment of software to the extent that it is practical on the USDA's high performance computing system, Ceres.
+* [Fire ant virus paper repository](https://github.com/USDA-ARS-GBRU/fire_ant_viruses)
+* [Copenhagen Ancient DNA paper](https://github.com/arivers/copenhagen_moat)
+
+## Software projects
+
+Software|description|Page
+----------|----------------------------|------------
+ITSxpress | ITSxpress is a stand alone CLI and a QIIME 2 package for trimming the internally transcribed spacer regions with quality scores in amplicon sequencing experiments. The software was published in 2018 doi:[10.12688/f1000research.15704.1](https:/doi.org/10.12688/f1000research.15704.1)| [ITSxpress on  Github](https://github.com/USDA-ARS-GBRU/itsxpress) and [Q2-ITSxpress](https://github.com/USDA-ARS-GBRU/q2_itsxpress)
+Vica      | Still in development, software for identifying highly divergent viruses in DNA and RNA me)tagenomes using deep learning using Tensorflow | [Vica on Github](https://github.com/USDA-ARS-GBRU/vica)
+ARS-RQC   | Still in development, an automated Illumina quality control workflow and visualization web application | [ARS-RQC on Github](https://github.com/USDA-ARS-GBRU/ARS-RQC)
+----------|----------------------------|------------
+
+## Software projects prior to USDA
 
 Software|description|Page
 ---------|----------------------------|------------
 Reftree  | Software for querying and processing taxonomically structured data.| [link](https://bitbucket.org/berkeleylab/jgi_reftree)
 iTagger | Software for processing amplicon sequencing data at a scale of 10,000 samples per year. | [link](https://bitbucket.org/berkeleylab/jgi_itagger)
 Fidoplankter | An online calculator for designing iron limitation experiments in Phytoplankton, written before I knew about Github :) |[link](http://fidoplankter.uga.edu/)
-ARS Microbiome workshop | Website for a training held in August 2017 | [link](https://usda-ars-gbru.github.io/Microbiome-workshop/)
-ARS-RQC | Still in development, an an automated Illumina quality control workflow and visualization web application | [link](https://github.com/USDA-ARS-GBRU/ARS-RQC)
+----------|----------------------------|------------

@@ -9,6 +9,7 @@ header:
 excerpt: "Sequencing the microbiomes of poultry from the 1800's to quantify innate antibiotic resistance"
 categories:
   - projects
+  - in progress
 tags:
   - ancient DNA
   - metagenomics
@@ -22,7 +23,8 @@ tags:
 * Adam Rivers - ARS Gainesville, FL
 * Brian Scheffler - ARS Stoneville, MS
 * Mary Duke - ARS Stoneville, MS
-* Brian Oakley - Western University College of Veterinary Medicine, Pomona, CA{: .notice}
+* Brian Oakley - Western University College of Veterinary Medicine, Pomona, CA
+
 
 ## Project
 Antimicrobial resistance genes are prevalent in agricultural animals life today.
