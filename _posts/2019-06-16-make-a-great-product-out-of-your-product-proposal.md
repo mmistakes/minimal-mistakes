@@ -1,6 +1,6 @@
 ---
 title: Make a Great Product out of your Product Proposal 
-category: "Digital Transformation"
+category: "Product Management"
 tag: ["Template", "Product", "Letter of Proposal"]
 toc: true
 ---
@@ -39,7 +39,7 @@ The **Outline of work** gives a sense of the sequence of steps you plan on takin
 
 The **Design and user insights** comes next and gives the reader reassurance that you understand the pain points you are solving to create a great User Experience (UX) that will drive desired benefits (revenue increase, cost decrease, risk mitigation or compliance). The section is in the middle of the framework for a reason - it should be the heart of the document, written with the most passion. 
 
-The **Understanding of implementation challenges** is a necessary section only in so far that you do not yet have complete trust from your sponsor in your ability to deliver good software products, or that there is uncertainty on what's possible to achieve (e.g., you can't do good data science if you don't have data). In many cases it's less about you, and it's a more about the sponsor. For instance, you may have a sponsor who has never built products before, or has prior bitter experiences  (common for both VCs and large Enterprise alike). If at the end of a discussion, your sponsor seems overly focussed on implementation details (e.g., "will you use Apache Kafka?"), then expect that you need to invest more time in detailing the (anticipated) approach up-front. Regardless of the reasons, it's an important section. 
+The **Understanding of implementation challenges** is a necessary section only in so far that you do not yet have complete trust from your sponsor in your ability to deliver good software products, or that there is uncertainty on what's possible to achieve (e.g., you can't do good data science if you don't have data). In many cases it's less about you, and it's more about the sponsor. For instance, you may have a sponsor who has never built products before, or has prior bitter experiences  (common for both VCs and large Enterprise alike). If at the end of a discussion, your sponsor seems overly focussed on implementation details (e.g., "will you use Apache Kafka?"), then expect that you need to invest more time in detailing the (anticipated) approach up-front. Regardless of the reasons, it's an important section. 
 
 The **Costs estimates** are one of the most critical section to get to a "yes", despite its placement (second to last) in the framework. Note that it's better to be upfront and transparent about costs, because it enables the sponsor/investors to do sanity checks on your ability to deliver. If your costs are too low, chances are you are under-estimating the work involved. If your costs are too high, chances are that you are trying to build too much too quickly, or you are just paying people too much. 
 
@@ -169,7 +169,7 @@ Here I provide you with a commentary instead of actually sample paragraphs. I pr
 
 ### 6.1 Time and material estimate
 
-First is the time and material estimate. Expect that a product team will have between 1 to 10 people at any given time. Anything more than 10 is becoming at risk of too much communication overhead. It is probably wiser to reduce the team size and reduce the set of features. If that's no possible, then consider splitting the product into two products. 
+First is the time and material estimate. Expect that a product team will have between 1 to 10 people at any given time. Anything more than 10 is becoming at risk of too much communication overhead. It is probably wiser to reduce the team size and reduce the set of features. If that's not possible, then consider splitting the product into two products. 
 
 Blended market hourly rates for outsourced people in India, Philippines, or Eastern Europe will range from $20 to $80. If the work is performed on site in US/Canada/Europe, expect to pay $60 to $250. Anything more than that you are most likely paying overhead costs to the staffing agency/consulting company. For instance, it is not unheard of to see hourly rates in the $1,000+ range for partners in prestigious consulting firms (similar to top law firms).
 

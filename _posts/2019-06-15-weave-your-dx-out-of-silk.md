@@ -16,7 +16,7 @@ I'm not going to rehash here the many [tips](https://www.cio.com/article/3211428
 3. **L**aunch to production early
 4. **K**ill the dogs, and accelerate the stars
 
-The main driver behind this approach is the realization that the building digital products (data science involved or not) is filled with uncertainties, but also very rich in opportunities to capture savings, generate revenue, and be better corporate citizens for the environment. 
+The main driver behind this approach is the realization that building digital products (data science involved or not) is filled with uncertainties, but also very rich in opportunities to capture savings, generate revenue, and be better corporate citizens for the environment. 
 
 # 1. Setup the VC Model
 
@@ -26,7 +26,7 @@ Create a new container organization setup like an internal Venture Capitalist. T
 
 > "organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations." - M. Conway
 
-A strong motivation for creating small independent teams that are unconstrained from the existing organization is that they will be free to find inefficiencies of the current organization. For instance, imagine if Uber had been developed by an incumbent taxi company. A most likely feature would have been a way to call dispatch, because the head of dispatch wanted to have those features in the app. Parts of your orgnaization will necessarily have to change and evolve, and setting up a VC model protects the product lines from the old habits of the organization.
+A strong motivation for creating small independent teams that are unconstrained from the existing organization is that they will be free to find inefficiencies of the current organization. For instance, imagine if Uber had been developed by an incumbent taxi company. A most likely feature would have been a way to call dispatch, because the head of dispatch wanted to have those features in the app. Parts of your organization will necessarily have to change and evolve, and setting up a VC model protects the product lines from the old habits of the organization.
 
 ## 1.2 Maintain a fluid team structure
 
@@ -37,15 +37,15 @@ It may be tempting to create the ideal centralized or decentralized org chart fr
 
 To mitigate the risks of failures, I recommend narrowing the scope of the teams at the on-set. This gives the team a clearer direction, and allows for a simpler set of metrics to evaluate the progress. For skunkworks type products, I recommend strong guidelines limiting burn rate, and have clearly defined stage gates to avoid digging a bottomless pit.
 
-Start picking a problem in the upper right corner of the feasibility vs. upside matrix. In other words, a highly feasible problem, with high potential upside. Make the scope as narrow as possible without sacrificing the need to have a positive return on investment (ROI). A DX needs to show tangible benefits to shareholders. Now pick a metric that will be easy to measure for the business so that the products’s success will not be debatable. The best metrics have a clear line of sight to either revenue, cost, or risks/compliance metrics. Accuracy here, is less important than precision, and relative improvement.
+Start picking a problem in the upper right corner of the feasibility vs. upside matrix. In other words, a highly feasible problem, with high potential upside. Make the scope as narrow as possible without sacrificing the need to have a positive return on investment (ROI). A DX needs to show tangible benefits to shareholders. Now pick a metric that will be easy to measure for the business so that the products’ success will not be debatable. The best metrics have a clear line of sight to either revenue, cost, or risks/compliance metrics. Accuracy here, is less important than precision, and relative improvement.
 
 ## 2.1 Visualize the future
 
 Paint a picture of what future success would look like. It’s easy to skip over this step, but it is integral to the selection the problem space. By creating a clear, crisp picture (or even a video), it is easier to communicate to the affected organization and to the people joining the team what the future looks like. Make it real and involve stakeholders. Equipped with this picture, seek out a seasoned practitioner who will give you the right time of day and who will be overseeing the work from a critical vantage point of view. I highly recommend that you seek outside help and bring this person as a contractor/advisor. 
 
-A good practititioner could be a successful company founder or a University professor. Avoid avisors or consultants who never got their hands dirty before - they are too high level to be relevant and ask the right questions. A note on consultants: you can use them as a source of inspiration for an optimistic future. 
+A good practitioner could be a successful company founder or a University professor. Avoid advisors or consultants who never got their hands dirty before - they are too high level to be relevant and ask the right questions. A note on consultants: you can use them as a source of inspiration for an optimistic future. 
 
-One added benefit of having a credible practitioner is recruting. It will be significantly easier to get the very best talent to want to commit to working with you, and it will mitigate the downside risks for everyone.
+One added benefit of having a credible practitioner is recruiting. It will be significantly easier to get the very best talent to want to commit to working with you, and it will mitigate the downside risks for everyone.
 
 ## 2.2 Google design sprint
 
@@ -55,7 +55,7 @@ I recommend that you head over to [Alex Jupiter's post](https://medium.theuxblog
 
 Your primary goal is to find so called "product market fit" (as originally defined, I believe, by [Marc Andreesen in 2007](https://web.stanford.edu/class/ee204/ProductMarketFit.html)), or in other words find the "stars" in the [growth share matrix](https://en.wikipedia.org/wiki/Growth%E2%80%93share_matrix) (also known as the BCG matrix). 
 
-Engage the relevant stakeholder and do something quick and dirty at first. Pull a small data set and test. The key here is to focus on doing one thing that will move the metric as defined in Step 1. Review and improve on the User Experience and Communication developed in Step 2. Don't build a massive data pipeline unless your product as traction with end-users. Sometimes just a great real-time visual might capture 80% of the value. 
+Engage the relevant stakeholder and do something quick and dirty at first. Pull a small data set and test. The key here is to focus on doing one thing that will move the metric as defined in Step 1. Review and improve on the User Experience and Communication developed in Step 2. Don't build a massive data pipeline unless your product has traction with end-users. Sometimes just a great real-time visual might capture 80% of the value. 
 
 ## 3.1 Agile, Devops, and Products
 
@@ -70,9 +70,9 @@ Anticipate that the bigger cost of this engine is the long term maintenance, upd
 
 ## 4.1 Kill the dogs
 
-The dogs will be easy to spot and don't be afraid to pull the trigger. The last thing a designer or an engineer wants to do is to work on a doomed project. Everyone will love you for it. If you see a lot of resistance from the team after you've made clear your intentions to stop it, you might want to understand this better. One effective approach is to give the team timebox to do everything they can fight from behind and make a good comeback. But not not overuse it, because it won't work nearly as well the second time around.
+The dogs will be easy to spot and don't be afraid to pull the trigger. The last thing a designer or an engineer wants to do is to work on a doomed project. Everyone will love you for it. If you see a lot of resistance from the team after you've made clear your intentions to stop it, you might want to understand this better. One effective approach is to give the team timebox to do everything they can fight from behind and make a good comeback. But not overuse it, because it won't work nearly as well the second time around.
 
 ## 4.2 Accelerate the stars
 
-Killing the dogs might be the easiest part of this last step. The more difficult one comes from success, because success means that there will players from the old organization who stand to lose relative influence.  But recalling Conway's Law again, it will be a lot easier to scale these new lines of business because they were setup as such from the start.
+Killing the dogs might be the easiest part of this last step. The more difficult one comes from success, because success means that there will be players from the old organization who stand to lose relative influence.  But recalling Conway's Law again, it will be a lot easier to scale these new lines of business because they were setup as such from the start.
 
