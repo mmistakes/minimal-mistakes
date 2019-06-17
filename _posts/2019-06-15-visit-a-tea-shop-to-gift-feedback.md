@@ -5,7 +5,7 @@ tag: ["Feedback"]
 toc: true
 ---
 
-One good thing I learned as a mentored consultant is how to give and receive fact-based feedback. Over the years, I've also developed a framework for desirable foundational skills, one that's easy to remember and applies to every situation. 
+Giving good feedback to people around you (both at work and in your private life) can be an excellent time investment. If the people around you become stronger, you benefit. I want to help you achieve that by giving you two things: 1) a template that I learned as a consultant, and 2) a memorable list of desirable traits to think about when coming up with feedback.
 
 # How to give and receive feedback 
 
