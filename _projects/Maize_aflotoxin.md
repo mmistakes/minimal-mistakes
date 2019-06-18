@@ -1,5 +1,5 @@
 ---
-title: "Changes to the Maize microbiome when atoxogenic _Aspergillus flavus_ is introduced"
+title: "Changes to the maize microbiome when atoxogenic _Aspergillus flavus_ is introduced"
 header:
   overlay_image: /assets/images/christophe-maertens-461658-unsplash-1200.jpg
   og_image: /assets/images/christophe-maertens-461658-unsplash-1200.jpg

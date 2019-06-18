@@ -16,12 +16,14 @@ tags:
   - QIIME 2
 ---
 
-# Collaborators
+## Collaborators
 
 * Terrence Gardener, NCSU, Raleigh, NC
 
 # project
-The internally transcribed spacer (ITS) region between the small subunit ribosomal RNA gene and large subunit ribosomal RNA gene is a widely used phylogenetic marker for fungi and other taxa. The eukaryotic ITS contains the conserved 5.8S rRNA and is divided into the ITS1 and ITS2 hypervariable regions. These regions are variable in length and are amplified using primers complementary to the conserved regions of their flanking genes. Previous work has shown that removing the conserved regions results in more accurate taxonomic classification1. An existing software program, ITSx, is capable of trimming FASTA sequences by matching hidden Markov model profiles to the ends of the conserved genes using the software suite HMMER. ITSxpress was developed to extend this technique from marker gene studies using Operational Taxonomic Units (OTU’s) to studies using exact sequence variants; a method used by the software packages Dada2, Deblur7, QIIME2, and Unoise. The sequence variant approach uses the quality scores of each read to identify sequences that are statistically likely to represent real sequences. ITSxpress enables this by processing FASTQ rather than FASTA files. The software also speeds up the trimming of reads by a factor of 14-23 times on a 4-core computer by temporarily clustering highly similar sequences that are common in amplicon data and utilizing optimized parameters for Hmmsearch. ITSxpress is available as a QIIME 2 plugin and a stand-alone application installable from the Python package index, Bioconda, and Github
+The internally transcribed spacer (ITS) region between the small subunit ribosomal RNA gene and large subunit ribosomal RNA gene is a widely used phylogenetic marker for fungi and other taxa. The eukaryotic ITS contains the conserved 5.8S rRNA and is divided into the ITS1 and ITS2 hypervariable regions. These regions are variable in length and are amplified using primers complementary to the conserved regions of their flanking genes. Previous work has shown that removing the conserved regions results in more accurate taxonomic classification1. An existing software program, ITSx, is capable of trimming FASTA sequences by matching hidden Markov model profiles to the ends of the conserved genes using the software suite HMMER.
+
+ITSxpress was developed to extend this technique from marker gene studies using Operational Taxonomic Units (OTU’s) to studies using exact sequence variants; a method used by the software packages Dada2, Deblur, QIIME2, and Unoise. The sequence variant approach uses the quality scores of each read to identify sequences that are statistically likely to represent real sequences. ITSxpress enables this by processing FASTQ rather than FASTA files. The software also speeds up the trimming of reads by a factor of 14-23 times on a 4-core computer by temporarily clustering highly similar sequences that are common in amplicon data and utilizing optimized parameters for Hmmsearch. ITSxpress is available as a QIIME 2 plugin and a stand-alone application installable from the Python package index, Bioconda, and Github
 
 ![Methods](/assets/images/itsxpress_methods.png)
 

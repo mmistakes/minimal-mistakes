@@ -46,9 +46,9 @@ group. He interested in the ecology of microbial communities, mostly microbial
 assemblies, diversities, interactions, and their community level functions, in
 the natural as well as in the agricultural systems. He is developing software
 and statistical methods to analyze data for high-throughput fitness-profiling
-experiments in the model organism E.coli, with the aim to scale it up to other
+experiments in the model organism _E. coli_, with the aim to scale it up to other
 microbes in the future. He is also working on methods to model microbial
-communities using amplicon sequencing, meta-metabolomics Bayesian networks to in
+communities using [amplicon sequencing, metabolomics, and Bayesian networks](/projects/Ralstonia_dynamic_bayesian/) in
 order to identify key microbial structures and functional signatures to support
 the selection of candidate taxa or microbial-consortia for microbiome-based crop
 productions.  

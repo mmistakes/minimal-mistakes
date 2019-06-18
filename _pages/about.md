@@ -12,9 +12,10 @@ header:
 _A part of the USDA ARS [Genomics and Bioinformatics Research Unit](https://www.ars.usda.gov/southeast-area/stoneville-ms/genomics-and-bioinformatics-research/people/adam-r-rivers-phd//)_
 
 
-The Agricultural Microbiome Group focuses on developing new computational
+The Agricultural Microbiomes Group focuses on developing new computational
 methods to advance agriculture by understanding and controlling microbial
 communities and enabling agricultural researchers to use microbiome data.  
+
 The lab has a unique research-service model. We are in a service unit of the
  ARS which runs its own sequencing center and provides consulting and
  collaborative support to the the 2000 scientists and postdocs across the ARS
@@ -24,6 +25,7 @@ The lab has a unique research-service model. We are in a service unit of the
 ### Research areas
 * Application of machine learning to agricultural data
 * Statistical analysis of compositional count data
+* Probabilistic graphical models for microbiome modeling
 * Viral metagenomics
 
 ### Service areas:
@@ -31,4 +33,4 @@ The lab has a unique research-service model. We are in a service unit of the
 * The development of training courses for ARS, like our [2017 ARS Microbiome Workshop](https://usda-ars-gbru.github.io/Microbiome-workshop/)
 * Design of Amlicon sequencing (16S) experiments
 * Development of amplicon sequencing services in conjunction with our Stoneville sequencing lab
-* Guide ARS's Scientific computing initiative as Chair of the SCINet Advisory Committee
+* I help guide ARS's scientific computing initiative as Chair of the SCINet Advisory Committee

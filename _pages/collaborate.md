@@ -15,7 +15,7 @@ The Agricultural Microbiomes group is part of the Genomics and Bioinformatics Re
 * [Dr. Brian Scheffler](https://www.ars.usda.gov/southeast-area/stoneville-ms/genomics-and-bioinformatics-research/people/brian-scheffler/) the Research Leader for our unit directs the sequencing lab in Stoneville, MS. He is also the former Chief Scientific information officer for ARS.
 * [Dr. Amanda Hulse-Kemp](https://www.ars.usda.gov/people-locations/person/?person-id=52597) works on complex polyplid genomes in Raliegh, NC.
 * [Dr. Justin Vaughn](https://www.ars.usda.gov/people-locations/person/?person-id=52434) works on crop genetics in Athens, GA.
-* Me.
+* [Me](https://www.ars.usda.gov/southeast-area/stoneville-ms/genomics-and-bioinformatics-research/people/adam-r-rivers-phd/)
 
 
 ### As a service unit we help ARS scientists in several ways
