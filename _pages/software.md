@@ -8,10 +8,10 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: /assets/images/craylarge.jpg
-  caption: "Photo credit: Adam Rivers"
+  caption: "Photo credit: *Adam Rivers*"
 ---
 
-When we develop software packages we try to use DevOps methods. Our larger projects employ automatic testing and using continuous integration/ continuous development servers (TracisCI and CircleCI).
+When we develop software packages we try to use DevOps methods. Our larger projects employ automatic testing and using continuous integration/ continuous development servers (TravisCI and CircleCI).
 
 Our software is available on the Genomics and Bioinformatics Unit's Github repository
 [USDA-ARS-GBRU Github](https://github.com/usda-ars-gbru).
