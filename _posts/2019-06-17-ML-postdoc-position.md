@@ -9,11 +9,11 @@ header:
   teaser: "/assets/images/clem-onojeghuo-210707.jpg"
 ---
 
-This is a pre-announcement in anticipation of of a formal award. More details
+This is a pre-announcement in anticipation of a formal award. More details
 are coming soon.
 {: .notice--warning}
 
-This is a NIFA funded a postdoc position to develop Salmonella typing and
+This is a postdoc position to develop Salmonella typing and
 phenotypic prediction methods from genomes and
 metagenomes using population genomics and machine learning.
 
@@ -28,6 +28,6 @@ has a unique mix of experience and individual strengths and I encourage any
 applicant with a strong record of research productivity and relevant experience
 to apply, even if your mix of skills is different than what is listed above.
 
-Contact me via email or apply to find out more adam.rivers@usda.gov.
+Contact me via email or apply to find out more please [email me](mailto:adam.rivers@usda.gov?Subject=ML-postdoc-position).
 
 ![](/assets/images/Salmonella_enteritidis_USDA.jpg)
