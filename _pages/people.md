@@ -35,6 +35,11 @@ food safety allowing us to track and eliminate pathogens, develop agricultural
 systems that limit their impact through environmental manipulation. Agriculture
 in an area where microbiome science will have a tremendous impact.
 
+At the USDA Agricultural Research Service I hold a career scientist position as a
+[Computational Biologist in the Genomics and Bioinformatics Research Unit.](https://www.ars.usda.gov/southeast-area/stoneville-ms/genomics-and-bioinformatics-research/people/adam-r-rivers-phd/)
+
+I have a courtesy faculty appointment in the Department of Microbiology and Cell science at the University of Florida.
+
 ![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/pp_ravin_150.jpg){: .align-left}
 
 ## Ravin Poudel, PhD
