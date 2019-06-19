@@ -5,7 +5,7 @@ tag: ["Feedback"]
 toc: true
 ---
 
-Giving good feedback to people around you (both at work and in your private life) can be an excellent time investment. If the people around you become stronger, you benefit. I want to help you achieve that by giving you two things: 1) a template that I learned as a consultant, and 2) a memorable list of desirable traits to think about when coming up with feedback.
+Giving good feedback to people around you (both at work and in your private life) can be an excellent time investment. If the people around you become stronger, you will benefit. I want to help you achieve that by giving you two things: 1) a template that I learned as a consultant, and 2) a memorable list of desirable traits to think about when coming up with feedback.
 
 # How to give and receive feedback 
 
@@ -53,9 +53,9 @@ An **Athlete** lives healthy - they will care about getting sufficient sleep, wi
 
 A **Teacher** selflessly helps and mentors others - they will think with empathy about those around them, nurture their curiosity and share with them insightful advice.
 
-An **Engineer** finds pragmatic solutions and provides fast turnarounds - they will be 80-20 when appropriate, and will go slow to go fast not to miss important details.
+An **Engineer** finds pragmatic solutions and provides fast turnarounds - they will be 80-20 when appropriate, and will go slow to go fast and not to miss important details.
 
-An **Artist** applies creative design thinking - they will apply lateral thinking to combine unrelated concepts together to come with novel solutions, and will not be afraid to go against the norms.
+An **Artist** applies creative design thinking - they will apply lateral thinking to combine unrelated concepts together to come up with novel solutions, and will not be afraid to go against the norms.
 
 A **Scientist** conducts unbiased experiments and learns from data - they will record data, be systematic in testing hypothesis, and will base their decisions on facts.
 
@@ -77,7 +77,7 @@ For example, a real (sanitized) feedback I have given to someone I reported to o
 
 > *I have observed that you have selected the most optimistic scenarios to present to the senior client, and have excluded the more conservative ones. I heard you state the importance to show encouraging results, and I too want to build momentum with the client. However, I find this situation uncomfortable for two reasons: 1) the team has used the words "selection bias" and have confidentially voiced concerns about not being fairly represented, 2) I'm afraid that we may condition our client to expect inflated results, and lose their trust a little. One idea to improve this would be to write down on the page that these are the most optimistic scenarios, and add the rest of the scenarios in the appendix.*
 
-Effectively, I was reminding my boss to be a **scientist**, and I was myself exhibiting the both the **teacher** and the **owner** traits. I hope you find this useful, please don't hesitate to give me feedback. 
+Effectively, I was reminding my boss to be a **scientist**, and I was myself exhibiting both the **teacher** and the **owner** traits. I hope you find this useful, please don't hesitate to give me feedback. 
 
 ## Further reading and videos
 
