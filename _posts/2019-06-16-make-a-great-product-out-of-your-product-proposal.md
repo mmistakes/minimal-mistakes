@@ -165,7 +165,7 @@ If you have read this far, thank you! A framework alone isn't very useful so I'm
 
 ## 6. Cost estimates
 
-Here I provide you with a commentary instead of actually sample paragraphs. I propose three ways to estimate the costs. 
+Here I provide you with a commentary instead of sample paragraphs. I propose three ways to estimate the costs. 
 
 ### 6.1 Time and material estimate
 
@@ -179,7 +179,7 @@ The main advantage of a fixed cost estimate (e.g., broken down by phase) is its 
 
 ### 6.3 Target and cap cost
 
-This is my preferred contract, but I have yet to meet a procurement team of a large enterprise who will accept that because it's hard to benchmark. The contract is based on two figures: the “target price” and the “cap”.  The cap is the maximum that the company financing the work>will pay. The target is lower than the cap and the contract gives both parties a financial incentive to meet the target. If the provider of work come in under the target, the savings are shared equally between both parties.  Likewise, if we come in over the target, the extra cost is shared evenly – but only up to the cap.  If we reach the cap, it acts like a fixed price. The costs listed are target costs. Assume 25% extra for the cap.
+This is my preferred contract, but I have yet to meet a procurement team of a large enterprise who will accept that because it's hard to benchmark. The contract is based on two figures: the “target price” and the “cap”.  The cap is the maximum that the company financing the work>will pay. The target is lower than the cap and the contract gives both parties a financial incentive to meet the target. If the provider of work comes in under the target, the savings are shared equally between both parties.  Likewise, if we come in over the target, the extra cost is shared evenly – but only up to the cap.  If we reach the cap, it acts like a fixed price. The costs listed are target costs. Assume 25% extra for the cap.
 
 ### 6.4 Co-location costs
 
@@ -217,7 +217,7 @@ This is my preferred contract, but I have yet to meet a procurement team of a la
 
 ### 7.5 Metrics
 
-To survive and thrive in the age of software, I recommend measuring important metrics to measure the state of your delivery engine. Please do not fall into the Agile trap. It's a lot easier to look Agile than to be Agile. And even Nokia, the poster child of Agile in the late 2000s with a market cap of above $90B at the time, failed miserably. Writing large software is one of the most difficult (and humbly) exercise there is. I highly recommend that you read the following two books on the topic of software delivery:
+To survive and thrive in the age of software, I recommend measuring important metrics to measure the state of your delivery engine. Please do not fall into the Agile trap. It's a lot easier to look Agile than to be Agile. And even Nokia, the poster child of Agile in the late 2000s with a market cap of above $90B at the time, failed miserably. Writing large software is one of the most difficult (and humbling) exercise there is. I highly recommend that you read the following two books on the topic of software delivery:
 
 + [The DevOps Handbook](https://amzn.to/2MIlfYI)
 + [Projects to Product](https://amzn.to/2MFuHMJ)
