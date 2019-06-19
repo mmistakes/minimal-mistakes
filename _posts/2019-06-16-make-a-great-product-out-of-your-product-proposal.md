@@ -179,7 +179,7 @@ The main advantage of a fixed cost estimate (e.g., broken down by phase) is its 
 
 ### 6.3 Target and cap cost
 
-This is my preferred contract, but I have yet to meet a procurement team of a large enterprise who will accept that because it's hard to benchmark. The contract is based on two figures: the “target price” and the “cap”.  The cap is the maximum that the company financing the work>will pay. The target is lower than the cap and the contract gives both parties a financial incentive to meet the target. If the provider of work comes in under the target, the savings are shared equally between both parties.  Likewise, if we come in over the target, the extra cost is shared evenly – but only up to the cap.  If we reach the cap, it acts like a fixed price. The costs listed are target costs. Assume 25% extra for the cap.
+This is my preferred contract, but I have yet to meet a procurement team of a large enterprise who will accept that because it's hard to benchmark. The contract is based on two figures: the “target price” and the “cap”.  The cap is the maximum that the company financing the work will pay. The target is lower than the cap and the contract gives both parties a financial incentive to meet the target. If the provider of work comes in under the target, the savings are shared equally between both parties.  Likewise, if we come in over the target, the extra cost is shared evenly – but only up to the cap.  If we reach the cap, it acts like a fixed price. The costs listed are target costs. Assume 25% extra for the cap.
 
 ### 6.4 Co-location costs
 
