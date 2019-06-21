@@ -10,9 +10,8 @@ comments: true
 평소에 가비지 컬렉션 공부를 해야지라는 생각만 가지고 있었는데, 이번 기회에 자세하게(?)배워보도록 하자. 훌륭한 가비지 컬렉션 내용이 정리된 글이 있었으며, 도움이 많이 되었다.  
 [NAVER D2 Java Garbage Collection]([https://d2.naver.com/helloworld/1329](https://d2.naver.com/helloworld/1329))
 ### 들어가기에 앞서
-- HotSpot VM:
-- JVM:
-- GC:
+- JVM(자바 가상 머신): 어느 운영체제, 기기에서 이식 가능한 실행 환경을 제공해주며 메모리도 관리해준다.
+- HotSpot VM: Sun/Oracle에서 개발한 엔진 JVM이다. 
 
 
 ## 가비지 컬렉션 과정
@@ -22,7 +21,7 @@ comments: true
 > stop-the-world가 발생하면 GC 쓰레드를 제외한 나머지 쓰레드는 모두 작업을 멈춘다.  
 GC 작업이 완료된 후에 중단된 쓰레드들이 다시 작업을 시작한다. 어떤 GC 알고리즘을 사용하더라도 stop-the-world는 발생한다고 한다. 그리고 GC 튜닝은 이 stop-the-world 시간을 줄이는 것이다.
 
-**Garbage Collector**: 더 이상 사용하지 않는(필요하지 않은) 객체를 찾아 지우는 작업을 한다.
+**Garbage Collector(GC)**: 더 이상 사용하지 않는(필요하지 않은) 객체를 찾아 지우는 작업을 한다.
 두 가지 전제 조건에서 만들어졌다고 한다.
 1. 대부분의 객체는 금방 접근 불가능 상태(unreachable)
 2. 오래된 객체에서 젊은 객체로의 참조는 적게 존재한다.
