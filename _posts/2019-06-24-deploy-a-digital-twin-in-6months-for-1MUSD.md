@@ -4,7 +4,7 @@ category: "Digital Twin"
 tag: ["Machine Learning", "Data Science", "Digital Twin"]
 ---
 
-Whether you manage a fleet of cruise ships, an upstream oil & gas supply chain, or a loyalty program for a large hotel chain, not having Digital Twins for your assets is like not having an accounting ledger for your business - you are flying blind, hoping for the best, and coping when the worst happens. Even if you think you have the best team in the world running your assets to near perfection, as President Ronald Reagan said of nuclear disarmament, “trust, but verify”.
+Whether you manage a fleet of cruise ships, an upstream oil & gas supply chain, or a loyalty program for a large hotel chain, not having Digital Twins for your assets is like not having an accounting ledger for your business - you are flying blind, hoping for the best, and coping when the worst happens. Even if you think you have the best team in the world running your assets to near perfection, as President Ronald Reagan said of nuclear disarmament, you should “trust, but verify”.
 
 # Definition of a Digital Twin
 
@@ -66,7 +66,7 @@ from sklearn.linear_model import RidgeCV, LogisticRegressionCV
 X, y = load_data(return_X_y=True)
 classification = LogisticRegressionCV(cv=5, random_state=0, multi_class='multinomial').fit(X, y)
 ridgeregression = RidgeCV(alphas=np.logspace(-6, 6, 13)).fit(X, Y)
-
+```
 
 
 
