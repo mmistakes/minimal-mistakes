@@ -1,7 +1,7 @@
 ---
-title: Visit a tea shop to gift feedback
-category: "Team health"
-tag: ["Feedback"]
+title: Deploy a Digital Twin in 6 Months for $1M USD
+category: "Digital Twin"
+tag: ["Machine Learning", "Data Science", "Digital Twin"]
 ---
 
 Whether you manage a fleet of cruise ships, an upstream oil & gas supply chain, or a loyalty program for a large hotel chain, not having Digital Twins for your assets is like not having an accounting ledger for your business - you are flying blind, hoping for the best, and coping when the worst happens. Even if you think you have the best team in the world running your assets to near perfection, as President Ronald Reagan said of nuclear disarmament, “trust, but verify”.
