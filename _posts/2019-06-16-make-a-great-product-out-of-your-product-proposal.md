@@ -144,7 +144,7 @@ If you have read this far, thank you! A framework alone isn't very useful so I'm
 
 ## 5. Understanding of implementation challenges
 
-## 5.1 Architecture and technology stack
+### 5.1 Architecture and technology stack
 
 *While we are flexible on technology underlying your architecture, our understanding is that you have existing infrastructure in `<Azure, AWS, GCP>`. The Architecture below is a starting point for addressing the implementation of your product.*
 
@@ -155,11 +155,11 @@ If you have read this far, thank you! A framework alone isn't very useful so I'm
 *We are aware of legacy tools for `<legacy products>` built in `<e.g., .Net and SQL server>` that connect directly with `<e.g., IBM Maximo>`. Our approach is to build our tools as APIs (e.g., using `<e.g., Apigee>`) to build a service architecture. This will also enable greater efficiency with third parties.*
 
 
-#### 5.2 Existing data sources
+### 5.2 Existing data sources
 
 *We will study aspects of existing data sources such as centralization, accessibility, performance, structure, and more. This will be achieved through `<e.g., a “data maturity assessment” (DMA)>` developed by `<e.g.,`[TDWI](https://tdwi.org/pages/maturity-model/big-data-maturity-model-assessment-tool.aspx)`>`. This foundational exercise will give us an understanding of the current gaps and opportunities.*
 
-#### 5.3 New data sources
+### 5.3 New data sources
 
 *Following the analysis of existing data sources, we will develop a plan to connect, structure, and extend to new data sources that are required.*
 
