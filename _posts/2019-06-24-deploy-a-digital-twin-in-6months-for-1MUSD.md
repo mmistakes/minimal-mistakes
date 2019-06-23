@@ -54,8 +54,10 @@ A more cost effective approach is to leverage IoT services from platforms such a
 
 Finally, I recommend that you explore external data sources. While there are many providers of valuable private data sets such as Thomson Reuters (finance), or LexisNexis (legal), you must explore what is freely available from reputable sources such as [data.gov](https://data.gov). For instance, getting National Oceanic and Atmospheric Administration data in Python is as simple as:
 
-```from noaa_sdk import noaa
-n = noaa.NOAA().get_forecasts('11365', 'US', True)```
+```
+from noaa_sdk import noaa
+n = noaa.NOAA().get_forecasts('11365', 'US', True)
+```
 
 # Write the math down
 
