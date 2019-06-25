@@ -3,7 +3,7 @@ layout: post
 title:  "IIS 로그 분석 Part 1"
 subtitle: "Pandas 와 WSL 을 이용한 빠른 분석"
 author: "코마 (gbkim1988@gmail.com)"
-date:   2019-06-20 00:00:00 +0900
+date:   2019-06-25 00:00:00 +0900
 categories: [ "pandas", "python", "wsl", "bash"]
 excerpt_separator: <!--more-->
 ---
