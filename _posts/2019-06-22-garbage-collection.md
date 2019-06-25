@@ -8,7 +8,7 @@ comments: true
 # Java Garbage Collection
 
 평소에 가비지 컬렉션 공부를 해야지라는 생각만 가지고 있었는데, 이번 기회에 자세하게(?)배워보도록 하자. 훌륭한 가비지 컬렉션 내용이 정리된 글이 있었으며, 도움이 많이 되었다.  
-[NAVER D2 Java Garbage Collection]([https://d2.naver.com/helloworld/1329](https://d2.naver.com/helloworld/1329))
+[NAVER D2 Java Garbage Collection](https://d2.naver.com/helloworld/1329)
 ### 들어가기에 앞서
 - JVM(자바 가상 머신): 어느 운영체제, 기기에서 이식 가능한 실행 환경을 제공해주며 메모리도 관리해준다.
 - HotSpot VM: Sun/Oracle에서 개발한 엔진 JVM이다. 
