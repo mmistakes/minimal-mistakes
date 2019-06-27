@@ -1,5 +1,5 @@
 ---
-title: "Time Series Forecasting with SARIMA"
+title: "Multi-step Forecasting with SARIMA"
 date: 2019-05-25
 excerpt: "Very simple stock trading strategy: Tesla, Apple, Amazon, GE and Boeing"
 tags: [time-series, sarima, forecasting, stock]
@@ -279,5 +279,71 @@ As mentioned above, we can inspect autocorrelation and partial autocorrelation p
 ## Build and Evaluate  
 
 I used this [script]({% post_url 2019-05-25-sarima-script %}) to build and evaluate a SARIMA model, and used this [script](https://www.kaggle.com/mjmurphy28/grid-search-for-sarima) to grid search the hyperparameter space in order to determine an optimal configuration for the SARIMA model. 
+
+
+# Results
+
+## Tesla  
+
+Tesla's stock during this period was rather volatile, having a standard deviation of 9.624, a median rolling Kurtosis (window of 5) of 0.784 and a mean of 0.912 and a mean absolute percentage error (MAPE) of 2.165\%. Taking a look at the chart of rolling Kurtosis, it appears to be cyclical: values greater than 0 indicate that that window of returns is on the positive side of the returns distribution (good thing), with this stock spending the majority of time above zero. This information combined with the volatility suggest this is a high risk, high reward stock; depending on your buy/sell signals this asset could be very lucrative but you must have a pretty good appetite for risk. 
+
+Now we will forecast 2 business weeks using our SARIMA model:  
+
+**Recursive Method**  
+
+``` python
+# 1 - split the data
+train, test = tesla.data[:-horizon]['Adj Close'], tesla.data[-horizon:]['Adj Close']
+
+# 1 - create model
+model = SARIMAX(train, order=(1, 1, 1), 
+                seasonal_order=(0, 0, 0, 0), 
+                trend='c', enforce_stationarity=False, 
+                enforce_invertibility=False)
+
+model_fit = model.fit(disp=False)
+
+# recursive method
+preds = model_fit.predict(1, len(test))
+mean_absolute_percentage_error(test, preds)
+```
+
+Using this method we get a MAPE of 29.51\%, quite poor. If the only deciding factor for keeping or selling a security is the recursive SARIMA model shown above, I would definitely keep TSLA: the last day of my training set has a price of \\$267.70 and my model predicts it will close at \\$313.88 (an increase of 17\.2\%). In fact, my model predicts the price of TSLA will not decrease under the initial amount for the entire horizon of 10 days. However, in actuality if I were to follow this simple model I would lose **9.79\%**. On average Tesla stock changes by 2.2%, but our recursive model had a MAPE of over 25%. This is not acceptable, but one of the most basic time series forecasting where the errors are cumulative and explod quickly so not suggested for multi-step forecasting (even with a relatively small horizon). 
+
+Let's improve on this! For this we use the SARIMA Build and Evaluate script mentioned above.
+
+**Direct Method**  
+
+``` python
+cfg = [(1, 0, 4), (4, 1, 0, 1), 'c']
+
+preds_direct, result = score_model(tesla.data['Adj Close'].values, horizon, cfg)
+```
+
+<img src="{{site.baseurl}}/images/tesla-forecasting-results.png">
+
+
+Tihs model achieves a MAPE of 1.955\%, much better! This model essentially predicts the opposite of the recursive SARIMA model: of the 10 day horizon only 3 days are predicted to be be gains versus all 10 for the recursive model. This model predicts a slight decrease in closing price for the first day of our horizon, so we should use another metric in combination with this information in deciding to keep or sell this security. In comes the Sharp Ratio, where we use the rate of a 3 month treasury bill in order to calculate excess returns (2.149\% found [here](https://www.cnbc.com/quotes/?symbol=US3M)).
+
+$$ S_r = \frac{\hat{r_p}-r_f}{\sigma} $$
+
+To finish this article we need to annualize the Sharpe ratio, since we calculated it from daily values. There are 252 trading days in the year, so the simple way to annualize it is to multiply the Sharpe ratio by the square root of 252. As reported above, Tesla has an annualized Sharp Ratio of -0.0383, so using this value as well as the forecasted prices I would **sell** this stock (or at the least decrease my position). 
+
+**Evaluate**
+
+``` python
+y_true = tesla[-(n_test+1):-1]['y'].values
+y_pred = np.array(preds[-n_test:])
+mean_absolute_percentage_error(y_true, y_pred)
+```
+
+Using the direct strategy for multi-step forecasting reduced our mean absolute percentage error to **1.003**! While this is lower than the volatility inherent in the stock data, the rolling Kurtosis values and high volatility would cause me to be skeptical so I would not hold (or even buy in the first place).
+
+## Apple  
+
+
+
+
+
 
 The full source code can be found [here](https://github.com/mkm29/DataScience/blob/master/SARIMA%20for%20Time%20Series%20Forecasting.ipynb).
