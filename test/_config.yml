@@ -57,7 +57,7 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
-search_provider          : "algolia"
+search_provider          : "lunr"
 algolia:
   application_id         : "QB6HVGBSBA"
   index_name             : "dev_minimal-mistakes"

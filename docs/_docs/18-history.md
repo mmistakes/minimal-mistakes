@@ -13,6 +13,7 @@ toc: false
 
 ### Enhancements
 
+- Remove unecessary console.log in `lunr-en.js` and `lunr-gr.js` JavaScript. [#2193](https://github.com/mmistakes/minimal-mistakes/issues/2193)
 - Remove unecessary `type="text/javascript"` from Google Analytics JavaScript. [#2190](https://github.com/mmistakes/minimal-mistakes/pull/2190)
 - Update links and fix typos in documentation. [#2186](https://github.com/mmistakes/minimal-mistakes/pull/2186)
 - Add skip links. [#2182](https://github.com/mmistakes/minimal-mistakes/issues/2182)
