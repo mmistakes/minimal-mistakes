@@ -1,10 +1,6 @@
 ---
 title: "Build and Evaluate SARIMA Model"
 date: 2019-05-23
-tags: [nlp, fastai, deep-learning, classification, ulmfit]
-header:
-  overlay_image: /images/roberto-nickson.jpg
-  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
 ---
 
 
