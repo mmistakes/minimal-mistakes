@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+- Update links and fix typos in documentation. [#2186](https://github.com/mmistakes/minimal-mistakes/pull/2186)
 - Add skip links. [#2182](https://github.com/mmistakes/minimal-mistakes/issues/2182)
 
 ## [4.16.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.16.4)
