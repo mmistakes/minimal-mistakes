@@ -8,7 +8,8 @@
 
 /* http://www.456bereastreet.com/archive/200711/screen_readers_sometimes_ignore_displaynone/ */
 
-.hidden {
+.hidden,
+.is--hidden {
   display: none;
   visibility: hidden;
 }
@@ -46,7 +47,7 @@ body:hover .visually-hidden button {
 /* screen readers */
 
 .screen-reader-text:focus,
-.screen-reader-shortcut:focus  {
+.screen-reader-shortcut:focus {
   clip: auto !important;
   height: auto !important;
   width: auto !important;
@@ -59,7 +60,6 @@ body:hover .visually-hidden button {
   text-decoration: none;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 }
-
 
 /*
    Skip links
@@ -78,7 +78,6 @@ body:hover .visually-hidden button {
   width: 0;
   list-style: none;
 }
-
 
 /*
    Type
@@ -104,6 +103,22 @@ body:hover .visually-hidden button {
   white-space: nowrap;
 }
 
+/*
+   Task lists
+   ========================================================================== */
+
+.task-list {
+  padding:0;
+
+  li {
+    list-style-type: none;
+  }
+
+  .task-list-item-checkbox {
+    margin-right: 0.5em;
+    opacity: 1;
+  }
+}
 
 /*
    Alignment
@@ -111,14 +126,15 @@ body:hover .visually-hidden button {
 
 /* clearfix */
 
-.cf { clear: both; }
+.cf {
+  clear: both;
+}
 
 .wrapper {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 }
-
 
 /*
    Images
@@ -161,7 +177,7 @@ body:hover .visually-hidden button {
 /* file page content container */
 
 .full {
-  @include breakpoint($large){
+  @include breakpoint($large) {
     margin-right: -1 * span(2.5 of 12) !important;
   }
 }
@@ -184,7 +200,10 @@ body:hover .visually-hidden button {
 /* social icons*/
 
 .social-icons {
-  .fa {
+  .fas,
+  .fab,
+  .far,
+  .fal {
     color: $text-color;
   }
 
@@ -193,17 +212,18 @@ body:hover .visually-hidden button {
     color: $behance-color;
   }
 
-  .fa-bitbucket,
-  .fa-bitbucket-square {
+  .fa-bitbucket {
     color: $bitbucket-color;
   }
 
-  .fa-dribbble {
+  .fa-dribbble,
+  .fa-dribble-square {
     color: $dribbble-color;
   }
 
   .fa-facebook,
-  .fa-facebook-square {
+  .fa-facebook-square,
+  .fa-facebook-f {
     color: $facebook-color;
   }
 
@@ -221,9 +241,8 @@ body:hover .visually-hidden button {
     color: $github-color;
   }
 
-  .fa-google-plus,
-  .fa-google-plus-square {
-    color: $google-plus-color;
+  .fa-gitlab {
+    color: $gitlab-color;
   }
 
   .fa-instagram {
@@ -236,14 +255,23 @@ body:hover .visually-hidden button {
   }
 
   .fa-linkedin,
-  .fa-linkedin-square {
+  .fa-linkedin-in {
     color: $linkedin-color;
+  }
+
+  .fa-mastodon,
+  .fa-mastodon-square {
+    color: $mastodon-color;
   }
 
   .fa-pinterest,
   .fa-pinterest-p,
   .fa-pinterest-square {
     color: $pinterest-color;
+  }
+
+  .fa-reddit {
+    color: $reddit-color;
   }
 
   .fa-rss,
@@ -271,7 +299,8 @@ body:hover .visually-hidden button {
   }
 
   .fa-vimeo,
-  .fa-vimeo-square {
+  .fa-vimeo-square,
+  .fa-vimeo-v {
     color: $vimeo-color;
   }
 
@@ -279,9 +308,7 @@ body:hover .visually-hidden button {
     color: $vine-color;
   }
 
-  .fa-youtube,
-  .fa-youtube-square,
-  .fa-youtube-play {
+  .fa-youtube {
     color: $youtube-color;
   }
 
@@ -291,7 +318,6 @@ body:hover .visually-hidden button {
   }
 }
 
-
 /*
    Navicons
    ========================================================================== */
@@ -300,7 +326,7 @@ body:hover .visually-hidden button {
   position: relative;
   width: $navicon-width;
   height: $navicon-height;
-  background: #fff;
+  background: $primary-color;
   margin: auto;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -312,7 +338,7 @@ body:hover .visually-hidden button {
     left: 0;
     width: $navicon-width;
     height: $navicon-height;
-    background: #fff;
+    background: $primary-color;
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
@@ -331,25 +357,39 @@ body:hover .visually-hidden button {
   background: transparent;
 
   /* overlay the lines by setting both their top values to 0*/
-  &:before, &:after{
+  &:before,
+  &:after {
     -webkit-transform-origin: 50% 50%;
-        -ms-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
     top: 0;
     width: $navicon-width;
   }
 
   /* rotate the lines to form the x shape*/
-  &:before{
-    -webkit-transform: rotate3d(0,0,1,45deg);
-            transform: rotate3d(0,0,1,45deg);
+  &:before {
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
   }
-  &:after{
-    -webkit-transform: rotate3d(0,0,1,-45deg);
-            transform: rotate3d(0,0,1,-45deg);
+  &:after {
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
   }
 }
 
+.greedy-nav__toggle:hover {
+  .navicon,
+  .navicon:before,
+  .navicon:after {
+    background: mix(#000, $primary-color, 25%);
+  }
+
+  &.close {
+    .navicon {
+      background: transparent;
+    }
+  }
+}
 
 /*
    Sticky, fixed to top content
@@ -368,7 +408,6 @@ body:hover .visually-hidden button {
   }
 }
 
-
 /*
    Wells
    ========================================================================== */
@@ -382,7 +421,6 @@ body:hover .visually-hidden button {
   border-radius: $border-radius;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
-
 
 /*
    Modals
@@ -438,7 +476,6 @@ body:hover .visually-hidden button {
   }
 }
 
-
 /*
    Footnotes
    ========================================================================== */
@@ -451,7 +488,9 @@ body:hover .visually-hidden button {
 .footnotes {
   color: mix(#fff, $gray, 25%);
 
-  ol, li, p {
+  ol,
+  li,
+  p {
     margin-bottom: 0;
     font-size: $type-size-6;
   }
@@ -466,7 +505,6 @@ a.reversefootnote {
   }
 }
 
-
 /*
    Required
    ========================================================================== */
@@ -476,14 +514,14 @@ a.reversefootnote {
   font-weight: bold;
 }
 
-
 /*
    Google Custom Search Engine
    ========================================================================== */
 
 .gsc-control-cse {
-
-  table, tr, td {
+  table,
+  tr,
+  td {
     border: 0; /* remove table borders widget */
   }
 }
@@ -513,8 +551,8 @@ a.reversefootnote {
 
 // full screen video fixes
 :-webkit-full-screen-ancestor {
-   .masthead,
-   .page__footer {
+  .masthead,
+  .page__footer {
     position: static;
   }
 }
