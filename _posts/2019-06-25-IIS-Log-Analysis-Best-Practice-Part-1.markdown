@@ -18,6 +18,18 @@ excerpt_separator: <!--more-->
 
 이번에 소개드릴 내용은 WSL, Pandas 를 이용하여 빠르게 원하는 키워드를 검색하고 추출한 데이터에서 가독성이 높은 자료를 산출하는 방법입니다.
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 수평형 광고 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7572151683104561"
+     data-ad-slot="5543667305"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## 목표
 
 이번 시간 목표는 아래와 같습니다.
