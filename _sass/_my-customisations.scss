@@ -35,3 +35,21 @@
   }
 }
 
+.archive a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p, a, li, figcaption, td {
+  code {
+    font-size: 17px;
+    border: 1px solid #bfbfbf;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
+  }
+}
+
+.sidebar {
+  * {
+    margin-top: 0;
+  }
+}

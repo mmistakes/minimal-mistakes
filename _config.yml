@@ -6,13 +6,9 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 anchors:
-  name: &name "Giulio Troccoli-Allard"
   email: &email "giulio@troccoli.it"
-  website: &website "troccoli.it"
   github: &github "troccoli"
   twitter: &twitter "gta_of_london"
-  facebook: &facebook "giulio.troccoli.allard"
-  linkedin: &linkedin "giulio-troccoli"
   stackoverflow: &stackoverflow "1366144/giuliot"
   main_image: &main_image "/assets/images/hero.jpg"
   teaser_image: &teaser_image "/assets/images/hero500x300.jpg"
@@ -31,7 +27,7 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 locale                   : "en_GB"
 title                    : "Little pieces of (non)sense"
 title_separator          : "-"
-name                     : *name
+name                     : "Giulio Troccoli-Allard"
 description              : "Pieces of knowledge gathered during my years of working as a developer."
 url                      : http://troccoli.it # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -42,7 +38,7 @@ masthead_title           : # overrides the website title displayed in the masthe
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "staticman_v2  # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : "staticman_v2"  # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -98,7 +94,7 @@ naver_site_verification  :
 twitter:
   username               : *twitter
 facebook:
-  username               : *facebook
+  username               :
   app_id                 :
   publisher              :
 og_image                 : *main_image # Open Graph/Twitter default site image
@@ -119,30 +115,86 @@ analytics:
 
 # Site Author
 author:
-  name             : *name
+  name             : "Giulio Troccoli-Allard"
   avatar           : /assets/images/gravatar.jpeg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Britalian, Olympic Drummer, mad baker and a bit of a geek (just a bit)"
   location         : "London, UK"
-  email            : *email
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: mailto:your.name@email.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      # url: "http://troccoli.it"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+      url: "https://twitter.com/gta_of_london"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/troccoli"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      # url: "https://gitlab.com/{{ author.gitlab }}"
+    - label: "Stack Overflow"
+      icon: "fab fa-fw fa-stack-overflow"
+      url: "https://stackoverflow.com/users/1366144/giuliot"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+    - label: "Keybase"
+      icon: "fas fa-fw fa-key"
+      # url: "https://keybase.io/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/giulio-troccoli"
+    - label: "XING"
+      icon: "fab fa-fw fa-xing-square"
+      # url: "https://www.xing.com/profile/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url: "https://instagram.com/"
+    - label: "Tumblr"
+      icon: "fab fa-fw fa-tumblr-square"
+      # url: "https://{{ author.tumblr }}.tumblr.com"
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      # url: "https://bitbucket.org/{{ author.bitbucket }}"
+    - label: "Last.fm"
+      icon: "fab fa-fw fa-lastfm-square"
+      # url: "https://last.fm/user/{{ author.lastfm }}"
+    - label: "Dribbble"
+      icon: "fab fa-fw fa-dribbble"
+      # url: "https://dribbble.com/{{ author.dribbble }}"
+    - label: "Pinterest"
+      icon: "fab fa-fw fa-pinterest"
+      # url: "https://www.pinterest.com/{{ author.pinterest }}"
+    - label: "Foursquare"
+      icon: "fab fa-fw fa-foursquare"
+      # url: "https://foursquare.com/{{ author.foursquare }}"
+    - label: "Steam"
+      icon: "fab fa-fw fa-steam"
+      # url: "https://steamcommunity.com/id/{{ author.steam }}"
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube"
+      # url: "https://www.youtube.com/user/{{ author.youtube }}"
+    - label: "SoundCloud"
+      icon: "fab fa-fw fa-soundcloud"
+      # url: "https://soundcloud.com/{{ author.soundcloud }}"
+    - label: "Weibo"
+      icon: "fab fa-fw fa-weibo"
+      # url: "https://www.weibo.com/{{ author.weibo }}"
+    - label: "Flickr"
+      icon: "fab fa-fw fa-flickr"
+      # url: "https://www.flickr.com/{{ author.flickr }}"
+    - label: "CodePen"
+      icon: "fab fa-fw fa-codepen"
+      # url: "https://codepen.io/{{ author.codepen }}"
+    - label: "Vine"
+      icon: "fab fa-fw fa-vine"
+      # url: "https://vine.co/u/{{ author.vine }}"
 
 # Site Footer
 footer:
@@ -308,7 +360,7 @@ resume:
   style: styles-6
 
   #Profile information
-  name: *name
+  name: "Giulio Troccoli-Allard"
   tagline: Senior Backend Developer
   pic: "profile-picture.jpg"  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
   summary: "I have been working as a developer for 20 years. I started as a C developer and did that for more than 10 years.
@@ -325,13 +377,13 @@ collection of code.
 I also like mentoring more junior developers. It's very gratifying to help someone to become a better developer."
 
   #sidebar links
-  email: *email
+#  email: "giulio@troccoli.it"
   phone:
-  website: *website
-  linkedin: *linkedin
-  github: *github
-  twitter: *twitter
-  stackoverflow: *stackoverflow
+  website: "https://troccoli.it"
+  linkedin: "giulio-troccoli"
+  github: "troccoli"
+  twitter: "gta_of_london"
+  stackoverflow: "1366144/giuliot"
   #Update all the sections by editing the files inside _data folder.
 
   # Tracker
