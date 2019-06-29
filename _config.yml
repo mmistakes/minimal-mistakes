@@ -201,23 +201,16 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
+      url: "https://twitter.com/gta_of_london"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
-
+      url: "https://github.com/troccoli"
+    - label: "Stack Overflow"
+      icon: "fab fa-fw fa-stack-overflow"
+      url: "https://stackoverflow.com/users/1366144/giuliot"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/giulio-troccoli"
 
 # Reading Files
 include:
