@@ -55,7 +55,7 @@ I recommend that you head over to [Alex Jupiter's post](https://medium.theuxblog
 
 Your primary goal is to find so called "product market fit" (as originally defined, I believe, by [Marc Andreesen in 2007](https://web.stanford.edu/class/ee204/ProductMarketFit.html)), or in other words find the "stars" in the [growth share matrix](https://en.wikipedia.org/wiki/Growth%E2%80%93share_matrix) (also known as the BCG matrix). 
 
-Engage the relevant stakeholder and do something quick and dirty at first. Pull a small data set and test. The key here is to focus on doing one thing that will move the metric as defined in Step 1. Review and improve on the User Experience and Communication developed in Step 2. Don't build a massive data pipeline unless your product has traction with end users. Sometimes just a great real-time visual might capture 80% of the value. 
+Engage the relevant stakeholder and do something quick and dirty at first. Pull a small data set and test. The key here is to focus on doing one thing that will move the metric as defined in Step 2. Also continuously review and improve on the User Experience and Communication developed earlier. Don't build a massive data pipeline unless your product has traction with end users. Sometimes just a great real-time visual might capture 80% of the value. 
 
 ## 3.1 Agile, Devops, and Products
 
@@ -70,9 +70,9 @@ Anticipate that the bigger cost of this engine is the long term maintenance, upd
 
 ## 4.1 Kill the dogs
 
-The dogs will be easy to spot and don't be afraid to pull the trigger. The last thing a designer or an engineer wants to do is to work on a doomed project. Everyone will love you for it. If you see a lot of resistance from the team after you've made clear your intentions to stop it, you might want to understand this better. One effective approach is to give the team timebox to do everything they can fight from behind and make a good comeback. But do not overuse it, because it won't work nearly as well the second time around.
+The dogs will be easy to spot and don't be afraid to pull the trigger. The last thing a designer or an engineer wants to do is to work on a doomed project. Everyone will love you for it. If you see a lot of resistance from the team after you've made clear your intentions to stop it, you might want to understand this better. One effective approach is to give the team a timebox to do everything they can fight from behind and make a good comeback. But do not overuse it, because it won't work nearly as well the second time around.
 
 ## 4.2 Accelerate the stars
 
-Killing the dogs might be the easiest part of this last step. The more difficult one comes from success, because success means that there will be players from the old organization who stand to lose relative influence.  But recalling Conway's Law again, it will be a lot easier to scale these new lines of business because they were setup as such from the start.
+Killing the dogs might be the easiest part of this last step. The more difficult one comes from success, because success means that there will be players from the old organization who stand to lose relative influence. A successful product is still at risk of being victim to politics and power struggle at the top. Never under-estimate the power effect of the [principal-agent problem](https://en.wikipedia.org/wiki/Principal%E2%80%93agent_problem). But recalling Conway's Law again, it will be a lot easier to scale these new lines of business because they were setup as such from the start.
 
