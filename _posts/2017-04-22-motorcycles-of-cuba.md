@@ -1,6 +1,6 @@
 ---
 header:
-  image: https://cdn-images-1.medium.com/max/2600/1*oDLgNJGstRw-f17RpWX9FQ.jpeg
+  image: /assets/images/2017-04-22-motorcycles-of-cuba/2017-03-MotorcyclesOfCuba-5500.jpg
   caption: "A 250cc MZ motorcycle on the streets of Havana. Photo credit: Adam Nagel"
 
 gallery:
@@ -30,52 +30,52 @@ We traveled to Cuba to observe how motorcycles are used and to capture photos of
 
 <figure>
   <a href="/assets/images/2017-04-22-motorcycles-of-cuba/2017-03-MotorcyclesOfCuba-5519.jpg">
-	  <img src="/assets/images/2017-04-22-motorcycles-of-cuba/2017-03-MotorcyclesOfCuba-5519.jpg">
+    <img src="/assets/images/2017-04-22-motorcycles-of-cuba/2017-03-MotorcyclesOfCuba-5519.jpg">
   </a>
-	<figcaption>A Suzuki GN125H in Havana. Photo Credit: Adam Nagel</figcaption>
+  <figcaption>A Suzuki GN125H in Havana. Photo Credit: Adam Nagel</figcaption>
 </figure>
 {: .full}
 Among motorcycles, 125cc four-strokes are most common overall. 250cc MZs are also common, while the 350cc Jawa is more rare. The occasional 100cc two-stroke chainsaw whizzes by. Out in the countryside, an Africa Twin rumbled by as part of a touring group and looked like a monster among the smaller Cuban bikes.
 
 <figure>
   <a href="/assets/images/2017-04-22-motorcycles-of-cuba/2017-03-MotorcyclesOfCuba-5852.jpg">
-	  <img src="/assets/images/2017-04-22-motorcycles-of-cuba/2017-03-MotorcyclesOfCuba-5852.jpg">
+    <img src="/assets/images/2017-04-22-motorcycles-of-cuba/2017-03-MotorcyclesOfCuba-5852.jpg">
   </a>
-	<figcaption>A 2-stroke Suzuki in Havana. Photo Credit: Adam Nagel</figcaption>
+  <figcaption>A 2-stroke Suzuki in Havana. Photo Credit: Adam Nagel</figcaption>
 </figure>
 {: .full}
 When it comes to new bikes, 125cc Suzukis are the clear favorite. The Chinese Ava Jaguar plug-in electric motorcycle is a surprisingly popular new motorcycle.
 
 <figure>
   <a href="/assets/images/2017-04-22-motorcycles-of-cuba/2017-03-MotorcyclesOfCuba-5633.jpg">
-	  <img src="/assets/images/2017-04-22-motorcycles-of-cuba/2017-03-MotorcyclesOfCuba-5633.jpg">
+    <img src="/assets/images/2017-04-22-motorcycles-of-cuba/2017-03-MotorcyclesOfCuba-5633.jpg">
   </a>
-	<figcaption>A Chinese Ava Januar plug-in electric motorcycle in Viñales. Photo Credit: Adam Nagel</figcaption>
+  <figcaption>A Chinese Ava Januar plug-in electric motorcycle in Viñales. Photo Credit: Adam Nagel</figcaption>
 </figure>
 {: .full}
 Nobody is too cool to ride on the back. It’s not uncommon to see a tattooed, punk-rock-styled Cuban on the back of a tiny scooter with his friend. You’ll occasionally see a family of four, including baby, squeezed onto one seat.
 
 <figure>
   <a href="/assets/images/2017-04-22-motorcycles-of-cuba/riders.jpg">
-	  <img src="/assets/images/2017-04-22-motorcycles-of-cuba/riders.jpg">
+    <img src="/assets/images/2017-04-22-motorcycles-of-cuba/riders.jpg">
   </a>
-	<figcaption>Helmets are the only commonly-used safety gear. Photo Credit: Adam Nagel</figcaption>
+  <figcaption>Helmets are the only commonly-used safety gear. Photo Credit: Adam Nagel</figcaption>
 </figure>
 {: .full}
 Every rider and passenger wears a half-helmet, likely as a legal requirement. Protective clothing such as jackets, pants, and boots are practically unheard-of. The days were quite hot, even in mid-March.
 
 <figure>
   <a href="/assets/images/2017-04-22-motorcycles-of-cuba/2017-03-MotorcyclesOfCuba-5609.jpg">
-	  <img src="/assets/images/2017-04-22-motorcycles-of-cuba/2017-03-MotorcyclesOfCuba-5609.jpg">
+    <img src="/assets/images/2017-04-22-motorcycles-of-cuba/2017-03-MotorcyclesOfCuba-5609.jpg">
   </a>
-	<figcaption>A Russian Karpaty 50cc 2-stroke in Viñales. Photo Credit: Adam Nagel</figcaption>
+  <figcaption>A Russian Karpaty 50cc 2-stroke in Viñales. Photo Credit: Adam Nagel</figcaption>
 </figure>
 {: .full}
 Among the Suzukis, MZs, Jawas, and Avas are the occasional older brand, such as the Russian Karpaty, and various unlabeled 2-stroke hackjobs. Sportbikes are very rare.
 
 <figure>
   <a href="/assets/images/2017-04-22-motorcycles-of-cuba/sportbike.jpg">
-	  <img src="/assets/images/2017-04-22-motorcycles-of-cuba/sportbike.jpg">
+    <img src="/assets/images/2017-04-22-motorcycles-of-cuba/sportbike.jpg">
   </a>
   <figcaption>A rare Yamaha sportbike in Viñales. Photo Credit: Adam Nagel</figcaption>
 </figure>
