@@ -5,7 +5,7 @@
 - project:
   title: London Volleyball Association
   link: "https://github.com/troccoli/lva"
-  tagline: "An attempt to write a more modern site for the LVA League Admins, in Laravel 5.5"
+  tagline: "An attempt to write a more modern site for the LVA League Admins, in Laravel 5.8"
 - project:
   title: iCal
   link: "https://github.com/troccoli/iCal"
