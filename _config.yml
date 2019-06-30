@@ -106,9 +106,6 @@ author:
   location: "Maceió - Alagoas - Brasil"
   email: "contato@nortanprojetos.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: mailto:contato@nortanprojetos.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://www.nortanprojetos.com"
