@@ -1,0 +1,51 @@
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+    
+    .sidebar-wrapper {
+        position: static;
+        width: inherit;
+    }
+    
+    .main-wrapper {
+        padding: 30px;
+    }
+    
+    .main-wrapper .time {
+        position: static;
+        display: block;
+        margin-top: 5px;
+    }
+    
+    .main-wrapper .upper-row {
+        margin-bottom: 0;
+    }
+
+
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+     
+    
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    
+    .skillset .level-title {
+        display: inline-block;
+        float: left;
+        width: 30%;
+        margin-bottom: 0;
+    }
+    
+    
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
+
+
+
+

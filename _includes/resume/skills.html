@@ -1,20 +1,16 @@
 {% if site.data.resume.skills %}
 <section class="skills-section section">
 
-  <h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
+  <h2 class="section-title"><span class="icon-holder"><i class="fas fa-rocket"></i></span>Skills &amp;amp; Proficiency</h2>
 
   <div class="skillset">
 
     {% for skill in site.data.resume.skills %}
     <div class="item">
-
       <h3 class="level-title">{{ skill.name }}</h3>
-
-      <div class="level-bar">
-        <div class="level-bar-inner" data-level="{{ skill.level }}">
-        </div>
-      </div><!--//level-bar-->
-
+      <div class="progress level-bar">
+        <div class="progress-bar theme-progress-bar" role="progressbar" style="width: {{ skill.level }}%" aria-valuenow="{{ skill.level }}" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
     </div><!--//item-->
     {% endfor %}
 

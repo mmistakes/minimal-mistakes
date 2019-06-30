@@ -1,7 +1,7 @@
 <!-- Use icons from fontawesome when you are adding new item in the contact list  -->
 <div class="sidebar-wrapper">
 
-   <div class="profile-container">
+    <div class="profile-container">
 
        <img class="profile-img" src="{{site.baseurl}}/assets/images/{{ site.resume.pic }}" alt="profile picture" />
 
@@ -14,39 +14,39 @@
        {% endif %}
 
        {% if site.resume.pdf %}
-       <h4><a href="{{site.baseurl}}/assets/resume/{{ site.resume.pdf }}" alt="Download resume" target="_blank"><i class="fa fa-download"></i> PDF</a></h4>
+       <h4><a href="{{site.baseurl}}/assets/resume/{{ site.resume.pdf }}" alt="Download resume" target="_blank"><i class="fas fa-download"></i> PDF</a></h4>
        {% endif %}
    </div><!--//profile-container-->
 
-   <div class="contact-container container-block">
-       <ul class="list-unstyled contact-list">
+    <div class="contact-container container-block">
+        <ul class="list-unstyled contact-list">
 
           {% if site.resume.email %}
-           <li class="email"><i class="fa fa-envelope"></i><a href="mailto: {{site.resume.email}}">{{site.resume.email}}</a></li>
+           <li class="email"><i class="fas fa-envelope"></i><a href="mailto: {{site.resume.email}}">{{site.resume.email}}</a></li>
            {% endif %}
 
            {% if site.resume.phone %}
-           <li class="phone"><i class="fa fa-phone"></i><a href="tel:{{site.resume.phone}}">{{site.resume.phone}}</a></li>
+           <li class="phone"><i class="fas fa-phone"></i><a href="tel:{{site.resume.phone}}">{{site.resume.phone}}</a></li>
            {% endif %}
 
            {% if site.resume.website %}
-           <li class="website"><i class="fa fa-globe"></i><a href="http://{{site.resume.website}}" target="_blank">{{site.resume.website}}</a></li>
+           <li class="website"><i class="fas fa-globe"></i><a href="http://{{site.resume.website}}" target="_blank">{{site.resume.website}}</a></li>
            {% endif %}
 
            {% if site.resume.github %}
-           <li class="github"><i class="fa fa-github"></i><a href="http://github.com/{{site.resume.github}}" target="_blank">{{site.resume.github}}</a></li>
+           <li class="github"><i class="fab fa-github"></i><a href="http://github.com/{{site.resume.github}}" target="_blank">{{site.resume.github}}</a></li>
            {% endif %}
 
            {% if site.resume.stackoverflow %}
-           <li class="stackoverlow"><i class="fa fa-stack-overflow"></i><a href="http://www.stackoverflow.com/users/{{site.resume.stackoverflow}}" target="_blank">{{site.resume.stackoverflow}}</a></li>
+           <li class="stackoverlow"><i class="fab fa-stack-overflow"></i><a href="http://www.stackoverflow.com/users/{{site.resume.stackoverflow}}" target="_blank">{{site.resume.stackoverflow}}</a></li>
            {% endif %}
 
            {% if site.resume.linkedin %}
-           <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://linkedin.com/in/{{site.resume.linkedin}}" target="_blank">{{site.resume.linkedin}}</a></li>
+           <li class="linkedin"><i class="fab fa-linkedin"></i><a href="https://linkedin.com/in/{{site.resume.linkedin}}" target="_blank">{{site.resume.linkedin}}</a></li>
            {% endif %}
 
            {% if site.resume.twitter %}
-           <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/{{site.resume.twitter}}" target="_blank">@{{site.resume.twitter}}</a></li>
+           <li class="twitter"><i class="fab fa-twitter"></i><a href="https://twitter.com/{{site.resume.twitter}}" target="_blank">@{{site.resume.twitter}}</a></li>
            {% endif %}
 
        </ul>
