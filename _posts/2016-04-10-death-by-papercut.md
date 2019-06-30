@@ -13,7 +13,7 @@ It was during a brief moment of quiet in between deadlines when I came face-to-f
 
 <figure>
 	<img src="/assets/images/2016-04-10-death-by-papercut/defects-vs-dev-time.gif">
-	<figcaption>It’s subtle. Give it a minute. _(from Steve McConnell’s “Rapid Development”)_</figcaption>
+	<figcaption>It’s subtle. Give it a minute. *(from Steve McConnell’s “Rapid Development”)*</figcaption>
 </figure>
 
 I must have stared at this chart for 15 minutes, unable to believe my eyes.
