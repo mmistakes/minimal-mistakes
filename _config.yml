@@ -19,8 +19,8 @@ locale: "pt-BR"
 title: "Nortan Projetos"
 title_separator: "-"
 subtitle: # site tagline that appears below site title in masthead
-name: "Your Name"
-description: "An amazing website."
+name: "Nortan Projetos"
+description: "Gestão Integrada e Projetos."
 url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -114,38 +114,20 @@ author:
       url: "https://www.nortanprojetos.com"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      # url: "https://twitter.com/"
-    #    - label: "Facebook"
-    #      icon: "fab fa-fw fa-facebook-square"
-    # url: "https://facebook.com/"
-    #    - label: "GitHub"
-    #      icon: "fab fa-fw fa-github"
-    # url: "https://github.com/"
+      url: "https://twitter.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://instagram.com/"
 
 # Site Footer
 footer:
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      # url:
-    #    - label: "Facebook"
-    #      icon: "fab fa-fw fa-facebook-square"
-    # url:
-    #    - label: "GitHub"
-    #      icon: "fab fa-fw fa-github"
-    # url:
-    #    - label: "GitLab"
-    #      icon: "fab fa-fw fa-gitlab"
-    # url:
-    #    - label: "Bitbucket"
-    #      icon: "fab fa-fw fa-bitbucket"
-    # url:
+      url: ""
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      url: ""
 
 # Reading Files
 include:
