@@ -2,6 +2,12 @@
   role: Applications Developer
   time: October 2018 - present
   company: Shopworks, London
+  details: "I am working on new features, bug fixing and some refactoring from CodeIgniter to Laravel.
+  <ul>
+  <li>refactored a CRUD screen from CodeIginter to Laravel</li>
+  <li>built a middleware to import data from a third-party HR system into our core Product</li>
+  <li>refactored all the emails in the core Product to either Mailable or Notification in Laravel</li>
+  </ul>"
 - experience:
   role: Lead Backend Developer
   time: April 2017 - August 2018
