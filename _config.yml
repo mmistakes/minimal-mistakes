@@ -344,7 +344,7 @@ resume:
   baseurl: '/resume' #change it according to your repository name
   last_update: '30 June 2019'
 
-  pdf: "troccoli-allard-resume.pdf"
+  pdf: "troccoli-allard-resume-100630.pdf"
   # Enable one of these styles by removing #. Style will be applied only after restarting the build or serve.
   style: orbit-6
 
