@@ -1,5 +1,5 @@
 ---
-title: Visit a tea shop to gift feedback
+title: Gifting Feedback from a Tea Shop
 category: "Team health"
 tag: ["Feedback"]
 toc: true
