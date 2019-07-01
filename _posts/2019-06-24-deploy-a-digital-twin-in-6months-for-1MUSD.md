@@ -140,8 +140,7 @@ It may seem academic to write a white paper, but there is a very pragmatic reaso
 
 # 4. Timeline, additional considerations and cost
 
-## 4.1 
-Broad timeline:
+## 4.1 Broad timeline:
 
 1. In less than 4 weeks, you should aim to have delivered a baseline simulator
 2. In less than 8 weeks you should have delivered a white paper
@@ -155,7 +154,7 @@ Broad timeline:
 2. The DT is a product and needs to be promoted/deployed/adopted by the organization
 3. In the age of software, building a business is synonymous with building software - you should aim to own all of the intellectual property as it will be a differentiator to your competitor
 
-## 4.3
+## 4.3 Cost
 
 A rule of thumb for the ratio between the cost for temporary contractors/consultants and full time employees is roughly 2 to 1. For short term engagements, it may be as much as 3 to 1, while for longer term engagements it tends toward 1 to 1. 
 
