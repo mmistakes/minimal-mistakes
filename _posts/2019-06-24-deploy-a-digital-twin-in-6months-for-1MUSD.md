@@ -4,21 +4,21 @@ category: "Digital Twin"
 tag: ["Machine Learning", "Data Science", "Digital Twin"]
 ---
 
-Whether you manage a fleet of cruise ships, an upstream oil & gas supply chain, or a loyalty program for a large hotel chain, not having Digital Twins for your critical assets is like not having an accounting ledger for your business - you are flying blind, hoping for the best, and coping when the worst happens. Even if you think you have the best team in the world running your assets to near perfection, as President Ronald Reagan said of nuclear disarmament, you should “trust, but verify”.
+Whether you manage a fleet of cruise ships, an upstream oil & gas supply chain, a global retail store network, or a loyalty program for a large hotel chain, not having Digital Twins for your critical assets is like not having an accounting ledger for your business - you are flying blind, hoping for the best, and coping when the worst happens. Even if you think you have the best team in the world running your assets to near perfection, as President Ronald Reagan said of Russian nuclear disarmament, “trust, but verify”.
 
-I will 1) define what a Digital Twin is, 2) discuss its many benefits, 3) explain how to build each of the parts, and end with 4) how much it should cost you to build and maintain.
+I will 1) define what a Digital Twin is, 2) discuss its many benefits, 3) explain at length how to build some of the parts, and end with 4) how much it should cost you to build and maintain.
 
 # 1. Definition of a Digital Twin
 
-So what’s a Digital Twin (DT) and how is it different from a plain old simulator? A DT is a simulator, but one that is connected to real-time data feeds for up-to-date representations of the assets, and one that is accessible through user centered web and mobile interfaces by your operations, planning, and risk teams. Example assets you can make a DT for include: a plant, a truck, or even a person (e.g., a customer).
+So what’s a Digital Twin (DT) and how is it different from a plain old simulator? A DT is a simulator, but one that is connected to real-time data feeds for up-to-date representations of your assets, and one that is accessible through user centered web and mobile interfaces by your operations, planning, and risk teams. Example assets you can make a DT for include: a plant, a truck, or even a person (e.g., a customer).
 
 At one end of the spectrum, a single asset can have multiple plain DTs associated with it. Alternatively, a single complicated DT can represent clusters of millions of heterogeneous fixed, mobile and organic assets. In all cases, a DT will have five main parts: 
 
-At the front, you have the web and mobile interfaces for your team to operate the DT
-At the back, are connections to real time data feeds and assumptions
-At the core, is a simulator that takes a state of the world and returns a future state of the world
-On top, you have a set of algorithms that you can pass to your assets to make autonomous or semi-autonomous decisions within the simulator
-On the bottom, you have a module to generate disruption scenarios to pass to your simulator
+1. At the front, you have the web and mobile interfaces for your team to operate the DT
+2. At the back, are connections to real time data feeds and assumptions
+3. At the core, is a simulator that takes a state of the world and returns a future state of the world
+4. On top, you have a set of algorithms that you can pass to your assets to make autonomous or semi-autonomous decisions within the simulator
+5. On the bottom, you have a module to generate disruption scenarios to pass to your simulator
 
 ## A Digital Twin is a pragmatic tool first
 
@@ -28,19 +28,19 @@ What matters is not that you be scientifically accurate - it isn’t an academic
 
 A DT enables a few key activities:
 
-Operations teams can monitor and make interventions to your assets’ health in real time
-Planning teams can schedule and determine the right assets to acquire and decommission
-Risk teams can develop mitigation, contigency, and recovery plans against credible disruption scenarios
++ Operations teams can monitor and make interventions to your assets’ health in real time
++ Planning teams can schedule and determine the right assets to acquire and decommission
++ Risk teams can develop mitigation, contigency, and recovery plans against credible disruption scenarios
 
 A digital twin is one of the most valuable classes of products to launch as part of a digital transformation (DX). I recommend that you consider the approach I’m suggesting in my post “[weave your DX out of SILK](https://blog.dannycastonguay.com/digital%20transformation/weave-your-dx-out-of-silk/)”.
 
 # 3. How to build it
 
-## 3.1 Web and mobile interface
+## 3.1 Build a human centered web and mobile interface
 
 The foundation for any good product starts with an understanding of the motivation of a user, desired features, and pain points along the journey. For example, a truck dispatcher at a large construction site wants to constantly remove bottlenecks from the operation to increase overall construction speed and reduce injury risks. A desired feature might be a real time map with the location of all the trucks. A pain point might be that all of the truck icons are the same, forcing the dispatcher to mouse over every truck to identify the cement mixer trucks. A different set of icons for each truck type would reduce the cognitive load on the operator and enable for better, faster decision making. A DT could further help the operator predict and identify future bottlenecks before they happen so that schedule changes can be made several minutes (or even hours) in advance.
 
-By focussing on the user experience, operation, planning and risk teams will do less tedious, repetitive work and focus more on making intelligent decisions. I will not discuss UX much further here, and instead refer you to a post I made on how to [build a great product proposal](https://blog.dannycastonguay.com/product%20management/make-a-great-product-out-of-your-product-proposal/), which includes a section on design. 
+By focussing on the user experience, operation, planning and risk teams will do less tedious, repetitive work and focus more on making intelligent decisions. I will not discuss UX much further here, and instead refer you to a post I made on how to [build a great product proposal](https://blog.dannycastonguay.com/product%20management/make-a-great-product-out-of-your-product-proposal/), which includes a section on user experience design. 
 
 ## 3.2 Feed your Digital Twin with good data
 
@@ -50,21 +50,21 @@ There is a joke that data engineers do the work, while data scientists get the f
 
 Your DT is only as good as the data that you put into it. Increasing granularity means removing aggregation of data when not needed. If it’s not too large, leave the data in raw format and have your IT team make use of auto scaling features for dealing with large data sets. [Infrastructure as Code (IaC)](https://amzn.to/2YaDtn2) now makes auto scaling resources easier than before and a single DevOps professional can support a handful of [two-pizza teams](https://medium.com/magenta-lifestyle/why-two-large-pizza-team-is-the-best-team-ever-4f19b0f5f719).
 
-Avoid boiling the ocean with a consolidated data platform. A good starting point to narrow down the scope of data is to observe the information that your teams are using today. Let’s introduce an semi-fictitious case. Consider a locomotive planning director who is responsible for managing the fleet of locomotives for a large railroad (thousands of locomotives, each costing around $2M to purchase, and much more to maintain over its useful life). In Q2 2019, the director might look at 2018 average monthly ton-miles on the network by train type, the average historical maintenance schedule, and many other 2018 averages. Since the director only gets this data refreshed once a year, and only knows the averages, the plan will need to be most conservative and will likely result in excess capacity/low asset utilization. So the 2020 plan is based on 2018 data. Sounds sub-optimal but it’s the right answer given the information available.
+Avoid boiling the ocean with a consolidated data platform. A good starting point to narrow down the scope of data is to observe the information that your teams are using today. Let’s introduce a semi-fictitious case. Consider a locomotive planning director who is responsible for managing the fleet of locomotives for a large railroad (thousands of locomotives, each costing around $2M to purchase, and much more to maintain over its useful life). In Q2 2019, the director might look at 2018 average monthly ton-miles on the network by train type, the average historical maintenance schedule, and many other 2018 averages. Since the director only gets this data refreshed once a year, and only knows the averages, the plan will need to be most conservative and will likely result in excess capacity/low asset utilization. So the 2020 plan is based on 2018 data. Sounds sub-optimal but it’s the right answer given the information available.
 
-On the other hand, if the director had access to this data the day it happens, and could not only look at averages but at the entire distribution, the director could make more aggressive plans with confidence, and could adjust the plans every day of the year and make more nimble tradeoffs (e.g., between decommissioning an older engine this month or next month). 
+On the other hand, if the director had access to this data the day it happens, and could not only look at averages but at the entire distribution, the director could make more aggressive plans with confidence, and could adjust the plans every day of the year and make more nimble tradeoffs (e.g., between decommissioning an older engine this week or next week). 
 
 ### 3.2.2 Augment your data, both internally and externally
 
 *Existing internal data*
 
-Once you’ve increased the granularity and freshness of existing data types, it’s time to look at new data sets that previously were ignored, or were plugged in as assumptions but that exist within your organization. For instance, it could be forecasting data from your marketing team. Everytime a customer places an order, have that reflected into the anticipated demand model. Try to connect systems directly with one another by [designing data intensive applications](https://amzn.to/2X1udoB) with tools such as [apigee](https://cloud.google.com/apigee/). By eliminating human data entry from the loop, you remove potential for errors and increase speed.
+Once you’ve increased the granularity and freshness of existing data types, it’s time to look at new data sets that previously were ignored, or were plugged in as assumptions but that exist within your organization. For instance, it could be forecasting data from your marketing team. Everytime a customer places an order, have that reflected into the anticipated demand model. Try to connect systems directly with one another by [designing data intensive applications](https://amzn.to/2X1udoB) with tools such as [apigee](https://cloud.google.com/apigee/). By eliminating human data entry from the loop, you remove potential errors and increase speed.
 
 *New internal data*
 
-Another avenue you should explore is new data from sensors. While it’s tempting to invest tens of millions of dollars in a brand new Internet of Things (IoT) platform, I recommend against doing that in most cases. In fact, if you run an industrial company there is a very good chance that you already have very valuable information coming from Supervisory Control and Data Acquisition (SCADA) and Programmable Logic Controller (PLC) systems. You could start your exploration there.
+Another avenue you should explore is new data from sensors. While it’s tempting to invest tens of millions of dollars in a brand new Internet of Things (IoT) platform (plus consulting fees), I recommend against doing that in most cases. In fact, if you run an industrial company, there is a very good chance that you already have very valuable information coming from Supervisory Control and Data Acquisition (SCADA) and Programmable Logic Controller (PLC) systems. You could start your exploration there.
 
-A more cost effective approach is to leverage IoT services from platforms such as Amazon Web Services, Microsoft Azure, and Google Compute Platform. That’s much bigger topic than just the construction of a DT, but there are cases of companies that have migrated all of their servers over to Infrastructure as a Service vendors, such as [CapitalOne on AWS](https://aws.amazon.com/solutions/case-studies/innovators/capital-one/) with net savings down the road.
+A more cost effective approach is to leverage IoT services from platforms such as Amazon Web Services, Microsoft Azure, and Google Compute Platform. That’s a much bigger topic than just the construction of a DT, but there are cases of companies that have migrated all of their servers over to Infrastructure as a Service vendors, such as [CapitalOne on AWS](https://aws.amazon.com/solutions/case-studies/innovators/capital-one/) with net savings down the road.
 
 *New external data*
 
@@ -75,25 +75,102 @@ from noaa_sdk import noaa
 n = noaa.NOAA().get_forecasts('11365', 'US', True)
 ```
 
-## 3.3 Simulator
+## 3.3 Build the simulator to represent the world
 
-Write the math down
+The core of the DT is the simulator - a black box that takes as input a state of the world (or a relevant part of the world you are interested in), and returns a future state of the world. If you are a retailer, an interesting state of the world could be the inventory at any given store. 
 
-Once the data is in, it may be tempting for the team to boot up their favorite Python and R libraries such as [Scikit-learn](https://scikit-learn.org/stable/), [Keras](https://keras.io/), or the [Tidyverse packages](https://www.tidyverse.org/packages/) to start predicting things. While the data work might have taken thousands of lines of code, the data science part can be done in as little as 
+### 3.3.1 Consider what you need to build
+
+Depending on a number of factors, you might want to choose to build different flavors of models. Here are some considerations:
+
+1. How much (high quality) data do you have?
+2. What are the risks if the model is wrong?
+3. Are you modelling quantities and/or classes of things?
+4. How much do want to be able to understand the black box?
+
+There are at least 16 different recommendations depending on how you answer the questions above, and many more clarification questions would follow. For instance, Scikit Learn has a [beautiful illustrative map](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html) which I occasionally refer to. I cannot possibly cover all of those cases in this post. That’s a primary role for the data scientist on your team.
+
+For instance, suppose that the digital twin will be used for predictive maintenance of a major oil company. The answers could be:
+
+1. You have a lot of data coming from sensors
+2. The risks if the model is wrong are high (e.g., a pump failure could cost millions in lost revenue, and risk lives)
+3. You are trying to predict the remaining useful life of dozen of valves on hundreds of pumps at hundreds of sites, but you also want to classified the type of failure
+4. You need to be able to explain how the model responds to changes in certain variables
+
+The performance of the DT in this context will help you predict failures in  advance, in return reduce downtime, help plan parts inventory, and improve maintenance planning. 
+
+### 3.3.2 Build a baseline model
+
+You might want to consider first building a “simple” base model (e.g., differential equations) if you don’t already have one. This model should serve as the baseline, and in some cases might be very difficult to improve upon. The benefit of this baseline is that it is explainable, and usually requires very little data (or at least, data that is probably already captured). Here are some examples of basic models you could use in different industries:
+
++ In finance Capital Asset Pricing Model, or the Black Scholes Model for option pricing 
++ In retail, Auto Regressive Integrated Moving Average for inventory forecasting
++ In engineering, a Kalman Filter for motion planning and control
+
+### 3.3.3 Build a data science model
+
+Once you have your baseline model and your data set, now comes the data science. You data scientist will boot up their favorite Python and R libraries such as [Scikit-learn](https://scikit-learn.org/stable/), [Keras](https://keras.io/), or the [Tidyverse packages](https://www.tidyverse.org/packages/) to start predicting things. While the data work might have taken tens of thousands of lines of code, the first data science can be obtained with just a few lines of code. For instance, with a brand new data set, a machine learning engineer might want to run a ridge regression with cross-validation as such 
 
 ```
-from sklearn.linear_model import RidgeCV, LogisticRegressionCV
+from sklearn.linear_model import RidgeCV
 X, y = load_data(return_X_y=True)
-classification = LogisticRegressionCV(cv=5, random_state=0, multi_class='multinomial').fit(X, y)
-ridgeregression = RidgeCV(alphas=np.logspace(-6, 6, 13)).fit(X, Y)
+reg = RidgeCV(alphas=np.logspace(-6, 6, 13)).fit(X, Y)
 ```
 
+### 3.3.4 Evaluate the performance of your models
 
+Your data scientist will have set aside a test set with data points that are excluded from the training set. The two most likely method you will encounter for evaluating the performance of the models are Root Mean Squared Error (RMSE) for regressions, and the Precision-Recall (or F1) for classification problems. 
+
+You can think of the RMSE as a measure of far away the test set’s actual values are from the predicted values. A lower RMSE is better. While there is no right answer for what constitutes a universally good score for RMSE, given two algorithms that are otherwise equal, you would choose the one with the lower RMSE. 
+
+An easy way to remember the meaning of Precision-Recall is to think of this example. 
+
+## 3.4 Autonomous Algorithms
+
+Whereas the simulator is trying to predict the world, the autonomous algorithms are attempting to take actions based on the observed state of the DT. Assets that can make decisions and take actions are called “agents”. There are three broad categories of algorithms that these agents can run:
+
+1. Mixed Integer Linear Program (MILP)
+2. Simulation based optimization
+3. Reinforcement Learning
+
+## 3.5 Disruption modelling
 
 It may seem academic to write a white paper, but there is a very pragmatic reason for it. By forcing your operations research/modelling/data scientist team to write down the math, you ensure that there is one source of truth, you make it easier to communicate the models to non-programmers, and you reduce the chance of bugs. The white paper is a cornerstone documentation for the inner functioning of the kernel of your DT. 
 
 
-# 4. How much does it cost
+# 4. Timeline, additional considerations and cost
 
+## 4.1 
+Broad timeline:
 
+1. In less than 4 weeks, you should aim to have delivered a baseline simulator
+2. In less than 8 weeks you should have delivered a white paper
+3. In less than 12 weeks, you should have a long term planning 
+4. In less than 4 months, you should have a tool that can model disruptions for risk mitigation and operations
+5. In less than 6 months, you should have a Digital Twin that is connected live to your data set, and is continuously deployed and improved on
+
+## 4.2 Additional considerations
+
+1. The software is safe and secure (highest standards) and adopts the best practices for infrastructure as a service
+2. The DT is a product and needs to be promoted/deployed/adopted by the organization
+3. In the age of software, building a business is synonymous with building software - you should aim to own all of the intellectual property as it will be a differentiator to your competitor
+
+## 4.3
+
+A rule of thumb for the ratio between the cost for temporary contractors/consultants and full time employees is roughly 2 to 1. For short term engagements, it may be as much as 3 to 1, while for longer term engagements it tends toward 1 to 1. 
+
+You should plan to have a team with the following roles:
+
+1. Product manager / product leader
+2. UX/UI Designer
+3. Data scientist
+4. Data engineer
+5. Full stack or mobile developers (2-3)
+6. DevOps (part-time)
+7. Quality assurance (part-time)
+8. Cyber-security (part-time)
+
+Overall, this is roughly a team of 8 people. If you leverage a mix on on-site and remote resources in India, Philippines, Eastern Europe, or Latin America, expect to pay a blended rate of around $350-700/day per person. Adding around 10% for travel and other expenses, and you will pay roughly $400K to $750K to build a DT in 6 months.
+
+Please note that this product will likely never cease to cost until you decide to replace it. The cost could be similar going forward, as long as you keep on adding features. If you stop adding features, you could decrease the team size and cost by around 50%. 
 
