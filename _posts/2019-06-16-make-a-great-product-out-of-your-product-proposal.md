@@ -1,5 +1,5 @@
 ---
-title: Make a Great Product out of your Product Proposal 
+title: Make a Great Product out of your Product Proposal - Part I
 category: "Product Management"
 tag: ["Template", "Product", "Letter of Proposal"]
 toc: true
@@ -9,7 +9,7 @@ The primary role of a product proposal document is to get funding from a sponsor
 
 With the mindset that a proposal document is a product, whose goal is to discover, persuade and influence others to join a cause, it is in itself a worthwhile exercise for the author (presumably the de facto product manager).
 
-In part 1, I propose here a framework for how to organize a product proposal; in part 2, I present few sample paragraphs which I have used before for each section. I'm hoping that the framework and these examples will help or inspire entrepreneurs, consultants and product managers out there - please don't be shy and send me your thoughts and feedback.
+In **Part I**, I propose here a framework for how to organize a product proposal; in **[Part II](https://blog.dannycastonguay.com/product%20management/make-a-great-product-out-of-your-product-proposal2/)**, I present few sample paragraphs which I have used before for each section. I'm hoping that the framework and these examples will help or inspire entrepreneurs, consultants and product managers out there - please don't be shy and send me your thoughts and feedback.
 
 # The PRODUCT Proposal Framework
 
@@ -45,4 +45,4 @@ The **Costs estimates** are one of the most critical section to get to a "yes", 
 
 Finally, **Tools and processes** are a bit more mundane, but you can't really do without them, so you might as well get everyone aligned on a common language up front. What issue tracker will you use? Where will the team be located? What are expectations in terms of hours? What's the process for Cybersecurity? How will defects be reported? This section is especially important in heavily regulated industries (e.g., financial services). 
 
-If you have read this far, thank you! A framework alone isn't very useful so in [Part II]() I'm giving you sanitized examples from prior proposals I've written. 
+If you have read this far, thank you! A framework alone isn't very useful so in **[Part II](https://blog.dannycastonguay.com/product%20management/make-a-great-product-out-of-your-product-proposal2/)** I'm giving you sanitized examples from prior proposals I've written. 
