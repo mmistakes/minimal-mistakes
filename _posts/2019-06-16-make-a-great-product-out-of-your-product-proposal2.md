@@ -1,11 +1,11 @@
 ---
-title: Make a Great Product out of your Product Proposal Part II
+title: Make a Great Product out of your Product Proposal - Part II
 category: "Product Management"
 tag: ["Template", "Product", "Letter of Proposal"]
 toc: true
 ---
 
-In [Part I](https://blog.dannycastonguay.com/product%20management/make-a-great-product-out-of-your-product-proposal/) of this post, I proposed a framework for how to organize a product proposal; in Part II, I present few sample paragraphs which I have used before for each section. I'm hoping that the framework and these examples will help or inspire entrepreneurs, consultants and product managers out there - please don't be shy and send me your thoughts and feedback.
+In **[Part I](https://blog.dannycastonguay.com/product%20management/make-a-great-product-out-of-your-product-proposal/)** of this post, I proposed a framework for how to organize a product proposal; in Part II, I present few sample paragraphs which I have used before for each section. I'm hoping that the framework and these examples will help or inspire entrepreneurs, consultants and product managers out there - please don't be shy and send me your thoughts and feedback.
 
 A framework alone isn't very useful so I'm giving you sanitized examples from prior proposals I've written. Please feel free to adapt to your needs.
 
