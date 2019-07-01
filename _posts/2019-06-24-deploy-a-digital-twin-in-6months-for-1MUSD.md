@@ -14,11 +14,11 @@ So what’s a Digital Twin (DT) and how is it different from a plain old simulat
 
 At one end of the spectrum, a single asset can have multiple plain DTs associated with it. Alternatively, a single complicated DT can represent clusters of millions of heterogeneous fixed, mobile and organic assets. In all cases, a DT will have five main parts: 
 
-1. At the front, you have the web and mobile interfaces for your team to operate the DT
-2. At the back, are connections to real time data feeds and assumptions
-3. At the core, is a simulator that takes a state of the world and returns a future state of the world
-4. On top, you have a set of algorithms that you can pass to your assets to make autonomous or semi-autonomous decisions within the simulator
-5. On the bottom, you have a module to generate disruption scenarios to pass to your simulator
+1. At the front, you have the web and mobile interfaces for your team to operate the DT.
+2. At the back, are connections to real time data feeds and assumptions.
+3. At the core, is a simulator that takes a state of the world and returns a future state of the world.
+4. On top, you have a set of algorithms that you can pass to your assets to make autonomous or semi-autonomous decisions within the simulator.
+5. On the bottom, you have a module to generate disruption scenarios to pass to your simulator.
 
 What matters is not that you be scientifically accurate - it isn’t an academic exercise. As Albert Einstein said, “everything should be made as simple as possible, but not simpler.” You need the right type, and just enough accuracy and precision of information such that your teams can make better decisions. That LIDAR data feed might or might not be an overkill for your DT. 
 
@@ -26,9 +26,9 @@ What matters is not that you be scientifically accurate - it isn’t an academic
 
 A DT enables a few key activities:
 
-+ Operations teams can monitor and make interventions to your assets’ health in real time
-+ Planning teams can schedule and determine the right assets to acquire and decommission
-+ Risk teams can develop mitigation, contingency, and recovery plans against credible disruption scenarios
++ Operations teams can monitor and make interventions to your assets’ health in real time.
++ Planning teams can schedule and determine the right assets to acquire and decommission.
++ Risk teams can develop mitigation, contingency, and recovery plans against credible disruption scenarios.
 
 A digital twin is one of the most valuable classes of products to launch as part of a digital transformation (DX). I recommend that you consider the approach I’m suggesting in my post “[weave your DX out of SILK](https://blog.dannycastonguay.com/digital%20transformation/weave-your-dx-out-of-silk/)”.
 
@@ -90,10 +90,10 @@ There are at least 16 different recommendations depending on how you answer the 
 
 For instance, suppose that the digital twin will be used for predictive maintenance of a major oil company. The answers could be:
 
-1. You have a lot of data coming from sensors
-2. The risks if the model is wrong are high (e.g., a pump failure could cost millions in lost revenue, and risk lives)
-3. You are trying to predict the remaining useful life of dozens of valves on hundreds of pumps at hundreds of sites, but you also want to classify the types of failure
-4. You need to be able to explain how the model responds to changes in certain variables
+1. You have a lot of data coming from sensors.
+2. The risks if the model is wrong are high (e.g., a pump failure could cost millions in lost revenue, and risk lives).
+3. You are trying to predict the remaining useful life of dozens of valves on hundreds of pumps at hundreds of sites, but you also want to classify the types of failure.
+4. You need to be able to explain how the model responds to changes in certain variables.
 
 The performance of the DT in this context will help you predict failures in  advance and thus reduce downtime, help plan parts inventory, and improve maintenance planning. 
 
@@ -101,9 +101,9 @@ The performance of the DT in this context will help you predict failures in  adv
 
 You might want to consider first building a “simple” base model (e.g., differential equations) if you don’t already have one. This model should serve as the benchmark, and in some cases might be very difficult to improve upon. The benefit of this baseline model is that it is explainable, and usually requires very little data (or at least, data that is probably already captured). Here are some examples of basic models you could use in different industries:
 
-+ In finance Capital Asset Pricing Model, or the Black Scholes Model for option pricing 
-+ In retail, Auto Regressive Integrated Moving Average for inventory forecasting
-+ In engineering, a Kalman Filter for motion planning and control
++ In finance Capital Asset Pricing Model, or the Black Scholes Model for option pricing. 
++ In retail, Auto Regressive Integrated Moving Average for inventory forecasting.
++ In engineering, a Kalman Filter for motion planning and control.
 
 ### 3.3.3 Build a data science model
 
@@ -134,15 +134,55 @@ By tuning your algorithms, you might be able to achieve performance characterist
 
 ## 3.4 Autonomous Algorithms
 
-Whereas the simulator is trying to predict the world, the autonomous algorithms are attempting to take actions based on the observed state of the DT. Assets that can make decisions and take actions are called “agents”. There are three broad categories of algorithms that these agents can run:
+Whereas the simulator is trying to predict the world, the autonomous algorithms are attempting to take actions based on the observed state of the DT. Assets that can make decisions and take actions are called “agents”. There are three broad categories of prescription algorithms that these agents can run:
 
 1. Mixed Integer Linear Program (MILP)
-2. Simulation based optimization
-3. Reinforcement Learning
+2. Simulation based optimization (SBO)
+3. Reinforcement Learning (RL)
+
+### 3.4.1 Mixed Integer Linear Program
+
+MILPs are the bread and butter of the field of operations research (OR). The origins of OR can be traced as far back as Blaise Pascal’s [division of the stakes](https://en.wikipedia.org/wiki/Problem_of_points). OR also played a decisive role during World War II. An MILP is an optimization problem where either some of the variables are constrained to take integer values (as opposed to continuous). This property makes the problem exponentially more complicated because far more combinations of points need to be visited in order to find the optimal (min or max) solution. A common application of MILP is scheduling (or tasks, trains, operating rroms, military personnel, etc.).
+
+Some recent development in integer programming includes the development of robust optimization, which pushes the limits of what MILPs can do when variables are uncertain (to avoid being overly conservative and always picking the worse case).
+
+### 3.4.2 Simulation Based Optimization
+
+When the problem is too difficult to express as an MILP, then [simulation based optmization](https://en.wikipedia.org/wiki/Simulation-based_optimization) is the preferred approach. One popular such technique for when an agent’s decisions are made in stages is called [Dynamic Programming](https://en.wikipedia.org/wiki/Dynamic_programming) (DP). DP has been used extensively across many domains (e.g., protein folding in bioinformatics), and for planning a few steps ahead in simple games (e.g., Rubik’s Cube). 
+
+### 3.4.3 (Deep) Reinforcement Learning
+
+When the problem is too difficult to express as a SBO, then reinforcement learning is the last resort. Recent development computing power has enabled researchers to deploy RL to problems such as the notoriously difficult 2 player game of Go (Deepmind’s [AlphaGo](https://deepmind.com/research/alphago/)) and the even more difficult 5 versus 5 game Dota 2 ([OpenAI Five](https://openai.com/blog/openai-five/)). While RL might seem like the bleeding edge with most of its commercial applications in finance, it is a mature research field being transferred to a vast array of applications such as inventory management and robotics (see Preferred Networks, valued at over $1B, with applications of RL in transportation, manufacturing, and healthcare).
 
 ## 3.5 Disruption modelling
 
-It may seem academic to write a white paper, but there is a very pragmatic reason for it. By forcing your operations research/modelling/data scientist team to write down the math, you ensure that there is one source of truth, you make it easier to communicate the models to non-programmers, and you reduce the chance of bugs. The white paper is a cornerstone documentation for the inner functioning of the kernel of your DT. 
+Not to be outdone, disruption modelling comes last in this post but is a necessary module to stress test other components of the DT. To make the disruption modelling more representative of the real world, list out all variables that could be associated (causal or not) with disruptions. For instance, you wanted to model likelihood that the local power utility was going to go down, you might consider data sources such as:
+
++ Meteorological forecast like precipitation, wind, and atmospheric pressure.
++ Historical floods, landslides, avalanches, storms, and hurricanes.
++ Historical earthquakes, volcanic eruptions, and tsunamis.
++ Road rating and geographical factors (e.g., rock type)
++ Stored (natural and artificial reservoir) water levels.
++ Planned constructions and maintenance records.
++ Financial factors (e.g., loss of revenue)
++ Historical utility breakage data.
++ Social factors (e.g., strikes)
++ Terrorist and cyber attacks
+
+When disruptions are frequent, then you your simulator will most likely already factor those. When disruptions are rare, estimating the likelihood of X disruptions occurring at Y assets over a given time period requires careful analysis. A three step approach to help model disruptions is as follows:
+
+1. **Determine the strength of correlations.** Gather data on past extreme events (e.g., weather) and one-hot encoded disruptions. Measure the correlation strength across variables (e.g., location, time of year, temperature) when extreme events and associated patterns occur.
+2. **Estimate confidence interval.** If the occurrences of disruption is sufficiently large, compute the 95% percentile to estimate the probability of bad event given condition across variables. If there are too few occurrences, apply the rule of three to compute the 95% confidence interval.
+3. **Factor in exogenous events.** Construct logistic regression models to account for exogenous events. Optionally, apply deep learning models to test potential classification improvement.
+
+Your DT will have a model that will return (and plot) the likelihood of X disruptions occuring at Y assets simultaneously over a given time period, factoring exogenous event scenarios, accessible via web and mobile interfaces for your team:
+
+```
+def simulate(real_time_state_data(), autonomous_agents(), disrupt_state())
+	return future_state
+```
+
+Where `simulate`  takes a state of the world and returns a future state of the world;`real_time_state_data()` returns real time data feeds and assumptions. `autonomous_agents()` will take the state and return actions for each of the agents in the simulation; and finally `disrupt_state()` will generate disruption scenarios to pass to your simulator.
 
 # 4. Timeline, additional considerations and cost
 
@@ -156,9 +196,12 @@ It may seem academic to write a white paper, but there is a very pragmatic reaso
 
 ## 4.2 Additional considerations
 
-1. The software is safe and secure (highest standards) and adopts the best practices for infrastructure as a service
-2. The DT is a product and needs to be promoted/deployed/adopted by the organization
-3. In the age of software, building a business is synonymous with building software - you should aim to own all of the intellectual property as it will be a differentiator to your competitor
+1. The software is safe and secure (highest standards) and adopts the best practices for infrastructure as a service.
+2. The DT is a product and needs to be promoted/deployed/adopted by the organization.
+3. In the age of software, building a business is synonymous with building software - you should aim to own all of the intellectual property as it will be a differentiator to your competitor.
+4. Have your team write the math down as a white paper. 
+
+It may seem academic to write a white paper, but there is a very pragmatic reason for it. By forcing your operations research/modelling/data scientist team to write down the math, you ensure that there is one source of truth, you make it easier to communicate the models to non-programmers, and you reduce the chance of bugs. The white paper is a cornerstone documentation for the inner functioning of the kernel of your DT. 
 
 ## 4.3 Cost
 
