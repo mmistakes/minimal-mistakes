@@ -23,9 +23,15 @@ Here's a few of the important points:
 
 An effective way to prepare giving someone feedback is to write it down using the following template:
 
-> 1. I have observed _______________.
+> 1. I observed _______________.
 > 2. It made me feel _______________.
 > 3. One idea to improve is _______________.
+
+This template is easy to remember and can be used with anyone. It also forces you to be fact-based, and prevents you from giving labels. For instance, you could say:
+
+> 1. *I observed that* you arrived 10 minutes late to our meeting on Wednesday. And it wasn't the first time.
+> 2. *It made me feel* that my time is less valuable than yours.
+> 3. *One idea to improve is* to add buffer between your meetings when you know that you are likely to run-over.
 
 # Foundational skill framework
 
