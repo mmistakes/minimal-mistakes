@@ -2,6 +2,7 @@
 title: Deploy a Digital Twin in 6 Months for $1M USD
 category: "Digital Twin"
 tag: ["Machine Learning", "Data Science", "Digital Twin"]
+toc: true
 ---
 
 Whether you manage a fleet of cruise ships, an upstream oil & gas supply chain, a global retail store network, or a loyalty program for a large hotel chain, not having Digital Twins for your critical assets is like not having an accounting ledger for your business - you are flying blind, hoping for the best, and coping when the worst happens. Even if you think you have the best team in the world running your assets to near perfection, as President Ronald Reagan said of Russian nuclear disarmament, “trust, but verify”.
@@ -169,7 +170,7 @@ Not to be outdone, disruption modelling comes last in this post but is a necessa
 + Social factors (e.g., strikes)
 + Terrorist and cyber attacks
 
-When disruptions are frequent, then you your simulator will most likely already factor those. When disruptions are rare, estimating the likelihood of X disruptions occurring at Y assets over a given time period requires careful analysis. A three step approach to help model disruptions is as follows:
+When disruptions are frequent, then your simulator will most likely already factor those. When disruptions are rare, estimating the likelihood of X disruptions occurring at Y assets over a given time period requires careful analysis. A three step approach to help model disruptions is as follows:
 
 1. **Determine the strength of correlations.** Gather data on past extreme events (e.g., weather) and one-hot encoded disruptions. Measure the correlation strength across variables (e.g., location, time of year, temperature) when extreme events and associated patterns occur.
 2. **Estimate confidence interval.** If the occurrences of disruption is sufficiently large, compute the 95% percentile to estimate the probability of bad event given condition across variables. If there are too few occurrences, apply the rule of three to compute the 95% confidence interval.
@@ -178,36 +179,33 @@ When disruptions are frequent, then you your simulator will most likely already 
 Your DT will have a model that will return (and plot) the likelihood of X disruptions occuring at Y assets simultaneously over a given time period, factoring exogenous event scenarios, accessible via web and mobile interfaces for your team:
 
 ```
-def simulate(real_time_state_data(), autonomous_agents(), disrupt_state())
+def simulate(real_time_data(), autonomous_agents(), disrupt())
 	return future_state
 ```
 
-Where `simulate`  takes a state of the world and returns a future state of the world;`real_time_state_data()` returns real time data feeds and assumptions. `autonomous_agents()` will take the state and return actions for each of the agents in the simulation; and finally `disrupt_state()` will generate disruption scenarios to pass to your simulator.
+Where `simulate` takes a state of the world and returns a future state of the world;`real_time_data()` returns real time data feeds and assumptions; `autonomous_agents()` will take the state and return actions for each of the agents in the simulation; and finally `disrupt()` will generate disruption scenarios to pass to your simulator.
 
 # 4. Timeline, additional considerations and cost
 
 ## 4.1 Broad timeline:
 
-1. In less than 4 weeks, you should aim to have delivered a baseline simulator
-2. In less than 8 weeks you should have delivered a white paper
-3. In less than 12 weeks, you should have a long term planning 
-4. In less than 4 months, you should have a tool that can model disruptions for risk mitigation and operations
-5. In less than 6 months, you should have a Digital Twin that is connected live to your data set, and is continuously deployed and improved on
+1. In less than 4 weeks, you should aim to have delivered a baseline simulator.
+2. In less than 8 weeks you should have delivered a white paper.
+3. In less than 12 weeks, you should have a command line interface DT for long term planning.
+4. In less than 4 months, you should have a DT that can model disruptions for risk mitigation and operations.
+5. In less than 6 months, you should have a DT that is connected live to your data set, and is continuously deployed and improved on.
+
+It may seem academic to write a white paper, but there is a very pragmatic reason for it. By forcing your operations research/modelling/data scientist team to write down the math, you ensure that there is one source of truth, you make it easier to communicate the models to non-programmers, and you reduce the chance of bugs. The white paper is a cornerstone documentation for the inner functioning of the kernel of your DT. 
 
 ## 4.2 Additional considerations
 
 1. The software is safe and secure (highest standards) and adopts the best practices for infrastructure as a service.
 2. The DT is a product and needs to be promoted/deployed/adopted by the organization.
 3. In the age of software, building a business is synonymous with building software - you should aim to own all of the intellectual property as it will be a differentiator to your competitor.
-4. Have your team write the math down as a white paper. 
-
-It may seem academic to write a white paper, but there is a very pragmatic reason for it. By forcing your operations research/modelling/data scientist team to write down the math, you ensure that there is one source of truth, you make it easier to communicate the models to non-programmers, and you reduce the chance of bugs. The white paper is a cornerstone documentation for the inner functioning of the kernel of your DT. 
 
 ## 4.3 Cost
 
-A rule of thumb for the ratio between the cost for temporary contractors/consultants and full time employees is roughly 2 to 1. For short term engagements, it may be as much as 3 to 1, while for longer term engagements it tends toward 1 to 1. 
-
-You should plan to have a team with the following roles:
+A rule of thumb for the ratio between the cost for temporary contractors/consultants and full time employees is roughly 2 : 1. For short term engagements, it may be as much as 3 : 1, while for longer term engagements it tends toward 1 : 1. You should plan to have a team with the following roles:
 
 1. Product manager / product leader
 2. UX/UI Designer
