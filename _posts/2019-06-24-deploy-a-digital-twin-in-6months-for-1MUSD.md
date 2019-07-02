@@ -7,7 +7,12 @@ toc: true
 
 Whether you manage a fleet of cruise ships, an upstream oil & gas supply chain, a global retail store network, or a loyalty program for a large hotel chain, not having Digital Twins for your critical assets is like not having an accounting ledger for your business. Even if you think you have the best team in the world running your assets to near perfection, as President Ronald Reagan said of Russian nuclear disarmament, “trust, but verify”.
 
-I will 1) define what a Digital Twin is, 2) discuss its many benefits, 3) explain at length how to build some of the parts, and end with 4) how much it should cost you to build and maintain.
+I will:
+
+1. define what a Digital Twin is;
+2. discuss its many benefits; 
+3. explain at length how to build some of the parts, and end with 
+4. how much it should cost you to build and maintain.
 
 # 1. Definition of a Digital Twin
 
@@ -137,9 +142,9 @@ By tuning your algorithms, you might be able to achieve performance characterist
 
 Whereas the simulator is trying to predict the world, the autonomous algorithms are attempting to take actions based on the observed state of the DT. Assets that can make decisions and take actions are called “agents”. There are three broad categories of prescription algorithms that these agents can run:
 
-1. Mixed Integer Linear Program (MILP)
-2. Simulation based optimization (SBO)
-3. Reinforcement Learning (RL)
+1. Mixed Integer Linear Program (MILP).
+2. Simulation based optimization (SBO).
+3. Reinforcement Learning (RL).
 
 ### 3.4.1 Mixed Integer Linear Program
 
@@ -162,13 +167,13 @@ Not to be outdone, disruption modelling comes last in this post but is a necessa
 + Meteorological forecast like precipitation, wind, and atmospheric pressure.
 + Historical floods, landslides, avalanches, storms, and hurricanes.
 + Historical earthquakes, volcanic eruptions, and tsunamis.
-+ Road rating and geographical factors (e.g., rock type)
++ Road rating and geographical factors (e.g., rock type).
 + Stored (natural and artificial reservoir) water levels.
 + Planned constructions and maintenance records.
-+ Financial factors (e.g., loss of revenue)
++ Financial factors (e.g., loss of revenue).
 + Historical utility breakage data.
-+ Social factors (e.g., strikes)
-+ Terrorist and cyber attacks
++ Social factors (e.g., strikes).
++ Terrorist and cyber attacks.
 
 When disruptions are frequent, then your simulator will most likely already factor those. When disruptions are rare, estimating the likelihood of X disruptions occurring at Y assets over a given time period requires careful analysis. A three step approach to help model disruptions is as follows:
 
@@ -207,15 +212,15 @@ It may seem academic to write a white paper, but there is a very pragmatic reaso
 
 A rule of thumb for the ratio between the cost for temporary contractors/consultants and full time employees is roughly 2 : 1. For short term engagements, it may be as much as 3 : 1, while for longer term engagements it tends toward 1 : 1. You should plan to have a team with the following roles:
 
-1. Product manager / product leader
-2. UX/UI Designer
-3. Data scientist
-4. Data engineer
-5. Full stack or mobile developers (2-3)
-6. DevOps (part-time)
-7. Quality assurance (part-time)
-8. Cyber-security (part-time)
+1. Product manager / product leader.
+2. UX/UI Designer.
+3. Data scientist.
+4. Data engineer.
+5. Full stack or mobile developers (2-3).
+6. DevOps (part-time).
+7. Quality assurance (part-time).
+8. Cyber-security (part-time).
 
 Overall, this is roughly a team of 8 people. If you leverage a mix of on-site and remote resources in India, Philippines, Eastern Europe, or Latin America, expect to pay a blended rate of around $350-700/day per person. Adding around 10% for travel and other expenses, and you will pay roughly $400K to $750K to build a DT in 6 months.
 
-Please note that this product will likely never cease to cost you until you decide to shut it down or replace it. The cost could be similar as long as you keep on adding features. If you stop adding features, you could decrease the team size and cost by around 50%, but do not expect that it will ever be anywhere close to $0.
+Please note that this product will likely never cease to cost you until you decide to shut it down or replace it. The cost could be similar as long as you keep on adding features. If you stop adding features, you could decrease the team size and cost by around 50-75%, but do not expect that it will ever be anywhere close to $0.
