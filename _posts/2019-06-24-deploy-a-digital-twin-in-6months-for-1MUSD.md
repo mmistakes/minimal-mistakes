@@ -7,12 +7,12 @@ toc: true
 
 Whether you manage a fleet of cruise ships, an upstream oil & gas supply chain, a global retail store network, or a loyalty program for a large hotel chain, not having Digital Twins for your critical assets is like not having an accounting ledger for your business. Even if you think you have the best team in the world running your assets to near perfection, as President Ronald Reagan said of Russian nuclear disarmament, “trust, but verify”.
 
-I will:
+In this post, I will:
 
 1. define what a Digital Twin is;
 2. discuss its many benefits; 
-3. explain at length how to build some of the parts, and end with 
-4. how much it should cost you to build and maintain.
+3. explain at length how to build some of the parts; and
+4. estimate how much it should cost you to build and maintain.
 
 # 1. Definition of a Digital Twin
 
