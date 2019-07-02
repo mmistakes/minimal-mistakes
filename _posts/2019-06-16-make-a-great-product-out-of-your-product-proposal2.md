@@ -39,7 +39,7 @@ A framework alone isn't very useful so I'm giving you sanitized examples from pr
 
 ### 2.1 Situation
 
-*The `<industry>` currently is adopting `<industry trends>`. More and more pressure (or opportunities) is coming from `<substitute products>` and new `<competitors>`. Customers now expect `<sample feature>` and have more market power than before. *
+*The `<industry>` currently is adopting `<industry trends>`. More and more pressure (or opportunities) is coming from `<substitute products>` and new `<competitors>`. Customers now expect `<sample feature>` and have more market power than before.*
 
 ### 2.2 Complication (problem statement)
 
