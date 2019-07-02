@@ -36,7 +36,7 @@ A DT enables a few key activities:
 + Planning teams can schedule and determine the right assets to acquire and decommission.
 + Risk teams can develop mitigation, contingency, and recovery plans against credible disruption scenarios.
 
-A digital twin is one of the most valuable classes of products to launch as part of a digital transformation (DX). I recommend that you consider the approach I’m suggesting in my post “[weave your DX out of SILK](https://blog.dannycastonguay.com/digital%20transformation/weave-your-dx-out-of-silk/)”.
+A digital twin is one of the most valuable classes of products to launch as part of a digital transformation (DX). I recommend that you consider the approach I’m suggesting in my post on how to [weave your DX out of SILK](https://blog.dannycastonguay.com/digital%20transformation/weave-your-dx-out-of-silk/).
 
 # 3. How to build it
 
