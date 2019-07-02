@@ -21,7 +21,9 @@ tags:
 ## Collaborators
 
 * Ravin Poudel PhD - USDA-ARS/ University of Florida,  Gainesville, FL
+* Mathews L. Paret - University of Florida IFAS, Perry, FL
 * Trent Northen, DOE Joint Genome Institute, Walnut Creek, CA
+* Chris Reisch, University of Florida,  Gainesville, FL
 
 
 # Project

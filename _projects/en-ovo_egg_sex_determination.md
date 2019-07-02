@@ -4,7 +4,7 @@ header:
   overlay_image: /assets/images/michael-anfang-1278069-unsplash-1200.jpg
   og_image: /assets/images/michael-anfang-1278069-unsplash-1200.jpg
   teaser: /assets/images/erol-ahmed-399674-unsplash-eggs-500x300.jpg
-  caption: "Photo credit: [USDA-ARS *tephen Ausmus*](https://www.ars.usda.gov/oc/images/photos/feb18/d2623-8/)"
+  caption: "Photo credit: [*Michael Anfang*](https://unsplash.com/photos/LAVcmB1Gli0)"
 excerpt: "The rapid detection of the sex of chickens in the egg will enable
 a major advance in animal welfare and reduction in the cost of producing eggs"
 categories:
