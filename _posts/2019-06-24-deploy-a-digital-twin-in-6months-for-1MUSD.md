@@ -5,7 +5,7 @@ tag: ["Machine Learning", "Data Science", "Digital Twin"]
 toc: true
 ---
 
-Whether you manage a fleet of cruise ships, an upstream oil & gas supply chain, a global retail store network, or a loyalty program for a large hotel chain, not having Digital Twins for your critical assets is like not having an accounting ledger for your business - you are flying blind, hoping for the best, and coping when the worst happens. Even if you think you have the best team in the world running your assets to near perfection, as President Ronald Reagan said of Russian nuclear disarmament, “trust, but verify”.
+Whether you manage a fleet of cruise ships, an upstream oil & gas supply chain, a global retail store network, or a loyalty program for a large hotel chain, not having Digital Twins for your critical assets is like not having an accounting ledger for your business. Even if you think you have the best team in the world running your assets to near perfection, as President Ronald Reagan said of Russian nuclear disarmament, “trust, but verify”.
 
 I will 1) define what a Digital Twin is, 2) discuss its many benefits, 3) explain at length how to build some of the parts, and end with 4) how much it should cost you to build and maintain.
 
@@ -48,7 +48,7 @@ There is a joke that data engineers do the work, while data scientists get the f
 ### 3.2.1 Start by increasing the granularity and freshness of existing data
 
 Your DT is only as good as the data that you put into it. Increasing granularity means removing aggregation of data when not needed. If it’s not too large, leave the data in raw format and have your IT team make use of auto scaling features for dealing with large data sets. [Infrastructure as Code (IaC)](https://amzn.to/2YaDtn2) now makes auto scaling resources easier than before and a single DevOps professional can support a handful of [two-pizza teams](https://medium.com/magenta-lifestyle/why-two-large-pizza-team-is-the-best-team-ever-4f19b0f5f719).
-
+ 
 Avoid boiling the ocean with a consolidated data platform. A good starting point, to narrow down the scope of data, is to observe the information that your teams are using today. Let’s introduce a semi-fictitious case. Consider a locomotive planning director who is responsible for managing the fleet of locomotives for a large railroad (thousands of locomotives, each costing around $2M to purchase, and much more to maintain over its useful life). In Q2 2019, the director might look at 2018 average monthly ton-miles on the network by train type, the average historical maintenance schedule, and many other 2018 averages. Since the director only gets this data refreshed once a year, and only knows the averages, the plan will need to be most conservative and will likely result in excess capacity/low asset utilization. So the 2020 plan is based on 2018 data. Sounds sub-optimal but it’s the right answer given the information available.
 
 On the other hand, if the director had access to these data points the day it happens, and could not only look at averages but at the entire distribution, the director could make more aggressive plans with confidence, and could adjust the plans every day of the year and make more nimble tradeoffs (e.g., between decommissioning an older engine this week or next week). 
@@ -85,7 +85,7 @@ Depending on a number of factors, you might want to choose to build different fl
 1. How much (high quality) data do you have?
 2. What are the risks if the model is wrong?
 3. Are you modelling quantities and/or classes of things?
-4. How much do want to be able to understand the black box?
+4. How much do you want to be able to understand the black box?
 
 There are at least 16 different recommendations depending on how you answer the questions above, and many more clarification questions would follow. For instance, scikit-learn has a [beautiful illustrative map](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html) which I occasionally refer to. I cannot possibly cover all of those cases in this post. That’s a primary role for the data scientist on your team.
 
@@ -128,7 +128,7 @@ An easy way to remember the meaning of Precision-Recall is to think of this exam
 
 1. Imagine that you attend a dinner party of 100 people, and 88 of them are complete strangers. 
 2. During the course of the evening, you will get to meet every single person, and you will attempt to determine whether you have met this person before. 
-3. Suppose that you claim to have met 10 people of those people before, and that 8 of them were indeed correct. 
+3. Suppose that you claim to have met 10 of those people before, and that 8 of them were indeed correct. 
 4. We would say that your precision is 80% (8/10), and that your recall is 66.7% (8/12). 
 
 By tuning your algorithms, you might be able to achieve performance characteristics that are more desirable for your business needs. For instance, you may want to tradeoff having a lower recall for a higher precision by increasing the minimum threshold of certainty before classifying someone as “met before” (e.g., you must also remember their name and the place where you met them). 
@@ -143,7 +143,7 @@ Whereas the simulator is trying to predict the world, the autonomous algorithms 
 
 ### 3.4.1 Mixed Integer Linear Program
 
-MILPs are the bread and butter of the field of operations research (OR). The origins of OR can be traced as far back as Blaise Pascal’s [division of the stakes](https://en.wikipedia.org/wiki/Problem_of_points). OR also played a decisive role during World War II. An MILP is an optimization problem where either some of the variables are constrained to take integer values (as opposed to continuous). This property makes the problem exponentially more complicated because far more combinations of points need to be visited in order to find the optimal (min or max) solution. A common application of MILP is scheduling (or tasks, trains, operating rroms, military personnel, etc.).
+MILPs are the bread and butter of the field of operations research (OR). The origins of OR can be traced as far back as Blaise Pascal’s [division of the stakes](https://en.wikipedia.org/wiki/Problem_of_points). OR also played a decisive role during World War II. An MILP is an optimization problem where some of the variables are constrained to take integer values (as opposed to continuous). This property makes the problem exponentially more complicated because far more combinations of points need to be visited in order to find the optimal (min or max) solution. A common application of MILP is scheduling (or tasks, trains, operating rooms, military personnel, etc.).
 
 Some recent development in integer programming includes the development of robust optimization, which pushes the limits of what MILPs can do when variables are uncertain (to avoid being overly conservative and always picking the worse case).
 
@@ -153,11 +153,11 @@ When the problem is too difficult to express as an MILP, then [simulation based 
 
 ### 3.4.3 (Deep) Reinforcement Learning
 
-When the problem is too difficult to express as a SBO, then reinforcement learning is the last resort. Recent development computing power has enabled researchers to deploy RL to problems such as the notoriously difficult 2 player game of Go (Deepmind’s [AlphaGo](https://deepmind.com/research/alphago/)) and the even more difficult 5 versus 5 game Dota 2 ([OpenAI Five](https://openai.com/blog/openai-five/)). While RL might seem like the bleeding edge with most of its commercial applications in finance, it is a mature research field being transferred to a vast array of applications such as inventory management and robotics (see Preferred Networks, valued at over $1B, with applications of RL in transportation, manufacturing, and healthcare).
+When the problem is too difficult to express as an SBO, then reinforcement learning is the last resort. Recent development computing power has enabled researchers to deploy RL to problems such as the notoriously difficult 2 player game of Go (Deepmind’s [AlphaGo](https://deepmind.com/research/alphago/)) and the even more difficult 5 versus 5 game Dota 2 ([OpenAI Five](https://openai.com/blog/openai-five/)). While RL might seem like the bleeding edge with most of its commercial applications in finance, it is a mature research field being transferred to a vast array of applications such as inventory management and robotics (see Preferred Networks, valued at over $1B, with applications of RL in transportation, manufacturing, and healthcare).
 
 ## 3.5 Disruption modelling
 
-Not to be outdone, disruption modelling comes last in this post but is a necessary module to stress test other components of the DT. To make the disruption modelling more representative of the real world, list out all variables that could be associated (causal or not) with disruptions. For instance, you wanted to model likelihood that the local power utility was going to go down, you might consider data sources such as:
+Not to be outdone, disruption modelling comes last in this post but is a necessary module to stress test other components of the DT. To make the disruption modelling more representative of the real world, list out all variables that could be associated (causal or not) with disruptions. For instance, you wanted to model the likelihood that the local power utility was going to go down, you might consider data sources such as:
 
 + Meteorological forecast like precipitation, wind, and atmospheric pressure.
 + Historical floods, landslides, avalanches, storms, and hurricanes.
@@ -216,7 +216,6 @@ A rule of thumb for the ratio between the cost for temporary contractors/consult
 7. Quality assurance (part-time)
 8. Cyber-security (part-time)
 
-Overall, this is roughly a team of 8 people. If you leverage a mix on on-site and remote resources in India, Philippines, Eastern Europe, or Latin America, expect to pay a blended rate of around $350-700/day per person. Adding around 10% for travel and other expenses, and you will pay roughly $400K to $750K to build a DT in 6 months.
+Overall, this is roughly a team of 8 people. If you leverage a mix of on-site and remote resources in India, Philippines, Eastern Europe, or Latin America, expect to pay a blended rate of around $350-700/day per person. Adding around 10% for travel and other expenses, and you will pay roughly $400K to $750K to build a DT in 6 months.
 
-Please note that this product will likely never cease to cost until you decide to replace it. The cost could be similar going forward, as long as you keep on adding features. If you stop adding features, you could decrease the team size and cost by around 50%. 
-
+Please note that this product will likely never cease to cost you until you decide to shut it down or replace it. The cost could be similar as long as you keep on adding features. If you stop adding features, you could decrease the team size and cost by around 50%, but do not expect that it will ever be anywhere close to $0.
