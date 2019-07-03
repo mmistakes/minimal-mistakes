@@ -7,7 +7,7 @@ permalink: /personal/
 
 
 I created and developed the Python Tool for Micrometeorological Analyses:
-[Pymicra](https://tomchor.github.io/pymicra/index.html). This is an open-source
+[Pymicra](https://pymicra.readthedocs.io/en/latest/). This is an open-source
 project hosted on github that you can use of and contribute to.
 
 --
