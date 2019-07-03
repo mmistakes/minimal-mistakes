@@ -17,7 +17,7 @@ repository               : "tomchor/tomchor.github.io"
 teaser                   : "/assets/images/dropletWaves-bottom.jpg"
 #breadcrumbs             : false # true, false (default)
 words_per_minute         : 200
-theme                    : minimal-mistakes-jekyll
+remote_theme             : minimal-mistakes-jekyll
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
@@ -81,7 +81,7 @@ author:
   bio              : "Atmosphere | Ocean | Turbulence"
   location         : "UCLA"
   location_link    : "https://goo.gl/maps/5MZ2EyZRCDBA6Ww77"
-  email            : "tomaschor@gmail.com"
+  email            : "tomaschor@ucla.com"
   uri              :
   bitbucket        :
   codepen          :

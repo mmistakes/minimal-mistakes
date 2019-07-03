@@ -15,8 +15,8 @@ PANDOC=/usr/bin/pandoc
 
 PANDOC_OPTIONS=--columns=80
 
-#PANDOC_HTML_OPTIONS=--filter=pandoc-citeproc --csl=els-modified.csl --biblatex
-PANDOC_HTML_OPTIONS=--filter=pandoc-citeproc --biblatex
+PANDOC_HTML_OPTIONS=--filter=pandoc-citeproc --csl=els-modified.csl --biblatex
+#PANDOC_HTML_OPTIONS=--filter=pandoc-citeproc --biblatex
 
 # Pattern-matching Rules
 

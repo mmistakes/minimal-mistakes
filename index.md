@@ -2,6 +2,7 @@
 title: About me
 header:
   image: /assets/images2/AMZ_03.jpg
+layout: single
 ---
 
 I am currently a Graduate Student Researcher pursuing a PhD at UCLA's
