@@ -1,0 +1,16 @@
+current directory: /home/tomas/repos/tomchor.github.io/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+/usr/bin/ruby -I /usr/lib/ruby/2.6.0 -r ./siteconf20190702-877-1nw3frf.rb extconf.rb
+creating Makefile
+
+current directory: /home/tomas/repos/tomchor.github.io/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" clean
+
+current directory: /home/tomas/repos/tomchor.github.io/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR="
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.so
+
+current directory: /home/tomas/repos/tomchor.github.io/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20190702-877-55p7qb

@@ -15,8 +15,8 @@ PANDOC=/usr/bin/pandoc
 
 PANDOC_OPTIONS=--columns=80
 
-#PANDOC_HTML_OPTIONS=--filter=pandoc-citeproc --csl=/home/tomas/.pandoc/agricultural-and-forest-meteorology.csl
-PANDOC_HTML_OPTIONS=--filter=pandoc-citeproc --csl=els-modified.csl
+#PANDOC_HTML_OPTIONS=--filter=pandoc-citeproc --csl=els-modified.csl --biblatex
+PANDOC_HTML_OPTIONS=--filter=pandoc-citeproc --biblatex
 
 # Pattern-matching Rules
 
