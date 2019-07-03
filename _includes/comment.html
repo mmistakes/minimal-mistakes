@@ -1,9 +1,9 @@
-<article id="comment{{ include.index }}" class="js-comment comment" itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+<article id="comment{{ include.index }}" class="js-comment comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
   <div class="comment__avatar-wrapper">
-    <img class="comment__avatar" src="https://www.gravatar.com/avatar/{{ include.email }}?d=mm&s=80" alt="{{ include.name }}">
+    <img class="comment__avatar" src="https://www.gravatar.com/avatar/{{ include.email }}?d=mm&s=80">
   </div>
   <div class="comment__content-wrapper">
-    <h3 class="comment__author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
       {% unless include.url == blank %}
         <span itemprop="name"><a rel="external nofollow" itemprop="url" href="{{ include.url }}">{{ include.name }}</a></span>
       {% else %}
