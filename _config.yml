@@ -82,31 +82,19 @@ author:
   location         : "UCLA"
   location_link    : "https://goo.gl/maps/5MZ2EyZRCDBA6Ww77"
   email            : "tomaschor@ucla.com"
-  uri              :
   bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
+  university       : "UCLA"
   facebook         : 
-  foursquare       :
   github           : "tomchor"
-  google_plus      :
   google_scholar   : "0uQC6kkAAAAJ" # This odd username is somehow brewed up by Google.
-  keybase          :
-  instagram        :
-  lastfm           :
   linkedin         :
-  pinterest        :
-  soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
-  steam            :
-  tumblr           :
-  twitter          :
-  vine             :
-  weibo            :
-  xing             :
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
   researchgate     : "Tomas_Chor"
+  links:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/mmistakes"
 
 
 # Reading Files
@@ -213,17 +201,7 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+
 
 
 # HTML Compression
