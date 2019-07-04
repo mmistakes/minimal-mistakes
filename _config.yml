@@ -90,11 +90,6 @@ author:
   linkedin         :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
-  researchgate     : "Tomas_Chor"
-  links:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/mmistakes"
 
 
 # Reading Files
