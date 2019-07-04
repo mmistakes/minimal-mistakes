@@ -5,6 +5,8 @@ header:
 permalink: /research/
 ---
 
+
+
 ## Investigating the dynamics of the upper ocean
 
 ![GRL paper](/assets/images/GRL2019-panels.png)
@@ -20,23 +22,26 @@ Some relevant publications can be found
 and
 [here](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2018GL080296).
 
+
+
+
 ## Investigating turbulent fluxes with micrometeorological data
 
 ![](/assets/images/AFM-phi.png)
 
 I have made several field trips to install micrometeorological stations to
-measure things like wind speed, temperature and humidity at frequencies (at
-least 10 Hz). I then processed the data to gain insight on turbulent fluxes
-in diverse locations. Locations include
-
-- Itaipu lake - BR
-- Amazon forest (near Manaus) - BR
-- Tijucas do Sul - BR
+measure things like wind speed, temperature and humidity at high frequencies
+(at least 10 Hz). I then processed the data to gain insight on turbulent fluxes
+in diverse locations. Scroll below to see some pictures with their respective
+locations. 
 
 Some relevant publications can be found 
 [here](https://www.sciencedirect.com/science/article/pii/S0168192317301144)
 and
 [here](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2019GL083237).
+
+
+
 
 ## Investigating water transport in porous media
 
@@ -52,6 +57,8 @@ Some relevant publications can be found
 [here](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2018WR024154)
 and
 [here](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/wrcr.20543).
+
+
 
 ---
 
