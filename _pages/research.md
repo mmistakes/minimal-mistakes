@@ -20,17 +20,17 @@ My main research interests are
 
 ### Amazon - BR
 
-![](/assets/images2/AMZ_00.jpg)
+![](/assets/images/AMZ_00.jpg)
 
-![](/assets/images2/AMZ_03.jpg)
+![](/assets/images/AMZ_03.jpg)
 
 
 ### Tijucas do sul - BR
 
-![](/assets/images2/TIJ_00.JPG)
+![](/assets/images/TIJ_00.JPG)
 
 ### Itaipu lake - BR
 
-![](/assets/images2/ITA_00.JPG)
+![](/assets/images/ITA_00.JPG)
 
   

@@ -1,7 +1,7 @@
 ---
 title: About me
 header:
-  image: /assets/images2/AMZ_03.jpg
+  image: /assets/images/atmos_ocean2.png
 layout: single
 ---
 
