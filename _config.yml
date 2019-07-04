@@ -10,11 +10,11 @@ locale                   : "en-US"
 title                    : "Tomas Chor"
 title_separator          : "-"
 name                     : "Tomas Chor"
-description              : "Mostly about ocean physics."
+description              : "Investigations of oceanic and atmospheric turbulence"
 url                      : "https://tomchor.github.io"
 baseurl                  : # Subpath, if there is one.
 repository               : "tomchor/tomchor.github.io"
-teaser                   : "/assets/images/dropletWaves-bottom.jpg"
+teaser                   : 
 #breadcrumbs             : false # true, false (default)
 words_per_minute         : 200
 remote_theme             : minimal-mistakes-jekyll

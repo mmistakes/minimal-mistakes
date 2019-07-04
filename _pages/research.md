@@ -53,6 +53,7 @@ Some relevant publications can be found
 and
 [here](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/wrcr.20543).
 
+---
 
 # Some field work pictures
 
@@ -61,9 +62,9 @@ and
 Field work in the Amazon whose goal was to aid installation of instruments
 at the [ATTO project](https://www.attoproject.org/) site.
 
-![](/assets/images/AMZ_00.jpg)
+![](/assets/images/AMZ_01.jpg)
 
-![](/assets/images/AMZ_03.jpg)
+![](/assets/images/AMZ_05.jpg)
 
 
 ### Tijucas do sul - BR (around 2014)
