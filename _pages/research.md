@@ -27,10 +27,10 @@ My main research interests are
 
 ### Tijucas do sul - BR
 
-![](/assets/images/TIJ_00.JPG)
+![](/assets/images/TIJ_00.jpg)
 
 ### Itaipu lake - BR
 
-![](/assets/images/ITA_00.JPG)
+![](/assets/images/ITA_00.jpg)
 
   
