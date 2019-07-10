@@ -7,12 +7,11 @@ toc: true
 
 Giving good feedback to people around you (both at work and in your private life) can be an excellent time investment. If the people around you become stronger, you will benefit. I want to help you achieve that by giving you two things: 1) a template that I learned as a consultant, and 2) a memorable list of desirable traits to think about when coming up with feedback.
 
-<audio id="myAudio" controls>
-  <source src="/assets/audio/gifting-feedback.ogg" type="audio/ogg">
-  <source src="/assets/audio/gifting-feedback.mp3" type="audio/mpeg">
-</audio>
-
-  <button id="video-player-playback-rate-control"><span id="current-rate">1</span>x</button>
+<span><audio id="myAudio" controls>
+    <source src="/assets/audio/gifting-feedback.ogg" type="audio/ogg">
+    <source src="/assets/audio/gifting-feedback.mp3" type="audio/mpeg">
+  </audio>
+  <button class="btn btn--small" id="video-player-playback-rate-control" style="border-color=none !important;border-collapse: separate !important;">Speed: <span id="current-rate">1</span>x</button></span>
 
 # How to give and receive feedback 
 
