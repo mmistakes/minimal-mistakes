@@ -1,0 +1,28 @@
+<script>
+
+window.onload = function () {
+    var vid = document.getElementById("myAudio");
+    var rate = document.getElementById("current-rate");
+    var rateButton = document.getElementById("video-player-playback-rate-control");
+
+    rateButton.addEventListener('click', function() {
+    switch(rate.innerHTML) {
+        case '1':
+            rate.innerHTML = '1.1';
+            break;
+        case '1.1':
+            rate.innerHTML = '1.2';
+            break;
+        case '1.2':
+            rate.innerHTML = '1.5';
+            break;
+        case '1.5':
+            rate.innerHTML = '2';
+            break;
+        case '2':
+            rate.innerHTML = '1';
+    }
+    vid.playbackRate = parseFloat(rate.innerHTML);
+    });
+}
+</script>
