@@ -7,6 +7,13 @@ toc: true
 
 Whether you manage a fleet of cruise ships, an upstream oil & gas supply chain, a global retail store network, or a loyalty program for a large hotel chain, not having Digital Twins for your critical assets is like not having an accounting ledger for your business. Even if you think you have the best team in the world running your assets to near perfection, as President Ronald Reagan said of Russian nuclear disarmament, “trust, but verify”.
 
+<span><audio id="myAudio" controls>
+    <source src="/assets/audio/digital-twin.ogg" type="audio/ogg">
+    <source src="/assets/audio/digital-twin.mp3" type="audio/mpeg">
+  </audio>
+  <button class="btn btn--small" id="video-player-playback-rate-control" style="border-color=none !important;border-collapse: separate !important;">Speed: <span id="current-rate">1</span>x</button></span>
+
+
 In this post, I will:
 
 1. define what a Digital Twin is;
