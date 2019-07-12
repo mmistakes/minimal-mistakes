@@ -7,6 +7,13 @@ toc: true
 
 Aside from the tech giants, established corporations have achieved success without ever depending on their ability to write (good, user-centered) software fast and efficiently. And even seemingly very technologically competent and customer-centric organizations such as Sony, Blackberry, and Nokia have failed in good part due to poor delivery of digital products. They did deliver products, but not ones that met the user experience demanded by the market. 
 
+<span><audio id="myAudio" controls>
+    <source src="/assets/audio/weave-silk-dx.ogg" type="audio/ogg">
+    <source src="/assets/audio/weave-silk-dx.mp3" type="audio/mpeg">
+  </audio>
+  <button class="btn btn--small" id="video-player-playback-rate-control" style="border-color=none !important;border-collapse: separate !important;">Speed: <span id="current-rate">1</span>x</button></span>
+
+
 Enters the [Digital Transformation (DX)](https://en.wikipedia.org/wiki/Digital_transformation), which includes everything from "going paperless" to applying machine learning in real time to predict outcomes from semi-structured data. It is hard to find a large organization that isn't discussing directly or indirectly their digital strategy, using loosely defined terms like UX, AI, and Agile.
 
 I'm not going to rehash here the many [tips](https://www.cio.com/article/3211428/what-is-digital-transformation-a-necessary-disruption.html) and [roadmaps](https://www.mckinsey.com/industries/financial-services/our-insights/a-roadmap-for-a-digital-transformation) created by the likes of CIO magazines and McKinsey & Company respectively. Rather, I'm going to be more prescriptive and propose a simple approach to begin a DX, one that is infused from the start with the inevitability of having re-organizational changes down the road. To make the name memorable, I found the word SILK to be appropriate. Here are the four steps of the approach:
