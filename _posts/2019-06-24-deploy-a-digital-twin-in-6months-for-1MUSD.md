@@ -148,7 +148,7 @@ Whereas the simulator is trying to predict the world, the autonomous algorithms 
 
 ### 3.4.1 Mixed Integer Linear Program
 
-MILPs are the bread and butter of the field of operations research (OR). The origins of OR can be traced as far back as Blaise Pascal’s [division of the stakes](https://en.wikipedia.org/wiki/Problem_of_points). OR also played a decisive role during World War II. An MILP is an optimization problem where some of the variables are constrained to take integer values (as opposed to continuous). This property makes the problem exponentially more complicated because far more combinations of points need to be visited in order to find the optimal (min or max) solution. A common application of MILP is scheduling (or tasks, trains, operating rooms, military personnel, etc.).
+MILPs are the bread and butter of the field of operations research (OR). The origins of OR can be traced as far back as Blaise Pascal’s [division of the stakes](https://en.wikipedia.org/wiki/Problem_of_points). OR also played a decisive role during World War II. An MILP is an optimization problem where some of the variables are constrained to take integer values (as opposed to continuous). This property makes the problem exponentially more complicated because far more combinations of points need to be visited in order to find the optimal (min or max) solution. A common application of MILP is scheduling (e.g., scheduling of tasks, trains, operating rooms, military personnel, etc.).
 
 Some recent development in integer programming includes the development of robust optimization, which pushes the limits of what MILPs can do when variables are uncertain (to avoid being overly conservative and always picking the worse case).
 
@@ -158,11 +158,11 @@ When the problem is too difficult to express as an MILP, then [simulation based 
 
 ### 3.4.3 (Deep) Reinforcement Learning
 
-When the problem is too difficult to express as an SBO, then reinforcement learning is the last resort. Recent development computing power has enabled researchers to deploy RL to problems such as the notoriously difficult 2 player game of Go (Deepmind’s [AlphaGo](https://deepmind.com/research/alphago/)) and the even more difficult 5 versus 5 game Dota 2 ([OpenAI Five](https://openai.com/blog/openai-five/)). While RL might seem like the bleeding edge with most of its commercial applications in finance, it is a mature research field being transferred to a vast array of applications such as inventory management and robotics (see Preferred Networks, valued at over $1B, with applications of RL in transportation, manufacturing, and healthcare).
+When the problem is too difficult to express as an SBO, then reinforcement learning is the last resort. Recent development in computing power has enabled researchers to deploy RL to problems such as the notoriously difficult 2 player game of Go (Deepmind’s [AlphaGo](https://deepmind.com/research/alphago/)) and the even more difficult 5 versus 5 game Dota 2 ([OpenAI Five](https://openai.com/blog/openai-five/)). While RL might seem like the bleeding edge with most of its commercial applications in finance, it is a mature research field being transferred to a vast array of applications such as inventory management and robotics (see Preferred Networks, valued at over $1B, with applications of RL in transportation, manufacturing, and healthcare).
 
 ## 3.5 Disruption modelling
 
-Not to be outdone, disruption modelling comes last in this post but is a necessary module to stress test other components of the DT. To make the disruption modelling more representative of the real world, list out all variables that could be associated (causal or not) with disruptions. For instance, you wanted to model the likelihood that the local power utility was going to go down, you might consider data sources such as:
+Not to be outdone, disruption modelling comes last in this post but is a necessary module to stress test other components of the DT. To make the disruption modelling more representative of the real world, list out all variables that could be associated (causal or not) with disruptions. For instance, if you wanted to model the likelihood that the local power utility was going to go down, you might consider data sources such as:
 
 + Meteorological forecast like precipitation, wind, and atmospheric pressure.
 + Historical floods, landslides, avalanches, storms, and hurricanes.
@@ -194,6 +194,8 @@ Where `simulate` takes a state of the world and returns a future state of the wo
 
 ## 4.1 Broad timeline:
 
+Expect your team to have the following deliverables over time:
+
 1. In less than 4 weeks, you should aim to have delivered a baseline simulator.
 2. In less than 8 weeks you should have delivered a white paper.
 3. In less than 12 weeks, you should have a command line interface DT for long term planning.
@@ -204,13 +206,15 @@ It may seem academic to write a white paper, but there is a very pragmatic reaso
 
 ## 4.2 Additional considerations
 
+Additional important considerations when building a DT:
+
 1. The software is safe and secure (highest standards) and adopts the best practices for infrastructure as a service.
-2. The DT is a product and needs to be promoted/deployed/adopted by the organization.
+2. The DT is treated as a product (not a project) and needs to be promoted/deployed/adopted by the organization.
 3. In the age of software, building a business is synonymous with building software - you should aim to own all of the intellectual property as it will be a differentiator to your competitor.
 
 ## 4.3 Cost
 
-A rule of thumb for the ratio between the cost for temporary contractors/consultants and full time employees is roughly 2 : 1. For short term engagements, it may be as much as 3 : 1, while for longer term engagements it tends toward 1 : 1. You should plan to have a team with the following roles:
+A rule of thumb for the ratio between the cost for temporary contractors/consultants versus full time employees is roughly 2 : 1. For short term engagements, the ratio may be as much as 3 : 1, while for longer term engagements it tends toward 1 : 1. You should plan to have a team with the following roles:
 
 1. Product manager / product leader.
 2. UX/UI Designer.
