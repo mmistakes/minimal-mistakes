@@ -50,6 +50,10 @@
     @include breakpoint($x-large) {
       max-width: $max-width;
     }
+
+    &__form {
+      background-color: transparent;
+    }
   }
 
   .search-input {
