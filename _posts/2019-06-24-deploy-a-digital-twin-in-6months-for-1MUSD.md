@@ -13,7 +13,6 @@ Whether you manage a fleet of cruise ships, an upstream oil & gas supply chain, 
   </audio>
   <button class="btn btn--small" id="video-player-playback-rate-control" style="border-color=none !important;border-collapse: separate !important;">Speed: <span id="current-rate">1</span>x</button></span>
 
-
 In this post, I will:
 
 1. define what a Digital Twin is;
