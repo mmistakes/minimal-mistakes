@@ -7,6 +7,13 @@ toc: true
 
 The primary role of a product proposal document is to get funding from a sponsor, regardless of who the sponsor is. Whether you are a new product manager at a startup or a junior partner consultant seeking to [build a digital twin](https://blog.dannycastonguay.com/digital%20twin/deploy-a-digital-twin-in-6months-for-1MUSD/) a large enterprise (in the middle of a [digital transformation](https://blog.dannycastonguay.com/digital%20transformation/how-to-make-your-dx-silky-smooth/)), chances are that you are struggling with getting your product proposal accepted. I certainly did when I played such roles before, and quite frankly I still do today.
 
+<span><audio id="myAudio" controls>
+    <source src="/assets/audio/product-proposal.ogg" type="audio/ogg">
+    <source src="/assets/audio/product-proposal.mp3" type="audio/mpeg">
+  </audio>
+  <button class="btn btn--small" id="video-player-playback-rate-control" style="border-color=none !important;border-collapse: separate !important;">Speed: <span id="current-rate">1</span>x</button></span>
+
+
 With the mindset that a proposal document is a product, whose goal is to discover, persuade and influence others to join a cause, it is in itself a worthwhile exercise for the author (presumably the de facto product manager).
 
 In **Part I**, I propose here a framework for how to organize a product proposal; in **[Part II](https://blog.dannycastonguay.com/product%20management/make-a-great-product-out-of-your-product-proposal2/)**, I present few sample paragraphs which I have used before for each section. I'm hoping that the framework and these examples will help or inspire entrepreneurs, consultants and product managers out there - please don't be shy and send me your thoughts and feedback.
