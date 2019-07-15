@@ -5,7 +5,7 @@ tag: ["Template", "Product", "Letter of Proposal"]
 toc: true
 ---
 
-The primary role of a product proposal document is to get funding from a sponsor, regardless of who the sponsor is. Whether you are a new product manager at a startup or a junior partner consultant seeking to [build a digital twin](https://blog.dannycastonguay.com/digital%20twin/deploy-a-digital-twin-in-6months-for-1MUSD/) a large enterprise (in the middle of a [digital transformation](https://blog.dannycastonguay.com/digital%20transformation/how-to-make-your-dx-silky-smooth/)), chances are that you are struggling with getting your product proposal accepted. I certainly did when I played such roles before, and quite frankly I still do today.
+The primary role of a product proposal document is to get funding from a sponsor, regardless of who the sponsor is. Whether you are a new product manager at a startup or a junior partner consultant seeking to [build a digital twin](https://blog.dannycastonguay.com/digital%20twin/deploy-a-digital-twin-in-6months-for-1MUSD/) for a large enterprise (in the middle of a [digital transformation](https://blog.dannycastonguay.com/digital%20transformation/how-to-make-your-dx-silky-smooth/)), chances are that you are struggling with getting your product proposal accepted. I certainly did when I played such roles before, and quite frankly I still do today.
 
 <span><audio id="myAudio" controls>
     <source src="/assets/audio/product-proposal.ogg" type="audio/ogg">
@@ -38,17 +38,31 @@ Here's how the overall framework structure is organized:
 
 ## Framework explained
 
+### Personalized letter
+
 The **Personalized letter** serves as a way to tie the context of the last and next conversations you plan on having with the sponsor. This introductory part of the document should be short, and deal more with building a trusted relationship than deep content. 
+
+### Rundown
 
 The **Rundown** serves as a single page document that is broad in scope, but laser sharp on the important details. Think of it as the bullet points that you want your counterpart to use to go persuade a boss, or a board/advisors. It is different from an abstract because those tend to be very short (and academic), and it is also different from an Executive Summary because those tend to focus more on the financial aspect. I want to avoid focussing on the financial upside because it is a premature optimization ([the root of all evil](http://www.paulgraham.com/knuth.html)) - in time, it will come if you build something valuable that people want. 
 
+### Outline of work
+
 The **Outline of work** gives a sense of the sequence of steps you plan on taking to deliver the first few months of work. Even if you are a startup and don't know exactly where you are going, it is a good idea to spend at least a few hours initially (and periodically after) to think carefully about sequencing important pieces of work. Agile or not, anticipating the future is smart, as long as you don't fool yourself into thinking that you have perfect foresight and avoid the trap of thinking in terms of "late" or "missed deadlines".
+
+### Design and user insights
 
 The **Design and user insights** comes next and gives the reader reassurance that you understand the pain points you are solving to create a great User Experience (UX) that will drive desired benefits (revenue increase, cost decrease, risk mitigation or compliance). The section is in the middle of the framework for a reason - it should be the heart of the document, written with the most passion. 
 
+### Understanding of implementation challenges
+
 The **Understanding of implementation challenges** is a necessary section only in so far that you do not yet have complete trust from your sponsor in your ability to deliver good software products, or that there is uncertainty on what's possible to achieve (e.g., you can't do good data science if you don't have data). In many cases it's less about you, and it's more about the sponsor. For instance, you may have a sponsor who has never built products before, or has prior bitter experiences  (common for both VCs and large Enterprise alike). If at the end of a discussion, your sponsor seems overly focussed on implementation details (e.g., "will you use Apache Kafka?"), then expect that you need to invest more time in detailing the (anticipated) approach up-front. Regardless of the reasons, it's an important section. 
 
+### Cost estimates
+
 The **Costs estimates** are one of the most critical section to get to a "yes", despite its placement (second to last) in the framework. Note that it's better to be upfront and transparent about costs, because it enables the sponsor/investors to do sanity checks on your ability to deliver. If your costs are too low, chances are you are under-estimating the work involved. If your costs are too high, chances are that you are trying to build too much too quickly, or you are just paying people too much. 
+
+### Tools and processes
 
 Finally, **Tools and processes** are a bit more mundane, but you can't really do without them, so you might as well get everyone aligned on a common language up front. What issue tracker will you use? Where will the team be located? What are expectations in terms of hours? What's the process for Cybersecurity? How will defects be reported? This section is especially important in heavily regulated industries (e.g., financial services). 
 

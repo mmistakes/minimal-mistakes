@@ -19,11 +19,11 @@ Giving good feedback to people around you (both at work and in your private life
 
 Here's a few of the important points:
 
-1. Feedback can be given to anyone (e.g., subordinates, superiors, clients, spouse, parent, children, etc.)
-2. Good feedback is given verbally first, and requires cool-headed preparation ahead of time (e.g., write it down)
-3. Good feedback is strength-based, fact-based (i.e., truth seeking), and empathetic
-4. Receiving good feedback is a gift (i.e., an opportunity to improve)
-5. Feedback should be given promptly when urgent, and scheduled regularly otherwise (e.g., 2 weeks)
+1. Feedback can be given to anyone (e.g., subordinates, superiors, clients, spouse, parent, children, etc.).
+2. Good feedback is given verbally first, and requires cool-headed preparation ahead of time (e.g., write it down).
+3. Good feedback is strength-based, fact-based (i.e., truth seeking), and empathetic.
+4. Receiving good feedback is a gift (i.e., an opportunity to improve).
+5. Feedback should be given promptly when urgent, and scheduled regularly otherwise (e.g., 2 weeks).
 
 ## A template for preparing feedback
 
