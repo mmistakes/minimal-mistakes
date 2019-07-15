@@ -11,7 +11,7 @@
     <div id="results" class="results"></div>
   {%- when "google" -%}
     <form onsubmit="return googleCustomSearchExecute();" id="cse-search-box-form-id">
-      <label  class="sr-only" for="cse-search-input-box-id">
+      <label class="sr-only" for="cse-search-input-box-id">
         {{ site.data.ui-text[site.locale].search_label_text | default: 'Enter your search term...' }}
       </label>
       <input type="search" id="cse-search-input-box-id" class="search-input" tabindex="-1" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}" />
