@@ -1,0 +1,27 @@
+require: rubocop-jekyll
+
+inherit_gem:
+  rubocop-jekyll: .rubocop.yml
+
+AllCops:
+  TargetRubyVersion: 2.3
+  Include:
+    - lib/**/*.rb
+
+  Exclude:
+    - .gitignore
+    - .rspec
+    - .rubocop.yml
+    - .travis.yml
+
+    - Gemfile.lock
+    - History.markdown
+    - LICENSE.txt
+    - README.md
+
+    - script/**/*
+    - vendor/**/*
+
+Naming/MemoizedInstanceVariableName:
+  Exclude:
+    - lib/jekyll-feed/page-without-a-file.rb
