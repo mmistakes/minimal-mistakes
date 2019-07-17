@@ -21,18 +21,18 @@ description: >- # this means to ignore newlines until "baseurl:"
   over nineteen years of Lean and Agile coaching experience.
 twitter_username: agile_geek
 github_username: chrishowejones
-minimal_mistakes_skin: dark
+minimal_mistakes_skin: "mint"
 search: true
 
 google_site_verification : wz9UaGcoByyyDCld14szQiHTaU0_yDpgEbbOfI9C0SY
 
 # Build settings
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: mmistakes/minimal-mistakes@4.16.4
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
-paginate_path: /posts/page:num/
+paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 github: [metadata]
