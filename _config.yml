@@ -21,7 +21,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   over nineteen years of Lean and Agile coaching experience.
 twitter_username: agile_geek
 github_username: chrishowejones
-minimal_mistakes_skin: "mint"
+minimal_mistakes_skin: dark
 search: true
 
 google_site_verification : wz9UaGcoByyyDCld14szQiHTaU0_yDpgEbbOfI9C0SY
