@@ -12,6 +12,7 @@
 
 ### Bug Fixes
 
+- Fix aria issues with Lunr search form. [#2211](https://github.com/mmistakes/minimal-mistakes/pull/2211)
 - Fix missing fallback title for table of contents.
 
 ## [4.16.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.16.4)
