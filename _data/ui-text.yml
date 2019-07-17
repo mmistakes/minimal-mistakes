@@ -611,6 +611,9 @@ ko: &DEFAULT_KO
   comment_success_msg        : "감사합니다! 댓글이 머지된 후 확인하실 수 있습니다."
   comment_error_msg          : "댓글 등록에 문제가 있습니다. 필요 필드를 작성했는지 확인하고 다시 시도하세요."
   loading_label              : "로딩중..."
+  search_placeholder_text    : "검색어를 입력하세요..."
+  results_found              : "개 결과 발견"
+  back_to_top                : "맨 위로 이동"
 ko-KR:
   <<: *DEFAULT_KO
 
@@ -1311,7 +1314,7 @@ pa: &DEFAULT_PA
   comment_success_msg        : "ਤੁਹਾਡੀਆਂ ਟਿੱਪਣੀਆਂ ਲਈ ਧੰਨਵਾਦ! ਇਹ ਮਨਜ਼ੂਰੀ ਮਿਲਣ ਦੇ ਬਾਅਦ ਸਾਈਟ 'ਤੇ ਦਿਖਾਇਆ ਜਾਵੇਗਾ।"
   comment_error_msg          : "ਮੁਆਫ ਕਰਨਾ, ਤੁਹਾਡੀ ਅਧੀਨਗੀ ਵਿੱਚ ਕੋਈ ਗਲਤੀ ਹੋਈ ਸੀ ਕਿਰਪਾ ਕਰਕੇ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਸਾਰੇ ਲੋੜੀਂਦੇ ਖੇਤਰ ਪੂਰੇ ਹੋ ਗਏ ਹਨ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
   loading_label              : "ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ..."
-  search_placeholder_text    : "ਆਪਣੀ ਖੋਜ ਦੇ ਸ਼ਬਦ ਨੂੰ ਦਰਜ ਕਰੋ..."
+  search_placeholder_text    : "ਆਪਣੀ ਖੋਜ ਦੇ ਸ਼ਬਦ ਨੂੰ ਦਰਜ ਕਰੋ..."
   results_found              : "ਨਤੀਜਾ ਮਿਲਿਆ/ਮਿਲੇ"
   back_to_top                : "ਵਾਪਸ ਚੋਟੀ 'ਤੇ ਜਾਓ"
 pa-IN:
@@ -1412,7 +1415,7 @@ ml: &DEFAULT_ML
   comment_btn_submitted      : "രേഖപ്പെടുത്തി"
   comment_success_msg        : "നിങ്ങളുടെ അഭിപ്രായത്തിന് നന്ദി! ഇത് അംഗീകരിച്ചുകഴിഞ്ഞാൽ ഇത് സൈറ്റിൽ പ്രദർശിപ്പിക്കും."
   comment_error_msg          : "ക്ഷമിക്കണം, നിങ്ങളുടെ സമർപ്പണവുമായി ബന്ധപ്പെട്ട് ഒരു പിശകുണ്ടായിരുന്നു. ആവശ്യമായ എല്ലാ ഫീൽഡുകളും പൂർത്തിയായിട്ടുണ്ടെന്ന് ഉറപ്പുവരുത്തുക, വീണ്ടും ശ്രമിക്കുക."
-  loading_label              : "ലോഡിംഗ്..."
+  loading_label              : "ലോഡിംഗ്..."
   search_placeholder_text    : "നിങ്ങളുടെ തിരയൽ പദം നൽകുക..."
   results_found              : "ഫലം (കൾ) കണ്ടെത്തി"
   back_to_top                : "മുകളിലേയ്ക്ക്"
