@@ -2,11 +2,17 @@
 type: posts
 title: "'Prop' up your tests with test.check"
 excerpt: "Property based testing (PBT) is a powerful technique that discovers edge cases more thoroughly than traditional 'example' based testing"
+categories:
+  - Blog
+tags:
+  - testing
+  - clojure
+  - development
 header:
-  overlay_image: /pbt-screenshot.png
+  overlay_image: /assets/images/pbt-screenshot.png
   overlay_filter: 0.25 # same as adding an opacity of 0.5 to a black background
   caption: "Message in a bottle"
-  teaser: /pbt-screenshot.png
+  teaser: /assets/images/pbt-screenshot.png
 ---
 
 I've been experimenting for a few months on and off with property based testing, otherwise known as generative testing. This blog is an attempt to show property based testing applied to the kind of business problems I deal with most days.

@@ -1,0 +1,10 @@
+E:[✗ Error] Record is too big
+E:
+E:The API rejected one of your records because it is too big ({record_size}).
+W:
+W:Make sure the value of `max_record_size` (currently set to "{max_record_size}") matches the maximum size allowed by your current Algolia plan.
+W:
+I:Free Community plans can push records up to 10Kb (`max_record_size: 10000`, this is the default value), while paid plans can go up to 20Kb (`max_record_size: 20000`).
+I:
+I:If you're still having trouble solving this issue, feel free to file a bug on GitHub, ideally with a link to a repository where we can reproduce the issue.
+I:  https://github.com/algolia/jekyll-algolia/issues

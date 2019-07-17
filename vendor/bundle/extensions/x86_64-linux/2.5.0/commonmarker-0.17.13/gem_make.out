@@ -1,0 +1,70 @@
+current directory: /home/chris/minimal-mistakes-starter/vendor/bundle/gems/commonmarker-0.17.13/ext/commonmarker
+/usr/bin/ruby2.5 -I /usr/local/lib/site_ruby/2.5.0 -r ./siteconf20190716-1878-mugvrs.rb extconf.rb
+creating Makefile
+
+current directory: /home/chris/minimal-mistakes-starter/vendor/bundle/gems/commonmarker-0.17.13/ext/commonmarker
+make "DESTDIR=" clean
+
+current directory: /home/chris/minimal-mistakes-starter/vendor/bundle/gems/commonmarker-0.17.13/ext/commonmarker
+make "DESTDIR="
+compiling arena.c
+compiling autolink.c
+compiling blocks.c
+compiling buffer.c
+compiling cmark.c
+compiling cmark_ctype.c
+compiling commonmark.c
+compiling commonmarker.c
+In file included from /usr/include/ruby-2.5.0/ruby/ruby.h:2040:0,
+                 from /usr/include/ruby-2.5.0/ruby.h:33,
+                 from commonmarker.h:9,
+                 from commonmarker.c:1:
+/usr/include/ruby-2.5.0/ruby/intern.h:887:29: warning: ‘struct timespec’ declared inside parameter list will not be visible outside of this definition or declaration
+ void rb_timespec_now(struct timespec *);
+                             ^~~~~~~~
+/usr/include/ruby-2.5.0/ruby/intern.h:890:41: warning: ‘struct timespec’ declared inside parameter list will not be visible outside of this definition or declaration
+ VALUE rb_time_timespec_new(const struct timespec *, int);
+                                         ^~~~~~~~
+In file included from houdini.h:9:0,
+                 from commonmarker.c:3:
+config.h:8:0: warning: "HAVE_STDBOOL_H" redefined
+ #define HAVE_STDBOOL_H
+ 
+In file included from /usr/include/ruby-2.5.0/ruby/ruby.h:24:0,
+                 from /usr/include/ruby-2.5.0/ruby.h:33,
+                 from commonmarker.h:9,
+                 from commonmarker.c:1:
+/usr/include/x86_64-linux-gnu/ruby-2.5.0/ruby/config.h:28:0: note: this is the location of the previous definition
+ #define HAVE_STDBOOL_H 1
+ 
+compiling core-extensions.c
+compiling ext_scanners.c
+compiling footnotes.c
+compiling houdini_href_e.c
+compiling houdini_html_e.c
+compiling houdini_html_u.c
+compiling html.c
+compiling inlines.c
+compiling iterator.c
+compiling latex.c
+compiling linked_list.c
+compiling man.c
+compiling map.c
+compiling node.c
+compiling plaintext.c
+compiling plugin.c
+compiling references.c
+compiling registry.c
+compiling render.c
+compiling scanners.c
+compiling strikethrough.c
+compiling syntax_extension.c
+compiling table.c
+compiling tagfilter.c
+compiling utf8.c
+compiling xml.c
+linking shared-object commonmarker/commonmarker.so
+
+current directory: /home/chris/minimal-mistakes-starter/vendor/bundle/gems/commonmarker-0.17.13/ext/commonmarker
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 commonmarker.so ./.gem.20190716-1878-1rzfeu1/commonmarker

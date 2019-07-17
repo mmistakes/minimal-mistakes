@@ -6,11 +6,16 @@ comments: true
 read_time: true
 share: true
 related: true
+categories:
+  - Blog
+tags:
+  - clojure
+  - development
 header:
-  overlay_image: /Devil.png
+  overlay_image: /assets/images/Devil.png
   overlay_filter: 0.25 # same as adding an opacity of 0.5 to a black background
   caption: "Clojure the Devil"
-  teaser: /Devil.png
+  teaser: /assets/images/Devil.png
 
 ---
 

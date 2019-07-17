@@ -1,0 +1,16 @@
+E:[✗ Error] Unreachable server
+E:
+E:The jekyll-algolia plugin could not contact the server hosting your application.
+W:
+W:Make sure you correctly typed your application ID. As we are using the application ID as part of the server url, any typo in the application ID will prevent us from reaching your server.
+W:
+I:Here is the application ID you defined: {application_id}
+I:
+I:Make sure it's the same as the one displayed in your dashboard:
+I:   https://www.algolia.com/api-keys
+I:
+I:Then, define it in your Jekyll _config.yml file like this:
+I:
+I:  algolia:
+I:    application_id: your_application_id
+I:

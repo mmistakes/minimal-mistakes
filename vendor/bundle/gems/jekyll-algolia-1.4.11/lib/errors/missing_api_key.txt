@@ -1,0 +1,15 @@
+E:[✗ Error] Missing API key
+E:
+E:The jekyll-algolia plugin could not find your API key.
+W:
+W:Please, define your API key either by:
+W:
+W:1/ Defining an ENV variable when calling `jekyll algolia`
+W:   $ ALGOLIA_API_KEY='your_api_key' jekyll algolia
+W:
+W:2/ Save your API key in a named `_algolia_api_key` in your source directory.
+W:   If you do this, we strongly recommend you to NOT track this file in your versionning system.
+I:
+I:You can find your API key in your Algolia dashboard here:
+I:   https://www.algolia.com/api-keys
+I:

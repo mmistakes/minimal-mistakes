@@ -3,11 +3,17 @@ title: "Software by Design in a Functional Programming World"
 excerpt: "Behaviour first- Data first class"
 layout: single
 comments: true
+categories:
+  - Blog
+tags:
+  - functional programming
+  - architecture
+  - development
 header:
-  overlay_image: /chameleon-827517_960_720.jpg
+  overlay_image: /assets/images/chameleon-827517_960_720.jpg
   overlay_filter: 0.25 # same as adding an opacity of 0.5 to a black background
   caption: "Design for change"
-  teaser: /chameleon-827517_960_720.jpg
+  teaser: /assets/images/chameleon-827517_960_720.jpg
 ---
 
 This blog is the first in what may become a series around how I approach software architecture and design. First though

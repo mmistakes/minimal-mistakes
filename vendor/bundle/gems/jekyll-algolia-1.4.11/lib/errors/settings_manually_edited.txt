@@ -1,0 +1,17 @@
+I:
+W:[jekyll-algolia] Configuration mismatch:
+W:It seems that your index settings have been edited from outside of the jekyll-algolia plugin.
+I:
+I:This can happen if you manually edited them from the Algolia dashboard, for example. Don't worry, they will still be honored (for now).
+I:
+I:Still, we strongly encourage you to save any custom config inside the algolia.settings key of your _config.yml instead. Any value set there will always take precedence over anything you manually set in your dashboard.
+I:This is the best way to be sure your settings won't be lost in the future.
+I:
+W:To keep your current custom config, here is what you should add to your _config.yml file:
+W:
+W:algolia:
+W:  settings:
+{settings}
+I:
+I:If you'd like to revert to the default settings, the easiest way is to delete the {index_name} index from your dashboard and run `jekyll algolia` again.
+I:

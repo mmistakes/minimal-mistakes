@@ -1,0 +1,13 @@
+current directory: /home/chris/minimal-mistakes-starter/vendor/bundle/gems/json-2.2.0/ext/json
+/usr/bin/ruby2.5 -I /usr/local/lib/site_ruby/2.5.0 -r ./siteconf20190716-1878-y7a9w4.rb extconf.rb
+creating Makefile
+
+current directory: /home/chris/minimal-mistakes-starter/vendor/bundle/gems/json-2.2.0/ext/json
+make "DESTDIR=" clean
+
+current directory: /home/chris/minimal-mistakes-starter/vendor/bundle/gems/json-2.2.0/ext/json
+make "DESTDIR="
+make: Nothing to be done for 'all'.
+
+current directory: /home/chris/minimal-mistakes-starter/vendor/bundle/gems/json-2.2.0/ext/json
+make "DESTDIR=" install

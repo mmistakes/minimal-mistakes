@@ -1,0 +1,11 @@
+E:[✗ Error] No application ID defined
+E:
+E:The jekyll-algolia plugin could not find your Algolia application ID.
+W:
+W:Please, define it in your Jekyll _config.yml file like this:
+W:
+W:  algolia:
+W:    application_id: {your_application_id}
+I:
+I:You can find your application ID along with all your credentials in your Algolia dashboard here:
+I:   https://www.algolia.com/api-keys

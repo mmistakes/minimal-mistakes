@@ -6,11 +6,17 @@ comments: true
 read_time: true
 share: true
 related: true
+categories:
+  - Blog
+tags:
+  - software engineer
+  - architecture
+  - development
 header:
-  overlay_image: /elycathedral.jpeg
+  overlay_image: /assets/images/elycathedral.jpeg
   overlay_filter: 0.25 # same as adding an opacity of 0.5 to a black background
   caption: "The Physics of Software"
-  teaser: /elycathedral.jpeg
+  teaser: /assets/images/elycathedral.jpeg
 
 ---
 

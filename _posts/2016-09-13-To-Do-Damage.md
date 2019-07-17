@@ -3,11 +3,17 @@ title: "To Do Damage (TDD)"
 excerpt: "TDD is one tool... Like all good tools, it has sharp edges and if you misuse it, it can cut you that's not a reason to leave it in the toolbox."
 layout: single
 comments: true
+categories:
+  - Blog
+tags:
+  - Test Driven Development
+  - testing
+  - development
 header:
-  overlay_image: /explosion-123690__340.jpg
+  overlay_image: /assets/images/explosion-123690__340.jpg
   overlay_filter: 0.25 # same as adding an opacity of 0.5 to a black background
   caption: "To Do Damage"
-  teaser: /explosion-123690__340.jpg
+  teaser: /assets/images/explosion-123690__340.jpg
 ---
 
 # To Do Damage? (TDD) #

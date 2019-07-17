@@ -4,11 +4,17 @@ excerpt: "Abstractions are the way we manage to deliver complex software systems
 apply judiciously."
 layout: single
 comments: true
+categories:
+  - Blog
+tags:
+  - functional programming
+  - architecture
+  - development
 header:
-  overlay_image: /early-bird.jpeg
+  overlay_image: /assets/images/early-bird.jpeg
   overlay_filter: 0.25 # same as adding an opacity of 0.5 to a black background
   caption: "Image from clipartfest.com"
-  teaser: /early-bird.jpeg
+  teaser: /assets/images/early-bird.jpeg
 ---
 
 

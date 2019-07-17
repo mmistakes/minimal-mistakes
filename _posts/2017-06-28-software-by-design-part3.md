@@ -6,11 +6,17 @@ comments: true
 read_time: true
 share: true
 related: true
+categories:
+  - Blog
+tags:
+  - functional programming
+  - architecture
+  - development
 header:
-  overlay_image: /message-in-bottle.png
+  overlay_image: /assets/images/message-in-bottle.png
   overlay_filter: 0.25 # same as adding an opacity of 0.5 to a black background
   caption: "Message in a bottle"
-  teaser: /message-in-bottle.png
+  teaser: /assets/images/message-in-bottle.png
 ---
 
 # Message in a Bottle #
@@ -153,7 +159,7 @@ If we imagine an eCommerce system, one of the things we would need to do is capt
 suppliers.
 
 <figure>
-	<img src="/images/Architecture Blog - 16.png">
+	<img src="/assets/images/Architecture Blog - 16.png">
 	<figcaption>Initial message flow - eCommerce products population.</figcaption>
 </figure>
 
@@ -174,7 +180,7 @@ state, let alone how I might model the message payload.
 By digging into these questions we might extend this initial naive model like so:
 
 <figure>
-	<img src="/images/Architecture Blog - 17.png">
+	<img src="/assets/images/Architecture Blog - 17.png">
 	<figcaption>Enhanced message flow - eCommerce products population.</figcaption>
 </figure>
 
@@ -331,7 +337,7 @@ of 'boxes' that take a message and output another altered message, the function 
 accept input and the function at the 'end' of that chain produces some output.
 
 <figure>
-	<img src="/images/Architecture Blog - 18.png">
+	<img src="/assets/images/Architecture Blog - 18.png">
 	<figcaption>Side effects at the edges.</figcaption>
 </figure>
 

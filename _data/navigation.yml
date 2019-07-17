@@ -1,7 +1,9 @@
-# main links links
 main:
-  - title: "Blog"
-    url: /blog/
-
+  - title: "Services"
+    url: /services/
+  - title: "Posts"
+    url: /posts/
+  - title: "Tags"
+    url: /tags/
   - title: "About"
     url: /about/

@@ -1,0 +1,12 @@
+E:[✗ Error] Unknown setting
+E:
+E:The jekyll-algolia plugin could not correctly configure your index as some of the settings passed are not recognized.
+W:
+W:It seems that one of the custom index settings you defined was not recognized by the API and was rejected:
+W:  {setting_name}: {setting_value}
+I:
+I:Make sure the setting name and value are correct. You can find a list of all the available settings with their documentation in our API reference:
+I:  https://www.algolia.com/doc/api-reference/api-parameters/
+I:Or specifically for this setting:
+I:  https://www.algolia.com/doc/api-reference/api-parameters/{setting_name}/
+I:

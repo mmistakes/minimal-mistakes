@@ -1,0 +1,14 @@
+E:[✗ Error] Too many records
+E:
+E:The jekyll-algolia plugin could not push your records because it exceeds the maximum number of records allowed in your current plan.
+W:
+W:Community plans can host up to 10k records and Essential plans starts at 50k.
+W:
+W:Check our pricing page for more details:
+W:   https://www.algolia.com/pricing
+W:
+I:You might want to upgrade your plan or exclude records from indexing using the `files_to_exclude` option:
+I:   https://community.algolia.com/jekyll-algolia/options.html#files-to-exclude
+I:
+I:If you're having trouble solving this issue, feel free to file a bug on GitHub, ideally with a link to a repository where we can reproduce the issue as well as the APPID you're trying to push to.
+I:  https://github.com/algolia/jekyll-algolia/issues

@@ -1,0 +1,18 @@
+E:[✗ Error] No index name defined
+E:
+E:The jekyll-algolia plugin could not find the name of the Algolia index you want to push your records to.
+W:
+W:Please, define it in your Jekyll _config.yml file like this:
+W:
+W:  algolia:
+W:   index_name: your_index_name
+W:
+W:Alternatively, you can also define it as an ENV variable, like this:
+W:
+W:  $ ALGOLIA_INDEX_NAME='{your_index_name}' jekyll algolia 
+W:
+I:You can see all your indices from your Algolia dashboard here:
+I:  https://www.algolia.com/explorer
+I:
+I:Note that you don't have to create an index before pushing records.
+I:It will be created automatically if it does not exist yet.

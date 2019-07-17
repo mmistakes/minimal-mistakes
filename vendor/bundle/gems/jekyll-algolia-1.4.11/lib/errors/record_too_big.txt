@@ -1,0 +1,27 @@
+E:[✗ Error] Record is too big
+E:
+E:The jekyll-algolia plugin detected that one of your records exceeds the {max_record_size} record size limit.
+W:
+W:title:    {object_title}
+W:url:      {object_url}
+W:size:     {record_size}
+W:
+W:Most probable keys causing the issue:
+W:   {probable_wrong_keys}
+W:
+W:Complete log of the record has been extracted to:
+W:   {record_log_path}
+W:
+I:This issue can be caused by malformed HTML preventing the parser to correctly grab the content of the nodes. Double check that the page actually renders correctly with a regular `jekyll build`.
+I:
+I:You can also exclude the page generating this error from the indexing by editing the `files_to_exclude` key of your config.
+I:
+I:If you think this is an error and your current Algolia plan should allow you to push records bigger than {max_record_size}, you can change the `max_record_size` config option to increase the limit. Paid plans have a limit set to 20Kb, while free Community plans have it set to 10Kb.
+I:
+I:The following documentation might help you:
+I:   - https://community.algolia.com/jekyll-algolia/options.html#files-to-exclude
+I:   - https://community.algolia.com/jekyll-algolia/options.html#nodes-to-index
+I:   - https://community.algolia.com/jekyll-algolia/options.html#max-record-size
+I:
+I:If you're still having trouble solving this issue, feel free to file a bug on GitHub, ideally with a link to a repository where we can reproduce the issue.
+I:  https://github.com/algolia/jekyll-algolia/issues

@@ -1,0 +1,9 @@
+E:[✗ Error] Invalid index name
+E:
+E:The jekyll-algolia plugin could push records to your index as its name contains invalid characters.
+W:
+W:Some special characters are not allowed in the naming of indices and your index {index_name} contains some of them.
+I:
+I:Please, check our FAQ for more details:
+I:  https://www.algolia.com/doc/faq/index-configuration/what-can-i-name-my-indices/
+I:

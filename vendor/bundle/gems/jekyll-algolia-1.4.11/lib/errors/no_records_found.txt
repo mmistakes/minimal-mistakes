@@ -1,0 +1,14 @@
+E:[✗ Error] No records found
+E:
+E:The jekyll-algolia plugin could not find any records to index.
+W:
+W:The plugin tried to extract records from the pages, posts and collections of your site but could not find anything to index.
+I:
+I:Make sure you did not exclude too many files from indexing using the `files_to_exclude` option. You are currently excluding the following files:
+I:    {files_to_exclude}
+I:
+I:Also double check that your current value for `nodes_to_index` can actually match something in the pages. You are current indexing the following nodes:
+I:    {nodes_to_index}
+I:
+I:Note that all the markup that is defined in the layouts won't be available during extraction. Only the page content can be accessed. So if you defined a layout markup that is used only for one page, you should move it to the page instead.
+I:
