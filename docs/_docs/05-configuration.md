@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-last_modified_at: 2019-01-15T08:31:44-05:00
+last_modified_at: 2019-07-17T11:50:08-04:00
 toc: true
 ---
 
@@ -133,6 +133,12 @@ _Example:_ `title_separator: "|"` would produce page titles like `Sample Page | 
 
 **Note:** Long site titles have been known to break the masthead layout. Avoid adding a long "tagline" to the title prevent this from happening eg. `My Awesome Site is the Best Because I Say So".
 {: .notice--warning}
+
+### Site subtitle
+
+A short tagline that appears below the title in site masthead.
+
+_Example:_ `subtitle: "Version 2.0"`
 
 ### Site name
 
