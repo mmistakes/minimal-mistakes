@@ -45,8 +45,8 @@ en: &DEFAULT_EN
   comment_success_msg        : "Thanks for your comment! It will show on the site once it has been approved."
   comment_error_msg          : "Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again."
   loading_label              : "Loading..."
-  search_placeholder_text    : "Enter your search term..."
   search_label_text          : "Enter your search term..."
+  search_placeholder_text    : "Enter your search term..."
   results_found              : "Result(s) found"
   back_to_top                : "Back to top"
 en-US:
@@ -103,6 +103,7 @@ es: &DEFAULT_ES
   comment_success_msg        : "¡Gracias por tu comentario! Se publicará una vez sea aprobado."
   comment_error_msg          : "Ha ocurrido un error al enviar el comentario. Asegúrate de completar todos los campos obligatorios e inténtalo de nuevo."
   loading_label              : "Cargando..."
+  search_label_text          :
   search_placeholder_text    : "Términos de búsqueda..."
   results_found              : "resultado(s) encontrado(s)"
   back_to_top                : "Volver arriba"
@@ -156,6 +157,7 @@ fr: &DEFAULT_FR
   comment_success_msg        : "Merci pour votre commentaire, il sera visible sur le site une fois approuvé."
   comment_error_msg          : "Désolé, une erreur est survenue lors de la soumission. Vérifiez que les champs obligatoires ont été remplis et réessayez."
   loading_label              : "Chargement..."
+  search_label_text          :
   search_placeholder_text    : "Entrez votre recherche..."
   results_found              : "Résultat(s) trouvé(s)"
   back_to_top                : "Retour en haut"
@@ -211,6 +213,7 @@ tr: &DEFAULT_TR
   comment_success_msg        : "Yorumunuz için teşekkürler! Yorumunuz onaylandıktan sonra sitede gösterilecektir."
   comment_error_msg          : "Maalesef bir hata oluştu. Lütfen zorunlu olan tüm alanları doldurduğunuzdan emin olun ve sonrasında tekrar deneyin."
   loading_label              : "Yükleniyor..."
+  search_label_text          :
 tr-TR:
   <<: *DEFAULT_TR
 
@@ -259,6 +262,7 @@ pt: &DEFAULT_PT
   comment_success_msg        : "Obrigado pelo seu comentário! Será visível no site logo que aprovado."
   comment_error_msg          : "Lamento, ocorreu um erro na sua submissão. Por favor verifique se todos os campos obrigatórios estão corretamente preenchidos e tente novamente."
   loading_label              : "A carregar..."
+  search_label_text          :
 pt-PT:
   <<: *DEFAULT_PT
 # Brazilian Portuguese
@@ -305,6 +309,7 @@ pt-BR:
   comment_success_msg        : "Obrigado pelo seu comentário! Ele aparecerá no site assim que for aprovado."
   comment_error_msg          : "Desculpe, ocorreu um erro no envio. Verifique se todos os campos obrigatórios foram preenchidos e tente novamente."
   loading_label              : "Carregando..."
+  search_label_text          :
   search_placeholder_text    : "Pesquisar..."
   results_found              : "Resultado(s) encontrado(s)"
   back_to_top                : "Voltar para o topo"
@@ -354,6 +359,7 @@ it: &DEFAULT_IT
   comment_success_msg        : "Grazie per il tuo commento! Verrà visualizzato nel sito una volta che sarà approvato."
   comment_error_msg          : "C'è stato un errore con il tuo invio. Assicurati che tutti i campi richiesti siano stati completati e riprova."
   loading_label              : "Caricamento..."
+  search_label_text          :
   search_placeholder_text    : "Inserisci termini di ricerca..."
   results_found              : "Risultati"
   back_to_top                : "Vai su"
@@ -405,6 +411,7 @@ zh: &DEFAULT_ZH_HANS
   comment_success_msg        : "感谢您的评论！被批准后它会立即在此站点展示。"
   comment_error_msg          : "很抱歉，您的提交存在错误。请确保所有必填字段都已填写正确，然后再试一次。"
   loading_label              : "正在加载..."
+  search_label_text          :
   search_placeholder_text    : "输入您要搜索的关键词..."
   results_found              : "条记录匹配"
   back_to_top                : "返回顶部"
@@ -456,6 +463,7 @@ zh-TW: &DEFAULT_ZH_HANT
   comment_success_msg        : "感謝您的留言！ 審核後將會顯示在站上。"
   comment_error_msg          : "抱歉，部份資料輸入有問題。請確認資料填寫正確後再試一次。"
   loading_label              : "載入中..."
+  search_label_text          :
 zh-HK:
   <<: *DEFAULT_ZH_HANT
 
@@ -504,6 +512,7 @@ de: &DEFAULT_DE
   comment_success_msg        : "Danke für Ihren Kommentar! Er wird auf der Seite angezeigt, nachdem er geprüft wurde."
   comment_error_msg          : "Entschuldigung, es gab einen Fehler. Bitte füllen Sie alle benötigten Felder aus und versuchen Sie es erneut."
   loading_label              : "Lade..."
+  search_label_text          :
   search_placeholder_text    : "Suchbegriff eingeben..."
   results_found              : "Ergebnis(se) gefunden"
 de-DE:
@@ -564,6 +573,7 @@ ne: &DEFAULT_NE
   comment_success_msg        : "तपाईंको टिप्पणीको लागि धन्यवाद! एक पटक यो अनुमोदन गरेपछी यो साइटमा देखाउनेछ।"
   comment_error_msg          : "माफ गर्नुहोस्, तपाईंको टिप्पणी त्रुटि थियो।सबै आवश्यक जानकारीहरु पूरा गरिएको छ भने निश्चित गर्नुहोस् र फेरि प्रयास गर्नुहोस्।"
   loading_label              : "लोड हुँदैछ ..."
+  search_label_text          :
 ne-NP:
   <<: *DEFAULT_NE
 
@@ -612,6 +622,7 @@ ko: &DEFAULT_KO
   comment_success_msg        : "감사합니다! 댓글이 머지된 후 확인하실 수 있습니다."
   comment_error_msg          : "댓글 등록에 문제가 있습니다. 필요 필드를 작성했는지 확인하고 다시 시도하세요."
   loading_label              : "로딩중..."
+  search_label_text          :
   search_placeholder_text    : "검색어를 입력하세요..."
   results_found              : "개 결과 발견"
   back_to_top                : "맨 위로 이동"
@@ -663,6 +674,7 @@ ru: &DEFAULT_RU
   comment_success_msg        : "Спасибо за Ваш комментарий! Он будет опубликован на сайте после проверки."
   comment_error_msg          : "К сожалению, произошла ошибка с отправкой комментария. Пожалуйста, убедитесь, что все обязательные поля заполнены и попытайтесь снова."
   loading_label              : "Отправка..."
+  search_label_text          :
   search_placeholder_text    : "Введите поисковый запрос..."
   results_found              : "Найдено"
 ru-RU:
@@ -713,6 +725,7 @@ lt: &DEFAULT_LT
   comment_success_msg        : "Ačiū už komentarą! Jis bus parodytas kai bus patvirtintas."
   comment_error_msg          : "Atleiskite, įvyko netikėta klaida įrašant komentarą. Pasitikrinkite ar užpildėte visus būtinus laukus ir pamėginkite dar kartą."
   loading_label              : "Kraunama..."
+  search_label_text          :
 lt-LT:
   <<: *DEFAULT_LT
 
@@ -761,6 +774,7 @@ gr: &DEFAULT_GR
   comment_success_msg        : "Ευχαριστούμε για το σχόλιό σας! Θα εμφανιστεί στην ιστοσελίδα αφού εγκριθεί."
   comment_error_msg          : "Λυπούμαστε, παρουσιάστηκε σφάλμα με την υποβολή σας. Παρακαλούμε βεβαιωθείτε ότι έχετε όλα τα απαιτούμενα πεδία συμπληρωμένα και δοκιμάστε ξανά."
   loading_label              : "Φόρτωση..."
+  search_label_text          :
   search_placeholder_text    : "Εισάγετε όρο αναζήτησης..."
   results_found              : "Αποτελέσματα"
 gr-GR:
@@ -811,6 +825,7 @@ sv: &DEFAULT_SV
   comment_success_msg        : "Tack för din kommentar! Den kommer att visas på sidan så fort den har godkännts."
   comment_error_msg          : "Tyvärr det har blivit något fel i ett av fälten, se till att du fyllt i alla obligatoriska fält och försök igen."
   loading_label              : "Laddar..."
+  search_label_text          :
   search_placeholder_text    : "Fyll i sökterm..."
   results_found              : "Resultat funna"
   back_to_top                : "Tillbaka till toppen"
@@ -864,6 +879,7 @@ nl: &DEFAULT_NL
   comment_success_msg        : "Bedankt voor uw reactie! Het zal op de site worden weergegeven zodra het is goedgekeurd."
   comment_error_msg          : "Sorry, er is een fout opgetreden bij uw inzending. Zorg ervoor dat alle vereiste velden zijn voltooid en probeer het opnieuw."
   loading_label              : "Laden..."
+  search_label_text          :
 nl-BE:
   <<: *DEFAULT_NL
 nl-NL:
@@ -914,6 +930,7 @@ id: &DEFAULT_ID
   comment_success_msg        : "Terimakasih atas komentar Anda! Komentar ini akan tampil setelah disetujui."
   comment_error_msg          : "Maaf, ada kesalahan pada submisi Anda. Pastikan seluruh kolom sudah dilengkapi dan coba kembali."
   loading_label              : "Sedang meload..."
+  search_label_text          :
 id-ID:
   <<: *DEFAULT_ID
 
@@ -962,6 +979,7 @@ vi: &DEFAULT_VI
   comment_success_msg        : "Cảm ơn bạn đã bình luận! Bình luận sẽ xuất hiện sau khi được duyệt."
   comment_error_msg          : "Rất tiếc, có lỗi trong việc gửi bình luận. Hãy đảm bảo toàn bộ các phần bắt buộc đã được điền đầy đủ và thử lại."
   loading_label              : "Đang tải..."
+  search_label_text          :
   search_placeholder_text    : "Nhập từ khóa cần tìm..."
   results_found              : "Kết quả tìm được"
   back_to_top                : "Lên đầu trang"
@@ -1013,6 +1031,7 @@ da: &DEFAULT_DA
   comment_success_msg        : "Tak for din kommentar! Den bliver vist på siden, så snart den er godkendt."
   comment_error_msg          : "Desværre skete der en fejl. Prøv igen, mens du sørger for at alle obligatoriske felter er udfyldt."
   loading_label              : "Indlæser..."
+  search_label_text          :
   search_placeholder_text    : "Hvad leder du efter..."
   results_found              : "Resultat(er) fundet"
   back_to_top                : "Tilbage til toppen"
@@ -1064,6 +1083,7 @@ pl: &DEFAULT_PL
   comment_success_msg        : "Dziękuję za Twój komentarz! Zostanie dodany po akceptacji."
   comment_error_msg          : "Niestety wystąpił błąd. Proszę upewnij się, że wszystkie wymagane pola zostały wypełnione i spróbuj ponownie."
   loading_label              : "Trwa ładowanie strony..."
+  search_label_text          :
 pl-PL:
   <<: *DEFAULT_PL
 
@@ -1112,6 +1132,7 @@ ja: &DEFAULT_JA
   comment_success_msg        : "コメントありがとうございます！　コメントは承認されるとページに表示されます。"
   comment_error_msg          : "送信エラーです。必須項目がすべて入力されていることを確認して再送信してください。"
   loading_label              : "読み込み中..."
+  search_label_text          :
   search_placeholder_text    : "検索キーワードを入力してください..."
   results_found              : "件"
 ja-JP:
@@ -1162,6 +1183,7 @@ sk: &DEFAULT_SK
   comment_success_msg        : "Ďakujem za tvoj komentár! Po schválení bude zobrazený na stránke."
   comment_error_msg          : "Prepáč, pri ukladaní nastala chyba. Ubezpeč sa prosím, že si vyplnil všetky požadované polia a skús znova."
   loading_label              : "Načítava sa..."
+  search_label_text          :
   search_placeholder_text    : "Zadaj hľadaný výraz..."
   results_found              : "Nájdených výsledkov"
   back_to_top                : "Na začiatok stránky"
@@ -1213,6 +1235,7 @@ hu: &DEFAULT_HU
   comment_success_msg        : "Köszönjük a Hozzászólást! A Hozzászólások csak előzetes moderáció után lesznek publikusak."
   comment_error_msg          : "Hoppá, hiba történt a beküldés közben. Kérlek ellenőrizd hogy minden kötelező mező ki van-e töltve."
   loading_label              : "Betöltés..."
+  search_label_text          :
   search_placeholder_text    : "Keresendő szöveg..."
   results_found              : "Találatok:"
   back_to_top                : "Oldal tetejére"
@@ -1264,6 +1287,7 @@ ro: &DEFAULT_RO
   comment_success_msg        : "Mulțumesc pentru comentariu! Va apărea pe site în momentul în care va fi aprobat."
   comment_error_msg          : "Scuze, este o problemă cu comentariul tău. Asigură-te că toate câmpurile obligatorii au fost completate și încearcă din nou."
   loading_label              : "Se încarcă..."
+  search_label_text          :
   search_placeholder_text    : "Caută ceva..."
   results_found              : "Rezultate găsite"
   back_to_top                : "Înapoi în susul paginii"
@@ -1315,6 +1339,7 @@ pa: &DEFAULT_PA
   comment_success_msg        : "ਤੁਹਾਡੀਆਂ ਟਿੱਪਣੀਆਂ ਲਈ ਧੰਨਵਾਦ! ਇਹ ਮਨਜ਼ੂਰੀ ਮਿਲਣ ਦੇ ਬਾਅਦ ਸਾਈਟ 'ਤੇ ਦਿਖਾਇਆ ਜਾਵੇਗਾ।"
   comment_error_msg          : "ਮੁਆਫ ਕਰਨਾ, ਤੁਹਾਡੀ ਅਧੀਨਗੀ ਵਿੱਚ ਕੋਈ ਗਲਤੀ ਹੋਈ ਸੀ ਕਿਰਪਾ ਕਰਕੇ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਸਾਰੇ ਲੋੜੀਂਦੇ ਖੇਤਰ ਪੂਰੇ ਹੋ ਗਏ ਹਨ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
   loading_label              : "ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ..."
+  search_label_text          :
   search_placeholder_text    : "ਆਪਣੀ ਖੋਜ ਦੇ ਸ਼ਬਦ ਨੂੰ ਦਰਜ ਕਰੋ..."
   results_found              : "ਨਤੀਜਾ ਮਿਲਿਆ/ਮਿਲੇ"
   back_to_top                : "ਵਾਪਸ ਚੋਟੀ 'ਤੇ ਜਾਓ"
@@ -1365,6 +1390,7 @@ fa: &DEFAULT_FA
   comment_success_msg        : ".باتشکر از ارسال دیدگاه! پس از تأیید، این دیدگاه در سایت نشان داده خواهد شد"
   comment_error_msg          : ".متاسفانه در ارسال شما خطایی بود. لطفا مطمئن شوید تمام فیلدهای مورد نیاز تکمیل شده و دوباره امتحان کنید"
   loading_label              : "...بارگذاری"
+  search_label_text          :
   search_placeholder_text    : "...عبارت جستجوی خود را وارد کنید"
   results_found              : "نتایج"
   back_to_top                : "بازگشت به بالا"
@@ -1417,6 +1443,7 @@ ml: &DEFAULT_ML
   comment_success_msg        : "നിങ്ങളുടെ അഭിപ്രായത്തിന് നന്ദി! ഇത് അംഗീകരിച്ചുകഴിഞ്ഞാൽ ഇത് സൈറ്റിൽ പ്രദർശിപ്പിക്കും."
   comment_error_msg          : "ക്ഷമിക്കണം, നിങ്ങളുടെ സമർപ്പണവുമായി ബന്ധപ്പെട്ട് ഒരു പിശകുണ്ടായിരുന്നു. ആവശ്യമായ എല്ലാ ഫീൽഡുകളും പൂർത്തിയായിട്ടുണ്ടെന്ന് ഉറപ്പുവരുത്തുക, വീണ്ടും ശ്രമിക്കുക."
   loading_label              : "ലോഡിംഗ്..."
+  search_label_text          :
   search_placeholder_text    : "നിങ്ങളുടെ തിരയൽ പദം നൽകുക..."
   results_found              : "ഫലം (കൾ) കണ്ടെത്തി"
   back_to_top                : "മുകളിലേയ്ക്ക്"
@@ -1468,6 +1495,7 @@ th: &DEFAULT_TH
   comment_success_msg        : "ขอบคุณสำหรับการแสดงความคิดเห็น! ความคิดเห็นจะได้รับการแสดงหลังจากได้รับการยืนยัน"
   comment_error_msg          : "ขออภัย, มีบางอย่างผิดพลาดจากการส่งแบบฟอร์ม กรุณาตรวจทานทุกช่อง และลองส่งใหม่อีกครั้ง"
   loading_label              : "กำลังโหลด..."
+  search_label_text          :
   search_placeholder_text    : "ใส่คำค้นหาของคุณ..."
   results_found              : "ผลการค้นหา พบ"
   back_to_top                : "กลับด้านบน"
@@ -1518,6 +1546,7 @@ hi: &DEFAULT_HI
   comment_success_msg        : "आपके कमेंट के लिए धन्यवाद! इसे स्वीकृति मिलने के बाद साइट पर दिखाया जाएगा।"
   comment_error_msg          : "क्षमा करें, आपके सबमिशन के साथ एक त्रुटि हुई थी। कृपया सुनिश्चित करें कि सभी आवश्यक फ़ील्ड पूरा हो गए हैं और पुनः प्रयास करें।"
   loading_label              : "लोड हो रहा है..."
+  search_label_text          :
   search_placeholder_text    : "अपना खोज शब्द दर्ज करें..."
   results_found              : "परिणाम मिला/मिले"
   back_to_top                : "शीर्ष पर वापस"
