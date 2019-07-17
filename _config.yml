@@ -29,6 +29,7 @@ google_site_verification : wz9UaGcoByyyDCld14szQiHTaU0_yDpgEbbOfI9C0SY
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes@4.16.4
+logo: "/assets/images/DevCycle White Logo.png"
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
