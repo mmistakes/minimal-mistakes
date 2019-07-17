@@ -46,6 +46,7 @@ en: &DEFAULT_EN
   comment_error_msg          : "Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again."
   loading_label              : "Loading..."
   search_placeholder_text    : "Enter your search term..."
+  search_label_text          : "Enter your search term..."
   results_found              : "Result(s) found"
   back_to_top                : "Back to top"
 en-US:
