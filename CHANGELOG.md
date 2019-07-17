@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+- Add missing Korean localized UI text strings. [#2209](https://github.com/mmistakes/minimal-mistakes/pull/2209)
 - Use [Font Awesome Kits](https://blog.fontawesome.com/introducing-font-awesome-kits-7134d1d59959) to use the latest version of icons. [#2184](https://github.com/mmistakes/minimal-mistakes/issues/2184)
 - Remove unecessary console.log in `lunr-en.js` and `lunr-gr.js` JavaScript. [#2193](https://github.com/mmistakes/minimal-mistakes/issues/2193)
 - Remove unecessary `type="text/javascript"` from Google Analytics JavaScript. [#2190](https://github.com/mmistakes/minimal-mistakes/pull/2190)
