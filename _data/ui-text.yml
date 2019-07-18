@@ -1297,23 +1297,23 @@ ro-RO:
 # Punjabi
 # -----------------
 pa: &DEFAULT_PA
-  skip_links                 :
-  skip_primary_nav           :
-  skip_content               :
-  skip_footer                :
+  skip_links                 : "ਲਿੰਕ ਛੱਡੋ"
+  skip_primary_nav           : "ਮੂਲ ਮਾਰਗ ਛੱਡੋ"
+  skip_content               : "ਸਮੱਗਰੀ ਛੱਡੋ"
+  skip_footer                : "ਅੰਤ ਵਿਚ ਲਿਖਿਆ ਛੱਡੋ"
   page                       : "ਸਫ਼ਾ"
   pagination_previous        : "ਪਿਛਲਾ"
   pagination_next            : "ਅਗਲਾ "
   breadcrumb_home_label      : "ਘਰ"
   breadcrumb_separator       : "/"
   menu_label                 : "ਟੌਗਲ ਮੀਨੂ"
-  search_label               :
+  search_label               : "ਖੋਜ"
   toc_label                  : "ਇਸ ਸਫ਼ੇ 'ਤੇ"
   ext_link_label             : "ਸਿੱਧਾ ਸੰਪਰਕ"
   less_than                  : "ਤੋਂ ਘੱਟ"
   minute_read                : "ਮਿੰਟ ਵਿੱਚ ਪੜਿਆ ਜਾ ਸਕਦਾ ਹੈ"
   share_on_label             : "ਸਾਂਝਾ ਕਰੋ"
-  meta_label                 :
+  meta_label                 : "ਸਵੈ-ਸੰਦਰਭ ਜਾਣਕਾਰੀ"
   tags_label                 : "ਟੈਗ"
   categories_label           : "ਵਰਗ"
   date_label                 : "ਅਪਡੇਟ ਕੀਤਾ:"
@@ -1339,7 +1339,7 @@ pa: &DEFAULT_PA
   comment_success_msg        : "ਤੁਹਾਡੀਆਂ ਟਿੱਪਣੀਆਂ ਲਈ ਧੰਨਵਾਦ! ਇਹ ਮਨਜ਼ੂਰੀ ਮਿਲਣ ਦੇ ਬਾਅਦ ਸਾਈਟ 'ਤੇ ਦਿਖਾਇਆ ਜਾਵੇਗਾ।"
   comment_error_msg          : "ਮੁਆਫ ਕਰਨਾ, ਤੁਹਾਡੀ ਅਧੀਨਗੀ ਵਿੱਚ ਕੋਈ ਗਲਤੀ ਹੋਈ ਸੀ ਕਿਰਪਾ ਕਰਕੇ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਸਾਰੇ ਲੋੜੀਂਦੇ ਖੇਤਰ ਪੂਰੇ ਹੋ ਗਏ ਹਨ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
   loading_label              : "ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ..."
-  search_label_text          :
+  search_label_text          : "ਖੋਜ"
   search_placeholder_text    : "ਆਪਣੀ ਖੋਜ ਦੇ ਸ਼ਬਦ ਨੂੰ ਦਰਜ ਕਰੋ..."
   results_found              : "ਨਤੀਜਾ ਮਿਲਿਆ/ਮਿਲੇ"
   back_to_top                : "ਵਾਪਸ ਚੋਟੀ 'ਤੇ ਜਾਓ"
@@ -1505,10 +1505,10 @@ th-TH:
 # Hindi
 # -----------------
 hi: &DEFAULT_HI
-  skip_links                 :
-  skip_primary_nav           :
-  skip_content               :
-  skip_footer                :
+  skip_links                 : "लिंक छोड़ें"
+  skip_primary_nav           : "प्राथमिक पथ-प्रदर्शन छोड़ें"
+  skip_content               : "सामग्री छोड़ें"
+  skip_footer                : "अंत-में लिखा छोड़ें"
   page                       : "पृष्ठ"
   pagination_previous        : "पिछला"
   pagination_next            : "अगला"
@@ -1520,7 +1520,7 @@ hi: &DEFAULT_HI
   less_than                  : "से कम"
   minute_read                : "मिनट में पढ़ सकते हैं"
   share_on_label             : "साझा करें"
-  meta_label                 :
+  meta_label                 : "स्व-संदर्भात्मक जानकारी"
   tags_label                 : "अंकितक:"
   categories_label           : "श्रेणियाँ:"
   date_label                 : "अपडेट किया गया:"
@@ -1546,7 +1546,7 @@ hi: &DEFAULT_HI
   comment_success_msg        : "आपके कमेंट के लिए धन्यवाद! इसे स्वीकृति मिलने के बाद साइट पर दिखाया जाएगा।"
   comment_error_msg          : "क्षमा करें, आपके सबमिशन के साथ एक त्रुटि हुई थी। कृपया सुनिश्चित करें कि सभी आवश्यक फ़ील्ड पूरा हो गए हैं और पुनः प्रयास करें।"
   loading_label              : "लोड हो रहा है..."
-  search_label_text          :
+  search_label_text          : "खोज"
   search_placeholder_text    : "अपना खोज शब्द दर्ज करें..."
   results_found              : "परिणाम मिला/मिले"
   back_to_top                : "शीर्ष पर वापस"
