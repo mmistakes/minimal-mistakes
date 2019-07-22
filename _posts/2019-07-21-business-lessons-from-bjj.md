@@ -1,5 +1,5 @@
 ---
-title: Business Jiu-Jitsu: cross-disciplinary learning
+title: Business Jiu-Jitsu - cross-disciplinary learning
 category: "Team health"
 tag: ["Feedback"]
 toc: true
