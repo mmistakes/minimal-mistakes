@@ -14,6 +14,12 @@
       {% capture f_url %}{{ f.url | relative_url }}{% endcapture %}
     {% endif %}
 
+    {% if f.image_max_size %}
+      {% assign image_size = f.image_max_size %}
+    {% else %}
+      {% assign image_size = "100%" %}
+    {% endif %}
+
     <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
       <div class="archive__item">
         {% if f.image_path %}
@@ -24,7 +30,7 @@
               {% else %}
                 "{{ f.image_path | relative_url }}"
               {% endif %}
-            alt="{% if f.alt %}{{ f.alt }}{% endif %}">
+            alt="{% if f.alt %}{{ f.alt }}{% endif %}" style="max-width:{{image_size}};">
             {% if f.image_caption %}
               <span class="archive__item-caption">{{ f.image_caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
             {% endif %}
