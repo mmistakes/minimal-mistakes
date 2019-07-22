@@ -5,7 +5,7 @@ tag: ["Feedback"]
 toc: true
 ---
 
-
+DRAFT.
 
 I've been practicing Brazilian Jiu-Jitsu (BJJ) for 2 years at [Gracie Barra](https://graciebarra.com/) under Professor Sergio Costa. I’m still a beginner, but after some 500 hours of training, I’ve internalized lessons that took me more than 20,000 hours to learn and appreciate in Business. Perhaps the rate of learning competitive lessons is that much higher in BJJ than in Business because of the faster rate of visceral situation-conflict-resolution per hour (e.g., sparring). Or perhaps it’s also because those lessons were ready to be crystalized in my head! Probably a bit of both and a laundry list of other reasons. In anycase, in Business you might resolve competitive conflicts that move you emotionally once or twice a month. In BJJ, you can get your ego choked several times in an hour if you put your heart in it!
 
