@@ -1,3 +1,9 @@
+## Unreleased
+
+### Enhancements
+
+- Allow Markdown in author bio. [#2215](https://github.com/mmistakes/minimal-mistakes/pull/2215)
+
 ## [4.16.5](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.16.5)
 
 ### Enhancements
