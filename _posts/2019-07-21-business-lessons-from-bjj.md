@@ -1,5 +1,5 @@
 ---
-title: Business Jiu-Jitsu: 9 cross disciplinary lessons
+title: "Business Jiu-Jitsu: 9 cross disciplinary lessons"
 category: "Team health"
 tag: ["Feedback"]
 toc: true
