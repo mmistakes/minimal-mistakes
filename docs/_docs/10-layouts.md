@@ -7,7 +7,7 @@ single_layout_gallery:
     alt: "single layout with header example"
   - image_path: /assets/images/mm-layout-single-meta.png
     alt: "single layout with comments and related posts"
-last_modified_at: 2019-01-08T08:31:40-05:00
+last_modified_at: 2019-07-24T10:15:57-04:00
 toc: true
 toc_label: "Included Layouts"
 toc_icon: "columns"
@@ -547,7 +547,7 @@ To assign more author links, add to the `author.links` array  in [`_config.yml`]
 author:
   name: "Your Name"
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "I am an amazing person."
+  bio: "I am an **amazing** person." # Note: Markdown is allowed
   location: "Somewhere"
   links:
     - label: "Made Mistakes"

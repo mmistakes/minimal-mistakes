@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-last_modified_at: 2019-07-17T11:50:08-04:00
+last_modified_at: 2019-07-24T10:15:47-04:00
 toc: true
 ---
 
@@ -803,7 +803,7 @@ Author links are all optional, include the ones you want visible under the `auth
 author:
   name: "Your Name"
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "I am an amazing person."
+  bio: "I am an **amazing** person." # Note: Markdown is allowed
   location: "Somewhere"
   links:
     - label: "Made Mistakes"
