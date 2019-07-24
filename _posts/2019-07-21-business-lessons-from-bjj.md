@@ -1,5 +1,5 @@
 ---
-title: "Business Jiu-Jitsu: 9 cross disciplinary lessons"
+title: “Business Jiu-Jitsu: 9 cross disciplinary lessons”
 category: "Team health"
 tag: ["Feedback"]
 toc: true
@@ -96,12 +96,10 @@ Arguably, learning to learn is one of the most valuable things to learn. It’s 
 2. “Take the less travelled road”: whenever I spar, I mix up my approach and will frequently put myself in trouble and try techniques I’m not comfortable with. I believe that this creates a denser, more connected map of transitions in my mind.
 3. “Always a white-belt mindset”: the main opponent standing in the way of learning new things is my ego. Once I give up who I am and what I think I know, I start to naively focus on more details and the overall big picture emerges with more colors and shapes than ever before. 
 
-In business, I don't always have the luxury to explore and learn. Despite the best of intentions, when crunch times occur, it's time to exploit what I know and make the best out of it. I can only imagine how much more challenging it must be to be the CEO of a publicly traded 100B company, having to answer to customers, employees, investors, board members, analysts, regulators, and a lot more. That being said, in the rare moments when I do surface, I do not hesitate to put my 5 year old cap on and start anew. A formula that has worked for me is to meditate frequently to reset my mind to the most fundamental principles of math, physics, biology, environment, economy and ethics. Breaking down problems into first principles is a very powerful complement to asking for advice from wiser and more experienced people around me. As in machine learning, carefully crafted [ensemble algorithms](https://en.wikipedia.org/wiki/Ensemble_learning) tend to generalize better. In a sense, thinking from first principle is equivalent to creating “simple” engineering models with only a handful of parameters, while trusting experience/wisdom/pattern recognition is the equivalent to using Deep Reinforcement Learning neural nets.
+In business, I don't always have the luxury to explore and learn for the sake of learning. Despite the best of intentions, when crunch times occur, I have to exploit what I know and make the best out of it. I can only imagine how much more challenging it must be as the CEO of a publicly traded $100B company, having to answer to customers, employees, investors, board members, analysts, regulators, and a lot more. That being said, in the rare moments when I do surface, I eagerly put my five-year-old cap on and start anew. A formula that has worked for me is to meditate frequently to reset my mind to the most fundamental principles of math, physics, biology, environment, economy and ethics. If you’ve never meditated before, I recommend [Sam Harris’ Waking Up](https://wakingup.com/). Breaking down problems into first principles is a very powerful complement to asking for advice from wiser and more experienced people around me. As in machine learning, carefully crafted [ensemble algorithms](https://en.wikipedia.org/wiki/Ensemble_learning) tend to generalize better. In a sense, thinking from first principle is equivalent to creating “simple” engineering models with only a handful of parameters, while trusting experience/wisdom/pattern recognition is the equivalent to using Deep Reinforcement Learning neural nets.
 
-Perhaps I need a [Digital Twin](https://blog.dannycastonguay.com/digital%20twin/deploy-a-digital-twin-in-6months-for-1MUSD/) of myself to help me make the best decisions.
+In light of this, perhaps I need a [Digital Twin](https://blog.dannycastonguay.com/digital%20twin/deploy-a-digital-twin-in-6months-for-1MUSD/) of myself, directly connected to my brain via [Neuralink](https://www.neuralink.com/), to help me learn faster and make better decisions!
 
 ---
 
-I hope my interpretation of how what I learned so far in BJJ applies to business might be useful to you. Whether you are a white belt or a black belt in either disciplines, I’d love to hear your perspectives and learn from you.
-
-
+I hope that my adaptation of my BJJ training into business skills will be helpful to you. Whether you are a white belt or a black belt in either discipline, I’d love to hear your perspectives and learn from you. Please don’t be shy to message me.
