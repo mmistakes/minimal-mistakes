@@ -34,7 +34,7 @@ Here's how the overall framework structure is organized:
 4. **D**esign and user insights
 5. **U**nderstanding of implementation challenges   
 6. **C**ost estimates
-7. **T**ools and processes
+7. **T**eam, tools and processes
 
 ## Framework explained
 
@@ -62,8 +62,8 @@ The **Understanding of implementation challenges** is a necessary section only i
 
 The **Costs estimates** are one of the most critical section to get to a "yes", despite its placement (second to last) in the framework. Note that it's better to be upfront and transparent about costs, because it enables the sponsor/investors to do sanity checks on your ability to deliver. If your costs are too low, chances are you are under-estimating the work involved. If your costs are too high, chances are that you are trying to build too much too quickly, or you are just paying people too much. 
 
-### Tools and processes
+### Team, tools and processes
 
-Finally, **Tools and processes** are a bit more mundane, but you can't really do without them, so you might as well get everyone aligned on a common language up front. What issue tracker will you use? Where will the team be located? What are expectations in terms of hours? What's the process for Cybersecurity? How will defects be reported? This section is especially important in heavily regulated industries (e.g., financial services). 
+In a sense **Team** is the single most important determinant of success, but at this point the sponsor should trust that you have done your homework to ensure you have the right people in place. Finally, **tools and processes** are a bit more mundane, but you can't really do without them, so you might as well get everyone aligned on a common language up front. What issue tracker will you use? Where will the team be located? What are expectations in terms of hours? What's the process for Cybersecurity? How will defects be reported? This section is especially important in heavily regulated industries (e.g., financial services). 
 
 If you have read this far, thank you! A framework alone isn't very useful so in **[Part II](https://blog.dannycastonguay.com/product%20management/make-a-great-product-out-of-your-product-proposal2/)** I'm giving you sanitized examples from prior proposals I've written. 

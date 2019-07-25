@@ -155,27 +155,36 @@ This is my preferred contract, but I have yet to meet a procurement team of a la
 
 *You will be billed actual cost within reasonable deviations. These costs could be reduced, for instance, by leveraging your existing corporate housing, if available.*
 
-## 7. Tools and process
+## 7. Team, tools and process
 
-### 7.1 QA and testing
+### 7.1 Team
+
+Team member profiles should be short and to the point. Ideally you should include information such as:
+
+1. Name
+2. Role/function (and seniority level)
+3. Short bio and/or link to LinkedIn profile
+3. (Optional) Daily rate
+
+### 7.2 QA and testing
 
 *Quality assurance, automation and testing are crucial to the process of implementing software with a high degree of quality and reliability. This process validates and ensures functioning of software by going through phases such as smoke tests (validating main functionality), comprehensive tests (manual detailed testing and verification for low volume edge cases and mission critical components), and regression tests (validating that older parts of the software still work when the new part is introduced). Finally QA defines the processes and tooling for testing and deployment automation to ensure an auditable release process.*	
 
-### 7.2 Cyber security
+### 7.3 Cyber security
 
 *This is to be completed based on `<company>` Cyber Security requirements/processes (sanitized, best in class examples from other clients are available).* 
 
 *Best practice is to leverage the help of an expert consultant who is separate from `<the development team>` and provides an audit of the system independent of the implementation.*
 
-### 7.3 Productivity tools
+### 7.4 Productivity tools
 
 *We are open to adopting `<company>` preferred/existing set of collaboration tools `<(e.g., Microsoft Team, GitHub)>`. We recommend `<e.g., BitBucket, JIRA, and Confluence>` for engaging with product and technical teams and `<e.g., Slack>` is recommended for team communication.*
 
-### 7.4 Processes
+### 7.5 Processes
 
 *As a general engagement model and base process, an agile approach is taken as the basis. However more traditional models such as waterfall have their benefits and thus the final shape of the process is a hybrid, where quality planning is done on a milestone level usually on a monthly or quarterly basis depending on the scope and length of the project. Meanwhile the biweekly sprints allow for agility and flexibility to shape priorities during the development.*
 
-### 7.5 Metrics
+### 7.6 Metrics
 
 To survive and thrive in the age of software, I recommend measuring important metrics to measure the state of your delivery engine. Please do not fall into the Agile trap. It's a lot easier to look Agile than to be Agile. And even Nokia, the poster child of Agile in the late 2000s with a market cap of above $90B at the time, failed miserably. Writing large software is one of the most difficult (and humbling) exercise there is. I highly recommend that you read the following two books on the topic of software delivery:
 
