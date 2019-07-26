@@ -7,6 +7,7 @@ date:   2019-07-23 00:00:00 +0900
 categories: [ "pandas", "cov", "corr"]
 use_math: true
 excerpt_separator: <!--more-->
+toc: true
 ---
 
 안녕하세요 **코마**입니다. 오늘은 공분산(Covariance)과 상관계수(Correlation)의 개념을 알아보도록 하겠습니다. 😺

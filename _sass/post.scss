@@ -59,29 +59,40 @@ p.cm-cover-subtitle {
   font-size: $cm-post-title-font-size;
 }
 
-.cm-sidebar {
+.cm-left-sidebar {
   display: none;
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1762px) {
   // Code-machina 편집 
   // Floating Table Of Content (ToC)
-  .cm-sidebar {
+  .cm-googlead {
     display: inline-block;
-    float: right;
-    position: fixed;
-    right: 0;
-    background-color: white;
-    // width: 252px;
-    // padding: 24px;
-    // margin-right: 50px;
+    margin-top: 10px;
+  }
+
+  .cm-toc {
+    background-color: #eee;
     border: 1px solid;
     padding: 4px 20px;
     font-size: 13px;
     font-weight: 500;
-    color: #767676;
-    
   }
+
+  .cm-left-sidebar {
+    display: inline-block;
+    // float: right;
+    float: none;
+    position: fixed;
+    right: 60px;
+
+    width: 352px;
+    // padding: 24px;
+    // margin-right: 50px;
+
+    color: #767676;
+  }
+
   div.cm-sidebar > ul {
 
   };
