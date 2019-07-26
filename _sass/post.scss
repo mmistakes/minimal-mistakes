@@ -81,12 +81,26 @@ p.cm-cover-subtitle {
     font-weight: 500;
   }
 
-  .cm-left-sidebar {
+  .cm-right-sidebar {
     display: inline-block;
     // float: right;
     float: none;
     position: fixed;
     right: 60px;
+
+    width: 352px;
+    // padding: 24px;
+    // margin-right: 50px;
+
+    color: #767676;
+  }
+
+  .cm-left-sidebar {
+    display: inline-block;
+    // float: right;
+    float: none;
+    position: fixed;
+    left: 60px;
 
     width: 352px;
     // padding: 24px;
