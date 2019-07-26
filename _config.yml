@@ -32,6 +32,8 @@ plugins:
 header_pages:
   - about.md
   - portfolio.md
+  # - interest.md
+  - categories.md
 show_excerpts: true
 google_analytics: UA-134340962-1
 permalink: /:year/:month/:day/:title:output_ext
