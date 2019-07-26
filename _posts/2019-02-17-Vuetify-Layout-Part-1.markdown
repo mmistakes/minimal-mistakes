@@ -18,6 +18,18 @@ Vuetify 는 Google 의 Material UI 프로젝트를 Vue 에 맞게끔 포팅한 �
 
 그렇다면 모든 UI 프로젝트가 그렇듯 컴포넌트를 이쁘게 잘 배치하고 사용자가 편하게 이를 사용할 수 있도록 하는 것이 중요합니다. 저 **코마**는 여러분들에게 Layout 의 기본 개념을 설명드리고 실제로 컴포넌트의 레이아웃을 잡는 방법을 알려드리도록 하겠습니다.
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 수평형 광고 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7572151683104561"
+     data-ad-slot="5543667305"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 # Gird 시스템 이란
 
 Veutify 는 12 구획으로 나누어진 그리드 시스템을 지원합니다. 그리드는 어플리케이션의 컨턴츠를 배열하는데 도움을 줍니다. 물론, 직접 CSS 를 조작하여 배치를 조정해도 됩니다만, 생산성 측면에서 이러한 시스템을 따르는 것이 유리합니다. 그리드 시스템은 5 가지 유형의 매체 타입에 맞추어져 있습니다. (향후에 추가되거나 늘어날지도 모르겠습니다.)

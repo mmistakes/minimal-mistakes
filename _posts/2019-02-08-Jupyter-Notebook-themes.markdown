@@ -25,6 +25,18 @@ excerpt_separator: <!--more-->
 pip install jupyterthemes
 ```
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 수평형 광고 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7572151683104561"
+     data-ad-slot="5543667305"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## 적용 가능한 테마 
 
 Jupyter Themes 모듈은 아래의 테마를 지원합니다. 그리고 아래와 같이 명령어를 입력할 경우 간편하게 테마를 변경할 수 있습니다. 물론 폰트도 변경할 수 있으니 조금 더 읽어주세요.

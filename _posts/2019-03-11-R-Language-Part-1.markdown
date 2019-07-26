@@ -23,6 +23,18 @@ excerpt_separator: <!--more-->
 - 수학 식보다는 분석 기법 중심
 - 실무적인 데이터 분석 과정
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 수평형 광고 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7572151683104561"
+     data-ad-slot="5543667305"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 # 통계학이란
 
 통계학이란 다음과 같이 생각할 수 있습니다.

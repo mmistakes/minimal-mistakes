@@ -34,6 +34,18 @@ Java Spring Frmawork 개발 환경은 아래의 세가지를 설치하면 됩니
   - jpa
 - 프로젝트 생성
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 수평형 광고 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7572151683104561"
+     data-ad-slot="5543667305"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 # Mysql 데이터베이스 생성
 
 아래의 sql 구문을 작성하고 데이터 베이스를 생성합니다. (For Mysql)

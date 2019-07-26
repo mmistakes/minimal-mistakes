@@ -16,6 +16,18 @@ excerpt_separator: <!--more-->
 
 R 은 통계 패키지로써 무료이자 가장 빠르게 진화하는 오픈 소스 프로젝트이다. R 을 통해서 통계적 분석이 용이하며 약간의 진입 장벽을 극복하면 데이터로부터 유의미한 결론을 낼 수 있는 능력을 키울 수 있다.
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 수평형 광고 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7572151683104561"
+     data-ad-slot="5543667305"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 # R 데이터 구조
 
 R 에서 자주 사용되는 데이터 구조는 벡터, 행렬, 데이터 프레임이 있다.

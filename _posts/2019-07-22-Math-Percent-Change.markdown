@@ -19,6 +19,18 @@ excerpt_separator: <!--more-->
 예를 들어 예전에 5권의 책을 들고 있고, 이제는 7권을 가지고 있을때, 변화량은 2 (7-5) 권이다.
 여기서 변화율을 구하면 2/5 = .4 이고 40%이다.
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 수평형 광고 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7572151683104561"
+     data-ad-slot="5543667305"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## Pandas의 pct_change (퍼센트 변화율)
 
 Pandas 또한 pct_change 메서드를 제공해주며 아래와 같이 예제로 표현할 수 있다.

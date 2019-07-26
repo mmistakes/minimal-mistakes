@@ -24,6 +24,18 @@ Pandas 데이터 프레임의 마지막을 향해 달려가고 있습니다. 여
 - 칼럼 이름 재할당
 - 칼럼 한글화 패치
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 수평형 광고 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7572151683104561"
+     data-ad-slot="5543667305"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## 지정된 칼럼 출력
 
 매번 head 를 통해서 데이터를 일일이 파악하다보면 세부적인 컨트롤이 필요할 때가 있습니다. 모든 프로그램 언어가 그렇듯이 세부적인 컨트롤이 관건입니다. Pandas 를 이를 위한 간단한 해법을 제시하고 있습니다. 바로 square brackets([]) 가 그것입니다. 파이썬 언어에 관심이 있으신 분들은 브레킷의 문법적 의미를 이해하실 것이라고 믿습니다. Pandas 철학을 복제하는 글은 나중에 다루어보도록 할게요.

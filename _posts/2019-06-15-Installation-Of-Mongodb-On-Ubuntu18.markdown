@@ -16,6 +16,18 @@ excerpt_separator: <!--more-->
 
 간략히 설치 방법을 설명하고 주의사항을 따라 정리하여 구독자의 설치상의 오류를 최소한으로 하도록 돕습니다.
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 수평형 광고 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7572151683104561"
+     data-ad-slot="5543667305"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## 주의 사항
 
 ### WSL (Windows Subsystem for Linux) 미지원

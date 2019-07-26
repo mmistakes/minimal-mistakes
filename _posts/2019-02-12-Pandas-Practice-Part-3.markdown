@@ -18,6 +18,18 @@ Pandas 라이브러리는 DataFrame 객체를 제공합니다. DataFrame 객체�
 
 .read_csv 메서드를 이용해 데이터를 임포트할 경우 DataFrame 객체가 반환됩니다. 이전 토픽에서는 Series 객체를 사용하도록 옵션을 전달하거나 데이터를 쪼개어 사용하였습니다. 지금부터는 곧바로 반환된 객체를 효율화 하고 다루는 방법을 알아보도록 하겠습니다.
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 수평형 광고 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7572151683104561"
+     data-ad-slot="5543667305"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## DataFrame 기본 메서드, 어트리뷰트 정리
 
 DataFrame 클래스에서 제공하는 메서드 목록을 아래와 같이 정리하였습니다. 

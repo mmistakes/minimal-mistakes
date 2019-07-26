@@ -16,6 +16,18 @@ excerpt_separator: <!--more-->
 
 Golang 개발을 시작하기 위해서는 Golang 실행 파일을 다운받아야 합니다. Google 에서 "Golang" 을 검색하면 간단히 다운로드가 가능합니다.
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 수평형 광고 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7572151683104561"
+     data-ad-slot="5543667305"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## 설치 : Visual Studio Code _ Go Extension
 
 저는 개발 툴로 Visual Studio Code 를 사용합니다. Go 관련하여 여러 IDE 가 있지만 무료 중에서 가장 좋은 툴이라고 생각합니다. 

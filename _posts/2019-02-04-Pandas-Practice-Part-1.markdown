@@ -17,6 +17,18 @@ Pandas 는 데이터 분석 라이브러리 입니다. BSD 라이선스를 기�
 
 물론 Pandas 는 여러 도구 중에 하나입니다. 도구 보다는 데이터 분석이라는 기본기에 충실할 것을 당부드립니다. 하나의 도구에 충실하다보면 데이터 분석의 프로세스와 활용을 더 잘 이해 할 수 있으므로 커뮤니티가 활성화된 도구를 추천드립니다.
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 수평형 광고 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7572151683104561"
+     data-ad-slot="5543667305"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## Series 객체
 
 금번 파트에서는 Series 객체를 다루어 보도록 하겠습니다. Pandas 공식 문서에서 Series 객체를 살펴보면 다음과 같습니다.

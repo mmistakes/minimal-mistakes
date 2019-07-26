@@ -19,6 +19,18 @@ AD 인증을 사용하다 보면 비밀번호 패스워드 주기를 설정하�
 
 계정 잠김 현상을 완전히 차단할 수 없습니다. 잠겼다는 것 자체가 보안 수준을 유지하고 지키려는 행위입니다. 그렇다면 계정이 잠겼을 때 빠르게 인지하고 잠김을 풀어주는 것이 불편을 줄이는 일일 것입니다.
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 수평형 광고 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7572151683104561"
+     data-ad-slot="5543667305"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## 윈도우 원격 서버 관리 도구 (RSAT)
 
 윈도우 서버 관리자를 위해 마이크로소프트는 RSAT 라는 패키지를 별도로 제공합니다. 사용자는 설치파일을 다운로드 하여 이를 관리 PC 에 설치합니다. 여러분들을 위해 저 코마는 설치 파일의 경로를 정리하였으므로 필요하실 떄 클릭하면됩니다.

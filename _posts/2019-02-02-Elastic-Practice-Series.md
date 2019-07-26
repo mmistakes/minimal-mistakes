@@ -21,6 +21,18 @@ excerpt_separator: <!--more-->
 
 그리고 중요한 점은 검색과 기다림 사이에 유휴 시간이 생긴다는 점이죠. 이는 작업의 연속성 유지에 큰 영향을 주게됩니다. 즉, 작업 의욕이 떨어지는 것이겠죠? 엘라스틱 서치는 이러한 점을 크게 개선해 줍니다. 여기에 자동으로 데이터를 넘겨주는 프로그램을 같이 제공해주니 신경 쓸 내용이 거의 없어집니다.
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 수평형 광고 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7572151683104561"
+     data-ad-slot="5543667305"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## 기본 개념
 
 자 그렇다면 서두는 이만하고 엘라스틱 서치의 기본 개념을 이해해 보겠습니다. 엘라스틱 서치는 크게 6 개의 기본 개념으로 나누어 이해할 수 있습니다. 분산 클러스터이다 보니 이해해야할 양이 조금 많습니다. 저 **코마**는 여러분에게 필수적인 핵심 내용만 간추려서 전해드리겠습니다.

@@ -25,6 +25,18 @@ excerpt_separator: <!--more-->
 
 그렇다면 어떻게 표현할까요? 바로 **MathJax** 입니다. [공식 홈페이지 - 매스 잭스](https://www.mathjax.org/) 또한, 현재 Jekyll 의 공식 makrdown 전처리기(preprocessor)인 kramdown 에 대한 내용을 확인해야 합니다. [Kramdown - Math Block](https://kramdown.gettalong.org/syntax.html#math-blocks) 본래는 위의 글을 모두 읽어야 되겠지만 저 **코마**는 여러분이 곧바로 수학 공식을 사용할 수 있도록 포스트에 정리하였습니다.
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 수평형 광고 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7572151683104561"
+     data-ad-slot="5543667305"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## Jekyll 설정
 
 Jekyll 은 _includes 라는 폴더를 예약된 이름으로 사용하고 있습니다. 이는 Liquid 문법을 통해서 HTML 코드에 동적으로 삽입할 수 있습니다. 바로 아래와 같이 말이죠.

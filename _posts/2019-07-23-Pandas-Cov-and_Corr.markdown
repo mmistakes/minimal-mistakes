@@ -21,6 +21,18 @@ toc: true
 - 2개의 변수 중 하나의 값이 상승하는 경향을 보일 때, 다른 값도 상승하는 경향의 상관관계라면 **공분산의 값은 양수**가 될 것이다.
 - 반대로 하나의 값이 상승하는 경향을 보일때 다른 값이 하강하는 경향의 상관관계라면 **공분산의 값은 음수**가 될 것이다.
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 수평형 광고 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7572151683104561"
+     data-ad-slot="5543667305"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## 공분산의 단점
 
 공분산은 상관관계의 상승 혹은 하강하는 경향을 이해하기에 적절하나 변수의 측정 단위의 크기에 따라 값이 달라지므로 상관관계의 정도를 나타내는 단위로 모상관계수 p를 사용한다.

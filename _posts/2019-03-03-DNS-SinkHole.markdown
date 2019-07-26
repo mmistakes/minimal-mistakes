@@ -16,6 +16,18 @@ excerpt_separator: <!--more-->
 
 해커에 의해서 악성 봇 혹은 백도어가 침투하였다고 가정해봅시다. 내부 망에 침투한 프로그램은 사용자 몰래 더 깊숙히 내부에 침투하거나 정보를 수집하여 외부로 빼돌립니다. 그렇다면 어떻게 해야 이를 효과적으로 막을 수 있을까요?
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 수평형 광고 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7572151683104561"
+     data-ad-slot="5543667305"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 # DNS 싱크홀
 
 DNS 싱크홀이라는 방법을 통해서 C2 서버의 통신을 차단할 수 있습니다. 이 방법은 내부 DNS 서버를 이용하는 방법인데요. 

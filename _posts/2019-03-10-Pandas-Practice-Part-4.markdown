@@ -21,6 +21,18 @@ Pandas 라이브러리는 DataFrame 객체를 제공합니다. DataFrame 객체�
 - 인덱스를 지정/재지정
 - 원하는 행 데이터를 출력
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 수평형 광고 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7572151683104561"
+     data-ad-slot="5543667305"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## 인덱스 지정/재지정
 
 우리는 지금까지 데이터 프레임을 다루어 오면서 데이터를 정렬하고 타입을 변환하는 등의 과정을 따라해 보았습니다. 그렇다면 이미 지정된 인덱스를 변경하는 방법을 알아보겠습니다.

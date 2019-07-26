@@ -18,6 +18,18 @@ Filebeat is a log shippper maintained by elastic group. You can download it free
 
 Because it will let you give yourself a ability to make a own your *beat. Now let's get to the point.
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 수평형 광고 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7572151683104561"
+     data-ad-slot="5543667305"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## Goal
 
 - Build Filebeat.

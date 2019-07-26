@@ -19,6 +19,18 @@ excerpt_separator: <!--more-->
 > **코마** 는 **Anaconda** 를 즐겨 사용합니다. 그러나 반드시 이 툴을 사용해야 하는 것은 아닙니다. 하지만 설치의 부담없이 간편하게 사용할 수 있으므로 추천합니다. 그리고 **jupyter notebook** 을 사용하면 아주 편리하게 작업할 수 있습니다.
 >> 이 과정에 사용되는 모든 파일은 github 링크를 참조하면 좀더 편리합니다. 이때 포맷은 주피터 노트북이므로 약간의 설치 과정을 수반합니다. 아나콘다 설치 및 주피터 사용 방법은 다른 블로그에서 많이 다루고 있으니 5분만 할애해 주세요 ^^;
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 수평형 광고 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7572151683104561"
+     data-ad-slot="5543667305"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## 자주 사용되는 메서드
 
 시작하기에 앞서 Series 객체를 다룰 때 자주 사용되는 메서드들을 아래와 같이 정리하였습니다.
