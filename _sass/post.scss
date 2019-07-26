@@ -63,6 +63,12 @@ p.cm-cover-subtitle {
   display: none;
 }
 
+// Wide View 에서만 보이도록 설정
+// Home.html 의 광고 노출 부분 작업
+.cm-wide-view {
+  display: none;  
+}
+
 @media (min-width: 1762px) {
   // Code-machina 편집 
   // Floating Table Of Content (ToC)
