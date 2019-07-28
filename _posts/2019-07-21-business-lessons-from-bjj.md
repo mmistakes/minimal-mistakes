@@ -7,6 +7,12 @@ toc: true
 
 I've been practicing Brazilian Jiu-Jitsu (BJJ) for 2 years at [Gracie Barra](https://graciebarra.com/) under Prof. Sergio Costa, Master Pascoal Duarte, and Prof. Fabiano Carvalho. I’m still a beginner, but after some 500 hours of training, I’ve internalized lessons that took me more than 20,000 hours to learn and appreciate in business. Perhaps the rate of learning competitive lessons is that much higher in BJJ than in business because of the faster rate of visceral situation-conflict-resolution per hour (e.g., sparring). Or perhaps it’s also because those lessons were ready to be crystalized in my head! It’s probably a bit of both and a laundry list of other reasons. In anycase, in business you might resolve competitive conflicts that move you emotionally once or twice a month. In BJJ, you can get your ego choked several times in an hour if you put your heart in it.
 
+<span><audio id="myAudio" controls>
+    <source src="/assets/audio/business-jiu-jitsu.ogg" type="audio/ogg">
+    <source src="/assets/audio/business-jiu-jitsu.mp3" type="audio/mpeg">
+  </audio>
+  <button class="btn btn--small" id="video-player-playback-rate-control" style="border-color=none !important;border-collapse: separate !important;">Speed: <span id="current-rate">1</span>x</button></span>
+
 I will now try to synthesize what those lessons were for me. It is perhaps not so striking that BJJ and business have a lot in common, since both can be seen as zero-sum-games of strategy, power and control, with rules that forbid overt attacks.
 
 # 1. Structure
