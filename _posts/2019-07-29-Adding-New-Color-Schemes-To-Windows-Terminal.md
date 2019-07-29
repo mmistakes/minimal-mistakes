@@ -6,12 +6,6 @@ tags:
 - Windows Terminal
 classes: wide
 toc: true
-
-image: /assets/graycomputernotepad.jpg
-thumbnail: /assets/graycomputernotepad.jpg
-header:
-  teaser: /assets/graycomputernotepad.jpg
-
 ---
 
 ## Windows Terminal
