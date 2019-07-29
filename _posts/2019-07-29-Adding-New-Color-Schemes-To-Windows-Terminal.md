@@ -5,6 +5,7 @@ tags:
 - PowerShell
 - Windows Terminal
 classes: wide
+toc: true
 
 image: /assets/graycomputernotepad.jpg
 thumbnail: /assets/graycomputernotepad.jpg
@@ -13,7 +14,7 @@ header:
 
 ---
 
-# Windows Terminal
+## Windows Terminal
 
 I've been having a lot of fun with the new [Windows Terminal](https://github.com/microsoft/terminal). One issue that I found is that I couldn't find an appropriate color scheme to go with my background. I tried using the [ColorTool](https://github.com/Microsoft/Terminal/tree/master/src/tools/ColorTool), but that wasn't working for me.
 
@@ -36,6 +37,7 @@ $profile | Get-Member -MemberType NoteProperty
 ```
 
 ### Updating profiles.json from PowerShell
+
 `$profile` now contains an object representing the `profiles.json` file. As an example, we can change the theme of Windows Terminal by changing the `requestedTheme` property inside of `globals`.
 
 ```powershell
