@@ -1,6 +1,6 @@
 ---
 title: Adding New Color Schemes to Windows Terminal
-excerpt: "Utilize the iTerm2 Color Schemes in Windows Terminal."
+excerpt: "Use PowerShell to download 200+ color schemes and add them to Windows Terminal."
 tags:
 - PowerShell
 - Windows Terminal
@@ -55,20 +55,20 @@ $profile |
 
 The Windows Terminal default theme is now dark, which should be much better.
 
-### Color Schemes
+## Color Schemes
 
 In the `profile.json` file there is a section dedicated to schemes. A color scheme determines the color of the text that is displayed in the Terminal.
 
-#### View Your Color Schemes
+### View Your Color Schemes
 
 By default there are only 6 schemes that come with Windows Terminal. You can select between, Ubuntu, UbuntuLegit, Campbell, Solarized Dark, Solarized Light.
 
-```powershelll
+```powershell
 # View your currently configured color schemes
 $profile.schemes.name
 ```
 
-#### Update your Color Scheme
+### Update your Color Scheme
 
 Color schemes are applied to each of your profiles. We are going to update the color scheme for the profile that launches powershell.
 
@@ -90,24 +90,24 @@ $profile |
  Set-Content -Path $profilePath
 ```
 
-#### Get New Color Schemes
+### Get New Color Schemes
 
 I'm not happy that it only ships with 5 schemes. Fortunately, there is a project on GitHub that has exactly what we want. If we look at the [iTerm2-Color-Schemes Repository](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/windowsterminal) we can get a listing of color schemes that are meant to be added to the Windows Terminal.
 
 We are able to add the contents of any of the `JSON` files to the schemes section of our `profile.json` file and then you can refer to the new theme in the colorScheme property of a profile.
 
-That sounds like too much work for me. I'm pretty greedy and enjoy anything that is free so I'd like to script out this so I can just use PowerShell to do the hard work for me. Who wants to spend their time updating `JSON` files. Yuck!
+That sounds like too much work for me. I'm pretty greedy and enjoy anything that is free so I'd like to script this so I can just use PowerShell to do the hard work for me. Who wants to spend their time updating `JSON` files. Yuck!
 
-#### Get-WtTheme
+#### Get-WtScheme
 
 This function will return all of the themes from the repository. This will make it easy to update the `profile.json` with all of the themes.
 
 ```powershell
-Function Get-WtTheme {
+Function Get-WtScheme {
     <#
     .Description
-    Returns themes from
-    https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/windowsterminal/3024%20Day.json
+    Returns color schemes from
+    https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/windowsterminal
     .Parameter Url
     Url to the iTerm2 project.
     .Parameter Theme
@@ -119,7 +119,7 @@ Function Get-WtTheme {
     PS> Get-WtTheme -Filter 'atom.json'
     Retrieves the atom.json theme.
     .Link
-    https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/windowsterminal/3024%20Day.json
+    https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/windowsterminal/
     .Link link to blogpost
     #>
     [cmdletbinding()]
@@ -127,7 +127,7 @@ Function Get-WtTheme {
         [string]
         $Theme = '*',
 
-[string]
+        [string]
         $Url = 'https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/windowsterminal'
     )
 
@@ -151,9 +151,7 @@ Function Get-WtTheme {
 
 ```
 
-Now we can combine all the code snippets above and we will have a nice little script to add all of the schemes to the profile. For bonus points, we will also throw in a `Set-WtScheme` that will update the scheme for a given profile. It will determine the available parameters by looking at your current `profile.json`
-
-### Completed Gist
+## Completed Gist
 
 The gist is the final product. Just copy and paste into your terminal and run it. I opted to avoid writing this as a script or a module because I want it to be copy/pastable from the blog post. I hope that this saves you some time.
 
