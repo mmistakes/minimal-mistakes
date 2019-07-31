@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "(인터뷰 준비하기) HTTP 헤더의 이해 Part 1"
+title:  "HTTP 헤더의 이해 Part 1"
 subtitle: "HttpOnly 와 Secure 쿠키의 의미"
 author: "코마 (gbkim1988@gmail.com)"
 date:   2019-07-30 00:00:00 +0900
