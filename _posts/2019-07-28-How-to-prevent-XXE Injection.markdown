@@ -16,9 +16,13 @@ excerpt_separator: <!--more-->
 
 XML 입력(input)을 파싱하는 어플리케이션에 대한 공격입니다. 이는 CWE-661 에서 언급되는 이슈이기도 합니다. 이 위협은 unstrusted XML에 대한 입력이 잘못 구성된 XML 파서에 의해서 처리되면서 외부 객체에 대한 참조를 포함하는 경우를 의미합니다.
 
+{% include advertisements.html %}
+
 ## 위험 평가
 
 XXE 인젝션 위협은 기밀 데이터의 노출, DoS, SSRF(Server Side Request Forgery), 포트 스캐닝 등의 위험 발생 가능성이 있습니다. 즉, 취약한 Parser 가 위치한 머신(machine)의 관점에 따라서 영향도가 다릅니다.
+
+{% include advertisements.html %}
 
 ## 조치 방안
 
@@ -29,6 +33,8 @@ XXE 를 예방하기 위한 방법은 DTDs (External Entities) 를 비활성화 
 1. XmlDocument (~ 4.5.1)
 2. XmlTextReader (~ 4.5.1)
 3. XPathNavigator ( ~ 4.5.1)
+
+{% include advertisements.html %}
 
 ## .NET XML 파서
 
@@ -50,6 +56,8 @@ XXE 를 예방하기 위한 방법은 DTDs (External Entities) 를 비활성화 
 | ...prior to 4.5.2     | No               |
 | ...in versions 4.5.2+ | Yes              |
 | XslCompiledTransform  | Yes              |
+
+{% include advertisements.html %}
 
 ### XmlDocument 안전하게 사용하기
 

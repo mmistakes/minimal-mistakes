@@ -24,9 +24,13 @@ Minima 는 Jekyll 의 theme 중 하나입니다. 매우 심플한 디자인을 �
 
 - [깃헙 : Minima ](https://github.com/jekyll/minima)
 
+{% include advertisements.html %}
+
 ## Minima Default Landing Page
 
 Minima 를 사용하시기로 결정하였다면, 매우 좋은 선택입니다. 조금씩 자신의 스타일에 맞는 블로그로 꾸며가는 과정이 상당히 재밌습니다. 그렇다면 어떤 디자인인지 한번 확인해 볼까요?
+
+{% include advertisements.html %}
 
 ![테마-1](/assets/img/2019/07/Minima_home.png)
 

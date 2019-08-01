@@ -20,6 +20,8 @@ HTTP 쿠키는 서버가 브라우저에게 전송하는 데이터입니다. 클
 
 따라서, 웹 서버는 Stateless 속성을 극복하기 위해서 쿠키를 사용하였습니다. 쿠키는 Mozilla 의 문서를 보면 아래의 역할들을 가지고 있습니다. 쿠키 정보를 보다보면 아래와 같은 내용을 확인할 수 있을 겁니다.
 
+{% include advertisements.html %}
+
 ```http
 Cookie: CartInfo=1234,1235,12346,...; OtherInfo=.....;
 ```
@@ -42,6 +44,8 @@ Cookie: CartInfo=1234,1235,12346,...; OtherInfo=.....;
 원문 찬스를 쓰겠습니다. (블로그가 글로벌해보입니다.)
 
 > When receiving an HTTP request, a server can send a Set-Cookie header with the response. The cookie is usually stored by the browser, and then the cookie is sent with requests made to the same server inside a Cookie HTTP header. An expiration date or duration can be specified, after which the cookie is no longer sent. Additionally, restrictions to a specific domain and path can be set, limiting where the cookie is sent. [Mozillla.org : HTTP Cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies)
+
+{% include advertisements.html %}
 
 ```http
 HTTP/2.0 200 OK
