@@ -2,6 +2,19 @@
 
 /* Post Custom CSS
 */
+
+// 19.08.01 : Post 내 code highlighter 의 배경 색을 변경
+// 영향받는 범위 (클래스) : .highlighter-rouge .highlight 
+// 영향받는 범위 (태그) : pre code 
+.highlighter-rouge .highlight {
+  background: #F2F2F2;
+}
+
+// 
+pre, code {
+  background-color: #F2F2F2;
+}
+
 h1.cm-cover-title {
   font-size: 30pt;
 }

@@ -126,7 +126,7 @@ ConstBitStream 은 대표적으로 아래의 메서드와 프로퍼티를 제공
 
 {% include advertisements.html %}
 
-#### read 메서드
+### ConstBitStream.read 메서드
 
 read 메서드는 아래의 Return Format 을 지정할 수 있습니다. 즉, 특정 길이만큼 데이터를 읽어온다면 이를 출력하는 타입을 지정할 수 있음을 의미합니다. 지원하는 포맷은 아래와 같습니다.
 
