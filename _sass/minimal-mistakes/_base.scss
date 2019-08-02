@@ -31,6 +31,7 @@ h6 {
   line-height: 1.2;
   font-family: $header-font-family;
   font-weight: bold;
+  color: #1161a6; //CHANGED
 }
 
 h1 {
@@ -168,6 +169,7 @@ td > code {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
   font-size: 0.8em;
+  color: $background-color; //CHANGED
   background: $code-background-color;
   border-radius: $border-radius;
 

@@ -1,3 +1,69 @@
 <!-- start custom footer snippets -->
+<style> <!-- Whole page CHANGED and shouldn't ever be cahnged by pull -->
+* {
+  box-sizing: border-box;
+}
+
+.columns-main{
+  width: 100%;
+  padding: 0;
+  height: auto;
+}
+.column-right {
+  float: right;
+  width: 20%;
+  padding: 10px;
+  height: auto;
+}
+.column-left {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: auto;
+}
+.column-center {
+  float: center;
+  width: 60%;
+  padding: 10px;
+  height: auto;
+}
+
+</style>
+<div class= "columns-main">
+  <div class="column-right">
+    <div class="page__footer-copyright" align = "right">
+      <p>
+        <strong>Aplura, LLC </strong><br />
+        205 E. Joppa Road <br />
+        Suite 109 <br />
+        Towson, MD 21286 <br />
+        (410) 505-8925 <br />
+        <a href="mailto:sales@aplura.com">
+          sales@aplura.com
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <div class="column-left">
+    <div class="page__footer-copyright" align = "left">
+      <p>
+        {%- for link in site.data.navigation.main -%}
+          {%- if link.url contains '://' -%}
+            {%- assign url = link.url -%}
+          {%- else -%}
+            {%- assign url = link.url | relative_url -%}
+          {%- endif -%}
+          <li class="masthead__menu-item">
+            <a href="{{ url }}" {% if link.description %}title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
+          </li>
+        {%- endfor -%}
+      </p>
+    </div>
+  </div>
+  <div style="clear:both;"></div>
+</div>
+
+
 
 <!-- end custom footer snippets -->

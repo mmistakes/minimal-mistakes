@@ -82,7 +82,12 @@
   overflow: hidden;
 
   img {
-    width: 100%;
+    display: block; //CHANGED
+    margin-top: auto; //CHANGED
+    margin-bottom: auto; //CHANGED
+    margin-left: auto; //CHANGED
+    margin-right: auto; //CHANGED
+    //width: 100%; //all images will take up 100% of the width they are given //CHANGED
   }
 }
 
@@ -290,6 +295,7 @@
     }
 
     .archive__item-teaser {
+      margin-top: auto; //CHANGED
       margin-bottom: 2em;
     }
 
@@ -436,3 +442,28 @@
     }
   }
 }
+/*
+   Tables - Matt Morton - 2019 - CHANGED
+   ========================================================================== */
+.table{ //CHANGED
+  width: 100%; //CHANGED
+  border: 1px solid #aaa; //CHANGED
+  margin-bottom: 2em; //CHANGED
+} //CHANGED
+.table_row { //CHANGED
+    &:nth-child(2n) { //CHANGED
+      background-color:#ddd; //CHANGED
+    } //CHANGED
+    &:nth-child(2n + 1) { //CHANGED
+      background-color:#eee; //CHANGED
+    } //CHANGED
+    position: relative; //CHANGED
+    clear: both; //CHANGED
+    width: 100%; //CHANGED
+} //CHANGED
+.table_box {//CHANGED
+     padding: 5px; //CHANGED
+     box-sizing: border-box; //CHANGED
+     width: var(--width); //CHANGED
+     float: left; //CHANGED
+   } //CHANGED

@@ -1,0 +1,36 @@
+<!--Made by Matt Morton 2019 --->
+<!-- CHANGED should never be an issue -->
+<!-- If This becomes an issue during push/pull hold the pull and get help from dev or do this in test envirmonent first -->
+{% if include.id %}
+  {% assign table = page[include.id] %}
+{% else %}
+  {% assign table = page.table %}
+{% endif %}
+
+<div class ="table">
+  {% for f in table %}
+    <div class="table_row">
+      {% for g in f.row %}
+        {% if g.excerpt %}
+          <div class="table_box" style="--width: {{g.size}};">
+            {% if g.date %}
+              <div class=".archive__item-subtext">
+                {{g.date | markdownify}}
+              </div>
+            {% endif %}
+            <div class="archive__item-excerpt" >
+              {{ g.excerpt | markdownify }}
+            </div>
+            {% if g.author %}
+              <div class=".archive__item-subtext">
+                {{g.author | markdownify}}
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+      <div style="clear:both;"></div>
+    </div>
+  {% endfor %}
+<div style="clear:both;"></div>
+</div>
