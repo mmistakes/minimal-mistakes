@@ -2,94 +2,102 @@
 main:
   #- title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "Splunk Security" #CHANGED
-    url: /Splunk/Security #CHANGED
-  - title: "Services" #CHANGED
-    url: /Services #CHANGED
-  - title: "Clients" #CHANGED
-    url: /Clients #CHANGED
-  - title: "About" #CHANGED
-    url: /About #CHANGED
-  - title: Resources #CHANGED
-    url: /Resources #CHANGED
-  - title: "Jobs" #CHANGED
-    url: /Jobs #CHANGED
+  - title: "Splunk Security"
+    url: /Splunk/Security
+  - title: "Services"
+    url: /Services
+  - title: "Clients"
+    url: /Clients
+  - title: "About"
+    url: /About
+  - title: Resources
+    url: /Resources
+  - title: "Jobs"
+    url: /Jobs
 
-Services: #CHANGED
-  - title: "Operations" #CHANGED
-    url: /Services/Operations #CHANGED
-  - title: "Consulting" #CHANGED
-    url: /Services/consulting #CHANGED
-  - title: "Development" #CHANGED
-    url: /Services/Development #CHANGED
-  - title: "Technologies" #CHANGED
-    url: /Services/Technologies #CHANGED
-About: #CHANGED
-  - title: "Why Aplura?" #CHANGED
-    url: /About/Why-Aplura #CHANGED
-  - title: "Our Expert Staff" #CHANGED
-    url: /About/Out-Expert-Staff #CHANGED
-  - title: "History and Mission" #CHANGED
-    url: /About #CHANGED
-Resources: #CHANGED
-  - title: "Splunk Apps" #CHANGED
-    url: /Resources/Splunk-Apps #CHANGED
-  - title: "Baltimore Splunk User Group" #CHANGED
-    url: /Resources/Baltimore-Splunk-User-Group #CHANGED
-  - title: "Splunk Best Pratices" #CHANGED
-    url: /Resources/Splunk-Best-Pratices #CHANGED
-  - title: "Cheat Sheets" #CHANGED
-    url: /Resources/Cheat-Sheets #CHANGED
-  - title: "Other Resources" #CHANGED
-    url: /Resources/Other #CHANGED
-Jobs: #CHANGED
-  - title: "Intigration Developer" #CHANGED
-    url: /Jobs/Intigration-Developer #CHANGED
-  - title: "Security Consultant: Splunk" #CHANGED
-    url: /Jobs/Security-Consultant-Splunk #CHANGED
-  - title: "Security Consultant: Gigamon and Palo Alto" #CHANGED
-    url: /Jobs/Security-Consultant-Gigamon-and-Palo-Alto #CHANGED
-  - title: "Benefits" #CHANGED
-    url: /Jobs/Benefits #CHANGED
-secondary: #CHANGED
-  - title: "Splunk Security" #CHANGED
-    url: /Splunk/Security #CHANGED
-  - title: "Services" #CHANGED
-    url: /Services #CHANGED
-    children: #CHANGED
-        - title: "Operations" #CHANGED
-          url: /Services/Operations #CHANGED
-        - title: "Consulting" #CHANGED
-          url: /Services/consulting #CHANGED
-        - title: "Development" #CHANGED
-          url: /Services/Development #CHANGED
-        - title: "Technologies" #CHANGED
-          url: /Services/Technologies #CHANGED
-  - title: "Clients" #CHANGED
-    url: /Clients #CHANGED
-  - title: "About" #CHANGED
-    url: /About #CHANGED
-    children: #CHANGED
-        - title: "Why Aplura?" #CHANGED
-          url: /About/Why-Aplura #CHANGED
-        - title: "Our Expert Staff" #CHANGED
-          url: /About/Out-Expert-Staff #CHANGED
-        - title: "History and Mission" #CHANGED
-          url: /About #CHANGED
-  - title: Resources #CHANGED
-    url: /Resources #CHANGED
-    children: #CHANGED
-        - title: "Splunk Apps" #CHANGED
-          url: /Resources/Splunk-Apps #CHANGED
-        - title: "Baltimore Splunk User Group" #CHANGED
-          url: /Resources/Baltimore-Splunk-User-Group #CHANGED
-        - title: "Splunk Best Pratices" #CHANGED
-          url: /Resources/Splunk-Best-Pratices #CHANGED
-        - title: "Cheat Sheets" #CHANGED
-          url: /Resources/Cheat-Sheets #CHANGED
-        - title: "Other Resources" #CHANGED
-          url: /Resources/Other #CHANGED
-  - title: "Jobs" #CHANGED
-    url: /Jobs  #CHANGED
-  - title: "Contact" #CHANGED
-    url: /Contact #CHANGED
+Services:
+  - title: "Operations"
+    url: /Services/Operations
+  - title: "Consulting"
+    url: /Services/consulting
+  - title: "Development"
+    url: /Services/Development
+  - title: "Technologies"
+    url: /Services/Technologies
+About:
+  - title: "Why Aplura?"
+    url: /About/Why-Aplura
+  - title: "Our Expert Staff"
+    url: /About/Out-Expert-Staff
+  - title: "History and Mission"
+    url: /About
+Resources:
+  - title: "Splunk Apps"
+    url: /Resources/Splunk-Apps
+  - title: "Baltimore Splunk User Group"
+    url: /Resources/Baltimore-Splunk-User-Group
+  - title: "Splunk Best Pratices"
+    url: /Resources/Splunk-Best-Pratices
+  - title: "Cheat Sheets"
+    url: /Resources/Cheat-Sheets
+  - title: "Other Resources"
+    url: /Resources/Other
+Jobs:
+  - title: "Intigration Developer"
+    url: /Jobs/Intigration-Developer
+  - title: "Security Consultant: Splunk"
+    url: /Jobs/Security-Consultant-Splunk
+  - title: "Security Consultant: Gigamon and Palo Alto"
+    url: /Jobs/Security-Consultant-Gigamon-and-Palo-Alto
+  - title: "Benefits"
+    url: /Jobs/Benefits
+secondary:
+  - title: "Splunk Security"
+    url: /Splunk/Security
+  - title: "Services"
+    url: /Services
+    children:
+        - title: "Operations"
+          url: /Services/Operations
+        - title: "Consulting"
+          url: /Services/consulting
+        - title: "Development"
+          url: /Services/Development
+        - title: "Technologies"
+          url: /Services/Technologies
+  - title: "Clients"
+    url: /Clients
+  - title: "About"
+    url: /About
+    children:
+        - title: "Why Aplura?"
+          url: /About/Why-Aplura
+        - title: "Our Expert Staff"
+          url: /About/Out-Expert-Staff
+        - title: "History and Mission"
+          url: /About
+  - title: Resources
+    url: /Resources
+    children:
+        - title: "Splunk Apps"
+          url: /Resources/Splunk-Apps
+        - title: "Baltimore Splunk User Group"
+          url: /Resources/Baltimore-Splunk-User-Group
+        - title: "Splunk Best Pratices"
+          url: /Resources/Splunk-Best-Pratices
+        - title: "Cheat Sheets"
+          url: /Resources/Cheat-Sheets
+        - title: "Other Resources"
+          url: /Resources/Other
+  - title: "Jobs"
+    url: /Jobs
+  - title: "Contact"
+    url: /Contact
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
