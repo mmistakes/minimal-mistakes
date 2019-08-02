@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2019-07-24T10:09:19-04:00
+last_modified_at: 2019-08-02T12:31:31-04:00
 toc: false
 ---
 
@@ -14,6 +14,10 @@ toc: false
 ### Enhancements
 
 - Allow Markdown in author bio. [#2215](https://github.com/mmistakes/minimal-mistakes/pull/2215)
+
+### Bug Fixes
+
+- Fix overlapping links (linked to and post's permalink) in post link type. [#2222](https://github.com/mmistakes/minimal-mistakes/issues/2222)
 
 ## [4.16.5](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.16.5)
 
