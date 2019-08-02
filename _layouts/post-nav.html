@@ -7,12 +7,17 @@
 
     {%- include header.html -%}
 
-    <main class="page-content" aria-label="Content">
+    <main class="page-content cm-blog-page" aria-label="Content">
       <!-- 좌측 사이드바 시작 -->
       <div class="cm-right-sidebar">
         <div class="cm-toc">
-          <p> toc ver. 0.2 BY 코마</p>
-          {%- include toc.html html=content -%}
+          <div class="cm-toc-title">Content Table</div>
+          <!-- TODO: Toc 커스터마이징 작업 필요 -->
+          <div class="cm-toc-items">
+            {%- include toc.html html=content -%}
+          </div>
+          
+          <p class="cm-toc-version"> cm-toc v.0.3 By 코마</p>
         </div>
         <!-- 구글 광고 -->
         <div class="cm-googlead">
@@ -21,7 +26,7 @@
       </div>
       <!-- 좌측 사이드바 끝 -->
 
-      <div class="wrapper">
+      <div class="wrapper cm-blog-content">
         {{ content }}
       </div>
     </main>

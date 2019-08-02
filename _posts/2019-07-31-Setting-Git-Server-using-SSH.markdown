@@ -104,7 +104,7 @@ $ git push origin master
 
 Sourcetree 를 이용해 클라이언트에 생성한 프로젝트 폴더에 접근합니다. 
 
-![테마-1](/assets/img/2019/07/Sourcetree_git_ssh.png)]
+![테마-1](/assets/img/2019/07/Sourcetree_git_ssh.png)
 
 # 마무리
 

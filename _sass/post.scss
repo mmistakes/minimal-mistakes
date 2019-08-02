@@ -8,7 +8,55 @@
 // 영향받는 범위 (태그) : pre code 
 .highlighter-rouge .highlight {
   background: #F2F2F2;
+  border-radius: 25px;
+  box-shadow: 1px 1px grey;
 }
+
+body, button, input, textarea {
+  font-family: "Source Sans Pro","Roboto","Open Sans",Arial,sans-serif;
+}
+
+code, pre {
+  font-family: "Source Code Pro","Inconsolata",monospace;
+  // 폰트 굵기 조정
+  font-weight: 600;
+  font-size: 17px;
+}
+
+// Nesting SASS, https://marksheet.io/sass-nesting.html
+.cm-blog-content {
+  table { 
+    border: 1px solid DarkOrange;
+    border-radius: 25px; 
+    border-spacing: 0;
+    }
+  table td, table th { 
+    border-bottom: 1px solid DarkOrange;
+    padding: 10px; 
+    }
+  table tr:last-child > td {
+    border-bottom: none;
+  }
+
+} 
+
+// 19.08.02 : 블로그 본문 배경색 변경
+.cm-blog-page {
+  background: #EAEAEA;
+}
+
+// 19.08.02 : 블로그 글 목록 페이지 배경색 변경
+.cm-home-content {
+  background: #FFFFFF;
+}
+
+// 19.08.02 : 블로그 본문 게시글 영역 배경색 변경
+.cm-blog-content {
+  background: #FFFFFF;
+  border: 1px grey;
+  border-radius: 5px;
+}
+
 
 // 
 pre, code {
@@ -94,13 +142,46 @@ p.cm-cover-subtitle {
     // width: 352px;
     width: 352px;
   }
+  .cm-toc-title {
+    border-radius: 10px 0px;
+    background: #00ffff;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 1000;
+    padding: 10px 10px;
+    text-align: center;
+    color: #ffffff;
+    background: #767676;
+  }
+
+  .cm-toc-items {
+    padding: 10px 0px 0px 0px;
+    font-size: 12px;
+    a {
+      color: #777;
+      font-weight: 900;
+    }
+  }
+
+  .cm-toc-version {
+    border-top: 1px solid;
+    border-top-color: grey;
+    font-style: italic;
+    text-align: right;
+    font-size: 12px;
+  }
 
   .cm-toc {
-    background-color: #eee;
-    border: 1px solid;
-    padding: 4px 20px;
+    background-color: #ffffff;
+    // border: 1px solid;
+    // padding: 4px 20px;
     font-size: 13px;
     font-weight: 500;
+    p {
+      padding: 4px 20px;
+    }
+    border-radius: 10px;
+    box-shadow: 1px 1px #767676;
   }
 
   .cm-right-sidebar {
@@ -135,7 +216,7 @@ p.cm-cover-subtitle {
 
   };
 
-  div.cm-sidebar > ul > li {
+  div.cm-right-sidebar > ul > li {
     position: relative;
     display: block;
     padding: 4px 20px;
