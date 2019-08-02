@@ -15,7 +15,7 @@
     @include clearfix;
     margin-left: auto;
     margin-right: auto;
-    padding: 2px; //CHANGED 
+    padding: 2px; //Changed
     max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -40,7 +40,8 @@
 }
 
 .site-logo img {
-  max-height: 4rem; //CHANGED
+  max-height: 4rem; //Changed line 43 + line 18 should be 3
+}
 
 .site-title {
   display: -webkit-box;

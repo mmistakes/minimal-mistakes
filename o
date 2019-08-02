@@ -1,0 +1,58 @@
+<ul>
+<li>Ensure all critical systems have
+<a href="http://www.prismmicrosys.com/EventSourceNewsletters-Jan10.php">consistent time</a>
+configuration. Systems
+generating events should have the proper time to ensure the events they
+create will be able to be correlated when analyzed. Consider NTP use
+throughout the enterprise as well as frequent time audits of the most
+critical systems to ensure accuracy.</li>
+
+<li>Consider doing regular time-audits. This is where you evaluate the time of
+your most critical systems to ensure they are consistent. If the data is in
+Splunk, then this task might just take a few minutes every month or so and is
+well worth it. The data onboarding app mentioned above provides dashboards to
+assist with this.</li>
+
+<li>Explicitly configure Splunk to read time stamp information from incoming
+events. Splunk’s reads the time stamp from incoming events, which it then
+associates to the event in the index and the underlying buckets. It is
+imperative that
+<a href="https://docs.splunk.com/Documentation/Splunk/latest/Data/HowSplunkextractstimestamps">time stamps</a>
+and timezone offsets be parsed and set correctly
+both for usability and efficiency purposes.</li>
+
+<li>Test new inputs. When new inputs will be created, test the data first by
+ingesting some of it and determine if it requires adjustments such as for
+<a href="https://docs.splunk.com/Documentation/Splunk/latest/Data/HowSplunkextractstimestamps">time stamps</a>,
+<a href="https://docs.splunk.com/Documentation/Splunk/latest/Data/Overviewofeventprocessing">event-processing</a> (such as breaking).</li>
+
+<li>Syslog before Splunk. Traditional syslog technologies (syslogd, syslog-ng,
+rsyslogd) are simple and featureless compared to Splunk, but this is their
+advantage. Since these packages rarely change and require a small amount of
+resources, they are perfect for being the initial recipient of syslog data
+on the network. When network devices send syslog messages, this data is
+frequently UDP (connectionless) and therefore vulnerable in-transit. Even
+TCP syslog can be lost if the receiving host is unreachable. Place a syslog
+application (e.g. syslog-ng) on the network to receive the syslog feeds and
+configure the application to write the data out to files. Ideally, have the
+files be application-specific (e.g. firewall.log, router.log, maillog.log,
+etc.). Splunk can be installed as a forwarder on the same host to read these
+files and forward them on. If Splunk requires a restart or is otherwise
+unavailable (i.e. during an upgrade), it can pick up where it left off reading
+the files on disk. Please see other recommendations for managing these files.</li>
+
+<li>Too many files. Ensure a single instance of Splunk does not monitor more
+than a few hundred active files. If there are more than this, consider
+implementing a process (i.e. cron) to move the previous day’s (or week perhaps)
+syslog directory out of the monitored directory-structure to an archive location.
+You know you have a problem with too many files if the Splunk instance involved
+has something like this in its logs: File descriptor cache is full. You might
+also benefit here by increasing the <em>ulimit</em> (see Adjust <em>ulimit</em> in this document).</li>
+
+<li>Avoid overwriting or hard-coding the “source” field in the data. Doing so
+can make troubleshooting problematic inputs more difficult.</li>
+
+<li>A useful resource on Data onboarding is the 2014 Splunk .Conf talk.
+Both the <a href="http://conf.splunk.com/sessions/2014/conf2014_AndrewDuca_Splunk_Deploying.pdf">slides</a> and a
+<a href="http://conf.splunk.com/sessions/2014/conf2014_AndrewDuca_Splunk_Deploying.mp4">recording</a> are available.</li>
+</ul>
