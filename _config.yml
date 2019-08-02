@@ -24,8 +24,8 @@ url                      : # the base hostname & protocol for your site e.g. "ht
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/ApluraLogo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : " " # overrides the website title displayed in the masthead, use " " for no title
+logo                     : "/assets/images/ApluraLogo.png" #CHANGED path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : " " #CHANGED overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 
@@ -65,7 +65,7 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : true # , false (default)
+search                   : true #CHANGED , false (default)
 search_full_content      : # , false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
@@ -84,7 +84,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : &twitter "aplura"
+  username               : &twitter "aplura" #CHANGED
 facebook:
   username               :
   app_id                 :
@@ -96,7 +96,7 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-    - "https://twitter.com/aplura"
+    - "https://twitter.com/aplura" #CHANGED
 # Analytics
 analytics:
   provider               : false # false (default), "google", "google-universal", "custom"
@@ -115,7 +115,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:mmorton@aplura.com
+      url: mailto:mmorton@aplura.com #CHANGED
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -135,24 +135,24 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/aplura"
-    #- label: "Facebook"
-  #    icon: "fab fa-fw fa-facebook-square"
-      # url:
-  #  - label: "GitHub"
-#    icon: "fab fa-fw fa-github"
-      # url:
-  #  - label: "GitLab"
-  #    icon: "fab fa-fw fa-gitlab"
-  #    # url:
-  #  - label: "Bitbucket"
-  #    icon: "fab fa-fw fa-bitbucket"
-  #    # url:
-  #  - label: "Instagram"
-  #    icon: "fab fa-fw fa-instagram"
-      # url:
+    - label: "Twitter" #CHANGED
+      icon: "fab fa-fw fa-twitter-square" #CHANGED
+      url: "https://twitter.com/aplura" #CHANGED
+    #CHANGED - label: "Facebook"
+    #CHANGED    icon: "fab fa-fw fa-facebook-square"
+    #CHANGED url:
+    #CHANGED  - label: "GitHub"
+    #CHANGED    icon: "fab fa-fw fa-github"
+    #CHANGED url:
+    #CHANGED - label: "GitLab"
+    #CHANGED    icon: "fab fa-fw fa-gitlab"
+    #CHANGED    # url:
+    #CHANGED  - label: "Bitbucket"
+    #CHANGED    icon: "fab fa-fw fa-bitbucket"
+    #CHANGED    # url:
+    #CHANGED  - label: "Instagram"
+    #CHANGED    icon: "fab fa-fw fa-instagram"
+    #CHANGED url:
 
 
 # Reading Files
@@ -220,8 +220,8 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-#paginate: 2 # amount of posts to show
-#paginate_path: /_pages/page:num/
+#paginate: 5 # CHANGED  amount of posts to show
+#paginate_path: /page:num/ #CHANGED
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
@@ -283,21 +283,21 @@ compress_html:
 
 # Defaults
 defaults:
-  # _posts
-  - scope:
-      path: "_posts"
-      type: posts
+  # _posts #CHANGED
+  - scope: #CHANGED
+      path: "_posts" #CHANGED
+      type: posts #CHANGED
     values:
-      layout: single
-#      author_profile: true
-      read_time: true
-    #  comments: true
-    #  share: true
-    #  related: true
-  # _pages
-  - scope:
-      path: "_pages"
-      type: pages
-    values:
-      layout: single
+      layout: single  #CHANGED
+#      author_profile: true #CHANGED
+      read_time: true #CHANGED
+    #  comments: true #CHANGED
+    #  share: true #CHANGED
+    #  related: true #CHANGED
+  # _pages #CHANGED
+  - scope: #CHANGED
+      path: "_pages" #CHANGED
+      type: pages #CHANGED
+    values: #CHANGED
+      layout: single #CHANGED
 #      author_profile: true

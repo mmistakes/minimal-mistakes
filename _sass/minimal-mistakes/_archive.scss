@@ -77,22 +77,17 @@
 }
 
 .archive__item-teaser {
-  // height: 100%;
-//  margin-top: auto;
-//  margin-bottom: auto;
   position: relative;
   border-radius: $border-radius;
   overflow: hidden;
 
-
-
   img {
-    display: block;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    //width: 100%; //all images will take up 100% of the width they are given
+    display: block; //CHANGED
+    margin-top: auto; //CHANGED
+    margin-bottom: auto; //CHANGED
+    margin-left: auto; //CHANGED
+    margin-right: auto; //CHANGED
+    //width: 100%; //all images will take up 100% of the width they are given //CHANGED
   }
 }
 
@@ -300,7 +295,7 @@
     }
 
     .archive__item-teaser {
-      margin-top: auto;
+      margin-top: auto; //CHANGED
       margin-bottom: 2em;
     }
 
@@ -448,27 +443,27 @@
   }
 }
 /*
-   Tables - Matt Morton
+   Tables - Matt Morton - 2019 - CHANGED
    ========================================================================== */
-.table{
-  width: 100%;
-  border: 1px solid #aaa;
-  margin-bottom: 2em;
-}
-.table_row {
-    &:nth-child(2n) {
-      background-color:#ddd;
-    }
-    &:nth-child(2n + 1) {
-      background-color:#eee;
-    }
-    position: relative;
-    clear: both;
-    width: 100%;
-}
-.table_box {
-     padding: 5px;
-     box-sizing: border-box;
-     width: var(--width);
-     float: left;
-   }
+.table{ //CHANGED
+  width: 100%; //CHANGED
+  border: 1px solid #aaa; //CHANGED
+  margin-bottom: 2em; //CHANGED
+} //CHANGED
+.table_row { //CHANGED
+    &:nth-child(2n) { //CHANGED
+      background-color:#ddd; //CHANGED
+    } //CHANGED
+    &:nth-child(2n + 1) { //CHANGED
+      background-color:#eee; //CHANGED
+    } //CHANGED
+    position: relative; //CHANGED
+    clear: both; //CHANGED
+    width: 100%; //CHANGED
+} //CHANGED
+.table_box {//CHANGED
+     padding: 5px; //CHANGED
+     box-sizing: border-box; //CHANGED
+     width: var(--width); //CHANGED
+     float: left; //CHANGED
+   } //CHANGED
