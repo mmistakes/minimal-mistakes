@@ -180,7 +180,7 @@ It is certainly possible to have a shared canonical data model and have code in 
 data it's interested in but having this shared model in the first place sets an expectation in the minds of developers
 that you can get the data 'for free'. Having the data close at hand leads to a blurring of the roles and
 responsibilities of each component so that instead of delegating a function to the most appropriate component the
-current component subsumes that function regardless of whether it should sit their or not.
+current component subsumes that function regardless of whether it should sit there or not.
 
 To be clear, this is as much a problem in a monolithic code base as it is in a more distributed one. The decision to
 deliver distributed components is an optimisation to solve a specific problem (usually one of scale) and having all the
