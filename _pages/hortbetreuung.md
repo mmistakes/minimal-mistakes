@@ -104,8 +104,7 @@ Bruttojahreseinkommen abhängigen Eigenanteil (4€ - 243€) zusammen.
 Die notwendigen Formulare zur Anmeldung einer ergänzenden Betreuung können Sie
 in unserem Sekretariat abholen oder direkt hier herunterladen und ausfüllen.<br/><br/>
 [<i class="fa fa-external-link">&nbsp;&nbsp;</i>Formularseite](https://www.berlin.de/sen/bjf/service/formulare/#hort){: .btn .btn--info}
-[<i class="fa fa-download">&nbsp;&nbsp;</i>Formular für die Hortbetreuung in Jahrgangsstufen 1 bis 4](https://www.berlin.de/sen/bjf/service/formulare/antrag_auf_erganzende_forderung_und_betreuung_jahrgangsstufen_1_bis_4.pdf){: .btn .btn--success}
-[<i class="fa fa-download">&nbsp;&nbsp;</i>Formular für die Hortbetreuung in Jahrgangsstufen 5 bis 6](https://www.berlin.de/sen/bjf/service/formulare/antrag_auf_erganzende_forderung_und_betreuung_jahrgangsstufen_5_und_6.pdf){: .btn .btn--success}
+[<i class="fa fa-download">&nbsp;&nbsp;</i>Formular für die Hortbetreuung in Jahrgangsstufen 1 bis 6](https://www.berlin.de/sen/bjf/service/formulare/antrag_efob__ab_2019-20_20180914.pdf){: .btn .btn--success}
 {: .notice--info}
 
 # Betreuung in den Ferien
