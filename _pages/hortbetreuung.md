@@ -46,8 +46,10 @@ im Unterricht.
 | 17.08.2018 | Schließtag |
 -->
 
-| 22.10.2018 - 02.11.2018 | Oktoberferien |
-| 24.12.2018 - 05.01.2019 | Weihnachtsschließzeit |
+| 04.10.2019 | Schließtag |
+| 23.12.2019 - 03.01.2020 | Weihnachtsschließzeit |
+| 22.05.2020 | Christi Himmelfahrt |
+| 21.12.2020 - 01.01.2021 | Weihnachtsschließzeit |
 
 
 # Hortgebäude und Außengelände
@@ -143,7 +145,7 @@ Gruppenumfeld ausgeteilt und verzehrt wird.
 Das Catering-Unternehmen wird alle drei Jahre vom Schulamt europaweit
 ausgeschrieben, wobei die Lehrer-, Schüler und Elternschaft einen signifikanten
 und direkten Einfluss auf die Auswahl des Unternehmens haben. Die nächste
-Ausschreibung findet zum 1.8.2020 statt.
+Ausschreibung findet zum 01.08.2020 statt.
 
 # Noch Fragen?
 
