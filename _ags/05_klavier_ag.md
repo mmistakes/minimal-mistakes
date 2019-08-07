@@ -4,8 +4,8 @@ hash: "#klavier_ag"
 icon: "🎹"
 teacher: "Musikschule Spandau"
 times:
-  - start: "2018-09-12T13:30:00+02:00"
-    end:   "2018-09-12T18:30:00+02:00"
+  - start: "2019-08-21T13:30:00+02:00"
+    end:   "2019-08-21T20:00:00+02:00"
     extra: " (mehrere Gruppen)"
     grade: "1 - 6"
 place: "Musikraum"
@@ -15,4 +15,5 @@ costs: "N.N"
 participants: "N.N"
 register: null
 ---
-N.N
+
+In Koorperation mit der Musikschule Spandau.

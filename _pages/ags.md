@@ -4,7 +4,7 @@ title: "Arbeitsgemeinschaften"
 permalink: /ags/
 author_profile: false
 excerpt: "Alles Wichtige über die Arbeitsgemeinschaften (AGs) an der Brandwerder."
-modified: 2018-10-02T22:08:00+01:00
+modified: 2019-07-13:34:00+01:00
 header:
   overlay_color: "#fff"
   overlay_image: /assets/images/feature-ags.jpg
@@ -23,10 +23,11 @@ Basis. Eine regelmäßige Teilnahme ist Voraussetzung.
 können. Vor allem die Kursgebühren können sich ändern.
 {: .notice--warning}
 
-# Kursangebote im Schuljahr 2018/19
+# Kursangebote im Schuljahr 2019/20
 {: #toc}
 
-**Achtung**: AG Beginn ab 10.09.2018, Zirkus ab 05.10.2018.
+<!-- TODO: AG Beginn ab 10.09.2018, Zirkus ab 05.10.2018. -->
+**Achtung**: AG Beginn ab 19.08.2019.
 {: .notice--warning}
 
 {% assign monday = "" | split: "" %}
