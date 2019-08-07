@@ -38,7 +38,8 @@ Möglichkeit, im Unterricht der Oberschulen zu hospitieren. Gleichzeitig
 stellen die Oberschüler*innen ihre Schule vor.
 
 Unsere Kooperations-Kitas sind die
-[<i class="fa fa-external-link">&nbsp;</i>Kita Zauberschiff](https://www.kita-nordwest.de/kita/kita-zauberschiff/)
+[<i class="fa fa-external-link">&nbsp;</i>Kita Zauberschiff](https://www.kita-nordwest.de/kita/kita-zauberschiff/),
+[<i class="fa fa-external-link">&nbsp;</i>Kita Zwergenwinkel](https://www.awo-spandau.de/kinder-familie/kindertagesstaette-zwergenwinkel.html)
 sowie die
 [<i class="fa fa-external-link">&nbsp;</i>Kita Arche-Noah](https://www.kirchengemeinde-staaken.de/page/1183/kita-arche-noah).
 Gemeinsam mit Ihren Erzieher*innen besuchen die Kinder den Unterricht und sind
@@ -71,8 +72,8 @@ Schulküche zu treffen.
 Das Konzept des jahrgangsübergreifenden Lernens (JÜL) bestimmt den Unterricht in
 den Klassen 1 - 3.
 
-Ab dem Schuljahr 2018/19 werden alle Kinder der genannten Jahrgangsstufen
-gemeinsam in der Schulanfangsphase altersgemischt lernen.
+<!-- Ab dem Schuljahr 2018/19 werden alle Kinder der genannten Jahrgangsstufen
+gemeinsam in der Schulanfangsphase altersgemischt lernen. -->
 
 Der jahrgangsübergreifende Unterricht ermöglicht es uns, sich an den
 unterschiedlichen Lernausgangslagen zu orientieren, die Lernangebote
@@ -84,33 +85,39 @@ Die individuelle Förderung steht im Mittelpunkt.
 
 ## Das sind unsere Unterrichtszeiten:
 
-|Einlass | 7:50 Uhr |
-| ---|----|
-|1. Stunde | 8:00 Uhr - 8:45 Uhr |
-|2. Stunde | 8:50 Uhr - 9:35 Uhr |
-|Große Pause | |
-|3. Stunde | 9:55 Uhr - 10:40 Uhr |
-|4. Stunde | 10:45 Uhr - 11:30 Uhr |
-|Große Pause | |
-|5. Stunde | 11:55 Uhr - 12:40 Uhr |
-|6. Stunde | 12:45 Uhr - 13:30 Uhr |
-|7. Stunde | 13:35 Uhr - 14:20 Uhr |
-|8. Stunde | 14:20 Uhr - 15:05 Uhr |
-|9. Stunde | 15.05 Uhr - 15.50 Uhr |
+<!-- {% include outdated.md %} -->
+
+|Einlass | 7:50 Uhr | Blöcke | Mittagessen |
+| ---|----| ----- |  |
+|1. Stunde | 8:00 Uhr - 8:45 Uhr | 1. Block | |
+|2. Stunde | 8:45 Uhr - 9:30 Uhr |          | |
+|Frühstückspause | 9:30 Uhr - 9:40 Uhr| Pause | |
+|Bewegungspause | 9:40 Uhr - 9:55 Uhr | | |
+|3. Stunde | 10:00 Uhr - 10:45 Uhr | 2. Block | |
+|4. Stunde | 10:45 Uhr - 11:30 Uhr | | |
+|Bewegungspause | 11:30 Uhr - 11:55 Uhr | Pause | 4./5./6. Klassen (Mensa + Schulküche) |
+|5. Stunde | 12:00 Uhr - 12:45 Uhr | 3. Block | JüL-Kinder je nach Unterrichtsschluss (Mensa) |
+|6. Stunde | 12:45 Uhr - 13:30 Uhr | | |
+|Kleine Pause | 13:30 Uhr - 13:35 Uhr | | |
+|7. Stunde | 13:35 Uhr - 14:20 Uhr | | |
+|8. Stunde | 14:20 Uhr - 15:05 Uhr | | |
+
+<!-- |9. Stunde | 15.05 Uhr - 15.50 Uhr | | -->
 
 ## Ferientermine
 
 <!-- {% include outdated.md %} -->
 
-| Schuljahr 2018/19     | Ferienbeginn   | Ferienende     | erster Unterrichtstag |
+| Schuljahr 2019/20     | Ferienbeginn   | Ferienende     | erster Unterrichtstag |
 |-------------------    |--------------  |------------    |-----------------------|
-| Herbstferien          | Mo, 22.10.2018 | Fr, 02.11.2018 | Mo, 05.11.2018        |
-| Weihnachtsferien      | Sa, 22.12.2018 | Sa, 05.01.2019 | Mo, 07.01.2019        |
-| Winterferien          | Mo, 04.02.2019 | Sa, 09.02.2019 | Mo, 11.02.2019        |
-| Osterferien           | Mo, 15.04.2019 | Fr, 26.04.2019 | Mo, 29.04.2019        |
-| Unterrichtsfreier Tag | Fr, 31.05.2019 |                | Mo, 03.06.2019        |
-| Pfingstferien         | Di, 11.06.2019 |                | Mi, 12.06.2019        |
-| Sommerferien          | Do, 20.06.2019 | Fr, 02.08.2019 | Mo, 05.08.2019        |
+| Herbstferien          | Do, 03.10.2019 | Sa, 19.10.2019 | Mo, 21.10.2019        |
+| Weihnachtsferien      | Mo, 23.12.2019 | Sa, 04.01.2020 | Mo, 06.01.2020        |
+| Winterferien          | Mo, 03.02.2020 | Sa, 08.02.2020 | Mo, 10.02.2020        |
+| Osterferien           | Mo, 06.04.2020 | Fr, 17.04.2020 | Mo, 20.04.2020        |
+| Pfingstferien         | Fr, 22.05.2020 |                | Mo, 25.05.2020        |
+| Sommerferien          | Do, 25.06.2020 | Fr, 07.08.2020 | Mo, 10.08.2020        |
+
+<!-- | Unterrichtsfreier Tag | Fr, 31.05.2020 |                | Mo, 03.06.2020        | -->
 
 ## Wichtiges zum Sportunterricht
 
