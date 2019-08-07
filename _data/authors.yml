@@ -18,6 +18,11 @@ Nicole Herrmann:
   bio: "Sekretariat"
   avatar: "/assets/images/n.herrmann.jpg"
 
+Sekretariat:
+  name: "N.N."
+  bio: "Sekretariat"
+  avatar: null
+
 Karen Eumann:
   name: "Karen Eumann"
   bio: "English AG Lehrer"

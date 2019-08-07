@@ -38,9 +38,9 @@ einfach eine E-Mail. So können wir uns Zeit für Ihr Anliegen nehmen.
 ## Sekretariat
 {: #sekretariat}
 
-{% include author-profile.html author='Nicole Herrmann' %}{: .align-right}
+{% include author-profile.html author='Sekretariat' %}{: .align-right}
 
-* Nicole Herrmann
+* N.N.
 * E-Mail: {% include email email='sekretariat@brandwerder.de' %}
 * Telefon: (030) 3670952 - 0
 * Telefax: (030) 3670952 - 10
