@@ -20,6 +20,10 @@ author_profile: true
 * Development of autonomous trenching operation  
 * Focused on mechanical and hydraulic modeling in Simulink  
 
+**John Deere**, Hydraulic Controls
+* Control software for auxillary flow functions
+* Characterization and modeling of major components
+
 **John Deere**, Engine Component Development
 * R&D of [EasyChange](https://www.popularmechanics.com/home/lawn-garden/a19548777/john-deeres-30-second-oil-change-turns-this-task-into-a-one-handed-half-a-minute-job/) Oil Filter
 * Development of hood components  
@@ -27,12 +31,14 @@ author_profile: true
 **Idaho National Lab**, Systems Engineering
 * Evaluation of fuel cladding materials under [off normal conditions](https://lwrs.inl.gov/Advanced%20Light%20Water%20Reactor%20Nuclear%20Fuels/PreIrradiationTestingAnalysisLWRSHybrid_Rooyen.pdf)  
 
+<!---
 ## Publications ##
 :construction::construction::construction:
 ## Presentations ##
 :construction::construction::construction:
 ## Service ##
 :construction::construction::construction:
+-->
 ## Awards ##
 
 **Hagler Institute Student Fellow**: 2019  
