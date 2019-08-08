@@ -28,7 +28,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-toc
+  # - jekyll-toc
 header_pages:
   - about.md
   - portfolio.md

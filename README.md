@@ -6,7 +6,12 @@ Minima 를 기반으로 커스터마이징 중인 Jekyll 블로그입니다.
 
 - 2019
   - July 26 : ToC SASS 수정 및 구글 광고 사이드바 설정
+  - Aug 08 : ToC 및 Content CSS 조정
 
+## TODO
+
+- Search 바 생성
+- GNB 수정 (랜딩 페이지, 포스트 페이지 각각)
 
 ## 로컬 jekyll 빌드
 
