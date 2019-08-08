@@ -25,18 +25,18 @@ code, pre {
 
 // Nesting SASS, https://marksheet.io/sass-nesting.html
 .cm-blog-content {
-  table { 
-    border: 1px solid DarkOrange;
-    border-radius: 25px; 
-    border-spacing: 0;
-    }
-  table td, table th { 
-    border-bottom: 1px solid DarkOrange;
-    padding: 10px; 
-    }
-  table tr:last-child > td {
-    border-bottom: none;
-  }
+  // table { 
+  //   border: 1px solid DarkOrange;
+  //   border-radius: 25px; 
+  //   border-spacing: 0;
+  //   }
+  // table td, table th { 
+  //   border-bottom: 1px solid DarkOrange;
+  //   padding: 10px; 
+  //   }
+  // table tr:last-child > td {
+  //   border-bottom: none;
+  // }
 
 } 
 
