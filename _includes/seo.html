@@ -132,7 +132,7 @@
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "url": {{ seo_url | jsonify }},
+      "url": {{ '/' | absolute_url | jsonify }},
       "logo": {{ site_og_image | jsonify }}
     }
   </script>
