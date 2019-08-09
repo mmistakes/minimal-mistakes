@@ -25,7 +25,7 @@
   {%- assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once -%}
 {%- endif -%}
 
-{%- assign author = page.author | default: page.authors[0] | default: site:author -%}
+{%- assign author = page.author | default: page.authors[0] | default: site.author -%}
 {%- assign author = site.data.authors[author] | default: author -%}
 
 {%- if author.twitter -%}
