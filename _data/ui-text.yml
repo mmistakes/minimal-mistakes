@@ -61,10 +61,10 @@ en-AU:
 # Spanish
 # -------
 es: &DEFAULT_ES
-  skip_links                 :
-  skip_primary_nav           :
-  skip_content               :
-  skip_footer                :
+  skip_links                 : "Saltar enlaces"
+  skip_primary_nav           : "Saltar a navegación principal"
+  skip_content               : "Saltar a contenido"
+  skip_footer                : "Saltar a pie"
   page                       : "Página"
   pagination_previous        : "Anterior"
   pagination_next            : "Siguiente"
@@ -103,7 +103,7 @@ es: &DEFAULT_ES
   comment_success_msg        : "¡Gracias por tu comentario! Se publicará una vez sea aprobado."
   comment_error_msg          : "Ha ocurrido un error al enviar el comentario. Asegúrate de completar todos los campos obligatorios e inténtalo de nuevo."
   loading_label              : "Cargando..."
-  search_label_text          :
+  search_label_text          : "Términos de búsqueda..."
   search_placeholder_text    : "Términos de búsqueda..."
   results_found              : "resultado(s) encontrado(s)"
   back_to_top                : "Volver arriba"
