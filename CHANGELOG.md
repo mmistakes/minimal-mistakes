@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+- Add missing Spanish localized UI text strings. [#2229](https://github.com/mmistakes/minimal-mistakes/pull/2229)
 - Allow Markdown in author bio. [#2215](https://github.com/mmistakes/minimal-mistakes/pull/2215)
 
 ### Bug Fixes

@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2019-08-09T09:08:48-04:00
+last_modified_at: 2019-08-09T09:15:41-04:00
 toc: false
 ---
 
@@ -13,6 +13,7 @@ toc: false
 
 ### Enhancements
 
+- Add missing Spanish localized UI text strings. [#2229](https://github.com/mmistakes/minimal-mistakes/pull/2229)
 - Allow Markdown in author bio. [#2215](https://github.com/mmistakes/minimal-mistakes/pull/2215)
 
 ### Bug Fixes
