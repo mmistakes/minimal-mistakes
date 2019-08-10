@@ -39,7 +39,7 @@ Virtualbox 를 사용하기 위해 Hyper-V 가 걸림돌이 됩니다. 쿨하게
 
 {% include advertisements.html %}
 
-## babun 설치
+### babun 설치
 
 저는 개인적인 취향으로 리눅스를 좋아합니다. 여러분도 리눅스를 즐겨 쓰기를 바라는 마음에서 `babun` 이라는 프로젝트를 소개해 드리도록 하겠습니다. 아래의 링크를 클릭해서 프로젝트를 한번 확인해 볼까요?
 
@@ -51,7 +51,7 @@ Virtualbox 를 사용하기 위해 Hyper-V 가 걸림돌이 됩니다. 쿨하게
 <iframe src="https://player.vimeo.com/video/95045348" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen ></iframe>
 </div>
 
-## babun 이슈 [PROJECT_DISCONTINUED]
+### babun 이슈 [PROJECT_DISCONTINUED]
 
 예전에 사용하였을 때에는 프로젝트가 활성화되어 있었으나 현재는 동작하지 않습니다 대안으로 chocolatey 를 사용하는 것을 권장해 드립니다. 오래전에 작성한 문서를 옮겨오는 과정에서 이슈가 있었네요. 혹시 오픈 소스 프로젝트에 기여하고 싶은 개발자 여러분은 maintainer 를 모집하고 있으니 참여해 보시는 것을 권장합니다.
 
@@ -71,7 +71,7 @@ Virtualbox 를 사용하기 위해 Hyper-V 가 걸림돌이 됩니다. 쿨하게
 choco install vagrant
 ```
 
-## vagrant 설치 스크립트
+### vagrant 설치 스크립트
 
 vargrant 가 설치 완료되었습니다. 아래의 명령어를 입력하여 Vagrantfile 을 생성합니다.
 
@@ -79,7 +79,7 @@ vargrant 가 설치 완료되었습니다. 아래의 명령어를 입력하여 V
 curl https://gist.githubusercontent.com/code-machina/1994fb4c8546a680d58b61a5cdbc1fe2/raw/fd29669ccc3e9424df713f24d1ed99dfa91bdb83/Vagrantfile -o Vargrantfile
 ```
 
-## Vagrant 파일 역할
+### Vagrant 파일 역할
 
 다운로드 받은 파일은 아래의 역할을 합니다.
 
@@ -90,7 +90,7 @@ curl https://gist.githubusercontent.com/code-machina/1994fb4c8546a680d58b61a5cdb
 - VM 메모리 설정
 - 프로비져닝 설정 (docker-ce 설치)
 
-## worker 수 늘리기
+### worker 수 늘리기
 
 다운받은 Vagrantfile 은 WORKER_COUNT 를 조정할 수 있습니다.
 
@@ -117,7 +117,7 @@ vagrant ssh manager
 sudo docker swarm init --advertise-addr 192.168.100.10
 ```
 
-## Swarm Join
+### Swarm Join
 
 - swarm join (worker1)
 
@@ -133,7 +133,7 @@ swarm 노드에 join 을 겁니다.
 sudo docker swarm join --token SWMTKN-1-0d4lym64rmugfp6nhybhy0r6i8v108gar84nzzpie8q6xvn9v1-dnz6k2mm70gjt19v1pvbhzuvx 192.168.100.10:2377
 ```
 
-## Swarm 노드 확인
+### Swarm 노드 확인
 
 구성된 현황을 확인해 보겠습니다. 구성한 노드가 확인됩니다.
 
@@ -160,7 +160,7 @@ ID                  NAME                  MODE                REPLICAS          
 bko16lhgmpya        affectionate_mendel   replicated          2/2                 nginx:latest        *:80->80/tcp
 ```
 
-## 접속 확인
+### 접속 확인
 
 이제 PC 에서 접속을 체크해 볼까요?
 

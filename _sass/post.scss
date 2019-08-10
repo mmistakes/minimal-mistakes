@@ -8,7 +8,7 @@
 // 영향받는 범위 (태그) : pre code 
 .highlighter-rouge .highlight {
   background: #F2F2F2;
-  border-radius: 25px;
+  border-radius: 5px;
   box-shadow: 1px 1px grey;
 }
 
@@ -19,12 +19,13 @@ body, button, input, textarea {
 code, pre {
   font-family: "Source Code Pro","Inconsolata",monospace;
   // 폰트 굵기 조정 600 -> 550
-  font-weight: 550;
-  font-size: 17px;
+  font-weight: 200;
+  font-size: 12px;
 }
 
 // Nesting SASS, https://marksheet.io/sass-nesting.html
 .cm-blog-content {
+  // 테이블 수정시 조금 과하다. 주석 처리 고고
   // table { 
   //   border: 1px solid DarkOrange;
   //   border-radius: 25px; 
@@ -37,7 +38,13 @@ code, pre {
   // table tr:last-child > td {
   //   border-bottom: none;
   // }
-
+  h2 {
+    font-family: "Google Sans", "Helvetica", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 160px;
+    margin-bottom: 32px;
+  }
 } 
 
 // 19.08.02 : 블로그 본문 배경색 변경
@@ -62,6 +69,7 @@ code, pre {
 #my_toc {
   // ToC CSS 추가 2019.08.10 
   // 코드 유지 관리를 위해 Nested 형태를 사용
+  // 참고: https://stackoverflow.com/questions/18564187/using-jquery-find-the-div-class-that-the-top-of-the-viewport-is-inside
   li > a.current, li:hover > a {
     border-left-color: #1A73E8;
     color: #202124;
