@@ -58,7 +58,30 @@ code, pre {
 }
 
 
-// 
+
+#my_toc {
+  // ToC CSS 추가 2019.08.10 
+  // 코드 유지 관리를 위해 Nested 형태를 사용
+  li > a.current, li:hover > a {
+    border-left-color: #1A73E8;
+    color: #202124;
+  }
+  ul, li {
+    list-style-type: none;
+   }
+   a {
+    border-left: 2px solid #E8EAED;
+    color: #5F6368;
+    display: block;
+    font-family: "Google Sans", "Helvetica", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 8px 0 8px 16px;
+    position: relative;
+
+  }
+}
+
 pre, code {
   background-color: #F2F2F2;
 }

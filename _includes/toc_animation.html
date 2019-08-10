@@ -1,0 +1,16 @@
+<script>
+  $(window).scroll(function() {
+    
+    var windowTop = Math.max($('body').scrollTop(), $('html').scrollTop());
+    
+    $('h2').each(function (index) {
+        if (windowTop > ($(this).position().top - 200))
+        {
+            // console.log($(this).position().top)
+            $('#my_toc a.current').removeClass('current');
+            $('#my_toc a:eq(' + index + ')').addClass('current');
+        }
+    });
+    
+}).scroll();
+</script>

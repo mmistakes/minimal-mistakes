@@ -14,10 +14,10 @@
           <div class="cm-toc-title">Content Table</div>
           <!-- TODO: Toc 커스터마이징 작업 필요 (완료) -->
           <div class="cm-toc-items">
-            {%- include toc.html html=content -%}
+            {%- include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=2 h_max=2 -%}
           </div>
           
-          <p class="cm-toc-version"> cm-toc v.0.3 By 코마</p>
+          <p class="cm-toc-version"> cm-toc v.0.4 By 코마</p>
         </div>
         <!-- 구글 광고 -->
         <div class="cm-googlead">
@@ -32,6 +32,8 @@
     </main>
 
     {%- include footer.html -%}
+
+    {%- include toc_animation.html -%}
 
   </body>
 

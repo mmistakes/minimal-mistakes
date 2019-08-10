@@ -34,6 +34,7 @@ header_pages:
   - portfolio.md
   # - interest.md
   - categories.md
+  - changelog.md
 show_excerpts: true
 google_analytics: UA-134340962-1
 permalink: /:year/:month/:day/:title:output_ext

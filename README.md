@@ -12,6 +12,7 @@ Minima 를 기반으로 커스터마이징 중인 Jekyll 블로그입니다.
 
 - Search 바 생성
 - GNB 수정 (랜딩 페이지, 포스트 페이지 각각)
+- ToC 바 업그레이드
 
 ## 로컬 jekyll 빌드
 
@@ -64,3 +65,10 @@ bundle show minima
   - Vue.js + Express.js
   - Docker
   - AWS
+
+
+## TOC 업그레이드
+
+- 사용자 경험 강화 차원에 스크롤 이벤트 발생 시 ToC 바에 CSS 처리
+
+![toc v0.4](cm_img/toc-v0.4.png)
