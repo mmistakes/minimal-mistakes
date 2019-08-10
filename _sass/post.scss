@@ -12,6 +12,10 @@
   box-shadow: 1px 1px grey;
 }
 
+header {
+  z-index: 1200;
+}
+
 body, button, input, textarea {
   font-family: "Source Sans Pro","Roboto","Open Sans",Arial,sans-serif;
 }
