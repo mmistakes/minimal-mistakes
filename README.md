@@ -80,3 +80,35 @@ bundle show minima
 ```markdown
 [![Nginx 접속 화면](/assets/img/2019/08/nginx-01.png)](/assets/img/2019/08/nginx-01.png)
 ```
+
+## Code of Conduct
+
+블로그 글 작성시 아래의 규칙을 따른다.
+
+- ToC 목록 관리하기
+
+소제목 개수를 5 ~ 7 사이를 유지합니다.
+
+```markdown
+<!-- ToC 위젯에 노출 -->
+## 소제목 1
+<!-- ToC 위젯에 노출되지 않음 -->
+### 하위 제목 1.1
+
+## 소제목 2
+
+### 하위 제목 2.1
+```
+
+- Internal Jekyll Post Link (내부 문서 링크 생성 시)
+
+```markdown
+[Vagrant 를 이용한 Docker Swarm 테스팅 (Windows 10)
+]({% link _posts/2019-08-08-Docker-Swarm-with-Vagrant-Part-1.markdown %})
+```
+
+- 이미지 팝업 기능 사용하기
+
+```markdown
+[![Nginx 접속 화면](/assets/img/2019/08/nginx-01.png)](/assets/img/2019/08/nginx-01.png)
+```
