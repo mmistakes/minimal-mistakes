@@ -9,6 +9,8 @@
             // console.log($(this).position().top)
             $('#my_toc a.current').removeClass('current');
             $('#my_toc a:eq(' + index + ')').addClass('current');
+            $('.cm-blog-content h2.current').removeClass('current')
+            $('.cm-blog-content h2:eq(' + index + ')').addClass('current')
         }
     });
     

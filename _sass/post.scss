@@ -48,6 +48,12 @@ code, pre {
     font-weight: 700;
     margin-top: 160px;
     margin-bottom: 32px;
+    border-bottom-color: #E8EAED;
+    border-bottom: 2px solid #E8EAED;
+  }
+  // 사용자 읽는 위치의 서브 타이틀에 강조효과
+  h2.current {
+    border-bottom-color: #1A73E8;
   }
 } 
 

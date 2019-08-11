@@ -99,7 +99,7 @@ $ vim ./Vagrantfile
 WORKER_COUNT=2 # 원하는 카운트를 지정합니다.
 ```
 
-## 인스턴스 접속
+### 인스턴스 접속
 
 vagrant 명령을 이용해 아이피를 입력하지 않고 Guest OS에 접속이 가능합니다.
 
