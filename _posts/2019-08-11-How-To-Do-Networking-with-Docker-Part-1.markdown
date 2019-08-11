@@ -23,6 +23,8 @@ SEO 관점으로 유추하건데, 글의 내용을 요약하는 부분이 상당
 
 기본 브릿지 네트워크(default bridge network)는 프로덕션에 바로 사용하기에는 무리가 있습니다. 따라서 사용자 정의 브릿지 네트워크(user defined bridge network)를 설정하고 컨테이너간에 통신을 테스트하게 됩니다.
 
+{% include advertisements.html %}
+
 ## Goals (목표)
 
 이 글을 정독할 경우 다음을 할 수 있게 됩니다.
@@ -30,6 +32,8 @@ SEO 관점으로 유추하건데, 글의 내용을 요약하는 부분이 상당
 - 기본 브릿지 네트워크를 이해
 - 컨테이너 간의 통신을 제어하는 방법을 이해
 - 사용자 정의 브릿지 네트워크에 대한 이해
+
+{% include advertisements.html %}
 
 ### 사전 조건
 
@@ -48,6 +52,8 @@ SEO 관점으로 유추하건데, 글의 내용을 요약하는 부분이 상당
 이 장에서는 두 개의 alpine 컨테이너를 생성합니다. 단, 생성하는 호스트는 1개 입니다. vagrant 를 통해서 다중 VM 을 구성한 경우 manager 노드에서 코드를 실행해 봅니다.
 
 그리고 생성한 두 개의 컨테이너를 bridge 네트워크를 통해서 연결해 보도록 하겠습니다.
+
+{% include advertisements.html %}
 
 ### 1. 네트워크 알아보기
 
@@ -118,8 +124,6 @@ docker container ls -f "name=alpine"
 ### 3. 네트워크 검사하기
 
 네트워크 정보를 확인해 보겠습니다. 현재 bridge 네트워크에 실행한 컨테이너들이 연결되어 있으므로 `docker inspect` 명령을 통해 `bridge` 네트워크의 상세 정보를 확인합니다.
-
-> 아마도 상세 정보를 보기 귀찮아
 
 - [jq 명령어](https://stedolan.github.io/jq/)
 
@@ -199,7 +203,7 @@ ping -c 2 alpine2 # Error: Bad Address
 
 ### 0. 이전 실습 환경 제거
 
-이전에 생성한 컨테이너들을 중지하고 삭제해 줍√다.
+이전에 생성한 컨테이너들을 중지하고 삭제해 줍니다.
 
 - 컨테이너 제거 명령어
 
@@ -207,6 +211,8 @@ ping -c 2 alpine2 # Error: Bad Address
 docker container stop alpine1 alpine2
 docker container rm alpine1 alpine2
 ```
+
+{% include advertisements.html %}
 
 ### 1. 사용자 정의 네트워크 생성
 
