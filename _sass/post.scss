@@ -169,6 +169,9 @@ p.cm-cover-subtitle {
   color: $cm-post-title-color;
   // 폰트 크기 변경
   font-size: $cm-post-title-font-size;
+  // TODO: word wrap 을 제공한다.
+  padding: 20px;
+  overflow-wrap: break-word;
 }
 
 .cm-left-sidebar {

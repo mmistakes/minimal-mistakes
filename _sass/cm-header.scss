@@ -1,0 +1,55 @@
+/**
+ * Wrapper
+ */
+
+//  TODO: Navigator bar 를 커스터마이징 한다.
+/*
+참고 레퍼런스: https://css-tricks.com/
+
+요구사항
+- CI | 메뉴 | 검색바
+*/
+
+.cm-header-wrapper {
+  // max-width: -webkit-calc(1000px - (30px * 2));
+  // max-width: calc(1000px - (30px * 2));
+  
+  // margin-right: auto;
+  // margin-left: auto;
+  // padding-right: 30px;
+  // padding-left: 30px; 
+}
+
+// @TODO: 매체(디바이스)별 CSS 적용 하기
+
+// @media screen and (max-width: 950px) {
+@media only screen and (max-width: 950px) {
+  .cm-header-wrapper {
+    // max-width: -webkit-calc(800px - (30px));
+    // max-width: calc(800px - (30px));
+    // padding-right: 15px;
+    // min-height: calc(129px);
+    // padding-left: 15px; 
+  } 
+}
+
+// @media screen and (max-width: 1250px) {
+@media only screen and (max-width: 1250px) {
+  .cm-header-wrapper {
+    // max-width: -webkit-calc(800px - (30px));
+    // max-width: calc(800px - (30px));
+    // min-height: calc(59px);
+    // padding-right: 15px;
+    // padding-left: 15px; 
+  } 
+}
+
+@media only screen and (max-width: 2000px) {
+  .cm-header-wrapper {
+    // max-width: -webkit-calc(800px - (30px));
+    // max-width: calc(800px - (30px));
+    // min-height: calc(129px);
+    // padding-right: 15px;
+    // padding-left: 15px; 
+  } 
+}
