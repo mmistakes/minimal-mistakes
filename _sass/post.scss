@@ -51,6 +51,15 @@ code, pre {
     border-bottom-color: #E8EAED;
     border-bottom: 2px solid #E8EAED;
   }
+
+  h3 {
+    // h3 태그 가독성 향상이 필요
+    font-family: "Google Sans", "Helvetica", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 80px;
+  }
+
   // 사용자 읽는 위치의 서브 타이틀에 강조효과
   h2.current {
     border-bottom-color: #1A73E8;
@@ -70,8 +79,9 @@ code, pre {
 // 19.08.02 : 블로그 본문 게시글 영역 배경색 변경
 .cm-blog-content {
   background: #FFFFFF;
-  border: 1px grey;
   border-radius: 5px;
+  border: 1px solid #d6d6d6; // 블로그 컨텐츠 프레임의 경계 지정
+  box-shadow: 1px 1px 0px #c2c2c2; // 블로그 컨텐츠 프레임의 경계 지정
 }
 
 
@@ -174,7 +184,28 @@ p.cm-cover-subtitle {
   display: none;  
 }
 
-@media (min-width: 1762px) {
+// https://dev.to
+// 이 css 는 매우 복잡함. 굳이 이렇게 까지 하는 건 아님
+// @media screen and (min-width: 1250px)
+// .primary-sticky-nav {
+//     display: block;
+//     position: fixed;
+//     left: calc(50% + 298px);
+//     top: 80px;
+//     bottom: 20px;
+//     width: 310px;
+//     display: -webkit-box;
+//     display: flex;
+//     -webkit-box-orient: vertical;
+//     -webkit-box-direction: normal;
+//     flex-flow: column wrap;
+//     overflow: hidden;
+//     z-index: 100;
+// }
+
+// 2019.08.11 code-machina
+// 
+@media (min-width: 1562px) {
   // Code-machina 편집 
   // Floating Table Of Content (ToC)
   .cm-googlead {
@@ -205,8 +236,10 @@ p.cm-cover-subtitle {
   }
 
   .cm-toc-version {
+    // 우측 ToC Navigator 의 버전 표시임
+    height: 10px;
     border-top: 1px solid;
-    border-top-color: grey;
+    border-top-color: #c2c2c2;
     font-style: italic;
     text-align: right;
     font-size: 12px;
@@ -221,8 +254,10 @@ p.cm-cover-subtitle {
     p {
       padding: 4px 20px;
     }
-    border-radius: 10px;
-    box-shadow: 1px 1px #767676;
+    // border-radius: 10px;
+    // box-shadow: 1px 1px #767676;
+    border: 1px solid #d6d6d6; // 블로그 컨텐츠 프레임의 경계 지정
+    box-shadow: 1px 1px 0px #c2c2c2; // 블로그 컨텐츠 프레임의 경계 지정
   }
 
   .cm-right-sidebar {
@@ -230,7 +265,9 @@ p.cm-cover-subtitle {
     // float: right;
     float: none;
     position: fixed;
-    right: 60px;
+    // right: 60px;
+    left: calc(60% + 250px);
+
 
     width: 352px;
     // padding: 24px;

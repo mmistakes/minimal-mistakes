@@ -72,3 +72,11 @@ bundle show minima
 - 사용자 경험 강화 차원에 스크롤 이벤트 발생 시 ToC 바에 CSS 처리
 
 ![toc v0.4](cm_img/toc-v0.4.png)
+
+## LightBox 추가
+
+아래와 같이 이미지를 링크에 임베드하여 이미지 클릭 시 Lightbox 를 팝업한다.
+
+```markdown
+[![Nginx 접속 화면](/assets/img/2019/08/nginx-01.png)](/assets/img/2019/08/nginx-01.png)
+```

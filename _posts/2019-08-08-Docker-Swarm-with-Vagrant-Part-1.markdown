@@ -32,10 +32,10 @@ Virtualbox 를 사용하기 위해 Hyper-V 가 걸림돌이 됩니다. 쿨하게
 - BIOS : VT-X 설정 On
 
 - Device Guard 설정 위치
-![Device Guard](/assets/img/2019/08/guard-off-1.png)
+[![Device Guard](/assets/img/2019/08/guard-off-1.png)](/assets/img/2019/08/guard-off-1.png)
 
 - 설정 Disabled 상태로 변경 확인
-![Device Guard](/assets/img/2019/08/guard-off-2.png)
+[![Device Guard](/assets/img/2019/08/guard-off-2.png)](/assets/img/2019/08/guard-off-2.png)
 
 {% include advertisements.html %}
 
@@ -164,7 +164,8 @@ bko16lhgmpya        affectionate_mendel   replicated          2/2               
 
 이제 PC 에서 접속을 체크해 볼까요?
 
-![Nginx 접속 화면](/assets/img/2019/08/nginx-01.png)
+[![Nginx 접속 화면](/assets/img/2019/08/nginx-01.png)](/assets/img/2019/08/nginx-01.png)
+
 
 정상적으로 잘 작동합니다.
 

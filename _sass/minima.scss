@@ -12,6 +12,8 @@ $spacing-unit:     30px !default;
 
 $text-color:       #111 !default;
 $background-color: #fdfdfd !default;
+// $brand-color:      #2a7ae2 !default;
+// @TODO: 블로그 글 리스트 화면에서 하이퍼 링크 색깔 조정
 $brand-color:      #2a7ae2 !default;
 
 $grey-color:       #828282 !default;
@@ -21,6 +23,7 @@ $grey-color-dark:  darken($grey-color, 25%) !default;
 $table-text-align: left !default;
 
 // Width of the content area
+// @TODO: 추후에 컨텐츠 Width 조정이 필요할지도 모르겠다.
 $content-width:    800px !default;
 
 $on-palm:          600px !default;

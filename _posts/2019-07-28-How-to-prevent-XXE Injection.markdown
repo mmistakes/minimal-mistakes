@@ -12,7 +12,7 @@ excerpt_separator: <!--more-->
 
 <!--more-->
 
-# XXE 인젝션이란
+## XXE 인젝션이란
 
 XML 입력(input)을 파싱하는 어플리케이션에 대한 공격입니다. 이는 CWE-661 에서 언급되는 이슈이기도 합니다. 이 위협은 unstrusted XML에 대한 입력이 잘못 구성된 XML 파서에 의해서 처리되면서 외부 객체에 대한 참조를 포함하는 경우를 의미합니다.
 
@@ -59,7 +59,7 @@ XXE 를 예방하기 위한 방법은 DTDs (External Entities) 를 비활성화 
 
 {% include advertisements.html %}
 
-### XmlDocument 안전하게 사용하기
+## XmlDocument 안전하게 사용하기
 
 위에서 XmlDocument 는 4.5.2 이전 버전에서 취약하다고 합니다. 그렇다면 어떻게 안전하게 사용할까요?
 정답은 `xmlDoc.XmlResolver = null` 코드입니다. DTDs 를 비활성화하기 위해 반드시 `null` 을 할당해 주어야 합니다.
@@ -80,7 +80,7 @@ static void LoadXML()
  }
 ```
 
-#### DTDs 를 반드시 사용한다면
+### DTDs 를 반드시 사용한다면
 
 DTD 를 꼭 사용해야 겠다면 XmlUrlResolver 를 상속하여 GetEntity 메서드를 Override 할 필요가 있습니다. 그리고 아래의 세가지 케이스로 나누어 안전한 구현을 해야 합니다.
 
@@ -113,7 +113,7 @@ public override object GetEntity(Uri absoluteUri, string role,
 }
 ```
 
-#### 구현 1. Timeout 설정
+### 구현 1. Timeout 설정
 
 타임 아웃 설정의 포인트는 아래의 두가지 입니다.
 
@@ -141,7 +141,7 @@ public override object GetEntity(Uri absoluteUri, string role,
 }
 ```
 
-#### 구현 2. 데이터 크기 제한 코드 추가
+### 구현 2. 데이터 크기 제한 코드 추가
 
 MomeoryStream 클래스트를 통해서 ResponseStream 을 받아오는 과정에 데이터 크기를 제한합니다.
 즉, Buffer 크기와 최대 Response 크기를 정의해야겠죠.
@@ -173,7 +173,7 @@ public override object GetEntity(Uri absoluteUri, string role,
     return copyStream;
 ```
 
-#### 구현 2-1. 클래스 지향 방식
+### 구현 2-1. 클래스 지향 방식
 
 `구현 2`의 코드는 조금 지저분 합니다. 우리는 OOP 를 지향하는 .NET 언어를 리뷰하고 있으니 Stream 객체를 override 해보도록 하겠습니다.
 
@@ -230,13 +230,13 @@ public override object GetEntity(Uri absoluteUri, string role,
 }
 ```
 
-### XmlTextReader 안전하게 사용하기
+## XmlTextReader 안전하게 사용하기
 
 이런 XmlTextReader 또한 안전하지 않기는 마찬가지 입니다. 4.0 버전 이전과 4.0 버전 이후 두가지 버전으로 나누어 안전한 코딩을 살펴보도록 하겠습니다.
 
 핵심은 DTDs 를 비활성화 하는 ProhibitDtd 속성을 true 로 설정하는 것입니다.
 
-#### 닷넷 4.0 이전 버전
+### 닷넷 4.0 이전 버전
 
 4.0 이전 버전의 경우 아래와 같이 코드를 작성해 주세요.
 
@@ -246,7 +246,7 @@ XmlTextReader reader = new XmlTextReader(stream);
 reader.ProhibitDtd = true;  
 ```
 
-#### 닷넷 4.0 - 4.5 버전
+### 닷넷 4.0 - 4.5 버전
 
 4.0 이후 버전은 DtdProcessing 속성을 변경해야 합니다.
 
@@ -255,7 +255,7 @@ XmlTextReader reader = new XmlTextReader(stream);
 reader.DtdProcessing = DtdProcessing.Prohibit;
 ```
 
-### XPathNavigator 안전하게 사용하기
+## XPathNavigator 안전하게 사용하기
 
 XPathNavigator 를 사용할 때, IXPathNavigable 인터페이스를 구현하는 XmlDocument 를 사용하는 코드 패턴으로 인해 안전하지 않습니다. 따라서, 안전한 파서인 XmlReader 를 이용해서 구현해야 합니다. 그리고 XPathDocument 를 생성하면 문제될 것이 없습니다.
 
