@@ -59,7 +59,7 @@ public class SchoolService {
 	private StudentDao studentDao = new StudentDao();
 	...
 }
-```  
+```
 StudentDao를 상속받아 사용할 일이 생겨 아래와 같은 StudentCachedDao 생성했다.
 ```java
 public class StudentCachedDao extends StudentDao {
@@ -75,7 +75,7 @@ public class SchoolService {
 	private StudentDao studentDao = new StudentCachedDao();
 }
 ```
-- 위와 같이 의존 객체가 수정될 때마다 의존 객체를 생성하는 모든 클래스를 뒤져 수정해주어야 한다.
+위와 같이 의존 객체가 수정될 때마다 의존 객체를 생성하는 **모든 클래스를 뒤져 수정**해주어야 한다.
 
 #### 의존 객체 주입 방식을 사용할 때
 ```java
@@ -100,7 +100,8 @@ StudentDao studentDao = new StudentDao();
 StudentService studentService = new StudentService(studentDao);
 SchoolService schoolService = new SchoolService(studentDao);
 ```
-- StudentCachedDao를 사용하기 위해 수정되는 코드는 각 클래스가 아닌 의존 객체를 주입하는 시점이다.
+
+StudentCachedDao를 사용하기 위해 수정되는 코드는 **각 클래스가 아닌 의존 객체를 주입하는 시점**이다.
 ```java
 StudentDao studentDao = new StudentCachedDao(); // 해당 라인만 수정
 StudentService studentService = new StudentService(studentDao);
