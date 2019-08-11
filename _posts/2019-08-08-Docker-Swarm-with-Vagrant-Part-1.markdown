@@ -48,7 +48,7 @@ Virtualbox 를 사용하기 위해 Hyper-V 가 걸림돌이 됩니다. 쿨하게
 - Viemo : Babun 시연 영상
 
 <div style="text-align:center;"> <!-- vimeo iframe 중앙 설정 -->
-<iframe src="https://player.vimeo.com/video/95045348" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen ></iframe>
+<iframe src="https://player.vimeo.com/video/95045348" width="100%" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen ></iframe>
 </div>
 
 ### babun 이슈 [PROJECT_DISCONTINUED]
