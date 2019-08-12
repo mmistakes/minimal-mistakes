@@ -165,7 +165,7 @@ Error response from daemon: Could not attach to network test-cluster-net2: rpc e
 
 그렇다면, 어떻게 해야 우리의 `alpine1` 컨테이너는 스웜 서비스의 `my-nginx` 웹 서비스와 통신할 수 있을까요? 다음 실습 내용을 정독해 주세요.
 
-## 2. 오버레이 네트워크와 attachable 플래그
+### 2. 오버레이 네트워크와 attachable 플래그
 
 정답은 사용자 정의 네트워크 드라이버 생성 시 지정할 수 있는 `--attachable` 플래그(옵션)입니다. 이제 우리는 새로운 오버레이 네트워크를 생성할텐데요. 차이점이 있다면 `--attachable` 을 단순히 표기하는 정도입니다. 그러나 결과는 완전히 다릅니다.
 
