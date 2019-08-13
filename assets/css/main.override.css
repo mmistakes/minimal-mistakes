@@ -2,6 +2,16 @@
 	padding-right:  0px !important;
 }
 
+@media (min-width: 64em)
+.page {
+	padding-right: 0px !important;
+}
+
+@media (min-width: 80em)
+.page {
+	padding-right: 0px !important;
+}
+
 .layout--single li ul {
 	margin-top: 0.1em;
 }
