@@ -1,15 +1,9 @@
-.page .archive {
+.page {
 	padding-right:  0px !important;
 }
 
-@media (min-width: 64em)
-.page {
-	padding-right: 0px !important;
-}
-
-@media (min-width: 80em)
-.page {
-	padding-right: 0px !important;
+.archive {
+	padding-right:  0px !important;
 }
 
 .layout--single li ul {
