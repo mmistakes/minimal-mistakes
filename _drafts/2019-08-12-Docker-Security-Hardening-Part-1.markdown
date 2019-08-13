@@ -3,7 +3,7 @@ layout: post
 title:  "Docker 보안 강화 Part 1"
 subtitle: "Docker Security Hardening Part-1"
 author: "코마 (gbkim1988@gmail.com)"
-date:   2019-08-06 00:00:00 +0900
+date:   2019-08-12 00:00:00 +0900
 categories: [ "docker", "security", "hardening"]
 excerpt_separator: <!--more-->
 ---
@@ -40,9 +40,20 @@ excerpt_separator: <!--more-->
 
 이글을 쓰는 시점에서 최신 이슈를 살펴보니, 역시 발표된 취약점이 있습니다. 공개된 취약점 식별 번호는 `CVE-2019-5736` 입니다.
 
+아래의 경로에 **CVE-2019-5736 PoC with Vagrant, Docker** 을 참조하시면 정확한 테스트 방법이 있으므로 이를 참조하시면 좋을 것 같습니다.
+
+<!-- @TODO: Docker 컨테이너 탈출 취약점이랑 Docker 보안 하드닝관련 내용을 동시에 작성해야함. -->
+
+- [Docker 컨테이너 탈출 취약점(CVE-2019-5736) 분석 및 테스트배드]({% link _.drafts/2019-08-14-CVE-2019-5736-PoC-With-Vagrant-And-Docker.markdown %})
+
 - [CVE-2019-5736 : PoC](https://gist.github.com/bcb079e04c2a3101c422be07a262627c.git)
 - [lxc : commit 내용](https://github.com/lxc/lxc/commit/6400238d08cdf1ca20d49bafb85f4e224348bf9d)
 
+
+
+## 취약점 테스트
+
+리눅스 가상 머신을 생성하고 Provisioning 시에 docker-ce 중에 버전이 낮은 것을 설치해 보겠습니다. 그리고 취약점 코드가 어떻게 동작하는지 살펴보겠습니다.
 
 # 마무리
 
