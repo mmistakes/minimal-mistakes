@@ -6,17 +6,8 @@
 - title: Visit
   url: /visit/
 
-- title: Resources
-  url: /resources/
-
-- title: Blog
-  url: /blog/
-
 - title: Contact
   url: /contact/
 
-- title: Search
-  url: /search/
-
 - title: GitHub
-  url: https://github.com/whitakerlab
+  url: https://github.com/phuycke
