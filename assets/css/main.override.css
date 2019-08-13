@@ -1,3 +1,11 @@
 .page .archive {
 	padding-right:  0px !important;
 }
+
+.layout--single li ul {
+	margin-top: 0.1em;
+}
+
+.layout--single ul li {
+	margin-bottom: 0.3em;
+}
