@@ -1,12 +1,22 @@
-# main links
-main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+# Site navigation links
+
+- title: Who's Who
+  url: /about/
+
+- title: Visit
+  url: /visit/
+
+- title: Resources
+  url: /resources/
+
+- title: Blog
+  url: /blog/
+
+- title: Contact
+  url: /contact/
+
+- title: Search
+  url: /search/
+
+- title: GitHub
+  url: https://github.com/whitakerlab

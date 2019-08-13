@@ -1,0 +1,11 @@
+/* ==========================================================================
+   Wells
+   ========================================================================== */
+
+/* Used to call out text in a subtle manner */
+
+.well {
+  padding: 20px;
+  border: 1px solid $comp-color;
+  @include rounded(4px);
+}

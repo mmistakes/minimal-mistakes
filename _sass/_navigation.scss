@@ -1,0 +1,116 @@
+/* ==========================================================================
+   Top navigation
+   ========================================================================== */
+
+.navigation-wrapper {
+  text-align: center;
+  @include clearfix;
+
+  ul {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    margin: 0 0 50px;
+    padding: 4px 20px;
+    background-color: $black;
+
+    @include media($medium) {
+      width: auto;
+      @include rounded(0 0 10px 10px);
+    }
+
+    @include clearfix;
+  }
+
+  li {
+    display: block;
+    float: left;
+    list-style: none;
+    text-align: center;
+    @include font-size(24,no);
+    text-transform: uppercase;
+    color: $white;
+
+    @include media($medium) {
+      @include font-size(14,no);
+    }
+
+    a:hover {
+      @include box-shadow($shadow: inset 0 0 1px $white);
+    }
+  }
+
+  a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 12px 20px;
+
+    @include media($medium) {
+      margin-bottom: 0;
+      padding: 6px 10px;
+    }
+
+    color: $white;
+    @include rounded(4px);
+
+    &:hover {
+      background-color: lighten($black, 10);
+    }
+  }
+}
+
+/*
+   Responsive navigation toggle
+   ========================================================================== */
+
+#site-nav {
+  display: none;
+  z-index: 5;
+
+  @include media($medium) {
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+  }
+
+  &.closed {
+
+    @include media($medium) {
+      display: block;
+    }
+  }
+
+  &.opened {
+    display: block;
+    max-height: 100%;
+
+    li {
+      float: none;
+
+      @include media($medium) {
+        float: left;
+      }
+    }
+  }
+}
+
+/* display when JavaScript is disabled */
+.no-js #site-nav {
+  display: block;
+}
+
+#nav-toggle {
+  z-index: 20;
+  display: block;
+  vertical-align: top;
+  margin: 0;
+  padding: 6px 20px;
+  background-color: $black;
+  height: 44px;
+  @include rounded(0);
+
+  @include media($medium) {
+    display: none;
+  }
+}

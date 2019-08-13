@@ -1,8 +1,55 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+sitemap: false
 ---
 
-@charset "utf-8";
+/*
+ *
+ *  So Simple
+ *
+ *  Designer: Michael Rose
+ *  Twitter: http://twitter.com/mmistakes
+ *
+*/
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
+@import "variables";
+
+/*
+   Vendor
+   ========================================================================== */
+
+@import "vendor/bourbon/bourbon"; /* Bourbon mixins (bourbon.io) */
+@import "grid-settings"; /* Bourbon Neat settings */
+@import "vendor/neat/neat"; /* Bourbon Neat grid mixins (neat.bourbon.io) */
+@import "vendor/font-awesome/font-awesome"; /* Font Awesome icons */
+@import "vendor/magnific-popup/magnific-popup"; /* Magnific Popup lightbox */
+
+/*
+   Global
+   ========================================================================== */
+
+@import "mixins";
+@import "reset";
+@import "base";
+
+/*
+   Components
+   ========================================================================== */
+
+@import "helpers";
+@import "buttons";
+@import "wells";
+@import "syntax";
+@import "forms";
+@import "notices"; /* notices and alerts */
+@import "animations";
+@import "masthead";
+@import "navigation";
+@import "search";
+@import "footer";
+
+/*
+   Page specific
+   ========================================================================== */
+
+@import "page"; /* layout and styles that apply to posts and pages */
+@import "archives"; /* archive pages (post/tag lists, etc) */

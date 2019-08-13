@@ -1,0 +1,89 @@
+/* ==========================================================================
+   Masthead
+   ========================================================================== */
+
+.masthead {
+  margin-top: 40px;
+  @include clearfix;
+
+  @include media($medium) {
+    margin-top: 0;
+  }
+
+  .wrap {
+    text-align: center;
+    max-width: em(440);
+    padding-right: 20px;
+    padding-left: 20px;
+
+    @include media($medium) {
+      max-width: em(728);
+      padding-right: 60px;
+      padding-left: 60px;
+    }
+
+    @include media($large) {
+      max-width: em(960);
+    }
+  }
+}
+
+/*
+   Site logo
+   ========================================================================== */
+
+.site-logo {
+
+  img {
+    width: 100px;
+    height: 100px;
+    @include animation-duration(1s);
+    @include animation-delay(.05s);
+    border: 4px solid $white;
+    @include rounded(100px); /* crops in a circle */
+
+    @include media($medium) {
+      width: 150px;
+      height: 150px;
+      @include rounded(150px); /* crops in a circle */
+    }
+
+    @include media($large) {
+      width: 200px;
+      height: 200px;
+      @include rounded(200px); /* crops in a circle */
+    }
+  }
+}
+
+/*
+   Site title/name
+   ========================================================================== */
+
+.site-title {
+  margin-bottom: 0;
+  @include animation-duration(1s);
+  @include animation-delay(.75s);
+
+  a {
+    color: $black;
+  }
+}
+
+/*
+   Site description text
+   ========================================================================== */
+
+.site-description {
+  margin-top: 0;
+  font-family: $alt-font;
+  @include font-size(16);
+  font-weight: 400;
+  font-style: italic;
+  @include animation-duration(1s);
+  @include animation-delay(1s);
+
+  @include media($medium) {
+    @include font-size(20);
+  }
+}

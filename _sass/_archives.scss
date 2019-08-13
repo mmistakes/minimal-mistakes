@@ -1,0 +1,88 @@
+/* ==========================================================================
+   Archive pages
+   ========================================================================== */
+
+
+
+
+/*
+   Post archive
+   ========================================================================== */
+
+.post-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  li {
+    padding: 8px 0;
+    border-bottom: 1px solid lighten($black,80);
+    border-bottom: 1px solid rgba($black,.10);
+    @include font-size(18,no);
+    @include clearfix;
+
+    > a {
+      border-bottom-width: 0; /* remove underlines from items in post indexes */
+    }
+  }
+
+  a > span {
+    float: right;
+  }
+
+  .entry-date {
+    @include font-size(14,no);
+    text-transform: uppercase;
+    display: none;
+
+    @include media($medium) {
+      display: inline;
+    }
+  }
+
+  /* post excerpt */
+  .excerpt {
+    display: block;
+    float: none;
+    @include font-size(14, no, 16);
+
+    @include media($medium) {
+      width: 70%;
+    }
+
+    @include media($large) {
+      width: 60%;
+    }
+  }
+}
+
+/*
+   Tag archive
+   ========================================================================== */
+
+.tag-box {
+  list-style: none;
+  margin: 0;
+  padding: 4px 0;
+  overflow: hidden;
+  @include clearfix;
+
+  &.inline li {
+    float: left;
+    @include font-size(14);
+    line-height: 2.5;
+  }
+
+  a {
+    padding: 4px 6px;
+    margin: 2px;
+    background-color: lighten($black, 90);
+    @include rounded(4px);
+    text-decoration: none;
+
+    span {
+      vertical-align: super;
+      @include font-size(10);
+    }
+  }
+}

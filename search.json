@@ -1,0 +1,25 @@
+---
+sitemap: false
+---
+
+[
+{% for post in site.posts %}
+  {% if post.title != null and post.title != empty and post.search_omit != true %}
+    {% if forloop.index > 1 %},{% endif %}{
+      "title"			: {{ post.title | jsonify }},
+      "link"			: "{{ site.url }}{{ post.url }}",
+      "excerpt"		: "{{ post.excerpt | markdownify | strip_html | strip_newlines | escape_once | remove: '\[' | remove: '\]' | remove: '\(' | remove: '\)' }}"
+    }
+  {% endif %}
+{% endfor %}
+
+{% for page in site.pages %}
+  {% if page.layout != 'none' and page.layout != 'none' and page.title != null and page.title != empty and page.search_omit != true %}
+    {% if forloop.index > 1 %},{% endif %}{
+      "title"			: {{ page.title | jsonify }},
+      "link"			: "{{ site.url }}{{ page.url | replace: 'index.html', '' }}",
+      "excerpt"		: "{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}"
+    }
+  {%endif%}
+{% endfor %}
+]

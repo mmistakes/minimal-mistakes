@@ -1,0 +1,349 @@
+/* ==========================================================================
+   Page/post layout and styling
+   ========================================================================== */
+
+/*
+   Main content
+   ========================================================================== */
+
+#main {
+	@include clearfix;
+}
+
+.entry,
+.hentry {
+	@include clearfix;
+	border-bottom: 1px solid lighten($black,80);
+	border-bottom: 1px solid rgba($black,.10);
+}
+
+/* feature image */
+
+.entry-feature-image {
+	margin: 20px 0 0;
+	width: 100%;
+
+	@include media($medium) {
+		margin-top: -75px; /* move up to be overlapped by site logo */
+	}
+
+	@include media($large) {
+		margin-top: -145px; /* move up further to be overlapped by site logo */
+	}
+}
+
+/* page header */
+
+.entry-header {
+	@include fill-parent;
+}
+
+/* tag listing in page header */
+
+.entry-tags {
+	margin: 2em 0 0;
+  padding: 0;
+	text-transform: uppercase;
+	@include font-size(16);
+	font-weight: 600;
+
+  a {
+    color: $text-color;
+    padding: 0 5px;
+  }
+
+  li {
+    display: inline-block;
+    margin-bottom: 0;
+
+    &:before {
+      content: "\2022";
+    }
+
+    &:first-child {
+
+      &:before {
+        content: "";
+      }
+
+      a {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+/* page title */
+
+span + .entry-title {
+	margin-top: 0;
+}
+
+.entry-title {
+	font-family: $alt-font;
+	font-style: italic;
+	@include font-size(36,yes,36);
+	font-weight: 400;
+	line-height: 1;
+	letter-spacing: -3px;
+
+	a {
+		color: $black;
+		text-decoration: underline;
+	}
+
+	@include media($medium) {
+		@include font-size(52,yes,54);
+	}
+
+	@include media($large) {
+		@include font-size(68,yes,72);
+	}
+}
+
+/* page/post wrapper */
+
+.entry-wrapper {
+	@include outer-container;
+	margin-top: 0;
+	margin-bottom: 3em;
+	padding-right: $gutter;
+	padding-left: $gutter;
+}
+
+/* page/post meta content (date, author, etc) */
+
+.entry-meta {
+	@include span-columns(12);
+	text-transform: uppercase;
+	@include font-size(14);
+
+	a {
+		color: $text-color;
+	}
+
+	@include media($large) {
+		@include span-columns(2.5);
+	}
+
+	& > span {
+		padding: 0 20px 10px 0;
+		display: inline-block;
+
+		@include media($large) {
+			display: block;
+			padding: 8px 0;
+			border-bottom: 1px solid lighten($black,80);
+			border-bottom: 1px solid rgba($black,.10);
+		}
+	}
+}
+
+/* author avatar (circular) */
+
+.bio-photo {
+	display: none;
+
+	@include media($large) {
+		display: block;
+		width: 150px;
+		height: 150px;
+		margin-bottom: 10px;
+		@include rounded(150px);
+		@include clearfix;
+	}
+}
+
+
+/* feature image credit */
+
+.image-credit {
+  margin: 0 auto;
+  max-width: 440px;
+  padding-top: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: right;
+  @include font-size(12, no);
+  line-height: 1.3;
+  color: lighten($text-color, 30);
+  @include clearfix();
+
+  @include media($medium) {
+    max-width: 760px;
+    padding-right: 60px;
+    padding-left: 60px;
+    @include font-size(14, no);
+  }
+
+  @include media($large) {
+    max-width: 960px;
+  }
+
+  a {
+    color: lighten($text-color, 30);
+  }
+}
+
+/* main content block */
+
+.entry-content {
+	@include span-columns(12);
+
+	p:first-child {
+		margin-top: 0;
+	}
+
+	@include media($large) {
+		@include span-columns(9.5);
+	}
+
+	/* nice link underlines */
+  p > a,
+	li > a {
+		border-bottom: 1px dotted lighten($link-color, 50);
+
+		&:hover {
+			border-bottom-style: solid;
+		}
+	}
+}
+
+/*
+   Disqus
+   ========================================================================== */
+
+#disqus_thread {
+	margin-top: 2em;
+}
+
+/*
+   Pagination
+   ========================================================================== */
+
+.pagination {
+	margin-top: 2em;
+	text-align: center;
+}
+
+/*
+   Overrides
+   ========================================================================== */
+
+/* adjust width for lack of meta/author column */
+
+#home,
+#page {
+
+	.entry-wrapper {
+		max-width: em(760);
+	}
+
+	.entry-title {
+		text-align: center;
+		max-width: 100%;
+	}
+
+	.entry-content {
+		@include span-columns(12);
+	}
+}
+
+/*
+   Kramdown generated table of contents
+   ========================================================================== */
+
+#markdown-toc {
+	font-family: $alt-font;
+	margin-top: $gutter;
+	margin-bottom: $gutter;
+	padding-left: 0;
+	border: 1px solid $border-color;
+	border-radius: $border-radius;
+
+  ul {
+  	list-style-type: none;
+  	padding-left: 0;
+  }
+
+  li {
+    @include font-size(16,no,18);
+    border-bottom: 1px solid $border-color;
+    list-style-type: none;
+  }
+
+  h6 {
+    margin: 0;
+    padding: (.25 * $gutter) (.5 * $gutter);
+    background: $table-stripe-color;
+  }
+
+  a {
+    display: block;
+    padding: (.25 * $gutter) (.5 * $gutter);
+    border-left: 2px solid transparent;
+    border-bottom: 0 solid transparent;
+
+    &:hover,
+    &:focus {
+      background: lighten($border-color,5);
+    }
+  }
+}
+
+/*
+   Tables
+   ========================================================================== */
+
+/** For nicer looking tables apply the .table class
+ *  Example:
+ *  <table class="table">
+ *    <tr>
+ *      <td>cell1</td>
+ *      <td>cell2</td>
+ *      <td>cell3</td>
+ *    </tr>
+ *  </table>
+*/
+
+.table {
+	border-collapse: collapse;
+	margin: ((0px + $doc-line-height) / 2) 0;
+	margin: ((0rem + ($doc-line-height / $doc-font-size)) / 2) 0;
+	width: 100%;
+
+	tbody {
+
+		tr:hover > td, tr:hover > th {
+			background-color: $table-hover-color;
+		}
+	}
+
+	thead {
+
+		tr:first-child td {
+			border-bottom: 2px solid $table-border-color;
+		}
+	}
+
+	th {
+		padding: (0px + $doc-line-height) / 2;
+		padding: (0rem + ($doc-line-height / $doc-font-size)) / 2;
+		font-family: $alt-font;
+		font-weight: bold;
+		text-align: left;
+		background-color: $table-header-color;
+		border-bottom: 1px solid darken($border-color, 15%);
+	}
+
+	td {
+		border-bottom: 1px solid $border-color;
+		padding: (0px + $doc-line-height) / 2;
+		padding: (0rem + ($doc-line-height / $doc-font-size)) / 2;
+		@include font-size(18);
+	}
+
+	tr, td, th {
+		vertical-align: middle;
+	}
+}

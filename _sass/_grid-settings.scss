@@ -1,0 +1,9 @@
+@import "vendor/neat/neat-helpers";
+
+// Change the grid settings
+$visual_grid: false;
+$max-width: em(960);
+
+// Define your breakpoints
+$medium: new-breakpoint(min-width em(768) 12);
+$large: new-breakpoint(min-width em(1000) 12);

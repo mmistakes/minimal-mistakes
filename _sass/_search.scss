@@ -1,0 +1,42 @@
+/* ==========================================================================
+   Search
+   ========================================================================== */
+
+.search-wrapper {
+  @include outer-container;
+  margin-top: 0;
+  padding-right: $gutter;
+  padding-left: $gutter;
+  height: 1px;
+}
+
+/*
+   Google search form
+   ========================================================================== */
+
+#goog-fixurl {
+
+  ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+
+    li {
+      list-style-type: none;
+    }
+  }
+}
+
+#goog-wm-qt {
+  width: auto;
+  margin-right: 10px;
+  padding: 8px 10px;
+  @include font-size(14);
+  border-width: 2px;
+  border-radius: $border-radius;
+}
+
+/* button */
+#goog-wm-sb {
+  @extend .btn;
+}
