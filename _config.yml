@@ -5,7 +5,7 @@ locale: en_US
 description: Learning by synchrony
 logo: site-logo.png
 search: true
-url: https://phuycke.github.io
+url: https://cogcomneurosci.github.io/
 
 # Jekyll configuration
 
@@ -34,7 +34,7 @@ mathjax: true
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", ".less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
 
-repository: phuycke/phuycke.github.io
+repository: CogComNeuroSci/CogComNeuroSci.github.io
 
 # Site owner
 owner:
