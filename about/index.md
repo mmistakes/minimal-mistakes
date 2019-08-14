@@ -102,7 +102,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ### Fabrice Luyckx
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
+<img src="/images/Profile_pic_Fabrice.jpg" alt="Fabrice Luyckx" width="50%" align="left" hspace="20" vspace="20">
+
+I am currently in the final stages of my DPhil at Oxford University in the Summerfield lab. My work focuses on how information is structured and transformed in the brain during decision making, mainly using neurophysiological measures (EEG) and computational modelling. One line of research has looked at how structure (e.g. a line, circle, hierarchy, ...) is represented in the brain, for example whether decisions about different categories with a shared underlying structure rely on the same neural signals [(Luyckx et al., eLife, 2019)](https://elifesciences.org/articles/42816). A different line of research has focused on the neural mechanisms of value-based decision-making, specifically how neural patterns can shed a light on why we make economically "irrational" choices [(Luyckx et al., bioRxiv, 2019)](https://www.biorxiv.org/content/10.1101/642371v3).  
+
+Outside of work, I like to play the strings on my guitar or squash racket.
+
+__More information:__  
+* GitHub: [@FabriceLuyckx](https://github.com/FabriceLuyckx)
+* Twitter: [@NeuroLuyckx](https://twitter.com/NeuroLuyckx)
+* Email: [fabrice.luyckx@psy.ox.ac.uk](mailto:fabrice.luyckx@psy.ox.ac.uk)
 
 ## Internship students
 
