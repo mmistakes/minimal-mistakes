@@ -1,9 +1,20 @@
 
 - [Principal Investigator](#Principal-Investigator)
 - [Post-doctoral researchers](#Post-doctoral-researchers)
-- [PhD students](#PhD-students)
-- [Visiting researchers](#Visiting)
-- [Internship students](#Internship-students)   
+  * [Anna Marzecova](#Anna-Marzecova)
+  * [Cristian Buc Calderon](#Cristian-Buc-Calderon)
+  * [Elise Lesage](#Elise-Lesage)
+  * [Esther De Loof](#Esther-De-Loof)
+  * [Jacki Janowich](#Jacki-Janowich)
+  * [Kobe Desender](#Kobe-Desender)
+  * [Mehdi Senoussi](#Mehdi-Senoussi)
+- [PhD students](#heading-2)
+  * [Kate Ergo](#Kate-Ergo)
+  * [Pieter Huycke](#Pieter-Huycke)
+  * [Pieter Verbeke](#Pieter-Verbeke)
+- [Visiting researchers](#Visiting-researchers)
+  * [Fabrice Luyckx](#Fabrice-Luyckx)
+- [Internship students](#Internship-students)
 {:toc}
 
 ## Principal Investigator
@@ -65,7 +76,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
 
-## Visiting
+## Visiting researchers
 
 ### Fabrice Luyckx
 
