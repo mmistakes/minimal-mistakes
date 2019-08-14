@@ -1,39 +1,9 @@
 # Authors
 
-kirstie_whitaker:
-  name: Kirstie Whitaker
-  email: kwhitaker@turing.ac.uk
-  bio: "Research fellow at Alan Turing Institute interested in reproducible research, open science and brain development."
-  avatar: KW_OpenCon2016_Square.jpg
-  twitter: kirstie_j
-
-isla_staden:
-  name: Isla Staden
-  email: istaden@gmail.com
-  bio: "Research Assistant at the Alan Turing Institute interested in data-science, brain networks and topology"
-  avatar: IS_whitakerblogprofile.jpg
-  twitter: islastaden
-
-ang_li: # No spaces please
-  name: Ang Li # Your name
-  email: ali@turing.ac.uk # Your email
-  bio: "Visting student at Alan Turing Institute and Ph.D candidate at Chinese Academy of Sciences"
-  avatar: Tongyang.jpeg
-  twitter: abc782544421
-
-monicayao:
-  name: Monica Yao
-  email: myao@g.hmc.edu
-  bio: "Undergraduate student at Harvey Mudd College interested in the uses of machine learning in medical imaging"
-  avatar: moraga_steps.jpg
-  twitter: N/A
-
-ruslan_yermakov:
-  name: Ruslan Yermakov
-  email: yermakovruslan@gmail.com
-  bio: "GSoC Student and a member of the Whitaker lab over the summer to contribute to the Scona project"
-  avatar: Ruslan_blogprofile.jpg
-  twitter: wingedRuslan
+pieter_huycke:
+  name: Pieter Huycke
+  email: pieter.huycke@ugent.be
+  bio: "PhD student at Verguts lab (Department of Experimental Psychology, Ghent University)"
 
 #=============================================
 # Template profile - copy and paste this above
