@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-last_modified_at: 2019-01-15T08:31:44-05:00
+last_modified_at: 2019-07-24T10:15:47-04:00
 toc: true
 ---
 
@@ -133,6 +133,12 @@ _Example:_ `title_separator: "|"` would produce page titles like `Sample Page | 
 
 **Note:** Long site titles have been known to break the masthead layout. Avoid adding a long "tagline" to the title prevent this from happening eg. `My Awesome Site is the Best Because I Say So".
 {: .notice--warning}
+
+### Site subtitle
+
+A short tagline that appears below the title in site masthead.
+
+_Example:_ `subtitle: "Version 2.0"`
 
 ### Site name
 
@@ -677,7 +683,7 @@ twitter:
 
 And if I assign `@mmistakes` as an author account it will appear in the Twitter Card along with `@mmistakes-theme`, attributed as a creator of the page being shared.
 
-**Note**: You need to [apply for Twitter Cards](https://dev.twitter.com/docs/cards) and validate they're working on your site before they will begin showing up.
+**Note**: You need to validate cards are working and have Twitter [approve Player Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/player-card) before they will begin showing up.
 {: .notice--warning}
 
 ##### Facebook Open Graph
@@ -797,7 +803,7 @@ Author links are all optional, include the ones you want visible under the `auth
 author:
   name: "Your Name"
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "I am an amazing person."
+  bio: "I am an **amazing** person." # Note: Markdown is allowed
   location: "Somewhere"
   links:
     - label: "Made Mistakes"
@@ -855,7 +861,7 @@ Again nothing out of the ordinary here as the theme adheres to the defaults used
 
 ## Front Matter Defaults
 
-To save yourself time setting [Front Matter Defaults](https://jekyllrb.com/docs/configuration/#front-matter-defaults) for posts, pages, and collections is the way to go. Sure you can assign layouts and toggle settings like **reading time**, **comments**, and **social sharing** in each file, but that's not ideal.
+To save yourself time setting [Front Matter Defaults](https://jekyllrb.com/docs/configuration/front-matter-defaults/) for posts, pages, and collections is the way to go. Sure you can assign layouts and toggle settings like **reading time**, **comments**, and **social sharing** in each file, but that's not ideal.
 
 Using the `default` key in `_config.yml` you could set the layout and enable author profiles, reading time, comments, social sharing, and related posts for all posts --- in one shot.
 
