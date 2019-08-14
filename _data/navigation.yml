@@ -2,15 +2,6 @@
 
 - title: Who's Who
   url: /about/
-  subitems:
-    - text: Principle Investigator
-      url: /about/principle_investigator
-    - text: Post-doctoral researchers
-      url: /about/post_docs
-    - text: PhD candidates
-      url: /about/phd
-    - text: Visiting researchers
-      url: /about/visiting
 
 - title: Visit
   url: /visit/
