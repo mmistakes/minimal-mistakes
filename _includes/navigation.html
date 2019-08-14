@@ -1,17 +1,24 @@
 <div class="navigation-wrapper">
 	<nav role="navigation" id="site-nav" class="animated drop">
 	    <ul>
-      {% for link in site.data.navigation %}
-		    {% if link.url contains 'http' %}
-		        {% assign domain = '' %}
-		        {% else %}
-		        {% assign domain = site.url %}
-		    {% endif %}
-		    <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
+		{% for link in site.data.navigation %}
+			<h3>{{ link.title }}</h3>
+			  <ul>
+				{% for item in item.subitems %}
+                      {% if item.url contains 'http' %}
+		                  {% assign domain = '' %}
+		                  {% else %}
+		                  {% assign domain = site.url %}
+		               {% endif %}
+		               <li><a href="{{ domain }}{{ item.url }}" {% if item.url contains 'http' %}target="_blank"{% endif %}>{{ item.title }}</a></li>
+                {% endfor %}
+			  </ul>
 		  {% endfor %}
 	    </ul>
 	</nav>
 </div><!-- /.navigation-wrapper -->
+
+
 
 {% include browser-upgrade.html %}
 
