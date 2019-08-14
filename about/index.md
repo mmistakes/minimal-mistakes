@@ -102,7 +102,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ### Fabrice Luyckx
 
-<img src="/images/profile_pic_Fabrice.jpg" alt="Fabrice Luyckx" width="50%" align="left" hspace="20" vspace="20">
+<img src="/images/profile_pic_Fabrice.jpg" alt="Fabrice Luyckx" width="50%" height="50%" align="left" hspace="20" vspace="20">
 
 I am currently in the final stages of my DPhil at Oxford University in the Summerfield lab. My work focuses on how information is structured and transformed in the brain during decision making, mainly using neurophysiological measures (EEG) and computational modelling. One line of research has looked at how structure (e.g. a line, circle, hierarchy, ...) is represented in the brain. For example we studied whether decisions about different categories with a shared underlying structure rely on the same neural signals [(Luyckx et al., eLife, 2019)](https://elifesciences.org/articles/42816). A different line of research has focused on the neural mechanisms of value-based decision making, specifically how neural patterns can shed a light on why we make economically "irrational" choices [(Luyckx et al., bioRxiv, 2019)](https://www.biorxiv.org/content/10.1101/642371v3).  
 
