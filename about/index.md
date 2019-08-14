@@ -64,6 +64,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ## PhD students
 
+<img src="/images/profile_pic_kate.jpg" alt="Kate Ergo" width="50%" align="left" hspace="20" vspace="20">
+
 ### Kate Ergo
 
 My research focuses on how reward and reward prediction errors (i.e., mismatches between reward outcome and reward expectation) influence declarative memory (e.g., learning a foreign language). Using a Dutch-Swahili word learning paradigm, we found that word pair recognition increases linearly with larger and more positive RPEs [(De Loof et al., 2018)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0189212). We also found neural oscillatory signatures that confirm the experience of signed RPEs (SRPEs) boosting declarative memory [(Ergo et al., 2019)](https://www.sciencedirect.com/science/article/pii/S1053811918320676). My goal is to further investigate the robustness and generality of these findings. To study how RPEs influence declarative memory, I use both behavioral and EEG studies. Recently, I also became interested in neurostimulation techniques, such as tACS. My PhD is funded by the Flanders Fund for Scientific Research (FWO).
