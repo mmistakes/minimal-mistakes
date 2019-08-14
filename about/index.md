@@ -1,4 +1,3 @@
-# List of lab members
 
 - [Principal investigator](#Principal-Investigator)
 - [Post-doctoral researchers](#Post-doctoral-researchers)
@@ -18,9 +17,9 @@
 - [Internship students](#Internship-students)
 {:toc}
 
-## Principal Investigator <a name="Principal-Investigator"></a>
+## Principal Investigator
 
-### Tom Verguts 
+### Tom Verguts
 
 <img src="/images/profile_pic_tom.jpg" alt="Tom Verguts" width="50%" align="left" hspace="20" vspace="20">
 
@@ -33,39 +32,39 @@ __More information:__
 * GitHub: [@tomverguts](https://github.com/tomverguts)
 * Email: [Tom.Verguts@UGent.be](mailto:Tom.Verguts@UGent.be)
 
-## Post-doctoral researchers <a name="Post-doctoral-researchers"></a>
+## Post-doctoral researchers
 
-### Anna Marzecova <a name="Anna-Marzecova"></a>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
-
-### Cristian Buc Calderon <a name="Cristian-Buc-Calderon"></a>
+### Anna Marzecova
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
 
-### Elise Lesage <a name="Elise-Lesage"></a>
+### Cristian Buc Calderon
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
 
-### Esther De Loof <a name="Esther-De-Loof"></a>
+### Elise Lesage
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
 
-### Jacki Janowich <a name="Jacki-Janowich"></a>
+### Esther De Loof
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
 
-### Kobe Desender <a name="Kobe-Desender"></a>
+### Jacki Janowich
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
 
-### Mehdi Senoussi <a name="Mehdi-Senoussi"></a>
+### Kobe Desender
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
 
-## PhD students <a name="PhD-students"></a>
+### Mehdi Senoussi
 
-### Kate Ergo <a name="Kate-Ergo"></a>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
+
+## PhD students
+
+### Kate Ergo
 
 My research focuses on how reward and reward prediction errors (i.e., mismatches between reward outcome and reward expectation) influence declarative memory (e.g., learning a foreign language). Using a Dutch-Swahili word learning paradigm, we found that word pair recognition increases linearly with larger and more positive RPEs [(De Loof et al., 2018)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0189212). We also found neural oscillatory signatures that confirm the experience of signed RPEs (SRPEs) boosting declarative memory [(Ergo et al., 2019)](https://www.sciencedirect.com/science/article/pii/S1053811918320676). My goal is to further investigate the robustness and generality of these findings. To study how RPEs influence declarative memory, I use both behavioral and EEG studies. Recently, I also became interested in neurostimulation techniques, such as tACS. My PhD is funded by the Flanders Fund for Scientific Research (FWO).
 
@@ -77,20 +76,20 @@ __More information:__
 * Twitter: [@KateErgo](https://twitter.com/KateErgo)
 * Email: [Kate.Ergo@UGent.be](mailto:Kate.Ergo@UGent.be)
 
-### Pieter Huycke <a name="Pieter-Huycke"></a>
+### Pieter Huycke
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
 
-### Pieter Verbeke <a name="Pieter-Verbeke"></a>
+### Pieter Verbeke
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
 
-## Visiting researchers <a name="Visiting-researchers"></a>
+## Visiting researchers
 
-### Fabrice Luyckx <a name="Fabrice-Luyckx"></a>
+### Fabrice Luyckx
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
 
-## Internship students <a name="Internship-students"></a>
+## Internship students
 
 Currently, no internship students are active in our lab.
