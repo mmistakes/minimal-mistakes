@@ -1,6 +1,7 @@
 
-- [Principal investigator](#Principal-Investigator)
-- [Post-doctoral researchers](#Post-doctoral-researchers)
+
+* [Principal investigator](#Principal-Investigator)
+* [Post-doctoral researchers](#Post-doctoral-researchers)
   * [Anna Marzecova](#Anna-Marzecova)
   * [Cristian Buc Calderon](#Cristian-Buc-Calderon)
   * [Elise Lesage](#Elise-Lesage)
@@ -8,13 +9,13 @@
   * [Jacki Janowich](#Jacki-Janowich)
   * [Kobe Desender](#Kobe-Desender)
   * [Mehdi Senoussi](#Mehdi-Senoussi)
-- [PhD students](#PhD-students)
+* [PhD students](#PhD-students)
   * [Kate Ergo](#Kate-Ergo)
   * [Pieter Huycke](#Pieter-Huycke)
   * [Pieter Verbeke](#Pieter-Verbeke)
-- [Visiting researchers](#Visiting-researchers)
+* [Visiting researchers](#Visiting-researchers)
   * [Fabrice Luyckx](#Fabrice-Luyckx)
-- [Internship students](#Internship-students)
+* [Internship students](#Internship-students)
 {:toc}
 
 ## Principal Investigator
