@@ -15,7 +15,7 @@
 - [Visiting researchers](##Visiting-researchers)
   * [Fabrice Luyckx](###Fabrice-Luyckx)
 - [Internship students](##Internship-students)
-<!-- toc -->
+{:toc}
 
 ## Principal Investigator
 
