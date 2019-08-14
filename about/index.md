@@ -1,16 +1,11 @@
 
----
-layout: page
-title: Verguts lab members
-excerpt: "Verguts lab - members"
----
-
-# Table of Contents
+# Our lab members
 - [Principal Investigator](#Principal-Investigator)
 - [Post-doctoral researchers](#Post-doctoral-researchers)
 - [PhD students](#PhD-students)
 - [Visiting researchers](#Visiting)
-- [Internship students](#Internship-students)
+- [Internship students](#Internship-students)   
+{:toc}
 
 ## Principal Investigator
 
