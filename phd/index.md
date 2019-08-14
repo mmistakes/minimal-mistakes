@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Verguts lab - PhD students
-excerpt: "Our PhD students."
+title: Our PhD students
+excerpt: "Verguts lab - PhD students"
 ---
 
 ### Pieter Verbeke

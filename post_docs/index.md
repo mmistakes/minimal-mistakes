@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Verguts lab - Post-Docs
-excerpt: "Our post-doctoral researchers"
+title: Our post-docs
+excerpt: "Verguts lab - post-docs"
 ---
 
 ### Anna Marzecova
