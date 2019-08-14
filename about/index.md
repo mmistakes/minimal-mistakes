@@ -1,5 +1,4 @@
 
-# Our lab members
 - [Principal Investigator](#Principal-Investigator)
 - [Post-doctoral researchers](#Post-doctoral-researchers)
 - [PhD students](#PhD-students)
