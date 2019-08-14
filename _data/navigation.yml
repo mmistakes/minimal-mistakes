@@ -1,13 +1,7 @@
 # Site navigation links
 
-- title: Principle Investigator
-  url: /principle_investigator/
-
-- title: Post-docs
-  url: /post_docs/
-
-- title: PhD students
-  url: /phd/
+- title: Who's who?
+  url: /about/
 
 - title: Visit
   url: /visit/
