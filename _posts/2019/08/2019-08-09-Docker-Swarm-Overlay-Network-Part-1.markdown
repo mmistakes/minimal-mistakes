@@ -61,7 +61,7 @@ excerpt_separator: <!--more-->
 
 실습 전에 방화벽 상태를 미리 점검해 볼까요? 만약에 여러분이 도커 스웜을 구성하지 않았다면 아래의 링크를 통해 20분 만에 도커 스웜을 구성해보세요.
 
-- [Vagrant 를 이용한 Docker Swarm 테스팅 (Windows 10)]({% link _posts/2019-08-08-Docker-Swarm-with-Vagrant-Part-1.markdown %})
+- [Vagrant 를 이용한 Docker Swarm 테스팅 (Windows 10)]({% link _posts/2019/08/2019-08-08-Docker-Swarm-with-Vagrant-Part-1.markdown %})
 
 - ufw enable 명령을 통해서 아래의 내용을 활성해 주세요
 

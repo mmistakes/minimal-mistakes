@@ -45,7 +45,7 @@ SEO 관점으로 유추하건데, 글의 내용을 요약하는 부분이 상당
 - choco
 
 > ⚠️ **경고**: 본 글은 [Vagrant 를 이용한 Docker Swarm 테스팅 (Windows 10)
-]({% link _posts/2019-08-08-Docker-Swarm-with-Vagrant-Part-1.markdown %}) 를 통해 환경을 구성해야 실습을 따라할 수 있습니다.
+]({% link _posts/2019/08/2019-08-08-Docker-Swarm-with-Vagrant-Part-1.markdown %}) 를 통해 환경을 구성해야 실습을 따라할 수 있습니다.
 
 ## 기본 Bridge 네트워크 사용하기
 
@@ -71,7 +71,7 @@ docker network ls | grep local
 
 출력 결과를 통해 우리가 다루려는 bridge 외에도 host, null 등의 네트워크가 보입니다. 네트워크들에 대한 자세한 내용은 아래의 링크에서 설명해 놓았으니 참고해 보도록 합니다.
 
-- [쇼핑몰 사례로 알아보는 Docker Swarm 과 Compose 의 차이점]({% link _posts/2019-08-07-Difference-between-Docker-Composer-N-Swarm.markdown %}#docker-network)
+- [쇼핑몰 사례로 알아보는 Docker Swarm 과 Compose 의 차이점]({% link _posts/2019/08/2019-08-07-Difference-between-Docker-Composer-N-Swarm.markdown %}#docker-network)
 
 host 와 none 는 완전한 네트워크는 아닙니다. 그러나 다음의 설명과 같은 역할을 위해서 필요한 네트워크 드라이버입니다.
 
