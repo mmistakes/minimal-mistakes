@@ -1,19 +1,104 @@
 [
   {
     "image_path": null,
-    "alt": "Halloween-Disco",
-    "title": "Halloween-Disco",
+    "alt": "Elternabend A2 17:30",
+    "title": "Elternabend A2 17:30",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=N2huYnBsMXNsZDhnZ3ZrcnN1YmtnMWpnMDggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=NWp0b2FhcnBqYjA0MWU3bnNiczVya3BnY2ggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
-      "date": null,
-      "date_time": "2019-10-25T17:00:00+02:00"
+      "date": "2019-08-19",
+      "date_time": null
     },
     "end": {
-      "date": null,
-      "date_time": "2019-10-25T19:00:00+02:00"
+      "date": "2019-08-20",
+      "date_time": null
     },
-    "created": "2019-01-28T11:35:03.000Z",
-    "updated": "2019-01-28T11:35:03.803Z"
+    "created": "2019-08-15T10:07:40.000Z",
+    "updated": "2019-08-15T10:07:47.759Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Elternabend 5b 18:00 Uhr",
+    "title": "Elternabend 5b 18:00 Uhr",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MWs5dDcxbHI3cGFpMm90MmNkYXMxcmlvMm4gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-08-20",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-08-21",
+      "date_time": null
+    },
+    "created": "2019-08-15T10:15:39.000Z",
+    "updated": "2019-08-15T10:15:44.653Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Elternabend 4b 18:00 Uhr",
+    "title": "Elternabend 4b 18:00 Uhr",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MW81ZzZha2VyMnNsYWNuaGRmNGtpbnVkYTEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-08-20",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-08-21",
+      "date_time": null
+    },
+    "created": "2019-08-15T10:14:37.000Z",
+    "updated": "2019-08-15T10:14:49.843Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Elternabend A4 17:00 Uhr",
+    "title": "Elternabend A4 17:00 Uhr",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=M2NlbXIzMDc2YThldGp1aDhqN3M3ZjBnZWIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-08-20",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-08-21",
+      "date_time": null
+    },
+    "created": "2019-08-15T10:08:53.000Z",
+    "updated": "2019-08-15T10:09:00.477Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Elternabend 6b 18:30 Uhr",
+    "title": "Elternabend 6b 18:30 Uhr",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NnJiZ2RyMnM1MWk1YzZsdmQxNTJnaXJpOGwgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-08-20",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-08-21",
+      "date_time": null
+    },
+    "created": "2019-08-15T10:16:52.000Z",
+    "updated": "2019-08-15T10:16:58.072Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Elternabend 5a 17:00 Uhr",
+    "title": "Elternabend 5a 17:00 Uhr",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=N3FucGFtNjIxaXJhbGs5ajcyYXN0NTk1aWkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-08-20",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-08-21",
+      "date_time": null
+    },
+    "created": "2019-08-15T10:15:09.000Z",
+    "updated": "2019-08-15T10:15:17.797Z"
   }
 ]
