@@ -1,5 +1,4 @@
-
-
+{:toc}
 * [Principal investigator](#Principal-Investigator)
 * [Post-doctoral researchers](#Post-doctoral-researchers)
   * [Anna Marzecova](#Anna-Marzecova)
@@ -16,7 +15,6 @@
 * [Visiting researchers](#Visiting-researchers)
   * [Fabrice Luyckx](#Fabrice-Luyckx)
 * [Internship students](#Internship-students)
-{:toc}
 
 ## Principal Investigator
 
