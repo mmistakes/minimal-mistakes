@@ -12,7 +12,7 @@
 3. [PhD students](#PhD-students)
     - [Kate Ergo](#Kate-Ergo)
     - [Pieter Huycke](#Pieter-Huycke)
-	- [Jonas Simoens(#Jonas-Simoens)
+	- [Jonas Simoens](#Jonas-Simoens)
 	- [Esin Turkakin](#Esin-Turkakin)
     - [Pieter Verbeke](#Pieter-Verbeke)
 4. [Visiting researchers](#Visiting-researchers)
