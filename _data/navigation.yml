@@ -3,8 +3,8 @@
 - title: Who's who?
   url: /about/
 
-- title: Visit
-  url: /visit/
+- title: Publications
+  url: /publications/
 
 - title: Teaching
   url: /teaching/
@@ -12,5 +12,8 @@
 - title: Contact
   url: /contact/
 
+- title: Visit
+  url: /visit/
+ 
 - title: GitHub
   url: https://github.com/CogComNeuroSci/CogComNeuroSci.github.io
