@@ -5,7 +5,7 @@ locale: en_US
 description: Learning adaptive behavior
 logo: site-logo.png
 search: true
-url: https://cogcomneurosci.github.io/
+url: https://cogcomneurosci.github.io
 
 # Jekyll configuration
 
