@@ -1,5 +1,22 @@
-* auto-gen TOC:
-{:toc}
+#### Our lab members
+
+1. [Principal investigator](#Principal-Investigator)
+2. [Post-doctoral researchers](#Post-doctoral-researchers)
+    - [Anna Marzecova](#Anna-Marzecova)
+    - [Cristian Buc Calderon](#Cristian-Buc-Calderon)
+    - [Elise Lesage](#Elise-Lesage)
+    - [Esther De Loof](#Esther-De-Loof)
+    - [Jacki Janowich](#Jacki-Janowich)
+    - [Kobe Desender](#Kobe-Desender)
+    - [Mehdi Senoussi](#Mehdi-Senoussi)
+3. [PhD students](#PhD-students)
+    - [Kate Ergo](#Kate-Ergo)
+    - [Pieter Huycke](#Pieter-Huycke)
+    - [Pieter Verbeke](#Pieter-Verbeke)
+4. [Visiting researchers](#Visiting-researchers)
+    - [Fabrice Luyckx](#Fabrice-Luyckx)
+5. [Internship students](#Internship-students)
+
 
 # Principal Investigator
 
