@@ -12,6 +12,8 @@
 3. [PhD students](#PhD-students)
     - [Kate Ergo](#Kate-Ergo)
     - [Pieter Huycke](#Pieter-Huycke)
+	- [Jonas Simoens(#Jonas-Simoens)
+	- [Esin Turkakin](#Esin-Turkakin)
     - [Pieter Verbeke](#Pieter-Verbeke)
 4. [Visiting researchers](#Visiting-researchers)
     - [Fabrice Luyckx](#Fabrice-Luyckx)
@@ -20,7 +22,7 @@
 
 # Principal Investigator
 
-## Tom Verguts
+# Tom Verguts
 
 <img src="/images/profile_pic_tom.jpg" alt="Tom Verguts" width="50%" align="left" hspace="20" vspace="20">
 
@@ -35,37 +37,37 @@ __More information:__
 
 # Post-doctoral researchers
 
-## Anna Marzecova
+# Anna Marzecova
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
 
-## Cristian Buc Calderon
+# Cristian Buc Calderon
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
 
-## Elise Lesage
+# Elise Lesage
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
 
-## Esther De Loof
+# Esther De Loof
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
 
-## Jacki Janowich
+# Jacki Janowich
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
 
-## Kobe Desender
+# Kobe Desender
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
 
-## Mehdi Senoussi
+# Mehdi Senoussi
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
 
 # PhD students
 
-## Kate Ergo
+# Kate Ergo
 
 <img src="/images/profile_pic_kate.jpg" alt="Kate Ergo" width="50%" align="left" hspace="20" vspace="20">
 
@@ -79,7 +81,7 @@ __More information:__
 * Twitter: [@KateErgo](https://twitter.com/KateErgo)
 * Email: [Kate.Ergo@UGent.be](mailto:Kate.Ergo@UGent.be)
 
-## Pieter Huycke
+# Pieter Huycke
 
 <img src="/images/profile_pic_pieter_h.jpg" alt="Pieter Huycke" width="50%" align="left" hspace="20" vspace="20">
 
@@ -93,21 +95,21 @@ __More information:__
 * GitHub: [@phuycke](https://github.com/phuycke)
 * Email: [Pieter.Huycke@UGent.be](mailto:Pieter.Huycke@UGent.be)
 
-## Jonas Simoens
+# Jonas Simoens
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
 
-## Esin Turkakin
+# Esin Turkakin
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
 
-## Pieter Verbeke
+# Pieter Verbeke
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
 
 # Visiting researchers
 
-## Fabrice Luyckx
+# Fabrice Luyckx
 
 <img src="/images/profile_pic_Fabrice.jpg" alt="Fabrice Luyckx" width="25%" align="left" hspace="20" vspace="20">
 
