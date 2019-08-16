@@ -8,39 +8,55 @@
 ## What is this GitHub page about?   
 
 This GitHub page represents the code to keep the [Verguts lab website](https://cogcomneurosci.github.io/) online.
-Mind that _everyone_ is able to contribute to this page.   
+Mind that _everyone_ (in the CCNS organization) is able to contribute to this page.   
+
 How?   
 This is explained immediately below.
 
 ## Contributing to our website
 
 Sometimes you want to help out, but you don't know where to start.   
-Therefore, we write this small tutorial to make sure that you are able to suggest edits while at the same time preventing the site from breaking/crashing.
+Therefore, I wrote this small tutorial to make sure that you are able to suggest edits while at the same time preventing the site from breaking/crashing.
 
 ### Working on your own copy of the website
 
 --- 
 
 **Disclaimer   
-We encourage you to work from a branch, as this reduces the chances that something weird happens to the website. Commiting changes from forks protects the master branch by checking compatibility first, while at the same time blocking force pushes (i.e. pushes that might introduce error).**
+We encourage you to edit the website through your own personal fork, as this reduces the chances that something weird happens to the website. Committing changes from forks protects the master branch by checking compatibility first, while at the same time blocking force pushes (i.e. edits that are not reviewed and immediately alter the master branch).**
 
 ---
 
 #### Click and play
 
-This guide is for people who prefer working on the GitHub main page.
+This guide is for people who prefer working on the GitHub main page.   
 You don't have to download GitHub Desktop or Git to follow this guide.
 
-- Go to the [GitHub root directory](https://github.com/CogComNeuroSci/CogComNeuroSci.github.io)
+- Go to the [master branch](https://github.com/CogComNeuroSci/CogComNeuroSci.github.io) of our website
 - Click on **Fork** in the upper right corner
 - Select your own profile (in my case, that would be _phuycke_)
 - Go to your newly made fork of the root directory on your own profile
-- Make some changes on your personal fork
-- Press **commit** in the lower right corner to confirm the changes
-- Press **pull request**
+    - i.e. go to your own GitHub page and open "CogComNeuroSci.github.io"
+- Alter your "Who's who"-section (see below for specific guide)
+    - On your personal copy (i.e. the fork) of the master page, go the the /about folder
+    - Click on __index.md__
+    - Click on the __pencil__ symbol
+    - Scroll towards your part
+    - Make changes to your description
+        - For aid on how to do this, look at already filled in examples (Tom, Kate, Pieter H and Fabrice)
+    - Refer to your photo by writing 'profile_pic_(your name).jpg' in the ```HTML``` code snippet
+- Press **commit** on the bottom of the page to confirm the changes
+    - Give a descriptive name to your changes, comments are optional
+- Upload your profice picture
+    - Go the /images folder
+    - Upload your photo (press __upload__)
+    - __Make sure that it is named profile_pic_(your name).jpg__
+        - Examples can again be found in the /images folder
+    - Refresh your /images folder to see that the upload worked
+- Press **pull request** in the main page of your personal fork
 - Press **create new pull request**
 - Press **create new pull request**
-- Write a message and comments
+- Write a message and comments to clarify what you changed
 - Assign a **reviewer** to your pull request (right column)
 - **Create pull request**
 - You did it! :heart_eyes:
@@ -88,3 +104,8 @@ If you suspect that changes have occured in the root folder since you started ed
 - ```git add --all```
 - ```git commit -m "your message"```
 - ```git push origin master```
+
+
+```python
+
+```
