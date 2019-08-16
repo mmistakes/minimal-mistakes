@@ -24,7 +24,7 @@
 
 # Tom Verguts
 
-<img src="/images/profile_pic_tom.jpg" alt="Tom Verguts" width="50%" align="left" hspace="20" vspace="20">
+<img src="/images/profile_pic_tom.jpg" alt="Tom Verguts" width="33%" align="left" hspace="20" vspace="20">
 
 __Personal statement__   
 With some effort, most people can find their way in a new city. But how they do that, remains something of a mystery. Presumably, earlier knowledge (consulting maps, asking strangers, quickly storing a spatial path, etc) is recombined in novel ways to get to your destination. In this sense, we can call this a partially novel task. The ability to perform such tasks is called cognitive control. 
@@ -83,7 +83,7 @@ __More information:__
 
 # Pieter Huycke
 
-<img src="/images/profile_pic_pieter_h.jpg" alt="Pieter Huycke" width="50%" align="left" hspace="20" vspace="20">
+<img src="/images/profile_pic_pieter_h.jpg" alt="Pieter Huycke" width="33%" align="left" hspace="20" vspace="20">
 
 In my Ph.D. project, we aim to take a fresh perspective that emphasizes the study of memory, in its natural dynamic setting, as a journey in the making. The two key characters in this journey are learning and consolidation: both processes are known to interact but have hitherto been studied in isolation. The perspective of this project enables them to be understood, for the first time, under the influence of their inherent interactions, and in the context of brain maturation and aging. The project aims to provide new insight into how much our ability to learn is dictated by the makeup of our neuronal circuitries, how memories are initially formed and later stored for the long haul, how this is made possible by the rewiring of our neuronal circuitries, and how our memory processes and capacities vary as our brain evolves through its lifespan. 
 
