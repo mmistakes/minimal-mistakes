@@ -1,6 +1,7 @@
+
 {:toc}
-* [__Principal investigator__](#Principal-Investigator)
-* [__Post-doctoral researchers__](#Post-doctoral-researchers)
+* [Principal investigator](#Principal-Investigator)
+* [Post-doctoral researchers](#Post-doctoral-researchers)
   * [Anna Marzecova](#Anna-Marzecova)
   * [Cristian Buc Calderon](#Cristian-Buc-Calderon)
   * [Elise Lesage](#Elise-Lesage)
@@ -8,13 +9,13 @@
   * [Jacki Janowich](#Jacki-Janowich)
   * [Kobe Desender](#Kobe-Desender)
   * [Mehdi Senoussi](#Mehdi-Senoussi)
-* [__PhD students__](#PhD-students)
+* [PhD students](#PhD-students)
   * [Kate Ergo](#Kate-Ergo)
   * [Pieter Huycke](#Pieter-Huycke)
   * [Pieter Verbeke](#Pieter-Verbeke)
-* [__Visiting researchers__](#Visiting-researchers)
+* [Visiting researchers](#Visiting-researchers)
   * [Fabrice Luyckx](#Fabrice-Luyckx)
-* [__Internship students__](#Internship-students)
+* [Internship students](#Internship-students)
 
 ## Principal Investigator
 
@@ -114,3 +115,8 @@ __More information:__
 ## Internship students
 
 Currently, no internship students are active in our lab.
+
+
+```python
+
+```
