@@ -2,6 +2,17 @@
 
 - title: Who's who?
   url: /about/
+  sublinks: 
+    - title: PI
+      url: /about/#principal-investigator
+    - title: Post-docs
+      url: /about/#post-doctoral-researchers
+    - title: PhDs
+      url: /about/#phd-students
+    - title: Visiting
+      url: /about/#visiting-researchers
+    - title: Interns
+      url: /about/#internship-students
 
 - title: Publications
   url: /publications/
