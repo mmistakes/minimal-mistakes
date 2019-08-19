@@ -64,7 +64,7 @@ Schulküche zu treffen.
 
 ## Unser Team
 
-{% include figure image_path="/assets/images/kollegium_2018_19.jpg" alt="Team der Grundschule am Brandwerder vom Schuljahr 2018/2019." caption="" %}
+{% include figure image_path="/assets/images/kollegium_2019_20.jpg" alt="Team der Grundschule am Brandwerder vom Schuljahr 2018/2019." caption="" %}
 
 ## JÜL-Konzept:
 {: #juel_konzept}
