@@ -47,7 +47,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 # Elise Lesage
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
+My current project studies how behavior becomes habitual and how habits can be overcome. I use computational modeling, fMRI, and brain stimulation techniques to investigate these questions.
+My broader research interests are pretty varied and can be described as: finding out how humans think :). Before and during my PhD I studied the role of the cerebellum in non-motor functions such as language and cognition. In my postdoc at NIDA (NIH) I switched gears and learned more about addiction and reward processing. My present Fellowship integrates some of the key ideas behind reward processing, automaticity, and cognition.
+My Fellowship is funded by the Flanders Fund for Scientific Research (FWO) and the European Commission’s Marie Curie Actions through the Pegasus2 scheme.
 
 # Esther De Loof
 
