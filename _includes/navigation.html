@@ -7,7 +7,22 @@
 		        {% else %}
 		        {% assign domain = site.url %}
 		    {% endif %}
-		    <li class="nav-menu__item"><a class="nav-link" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
+		    <li class="nav-menu__item">
+				<a class="nav-link" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>
+					{{ link.title }}
+				</a>
+				{% if link.sublinks %}
+				<span class="dropdown-toggle"><i class="fa fa-angle-down"></i></span>
+
+					<ul class="submenu dropdown">	
+						{% for sublink in link.sublinks %}
+						<li class="submenu__item">
+							<a class="nav-link" href="{{ domain }}{{ sublink.url }}" {% if sublink.url contains 'http' %}target="_blank"{% endif %}>{{ sublink.title }}</a>
+						</li>
+						{% endfor %}
+					</ul>
+				{% endif %}
+			</li>
 		  {% endfor %}
 	    </ul>
 	</nav>
