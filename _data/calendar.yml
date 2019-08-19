@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Elternabend A2 17:30",
-    "title": "Elternabend A2 17:30",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NWp0b2FhcnBqYjA0MWU3bnNiczVya3BnY2ggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-08-19",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-08-20",
-      "date_time": null
-    },
-    "created": "2019-08-15T10:07:40.000Z",
-    "updated": "2019-08-15T10:07:47.759Z"
-  },
-  {
-    "image_path": null,
     "alt": "Elternabend 5b 18:00 Uhr",
     "title": "Elternabend 5b 18:00 Uhr",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2019-08-15T10:15:09.000Z",
     "updated": "2019-08-15T10:15:17.797Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Elternabend 6a 18:00 Uhr",
+    "title": "Elternabend 6a 18:00 Uhr",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=M2h0Z292MmlodGQzbHU2b290ZG0yZzl2MzYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-08-22",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-08-23",
+      "date_time": null
+    },
+    "created": "2019-08-15T10:16:21.000Z",
+    "updated": "2019-08-15T10:16:26.780Z"
   }
 ]
