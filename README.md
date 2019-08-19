@@ -50,7 +50,7 @@ You don't have to download GitHub Desktop or Git to follow this guide.
 - Upload your profice picture
     - Go the /images folder
     - Upload your photo (press __upload__)
-    - __Make sure that it is named profile_pic_(your name).jpg__
+    - !! Make sure that it is named "profile_pic_(your name).jpg" !!
         - Examples can again be found in the /images folder
     - Refresh your /images folder to see that the upload worked
 - Press **pull request** in the main page of your personal fork
@@ -104,8 +104,3 @@ If you suspect that changes have occured in the root folder since you started ed
 - ```git add --all```
 - ```git commit -m "your message"```
 - ```git push origin master```
-
-
-```python
-
-```
