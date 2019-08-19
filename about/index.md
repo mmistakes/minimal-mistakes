@@ -5,7 +5,6 @@
     - [Anna Marzecova](#anna-marzecova)
     - [Cristian Buc Calderon](#cristian-buc-calderon)
     - [Elise Lesage](#elise-lesage)
-    - [Esther De Loof](#esther-de-loof)
     - [Jacki Janowich](#jacki-janowich)
     - [Kobe Desender](#kobe-desender)
     - [Mehdi Senoussi](#mehdi-senoussi)
@@ -39,33 +38,31 @@ __More information:__
 
 # Anna Marzecova
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
+Information will be added soon.
 
 # Cristian Buc Calderon
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
+Information will be added soon.
 
 # Elise Lesage
 
 My current project studies how behavior becomes habitual and how habits can be overcome. I use computational modeling, fMRI, and brain stimulation techniques to investigate these questions.
+
 My broader research interests are pretty varied and can be described as: finding out how humans think :). Before and during my PhD I studied the role of the cerebellum in non-motor functions such as language and cognition. In my postdoc at NIDA (NIH) I switched gears and learned more about addiction and reward processing. My present Fellowship integrates some of the key ideas behind reward processing, automaticity, and cognition.
-My Fellowship is funded by the Flanders Fund for Scientific Research (FWO) and the European Commission’s Marie Curie Actions through the Pegasus2 scheme.
 
-# Esther De Loof
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
+My Fellowship is funded by the Flanders Fund for Scientific Research (FWO) and the European Commission’s Marie Curie Actions through the Pegasus scheme.
 
 # Jacki Janowich
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
+Information will be added soon.
 
 # Kobe Desender
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
+Information will be added soon.
 
 # Mehdi Senoussi
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
+Information will be added soon.
 
 # PhD students
 
@@ -99,15 +96,15 @@ __More information:__
 
 # Jonas Simoens
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
+Information will be added soon.
 
 # Esin Turkakin
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
+Information will be added soon.
 
 # Pieter Verbeke
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium viverra. Neque volutpat ac tincidunt vitae semper. Urna duis convallis convallis tellus. Mi proin sed libero enim. Pharetra diam sit amet nisl. Diam in arcu cursus euismod quis viverra. Nisl tincidunt eget nullam non nisi est sit. Lacus viverra vitae congue eu consequat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Mi in nulla posuere sollicitudin. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Amet facilisis magna etiam tempor orci. Amet nulla facilisi morbi tempus iaculis urna id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
+Information will be added soon.
 
 # Visiting researchers
 
