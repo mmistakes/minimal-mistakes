@@ -1,91 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Elternabend 5b 18:00 Uhr",
-    "title": "Elternabend 5b 18:00 Uhr",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MWs5dDcxbHI3cGFpMm90MmNkYXMxcmlvMm4gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-08-20",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-08-21",
-      "date_time": null
-    },
-    "created": "2019-08-15T10:15:39.000Z",
-    "updated": "2019-08-15T10:15:44.653Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Elternabend 4b 18:00 Uhr",
-    "title": "Elternabend 4b 18:00 Uhr",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MW81ZzZha2VyMnNsYWNuaGRmNGtpbnVkYTEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-08-20",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-08-21",
-      "date_time": null
-    },
-    "created": "2019-08-15T10:14:37.000Z",
-    "updated": "2019-08-15T10:14:49.843Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Elternabend A4 17:00 Uhr",
-    "title": "Elternabend A4 17:00 Uhr",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M2NlbXIzMDc2YThldGp1aDhqN3M3ZjBnZWIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-08-20",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-08-21",
-      "date_time": null
-    },
-    "created": "2019-08-15T10:08:53.000Z",
-    "updated": "2019-08-15T10:09:00.477Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Elternabend 6b 18:30 Uhr",
-    "title": "Elternabend 6b 18:30 Uhr",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NnJiZ2RyMnM1MWk1YzZsdmQxNTJnaXJpOGwgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-08-20",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-08-21",
-      "date_time": null
-    },
-    "created": "2019-08-15T10:16:52.000Z",
-    "updated": "2019-08-15T10:16:58.072Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Elternabend 5a 17:00 Uhr",
-    "title": "Elternabend 5a 17:00 Uhr",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=N3FucGFtNjIxaXJhbGs5ajcyYXN0NTk1aWkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-08-20",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-08-21",
-      "date_time": null
-    },
-    "created": "2019-08-15T10:15:09.000Z",
-    "updated": "2019-08-15T10:15:17.797Z"
-  },
-  {
-    "image_path": null,
     "alt": "Elternabend 6a 18:00 Uhr",
     "title": "Elternabend 6a 18:00 Uhr",
     "excerpt": null,
@@ -100,5 +15,90 @@
     },
     "created": "2019-08-15T10:16:21.000Z",
     "updated": "2019-08-15T10:16:26.780Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Elternabend A5 16:30 Uhr",
+    "title": "Elternabend A5 16:30 Uhr",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NTY0ajFkNmFia2hqa3BuOTFsdmM3cDhkNTEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-08-23",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-08-24",
+      "date_time": null
+    },
+    "created": "2019-08-15T10:11:26.000Z",
+    "updated": "2019-08-15T10:11:37.343Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Stadtteilfest",
+    "title": "Stadtteilfest",
+    "excerpt": "Parkplatz Ladenzeile Brunsbütteler Damm/ Ecke Magistratsweg",
+    "url": "https://www.google.com/calendar/event?eid=NGNycm45aTNkcWNtMnNnNmMzYTdyZHNjdm4gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-08-24T10:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-08-24T14:00:00+02:00"
+    },
+    "created": "2019-08-15T08:58:34.000Z",
+    "updated": "2019-08-15T09:03:03.811Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Elternabend A1 17:00 Uhr",
+    "title": "Elternabend A1 17:00 Uhr",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=Mmh1YXNjdTc4MmJnanY5aHM2ZGwwcmFwOHEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-08-27",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-08-28",
+      "date_time": null
+    },
+    "created": "2019-08-15T10:01:21.000Z",
+    "updated": "2019-08-15T10:07:16.237Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Elternabend A3 17:00 Uhr",
+    "title": "Elternabend A3 17:00 Uhr",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MTQ0NzVrdTR0MGU3ZTBzdmY4ams4bTBwYXYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-08-29",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-08-30",
+      "date_time": null
+    },
+    "created": "2019-08-15T10:08:18.000Z",
+    "updated": "2019-08-15T10:08:28.434Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Elternabend A6 17:00 Uhr",
+    "title": "Elternabend A6 17:00 Uhr",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=M2RxNDZpOTluZmdmajN0MTNrcWJhM3N0NWkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-08-29",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-08-30",
+      "date_time": null
+    },
+    "created": "2019-08-15T10:12:20.000Z",
+    "updated": "2019-08-15T10:13:37.050Z"
   }
 ]
