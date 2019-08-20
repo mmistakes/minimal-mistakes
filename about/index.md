@@ -69,7 +69,14 @@ __More information:__
 
 # Mehdi Senoussi
 
-Information will be added soon.
+<img src="/images/profile_pic_mehdi.png" alt="Mehdi Senoussi" width="33%" align="left" hspace="20" vspace="20">
+
+My research currently focuses on top-down/cognitive control mechanisms that allow us to manipulate and use perceptual and/or mnesic representations. For instance our ability implement a task rule (bind a percept to a motor command), attend to a specific feature, switch between sensory modalities or create and manipulate a mental image. I use Multivariate Pattern Analysis (MVPA) and modeling methods to better understand which and when relevant representations emerge in neural activity. And to know how (and when) such representations are bound together (e.g. perceptual <-> task representations) I use connectivity measures (phase-locking, cross-frequency coupling). In previous work during my PhD at the CerCo lab (Toulouse) I used fMRI, EEG and MVPA to measure the effects of learning on neural representations of visual objects and how it affects perception.
+
+__More information:__  
+* Personal website: [https://sites.google.com/site/senoussim/home](https://sites.google.com/site/senoussim/home)
+* Twitter: [@cog_senoussi](https://twitter.com/cog_senoussi)
+* Email: [mehdi.senoussi@ugent.be](mailto:mehdi.senoussi@ugent.be)
 
 # PhD students
 
