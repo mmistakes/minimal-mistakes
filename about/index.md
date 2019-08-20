@@ -34,6 +34,8 @@ __More information:__
 * GitHub: [@tomverguts](https://github.com/tomverguts)
 * Email: [Tom.Verguts@UGent.be](mailto:Tom.Verguts@UGent.be)
 
+   
+
 # Post-doctoral researchers
 
 # Anna Marzecova
@@ -78,6 +80,8 @@ __More information:__
 * Twitter: [@cog_senoussi](https://twitter.com/cog_senoussi)
 * Email: [mehdi.senoussi@ugent.be](mailto:mehdi.senoussi@ugent.be)
 
+   
+
 # PhD students
 
 # Kate Ergo
@@ -118,7 +122,7 @@ Information will be added soon.
 
 # Pieter Verbeke
 
-<img src="/images/profile_pic_pieter_v.jpg" alt="Pieter Verbeke" width="20%" align="left" hspace="20" vspace="20">
+<img src="/images/profile_pic_pieter_v.jpg" alt="Pieter Verbeke" width="33%" align="left" hspace="20" vspace="20">
 
 Previous studies of human cognition at different time scales have reported two mechanisms to alter connectivity between brain regions. First, the brain can adjust the strength of the synaptic connections between different neurons. Second, regions can be bound together by synchronizing their oscillations (Fries, 2005). In this PhD project, we investigate how interactions between these two dynamics lead to the remarkable flexibility (and also stability) in human behavior. Additionally, we investigate how the brain is able to know which regions to synchronize by exerting learning at a higher hierarchical level. For these purposes, we aim at describing computational models and test these models empirically with EEG.
 
