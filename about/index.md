@@ -58,7 +58,7 @@ Information will be added soon.
 
 # Kobe Desender
 
-<img src="/images/profile_pic_kate.jpg" alt="Kate Ergo" width="50%" align="left" hspace="20" vspace="20">
+<img src="/images/profile_pic_kobe.jpg" alt="Kobe Desender" width="50%" align="left" hspace="20" vspace="20">
 
 In my research, I focus on the question how metacognition is used for further adaptation of behavior. Currently, I examine how subjective confidence in a decision is used to further optimize cognition. Theoretical models of confidence posit an important role for confidence in learning and adapting behavior, and these are the dynamics that I wish to unravel. I combine behavioral measures, computational modeling, and electrophysiological recordings to answer these questions. In previous work performed during my PhD at the VUB (Belgium), I used behavioral and EEG recordings to unravel the relation between metacognition and conflict processing. I am supported by an FWO [PEGASUS]² Marie Skłodowska-Curie fellowship.
 
@@ -130,4 +130,4 @@ __More information:__
 
 # Internship students
 
-Currently, no internship students are active in our lab.
+Currently, no internship students are active in our lab. Please get in contact if you are interested in an internship.
