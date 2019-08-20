@@ -130,4 +130,4 @@ __More information:__
 
 # Internship students
 
-Currently, no internship students are active in our lab.
+Currently, no internship students are active in our lab. Please get in contact if you are interested in an internship.
