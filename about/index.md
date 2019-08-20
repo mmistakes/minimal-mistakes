@@ -34,8 +34,6 @@ __More information:__
 * GitHub: [@tomverguts](https://github.com/tomverguts)
 * Email: [Tom.Verguts@UGent.be](mailto:Tom.Verguts@UGent.be)
 
-   
-
 # Post-doctoral researchers
 
 # Anna Marzecova
@@ -79,8 +77,6 @@ __More information:__
 * Personal website: [https://sites.google.com/site/senoussim/home](https://sites.google.com/site/senoussim/home)
 * Twitter: [@cog_senoussi](https://twitter.com/cog_senoussi)
 * Email: [mehdi.senoussi@ugent.be](mailto:mehdi.senoussi@ugent.be)
-
-   
 
 # PhD students
 
