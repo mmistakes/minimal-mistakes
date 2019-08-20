@@ -1,5 +1,16 @@
 /*! Plugin options and other jQuery stuff */
 
+  // Close all opened dropdown menus 
+const closeSubmenus = function () {
+  $('.dropdown_opened').each(function() {
+    $(this).removeClass('dropdown_opened');
+  });
+};
+
+const onNavClose = function() {
+  closeSubmenus();
+};
+
 // Responsive Nav
 var navigation = responsiveNav("#site-nav", { // Selector: The ID of the wrapper
   animate: true, // Boolean: Use CSS3 transitions, true or false
@@ -11,7 +22,7 @@ var navigation = responsiveNav("#site-nav", { // Selector: The ID of the wrapper
   jsClass: "js", // String: 'JS enabled' class which is added to <html> el
   init: function(){}, // Function: Init callback
   open: function(){}, // Function: Open callback
-  close: function(){} // Function: Close callback
+  close: onNavClose, // Function: Close callback
 });
 
 $('html').click(function() {
@@ -19,10 +30,24 @@ $('html').click(function() {
   if ($(navigation.wrapper).hasClass('opened')) {
   	navigation.toggle();
   }
+
+  closeSubmenus();
 });
 
 $('#site-nav').click(function(event){
     event.stopPropagation();
+});
+
+$('.dropdown-toggle').click(function (event) {
+  event.preventDefault();
+
+  const menu = $(this).parent().children('.dropdown');
+  const isOpened = menu.hasClass('dropdown_opened'); 
+  
+  closeSubmenus();
+  if (!isOpened) {
+    $(this).parent().children('.dropdown').addClass('dropdown_opened');
+  }
 });
 
 // FitVids options
