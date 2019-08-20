@@ -118,7 +118,14 @@ Information will be added soon.
 
 # Pieter Verbeke
 
-Information will be added soon.
+<img src="/images/profile_pic_pieter_v.jpg" alt="Pieter Verbeke" width="20%" align="left" hspace="20" vspace="20">
+
+Previous studies of human cognition at different time scales have reported two mechanisms to alter connectivity between brain regions. First, the brain can adjust the strength of the synaptic connections between different neurons. Second, regions can be bound together by synchronizing their oscillations (Fries, 2005). In this PhD project, we investigate how interactions between these two dynamics lead to the remarkable flexibility (and also stability) in human behavior. Additionally, we investigate how the brain is able to know which regions to synchronize by exerting learning at a higher hierarchical level. For these purposes, we aim at describing computational models and test these models empirically with EEG.
+
+__More information:__ 
+* GitHub: [@PieterVerbeke](https://github.com/PieterVerbeke)
+* Email: [pjverbek.verbeke@UGent.be](mailto:pjverbek.verbeke@UGent.be)
+* Twitter: [@PieterVerbeke4](https://twitter.com/PieterVerbeke4)
 
 # Visiting researchers
 
