@@ -26,11 +26,14 @@
 <img src="/images/profile_pic_tom.jpg" alt="Tom Verguts" width="33%" align="left" hspace="20" vspace="20">
 
 __Personal statement__   
-With some effort, most people can find their way in a new city. But how they do that, remains something of a mystery. Presumably, earlier knowledge (consulting maps, asking strangers, quickly storing a spatial path, etc) is recombined in novel ways to get to your destination. In this sense, we can call this a partially novel task. The ability to perform such tasks is called cognitive control. 
+I am interested in how human behavior is produced. Humans are biological beings, so it is reasonable to assume that behavior is generally adaptive, meaning it is aimed toward optimising some goal function (e.g., to minimise error or to maximise reward). At the same time, humans live in rapidly changing environments, so this ideal will often not be reached.
 
-My main interest is understanding the mechanisms of cognitive control, using behavioral, computational, and neural methods.
+From this perspective, human behavior is often not optimal, but humans learn to gradually achieve their goal (function). In summary, I’m interested in learning adaptive behavior!
+
+Although this is a fairly broad topic, there are a few recurring themes in our research group, such as reinforcement learning, the use of neural synchrony for letting neural modules communicate, and the role of confidence in performance adaptation. For this research, we use behavioral, computational, and neural methods.
 
 __More information:__  
+* Personal website: [users.ugent.be/~tverguts](https://users.ugent.be/~tverguts/Site/Home.html)
 * GitHub: [@tomverguts](https://github.com/tomverguts)
 * Email: [Tom.Verguts@UGent.be](mailto:Tom.Verguts@UGent.be)
 
