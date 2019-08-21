@@ -2,7 +2,7 @@
 title: "Quick-Start Guide"
 permalink: /docs/quick-start-guide/
 excerpt: "How to quickly install and setup Minimal Mistakes for use with GitHub Pages."
-last_modified_at: 2019-04-18T15:53:52-04:00
+last_modified_at: 2019-08-20T21:36:11-04:00
 redirect_from:
   - /theme-setup/
 toc: true
@@ -138,8 +138,7 @@ Starting with an empty folder and `Gemfile` you'll need to copy or re-create thi
 
 From `v4.5.0` onwards, Minimal Mistakes theme-gem comes bundled with the necessary data files and will automatically use them via the [`jekyll-data`](https://github.com/ashmaroli/jekyll-data) plugin. So you no longer need to maintain a copy of these data files at your project directory.
 
-However like all other bundled files, you'll need to create and edit these data files to customize them.
-The bundled data files are:
+You'll need to create and edit these data files to customize them:
 
 - [`_data/ui-text.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml) - UI text [documentation]({{ "/docs/ui-text/" | relative_url }})
 - [`_data/navigation.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_data/navigation.yml) - navigation [documentation]({{ "/docs/navigation/" | relative_url }})

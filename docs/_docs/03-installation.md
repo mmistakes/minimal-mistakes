@@ -2,7 +2,7 @@
 title: "Installation"
 permalink: /docs/installation/
 excerpt: "Instructions for installing the theme for new and existing Jekyll based sites."
-last_modified_at: 2018-11-25T19:32:34-05:00
+last_modified_at: 2019-08-20T21:36:18-04:00
 toc: true
 ---
 
@@ -81,8 +81,6 @@ gem "minimal-mistakes-jekyll"
 #   gem "jekyll-sitemap"
 #   gem "jekyll-gist"
 #   gem "jekyll-feed"
-#   gem "jemoji"
-#   gem "jekyll-data"
 #   gem "jekyll-include-cache"
 #
 # If you have any other plugins, put them here!

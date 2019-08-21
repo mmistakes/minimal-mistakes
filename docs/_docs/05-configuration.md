@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-last_modified_at: 2019-07-24T10:15:47-04:00
+last_modified_at: 2019-08-20T21:36:28-04:00
 toc: true
 ---
 
@@ -950,14 +950,12 @@ When hosting with GitHub Pages a small [set of gems](https://pages.github.com/ve
 | [jekyll-sitemap][jekyll-sitemap] | Jekyll plugin to silently generate a sitemaps.org compliant sitemap for your Jekyll site. |
 | [jekyll-gist][jekyll-gist] | Liquid tag for displaying GitHub Gists in Jekyll sites. |
 | [jekyll-feed][jekyll-feed] | A Jekyll plugin to generate an Atom (RSS-like) feed of your Jekyll posts. |
-| [jemoji][jemoji] | GitHub-flavored emoji plugin for Jekyll. |
 | [jekyll-include-cache][jekyll-include-cache] | Liquid tag that caches Liquid includes. |
 
 [jekyll-paginate]: https://github.com/jekyll/jekyll-paginate
 [jekyll-sitemap]: https://github.com/jekyll/jekyll-sitemap
 [jekyll-gist]: https://github.com/jekyll/jekyll-gist
 [jekyll-feed]: https://github.com/jekyll/jekyll-feed
-[jemoji]: https://github.com/jekyll/jemoji
 [jekyll-include-cache]: https://github.com/benbalter/jekyll-include-cache
 
 If you're hosting elsewhere then you don't really have to worry about what is whitelisted as you are free to include whatever [Jekyll plugins](https://jekyllrb.com/docs/plugins/) you desire.
