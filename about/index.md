@@ -26,11 +26,11 @@
 <img src="/images/profile_pic_tom.jpg" alt="Tom Verguts" width="33%" align="left" hspace="20" vspace="20">
 
 __Personal statement__   
-I am interested in how human behavior is produced. Humans are biological beings, so it is reasonable to assume that behavior is generally adaptive, meaning it is aimed toward optimising some goal function (e.g., to minimise error or to maximise reward). At the same time, humans live in rapidly changing environments, so this ideal will often not be reached.
+Humans are biological beings. Thus, behavior is generally adaptive, meaning it aims toward optimising some goal function (e.g., to minimise error or to maximise reward). At the same time, humans live in rapidly changing environments, so this ideal will often not be reached.
 
-From this perspective, human behavior is often not optimal, but humans learn to gradually achieve their goal (function). In summary, I’m interested in learning adaptive behavior!
+From this perspective, human behavior is often not optimal, but humans learn to gradually achieve their goal (function). In summary, humans learn adaptive behavior, and this defines the topic of our research group.
 
-Although this is a fairly broad topic, there are a few recurring themes in our research group, such as reinforcement learning, the use of neural synchrony for letting neural modules communicate, and the role of confidence in performance adaptation. For this research, we use behavioral, computational, and neural methods.
+Although this is a fairly broad topic, there are a few recurring themes, such as reinforcement learning, the use of neural synchrony for neural communication, and the role of confidence in performance adaptation. For this research, we use behavioral, computational, and neural methods.
 
 __More information:__  
 * Personal website: [users.ugent.be/~tverguts](https://users.ugent.be/~tverguts/Site/Home.html)
