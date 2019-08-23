@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "I Luv Console"
 title_separator          : "-"
 name                     : "Son SangWoo"
-description              : "Software engineer."
+description              : "web developer."
 url                      : "https://rerewww.github.io"
 baseurl                  : ""
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -104,9 +104,9 @@ analytics:
 author:
   name             : "Son SangWoo"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Software engineer."
+  bio              : "흔하지 않은, 인정받는 백엔드 개발자가 목표입니다.</br>My goal is uncommon backend recognized Developer."
   location         : "Seoul, Korea"
-  email            :
+  email            : "rerewwwme@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
