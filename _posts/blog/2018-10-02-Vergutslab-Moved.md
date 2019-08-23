@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vergutslab moved!
+title: Verguts lab moved!
 categories: blog
 excerpt: A note on our change of location
 tags: [general]
