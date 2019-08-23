@@ -1596,7 +1596,7 @@ ca: &DEFAULT_CA
   comment_btn_submit         : "Envia"
   comment_btn_submitted      : "Enviat"
   comment_success_msg        : "Gràcies pel teu comentari! Apareixerà un cop sigui aprovat."
-  comment_error_msg          : "Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again."
+  comment_error_msg          : "Hi ha hagut un error enviat el comentari. Comprova que els camps obligatirs estiguin omplerts i torna-ho a provar."
   loading_label              : "Carregant..."
   search_label_text          : "Introdueix termes per cercar..."
   search_placeholder_text    : "Introdueix termes per cercar..."
