@@ -9,6 +9,7 @@ image:
 date: 2018-10-02
 modified:
 share: true
+author: kobe_desender
 ---
 
 ## Our move
