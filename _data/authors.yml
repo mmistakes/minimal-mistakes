@@ -6,6 +6,12 @@ pieter_huycke:
   bio: "PhD student at Verguts lab"
   avatar: profile_pic_pieter_h.jpg
 
+kobe_desender:
+  name: Kobe Desender
+  email: kobe.desender@ugent.be
+  bio: "Post-doc at Verguts lab"
+  avatar: profile_pic_kobe.jpg
+  
 #=============================================
 # Template profile - copy and paste this above
 # then complete as directed
