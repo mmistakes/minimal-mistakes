@@ -1570,7 +1570,7 @@ ca: &DEFAULT_CA
   toc_label                  : "En aquesta pàgina"
   ext_link_label             : "Enllaç directe"
   less_than                  : "es llegeix en menys de"
-  minute_read                : "minut"
+  minute_read                : "minut(s)"
   share_on_label             : "Comparteix a"
   meta_label                 :
   tags_label                 : "Etiquetes:"
