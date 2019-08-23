@@ -3,7 +3,7 @@ layout: post
 title: "Grants for Pieter V and Cristian!"
 categories: blog
 excerpt: New grants for two of our lab members
-tags: [FWO]
+tags: [FWO, pieter-v, cris]
 image:
   feature:
 link:
