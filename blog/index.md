@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Blog
+title: News from our lab
 excerpt: "An archive of blog posts sorted by date."
 search_omit: true
 ---
