@@ -108,9 +108,6 @@ author:
   location         : "Seoul, Korea"
   email            : "rerewwwme@gmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: mailto:rerewwwme@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
