@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Stadtteilfest",
-    "title": "Stadtteilfest",
-    "excerpt": "Parkplatz Ladenzeile Brunsbütteler Damm/ Ecke Magistratsweg",
-    "url": "https://www.google.com/calendar/event?eid=NGNycm45aTNkcWNtMnNnNmMzYTdyZHNjdm4gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-08-24T10:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-08-24T14:00:00+02:00"
-    },
-    "created": "2019-08-15T08:58:34.000Z",
-    "updated": "2019-08-15T09:03:03.811Z"
-  },
-  {
-    "image_path": null,
     "alt": "Elternabend A1 17:00 Uhr",
     "title": "Elternabend A1 17:00 Uhr",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2019-08-15T10:16:21.000Z",
     "updated": "2019-08-22T07:52:42.353Z"
+  },
+  {
+    "image_path": null,
+    "alt": "1. GEV  ",
+    "title": "1. GEV  ",
+    "excerpt": "Versammlung der Elternvertreter*innen alle Klassen",
+    "url": "https://www.google.com/calendar/event?eid=M2ZtaTdqbTRpZjlrMGhoNTMzY2dzM3BzZjMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-09-09T18:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-09-09T20:30:00+02:00"
+    },
+    "created": "2019-08-15T08:48:39.000Z",
+    "updated": "2019-08-15T08:48:39.894Z"
   }
 ]
