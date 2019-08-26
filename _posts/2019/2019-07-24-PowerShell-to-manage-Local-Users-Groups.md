@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: PowerShell to manager Local Users and Groups
 subtitle : Add, View, Manage and Remove Local Users and Groups.
 tags: [Powershell,Windows,ActiveDirectory]

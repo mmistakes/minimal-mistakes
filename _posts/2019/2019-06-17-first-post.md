@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: First post!
 subtitle : After a long-long time..Finally it comes here today.
 bigimg: /img/big-imgs/beach-boardwalk-bridge-458954.jpg
