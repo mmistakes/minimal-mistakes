@@ -3,6 +3,7 @@ layout: single
 title: Get-Help is a friend
 subtitle : Yeah seriously its your friend..!!
 tags: [Powershell,Basic]
+published: true
 ---
 <!--more-->
 
