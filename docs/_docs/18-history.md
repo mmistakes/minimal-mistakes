@@ -9,6 +9,12 @@ last_modified_at: 2019-08-20T21:40:09-04:00
 toc: false
 ---
 
+## Unreleased
+
+### Enhancements
+
+- Add Catalan localized UI text strings. [#2237](https://github.com/mmistakes/minimal-mistakes/pull/2237)
+
 ## [4.16.6](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.16.6)
 
 ### Enhancements
