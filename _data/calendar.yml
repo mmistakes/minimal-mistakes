@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Elternabend A1 17:00 Uhr",
-    "title": "Elternabend A1 17:00 Uhr",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=Mmh1YXNjdTc4MmJnanY5aHM2ZGwwcmFwOHEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-08-27",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-08-28",
-      "date_time": null
-    },
-    "created": "2019-08-15T10:01:21.000Z",
-    "updated": "2019-08-15T10:07:16.237Z"
-  },
-  {
-    "image_path": null,
     "alt": "Elternabend A3 17:00 Uhr",
     "title": "Elternabend A3 17:00 Uhr",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2019-08-22T07:53:35.000Z",
     "updated": "2019-08-22T07:53:35.583Z"
+  },
+  {
+    "image_path": null,
+    "alt": "1. GEV",
+    "title": "1. GEV",
+    "excerpt": "Versammlung der Elternvertreter*innen alle Klassen",
+    "url": "https://www.google.com/calendar/event?eid=M2ZtaTdqbTRpZjlrMGhoNTMzY2dzM3BzZjMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-09-11T18:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-09-11T20:30:00+02:00"
+    },
+    "created": "2019-08-15T08:48:39.000Z",
+    "updated": "2019-08-25T09:07:36.777Z"
   }
 ]
