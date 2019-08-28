@@ -109,14 +109,15 @@ analytics:
 author:
   name             : "상상조각"
   avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "천천히 배우며, 취미로 코딩하는 개발자"
+  bio              : "천천히 배우며, 
+  취미로 코딩하는 개발자"
   location         : "Tokyo, Japan"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: hyejin.jo.0920@gmail.com
-    - label: "Website"
+    - label: "blog"
       icon: "fas fa-fw fa-link"
       url: "https://blog.naver.com/hailey_jo"
     - label: "Twitter"
