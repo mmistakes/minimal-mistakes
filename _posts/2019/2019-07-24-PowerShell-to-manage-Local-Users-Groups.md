@@ -3,13 +3,12 @@ layout: single
 title: PowerShell to manager Local Users and Groups
 subtitle : Add, View, Manage and Remove Local Users and Groups.
 tags: [Powershell,Windows,ActiveDirectory]
+toc: true
+toc_label: "Table of content"
 ---
 <!--more-->
 
 # Index
-
-* TOC
-{:toc}
 
 Here let's see how to manage Windows local group using PowerShell.
 
