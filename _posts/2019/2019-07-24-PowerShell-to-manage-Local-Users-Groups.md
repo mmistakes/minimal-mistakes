@@ -9,8 +9,6 @@ toc_label: "Table of content"
 ---
 <!--more-->
 
-# Index
-
 Here let's see how to manage Windows local group using PowerShell.
 
 Required module is “`Microsoft.PowerShell.LocalAccounts`” look below for available `cmdlets`.
