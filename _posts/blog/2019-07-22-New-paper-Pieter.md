@@ -1,8 +1,9 @@
 ---
 layout: post
-title: New paper published by Verguts lab
+title: New paper published in PLoS Computational Biology
 categories: blog
-excerpt: Published in PLoS Computational Biology
+excerpt: Learning to synchronize: How biological agents can couple neural task modules for dealing with the
+stability-plasticity dilemma
 tags: [pieter-v, tom, new-paper]
 image:
   feature:
