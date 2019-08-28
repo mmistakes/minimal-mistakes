@@ -1,8 +1,8 @@
 ---
 layout: post
-title: New paper published by Verguts lab
+title: New paper published in Psychophysiology
 categories: blog
-excerpt: Published in Psychophysiology
+excerpt: Preparing for hard times: scalp and intracranial physiological signatures of proactive cognitive control
 tags: [esther, new-paper]
 image:
   feature:
