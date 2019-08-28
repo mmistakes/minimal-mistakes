@@ -109,16 +109,16 @@ analytics:
 author:
   name             : "Harish Munagapati"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            : "contact@thewhatnote.com"
+  #bio              : "I am an **amazing** person."
+  location         : "Hyderabad,India"
+  #email            : "contact@thewhatnote.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: mailto:your.name@email.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://thewhatnote.com"
+      # url: "https://thewhatnote.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
