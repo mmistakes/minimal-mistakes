@@ -1,57 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Elternabend A3 17:00 Uhr",
-    "title": "Elternabend A3 17:00 Uhr",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MTQ0NzVrdTR0MGU3ZTBzdmY4ams4bTBwYXYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-08-29",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-08-30",
-      "date_time": null
-    },
-    "created": "2019-08-15T10:08:18.000Z",
-    "updated": "2019-08-15T10:08:28.434Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Elternabend A6 17:00 Uhr",
-    "title": "Elternabend A6 17:00 Uhr",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M2RxNDZpOTluZmdmajN0MTNrcWJhM3N0NWkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-08-29",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-08-30",
-      "date_time": null
-    },
-    "created": "2019-08-15T10:12:20.000Z",
-    "updated": "2019-08-15T10:13:37.050Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Elternabend 4a 18:30 Uhr",
-    "title": "Elternabend 4a 18:30 Uhr",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NDczbXYydm03Y3FvaGRoa3Vma3YzYjcyN3AgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-08-29",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-08-30",
-      "date_time": null
-    },
-    "created": "2019-08-15T10:14:02.000Z",
-    "updated": "2019-08-15T10:14:13.264Z"
-  },
-  {
-    "image_path": null,
     "alt": "Elternabend 6a 18:00 Uhr",
     "title": "Elternabend 6a 18:00 Uhr",
     "excerpt": null,
@@ -100,5 +49,56 @@
     },
     "created": "2019-08-15T08:48:39.000Z",
     "updated": "2019-08-25T09:07:36.777Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Anmeldung Schulanfänger",
+    "title": "Anmeldung Schulanfänger",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NDVnYWt0ZTJ2NWMyM25yb3A5bGEzcG9yNDEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-09-19",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-10-03",
+      "date_time": null
+    },
+    "created": "2019-08-15T08:54:24.000Z",
+    "updated": "2019-08-19T08:07:32.009Z"
+  },
+  {
+    "image_path": null,
+    "alt": "FK Mathe",
+    "title": "FK Mathe",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MGlyN2NwZDVjaGYzdWZpZm9qdTMzcG9qbzMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-09-23T15:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-09-23T17:00:00+02:00"
+    },
+    "created": "2019-08-21T06:44:38.000Z",
+    "updated": "2019-08-21T06:44:38.767Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Schulzahnärztlicher Dienst",
+    "title": "Schulzahnärztlicher Dienst",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NzNva2ZmdTkxMXVmZGpmNm9uNW9ibTl0ODIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-09-24",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-09-27",
+      "date_time": null
+    },
+    "created": "2019-08-16T09:59:48.000Z",
+    "updated": "2019-08-16T10:00:03.652Z"
   }
 ]
