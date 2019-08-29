@@ -1,7 +1,7 @@
 ---
-title:  "Gemified Theme -- Alpha Release"
-modified: 2016-09-22T12:24:42-04:00
-categories: 
+title: "Gemified Theme -- Alpha Release"
+modified: 2019-01-22T12:24:42-04:00
+categories:
   - Jekyll
 tags:
   - update
@@ -15,14 +15,14 @@ Jekyll [themes distributed as Ruby gems](http://jekyllrb.com/docs/themes/) are f
 
 If you're interested in testing out Minimal Mistakes as a gemified theme read on. There are a few caveats though:
 
-1. Support for a theme `assets` folder was recently [added to Jekyll core](https://github.com/jekyll/jekyll/pull/5364), but has yet to be released or rolled into the `github-pages` gem. Meaning you can't use Minimal Mistakes as a Ruby gem there just yet... locally served or self-hosted installs should be fine if you don't mind using a pre-release version of Jekyll. 
+1. Support for a theme `assets` folder was recently [added to Jekyll core](https://github.com/jekyll/jekyll/pull/5364), but has yet to be released or rolled into the `github-pages` gem. Meaning you can't use Minimal Mistakes as a Ruby gem there just yet... locally served or self-hosted installs should be fine if you don't mind using a pre-release version of Jekyll.
 2. Windows users can't currently use themes packaged as gems due to a [bug with file paths](https://github.com/jekyll/jekyll/issues/5192) in Jekyll core. This is being worked on so hopefully a [fix is on the way](https://github.com/jekyll/jekyll/pull/5256) soon.
 
 Fine with all that? Great. Let's continue.
 
 If you're migrating a site already using Minimal Mistakes and haven't customized any of the `_includes`, `_layouts`, `_sass` partials, or `assets` this should be quick and painless.
 
-## Step 1: Remove Theme Files 
+## Step 1: Remove Theme Files
 
 Remove `_includes`, `_layouts`, `_sass`, `assets` folders and files within. You won't need these anymore as they're bundled in the theme.
 
@@ -38,7 +38,7 @@ Start by replacing `gem "github-pages"` or `gem "jekyll"` with the following:
 gem "jekyll", :git => "https://github.com/jekyll/jekyll.git"
 ```
 
-Then add the pre-release Minimal Mistakes theme gem: 
+Then add the pre-release Minimal Mistakes theme gem:
 
 ```ruby
 gem "minimal-mistakes-jekyll", :git => "https://github.com/mmistakes/minimal-mistakes.git", :branch => "feature/theme-gem"`
@@ -82,7 +82,7 @@ If this is a new site be sure to add the following files to `_data/` and customi
 - [`_data/ui-text.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml) - UI text [documentation]({{ base_path }}/docs/ui-text/)
 - [`_data/navigation.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_data/navigation.yml) - navigation [documentation]({{ base_path }}/docs/navigation/)
 
-You'll also need to: 
+You'll also need to:
 
 - Replace `<site root>/index.html` with a modified [Minimal Mistakes `index.html`](https://github.com/mmistakes/minimal-mistakes/blob/master/index.html).
 - Change `layout: post` in `_posts/0000-00-00-welcome-to-jekyll.markdown` to `layout: single`.
