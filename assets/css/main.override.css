@@ -13,3 +13,16 @@
 .layout--single ul li {
 	margin-bottom: 0.3em;
 }
+
+.page__content p, .page__content li, .page__content dl {
+	font-family: Avenir,'Lato',"애플 SD 산돌고딕 Neo","Apple SD Gothic Neo","나눔바른고딕",NanumBarunGothic,"나눔고딕",NanumGothic,"맑은 고딕","Malgun Gothic","돋움",dotum,AppleGothic,sans-serif;
+	font-size: 16px !important;
+}
+
+.page__content ul {
+	margin: 10px 0px 20px 0px;
+}
+
+.highlighter-rouge {
+	margin-top: 10px;
+}
