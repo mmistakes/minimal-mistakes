@@ -28,7 +28,7 @@ gallery:
 
 ## Summary
 
-  **Autobac** was an UnB project. The goal of the project was to develop a machine capable of analyzing an Antibiogram autonomously and print a report of the test.
+  **Autobac** was an UnB project. The project's goal was to develop machine capable of analyzing an Antibiogram autonomously and print a report of the test.
 
 ## Problem
   
