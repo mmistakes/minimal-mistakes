@@ -11,7 +11,7 @@ comments: true
 > 주로 공통된 객체를 여러개 생성해서 사용하는 DBCP(DataBase Connection Pool)와 같은 상황에서 많이 사용된다.
 
 ### Spring Singleton
-- 스프링에서 기본 값(scope="singleton")으로 beans을 싱글톤으로 [IOC](https://rerewww.github.io/web,/spring/Inversion-oif-control/) 컨테이너에 관리된다.
+- 스프링에서 기본 값(scope="singleton")으로 beans을 싱글톤으로 [IOC](https://rerewww.github.io/web,/spring/Inversion-of-control/) 컨테이너에 관리된다.
 - **컨테이너 당 하나의 싱글톤 bean id*를 관리한다.
 - 아래의 코드 처럼 같은 클래스의 서로 다른 bean id를 생성하면 같은 클래스이지만 두 개의 인스턴스가 생성되어 관리된다.
 ```java
