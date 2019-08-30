@@ -28,7 +28,31 @@ layout: default
         <header>
           {% if page.title %}<h1 id="page-title" class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
           {% if page.read_time %}
-            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
+            <p class="page__meta">
+
+              <!--- Include Author-->
+              {% if site.custom.post.authorname %}
+              By {{ site.author.name }} | {% endif %}
+
+              <!--- Include Published date-->
+              {% if site.custom.post.publisheddate %}
+              <i class="far fa-calendar-alt" aria-hidden="true"></i> {{ page.date | date: "%Y/%m/%d" }} |
+              {% endif %}
+
+              <!--- Include Read time-->
+              <i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}
+
+              <!--- Include github-->
+              {% if site.custom.post.edit %} |
+              <a href="{{ site.github.repository_url }}/blob/master{{ site.branch }}/{{ page.path }}" title='Edit this page'>
+                <!--- <i class="fa fa-pencil" aria-hidden="true"></i></a>-->
+                <i class="fab fa-github-alt" aria-hidden="true"></i></a>
+              {% endif %}
+
+              <!---<i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}-->
+
+
+            </p>
           {% endif %}
         </header>
       {% endunless %}
