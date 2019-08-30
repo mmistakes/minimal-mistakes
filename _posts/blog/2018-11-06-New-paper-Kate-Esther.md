@@ -1,8 +1,8 @@
 ---
 layout: post
-title: New paper published by Verguts lab
+title: New paper published in NeuroImage
 categories: blog
-excerpt: Published in NeuroImage
+excerpt: Oscillatory signatures of reward prediction errors in declarative learning
 tags: [kate, esther, tom, new-paper]
 image:
   feature:
