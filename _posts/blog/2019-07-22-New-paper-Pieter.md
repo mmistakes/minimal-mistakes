@@ -20,7 +20,7 @@ In their paper, they present a computational framework on how biological and art
 
 The resulting models were tested on a reversal learning paradigm where the models had to learn to switch between three different task rules. The authors demonstrated how combining learning to synchronize with several classic learning algorithms resulted in significant computational advantages over networks without synchrony, in terms of both stability and plasticity. Crucially, the resulting models’ processing dynamics are also consistent with empirical data and provide empirically testable hypotheses for future MEG/EEG studies.
 
-An online version of this paper can be found [here](https://www.biorxiv.org/content/biorxiv/early/2018/10/30/457150.full.pdf)
+An online version of this paper can be found [here](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006604)
 
 Reference:
-- Verbeke, P., & Verguts, T. (2018). Learning to synchronize: How biological agents can couple neural task modules for dealing with the stability-plasticity dilemma. BioRxiv, 457150.
+- Verbeke, P., & Verguts, T. (2019). Learning to synchronize: How biological agents can couple neural task modules for dealing with the stability-plasticity dilemma. PLoS: Computational Biology 15(8): e1006604
