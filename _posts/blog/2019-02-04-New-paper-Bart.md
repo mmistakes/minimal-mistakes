@@ -1,8 +1,8 @@
 ---
 layout: post
-title: New paper published by Verguts lab
+title: New paper published in NeuroImage
 categories: blog
-excerpt: Published in NeuroImage
+excerpt: Context-dependent modulation of cognitive control involves different temporal profiles of fronto-parietal activity
 tags: [bart, new-paper]
 image:
   feature:
