@@ -7,7 +7,7 @@ Alternatively, you can also opt to see the paper online by clicking on "link to 
 - ...
 
 ## In press
-- Desender, K., Boldt, A., Verguts, T., & Donner, T. (2018). _Post-decisional sense of confidence shapes speed-accuracy tradeoff for subsequent choices._ eLife.
+- Desender, K., Boldt, A., Verguts, T., & Donner, T. (2019). _Post-decisional sense of confidence shapes speed-accuracy tradeoff for subsequent choices._ eLife.
     - [Direct link to pdf](https://kobedesender.files.wordpress.com/2019/08/elife-43499-v2.pdf)
 
 - Verbeke, P., & Verguts, T. (2019). _Learning to synchronize: How biological agents can couple neural task modules for dealing with the stability-plasticity dilemma._ PLoS Computational Biology.
