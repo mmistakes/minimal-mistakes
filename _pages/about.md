@@ -13,6 +13,7 @@ layouts_gallery:
     image_path: mm-layout-archive.png
     alt: "archive layout example"
 modified: 2016-04-18T16:39:37-04:00
+author_profile: false
 ---
 
 {% include base_path %}
@@ -36,15 +37,15 @@ The theme includes responsive layouts (`single`, `archive`, and `splash` pages) 
 
 ## Demo Pages
 
-| Name                                        | Description                                           |
-| ------------------------------------------- | ----------------------------------------------------- |
-| [Post with Header Image][header-image-post] | A post with a large header image. |
+| Name                                            | Description                                                   |
+| ----------------------------------------------- | ------------------------------------------------------------- |
+| [Post with Header Image][header-image-post]     | A post with a large header image.                             |
 | [HTML Tags and Formatting Post][html-tags-post] | A variety of common markup showing how the theme styles them. |
-| [Syntax Highlighting Post][syntax-post] | Post displaying highlighted code. |
-| [Post with a Gallery][gallery-post] | A post showing several images wrapped in `<figure>` elements. |
-| [Sample Collection Page][sample-collection] | Single page from a collection. |
-| [Categories Archive][categories-archive] | Posts grouped by category. |
-| [Tags Archive][tags-archive] | Posts grouped by tags. |
+| [Syntax Highlighting Post][syntax-post]         | Post displaying highlighted code.                             |
+| [Post with a Gallery][gallery-post]             | A post showing several images wrapped in `<figure>` elements. |
+| [Sample Collection Page][sample-collection]     | Single page from a collection.                                |
+| [Categories Archive][categories-archive]        | Posts grouped by category.                                    |
+| [Tags Archive][tags-archive]                    | Posts grouped by tags.                                        |
 
 For even more demo pages check the [posts archive][year-archive].
 

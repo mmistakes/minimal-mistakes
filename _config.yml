@@ -10,7 +10,7 @@ locale: "en-US"
 title: "CPSC 203"
 title_separator: "-"
 excerpt_separator: <!--more-->
-name: &name "Michael Rose"
+name: &name "Cinda Heeren"
 description: &description " "
 url: http://127.0.0.1:4000/minimal-mistakes/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: "/minimal-mistakes" # the subpath of your site, e.g. "/blog"
@@ -76,37 +76,6 @@ analytics:
   provider: "google-universal" # false (default), "google", "google-universal", "custom"
   google:
     tracking_id: "UA-2011187-3"
-
-# Site Author
-author:
-  name: *name
-  avatar: "michael-rose.jpg"
-  bio: "Just another boring, tattooed, time traveling, designer."
-  location: "Buffalo, NY"
-  email:
-  uri: "https://mademistakes.com"
-  bitbucket:
-  codepen:
-  dribbble:
-  flickr:
-  facebook: *facebook
-  foursquare:
-  github: "mmistakes"
-  google_plus:
-  keybase:
-  instagram: "mmistakes"
-  lastfm:
-  linkedin:
-  pinterest:
-  soundcloud:
-  stackoverflow: # http://stackoverflow.com/users/123456/username
-  steam:
-  tumblr:
-  twitter: *twitter
-  vine:
-  weibo:
-  xing:
-  youtube:
 
 # Reading Files
 include:
