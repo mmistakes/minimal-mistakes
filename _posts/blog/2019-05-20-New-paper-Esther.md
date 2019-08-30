@@ -2,7 +2,7 @@
 layout: post
 title: New paper published in Psychophysiology
 categories: blog
-excerpt: Preparing for hard times: scalp and intracranial physiological signatures of proactive cognitive control
+excerpt: Preparing for hard times scalp and intracranial physiological signatures of proactive cognitive control
 tags: [esther, new-paper]
 image:
   feature:
