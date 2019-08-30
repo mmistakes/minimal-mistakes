@@ -31,7 +31,25 @@
       {% endif %}
     </h2>
     {% if post.read_time %}
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
+      <p class="page__meta">
+        <!--
+          Original content
+        -->
+        <!--{% include read-time.html %}-->
+
+        <!--
+          Add date of the post
+        -->
+        {% if site.custom.landingpage.publisheddate and include.type != "grid" %}
+          <i class="fas fa-calendar-alt" aria-hidden="true"></i> {{ post.date | date: "%Y/%m/%d" }} |
+        {% endif %}
+
+        <!--
+          ReadTime
+        -->
+        <i class="far fa-clock" aria-hidden="true"></i>
+        {% include read-time.html %}
+      </p>
     {% endif %}
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>
