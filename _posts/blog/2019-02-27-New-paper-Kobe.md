@@ -1,8 +1,8 @@
 ---
 layout: post
-title: New paper published by Verguts lab
+title: New paper published in Journal of Neuroscience
 categories: blog
-excerpt: Published in The Journal of Neuroscience
+excerpt: A Postdecisional Neural Marker of Confidence Predicts Information-Seeking in Decision-Making
 tags: [kobe, new-paper]
 image:
   feature:
