@@ -2,8 +2,7 @@
 layout: post
 title: New paper published in PLoS Computational Biology
 categories: blog
-excerpt: Learning to synchronize How biological agents can couple neural task modules for dealing with the
-stability-plasticity dilemma
+excerpt: Learning to synchronize How biological agents can couple neural task modules for dealing with the stability-plasticity dilemma
 tags: [pieter-v, tom, new-paper]
 image:
   feature:
