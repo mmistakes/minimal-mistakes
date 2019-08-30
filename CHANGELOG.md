@@ -8,6 +8,7 @@
 ### Bug Fixes
 
 - Fix typo in `_config.yml`. [#2243](https://github.com/mmistakes/minimal-mistakes/pull/2243)
+- Replace `http` URLs with `https` where applicable in `_config.yml`. [#2244](https://github.com/mmistakes/minimal-mistakes/pull/2244)
 
 ## [4.16.6](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.16.6)
 
