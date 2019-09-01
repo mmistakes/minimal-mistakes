@@ -4,7 +4,7 @@ categories:
   - Software Development
   - Reading
 ---
-Fred Books is perhaps best known as the author of _The Mythical Man Month_, a fantastic collection of essays on the craft of managing software development projects. His essay [_"No Silver Bullet"_](http://worrydream.com/refs/Brooks-NoSilverBullet.pdf) has emerged again in the Hacker News community.
+Fred Brooks is perhaps best known as the author of _The Mythical Man Month_, a fantastic collection of essays on the craft of managing software development projects. His essay [_"No Silver Bullet"_](http://worrydream.com/refs/Brooks-NoSilverBullet.pdf) has emerged again in the Hacker News community.
 
 In it, he divides the complexity of software projects into two parts: the ***essential complexity*** which comes from the problem to be solved, and the ***accidental complexity*** which emerges from capturing these entities in programming languages and mapping them to computing systems with space and speed constraints.
 
