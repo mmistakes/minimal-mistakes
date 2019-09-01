@@ -1,7 +1,7 @@
 ---
 permalink: /wisdom/
 title: "Wisdom"
-toc: true
+toc: false
 ---
 
 Peculiar travel suggestions are dancing lessons from God.
