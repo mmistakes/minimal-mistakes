@@ -17,7 +17,11 @@ dispather-servlet에서 Controller의 요청까지 동작 원리를 알기위해
 #### 동작 방식
 1. Context가 로드될 때, BeanFactory에서 Application Context에서 Beans을 스캔하고 handler method를 등록한다. 등록된 Bean중에 Annotation이 Controller이거나 RequestMapping을 찾는다.
 ```java
-RequestMappingHandlerMapping.isHandler
+	@Override
+	protected boolean isHandler(Class<?> beanType) {
+		return (AnnotatedElementUtils.hasAnnotation(beanType, Controller.class) ||
+				AnnotatedElementUtils.hasAnnotation(beanType, RequestMapping.class));
+	}
 ```
 2. 찾은 Handler에서 메소드를 찾아서 getMappingForMethod를 호출한다.
 3. getMappingForMethod는 파라미터로 받은 method와 Handler type으로 RequestMappingInfo 객체를 생성한다.
