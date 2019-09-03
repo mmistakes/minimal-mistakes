@@ -1,7 +1,8 @@
-
+---
 layout: page
 title: Visiting
 excerpt: "Directions to help you find the lab."
+---
 
 ### Finding us in Ghent
 
