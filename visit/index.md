@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Visiting
+title: Where to find us?
 excerpt: "Directions to help you find the lab."
 ---
 
