@@ -22,8 +22,12 @@ HandlerAdapter 타입을 지원하는 추상 클래스인 AbstractHandlerMethodA
 3가지로 구성되어 있으며, RequestMappingHandlerAdapter을 사용했을 때 어떻게 동작하는지 알아보겠습니다.
 - RequestMappingHandlerAdapter
     - @RequestMapping annotation을 지원합니다.
-    - HandlerAdapter 타입을 지원하는 추상 클래스인 AbstractHandlerMethodAdapter 확장하여 사용합니다.
-    - <mvc:annotation-driven /> 선언 시, "java:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter" 사용합니다.
+    - HandlerAdapter 타입을 지원하는 추상 클래스인 AbstractHandlerMethodAdapter 확장하여 사용합니다.  
+    - ```java
+        //dispatcher-servlet.xml
+        <mvc:annotation-driven /> // 선언
+        // "java:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter" 사용합니다.
+      ```
 
 ### 동작 방식
 1. HandlerMapping 클래스에서 클라이언트 요청에 대한 Controller 객체를 가져오면 이를 가지고 Controller 객체를 실행하고 리턴을 반환할 HandlerAdapter를 구합니다.
