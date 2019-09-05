@@ -12,7 +12,7 @@ comments: true
 
 ### HandlerAdapter
 Controller 객체를 호출하여 서로 다른 반환 값을 ModelAndView 타입으로 DispatcherServlet에 반환하는 bean이 필요한데, 이 역할을 HandlerAdapter가 수행합니다.  
-HandlerAdapter 타입을 지원하는 추상 클래스인 AbstractHandlerMethodAdapter 확장하여 구현한 아래 3가지 종류가 있습니다.
+HandlerAdapter 인터페이스를 확장하여 구현한 아래 3가지 종류가 있습니다.
 
 - 종류
 	- RequestMappingHandlerAdapter
