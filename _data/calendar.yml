@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Elternabend 6a 18:00 Uhr",
-    "title": "Elternabend 6a 18:00 Uhr",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M2h0Z292MmlodGQzbHU2b290ZG0yZzl2MzYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-09-05",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-09-06",
-      "date_time": null
-    },
-    "created": "2019-08-15T10:16:21.000Z",
-    "updated": "2019-08-22T07:52:42.353Z"
-  },
-  {
-    "image_path": null,
     "alt": "Lesepaten Cafè",
     "title": "Lesepaten Cafè",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2019-08-16T09:59:48.000Z",
     "updated": "2019-08-16T10:00:03.652Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Herbstferien",
+    "title": "Herbstferien",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MHQ3aXN0bTZiNXVyb2NtN2xjNGNka2o5NmEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-10-04",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-10-19",
+      "date_time": null
+    },
+    "created": "2019-08-19T08:08:15.000Z",
+    "updated": "2019-08-22T08:05:16.733Z"
   }
 ]
