@@ -92,7 +92,7 @@ $(document).ready(function() {
       events: true // if true, emit custom events
     });
   }
-  
+
   // add lightbox class to all image links
   $(
     "a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']"
@@ -131,5 +131,18 @@ $(document).ready(function() {
     },
     closeOnContentClick: true,
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+  });
+
+  // Add anchors for headings
+  $('.page__content').find('h1, h2, h3, h4, h5, h6').each(function() {
+    var id = $(this).attr('id');
+    if (id) {
+      var anchor = document.createElement("a");
+      anchor.className = 'header-link';
+      anchor.href = '#' + id;
+      anchor.innerHTML = '<span class=\"sr-only\">Permalink</span><i class=\"fa fa-link\"></i>';
+      anchor.title = "Permalink";
+      $(this).append(anchor);
+    }
   });
 });
