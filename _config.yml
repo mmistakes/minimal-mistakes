@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Danny Castonguay"
+title                    : "Home"
 title_separator          : "-"
 name                     : "Danny Castonguay"
 description              : "Product Leader."
@@ -133,6 +133,24 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "Work"
+      icon: "fas fa-fw fa-link"
+      url: "https://talented.app"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/dannycast0nguay"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url: "https://facebook.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/dannycastonguay"
+    - label: "Resume"
+      icon: "fas fa-fw fa-address-card"
+      url: "https://resume.dannycastonguay.com"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/dannycastonguay/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url:
