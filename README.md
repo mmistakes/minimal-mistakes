@@ -6,7 +6,7 @@ This is MD file so it needs the front matter or the build will fail
 
 # Local development
 
-The site needs to be built and served by a web browser. To do them at the same time
+The site needs to be built and served by a web browser. To do both of those things at the same time
 use the following command, in the root of your project:
 
 ```bash
@@ -43,7 +43,7 @@ docker run --rm \
 jekyll serve
 ```
 
-Your site will then be available at `http://0.0.0.0:4000`.
+Your site will then be available at [http://0.0.0.0:4000](http://0.0.0.0:4000).
 
 You can also use the docker compose file provided to create two containers: one for Jekyll and 
 one for Ngrok. Why? Because this will allow your local Jekyll site to be visible from outside.
