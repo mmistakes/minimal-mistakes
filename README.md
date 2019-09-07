@@ -14,6 +14,8 @@ bundle exec jekyll serve
 ```
 
 This command will also watch for changes in the site and rebuild it automatically.
+However, this does not apply to your `_config.yml` file. If you make any changes to this file you will
+have to stop the server (with `CTRL-C`) and start it again.
 
 If you prefer not to use the server provided by Jekyll you need to first build the site
 with
@@ -44,6 +46,8 @@ jekyll serve
 ```
 
 Your site will then be available at [http://0.0.0.0:4000](http://0.0.0.0:4000).
+Note that changes to `_config.yml` will not be picked up and the site will not be automatically
+rebuilt. You will have to stop the container and start it again.
 
 You can also use the docker compose file provided to create two containers: one for Jekyll and 
 one for Ngrok. Why? Because this will allow your local Jekyll site to be visible from outside.
