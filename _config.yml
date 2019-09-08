@@ -77,8 +77,8 @@ search                   : # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
-  application_id         : # YOUR_APPLICATION_ID
-  index_name             : # YOUR_INDEX_NAME
+  application_id         : VHK0LDAGFB
+  index_name             : 'posts'
   search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
   powered_by             : # true (default), false
 google:
@@ -231,6 +231,7 @@ exclude:
   - Capfile
   - CHANGELOG
   - config
+  - docker-compose.yml
   - Gemfile
   - Gruntfile.js
   - gulpfile.js
@@ -241,8 +242,8 @@ exclude:
   - Rakefile
   - README
   - tmp
-  - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimal Mistakes /test
+  - docs # ignore Minimal Mistakes /docs
+  - test # ignore Minimal Mistakes /test
 keep_files:
   - .git
   - .svn
