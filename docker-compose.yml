@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+
+  jekyll:
+    container_name: jekyll
+    image: jekyll/jekyll:4.0
+    volumes:
+      - ./:/srv/jekyll:z
+    ports:
+      - 4000:4000
+    networks:
+      - troccoli-github-io
+    command: jekyll serve
+
+  ngrok:
+    container_name: ngrok
+    image: wernight/ngrok
+    depends_on:
+      - jekyll
+    ports:
+      - 4040:4040
+    environment:
+      NGROK_PORT: jekyll:4000
+    networks:
+      - troccoli-github-io
+
+networks:
+  troccoli-github-io:

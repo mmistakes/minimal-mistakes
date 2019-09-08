@@ -39,11 +39,32 @@ If you prefer you could use docker to create a container which will build and se
 docker run --rm \
 --volume="$PWD:/srv/jekyll" \
 -p 4000:4000 \
--it jekyll/jekyll:3.8 \
+-it jekyll/jekyll:4.0 \
 jekyll serve
 ```
 
 Your site will then be available at `http://0.0.0.0:4000`.
+
+You can also use the docker compose file provided to create two containers: one for Jekyll and 
+one for Ngrok. Why? Because this will allow your local Jekyll site to be visible from outside.
+This is particularly useful when updating the CV and you want to create the PDF before merging
+the changes into the master branch.
+
+So, run the following command:
+
+```bash
+docker-compose up
+```
+
+As I said this will create two containers. To find out the external URL you can use fro your
+local Jekyll site you have two options:
+
+- you can run the command `curl $(docker port ngrok 4040)/api/tunnels` and look for the
+`public_url` key
+
+or
+
+- you can go to http://localhost:4040/
 
 ## Resumé to PDF
 
