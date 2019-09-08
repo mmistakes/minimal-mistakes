@@ -1,5 +1,5 @@
 ---
-title: You’ve been hacked. ACID might help you in the future.
+title: You’ve been hacked. ACID might help you in the future
 category: "Digital Transformation"
 tag: ["Cyber Security", "Product", "Data"]
 toc: true
