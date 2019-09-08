@@ -10,3 +10,6 @@
 - skill:
   name: Laravel
   level: 90
+- skill:
+  name: Docker
+  level: 70
