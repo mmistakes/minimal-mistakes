@@ -12,9 +12,9 @@ title_separator: "-"
 excerpt_separator: <!--more-->
 name: &name "Cinda Heeren"
 description: &description " "
-url: http://127.0.0.1:4000/minimal-mistakes/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl: "/minimal-mistakes" # the subpath of your site, e.g. "/blog"
-repository: "mmistakes/minimal-mistakes"
+url: https://cheeren.github.io/cpsc203test/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl: "/cpsc203test" # the subpath of your site, e.g. "/blog"
+repository: "cheeren/cpsc203test"
 teaser: # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute: 200
