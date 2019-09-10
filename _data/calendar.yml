@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Lesepaten Cafè",
-    "title": "Lesepaten Cafè",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NXZva21xaXQ0ZTZsczAyMHJnY3VrdXJkbWYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-09-10T14:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-09-10T16:30:00+02:00"
-    },
-    "created": "2019-08-22T07:53:35.000Z",
-    "updated": "2019-08-22T07:53:35.583Z"
-  },
-  {
-    "image_path": null,
     "alt": "1. GEV",
     "title": "1. GEV",
     "excerpt": "Versammlung der Elternvertreter*innen alle Klassen",
@@ -100,5 +83,22 @@
     },
     "created": "2019-08-19T08:08:15.000Z",
     "updated": "2019-08-22T08:05:16.733Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Fotograf kommt in die Schule",
+    "title": "Fotograf kommt in die Schule",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NGk4ZWI1dHVzbjZiMzgxNTZiOXJhMTdsdXIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-10-22",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-10-24",
+      "date_time": null
+    },
+    "created": "2019-08-16T09:58:51.000Z",
+    "updated": "2019-08-16T09:59:17.386Z"
   }
 ]
