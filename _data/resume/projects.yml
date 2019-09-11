@@ -5,8 +5,20 @@
 - project:
   title: London Volleyball Association
   link: "https://github.com/troccoli/lva"
-  tagline: "An attempt to write a more modern site for the LVA League Admins, in Laravel 5.8"
+  tagline: "This project started as an attempt to write a more modern site for the LVA League Admins in Laravel.
+  It is now a sort of showroom project for my Laravel and soon VueJs skills."
 - project:
   title: iCal
   link: "https://github.com/troccoli/iCal"
   tagline: "A fork of the original markuspoerschke/iCal repo, to which I contributed."
+- project:
+  title: Laravel Framework
+  link: "https://github.com/troccoli/framework"
+  tagline: "This is a fork of the original laravel/framework repo. I used it to work on a couple of PRs I submitted
+  (and were accepted)."
+- project:
+  title: Docker image
+  link: "https://github.com/troccoli/docker-laravel"
+  tagline: "This repository contains the Dockerfile I used to create an image I want to use in my projects (currently
+  only on the London Volleyball Association one). The idea of the project is to give me a consistent and reliable
+  development environment without the need to download any tools, apart from Docker."
