@@ -1,7 +1,13 @@
 ---
-layout: post
 title: "Welcome to the 2nd blog"
 classes: wide
+last_modified_at: 2016-03-09T16:20:02-05:00
+categories:
+  - Post Formats
+tags:
+  - Post Formats
+  - readability
+  - standard
 ---
 
 **Hello world**, this is my 2nd blog post. The header fields are transmitted after the request line (in case of a request HTTP message) or the response line (in case of a response HTTP message), which is the first line of a message. Header fields are colon-separated key-value pairs in clear-text string format, terminated by a carriage return (CR) and line feed (LF) character sequence. The end of the header section is indicated by an empty field(line), resulting in the transmission of two consecutive CR-LF pairs. In the past, long lines could be folded into multiple lines; continuation lines are indicated by the presence of a space (SP) or horizontal tab (HT) as the first character on the next line. This folding is now deprecated.[1]
