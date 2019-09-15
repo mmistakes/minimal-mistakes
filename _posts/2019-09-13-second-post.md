@@ -1,7 +1,6 @@
 ---
 title: "Welcome to the 2nd blog"
 classes: wide
-last_modified_at: 2016-03-09T16:20:02-05:00
 categories:
   - Post Formats
 tags:
