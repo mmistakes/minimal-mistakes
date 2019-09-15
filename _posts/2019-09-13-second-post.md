@@ -2,9 +2,9 @@
 title: "Welcome to the 2nd blog"
 classes: wide
 categories:
-  - Post Formats
+  - 2nd-test
 tags:
-  - Post Formats
+  - 2nd-test
   - readability
   - standard
 ---
