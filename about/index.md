@@ -45,7 +45,7 @@ Information will be added soon.
 
 # Cristian Buc Calderon
 
-My research focuses on understanding how humans select one out of many competing actions. My past research tested specific predictions of the affordance competition hypothesis (Cisek & Kalaska, 2010, Ann. Rev. Neurosci.), both at the neural architecture and decision dynamics levels (Calderon et al., 2015, JEPG; Calderon et al., 2017, PNAS; Calderon et al., 2018, Front. Hum. Neurosci.; Calderon et al., 2018, Psychol. Rev.). More recently, I have been awarded a FWO postdoctoral fellow where I will investigate how the brain learns the optimal timing of individual actions within a sequence of actions (in collaboration with Michael Frank @ Brown University and Tom Verguts @ Ghent University). To carry out this project, I use computational modeling, behavioral and neural methods.   
+My research focuses on understanding how humans select one out of many competing actions. My past research tested specific predictions of the affordance competition hypothesis (Cisek & Kalaska, 2010, Ann. Rev. Neurosci.), both at the neural architecture and decision dynamics levels (Calderon et al., 2015, JEPG; Calderon et al., 2017, PNAS; Calderon et al., 2018, Front. Hum. Neurosci.; Calderon et al., 2018, Psychol. Rev.). More recently, I have been awarded a FWO postdoctoral fellow where I will investigate how the brain learns the optimal timing of individual actions within a sequence of actions (in collaboration with Michael Frank @ Brown University and Tom Verguts @ Ghent University). To carry out this project, I use computational modeling, behavioral and neural methods. PS: I took the picture of Pieter Verbeke (scroll down ;)).
 
 # Elise Lesage
 
