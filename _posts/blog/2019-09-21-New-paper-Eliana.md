@@ -2,7 +2,8 @@
 layout: post
 title: New paper published in International Journal of Psychophysiology
 categories: blog
-excerpt: Striatal dopamine D2 binding correlates with locus of control: Preliminary evidence from [11C]raclopride Positron Emission Tomography
+excerpt: Striatal dopamine D2 binding correlates with locus of control- Preliminary evidence from [11C]raclopride Positron Emission
+Tomography
 tags: [new-paper]
 image:
   feature:
@@ -18,5 +19,5 @@ This highlights a role for dopamine in (the subjective feeling of) control.
 
 
 Reference:
-- Vassena, E., Van Opstal, F., Goethals, I., & Verguts, T. (in press). Striatal dopamine D2 binding correlates with locus of control: Preliminary evidence from [11C]raclopride Positron Emission Tomography.
+- Vassena, E., Van Opstal, F., Goethals, I., & Verguts, T. (in press). Striatal dopamine D2 binding correlates with locus of control: Preliminary evidence from 11C-raclopride Positron Emission Tomography.
 International Journal of Psychophysiology.
