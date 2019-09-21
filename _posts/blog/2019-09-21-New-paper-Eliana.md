@@ -10,7 +10,7 @@ link:
 date: 2019-09-21
 modified:
 share: true
-author: tom_verguts
+author: tomverguts
 ---
 
 In this paper, we observe that dopamine D2 receptor binding in striatum correlates (across subjects) with Locus of Control.
