@@ -2,8 +2,7 @@
 layout: post
 title: New paper published in International Journal of Psychophysiology
 categories: blog
-excerpt: Striatal dopamine D2 binding correlates with locus of control- Preliminary evidence from [11C]raclopride Positron Emission
-Tomography
+excerpt: Striatal dopamine D2 binding correlates with locus of control
 tags: [new-paper]
 image:
   feature:
