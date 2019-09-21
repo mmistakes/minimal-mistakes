@@ -1,7 +1,7 @@
 ---
 title: ACID can protect against computer hacking
 category: "Digital Transformation"
-tag: ["Cyber Security", "Product", "Data"]
+tag: ["Cybersecurity", "Product", "Data"]
 toc: true
 ---
 
@@ -11,7 +11,7 @@ But should some of that ire against hackers be directed at the corporations and 
 
 This snafu on the part of AT&T with iPads is already almost 10 years old. Since then, have corporations and governments generally learned how to thoroughly and unequivocally protect data they collect? 
 
-In section 1, I’m going to argue that your organization may already have been hacked, and likely will be hacked in the future. I’ll then compute statistics that suggest that the data breach problems are actually getting significantly worse. And I will conclude that your organization will need to seriously consider revising your standard for authenticating users. In section 2, I’m going to attempt to explain and illustrate why cyber security is so hard. And finally, in section 3, I’m going to propose the ACID framework, which are four steps to attenuate your cyber security business risks. As a leader of your organization, you should:
+In section 1, I’m going to argue that your organization may already have been hacked, and likely will be hacked in the future. I’ll then compute statistics that suggest that the data breach problems are actually getting significantly worse. And I will conclude that your organization will need to seriously consider revising your standard for authenticating users. In section 2, I’m going to attempt to explain and illustrate why cybersecurity is so hard. And finally, in section 3, I’m going to propose the ACID framework, which are four steps to attenuate your cybersecurity business risks. As a leader of your organization, you should:
 
 1.  **A**ssume that you have already been hacked
 2.  **C**hange what you collect and need to protect
@@ -20,7 +20,7 @@ In section 1, I’m going to argue that your organization may already have been 
 
 # 1. You’ve probably been hacked, and you will be hacked again
 
-As a leader, you have to come to peace with the fact that both you, personally, and your organization have probably already been hacked, and that you will be hacked again in the future. If you are convinced that you haven’t been hacked, how do you know for certain? Consider for a moment the [Stuxnet worm](https://en.wikipedia.org/wiki/Stuxnet), which was arguably one of the [most sophisticated](https://www.quora.com/What-is-the-most-sophisticated-piece-of-software-ever-written-1/answer/John-Byrd-2) weapons created before 2010 to [slow down Iran’s nuclear ambitions](https://www.langner.com/wp-content/uploads/2017/03/to-kill-a-centrifuge.pdf). Despite all its physical manifestation, it took more than a year to be detected, and more years after that to study and understand. A much more passive worm that merely collects and relays data could live under the radar for much longer.
+As a leader, you have to come to peace with the fact that both you, personally, and your organization may have already been hacked, and that you will be hacked again in the future. If you are convinced that you haven’t been hacked, how do you know for certain? Consider for a moment the [Stuxnet worm](https://en.wikipedia.org/wiki/Stuxnet), which was arguably one of the [most sophisticated](https://www.quora.com/What-is-the-most-sophisticated-piece-of-software-ever-written-1/answer/John-Byrd-2) weapons created before 2010 to [slow down Iran’s nuclear ambitions](https://www.langner.com/wp-content/uploads/2017/03/to-kill-a-centrifuge.pdf). Despite all its physical manifestation, it took more than a year to be detected, and more years after that to study and understand. A much more passive worm that merely collects and relays data could live under the radar for much longer.
 
 I’m not one for conspiracy theories, but when there is a will, there is a way (unless the laws of physics prevent it). Would it be too much of a stretch to imagine that the cell phones of many prominent CEOs and heads of states have silently been hacked? No laws of physics prevent it with certainty. How you navigate the next 10 years will be greatly affected by the decisions you make today. But first, here’s some data to support my claim about your data.
 
@@ -36,7 +36,7 @@ As of August 2019, a Wikipedia entry lists [17 reported data breaches](https://e
 + Wire transaction receipts
 + Drivers license images 
 
-We just don’t know for sure, and people who gain access likely have incentives to keep it private. If you want to stay up to date about the many security breaches that are discovered every month, I recommend Brian Krebs as a primary source. If you haven’t heard of him, know that he is an investigative reporter, and is considered an [authority on cyber security](https://en.wikipedia.org/wiki/Brian_Krebs) and his [blog](https://krebsonsecurity.com/) is top notch. 
+We just don’t know for certain, and people who gain access likely have incentives to keep it private. If you want to stay up to date about the many security breaches that are discovered every month, I recommend Brian Krebs as a primary source. If you haven’t heard of him, know that he is an investigative reporter, and is considered an [authority on cybersecurity](https://en.wikipedia.org/wiki/Brian_Krebs) and his [blog](https://krebsonsecurity.com/) is top notch. 
 
 ## 1.2 The growth rate is exponential, at 30% per year
 
@@ -54,11 +54,17 @@ In a world where personal records have been breached 20 times, it’s hard to im
 
 You might need to find a way to serve your customers and make a profit without relying on pieces of information you can count on today. I’m not going to expand on it in this post, but one avenue worth exploring will be blockchain backed [self-sovereign-identity systems](https://en.wikipedia.org/wiki/Digital_identity#Self-sovereign_identity) with hardware tokens, digital footprint, and biometrics.
 
-You probably do not need to learn exactly how security exploits work (e.g., a stack buffer overflow, SQL injection), but you do need to understand that what makes cyber security such a challenging and humbling problem is that software can have millions of lines of code, and it only takes one mistake to compromise security. The entire Lord of the Rings series has [576,459 words](https://blog.fostergrant.co.uk/2017/08/03/word-counts-popular-books-world/) while the Harry Potter series has [1,084,170 words](https://blog.fostergrant.co.uk/2017/08/03/word-counts-popular-books-world/). Assuming that a sentence is made of 20 words on average, and that sentences are equivalent to lines of code, then reading the source code of Microsoft Office 2013 (with it’s [45,000,000 lines of code](https://informationisbeautiful.net/visualizations/million-lines-of-code/)) is equivalent to reading Harry Potter 830 times, and reading Google’s entire code base ([2,000,000,000 lines of code](https://informationisbeautiful.net/visualizations/million-lines-of-code/)) would be around 37,000 times. Historians in the year 5,000 AD might see Google as the pyramids of the year 2,000 AD!
+# 2. Illustration of why cybersecurity is so hard
+
+You probably do not need to learn exactly how security exploits work (e.g., a stack buffer overflow, SQL injection), but you do need to understand that what makes cybersecurity such a challenging and humbling problem is that software can have millions of lines of code, and it only takes one mistake to compromise security. The entire Lord of the Rings series has [576,459 words](https://blog.fostergrant.co.uk/2017/08/03/word-counts-popular-books-world/) while the Harry Potter series has [1,084,170 words](https://blog.fostergrant.co.uk/2017/08/03/word-counts-popular-books-world/). Assuming that a sentence is made of 20 words on average, and that sentences are equivalent to lines of code, then reading the source code of Microsoft Office 2013 (with it’s [45,000,000 lines of code](https://informationisbeautiful.net/visualizations/million-lines-of-code/)) is equivalent to reading Harry Potter 830 times, and reading Google’s entire code base ([2,000,000,000 lines of code](https://informationisbeautiful.net/visualizations/million-lines-of-code/)) would be around 37,000 times. Historians in the year 5,000 AD might see Google as the pyramids of the year 2,000 AD!
 
 Worse, in some cases, the mechanics of the software work exactly as intended, but the policy and people process to secure the data are flawed - ask [Jack Dorsey who fell victim to a sim swap](https://www.nytimes.com/2019/09/05/technology/sim-swap-jack-dorsey-hack.html). In the Newtonian physics world our paleolithic brains are accustomed to, securing a space implies watching a small number of doors (for instance the [Whitehouse has 412 doors](https://www.whitehouse.gov/about-the-white-house/the-white-house/)). In the digital world, the number of doors could easily be counted in the millions. Understanding software deeply is a singular mind opening task because our intuition and emotions consistently get in the way of grasping it.
 
+## 2.1 Your data exists in multiple forms
+
 You need to have a clear understanding that your data exists in multiple forms. On the one hand, you might have a single source of truth in a database somewhere. But copies of subsets of that data most likely are also present in the form of memory (in your RAM and inside the registers of your CPU), packets getting sent over the internet, backups, buffers, and on the client side (web browsers and mobile phones). All of the copies of your data exist independent of each other, and while most systems will generate logs of what happens to your data, it’s impossible to log and monitor everything. 
+
+## 2.2 Encrypted does not equal secure
 
 Being “encrypted” is a loosely defined term until you specify who has the key to open it. Just because your data is encrypted doesn’t mean it is secure. For instance, if the data is encrypted in the database, but the server has the key to decrypt it and your server gets compromised, then you have a security hole. If your business case allows you to keep the data encrypted on the server, and the keys are left with the client only, then you’ve eliminated a large class of security holes.
 
@@ -66,9 +72,9 @@ Unfortunately, for many applications, server side data is not encrypted with a c
 
 *Side note: [RSA is one of the algorithms behind the “S” in “HTTPS”](https://tiptopsecurity.com/how-does-https-work-rsa-encryption-explained/), which stands for HyperText Transfer Protocol over Transport Layer Security (TLS). HTTPS was introduced by Netscape in 1994 to allow private communication between your browser and a website’s server. RSA is “computationally secure” because decrypting (without knowledge of the two large prime numbers making up the private key) requires huge computational power. If you want to understand how it works, I implemented the algorithm in a [Google Spreadsheet which you can copy and play with](https://docs.google.com/spreadsheets/d/19Xd2ZpNQj_ShXRsnncCkjp1Gd90sXZve0gBUJTm6TFw/edit?usp=sharing).  It’s worth noting that while quantum computers might be around the corner (and with [Shor’s algorithm](https://en.wikipedia.org/wiki/Shor%27s_algorithm) could decrypt RSA (by factoring large prime numbers quickly), and hence render RSA ineffective, we could still encrypt safely using [one-time pad](https://en.wikipedia.org/wiki/One-time_pad).*
 
-# 2. What you can do about it today: the ACID framework
+# 3. What you can do about it today: the ACID framework
 
-## 2.1 Assume that you have already been hacked
+## 3.1 Assume that you have already been hacked
 
 This first step is a mindset shift and a habit. Imagine for a moment that you have been hacked, and your data is breached top to bottom:
 
@@ -94,7 +100,7 @@ In terms of loss of a competitive edge, imagine that you are in the business of 
 
 While data can be extremely valuable, you need to be aware that it is also a liability. With the mindset that everything is public, you will be better prepared mentally to the eventuality of a breach and avoid unnecessary risks because when it comes to cybersecurity, hypochondriacs survive. 
 
-## 2.2 Change what you collect and need to protect
+## 3.2 Change what you collect and need to protect
 
 Sometimes, it’s necessary to collect data because the government requires you to do so, or because you want to offer a better user experience. For instance, as an employer you are required to collect the social insurance number and the address of your employees. In general, you need to ask yourself whether the benefit of storing a data point outweighs the risk. If not, you should change your approach.
 
@@ -110,7 +116,7 @@ Even if you assume that you’ve been hacked and minimize the data that you coll
 
 *Site note: When it comes to learning how to hack systems, I’m more of a weekend warrior than a weekday professional. But my recommendation below is consistent with the first lecture from the [2014 MIT Open Courseware on Computer Systems Security](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-858-computer-systems-security-fall-2014/). *
 
-## 2.3. Invest in a security policy, threat models, and mechanisms
+## 3.3. Invest in a security policy, threat models, and mechanisms
 
 As taught by [Prof. Nickolai Zeldovich](https://people.csail.mit.edu/nickolai/#bio,teaching,contact,pubs) in [6-858](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-858-computer-systems-security-fall-2014/), you want to secure your data from a potential data breach by specifying a policy, threats, and mechanisms: 
 
@@ -118,7 +124,7 @@ As taught by [Prof. Nickolai Zeldovich](https://people.csail.mit.edu/nickolai/#b
 2. **Threats**: a set of assumptions about adversaries (e.g., do they have physical access and have the password?).
 3. **Mechanisms**: the software, hardware, and process that enforces the policy and secures it against the threats.
 
-### 2.3.1 Policy
+### 3.3.1 Policy
 
 In terms of policy, a poor policy could be in terms of weak recovery questions. For instance, if I call your customer service and recover my account by answering purely biographical questions, it is quite easy to perform a social hack. Imagine if a famous person like Sarah Palin were your customer, the hack [could be as easy as calling customer service while giving answers from the Wikipedia page entry](https://en.wikipedia.org/wiki/Sarah_Palin_email_hack)!
 
@@ -128,7 +134,7 @@ Beware of policies that are security theatres. For instance, requiring employees
 
 If your enterprise is serious about data security, which it is, you could consider augmenting passwords with a security key such as [Yubico 5 NFC](https://amzn.to/2ZWHa4T) and start adopting virtual credit cards with a different [controlled payment number](https://en.wikipedia.org/wiki/Controlled_payment_number), at least for every service / vendor combination.
 
-### 2.3.2 Threats 
+### 3.3.2 Threats 
 
 While threats can come from anywhere, not everything is equally likely, because advanced attacks may require a substantial amount of coordinated resources and efforts. The first class of threats to model are about human behavior and hardly requires any programming skills on the part of the attacker. Included in that will be easy to guess passwords, social engineering, and plain old downloading data that is left unprotected and publicly available to all.
 
@@ -144,7 +150,7 @@ The last class of threat models comes from hardware bugs and backdoors. This is 
 
 Much like computing and space exploration once were only the business of governments, in the future, corporations and even individuals will be able to accomplish hardware hacks more easily. For instance, researchers from [Google’s Project Zero](https://googleprojectzero.blogspot.com/) have discovered security vulnerabilities in chips such as [Specter](https://en.wikipedia.org/wiki/Spectre_(security_vulnerability)) and [Meltdown](https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)). More recently, as of Sept 2019, researchers have demonstrated the ability to steal encrypted SSH keystrokes by [leveraging a weakness in intel chips](https://arstechnica.com/information-technology/2019/09/weakness-in-intel-chips-lets-researchers-steal-encrypted-ssh-keystrokes/). 
 
-### 2.3.3 Mechanisms 
+### 3.3.3 Mechanisms 
 
 When it comes to mechanisms, pretty dramatic consequences can happen from the smallest mistakes. Even with good policies and good understanding of threat models, mechanisms of large software systems most certainly will have bugs. For instance, in 2014 Apple iCloud’s policy was to limit how many times a password check may be attempted before locking the account. Once locked in one app, a user would be locked everywhere. The mechanism was properly implemented in all (e.g., Photos, Files) but one service (“Find My iPhone”). As a result, someone could have attempted to [brute force their way into iCloud](https://github.com/hackappcom/ibrute) via “Find My iPhone”, and the iCloud API would have happily complied. 
 
@@ -155,11 +161,11 @@ While the iCloud “Find My iPhone” bug might have been avoided with only one 
 3. Perform regular “[red team](https://en.wikipedia.org/wiki/Red_team)” security audits (crypto, pentesting, and network sec)
 4. Have a tight feedback loop with your dev, DevOps, and sysadmin to fix vulnerabilities swiftly
 
-## 2.4. Drive a protection first culture 
+## 3.4. Drive a protection first culture 
 
 Alphabet, Apple, Amazon, Microsoft, Facebook, Alibaba, and Tencent are all tech companies and form seven of the ten [largest companies by market cap in the world](https://en.wikipedia.org/wiki/List_of_public_corporations_by_market_capitalization). We are now in the age of software, where all major corporations will soon be tech companies with tens of thousands of people in their ranks involved in creating software products. It is becoming clear that the largest 5,000 organizations on Earth need to play catch up when looking for talent that have a clear understanding of software and cybersecurity - both at the most junior ranks, but also at the most senior ranks. Not only do they need to play catch up in human resources but also in systems and protocols in place with regards to cybersecurity. As we have seen in this post, one person can topple a company’s security infrastructure with simple negligence and errors. 
 
-### 2.4.1 Distribute responsibility
+### 3.4.1 Distribute responsibility
 
 In 1913, Henry Ford installed the [first moving assembly line](https://www.history.com/this-day-in-history/fords-assembly-line-starts-rolling) for the mass production of an entire automobile. No single person in this entire organization, not even Henry himself, could have made an error that would have gone unnoticed and would have resulted in the disruption of all the Ford car produced that year and the years before.
 
@@ -174,8 +180,8 @@ Whitelisting of IPs and application whitelisting
 Hard coded credentials
 Use reputation services to check whether the application you are running has been run before
 
-### Centralize accountability
+### 3.4.2 Centralize accountability
 
-Cyber sec professionals are to cyber sec what HSE professionals are to health, environment and safety. They write policies, train people, and measure impact, but they cannot be everywhere at all times. The people in operations need to adopt behaviors that keep them healthy and safe, and protect the environment via their actions. In effect, the general manager of a mine or a plant has much more direct influence over the number of injuries than the person in charge of HSE. The same is true for cyber security: everyone, starting from the CEO down, and from the interns up, need to participate in forging a culture that promotes cyber security. 
+Cybersec professionals are to cybersec what HSE professionals are to health, environment and safety. They write policies, train people, and measure impact, but they cannot be everywhere at all times. The people in operations need to adopt behaviors that keep them healthy and safe, and protect the environment via their actions. In effect, the general manager of a mine or a plant has much more direct influence over the number of injuries than the person in charge of HSE. The same is true for cybersecurity: everyone, starting from the CEO down, and from the interns up, need to participate in forging a culture that promotes cybersecurity. 
 
 However, influencing people (via role modeling, training, and storytelling) is insufficient. 
