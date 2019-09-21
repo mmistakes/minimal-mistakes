@@ -89,5 +89,4 @@ hint: 'git pull ...') before pushing again.
 pull을 받아서(merge commit이 생성됨) 다시 push를 하거나 `git push -f origin`  커맨드를 실행하는 방법이 있다.
 
 ### 개인적인 결론
-코드를 수정하여 master에 반영할 때는 merge를 사용하고 테스트나 master에 반영할 필요가 없는 브랜치인데 master의 최신 커밋을 반영하면서 작업을 해야한다면 rebase를 통해 꾸준하게 최신 브랜치를 유지할 수 있을 것 같습니다.  
-rebase는 merge commit이 없어 history를 좀 더 깔끔하게 사용 할 수 있지만 master에 어떤 브랜치가 병합되었는지는 로그만 보고는 힘들 것 같습니다. 그래프를 통해 확인은 할 수 있습니다. 이렇게 서로 장단점이 존재하여 상황에 맞게 사용하면 좋을 것 같습니다.
+rebase는 merge commit이 없어 history를 좀 더 깔끔하게 사용 할 수 있고 merge는 충돌처리에 대해서 한번만 수정하면 된다는 장점도 있고 여러 상황 중 master에 반영할 필요가 없는 브랜치인데 master의 최신 커밋을 반영하면서 작업을 해야한다면 rebase를 통해 꾸준하게 최신 브랜치를 유지할 수 있을 것 같습니다. 이렇게 서로 장단점이 존재하여 상황에 맞게 사용하면 좋을 것 같습니다.
