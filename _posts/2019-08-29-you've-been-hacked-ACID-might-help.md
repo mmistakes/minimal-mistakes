@@ -15,7 +15,7 @@ In section 1, I’m going to argue that your organization may already have been 
 
 1.  **A**ssume that you have already been hacked
 2.  **C**hange what you collect and need to protect
-3.  **I**nvest in a security policy, threat models, and mechanisms
+3.  **I**nvest in security policies, threat models, and mechanisms
 4. **D**rive a protection first culture 
 
 # 1. You’ve probably been hacked, and you will be hacked again
@@ -40,7 +40,7 @@ We just don’t know for certain, and people who gain access likely have incenti
 
 ## 1.2 The growth rate is exponential, at 30% per year
 
-I did a quick analysis, which you can find [here](https://docs.google.com/spreadsheets/d/15y0nxp3t7FajBQGZDROVcb7bvq84Yid3-1GX7NDzFyc/edit?usp=sharing), where I show that while the number of reported data breach cases have been growing linearly at 4% per year (R^2 of 0.27), the number of records breached (excluding the [3B Yahoo records breach of 2013](https://www.nytimes.com/2017/10/03/technology/yahoo-hack-3-billion-users.html)) have been growing exponentially at almost 30% per year (R^2 of 0.64). You you don’t need to be a hedge fund manager to recognize that anything growing at that rate is scary fast and you don’t need to call yourself a data scientist to recognize that an R^2 of 0.64 is hard to brush aside.
+I did a quick analysis, which you can find [here](https://docs.google.com/spreadsheets/d/15y0nxp3t7FajBQGZDROVcb7bvq84Yid3-1GX7NDzFyc/edit?usp=sharing), where I show that while the number of reported data breach cases have been growing linearly at 4% per year (R^2 of 0.27), the number of records breached (excluding the [3B Yahoo records breach of 2013](https://www.nytimes.com/2017/10/03/technology/yahoo-hack-3-billion-users.html)) have been growing exponentially at almost 30% per year (R^2 of 0.64). You don’t need to be a hedge fund manager to recognize that anything growing at that rate is scary fast and you don’t need to call yourself a data scientist to recognize that an R^2 of 0.64 is hard to brush aside.
 
 Let me give you a sense of what the exponential growth means if you believe the model holds true. At this rate, by 2030, you can expect that 169 billion records will have been breached (39 billion records in 2030 alone). This means that if the world population reaches 8.5 billion people ([as projected by the UN](https://www.un.org/sustainabledevelopment/blog/2015/07/un-projects-world-population-to-reach-8-5-billion-by-2030-driven-by-growth-in-developing-countries/)), and if you assume that every human is equally likely to be exposed, our personal records will on average have been breached 20 times. **So much for the last four digits of your US Social Security Number (SSN) as a proof of identity!**
 
@@ -85,7 +85,7 @@ This first step is a mindset shift and a habit. Imagine for a moment that you ha
 
 How does the breach affect your ability to continue to sell your products and services? What’s the worst thing that could happen? 
 
-### Qualify the negative impact of a full breach
+### 3.1.1 Qualify and quantify the negative impact of a full breach
 
 There are at least four ways that a data breach may affect your organization:
 
@@ -98,25 +98,29 @@ For instance, a network of hospitals could lose a lot of customers after a breac
 
 In terms of loss of a competitive edge, imagine that you are in the business of extracting natural resources and you’ve invested tens of millions of dollars building a deep neural net to quickly and accurately assess the value of an asset given core sample data. Or imagine that you are Tesla and finally have the neural net that achieves [Full Self Driving](https://www.tesla.com/autopilot). A data breach could expose the weights of your neural nets and source code (including the [SystemVerilog source code files](https://en.wikipedia.org/wiki/SystemVerilog), that are the blueprint for your custom hardware chip) which would effectively reveal your secret sauce. In such a case, you would have lost the intelligence asymmetry advantage you’ve invested so many resources in building. 
 
+### 3.1.2 Data is both an asset and a liability 
+
 While data can be extremely valuable, you need to be aware that it is also a liability. With the mindset that everything is public, you will be better prepared mentally to the eventuality of a breach and avoid unnecessary risks because when it comes to cybersecurity, hypochondriacs survive. 
 
 ## 3.2 Change what you collect and need to protect
 
 Sometimes, it’s necessary to collect data because the government requires you to do so, or because you want to offer a better user experience. For instance, as an employer you are required to collect the social insurance number and the address of your employees. In general, you need to ask yourself whether the benefit of storing a data point outweighs the risk. If not, you should change your approach.
 
-### Question whether the downside risk is worth it
+### 3.2.1 Question whether the downside risk is worth it
 
 If you run a network of hair salons or a convenience store chain, you may be tempted to collect information on your customers, such as their phone number, date of birth, the stores they go to, and the frequency of purchase. For instance, you might use that information to do a better job of targeting your promotions. Marketing analytics works and it makes money for the shareholders. However, it is a very slippery slope and before you know it, you will forget how creepy machine learning can get (e.g., promoting pregnancy related products to a [teenage girl who bought [unscented lotion, mineral supplements, and cotton balls](https://slate.com/human-interest/2014/06/big-data-whats-even-creepier-than-target-guessing-that-youre-pregnant.html)). Perhaps hair salons do not need to ask for dates of births.
 
 On the other hand, suppose that you run a cruise ship line. While at sea, it is very convenient to be able to chat and send pictures to your cabin mates. Cruise companies have invested in building apps that will contain features such as activity schedules, loyalty program, and on-ship messenger (no internet required). It might be tempting for a loyalty program manager to collect those chats to run some analytics on them. For instance, do customers who use the chat tend to be repeat customers? Pushing the envelope a little more, one could imagine doing real-time sentiment analysis on the chats to understand how the experience is going to offer you more targeting on-board promotions (e.g., happy hour on deck 11), or even sell these chats to third parties. Sounds far fetched? The Wall Street Journal had an [interesting article about Gmail Ads](https://www.wsj.com/articles/techs-dirty-secret-the-app-developers-sifting-through-your-gmail-1530544442), to which [Google quickly replied via its blog](https://www.blog.google/technology/safety-security/ensuring-your-security-and-privacy-within-gmail/). A cruise line company could choose to offer the chat feature with end-to-end encryption ([E2EE](https://en.wikipedia.org/wiki/End-to-end_encryption)) such that they would offer a great on-board experience without the ability to read the content of the chats on the server.
 
+### 3.2.2 Weigh the tradeoff
+
 The answer might not always be clear cut, so weighing both sides of the tradeoffs is wiser to mitigate the downside risks of a breach. When it comes to data, being a compulsive hoarder can be a significant liability. Deleting data and/or end-to-end encryption (such that you can’t read your customer’s data) might be a safer avenue.
 
 Even if you assume that you’ve been hacked and minimize the data that you collect,  you will still be left with some data that needs to be protected. It’s probably already quite clear to you and your team what data is most sensitive and valuable to your organization. Less clear perhaps is where it is stored, how it flows, and how to secure the data in its many forms.
 
-*Site note: When it comes to learning how to hack systems, I’m more of a weekend warrior than a weekday professional. But my recommendation below is consistent with the first lecture from the [2014 MIT Open Courseware on Computer Systems Security](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-858-computer-systems-security-fall-2014/). *
+*Site note: When it comes to learning how to hack systems, I’m more of a weekend warrior than a weekday professional. But my recommendation below is consistent with the first lecture from the [2014 MIT Open Courseware on Computer Systems Security](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-858-computer-systems-security-fall-2014/).*
 
-## 3.3. Invest in a security policy, threat models, and mechanisms
+## 3.3. Invest in security policies, threat models, and mechanisms
 
 As taught by [Prof. Nickolai Zeldovich](https://people.csail.mit.edu/nickolai/#bio,teaching,contact,pubs) in [6-858](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-858-computer-systems-security-fall-2014/), you want to secure your data from a potential data breach by specifying a policy, threats, and mechanisms: 
 
@@ -126,7 +130,7 @@ As taught by [Prof. Nickolai Zeldovich](https://people.csail.mit.edu/nickolai/#b
 
 ### 3.3.1 Policy
 
-In terms of policy, a poor policy could be in terms of weak recovery questions. For instance, if I call your customer service and recover my account by answering purely biographical questions, it is quite easy to perform a social hack. Imagine if a famous person like Sarah Palin were your customer, the hack [could be as easy as calling customer service while giving answers from the Wikipedia page entry](https://en.wikipedia.org/wiki/Sarah_Palin_email_hack)!
+In terms of policy, a poor policy could be in terms of weak recovery questions. For instance, if I call your customer service and recover my account by answering purely biographical questions, it is quite easy to perform a social hack. Imagine if a famous person like Sarah Palin were your customer, the [hack](https://en.wikipedia.org/wiki/Sarah_Palin_email_hack) could be as easy as calling customer service while giving answers from the Wikipedia page entry!
 
 Beware of policies that are security theatres. For instance, requiring employees to change their passwords frequently may put a burden on the employees’ memory, making it more likely that they will use simpler passwords, or write them on a piece of paper as a memory aid. This [ironic xkcd cartoon](https://xkcd.com/936/) illustrates the point about poor security policies when it comes to passwords.
 
@@ -148,7 +152,7 @@ The last class of threat models comes from hardware bugs and backdoors. This is 
 
 > If a target person, agency or company orders a new computer or related accessories, for example, TAO can divert the shipping delivery to its own secret workshops. The NSA calls this method interdiction. At these so-called "load stations," agents carefully open the package in order to load malware onto the electronics, or even install hardware components that can provide backdoor access for the intelligence agencies.
 
-Much like computing and space exploration once were only the business of governments, in the future, corporations and even individuals will be able to accomplish hardware hacks more easily. For instance, researchers from [Google’s Project Zero](https://googleprojectzero.blogspot.com/) have discovered security vulnerabilities in chips such as [Specter](https://en.wikipedia.org/wiki/Spectre_(security_vulnerability)) and [Meltdown](https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)). More recently, as of Sept 2019, researchers have demonstrated the ability to steal encrypted SSH keystrokes by [leveraging a weakness in intel chips](https://arstechnica.com/information-technology/2019/09/weakness-in-intel-chips-lets-researchers-steal-encrypted-ssh-keystrokes/). 
+Much like computing and space exploration once were only the business of governments, in the future, corporations and even individuals will be able to accomplish hardware hacks more easily. For instance, researchers from [Google’s Project Zero](https://googleprojectzero.blogspot.com/) have discovered security vulnerabilities in chips such as [Specter](https://en.wikipedia.org/wiki/Spectre_(security_vulnerability)) and [Meltdown](https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)). More recently, as of September 2019, researchers have demonstrated the ability to steal encrypted SSH keystrokes by [leveraging a weakness in intel chips](https://arstechnica.com/information-technology/2019/09/weakness-in-intel-chips-lets-researchers-steal-encrypted-ssh-keystrokes/). 
 
 ### 3.3.3 Mechanisms 
 
@@ -169,7 +173,7 @@ Alphabet, Apple, Amazon, Microsoft, Facebook, Alibaba, and Tencent are all tech 
 
 In 1913, Henry Ford installed the [first moving assembly line](https://www.history.com/this-day-in-history/fords-assembly-line-starts-rolling) for the mass production of an entire automobile. No single person in this entire organization, not even Henry himself, could have made an error that would have gone unnoticed and would have resulted in the disruption of all the Ford car produced that year and the years before.
 
-Since everyone makes mistakes, organizations need to ensure that there is a fail-safe behind everyone that interacts with software systems: employees, contractors, partners, and suppliers. There are ways to achieve that and I believe technology leaders today can learn from the people that have been running nuclear submarines for decades.  [SUBSAFE](https://www.usni.org/magazines/proceedings/2014/june/pillars-submarine-safety) is a certification that was established by the US Navy following the loss of 16 submarines in non-combat related incidents between 1915 and 1963, including the USS Thresher in 1963.  No submarine has been lost ever since. If you have the time, I recommend that you read the [statement by Rear Admiral Paul E. Sullivan about SUBSAFE](https://www.navy.mil/navydata/testimony/safety/sullivan031029.txt) given before the house science committee in October 2003. 
+Since everyone makes mistakes, organizations need to ensure that there is a fail-safe behind everyone that interacts with software systems: employees, contractors, partners, and suppliers. There are ways to achieve that and I believe leaders today can learn from the people that have been running US nuclear submarines for decades.  [SUBSAFE](https://www.usni.org/magazines/proceedings/2014/june/pillars-submarine-safety) is a certification that was established by the US Navy following the loss of 16 submarines in non-combat related incidents between 1915 and 1963, including the USS Thresher in 1963.  No submarine has been lost ever since. If you have the time, I recommend that you read the [statement by Rear Admiral Paul E. Sullivan about SUBSAFE](https://www.navy.mil/navydata/testimony/safety/sullivan031029.txt) given before the House Science Committee in October 2003. 
 
 Privilege (of least access) separation both at software and at process level
 
