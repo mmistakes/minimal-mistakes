@@ -165,26 +165,25 @@ While the iCloud “Find My iPhone” bug might have been avoided with only one 
 3. Perform regular “[red team](https://en.wikipedia.org/wiki/Red_team)” security audits (crypto, pentesting, and network sec)
 4. Have a tight feedback loop with your dev, DevOps, and sysadmin to fix vulnerabilities swiftly
 
-## 3.4. Drive a protection first culture 
+## 3.4. Drive a protection first culture [DRAFT]
 
 Alphabet, Apple, Amazon, Microsoft, Facebook, Alibaba, and Tencent are all tech companies and form seven of the ten [largest companies by market cap in the world](https://en.wikipedia.org/wiki/List_of_public_corporations_by_market_capitalization). We are now in the age of software, where all major corporations will soon be tech companies with tens of thousands of people in their ranks involved in creating software products. It is becoming clear that the largest 5,000 organizations on Earth need to play catch up when looking for talent that have a clear understanding of software and cybersecurity - both at the most junior ranks, but also at the most senior ranks. Not only do they need to play catch up in human resources but also in systems and protocols in place with regards to cybersecurity. As we have seen in this post, one person can topple a company’s security infrastructure with simple negligence and errors. 
 
-### 3.4.1 Distribute responsibility
+### 3.4.1 Distribute responsibility [DRAFT]
 
-In 1913, Henry Ford installed the [first moving assembly line](https://www.history.com/this-day-in-history/fords-assembly-line-starts-rolling) for the mass production of an entire automobile. No single person in this entire organization, not even Henry himself, could have made an error that would have gone unnoticed and would have resulted in the disruption of all the Ford car produced that year and the years before.
+In 1913, Henry Ford installed the [first moving assembly line](https://www.history.com/this-day-in-history/fords-assembly-line-starts-rolling) for the mass production of an entire automobile. No single person in the entire organization, not even Henry himself, could have made an error that would have gone unnoticed and would have resulted in the disruption of all the Ford car produced that year and the years before.
 
 Since everyone makes mistakes, organizations need to ensure that there is a fail-safe behind everyone that interacts with software systems: employees, contractors, partners, and suppliers. There are ways to achieve that and I believe leaders today can learn from the people that have been running US nuclear submarines for decades.  [SUBSAFE](https://www.usni.org/magazines/proceedings/2014/june/pillars-submarine-safety) is a certification that was established by the US Navy following the loss of 16 submarines in non-combat related incidents between 1915 and 1963, including the USS Thresher in 1963.  No submarine has been lost ever since. If you have the time, I recommend that you read the [statement by Rear Admiral Paul E. Sullivan about SUBSAFE](https://www.navy.mil/navydata/testimony/safety/sullivan031029.txt) given before the House Science Committee in October 2003. 
 
-Privilege (of least access) separation both at software and at process level
++ Privilege (of least access) separation both at software and at process level
++ Least privilege for accounts
++ Segmenting off portions of the network
++ Whitelisting of IPs and application whitelisting
++ Hard coded credentials
++ Use reputation services to check whether the application you are running has been run before
 
-Least privilege for accounts
+### 3.4.2 Centralize accountability [DRAFT]
 
-Segmenting off portions of the network
-Whitelisting of IPs and application whitelisting
-Hard coded credentials
-Use reputation services to check whether the application you are running has been run before
-
-### 3.4.2 Centralize accountability
 
 Cybersec professionals are to cybersec what HSE professionals are to health, environment and safety. They write policies, train people, and measure impact, but they cannot be everywhere at all times. The people in operations need to adopt behaviors that keep them healthy and safe, and protect the environment via their actions. In effect, the general manager of a mine or a plant has much more direct influence over the number of injuries than the person in charge of HSE. The same is true for cybersecurity: everyone, starting from the CEO down, and from the interns up, need to participate in forging a culture that promotes cybersecurity. 
 
