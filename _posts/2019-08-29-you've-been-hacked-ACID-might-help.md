@@ -13,8 +13,8 @@ This snafu on the part of AT&T with iPads is already almost 10 years old. Since 
 
 In section 1, I’m going to argue that your organization may already have been hacked, and likely will be hacked in the future. I’ll then compute statistics that suggest that the data breach problems are actually getting significantly worse. And I will conclude that your organization will need to seriously consider revising your standard for authenticating users. In section 2, I’m going to attempt to explain and illustrate why cybersecurity is so hard. And finally, in section 3, I’m going to propose the ACID framework, which are four steps to attenuate your cybersecurity business risks. As a leader of your organization, you should:
 
-1.  **A**ssume that you have already been hacked
-2.  **C**hange what you collect and need to protect
+1.  **A**ssume that you have been hacked
+2.  **C**hange what you need to protect
 3.  **I**nvest in security policies, threat models, and mechanisms
 4. **D**rive a protection first culture 
 
@@ -74,7 +74,11 @@ Unfortunately, for many applications, server side data is not encrypted with a c
 
 # 3. What you can do about it today: the ACID framework
 
-## 3.1 Assume that you have already been hacked
+The ACID framework is a pyramid.
+
+![ACID Pyramid](/assets/img/ACID.svg)
+
+## 3.1 Assume that you have been hacked
 
 This first step is a mindset shift and a habit. Imagine for a moment that you have been hacked, and your data is breached top to bottom:
 
@@ -102,7 +106,7 @@ In terms of loss of a competitive edge, imagine that you are in the business of 
 
 While data can be extremely valuable, you need to be aware that it is also a liability. With the mindset that everything is public, you will be better prepared mentally to the eventuality of a breach and avoid unnecessary risks because when it comes to cybersecurity, hypochondriacs survive. 
 
-## 3.2 Change what you collect and need to protect
+## 3.2 Change what you need to protect
 
 Sometimes, it’s necessary to collect data because the government requires you to do so, or because you want to offer a better user experience. For instance, as an employer you are required to collect the social insurance number and the address of your employees. In general, you need to ask yourself whether the benefit of storing a data point outweighs the risk. If not, you should change your approach.
 
@@ -165,26 +169,35 @@ While the iCloud “Find My iPhone” bug might have been avoided with only one 
 3. Perform regular “[red team](https://en.wikipedia.org/wiki/Red_team)” security audits (crypto, pentesting, and network sec)
 4. Have a tight feedback loop with your dev, DevOps, and sysadmin to fix vulnerabilities swiftly
 
-## 3.4. Drive a protection first culture [DRAFT]
+## 3.4. Drive a protection first culture
 
-Alphabet, Apple, Amazon, Microsoft, Facebook, Alibaba, and Tencent are all tech companies and form seven of the ten [largest companies by market cap in the world](https://en.wikipedia.org/wiki/List_of_public_corporations_by_market_capitalization). We are now in the age of software, where all major corporations will soon be tech companies with tens of thousands of people in their ranks involved in creating software products. It is becoming clear that the largest 5,000 organizations on Earth need to play catch up when looking for talent that have a clear understanding of software and cybersecurity - both at the most junior ranks, but also at the most senior ranks. Not only do they need to play catch up in human resources but also in systems and protocols in place with regards to cybersecurity. As we have seen in this post, one person can topple a company’s security infrastructure with simple negligence and errors. 
+Alphabet, Apple, Amazon, Microsoft, Facebook, Alibaba, and Tencent are all tech companies and form seven of the ten [largest companies by market cap in the world](https://en.wikipedia.org/wiki/List_of_public_corporations_by_market_capitalization). We are now firmly in the age of software, where all major corporations are tech companies with tens of thousands of people in their ranks involved in creating software products. Many of the largest 5,000 organizations on Earth need to play catch up when looking for talent and training people on cybersecurity - both at the most junior ranks, but also at the most senior ranks. Not only do they need to play catch up in human resources but also in systems, protocols, and culture. As we have seen in this post, one person can topple a company’s security infrastructure with simple negligence and errors. 
 
-### 3.4.1 Distribute responsibility [DRAFT]
+In 1913, Henry Ford installed the [first moving assembly line](https://www.history.com/this-day-in-history/fords-assembly-line-starts-rolling) for the mass production of an entire automobile. From then on, no single person in the entire organization, not even Henry himself, could have made an error that would have gone unnoticed and would have resulted in the disruption of all the Ford car produced that year and all the years before.
 
-In 1913, Henry Ford installed the [first moving assembly line](https://www.history.com/this-day-in-history/fords-assembly-line-starts-rolling) for the mass production of an entire automobile. No single person in the entire organization, not even Henry himself, could have made an error that would have gone unnoticed and would have resulted in the disruption of all the Ford car produced that year and the years before.
+### 3.4.1 Cybersec is everyone’s responsibility
 
-Since everyone makes mistakes, organizations need to ensure that there is a fail-safe behind everyone that interacts with software systems: employees, contractors, partners, and suppliers. There are ways to achieve that and I believe leaders today can learn from the people that have been running US nuclear submarines for decades.  [SUBSAFE](https://www.usni.org/magazines/proceedings/2014/june/pillars-submarine-safety) is a certification that was established by the US Navy following the loss of 16 submarines in non-combat related incidents between 1915 and 1963, including the USS Thresher in 1963.  No submarine has been lost ever since. If you have the time, I recommend that you read the [statement by Rear Admiral Paul E. Sullivan about SUBSAFE](https://www.navy.mil/navydata/testimony/safety/sullivan031029.txt) given before the House Science Committee in October 2003. 
+Cybersec professionals are to cybersec what professionals are to health, environment and safety. They write policies, train people, and measure impact, but they cannot be everywhere at all times. The people in operations need to adopt behaviors that keep them healthy and safe, and protect the environment via their actions. In effect, the general manager of a mine or a plant has much more direct influence over the number of injuries than the person in charge of HSE. The same is true for cybersecurity: everyone, starting from the CEO down, and from the interns up, need to participate in forging a culture that promotes cybersecurity. 
 
-+ Privilege (of least access) separation both at software and at process level
-+ Least privilege for accounts
-+ Segmenting off portions of the network
-+ Whitelisting of IPs and application whitelisting
-+ Hard coded credentials
-+ Use reputation services to check whether the application you are running has been run before
+### 3.4.2 Learning from the US Navy
 
-### 3.4.2 Centralize accountability [DRAFT]
+Since everyone makes mistakes, organizations need to ensure that there is a fail-safe behind everyone: employees, shareholders, board members, contractors, partners, and suppliers. But it is not the first time that humans have to deal with extremely complicated systems that absolutely can’t go wrong. I believe leaders today can learn from the people that have been running US nuclear submarines for decades.  [SUBSAFE](https://www.usni.org/magazines/proceedings/2014/june/pillars-submarine-safety) is a certification that was established by the US Navy following the loss of 16 submarines in non-combat related incidents between 1915 and 1963, including the USS Thresher in 1963.  No SUBSAFE certified submarine has been lost ever since. If you have the time, I recommend that you read the [statement by Rear Admiral Paul E. Sullivan about SUBSAFE](https://www.navy.mil/navydata/testimony/safety/sullivan031029.txt) given before the House Science Committee in October 2003. 
+
+The success of SUBSAFE has been so remarkable that after the loss of the space shuttle Columbia, NASA incorporated SUBSAFE in a [proposal](https://history.nasa.gov/columbia/Troxell/Columbia%20Web%20Site/Documents/Congress/House/OCTOBE~1/hearing_charter.html) for the restructuring of its organization with a big focus on safety. I now propose "CYBERSAFE" as a similar program for modern day organizations dealing with data.
+
+| Element | SUBSAFE | CYBERSAFE |
+| - | - | - |
+| Purpose | Watertight integrity, recoverability, and safety (weapon, fire, and nuclear) | Data integrity, privacy and security (tamper-free, ability to recover from disruptions or misdirections). |
+| Design requirements | Clean, concise and non-negotiable requirements | Same with the addition of [Privilege Separation](https://en.wikipedia.org/wiki/Privilege_separation) both at software and at process level, as well as the [Principle of Least Priviledge](https://en.wikipedia.org/wiki/Principle_of_least_privilege) at the individual level. |
+| Audit | Multiple structured audits that hold personnel accountable at all levels for safety | Same. |
+| Training | Annual mandatory training for everyone with a strong emphasis on emotional lessons from past failures | Same. |
+| Material and fabrication | Controls and documentation in place to ensure correct material: receipt, inspection, storage, handling, installation. | Use of version control (e.g., git) not just for writing code but also for every piece of documentation and should be trackable and linked; application of robust and well-documented libraries within the stack and code reviews. |
+| Testing | Involves a formal checklist to collect specific documentation and information, successful sea trials, and a secondary review before unrestricted operations | On top of penetration testing and security patches, application of [DevOps](https://en.wikipedia.org/wiki/DevOps) and [test-driven dev’t](https://en.wikipedia.org/wiki/Test-driven_development) to every activity within the organization rendering tasks effortless and automated. |
+
+----
+
+The Era of “Move Fast and Break Things” [is over](https://hbr.org/2019/01/the-era-of-move-fast-and-break-things-is-over), according to Hemant Taneja, a managing director at General Catalyst (a venture capital firm). He argues that there must be stakeholder accountability across the spectrum, taking into account the increasing impact of today’s technologies. It would be relatively easy for companies starting up to develop a culture that takes careful account of cyber security as opposed to building minimum viable products that could be easily exposed to malicious attacks.
+
+For established enterprises handling increasing amounts of data and with the pressure to build products fast as a competitive edge, building a protection first culture will take time. It will need the buy-in of everyone in the organization from C-level and all the way down to the data encoder. I hope that the frameworks that I've proposed here will serve as a guide in doing just that.
 
 
-Cybersec professionals are to cybersec what HSE professionals are to health, environment and safety. They write policies, train people, and measure impact, but they cannot be everywhere at all times. The people in operations need to adopt behaviors that keep them healthy and safe, and protect the environment via their actions. In effect, the general manager of a mine or a plant has much more direct influence over the number of injuries than the person in charge of HSE. The same is true for cybersecurity: everyone, starting from the CEO down, and from the interns up, need to participate in forging a culture that promotes cybersecurity. 
-
-However, influencing people (via role modeling, training, and storytelling) is insufficient. 
