@@ -61,7 +61,11 @@ My Fellowship is funded by the Flanders Fund for Scientific Research (FWO) and t
 
 # Jacki Janowich
 
-Information will be added soon.
+<img src="/images/profile_pic_jacki.jpg" alt="Jacki Janowich" width="33%" align="left" hspace="20" vspace="20">
+
+Our brains are simultaneously tasked with acting in the present while predicting and preparing for the future. I am interested in how we proactively optimize neural systems ahead of future goal-directed action. In one ongoing line of work, I use EEG/MEG to investigate the neural activities underlying the computation, communication, and maintenance of future goals. In my current work, I focus on how errors in reward prediction shape learning, using computational modeling and MEG/EEG. In particular, I aim to understand how reward prediction (error) is influenced by timing and hierarchical context. My current research is supported by the EOS project MEMODYN, funded by the FWO and F.R.S.–FNRS.
+
+* Email: [Jacqueline.JanowichWasserott@UGent.be](mailto:jacqueline.janowichwasserott@UGent.be)
 
 # Kobe Desender
 
