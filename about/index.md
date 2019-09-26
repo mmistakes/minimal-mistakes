@@ -117,7 +117,9 @@ __More information:__
 
 # Jonas Simoens
 
-Psychologists tend to be interested not only in understanding, but also in modulating, human cognition and behavior. Correspondingly, it has already been extensively demonstrated that concrete behaviors (such as choosig one type of food over another) can indeed be modulated by selectively rewarding certain behaviors more than others. In line with these findings, my research focuses on whether it is also possible to modulate abstract task execution parameters (such as the learning rate), as described by computational models of learning and decision making. Moreover, I aim to investigate to what extent modulations of specific task execution parameters in certain environments transfer to other environments. The ultimate goal of my research, however, will be to investigate whether this approach to modulating behavior could eventually be used to improve cognitive control functions. I conduct this research in collaboration with Tom Verguts and Senne Braem, using behavioral, computational modeling and neuroimaging techniques.
+Psychologists tend to be interested not only in understanding, but also in modulating, human cognition and behavior. Correspondingly, it has already been extensively demonstrated that concrete behaviors (such as choosig one type of food over another) can indeed be modulated by selectively rewarding certain behaviors more than others. In line with these findings, my research focuses on whether, in the same way, it is also possible to modulate abstract task execution parameters (such as the learning rate and the discount rate), as described by computational models of learning and decision making. Furthermore, I aim to investigate to what extent modulations of task execution parameters in certain environments transfer to other environments.
+
+I conduct this research in collaboration with Tom Verguts and Senne Braem, using behavioral, computational modeling and neuroimaging techniques.
 
 __More information:__  
 * Email: [Jonas.Simoens@UGent.be](mailto:Jonas.Simoens@UGent.be)
