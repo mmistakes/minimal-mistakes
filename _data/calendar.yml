@@ -18,23 +18,6 @@
   },
   {
     "image_path": null,
-    "alt": "Schulzahnärztlicher Dienst",
-    "title": "Schulzahnärztlicher Dienst",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NzNva2ZmdTkxMXVmZGpmNm9uNW9ibTl0ODIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-09-24",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-09-27",
-      "date_time": null
-    },
-    "created": "2019-08-16T09:59:48.000Z",
-    "updated": "2019-08-16T10:00:03.652Z"
-  },
-  {
-    "image_path": null,
     "alt": "Studientag: Schule und Hort geschlossen",
     "title": "Studientag: Schule und Hort geschlossen",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2019-01-28T11:35:03.000Z",
     "updated": "2019-01-28T11:35:03.803Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Aktionstag der JÜL Klassen Mobililli",
+    "title": "Aktionstag der JÜL Klassen Mobililli",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MWo0b2k3OXE0ajM1MmhqcWFnaWYyZjc5NWsgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-10-31",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-11-01",
+      "date_time": null
+    },
+    "created": "2019-08-27T07:40:09.000Z",
+    "updated": "2019-08-27T07:40:09.395Z"
   }
 ]
