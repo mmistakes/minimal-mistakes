@@ -45,7 +45,7 @@ Information will be added soon.
 
 # Cristian Buc Calderon
 
-My research focuses on understanding how humans select one out of many competing actions. My past research tested specific predictions of the affordance competition hypothesis (Cisek & Kalaska, 2010, Ann. Rev. Neurosci.), both at the neural architecture and decision dynamics levels (Calderon et al., 2015, JEPG; Calderon et al., 2017, PNAS; Calderon et al., 2018, Front. Hum. Neurosci.; Calderon et al., 2018, Psychol. Rev.). 
+My research focuses on understanding how humans select one out of many competing actions. My past research tested specific predictions of the affordance competition hypothesis (Cisek & Kalaska, 2010, Ann. Rev. Neurosci.), both at the neural architecture and decision dynamics levels ([Calderon et al., 2015, JEPG](https://biblio.ugent.be/publication/6907785/file/7276986); [Calderon et al., 2017, PNAS](https://www.pnas.org/content/pnas/114/40/10618.full.pdf); [Calderon et al., 2018, Front. Hum. Neurosci.](https://www.frontiersin.org/articles/10.3389/fnhum.2018.00093/full); [Calderon et al., 2018, Psychol. Rev.](https://biblio.ugent.be/publication/8577798/file/8577801)). 
 
 More recently, I have been awarded a FWO postdoctoral fellow where I will investigate how the brain learns the optimal timing of individual actions within a sequence of actions (in collaboration with Michael Frank @ Brown University and Tom Verguts @ Ghent University). To carry out this project, I use computational modeling, behavioral and neural methods. 
 
@@ -149,7 +149,7 @@ __More information:__
 
 <img src="/images/profile_pic_Fabrice.jpg" alt="Fabrice Luyckx" width="25%" align="left" hspace="20" vspace="20">
 
-I am currently in the final stages of my DPhil at Oxford University in the Summerfield lab. My work focuses on how information is structured and transformed in the brain during decision making, mainly using neurophysiological measures (EEG) and computational modelling. One line of research has looked at how structure (e.g. a line, circle, hierarchy, ...) is represented in the brain. For example we studied whether decisions about different categories with a shared underlying structure rely on the same neural signals [(Luyckx et al., eLife, 2019)](https://elifesciences.org/articles/42816). A different line of research has focused on the neural mechanisms of value-based decision making, specifically how neural patterns can shed a light on why we make economically "irrational" choices [(Luyckx et al., bioRxiv, 2019)](https://www.biorxiv.org/content/10.1101/642371v3).  
+I am currently in the final stages of my DPhil at Oxford University in the Summerfield lab. My work focuses on how information is structured and transformed in the brain during decision making, mainly using neurophysiological measures (EEG) and computational modelling. One line of research has looked at how structure (e.g. a line, circle, hierarchy, ...) is represented in the brain. For example we studied whether decisions about different categories with a shared underlying structure rely on the same neural signals [(Luyckx et al., eLife, 2019)](https://elifesciences.org/articles/42816). A different line of research has focused on the neural mechanisms of value-based decision making, specifically how neural patterns can shed a light on why we make economically "irrational" choices [(Luyckx et al., bioRxiv, 2019)](https://www.biorxiv.org/content/biorxiv/early/2019/08/13/642371.full.pdf).  
 
 Outside of work, I like to torment the strings on my guitar or squash racket.
 
