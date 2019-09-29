@@ -20,7 +20,7 @@
     "image_path": null,
     "alt": "Studientag: Schule und Hort geschlossen",
     "title": "Studientag: Schule und Hort geschlossen",
-    "excerpt": null,
+    "excerpt": "Bitte bemühen Sie sich ggf. um eine außerschulische Betreuung Ihres Kindes",
     "url": "https://www.google.com/calendar/event?eid=NnFpY3Jwc3UyaGt2bW8wbzc5YzJqb3JxMTggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
       "date": "2019-10-02",
@@ -31,7 +31,7 @@
       "date_time": null
     },
     "created": "2019-09-25T09:06:43.000Z",
-    "updated": "2019-09-25T09:06:43.364Z"
+    "updated": "2019-09-29T13:00:22.896Z"
   },
   {
     "image_path": null,
@@ -69,9 +69,26 @@
   },
   {
     "image_path": null,
+    "alt": "1. Schulkonferenz ",
+    "title": "1. Schulkonferenz ",
+    "excerpt": "\n15:30  - 17:00 Uhr\nNaWi-Raum, Aufgang B, 1. Stock",
+    "url": "https://www.google.com/calendar/event?eid=NmFsY2U5ZTRzcm9ycW1mcnBrcXVrNjU5ZjggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-10-24T15:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-10-24T17:30:00+02:00"
+    },
+    "created": "2019-09-29T12:51:54.000Z",
+    "updated": "2019-09-29T12:51:54.292Z"
+  },
+  {
+    "image_path": null,
     "alt": "Halloween-Disco",
     "title": "Halloween-Disco",
-    "excerpt": null,
+    "excerpt": "\nSpaß und Tanz. Verkleidet oder nicht!\nAnmeldung nicht vergessen (Eltern müssen Erlaubnis schriftlich geben)!",
     "url": "https://www.google.com/calendar/event?eid=N2huYnBsMXNsZDhnZ3ZrcnN1YmtnMWpnMDggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
       "date": null,
@@ -82,23 +99,6 @@
       "date_time": "2019-10-25T19:00:00+02:00"
     },
     "created": "2019-01-28T11:35:03.000Z",
-    "updated": "2019-01-28T11:35:03.803Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Aktionstag der JÜL Klassen Mobililli",
-    "title": "Aktionstag der JÜL Klassen Mobililli",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MWo0b2k3OXE0ajM1MmhqcWFnaWYyZjc5NWsgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-10-31",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-11-01",
-      "date_time": null
-    },
-    "created": "2019-08-27T07:40:09.000Z",
-    "updated": "2019-08-27T07:40:09.395Z"
+    "updated": "2019-09-29T12:55:39.503Z"
   }
 ]
