@@ -8,7 +8,6 @@ tags:
   - bigip
   - ltm
 ---
-
 F5 now offers a  [90-Day BIG-IP LTM VE Trial](https://www.f5.com/trial/big-ip-ltm-virtual-edition.php) based on version 11.3.0. Though the specifications indicate that the supported hypervisors are ‘VMware ESXi 5.1 and 5.5, vCloud Director 5.1’, the VE works on VMware workstation.
 
 This post aims at setting up the Bigip VE on VMware workstation, licensing, and initial configuration.
