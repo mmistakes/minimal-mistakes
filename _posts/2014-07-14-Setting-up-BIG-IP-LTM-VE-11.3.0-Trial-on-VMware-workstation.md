@@ -35,11 +35,7 @@ _4.) Defining subnets for communication:_ Open the ‘Virtual Network Editor’
 
 _5.) BIG-IP Initial Configuration:_ Power on the bigip and login (credentials: root / default), through the vmware bigip console. Type ‘config’ to access the ‘Configuration Utility’. Enter the mgmt ip address, netmask & default gateway details from the subnet associated with the mgmt interface.
 
-Access the bigip using the configured management ip address either from the gui (https://
-
-&lt;mgmt-ip
-
-&gt;) (credentials: admin / admin) or through cli (ssh)(credentials: root/default).  
+Access the bigip using the configured management ip address either from the gui (https://mgmt-ip) (credentials: admin / admin) or through cli (ssh)(credentials: root/default).  
 Note: Bigip allows only secure connections (https, ssh) to manage the device.
 
 _6. Licensing the Bigip:_ The bigip has to be licensed to use any features. Login to the bigip gui and use the gui ‘Setup Utility’ to license the device. Click License &gt; Activate. Enter the Base Registration Key, select the activation method as ‘Manual’, and click Next.
