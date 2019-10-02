@@ -1,40 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Anmeldung Schulanfänger",
-    "title": "Anmeldung Schulanfänger",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NDVnYWt0ZTJ2NWMyM25yb3A5bGEzcG9yNDEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-09-19",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-10-03",
-      "date_time": null
-    },
-    "created": "2019-08-15T08:54:24.000Z",
-    "updated": "2019-08-19T08:07:32.009Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Studientag: Schule und Hort geschlossen",
-    "title": "Studientag: Schule und Hort geschlossen",
-    "excerpt": "Bitte bemühen Sie sich ggf. um eine außerschulische Betreuung Ihres Kindes",
-    "url": "https://www.google.com/calendar/event?eid=NnFpY3Jwc3UyaGt2bW8wbzc5YzJqb3JxMTggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-10-02",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-10-03",
-      "date_time": null
-    },
-    "created": "2019-09-25T09:06:43.000Z",
-    "updated": "2019-09-29T13:00:22.896Z"
-  },
-  {
-    "image_path": null,
     "alt": "Herbstferien",
     "title": "Herbstferien",
     "excerpt": null,
@@ -100,5 +66,39 @@
     },
     "created": "2019-01-28T11:35:03.000Z",
     "updated": "2019-09-29T12:55:39.503Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Aktionstag der JÜL Klassen Mobililli",
+    "title": "Aktionstag der JÜL Klassen Mobililli",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MWo0b2k3OXE0ajM1MmhqcWFnaWYyZjc5NWsgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-10-31",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-11-01",
+      "date_time": null
+    },
+    "created": "2019-08-27T07:40:09.000Z",
+    "updated": "2019-08-27T07:40:09.395Z"
+  },
+  {
+    "image_path": null,
+    "alt": "KroKo Zahnprophylaxe",
+    "title": "KroKo Zahnprophylaxe",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MmE4bm1mN3A4cTAxbTRiNDV1azcyaDVlaW0gaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-11-04",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-11-08",
+      "date_time": null
+    },
+    "created": "2019-08-27T07:29:10.000Z",
+    "updated": "2019-08-27T07:29:10.184Z"
   }
 ]
