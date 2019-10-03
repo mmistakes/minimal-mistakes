@@ -17,6 +17,7 @@
 4. [Visiting researchers](#visiting-researchers)
     - [Fabrice Luyckx](#fabrice-luyckx)
 5. [Internship students](#internship-students)
+    - [Jacopo Bonazzi](#jacopo-bonazzi)
 
 
 # Principal Investigator
@@ -160,4 +161,18 @@ __More information:__
 
 # Internship students
 
-Currently, no internship students are active in our lab. Please get in contact if you are interested in an internship.
+# Jacopo Bonazzi
+
+<img src="/images/profile_pic_jacopo.jpg" alt="Jacopo Bonazzi" width="25%" align="left" hspace="20" vspace="20">
+
+I'm a master student from Milano Bicocca University  doing the internship in Ghent thanks to the Erasmus+ program.
+In this project I'm trying to understand how uncertainty and variability can influence inferences. We live in a world that is intrinsically chaotic, and uncertainty is omnipresent in every aspect of our life. Learning, choosing and predicting in such an environment requires estimating and computing how variable is the world and how reliable is the mental model used to capture this variability. The current project aims to unravel how these two different sources of uncertainty, namely expected and unexpected, influence visual search performance. I plan to collect behavioral data and test the predictions of different computational models. 
+
+When I'm not troubled by uncertainties, I love to sail (quite uncertain conditions anyway) and hike in the mountains!
+
+__More information:__  
+* Email: [Jacopo.Bonazzi@UGent.be](mailto:Jacopo.Bonazzi@UGent.be)
+
+---
+
+Please get in contact if you are also interested in an internship in our lab.
