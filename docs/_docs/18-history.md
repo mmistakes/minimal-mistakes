@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2019-10-04T11:00:39-04:00
+last_modified_at: 2019-10-04T11:02:05-04:00
 toc: false
 ---
 
@@ -20,6 +20,7 @@ toc: false
 
 ### Bug Fixes
 
+- Remove extraneous space from Internet Explorer conditional statement. [#2273](https://github.com/mmistakes/minimal-mistakes/pull/2273)
 - Fix typo in `_config.yml`. [#2243](https://github.com/mmistakes/minimal-mistakes/pull/2243)
 - Replace `http` URLs with `https` where applicable in `_config.yml`. [#2244](https://github.com/mmistakes/minimal-mistakes/pull/2244)
 
