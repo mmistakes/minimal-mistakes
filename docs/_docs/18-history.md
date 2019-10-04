@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2019-10-04T10:51:19-04:00
+last_modified_at: 2019-10-04T11:00:39-04:00
 toc: false
 ---
 
@@ -13,6 +13,7 @@ toc: false
 
 ### Enhancements
 
+- Show a permalink anchor when hovering over headings in main content area. [#2251](https://github.com/mmistakes/minimal-mistakes/pull/2251)
 - Allow per-page override of `words_per_minute`. [#2250](https://github.com/mmistakes/minimal-mistakes/pull/2250)
 - Update [onchange](https://www.npmjs.com/package/onchange) development dependency in `package.json`. [#2241](https://github.com/mmistakes/minimal-mistakes/issues/2241)
 - Add Catalan localized UI text strings. [#2237](https://github.com/mmistakes/minimal-mistakes/pull/2237)

@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+- Show a permalink anchor when hovering over headings in main content area. [#2251](https://github.com/mmistakes/minimal-mistakes/pull/2251)
 - Allow per-page override of `words_per_minute`. [#2250](https://github.com/mmistakes/minimal-mistakes/pull/2250)
 - Update [onchange](https://www.npmjs.com/package/onchange) development dependency in `package.json`. [#2241](https://github.com/mmistakes/minimal-mistakes/issues/2241)
 - Add Catalan localized UI text strings. [#2237](https://github.com/mmistakes/minimal-mistakes/pull/2237)
