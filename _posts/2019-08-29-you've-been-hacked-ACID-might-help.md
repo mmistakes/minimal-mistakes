@@ -196,8 +196,10 @@ The success of SUBSAFE has been so remarkable that after the loss of the space s
 
 ----
 
-According to Hemant Taneja, a managing director at General Catalyst (a venture capital firm), the Era of “Move Fast and Break Things” [is over](https://hbr.org/2019/01/the-era-of-move-fast-and-break-things-is-over). He argues that there must be stakeholder accountability across the spectrum, taking into account the increasing impact of today’s technologies. The incremental effort when starting up to develop a culture that takes careful account of cyber security as opposed to building minimum viable products that could be easily exposed to malicious attacks.
+According to Hemant Taneja, a managing director at General Catalyst (a venture capital firm), the Era of “Move Fast and Break Things” [is over](https://hbr.org/2019/01/the-era-of-move-fast-and-break-things-is-over). He argues, for instance, that companies need a framework for leveraging data and AI responsibly, and more generally that there must be stakeholder accountability across the spectrum, taking into account the increasing impact of today’s technologies. Cyber security is an important portion of that spectrum.
 
-For established enterprises handling increasing amounts of data and with the pressure to build products fast as a competitive edge, building a protection first culture will take time. It will need the buy-in of everyone in the organization from C-level and all the way down to the data encoder. I hope that the frameworks that I've proposed here will serve as a guide in doing just that.
+For established enterprises handling increasing amounts of data and with the pressure to build products fast as a competitive edge, building a protection first culture will take time. It will need the buy-in of everyone in the organization from C-level and all the way to the intern choosing a strong, unique password. Regardless of the size of your enterprise, the incremental effort of adopting the ACID framework when standing up a new team is small compared to the efforts associated responding to a malicious attacks.
+
+Whatever framework you end up using, I hope that the ideas I've proposed here will serve as a guide and a source of inspiration for increased security.
 
 
