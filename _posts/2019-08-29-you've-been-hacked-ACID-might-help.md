@@ -187,7 +187,7 @@ The success of SUBSAFE has been so remarkable that after the loss of the space s
 
 | Element | SUBSAFE | CYBERSAFE |
 | - | - | - |
-| Purpose | Watertight integrity, recoverability, and safety (weapon, fire, and nuclear) | Data integrity, privacy and security (tamper-free, ability to recover from disruptions or misdirections). |
+| Purpose | Watertight integrity, recoverability, and safety (weapon, fire, and nuclear) | Data integrity, privacy and security (tamper-free ability to recover from disruptions or misdirections). |
 | Design requirements | Clean, concise and non-negotiable requirements | Same with the addition of [Privilege Separation](https://en.wikipedia.org/wiki/Privilege_separation) both at software and at process level, as well as the [Principle of Least Priviledge](https://en.wikipedia.org/wiki/Principle_of_least_privilege) at the individual level. |
 | Audit | Multiple structured audits that hold personnel accountable at all levels for safety | Same. |
 | Training | Annual mandatory training for everyone with a strong emphasis on emotional lessons from past failures | Same. |
@@ -196,7 +196,7 @@ The success of SUBSAFE has been so remarkable that after the loss of the space s
 
 ----
 
-The Era of “Move Fast and Break Things” [is over](https://hbr.org/2019/01/the-era-of-move-fast-and-break-things-is-over), according to Hemant Taneja, a managing director at General Catalyst (a venture capital firm). He argues that there must be stakeholder accountability across the spectrum, taking into account the increasing impact of today’s technologies. It would be relatively easy for companies starting up to develop a culture that takes careful account of cyber security as opposed to building minimum viable products that could be easily exposed to malicious attacks.
+According to Hemant Taneja, a managing director at General Catalyst (a venture capital firm), the Era of “Move Fast and Break Things” [is over](https://hbr.org/2019/01/the-era-of-move-fast-and-break-things-is-over). He argues that there must be stakeholder accountability across the spectrum, taking into account the increasing impact of today’s technologies. The incremental effort when starting up to develop a culture that takes careful account of cyber security as opposed to building minimum viable products that could be easily exposed to malicious attacks.
 
 For established enterprises handling increasing amounts of data and with the pressure to build products fast as a competitive edge, building a protection first culture will take time. It will need the buy-in of everyone in the organization from C-level and all the way down to the data encoder. I hope that the frameworks that I've proposed here will serve as a guide in doing just that.
 
