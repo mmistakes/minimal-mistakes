@@ -13,9 +13,9 @@ This snafu on the part of AT&T with iPads is already almost 10 years old. Since 
 
 In section 1, I’m going to argue that your organization may already have been hacked, and likely will be hacked in the future. I’ll then compute statistics that suggest that the data breach problems are actually getting significantly worse. And I will conclude that your organization will need to seriously consider revising your standard for authenticating users. In section 2, I’m going to attempt to explain and illustrate why cybersecurity is so hard. And finally, in section 3, I’m going to propose the ACID framework, which are four steps to attenuate your cybersecurity business risks. As a leader of your organization, you should:
 
-1.  **A**ssume that you have been hacked
-2.  **C**hange what you need to protect
-3.  **I**nvest in security policies, threat models, and mechanisms
+1. **A**ssume that you have been hacked
+2. **C**hange what you need to protect
+3. **I**nvest in security policies, threat models, and mechanisms
 4. **D**rive a protection first culture 
 
 # 1. You’ve probably been hacked, and you will be hacked again
@@ -70,7 +70,7 @@ Being “encrypted” is a loosely defined term until you specify who has the ke
 
 Unfortunately, for many applications, server side data is not encrypted with a client provided key. For instance, how could my bank relay my information to the government if my address was encrypted with my key, and the bank didn’t have a way to open it? Your objective, therefore, should be to leave your data encrypted for as long as possible, so that if there is a channel that is compromised, attackers would only see random numbers.
 
-*Side note: [RSA is one of the algorithms behind the “S” in “HTTPS”](https://tiptopsecurity.com/how-does-https-work-rsa-encryption-explained/), which stands for HyperText Transfer Protocol over Transport Layer Security (TLS). HTTPS was introduced by Netscape in 1994 to allow private communication between your browser and a website’s server. RSA is “computationally secure” because decrypting (without knowledge of the two large prime numbers making up the private key) requires huge computational power. If you want to understand how it works, I implemented the algorithm in a [Google Spreadsheet which you can copy and play with](https://docs.google.com/spreadsheets/d/19Xd2ZpNQj_ShXRsnncCkjp1Gd90sXZve0gBUJTm6TFw/edit?usp=sharing).  It’s worth noting that while quantum computers might be around the corner (and with [Shor’s algorithm](https://en.wikipedia.org/wiki/Shor%27s_algorithm) could decrypt RSA by factoring large prime numbers quickly), and hence render RSA ineffective, we could still encrypt safely using [one-time pads](https://en.wikipedia.org/wiki/One-time_pad).*
+*Side note: [RSA is one of the algorithms behind the “S” in “HTTPS”](https://tiptopsecurity.com/how-does-https-work-rsa-encryption-explained/), which stands for HyperText Transfer Protocol over Transport Layer Security (TLS). HTTPS was introduced by Netscape in 1994 to allow private communication between your browser and a website’s server. RSA is “computationally secure” because decrypting (without knowledge of the two large prime numbers making up the private key) requires huge computational power. If you want to understand how it works, I implemented the algorithm in a [Google Spreadsheet which you can copy and play with](https://docs.google.com/spreadsheets/d/19Xd2ZpNQj_ShXRsnncCkjp1Gd90sXZve0gBUJTm6TFw/edit?usp=sharing). It’s worth noting that while quantum computers might be around the corner (and with [Shor’s algorithm](https://en.wikipedia.org/wiki/Shor%27s_algorithm) could decrypt RSA by factoring large prime numbers quickly), and hence render RSA ineffective, we could still encrypt safely using [one-time pads](https://en.wikipedia.org/wiki/One-time_pad).*
 
 # 3. What you can do about it today: the ACID framework
 
@@ -120,7 +120,7 @@ On the other hand, suppose that you run a cruise ship line. While at sea, it is 
 
 The answer might not always be clear cut, so weighing both sides of the tradeoffs is wiser to mitigate the downside risks of a breach. When it comes to data, being a compulsive hoarder can be a significant liability. Deleting data and/or end-to-end encryption (such that you can’t read your customer’s data) might be a safer avenue.
 
-Even if you assume that you’ve been hacked and minimize the data that you collect,  you will still be left with some data that needs to be protected. It’s probably already quite clear to you and your team what data is most sensitive and valuable to your organization. Less clear perhaps is where it is stored, how it flows, and how to secure the data in its many forms.
+Even if you assume that you’ve been hacked and minimize the data that you collect, you will still be left with some data that needs to be protected. It’s probably already quite clear to you and your team what data is most sensitive and valuable to your organization. Less clear perhaps is where it is stored, how it flows, and how to secure the data in its many forms.
 
 *Site note: When it comes to learning how to hack systems, I’m more of a weekend warrior than a weekday professional. But my recommendation below is consistent with the first lecture from the [2014 MIT Open Courseware on Computer Systems Security](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-858-computer-systems-security-fall-2014/).*
 
@@ -181,7 +181,7 @@ Cybersec professionals are to cybersec what professionals are to health, environ
 
 ### 3.4.2 Learning from the US Navy
 
-Since everyone makes mistakes, organizations need to ensure that there is a fail-safe behind everyone: employees, shareholders, board members, contractors, partners, and suppliers. But it is not the first time that humans have to deal with extremely complicated systems that absolutely can’t go wrong. I believe leaders today can learn from the people that have been running US nuclear submarines for decades.  [SUBSAFE](https://www.usni.org/magazines/proceedings/2014/june/pillars-submarine-safety) is a certification that was established by the US Navy following the loss of 16 submarines in non-combat related incidents between 1915 and 1963, including the USS Thresher in 1963.  No SUBSAFE certified submarine has been lost ever since. If you have the time, I recommend that you read the [statement by Rear Admiral Paul E. Sullivan about SUBSAFE](https://www.navy.mil/navydata/testimony/safety/sullivan031029.txt) given before the House Science Committee in October 2003. 
+Since everyone makes mistakes, organizations need to ensure that there is a fail-safe behind everyone: employees, shareholders, board members, contractors, partners, and suppliers. But it is not the first time that humans have to deal with extremely complicated systems that absolutely can’t go wrong. I believe leaders today can learn from the people that have been running US nuclear submarines for decades. [SUBSAFE](https://www.usni.org/magazines/proceedings/2014/june/pillars-submarine-safety) is a certification that was established by the US Navy following the loss of 16 submarines in non-combat related incidents between 1915 and 1963, including the USS Thresher in 1963. No SUBSAFE certified submarine has been lost ever since. If you have the time, I recommend that you read the [statement by Rear Admiral Paul E. Sullivan about SUBSAFE](https://www.navy.mil/navydata/testimony/safety/sullivan031029.txt) given before the House Science Committee in October 2003. 
 
 The success of SUBSAFE has been so remarkable that after the loss of the space shuttle Columbia, NASA incorporated SUBSAFE in a [proposal](https://history.nasa.gov/columbia/Troxell/Columbia%20Web%20Site/Documents/Congress/House/OCTOBE~1/hearing_charter.html) for the restructuring of its organization with a big focus on safety. I now propose "CYBERSAFE" as a similar program for modern day organizations dealing with data.
 
