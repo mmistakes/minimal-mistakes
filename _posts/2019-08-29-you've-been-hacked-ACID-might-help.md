@@ -7,6 +7,12 @@ toc: true
 
 It is hard to feel sympathy for [black hat hackers](https://en.wikipedia.org/wiki/Black_hat_(computer_security)) who violate computer security with impunity for personal gain or malice. Their action (data breach, manipulation, and destruction) exposes victims to impersonation/fraud, financial damage, loss of privacy, and even life threatening situations. While some grey hat hackers (and whistleblowers) have noble goals (see “[Hacktivism](https://en.wikipedia.org/wiki/Hacktivism)”), the consequences of their illegal actions can take a toll on [their quality of life](https://en.wikipedia.org/wiki/Aaron_Swartz) and their friends and families have to pay the price. 
 
+<span><audio id="myAudio" controls>
+    <source src="/assets/audio/ACID-framework.ogg" type="audio/ogg">
+    <source src="/assets/audio/ACID-framework.mp3" type="audio/mpeg">
+  </audio>
+  <button class="btn btn--small" id="video-player-playback-rate-control" style="border-color=none !important;border-collapse: separate !important;">Speed: <span id="current-rate">1</span>x</button></span>
+
 But should some of that ire against hackers be directed at the corporations and governments who hoard this data but sometimes fail to adequately protect it? In some cases, it’s hard not to feel let down by important organizations that will publicly expose their customers’ personal information. For example, look no further than AT&T and Apple, who publicly exposed all of the email addresses of all the people logged in to their 3G network with an iPad - [no hack required](https://www.computerworld.com/article/2518818/-brute-force--script-snatched-ipad-e-mail-addresses.html).
 
 This snafu on the part of AT&T with iPads is already almost 10 years old. Since then, have corporations and governments generally learned how to thoroughly and unequivocally protect data they collect? 
