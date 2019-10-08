@@ -6,8 +6,7 @@ fontsize: 12pt
 header-includes: |
     \usepackage[
     backend=biber,
-    dashed=false,
-    style=authoryear-icomp,
+    style=numeric,
     natbib=true,
     url=false, 
     doi=true,

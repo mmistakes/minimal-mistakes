@@ -12,6 +12,6 @@ turbulence, as well as some topics in hydrology.
 
 For a more in-depth list of talks, awards, publications, skills, etc., please
 check my [curriculum
-vitae](https://github.com/tomchor/tomchor.github.io/raw/master/assets/pdf/phd-tomas-chor2.pdf).
+vitae](https://github.com/tomchor/tomchor.github.io/raw/master/assets/pdf/phd-tomas-chor3.pdf).
 
 
