@@ -8,8 +8,6 @@
 
 .sidebar {
   @include clearfix();
-  margin-bottom: 1em;
-
   @include breakpoint(max-width $large) {
     /* fix z-index order of follow links */
     position: relative;
@@ -31,15 +29,20 @@
 
     &.sticky {
       overflow-y: auto;
-      /* calculate height of nav list */
-      height: calc(
-        100vh - 90px - 2em
-      ); // viewport height - approx. masthead height - main content top margin
+      /* calculate height of nav list
+         viewport height - nav height - masthead x-padding
+      */
+      height: calc(100vh - #{$nav-height} - 2em);
     }
   }
 
   @include breakpoint($x-large) {
     width: calc(#{$right-sidebar-width} - 1em);
+  }
+
+  > * {
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 
   h2,
@@ -60,6 +63,11 @@
 
   img {
     width: 100%;
+    
+    &.emoji {
+      width: 20px;
+      height: 20px;
+    }
   }
 }
 
@@ -74,6 +82,14 @@
     margin-right: -1 * $right-sidebar-width-narrow;
     padding-left: 1em;
     z-index: 10;
+
+    &.sticky {
+      @include clearfix();
+      position: -webkit-sticky;
+      position: sticky;
+      top: 2em;
+      float: right;
+    }
   }
 
   @include breakpoint($x-large) {
@@ -279,6 +295,7 @@
 
 .wide .sidebar__right {
   margin-bottom: 1em;
+
   @include breakpoint($large) {
     position: initial;
     top: initial;
@@ -287,6 +304,10 @@
     margin-right: initial;
     padding-left: initial;
     z-index: initial;
+
+    &.sticky {
+      float: none;
+    }
   }
 
   @include breakpoint($x-large) {

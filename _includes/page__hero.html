@@ -45,11 +45,22 @@
       {% if page.header.show_overlay_excerpt != false and page.excerpt %}
         <p class="page__lead">{{ page.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}</p>
       {% endif %}
-      {% if site.read_time and page.read_time %}
+      {% if page.read_time %}
         <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
       {% endif %}
       {% if page.header.cta_url %}
         <p><a href="{{ cta_path }}" class="btn btn--light-outline btn--large">{{ page.header.cta_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
+      {% endif %}
+      {% if page.header.actions %}
+        <p>
+        {% for action in page.header.actions %}
+          {% if action.url contains "://" %}
+            {% assign url = action.url %}
+          {% else %}
+            {% assign url = action.url | relative_url %}
+          {% endif %}
+          <a href="{{ url }}" class="btn btn--light-outline btn--large">{{ action.label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a>
+        {% endfor %}
       {% endif %}
     </div>
   {% else %}

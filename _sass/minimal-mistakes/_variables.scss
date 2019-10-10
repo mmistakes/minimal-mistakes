@@ -62,11 +62,13 @@ $border-color: $lighter-gray !default;
 $form-background-color: $lighter-gray !default;
 $footer-background-color: $lighter-gray !default;
 
-$primary-color: #7a8288 !default;
-$success-color: #62c462 !default;
-$warning-color: #f89406 !default;
+$primary-color: #6f777d !default;
+$success-color: #3fa63f !default;
+$warning-color: #d67f05 !default;
 $danger-color: #ee5f5b !default;
-$info-color: #52adc8 !default;
+$info-color: #3b9cba !default;
+$focus-color: $primary-color !default;
+$active-color: mix(#fff, $primary-color, 80%) !default;
 
 /* YIQ color contrast */
 $yiq-contrasted-dark-default: $dark-gray !default;
@@ -83,11 +85,12 @@ $flickr-color: #ff0084 !default;
 $foursquare-color: #0072b1 !default;
 $github-color: #171516 !default;
 $gitlab-color: #e24329 !default;
-$google-plus-color: #dd4b39 !default;
 $instagram-color: #517fa4 !default;
 $lastfm-color: #d51007 !default;
 $linkedin-color: #007bb6 !default;
+$mastodon-color: #2b90d9 !default;
 $pinterest-color: #cb2027 !default;
+$reddit-color: #ff4500 !default;
 $rss-color: #fa9b39 !default;
 $soundcloud-color: #ff3300 !default;
 $stackoverflow-color: #fe7a15 !default;
@@ -99,9 +102,9 @@ $youtube-color: #bb0000 !default;
 $xing-color: #006567 !default;
 
 /* links */
-$link-color: $info-color !default;
+$link-color: mix(#000, $info-color, 15%) !default;
 $link-color-hover: mix(#000, $link-color, 25%) !default;
-$link-color-visited: mix(#fff, $link-color, 25%) !default;
+$link-color-visited: mix(#fff, $link-color, 15%) !default;
 $masthead-link-color: $primary-color !default;
 $masthead-link-color-hover: mix(#000, $primary-color, 25%) !default;
 $navicon-link-color-hover: mix(#fff, $primary-color, 75%) !default;
@@ -133,6 +136,7 @@ $medium: 768px !default;
 $medium-wide: 900px !default;
 $large: 1024px !default;
 $x-large: 1280px !default;
+$max-width: $x-large !default;
 
 /*
    Grid
@@ -148,6 +152,8 @@ $right-sidebar-width-wide: 400px !default;
 
 $border-radius: 4px !default;
 $box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125) !default;
+$nav-height: 2em !default;
+$nav-toggle-height: 2rem !default;
 $navicon-width: 1.5rem !default;
 $navicon-height: 0.25rem !default;
 $global-transition: all 0.2s ease-in-out !default;

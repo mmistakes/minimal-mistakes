@@ -58,3 +58,7 @@ $base0f: #cc6633 !default;
     color: $text-color;
   }
 }
+
+.ais-search-box .ais-search-box--input {
+  background-color: $form-background-color;
+}

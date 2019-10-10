@@ -104,6 +104,23 @@ body:hover .visually-hidden button {
 }
 
 /*
+   Task lists
+   ========================================================================== */
+
+.task-list {
+  padding:0;
+
+  li {
+    list-style-type: none;
+  }
+
+  .task-list-item-checkbox {
+    margin-right: 0.5em;
+    opacity: 1;
+  }
+}
+
+/*
    Alignment
    ========================================================================== */
 
@@ -228,12 +245,6 @@ body:hover .visually-hidden button {
     color: $gitlab-color;
   }
 
-  .fa-google-plus,
-  .fa-google-plus-square,
-  .fa-google-plus-g {
-    color: $google-plus-color;
-  }
-
   .fa-instagram {
     color: $instagram-color;
   }
@@ -248,10 +259,19 @@ body:hover .visually-hidden button {
     color: $linkedin-color;
   }
 
+  .fa-mastodon,
+  .fa-mastodon-square {
+    color: $mastodon-color;
+  }
+
   .fa-pinterest,
   .fa-pinterest-p,
   .fa-pinterest-square {
     color: $pinterest-color;
+  }
+
+  .fa-reddit {
+    color: $reddit-color;
   }
 
   .fa-rss,
@@ -306,7 +326,7 @@ body:hover .visually-hidden button {
   position: relative;
   width: $navicon-width;
   height: $navicon-height;
-  background: #fff;
+  background: $primary-color;
   margin: auto;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -318,7 +338,7 @@ body:hover .visually-hidden button {
     left: 0;
     width: $navicon-width;
     height: $navicon-height;
-    background: #fff;
+    background: $primary-color;
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
@@ -354,6 +374,20 @@ body:hover .visually-hidden button {
   &:after {
     -webkit-transform: rotate3d(0, 0, 1, -45deg);
     transform: rotate3d(0, 0, 1, -45deg);
+  }
+}
+
+.greedy-nav__toggle:hover {
+  .navicon,
+  .navicon:before,
+  .navicon:after {
+    background: mix(#000, $primary-color, 25%);
+  }
+
+  &.close {
+    .navicon {
+      background: transparent;
+    }
   }
 }
 

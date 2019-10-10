@@ -10,18 +10,13 @@
   @include clearfix;
   margin: 0 auto;
   max-width: 100%;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
   font-family: $sans-serif;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
-
-  @include breakpoint($large) {
-    padding-left: 1em;
-    padding-right: 1em;
-  }
 
   @include breakpoint($x-large) {
     max-width: $x-large;
@@ -34,11 +29,11 @@
 
     @include breakpoint($large) {
       float: right;
-      width: span(10 of 12);
+      width: calc(100% - #{$right-sidebar-width-narrow});
     }
 
     @include breakpoint($x-large) {
-      padding-left: gutter(0.5 of 12);
+      width: calc(100% - #{$right-sidebar-width});
     }
   }
 
@@ -176,20 +171,27 @@
 .greedy-nav {
   position: relative;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  min-height: $nav-height;
   background: $background-color;
 
   a {
     display: block;
     margin: 0 1rem;
-    padding: 0.5rem 0;
     color: $masthead-link-color;
     text-decoration: none;
 
     &:hover {
       color: $masthead-link-color-hover;
+    }
+
+    &.site-logo {
+      margin-left: 0;
+      margin-right: 0.5rem;
     }
 
     &.site-title {
@@ -198,26 +200,30 @@
   }
 
   &__toggle {
-    padding: 0 0.5rem;
-    align-self: stretch;
+    -ms-flex-item-align: center;
+    align-self: center;
+    height: $nav-toggle-height;
     border: 0;
     outline: none;
-    color: #fff;
-    background-color: $primary-color;
+    background-color: transparent;
     cursor: pointer;
   }
 
   .visible-links {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     overflow: hidden;
 
     li {
       -webkit-box-flex: 0;
+      -ms-flex: none;
       flex: none;
     }
 
@@ -235,13 +241,13 @@
         -webkit-transition: $global-transition;
         transition: $global-transition;
         -webkit-transform: scaleX(0) translate3d(0, 0, 0);
-        transform: scaleX(0) translate3d(0, 0, 0); /* hide*/
+        transform: scaleX(0) translate3d(0, 0, 0); // hide
       }
 
       &:hover:before {
         -webkit-transform: scaleX(1);
         -ms-transform: scaleX(1);
-        transform: scaleX(1); /* reveal*/
+        transform: scaleX(1); // reveal
       }
     }
   }
@@ -255,6 +261,8 @@
     border: 1px solid $border-color;
     border-radius: $border-radius;
     background: $background-color;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(#000, 0.16),
+      0 2px 10px 0 rgba(#000, 0.12);
     box-shadow: 0 2px 4px 0 rgba(#000, 0.16), 0 2px 10px 0 rgba(#000, 0.12);
 
     &.hidden {
@@ -331,7 +339,7 @@
     display: none;
   }
 
-  @include breakpoint(max-width ($large - 1px)) {
+  @include breakpoint(max-width $large - 1px) {
     label {
       position: relative;
       display: inline-block;
@@ -437,7 +445,7 @@
     font-weight: bold;
   }
 
-  @include breakpoint(max-width ($large - 1px)) {
+  @include breakpoint(max-width $large - 1px) {
     position: relative;
     max-height: 0;
     opacity: 0%;
@@ -451,7 +459,7 @@
   }
 }
 
-@include breakpoint(max-width ($large - 1px)) {
+@include breakpoint(max-width $large - 1px) {
   .nav__list input:checked ~ .nav__items {
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
@@ -467,7 +475,7 @@
 
 .nav__title {
   margin: 0;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.75rem;
   font-family: $sans-serif-narrow;
   font-size: $type-size-5;
   font-weight: bold;
@@ -476,7 +484,7 @@
 .nav__sub-title {
   display: block;
   margin: 0.5rem 0;
-  padding: 0.5rem 0;
+  padding: 0.25rem 0;
   font-family: $sans-serif-narrow;
   font-size: $type-size-6;
   font-weight: bold;
@@ -491,11 +499,10 @@
 .toc {
   font-family: $sans-serif-narrow;
   color: $gray;
-  text-transform: uppercase;
-  letter-spacing: 1px;
   background-color: $background-color;
   border: 1px solid $border-color;
   border-radius: $border-radius;
+  -webkit-box-shadow: $box-shadow;
   box-shadow: $box-shadow;
 
   .nav__title {
@@ -505,6 +512,11 @@
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
   }
+
+  // Scrollspy marks toc items as .active when they are in focus
+  .active a {
+    @include yiq-contrasted($active-color);
+  }
 }
 
 .toc__menu {
@@ -512,13 +524,16 @@
   padding: 0;
   width: 100%;
   list-style: none;
-  font-size: 0.8rem;
+  font-size: $type-size-6;
+
+  @include breakpoint($large) {
+    font-size: $type-size-7;
+  }
 
   a {
     display: block;
-    padding: 0.5rem 1rem;
+    padding: 0.25rem 0.75rem;
     color: $muted-text-color;
-    font-size: $type-size-7;
     font-weight: bold;
     line-height: 1.5;
     border-bottom: 1px solid $border-color;
@@ -529,16 +544,23 @@
   }
 
   li ul > li a {
-    padding-left: 1.75rem;
+    padding-left: 1.25rem;
     font-weight: normal;
   }
 
-  /* hide sub sub links on small screens*/
-  li > ul li {
-    display: none;
+  li ul li ul > li a {
+    padding-left: 1.75rem;
+  }
 
-    @include breakpoint($medium) {
-      display: block;
-    }
+  li ul li ul li ul > li a {
+    padding-left: 2.25rem;
+  }
+
+  li ul li ul li ul li ul > li a {
+    padding-left: 2.75rem;
+  }
+
+  li ul li ul li ul li ul li ul > li a {
+    padding-left: 3.25rem
   }
 }

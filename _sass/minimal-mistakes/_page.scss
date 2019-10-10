@@ -5,7 +5,6 @@
 #main {
   @include clearfix;
   margin-left: auto;
-  margin-top: 2em;
   margin-right: auto;
   padding-left: 1em;
   padding-right: 1em;
@@ -16,7 +15,7 @@
   animation-delay: 0.15s;
 
   @include breakpoint($x-large) {
-    max-width: $x-large;
+    max-width: $max-width;
   }
 }
 
@@ -34,6 +33,7 @@
 
   .page__inner-wrap {
     float: left;
+    margin-top: 1em;
     margin-left: 0;
     margin-right: 0;
     width: 100%;
@@ -71,6 +71,23 @@
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
   }
+
+	h1, h2, h3, h4, h5, h6 {
+		.header-link {
+			position: relative;
+			left: 0.5em;
+			opacity: 0;
+			font-size: 0.8em;
+			-webkit-transition: opacity 0.2s ease-in-out 0.1s;
+			-moz-transition: opacity 0.2s ease-in-out 0.1s;
+			-o-transition: opacity 0.2s ease-in-out 0.1s;
+			transition: opacity 0.2s ease-in-out 0.1s;
+		}
+
+		&:hover .header-link {
+			opacity: 1;
+		}
+	}
 
   p,
   li,
