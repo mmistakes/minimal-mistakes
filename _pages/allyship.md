@@ -10,7 +10,6 @@ author_profile: true
 
 {{ page.excerpt | markdownify }}
 
-<article class="page">
 <section class="page__content">
 <div class="grid__wrapper">
   <p>
@@ -41,4 +40,3 @@ author_profile: true
   </p>
 </div>
 </section>
-</article>
