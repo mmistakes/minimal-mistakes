@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /allyship/
-title: ""
+title: "Allyship"
 excerpt: ""
 ads: false
 fullwidth: true
