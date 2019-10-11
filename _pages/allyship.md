@@ -12,13 +12,6 @@ author_profile: true
 
 <div class="grid__wrapper">
   <p>
-    During my time in the software industry, I’ve held several different technical positions and
-    encountered many career opportunities; each one provided unique experiences and helped me learn
-    a diverse skill set. While I relish the technological aspects of my work, I find the most joy in
-    helping people succeed. Technical writing allows me to help others on a broad scale.
-  </p>
-  
-  <p>
     Helping others succeed extends beyond the technical aspects of our jobs, it also means influencing
     the culture and improving everyone’s experience at work.
   </p>
