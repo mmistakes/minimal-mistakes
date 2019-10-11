@@ -10,6 +10,7 @@ author_profile: true
 
 {{ page.excerpt | markdownify }}
 
+<section class="page__content">
 <div class="grid__wrapper">
   <p>
     Helping others succeed extends beyond the technical aspects of our jobs, it also means influencing
@@ -38,3 +39,4 @@ author_profile: true
     <a href="https://community.anitab.org/event/male-ally-summit-2019/">Male Ally Summit 2019</a>.
   </p>
 </div>
+</section>
