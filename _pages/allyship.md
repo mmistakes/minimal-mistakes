@@ -10,7 +10,9 @@ author_profile: true
 
 {{ page.excerpt | markdownify }}
 
-<div class="page__inner-wrap">
+<article class="page">
+<section class="page__content">
+<div class="grid__wrapper">
   <p>
     Helping others succeed extends beyond the technical aspects of our jobs, it also means influencing
     the culture and improving everyone’s experience at work.
@@ -38,3 +40,5 @@ author_profile: true
     <a href="https://community.anitab.org/event/male-ally-summit-2019/">Male Ally Summit 2019</a>.
   </p>
 </div>
+</section>
+</article>
