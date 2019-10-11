@@ -10,7 +10,7 @@ author_profile: true
 
 {{ page.excerpt | markdownify }}
 
-<section class="page__content">
+<section class="page__hero">
 <div class="grid__wrapper">
   <p>
     Helping others succeed extends beyond the technical aspects of our jobs, it also means influencing
@@ -29,14 +29,14 @@ author_profile: true
   </p>
   
   <p>
-    If you're interested, read my <a href="/words/gracehopper/" class="page__hero">thoughts on attending Grace Hopper Celebration 2018</a>.
+    If you're interested, read my <a href="/words/gracehopper/">thoughts on attending Grace Hopper Celebration 2018</a>.
   </p>
   
   <p>
     <strong><i>Coming soon!</i></strong> Thoughts on allyship; how to build awareness; discussing allyship
     with others; and suggestions for practicing allyship and advocacy. These will be based on my presentation
-    at <a href="https://anitab.org/" class="page__hero">AnitaB.org</a>'s
-    <a href="https://community.anitab.org/event/male-ally-summit-2019/" class="page__hero">Male Ally Summit 2019</a>.
+    at <a href="https://anitab.org/">AnitaB.org</a>'s
+    <a href="https://community.anitab.org/event/male-ally-summit-2019/">Male Ally Summit 2019</a>.
   </p>
 </div>
 </section>
