@@ -8,6 +8,7 @@ fullwidth: true
 author_profile: true
 ---
 
+<div class="page__content">
 {{ page.excerpt | markdownify }}
 
   <p>
@@ -36,3 +37,5 @@ author_profile: true
     at <a href="https://anitab.org/">AnitaB.org</a>'s
     <a href="https://community.anitab.org/event/male-ally-summit-2019/">Male Ally Summit 2019</a>.
   </p>
+</div
+
