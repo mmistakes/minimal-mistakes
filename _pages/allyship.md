@@ -2,7 +2,7 @@
 layout: archive
 permalink: /allyship/
 title: "Allyship"
-excerpt: ""
+excerpt: "Testing markdown in this section with a link to [gracehopper](/words/gracehopper/)."
 ads: false
 fullwidth: true
 author_profile: true
