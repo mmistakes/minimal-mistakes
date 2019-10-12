@@ -1,10 +1,6 @@
 ---
 layout: splash
 permalink: /allyship/
-title: "Allyship"
-excerpt: ""
-ads: false
-fullwidth: true
 author_profile: true
 ---
 
@@ -12,9 +8,7 @@ author_profile: true
 
 {{ page.excerpt | markdownify }}
 
-<div id="main" role="main">
-  
-  <section class="page__content" itemprop="text">
+<h1 class="page__title">Allyship</h1>
 
   <p>
     Helping others succeed extends beyond the technical aspects of our jobs, it also means influencing
@@ -42,7 +36,3 @@ author_profile: true
     at <a href="https://anitab.org/">AnitaB.org</a>'s
     <a href="https://community.anitab.org/event/male-ally-summit-2019/">Male Ally Summit 2019</a>.
   </p>
-  
-  </section>
-
-</div>
