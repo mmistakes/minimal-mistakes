@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: splash
 permalink: /allyship/
 title: "Allyship"
 excerpt: ""
