@@ -14,7 +14,7 @@ author_profile: true
 Helping others succeed extends beyond the technical aspects of our jobs, it also means
 influencing the culture and improving everyone’s experience at work.
 
-Growing up in the 1970's and 80's, we were taught to “not see color”, men were told that
+Growing up in the 80's, we were taught to “not see color”, men were told that
 “women’s rights were women’s issues”, and everyone knew that if “you worked hard, you’d succeed”.
 As I entered adulthood, it dawned on me that there were problems with those assumptions.
 They’re built around the persona I embody: a white, cisgender, heterosexual, able-body,
