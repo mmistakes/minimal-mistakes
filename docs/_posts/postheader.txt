@@ -1,0 +1,6 @@
+---
+layout: single
+title:  "temptitle"
+date:   temptime -0800
+excerpt: "description"
+---
