@@ -1,3 +1,8 @@
+---
+name: "Bug Report"
+about: "Is something not working as expected?"
+---
+
 <!--
   Before opening a new issue please:
   
@@ -7,15 +12,9 @@
     https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - Search all issues at https://github.com/mmistakes/minimal-mistakes/issues 
     for solutions and to avoid duplication.
-  - Ask for help at https://talk.jekyllrb.com/
+  - Ask for help at http://talk.jekyllrb.com/
   
   After exhausting these suggestions use the format below.
--->
-
-## Description
-
-<!--
-  Describe the issue or proposed feature enhancement.
 -->
 
 ## Environment
@@ -34,15 +33,14 @@
 - Ruby gem or remote theme version:
 - Jekyll version:
 - Git repository URL:
-- Operating system:
 - GitHub Pages hosted (if yes provide URL to site):
-
----
+- Operating system:
 
 ## Expected behavior
 
 <!--
-  Describe the intended output or what you expected to see.
+  What is it you expected to happen? This should be a description of how the
+  functionality you tried to use is supposed to work.
 -->
 
 ## Steps to reproduce the behavior
@@ -60,4 +58,11 @@
   and include this output in the filed issue.
 
   Screenshots can also be included if they help illustrate a behavior.
+-->
+
+## Other
+
+<!--
+  NOTE: Please provide a code repository, gist, code snippet, sample files, 
+  screenshots, or anything else you think will aid in reproducing the issue.
 -->

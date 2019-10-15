@@ -10,21 +10,6 @@
     {% when "facebook" %}
       <h4 class="page__comments-title">{{ comments_label }}</h4>
       <section class="fb-comments" data-href="{{ page.url | absolute_url }}" data-mobile="true" data-num-posts="{{ site.comments.facebook.num_posts | default: 5 }}" data-width="100%" data-colorscheme="{{ site.comments.facebook.colorscheme | default: 'light' }}"></section>
-    {% when "google-plus" %}
-      <h4 class="page__comments-title">{{ comments_label }}</h4>
-      <section id="g-comments" class="g-comments">Loading Google+ Comments ...</section>
-      <script>
-        function initComment() {
-          gapi.comments.render("g-comments", {
-            href: "{{ page.url | absolute_url }}",
-            width: "624",
-            first_party_property: "BLOGGER",
-            view_type: "FILTERED_POSTMOD"
-          })
-        }
-      </script>
-      <script async type="text/javascript" src="https://apis.google.com/js/plusone.js" onload="initComment()" />
-      <noscript>Please enable JavaScript to view the <a href="https://plus.google.com/">comments powered by Google+.</a></noscript>-->
     {% when "staticman_v2" %}
       <section id="static-comments">
         {% if site.repository and site.staticman.branch %}
@@ -50,7 +35,7 @@
           <div class="page__comments-form">
             <h4 class="page__comments-title">{{ site.data.ui-text[site.locale].comments_label | default: "Leave a Comment" }}</h4>
             <p class="small">{{ site.data.ui-text[site.locale].comment_form_info | default: "Your email address will not be published. Required fields are marked" }} <span class="required">*</span></p>
-            <form id="new_comment" class="page__comments-form js-form form" method="post" action="https://api.staticman.net/v2/entry/{{ site.repository }}/{{ site.staticman.branch }}/comments">
+            <form id="new_comment" class="page__comments-form js-form form" method="post" action="{{ site.staticman.endpoint | default: 'https://api.staticman.net/v2/entry/' }}{{ site.repository }}/{{ site.staticman.branch }}/comments">
               <div class="form__spinner">
                 <i class="fas fa-spinner fa-spin fa-3x fa-fw"></i>
                 <span class="sr-only">{{ site.data.ui-text[site.locale].loading_label | default: "Loading..." }}</span>
@@ -165,6 +150,9 @@
           <!-- End new comment form -->
         {% endif %}
       </section>
+    {% when "utterances" %}
+      <h4 class="page__comments-title">{{ comments_label }}</h4>
+      <section id="utterances-comments"></section>
     {% when "custom" %}
       <section id="custom-comments"></section>
   {% endcase %}

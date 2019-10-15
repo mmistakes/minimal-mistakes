@@ -20,7 +20,7 @@ teaser                   : /assets/images/nersc300-500.jpg # path of fallback te
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
+  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -30,10 +30,13 @@ comments:
     appid                :
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
+  utterances:
+    theme                : # "github-light" (default), "github-dark"
+    issue_term           : # "pathname" (default)
 staticman:
   allowedFields          : # ['name', 'email', 'url', 'message']
   branch                 : # "master"
-  commitMessage          : # "New comment."
+  commitMessage          : # "New comment by {fields.name}"
   filename               : # comment-{@timestamp}
   format                 : # "yml"
   moderation             : # true
@@ -46,6 +49,7 @@ staticman:
       type               : # "date"
       options:
         format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+  endpoint               : # URL of your own deployment with trailing slash, will fallback to the public instance
 reCaptcha:
   siteKey                :
   secret                 :
@@ -185,7 +189,7 @@ kramdown:
 # Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 
 # Outputting
@@ -201,7 +205,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jemoji
+  - jekyll-include-cache
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -209,7 +213,7 @@ whitelist:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jemoji
+  - jekyll-include-cache
 
 
 # Archives
@@ -242,7 +246,7 @@ tag_archive:
 
 
 # HTML Compression
-# - http://jch.penibelst.de/
+# - https://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
@@ -251,6 +255,9 @@ compress_html:
 # Collections
 collections:
   projects:
+      output: true
+      permalink: /:collection/:path/
+  jobs:
       output: true
       permalink: /:collection/:path/
 
@@ -279,6 +286,13 @@ defaults:
   - scope:
       path: ""
       type: projects
+    values:
+      layout: single
+      author_profile: true
+ #_jobs
+  - scope:
+      path: ""
+      type: jobs
     values:
       layout: single
       author_profile: true

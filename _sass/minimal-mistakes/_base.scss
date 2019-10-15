@@ -130,14 +130,13 @@ a {
     @extend %tab-focus;
   }
 
-  &:hover,
-  &:active {
-    color: $link-color-hover;
-    outline: 0;
-  }
-
   &:visited {
     color: $link-color-visited;
+  }
+
+  &:hover {
+    color: $link-color-hover;
+    outline: 0;
   }
 }
 
@@ -168,7 +167,7 @@ figcaption > code,
 td > code {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
-  font-size: $type-size-6;
+  font-size: 0.8em;
   background: $code-background-color;
   border-radius: $border-radius;
 

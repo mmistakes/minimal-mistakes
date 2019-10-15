@@ -4,9 +4,7 @@
 {%- endif -%}
 {%- assign seo_url = seo_url | default: site.github.url -%}
 
-{% if site.title_separator %}
-  {% assign title_separator = site.title_separator | default: '-' | replace: '|', '&#124;' %}
-{% endif %}
+{% assign title_separator = site.title_separator | default: '-' | replace: '|', '&#124;' %}
 
 {%- if page.title -%}
   {%- assign seo_title = page.title | append: " " | append: title_separator | append: " " | append: site.title -%}
@@ -16,14 +14,18 @@
   {%- assign seo_title = seo_title | markdownify | strip_html | strip_newlines | escape_once -%}
 {%- endif -%}
 
-{%- assign canonical_url = page.url | replace: "index.html", "" | absolute_url %}
+{% if page.canonical_url %}
+  {%- assign canonical_url = page.canonical_url %}
+{% else %}
+  {%- assign canonical_url = page.url | replace: "index.html", "" | absolute_url %}
+{% endif %}
 
 {%- assign seo_description = page.description | default: page.excerpt | default: site.description -%}
 {%- if seo_description -%}
   {%- assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once -%}
 {%- endif -%}
 
-{%- assign author = page.author | default: page.authors[0] | default: site:author -%}
+{%- assign author = page.author | default: page.authors[0] | default: site.author -%}
 {%- assign author = site.data.authors[author] | default: author -%}
 
 {%- if author.twitter -%}
@@ -125,28 +127,21 @@
   <link rel="next" href="{{ paginator.next_page_path | absolute_url }}">
 {% endif %}
 
-{% if site.og_image %}
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    {% if site.social.type == "Organization" %}
       "@type": "Organization",
-      "url": {{ seo_url | jsonify }},
-      "logo": {{ site_og_image | jsonify }}
-    }
-  </script>
-{% endif %}
-
-{% if site.social %}
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "{% if site.social.type %}{{ site.social.type }}{% else %}Person{% endif %}",
+      "url": {{ '/' | absolute_url | jsonify }}{% if site.og_image %},
+      "logo": {{ site_og_image | jsonify }}{% endif %}
+    {% else %}
+      "@type": "Person",
       "name": {{ site.social.name | default: site.name | jsonify }},
-      "url": {{ seo_url | jsonify }},
-      "sameAs": {{ site.social.links | jsonify }}
-    }
-  </script>
-{% endif %}
+      "url": {{ '/' | absolute_url |jsonify }}{% if site.social.links %},
+      "sameAs": {{ site.social.links | jsonify }}{% endif %}
+    {% endif %}
+  }
+</script>
 
 {% if site.google_site_verification %}
   <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
@@ -160,7 +155,7 @@
 {% if site.yandex_site_verification %}
   <meta name="yandex-verification" content="{{ site.yandex_site_verification }}">
 {% endif %}
-{% if site.naver-site-verification %}
-  <meta name="naver-site-verification" content="{{ site.naver-site-verification }}">
+{% if site.naver_site_verification %}
+  <meta name="naver-site-verification" content="{{ site.naver_site_verification }}">
 {% endif %}
 <!-- end _includes/seo.html -->

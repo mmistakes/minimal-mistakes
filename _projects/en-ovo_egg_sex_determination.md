@@ -32,4 +32,4 @@ of an egg early in development, eggs containing male embryos can be culled
 before the embryo can sense pain, increasing animal welfare.
 
 Our approach uses machine learning to classify eggs as early as day 1 in
-development. We have entered the FFAR Egg-Tech grant challenge.
+development. We are hiring a postdoc to work on [this project](/jobs/2019-10-10-ml-egg-postdoc-position)

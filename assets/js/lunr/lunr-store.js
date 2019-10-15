@@ -18,7 +18,8 @@ var store = [
         "title": {{ doc.title | jsonify }},
         "excerpt":
           {%- if site.search_full_content == true -%}
-            {{ doc.content |
+            {{ doc.content | newline_to_br |
+              replace:"<br />", " " |
               replace:"</p>", " " |
               replace:"</h1>", " " |
               replace:"</h2>", " " |
@@ -28,7 +29,8 @@ var store = [
               replace:"</h6>", " "|
             strip_html | strip_newlines | jsonify }},
           {%- else -%}
-            {{ doc.content |
+            {{ doc.content | newline_to_br |
+              replace:"<br />", " " |
               replace:"</p>", " " |
               replace:"</h1>", " " |
               replace:"</h2>", " " |
