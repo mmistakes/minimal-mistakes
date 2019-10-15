@@ -1,5 +1,5 @@
 ---
-title: "BS/MS/or Postdoc: applied machine learning in Microbiology
+title: "BS/MS/or Postdoc: applied machine learning in Microbiology"
 categories:
  - jobs
 tags:
