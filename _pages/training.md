@@ -18,6 +18,10 @@ In August of 2017 We held a [two day workshop on Microbiome Science](https://usd
 
 ## Machine Learning workshop August 2019
 
-I am organizing a training workshop for ARS Scientists modeled after the Google ML
-Crash Course.  The two day workshop will be held in person in August of 2019
-and will offer a hands on introduction to Machine learning methods using Tensorflow.
+In August 2019 I organized a [two-day Machine Learning workshop](https://usda-ars-gbru.github.io/ml-training-site/) in collaboration with the [UF Carpentries Club](https://www.uf-carpentries.org/) for for 50 ARS UF and USDA-ARS Scientists and UF.  The workshop introduced life scientists with some programming experience to machine learning methods. The learning objectives were to:
+
+1. Identify the types of problems that machine learning methods can be applied to
+2. Understanding of basic ML concepts like the bias-variance tradeoff, and test/train/validate
+3. Gain experience applying a few types of classification and regression methods
+4. Have a general sense of the methods and software available
+5. Know where to go to continue learning about ML after the course

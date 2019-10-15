@@ -24,4 +24,4 @@ tags:
 * Jean Guard, PhD, DVM - USDA-ARS Athens, GA
 * Justin Vaughn, PhD  - USDA-ARS Athens, GA
 
-This project is just getting underway and we will be [hiring an ARS funded postdoc](/posts/postdoc-position/) soon.
+This project is just getting underway and we will be [hiring an ARS funded postdoc](/jobs/2019-10-10-ml-salmonella-postdoc-position) soon.

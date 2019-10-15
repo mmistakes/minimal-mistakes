@@ -257,6 +257,9 @@ collections:
   projects:
       output: true
       permalink: /:collection/:path/
+  jobs:
+      output: true
+      permalink: /:collection/:path/
 
 
 # Defaults
@@ -283,6 +286,13 @@ defaults:
   - scope:
       path: ""
       type: projects
+    values:
+      layout: single
+      author_profile: true
+ #_jobs
+  - scope:
+      path: ""
+      type: jobs
     values:
       layout: single
       author_profile: true
