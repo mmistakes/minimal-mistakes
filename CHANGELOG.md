@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+- Update Chinese (Simplified) localized UI text strings. [#2286](https://github.com/mmistakes/minimal-mistakes/pull/2286)
 - Update list of 3rd party JavaScript used and licenses. [#2276](https://github.com/mmistakes/minimal-mistakes/pull/2276)
 
 ### Bug Fixes
