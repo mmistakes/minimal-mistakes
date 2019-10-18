@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Herbstferien",
-    "title": "Herbstferien",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MHQ3aXN0bTZiNXVyb2NtN2xjNGNka2o5NmEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-10-04",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-10-19",
-      "date_time": null
-    },
-    "created": "2019-08-19T08:08:15.000Z",
-    "updated": "2019-08-22T08:05:16.733Z"
-  },
-  {
-    "image_path": null,
     "alt": "Fotograf kommt in die Schule",
     "title": "Fotograf kommt in die Schule",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2019-08-27T07:29:10.000Z",
     "updated": "2019-08-27T07:29:10.184Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Oberschulmesse Spandau",
+    "title": "Oberschulmesse Spandau",
+    "excerpt": "\nBürgersaal des Rathauses Spandau\nOberschulmesse der Schulen Spandau\nÜbergang zur 7.Klasse -welche Schule?",
+    "url": "https://www.google.com/calendar/event?eid=MGZrb2ZrYjdrNTh0OTdxamhmaG85bDF0MDEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-11-06T16:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-11-06T19:30:00+01:00"
+    },
+    "created": "2019-09-26T08:21:19.000Z",
+    "updated": "2019-09-26T08:21:19.343Z"
   }
 ]
