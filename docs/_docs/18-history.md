@@ -5,9 +5,15 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2019-10-04T19:53:11-04:00
+last_modified_at: 2019-10-17T20:12:39-04:00
 toc: false
 ---
+
+## Unreleased
+
+### Enhancements
+
+- Update list of 3rd party JavaScript used and licenses. [#2276](https://github.com/mmistakes/minimal-mistakes/pull/2276)
 
 ## [4.17.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.17.0)
 
