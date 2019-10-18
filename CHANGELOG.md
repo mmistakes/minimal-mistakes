@@ -4,6 +4,10 @@
 
 - Update list of 3rd party JavaScript used and licenses. [#2276](https://github.com/mmistakes/minimal-mistakes/pull/2276)
 
+### Bug Fixes
+
+- Fix indention of nested GFM task lists. [#2283](https://github.com/mmistakes/minimal-mistakes/issues/2283)
+
 ## [4.17.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.17.0)
 
 ### Enhancements
