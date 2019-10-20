@@ -103,6 +103,8 @@ Do It Live
 
 ## Forms
 
+### Simple example
+
 <form>
   <fieldset>
     <legend>Personalia:</legend>
@@ -110,6 +112,34 @@ Do It Live
     Email: <input type="text" size="30"><br>
     Date of birth: <input type="text" size="10">
   </fieldset>
+</form>
+
+### Advanced example
+
+<form>
+  <fieldset class="radio">
+    <legend>Radio buttons</legend>
+    <input type="radio" id="radio-1"> <label for="radio-1">Label 1</label>
+    <input type="radio" id="radio-2"> <label for="radio-2">Label 2</label>
+  </fieldset>
+  <fieldset class="checkbox">
+    <legend>Checkboxes</legend>
+    <input type="checkbox" id="checkbox-1"> <label for="checkbox-1">Checkbox 1</label>
+    <input type="checkbox" id="checkbox-2"> <label for="checkbox-2">Checkbox 2</label>
+  </fieldset>
+  <fieldset>
+    <legend>Personalia:</legend>
+    <label>Name: <input type="text" size="30"></label>
+    <label>Email: <input type="text" size="30" placeholder="my@email.com"><span class="help-block">E-mails will not be sold</span></label>
+    <label>Date of birth: <input type="text" size="10"> <span class="help-inline">Format: 01/10/2018</span></label>
+    <label class="form-inline">Weight: <input class="input-mini" type="text" size="10"> <span class="help-inline">kg</span></label>
+    <label class="form-inline">Height: <input class="input-small" type="text" size="10"> <span class="help-inline">cm</span></label>
+  </fieldset>
+  <fieldset>
+    <label for="comment">Longer text</label>
+    <textarea id="comment"></textarea>
+  </fieldset>
+  <input type="submit" value="Submit">
 </form>
 
 ## Buttons
