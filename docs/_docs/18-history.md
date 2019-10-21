@@ -5,9 +5,19 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2019-10-17T20:23:35-04:00
+last_modified_at: 2019-10-21T10:46:30-04:00
 toc: false
 ---
+
+## Unreleased
+
+### Enhancements
+
+- Replace sticky footer JavaScript with flexbox styles. [#2289](https://github.com/mmistakes/minimal-mistakes/pull/2289)
+
+### Bug Fixes
+
+- Fix sticky footer when using MozBar extension. [#2281](https://github.com/mmistakes/minimal-mistakes/issues/2281)
 
 ## [4.17.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.17.1)
 
