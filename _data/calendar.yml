@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Fotograf kommt in die Schule",
-    "title": "Fotograf kommt in die Schule",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NGk4ZWI1dHVzbjZiMzgxNTZiOXJhMTdsdXIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-10-22",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-10-24",
-      "date_time": null
-    },
-    "created": "2019-08-16T09:58:51.000Z",
-    "updated": "2019-08-16T09:59:17.386Z"
-  },
-  {
-    "image_path": null,
     "alt": "1. Schulkonferenz ",
     "title": "1. Schulkonferenz ",
     "excerpt": "\n15:30  - 17:00 Uhr\nNaWi-Raum, Aufgang B, 1. Stock",
@@ -100,5 +83,22 @@
     },
     "created": "2019-09-26T08:21:19.000Z",
     "updated": "2019-09-26T08:21:19.343Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Laternenfest ",
+    "title": "Laternenfest ",
+    "excerpt": "\nWir laufen durch den Kiez und singen Laternenlieder bei Kakao und Brezeln!",
+    "url": "https://www.google.com/calendar/event?eid=MW9lcGIwcDcwMjdrdDRpZm5mam1vMG5hanAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-11-07T16:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-11-07T18:00:00+01:00"
+    },
+    "created": "2019-09-29T12:57:17.000Z",
+    "updated": "2019-09-29T12:57:45.254Z"
   }
 ]
