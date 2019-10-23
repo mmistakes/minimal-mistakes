@@ -40,6 +40,8 @@ At the USDA Agricultural Research Service I hold a career scientist position as 
 
 I have a courtesy faculty appointment in the Department of Microbiology and Cell science at the University of Florida.
 
+[Academic CV](https://github.com/arivers/cv/raw/master/cv-arivers.pdf)
+
 ![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/pp_ravin_150.jpg){: .align-left}
 
 ## Ravin Poudel, PhD
