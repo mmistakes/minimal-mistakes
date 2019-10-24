@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "1. Schulkonferenz ",
-    "title": "1. Schulkonferenz ",
-    "excerpt": "\n15:30  - 17:00 Uhr\nNaWi-Raum, Aufgang B, 1. Stock",
-    "url": "https://www.google.com/calendar/event?eid=NmFsY2U5ZTRzcm9ycW1mcnBrcXVrNjU5ZjggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-10-24T15:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-10-24T17:30:00+02:00"
-    },
-    "created": "2019-09-29T12:51:54.000Z",
-    "updated": "2019-09-29T12:51:54.292Z"
-  },
-  {
-    "image_path": null,
     "alt": "Halloween-Disco",
     "title": "Halloween-Disco",
     "excerpt": "\nSpaß und Tanz. Verkleidet oder nicht!\nAnmeldung nicht vergessen (Eltern müssen Erlaubnis schriftlich geben)!",
@@ -100,5 +83,22 @@
     },
     "created": "2019-09-29T12:57:17.000Z",
     "updated": "2019-09-29T12:57:45.254Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Weihnachtsferien",
+    "title": "Weihnachtsferien",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MW1lYmpldXM4ZWpxOGQ0Y24xYW5pdjA0cWcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-12-23",
+      "date_time": null
+    },
+    "end": {
+      "date": "2020-01-04",
+      "date_time": null
+    },
+    "created": "2019-08-22T08:02:15.000Z",
+    "updated": "2019-08-22T08:02:15.501Z"
   }
 ]
