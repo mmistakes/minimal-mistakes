@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Halloween-Disco",
-    "title": "Halloween-Disco",
-    "excerpt": "\nSpaß und Tanz. Verkleidet oder nicht!\nAnmeldung nicht vergessen (Eltern müssen Erlaubnis schriftlich geben)!",
-    "url": "https://www.google.com/calendar/event?eid=N2huYnBsMXNsZDhnZ3ZrcnN1YmtnMWpnMDggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-10-25T17:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-10-25T19:00:00+02:00"
-    },
-    "created": "2019-01-28T11:35:03.000Z",
-    "updated": "2019-09-29T12:55:39.503Z"
-  },
-  {
-    "image_path": null,
     "alt": "Aktionstag der JÜL Klassen Mobililli",
     "title": "Aktionstag der JÜL Klassen Mobililli",
     "excerpt": null,
@@ -82,7 +65,24 @@
       "date_time": "2019-11-07T18:00:00+01:00"
     },
     "created": "2019-09-29T12:57:17.000Z",
-    "updated": "2019-09-29T12:57:45.254Z"
+    "updated": "2019-10-25T08:52:04.074Z"
+  },
+  {
+    "image_path": null,
+    "alt": "2. GEV um 18:30 Uhr",
+    "title": "2. GEV um 18:30 Uhr",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=N3ZqdGVnbTlmYjZlYW82ZmZwc2FjY2p2Z3AgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2019-11-26T18:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2019-11-26T20:00:00+01:00"
+    },
+    "created": "2019-10-25T12:52:14.000Z",
+    "updated": "2019-10-25T12:52:14.563Z"
   },
   {
     "image_path": null,
