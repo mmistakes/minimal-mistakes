@@ -7,6 +7,8 @@ tags:
   - Post Formats
 ---
 
+[View source on GitHub](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/docs/_posts/2010-08-07-post-image-caption.md)
+
 {% capture fig_img %}
 ![Foo]({{ "/assets/images/unsplash-gallery-image-3.jpg" | relative_url }})
 {% endcapture %}

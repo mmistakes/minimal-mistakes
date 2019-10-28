@@ -4,6 +4,8 @@ tags:
   - table of contents
 ---
 
+[View source on GitHub](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/docs/_posts/2012-01-03-layout-table-of-contents-include-post.md)
+
 Tests table of contents with multiple levels to verify indentation is readible via helper include (deprecated).
 
 ```

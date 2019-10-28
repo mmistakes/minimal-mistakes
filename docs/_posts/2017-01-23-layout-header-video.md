@@ -12,6 +12,8 @@ tags:
   - layout
 ---
 
+[View source on GitHub](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/docs/_posts/2017-01-23-layout-header-video.md)
+
 This post should display a **header with a responsive video**, if the theme supports it.
 
 ## Settings

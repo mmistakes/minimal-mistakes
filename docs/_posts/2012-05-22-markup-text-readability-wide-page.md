@@ -8,6 +8,8 @@ tags:
   - test
 ---
 
+[View source on GitHub](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/docs/_posts/2012-05-22-markup-text-readability-wide-page.md)
+
 When using `layout: single` add the following front matter to a page or post to widen the main content:
 
 ```yaml

@@ -10,6 +10,8 @@ tags:
   - markup
 ---
 
+[View source on GitHub](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/docs/_posts/2009-05-15-edge-case-nested-and-mixed-lists.md)
+
 Nested and mixed lists are an interesting beast. It's a corner case to make sure that
 
 * Lists within lists do not break the ordered list numbering order

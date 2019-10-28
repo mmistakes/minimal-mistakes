@@ -10,6 +10,8 @@ toc_label: "Unique Title"
 toc_icon: "heart"
 ---
 
+[View source on GitHub](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/docs/_posts/2012-01-03-layout-table-of-contents-post.md)
+
 Enable table of contents on post or page by adding `toc: true` to its YAML Front Matter. The title and icon can also be changed with:
 
 ```yaml

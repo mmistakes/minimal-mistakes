@@ -6,6 +6,8 @@ toc: true
 toc_sticky: true
 ---
 
+[View source on GitHub](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/docs/_posts/2012-01-03-layout-table-of-contents-sticky.md)
+
 "Stick" table of contents to the top of a page by adding `toc_sticky: true` to its YAML Front Matter.
 
 ```yaml

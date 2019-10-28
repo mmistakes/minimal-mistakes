@@ -9,6 +9,8 @@ tags:
   - title
 ---
 
+[View source on GitHub](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/docs/_posts/2013-01-05-markup-title-with-special-characters.md)
+
 Putting special characters in the title should have no adverse effect on the layout or functionality.
 
 Special characters in the post title have been known to cause issues with JavaScript and XML when not properly encoded and escaped.

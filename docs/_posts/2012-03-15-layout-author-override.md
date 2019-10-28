@@ -5,6 +5,8 @@ excerpt: "A post to test author overrides using a data file."
 last_modified_at: 2018-09-10T12:32:27-04:00
 ---
 
+[View source on GitHub](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/docs/_posts/2012-03-15-layout-author-override.md)
+
 Sites that may have content authored from various individuals can be accommodated by using [data files](https://jekyllrb.com/docs/datafiles/).
 
 To attribute an author to a post or page that is different from the site author specified in `_config.yml`:
