@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+- Add collection step to documentation about creating a portfolio page. [#2294](https://github.com/mmistakes/minimal-mistakes/pull/2294)
 - Replace sticky footer JavaScript with flexbox styles. [#2289](https://github.com/mmistakes/minimal-mistakes/pull/2289)
 
 ### Bug Fixes

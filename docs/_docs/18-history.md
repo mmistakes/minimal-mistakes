@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2019-10-21T10:46:30-04:00
+last_modified_at: 2019-10-27T20:17:37-04:00
 toc: false
 ---
 
@@ -13,6 +13,7 @@ toc: false
 
 ### Enhancements
 
+- Add collection step to documentation about creating a portfolio page. [#2294](https://github.com/mmistakes/minimal-mistakes/pull/2294)
 - Replace sticky footer JavaScript with flexbox styles. [#2289](https://github.com/mmistakes/minimal-mistakes/pull/2289)
 
 ### Bug Fixes
