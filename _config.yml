@@ -171,6 +171,10 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
+  highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
 
 
 # Sass/SCSS
@@ -253,5 +257,5 @@ defaults:
       comments: # true
       share: true
       related: true
-      
+
 remote_theme: "mmistakes/minimal-mistakes"
