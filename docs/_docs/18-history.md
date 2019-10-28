@@ -9,7 +9,7 @@ last_modified_at: 2019-10-27T20:17:37-04:00
 toc: false
 ---
 
-## Unreleased
+## [4.17.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.17.1)
 
 ### Enhancements
 
