@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Aktionstag der JÜL Klassen Mobililli",
-    "title": "Aktionstag der JÜL Klassen Mobililli",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MWo0b2k3OXE0ajM1MmhqcWFnaWYyZjc5NWsgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-10-31",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-11-01",
-      "date_time": null
-    },
-    "created": "2019-08-27T07:40:09.000Z",
-    "updated": "2019-08-27T07:40:09.395Z"
-  },
-  {
-    "image_path": null,
     "alt": "KroKo Zahnprophylaxe",
     "title": "KroKo Zahnprophylaxe",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2019-08-22T08:02:15.000Z",
     "updated": "2019-08-22T08:02:15.501Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Winterferien",
+    "title": "Winterferien",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=M2VqN2xiNjZiNGZrdjVubDQ3bGY5dnY2bzMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2020-02-03",
+      "date_time": null
+    },
+    "end": {
+      "date": "2020-02-08",
+      "date_time": null
+    },
+    "created": "2019-08-22T08:02:34.000Z",
+    "updated": "2019-08-22T08:02:34.786Z"
   }
 ]
