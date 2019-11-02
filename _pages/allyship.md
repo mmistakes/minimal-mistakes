@@ -30,7 +30,7 @@ If you're interested, read my [thoughts on attending Grace Hopper Celebration 20
 
 **_Coming soon!_** Thoughts on allyship; how to build awareness; discussing allyship
 with others; and suggestions for practicing allyship and advocacy. These will be from my presentation
-at [AnitaB.org](https://anitab.org/)'s [Male Ally Summit 2019](https://community.anitab.org/event/male-ally-summit-2019/),
-from which the slides follow.
+at [AnitaB.org](https://anitab.org/)'s [Male Ally Summit 2019](https://community.anitab.org/event/male-ally-summit-2019/).
+The following are my slides, including speaker notes.
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT7n6pw43jrUXXHM2q4x1hsqyvVK9wriyyvn1rYAf0444OLUU7JX1koz70bYP-oBvixCI-w920niyzM/embed?start=false&loop=false&delayms=5000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
