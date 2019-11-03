@@ -33,4 +33,6 @@ with others; and suggestions for practicing allyship and advocacy. These will be
 at [AnitaB.org](https://anitab.org/)'s [Male Ally Summit 2019](https://community.anitab.org/event/male-ally-summit-2019/).
 The following are my slides, including speaker notes.
 
+**_Feedback:_** If you attended my presentation, I would greatly appreciate your feedback ([click here](https://forms.gle/eQUfNNNsDSexYWqF7)).
+
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT7n6pw43jrUXXHM2q4x1hsqyvVK9wriyyvn1rYAf0444OLUU7JX1koz70bYP-oBvixCI-w920niyzM/embed?start=false&loop=false&delayms=5000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
