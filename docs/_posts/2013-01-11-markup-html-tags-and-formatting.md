@@ -148,9 +148,9 @@ Do It Live
     <legend>Personalia legend with `form-group`</legend>
     <label>Name: <input type="text" size="30"> <span class="help-inline">Write both first and lastname `help-inline`</span></label>
     <label>Email: <input type="text" size="30" placeholder="my@email.com"><span class="help-block">E-mails will not be sold `help-block`</span></label>
-    <label>Date of birth: <input type="text" size="10"> <span class="help-inline">Format: 01/10/2018 `help-inline`</span></label>
+    <label>Date of birth: <input type="text" size="10"> <small class="help-inline">Format: 01/10/2018 `help-inline`</small></label>
     <label class="form-inline">Weight: <input class="input-mini" type="text" size="10"> <span class="help-inline">kg</span></label>
-    <label class="form-inline">Height: <input class="input-small" type="text" size="10"> <span class="help-block">Height is in cm `help-block`</span></label>
+    <label class="form-inline">Height: <input class="input-small" type="text" size="10" disabled="disabled"> <span class="help-block">Height is in cm and will be calculated `help-block`</span></label>
   </fieldset>
   <fieldset>
     <legend>File legend</legend>
@@ -159,6 +159,49 @@ Do It Live
   <fieldset>
     <legend>Image legend</legend>
     <label>Image: <input type="file"></label>
+  </fieldset>
+  <fieldset>
+    <label for="comment">Longer text</label>
+    <textarea id="comment"></textarea>
+  </fieldset>
+  <input type="submit" value="Submit">
+  <input type="button" value="Button">
+  <input type="reset" value="Reset">
+</form>
+
+### Inline form
+
+<form class="form-inline">
+  <fieldset>
+    <legend>Radio buttons legend</legend>
+    <label for="radio-1" class="radio"><input type="radio" id="radio-1"> Label 1</label>
+    <label for="radio-2" class="radio"><input type="radio" id="radio-2"> Label 2</label>
+  </fieldset>
+  <fieldset>
+    <legend>Checkboxes legend </legend>
+    <label for="checkbox-1" class="checkbox"><input type="checkbox" id="checkbox-1"> Checkbox 1</label>
+    <label for="checkbox-2" class="checkbox"><input type="checkbox" id="checkbox-2"> Checkbox 2</label>
+  </fieldset>
+  <fieldset>
+    <legend>Select box legend</legend>
+    <select>
+      <option>Option 1</option>
+      <option>Option 2</option>
+    </select>
+  </fieldset>
+  <fieldset>
+    <legend>Personalia</legend>
+    <div class="form-group">
+      <label>Name: <input type="text" size="20"> <span class="help-inline">Write both first and lastname `help-inline`</span></label>
+    </div>
+    <div class="form-group">
+      <label>Email: <input type="text" size="30" placeholder="my@email.com"><span class="help-block">E-mails will not be sold</span></label>
+      <label>Date of birth: <input type="text" size="10"> <span class="help-block">Format: 01/10/2018</span></label>
+    </div>
+    <div class="form-group">
+      <label>Weight: <input class="input-mini" type="text" size="10"> <span class="help-inline">kg</span></label>
+      <label>Height: <input class="input-small" type="text" size="10"> <span class="help-inline">cm</span></label>
+    </div>
   </fieldset>
   <fieldset>
     <label for="comment">Longer text</label>
