@@ -18,23 +18,6 @@
   },
   {
     "image_path": null,
-    "alt": "Oberschulmesse Spandau",
-    "title": "Oberschulmesse Spandau",
-    "excerpt": "\nBürgersaal des Rathauses Spandau\nOberschulmesse der Schulen Spandau\nÜbergang zur 7.Klasse -welche Schule?",
-    "url": "https://www.google.com/calendar/event?eid=MGZrb2ZrYjdrNTh0OTdxamhmaG85bDF0MDEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-11-06T16:30:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-11-06T19:30:00+01:00"
-    },
-    "created": "2019-09-26T08:21:19.000Z",
-    "updated": "2019-09-26T08:21:19.343Z"
-  },
-  {
-    "image_path": null,
     "alt": "Laternenfest ",
     "title": "Laternenfest ",
     "excerpt": "\nWir laufen durch den Kiez und singen Laternenlieder bei Kakao und Brezeln!",
@@ -100,5 +83,22 @@
     },
     "created": "2019-08-22T08:02:34.000Z",
     "updated": "2019-08-22T08:02:34.786Z"
+  },
+  {
+    "image_path": null,
+    "alt": "3. GEV um 18:30 Uhr",
+    "title": "3. GEV um 18:30 Uhr",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NXRlaDBtYzRic3Y2cGRrYnBqZ2x1ZTAxaDcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2020-02-12T18:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2020-02-12T20:00:00+01:00"
+    },
+    "created": "2019-10-25T12:52:54.000Z",
+    "updated": "2019-10-25T12:52:54.971Z"
   }
 ]
