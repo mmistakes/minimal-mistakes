@@ -114,32 +114,59 @@ Do It Live
   </fieldset>
 </form>
 
-### Advanced example
+### Advanced form example
 
-<form>
+<form class="form">
   <fieldset class="radio">
-    <legend>Radio buttons</legend>
+    <legend>Radio buttons legend</legend>
     <input type="radio" id="radio-1"> <label for="radio-1">Label 1</label>
     <input type="radio" id="radio-2"> <label for="radio-2">Label 2</label>
   </fieldset>
+  <fieldset>
+    <legend>Radio buttons legend `inline`</legend>
+    <label for="radio-1" class="radio inline"><input type="radio" id="radio-1"> Label 1</label>
+    <label for="radio-2" class="radio inline"><input type="radio" id="radio-2"> Label 2</label>
+  </fieldset>
   <fieldset class="checkbox">
-    <legend>Checkboxes</legend>
+    <legend>Checkboxes legend </legend>
     <input type="checkbox" id="checkbox-1"> <label for="checkbox-1">Checkbox 1</label>
     <input type="checkbox" id="checkbox-2"> <label for="checkbox-2">Checkbox 2</label>
   </fieldset>
   <fieldset>
-    <legend>Personalia:</legend>
-    <label>Name: <input type="text" size="30"></label>
-    <label>Email: <input type="text" size="30" placeholder="my@email.com"><span class="help-block">E-mails will not be sold</span></label>
-    <label>Date of birth: <input type="text" size="10"> <span class="help-inline">Format: 01/10/2018</span></label>
+    <legend>Checkboxes legend `inline`</legend>
+    <label for="checkbox-1" class="checkbox inline"><input type="checkbox" id="checkbox-1"> Checkbox 1</label>
+    <label for="checkbox-2" class="checkbox inline"><input type="checkbox" id="checkbox-2"> Checkbox 2</label>
+  </fieldset>
+  <fieldset>
+    <legend>Select box legend</legend>
+    <select>
+      <option>Option 1</option>
+      <option>Option 2</option>
+    </select>
+  </fieldset>
+  <fieldset>
+    <legend>Personalia legend</legend>
+    <label>Name: <input type="text" size="30"> <span class="help-inline">Write both first and lastname `help-inline`</span></label>
+    <label>Email: <input type="text" size="30" placeholder="my@email.com"><span class="help-block">E-mails will not be sold `help-block`</span></label>
+    <label>Date of birth: <input type="text" size="10"> <span class="help-inline">Format: 01/10/2018 `help-inline`</span></label>
     <label class="form-inline">Weight: <input class="input-mini" type="text" size="10"> <span class="help-inline">kg</span></label>
-    <label class="form-inline">Height: <input class="input-small" type="text" size="10"> <span class="help-inline">cm</span></label>
+    <label class="form-inline">Height: <input class="input-small" type="text" size="10"> <span class="help-block">Height is in cm `help-block`</span></label>
+  </fieldset>
+  <fieldset>
+    <legend>File legend</legend>
+    <label>File: <input type="file"></label>
+  </fieldset>
+  <fieldset>
+    <legend>Image legend</legend>
+    <label>Image: <input type="file"></label>
   </fieldset>
   <fieldset>
     <label for="comment">Longer text</label>
     <textarea id="comment"></textarea>
   </fieldset>
   <input type="submit" value="Submit">
+  <input type="button" value="Button">
+  <input type="reset" value="Reset">
 </form>
 
 ## Buttons
