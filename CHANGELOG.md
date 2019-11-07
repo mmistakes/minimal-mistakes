@@ -1,4 +1,4 @@
-## [4.17.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.17.1)
+## [4.17.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.17.2)
 
 ### Enhancements
 
