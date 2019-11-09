@@ -108,7 +108,7 @@ body {
   p,
   li,
   dl {
-    font-size: 1em;
+    font-size: 0.75em;
   }
 
   /* paragraph indents */
@@ -282,7 +282,7 @@ body {
   margin-top: 2em;
   color: $muted-text-color;
   font-family: $sans-serif;
-  font-size: $type-size-6;
+  font-size: $type-size-8;
 
   p {
     margin: 0;
@@ -315,9 +315,9 @@ body {
 
 .page__taxonomy-item {
   display: inline-block;
-  margin-right: 5px;
-  margin-bottom: 8px;
-  padding: 5px 10px;
+  margin-right: 3px;
+  margin-bottom: 4px;
+  padding: 3px 6px;
   text-decoration: none;
   border: 1px solid mix(#000, $border-color, 25%);
   border-radius: $border-radius;
