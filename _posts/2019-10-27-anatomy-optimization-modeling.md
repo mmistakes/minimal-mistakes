@@ -1,3 +1,8 @@
+---
+published: true
+title: Anatomy of Optimization Modeling
+date: 2019-11-11
+---
 
 I am on a bit of a quest to bring Mathematical Optimization to the masses, or at least to Software Developers. I often come across problems where people are wanting to find the best plan for their problem but they lack to tools to express the problem. Typically the way this is "solved" is by some domain expert coming up with a laborious heuristic in Excel which involves outrageous amount of copying and pasting. I have seen this is take place in tiny companies all the way up to multi-billion dollar enterprises. What really breaks my heart when I see this is that I know there is a better way, but people are just are not aware of it. This is why I am pushing for more training on Mathematical Optimization at my company and why I am starting a blog series on Mathematical Modeling.
 
@@ -29,13 +34,13 @@ My plan for this series is to follow a simple pattern. First, present a real wor
 
 In the rest of this post I will walk through a toy problem for the purpose of introducing the vocabulary of Mathematical Optimization Modeling. In future posts I will work more complex problems which will have interesting characteristics.
 
-## The Food Cart Problem
+## The Food Truck Problem
 
-One of the example problems I like to use is that of a Food Cart. I am from Portland, OR USA originally and we had food trucks everywhere. In this example we are running a food truck and we have to decide what items to pack for the day. We sell Hamburgers and Burritos. Hamburgers sell for \\$5.00 and Burritos sell for \\$7.50 (they are big Burritos). Each Hamburger requires us to carry 1.0 Lb. of ingredients on the truck and each Burrito requires 1.5 Lbs. (I told you they are big). We have a small Food Cart so we can only carry up to 650 Lbs. of ingredients. We also forgot to go to stock up the day before so we only have 200 Hamburger buns on hand and only 300 tortillas for Burritos. Since we run an awesome Food Cart, we always sell out of everything we bring. The question now becomes, how much Hamburgers do we pack for and how many Burritos so that we maximize our profit?
+One of the example problems I like to use is that of a Food Truck. I am from Portland, OR USA originally and we had food trucks everywhere. In this example we are running a food truck and we have to decide what items to pack for the day. We sell Hamburgers and Burritos. Hamburgers sell for \\$5.00 and Burritos sell for \\$7.50 (they are big Burritos). Each Hamburger requires us to carry 1.0 Lb. of ingredients on the truck and each Burrito requires 1.5 Lbs. (I told you they are big). We have a small Food Truck so we can only carry up to 650 Lbs. of ingredients. We also forgot to go to stock up the day before so we only have 200 Hamburger buns on hand and only 300 tortillas for Burritos. Since we run an awesome Food Truck, we always sell out of everything we bring. The question now becomes, how much Hamburgers do we pack for and how many Burritos so that we maximize our profit?
 
 > **Note:** This example problem is meant to be simple. I am mostly concerned with introducing the vocabulary of Optimization Modeling. Future problems will be more complex.
 
-This problem is a clear example of a Mathematical Optimization Problem. It has a Quantifiable Objective, Maximize Revenue. It has Decisions which we can control: the number of Hamburgers and Burritos we will pack for. Finally it has rules we must follow, the Food Cart can only carry 650 Lbs, we only have 200 Hamburger Buns and we only have 300 tortillas for Burritos. Now, I am going to show you how we formulate this as an Optimization Model and then I will walk through each piece so that it makes sense. For this model I am going to use the variable $x_{1}$ to represent the number of Hamburgers we are going to pack for and $x_{2}$ to represent the number of Burritos.
+This problem is a clear example of a Mathematical Optimization Problem. It has a Quantifiable Objective, Maximize Revenue. It has Decisions which we can control: the number of Hamburgers and Burritos we will pack for. Finally it has rules we must follow, the Food Truck can only carry 650 Lbs, we only have 200 Hamburger Buns and we only have 300 tortillas for Burritos. Now, I am going to show you how we formulate this as an Optimization Model and then I will walk through each piece so that it makes sense. For this model I am going to use the variable $x_{1}$ to represent the number of Hamburgers we are going to pack for and $x_{2}$ to represent the number of Burritos.
 
 $$
 Maximize: 5.00 x_{1} + 7.50 x_{2} \\
@@ -50,7 +55,7 @@ Let's unpack this. The first line of any Mathematical Optimization Model is goin
 
 After the Objective Function we get to a section referred to as the Constraints. This section typically begins with either a $Subject\ to$ or just $S.t.$ as a shorthand. This section is describing the rules that we need to follow. The first constraint is our limitation on the number of Hamburgers due to the number of buns that we have. We only have 200 buns available which means that $x_{1}$ must be less than or equal to 200. We write that as a constraint in this way: $x_{2} \leq 200$. The next constraint is describing our limit on the number of Burritos we could pack since we only have 300 tortillas. $x_{2}$ represents the number of Burritos we plan to pack and it must be less than 300 therefore we add this constraint: $x_{2} \leq 300$.
 
-The third constraint represents the weight limit of our Food Cart. We can only carry 650 Lbs. so the combination of the number of Hamburgers and the number of Burritos must be less than this. We multiply the number of Hamburgers by the lbs per Hamburger and the number of Burritos by the lbs per Burrito and add them together to get the total weight. That total must be less than the capacity of the Food Cart. This gives us this constraint: $1.0x_{1} + 1.5x_{2} \leq 650$.
+The third constraint represents the weight limit of our Food Truck. We can only carry 650 Lbs. so the combination of the number of Hamburgers and the number of Burritos must be less than this. We multiply the number of Hamburgers by the lbs per Hamburger and the number of Burritos by the lbs per Burrito and add them together to get the total weight. That total must be less than the capacity of the Food Truck. This gives us this constraint: $1.0x_{1} + 1.5x_{2} \leq 650$.
 
 The final line of the model states the number of Hamburgers and Burritos cannot be less than zero. This is implicitly obvious to us as people but a Solver won't have our context so we have to tell it that those numbers cannot be negative. This is where we are brining our added context to the problem.
 
@@ -71,7 +76,7 @@ problem = LpProblem("Food Truck", LpMaximize)
 
 The first argument of the `LpProblem` function is the name of our problem. The second is the type of optimization we want to perform, Maximization or Minimization. In this case we are wanting to maximize revenue so we use the argument value of `LpMaximize`. If we wanted to minimize we could have used the `LpMinimize` value.
 
-Now let's create some decision variables to represent how many burgers and tacos we are going to bring on our food cart. We do this by using the `LpDecision` function.
+Now let's create some decision variables to represent how many burgers and tacos we are going to bring on our food truck. We do this by using the `LpDecision` function.
 
 
 ```python
