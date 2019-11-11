@@ -1,8 +1,4 @@
----
-published: true
-title: Steps for Creating an Optimization Model
-date: 2019-10-27
----
+
 I am on a bit of a quest to bring Mathematical Optimization to the masses, or at least to Software Developers. I often come across problems where people are wanting to find the best plan for their problem but they lack to tools to express the problem. Typically the way this is "solved" is by some domain expert coming up with a laborious heuristic in Excel which involves outrageous amount of copying and pasting. I have seen this is take place in tiny companies all the way up to multi-billion dollar enterprises. What really breaks my heart when I see this is that I know there is a better way, but people are just are not aware of it. This is why I am pushing for more training on Mathematical Optimization at my company and why I am starting a blog series on Mathematical Modeling.
 
 ## The Goal
@@ -35,32 +31,142 @@ In the rest of this post I will walk through a toy problem for the purpose of in
 
 ## The Food Cart Problem
 
-One of the example problems I like to use is that of a Food Cart. I am from Portland, OR USA originally and we had food trucks everywhere. In this example we are running a food truck and we have to decide what items to pack for the day. We sell Hamburgers and Burritos. Hamburgers sell for $5.00 and Burritos sell for $7.50 (they are big Burritos). Each Hamburger requires us to carry 1.0 Lb. of ingredients on the truck and each Burrito requires 1.5 Lbs. (I told you they are big). We have a small Food Cart so we can only carry up to 450 Lbs. of ingredients. We also forgot to go to stock up the day before so we only have 200 Hamburger buns on hand and only 300 tortillas for Burritos. Since we run an awesome Food Cart, we always sell out of everything we bring. The question now becomes, how much Hamburgers do we pack for and how many Burritos so that we maximize our profit?
+One of the example problems I like to use is that of a Food Cart. I am from Portland, OR USA originally and we had food trucks everywhere. In this example we are running a food truck and we have to decide what items to pack for the day. We sell Hamburgers and Burritos. Hamburgers sell for \\$5.00 and Burritos sell for \\$7.50 (they are big Burritos). Each Hamburger requires us to carry 1.0 Lb. of ingredients on the truck and each Burrito requires 1.5 Lbs. (I told you they are big). We have a small Food Cart so we can only carry up to 650 Lbs. of ingredients. We also forgot to go to stock up the day before so we only have 200 Hamburger buns on hand and only 300 tortillas for Burritos. Since we run an awesome Food Cart, we always sell out of everything we bring. The question now becomes, how much Hamburgers do we pack for and how many Burritos so that we maximize our profit?
 
 > **Note:** This example problem is meant to be simple. I am mostly concerned with introducing the vocabulary of Optimization Modeling. Future problems will be more complex.
 
-This problem is a clear example of a Mathematical Optimization Problem. It has a Quantifiable Objective, Maximize Revenue. It has Decisions which we can control: the number of Hamburgers and Burritos we will pack for. Finally it has rules we must follow, the Food Cart can only carry 450 Lbs, we only have 200 Hamburger Buns and we only have 300 tortillas for Burritos. Now, I am going to show you how we formulate this as an Optimization Model and then I will walk through each piece so that it makes sense. For this model I am going to use the variable $x_{1}$ to represent the number of Hamburgers we are going to pack for and $x_{2}$ to represent the number of Burritos.
+This problem is a clear example of a Mathematical Optimization Problem. It has a Quantifiable Objective, Maximize Revenue. It has Decisions which we can control: the number of Hamburgers and Burritos we will pack for. Finally it has rules we must follow, the Food Cart can only carry 650 Lbs, we only have 200 Hamburger Buns and we only have 300 tortillas for Burritos. Now, I am going to show you how we formulate this as an Optimization Model and then I will walk through each piece so that it makes sense. For this model I am going to use the variable $x_{1}$ to represent the number of Hamburgers we are going to pack for and $x_{2}$ to represent the number of Burritos.
 
-$Maximize: 5.00 x_{1} + 7.50 x_{2}$  
-$Subject\ to:$  
-$x_{1} \leq 200$  
-$x_{2} \leq 300$  
-$1.0x_{1} + 1.5x_{2} \leq 450$  
-$x_{1}, x_{2} \geq 0$  
+$$
+Maximize: 5.00 x_{1} + 7.50 x_{2} \\
+Subject\ to: \\
+x_{1} \leq 200 \\
+x_{2} \leq 300 \\
+1.0x_{1} + 1.5x_{2} \leq 650 \\
+x_{1}, x_{2} \geq 0
+$$
 
-Let's unpack this. The first line of any Mathematical Optimization Model is going to be the Objective Function. This is the function which is used to quantify success. It will start with whether we are trying to Maximize the value of the Objective Function or Minimize it. In this case we are trying to Maximize. The formula that you see is the calculation for Revenue. Remember, $x_{1}$ is the number of Hamburgers and $x_{2}$ is the number of Burritos. For every Hamburger we will earn $5.00 and for each Burrito we will earn $7.50. This means to calculate the total revenue we multiply the number of Hamburgers by the revenue per Hamburger and the number of Burritos by the revenue per Burrito: $5.00x_{1} + 7.50x_{2}$.
+Let's unpack this. The first line of any Mathematical Optimization Model is going to be the Objective Function. This is the function which is used to quantify success. It will start with whether we are trying to Maximize the value of the Objective Function or Minimize it. In this case we are trying to Maximize. The formula that you see is the calculation for Revenue. Remember, $x_{1}$ is the number of Hamburgers and $x_{2}$ is the number of Burritos. For every Hamburger we will earn \\$5.00 and for each Burrito we will earn \\$7.50. This means to calculate the total revenue we multiply the number of Hamburgers by the revenue per Hamburger and the number of Burritos by the revenue per Burrito: $5.00x_{1} + 7.50x_{2}$.
 
 After the Objective Function we get to a section referred to as the Constraints. This section typically begins with either a $Subject\ to$ or just $S.t.$ as a shorthand. This section is describing the rules that we need to follow. The first constraint is our limitation on the number of Hamburgers due to the number of buns that we have. We only have 200 buns available which means that $x_{1}$ must be less than or equal to 200. We write that as a constraint in this way: $x_{2} \leq 200$. The next constraint is describing our limit on the number of Burritos we could pack since we only have 300 tortillas. $x_{2}$ represents the number of Burritos we plan to pack and it must be less than 300 therefore we add this constraint: $x_{2} \leq 300$.
 
-The third constraint represents the weight limit of our Food Cart. We can only carry 450 Lbs. so the combination of the number of Hamburgers and the number of Burritos must be less than this. We multiply the number of Hamburgers by the lbs per Hamburger and the number of Burritos by the lbs per Burrito and add them together to get the total weight. That total must be less than the capacity of the Food Cart. This gives us this constraint: $1.0x_{1} + 1.5x_{2} \leq 450$.
+The third constraint represents the weight limit of our Food Cart. We can only carry 650 Lbs. so the combination of the number of Hamburgers and the number of Burritos must be less than this. We multiply the number of Hamburgers by the lbs per Hamburger and the number of Burritos by the lbs per Burrito and add them together to get the total weight. That total must be less than the capacity of the Food Cart. This gives us this constraint: $1.0x_{1} + 1.5x_{2} \leq 650$.
 
 The final line of the model states the number of Hamburgers and Burritos cannot be less than zero. This is implicitly obvious to us as people but a Solver won't have our context so we have to tell it that those numbers cannot be negative. This is where we are brining our added context to the problem.
 
 ## To the Code
 
-Now that we have walked through this small problem, let's see how it translates to code. I am using Python 3.8 and PuLP 1.6.8. First thing we do is import `PuLP` and create a new instance of a `problem` object.
+Now that we have walked through this small problem, let's see how it translates to code. I am using Python 3.8 and PuLP 1.6.8. The first thing we do is import `PuLP` and create a new instance of a `problem` object.
+
 
 ```python
+# Import the PuLP Library
 from pulp import *
+
+# Create an instance of a Problem object to populate
 problem = LpProblem("Food Truck", LpMaximize)
 ```
+
+`PuLP` provides us the tools we will need to create the Optimization Model and then solve it. Out of the box the `PuLP` library comes with some open source solvers so you can build and solve models without having to purchase a solver license.
+
+The first argument of the `LpProblem` function is the name of our problem. The second is the type of optimization we want to perform, Maximization or Minimization. In this case we are wanting to maximize revenue so we use the argument value of `LpMaximize`. If we wanted to minimize we could have used the `LpMinimize` value.
+
+Now let's create some decision variables to represent how many burgers and tacos we are going to bring on our food cart. We do this by using the `LpDecision` function.
+
+
+```python
+x1 = LpVariable("burgers", 0)
+x2 = LpVariable("tacos", 0)
+```
+
+The arguments for `LpVariable` are the name of the variable and the lower bound on the possible value. In some problems, the decision variables can take on negative numbers. In this case, having negative tacos or negative hamburgers does not make any sense so we specifiy that the lower bound it 0.
+
+We now have the Decision Variables for the problems so we can now add the objective function and the constraints. Let's start with adding the Objective Function. Whenever we want to add something to a `problem` we use the `+=` operator. The `PuLP` library will infer whether we are adding a Objective Function or a Constraint based on the right hand side argument. All we need to do for the Objective Function is to provide the equation.
+
+
+```python
+# Add the Objective Function
+problem += 5.00*x1 + 7.50*x2
+```
+
+ The `problem` object now has an Objective Function. Now let's go about adding the constraints. The first constraint is the **Max Burgers** constraint. To do this we use the `+=` operator to add constraints to our `problem` object. We then give the equation for the constraint and the name of the constraint.
+
+
+```python
+# Add Max Burgers constraint
+problem += x1 <= 200, "Max Burgers"
+```
+
+We then need to add the **Max Tacos** constraint.
+
+
+```python
+# Add Max Tacos Constraint
+problem += x2 <= 300, "Max Tacos"
+```
+
+Finally we need the **Max Weight** constraint.
+
+
+```python
+# Add Max Weight Constraint
+problem += 1.0*x1 + 1.5*x2 <= 650, "Max Weight"
+```
+
+We now have a fully populated problem. To solve it, all we need to do is call the `solve()` method.
+
+
+```python
+# Solve the problem
+problem.solve()
+```
+
+
+
+
+    1
+
+
+
+We get a numeric response back but it will will not mean much until we translate it to something we can understand. Fortunately, the `PuLP` library has a dictionary which stores the mapping from the numeric status of the problem to a human readable string. This dictionary is the `LpStatus` dictionary. Let's use this to print out the string representation of the problem status.
+
+
+```python
+# Print the problem status
+print(LpStatus[problem.status])
+```
+
+    Optimal
+    
+
+We should see the string `optimal`. This means that the solver was able to find the optimal answer. In the future we will go over the other possible statuses and what they mean.
+
+Now, let's look at what values for the Decision Variables the Solver chose.
+
+
+```python
+# Loop through each of the Decision Variables in the problem
+for v in problem.variables():
+    # Print the name of the Variable and the Value the Solver chose
+    print(v.name,'=',v.varValue)
+```
+
+    burgers = 200.0
+    tacos = 300.0
+    
+
+Let's see what kind of Revenue we should expect if we follow this plan.
+
+
+```python
+# Get the expected Revenue
+revenue = value(problem.objective)
+
+# Print the expected result
+print(f"${revenue:,.2f}")
+```
+
+    $3,250.00
+    
+
+There you have it. A tiny Mathematical Optimization problem. Granted, this was completely overkill for such a simple problem. My goal was to introduce these concepts and start growing our vocabulary around Optimization. From here we will adjust how we are managing the data and Decision Variables for our problem. This approach will not scale. In the next post we will look at adding the concept of $Sets$ and $Parameters$. This will make it easy for us to create large optimization problems involving hundreds of thousands, if not millions of Decision Variables and Constraints.
