@@ -1,6 +1,6 @@
 ---
 published: true
-title: Anatomy of Optimization Modeling
+title: The Anatomy of an Optimization Model
 date: 2019-11-11
 ---
 
