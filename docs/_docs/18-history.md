@@ -5,11 +5,15 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2019-11-12T15:01:27-05:00
+last_modified_at: 2019-11-12T15:13:17-05:00
 toc: false
 ---
 
 ## Unreleased
+
+### Enhancements
+
+- Support page header (hero) in `archive-taxonomy` layout. [#2320](https://github.com/mmistakes/minimal-mistakes/pull/2320)
 
 ### Bug Fixes
 

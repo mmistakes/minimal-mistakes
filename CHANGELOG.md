@@ -1,5 +1,9 @@
 ## Unreleased
 
+### Enhancements
+
+- Support page header (hero) in `archive-taxonomy` layout. [#2320](https://github.com/mmistakes/minimal-mistakes/pull/2320)
+
 ### Bug Fixes
 
 - Fix typo in `_config.yml`. [#2319](https://github.com/mmistakes/minimal-mistakes/pull/2319)
