@@ -1,3 +1,9 @@
+## Unreleased
+
+### Bug Fixes
+
+- Fix typo in `_config.yml`. [#2319](https://github.com/mmistakes/minimal-mistakes/pull/2319)
+
 ## [4.17.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.17.2)
 
 ### Enhancements

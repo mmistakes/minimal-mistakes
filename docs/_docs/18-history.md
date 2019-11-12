@@ -5,9 +5,15 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2019-11-07T11:52:18-05:00
+last_modified_at: 2019-11-12T15:01:27-05:00
 toc: false
 ---
+
+## Unreleased
+
+### Bug Fixes
+
+- Fix typo in `_config.yml`. [#2319](https://github.com/mmistakes/minimal-mistakes/pull/2319)
 
 ## [4.17.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.17.2)
 
