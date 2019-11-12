@@ -9,3 +9,5 @@ docs:
     children:
       - title: "diary"
         url: /categories/#diary/
+      - title: "algorithm"
+        url: /categories/#algorithm/

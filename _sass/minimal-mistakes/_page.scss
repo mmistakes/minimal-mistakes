@@ -111,6 +111,19 @@ body {
     font-size: 0.75em;
   }
 
+  .notice,
+  .notice--primary,
+  .notice--info,
+  .notice--warning,
+  .notice--success,
+  .notice--danger {
+    p,
+    li,
+    dl {
+      font-size: 0.85em;
+    }
+  }
+
   /* paragraph indents */
   p {
     margin: 0 0 $indent-var;
