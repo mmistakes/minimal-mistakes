@@ -879,7 +879,10 @@ nl: &DEFAULT_NL
   comment_success_msg        : "Bedankt voor uw reactie! Het zal op de site worden weergegeven zodra het is goedgekeurd."
   comment_error_msg          : "Sorry, er is een fout opgetreden bij uw inzending. Zorg ervoor dat alle vereiste velden zijn voltooid en probeer het opnieuw."
   loading_label              : "Laden..."
-  search_label_text          :
+  search_label_text          : "Geef uw zoekterm in..."
+  search_placeholder_text    : "Geef uw zoekterm in..."
+  results_found              : "Resultaat gevonden"
+  back_to_top                : "Terug naar boven"
 nl-BE:
   <<: *DEFAULT_NL
 nl-NL:
