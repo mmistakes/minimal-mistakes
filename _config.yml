@@ -222,7 +222,7 @@ sass:
 
 
 # Outputting
-permalink: /:short_month/:title/
+permalink: /:year/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: America/Chicago
