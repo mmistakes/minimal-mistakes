@@ -20,7 +20,7 @@ title                    : "Tanner Marino"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Tanner Marino"
-description              : "An amazing website."
+description              : "The life of Tanner Marino"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -109,9 +109,9 @@ analytics:
 author:
   name             : "Tanner Marino"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "Learner. Software Developer. Interested in tech: privacy & surveillance."
   location         : "Nebraska"
-  email            :
+  email            : "hey@tannermarino.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
