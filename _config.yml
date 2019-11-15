@@ -119,6 +119,9 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
+    - label: "Linkedin"
+      icon: "fas fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/tannermarino
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
