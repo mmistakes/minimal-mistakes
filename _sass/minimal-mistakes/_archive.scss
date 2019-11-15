@@ -20,6 +20,15 @@
 
 .archive__item {
   position: relative;
+
+  a {
+    position: relative;
+    z-index: 10;
+  }
+
+  a[rel="permalink"] {
+    position: static;
+  }
 }
 
 .archive__subtitle {
@@ -41,7 +50,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
 
-  a::before {
+  a[rel="permalink"]::before {
     content: '';
     position: absolute;
     left: 0;

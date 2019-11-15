@@ -6,7 +6,6 @@ classes: wide
 ---
 
 <br>
-&nbsp;안녕하세요. 저는 최종명입니다. 현재 NCSOFT 에서 취약점 점검과 함께 점검에 필요한 도구들을 개발하고 있으며, 시스템 프로그래밍/운영체제/리버스 엔지니어링 및 취약점 분석에 흥미를 갖고 있습니다. 가톨릭대학교에서 컴퓨터공학을 전공했으며, 연구 그룹 NULL@ROOT 에서 보안 및 개발 관련 연구를 진행하고 있습니다. 
 {: style="color: gray; font-size: 0.8em; margin-left: 1em;"}
 
 <!--
@@ -15,10 +14,16 @@ classes: wide
 
 ## <i class="fas fa-building fa-2x" style="margin-right: 0.1em"></i> *WORK EXPERIENCE*
 
-
 <i class="fas fa-caret-square-right" style="margin-top: 1em"></i>
+**SAP Labs Korea**{: style="margin-left: 1em;"}, Developer
+*Sep. 2019 - Now*{: style="color: gray; font-size: 0.6em; margin-left: 1em;"}
+
+- HANA SQL Optimizer 
+{: style="color: gray; font-size: 0.8em; margin: 1em; "}
+
+<i class="far fa-caret-square-right" style="margin-top: 1em"></i>
 **엔씨소프트**{: style="margin-left: 1em;"}, Security Application Developer
-*Sep. 2016 - Now*{: style="color: gray; font-size: 0.6em; margin-left: 1em;"}
+*Sep. 2016 - Sep. 2019*{: style="color: gray; font-size: 0.6em; margin-left: 1em;"}
 
 - 게임 및 사내 취약점 점검 및 도구 개발
 - 게임 어뷰징 대응

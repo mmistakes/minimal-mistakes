@@ -1,4 +1,4 @@
-{% assign words_per_minute = site.words_per_minute | default: 200 %}
+{% assign words_per_minute = page.words_per_minute | default: site.words_per_minute | default: 200 %}
 
 {% if post.read_time %}
   {% assign words = post.content | strip_html | number_of_words %}
