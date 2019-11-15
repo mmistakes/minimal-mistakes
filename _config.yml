@@ -111,7 +111,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Learner. Software Developer. Interested in tech: privacy & surveillance."
   location         : "Nebraska"
-  email            : "hey@tannermarino.com"
+  email            : #
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
