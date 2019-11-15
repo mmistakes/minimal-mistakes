@@ -120,7 +120,7 @@ author:
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
     - label: "LinkedIn"
-      icon: "fas fa-fw fa-linkedin"
+      icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/tannermarino"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
