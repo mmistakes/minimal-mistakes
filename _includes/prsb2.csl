@@ -155,8 +155,12 @@
     </layout>
   </citation>
   <bibliography second-field-align="flush" et-al-min="11" et-al-use-first="10">
-    <layout>
-      <text variable="citation-number" suffix="."/>
+    <sort>
+      <key macro="issued" sort="descending"/>
+      <key macro="author"/>
+    </sort>
+    <layout prefix="[">
+      <text variable="citation-number" suffix="] "/>
       <text macro="author"/>
       <text macro="issued"/>
       <text macro="title" suffix=". "/>
@@ -187,7 +191,7 @@
         <else>
           <text macro="journal-title"/>
           <group suffix=".">
-            <text variable="volume" font-weight="bold"/>
+            <text variable="volume"/>
             <text variable="page" prefix=", "/>
           </group>
         </else>
