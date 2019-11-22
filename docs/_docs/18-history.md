@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2019-11-12T15:15:13-05:00
+last_modified_at: 2019-11-22T09:11:58-05:00
 toc: false
 ---
 
@@ -13,6 +13,7 @@ toc: false
 
 ### Enhancements
 
+- Add missing Dutch localized UI text strings. [#2321](https://github.com/mmistakes/minimal-mistakes/pull/2321)
 - Support page header (hero) in `archive-taxonomy` layout. [#2320](https://github.com/mmistakes/minimal-mistakes/pull/2320)
 - Add social icon color for Keybase. [#2302](https://github.com/mmistakes/minimal-mistakes/pull/2302)
 

@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+- Add missing Dutch localized UI text strings. [#2321](https://github.com/mmistakes/minimal-mistakes/pull/2321)
 - Support page header (hero) in `archive-taxonomy` layout. [#2320](https://github.com/mmistakes/minimal-mistakes/pull/2320)
 - Add social icon color for Keybase. [#2302](https://github.com/mmistakes/minimal-mistakes/pull/2302)
 
