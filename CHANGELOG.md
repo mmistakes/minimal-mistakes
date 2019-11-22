@@ -8,6 +8,7 @@
 
 ### Bug Fixes
 
+- Fix `seo_description` in `_includes/seo.html`. [#2326](https://github.com/mmistakes/minimal-mistakes/pull/2326)
 - Fix typo in `_config.yml`. [#2319](https://github.com/mmistakes/minimal-mistakes/pull/2319)
 
 ## [4.17.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.17.2)
