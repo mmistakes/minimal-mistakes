@@ -56,6 +56,10 @@
     background-color: mix(#fff, $notice-color, 95%)
   }
 
+	pre code {
+		background-color: inherit;
+	}
+
   ul {
     &:last-child {
       margin-bottom: 0; /* override*/
