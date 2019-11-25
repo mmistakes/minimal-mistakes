@@ -292,3 +292,13 @@ defaults:
       comments: # true
       share: true
       related: true
+
+# Art Direction Hero Images
+
+# Test Collection
+collections:
+  photography:
+    output: true
+    permalink: /:collection/:path/
+
+medium_break: "768px" # Breakpoint

@@ -30,9 +30,47 @@
 
 {% assign image_description = image_description | markdownify | strip_html | strip_newlines | escape_once %}
 
-<div class="page__hero{% if page.header.overlay_color or page.header.overlay_image %}--overlay{% endif %}"
-  style="{% if page.header.overlay_color %}background-color: {{ page.header.overlay_color | default: 'transparent' }};{% endif %} {% if overlay_img_path %}background-image: {% if overlay_filter %}linear-gradient({{ overlay_filter }}, {{ overlay_filter }}), {% endif %}url('{{ overlay_img_path }}');{% endif %}"
->
+<!-- Process the Hero Image -->
+
+{% if page.header.overlay_image_mob %} 
+  {% if page.header.overlay_image_mob
+    contains "://" %} 
+    {% capture overlay_img_mob_path %}{{ page.header.overlay_image }}{% endcapture %} 
+  {% elsif page.header.overlay_image_mob %} 
+    {% capture overlay_img_mob_path %}{{ page.header.overlay_image_mob | relative_url }}{% endcapture %} 
+  {% endif %}
+{% else %}
+  {% capture overlay_img_mob_path %}{{ overlay_img_path }}{% endcapture %} 
+{% endif %}
+  
+<!-- Mobile First Responsive Web Design for Hero -->
+
+<style>
+  /* Kick-in the larger landscape hero only when needed. */
+  @media screen and (min-width: {{ site.medium_break }} ) {
+    .page__hero--overlay {
+      {% if page.header.overlay_color %}
+      background-color: {{ page.header.overlay_color | default: 'transparent' }};
+      {% endif %}
+      {% if overlay_img_path %}
+      background-image: {% if overlay_filter %}linear-gradient({{ overlay_filter }}, {{ overlay_filter }}),
+    {% endif %}url({{ overlay_img_path }}) !important; /* Not sure why need to force this. */
+      {% endif %}
+    }
+  }
+  /* Default to mobile (art direction) version if provided. */
+  .page__hero--overlay {
+  {% if page.header.overlay_color %}
+    background-color: {{ page.header.overlay_color | default: 'transparent' }};
+  {% endif %}
+  {% if overlay_img_mob_path %}
+    background-image: {% if overlay_filter %}linear-gradient({{ overlay_filter }}, {{ overlay_filter }}),
+    {% endif %}url('{{ overlay_img_mob_path }}');
+  {% endif %}
+  }
+</style>
+
+<div class="page__hero{% if page.header.overlay_color or page.header.overlay_image %}--overlay{% endif %}">
   {% if page.header.overlay_color or page.header.overlay_image %}
     <div class="wrapper">
       <h1 id="page-title" class="page__title" itemprop="headline">
