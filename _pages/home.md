@@ -1,13 +1,12 @@
 ---
 layout: splash
 permalink: /
-title: " "
-header:
-  overlay_image: /assets/images/banner.png
 ---
 
 **Atenção Corretor** seja nosso parceiro! Faça o seu cadastro  [<i class="fa fa-file"></i> clicando aqui](https://nortanprojetos.com){: .btn .btn--success}
 {: .notice--danger}
+
+{% include figure image_path="/assets/images/banner.png" alt="nortan banner" %}
 
 > A Nortan é uma empresa colaborativa de prestação de serviços que atua na construção civil. Formada por consultores de alta capacidade profissional, trabalha para viabilizar/regularizar empreendimentos.
 
