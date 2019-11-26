@@ -53,8 +53,8 @@ layout: default
         {% include page__taxonomy.html %}
         {% if page.last_modified_at %}
           <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong>  <time datetime="{{ page.last_modified_at | date: "%d-%m-%Y" }}">
-            {{ page.last_modified_at | date: "%-d de" }}
-            {% assign month = page.last_modified_at | date: '%-m de' %}
+            {{ page.last_modified_at | date: "%-d" }}
+            {% assign month = page.last_modified_at | date: "de %-m de" %}
             {% case month %}
               {% when '1' %}Janeiro
               {% when '2' %}Fevereiro
@@ -73,8 +73,8 @@ layout: default
           </time></p>
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.last_modified_at | date: "%d-%m-%Y" }}"></time>
-            {{ page.date | date: "%-d de" }}
-            {% assign month = page.date | date: '%-m de' %}
+            {{ page.date | date: "%-d" }}
+            {% assign month = page.date | date: "de %-m de" %}
             {% case month %}
               {% when '1' %}Janeiro
               {% when '2' %}Fevereiro
