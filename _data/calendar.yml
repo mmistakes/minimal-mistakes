@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "2. GEV um 18:30 Uhr",
-    "title": "2. GEV um 18:30 Uhr",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=N3ZqdGVnbTlmYjZlYW82ZmZwc2FjY2p2Z3AgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-11-26T18:30:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-11-26T20:00:00+01:00"
-    },
-    "created": "2019-10-25T12:52:14.000Z",
-    "updated": "2019-10-25T12:52:14.563Z"
-  },
-  {
-    "image_path": null,
     "alt": "Personalversammlung Schule und Hort ab 11:30 Uhr geschlossen",
     "title": "Personalversammlung Schule und Hort ab 11:30 Uhr geschlossen",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2019-10-25T12:52:54.000Z",
     "updated": "2019-10-25T12:52:54.971Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Osterferien",
+    "title": "Osterferien",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MHE5YTRxZG0zbWptZzBrdjFqdmxyajZ0N3AgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2020-04-06",
+      "date_time": null
+    },
+    "end": {
+      "date": "2020-04-18",
+      "date_time": null
+    },
+    "created": "2019-08-22T08:03:10.000Z",
+    "updated": "2019-08-22T08:03:10.314Z"
   }
 ]
