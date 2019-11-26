@@ -1,6 +1,7 @@
 ---
 layout: splash
 permalink: /
+title: " "
 header:
   overlay_image: /assets/images/banner.png
 ---
