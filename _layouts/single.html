@@ -51,7 +51,47 @@ layout: default
           <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
         {% endif %}
         {% include page__taxonomy.html %}
-        {% include page__date.html %}
+        {% if page.last_modified_at %}
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong>  <time datetime="{{ page.last_modified_at | date: "%d de %m de %Y" }}">
+            {{ page.last_modified_at | date: "%-d" }}
+            {% assign month = page.last_modified_at | date: '%-m' %}
+            {% case month %}
+              {% when '1' %}Janeiro
+              {% when '2' %}Fevereiro
+              {% when '3' %}Março
+              {% when '4' %}Abril
+              {% when '5' %}Maio
+              {% when '6' %}Junho
+              {% when '7' %}Julho
+              {% when '8' %}Agosto
+              {% when '9' %}Setembro
+              {% when '10' %}Outubro
+              {% when '11' %}Novembro
+              {% when '12' %}Dezembro
+            {% endcase %}
+            {{ page.last_modified_at | date: "%Y" }}
+          </time></p>
+        {% elsif page.date %}
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.last_modified_at | date: "%d de %m de %Y" }}"></time>
+            {{ page.date | date: "%-d" }}
+            {% assign month = page.date | date: '%-m' %}
+            {% case month %}
+              {% when '1' %}Janeiro
+              {% when '2' %}Fevereiro
+              {% when '3' %}Março
+              {% when '4' %}Abril
+              {% when '5' %}Maio
+              {% when '6' %}Junho
+              {% when '7' %}Julho
+              {% when '8' %}Agosto
+              {% when '9' %}Setembro
+              {% when '10' %}Outubro
+              {% when '11' %}Novembro
+              {% when '12' %}Dezembro
+            {% endcase %}
+            {{ page.date | date: "%Y" }}
+          </time></p>
+        {% endif %}
       </footer>
 
       {% if page.share %}{% include social-share.html %}{% endif %}
