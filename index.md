@@ -2,6 +2,10 @@
 layout: splash
 permalink: /
 excerpt: 'Nortan Projetos - Gestão Integrada e Projetos"'
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/banner.png
 ---
 
 **Atenção Corretor** seja nosso parceiro! Faça o seu cadastro  [<i class="fa fa-file"></i> clicando aqui](https://nortanprojetos.com){: .btn .btn--success}
