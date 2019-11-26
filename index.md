@@ -4,7 +4,7 @@ permalink: /
 excerpt: 'Nortan Projetos - Gestão Integrada e Projetos"'
 ---
 
-**Atenção Corretor** seja nosso parceiro! Faça o seu cadastro  [<i class="fa fa-file"></i> clicando aqui](https://nortanprojetos.com){: .btn .btn--success}.
+**Atenção Corretor** seja nosso parceiro! Faça o seu cadastro  [<i class="fa fa-file"></i> clicando aqui](https://nortanprojetos.com){: .btn .btn--success}
 {: .notice--danger}
 
 > A Nortan é uma empresa colaborativa de prestação de serviços que atua na construção civil. Formada por consultores de alta capacidade profissional, trabalha para viabilizar/regularizar empreendimentos.
