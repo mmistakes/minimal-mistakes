@@ -21,12 +21,12 @@ title_separator: "-"
 subtitle: # site tagline that appears below site title in masthead
 name: "Nortan Projetos"
 description: "Gestão Integrada e Projetos."
-url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url: "https://nortanprojetos.com"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title: # overrides the website title displayed in the masthead, use " " for no title
+teaser: #"/assets/images/500x300.png"
+logo: "/assets/images/88x88.png"
+masthead_title: " "
 # breadcrumbs            : false # true, false (default)
 words_per_minute: 200
 comments:
@@ -111,10 +111,10 @@ author:
       url: "https://www.nortanprojetos.com"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://twitter.com/"
+      url: "https://linkedin.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://www.instagram.com/nortanprojetos/"
 
 # Site Footer
 footer:
@@ -245,6 +245,13 @@ compress_html:
 
 # Defaults
 defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+
   # _posts
   - scope:
       path: ""

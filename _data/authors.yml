@@ -1,0 +1,37 @@
+# /_data/authors.yml
+
+Hugo:
+  name        : "Hugo Cunha"
+  bio         : "Diretor Financeiro"
+  avatar      : "/assets/images/bio-photo.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:hugocunha@nortanprojetos.com"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/ahfc/"
+
+Tales:
+  name        : "Tales Gomes"
+  bio         : "Direto Comercial"
+  avatar      : "/assets/images/bio-photo.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:talesgomes@nortanprojetos.com"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/tales-gomes-414188101/"
+
+Jessica:
+  name        : "Jéssica Gonçalves"
+  bio         : "Diretora de Projetos"
+  avatar      : "/assets/images/bio-photo.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:jessicagoncalves@nortanprojetos.com"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/jéssica-gonçalves-8ab62334/"
