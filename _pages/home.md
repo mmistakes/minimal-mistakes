@@ -2,7 +2,7 @@
 layout: splash
 permalink: /
 header:
-  image: /assets/images/banner.png
+  overlay_image: /assets/images/banner.png
 ---
 
 **Atenção Corretor** seja nosso parceiro! Faça o seu cadastro  [<i class="fa fa-file"></i> clicando aqui](https://nortanprojetos.com){: .btn .btn--success}
