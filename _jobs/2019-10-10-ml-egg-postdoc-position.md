@@ -10,7 +10,7 @@ header:
   teaser: "/assets/images/erol-ahmed-399674-unsplash-eggs-500x300.jpg"
 ---
 
-Please apply by **November 10, 2019**
+We have found a candidate for this position and are no longer taking applications.  Please look at our [other open positions](/jobs)
 {: .notice--warning}
 
 The USDA Agricultural Research Service, Center for Medical, Agricultural, and Veterinary Entomology (CMAVE) has an opening for a postdoctoral research associate. The project primarily involves developing volatiles-based mass spectrometry and machine learning technology to dramatically improve animal welfare in the egg industry.
