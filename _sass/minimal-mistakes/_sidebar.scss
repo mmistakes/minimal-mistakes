@@ -166,7 +166,7 @@
 
 .author__name {
   margin: 0;
-  font-family: 'Marcellus', serif;
+  font-family: 'Marcellus', serif !default;
   color: $primary-color;
 
   @include breakpoint($large) {
