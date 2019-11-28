@@ -10,8 +10,8 @@ tags:
 ---
 ![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/whql.png){: .align-center}
 <figure>
-	<a href="assets/images/whql.png">
-  <img src="assets/images/whql.png"></a>
+	<a href="/assets/images/whql.png">
+  <img src="/assets/images/whql.png"></a>
 	<figcaption><a href="http://www.flickr.com/photos/80901381@N04/7758832526/" title="Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr">Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr</a>.</figcaption>
 </figure>
 
