@@ -21,7 +21,7 @@ title_separator: "-"
 subtitle: # site tagline that appears below site title in masthead
 name: "Nortan Projetos"
 description: "Gestão Integrada e Projetos."
-url: "https://nortanprojetos.com"
+url: #"https://nortanprojetos.com"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: #"/assets/images/500x300.png"
