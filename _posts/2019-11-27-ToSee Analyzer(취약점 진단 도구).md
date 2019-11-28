@@ -1,91 +1,36 @@
 ---
-title: "ToSee 제품 개요"
+title: "ToSee Analyzer(취약점 진단 도구)"
 excerpt_separator: "<!--more-->"
 categories:
   - ToSee
 tags:
   - ToSee
-  - 개요
-gallery1:
- - url: /assets/images/koreacenter.gif
-   image_path: /assets/images/koreacenter.gif
-   alt: "코리아센터"
-   title: "코리아센터"
- - url: /assets/images/makeshop.png
-   image_path: /assets/images/makeshop.png
-   alt: "makehsop"
-   title: "makeshop"
- - url: /assets/images/giftm.png
-   image_path: /assets/images/giftm.png
-   alt: "기프트엠"
-   title: "기프트엠"
- - url: /assets/images/enuri.png
-   image_path: /assets/images/enuri.png
-   alt: "에누리"
-   title: "에누리"
- - url: /assets/images/podbbang.png
-   image_path: /assets/images/podbbang.png
-   alt: "팟빵"
-   title: "팟빵"
- - url: /assets/images/filejo.gif
-   image_path: /assets/images/filejo.gif
-   alt: "파일조"
-   title: "파일조"
- - url: /assets/images/naning9.png
-   image_path: /assets/images/naning9.png
-   alt: "난닝구"
-   title: "난닝구"
- - url: /assets/images/mocobling.png
-   image_path: /assets/images/mocobling.png
-   alt: "모코블링"
-   title: "모코블링"
- - url: /assets/images/soim.jpg
-   image_path: /assets/images/soim.jpg
-   alt: "소임"
-   title: "소임"
- - url: /assets/images/jogunshop.gif
-   image_path: /assets/images/jogunshop.gif
-   alt: "조군샵"
-   title: "조군샵"
+  - 취약점진단
 ---
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/tosee.png){: .align-center}
+## 자산에 대한 정보 분석
+  * 운영체제정보 분석 - 운영체제별 버젼, 설치일자, 최근부팅일자,  사용자, 설치폴더, 도메인명, UUID
+  * 하드웨어 정보 분석 - CPU 정보 및 CPU 시리얼넘버, 메인보드 시리얼넘버, 맥어드레스, 메모리
+  * 고유정보를 통한 자산의 관리 - CPU 시리얼, 메인보드시리얼, 맥어드레스, UUID등을 통하여 자산정보 추적관리
+  ![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/analyzer/main.png){: .align-center}
 
 
-## 효율적이면서도 정확한 개인 PC의 **보안취약점 진단 및 관리**
-   * Microsoft 윈도우즈 환경에 최적화된 보안취약점 진단 및 조치기능
-   * Manager 사이트를 통한 PC자산진단 관리.(기업용 버젼)
-   * 네트워크 트래픽 진단을 통한 이상징후 포착기능(트래픽 모니터링 기능)
-   * USB 저장장치 사용내역 확인 가능
-   * Base Filtering Engine 을 이용한 방화벽 관리기능
-   * 자체 개발한 **랜섬웨어로부터의 데이타보호 기능**(MicroSoft WHQL 인증완료)
-   <!-- * Work and Life Balance 관리를 위한 52시간 관리기능(기업용 버젼) -->
-   * 윈도우즈 오류 이벤트 로그 확인기능
+## 취약점 진단
+  * 기본 16가지항목진단 및 커스터마이징을 통하여 고급공유정보 및 추가적인 보안정책진단.
+  * 계정관리 - 사용자 패스워드 및 정책진단
+  * 파일시스템 - 공유폴더 및 파일시스템,  메신져서비스와 불필요한 서비스 진단
+  * 패치관리 - 윈도우즈 HOTFIX 및 서비스팩 진단
+  * 보안관리 - 백신, 방화벽 및 일부 보안정책진단
+  * 취약점 진단결과를 점수로 환산하여 표시
+  * 발견된 취약점에 대해서 즉시 조치 가능한 취약점 조치 기능 제공
+  ![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/analyzer/result.png){: .align-center}
+  ![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/analyzer/result_1.png){: .align-center}
 
-## 시간 및 비용 절감효과
-   * 빠른 속도로 취약점을 진단하고 바로 조치가 가능한 취약점은 버튼 한번으로 해결.
-   * 다수의 PC자산에 대해서도 Manager 사이트를 통해 진단여부 및 진단결과 관리.(기업용 버전)
+## USB 사용 내역 진단
+  * USB 저장장치 최초 연결 및 최근 연결시간 진단
+  * USB 장치 정보 확인
+  ![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/analyzer/usb.png){: .align-center}
 
-## 보안요구사항에 맞춘 진단항목
-   * KISA(인터넷 진흥원)의 ISMS-P 인증을 위한 진단리스트에 최적화된 기능
-   * 기업에서 요구하는 진단 항목에 대해서 커스터마이징이 가능한 설계
-   * Windows7, Windows8, Windows10의 OS에서 버젼별로 최적화된 취약점 진단.
-
-## 안정적인 서비스 지원
-   * 지속적인 업데이트 제공을 통하여 제품 신뢰성 인증.
-   * 사용자를 배려한 인터페이스 설계
-   * EV인증서 및 WHQL 인증을 받은 랜섬웨어진단 기능 제공.
-   * 3년이상 실무에서 사용되어 검증 받은 솔루션
-
-## 주요 고객사
-   * (주)코리아센터
-   * (주)기프트엠
-   * (주)제이엘에스커뮤니케이션
-   * (주)써머스플랫폼, 
-   * (주)엔라인
-   * (주)씨엔케이인사이트그룹
-   * (주)조군
-   * (주)모코블링, 
-   * 남동발전(삼천포 발전본부, 커스터마이징 버젼)
-   외 다수
-
-   {% include gallery id="gallery1" caption="" %}
+## 이벤트로그 분석
+  * System Event Log에 한하여 에러로그 확인
+  * 이벤트코드를 통한 해당 에러에 대한 대책 안내(지속적인 업데이트 예정)
+  ![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/analyzer/event.png){: .align-center}

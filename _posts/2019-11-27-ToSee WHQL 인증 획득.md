@@ -9,11 +9,12 @@ tags:
 
 ---
 ![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/whql.png){: .align-center}
-<figure>
+![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/whql_1.png){: .align-center}
+<!-- <figure>
 	<a href="/assets/images/whql.png">
   <img src="/assets/images/whql.png"></a>
 	<figcaption><a href="http://www.flickr.com/photos/80901381@N04/7758832526/" title="Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr">Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr</a>.</figcaption>
-</figure>
+</figure> -->
 
 ## WHQL(Windows Hardware Quality Labs) 인증이란?
 Microsoft의 Windows 운영체제에서 하드웨어의 드라이버가 기본적인 문제없이 동작한다는 것을 보장하는 인증제도 입니다.

@@ -1,91 +1,37 @@
 ---
-title: "ToSee 제품 개요"
+title: "ToSee Filetrap(랜섬웨어 차단 및 데이터보호)"
 excerpt_separator: "<!--more-->"
 categories:
   - ToSee
 tags:
   - ToSee
-  - 개요
-gallery1:
- - url: /assets/images/koreacenter.gif
-   image_path: /assets/images/koreacenter.gif
-   alt: "코리아센터"
-   title: "코리아센터"
- - url: /assets/images/makeshop.png
-   image_path: /assets/images/makeshop.png
-   alt: "makehsop"
-   title: "makeshop"
- - url: /assets/images/giftm.png
-   image_path: /assets/images/giftm.png
-   alt: "기프트엠"
-   title: "기프트엠"
- - url: /assets/images/enuri.png
-   image_path: /assets/images/enuri.png
-   alt: "에누리"
-   title: "에누리"
- - url: /assets/images/podbbang.png
-   image_path: /assets/images/podbbang.png
-   alt: "팟빵"
-   title: "팟빵"
- - url: /assets/images/filejo.gif
-   image_path: /assets/images/filejo.gif
-   alt: "파일조"
-   title: "파일조"
- - url: /assets/images/naning9.png
-   image_path: /assets/images/naning9.png
-   alt: "난닝구"
-   title: "난닝구"
- - url: /assets/images/mocobling.png
-   image_path: /assets/images/mocobling.png
-   alt: "모코블링"
-   title: "모코블링"
- - url: /assets/images/soim.jpg
-   image_path: /assets/images/soim.jpg
-   alt: "소임"
-   title: "소임"
- - url: /assets/images/jogunshop.gif
-   image_path: /assets/images/jogunshop.gif
-   alt: "조군샵"
-   title: "조군샵"
+  - Filetrap
 ---
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/tosee.png){: .align-center}
+ToSee의 파일트랩(FileTrap)은 지정한 폴더의 데이타를 허가되지 않은 프로세스가 데이타를 변형하려고 하는 경우 이를 차단합니다. 또한 설치시 만들어지는 미끼폴더는 랜섬웨어가 디스크에 접근하여 암호화하려고 할때 이를 차단하고 알림으로써 랜섬웨어의 행위를 차단하여 시스템을 보호합니다.
+
+일반적인 악성코드들도 그렇지만 랜섬웨어도 탐지하여 치료하는데 기존의 안티바이러스 프로그램으로는 많은 한계를 가지고 있습니다.
+
+1차로 방화벽을 사용하여 필요한 트래픽만 허용하고 2차로 안티바이러스 프로그램으로 방어를 하며 3차로 ToSee의 파일트랩을 통해 중요한 데이터를 보호하는 전략이 좀 더 안전한 사용을 보장합니다.
+
+## 미끼폴더
+![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/filetrap/tosee.png){: .align-center}
+설치시 자동으로 램섬웨어가 활동할 경우 가장 먼저 접근할 수 있는 미끼 폴더를 생성합니다.
+
+## ToSee 보호폴더 추가
+  * 에이전트의 PC파일트랩메뉴를 이용
+  * 탐색기에서 보호하고 싶은 폴더를 선택한후 우측클릭
+  ![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/filetrap/보호폴더추가.png){: .align-center}
+  * 시스템이 관리하는 폴더는 보호 폴더로 등록할 수 없다.
 
 
-## 효율적이면서도 정확한 개인 PC의 **보안취약점 진단 및 관리**
-   * Microsoft 윈도우즈 환경에 최적화된 보안취약점 진단 및 조치기능
-   * Manager 사이트를 통한 PC자산진단 관리.(기업용 버젼)
-   * 네트워크 트래픽 진단을 통한 이상징후 포착기능(트래픽 모니터링 기능)
-   * USB 저장장치 사용내역 확인 가능
-   * Base Filtering Engine 을 이용한 방화벽 관리기능
-   * 자체 개발한 **랜섬웨어로부터의 데이타보호 기능**(MicroSoft WHQL 인증완료)
-   <!-- * Work and Life Balance 관리를 위한 52시간 관리기능(기업용 버젼) -->
-   * 윈도우즈 오류 이벤트 로그 확인기능
+## 보호 폴더에 접근하는 어플리케이션
+  * 에이전트의 PC파일트랩메뉴를 이용하여 보호폴더와 허용된 어플리케이션에 대해서 관리가 가능하다.
+  * 사용자의 편의를 위하여 인증서를 가지고 있는 어플리케이션의 경우 자동으로 허용처리를 한다.(예: 안티바이러스 프로그램)
 
-## 시간 및 비용 절감효과
-   * 빠른 속도로 취약점을 진단하고 바로 조치가 가능한 취약점은 버튼 한번으로 해결.
-   * 다수의 PC자산에 대해서도 Manager 사이트를 통해 진단여부 및 진단결과 관리.(기업용 버전)
+## 허가되지 않은 어플리케이션의 접근
+  * 허가되지 않은 어플리케이션이 보호된 폴더에 접근시 관련행위를 차단하고 사용자에게 이를 통보한다.
+  * 사용자는 이를 통하여 해당 어플리케이션을 허용하거나 계속적으로 차단함으로써 데이타를 보호할 수 있다.
+  * 미끼폴더에 접근하는 어플리케이션의 경우에는 데이타를 변경하여 저장하려는 시도를 하는 경우 무조건 차단하고 이상행동을 하는 어플리케이션이 있음을 사용자에게 통보한다.
+  ![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/filetrap/block_1.png){: .align-center}
+  ![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/filetrap/block_2.png){: .align-center}
 
-## 보안요구사항에 맞춘 진단항목
-   * KISA(인터넷 진흥원)의 ISMS-P 인증을 위한 진단리스트에 최적화된 기능
-   * 기업에서 요구하는 진단 항목에 대해서 커스터마이징이 가능한 설계
-   * Windows7, Windows8, Windows10의 OS에서 버젼별로 최적화된 취약점 진단.
-
-## 안정적인 서비스 지원
-   * 지속적인 업데이트 제공을 통하여 제품 신뢰성 인증.
-   * 사용자를 배려한 인터페이스 설계
-   * EV인증서 및 WHQL 인증을 받은 랜섬웨어진단 기능 제공.
-   * 3년이상 실무에서 사용되어 검증 받은 솔루션
-
-## 주요 고객사
-   * (주)코리아센터
-   * (주)기프트엠
-   * (주)제이엘에스커뮤니케이션
-   * (주)써머스플랫폼, 
-   * (주)엔라인
-   * (주)씨엔케이인사이트그룹
-   * (주)조군
-   * (주)모코블링, 
-   * 남동발전(삼천포 발전본부, 커스터마이징 버젼)
-   외 다수
-
-   {% include gallery id="gallery1" caption="" %}

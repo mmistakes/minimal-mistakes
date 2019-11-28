@@ -1,91 +1,40 @@
 ---
-title: "ToSee 제품 개요"
+title: "ToSee Network Monitor(네트워크 진단)"
 excerpt_separator: "<!--more-->"
 categories:
   - ToSee
 tags:
   - ToSee
-  - 개요
-gallery1:
- - url: /assets/images/koreacenter.gif
-   image_path: /assets/images/koreacenter.gif
-   alt: "코리아센터"
-   title: "코리아센터"
- - url: /assets/images/makeshop.png
-   image_path: /assets/images/makeshop.png
-   alt: "makehsop"
-   title: "makeshop"
- - url: /assets/images/giftm.png
-   image_path: /assets/images/giftm.png
-   alt: "기프트엠"
-   title: "기프트엠"
- - url: /assets/images/enuri.png
-   image_path: /assets/images/enuri.png
-   alt: "에누리"
-   title: "에누리"
- - url: /assets/images/podbbang.png
-   image_path: /assets/images/podbbang.png
-   alt: "팟빵"
-   title: "팟빵"
- - url: /assets/images/filejo.gif
-   image_path: /assets/images/filejo.gif
-   alt: "파일조"
-   title: "파일조"
- - url: /assets/images/naning9.png
-   image_path: /assets/images/naning9.png
-   alt: "난닝구"
-   title: "난닝구"
- - url: /assets/images/mocobling.png
-   image_path: /assets/images/mocobling.png
-   alt: "모코블링"
-   title: "모코블링"
- - url: /assets/images/soim.jpg
-   image_path: /assets/images/soim.jpg
-   alt: "소임"
-   title: "소임"
- - url: /assets/images/jogunshop.gif
-   image_path: /assets/images/jogunshop.gif
-   alt: "조군샵"
-   title: "조군샵"
+  - network
 ---
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/tosee.png){: .align-center}
+## 트레이에서 에이전트아이콘을 우클릭한후 에이전트메뉴를 선택한다.
+![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/network/agent_menu.png){: .align-center}
 
+## 에이전트 메뉴에서 PC 네트워크진단을 클릭한다.(좌측버튼)
+![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/network/agent_main.png){: .align-center}
 
-## 효율적이면서도 정확한 개인 PC의 **보안취약점 진단 및 관리**
-   * Microsoft 윈도우즈 환경에 최적화된 보안취약점 진단 및 조치기능
-   * Manager 사이트를 통한 PC자산진단 관리.(기업용 버젼)
-   * 네트워크 트래픽 진단을 통한 이상징후 포착기능(트래픽 모니터링 기능)
-   * USB 저장장치 사용내역 확인 가능
-   * Base Filtering Engine 을 이용한 방화벽 관리기능
-   * 자체 개발한 **랜섬웨어로부터의 데이타보호 기능**(MicroSoft WHQL 인증완료)
-   <!-- * Work and Life Balance 관리를 위한 52시간 관리기능(기업용 버젼) -->
-   * 윈도우즈 오류 이벤트 로그 확인기능
+##  네트워크 모니터가 실행되면 붉은색으로 표시된 곳에 네트워크장치가 제대로 선택이 되었는지 확인한다.(자동으로 활성화되어 있는 랜카드를 선택하도록 되어 있다.)
+![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/network/lancard.png){: .align-center}
 
-## 시간 및 비용 절감효과
-   * 빠른 속도로 취약점을 진단하고 바로 조치가 가능한 취약점은 버튼 한번으로 해결.
-   * 다수의 PC자산에 대해서도 Manager 사이트를 통해 진단여부 및 진단결과 관리.(기업용 버전)
+## 시작버튼을 누르면 다음과 같이 네트워크의 상황이 표시되면서 벡터그래픽으로 네트워크의 상황을 확인할 수 있다.
+![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/network/network_1.png){: .align-center}
 
-## 보안요구사항에 맞춘 진단항목
-   * KISA(인터넷 진흥원)의 ISMS-P 인증을 위한 진단리스트에 최적화된 기능
-   * 기업에서 요구하는 진단 항목에 대해서 커스터마이징이 가능한 설계
-   * Windows7, Windows8, Windows10의 OS에서 버젼별로 최적화된 취약점 진단.
+## 우스의 휠을 이용해서 화면을 확대 또는 축소할 수 있다.
+![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/network/network_2.png){: .align-center}
 
-## 안정적인 서비스 지원
-   * 지속적인 업데이트 제공을 통하여 제품 신뢰성 인증.
-   * 사용자를 배려한 인터페이스 설계
-   * EV인증서 및 WHQL 인증을 받은 랜섬웨어진단 기능 제공.
-   * 3년이상 실무에서 사용되어 검증 받은 솔루션
+## 상단의 패킷아이콘을 클릭하면 그래프에서 패킷형으로 변경되어 전송되는 데이타의 크기와 상황을 수치로 확인할 수 있으며 실제 전송된 패킷데이타를 확인할 수 있다.
+![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/network/packet.png){: .align-center}
 
-## 주요 고객사
-   * (주)코리아센터
-   * (주)기프트엠
-   * (주)제이엘에스커뮤니케이션
-   * (주)써머스플랫폼, 
-   * (주)엔라인
-   * (주)씨엔케이인사이트그룹
-   * (주)조군
-   * (주)모코블링, 
-   * 남동발전(삼천포 발전본부, 커스터마이징 버젼)
-   외 다수
+## 저장을 선택하면 현재까지 캡쳐한 네트워크 데이타를 Binary 데이타로 저장을 하게되고 XML을 선택하면 XML형태로 저장을 하게 된다.
+![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/network/save.png){: .align-center}
 
-   {% include gallery id="gallery1" caption="" %}
+## 그래프의 원형아이콘의 색상은 다음과 같다.
+  * BLUE : 자기자신을 표시한다.
+  * PURPLE : 사성망 IP를 표시한다.
+  * RED : 브로드캐스트/멀티캐스트를 표시한다.
+  * BLACK : 공인IP를 표시한다.
+
+## 해당 원형 아이콘선택후 우클릭을 하면 다음메뉴가 나온다.
+  * 선택노드의 패킷보기
+  * Whois 정보
+  * 프록시 서버 여부 판단.
