@@ -14,7 +14,7 @@ ToSee의 파일트랩(FileTrap)은 지정한 폴더의 데이타를 허가되지
 1차로 방화벽을 사용하여 필요한 트래픽만 허용하고 2차로 안티바이러스 프로그램으로 방어를 하며 3차로 ToSee의 파일트랩을 통해 중요한 데이터를 보호하는 전략이 좀 더 안전한 사용을 보장합니다.
 
 ## 미끼폴더
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/filetrap/tosee.png){: .align-center}
+![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/filetrap/explorer.png){: .align-center}
 설치시 자동으로 램섬웨어가 활동할 경우 가장 먼저 접근할 수 있는 미끼 폴더를 생성합니다.
 
 ## ToSee 보호폴더 추가
