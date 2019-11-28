@@ -166,6 +166,8 @@
 
 .author__name {
   margin: 0;
+  font-family: 'Marcellus', serif;
+  color: $primary-color;
 
   @include breakpoint($large) {
     margin-top: 10px;
