@@ -3,10 +3,7 @@ layout: splash
 permalink: /
 ---
 
-**Atenção Corretor** seja nosso parceiro! Faça o seu cadastro  [<i class="fa fa-file"></i> clicando aqui](https://nortanprojetos.com){: .btn .btn--success}
-{: .notice--danger}
-
-Veja também o material informativo sobre nossa proposta  [<i class="fa fa-file"></i> clicando aqui](/assets/documents/apresentacao-empresa-nortan-rev01.pdf){: .btn .btn--success}
+**Atenção Corretor** seja nosso parceiro! Confira nossa proposta de parceria  [<i class="fa fa-file"></i> clicando aqui](/assets/documents/apresentacao-empresa-nortan-rev01.pdf){: .btn .btn--success}  e faça o seu cadastro  [<i class="fa fa-file"></i> clicando aqui](https://nortanprojetos.com){: .btn .btn--success}
 {: .notice--danger}
 
 {% include figure image_path="/assets/images/banner.png" alt="nortan banner" %}
