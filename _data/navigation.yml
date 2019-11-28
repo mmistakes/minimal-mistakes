@@ -6,3 +6,5 @@ main:
     url: /equipe/
   - title: "Notícias"
     url: /blog/
+  - title: "Contato"
+    url: /contato/
