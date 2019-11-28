@@ -4,6 +4,7 @@ permalink: /
 ---
 
 **Atenção Corretor** seja nosso parceiro! Faça o seu cadastro  [<i class="fa fa-file"></i> clicando aqui](https://nortanprojetos.com){: .btn .btn--success}
+Veja também nosso material informativo sobre nossa proposta  [<i class="fa fa-file"></i> clicando aqui](/assets/documents/apresentacao-empresa-nortan-rev01.pdf){: .btn .btn--success}
 {: .notice--danger}
 
 {% include figure image_path="/assets/images/banner.png" alt="nortan banner" %}
