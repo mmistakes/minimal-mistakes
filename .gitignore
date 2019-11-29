@@ -15,3 +15,6 @@ node_modules
 npm-debug.log*
 vendor/bundle
 .idea
+docs
+.github
+test
