@@ -1,0 +1,63 @@
+---
+sudo: required
+
+language: cpp
+
+# For qemu-powered targets, get the list of supported processors from
+# travis by setting QEMU_CPU=help, then set -mcpu= for the compilers
+# accordingly.
+
+matrix:
+  include:
+    - os: osx
+      env: HOST=aarch64-apple-darwin13
+    - os: osx
+      env: HOST=x86_64-apple-darwin10
+    - os: linux
+      env: HOST=sh4-linux-gnu CONFIGURE_OPTIONS=--disable-shared QEMU_LD_PREFIX=/usr/sh4-linux-gnu
+    - os: linux
+      env: HOST=alpha-linux-gnu CONFIGURE_OPTIONS=--disable-shared QEMU_LD_PREFIX=/usr/alpha-linux-gnu
+    - os: linux
+      env: HOST=m68k-linux-gnu MEVAL='export CC="m68k-linux-gnu-gcc-8 -mcpu=547x" && CXX="m68k-linux-gnu-g++-8 -mcpu=547x"' CONFIGURE_OPTIONS=--disable-shared QEMU_LD_PREFIX=/usr/m68k-linux-gnu QEMU_CPU=cfv4e
+    - os: linux
+      env: HOST=s390x-linux-gnu MEVAL='export CC="s390x-linux-gnu-gcc-8" && CXX="s390x-linux-gnu-g++-8"' CONFIGURE_OPTIONS=--disable-shared QEMU_LD_PREFIX=/usr/s390x-linux-gnu QEMU_CPU=max
+    - os: linux
+      env: HOST=arm32v7-linux-gnu LIBFFI_TEST_OPTIMIZATION="-O0"
+    - os: linux
+      env: HOST=arm32v7-linux-gnu LIBFFI_TEST_OPTIMIZATION="-O2"
+    - os: linux
+      env: HOST=arm32v7-linux-gnu LIBFFI_TEST_OPTIMIZATION="-O2 -fomit-frame-pointer"
+    - os: linux
+      env: HOST=sparc64-linux-gnu
+    - os: linux
+      env: HOST=aarch64-linux-gnu
+    - os: linux
+      env: HOST=powerpc64le-unknown-linux-gnu
+    - os: linux
+      env: HOST=mips64el-linux-gnu
+    - os: linux
+      compiler: gcc
+      env: HOST=i386-pc-linux-gnu MEVAL='export CC="$CC -m32" && CXX="$CXX -m32"'
+    - os: linux
+      compiler: gcc
+    - os: linux
+      compiler: gcc
+      env: CONFIGURE_OPTIONS=--disable-shared
+    - os: linux
+      compiler: clang
+    - os: linux
+      compiler: clang
+      env: CONFIGURE_OPTIONS=--disable-shared
+    - os: linux
+      env: HOST=moxie-elf MEVAL='export PATH=/opt/moxielogic/bin:$PATH && CC=moxie-elf-gcc && CXX=moxie-elf-g++' LDFLAGS=-Tsim.ld RUNTESTFLAGS="--target_board moxie-sim" DEJAGNU="$TRAVIS_BUILD_DIR/.travis/site.exp"
+
+before_install:
+  - if test x"$MEVAL" != x; then eval ${MEVAL}; fi
+
+install:
+  - travis_wait 30 ./.travis/install.sh
+
+script:
+  - if ! test x"$MEVAL" = x; then eval ${MEVAL}; fi
+  - travis_wait 45 sleep infinity &
+  - ./.travis/build.sh

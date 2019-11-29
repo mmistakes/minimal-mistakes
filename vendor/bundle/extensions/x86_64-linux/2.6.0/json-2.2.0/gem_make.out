@@ -1,0 +1,13 @@
+current directory: /home/chris/devcycle.github.io/vendor/bundle/gems/json-2.2.0/ext/json
+/usr/share/rvm/rubies/ruby-2.6.3/bin/ruby -I /usr/share/rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0 -r ./siteconf20191129-16226-i0hwol.rb extconf.rb
+creating Makefile
+
+current directory: /home/chris/devcycle.github.io/vendor/bundle/gems/json-2.2.0/ext/json
+make "DESTDIR=" clean
+
+current directory: /home/chris/devcycle.github.io/vendor/bundle/gems/json-2.2.0/ext/json
+make "DESTDIR="
+make: Nothing to be done for 'all'.
+
+current directory: /home/chris/devcycle.github.io/vendor/bundle/gems/json-2.2.0/ext/json
+make "DESTDIR=" install
