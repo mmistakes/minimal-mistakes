@@ -44,8 +44,6 @@ body {
 
   @include breakpoint($x-large) {
     width: 100%;
-    /*width: calc(100% - #{$right-sidebar-width});
-    padding-right: $right-sidebar-width;*/
   }
 
   .page__inner-wrap {
