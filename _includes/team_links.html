@@ -1,5 +1,5 @@
 <div>
-  <ul class="author__urls social-icons">
+  <ul class="team__urls social-icons">
     {% for link in include.links %}
       {% if link.label and link.url %}
         <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label }}</a></li>

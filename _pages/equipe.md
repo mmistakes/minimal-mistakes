@@ -2,7 +2,7 @@
 title: "Equipe Nortan"
 permalink: /equipe/
 date: 26-11-2019
-feature_row_1:
+feature_row:
   - image_path: /assets/images/bio-photo.jpg
     alt: "Hugo Cunha"
     title: "Hugo Cunha"
@@ -20,7 +20,6 @@ feature_row_1:
     excerpt: "**Diretor de Operações**  
     82 999529699  
     talesgomes@nortanprojetos.com"
-feature_row_2:
   - image_path: /assets/images/bio-photo.jpg
     alt: "Augusto Cunha"
     title: "Augusto Cunha"
@@ -35,6 +34,5 @@ feature_row_2:
     jessicagoncalves@nortanprojetos.com"
 ---
 
-{% include feature_row id="feature_row_1" type="team" %}
-{% include feature_row id="feature_row_2" type="team" %}
+{% include feature_row type="team" %}
 
