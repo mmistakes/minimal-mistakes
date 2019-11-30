@@ -279,10 +279,14 @@
     }
   }
 
+  .archive__item {
+    text-align: center;
+  }
+
   .archive__item-body {
     padding-left: gutter(1 of 12);
     padding-right: gutter(1 of 12);
-    text-align: center;
+    margin-top: -1em;
   }
 
   .archive__item-excerpt {
@@ -299,6 +303,9 @@
   }
 
   .archive__item-teaser {
+    max-height: 200px;
+    max-width: 200px;
+    display: inline-block;
     border-radius: 50%;
     border: 1px solid $border-color;
   }
@@ -314,6 +321,7 @@
   
     li {
       white-space: nowrap;
+      margin-bottom: 0px;
     }
   
     a {
