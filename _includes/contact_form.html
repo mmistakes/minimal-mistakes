@@ -3,27 +3,26 @@
   method="POST"
   enctype="multipart/form-data"
 >
-  <label>
+  <label >
     Nome:
-  <input type="text" name="name">
+  <input type="text" name="name" placeholder="Ex.: Futuro cliente satisfeito>
   </label>
   <label>
     Seu email para contato:
-    <input type="text" name="_replyto">
+    <input type="text" name="_replyto" placeholder="Ex.: cliente@gmail.com>
   </label>
   <label>
     Assunto:
-    <input type="text" name="_subject" value="Digite um assunto aqui..." />
+    <input type="text" name="_subject" placeholder="Ex.: Cotação de projeto" />
   </label>
   <label>
     Mensagem:
-    <textarea name="message"></textarea>
+    <textarea name="message" placeholder="Digite sua mensagem aqui..."></textarea>
   </label>
   <label>
     Envio de arquivo:
-    <label for="files" class="btn">Selecione um arquivo</label>
-    <input id="files" style="visibility:hidden;" type="file" name="upload">
+    <input type="file" name="upload" style="color: #012e40 !important">
   </label>
 
-  <button type="submit">Enviar</button>
+  <button type="submit" style="color: #012e40 !important">Enviar</button>
 </form>
