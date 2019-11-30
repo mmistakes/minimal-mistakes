@@ -311,7 +311,6 @@
     border: 0;
     background: transparent;
     list-style-type: none;
-    z-index: -1;
   
     li {
       white-space: nowrap;
@@ -320,7 +319,7 @@
     a {
       display: block;
       color: inherit;
-      font-size: $type-size-3;
+      font-size: $type-size-8;
       text-decoration: none;
   
       &:hover {
