@@ -256,6 +256,7 @@
   .feature__item-teaser {
     border-radius: 50%;
     border: 1px solid $border-color;
+  }
   
   @include breakpoint($small) {
     float: left;
@@ -280,8 +281,6 @@
     .feature__item-teaser {
       max-height: 200px;
       overflow: hidden;
-      border-radius: 50%;
-      border: 1px solid $border-color;
     }
   }
 
