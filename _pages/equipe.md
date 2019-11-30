@@ -29,5 +29,5 @@ feature_row:
     jessicagoncalves@nortanprojetos.com"
 ---
 
-{% include feature_row id="team" %}
+{% include feature_row type="team" %}
 

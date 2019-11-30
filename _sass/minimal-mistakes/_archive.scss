@@ -279,6 +279,11 @@
     }
   }
 
+  .feature__item--team {
+    max-height: 200px;
+    border-radius: 50%;
+  }
+
   .archive__item-body {
     padding-left: gutter(1 of 12);
     padding-right: gutter(1 of 12);
