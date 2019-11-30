@@ -6,9 +6,16 @@ feature_row:
   - image_path: /assets/images/bio-photo.jpg
     alt: "Hugo Cunha"
     title: "Hugo Cunha"
-    excerpt: "**Diretor Executivo**  
-    82 999164578  
-    hugocunha@nortanprojetos.com"
+    excerpt: "**Diretor Executivo**"
+    links:
+    - label: "82 999164578"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.nortanprojetos.com"
+    - label: "hugocunha@nortanprojetos.com"
+      icon: "fab fa-fw fa-linkedin"
+      url: "mailto:hugocunha@nortanprojetos.coms"
+      
+    
   - image_path: /assets/images/bio-photo.jpg
     alt: "Tales Gomes"
     title: "Tales Gomes"
