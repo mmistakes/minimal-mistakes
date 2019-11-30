@@ -88,5 +88,5 @@
   $threshold: $yiq-contrasted-threshold
 ) {
   background-color: $background-color;
-  color: yiq-contrast-color($background-color, $dark, $light, $threshold);
+  color: yiq-contrast-color($background-color, $dark, $light, $threshold) !important;
 }
