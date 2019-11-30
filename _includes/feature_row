@@ -30,7 +30,7 @@
             </div>
           {% endif %}
 
-          {% if f.nav %}{% include team_nav_list nav=f.nav %}{% endif %}
+          {% if f.links %}{% include team_links links=f.links %}{% endif %}
 
           {% if f.url %}
             <p><a href="{{ f.url | relative_url }}" class="btn {{ f.btn_class }}">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>

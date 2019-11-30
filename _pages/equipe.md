@@ -9,10 +9,10 @@ feature_row:
     excerpt: "**Diretor Executivo**"
     links:
     - label: "82 999164578"
-      icon: "fas fa-fw fa-link"
+      icon: "fab fa-whatsapp"
       url: "https://www.nortanprojetos.com"
     - label: "hugocunha@nortanprojetos.com"
-      icon: "fab fa-fw fa-linkedin"
+      icon: "fal fa-envelope"
       url: "mailto:hugocunha@nortanprojetos.coms"
       
     
