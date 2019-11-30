@@ -10,7 +10,7 @@ feature_row:
     links:
     - label: "82 999164578"
       icon: "fab fa-whatsapp"
-      url: "https://www.nortanprojetos.com"
+      url: "https://api.whatsapp.com/send?phone=5582999164578"
     - label: "hugocunha@nortanprojetos.com"
       icon: "fas fa-envelope"
       url: "mailto:hugocunha@nortanprojetos.com"
@@ -21,7 +21,7 @@ feature_row:
     links:
     - label: "82 999529699"
       icon: "fab fa-whatsapp"
-      url: "https://www.nortanprojetos.com"
+      url: "https://api.whatsapp.com/send?phone=5582999529699"
     - label: "talesgomes@nortanprojetos.com"
       icon: "fas fa-envelope"
       url: "mailto:talesgomes@nortanprojetos.com"
@@ -32,7 +32,7 @@ feature_row:
     links:
     - label: "82 999161729"
       icon: "fab fa-whatsapp"
-      url: "https://www.nortanprojetos.com"
+      url: "https://api.whatsapp.com/send?phone=5582999161729"
     - label: "augustocunha@nortanprojetos.com"
       icon: "fas fa-envelope"
       url: "mailto:augustocunha@nortanprojetos.com"
@@ -43,7 +43,7 @@ feature_row:
     links:
     - label: "82 996257837"
       icon: "fab fa-whatsapp"
-      url: "https://www.nortanprojetos.com"
+      url: "https://api.whatsapp.com/send?phone=5582996257837"
     - label: "jessicagoncalves@nortanprojetos.com"
       icon: "fas fa-envelope"
       url: "mailto:jessicagoncalves@nortanprojetos.com"
