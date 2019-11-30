@@ -13,17 +13,17 @@
   </label>
   <label>
     Assunto:
-    <input type="hidden" name="_subject" value="Digite um assunto aqui..." />
+    <input type="text" name="_subject" value="Digite um assunto aqui..." />
   </label>
   <label>
     Mensagem:
     <textarea name="message"></textarea>
   </label>
-  <input type="submit" value="Send">
   <label>
     Envio de arquivo:
-    <input type="file" name="upload">
+    <label for="files" class="btn">Selecione um arquivo</label>
+    <input id="files" style="visibility:hidden;" type="file" name="upload">
   </label>
 
-  <button type="submit">Send</button>
+  <button type="submit">Enviar</button>
 </form>
