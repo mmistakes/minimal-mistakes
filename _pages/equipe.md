@@ -21,7 +21,7 @@ feature_row:
     excerpt: "**Diretor Comercial**
     82 999161729
     augustocunha@nortanprojetos.com"
-    - image_path: /assets/images/bio.png
+  - image_path: /assets/images/bio.png
     alt: "Jéssica Gonçalves"
     title: "Jéssica Gonçalves"
     excerpt: "**Diretora de Projetos**
