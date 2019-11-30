@@ -252,11 +252,6 @@
   position: relative;
   margin-bottom: 2em;
   font-size: 1.125em;
-
-  .feature__item-teaser {
-    border-radius: 50%;
-    border: 1px solid $border-color;
-  }
   
   @include breakpoint($small) {
     float: left;
@@ -301,6 +296,11 @@
     top: 0;
     right: 0;
     bottom: 0;
+  }
+
+  ..archive__item-teaser {
+    border-radius: 50%;
+    border: 1px solid $border-color;
   }
 }
 
