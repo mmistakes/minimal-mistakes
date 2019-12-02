@@ -40,7 +40,7 @@ einfach eine E-Mail. So können wir uns Zeit für Ihr Anliegen nehmen.
 
 {% include author-profile.html author='Sekretariat' %}{: .align-right}
 
-* N.N.
+* Frau Ulbrich
 * E-Mail: {% include email email='sekretariat@brandwerder.de' %}
 * Telefon: (030) 3670952 - 0
 * Telefax: (030) 3670952 - 10
