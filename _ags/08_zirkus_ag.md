@@ -57,4 +57,6 @@ Die AG wird vom
 [Förderverein](https://www.foerderverein-brandwerder.de/zirkus-ag-der-grundschule-brandwerder)
 unterstützt.
 
-Beginn: 05.10.2018
+<!-- {% include outdated.md %} -->
+
+Beginn: 19.08.2019
