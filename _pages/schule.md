@@ -182,11 +182,11 @@ nachsehen.<br/><br/>
 
 ## Sozialberatung Casablanca
 
-{% include author-profile.html author='Nina Sykora' %}{: .align-right}
+{% include author-profile.html author='Franziska Hanisch' %}{: .align-right}
 
-An unserer Schule wird eine Sozialberatung von Frau Sykora angeboten. Dieses
+An unserer Schule wird eine Sozialberatung von Frau Hanisch angeboten. Dieses
 Angebot kann von allen im Schulwesen beteiligten Personen wahrgenommen werden,
-d.h. Frau Sykora ist als unabhängige, externe Person für alle Schüler\*innen,
+d.h. Frau Hanisch ist als unabhängige, externe Person für alle Schüler\*innen,
 Eltern, Lehrer\*innen und Erzieher\*innen da, um zu vermitteln, zu schlichten
 und zu helfen.
 

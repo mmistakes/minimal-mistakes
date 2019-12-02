@@ -57,13 +57,13 @@ einfach eine E-Mail. So können wir uns Zeit für Ihr Anliegen nehmen.
 ## Sozialberatung
 {: #sozialberatung}
 
-{% include author-profile.html author='Nina Sykora' %}{: .align-right}
+{% include author-profile.html author='Franziska Hanisch' %}{: .align-right}
 
-* Nina Sykora
-* E-Mail: {% include email email='nsykora@g-casablanca.de' %}
+* Franziska Hanisch
+* E-Mail: {% include email email='fhanisch@g-casablanca.de' %}
 * Telefon: (030) 3670952 - 0
 * Büro: (030) 308322711 (Team ambulante Hilfen)
-* Mobil: 0157 73845475
+* Mobil: 0176 34523357
 * Web: [<i class="fa fa-external-link">&nbsp;</i>Casablanca in Spandau](https://www.g-casablanca.de/taetigkeitsfelder/jugendhilfe-und-schule/sozial-und-elternberatung-an-schulen)
 * Sprechzeiten: Di 9:30 - 11:30 Uhr
 
