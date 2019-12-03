@@ -278,3 +278,15 @@ defaults:
       comments: true
       share: true
       related: true
+  - scope:
+      path: ""
+      type: cnaps_about
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      sidebar:
+        nav: "cnaps-about"
