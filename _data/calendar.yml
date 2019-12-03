@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Personalversammlung Schule und Hort ab 11:30 Uhr geschlossen",
-    "title": "Personalversammlung Schule und Hort ab 11:30 Uhr geschlossen",
-    "excerpt": "Bitte bemühen Sie sich heute um eine anderweitige Betreuung Ihres Kindes nach dem Unterricht, der um 11:30 Uhr beendet ist. Vielen Dank!",
-    "url": "https://www.google.com/calendar/event?eid=NXVtNHRkOXZuaWkzYXJrYW5naDRsODdqM2ogaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2019-12-03",
-      "date_time": null
-    },
-    "end": {
-      "date": "2019-12-04",
-      "date_time": null
-    },
-    "created": "2019-11-13T08:00:53.000Z",
-    "updated": "2019-12-01T12:27:15.257Z"
-  },
-  {
-    "image_path": null,
     "alt": "Weihnachtsbasteln ",
     "title": "Weihnachtsbasteln ",
     "excerpt": "Im ganzen Haus wird gebastelt und gewerkelt. Eltern begleiten ihre Kinder durch die Angebote.",
@@ -100,5 +83,22 @@
     },
     "created": "2019-10-25T12:52:54.000Z",
     "updated": "2019-10-25T12:52:54.971Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Osterferien",
+    "title": "Osterferien",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MHE5YTRxZG0zbWptZzBrdjFqdmxyajZ0N3AgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2020-04-06",
+      "date_time": null
+    },
+    "end": {
+      "date": "2020-04-18",
+      "date_time": null
+    },
+    "created": "2019-08-22T08:03:10.000Z",
+    "updated": "2019-08-22T08:03:10.314Z"
   }
 ]
