@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "CNAPS ABOUT"
-    url: /cnaps_about/cnaps-about/
+    url: /about/cnaps-about/
   - title: "CNAPS DETAIL"
     url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "TECH GUIDE"
@@ -14,21 +14,21 @@ main:
     url: /sitemap/
 
 
-cnaps-about:
+about:
   - title: CNAPS ABOUT
-    url: /cnaps_about/cnaps-about/
+    url: /about/cnaps-about/
     children:
       - title: "CNAPS 2.0 방법론이란"
-        url: /cnaps_about/cnaps-about/
+        url: /about/cnaps-about/
       - title: "CNAAP 1.0 vs 2.0"
-        url: /cnaps_about/cnaps-about/
+        url: /about/cnaps-about/
   - title: CNAPS 2.0 통합공정
-    url: /cnaps_about/cnaps-about/
+    url: /about/cnaps-about/
     children:
       - title: "CNAPS 2.0 Agile 공정도"
-        url: /cnaps_about/cnaps-about/
+        url: /about/cnaps-about/
       - title: "CNAPS 2.0 개발 프로세스 공정도"
-        url: /cnaps_about/cnaps-about/
+        url: /about/cnaps-about/
 
 sidebar-sample:
   - title: "Parent Page A"

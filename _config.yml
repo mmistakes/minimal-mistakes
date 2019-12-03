@@ -269,7 +269,7 @@ defaults:
         nav: "sidebar-sample"
   # _pages
   - scope:
-      path: ""
+      path: "_pages"
       type: pages
     values:
       layout: single
@@ -280,7 +280,7 @@ defaults:
       related: true
   - scope:
       path: ""
-      type: cnaps_about
+      type: about
     values:
       layout: single
       author_profile: true
@@ -289,4 +289,4 @@ defaults:
       share: true
       related: true
       sidebar:
-        nav: "cnaps-about"
+        nav: "about"
