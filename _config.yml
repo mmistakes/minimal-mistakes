@@ -282,15 +282,15 @@ defaults:
       comments: true
       share: true
       related: true
+  #_about
   - scope:
       path: ""
       type: about
     values:
       layout: single
-      author_profile: true
       read_time: true
       comments: true
-      share: true
-      related: true
+      share: false
+      related: false
       sidebar:
         nav: "about"

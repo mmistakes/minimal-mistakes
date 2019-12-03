@@ -7,7 +7,7 @@ CNAPS 방법론 소개 페이지 입니다. \\
 
 ## Welcome to CNAPS 
 
-![cnaps소개](../assets/images/cnaps-about-image.png){: .center-image}
+![cnaps소개](https://cnaps-skcc.github.io/assets/images/cnaps-about-image.png){: .center-image}
 
 CNAPS 2.0은 다음과 같이 구성됩니다.
 
