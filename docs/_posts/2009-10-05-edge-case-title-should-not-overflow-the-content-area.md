@@ -13,8 +13,6 @@ tags:
 
 ## Title should not overflow the content area
 
-[View source on GitHub](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/docs/_posts/2009-10-05-edge-case-title-should-not-overflow-the-content-area.md)
-
 A few things to check for:
 
   * Non-breaking text in the title, content, and comments should have no adverse effects on layout or functionality.

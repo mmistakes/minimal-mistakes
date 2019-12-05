@@ -7,8 +7,6 @@ sidebar:
   nav: sidebar-sample
 ---
 
-[View source on GitHub](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/docs/_posts/2012-03-15-layout-sidebar-nav-list.md)
-
 This post has a custom navigation list set in the post's YAML Front Matter.
 
 ```yaml

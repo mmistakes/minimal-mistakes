@@ -7,8 +7,6 @@ tags:
   - notice
 ---
 
-[View source on GitHub](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/docs/_posts/2010-02-05-post-notice.md)
-
 A notice displays information that explains nearby content. Often used to call attention to a particular detail.
 
 When using Kramdown `{: .notice}` can be added after a sentence to assign the `.notice` to the `<p></p>` element. 

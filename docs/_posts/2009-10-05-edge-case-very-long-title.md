@@ -11,6 +11,4 @@ tags:
   - title
 ---
 
-[View source on GitHub](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/docs/_posts/2009-10-05-edge-case-very-long-title.md)
-
 Check for long titles and how they might break a template.

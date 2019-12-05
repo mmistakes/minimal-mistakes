@@ -6,8 +6,6 @@ categories:
 last_modified_at: 2018-02-19T08:06:00-05:00
 ---
 
-[View source on GitHub](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/docs/_posts/2017-11-28-post-exclude-search.md)
-
 This post should not appear in the search index because it has the following YAML Front Matter:
 
 ```yaml

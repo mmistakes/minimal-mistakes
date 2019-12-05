@@ -17,8 +17,6 @@ tags:
 last_modified_at: 2017-10-26T15:12:19-04:00
 ---
 
-[View source on GitHub](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/docs/_posts/2010-08-05-post-header-overlay-image-og-override.md)
-
 This post has a header image with an OpenGraph override.
 
 ```yaml

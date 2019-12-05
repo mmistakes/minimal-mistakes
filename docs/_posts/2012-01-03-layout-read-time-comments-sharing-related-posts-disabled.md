@@ -14,8 +14,6 @@ tags:
   - layout
 ---
 
-[View source on GitHub](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/docs/_posts/2012-01-03-layout-read-time-comments-sharing-related-posts-disabled.md)
-
 This post has reading time, comments, social sharing links, and related posts disabled.
 
 Reading time, comments, social sharing and related post links should not appear.

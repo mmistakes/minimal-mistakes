@@ -16,8 +16,6 @@ tags:
 last_modified_at: 2018-03-20T16:00:52-04:00
 ---
 
-[View source on GitHub](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/docs/_posts/2012-03-15-layout-header-overlay-image.md)
-
 This post should display a **header with an overlay image**, if the theme supports it.
 
 Non-square images can provide some unique styling issues.

@@ -42,6 +42,9 @@ layout: default
             </nav>
           </aside>
         {% endif %}
+        {% if site.show_edit_on_github_link %}
+        <p><a href="{% github_edit_link %}">{{ site.edit_on_github_link_text }}</a></p>
+        {% endif %}
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>

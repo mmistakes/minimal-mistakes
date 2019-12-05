@@ -46,6 +46,4 @@ tags:
   - YouTube
 ---
 
-[View source on GitHub](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/docs/_posts/2009-06-01-edge-case-many-tags.md)
-
 This post has many tags.

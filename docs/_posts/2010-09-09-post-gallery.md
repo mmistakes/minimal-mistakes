@@ -72,8 +72,6 @@ gallery3:
     alt: "placeholder image 4"
 ---
 
-[View source on GitHub](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/docs/_posts/2010-09-09-post-gallery.md)
-
 These are gallery tests for image wrapped in `<figure>` elements.
 
 To place a gallery add the necessary YAML Front Matter:

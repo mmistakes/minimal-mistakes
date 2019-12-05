@@ -12,8 +12,6 @@ tags:
   - layout
 ---
 
-[View source on GitHub](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/docs/_posts/2012-03-15-layout-header-image-external.md)
-
 This post should display a **header image**, if the theme supports it.
 
 Featured image is an external asset and should load.

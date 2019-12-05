@@ -13,8 +13,6 @@ tags:
 toc: true
 ---
 
-[View source on GitHub](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/docs/_posts/2013-01-11-markup-html-tags-and-formatting.md)
-
 A variety of common markup showing how the theme styles them.
 
 ## Header two

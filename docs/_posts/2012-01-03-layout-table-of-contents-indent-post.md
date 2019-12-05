@@ -5,8 +5,6 @@ tags:
 toc: true
 ---
 
-[View source on GitHub](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/docs/_posts/2012-01-03-layout-table-of-contents-indent-post.md)
-
 Tests table of contents with multiple levels to verify indentation is readible.
 
 # Enim laboris id ea elit elit deserunt
