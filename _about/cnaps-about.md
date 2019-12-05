@@ -1,6 +1,7 @@
 ---
 title: About CNAPS
 permalink: /about/cnaps-about/
+classes: wide
 ---
 CNAPS 방법론 소개 페이지 입니다. \\
 이 곳에서 CNAPS 방법론을 이해하고 프로젝트 적용을 위한 검토를 할 수 있습니다.
