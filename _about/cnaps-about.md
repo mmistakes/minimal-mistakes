@@ -1,5 +1,5 @@
 ---
-title: About CNAPS
+title: CNAPS ABOUT
 permalink: /about/cnaps-about/
 ---
 CNAPS 방법론 소개 페이지 입니다. \\
