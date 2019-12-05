@@ -1,6 +1,6 @@
 ---
 title: CNAPS 1.0 vs CNAPS 2.0
-permalink: /about/cnaps-about/
+permalink: /about/cnaps1-cnaps2/
 ---
 
 ## CNAPS 1.0 vs CNAPS 2.0
@@ -11,4 +11,4 @@ permalink: /about/cnaps-about/
 
 ### CNAPS 공정도
 
-![cnaps공정도]](https://cnaps-skcc.github.io/assets/images/cnaps공정도.png)
+![cnaps공정도](https://cnaps-skcc.github.io/assets/images/cnaps공정도.png)
