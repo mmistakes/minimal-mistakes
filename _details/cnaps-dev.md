@@ -1,5 +1,5 @@
 ---
-title: 03. CNAPS-DEV
+title: CNAPS-DEV
 permalink: /details/cnaps-dev/
 ---
 

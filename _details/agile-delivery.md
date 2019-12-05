@@ -1,5 +1,5 @@
 ---
-title: 02. Agile Delivery
+title: Agile Delivery
 permalink: /details/agile-delivery/
 ---
 

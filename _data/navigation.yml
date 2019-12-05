@@ -33,15 +33,15 @@ about:
 details:
   - title: CNAPS Detail
     url: /details/cnaps-detail/
-  - title: 01. Design Thinking
+  - title: Design Thinking
     url: /details/design-thinking/
     children:
       - title: "Design Thinking 공정"
         url: /details/design-thinking-process/
-  - title: 02. Agile Delivery
+  - title: Agile Delivery
     url: /details/agile-delivery/
     children:
       - title: "Agile Delivery 공정"
         url: /details/agile-delivery-process/
-  - title: 03. CNAPS-DEV
+  - title: CNAPS-DEV
     url: /details/cnaps-dev/

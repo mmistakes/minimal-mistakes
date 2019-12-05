@@ -1,5 +1,5 @@
 ---
-title: 01. Design Thinking
+title: Design Thinking
 permalink: /details/design-thinking/
 ---
 
