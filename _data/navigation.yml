@@ -20,7 +20,7 @@ about:
     children:
       - title: "CNAPS 2.0 방법론이란"
         url: /about/cnaps2/
-      - title: "CNAAP 1.0 vs 2.0"
+      - title: "CNAPS 1.0 vs 2.0"
         url: /about/cnaps1-cnaps2/
   - title: CNAPS 2.0 통합공정
     url: /about/cnaps-integ/
@@ -30,7 +30,7 @@ about:
       - title: "CNAPS 2.0 개발 프로세스 공정도"
         url: /about/cnaps-integ-dev/
 # CNAPS DETAILS link
-detail:
+details:
   - title: CNAPS Detail
     url: /details/cnaps-detail/
   - title: 01. Design Thinking

@@ -9,6 +9,6 @@ permalink: /details/design-thinking/
 
 사전 영업단계의 DT기술을 활용한 서비스 개발과, Scope이 명확하지 않은 프로젝트에 개별 적용 가능합니다.
 
-![design-thinking1](https://cnaps-skcc.github.io/assets/images/design-thinking1.png){: .center-image}
+![design-thinking1](https://cnaps-skcc.github.io/assets/images/design-thinking1.png){: .align-center}
 
-![design-thinking2](https://cnaps-skcc.github.io/assets/images/design-thinking2.png){: .center-image}
+![design-thinking2](https://cnaps-skcc.github.io/assets/images/design-thinking2.png){: .align-center}
