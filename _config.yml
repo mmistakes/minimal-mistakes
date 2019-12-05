@@ -255,6 +255,9 @@ collections:
   about:
     output: true
     permalink: /:collection/:path/
+  details:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -269,8 +272,6 @@ defaults:
       comments: true
       share: true
       related: true
-      sidebar:
-        nav: "sidebar-sample"
   # _pages
   - scope:
       path: "_pages"
@@ -289,8 +290,21 @@ defaults:
     values:
       layout: single
       read_time: true
-      comments: true
+      comments: false
       share: false
       related: false
       sidebar:
         nav: "about"
+
+  #_details
+  - scope:
+      path: ""
+      type: details
+    values:
+      layout: single
+      read_time: true
+      comments: true
+      share: false
+      related: false
+      sidebar:
+        nav: "details"

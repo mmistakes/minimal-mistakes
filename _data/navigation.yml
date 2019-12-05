@@ -2,8 +2,8 @@
 main:
   - title: "CNAPS ABOUT"
     url: /about/cnaps-about/
-  - title: "CNAPS DETAIL"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
+  - title: "CNAPS DETAILS"
+    url: /details/cnaps-detail/
   - title: "TECH GUIDE"
     url: /year-archive/
   - title: "LECTURE"
@@ -13,61 +13,35 @@ main:
   - title: "FOLLOW"
     url: /sitemap/
 
-
+# CNAPS ABOUT link
 about:
   - title: CNAPS ABOUT
     url: /about/cnaps-about/
     children:
       - title: "CNAPS 2.0 방법론이란"
-        url: /about/cnaps-about/
+        url: /about/cnaps2/
       - title: "CNAAP 1.0 vs 2.0"
-        url: /about/cnaps-about/
+        url: /about/cnaps1-cnaps2/
   - title: CNAPS 2.0 통합공정
-    url: /about/cnaps-about/
+    url: /about/cnaps-integ/
     children:
       - title: "CNAPS 2.0 Agile 공정도"
-        url: /about/cnaps-about/
+        url: /about/cnaps-integ-agile/
       - title: "CNAPS 2.0 개발 프로세스 공정도"
-        url: /about/cnaps-about/
-
-sidebar-sample:
-  - title: "Parent Page A"
+        url: /about/cnaps-integ-dev/
+# CNAPS DETAILS link
+detail:
+  - title: CNAPS Detail
+    url: /details/cnaps-detail/
+  - title: 01. Design Thinking
+    url: /details/design-thinking/
     children:
-      - title: "Child Page A1"
-        url: /
-      - title: "Child Page A2"
-        url: /
-      - title: "Child Page A3"
-        url: /
-      - title: "Child Page A4"
-        url: /
-  - title: "Parent Page B"
+      - title: "Design Thinking 공정"
+        url: /details/design-thinking-process/
+  - title: 02. Agile Delivery
+    url: /details/agile-delivery/
     children:
-      - title: "Child Page B1"
-        url: /
-      - title: "Child Page B2"
-        url: /
-      - title: "Child Page B3"
-        url: /
-      - title: "Child Page B4"
-        url: /
-      - title: "Child Page B5"
-        url: /
-  - title: "Parent Page C"
-    children:
-      - title: "Child Page C1"
-        url: /
-      - title: "Child Page C2"
-        url: /
-      - title: "Child Page C3"
-        url: /
-      - title: "Child Page C4"
-        url: /
-      - title: "Child Page C5"
-        url: /
-  - title: "Parent Page D"
-    children:
-      - title: "Child Page D1"
-        url: /
-      - title: "Child Page D2"
-        url: /
+      - title: "Agile Delivery 공정"
+        url: /details/agile-delivery-process/
+  - title: 03. CNAPS-DEV
+    url: /details/cnaps-dev/
