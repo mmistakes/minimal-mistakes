@@ -5,7 +5,7 @@ main:
   - title: "CNAPS DETAILS"
     url: /details/cnaps-detail/
   - title: "TECH GUIDE"
-    url: /year-archive/
+    url: /categories/
   - title: "LECTURE"
     url: /collection-archive/
   - title: "HELP DESK"
