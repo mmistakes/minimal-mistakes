@@ -1,0 +1,13 @@
+# /_data/authors.yml
+
+Juyoung Lee:
+  name: Juyoung Lee
+  bio: "Hello"
+  avatar: "/assets/profiles/juyoung-profile.png"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "dongryhihi@kakao.com"
+    - label: "Github"
+      icon: "fas fa-fw fa-github"
+      url: "https://github.com/Juyounglee95"
