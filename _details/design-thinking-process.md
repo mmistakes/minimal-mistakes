@@ -1,6 +1,7 @@
 ---
 title: Design Thinking 공정
 permalink: /details/design-thinking-process/
+author : CNAPS
 toc: true
 toc_sticky: true
 toc_label: "Process List"

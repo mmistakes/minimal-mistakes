@@ -1,6 +1,7 @@
 ---
 title: Agile Delivery
 permalink: /details/agile-delivery/
+author : CNAPS
 ---
 
 ## Agile Delivery : 반복/점진적인 제품 개발

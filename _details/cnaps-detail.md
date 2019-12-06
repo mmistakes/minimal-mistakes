@@ -1,6 +1,7 @@
 ---
 title: CNAPS 2.0 세부 공정
 permalink: /details/cnaps-detail/
+author : CNAPS
 ---
 
 ## CNAPS 2.0 세부 공정

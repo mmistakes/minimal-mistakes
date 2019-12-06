@@ -1,6 +1,7 @@
 ---
 title: CNAPS 2.0 통합공정
 permalink: /about/cnaps-integ/
+author : CNAPS
 ---
 
 ## CNAPS 2.0 통합공정

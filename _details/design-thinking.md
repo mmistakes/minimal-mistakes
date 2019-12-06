@@ -1,6 +1,7 @@
 ---
 title: Design Thinking
 permalink: /details/design-thinking/
+author : CNAPS
 ---
 
 ## Design Thinking: 사용자 중심의 빠른 제품/서비스 컨셉 개발
