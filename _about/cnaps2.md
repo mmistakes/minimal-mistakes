@@ -1,7 +1,6 @@
 ---
 title: CNAPS 2.0 방법론이란
 permalink: /about/cnaps2/
-author : CNAPS
 ---
 
 ## CNAPS 2.0 방법론이란

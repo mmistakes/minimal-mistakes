@@ -1,7 +1,6 @@
 ---
 title: CNAPS 2.0 개발 프로세스 공정도
 permalink: /about/cnaps-integ-dev/
-author : CNAPS
 ---
 
 ## CNAPS 2.0 개발 프로세스 공정도

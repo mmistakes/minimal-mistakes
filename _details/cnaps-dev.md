@@ -1,7 +1,6 @@
 ---
 title: CNAPS-DEV
 permalink: /details/cnaps-dev/
-author : CNAPS
 ---
 
 ## CNAPS-DEV : 독립적인 Microservice 개발

@@ -1,7 +1,6 @@
 ---
 title: Agile Delivery 공정
 permalink: /details/agile-delivery-process/
-author : CNAPS
 toc: true
 toc_sticky: true
 toc_label: "Process List"

@@ -1,7 +1,6 @@
 ---
 title : CNAPS 2.0 Agile 공정도
 permalink: /about/cnaps-integ-agile/
-author : CNAPS
 ---
 
 ## CNAPS 2.0 Agile 공정도

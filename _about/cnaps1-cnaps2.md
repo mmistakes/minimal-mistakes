@@ -1,7 +1,6 @@
 ---
 title: CNAPS 1.0 vs CNAPS 2.0
 permalink: /about/cnaps1-cnaps2/
-author : CNAPS
 ---
 
 ## CNAPS 1.0 vs CNAPS 2.0
