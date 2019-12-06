@@ -290,7 +290,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-      author : site.author
       read_time: true
       comments: false
       share: false
