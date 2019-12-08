@@ -22,7 +22,7 @@ Many programs have no security restrictions (Secret, ITAR, etc).
 # Ways to Work
 For a small business, there are two ways to work with DARPA. The first is to work on a program directly, and the second is to apply for Small Business Innovation Research (SBIR) or Small Business Technology Transfer (STTR) funding related to a DARPA program.
 
-## Proposing for a Program
+## Way 1: Proposing for a Program
 When PMs are ready to solicit proposals for their project, they will release a Broad Agency Announcement (BAA) which introduces the program, its objectives, and its TAs.
 
 This is followed by a Proposers Day, where the PM gives a presentation on the program and takes questions from proposers. Potential proposers may also take the time to meet with each other and develop teams and strategies for making proposals.
@@ -33,7 +33,7 @@ These proposals are typically due several months after the original BAA.
 
 To learn about upcoming Proposers Day events and BAAs, consult [DARPA's opportunities](https://beta.sam.gov/search?keywords=&sort=-modifiedDate&index=&is_active=true&page=1&organization_id=300000412&date_filter_index=0&inactive_filter_values=false) on the SAM.gov website.
 
-## Applying for SBIR/STTR funding
+## Way 2: Applying for SBIR/STTR funding
 Each program sets aside a portion of its funding for SBIR/STTR grants. SBIRs are targeted towards helping small businesses develop new technology and then transition it to commercial applications. STTRs are targeted towards transitioning institutional research to commercialization through small businesses. Therefore STTRs typically include partnership with a research institution.
 
 DARPA: [How to Participate in DARPA's SBIR and STTR Programs](https://www.darpa.mil/work-with-us/for-small-businesses/participate-sbir-sttr-program)
