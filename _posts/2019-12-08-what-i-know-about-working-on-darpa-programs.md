@@ -1,5 +1,7 @@
 ---
 title: "What I Know About Working on DARPA Programs"
+toc: true
+toc_label: "Table of Contents"
 categories:
   - Research
 ---
