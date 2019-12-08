@@ -53,6 +53,13 @@ SBIR/STTR projects can also get regular meeting time with the DARPA Program Mang
 
 SBIR/STTR proposals are expected to result in commercial availability of technology. If you can point to increased sales or business opportunities for your company as a result of the work, it will make your proposal stronger. Letters of support from potential customers are a good way to establish this -- they should describe why they would want to buy your innovation.
 
+### Partnering
+Partnering is not required for a proposal. In my former company, we had 2 SBIRs that received Phase 2 funding. Each had outside contributors, but in different proportions.
+
+We had a successful Phase 2 SBIR grant where we partnered with a manufacturer of special motors for robots. The SBIR topic was about building tools that made it easier to design robots for new tasks, which would result in increased sales for the robotic motor company and potential applications for the military. This helped make the proposal strong. It was approximately at 50% / 50% split between that company and us, and we were the lead of the project.
+
+We also had a successul Phase 2 SBIR where we partnered with a professor from the university to bring in advanced mathematical methods for analysis, and we did all of the implementation work. The result was innovative improvements to our product that made it more attractive to commercial clients. The professor's work was approximately 10% of the funding of the project.
+
 ### Timing
 DARPA participates in three SBIR announcements and one STTR announcement per year.
 
