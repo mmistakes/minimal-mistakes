@@ -8,7 +8,7 @@ categories:
 
 Having worked on a few [DARPA](https://www.darpa.mil/) programs, I thought I would share what I know about how to apply to work on one.
 
-# Structure and Programs
+# DARPA Structure and Programs
 DARPA has [6 Program Offices](https://www.darpa.mil/about-us/offices), each with a different specialty.
 
 Each office has Program Managers who create and execute programs. 
@@ -47,9 +47,11 @@ SBIR work has a lifecycle:
 
 Because the funding is set aside from DARPA programs, typically there are SBIR/STTR Opportunities related to current DARPA work. Proposals are made within these areas and topics.
 
-SBIR/STTR work is not part of the DARPA Program itself. However, SBIR/STTR contributors are typically invited to Principal Investigator (PI) meetings of the project, which are usually held twice a year or more frequently. These provide a chance to keep up with the work on the program and find new partnerships.
+Your SBIR/STTR work is **not** a fundamental part of the DARPA Program itself. However, SBIR/STTR contributors are typically invited to Principal Investigator (PI) meetings of the project, which are usually held twice a year or more frequently. These provide a chance to keep up with the work on the program and find new partnerships.
 
 SBIR/STTR projects can also get regular meeting time with the DARPA Program Manger and other members of the leadership team, particularly if the topic is of strong interest to them. This can be valuable in identifying military customers and other related opportunities, and is a great way to maximize the value of the SBIR/STTR experience.
+
+SBIR/STTR proposals are expected to result in commercial availability of technology. If you can point to increased sales or business opportunities for your company as a result of the work, it will make your proposal stronger. Letters of support from potential customers are a good way to establish this -- they should describe why they would want to buy your innovation.
 
 ### Timing
 DARPA participates in three SBIR announcements and one STTR announcement per year.
