@@ -351,13 +351,13 @@ ex) User Entity : findById(id)에서 해당 User가 없는 경우 Throw Exceptio
     **: User user = userRepository.findById(id).orElseThrow(()->new UserNotFoundException("User not found"));**
     
 >Exception 처리 Sample Github 주소: 
-https://github.com/Juyounglee95/exception-sample.git  
+<https://github.com/Juyounglee95/exception-sample.git>
 
 >Exception 처리 가이드 참고 자료:
-https://www.mkyong.com/spring-boot/spring-rest-error-handling-example/
-https://spring.io/blog/2013/11/01/exception-handling-in-spring-mvc
-https://github.com/paulc4/mvc-exceptions.git
+<https://www.mkyong.com/spring-boot/spring-rest-error-handling-example/>
+<https://spring.io/blog/2013/11/01/exception-handling-in-spring-mvc>
+<https://github.com/paulc4/mvc-exceptions.git>
   
 >Logging 처리:
-https://www.sangkon.com/hands-on-springboot-logging/
-https://meetup.toast.com/posts/149
+<https://www.sangkon.com/hands-on-springboot-logging/>
+<https://meetup.toast.com/posts/149>
