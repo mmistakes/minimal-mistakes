@@ -124,16 +124,23 @@ Spring Security 적용시 필수 구현:
 
 #### 3. Security Config 상세 설명
 
-1. @EnableWebSecurity
+##### 1. @EnableWebSecurity
+
    - @Configuration 클래스에 @EnableWebSecurity 어노테이션을 추가하여 Spring Security 설정할 클래스라고 정의
    - 설정은 WebSebSecurityConfigurerAdapter 클래스를 상속받아 메서드를 구현하는 것이 일반적인 방법
    - Web 보안 활성화
-2. WebSecurityConfigurerAdapter 클래스
+
+##### 2. WebSecurityConfigurerAdapter 클래스
+
    - WebSecurityConfigurer 인스턴스를 편리하게 생성하기 위한 클래스
-3. passwordEncoder()
+
+##### 3. passwordEncoder()
+
    - BCryptPasswordEncoder: Spring Security에서 제공하는 비밀번호 암호화 객체
    - Service에서 비밀번호를 암호화할 수 있도록 Bean으로 등록
-4. configure() 메소드를 overriding 해 Security 설정
+
+##### 4. configure() 메소드를 overriding 해 Security 설정
+
    - configure(WebSecurity web)
      - WebSecurity는 FilterChainProxy를 생성하는 필터
      - web.ignoring().antMatchers("/css/**", "/js/**", "/img/**", "/lib/**");
@@ -188,6 +195,6 @@ Spring Security 적용시 필수 구현:
 <!--링크 참조 기본 -->
 
 >구현 참고 자료:  
-[Spring Boot Security 활용 Login, Sign up 기본 예제](https://victorydntmd.tistory.com/328)
-[Spring Boot Security 활용 User Custom, Role Custom 예제](https://xmfpes.github.io/spring/spring-security/)
-[Spring Boot Security CSRF 예제 - 13.4.3 Include the CSRF Token 참고](https://docs.spring.io/spring-security/site/docs/3.2.0.CI-SNAPSHOT/reference/html/csrf.html)
+[1. Spring Boot Security 활용 Login, Sign up 기본 예제](https://victorydntmd.tistory.com/328)  
+[2. Spring Boot Security 활용 User Custom, Role Custom 예제](https://xmfpes.github.io/spring/spring-security/)  
+[3. Spring Boot Security CSRF 예제 - 13.4.3 Include the CSRF Token 참고](https://docs.spring.io/spring-security/site/docs/3.2.0.CI-SNAPSHOT/reference/html/csrf.html)
