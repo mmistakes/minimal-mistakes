@@ -81,7 +81,7 @@ ex) User Entity : findById(id)에서 해당 User가 없는 경우 Throw Exceptio
 
 샘플에 작성된 코드 상세 설명입니다.
 
-1. Error Detail
+### 1. Error Detail
 
    ```java
     package com.skcc.demo.exceptionsample.context.exceptionhandle.apierror;
@@ -132,7 +132,7 @@ ex) User Entity : findById(id)에서 해당 User가 없는 경우 Throw Exceptio
     - Error Code는 포함 시키지 않았는데, Error Code 표준을 정한 경우 포함하는 것이 좋음
     {: .notice--danger}
 
-2. Custom Exception Handler
+### 2. Custom Exception Handler
 
    ```java
     package com.skcc.demo.exceptionsample.context.exceptionhandle;
@@ -165,7 +165,7 @@ ex) User Entity : findById(id)에서 해당 User가 없는 경우 Throw Exceptio
     - 이외에 각 Entity 마다 Exception을 정의해 사용할 수 있음.
     {: .notice--danger}
 
-3. UserNotFoundException.class
+### 3. UserNotFoundException.class
 
     ```java
     package com.skcc.demo.exceptionsample.context.exceptionhandle;
@@ -179,7 +179,7 @@ ex) User Entity : findById(id)에서 해당 User가 없는 경우 Throw Exceptio
     }
     ```
 
-4. GlobalExceptionHandler.class
+### 4. GlobalExceptionHandler.class
    ```java
     package com.skcc.demo.exceptionsample.context.exceptionhandle;
     import java.nio.file.AccessDeniedException;
@@ -285,7 +285,7 @@ ex) User Entity : findById(id)에서 해당 User가 없는 경우 Throw Exceptio
     → src/main/resources/templates/error 밑에 html 파일을 작성해 Error Page를 수정할 수 있음  
     → 예제: 4xx.html로 파일명을 선언해, 400,404,405 등 Status Code가 4xx Error의 경우 다음과 같은 View Page로 연결
 
-5. ExceptionSamplController.java
+### 5. ExceptionSamplController.java
    
    ```java
     package com.skcc.demo.exceptionsample.context.application.sp.web;
@@ -313,7 +313,7 @@ ex) User Entity : findById(id)에서 해당 User가 없는 경우 Throw Exceptio
     }
     }
     ```
-6. UsersService
+### 6. UsersService
    
    ```java
     package com.skcc.demo.exceptionsample.context.domain;
@@ -322,7 +322,7 @@ ex) User Entity : findById(id)에서 해당 User가 없는 경우 Throw Exceptio
     public User findUser(Long id);
     }
     ```
-7. UsersLogic
+### 7. UsersLogic
    
    ```java
     package com.skcc.demo.exceptionsample.context.domain;
