@@ -143,12 +143,16 @@ Spring Security를 적용하는 경우 Http Request를 주고받을 때, 해당 
 - 18~22번 Line : Post Request 전송 전, Request Header에 Token 저장
 
 **Tips**
+
 1. csrf토큰 자동 추가 방법 (thymeleaf)  
 Post Request를 보내는 form 에 다음과 같이 th:action="@{/requesturl}" 로 선언
+
 ```html
 <form th:action="@{/login}" method="post">
 ```
+
 2. form에 csrf토큰 추가  
+
 ```html
 <form action="/user/login" method="post>
 <input type="hidden" th:name="${}_csrf.parameterName}" th:value="${_csrf.token}"/>
