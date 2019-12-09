@@ -120,17 +120,17 @@ ex) User Entity : findById(id)에서 해당 User가 없는 경우 Throw Exceptio
         this.debugMessage = ex.getLocalizedMessage();
     }
     }
-    ```
+```
 
-    **Tips**
-    - Error Message 객체 Format을 통일화
+**Tips**
+- Error Message 객체 Format을 통일화
 
-        - message : 에러에 대한 message를 작성
+    - message : 에러에 대한 message를 작성
 
-        - status : http status code를 작성 (header 정보에 포함된 정보)
+    - status : http status code를 작성 (header 정보에 포함된 정보)
 
-    - Error Code는 포함 시키지 않았는데, Error Code 표준을 정한 경우 포함하는 것이 좋음
-    {: .notice--danger}
+- Error Code는 포함 시키지 않았는데, Error Code 표준을 정한 경우 포함하는 것이 좋음
+{: .notice--danger}
 
 ### 2. Custom Exception Handler
 
@@ -180,6 +180,7 @@ ex) User Entity : findById(id)에서 해당 User가 없는 경우 Throw Exceptio
     ```
 
 ### 4. GlobalExceptionHandler.class
+
    ```java
     package com.skcc.demo.exceptionsample.context.exceptionhandle;
     import java.nio.file.AccessDeniedException;
@@ -271,19 +272,20 @@ ex) User Entity : findById(id)에서 해당 User가 없는 경우 Throw Exceptio
     //   }
     *
     * */}
-    ```
-    **Tips**
-    - CustomExceptionHandler처럼 Entity나 Business Logic의 특정 Exception 처리가 아닌, Validation/Binding 등 전역에서 발생할 수 있는 에러를 한 곳에 모아 같은 Format으로 처리.
-    - View와 연결 시키는 경우 return type을 ModelAndView로 설정
-    - Error View의 경우, Spring에서는 다음과 같은 Page가 Default로 설정되어 있음.
-    {: .notice--danger}
+```
+
+**Tips**
+- CustomExceptionHandler처럼 Entity나 Business Logic의 특정 Exception 처리가 아닌, Validation/Binding 등 전역에서 발생할 수 있는 에러를 한 곳에 모아 같은 Format으로 처리.
+- View와 연결 시키는 경우 return type을 ModelAndView로 설정
+- Error View의 경우, Spring에서는 다음과 같은 Page가 Default로 설정되어 있음.
+{: .notice--danger}
     
-    ![](https://cnaps-skcc.github.io/assets/images/globalexeption1.png)
+![](https://cnaps-skcc.github.io/assets/images/globalexeption1.png)
   
-    ![](https://cnaps-skcc.github.io/assets/images/globalexception2.png)
+![](https://cnaps-skcc.github.io/assets/images/globalexception2.png)
     
-    → src/main/resources/templates/error 밑에 html 파일을 작성해 Error Page를 수정할 수 있음  
-    → 예제: 4xx.html로 파일명을 선언해, 400,404,405 등 Status Code가 4xx Error의 경우 다음과 같은 View Page로 연결
+→ src/main/resources/templates/error 밑에 html 파일을 작성해 Error Page를 수정할 수 있음  
+→ 예제: 4xx.html로 파일명을 선언해, 400,404,405 등 Status Code가 4xx Error의 경우 다음과 같은 View Page로 연결
 
 ### 5. ExceptionSamplController.java
    
@@ -312,7 +314,8 @@ ex) User Entity : findById(id)에서 해당 User가 없는 경우 Throw Exceptio
     return new ResponseEntity<>(user, HttpStatus.OK);
     }
     }
-    ```
+```
+
 ### 6. UsersService
    
    ```java
@@ -321,7 +324,8 @@ ex) User Entity : findById(id)에서 해당 User가 없는 경우 Throw Exceptio
     public interface UsersService {
     public User findUser(Long id);
     }
-    ```
+```
+
 ### 7. UsersLogic
    
    ```java
@@ -344,11 +348,11 @@ ex) User Entity : findById(id)에서 해당 User가 없는 경우 Throw Exceptio
     }
     
     }
-    ```
+```
 
-    **Tips**
-    - UsersLogic 에서, UserRepository에 해당 UserId가 없는 경우 UserNotFoundException을 발생시킴  
-    **: User user = userRepository.findById(id).orElseThrow(()->new UserNotFoundException("User not found"));**
+**Tips**
+- UsersLogic 에서, UserRepository에 해당 UserId가 없는 경우 UserNotFoundException을 발생시킴  
+<span style="color:red"> **: User user = userRepository.findById(id).orElseThrow(()->new UserNotFoundException("User not found"));** </span>
     
 >Exception 처리 Sample Github 주소: 
 <https://github.com/Juyounglee95/exception-sample.git>
