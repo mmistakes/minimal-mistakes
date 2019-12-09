@@ -50,7 +50,8 @@ Spring Security 적용시 필수 구현:
 
 #### 2. Security Config
 
-    ```java
+```java
+
     package com.skcc.demo.config;
  
     import org.springframework.beans.factory.annotation.Autowired;
@@ -118,7 +119,8 @@ Spring Security 적용시 필수 구현:
         
         
     }
-    ```
+
+```
 
 #### 3. Security Config 상세 설명
 
@@ -185,7 +187,7 @@ Spring Security 적용시 필수 구현:
 <https://github.com/Juyounglee95/auth-sample.git> 
 <!--링크 참조 기본 -->
 
->구현 참고 자료:
+>구현 참고 자료:  
 [Spring Boot Security 활용 Login, Sign up 기본 예제](https://victorydntmd.tistory.com/328)
 [Spring Boot Security 활용 User Custom, Role Custom 예제](https://xmfpes.github.io/spring/spring-security/)
 [Spring Boot Security CSRF 예제 - 13.4.3 Include the CSRF Token 참고](https://docs.spring.io/spring-security/site/docs/3.2.0.CI-SNAPSHOT/reference/html/csrf.html)
