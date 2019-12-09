@@ -352,8 +352,9 @@ ex) User Entity : findById(id)에서 해당 User가 없는 경우 Throw Exceptio
 
 **Tips**
 - UsersLogic 에서, UserRepository에 해당 UserId가 없는 경우 UserNotFoundException을 발생시킴  
-<span style="color:red"> **: User user = userRepository.findById(id).orElseThrow(()->new UserNotFoundException("User not found"));** </span>
-    
+<span style="color:blue"> **: User user = userRepository.findById(id).orElseThrow(()->new UserNotFoundException("User not found"));** </span>
+{: .notice--danger}
+
 >Exception 처리 Sample Github 주소: 
 <https://github.com/Juyounglee95/exception-sample.git>
 
