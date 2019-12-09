@@ -279,12 +279,11 @@ ex) User Entity : findById(id)에서 해당 User가 없는 경우 Throw Exceptio
     {: .notice--danger}
     
     ![](https://cnaps-skcc.github.io/assets/images/globalexeption1.png)
-    ![](https://cnaps-skcc.github.io/assets/images/globalexeption2.png)
+    ![](https://cnaps-skcc.github.io/assets/images/globalexception2.png)
     
     → src/main/resources/templates/error 밑에 html 파일을 작성해 Error Page를 수정할 수 있음
-
     → 예제: 4xx.html로 파일명을 선언해, 400,404,405 등 Status Code가 4xx Error의 경우 다음과 같은 View Page로 연결
-  
+
 5. ExceptionSamplController.java
    
    ```java
@@ -353,11 +352,11 @@ ex) User Entity : findById(id)에서 해당 User가 없는 경우 Throw Exceptio
 >Exception 처리 Sample Github 주소: 
 <https://github.com/Juyounglee95/exception-sample.git>
 
->Exception 처리 가이드 참고 자료:
+>Exception 처리 가이드 참고 자료:  
 <https://www.mkyong.com/spring-boot/spring-rest-error-handling-example/>
 <https://spring.io/blog/2013/11/01/exception-handling-in-spring-mvc>
 <https://github.com/paulc4/mvc-exceptions.git>
   
->Logging 처리:
+>Logging 처리:  
 <https://www.sangkon.com/hands-on-springboot-logging/>
 <https://meetup.toast.com/posts/149>
