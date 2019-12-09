@@ -179,4 +179,185 @@ ex) User Entity : findById(id)에서 해당 User가 없는 경우 Throw Exceptio
     }
     ```
 
->이외 내용은 생략
+4. GlobalExceptionHandler.class
+   ```java
+    package com.skcc.demo.exceptionsample.context.exceptionhandle;
+    import java.nio.file.AccessDeniedException;
+    import org.springframework.http.HttpStatus;
+    import org.springframework.http.ResponseEntity;
+    import org.springframework.validation.BindException;
+    import org.springframework.web.HttpRequestMethodNotSupportedException;
+    import org.springframework.web.bind.MethodArgumentNotValidException;
+    import org.springframework.web.bind.annotation.ControllerAdvice;
+    import org.springframework.web.bind.annotation.ExceptionHandler;
+    import org.springframework.web.bind.annotation.ResponseStatus;
+    import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
+    import com.skcc.demo.exceptionsample.context.exceptionhandle.apierror.ApiErrorDetail;
+    import lombok.extern.slf4j.Slf4j;
+    @ControllerAdvice
+    @Slf4j
+    public class GlobalExceptionHandler {
+        /**
+        *  javax.validation.Valid or @Validated 으로 binding error 발생시 발생
+        *  HttpMessageConverter 에서 등록한 HttpMessageConverter binding 못할경우 발생
+        *  주로 @RequestBody, @RequestPart 어노테이션에서 발생
+        */
+        @ExceptionHandler(MethodArgumentNotValidException.class)
+        protected ResponseEntity<ApiErrorDetail> handleMethodArgumentNotValidException(MethodArgumentNotValidException e) {
+            log.error("handleMethodArgumentNotValidException", e);
+            ApiErrorDetail errorDetail = new ApiErrorDetail(HttpStatus.BAD_REQUEST);
+    errorDetail.setMessage(e.getMessage());
+            return new ResponseEntity<>(errorDetail, HttpStatus.BAD_REQUEST);
+        }
+        /**
+        * @ModelAttribut 으로 binding error 발생시 BindException 발생
+        * ref https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc-ann-modelattrib-method-args
+        */
+        @ExceptionHandler(BindException.class)
+        protected ResponseEntity<ApiErrorDetail> handleBindException(BindException e) {
+            log.error("handleBindException", e);
+            ApiErrorDetail errorDetail = new ApiErrorDetail(HttpStatus.BAD_REQUEST);
+    errorDetail.setMessage(e.getMessage());
+            return new ResponseEntity<>(errorDetail, HttpStatus.BAD_REQUEST);
+        }
+        /**
+        * enum type 일치하지 않아 binding 못할 경우 발생
+        * 주로 @RequestParam enum으로 binding 못했을 경우 발생
+        */
+        @ExceptionHandler(MethodArgumentTypeMismatchException.class)
+        protected ResponseEntity<ApiErrorDetail> handleMethodArgumentTypeMismatchException(MethodArgumentTypeMismatchException e) {
+            log.error("handleMethodArgumentTypeMismatchException", e);
+            ApiErrorDetail errorDetail = new ApiErrorDetail(HttpStatus.BAD_REQUEST);
+    errorDetail.setMessage(e.getMessage());
+            return new ResponseEntity<>(errorDetail, HttpStatus.BAD_REQUEST);
+        }
+        /**
+        * 지원하지 않은 HTTP method 호출 할 경우 발생
+        */
+        @ExceptionHandler(HttpRequestMethodNotSupportedException.class)
+        protected ResponseEntity<ApiErrorDetail> handleHttpRequestMethodNotSupportedException(HttpRequestMethodNotSupportedException e) {
+            log.error("handleHttpRequestMethodNotSupportedException", e);
+            ApiErrorDetail errorDetail = new ApiErrorDetail(HttpStatus.BAD_REQUEST);
+    errorDetail.setMessage(e.getMessage());
+            return new ResponseEntity<>(errorDetail, HttpStatus.BAD_REQUEST);
+        }
+        /**
+        * Authentication 객체가 필요한 권한을 보유하지 않은 경우 발생
+        */
+        @ExceptionHandler(AccessDeniedException.class)
+        protected ResponseEntity<ApiErrorDetail> handleAccessDeniedException(AccessDeniedException e) {
+            log.error("handleAccessDeniedException", e);
+            ApiErrorDetail errorDetail = new ApiErrorDetail(HttpStatus.BAD_REQUEST);
+    errorDetail.setMessage(e.getMessage());
+            return new ResponseEntity<>(errorDetail, HttpStatus.BAD_REQUEST);
+        }
+    
+    
+        @ExceptionHandler(Exception.class)
+        protected ResponseEntity<ApiErrorDetail> handleException(Exception e) {
+            log.error("handleEntityNotFoundException", e);
+            ApiErrorDetail errorDetail = new ApiErrorDetail(HttpStatus.INTERNAL_SERVER_ERROR);
+    errorDetail.setMessage(e.getMessage());
+            return new ResponseEntity<>(errorDetail, HttpStatus.INTERNAL_SERVER_ERROR);
+        }    /**
+        * View와 연결// @ExceptionHandler(Exception.class)
+    //    public ModelAndView handleError(HttpServletRequest req, Exception ex) {
+    //  log.error("handleEntityNotFoundException", e);
+    //     ModelAndView mav = new ModelAndView();
+    //     mav.addObject("exception", ex);
+    //     mav.addObject("url", req.getRequestURL());
+    //     mav.setViewName("error");
+    //     return mav;
+    //   }
+    *
+    * */}
+    ```
+    **Tips**
+    - CustomExceptionHandler처럼 Entity나 Business Logic의 특정 Exception 처리가 아닌, Validation/Binding 등 전역에서 발생할 수 있는 에러를 한 곳에 모아 같은 Format으로 처리.
+    - View와 연결 시키는 경우 return type을 ModelAndView로 설정
+    - Error View의 경우, Spring에서는 다음과 같은 Page가 Default로 설정되어 있음.
+    {: .notice--danger}
+    
+    ![](https://cnaps-skcc.github.io/assets/images/globalexeption1.png)
+    ![](https://cnaps-skcc.github.io/assets/images/globalexeption2.png)
+    
+    → src/main/resources/templates/error 밑에 html 파일을 작성해 Error Page를 수정할 수 있음
+
+    → 예제: 4xx.html로 파일명을 선언해, 400,404,405 등 Status Code가 4xx Error의 경우 다음과 같은 View Page로 연결
+  
+5. ExceptionSamplController.java
+   
+   ```java
+    package com.skcc.demo.exceptionsample.context.application.sp.web;
+    import org.springframework.beans.factory.annotation.Autowired;
+    import org.springframework.http.HttpStatus;
+    import org.springframework.http.ResponseEntity;
+    import org.springframework.validation.annotation.Validated;
+    import org.springframework.web.bind.annotation.GetMapping;
+    import org.springframework.web.bind.annotation.PathVariable;
+    import org.springframework.web.bind.annotation.PostMapping;
+    import org.springframework.web.bind.annotation.RequestBody;
+    import org.springframework.web.bind.annotation.RequestMapping;
+    import org.springframework.web.bind.annotation.RestController;
+    import com.skcc.demo.exceptionsample.context.domain.UsersService;
+    import com.skcc.demo.exceptionsample.context.domain.users.model.User;
+    @RestController
+    @RequestMapping("/test")
+    public class ExceptionSampleController {
+    @Autowired
+    UsersService usersService;
+    @GetMapping("/{id}")
+    public ResponseEntity<User> getUser(@PathVariable("id")Long id){
+    User user = usersService.findUser(id);
+    return new ResponseEntity<>(user, HttpStatus.OK);
+    }
+    }
+    ```
+6. UsersService
+   
+   ```java
+    package com.skcc.demo.exceptionsample.context.domain;
+    import com.skcc.demo.exceptionsample.context.domain.users.model.User;
+    public interface UsersService {
+    public User findUser(Long id);
+    }
+    ```
+7. UsersLogic
+   
+   ```java
+    package com.skcc.demo.exceptionsample.context.domain;
+    import org.springframework.beans.factory.annotation.Autowired;
+    import org.springframework.stereotype.Service;
+    import com.skcc.demo.exceptionsample.context.domain.users.model.User;
+    import com.skcc.demo.exceptionsample.context.domain.users.repository.UserRepository;
+    import com.skcc.demo.exceptionsample.context.exceptionhandle.UserNotFoundException;
+    @Service
+    public class UsersLogic implements UsersService{
+    @Autowired
+    private UserRepository userRepository;
+    @Override
+    public User findUser(Long id) {
+    
+    User user = userRepository.findById(id).orElseThrow(()->new UserNotFoundException("User not found"));
+    
+    return user;
+    }
+    
+    }
+    ```
+
+    **Tips**
+    - UsersLogic 에서, UserRepository에 해당 UserId가 없는 경우 UserNotFoundException을 발생시킴  
+    **: User user = userRepository.findById(id).orElseThrow(()->new UserNotFoundException("User not found"));**
+    
+>Exception 처리 Sample Github 주소: 
+https://github.com/Juyounglee95/exception-sample.git  
+
+>Exception 처리 가이드 참고 자료:
+https://www.mkyong.com/spring-boot/spring-rest-error-handling-example/
+https://spring.io/blog/2013/11/01/exception-handling-in-spring-mvc
+https://github.com/paulc4/mvc-exceptions.git
+  
+>Logging 처리:
+https://www.sangkon.com/hands-on-springboot-logging/
+https://meetup.toast.com/posts/149
