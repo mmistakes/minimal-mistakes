@@ -25,6 +25,10 @@
   {%- assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once -%}
 {%- endif -%}
 
+{%- if page.keywords -%}
+  {%- assign seo_keywords = page.keywords | join: ',' -%}
+{%- endif -%}
+
 {%- assign author = page.author | default: page.authors[0] | default: site.author -%}
 {%- assign author = site.data.authors[author] | default: author -%}
 
@@ -58,6 +62,9 @@
 
 <title>{{ seo_title | default: site.title }}{% if paginator %}{% unless paginator.page == 1 %} {{ title_separator }} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}{% endif %}</title>
 <meta name="description" content="{{ seo_description }}">
+{% if seo_keywords %}
+  <meta name="keywords" content="{{ seo_keywords }}">
+{% endif %}
 
 {% if author.name %}
   <meta name="author" content="{{ author.name | default: author }}">
