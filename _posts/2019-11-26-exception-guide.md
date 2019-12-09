@@ -159,11 +159,11 @@ ex) User Entity : findById(id)에서 해당 User가 없는 경우 Throw Exceptio
     }}
    ```
 
-    **Tips**
-    - @ControllerAdvice : 모든 예외를 한 곳에서 처리할 수 있게 함.
-    - handleUserNotFoundException: UserNotFoundException 처리로, 검색한 User가 존재하지 않으면 해당 Error Message Throw
-    - 이외에 각 Entity 마다 Exception을 정의해 사용할 수 있음.
-    {: .notice--danger}
+**Tips**
+- @ControllerAdvice : 모든 예외를 한 곳에서 처리할 수 있게 함.
+- handleUserNotFoundException: UserNotFoundException 처리로, 검색한 User가 존재하지 않으면 해당 Error Message Throw
+- 이외에 각 Entity 마다 Exception을 정의해 사용할 수 있음.
+{: .notice--danger}
 
 ### 3. UserNotFoundException.class
 
