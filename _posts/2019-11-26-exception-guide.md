@@ -279,9 +279,10 @@ ex) User Entity : findById(id)에서 해당 User가 없는 경우 Throw Exceptio
     {: .notice--danger}
     
     ![](https://cnaps-skcc.github.io/assets/images/globalexeption1.png)
+  
     ![](https://cnaps-skcc.github.io/assets/images/globalexception2.png)
     
-    → src/main/resources/templates/error 밑에 html 파일을 작성해 Error Page를 수정할 수 있음
+    → src/main/resources/templates/error 밑에 html 파일을 작성해 Error Page를 수정할 수 있음  
     → 예제: 4xx.html로 파일명을 선언해, 400,404,405 등 Status Code가 4xx Error의 경우 다음과 같은 View Page로 연결
 
 5. ExceptionSamplController.java
