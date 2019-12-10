@@ -30,7 +30,7 @@ Spring Security 샘플 프로그램의 도메인 모델은 크게 4가지가 필
 
 샘플 프로젝트의 모델 설계는 아래의 이미지와 같습니다.
 
-![ClassModel](../assets/images/ERS권한관리model2.png)
+![ClassModel](https://cnaps-skcc.github.io/assets/images/ERS권한관리model2.png)
 
 - Account, Permission, Role은 계정 및 권한관리에 함께 쓰이기 때문에 **Authority**라는 패키지로 묶어 설계하였습니다.
 - Menu(TopMenu, SubMenu)는 계정 및 권한관리에 관계없는 프로그램의 기능 자체(게시판 등)이기 때문에 **bcm**의 **menu**라는 패키지로 묶어 설계했습니다.
@@ -51,7 +51,7 @@ Spring Security 샘플 프로그램의 도메인 모델은 크게 4가지가 필
 - 각 클래스 들은 Model과 Repository로 나뉩니다.
 
 아래는 각 클래스 Model의 Code 설명입니다.
- 
+
 ## 1. Accout
 
 각 사용자는 1개의 역할을 부여받을 수 있습니다.
