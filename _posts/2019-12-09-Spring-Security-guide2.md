@@ -26,6 +26,32 @@ Spring Security 샘플 프로그램의 도메인 모델은 크게 4가지가 필
 3. Role : 사용자에게 주어질 역할
 4. Menu : 사용자가 이용할 메뉴 -> 생성 시 자동으로 권한이 생성됩니다.
 
+## Modeling
+
+샘플 프로젝트의 모델 설계는 아래의 이미지와 같습니다.
+
+![ClassModel](../assets/images/ERS권한관리model2.png)
+
+- Account, Permission, Role은 계정 및 권한관리에 함께 쓰이기 때문에 **Authority**라는 패키지로 묶어 설계하였습니다.
+- Menu(TopMenu, SubMenu)는 계정 및 권한관리에 관계없는 프로그램의 기능 자체(게시판 등)이기 때문에 **bcm**의 **menu**라는 패키지로 묶어 설계했습니다.
+- 이미지에서는 점선으로 각 클래스들을 연결해주었지만, 설계를 위한 ***Logical Connection*** 입니다.
+- 즉, 실제 구현에선 직접적인 관계를 맺지 않고 있습니다. 구현에서는 다른 Entity 또는 Aggregate Root를 참조할 때, 해당 ***Entity나 Root의 Id를 참조*** 하는 간접 참조 방식을 사용했습니다.
+
+# Modeling -> Code로 구현하기
+
+샘플 프로젝트의 전체적인 구조는 아래의 이미지와 같습니다.
+
+![project-structure](https://cnaps-skcc.github.io/assets/images/ers-structure.png)
+
+- config : RepositoryRestConfig, SecurityConfig, SwaggerConfig 등 프로그램의 Configuration 파일들을 위한 패키지
+- context : auth, base, bcm과 같은 컨텍스트의 상위 패키지
+- auth, bcm은 서로의 Repository에 직접 접근할 수 없고 각자의 Service를 통해서만 데이터 요청 및 응답할 수 있습니다.
+- application.sp.web : Web을 위한 Controller, RestController를 위한 패키지
+- 위에서 설계한 각 클래스들은 Domain으로 구분하였습니다.  Account, Permission, Role은 Authority라는 Domain 패키지로, TopMenu와 SubMenu는 Functions라는 Domain 패키지의 Menu로 묶었습니다.
+- 각 클래스 들은 Model과 Repository로 나뉩니다.
+
+아래는 각 클래스 Model의 Code 설명입니다.
+ 
 ## 1. Accout
 
 각 사용자는 1개의 역할을 부여받을 수 있습니다.
