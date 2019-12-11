@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Weihnachtsbasteln ",
-    "title": "Weihnachtsbasteln ",
-    "excerpt": "Im ganzen Haus wird gebastelt und gewerkelt. Eltern begleiten ihre Kinder durch die Angebote.",
-    "url": "https://www.google.com/calendar/event?eid=MW4wbzlicXVhM29mZDNkcWpvdnBzYjFoanEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-12-10T16:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-12-10T18:00:00+01:00"
-    },
-    "created": "2019-11-13T08:00:27.000Z",
-    "updated": "2019-11-20T09:42:21.102Z"
-  },
-  {
-    "image_path": null,
     "alt": "2. Schulkonferenz: Achtung Beginn 15:00 Uhr",
     "title": "2. Schulkonferenz: Achtung Beginn 15:00 Uhr",
     "excerpt": "15:00 - 16:30 Uhr Klassenraum A1, Aufgang B, 1. Stock",
@@ -100,5 +83,22 @@
     },
     "created": "2019-08-22T08:03:10.000Z",
     "updated": "2019-08-22T08:03:10.314Z"
+  },
+  {
+    "image_path": null,
+    "alt": "4. GEV um 18:30 Uhr",
+    "title": "4. GEV um 18:30 Uhr",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=N2xnanRpYmk0N2hidGZqODY0cjBwNHA2NGogaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2020-05-14T18:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2020-05-14T20:00:00+02:00"
+    },
+    "created": "2019-10-25T12:53:36.000Z",
+    "updated": "2019-10-25T12:53:36.451Z"
   }
 ]
