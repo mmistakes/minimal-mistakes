@@ -18,7 +18,7 @@ classes: wide
 **SAP Labs Korea**{: style="margin-left: 1em;"}, Developer
 *Sep. 2019 - Now*{: style="color: gray; font-size: 0.6em; margin-left: 1em;"}
 
-- HANA SQL Optimizer 
+- HANA Platform Core (Korea) Optimize 
 {: style="color: gray; font-size: 0.8em; margin: 1em; "}
 
 <i class="far fa-caret-square-right" style="margin-top: 1em"></i>
