@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "최종명"
   avatar           : "/assets/images/bio-photo.png"
-  bio              : "Security Application Programmer at NCSOFT, Software Engineer, Security Researcher, CTF player at NULL@ROOT"
+  bio              : "Software Developer at SAP Labs Korea, Security Researcher, CTF player at NULL@ROOT"
   location         : "성남시 분당구"
   # email            : "" # "cheese.choi@gmail.com"
   links:
