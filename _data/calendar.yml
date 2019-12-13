@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "2. Schulkonferenz: Achtung Beginn 15:00 Uhr",
-    "title": "2. Schulkonferenz: Achtung Beginn 15:00 Uhr",
-    "excerpt": "15:00 - 16:30 Uhr Klassenraum A1, Aufgang B, 1. Stock",
-    "url": "https://www.google.com/calendar/event?eid=NnJiYjk5b201bjJmbWFoNjNhZTNtMnU5YXEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2019-12-12T15:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2019-12-12T16:30:00+01:00"
-    },
-    "created": "2019-12-01T12:24:14.000Z",
-    "updated": "2019-12-01T12:24:14.870Z"
-  },
-  {
-    "image_path": null,
     "alt": "Weihnachtsferien",
     "title": "Weihnachtsferien",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2019-10-25T12:53:36.000Z",
     "updated": "2019-10-25T12:53:36.451Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Pfingstferien",
+    "title": "Pfingstferien",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=M2RxNWoxajJoa3ZsN2pvMGJjcHIydm83Z2YgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2020-05-22",
+      "date_time": null
+    },
+    "end": {
+      "date": "2020-05-23",
+      "date_time": null
+    },
+    "created": "2019-08-22T08:03:28.000Z",
+    "updated": "2019-08-22T08:03:28.617Z"
   }
 ]
