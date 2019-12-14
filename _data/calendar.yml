@@ -1,6 +1,23 @@
 [
   {
     "image_path": null,
+    "alt": "Unterrichtsschluss für alle Schüler um 12 Uhr",
+    "title": "Unterrichtsschluss für alle Schüler um 12 Uhr",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MnRpdmdhamg0NmNxNGRnaGxzNTFwb2dxbDMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2019-12-20",
+      "date_time": null
+    },
+    "end": {
+      "date": "2019-12-21",
+      "date_time": null
+    },
+    "created": "2019-12-13T11:18:15.000Z",
+    "updated": "2019-12-13T11:18:15.086Z"
+  },
+  {
+    "image_path": null,
     "alt": "Weihnachtsferien",
     "title": "Weihnachtsferien",
     "excerpt": null,
@@ -83,22 +100,5 @@
     },
     "created": "2019-10-25T12:53:36.000Z",
     "updated": "2019-10-25T12:53:36.451Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Pfingstferien",
-    "title": "Pfingstferien",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M2RxNWoxajJoa3ZsN2pvMGJjcHIydm83Z2YgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2020-05-22",
-      "date_time": null
-    },
-    "end": {
-      "date": "2020-05-23",
-      "date_time": null
-    },
-    "created": "2019-08-22T08:03:28.000Z",
-    "updated": "2019-08-22T08:03:28.617Z"
   }
 ]
