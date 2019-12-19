@@ -1,7 +1,7 @@
 {% if site.logo contains "://" %}
   {% capture logo_path %}{{ site.logo }}{% endcapture %}
 {% else %}
-  {% capture logo_path %}{{ site.logo }}{% endcapture %}
+  {% capture logo_path %}{{ site.logo | relative_url }}{% endcapture %}
 {% endif %}
 
 <div class="masthead">
