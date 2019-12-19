@@ -8,6 +8,7 @@
 
 ### Bug Fixes
 
+- Fix Staticman v2/v3 conditional for showing comments. [#2351](https://github.com/mmistakes/minimal-mistakes/pull/2351)
 - Fix masthead logo path. [#2332](https://github.com/mmistakes/minimal-mistakes/pull/2332)
 - Fix schema.org dates to ISO-8601. [#2339](https://github.com/mmistakes/minimal-mistakes/pull/2339)
 - Fix background color of code blocks in notices. [#2328](https://github.com/mmistakes/minimal-mistakes/pull/2328)
