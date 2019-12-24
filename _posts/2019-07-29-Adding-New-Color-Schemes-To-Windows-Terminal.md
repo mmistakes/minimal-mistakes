@@ -8,6 +8,8 @@ classes: wide
 toc: true
 ---
 
+Update 12/22/2019: There have been several changes to Windows Terminal since this was originally written so you can expect to encounter errors if you follow along with the provided code.
+
 ## Windows Terminal
 
 I've been having a lot of fun with the new [Windows Terminal](https://github.com/microsoft/terminal). One issue that I found is that I couldn't find an appropriate color scheme to go with my background. I tried using the [ColorTool](https://github.com/Microsoft/Terminal/tree/master/src/tools/ColorTool), but that wasn't working for me.
