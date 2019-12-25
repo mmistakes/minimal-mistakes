@@ -109,8 +109,8 @@ analytics:
 author:
   name             : "Brendan Greenlee"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Trying to make the world a better place."
-  location         : "Somewhere in America probably."
+  bio              : "Trying to make the world a better place"
+  location         : "Somewhere in the United States"
   email            :
   links:
     - label: "Email"
