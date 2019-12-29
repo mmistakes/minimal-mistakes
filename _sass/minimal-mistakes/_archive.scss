@@ -353,7 +353,7 @@
     }
 
     @include breakpoint($small) {
-      text-align: right;
+      text-align: left;
 
       .archive__item-teaser {
         float: right;
@@ -361,7 +361,7 @@
       }
 
       .archive__item-body {
-        float: left;
+        float: right;
         width: span(7 of 12);
         padding-left: gutter(0.5 of 12);
         padding-right: gutter(1 of 12);
