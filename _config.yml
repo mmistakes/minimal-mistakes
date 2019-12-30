@@ -164,6 +164,7 @@ include:
   - .htaccess
   - _pages
   - posts
+  - _posts
   - pages
 exclude:
   - "*.sublime-project"
@@ -292,6 +293,18 @@ defaults:
       path: ""
       type: posts
     values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: ""
+      type: posts
+    values:
+      dir: rtl
       layout: single
       author_profile: true
       read_time: true
