@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 # Site Settings
 dir                      : rtl
 locale                   : "en-GB"
-title                    : "Hydro IT LTD."
+title                    : "Hydro IT LTD"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Gidi Marcus"
