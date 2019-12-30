@@ -108,14 +108,14 @@ analytics:
 # Site Author
 author:
   name             : "Gidi Marcus"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/Gidi_Avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Storage & Microsoft Consultant"
   location         : "London"
   email            : "hello@h2it.uk"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:hello@h2it.uk"
+      #url: "mailto:hello@h2it.uk"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://www.hydroit.co.uk"
