@@ -135,7 +135,7 @@ author:
 # Site Footer
 footer:
   links:
-      - label: "LinkedIn"
+    - label: "LinkedIn"
       icon: "fab fa-fw fa-link"
       url: "https://www.linkedin.com/in/gidimarcus/"
     - label: "Twitter"
