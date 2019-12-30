@@ -135,6 +135,9 @@ author:
 # Site Footer
 footer:
   links:
+      - label: "LinkedIn"
+      icon: "fab fa-fw fa-link"
+      url: "https://www.linkedin.com/in/gidimarcus/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url:
@@ -143,7 +146,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/MGidi"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -159,6 +162,8 @@ footer:
 include:
   - .htaccess
   - _pages
+  - posts
+  - pages
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
