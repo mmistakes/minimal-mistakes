@@ -16,7 +16,7 @@ gallery:
   - url: /assets/images/Flags/1920px-Flag_of_Europe.svg.png 
     image_path: /assets/images/Flags/1920px-Flag_of_Europe.svg.png 
     alt: "EU Flag"
-    title: "Hydro IT EU IT Services"#
+    title: "Hydro IT EU IT Services"
     max-width="300px" 
 ---
 
