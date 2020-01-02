@@ -7,17 +7,14 @@ gallery:
     image_path: /assets/images/Flags/1280px-Flag_of_Israel.svg.png
     alt: "IL Flag"
     title: "Hydro IT Hebrew IT Services in Europe"
-    max-width: "100px" 
   - url: /assets/images/Flags/1920px-Flag_of_the_United_Kingdom.svg.png
     image_path: /assets/images/Flags/1920px-Flag_of_the_United_Kingdom.svg.png
     alt: "GB Flag"
     title: "Hydro IT UK IT Services"
-    max-width: "100px" 
   - url: /assets/images/Flags/1920px-Flag_of_Europe.svg.png 
     image_path: /assets/images/Flags/1920px-Flag_of_Europe.svg.png 
     alt: "EU Flag"
     title: "Hydro IT EU IT Services"
-    max-width: "100px" 
 ---
 
 
@@ -31,7 +28,7 @@ gallery:
 <h2>
   ייתרונות אסטרטגיים אשר באפשרותנו להציע על ידי אספקת השרותים ישירות מאירופה:
 </h2>
-{% include gallery %}
+{% include gallery max-width=100px" %}
 <h3>
   גמישות וזמינות מעבר לשעות העבודה המקובלות - וכן בעת חרום
  </h3>
