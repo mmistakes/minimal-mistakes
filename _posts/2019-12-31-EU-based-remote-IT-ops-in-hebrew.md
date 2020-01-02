@@ -2,6 +2,19 @@
 layout: post
 title:  "תמיכה ותפעול בעברית - על ידי מומחים באירופה"
 tags: [עברית,בריטניה,מייקרוסופט,אירופה,לונדון,Microsoft]
+gallery:
+  - url: /assets/images/Flags/1280px-Flag_of_Israel.svg.png
+    image_path: /assets/images/Flags/1280px-Flag_of_Israel.svg.png
+    alt: "IL Flag"
+    title: "Hydro IT Hebrew IT Services in Europe"
+  - url: /assets/images/Flags/1920px-Flag_of_Europe.svg.png 
+    image_path: /assets/images/Flags/1920px-Flag_of_Europe.svg.png 
+    alt: "EU Flag"
+    title: "Hydro IT EU IT Services"
+  - url: /assets/images/Flags/1920px-Flag_of_the_United_Kingdom.svg.png
+    image_path: /assets/images/Flags/1920px-Flag_of_the_United_Kingdom.svg.png
+    alt: "GB Flag"
+    title: "Hydro IT UK IT Services"
 ---
 
 
@@ -15,7 +28,7 @@ tags: [עברית,בריטניה,מייקרוסופט,אירופה,לונדון,
 <h2>
   ייתרונות אסטרטגיים אשר באפשרותנו להציע על ידי אספקת השרותים ישירות מאירופה:
 </h2>
-
+{% include gallery %
 <h3>
   גמישות וזמינות מעבר לשעות העבודה המקובלות - וכן בעת חרום
  </h3>
