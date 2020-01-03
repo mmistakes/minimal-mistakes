@@ -294,8 +294,3 @@ defaults:
       comments: # true
       share: true
       related: true
-
-# Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: “Only my Railgun”
-sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
