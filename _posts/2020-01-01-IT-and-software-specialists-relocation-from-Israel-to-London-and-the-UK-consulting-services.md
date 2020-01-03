@@ -2,6 +2,7 @@
 layout: post
 title:  "עזרה והכוונה במעבר מישראל לבריטניה"
 author_profile: true
+author: "Gidi Marcus"
 tags: [עברית,בריטניה,הגירה,מעבר,קורות חיים,אנגלית,ראיון,אירופה,לונדון,relocation]
 ---
 
