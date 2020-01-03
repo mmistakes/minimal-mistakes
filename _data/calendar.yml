@@ -18,6 +18,40 @@
   },
   {
     "image_path": null,
+    "alt": "Erster Schultag planmäßig",
+    "title": "Erster Schultag planmäßig",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=M2QyZWkwdnZrbzBiMXAyNDAzdWRzNDdjazAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2020-01-06",
+      "date_time": null
+    },
+    "end": {
+      "date": "2020-01-07",
+      "date_time": null
+    },
+    "created": "2020-01-02T11:07:01.000Z",
+    "updated": "2020-01-02T11:07:09.052Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Zeugnisausgabe Klasse 4 - 6",
+    "title": "Zeugnisausgabe Klasse 4 - 6",
+    "excerpt": "Unterricht endet um 10:45 für alle Kinder",
+    "url": "https://www.google.com/calendar/event?eid=M2loZHYybW9zcm5tYmNqc2NuazJ0b2VnbGcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2020-01-31T10:45:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2020-01-31T10:45:00+01:00"
+    },
+    "created": "2020-01-02T11:06:25.000Z",
+    "updated": "2020-01-02T11:06:25.421Z"
+  },
+  {
+    "image_path": null,
     "alt": "Winterferien",
     "title": "Winterferien",
     "excerpt": null,
@@ -66,39 +100,5 @@
     },
     "created": "2019-08-22T08:03:10.000Z",
     "updated": "2019-08-22T08:03:10.314Z"
-  },
-  {
-    "image_path": null,
-    "alt": "4. GEV um 18:30 Uhr",
-    "title": "4. GEV um 18:30 Uhr",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=N2xnanRpYmk0N2hidGZqODY0cjBwNHA2NGogaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2020-05-14T18:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2020-05-14T20:00:00+02:00"
-    },
-    "created": "2019-10-25T12:53:36.000Z",
-    "updated": "2019-10-25T12:53:36.451Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Pfingstferien",
-    "title": "Pfingstferien",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M2RxNWoxajJoa3ZsN2pvMGJjcHIydm83Z2YgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2020-05-22",
-      "date_time": null
-    },
-    "end": {
-      "date": "2020-05-23",
-      "date_time": null
-    },
-    "created": "2019-08-22T08:03:28.000Z",
-    "updated": "2019-08-22T08:03:28.617Z"
   }
 ]
