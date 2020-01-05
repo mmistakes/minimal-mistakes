@@ -17,7 +17,7 @@ Alternatively, you can also opt to see the paper online by clicking on "link to 
      - [Link to online version of publication](https://onlinelibrary.wiley.com/doi/full/10.1111/psyp.13417)
      
 - Ergo, K., De Loof, E., Janssens, C., & Verguts, T. (2019). Oscillatory signatures of reward prediction errors in declarative learning. _NeuroImage,186,_ 137-145.
-      [Link to online version of publication](https://www.sciencedirect.com/science/article/abs/pii/S1053811918320676)
+    - [Link to online version of publication](https://www.sciencedirect.com/science/article/abs/pii/S1053811918320676)
 
 
 - Buc Calderon, C., Gevers, W., & Verguts, T. (2018). The Unfolding Action Model of initiation times, movement times, and movement paths. _Psychological Review._
