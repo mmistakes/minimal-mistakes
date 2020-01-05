@@ -4,7 +4,7 @@ By clicking on "Direct link", you are redirected to a .pdf version of that speci
 Alternatively, you can also opt to see the paper online by clicking on "link to the online version".
 
 ## Preprints
-- Buc Calderon, C., De Loof, E., Ergo, K., Signed reward prediction errors in the ventral striatum drive episodic memory. [_BioArxiv._](https://www.biorxiv.org/content/10.1101/2020.01.03.893578v1)
+- Buc Calderon, C., De Loof, E., Ergo, K., Snoeck, A., Boehler, C. N., & Verguts, T. Signed reward prediction errors in the ventral striatum drive episodic memory. [_BioArxiv._](https://www.biorxiv.org/content/10.1101/2020.01.03.893578v1)
 
 ## Recent publications
 - Desender, K., Boldt, A., Verguts, T., & Donner, T. (2019). _Post-decisional sense of confidence shapes speed-accuracy tradeoff for subsequent choices._ eLife.
