@@ -16,7 +16,7 @@ Alternatively, you can also opt to see the paper online by clicking on "link to 
 - De Loof, E., Vassena, E., Janssens, C., De Taeye, L., Meurs, A., Van Roost, D., … Verguts, T. (2019). _Preparing for hard times : scalp and intracranial physiological signatures of proactive cognitive control._ Psychophysiology.
      - [Link to online version of publication](https://onlinelibrary.wiley.com/doi/full/10.1111/psyp.13417)
      
-- Ergo, K., De Loof, E., Janssens, C., & Verguts, T. (2019). Oscillatory signatures of reward prediction errors in declarative learning. _NeuroImage,186,_ 137-145
+- Ergo, K., De Loof, E., Janssens, C., & Verguts, T. (2019). Oscillatory signatures of reward prediction errors in declarative learning. _NeuroImage,186,_ 137-145.
       [Link to online version of publication](https://www.sciencedirect.com/science/article/abs/pii/S1053811918320676)
 
 
