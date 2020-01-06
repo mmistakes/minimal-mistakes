@@ -27,10 +27,10 @@ picoCTF{101010}
 
 ## Lets Warm Up
 
-### Problem
+#### Problem
 If I told you a word started with 0x70 in hexadecimal, what would it start with in ASCII?
 
-### Solution
+#### Solution
 ```
 [char]([convert]::ToInt16(70,16))
 p
@@ -39,10 +39,10 @@ picoCTF{p}
 
 ## Warmed Up
 
-### Problem
+#### Problem
 What is 0x3D (base 16) in decimal (base 10).
 
-### Solution
+#### Solution
 
 ```
 [Convert]::ToString(0x3D, 10)
@@ -52,11 +52,11 @@ picoCTF{61}
 
 ## Bases
 
-### Problem
+#### Problem
 
 What does this bDNhcm5fdGgzX3IwcDM1 mean? I think it has something to do with bases.
 
-### Solution
+#### Solution
 
 ```
 [System.Text.Encoding]::ASCII.GetString([System.Convert]::FromBase64String("bDNhcm5fdGgzX3IwcDM1"))
@@ -67,11 +67,11 @@ picoCTF{l3arn_th3_r0p35}
 
 ## First Grep
 
-### Problem
+#### Problem
 
 Can you find the flag in file? This would be really tedious to look through manually, something tells me there is a better way. You can also find the file in /problems/first-grep_3_2e09f586a51352180a37e25913f5e5d9 on the shell server.
 
-### Solution
+#### Solution
 
 ```powershell
 (Get-Content ./file) | Select-String -Pattern picoctf
@@ -82,21 +82,21 @@ picoCTF{grep_is_good_to_find_things_205b65d7}
 
 ## Resources
 
-### Problem
+#### Problem
 
 We put together a bunch of resources to help you out on our website! If you go over there, you might even find a flag! https://picoctf.com/resources
 
-### Solution
+#### Solution
 
 Read the page and you will discover the flag. It isn't hidden.
 
 ## strings it
 
-### Problem
+#### Problem
 
 Can you find the flag in file without running it? You can also find the file in /problems/strings-it_5_1fd17da9526a76a4fffce289dee10fbb on the shell server.
 
-### Solution
+#### Solution
 
 We can solve this one without requiring strings, we just need a bit of regex.
 
@@ -107,11 +107,11 @@ picoCTF{5tRIng5_1T_dd210c06}
 
 ## what's a net cat?
 
-### Problem
+#### Problem
 
 Using netcat (nc) is going to be pretty important. Can you connect to 2019shell1.picoctf.com at port 32225 to get the flag?
 
-### Solution
+#### Solution
 
 ```
 nc 2019shell1.picoctf.com 32225
@@ -121,11 +121,11 @@ picoCTF{nEtCat_Mast3ry_b1d25ece}
 
 ## Based
 
-### Problem
+#### Problem
 
 To get truly 1337, you must understand different data encodings, such as hexadecimal or binary. Can you get the flag from this program to prove you are on the way to becoming 1337? Connect with nc 2019shell1.picoctf.com 44303.
 
-### Solution
+#### Solution
 
 Things are starting to get interesting! This next challenge is going to require us to convert a some numbers into words. The instructions tell us to use netcat to connect, upon connecting it asks us to convert the provided numbers into a string and return it. We are going to have some fun with this one and write up a solution that uses PowerShell and can be run cross platform.
 
@@ -135,11 +135,11 @@ There are some modules available that we could use, but I want to just write up 
 
 ## First Grep: Part II
 
-### Problem
+#### Problem
 
 Can you find the flag in /problems/first-grep--part-ii_3_b4bf3244c2886de1566a28c1b5a465ae/files on the shell server? Remember to use grep.
 
-### Solution
+#### Solution
 
 We can connect to the shell server using `ssh 2019shell1.picoctf.com`
 I am going to use PowerShell to parse these files and find the flag, but first I need to grab the files with `scp`.
@@ -159,11 +159,11 @@ picoCTF{grep_r_to_find_this_3675d798}
 
 ## Plumbing
 
-### Problem
+#### Problem
 
 Sometimes you need to handle process data outside of a file. Can you find a way to keep the output from this program and search for the flag? Connect to 2019shell1.picoctf.com 57911.
 
-### Solution
+#### Solution
 
 ```
 nc 2019shell1.picoctf.com 57911 | Where {$_ -like 'pico*'}
@@ -173,11 +173,11 @@ picoCTF{digital_plumb3r_931b2271}
 
 ## What's the Difference
 
-### Problem
+#### Problem
 
 Can you spot the difference? kitters cattos. They are also available at /problems/whats-the-difference_0_00862749a2aeb45993f36cc9cf98a47a on the shell server
 
-### Solution
+#### Solution
 
 Download the file on Windows
 
@@ -234,11 +234,11 @@ picoCTF{th3yr3_a5_d1ff3r3nt_4s_bu773r_4nd_j311y_aslkjfdsalkfslkflkjdsfdszmz10548
 
 ## where-is-the-file
 
-### Problem
+#### Problem
 
 I've used a super secret mind trick to hide this file. Maybe something lies in /problems/where-is-the-file_0_cc140a3ba634658b98122a1954c1316a.
 
-### Solution
+#### Solution
 
 ```
 # connect using SSH
@@ -255,11 +255,11 @@ picoCTF{w3ll_that_d1dnt_w0RK_b2dab472}
 
 ## flag_shop
 
-### Problem
+#### Problem
 
 There's a flag shop selling stuff, can you buy a flag? Source. Connect with nc 2019shell1.picoctf.com 63894.
 
-### Solution
+#### Solution
 
 The following is a selection of the source code for the flag shop.
 
@@ -351,11 +351,11 @@ picoCTF{m0n3y_bag5_818a7f84}
 
 ## Mus1c
 
-### Problem
+#### Problem
 
 I wrote you a song. Put it in the picoCTF{} flag format
 
-### Solution
+#### Solution
 
 
 The hint for this question says "Do you think you can master rockstar?"
@@ -429,11 +429,11 @@ picoCTF{rrrocknrn0113r}
 
 ## 1_wanna_b3_a_r0ck5tar
 
-### Problem
+#### Problem
 
 I wrote you another song. Put the flag in the picoCTF{} flag format.
 
-### Solution
+#### Solution
 
 This is another txt file containing a Rockstar song. Running the code in returns no output.
 
