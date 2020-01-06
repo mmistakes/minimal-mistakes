@@ -1,5 +1,5 @@
 ---
-title: Solving PicoCTF 2019: General Skills using PowerShell
+title: "Solving PicoCTF 2019: General Skills using PowerShell"
 excerpt: "Learn how to solve the PicoCTF 2019 challenges using PowerShell when possible."
 tags:
 - PowerShell
