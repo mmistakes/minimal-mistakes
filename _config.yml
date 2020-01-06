@@ -19,7 +19,7 @@ dir                      : rtl
 locale                   : "en-GB"
 title                    : "Hydro IT LTD"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "Gidi Marcus - Storage & Microsoft Consultant" # site tagline that appears below site title in masthead
 name                     : "Gidi Marcus"
 description              : "Storage & Microsoft Consultant"
 url                      : "https://gidi.hydroit.co.uk" #The base hostname & protocol for your site e.g. "https://mmistakes.github.io"
