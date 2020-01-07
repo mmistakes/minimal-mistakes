@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Erster Schultag planmäßig",
-    "title": "Erster Schultag planmäßig",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M2QyZWkwdnZrbzBiMXAyNDAzdWRzNDdjazAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2020-01-06",
-      "date_time": null
-    },
-    "end": {
-      "date": "2020-01-07",
-      "date_time": null
-    },
-    "created": "2020-01-02T11:07:01.000Z",
-    "updated": "2020-01-02T11:07:09.052Z"
-  },
-  {
-    "image_path": null,
     "alt": "Zeugnisausgabe Klasse 4 - 6",
     "title": "Zeugnisausgabe Klasse 4 - 6",
     "excerpt": "Unterricht endet um 10:45 für alle Kinder",
@@ -66,6 +49,23 @@
     },
     "created": "2019-10-25T12:52:54.000Z",
     "updated": "2019-10-25T12:52:54.971Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Filmvorführung am Nachmittag",
+    "title": "Filmvorführung am Nachmittag",
+    "excerpt": "Fühl dich wie im Kino! Mit Popcorn und netten Kindern einen Kinofilm schauen.",
+    "url": "https://www.google.com/calendar/event?eid=NzFpMXFiMjJocXNhN2JpNHY5dTI0ZGYycmQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2020-02-28T17:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2020-02-28T19:00:00+01:00"
+    },
+    "created": "2020-01-06T15:01:23.000Z",
+    "updated": "2020-01-06T15:01:23.615Z"
   },
   {
     "image_path": null,
