@@ -1,7 +1,7 @@
 ---
 title:            "SSL Cheatsheet"
 date:             2018-04-30 00:00:00 -0500
-categories:       Bible
+categories:       IT
 tag:              [ssl, cheatsheet]
 ---
 ## SSL Cheatsheet

@@ -1,11 +1,13 @@
 # main links
 main:
-   - title: "Bible"
-     url: /categories/#bible
-     description: "Bible-related posts"
-   - title: "IT"
-     url: /categories/#it
-     description: "IT-related posts"
-   - title: "Resume"
-     url: /resume/
-     description: "Résumé, Curriculum Vitae"
+  - title: "Home"
+    url: /
+  - title: "Bible"
+    url: /categories/#bible
+    description: "Bible-related posts"
+  - title: "IT"
+    url: /categories/#it
+    description: "IT-related posts"
+  - title: "Bio + CV"
+    url: /bio_cv/
+    description: "Biography and Curriculum Vitae (Résumé)"

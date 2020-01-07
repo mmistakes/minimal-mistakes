@@ -11,7 +11,7 @@
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
@@ -23,16 +23,25 @@
           alt="">
       </div>
     {% endif %}
-    <h2 class="archive__item-title" itemprop="headline">
+    <h3 class="archive__item-title" itemprop="headline">
       {% if post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
         <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
       {% endif %}
-    </h2>
-    {% if post.read_time %}
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
-    {% endif %}
+    </h3>
+
+<!--    {% if post.read_time %}-->
+<!--      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>-->
+<!--    {% endif %}-->
+
+    <p class="page__meta">
+      {% if post.date %}
+      <i class="fa fa-fw fa-calendar-alt" aria-hidden="true"></i> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y " }}</time>&emsp;
+      {% endif %}
+      {% if post.read_time %}<i class="fa fa-clock" aria-hidden="true"></i>&nbsp;{% include read-time.html %}{% endif %}
+    </p>
+
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>
 </div>

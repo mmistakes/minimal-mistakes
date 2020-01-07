@@ -1,10 +1,10 @@
 ---
 layout:           single
-title:            "Resume"
+title:            "Bio + CV"
 date:             2018-01-18 00:00:00 -0500
 share:            true
 author_profile:   true
-permalink:        /resume/
+permalink:        /bio_cv/
 layouts_gallery:
                   - url: /assets/images/Resume-1.png
                     image_path: /assets/images/Resume-1.png

@@ -2,5 +2,5 @@
 
 open -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome http://localhost:4000
 
-bundle exec jekyll serve
+bundle exec jekyll serve --incremental
 

@@ -3,6 +3,7 @@
    ========================================================================== */
 
 .archive {
+  margin-top: 1em;
   margin-bottom: 2em;
 
   @include breakpoint($large) {
@@ -14,6 +15,19 @@
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
     padding-right: $right-sidebar-width;
+  }
+}
+
+.archive__item {
+  position: relative;
+
+  a {
+    position: relative;
+    z-index: 10;
+  }
+
+  a[rel="permalink"] {
+    position: static;
   }
 }
 
@@ -36,8 +50,13 @@
   overflow: hidden;
   text-overflow: ellipsis;
 
-  a {
-    color: inherit;
+  a[rel="permalink"]::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
   }
 
   a + a {
@@ -59,6 +78,10 @@
 
   & + p {
     text-indent: 0;
+  }
+
+  a {
+    position: relative;
   }
 }
 
@@ -211,11 +234,16 @@
   @include clearfix();
   margin-bottom: 2em;
   border-bottom: 1px solid $border-color;
+
+  .archive__item-title {
+    margin-bottom: 0;
+  }
 }
 
 .feature__item {
+  position: relative;
   margin-bottom: 2em;
-  font-size: 1.25rem;
+  font-size: 1.125em;
 
   @include breakpoint($small) {
     float: left;
@@ -243,16 +271,44 @@
     }
   }
 
+  .archive__item-body {
+    padding-left: gutter(1 of 12);
+    padding-right: gutter(1 of 12);
+  }
+
+  a.btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+
   &--left {
+    position: relative;
     float: left;
     margin-left: 0;
     margin-right: 0;
     width: 100%;
     clear: both;
-    font-size: 1.25rem;
+    font-size: 1.125em;
+
+    .archive__item {
+      float: left;
+    }
 
     .archive__item-teaser {
       margin-bottom: 2em;
+    }
+
+    a.btn::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
     }
 
     @include breakpoint($small) {
@@ -271,15 +327,29 @@
   }
 
   &--right {
+    position: relative;
     float: left;
     margin-left: 0;
     margin-right: 0;
     width: 100%;
     clear: both;
-    font-size: 1.25rem;
+    font-size: 1.125em;
+
+    .archive__item {
+      float: left;
+    }
 
     .archive__item-teaser {
       margin-bottom: 2em;
+    }
+
+    a.btn::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
     }
 
     @include breakpoint($small) {
@@ -291,7 +361,7 @@
       }
 
       .archive__item-body {
-        float: right;
+        float: left;
         width: span(7 of 12);
         padding-left: gutter(0.5 of 12);
         padding-right: gutter(1 of 12);
@@ -300,15 +370,30 @@
   }
 
   &--center {
+    position: relative;
     float: left;
     margin-left: 0;
     margin-right: 0;
     width: 100%;
     clear: both;
-    font-size: 1.25rem;
+    font-size: 1.125em;
+
+    .archive__item {
+      float: left;
+      width: 100%;
+    }
 
     .archive__item-teaser {
       margin-bottom: 2em;
+    }
+
+    a.btn::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
     }
 
     @include breakpoint($small) {
@@ -359,4 +444,12 @@
       padding-right: 0;
     }
   }
+}
+
+/* Place inside a single layout */
+
+.layout--single {
+	.feature__wrapper {
+		display: inline-block;
+	}
 }

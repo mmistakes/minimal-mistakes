@@ -3,21 +3,15 @@
     {% if site.data.ui-text[site.locale].follow_label %}
       <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
     {% endif %}
-    {% if site.twitter.username %}
-      <li><a href="https://twitter.com/{{ site.twitter.username }}"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+
+    {% if site.footer.links %}
+      {% for link in site.footer.links %}
+        {% if link.label and link.url %}
+          <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label }}</a></li>
+        {% endif %}
+      {% endfor %}
     {% endif %}
-    {% if site.facebook.username %}
-      <li><a href="https://www.facebook.com/{{ site.facebook.username }}"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
-    {% endif %}
-    {% if site.author.github %}
-      <li><a href="https://github.com/{{ site.author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
-    {% endif %}
-    {% if site.author.gitlab %}
-      <li><a href="https://gitlab.com/{{ site.author.gitlab }}"><i class="fab fa-fw fa-gitlab" aria-hidden="true"></i> Gitlab</a></li>
-    {% endif %}
-    {% if site.author.bitbucket %}
-      <li><a href="https://bitbucket.org/{{ site.author.bitbucket }}"><i class="fab fa-fw fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
-    {% endif %}
+
     <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
   </ul>
 </div>
