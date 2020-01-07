@@ -11,5 +11,4 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
   - title: "About"
-    url: https://isecure-kr.github.io/about/
-#    url: https://www.isecurekr.com/about/
+    url: /about/
