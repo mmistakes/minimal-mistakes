@@ -15,7 +15,7 @@ ToSee 네트워크 모니터링툴 NetMonitor는 사용자가 네트워크 상�
 
 **Note:** ToSee 설치시 네트워크 캡쳐를 위한 winpcap을 설치할 수 있습니다.**Note:** ToSee 삭제시 시스템 Driver의 작동과 삭제를 위해 잠시 시간이 소요될 수 있습니다.
 
-[![ToSee Screenshot](tosee_screenshot.png)](https://mmistakes.github.io/minimal-mistakes/)
+[![ToSee Screenshot](tosee_screenshot.png)](https://www.isecurekr.com)
 
 #특징
 -----
@@ -53,4 +53,4 @@ This theme comes in nine different skins (including the default one).
 #Personal Version Download
 --------------------------
 
-[Personal Version](https://github.com/kimkucheol/kimkucheol.github.io/blob/master/personalversion/2019-12-30_Setup_ToSee2018_personal.exe)
+[Personal Version](https://tosee.makesecu.com/down/2019-12-30_Setup_ToSee2018_personal.exe)
