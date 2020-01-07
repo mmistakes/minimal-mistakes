@@ -6,6 +6,7 @@ layout: single
 share: true
 related: true
 type: posts
+logo                     : "/img/Logo_002.png"
 ---
 [![iSecure Logo](/assets/images/iSecure_small.png)](https://www.isecurekr.com)
 
