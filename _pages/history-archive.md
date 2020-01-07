@@ -5,7 +5,7 @@ author_profile: true
 layout: single
 share: true
 related: true
-type: collection
+type: posts
 ---
 [![iSecure Logo](/assets/images/iSecure_small.png)](https://www.isecurekr.com)
 
