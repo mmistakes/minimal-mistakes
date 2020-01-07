@@ -1,7 +1,4 @@
 
-Below, we provide some recent publications.   
-By clicking on "Direct link", you are redirected to a .pdf version of that specific paper.   
-Alternatively, you can also opt to see the paper online by clicking on "link to the online version".
 
 ## Preprints
 - Buc Calderon, C., De Loof, E., Ergo, K., Snoeck, A., Boehler, C. N., & Verguts, T. Signed reward prediction errors in the ventral striatum drive episodic memory. [_BioArxiv._](https://www.biorxiv.org/content/10.1101/2020.01.03.893578v1)
