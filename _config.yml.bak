@@ -11,7 +11,8 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-remote_theme           : "mmistakes/minimal-mistakes"
+# remote_theme           : "mmistakes/minimal-mistakes"
+remote_theme           : "dinhanhthi/dinhanhthi.com"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -25,7 +26,7 @@ url                      : "https://isecure-kr.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/iSecure.png"
+logo                     : "/img/Logo_002.png"          #"/assets/images/iSecure.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 
 # breadcrumbs            : false # true, false (default)
@@ -121,6 +122,10 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://www.isecurekr.com"
+    - label: "ToSee 매뉴얼"
+      icon: "fab fa-fw fa-book"
+      url: "https://www.isecurekr.com"
+# https://fontawesome.com/icons?from=io
 #    - label: "Twitter"
 #      icon: "fab fa-fw fa-twitter-square"
 #      # url: "https://twitter.com/"

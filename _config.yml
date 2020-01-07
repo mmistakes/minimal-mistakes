@@ -120,10 +120,10 @@ author:
       icon: "fas fa-fw fa-envelope-square"
       url: mailto:isecure@isecurekr.com
     - label: "Website"
-      icon: "fas fa-fw fa-link"
+      icon: "fas fa-fw fa-home"
       url: "https://www.isecurekr.com"
     - label: "ToSee 매뉴얼"
-      icon: "fab fas fa-book"
+      icon: "fas fa-fw fa-book"
       url: "https://www.isecurekr.com"
 # https://fontawesome.com/icons?from=io
 #    - label: "Twitter"
