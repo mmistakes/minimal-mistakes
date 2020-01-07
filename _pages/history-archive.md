@@ -1,6 +1,8 @@
 ---
 permalink: /history/
 title: "History"
+author_profile: true
+layout: default
 ---
 [![iSecure Logo](/assets/images/iSecure_small.png)](https://www.isecurekr.com)
 
