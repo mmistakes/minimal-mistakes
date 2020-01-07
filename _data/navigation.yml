@@ -4,15 +4,15 @@ main:
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "Sample Posts"
   #   url: /year-archive/
+  - title: "About"
+    url: https://www.isecurekr.com/about/
+  - title: "History"
+    url: /history/      
   - title: "Categories"
     url: /categories/
   - title: "Tags"
     url: /tags/
   # - title: "Sitemap"
   #   url: /sitemap/
-  - title: "About"
-    url: https://www.isecurekr.com/about/
-  - title: "History"
-    url: /history/    
   - title: "iSecure"
     url: https://www.isecurekr.com/        
