@@ -6,6 +6,8 @@ main:
   #   url: /year-archive/
   - title: "About"
     url: https://www.isecurekr.com/about/
+  - title: "Release"
+    url: /release/          
   - title: "History"
     url: /history/      
   - title: "Categories"
