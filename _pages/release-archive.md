@@ -8,7 +8,7 @@ related: true
 type: posts
 logo                     : "/img/Logo_002.png"
 ---
-[![ToSeee Logo](/img/LogoBar_personal.png)]
+![iSecure Logo](/assets/images/iSecure_small.png)
 
 ------
 
