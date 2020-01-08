@@ -6,21 +6,22 @@ layout: single
 share: true
 related: true
 type: posts
+toc: true  
 logo                     : "/img/Logo_002.png"
 ---
 ![ToSee Logo](/img/LogoBar_Enterprise.png)
 
-# ToSee Personal Version
+# ToSee Personal / Enterprise Version
 
 ## 2.1.~
-### 2020.01.08  
+### 업데이트 일자 : 2020.01.08  
     1. ToSee Agent - 파일트랩의 ON/OFF 상태를 재부팅 후에도 유지할 수 있게 수정 
     2. 파일트랩 - 일부 NAS 사용시 발생되는 권한문제를 수정    
 
 ****
 
 ## 2.0.~
-### 2019.12.30
+### 업데이트 일자 : 2019.12.30
     1. ToSee 
        - 날짜 LOCK 해제.(기존 12월 31일까지로 되어 있던 날짜 Lock을 해제하였습니다.) 사용기간이 지난경우에도 업데이트 및 매니저를 제외한 기능을 모두 이용할 수 있습니다.
     2. FileTrap 기능 보완 및 추가
