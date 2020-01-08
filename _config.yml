@@ -125,7 +125,7 @@ author:
       url: "https://www.isecurekr.com"
     - label: "ToSee 매뉴얼"
       icon: "fas fa-fw fa-book"
-      url: "https://www.isecurekr.com"
+      url: /tosee/
 # https://fontawesome.com/icons?from=io
 #    - label: "Twitter"
 #      icon: "fab fa-fw fa-twitter-square"
