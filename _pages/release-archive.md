@@ -10,7 +10,7 @@ toc: true
 toc_label: "Choose Version"
 toc_icon: "burn"
 # classes: wide
-logo                     : "/img/Logo_002.png"
+logo                     : "/img/isecurelogo.png"
 ---
 
 ## Version 2.1.0
