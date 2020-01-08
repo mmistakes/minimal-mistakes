@@ -15,10 +15,7 @@ logo                     : "/img/Logo_002.png"
 -----
 
 ## 2.1.~
-
-
-<pre>
-<h5>
+<code>
 2020.01.08
 
 0. ToSee Agent
@@ -26,13 +23,10 @@ logo                     : "/img/Logo_002.png"
 
 1. 파일트랩
     - 일부 NAS 사용시 발생되는 권한문제를 수정
-</h5>
-</pre>
-
+</code>
 
 ## 2.0.~
-<pre>
-<h5>
+<code>
 2019.12.30
 
 1. ToSee
@@ -59,5 +53,4 @@ logo                     : "/img/Logo_002.png"
 
 5. 업데이트 수정
     - 업데이트 UI 수정
-</h5>    
-</pre>
+</code>
