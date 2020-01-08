@@ -10,7 +10,9 @@ toc: true
 
 # PicoCTF 2019 General Skills
 
-I was listening to one of my favorite podcasts, [Darknet Diaries](https://darknetdiaries.com/), and this episode was about CTFs and one Team's journey to become Def Con champions.  Jack Rhysider recommends that people who are interested in getting into CTFs should checkout Carnegie Mellon's PicoCTF. I enjoy learning and taking the advice of people who I want to emulate so I decided to do a writeup on PicoCTF 2019 using PowerShell. PicoCTF has been out for a while and the competition aspect of it is over. Fortunately the environment and challenges are available all year long.
+I was listening to one of my favorite podcasts, [Darknet Diaries](https://darknetdiaries.com/), and this episode was about CTFs and one Team's journey to become Def Con champions.  Jack Rhysider recommends that people who are interested in getting into CTFs should checkout Carnegie Mellon's [PicoCTF](https://2019game.picoctf.com/). I enjoy learning and taking the advice of people who I want to emulate so I decided to do a writeup on PicoCTF 2019 using PowerShell. PicoCTF has been out for a while and the competition aspect of it is over. Fortunately the environment and challenges are available all year long.
+
+If this sounds interesting to you, I recommend that you minimize this post and go through the PicoCTF 2019 General Skills challenges using your account.
 
 ## 2warm
 
@@ -84,7 +86,7 @@ picoCTF{grep_is_good_to_find_things_205b65d7}
 
 #### Problem
 
-We put together a bunch of resources to help you out on our website! If you go over there, you might even find a flag! https://picoctf.com/resources
+We put together a bunch of resources to help you out on our website! If you go over there, you might even find a flag! [https://picoctf.com/resources](https://picoctf.com/resources)
 
 #### Solution
 
@@ -132,6 +134,29 @@ Things are starting to get interesting! This next challenge is going to require 
 There are some modules available that we could use, but I want to just write up a quick script that contains all that we need. This is a great chance to get our hands dirty which I find is the best way that to learn. We could've probably written a script that would copy/paste values for us, but I think that doing something that we can run that will solve this for us will be more fun.
 
 <script src="https://gist.github.com/AndrewPla/62ccf308ed5d3050fff34b50fa7e52b9.js"></script>
+
+You can see the output of running the script below:
+
+```
+& '.\PicoCTF_based.ps1' -Verbose
+
+VERBOSE: Let us see how data is stored
+container
+Please give the 01100011 01101111 01101110 01110100 01100001 01101001 01101110 01100101 01110010 as a word.
+...
+you have 45 seconds.....
+
+Input:
+VERBOSE: Sending Answer: container
+VERBOSE: Please give me the  146 141 154 143 157 156 as a word.
+Input:
+VERBOSE: Sending Answer: falcon
+VERBOSE: Please give me the 7375626d6172696e65 as a word.
+Input:
+VERBOSE: Sending answer submarine
+You've beaten the challenge
+Flag: picoCTF{learning_about_converting_values_b515dfd2}
+```
 
 ## First Grep: Part II
 
@@ -375,7 +400,7 @@ put my flag into Pico
 
 `get-content .\lyrics.txt | Set-Clipboard`
 
-We can paste this code into https://codewithrockstar.com/online in order to run our code.
+We can paste this code into [https://codewithrockstar.com/online](https://codewithrockstar.com/online) in order to run our code.
 The script returns a series of numbers. We can create an array to store all of the numbers returned from the Rockstar program.
 
 ```
@@ -437,7 +462,7 @@ I wrote you another song. Put the flag in the picoCTF{} flag format.
 
 This is another txt file containing a Rockstar song. Running the code in returns no output.
 
-It sounds like it's time to RTFM a bit to understand what this code is actually doing. Read along here: https://codewithrockstar.com/docs
+It sounds like it's time to RTFM a bit to understand what this code is actually doing. Read along here: [https://codewithrockstar.com/docs](https://codewithrockstar.com/docs)
 
 "Simple variables are valid identifiers that are not language keywords. A simple variable name must contain only letters, and cannot contain spaces. Note that Rockstar does not allow numbers or underscores in variable names - remember the golden rule of Rockstar syntax: if you can’t sing it, you can’t have it. Simple variables are case-insensitive."
 
