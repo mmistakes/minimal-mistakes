@@ -7,11 +7,14 @@ share: true
 related: true
 type: posts
 toc: true  
+toc_label: "Choose Version"
+toc_icon: "burn"
+classes: wide
 logo                     : "/img/Logo_002.png"
 ---
 ![ToSee Logo](/img/LogoBar_Enterprise.png)
 
-# ToSee Personal / Enterprise Version
+# ToSee Release Document
 
 ## Version 2.1.~
     업데이트 일자 : 2020.01.08  

@@ -13,7 +13,7 @@
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 # remote_theme           : "dinhanhthi/dinhanhthi.com"
-remote_theme           : "allejo/jekyll-docs-theme"
+remote_theme           : allejo/jekyll-docs-theme
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -228,7 +228,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 25 # amount of posts to show
+paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
