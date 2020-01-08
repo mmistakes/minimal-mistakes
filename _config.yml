@@ -12,7 +12,8 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-remote_theme           : "dinhanhthi/dinhanhthi.com"
+# remote_theme           : "dinhanhthi/dinhanhthi.com"
+remote_theme           : "allejo/jekyll-docs-theme"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
