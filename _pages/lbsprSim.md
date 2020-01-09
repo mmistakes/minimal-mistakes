@@ -1,9 +1,11 @@
 ---
 layout: splash
-title: LBPSR Simulation - PLEASE NOTE: THE SERVER IS CURRENTLY OFFLINE FOR MAINTENANCE
+title: LBPSR Simulation 
 permalink: /lbspr_sim.html
 
 ---
+
+# PLEASE NOTE: THE SERVER IS CURRENTLY OFFLINE FOR MAINTENANCE
 
 ## LBSPR Simulation Model
   
