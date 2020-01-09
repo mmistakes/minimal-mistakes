@@ -8,7 +8,7 @@ permalink: /lbspr.html
 # PLEASE NOTE: THE SERVER IS CURRENTLY OFFLINE FOR MAINTENANCE 
 
 ## Length-Based Spawning Potential Ratio
-The LBSPR method has been developed for data-limited fisheries, where few data are available other than a representative sample of the size structure of the vulnerable portion of the population (i.e., the catch) and an understanding of the life history of the species.  The LBSPR method does not require knowledge of the natural mortality rate (*M*), but instead uses the ratio of natural mortality and the von Bertalanffy growth coefficient (*K*) (*M*//*K*), which is believed to vary less across stocks and species than *M* (Prince et al. 2015).  
+The LBSPR method has been developed for data-limited fisheries, where few data are available other than a representative sample of the size structure of the vulnerable portion of the population (i.e., the catch) and an understanding of the life history of the species.  The LBSPR method does not require knowledge of the natural mortality rate (*M*), but instead uses the ratio of natural mortality and the von Bertalanffy growth coefficient (*K*) (*M*/*K*), which is believed to vary less across stocks and species than *M* (Prince et al. 2015).  
 
 Like any assessment method, the LBSPR model relies on a number of simplifying assumptions. In particular, the LBSPR models are equilibrium based, and assume that the length composition data is representative of the exploited population at steady state. See the publicaitons listed in the reference list for full details of the assumptions of the model, including simulation testing to evauate the effect of violations of these assumptions.  
 
