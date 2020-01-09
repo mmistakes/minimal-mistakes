@@ -52,6 +52,23 @@
   },
   {
     "image_path": null,
+    "alt": "Girls´Day und Boy´s Day",
+    "title": "Girls´Day und Boy´s Day",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NGQ5MmY1OGVyM3RlNG4wMHFvNTVndWFnbjkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2020-02-26",
+      "date_time": null
+    },
+    "end": {
+      "date": "2020-02-27",
+      "date_time": null
+    },
+    "created": "2020-01-08T08:10:20.000Z",
+    "updated": "2020-01-08T08:10:20.998Z"
+  },
+  {
+    "image_path": null,
     "alt": "Filmvorführung am Nachmittag",
     "title": "Filmvorführung am Nachmittag",
     "excerpt": "Fühl dich wie im Kino! Mit Popcorn und netten Kindern einen Kinofilm schauen.",
@@ -83,22 +100,5 @@
     },
     "created": "2019-08-22T08:03:10.000Z",
     "updated": "2019-08-22T08:03:10.314Z"
-  },
-  {
-    "image_path": null,
-    "alt": "4. GEV um 18:30 Uhr",
-    "title": "4. GEV um 18:30 Uhr",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=N2xnanRpYmk0N2hidGZqODY0cjBwNHA2NGogaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2020-05-14T18:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2020-05-14T20:00:00+02:00"
-    },
-    "created": "2019-10-25T12:53:36.000Z",
-    "updated": "2019-10-25T12:53:36.451Z"
   }
 ]
