@@ -148,9 +148,9 @@ logo                     : "/img/isecurelogo.png"
 ||사용자에 따른 버전 구성|
 |-----|-----|
 | <img src="/img/pic_personal.png" width="177px" height="177px"/> | **ToSee Personal** <br> - 개인 사용자를 위한 취약점 진단, 파일트랩으로 랜섬웨어 차단, 네트워크 모니터링으로 자가진단이 가능. <br> - 개인용 버전은 매니져 시스템을 제공하지 않습니다. |
-| | <img src="/img/pic_ar01.png" width="177px" height="91px"/> |
+| | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="/img/pic_ar01.png" width="177px" height="91px"/> |
 | <img src="/img/pic_enterprise.png" width="177px" height="177px"/> | **ToSee Enterprise** <br> - Personal 기능을 포함 <br> - 기업의 보안 수준 향상과 함께 ISMS 인증을 위한 PC 자산 관리를 위한 버전. <br> - 시스템 관리를 위한 매니져 시스템 제공 |
-| |  <img src="/img/pic_ar02.png" width="177px" height="91px"/>  | 
+| | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <img src="/img/pic_ar02.png" width="177px" height="91px"/>  | 
 | <img src="/img/pic_custom.png" width="177px" height="177px"/> | **ToSee Enterprise Custom** <br> - Enterprise 기능을 포함. <br> - 기업이 원하는 보안 진단 항목을 추가하고 파일트랩, 네트워크 모니터링 기능 제공 <br> - BFE를 이용한 방화벽 기능 제공 <br> - 기업 자체적으로 이용할 수 있는 별도의 서버를 구축하여 매니져 시스템을 제공. |
 
 
