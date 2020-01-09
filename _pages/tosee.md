@@ -7,7 +7,7 @@ share: true
 related: true
 type: posts
 toc: true  
-toc_label: "Choose Version"
+toc_label: "Choose Index"
 toc_icon: "burn"
 classes: wide
 logo                     : "/img/isecurelogo.png"
@@ -15,7 +15,6 @@ logo                     : "/img/isecurelogo.png"
 
 # ToSee 소개
 ----
-## ToSee 소개
 
 ### 개인 PC 보안 수준 향상
 
@@ -33,23 +32,40 @@ logo                     : "/img/isecurelogo.png"
 
 |||||
 |-----|-----|-----|-----|
-| <img src="/img/pic_u01.png" width="205px" height="205px"/> | <img src="/img/pic_u02.png" width="205px" height="205px"/> | <img src="/img/pic_u03.png" width="205px" height="205px"/> | <img src="/img/pic_u04.png" width="205px" height="205px"/> |
+| <img src="/img/pic_u01.png" width="210px" height="210px"/> | <img src="/img/pic_u02.png" width="210px" height="210px"/> | <img src="/img/pic_u03.png" width="210px" height="210px"/> | <img src="/img/pic_u04.png" width="210px" height="210px"/> |
 
 
-### 주요기능 : 취약점 진단 도구.
+### 주요기능 : 취약점 진단 도구 Analyzer.
 
 |||
 |:-----:|:-----|
 | <img src="/img/pic_btn01.png" width="205px" height="205px"/> | - 취약점 진단 : 기본 15 가지 항목, USB 사용 내역, 이벤트 로그 분석 등을 통한 PC의 취약점을 진단. <br> - 진단 결과 및 조치 : 진단 결과에 따라 즉시 조치가 가능한 항목은 조치 버튼을 눌러 즉각적인 조치 가능. <br> - 설치 프로그램 : 설치된 프로그램명을 가지고 PUP 리스트와 자연어 처리 기법을 이용하여 비교 판단. <br> - 윈도우 업데이트 현황 : 운영체제의 세부적인 업데이트 현황을 바로 확인 가능. <br> - 실행중 서비스 현황 : 실행중인 서비스의 정보와 스테이터스를 쉽게 확인 가능. <br> - USB 사용 내역 : USB 저장 장치의 최근 사용 내역을 확인 가능. <br> - 이벤트 로그 분석 : 시스템의 에러 로그만을 분리하여 현황을 확인하고, 조치 가능한 경우 조치 방법을 안내. |
 | <img src="/img/pic_L01.png" width="205px" height="205px"/> | <img src="/img/pic_screen01.png" width="536px" height="289px"/> |
 
+### 주요기능 : 랜섬웨어 솔루션 FILETRAP
 
 |||
 |:-----:|:-----|
 | <img src="/img/pic_btn02.png" width="205px" height="205px"/> | - 랜섬웨어 차단 :행위 기반을 이용한 랜섬웨어의 확인 및 차단 기능 <br> - 폴더 보호 기능 : 특별히 보호해야 되는 폴더의 경우 해당 폴더를 보호 폴더로 추가하면 해당 폴더 내의 데이터에 대하여 허가된 프로그램만 접근이 가능하도록 설정 <br> - 로컬 자동 백업  : 지정된 파일 형식의 문서인 경우 허가되지 않은 프로그램이 접근하거나 임의로 변경하는 경우 해당 행위 전 파일을 자동으로 백업하여 데이터를 보존함. <br> <span style="color:red"> - 클라우드 자동백업 : (추가 예정) 로컬 자동 백업과 동일한 동작을 하지만, 데이터 저장을 클라우드상에 하는 기능. </span> |
 | <img src="/img/pic_L02.png" width="205px" height="205px"/> | <img src="/img/pic_screen02.png" width="1007px" height="463px"/> |
 
+### 주요기능 : 네트워크 모니터
+
 |||
 |:-----:|:-----|
 | <img src="/img/pic_btn03.png" width="205px" height="205px"/> | - 엘라스틱 벡터 그래픽을 이용하여 PC상에 입/출력되는 네트워크 데이터의 위상을 시각화하여 표현 <br> - Pcap을 이용 아스키코드 및 Machine Language Code를 통한 패킷 분석 가능. Mnemonic Code 지원 예정 <br> - Promiscuous Mode를 지원하여 자신의 PC를 중심으로 주변의 네트워크 상황 확인 가능 <br> - 캡쳐된 데이타를 XML 포멧으로 저장하여 관리 및 분석하는 기능 제공. |
 | <img src="/img/pic_L03.png" width="205px" height="205px"/> | <img src="/img/pic_screen03.png" width="967px" height="466px"/> |
+
+
+### 주요기능 : 윈도우 방화벽 지원 FIREWALL PLUS
+
+|||
+|:-----:|:-----|
+| <img src="/img/pic_btn04.png" width="205px" height="205px"/> | - 윈도우 방화벽에서 기본적으로 관리하지 않는 Unknown 포트(1024 이후)를 사용하는 어플리케이션의 네트워크 송/수신 차단 기능 <br> - 윈도우 서비스 관리 모듈인 SVCHOST를 이용하는 어플리케이션의 네트워크 송/수신 내역을 관리. <br> - 기존 윈도우 어플리케이션이 아닌 윈도우 앱(App)들의 네트워크 송/수신 내역 차단 가능 <br> - 인증된 윈도우 어플리케이션에 대해서는 자동적으로 네트워크 사용을 허가하는 기능(윈도우 8.0부터 제공) |
+| <img src="/img/pic_L04.png" width="205px" height="205px"/> | <img src="/img/pic_screen04.png" width="1046px" height="446px"/> |
+
+## ToSee 기대효과
+### 보안 수준 향상과 보안 인증을 함께
+
+<img src="/img/page9.png" width="1420px" height="778px"/>
+
