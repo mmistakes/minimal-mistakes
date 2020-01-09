@@ -1,6 +1,6 @@
 ---
 layout: splash
-title: Natural Mortality Estimators
+title: Natural Mortality Estimators - PLEASE NOTE: THE SERVER IS CURRENTLY OFFLINE FOR MAINTENANCE
 permalink: /shiny_m.html
 
 ---

@@ -1,6 +1,6 @@
 ---
 layout: splash
-title: Length-Based SPR 
+title: Length-Based SPR - PLEASE NOTE: THE SERVER IS CURRENTLY OFFLINE FOR MAINTENANCE 
 permalink: /lbspr.html
 
 ---

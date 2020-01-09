@@ -1,5 +1,5 @@
 ---
-title: "Applications"
+title: "Applications - PLEASE NOTE: THE SERVER IS CURRENTLY OFFLINE FOR MAINTENANCE"
 layout: single
 sitemap: false
 permalink: /apps.html
