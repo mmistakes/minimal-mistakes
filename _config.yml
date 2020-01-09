@@ -123,9 +123,12 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-home"
       url: "https://www.isecurekr.com"
-    - label: "ToSee 매뉴얼"
+    - label: "ToSee 소개"
       icon: "fas fa-fw fa-book"
       url: /tosee/
+    - label: "ToSee 매뉴얼"
+      icon: "fas fa-fw fa-book"
+      url: /manual/      
 # https://fontawesome.com/icons?from=io
 #    - label: "Twitter"
 #      icon: "fab fa-fw fa-twitter-square"
