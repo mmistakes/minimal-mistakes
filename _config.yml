@@ -11,9 +11,9 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
+remote_theme           : "mmistakes/minimal-mistakes"
 # remote_theme           : "dinhanhthi/dinhanhthi.com"
-remote_theme           : allejo/jekyll-docs-theme
+# remote_theme           : allejo/jekyll-docs-theme
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -242,6 +242,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - jemoji
   - jekyll-include-cache
 
 # mimic GitHub Pages with --safe
@@ -250,6 +251,7 @@ whitelist:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - jemoji
   - jekyll-include-cache
 
 
@@ -296,9 +298,6 @@ defaults:
   - scope:
       path: ""
       type: posts
-    header:
-      overlay_image: /assets/images/Splash_Logo_web.png
-      overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background or "rgba(255, 0, 0, 0.5)"      
     values:
       layout: single
       author_profile: true
