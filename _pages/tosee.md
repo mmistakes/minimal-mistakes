@@ -33,7 +33,7 @@ logo                     : "/img/isecurelogo.png"
 
 |||||
 |-----|-----|-----|-----|
-| <img src="/img/pic_u01.png" width="180px" height="180px"/> | <img src="/img/pic_u02.png" width="180px" height="180px"/> | <img src="/img/pic_u03.png" width="180px" height="180px"/> | <img src="/img/pic_u04.png" width="180px" height="180px"/> |
+| <img src="/img/pic_u01.png" width="190px" height="190px"/> | <img src="/img/pic_u02.png" width="190px" height="190px"/> | <img src="/img/pic_u03.png" width="190px" height="190px"/> | <img src="/img/pic_u04.png" width="190px" height="190px"/> |
 
 
 ### 주요기능 : 취약점 진단.
