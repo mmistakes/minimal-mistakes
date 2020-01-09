@@ -47,4 +47,9 @@ logo                     : "/img/isecurelogo.png"
 |||
 |:-----:|:-----|
 | <img src="/img/pic_btn02.png" width="205px" height="205px"/> | - 랜섬웨어 차단 :행위 기반을 이용한 랜섬웨어의 확인 및 차단 기능 <br> - 폴더 보호 기능 : 특별히 보호해야 되는 폴더의 경우 해당 폴더를 보호 폴더로 추가하면 해당 폴더 내의 데이터에 대하여 허가된 프로그램만 접근이 가능하도록 설정 <br> - 로컬 자동 백업  : 지정된 파일 형식의 문서인 경우 허가되지 않은 프로그램이 접근하거나 임의로 변경하는 경우 해당 행위 전 파일을 자동으로 백업하여 데이터를 보존함. <br> <span style="color:red"> - 클라우드 자동백업 : (추가 예정) 로컬 자동 백업과 동일한 동작을 하지만, 데이터 저장을 클라우드상에 하는 기능. </span> |
-| <img src="/img/pic_L02.png" width="205px" height="205px"/> | <img src="/img/pic_screen02.png" width="536px" height="289px"/> |
+| <img src="/img/pic_L02.png" width="205px" height="205px"/> | <img src="/img/pic_screen02.png" width="1007px" height="463px"/> |
+
+|||
+|:-----:|:-----|
+| <img src="/img/pic_btn03.png" width="205px" height="205px"/> | - 엘라스틱 벡터 그래픽을 이용하여 PC상에 입/출력되는 네트워크 데이터의 위상을 시각화하여 표현 <br> - Pcap을 이용 아스키코드 및 Machine Language Code를 통한 패킷 분석 가능. Mnemonic Code 지원 예정 <br> - Promiscuous Mode를 지원하여 자신의 PC를 중심으로 주변의 네트워크 상황 확인 가능 <br> - 캡쳐된 데이타를 XML 포멧으로 저장하여 관리 및 분석하는 기능 제공. |
+| <img src="/img/pic_L03.png" width="205px" height="205px"/> | <img src="/img/pic_screen03.png" width="967px" height="466px"/> |
