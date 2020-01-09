@@ -19,18 +19,20 @@ logo                     : "/img/isecurelogo.png"
 
 ----
 
-
+&nbsp;
 ### 개인 PC 보안 수준 향상
+&nbsp;
 
 
 |  개인 PC 보안 수준 향상  |
 |  :-----------------------  |
 | 개인이나 일반 기업, 금융기관에 이르기까지 보안의 가장 큰 위협 요소는 개인 PC (업무용 및 개인 단말기)에서 기밀정보나 개인정보 등의 내부정보가 유출되는 것입니다.  즉, 엔드포인트에서의 강력한 보안이 매우 중요합니다. <br> 일반적으로 개인이 사용하고 있는 PC는 인터넷망에 연결되어 있어 웹서핑이나 이메일 , 이동형외장 메모리 등에 의한  악성코드 감염에 노출될 가능성이 높습니다.  <br> 또한 개인이 사용하는 PC는 안티바이러스 등의 아주 기본적인 프로그램만을 설치하고 있어 운영체제의 보안 정책 등의 복잡한 보안 점검 및 조치에는 소홀한 경우가 매우 많습니다.  <br> ToSee는 취약점 진단 툴을 이용하여 운영체제의 보안 점검과 조치를 간편하게 해주고, 랜섬웨어의 위협을 차단하며, 지정된 폴더를 보호합니다. 또한, 문서파일을 자동으로 백업하여, 중요한 데이터를 안전하게 지켜주는 기능을 제공합니다. 이처럼 ToSee는 개인 PC의 보안 수준을 편리하고 안전하게 향상시켜줍니다.  |
-| <img src="/img/pic01.png" width="400px" height="204px" title="취약점 진단과 데이터보호기능을 통한 시스템 보안" alt="pic01" />  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; <img src="/img/pic02.png"  width="400px" height="242px" title="네트워크모니터링을 통한 외부 유출 감지" alt="pic02"> |
+| <img src="/img/pic01.png" width="400px" height="204px" title="취약점 진단과 데이터보호기능을 통한 시스템 보안" alt="pic01" />  &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; <img src="/img/pic02.png"  width="400px" height="242px" title="네트워크모니터링을 통한 외부 유출 감지" alt="pic02"> |
 
-
-
+&nbsp;
+&nbsp;
 ### 사용자 편의를 위한 개인 PC 보안솔루션 
+&nbsp;
 
 
 |||||
@@ -43,9 +45,10 @@ logo                     : "/img/isecurelogo.png"
 | <img src="/img/pic_u01.png" width="210px" height="210px"/> | <img src="/img/pic_u02.png" width="210px" height="210px"/> | <img src="/img/pic_u03.png" width="210px" height="210px"/> | <img src="/img/pic_u04.png" width="210px" height="210px"/> |
 
 
-
+&nbsp;
+&nbsp;
 ### 주요기능 : 취약점 진단 도구 Analyzer.
-
+&nbsp;
 
 |||
 |:-----:|:-----|
@@ -53,9 +56,10 @@ logo                     : "/img/isecurelogo.png"
 | <img src="/img/pic_L01.png" width="205px" height="205px"/> | <img src="/img/pic_screen01.png" width="536px" height="289px"/> |
 
 
-
+&nbsp;
+&nbsp;
 ### 주요기능 : 랜섬웨어 솔루션 FILETRAP
-
+&nbsp;
 
 |||
 |:-----:|:-----|
@@ -63,9 +67,10 @@ logo                     : "/img/isecurelogo.png"
 | <img src="/img/pic_L02.png" width="205px" height="205px"/> | <img src="/img/pic_screen02.png" width="1007px" height="463px"/> |
 
 
-
+&nbsp;
+&nbsp;
 ### 주요기능 : 네트워크 모니터
-
+&nbsp;
 
 |||
 |:-----:|:-----|
@@ -73,9 +78,10 @@ logo                     : "/img/isecurelogo.png"
 | <img src="/img/pic_L03.png" width="205px" height="205px"/> | <img src="/img/pic_screen03.png" width="967px" height="466px"/> |
 
 
-
+&nbsp;
+&nbsp;
 ### 주요기능 : 윈도우 방화벽 지원 FIREWALL PLUS
-
+&nbsp;
 
 |||
 |:-----:|:-----|
@@ -83,24 +89,27 @@ logo                     : "/img/isecurelogo.png"
 | <img src="/img/pic_L04.png" width="205px" height="205px"/> | <img src="/img/pic_screen04.png" width="1046px" height="446px"/> |
 
 
-
+&nbsp;
+&nbsp;
 ## ToSee 기대 효과
 
 
-
+&nbsp;
+&nbsp;
 ### 보안 수준 향상과 보안 인증을 함께
-
+&nbsp;
 
 <img src="/img/page9.png" width="1420px" height="778px"/>
 
 
-
+&nbsp;
+&nbsp;
 ## ToSee 사용 환경
 
-
-
+&nbsp;
+&nbsp;
 ### 사용 환경 및 진단 가능 OS
-
+&nbsp;
 
 - ToSee는 개인 PC 운영체제 Windows Vista 부터 Windows 10까지 취약점 진단 및 관리가 가능하고 랜섬웨어에 의한 피해를 최소화합니다. 또한 개인 PC는 안티바이러스만으로는 보안에 취약할 수 있으며, 적절한 취약점 조치를 위해 지속적인 업데이트가 필요합니다.
 
@@ -127,13 +136,14 @@ logo                     : "/img/isecurelogo.png"
 | Windows 10 | No ServicePack <br> Update : Threshold, RedStone, 19H@ <br> Last Build 18363 (2019.11.12) | - |
 
 
-
+&nbsp;
+&nbsp;
 ## ToSee 버젼 구성
 
-
-
+&nbsp;
+&nbsp;
 ### 사용자에 따른 버전 구성
-
+&nbsp;
 
 ||사용자에 따른 버전 구성|
 |-----|-----|
