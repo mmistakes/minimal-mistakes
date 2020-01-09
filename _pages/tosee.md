@@ -28,6 +28,6 @@ logo                     : "/img/isecurelogo.png"
 
 |||||
 |-----|-----|-----|-----|
-| <img src="/img/pic_one.png" width="100px" height="100px" /> | - 원클릭으로 취약점 점검   - 진단 결과에 따라 취약 항목 즉시 조치가능 |<img src="/img/pic_one.png" width="100px" height="100px"/>| - EV 인증서로 신뢰성과 안정성 확보  - Microsoft WHQL  인증을 통한 안정성 확보 |
-| <img src="/img/pic_one.png" width="100px" height="100px"/> | | <img src="/img/pic_one.png" width="100px" height="100px"/> | |
+| <img src="/img/pic_one.png" width="100px" height="100px" /> | - 원클릭으로 취약점 점검 <br> - 진단 결과에 따라 취약 항목 즉시 조치가능 |<img src="/img/pic_one.png" width="100px" height="100px"/>| - EV 인증서로 신뢰성과 안정성 확보  <br> - Microsoft WHQL  인증을 통한 안정성 확보 |
+| <img src="/img/pic_one.png" width="100px" height="100px"/> | - UUID를 이용한 자산관리 <br> - 매니저를 통한 진단 관리 | <img src="/img/pic_one.png" width="100px" height="100px"/> | - 취약점 진단 및 조치 <br> - 네트워크 모니터링 <br> - 랜섬웨어 차단 및 데이터 보호 |
 | <img src="/img/pic_U01.png" width="150px" height="150px"/> | <img src="/img/pic_U02.png" width="150px" height="150px"/> | <img src="/img/pic_U03.png" width="150px" height="150px"/> | <img src="/img/pic_U04.png" width="150px" height="150px"/> |
