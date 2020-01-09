@@ -64,8 +64,51 @@ logo                     : "/img/isecurelogo.png"
 | <img src="/img/pic_btn04.png" width="205px" height="205px"/> | - 윈도우 방화벽에서 기본적으로 관리하지 않는 Unknown 포트(1024 이후)를 사용하는 어플리케이션의 네트워크 송/수신 차단 기능 <br> - 윈도우 서비스 관리 모듈인 SVCHOST를 이용하는 어플리케이션의 네트워크 송/수신 내역을 관리. <br> - 기존 윈도우 어플리케이션이 아닌 윈도우 앱(App)들의 네트워크 송/수신 내역 차단 가능 <br> - 인증된 윈도우 어플리케이션에 대해서는 자동적으로 네트워크 사용을 허가하는 기능(윈도우 8.0부터 제공) |
 | <img src="/img/pic_L04.png" width="205px" height="205px"/> | <img src="/img/pic_screen04.png" width="1046px" height="446px"/> |
 
-## ToSee 기대효과
+## ToSee 기대 효과
+
 ### 보안 수준 향상과 보안 인증을 함께
 
 <img src="/img/page9.png" width="1420px" height="778px"/>
 
+
+## ToSee 사용 환경
+
+### 사용 환경 및 진단 가능 OS
+
+- ToSee는 개인 PC 운영체제 Windows Vista 부터 Windows 10까지 취약점 진단 및 관리가 가능하고 랜섬웨어에 의한 피해를 최소화합니다. 또한 개인 PC는 안티바이러스만으로는 보안에 취약할 수 있으며, 적절한 취약점 조치를 위해 지속적인 업데이트가 필요합니다.
+
+**사용 환경**
+
+| 구분 |최소사양|권장사양|
+|:-----|:-----:|:-----:|
+| CPU | Intel 1Ghz 32bit or 64bit | Intel Core i3 이상 |
+| MEMORY | 시스템 메모리 1Gb | 시스템 메모리 2Gb 이상 |
+| GRAPHIC | Windows 7 이상 지원 그래픽 카드 이상 | Windows 10 지원 그래픽 카드 이상 |
+| HDD | 최소 여유 공간 50MB  | 여유 공간 50MB 이상 |
+| DISPLAY | 최소 1280x 1024 해상도 |  1920 x 1080 해상도 |
+| NETWORK | 인터넷네트워크 연결 필요 | 인터넷네트워크 연결 필요 |
+| OPERATING SYSTEM | Windows 7 (32/64bit) 이상 | Windows 10 (32/64bit) 이상 |
+| ETC | 설치시 필요 프로그램 자동설치 | 설치시 필요 프로그램 자동설치 |
+
+
+**진단 가능 OS**
+| 진단 가능 OS | 서비스팩 | EOS(End Of Support) |
+|:-----|:-----:|:-----:|
+| Windows 7 | ServicePack 1 | 2020.01.14, 2023.01.14(Enterprise 한정,유료) |
+| Windows 8 | Windows8.1, no ServicePack | 2017.05.13(Windows8) , 2023.01.10(Windows8.1) |
+| Windows 10 | No ServicePack <br> Update : Threshold, RedStone, 19H@ <br> Last Build 18363 (2019.11.12) | - |
+
+## ToSee 버젼 구성
+
+### 사용자에 따른 버전 구성
+
+|||
+|-----|-----|
+| <img src="/img/pic_personal.png" width="177px" height="177px"/> | **ToSee Personal** <br> - 개인 사용자를 위한 취약점 진단, 파일트랩으로 랜섬웨어 차단, 네트워크 모니터링으로 자가진단이 가능. <br> - 개인용 버전은 매니져 시스템을 제공하지 않습니다. |
+| <img src="/img/pic_ar01.png" width="177px" height="91px"/> ||
+| <img src="/img/pic_enterprise.png" width="177px" height="177px"/> | **ToSee Enterprise** <br> - Personal 기능을 포함 <br> - 기업의 보안 수준 향상과 함께 ISMS 인증을 위한 PC 자산 관리를 위한 버전. <br> - 시스템 관리를 위한 매니져 시스템 제공 |
+| <img src="/img/pic_ar02.png" width="177px" height="91px"/> ||
+| <img src="/img/pic_custom.png" width="177px" height="177px"/> | **ToSee Enterprise Custom** <br> - Enterprise 기능을 포함. <br> - 기업이 원하는 보안 진단 항목을 추가하고 파일트랩, 네트워크 모니터링 기능 제공 <br> - BFE를 이용한 방화벽 기능 제공 <br> - 기업 자체적으로 이용할 수 있는 별도의 서버를 구축하여 매니져 시스템을 제공. |
+
+
+<ToSee 소개> 수정일자 2020.01.09
