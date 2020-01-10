@@ -8,7 +8,6 @@ header:
 {{ content }}
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "list" }}</h3>
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "list" }}</h3>
 
 {% for post in paginator.posts %}
   {% include archive-single.html %}
