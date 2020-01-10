@@ -40,7 +40,8 @@ At the USDA Agricultural Research Service I hold a career scientist position as 
 
 I have a courtesy faculty appointment in the Department of Microbiology and Cell science at the University of Florida.
 
-[Academic CV](https://github.com/arivers/cv/raw/master/cv-arivers.pdf)
+[Academic CV](https://github.com/arivers/cv/raw/master/cv-arivers.pdf)  
+[Google Scholar profile](https://scholar.google.com/citations?user=1-l8IxwAAAAJ)
 
 ![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/pp_ravin_150.jpg){: .align-left}
 
@@ -59,3 +60,27 @@ communities using [amplicon sequencing, metabolomics, and Bayesian networks](/pr
 order to identify key microbial structures and functional signatures to support
 the selection of candidate taxa or microbial-consortia for microbiome-based crop
 productions.  
+
+![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/aSwarup.JPG){: .align-left}
+
+## Anushka Swarup
+
+_MS Candidate, University of Florida_
+
+Anushka is a Masters student in the Electrical & Computer Engineering Department at the University of Florida. Her interests include solving research problems by making use of various Machine Learning and Data Analysis techniques. Her primary area of research lies in the domain of Image Analysis wherein she has developed applications for fields ranging from agricultural monitoring to biometrics.
+
+For the Agricultural Microbiomes group, she is developing a web application for predicting custom PAM sites in any small genome. Also, she will be involved in solving the problem of  target and covariance shift in training and testing data for machine learning models.
+
+![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/users.png){: .align-left}
+## Jeremy Winders, PhD
+
+_PhD, Mississippi State University, 2019_
+
+Dr. Winders is working on a project to determine the sex of chicken eggs when they are laid by applying high-throughput volatiles mass spectrometry and machine learning.   
+
+![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/users.png){: .align-left}
+## Ryo (Leo) Iwata
+
+_BS University of Florida 2018_
+
+Leo is an analyst in the group working on the application of machine learning to bioinformatic workflows.
