@@ -21,3 +21,7 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
 .page__footer-follow .social-icons .svg-inline--fa {
   color: inherit;
 }
+
+#page-title{
+  color: $link-color;
+}
