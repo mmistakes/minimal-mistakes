@@ -1,4 +1,5 @@
 ---
+layout: "single"
 title: "ToSee Version 2.0 개선사항"
 excerpt_separator: "<!--more-->"
 categories:
@@ -6,6 +7,7 @@ categories:
 tags:
   - ToSee
   - Version2
+comments:
 ---
 
 ## Version 2.0
