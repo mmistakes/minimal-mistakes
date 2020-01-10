@@ -295,10 +295,10 @@ compress_html:
 
 # Defaults
 defaults:
-  # _pages
+  # _posts
   - scope:
       path: ""
-      type: pages
+      type: posts
     values:
       layout: single
       author_profile: true
