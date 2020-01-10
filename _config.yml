@@ -297,9 +297,9 @@ defaults:
   # _posts
   - scope:
       path: ""
-#      type: posts
+      type: pages
     values:
-      layout: splash
+      layout: single
       author_profile: true
       read_time: true
       comments: # true
