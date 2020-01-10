@@ -25,7 +25,7 @@ name                     : "iSecure"
 description              : "아이시큐어 제품과 서비스에 관련된 기술적인 내용들을 정리한 사이트입니다."
 url                      : "https://isecure-kr.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "isecure-kr/isecure-kr.github.io"  # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/img/isecurelogo.png"          #"/assets/images/iSecure.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title

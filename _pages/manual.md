@@ -9,6 +9,7 @@ type: posts
 toc: true  
 toc_label: "Choose Index"
 toc_icon: "burn"
+toc_sticky: true
 # classes: wide
 logo                     : "/img/isecurelogo.png"
 ---
