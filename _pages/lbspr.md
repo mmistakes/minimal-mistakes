@@ -5,8 +5,6 @@ permalink: /lbspr.html
 
 ---
 
-# PLEASE NOTE: THE SERVER IS CURRENTLY OFFLINE FOR MAINTENANCE 
-
 ## Length-Based Spawning Potential Ratio
 The LBSPR method has been developed for data-limited fisheries, where few data are available other than a representative sample of the size structure of the vulnerable portion of the population (i.e., the catch) and an understanding of the life history of the species.  The LBSPR method does not require knowledge of the natural mortality rate (*M*), but instead uses the ratio of natural mortality and the von Bertalanffy growth coefficient (*K*) (*M*/*K*), which is believed to vary less across stocks and species than *M* (Prince et al. 2015).  
 
@@ -36,7 +34,7 @@ Download the files:
 <a href="https://github.com/AdrianHordyk/lbspr/zipball/master" class="fa fa-download"><span> LBSPR R Package </span></a>
 
 ## LBSPR R Shiny App
-<iframe src="http://142.103.48.20:3838/LBSPR/" height="1600px" width="100%" frameBorder="0">
+<iframe src="http://159.65.217.133:3838/LBSPR/" height="1600px" width="100%" frameBorder="0">
   Your browser doesn't support iframes
 </iframe>
 
