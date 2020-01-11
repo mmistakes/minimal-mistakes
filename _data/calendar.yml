@@ -52,23 +52,6 @@
   },
   {
     "image_path": null,
-    "alt": "Girls´Day und Boy´s Day",
-    "title": "Girls´Day und Boy´s Day",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NGQ5MmY1OGVyM3RlNG4wMHFvNTVndWFnbjkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2020-02-26",
-      "date_time": null
-    },
-    "end": {
-      "date": "2020-02-27",
-      "date_time": null
-    },
-    "created": "2020-01-08T08:10:20.000Z",
-    "updated": "2020-01-08T08:10:20.998Z"
-  },
-  {
-    "image_path": null,
     "alt": "Filmvorführung am Nachmittag",
     "title": "Filmvorführung am Nachmittag",
     "excerpt": "Fühl dich wie im Kino! Mit Popcorn und netten Kindern einen Kinofilm schauen.",
@@ -83,6 +66,23 @@
     },
     "created": "2020-01-06T15:01:23.000Z",
     "updated": "2020-01-06T15:01:23.615Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Girls´Day und Boy´s Day",
+    "title": "Girls´Day und Boy´s Day",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NGQ5MmY1OGVyM3RlNG4wMHFvNTVndWFnbjkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2020-03-26",
+      "date_time": null
+    },
+    "end": {
+      "date": "2020-03-27",
+      "date_time": null
+    },
+    "created": "2020-01-08T08:10:20.000Z",
+    "updated": "2020-01-10T06:53:19.206Z"
   },
   {
     "image_path": null,
