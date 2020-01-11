@@ -11,6 +11,6 @@ The natural mortality rate (*M*) of fish populations is one of the most importan
 
 This app, developed by [Jason Cope](https://www.researchgate.net/profile/Jason_Cope), provides a straightforward method for obtaining the estimated value of *M* from a range of life-history based methods. 
 
-<iframe src="http://159.65.217.133:3838/shiny_M/" height="2200px" width="100%" frameBorder="0">
+<iframe src="http://159.65.217.133:3838/shiny_M/" height="2800px" width="100%" frameBorder="0">
   Your browser doesn't support iframes
 </iframe>
