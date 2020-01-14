@@ -108,16 +108,19 @@ analytics:
 # Site Author
 author:
   name             : "Seonjae Choi"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/diary.jpg" # 제목 옆 그림
   bio              : "신입 개발자 개발 일기"
-  location         : "Somewhere"
-  email            :
+  location         : "Seong Nam, South Korea"
+  email            : "choiseonjae96@gmail.com"
   links:
     - label: "choiseonjae96@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
       # url: mailto:your.name@email.com
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
+    - label: "Backjoon"
+      icon: /assert/backjoon.png
+      # url: "https://your-website.com"
+    - label: "Programmers"
+      icon: /assert/programmers.jpg
       # url: "https://your-website.com"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
