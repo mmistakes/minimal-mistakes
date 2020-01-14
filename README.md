@@ -11,9 +11,9 @@ Minimal Mistakes is a flexible two-column Jekyll theme, perfect for building per
 
 **If you enjoy this theme, please consider [supporting me](https://www.paypal.me/mmistakes) to continue developing and maintaining it.**
 
-[![Support via PayPal](https://cdn.rawgit.com/twolfson/paypal-github-button/1.0.0/dist/button.svg)](https://www.paypal.me/mmistakes)
+[![Support via PayPal](https://cdn.jsdelivr.net/gh/twolfson/paypal-github-button@1.0.0/dist/button.svg)](https://www.paypal.me/mmistakes)
 
-**Note:** The theme uses the [jekyll-include-cache](https://github.com/benbalter/jekyll-include-cache) plugin which will need to be installed in your `Gemfile` and added to the `plugins` array of `_config.yml`. Otherwise you'll throw `Unknown tag 'include_cached'` errors at build.
+**Note:** The theme uses the [jekyll-include-cache](https://github.com/benbalter/jekyll-include-cache) plugin which will need to be installed in your `Gemfile` and added to the `plugins` array of `_config.yml`. Otherwise you'll encounter `Unknown tag 'include_cached'` errors at build.
 
 [![Minimal Mistakes live preview][2]][1]
 
@@ -37,7 +37,7 @@ Minimal Mistakes is a flexible two-column Jekyll theme, perfect for building per
 
 ## Skins (color variations)
 
-This theme comes in nine different skins (including the default one).
+This theme comes in nine different skins (in addition to the default one).
 
 | `air` | `contrast` | `dark` |
 | --- | --- | --- |
@@ -198,7 +198,7 @@ To test the theme, run `bundle exec rake preview` and open your browser at `http
 
 The MIT License (MIT)
 
-Copyright (c) 2013-2019 Michael Rose and contributors
+Copyright (c) 2013-2020 Michael Rose and contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
