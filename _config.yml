@@ -24,8 +24,8 @@ description              : "신입 개발자 개발 일기 !"
 url                      : "https://choiseonjae.github.io" # https://[github id].github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "choiseonjae/choiseonjae.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : assets/diary.png # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : assets/diary.png # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+teaser                   : assets/diary.jpg # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : assets/diary.jpg # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
