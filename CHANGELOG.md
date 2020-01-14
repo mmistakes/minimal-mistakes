@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+- Update README and LICENSE. [#2367](https://github.com/mmistakes/minimal-mistakes/pull/2367)
 - Update `.gitignore` file. [#2366](https://github.com/mmistakes/minimal-mistakes/pull/2366)
 - Allow override of page excerpt in hero header via `tagline` YAML front matter. [#2307](https://github.com/mmistakes/minimal-mistakes/pull/2307)
 - Exclude `package-lock.json` from Jekyll build. [#2364](https://github.com/mmistakes/minimal-mistakes/pull/2364)
