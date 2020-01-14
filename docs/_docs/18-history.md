@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2020-01-14T12:42:23-05:00
+last_modified_at: 2020-01-14T12:45:53-05:00
 toc: false
 ---
 
@@ -25,7 +25,8 @@ toc: false
 
 ### Bug Fixes
 
-- Update README and LICENSE. [#2367](https://github.com/mmistakes/minimal-mistakes/pull/2367) [#2354](https://github.com/mmistakes/minimal-mistakes/issues/2354)
+- Fix JavaScript comments in Disqus include to be compatible with `compress` layout. [#2373](https://github.com/mmistakes/minimal-mistakes/pull/2373)
+- Fix wrong newline concatenation in SEO description [#2368](https://github.com/mmistakes/minimal-mistakes/pull/2368) [#2354](https://github.com/mmistakes/minimal-mistakes/issues/2354)
 - Fix Staticman v2/v3 conditional for showing comments. [#2351](https://github.com/mmistakes/minimal-mistakes/pull/2351)
 - Fix masthead logo path. [#2332](https://github.com/mmistakes/minimal-mistakes/pull/2332)
 - Fix schema.org dates to ISO-8601. [#2339](https://github.com/mmistakes/minimal-mistakes/pull/2339)
