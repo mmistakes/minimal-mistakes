@@ -2,7 +2,7 @@
 
 ### Enhancements
 
-- Update README and LICENSE. [#2367](https://github.com/mmistakes/minimal-mistakes/pull/2367)
+- Update README and LICENSE. [#2367](https://github.com/mmistakes/minimal-mistakes/pull/2367) [#2354](https://github.com/mmistakes/minimal-mistakes/issues/2354)
 - Update `.gitignore` file. [#2366](https://github.com/mmistakes/minimal-mistakes/pull/2366)
 - Allow override of page excerpt in hero header via `tagline` YAML front matter. [#2307](https://github.com/mmistakes/minimal-mistakes/pull/2307)
 - Exclude `package-lock.json` from Jekyll build. [#2364](https://github.com/mmistakes/minimal-mistakes/pull/2364)
@@ -14,6 +14,7 @@
 
 ### Bug Fixes
 
+- Fix wrong newline concatenation in SEO description. [#2368](https://github.com/mmistakes/minimal-mistakes/pull/2368)
 - Fix Staticman v2/v3 conditional for showing comments. [#2351](https://github.com/mmistakes/minimal-mistakes/pull/2351)
 - Fix masthead logo path. [#2332](https://github.com/mmistakes/minimal-mistakes/pull/2332)
 - Fix schema.org dates to ISO-8601. [#2339](https://github.com/mmistakes/minimal-mistakes/pull/2339)
