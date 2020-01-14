@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "Seonjae Choi"
-  avatar           : "/assets/diary.jpg" # 제목 옆 그림
+  avatar           : "/assets/selfpic.jpg" # 제목 옆 그림
   bio              : "신입 개발자 개발 일기"
   location         : "Seong Nam, South Korea"
   email            : "choiseonjae96@gmail.com"
