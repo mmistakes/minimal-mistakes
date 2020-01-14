@@ -1,8 +1,6 @@
 # main links
 main:
   - title: "About"
-    url: https://choiseonjae.github.io/
+    url: /about/
   - title: "Study"
-    url: https://choiseonjae.github.io/
-  - title: "Algorithm"
-    url: https://choiseonjae.github.io/
+    url: /study/
