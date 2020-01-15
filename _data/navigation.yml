@@ -1,6 +1,9 @@
 # main links
+# 맨 위에 상단 바의 목록들 표시
 main:
   - title: "About"
     url: /about/
   - title: "Study"
     url: /study/
+  - title: "Algorithm" # 보이는 글자
+    url: /algorithm/ # 클릭 보여줄 url or 폴더 안의 파일
