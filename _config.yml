@@ -108,8 +108,8 @@ analytics:
 # Site Author
 author:
   name             : "Seonjae Choi"
-  avatar           : "/assets/selfpic.jpg" # 제목 옆 그림
-  bio              : "신입 개발자 개발 일기"
+  avatar           : "/assets/selfpic.jpg" # profile picture
+  bio              : "신입 개발자 개발 일기" # comment
   location         : "Seong Nam, South Korea"
   email            : "choiseonjae96@gmail.com"
   links:
@@ -118,7 +118,7 @@ author:
       # url: mailto:your.name@email.com
     - label: "Backjoon"
       icon: /assert/backjoon.png
-      # url: "https://your-website.com"
+      url: "https://www.acmicpc.net/user/homesking"
     - label: "Programmers"
       icon: /assert/programmers.jpg
       # url: "https://your-website.com"
