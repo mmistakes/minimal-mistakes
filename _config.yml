@@ -291,6 +291,7 @@ defaults:
       comments: # true
       share: true
       related: true
+      future: true
   # _pages
   - scope:
       path: "_pages"
