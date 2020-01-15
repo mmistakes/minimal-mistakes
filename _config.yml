@@ -29,6 +29,7 @@ logo                     : assets/diary.jpg # path of logo image to display in t
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
+google_fonts             : "Namnum+Gothic:400,700" # 폰트 변경
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
