@@ -61,7 +61,7 @@ order to identify key microbial structures and functional signatures to support
 the selection of candidate taxa or microbial-consortia for microbiome-based crop
 productions.  
 
-![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/aSwarup.JPG){: .align-left}
+![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/aswarup.jpg){: .align-left}
 
 ## Anushka Swarup
 
