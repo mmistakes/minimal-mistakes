@@ -6,6 +6,6 @@ main:
   - title: "Date"
     url: /date/
   - title: "Tag" 
-    url: /tag/ 
+    url: /tags/ 
   - title: "Category"
     url: /category/
