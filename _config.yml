@@ -113,8 +113,7 @@ author:
   location         : "Seong Nam, South Korea"
   email            : "choiseonjae96@gmail.com"
   home             : "https://choiseonjae.github.io" # null (default), "absolute or relative url to link to author home"
-  bitbucket        : "homesking"
-  facebook         : "choisunjae"
+  facebook         : "choisunjae" # facebook id
   github           : "choiseonjae"
   linkedin         : "homesking" # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
 
