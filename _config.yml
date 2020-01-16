@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : !
 name                     : "Seonjae Choi"
 description              : "신입 개발자 개발 일기 !"
-url                      : "https://choiseonjae.github.io" # https://[github id].github.io
+url                      : "https://wirerod.com" # https://choiseonjae.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "choiseonjae/choiseonjae.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : assets/diary.jpg # path of fallback teaser image, e.g. "/assets/images/500x300.png"
