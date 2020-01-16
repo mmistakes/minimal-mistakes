@@ -2,5 +2,5 @@
   <span style="background-color:yellow">
     <big><b>정리 & 요약:</b></big>
   </span>
-  {{ include.content }}
+
 </div>
