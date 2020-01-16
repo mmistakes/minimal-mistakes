@@ -66,7 +66,7 @@ comments: true <!-- 댓글 시스템 사용 -->
 include 할 땐, 문서의 확장자도 적어줘야 합니다.
 {% endcapture %}
 
-{% include notice_info title="테스트 제목" content=content %}
+{% include notice_info.html title="테스트 제목" content=content %}
 ```
 `{% capture content %}`[^1]란?
 
