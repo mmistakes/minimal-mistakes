@@ -114,9 +114,9 @@ author:
   email            : "choiseonjae96@gmail.com"
   home             : "https://choiseonjae.github.io" # null (default), "absolute or relative url to link to author home"
   bitbucket        : "homesking"
-  facebook         : "homesking"
-  github           : "homesking"
-  linkedin         : "imreplay" # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  facebook         : "choisunjae"
+  github           : "choiseonjae"
+  linkedin         : "homesking" # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
 
 # Site Footer # 맨 밑에 다는 
 footer:
