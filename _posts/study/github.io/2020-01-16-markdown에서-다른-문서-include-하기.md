@@ -87,4 +87,3 @@ include 할 땐, 문서의 확장자도 적어줘야 합니다.
 
 ## reference
 - [jekyllrb](https://jekyllrb-ko.github.io/docs/includes/)
-
