@@ -33,12 +33,15 @@ comments: true <!-- 댓글 시스템 사용 -->
 지금 본 포스트에 존재하는 인트로도 해당 방법을 통해 구현하였다.
 
 # How to?
-1.  자신이 사용하고자 하는 문서를 `_includes` 폴더에 저장한다.
+
+자신이 사용하고자 하는 문서를 `_includes` 폴더에 저장한다.
+
 ``` markdown
 해당 블로그는 개인이 공부하고, 정리한 걸 기록하는 공간입니다.<br>
 **오타, 오류**가 존재할 수 있습니다. 댓글을 달아주시면 수정할 수 있도록 하겠습니다.
 {: .notice--primary}
 ```
+
 이 부분을 `intro`라는 이름으로 `_includes/intro`로 저장한다.
 그런 다음, 자신이 사용하고 싶은 문서에 `{% include intro %}`를 붙여넣기만 하면 된다.
 
@@ -60,23 +63,23 @@ comments: true <!-- 댓글 시스템 사용 -->
 이 문서를 부르기 위해서는 파라미터를 넣어줘야 하는데, 해당 변수명과 동일하게 넣어 주면 된다.
 
 ```markdown
-{% capture content %}
+{% capture comment %}
 안녕하세요.
 테스트 해보겠습니다.
 include 할 땐, 문서의 확장자도 적어줘야 합니다.
 {% endcapture %}
 
-{% include notice_info.html title="테스트 제목" content=content %}
+{% include notice_info.html title="테스트 제목" content=comment %}
 ```
 `{% capture content %}`[^1]란?
 
-{% capture content %}
+{% capture comment %}
 안녕하세요.
 테스트 해보겠습니다.
 include 할 땐, 문서의 확장자도 적어줘야 합니다.
 {% endcapture %}
 
-{% include notice_info.html  title="테스트 제목" content=content %}
+{% include notice_info.html  title="테스트 제목" content=comment %}
 
 이렇게 저장해 둔 문서나 문법을 언제든지 불러서 편하게 사용할 수 있다.
 
