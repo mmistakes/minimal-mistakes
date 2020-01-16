@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : !
 name                     : "Seonjae Choi"
 description              : "신입 개발자 개발 일기 !"
-url                      : "https://wirerod.com" # https://choiseonjae.github.io
+url                      : "http://choiwirerod.com/" # https://choiseonjae.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "choiseonjae/choiseonjae.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -300,5 +300,5 @@ defaults:
       layout: single
       author_profile: true
       
-production_url:  https://wirerod.com
-source_url:  https://github.com/choiseonjae/choiseonjae.github.io
+production_url:  "http://choiwirerod.com/"
+source_url:  "https://github.com/choiseonjae/choiseonjae.github.io"
