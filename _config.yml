@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : !
 name                     : "Seonjae Choi"
 description              : "신입 개발자 개발 일기 !"
-url                      : "http://choiwirerod.com/" # https://choiseonjae.github.io
+url                      : "https://choiseonjae.github.io/" # https://choiseonjae.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "choiseonjae/choiseonjae.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -112,24 +112,13 @@ author:
   bio              : "신입 개발자 개발 일기" # comment
   location         : "Seong Nam, South Korea"
   email            : "choiseonjae96@gmail.com"
-  links:
-    - label: "choiseonjae96@gmail.com"
-      icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:your.name@email.com
-    - label: "Backjoon"
-      icon: /assert/backjoon.png
-      url: "https://www.acmicpc.net/user/homesking"
-    - label: "Programmers"
-      icon: /assert/programmers.jpg
-      # url: "https://your-website.com"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://facebook.com/choisunjae"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/choiseonjae"
+  home             : "https://choiseonjae.github.io" # null (default), "absolute or relative url to link to author home"
+  bitbucket        : "homesking"
+  facebook         : "homesking"
+  github           : "homesking"
+  linkedin         : "imreplay" # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
 
-# Site Footer
+# Site Footer # 맨 밑에 다는 
 footer:
   links:
     - label: "Twitter"
@@ -299,6 +288,3 @@ defaults:
     values:
       layout: single
       author_profile: true
-      
-production_url:  "http://choiwirerod.com/"
-source_url:  "https://github.com/choiseonjae/choiseonjae.github.io"
