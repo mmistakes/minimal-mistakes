@@ -1,14 +1,14 @@
 # main links
 main:
-  - title: "Words"
+  - title: "words"
     url: /words
 
-  - title: "Reads"
+  - title: "reads"
     url: /reads
   
-  - title: "Discoveries"
+  - title: "discoveries"
     url: /discoveries
 
-  - title: "Photography"
+  - title: "photography"
     url: http://photos.todhilton.com
     
