@@ -65,7 +65,7 @@ comments: true <!-- 댓글 시스템 사용 -->
 include 할 땐, 문서의 확장자도 적어줘야 합니다.
 {% endcapture %}
 
-{% include notice_info.html title="테스트 제목" content=comment %}
+{% include notice-info title="테스트 제목" content=comment %}
 ```
 
 이렇게 문서를 작성해서 `_includes/notice_info.html`로 생성한다.
@@ -77,7 +77,7 @@ include 할 땐, 문서의 확장자도 적어줘야 합니다.
 include 할 땐, 문서의 확장자도 적어줘야 합니다.
 {% endcapture %}
 
-{% include notice_info.html title="테스트 제목" content=comment %}
+{% include notice-info title="테스트 제목" content=comment %}
 
 이렇게 저장해 둔 문서나 문법을 언제든지 불러서 편하게 사용할 수 있다.
 
