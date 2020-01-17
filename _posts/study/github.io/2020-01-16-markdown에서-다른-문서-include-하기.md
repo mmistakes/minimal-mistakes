@@ -48,15 +48,28 @@ comments: true <!-- 댓글 시스템 사용 -->
 만약, 포함하려는 문서에 인자를 넘겨주고 싶은 경우엔, 변수명을 선언한 뒤 넘겨주면 해당 변수명으로 매핑되어 넘어간다.
 
 ``` html
-	<div class="notice--info">
-		<span style="background-color:yellow">
-			<big><b>{{ include.title }}</b></big>
-		</span>
-		<big>{{ include.content | markdownify }}</big>
-	</div>
+<div class="notice--info">
+	<span style="background-color:yellow">
+		<big><b>{{ include.title }}</b></big>
+	</span>
+	<big>{{ include.content | markdownify }}</big>
+</div>
 ```
+위의  html 코드를 `_includes/notice---info`로 생성한다.
 
+```markdown
+{`% capture comment %`}
+안녕하세요.
+테스트 해보겠습니다.
+include 할 땐, 문서의 확장자도 적어줘야 합니다.
+{% endcapture %}
+
+{`% include notice--info title="테스트 제목" content=comment %`}
 ```
+아까 저장한 html 부르기 위해서는 태그 안에 변수에 값을 넣어서 호출해야한다.
+{`% include notice--info title="테스트 제목" content=comment %`}
+코드를 보면 title, content의 대한 변수를 넘겨주는 것을 볼 수 있다.
+
 {% capture comment %}
 안녕하세요.
 테스트 해보겠습니다.
@@ -64,19 +77,8 @@ include 할 땐, 문서의 확장자도 적어줘야 합니다.
 {% endcapture %}
 
 {% include notice--info title="테스트 제목" content=comment %}
-```
 
-이렇게 문서를 작성해서 `_includes/notice_info.html`로 생성한다.
-이 문서를 부르기 위해서는 파라미터를 넣어줘야 하는데, 해당 변수명과 동일하게 넣어 주면 된다.
-
-{% capture comment %}
-안녕하세요.
-테스트 해보겠습니다.
-include 할 땐, 문서의 확장자도 적어줘야 합니다.
-{% endcapture %}
-
-{% include notice--info title="테스트 제목" content=comment %}
-
+호출하면 이런식으로 출력이 된다.
 이렇게 저장해 둔 문서나 문법을 언제든지 불러서 편하게 사용할 수 있다.
 
 ## reference
