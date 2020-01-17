@@ -63,7 +63,7 @@ comments: true <!-- 댓글 시스템 사용 -->
 테스트 해보겠습니다.<br>
 include 할 땐, 문서의 확장자도 적어줘야 합니다.<br>
 capture 안에서 줄내림은 `<br>`을 사용해야 합니다.
-{% endcapture %}
+{`% endcapture %`}
 
 {`% include notice--info title="테스트 제목" content=comment %`}
 ```
