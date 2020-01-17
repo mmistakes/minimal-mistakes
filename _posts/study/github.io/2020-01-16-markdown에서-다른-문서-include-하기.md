@@ -71,7 +71,13 @@ include 할 땐, 문서의 확장자도 적어줘야 합니다.
 ```
 `{% capture content %}`[^1]란?
 
+{% capture comment1 %}
+안녕하세요.
+테스트 해보겠습니다.
+include 할 땐, 문서의 확장자도 적어줘야 합니다.
+{% endcapture %}
 
+{% include notice_info.html  title="테스트 제목" content=comment1 %}
 
 이렇게 저장해 둔 문서나 문법을 언제든지 불러서 편하게 사용할 수 있다.
 
