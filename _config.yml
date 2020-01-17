@@ -32,7 +32,7 @@ words_per_minute         : 200
 comments:
   provider               : disqus
   disqus:
-    shortname            : https://choiseonjae-github-io.disqus.com
+    shortname            : choiseonjae-github-io
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
