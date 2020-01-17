@@ -47,7 +47,7 @@ comments: true <!-- 댓글 시스템 사용 -->
 
 만약, 포함하려는 문서에 인자를 넘겨주고 싶은 경우엔, 변수명을 선언한 뒤 넘겨주면 해당 변수명으로 매핑되어 넘어간다.
 
-``` html
+```
 <div class="notice--info">
 	<span style="background-color:yellow">
 		<big><b>{{ include.title }}</b></big>
@@ -59,9 +59,10 @@ comments: true <!-- 댓글 시스템 사용 -->
 
 ```markdown
 {`% capture comment %`}
-안녕하세요.
-테스트 해보겠습니다.
-include 할 땐, 문서의 확장자도 적어줘야 합니다.
+안녕하세요.<br>
+테스트 해보겠습니다.<br>
+include 할 땐, 문서의 확장자도 적어줘야 합니다.<br>
+capture 안에서 줄내림은 `<br>`을 사용해야 합니다.
 {% endcapture %}
 
 {`% include notice--info title="테스트 제목" content=comment %`}
@@ -71,9 +72,9 @@ include 할 땐, 문서의 확장자도 적어줘야 합니다.
 코드를 보면 title, content의 대한 변수를 넘겨주는 것을 볼 수 있다.
 
 {% capture comment %}
-안녕하세요.
-테스트 해보겠습니다.
-include 할 땐, 문서의 확장자도 적어줘야 합니다.
+안녕하세요.<br>
+테스트 해보겠습니다.<br>
+include 할 땐, 문서의 확장자도 적어줘야 합니다.<br>
 {% endcapture %}
 
 {% include notice--info title="테스트 제목" content=comment %}
