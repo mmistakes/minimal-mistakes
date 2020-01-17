@@ -34,19 +34,26 @@ comments: true <!-- 댓글 시스템 사용 -->
 
 # How to?
 
-자신이 사용하고자 하는 문서를 `_includes` 폴더에 저장한다.
+## 인자를 넘겨주지 않는 경우
 
+### 1.  include 할 문서를 `_includes` 폴더에 저장한다.
 ``` markdown
 해당 블로그는 개인이 공부하고, 정리한 걸 기록하는 공간입니다.<br>
 **오타, 오류**가 존재할 수 있습니다. 댓글을 달아주시면 수정할 수 있도록 하겠습니다.
 {: .notice--warning}
 ```
+본 포스팅에서는 예시로  `_includes/intro`로 저장한다.
 
-이 부분을 `intro`라는 이름으로 `_includes/intro`로 저장한다.
-그런 다음, 자신이 사용하고 싶은 위치에  {`% include intro %`}  를 붙여넣기만 하면 된다.
+### 2. 호출하고 싶은 위치에 {`% include [파일명] %`}  넣어준다.
+예시로 만든 문서를 호출하기 위해서는 {`% include intro %`}를 써주면 된다.
 
-만약, 포함하려는 문서에 인자를 넘겨주고 싶은 경우엔, 변수명을 선언한 뒤 넘겨주면 해당 변수명으로 매핑되어 넘어간다.
+{% include intro %}
+이렇게 만들어 두면 인트로같은 중복되는 말들은 저장해서 사용할 수 있다.
 
+## 인자를 넘겨줄 경우
+
+### 1. include 할 문서에 인자로 받아서 사용할 변수를 {{ include.[변수명] }}으로 사용하여 문서를 생성한다.
+여기서 선언한 변수명으로 mapping이 된다.
 ```
 <div class="notice--info">
 	<span style="background-color:yellow">
@@ -55,8 +62,11 @@ comments: true <!-- 댓글 시스템 사용 -->
 	<big>{{ include.content | markdownify }}</big>
 </div>
 ```
+
+예시에서는 include.content와 include.title을 사용했다.
 위의  html 코드를 `_includes/notice---info`로 생성한다.
 
+### 2. 호출할 위치에 {`% include [파일명] 변수명="내용" %`}을 넣어준다.
 ```markdown
 {`% capture comment %`}
 안녕하세요.<br>
@@ -82,5 +92,5 @@ include 할 땐, 문서의 확장자도 적어줘야 합니다.<br>
 호출하면 이런식으로 출력이 된다.
 이렇게 저장해 둔 문서나 문법을 언제든지 불러서 편하게 사용할 수 있다.
 
-## reference
+# reference
 - [jekyllrb](https://jekyllrb-ko.github.io/docs/includes/)
