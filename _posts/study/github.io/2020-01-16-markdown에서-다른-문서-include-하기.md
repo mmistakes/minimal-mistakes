@@ -63,7 +63,7 @@ comments: true <!-- 댓글 시스템 사용 -->
 </div>
 ```
 
-예시에서는 include.content와 include.title을 사용했다.
+예시에서는 include.content와 include.title을 사용했다.<br>
 위의  html 코드를 `_includes/notice---info`로 생성한다.
 
 ### 2. 호출할 위치에 {`% include [파일명] 변수명="내용" %`}을 넣어준다.
