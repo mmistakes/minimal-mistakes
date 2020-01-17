@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "Geoff Sullivan"
-  avatar           : "/assets/images/avatar.jpg"
+  avatar           : "/assets/avatar.jpg"
   bio              : "cloud market enthusiast."
   location         : "Toronto"
   email            : 
