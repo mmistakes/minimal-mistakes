@@ -78,7 +78,8 @@ capture 안에서 줄내림은 `<br>`을 사용해야 합니다.
 {`% include notice--info title="테스트 제목" content=comment %`}
 ```
 아까 저장한 html 부르기 위해서는 태그 안에 변수에 값을 넣어서 호출해야한다.
-{`% include notice--info title="테스트 제목" content=comment %`}
+
+{`% include notice--info title="테스트 제목" content=comment %`}<br>
 코드를 보면 title, content의 대한 변수를 넘겨주는 것을 볼 수 있다.
 
 {% capture comment %}
