@@ -1,3 +1,4 @@
+
 ---
 title: Jekyll, 마크다운 문법에서 다른 문서 include 하기
 
@@ -18,7 +19,7 @@ toc_label: My Table of Contents # toc 이름 정의
 toc_sticky: true # 스크롤 내릴때 같이 내려가는 목차
 
 date: 2020-01-16T17:49:00 <!-- 최초 생성일 -->
-last_modified_at: 2020-01-16T17:49:00 <!-- 마지막 수정일 -->
+last_modified_at: 2020-01-17T09:37:00 <!-- 마지막 수정일 -->
 
 comments: true <!-- 댓글 시스템 사용 -->
 ---
@@ -71,10 +72,6 @@ include 할 땐, 문서의 확장자도 적어줘야 합니다.
 이렇게 문서를 작성해서 `_includes/notice_info.html`로 생성한다.
 이 문서를 부르기 위해서는 파라미터를 넣어줘야 하는데, 해당 변수명과 동일하게 넣어 주면 된다.
 
-각주1 [^1]
- 
-[^1]: 해당 범위 안에 존재하는 문자열을 캡쳐해서, 변수처럼 사용할 수 있다.
-
 {% capture comment %}
 안녕하세요.
 테스트 해보겠습니다.
@@ -84,8 +81,6 @@ include 할 땐, 문서의 확장자도 적어줘야 합니다.
 {% include notice_info.html title="테스트 제목" content=comment %}
 
 이렇게 저장해 둔 문서나 문법을 언제든지 불러서 편하게 사용할 수 있다.
-
-
 
 ## reference
 - [jekyllrb](https://jekyllrb-ko.github.io/docs/includes/)
