@@ -1,4 +1,3 @@
-
 ---
 title: Jekyll, 마크다운 문법에서 다른 문서 include 하기
 
