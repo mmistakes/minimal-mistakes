@@ -39,7 +39,7 @@ comments: true <!-- 댓글 시스템 사용 -->
 ``` markdown
 해당 블로그는 개인이 공부하고, 정리한 걸 기록하는 공간입니다.<br>
 **오타, 오류**가 존재할 수 있습니다. 댓글을 달아주시면 수정할 수 있도록 하겠습니다.
-{: .notice--primary}
+{: .notice--warning}
 ```
 
 이 부분을 `intro`라는 이름으로 `_includes/intro`로 저장한다.
