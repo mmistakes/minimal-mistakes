@@ -1,6 +1,8 @@
-<div class="notice--info">
-  <span style="background-color:yellow">
-    <big><b>{{ include.title }}</b></big>
-  </span>
-  <big>{{ include.content | markdownify }}</big>
-</div>
+<figure>
+  <div class="notice--info">
+    <span style="background-color:yellow">
+      <big><b>{{ include.title }}</b></big>
+    </span>
+    <big>{{ include.content | markdownify }}</big>
+  </div>
+</figure>
