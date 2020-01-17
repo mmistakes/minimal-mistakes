@@ -54,12 +54,12 @@ comments: true <!-- 댓글 시스템 사용 -->
 
 ### 1. include 할 문서에 인자로 받아서 사용할 변수를 {{ include.[변수명] }}으로 사용하여 문서를 생성한다.
 여기서 선언한 변수명으로 mapping이 된다.
-``` text
+```markdown
 <div class="notice--info">
 	<span style="background-color:yellow">
-		<big><b>{{ include.title }}</b></big>
+		<big><b>{{{ include.title }}</b></big>
 	</span>
-	<big>{{ include.content | markdownify }}</big>
+	<big>{% raw %}{{ include.content | markdownify }}{% endraw %}</big>
 </div>
 ```
 
