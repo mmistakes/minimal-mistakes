@@ -160,10 +160,10 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: false
-      share: true
+      share: false
       related: true
       show_tag_list: true
       show_category_list: false
@@ -175,9 +175,9 @@ defaults:
     values:
       layout: single
       category: words
-      author_profile: true
+      author_profile: false
       read_time: true
-      share: true
+      share: false
       breadcrumbs:
         - label: "Words"
           url: /words/
@@ -189,9 +189,9 @@ defaults:
     values:
       layout: single
       category: reads
-      author_profile: true
+      author_profile: false
       read_time: true
-      share: true
+      share: false
       breadcrumbs:
         - label: "Reads"
           url: /reads/
@@ -203,9 +203,9 @@ defaults:
     values:
       layout: single
       category: discoveries
-      author_profile: true
+      author_profile: false
       read_time: true
-      share: true
+      share: false
       breadcrumbs:
         - label: "Discoveries"
           url: /discoveries/
