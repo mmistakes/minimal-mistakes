@@ -57,7 +57,7 @@ comments: true <!-- 댓글 시스템 사용 -->
 ```markdown
 <div class="notice--info">
 	<span style="background-color:yellow">
-		<big><b>{{{ include.title }}</b></big>
+		<big><b>{% raw %}{{{ include.title }}{% endraw %}</b></big>
 	</span>
 	<big>{% raw %}{{ include.content | markdownify }}{% endraw %}</big>
 </div>
