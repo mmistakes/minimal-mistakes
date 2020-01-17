@@ -164,7 +164,7 @@ defaults:
       read_time: true
       comments: false
       share: false
-      related: true
+      related: false
       show_tag_list: true
       show_category_list: false
       
