@@ -63,3 +63,63 @@ feature_row4:
 {% include feature_row %}
 
 {% include feature_row id="feature_row4" type="center" %}
+
+  <script type="text/javascript" src="js/d3.js"></script>
+    <script type="text/javascript" src="js/crossfilter.js"></script>
+    <script type="text/javascript" src="js/dc.js"></script>
+    <script type="text/javascript" src="js/dc.leaflet.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/axis.js"></script>
+    <script type="text/javascript">
+    d3.json('cloudmap.geojson', ).then(data => {
+        d3.json('cloudmap_style.json').then(mapStyle => {
+            data = data.features.map(x => ({
+                region: x.properties['Region Name'],
+                regionType: x.properties['Region Type'],
+                provider: x.properties.Provider,
+                city: x.properties.City,
+                country: x.properties.Country,
+                website: x.properties.Website,
+                point: x.geometry.coordinates.reverse(),
+                id: x.id,
+            }))
+
+            var ndx = crossfilter(data)
+            var all = ndx.groupAll();
+
+            dc.dataCount('#count')
+                .dimension(ndx)
+                .group(all)
+                .html({
+                    some: '<strong>%filter-count</strong> selected out of <strong>%total-count</strong> records',
+                    all: 'showing <strong>%total-count</strong> records'
+                });
+
+            var markerDim = ndx.dimension(function(d) {
+                return d.point;
+            });
+            var markerGroup = markerDim.group();
+
+            map = dc_leaflet.markerChart("#map")
+                .dimension(markerDim)
+                .group(markerGroup)
+                .center([0, 0])
+                .zoom(2)
+                .mapStyle(mapStyle)
+                .renderPopup(false)
+                .filterByArea(true);
+
+            ['provider', 'regionType', 'city', 'region'].forEach(function(dimName, idx) {
+                createBarChart(dimName, idx, '#charts', ndx)
+            })
+
+            dc.renderAll();
+        });
+    });
+
+    $('#reset').click(function() {
+        dc.filterAll();
+        map.map().setCenter(map.center());
+        map.map().setZoom(map.zoom());
+        dc.redrawAll();
+    })
