@@ -15,7 +15,6 @@ intro:
 '
 feature_row:
   - image_path: assets/images/unsplash-gallery-image-1-th.jpg
-    image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
     alt: "placeholder image 1"
     title: "Cloudmap"
     excerpt: "Browse public cloud regions and edge sites around the world."
