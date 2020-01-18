@@ -19,6 +19,8 @@ feature_row:
     alt: "placeholder image 1"
     title: "Cloudmap"
     excerpt: "Browse public cloud regions and edge sites around the world."
+    btn_label: "Read More"
+    btn_class: "btn--primary" 
   - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
     alt: "placeholder image 2"
     title: "CloudWatch"
@@ -29,6 +31,8 @@ feature_row:
   - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
     title: "Placeholder 3"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    btn_label: "Read More"
+    btn_class: "btn--primary"
 feature_row2:
   - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
     alt: "placeholder image 2"
