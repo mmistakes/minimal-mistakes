@@ -1,6 +1,6 @@
 ---
 title: "About"
-layout: mappage
+layout: splash
 permalink: /about/
 date: 2016-03-23T11:48:41-04:00
 header:
@@ -59,7 +59,5 @@ feature_row4:
 ---
 
 {% include feature_row id="intro" type="center" %}
-
-{% include feature_row %}
 
 {% include feature_row id="feature_row4" type="center" %}
