@@ -8,6 +8,38 @@ layout: default
   {% include page__hero_video.html %}
 {% endif %}
 
+<head>    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="css/dc.css" rel="stylesheet" />
+    <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="custom.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClDGFnyszA_dpXvvYW63HqTSOvz04JJps"></script>
+    <style>
+        div[id^="chart-"] {
+          display: inline-block;
+          vertical-align: top;
+          max-height: 400;
+          overflow: auto;
+          overflow-x: hidden;
+          width: 100%
+        }
+        div[id^="row-axis-"], div[id^="chart-"] {
+            float: unset;
+        }
+        .dc-chart g.row text {
+            fill: #000;
+        }
+        #map, #map .leaflet-container {
+            height: 94vh !important;
+        }
+        #count {
+            height: 2em;
+            padding-left: 30px;
+            padding-top: 0.45em;
+        }
+    </style>
+    </head>
+
 <div id="main" role="main">
   <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
