@@ -1,0 +1,124 @@
+---
+layout: default
+---
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% elsif page.header.video.id and page.header.video.provider %}
+  {% include page__hero_video.html %}
+{% endif %}
+
+<div id="main" role="main">
+  <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
+    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
+    {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
+
+    <section class="page__content" itemprop="text">
+      {{ content }}
+    </section>
+  </article>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div id="count"></div>
+        <button id="reset" type="button" class="btn btn-link">Reset All</button>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <div id="map" class="col"></div>
+        </div>
+        <div class="col-md-4">
+            <div id="charts" class="col"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/d3.js"></script>
+<script type="text/javascript" src="js/crossfilter.js"></script>
+<script type="text/javascript" src="js/dc.js"></script>
+<script type="text/javascript" src="js/dc.leaflet.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/axis.js"></script>
+<script type="text/javascript">
+d3.json('cloudmap.geojson', ).then(data => {
+    d3.json('cloudmap_style.json').then(mapStyle => {
+        data = data.features.map(x => ({
+            region: x.properties['Region Name'],
+            regionType: x.properties['Region Type'],
+            provider: x.properties.Provider,
+            city: x.properties.City,
+            country: x.properties.Country,
+            website: x.properties.Website,
+            point: x.geometry.coordinates.reverse(),
+            id: x.id,
+        }))
+
+        var ndx = crossfilter(data)
+        var all = ndx.groupAll();
+
+        dc.dataCount('#count')
+            .dimension(ndx)
+            .group(all)
+            .html({
+                some: '<strong>%filter-count</strong> selected out of <strong>%total-count</strong> records',
+                all: 'showing <strong>%total-count</strong> records'
+            });
+
+        var markerDim = ndx.dimension(function(d) {
+            return d.point;
+        });
+        var markerGroup = markerDim.group();
+
+        map = dc_leaflet.markerChart("#map")
+            .dimension(markerDim)
+            .group(markerGroup)
+            .center([0, 0])
+            .zoom(2)
+            .mapStyle(mapStyle)
+            .renderPopup(false)
+            .filterByArea(true);
+
+        ['provider', 'regionType', 'city', 'region'].forEach(function(dimName, idx) {
+            createBarChart(dimName, idx, '#charts', ndx)
+        })
+
+        dc.renderAll();
+    });
+});
+
+$('#reset').click(function() {
+    dc.filterAll();
+    map.map().setCenter(map.center());
+    map.map().setZoom(map.zoom());
+    dc.redrawAll();
+})
+
+
+function createBarChart(dimName, chartId, chartParent, ndx) {
+    var html = `<div class="col">
+                    <div id="chart-${chartId}"></div>
+                    <div id="row-axis-${chartId}"></div>
+                </div>`
+
+    $(chartParent).append(html)
+    var dim = ndx.dimension(function(d) {
+        return d[dimName] || 'Other';
+    })
+
+    dc.rowChart(`#chart-${chartId}`)
+        .height(dim.group().all().length * 20)
+        .margins({ left: 10, top: 0, right: 10, bottom: 0 })
+        .dimension(dim)
+        .group(dim.group())
+        .elasticX(true)
+        .controlsUseVisibility(true)
+
+    dc.axisChart(`#row-axis-${chartId}`)
+        .margins({ left: 10, top: 0, right: 10, bottom: 10 })
+        .height(50)
+        .dimension(dim)
+        .group(dim.group())
+        .elastic(true)
+}
