@@ -1,10 +1,10 @@
 ---
-title: "F5 Direct Server Return"
+title: "Direct Server Return"
 classes: wide
 categories:
-  - F5
+  - F5, A10
 tags:
-  - f5
+  - f5, a10
   - DSR
   - npath routing
 ---
