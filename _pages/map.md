@@ -11,8 +11,7 @@ header:
     - label: "Learn More"
       url: "/terms/"
 intro: 
-  - excerpt: 'transparent, neutral data about the cloud computing landscape
-'
+  - excerpt: 'transparent, neutral data about the cloud computing landscape'
 feature_row4:
   - image_path: 
     alt: "placeholder image 2"
