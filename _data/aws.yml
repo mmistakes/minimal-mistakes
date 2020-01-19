@@ -1,0 +1,28 @@
+- Region Name: us-east-1
+  Region Type: Region
+  Provider: Amazon Web Services
+  location:
+      latitude: 38.7509
+      longitude: -77.4753
+  Website: https://aws.amazon.com/
+- Region Name: us-east-2
+  Region Type: Region
+  Provider: Amazon Web Services
+  location:
+      latitude: 40.4173
+      longitude: -82.9071  
+  Website: https://aws.amazon.com/
+- Region Name: us-west-1
+  Region Type: Region
+  Provider: Amazon Web Services
+  location:
+      latitude: 37.3541
+      longitude: 121.9552  
+      Website: https://aws.amazon.com/
+- Region Name: us-west-2
+  Region Type: Region
+  Provider: Amazon Web Services
+  location:
+      latitude: 45.8399
+      longitude: 119.7006 
+      Website: https://aws.amazon.com/
