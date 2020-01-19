@@ -63,7 +63,7 @@ feature_row4:
 {% include feature_row id="feature_row4" type="center" %}
 
 ## About the Data
-The initial dataset covers all of the major cloud providers and their regions around the world. In the future, I will work to include regional and niche providers. Here is a list of coverage for the initial dataset:
+The initial dataset covers all of the major cloud providers and their regions around the world. In the future, I will work to include regional and niche providers. Here is a list of cloud providers that are covered in the initial dataset:
 
 ![alibaba](https://firebasestorage.googleapis.com/v0/b/nodeproject-798e3.appspot.com/o/icons%2F64x%2Falibaba-icon-64.png?alt=media&token=54d51e78-3f68-4513-965a-10353cc2c441)
 ![aws](https://firebasestorage.googleapis.com/v0/b/nodeproject-798e3.appspot.com/o/icons%2F64x%2Faws-icon-64.png?alt=media&token=13df6e84-8817-475b-abd1-31dfa2d79d08)
