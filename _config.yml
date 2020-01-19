@@ -82,6 +82,11 @@ bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
 
+#google maps
+maps:
+  google:
+    api_key: "AIzaSyBSe6822QLOBu_Tk7Sn_2D90WqS-DchDqU"
+
 # Social Sharing
 twitter:
   username               :
