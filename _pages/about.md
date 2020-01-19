@@ -83,5 +83,3 @@ So far, the majority of the data collected for investigate.cloud has been collec
 My long term goal is to make the project open source and provide programmatic access to the data sources via API.
 
 investigate.cloud is not affiliated with any cloud providers and will not accept any compensation in return for improving data. In the future, I will look into monetizing the project to cover costs via sponsorships. If you are concerned with practices and metrics used in this benchmark feel free to contact me via mail or Twitter.
-
-{: .notice--success} test test
