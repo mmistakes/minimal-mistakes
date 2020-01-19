@@ -4,8 +4,8 @@ layout: splash
 permalink: /about/
 date: 2016-03-23T11:48:41-04:00
 header:
-  overlay_color: "#f5f8fa"
-  overlay_filter: "0.5"
+  overlay_color: "##73857f"
+  overlay_filter: "0"
   overlay_image: /assets/eyebanner.png
   actions:
     - label: "Learn More"
