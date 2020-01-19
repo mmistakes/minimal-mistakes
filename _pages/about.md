@@ -68,12 +68,12 @@ The initial dataset covers all of the major cloud providers and their regions ar
 ![alibaba](https://firebasestorage.googleapis.com/v0/b/nodeproject-798e3.appspot.com/o/icons%2F64x%2Falibaba-icon-64.png?alt=media&token=54d51e78-3f68-4513-965a-10353cc2c441)
 ![aws]((https://firebasestorage.googleapis.com/v0/b/nodeproject-798e3.appspot.com/o/icons%2F64x%2Faws-icon-64.png?alt=media&token=13df6e84-8817-475b-abd1-31dfa2d79d08))
 ![azure](https://firebasestorage.googleapis.com/v0/b/nodeproject-798e3.appspot.com/o/icons%2F64x%2Fazure-icon-64.png?alt=media&token=e117008a-420c-48cf-8eff-fb9e32a08010)
-![do](/assets/64px/do-icon-64.png)
-![gcp](/assets/64px/gcp-icon-64.png)
-![ibm](/assets/64px/ibm-icon-64.png)
-![oracle](/assets/64px/oracle-icon-64.png)
-![packet](/assets/64px/packet-icon-64.png)
-![tencent](/assets/64px/tencent-icon-64.png)
+![do](https://firebasestorage.googleapis.com/v0/b/nodeproject-798e3.appspot.com/o/icons%2F64x%2Fdo-icon-64.png?alt=media&token=e88a4225-c44d-4865-b988-d420c2e7c9c1)
+![gcp](https://firebasestorage.googleapis.com/v0/b/nodeproject-798e3.appspot.com/o/icons%2F64x%2Fgcp-icon-64.png?alt=media&token=f0623512-4ad4-47c7-aad6-64dc556568b0)
+![ibm](https://firebasestorage.googleapis.com/v0/b/nodeproject-798e3.appspot.com/o/icons%2F64x%2Fibm-icon-64.png?alt=media&token=3321600d-3151-41aa-b13e-9a9aaec2f4fc)
+![oracle](https://firebasestorage.googleapis.com/v0/b/nodeproject-798e3.appspot.com/o/icons%2F64x%2Foracle-icon-64.png?alt=media&token=2f4125a5-a85f-426f-913a-86cf84d1e21c)
+![packet](https://firebasestorage.googleapis.com/v0/b/nodeproject-798e3.appspot.com/o/icons%2F64x%2Fpacket-icon-64.png?alt=media&token=80918987-97ab-4044-9937-a5d088de700e)
+![tencent](https://firebasestorage.googleapis.com/v0/b/nodeproject-798e3.appspot.com/o/icons%2F64x%2Ftencent-icon-64.png?alt=media&token=3261b163-3277-439c-b848-459a43913e9f)
 
 * Alibaba Cloud
 * Amazon Web Services
