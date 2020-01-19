@@ -65,7 +65,16 @@ feature_row4:
 ## About the Data
 The initial dataset covers all of the major cloud providers and their regions around the world. In the future, I will work to include regional and niche providers. Here is a list of coverage for the initial dataset:
 
-![alibaba](/assets/64px/alibaba-icon-64.png) 
+![alibaba](/assets/64px/alibaba-icon-64.png)
+![aws](/assets/64px/aws-icon-64.png)
+![azure](/assets/64px/azure-icon-64.png)
+![do](/assets/64px/do-icon-64.png)
+![gcp](/assets/64px/gcp-icon-64.png)
+![ibm](/assets/64px/ibm-icon-64.png)
+![oracle](/assets/64px/oracle-icon-64.png)
+![packet](/assets/64px/packet-icon-64.png)
+![tencent](/assets/64px/tencent-icon-64.png)
+
 * Alibaba Cloud
 * Amazon Web Services
 * Microsoft Azure
