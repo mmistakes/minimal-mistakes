@@ -65,9 +65,9 @@ feature_row4:
 ## About the Data
 The initial dataset covers all of the major cloud providers and their regions around the world. In the future, I will work to include regional and niche providers. Here is a list of coverage for the initial dataset:
 
-![alibaba](https://firebasestorage.googleapis.com/v0/b/nodeproject-798e3.appspot.com/o/icons%2Falibaba-icon.png?alt=media&token=7d15ebce-a3f7-429f-bbb8-ed8ae73ec426)
-![aws](/assets/64px/aws-icon-64.png)
-![azure](/assets/64px/azure-icon-64.png)
+![alibaba](https://firebasestorage.googleapis.com/v0/b/nodeproject-798e3.appspot.com/o/icons%2F64x%2Falibaba-icon-64.png?alt=media&token=54d51e78-3f68-4513-965a-10353cc2c441)
+![aws]((https://firebasestorage.googleapis.com/v0/b/nodeproject-798e3.appspot.com/o/icons%2F64x%2Faws-icon-64.png?alt=media&token=13df6e84-8817-475b-abd1-31dfa2d79d08))
+![azure](https://firebasestorage.googleapis.com/v0/b/nodeproject-798e3.appspot.com/o/icons%2F64x%2Fazure-icon-64.png?alt=media&token=e117008a-420c-48cf-8eff-fb9e32a08010)
 ![do](/assets/64px/do-icon-64.png)
 ![gcp](/assets/64px/gcp-icon-64.png)
 ![ibm](/assets/64px/ibm-icon-64.png)
