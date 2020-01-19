@@ -66,7 +66,7 @@ feature_row4:
 The initial dataset covers all of the major cloud providers and their regions around the world. In the future, I will work to include regional and niche providers. Here is a list of coverage for the initial dataset:
 
 ![alibaba](https://firebasestorage.googleapis.com/v0/b/nodeproject-798e3.appspot.com/o/icons%2F64x%2Falibaba-icon-64.png?alt=media&token=54d51e78-3f68-4513-965a-10353cc2c441)
-![aws]((https://firebasestorage.googleapis.com/v0/b/nodeproject-798e3.appspot.com/o/icons%2F64x%2Faws-icon-64.png?alt=media&token=13df6e84-8817-475b-abd1-31dfa2d79d08))
+![aws](https://firebasestorage.googleapis.com/v0/b/nodeproject-798e3.appspot.com/o/icons%2F64x%2Faws-icon-64.png?alt=media&token=13df6e84-8817-475b-abd1-31dfa2d79d08))
 ![azure](https://firebasestorage.googleapis.com/v0/b/nodeproject-798e3.appspot.com/o/icons%2F64x%2Fazure-icon-64.png?alt=media&token=e117008a-420c-48cf-8eff-fb9e32a08010)
 ![do](https://firebasestorage.googleapis.com/v0/b/nodeproject-798e3.appspot.com/o/icons%2F64x%2Fdo-icon-64.png?alt=media&token=e88a4225-c44d-4865-b988-d420c2e7c9c1)
 ![gcp](https://firebasestorage.googleapis.com/v0/b/nodeproject-798e3.appspot.com/o/icons%2F64x%2Fgcp-icon-64.png?alt=media&token=f0623512-4ad4-47c7-aad6-64dc556568b0)
@@ -74,16 +74,6 @@ The initial dataset covers all of the major cloud providers and their regions ar
 ![oracle](https://firebasestorage.googleapis.com/v0/b/nodeproject-798e3.appspot.com/o/icons%2F64x%2Foracle-icon-64.png?alt=media&token=2f4125a5-a85f-426f-913a-86cf84d1e21c)
 ![packet](https://firebasestorage.googleapis.com/v0/b/nodeproject-798e3.appspot.com/o/icons%2F64x%2Fpacket-icon-64.png?alt=media&token=80918987-97ab-4044-9937-a5d088de700e)
 ![tencent](https://firebasestorage.googleapis.com/v0/b/nodeproject-798e3.appspot.com/o/icons%2F64x%2Ftencent-icon-64.png?alt=media&token=3261b163-3277-439c-b848-459a43913e9f)
-
-* Alibaba Cloud
-* Amazon Web Services
-* Microsoft Azure
-* Digitalocean
-* Google Cloud Platform
-* IBM Cloud
-* Oracle
-* Packet
-* Tencent
 
 ## Project Info and Disclaimer
 investigate.cloud is a project created to provide geospatial data about cloud providers in a transparent, neutral way. 
