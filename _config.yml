@@ -85,7 +85,7 @@ naver_site_verification  :
 #google maps
 maps:
   google:
-    api_key: "AIzaSyBSe6822QLOBu_Tk7Sn_2D90WqS-DchDqU"
+    api_key: "AIzaSyAStKRKp_fYYUecyQ2v0rVuf68XyaDXrX0"
 
 # Social Sharing
 twitter:
