@@ -61,3 +61,15 @@ feature_row4:
 {% include feature_row id="intro" type="center" %}
 
 {% include feature_row id="feature_row4" type="center" %}
+
+## Project Info and Disclaimer
+
+Info and Disclaimer
+
+investigate.cloud is a project created to provide geospatial data about cloud providers in a transparent, neutral way. 
+
+So far, the majority of the data collected for investigate.cloud has been collected manually via publicly available information from cloud providers websites. More and more, I am working towards collecting data programmatically via APIs. I am not a developer by trade, and am looking for help. If you are interested in contributing to the project send me an email.
+
+My long term goal is to make the project open source and provide programmatic access to the data sources via API.
+
+investigate.cloud is not affiliated with any cloud providers and will not accept any compensation in return for improving data. In the future, I will look into monetizing the project to cover costs via sponsorships. If you are concerned with practices and metrics used in this benchmark feel free to contact me via mail or Twitter.
