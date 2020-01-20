@@ -1,6 +1,6 @@
 ---
 title: "Posts by Date"
-permalink: /year/
+permalink: /date/
 layout: posts
 author_profile: true
 ---
