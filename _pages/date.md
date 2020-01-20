@@ -1,6 +1,6 @@
 ---
 title: "Posts by Date"
 permalink: /date/
-layout: posts
+layout: date
 author_profile: true
 ---
