@@ -4,6 +4,7 @@ categories:
    - About
 tags:
    - profile
+permalink: /about/
 author_profile: true #작성자 프로필 출력여부
 read_time: true # read_time을 출력할지 여부 1min read 같은것!
 
