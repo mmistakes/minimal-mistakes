@@ -1,7 +1,7 @@
 ---
 title: "About"
 permalink: /about/
-layout: about
+layout: posts
 author_profile: true
 toc: true
 ---
