@@ -28,7 +28,7 @@ In summer, it doesn't really get too dark at night. It's energizing and pushes y
 ## Seward and Kenai Fjords
 We love Seward! Plenty of activities, dining, and friendly people. Look out across the bay and watch glaciers spilling out of the mountains while clouds dance across the peaks. Unreal.
 
-We like to spent 2 nights there to get the most out of it.
+We like to spend 2 nights there to get the most out of it.
 
 Take the Major Marine Tour 8-hour tour that goes all the way into Aialik Bay. Across the 2 times we've been, we've seen all kinds of sea birds, bald eagles, Humpbacks, Orcas, and Fin whales. You'll get up close to huge tidewater glaciers and see a totally unreal landscape. The 4-hour version doesn't leave Resurrection Bay, and you're missing the whole show.
 
@@ -49,7 +49,7 @@ You can hire Exit Glacier Guides to take you climbing on it. We don't recommend 
 
 You can hike up to the face of the glacier. It's an easy, flat hike. Either drive out there yourself or hire Exit Glacier Guides to give you a lift in their van (it's about $10 per person).
 
-The **Harding Ice Field Trail** is one of our **favorite hikes of all-time**. It starts at the bottom of the glacier goes all the way up to the root of the glacier, giving you a view of the Harding Ice Field, which is some 700 square miles of ice about 4,000 feet thick. The trail has amazing views all along it, and tops out in tundra and light snowfields. It's a **hard trail** though, climbing 4,000 feet in only 4 miles. Ever since our first time, we use it as a benchmark for trail difficulty.
+The **Harding Ice Field Trail** is one of our **favorite hikes of all-time**. It starts at the bottom of the glacier and goes all the way up to the root of the glacier, giving you a view of the Harding Ice Field, which is some 700 square miles of ice about 4,000 feet thick. The trail has amazing views all along it, and tops out in tundra and light snowfields. It's a **hard trail** though, climbing 4,000 feet in only 4 miles. Ever since our first time, we use it as a benchmark for trail difficulty.
 
 Since the Ice Field Trail has great views throughout, you can choose to climb as much as you like and then head back down when you want.
 
@@ -65,4 +65,4 @@ In addition to backpacking, they run tours that are oriented around a kayaking. 
 
 Out on Twin Lakes is the [cabin of Dick Proenneke](https://www.nps.gov/lacl/planyourvisit/visit-proenneke-cabin.htm). He settled alone out there for decades, building his cabin and tools pretty much from scratch. His experience in the wilderness puts Thoreau's Walden Pond to shame, and his writings about his time there are excellent as well.
 
-It could be fun to hire a bushplane operator our of Anchorage or Port Alsworth to visit his cabin, although it will not be cheap. The bushplane experience is something else.
+It could be fun to hire a bushplane operator out of Anchorage or Port Alsworth to visit his cabin, although it will not be cheap. The bushplane experience is something else.
