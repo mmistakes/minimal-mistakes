@@ -1,0 +1,2 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+<script>anchors.add('h1, h2, h3, h4, h5, h6');</script>

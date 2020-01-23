@@ -1,0 +1,91 @@
+/**
+ * Copyright (c) 2017 MvvmCross
+ */
+
+// Variables
+
+// Base
+$on-mobile: 576px !default;
+$on-tablet: 768px !default;
+$on-desktop: 992px !default;
+// colors
+$brand-color: #2FB681 !default;
+$text-color: #4C555A !default;
+$gray-color: #E6E6E6 !default;
+$zebra-color: #ECEFF1 !default;
+// fonts
+$base-font-family: Lato, sans-serif !default;
+$code-font-family: Menlo, Monaco, Consolas, 'DejaVu Sans Mono', 'Lucida Console', monospace !default;
+$base-font-size: 16px !default;
+$base-font-weight: 400 !default;
+$base-line-height: 1.5 !default;
+// margin and padding
+$base-mobile-padding: 15px !default;
+$base-tablet-padding: 5% !default;
+$base-desktop-padding: $base-tablet-padding * 2 !default;
+
+// Header.html
+$header-height: 60px !default;
+$header-background-color: #FFFFFF !default;
+$header-border-color: $brand-color !default;
+$header-border-width: 2px !default;
+$header-shadow-color: rgba(0, 0, 0, 0.16) !default;
+$header-shadow-width: 4px !default;
+$header-logo-height: 40px !default;
+// navigation
+$navigation-margin: 20px !default;
+// hamburger
+$hamburger-button-size: 48px !default;
+$hamburger-menu-width: 280px !default;
+$hamburger-element-margin: 20px !default;
+// search box
+$search-box-height: $header-logo-height !default;
+$search-box-width: 200px !default;
+$search-expanded-width: 220px !default;
+
+// Home.html
+$home-section-padding: 30px !default;
+$home-text-margin: 20px !default;
+$company-gallery-height: 60px !default;
+$home-landing-padding: 120px !default;
+
+// Footer.html
+$footer-padding: 40px !default;
+$footer-font-color: #CCCCCC !default;
+$social-icon-size: 32px !default;
+$footer-avatar-size: 60px !default;
+
+// Page.html and Post.html
+$post-bottom-margin: 50px !default;
+$header-bottom-margin: 30px !default;
+
+// Blog.html
+$blog-margin: 50px !default;
+$blog-list-margin: 40px !default;
+
+// Code
+$syntax-background-color: #f2f2f2 !default;
+
+// Search
+$search-bottom-margin: 50px !default;
+
+// Documentation.html
+$doc-mobile-padding: 15px !default;
+$doc-tablet-padding: 2% !default;
+$doc-desktop-padding: 3% !default;
+$doc-menu-width: 260px !default;
+$documentation-margin: 40px !default;
+
+// Imports
+@import 'mixins/mixins';
+@import 'includes/header';
+@import 'includes/footer';
+@import 'includes/code';
+@import 'layouts/default';
+@import 'layouts/home';
+@import 'layouts/post';
+@import 'layouts/blog';
+@import 'layouts/search';
+@import 'layouts/documentation';
+@import 'layouts/page-not-found';
+@import 'layouts/hackfest.scss';

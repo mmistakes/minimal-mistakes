@@ -1,0 +1,107 @@
+/**
+ * Copyright (c) 2017 MvvmCross
+ */
+
+.post {
+  color: $text-color;
+  margin-bottom: $post-bottom-margin;
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: $base-font-weight;
+    color: $brand-color;
+  }
+
+  h1 {
+    font-weight: $base-font-weight;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  a {
+    color: $brand-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+  
+  table {
+      border-spacing: 0px;
+      border-collapse: collapse;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid $gray-color;
+    }
+
+    table tr:nth-child(2n) {
+        background-color: $zebra-color;
+    }
+
+    table tr th {
+        font-weight: bold;
+        background-color: $zebra-color;
+    }
+
+    table tr th,
+    table tr td {
+        text-align: left;
+        padding: 5px 10px;
+    }
+
+  > .post-header {
+    margin-bottom: $header-bottom-margin;
+
+    h1 {
+      font-size: 2.625rem;
+      margin-bottom: 0;
+    }
+
+    .meta {
+      color: lighten($text-color, 25%);
+      font-size: 0.875rem;
+    }
+  }
+}
+
+@include media-query-max($on-mobile) {
+  .post {
+    padding-left: $base-mobile-padding;
+    padding-right: $base-mobile-padding;
+  }
+}
+
+@media screen and (min-width: $on-mobile + 1) and (max-width: $on-desktop - 1) {
+  .post {
+    padding-left: $base-tablet-padding;
+    padding-right: $base-tablet-padding;
+  }
+}
+
+@include media-query-min($on-desktop) {
+  .post {
+    padding-left: $base-desktop-padding;
+    padding-right: $base-desktop-padding;
+  }
+}

@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<div class="doc-container">
+    <div class="doc-menu">
+        {% assign navurl = page.url | remove: 'index.html' %}
+        {% assign docs_by_category = site.documentation | group_by: "category" %}
+        {% for ident in site.category_order %}
+        {% assign category = docs_by_category | where: "name", ident | first %}
+        <p class="category">{{ category.name }}</p>
+        <ul>
+        {% assign items = category.items | sort: "order"  %}
+        {% for item in items %}
+            <li>
+            {% if item.url == navurl %}
+                <a href="{{ item.url | relative_url }}" class="active doc-link" role="link">  {{ item.title }} </a>
+            {% else %}
+                <a href="{{ item.url | relative_url }}" class="doc-link" role="link">  {{ item.title }} </a>
+            {% endif %}
+            </li>
+        {% endfor %}
+        </ul>
+        {% endfor %}
+    </div>
+    <article class="documentation">
+        <header class="doc-header">
+            <h1 class="doc-title">{{ page.title | escape }}</h1>
+        </header>
+        <section>
+            {{ content }}
+        </section>
+    </article>
+</div>
+<style>footer { display: none; }</style>
+{% include deeplink.html %}
+{% include doc-scroll.html %}

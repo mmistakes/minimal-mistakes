@@ -1,0 +1,205 @@
+/**
+ * Copyright (c) 2017 MvvmCross
+ */
+
+.footer {
+  background-color: $text-color;
+  padding-top: $footer-padding;
+  padding-bottom: $footer-padding;
+
+  > .navigation {
+    margin-bottom: $footer-padding;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row nowrap;
+
+    .avatar {
+      background-image: url($baseurl + "/assets/img/logo/tosee-avatar.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: $footer-avatar-size;
+      padding-top: $footer-padding;
+      width: $footer-avatar-size;
+      height: $footer-avatar-size;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    & > ul {
+      display: table;
+    }
+
+    & > ul > li {
+      display: table-cell;
+      padding-left: $footer-padding;
+      font-size: 1.5rem;
+      color: $footer-font-color;
+    }
+
+    & > ul > li ul {
+      margin-top: 10px;
+    }
+
+    & > ul > li ul li {
+      font-size: $base-font-size;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    & > ul > li ul li a {
+      color: lighten($text-color, 50%);
+      text-decoration: none;
+      transition: color .1s linear;
+      -o-transition: color .1s linear;
+      -moz-transition: color .1s linear;
+      -webkit-transition: color .1s linear;
+    }
+
+    & > ul > li ul li a:hover {
+      color: lighten($footer-font-color, 15%);
+    }
+  }
+
+  > .socials {
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin-top: $footer-padding / 2;
+      margin-bottom: $footer-padding / 2;
+      // flex
+      display: flex;
+      display: -webkit-flex;
+      justify-content: space-around;
+      flex-flow: row wrap;
+
+      li a {
+        transition: color .1s linear;
+        -o-transition: color .1s linear;
+        -moz-transition: color .1s linear;
+        -webkit-transition: color .1s linear;
+        color: $footer-font-color;
+      }
+
+      li a:hover,
+      li a:active {
+        color: lighten($footer-font-color, 20%);
+      }
+
+      li a i {
+        font-size: $social-icon-size;
+        width: $social-icon-size;
+        height: $social-icon-size;
+      }
+    }
+  }
+
+  > .copyright {
+    // flex
+    @include flex-valign(center);
+    flex-flow: row wrap;
+    justify-content: space-between;
+    // copyright styles
+    border-top: solid 1px $gray-color;
+    color: $footer-font-color;
+
+    a {
+      text-decoration: none;
+      color: $footer-font-color;
+
+      &:hover,
+      &:active {
+        color: lighten($footer-font-color, 15%);
+      }
+    }
+  }
+}
+
+@include media-query-max($on-mobile) {
+  .footer {
+    padding-left: $base-mobile-padding;
+    padding-right: $base-mobile-padding;
+
+    > .navigation {
+      > ul {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-around;
+        width: 100%;
+      }
+
+      > ul > li {
+        padding-left: 0;
+      }
+
+      .avatar {
+        display: none;
+      }
+
+      .footer-blog {
+        display: none;
+      }
+
+      .footer-connect {
+        display: none;
+      }
+    }
+
+    > .copyright {
+      border: none;
+      justify-content: center;
+
+      .right {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $on-mobile + 1) and (max-width: $on-desktop - 1) {
+  .footer {
+    padding-left: $base-tablet-padding;
+    padding-right: $base-tablet-padding;
+
+    > .navigation {
+      justify-content: center;
+
+      & > ul > li:first-child {
+        padding-left: 0;
+      }
+
+      .avatar {
+        display: none;
+      }
+    }
+  }
+}
+
+@include media-query-min($on-desktop) {
+  .footer {
+    padding-left: $base-desktop-padding;
+    padding-right: $base-desktop-padding;
+
+    > .navigation {
+      padding-left: $footer-padding;
+      padding-right: $footer-padding;
+
+      .avatar {
+        display: block;
+      }
+    }
+
+    > .socials {
+      ul {
+        justify-content: flex-end;
+      }
+
+      ul li {
+        padding-left: $footer-padding / 2;
+      }
+    }
+  }
+}

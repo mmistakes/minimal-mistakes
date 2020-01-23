@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<article class="home" role="article">
+    <section class="landing" role="document">
+        <h1 class="title" role="presentation">개인용 PC 윈도우 운영체제 보안 관리 솔루션</h1>
+        <p class="subtitle">ToSee를 이용해서 개인PC의 보안을 강화하고 취약점을 보완하세요.</p>
+        <a class="start-button" href="{{ 'https://kimkucheol.github.io/getting-started' | relative_url }}" role="link">Get started</a>
+    </section>
+    <section class="description" role="document">
+        <h2 role="presentation">Microsoft Windows의 취약점을 관리하고 랜섬웨어로부터 데이터를 보호하세요.</h2>
+        <p>ToSee는 취약점 진단 툴을 이용하여 운영체제의 보안 점검과 조치를 간편하게 해주고, 
+            랜섬웨어의 위협을 차단하며, 지정된 폴더를 보호합니다. 또한, 문서파일을 자동으로
+            백업하여, 중요한 데이터를 안전하게 지켜주는 기능을 제공합니다. <br> 이제부터 ToSee를
+            이용해서 개인 PC의 보안 수준을 편리하고 안전하게 향상시켜보세요.</p>
+    </section>
+    <section class="companies" role="document">
+        <h2 role="presentation">고객사 1000 여명 이상의 임직원이 현재 ToSee를 사용중입니다.</h2>
+        <p>ToSee는 2016년 취약점 진단도구 IVA로 시작해서 5년동안 기능과 안정성이 꾸준히 업데이트 되어 온 개인용 보안솔루션입니다.</p>
+        <div class="company-gallerys">
+            <div class="gallery"><a href="https://www.makeshop.co.kr/" target="_blank" ><img src="{{ '/assets/img/companies/makeshop.png' | relative_url }}" alt="Makeshop." role="img"></a></div>
+            <div class="gallery"><a href="http://www.enuri.com/" target="_blank" ><img src="{{ '/assets/img/companies/enuri3.png' | relative_url }}" alt="Enuri" role="img"></a></div>            
+            <div class="gallery"><a href="https://www.naning9.com/" target="_blank" ><img src="{{ '/assets/img/companies/naning9.png' | relative_url }}" alt="Naning9" role="img"></a></div>
+            <div class="gallery"><a href="http://www.mocobling.com/" target="_blank" ><img src="{{ '/assets/img/companies/mocobling.png' | relative_url }}" alt="Mocobling" role="img"></a></div>
+            <div class="gallery"><a href="http://www.filejo.com/" target="_blank" ><img src="{{ '/assets/img/companies/filejo.png' | relative_url }}" alt="Filejo" role="img"></a></div>
+        </div>
+        <a class="showcases-button" href="/showcases" role="link">고객사 및 협력사 확인</a>
+    </section>
+    <section class="blog" role="document">
+        
+        <h2 role="latestblog">최근 포스팅</h2>
+        {{ content }}
+        <ul class="list">
+        {% for post in site.posts limit:3 %}
+            <li>
+                <time class="time">
+                    {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
+                    {{ post.date | date: date_format }}
+                </time>
+                <h3>
+                    <a class="link" href="{{ post.url | relative_url }}" role="link">{{ post.title | escape }}</a>
+                </h3>
+                <p class="meta">
+                <h4>                    
+                    {{ post.content | strip_html | escape | truncatewords: 60 }}
+                </h4>                    
+                </p>
+            </li>
+        {% endfor %}
+        </ul>        
+    </section>    
+</article>

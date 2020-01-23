@@ -1,0 +1,152 @@
+/**
+ * Copyright (c) 2017 MvvmCross
+ */
+
+.doc-container {
+  color: $text-color;
+
+  > .doc-menu {
+    display: none;
+    height: calc(100vh - (#{$header-height} + #{$header-border-width}));
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    border: solid 1px $gray-color;
+    width: $doc-menu-width;
+    position: fixed;
+    bottom: 0;
+
+    .category {
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 20px;
+      margin-top: 10px;
+      margin-bottom: 25px;
+
+      a {
+        color: lighten($text-color, 25%);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .active {
+        color: $text-color;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  > .documentation {
+    margin-top: $documentation-margin / 2;
+    margin-bottom: $documentation-margin;
+
+    h1 {
+      font-weight: $base-font-weight;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: $base-font-weight;
+      color: $brand-color;
+    }
+
+    a {
+      color: $brand-color;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    table {
+      border-spacing: 0px;
+      border-collapse: collapse;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid $gray-color;
+    }
+
+    table tr:nth-child(2n) {
+        background-color: $zebra-color;
+    }
+
+    table tr th {
+        font-weight: bold;
+        background-color: $zebra-color;
+    }
+
+    table tr th,
+    table tr td {
+        text-align: left;
+        padding: 5px 10px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .edit-button {
+      border: 1px solid $text-color;
+      padding: 5px 10px;
+      text-decoration: none;
+      font-size: 0.875rem;
+      color: $text-color;
+      position: absolute;
+      right: 40px;
+      top: 80px;
+    }
+
+    .edit-button:hover {
+      background-color: $gray-color;
+      text-decoration: none;
+    }
+  }
+}
+
+@include media-query-max($on-mobile) {
+  .doc-container {
+    > .documentation {
+      padding-left: $doc-mobile-padding;
+      padding-right: $doc-mobile-padding;
+    }
+  }
+}
+
+@media screen and (min-width: $on-mobile + 1) and (max-width: $on-tablet) {
+  .doc-container {
+    > .documentation {
+      padding-left: $doc-tablet-padding;
+      padding-right: $doc-tablet-padding;
+    }
+  }
+}
+
+@include media-query-min($on-tablet + 1) {
+  .doc-container {
+    > .doc-menu {
+      display: block !important;
+    }
+
+    > .documentation {
+      margin-left: $doc-menu-width;
+      padding-right: $doc-desktop-padding;
+      padding-left: $doc-desktop-padding;
+    }
+  }
+}

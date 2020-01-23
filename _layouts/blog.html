@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<section class="blog">
+    {{ content }}
+    <ul class="list">
+    {% for post in site.posts %}
+        <li>
+            <time class="time">
+                {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
+                {{ post.date | date: date_format }}
+            </time>
+            <h2>
+                <a class="link" href="{{ post.url | relative_url }}" role="link">{{ post.title | escape }}</a>
+            </h2>
+            <p class="meta">
+                {{ post.content | strip_html | escape | truncatewords: 80 }}
+            </p>
+        </li>
+    {% endfor %}
+    </ul>
+    <p class="rss-subscribe">subscribe <a href="{{ '/feed.xml' | relative_url }}" role="link">via RSS</a></p>
+</section>
+{% include deeplink.html %}

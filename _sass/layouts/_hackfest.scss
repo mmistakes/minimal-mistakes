@@ -1,0 +1,469 @@
+.hackfest {
+  color: $text-color;
+  > .banner {
+    .background {
+      top: $header-height + $header-border-width;
+      right: 0;
+      left: 0;
+      bottom: 0;
+    }
+    .background .img {
+      background: url($baseurl + "/assets/img/hackfest/banner.jpg") no-repeat center center;
+      height: 500px;
+    }
+    .background .shadow, .background .text {
+      background-color: rgba(0, 0, 0, 0.2);
+      position: absolute;
+      top: $header-height + $header-border-width;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 500px;
+    }
+    .background .shadow {
+      z-index: 1;
+      width: 100%;
+    }
+    .background .text {
+      z-index: 2;
+      color: #FFFFFF;
+      padding-left: 16%;
+      padding-right: 16%;
+      display: -webkit-flex;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+    }
+    .background .text .time {
+      font-size: 2rem;
+      margin-top: 0;
+    }
+    .background .text .title {
+      font-size: 4.625rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
+  > .info {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: column wrap;
+    .companie-logos {
+      display: flex;
+      display: -webkit-flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      img {
+        height: 50px;
+        margin-bottom: 20px;
+      }
+    }
+    .sign-up {
+      margin-top: 20px;
+    }
+    .info-content {
+      display: flex;
+      display: -webkit-flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      .main-content {
+        width: 42%;
+      }
+      .line {
+        border-left: 1px solid $text-color;
+        height: 300px;
+        align-self: center;
+      }
+      .goals .golas-list {
+        list-style: none;
+        font-size: 1.25rem;
+        padding-left: 0;
+      }
+      .goals .golas-list li::before {
+        content: "\f024";
+        font-family: FontAwesome;
+        font-size: inherit;
+        display: inline-block;
+        margin-right: 8px;
+      }
+    }
+  }
+  > .take-part-in {
+    .take-part-in-content {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+  > .member-list {
+    .member-list-content {
+      padding-left: 40px;
+      padding-right: 40px;
+      display: flex;
+      display: -webkit-flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+    .member-list-content .list {
+      padding-left: 20px;
+      padding-right: 20px;
+      width: 60%;
+      max-height: 380px;
+      overflow: auto;
+    }
+    .member-list-content .list table {
+      width: 100%;
+      text-align: center;
+    }
+    .member-list-content .list table thead {
+      background-color: $gray-color;
+    }
+    .member-list-content .list table tbody tr td {
+      padding-top: 10px;
+    }
+    .member-list-content .list table tbody tr:nth-child(even) td {
+      background-color: $zebra-color;
+    }
+    .member-list-content .list table img {
+      width: 32px;
+      height: 32px;
+    }
+    .member-list-content .widget {
+      width: 195px;
+      text-align: center;
+    }
+  }
+  > .join-us {
+    .join-us-content {
+      display: flex;
+      display: -webkit-flex;
+      flex-flow: column wrap;
+    }
+    .join-us-content,
+    .mail-subscribe {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    .mail-subscribe #mc_embed_signup {
+      max-width: 600px;
+      form {
+        display: block;
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      input {
+        border: 1px solid #ABB0B2;
+        border-radius: 3px;
+      }
+      input:focus {
+        border-color: #333;
+      }
+      .button {
+        color: #FFFFFF;
+        background-color: $brand-color;
+        border: 0 none;
+        border-radius: 4px;
+        transition: all 0.23s ease-in-out 0s;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: $base-font-weight;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 8px 16px;
+        &:hover {
+          background-color: darken($brand-color, 5%);
+        }
+      }
+      .mc-field-group {
+        min-height: 50px;
+        padding-bottom: 10px;
+        width: 90%;
+        label {
+          display: block;
+          margin-bottom: 3px;
+        }
+        input {
+          display: block;
+          width: 100%;
+          padding: 8px 0;
+          text-indent: 2%;
+        }
+      }
+      .indicates-required {
+        text-align: right;
+        font-size: 11px;
+        margin-right: 10%;
+      }
+      .asterisk {
+        color: #e85c41;
+        font-size: 150%;
+        font-weight: normal;
+        position: relative;
+        top: 5px;
+      }
+      .clear {
+        clear: both;
+      }
+      div#mce-responses {
+        float: left;
+        overflow: hidden;
+        width: 90%;
+      }
+      div.response {
+        font-weight: bold;
+        float: left;
+        width: 80%;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        z-index: 1;
+      }
+      #mce-error-response {
+        display: none;
+      }
+      #mce-success-response {
+        color: #529214;
+        display: none;
+      }
+      label.error {
+        display: block;
+        float: none;
+        width: auto;
+        text-align: left;
+      }
+      #mc-embedded-subscribe {
+        width: auto;
+        display: block;
+      }
+      #mc-embedded-subscribe-form {
+        div.mce_inline_error {
+          display: inline-block;
+          background-color: rgba(255,255,255,0.85);
+          color: #e85c41;
+          border-radius: 3px;
+          font-size: 14px;
+          font-weight: normal;
+          margin-top: 10px;
+          z-index: 1;
+        }
+        input.mce_inline_error {
+          border: 2px solid #e85c41;
+        }
+      }
+    }
+  }
+  > .speakers {
+    .speaker-cards {
+      display: flex;
+      display: -webkit-flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      .speaker-card {
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid $text-color;
+        border-radius: 4px;
+        text-align: center;
+        img {
+          width: 140px;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  > section {
+    &:nth-child(odd) {
+      background-color: $zebra-color;
+    }
+    .text-center {
+      text-align: center;
+    }
+  }
+  .hackfest-padding {
+    padding-left: 14%;
+    padding-right: 14%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  a {
+    color: $brand-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+  .sign-up {
+    background-color: $brand-color;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-weight: $base-font-weight;
+    color: #FAFAFA;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    align-self: center;
+    cursor: pointer; // start-button hover effect
+    &:hover {
+      background-color: darken($brand-color, 5%);
+      text-decoration: none;
+    } // start-button active effect
+    &:active {
+      background-color: $brand-color;
+    }
+  }
+}
+@include media-query-max($on-mobile) {
+  .hackfest {
+    > .banner {
+      .background {
+        .img,
+        .shadow,
+        .text {
+          height: 300px;
+        }
+        .text {
+          .time {
+            font-size: 1.25rem;
+          }
+          .title {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+    > .info {
+      .info-content {
+        .goals {
+          .golas-list {
+            li {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+    .hackfest-padding {
+      padding: $base-mobile-padding;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+@media screen and (min-width: $on-mobile + 1) and (max-width: $on-desktop - 1) {
+  .hackfest {
+    > .banner {
+      .background {
+        .img,
+        .shadow,
+        .text {
+          height: 320px;
+        }
+        .text {
+          .time {
+            font-size: 1.5rem;
+          }
+          .title {
+            font-size: 2.25rem;
+          }
+        }
+      }
+    }
+    > .info {
+      .info-content {
+        .goals {
+          .golas-list {
+            li {
+              font-size: 1.25rem;
+            }
+          }
+        }
+      }
+    }
+    .hackfest-padding {
+      padding: $base-tablet-padding;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1.25rem;
+    }
+  }
+}
+@include media-query-max($on-desktop - 1) {
+  .hackfest {
+    > .info {
+      .info-content {
+        flex-flow: column wrap;
+        .main-content {
+          width: 100%;
+        }
+        .line {
+          border-left: 0;
+          border-bottom: 1px solid $text-color;
+          width: 100%;
+          height: 0;
+        }
+      }
+    }
+    > .take-part-in {
+      .take-part-in-content {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+    > .member-list {
+      .member-list-content {
+        padding-left: 10px;
+        padding-right: 10px;
+        justify-content: center;
+        .list {
+          padding: 0;
+          width: 100%;
+        }
+        .widget {
+          margin-top: 20px;
+        }
+      }
+    }
+    > .join-us {
+      .join-us-content,
+      .mail-subscribe {
+        padding-left: 10px;
+        padding-right: 10px;
+        #mc_embed_signup {
+          .mc-field-group {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

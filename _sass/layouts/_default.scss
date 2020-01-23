@@ -1,0 +1,37 @@
+/**
+ * Copyright (c) 2017 MvvmCross
+ */
+
+html,
+body {
+  height: 100%;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: $header-height + $header-border-width;
+
+  > #back-to-top {
+    @include flex-valign(center);
+    justify-content: center;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: $brand-color;
+    opacity: 0.6;
+    cursor: pointer;
+
+    i {
+      font-size: 2rem;
+      color: #FFFFFF;
+      opacity: inherit;
+    }
+  }
+}

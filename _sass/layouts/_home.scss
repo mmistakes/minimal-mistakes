@@ -1,0 +1,158 @@
+/**
+ * Copyright (c) 2017 MvvmCross
+ */
+
+.home {
+  > section {
+    padding-top: $home-section-padding;
+    padding-bottom: $home-section-padding;
+    text-align: center;
+    color: $text-color;
+
+    &:nth-child(2n) {
+      background-color: $zebra-color;
+    }
+
+    h1,
+    h2,
+    p {
+      margin-top: $home-text-margin;
+      margin-bottom: $home-text-margin;
+    }
+
+    h1,
+    h2 {
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 1.875rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  > .landing {
+    color: #FFFFFF;
+    padding-top: $home-landing-padding;
+    padding-bottom: $home-landing-padding;
+    background: url($baseurl + "/assets/img/intro-bg.jpg") no-repeat center center;
+    background-size: cover;
+	
+    .start-button {
+      background-color: $brand-color;
+      border-radius: 4px;
+      padding: 8px 16px;
+      font-weight: $base-font-weight;
+      color: #FAFAFA;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-bottom: $home-text-margin;
+      // start-button hover effect
+      &:hover {
+        background-color: darken($brand-color, 5%);
+      }
+      // start-button active effect
+      &:active {
+        background-color: $brand-color;
+      }
+    }
+  }
+
+  > .backers {
+    img {
+      max-width: 100%;
+    }
+
+    .opencollective object {
+      max-width: 1140px;
+    }
+  }
+  
+ > .companies {
+   .showcases-button {
+      background-color: $brand-color;
+      border-radius: 4px;
+      padding: 8px 16px;
+      font-weight: $base-font-weight;
+      color: #FAFAFA;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-bottom: $home-text-margin;
+      // start-button hover effect
+      &:hover {
+        background-color: darken($brand-color, 5%);
+      }
+      // start-button active effect
+      &:active {
+        background-color: $brand-color;
+      }
+    } 
+  }
+
+  .company-gallerys {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    justify-content: space-between;    
+
+    .gallery {
+      margin-bottom: $home-text-margin;
+
+      img {
+        height: $company-gallery-height;
+      }
+    }
+  }
+}
+
+@include media-query-max($on-mobile) {
+  .home {
+    > section {
+      padding-left: $base-mobile-padding;
+      padding-right: $base-mobile-padding;
+      padding-top: $home-section-padding - 20;
+      padding-bottom: $home-section-padding - 20;
+    }
+
+    .company-gallerys {
+      .gallery {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $on-mobile + 1) and (max-width: $on-desktop - 1) {
+  .home {
+    > section {
+      padding-left: $base-tablet-padding;
+      padding-right: $base-tablet-padding;
+    }
+
+    .company-gallerys {
+      .gallery {
+        width: (100% / 2);
+      }
+    }
+  }
+}
+
+@include media-query-min($on-desktop) {
+  .home {
+    > section {
+      padding-left: $base-desktop-padding;
+      padding-right: $base-desktop-padding;
+    }
+
+    .company-gallerys {
+      .gallery {
+        width: (100% / 3);
+      }
+    }
+  }
+}

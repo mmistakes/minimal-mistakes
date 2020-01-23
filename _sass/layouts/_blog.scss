@@ -1,0 +1,75 @@
+/**
+ * Copyright (c) 2017 MvvmCross
+ */
+
+.blog {
+  margin-top: $blog-margin;
+  margin-bottom: $blog-margin;
+  color: $text-color;
+
+  > .list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: $blog-list-margin;
+    }
+
+    .time,
+    .meta {
+      font-size: 0.875rem;
+    }
+
+    .time {
+      color: lighten($text-color, 25%);
+    }
+
+    h2 {
+      font-weight: $base-font-weight;
+      color: $brand-color;
+    }
+
+    h2 a {
+      display: inline-block;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    h2 a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  > .rss-subscribe {
+    a {
+      color: $brand-color;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@include media-query-max($on-mobile) {
+  .blog {
+    padding-left: $base-mobile-padding;
+    padding-right: $base-mobile-padding;
+  }
+}
+
+@media screen and (min-width: $on-mobile + 1) and (max-width: $on-desktop - 1) {
+  .blog {
+    padding-left: $base-tablet-padding;
+    padding-right: $base-tablet-padding;
+  }
+}
+
+@include media-query-min($on-desktop) {
+  .blog {
+    padding-left: $base-desktop-padding;
+    padding-right: $base-desktop-padding;
+  }
+}

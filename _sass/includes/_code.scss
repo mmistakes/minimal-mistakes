@@ -1,0 +1,33 @@
+/**
+ * Copyright (c) 2017 MvvmCross
+ */
+
+pre,
+code,
+.highlight,
+.highlighter-rouge {
+    font-family: $code-font-family;
+    background-color: $syntax-background-color !important;
+}
+
+pre,
+code {
+  font-size: 0.9375rem;
+  border: 1px solid $gray-color;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+code {
+  padding: 1px 5px;
+}
+
+pre {
+  padding: 8px 12px;
+
+  & > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

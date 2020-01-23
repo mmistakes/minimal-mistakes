@@ -1,0 +1,53 @@
+<header class="header" role="banner" aria-label="Header">
+    <button class="hamburger-button" onclick="hamburgerMenu();" role="button" aria-label="Hamburger menu button">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </button>
+    <a href="{{ '/' | relative_url }}" class="logo" role="link" aria-label="Home">
+        <img alt="{{ site.title | escape }}" src="{{ '/assets/img/logo/iSecure-logo.png' | relative_url }}" role="img" aria-label="Logo"/>
+    </a>
+    <nav class="navigation" role="navigation" aria-label="Navigation">
+        <ul role="menu" aria-hidden="true" aria-label="Navigation menu">
+            <li role="menuitem" aria-label="Navigation menu item">
+                <a href="{{ '/' | relative_url }}" class="logo" role="menuitem" aria-label="Home">
+                    <img alt="{{ site.title | escape }}" src="{{ '/assets/img/logo/iSecure-logo.png' | relative_url }}" role="img" aria-label="Logo"/>
+                </a>
+            </li>
+            {% for item in site.menu %}
+            <li role="menuitem"><a href="{{ item.url | relative_url }}" role="menuitem" aria-label="{{ item.title | escape }}">{{ item.title | escape }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+    <div class="searchbox" role="search" aria-label="Search">
+        <form action="{{ '/search' | relative_url }}" id="searchthis" method="get" role="form" aria-label="Search form">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="search" id="search" name="query" placeholder="Search..." role="textbox" aria-label="Search textbox"/>
+        </form>
+    </div>
+</header>
+<nav id="hamburger-menu" role="navigation" aria-label="Hamburger menu">
+    <div class="searchbox" role="search" aria-label="Search">
+        <form action="{{ '/search' | relative_url }}" id="searchthis" method="get" role="form" aria-label="Search form">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="search" id="search" name="query" placeholder="Search..." role="textbox" aria-label="Search textbox"/>
+        </form>
+    </div>
+    <div class="home-nav" role="navigation" aria-label="Site navigation">
+        <a href="{{ '/' | relative_url }}" role="menuitem" aria-label="Home">Home</a>
+        {% for item in site.menu %}
+        <a href="{{ item.url | relative_url }}" role="menuitem" aria-label="{{ item.title | escape }}">{{ item.title | escape }}</a>
+        {% endfor %}
+    </div>
+    <div class="doc-nav" role="navigation" aria-label="Documentation navigation">
+        {% assign docs_by_category = site.documentation | group_by: "category" %}
+        {% for ident in site.category_order %}
+        {% assign category = docs_by_category | where: "name", ident | first %}
+        <p role="presentation" aria-label="Category name">{{ category.name }}</p>
+        <ul role="menu" aria-hidden="true" aria-label="Navigation menu">
+        {% assign items = category.items | sort: "order"  %}
+        {% for item in items %}
+        <li role="menuitem" aria-label="Navigation menu item"><a href="{{ item.url | relative_url }}" class="doc-link" role="link" aria-label="{{ item.title }}">{{ item.title }}</a></li>
+        {% endfor %}
+        </ul>
+        {% endfor %}
+    </div>
+</nav>
