@@ -2,6 +2,7 @@
 title: "How to Reclaim Your Privacy"
 categories: [privacy, surveillance]
 ---
+Your privacy is up for grabs, but should you care? Why does it matter if companies are trading data about your Starbucks habits, your fitness routine or even your favorite weekend destination? It all comes down to control. Our current data environment creates an asymmetries of knowledge and power. Who has your data? Who decides what your data is used for? Who decides who decides what your data is used for? Unfortunately, there aren’t any laws to protect us. Companies have confusing marketing messages that conflict with their own hard to read privacy policies (aka surveillance policies). If you feel powerless, out of options, or just confused on what you can do to protect what little privacy you have left, here are some steps you can take.
 
 1. ### Use encrypted communication
 The state-of-the-art privacy and security protocols are end-to-end encrypted communication platforms. Data is encrypted on the device, through transportation to the servers, and decrypted on the receiving device. This means the service - the company or network the messages are sent through - cannot access the communications, even if compelled to do so by the government; although they may still know who you are speaking to, how often, and when. The best tools to use are Signal for messaging and ProtonMail for email.
