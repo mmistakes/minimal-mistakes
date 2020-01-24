@@ -33,6 +33,7 @@ Every transaction you make with a card goes through at least four companies, eac
 
 10. ### Don’t bring spyware into your home
 Alexa and Google Home devices may seem fun and cool, in reality they are anything but. Some recordings are listened to by real people across the globe. These devices can analyze your voice patterns to identify you in any recording. Plus, these devices only generate more data about you to feed into the machine. 
+
 ***
 11. ### Bonus: Nuclear option
 Of course, getting rid of your cell phone, not using cars with built-in GPS, and avoiding areas with cameras is the most effective way to take back your privacy. But the tradeoffs with this option is large, which is why many people don't try.
