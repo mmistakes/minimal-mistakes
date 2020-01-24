@@ -2,7 +2,7 @@
 title: "How to Reclaim Your Privacy"
 categories: [privacy, surveillance]
 ---
-Your privacy is up for grabs, but should you care? Why does it matter if companies are trading data about your Starbucks habits, your fitness routine or even your favorite weekend destination? It all comes down to control. Our current data environment creates an asymmetries of knowledge and power. Who has your data? Who decides what your data is used for? Who decides who decides what your data is used for? Unfortunately, there aren’t any laws to protect us. Companies have confusing marketing messages that conflict with their own hard to read privacy policies (aka surveillance policies). If you feel powerless, out of options, or just confused on what you can do to protect what little privacy you have left, here are some steps you can take.
+Your privacy is up for grabs, but should you care? Why does it matter if companies are trading data about your Starbucks habits, your fitness routine or even your favorite weekend destination? It all comes down to control. Our current data environment creates asymmetries of knowledge and power. Who has your data? Who decides what your data is used for? Who decides *who decides* what your data is used for? Unfortunately, there aren’t any laws to protect us. Companies have confusing marketing messages that conflict with their own hard to read privacy policies (aka surveillance policies). If you feel powerless, out of options, or just confused on what you can do to protect what little privacy you have left, here are some steps you can take.
 
 1. ### Use encrypted communication
 The state-of-the-art privacy and security protocols are end-to-end encrypted communication platforms. Data is encrypted on the device, through transportation to the servers, and decrypted on the receiving device. This means the service - the company or network the messages are sent through - cannot access the communications, even if compelled to do so by the government; although they may still know who you are speaking to, how often, and when. The best tools to use are Signal for messaging and ProtonMail for email.
@@ -33,8 +33,8 @@ Every transaction you make with a card goes through at least four companies, eac
 
 10. ### Don’t bring spyware into your home
 Alexa and Google Home devices may seem fun and cool, in reality they are anything but. Some recordings are listened to by real people across the globe. These devices can analyze your voice patterns to identify you in any recording. Plus, these devices only generate more data about you to feed into the machine. 
-
-11. ### Nuclear option
+***
+11. ### Bonus: Nuclear option
 Of course, getting rid of your cell phone, not using cars with built-in GPS, and avoiding areas with cameras is the most effective way to take back your privacy. But the tradeoffs with this option is large, which is why many people don't try.
 
 _For more tips and details, visit [datadetoxkit.org](datadetoxkit.org) and [ssd.eff.org](ssd.eff.org)._
