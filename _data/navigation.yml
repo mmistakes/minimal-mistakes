@@ -1,11 +1,11 @@
 # main links
 main:
-  - title: "investigate.cloud map"
-    url: investigate.cloud
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+  - title: "Home"
+    url: https://investigate.cloud
+  - title: "Map"
+    url: https://map.investigate.cloud
+  - title: "Data"
+    url: https://map.investigate.cloud
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
