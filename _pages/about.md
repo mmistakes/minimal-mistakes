@@ -75,6 +75,59 @@ The initial dataset covers all of the major cloud providers and their regions ar
 ![packet](https://firebasestorage.googleapis.com/v0/b/nodeproject-798e3.appspot.com/o/icons%2F64x%2Fpacket-icon-64.png?alt=media&token=80918987-97ab-4044-9937-a5d088de700e)
 ![tencent](https://firebasestorage.googleapis.com/v0/b/nodeproject-798e3.appspot.com/o/icons%2F64x%2Ftencent-icon-64.png?alt=media&token=3261b163-3277-439c-b848-459a43913e9f)
 
+| Site ID        | Site type | Provider            | Region        | City                | Country              |
+|----------------|-----------|---------------------|---------------|---------------------|----------------------|
+| us-east-1      | Region    | Amazon Web Services | North America | N. Virginia         | United States        |
+| us-east-2      | Region    | Amazon Web Services | North America | Ohio                | United States        |
+| us-west-1      | Region    | Amazon Web Services | North America | Northern California | United States        |
+| us-west-2      | Region    | Amazon Web Services | North America | Oregon              | United States        |
+| ap-south-1     | Region    | Amazon Web Services | APAC          | Mumbai              | India                |
+| ap-northeast-2 | Region    | Amazon Web Services | APAC          | Seoul               | South Korea          |
+| ap-southeast-1 | Region    | Amazon Web Services | APAC          | Singapore           | Singapore            |
+| ap-southeast-2 | Region    | Amazon Web Services | APAC          | Sydney              | Austrailia           |
+| ap-northeast-1 | Region    | Amazon Web Services | APAC          | Tokyo               | Japan                |
+| eu-central-1   | Region    | Amazon Web Services | Europe        | Frankfurt           | Germany              |
+| eu-west-1      | Region    | Amazon Web Services | Europe        | Ireland             | Ireland              |
+| sa-east-1      | Region    | Amazon Web Services | Latin America | Sao Paulo           | Brazil               |
+| aws-ash-edge   | Edge Site | Amazon Web Services | North America | Ashburn             | United States        |
+| aws-atl-edge   | Edge Site | Amazon Web Services | North America | Atlanta             | United States        |
+| aws-bos-edge   | Edge Site | Amazon Web Services | North America | Boston              | United States        |
+| aws-chi-edge   | Edge Site | Amazon Web Services | North America | Chicago             | United States        |
+| aws-dal-edge   | Edge Site | Amazon Web Services | North America | Dallas              | United States        |
+| aws-den-edge   | Edge Site | Amazon Web Services | North America | Denver              | United States        |
+| aws-hay-edge   | Edge Site | Amazon Web Services | North America | Hayward             | United States        |
+| aws-hill-edge  | Edge Site | Amazon Web Services | North America | Hillsboro           | United States        |
+| aws-hou-edge   | Edge Site | Amazon Web Services | North America | Houston             | United States        |
+| aws-jac-edge   | Edge Site | Amazon Web Services | North America | Jacksonville        | United States        |
+| aws-los-edge   | Edge Site | Amazon Web Services | North America | Los Angeles         | United States        |
+| aws-mia-edge   | Edge Site | Amazon Web Services | North America | Miami               | United States        |
+| aws-min-edge   | Edge Site | Amazon Web Services | North America | Minneapolis         | United States        |
+| aws-mon-edge   | Edge Site | Amazon Web Services | North America | Montreal            | Canada               |
+| aws-nyc-edge   | Edge Site | Amazon Web Services | North America | New York            | United States        |
+| aws-new-edge   | Edge Site | Amazon Web Services | North America | Newark              | United States        |
+| aws-pal-edge   | Edge Site | Amazon Web Services | North America | Palo Alto           | United States        |
+| aws-pho-edge   | Edge Site | Amazon Web Services | North America | Phoenix             | United States        |
+| aws-phi-edge   | Edge Site | Amazon Web Services | North America | Philadelphia        | United States        |
+| aws-san-edge   | Edge Site | Amazon Web Services | North America | San Jose            | United States        |
+| aws-sea-edge   | Edge Site | Amazon Web Services | North America | Seattle             | United States        |
+| aws-sou-edge   | Edge Site | Amazon Web Services | North America | South Bend          | United States        |
+| aws-tor-edge   | Edge Site | Amazon Web Services | North America | Toronto             | Canada               |
+| aws-bog-edge   | Edge Site | Amazon Web Services | Latin America | Bogota              | Columbia             |
+| aws-bue-edge   | Edge Site | Amazon Web Services | Latin America | Buenos Aires        | Argentina            |
+| aws-rio-edge   | Edge Site | Amazon Web Services | Latin America | Rio de Janeiro      | Brazil               |
+| aws-san-edge   | Edge Site | Amazon Web Services | Latin America | Santiago            | Chile                |
+| aws-sao-edge   | Edge Site | Amazon Web Services | Latin America | Sao Paulo           | Brazil               |
+| aws-dub-edge   | Edge Site | Amazon Web Services | APAC          | Dubai               | United Arab Emirates |
+| aws-fuj-edge   | Edge Site | Amazon Web Services | APAC          | Fujairsh            | United Arab Emirates |
+| aws-man-edge   | Edge Site | Amazon Web Services | APAC          | Manama              | Bahrain              |
+| aws-tel-edge   | Edge Site | Amazon Web Services | APAC          | Tel Aviv            | Israel               |
+| aws-joh-edge   | Edge Site | Amazon Web Services | Africa        | Johannesburg        | South Africa         |
+| aws-cap-edge   | Edge Site | Amazon Web Services | Africa        | Cape Town           | South Africa         |
+| aws-bei-edge   | Edge Site | Amazon Web Services | APAC          | Beijing             | China                |
+| aws-she-edge   | Edge Site | Amazon Web Services | APAC          | Shenzhen            | China                |
+| aws-sha-edge   | Edge Site | Amazon Web Services | APAC          | Shanghai            | China                |
+| aws-zho-edge   | Edge Site | Amazon Web Services | APAC          | Zhongwei            | China                |
+
 ## Project Info and Disclaimer
 investigate.cloud is a project created to provide geospatial data about cloud providers in a transparent, neutral way. 
 
