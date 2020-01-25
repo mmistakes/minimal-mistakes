@@ -1,3 +1,9 @@
+## [4.18.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.18.1)
+
+### Bug Fixes
+
+- Fix compatibility issue with jekyll-paginate-v2. [#2381](https://github.com/mmistakes/minimal-mistakes/pull/2381)
+
 ## [4.18.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.18.0)
 
 ### Enhancements
