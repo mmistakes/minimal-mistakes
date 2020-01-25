@@ -52,6 +52,23 @@
   },
   {
     "image_path": null,
+    "alt": "Fasching an der Grundschule",
+    "title": "Fasching an der Grundschule",
+    "excerpt": "Information zur Veranstaltung erteilen die Klassenlehrer",
+    "url": "https://www.google.com/calendar/event?eid=M29pbXY0cGdyNHU2c2pocG5hNnN2cG5iZHAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2020-02-24",
+      "date_time": null
+    },
+    "end": {
+      "date": "2020-02-25",
+      "date_time": null
+    },
+    "created": "2020-01-24T09:34:00.000Z",
+    "updated": "2020-01-24T09:34:00.263Z"
+  },
+  {
+    "image_path": null,
     "alt": "Filmvorführung am Nachmittag",
     "title": "Filmvorführung am Nachmittag",
     "excerpt": "Fühl dich wie im Kino! Mit Popcorn und netten Kindern einen Kinofilm schauen.",
@@ -83,22 +100,5 @@
     },
     "created": "2020-01-13T07:27:41.000Z",
     "updated": "2020-01-13T07:27:41.484Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Osterferien",
-    "title": "Osterferien",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MHE5YTRxZG0zbWptZzBrdjFqdmxyajZ0N3AgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2020-04-06",
-      "date_time": null
-    },
-    "end": {
-      "date": "2020-04-18",
-      "date_time": null
-    },
-    "created": "2019-08-22T08:03:10.000Z",
-    "updated": "2019-08-22T08:03:10.314Z"
   }
 ]
