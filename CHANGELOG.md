@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+- Allow `home` layout to display posts without pagination. [#2378](https://github.com/mmistakes/minimal-mistakes/pull/2378)
 - Add links to high resolution skin screenshots in README. [#2363](https://github.com/mmistakes/minimal-mistakes/issues/2363)
 - Update README and LICENSE. [#2367](https://github.com/mmistakes/minimal-mistakes/pull/2367)
 - Update `.gitignore` file. [#2366](https://github.com/mmistakes/minimal-mistakes/pull/2366)
