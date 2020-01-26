@@ -32,8 +32,6 @@ However, the client request egressing the load balancer with destination address
 For the server to decapsulate the GRE or IPIP traffic, a tunnel interface is needed with the same IP address as that of its physical interface receiving the traffic. After decapsulation, the original client request with the VIP address as destination address reaches the loopback interface for processing. The server responds with the source address as the loopback interface IP (VIP address), instead of the physical interface address.
 
 
-https://wiki.archlinux.org/index.php/Kernel_module#Loading
-
 ## F5 Configuration
 
     ltm profile fastl4 fasl4_tacacs-test {
@@ -56,7 +54,7 @@ https://wiki.archlinux.org/index.php/Kernel_module#Loading
             }
         }
         profiles {
-            ipip
+            ipip                       <-- Using IPIP tunneling
         }
     }
 
@@ -69,7 +67,12 @@ https://wiki.archlinux.org/index.php/Kernel_module#Loading
             fasl4_tacacs-test { }
         }
         source 0.0.0.0/0
-        translate-address disabled
-        translate-port disabled
+        translate-address disabled     <-- Disable destination address translation in egress request
+        translate-port enabled
         vs-index 17
     }
+
+
+## References
+
+https://wiki.archlinux.org/index.php/Kernel_module#Loading
