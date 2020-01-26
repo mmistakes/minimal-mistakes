@@ -18,6 +18,7 @@ Applications like Radius, Tacacs need visibility to the IP address of the client
 ## Direct Server Return
 
 A load balancer VIP typically translates (maps) the destination IP address of the packet destined to the VIP, from the VIP address to one of the member address in the load balancing pool. When SNAT is applied on the VIP, the source address is translated to an IP address from the SNAT pool or the outgoing interface of the load balancer.
+![Typical LB VIP with SNAT.png]({{site.baseurl}}/_posts/Typical LB VIP with SNAT.png)
 
 So, the first step to preserve the original client IP address is not to have SNAT on the VIP. With this, the packet from the load balancer reaches the listening interface of the server matching the destination IP address of the packet. The response from server has the destination as the original client IP address and the source as the listening interface IP address on which the server reveived the packet. The client drops the response as it never sent a request to that destination.
 
@@ -33,4 +34,3 @@ For the server to decapsulate the GRE or IPIP traffic, a tunnel interface is nee
 https://wiki.archlinux.org/index.php/Kernel_module#Loading
 
 ## F5 Configuration
-
