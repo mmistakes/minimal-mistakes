@@ -36,8 +36,6 @@ https://wiki.archlinux.org/index.php/Kernel_module#Loading
 
 ## F5 Configuration
 
-
-
     ltm profile fastl4 fasl4_tacacs-test {
         app-service none
         loose-close enabled
