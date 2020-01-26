@@ -21,7 +21,7 @@ A load balancer VIP typically translates (maps) the destination IP address of th
 
 So, the first step to preserve the original client IP address is not to have SNAT on the VIP. With this, the packet from the load balancer reaches the listening interface of the server matching the destination IP address of the packet. The response from server has the destination as the original client IP address and the source as the listening interface IP address on which the server reveived the packet. The client drops the response as it never sent a request to that destination.
 
-To make the server respond with the VIP address as source IP, the VIP address needs be configured on one of the server's interfaces. A loopback interface (lo) confiured with the VIP address. 
+To make the server respond with the VIP address as source IP, the VIP address needs be configured on one of the server's interfaces. A loopback interface (lo) configured with the VIP address. 
 
 We now have a listener on the server same as the VIP address to accept traffic. On the load balancer VIP, destination address translation should be disabled, so that the load balancer preserves the destination address and not translate it to the member address in the pool. 
 
