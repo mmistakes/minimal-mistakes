@@ -36,42 +36,42 @@ https://wiki.archlinux.org/index.php/Kernel_module#Loading
 
 ## F5 Configuration
 
-> We loved with a love that was more than love
 
-  ltm profile fastl4 fasl4_tacacs-test {
-      app-service none
-      loose-close enabled
-      loose-initialization enabled
-      pva-acceleration none
-  }
 
-ltm pool p_tacacs-test_49 {
-    members {
-        10.1.1.51:49 {
-            address 10.1.1.51
+    ltm profile fastl4 fasl4_tacacs-test {
+        app-service none
+        loose-close enabled
+        loose-initialization enabled
+        pva-acceleration none
+    }
+
+    ltm pool p_tacacs-test_49 {
+        members {
+            10.1.1.51:49 {
+                address 10.1.1.51
+            }
+            10.1.1.52:49 {
+                address 10.1.1.52
+            }
+            10.1.1.53:49 {
+                address 10.1.1.53
+            }
         }
-        10.1.1.52:49 {
-            address 10.1.1.52
-        }
-        10.1.1.53:49 {
-            address 10.1.1.53
+        profiles {
+            ipip
         }
     }
-    profiles {
-        ipip
-    }
-}
 
-ltm virtual vs_tacacs-test_49 {
-    destination 172.16.4.99:49
-    ip-protocol tcp
-    mask 255.255.255.255
-    pool p_tacacs-test_49
-    profiles {
-        fasl4_tacacs-test { }
+    ltm virtual vs_tacacs-test_49 {
+        destination 172.16.4.99:49
+        ip-protocol tcp
+        mask 255.255.255.255
+        pool p_tacacs-test_49
+        profiles {
+            fasl4_tacacs-test { }
+        }
+        source 0.0.0.0/0
+        translate-address disabled
+        translate-port disabled
+        vs-index 17
     }
-    source 0.0.0.0/0
-    translate-address disabled
-    translate-port disabled
-    vs-index 17
-}
