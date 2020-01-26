@@ -17,20 +17,61 @@ Applications like Radius, Tacacs need visibility to the IP address of the client
 
 ## Direct Server Return
 
-A load balancer VIP typically translates (maps) the destination IP address of the packet destined to the VIP, from the VIP address to one of the member address in the load balancing pool. When SNAT is applied on the VIP, the source address is translated to an IP address from the SNAT pool or the outgoing interface of the load balancer.
-![Typical LB VIP with SNAT.png]({{site.baseurl}}/_posts/Typical LB VIP with SNAT.png)
+A load balancer VIP typically translates (maps) the destination IP address of the packet destined to the VIP, from the VIP address to one of the member/server address in the load balancing pool. If the VIP has SNAT applied, the source address too is translated to an IP address in the SNAT pool or the egress interface of the load balancer.
 
-So, the first step to preserve the original client IP address is not to have SNAT on the VIP. With this, the packet from the load balancer reaches the listening interface of the server matching the destination IP address of the packet. The response from server has the destination as the original client IP address and the source as the listening interface IP address on which the server reveived the packet. The client drops the response as it never sent a request to that destination.
+![LB VIP with SNAT.png]({{site.baseurl}}/_posts/LB VIP with SNAT.png)
 
-To make the server respond with the VIP address as source IP, the VIP address needs be configured on one of the server's interfaces. A loopback interface (lo) configured with the VIP address. 
+So, the first step to preserve the original client IP address is not to have SNAT on the VIP. Without SNAT, the client request egresses the load balancer and reaches the chosen member/server. In the response, the server uses the original client IP address as destination and the source as its interface IP address on which it reveived the request. However, the client rejects the response with the source IP address as the server IP address is not the destination the client sent the request.
 
-We now have a listener on the server same as the VIP address to accept traffic. On the load balancer VIP, destination address translation should be disabled, so that the load balancer preserves the destination address and not translate it to the member address in the pool. 
+To make the server respond with the VIP address as source IP address, the VIP address needs be configured on one of the server's loopback interfaces. On the load balancer, destination address translation should be disabled, so that client request egressing the load balancer has the VIP address as the destination address and not translated to a member/server address in the pool.
 
-The request with destination address as the VIP cannot be routed from the load balancer towards to the server using normal routing, as IP belongs to the load balancer. So, an encapsulation mechanism like GRE or IPIP is used encapsulate the original packet with source and destination IPs and data preserved inside and outer packet with source IP as the load balancer and the destination IP address as the Server. This is essentially a GRE or IPIP tunnel between the load balancer and the server, through which the original packets flow. 
+However, the client request egressing the load balancer with destination address as the VIP cannot be routed  to the server using normal routing, as VIP belongs to the load balancer. So, an encapsulation mechanism like GRE or IPIP is used to encapsulate the client request with original source and destination IPs and data preserved inside, and outer packet set with source IP as the load balancer egress interface IP and the destination IP address as the server. This essentially forms a GRE or IPIP tunnel between the load balancer and the server, through which the original request flows. 
 
-For the server to decapsulate the GRE or IPIP traffic, a tunnel interface is needed with the same IP address as that of its physical interface receiving the traffic. The tunnel interface decapsulates the traffic and the original request with the VIP address as destination reaches the loopback interface for processing. The server now responds with the source address as the loopback interface IP (VIP address), instead of the physical interface address.
+![LB VIP with DSR.png]({{site.baseurl}}/_posts/LB VIP with DSR.png)
+
+For the server to decapsulate the GRE or IPIP traffic, a tunnel interface is needed with the same IP address as that of its physical interface receiving the traffic. After decapsulation, the original client request with the VIP address as destination address reaches the loopback interface for processing. The server responds with the source address as the loopback interface IP (VIP address), instead of the physical interface address.
 
 
 https://wiki.archlinux.org/index.php/Kernel_module#Loading
 
 ## F5 Configuration
+
+> We loved with a love that was more than love
+
+  ltm profile fastl4 fasl4_tacacs-test {
+      app-service none
+      loose-close enabled
+      loose-initialization enabled
+      pva-acceleration none
+  }
+
+ltm pool p_tacacs-test_49 {
+    members {
+        10.1.1.51:49 {
+            address 10.1.1.51
+        }
+        10.1.1.52:49 {
+            address 10.1.1.52
+        }
+        10.1.1.53:49 {
+            address 10.1.1.53
+        }
+    }
+    profiles {
+        ipip
+    }
+}
+
+ltm virtual vs_tacacs-test_49 {
+    destination 172.16.4.99:49
+    ip-protocol tcp
+    mask 255.255.255.255
+    pool p_tacacs-test_49
+    profiles {
+        fasl4_tacacs-test { }
+    }
+    source 0.0.0.0/0
+    translate-address disabled
+    translate-port disabled
+    vs-index 17
+}
