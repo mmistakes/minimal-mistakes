@@ -113,9 +113,9 @@ author:
   location         : "Yong-in, Su-ji"
   email            : "kimsungyup@icloud.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: mailto:kimsungyup@icloud.com
+#    - label: "Email"
+#      icon: "fas fa-fw fa-envelope-square"
+      #url: mailto:kimsungyup@icloud.com
 #    - label: "Website"
 #      icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
