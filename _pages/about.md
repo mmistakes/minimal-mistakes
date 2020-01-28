@@ -52,9 +52,9 @@ feature_row3:
 feature_row4:
   - image_path: 
     alt: "placeholder image 2"
-    title: "Placeholder Image Center Aligned"
-    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Centered with `type="center"`'
-    url: "#test-link"
+    title: "Investigate the map"
+    excerpt: 'View all of the worl'd public cloud regions and edge sites on our interactive map'
+    url: "hhtps://map.investigate.cloud"
     btn_label: "Read More"
     btn_class: "btn--primary"
 ---
