@@ -53,7 +53,7 @@ feature_row4:
   - image_path: 
     alt: "placeholder image 2"
     title: "Investigate the Map"
-    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Centered with `type="center"`'
+    excerpt: 'View public cloud regions and edge sites in the interactive map'
     url: "#test-link"
     btn_label: "Read More"
     btn_class: "btn--primary"
