@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "investigate cloud"
 layout: splash
 permalink: /about/
 date: 2016-03-23T11:48:41-04:00
@@ -10,6 +10,7 @@ header:
   actions:
     - label: "Learn More"
       url: "/terms/"
+excerpt: "Bacon ipsum dolor sit amet salami ham hock ham, hamburger corned beef short ribs kielbasa biltong t-bone drumstick tri-tip tail sirloin pork chop."
 intro: 
   - excerpt: 'transparent, neutral data about the cloud computing landscape
 '
