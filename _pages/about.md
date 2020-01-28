@@ -64,7 +64,19 @@ feature_row4:
 {% include feature_row id="feature_row4" type="center" %}
 
 ## About the Data
-The initial dataset covers all of the major cloud providers and their regions around the world. In the future, I will work to include regional and niche providers. Here is a list of cloud providers that are covered in the initial dataset:
+The initial dataset covers all of the major cloud providers and their regions around the world. In the future, I will work to include regional and niche providers.
+
+## Cloudwatch
+Cloudwatch is a rss feed that aggregates status feeds in real time for the following providers:
+
+*AWS
+*Azure
+*Digitalocean
+*IBM Cloud
+*Oracle Cloud
+*Packet
+
+Alibaba and Tencent do not provide subscribable RSS feeds and I am having technical difficulties integrating GCP's Atom implementation.
 
 ## Project Info and Disclaimer
 investigate.cloud is a project created to provide geospatial data about cloud providers in a transparent, neutral way. 
