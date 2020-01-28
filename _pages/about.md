@@ -54,7 +54,7 @@ feature_row4:
     alt: "placeholder image 2"
     title: "Investigate the map"
     excerpt: 'View all of the worl'd public cloud regions and edge sites on our interactive map'
-    url: "hhtps://map.investigate.cloud"
+    url: "https://map.investigate.cloud"
     btn_label: "Read More"
     btn_class: "btn--primary"
 ---
