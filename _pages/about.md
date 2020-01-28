@@ -10,7 +10,7 @@ header:
   actions:
     - label: "Learn More"
       url: "/terms/"
-excerpt: "Bacon ipsum dolor sit amet salami ham hock ham, hamburger corned beef short ribs kielbasa biltong t-bone drumstick tri-tip tail sirloin pork chop."
+excerpt: "Research cloud projects with transparent, neutral data about the cloud computing landscape"
 intro: 
   - excerpt: 'transparent, neutral data about the cloud computing landscape
 '
