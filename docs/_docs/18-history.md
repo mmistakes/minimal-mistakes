@@ -5,11 +5,15 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2020-01-29T17:42:20+08:00
+last_modified_at: 2020-01-29T13:24:03-05:00
 toc: false
 ---
 
 ## Unreleased
+
+### Enhancements
+
+- Bump Jekyll gem dependency to `v3.7`.
 
 ### Bug Fixes
 
