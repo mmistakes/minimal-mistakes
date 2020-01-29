@@ -5,9 +5,15 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2020-01-25T11:15:45-05:00
+last_modified_at: 2020-01-29T17:42:20+08:00
 toc: false
 ---
+
+## Unreleased
+
+### Bug Fixes
+
+- Fix repeated site base path for masthead logo. [#2385](https://github.com/mmistakes/minimal-mistakes/pull/2385)
 
 ## [4.18.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.18.1)
 
