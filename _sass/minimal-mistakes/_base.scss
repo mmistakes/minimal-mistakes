@@ -327,6 +327,27 @@ nav {
 }
 
 /*
+  Custom CSS
+  ===============================
+*/
+  .page__content .custom-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .page__content .custom-list li {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border:  0;
+    float: left;
+  }
+  .page__content .custom-list img {
+    max-width: 30%;
+    height: auto !important;
+  }
+
+
+/*
    Global animation transition
    ========================================================================== */
 
