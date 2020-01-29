@@ -445,3 +445,11 @@
     }
   }
 }
+
+/* Place inside a single layout */
+
+.layout--single {
+	.feature__wrapper {
+		display: inline-block;
+	}
+}

@@ -120,6 +120,10 @@ body:hover .visually-hidden button {
   }
 }
 
+.task-list .task-list {
+  margin-left: 1em;
+}
+
 /*
    Alignment
    ========================================================================== */
@@ -247,6 +251,10 @@ body:hover .visually-hidden button {
 
   .fa-instagram {
     color: $instagram-color;
+  }
+
+  .fa-keybase {
+    color: $keybase-color;
   }
 
   .fa-lastfm,
