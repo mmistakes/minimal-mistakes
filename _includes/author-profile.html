@@ -8,8 +8,7 @@
 			{% assign author_src = author.avatar | relative_url %}
 
       {% if author.home %}
-				{% assign author_link = author.home | relative_url %}
-        <a href="{{ author_link }}">
+        <a href="{{ author.home | relative_url }}">
           <img src="{{ author_src }}" alt="{{ author.name }}" itemprop="image">
         </a>
       {% else %}
