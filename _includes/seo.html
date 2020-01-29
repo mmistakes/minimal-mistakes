@@ -32,22 +32,13 @@
   {%- assign author_twitter = author.twitter | replace: "@", "" -%}
 {%- endif -%}
 
-{%- assign page_large_image = page.header.og_image | default: page.header.overlay_image | default: page.header.image -%}
-{%- unless page_large_image contains '://' -%}
-  {%- assign page_large_image = page_large_image | absolute_url -%}
-{%- endunless -%}
+{%- assign page_large_image = page.header.og_image | default: page.header.overlay_image | default: page.header.image | absolute_url -%}
 {%- assign page_large_image = page_large_image | escape -%}
 
-{%- assign page_teaser_image = page.header.teaser | default: site.og_image -%}
-{%- unless page_teaser_image contains '://' -%}
-  {%- assign page_teaser_image = page_teaser_image | absolute_url -%}
-{%- endunless -%}
+{%- assign page_teaser_image = page.header.teaser | default: site.og_image | absolute_url -%}
 {%- assign page_teaser_image = page_teaser_image | escape -%}
 
-{%- assign site_og_image = site.og_image -%}
-{%- unless site_og_image contains '://' -%}
-  {%- assign site_og_image = site_og_image | absolute_url -%}
-{%- endunless -%}
+{%- assign site_og_image = site.og_image | absolute_url -%}
 {%- assign site_og_image = site_og_image | escape -%}
 
 {%- if page.date -%}
