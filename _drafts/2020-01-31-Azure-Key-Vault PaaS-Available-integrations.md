@@ -1,5 +1,5 @@
 ---
-title: Integrate Azure Key Vault with Azure PaaS
+title: Use Azure Key Vault as TDE with Azure PaaS Services
 date: 2020-01-31 16:12
 author: nicold
 comments: true
