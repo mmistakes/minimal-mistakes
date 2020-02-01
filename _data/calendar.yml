@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Zeugnisausgabe Klasse 4 - 6",
-    "title": "Zeugnisausgabe Klasse 4 - 6",
-    "excerpt": "Unterricht endet um 10:45 für alle Kinder",
-    "url": "https://www.google.com/calendar/event?eid=M2loZHYybW9zcm5tYmNqc2NuazJ0b2VnbGcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2020-01-31T10:45:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2020-01-31T10:45:00+01:00"
-    },
-    "created": "2020-01-02T11:06:25.000Z",
-    "updated": "2020-01-02T11:06:25.421Z"
-  },
-  {
-    "image_path": null,
     "alt": "Winterferien",
     "title": "Winterferien",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2020-01-13T07:27:41.000Z",
     "updated": "2020-01-13T07:27:41.484Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Osterferien",
+    "title": "Osterferien",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MHE5YTRxZG0zbWptZzBrdjFqdmxyajZ0N3AgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2020-04-06",
+      "date_time": null
+    },
+    "end": {
+      "date": "2020-04-18",
+      "date_time": null
+    },
+    "created": "2019-08-22T08:03:10.000Z",
+    "updated": "2019-08-22T08:03:10.314Z"
   }
 ]
