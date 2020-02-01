@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Chaitra Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "Jana Bollineni"
 description              : ""
 url                      : https://test.chaitra.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
