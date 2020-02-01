@@ -107,11 +107,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Jana Bollineni"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : ""
-  location         : "Somewhere"
-  email            : "a@b.com"
+  location         : "Philadelphia"
+  email            : "jana@chaitra.io"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
