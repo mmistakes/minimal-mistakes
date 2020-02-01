@@ -18,9 +18,9 @@ Applications like Radius, Tacacs need visibility to the IP address of the client
 ## Direct Server Return
 
 A load balancer VIP typically translates (maps) the destination IP address of the packet destined to the VIP, from the VIP address to one of the member/server address in the load balancing pool. If the VIP has SNAT applied, the source address too is translated to an IP address in the SNAT pool or the egress interface of the load balancer.
-
+<div style="display: flex; justify-content: center;">
 <a href="/assets/images/LB-VIP-with-SNAT.png" class="image-popup"><img src="/assets/images/LB-VIP-with-SNAT.png" alt="LB VIP with SNAT.png" title="LB VIP with SNAT" width="300" height="300" align="middle"></a>
-
+</div>
 So, the first step to preserve the original client IP address is not to have SNAT on the VIP. Without SNAT, the client request egresses the load balancer and reaches the chosen member/server. In the response, the server uses the original client IP address as destination and the source as its interface IP address on which it reveived the request. However, the client rejects the response with the source IP address as the server IP address is not the destination the client sent the request.
 
 To make the server respond with the VIP address as source IP address, the VIP address needs be configured on one of the server's loopback interfaces. On the load balancer, destination address translation should be disabled, so that client request egressing the load balancer has the VIP address as the destination address and not translated to a member/server address in the pool.
