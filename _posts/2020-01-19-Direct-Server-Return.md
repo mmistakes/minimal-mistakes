@@ -1,5 +1,6 @@
 ---
 title: Direct Server Return
+layout: single
 classes: wide
 categories:
   - F5
