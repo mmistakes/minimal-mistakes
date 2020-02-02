@@ -77,7 +77,7 @@ For the server to decapsulate the GRE or IPIP traffic, a tunnel interface is nee
 
 IPIP:
 
-~~~ c#
+~~~ go
 modprobe ipip                              #Load the IPIP module in kernel, if not loaded at boot time
 ip link set tunl0 up
 
