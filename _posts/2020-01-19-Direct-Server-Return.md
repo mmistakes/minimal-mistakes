@@ -55,7 +55,7 @@ For the server to decapsulate the GRE or IPIP traffic, a tunnel interface is nee
             }
         }
         profiles {
-            ipip                       <-- Using IPIP tunneling
+            ipip                       #<-- Using IPIP tunneling
         }
     }
 
@@ -68,12 +68,31 @@ For the server to decapsulate the GRE or IPIP traffic, a tunnel interface is nee
             fasl4_tacacs-test { }
         }
         source 0.0.0.0/0
-        translate-address disabled     <-- Disable destination address translation in egress request
+        translate-address disabled     #<-- Disable destination address translation in egress request
         translate-port enabled
         vs-index 17
     }
 
 ## Linux Server Config
+
+IPIP:
+    modprobe ipip                                                  # Load the IPIP module in kernel, if not loaded at boot time
+    ip link set tunl0 up
+    
+    ip addr add 10.1.1.52 dev tunl0 scope host
+    ip addr add 172.16.4.99 dev lo scope host label lo:0 
+    
+    sysctl -w net.ipv4.conf.all.arp_ignore=3
+    sysctl -w net.ipv4.conf.all.arp_announce=2
+    sysctl -w net.ipv4.conf.all.rp_filter=2
+    sysctl -w net.ipv4.conf.tunl0.rp_filter=0
+
+GRE:
+    modprobe ip_gre
+
+
+
+
 
 
 ## References
