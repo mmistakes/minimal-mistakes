@@ -77,7 +77,7 @@ For the server to decapsulate the GRE or IPIP traffic, a tunnel interface is nee
 
 IPIP:
 
-    modprobe ipip                                                  # Load the IPIP module in kernel, if not loaded at boot time
+    modprobe ipip                                          # Load the IPIP module in kernel, if not loaded at boot time
     ip link set tunl0 up
     
     ip addr add 10.1.1.52 dev tunl0 scope host
@@ -89,7 +89,7 @@ IPIP:
     sysctl -w net.ipv4.conf.tunl0.rp_filter=0
 
 GRE:
-    
+
     modprobe ip_gre
 
 
