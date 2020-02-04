@@ -14,7 +14,7 @@ order: 1
 ### ToSee 설치시 필요사항
 
 |  ToSee 설치  |
-|  :-----------------------:s  |
+|  :-----------------------:  |
 | ToSee 설치는 Inno Setup 6.0.3 으로 개발되었습니다. 설치시 admin 권한을 필요로 합니다. 설치를 진행하면서 <br> 설치 대상폴더를 선택하도록 되어 있고, 현재 배포중인 솔루션들은 기본적인 것으로 모두 설치하게 되어 있어 <br> 선택적 설치가 되지는 않습니다. 이후 추가되는 기능들은 설치시 선택하도록 할 예정입니다. Enterprise 와 <br> Personal 버젼의 가장 큰차이는 관리자에게 매니져 사이트의 접근권한을 주는 것으로 Personal 버젼에서는 <br> 해당 기능을 제공하지 않습니다.|
 | <img src="../../assets/images/install/000.png" width="687px" height="25px" title="2020.01.08 ToSee V2 Personal Version" alt="pic000" /> |
 

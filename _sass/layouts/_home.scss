@@ -60,6 +60,25 @@
         background-color: $brand-color;
       }
     }
+    .download-button {
+      background-color: $download-color;
+      border-radius: 4px;
+      padding: 8px 16px;
+      font-weight: $base-font-weight;
+      color: #FAFAFA;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-bottom: $home-text-margin;
+      // start-button hover effect
+      &:hover {
+        background-color: darken($download-color, 5%);
+      }
+      // start-button active effect
+      &:active {
+        background-color: $download-color;
+      }
+    }    
   }
 
   > .backers {

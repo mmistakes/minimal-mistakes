@@ -7,10 +7,23 @@ order: 6
 ---
 &nbsp;
 &nbsp;
-### 주요기능 : 윈도우 방화벽 지원 FIREWALL PLUS
+## FIREWALL PLUS
 &nbsp;
 
-|||
-|:-----:|:-----|
-| <img src="../../img/pic_btn04.png" width="205px" height="205px"/> | - 윈도우 방화벽에서 기본적으로 관리하지 않는 Unknown 포트(1024 이후)를 사용하는 어플리케이션의 네트워크 송/수신 차단 기능 <br> - 윈도우 서비스 관리 모듈인 SVCHOST를 이용하는 어플리케이션의 네트워크 송/수신 내역을 관리. <br> - 기존 윈도우 어플리케이션이 아닌 윈도우 앱(App)들의 네트워크 송/수신 내역 차단 가능 <br> - 인증된 윈도우 어플리케이션에 대해서는 자동적으로 네트워크 사용을 허가하는 기능(윈도우 8.0부터 제공) |
-| <img src="../../img/pic_L04.png" width="205px" height="205px"/> | <img src="../../img/pic_screen04.png" width="1046px" height="446px"/> |
+### 방화벽 플러스 사용법
+
+| 방화벽 알림 기능|
+|:-----|
+| <img src="../../assets/images/firewall/alert.png" width="331px" height="177px"/> |
+| - 윈도우 방화벽에서 기본적으로 관리하지 않는 Unknown 포트(1024 이후)를 사용하는 어플리케이션이 네트워크 송/수신을 하는 경우 우선 차단 후 사용자에게 허용여부를 물어본다. |
+
+&nbsp;
+
+| 방화벽 관리 어플리케이션 리스트 |
+|:-----|
+| <img src="../../assets/images/firewall/list.png" width="642px" height="408px"/> |
+| - 방화벽플러스에서 관리하고 있는 어플리케이션과 그 상태에 대해서 리스트를 확인 할 수 있다. |
+
+
+
+

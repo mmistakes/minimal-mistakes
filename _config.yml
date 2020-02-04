@@ -52,12 +52,12 @@ exclude:
 # End
 
 # Github metadata settings
-repository: kimkucheol/kimkucheol.github.io
+repository: isecure-kr/isecure-kr.github.io
 # End
 
 # jekyll-seo-tag settings
 social:
-  name: kimkucheol
+  name: iSecure
   links:
     - https://www.isecurekr.com
     - https://isecure-kr.github.io/

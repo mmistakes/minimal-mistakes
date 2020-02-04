@@ -85,6 +85,14 @@
   }
 }
 
+/* image align center */
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @include media-query-max($on-mobile) {
   .post {
     padding-left: $base-mobile-padding;
