@@ -101,8 +101,8 @@ modprobe ip_gre
 
 Client:
 ~~~
-[violet@srv-services-01 ~]$ tcpdump -s0 -nn  -r tacacs-captured.pcap 
-reading from file tacacs-captured.pcap, link-type EN10MB (Ethernet)
+[violet@srv-services-01 ~]$ tcpdump -s0 -nn  -r tacacs-capture.pcap 
+reading from file tacacs-capture.pcap, link-type EN10MB (Ethernet)
 23:14:09.162109 IP 192.168.11.201.61067 > 172.16.4.99.49: Flags [S], seq 277734018, win 64240, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
 23:14:09.167608 IP 172.16.4.99.49 > 192.168.11.201.61067: Flags [S.], seq 2220389578, ack 277734019, win 29200, options [mss 1460,nop,nop,sackOK,nop,wscale 7], length 0
 23:14:09.167728 IP 192.168.11.201.61067 > 172.16.4.99.49: Flags [.], ack 1, win 513, length 0
@@ -114,7 +114,7 @@ reading from file tacacs-captured.pcap, link-type EN10MB (Ethernet)
 23:14:09.247388 IP 172.16.4.99.49 > 192.168.11.201.61067: Flags [F.], seq 47, ack 50, win 229, length 0
 23:14:09.247700 IP 192.168.11.201.61067 > 172.16.4.99.49: Flags [.], ack 48, win 513, length 0
 23:14:10.140179 IP 192.168.11.201.61067 > 172.16.4.99.49: Flags [R.], seq 50, ack 48, win 0, length 0
-[violet@srv-services-01 ~]$ 
+
 ~~~
 
 Load Balancer:
@@ -164,17 +164,11 @@ tcpdump: listening on 0.0, link-type EN10MB (Ethernet), capture size 65535 bytes
     192.168.11.201 > 10.1.1.52: IP (tos 0x0, ttl 126, id 7061, offset 0, flags [DF], proto TCP (6), length 40)
     192.168.11.201.61067 > 172.16.4.99.49: Flags [R.], cksum 0x579a (correct), seq 49, ack 48, win 0, length 0 out slot1/tmm0 lis=
 
-^C
-18 packets captured
-18 packets received by filter
-0 packets dropped by kernel
-[jana@adc:Active:Standalone] ~ # 
 ~~~
 
 Server:
 ~~~
 [violet@srv-services-02 ~]$ sudo tcpdump -s0 -vvv -nni ens192 host 192.168.11.201
-[sudo] password for violet: 
 tcpdump: listening on ens192, link-type EN10MB (Ethernet), capture size 262144 bytes
 23:14:08.565129 IP (tos 0x0, ttl 254, id 53539, offset 0, flags [DF], proto IPIP (4), length 72)
     192.168.11.201 > 10.1.1.52: IP (tos 0x0, ttl 126, id 7056, offset 0, flags [DF], proto TCP (6), length 52)
@@ -205,11 +199,6 @@ tcpdump: listening on ens192, link-type EN10MB (Ethernet), capture size 262144 b
     192.168.11.201 > 10.1.1.52: IP (tos 0x0, ttl 126, id 7061, offset 0, flags [DF], proto TCP (6), length 40)
     192.168.11.201.61067 > 172.16.4.99.49: Flags [R.], cksum 0x579a (correct), seq 50, ack 48, win 0, length 0
 
-^C
-11 packets captured
-11 packets received by filter
-0 packets dropped by kernel
-[violet@srv-services-02 ~]$ 
 ~~~
 
 
