@@ -12,6 +12,8 @@ main:
     url: /sitemap/
   - title: "FOLLOW"
     url: /sitemap/
+  - title: "Spring"
+    url: /categories/spring/
 
 # CNAPS ABOUT link
 about:
