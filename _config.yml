@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "default", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -107,9 +107,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Mária Žuffová"
+  name             : 
   avatar           : "/assets/images/IMG_0705.JPG"
-  bio              : "I am an **amazing** person."
+  bio              : "I am a PhD Candidate at the University of Strathclyde"
   location         : "Glasgow, Scotland"
   email            :
   links:
