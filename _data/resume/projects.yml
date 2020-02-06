@@ -22,3 +22,11 @@
   tagline: "This repository contains the Dockerfile I used to create an image I want to use in my projects (currently
   only on the London Volleyball Association one). The idea of the project is to give me a consistent and reliable
   development environment without the need to download any tools, apart from Docker."
+- project:
+  title: GitLab Deployments Status
+  link: "https://github.com/troccoli/gitlab-deployments-status"
+  tagline: "On one of my jobs I had the need to quickly find out which branch was deployed last to one of our client.
+  And since I wanted to get some experience with VueJS and Vuetify, this seemed a good opportunity to do just that.
+  It's a SPA which allows the user first select the GitLab project they are interested in, then a searchable table
+  of all the environments for that project is displayed. Finally the user can see the details of the last deployment
+  in any of the environments."
