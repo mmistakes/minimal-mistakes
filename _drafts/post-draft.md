@@ -1,30 +1,31 @@
 ---
-title:  "포스팅 작성 가이드"
-last_modified_at: 2019-12-06T08:06:00-05:00 
+title: "제목을 입력하세요"
+last_modified_at: 2020-xx-xxT00:00:00-00:00
 categories:
-  - spring
-  - category name
+	- 카테고리를 입력하세요 ex)Cloud, AI, Big Data
 tags:
-  - spring
-  - exception
-  - java
-  - any tags
-author: Juyoung Lee
-authors: ["Juyoung Lee", "Kim"]
-
-excerpt: "Spring에서 어떤 방식으로 Exception을 처리하는지 이해하고, 적용하는 방법을 간단한 예제 프로젝트를 만들었습니다."
-toc: true
-toc_sticky: true
-toc_label: "List"
+	- 태그를 입력하세요 
+	ex)Cloud: k8s, Docker, CloudZ, Azure, AWS, Google Cloud
+	   Ai: Abril, Tensor Flow
+       Big Data: accuinsight+, QUTA
+author: 작성자를 입력하세요.
+excerpt: "포스팅에 관한 간단한 소개 메세지를 입력하세요"
+toc: true (toc를 사용하지 않을 경우에만 false로 변경)
+toc_sticky: true (toc를 사용하지 않을 경우에만 false로 변경)
+toc_label: "List" (toc 사용시-변경x, 사용하지 않을 시 삭제)
 ---
 
 # Title 1 <!--title H1 -->
 
 contents
 
-## Exception Flow <!--title H2 -->
 
-![이미지 이름 적기](https://cnaps-skcc.github.io/assets/images/exception-flow.png){: .align-center}
+
+<img src="/Users/juyounglee/cnaps-skcc.github.io/assets/images/smile.png" alt="smile" style="zoom:80%;" />
+
+Exception Flow <!--title H2 -->
+
+
 <!-- 이미지 삽입 -->
 
 *[이미지 출처 링크](https://www.toptal.com/java/spring-boot-rest-api-error-handling)
@@ -107,6 +108,7 @@ _This is italic text_ <!-- Italic Text-->
         this.debugMessage = ex.getLocalizedMessage();
       }
     }
+   ```
 
   ``` <!--코드 블럭 끝 -->
 
@@ -141,3 +143,4 @@ _This is italic text_ <!-- Italic Text-->
 >Logging 처리:  
 <https://www.sangkon.com/hands-on-springboot-logging/>
 <https://meetup.toast.com/posts/149>
+  ```
