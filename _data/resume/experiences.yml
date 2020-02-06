@@ -3,18 +3,26 @@
   time: October 2018 - present
   company: Shopworks, London
   details: "
-My my main job still remains a development job, but I took an interest in the processes more than the code and I was
+My main job still remains a development job, but I took an interest in the processes more than the code and I was
 able to pursue it.
 <br/>
-I am now helping the Scrum Master setting up meetings, making sure we stay focus on the agenda and have actionable items
-at the end.
+I have helped the Scrum Master setting up meetings, making sure we stay focused on the agenda and have actionable items
+at the end. This sparked my interest in Scrum Mastery.
 <br/>
-I am also involved in the reshaping of our Support team and process, which I am enjoying.
+In the past six months, I have been involved in the reshaping of our Support team and processes, which I enjoyed.
+In my capacity as "Product Owner", I was able to
+<ul>
+<li>rationalise the way tickets were traiged, refined and worked on</li>
+<li>plan and manage the weekly Sprint and set goals for it</li>
+<li>make better use of our client's UAT, by making sure one ticket was test at a time</li>
+<li>be involved in high-level overview and planning of clients' projects</li>
+</ul>
 As such we are currently reviewing the aim of having a dedicated Support team, the type of tickets to assign to
 it, rather than to one of the existing teams, the composition of such a team, etc.
+In my role as PHP developer I
 <ul>
 <li>instigated a project to brand all emails, for uniformity of style and look&feel</li>
-<li>involved in ensuring code-design standards and test coverage</li>
+<li>was involved in enforcing code-design standards to and test coverage</li>
 <li>built a middleware to import data from a third-party HR system into our core Product, using our own and 3rd party APIs</li>
 </ul>"
 - experience:
@@ -26,7 +34,7 @@ Although that prospect did not materialise, I was able to work closely with deve
 <ul>
 <li>checked and documented the current architecture and processes, and then proposed a more modern, reliable and scalable
 solution based on AWS, and implemented it for development</li>
-<li>instigated and conducted training sessions with the publishers, authors and other non-techincal personnel about
+<li>instigated and conducted training sessions with the publishers, authors and other non-technical personnel about
   the Agile methodology, the benefits of incremental improvements, the advantages of the distributed architecture
   proposed, and the importance of frequent deployment to improve subscribers' feedback.</li>
 <li>liaised with the Product Manager and CTO to identify the skills and roles needed for a cross-functional team</li>
