@@ -15,7 +15,7 @@
 minimal_mistakes_skin    : "neon" # "default", "aqua", "contrast", "dark", "dirt", "air", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "en-GB"
 title                    : "Mária Žuffová"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
@@ -65,7 +65,7 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
+search                   : true
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
