@@ -21,9 +21,6 @@ html {
   @include breakpoint($x-large) {
     font-size: 22px;
   }
-
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
 }
 
 /* Remove margin */
