@@ -1,12 +1,12 @@
 # main links
 main:
   - title: "About"
-    url: https://github.com/mariazuffova/minimal-mistakes/about
+    url: https://mariazuffova.github.io/minimal-mistakes/about
   - title: "Research"
-    url: https://github.com/mariazuffova/minimal-mistakes/research
+    url: https://mariazuffova.github.io/minimal-mistakes/research
   - title: "Teaching"
-    url: https://github.com/mariazuffova/minimal-mistakes/teaching
+    url: https://mariazuffova.github.io/minimal-mistakes/teaching
   - title: "Publications"
-    url: https://github.com/mariazuffova/minimal-mistakes/publications
+    url: https://mariazuffova.github.io/minimal-mistakes/publications
   - title: "Sitemap"
     url: /sitemap/
