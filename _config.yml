@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "Mária Žuffová"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/IMG_0705.JPG"
   bio              : "I am an **amazing** person."
   location         : "Glasgow, Scotland"
   email            :
