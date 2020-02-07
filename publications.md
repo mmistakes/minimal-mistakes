@@ -16,4 +16,4 @@ author_profile: true
   
 ## Working papers  
 
-- Žuffová, Mária. "Journalistic uses of government information and data: Evidence from an expert survey and interviews." 
+- Žuffová, Mária. "Journalistic uses of government information and data in the UK: Evidence from an expert survey and interviews." 
