@@ -4,6 +4,8 @@ author_profile: true
 ---
 
 
+  # Publications 
+  
   
   ## Journal articles (under review)
 
@@ -12,7 +14,7 @@ author_profile: true
     
   ## Conference proceedings 
 
-- Žuffová, Mária. 
+- Žuffová, Mária. (2017) ”Political and economic factors explaining open data availability." Proceedings of the International Conference for E-Democracy and Open Government, 2017
 
   
   ## Working papers  
