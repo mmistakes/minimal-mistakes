@@ -9,7 +9,7 @@
   animation: $intro-transition;
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
-  z-index: 20;
+  z-index: 30;
 
   &__inner-wrap {
     @include clearfix;
