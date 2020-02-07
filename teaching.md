@@ -9,11 +9,11 @@ During my PhD studies, I worked as a teaching assistant and delivered tutorials 
 
 ## Undergraduate level
 
-- L2305: Research Methods for Political Scientists
+- **L2305: Research Methods for Political Scientists**, fall 2016 (focus on quantitative methods) and fall 2017 (focus on research design, ethics and qualitative methods), Government & Public Policy, University of Strathclyde, Course leaders: Dr Brandenburg and Dr Shephard 
 
-- L2103: Politics 1b
+- **L2103: Politics 1b**, spring 2016, Government & Public Policy, University of Strathclyde, Course leader: Dr Gabriela Borz 
 
-- L2102: Politics 1a
+- **L2102: Politics 1a**, fall 2015, Government & Public Policy, University of Strathclyde, Course leader: Dr Gabriela Borz
 
 
 As a postdoc, I look forward to teaching a substantive course on media and democracy, digital technologies and politics, or government transparency. Using different pedagogical approaches and practices, I strive for enabling active learning and creating an inclusive environment which reflects students’ individual needs and limitations and gives them equal chances to engage. I aim to design substantive courses to encourage discussions and include hands-on experience with software or programming language in methods classes, as these approaches helped me as a student to learn most effectively.  
