@@ -1,8 +1,8 @@
 ---
+title: Teaching 
 layout: single
 author_profile: true
 ---
-# Teaching 
 
 During my PhD studies, I worked as a teaching assistant and delivered tutorials for the following courses on research methods and introduction to political science.
 
