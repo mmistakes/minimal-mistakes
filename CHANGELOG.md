@@ -3,6 +3,7 @@
 ### Enhancements
 
 - Bump Jekyll gem dependency to `v3.7`.
+- Open external masthead links in new tab. [#2392](https://github.com/mmistakes/minimal-mistakes/pull/2392)
 
 ### Bug Fixes
 
