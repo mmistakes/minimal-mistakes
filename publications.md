@@ -4,9 +4,8 @@ author_profile: true
 ---
 
 
-  # Publications 
-  
-  
+# Publications 
+    
   ## Journal articles (under review)
 
 - Žuffová, Mária. "Do FOI laws and open government data deliver as anti-corruption policies? Evidence from a cross- country study." (under review at Government Information Quarterly)
