@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "dark", "aqua", "contrast", "neon", "dirt
 
 # Site Settings
 locale                   : "en-GB"
-title                    : "Mária Žuffová"
+title                    : # "Mária Žuffová"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Mária Žuffová"
