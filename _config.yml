@@ -107,9 +107,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Mária Žuffová"
+  name             : # "Mária Žuffová"
   avatar           : "/assets/Zuffova-photo.jpg"
-  bio              : "PhD Candidate"
+  bio              : # "PhD Candidate"
   location         : "Glasgow, Scotland"
   email            :
   links:
