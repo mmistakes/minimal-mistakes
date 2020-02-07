@@ -4,19 +4,17 @@ author_profile: true
 ---
 
 
+  
   ## Journal articles (under review)
 
-- Žuffová, Mária. **Machine Learning R&D Engineer** - Shanghai:  
-  I completed my end-of-study internship in Shanghai as a Machine Learning R&D Engineer for a sino-french startup called **[Mediasia-Labs](http://mediasia-labs.com)**. I have been working on *Deep-Learning* and *Advanced Algorithms* applied to Pronunciation Evaluation for language learners.
+- Žuffová, Mária. "Do FOI laws and open government data deliver as anti-corruption policies? Evidence from a cross- country study." (under review at Government Information Quarterly)
 
     
   ## Conference proceedings 
 
-- **Machine Learning R&D Engineer** - Shanghai:  
-  I completed my end-of-study internship in Shanghai as a Machine Learning R&D Engineer for a sino-french startup called **[Mediasia-Labs](http://mediasia-labs.com)**. I have been working on *Deep-Learning* and *Advanced Algorithms* applied to Pronunciation Evaluation for language learners.
+- Žuffová, Mária. 
 
   
   ## Working papers  
 
-- **Machine Learning R&D Engineer** - Shanghai:  
-  I completed my end-of-study internship in Shanghai as a Machine Learning R&D Engineer for a sino-french startup called **[Mediasia-Labs](http://mediasia-labs.com)**. I have been working on *Deep-Learning* and *Advanced Algorithms* applied to Pronunciation Evaluation for language learners.
+- Žuffová, Mária. "Journalistic uses of government information and data: Evidence from an expert survey and interviews." 
