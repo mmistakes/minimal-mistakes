@@ -3,12 +3,12 @@ layout: single
 author_profile: true
 ---
 
-  # Teaching 
+# Teaching 
 
-During my PhD studies, I worked as a teaching assistant and delivered tutorials for the following courses on research methods and introduction to political science.  
+During my PhD studies, I worked as a teaching assistant and delivered tutorials for the following courses on research methods and introduction to political science.
 
 
-  ## Undergraduate level
+## Undergraduate level
 
 - L2305: Research Methods for Political Scientists
 
