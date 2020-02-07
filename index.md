@@ -2,8 +2,7 @@
 layout: single
 author_profile: true
 ---
-
-<header> Welcome!</header> 
+# Welcome!
  
 <section> 
 I am a PhD Candidate in Politics at the University of Strathclyde in Glasgow, Scotland (expected to graduate in June 2020). I am interested in the area of comparative politics and political economy, substantively in the digital technologies and politics, the effects of information, public demand for government information, and how the government responds to this demand.
