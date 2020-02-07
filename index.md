@@ -4,7 +4,7 @@ author_profile: true
 ---
 
 
-Welcome!
+# Welcome!
  
 
 I am a PhD Candidate in Politics at [the University of Strathclyde](https://www.strath.ac.uk/humanities/governmentpublicpolicy/) in Glasgow, Scotland (expected to graduate in June 2020). I am interested in the area of comparative politics, substantively in the digital technologies and politics, the effects of information, public demand for government information, and how the government responds to this demand.
