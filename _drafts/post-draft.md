@@ -19,10 +19,6 @@ toc_label: "List" (toc 사용시-변경x, 사용하지 않을 시 삭제)
 
 contents
 
-
-
-<img src="/Users/juyounglee/cnaps-skcc.github.io/assets/images/smile.png" alt="smile" style="zoom:80%;" />
-
 Exception Flow <!--title H2 -->
 
 

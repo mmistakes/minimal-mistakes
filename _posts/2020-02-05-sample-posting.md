@@ -28,7 +28,7 @@ contents contents
 
 
 
-<img src="/Users/juyounglee/cnaps-skcc.github.io/assets/images/smile.png" alt="smile" style="zoom:80%;" />
+
 
 ## Exception Flow <!--title H2 -->
 
