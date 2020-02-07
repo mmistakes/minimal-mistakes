@@ -8,7 +8,7 @@
 
 .sidebar {
   @include clearfix();
-  @include breakpoint(max-width $large) {
+  @include breakpoint(max-width $x-large) {
     /* fix z-index order of follow links */
     position: relative;
     z-index: 10;
@@ -16,7 +16,7 @@
     transform: translate3d(0, 0, 0);
   }
 
-  @include breakpoint($large) {
+  @include breakpoint($x-large) {
     float: left;
     width: calc(#{$right-sidebar-width-narrow} - 1em);
     opacity: 0.90;
@@ -120,7 +120,7 @@
   width: 46px;
   height: 46px;
 
-  @include breakpoint($large) {
+  @include breakpoint($x-large) {
     display: block;
     width: auto;
     height: auto;
@@ -130,7 +130,7 @@
     max-width: 170px;
     border-radius: 75%;
 
-    @include breakpoint($large) {
+    @include breakpoint($x-large) {
       padding: 5px;
       border: 1px solid $border-color;
     }
@@ -144,7 +144,7 @@
   padding-right: 25px;
   line-height: 1;
 
-  @include breakpoint($large) {
+  @include breakpoint($x-large) {
     display: block;
     width: 100%;
     padding-left: 0;
@@ -160,7 +160,7 @@
 .author__name {
   margin: 0;
 
-  @include breakpoint($large) {
+  @include breakpoint($x-large) {
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -184,7 +184,7 @@
   display: table-cell;
   vertical-align: middle;
   font-family: $sans-serif;
-  z-index: 10;
+  z-index: 20;
   position: relative;
   cursor: pointer;
 
