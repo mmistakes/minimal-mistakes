@@ -16,8 +16,8 @@ minimal_mistakes_skin    : "default" # "dark", "aqua", "contrast", "neon", "dirt
 
 # Site Settings
 locale                   : "en-GB"
-title                    : # "Mária Žuffová"
-title_separator          : "-"
+title                    : "Mária Žuffová"
+title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Mária Žuffová"
 description              : "PhD Candidate in Politics at the University of Strathclyde, Glasgow."
@@ -107,9 +107,9 @@ analytics:
 
 # Site Author
 author:
-  name             : 
+  name             : "Mária Žuffová"
   avatar           : "/assets/Zuffova-photo.jpg"
-  bio              : "I am a PhD Candidate at the University of Strathclyde"
+  bio              : "PhD Candidate at the University of Strathclyde"
   location         : "Glasgow, Scotland"
   email            :
   links:
@@ -132,7 +132,7 @@ author:
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-github"
+      icon: "fab fa-fw fa-linkein"
       url: "https://www.linkedin.com/in/maria-zuffova-75a48610/"
 
 # Site Footer
