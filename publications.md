@@ -1,7 +1,8 @@
 ---
+title: Publications 
 layout: single
 author_profile: true
-
+---
 
 ## Journal articles (under review)
 
