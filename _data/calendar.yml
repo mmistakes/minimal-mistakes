@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Winterferien",
-    "title": "Winterferien",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M2VqN2xiNjZiNGZrdjVubDQ3bGY5dnY2bzMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2020-02-03",
-      "date_time": null
-    },
-    "end": {
-      "date": "2020-02-08",
-      "date_time": null
-    },
-    "created": "2019-08-22T08:02:34.000Z",
-    "updated": "2019-08-22T08:02:34.786Z"
-  },
-  {
-    "image_path": null,
     "alt": "3. GEV um 18:30 Uhr",
     "title": "3. GEV um 18:30 Uhr",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2019-08-22T08:03:10.000Z",
     "updated": "2019-08-22T08:03:10.314Z"
+  },
+  {
+    "image_path": null,
+    "alt": "4. GEV um 18:30 Uhr",
+    "title": "4. GEV um 18:30 Uhr",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=N2xnanRpYmk0N2hidGZqODY0cjBwNHA2NGogaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2020-05-14T18:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2020-05-14T20:00:00+02:00"
+    },
+    "created": "2019-10-25T12:53:36.000Z",
+    "updated": "2019-10-25T12:53:36.451Z"
   }
 ]
