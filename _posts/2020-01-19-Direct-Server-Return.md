@@ -34,44 +34,45 @@ For the server to decapsulate the GRE or IPIP traffic, a tunnel interface is nee
 
 
 ## F5 Configuration
+~~~ go
+ltm profile fastl4 fasl4_tacacs-test {
+    app-service none
+    loose-close enabled
+    loose-initialization enabled
+    pva-acceleration none
+}
 
-    ltm profile fastl4 fasl4_tacacs-test {
-        app-service none
-        loose-close enabled
-        loose-initialization enabled
-        pva-acceleration none
-    }
-
-    ltm pool p_tacacs-test_49 {
-        members {
-            10.1.1.51:49 {
-                address 10.1.1.51
-            }
-            10.1.1.52:49 {
-                address 10.1.1.52
-            }
-            10.1.1.53:49 {
-                address 10.1.1.53
-            }
+ltm pool p_tacacs-test_49 {
+    members {
+        10.1.1.51:49 {
+            address 10.1.1.51
         }
-        profiles {
-            ipip                       #<-- Using IPIP tunneling
+        10.1.1.52:49 {
+            address 10.1.1.52
+        }
+        10.1.1.53:49 {
+            address 10.1.1.53
         }
     }
-
-    ltm virtual vs_tacacs-test_49 {
-        destination 172.16.4.99:49
-        ip-protocol tcp
-        mask 255.255.255.255
-        pool p_tacacs-test_49
-        profiles {
-            fasl4_tacacs-test { }
-        }
-        source 0.0.0.0/0
-        translate-address disabled     #<-- Disable destination address translation in egress request
-        translate-port enabled
-        vs-index 17
+    profiles {
+        ipip                       #<-- Using IPIP tunneling
     }
+}
+
+ltm virtual vs_tacacs-test_49 {
+    destination 172.16.4.99:49
+    ip-protocol tcp
+    mask 255.255.255.255
+    pool p_tacacs-test_49
+    profiles {
+        fasl4_tacacs-test { }
+    }
+    source 0.0.0.0/0
+    translate-address disabled     #<-- Disable destination address translation in egress request
+    translate-port enabled
+    vs-index 17
+}
+~~~
 
 ## Linux Server Config
 
