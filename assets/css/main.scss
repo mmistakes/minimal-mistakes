@@ -6,7 +6,6 @@
 
 $paragraph-indent: true;
 .page__lead {
-    font-family: $global-font-family;
     font-size: $type-size-8;
   }
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
