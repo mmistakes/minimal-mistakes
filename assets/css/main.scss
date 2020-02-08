@@ -22,16 +22,5 @@ $base0c: #2aa198 !default;
 $base0d: #268bd2 !default;
 $base0e: #6c71c4 !default;
 $base0f: #d33682 !default;
-$serif              : "PT Serif", Georgia, Times, serif;
-$sans-serif-narrow  : "PT Sans Narrow", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-
-$global-font-family : $serif;
-$header-font-family : $sans-serif-narrow;
-
-.page__lead {
-    font-family: $global-font-family;
-    font-size: $type-size-8;
-  }
-
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
