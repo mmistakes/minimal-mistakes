@@ -22,6 +22,7 @@ A load balancer VIP typically translates (maps) the destination IP address of th
 <div style="display: flex; justify-content: center;">
     <a href="/assets/images/LB-VIP-with-SNAT.png" class="image-popup"><img src="/assets/images/LB-VIP-with-SNAT.png" alt="LB VIP with SNAT.png" title="LB VIP with SNAT" width="300" height="300"></a>
 </div>
+
 So, the first step to preserve the original client IP address is not to have SNAT on the VIP. Without SNAT, the client request egresses the load balancer and reaches the chosen member/server. In the response, the server uses the original client IP address as destination and the source as its interface IP address on which it reveived the request. However, the client rejects the response with the source IP address as the server IP address is not the destination the client sent the request.
 
 To make the server respond with the VIP address as source IP address, the VIP address needs be configured on one of the server's loopback interfaces. On the load balancer, destination address translation should be disabled, so that client request egressing the load balancer has the VIP address as the destination address and not translated to a member/server address in the pool.
@@ -30,6 +31,7 @@ However, the client request egressing the load balancer with destination address
 <div style="display: flex; justify-content: center;">
     <a href="/assets/images/LB-VIP-with-DSR.png" class="image-popup"><img src="/assets/images/LB-VIP-with-DSR.png" alt="LB VIP with DSR.png" title="LB VIP with DSR" width="300" height="300"></a>
 </div>
+
 For the server to decapsulate the GRE or IPIP traffic, a tunnel interface is needed with the same IP address as that of its physical interface receiving the traffic. After decapsulation, the original client request with the VIP address as destination address reaches the loopback interface for processing. The server responds with the source address as the loopback interface IP (VIP address), instead of the physical interface address.
 
 
