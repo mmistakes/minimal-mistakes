@@ -209,6 +209,5 @@ tcpdump: listening on ens192, link-type EN10MB (Ethernet), capture size 262144 b
 
 ## References
 
-https://wiki.archlinux.org/index.php/Kernel_module#Loading
-
-https://access.redhat.com/solutions/53031
+<a href="{{ https://wiki.archlinux.org/index.php/Kernel_module#Loading }}">https://wiki.archlinux.org/index.php/Kernel_module#Loading</a>
+<a href="{{ https://access.redhat.com/solutions/53031 }}">https://access.redhat.com/solutions/53031</a>
