@@ -19,7 +19,7 @@ I'm very much a beginner when it comes to reading texts out loud, but I find it 
 
 1. Release early.
 2. Keep pumping out features.
-3. Make users happy
+3. Make users happy.
 4. Fear the right things.
 5. Commitment is a self-fulfilling prophecy.
 6. There is always room.
