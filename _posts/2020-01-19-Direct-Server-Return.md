@@ -119,7 +119,6 @@ reading from file tacacs-capture.pcap, link-type EN10MB (Ethernet)
 23:14:09.247388 IP 172.16.4.99.49 > 192.168.11.201.61067: Flags [F.], seq 47, ack 50, win 229, length 0
 23:14:09.247700 IP 192.168.11.201.61067 > 172.16.4.99.49: Flags [.], ack 48, win 513, length 0
 23:14:10.140179 IP 192.168.11.201.61067 > 172.16.4.99.49: Flags [R.], seq 50, ack 48, win 0, length 0
-
 ~~~
 
 Load Balancer:
@@ -168,7 +167,6 @@ tcpdump: listening on 0.0, link-type EN10MB (Ethernet), capture size 65535 bytes
 23:14:15.923604 IP (tos 0x0, ttl 255, id 53566, offset 0, flags [DF], proto IPIP (4), length 60)
     192.168.11.201 > 10.1.1.52: IP (tos 0x0, ttl 126, id 7061, offset 0, flags [DF], proto TCP (6), length 40)
     192.168.11.201.61067 > 172.16.4.99.49: Flags [R.], cksum 0x579a (correct), seq 49, ack 48, win 0, length 0 out slot1/tmm0 lis=
-
 ~~~
 
 Server:
@@ -203,7 +201,6 @@ tcpdump: listening on ens192, link-type EN10MB (Ethernet), capture size 262144 b
 23:14:09.542828 IP (tos 0x0, ttl 254, id 53566, offset 0, flags [DF], proto IPIP (4), length 60)
     192.168.11.201 > 10.1.1.52: IP (tos 0x0, ttl 126, id 7061, offset 0, flags [DF], proto TCP (6), length 40)
     192.168.11.201.61067 > 172.16.4.99.49: Flags [R.], cksum 0x579a (correct), seq 50, ack 48, win 0, length 0
-
 ~~~
 
 
