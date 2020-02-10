@@ -1,12 +1,11 @@
 ---
-title: Building Bespoke AI Products to Win in the Age of Software
+title: Building bespoke AI products to win in the age of software
 category: "Digital Transformation"
 tag: ["Product", “AI”, “UX Design”, “Talent Strategy”, “DevOps”, “Cybersecurity”, “Outsourcing”]
 toc: true
 ---
 
 The age of mass manufacturing forged a popular managerial mindset anchored on a belief that there exists an optimal flow for any business process. For instance, an experienced welder should be able to weld eighty [shielded-metal-arc-carbon-steel-joints](https://en.wikipedia.org/wiki/Shielded_metal_arc_welding) in an hour, with less than one percent defects, and it takes roughly [eight weeks and three hundred and twenty hours of training](http://www.advancedweldingschool.com/projects/smaw-plate/) to become proficient. That mindset culminated in Taylorism (i.e., [Scientific management](https://en.wikipedia.org/wiki/Scientific_management)) and [Fordism](https://en.wikipedia.org/wiki/Fordism) at the beginning of the 20th century. 
-
 
 # Winners in the age of services learned to apply Taylorism at scale
 
@@ -55,5 +54,4 @@ Ask yourself one simple question: how many board members at your company have wr
 Mik Kersten, author of [Project to Product](https://www.amazon.com/Project-Product-Survive-Disruption-Framework/dp/1942788398), explains how a large number of companies went out of business because they were not able to adapt to the industrial revolution. He argues eloquently in his book that we are now in the midst of another one of these cycles and will witness many more great institutions disappearing.
 
 In my next post, [Finding your Asana to win in the age of software](https://blog.dannycastonguay.com/) , I discuss how crucial your talent strategy is, and the necessity of looking outside your organization for help.
-
 
