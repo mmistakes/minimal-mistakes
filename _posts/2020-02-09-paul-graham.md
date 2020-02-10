@@ -1,7 +1,7 @@
 ---
 title: Paul Graham
-category: "Startups"
-tag: ["Product", “Y-Combinator”, “Venture Capital”]
+category: Startups
+tag: [Product, Y-Combinator, Venture Capital]
 toc: true
 ---
 
