@@ -63,5 +63,5 @@ Ask yourself one simple question: how many board members at your company have wr
 
 Mik Kersten, author of [Project to Product: How to Survive and Thrive in the Age of Digital Disruption with the Flow Framework](https://www.amazon.com/Project-Product-Survive-Disruption-Framework/dp/1942788398), explains how a large number of companies went out of business because they were not able to adapt to the industrial revolution. He argues eloquently in his book that we are now in the midst of another one of these cycles and will witness many more great institutions disappearing.
 
-In my next post, [Finding your Asana to win in the age of software](https://blog.dannycastonguay.com/) , I discuss how crucial your talent strategy is, and the necessity of looking outside your organization for help.
+In my next post, [Finding your Asana to win in the age of software](https://blog.dannycastonguay.com/), I discuss how crucial your talent strategy is, and the necessity of looking outside your organization for help.
 
