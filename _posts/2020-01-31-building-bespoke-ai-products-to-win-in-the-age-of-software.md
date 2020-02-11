@@ -32,7 +32,7 @@ I could argue that those leaders need to learn from the bottom: how to design (e
 Yet, there are things these leaders can do at the top:
 
 1. First, they can adopt a venture capital mindset when investing in product development (see my post on how to [weave your digital transformations out of silk](https://blog.dannycastonguay.com/digital%20transformation/weave-your-dx-out-of-silk/) to learn more on that topic).
-2. Second, they can learn from startups, especially how they fail, because startups have a greater appetite for risk (see Paul Graham’s essay on [the hardest lessons for startups to learn](http://paulgraham.com/startuplessons.html)). 
+2. Second, they can learn from startups, especially how they fail, because startups have a greater appetite for risk (see Paul Graham’s essay on [the hardest lessons for startups to learn](http://paulgraham.com/startuplessons.html), and an [audio version of it](https://blog.dannycastonguay.com/startups/paul-graham/)). 
 3. Third, they can make room on their board and leadership teams for people who are proficient with some of the tools mentioned above and who continue to be hands on with building AI products.
 
 One major benefit of having decision makers at the top who are building AI products is an increase willingness to build rather than buy an AI product. These decisions are absolutely critical because whenever an organization decides to buy from a vendor, they are essentially conceding a significant portion of their identity, control and ability to grow as an organization. When they build bespoke AI products for which they own all of the IP, they are creating a differentiated customer and shareholder value for decades to come. 
