@@ -1,6 +1,6 @@
 ---
 title: "Overriding Theme Defaults"
-permalink: /docs/overriding-theme-defaults/
+permalink: /tutorials/overriding-theme-defaults/
 excerpt: "Instructions on how to customize the theme's default set of layouts, includes, and stylesheets when using the Ruby Gem version."
 last_modified_at: 2018-03-20T15:59:31-04:00
 ---
@@ -24,4 +24,4 @@ Jekyll will use the files in your project first before falling back to the defau
 Additionally, from `v4.5.0` the theme-gem will also exhibit above behavior for `/_data` via a plugin.
 Consequently, the data files for UI Text and Navigation are also bundled within the theme-gem.
 
-For more information on customizing the theme's [stylesheets]({{ "/docs/stylesheets/" | relative_url }}) and [JavaScript]({{ "/docs/javascript/" | relative_url }}), see the appropriate pages.
+For more information on customizing the theme's [stylesheets]({{ "/tutorials/stylesheets/" | relative_url }}) and [JavaScript]({{ "/tutorials/javascript/" | relative_url }}), see the appropriate pages.

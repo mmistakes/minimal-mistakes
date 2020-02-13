@@ -6,7 +6,7 @@ header:
   overlay_image: /assets/images/mm-home-page-feature-test.png
   actions:
     - label: "<i class='fas fa-download'></i> Source"
-      url: "/docs/quick-start-guide/"
+      url: "/projects/quick-start-guide/"
 excerpt: >
   <small>Free and open source</small><br />
   Way to create artificial human.
@@ -15,21 +15,21 @@ feature_row:
     alt: "Primary AM"
     title: "Primary AM"
     excerpt: "A set of primary techniques and principles that allow to create an artificial mind that can adapt to the changing world around it. As a result, we obtain natural behavior."
-    url: "/docs/configuration/"
+    url: "/projects/configuration/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/mm-responsive-feature.png
     alt: "Extended AM"
     title: "Extended AM"
     excerpt: "The techniques of forming an artificial mind that allows to achieve a human-like effect by creating an immersion that blurs the barriers between the real world and the virtual world."
-    url: "/docs/layouts/"
+    url: "/projects/layouts/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/mm-free-feature.png
     alt: "Advanced AM"
     title: "Advanced AM"
     excerpt: "The techniques that allows the penetration of worlds, whose greatest ambition is to achieve literally impossible, that is, the penetration of the virtual world into the real world."
-    url: "/docs/license/"
+    url: "/projects/license/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
 ---

@@ -1,11 +1,11 @@
 ---
 title: "Authors"
-permalink: /docs/authors/
+permalink: /tutorials/authors/
 excerpt: "Instructions and settings for working with multiple site authors."
 last_modified_at: 2018-09-10T12:33:24-04:00
 ---
 
-Sites that may have content authored from various individuals can be accommodated by using [data files](https://jekyllrb.com/docs/datafiles/).
+Sites that may have content authored from various individuals can be accommodated by using [data files](https://jekyllrb.com/tutorials/datafiles/).
 
 To assign an author to a post or page that is different from the site author specified in `_config.yml`:
 

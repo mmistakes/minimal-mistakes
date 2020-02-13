@@ -1,12 +1,12 @@
 ---
 title: "Configuration"
-permalink: /docs/configuration/
+permalink: /projects/configuration/
 excerpt: "Settings for configuring and customizing the theme."
 last_modified_at: 2019-10-04T10:54:48-04:00
 toc: true
 ---
 
-Settings that affect your entire site can be changed in [Jekyll's configuration file](https://jekyllrb.com/docs/configuration/): `_config.yml`, found in the root of your project. If you don't have this file you'll need to copy or create one using the theme's [default `_config.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml) as a base.
+Settings that affect your entire site can be changed in [Jekyll's configuration file](https://jekyllrb.com/projects/configuration/): `_config.yml`, found in the root of your project. If you don't have this file you'll need to copy or create one using the theme's [default `_config.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml) as a base.
 
 **Note:** for technical reasons, `_config.yml` is NOT reloaded automatically when used with `jekyll serve`. If you make any changes to this file, please restart the server process for them to be applied.
 {: .notice--warning}
@@ -116,7 +116,7 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 _Example:_ `locale: "en-US"` sets the `lang` attribute for the site to the _United States_ flavor of English, while `en-GB` would be for the `United Kingdom` style of English. Country codes are optional and the shorter variation `locale: "en"` is also acceptable. To find your language and country codes check this [reference table](<https://msdn.microsoft.com/en-us/library/ee825488(v=cs.20).aspx>).
 
-Properly setting the locale is important for associating localized text found in the [**UI Text**]({{ "/docs/ui-text/" | relative_url }}) data file. An improper match will cause parts of the UI to disappear (eg. button labels, section headings, etc).
+Properly setting the locale is important for associating localized text found in the [**UI Text**]({{ "/projects/ui-text/" | relative_url }}) data file. An improper match will cause parts of the UI to disappear (eg. button labels, section headings, etc).
 
 **Note:** The theme comes with localized text in English (`en`, `en-US`, `en-GB`). If you change `locale` in `_config.yml` to something else, most of the UI text will go blank. Be sure to add the corresponding locale key and translated text to `_data/ui-text.yml` to avoid this.
 {: .notice--warning}
@@ -161,7 +161,7 @@ The base hostname and protocol for your site. If you're hosting with GitHub Page
 
 GitHub Pages now [forces `https://` for new sites](https://help.github.com/articles/securing-your-github-pages-site-with-https/) so be mindful of that when setting your URL to avoid mixed-content warnings.
 
-**Note:** Jekyll 3.3 overrides this value with `url: http://localhost:4000` when running `jekyll serve` locally in development. If you want to avoid this behavior set `JEKYLL_ENV=production` to [force the environment](http://jekyllrb.com/docs/configuration/#specifying-a-jekyll-environment-at-build-time) to production.
+**Note:** Jekyll 3.3 overrides this value with `url: http://localhost:4000` when running `jekyll serve` locally in development. If you want to avoid this behavior set `JEKYLL_ENV=production` to [force the environment](http://jekyllrb.com/projects/configuration/#specifying-a-jekyll-environment-at-build-time) to production.
 {: .notice--warning}
 
 ### Site base URL
@@ -206,7 +206,7 @@ head_scripts:
   - /assets/js/your-custom-head-script.js
 ```
 
-Consult the [JavaScript documentation]({{ site.baseurl }}{% link _docs/17-javascript.md %}) for more information on working with theme scripts.
+Consult the [JavaScript documentation]({{ site.baseurl }}{% link _projects/17-javascript.md %}) for more information on working with theme scripts.
 {: .notice--info}
 
 ### Site default teaser image
@@ -263,7 +263,7 @@ Enable breadcrumb links to help visitors better navigate deep sites. Because of 
 breadcrumbs: true  # disabled by default
 ```
 
-Breadcrumb start link text and separator character can both be changed in the [UI Text data file]({{ "/docs/ui-text/" | relative_url }}).
+Breadcrumb start link text and separator character can both be changed in the [UI Text data file]({{ "/projects/ui-text/" | relative_url }}).
 
 ### Reading time
 
@@ -293,7 +293,7 @@ words_per_minute: 250
 
 ### Comments
 
-[**Disqus**](https://disqus.com/), [**Discourse**](https://www.discourse.org/), [**Facebook**](https://developers.facebook.com/docs/plugins/comments), [**utterances**](https://utteranc.es/), and static-based commenting via [**Staticman**](https://staticman.net/) are built into the theme. First set the comment provider you'd like to use:
+[**Disqus**](https://disqus.com/), [**Discourse**](https://www.discourse.org/), [**Facebook**](https://developers.facebook.com/projects/plugins/comments), [**utterances**](https://utteranc.es/), and static-based commenting via [**Staticman**](https://staticman.net/) are built into the theme. First set the comment provider you'd like to use:
 
 | Name             | Comment Provider          |
 | ---------------- | ------------------------- |
@@ -322,7 +322,7 @@ defaults:
 If you add `comments: false` to a post's YAML Front Matter it will override the default and disable comments for just that post.
 
 **Note:** Comments are disabled by default in `development`. To enable when testing/building locally be sure to set
-`JEKYLL_ENV=production` to [force the environment](http://jekyllrb.com/docs/configuration/#specifying-a-jekyll-environment-at-build-time) to production.
+`JEKYLL_ENV=production` to [force the environment](http://jekyllrb.com/projects/configuration/#specifying-a-jekyll-environment-at-build-time) to production.
 {: .notice--info}
 
 #### Disqus
@@ -397,7 +397,7 @@ Transform user comments into `_data` files that live inside of your GitHub repos
 ##### Add Staticman as a collaborator
 
 1. Allow Staticman push access to your GitHub repository by clicking on **Settings**, then the **Collaborators** tab and adding `staticmanapp` as a collaborator.
-2. To accept the pending invitation visit: `https://api.staticman.net/v2/connect/{your GitHub username}/{your repository name}`. Consult the Staticman "[Get Started](https://staticman.net/docs/index.html)" guide for more info.
+2. To accept the pending invitation visit: `https://api.staticman.net/v2/connect/{your GitHub username}/{your repository name}`. Consult the Staticman "[Get Started](https://staticman.net/projects/index.html)" guide for more info.
 
 ##### Configure Staticman
 
@@ -419,7 +419,7 @@ comments:
 
 ###### Staticman v2
 
-Default settings have been provided in [`staticman.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/staticman.yml) and are commented to guide you through setup. View the [full list of configurations](https://staticman.net/docs/configuration).
+Default settings have been provided in [`staticman.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/staticman.yml) and are commented to guide you through setup. View the [full list of configurations](https://staticman.net/projects/configuration).
 
 ```yaml
 # staticman.yml (defaults)
@@ -460,7 +460,7 @@ comments:
 
 ###### Staticman v1 (deprecated)
 
-Default settings have been provided in `_config.yml`. The important ones to set are `provider: "staticman"`, `branch`, and `path`. View the [full list of configurations](https://staticman.net/docs/configuration).
+Default settings have been provided in `_config.yml`. The important ones to set are `provider: "staticman"`, `branch`, and `path`. View the [full list of configurations](https://staticman.net/projects/configuration).
 
 ```yaml
 # _config.yml (defaults)
@@ -500,7 +500,7 @@ To skip this moderation step simply set `moderation: false`.
 To enable Google's reCAPTCHA to aid in spam detection you'll need to:
 
 1. Apply for [reCAPTCHA API](https://www.google.com/recaptcha) keys and register your site using the reCAPTCHA V2 type.
-2. Add your site and secret keys to `staticman.yml` and `_config.yml`. Be sure to properly encrypt your secret key using [Staticman's encrypt endpoint](https://staticman.net/docs/encryption).
+2. Add your site and secret keys to `staticman.yml` and `_config.yml`. Be sure to properly encrypt your secret key using [Staticman's encrypt endpoint](https://staticman.net/projects/encryption).
 
 ```yaml
 reCaptcha:
@@ -689,7 +689,7 @@ twitter:
 
 And if I assign `@mmistakes` as an author account it will appear in the Twitter Card along with `@mmistakes-theme`, attributed as a creator of the page being shared.
 
-**Note**: You need to validate cards are working and have Twitter [approve Player Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/player-card) before they will begin showing up.
+**Note**: You need to validate cards are working and have Twitter [approve Player Cards](https://developer.twitter.com/en/projects/tweets/optimize-with-cards/overview/player-card) before they will begin showing up.
 {: .notice--warning}
 
 ##### Facebook Open Graph
@@ -777,7 +777,7 @@ analytics:
 To use another provider not included with the theme set `provider: "custom"` then add their embed code to `_includes/analytics-providers/custom.html`.
 
 **Note:** Analytics are disabled by default in `development`. To enable when testing/building locally be sure to set
-`JEKYLL_ENV=production` to [force the environment](http://jekyllrb.com/docs/configuration/#specifying-a-jekyll-environment-at-build-time) to production.
+`JEKYLL_ENV=production` to [force the environment](http://jekyllrb.com/projects/configuration/#specifying-a-jekyll-environment-at-build-time) to production.
 {: .notice--info}
 
 ## Site author
@@ -826,7 +826,7 @@ author:
       url: "https://instagram.com/mmistakes"
 ```
 
-To customize the author sidebar, read the full [layout documentation]({{ "/docs/layouts/#author-profile" | relative_url }}).
+To customize the author sidebar, read the full [layout documentation]({{ "/projects/layouts/#author-profile" | relative_url }}).
 
 ## Site footer
 
@@ -867,7 +867,7 @@ Again nothing out of the ordinary here as the theme adheres to the defaults used
 
 ## Front Matter Defaults
 
-To save yourself time setting [Front Matter Defaults](https://jekyllrb.com/docs/configuration/front-matter-defaults/) for posts, pages, and collections is the way to go. Sure you can assign layouts and toggle settings like **reading time**, **comments**, and **social sharing** in each file, but that's not ideal.
+To save yourself time setting [Front Matter Defaults](https://jekyllrb.com/projects/configuration/front-matter-defaults/) for posts, pages, and collections is the way to go. Sure you can assign layouts and toggle settings like **reading time**, **comments**, and **social sharing** in each file, but that's not ideal.
 
 Using the `default` key in `_config.yml` you could set the layout and enable author profiles, reading time, comments, social sharing, and related posts for all posts --- in one shot.
 
@@ -927,7 +927,7 @@ If [using pagination](https://github.com/jekyll/jekyll-paginate) on the homepage
 paginate: 5
 ```
 
-You'll also need to include some Liquid and HTML to properly use the paginator, which you can find in the **Layouts** section under [Home Page]({{ "/docs/layouts/#home-page" | relative_url }}).
+You'll also need to include some Liquid and HTML to properly use the paginator, which you can find in the **Layouts** section under [Home Page]({{ "/projects/layouts/#home-page" | relative_url }}).
 
 The paginator only works on files with name `index.html`. To use pagination in a subfolder --- for example `/recent/`, create `/recent/index.html` and set the `paginate_path` in `_config.yml` to this:
 
@@ -935,7 +935,7 @@ The paginator only works on files with name `index.html`. To use pagination in a
 paginate_path: /recent/page:num/
 ```
 
-**Please note:** When using Jekyll's default [pagination plugin](http://jekyllrb.com/docs/pagination/) `paginator.posts` can only be called once. If you're looking for something more powerful that can paginate category, tag, and collection pages I suggest [**jekyll-paginate-v2**](https://github.com/sverrirs/jekyll-paginate-v2).
+**Please note:** When using Jekyll's default [pagination plugin](http://jekyllrb.com/projects/pagination/) `paginator.posts` can only be called once. If you're looking for something more powerful that can paginate category, tag, and collection pages I suggest [**jekyll-paginate-v2**](https://github.com/sverrirs/jekyll-paginate-v2).
 {: .notice--info}
 
 ### Timezone
@@ -964,7 +964,7 @@ When hosting with GitHub Pages a small [set of gems](https://pages.github.com/ve
 [jekyll-feed]: https://github.com/jekyll/jekyll-feed
 [jekyll-include-cache]: https://github.com/benbalter/jekyll-include-cache
 
-If you're hosting elsewhere then you don't really have to worry about what is whitelisted as you are free to include whatever [Jekyll plugins](https://jekyllrb.com/docs/plugins/) you desire.
+If you're hosting elsewhere then you don't really have to worry about what is whitelisted as you are free to include whatever [Jekyll plugins](https://jekyllrb.com/projects/plugins/) you desire.
 
 **Note:** The [jekyll-include-cache](https://github.com/benbalter/jekyll-include-cache) plugin needs to be installed in your `Gemfile` and added to the `plugins` array of `_config.yml`. Otherwise you'll throw `Unknown tag 'include_cached'` errors at build.
 {: .notice--warning}
@@ -991,7 +991,7 @@ tag_archive:
 
 Which would create category and tag links in the breadcrumbs and page meta like: `/categories/#foo` and `/tags/#foo`.
 
-**Note:** these are simply hash (fragment) links into the full taxonomy index pages. For them to resolve properly, the category and tag index pages need to exist at [`/categories/index.html`](https://github.com/{{ site.repository }}/blob/master/docs/_pages/category-archive.md) (copy to `_pages/category-archive.md`) and [`/tags/index.html`](https://github.com/{{ site.repository }}/blob/master/docs/_pages/tag-archive.md) (copy to `_pages/tag-archive.md`).
+**Note:** these are simply hash (fragment) links into the full taxonomy index pages. For them to resolve properly, the category and tag index pages need to exist at [`/categories/index.html`](https://github.com/{{ site.repository }}/blob/master/projects/_pages/category-archive.md) (copy to `_pages/category-archive.md`) and [`/tags/index.html`](https://github.com/{{ site.repository }}/blob/master/projects/_pages/tag-archive.md) (copy to `_pages/tag-archive.md`).
 {: .notice--warning}
 
 If you have the luxury of using Jekyll Plugins, then [**jekyll-archives**][jekyll-archives] will create a better experience as discrete taxonomy pages would be generated, and their corresponding links would be "real" (not just hash/fragment links into a larger index). However, the plugin will not generate the taxonomy index pages (`category-archive.md` and `tag-archive.md`) so you'd still need to manually create them if you'd like to have them (see note above).
@@ -1006,7 +1006,7 @@ end
 
 Then run `bundle install`.
 
-Now that the plugin is installed, change `type` to `jekyll-archives` and apply the following [configurations](https://github.com/jekyll/jekyll-archives/blob/master/docs/configuration.md):
+Now that the plugin is installed, change `type` to `jekyll-archives` and apply the following [configurations](https://github.com/jekyll/jekyll-archives/blob/master/projects/configuration.md):
 
 ```yaml
 category_archive:

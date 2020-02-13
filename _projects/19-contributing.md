@@ -1,6 +1,6 @@
 ---
 title: "Contributing"
-permalink: /docs/contributing/
+permalink: /projects/contributing/
 excerpt: "How you can contribute to make this theme better."
 last_modified_at: 2017-03-22T09:51:05-04:00
 ---
@@ -19,4 +19,4 @@ When submitting a pull request:
 2. Create a branch off of `master` and give it a meaningful name (e.g. `my-awesome-new-feature`) and describe the feature or fix.
 3. Open a pull request on GitHub.
 
-Theme documentation and demo pages can be found in the [`/docs`](https://github.com/{{ site.repository }}/blob/master/docs) folder if you'd like to tackle any "low-hanging fruit" like fixing typos, bad grammar, etc.
+Theme documentation and demo pages can be found in the [`/projects`](https://github.com/{{ site.repository }}/blob/master/projects) folder if you'd like to tackle any "low-hanging fruit" like fixing typos, bad grammar, etc.

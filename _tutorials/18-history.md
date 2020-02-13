@@ -1,10 +1,10 @@
 ---
 title: "History"
 classes: wide
-permalink: /docs/history/
+permalink: /tutorials/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
-  nav: docs
+  nav: tutorials
 last_modified_at: 2020-01-29T13:24:03-05:00
 toc: false
 ---
@@ -158,7 +158,7 @@ toc: false
 
 ### Enhancements
 
-- Update [`compress` layout](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#compress-layout) to v3.1.0. [#2128](https://github.com/mmistakes/minimal-mistakes/pull/2128)
+- Update [`compress` layout](https://mmistakes.github.io/minimal-mistakes/tutorials/layouts/#compress-layout) to v3.1.0. [#2128](https://github.com/mmistakes/minimal-mistakes/pull/2128)
 - Update jQuery to v3.4.0. [#2129](https://github.com/mmistakes/minimal-mistakes/pull/2129)
 
 ### Bug Fixes
@@ -257,7 +257,7 @@ toc: false
 - Add Google Drive as video provider. [#1967](https://github.com/mmistakes/minimal-mistakes/pull/1967)
 - Match `:focus` color to skin.
 - Add support for [utterances](https://utteranc.es/) comments. [#1909](https://github.com/mmistakes/minimal-mistakes/issues/1909)
-- Use privacy aware embed options for YouTube and Vimeo in [responsive video helper](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#responsive-video-embed). [#1964](https://github.com/mmistakes/minimal-mistakes/pull/1964)
+- Use privacy aware embed options for YouTube and Vimeo in [responsive video helper](https://mmistakes.github.io/minimal-mistakes/tutorials/helpers/#responsive-video-embed). [#1964](https://github.com/mmistakes/minimal-mistakes/pull/1964)
 - Add `rel="nofollow noopener noreferrer"` to author profile links. [#1924](https://github.com/mmistakes/minimal-mistakes/pull/1924)
 - Improve color contrast of primary buttons and links.
 - Add Punjabi localized UI text strings. [#1962](https://github.com/mmistakes/minimal-mistakes/pull/1962)
@@ -291,7 +291,7 @@ toc: false
 - Improve author link flexibility. [#1581](https://github.com/mmistakes/minimal-mistakes/issues/1581)
 - Improve footer link flexibility.
 - Deprecate `cta_label` and `cta_url` in header overlay in favor of new `actions` array that allows for multiple "call to action" button links. [#1461](https://github.com/mmistakes/minimal-mistakes/issues/1461)
-- Add support to [gallery helper](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#gallery) for defining column layout (`half`, `third`, or single `''`). [#1821](https://github.com/mmistakes/minimal-mistakes/issues/1821)
+- Add support to [gallery helper](https://mmistakes.github.io/minimal-mistakes/tutorials/helpers/#gallery) for defining column layout (`half`, `third`, or single `''`). [#1821](https://github.com/mmistakes/minimal-mistakes/issues/1821)
 
 ### Bug Fixes
 
@@ -349,7 +349,7 @@ toc: false
 - Fix table of contents missing borders. [#1675](https://github.com/mmistakes/minimal-mistakes/issues/1675)
 - Fix link to "Recipes" sample archive on documentation site. [#1664](https://github.com/mmistakes/minimal-mistakes/pull/1664)
 - Update example Reddit social share interpolation syntax in documentation. [#1656](https://github.com/mmistakes/minimal-mistakes/issues/1656)
-- Fix "Back to Top" links on pages that use [header overlays](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#header-overlay).
+- Fix "Back to Top" links on pages that use [header overlays](https://mmistakes.github.io/minimal-mistakes/tutorials/layouts/#header-overlay).
 
 ## [4.11.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.11.2)
 
@@ -442,7 +442,7 @@ toc: false
 
 ### Bug Fixes
 
-- Fix code block extra white-space when using [Jekyll's highlight tag](https://jekyllrb.com/docs/templates/#code-snippet-highlighting) with `linenos`. [#1437](https://github.com/mmistakes/minimal-mistakes/issues/1437)
+- Fix code block extra white-space when using [Jekyll's highlight tag](https://jekyllrb.com/tutorials/templates/#code-snippet-highlighting) with `linenos`. [#1437](https://github.com/mmistakes/minimal-mistakes/issues/1437)
 - Round top-right corner of code block icon.
 - Remove Lunr.js trimmer and bring back colons. [#1445](https://github.com/mmistakes/minimal-mistakes/pull/1445)
 - Fix sticky `.sidebar` that overlaps main content when resizing viewport. [#1447](https://github.com/mmistakes/minimal-mistakes/issues/1447)
@@ -569,7 +569,7 @@ toc: false
 - Improve `page` and `archive` layouts to visually center main content and harmonize sidebar widths and placement. [#1166](https://github.com/mmistakes/minimal-mistakes/pull/1166)
 - Increase font-size of code blocks.
 - Reduce indent of nested "table of contents" links.
-- Extend [archive grid view](https://mmistakes.github.io/minimal-mistakes/docs/layouts/) to the right to better fill the page.
+- Extend [archive grid view](https://mmistakes.github.io/minimal-mistakes/tutorials/layouts/) to the right to better fill the page.
 - URL encode title and page URL in social share links. [#1177](https://github.com/mmistakes/minimal-mistakes/pull/1177)
 - Replace old Disqus script with new Universal Embed Code. [#1179](https://github.com/mmistakes/minimal-mistakes/pull/1179)
 
@@ -654,7 +654,7 @@ toc: false
 ### Maintenance
 
 - Remove extra word in comment. [#911](https://github.com/mmistakes/minimal-mistakes/pull/911)
-- Fix typo in Utility Class docs. [#915](https://github.com/mmistakes/minimal-mistakes/pull/915)
+- Fix typo in Utility Class tutorials. [#915](https://github.com/mmistakes/minimal-mistakes/pull/915)
 
 ## [4.3.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.3.1)
 
@@ -695,13 +695,13 @@ toc: false
 - Add theme meta info to `_layouts/default.html` and `main.css`.
 - Update README.
 - Improve the pagination and taxonomy archive documentation. [#826](https://github.com/mmistakes/minimal-mistakes/pull/826)
-- Add comments to `/docs/_config.yml` to clarify use of YAML references. [#847](https://github.com/mmistakes/minimal-mistakes/pull/847)
+- Add comments to `/tutorials/_config.yml` to clarify use of YAML references. [#847](https://github.com/mmistakes/minimal-mistakes/pull/847)
 
 ## [4.2.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.2.1)
 
 ### Enhancements
 
-- Improve `paginator.html` to support paginated pages that live inside of a subfolder. See [documentation](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#home-page) for more details. [#764](https://github.com/mmistakes/minimal-mistakes/pull/764/)
+- Improve `paginator.html` to support paginated pages that live inside of a subfolder. See [documentation](https://mmistakes.github.io/minimal-mistakes/tutorials/layouts/#home-page) for more details. [#764](https://github.com/mmistakes/minimal-mistakes/pull/764/)
 
 ### Maintenance
 
@@ -773,7 +773,7 @@ toc: false
 
 ### Maintenance
 
-- Add Google AdSense banner to `/docs/_layouts/default.html` for demo site.
+- Add Google AdSense banner to `/tutorials/_layouts/default.html` for demo site.
 
 ## [4.0.7](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.7)
 
@@ -794,7 +794,7 @@ toc: false
 
 ### Enhancements
 
-- Add [`figure` helper](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#figure) to make generating a `<figure>` element with a single image and caption easier. [#572](https://github.com/mmistakes/minimal-mistakes/pull/572)
+- Add [`figure` helper](https://mmistakes.github.io/minimal-mistakes/tutorials/helpers/#figure) to make generating a `<figure>` element with a single image and caption easier. [#572](https://github.com/mmistakes/minimal-mistakes/pull/572)
 - Add structured data markup for `itemprop="person"` in author profile sidebar. [#647](https://github.com/mmistakes/minimal-mistakes/pull/647)
 
 ### Bug Fixes
@@ -819,7 +819,7 @@ toc: false
 
 ### Maintenance
 
-- Move contents of `gh-pages` branch to `master` inside of the `/docs` folder.
+- Move contents of `gh-pages` branch to `master` inside of the `/tutorials` folder.
 
 ## [4.0.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.0.4)
 
@@ -842,7 +842,7 @@ toc: false
 
 - Add documentation around `gem "minimal-mistakes-jekyll"` installation and use.
 - Add note about using full image paths for eg. `assets/images/filename.jpg` (header images, overlays, galleries, feature rows, etc.) instead of assuming they will always be in `/images/`.
-- Add "[Overriding Theme Defaults](https://mmistakes.github.io/minimal-mistakes/docs/overriding-theme-defaults/)" page to documentation.
+- Add "[Overriding Theme Defaults](https://mmistakes.github.io/minimal-mistakes/tutorials/overriding-theme-defaults/)" page to documentation.
 
 ## [3.4.8](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.8)
 
@@ -929,7 +929,7 @@ toc: false
 
 ### Maintenance
 
-- Add note to docs about using `url: http://localhost:4000` when working locally.
+- Add note to tutorials about using `url: http://localhost:4000` when working locally.
 
 ## [3.4.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.2)
 
@@ -962,7 +962,7 @@ toc: false
 ### Enhancements
 
 - Fallback to `site.github.url` for use in `{{ base_path }}` when `site.url` is `nil`.
-- Replace Sass and Autoprefixer `npm` build scripts with [Jekyll's built-in asset support](https://jekyllrb.com/docs/assets/). [#333](https://github.com/mmistakes/minimal-mistakes/issues/333)
+- Replace Sass and Autoprefixer `npm` build scripts with [Jekyll's built-in asset support](https://jekyllrb.com/tutorials/assets/). [#333](https://github.com/mmistakes/minimal-mistakes/issues/333)
 
 ### Maintenance
 
@@ -1085,7 +1085,7 @@ toc: false
 
 ### Enhancements
 
-- Add support for [header overlay images](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#header-overlay) for Open Graph images. [#358](https://github.com/mmistakes/minimal-mistakes/pull/358)
+- Add support for [header overlay images](https://mmistakes.github.io/minimal-mistakes/tutorials/layouts/#header-overlay) for Open Graph images. [#358](https://github.com/mmistakes/minimal-mistakes/pull/358)
 
 ### Bug Fixes
 
@@ -1156,7 +1156,7 @@ toc: false
 
 ### Enhancement
 
-- Add support for image captions in Magnific Popup overlays via the [`gallery`](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#gallery) helper [#334](https://github.com/mmistakes/minimal-mistakes/issues/334)
+- Add support for image captions in Magnific Popup overlays via the [`gallery`](https://mmistakes.github.io/minimal-mistakes/tutorials/helpers/#gallery) helper [#334](https://github.com/mmistakes/minimal-mistakes/issues/334)
 
 ## [3.2.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.1)
 
@@ -1233,7 +1233,7 @@ toc: false
 
 ### Enhancement
 
-- Explain how to use `nav_list` helper in [documentation](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#navigation-list).
+- Explain how to use `nav_list` helper in [documentation](https://mmistakes.github.io/minimal-mistakes/tutorials/helpers/#navigation-list).
 - Reduce left/right padding on smaller screens to increase width of main content column.
 
 ## [3.1.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.1)
@@ -1261,8 +1261,8 @@ toc: false
 - Refreshed the look and feel while staying true to the original design of the theme (author sidebar/main content).
 - Replaced grid system with [Susy](http://susy.oddbird.net/).
 - Replaced Grunt tasks with `npm` scripts.
-- Removed Google Fonts and replaced with system fonts to improve performance (they can be [added back](https://mmistakes.github.io/minimal-mistakes/docs/stylesheets/) if desired)
-- Greatly improved [theme documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
+- Removed Google Fonts and replaced with system fonts to improve performance (they can be [added back](https://mmistakes.github.io/minimal-mistakes/tutorials/stylesheets/) if desired)
+- Greatly improved [theme documentation](https://mmistakes.github.io/minimal-mistakes/tutorials/quick-start-guide/).
 - Increased the amount of sample posts, sample pages, and sample collections to throughly test the theme and edge-cases.
 - Moved all sample content and assets out of `master` to keep it as clean as possible for forking.
 - Added new layouts for `splash` pages, archives for [`jekyll-archives`](https://github.com/jekyll/jekyll-archives) if enabled, and [`compress.html`](https://github.com/penibelst/jekyll-compress-html) to improve performance.
@@ -1272,7 +1272,7 @@ toc: false
 - Improved `gallery` include helper and added `feature_row` for use with splash page layout.
 - Added Keybase.io, author web URI, and Bitbucket optional links to sidebar.
 - Add `feed.xml` link to footer.
-- Added a [UI text data file](https://mmistakes.github.io/minimal-mistakes/docs/ui-text/) to easily change all text found in the theme.
+- Added a [UI text data file](https://mmistakes.github.io/minimal-mistakes/tutorials/ui-text/) to easily change all text found in the theme.
 - Added LinkedIn to optional social share buttons.
 - Added Facebook, Google+, and custom commenting options in addition to Disqus.
 - Added optional breadcrumb links.

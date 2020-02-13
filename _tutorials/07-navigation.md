@@ -1,6 +1,6 @@
 ---
 title: "Navigation"
-permalink: /docs/navigation/
+permalink: /tutorials/navigation/
 excerpt: "Instructions on how to customize the main navigation and enabling breadcrumb links."
 last_modified_at: 2018-03-20T15:59:40-04:00
 toc: true
@@ -17,7 +17,7 @@ To define these links add titles and URLs under the `main` key in `_data/navigat
 ```yaml
 main:
   - title: "Quick-Start Guide"
-    url: /docs/quick-start-guide/
+    url: /tutorials/quick-start-guide/
   - title: "Posts"
     url: /year-archive/
   - title: "Categories"
@@ -70,4 +70,4 @@ breadcrumb_separator  : ">"
 
 ## Custom sidebar navigation menu
 
-See the [**sidebars** documentation]({{ "/docs/layouts/#custom-sidebar-navigation-menu" | relative_url }}) for information on setting up a custom navigation menu.
+See the [**sidebars** documentation]({{ "/tutorials/layouts/#custom-sidebar-navigation-menu" | relative_url }}) for information on setting up a custom navigation menu.

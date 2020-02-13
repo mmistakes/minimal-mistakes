@@ -1,6 +1,6 @@
 ---
 title: "License"
-permalink: /docs/license/
+permalink: /tutorials/license/
 excerpt: "License for Minimal Mistakes Jekyll Theme."
 last_modified_at: 2018-01-10T11:22:01-05:00
 ---

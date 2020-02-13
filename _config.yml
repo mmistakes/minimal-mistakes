@@ -212,12 +212,12 @@ kramdown:
 
 # Collections
 collections:
-  docs:
+  tutorials:
     output: true
     permalink: /:collection/:path/
-  # recipes:
-  #   output: true
-  #   permalink: /:collection/:path/
+  projects:
+    output: true
+    permalink: /:collection/:path/
   # pets:
   #   output: true
   #   permalink: /:collection/:path/
@@ -245,10 +245,10 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _docs
+  # _tutorials
   - scope:
       path: ""
-      type: docs
+      type: tutorials
     values:
       layout: single
       read_time: false
@@ -256,7 +256,19 @@ defaults:
       share: false
       comments: false
       sidebar:
-        nav: "docs"
+        nav: "tutorials"
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "projects"
   # # _recipes
   # - scope:
   #     path: ""

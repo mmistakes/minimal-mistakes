@@ -1,6 +1,6 @@
 ---
 title: "Installation"
-permalink: /docs/installation/
+permalink: /tutorials/installation/
 excerpt: "Instructions for installing the theme for new and existing Jekyll based sites."
 last_modified_at: 2019-08-20T21:36:18-04:00
 toc: true
@@ -8,17 +8,17 @@ toc: true
 
 ## Install the theme
 
-**1.** For a **new site**, install the `minimal-mistakes-jekyll` gem, remote theme, or fork the Minimal Mistakes repo on GitHub following the steps outlined in the [*Quick-Start Guide*]({{ "/docs/quick-start-guide/" | relative_url }}).
+**1.** For a **new site**, install the `minimal-mistakes-jekyll` gem, remote theme, or fork the Minimal Mistakes repo on GitHub following the steps outlined in the [*Quick-Start Guide*]({{ "/tutorials/quick-start-guide/" | relative_url }}).
 
 If you plan to host with GitHub Pages be sure to properly setup [**jekyll-remote-theme**](https://github.com/benbalter/jekyll-remote-theme) as it is required for the theme to work properly. 
 
-**2.** For an **existing site** follow the steps outlined in the [*Quick-Start Guide*]({{ "/docs/quick-start-guide/" | relative_url }}). Then work through the guidelines below for migration and setup.
+**2.** For an **existing site** follow the steps outlined in the [*Quick-Start Guide*]({{ "/tutorials/quick-start-guide/" | relative_url }}). Then work through the guidelines below for migration and setup.
 
 **3.** For those who'd like to make substantial edits to the theme, download as a ZIP file to customize.
 
 [<i class="fas fa-download"></i> Download Minimal Mistakes Theme](https://github.com/mmistakes/minimal-mistakes/archive/master.zip){: .btn .btn--success}
 
-**ProTip:** Be sure to remove `/docs` and `/test` if you forked or downloaded Minimal Mistakes. These folders contain documentation and test pages for the theme and you probably don't littering up in your repo.
+**ProTip:** Be sure to remove `/tutorials` and `/test` if you forked or downloaded Minimal Mistakes. These folders contain documentation and test pages for the theme and you probably don't littering up in your repo.
 {: .notice--info}
 
 **Note:** The theme uses the [jekyll-include-cache](https://github.com/benbalter/jekyll-include-cache) plugin which will need to be installed in your `Gemfile` and added to the `plugins` array of `_config.yml`. Otherwise you'll throw `Unknown tag 'include_cached'` errors at build.
@@ -30,7 +30,7 @@ To move over any existing content you'll want to copy the contents of your `_pos
 
 Next you'll need to convert posts and pages to use the proper layouts and settings. In most cases you simply need to update `_config.yml` to your liking and set the correct `layout` in their YAML Front Matter.
 
-[**Front Matter defaults**](https://jekyllrb.com/docs/configuration/#front-matter-defaults) are your friend and I encourage you to leverage them instead of setting a layout and other global options in each post/page's YAML Front Matter.
+[**Front Matter defaults**](https://jekyllrb.com/tutorials/configuration/#front-matter-defaults) are your friend and I encourage you to leverage them instead of setting a layout and other global options in each post/page's YAML Front Matter.
 
 Posts can be configured to use the `single` layout --- with reading time, comments, social sharing links, and related posts enabled. Adding the following to `_config.yml` will set these defaults for all posts:
 
@@ -53,7 +53,7 @@ defaults:
 
 ## Install dependencies
 
-If this is your first time using Jekyll be sure to read through the [official documentation](https://jekyllrb.com/docs/home/) before jumping in. This guide assumes you have Ruby v2 installed and a basic understanding of how Jekyll works.
+If this is your first time using Jekyll be sure to read through the [official documentation](https://jekyllrb.com/tutorials/home/) before jumping in. This guide assumes you have Ruby v2 installed and a basic understanding of how Jekyll works.
 
 To keep your sanity and better manage dependencies I strongly urge you to [install Bundler](http://bundler.io/) with `gem install bundler` and use the following `Gemfile`:
 

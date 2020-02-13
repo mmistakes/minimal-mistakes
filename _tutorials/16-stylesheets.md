@@ -1,6 +1,6 @@
 ---
 title: "Stylesheets"
-permalink: /docs/stylesheets/
+permalink: /tutorials/stylesheets/
 excerpt: "Instructions for customizing and building the theme's stylesheets."
 last_modified_at: 2018-11-25T19:47:43-05:00
 toc: true
@@ -157,7 +157,7 @@ Change the mood of your site by altering a few color variables. `$body-color`, `
 
 #### Syntax highlighting
 
-To make customizing the colors used in code highlighted blocks, a base of sixteen colors ([Base16](http://chriskempson.com/docs/base16/)) have been used.
+To make customizing the colors used in code highlighted blocks, a base of sixteen colors ([Base16](http://chriskempson.com/tutorials/base16/)) have been used.
 
 Code block colors can easily be changed by overriding any of the following color variables:
 

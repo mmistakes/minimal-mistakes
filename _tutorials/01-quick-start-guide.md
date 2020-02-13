@@ -1,6 +1,6 @@
 ---
 title: "Quick-Start Guide"
-permalink: /docs/quick-start-guide/
+permalink: /tutorials/quick-start-guide/
 excerpt: "How to quickly install and setup Minimal Mistakes for use with GitHub Pages."
 last_modified_at: 2019-08-20T21:36:11-04:00
 redirect_from:
@@ -8,7 +8,7 @@ redirect_from:
 toc: true
 ---
 
-Minimal Mistakes has been developed as a [Gem-based theme](http://jekyllrb.com/docs/themes/) for easier use, and 100% compatible with GitHub Pages when used as a remote theme.
+Minimal Mistakes has been developed as a [Gem-based theme](http://jekyllrb.com/tutorials/themes/) for easier use, and 100% compatible with GitHub Pages when used as a remote theme.
 
 **If you enjoy this theme, please consider [supporting me](https://www.paypal.me/mmistakes) for developing and maintaining it.**
 
@@ -18,9 +18,9 @@ Minimal Mistakes has been developed as a [Gem-based theme](http://jekyllrb.com/d
 
 If you're running Jekyll v3.5+ and self-hosting you can quickly install the theme as a Ruby gem.
 
-[^structure]: See [**Structure** page]({{ "/docs/structure/" | relative_url }}) for a list of theme files and what they do.
+[^structure]: See [**Structure** page]({{ "/tutorials/structure/" | relative_url }}) for a list of theme files and what they do.
 
-**ProTip:** Be sure to remove `/docs` and `/test` if you forked Minimal Mistakes. These folders contain documentation and test pages for the theme and you probably don't want them littering up your repo.
+**ProTip:** Be sure to remove `/tutorials` and `/test` if you forked Minimal Mistakes. These folders contain documentation and test pages for the theme and you probably don't want them littering up your repo.
 {: .notice--info}
 
 **Note:** The theme uses the [jekyll-include-cache](https://github.com/benbalter/jekyll-include-cache) plugin which will need to be installed in your `Gemfile` and added to the `plugins` array of `_config.yml`. Otherwise you'll throw `Unknown tag 'include_cached'` errors at build.
@@ -105,7 +105,7 @@ To do so fork the [Minimal Mistakes theme](https://github.com/mmistakes/minimal-
 
 [netlify-jekyll]: https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/
 [gitlab-jekyll]: https://about.gitlab.com/2016/04/07/gitlab-pages-setup/
-[ci-jekyll]: https://jekyllrb.com/docs/continuous-integration/
+[ci-jekyll]: https://jekyllrb.com/tutorials/continuous-integration/
 
 ### Remove the Unnecessary
 
@@ -114,7 +114,7 @@ If you forked or downloaded the `minimal-mistakes-jekyll` repo you can safely re
 - `.editorconfig`
 - `.gitattributes`
 - `.github`
-- `/docs`
+- `/tutorials`
 - `/test`
 - `CHANGELOG.md`
 - `minimal-mistakes-jekyll.gemspec`
@@ -122,26 +122,26 @@ If you forked or downloaded the `minimal-mistakes-jekyll` repo you can safely re
 - `screenshot-layouts.png`
 - `screenshot.png`
 
-**Note:** If forking the theme be sure to update `Gemfile` as well. The one found at the root of the project is for building the theme's Ruby gem and is missing dependencies. To properly setup a [`Gemfile`](https://github.com/mmistakes/minimal-mistakes/blob/master/docs/Gemfile) with the theme, consult the "[Install Dependencies](https://mmistakes.github.io/minimal-mistakes/docs/installation/#install-dependencies)" section.
+**Note:** If forking the theme be sure to update `Gemfile` as well. The one found at the root of the project is for building the theme's Ruby gem and is missing dependencies. To properly setup a [`Gemfile`](https://github.com/mmistakes/minimal-mistakes/blob/master/tutorials/Gemfile) with the theme, consult the "[Install Dependencies](https://mmistakes.github.io/minimal-mistakes/tutorials/installation/#install-dependencies)" section.
 {: .notice--warning}
 
 ## Setup Your Site
 
 Depending on the path you took installing Minimal Mistakes you'll setup things a little differently.
 
-**ProTip:** The source code and content files for this site can be found in the [`/docs` folder](https://github.com/mmistakes/minimal-mistakes/tree/master/docs) if you want to copy or learn from them.
+**ProTip:** The source code and content files for this site can be found in the [`/tutorials` folder](https://github.com/mmistakes/minimal-mistakes/tree/master/tutorials) if you want to copy or learn from them.
 {: .notice--info}
 
 ### Starting Fresh
 
-Starting with an empty folder and `Gemfile` you'll need to copy or re-create this [default `_config.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml) file. For a full explanation of every setting be sure to read the [**Configuration**]({{ "/docs/configuration/" | relative_url }}) section.
+Starting with an empty folder and `Gemfile` you'll need to copy or re-create this [default `_config.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml) file. For a full explanation of every setting be sure to read the [**Configuration**]({{ "/tutorials/configuration/" | relative_url }}) section.
 
 From `v4.5.0` onwards, Minimal Mistakes theme-gem comes bundled with the necessary data files and will automatically use them via the [`jekyll-data`](https://github.com/ashmaroli/jekyll-data) plugin. So you no longer need to maintain a copy of these data files at your project directory.
 
 You'll need to create and edit these data files to customize them:
 
-- [`_data/ui-text.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml) - UI text [documentation]({{ "/docs/ui-text/" | relative_url }})
-- [`_data/navigation.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_data/navigation.yml) - navigation [documentation]({{ "/docs/navigation/" | relative_url }})
+- [`_data/ui-text.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml) - UI text [documentation]({{ "/tutorials/ui-text/" | relative_url }})
+- [`_data/navigation.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_data/navigation.yml) - navigation [documentation]({{ "/tutorials/navigation/" | relative_url }})
 
 ### Starting from `jekyll new`
 
@@ -149,7 +149,7 @@ Scaffolding out a site with the `jekyll new` command requires you to modify a fe
 
 Edit `_config.yml`. Then:
 
-- Replace `<site root>/index.md` with a modified [Minimal Mistakes `index.html`](https://github.com/mmistakes/minimal-mistakes/blob/master/index.html). Be sure to enable pagination if using the [`home` layout]({{ "/docs/layouts/#home-page" | relative_url }}) by adding the necessary lines to **_config.yml**.
+- Replace `<site root>/index.md` with a modified [Minimal Mistakes `index.html`](https://github.com/mmistakes/minimal-mistakes/blob/master/index.html). Be sure to enable pagination if using the [`home` layout]({{ "/tutorials/layouts/#home-page" | relative_url }}) by adding the necessary lines to **_config.yml**.
 - Change `layout: post` in `_posts/0000-00-00-welcome-to-jekyll.markdown` to `layout: single`.
 - Remove `about.md`, or at the very least change `layout: page` to `layout: single` and remove references to `icon-github.html` (or [copy to your `_includes`](https://github.com/jekyll/minima/tree/master/_includes) if using it).
 
@@ -169,7 +169,7 @@ Start by removing the following folders and any files within them:
 |  └── js
 ```
 
-You won't need these anymore as they're bundled with the theme gem --- unless you intend to [override them](http://jekyllrb.com/docs/themes/#overriding-theme-defaults).
+You won't need these anymore as they're bundled with the theme gem --- unless you intend to [override them](http://jekyllrb.com/tutorials/themes/#overriding-theme-defaults).
 
 **Note:** When clearing out the `assets` folder be sure to leave any files you've added and need. This includes images, CSS, or JavaScript that aren't already [bundled in the theme](https://github.com/mmistakes/minimal-mistakes/tree/master/assets). 
 {: .notice--warning}
@@ -177,7 +177,7 @@ You won't need these anymore as they're bundled with the theme gem --- unless yo
 From `v4.5.0` onwards, you don't have to maintain a copy of the default data files viz. `_data/ui-text.yml` and `_data/navigation.yml` either.
 The default files are read-in automatically via the [`jekyll-data`](https://github.com/ashmaroli/jekyll-data) plugin.
 
-If you customized any of these files leave them alone, and only remove the untouched ones. If done correctly your modified versions should [override](http://jekyllrb.com/docs/themes/#overriding-theme-defaults) the versions bundled with the theme and be used by Jekyll instead.
+If you customized any of these files leave them alone, and only remove the untouched ones. If done correctly your modified versions should [override](http://jekyllrb.com/tutorials/themes/#overriding-theme-defaults) the versions bundled with the theme and be used by Jekyll instead.
 
 #### Update Gemfile
 
@@ -202,7 +202,7 @@ gem "minimal-mistakes-jekyll"
 
 Then run `bundle update` and add `theme: minimal-mistakes-jekyll` to your `_config.yml`.
 
-**v4 Breaking Change:** Paths for image headers, overlays, teasers, [galleries]({{ "/docs/helpers/#gallery" | relative_url }}), and [feature rows]({{ "/docs/helpers/#feature-row" | relative_url }}) have changed and now require a full path. Instead of just `image: filename.jpg` you'll need to use the full path eg: `image: /assets/images/filename.jpg`. The preferred location is now `/assets/images/` but can be placed elsewhere or externally hosted. This applies to image references in `_config.yml` and `author.yml` as well.
+**v4 Breaking Change:** Paths for image headers, overlays, teasers, [galleries]({{ "/tutorials/helpers/#gallery" | relative_url }}), and [feature rows]({{ "/tutorials/helpers/#feature-row" | relative_url }}) have changed and now require a full path. Instead of just `image: filename.jpg` you'll need to use the full path eg: `image: /assets/images/filename.jpg`. The preferred location is now `/assets/images/` but can be placed elsewhere or externally hosted. This applies to image references in `_config.yml` and `author.yml` as well.
 {: .notice--danger}
 
 ---

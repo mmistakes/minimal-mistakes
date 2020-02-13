@@ -1,6 +1,6 @@
 ---
 title: "Helpers"
-permalink: /docs/helpers/
+permalink: /projects/helpers/
 excerpt: "Jekyll `_includes` and other helpers to use as shortcuts for creating archives, galleries, table of contents, and more."
 gallery:
   - url: /assets/images/unsplash-gallery-image-1.jpg
@@ -36,7 +36,7 @@ toc_label: "Helpers"
 toc_icon: "cogs"
 ---
 
-You can think of these Jekyll helpers as little shortcuts. Since GitHub Pages doesn't allow most plugins --- [custom tags](https://jekyllrb.com/docs/plugins/#tags) are out. Instead the theme leverages [**includes**](https://jekyllrb.com/docs/templates/#includes) to do something similar.
+You can think of these Jekyll helpers as little shortcuts. Since GitHub Pages doesn't allow most plugins --- [custom tags](https://jekyllrb.com/projects/plugins/#tags) are out. Instead the theme leverages [**includes**](https://jekyllrb.com/projects/templates/#includes) to do something similar.
 
 ## Group by array
 
@@ -118,7 +118,7 @@ And then drop-in the gallery include in the body where you'd like it to appear.
 
 ## Feature row
 
-Designed to compliment the [`splash`]({{ "/docs/layouts/#splash-page-layout" | relative_url }}) page layout as a way of arranging and aligning "feature blocks" containing text or image.
+Designed to compliment the [`splash`]({{ "/projects/layouts/#splash-page-layout" | relative_url }}) page layout as a way of arranging and aligning "feature blocks" containing text or image.
 
 To add a feature row containing three content blocks with text and image, add the following YAML Front Matter
 
@@ -131,7 +131,7 @@ To add a feature row containing three content blocks with text and image, add th
 | **excerpt**       | Optional     | Content block excerpt text. Markdown is allowed.                                                     |                                    |
 | **url**           | Optional     | URL that the button should link to.                                                                  |                                    |
 | **btn_label**     | Optional     | Button text label.                                                                                   | `more_label` in UI Text data file. |
-| **btn_class**     | Optional     | Button style. See [utility classes]({{ "/docs/utility-classes/#buttons"                              | relative_url }}) for options.      | `btn` |
+| **btn_class**     | Optional     | Button style. See [utility classes]({{ "/projects/utility-classes/#buttons"                              | relative_url }}) for options.      | `btn` |
 
 ```yaml
 feature_row:
@@ -164,7 +164,7 @@ And then drop-in the feature row include in the body where you'd like it to appe
 
 {% include feature_row %}
 
-**More Feature Row Goodness:** A [few more examples]({{ "/splash-page/" | relative_url }}) and [source code](https://github.com/{{ site.repository }}/blob/master/docs/\_pages/splash-page.md) can be seen in the demo site.
+**More Feature Row Goodness:** A [few more examples]({{ "/splash-page/" | relative_url }}) and [source code](https://github.com/{{ site.repository }}/blob/master/projects/\_pages/splash-page.md) can be seen in the demo site.
 {: .notice--info}
 
 ## Responsive video embed
@@ -295,7 +295,7 @@ To include a Kramdown [auto-generated table of contents](https://kramdown.gettal
 
 Include an unordered list of links to be used as sidebar navigation with the `nav_list` helper.
 
-**1.** Start by adding a set of titles and URLs to `_data/navigation.yml` in the same way the [`main` navigation]({{ "/docs/navigation/" | relative_url }}) is built.
+**1.** Start by adding a set of titles and URLs to `_data/navigation.yml` in the same way the [`main` navigation]({{ "/projects/navigation/" | relative_url }}) is built.
 
 `foo` navigation example:
 
@@ -346,10 +346,10 @@ sidebar:
   nav: "foo"
 ```
 
-**ProTip:** If you're applying the same navigation list to several pages setting it as a [Front Matter default](https://jekyllrb.com/docs/configuration/#front-matter-defaults) is the better option.
+**ProTip:** If you're applying the same navigation list to several pages setting it as a [Front Matter default](https://jekyllrb.com/projects/configuration/#front-matter-defaults) is the better option.
 {: .notice--info}
 
-The theme's documentation is built with the `nav_list` helper so if you'd like an example to dissect take a look at `navigation.yml`, `_config.yml` and `_doc` collection in the [`/docs/` folder](https://github.com/{{ site.repository }}/tree/master/docs/) of this repo.
+The theme's documentation is built with the `nav_list` helper so if you'd like an example to dissect take a look at `navigation.yml`, `_config.yml` and `_doc` collection in the [`/projects/` folder](https://github.com/{{ site.repository }}/tree/master/projects/) of this repo.
 
 To add a navigation list to a post or page's main content instead of the sidebar use the include this way:
 

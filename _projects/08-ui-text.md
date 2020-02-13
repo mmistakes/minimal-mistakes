@@ -1,6 +1,6 @@
 ---
 title: "UI Text"
-permalink: /docs/ui-text/
+permalink: /projects/ui-text/
 excerpt: "Text for customizing user interface elements found in the theme."
 last_modified_at: 2019-08-27T15:45:54-04:00
 ---
