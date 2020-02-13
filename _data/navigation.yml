@@ -20,7 +20,7 @@ foo:
 # main links
 main:
   - title: "Projects"
-    url: /projects/quick-start-guide/
+    url: /projects/introduction/
   - title: "Tutorials"
     url: /tutorials/tutorial-introduction/
 
@@ -57,58 +57,8 @@ tutorials:
 projects:
   - title: Getting Started
     children:
-      - title: "Quick-Start Guide"
-        url: /projects/quick-start-guide/
-      - title: "Structure"
-        url: /projects/structure/
-      - title: "Installation"
-        url: /projects/installation/
-      - title: "Upgrading"
-        url: /projects/upgrading/
-  - title: Customization
-    children:
-      - title: "Configuration"
-        url: /projects/configuration/
-      - title: "Overriding Theme Defaults"
-        url: /projects/overriding-theme-defaults/
-      - title: "Navigation"
-        url: /projects/navigation/
-      - title: "UI Text"
-        url: /projects/ui-text/
-      - title: "Authors"
-        url: /projects/authors/
-      - title: "Layouts"
-        url: /projects/layouts/
-  - title: Content
-    children:
-      - title: "Working with Posts"
-        url: /projects/posts/
-      - title: "Working with Pages"
-        url: /projects/pages/
-      - title: "Working with Collections"
-        url: /projects/collections/
-      - title: "Helpers"
-        url: /projects/helpers/
-      - title: "Utility Classes"
-        url: /projects/utility-classes/
-  - title: Extras
-    children:
-      - title: "Stylesheets"
-        url: /projects/stylesheets/
-      - title: "JavaScript"
-        url: /projects/javascript/
-  - title: Meta
-    children:
-      - title: "History"
-        url: /projects/history/
-      - title: "Contributing"
-        url: /projects/contributing/
-      - title: "Old 2.2 projects"
-        url: /projects/projects-2-2/
-      - title: "License"
-        url: /projects/license/
-      - title: "Terms &amp; Privacy Policy"
-        url: /terms/
+      - title: "Introduction"
+        url: /tutorials/introduction/
 
 # sidebar navigation list sample
 sidebar-sample:
