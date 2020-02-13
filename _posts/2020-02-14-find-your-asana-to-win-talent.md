@@ -7,7 +7,7 @@ toc: true
 
 DRAFT
 
-In my previous post [Building bespoke AI products to win in the age of software](https://blog.dannycastonguay.com/), I discussed how innovative organizations invest significantly in building their own proprietary AI products, and I gave advice on how leaders of major organizations can learn from startups (e.g., read Paul Graham’s essay on [the hardest lessons for startups to learn](http://paulgraham.com/startuplessons.html)).
+In my previous post [Building bespoke AI products to win in the age of software](https://blog.dannycastonguay.com/digital%20transformation/building-bespoke-ai-products-to-win-in-the-age-of-software/), I discussed how innovative organizations invest significantly in building their own proprietary AI products, and I gave advice on how leaders of major organizations can learn from startups (e.g., read Paul Graham’s essay on [the hardest lessons for startups to learn](http://paulgraham.com/startuplessons.html), and an [audio version of it](https://blog.dannycastonguay.com/startups/paul-graham/)). 
 
 (If you are looking for inspiration on what kinds of AI products you could build for your organization, you may enjoy reading a post I wrote on [how to build a digital twin in 6 months for 1M USD](https://blog.dannycastonguay.com/digital%20twin/deploy-a-digital-twin-in-6months-for-1MUSD/)).
 
