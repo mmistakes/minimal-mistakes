@@ -101,7 +101,7 @@ analytics:
 # Site Author
 author:
   name             : "Nicola Delfino"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio-photo.jpg"
   bio              : "I meet people, I do things for @Microsoft and @CaledosLab."
   location         : "Italy"
   email            :
