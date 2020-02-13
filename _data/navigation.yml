@@ -19,67 +19,39 @@ foo:
 
 # main links
 main:
-  - title: "tutorials"
-    url: /tutorials/quick-start-guide/
-  - title: "projects"
+  - title: "Projects"
     url: /projects/quick-start-guide/
+  - title: "Tutorials"
+    url: /tutorials/tutorial-introduction/
 
 # documentation links
 tutorials:
-  - title: Getting Started
+  - title: Preparation
     children:
-      - title: "Quick-Start Guide"
-        url: /tutorials/quick-start-guide/
-      - title: "Structure"
-        url: /tutorials/structure/
-      - title: "Installation"
-        url: /tutorials/installation/
-      - title: "Upgrading"
-        url: /tutorials/upgrading/
-  - title: Customization
+      - title: "Introduction"
+        url: /tutorials/tutorial-introduction/
+  - title: Basics
     children:
-      - title: "Configuration"
-        url: /tutorials/configuration/
-      - title: "Overriding Theme Defaults"
-        url: /tutorials/overriding-theme-defaults/
-      - title: "Navigation"
-        url: /tutorials/navigation/
-      - title: "UI Text"
-        url: /tutorials/ui-text/
-      - title: "Authors"
-        url: /tutorials/authors/
-      - title: "Layouts"
-        url: /tutorials/layouts/
-  - title: Content
-    children:
-      - title: "Working with Posts"
-        url: /tutorials/posts/
-      - title: "Working with Pages"
-        url: /tutorials/pages/
-      - title: "Working with Collections"
-        url: /tutorials/collections/
-      - title: "Helpers"
-        url: /tutorials/helpers/
-      - title: "Utility Classes"
-        url: /tutorials/utility-classes/
-  - title: Extras
-    children:
-      - title: "Stylesheets"
-        url: /tutorials/stylesheets/
-      - title: "JavaScript"
-        url: /tutorials/javascript/
-  - title: Meta
-    children:
-      - title: "History"
-        url: /tutorials/history/
-      - title: "Contributing"
-        url: /tutorials/contributing/
-      - title: "Old 2.2 tutorials"
-        url: /tutorials/tutorials-2-2/
-      - title: "License"
-        url: /tutorials/license/
-      - title: "Terms &amp; Privacy Policy"
-        url: /terms/
+      - title: "Introduction"
+        url: /tutorials/basics-chapter-basics/
+      - title: "Rules of artificial"
+        url: /tutorials/basics-rules-of-artificial/
+      - title: "Basics of Artificial intelligence (AI)"
+        url: /tutorials/basics-ai-basics/
+      - title: "Observer"
+        url: /tutorials/basics-term-observer/
+      - title: "Basics of Artificial mind (AM)"
+        url: /tutorials/basics-am-basics/
+      - title: "World and Form"
+        url: /tutorials/basics-am-world-and-form/
+      - title: "Advanced AI"
+        url: /tutorials/basics-term-advanced-ai/
+      - title: "Ability to learn"
+        url: /tutorials/basics-ability-to-learn/
+      - title: "Immersion"
+        url: /tutorials/basics-am-immersion/
+      - title: "Naturality"
+        url: /tutorials/basics-am-naturality/
 
 # documentation links
 projects:

@@ -3,15 +3,15 @@
    ========================================================================== */
 
 /* Colors */
-$text-color: #000 !default;
+$text-color: #272c2b !default;
 $muted-text-color: $text-color !default;
-$primary-color: #000 !default;
+$primary-color: #000000 !default;
 $border-color: mix(#fff, $text-color, 75%) !default;
-$footer-background-color: #000 !default;
-$link-color: #0000ff !default;
-$masthead-link-color: $text-color !default;
-$masthead-link-color-hover: $text-color !default;
-$navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
+$footer-background-color: #000000 !default;
+$link-color: #03a9f4 !default;
+$masthead-link-color: #000000 !default;
+$masthead-link-color-hover: #000000 !default;
+$navicon-link-color-hover: #000000 !default;
 
 /* contrast syntax highlighting (base16) */
 $base00: #000000 !default;
@@ -32,13 +32,29 @@ $base0e: #ff73fd !default;
 $base0f: #b18a3d !default;
 
 .page__content {
-  .notice,
-  .notice--primary,
-  .notice--info,
-  .notice--warning,
-  .notice--success,
+  .notice {
+    color: #000000;
+    background-color: rgb(238, 238, 238);
+  }
+  .notice--primary {
+    color: #000000;
+    background-color: rgb(204, 204, 204);
+  }
+  .notice--info {
+    color: #000000;
+    background-color: rgb(94, 223, 255);
+  }
+  .notice--warning {
+    color: #000000;
+    background-color: rgb(255, 180, 94);
+  }
+  .notice--success {
+    color: #000000;
+    background-color: rgb(99, 245, 106);
+  }
   .notice--danger {
-    color: $text-color;
+    color: #ffffff;
+    background-color: rgb(250, 75, 75);
   }
 }
 

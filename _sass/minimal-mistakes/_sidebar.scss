@@ -7,6 +7,8 @@
    ========================================================================== */
 
 .sidebar {
+  color: #000000;
+
   @include clearfix();
   @include breakpoint(max-width $large) {
     /* fix z-index order of follow links */
@@ -19,12 +21,12 @@
   @include breakpoint($large) {
     float: left;
     width: calc(#{$right-sidebar-width-narrow} - 1em);
-    opacity: 0.75;
-    -webkit-transition: opacity 0.2s ease-in-out;
-    transition: opacity 0.2s ease-in-out;
+    //opacity: 1;
+    //-webkit-transition: opacity 1s ease-in-out;
+    //transition: opacity 1s ease-in-out;
 
     &:hover {
-      opacity: 1;
+      //opacity: 1;
     }
 
     &.sticky {
@@ -63,7 +65,7 @@
 
   img {
     width: 100%;
-    
+
     &.emoji {
       width: 20px;
       height: 20px;
@@ -315,4 +317,3 @@
     margin-right: initial;
   }
 }
-
