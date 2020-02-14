@@ -19,6 +19,8 @@ foo:
 
 # main links
 main:
+  - title: "Home"
+    url: /
   - title: "Projects"
     url: /projects/introduction/
   - title: "Tutorials"
@@ -55,10 +57,18 @@ tutorials:
 
 # documentation links
 projects:
-  - title: Getting Started
+  - title: Projects
     children:
       - title: "Introduction"
-        url: /tutorials/introduction/
+        url: /projects/introduction/
+      - title: "Primary AM"
+        url: /projects/primary-am/
+      - title: "Extended AM"
+        url: /projects/extended-am/
+      - title: "Advanced AM"
+        url: /projects/advanced-am/
+      - title: "Source code"
+        url: /projects/source-code/
 
 # sidebar navigation list sample
 sidebar-sample:
