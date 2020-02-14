@@ -61,9 +61,9 @@ If your leadership sees the necessity, they will make room at the top, they will
 
 Because you are going to try a lot and are ready to fail, you will learn to run cheap experiments. If you keep your team small, you should be able to build a proof of concept in less than two months while maintaining a burn rate under 100K USD per month. If your proof of concept is successful, you should launch within six months, and achieve a cost of less than half a million. If you have been successful with one product and are now at the stage of fragmenting the team into 2-3 semi-independent product feature teams, then you should scale accordingly but continue to always have a long term view.
 
-If you are consideringebuilding on a platform that requires you to pay licenses, you should go read my blog post on [Building Bespoke AI Products to Win in the Age of Software](https://blog.dannycastonguay.com/digital%20transformation/building-bespoke-ai-products-to-win-in-the-age-of-software/). 
+If you are considering building on a platform that requires you to pay licenses, you should go read my blog post on [Building Bespoke AI Products to Win in the Age of Software](https://blog.dannycastonguay.com/digital%20transformation/building-bespoke-ai-products-to-win-in-the-age-of-software/). 
 
-That doesn’t mean that you should build everything from scratch using free and open-source software. Good candidates forr partners are companies that offer a consumption-base API as a service. A few good examples of that would include [Stripe](https://stripe.com/) for payment processing, [Twilio](https://www.twilio.com/) for SMS, and [Google Maps API](https://developers.google.com/maps/documentation) for maps. Favorable reasons to buy these services instead of building them include:
+That doesn’t mean that you should build everything from scratch using free and open-source software. Good candidates for partners are companies that offer a consumption-base API as a service. A few good examples of that would include [Stripe](https://stripe.com/) for payment processing, [Twilio](https://www.twilio.com/) for SMS, and [Google Maps API](https://developers.google.com/maps/documentation) for maps. Favorable reasons to buy these services instead of building them include:
 
 1. They are highly reliable and available
 2. They are priced competitively
