@@ -18,6 +18,23 @@
   },
   {
     "image_path": null,
+    "alt": "Kooperationsgespräch Al-Farabi + Leh+Me",
+    "title": "Kooperationsgespräch Al-Farabi + Leh+Me",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MnAyMmk5b3I5bDNvanRkZ2RhOXZnZGo5ZmcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2020-02-26T12:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2020-02-26T13:30:00+01:00"
+    },
+    "created": "2020-02-13T05:14:22.000Z",
+    "updated": "2020-02-13T05:14:22.740Z"
+  },
+  {
+    "image_path": null,
     "alt": "Filmvorführung am Nachmittag",
     "title": "Filmvorführung am Nachmittag",
     "excerpt": "Fühl dich wie im Kino! Mit Popcorn und netten Kindern einen Kinofilm schauen.",
@@ -83,22 +100,5 @@
     },
     "created": "2019-10-25T12:53:36.000Z",
     "updated": "2019-10-25T12:53:36.451Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Pfingstferien",
-    "title": "Pfingstferien",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M2RxNWoxajJoa3ZsN2pvMGJjcHIydm83Z2YgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2020-05-22",
-      "date_time": null
-    },
-    "end": {
-      "date": "2020-05-23",
-      "date_time": null
-    },
-    "created": "2019-08-22T08:03:28.000Z",
-    "updated": "2019-08-22T08:03:28.617Z"
   }
 ]
