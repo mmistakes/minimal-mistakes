@@ -36,6 +36,13 @@
 			"sizes": "192x192",
 			"type": "image\/png",
 			"density": 4
+		},
+    
+		{
+			"src": "\/images\/android-chrome-512x512.png?v=M44lzPylqQ",
+			"sizes": "192x192",
+			"type": "image\/png",
+			"density": 4
 		}
 	]
 }
