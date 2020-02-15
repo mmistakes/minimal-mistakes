@@ -366,6 +366,7 @@
         background-color: $gray;
         -webkit-transition: 0.2s ease-out;
         transition: 0.2s ease-out;
+        background-color: white;
       }
 
       &:after {
@@ -375,15 +376,19 @@
       }
 
       &:hover {
-        color: #fff;
+        // color: #fff;
         border-color: $gray;
-        background-color: mix(white, #000, 20%);
-
+        // background-color: mix(white, #000, 20%);
+        background-color: red;
+        color: white;
         &:before,
         &:after {
           background-color: #fff;
         }
       }
+
+      background-color: red;
+      color: white;
     }
 
     /* selected*/
@@ -561,6 +566,6 @@
   }
 
   li ul li ul li ul li ul li ul > li a {
-    padding-left: 3.25rem
+    padding-left: 3.25rem;
   }
 }
