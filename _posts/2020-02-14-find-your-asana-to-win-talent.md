@@ -84,7 +84,7 @@ There is always room for innovation.
 
 Are your leaders so engaged with building your products that they too get involved in quality assurance? If your leadership sees the necessity, they will make room at the top, they will promote people with the proper skills, and they will create career paths where people can continue to be hands-on. 
 
-# 2.5 Affordability
+## 2.5 Affordability
 
 Every AI product that you build will continue to require maintenance over the evolution and lifetime of your organization. Having a sustainable strategy over the long run is essential. 
 
@@ -99,12 +99,14 @@ That doesn’t mean that you should build everything from scratch using free and
 3. They have very good publicly accessible documentation, which will save your engineer’s time
 
 
-#3. How can you tell you have reached ASANA?
+# 3. How can you tell you have reached ASANA?
 
 Yogi masters might tell you that it’s about the journey, not the destination. Meanwhile, mathematicians might tell you that it’s a moving target that you can only reach asymptotically. And Mike Tyson would say that "everybody has a plan until they get punched in the mouth." And there will be a lot of blood, sweet and tears during the journey. 
 
 Regardless of your doctrine, there are a few indicators that you are on the right track. If you can stand up a team in a day, have super-users that recommend your product, have leaders that are actively involved and removing barriers, and are not afraid to take small, calculated risks, then you are well on your way to produce a few unicorns, with enough magic dusts to reward those involved.
 
+
+---
 
 Acknowledgement: thank you David Castonguay, Leah Capitan, Ed Humphries, Denis Ouellet and Suzanne Fournier for your contributions to this post.
 
