@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+- Remove `box-shadow` on radio and checkbox inputs. [#2398](https://github.com/mmistakes/minimal-mistakes/pull/2398)
 - Bump Jekyll gem dependency to `v3.7`.
 
 ### Bug Fixes

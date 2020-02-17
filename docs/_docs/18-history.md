@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2020-01-29T13:24:03-05:00
+last_modified_at: 2020-02-17T15:27:25-05:00
 toc: false
 ---
 
@@ -13,6 +13,7 @@ toc: false
 
 ### Enhancements
 
+- Remove `box-shadow` on radio and checkbox inputs. [#2398](https://github.com/mmistakes/minimal-mistakes/pull/2398)
 - Bump Jekyll gem dependency to `v3.7`.
 
 ### Bug Fixes
