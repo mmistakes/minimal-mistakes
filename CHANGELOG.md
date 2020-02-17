@@ -7,6 +7,7 @@
 
 ### Bug Fixes
 
+- Fix Staticman v2 comment submission. [#2402](https://github.com/mmistakes/minimal-mistakes/pull/2402)
 - Fix repeated site base path for masthead logo. [#2385](https://github.com/mmistakes/minimal-mistakes/pull/2385)
 
 ## [4.18.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.18.1)
