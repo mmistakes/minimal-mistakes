@@ -5,13 +5,11 @@ tag: ["Product", “AI”, “UX Design”, “Talent Strategy”, “DevOps”,
 toc: true
 ---
 
-DRAFT
+# 1. Effective leaders in the age of software find calm and comfort despite chaos of innovation
 
 In my previous post [Building bespoke AI products to win in the age of software](https://blog.dannycastonguay.com/digital%20transformation/building-bespoke-ai-products-to-win-in-the-age-of-software/), I discussed how innovative organizations invest significantly in building their own proprietary AI products.
 
 If you are looking for inspiration on what kinds of AI products you could build for your organization, you may enjoy reading a post I wrote on [how to build a digital twin in 6 months for 1M USD](https://blog.dannycastonguay.com/digital%20twin/deploy-a-digital-twin-in-6months-for-1MUSD/).
-
-# 1. Effective leaders in the age of software find calm and comfort despite chaos of innovation
 
 To measure the success of and give direction to your AI product strategy, I propose a framework, which I named ASANA. The word [“asana”](https://en.wikipedia.org/wiki/Asana) originally comes from the practice of yoga and refers to a body position that is steady and comfortable. In the practice of yoga, students often choose to challenge themselves in uncomfortable positions (e.g., [Eka Pada Rajakapotasana](https://www.gaia.com/article/pigeon-pose-eka-pada-rajakapotasana), also known as “pigeon pose”). Reaching an asana signifies finding calm and comfort despite the challenge so much so that one could find peace and meditate in that position for a few moments. I believe becoming an effective leader in the age of software is an exercise in finding that comfort zone in the face of frequent challenging situations.
 
@@ -25,7 +23,7 @@ You have reached ASANA when you and your organization have found the following s
 + **N**ecessity: the case for change is made, and your leadership recognizes its necessity.
 + **A**ffordability: the full lifecycle is costed out, including the future costs for maintenance, licensing and support and you understand the cost of your delivery in near real time. 
 
-I now take you through each dimension of the framework in more details.
+I now take you through each dimension of the framework in more detail.
 
 ## 2.1 Availability
 
@@ -35,7 +33,7 @@ In addition to your regular human resources hiring process and headhunters, you 
 
 Here’s my not so secret sauce to find great product builders: go to your absolute best engineer or designer and ask them who the best person they know within their skillset is in the world, and in their network. Have them make introductions to you. 
 
-At all times, you need to have at your fingertip a short list of people you can bring onboard quickly and the mechanism to utilize them even if they don’t want a permanent home in your organization. Central to availability is the dynamic process required outside of standard HR to flow talent in and out of the organization at a moments notice. 
+At all times, you need to have at your fingertip a short list of people you can bring onboard quickly and the mechanism to utilize them even if they don’t want a permanent home in your organization. Central to availability is the dynamic process required outside of standard HR to flow talent in and out of the organization at a moment's notice. 
 
 Can you stand up a team in a day? Can you engage a niche vendor in under a week? If you are having trouble attracting or retaining those people, ask them why and fix it. 
  
@@ -98,6 +96,7 @@ That doesn’t mean that you should build everything from scratch using free and
 2. They are priced competitively
 3. They have very good publicly accessible documentation, which will save your engineer’s time
 
+Do you have a product/feature team costing you excessive amounts per month? The best people to continue to maintain and improve a product are the people who built it in the first place. You need to ensure that you manage the costs and assume that costs will continue for as long as the product exists.
 
 # 3. How can you tell you have reached ASANA?
 
@@ -106,7 +105,6 @@ Yogi masters might tell you that it’s about the journey, not the destination. 
 Regardless of your doctrine, there are a few indicators that you are on the right track. If you can stand up a team in a day, have super-users that recommend your product, have leaders that are actively involved and removing barriers, and are not afraid to take small, calculated risks, then you are well on your way to produce a few unicorns, with enough magic dusts to reward those involved.
 
 
----
+----
 
 Acknowledgement: thank you David Castonguay, Leah Capitan, Ed Humphries, Denis Ouellet and Suzanne Fournier for your contributions to this post.
-
