@@ -5,11 +5,13 @@ tag: ["Product", “AI”, “UX Design”, “Talent Strategy”, “DevOps”,
 toc: true
 ---
 
-# 1. Effective leaders in the age of software find calm and comfort despite chaos of innovation
+Effective leaders in the age of software find calm and comfort despite chaos of innovation
 
 In my previous post [Building bespoke AI products to win in the age of software](https://blog.dannycastonguay.com/digital%20transformation/building-bespoke-ai-products-to-win-in-the-age-of-software/), I discussed how innovative organizations invest significantly in building their own proprietary AI products.
 
 If you are looking for inspiration on what kinds of AI products you could build for your organization, you may enjoy reading a post I wrote on [how to build a digital twin in 6 months for 1M USD](https://blog.dannycastonguay.com/digital%20twin/deploy-a-digital-twin-in-6months-for-1MUSD/).
+
+# 1. Effective leaders in the age of software find calm and comfort despite chaos of innovation
 
 To measure the success of and give direction to your AI product strategy, I propose a framework, which I named ASANA. The word [“asana”](https://en.wikipedia.org/wiki/Asana) originally comes from the practice of yoga and refers to a body position that is steady and comfortable. In the practice of yoga, students often choose to challenge themselves in uncomfortable positions (e.g., [Eka Pada Rajakapotasana](https://www.gaia.com/article/pigeon-pose-eka-pada-rajakapotasana), also known as “pigeon pose”). Reaching an asana signifies finding calm and comfort despite the challenge so much so that one could find peace and meditate in that position for a few moments. I believe becoming an effective leader in the age of software is an exercise in finding that comfort zone in the face of frequent challenging situations.
 
