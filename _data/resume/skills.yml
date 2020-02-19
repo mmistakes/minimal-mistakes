@@ -2,14 +2,17 @@
   name: PHP
   level: 90
 - skill:
-  name: Javascript & jQuery
-  level: 75
+  name: Laravel
+  level: 90
 - skill:
   name: MySql
   level: 90
 - skill:
-  name: Laravel
-  level: 90
+  name: Javascript & jQuery
+  level: 75
 - skill:
   name: Docker
   level: 70
+- skill:
+  name: VueJS
+  level: 50
