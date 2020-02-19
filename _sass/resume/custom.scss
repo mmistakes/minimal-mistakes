@@ -1,22 +1,164 @@
 .sidebar-wrapper {
   .profile-container {
-    padding: 30px 10px;
+    padding : 30px 10px;
 
     .profile-img {
-      max-width: 100px;
-      margin-bottom: 15px;
-      border: 0px solid #fff;
-      border-radius: 100%;
-      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+      max-width     : 100px;
+      margin-bottom : 15px;
+      border        : 0px solid #ffffff;
+      border-radius : 100%;
+      box-shadow    : 0 1px 1px rgba(0, 0, 0, 0.1);
     }
 
     h1, h2, h3, h4, h5, h6 {
-      line-height: 1.1;
+      line-height : 1.1;
     }
 
     h4 {
-      margin-top: 10px;
-      font-size: 18px ;
+      margin-top : 10px;
+      font-size  : 18px;
     }
+  }
+}
+
+@media print {
+  @page {
+    margin-left  : 0;
+    margin-right : 0;
+  }
+  .main-wrapper {
+    padding-right : 60px;
+
+    .section-title {
+      font-size : 30px;
+    }
+
+    .summary, .details, .intro, .project-tagline {
+      font-size : 17px;
+    }
+
+    .job-title {
+      font-size : 20px;
+    }
+
+    .time {
+      font-size : 18px;
+      color     : $text-color;
+    }
+
+    .company {
+      font-size : 18px;
+      color     : $text-color;
+    }
+
+    .project-title {
+      font-size : 20px;
+    }
+
+    .level-title {
+      font-size : 18px;
+    }
+  }
+  .sidebar-wrapper {
+    position : relative;
+    width    : auto;
+    height   : fit-content;
+
+    .container-block {
+      float   : left;
+      padding : 15px 30px;
+
+      .container-block-title {
+        font-size : 18px;
+      }
+    }
+
+    .profile-container {
+      .profile-img {
+        max-width : 300px;
+      }
+
+      .tagline {
+        font-size : 18px;
+        color     : white;
+      }
+
+      h4 {
+        display : none;
+      }
+    }
+
+    .contact-container {
+      width : 100%;
+
+      a {
+        text-decoration : none;
+      }
+
+      ul {
+        list-style-type : none;
+        display         : flex;
+        justify-content : center;
+
+        li {
+          font-size : 16px;
+          display   : list-item;
+          padding   : 5px 10px;
+          margin    : 0 auto;
+        }
+      }
+    }
+
+    .education-container {
+      width: 40%;
+
+      .degree {
+        font-size : 16px;
+      }
+
+      .meta {
+        font-size : 16px;
+        color     : white;
+      }
+
+      .time {
+        font-size : 16px;
+        color     : white;
+      }
+    }
+
+    .languages-container {
+      width: 30%;
+
+      .interests-list {
+        li {
+          font-size : 16px;
+
+          .lang-desc {
+            font-size : 16px;
+            color     : white;
+          }
+        }
+      }
+    }
+
+    .interests-container {
+      width: 30%;
+
+      .interests-list {
+        li {
+          font-size : 16px;
+
+          .lang-desc {
+            font-size : 16px;
+            color     : white;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    display : none;
   }
 }
