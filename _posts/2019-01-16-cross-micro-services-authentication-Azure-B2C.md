@@ -1,4 +1,4 @@
-﻿---
+---
 title: Cross (micro) services authentication with Azure B2C
 tags: [AzureAD, AzureB2C, microservices, OAUTH2, OpenIDConnect, dotnetcore, xamarin]
 ---

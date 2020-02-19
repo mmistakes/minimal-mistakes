@@ -3,7 +3,7 @@ title: Use Azure Key Vault as TDE with Azure PaaS Services
 date: 2020-02-20 16:12
 author: nicold
 comments: false
-categories: [Azure, Azure-key-vault, CosmosDb, SQL, SQL-Azure, MySQL, Cassandra, MongoDB, Gremlin, Azure-TableStorage, Etcd]
+tags: [Azure, Azure-key-vault, CosmosDb, SQL, SQL-Azure, MySQL, Cassandra, MongoDB, Gremlin, Azure-TableStorage, Etcd]
 ---
 
 For one of my customers I have had the need to collect if and how Azure Key Vault can be used for Transparent Data Encryption. The result is the following table, quite generic, and IMHO useful also elsewhere. The bottom line is Azure key Vault is ready and valuable when you have an ecosystem based on Azure. Outside Azure, integration is possible but requires a bit more work.  
