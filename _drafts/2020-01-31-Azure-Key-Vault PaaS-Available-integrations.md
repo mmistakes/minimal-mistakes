@@ -1,19 +1,19 @@
 ---
 title: Use Azure Key Vault as TDE with Azure PaaS Services
-date: 2020-02-31 16:12
+date: 2020-02-20 16:12
 author: nicold
-comments: true
-categories: [Azure, Azure-key-vault, CosmosDb, SQL, SQL-Azure, MySQL, Cassandra, MongoDB, Gremlin, Azure-Table, Etcd]
+comments: false
+categories: [Azure, Azure-key-vault, CosmosDb, SQL, SQL-Azure, MySQL, Cassandra, MongoDB, Gremlin, Azure-TableStorage, Etcd]
 ---
 
-For one of my customers I have had the need to collect if and how Azure Key Vault can be used for Transparent Data Encription. The result is the following table, quite generic, and IMHO useful also elsewhere. The bottom line is Azure key Vault is ready and valuable when you have an echosystem based on Azure. outside Azure, an integration is possible, but almost nothing out of the box available at the moment.
+For one of my customers I have had the need to collect if and how Azure Key Vault can be used for Transparent Data Encryption. The result is the following table, quite generic, and IMHO useful also elsewhere. The bottom line is Azure key Vault is ready and valuable when you have an ecosystem based on Azure. Outside Azure, integration is possible but requires a bit more work.  
 
 # Azure Key Vault
 *Azure Key Vault is a tool for securely storing and accessing secrets. A secret is anything that you want to tightly control access to, such as API keys, passwords, or certificates. A vault is a logical group of secrets.*
 
 Azure Key Vault on <a href="https://docs.microsoft.com/en-us/azure/key-vault/" target="_blank">Microsoft Docs</a>
 
-# Transaprent Data Encription
+# Transparent Data Encryption
 *Transparent Data Encryption (often abbreviated to TDE) is a technology employed by Microsoft, IBM and Oracle to encrypt database files. TDE offers encryption at file level. TDE solves the problem of protecting data at rest, encrypting databases both on the hard drive and consequently on backup media. It does not protect data in transit nor data in use. Enterprises typically employ TDE to solve compliance issues such as PCI DSS which require the protection of data at rest.*
 
 
