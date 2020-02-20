@@ -1,6 +1,23 @@
 [
   {
     "image_path": null,
+    "alt": "Elternabend 5b",
+    "title": "Elternabend 5b",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NGw4YWxtNGZyMmFtZDltZjBsYTlwb2ZzMWIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2020-02-21",
+      "date_time": null
+    },
+    "end": {
+      "date": "2020-02-22",
+      "date_time": null
+    },
+    "created": "2020-02-19T08:16:11.000Z",
+    "updated": "2020-02-19T08:16:11.137Z"
+  },
+  {
+    "image_path": null,
     "alt": "Fasching an der Grundschule",
     "title": "Fasching an der Grundschule",
     "excerpt": "Information zur Veranstaltung erteilen die Klassenlehrer",
@@ -15,6 +32,23 @@
     },
     "created": "2020-01-24T09:34:00.000Z",
     "updated": "2020-01-24T09:34:00.263Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Elternabend 4b",
+    "title": "Elternabend 4b",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NW90NGhscmlycWtuMWk2NG8yMDVlaDByNWUgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2020-02-25T18:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2020-02-25T19:30:00+01:00"
+    },
+    "created": "2020-02-19T08:15:30.000Z",
+    "updated": "2020-02-19T08:15:30.026Z"
   },
   {
     "image_path": null,
@@ -52,53 +86,19 @@
   },
   {
     "image_path": null,
-    "alt": "Girl´s und Boy´s Day",
-    "title": "Girl´s und Boy´s Day",
+    "alt": "Elternabend A5",
+    "title": "Elternabend A5",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MXA3b3M2MWJtbGxocmMycDFtMmhka21lZDIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2020-03-26",
-      "date_time": null
-    },
-    "end": {
-      "date": "2020-03-27",
-      "date_time": null
-    },
-    "created": "2020-01-13T07:27:41.000Z",
-    "updated": "2020-01-13T07:27:41.484Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Osterferien",
-    "title": "Osterferien",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MHE5YTRxZG0zbWptZzBrdjFqdmxyajZ0N3AgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2020-04-06",
-      "date_time": null
-    },
-    "end": {
-      "date": "2020-04-18",
-      "date_time": null
-    },
-    "created": "2019-08-22T08:03:10.000Z",
-    "updated": "2019-08-22T08:03:10.314Z"
-  },
-  {
-    "image_path": null,
-    "alt": "4. GEV um 18:30 Uhr",
-    "title": "4. GEV um 18:30 Uhr",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=N2xnanRpYmk0N2hidGZqODY0cjBwNHA2NGogaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=NzFrN3ZmazhmdnU4dmhtOWM2YzgzOTZkZnAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
       "date": null,
-      "date_time": "2020-05-14T18:30:00+02:00"
+      "date_time": "2020-03-02T16:30:00+01:00"
     },
     "end": {
       "date": null,
-      "date_time": "2020-05-14T20:00:00+02:00"
+      "date_time": "2020-03-02T18:00:00+01:00"
     },
-    "created": "2019-10-25T12:53:36.000Z",
-    "updated": "2019-10-25T12:53:36.451Z"
+    "created": "2020-02-19T08:13:51.000Z",
+    "updated": "2020-02-19T08:13:51.347Z"
   }
 ]
