@@ -72,6 +72,5 @@ or
 
 ## Resumé to PDF
 
-I use on online service to convert the PDF
-
-https://www.sodapdf.com/html-to-pdf/
+No need to use any online service. I have written a CSS for printing, so you just need to print the
+page and save is as PDF, and Bob's your uncle.

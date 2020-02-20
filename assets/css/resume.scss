@@ -1,4 +1,5 @@
 ---
 ---
 
+@import "../assets/resume/scss/{% if site.resume.style %}{{ site.resume.style}}.scss{% else %}orbit-1.scss{% endif %}";
 @import "resume/custom";
