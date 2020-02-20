@@ -7,7 +7,7 @@ order: 6
 ---
 Personal version | Enterprise Version | Latest Version 
 -------| ------- | -------
-[![PersonalLICENSE](https://img.shields.io/badge/Personal_Version_license-freeware-lightgrey.svg)](https://tosee.makesecu.com/down/2020-01-08_Setup_ToSee2018_personal.exe) | [![EnterPriseLICENSE](https://img.shields.io/badge/Enterprise_Version_license-Limited_time_license-blue.svg)](http://tosee.isecurekr.com/) | [![ToSee](https://img.shields.io/badge/ToSee-v2.0.0-orange)](http://tosee.isecurekr.com/)  
+[![PersonalLICENSE](https://img.shields.io/badge/Personal_Version_license-freeware-lightgrey.svg)](https://www.isecurekr.com) | [![EnterPriseLICENSE](https://img.shields.io/badge/Enterprise_Version_license-Limited_time_license-blue.svg)](http://tosee.isecurekr.com/) | [![ToSee](https://img.shields.io/badge/ToSee-v2.0.0-orange)](http://tosee.isecurekr.com/)  
 
 
 &nbsp;
