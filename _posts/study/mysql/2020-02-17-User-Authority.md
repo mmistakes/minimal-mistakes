@@ -3,6 +3,7 @@ title: \[MYSQL] 사용자 권한 확인, 부여, 삭제 (grant, revoke)
 
 categories: 
    - Mysql
+   - Command
 tags:
    - Mysql
    - grant
