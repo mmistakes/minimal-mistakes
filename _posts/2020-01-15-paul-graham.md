@@ -1,5 +1,5 @@
 ---
-title: Paul Graham
+title: The hardest lessons for startups to learn by Paul Graham
 category: Startups
 tag: [Product, Y-Combinator, Venture Capital]
 toc: true
