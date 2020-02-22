@@ -32,7 +32,7 @@ Here’s my not-so-secret secret to find great product builders: go to your abso
 
 At all times, you need to have at your fingertip a short list of people you can bring onboard quickly and the mechanism to utilize them even if they don’t want a permanent home in your organization. Central to availability is the dynamic process required outside of standard HR to flow talent in and out of the organization at a moment's notice. 
 
-Can you assemble a team in a day? Can you engage a niche vendor in under a week? If you are having trouble attracting or retaining those people, ask them why and fix it. 
+Can you assemble a team in a day? Can you engage a niche vendor in under a week? If you are having trouble attracting or retaining those people, ask your best designers/engineers why, and fix it. 
  
 ## 2.2 Speed
 
@@ -98,4 +98,4 @@ Regardless, there are a few indicators that you are on the right track. If you c
 
 ----
 
-Acknowledgement: thank you David Castonguay, Leah Capitan, Ed Humphries, Denis Ouellet and Suzanne Fournier for your contributions to this post.
+Acknowledgement: thank you David Castonguay, Leah Capitan, Ed Humphries, Janis Kukainis, Denis Ouellet and Suzanne Fournier for your contributions to this post.
