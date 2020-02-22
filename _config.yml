@@ -16,12 +16,12 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "default", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Chaitra Blog"
+title                    : "Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Jana Bollineni"
 description              : ""
-url                      : https://test.chaitra.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://neni.chaitra.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "jbollineni/jbollineni.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
