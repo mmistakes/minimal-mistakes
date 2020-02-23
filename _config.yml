@@ -5,7 +5,7 @@
 # Theme and skin
 theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"    # can be used in place of theme, see docs
-minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Meta fields
 locale                   : "en"
@@ -17,19 +17,22 @@ description              : "A blog on Data Science and life in between"
 url                      : "https://martinapugliese.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "martinapugliese/martinapugliese.github.io"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png", used in the "related posts"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+posts_images_path        : "/assets/posts_images/"
+
+# TODO fix title being overwritten by post title
 
 ## SITE FEATURES
 
-# Breadcrumbs?
+# Breadcrumbs TODO ?
 breadcrumbs              : false # true, false (default)
 
 # Reading words per minute for time display
 words_per_minute         : 200
 
-# Comments provider - to choose and configure - if staticman configure it below
+# Comments provider - to choose and configure - if staticman configure it below TODO
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
@@ -71,7 +74,7 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
-# Search configs - if search feature desired
+# Search configs - if search feature desired  TODO
 search                   : # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
@@ -109,12 +112,13 @@ social:
 analytics:
   provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
-    anonymize_ip         : "UA-90395986-1"
+    tracking_id          : "UA-90395986-1"
+    anonymize_ip         : false #default
 
 
 # Info on author
 # links are the socials of author - can add SO, email and a few other things
+# icons from https://fontawesome.com/icons?d=gallery
 author:
   name             : "Martina Pugliese"
   avatar           : "assets/avatars/me.jpg"
@@ -156,9 +160,9 @@ footer:
     # - label: "Facebook"
     #   icon: "fab fa-fw fa-facebook-square"
     #   # url:
-    # - label: "GitHub"
-    #   icon: "martinapugliese"
-      # url:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url:  "https://github.com/martinapugliese/martinapugliese.github.io"
     # - label: "GitLab"
     #   icon: "fab fa-fw fa-gitlab"
     #   # url:
