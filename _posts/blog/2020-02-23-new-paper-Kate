@@ -1,12 +1,11 @@
 ---
 layout: post
-title: Review paper in Trends in Cognitive Sciences
 categories: blog
-excerpt: Reward prediction error and declarative memory
-tags: [] ### INSERT TAGS IF APPLICABLE
+excerpt: Reward prediction error in declarative memory
+tags: [new-paper]
 image:
   feature:
-link: 
+link:
 date: 2020-02-23
 modified:
 share: true
