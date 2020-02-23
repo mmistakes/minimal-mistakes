@@ -4,13 +4,16 @@
 - Buc Calderon, C., De Loof, E., Ergo, K., Snoeck, A., Boehler, C. N., & Verguts, T. Signed reward prediction errors in the ventral striatum drive episodic memory. [_BioArxiv._](https://www.biorxiv.org/content/10.1101/2020.01.03.893578v1)
 
 ## Recent publications
-- Desender, K., Boldt, A., Verguts, T., & Donner, T. (2019). _Post-decisional sense of confidence shapes speed-accuracy tradeoff for subsequent choices._ eLife.
+- Ergo, K., De Loof, E., & Verguts, T. (in press). Reward prediction error and declarative memory. _Trends in Cognitive Sciences._
+    - [PsarXiv draft](https://psyarxiv.com/xngwq/)
+
+- Desender, K., Boldt, A., Verguts, T., & Donner, T. (2019). Post-decisional sense of confidence shapes speed-accuracy tradeoff for subsequent choices. _eLife._
     - [Direct link to pdf](https://kobedesender.files.wordpress.com/2019/08/elife-43499-v2.pdf)
 
-- Verbeke, P., & Verguts, T. (2019). _Learning to synchronize: How biological agents can couple neural task modules for dealing with the stability-plasticity dilemma._ PLoS Computational Biology.
+- Verbeke, P., & Verguts, T. (2019). Learning to synchronize: How biological agents can couple neural task modules for dealing with the stability-plasticity dilemma. _PLoS Computational Biology._
     - [Link to online version of publication](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006604)
 
-- De Loof, E., Vassena, E., Janssens, C., De Taeye, L., Meurs, A., Van Roost, D., … Verguts, T. (2019). _Preparing for hard times : scalp and intracranial physiological signatures of proactive cognitive control._ Psychophysiology.
+- De Loof, E., Vassena, E., Janssens, C., De Taeye, L., Meurs, A., Van Roost, D., … Verguts, T. (2019). Preparing for hard times : scalp and intracranial physiological signatures of proactive cognitive control. _Psychophysiology._
      - [Link to online version of publication](https://onlinelibrary.wiley.com/doi/full/10.1111/psyp.13417)
      
 - Ergo, K., De Loof, E., Janssens, C., & Verguts, T. (2019). Oscillatory signatures of reward prediction errors in declarative learning. _NeuroImage,186,_ 137-145.
