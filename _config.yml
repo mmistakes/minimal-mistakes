@@ -1,34 +1,35 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
+# Config file of the site
 
-# Theme Settings
-#
-# Review documentation to determine if you should use `theme` or `remote_theme`
-# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
+## SITE SETTINGS
 
-# theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+# Theme and skin
+theme                  : "minimal-mistakes-jekyll"
+# remote_theme           : "mmistakes/minimal-mistakes"    # can be used in place of theme, see docs
+minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
-# Site Settings
-locale                   : "en-US"
-title                    : "Site Title"
+# Meta fields
+locale                   : "en"
+title                    : "Clearly Erroneous"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : "Martina Pugliese"
+description              : "A blog on Data Science and life in between"
+url                      : "https://martinapugliese.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "martinapugliese/martinapugliese.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+
+## SITE FEATURES
+
+# Breadcrumbs?
+breadcrumbs              : false # true, false (default)
+
+# Reading words per minute for time display
 words_per_minute         : 200
+
+# Comments provider - to choose and configure - if staticman configure it below
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
@@ -50,7 +51,7 @@ staticman:
   filename               : # comment-{@timestamp}
   format                 : # "yml"
   moderation             : # true
-  path                   : # "/_data/comments/{options.slug}" (default)
+  path                   : # "/_data/comments/{options.slug}"
   requiredFields         : # ['name', 'email', 'message']
   transforms:
     email                : # "md5"
@@ -58,13 +59,19 @@ staticman:
     date:
       type               : # "date"
       options:
-        format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+        format           : # "iso8601" # "iso8601"(default), "timestamp-seconds", "timestamp-milliseconds"
   endpoint               : # URL of your own deployment with trailing slash, will fallback to the public instance
+
+# to configure reCaptcha
 reCaptcha:
   siteKey                :
   secret                 :
+
+# to create Atom RSS feed of site
 atom_feed:
   path                   : # blank (default) uses feed.xml
+
+# Search configs - if search feature desired
 search                   : # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
@@ -76,13 +83,14 @@ algolia:
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
-# SEO Related
-google_site_verification :
-bing_site_verification   :
+
+# SEO Related - configure for search engine
+google_site_verification : "jvKx38vhwcqW8_-yWmZHLPHPRGdMhrf6wwS7Zqg-J7g"
+bing_site_verification   : "04E4DBE8DFA515868EBC9A8A100353E5"
 yandex_site_verification :
 naver_site_verification  :
 
-# Social Sharing
+# Social Sharing (accounts of the site)
 twitter:
   username               :
 facebook:
@@ -99,59 +107,66 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          :
-    anonymize_ip         : # true, false (default)
+    anonymize_ip         : "UA-90395986-1"
 
 
-# Site Author
+# Info on author
+# links are the socials of author - can add SO, email and a few other things
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  name             : "Martina Pugliese"
+  avatar           : "assets/avatars/me.jpg"
+  bio              : "I do some science on data, they'd say, for a definition of me by day"
+  location         : "Edinburgh, Scotland"
   email            :
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+    # - label: "Email"
+    #   icon: "fas fa-fw fa-envelope-square"
       # url: mailto:your.name@email.com
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
+    # - label: "Website"
+    #   icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
+    - label : "m_letitbe"
+      icon  : "fab fa-fw fa-twitter"
+      url   : "https://twitter.com/m_letitbe"
+    # - label: "Facebook"
+    #   icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
-    - label: "GitHub"
+    - label: "martinapugliese"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
+      url: "https://github.com/martinapugliese"
+    - label: "martinapugliese"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/martinapugliese/"
+    - label: "mart.pugliese"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://www.instagram.com/mart.pugliese/"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+    # - label: "m_letitbe"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   # url:
+    # - label: "martinapugliese"
+    #   icon: "fab fa-fw fa-linkedin"
       # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
+    # - label: "Facebook"
+    #   icon: "fab fa-fw fa-facebook-square"
+    #   # url:
+    # - label: "GitHub"
+    #   icon: "martinapugliese"
       # url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
+    # - label: "GitLab"
+    #   icon: "fab fa-fw fa-gitlab"
+    #   # url:
+    # - label: "Bitbucket"
+    #   icon: "fab fa-fw fa-bitbucket"
       # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
       # url:
 
 
@@ -223,7 +238,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/London # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
@@ -280,7 +295,7 @@ compress_html:
     envs: development
 
 
-# Defaults
+# YAML Front Matter Defaults
 defaults:
   # _posts
   - scope:
