@@ -7,8 +7,8 @@ tags: [] ### INSERT TAGS IF APPLICABLE
 image:
   feature:
 link: 
-date: 2020-02-23 ### UPDATE date
+date: 2020-02-23
 modified:
 share: true
-author: tomverguts ### CHANGE to your author name (in _data/authors.yml)
+author: tomverguts
 ---
