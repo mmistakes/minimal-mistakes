@@ -86,7 +86,7 @@ You are not going to get it right the first time. In fact, you are never going t
 
 Unfortunately, that may mean killing off a product if you identify you are not solving the right problem. Other times, it will be taking a sharp turn to pivot in a new direction. And finally, the solution may be to split up a team into two, assigning different sets of features to each. 
 
-A good way to ensure you can scale down teams quickly (and mitigate employee moral second-order effect) is to incorporate into your talent strategy flex resources: 
+A good way to ensure you can scale down teams quickly (and mitigate negative employee morale) is to incorporate into your talent strategy some flex resources: 
 
 + free floating employees (e.g., out-of-role rotations, interns, etc.), 
 + independent contractors, and
