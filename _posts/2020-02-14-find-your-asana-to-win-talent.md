@@ -16,7 +16,7 @@ You have reached ASANA when you and your organization have found the following s
 
 + **A**vailability: you have access to highly trained people with world class skills ready to deliver, regardless of whether they are employees, contractors, or external talent providers.
 + **S**peed: your product builders are made of small squads that focus on crafting AI products that will exponentially benefit the user experience and are not held back by technical debt.
-+ **A**gility: you can ramp up or ramp down without friction.
++ **A**gility: your teams respond to change and are focussed on delivering great user experience.
 + **N**ecessity: the case for change is made, and your leadership recognizes its necessity.
 + **A**ffordability: the full lifecycle is costed out, including  the risk of failure of your fledgling venture, the maintenance of a successful product, and any licensing costs.. 
 
@@ -56,13 +56,19 @@ Finally, can your team afford time every week  spent using derelict methods and 
 
 ## 2.3 Agility
 
-You are not going to get it right the first time. In fact, you are never going to get it perfect - ever. But, iteratively, you are going to question your assumptions every week and fix a small fraction of those until it’s good enough. If you gain new insights, you need to be ready to adjust quickly. 
+The Agile framework is trivial to explain and can be summarized in [twelve principles](https://agilemanifesto.org/principles.html), but it is hard to master. If you are looking for a definitive set of processes (e.g., sprint reviews, backlog grooming, retrospectives) and tools (e.g., a Kanban board in Gitlab), you will likely be disappointed with the results. You will end up with an “Agile Theatre”, where actors do lip service using the right terms, but underneath it they have yet to profoundly accept the discomfort of ambiguity that comes with agile. 
+
+Agile is not a process, it’s a framework and a mindset.
+
+You are not going to get it right the first time. In fact, you are never going to get it perfect - ever. But, iteratively, you are going to question your assumptions every week and fix a small fraction of those until it’s good enough. You will frequently release software and observe users in action. If you gain new insights, you need to be ready to adjust quickly. 
 
 Unfortunately, that may mean killing off a product if you identify you are not solving the right problem. Other times, it will be taking a sharp turn to pivot in a new direction. And finally, the solution may be to split up a team into two assigning different sets of features to each. 
 
-A good way to ensure you can scale down teams quickly is to incorporate in your talent strategy 20%-40% as flex, that is a percentage of your talent is in the form of independent contractors and outsourced product-building companies. 
+A good way to ensure you can scale down teams quickly is to incorporate in your talent strategy 20%-40% as flex, that is a percentage of your talent is in the form of free floating employees, independent contractors and outsourced product-building companies. 
 
-Do your teams have short, clean, and prioritized backlogs? Your end users need to feel that they are being listened to, and your product builders need to know that the features they are releasing are having a positive impact.
+Adopting the Agile framework and mindset can be incredibly hard for organizations where waterfall planning is so ingrained. It is the reason many companies opt to hire Agile coaches. A poor sign that your organization has adopted the Agile framework and mindset is that you have a checklist running around to ensure that every Agile ceremonies are completed (i.e., the process is followed). A better sign is that your Agile coaches have nothing to do (because team members have adopted the Agile mindset).
+
+Do your teams have short, clean, and prioritized backlogs? Your end users need to feel that they are being listened to, and your product builders need to know that the features they are releasing are having a positive impact. 
 
 ## 2.4 Necessity
 
@@ -88,7 +94,6 @@ Every AI product that you build will continue to require maintenance over its fu
 
 If you are considering building on a platform that requires you to pay licenses,  go read first my blog post on [Building Bespoke AI Products to Win in the Age of Software](https://blog.dannycastonguay.com/digital%20transformation/building-bespoke-ai-products-to-win-in-the-age-of-software/) . The short answer is, the opportunity cost in terms of control over the service means you probably shouldn’t. That doesn’t mean the answer is always to build everything from scratch. Good candidates for licensing are companies that offer a consumption-base API as a service. For example,  [Stripe](https://stripe.com/) for payment processing, [Twilio](https://www.twilio.com/) for SMS, and [Google Maps API](https://developers.google.com/maps/documentation) for maps. These companies offer services that are highly reliable and available, are priced competitively, and have documentation that is publicly accessible.
 
-
 # 3. How can you tell if you are on the right track to reach your ASANA?
 
 Because your environment and the state of your organization are evolving in a constant feedback loop, you can never quite reach finality in chasing your ASANA. Yogi masters will tell you that it’s about the journey, not the destination. In mathematical terms, you can only reach your ASANA asymptotically. As Mike Tyson said in his great wisdom "everybody has a plan until they get punched in the mouth." There will always be a lot of blood, sweet and tears during the journey. 
@@ -98,4 +103,4 @@ Regardless, there are a few indicators that you are on the right track. If you c
 
 ----
 
-Acknowledgement: thank you David Castonguay, Leah Capitan, Ed Humphries, Janis Kukainis, Denis Ouellet and Suzanne Fournier for your contributions to this post.
+Acknowledgement: thank you David Castonguay, Leah Capitan, Denis Ouellet and Suzanne Fournier for your contributions to this post.
