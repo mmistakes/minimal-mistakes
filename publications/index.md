@@ -1,14 +1,15 @@
 <font color='white'>filler text</font>
 
 ## Preprints
-- Buc Calderon, C., De Loof, E., Ergo, K., Snoeck, A., Boehler, C. N., & Verguts, T. Signed reward prediction errors in the ventral striatum drive episodic memory. [_BioArxiv._](https://www.biorxiv.org/content/10.1101/2020.01.03.893578v1)
+- Buc Calderon, C., De Loof, E., Ergo, K., Snoeck, A., Boehler, C. N., & Verguts, T. Signed reward prediction errors in the ventral striatum drive episodic memory.
+    - [BioArxiv](https://www.biorxiv.org/content/10.1101/2020.01.03.893578v1)
 
 ## Recent publications
 - Ergo, K., De Loof, E., & Verguts, T. (in press). Reward prediction error and declarative memory. _Trends in Cognitive Sciences._
-    - [PsarXiv draft](https://psyarxiv.com/xngwq/)
+    - [PsarXiv](https://psyarxiv.com/xngwq/)
 
 - Desender, K., Boldt, A., Verguts, T., & Donner, T. (2019). Post-decisional sense of confidence shapes speed-accuracy tradeoff for subsequent choices. _eLife._
-    - [Direct link to pdf](https://kobedesender.files.wordpress.com/2019/08/elife-43499-v2.pdf)
+    - [Link to online version of publication](https://kobedesender.files.wordpress.com/2019/08/elife-43499-v2.pdf)
 
 - Verbeke, P., & Verguts, T. (2019). Learning to synchronize: How biological agents can couple neural task modules for dealing with the stability-plasticity dilemma. _PLoS Computational Biology._
     - [Link to online version of publication](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006604)
@@ -28,3 +29,9 @@
 
 Our older papers are all available online through the [academic bibliography](https://biblio.ugent.be/) of Ghent University.   
 The papers associated with our lab can be found by going to [Tom's biblio page](https://biblio.ugent.be/publication?q=%22verguts+tom%22).
+
+
+
+```python
+
+```
