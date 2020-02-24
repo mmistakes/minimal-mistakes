@@ -4,21 +4,22 @@ category: "Talent Strategy"
 tag: ["Product", “AI”, “UX Design”, “Talent Strategy”, “DevOps”, “Cybersecurity”, “Outsourcing”]
 toc: true
 ---
-In my previous post [building bespoke AI products to win in the Age of Software](https://blog.dannycastonguay.com/digital%20transformation/building-bespoke-ai-products-to-win-in-the-age-of-software/), I discussed how innovative organizations invest significantly in building their own proprietary AI products. You can also look for inspiration on what kinds of AI products you could build for your organization in another post I wrote [“How to build a digital twin in 6 months for 1M USD”](https://blog.dannycastonguay.com/digital%20twin/deploy-a-digital-twin-in-6months-for-1MUSD/). In this post, I will discuss a framework that can help you ride the tides of rapid change both within your organization and its environment.
 
-# 1. Effective leaders in the Age of Software find calm and comfort despite chaos of innovation
+In my previous post on “[building bespoke AI products to win in the Age of Software](https://blog.dannycastonguay.com/digital%20transformation/building-bespoke-ai-products-to-win-in-the-age-of-software/)”, I discussed how innovative organizations invest significantly in building their own proprietary AI products. You can also look for inspiration on what kinds of AI products you could build for your organization in another post I wrote “[how to build a digital twin in 6 months for 1M USD”](https://blog.dannycastonguay.com/digital%20twin/deploy-a-digital-twin-in-6months-for-1MUSD/)”. In this post, I will discuss a framework that can help you ride the tides of rapid change both within your organization and its environment.
 
-To measure the success of and give direction to your AI product strategy, I propose a framework which I named ASANA. The word [“asana”](https://en.wikipedia.org/wiki/Asana) comes from the practice of yoga. Students often choose to challenge themselves in difficult positions (e.g., [Eka Pada Rajakapotasana](https://www.gaia.com/article/pigeon-pose-eka-pada-rajakapotasana), also known as “pigeon pose”). Reaching asana signifies finding calm and comfort despite the challenge. Advanced practitioners have learned to overcome the pain and stress to a point where they can even find peace and meditate for a few moments. I believe becoming an effective leader in the Age of Software is an exercise in finding that comfort zone in the face of frequent challenging situations.
+# 1. Effective leaders in the Age of Software find calm and comfort despite the chaos of innovation
+
+To measure the success of and give direction to your AI product strategy, I propose a framework which I named ASANA. The word “[asana](https://en.wikipedia.org/wiki/Asana)” comes from the practice of yoga. In yoga, students often choose to challenge themselves in difficult positions (e.g., [Eka Pada Rajakapotasana](https://www.gaia.com/article/pigeon-pose-eka-pada-rajakapotasana), also known as “pigeon pose”). Reaching asana signifies finding calm and comfort despite the challenge. Advanced practitioners have learned to overcome the pain and stress to a point where they can even find peace and meditate for a few moments. I believe becoming an effective leader in the Age of Software is an exercise in finding that comfort zone in the face of frequent challenging situations.
 
 # 2. Reaching your ASANA to overcome challenges associated with building AI products
 
 You have reached ASANA when you and your organization have found the following strengths:
 
-+ **A**vailability: you have access to highly trained people with world class skills ready to deliver, regardless of whether they are employees, contractors, or external talent providers.
++ **A**vailability: you have access to people with the right skills and ready to deliver, regardless of whether they are employees, contractors, or external talent providers.
 + **S**peed: your product builders are made of small squads that focus on crafting AI products that will exponentially benefit the user experience and are not held back by technical debt.
 + **A**gility: your teams respond to change and are focussed on delivering great user experience.
 + **N**ecessity: the case for change is made, and your leadership recognizes its necessity.
-+ **A**ffordability: the full lifecycle is costed out, including  the risk of failure of your fledgling venture, the maintenance of a successful product, and any licensing costs.. 
++ **A**ffordability: the full lifecycle is costed out, including  the risk of failure of your fledgling venture, the maintenance of a successful product, and any licensing costs.
 
 I now take you through each dimension of the framework in more detail.
 
@@ -36,11 +37,11 @@ Can you assemble a team in a day? Can you engage a niche vendor in under a week?
  
 ## 2.2 Speed
 
-Assuming you have solved your availability problem and have the right people with the right skills, the next biggest impediment to going fast will be your team size, having too many stakeholders, and dealing with too many barriers in the form of technical debt.
+Assuming you have solved your availability problem and have the right people with the right skills, the next biggest impediments to going fast will be your size (team size and stakeholders/users), mismanaging your software development process (e.g., not writing enough tests, overlooking cybersecurity, accumulating technical debt, etc.), and overlooking your team health. 
 
-First, the bigger the team, the more overhead is required. Let me demonstrate.
+### 2.2.1 Smaller is faster
 
-Assuming that each team member needs to align once a week with every other team member for a minimum of 1 hour, then we have the following:
+First, the bigger the team, the more overhead is required. Let me demonstrate. Assuming that each team member needs to align once a week with every other team member for a minimum of 1 hour, then we have the following:
 
 1. Team of ONE has 0 minutes of alignment meetings, but has limited bandwidth.
 2. Team of TWO has 2 hours of alignment meetings (twice 1 hour), or 2.5% of their time.
@@ -51,8 +52,29 @@ Assuming that each team member needs to align once a week with every other team 
 
 How about a team of 15? A whooping 210 hours wasted every week, which is 35% of each and everyone’s time! Assuming 8 hours of work a day, that’s almost 2 days every week dedicated to meetings. A team of 41 people would literally spend 100% of their week staying in alignment but getting nothing done. The result is that people on larger teams don’t communicate enough and become uncoordinated. Sounds familiar? If your product team is going slow, the solution is simple: remove people.
 
-Secondly, another sure way to go slow is to try to please too many stakeholders/end users at the same time. A product team is better off making one user extremely happy than ten moderately happy. Stay focused. 
-Finally, can your team afford time every week  spent using derelict methods and tools known as technical debt? No, they cannot. Be a little bit ruthless and remove everything from your people’s agenda that doesn’t push the product forward. 
+Another sure way to go slow is to try to please too many stakeholders/end users at the same time. A product team is better off making one user extremely happy than ten moderately happy. Be a little bit ruthless and politely ignore stakeholders that are not helping you push the product forward. Start small, stay focused and grow from the core.
+
+### 2.2.2 Slow is smooth, smooth is fast
+
+What percentage of time is your team dedicating every week to writing tests, discussing security mechanisms, or reducing technical debt? If the answer is close to 0, then you have a ticking bomb on your hands. When it explodes, your ability to deliver features fast will come to a screeching halt with a lot of wasted momentum. 
+
+By ensuring that important software development details are done correctly (e.g., adopting something like [Gitlab flow](https://docs.gitlab.com/ee/topics/gitlab_flow.html)), you will go slow to go fast. At the other end of the spectrum, if you don’t have any technical debt, you are probably not pushing enough features out. However, when it comes to cybersecurity, the bar for being careful should be incomprehensibly high, to the point that people find it mildly annoying but still comply. Not surprisingly, one of my [least read blog post](https://blog.dannycastonguay.com/digital%20transformation/you've-been-hacked-ACID-might-help/) is about cybersecurity, yet I think its a post that will remain relevant for a long time. I learned a lot when researching it (e.g., I contrasted cybersecurity with the US Navy’s quality assurance program for its submarines) and I hope you will enjoy it.
+
+### 2.2.3 It’s not a sprint, it’s a marathon
+
+The choice of the word “[sprint](https://www.scrum.org/resources/what-is-a-sprint-in-scrum)” in Scrum is unfortunate. In fact, Agile (discussed in the next section) promotes sustainable development: 
+
+> Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.
+
+By the time signs of depression start to show up, it’s already too late. Health is an important topic for me. I touch on it when I give [feedback to people](https://blog.dannycastonguay.com/team%20health/visit-a-tea-shop-to-gift-feedback/) and I practice [Brazilian Jiu Jitsu](https://blog.dannycastonguay.com/team%20health/business-lessons-from-bjj/) multiple times per week. Quoting from those posts:
+
+> An Athlete lives healthy - they will care about getting sufficient sleep, will eat nutritious food in moderate quantity, will exercise moderately but frequently, and will take the time to relax, decompress and meditate.
+
+> In business, there are many consequences that can arise from working too hard. Three very visible external effects could include: 1) Lackluster performance on the family and friends front: divorce, missing out on raising the kids, not keeping up with important friends. 2) Poor mental health, resulting in anxiety and depression: 40 million adults in the US are affected every year according to ADAA. 3) Risk to self-actualization: when so much of one’s personality becomes tied with a professional persona (e.g., being a partner at a venture capital firm), any professional setback can engender a toxic spiral of self-doubt.
+
+> By pacing myself in my career I’ve been able to participate wholefully in raising my kids with my wonderful wife, I find myself able to overcome any signs of depression, and I take the time to self-actualize through learning things I find interesting (for example, last year I took a Coursera course on Aristotle, Epicureanism, and Stoicism).
+
+By emphasizing that the team gets plenty of sleep, finds time for wellbeing (e.g., exercise, meditation, games), and invests in learning new things, the team will not only go faster in the long run, but will also achieve things otherwise not attainable.
 
 ## 2.3 Agility
 
@@ -99,7 +121,6 @@ If you are considering building on a platform that requires you to pay licenses,
 Because your environment and the state of your organization are evolving in a constant feedback loop, you can never quite reach finality in chasing your ASANA. Yogi masters will tell you that it’s about the journey, not the destination. In mathematical terms, you can only reach your ASANA asymptotically. As Mike Tyson said in his great wisdom "everybody has a plan until they get punched in the mouth." There will always be a lot of blood, sweet and tears during the journey. 
 
 Regardless, there are a few indicators that you are on the right track. If you can muster a team within the day, have super-users that recommend your product, have leaders that are actively involved in enabling others, removing barriers, and are not afraid to take calculated risks, then you are well on your way to produce a few unicorns, with enough magic dust to reward everyone involved.
-
 
 ----
 
