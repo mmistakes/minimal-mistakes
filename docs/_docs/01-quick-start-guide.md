@@ -12,7 +12,7 @@ Minimal Mistakes has been developed as a [Gem-based theme](http://jekyllrb.com/d
 
 **If you enjoy this theme, please consider [supporting me](https://www.paypal.me/mmistakes) for developing and maintaining it.**
 
-[![Support via PayPal](https://cdn.rawgit.com/twolfson/paypal-github-button/1.0.0/dist/button.svg)](https://www.paypal.me/mmistakes)
+[![Support via PayPal](https://cdn.jsdelivr.net/gh/twolfson/paypal-github-button@1.0.0/dist/button.svg)](https://www.paypal.me/mmistakes)
 
 ## Installing the theme
 
@@ -74,7 +74,7 @@ To install as a remote theme:
    bundle
    ```
 
-4. Add `remote_theme: "mmistakes/minimal-mistakes@4.16.6"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
+4. Add `remote_theme: "mmistakes/minimal-mistakes@4.18.1"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
 
 You may also optionally specify a branch, [tag](https://github.com/mmistakes/minimal-mistakes/tags), or commit to use by appending an @ and the Git ref (e.g., `mmistakes/minimal-mistakes@4.9.0` or `mmistakes/minimal-mistakes@bbf3cbc5fd64a3e1885f3f99eb90ba92af84063d`). This is useful when rolling back to older versions of the theme. If you don't specify a Git ref, the latest on `master` will be used.
 

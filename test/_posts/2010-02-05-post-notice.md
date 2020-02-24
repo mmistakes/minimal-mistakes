@@ -17,6 +17,16 @@ When using Kramdown `{: .notice}` can be added after a sentence to assign the `.
 **Primary Notice:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. [Praesent libero](#). Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
 {: .notice--primary}
 
+<div class="notice--primary" markdown="1">
+**Primary Notice with code block:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. [Praesent libero](#). Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+
+```html
+<html>
+  <body>Some body.<body>
+</html>
+```
+</div>
+
 **Info Notice:** Lorem ipsum dolor sit amet, [consectetur adipiscing elit](#). Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
 {: .notice--info}
 
