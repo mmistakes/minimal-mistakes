@@ -5,7 +5,7 @@ tag: ["Product", “AI”, “UX Design”, “Talent Strategy”, “DevOps”,
 toc: true
 ---
 
-In my previous post on “[building bespoke AI products to win in the Age of Software](https://blog.dannycastonguay.com/digital%20transformation/building-bespoke-ai-products-to-win-in-the-age-of-software/)”, I discussed how innovative organizations invest significantly in building their own proprietary AI products. You can also look for inspiration on what kinds of AI products you could build for your organization in another post I wrote “[how to build a digital twin in 6 months for 1M USD”](https://blog.dannycastonguay.com/digital%20twin/deploy-a-digital-twin-in-6months-for-1MUSD/)”. In this post, I will discuss a framework that can help you ride the tides of rapid change both within your organization and its environment.
+In my previous post on “[building bespoke AI products to win in the Age of Software](https://blog.dannycastonguay.com/digital%20transformation/building-bespoke-ai-products-to-win-in-the-age-of-software/)”, I discussed how innovative organizations invest significantly in building their own proprietary AI products. You can also look for inspiration on what kinds of AI products you could build for your organization in another post I wrote “[how to build a digital twin in 6 months for 1M USD](https://blog.dannycastonguay.com/digital%20twin/deploy-a-digital-twin-in-6months-for-1MUSD/)”. In this post, I will discuss a framework that can help you ride the tides of rapid change both within your organization and its environment.
 
 # 1. Effective leaders in the Age of Software find calm and comfort despite the chaos of innovation
 
@@ -86,7 +86,11 @@ You are not going to get it right the first time. In fact, you are never going t
 
 Unfortunately, that may mean killing off a product if you identify you are not solving the right problem. Other times, it will be taking a sharp turn to pivot in a new direction. And finally, the solution may be to split up a team into two, assigning different sets of features to each. 
 
-A good way to ensure you can scale down teams quickly is to incorporate into your talent strategy ~20% as flex -  a percentage of your talent is in the form of free floating employees, independent contractors and outsourced product-building companies. 
+A good way to ensure you can scale down teams quickly (and mitigate employee moral second-order effect) is to incorporate into your talent strategy flex resources: 
+
++ free floating employees (e.g., out-of-role rotations, interns, etc.), 
++ independent contractors, and
++ outsourced product-building companies. 
 
 Adopting the Agile framework and mindset can be incredibly hard for organizations where waterfall planning is so ingrained. It is the reason many companies opt to hire Agile coaches. A poor sign that your organization has adopted the Agile framework and mindset is that you have a checklist running around to ensure that every Agile ceremonies are completed (i.e., the process is followed). A better sign is that your Agile coaches have nothing to do (because team members have adopted the Agile mindset).
 
@@ -100,7 +104,7 @@ While each case has its own peculiar signature, this is how innovation propagate
 
 If you have availability, speed, and agility, then your case for pursuing your necessity is growing. Necessity is the easiest to achieve in a startup but the hardest in a publicly traded company. 
 
-But identifying properly which product will turn out to be “necessary” in real time isn’t going to work out more than 10% of the time. In fact, if your batting average is higher than 10%, you are probably not going at bat often enough and are leaving a lot of opportunities unaddressed. You have to have confidence that the 10% that does succeed will be worth 100X it’s investment. If you don’t think that way, you are taking a huge risk of letting your competitors out-innovate you. 
+But identifying properly which product will turn out to be “necessary” in real time isn’t going to work out more than 10% of the time. In fact, if your batting average is higher than 10%, you are probably not going at bat often enough and are leaving a lot of opportunities unaddressed. You have to have confidence that the 10% that does succeed will be worth 100X its investment. If you don’t think that way, you are taking a huge risk of letting your competitors out-innovate you. 
 
 Consider the case of [Y-Combinator](https://en.wikipedia.org/wiki/Y_Combinator), which has funded over 2,000 companies since 2005. As of 2014, they had invested over [$12M in those companies](https://techcrunch.com/2014/07/16/y-combinator-1-billion/), and today that number might be north of $20M, but not much more. As of today, the top 5% (102 companies) have a [cumulative valuation of $155B](https://www.ycombinator.com/topcompanies), including companies such as Stripe, Airbnb, Cruise, DoorDash, Instacart, Dropbox, gusto, Reddit, Docker, Twitch, GitLab, and Flexport. 
 
@@ -114,7 +118,7 @@ Because you are going to try a lot and are ready to fail, you will learn to run 
 
 Every AI product that you build will continue to require maintenance over its full lifetime. Having a sustainable strategy over the long run is essential. The best people to continue to maintain and improve a product are the people who built it in the first place. It is essential to take that into consideration. 
 
-If you are considering building on a platform that requires you to pay licenses,  go read first my blog post on [Building Bespoke AI Products to Win in the Age of Software](https://blog.dannycastonguay.com/digital%20transformation/building-bespoke-ai-products-to-win-in-the-age-of-software/) . The short answer is, the opportunity cost in terms of control over the service means you probably shouldn’t. That doesn’t mean the answer is always to build everything from scratch. Good candidates for licensing are companies that offer a consumption-base API as a service. For example,  [Stripe](https://stripe.com/) for payment processing, [Twilio](https://www.twilio.com/) for SMS, and [Google Maps API](https://developers.google.com/maps/documentation) for maps. These companies offer services that are highly reliable and available, are priced competitively, and have documentation that is publicly accessible.
+If you are considering building on a platform that requires you to pay licenses,  go read first my blog post on [Building Bespoke AI Products to Win in the Age of Software](https://blog.dannycastonguay.com/digital%20transformation/building-bespoke-ai-products-to-win-in-the-age-of-software/). The short answer is, the opportunity cost in terms of control over the service means you probably shouldn’t. That doesn’t mean the answer is always to build everything from scratch. Good candidates for licensing are companies that offer a consumption-based API as a service. For example,  [Stripe](https://stripe.com/) for payment processing, [Twilio](https://www.twilio.com/) for SMS, and [Google Maps API](https://developers.google.com/maps/documentation) for maps. These companies offer services that are highly reliable and available, are priced competitively, and have documentation that is publicly accessible.
 
 # 3. How can you tell if you are on the right track to reach your ASANA?
 
