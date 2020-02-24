@@ -9,7 +9,7 @@ In my previous post on “[building bespoke AI products to win in the Age of Sof
 
 # 1. Effective leaders in the Age of Software find calm and comfort despite the chaos of innovation
 
-To measure the success of and give direction to your AI product strategy, I propose a framework which I named ASANA. The word “[asana](https://en.wikipedia.org/wiki/Asana)” comes from the practice of yoga. In yoga, students often choose to challenge themselves in difficult positions (e.g., [Eka Pada Rajakapotasana](https://www.gaia.com/article/pigeon-pose-eka-pada-rajakapotasana), also known as “pigeon pose”). Reaching asana signifies finding calm and comfort despite the challenge. Advanced practitioners have learned to overcome the pain and stress to a point where they can even find peace and meditate for a few moments. I believe becoming an effective leader in the Age of Software is an exercise in finding that comfort zone in the face of frequent challenging situations.
+To measure the success of and give direction to your AI product strategy, I propose a framework which I named ASANA. The word “[asana](https://en.wikipedia.org/wiki/Asana)” comes from the practice of yoga. In yoga, students often choose to challenge themselves in difficult positions (e.g., [Eka Pada Rajakapotasana](https://www.gaia.com/article/pigeon-pose-eka-pada-rajakapotasana), also known as “pigeon pose”). Reaching asana signifies finding calm and comfort despite the challenges. Advanced practitioners have learned to overcome the pain and stress to a point where they can even find peace and meditate for a few moments. I believe becoming an effective leader in the Age of Software is an exercise in finding that comfort zone in the face of frequent challenging situations.
 
 # 2. Reaching your ASANA to overcome challenges associated with building AI products
 
@@ -27,9 +27,9 @@ I now take you through each dimension of the framework in more detail.
 
 No matter how talented the people in your organization are, there will always be more qualified and ambitious people outside your team. The question is: how to reach out to them?
 
-In addition to your regular human resources hiring process, headhunters, and online marketplaces, you need to be ready to go the non-traditional route to avail talent. In fact, the best developers may not have a LinkedIn profile, and may not pass through your screening interviews. 
+In addition to your regular human resources hiring processes, headhunters, and online marketplaces, you need to be ready to go the non-traditional route to avail talent. In fact, the best developers may not have a LinkedIn profile, and may not pass through your screening interviews. 
 
-Here’s my not-so-secret secret to find great product builders: go to your absolute best engineer or designer and ask them who the best person they know within their skillset is in the world, and in their network. Have them make introductions to you. 
+Here’s my not-so-secret secret to find great product builders: go to your absolute best engineer or designer and ask them who the best person they know within their skillset is in the world, and in their network. Ask them for introductions . 
 
 At all times, you need to have at your fingertip a short list of people you can bring onboard quickly and the mechanism to utilize them even if they don’t want a permanent home in your organization. Central to availability is the dynamic process required outside of standard HR to flow talent in and out of the organization at a moment's notice. 
 
@@ -52,13 +52,13 @@ First, the bigger the team, the more overhead is required. Let me demonstrate. A
 
 How about a team of 15? A whooping 210 hours wasted every week, which is 35% of each and everyone’s time! Assuming 8 hours of work a day, that’s almost 2 days every week dedicated to meetings. A team of 41 people would literally spend 100% of their week staying in alignment but getting nothing done. The result is that people on larger teams don’t communicate enough and become uncoordinated. Sounds familiar? If your product team is going slow, the solution is simple: remove people.
 
-Another sure way to go slow is to try to please too many stakeholders/end users at the same time. A product team is better off making one user extremely happy than ten moderately happy. Be a little bit ruthless and politely ignore stakeholders that are not helping you push the product forward. Start small, stay focused and grow from the core.
+Another sure way to go slow is to try to please too many stakeholders/end users at the same time. A product team is better off making one user extremely happy than ten users moderately happy. Be a little bit ruthless and politely ignore stakeholders that are not helping you push the product forward. Start small, stay focused and grow from the core.
 
 ### 2.2.2 Slow is smooth, smooth is fast
 
 What percentage of time is your team dedicating every week to writing tests, discussing security mechanisms, or reducing technical debt? If the answer is close to 0, then you have a ticking bomb on your hands. When it explodes, your ability to deliver features fast will come to a screeching halt with a lot of wasted momentum. 
 
-By ensuring that important software development details are done correctly (e.g., adopting something like [Gitlab flow](https://docs.gitlab.com/ee/topics/gitlab_flow.html)), you will go slow to go fast. At the other end of the spectrum, if you don’t have any technical debt, you are probably not pushing enough features out. However, when it comes to cybersecurity, the bar for being careful should be incomprehensibly high, to the point that people find it mildly annoying but still comply. Not surprisingly, one of my [least read blog post](https://blog.dannycastonguay.com/digital%20transformation/you've-been-hacked-ACID-might-help/) is about cybersecurity, yet I think its a post that will remain relevant for a long time. I learned a lot when researching it (e.g., I contrasted cybersecurity with the US Navy’s quality assurance program for its submarines) and I hope you will enjoy it.
+By ensuring that important software development details are done correctly (e.g., adopting something like [Gitlab flow](https://docs.gitlab.com/ee/topics/gitlab_flow.html)), you will go slow to go fast. At the other end of the spectrum, if you don’t have any technical debt, you are probably not pushing enough features out. However, when it comes to cybersecurity, the bar for being careful should be incomprehensibly high, to the point that people find it mildly annoying but still comply. Not surprisingly, one of my [least read blog post](https://blog.dannycastonguay.com/digital%20transformation/you've-been-hacked-ACID-might-help/) is about cybersecurity, yet I think it’s a post that will remain relevant for a long time. I learned a lot when researching it (e.g., I contrasted cybersecurity with the US Navy’s quality assurance program for its submarines) and I hope you will enjoy it.
 
 ### 2.2.3 It’s not a sprint, it’s a marathon
 
@@ -74,7 +74,7 @@ By the time signs of depression start to show up, it’s already too late. Healt
 
 > By pacing myself in my career I’ve been able to participate wholefully in raising my kids with my wonderful wife, I find myself able to overcome any signs of depression, and I take the time to self-actualize through learning things I find interesting (for example, last year I took a Coursera course on Aristotle, Epicureanism, and Stoicism).
 
-By emphasizing that the team gets plenty of sleep, finds time for wellbeing (e.g., exercise, meditation, games), and invests in learning new things, the team will not only go faster in the long run, but will also achieve things otherwise not attainable.
+By emphasizing that the team gets plenty of sleep, finds time for wellbeing (e.g., exercise, meditation, games), and invests in learning new things, the team will not only go faster in the long run, but will also achieve things which are otherwise unattainable.
 
 ## 2.3 Agility
 
@@ -84,9 +84,9 @@ Agile is not a process, it’s a framework and a mindset.
 
 You are not going to get it right the first time. In fact, you are never going to get it perfect - ever. But, iteratively, you are going to question your assumptions every week and fix a small fraction of those until it’s good enough. You will frequently release software and observe users in action. If you gain new insights, you need to be ready to adjust quickly. 
 
-Unfortunately, that may mean killing off a product if you identify you are not solving the right problem. Other times, it will be taking a sharp turn to pivot in a new direction. And finally, the solution may be to split up a team into two assigning different sets of features to each. 
+Unfortunately, that may mean killing off a product if you identify you are not solving the right problem. Other times, it will be taking a sharp turn to pivot in a new direction. And finally, the solution may be to split up a team into two, assigning different sets of features to each. 
 
-A good way to ensure you can scale down teams quickly is to incorporate in your talent strategy 20%-40% as flex, that is a percentage of your talent is in the form of free floating employees, independent contractors and outsourced product-building companies. 
+A good way to ensure you can scale down teams quickly is to incorporate into your talent strategy ~20% as flex -  a percentage of your talent is in the form of free floating employees, independent contractors and outsourced product-building companies. 
 
 Adopting the Agile framework and mindset can be incredibly hard for organizations where waterfall planning is so ingrained. It is the reason many companies opt to hire Agile coaches. A poor sign that your organization has adopted the Agile framework and mindset is that you have a checklist running around to ensure that every Agile ceremonies are completed (i.e., the process is followed). A better sign is that your Agile coaches have nothing to do (because team members have adopted the Agile mindset).
 
@@ -100,7 +100,7 @@ While each case has its own peculiar signature, this is how innovation propagate
 
 If you have availability, speed, and agility, then your case for pursuing your necessity is growing. Necessity is the easiest to achieve in a startup but the hardest in a publicly traded company. 
 
-But identifying properly which product will turn out to be “necessary” in real time isn’t going to work out more than 10% of the time. In fact, if your batting average is higher than 10%, you are probably not going at bat often enough and are leaving a lot of opportunities unaddressed. You have to have confidence that the 10% that does succeed will be worth 100X it’s investment. If you don’t think that way, you are taking a huge risk to let your competitors out-innovate you. 
+But identifying properly which product will turn out to be “necessary” in real time isn’t going to work out more than 10% of the time. In fact, if your batting average is higher than 10%, you are probably not going at bat often enough and are leaving a lot of opportunities unaddressed. You have to have confidence that the 10% that does succeed will be worth 100X it’s investment. If you don’t think that way, you are taking a huge risk of letting your competitors out-innovate you. 
 
 Consider the case of [Y-Combinator](https://en.wikipedia.org/wiki/Y_Combinator), which has funded over 2,000 companies since 2005. As of 2014, they had invested over [$12M in those companies](https://techcrunch.com/2014/07/16/y-combinator-1-billion/), and today that number might be north of $20M, but not much more. As of today, the top 5% (102 companies) have a [cumulative valuation of $155B](https://www.ycombinator.com/topcompanies), including companies such as Stripe, Airbnb, Cruise, DoorDash, Instacart, Dropbox, gusto, Reddit, Docker, Twitch, GitLab, and Flexport. 
 
@@ -118,7 +118,7 @@ If you are considering building on a platform that requires you to pay licenses,
 
 # 3. How can you tell if you are on the right track to reach your ASANA?
 
-Because your environment and the state of your organization are evolving in a constant feedback loop, you can never quite reach finality in chasing your ASANA. Yogi masters will tell you that it’s about the journey, not the destination. In mathematical terms, you can only reach your ASANA asymptotically. As Mike Tyson said in his great wisdom "everybody has a plan until they get punched in the mouth." There will always be a lot of blood, sweet and tears during the journey. 
+Because your environment and the state of your organization are evolving in a constant feedback loop, you can never quite reach finality in chasing your ASANA. Yogi masters will tell you that it’s about the journey, not the destination. In mathematical terms, you can only reach your ASANA asymptotically. As Mike Tyson said in his great wisdom "everybody has a plan until they get punched in the mouth." There will always be a lot of blood, sweat and tears during the journey. 
 
 Regardless, there are a few indicators that you are on the right track. If you can muster a team within the day, have super-users that recommend your product, have leaders that are actively involved in enabling others, removing barriers, and are not afraid to take calculated risks, then you are well on your way to produce a few unicorns, with enough magic dust to reward everyone involved.
 
