@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Get-Help is your friend
-subtitle : Yeah seriously its your friend..!!
+subtitle : Yeah seriously it's your friend..!!
 tags: [Powershell,Basic]
 published: true
 ---
