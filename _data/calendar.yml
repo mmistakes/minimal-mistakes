@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Fasching an der Grundschule",
-    "title": "Fasching an der Grundschule",
-    "excerpt": "Information zur Veranstaltung erteilen die Klassenlehrer",
-    "url": "https://www.google.com/calendar/event?eid=M29pbXY0cGdyNHU2c2pocG5hNnN2cG5iZHAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2020-02-24",
-      "date_time": null
-    },
-    "end": {
-      "date": "2020-02-25",
-      "date_time": null
-    },
-    "created": "2020-01-24T09:34:00.000Z",
-    "updated": "2020-01-24T09:34:00.263Z"
-  },
-  {
-    "image_path": null,
     "alt": "Elternabend 4b",
     "title": "Elternabend 4b",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2020-02-19T08:13:02.000Z",
     "updated": "2020-02-19T08:13:02.625Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Girl´s und Boy´s Day",
+    "title": "Girl´s und Boy´s Day",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MXA3b3M2MWJtbGxocmMycDFtMmhka21lZDIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2020-03-26",
+      "date_time": null
+    },
+    "end": {
+      "date": "2020-03-27",
+      "date_time": null
+    },
+    "created": "2020-01-13T07:27:41.000Z",
+    "updated": "2020-01-13T07:27:41.484Z"
   }
 ]
