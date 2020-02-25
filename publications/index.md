@@ -30,8 +30,3 @@
 Our older papers are all available online through the [academic bibliography](https://biblio.ugent.be/) of Ghent University.   
 The papers associated with our lab can be found by going to [Tom's biblio page](https://biblio.ugent.be/publication?q=%22verguts+tom%22).
 
-
-
-```python
-
-```
