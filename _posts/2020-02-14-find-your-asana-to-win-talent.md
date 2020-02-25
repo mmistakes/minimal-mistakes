@@ -7,6 +7,13 @@ toc: true
 
 In my previous post on “[building bespoke AI products to win in the Age of Software](https://blog.dannycastonguay.com/digital%20transformation/building-bespoke-ai-products-to-win-in-the-age-of-software/)”, I discussed how innovative organizations invest significantly in building their own proprietary AI products. You can also look for inspiration on what kinds of AI products you could build for your organization in another post I wrote “[how to build a digital twin in 6 months for 1M USD](https://blog.dannycastonguay.com/digital%20twin/deploy-a-digital-twin-in-6months-for-1MUSD/)”. In this post, I will discuss a framework that can help you ride the tides of rapid change both within your organization and its environment.
 
+<span><audio id="myAudio" controls>
+    <source src="/assets/audio/find-your-asana-to-win.ogg" type="audio/ogg">
+    <source src="/assets/audio/find-your-asana-to-win.mp3" type="audio/mpeg">
+  </audio>
+  <button class="btn btn--small" id="video-player-playback-rate-control" style="border-color=none !important;border-collapse: separate !important;">Speed: <span id="current-rate">1</span>x</button></span>
+
+
 # 1. Effective leaders in the Age of Software find calm and comfort despite the chaos of innovation
 
 To measure the success of and give direction to your AI product strategy, I propose a framework which I named ASANA. The word “[asana](https://en.wikipedia.org/wiki/Asana)” comes from the practice of yoga. In yoga, students often choose to challenge themselves in difficult positions (e.g., [Eka Pada Rajakapotasana](https://www.gaia.com/article/pigeon-pose-eka-pada-rajakapotasana), also known as “pigeon pose”). Reaching asana signifies finding calm and comfort despite the challenges. Advanced practitioners have learned to overcome the pain and stress to a point where they can even find peace and meditate for a few moments. I believe becoming an effective leader in the Age of Software is an exercise in finding that comfort zone in the face of frequent challenging situations.
@@ -37,7 +44,11 @@ Can you assemble a team in a day? Can you engage a niche vendor in under a week?
  
 ## 2.2 Speed
 
-Assuming you have solved your availability problem and have the right people with the right skills, the next biggest impediments to going fast will be your size (team size and stakeholders/users), mismanaging your software development process (e.g., not writing enough tests, overlooking cybersecurity, accumulating technical debt, etc.), and overlooking your team health. 
+Assuming you have solved your availability problem and have the right people with the right skills, the next biggest impediments to going fast will be your teams’ size, software development processes, and team health:
+
+1. Too many team members and too many stakeholders/users,
+2. Mismanaged software development processes (e.g., not writing enough tests, overlooking cybersecurity, accumulating technical debt, etc.),
+3. Lack of emphasis on team health. 
 
 ### 2.2.1 Smaller is faster
 
@@ -86,7 +97,7 @@ You are not going to get it right the first time. In fact, you are never going t
 
 Unfortunately, that may mean killing off a product if you identify you are not solving the right problem. Other times, it will be taking a sharp turn to pivot in a new direction. And finally, the solution may be to split up a team into two, assigning different sets of features to each. 
 
-A good way to ensure you can scale down teams quickly (and mitigate negative employee morale) is to incorporate into your talent strategy some flex resources: 
+A good way to ensure you can scale down teams quickly (and mitigate negative employee morale) is to incorporate into your talent strategy some flex resources. Here’s three examples: 
 
 + free floating employees (e.g., out-of-role rotations, interns, etc.), 
 + independent contractors, and
@@ -106,7 +117,7 @@ If you have availability, speed, and agility, then your case for pursuing your n
 
 But identifying properly which product will turn out to be “necessary” in real time isn’t going to work out more than 10% of the time. In fact, if your batting average is higher than 10%, you are probably not going at bat often enough and are leaving a lot of opportunities unaddressed. You have to have confidence that the 10% that does succeed will be worth 100X its investment. If you don’t think that way, you are taking a huge risk of letting your competitors out-innovate you. 
 
-Consider the case of [Y-Combinator](https://en.wikipedia.org/wiki/Y_Combinator), which has funded over 2,000 companies since 2005. As of 2014, they had invested over [$12M in those companies](https://techcrunch.com/2014/07/16/y-combinator-1-billion/), and today that number might be north of $20M, but not much more. As of today, the top 5% (102 companies) have a [cumulative valuation of $155B](https://www.ycombinator.com/topcompanies), including companies such as Stripe, Airbnb, Cruise, DoorDash, Instacart, Dropbox, gusto, Reddit, Docker, Twitch, GitLab, and Flexport. 
+Consider the case of [Y-Combinator](https://en.wikipedia.org/wiki/Y_Combinator), which has funded over 2,000 companies since 2005. As of 2014, they had invested over [$12M in those companies](https://techcrunch.com/2014/07/16/y-combinator-1-billion/), and today that number might be north of $20M, but not much more. As of 2020, the top 5% (102 companies) have a [cumulative valuation of $155B](https://www.ycombinator.com/topcompanies), including companies such as Stripe, Airbnb, Cruise, DoorDash, Instacart, Dropbox, gusto, Reddit, Docker, Twitch, GitLab, and Flexport. 
 
 There is always room for innovation. 
 
