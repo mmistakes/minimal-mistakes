@@ -10,7 +10,7 @@ link:
 date: 2020-02-23
 modified:
 share: true
-author: tomverguts
+author: tom_verguts
 ---
 
 We review the recent literature showing that reward prediction errors modulate declarative learning

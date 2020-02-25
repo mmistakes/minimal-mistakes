@@ -12,6 +12,12 @@ kobe_desender:
   bio: "Post-doc at Verguts lab"
   avatar: profile_pic_kobe.jpg
   
+tom_verguts:
+  name: Tom Verguts
+  email: Tom.Verguts@ugent.be
+  bio: "PI at Verguts lab"
+  avatar: profile_pic_tom.jpg
+  
 #=============================================
 # Template profile - copy and paste this above
 # then complete as directed
