@@ -118,7 +118,7 @@ author:
       url: "fabillahdza@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-       url: "https://dzakirafabillah.github.io/dzakirabisa.github.io/"
+       #url: "https://dzakirafabillah.github.io/dzakirabisa.github.io/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/fabillahdza"
