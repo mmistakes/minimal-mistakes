@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "Dzakira Fabillah"
-  avatar           :  path of avatar image, e.g. "/assets/images/pict.jpg"
+  avatar           : path of avatar image, e.g. "/assets/images/pict.jpg"
   bio              : "Welcome to my **blog** everyone!!!!!!!!"
   location         : "Seoul"
   email            :
