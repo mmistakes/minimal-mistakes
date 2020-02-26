@@ -108,14 +108,14 @@ analytics:
 # Site Author
 author:
   name             : "Mohammad Rizky Maulidhan"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "iky.jpg"
   bio              : "*To infinity and beyond*"
   location         : "Bandung, Jawa Barat"
   email            : mrizky04@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:your.name@email.com
+      # url: mailto: mrizky04@.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
