@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Elternabend 4b",
-    "title": "Elternabend 4b",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NW90NGhscmlycWtuMWk2NG8yMDVlaDByNWUgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2020-02-25T18:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2020-02-25T19:30:00+01:00"
-    },
-    "created": "2020-02-19T08:15:30.000Z",
-    "updated": "2020-02-19T08:15:30.026Z"
-  },
-  {
-    "image_path": null,
     "alt": "Filmvorführung am Nachmittag",
     "title": "Filmvorführung am Nachmittag",
     "excerpt": "Fühl dich wie im Kino! Mit Popcorn und netten Kindern einen Film schauen.",
@@ -100,5 +83,22 @@
     },
     "created": "2020-01-13T07:27:41.000Z",
     "updated": "2020-01-13T07:27:41.484Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Osterferien",
+    "title": "Osterferien",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MHE5YTRxZG0zbWptZzBrdjFqdmxyajZ0N3AgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2020-04-06",
+      "date_time": null
+    },
+    "end": {
+      "date": "2020-04-18",
+      "date_time": null
+    },
+    "created": "2019-08-22T08:03:10.000Z",
+    "updated": "2019-08-22T08:03:10.314Z"
   }
 ]
