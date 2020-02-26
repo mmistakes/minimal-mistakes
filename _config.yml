@@ -107,9 +107,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Dzakira F"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Welcome to my **blog** everyone."
+  name             : "Dzakira Fabillah"
+  avatar           :  path of avatar image, e.g. "/assets/images/pict.jpg"
+  bio              : "Welcome to my **blog** everyone!!!!!!!!"
   location         : "Seoul"
   email            :
   links:
@@ -118,7 +118,10 @@ author:
       url: fabillahdza@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+       url: "https://dzakirafabillah.github.io/dzakirabisa.github.io/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/fabillahdza/?hl=id"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -128,9 +131,7 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+    
 
 # Site Footer
 footer:
