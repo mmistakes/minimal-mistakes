@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Perfect"
+title                    : "Perfect and Wonderfull"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Putri Syalwa A"
-description              : "An amazing website."
+description              : "An wonderfull blog."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "Putri Syalwa Abdullah"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **wonderfull** person."
+  bio              : "I am a **strong** woman."
   location         : "JTK POLBAN"
   email            : "namaakuputri@gmail.com"
   links:
