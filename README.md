@@ -1,7 +1,7 @@
 [ToSee Vulnerability Management Tool](https://tosee.isecurekr.com/)
 ===================================================================
 
-[![LICENSE](https://img.shields.io/badge/Personal_Version_license-freeware-lightgrey.svg)](https://tosee.isecurekr.com/) [![LICENSE](https://img.shields.io/badge/ICS-freeware-brightgreen)](http://www.overbyte.eu/frame_index.html) [![LICENSE](https://img.shields.io/badge/OpenSSL-OpenSSL-brightgreen)](https://www.openssl.org/source/license-openssl-ssleay.txt) [![LICENSE](https://img.shields.io/badge/VirtualTreeview-MIT1.1-blue)](http://www.soft-gems.net/index.php/controls/virtual-treeview) [![LICENSE](https://img.shields.io/badge/OnGuardVCL-MIT1.1-blue)](https://github.com/TurboPack/OnGuard-VCL) [![LICENSE](https://img.shields.io/badge/ProjectJEDI-MPL.1-blue)](https://github.com/TurboPack/OnGuard-VCL) [![LICENSE](https://img.shields.io/badge/WinPcap-WinPcap-blue)](https://www.winpcap.org/misc/copyright.htm) [![ToSee](https://img.shields.io/badge/ToSee-v2.0.0-orange)](https://tosee.isecurekr.com/) [![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.6-blue.svg)](https://jekyllrb.com/) [![Ruby gem](https://img.shields.io/gem/v/minimal-mistakes-jekyll.svg)](https://rubygems.org/gems/minimal-mistakes-jekyll)
+[![PersonalLICENSE](https://img.shields.io/badge/Personal_Version_license-freeware-lightgrey.svg)](https://tosee.isecurekr.com/) [![LICENSE](https://img.shields.io/badge/ICS-freeware-brightgreen)](http://www.overbyte.eu/frame_index.html) [![LICENSE](https://img.shields.io/badge/OpenSSL-OpenSSL-brightgreen)](https://www.openssl.org/source/license-openssl-ssleay.txt) [![LICENSE](https://img.shields.io/badge/VirtualTreeview-MIT1.1-blue)](http://www.soft-gems.net/index.php/controls/virtual-treeview) [![LICENSE](https://img.shields.io/badge/OnGuardVCL-MIT1.1-blue)](https://github.com/TurboPack/OnGuard-VCL) [![LICENSE](https://img.shields.io/badge/ProjectJEDI-MPL.1-blue)](https://github.com/TurboPack/OnGuard-VCL) [![LICENSE](https://img.shields.io/badge/WinPcap-WinPcap-blue)](https://www.winpcap.org/misc/copyright.htm) [![ToSee](https://img.shields.io/badge/ToSee-v2.0.0-orange)](https://tosee.isecurekr.com/) [![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.6-blue.svg)](https://jekyllrb.com/) [![Ruby gem](https://img.shields.io/gem/v/minimal-mistakes-jekyll.svg)](https://rubygems.org/gems/minimal-mistakes-jekyll)
 
 ToSee Analyzer 는 개인용 PC 운영체제(Windows 7.0/8.0/8.1/10)의 [취약점](vulnerability.md)을 진단하고 조치하는 기능을 제공합니다.
 
@@ -49,8 +49,3 @@ This theme comes in nine different skins (including the default one).
 | Windows8      | 서비스팩 없음                      | 2016년 1월 12일           |
 | Windows8.1    | 업데이트1                          | 2023년 1월 10일           |
 | Windows10     | 레드스톤1~5, 19H1,19H2, 20H1, 20H2 | 레드스톤5 2020년 4월 예정 |
-
-#Personal Version Download
---------------------------
-
-[Personal Version](https://tosee.makesecu.com/down/2019-12-30_Setup_ToSee2018_personal.exe)
