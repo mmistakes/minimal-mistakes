@@ -4,7 +4,6 @@ date: 2020-02-26 22:31:00 -0400
 categories: obfuscation,codeobfuscation
 ---
 
-# 코드난독화(code obfuscation)
 ## 난독화란?
 
 바이너리 코드를 분석하여 유용한 정보를 뽑아내는 작업을 **역공학**(reverse engineering)라고 부른다. 하지만 역공학이 악의적으로 사용된다면 각종 보안 프로그램 등이 공격받게 될 수 있어 문제가 된다.  이에 대응하기 위해서 바이너리를 분석하기 어렵도록 복잡하게 만드는데, 이것이 **코드 난독화**이다.
@@ -41,7 +40,10 @@ categories: obfuscation,codeobfuscation
 름상의 각 명령을 가상 명령으로 바꾸고, 가상기계를 삽입하여 이를 실행하도록 하는
 것을 말한다.
 
-## 난독화 방법 - 소스 코드 난독화
+## 난독화 방법 - 소스 코드 난독화 -(추가 )
+
+
+
 난독화 되어 있는 프로그램은 Dynamic Symbolic Execution(DSE)을 통해 효과적으로 역난독화 할 수 있다. 최신 난독화 기술들도 DSE에는 별 효력이 없다-Runtime overhead와 code size가 큰 Nested virtualization만 효력이 있음.
 
 
@@ -49,7 +51,7 @@ categories: obfuscation,codeobfuscation
 ## 소스 코드 레벨에서 난독화한 예제 - miniC의 확장
 
 난독화 전
-```
+{% highlight C %}
 int sum(int a, int b) {
     return a+b;
 }
@@ -65,7 +67,7 @@ void main() {
     _print(sub(a,b));
     _print(sub(sum(a,b),2));
 }
-```
+{% endhighlight %}
 
 난독화 후
 
@@ -108,5 +110,14 @@ void main()
     _print(sub(sum(a, b), 2));
 }
 {% endhighlight %}
+
+새로운 난독화 기법을 제시하는 논문(참고)을 참고하여 for loop를 이용한 난독화를 구현해보았다. 변수의 이용을 숨기기 위해서 새로운 변수를 사용하는데, 새로운 변수에 직접 값을 할당하는게 아니라 for loop을 이용하여 1씩 증가시켜서 값을 만드는 아이디어이다.
+
+compiler수업에서 구현한 miniC pretty printer를 확장하였다. 구현하려고보니 어떤 변수를 숨겨야 할 지 모호하여 일단은 함수의 매개변수에 대하여 난독화 기법을 적용하였다. 먼저 기존의 miniC 코드에서 변수를 저장할 자료구조를 추가하였다. 그리고 난독화할 매개변수 정보와 새로운 변수의 정보를 담을 자료구조를 추가하였다. 함수에 매개변수가 존재한다면 새로운 변수의 이름을 `temp_매개변수명` 으로, 값을 0으로 하여 새로운 변수를 할당해둔다. 그리고 한 statement에서 변수 선언이 끝나면 ~(C99 이전 버전에서는 변수 선언이 중간에 올 수 없다고 알고 있다...! 사실 잘 모르겠다.)~ 기존의 변수만큼의 값을 갖도록 for loop을 실행한다. 후에 기존의 매개변수를 호출하면 새롭게 선언한 `temp_매개변수명`를 호출하게 되도록 작성하였다.
+
+
+*참고 : How to Kill Symbolic Deobfuscation for Free (or: Unleashing the Potential of Path-oriented Protections)
+Mathilde Ollivier, Sebastien Bardin, Richard Bonichon, Jean-Yves Marion.Annual Computer Security Applications Conference(ACSAC ’19)*
+
 
 
