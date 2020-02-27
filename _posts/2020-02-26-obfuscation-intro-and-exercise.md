@@ -119,5 +119,5 @@ compiler수업에서 구현한 miniC pretty printer를 확장하였다. 구현�
 *참고 : How to Kill Symbolic Deobfuscation for Free (or: Unleashing the Potential of Path-oriented Protections)
 Mathilde Ollivier, Sebastien Bardin, Richard Bonichon, Jean-Yves Marion.Annual Computer Security Applications Conference(ACSAC ’19)*
 
-
+## 소스 코드 레벨에서 난독화한 예제 - miniC의 확장 - 아쉬운 점/발전방향
 
