@@ -59,7 +59,10 @@ Session Table에 보관하는 주기를 조절함으로써 세션에 대한 데�
 
 ### CP 인증 (가맹점 인증)
 
-``` javascript
+<details>
+<div markdown="1">
+
+```  javascript
 importScript(component/LOG.js);
 importScript(component/AUTH.js);
 
@@ -95,7 +98,14 @@ importScript(component/AUTH.js);
 })();
 ```
 
+</div>
+</details>
+
+
 ### 사용자 인증 & OTP 전송
+
+<details>
+<div markdown="1">
 
 ``` javascript
 importClass(packages.kr.co.danal.rnd.tuna.db.directory.GlobalDirectory);
@@ -158,6 +168,10 @@ function createOTP(digit){
     
 }) ();
 ```
+
+</div>
+</details>
+
 
 ### OTP 인증
 
