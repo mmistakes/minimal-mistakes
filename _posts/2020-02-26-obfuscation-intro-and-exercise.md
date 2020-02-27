@@ -43,3 +43,70 @@ categories: obfuscation,codeobfuscation
 
 ## 난독화 방법 - 소스 코드 난독화
 난독화 되어 있는 프로그램은 Dynamic Symbolic Execution(DSE)을 통해 효과적으로 역난독화 할 수 있다. 최신 난독화 기술들도 DSE에는 별 효력이 없다-Runtime overhead와 code size가 큰 Nested virtualization만 효력이 있음.
+
+
+
+## 소스 코드 레벨에서 난독화한 예제 - miniC의 확장
+
+난독화 전
+```
+int sum(int a, int b) {
+    return a+b;
+}
+
+int sub(int a, int b) {
+    return sum(a, -b);
+}
+void main() {
+    int a = 3;
+    int b = 5;
+    int c = 0;
+    _print(sum(a,b));
+    _print(sub(a,b));
+    _print(sub(sum(a,b),2));
+}
+```
+
+난독화 후
+
+{% highlight C %}
+int sum(int a, int b)
+{
+    int temp_a = 0;
+    int temp_b = 0;
+    for (int i = 0; i < a; i++)
+	temp_a++;
+    for (int i = 0; i < b; i++)
+	temp_b++;
+    if (0) { 
+	temp_a + temp_b = 0;
+    }
+    return temp_a + temp_b;
+}
+
+int sub(int a, int b)
+{
+    int temp_a = 0;
+    int temp_b = 0;
+    for (int i = 0; i < a; i++)
+	temp_a++;
+    for (int i = 0; i < b; i++)
+	temp_b++;
+    if (0) { 
+        sum(temp_a, -temp_b) = 0;
+    }
+    return sum(temp_a, -temp_b);
+}
+
+void main()
+{
+    int a = 3;
+    int b = 5;
+    int c = 0;
+    _print(sum(a, b));
+    _print(sub(a, b));
+    _print(sub(sum(a, b), 2));
+}
+{% endhighlight %}
+
+
