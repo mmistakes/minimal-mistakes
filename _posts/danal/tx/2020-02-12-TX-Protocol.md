@@ -58,7 +58,6 @@ Session Table에 보관하는 주기를 조절함으로써 세션에 대한 데�
 ## 휴대폰 결제
 
 ### CP 인증 (가맹점 인증)
----
 
 ``` javascript
 importScript(component/LOG.js);
@@ -97,7 +96,6 @@ importScript(component/AUTH.js);
 ```
 
 ### 사용자 인증 & OTP 전송
----
 
 ``` javascript
 importClass(packages.kr.co.danal.rnd.tuna.db.directory.GlobalDirectory);
@@ -166,9 +164,10 @@ function createOTP(digit){
 ### 결제
 
 ## 휴대폰 결제 취소
+---
 
 ### 결제 취소
----
+
 
 ### 결제 환불
----
+
