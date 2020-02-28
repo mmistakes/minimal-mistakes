@@ -1,4 +1,3 @@
-{% if jekyll.environment == 'production' and site.analytics.provider %}
 
 {% case site.analytics.provider %}
 {% when "google" %}
@@ -10,5 +9,3 @@
 {% when "custom" %}
 {% include /analytics-providers/custom.html %}
 {% endcase %}
-
-{% endif %}
