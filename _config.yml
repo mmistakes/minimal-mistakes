@@ -22,9 +22,9 @@ subtitle                 : # site tagline that appears below site title in masth
 name                     : "Your Name"
 description              : "An amazing website."
 url                      : "https://speedwp.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/minimal-mistakes"
-repository               : # GitHub username/repo-name e.g. 
-# path of fallback teaser image, e.g. "/assets/images/500x300.png"
+baseurl                  : "/minimal-mistakes" 
+repository               : "SpeedWP/minimal-mistakes"
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/88x88.png"
 masthead_title           : "no title"
   breadcrumbs            : true # false (default)
