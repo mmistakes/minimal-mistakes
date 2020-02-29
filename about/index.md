@@ -42,7 +42,7 @@ __More information:__
 
 # Anna Marzecova
 
-<img src="/images/profile_pic_anna.png" alt="Anna Marzecova" width="33%" align="left" hspace="20" vspace="20">
+<img src="/images/profile_pic_anna.jpg" alt="Anna Marzecova" width="33%" align="left" hspace="20" vspace="20">
 
 I am interested in neurocognitive and neuromodulatory mechanisms of attention and decision-making under uncertainty. 
 In the current project, I explore how Bayesian estimates about uncertainty guide attention using computational modelling in combination with electroencephalography and pupillometry. 
