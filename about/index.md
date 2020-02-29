@@ -42,7 +42,18 @@ __More information:__
 
 # Anna Marzecova
 
-Information will be added soon.
+<img src="/images/profile_pic_anna.png" alt="Anna Marzecova" width="33%" align="left" hspace="20" vspace="20">
+
+I am interested in neurocognitive and neuromodulatory mechanisms of attention and decision-making under uncertainty. 
+In the current project, I explore how Bayesian estimates about uncertainty guide attention using computational modelling in combination with electroencephalography and pupillometry. 
+
+My research is supported by an FWO (Research Foundation – Flanders) post-doctoral fellowship.
+
+__More information:__  
+* Personal website: [www.marzecova.com](http://www.marzecova.com/)
+* Twitter: [@marzecova](https://twitter.com/marzecova)
+* Email: [Anna.Marzecova@UGent.be](mailto:Anna.Marzecova@UGent.be)
+
 
 # Cristian Buc Calderon
 
