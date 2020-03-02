@@ -3,13 +3,35 @@
     <h4 class="page__share-title">{{ site.data.ui-text[site.locale].share_on_label | default: "Share on" }}</h4>
   {% endif %}
 
+  {% if site.share_buttons.twitter == nil or site.share_buttons.twitter %}
+
   <a href="https://twitter.com/intent/tweet?{% if site.twitter.username %}via={{ site.twitter.username | url_encode }}&{% endif %}text={{ page.title | url_encode }}%20{{ page.url | absolute_url | url_encode }}" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  {% endif %}
+
+  {% if site.share_buttons.facebook == nil or site.share_buttons.facebook %}
 
   <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
+  {% endif %}
+
+  {% if site.share_buttons.linkedin == nil or site.share_buttons.linkedin %}
+
   <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url | url_encode }}" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 
-  <a href="" class="btn btn--mastodon" onclick="shareMastodon();" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Mastodon"><i class="fab fa-fw fa-mastodon" aria-hidden="true"></i><span> Mastodon</a>
+  {% endif %}
+
+  {% if site.share_buttons.reddit %}
+
+ <a href="https://www.reddit.com/submit?url={{ page.url | absolute_url | url_encode }}&title={{ page.title }}" class="btn btn--reddit" title="{{ site.data.ui-text[site.locale].share_on_label }} Reddit"><i class="fab fa-fw fa-reddit" aria-hidden="true"></i><span> Reddit</span></a>
+
+  {% endif %}
+
+  {% if site.share_buttons.mastodon %}
+
+ <a href="" class="btn btn--mastodon" onclick="shareMastodon();" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Mastodon"><i class="fab fa-fw fa-mastodon" aria-hidden="true"></i><span> Mastodon</a>
+
+  {% endif %}
 
 <script>
 // https://www.256kilobytes.com/content/show/4812/how-to-make-a-share-on-mastodon-button-in-pure-vanilla-javascript
@@ -44,10 +66,10 @@ function shareMastodon() {
                	localStorage['mastodon_instance'] = instance;
 
                	// Hashtags
-               	hashtags     =  "#stafwag";
+                hashtags     =  "{{ site.mastodon.hashtags }} ";
 
                	// Tagging users, such as offical accounts or the author of the post
-               	var author   = "@stafwag@mastodon.social";
+                var author   = "{{ site.mastodon.username }}";
 
                	// Create the Share URL
                	// https://someinstance.tld/share?text=URL%20encoded%20text
