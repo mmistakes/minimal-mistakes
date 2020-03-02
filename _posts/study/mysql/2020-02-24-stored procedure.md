@@ -20,9 +20,6 @@ last_modified_at: 2020-02-24T10:00:00 # 마지막 변경일
 
 ---
 
-<!-- intro -->
-{% include intro %}
-
 # STORED PROCEDURE 확인
 ---
 
