@@ -18,6 +18,23 @@
   },
   {
     "image_path": null,
+    "alt": "3. Schulkonferenz ",
+    "title": "3. Schulkonferenz ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=M3IzNW1pbWljaTVkMWF2cWFodTVwdWY0aWsgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2020-03-05T15:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2020-03-05T17:00:00+01:00"
+    },
+    "created": "2020-03-02T15:11:59.000Z",
+    "updated": "2020-03-02T15:11:59.533Z"
+  },
+  {
+    "image_path": null,
     "alt": "Elternabend A5",
     "title": "Elternabend A5",
     "excerpt": null,
@@ -52,6 +69,23 @@
   },
   {
     "image_path": null,
+    "alt": "Elternabend 4a",
+    "title": "Elternabend 4a",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MWwydWQ1NDAyZjRmYmtmcDYxbnA5ZzM0NGYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2020-03-11T18:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2020-03-11T18:30:00+01:00"
+    },
+    "created": "2020-03-02T08:02:27.000Z",
+    "updated": "2020-03-02T08:02:27.166Z"
+  },
+  {
+    "image_path": null,
     "alt": "Girl´s und Boy´s Day",
     "title": "Girl´s und Boy´s Day",
     "excerpt": null,
@@ -66,39 +100,5 @@
     },
     "created": "2020-01-13T07:27:41.000Z",
     "updated": "2020-01-13T07:27:41.484Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Osterferien",
-    "title": "Osterferien",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MHE5YTRxZG0zbWptZzBrdjFqdmxyajZ0N3AgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2020-04-06",
-      "date_time": null
-    },
-    "end": {
-      "date": "2020-04-18",
-      "date_time": null
-    },
-    "created": "2019-08-22T08:03:10.000Z",
-    "updated": "2019-08-22T08:03:10.314Z"
-  },
-  {
-    "image_path": null,
-    "alt": "4. GEV um 18:30 Uhr",
-    "title": "4. GEV um 18:30 Uhr",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=N2xnanRpYmk0N2hidGZqODY0cjBwNHA2NGogaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2020-05-14T18:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2020-05-14T20:00:00+02:00"
-    },
-    "created": "2019-10-25T12:53:36.000Z",
-    "updated": "2019-10-25T12:53:36.451Z"
   }
 ]
