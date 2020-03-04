@@ -1,0 +1,9 @@
+_id: 51aa9540-174b-11e8-b61b-7b344215416b
+message: "No there isn't a native way of doing this. The theme and Jekyll core have no ability to transform your assets.\r\n\r\nYou'll need to manually do it, use a task runner like Gulp or Grunt, or a Jekyll plugin to resize the image for you."
+name: Michael Rose
+email: 1ce71bc10b86565464b612093d89707e
+url: 'https://mademistakes.com'
+hidden: ''
+date: '2018-02-21T21:08:10.409Z'
+approved: false
+title: Comment
