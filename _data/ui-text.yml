@@ -1608,6 +1608,52 @@ ca: &DEFAULT_CA
 ca-ES:
   <<: *DEFAULT_CA
   
+# Irish (Gaeilge)
+# --------------
+ga: &DEFAULT_GA
+  skip_links                 : "Léim naisc"
+  skip_primary_nav           : "Léim chuig príomh naiscleanúint"
+  skip_content               : "Léim chuig inneachar"
+  skip_footer                : "Léim chuig buntásc"
+  page                       : "Leathanach"
+  pagination_previous        : "Leathanach roimhe sin"
+  pagination_next            : "Céad leathanach eile"
+  breadcrumb_home_label      : "Baile"
+  breadcrumb_separator       : "/"
+  menu_label                 : "Scorán roghchlár"
+  search_label               : "Scorán cuardach"
+  toc_label                  : "Ar an leathanach seo"
+  ext_link_label             : "Nasc díreach"
+  less_than                  : "níos lú na"
+  minute_read                : "a léamh"
+  share_on_label             : "Roinn ar"
+  meta_label                 :
+  tags_label                 : "Clibeanna:"
+  categories_label           : "Catagoírí:"
+  date_label                 : "Nuashonraíodh:"
+  comments_label             : "Fág trácht"
+  comments_title             : "Tráchtanna"
+  more_label                 : "Foghlaim níos mó"
+  follow_label               : "Lean:"
+  feed_label                 : "Feed"
+  powered_by                 : "Ag fáil cumhacht as"
+  website_label              : "Suíomh gréasáin"
+  email_label                : "R-phost"
+  recent_posts               : "Postálacha le deanaí"
+  comment_form_comment_label : "Trácht"
+  comment_form_name_label    : "Ainm"
+  comment_form_email_label   : "Ríomhsheoladh"
+  comment_form_website_label : "Suíomh gréasáin (roghnach)"
+  comment_btn_submit         : "Cuir isteach trácht"
+  comment_btn_submitted      : "Curtha isteach"
+  loading_label              : "Lódáil..."
+  search_label_text          : "Cuir do chuardach isteach..."
+  search_placeholder_text    : "Cuir do chuardach isteach..."
+  results_found              : "Torthaí aimsithe"
+  back_to_top                : "Ar ais go barr"
+ga-IE:
+  <<: *DEFAULT_GA
+
 # Another locale
 # --------------
 #
