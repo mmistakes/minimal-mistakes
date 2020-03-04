@@ -28,10 +28,8 @@ times to do so. I’m still learning, every single day, and I enjoy sharing my e
 
 If you're interested, read my [thoughts on attending Grace Hopper Celebration 2018](/words/gracehopper/).
 
-**_Coming soon!_** Thoughts on allyship; how to build awareness; discussing allyship
-with others; and suggestions for practicing allyship and advocacy. These will be from my presentation
+The following slides, including speaker notes, are from my presentation
 at [AnitaB.org](https://anitab.org/)'s [Male Ally Summit 2019](https://community.anitab.org/event/male-ally-summit-2019/).
-The following are my slides, including speaker notes.
 
 **_Feedback:_** If you attended my presentation, I would greatly appreciate your anonymous feedback ([click here](https://forms.gle/eQUfNNNsDSexYWqF7) to go to the form).
 
