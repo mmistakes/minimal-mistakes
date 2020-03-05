@@ -5,14 +5,12 @@
 
   {% if author.avatar %}
     <div class="author__avatar">
-			{% assign author_src = author.avatar | relative_url %}
-
       {% if author.home %}
         <a href="{{ author.home | relative_url }}">
-          <img src="{{ author_src }}" alt="{{ author.name }}" itemprop="image">
+          <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" itemprop="image">
         </a>
       {% else %}
-        <img src="{{ author_src }}" alt="{{ author.name }}" itemprop="image">
+        <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" itemprop="image">
       {% endif %}
     </div>
   {% endif %}
