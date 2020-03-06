@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2020-03-06T15:38:31-05:00
+last_modified_at: 2020-03-06T15:42:34-05:00
 toc: false
 ---
 
@@ -23,6 +23,7 @@ toc: false
 
 ### Bug Fixes
 
+- Fix documentation around using `bundle info` command. [#2425](https://github.com/mmistakes/minimal-mistakes/pull/2425)
 - Fix rake vulnerability in `.gemspec` file.
 - Fix Staticman v2 comment submission. [#2402](https://github.com/mmistakes/minimal-mistakes/pull/2402)
 - Fix repeated site base path for masthead logo. [#2385](https://github.com/mmistakes/minimal-mistakes/pull/2385)
