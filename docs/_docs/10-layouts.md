@@ -7,7 +7,7 @@ single_layout_gallery:
     alt: "single layout with header example"
   - image_path: /assets/images/mm-layout-single-meta.png
     alt: "single layout with comments and related posts"
-last_modified_at: 2020-01-07T13:14:09-05:00
+last_modified_at: 2020-03-06T15:47:42-05:00
 toc: true
 toc_label: "Included Layouts"
 toc_icon: "columns"
@@ -733,8 +733,8 @@ Under the `$social` color map in `assets/_scss/_buttons.scss` simply add a name 
 $social:
 (facebook, $facebook-color),
 (twitter, $twitter-color),
-(linkedin, $linkedin-color);
-(reddit, #ff4500;)
+(linkedin, $linkedin-color),
+(reddit, #ff4500);
 ```
 
 **ProTip:** For bonus points you can add it as a Sass `$variable` that you set in `_variables.scss` like the other ["brand" colors](http://brandcolors.net/).
