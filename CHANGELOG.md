@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+- Use `relative_url` and `absolute_url` filters where possible. [#2387](https://github.com/mmistakes/minimal-mistakes/pull/2387)
 - Improve headline hierarchy and add Sass specific variables `$h-size-x`. [#2423](https://github.com/mmistakes/minimal-mistakes/issues/2423)
 - Improve accessibility of `default` skin by increasing color contrast of text and links.
 - Hide posts with `hidden: true` YAML front matter from appearing in listings. [#2345](https://github.com/mmistakes/minimal-mistakes/pull/2345)
