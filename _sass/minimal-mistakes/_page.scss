@@ -65,6 +65,11 @@ body {
       width: 100%;
       clear: both;
     }
+
+    h1 {
+      font-size: 1.4rem;
+    }
+
   }
 }
 
@@ -75,6 +80,7 @@ body {
   & + .page__meta {
     margin-top: -0.5em;
   }
+
 }
 
 .page__lead {
@@ -93,7 +99,7 @@ body {
 			position: relative;
 			left: 0.5em;
 			opacity: 0;
-			font-size: 0.8em;
+			font-size: 0.6em;
 			-webkit-transition: opacity 0.2s ease-in-out 0.1s;
 			-moz-transition: opacity 0.2s ease-in-out 0.1s;
 			-o-transition: opacity 0.2s ease-in-out 0.1s;
@@ -108,7 +114,7 @@ body {
   p,
   li,
   dl {
-    font-size: 1em;
+    font-size: 0.9rem;
   }
 
   /* paragraph indents */
@@ -205,10 +211,10 @@ body {
     }
 
     .page__title {
-      font-size: $type-size-2;
+      font-size: $type-size-3;
 
       @include breakpoint($small) {
-        font-size: $type-size-1;
+        font-size: $type-size-3;
       }
     }
   }
@@ -295,7 +301,8 @@ body {
 
 .page__meta-title {
   margin-bottom: 10px;
-  font-size: $type-size-6;
+  //font-size: $type-size-6;
+  font-size: 1em;
   text-transform: uppercase;
 }
 
@@ -338,6 +345,11 @@ body {
 
   .archive__item-title {
     margin-top: 0;
+  }
+
+  .archive__item-title {
+    margin-top: 0.5em;
+    font-size: $type-size-7;
   }
 
   .archive__subtitle {

@@ -301,7 +301,7 @@ compress_html:
 
 # YAML Front Matter Defaults
 defaults:
-  # _posts
+  # _posts #TODO pages and #TODO understand collections
   - scope:
       path: ""
       type: posts

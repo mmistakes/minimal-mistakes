@@ -29,12 +29,17 @@
   a[rel="permalink"] {
     position: static;
   }
+
+  h2 {
+    //border: 1px solid red;
+    font-size: 1rem;
+  }
 }
 
 .archive__subtitle {
   margin: 1.414em 0 0;
   padding-bottom: 0.5em;
-  font-size: $type-size-5;
+  font-size: $type-size-4;
   color: $muted-text-color;
   border-bottom: 1px solid $border-color;
 
@@ -203,7 +208,7 @@
 
   .archive__item-title {
     margin-top: 0.5em;
-    font-size: $type-size-5;
+    font-size: $type-size-7;
   }
 
   .archive__item-excerpt {
