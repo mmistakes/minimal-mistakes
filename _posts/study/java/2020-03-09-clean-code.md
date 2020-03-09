@@ -1,5 +1,5 @@
 ---
-title: Clean Code \: 클린 코드
+title: Clean Code - 클린 코드
 categories:  Code
 
 tags:
