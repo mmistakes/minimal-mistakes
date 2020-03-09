@@ -63,21 +63,21 @@ $(document).ready(function() {
   $btn.on("click", function() {
     $hlinks.toggleClass("hidden");
     $(this).toggleClass("close");
-    clearTimeout(timer);
+    // clearTimeout(timer);
   });
 
-  $hlinks
-    .on("mouseleave", function() {
-      // Mouse has left, start the timer
-      timer = setTimeout(function() {
-        $hlinks.addClass("hidden");
-        $btn.toggleClass("close");
-      }, closingTime);
-    })
-    .on("mouseenter", function() {
-      // Mouse is back, cancel the timer
-      clearTimeout(timer);
-    });
+  // $hlinks
+  //   .on("mouseleave", function() {
+  //     // Mouse has left, start the timer
+  //     timer = setTimeout(function() {
+  //       $hlinks.addClass("hidden");
+  //       $btn.toggleClass("close");
+  //     }, closingTime);
+  //   })
+  //   .on("mouseenter", function() {
+  //     // Mouse is back, cancel the timer
+  //     clearTimeout(timer);
+  //   });
 
   check();
 });
