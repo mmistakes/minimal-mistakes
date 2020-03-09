@@ -1,5 +1,5 @@
 ---
-title: Clean Code : 클린 코드
+title: Clean Code \: 클린 코드
 categories:  Code
 
 tags:
@@ -83,7 +83,8 @@ HolyHandGrenade( 가상의 무기(수류탄) ) 보다는 DeleteItems가 낫다.
 
 # Reference
 
-* [web.xml 설정 내용, 역할 및 간단한 예시 이해하기](https://gmlwjd9405.github.io/2018/10/29/web-application-structure.html)
+* 
+* ["클린 코드를 다시 읽고"를 읽고](https://brunch.co.kr/@cleancode/19)
 
 
 
