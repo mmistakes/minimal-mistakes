@@ -1,3 +1,9 @@
+## Unreleased
+
+### Enhancements
+
+- Update smooth-scroll.js to `v16.1.2`. [#2430](https://github.com/mmistakes/minimal-mistakes/issues/2430)
+
 ## [4.19.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.19.0)
 
 ### Enhancements
