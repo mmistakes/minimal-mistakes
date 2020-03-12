@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Elternabend 4a",
-    "title": "Elternabend 4a",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MWwydWQ1NDAyZjRmYmtmcDYxbnA5ZzM0NGYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2020-03-11T18:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2020-03-11T18:30:00+01:00"
-    },
-    "created": "2020-03-02T08:02:27.000Z",
-    "updated": "2020-03-02T08:02:27.166Z"
-  },
-  {
-    "image_path": null,
     "alt": "Girl´s und Boy´s Day",
     "title": "Girl´s und Boy´s Day",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2020-03-02T15:15:15.000Z",
     "updated": "2020-03-02T15:15:15.822Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Vera 3 Deutsch Lesen",
+    "title": "Vera 3 Deutsch Lesen",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NGNuczBnOWh1b3Y4czVmc3VmdmhrcTRkcTAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2020-05-12",
+      "date_time": null
+    },
+    "end": {
+      "date": "2020-05-13",
+      "date_time": null
+    },
+    "created": "2020-03-03T12:41:33.000Z",
+    "updated": "2020-03-03T12:41:33.079Z"
   }
 ]
