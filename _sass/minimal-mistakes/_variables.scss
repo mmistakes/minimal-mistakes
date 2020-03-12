@@ -32,8 +32,8 @@ $garamond: Garamond, serif !default;
 $global-font-family: $sans-serif !default;
 $header-font-family: $sans-serif !default;
 $caption-font-family: $serif !default;
-$font-family-main: 'Nanum Gothic', sans-serif; // 본문의 폰트
-$font-family-headings: 'Nanum Gothic', sans-serif; // 타이틀 폰트
+$font-family-main: 'Nanum Gothic', !default; // 본문의 폰트
+$font-family-headings: 'Nanum Gothic', !default; // 타이틀 폰트
 
 /* type scale */
 $type-size-1: 2.441em !default; // ~39.056px
