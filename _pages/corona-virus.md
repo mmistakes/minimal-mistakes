@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Corona-Virus"
-permalink: /news/corona-virus
+permalink: /news/corona-virus/
 author_profile: false
 excerpt: "Alles Wichtige über den Corona-Virus und was es für die Grundschule am Brandwerder bedeutet."
 modified: 2020-03-13T11:00:00+01:00
