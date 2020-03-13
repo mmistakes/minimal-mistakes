@@ -50,6 +50,20 @@
     text-decoration: inherit;
   }
 
+  a span
+  {
+      text-decoration: inherit;
+  }
+
+  a[href] {
+    color: #955904;
+    h1 { text-decoration: underline; }
+  }
+
+  a[href]:hover {
+    color: #f89406;
+  }
+
   transform: rotate(2deg);
   @include breakpoint($small) {
     transform: rotate(2deg);
