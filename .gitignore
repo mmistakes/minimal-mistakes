@@ -2,6 +2,9 @@
 *~
 *.sw[p_]
 
+renewyourmind
+renewyourmind.pub
+
 # Sublime Text
 *.sublime-project
 *.sublime-workspace
