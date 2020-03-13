@@ -4,12 +4,44 @@ title: "Corona-Virus"
 permalink: /news/corona-virus/
 author_profile: false
 excerpt: "Alles Wichtige über den Corona-Virus und was es für die Grundschule am Brandwerder bedeutet."
-modified: 2020-03-13T11:00:00+01:00
+modified: 2020-03-13T12:30:00+01:00
 header:
   overlay_color: "#fbd49d"
   overlay_image:
 sidebar:
   nav: ''
+---
+
+13.03.2020 12:30 Uhr
+
+### Schulschließung ab Dienstag, 17.03.2020 bis Freitag, 17.04.2020
+
+Liebe Eltern,
+
+nun ist es offiziell.
+
+Ab kommenden Dienstag, 17.03.2020 wird die Schule bis zum Ende der Osterferien (Freitag, 17.04.2020) geschlossen.
+
+Wir sehen uns also alle noch einmal planmäßig am Montag (16.03.2020).
+
+Ebenfalls am Montag werden die Lehrkäfte Ihrem Kind Arbeitspläne mitgeben und diese auch an die Elternvertreter*innen Ihrer Klasse senden. Die Lehrerinnen und Lehrer sind weiterhin per Dienst-E-Mail zu erreichen.
+
+Für Kinder, deren Eltern Pflegekräfte, Ärztinnen und Ärzte, Bedienstete der Polizei oder Feuerwehr sind, wird eine Notbetreuung organisiert. Weiteres erfahren Sie am Montag per E-Mail und auf der Homepage.
+
+Falls Sie zu dieser Berufsgruppe gehören, teilen Sie uns ab jetzt bis Montag bitte verbindlich mit (sekretariat@brandwerder /
+
+37 70 95 20), ob Sie diese Notbetreuung in Anspruch nehmen werden.
+
+Für Rückfragen stehe ich gern zur Verfügung.
+
+Im Namen aller Kolleginnen und Kollegen bedanke ich mich bei Ihnen für Ihren entspannten, freundlichen Umgang mit dieser sehr herausfordernden Situation.
+
+Achten Sie auf sich und Ihre Familie!
+
+Ihre
+
+Stephanie Lehmann
+
 ---
 
 13.03.2020 10:30 Uhr
