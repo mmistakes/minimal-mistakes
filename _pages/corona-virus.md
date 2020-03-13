@@ -28,7 +28,7 @@ Ebenfalls am Montag werden die Lehrkäfte Ihrem Kind Arbeitspläne mitgeben und 
 
 Für Kinder, deren Eltern Pflegekräfte, Ärztinnen und Ärzte, Bedienstete der Polizei oder Feuerwehr sind, wird eine Notbetreuung organisiert. Weiteres erfahren Sie am Montag per E-Mail und auf der Homepage.
 
-Falls Sie zu dieser Berufsgruppe gehören, teilen Sie uns ab jetzt bis Montag bitte verbindlich mit (sekretariat@brandwerder / 37 70 95 20), ob Sie diese Notbetreuung in Anspruch nehmen werden.
+Falls Sie zu dieser Berufsgruppe gehören, teilen Sie uns ab jetzt bis Montag bitte verbindlich mit ({% include email email='sekretariat@brandwerder.de' %} / (030) 3670952 - 0), ob Sie diese Notbetreuung in Anspruch nehmen werden.
 
 Für Rückfragen stehe ich gern zur Verfügung.
 
