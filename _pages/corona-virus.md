@@ -7,7 +7,7 @@ excerpt: "Alles Wichtige über den Corona-Virus und was es für die Grundschule 
 modified: 2020-03-13T12:30:00+01:00
 header:
   overlay_color: "#fbd49d"
-  overlay_image:
+  overlay_image: /assets/images/angry-corona-virus.svg
 sidebar:
   nav: ''
 ---
