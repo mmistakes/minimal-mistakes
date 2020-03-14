@@ -1,5 +1,5 @@
 ---
-title: Moving to Uquiti UniFi for my Home Network
+title: Moving to Ubiquiti UniFi for my Home Network
 excerpt: How and why I went all in with Ubiquiti UniFi for my home network
 date: 2020-3-14 11:32:00 +0000
 layout: single
@@ -69,7 +69,7 @@ Additional Total: ~$120
 ## My Setup
 
 ### Physical Setup
-{% include figure image_path="/assets/images/ubiquiti_home_setup.png" alt="My Physical Ubiquiti Setup" caption="Diagram of my physical Ubquiti setup - taken from UniFi Controller" %}
+{% include figure image_path="/assets/images/ubiquiti_home_setup.png" alt="My Physical Ubiquiti Setup" caption="Diagram of my physical Ubiquiti setup - taken from UniFi Controller" %}
 
 ### Network Setup
 
@@ -98,7 +98,7 @@ There are several specific things I wanted to prevent/enable that I never could 
  * Forcing all traffic from trusted and IoT through my pihole
 
 ## Conclusion
-I highly recommend the Uquiti UniFi gear for home networks. For me it was worth every additional penny over mesh solutions. And I've already planned my next expansion! (to the porch since their APs are weather resistant)
+I highly recommend the Ubiquiti UniFi gear for home networks. For me it was worth every additional penny over mesh solutions. And I've already planned my next expansion! (to the porch since their APs are weather resistant)
 
 
 ## References
