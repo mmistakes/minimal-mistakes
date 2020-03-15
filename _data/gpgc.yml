@@ -6,6 +6,6 @@ label_name: Post Comments
 label_color: 666666
 github_application:
   client_id: 2cc5094dc45383bda259
-  code_authenticator: https://petlewblogcomments.herokuapp.com/authenticate/
+  code_authenticator: https://petlewcomments.herokuapp.com/authenticate/
   callback_url: https://petlew.com/public/html/gpgc_redirect/index.html
 enable_diagnostics: false
