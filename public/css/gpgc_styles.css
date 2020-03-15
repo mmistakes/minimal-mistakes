@@ -134,6 +134,7 @@
 }
 
 .gpgc-avatar {
+  height: 42px;
   display: inline;
   margin-bottom: 0px;
   margin-right: .4rem;
