@@ -1,0 +1,218 @@
+/*
+ * Comments for GitHub Pages via Liquid/Jekyll
+ *
+ * Copyright 2015 Joe Friedrichsen
+ * Released under the MIT license.
+ *
+ * Learn more at https://github.com/wireddown/ghpages-ghcomments
+ */
+
+/*
+ * Color theme
+ *
+ */
+
+.gpgc-color-theme .gpgc-large-secondary-button,
+.gpgc-color-theme .gpgc-normal-primary-button,
+.gpgc-color-theme .gpgc-tab,
+.gpgc-color-theme .gpgc-tab .selected,
+.gpgc-color-theme .gpgc-new-comment-form-textarea {
+  border: solid 1px #90a959;
+}
+
+.gpgc-color-theme .gpgc-large-secondary-button {
+  color: #90a959;
+}
+
+.gpgc-color-theme .gpgc-normal-primary-button,
+.gpgc-color-theme .gpgc-tab {
+  background-color: #90a959;
+}
+
+/*
+ * Mix-ins
+ *
+ */
+
+.gpgc-hidden {
+  display: none !important;
+}
+
+.gpgc-centered-text {
+  text-align: center;
+}
+
+.gpgc-comments-font {
+  font-size: .8rem;
+}
+
+.gpgc-new-section {
+  margin-top: 3rem !important;
+}
+
+.gpgc-text-button {
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+  cursor: pointer;
+}
+
+/*
+ * Wider display overrides
+ *
+ */
+
+@media (min-width: 410px) {
+  .gpgc-normal-primary-button {
+    float: right;
+    display: inline;
+  }
+
+  .gpgc-tabs {
+    float: right;
+    padding-left: 0px;
+  }
+
+  .gpgc-new-comment-actions {
+    padding: .4rem .4rem 3.2rem !important;
+  }
+}
+
+/*
+ * Classes
+ *
+ */
+
+.gpgc-actions  {
+  overflow: hidden; /* clearfix */
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.gpgc-action {
+  display: block;
+  padding: 1rem;
+}
+
+.gpgc-large-secondary-button {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 14rem;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.gpgc-large-secondary-button:hover {
+  background-color: #f5f5f5;
+}
+
+.gpgc_last_div {
+  padding-top: 12rem;
+}
+
+/*
+ * Comment classes
+ *
+ */
+
+.gpgc-comment {
+  margin-top: .8rem;
+  background-color: #eee;
+  border: solid 1px #eee;
+          border-radius: 0px 0px 24px 24px;
+  -webkit-border-radius: 0px 0px 24px 24px;
+}
+
+.gpgc-comment-header {
+  padding-top: .4rem;
+  padding-right: .4rem;
+  padding-left: .4rem;
+  margin-bottom: .2rem;
+}
+
+.gpgc-avatar {
+  display: inline;
+  margin-bottom: 0px;
+  margin-right: .4rem;
+  vertical-align: baseline;
+  border-radius: 0px;
+}
+
+.gpgc-comment-contents {
+  padding: .4rem .4rem 0 .4rem;
+}
+
+/*
+ * New comment form classes
+ *
+ */
+
+.gpgc-new-comment {
+  min-height: 4rem;
+}
+
+.gpgc-new-comment-form {
+  padding-left: .4rem;
+  padding-right: .4rem;
+}
+
+.gpgc-tabs {
+  margin-top: .4rem;
+  padding-left: 5px;
+}
+
+.gpgc-tab {
+  margin-left: -5px;
+  color: #fff;
+}
+
+.gpgc-tab.selected {
+  background-color: #fff;
+  color: inherit;
+  cursor: auto;
+}
+
+.gpgc-new-comment-form-textarea {
+  font-family: inherit;
+  display: block;
+  width: 100%;
+  min-height: 8rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: .4rem;
+  resize: vertical;
+}
+
+.gpgc-new-comment-actions {
+  padding: 0.4rem 0.4rem 1rem;
+}
+
+.gpgc-normal-primary-button {
+}
+
+.gpgc-normal-primary-button strong {
+ color: #fff;
+ }
+
+button:disabled {
+  border: solid 1px #888 !important;
+  background-color: #aaa !important;
+  cursor: auto !important;
+}
+
+.gpgc-comment-help {
+  padding: .4rem;
+}
+
+.gpgc-help-message {
+}
+
+.gpgc-help-error {
+  padding: .4rem;
+  margin: .4rem;
+  border: solid 2px #ab4642;
+  background-color: #ffeded;
+}
