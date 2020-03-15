@@ -1,77 +1,67 @@
 ---
-title: "Basics of Extreme Learning Machines"
-excerpt: "Why learn weights when you can guess them?"
-categories: [elm, machine learning, neural networks]
-tags: [elm, machine learning, neural networks, pseudoinverse, Moore-Penrose inverse]
+title: "Immutable Data - Idee i techniki programowania funkcyjnego 01"
+excerpt: "Zmiana nie zawsze jest dobra"
+categories: [scala, fp, itpf]
 classes: wide
 ---
+W pracy mam przyjemność pomagać przy rekrutacji, co czasami wiąże się ze sprawdzeniem kawałka kodu napisanego w Scali nadesłanego przez kandydata. Jakość tych rozwiązań jest - oczywiście - na różnym poziomie, ale często przewijają się podobne błędy, szczególnie u osób początkujących. Jednym z nich jest używanie _zmiennych_ (_variables_) oraz _zmiennych struktur danych_ (_mutable data structures_). W tym wpisie zaprezentuję naturalną dla Scali (i innych typowanych języków pozwalających na programowanie funkcyjne) alternatywę. 
 
-> I based my post on [Extreme learning machine: Theory and applications, by Guang-Bin Huang, Qin-Yu Zhu, Chee-Kheong Siew](http://axon.cs.byu.edu/~martinez/classes/678/Presentations/Yao.pdf). That means that we will focus on neural networks with one hidden layer. Further advances have been made - for example using multiple hidden layers. If you are interested in that, you can visit [this site](http://www.ntu.edu.sg/home/egbhuang/). It is definitely worth it. 
+## Zmienna i stała
 
-## What is Extreme Learning Machine?
+Używając Scali możemy określić wartość na dwa podstawowe sposoby `var` oraz `val`. `var` jest skrótem od angielskiego `variable`, dosłownie oznaczającą _zmienną_, `val` natomiast jest skrótem od `value` oznaczającego _wartość_. Zanim przejdziemy dalej, sądzę że należy rozprawić się z pewnym splątaniem tych pojęć.
+ 1. W Scali, kiedy mówię o zmiennej mogę mieć na myśli zarówno `var x: Int` i `val x: Int`. W praktyce, w związku z tym, że praktycznie nigdy nie używam `var` - mam na myśli `val`. Podobnie jest w innych językach typowanych, np. w Javie zmienną nazwę zarówno `int x` jak i `final int x`.
+ 2. W matematyce zmienna oznacza zazwyczaj wielkość, która może przyjmować wartości z określonego zbioru, np. słynny `x`. Zmienną można _ustalić_, czyli określić bardzo konkretną wartość i już się jej trzymać - nazwiemy wtedy ją stałą.
 
-Before we can understand ELMs brief remainder of how Single hidden Layer Feedforward Networks (SLFNs) look like.
+Warto zwrócić uwagę na pewną analogię pomiędzy tymi dwoma konstruktami, szczególnie na określenie _typu_ w Scali oraz idee zbioru w matematyce. 
 
-### Single hidden Layer Feedforward Networks
+### Co to za różnica?
 
-As the name suggests, SLFN is a neural net that has a single hidden layer. What makes them interesting is that they are simple, which makes them easier to understand, imagine, represent and reason about. We will start with a very simple example.
+Słuszne pytanie! Zobaczmy więc jak zachowa się Scala, kiedy będziemy chcieli nadpisać wartość `var` oraz `val`.
+```scala
+scala> var x = 3
+x: Int = 3
 
-![Single layer Feedforward Network](/assets/img/slfn.jpg "SLFN")
+scala> x = 4
+x: Int = 4
 
-There are two _neurons_ in the input layer, three in the hidden layer and one in the output layer. Usually, we are most concerned about the hidden layer and that is why this type of neural network is called _single layer_. By _feedforward_ we mean that data during actual usage (not during training) flows only forward, from left to right. We can represent input to this network as a two dimensional vector $x \in R^{2}, x = [x_{1}, x_{2}]$, hidden layer as a three dimensional vector $l \in R^{3}, l = [l_{1}, l_{2}, l_{3}]$ and output simply as a number $y \in R, y = y_{1}$.
+scala> val y = 3
+y: Int = 3
 
-We will be more interested in connections, which are represented by arrows in the image. Every arrow represents weight of that connection. In order to calculate value $l_{1}$ we need to do the following:
+scala> y = 5
+<console>:12: error: reassignment to val
+       y = 5
+```
+Okazuje się, że do `val` nie można ponownie przypisać wartości. Wydaje mi się, że zasadą, której należy się trzymać jest: **Używaj tylko `val` chyba, że bardzo dobrze wiesz co robisz**. Jest to podejście, które pozwoli Ci szybciej wdrożyć w _jedyną słuszą drogę (JSD)_, tj. programowanie funkcyjne. W mojej ocenie, nie korzystanie z narzędzi jakie Scala daje, tak by sprawnie pisać funkcyjnie jest powodem, żeby w ogóle ze Scali zrezygnować. 
 
-$$l_{1} = g(x_{1} \cdot w_{11} + x_{2} \cdot w_{12} + b_{1})$$
+Oczywiście dobrze byłoby uzasadnić pogląd wyższości `val` nad `var`. W mojej ocenie kluczową zaletą jest _odciążenie mózgu_. Istnieje duże prawdopodobieństwo, że jest to spowodowane moimi umiarkowanymi mocami przerobowymi, natomiast zawsze byłem pełen podziwu dla programistów, którzy są w stanie spamiętać gdzie i kiedy każdy konkretny `var` się zmienia. Pamiętają też, żeby pilnować te wartości w środowisku wielowątkowym. Być może część funkcjonalności jest poprawnie oddelegowana do innej metody, a oni wciąż pamiętają każdą zmianę. Ja niestety takich talentów nie posiadam, więc _uproszczenie_ i _usystematyzowanie_ myślenia o kodzie jest dla mnie wartościowe. 
 
-Let's unpack this equation. $w_{11}, w_{12}$ are aformentioned weights connecting $x_{1}, x_{2}$ to to $l_1$ and $g$ is an [activation function](https://en.wikipedia.org/wiki/Activation_function). If you do not know why bother with an activation function - it helps neural net learn learn complicated dependencies. You can read about this on [this stackexchange post](https://ai.stackexchange.com/questions/5493/what-is-the-purpose-of-an-activation-function-in-neural-networks). What is $b_{1}$? It is a parameter called bias. It "moves" our function in proper direction if needed. My intuition goes as follows: We can have whole family of functions $x^{2} + b$, but in order to precisely identify which one I am talking about I need to pinpoint $b$ parameter which is a bias. In function $x^{2} + 4$, it is 4 that represent the bias. Now, with a little help of matrices we can write equation for _j-th_ sample:
+Możliwość _metodycznego_ i _systematycznego_ myślenia o kodzie jest dla mnie ważna i zwięszka zaufanie do tego co piszę ja oraz osoby, z którymi pracuję. Czytając wtedy kod, wiem, że nie ma gdzieś ukrytej wartości, która można - zazwyczaj w nietrywialnej sytuacji brzegowej - wporwadzić mnie w osłupienie i wydłużyć proces debugowania.
 
-$$
-H_{j} = 
-\begin{bmatrix}
-g(x_{j1} \cdot w_{11} + x_{j2} \cdot w_{12} + b_{1}) & g(x_{j1} \cdot w_{21} + x_{2} \cdot w_{22} + b_{2}) & g(x_{j1} \cdot w_{31} + x_{j2} \cdot w_{32} + b_{3}) \\
-\end{bmatrix} \\
-= 
-\begin{bmatrix}
-g(\boldsymbol{x_{j}w_{1}} + b_{1}) & g(\boldsymbol{x_{j}w_{2}} + b_{2}) & g(\boldsymbol{x_{j}w_{3}} + b_{3}) \\
-\end{bmatrix}
-$$
-Where bold dot mean vector dot product.
+## Co z strukturami danych?
 
-As you can see a connection between layers can be represented by a matrix.
+Jeżeli takie zalety mają poszczególne zmienne, to powinny się również generalizować na struktury danych i rzeczywiście tak jest. W obrębie tego wpisu _struktury danych_ rozumiem głównie klasy tworzone przez programistów, chociaż przenosi się to na "klasycznie" rozumiane struktury danych takie jak listy, mapy, czy drzewa. W tym wypadku zazwyczaj w celach optymalizacyjnych implementacje zawierają jakiś stan, który jednak nie powinien wyciekać do użytkownika API takiej struktury. 
 
-### So what is so extreme?
+Wróćmy do tworzonych przez nas klas oraz typów. Rozważmy uproszczony przykład konta bankowego, które posiada swój numer oraz stan dostępnych środków:
+```
+case class Account(var id: String, var balance: BigDecimal)
+```
+Jeżeli nawet odrobinę Cię nie boli widok takiej deklaracji, to powinno zacząć. Użycie `var` do określenia `id` jest zastanawiające _niezależnie_ od tego z jakiej perspektywy patrzymy na nasz problem. Konto ma swój unikalny identyfikator i po utworzeniu nie powinniśmy móc go zmieniać. 
 
-Now that we understand now SLFN look like we can get back to Extreme Learning Machines. The idea is simple - let's assign a random value from continuous distribution (for people a little bit less math savvy, it's just random), do the same for all values of the $w$ vector. After that, we can directly calculate the value of the matrix representing the second connection, which we will denote as $\hat{\beta}$.
+Można natomiast próbować argumentować użycie `var balance: BigDecimal`. Przecież jak dostaję wypłatę, to nie mam nowego konta z wypłatą, lecz jest to _to samo konto, którego stan jest powiększony o kwotę wypłaty_. Ciężko się z tym nie zgodzić. Należy jednak pamiętać, że nie mamy obowiązku modelować świata w sposób identyczny, mamy tylko przedstawić jego reprezentację. Część osób zaznajomionych z DDD może powiedzieć, że to jest typowy przykład _entity_ i związku z tym należy do pól, które mogą się zmieniać używać zmiennych. W mojej ocenie jest to nadużycie koncepcji _entity_ i nie używanie poprawnie narzędzi języka programowania, które nam dostarcza. 
 
-Woah, that is a lot, so now it is time to unpack it.
+Oczywiście konta po zwiększeniu kwoty nie staje się innym kontem. Jednak z punktu widzenia naszego oprogramowania lepiej będzie, gdy wszystkie pola będą ustalone w momencie tworzenia, a do aktualizacji pól będziemy albo używać odpowienich metod, które będą zwracać _kopię obiektu z zaktualizowanymi wartościami_. W Scali każda `case class`a - a to właśnie ich powinniśmy używać do modelowania danych - ma metodę `copy`, która pozwala wygodnie zaktualizować wartość (są oczywiście jeszcze `lenses`, ale to podejście i temat przedyskutuję w oddzielnym wpisie). Poprawnie zamodelowana klasa `Account` i aktualizacja jej stanu powinna wyglądać następująco:
+```scala
+scala> case class Account(id: String, balance: BigDecimal)
+defined class Account
 
-Few lines above we have declared $H_j$ as a matrix representing hidden connection for a j-th sample. Matrix $H$ will represent hidden connections for all samples. Each **row** of the matrix will represent each sample. J-th label will be represented by $t_{j}$ and the whole vector with all labels will be denoted by $T$. The connection between the hidden and output layer will be denoted by $\hat{\beta}$ - it already represents connection for all the samples. For ELM it is also required that $g$ function is [smooth](https://en.wikipedia.org/wiki/Smoothness), which for example - sigmoid is. Now we can write:
+scala> val acc = Account("id1", 0)
+acc: Account = Account(id1,0)
 
-$$H\hat{\beta} = T$$
+scala> val accAfterPayday = acc.copy(balance = acc.balance + 100)
+accAfterPayday: Account = Account(id1,100)
+```
+Zwróćmy uwagę, że w wypadku pominięcia słowa `var` Scala automatycznie uznaje pola klasy za niezmienne. _Zupełnie jakby chciała nam coś powiedzieć_. Oczywiście używanie _copy_ może wydawać się dość siermiężne i należy używać odpowiednich technik - jak definiowanie dobrze nazwanych funkcji - by kod był siermiężny odrobinę mniej. Jednak zasada mówi **Używaj tylko niezmiennych struktur danych, chyba, że masz bardzo dobry powód by było inaczej**. Z punktu widzenia użytkownika Twojej klasy - najlepiej, żeby API wyglądało jednak jakby było zupełnie _immutable_. 
 
-And as we know H (it is random, but known) all we have to do is solve above matrix equation for $\hat{\beta}$.
+## Podsumowanie
 
-To state it another way, we want to ensure that:
-
-$$\Vert H\hat{\beta} - T = 0\Vert$$
-
-A more math-savvy person may see a problem with that approach. What if we have more samples then hidden neurons? Then we will have more equations than free variables, making this equation impossible to solve explicitly.
-
-### Enter the Moore–Penrose inverse
-
-To tackle the above problem we can use Moore-Penrose inverse. It is a generalization of an inverse, sometimes called a pseudoinverse. There is a decent [wiki article](https://en.wikipedia.org/wiki/Moore%E2%80%93Penrose_inverse) on this topic.
-
-Moore-Penrose inverse provide _least squares_ solution that also has minimal norm! That is exactly what we wanted. 
-
-Now, we can easily describe our algorithm:
-
-1. Assign random values to hidden weights and hidden biases
-2. Calculate the value of $H$
-3. Solve equation $H\hat{\beta} = T$ for $\hat{\beta}$
-
-After dabbling ourselves a little bit in math, we should implement ELM. We will try to classify hand-written digit on MNIST dataset.
-
-## Sample Implementation on MNIST dataset
-
-Jupyter notebook is available [here](https://github.com/navaro1/navaro1.github.io/blob/master/_resources/Extreme%20Learning%20Machine.ipynb)
+Temat ten dla kogoś, kto pracował ze Scalą jest oczywiście dość podstawowy. Jednak widzę, że osoby przychodzące ze świata javascriptu, php i innych języków często właśnie wten sposób próbują rozwiązywać problemy. W mojej ocenie - o ile na początku irytujące - trzymanie się dwóch wytłuszczonych "zasad", które przytoczyłem pozwoli na pisanie kodu, który będzie odrobinę łatwiejszy w utrzymaniu, czytelniejszy oraz - jeżeli dopiero zaczynasz przygodę ze Scalą/FP - zadba o szybsze postępy i wykluczy pewne, zazwyczaj niezdrowe, nawyki.
