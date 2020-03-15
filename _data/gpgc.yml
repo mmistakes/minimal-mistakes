@@ -8,4 +8,4 @@ github_application:
   client_id: 2cc5094dc45383bda259
   code_authenticator: https://petlewcomments.herokuapp.com/authenticate/
   callback_url: https://petlew.com/public/html/gpgc_redirect/index.html
-enable_diagnostics: false
+enable_diagnostics: true
