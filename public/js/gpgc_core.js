@@ -220,7 +220,7 @@ function loginToGitHub() {
   StateChallenge = challengeArray[0].toString() + challengeArray[1].toString();
   var data = {
     "client_id": gpgc.github_application_client_id,
-    "scope": "repo",
+    "scope": "public_repo",
     "state": StateChallenge,
     "redirect_uri": gpgc.github_application_login_redirect_url
   };
