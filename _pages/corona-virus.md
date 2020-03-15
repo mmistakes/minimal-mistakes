@@ -30,9 +30,9 @@ Bitte rufen Sie hierfür regelmäßig Ihre E-Mails ab und schauen Sie auf unsere
 Bezüglich der Notbetreuung für Kinder finden Sie hier weitere Informationen
 (Stand 15.03.2020):
 
-https://www.berlin.de/sen/bjf/coronavirus/aktuelles/
+[https://www.berlin.de/sen/bjf/coronavirus/aktuelles/](https://www.berlin.de/sen/bjf/coronavirus/aktuelles/)
 
-https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/pressemitteilung.906919.php
+[https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/pressemitteilung.906919.php](https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/pressemitteilung.906919.php)
 
 Ich bin mir sicher, dass wir als Brandwerder-Gemeinschaft diese schwierige Zeit meistern werden. Vielen Dank für Ihre Unterstützung!
 
