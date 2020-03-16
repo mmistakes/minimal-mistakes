@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+- Update onchange and uglify-js dependencies.
 - Update smooth-scroll.js to `v16.1.2`. [#2430](https://github.com/mmistakes/minimal-mistakes/issues/2430)
 
 ### Bug Fixes
