@@ -242,6 +242,7 @@
 
   &.is--visible {
     display: block;
+		z-index: 1;
   }
 
   @include breakpoint($large) {
