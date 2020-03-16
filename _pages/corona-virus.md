@@ -16,7 +16,7 @@ sidebar:
 
 ### Notbetreuung: berechtigte Personen
 
-Berechtigte Eltern sollten bitte morgen früh in die Schule kommen und die Betreuungszeiten beantragen.
+Berechtigte Eltern sollten bitte morgen (17.03.2020) früh in die Schule kommen und die Betreuungszeiten beantragen.
 
 Anspruchsberechtigte Berufsgruppen für Kita- und Schulnotversorgung
 * Polizei, Feuerwehr und Hilfsorganisationen
