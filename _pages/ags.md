@@ -7,7 +7,7 @@ excerpt: "Alles Wichtige über die Arbeitsgemeinschaften (AGs) an der Brandwerde
 modified: 2019-07-13:34:00+01:00
 header:
   overlay_color: "#fff"
-  overlay_image: /assets/images/feature-ags.jpg
+  overlay_image: /assets/images/feature-ags.small.jpg
 sidebar:
   nav: 'ags'
 ---
