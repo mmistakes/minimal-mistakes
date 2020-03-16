@@ -29,25 +29,32 @@
   <defs
      id="defs198" />
   <sodipodi:namedview
-     pagecolor="#fbd49d"
+     pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
      gridtolerance="10"
      guidetolerance="10"
-     inkscape:pageopacity="1"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="2556"
      inkscape:window-height="1384"
      id="namedview196"
      showgrid="false"
-     inkscape:zoom="0.47658474"
-     inkscape:cx="-1014.4941"
-     inkscape:cy="247.595"
+     inkscape:zoom="1.3479852"
+     inkscape:cx="368.53308"
+     inkscape:cy="349.65085"
      inkscape:window-x="0"
      inkscape:window-y="26"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg194" />
+  <rect
+     style="opacity:1;fill:#fbd49d;fill-opacity:1;stroke:none;stroke-width:19.28481674;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:6.30000019;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+     id="rect4839"
+     width="800"
+     height="600"
+     x="1.0978185e-07"
+     y="-1.5258789e-05" />
   <g
      transform="matrix(1.211864,0,0,1.211864,-149.3417,-1421.1003)"
      id="g192">
