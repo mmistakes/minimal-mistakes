@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2020-03-11T13:13:31-04:00
+last_modified_at: 2020-03-16T22:21:25+08:00
 toc: false
 ---
 
@@ -14,6 +14,10 @@ toc: false
 ### Enhancements
 
 - Update smooth-scroll.js to `v16.1.2`. [#2430](https://github.com/mmistakes/minimal-mistakes/issues/2430)
+
+### Bug Fixes
+
+- Fix "Author profile links not working on mobile" [#2440](https://github.com/mmistakes/minimal-mistakes/issues/2440) [#2441](https://github.com/mmistakes/minimal-mistakes/pull/2441)
 
 ## [4.19.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.19.0)
 

@@ -4,6 +4,10 @@
 
 - Update smooth-scroll.js to `v16.1.2`. [#2430](https://github.com/mmistakes/minimal-mistakes/issues/2430)
 
+### Bug Fixes
+
+- Fix "Author profile links not working on mobile" [#2440](https://github.com/mmistakes/minimal-mistakes/issues/2440) [#2441](https://github.com/mmistakes/minimal-mistakes/pull/2441)
+
 ## [4.19.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.19.0)
 
 ### Enhancements
