@@ -1,11 +1,17 @@
 {% if site.resume.summary %}
 <section class="section summary-section">
 
-  <h2 class="section-title"><span class="icon-holder"><i class="fas fa-user-tie"></i></span>Career Profile</h2>
+  <h2 class="section-title">
+    <span class="fa-layers fa-fw fa-lg">
+      <i class="fas fa-circle fa-lg"></i>
+      <i class="fa-inverse fas fa-user-tie fa-lg" data-fa-transform="shrink-8"></i>
+    </span>
+    Career Profile
+  </h2>
 
     <div class="summary">
       <p>{{ site.resume.summary }}</p>
     </div><!--//summary-->
-    
+
 </section><!--//section-->
 {% endif %}

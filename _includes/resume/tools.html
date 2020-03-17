@@ -1,0 +1,21 @@
+{% if site.data.resume.tools%}
+<section class="skills-section section">
+
+  <h2 class="section-title">
+    <span class="fa-layers fa-fw fa-lg">
+      <i class="fas fa-circle fa-lg"></i>
+      <i class="fa-inverse fas fa-tools fa-lg" data-fa-transform="shrink-8"></i>
+    </span>
+    Tools
+  </h2>
+
+  <div class="tools">
+
+    {% for tool in site.data.resume.tools %}
+    <span class="badge badge-pill badge-primary">{{ tool }}</span>
+    {% endfor %}
+
+  </div>
+
+</section><!--//tools-section-->
+{% endif %}
