@@ -21,6 +21,15 @@
   }
 }
 
+.tools {
+  .badge {
+    font-size: 14px;
+    background: lighten($theme-color, 10%);
+    margin-bottom: 5px;
+    border: none;
+  }
+}
+
 @media print {
   @page {
     margin-left  : 0;
@@ -57,6 +66,12 @@
 
     .level-title {
       font-size : 18px;
+    }
+
+    .tools {
+      .badge {
+        font-size: 16px;
+      }
     }
   }
   .sidebar-wrapper {
