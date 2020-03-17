@@ -275,6 +275,31 @@ $base0e: #bb90e2;
 $base0f: #b49368;
 ```
 
+##### Dracula
+
+![dracula-code-block]({{ '/assets/images/dracula-code-block.jpg' | relative_url }})
+
+```scss
+/* dracula syntax highlighting (base16) */
+/* https://github.com/dracula/base16-dracula-scheme */
+$base00: #282936;
+$base01: #3a3c4e;
+$base02: #4d4f68;
+$base03: #626483;
+$base04: #62d6e8;
+$base05: #e9e9f4;
+$base06: #f1f2f8;
+$base07: #f7f7fb;
+$base08: #ea51b2;
+$base09: #b45bcf;
+$base0a: #00f769;
+$base0b: #ebff87;
+$base0c: #a1efe4;
+$base0d: #62d6e8;
+$base0e: #b45bcf;
+$base0f: #00f769;
+```
+
 ##### Neon
 
 ![neon-code-block]({{ '/assets/images/neon-code-block.jpg' | relative_url }})
