@@ -1,7 +1,7 @@
 ---
 title: "Immutable Data - FP Ladder 01"
 excerpt: "Zmiana nie zawsze jest dobra"
-categories: [scala, fp, itpf]
+categories: [scala, fp, fp-ladder]
 classes: wide
 ---
 W pracy mam przyjemność pomagać przy rekrutacji, co czasami wiąże się ze sprawdzeniem kawałka kodu napisanego w Scali. Jakość tych rozwiązań jest - oczywiście - na różnym poziomie, ale często przewijają się podobne błędy, szczególnie u osób zaczynających przygodę ze Scalą/FP. Jednym z takich błędów jest używanie _zmiennych_ (_variables_) oraz _zmiennych struktur danych_ (_mutable data structures_). W tym wpisie zaprezentuję naturalną dla Scali (i innych typowanych języków pozwalających na programowanie funkcyjne) alternatywę. 
