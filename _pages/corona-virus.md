@@ -14,7 +14,7 @@ sidebar:
 
 16.03.2020 09:45 Uhr
 
-### Notbetreuung: berechtigte Personen
+# Notbetreuung: berechtigte Personen
 
 Berechtigte Eltern sollten bitte morgen (17.03.2020) früh in die Schule kommen und die Betreuungszeiten beantragen.
 
@@ -33,7 +33,7 @@ Anspruchsberechtigte Berufsgruppen für Kita- und Schulnotversorgung
 
 15.03.2020 13:30 Uhr
 
-### Update: Arbeitpläne, Notbetreuung: Berechtigung
+# Update: Arbeitpläne, Notbetreuung: Berechtigung
 
 Liebe Elternvertreterinnen und Elternvertreter,
 liebe Eltern!
@@ -65,7 +65,7 @@ Stephanie Lehmann
 
 13.03.2020 12:30 Uhr
 
-### Schulschließung ab Dienstag, 17.03.2020 bis Freitag, 17.04.2020
+# Schulschließung ab Dienstag, 17.03.2020 bis Freitag, 17.04.2020
 
 Liebe Eltern,
 
@@ -95,7 +95,7 @@ Stephanie Lehmann
 
 13.03.2020 10:30 Uhr
 
-### Informationen zur derzeitigen Situation (Corona-Virus) und Mitteilungskette
+# Informationen zur derzeitigen Situation (Corona-Virus) und Mitteilungskette
 
 Liebe Eltern,
 
@@ -113,7 +113,7 @@ Stephanie Lehmann
 
 12.03.2020
 
-### Bildungssenatorin Scheeres untersagt größere Schulveranstaltungen und alle Klassenfahrten ins Ausland
+# Bildungssenatorin Scheeres untersagt größere Schulveranstaltungen und alle Klassenfahrten ins Ausland
 
 Heute hat die Kultusministerkonferenz ganztägig über den Umgang mit Corona-Infektionen in Bildungseinrichtungen beraten. Auf Basis der dort beschlossenen Empfehlungen hat **Bildungssenatorin Sandra Scheeres** als nächsten Schritt weitere strenge Regelungen für Schulen angeordnet.
 
