@@ -1,7 +1,13 @@
 {% if site.data.resume.projects %}
 <section class="section projects-section">
 
-  <h2 class="section-title"><span class="icon-holder"><i class="fas fa-archive"></i></span>Projects</h2>
+  <h2 class="section-title">
+    <span class="fa-layers fa-fw fa-lg">
+      <i class="fas fa-circle fa-lg"></i>
+      <i class="fa-inverse fas fa-archive fa-lg" data-fa-transform="shrink-8"></i>
+    </span>
+    Projects
+  </h2>
 
   {% for intro in site.data.resume.projects %}
   <div class="intro">

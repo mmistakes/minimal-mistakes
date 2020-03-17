@@ -21,6 +21,22 @@
   }
 }
 
+.section-title {
+  .fa-layers {
+    background-color: white;
+    margin-right: 5px;
+    top: 4px;
+    svg.svg-inline--fa {
+      left: -3px;
+    }
+  }
+  .fa-circle {
+    color: darken($theme-color, 15%);
+  }
+  .fa-inverse {
+    color: white;
+  }
+}
 .tools {
   .badge {
     font-size: 14px;
@@ -40,6 +56,10 @@
 
     .section-title {
       font-size : 30px;
+      .fa-layers {
+        font-size: 25px;
+        top: 1px;
+      }
     }
 
     .summary, .details, .intro, .project-tagline {
