@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+- Add [Dracula](https://draculatheme.com/) Base16 syntax highlighting theme Sass variables to [stylesheets documentation](https://mmistakes.github.io/minimal-mistakes/docs/stylesheets/#syntax-highlighting). [#2438](https://github.com/mmistakes/minimal-mistakes/pull/2438)
 - Update links to `HTTPS` and remove Google+ from configuration documentation. [#2432](https://github.com/mmistakes/minimal-mistakes/pull/2432)
 - Use `first_page_path` from jekyll-paginate-v2 if available. [#2431](https://github.com/mmistakes/minimal-mistakes/pull/2431)
 - Update onchange and uglify-js dependencies.
