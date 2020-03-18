@@ -322,5 +322,5 @@ sidebar:
 </div>
 
 <div id="password">
-Bitte geben Sie das Passwort ein: <input type="text" oninput="if(this.value == 'corona') {document.getElementById('arbeitsplaene').classList.remove('hidden')}" />
+Bitte geben Sie das Passwort ein: <input type="text" oninput="if(this.value.toLowerCase() == 'corona') {document.getElementById('arbeitsplaene').classList.remove('hidden')}" />
 </div>
