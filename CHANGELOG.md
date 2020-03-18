@@ -2,7 +2,7 @@
 
 ### Enhancements
 
-- Open external masthead links in new tab. [#2392](https://github.com/mmistakes/minimal-mistakes/pull/2392)
+- Allow specifying `target` for masthead links. [#2446](https://github.com/mmistakes/minimal-mistakes/pull/2446)
 
 ## [4.19.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.19.1)
 

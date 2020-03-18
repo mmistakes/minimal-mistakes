@@ -30,6 +30,7 @@ main:
     url: /collection-archive/
   - title: "External Link"
     url: https://google.com
+    target: _blank
 ```
 
 Which will give you a responsive masthead similar to this:
@@ -37,6 +38,8 @@ Which will give you a responsive masthead similar to this:
 ![priority plus masthead animation]({{ "/assets/images/mm-priority-plus-masthead.gif" | relative_url }})
 
 Optionally, you can add a `description` key per title in the `main` key. This `description` will show up like a tooltip, when the user hovers over the link on a desktop browser.
+
+You can also add a `target` key per item, which will become the `target` attribute of the link. Using `target: _blank` is a good way to force the link to open in a new tab.
 
 **ProTip:** Put the most important links first so they're always visible and not hidden behind the **menu toggle**.
 {: .notice--info}
