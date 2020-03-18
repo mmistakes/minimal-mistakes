@@ -54,6 +54,35 @@ einfach eine E-Mail. So können wir uns Zeit für Ihr Anliegen nehmen.
 | Hort/Mensa | (030) 3670952 - 31 | {% include email email='hort@brandwerder.de' %} |
 | Insel | (030) 3670952 - 26 | {% include email email='hort@brandwerder.de' %} |
 
+## Lehrer
+
+|   | Dienst E-Mail |
+|---|---|
+| Frau Baerwald-Diedrich | {% include email email='m.baerwald@brandwerder.de' %} |
+| Frau Bartel | {% include email email='y.bartel@brandwerder.de' %} |
+| Frau Beck | {% include email email='c.beck@brandwerder.de' %} |
+| Frau Bingöl | {% include email email='e.bingöl@brandwerder.de' %} |
+| Frau Binner | {% include email email='m.binner@brandwerder.de' %} |
+| Frau Blum | {% include email email='c.blum@brandwerder.de' %} |
+| Frau Coester | {% include email email='a.coester@brandwerder.de' %} |
+| Frau Dähn | {% include email email='s.daehn@brandwerder.de' %} |
+| Frau Dietrich | {% include email email='z.dietrich@brandwerder.de' %} |
+| Frau Esch | {% include email email='t.esch@brandwerder.de' %} |
+| Frau Henkel | {% include email email='a.henkel@brandwerder.de' %} |
+| Frau Kiki | {% include email email='a.kiki@brandwerder.de' %} |
+| Frau Kilinc | {% include email email='i.kilinc@brandwerder.de' %} |
+| Frau Kottwitz | {% include email email='m.kottwitz@brandwerder.de' %} |
+| Frau Krüger | {% include email email='c.krueger@brandwerder.de' %} |
+| Frau Kuhn | {% include email email='b.kuhn@brandwerder.de' %} |
+| Frau Lehmann | {% include email email='s.lehmann@brandwerder.de' %} |
+| Herr Orth | {% include email email='m.orth@brandwerder.de' %} |
+| Herr Radloff | {% include email email='m.radloff@brandwerder.de' %} |
+| Herr Schurwanz | {% include email email='m.schurwanz@brandwerder.de' %} |
+| Frau Stöckmann | {% include email email='m.stoeckmann@brandwerder.de' %} |
+| Frau Stahn | {% include email email='m.stahn@brandwerder.de' %} |
+| Herr Villa | {% include email email='c.villa@brandwerder.de' %} |
+| Herr Wieting | {% include email email='m.wieting@brandwerder.de' %} |
+
 ## Sozialberatung
 {: #sozialberatung}
 
