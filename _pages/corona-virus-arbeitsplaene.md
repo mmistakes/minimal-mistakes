@@ -110,7 +110,6 @@ sidebar:
 > Mathias Wieting
 {: .small-text}
 
-
 | <i class="fa fa-calculator">&nbsp;&nbsp;</i>Mathematik | [Arbeitsplan](/assets/files/corona/5a-Mathe-Arbeitsplan.docx) | {% include email email='m.wieting@brandwerder.de' %} |
 | <i class="fa fa-book">&nbsp;&nbsp;</i>Deutsch          | [Arbeitsplan Buchvorstellung](/assets/files/corona/5a-Deutsch_(Buchvorstellung)-Arbeitsplan.pdf), [Arbeitsplan Rechtschreiben/Grammatik](/assets/files/corona/5a-Deutsch_(Rechtschreiben_Grammatik)-Arbeitsplan.pdf) | {% include email email='m.radloff@brandwerder.de' %} |
 | <i class="fa fa-globe">&nbsp;&nbsp;</i>GeWi            | [Arbeitsplan](/assets/files/corona/5a-GeWi-Arbeitsplan.pdf) | {% include email email='m.radloff@brandwerder.de' %} |
