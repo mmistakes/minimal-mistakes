@@ -67,12 +67,32 @@ trait JsonEncodable[A] {
 ```
 A cóż to za parametr `A`? Naszą klasą typów jest `JsonEncodable` natomiast z punktu widzenia języka programowania będziemy musieli w jakiś sposób pokazać, że dany typ przynależy do klasy `JsonEncodable` - odbędzie się to przez implementację `JsonEncodable`:
 
-```
+```scala
+object Account {
+  implicit val enc: JsonEncodable[Account] = new JsonEncodable {
+    override def toJsonString(account: Account): String = ??? // we do not care about implementation.
+  }
+}
 
 ```
+Teraz żeby zserializować obiekt Account możemy napisać:
+
+```scala
+val account: Account = Account("id", 100)
+val jsonString: String = Account.enc.toJsonString(account)
+```
+
+Możemy pozwolić sobie również tworzenie generycznych funkcji:
+```scala
+def genericToJsonString[A](a: A, ev: JsonEncodable[A]) = ev.toJsonString(a)
+```
+
+### Po co to wszystko?
+
+Pierwszą zaletą jest fakt odseperowania zachowania od definicji danych. Kolejną jest przekazanie części pracy kompilatorowi, funkcja `genericToJsonString[A]` wymaga zaimplementowanego `ev: JsonEncodable[A]` (`ev` jest skrótem od _evidence_). Spójrzmy też na ad-hoc polymorpshizm, brak dostępu do kodu źrodłowego, nie narzucanie ograniczeń na typu
 
 ### No strasznie to brzydkie
 
 ### Podsumowanie implementacji
-#### Dygresja: argumenty domyślne
+
 ## Podsumowanie 
