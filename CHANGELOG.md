@@ -1,3 +1,9 @@
+## Unreleased
+
+### Enhancements
+
+- Open external masthead links in new tab. [#2392](https://github.com/mmistakes/minimal-mistakes/pull/2392)
+
 ## [4.19.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.19.1)
 
 ### Enhancements
@@ -25,7 +31,6 @@
 - Add Irish (Gaeilge) localized UI text strings. [#2422](https://github.com/mmistakes/minimal-mistakes/pull/2422)
 - Remove `box-shadow` on radio and checkbox inputs. [#2398](https://github.com/mmistakes/minimal-mistakes/pull/2398)
 - Bump Jekyll gem dependency to `v3.7`.
-- Open external masthead links in new tab. [#2392](https://github.com/mmistakes/minimal-mistakes/pull/2392)
 
 ### Bug Fixes
 

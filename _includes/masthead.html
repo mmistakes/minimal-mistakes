@@ -15,7 +15,7 @@
           {%- for link in site.data.navigation.main -%}
             <li class="masthead__menu-item">
               <a href="{{ link.url | relative_url }}"
-                {% if link.url contains "://" %}target="_blank"{% endif %}
+                {% if link.target %}target="{{ link.target }}"{% endif %}
                 {% if link.description %}title="{{ link.description }}"{% endif %}>
                 {{ link.title }}
               </a>
