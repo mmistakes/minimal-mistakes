@@ -747,10 +747,9 @@ social:
   name:  # If the user or organization name differs from the site's name
   links:
     - "https://twitter.com/yourTwitter"
-    - "https://facebook.com/yourFacebook"
+    - "https://www.facebook.com/yourFacebook"
     - "https://instagram.com/yourProfile"
     - "https://www.linkedin.com/in/yourprofile"
-    - "https://plus.google.com/your_profile"
 ```
 
 #### Analytics
@@ -935,12 +934,12 @@ The paginator only works on files with name `index.html`. To use pagination in a
 paginate_path: /recent/page:num/
 ```
 
-**Please note:** When using Jekyll's default [pagination plugin](http://jekyllrb.com/docs/pagination/) `paginator.posts` can only be called once. If you're looking for something more powerful that can paginate category, tag, and collection pages I suggest [**jekyll-paginate-v2**](https://github.com/sverrirs/jekyll-paginate-v2).
+**Please note:** When using Jekyll's default [pagination plugin](https://jekyllrb.com/docs/pagination/) `paginator.posts` can only be called once. If you're looking for something more powerful that can paginate category, tag, and collection pages I suggest [**jekyll-paginate-v2**](https://github.com/sverrirs/jekyll-paginate-v2).
 {: .notice--info}
 
 ### Timezone
 
-This sets the timezone environment variable, which Ruby uses to handle time and date creation and manipulation. Any entry from the [IANA Time Zone Database](http://en.wikipedia.org/wiki/List_of_tz_database_time_zones) is valid. The default is the local time zone, as set by your operating system.
+This sets the timezone environment variable, which Ruby uses to handle time and date creation and manipulation. Any entry from the [IANA Time Zone Database](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) is valid. The default is the local time zone, as set by your operating system.
 
 ```yaml
 timezone: America/New_York

@@ -5,23 +5,12 @@
 
   {% if author.avatar %}
     <div class="author__avatar">
-      {% if author.avatar contains "://" %}
-        {% assign author_src = author.avatar %}
-      {% else %}
-        {% assign author_src = author.avatar | relative_url %}
-      {% endif %}
-
       {% if author.home %}
-        {% if author.home contains "://" %}
-          {% assign author_link = author.home %}
-        {% else %}
-          {% assign author_link = author.home | relative_url %}
-        {% endif %}
-        <a href="{{ author_link }}">
-          <img src="{{ author_src }}" alt="{{ author.name }}" itemprop="image">
+        <a href="{{ author.home | relative_url }}">
+          <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" itemprop="image">
         </a>
       {% else %}
-        <img src="{{ author_src }}" alt="{{ author.name }}" itemprop="image">
+        <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" itemprop="image">
       {% endif %}
     </div>
   {% endif %}
@@ -208,7 +197,7 @@
               <i class="fab fa-fw fa-youtube" aria-hidden="true"></i> YouTube
             </a>
           </li>
-        {% else author.youtube %}
+        {% elsif author.youtube %}
           <li>
             <a href="https://www.youtube.com/user/{{ author.youtube }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
               <i class="fab fa-fw fa-youtube" aria-hidden="true"></i> YouTube

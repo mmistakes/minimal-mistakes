@@ -11,7 +11,6 @@ $(document).ready(function() {
 
   var numOfItems = 0;
   var totalSpace = 0;
-  var closingTime = 1000;
   var breakWidths = [];
 
   // Get initial state
@@ -21,7 +20,7 @@ $(document).ready(function() {
     breakWidths.push(totalSpace);
   });
 
-  var availableSpace, numOfVisibleItems, requiredSpace, timer;
+  var availableSpace, numOfVisibleItems, requiredSpace;
 
   function check() {
     // Get instant state
@@ -63,21 +62,7 @@ $(document).ready(function() {
   $btn.on("click", function() {
     $hlinks.toggleClass("hidden");
     $(this).toggleClass("close");
-    clearTimeout(timer);
   });
-
-  $hlinks
-    .on("mouseleave", function() {
-      // Mouse has left, start the timer
-      timer = setTimeout(function() {
-        $hlinks.addClass("hidden");
-        $btn.toggleClass("close");
-      }, closingTime);
-    })
-    .on("mouseenter", function() {
-      // Mouse is back, cancel the timer
-      clearTimeout(timer);
-    });
 
   check();
 });

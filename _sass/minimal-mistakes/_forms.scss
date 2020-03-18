@@ -107,6 +107,7 @@ input[type="radio"] {
   cursor: pointer;
   border-radius: 0;
   border: 0 \9;
+  box-shadow: none;
 }
 
 input[type="checkbox"],
@@ -119,7 +120,6 @@ input[type="radio"] {
 
 input[type="image"] {
   border: 0;
-  box-shadow: none;
 }
 
 input[type="file"] {
