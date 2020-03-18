@@ -12,9 +12,7 @@ sidebar:
   nav: ''
 ---
 
-<style>
-.small-text {font-size: 0.5em;}
-</style>
+{% capture arbeitsplaene %}
 
 16.03.2020 20:00 Uhr
 
@@ -310,3 +308,19 @@ sidebar:
 | <i class="fa fa-search">&nbsp;&nbsp;</i>Sachuntericht  | | {% include email email='sekretariat@brandwerder.de' %} | -->
 
 ---
+
+{% endcapture %}
+
+<style>
+.small-text {font-size: 0.5em;}
+#arbeitsplaene ~ #password {display: none}
+#arbeitsplaene.hidden ~ #password {display: block}
+</style>
+
+<div id="arbeitsplaene" class="hidden">
+{{ arbeitsplaene | markdownify }}
+</div>
+
+<div id="password">
+Bitte geben Sie das Passwort ein: <input type="text" oninput="if(this.value == 'corona') {document.getElementById('arbeitsplaene').classList.remove('hidden')}" />
+</div>
