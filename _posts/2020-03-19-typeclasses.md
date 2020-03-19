@@ -4,7 +4,7 @@ excerpt: "Twoja furtka do uzależniania od programowania funkcyjnego"
 categories: [scala, fp, fp-ladder, typeclass]
 classes: wide
 ---
-Wpis ten jest dość długi, ale zależy mi, żeby był _(względnie) kompletnym wstępem_ do idei typecless w Scali. Nie jest to koncept łatwy, ale jest niezbędny do wejścia powyżej poziomu podstawowego w Scali.
+Wpis ten jest dość długi, ale zależy mi, żeby był _(względnie) kompletnym wstępem_ do idei _typeclass_ w Scali. Nie jest to koncept łatwy, ale jest niezbędny do wejścia powyżej poziomu podstawowego w Scali.
 
 Polimorfizm jest jedną z podstawowych technik programowania w językach wysokiego poziomu. Jest bardzo popularny w językach obiektowych - i słusznie. Będąc wierny _jedynej słusznej drodze (JSD)_, czyli programowaniu funkcyjnemu, sądzę, że _polimorfizm o smaku ad-hoc_ pozwala pisać w sposób naturalny kod, który jest bardziej modularny oraz uniwersalny.
 
@@ -124,9 +124,9 @@ Można (i należy) dalej "upiększać" przy pomocy _interface syntax_ lub _inter
 ### Podsumowanie implementacji
 
 Żeby zaimplementować _typeclass_ musimy zrobić przynajmniej poniższe dwie rzeczy:
- 1. Zdefiniować _typeclass_ę jako generyczny (sparametryzowany przynajmniej przez jeden typ) `trait`, na przykład `JsonEncodable[A]`.
- 2. Przynajmniej jedną implementację powyższej _typeclass_y - w naszym wypadku była to `implicit val enc: JsonEncodable[Account] = ...`.
+ 1. Zdefiniować _typeclass_-ę jako generyczny (sparametryzowany przynajmniej przez jeden typ) `trait`, na przykład `JsonEncodable[A]`.
+ 2. Przynajmniej jedną implementację powyższej _typeclass_-y - w naszym wypadku była to `implicit val enc: JsonEncodable[Account] = ...`.
 
 ## Podsumowanie 
 
-Mam nadzieję, że ten artykuł przybliżył Wam koncept _typeclass_y. Jest to tylko wstęp, więc nie miej sobie za złe, jeżeli nie od razu widzisz zastosowania tej techniki. Postaram się to zmienić w kolejnych wpisach. Jest to jednak niezbędna widza, jeżeli chce się wejść na odrobinę wyższy poziom w Scali niż użycie `map` i `filter`.
+Mam nadzieję, że ten artykuł przybliżył Wam koncept _typeclass_-y. Jest to tylko wstęp, więc nie miej sobie za złe, jeżeli nie od razu widzisz zastosowania tej techniki. Postaram się to zmienić w kolejnych wpisach. Jest to jednak niezbędna widza, jeżeli chce się wejść na odrobinę wyższy poziom w Scali niż użycie `map` i `filter`.
