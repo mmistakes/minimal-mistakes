@@ -1,7 +1,7 @@
 ---
 title: "Psychology"
 author: "Abdul"
-layout: post
+layout: posts
 categories: psychology
 ---
 I am psych

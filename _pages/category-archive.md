@@ -1,12 +1,20 @@
 ---
 title: "Posts by Category"
-layout: categories
+author: "Abdul"
+layout: single
+excerpt: "Categories Include"
+#layout: post
 permalink: /categories/
-author_profile: true
 ---
+
   {% for cat in site.categories %}
 
-  {% for post in cat[1] %}
-  *   [{{post.title}}]({{post.url}})
-  {% endfor %}
+    {% for pages in site.pages %}
+      {% if pages.categories == cat[0] %}
+
+  *   [{{pages.title}}]({{pages.url}})
+
+      {% endif %}
+    {% endfor %}
+
   {% endfor %}
