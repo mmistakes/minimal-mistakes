@@ -17,3 +17,14 @@
 
   </body>
 </html>
+
+
+Cat:
+  posts
+
+  {% for cat in site.categories %}
+    {{cat[0]}}
+  {% for post in cat[1] %}
+  *   [{{post.title}}]({{post.url}})
+  {% endfor %}
+  {% endfor %}
