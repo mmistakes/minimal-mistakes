@@ -137,10 +137,10 @@ footer:
 
 
 # Reading
-include: ["_pages"]
 include:
   - .htaccess
   - _posts
+  - _pages
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
