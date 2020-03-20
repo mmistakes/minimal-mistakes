@@ -140,7 +140,6 @@ footer:
 include: ["_pages"]
 include:
   - .htaccess
-  - _pages
   - _posts
 exclude:
   - "*.sublime-project"
