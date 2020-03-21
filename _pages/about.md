@@ -94,19 +94,23 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 ## Backend Development
     Java(Spring, Spring Boot, Jsp, Servlet)
 
-  - ## Android
+  
+## Android
     Android with java
 
-  - ## Problem Solving(Data Structure + Algorithm)
+  
+## Problem Solving(Data Structure + Algorithm)
     [Baekjoon](https://www.acmicpc.net/user/homesking)
 
-  - ## Database
+  
+## Database
     MySQL, Elastic Search, Google Cloud SQL for MySQL, firebase realtime database
 
-  - ## ~~AI~~  
+  
+## ~~AI~~  
     ~~tensorflow CNN~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxMTAwMTI1OSwtNDg2MjY2ODEwLDEzMj
-I0NzU2MzYsMTYyMjM1MjI5MCwxMTU4ODk3NTQ5LC0xODQ0Mzc0
-MywtMTU0Mjg5MDE0OSwxODM3MjI5MTE2XX0=
+eyJoaXN0b3J5IjpbNzcwOTA4ODksLTQ4NjI2NjgxMCwxMzIyND
+c1NjM2LDE2MjIzNTIyOTAsMTE1ODg5NzU0OSwtMTg0NDM3NDMs
+LTE1NDI4OTAxNDksMTgzNzIyOTExNl19
 -->
