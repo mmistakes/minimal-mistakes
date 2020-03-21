@@ -20,8 +20,9 @@ comments: false
 
 ---
 Hi! I'm a student studying at Kyonggi University. I have experience such as Frontend Development, Android Development, Backend Development in university and intern.
-- # Experience
-  - ## ACEPROJECT(Server team)
+# Experience
+  
+  ## ACEPROJECT(Server team)
     `Intern • Jul, 2019 — Aug 2019`
 
 * 과제
@@ -36,7 +37,7 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 	- 엘라스틱 서치 어뷰징 제거 (인터넷 nosql)
 	- 스크립트 DB에 저장 (서버 재시작하지 않고 확률의 변화를 위해)
 	- JDBC 는 객체로 DB에 저장위해서 (기존에는 mybatis를 사용하지만 객체 전체를 DB에 저장하기위해 JDBC를 사용)
-	- 우편함
+	- 기존 우편함 보관시간 15일 -> 
 	- excahnge 모듈
 	- 버그 수정
 	- 콘텐츠에 다른곳에서도 구매가능하도록
@@ -98,7 +99,7 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
   - ## ~~AI~~  
     ~~tensorflow CNN~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4NjI2NjgxMCwxMzIyNDc1NjM2LDE2Mj
-IzNTIyOTAsMTE1ODg5NzU0OSwtMTg0NDM3NDMsLTE1NDI4OTAx
-NDksMTgzNzIyOTExNl19
+eyJoaXN0b3J5IjpbMTM1NzA5MDQxNywtNDg2MjY2ODEwLDEzMj
+I0NzU2MzYsMTYyMjM1MjI5MCwxMTU4ODk3NTQ5LC0xODQ0Mzc0
+MywtMTU0Mjg5MDE0OSwxODM3MjI5MTE2XX0=
 -->
