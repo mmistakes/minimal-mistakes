@@ -29,6 +29,7 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 	* [Scout Baseball Player `API`](https://github.com/choiseonjae/API_Aceproject)
 	* [Trade Baseball Player `API`](https://github.com/choiseonjae/API_Aceproject)
 	* [crawling (Assignment)](https://github.com/choiseonjae/crawling)
+
 * 실무 (실제 서비스) 개발
 	- batch 방식으로 나눠주기 (로그인 하는 유저가 직접 자신이 받아야 하는 선물들 받기)
 	- 캐쉬사용으로 지연 감소 ( 카페인 라이브러리)
@@ -97,7 +98,7 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
   - ## ~~AI~~  
     ~~tensorflow CNN~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyMjQ3NTYzNiwxNjIyMzUyMjkwLDExNT
-g4OTc1NDksLTE4NDQzNzQzLC0xNTQyODkwMTQ5LDE4MzcyMjkx
-MTZdfQ==
+eyJoaXN0b3J5IjpbLTQ4NjI2NjgxMCwxMzIyNDc1NjM2LDE2Mj
+IzNTIyOTAsMTE1ODg5NzU0OSwtMTg0NDM3NDMsLTE1NDI4OTAx
+NDksMTgzNzIyOTExNl19
 -->
