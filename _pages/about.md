@@ -29,7 +29,16 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 	* [Scout Baseball Player `API`](https://github.com/choiseonjae/API_Aceproject)
 	* [Trade Baseball Player `API`](https://github.com/choiseonjae/API_Aceproject)
 	* [crawling (Assignment)](https://github.com/choiseonjae/crawling)
-* 
+* 실무 (실제 서비스) 개발
+	- batch 방식으로 나눠주기 (로그인 하는 유저가 직접 자신이 받아야 하는 선물들 받기)
+	- 캐쉬사용으로 지연 감소 ( 카페인 라이브러리)
+	- 엘라스틱 서치 어뷰징 제거 (인터넷 nosql)
+	- 스크립트 DB에 저장 (서버 재시작하지 않고 확률의 변화를 위해)
+	- JDBC 는 객체로 DB에 저장위해서 (기존에는 mybatis를 사용하지만 객체 전체를 DB에 저장하기위해 JDBC를 사용)
+	- 우편함
+	- excahnge 모듈
+	- 버그 수정
+	- 콘텐츠에 다른곳에서도 구매가능하도록
 
   - ## 락인컴퍼니(QA Team)
     `Intern • Jan, 2016 — Mar, 2016`
@@ -89,6 +98,6 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
     ~~tensorflow CNN~~
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODczMjc2ODI4LDExNTg4OTc1NDksLTE4ND
-QzNzQzLC0xNTQyODkwMTQ5LDE4MzcyMjkxMTZdfQ==
+eyJoaXN0b3J5IjpbMTYyMjM1MjI5MCwxMTU4ODk3NTQ5LC0xOD
+Q0Mzc0MywtMTU0Mjg5MDE0OSwxODM3MjI5MTE2XX0=
 -->
