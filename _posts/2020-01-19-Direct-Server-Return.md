@@ -80,25 +80,25 @@ ltm virtual vs_tacacs-test_49 {
 
 ## Linux Server Config
 
-IPIP:
-
+Load Kernel Modules:
 ~~~ go
 modprobe ipip       #Load the IPIP module in kernel, if not loaded at boot time
+modprobe ip_gre	#Load the GRE module in kernel, if not loaded at boot time
+~~~
+
+IP Configuration:
+~~~ go
 ip link set tunl0 up
 
 ip addr add 10.1.1.52 dev tunl0 scope host
 ip addr add 172.16.4.99 dev lo scope host label lo:0 
+~~~
 
+~~~ go
 sysctl -w net.ipv4.conf.all.arp_ignore=3
 sysctl -w net.ipv4.conf.all.arp_announce=2
 sysctl -w net.ipv4.conf.all.rp_filter=2
 sysctl -w net.ipv4.conf.tunl0.rp_filter=0
-~~~
-
-GRE:
-
-~~~
-modprobe ip_gre
 ~~~
 
 
@@ -206,6 +206,5 @@ tcpdump: listening on ens192, link-type EN10MB (Ethernet), capture size 262144 b
 
 ## References
 
-[https://wiki.archlinux.org/index.php/Kernel_module#Loading](https://wiki.archlinux.org/index.php/Kernel_module#Loading)
-
-[https://access.redhat.com/solutions/53031](https://access.redhat.com/solutions/53031)
+* [https://wiki.archlinux.org/index.php/Kernel_module#Loading](https://wiki.archlinux.org/index.php/Kernel_module#Loading)
+* [https://access.redhat.com/solutions/53031](https://access.redhat.com/solutions/53031)
