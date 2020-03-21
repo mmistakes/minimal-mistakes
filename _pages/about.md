@@ -13,8 +13,8 @@ toc_label: "My Table of Contents" # toc 이름 정의
 toc_icon: "cog" # font Awesome아이콘으로 toc 아이콘 설정 
 toc_sticky: true # 스크롤 내릴때 같이 내려가는 목차
 
-date: 2020-01-20T16:42:00 # 최초 생성일
-last_modified_at: 2020-01-20T16:42:00 # 마지막 변경일
+date: 2020-01-20T16:42:00 # 최초 3생성일
+last_modified_at: 2020-03-21T18:42:00 # 마지막 변경일
 
 comments: false
 
@@ -99,7 +99,7 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
   - ## ~~AI~~  
     ~~tensorflow CNN~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzkyMTE4OTcwLC00ODYyNjY4MTAsMTMyMj
-Q3NTYzNiwxNjIyMzUyMjkwLDExNTg4OTc1NDksLTE4NDQzNzQz
-LC0xNTQyODkwMTQ5LDE4MzcyMjkxMTZdfQ==
+eyJoaXN0b3J5IjpbMjA1NjUxNzk2MCwtNDg2MjY2ODEwLDEzMj
+I0NzU2MzYsMTYyMjM1MjI5MCwxMTU4ODk3NTQ5LC0xODQ0Mzc0
+MywtMTU0Mjg5MDE0OSwxODM3MjI5MTE2XX0=
 -->
