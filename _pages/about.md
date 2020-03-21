@@ -32,14 +32,16 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 	* [crawling (Assignment)](https://github.com/choiseonjae/crawling)
 
 * 실무 (실제 서비스) 개발
-	- batch 방식으로 나눠주기 (로그인 하는 유저가 직접 자신이 받아야 하는 선물들 받기)
-	- 스크립트 DB에 저장 (서버 재시작하지 않고 확률의 변화를 위해)
 	- 선수 대결 시 플레이어 목록 로딩 시 레이턴시 발생 -> 캐쉬사용으로 해결 (카페인 라이브러리)
 	- JDBC 는 객체로 DB에 저장위해서 (기존에는 mybatis를 사용하지만 객체 전체를 DB에 저장하기위해 JDBC를 사용)
 	- 기존 우편함 보관시간 15일 -> 송신자가 기간 조절 가능하도록 변경 
 	- 거래에 대한 모듈 개발(Exchange Class - 거래 외에도 보상, 선물도 이러한 형태로 지급)
 	- 기존 어뷰징 혹은 버그로 정지당한 사용자가 지워지지 않아 랭크에는 반영되는 버그 발생 -> elastic search(인터넷 nosql)에 존재하는 정지 사용자 로그를 제거함으로서 해결
 	- 콘텐츠에 다른곳에서도 구매가능하도록
+
+* 배운 점
+	- batch 방식으로 나눠주기 (로그인 하는 유저가 직접 자신이 받아야 하는 선물들 받기)
+	- 스크립트 DB에 저장 (서버 재시작하지 않고 확률의 변화를 위해)
 
 ## 락인컴퍼니(QA Team)
     `Intern • Jan, 2016 — Mar, 2016`
@@ -109,8 +111,8 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 ## ~~AI~~  
     ~~tensorflow CNN~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzczNTcyMTUsLTEwMTg3OTAzNTQsLT
-E1NDk2NDU3NzYsNjk4OTY3MjI2LDc3MDkwODg5LC00ODYyNjY4
-MTAsMTMyMjQ3NTYzNiwxNjIyMzUyMjkwLDExNTg4OTc1NDksLT
-E4NDQzNzQzLC0xNTQyODkwMTQ5LDE4MzcyMjkxMTZdfQ==
+eyJoaXN0b3J5IjpbLTYxMjI3MTU2NSwtMTAxODc5MDM1NCwtMT
+U0OTY0NTc3Niw2OTg5NjcyMjYsNzcwOTA4ODksLTQ4NjI2Njgx
+MCwxMzIyNDc1NjM2LDE2MjIzNTIyOTAsMTE1ODg5NzU0OSwtMT
+g0NDM3NDMsLTE1NDI4OTAxNDksMTgzNzIyOTExNl19
 -->
