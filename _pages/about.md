@@ -38,7 +38,7 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 	- 스크립트 DB에 저장 (서버 재시작하지 않고 확률의 변화를 위해)
 	- JDBC 는 객체로 DB에 저장위해서 (기존에는 mybatis를 사용하지만 객체 전체를 DB에 저장하기위해 JDBC를 사용)
 	- 기존 우편함 보관시간 15일 -> 운영자가 조절 할 수 있도록 변경
-	- excahnge 모듈
+	- 거래에 대한 모듈 개발(Exchange Class)
 	- 버그 수정
 	- 콘텐츠에 다른곳에서도 구매가능하도록
 
@@ -110,7 +110,7 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 ## ~~AI~~  
     ~~tensorflow CNN~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzcwOTA4ODksLTQ4NjI2NjgxMCwxMzIyND
-c1NjM2LDE2MjIzNTIyOTAsMTE1ODg5NzU0OSwtMTg0NDM3NDMs
-LTE1NDI4OTAxNDksMTgzNzIyOTExNl19
+eyJoaXN0b3J5IjpbNjk4OTY3MjI2LDc3MDkwODg5LC00ODYyNj
+Y4MTAsMTMyMjQ3NTYzNiwxNjIyMzUyMjkwLDExNTg4OTc1NDks
+LTE4NDQzNzQzLC0xNTQyODkwMTQ5LDE4MzcyMjkxMTZdfQ==
 -->
