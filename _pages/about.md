@@ -24,9 +24,10 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
   - ## ACEPROJECT(Server team)
     `Intern • Jul, 2019 — Aug 2019`
 
-* API developed
+* API list developed
+	* Baseball Player Scout API (Assignment) 
 * created API(Contents update, Module development)
-	* Baseball Player Scout API (Assignment)
+	* 
 
   - ## 락인컴퍼니(QA Team)
     `Intern • Jan, 2016 — Mar, 2016`
@@ -86,6 +87,6 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
     ~~tensorflow CNN~~
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDQzNzQzLC0xNTQyODkwMTQ5LDE4Mz
-cyMjkxMTZdfQ==
+eyJoaXN0b3J5IjpbMTE1ODg5NzU0OSwtMTg0NDM3NDMsLTE1ND
+I4OTAxNDksMTgzNzIyOTExNl19
 -->
