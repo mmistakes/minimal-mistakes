@@ -24,11 +24,11 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
   - ## ACEPROJECT(Server team)
     `Intern • Jul, 2019 — Aug 2019`
 
-* API list developed
-	* [Board (Assignment)](https://github.com/choiseonjae/Board_aceproject)
-	* [Scout Baseball Player `API` (Assignment)](https://github.com/choiseonjae/API_Aceproject)
-	* [Trade Baseball Player `API` (Assignment)](https://github.com/choiseonjae/API_Aceproject)
-	* [crawling (Assignment) ](https://github.com/choiseonjae/crawling)
+* 과제
+	* [Board](https://github.com/choiseonjae/Board_aceproject)
+	* [Scout Baseball Player `API`](https://github.com/choiseonjae/API_Aceproject)
+	* [Trade Baseball Player `API`](https://github.com/choiseonjae/API_Aceproject)
+	* [crawling (Assignment)](https://github.com/choiseonjae/crawling)
 * 
 
   - ## 락인컴퍼니(QA Team)
@@ -89,6 +89,6 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
     ~~tensorflow CNN~~
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDY3NjIyMjQsMTE1ODg5NzU0OSwtMT
-g0NDM3NDMsLTE1NDI4OTAxNDksMTgzNzIyOTExNl19
+eyJoaXN0b3J5IjpbODczMjc2ODI4LDExNTg4OTc1NDksLTE4ND
+QzNzQzLC0xNTQyODkwMTQ5LDE4MzcyMjkxMTZdfQ==
 -->
