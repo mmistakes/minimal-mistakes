@@ -37,9 +37,9 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 	- 엘라스틱 서치 어뷰징 제거 (인터넷 nosql)
 	- 스크립트 DB에 저장 (서버 재시작하지 않고 확률의 변화를 위해)
 	- JDBC 는 객체로 DB에 저장위해서 (기존에는 mybatis를 사용하지만 객체 전체를 DB에 저장하기위해 JDBC를 사용)
-	- 기존 우편함 보관시간 15일 -> 운영자가 조절 할 수 있도록 변경
+	- 기존 우편함 보관시간 15일 -> 송신자가 기간 조절 가능하도록 변경
 	- 거래에 대한 모듈 개발(Exchange Class)
-	- 버그 수정
+	- 기존버그 수정
 	- 콘텐츠에 다른곳에서도 구매가능하도록
 
 ## 락인컴퍼니(QA Team)
@@ -110,7 +110,7 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 ## ~~AI~~  
     ~~tensorflow CNN~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1MDk2NjU5Nyw2OTg5NjcyMjYsNzcwOT
+eyJoaXN0b3J5IjpbLTE4MTY3MTE1OCw2OTg5NjcyMjYsNzcwOT
 A4ODksLTQ4NjI2NjgxMCwxMzIyNDc1NjM2LDE2MjIzNTIyOTAs
 MTE1ODg5NzU0OSwtMTg0NDM3NDMsLTE1NDI4OTAxNDksMTgzNz
 IyOTExNl19
