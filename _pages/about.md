@@ -39,7 +39,7 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 	- JDBC 는 객체로 DB에 저장위해서 (기존에는 mybatis를 사용하지만 객체 전체를 DB에 저장하기위해 JDBC를 사용)
 	- 기존 우편함 보관시간 15일 -> 송신자가 기간 조절 가능하도록 변경
 	- 거래에 대한 모듈 개발(Exchange Class)
-	- 기존 어뷰징 혹은 버그로 정지당한 사용자가 지워지지 않아 랭크에는 반영되는 버그 발생 -> elastic search에 존재하는 정지 사용자를 제거함으로서 해결
+	- 기존 어뷰징 혹은 버그로 정지당한 사용자가 지워지지 않아 랭크에는 반영되는 버그 발생 -> elastic search에 존재하는 정지 사용자 로그를 제거함으로서 해결
 	- 콘텐츠에 다른곳에서도 구매가능하도록
 
 ## 락인컴퍼니(QA Team)
@@ -110,8 +110,8 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 ## ~~AI~~  
     ~~tensorflow CNN~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjczNDg2Njk5LDY5ODk2NzIyNiw3NzA5MD
-g4OSwtNDg2MjY2ODEwLDEzMjI0NzU2MzYsMTYyMjM1MjI5MCwx
-MTU4ODk3NTQ5LC0xODQ0Mzc0MywtMTU0Mjg5MDE0OSwxODM3Mj
-I5MTE2XX0=
+eyJoaXN0b3J5IjpbLTU1Mjg2NTY4Nyw2OTg5NjcyMjYsNzcwOT
+A4ODksLTQ4NjI2NjgxMCwxMzIyNDc1NjM2LDE2MjIzNTIyOTAs
+MTE1ODg5NzU0OSwtMTg0NDM3NDMsLTE1NDI4OTAxNDksMTgzNz
+IyOTExNl19
 -->
