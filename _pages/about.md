@@ -83,3 +83,6 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
   - ## ~~AI~~  
     ~~tensorflow CNN~~
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTc3NjkzMTI2NV19
+-->
