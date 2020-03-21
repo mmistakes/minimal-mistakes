@@ -36,7 +36,7 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 	- 스크립트 DB에 저장 (서버 재시작하지 않고 확률의 변화를 위해)
 	- 선수 대결 시 레이턴시 발생 -> 캐쉬사용으로 해결 ( 카페인 라이브러리)
 	- JDBC 는 객체로 DB에 저장위해서 (기존에는 mybatis를 사용하지만 객체 전체를 DB에 저장하기위해 JDBC를 사용)
-	- 기존 우편함 보관시간 15일 -> 송신자가 기간 조절 가능하도록 변경
+	- 기존 우편함 보관시간 15일 -> 송신자가 기간 조절 가능하도록 변경 
 	- 거래에 대한 모듈 개발(Exchange Class - 거래 외에도 보상, 선물도 이러한 형태로 지급)
 	- 기존 어뷰징 혹은 버그로 정지당한 사용자가 지워지지 않아 랭크에는 반영되는 버그 발생 -> elastic search(인터넷 nosql)에 존재하는 정지 사용자 로그를 제거함으로서 해결
 	- 콘텐츠에 다른곳에서도 구매가능하도록
@@ -109,8 +109,8 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 ## ~~AI~~  
     ~~tensorflow CNN~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDk2NDU3NzYsNjk4OTY3MjI2LDc3MD
-kwODg5LC00ODYyNjY4MTAsMTMyMjQ3NTYzNiwxNjIyMzUyMjkw
-LDExNTg4OTc1NDksLTE4NDQzNzQzLC0xNTQyODkwMTQ5LDE4Mz
-cyMjkxMTZdfQ==
+eyJoaXN0b3J5IjpbLTEwMTg3OTAzNTQsLTE1NDk2NDU3NzYsNj
+k4OTY3MjI2LDc3MDkwODg5LC00ODYyNjY4MTAsMTMyMjQ3NTYz
+NiwxNjIyMzUyMjkwLDExNTg4OTc1NDksLTE4NDQzNzQzLC0xNT
+QyODkwMTQ5LDE4MzcyMjkxMTZdfQ==
 -->
