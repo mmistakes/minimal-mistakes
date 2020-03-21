@@ -26,11 +26,10 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 
 * API list developed
 	* [Board (Assignment)](https://github.com/choiseonjae/Board_aceproject)
-	* Scout Baseball Player `API` (Assignment) 
-	* Trade Baseball Player `API` 
+	* [Scout Baseball Player `API` (Assignment)](https://github.com/choiseonjae/API_Aceproject)
+	* [Trade Baseball Player `API` (Assignment)](https://github.com/choiseonjae/API_Aceproject)
 	* [crawling (Assignment) ](https://github.com/choiseonjae/crawling)
-* created API(Contents update, Module development)
-	* 
+* 
 
   - ## 락인컴퍼니(QA Team)
     `Intern • Jan, 2016 — Mar, 2016`
@@ -90,6 +89,6 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
     ~~tensorflow CNN~~
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzE0NzAwMjcsMTE1ODg5NzU0OSwtMT
+eyJoaXN0b3J5IjpbLTEyMDY3NjIyMjQsMTE1ODg5NzU0OSwtMT
 g0NDM3NDMsLTE1NDI4OTAxNDksMTgzNzIyOTExNl19
 -->
