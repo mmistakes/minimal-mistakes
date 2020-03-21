@@ -1,9 +1,9 @@
 ---
 title: 최선재는 누구일까?
+
 categories: 
    - About
-tags:
-   - profile
+
 permalink: /about/
 author_profile: true #작성자 프로필 출력여부
 read_time: true # read_time을 출력할지 여부 1min read 같은것!
@@ -23,7 +23,7 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 # Experience
   
 ## ACEPROJECT(Server team)
-    `Intern • Jul, 2019 — Aug 2019`
+	`Intern • Jul, 2019 — Aug 2019`
 
 * 과제
 	* [Board](https://github.com/choiseonjae/Board_aceproject)
@@ -110,7 +110,8 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 ## ~~AI~~  
     ~~tensorflow CNN~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk4OTY3MjI2LDc3MDkwODg5LC00ODYyNj
-Y4MTAsMTMyMjQ3NTYzNiwxNjIyMzUyMjkwLDExNTg4OTc1NDks
-LTE4NDQzNzQzLC0xNTQyODkwMTQ5LDE4MzcyMjkxMTZdfQ==
+eyJoaXN0b3J5IjpbMTU1MDk2NjU5Nyw2OTg5NjcyMjYsNzcwOT
+A4ODksLTQ4NjI2NjgxMCwxMzIyNDc1NjM2LDE2MjIzNTIyOTAs
+MTE1ODg5NzU0OSwtMTg0NDM3NDMsLTE1NDI4OTAxNDksMTgzNz
+IyOTExNl19
 -->
