@@ -96,8 +96,8 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 
   - ## ~~AI~~  
     ~~tensorflow CNN~~
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMjM1MjI5MCwxMTU4ODk3NTQ5LC0xOD
-Q0Mzc0MywtMTU0Mjg5MDE0OSwxODM3MjI5MTE2XX0=
+eyJoaXN0b3J5IjpbMTMyMjQ3NTYzNiwxNjIyMzUyMjkwLDExNT
+g4OTc1NDksLTE4NDQzNzQzLC0xNTQyODkwMTQ5LDE4MzcyMjkx
+MTZdfQ==
 -->
