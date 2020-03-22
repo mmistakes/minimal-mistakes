@@ -3,7 +3,7 @@ title: "Math"
 author: "Abdul"
 layout: single
 categories: math
-permalink: /minimal-mistakes/categories/math
+permalink: /categories/math/
 ---
 ## Below are some Mathematical Articles
   {% for post in site.categories.math %}
