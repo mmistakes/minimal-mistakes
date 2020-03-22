@@ -29,8 +29,8 @@ full_url                : "https://abdulrabbani347.github.io/minimal-mistakes"
 #repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 repository               : "abdulrabbani347/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/88x88.png"
-masthead_title           : "My Custom Masthead Title"
+logo                     : "/assets/images/computer_science_logo.png"
+masthead_title           : "Abdul's Academic Journal"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -97,15 +97,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Abdul Rabbani"
-  avatar           : "/assets/images/bio-photo.jpg"
+  name             : "Abdul Q Rabbani"
+  avatar           : "/assets/images/abdul_closeup.jpg"
   bio              : "This is a journal of my personal independent work"
   location         : "NY"
-  email            :
+  email            : "abdulrabbani00@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:abdulrabbani00@gmail.com
+      #url: mailto:abdulrabbani00@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -117,7 +117,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/abdulrabbani347/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"

@@ -6,6 +6,8 @@ excerpt: "Categories Include"
 #layout: post
 permalink: /categories/
 ---
+![Look](../assets/images/figlet_categories.png)
+## Below you will find all my categories
 
   {% for pages in site.pages %}
     {% if pages.categories %}
