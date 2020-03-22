@@ -4,7 +4,7 @@ author: "Abdul"
 layout: single
 excerpt: "category math"
 categories: math
-permalink: /categories/math/
+permalink: /minimal-mistakes/categories/math
 ---
 ## Below are some Mathematical Articles
   {% for post in site.categories.math %}
