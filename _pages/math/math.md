@@ -2,11 +2,12 @@
 title: "Math"
 author: "Abdul"
 layout: single
-#categories: math
+categories: math
 permalink: /categories/math/
 ---
 ## Below are some Mathematical Articles
   {% for post in site.categories.math %}
+  {{post.url}}
 
   *   [{{post.title}}]({{post.url}})
   {% endfor %}
