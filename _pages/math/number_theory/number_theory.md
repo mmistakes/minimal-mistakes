@@ -5,7 +5,7 @@ layout: single
 categories:
   - math
   - number_theory
-permalink: /categories/math/number_theory/
+permalink: /minimal-mistakes/categories/math/number_theory
 ---
 ## Below are some Number Theory Articles
 
