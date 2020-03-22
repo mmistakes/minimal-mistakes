@@ -6,7 +6,7 @@ excerpt: "category Number Theory"
 categories:
   - math
   - number_theory
-#permalink: /categories/math/number_theory/
+permalink: /categories/math/number_theory/
 ---
 ## Below are some Number Theory Articles
 
