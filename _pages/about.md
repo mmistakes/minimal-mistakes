@@ -100,15 +100,19 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 
   
 ## Backend Development
-* Java(Spring, Spring Boot, Jsp, Servlet)
+* Java
+	* Servlet
+	* Jsp
+	* Spring
+	* Spring Boot
 
   
 ## Android
-    Android with java
+* Android with java
 
   
 ## Problem Solving(Data Structure + Algorithm)
-    [Baekjoon](https://www.acmicpc.net/user/homesking)
+* [Baekjoon](https://www.acmicpc.net/user/homesking)
 
   
 ## Database
@@ -118,11 +122,11 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 ## ~~AI~~  
     ~~tensorflow CNN~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ0NzY2ODI5LDE0MDIzMzYyNjAsLTEyNT
-E2MDAxOTYsNDE5ODY5OTkwLC0xODc4ODk2NDc3LC0xMDMxMTY0
-MzkyLDY1Mzc0MjY3OSw3Njk2NzQ0NTksLTYxMjI3MTU2NSwtMT
-AxODc5MDM1NCwtMTU0OTY0NTc3Niw2OTg5NjcyMjYsNzcwOTA4
-ODksLTQ4NjI2NjgxMCwxMzIyNDc1NjM2LDE2MjIzNTIyOTAsMT
-E1ODg5NzU0OSwtMTg0NDM3NDMsLTE1NDI4OTAxNDksMTgzNzIy
-OTExNl19
+eyJoaXN0b3J5IjpbMzY5MzgyNzgsMTQwMjMzNjI2MCwtMTI1MT
+YwMDE5Niw0MTk4Njk5OTAsLTE4Nzg4OTY0NzcsLTEwMzExNjQz
+OTIsNjUzNzQyNjc5LDc2OTY3NDQ1OSwtNjEyMjcxNTY1LC0xMD
+E4NzkwMzU0LC0xNTQ5NjQ1Nzc2LDY5ODk2NzIyNiw3NzA5MDg4
+OSwtNDg2MjY2ODEwLDEzMjI0NzU2MzYsMTYyMjM1MjI5MCwxMT
+U4ODk3NTQ5LC0xODQ0Mzc0MywtMTU0Mjg5MDE0OSwxODM3MjI5
+MTE2XX0=
 -->
