@@ -45,10 +45,10 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 	- JDBC 는 객체로 DB에 저장위해서 (기존에는 mybatis를 사용하지만 객체 전체를 DB에 저장하기위해 JDBC를 사용)
 
 ## 락인컴퍼니(QA Team)
-    `Intern • Jan, 2016 — Mar, 2016`
+`Intern • Jan, 2016 — Mar, 2016`
 
-    assist QA  
-    develop batch tool for QA
+* testing
+* developed batch tool for QA
   
   ![인턴  LIAPP](https://user-images.githubusercontent.com/49507736/66195102-def9a700-e6d0-11e9-8b5f-7abe23e9a882.png)
 
@@ -112,10 +112,10 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 ## ~~AI~~  
     ~~tensorflow CNN~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE5ODY5OTkwLC0xODc4ODk2NDc3LC0xMD
-MxMTY0MzkyLDY1Mzc0MjY3OSw3Njk2NzQ0NTksLTYxMjI3MTU2
-NSwtMTAxODc5MDM1NCwtMTU0OTY0NTc3Niw2OTg5NjcyMjYsNz
-cwOTA4ODksLTQ4NjI2NjgxMCwxMzIyNDc1NjM2LDE2MjIzNTIy
-OTAsMTE1ODg5NzU0OSwtMTg0NDM3NDMsLTE1NDI4OTAxNDksMT
-gzNzIyOTExNl19
+eyJoaXN0b3J5IjpbLTEyNTE2MDAxOTYsNDE5ODY5OTkwLC0xOD
+c4ODk2NDc3LC0xMDMxMTY0MzkyLDY1Mzc0MjY3OSw3Njk2NzQ0
+NTksLTYxMjI3MTU2NSwtMTAxODc5MDM1NCwtMTU0OTY0NTc3Ni
+w2OTg5NjcyMjYsNzcwOTA4ODksLTQ4NjI2NjgxMCwxMzIyNDc1
+NjM2LDE2MjIzNTIyOTAsMTE1ODg5NzU0OSwtMTg0NDM3NDMsLT
+E1NDI4OTAxNDksMTgzNzIyOTExNl19
 -->
