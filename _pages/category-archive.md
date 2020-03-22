@@ -3,6 +3,7 @@ title: "Posts by Category"
 author: "Abdul"
 layout: single
 excerpt: "Categories Include"
+#layout: post
 permalink: /categories/
 ---
 
