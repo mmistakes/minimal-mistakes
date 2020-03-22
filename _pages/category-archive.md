@@ -10,6 +10,7 @@ permalink: /categories/
 
   {% for pages in site.pages %}
     {% if pages.categories %}
+      {{pages}}
 
   *   [{{pages.title}}]({{pages.url}})
 

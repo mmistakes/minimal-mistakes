@@ -246,6 +246,11 @@ whitelist:
 category_archive:
   type: liquid
   path: /categories/
+
+math:
+  type: liquid
+  path: /categories/math/
+
 tag_archive:
   type: liquid
   path: /tags/
