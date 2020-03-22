@@ -33,7 +33,6 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 
 * 실무 (실제 서비스) 개발
 	- 선수 대결 시 플레이어 목록 로딩 시 레이턴시 발생 -> 캐쉬사용으로 해결 (카페인 라이브러리)
-	- JDBC 는 객체로 DB에 저장위해서 (기존에는 mybatis를 사용하지만 객체 전체를 DB에 저장하기위해 JDBC를 사용)
 	- 기존 우편함 보관시간 15일 -> 송신자가 기간 조절 가능하도록 변경 
 	- 거래에 대한 모듈 개발(Exchange Class - 거래 외에도 보상, 선물도 이러한 형태로 지급)
 	- 기존 어뷰징 혹은 버그로 정지당한 사용자가 지워지지 않아 랭크에는 반영되는 버그 발생 -> elastic search(인터넷 nosql)에 존재하는 정지 사용자 로그를 제거함으로서 해결
@@ -42,6 +41,7 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 * 배운 점
 	- batch 방식으로 User에게 Item 부여 (로그인 하는 유저가 직접 자신이 받아야 하는 선물들 받기)
 	- 스크립트 DB에 저장 (서버 재시작하지 않고 확률의 변화를 위해)
+	- JDBC 는 객체로 DB에 저장위해서 (기존에는 mybatis를 사용하지만 객체 전체를 DB에 저장하기위해 JDBC를 사용)
 
 ## 락인컴퍼니(QA Team)
     `Intern • Jan, 2016 — Mar, 2016`
@@ -111,9 +111,9 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 ## ~~AI~~  
     ~~tensorflow CNN~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjUzNzQyNjc5LDc2OTY3NDQ1OSwtNjEyMj
-cxNTY1LC0xMDE4NzkwMzU0LC0xNTQ5NjQ1Nzc2LDY5ODk2NzIy
-Niw3NzA5MDg4OSwtNDg2MjY2ODEwLDEzMjI0NzU2MzYsMTYyMj
-M1MjI5MCwxMTU4ODk3NTQ5LC0xODQ0Mzc0MywtMTU0Mjg5MDE0
-OSwxODM3MjI5MTE2XX0=
+eyJoaXN0b3J5IjpbMzI0NDk4MzI1LDY1Mzc0MjY3OSw3Njk2Nz
+Q0NTksLTYxMjI3MTU2NSwtMTAxODc5MDM1NCwtMTU0OTY0NTc3
+Niw2OTg5NjcyMjYsNzcwOTA4ODksLTQ4NjI2NjgxMCwxMzIyND
+c1NjM2LDE2MjIzNTIyOTAsMTE1ODg5NzU0OSwtMTg0NDM3NDMs
+LTE1NDI4OTAxNDksMTgzNzIyOTExNl19
 -->
