@@ -36,11 +36,11 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 	- 기존 우편함 보관시간 15일 -> 송신자가 기간 조절 가능하도록 변경 
 	- 거래에 대한 모듈 개발(Exchange Class - 거래 외에도 보상, 선물도 이러한 형태로 지급)
 	- 기존 어뷰징 혹은 버그로 정지당한 사용자가 지워지지 않아 랭크에는 반영되는 버그 발생 -> elastic search(인터넷 nosql)에 존재하는 정지 사용자 로그를 제거함으로서 해결
-	- 야구선수를 상점이 아닌 내다른곳에서도 구매가능하도록
+	- 야구선수를 상점이 아닌 다른 곳에서도 구매가능하도록 변경
 
 * 배운 점
 	- batch 방식으로 User에게 Item 부여 (로그인 하는 유저가 직접 자신이 받아야 하는 선물들 받기)
-	- 스크립트 DB에 저장 (서버 재시작하지 않고 확률의 변화를 위해) -> 이거는 mBe
+	- 스크립트 DB에 저장 (서버 재시작하지 않고 확률의 변화를 위해) -> **이거는 js를 사용하는 방식으로 해도 됬을텐데(인터프리터) 오히려 내가 봤을 땐 유지보수만 안 좋아지는 거 같다.**
 	- JDBC 는 객체로 DB에 저장위해서 (기존에는 mybatis를 사용하지만 객체 전체를 DB에 저장하기위해 JDBC를 사용)
 
 ## 락인컴퍼니(QA Team)
@@ -111,9 +111,10 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 ## ~~AI~~  
     ~~tensorflow CNN~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg0NDc5MTQ3LC0xMDMxMTY0MzkyLDY1Mz
-c0MjY3OSw3Njk2NzQ0NTksLTYxMjI3MTU2NSwtMTAxODc5MDM1
-NCwtMTU0OTY0NTc3Niw2OTg5NjcyMjYsNzcwOTA4ODksLTQ4Nj
-I2NjgxMCwxMzIyNDc1NjM2LDE2MjIzNTIyOTAsMTE1ODg5NzU0
-OSwtMTg0NDM3NDMsLTE1NDI4OTAxNDksMTgzNzIyOTExNl19
+eyJoaXN0b3J5IjpbLTE4Nzg4OTY0NzcsLTEwMzExNjQzOTIsNj
+UzNzQyNjc5LDc2OTY3NDQ1OSwtNjEyMjcxNTY1LC0xMDE4Nzkw
+MzU0LC0xNTQ5NjQ1Nzc2LDY5ODk2NzIyNiw3NzA5MDg4OSwtND
+g2MjY2ODEwLDEzMjI0NzU2MzYsMTYyMjM1MjI5MCwxMTU4ODk3
+NTQ5LC0xODQ0Mzc0MywtMTU0Mjg5MDE0OSwxODM3MjI5MTE2XX
+0=
 -->
