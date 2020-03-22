@@ -7,7 +7,7 @@ excerpt: "Categories Include"
 permalink: /categories/
 ---
 
-Test 1
+Test 2
 
   {% for pages in site.pages %}
     {% if pages.categories %}
