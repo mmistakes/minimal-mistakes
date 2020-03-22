@@ -31,12 +31,16 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 	* [Trade Baseball Player `API`](https://github.com/choiseonjae/API_Aceproject)
 	* [crawling (Assignment)](https://github.com/choiseonjae/crawling)
 
+
+
 * 실무 (실제 서비스) 개발
 	- 선수 대결 시 플레이어 목록 로딩 시 레이턴시 발생 -> 캐쉬사용으로 해결 (카페인 라이브러리)
 	- 기존 우편함 보관시간 15일 -> 송신자가 기간 조절 가능하도록 변경 
 	- 거래에 대한 모듈 개발(Exchange Class - 거래 외에도 보상, 선물도 이러한 형태로 지급)
 	- 기존 어뷰징 혹은 버그로 정지당한 사용자가 지워지지 않아 랭크에는 반영되는 버그 발생 -> elastic search(인터넷 nosql)에 존재하는 정지 사용자 로그를 제거함으로서 해결
 	- 야구선수를 상점이 아닌 다른 곳에서도 구매가능하도록 변경
+
+
 
 * 배운 점
 	- batch 방식으로 User에게 Item 부여 (로그인 하는 유저가 직접 자신이 받아야 하는 선물들 받기)
@@ -112,10 +116,10 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 ## ~~AI~~  
     ~~tensorflow CNN~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTE2MDAxOTYsNDE5ODY5OTkwLC0xOD
-c4ODk2NDc3LC0xMDMxMTY0MzkyLDY1Mzc0MjY3OSw3Njk2NzQ0
-NTksLTYxMjI3MTU2NSwtMTAxODc5MDM1NCwtMTU0OTY0NTc3Ni
-w2OTg5NjcyMjYsNzcwOTA4ODksLTQ4NjI2NjgxMCwxMzIyNDc1
-NjM2LDE2MjIzNTIyOTAsMTE1ODg5NzU0OSwtMTg0NDM3NDMsLT
-E1NDI4OTAxNDksMTgzNzIyOTExNl19
+eyJoaXN0b3J5IjpbMTQwMjMzNjI2MCwtMTI1MTYwMDE5Niw0MT
+k4Njk5OTAsLTE4Nzg4OTY0NzcsLTEwMzExNjQzOTIsNjUzNzQy
+Njc5LDc2OTY3NDQ1OSwtNjEyMjcxNTY1LC0xMDE4NzkwMzU0LC
+0xNTQ5NjQ1Nzc2LDY5ODk2NzIyNiw3NzA5MDg4OSwtNDg2MjY2
+ODEwLDEzMjI0NzU2MzYsMTYyMjM1MjI5MCwxMTU4ODk3NTQ5LC
+0xODQ0Mzc0MywtMTU0Mjg5MDE0OSwxODM3MjI5MTE2XX0=
 -->
