@@ -11,7 +11,6 @@ Page url:
 
 ## Below are some Mathematical Articles
   {% for post in site.categories.math %}
-  {{post.url}}
 
   *   [{{post.title}}]({{post.url}})
   {% endfor %}
