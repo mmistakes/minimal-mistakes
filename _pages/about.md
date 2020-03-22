@@ -36,7 +36,7 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 	- 기존 우편함 보관시간 15일 -> 송신자가 기간 조절 가능하도록 변경 
 	- 거래에 대한 모듈 개발(Exchange Class - 거래 외에도 보상, 선물도 이러한 형태로 지급)
 	- 기존 어뷰징 혹은 버그로 정지당한 사용자가 지워지지 않아 랭크에는 반영되는 버그 발생 -> elastic search(인터넷 nosql)에 존재하는 정지 사용자 로그를 제거함으로서 해결
-	- 콘텐츠에 다른곳에서도 구매가능하도록
+	- 야구선수를 상점텐츠에 다른곳에서도 구매가능하도록
 
 * 배운 점
 	- batch 방식으로 User에게 Item 부여 (로그인 하는 유저가 직접 자신이 받아야 하는 선물들 받기)
@@ -111,7 +111,7 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 ## ~~AI~~  
     ~~tensorflow CNN~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI0NDk4MzI1LDY1Mzc0MjY3OSw3Njk2Nz
+eyJoaXN0b3J5IjpbNDAwNjYwMTYwLDY1Mzc0MjY3OSw3Njk2Nz
 Q0NTksLTYxMjI3MTU2NSwtMTAxODc5MDM1NCwtMTU0OTY0NTc3
 Niw2OTg5NjcyMjYsNzcwOTA4ODksLTQ4NjI2NjgxMCwxMzIyND
 c1NjM2LDE2MjIzNTIyOTAsMTE1ODg5NzU0OSwtMTg0NDM3NDMs
