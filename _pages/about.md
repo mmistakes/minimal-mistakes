@@ -84,21 +84,23 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 # Education
 
 ## Kyonggi University
-    `Bachelor of Computer Science • 2014 — Present`
+`Computer Science • 2014.03 — 2020.02`
 
 
 # Skill
   
 ## Cloud
-    Google Cloud Platform
+* Google Cloud Platform
 
   
 ## Frontend Development
-    Html, Css, Javascript
+* Html
+* Css
+* Javascript
 
   
 ## Backend Development
-    Java(Spring, Spring Boot, Jsp, Servlet)
+* Java(Spring, Spring Boot, Jsp, Servlet)
 
   
 ## Android
@@ -116,10 +118,11 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 ## ~~AI~~  
     ~~tensorflow CNN~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMjMzNjI2MCwtMTI1MTYwMDE5Niw0MT
-k4Njk5OTAsLTE4Nzg4OTY0NzcsLTEwMzExNjQzOTIsNjUzNzQy
-Njc5LDc2OTY3NDQ1OSwtNjEyMjcxNTY1LC0xMDE4NzkwMzU0LC
-0xNTQ5NjQ1Nzc2LDY5ODk2NzIyNiw3NzA5MDg4OSwtNDg2MjY2
-ODEwLDEzMjI0NzU2MzYsMTYyMjM1MjI5MCwxMTU4ODk3NTQ5LC
-0xODQ0Mzc0MywtMTU0Mjg5MDE0OSwxODM3MjI5MTE2XX0=
+eyJoaXN0b3J5IjpbOTQ0NzY2ODI5LDE0MDIzMzYyNjAsLTEyNT
+E2MDAxOTYsNDE5ODY5OTkwLC0xODc4ODk2NDc3LC0xMDMxMTY0
+MzkyLDY1Mzc0MjY3OSw3Njk2NzQ0NTksLTYxMjI3MTU2NSwtMT
+AxODc5MDM1NCwtMTU0OTY0NTc3Niw2OTg5NjcyMjYsNzcwOTA4
+ODksLTQ4NjI2NjgxMCwxMzIyNDc1NjM2LDE2MjIzNTIyOTAsMT
+E1ODg5NzU0OSwtMTg0NDM3NDMsLTE1NDI4OTAxNDksMTgzNzIy
+OTExNl19
 -->
