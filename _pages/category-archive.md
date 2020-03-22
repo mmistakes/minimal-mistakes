@@ -7,12 +7,13 @@ excerpt: "Categories Include"
 permalink: /categories/
 ---
 
+{{site.baseurl}}
+
 
   {% for pages in site.pages %}
     {% if pages.categories %}
-      {{pages}}
 
-  *   [{{pages.title}}]({{pages.url}})
+  *   [{{pages.title}}]({{pages.url | prepend:site.baseurl }})
 
     {% endif %}
   {% endfor %}
