@@ -2,9 +2,8 @@
 title: "Math"
 author: "Abdul"
 layout: single
-excerpt: "category math"
 categories: math
-#permalink: /categories/math/
+permalink: /categories/math/
 ---
 ## Below are some Mathematical Articles
   {% for post in site.categories.math %}
