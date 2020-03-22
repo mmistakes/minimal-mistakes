@@ -7,7 +7,6 @@ categories: math
 permalink: /categories/math/
 ---
 Page url:
-{{page.url}}
 
 ## Below are some Mathematical Articles
   {% for post in site.categories.math %}
