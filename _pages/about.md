@@ -40,7 +40,7 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 	- 콘텐츠에 다른곳에서도 구매가능하도록
 
 * 배운 점
-	- batch 방식으로 나눠주기 (로그인 하는 유저가 직접 자신이 받아야 하는 선물들 받기)
+	- batch 방식으로 User에게 Item 부여 (로그인 하는 유저가 직접 자신이 받아야 하는 선물들 받기)
 	- 스크립트 DB에 저장 (서버 재시작하지 않고 확률의 변화를 위해)
 
 ## 락인컴퍼니(QA Team)
@@ -111,9 +111,9 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 ## ~~AI~~  
     ~~tensorflow CNN~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY5Njc0NDU5LC02MTIyNzE1NjUsLTEwMT
-g3OTAzNTQsLTE1NDk2NDU3NzYsNjk4OTY3MjI2LDc3MDkwODg5
-LC00ODYyNjY4MTAsMTMyMjQ3NTYzNiwxNjIyMzUyMjkwLDExNT
-g4OTc1NDksLTE4NDQzNzQzLC0xNTQyODkwMTQ5LDE4MzcyMjkx
-MTZdfQ==
+eyJoaXN0b3J5IjpbNjUzNzQyNjc5LDc2OTY3NDQ1OSwtNjEyMj
+cxNTY1LC0xMDE4NzkwMzU0LC0xNTQ5NjQ1Nzc2LDY5ODk2NzIy
+Niw3NzA5MDg4OSwtNDg2MjY2ODEwLDEzMjI0NzU2MzYsMTYyMj
+M1MjI5MCwxMTU4ODk3NTQ5LC0xODQ0Mzc0MywtMTU0Mjg5MDE0
+OSwxODM3MjI5MTE2XX0=
 -->
