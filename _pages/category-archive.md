@@ -6,10 +6,13 @@ excerpt: "Categories Include"
 #layout: post
 permalink: /categories/
 ---
+Page url:
+{{page.url}}
 
 
   {% for pages in site.pages %}
     {% if pages.categories %}
+    {{pages.url}}
 
   *   [{{pages.title}}]({{pages.url}})
 
