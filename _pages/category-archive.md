@@ -10,6 +10,7 @@ Test 2
 
   {% for pages in site.pages %}
     {% if pages.categories %}
+      {{pages.url}}
       
   *   [{{pages.title}}]({{pages.url}})
 
