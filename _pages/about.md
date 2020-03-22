@@ -40,7 +40,7 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 
 * 배운 점
 	- batch 방식으로 User에게 Item 부여 (로그인 하는 유저가 직접 자신이 받아야 하는 선물들 받기)
-	- 스크립트 DB에 저장 (서버 재시작하지 않고 확률의 변화를 위해)
+	- 스크립트 DB에 저장 (서버 재시작하지 않고 확률의 변화를 위해) -> 이거는 mBe
 	- JDBC 는 객체로 DB에 저장위해서 (기존에는 mybatis를 사용하지만 객체 전체를 DB에 저장하기위해 JDBC를 사용)
 
 ## 락인컴퍼니(QA Team)
@@ -111,9 +111,9 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 ## ~~AI~~  
     ~~tensorflow CNN~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzExNjQzOTIsNjUzNzQyNjc5LDc2OT
-Y3NDQ1OSwtNjEyMjcxNTY1LC0xMDE4NzkwMzU0LC0xNTQ5NjQ1
-Nzc2LDY5ODk2NzIyNiw3NzA5MDg4OSwtNDg2MjY2ODEwLDEzMj
-I0NzU2MzYsMTYyMjM1MjI5MCwxMTU4ODk3NTQ5LC0xODQ0Mzc0
-MywtMTU0Mjg5MDE0OSwxODM3MjI5MTE2XX0=
+eyJoaXN0b3J5IjpbODg0NDc5MTQ3LC0xMDMxMTY0MzkyLDY1Mz
+c0MjY3OSw3Njk2NzQ0NTksLTYxMjI3MTU2NSwtMTAxODc5MDM1
+NCwtMTU0OTY0NTc3Niw2OTg5NjcyMjYsNzcwOTA4ODksLTQ4Nj
+I2NjgxMCwxMzIyNDc1NjM2LDE2MjIzNTIyOTAsMTE1ODg5NzU0
+OSwtMTg0NDM3NDMsLTE1NDI4OTAxNDksMTgzNzIyOTExNl19
 -->
