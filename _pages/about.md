@@ -23,7 +23,7 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 # Experience
   
 ## ACEPROJECT(Server team)
-	`Intern • Jul, 2019 — Aug 2019`
+`Intern • Jul, 2019 — Aug 2019`
 
 * 과제
 	* [Board](https://github.com/choiseonjae/Board_aceproject)
@@ -111,8 +111,9 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 ## ~~AI~~  
     ~~tensorflow CNN~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMjI3MTU2NSwtMTAxODc5MDM1NCwtMT
-U0OTY0NTc3Niw2OTg5NjcyMjYsNzcwOTA4ODksLTQ4NjI2Njgx
-MCwxMzIyNDc1NjM2LDE2MjIzNTIyOTAsMTE1ODg5NzU0OSwtMT
-g0NDM3NDMsLTE1NDI4OTAxNDksMTgzNzIyOTExNl19
+eyJoaXN0b3J5IjpbNzY5Njc0NDU5LC02MTIyNzE1NjUsLTEwMT
+g3OTAzNTQsLTE1NDk2NDU3NzYsNjk4OTY3MjI2LDc3MDkwODg5
+LC00ODYyNjY4MTAsMTMyMjQ3NTYzNiwxNjIyMzUyMjkwLDExNT
+g4OTc1NDksLTE4NDQzNzQzLC0xNTQyODkwMTQ5LDE4MzcyMjkx
+MTZdfQ==
 -->
