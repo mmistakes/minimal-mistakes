@@ -24,7 +24,7 @@ description              : "This Website will be a collections of my personal Wo
 #url                      : "https://mmistakes.github.io"
 url                      : "https://abdulrabbani347.github.io"
 #baseurl                  : "/blog"
-#baseurl                  : "/mininal_mistakes"
+baseurl                  : "/mininal_mistakes"
 #repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 repository               : "abdulrabbani347/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
