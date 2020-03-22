@@ -1655,13 +1655,13 @@ ga-IE:
   <<: *DEFAULT_GA
 
 
-# Finnish
+# Finnish / Suomi
 # -----------------
 fi: &DEFAULT_FI
   skip_links                 : "Ohita linkit"
   skip_primary_nav           : "Hyppää pää navigaatioon"
   skip_content               : "Hyppää sisältöön"
-  skip_footer                : "Hyppää footeriin"
+  skip_footer                : "Hyppää alareunaan"
   page                       : "Sivu"
   pagination_previous        : "Edellinen"
   pagination_next            : "Seuraava"
