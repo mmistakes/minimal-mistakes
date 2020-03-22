@@ -116,17 +116,20 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 
   
 ## Database
-    MySQL, Elastic Search, Google Cloud SQL for MySQL, firebase realtime database
+* MySQL
+* Elastic Search
+* Google Cloud SQL for MySQL
+* firebase realtime database
 
   
 ## ~~AI~~  
-    ~~tensorflow CNN~~
+~~tensorflow CNN~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY5MzgyNzgsMTQwMjMzNjI2MCwtMTI1MT
-YwMDE5Niw0MTk4Njk5OTAsLTE4Nzg4OTY0NzcsLTEwMzExNjQz
-OTIsNjUzNzQyNjc5LDc2OTY3NDQ1OSwtNjEyMjcxNTY1LC0xMD
-E4NzkwMzU0LC0xNTQ5NjQ1Nzc2LDY5ODk2NzIyNiw3NzA5MDg4
-OSwtNDg2MjY2ODEwLDEzMjI0NzU2MzYsMTYyMjM1MjI5MCwxMT
-U4ODk3NTQ5LC0xODQ0Mzc0MywtMTU0Mjg5MDE0OSwxODM3MjI5
-MTE2XX0=
+eyJoaXN0b3J5IjpbMTcyNDMyOTA2OCwzNjkzODI3OCwxNDAyMz
+M2MjYwLC0xMjUxNjAwMTk2LDQxOTg2OTk5MCwtMTg3ODg5NjQ3
+NywtMTAzMTE2NDM5Miw2NTM3NDI2NzksNzY5Njc0NDU5LC02MT
+IyNzE1NjUsLTEwMTg3OTAzNTQsLTE1NDk2NDU3NzYsNjk4OTY3
+MjI2LDc3MDkwODg5LC00ODYyNjY4MTAsMTMyMjQ3NTYzNiwxNj
+IyMzUyMjkwLDExNTg4OTc1NDksLTE4NDQzNzQzLC0xNTQyODkw
+MTQ5XX0=
 -->
