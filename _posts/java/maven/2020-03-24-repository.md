@@ -23,9 +23,9 @@ last_modified_at: 2020-03-24T08:33:00 # 마지막 변경일
 기존에는 필요한 라이브러리를 다운받아 넣어줘야 사용할 수 있던 것을 pom.xml에 태그만 기술함으로서 쉽게 라이브러리를 사용할 수 있게 되었다.  
 그렇게 할 수 있는데에는 중앙 저장소 덕분이다.  
 
-중앙 저장소는 일종의 라이브러리 보관 장소이고, 메이븐을 개발한 아파치 소프트웨어 재단이 운영하는 사이트이다.
+중앙 저장소는 일종의 라이브러리 보관 장소이고, 메이븐을 개발한 아파치 소프트웨어 재단이 운영하는 [사이트](https://repo1.maven.org/maven2/)이다.
 
-주소를 지정해 메이브 추가가 가능하지만 아무것도 지정하지 않으면 **기본값으로 메이븐 중앙 저장소**로 지정된다.  
+주소를 지정해 원하는 저장소로 지정 가능하지만 아무것도 지정하지 않으면 **기본값으로 메이븐 중앙 저장소(https://repo1.maven.org/maven2/)**로 지정된다.  
 
 
 ```
@@ -65,5 +65,5 @@ pom.xml에 [plugin](https://choiseonjae.github.io/plugin/%EA%B0%9C%EC%9A%94/)을
 *  [자바 프로젝트 필수 유틸리티](https://books.google.co.kr/books/about/%EC%9E%90%EB%B0%94_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%ED%95%84%EC%88%98_%EC%9C%A0%ED%8B%B8%EB%A6%AC%ED%8B%B0.html?id=jZdaDwAAQBAJ&printsec=frontcover&source=kp_read_button&redir_esc=y#v=onepage&q&f=false)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA2MDMxMTg5XX0=
+eyJoaXN0b3J5IjpbMTAyMDkyOTI2OV19
 -->
