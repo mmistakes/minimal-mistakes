@@ -30,7 +30,11 @@ last_modified_at: 2020-03-24T08:33:00 # 마지막 변경일
 실제 사이트로 들어가보면 단순히 프로그램 이름(그룹ID, 아티팩트ID)로 디렉토리를 나누어 공개하고 있을 뿐 원하는 라이브러리를 찾기는 쉽지 않다.  
 즉, 메이븐이 찾기에는 좋은 곳이지만 사용자가 원하는 라이브러리를 조사하기 위해 접속해봐도 별 도움은 되지 않는다.  
 
-그래서 중앙 저장소에 등록된 라이브러리를 쉽게 검색해볼수 있는 [사이트]가 있다.
+그래서 중앙 저장소에 등록된 라이브러리를 쉽게 검색해볼수 있는 [사이트](https://search.maven.org/)가 있다.  
+검색 창에 원하는 소프트웨어 이름을 입력하면 결과가 나온다.
+
+
+
 
 
 
@@ -71,5 +75,5 @@ pom.xml에 [plugin](https://choiseonjae.github.io/plugin/%EA%B0%9C%EC%9A%94/)을
 *  [자바 프로젝트 필수 유틸리티](https://books.google.co.kr/books/about/%EC%9E%90%EB%B0%94_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%ED%95%84%EC%88%98_%EC%9C%A0%ED%8B%B8%EB%A6%AC%ED%8B%B0.html?id=jZdaDwAAQBAJ&printsec=frontcover&source=kp_read_button&redir_esc=y#v=onepage&q&f=false)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzEyNzQ3MzZdfQ==
+eyJoaXN0b3J5IjpbMTYyMjc3MDAxMl19
 -->
