@@ -1555,7 +1555,7 @@ hi: &DEFAULT_HI
   back_to_top                : "शीर्ष पर वापस"
 hi-IN:
   <<: *DEFAULT_HI
-  
+
 # Catalan
 # --------------
 ca: &DEFAULT_CA
@@ -1607,7 +1607,7 @@ ca: &DEFAULT_CA
   back_to_top                : "Torna a dalt"
 ca-ES:
   <<: *DEFAULT_CA
-  
+
 # Irish (Gaeilge)
 # --------------
 ga: &DEFAULT_GA
@@ -1653,6 +1653,57 @@ ga: &DEFAULT_GA
   back_to_top                : "Ar ais go barr"
 ga-IE:
   <<: *DEFAULT_GA
+
+
+# Finnish / Suomi
+# -----------------
+fi: &DEFAULT_FI
+  skip_links                 : "Ohita linkit"
+  skip_primary_nav           : "Hyppää pää navigaatioon"
+  skip_content               : "Hyppää sisältöön"
+  skip_footer                : "Hyppää alareunaan"
+  page                       : "Sivu"
+  pagination_previous        : "Edellinen"
+  pagination_next            : "Seuraava"
+  breadcrumb_home_label      : "Etusivu"
+  breadcrumb_separator       : "/"
+  menu_label                 : "Avaa valikko"
+  search_label               : "Avaa haku"
+  toc_label                  : "Tällä sivulla"
+  ext_link_label             : "Suora linkki"
+  less_than                  : "vähemmän kuin"
+  minute_read                : "lukuaika"
+  share_on_label             : "Jaa"
+  meta_label                 :
+  tags_label                 : "Tagit:"
+  categories_label           : "Kategoriat:"
+  date_label                 : "Päivitetty:"
+  comments_label             : "Jätä kommentti"
+  comments_title             : "Kommentit"
+  more_label                 : "Lisää"
+  related_label              : "Voit olla kiinnostunut myös"
+  follow_label               : "Seuraa:"
+  feed_label                 : "Syöte"
+  powered_by                 : "Voimanlähteenä"
+  website_label              : "Websivu"
+  email_label                : "Email"
+  recent_posts               : "Viimeisimmät postaukset"
+  undefined_wpm              : "words_per_minute asetusta ei ole määritelty _config.yml tiedostossa"
+  comment_form_info          : "Your email address will not be published. Required fields are marked"
+  comment_form_comment_label : "Kommentti"
+  comment_form_md_info       : "Tukee markdown muotoilua."
+  comment_form_name_label    : "Nimi"
+  comment_form_email_label   : "Email osoite"
+  comment_form_website_label : "Webbisivu (vapaaehtoinen)"
+  comment_btn_submit         : "Lähetä"
+  comment_btn_submitted      : "Lähetetty"
+  comment_success_msg        : "Kiitos kommentista, se julkaistaan tällä sivulla moderoinnin jälkeen."
+  comment_error_msg          : "Tarkista että olet täyttänyt kaikki kentät ja yritä uudelleen."
+  loading_label              : "Ladataan..."
+  search_label_text          : "Hakusana..."
+  search_placeholder_text    : "Hakusana..."
+  results_found              : "Tulosta"
+  back_to_top                : "Ylös"
 
 # Another locale
 # --------------
