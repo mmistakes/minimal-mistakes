@@ -12,6 +12,30 @@ sidebar:
   nav: ''
 ---
 
+18.03.2020 17:00 Uhr
+
+# Ergänzende Lernangebote des öffentlich-rechtlichen Rundfunks
+
+Liebe Elternvertreter*innen,
+
+ich bitte um Weiterleitung dieser Nachricht an die Eltern Ihrer Klassen.
+
+Die Senatsverwaltung empfiehlt ergänzende Lernangebote:
+
+Senatsverwaltung für Bildung, Jugend und Familie (\@SenBJF) hat getwittert: Ergänzende Lernangebote des öffentlich-rechtlichen Rundfunks für Groß und Klein gibt es hier:
+* [https://t.co/vsQKMGcys0](https://t.co/vsQKMGcys0)
+* [https://t.co/CrkBzL6Mcp](https://t.co/CrkBzL6Mcp)
+* [https://t.co/HabczL6PaQ](https://t.co/HabczL6PaQ)
+
+\#Coronavirus \#COVID2019 \#Berlin
+[https://twitter.com/SenBJF/status/1240236309827985408?s=20](https://twitter.com/SenBJF/status/1240236309827985408?s=20)
+
+Viele Grüße
+
+Stephanie Lehmann
+
+---
+
 18.03.2020 12:30 Uhr
 
 # Bewegung ist wichtig und macht Spaß – Digitale Sportstunde, Einschalten und Mitmachen auf youtube
