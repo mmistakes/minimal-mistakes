@@ -12,6 +12,23 @@ sidebar:
   nav: ''
 ---
 
+19.03.2020 15:00 Uhr
+
+# Tipps für Familien
+
+Liebe Eltern,
+
+das Schulpsychologische und Inklusionspädagogische Beratungs- und Unterstützungszentrum (SIBUZ) hat einen Infobrief mit
+Tipps für Familien verfasst.
+
+[<i class="fa fa-download">&nbsp;</i>Infobrief vom SIBUZ (pdf) ](https://www.berlin.de/sen/bildung/unterstuetzung/beratungszentren-sibuz/sibuz-infobrief/infobrief-extra.pdf){: .btn .btn--success}
+
+Viele Grüße
+
+Stephanie Lehmann
+
+---
+
 18.03.2020 17:00 Uhr
 
 # Ergänzende Lernangebote des öffentlich-rechtlichen Rundfunks
