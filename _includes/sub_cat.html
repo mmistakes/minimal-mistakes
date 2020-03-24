@@ -1,0 +1,9 @@
+## Below are some sub-categories within {{page.title}}
+  {% for pages in site.pages %}
+    {% if pages.url contains page.categories[-1] and pages.permalink != page.permalink %}
+
+
+  *   [{{pages.title}}]({{pages.url | prepend:site.baseurl  }})
+
+    {% endif %}
+  {% endfor %}

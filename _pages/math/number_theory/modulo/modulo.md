@@ -1,11 +1,12 @@
 ---
-title: "Math"
+title: "Modulo Arithmetic"
 author: "Abdul"
 layout: single
-excerpt: "category math"
 categories:
   - math
-permalink: /categories/math/
+  - number_theory
+  - modulo
+permalink: /categories/math/number_theory/modulo/
 ---
 {% include main_cat.html %}
 {% include sub_cat.html %}
