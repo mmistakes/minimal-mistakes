@@ -61,9 +61,33 @@ mvn build, mvn package, mvn exec:java 등 pom.xml을 수정, 추가 한 뒤 goal
 
 위와 유사한 메세지가 출력되는 경우 몇 가지 해결 방법이 있다.
 
+## 다시 한번 Install 한다.
+
+- 본인의 경우도 Error Test를 하며 두, 세번 돌리다보면 되는 경우가 있다.
+
+  
+
+## Project에서 Clean을 한다
+
+- 상단 메뉴 [Project] - [Clean] 프로젝트가 클린이 되는 경우 될 때가 있다.
+
+  
+
+## .m2폴더를 삭제 후 다시 Install
+
+- 사용자 폴더를 접속하면 .m2 폴더가 있다. 해당 폴더를 STS를 종료한 후 삭제 후 다시 실행, Install시 되는 경우가 있다.
+
+  
+
+## tools.jar를 등록해준다.
+밑에 방법은 [해당 블로그][https://pnot.tistory.com/6](https://pnot.tistory.com/6)를 참조해라!
+
+  
+  
+출처: [https://pnot.tistory.com/6](https://pnot.tistory.com/6) [프로그래밍 노트]
 
 # Reference
 *  [프로그래밍 노트](https://pnot.tistory.com/6) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTMwNjc4MzcxXX0=
+eyJoaXN0b3J5IjpbMTMzMTU4MDY3Nl19
 -->
