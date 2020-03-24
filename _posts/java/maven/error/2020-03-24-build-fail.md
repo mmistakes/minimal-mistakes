@@ -1,5 +1,5 @@
 ---
-title: Maven 빌드 시 Build Fail 오류 해결 
+title: Maven 빌드 시 Build Fail 오류 해결 방법
 categories:  
 - java 
 - maven
@@ -22,42 +22,43 @@ last_modified_at: 2020-03-23T16:15:00 # 마지막 변경일
 
 ---
 
-```
-mvn package
-```
-위 명령어를 통해 만든 jar 파일은 manifest 속성이 빠져있다면 실행이 불가능하다.  
+====================== Error Message ======================
 
+[INFO] ------------------------------------------------------------------------
 
-pom.xml에 manifest 속성을 추가해 줘야하는 데 이는 [plugin](https://choiseonjae.github.io/plugin/%EA%B0%9C%EC%9A%94/)을 추가 해줘야한다.  
+[INFO] BUILD FAILURE
 
+[INFO] ------------------------------------------------------------------------
 
-```xml
-<plugin>
-	<groupId>org.apache.maven.plugins</groupId>
-	<artifactId>maven-jar-plugin</artifactId>
-	<version>[버전]</version>
-	<configuration>
-		<archive>
-			<manifest>
-				<addClasspath>true</addClasspath>
-				<mainClass>[메인 클래스]</mainClass>
-			</manifest>
-		</archive>
-	</configuration>
-</plugin>
-```
+[INFO] Total time: 1.320 s
 
-maven-jar-plugin은 `<configuration>` 내에 `<archive>` 태그를 두는데, 이는 압축에 관한 설정이다.  
+[INFO] Finished at: 2016-09-15T23:01:07+09:00
 
+[INFO] Final Memory: 8M/153M
 
-그 안에 `<manifest>` 태그를 두고 **두 가지 태그**를 배치하는데  
-* `<addClasspath>`는 클래스 경로에 JAR 파일이 있는 경로를 추가하기 위한 태그인데 보통은 **true**로 지정해 놓는다.
-* `<mainClass>`는 실행할 **메인 클래스**를 지정한다.  
+[INFO] ------------------------------------------------------------------------
+
+**[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:2.5.1:compile (default-compile) on project set: Fatal error compiling: tools.jar** **not found: C:\Program Files\Java\jre1.8.0_102\..\lib\tools.jar**  -> [Help 1]
+
+[ERROR]
+
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+
+[ERROR]
+
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+
+======================================================
+
+위와 같은 
 
 
 # Reference
-*  [자바 프로젝트 필수 유틸리티](https://books.google.co.kr/books/about/%EC%9E%90%EB%B0%94_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%ED%95%84%EC%88%98_%EC%9C%A0%ED%8B%B8%EB%A6%AC%ED%8B%B0.html?id=jZdaDwAAQBAJ&printsec=frontcover&source=kp_read_button&redir_esc=y#v=onepage&q&f=false)
-
+*  [프로그래밍 노트](https://pnot.tistory.com/6) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMTQwMjU2OF19
+eyJoaXN0b3J5IjpbOTMwMzE1MTk1XX0=
 -->
