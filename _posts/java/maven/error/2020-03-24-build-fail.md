@@ -21,6 +21,9 @@ toc_sticky: true # 스크롤 내릴때 같이 내려가는 목차
 last_modified_at: 2020-03-23T16:15:00 # 마지막 변경일
 
 ---
+mvn build, mvn package, mvn exec:java 등 pom.xml을 수정, 추가 한 뒤 goal을 수행하면 오류가 발생하는 경우가 간혹 있다.  
+
+# 오류 메세지
 
 ====================== Error Message ======================
 
@@ -54,11 +57,13 @@ last_modified_at: 2020-03-23T16:15:00 # 마지막 변경일
 
 ======================================================
 
-위와 같은 
+# 해결 방법
+
+위와 유사한 메세지가 출력되는 경우 몇 가지 해결 방법이 있다.
 
 
 # Reference
 *  [프로그래밍 노트](https://pnot.tistory.com/6) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTMwMzE1MTk1XX0=
+eyJoaXN0b3J5IjpbOTMwNjc4MzcxXX0=
 -->
