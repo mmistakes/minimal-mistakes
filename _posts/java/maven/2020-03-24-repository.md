@@ -33,6 +33,11 @@ last_modified_at: 2020-03-24T08:33:00 # 마지막 변경일
 그래서 중앙 저장소에 등록된 라이브러리를 쉽게 검색해볼수 있는 [사이트](https://search.maven.org/)가 있다.  
 검색 창에 원하는 소프트웨어 이름을 입력하면 결과가 나온다.
 
+메이븐 중앙 저장소를 이용하는 방법은 [해당 포스팅]을 참고하면 된다.  
+
+
+
+
 
 
 
@@ -75,5 +80,5 @@ pom.xml에 [plugin](https://choiseonjae.github.io/plugin/%EA%B0%9C%EC%9A%94/)을
 *  [자바 프로젝트 필수 유틸리티](https://books.google.co.kr/books/about/%EC%9E%90%EB%B0%94_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%ED%95%84%EC%88%98_%EC%9C%A0%ED%8B%B8%EB%A6%AC%ED%8B%B0.html?id=jZdaDwAAQBAJ&printsec=frontcover&source=kp_read_button&redir_esc=y#v=onepage&q&f=false)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMjc3MDAxMl19
+eyJoaXN0b3J5IjpbLTE3NTg0MjcyOTgsMTYyMjc3MDAxMl19
 -->
