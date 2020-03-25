@@ -35,6 +35,8 @@ last_modified_at: 2020-03-24T08:33:00 # 마지막 변경일
 
 메이븐 중앙 저장소를 이용하는 방법은 [해당 포스팅](https://choiseonjae.github.io/java/maven/repository/central/)을 참고하면 된다.  
 
+# 로컬 저장소
+
 # 원격 저장소
 
 
@@ -53,6 +55,6 @@ last_modified_at: 2020-03-24T08:33:00 # 마지막 변경일
 * [메이븐 중앙 저장소](https://repo1.maven.org/maven2/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMjIzMDQzMiw3MzM0ODYzMzUsMTYyMj
-c3MDAxMl19
+eyJoaXN0b3J5IjpbLTE3NzA5MTU2MDgsMTgzMjIzMDQzMiw3Mz
+M0ODYzMzUsMTYyMjc3MDAxMl19
 -->
