@@ -34,7 +34,7 @@ last_modified_at: 2020-03-25T10:02:00 # 마지막 변경일
 
 즉, 컴퓨터가 이해할 수 있는 기계어로 변환하는 작업이다. 이러한 작업을 해주는 프로그램을 가르켜 컴파일러(Compiler)라 한다.
 
-자바의 경우, 자바가상머신(JVM)에서 실행가능한 바이트코드 형태의 클래스파일이 생성이 된다.
+자바의 경우, 자바가상머신(JVM)에서 실행가능한 바이트코드 형태의 클래스파일(`.class`)이 생성이 된다.
 
   
 
@@ -83,6 +83,6 @@ last_modified_at: 2020-03-25T10:02:00 # 마지막 변경일
 * [갓대희의 작은공간](https://goddaehee.tistory.com/199)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyODE3MTA0NiwyMDc5MjY5NjQzLC0xMD
+eyJoaXN0b3J5IjpbMTY4MzY5NTM5NywyMDc5MjY5NjQzLC0xMD
 E1MjY5Nzc3XX0=
 -->
