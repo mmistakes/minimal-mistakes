@@ -43,9 +43,12 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 
 
 * 배운 점
-	- batch 방식으로 User에게 Item 부여 (로그인 하는 유저가 직접 자신이 받아야 하는 선물들 받기)
+	- batch 방식으로 User에게 Item 부여 
+		- 일반적으로, (로그인 하는 유저가 직접 자신이 받아야 하는 선물들 받기)
+
 	- 스크립트 DB에 저장 (서버 재시작하지 않고 확률의 변화를 위해)
 	> 이거는 js를 사용하는 방식으로 해도 됬을텐데(인터프리터) 오히려 내가 봤을 땐 유지보수만 안 좋아지는 거 같다.
+
 	- JDBC 는 객체로 DB에 저장위해서 (기존에는 mybatis를 사용하지만 객체 전체를 DB에 저장하기위해 JDBC를 사용)
 
 ## 락인컴퍼니(QA Team)
@@ -125,11 +128,11 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 ## ~~AI~~  
 ~~tensorflow CNN~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNDMyOTA2OCwzNjkzODI3OCwxNDAyMz
-M2MjYwLC0xMjUxNjAwMTk2LDQxOTg2OTk5MCwtMTg3ODg5NjQ3
-NywtMTAzMTE2NDM5Miw2NTM3NDI2NzksNzY5Njc0NDU5LC02MT
-IyNzE1NjUsLTEwMTg3OTAzNTQsLTE1NDk2NDU3NzYsNjk4OTY3
-MjI2LDc3MDkwODg5LC00ODYyNjY4MTAsMTMyMjQ3NTYzNiwxNj
-IyMzUyMjkwLDExNTg4OTc1NDksLTE4NDQzNzQzLC0xNTQyODkw
-MTQ5XX0=
+eyJoaXN0b3J5IjpbLTU1Mzc3MjY3MCwxNzI0MzI5MDY4LDM2OT
+M4Mjc4LDE0MDIzMzYyNjAsLTEyNTE2MDAxOTYsNDE5ODY5OTkw
+LC0xODc4ODk2NDc3LC0xMDMxMTY0MzkyLDY1Mzc0MjY3OSw3Nj
+k2NzQ0NTksLTYxMjI3MTU2NSwtMTAxODc5MDM1NCwtMTU0OTY0
+NTc3Niw2OTg5NjcyMjYsNzcwOTA4ODksLTQ4NjI2NjgxMCwxMz
+IyNDc1NjM2LDE2MjIzNTIyOTAsMTE1ODg5NzU0OSwtMTg0NDM3
+NDNdfQ==
 -->
