@@ -241,12 +241,12 @@
         font-family:"Nanum Gothic",sans-serif;
         font-weight:700; 
         position:relative;
-        border: 5px; 
-        border-radius:4px;
-        border-color:#259ce0;
-        border-left-style:solid;
-        border-left-width:.25em;
-        padding-left:.25em;
+        border: 5px !important;
+        border-radius:4px !important;
+        border-color:#259ce0 !important;
+        border-left-style:solid !important;
+        border-left-width:.25em !important;
+        padding-left:.25em !important;
         font-weight:700
     }
   }
