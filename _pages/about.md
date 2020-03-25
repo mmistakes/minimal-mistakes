@@ -45,10 +45,11 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 * 배운 점
 	- batch 방식으로 User에게 Item 부여 
 		- 일반적으로, 이벤트를 하거나 특정 유저에게 아이템을 뿌릴 때 **해당하는 모든 유저의 DB**에 정보를 넣는다고 생각했다.  
-		- 굳이 접속하지 않는 유저에게 미리 아이템을 주거나 만료시키는 추가 코스트가 발생함으로 로그인 시 유저가 직접 자신이 받을 수 있는 아이템들을 챙겨가는 구조로 코드를 짤 수 있는 것을 배웠다.  
 
-	- 스크립트 DB에 저장 (서버 재시작하지 않고 확률의 변화를 위해)
-	> 이거는 js를 사용하는 방식으로 해도 됬을텐데(인터프리터) 오히려 내가 봤을 땐 유지보수만 안 좋아지는 거 같다.
+		- 굳이 접속하지 않는 유저에게 미리 아이템을 주거나 만료시키는 추가 코스트가 발생함으로 **로그인 시 유저가 직접 자신이 받을 수 있는 아이템들을 챙겨가는 구조**로 코드를 짤 수 있는 것을 배웠다.  
+
+	- 스크립트 DB에 저장 (서버 재시작하지 않고 확률 등의 수정 가능)
+	> 이거는 js(인터프리터) 등을 사용하는 방식으로 해도 됬을텐데 오히려 내가 봤을 땐 유지보수만 안 좋아지는 거 같다.
 
 	- JDBC 는 객체로 DB에 저장위해서 (기존에는 mybatis를 사용하지만 객체 전체를 DB에 저장하기위해 JDBC를 사용)
 
@@ -129,7 +130,7 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 ## ~~AI~~  
 ~~tensorflow CNN~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2NDcxMjgyOCwxNzI0MzI5MDY4LDM2OT
+eyJoaXN0b3J5IjpbMTI2Mzg3MjUxNiwxNzI0MzI5MDY4LDM2OT
 M4Mjc4LDE0MDIzMzYyNjAsLTEyNTE2MDAxOTYsNDE5ODY5OTkw
 LC0xODc4ODk2NDc3LC0xMDMxMTY0MzkyLDY1Mzc0MjY3OSw3Nj
 k2NzQ0NTksLTYxMjI3MTU2NSwtMTAxODc5MDM1NCwtMTU0OTY0
