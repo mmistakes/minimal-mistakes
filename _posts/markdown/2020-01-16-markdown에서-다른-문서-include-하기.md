@@ -2,7 +2,7 @@
 title: Jekyll, 마크다운 문법에서 다른 문서 include 하기
 
 categories: 
-   - Github.io
+   - github
    
 tags:
    - markdown
@@ -96,5 +96,5 @@ include 할 땐, 문서의 확장자도 적어줘야 합니다.<br>
 # reference
 - [jekyllrb](https://jekyllrb-ko.github.io/docs/includes/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjM0MjgyNzhdfQ==
+eyJoaXN0b3J5IjpbOTEyNzEwODg4XX0=
 -->
