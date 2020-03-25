@@ -10,11 +10,11 @@
 @import url(https://fonts.googleapis.com/css?family=Nanum+Gothic);
 @import url(https://fonts.googleapis.com/css?family=Hi+Melody);
 
-@content h1,
-@content h2,
-@content h3,
-@content h4,
-@content h5{
+content.h1,
+content.h2,
+content.h3,
+content.h4,
+content.h5{
   font-family:"Nanum Gothic",sans-serif;
   font-weight:700;
   position:relative;
@@ -26,32 +26,4 @@
   font-weight:700
 }
 
-@content h1:after,
-@content h2:after,
-@content h3:after,
-@content h4:after,
-@content h5:after{
-  content:"";
-  position:absolute;
-  bottom:0;
-  left:0;right:0;
-  height:1px;
-  background-image:-ms-linear-gradient(left,#259ce0,#fff);
-  background-image:-webkit-linear-gradient(left,#259ce0,#fff);
-  background-image:-moz-linear-gradient(left,#259ce0,#fff);
-  background-image:-o-linear-gradient(left,#259ce0,#fff)}#content h1{font-size:2rem;
-  padding-top:.6em;
-  padding-bottom:.6em;
-  margin-top:2em;
-  border-left-width:.35em
-}
-
-@content h2{font-size:1.8rem;padding-top:.5em;padding-bottom:.5em;margin-top:1.75em;border-left-width:.3em}
-@content h2:hover{cursor:pointer}
-@content h3{font-size:1.6rem;padding-top:.4em;padding-bottom:.4em;margin-top:1.5em;border-left-width:.25em}
-@content h3:hover{cursor:pointer}
-@content h4{font-size:1.4rem;padding-top:.3em;padding-bottom:.3em;margin-top:1.25em;border-left-width:.2em}
-@content h4:hover{cursor:pointer}
-@content h5{font-size:1.2rem;padding-top:.2em;padding-bottom:.2em;margin-top:1em;border-left-width:.15em}
-@content h5:hover{cursor:pointer}
 
