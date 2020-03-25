@@ -228,29 +228,6 @@
     }
   }
   
-  /*
-   page 안에 content의 헤더 색 변경
-   ========================================================================== */
-  section.page__content{
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family:"Nanum Gothic",sans-serif;
-        font-weight:700; 
-        position:relative;
-        border: 5px !important;
-        border-radius:4px !important;
-        border-color:#259ce0 !important;
-        border-left-style:solid !important;
-        border-left-width:.25em !important;
-        padding-left:.25em !important;
-        font-weight:700
-    }
-  }
-
 /*
    Hide the following elements on print
    ========================================================================== */
