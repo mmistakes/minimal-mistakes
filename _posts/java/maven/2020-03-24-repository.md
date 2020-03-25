@@ -20,9 +20,13 @@ toc_sticky: true # 스크롤 내릴때 같이 내려가는 목차
 last_modified_at: 2020-03-24T08:33:00 # 마지막 변경일
 
 ---
+
 기존에는 필요한 **라이브러리를 다운**받아 넣어줘야 사용할 수 있던 것을 **pom.xml에 태그만 기술**함으로서 쉽게 라이브러리를 사용할 수 있게 되었다.  **메이븐 중앙 저장소** 덕분이다.  
 
-중앙 저장소는 일종의 라이브러리 보관 장소이고, 메이븐을 개발한 아파치 소프트웨어 재단이 운영하는 [사이트](https://repo1.maven.org/maven2/)이다.
+<br>
+
+# 저장소
+저장소는 일종의 라이브러리 보관 장소이고, 메이븐을 개발한 아파치 소프트웨어 재단이 운영하는 [사이트](https://repo1.maven.org/maven2/)이다.
 
 주소를 지정해 원하는 저장소로 지정 가능하지만 아무것도 지정하지 않으면 **기본값으로 [메이븐 중앙 저장소](https://repo1.maven.org/maven2/)**이 지정된다.  
 
@@ -30,13 +34,11 @@ last_modified_at: 2020-03-24T08:33:00 # 마지막 변경일
 즉, 메이븐이 찾기에는 좋은 곳이지만 사용자가 원하는 라이브러리를 조사하기 위해 접속해봐도 별 도움은 되지 않는다.  
 
 그래서 중앙 저장소에 등록된 라이브러리를 쉽게 검색해볼수 있는 [사이트](https://search.maven.org/)가 있다.  
-검색 창에 원하는 소프트웨어 이름을 입력하면 결과가 나온다.
+> 이용하는 방법은 [해당 포스팅](https://choiseonjae.github.io/java/maven/repository/central/)을 참고하면 된다.  
 
-메이븐 중앙 저장소를 이용하는 방법은 [해당 포스팅](https://choiseonjae.github.io/java/maven/repository/central/)을 참고하면 된다.  
+## 로컬 저장소
 
-# 로컬 저장소
-
-# 원격 저장소
+## 원격 저장소
 
 
 
@@ -54,6 +56,6 @@ last_modified_at: 2020-03-24T08:33:00 # 마지막 변경일
 * [메이븐 중앙 저장소](https://repo1.maven.org/maven2/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0NzA3NDg4MywxODMyMjMwNDMyLDczMz
-Q4NjMzNSwxNjIyNzcwMDEyXX0=
+eyJoaXN0b3J5IjpbLTE2MTQ1OTAzNjAsMTgzMjIzMDQzMiw3Mz
+M0ODYzMzUsMTYyMjc3MDAxMl19
 -->
