@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ### ADD a title
+title: New paper Bart
 categories: blog
 excerpt: ### ADD a short description
 tags: [] ### INSERT TAGS IF APPLICABLE
