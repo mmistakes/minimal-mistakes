@@ -11,7 +11,7 @@ const banner = `/*!
  * Minimal Mistakes Jekyll Theme ${pkg.version} by ${pkg.author}
  * Copyright 2013-${dateObj.getFullYear()} Michael Rose - mademistakes.com | @mmistakes
  * Licensed under ${pkg.license}
- * this is just a test line created by PunchDeck
+ * this is just a test line created by PunchDeck1
  */
 `;
 
