@@ -67,22 +67,23 @@ last_modified_at: 2020-03-25T08:44:00 # 마지막 변경일
 
 - 소스코드 파일을 컴퓨터에서 실행할 수 있는 독립 소프트웨어 가공물로 변환하는 과정 또는 그에 대한 결과물 이다.  
 
-- 즉, 우리가 작성한 소스코드(java), 프로젝트에서 쓰인 각각의 파일 및 자원 등(.xml, .jpg, .jar, .properties)을 JVM이나 톰캣같은 WAS가 인식할 수 있는 구조로 패키징 하는 과정 및 결과물이라고 할 수 있다.
-
-* 소스코드 파일을 실행가능한 소프트웨어 산출물로 만드는 일련의 과정을 말한다.
+- 즉, 우리가 작성한 **소스코드**(java), 프로젝트에서 쓰인 각각의 **파일 및 자원** 등(.xml, .jpg, .jar, .properties)을 JVM이나 톰캣같은 WAS가 **인식할 수 있는 구조로 패키징 하는 과정** 및 결과물이라고 할 수 있다.
 
 * 빌드의 단계 중 컴파일이 포함이 되어 있는데 컴파일은 빌드의 부분집합이라 할 수 있다.
 
 
-3-1. 빌드 툴(Build Tool)
+### 빌드 툴(Build Tool)
 
 * 빌드 과정을 도와주는 도구를 빌드 툴이라 한다.
 
-일반적으로 빌드 툴이 제공해주는 기능으로는 다음과 같은 기능들이 있다.
+* 일반적으로 빌드 툴이 제공해주는 기능으로는 다음과 같은 기능들이 있다.
+	* 전처리(preprocessing)
+	* 컴파일(Compile)
+	* 패키징(packaging)
+	* 테스팅(testing)
+	* 배포(distribution)
 
-전처리(preprocessing), 컴파일(Compile), 패키징(packaging), 테스팅(testing), 배포(distribution)
-
-빌드 툴로는 Ant, Maven, Gradle 등이 있다.
+* 빌드 툴로는 **Ant, Maven, Gradle** 등이 있다.
 
 <br>
 
@@ -92,6 +93,5 @@ last_modified_at: 2020-03-25T08:44:00 # 마지막 변경일
 * [갓대희의 작은공간](https://goddaehee.tistory.com/199)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzI3NjI2MzQsLTEwMTUyNjk3NzddfQ
-==
+eyJoaXN0b3J5IjpbMTMwMDk1MTAyMSwtMTAxNTI2OTc3N119
 -->
