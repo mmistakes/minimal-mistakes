@@ -17,15 +17,12 @@ body {
   
   h1,
   h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h3 {
     margin: 2em 0 1em;
     line-height: 1.2;
     font-family: $header-font-family;
     font-weight: bold;
-    text-decoration: overline underline;
+    text-decoration: overline;
     text-decoration-color: blue;
   }
   
