@@ -20,8 +20,7 @@ toc_sticky: true # 스크롤 내릴때 같이 내려가는 목차
 last_modified_at: 2020-03-24T08:33:00 # 마지막 변경일
 
 ---
-기존에는 필요한 **라이브러리를 다운**받아 넣어줘야 사용할 수 있던 것을 **pom.xml에 태그만 기술**함으로서 쉽게 라이브러리를 사용할 수 있게 되었다.  
-그렇게 할 수 있는데에는 **메이븐 중앙 저장소** 덕분이다.  
+기존에는 필요한 **라이브러리를 다운**받아 넣어줘야 사용할 수 있던 것을 **pom.xml에 태그만 기술**함으로서 쉽게 라이브러리를 사용할 수 있게 되었다.  **메이븐 중앙 저장소** 덕분이다.  
 
 중앙 저장소는 일종의 라이브러리 보관 장소이고, 메이븐을 개발한 아파치 소프트웨어 재단이 운영하는 [사이트](https://repo1.maven.org/maven2/)이다.
 
@@ -55,6 +54,6 @@ last_modified_at: 2020-03-24T08:33:00 # 마지막 변경일
 * [메이븐 중앙 저장소](https://repo1.maven.org/maven2/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzA5MTU2MDgsMTgzMjIzMDQzMiw3Mz
-M0ODYzMzUsMTYyMjc3MDAxMl19
+eyJoaXN0b3J5IjpbLTg0NzA3NDg4MywxODMyMjMwNDMyLDczMz
+Q4NjMzNSwxNjIyNzcwMDEyXX0=
 -->
