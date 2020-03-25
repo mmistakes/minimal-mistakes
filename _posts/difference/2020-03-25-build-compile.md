@@ -78,10 +78,11 @@ last_modified_at: 2020-03-25T10:02:00 # 마지막 변경일
 <br>
 
 # Reference
-* [https://freezboi.tistory.com/39](https://freezboi.tistory.com/39) [코딩 공작소]
+* [코딩 공작소](https://freezboi.tistory.com/39) 
 
 * [갓대희의 작은공간](https://goddaehee.tistory.com/199)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3OTI2OTY0MywtMTAxNTI2OTc3N119
+eyJoaXN0b3J5IjpbLTgyODE3MTA0NiwyMDc5MjY5NjQzLC0xMD
+E1MjY5Nzc3XX0=
 -->
