@@ -41,13 +41,6 @@ last_modified_at: 2020-03-24T08:33:00 # 마지막 변경일
 ## 원격 저장소
 
 
-
-
-
-
-
-
-
 # Reference
 *  [자바 프로젝트 필수 유틸리티](https://books.google.co.kr/books/about/%EC%9E%90%EB%B0%94_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%ED%95%84%EC%88%98_%EC%9C%A0%ED%8B%B8%EB%A6%AC%ED%8B%B0.html?id=jZdaDwAAQBAJ&printsec=frontcover&source=kp_read_button&redir_esc=y#v=onepage&q&f=false)
 
@@ -56,6 +49,6 @@ last_modified_at: 2020-03-24T08:33:00 # 마지막 변경일
 * [메이븐 중앙 저장소](https://repo1.maven.org/maven2/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTQ1OTAzNjAsMTgzMjIzMDQzMiw3Mz
+eyJoaXN0b3J5IjpbLTE1NzI1Mzk5OTQsMTgzMjIzMDQzMiw3Mz
 M0ODYzMzUsMTYyMjc3MDAxMl19
 -->
