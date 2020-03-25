@@ -44,8 +44,8 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 
 * 배운 점
 	- batch 방식으로 User에게 Item 부여 
-		- 일반적으로, 이벤트를 하거나 특정 유저에게 아이템을 뿌릴 때 해당하는 유저의 DB에 정보를 넣는다고 생각했다.  
-		- 굳이 접속하지 않는 유저에게 미리 아이템을 줘서 (로그인 하는 유저가 직접 자신이 받아야 하는 선물들 받기)
+		- 일반적으로, 이벤트를 하거나 특정 유저에게 아이템을 뿌릴 때 **해당하는 모든 유저의 DB**에 정보를 넣는다고 생각했다.  
+		- 굳이 접속하지 않는 유저에게 미리 아이템을 주거나 만료시키는 추가 코스트가 발생함으로 로그인 시 유저가 직접 자신이 받을 수 있는 아이템들을 챙겨가는 구조로 코드를 짤 수 있는 것을 배웠다.  
 
 	- 스크립트 DB에 저장 (서버 재시작하지 않고 확률의 변화를 위해)
 	> 이거는 js를 사용하는 방식으로 해도 됬을텐데(인터프리터) 오히려 내가 봤을 땐 유지보수만 안 좋아지는 거 같다.
@@ -129,11 +129,11 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 ## ~~AI~~  
 ~~tensorflow CNN~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyMTQ3ODUzLDE3MjQzMjkwNjgsMzY5Mz
-gyNzgsMTQwMjMzNjI2MCwtMTI1MTYwMDE5Niw0MTk4Njk5OTAs
-LTE4Nzg4OTY0NzcsLTEwMzExNjQzOTIsNjUzNzQyNjc5LDc2OT
-Y3NDQ1OSwtNjEyMjcxNTY1LC0xMDE4NzkwMzU0LC0xNTQ5NjQ1
-Nzc2LDY5ODk2NzIyNiw3NzA5MDg4OSwtNDg2MjY2ODEwLDEzMj
-I0NzU2MzYsMTYyMjM1MjI5MCwxMTU4ODk3NTQ5LC0xODQ0Mzc0
-M119
+eyJoaXN0b3J5IjpbMTY2NDcxMjgyOCwxNzI0MzI5MDY4LDM2OT
+M4Mjc4LDE0MDIzMzYyNjAsLTEyNTE2MDAxOTYsNDE5ODY5OTkw
+LC0xODc4ODk2NDc3LC0xMDMxMTY0MzkyLDY1Mzc0MjY3OSw3Nj
+k2NzQ0NTksLTYxMjI3MTU2NSwtMTAxODc5MDM1NCwtMTU0OTY0
+NTc3Niw2OTg5NjcyMjYsNzcwOTA4ODksLTQ4NjI2NjgxMCwxMz
+IyNDc1NjM2LDE2MjIzNTIyOTAsMTE1ODg5NzU0OSwtMTg0NDM3
+NDNdfQ==
 -->
