@@ -38,20 +38,10 @@
   h4,
   h5,
   h6 {
-//     color: #000;
-//     line-height: 1.2;
-//     margin-bottom: 0.75rem;
-//     margin-top: 0;
-      font-family:"Nanum Gothic",sans-serif;
-      font-weight:700; 
-      position:relative;
-      border: 5px; 
-      border-radius:4px;
-      border-color:#259ce0;
-      border-left-style:solid;
-      border-left-width:.25em;
-      padding-left:.25em;
-      font-weight:700
+    color: #000;
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+    margin-top: 0;
   }
 
   h1 {
@@ -258,5 +248,29 @@
   .adsbygoogle {
     display: none !important;
     height: 1px !important;
+  }
+  
+/*
+   page 안에 content의 헤더 색 변경
+   ========================================================================== */
+  .page__content{
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+
+        font-family:"Nanum Gothic",sans-serif;
+        font-weight:700; 
+        position:relative;
+        border: 5px; 
+        border-radius:4px;
+        border-color:#259ce0;
+        border-left-style:solid;
+        border-left-width:.25em;
+        padding-left:.25em;
+        font-weight:700
+    }
   }
 }
