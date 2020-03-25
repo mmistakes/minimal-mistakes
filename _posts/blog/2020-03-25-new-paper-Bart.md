@@ -3,11 +3,11 @@ layout: post
 title: New paper Bart in Journal of Neuroscience
 categories: blog
 excerpt: Cognitive Effort Modulates Connectivity between Dorsal Anterior Cingulate Cortex and Task-Relevant Cortical Areas
-tags: [] ### INSERT TAGS IF APPLICABLE
+tags: []
 image:
   feature:
 link: 
-date: 2020-03-25 ### UPDATE date
+date: 2020-03-25
 modified:
 share: true
 author: tomverguts
