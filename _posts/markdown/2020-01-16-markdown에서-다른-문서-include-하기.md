@@ -1,0 +1,100 @@
+---
+title: Jekyll, 마크다운 문법에서 다른 문서 include 하기
+
+categories: 
+   - Github.io
+   
+tags:
+   - markdown
+   - jekyll
+   - include
+   
+author_profile: true <!-- 작성자 프로필 출력여부 -->
+read_time: true <!-- read_time을 출력할지 여부 1min read 같은것! -->
+
+toc: true <!-- Table Of Contents 목차 보여줌 -->
+toc_label: My Table of Contents # toc 이름 정의
+<!-- toc_icon: "cog" # font Awesome아이콘으로 toc 아이콘 설정 -->
+toc_sticky: true # 스크롤 내릴때 같이 내려가는 목차
+
+date: 2020-01-16T17:49:00 <!-- 최초 생성일 -->
+last_modified_at: 2020-01-17T09:37:00 <!-- 마지막 수정일 -->
+
+comments: true <!-- 댓글 시스템 사용 -->
+---
+
+<!-- intro -->
+{% include intro %}
+
+# 들어가며
+블로그를 만든 뒤 3개, 4개 정도의 포스트를 쓰다 보니, 상당히 많은 코드(?), 부분이 중복됨을 확인 할 수 있었다.
+이를 해결할 수 있는 방식을 찾다보니 **미리 만들어 놓은 코드를 해당 마크 다운 문서에 include 하는 방식**을 찾을 수 있었다.
+이를 이용하여, 자주 사용하는 말 `인트로 인사말`, `자주 사용하는 문법`을 미리 문서화 시켜 필요할 때마다 파라미터로 넘겨줌으로 사용할 수 있었다.
+지금 본 포스트에 존재하는 인트로도 해당 방법을 통해 구현하였다.
+
+# How to?
+
+## 인자를 넘겨주지 않는 경우
+
+### 1.  include 할 문서를 `_includes` 폴더에 저장한다.
+``` markdown
+해당 블로그는 개인이 공부하고, 정리한 걸 기록하는 공간입니다.<br>
+**오타, 오류**가 존재할 수 있습니다. 댓글을 달아주시면 수정할 수 있도록 하겠습니다.
+{: .notice--warning}
+```
+본 포스팅에서는 예시로  `_includes/intro`로 저장한다.
+
+### 2. 호출하고 싶은 위치에 {`% include [파일명] %`}  넣어준다.
+예시로 만든 문서를 호출하기 위해서는 {`% include intro %`}를 써주면 된다.
+
+{% include intro %}
+이렇게 만들어 두면 인트로같은 중복되는 말들은 저장해서 사용할 수 있다.
+
+## 인자를 넘겨줄 경우
+
+### 1. include 할 문서에 인자로 받아서 사용할 변수를 {{ include.[변수명] }}으로 사용하여 문서를 생성한다.
+여기서 선언한 변수명으로 mapping이 된다.
+```markdown
+<div class="notice--info">
+	<span style="background-color:yellow">
+		<big><b>{% raw %}{{{ include.title }}{% endraw %}</b></big>
+	</span>
+	<big>{% raw %}{{ include.content | markdownify }}{% endraw %}</big>
+</div>
+```
+
+예시에서는 include.content와 include.title을 사용했다.<br>
+위의  html 코드를 `_includes/notice---info`로 생성한다.
+
+### 2. 호출할 위치에 {`% include [파일명] 변수명="내용" %`}을 넣어준다.
+```markdown
+{`% capture comment %`}
+안녕하세요.<br>
+테스트 해보겠습니다.<br>
+include 할 땐, 문서의 확장자도 적어줘야 합니다.<br>
+capture 안에서 줄내림은 `<br>`을 사용해야 합니다.
+{`% endcapture %`}
+
+{`% include notice--info title="테스트 제목" content=comment %`}
+```
+아까 저장한 html 부르기 위해서는 태그 안에 변수에 값을 넣어서 호출해야한다.
+
+{`% include notice--info title="테스트 제목" content=comment %`}<br>
+코드를 보면 title, content의 대한 변수를 넘겨주는 것을 볼 수 있다.
+
+{% capture comment %}
+안녕하세요.<br>
+테스트 해보겠습니다.<br>
+include 할 땐, 문서의 확장자도 적어줘야 합니다.<br>
+{% endcapture %}
+
+{% include notice--info title="테스트 제목" content=comment %}
+
+호출하면 이런식으로 출력이 된다.
+이렇게 저장해 둔 문서나 문법을 언제든지 불러서 편하게 사용할 수 있다.
+
+# reference
+- [jekyllrb](https://jekyllrb-ko.github.io/docs/includes/)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE0NjM0MjgyNzhdfQ==
+-->
