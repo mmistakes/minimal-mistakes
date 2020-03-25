@@ -25,31 +25,13 @@ h1,
 h2,
 h3,
 h4,
-h5{
-  font-family:"Nanum Gothic",sans-serif;
-  font-weight:700; 
-  position:relative;
-  border: 5px; 
-  border-radius:4px;
-  border-color:#259ce0;
-  border-left-style:solid;
-  border-left-width:.25em;
-  padding-left:.25em;
-  font-weight:700
+h5,
+h6 {
+  margin: 2em 0 0.5em;
+  line-height: 1.2;
+  font-family: $header-font-family;
+  font-weight: bold;
 }
-
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6 {
-//   margin: 2em 0 0.5em;
-//   line-height: 1.2;
-//   font-family: $header-font-family;
-//   font-weight: bold;
-  
-// }
 
 h1 {
   margin-top: 0;
