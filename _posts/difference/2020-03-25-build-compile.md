@@ -33,9 +33,9 @@ last_modified_at: 2020-03-25T08:44:00 # 마지막 변경일
 
 컴파일과 빌드란 무엇이고 그 차이점에 대해서 알아보자.
 
-  
+# 정의  
 
-1. 컴파일(Compile)
+## 컴파일(Compile)
 
 컴파일이란 개발자가 작성한 소스코드를 바이너리 코드로 변환하는 과정을 말한다. (목적파일이 생성됨)
 
@@ -45,7 +45,7 @@ last_modified_at: 2020-03-25T08:44:00 # 마지막 변경일
 
   
 
-2. 링크(link)
+## 링크(link)
 
 프로젝트를 진행하다 보면 소스파일이 여러개가 생성이되고 A라는 소스파일에서 B라는 소스파일에 존재하는 함수(메서드)를 호출하는 경우가 있다.
 
@@ -63,21 +63,20 @@ last_modified_at: 2020-03-25T08:44:00 # 마지막 변경일
 
   
 
-3. 빌드(Build)
+## 빌드(Build)
 
 - 소스코드 파일을 컴퓨터에서 실행할 수 있는 독립 소프트웨어 가공물로 변환하는 과정 또는 그에 대한 결과물 이다.  
 
-- 이를 좀더 쉽게 풀어 말하자면 우리가 작성한 소스코드(java), 프로젝트에서 쓰인 각각의 파일 및 자원 등(.xml, .jpg, .jar, .properties)을 JVM이나 톰캣같은 WAS가 인식할 수 있는 구조로 패키징 하는 과정 및 결과물이라고 할 수 있다.
+- 즉, 우리가 작성한 소스코드(java), 프로젝트에서 쓰인 각각의 파일 및 자원 등(.xml, .jpg, .jar, .properties)을 JVM이나 톰캣같은 WAS가 인식할 수 있는 구조로 패키징 하는 과정 및 결과물이라고 할 수 있다.
 
-소스코드 파일을 실행가능한 소프트웨어 산출물로 만드는 일련의 과정을 말한다.
+* 소스코드 파일을 실행가능한 소프트웨어 산출물로 만드는 일련의 과정을 말한다.
 
-빌드의 단계 중 컴파일이 포함이 되어 있는데 컴파일은 빌드의 부분집합이라 할 수 있다.
+* 빌드의 단계 중 컴파일이 포함이 되어 있는데 컴파일은 빌드의 부분집합이라 할 수 있다.
 
-빌드 과정을 도와주는 도구를 빌드 툴이라 한다.
-
-  
 
 3-1. 빌드 툴(Build Tool)
+
+* 빌드 과정을 도와주는 도구를 빌드 툴이라 한다.
 
 일반적으로 빌드 툴이 제공해주는 기능으로는 다음과 같은 기능들이 있다.
 
@@ -86,12 +85,13 @@ last_modified_at: 2020-03-25T08:44:00 # 마지막 변경일
 빌드 툴로는 Ant, Maven, Gradle 등이 있다.
 
 <br>
+
 # Reference
 * [https://freezboi.tistory.com/39](https://freezboi.tistory.com/39) [코딩 공작소]
 
-* [https://goddaehee.tistory.com/199](https://goddaehee.tistory.com/199) []
+* [갓대희의 작은공간](https://goddaehee.tistory.com/199)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTU4NTQyNDMsLTEwMTUyNjk3NzddfQ
+eyJoaXN0b3J5IjpbLTEwNzI3NjI2MzQsLTEwMTUyNjk3NzddfQ
 ==
 -->
