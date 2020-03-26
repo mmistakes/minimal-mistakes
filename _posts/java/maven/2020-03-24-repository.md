@@ -97,7 +97,7 @@ mvn install:install-file
 
 옵션을 모두 지정해서 `mvn install:install-file` 명령어를 실행하면 지정한 라이브러리 파일을 로컬 저장소에 설치할 수 있다.  
 
-### 라이브러리 이용하기
+### 로컬 저장소 라이브러리 이용하기
 원격 저장소의 라이브러리를 이용할 때와 동일하게 `<dependency>`를 추가한다.  
 
 ```xml
@@ -109,7 +109,15 @@ mvn install:install-file
 		<version>[버전 정보]</version>
 	</dependency>
 </dependencies>
-```	
+```
+
+pom.xml을 수정한 뒤, 사용하고자 하는 클래스에 가서 import 한 뒤 사용하면 된다.  
+
+앞서 말했듯이, 메이븐 중앙 저장소를 이용하던 방식과 동일하다.  
+
+
+### 로컬 저장소 위치
+
 
 
 
@@ -125,7 +133,7 @@ mvn install:install-file
 * [메이븐 중앙 저장소](https://repo1.maven.org/maven2/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTI3MDc3MTEsLTEwNDQ4OTczMzYsLT
+eyJoaXN0b3J5IjpbLTIxMjg2Mzc3NjEsLTEwNDQ4OTczMzYsLT
 M4NjQzODM3OSwtNDA5NTM1NDE3LC0xNTcyNTM5OTk0LDE4MzIy
 MzA0MzIsNzMzNDg2MzM1LDE2MjI3NzAwMTJdfQ==
 -->
