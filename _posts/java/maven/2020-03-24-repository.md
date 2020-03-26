@@ -50,7 +50,13 @@ last_modified_at: 2020-03-24T08:33:00 # 마지막 변경일
 메이븐은 로컬 볼륨에 저장소를 작성하며, 이곳에 설치한 라이브러리는 메이븐에서 원격 저장소와 동일하게 다룰 수 있다.  
 
 ### 메이븐 자작 라이브러리 생성하기
+```bash
+mvn archetype:generate
 ```
+위 명령어를 실행한 뒤, 다음과 같이 프로젝트를 설정한다.  
+|key|value|
+|--|--|
+|archetype|maven-
 
 
 
@@ -65,7 +71,7 @@ last_modified_at: 2020-03-24T08:33:00 # 마지막 변경일
 * [메이븐 중앙 저장소](https://repo1.maven.org/maven2/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzU1NTMzNDMsLTQwOTUzNTQxNywtMT
+eyJoaXN0b3J5IjpbLTExNTA0NzUxMzMsLTQwOTUzNTQxNywtMT
 U3MjUzOTk5NCwxODMyMjMwNDMyLDczMzQ4NjMzNSwxNjIyNzcw
 MDEyXX0=
 -->
