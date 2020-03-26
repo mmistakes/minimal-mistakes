@@ -56,7 +56,14 @@ mvn archetype:generate
 위 명령어를 실행한 뒤, 다음과 같이 프로젝트를 설정한다.  
 |key|value|
 |--|--|
-|archetype|maven-
+|archetype|maven-archetype-quickstart|
+|version|1.1(기본값)|
+|groupId|[groupId]|
+|artifactId|[artifactId]|
+|version|1.0-SNAPSHOT|
+|package|[package]|
+
+
 
 
 
@@ -71,7 +78,7 @@ mvn archetype:generate
 * [메이븐 중앙 저장소](https://repo1.maven.org/maven2/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTA0NzUxMzMsLTQwOTUzNTQxNywtMT
+eyJoaXN0b3J5IjpbLTEyMzA0MjUwMTMsLTQwOTUzNTQxNywtMT
 U3MjUzOTk5NCwxODMyMjMwNDMyLDczMzQ4NjMzNSwxNjIyNzcw
 MDEyXX0=
 -->
