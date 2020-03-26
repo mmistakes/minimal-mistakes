@@ -36,8 +36,18 @@ last_modified_at: 2020-03-24T08:33:00 # 마지막 변경일
 그래서 중앙 저장소에 등록된 라이브러리를 쉽게 검색해볼수 있는 [사이트](https://search.maven.org/)가 있다.  
 > 이용하는 방법은 [해당 포스팅](https://choiseonjae.github.io/java/maven/repository/central/)을 참고하면 된다.  
 
-저장소는 크게 로컬 저장소와 원격 저장소로 나눌 수 있ㄷ
+
+
+저장소는 크게 로컬 저장소와 원격 저장소로 나눌 수 있다.  
+
 ## 로컬 저장소
+이용하려는 라이브러리에 따라서 중앙 저장소에 존재하지 않는 경우가 존재한다.  
+
+
+자신이 만든 라이브러리 혹은 유명하지 않은 라이브러리라면 중앙 저장소에 공개되지 않을 수 있다.  
+
+이럴 경우 로컬 저장소를 이용하면 되는데, 로컬 환경에 있는 
+
 
 ## 원격 저장소
 
@@ -50,6 +60,6 @@ last_modified_at: 2020-03-24T08:33:00 # 마지막 변경일
 * [메이븐 중앙 저장소](https://repo1.maven.org/maven2/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxNzA1NTEzOSwtMTU3MjUzOTk5NCwxOD
-MyMjMwNDMyLDczMzQ4NjMzNSwxNjIyNzcwMDEyXX0=
+eyJoaXN0b3J5IjpbNjU3NTAyMzk3LC0xNTcyNTM5OTk0LDE4Mz
+IyMzA0MzIsNzMzNDg2MzM1LDE2MjI3NzAwMTJdfQ==
 -->
