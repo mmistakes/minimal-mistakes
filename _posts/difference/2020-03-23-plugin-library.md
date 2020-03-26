@@ -1,5 +1,5 @@
 ---
-title: plugin 이란? - library와의 차이점은?
+title: plugin(플러그인)과 library(라이브러기)의 차이점은 무엇일까?
 categories:  
 - difference
 
@@ -40,5 +40,5 @@ library는 응용 프로그램의 개발 프로세스 과정에서 컴퓨터 프
 # Reference
 * [플러그인과 라이브러리의 차이점은 무엇입니까?](https://ko.strephonsays.com/what-is-the-difference-between-plugin-and-library)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzQ2NzAxNzBdfQ==
+eyJoaXN0b3J5IjpbMTQ2MDc4MTYxOSwtMTA3NDY3MDE3MF19
 -->
