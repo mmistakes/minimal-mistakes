@@ -38,7 +38,7 @@ last_modified_at: 2020-03-24T08:33:00 # 마지막 변경일
 
 
 
-저장소는 크게 로컬 저장소와 원격 저장소로 나눌 수 있다.  
+저장소는 크게 **로컬 저장소**와 **원격 저장소**로 나눌 수 있다.  
 
 ## 로컬 저장소
 이용하려는 라이브러리에 따라서 중앙 저장소에 존재하지 않는 경우가 존재한다.  
@@ -49,8 +49,8 @@ last_modified_at: 2020-03-24T08:33:00 # 마지막 변경일
 
 메이븐은 로컬 볼륨에 저장소를 작성하며, 이곳에 설치한 라이브러리는 메이븐에서 원격 저장소와 동일하게 다룰 수 있다.  
 
-### 자작 라이브러리 생성하기
-
+### 메이븐 자작 라이브러리 생성하기
+```
 
 
 
@@ -65,6 +65,7 @@ last_modified_at: 2020-03-24T08:33:00 # 마지막 변경일
 * [메이븐 중앙 저장소](https://repo1.maven.org/maven2/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwOTUzNTQxNywtMTU3MjUzOTk5NCwxOD
-MyMjMwNDMyLDczMzQ4NjMzNSwxNjIyNzcwMDEyXX0=
+eyJoaXN0b3J5IjpbLTE1MzU1NTMzNDMsLTQwOTUzNTQxNywtMT
+U3MjUzOTk5NCwxODMyMjMwNDMyLDczMzQ4NjMzNSwxNjIyNzcw
+MDEyXX0=
 -->
