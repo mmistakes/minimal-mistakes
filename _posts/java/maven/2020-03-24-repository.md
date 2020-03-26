@@ -82,8 +82,18 @@ mvn install
 mvn install:install-file
 -Dfile="jar 경로"
 -DgroupId=[groupId]
--Darti
+-DartifactId=[artifactId]
+-Dpackage=jar
+-Dversion=1.0
 ```
+
+메이븐에서 `-D`라는 기호 뒤에 프로퍼티 명을 기술하여 프로퍼티 값을 메이븐에게 전달 가능하다.  
+각 옵션은 이러한 뜻을 가진다.  
+-Dfile="jar 경로"
+-DgroupId=[groupId]
+-DartifactId=[artifactId]
+-Dpackage=jar
+-Dversion=1.0
 
 	
 
@@ -100,7 +110,7 @@ mvn install:install-file
 * [메이븐 중앙 저장소](https://repo1.maven.org/maven2/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyODM2Njk5MiwtMTA0NDg5NzMzNiwtMz
+eyJoaXN0b3J5IjpbLTUyMDg0ODA5OSwtMTA0NDg5NzMzNiwtMz
 g2NDM4Mzc5LC00MDk1MzU0MTcsLTE1NzI1Mzk5OTQsMTgzMjIz
 MDQzMiw3MzM0ODYzMzUsMTYyMjc3MDAxMl19
 -->
