@@ -5,8 +5,8 @@
     - [BioArxiv](https://www.biorxiv.org/content/10.1101/2020.01.03.893578v1)
 
 ## Recent publications
-- Ergo, K., De Loof, E., & Verguts, T. (in press). Reward prediction error and declarative memory. _Trends in Cognitive Sciences._
-    - [PsarXiv](https://psyarxiv.com/xngwq/)
+- Ergo, K., De Loof, E., & Verguts, T. (2020). Reward prediction error and declarative memory. _Trends in Cognitive Sciences._
+    - [Link to online version of publication](https://doi.org/10.1016/j.tics.2020.02.009)
 
 - Desender, K., Boldt, A., Verguts, T., & Donner, T. (2019). Post-decisional sense of confidence shapes speed-accuracy tradeoff for subsequent choices. _eLife._
     - [Link to online version of publication](https://kobedesender.files.wordpress.com/2019/08/elife-43499-v2.pdf)
