@@ -1,6 +1,6 @@
 ---
 title: Clean Code(클린 코드) 작성하기
-categories:  Java 
+categories:  java 
 
 tags:
    - cleancode
@@ -261,5 +261,6 @@ try/catch 코드도 사실 추하다.
 
 {% include outro %}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjgxNjIxMjldfQ==
+eyJoaXN0b3J5IjpbLTIxMTEyOTYzMDUsLTE5MjgxNjIxMjldfQ
+==
 -->
