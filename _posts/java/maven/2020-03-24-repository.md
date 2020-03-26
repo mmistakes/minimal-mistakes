@@ -43,10 +43,15 @@ last_modified_at: 2020-03-24T08:33:00 # 마지막 변경일
 ## 로컬 저장소
 이용하려는 라이브러리에 따라서 중앙 저장소에 존재하지 않는 경우가 존재한다.  
 
-
 자신이 만든 라이브러리 혹은 유명하지 않은 라이브러리라면 중앙 저장소에 공개되지 않을 수 있다.  
 
-이럴 경우 로컬 저장소를 이용하면 되는데, 로컬 환경에 있는 
+이럴 경우 로컬 저장소를 이용하면 되는데, 로컬 환경에 있는 저장소이다.  
+
+메이븐은 로컬 볼륨에 저장소를 작성하며, 이곳에 설치한 라이브러리는 메이븐에서 원격 저장소와 동일하게 다룰 수 있다.  
+
+### 자작 라이브러리 생성하기
+
+
 
 
 ## 원격 저장소
@@ -60,6 +65,6 @@ last_modified_at: 2020-03-24T08:33:00 # 마지막 변경일
 * [메이븐 중앙 저장소](https://repo1.maven.org/maven2/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU3NTAyMzk3LC0xNTcyNTM5OTk0LDE4Mz
-IyMzA0MzIsNzMzNDg2MzM1LDE2MjI3NzAwMTJdfQ==
+eyJoaXN0b3J5IjpbLTQwOTUzNTQxNywtMTU3MjUzOTk5NCwxOD
+MyMjMwNDMyLDczMzQ4NjMzNSwxNjIyNzcwMDEyXX0=
 -->
