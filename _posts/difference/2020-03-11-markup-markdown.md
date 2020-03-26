@@ -1,5 +1,5 @@
 ---
-title: 마크다운, 마크업 차이점은 무엇일까?
+title: markup(마크업)과 마크다운(markdown)의 차이점은 무엇일까?
 
 categories:  difference
 
@@ -75,5 +75,5 @@ last_modified_at: 2020-03-25T08:14:00 # 마지막 변경일
 * [[별별 웹 용어] 마크업(MarkUp)? 마크다운(MarkDown)?](https://cordelia273.space/15) [세상의 모든 지식]
 * [마크다운(위키피디아)](https://ko.wikipedia.org/wiki/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3NDgyMDc1NV19
+eyJoaXN0b3J5IjpbODk3MTg5NTQ4XX0=
 -->
