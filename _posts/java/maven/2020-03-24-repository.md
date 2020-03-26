@@ -26,7 +26,7 @@ last_modified_at: 2020-03-24T08:33:00 # 마지막 변경일
 <br>
 
 # 저장소
-저장소는 일종의 라이브러리 보관 장소이고, 메이븐을 개발한 아파치 소프트웨어 재단이 운영하는 [사이트](https://repo1.maven.org/maven2/)이다.
+저장소는 일종의 라이브러리 보관 장소이다.
 
 주소를 지정해 원하는 저장소로 지정 가능하지만 아무것도 지정하지 않으면 **기본값으로 [메이븐 중앙 저장소](https://repo1.maven.org/maven2/)**이 지정된다.  
 
@@ -36,6 +36,7 @@ last_modified_at: 2020-03-24T08:33:00 # 마지막 변경일
 그래서 중앙 저장소에 등록된 라이브러리를 쉽게 검색해볼수 있는 [사이트](https://search.maven.org/)가 있다.  
 > 이용하는 방법은 [해당 포스팅](https://choiseonjae.github.io/java/maven/repository/central/)을 참고하면 된다.  
 
+저장소는 크게 로컬 저장소와 원격 저장소로 나눌 수 있ㄷ
 ## 로컬 저장소
 
 ## 원격 저장소
@@ -49,6 +50,6 @@ last_modified_at: 2020-03-24T08:33:00 # 마지막 변경일
 * [메이븐 중앙 저장소](https://repo1.maven.org/maven2/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzI1Mzk5OTQsMTgzMjIzMDQzMiw3Mz
-M0ODYzMzUsMTYyMjc3MDAxMl19
+eyJoaXN0b3J5IjpbMTcxNzA1NTEzOSwtMTU3MjUzOTk5NCwxOD
+MyMjMwNDMyLDczMzQ4NjMzNSwxNjIyNzcwMDEyXX0=
 -->
