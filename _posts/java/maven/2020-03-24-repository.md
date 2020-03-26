@@ -77,7 +77,13 @@ mvn archetype:generate
 mvn install
 ```	
 
-혹은, 이미 JAR 파일이 준비되어 있다면 이 명령어를 사용하면 ㄷ
+혹은, 이미 JAR 파일이 준비되어 있다면 이 명령어를 사용하면 된다.  
+```bash
+mvn install:install-file
+-Dfile="jar 경로"
+-DgroupId=[groupId]
+-Darti
+```
 
 	
 
@@ -94,7 +100,7 @@ mvn install
 * [메이븐 중앙 저장소](https://repo1.maven.org/maven2/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzkxNDc1NzYsLTEwNDQ4OTczMzYsLT
-M4NjQzODM3OSwtNDA5NTM1NDE3LC0xNTcyNTM5OTk0LDE4MzIy
-MzA0MzIsNzMzNDg2MzM1LDE2MjI3NzAwMTJdfQ==
+eyJoaXN0b3J5IjpbMTgyODM2Njk5MiwtMTA0NDg5NzMzNiwtMz
+g2NDM4Mzc5LC00MDk1MzU0MTcsLTE1NzI1Mzk5OTQsMTgzMjIz
+MDQzMiw3MzM0ODYzMzUsMTYyMjc3MDAxMl19
 -->
