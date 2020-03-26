@@ -117,9 +117,7 @@ pom.xml을 수정한 뒤, 사용하고자 하는 클래스에 가서 import 한 
 
 
 ### 로컬 저장소 위치
-
-
-
+`홈 디렉토리/.m2/repository`에 접근하면 groupId 마다 폴더로 정리되어 있다. 
 
 
 ## 원격 저장소
@@ -133,7 +131,7 @@ pom.xml을 수정한 뒤, 사용하고자 하는 클래스에 가서 import 한 
 * [메이븐 중앙 저장소](https://repo1.maven.org/maven2/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjg2Mzc3NjEsLTEwNDQ4OTczMzYsLT
-M4NjQzODM3OSwtNDA5NTM1NDE3LC0xNTcyNTM5OTk0LDE4MzIy
-MzA0MzIsNzMzNDg2MzM1LDE2MjI3NzAwMTJdfQ==
+eyJoaXN0b3J5IjpbLTU4Nzg1NDE4MywtMTA0NDg5NzMzNiwtMz
+g2NDM4Mzc5LC00MDk1MzU0MTcsLTE1NzI1Mzk5OTQsMTgzMjIz
+MDQzMiw3MzM0ODYzMzUsMTYyMjc3MDAxMl19
 -->
