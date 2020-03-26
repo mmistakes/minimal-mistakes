@@ -89,12 +89,15 @@ mvn install:install-file
 
 메이븐에서 `-D`라는 기호 뒤에 프로퍼티 명을 기술하여 프로퍼티 값을 메이븐에게 전달 가능하다.  
 각 옵션은 이러한 뜻을 가진다.  
--Dfile="jar 경로"
--DgroupId=[groupId]
--DartifactId=[artifactId]
--Dpackage=jar
--Dversion=1.0
+* -Dfile=라이브러리 경로
+* -DgroupId=그룹 ID
+* -DartifactId=아티팩트 ID
+* -Dpackage=패키징
+* -Dversion=버전
 
+옵션을 모두 지정해서 `mvn install:install-file` 명령어를 실행하면 지정한 라이브러리 파일을 로컬 저장소에 설치할 수 있다.  
+
+### 라이브러리 이용하기
 	
 
 
@@ -110,7 +113,7 @@ mvn install:install-file
 * [메이븐 중앙 저장소](https://repo1.maven.org/maven2/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMDg0ODA5OSwtMTA0NDg5NzMzNiwtMz
+eyJoaXN0b3J5IjpbLTY1MzIxMTUyMSwtMTA0NDg5NzMzNiwtMz
 g2NDM4Mzc5LC00MDk1MzU0MTcsLTE1NzI1Mzk5OTQsMTgzMjIz
 MDQzMiw3MzM0ODYzMzUsMTYyMjc3MDAxMl19
 -->
