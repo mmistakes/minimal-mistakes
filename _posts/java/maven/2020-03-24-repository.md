@@ -71,9 +71,13 @@ mvn archetype:generate
 
 ### 로컬 저장소에 라이브러리 추가하기
 
+자신이 만든 프로젝트 디렉토리로 이동해서 명령어를 실행하면 빌드된 JAR파일을 로컬 저장소에 설치한다.  
+
 ```bash
 mvn install
 ```	
+
+혹은, 이미 JAR 파일이 준비되어 있다면 이 명령어를 사용하면 ㄷ
 
 	
 
@@ -90,7 +94,7 @@ mvn install
 * [메이븐 중앙 저장소](https://repo1.maven.org/maven2/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MDMxNDU4NiwtMTA0NDg5NzMzNiwtMz
-g2NDM4Mzc5LC00MDk1MzU0MTcsLTE1NzI1Mzk5OTQsMTgzMjIz
-MDQzMiw3MzM0ODYzMzUsMTYyMjc3MDAxMl19
+eyJoaXN0b3J5IjpbLTE4MzkxNDc1NzYsLTEwNDQ4OTczMzYsLT
+M4NjQzODM3OSwtNDA5NTM1NDE3LC0xNTcyNTM5OTk0LDE4MzIy
+MzA0MzIsNzMzNDg2MzM1LDE2MjI3NzAwMTJdfQ==
 -->
