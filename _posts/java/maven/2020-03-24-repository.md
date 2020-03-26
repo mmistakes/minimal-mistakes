@@ -1,13 +1,15 @@
 ---
-title: Maven 저장소 이용하기
+title: Maven 로컬 저장소 생성 및 사용하기
 categories:  
 - java 
 - maven
+- repository
 
 tags:
    - maven
    - pom.xml
    - repository
+   - local
 
 author_profile: true #작성자 프로필 출력여부
 read_time: true # read_time을 출력할지 여부 1min read 같은것!
@@ -120,9 +122,6 @@ pom.xml을 수정한 뒤, 사용하고자 하는 클래스에 가서 import 한 
 `홈 디렉토리/.m2/repository`에 접근하면 groupId 마다 폴더로 정리되어 있다. 
 
 
-## 원격 저장소
-
-
 # Reference
 *  [자바 프로젝트 필수 유틸리티](https://books.google.co.kr/books/about/%EC%9E%90%EB%B0%94_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%ED%95%84%EC%88%98_%EC%9C%A0%ED%8B%B8%EB%A6%AC%ED%8B%B0.html?id=jZdaDwAAQBAJ&printsec=frontcover&source=kp_read_button&redir_esc=y#v=onepage&q&f=false)
 
@@ -131,7 +130,7 @@ pom.xml을 수정한 뒤, 사용하고자 하는 클래스에 가서 import 한 
 * [메이븐 중앙 저장소](https://repo1.maven.org/maven2/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4Nzg1NDE4MywtMTA0NDg5NzMzNiwtMz
+eyJoaXN0b3J5IjpbLTI3NzU2MjIyNSwtMTA0NDg5NzMzNiwtMz
 g2NDM4Mzc5LC00MDk1MzU0MTcsLTE1NzI1Mzk5OTQsMTgzMjIz
 MDQzMiw3MzM0ODYzMzUsMTYyMjc3MDAxMl19
 -->
