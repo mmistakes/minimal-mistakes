@@ -14,7 +14,7 @@ Once I received confirmation that my proposal was received, I waited, anxiously.
 
 On March 24, I received a reply from the Unicode Emoji Subcommittee:
 
-![The Emoji Subcommittee has carefully reviewed your proposal for a bisexual flag emoji. After much consideration we regret to inform you that we are unable to recommend emojification for general interchange. We recognize that this message may come as a disappointment. Please accept the best wishes from the Subcommittee. Sincerely, The Emoji Subcommittee](/assets/images/unicode_reply.png|120%)
+![The Emoji Subcommittee has carefully reviewed your proposal for a bisexual flag emoji. After much consideration we regret to inform you that we are unable to recommend emojification for general interchange. We recognize that this message may come as a disappointment. Please accept the best wishes from the Subcommittee. Sincerely, The Emoji Subcommittee](/assets/images/unicode_reply.png)
 
 They provided no reason for the rejection, which indicates that despite following their guidelines for the proposal, they didn't see the bisexual community deserving an emoji to express themselves. Yet, even pirates have a flag (🏴‍☠️).
 
