@@ -4,6 +4,7 @@
 
 - Fix Finnish ocalized UI text strings. [#2455](https://github.com/mmistakes/minimal-mistakes/pull/2455)
 - Clarify documentation that Lunr only searches documents in collections. [#2450](https://github.com/mmistakes/minimal-mistakes/pull/2450)
+- Add guide on applying Front Matter defaults to jekyll-archives pages [#2466](https://github.com/mmistakes/minimal-mistakes/pull/2466)
 
 ## [4.19.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.19.1)
 
