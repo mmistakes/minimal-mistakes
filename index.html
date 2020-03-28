@@ -1,4 +1,61 @@
 ---
-layout: home
+layout: splash
 author_profile: false
+
+main:
+  - image_path: /assets/images/logo_500x500.png
+    alt: "edgenoon.ai logo"
+    title: "edgenoon.ai"
+    excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+
+cats:
+    - image_path: assets/images/edge.jpg
+      alt: "edge image - jetson nano"
+      image_caption: "NVIDIA Jetson Nano"
+      title: "Edge"
+      excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      url: "edge"
+      btn_label: "Read More"
+      btn_class: "btn--primary"
+
+    - image_path: /assets/images/ros.jpg
+      alt: "ros image"
+      image_caption: "Occupancy grid map and robot path"
+      title: "Robot Operating System"
+      excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      url: "robot-operating-system"
+      btn_label: "Read More"
+      btn_class: "btn--primary"
+
+    - image_path: /assets/images/sp.jpg
+      alt: "signal processing image - image localization"
+      image_caption: "Result of YoloV3 model"
+      title: "Signal processing"
+      excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      url: "signal-processing"
+      btn_label: "Read More"
+      btn_class: "btn--primary"
+
+MatPiech:
+    - image_path: /assets/images/bio-MatPiech.jpeg
+      alt: "placeholder image 2"
+      title: "Mateusz Piechocki"
+      excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+bartoszptak:
+    - image_path: /assets/images/bio-bartoszptak.jpeg
+      alt: "placeholder image 2"
+      title: "Bartosz Ptak"
+      excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
 ---
+
+{% include feature_row id="main" type="left" %}
+
+<h1>Categories</h1>
+{% include feature_row id="cats" %}
+
+<h1>About as</h1>
+
+{% include feature_row id="MatPiech" type="center" option="bio" %}
+{% include feature_row id="bartoszptak" type="center" option="bio" %}

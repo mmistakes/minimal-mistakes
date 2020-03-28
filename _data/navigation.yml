@@ -1,10 +1,8 @@
 # main links
 main:
-  - title: "About"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
-  - title: "Sample Posts"
-    url: /year-archive/
-  - title: "Sample Collections"
-    url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Edge"
+    url: /edge/
+  - title: "Robot Operating System"
+    url: /robot-operating-system/
+  - title: "Signal processing"
+    url: /signal-processing/

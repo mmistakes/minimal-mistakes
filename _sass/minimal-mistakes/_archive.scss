@@ -89,11 +89,19 @@
   position: relative;
   border-radius: $border-radius;
   overflow: hidden;
+}
+
+.archive__item-teaser-bio {
+  position: relative;
+  border-radius: $border-radius;
+  overflow: hidden;
 
   img {
-    width: 100%;
+    width: 25%;
   }
 }
+
+
 
 .archive__item-caption {
   position: absolute;
@@ -234,6 +242,8 @@
   @include clearfix();
   margin-bottom: 2em;
   border-bottom: 1px solid $border-color;
+  text-align: justify;
+  text-justify: inter-word;
 
   .archive__item-title {
     margin-bottom: 0;
@@ -293,9 +303,15 @@
     width: 100%;
     clear: both;
     font-size: 1.125em;
+    text-align: justify;
+    text-justify: inter-word;
 
     .archive__item {
       float: left;
+    }
+
+    img {
+      width: 80%;
     }
 
     .archive__item-teaser {
