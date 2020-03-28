@@ -1,5 +1,5 @@
 ---
-title: "Vector"
+title: "Intro to Vector"
 author: "Abdul"
 layout: single
 categories:
