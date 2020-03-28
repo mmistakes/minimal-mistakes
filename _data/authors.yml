@@ -1,0 +1,55 @@
+#####################################################
+# Site Author
+bartoszptak:
+  name             : "Bartosz Ptak"
+  avatar           : "/assets/images/bio-bartoszptak.jpeg"
+  bio              : "I am an **amazing** person."
+  location         : "Poznań, Poland"
+  email            :
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: mailto:bartptak@gmail.com
+    # - label: "Website"
+      # icon: "fas fa-fw fa-link"
+      # url: "https://your-website.com"
+    # - label: "Twitter"
+      # icon: "fab fa-fw fa-twitter-square"
+      # url: "https://twitter.com/"
+    # - label: "Facebook"
+      # icon: "fab fa-fw fa-facebook-square"
+      # url: "https://facebook.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/bartoszptak"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/bartoszptak/"
+#####################################################
+# Site Author
+MatPiech:
+  name             : "Mateusz Piechocki"
+  avatar           : "/assets/images/bio-MatPiech.jpeg"
+  bio              : "I am an **amazing** person."
+  location         : "Poznań, Poland"
+  email            :
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: mailto:piechocki.mateusz97@gmail.com
+    # - label: "Website"
+    #   icon: "fas fa-fw fa-link"
+    #   # url: "https://your-website.com"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   # url: "https://twitter.com/"
+    # - label: "Facebook"
+    #   icon: "fab fa-fw fa-facebook-square"
+    #   # url: "https://facebook.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/MatPiech"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/mateusz-piechocki-68b517192/"
+#####################################################
