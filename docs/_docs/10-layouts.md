@@ -337,6 +337,12 @@ paginate_path: /blog/page:num
 **Note:** Jekyll can only paginate a single `index.html` file. If you'd like to paginate more pages (e.g. category indexes) you'll need the help of a custom plugin. For more pagination related settings check the [**Configuration**]({{ "/docs/configuration/#paginate" | relative_url }}) section.
 {: .notice--info}
 
+To avoid the "recent posts" heading, set to `true` the `recent_posts_title_off` in **_config.yml**.
+
+```yaml
+recent_posts_title_off: true
+```
+
 ## Splash page layout
 
 For full-width landing pages that need a little something extra add `layout: splash` to the YAML Front Matter.
