@@ -1,7 +1,7 @@
 ---
 title: "Not Posts Yet"
 permalink: /yet/
-layout: post-yet
+layout: yet
 author_profile: true
 ---
 <!--stackedit_data:
