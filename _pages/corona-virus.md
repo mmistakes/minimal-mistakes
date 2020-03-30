@@ -12,6 +12,9 @@ sidebar:
   nav: ''
 ---
 
+**Achtung**: Bitte beachten Sie auch folgende [Hinweise vom SenBJF](https://www.berlin.de/sen/bjf/coronavirus/aktuelles/familien/), unter anderem welche Eltern von systemrelevanten Berufen einen Anspruch auf eine Kinderbetreuung haben.
+{: .notice--warning}
+
 19.03.2020 15:00 Uhr
 
 # Tipps für Familien
