@@ -11,7 +11,7 @@ layout: archive
     <div class="entries-{{ page.entries_layout | default: 'list' }}">
         {% for post in post.items %}
           {% if post.isPost == false %}
-            {% include archive-single-not-post.html type=page.entries_layout %}
+            {% include archive-single.html type=page.entries_layout %}
           {% endif %}
         {% endfor %}
     </div>
