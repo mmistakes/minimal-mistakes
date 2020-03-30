@@ -48,7 +48,7 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 		- **로그인 시 유저가 직접 자신이 받을 수 있는 아이템들을 챙겨가는 구조**로 개발한다면 접속하지 않는 유저에게 아이템을 주거나 만료시키는 오버헤드를 없앨 수 있다.  
 
 	- 스크립트 DB에 저장 (서버 재시작하지 않고 확률 등의 수정 가능)
-	> 이거는 js(인터프리터) 등을 사용하는 방식으로 해도 됬을텐데 오히려 내가 봤을 땐 유지보수만 안 좋아지는 거 같다.
+	> 내 생각엔, js(인터프리터) 등을 사용하는 방식으로 해도 됬을텐데 오히려 내가 봤을 땐 유지보수만 안 좋아지는 거 같다.
 
 	- JDBC 는 객체로 DB에 저장위해서 (기존에는 mybatis를 사용하지만 객체 전체를 DB에 저장하기위해 JDBC를 사용)
 
@@ -129,11 +129,11 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 ## ~~AI~~  
 ~~tensorflow CNN~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzUwMzA3NzksMTI2Mzg3MjUxNiwxNz
-I0MzI5MDY4LDM2OTM4Mjc4LDE0MDIzMzYyNjAsLTEyNTE2MDAx
-OTYsNDE5ODY5OTkwLC0xODc4ODk2NDc3LC0xMDMxMTY0MzkyLD
-Y1Mzc0MjY3OSw3Njk2NzQ0NTksLTYxMjI3MTU2NSwtMTAxODc5
-MDM1NCwtMTU0OTY0NTc3Niw2OTg5NjcyMjYsNzcwOTA4ODksLT
-Q4NjI2NjgxMCwxMzIyNDc1NjM2LDE2MjIzNTIyOTAsMTE1ODg5
-NzU0OV19
+eyJoaXN0b3J5IjpbMTgxNzQyMTI4NSwtMTYzNTAzMDc3OSwxMj
+YzODcyNTE2LDE3MjQzMjkwNjgsMzY5MzgyNzgsMTQwMjMzNjI2
+MCwtMTI1MTYwMDE5Niw0MTk4Njk5OTAsLTE4Nzg4OTY0NzcsLT
+EwMzExNjQzOTIsNjUzNzQyNjc5LDc2OTY3NDQ1OSwtNjEyMjcx
+NTY1LC0xMDE4NzkwMzU0LC0xNTQ5NjQ1Nzc2LDY5ODk2NzIyNi
+w3NzA5MDg4OSwtNDg2MjY2ODEwLDEzMjI0NzU2MzYsMTYyMjM1
+MjI5MF19
 -->
