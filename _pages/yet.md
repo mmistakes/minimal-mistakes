@@ -10,5 +10,5 @@ author_profile: true
 		<section class="taxonomy__section">
 			<a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
 		</section>
-	{% endfor %}
+	{% endif %}
 {% endfor %}
