@@ -273,6 +273,7 @@ defaults:
       share: true
       related: true
       future: true
+      isPostYet: true
   # _pages
   - scope:
       path: "_pages"
