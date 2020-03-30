@@ -194,6 +194,12 @@
     }
   }
 
+  .author__urls {
+    span.label {
+      padding-left: 5px;
+    }
+  }
+
   @include breakpoint($large) {
     display: block;
   }
