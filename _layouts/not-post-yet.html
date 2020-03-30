@@ -9,11 +9,9 @@ layout: archive
   <section id="{{ post.name }}" class="taxonomy__section">
     <h2 class="archive__subtitle">{{ post.name }}</h2>
     <div class="entries-{{ page.entries_layout | default: 'list' }}">
-      {% if post.isPostYet %}
         {% for post in post.items %}
           {% include archive-single.html type=page.entries_layout %}
         {% endfor %}
-      {% endif %}
     </div>
     <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
   </section>
