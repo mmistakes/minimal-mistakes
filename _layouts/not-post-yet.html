@@ -4,8 +4,12 @@ layout: archive
 
 {{ content }}
 
+업데이트 확인
+
 {% for post in page.isPostYet %}
+  post : {{ post }}
   {% if post %}
+    여부
     <section id="{{ tag[0] | slugify | downcase }}" class="taxonomy__section">
       <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
     </section>
