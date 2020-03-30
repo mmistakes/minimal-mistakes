@@ -23,3 +23,7 @@ They provided no reason for the rejection, which indicates that despite followin
 I knew this wouldn’t be easy from the start. The transgender flag emoji required multiple submissions, a team of people, and intense media coverage. I was the only person who worked on this first submission. That may have been a mistake, but I wanted to submit the proposal in time for the deadline.
 
 So, what’s next? To move forward, I think it’s best to recruit some more people in this effort, talk strategy, and try to get some media coverage. The more attention we can bring to this, the more pressure we can put on Unicode. Ultimately, I want to submit the proposal again, but we need to come back stronger than before. If you want to help this happen, please [reach out](mailto:hey@tannermarino.com). Together, we can bring visibility to bisexual people everywhere.
+
+## Update: March 30, 2020
+![Skype pride emojis](/assets/images/skype_emojis.png)
+Someone shared with me that there is a bisexual flag emoji in Skype. This is great for bi visibility and supports our iniative. When companies begin implementing emojis on their own when Unicode fails to do so, it adds pressure for Unicode to act. Shoutout to Skype for leading with us and their inclusion of several pride flag emojis.
