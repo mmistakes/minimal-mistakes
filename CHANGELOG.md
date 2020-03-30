@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+- Add missing Vietnamese translations [#2459](https://github.com/mmistakes/minimal-mistakes/pull/2459)
 - Fix Finnish ocalized UI text strings. [#2455](https://github.com/mmistakes/minimal-mistakes/pull/2455)
 - Clarify documentation that Lunr only searches documents in collections. [#2450](https://github.com/mmistakes/minimal-mistakes/pull/2450)
 
