@@ -9,3 +9,5 @@ main:
     url: /tags/ 
   - title: "Category"
     url: /categories/
+  - title: "Not Post Yet"
+    url: /yet/
