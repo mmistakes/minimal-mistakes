@@ -28,11 +28,12 @@
     }
 
     &.sticky {
+      top: 70px;
       overflow-y: auto;
       /* calculate height of nav list
          viewport height - nav height - masthead x-padding
       */
-      height: calc(100vh - #{$nav-height} - 2em);
+      height: calc(100vh - #{$nav-height} - 200px);
     }
   }
 
@@ -57,7 +58,7 @@
   p,
   li {
     font-family: $sans-serif;
-    font-size: $type-size-6;
+    font-size: $type-size-sidebar;
     line-height: 1.5;
   }
 
@@ -87,7 +88,7 @@
       @include clearfix();
       position: -webkit-sticky;
       position: sticky;
-      top: 2em;
+      top: 70px;
       float: right;
     }
   }

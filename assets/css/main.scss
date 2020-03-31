@@ -6,3 +6,15 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+table#navtable {
+  table-layout: fixed ;
+  width: 100% ;
+  border-collapse: collapse ;
+  border: 0px ;
+}
+table#navtable td {
+  width: 5% ;
+  border: 0px ;
+  padding: 0px ;
+}

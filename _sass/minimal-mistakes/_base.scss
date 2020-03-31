@@ -10,7 +10,7 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 4.7rem 0 0;  // padding-top equal to site-logo img max-height
   color: $text-color;
   font-family: $global-font-family;
   line-height: 1.5;
@@ -57,6 +57,14 @@ h5 {
 h6 {
   font-size: $h-size-6;
 }
+
+h1::before, h2::before, h3::before, h4::before {
+  content:"";
+  display:block;
+  height: 65px;
+  margin: -65px 0 0;
+}
+
 
 small,
 .small {
@@ -355,3 +363,28 @@ input[type="submit"],
   -webkit-transition: $global-transition;
   transition: $global-transition;
 }
+
+.multi-column {
+   -moz-column-count: 2;
+   -moz-column-gap: 20px;
+   -moz-column-fill: auto;
+   -webkit-column-count: 2;
+   -webkit-column-gap: 20px;
+   -webkit-column-fill: auto;
+   column-count: 2;
+   column-gap: 20px;
+   column-fill: auto;
+   list-style-position: inside;
+}
+
+/* links' colors taken from wikipedia web site */
+
+a {
+   text-decoration: none;
+   color: #0645AD;
+}
+
+a:visited {
+   color: #0B0080;
+}
+

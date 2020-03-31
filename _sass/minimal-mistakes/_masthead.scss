@@ -3,19 +3,23 @@
    ========================================================================== */
 
 .masthead {
-  position: relative;
-  border-bottom: 1px solid $border-color;
+  position: fixed;
+  top: 0;
+  border-bottom: 0px solid $border-color;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
   z-index: 20;
+  width: 100%;
+  background: $root-blue;  // set ROOT blue
+  height: 4.7rem; // size equal to site-logo img max-height
 
   &__inner-wrap {
     @include clearfix;
     margin-left: auto;
     margin-right: auto;
-    padding: 1em;
+    padding: 0em;
     max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -40,7 +44,7 @@
 }
 
 .site-logo img {
-  max-height: 2rem;
+  max-height: 4.7rem;
 }
 
 .site-title {
@@ -87,7 +91,7 @@
   white-space: nowrap;
 
   &--lg {
-    padding-right: 2em;
+    padding-right: 0em;
     font-weight: 700;
   }
 }
