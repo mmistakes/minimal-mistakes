@@ -4,14 +4,14 @@ categories:
 - java 
 
 tags:
-* FileOutputStream
-* PrintStream
-* BufferedOutputStream
-* DateOutputStream
-* ServletOutputStream
-* OutputStream
-* write
-* flush
+- FileOutputStream
+- PrintStream
+- BufferedOutputStream
+- DateOutputStream
+- ServletOutputStream
+- OutputStream
+- write
+- flush
 
 isPost: false
 
@@ -25,6 +25,7 @@ toc_sticky: true # 스크롤 내릴때 같이 내려가는 목차
 
 last_modified_at: 2020-03-31T09:34:00 # 마지막 변경일
 ---
+
 # OutputStream
 
 추상 클래스이며 바이트 기반 출력 스트림의 최상위 클래스입니다.
