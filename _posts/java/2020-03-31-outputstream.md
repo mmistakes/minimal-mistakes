@@ -23,7 +23,7 @@ last_modified_at: 2020-03-31T09:34:00 # 마지막 변경일
 
 추상클래스이다.  
 
-## ServletOu
+## ServletOutputStream
 
 파일을 읽어올 때에는 FileInputStream으로 읽어온 뒤 브라우저에 출력할 때에는  **ServletOutputStream**을 사용한다.
 
@@ -35,7 +35,8 @@ ServletOutputStream의 용도는 게시판에 파일을 올릴 때 사용한다.
 
   
   
-출처: [https://pozt1234.tistory.com/29](https://pozt1234.tistory.com/29) [공부를 위한 블로그]
+# Reference
+* [공부를 위한 블로그](https://pozt1234.tistory.com/29) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTg3ODE0MzRdfQ==
+eyJoaXN0b3J5IjpbMTY4MjgwNjcyNF19
 -->
