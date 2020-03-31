@@ -119,7 +119,8 @@ sos.close();
   
 # Reference
 * [공부를 위한 블로그](https://pozt1234.tistory.com/29) 
+
 * [IOS를 Java](https://altongmon.tistory.com/266) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA4MTUwMzA1XX0=
+eyJoaXN0b3J5IjpbLTE1ODc3NDE4MzddfQ==
 -->
