@@ -2,6 +2,7 @@
 title: \[Java] OutputStream의 정의와 종류
 categories:  
 - java 
+- stream
 
 tags:
 - FileOutputStream
@@ -123,5 +124,5 @@ sos.close();
 
 * [IOS를 Java](https://altongmon.tistory.com/266) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MDM5MDc1NV19
+eyJoaXN0b3J5IjpbLTk0ODkzOTQ5MCwyMDUwMzkwNzU1XX0=
 -->
