@@ -1,5 +1,5 @@
 ---
-title: [Java] OutputStream의 정의와 종류
+title: \[Java] OutputStream의 정의와 종류
 categories:  
 - java 
 
@@ -122,5 +122,5 @@ sos.close();
 
 * [IOS를 Java](https://altongmon.tistory.com/266) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODc3NDE4MzddfQ==
+eyJoaXN0b3J5IjpbNTA3OTYwMjQzXX0=
 -->
