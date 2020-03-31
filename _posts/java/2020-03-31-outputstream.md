@@ -4,14 +4,14 @@ categories:
 - java 
 
 tags:
-- FileOutputStream
+ FileOutputStream
 - PrintStream
 - BufferedOutputStream
-- DateOutputStream
-- ServletOutputStream
-- OutputStream
-- write
-- flush
+ DateOutputStream
+ ServletOutputStream
+ OutputStream
+ write
+ flush
 
 isPost: false
 
@@ -33,8 +33,8 @@ last_modified_at: 2020-03-31T09:34:00 # 마지막 변경일
 모든 바이트 기반의 출력 스트림 클래스들은 이 클래스를 상속받아 만들어집니다.
 
 * FileOutputStream
-* PrintStream
-* BufferedOutputStream
+ PrintStream
+ BufferedOutputStream
 * DateOutputStream
 * ServletOutputStream
 
@@ -123,5 +123,5 @@ sos.close();
 
 * [IOS를 Java](https://altongmon.tistory.com/266) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA3OTYwMjQzXX0=
+eyJoaXN0b3J5IjpbLTI0MzI4MjI3OSw1MDc5NjAyNDNdfQ==
 -->
