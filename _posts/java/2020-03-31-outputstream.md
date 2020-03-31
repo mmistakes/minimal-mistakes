@@ -37,20 +37,23 @@ last_modified_at: 2020-03-31T09:34:00 # 마지막 변경일
 * DateOutputStream
 * ServletOutputStream
 
-write( int b ) : 매개 변수로 주어진 int 값에서 끝에 있는 1Byte만 출력 스트림으로 보냅니다.
 
-매개 변수가 정수 타입이지만 4Byte를 모두 보내는 것은 아닙니다.
+OutputStream 의 추상 메소드는
+* write( int b )
+	매개 변수로 주어진 int 값에서 끝에 있는 1Byte만 출력 스트림으로 보냅니다.
 
-OutputStream outputStream = new OutputStream("파일 경로");
+	매개 변수가 정수 타입이지만 4Byte를 모두 보내는 것은 아닙니다.
+	```java
+	OutputStream outputStream = new OutputStream("파일 경로");
 
-byte[] datas = "ABC".getBytes();
+	byte[] datas = "ABC".getBytes();
 
-for( int i = 0; i< datas.length(); i++ ) {
+	for( int i = 0; i< datas.length(); i++ ) {
 
-outputStream.write(datas[i]);
+	outputStream.write(datas[i]);
 
-}
-
+	}
+	```
   
 
 write( byte[] b ) : 매개값으로 주어진 바이트 배열의 모든 바이트를 출력 스트림으로 보냅니다.
@@ -120,5 +123,5 @@ sos.close();
 * [공부를 위한 블로그](https://pozt1234.tistory.com/29) 
 * [IOS를 Java](https://altongmon.tistory.com/266) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzkxOTYxMDQ2XX0=
+eyJoaXN0b3J5IjpbMTYwNDcyNDY0Nl19
 -->
