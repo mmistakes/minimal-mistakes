@@ -38,7 +38,7 @@ last_modified_at: 2020-03-31T09:34:00 # 마지막 변경일
 * ServletOutputStream
 
 
-OutputStream 의 추상 메소드는
+OutputStream 의 추상 메소드
 * write( int b )
 	매개 변수로 주어진 int 값에서 끝에 있는 1Byte만 출력 스트림으로 보냅니다.
 
@@ -47,24 +47,21 @@ OutputStream 의 추상 메소드는
 	OutputStream outputStream = new OutputStream("파일 경로");
 
 	byte[] datas = "ABC".getBytes();
-
 	for( int i = 0; i< datas.length(); i++ ) {
-
-	outputStream.write(datas[i]);
-
+		outputStream.write(datas[i]);
 	}
 	```
-  
 
-write( byte[] b ) : 매개값으로 주어진 바이트 배열의 모든 바이트를 출력 스트림으로 보냅니다.
+* write( byte[] b )
+	매개값으로 주어진 바이트 배열의 모든 바이트를 출력 스트림으로 보냅니다.
+	```java
+	OutputStream outputStream = new OutputStream("파일 경로");
 
-OutputStream outputStream = new OutputStream("파일 경로");
-
-byte[] datas = "ABC".getBytes();
-
-outputStream.write(datas);
-
-=> "ABC" 를 한번에 모두 출력합니다.
+	byte[] datas = "ABC".getBytes();
+	outputStream.write(datas);
+	```
+	
+	"ABC" 를 한번에 모두 출력합니다.
 
   
 
@@ -123,5 +120,5 @@ sos.close();
 * [공부를 위한 블로그](https://pozt1234.tistory.com/29) 
 * [IOS를 Java](https://altongmon.tistory.com/266) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNDcyNDY0Nl19
+eyJoaXN0b3J5IjpbMTMyNjQ3Mjk1N119
 -->
