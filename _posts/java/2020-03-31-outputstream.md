@@ -39,7 +39,9 @@ last_modified_at: 2020-03-31T09:34:00 # 마지막 변경일
 
 
 OutputStream 의 추상 메소드
-* write( int b )
+> 여기서 나오는 예시 코드들의 new OutputStream은 예시입니다.  
+> 추상
+* **write( int b )**
 	매개 변수로 주어진 int 값에서 끝에 있는 1Byte만 출력 스트림으로 보냅니다.
 
 	매개 변수가 정수 타입이지만 4Byte를 모두 보내는 것은 아닙니다.
@@ -52,7 +54,7 @@ OutputStream 의 추상 메소드
 	}
 	```
 
-* write( byte[] b )
+* **write( byte[] b )**
 	매개값으로 주어진 바이트 배열의 모든 바이트를 출력 스트림으로 보냅니다.
 	```java
 	OutputStream outputStream = new OutputStream("파일 경로");
@@ -65,7 +67,7 @@ OutputStream 의 추상 메소드
 
   
 
-* write( byte[] b, int off, int len )
+* **write( byte[] b, int off, int len )**
 	b[off] 부터 len 개의 바이트를 출력 스트림으로 보냅니다.
 
 	```java
@@ -78,17 +80,17 @@ OutputStream 의 추상 메소드
 
   
 
-* flush(), close()
+* **flush()**
 	출력 스트림의 내부에는 작은 버퍼가 있습니다.
 	
 	데이터가 출력되기 전에 버퍼에 쌓여 있다가, 순서대로 출력합니다
 
 	flush()는 버퍼에 남아있는 데이터를 모두 출력시키고, 버퍼를 비우는 역할을 합니다.
 
-	더 이상 출력할 데이턱 없다면 flush()를 마지막에 호출해 버퍼에 남아있는 데이터가
-모두 출력 되도록 해야 합니다.
+	더 이상 출력할 데이턱 없다면 flush()를 마지막에 호출해 버퍼에 남아있는 데이터가 모두 출력 되도록 해야 합니다.
 
-OutputStream을 더 이상 사용하지 않는 다면 cose()를 호출해 사용했던 시스템 자원을 풀어줘야 합니다.
+* **close()**
+	OutputStream을 더 이상 사용하지 않는 다면 close()를 호출해 사용했던 시스템 자원을 풀어줘야 합니다.
 
 
 
@@ -117,5 +119,5 @@ sos.close();
 * [공부를 위한 블로그](https://pozt1234.tistory.com/29) 
 * [IOS를 Java](https://altongmon.tistory.com/266) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzA0MTY5NTddfQ==
+eyJoaXN0b3J5IjpbLTE2MzQzOTk0MTJdfQ==
 -->
