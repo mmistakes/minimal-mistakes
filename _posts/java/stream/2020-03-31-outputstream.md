@@ -57,6 +57,7 @@ OutputStream 의 추상 메소드
 		outputStream.write(datas[i]);
 	}
 	```
+<br>
 
 * **write( byte[] b )**
 	매개값으로 주어진 바이트 배열의 모든 바이트를 출력 스트림으로 보냅니다.
@@ -68,7 +69,7 @@ OutputStream 의 추상 메소드
 	```
 	
 	"ABC" 를 한번에 모두 출력합니다.
-
+<br>
   
 
 * **write( byte[] b, int off, int len )**
@@ -81,7 +82,7 @@ OutputStream 의 추상 메소드
 	outputStream.write(datas, 1,2);
 	```
 	"BC"만 출력
-
+<br>
   
 
 * **flush()**
@@ -92,7 +93,7 @@ OutputStream 의 추상 메소드
 	flush()는 버퍼에 남아있는 데이터를 모두 출력시키고, 버퍼를 비우는 역할을 합니다.
 
 	더 이상 출력할 데이턱 없다면 flush()를 마지막에 호출해 버퍼에 남아있는 데이터가 모두 출력 되도록 해야 합니다.
-
+<br>
 * **close()**
 	OutputStream을 더 이상 사용하지 않는 다면 close()를 호출해 사용했던 시스템 자원을 풀어줘야 합니다.
 
@@ -124,5 +125,5 @@ sos.close();
 
 * [IOS를 Java](https://altongmon.tistory.com/266) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwOTg3NDI3NiwyMDUwMzkwNzU1XX0=
+eyJoaXN0b3J5IjpbMjA0NDY5MDMwNiwyMDUwMzkwNzU1XX0=
 -->
