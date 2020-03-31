@@ -7,11 +7,11 @@ tags:
  FileOutputStream
 - PrintStream
 - BufferedOutputStream
- DateOutputStream
- ServletOutputStream
- OutputStream
- write
- flush
+- DateOutputStream
+- ServletOutputStream
+- OutputStream
+- write
+- flush
 
 isPost: false
 
@@ -123,5 +123,5 @@ sos.close();
 
 * [IOS를 Java](https://altongmon.tistory.com/266) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0MzI4MjI3OV19
+eyJoaXN0b3J5IjpbMTc3ODg5MTY5Nl19
 -->
