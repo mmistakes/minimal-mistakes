@@ -4,7 +4,7 @@ categories:
 - java 
 
 tags:
- FileOutputStream
+- FileOutputStream
 - PrintStream
 - BufferedOutputStream
 - DateOutputStream
@@ -123,5 +123,5 @@ sos.close();
 
 * [IOS를 Java](https://altongmon.tistory.com/266) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3ODg5MTY5Nl19
+eyJoaXN0b3J5IjpbMjA1MDM5MDc1NV19
 -->
