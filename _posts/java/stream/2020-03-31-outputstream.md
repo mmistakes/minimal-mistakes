@@ -24,7 +24,7 @@ toc_label: "목차"
 toc_icon: "cog" # font Awesome아이콘으로 toc 아이콘 설정 
 toc_sticky: true # 스크롤 내릴때 같이 내려가는 목차
 
-last_modified_at: 2020-03-31T09:34:00 # 마지막 변경일
+last_modified_at: 2020-03-31T10:57:00 # 마지막 변경일
 ---
 
 # OutputStream
@@ -124,5 +124,5 @@ sos.close();
 
 * [IOS를 Java](https://altongmon.tistory.com/266) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0ODkzOTQ5MCwyMDUwMzkwNzU1XX0=
+eyJoaXN0b3J5IjpbLTE1ODkyNTczOTksMjA1MDM5MDc1NV19
 -->
