@@ -40,7 +40,9 @@ last_modified_at: 2020-03-31T09:34:00 # 마지막 변경일
 
 OutputStream 의 추상 메소드
 > 여기서 나오는 예시 코드들의 new OutputStream은 예시입니다.  
-> 추상
+> **추상클래스는 인스턴스를 생성할 수 없습니다.**  
+> 상황에 맞는 상속받은 클래스를 이용해 객체를 생성해야 합니다.  
+
 * **write( int b )**
 	매개 변수로 주어진 int 값에서 끝에 있는 1Byte만 출력 스트림으로 보냅니다.
 
@@ -119,5 +121,5 @@ sos.close();
 * [공부를 위한 블로그](https://pozt1234.tistory.com/29) 
 * [IOS를 Java](https://altongmon.tistory.com/266) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzQzOTk0MTJdfQ==
+eyJoaXN0b3J5IjpbMzA4MTUwMzA1XX0=
 -->
