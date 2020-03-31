@@ -33,10 +33,18 @@ ServletOutputStream의 용도는 게시판에 파일을 올릴 때 사용한다.
 
 [ServletResponse](https://tomcat.apache.org/tomcat-8.0-doc/servletapi/index.html)  클래스에 getOutputStream()이라는 함수를 통해  **servletOutputStream** 인스턴스를 받아서 사용해야한다.
 
+```java
+ServletOutputStream sos = resp.getOutputStream();
+
+sos.write(쓰고자하는 데이터의 버퍼);
+sos.flush();
+sos.close();
+```
+
   
   
 # Reference
 * [공부를 위한 블로그](https://pozt1234.tistory.com/29) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4MjgwNjcyNF19
+eyJoaXN0b3J5IjpbLTU1NjgxMzk4N119
 -->
