@@ -21,7 +21,19 @@ last_modified_at: 2020-03-31T09:34:00 # 마지막 변경일
 ---
 # OutputStream
 
-추상클래스이다.  
+추상 클래스이며 바이트 기반 출력 스트림의 최상위 클래스입니다.
+
+모든 바이트 기반의 출력 스트림 클래스들은 이 클래스를 상속받아 만들어집니다.
+
+* FileOutputStream
+* PrintStream
+* BufferedOutputStream
+* DateOutputStream
+* ServletOutputStream
+
+  
+  
+
 
 ## ServletOutputStream
 
@@ -34,6 +46,7 @@ ServletOutputStream의 용도는 게시판에 파일을 올릴 때 사용한다.
 [ServletResponse](https://tomcat.apache.org/tomcat-8.0-doc/servletapi/index.html)  클래스에 getOutputStream()이라는 함수를 통해  **servletOutputStream** 인스턴스를 받아서 사용해야한다.
 
 ```java
+// resp = HttpServletResponse의 객체
 ServletOutputStream sos = resp.getOutputStream();
 
 sos.write(쓰고자하는 데이터의 버퍼);
@@ -45,6 +58,7 @@ sos.close();
   
 # Reference
 * [공부를 위한 블로그](https://pozt1234.tistory.com/29) 
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1NjgxMzk4N119
+eyJoaXN0b3J5IjpbMTk5Njk4MzExOF19
 -->
