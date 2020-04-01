@@ -131,7 +131,11 @@ Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text d
 Bob-->Alice: Checking with John...
 Alice->John: Yes... John, how are you?
 ```
+
 :sparkles:
+:smile:
+
+
 And this will produce a flow chart:
 
 ```mermaid
@@ -142,5 +146,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyNzg4MTAyNF19
+eyJoaXN0b3J5IjpbLTIxMTk4OTYwMjhdfQ==
 -->
