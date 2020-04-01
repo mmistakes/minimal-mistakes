@@ -16,7 +16,8 @@ tags:
 
 isPost: false
 
-last_modified_at: 2020-04-01 14:08:30.14 
+last_modified_at: 2020-04-01 14:18:49.28 
+
 
 ---
 
@@ -118,6 +119,6 @@ sos.close();
 
 * [IOS를 Java](https://altongmon.tistory.com/266) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MzA2NDg3OSwyMDQ0NjkwMzA2LDIwNT
-AzOTA3NTVdfQ==
+eyJoaXN0b3J5IjpbMzI3MjgxNjU1LDEzOTMwNjQ4NzksMjA0ND
+Y5MDMwNiwyMDUwMzkwNzU1XX0=
 -->
