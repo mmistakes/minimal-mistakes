@@ -16,7 +16,8 @@ tags:
 
 isPost: false
 
-last_modified_at: 2020-03-31T10:57:00
+last_modified_at: 2020-04-01 14:08:30.14 
+
 ---
 
 # OutputStream
@@ -117,6 +118,6 @@ sos.close();
 
 * [IOS를 Java](https://altongmon.tistory.com/266) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ4NzAyNjEsMjA0NDY5MDMwNiwyMDUwMz
-kwNzU1XX0=
+eyJoaXN0b3J5IjpbMTM5MzA2NDg3OSwyMDQ0NjkwMzA2LDIwNT
+AzOTA3NTVdfQ==
 -->
