@@ -30,8 +30,7 @@
           <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
         {% endif %}
     </h2>
-    <!-- readtime 표기 -> 작성날짜 표기-->
-    <!--
+    <!-- readtime >>>> 작성날짜 표기
     {% if post.read_time %}
       <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
