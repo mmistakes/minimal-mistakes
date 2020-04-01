@@ -269,6 +269,8 @@ defaults:
       author_profile: true
       read_time: true
       toc: true
+      toc_label: "목차"
+      toc_sticky: true
       comments: true
       share: true
       related: true
