@@ -16,14 +16,6 @@ tags:
 
 isPost: false
 
-author_profile: true #작성자 프로필 출력여부
-read_time: true # read_time을 출력할지 여부 1min read 같은것!
-
-toc: true
-toc_label: "목차"
-toc_icon: "cog" # font Awesome아이콘으로 toc 아이콘 설정 
-toc_sticky: true # 스크롤 내릴때 같이 내려가는 목차
-
 last_modified_at: 2020-03-31T10:57:00
 ---
 
@@ -125,5 +117,6 @@ sos.close();
 
 * [IOS를 Java](https://altongmon.tistory.com/266) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NDY5MDMwNiwyMDUwMzkwNzU1XX0=
+eyJoaXN0b3J5IjpbMzQ4NzAyNjEsMjA0NDY5MDMwNiwyMDUwMz
+kwNzU1XX0=
 -->
