@@ -14,7 +14,7 @@ tags:
 - write
 - flush
 
-isPost: false
+except: false
 
 last_modified_at: 2020-04-01 14:18:49.28 
 
@@ -118,6 +118,6 @@ sos.close();
 
 * [IOS를 Java](https://altongmon.tistory.com/266) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzcxMTAyNjMsMTM5MzA2NDg3OSwyMD
-Q0NjkwMzA2LDIwNTAzOTA3NTVdfQ==
+eyJoaXN0b3J5IjpbMTg4MjI5MjY2NiwxMzkzMDY0ODc5LDIwND
+Q2OTAzMDYsMjA1MDM5MDc1NV19
 -->
