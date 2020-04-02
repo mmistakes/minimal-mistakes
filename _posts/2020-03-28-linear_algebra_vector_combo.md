@@ -1,5 +1,5 @@
 ---
-title: "Linear Combinations, Spans and Basic Vectors"
+title: "2. Linear Combinations, Spans and Basic Vectors"
 author: "Abdul"
 layout: single
 categories:
@@ -114,3 +114,6 @@ Consider why this definition makes sense:
 Our *basis* consists of two vectors (*i* and *j*) which are used to represent two vectors which do __not__ overlap.
 Since they do not overlap they each independently contribute to the *span*, in 2-D allowing them to scale to all points on the plane.
 Since our *basis* independently contributes to the *span*, they are a set of *linearly independent* vectors.
+
+
+![Look](/minimal-mistakes/assets/images/linear_algebra_combination_spans_and_basic_vectors.jpg)
