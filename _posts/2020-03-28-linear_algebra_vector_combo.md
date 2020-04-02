@@ -1,5 +1,5 @@
 ---
-title: "2. Linear Combinations, Spans and Basic Vectors"
+title: "Linear Combinations, Spans and Basic Vectors"
 author: "Abdul"
 layout: single
 categories:

@@ -1,5 +1,5 @@
 ---
-title: "3. Linear Transformation and Matrices"
+title: "Linear Transformation and Matrices"
 author: "Abdul"
 layout: single
 categories:
