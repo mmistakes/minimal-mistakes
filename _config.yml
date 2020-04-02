@@ -246,7 +246,7 @@ compress_html:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 8 # 첫 페이지에보여줄 최근 게시물 수를 지정
+paginate: 7 # 첫 페이지에보여줄 최근 게시물 수를 지정
 paginate_path: /page:num/
 timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
