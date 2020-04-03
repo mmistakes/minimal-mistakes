@@ -1,6 +1,6 @@
-# [This is my personal blog](https://martinapugliese.github.io)
+# [Clearly Erroneous](https://martinapugliese.github.io)
 
-This blog uses the [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) Jekyll theme. Copyright down here.
+This blog uses the [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) Jekyll theme, which has been customised. You can find the [credits](#credits) and the [licence](#licence) in this README.
 
 ## Original theme docs
 
@@ -9,21 +9,37 @@ This blog uses the [Minimal Mistakes](https://github.com/mmistakes/minimal-mista
 * [Quick-start guide](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
 * [Gemified theme](https://mmistakes.github.io/minimal-mistakes/jekyll/gemified-theme-beta/)
 
+## Style customisations
+
+I've customised CSS and text defaults here and there.
+
 ## Usage notes here
 
-Installation has followed the quick-start giude above and then the gemified version of the theme has been installed.
+Installation has followed the quick-start guide above and then the gemified version of the theme has been installed.
 
 * To serve the site locally, run `bundle exec jekyll serve` (runs on http://127.0.0.1:4000)
-* MathJax is used to display LateX-style maths (added in `head.html`) in `_includes`. Add maths into double dollars.
+* Note that if the config file is modified while you're serving the site locally, you need to restart it to see the edits
 
 ### Update theme
 
 Keep the repo up to date with new features from the upstream. If there's too many changed as you've been lazy and haven't updated in a while, so have way too many conflicts to be solved, the best way is create a branch updated with the minima mistakes master and apply your changes on that one.
 
 
-# Notes
+## On general edits
 
-If the config file is modified while you're serving the site locally, you need to restart it.
+I've modified things here and there to customise my site. In particular I have:
+* edited some text bits in `_data/ui-text.yml`
+* added vars in the config to aid usage (e.g., the one for the path to post images)
+* changed default paths to images
+
+## On the posts archive on the homepage
+
+I've edited the `_layouts/archive-single.html` to display the date of creation of the post in the archive list as it used to be (was removed in a more recent release).
+
+## On posts
+
+* MathJax is used to display LateX-style maths (added in `head.html`) in `_includes`. Add maths into double dollars.
+* There's buttons for sharing a post on socials configured in `_includes/social-share.html`: the twitter one will work fine from local as well, the Facebook and LinkedIn ones will only work when deployed
 
 
 ---
