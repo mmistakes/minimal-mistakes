@@ -6,4 +6,23 @@ search: false
 @charset "utf-8";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+
+/* github highlighting (base16) */
+$base00: #ffffff !default;
+$base01: #f5f5f5 !default;
+$base02: #c8c8fa !default;
+$base03: #969896 !default;
+$base04: #e8e8e8 !default;
+$base05: #333333 !default;
+$base06: #ffffff !default;
+$base07: #ffffff !default;
+$base08: #ed6a43 !default;
+$base09: #0086b3 !default;
+$base0a: #795da3 !default;
+$base0b: #183691 !default;
+$base0c: #183691 !default;
+$base0d: #795da3 !default;
+$base0e: #a71d5d !default;
+$base0f: #333333 !default;
+
 @import "minimal-mistakes"; // main partials
