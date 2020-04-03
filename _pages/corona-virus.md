@@ -28,7 +28,7 @@ Natürlich können Sie den nun gewohnten Alltag so beibehalten, ich würde jedoc
 
 Sie werden durch Ihre Lehrkräfte für die kommenden zwei Wochen eventuell noch aufgelockerte, kreative, spaßige Angebote gemailt bekommen. Hier kann geknobelt, gebastelt, gerätselt werden. Das ist aber KEIN Muss, sondern freiwillig!
 
-Sobald ich neue Informationen habe, ob es bei der Schulöffnung am 20.04.2020 bleiben wird,  werde ich Sie sofort informieren. Zurzeit sind wir komplett abgeschnitten und geschlossen, da wir einen sehr umfangreichen Wasserrohbruch zu bewerkstelligen haben. Die Erzieher*innen führen die Notbetreuung in der nächsten Woche in den Räumlichkeiten der Linden-Grundschule durch. Wir sind nach wie vor auch telefonisch und per E-Mail zu erreichen: 36 70 95 20, hort@brandwerder.de, sekretariat@brandwerder.de.
+Sobald ich neue Informationen habe, ob es bei der Schulöffnung am 20.04.2020 bleiben wird,  werde ich Sie sofort informieren. Zurzeit sind wir komplett abgeschnitten und geschlossen, da wir einen sehr umfangreichen Wasserrohbruch zu bewerkstelligen haben. Die Erzieher*innen führen die Notbetreuung in der nächsten Woche in den Räumlichkeiten der Linden-Grundschule durch. Wir sind nach wie vor auch telefonisch und per E-Mail zu erreichen: 36 70 95 20, {% include email email='hort@brandwerder.de' %}, {% include email email='sekretariat@brandwerder.de' %}.
 
 Ich wünsche Ihnen und Ihrer Familie weiterhin viel Kraft und Durchhaltevermögen und hoffe, dass wir uns bald wiedersehen werden.
 
