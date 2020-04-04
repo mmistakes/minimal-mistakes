@@ -1,17 +1,12 @@
-## Below are some articles within {{page.title}}
 {% assign somevar = page.categories[-1] %}
 {% assign site_cat = site.categories[somevar] %}
+
+
+  {% for post in site_cat reversed %}
+## Below are some articles within {{page.title}}
+  {% endfor %}
+
   {% for post in site_cat reversed %}
 
   *   [{{post.title}}]({{post.url | prepend:site.baseurl }})
   {% endfor %}
-
-
-{% comment %}
-## Below are some articles within {{page.title}}
-{% assign somevar = page.categories[-1] %}
-  {% for post in site.categories[somevar] %}
-
-  *   [{{post.title}}]({{post.url | prepend:site.baseurl }})
-  {% endfor %}
-  {% endcomment %}

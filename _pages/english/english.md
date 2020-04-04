@@ -1,11 +1,11 @@
 ---
-title: "Psychology"
+title: "English"
 author: "Abdul"
 layout: single
-excerpt: "category Psych"
+excerpt: "Category English"
 categories:
-  - psychology
-permalink: /categories/Psychology/
+  - english
+permalink: /categories/english/
 ---
 {% include main_cat.html %}
 {% include sub_cat.html %}
