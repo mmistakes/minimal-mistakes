@@ -1,15 +1,19 @@
 {% if include.id %}
-  {% assign gallery = page.[include.id] %}
+  {% assign gallery = page[include.id] %}
 {% else %}
   {% assign gallery = page.gallery %}
 {% endif %}
 
-{% if gallery.size == 2 %}
-  {% assign gallery_layout = 'half' %}
-{% elsif gallery.size >= 3 %}
-  {% assign gallery_layout = 'third' %}
+{% if include.layout %}
+  {% assign gallery_layout = include.layout %}
 {% else %}
-  {% assign gallery_layout = '' %}
+  {% if gallery.size == 2 %}
+    {% assign gallery_layout = 'half' %}
+  {% elsif gallery.size >= 3 %}
+    {% assign gallery_layout = 'third' %}
+  {% else %}
+    {% assign gallery_layout = '' %}
+  {% endif %}
 {% endif %}
 
 <figure class="{{ gallery_layout }} {{ include.class }}">
@@ -19,7 +23,7 @@
         {% if img.url contains "://" %}
           "{{ img.url }}"
         {% else %}
-          "{{ img.url | absolute_url }}"
+          "{{ img.url | relative_url }}"
         {% endif %}
         {% if img.title %}title="{{ img.title }}"{% endif %}
       >
@@ -27,7 +31,7 @@
           {% if img.image_path contains "://" %}
             "{{ img.image_path }}"
           {% else %}
-            "{{ img.image_path | absolute_url }}"
+            "{{ img.image_path | relative_url }}"
           {% endif %}
           alt="{% if img.alt %}{{ img.alt }}{% endif %}">
       </a>
@@ -36,7 +40,7 @@
         {% if img.image_path contains "://" %}
           "{{ img.image_path }}"
         {% else %}
-          "{{ img.image_path | absolute_url }}"
+          "{{ img.image_path | relative_url }}"
         {% endif %}
         alt="{% if img.alt %}{{ img.alt }}{% endif %}">
     {% endif %}

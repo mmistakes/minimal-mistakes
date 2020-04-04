@@ -11,9 +11,9 @@ excerpt: My first week of work in the industry after transitioning from academia
 ---
 
 <figure class="align-center">
-  <img src="{{ site.url }}/images/me-antea.jpg" alt="">
+  <img src="{{ site.url }}/assets/avatars/me-antea.jpg" alt="">
   <figcaption>Me at work.. I don’t always look so curly. The image is a drawing by my dear friend <a href="http://ekanes.deviantart.com/">Antea Curcuruto</a>.</figcaption>
-</figure> 
+</figure>
 
 The week which has just ended (yesterday) has seen me transition from academia to the industrial world, I am working as a Software Developer (as it must be certainly clear from the image...).
 

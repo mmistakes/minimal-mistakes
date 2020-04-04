@@ -1,7 +1,7 @@
 ---
 title: The average meaning of average
 header:
-  image: /images/numbers.jpg
+  image: /assets/posts_images/numbers.jpg
 tags:
   - data-science
   - statistics
@@ -16,7 +16,7 @@ The word "average" in English is a quite interesting one. In regular language (I
 
 In more precise language, a collection of numbers forms a probability distribution. The average is used to express the central tendency of the distribution. Its representative value, (its average) is usually given as the (arithmetic) mean of the distribution, also known as the *expected value* of the distribution. In these cases, average means mean (!). There are plenty of situations though where the mean isn't the best descriptor of a distribution, due to its features and to what information we're trying to squeeze about it in one single number. In the case of a skewed distribution for instance, you'd better use the *median* to convey a measure of central tendency, because the mean would give you a value that is not only not representative of a central measurement, but also sensible to outliers. The median is the value which divides the distribution in half, so that half the values are on one side and half on the other side: this is exactly the definition of something that describes the central tendency of your numbers.
 
-Suppose for instance that you have a group of 1000 values as per the following table: you have 1000 values distributed in the range 0 to 1, many of which (700) are equal to 0.2. 
+Suppose for instance that you have a group of 1000 values as per the following table: you have 1000 values distributed in the range 0 to 1, many of which (700) are equal to 0.2.
 
 | Value    | How many   |
 | -------- |:----------:|
@@ -34,7 +34,7 @@ Medians are often used as the central values for population age distributions, s
 
 In any case, my point in this post was more linguistic than about data and statistics.
 
-It was quite interesting for me to discover that English has both the word average and the word mean and that the way average is used is not always clarified, generating confusion. Average is meant as the representative value. It's usually calculated as the mean but that is not always the best choice, up to you how you do it. In Italian we don't have two words, and this is the mother root of all my bewilderment. We just have one word, the mean (media). 
+It was quite interesting for me to discover that English has both the word average and the word mean and that the way average is used is not always clarified, generating confusion. Average is meant as the representative value. It's usually calculated as the mean but that is not always the best choice, up to you how you do it. In Italian we don't have two words, and this is the mother root of all my bewilderment. We just have one word, the mean (media).
 
 There is a lovely little book from 1954 called ["How to lie with statistics"](https://en.wikipedia.org/wiki/How_to_Lie_with_Statistics) which is all about how it is easy to misinterpret data and draw wrong conclusions, either on purpose (to confuse and manipulate people) or by mistake. This is a well known and painful phenomenon which is quite difficult to eradicate, especially because the misinterpretations typically come from people and organisations which have all the interest at pumping the numbers that suit their agenda. Anyway, the book has a chapter all devoted to the concept of average and its interpretations. Well worth a read.
 

@@ -22,7 +22,7 @@ Let's see.
 
 ## Plotting a function with one independent variable
 
-First of all, assuming to have called `pyplot` and `numpy` as 
+First of all, assuming to have called `pyplot` and `numpy` as
 
 ```py
 import matplotlib.pyplot as plt
@@ -125,20 +125,20 @@ plt.xlabel('x')
 
 Obviously this was just a short list of the most compelling difficult-to-remember-how-to-achieve things I've found by plotting stuff here and there, not claiming it's comprehensive.
 
-[sine]: {{ site.url }}/images/sine.png
+[sine]: {{ site.url }}{{site.posts_images_path}}sine.png
 {: height="750px" width="450px"}
 
-[sine2]: {{ site.url }}/images/sine2.png
+[sine2]: {{ site.url }}{{site.posts_images_path}}sine2.png
 {: height="750px" width="450px"}
 
-[paraboloid]: {{ site.url }}/images/paraboloid.png
+[paraboloid]: {{ site.url }}{{site.posts_images_path}}paraboloid.png
 {: height="750px" width="450px"}
 
-[semilog]: {{ site.url }}/images/semilog.png
+[semilog]: {{ site.url }}{{site.posts_images_path}}semilog.png
 {: height="750px" width="450px"}
 
-[loglog]: {{ site.url }}/images/loglog.png
+[loglog]: {{ site.url }}{{site.posts_images_path}}loglog.png
 {: height="750px" width="450px"}
 
-[sincos]: {{ site.url }}/images/sincos.png
+[sincos]: {{ site.url }}{{site.posts_images_path}}sincos.png
 {: height="750px" width="450px"}

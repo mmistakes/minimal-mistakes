@@ -27,14 +27,14 @@ I've left Edinburgh on the 8th March early morning and reached Florida on the sa
 ## The Southeast: Orlando & Atlanta
 
 <figure class="align-left" style="width: 400px">
-  <img src="{{ site.url }}/images/orlando.jpg">
+  <img src="{{ site.url }}{{site.posts_images_path}}orlando.jpg">
   <figcaption>Orlando, the Garden Walk leading to the Universal theme parks.</figcaption>
 </figure>
 
 Florida was warm! I had left Edinburgh at about 5/6 °C and found about 30 °C there, so was quite a change. Orlando was the choice because of the vicinity to the Kennedy Space Center, which I really really wanted to visit, plus I thought it would be fun to go see some theme parks and be in this all-holiday/artificial type of atmosphere. In fact, Orlando is pretty much an artificial place: big roads, big cars, big restaurants (all the chains!), theme parks, everywhere, not just the famous ones. Every corner is an entertainment one. Not my kind of place, but was really fun to experience as a one-off thing.
 
 <figure class="align-right" style="width: 400px">
-  <img src="{{ site.url }}/images/atlanta.jpg">
+  <img src="{{ site.url }}{{site.posts_images_path}}atlanta.jpg">
   <figcaption>Atlanta from the Centennial Olympic Park.</figcaption>
 </figure>
 
@@ -47,14 +47,14 @@ I've visited a bunch of other things in the city as well, like the Georgia Aquar
 I absolutely loved all of the Northeast! Quite a change of scenery and atmosphere with respect to the South. The NE is also where I've seen my American family so it is a special place for me. Those three cities I've seen are really really great.
 
 <figure class="align-left" style="width: 400px">
-  <img src="{{ site.url }}/images/dc.jpg">
+  <img src="{{ site.url }}{{site.posts_images_path}}dc.jpg">
   <figcaption>The US Capitol in Washington DC.</figcaption>
 </figure>
 
 Washington DC is obviously full of political history. You can visit the US Capitol (for free and with a tour, my guide was amazing!) as well as a lot of other things such as the museums of the Smithsonian Institution, all on the National Mall and all free. I stayed 4 days and I didn't have the time to go see all of them _in detail_, so had to skim a bit through some of them. Loved the National Gallery of Art (I even did a tour of Italian Renaissance there, because why not!). Visited Memorials and seen the White House from the outside (unfortunately couldn't book a tour, however there is a very informative Visitor Centre). Great place.
 
 <figure class="align-right" style="width: 300px">
-  <img src="{{ site.url }}/images/philly.jpg">
+  <img src="{{ site.url }}{{site.posts_images_path}}philly.jpg">
   <figcaption>Philadelphia, South Street.</figcaption>
 </figure>
 
@@ -63,7 +63,7 @@ Ooooh Philly, miss you. The city has such a beautiful skyline. I was staying in 
 I've also visited the Italian market and spoke to a nice lady (granddaughter of Italian immigrants), was really nice, amongst loads of other things.
 
 <figure class="align-left" style="width: 400px">
-  <img src="{{ site.url }}/images/boston.jpg">
+  <img src="{{ site.url }}{{site.posts_images_path}}boston.jpg">
   <figcaption>The Boston skyline from the Longfellow bridge.</figcaption>
 </figure>
 

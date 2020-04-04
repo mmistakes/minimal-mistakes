@@ -8,9 +8,9 @@ excerpt: My two cents on how to give quality public talks
 ---
 
 <figure style="width: 450px" class="align-left">
-  <img src="{{ site.url }}/images/publictalks1.jpeg" alt="">
+  <img src="{{ site.url }}{{site.posts_images_path}}publictalks1.jpeg" alt="">
   <figcaption>When is it that you enjoy listening to a talk?</figcaption>
-</figure> 
+</figure>
 
 There are several types of public talks. There are exams you do at university, when you talk in front of a dual audience (the professor(s) and the fellow student auditors, if present); lectures (whose purpose is to actually teach things); academic conferences (where you present the findings of your research to a monolithic audience formed of people working in the same field); non-academic summits (where you talk about interesting things you did at work and share what you learned to the benefit of colleagues in other companies); videos on Youtube (where you can [fascinate people with science](https://www.youtube.com/user/physicswoman), for instance, among other things); political speeches and press conferences; and a full plethora of other examples. What changes is the purpose of the talk and the audience. Obviously different audiences and scenarios require different sorts of structure and organisation of the talk.
 
@@ -38,9 +38,9 @@ Of course, there are also very short talk of 5 minutes or so, usually at those e
 There are several tools around. I personally always used Beamer (LateX) when in academia and I would continue to for hardcore scientific presentations, where fanciness has to be sacrificed for clarity and substance. Beamer is ideal for writing mathematics and also is easily customisable to always show the outline and the “where you are” by highlighting the structure level.
 
 <figure style="width: 400px" class="align-right">
-  <img src="{{ site.url }}/images/beamer.png" alt="">
+  <img src="{{ site.url }}{{site.posts_images_path}}beamer.png" alt="">
   <figcaption>A typical Beamer slide</figcaption>
-</figure> 
+</figure>
 
 In the figure, a typical Beamer slide: ideal for scientific presentations.
 
@@ -50,9 +50,9 @@ I have tried and also used Prezi more than once but I am not a great supporter o
 ## The content and the structure
 
 <figure style="width: 300px" class="align-left">
-  <img src="{{ site.url }}/images/alice.png" alt="">
+  <img src="{{ site.url }}{{site.posts_images_path}}alice.png" alt="">
   <figcaption>All this is assuming that the speaker has something interesting to say</figcaption>
-</figure> 
+</figure>
 
 Unfortunately this is not always the case: it is not that unfrequent to encounter self-promoting talks or speeches aimed at selling products, where a product can be simply your Twitter or Medium account really. In the liquid stream of information we occupy several people make a business out of promoting themselves and get paid by your clicks on their content. Nothing particularly new here, and exploiting the possibility to give a talk to publicise themselves is the equivalent of placing an advertisement for something new on an old medium. I am not criticising these types of talks, but I do believe that if you organise an event and make it understood that you are going to talk about something and then start talking about yourself and promote your products, you are being dishonest to the people who came listening to you. Be clear from the start instead.
 

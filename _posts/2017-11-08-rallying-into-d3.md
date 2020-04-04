@@ -5,14 +5,14 @@ tags:
   - python
   - d3
   - javascript
-excerpt: Following a path to learn D3 for data visualisation 
+excerpt: Following a path to learn D3 for data visualisation
 ---
 
 One of the things which really, really fascinates me as a data practitioner is the idea of displaying quantitative information in functional and also beautiful visuals capable of capturing the eye and at the same time producing a _wow_ moment in the spectator. The area, known under the umbrella term _data visualisation_, is a common territory of both "numerical" and "design" people and that's what makes it so interesting. Displaying data with visuals means telling a story, which requires both an understanding of what information to convey and what calculations to perform to quantify it, but also of how to show it in a way that is engaging and illuminating. It's not a straightforward task.
 
-Being a Python practitioner, I regularly use its plotting stack, mainly [matplotlib](https://matplotlib.org) and [seaborn](https://matplotlib.org) for everyday plots aimed at displaying information without a particular attention to its design (altough I have to point out that with these libraries it's possible to intervene on the customisation to create very nice things anyway, it just takes some coding effort). Anyway, these are good for creating "scientific" charts, meant at conveying quantitative information, not at telling stories. [Bokeh](https://bokeh.pydata.org/en/latest/) is a different library which takes more of the visual approach instead and produces D3-like plots through Python code. However, it's not native and I just figured it would be good to have a go at doing things in D3 from scratch. 
+Being a Python practitioner, I regularly use its plotting stack, mainly [matplotlib](https://matplotlib.org) and [seaborn](https://matplotlib.org) for everyday plots aimed at displaying information without a particular attention to its design (altough I have to point out that with these libraries it's possible to intervene on the customisation to create very nice things anyway, it just takes some coding effort). Anyway, these are good for creating "scientific" charts, meant at conveying quantitative information, not at telling stories. [Bokeh](https://bokeh.pydata.org/en/latest/) is a different library which takes more of the visual approach instead and produces D3-like plots through Python code. However, it's not native and I just figured it would be good to have a go at doing things in D3 from scratch.
 
-And from scratch it really is. To create even a simple chart in D3, you have to take manual care of placing all the elements yourself, no more simple API to create the whole thing in a few lines. You are in control of every bit: if for instance you want to create a bar plot (which would take you a couple lines in maplotlib), you'd have to create the rectangles yourself. It's a bit of a pain, but I'd argue it's worth giving it a go because the rewards pay off quite handsomely. 
+And from scratch it really is. To create even a simple chart in D3, you have to take manual care of placing all the elements yourself, no more simple API to create the whole thing in a few lines. You are in control of every bit: if for instance you want to create a bar plot (which would take you a couple lines in maplotlib), you'd have to create the rectangles yourself. It's a bit of a pain, but I'd argue it's worth giving it a go because the rewards pay off quite handsomely.
 
 ## D3 in Jekyll
 
@@ -29,11 +29,11 @@ I decided to take a week worth of evenings to go through some material and start
 
 I've followed a few resources around and built a repository where to store all material I produced along the way as a reference, you can find it here under the name [d3-rally](https://github.com/martinapugliese/d3-rally), it stores examples of how to do many little things, which is a grand resource to have when you're not practical enough yet.
 
-I started it all with the [classic primer by Sebastian Gutierrez](https://www.dashingd3js.com/table-of-contents), which leads you through generating SVG containers and scaling them, embedding simple elements like circles and rectangles in them and properly setting the scales for your numbers. It's a very good source for complete begineers. 
+I started it all with the [classic primer by Sebastian Gutierrez](https://www.dashingd3js.com/table-of-contents), which leads you through generating SVG containers and scaling them, embedding simple elements like circles and rectangles in them and properly setting the scales for your numbers. It's a very good source for complete begineers.
 
-After that, I found a natural continuation to the journey to be the book (it's an O'Reilly) *Interactive visualisations for the web* by Scott Murray, which has a supplementary Github [repo](https://github.com/alignedleft/d3-book) of code examples. It's quite comprehensive and very well written. 
+After that, I found a natural continuation to the journey to be the book (it's an O'Reilly) *Interactive visualisations for the web* by Scott Murray, which has a supplementary Github [repo](https://github.com/alignedleft/d3-book) of code examples. It's quite comprehensive and very well written.
 
-Other two good sources are the books *D3.js in action* by Elijah Meeks and *D3 tips and tricks* by Malcolm Maclean for subsequent playing around. 
+Other two good sources are the books *D3.js in action* by Elijah Meeks and *D3 tips and tricks* by Malcolm Maclean for subsequent playing around.
 
 With these three things I was able to crack through the week and get some stuff done. Also, the D3-related questions on stackoverflow provided an answer to all my questions.
 
@@ -112,7 +112,7 @@ The one example I'll put here is a silly bubble plot with tooltips that appear w
     };
 
     // Load the CSV data and draw each bubble
-    d3.csv("../data/bubbles.csv", function(data) {
+    d3.csv("../assets/data/bubbles.csv", function(data) {
 
     // Casting types of x and y to int
     data.forEach(function(d) {

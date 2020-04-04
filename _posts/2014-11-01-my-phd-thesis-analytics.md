@@ -44,5 +44,5 @@ And, the word clouds obtained with the text, function word excluded (size of wor
 
 ![word-cloud]
 
-[word-cloud]: {{ site.url }}/images/word-cloud.png
+[word-cloud]: {{ site.url }}{{site.posts_images_path}}word-cloud.png
 {: height="75px" width="600px"}

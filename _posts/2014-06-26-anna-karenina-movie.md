@@ -1,7 +1,7 @@
 ---
 title: Anna Karenina, the movie
 header:
-  image: /images/anna.jpeg
+  image: /assets/posts_images/anna.jpeg
   caption: "Ivan Kramsoi, Portrait of an unknown woman (Image licensed under the Public Domain terms)"
 tags:
   - movie

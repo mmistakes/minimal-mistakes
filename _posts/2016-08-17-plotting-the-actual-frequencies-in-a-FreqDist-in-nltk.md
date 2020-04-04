@@ -24,13 +24,13 @@ def plot_freqdist_freq(fd,
                        title='Frequency plot',
                        linewidth=2):
     """
-    As of NLTK version 3.2.1, FreqDist.plot() plots the counts 
-    and has no kwarg for normalising to frequency. 
+    As of NLTK version 3.2.1, FreqDist.plot() plots the counts
+    and has no kwarg for normalising to frequency.
     Work this around here.
-    
+
     INPUT:
         - the FreqDist object
-        - max_num: if specified, only plot up to this number of items 
+        - max_num: if specified, only plot up to this number of items
           (they are already sorted descending by the FreqDist)
         - cumulative: bool (defaults to False)
         - title: the title to give the plot
@@ -47,8 +47,8 @@ def plot_freqdist_freq(fd,
         tmp.plot(max_num, cumulative=cumulative,
                  title=title, linewidth=linewidth)
     else:
-        tmp.plot(cumulative=cumulative, 
-                 title=title, 
+        tmp.plot(cumulative=cumulative,
+                 title=title,
                  linewidth=linewidth)
 
     return
@@ -60,5 +60,5 @@ What we're doing here is simply normalising the counts to their sum, paying atte
 
 Looks like to is the most frequent token (note that no pre-processing/removals have been employed), with a frequency of around 6.5%. Having this number might be much more interesting than the count (which is around 9000, for reference).
 
-[freqdist]: {{ site.url }}/images/freqdist.png
+[freqdist]: {{ site.url }}{{site.posts_images_path}}freqdist.png
 {: height="75px" width="450px" align="right"}

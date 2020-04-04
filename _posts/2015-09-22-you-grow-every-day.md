@@ -8,14 +8,14 @@ excerpt: Everyone grows and learns in time, no matter the age
 ---
 
 <figure style="width: 300px" class="align-left">
-  <img src="{{ site.url }}/images/tree.jpeg" alt="">
+  <img src="{{ site.url }}{{site.posts_images_path}}tree.jpeg" alt="">
   <figcaption>This guy is not scared of growing.</figcaption>
-</figure> 
+</figure>
 
 Humans are mammals which require a long period of parental care lasting decades; other species are ready to go in their lives much quicker.
 The human brain is so big compared to other parts of the body, and so powerful, that it needs a long process of tuning before reaching the sort of “stable state” which we call adulthood.
 
-We pass through infancy (we’re totally dependent on adults for everything and we’re unable to perform any sort of simple task), childhood (we learn to be physically independent), then the teen years (we learn to deal with emotions and go through a cascade of hormonal changes aimed at setting up the cerebral system), and then we’re considered to be adults. 
+We pass through infancy (we’re totally dependent on adults for everything and we’re unable to perform any sort of simple task), childhood (we learn to be physically independent), then the teen years (we learn to deal with emotions and go through a cascade of hormonal changes aimed at setting up the cerebral system), and then we’re considered to be adults.
 
 After you hit the 20 threshold, you’re a young adult, your brain is all set up and this is usually the time where you build your professional profile, you go to university or you start working.
 On top of this long process, which is clearly different for each one of us, we accumulate loads and loads of what we all call experiences. While living our lives, our brain is bombarded with information from the outside and we implicitly absorb it to make it ours, to reinterpret it, to discard it, to make good use of it.

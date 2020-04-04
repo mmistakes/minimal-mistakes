@@ -10,7 +10,7 @@ tags:
 excerpt: We analysed how the frequency of tags on Stack Overflow behaves, what are the relevant distributions, whether the age of a tag has an effect and what part do the synonyms play.
 ---
 
-In this post, we're going to have a look at some data about the tags used on [Stack Overflow](http://stackoverflow.com) to label questions, their frequencies and what we can measure around them. 
+In this post, we're going to have a look at some data about the tags used on [Stack Overflow](http://stackoverflow.com) to label questions, their frequencies and what we can measure around them.
 
 For those who are heavy Stack Overflow users, which is probably pretty much the vast vast majority of the people who do tech, having posts appropriately tagged is vital to navigate the immense archive the site is. At the moment of writing this (January 2018), Stack Overflow contains more that 15 million questions, with a number of unique tags around 54000.
 The help page [here](http://stackoverflow.com/help/tagging) is meant to give some guidelines on how to best use this feature, as it's super important to have your question tagged in the best way it can in order to be found by the relevant people who can answer it. Tags are names of technologies, like programming languages, frameworks, software or technical elements and components, like coding techniques or computer science general topics.
@@ -23,7 +23,7 @@ The Stack Overflow Wikipedia page also asserts that, as of December 2014, *Based
 
 ## Fetching some data
 
-To query the Stack Overflow API, we'll use the Python package [StackAPI](http://stackapi.readthedocs.io/en/latest/). Note that the API allows 10000 requests every 24 hours. 
+To query the Stack Overflow API, we'll use the Python package [StackAPI](http://stackapi.readthedocs.io/en/latest/). Note that the API allows 10000 requests every 24 hours.
 
 We'll fetch the 5000 most frequent tags (those with the highest usage counts) as due to said API limits we can't fetch them all: if we did split the requests to get fetch all over multiple days, because the usage counts of tags change in time we wouldn't have a consistent picture. Anyway, 5000 seems way more than enough to see something interesting.
 
@@ -31,28 +31,28 @@ All the methodologies followed and the results are reported in [this repo](https
 
 ## Tags and their usage - rich gets richer
 
-First and foremost (this is data pulled on the 11 January 2018), what are the most frequent tags? The frequency is given as the usage count, namely the number of questions tagged with that tag. The figure below shows the top 20 tags by frequency: *Javascript* is king, with more than 1.5 million occurrences, then we see many other familiar languages and operating systems. Not particularly surprising! 
+First and foremost (this is data pulled on the 11 January 2018), what are the most frequent tags? The frequency is given as the usage count, namely the number of questions tagged with that tag. The figure below shows the top 20 tags by frequency: *Javascript* is king, with more than 1.5 million occurrences, then we see many other familiar languages and operating systems. Not particularly surprising!
 
 Has anything changed from the end of 2014, where it was claimed (see above) that the most frequent 8 tags were Java, JavaScript, C#, PHP, Android, jQuery, Python, HTML? Well, the who the most frequent 8 are hasn't changed, but assuming that the sentence was reporting them in order of decreasing frequency, one switch seems to have occurred: Java was more popular than Javascript back then. Is this a sign of times?
 
 It's also interesting to note that *AngularJS* is the only Javascript framework that makes it into this top 20 (it was born in 2010, so maybe it's old enough) and that *array* is so much discussed as a data structure.
 
 <figure style="width: 600px" class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/so-highest-20-tags.jpg" alt="">
+  <img src="{{ site.url }}{{ site.posts_images_path }}so-highest-20-tags.jpg" alt="">
   <figcaption>The first 20 tags per popularity. No big surprises right? </figcaption>
 </figure>
 
 All in all, note that even with such a small set of data, the frequencies span a large interval, the last one shown, *AngularJS*, sits at about 200k counts, to be compared to the 1.5 millions of *Javascript* above. Let's explore how the frequencies of all the tags we retrieved fall with the rank (the position in the sorted-by-frequency list) of the tags. The figure below shows exactly this and makes it clear that tags frequencies are spanning orders of magnitude really.
 
 <figure style="width: 600px" class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/so-tags-usage-time.jpg" alt="">
+  <img src="{{ site.url }}{{ site.posts_images_path }}so-tags-usage-time.jpg" alt="">
   <figcaption>Usage counts of all the 5000 retrieved tags versus their rank. Note the log scale on the y axis. </figcaption>
 </figure>
 
-In fact, the distribution of frequencies is power-law and if you fit the trend of frequency vs. rank (the [Zipf's law](https://en.wikipedia.org/wiki/Zipf%27s_law)) you end up with, the inner bulk of the distribution considered, with a trend $$x^{-\alpha}$$ with $$\alpha = 0.96$$. Does this hint at a rich-gets-richer phenomenon? 
+In fact, the distribution of frequencies is power-law and if you fit the trend of frequency vs. rank (the [Zipf's law](https://en.wikipedia.org/wiki/Zipf%27s_law)) you end up with, the inner bulk of the distribution considered, with a trend $$x^{-\alpha}$$ with $$\alpha = 0.96$$. Does this hint at a rich-gets-richer phenomenon?
 
 <figure style="width: 600px" class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/so-tags-zipf.jpg" alt="">
+  <img src="{{ site.url }}{{ site.posts_images_path }}so-tags-zipf.jpg" alt="">
   <figcaption>Zipf law for tag frequency (inner bulk of the data), the slope of the linear curve is -0.96.</figcaption>
 </figure>
 
@@ -68,10 +68,10 @@ We can also ask the data if, by any means, old gets richer as well, that is to s
 
 On this, we need to note that the `tags/` endpoint of the API does not furnish the creation date of the tag, even though [the info page of a tag](https://stackoverflow.com/tags/angularjs/info) does. So what we did has been attaching the tag with the creation date extracted from the first question appeared with that tag (querying the `search/` endpoint); note that because questions can always be edited, including retagging, this might mean that an old question sees its tags modified when a new tag first appears. This is why some tags have a creation date which is older than the technology they represent (see for instance AngularJS, born in 2010 but whose tag is from 2009).
 
-The plot below here shows a scatter of the usage counts vs. their age (in days, and again this data has been retrieved on the 11 January 2018 so it's the number of days till then). It also displays an average binning of the usage counts, the bin is 200 days large. 
+The plot below here shows a scatter of the usage counts vs. their age (in days, and again this data has been retrieved on the 11 January 2018 so it's the number of days till then). It also displays an average binning of the usage counts, the bin is 200 days large.
 
 <figure style="width: 600px" class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/so-tags-means.jpg" alt="">
+  <img src="{{ site.url }}{{ site.posts_images_path }}so-tags-means.jpg" alt="">
   <figcaption>Usage counts and age, plus binning.</figcaption>
 </figure>
 
@@ -86,11 +86,11 @@ Tags are collapsed as synonyms of existing ones by the users who achieved a cert
 The distribution of the number of synonyms per tag is in figure, again a very skewed situation where just a few tags have large sets of synonyms.
 
 <figure style="width: 600px" class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/so-tags-syns-dist.jpg" alt="">
+  <img src="{{ site.url }}{{ site.posts_images_path }}so-tags-syns-dist.jpg" alt="">
   <figcaption>Distribution of the number of synonyms per tag.</figcaption>
 </figure>
 
-For reference, the tag with most synonyms (25) is *css* (things like *font-weight*, *dynamic-css*, *inline-block*). 
+For reference, the tag with most synonyms (25) is *css* (things like *font-weight*, *dynamic-css*, *inline-block*).
 
 Now, would you expect that tags who have synonyms would receive higher frequency counts? This would be intuitively due to the fact that a tag with synonyms is a tag that can be expressed in multiple flavours, maybe a composite and broad technology and this would mean that people might be interested in different parts of it. We ran a quick t-test to determine if the means of the distributions of usage counts for tags with and without synonyms are significantly different and the result has been that they actually are, with said means sitting at respectively 21500 and 3200: in general terms, tags with synonyms are about 7 times as popular as those with no synonyms.
 
@@ -100,10 +100,6 @@ In 2017, Stack Overflow introduced a great tool to show the data they generate o
 
 ### A small word of caution
 
-The assumptions behind taking these temporal trend results at face value is that Stack Overflow is a representative community of the technologists around, that questions are correctly tagged and data is not biased. As an extreme case for instance, the popularity of a tag might be due to the lack of good documentation of the related tool, not necessarily to the how popular and interesting it is among users: lots of users on the site will be just popping there to get some help on solving a problem they can't find good references anywhere else. 
+The assumptions behind taking these temporal trend results at face value is that Stack Overflow is a representative community of the technologists around, that questions are correctly tagged and data is not biased. As an extreme case for instance, the popularity of a tag might be due to the lack of good documentation of the related tool, not necessarily to the how popular and interesting it is among users: lots of users on the site will be just popping there to get some help on solving a problem they can't find good references anywhere else.
 
 All in all though, a great tool to see how the world of tech is moving!
-
-
-
-

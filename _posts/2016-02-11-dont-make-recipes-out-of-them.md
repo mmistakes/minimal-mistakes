@@ -30,8 +30,8 @@ Google Trends on some of the essential building blocks of Data Science. Interest
 
 Machine Learning is not cooking though. Sure, there are established and robust techniques, and you certainly don’t want to reivent the wheel when solving your data problem, but don’t treat them as a set of fixed rules to be applied for the goal. The core word in Data Science is science (and this one here has lately become by favourite quote), hence when you solve a data problem you are expected to approach it scientifically. This does not involve blindly applying an existing black-box without a thought process beforehand. We use libraries to perform tasks because they save us time. We tale advantage of the work of someone else who coded the tools in a clean and robust format. Writing the algorithm code again would be pointless. But we want to make sure we are understanding what we are using, why we chose that specific box, how we can choose its parameters and finally how good it is for our needs. And we need to be able to replicate what we are doing on paper. Often, the feature extraction phase requires us to come up with metrics which aren’t there anywhere, because they would be specific to our problem, and to the data we have to tackle it. This is were we get scientifically creative. Then we use the algorithm. Data Science is not about running that specific code coding for that “thing”, it is all in the journey from raw data to information. It’s all in the journey you build.
 
-[trends1]: {{ site.url }}/images/trends1.png
+[trends1]: {{ site.url }}{{site.posts_images_path}}trends1.png
 {: height="75px" width="600px"}
 
-[trends2]: {{ site.url }}/images/trends2.png
+[trends2]: {{ site.url }}{{site.posts_images_path}}trends2.png
 {: height="75px" width="600px"}
