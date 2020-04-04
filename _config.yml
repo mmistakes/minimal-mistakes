@@ -22,8 +22,6 @@ logo                     : # path of logo image to display in the masthead, e.g.
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 posts_images_path        : "/assets/posts_images/"
 
-# TODO fix title being overwritten by post title
-
 ## SITE FEATURES
 
 # Breadcrumbs TODO ?

@@ -6,13 +6,23 @@
 
 {% assign title_separator = site.title_separator | default: '-' | replace: '|', '&#124;' %}
 
-{%- if page.title -%}
+{%- if page.layout == "home" -%}
+  {%- assign seo_title = site.title -%}
+{% else %}
   {%- assign seo_title = page.title | append: " " | append: title_separator | append: " " | append: site.title -%}
 {%- endif -%}
+
+<!-- THIS is the original: was assigining the first post title to the page title
+even on the home page - changed above! -->
+<!-- {%- if page.title -%}
+  {%- assign seo_title = page.title | append: " " | append: title_separator | append: " " | append: site.title -%}
+{%- endif -%}
+-->
 
 {%- if seo_title -%}
   {%- assign seo_title = seo_title | markdownify | strip_html | strip_newlines | escape_once -%}
 {%- endif -%}
+
 
 {% if page.canonical_url %}
   {%- assign canonical_url = page.canonical_url %}
