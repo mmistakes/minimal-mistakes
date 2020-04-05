@@ -107,24 +107,24 @@ abbr[data-original-title] {
 
 /* blockquotes */
 
-/* 변경한 인용문 */
-// blockquote {
-//   margin: 2em 1em 2em 0;
-//   padding-left: 1em;
-//   padding-right: 1em;
-//   font-style: italic;
-//   border-left: 0.25em solid $primary-color;
+/* 변경 전 인용문 */
+/* blockquote {
+   margin: 2em 1em 2em 0;
+   padding-left: 1em;
+   padding-right: 1em;
+   font-style: italic;
+   border-left: 0.25em solid $primary-color;
 
-//   cite {
-//     font-style: italic;
+   cite {
+     font-style: italic;
 
-//     &:before {
-//       content: "\2014";
-//       padding-right: 5px;
-//     }
-//   }
-// }
-
+     &:before {
+       content: "\2014";
+       padding-right: 5px;
+     }
+   }
+ }
+*/
 /* 변경한 인용문 */
 blockquote {
     background: url("https://user-images.githubusercontent.com/49507736/77596210-b7c4b980-6f3e-11ea-9581-af21a2719c40.gif") no-repeat scroll 10px 13px #fff;
@@ -135,10 +135,10 @@ blockquote {
     padding: 15px 15px 15px 50px;
 }
 blockquote p {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 blockquote cite {
-    color: #a1a1a1;
+//     color: #a1a1a1;
     display: block;
     font-size: 13px;
 }
