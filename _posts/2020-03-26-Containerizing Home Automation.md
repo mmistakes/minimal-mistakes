@@ -8,9 +8,8 @@ tags:
   - links
 published: True
 ---
-
-## OpenHAB
 Draft
+## OpenHAB
 
 I had to re-image my Intel NUC which runs my Home Automation system from Ubuntu 19.10 to Centos 8 recently and thought this might be good oppurtunity to containerize the applications/services. 
 
