@@ -9,6 +9,10 @@
 - Clarify documentation that Lunr only searches documents in collections. [#2450](https://github.com/mmistakes/minimal-mistakes/pull/2450)
 - Add guide on applying Front Matter defaults to jekyll-archives pages [#2466](https://github.com/mmistakes/minimal-mistakes/pull/2466)
 
+### Bug Fixes
+
+- Fix "Follow menu falls under post links" on small screens. [#2479](https://github.com/mmistakes/minimal-mistakes/issues/2479)
+
 ## [4.19.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.19.1)
 
 ### Enhancements
