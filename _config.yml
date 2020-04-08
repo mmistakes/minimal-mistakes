@@ -15,18 +15,18 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Site Title"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+locale                   : "ko-KR"
+title                    : "사이트 이름"
+title_separator          : ":"
+subtitle                 : "Version 1.0"
+name                     : "이름스"
+description              : "메타 태그에 들어가는 영역"
+url                      : "https://enidanny.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+repository               : "enidanny/enidanny.github.com"
+teaser                   : # "/assets/images/500x300.png" # 홈페이지 기본 티져(?) 이미지
+logo                     : # 타이틀 옆에 작게 들어갈 이미지
+masthead_title           : "홈페이지 최상단에 들어가는 타이틀"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -93,15 +93,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  name             : "Danny"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg" # 프로필 이미지
+  bio              : "블로그 개설 준비중입니다"
+  location         : "South Korea"
+  email            : "daewoong0102@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:your.name@email.com
+      # url: mailto:daewoong0102@naver.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -276,6 +276,14 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
+  
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    value:
+      layout: single
+      author_profile: true
