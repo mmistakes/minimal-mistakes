@@ -3,7 +3,7 @@ layout: documentation
 title: 악성코드 대응훈련
 category: ToCrack
 order: 1
-permalink: /tocrack/
+# permalink: /tocrack/
 ---
 
 ToCrack : To Crackdown
