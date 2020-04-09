@@ -2,6 +2,7 @@
 title: "About"
 layout: single
 permalink: /about/
+author_profile: true
 ---
 
 저자소개 예시입니다
