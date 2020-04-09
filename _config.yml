@@ -82,8 +82,8 @@ analytics:
 # Site Author
 author:
   name             : "Danny Kim"
-  bio              : "비범한 재능으로 평범하게 살자 - 공학 석사 / BLE 펌웨어 프로그래머 / 
-                      MATLAB 은둔중수 / 공대딸기 / 임베디드 시스템 개발 / UWB 실내 응용분야"
+  bio              : "비범한 재능으로 평범하게 살자 - 관심분야: 저전력 무선통신 / 
+                      / 임베디드 시스템 / 초광대역 실내 위치인식 / 전자공학"
   location         : "South Korea"
   email            : "daewoong0102@naver.com"
   links:
