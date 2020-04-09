@@ -12,15 +12,15 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 title                    : "대니의 깃허브 블로그"
 title_separator          : "-"
-subtitle                 : "Version 1.0"
+subtitle                 : # "Version 1.0"
 name                     : "Danny Kim"
-description              : "메타 태그에 들어가는 영역"
+description              : # "메타 태그에 들어가는 영역"
 url                      : "https://enidanny.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "enidanny/enidanny.github.com"
@@ -52,7 +52,7 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
-search                   : true #, false (default)
+search                   : # true #, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
@@ -90,11 +90,11 @@ analytics:
   google:
     tracking_id          : "UA-163232818-1"
     anonymize_ip         : # true, false (default)
-
+s
 
 # Site Author
 author:
-  name             : "Daewoong Kim"
+  name             : "Dae-woong Kim"
   avatar           : # 프로필 이미지 "/assets/images/2020-01-09-las-vagas.png" 
   bio              : "블로그 개설 준비중입니다"
   location         : "South Korea"
