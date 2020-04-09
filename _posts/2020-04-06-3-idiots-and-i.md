@@ -1,7 +1,7 @@
 ---
 title: "The 3 Idiots and I"
 author: "Abdul"
-layout: posts
+layout: single
 categories: free_writing
 ---
 
@@ -23,4 +23,4 @@ The famous Bollywood movie, 3 Idiots, directed by Rajkumar Hirani may be the one
 
 After I watched that movie at the impressionable age of twelve, my perspective shifted. It was like putting on new glasses, I now saw what was so clearly right in front of me. School was no longer a competition or a measuring stick; it was a haven for my newfound curiosity. This was the beginning of my awakening, a new state of mind where knowledge trumps all else. Furthermore, I didn’t want others to do poorly in order for me to do well. School should be a place of learning with one another, working together with common goals.
 
-When my focus shifted from grades to real learning, my grades went up significantly. My attitude about school changed and my grades reflected this shift. By the end of my awakening I went from being Raju to Rancho, not caring about my average as much as I cared about learning for its own sake. The light-hearted and mostly silly 3 Idiots made a serious and lasting impression on how I view education. 
+When my focus shifted from grades to real learning, my grades went up significantly. My attitude about school changed and my grades reflected this shift. By the end of my awakening I went from being Raju to Rancho, not caring about my average as much as I cared about learning for its own sake. The light-hearted and mostly silly 3 Idiots made a serious and lasting impression on how I view education.

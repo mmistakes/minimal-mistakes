@@ -1,7 +1,7 @@
 ---
 title: "My Bedroom"
 author: "Abdul"
-layout: posts
+layout: single
 categories: drawing
 ---
 
