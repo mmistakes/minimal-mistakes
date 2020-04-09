@@ -46,3 +46,5 @@ search: false
 [HTML 태그/포맷](https://enidanny.github.io/markup/markup-html-tags-and-formatting/)
 
 [이미지 추가](https://enidanny.github.io/markup-more-images/)
+
+[Github 이모티콘](https://www.webfx.com/tools/emoji-cheat-sheet/)
