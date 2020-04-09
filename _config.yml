@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 title                    : "대니의 깃허브 블로그"
-title_separator          : ":"
+title_separator          : "-"
 subtitle                 : "Version 1.0"
 name                     : "Danny Kim"
 description              : "메타 태그에 들어가는 영역"
