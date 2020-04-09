@@ -32,6 +32,8 @@ last_modified_at: 2020-04-09 16:04:56.28
 
 이 경우 Client는 해당 상황을 오류로 인지하고 Server는 성공으로 인지해 양 사이드 간에 Sync가 맞지 않아 문제가 발생할 확률이 높습니다.
 
+### 정리 
+
 개발자는 **통신 상에 이런 상황이 발생할 수 있는 부분을 미리 인지**하고 있어야 하며 시뮬레이션을 해봐야 합니다. 그리하여 **read timeout을 극단적으로 낮게 설정하는것은 위험**하며 애초에 시간이 걸리는 요리의 경우 비동기 방식의 접속을 시도하는것도 하나의 방법입니다. (Thread 등 **요청을 해놓고 응답을 기다리지 않고 내 할일을 수행**하다가 **응답이 오면 다시 해당 요청에 대한 반응**을 하는 것)
 
 여기선 간략하게만 설명했지만 [다음](https://d2.naver.com/helloworld/1321) 도 같이 읽어보시면 좋습니다.
@@ -39,5 +41,5 @@ last_modified_at: 2020-04-09 16:04:56.28
 # Reference
 * [https://inyl.github.io/programming/2017/12/02/timeout.html](https://inyl.github.io/programming/2017/12/02/timeout.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExMzExNDg5MiwtMTU3MjgyMTM3MV19
+eyJoaXN0b3J5IjpbMTczNTkyNzEyMiwtMTU3MjgyMTM3MV19
 -->
