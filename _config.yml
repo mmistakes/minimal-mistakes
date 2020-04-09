@@ -25,7 +25,7 @@ description              : "This Website will be a collections of my personal Wo
 url                      : "https://abdulsjournal.com"
 #url                      : "https://abdulrabbani347.github.io"
 #baseurl                  : "/blog"
-baseurl                  : "/minimal-mistakes"
+#baseurl                  : "/minimal-mistakes"
 full_url                : "https://abdulrabbani347.github.io/minimal-mistakes"
 #repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 repository               : "abdulrabbani347/minimal-mistakes"
