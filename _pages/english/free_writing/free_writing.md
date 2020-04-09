@@ -2,6 +2,7 @@
 title: "Free Writing"
 author: "Abdul"
 layout: single
+comments: true
 excerpt: "Category free writing"
 categories:
   - english
