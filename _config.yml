@@ -82,7 +82,7 @@ analytics:
 # Site Author
 author:
   name             : "Danny Kim"
-  avatar           : # 프로필 이미지 "/assets/images/2020-01-09-las-vagas.png" 
+  image            : "/assets/images/2020-01-09-las-vagas.png" 
   bio              : "블로그 개설 준비중입니다"
   location         : "South Korea"
   email            : "daewoong0102@naver.com"
