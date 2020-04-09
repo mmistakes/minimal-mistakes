@@ -4,7 +4,7 @@ title: ToSee 소개
 # Intorduce ToSee
 category: ToSee
 order: 1
-permalink: /getting-started/
+# permalink: /documentation/getting-started/
 ---
 Personal version | Enterprise Version | Latest Version 
 -------| ------- | -------
