@@ -16,17 +16,17 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "사이트 이름"
+title                    : "대니의 깃허브 블로그"
 title_separator          : ":"
 subtitle                 : "Version 1.0"
-name                     : "이름스"
+name                     : "Danny Kim"
 description              : "메타 태그에 들어가는 영역"
 url                      : "https://enidanny.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "enidanny/enidanny.github.com"
 teaser                   : # "/assets/images/500x300.png" # 홈페이지 기본 티져(?) 이미지
 logo                     : # 타이틀 옆에 작게 들어갈 이미지
-masthead_title           : "홈페이지 최상단에 들어가는 타이틀"
+masthead_title           : "대니의 깃허브 블로그"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -94,7 +94,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Danny"
+  name             : "Daewoong Kim"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg" # 프로필 이미지
   bio              : "블로그 개설 준비중입니다"
   location         : "South Korea"
