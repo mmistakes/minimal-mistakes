@@ -95,7 +95,7 @@ analytics:
 # Site Author
 author:
   name             : "Daewoong Kim"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg" # 프로필 이미지
+  avatar           : "/assets/images/2020-01-09-las-vagas.png" # 프로필 이미지
   bio              : "블로그 개설 준비중입니다"
   location         : "South Korea"
   email            : "daewoong0102@naver.com"
