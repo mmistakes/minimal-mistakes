@@ -22,7 +22,7 @@ title_separator          : "_"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Abdul Rabbani"
 description              : "This Website will be a collections of my personal Work"
-url                      : "https://abdulsjournal.com
+url                      : "https://abdulsjournal.com"
 #url                      : "https://abdulrabbani347.github.io"
 #baseurl                  : "/blog"
 baseurl                  : "/minimal-mistakes"
