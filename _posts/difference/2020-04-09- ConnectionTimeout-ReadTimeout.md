@@ -35,6 +35,9 @@ client가 server에 접속을 성공 했으나 서버가 로직을 수행하는 
 개발자는 통신상에 이런 상황이 발생할 수 있는 부분을 미리 인지하고 있어야 하며 시뮬레이션을 해봐야 합니다. 그리하여 read timeout을 극단적으로 낮게 설정하는것은 위험하며 애초에 시간이 걸리는 요리의 경우 비동기 방식의 접속을 시도하는것도 하나의 방법입니다.
 
 여기선 간략하게만 설명했지만 다음도 같이 읽어보시면 좋습니다.
+
+# Reference
+* [https://inyl.github.io/programming/2017/12/02/timeout.html](https://inyl.github.io/programming/2017/12/02/timeout.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDk0MzI4NjBdfQ==
+eyJoaXN0b3J5IjpbMTQ1NTkzNTIwOV19
 -->
