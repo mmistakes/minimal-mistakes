@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-KR"
 title                    : "대니의 깃허브 블로그"
 title_separator          : "-"
-subtitle                 : # "Version 1.0"
+subtitle                 : #
 name                     : "Danny Kim"
 description              : # "메타 태그에 들어가는 영역"
 url                      : "https://enidanny.github.io/"
@@ -82,7 +82,7 @@ analytics:
 # Site Author
 author:
   name             : "Danny Kim"
-  bio              : "블로그 개설 준비중입니다"
+  bio              : "현재 직장에서 저전력 블루투스 펌웨어 개발을 담당하고 있습니다."
   location         : "South Korea"
   email            : "daewoong0102@naver.com"
   links:
