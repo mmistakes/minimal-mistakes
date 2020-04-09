@@ -1,11 +1,10 @@
 ---
 title: "Markup: Text Alignment"
 categories:
-  - Markup
+  - Github Blog
 tags:
+  - post format
   - alignment
-  - content
-  - css
   - markup
 ---
 

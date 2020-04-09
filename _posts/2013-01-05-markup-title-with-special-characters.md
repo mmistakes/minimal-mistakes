@@ -1,12 +1,12 @@
 ---
 title: "Markup: Title with Special&nbsp;---&nbsp;Characters"
 categories:
-  - Markup
+  - Github Blog
 tags:
+  - post format
+  - characters
   - html
   - markup
-  - post
-  - title
 ---
 
 Putting special characters in the title should have no adverse effect on the layout or functionality.

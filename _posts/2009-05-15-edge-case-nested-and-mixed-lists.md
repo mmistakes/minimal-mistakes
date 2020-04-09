@@ -1,13 +1,10 @@
 ---
 title: "Edge Case: Nested and Mixed Lists"
 categories:
-  - Edge Case
+  - Github Blog
 tags:
-  - content
-  - css
-  - edge case
-  - lists
-  - markup
+  - post format
+  - list
 ---
 
 Nested and mixed lists are an interesting beast. It's a corner case to make sure that

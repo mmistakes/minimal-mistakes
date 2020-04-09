@@ -3,10 +3,11 @@ title: "Markup: Another Post with Images"
 excerpt: "Examples and code for displaying images in posts."
 header:
   teaser: "http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg"
+categories:
+  	- Github Blog
 tags: 
-  - sample post
-  - images
-  - test
+	- post format
+  	- image
 ---
 
 Here are some examples of what a post with images might look like. If you want to display two or three images next to each other responsively use `figure` with the appropriate `class`. Each instance of `figure` is auto-numbered and displayed in the caption.

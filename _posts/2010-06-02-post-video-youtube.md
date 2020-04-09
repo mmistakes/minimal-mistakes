@@ -1,9 +1,11 @@
 ---
 title: "Post: Video (YouTube)"
 categories:
-  - Post Formats
+  - Github Blog
 tags:
-  - Post Formats
+  - post format
+  - video
+  - youtube
 ---
 
 YouTube video embed below.

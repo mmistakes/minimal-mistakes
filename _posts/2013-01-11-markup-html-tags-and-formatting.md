@@ -3,10 +3,9 @@ title: "Markup: HTML Tags and Formatting"
 header:
   teaser: "assets/images/markup-syntax-highlighting-teaser.jpg"
 categories:
-  - Markup
+  - Github Blog
 tags:
-  - content
-  - css
+  - post format
   - formatting
   - html
   - markup

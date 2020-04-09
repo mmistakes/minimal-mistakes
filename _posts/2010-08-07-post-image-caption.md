@@ -1,10 +1,11 @@
 ---
 title: "Post: Image (Caption)"
 categories:
-  - Post Formats
+  - Github Blog
 tags:
+  - post format
   - image
-  - Post Formats
+  - caption
 ---
 
 {% capture fig_img %}

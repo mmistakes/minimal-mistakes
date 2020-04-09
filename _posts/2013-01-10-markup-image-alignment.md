@@ -1,12 +1,10 @@
 ---
 title: "Markup: Image Alignment"
 categories:
-  - Markup
+  - Github Blog
 tags:
+  - post format
   - alignment
-  - captions
-  - content
-  - css
   - image
   - markup
 ---

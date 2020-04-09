@@ -1,7 +1,11 @@
 ---
 title: "Layout: Post with Nested Table of Contents"
+categories:
+  - Github Blog
 tags:
+  - post format
   - table of contents
+  - toc
 toc: true
 ---
 

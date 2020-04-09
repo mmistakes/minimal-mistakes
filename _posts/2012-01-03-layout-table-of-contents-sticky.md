@@ -1,7 +1,12 @@
 ---
 title: "Layout: Post with Sticky Table of Contents"
+categories:
+  - Github Blog
 tags:
+  - post format
   - table of contents
+  - toc
+  - sticky
 toc: true
 toc_sticky: true
 ---

@@ -1,9 +1,9 @@
 ---
 title: "Post: Notice"
 categories:
-  - Post Formats
+  - Github Blog
 tags:
-  - Post Formats
+  - post format
   - notice
 ---
 
