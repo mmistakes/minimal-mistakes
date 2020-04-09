@@ -82,10 +82,8 @@ analytics:
 # Site Author
 author:
   name             : "Danny Kim"
-  bio              : "공학 석사 / BLE 펌웨어 프로그래머 / MATLAB 은둔중수 
-                      / 공대딸기 / 임베디드 시스템 프로그래머 / ARM Cortex M4 
-                      프로세서 개발 / 아두이노 개발 / 아무 말이나 막 써도 
-                      아무도 안 보겠는데?"
+  bio              : "비범한 재능으로 평범하게 살자 - 공학 석사 / BLE 펌웨어 프로그래머 / 
+                      MATLAB 은둔중수 / 공대딸기 / 임베디드 시스템 개발 / UWB 실내 응용분야"
   location         : "South Korea"
   email            : "daewoong0102@naver.com"
   links:
