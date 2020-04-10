@@ -152,4 +152,4 @@ These transformations can be described using the coordinates of the *basis vecto
 The important takeaway is that every time you see a matrix, you can interpret what it does to any given vector.
 
 
-![Look](/minimal-mistakes/assets/images/linear_algebra_linear_transformation.jpg)
+![Look](/assets/images/linear_algebra_linear_transformation.jpg)

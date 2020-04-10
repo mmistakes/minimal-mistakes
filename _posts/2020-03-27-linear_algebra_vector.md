@@ -73,4 +73,4 @@ Ultimately no one view is right, what matters more is being able to utilize a sp
 ### Image:
 I promise my illustration will get better :)
 
-![Look](/minimal-mistakes/assets/images/linear_algebra_vector.jpg)
+![Look](/assets/images/linear_algebra_vector.jpg)

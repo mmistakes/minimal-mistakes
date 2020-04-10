@@ -10,4 +10,4 @@ Me, slumped in my bed, watching TV.
 This is my first drawing in God Knows how long. I hope you enjoy
 
 
-![My Bedroom](/minimal-mistakes/assets/images/drawing_bedroom_tv_rotated.jpg)
+![My Bedroom](/assets/images/drawing_bedroom_tv_rotated.jpg)
