@@ -76,32 +76,57 @@ permalink: /:title/
 
 # Collections settings
 collections:
-  documentation:
+  tosee:
     output: true
-    permalink: /documentation/:path    
-  manual:
+    permalink: /tosee/:path
+  tocrack:
     output: true
-    permalink: /manual/:path    
-  release:
+    permalink: /tocrack/:path
+  topick:
     output: true
-    permalink: /release/:path        
-  devtech:
-    output: true
-    permalink: /devtech/:path            
+    permalink: /topick/:path
 # End
+
+# Collections settings
+# collections:
+  # documentation:
+  #   output: true
+  #   permalink: /documentation/:path    
+  # manual:
+  #   output: true
+  #   permalink: /manual/:path    
+  # release:
+  #   output: true
+  #   permalink: /release/:path        
+  # devtech:
+  #   output: true
+  #   permalink: /devtech/:path            
+# End
+
 
 # Site menu settings
 menu:
   - title: "블로그"
     url: "/blog"
-  - title: "솔루션 소개"
-    url: "/documentation"
-  - title: "매뉴얼"
-    url: "/manual"
-  - title: "릴리즈정보"
-    url: "/release"
-  - title: "개발정보"
-    url: "/devtech"    
+  - title: "ToSee""
+    url: "/ToSee"
+  - title: "ToCrack"
+    url: "/ToCrack"
+  - title: "ToPick"
+    url: "/ToPick"
+# End
+# Site menu settings
+# menu:
+#   - title: "블로그"
+#     url: "/blog"
+#   - title: "솔루션 소개"
+#     url: "/documentation"
+#   - title: "매뉴얼"
+#     url: "/manual"
+#   - title: "릴리즈정보"
+#     url: "/release"
+#   - title: "개발정보"
+#     url: "/devtech"    
 # End
 
 category_order:
