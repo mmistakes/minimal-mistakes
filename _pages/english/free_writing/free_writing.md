@@ -10,4 +10,3 @@ categories:
 permalink: /categories/english/free_writing/
 ---
 {% include main_cat.html %}
-{% include sub_cat.html %}

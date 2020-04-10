@@ -9,4 +9,3 @@ categories:
 permalink: /categories/english/poetry/
 ---
 {% include main_cat.html %}
-{% include sub_cat.html %}

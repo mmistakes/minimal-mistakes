@@ -14,4 +14,3 @@ I have always enjoyed writing, reading, and storytelling.
 Here I aim to improve my literary skills and expressing myself in a manner which might be new to me
 (such as [poetry]({{"/categories/english/poetry" | prepend:site.baseurl}})).
 {% include main_cat.html %}
-{% include sub_cat.html %}

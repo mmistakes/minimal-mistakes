@@ -1,13 +1,40 @@
-{% assign somevar = page.categories[-1] %}
-{% assign site_cat = site.categories[somevar] %}
+{% assign sitevar = page.categories[-1] %}
+{% assign site_cat = site.categories[sitevar] %}
 
 
   {% for post in site_cat reversed %}
-## Below are some articles within {{page.title}}
+## Below are Some Articles Within {{page.title}}
   {% break %}
   {% endfor %}
 
   {% for post in site_cat reversed %}
 
   *   [{{post.title}}]({{post.url | prepend:site.baseurl }})
+  {% endfor %}
+
+
+  {% for pages in site.pages %}
+    {% if pages.url contains page.categories[-1] and pages.permalink != page.permalink %}
+
+## Below are the Sub-categories Within {{page.title}}
+    {% break %}
+
+    {% endif %}
+  {% endfor %}
+
+  {% for pages in site.pages %}
+    {% if pages.url contains page.categories[-1] and pages.permalink != page.permalink %}
+
+    {% assign pagevar = pages.categories[-1] %}
+    {% assign page_cat = site.categories[pagevar] %}
+
+  * [{{pages.title}}]({{pages.url | prepend:site.baseurl  }})
+
+    {% for post in page_cat reversed %}
+
+      * [{{post.title}}]({{post.url | prepend:site.baseurl }})
+
+    {% endfor %}
+
+    {% endif %}
   {% endfor %}

@@ -21,4 +21,3 @@ So to get better I decided to draw things in my house.
 You will find the results below.
 
 {% include main_cat.html %}
-{% include sub_cat.html %}

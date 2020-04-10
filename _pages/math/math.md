@@ -8,4 +8,3 @@ categories:
 permalink: /categories/math/
 ---
 {% include main_cat.html %}
-{% include sub_cat.html %}

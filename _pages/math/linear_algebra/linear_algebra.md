@@ -23,4 +23,3 @@ Check him out, he has some exceptional work.
 
 
 {% include main_cat.html %}
-{% include sub_cat.html %}
