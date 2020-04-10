@@ -44,9 +44,20 @@ author_profile: true
 # 기타사항
 
 ##### 주요 프로그래밍 스킬
-* ```yaml MATLAB ```
-* ```python Python ```
-* ```C# C ```
+* 
+```yaml 
+MATLAB
+```
+
+* 
+```Python
+Python
+```
+
+* 
+```C# 
+C 
+```
 
 ##### 개발 임베디드 시스템 종류
 * ```html Nordic BLE ```
