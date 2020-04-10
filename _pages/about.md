@@ -44,12 +44,12 @@ author_profile: true
 # 기타사항
 
 ##### 주요 프로그래밍 스킬
-* `MATLAB`
-* `Python`
-* `C`
+* ```yaml MATLAB```
+* ```python Python```
+* ```C# C```
 
 ##### 개발 임베디드 시스템 종류
-* `Nordic BLE`
-* `ARM cortex M4`
+* ```html Nordic BLE```
+* ```json ARM cortex M4```
 * `AVR (Arduino)`
 
