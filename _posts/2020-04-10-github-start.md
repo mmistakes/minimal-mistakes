@@ -4,8 +4,8 @@ categories:
   - Github Blog
 tags:
   - HowToStart
-# toc: true
-# toc_sticky: true
+toc: true
+toc_sticky: true
 ---
 
 본 글이 사실상 직접 제대로 작성하는 첫 번째 포스트인 것 같다. 그 동안 공부한 자료나 포트폴리오를 정리할 용도로 블로그를 시작하려 했는데, `github.io` 라는 도메인 탐나서 github 페이지를 이용하기로 마음 먹었다. (~~아래 사진은 그냥 넣어봄~~)
