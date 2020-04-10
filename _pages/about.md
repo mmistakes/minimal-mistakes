@@ -22,9 +22,7 @@ author_profile: true
 
 ##### UWB 레이더 센서를 이용한 무호흡 감지 알고리즘 개발
 <span style="color:#0582a8"><b>2019.01 ~ 2019.03</b></span>
-```yaml
-초광대역 (UWB) 레이더센서 측정 신호를 이용, 인체 호흡 패턴 및 무호흡 감지를 위한 신호 처리 알고리즘 개발.
-```
+> 초광대역 (UWB) 레이더센서 측정 신호를 이용, 인체 호흡 패턴 및 무호흡 감지를 위한 신호 처리 알고리즘 개발.
 
 
 ##### ESP32 DEV-KIT 개발
@@ -46,12 +44,12 @@ author_profile: true
 # 기타사항
 
 ##### 주요 프로그래밍 스킬
-* MATLAB
-* Python
-* C
+* `MATLAB`
+* `Python`
+* `C`
 
 ##### 개발 임베디드 시스템 종류
-* Nordic BLE 
-* ARM cortex M4
-* AVR (Arduino)
+* `Nordic BLE`
+* `ARM cortex M4`
+* `AVR (Arduino)`
 
