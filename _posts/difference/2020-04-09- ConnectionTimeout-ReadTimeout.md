@@ -21,7 +21,7 @@ last_modified_at: 2020-04-09 16:04:56.28
 
 그리고 10분을 기다렸지만 대기열이 줄어들지 않아 가게는 들어가지 못하고 선재는 회사로 돌아갔습니다.
 
-이처럼 어떤 사유로 **아예 맛집(서버) 자체에 선재(클라이언트)가 접근을 실패했을 시 적용**되는 것이 Connection Timeout입니다. 하루 왠종일 접근을 시도할 수는 없으니 접근 시간 제한이 Commection Timeout이 되는 것입니다.
+이처럼 어떤 사유로 **아예 맛집(서버) 자체에 선재(클라이언트)가 접근을 실패했을 시 적용**되는 것이 Connection Timeout입니다. 하루 왠종일 접근을 시도할 수는 없으니 접근 시간 제한이 Connection Timeout이 되는 것입니다.
 
 ## Read Timeout 예
 그리고 이번에는 결국 선재가 대기열을 뚫고 맛집 안까지 들어가서 메뉴를 주문하는데 성공을 했습니다. 근데 워낙에 사람이 많다보니 주문량이 밀려 메뉴가 나오는데 시간이 오래 걸립니다. 주방에서는 무엇을 하는지도 모르겠습니다.
@@ -41,5 +41,5 @@ last_modified_at: 2020-04-09 16:04:56.28
 # Reference
 * [https://inyl.github.io/programming/2017/12/02/timeout.html](https://inyl.github.io/programming/2017/12/02/timeout.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyNjI0MDQ0NywtMTU3MjgyMTM3MV19
+eyJoaXN0b3J5IjpbLTMyNjQ3NTA0MSwtMTU3MjgyMTM3MV19
 -->
