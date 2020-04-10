@@ -24,16 +24,19 @@
 
   {% for pages in site.pages %}
     {% if pages.url contains page.categories[-1] and pages.permalink != page.permalink %}
-
     {% assign pagevar = pages.categories[-1] %}
     {% assign page_cat = site.categories[pagevar] %}
 
   * [{{pages.title}}]({{pages.url | prepend:site.baseurl  }})
 
+    {% assign count = 0 %}
     {% for post in page_cat reversed %}
+      {% assign count = count | plus: 1 %}
+      {% if count < 4 %}
 
       * [{{post.title}}]({{post.url | prepend:site.baseurl }})
 
+      {% endif %}
     {% endfor %}
 
     {% endif %}
