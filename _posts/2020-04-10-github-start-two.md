@@ -18,7 +18,7 @@ toc_sticky: true
 
 물론, `Jekyll`과 `Rubby`을 이용하는 github 페이지 특성을 적극 활용하여 테마를 입맛에 맞게 꾸미는 것도 좋겠지만, 처음 시작하는 단계에서부터 그런 내용을 다 다루면 오히려 준비만 주구장창 하다가 지쳐서 관두지 않을까 싶다. 
 
-Github 블로그 디자인과 관련해서 이것저것 알아봤는데, 개인적으로는 [취미로 코딩하는 개발자](https://devinlife.com/howto/) 블로그가 가장 유익했다. Github 블로그가 처음이라면 해당 블로그의 **GitHub Pages 블로그 따라하기** 과정을 따라서 진행하는 것을 권장한다.
+Github 블로그 디자인과 관련해서 이것저것 알아봤는데, 개인적으로는 **[취미로 코딩하는 개발자](https://devinlife.com/howto/)** 블로그가 가장 유익했다. Github 블로그가 처음이라면 해당 블로그의 **GitHub Pages 블로그 따라하기** 과정을 따라서 진행하는 것을 권장한다.
 
 
 ## Jekyll, Rubby ?
@@ -32,14 +32,14 @@ Github 블로그 디자인과 관련해서 이것저것 알아봤는데, 개인�
 
 ## 테마는 minimal-mistakes
 
-블로그를 개설하는 가장 쉬운 방법은 [http://jekyllthemes.org](http://jekyllthemes.org/) 사이트에서 원하는 테마를 고른 뒤, 본인의 github repository로 `Fork`하고 (~~복사-붙여넣기~~), repository 이름을 "username.github.io"로 설정해주는 방법이다.
+블로그를 개설하는 가장 쉬운 방법은 [테마 사이트](http://jekyllthemes.org/)에서 원하는 테마를 고른 뒤, 본인의 github repository로 `Fork`하고 (~~복사-붙여넣기~~), 해당 repository 이름을 "username.github.io"로 설정해주는 방법이다.
 
 ![jekyll-theme]({{ site.url }}{{ site.baseurl }}/assets/images/jekyll-theme-example.png)
 
 해당 사이트에 들어가보면 위의 그림처럼 여러가지 테마가 보일텐데... 결론부터 이야기하자면, 그냥 **[minimal-mistakes](https://github.com/mmistakes/minimal-mistakes)** 테마로 시작하라는 것이다. 일단 위에서 소개한 Github 블로그를 비롯해 많은 사람들이 **minimal-mistakes** 테마를 사용하고 있다. 이 점이 중요한 이유는 블로그 디자인을 수정하고 싶을 때, 어떤 부분을 어떻게 수정해야하는지에 대해 검색하기가 쉽기 때문이다.
 
-예를 들어, 내가 포스팅 하고자 하는 글에 카테고리 또는 태그 항목을 추가하길 원하는데, **minimal-mistakes** 테마를 이용하는 경우는 `/pages/category-archive.md` 파일을 수정하고, `_config.yml` 파일의 `categories_archive:` 항목을 수정하는 정도로 쉽게 카테고리를 추가할 수 있다. 하지만 이와 다른 형식의 테마를 사용한다면 애초에 `/pages/category-archive.md`라는 파일이 존재하지 않을 가능성이 높으며, category를 추가하기 위해서는 본인이 작성하길 원하는 category 항목을 일일이 md 파일로 정의해야 하는 경우도 있다.
+예를 들어, 내가 포스팅 하고자 하는 글에 카테고리 또는 태그 항목을 추가하길 원하는데, **minimal-mistakes** 테마를 이용하는 경우는 `/pages/category-archive.md` 파일을 수정하고, `_config.yml` 파일의 `categories_archive:` 항목을 수정하는 정도로 쉽게 카테고리를 추가할 수 있다. 하지만 이와 다른 형식의 테마를 사용한다면 애초에 `/pages/category-archive.md`라는 파일이 존재하지 않을 가능성이 높으며, category 추가를 위해 본인이 추가하고자 하는 category 항목을 일일이 `.md` 파일로 정의해야하는 경우도 있다.
 
-이는 아마도 github 페이지가 `Jekyll`을 기반으로 디자인이 가능하기 때문에 특정 형식에 얽매이지 않고, 다양한 방식으로 구축이 가능하기 때문이라고 생각되는데... 이를 처음 접하는 사람 입장에서는 시작부터 어떻게 해야할 지를 모르는 상황에 놓이게 된다. 
+이는 아마도 github 페이지가 `Jekyll`을 기반으로 디자인이 가능하기 때문에 특정 형식에 얽매이지 않고, 다양한 방식으로 구축이 가능하기 때문이라고 생각되는데... 처음 접하는 사람 입장에서는 시작부터 어떻게 해야할 지 모르는 상황에 놓이게 된다. 
 
-따라서 개인적인 생각으로는 일단 가장 보편적인 **minimal-mistakes** 테마를 이용해서 기본적이 기능(메뉴/카테고리/댓글 기능 등) 위주로 블로그를 구축해서 운영하고, 어느정도 익숙해진 뒤에 본격적으로 커스터마이징 하는 것을 추천한다.
+따라서 개인적인 생각으로는 일단 가장 보편적인 **minimal-mistakes** 테마를 이용해서 기본 기능(메뉴/카테고리/댓글 기능 등) 위주로 블로그를 운영하고, 어느정도 익숙해진 뒤 본격적으로 커스터마이징 하는 것을 추천한다.
