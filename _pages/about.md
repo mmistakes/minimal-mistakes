@@ -5,7 +5,7 @@ permalink: /about/
 author_profile: true
 ---
 
-# 개인 학력
+## 개인 학력
 
 ![sans-hall]({{ site.url }}{{ site.baseurl }}/assets/images/20200110-sans-hall.jpg)
 
@@ -19,7 +19,8 @@ author_profile: true
 
 # 산학 프로젝트 이력
 
-AVR-APP 통신 개발
+* AVR-APP 통신 개발
+
 : 2016.08 ~ 2019.12
 > AVR 보드를 이용해 안드로이드 APP과 연동 가능한 HTTP 서버 구현. **주요 업무:** Xbee WiFi (Zigbee) 모듈 및 AVR 보드 개발. 
 
