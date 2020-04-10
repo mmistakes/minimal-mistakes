@@ -21,8 +21,12 @@ tags:
 
 ## 시작하기 전에
 
-`github.io` 도메인을 갖는 블로그 페이지는 [github](https://github.com) 사이트 내의 저장 공간을 이용해서 관리한다. [github](https://github.com) 사이트에 대해 모른다면, 일단은 각종 프로그램 소스를 관리하거나 공유하는 사이트 정도로 이해하고 넘어가도록 하자. github 블로그를 운영하기 위해서는 당연히 자신의 github 계정(구체적으로는 `github.io` 도메인으로 연동시킬 온라인 저장 공간)과 블로그를 수정하고 관리하는데 사용할 프로그램이 필요하다. 따라서, 아래의 링크를 통해 본격적으로 블로그를 운영하기에 앞서 [github](https://github.com) 사이트에서 본인 계정을 만들고, 관리하는데 필요한 프로그램을 설치하자.
+`github.io` 도메인을 갖는 블로그 페이지는 [github](https://github.com) 사이트 내의 저장 공간을 이용해서 관리한다. [github](https://github.com) 사이트에 대해 모른다면, 일단은 각종 프로그램 소스를 관리하거나 공유하는 사이트 정도로 이해하고 넘어가도록 하자. github 블로그를 운영하기 위해서는 당연히 자신의 github 계정(구체적으로는 `github.io` 도메인으로 연동시킬 온라인 저장 공간)과 블로그를 수정하고 관리하는데 사용할 프로그램이 필요하다. 따라서, 본격적으로 블로그를 운영하기에 앞서 [github](https://github.com) 사이트에서 본인 계정을 만들고, 아래의 링크를 통해 관리하는데 필요한 프로그램을 설치하자.
 
 * [Visual Studio Code](https://code.visualstudio.com)
+![visual-code-image]({{ site.url }}{{ site.baseurl }}/assets/images/visual-studio-code-download.png)
 
 * [Git](https://git-scm.com/downloads)
+![git-image]({{ site.url }}{{ site.baseurl }}/assets/images/git-download.png)
+
+**Visual Studio Code (VS Code)**는 블로그에 올릴 포스트나 설정 파일들을 관리하는데 사용할 프로그램이고, **Git**은 자신의 컴퓨터에서 작성한 포스트나 수정한 정보를 온라인 공간에 업데이트 하기 위해 사용한다.
