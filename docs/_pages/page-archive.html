@@ -6,5 +6,7 @@ author_profile: false
 ---
 
 {% for post in site.pages %}
-  {% include archive-single.html %}
+  {% unless post.hidden %}
+    {% include archive-single.html %}
+  {% endunless %}
 {% endfor %}
