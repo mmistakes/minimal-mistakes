@@ -11,7 +11,7 @@ author_profile: true
 # 학력
 
 ### 한동대학교 대학원 석사과정 정보통신공학 전공
-<span style="color:#10b597">2017.03 ~ 2019.08</span>
+<span style="color:#0582a8"><b>2017.03 ~ 2019.08</b></span>
 
 ### 한동대학교 전자공학심화 전공, Cum Laude
 2011.03 ~ 2017.02
