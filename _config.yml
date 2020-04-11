@@ -88,7 +88,7 @@ permalink: /:title/
 # End
 
 # Collections settings
-# collections:
+collections:
   documentation:
     output: true
     permalink: /documentation/:path    
