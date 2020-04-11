@@ -107,15 +107,15 @@ permalink: /:title/
 
 
 # Site menu settings
-menu:
-  - title: "Blog"
-    url: "/blog"
-  - title: "ToSee"
-    url: "/tosee"
-  - title: "ToCrack"
-    url: "/tocrack"
-  - title: "ToPick"
-    url: "/topick"
+# menu:
+#   - title: "Blog"
+#     url: "/blog"
+#   - title: "ToSee"
+#     url: "/tosee"
+#   - title: "ToCrack"
+#     url: "/tocrack"
+#   - title: "ToPick"
+#     url: "/topick"
 # End
 # Site menu settings
 # menu:
