@@ -1,5 +1,5 @@
 ---
-layout: manual
+layout: documentation
 title: 파일트랩
 # ToSee FileTrap
 category: ToSee

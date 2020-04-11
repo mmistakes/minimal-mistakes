@@ -1,5 +1,5 @@
 ---
-layout: manual
+layout: documentation
 title: 취약점 진단 도구
 # ToSee Analyzer
 category: ToSee

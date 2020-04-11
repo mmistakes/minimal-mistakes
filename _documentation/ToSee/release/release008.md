@@ -1,5 +1,5 @@
 ---
-layout: release
+layout: documentation
 title: Version 1.63.0.83
 category: ToSee
 order: 8

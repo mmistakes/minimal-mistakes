@@ -1,5 +1,5 @@
 ---
-layout: release
+layout: documentation
 title: Version 1.2.0.00
 category: ToSee
 order: 3

@@ -1,5 +1,5 @@
 ---
-layout: manual
+layout: documentation
 title: ToSee 설치
 # Intorduce ToSee
 category: ToSee

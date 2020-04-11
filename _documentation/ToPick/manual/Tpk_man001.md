@@ -1,5 +1,5 @@
 ---
-layout: manual
+layout: documentation
 title: Alpha Release
 category: ToPick
 order: 1

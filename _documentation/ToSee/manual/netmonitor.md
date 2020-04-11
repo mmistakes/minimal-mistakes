@@ -1,5 +1,5 @@
 ---
-layout: manual
+layout: documentation
 title: 네트워크 모니터
 # ToSee Network Monitor
 category: ToSee
