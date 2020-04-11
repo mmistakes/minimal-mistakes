@@ -14,6 +14,22 @@
 <!-- head -->
 {% include html-head.html %}
 <body>
-
+    <!-- header -->
+    {% include header.html %}
+    <!-- main content -->
+    <main class="container" role="main">
+        {{ content }}
+        <div id="back-to-top" role="button" aria-label="Back to top">
+            <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+        </div>
+    </main>
+    <!-- footer -->
+    {% include footer.html %}
+    <!-- scripts -->
+    {% include scripts.html %}
+    <!-- google analytics -->
+    {% if site.github.environment == "dotcom" %}
+        {% include google-analytics.html %}
+    {% endif %}
 </body>
 </html>
