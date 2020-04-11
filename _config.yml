@@ -1,3 +1,29 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@isecure-kr 
+Learn Git and GitHub without any code!
+Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
+
+
+MvvmCross
+/
+MvvmCross
+2.4k
+278
+3.1k1.2k
+ Code Issues 205 Pull requests 13 Actions Projects 2 Security Insights
+MvvmCross/docs/_config.yml
+@martijn00 martijn00 Change order and categories
+da6704e on 16 Jan 2018
+@Cheesebaron@martijn00@MarcBruins@Garfield550
+103 lines (87 sloc)  2.29 KB
+  
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -13,14 +39,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: ToSee Personal Secure Management Sysyem
+title: MvvmCross
 description: > # this means to ignore newlines until "baseurl:"
-  ToSee는 개인용 Windows 운영체제를 위한 보안 관리 솔루션입니다.
-  편리한 취약점 진단 및 관리, 행위기반을 이용한 랜섬웨어와 데이터의
-  보호를 위한의 필수적인 보안 솔루션입니다.
+  MvvmCross is a convention based MVVM framework for Xamarin and Windows,
+  with strong community support, filled to the brim with useful features.
 baseurl: "" # the subpath of your site, e.g. /blog
-# url: "https://www.mvvmcross.com" # the base hostname & protocol for your site, e.g. http://example.com
-url: "https://isecure-kr.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.mvvmcross.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
@@ -52,17 +76,17 @@ exclude:
 # End
 
 # Github metadata settings
-repository: kimkucheol/kimkucheol.github.io
+repository: MvvmCross/MvvmCross
 # End
 
 # jekyll-seo-tag settings
 social:
-  name: kimkucheol
+  name: MvvmCross
   links:
-    - https://www.isecurekr.com
-    - https://isecure-kr.github.io/
+    - https://twitter.com/MvvmCross
+    - https://github.com/MvvmCross
 
-logo: /assets/img/logo/tosee-avatar.png
+logo: /assets/img/logo/MvvmCross-avatar.png
 
 twitter:
   username: MvvmCross
@@ -89,8 +113,6 @@ menu:
     url: "/blog"
   - title: "Documentation"
     url: "/documentation"
-  - title: "Manual"
-    url: "/manual"    
   - title: "Support"
     url: "/support"
 # End
@@ -105,3 +127,15 @@ category_order:
   - 'Tutorials'
   - 'Upgrading'
   - 'Contributing'
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
