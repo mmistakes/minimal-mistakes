@@ -75,17 +75,17 @@ permalink: /:title/
 # End
 
 # Collections settings
-# collections_dir: documentation
-# collections:
-#   tosee:
-#     output: true
-#     permalink: /tosee/:path
-#   tocrack:
-#     output: true
-#     permalink: /tocrack/:path
-#   topick:
-#     output: true
-#     permalink: /topick/:path
+collections_dir: documentation
+collections:
+  tosee:
+    output: true
+    permalink: /tosee/:path
+  tocrack:
+    output: true
+    permalink: /tocrack/:path
+  topick:
+    output: true
+    permalink: /topick/:path
     # :path Path to the document relative to the collection's directory, including base filename of the document.
 # End
 
@@ -107,15 +107,15 @@ permalink: /:title/
 
 
 # Site menu settings
-# menu:
-#   - title: "Blog"
-#     url: "/blog"
-#   - title: "ToSee"
-#     url: "/tosee"
-#   - title: "ToCrack"
-#     url: "/tocrack"
-#   - title: "ToPick"
-#     url: "/topick"
+menu:
+  - title: "Blog"
+    url: "/blog"
+  - title: "ToSee"
+    url: "/tosee"
+  - title: "ToCrack"
+    url: "/tocrack"
+  - title: "ToPick"
+    url: "/topick"
 # End
 # Site menu settings
 # menu:
