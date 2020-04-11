@@ -65,7 +65,7 @@ Therefore if we follow the above equation
      [-1 ( 1 ) + 2 ( 3 )] = [ 5 ]
      [-1 (-2 ) + 2 ( 0 )]   [ 2 ]
 
-Take a secondd, pause, and ponder.
+Take a second, pause, and ponder.
 
 ## Significance
 

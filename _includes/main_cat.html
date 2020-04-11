@@ -1,43 +1,47 @@
 {% assign sitevar = page.categories[-1] %}
 {% assign site_cat = site.categories[sitevar] %}
-
-
-  {% for post in site_cat reversed %}
-## Below are Some Articles Within {{page.title}}
-  {% break %}
-  {% endfor %}
+{% assign site_count = 0 %}
+{% assign max_article_count = 3 %}
 
   {% for post in site_cat reversed %}
+
+    {% if site_count == 0 %}
+## Articles Within {{page.title}}
+    {% endif %}
 
   *   [{{post.title}}]({{post.url | prepend:site.baseurl }})
+
+  {% assign site_count = site_count | plus: 1 %}
   {% endfor %}
 
+{% comment %}
+The Above is for main categories
+The Below is for sub-categories
+{% endcomment %}
 
+  {% assign page_count = 0 %}
   {% for pages in site.pages %}
     {% if pages.url contains page.categories[-1] and pages.permalink != page.permalink %}
+      {% assign pagevar = pages.categories[-1] %}
+      {% assign page_cat = site.categories[pagevar] %}
 
-## Below are the Sub-categories Within {{page.title}}
-    {% break %}
-
-    {% endif %}
-  {% endfor %}
-
-  {% for pages in site.pages %}
-    {% if pages.url contains page.categories[-1] and pages.permalink != page.permalink %}
-    {% assign pagevar = pages.categories[-1] %}
-    {% assign page_cat = site.categories[pagevar] %}
+      {% if page_count == 0 %}
+## Sub-categories Within {{page.title}} and the First Few Articles
+      {% endif %}
 
   * [{{pages.title}}]({{pages.url | prepend:site.baseurl  }})
 
-    {% assign count = 0 %}
-    {% for post in page_cat reversed %}
-      {% assign count = count | plus: 1 %}
-      {% if count < 4 %}
+      {% assign page_count = page_count | plus: 1 %}
 
-      * [{{post.title}}]({{post.url | prepend:site.baseurl }})
+      {% assign post_count = 0 %}
+      {% for post in page_cat reversed %}
+        {% assign post_count = post_count | plus: 1 %}
+        {% if post_count <= max_article_count %}
 
-      {% endif %}
-    {% endfor %}
+    * [{{post.title}}]({{post.url | prepend:site.baseurl }})
+
+        {% endif %}
+      {% endfor %}
 
     {% endif %}
   {% endfor %}
