@@ -1,5 +1,6 @@
 _site
 _draft
+pages
 .sass-cache
 .jekyll-metadata
 *.gem
