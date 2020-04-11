@@ -385,6 +385,33 @@ body:hover .visually-hidden button {
   }
 }
 
+.greedy-nav__toggle {
+  &:before {
+    @supports (pointer-events: none) {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      background-color: $background-color;
+      -webkit-transition: $global-transition;
+      transition: $global-transition;
+      pointer-events: none;
+    }
+  }
+
+  &.close {
+    &:before {
+      opacity: 0.9;
+      -webkit-transition: $global-transition;
+      transition: $global-transition;
+      pointer-events: auto;
+    }
+  }
+}
+
 .greedy-nav__toggle:hover {
   .navicon,
   .navicon:before,

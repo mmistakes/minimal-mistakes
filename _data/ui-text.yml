@@ -940,17 +940,17 @@ id-ID:
 # Vietnamese
 # ----------
 vi: &DEFAULT_VI
-  skip_links                 :
-  skip_primary_nav           :
-  skip_content               :
-  skip_footer                :
+  skip_links                 : "Đường dẫn tắt"
+  skip_primary_nav           : "Nhảy tới thanh điều hướng"
+  skip_content               : "Nhảy tới nội dung"
+  skip_footer                : "Nhảy tới chân trang"
   page                       : "Trang"
   pagination_previous        : "Trước"
   pagination_next            : "Sau"
   breadcrumb_home_label      : "Trang chủ"
   breadcrumb_separator       : "/"
   menu_label                 : "Menu"
-  search_label               :
+  search_label               : "Tìm kiếm"
   toc_label                  : "Tại trang này"
   ext_link_label             : "Đường dẫn trực tiếp"
   less_than                  : "nhỏ hơn"
@@ -982,7 +982,7 @@ vi: &DEFAULT_VI
   comment_success_msg        : "Cảm ơn bạn đã bình luận! Bình luận sẽ xuất hiện sau khi được duyệt."
   comment_error_msg          : "Rất tiếc, có lỗi trong việc gửi bình luận. Hãy đảm bảo toàn bộ các phần bắt buộc đã được điền đầy đủ và thử lại."
   loading_label              : "Đang tải..."
-  search_label_text          :
+  search_label_text          : "Nhập từ khóa cần tìm..."
   search_placeholder_text    : "Nhập từ khóa cần tìm..."
   results_found              : "Kết quả tìm được"
   back_to_top                : "Lên đầu trang"
@@ -1555,7 +1555,7 @@ hi: &DEFAULT_HI
   back_to_top                : "शीर्ष पर वापस"
 hi-IN:
   <<: *DEFAULT_HI
-  
+
 # Catalan
 # --------------
 ca: &DEFAULT_CA
@@ -1607,7 +1607,104 @@ ca: &DEFAULT_CA
   back_to_top                : "Torna a dalt"
 ca-ES:
   <<: *DEFAULT_CA
-  
+
+# Irish (Gaeilge)
+# --------------
+ga: &DEFAULT_GA
+  skip_links                 : "Léim naisc"
+  skip_primary_nav           : "Léim chuig príomh naiscleanúint"
+  skip_content               : "Léim chuig inneachar"
+  skip_footer                : "Léim chuig buntásc"
+  page                       : "Leathanach"
+  pagination_previous        : "Leathanach roimhe sin"
+  pagination_next            : "Céad leathanach eile"
+  breadcrumb_home_label      : "Baile"
+  breadcrumb_separator       : "/"
+  menu_label                 : "Scorán roghchlár"
+  search_label               : "Scorán cuardach"
+  toc_label                  : "Ar an leathanach seo"
+  ext_link_label             : "Nasc díreach"
+  less_than                  : "níos lú na"
+  minute_read                : "a léamh"
+  share_on_label             : "Roinn ar"
+  meta_label                 :
+  tags_label                 : "Clibeanna:"
+  categories_label           : "Catagoírí:"
+  date_label                 : "Nuashonraíodh:"
+  comments_label             : "Fág trácht"
+  comments_title             : "Tráchtanna"
+  more_label                 : "Foghlaim níos mó"
+  follow_label               : "Lean:"
+  feed_label                 : "Feed"
+  powered_by                 : "Ag fáil cumhacht as"
+  website_label              : "Suíomh gréasáin"
+  email_label                : "R-phost"
+  recent_posts               : "Postálacha le deanaí"
+  comment_form_comment_label : "Trácht"
+  comment_form_name_label    : "Ainm"
+  comment_form_email_label   : "Ríomhsheoladh"
+  comment_form_website_label : "Suíomh gréasáin (roghnach)"
+  comment_btn_submit         : "Cuir isteach trácht"
+  comment_btn_submitted      : "Curtha isteach"
+  loading_label              : "Lódáil..."
+  search_label_text          : "Cuir do chuardach isteach..."
+  search_placeholder_text    : "Cuir do chuardach isteach..."
+  results_found              : "Torthaí aimsithe"
+  back_to_top                : "Ar ais go barr"
+ga-IE:
+  <<: *DEFAULT_GA
+
+
+# Finnish / Suomi
+# -----------------
+fi: &DEFAULT_FI
+  skip_links                 : "Ohita linkit"
+  skip_primary_nav           : "Hyppää pää navigaatioon"
+  skip_content               : "Hyppää sisältöön"
+  skip_footer                : "Hyppää alareunaan"
+  page                       : "Sivu"
+  pagination_previous        : "Edellinen"
+  pagination_next            : "Seuraava"
+  breadcrumb_home_label      : "Etusivu"
+  breadcrumb_separator       : "/"
+  menu_label                 : "Avaa valikko"
+  search_label               : "Avaa haku"
+  toc_label                  : "Tällä sivulla"
+  ext_link_label             : "Suora linkki"
+  less_than                  : "vähemmän kuin"
+  minute_read                : "lukuaika"
+  share_on_label             : "Jaa"
+  meta_label                 :
+  tags_label                 : "Tagit:"
+  categories_label           : "Kategoriat:"
+  date_label                 : "Päivitetty:"
+  comments_label             : "Jätä kommentti"
+  comments_title             : "Kommentit"
+  more_label                 : "Lisää"
+  related_label              : "Voit olla kiinnostunut myös"
+  follow_label               : "Seuraa:"
+  feed_label                 : "Syöte"
+  powered_by                 : "Voimanlähteenä"
+  website_label              : "Websivu"
+  email_label                : "Email"
+  recent_posts               : "Viimeisimmät postaukset"
+  undefined_wpm              : "words_per_minute asetusta ei ole määritelty _config.yml tiedostossa"
+  comment_form_info          : "Your email address will not be published. Required fields are marked"
+  comment_form_comment_label : "Kommentti"
+  comment_form_md_info       : "Tukee markdown muotoilua."
+  comment_form_name_label    : "Nimi"
+  comment_form_email_label   : "Email osoite"
+  comment_form_website_label : "Webbisivu (vapaaehtoinen)"
+  comment_btn_submit         : "Lähetä"
+  comment_btn_submitted      : "Lähetetty"
+  comment_success_msg        : "Kiitos kommentista, se julkaistaan tällä sivulla moderoinnin jälkeen."
+  comment_error_msg          : "Tarkista että olet täyttänyt kaikki kentät ja yritä uudelleen."
+  loading_label              : "Ladataan..."
+  search_label_text          : "Hakusana..."
+  search_placeholder_text    : "Hakusana..."
+  results_found              : "Tulosta"
+  back_to_top                : "Ylös"
+
 # Another locale
 # --------------
 #

@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name                    = "minimal-mistakes-jekyll"
-  spec.version                 = "4.18.1"
+  spec.version                 = "4.19.1"
   spec.authors                 = ["Michael Rose"]
 
   spec.summary                 = %q{A flexible two-column Jekyll theme.}
@@ -23,5 +23,5 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-include-cache", "~> 0.1"
 
   spec.add_development_dependency "bundler"
-  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rake", ">= 12.3.3"
 end
