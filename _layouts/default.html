@@ -1,0 +1,35 @@
+<!--
+ __  __                         _____                   
+|  \/  |                       / ____|                  
+| \  / |_   ____   ___ __ ___ | |     _ __ ___  ___ ___ 
+| |\/| \ \ / /\ \ / / '_ ` _ \| |    | '__/ _ \/ __/ __|
+| |  | |\ V /  \ V /| | | | | | |____| | | (_) \__ \__ \
+|_|  |_| \_/    \_/ |_| |_| |_|\_____|_|  \___/|___/___/
+========================================================
+                                    © 2017 MvvmCross.com
+-->
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: en }}">
+<!-- head -->
+{% include html-head.html %}
+<body>
+    <!-- header -->
+    {% include header.html %}
+    <!-- main content -->
+    <main class="container" role="main">
+        {{ content }}
+        <div id="back-to-top" role="button" aria-label="Back to top">
+            <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+        </div>
+    </main>
+    <!-- footer -->
+    {% include footer.html %}
+    <!-- scripts -->
+    {% include scripts.html %}
+    <!-- google analytics -->
+    {% if site.github.environment == "dotcom" %}
+        {% include google-analytics.html %}
+    {% endif %}
+</body>
+</html>
