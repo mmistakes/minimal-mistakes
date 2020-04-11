@@ -108,7 +108,7 @@ collections:
 
 # Site menu settings
 menu:
-  - title: "블로그"
+  - title: "Blog"
     url: "/blog"
   - title: "ToSee"
     url: "/tosee"
