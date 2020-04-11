@@ -79,13 +79,13 @@ collections_dir: documentation
 collections:
   tosee:
     output: true
-    permalink: /tosee/:path
+    permalink: /:collection/:path/
   tocrack:
     output: true
-    permalink: /tocrack/:path
+    permalink: /:collection/:path/
   topick:
     output: true
-    permalink: /topick/:path
+    permalink: /:collection/:path/
     # :path Path to the document relative to the collection's directory, including base filename of the document.
 # End
 
