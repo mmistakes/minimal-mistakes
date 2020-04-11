@@ -108,12 +108,12 @@ collections:
 menu:
   - title: "블로그"
     url: "/blog"
-  - title: "ToSee""
-    url: "/ToSee"
+  - title: "ToSee"
+    url: "/tosee"
   - title: "ToCrack"
-    url: "/ToCrack"
+    url: "/tocrack"
   - title: "ToPick"
-    url: "/ToPick"
+    url: "/topick"
 # End
 # Site menu settings
 # menu:
