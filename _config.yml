@@ -79,10 +79,10 @@ collections_dir: documentation
 collections:
   tosee:
     output: true
-    permalink: /:collection/:path
+    permalink: /tosee/:path
   tocrack:
     output: true
-    permalink: /:collection/:path
+    permalink: /tocrack/:path
   topick:
     output: true
     permalink: /:collection/:path
