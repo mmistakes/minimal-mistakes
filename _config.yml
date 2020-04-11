@@ -16,14 +16,14 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Rousslan Dossa - Journey Log"
+title                    : "Rousslan Dossa - Research Log"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Rousslan Fernand Julien Dossa"
-description              : "A peak on this one's view of the world, train of thought(s) and aspirations."
+name                     : "Rousslan Dossa"
+description              : "A peek on this one's view of the world, train of thought(s) and aspirations."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : https://github.com/dosssman
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -65,8 +65,8 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
+search                   : true # true, false (default)
+search_full_content      : true # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
@@ -84,7 +84,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : RousslanDossa
 facebook:
   username               :
   app_id                 :
@@ -107,27 +107,33 @@ analytics:
 
 # Site Author
 author:
-  name             : "Rousslan Fernand Julien Dossa"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Why ?"
-  location         : "Earth, Sol"
-  email            :
+  name             : "Rousslan Dossa"
+  avatar           : "/assets/images/bio-author.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Deep Reinforcement Learning Researcher. Aspiring to create a universal intelligent agents that will teach me back and maybe turn me into such an agent myself."
+  location         : "Kobe, Japan, Earth, Sol"
+  email            : dosssman[at]hotmail.fr
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:your.name@email.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "doss.github.io"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: mailto:dosssman@hotmail.fr
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/dosssman"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+      url: "https://twitter.com/RousslanDossa"
+    - label: "Reddit"
+      icon: "fab fa-fw fa-reddit"
+      url: "https://www.reddit.com/user/dosssman"
+    # - label: "LinkedIn"
+    #   icon: "fab fa-fw fa-linkedin"
+    #   url: "https://www.linkedin.com/in/rousslan-dossa-9a5a581a4/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -135,14 +141,17 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
+      url: "https://github.com/dosssman"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: https://twitter.com/RousslanDossa
+    - label: "Reddit"
+      icon: "fab fa-fw fa-reddit"
+      url: "https://www.reddit.com/user/dosssman"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
       # url:
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
@@ -221,7 +230,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 10 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -279,6 +288,18 @@ compress_html:
   ignore:
     envs: development
 
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+  ramblings:
+    output: true
+    permalink: /:collection/:path/
+    permalink: /:collection/:path/
+  publications:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -289,7 +310,33 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
       comments: # true
       share: true
       related: true
+  # _projects
+  - scope:
+      path: "_projects"
+      type: projects
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _ramblings
+  - scope:
+      path: "_ramblings"
+      type: ramblings
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _publications
+  - scope:
+      path: "_publications"
+      type: publications
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
