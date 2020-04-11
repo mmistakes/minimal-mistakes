@@ -78,13 +78,13 @@ permalink: /:title/
 collections:
   tosee:
     output: true
-    permalink: /tosee/:path
+    permalink: /documentation/tosee/:path
   tocrack:
     output: true
-    permalink: /tocrack/:path
+    permalink: /documentation/tocrack/:path
   topick:
     output: true
-    permalink: /topick/:path
+    permalink: /documentation/topick/:path
 # End
 
 # Collections settings
