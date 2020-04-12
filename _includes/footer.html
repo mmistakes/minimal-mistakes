@@ -3,17 +3,16 @@
     <div class="navigation" role="navigation" aria-label="Footer links">
         <a href="{{ site.url }}" class="avatar" role="link" aria-label="{{ site.github.repository_name }}"></a>
         <ul role="menubar" aria-label="Footer links menubar">
-            <!-- <li class="footer-products" role="menuitem" aria-label="Products">
-                <strong>Products</strong>
-                <ul role="menu" aria-hidden="true" aria-label="Products link" >
-                    <li role="listitem" aria-label="Products link item"><a href="{{ '/documentation/ToSee/tosee' | relative_url }}" role="link" aria-label="ToSee"><strong>ToSee</strong></a></li>
-                    <li role="listitem" aria-label="Products link item"><a href="{{ '/documentation/ToCrack/Tocrack001' | relative_url }}" role="link" aria-label="ToCrack"><strong>ToCrack</strong></a></li>
-                    <li role="listitem" aria-label="Products link item"><a href="{{ '/documentation/ToPick/Tpk_doc001' | relative_url }}" role="link" aria-label="ToPick"><strong>ToPick</strong></a></li>
-                    <!-- <li role="listitem" aria-label="Products link item"><a href="{{ '/idlp' | relative_url }}" role="link" aria-label="ToCrack">Data loss Prevention Solution <strong>IDLP</strong></a></li> -->
+            <li class="footer-products" role="menuitem" aria-label="Products">
+                Products
+                <ul role="menu" aria-hidden="true" aria-label="Products link">
+                    <li role="listitem" aria-label="Products link item"><a href="{{ site.github.repository_url }}" target="_blank" role="link" aria-label="{{ site.github.repository_name }}">{{ site.github.repository_name }}</a></li>
+                    <li role="listitem" aria-label="Products link item"><a href="{{ '/documentation/plugins/3rd-party-plugins' | relative_url }}" role="link" aria-label="Plugins">Plugins</a></li>
+                    <li role="listitem" aria-label="Products link item"><a href="{{ '/documentation/samples/samples' | relative_url }}" role="link" aria-label="Samples">Samples</a></li>
                 </ul>
-            </li> -->
+            </li>
             <li class="footer-blog" role="menuitem" aria-label="Blog">
-                <strong>블로그</strong>
+                Blog
                 <ul role="menu" aria-hidden="true" aria-label="Blog link">
                     {% for post in site.posts limit:5 %}
                     <li role="listitem" aria-label="Blog link item"><a href="{{ post.url | relative_url }}" role="link" aria-label="{{ post.title | escape }}">{{ post.title | escape }}</a></li>
@@ -21,39 +20,43 @@
                     <li role="listitem" aria-label="Blog link item"><a href="{{ '/blog' | relative_url }}" role="link" aria-label="Read more">Read More</a></li>
                 </ul>
             </li>
-            <!-- <li class="footer-organization" role="menuitem" aria-label="Organization">
-                <strong>안내</strong>
+            <li class="footer-organization" role="menuitem" aria-label="Organization">
+                Organization
                 <ul role="menu" aria-hidden="true" aria-label="Organization link">
-                    <li role="listitem" aria-label="Organization link item"><a href="{{ '/isecure' | relative_url }}" role="link" aria-label="About Secure institute">아이시큐어</a></li>
-                    <li role="listitem" aria-label="Organization link item"><a href="{{ '/about' | relative_url }}" role="link" aria-label="About Secure institute">아이시큐어 연구소</a></li>
+                    <li role="listitem" aria-label="Organization link item"><a href="{{ '/about' | relative_url }}" role="link" aria-label="About MvvmCross">About MvvmCross</a></li>
+                    <li role="listitem" aria-label="Organization link item"><a href="{{ '/branding' | relative_url }}" role="link" aria-label="Branding">Branding</a></li>
+                    <li role="listitem" aria-label="Organization link item"><a href="{{ site.github.repository_url }}/blob/master/CONTRIBUTING.md" role="link" target="_blank" aria-label="Contributing">Contributing</a></li>
+                    <li role="listitem" aria-label="Organization link item"><a href="{{ site.github.repository_url }}/blob/master/LICENSE" role="link" target="_blank" aria-label="License">License</a></li>
+                    <li role="listitem" aria-label="Organization link item"><a href="{{ site.github.repository_url }}/blob/master/CODE_OF_CONDUCT.md" target="_blank" role="link" aria-label="CodeOfConduct">Code of Conduct</a></li>
+                    <li role="listitem" aria-label="Organization link item"><a href="https://opencollective.com/mvvmcross" target="_blank" role="link" aria-label="DonationsSponsors">Donations & Sponsors</a></li>
                 </ul>
-            </li> -->
-            <!-- <li class="footer-connect" role="menuitem" aria-label="Connect">
-                <strong>기술개발자료</strong>
-                <ul role="menu" aria-hidden="true" aria-label="Connect link">
-                    <li role="listitem" aria-label="Organization link item"><a href="{{ '/ArtificalIntelligence' | relative_url }}" role="link" aria-label="Artifical Intelligence">Artifical Intelligence</a></li>
-                    <li role="listitem" aria-label="Organization link item"><a href="{{ '/SEO' | relative_url }}" role="link" aria-label="SEO">Serch Engine Optimization</a></li>                    
-                    <li role="listitem" aria-label="Organization link item"><a href="{{ '/OWASP' | relative_url }}" role="link" aria-label="OWASP">OWASP</a></li>
-                    <li role="listitem" aria-label="Organization link item"><a href="{{ '/WEB' | relative_url }}" role="link" aria-label="WEB">WEB</a></li>                    
-                </ul>
-            </li>             -->
-            <!-- <li class="footer-connect" role="menuitem" aria-label="Connect">
-                <strong>참고사이트</strong>
+            </li>
+            <li class="footer-connect" role="menuitem" aria-label="Connect">
+                Connect
                 <ul role="menu" aria-hidden="true" aria-label="Connect link">
                     <li role="listitem" aria-label="Connect link item"><a href="{{ site.github.repository_url }}" target="_blank" role="link" aria-label="GitHub">GitHub</a></li>
-                    <li role="listitem" aria-label="Connect link item"><a href="https://partner.microsoft.com/ko-kr/" target="_blank" role="link" aria-label="MocrosoftPartner">Mocrosoft Partner Center</a></li>
-                    <li role="listitem" aria-label="Connect link item"><a href="https://stackoverflow.com/questions/tagged/minifilter" target="_blank" role="link" aria-label="Stack Overflow">Stack Overflow</a></li>
+                    <li role="listitem" aria-label="Connect link item"><a href="{{ site.github.issues_url }}" target="_blank" role="link" aria-label="GitHub Issues">GitHub Issues</a></li>
+                    <li role="listitem" aria-label="Connect link item"><a href="https://xamarinchat.herokuapp.com/" target="_blank" role="link" aria-label="Slack">Slack</a></li>
+                    <li role="listitem" aria-label="Connect link item"><a href="https://stackoverflow.com/questions/tagged/mvvmcross" target="_blank" role="link" aria-label="Stack Overflow">Stack Overflow</a></li>
+                    <li role="listitem" aria-label="Connect link item"><a href="https://forums.xamarin.com" target="_blank" role="link" aria-label="Xamarin Forums">Xamarin Forums</a></li>
+                    <li role="listitem" aria-label="Connect link item"><a href="https://www.linkedin.com/groups/8456977" target="_blank" role="link" aria-label="Linkedin">Linkedin</a></li>
+                    <li role="listitem" aria-label="Connect link item"><a href="https://twitter.com/{{ site.twitter.username }}" target="_blank" role="link" aria-label="Twitter">Twitter</a></li>
                 </ul>
-            </li> -->
+            </li>
         </ul>
     </div>
     <div class="socials"  role="navigation" aria-label="Social links">
         <ul role="menu" aria-hidden="true" aria-label="Social link">
             <li role="listitem" aria-label="Social link item"><a href="{{ site.github.repository_url }}" target="_blank" role="link" aria-label="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li role="listitem" aria-label="Social link item"><a href="https://twitter.com/{{ site.twitter.username }}" target="_blank" role="link" aria-label="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li role="listitem" aria-label="Social link item"><a href="https://xamarinchat.herokuapp.com/" target="_blank" role="link" aria-label="Slack"><i class="fa fa-slack" aria-hidden="true"></i></a></li>
+            <li role="listitem" aria-label="Social link item"><a href="https://stackoverflow.com/questions/tagged/mvvmcross" target="_blank" role="link" aria-label="Stack Overflow"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a></li>
+            <li role="listitem" aria-label="Social link item"><a href="https://www.linkedin.com/groups/8456977" target="_blank" role="link" aria-label="Linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+            <li role="listitem" aria-label="Social link item"><a href="{{ '/feed.xml' | relative_url }}" role="link" aria-label="RSS"><i class="fa fa-rss-square" aria-hidden="true"></i></a></li>
         </ul>
     </div>
     <div class="copyright" role="contentinfo" aria-label="Copyright">
-        <p>&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> iSecure</p>
+        <p>&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> MvvmCross</p>
         <div class="right">
             <a href="{{ '/sitemap.xml' | relative_url }}" target="_blank" role="link" aria-label="Site map">Site Map</a>
         </div>
