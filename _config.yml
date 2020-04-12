@@ -133,6 +133,6 @@ menu:
 
 # 설정을 잘 못할 경우 build error 발생
 category_order:
-  - Feature
-  - Manual
-  - Release
+  - 'Feature'
+  - 'Manual'
+  - 'Release'
