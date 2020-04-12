@@ -17,7 +17,7 @@ layout: default
                 {{ post.content | strip_html | escape | truncatewords: 80 }}
             </p>
         </li>
-        ---
+        <hr>
     {% endfor %}
     </ul>
     <p class="rss-subscribe">subscribe <a href="{{ '/feed.xml' | relative_url }}" role="link">via RSS</a></p>
