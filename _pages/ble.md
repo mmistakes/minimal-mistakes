@@ -23,6 +23,7 @@ author_profile: true
 
 ## 포스팅 항목
 
+* [BLE (1) - 저전력 블루투스 (BLE) 란?](https://enidanny.github.io/ble/what-is-the-ble/)
 
 ## 포스팅 예정 항목
 
