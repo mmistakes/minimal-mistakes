@@ -11,7 +11,7 @@ layout: default
         {% for ident in site.category_order %}
         {% assign category = docs_by_category | where: "name", ident | first %}
         <h1>hello</h1>
-        <h2>assign:{{ docs_by_category| where: "name" }}</h2>
+        <h2>assign:{{ docs_by_category }}</h2>
         <p class="category">{{ category.name }}</p>
         <ul>
         {% assign items = category.items | sort: "order"  %}
