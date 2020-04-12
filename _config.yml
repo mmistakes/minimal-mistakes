@@ -60,10 +60,10 @@ social:
     - https://www.isecurekr.com
     - https://isecure-kr.github.io/
 
-logo: /assets/img/logo/tosee-avatar.png
+logo: /assets/images/logo/tosee-avatar.png
 
-twitter:
-  username: iSecure
+# twitter:
+#   username: iSecure
 #End
 
 # Date format settings
@@ -131,7 +131,7 @@ menu:
 #     url: "/devtech"    
 # End
 
-category_order:
-  - 'ToSee'
-  - 'ToCrack'
-  - 'ToPick'
+# category_order:
+#   - 'ToSee'
+#   - 'ToCrack'
+#   - 'ToPick'
