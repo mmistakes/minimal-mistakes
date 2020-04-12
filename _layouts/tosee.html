@@ -9,7 +9,7 @@ layout: default
         {% assign category = docs_by_category | where: "name", ident | first %}
         <p class="category">{{ category.name }}</p>
         <ul>
-            <h2>{{category.items}}</h2>
+            <h2>{{category}}</h2>
         {% assign items = category.items | sort: "order"  %}
         {% for item in items %}
             <li>
