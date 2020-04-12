@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title: 결과 보고
-category: ToCrack
+category: Feature
 order: 3
 ---
 

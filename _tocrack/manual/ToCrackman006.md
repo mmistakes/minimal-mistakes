@@ -1,6 +1,6 @@
 ---
-layout: documentation
+layout: tocrack
 title: 교통위반 메일
-category: ToCrack
+category: Manual
 order: 6
 ---

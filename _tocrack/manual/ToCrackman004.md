@@ -1,7 +1,7 @@
 ---
-layout: documentation
+layout: tocrack
 title: 메일 발송 루틴
-category: ToCrack
+category: Manual
 order: 4
 ---
 

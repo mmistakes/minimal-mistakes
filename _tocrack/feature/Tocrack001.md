@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title: 악성코드 대응훈련
-category: ToCrack
+category: Feature
 order: 1
 # permalink: /tocrack/
 ---

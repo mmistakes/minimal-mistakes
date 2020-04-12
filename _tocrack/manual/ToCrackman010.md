@@ -1,7 +1,7 @@
 ---
-layout: documentation
+layout: tocrack
 title: 통계값
-category: ToCrack
+category: Manual
 order: 10
 ---
 

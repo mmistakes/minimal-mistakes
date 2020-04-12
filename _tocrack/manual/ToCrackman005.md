@@ -1,6 +1,6 @@
 ---
-layout: documentation
+layout: tocrack
 title: 연봉정보 메일
-category: ToCrack
+category: Manual
 order: 5
 ---

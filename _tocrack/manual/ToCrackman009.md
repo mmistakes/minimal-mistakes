@@ -1,6 +1,6 @@
 ---
-layout: documentation
+layout: tocrack
 title: 수신 확인
-category: ToCrack
+category: Manual
 order: 9
 ---

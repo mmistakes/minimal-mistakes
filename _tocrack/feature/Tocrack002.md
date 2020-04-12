@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title: 모의훈련 분석 및 평가 방법
-category: ToCrack
+category: Feature
 order: 2
 ---
 
