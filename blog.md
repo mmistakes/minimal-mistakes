@@ -1,5 +1,5 @@
 ---
-layout: tosee
-title: ToSee
-permalink: /tosee/
+layout: blog
+title: Blog
+permalink: /blog/
 ---
