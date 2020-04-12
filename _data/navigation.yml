@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "BLE"
+    url: /ble/
   - title: "About"
     url: /about/
   - title: "Categories"
