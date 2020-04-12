@@ -131,7 +131,7 @@ menu:
 #     url: "/devtech"    
 # End
 
-# category_order:
-#   - 'ToSee'
-#   - 'ToCrack'
-#   - 'ToPick'
+category_order:
+  - 'ToSee'
+  - 'ToCrack'
+  - 'ToPick'
