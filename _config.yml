@@ -75,7 +75,7 @@ permalink: /:title/
 # End
 
 # Collections settings
-collections_dir: documentation
+# collections_dir: documentation
 collections:
   tosee:
     output: true
