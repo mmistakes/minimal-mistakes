@@ -6,9 +6,9 @@
             <li class="footer-products" role="menuitem" aria-label="Products">
                 <strong>Products</strong>
                 <ul role="menu" aria-hidden="true" aria-label="Products link" >
-                    <li role="listitem" aria-label="Products link item"><a href="{{ '/documentation/ToSee/tosee' | relative_url }}" role="link" aria-label="ToSee"><strong>ToSee</strong></a></li>
-                    <li role="listitem" aria-label="Products link item"><a href="{{ '/documentation/ToCrack/Tocrack001' | relative_url }}" role="link" aria-label="ToCrack"><strong>ToCrack</strong></a></li>
-                    <li role="listitem" aria-label="Products link item"><a href="{{ '/documentation/ToPick/Tpk_doc001' | relative_url }}" role="link" aria-label="ToPick"><strong>ToPick</strong></a></li>
+                    <li role="listitem" aria-label="Products link item"><a href="{{ '/tosee/' | relative_url }}" role="link" aria-label="ToSee"><strong>ToSee</strong></a></li>
+                    <li role="listitem" aria-label="Products link item"><a href="{{ '/tocrack/' | relative_url }}" role="link" aria-label="ToCrack"><strong>ToCrack</strong></a></li>
+                    <li role="listitem" aria-label="Products link item"><a href="{{ '/topick/' | relative_url }}" role="link" aria-label="ToPick"><strong>ToPick</strong></a></li>
                     <!-- <li role="listitem" aria-label="Products link item"><a href="{{ '/idlp' | relative_url }}" role="link" aria-label="ToCrack">Data loss Prevention Solution <strong>IDLP</strong></a></li> -->
                 </ul>
             </li>
@@ -18,7 +18,7 @@
                     {% for post in site.posts limit:5 %}
                     <li role="listitem" aria-label="Blog link item"><a href="{{ post.url | relative_url }}" role="link" aria-label="{{ post.title | escape }}">{{ post.title | escape }}</a></li>
                     {% endfor %}
-                    <li role="listitem" aria-label="Blog link item"><a href="{{ '/blog' | relative_url }}" role="link" aria-label="Read more">Read More</a></li>
+                    <li role="listitem" aria-label="Blog link item"><a href="{{ '/blog/' | relative_url }}" role="link" aria-label="Read more">Read More</a></li>
                 </ul>
             </li>
             <!-- <li class="footer-organization" role="menuitem" aria-label="Organization">

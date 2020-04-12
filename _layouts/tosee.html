@@ -4,7 +4,7 @@ layout: default
 <div class="doc-container">
     <div class="doc-menu">
         {% assign navurl = page.url | remove: 'index.html' %}
-        {% assign docs_by_category = site.documentation | group_by: "category" %}
+        {% assign docs_by_category = site.tosee | group_by: "category" %}
         {% for ident in site.category_order %}
         {% assign category = docs_by_category | where: "name", ident | first %}
         <p class="category">{{ category.name }}</p>
