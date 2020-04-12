@@ -1,8 +1,8 @@
 ---
-layout: documentation
+layout: tosee
 title: ToSee 설치
 # Intorduce ToSee
-category: ToSee
+category: Manual
 order: 1
 ---
 

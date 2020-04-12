@@ -1,7 +1,7 @@
 ---
-layout: documentation
+layout: tosee
 title: Version 2.3.0.00
-category: ToSee
+category: Release
 order: 12
 date : 2020-02-27 12:00:00 +0100
 ---

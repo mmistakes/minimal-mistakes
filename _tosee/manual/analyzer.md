@@ -1,8 +1,8 @@
 ---
-layout: documentation
+layout: tosee
 title: 취약점 진단 도구
 # ToSee Analyzer
-category: ToSee
+category: Manual
 order: 3
 ---
 &nbsp;

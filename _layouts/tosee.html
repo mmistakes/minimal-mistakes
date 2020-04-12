@@ -3,7 +3,6 @@ layout: default
 ---
 <div class="doc-container">
     <div class="doc-menu">
-        {{site.tosee}}
         {% assign navurl = page.url | remove: 'index.html' %}
         {% assign docs_by_category = site.tosee | group_by: "category" %}
         {% for ident in site.category_order %}

@@ -1,8 +1,8 @@
 ---
-layout: documentation
+layout: tosee
 title: 에이전트
 # ToSee Analyzer
-category: ToSee
+category: Manual
 order: 2
 ---
 &nbsp;

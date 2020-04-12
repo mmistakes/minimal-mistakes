@@ -1,7 +1,7 @@
 ---
-layout: documentation
+layout: tosee
 title: Version 1.72.0.99
-category: ToSee
+category: Release
 order: 9
 date : 2019-04-19 12:00:00 +0100
 ---

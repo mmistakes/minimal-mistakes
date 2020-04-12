@@ -1,8 +1,8 @@
 ---
-layout: documentation
+layout: tosee
 title: ToSee 소개
 # Intorduce ToSee
-category: ToSee
+category: Feature
 order: 1
 # permalink: /documentation/getting-started/
 ---

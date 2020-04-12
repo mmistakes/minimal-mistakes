@@ -1,8 +1,8 @@
 ---
-layout: documentation
+layout: tosee
 title: 문제 발생시 조치
 # expectation effect
-category: ToSee
+category: Manual
 order: 7
 ---
 &nbsp;

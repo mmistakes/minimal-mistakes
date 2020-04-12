@@ -1,8 +1,8 @@
 ---
-layout: documentation
+layout: tosee
 title: 파일트랩
 # ToSee FileTrap
-category: ToSee
+category: Feature
 order: 3
 ---
 Personal version | Enterprise Version | Latest Version 

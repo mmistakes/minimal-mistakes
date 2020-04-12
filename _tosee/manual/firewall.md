@@ -1,8 +1,8 @@
 ---
-layout: documentation
+layout: tosee
 title: 방화벽 Plus
 # ToSee Firewall Plus
-category: ToSee
+category: Manual
 order: 6
 ---
 &nbsp;

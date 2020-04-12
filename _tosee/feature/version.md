@@ -1,8 +1,8 @@
 ---
-layout: documentation
+layout: tosee
 title: 버젼 구성
 # ToSee Version
-category: ToSee
+category: Feature
 order: 8
 ---
 Personal version | Enterprise Version | Latest Version 

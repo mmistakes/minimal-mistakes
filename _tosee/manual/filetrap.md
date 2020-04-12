@@ -1,8 +1,8 @@
 ---
-layout: documentation
+layout: tosee
 title: 파일트랩
 # ToSee FileTrap
-category: ToSee
+category: Manual
 order: 4
 ---
 &nbsp;

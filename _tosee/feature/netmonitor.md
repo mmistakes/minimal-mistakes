@@ -1,8 +1,8 @@
 ---
-layout: documentation
+layout: tosee
 title: 네트워크 모니터
 # ToSee Network Monitor
-category: ToSee
+category: Feature
 order: 4
 ---
 Personal version | Enterprise Version | Latest Version 

@@ -1,7 +1,7 @@
 ---
-layout: documentation
+layout: tosee
 title: Version 1.4.0.00
-category: ToSee
+category: Release
 order: 5
 date : 2017-11-17 12:00:00 +0100
 ---

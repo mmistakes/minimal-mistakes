@@ -1,8 +1,8 @@
 ---
-layout: documentation
+layout: tosee
 title: 기대 효과
 # expectation effect
-category: ToSee
+category: Feature
 order: 6
 ---
 Personal version | Enterprise Version | Latest Version 

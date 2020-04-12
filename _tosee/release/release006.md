@@ -1,7 +1,7 @@
 ---
-layout: documentation
+layout: tosee
 title: Version 1.50.0.00
-category: ToSee
+category: Release
 order: 6
 date : 2018-01-24 12:00:00 +0100
 ---

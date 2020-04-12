@@ -1,8 +1,8 @@
 ---
-layout: documentation
+layout: tosee
 title: 네트워크 모니터
 # ToSee Network Monitor
-category: ToSee
+category: Manual
 order: 5
 ---
 &nbsp;

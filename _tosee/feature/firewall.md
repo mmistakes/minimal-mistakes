@@ -1,8 +1,8 @@
 ---
-layout: documentation
+layout: tosee
 title: 방화벽 Plus
 # ToSee Firewall Plus
-category: ToSee
+category: Feature
 order: 5
 ---
 Personal version | Enterprise Version | Latest Version 
