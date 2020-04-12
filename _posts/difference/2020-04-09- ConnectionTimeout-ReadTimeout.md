@@ -1,5 +1,5 @@
 ---
-title: Connection Timeout vs Read Timeout
+title: Connection Timeout 과 Read Timeout의 차이점은 무엇인가?
 permalink: /difference/ConnectionTimeout-ReadTimeout
 categories: 
    - difference
@@ -41,5 +41,6 @@ last_modified_at: 2020-04-09 16:04:56.28
 # Reference
 * [https://inyl.github.io/programming/2017/12/02/timeout.html](https://inyl.github.io/programming/2017/12/02/timeout.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNjQ3NTA0MSwtMTU3MjgyMTM3MV19
+eyJoaXN0b3J5IjpbMTU4OTUzNDcwNCwtMzI2NDc1MDQxLC0xNT
+cyODIxMzcxXX0=
 -->
