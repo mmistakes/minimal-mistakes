@@ -30,7 +30,7 @@ toc_sticky: true
 
 ### 1.2 응용분야의 예
 
-* **무선 센서 네트워크 (WSN)**
+**무선 센서 네트워크 (WSN)**
 
 {% capture fig_img %}
 ![iot-system]({{ '/assets/images/iot-system.png' | relative_url }})
@@ -43,7 +43,7 @@ toc_sticky: true
 
 무선 센서 네트워크는 BLE 시스템의 대표적인 응용분야이다. 예를 들어, 특정 공간에 다수의 센서를 배치하고 각 센서의 정보를 수집한다고 해보자. 이러한 센서의 경우 소량의 정보만을 전송하며, 실시간으로 수집할 필요 또한 없으므로 시스템 구축에 있어 속도에 제약을 받지 않는다. 즉, 이와 유사한 응용분야의 경우 적은 용량의 배터리를 이용해 얼마나 오래 쓸 수 있는가가 중요한 이슈라고 할 수 있다.
 
-* **헬스케어 (Healthcare)**
+**헬스케어 (Healthcare)**
 
 {% capture fig_img %}
 ![hrm]({{ '/assets/images/ble-example-hrm.png' | relative_url }})
