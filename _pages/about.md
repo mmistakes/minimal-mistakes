@@ -49,6 +49,6 @@ author_profile: true
 * `C`
 
 ##### 개발 임베디드 시스템 종류
-* `html Nordic BLE `
-* `json ARM cortex M4 `
+* `Nordic BLE `
+* `ARM cortex M4 `
 * `AVR (Arduino)`
