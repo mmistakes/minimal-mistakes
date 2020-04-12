@@ -4,6 +4,7 @@ layout: default
 <div class="doc-container">
     <div class="doc-menu">
         <h2>category:{{ page.url }}</h2>
+        <h1>hello</h1>
 
         {% assign navurl = page.url | remove: 'index.html' %}
         {% assign docs_by_category = site.tosee | group_by: "category" %}
