@@ -1,7 +1,7 @@
 ---
-layout: documentation
+layout: topick
 title: Alpha Release
-category: ToPick
+category: Manual
 order: 1
 ---
 
