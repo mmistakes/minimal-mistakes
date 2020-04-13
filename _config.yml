@@ -137,6 +137,6 @@ menu:
   # - 'Release'
 
 category_order: 
-  - 'x' 
-  - 'y' 
-  - 'z'
+  - 'Feature' 
+  - 'Manual' 
+  - 'Release'
