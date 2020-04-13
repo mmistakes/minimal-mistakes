@@ -141,3 +141,14 @@ menu:
 #   - 'Feature'
 #   - 'Manual'
 #   - 'Release'
+
+category_order:
+  - 'Getting-started'
+  - 'Fundamentals'
+  - 'Advanced'
+  - 'Platforms'
+  - 'Plugins'
+  - 'Samples'
+  - 'Tutorials'
+  - 'Upgrading'
+  - 'Contributing'
