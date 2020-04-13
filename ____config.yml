@@ -1,0 +1,140 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: iSecure Tech Blog
+description: > # this means to ignore newlines until "baseurl:"
+  아이시큐어에서 개발한 제품들과 서비스들에 대한 기술적인 내용들을 정리한 사이트입니다.
+baseurl: "" # the subpath of your site, e.g. /blog
+# url: "https://www.mvvmcross.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://isecure-kr.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+sass:
+  style: compressed
+
+# theme: minima
+# End
+
+# Gem settings
+gems:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-avatar
+  - jekyll-github-metadata
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - SITECHANGELOG.md
+# End
+
+# Github metadata settings
+repository: isecure-kr/isecure-kr.github.io
+# End
+
+# jekyll-seo-tag settings
+social:
+  name: iSecure
+  links:
+    - https://www.isecurekr.com
+    - https://isecure-kr.github.io/
+
+logo: /assets/images/logo/tosee-avatar.png
+
+# twitter:
+#   username: iSecure
+#End
+
+# Date format settings
+date_format: "%b %-d, %Y"
+# End
+
+# Site permalink settings
+permalink: /:title/
+# End
+
+# Collections settings
+# collections_dir: documentation
+collections:
+  tosee:
+    output: true
+    permalink: /tosee/:path/
+  tocrack:
+    output: true
+    permalink: /tocrack/:path/
+  topick:
+    output: true
+    permalink: /topick/:path/
+    # :path Path to the document relative to the collection's directory, including base filename of the document.
+# End
+
+# Collections settings
+# collections:
+#   documentation:
+#     output: true
+#     permalink: /documentation/:path
+#   manual:
+#     output: true
+#     permalink: /manual/:path
+#   release:
+#     output: true
+#     permalink: /release/:path
+#   devtech:
+#     output: true
+#     permalink: /devtech/:path
+# End
+
+
+# Site menu settings
+menu:
+  - title: "Blog"
+    url: "/blog"
+  - title: "ToSee"
+    url: "/tosee"
+  - title: "ToCrack"
+    url: "/tocrack"
+  - title: "ToPick"
+    url: "/topick"
+# # End
+# Site menu settings
+# menu:
+#   - title: "블로그"
+#     url: "/blog"
+#   - title: "솔루션 소개"
+#     url: "/documentation"
+#   - title: "매뉴얼"
+#     url: "/manual"
+#   - title: "릴리즈정보"
+#     url: "/release"
+#   - title: "개발정보"
+#     url: "/devtech"    
+# End
+
+# 설정을 잘 못할 경우 build error 발생
+# category_order:
+#   - 'Feature'
+#   - 'Manual'
+#   - 'Release'
+
+category_order: ['Feature', 'Manual', 'Release']
