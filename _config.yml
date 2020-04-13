@@ -79,7 +79,7 @@ permalink: /:title/
 collections:
   tosee:
     output: true
-    permalink: /tosee/:path/
+    permalink: /:collection/:path/
   # tocrack:
   #   output: true
   #   permalink: /tocrack/:path/
