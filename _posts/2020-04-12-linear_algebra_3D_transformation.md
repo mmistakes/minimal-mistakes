@@ -120,7 +120,7 @@ A good exercise is to reason through what this matrix multiplication should look
 Thinking closely about how it relates to the idea of applying two
 successive transformations in space.
 
-
+![3D-Transformation](/assets/images/linear_algebra_3d_transformation.jpg)
 ----------------------------
 If like me you can't draw in three-dimensional space,
 take a look at [this](https://www.youtube.com/watch?v=r-eJMJzJr_o)

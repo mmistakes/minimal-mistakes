@@ -5,8 +5,8 @@ layout: single
 excerpt: "Categories Include"
 permalink: /categories/
 ---
-![Look](../assets/images/figlet_categories.png)
-## Below you will find all my main categories
+![Look](/assets/images/figlet_categories.png)
+# All of the Main categories
 
   {% for pages in site.pages %}
     {% if pages.categories %}
@@ -19,7 +19,7 @@ permalink: /categories/
   {% endfor %}
 
 
-## Below you will find all my sub categories
+# All of the Sub-Categories
 
   {% for pages in site.pages %}
     {% if pages.categories %}
