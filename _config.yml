@@ -137,18 +137,7 @@ menu:
 #   - 'Manual'
 #   - 'Release'
 
-# category_order:
-#   - 'Feature'
-#   - 'Manual'
-#   - 'Release'
-
 category_order:
-  - 'Getting-started'
-  - 'Fundamentals'
-  - 'Advanced'
-  - 'Platforms'
-  - 'Plugins'
-  - 'Samples'
-  - 'Tutorials'
-  - 'Upgrading'
-  - 'Contributing'
+- 'Feature'
+- 'Manual'
+- 'Release'
