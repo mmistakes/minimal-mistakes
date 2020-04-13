@@ -13,11 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: ToSee Personal Secure Management Sysyem
+title: iSecure Tech Blog
 description: > # this means to ignore newlines until "baseurl:"
-  ToSee는 개인용 Windows 운영체제를 위한 보안 관리 솔루션입니다.
-  편리한 취약점 진단 및 관리, 행위기반을 이용한 랜섬웨어와 데이터의
-  보호를 위한의 필수적인 보안 솔루션입니다.
+  아이시큐어에서 개발한 제품들과 서비스들에 대한 기술적인 내용들을 정리한 사이트입니다.
 baseurl: "" # the subpath of your site, e.g. /blog
 # url: "https://www.mvvmcross.com" # the base hostname & protocol for your site, e.g. http://example.com
 url: "https://isecure-kr.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
@@ -62,10 +60,10 @@ social:
     - https://www.isecurekr.com
     - https://isecure-kr.github.io/
 
-logo: /assets/img/logo/tosee-avatar.png
+logo: /assets/images/logo/tosee-avatar.png
 
-twitter:
-  username: iSecure
+# twitter:
+#   username: iSecure
 #End
 
 # Date format settings
@@ -77,36 +75,66 @@ permalink: /:title/
 # End
 
 # Collections settings
+# collections_dir: documentation
 collections:
-  documentation:
+  tosee:
     output: true
-    permalink: /documentation/:path    
-  manual:
-    output: true
-    permalink: /manual/:path    
-  release:
-    output: true
-    permalink: /release/:path        
-  devtech:
-    output: true
-    permalink: /devtech/:path            
+    permalink: /tosee/:path/
+  # tocrack:
+  #   output: true
+  #   permalink: /tocrack/:path/
+  # topick:
+  #   output: true
+  #   permalink: /topick/:path/
+    # :path Path to the document relative to the collection's directory, including base filename of the document.
 # End
+
+# Collections settings
+# collections:
+#   documentation:
+#     output: true
+#     permalink: /documentation/:path
+#   manual:
+#     output: true
+#     permalink: /manual/:path
+#   release:
+#     output: true
+#     permalink: /release/:path
+#   devtech:
+#     output: true
+#     permalink: /devtech/:path
+# End
+
 
 # Site menu settings
 menu:
-  - title: "블로그"
+  - title: "Blog"
     url: "/blog"
-  - title: "솔루션 소개"
-    url: "/documentation"
-  - title: "매뉴얼"
-    url: "/manual"
-  - title: "릴리즈정보"
-    url: "/release"
-  - title: "개발정보"
-    url: "/devtech"    
+  - title: "ToSee"
+    url: "/tosee"
+  - title: "ToCrack"
+    url: "/tocrack"
+  - title: "ToPick"
+    url: "/topick"
+# # End
+# Site menu settings
+# menu:
+#   - title: "블로그"
+#     url: "/blog"
+#   - title: "솔루션 소개"
+#     url: "/documentation"
+#   - title: "매뉴얼"
+#     url: "/manual"
+#   - title: "릴리즈정보"
+#     url: "/release"
+#   - title: "개발정보"
+#     url: "/devtech"    
 # End
 
-category_order:
-  - 'ToSee'
-  - 'ToCrack'
-  - 'ToPick'
+# 설정을 잘 못할 경우 build error 발생
+# category_order:
+#   - 'Feature'
+#   - 'Manual'
+#   - 'Release'
+
+category_order: ['Feature', 'Manual', 'Release']
