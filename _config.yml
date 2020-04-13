@@ -138,6 +138,6 @@ menu:
 #   - 'Release'
 
 category_order:
-- 'Feature'
-- 'Manual'
-- 'Release'
+  - 'Feature'
+  - 'Manual'
+  - 'Release'
