@@ -89,7 +89,7 @@ collections:
   topick:
     output: true
     permalink: /:collection/:path/
-    :path Path to the document relative to the collection's directory, including base filename of the document.
+    # path Path to the document relative to the collection's directory, including base filename of the document.
 # End
 
 # Collections settings
