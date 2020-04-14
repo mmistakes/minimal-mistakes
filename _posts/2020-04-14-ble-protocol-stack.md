@@ -58,7 +58,7 @@ HCI (Host-Controller Interface)는 `Host`와 `Controller`가 분리되어 있는
 L2CAP 는 Logical Link Control and Adaptaion Protocol의 약자로, 상위 layer (GATT/GAP)와 하위 layer 사이의 상호작용을 담당한다. LL 에서 만들어진 BLE 패킷 (packet)에 실제 어플리케이션 단에서 사용되는 데이터를 포함시키거나 추출하는 역할을 수행한다.
 
 {% capture fig_img %}
-![iot-system]({{ '/assets/images/ble-l2cap' | relative_url }})
+![iot-system]({{ '/assets/images/ble-l2cap.png' | relative_url }})
 {% endcapture %}
 
 <figure>
