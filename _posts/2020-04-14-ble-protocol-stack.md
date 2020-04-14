@@ -31,6 +31,26 @@ PHY 에서 BLE 시스템은 2.4 GHz 주파수 영역의 일부를 40개의 구�
 
 위 그림에서 확인할 수 있듯이 중심 주파수 크기와 채널 번호 순서는 서로 동일하지 않으며, 일부 BLE 시스템의 경우는 2.402~2.48 GHz 영역 대신에 2.4~2.4835 GHz 대역을 사용하기도 한다.
 
+### 2.2 Link layer (LL)
+
+LL 는 PHY 와 직접적으로 상호작용하는 layer 이고, 하드웨어와 소프트웨어 사이에서 동작한다. 하드웨어 단에서 BLE 디바이스 간의 연결을 관리하는 layer로 암호화 (**encryption**), 연결 상태 및 채널 업데이트 (**connection or channer update**) 등의 역할을 수행한다.
+
+![ble-ll]({{ site.url }}{{ site.baseurl }}/assets/images/ble-link-layer.png) 
+
+위 그림에서와 같이 BLE 디바이스는 LL 에서 다음 중 하나의 상태로 동작한다.
+
+* Standby
+* Advertising
+* Scanning
+* Initiating
+* Connected
+
+이해를 돕기 위해 BLE 디바이스의 연결 과정을 함께 설명을 하자면, 먼저 BLE 연결을 시작하고자 하는 master 디바이스에서 scanning 동작을 수행한다. Scanning 동작은 단어 뜻 그대로 주변에 BLE 연결이 가능한 디바이스가 있는지 확인하는 과정이다. 다음으로 BLE 디바이스에 연결되기를 원하는 slave 디바이스들은 advertising 이란 동작을 통해 해당 디바이스가 근처에 있다는 것을 알려주는 신호를 주변으로 송신한다. 이러한 slave 디바이스의 경우 일반적으로 연결 요청이 들어오는 것을 기다리며, 먼저 연결을 시도하지는 않는다. 이후, master 디바이스에서 scanning 한 디바이스 중 특정 디바이스와 연결을 시도할 경우, 해당 디바이스는 LL 에서 연결을 준비하는 initiating 상태에 진입한다. 이후 무선 연결에 성공하고나면, master와 slave 디바이스는 모두 connected 상태에 놓이게 된다.
+
+### 2.3 HCI, L2CAP, SM
+
+
+
 <!-- 그림 추가
 ![jekyll-theme]({{ site.url }}{{ site.baseurl }}/assets/images/jekyll-theme-example.png) 
 -->
