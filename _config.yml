@@ -77,9 +77,6 @@ permalink: /:title/
 # Collections settings
 # collections_dir: documentation
 collections:
-  documentation:
-    output: true
-    permalink: /:collection/:path/
   tosee:
     output: true
     permalink: /:collection/:path/
