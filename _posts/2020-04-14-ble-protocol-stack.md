@@ -34,7 +34,7 @@ BLE 스택은 크게 `Host`와 `Controller`로 구성되어 있고, 각 영역�
 
 **PHY** 에서 BLE 시스템은 2.4 GHz 주파수 영역의 일부를 40개의 구간으로 나누어 신호를 주고 받으며, 각각의 영역을 <span style="color:#DF0174"><b>채널</b></span>이라고 부른다. 각 채널은 중심 주파수를 기준으로 2 MHz 의 대역폭을 가지며, 할당된 40개의 채널 중 37-39번 채널은 advertising 채널로 사용되고, 나머지 37개의 채널은 data 채널로 사용된다 (각 채널에 대해서는 차차 알게 될 것이다).
 
-<figure style="width: 700px">
+<figure style="width: 640px">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/ble-phy-layer.png" alt="">
 </figure> 
 
