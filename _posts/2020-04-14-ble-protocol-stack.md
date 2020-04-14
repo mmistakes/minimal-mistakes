@@ -100,7 +100,7 @@ Security Manager 는 자주 연결하는 디바이스 (**peer**) 사이의 보�
 먼저, `Peripheral` (주변기기)로 동작하는 디바이스는 **LL** 에서 `Advertising` 상태를 유지하고 있으며, 다른 디바이스로부터의 연결 요청을 기다린다. 앞서 언급했듯이 `Advertising` 이란, 주변의 BLE 디바이스에 자신의 정보를 알리는 동작이고, 일반적으로 이 과정에서는 해당 디바이스의 이름과 간단한 정보만을 송신한다. 예를 들어, 아래의 그림과 같이 스마트폰에서 무선 이어폰과 연결하기 위해 근처 블루투스 기기를 찾고(`Scanning`) 있다고 가정해보자. 이때 본인의 이어폰 (e.g. AirPod)을 포함한 다수의 블루투스 기기의 이름이 보일텐데, 이 때 감지되는 디바이스들은 모두 `Advertising` 상태에 있는 `Periphal` 디바이스라고 할 수 있다.
 
 {% capture fig_img %}
-![iphone-airpod]({{ '/assets/images/iphone-airpod.jpg' | relative_url }})
+![iphone-airpod]({{ '/assets/images/iphone-airpod.jpeg' | relative_url }})
 {% endcapture %}
 
 <figure>
