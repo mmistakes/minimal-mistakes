@@ -64,7 +64,7 @@ BLE 스택은 크게 `Host`와 `Controller`로 구성되어 있고, 각 영역�
 ![ble-link]({{ '/assets/images/ble-connection.png' | relative_url }}){: .align-center}
 {% endcapture %}
 
-<figure style="width: 500px">
+<figure style="width: 480px">
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
   <figcaption>출처: http://dev.ti.com/tirex/content/simplelink_cc2640r2_sdk_1_40_00_45/docs/blestack/ble_user_guide/html/ble-stack-3.x/gap.html</figcaption>
 </figure>
