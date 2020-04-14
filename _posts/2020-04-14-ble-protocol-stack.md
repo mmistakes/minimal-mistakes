@@ -49,16 +49,16 @@ LL 는 PHY 와 직접적으로 상호작용하는 layer 이고, 하드웨어와 
 
 ### 2.3 HCI, L2CAP, SM
 
-##### HCI 
+##### 2.3.1 HCI 
 
 HCI (Host-Controller Interface)는 `Host`와 `Controller`가 분리되어 있는 경우 두 모듈 사이의 통신이 가능하도록 해주는 layer이다. 앞으로 소개할 Nordic Semiconductor 사의 BLE 프로세서를 비롯해, 대부분의 BLE 디바이스는 `Host`와 `Controller`가 단일 칩으로 구성되어있다.
 
-##### L2CAP
+##### 2.3.2 L2CAP
 
 L2CAP 는 Logical Link Control and Adaptaion Protocol의 약자로, 상위 layer (GATT/GAP)와 하위 layer 사이의 상호작용을 담당한다. LL 에서 만들어진 BLE 패킷 (packet)에 실제 어플리케이션 단에서 사용되는 데이터를 포함시키거나 추출하는 역할을 수행한다.
 
 {% capture fig_img %}
-![iot-system]({{ '/assets/images/ble-l2cap.png' | relative_url }})
+![ble-l2cap]({{ '/assets/images/ble-l2cap.png' | relative_url }})
 {% endcapture %}
 
 <figure>
@@ -66,7 +66,7 @@ L2CAP 는 Logical Link Control and Adaptaion Protocol의 약자로, 상위 layer
   <figcaption>출처: http://dev.ti.com/tirex/content/simplelink_cc26x2_sdk_1_60_00_43/docs/ble5stack/ble_user_guide/html/ble-stack-5.x/l2cap.html</figcaption>
 </figure>
 
-##### SM
+##### 2.3.3 SM
 
 Security Manager 는 자주 연결하는 디바이스 (peer) 사이의 보안 코드 (key)를 관리하고 배포하는 역할을 수행한다.
 
