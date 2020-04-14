@@ -18,7 +18,7 @@ toc_sticky: true
 ![iot-system]({{ '/assets/images/2020-04-12-bluetooth-standard.png' | relative_url }})
 {% endcapture %}
 
-<figure style="width: 500px">
+<figure style="width: 600px">
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
   <figcaption>출처: https://www.semiconductorstore.com/blog/2017/Bluetooth-5-versus-Bluetooth-4-2-whats-the-difference/2080</figcaption>
 </figure>
@@ -27,6 +27,8 @@ toc_sticky: true
 
 기존의 블루투스 (**BR/EDR + HS**) 기술이 데이터 전송 속도 (**data rate**)에 초점을 맞추고 있는 반면, BLE는 전력 소모를 줄이는 것에 초점을 맞추며 헬스케어, 피트니스, 보안 시스템 등의 특정 응용분야 (**application**)에 적합한 기술로 대두되었다.
 > BLE는 대량의 정보를 빠르게 전송하는 것보다는 <span style="color:#0582a8"><b>소량의 정보</b></span>를 <span style="color:#0582a8"><b>주기적으로</b></span> 또는 간헐적으로 보내는 시스템에 적합한 기술이다.
+
+---
 
 ### 1.2 응용분야의 예
 
@@ -50,7 +52,7 @@ toc_sticky: true
 ![hrm]({{ '/assets/images/ble-example-hrm.png' | relative_url }})
 {% endcapture %}
 
-<figure style="width: 500px">
+<figure style="width: 480px">
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
   <figcaption>출처: https://www.raywenderlich.com/231-core-bluetooth-tutorial-for-ios-heart-rate-monitor</figcaption>
 </figure>

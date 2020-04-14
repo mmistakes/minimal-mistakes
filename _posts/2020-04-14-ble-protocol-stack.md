@@ -33,11 +33,15 @@ BLE 스택은 크게 `Host`와 `Controller`로 구성되어 있고, 각 영역�
 
 >위 그림에서 확인할 수 있듯이 중심 주파수 크기와 채널 번호 순서는 서로 동일하지 않으며, 일부 BLE 시스템의 경우는 **2.402~2.48 GHz** 영역 대신에 **2.4~2.4835 GHz** 대역을 사용하기도 한다.
 
+---
+
 ### 2.2 Link layer (LL)
 
 **LL** 는 **PHY** 와 직접적으로 상호작용하는 레이어이고, 하드웨어와 소프트웨어 사이에서 동작한다. 하드웨어와 연결되어 BLE 디바이스 간의 연결을 직접적으로 관리하는 레이어로 암호화 (**encryption**), 연결 상태 및 채널 업데이트 (**connection or channer update**) 등의 역할을 수행한다.
 
-![ble-ll]({{ site.url }}{{ site.baseurl }}/assets/images/ble-link-layer.png)
+<figure style="width: 500px">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/ble-link-layer.png" alt="">
+</figure> 
 
 위 그림에서와 같이 BLE 디바이스는 LL 에서 다음 중 하나의 상태로 동작한다.
 
@@ -53,13 +57,15 @@ BLE 스택은 크게 `Host`와 `Controller`로 구성되어 있고, 각 영역�
 ![ble-link]({{ '/assets/images/ble-connection.png' | relative_url }}){: .align-center}
 {% endcapture %}
 
-<figure>
+<figure style="width: 500px">
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
   <figcaption>출처: http://dev.ti.com/tirex/content/simplelink_cc2640r2_sdk_1_40_00_45/docs/blestack/ble_user_guide/html/ble-stack-3.x/gap.html</figcaption>
 </figure>
 
 먼저 BLE 연결을 시작하고자 하는 **master** 디바이스 (**오른쪽**)에서는 `Scanning` 동작을 수행한다. `Scanning` 이란, 단어 뜻 그대로 주변에 BLE 연결이 가능한 디바이스가 있는지 확인하는 과정이다. 다음으로 BLE 연결을 대기하는 **slave** 디바이스의 경우 (**왼쪽**) `Advertising` 이란 동작을 통해 해당 디바이스가 근처에 있다는 것을 주변에 알린다. 이후, **master** 디바이스에서 `Scanning` 한 디바이스 중 하나에 연결을 시도할 경우, 해당 디바이스는 **LL** 에서 연결을 준비하는 `initiating` 상태에 진입하게 되고, 무선 연결에 성공하고나면 **master**와 **slave** 디바이스는 모두 `Connected` 상태에 놓이게 된다. 
 >이러한 BLE 연결 과정은 이후 설명할 **GAP** 에 의해 관리된다.
+
+---
 
 ### 2.3 HCI, L2CAP, SM
 
@@ -84,11 +90,15 @@ BLE 스택은 크게 `Host`와 `Controller`로 구성되어 있고, 각 영역�
 
 Security Manager 는 자주 연결하는 디바이스 (**peer**) 사이의 보안 코드 (**key**)를 관리하고 배포하는 역할을 수행한다.
 
+---
+
 ### 2.4 Attribute Protocol (ATT)
 
 **ATT** 는 서버 (**server**)와 클라이언트 (**client**) 사이의 <span style="color:#DF0174"><b>데이터 교환에 대한 규칙</b></span>으로, 무선으로 연결된 BLE 디바이스 사이의 데이터 교환은  **ATT** 에 의해 이뤄진다. 이때, 연결된 디바이스 중 센서의 값이나 스위치의 상태, 위치에 대한 정보 등을 가지고 있는 디바이스를 **GATT server** 라고 부르고, 해당 정보를 요청하는 디바이스를 **GATT client** 라고 부른다.
 
 또한, **GATT**는 Generic Attribute Profile 의 약자로 **ATT** 를 기반으로 주고받는 <span style="color:#DF0174"><b>데이터의 구조</b></span>를 정의한다. **ATT** 와 **GATT** 에 대해서는 다음 포스트에서 보다 구체적으로 다룰 예정이다.
+
+---
 
 ### 2.5 Generic Access Profile (GAP)
 
@@ -99,7 +109,7 @@ Security Manager 는 자주 연결하는 디바이스 (**peer**) 사이의 보�
 * `Peripheral`
 * `Central`
 
-먼저, `Peripheral` (주변기기)로 동작하는 디바이스는 **LL** 에서 `Advertising` 상태를 유지하고 있으며, 다른 디바이스로부터의 연결 요청을 기다린다. 앞서 언급했듯이 `Advertising` 이란, 주변의 BLE 디바이스에 자신의 정보를 알리는 동작이고, 일반적으로 이 과정에서는 해당 디바이스의 이름과 간단한 정보만을 송신한다. 예를 들어, 아래의 그림과 같이 스마트폰에서 무선 이어폰과 연결하기 위해 근처 블루투스 기기를 찾고(`Scanning`) 있다고 가정해보자. 이때 본인의 이어폰 (e.g. AirPod)을 포함한 다수의 블루투스 기기의 이름이 보일텐데, 이 때 감지되는 디바이스들은 모두 `Advertising` 상태에 있는 `Periphal` 디바이스라고 할 수 있다.
+먼저, `Peripheral` (주변기기)로 동작하는 디바이스는 **LL** 에서 `Advertising` 상태를 유지하고 있으며, 다른 디바이스로부터의 연결 요청을 기다린다. 앞서 언급했듯이 `Advertising` 이란, 주변의 BLE 디바이스에 자신의 정보를 알리는 동작이고, 일반적으로 이 과정에서는 해당 디바이스의 이름과 간단한 정보만을 송신한다. 예를 들어, 아래의 그림과 같이 스마트폰에서 무선 이어폰과 연결하기 위해 근처 블루투스 기기를 찾고(`Scanning`) 있다고 가정해보자. 이때 본인의 이어폰 (e.g. AirPods)을 포함한 다수의 블루투스 기기의 이름이 보일텐데, 이 때 감지되는 디바이스들은 모두 `Advertising` 상태에 있는 `Periphal` 디바이스라고 할 수 있다.
 
 {% capture fig_img %}
 ![iphone-airpod]({{ '/assets/images/iphone-airpod.jpeg' | relative_url }})
