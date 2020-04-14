@@ -88,7 +88,7 @@ BLE 스택은 크게 `Host`와 `Controller`로 구성되어 있고, 각 영역�
 ![ble-l2cap]({{ '/assets/images/ble-l2cap.png' | relative_url }}){: .align-center}
 {% endcapture %}
 
-<figure>
+<figure style="width: 580px">
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
   <figcaption>출처: http://dev.ti.com/tirex/content/simplelink_cc26x2_sdk_1_60_00_43/docs/ble5stack/ble_user_guide/html/ble-stack-5.x/l2cap.html</figcaption>
 </figure>
