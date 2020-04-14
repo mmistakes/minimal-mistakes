@@ -122,7 +122,7 @@ Security Manager 는 자주 연결하는 디바이스 (**peer**) 사이의 보�
 ![iphone-airpod]({{ '/assets/images/iphone-airpod.jpeg' | relative_url }})
 {% endcapture %}
 
-<figure style="width: 540px">
+<figure style="width: 545px">
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
   <figcaption>출처: https://www.semiconductorstore.com/blog/2017/Bluetooth-5-versus-Bluetooth-4-2-whats-the-difference/2080</figcaption>
 </figure>
