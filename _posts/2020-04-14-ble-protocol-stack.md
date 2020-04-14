@@ -76,7 +76,21 @@ Security Manager 는 자주 연결하는 디바이스 (peer) 사이의 보안 �
 
 ### 2.5 Generic Access Profile (GAP)
 
-GAP 는
+GAP 는 연결 (connection) 및 advertising 동작을 관리하는 최상위 layer로 각 디바이스의 LL 상태를 결정하고, 서로 다른 BLE 디바이스 사이의 상호작용을 관리하는 모듈이다. BLE 디바이스는 GAP 에 대해 다음 중 하나의 role 로 동작한다.
+
+* Broadcaster
+* Observer
+* Peripheral
+* Central
+
+먼저, Peripheral (주변기기)로 동작하는 디바이스는 LL 에서 advertising 상태를 유지하고 있으며, 다른 디바이스와의 연결을 기다린다. 앞서 언급했듯이 advertising 이란 BLE 디바이스와 연결하기 전에 해당 디바이스의 이름과 간단한 정보만을 주변으로 송신하는 동작이다. 예를 들어, 스마트폰과 무선 이어폰을 연결하기 위해 근처 블루투스 기기를 찾고(scanning) 있다고 가정해보자. 이때 본인의 이어폰 (e.g. AirPod)을 포함한 다수의 블루투스 기기의 이름이 보일텐데, 이 때 감지되는 디바이스들은 모두 advertising 하고 있는 Periphal 디바이스라고 할 수 있다.
+
+위 예시에서의 스마트폰과 같이 Peripheral 디바이스를 scanning 하고, scan 한 디바이스와 연결까지 가능한 디바이스는 GAP 에서 Central (중앙장치) 로서 동작하는 디바이스이다. 즉, BLE 연결은 central과 peripheral 디바이스 사이에서 이뤄지고, central 디바이스에 의해서 시작된다.
+
+Peripheral 디바이스가 연결 없이 advertising만 수행하는 경우, 이러한 디바이스를 Broadcaster라고 한다. 기회가 되면 설명하겠지만, Broadcaster로 동작하는 디바이스는 무선으로 연결할 수 없으며, advertising 데이터에 자신의 이름말고 실질적인 데이터를 실어서 전송한다. 일반적으로 이러한 장치를 비콘 (Beacon)이라고 부른다.
+
+또한, Central 디바이스가 연결 과정 없이 scan 동작만을 수행하는 경우 Observer라고 부르며, 이러한 디바이스는 연결 상태에서 데이터를 수신하는 것이 목적이 아닌 advertising 데이터 내부의 데이터를 타겟으로 하고 있으므로 Beacon 신호를 수신하기 위해 사용한다.
+
 <!-- 그림 추가
 ![jekyll-theme]({{ site.url }}{{ site.baseurl }}/assets/images/jekyll-theme-example.png) 
 -->
