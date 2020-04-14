@@ -79,7 +79,7 @@ permalink: /:title/
 collections:
   documentation:
     output: true
-    permalink: /documentation/:path
+    permalink: /:collection/:path/
   tosee:
     output: true
     permalink: /:collection/:path/
