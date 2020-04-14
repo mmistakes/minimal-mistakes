@@ -24,10 +24,9 @@ author_profile: true
 ## 포스팅 항목
 
 * [BLE (1) - 저전력 블루투스 (BLE) 란?](https://enidanny.github.io/ble/what-is-the-ble/)
+* [BLE (2) - BLE 프로토콜 스택](https://enidanny.github.io/ble/ble-protocol-stack/)
 
 ## 포스팅 예정 항목
 
-* BLE (2) - BLE 프로토콜 스택
-
-* ATT/GATT
+* BLE (3) - ATT/GATT
 * Effective Throughput

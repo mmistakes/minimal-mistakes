@@ -34,7 +34,9 @@ BLE 스택은 크게 `Host`와 `Controller`로 구성되어 있고, 각 영역�
 
 **PHY** 에서 BLE 시스템은 2.4 GHz 주파수 영역의 일부를 40개의 구간으로 나누어 신호를 주고 받으며, 각각의 영역을 <span style="color:#DF0174"><b>채널</b></span>이라고 부른다. 각 채널은 중심 주파수를 기준으로 2 MHz 의 대역폭을 가지며, 할당된 40개의 채널 중 37-39번 채널은 advertising 채널로 사용되고, 나머지 37개의 채널은 data 채널로 사용된다 (각 채널에 대해서는 차차 알게 될 것이다).
 
-![ble-phy]({{ site.url }}{{ site.baseurl }}/assets/images/ble-phy-layer.png)
+<figure style="width: 700px">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/ble-phy-layer.png" alt="">
+</figure> 
 
 >위 그림에서 확인할 수 있듯이 중심 주파수 크기와 채널 번호 순서는 서로 동일하지 않으며, 일부 BLE 시스템의 경우는 **2.402~2.48 GHz** 대역 대신에 **2.4~2.4835 GHz** 대역을 사용하기도 한다.
 
@@ -86,7 +88,7 @@ BLE 스택은 크게 `Host`와 `Controller`로 구성되어 있고, 각 영역�
 ![ble-l2cap]({{ '/assets/images/ble-l2cap.png' | relative_url }}){: .align-center}
 {% endcapture %}
 
-<figure style="width: 540px">
+<figure>
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
   <figcaption>출처: http://dev.ti.com/tirex/content/simplelink_cc26x2_sdk_1_60_00_43/docs/ble5stack/ble_user_guide/html/ble-stack-5.x/l2cap.html</figcaption>
 </figure>
@@ -120,7 +122,7 @@ Security Manager 는 자주 연결하는 디바이스 (**peer**) 사이의 보�
 ![iphone-airpod]({{ '/assets/images/iphone-airpod.jpeg' | relative_url }})
 {% endcapture %}
 
-<figure>
+<figure style="width: 540px">
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
   <figcaption>출처: https://www.semiconductorstore.com/blog/2017/Bluetooth-5-versus-Bluetooth-4-2-whats-the-difference/2080</figcaption>
 </figure>
