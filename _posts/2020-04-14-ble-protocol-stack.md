@@ -1,0 +1,51 @@
+---
+title: "BLE (2) - BLE 프로토콜 스택"
+categories:
+  - BLE
+tags:
+  - protocol stack
+  - BLE layer
+toc: true
+toc_sticky: true
+---
+
+## 2. BLE 프로토콜 스택
+
+BLE 프로토콜 스택 (**BLE protocol stack, BLE stack**)은 BLE 디바이스의 구조를 보여주며, 이는 BLE 표준 (**Core Specification**)에서 정의하고 있는 LE (Low Energy) 모드로 동작하기 위해 갖춰야하는 기능들을 포함하고 있다.
+> The BLE protocol stack implements all the mandatory and optional features of LE mode compliant to Core Specification
+
+![ble-stack]({{ site.url }}{{ site.baseurl }}/assets/images/ble-proto-stack.png)
+
+BLE 스택은 크게 `Host`와 `Controller`로 구성되어 있고, 각 영역은 다양한 종류의 레이어 (layer) 혹은 프로파일 (profile)로 이루어져있다. BLE 디바이스는 각 레이어에서 특정 상태(state) 혹은 역할(role)을 가지고 동작하게 되며, BLE 시스템을 개발하기전 BLE 스택의 각 요소가 어떤 역할을 하는지를 이해하는 것은 필수이다.
+
+**Notice:** 다음의 서술하는 내용에서는 혼돈을 방지하기 위해 영어로 표기된 고유 명사의 대부분을 원문 영단어 그대로 사용합니다.
+{: .notice--info}
+
+### 2.1 Physical layer (PHY)
+
+**PHY** 는 RF 시스템 및 무선 전파(**Radio**) 신호를 송수신하기 위한 하드웨어로 구성된다. BLE 디바이스는 2.4 GHz의 **[ISM](https://en.wikipedia.org/wiki/ISM_band)** 주파수 대역에서 동작하며, **[GFSK](https://en.wikipedia.org/wiki/Frequency-shift_keying#Gaussian_frequency-shift_keying)**과 **[FHSS](https://en.wikipedia.org/wiki/Frequency-hopping_spread_spectrum)** 방식을 이용하여 통신한다.
+
+PHY 에서 BLE 시스템은 2.4 GHz 주파수 영역의 일부를 40개의 구간으로 나누어 신호를 주고 받으며, 각각의 영역을 채널이라고 부른다. 각 채널은 중심 주파수를 기준으로 2 MHz 의 대역폭을 가지며, 할당된 40개의 채널 중 37-39번 채널은 advertising 채널로 사용되고, 나머지 37개의 채널은 data 채널로 사용된다 (각 채널에 대해서는 차차 알게 될 것이다).
+
+![ble-phy]({{ site.url }}{{ site.baseurl }}/assets/images/ble-phy-layer.png)
+
+위 그림에서 확인할 수 있듯이 중심 주파수 크기와 채널 번호 순서는 서로 동일하지 않으며, 일부 BLE 시스템의 경우는 2.402~2.48 GHz 영역 대신에 2.4~2.4835 GHz 대역을 사용하기도 한다.
+
+<!-- 그림 추가
+![jekyll-theme]({{ site.url }}{{ site.baseurl }}/assets/images/jekyll-theme-example.png) 
+-->
+
+<!-- 캡션 달린 그림 추가
+{% capture fig_img %}
+![iot-system]({{ '/assets/images/2020-04-12-bluetooth-standard.png' | relative_url }})
+{% endcapture %}
+
+<figure>
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>출처: https://www.semiconductorstore.com/blog/2017/Bluetooth-5-versus-Bluetooth-4-2-whats-the-difference/2080</figcaption>
+</figure>
+-->
+
+<!-- 
+l2cap 출처: http://dev.ti.com/tirex/content/simplelink_cc26x2_sdk_1_60_00_43/docs/ble5stack/ble_user_guide/html/ble-stack-5.x/l2cap.html
+-->
