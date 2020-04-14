@@ -5,6 +5,11 @@ categories:
 tags:
   - protocol stack
   - BLE layer
+  - PHY
+  - LL
+  - ATT
+  - GATT
+  - GAP
 toc: true
 toc_sticky: true
 ---
@@ -31,7 +36,7 @@ BLE 스택은 크게 `Host`와 `Controller`로 구성되어 있고, 각 영역�
 
 ![ble-phy]({{ site.url }}{{ site.baseurl }}/assets/images/ble-phy-layer.png)
 
->위 그림에서 확인할 수 있듯이 중심 주파수 크기와 채널 번호 순서는 서로 동일하지 않으며, 일부 BLE 시스템의 경우는 **2.402~2.48 GHz** 영역 대신에 **2.4~2.4835 GHz** 대역을 사용하기도 한다.
+>위 그림에서 확인할 수 있듯이 중심 주파수 크기와 채널 번호 순서는 서로 동일하지 않으며, 일부 BLE 시스템의 경우는 **2.402~2.48 GHz** 대역 대신에 **2.4~2.4835 GHz** 대역을 사용하기도 한다.
 
 ---
 
@@ -51,7 +56,7 @@ BLE 스택은 크게 `Host`와 `Controller`로 구성되어 있고, 각 영역�
 * `Initiating`
 * `Connected`
 
-두 개의 BLE 디바이스가 연결을 시도할 때, 각각의 디바이스는 **LL** 에서 다음의 그림과 같이 변화한다.
+두 개의 BLE 디바이스가 연결을 시도할 때, 각각의 디바이스는 **LL** 에서 다음의 그림과 같이 동작한다.
 
 {% capture fig_img %}
 ![ble-link]({{ '/assets/images/ble-connection.png' | relative_url }}){: .align-center}
@@ -81,7 +86,7 @@ BLE 스택은 크게 `Host`와 `Controller`로 구성되어 있고, 각 영역�
 ![ble-l2cap]({{ '/assets/images/ble-l2cap.png' | relative_url }}){: .align-center}
 {% endcapture %}
 
-<figure>
+<figure style="width: 540px">
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
   <figcaption>출처: http://dev.ti.com/tirex/content/simplelink_cc26x2_sdk_1_60_00_43/docs/ble5stack/ble_user_guide/html/ble-stack-5.x/l2cap.html</figcaption>
 </figure>
