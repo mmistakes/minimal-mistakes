@@ -27,6 +27,7 @@ author_profile: true
 
 ## 포스팅 예정 항목
 
-* 저전력 블루투스 (BLE) 소개
-* BLE 프로토콜 스택
-* BLE 5.0
+* BLE (2) - BLE 프로토콜 스택
+
+* ATT/GATT
+* Effective Throughput
