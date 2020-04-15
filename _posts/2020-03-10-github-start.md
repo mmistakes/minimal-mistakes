@@ -27,14 +27,12 @@ toc_sticky: true
 
 <figure style="width: 80%">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/visual-studio-code-download.png" alt="">
-  <figcaption>Look at 580 x 300 getting some love.</figcaption>
 </figure>
 
 **[Git](https://git-scm.com/downloads)**
 
 <figure style="width: 80%">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/git-download.png" alt="">
-  <figcaption>Look at 580 x 300 getting some love.</figcaption>
 </figure>
 <!--![git-image]({{ site.url }}{{ site.baseurl }}/assets/images/git-download.png)-->
 
@@ -51,6 +49,8 @@ git commit -m "blog-testing"
 git push
 ```
 
+---
+
 ### 1.2 Git 개념 이해하기 (권장)
 
 본인이 컴퓨터 공학과 관련된 일을 하거나 공부를하고 있다면 **`git`을 공부하고 반드시 사용하도록 하자.** 필자의 경우 전자공학을 전공했고, 임베디드 시스템 프로그래밍을 주로 했었기 때문에 `git`의 필요성을 느끼지 못했었는데, 이번에 블로그 구축을 시작하면서 `git`이 얼마나 유용한 시스템인지 새삼 깨닫게 되었다. 
@@ -64,3 +64,42 @@ git push
 **Notice:** 본인이 프로그래머가 아니거나, 블로그 운영에만 관심이 있다면 굳이 시청하지 않으셔도 됩니다.
 {: .notice}
 
+
+## 2. 튜토리얼 따라하기
+
+github page를 블로그 플랫폼으로 선택하는 이유 중 하나는 자유롭게 테마를 선택하고, 본인 취향에 맞게 커스터마이징이 가능하다는 이점 때문이다. 그러나, 본인이 처음 github page를 접해본다면, 그런 기대는 잠시 접어두고 잘 정리된 예제를 따라하는 것으로 시작하기를 권장한다.
+
+### 2.1 추천 사이트
+
+**[취미로 코딩하는 개발자](https://devinlife.com/howto/)**
+
+Github 블로그 디자인과 관련해서 이것저것 알아봤는데, 개인적으로는 위의 블로그가 가장 유익했다. Github 블로그가 처음이라면 해당 블로그의 **GitHub Pages 블로그 따라하기** 과정을 따라서 진행하는 것을 권장한다.
+
+---
+
+### 2.2 Jekyll, Rubby ?
+
+구글에 "github 블로그 시작하기" 혹은 "github 페이지 만드는 법" 등을 검색해보면 github 라는 단어 이외에도 보이는 문구가 있다. 바로 `Jekyll` 또는 `Rubby`라는 단어이다. 
+
+솔직하게 말해서 필자는 `Jekyll`이나 `Rubby`에 대해 모른다. 아마도 github 블로그를 구축하는데 사용되는 소스 프로그램인 것 같은데, 대부분 관련 프로그램을 사용하는 내용이 **Mac OS** 나 **Linux** 기반의 PC를 기준으로 정리되어 있길래 따로 알아보지 않았다.
+
+위에서 언급한 추천 사이트의 튜토리얼 과정에도 `Jekyll`을 사용해서 테스트하는 항목이 있는데,  **Windows OS** 기반의 PC에서는 해당 기능을 이용하려면 별도의 방법이 필요한 것 같았다. 직접 블로그를 관리해보면서 느낀 점은 `Jekyll` 에 대해 몰라도 블로그 구축에는 문제가 없다는 것이다. 
+>앞서 언급한 **[취미로 코딩하는 개발자](https://devinlife.com/howto/)** 블로그의 튜토리얼 중에도 `bundle` 명령어를 이용해 웹페이지에 `https//127.0.0.1:4000` 주소를 입력해서 로컬 컴퓨터에 블로그 페이지를 띄우는 방법을 소개하고 있지만, 기본적으로 **Windows** 에서 **git bash**를 이용하는 경우에는 `bundle` 명령어 자체가 없다고 나온다. 그래서 필자는 해당 항목들을 스킵해가며 진행했다.
+
+---
+
+### 2.3 테마 선택하기
+
+블로그를 개설하는 가장 쉬운 방법은 **[지킬 테마 사이트](http://jekyllthemes.org/)**에서 원하는 테마를 고른 뒤, 본인의 github repository로 `Fork` 한 뒤, 해당 repository 이름을 `username.github.io`로 설정해주는 방법이다.
+
+<figure style="width: 80%">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/jekyll-theme-example.png" alt="">
+</figure>
+
+**지킬 테마 사이트**에 들어가보면 위 그림처럼 여러가지 테마가 보일텐데, 결론부터 이야기하자면 **[minimal-mistakes](https://github.com/mmistakes/minimal-mistakes)** 테마로 시작하는 것을 권장한다. 위에서 소개한 github 블로그를 비롯해 많은 사람들이 **minimal-mistakes** 테마를 사용하고 있는데, 이 점이 중요한 이유는 블로그 디자인을 수정하고 싶을 때, 어떤 부분을 어떻게 수정해야하는지에 대해 검색하기가 쉽기 때문이다.
+
+> 예를 들어, 본인이 포스팅 하고자 하는 글에 카테고리 또는 태그 항목을 추가하길 원하는데, **minimal-mistakes** 테마를 이용하는 경우는 `/pages/category-archive.md` 파일을 수정하고, `_config.yml` 파일의 `categories_archive:` 항목을 수정하는 정도로 쉽게 카테고리를 추가할 수 있지만, 이와 다른 형식의 테마를 사용하는 경우 `/pages/category-archive.md`라는 파일이 존재하지 않을 가능성이 높으며, category 를 추가하기 위해 본인이 추가하고자 하는 category 항목을 일일이 `.md` 파일로 정의해야하는 경우도 있다.
+
+아마도 github 페이지가 `Jekyll`을 기반으로 디자인이 가능하기 때문에 특정 형식에 얽매이지 않고, 다양한 방식으로 구축이 가능하기 때문이라고 생각되는데... 처음 접하는 사람 입장에서는 시작부터 어떻게 해야할 지 모르는 상황에 놓이게 된다. 
+
+따라서 개인적인 생각으로는 일단 가장 보편적인 **minimal-mistakes** 테마를 이용해서 기본 기능(**메뉴/카테고리/댓글 기능 등**) 위주로 블로그를 운영하고, 어느정도 익숙해진 뒤 본격적으로 커스터마이징 하는 것을 추천한다.
