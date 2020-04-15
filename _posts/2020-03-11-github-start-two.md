@@ -11,9 +11,9 @@ toc_sticky: true
 
 ## 3. 포스트에 이미지 추가하기
 
-```md
+```html
 <figure style="width: 75%">
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-  <figcaption>출처: https://www.e-zigurat.com/innovation-school/blog/what-do-the-next-five-years-hold-for-the-iot</figcaption>
+  <figcaption>그림 캡션</figcaption>
 </figure>
 ```
