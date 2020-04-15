@@ -9,11 +9,13 @@ toc: true
 toc_sticky: true
 ---
 
-## 3. 포스트에 이미지 추가하기
+## 3. 자주 사용하는 포스팅 기능
+
+### 3.1 이미지
 
 ```html
 <figure style="width: 75%">
-  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  "{{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}"
   <figcaption>그림 캡션</figcaption>
 </figure>
 ```
