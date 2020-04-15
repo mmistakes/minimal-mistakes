@@ -76,7 +76,7 @@ permalink: /:title/
 
 # Collections settings
 # collections_dir: documentation
-collections:
+collections:  
   documentation:
     output: true
     permalink: /documentation/:path
@@ -139,7 +139,4 @@ menu:
   # - 'Manual'
   # - 'Release'
 
-category_order:
-  - 'Feature'
-  - 'Manual'
-  - 'Release'
+category_order: Feature, Manual, Release
