@@ -33,3 +33,6 @@ toc_sticky: true
 </figure> 
 ```
 
+---
+
+### 3.2 글자색 입히기
