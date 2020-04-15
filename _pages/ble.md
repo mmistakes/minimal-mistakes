@@ -9,7 +9,7 @@ author_profile: true
 ![ble-intro]({{ '/assets/images/2020-04-12-banniere-article-ble.jpg' | relative_url }})
 {% endcapture %}
 
-<figure style="width: 700px">
+<figure style="width: 100%">
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
   <figcaption>출처: https://elainnovation.com/what-is-ble.html</figcaption>
 </figure>
