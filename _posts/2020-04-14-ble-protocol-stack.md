@@ -19,7 +19,7 @@ toc_sticky: true
 BLE 프로토콜 스택 (**BLE protocol stack, BLE stack**)은 BLE 디바이스의 구조를 보여주며, 이는 블루투스 표준 (**Bluetooth Core Specification**)에서 정의하고 있는 LE (**Low Energy**) 모드로 동작하는 디바이스가 갖춰야하는 기능들을 포함하고 있다.
 >The BLE protocol stack implements all the mandatory and optional features of LE mode compliant to Core Specification
 
-<figure style="width: 500px">
+<figure style="width: 80%">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/ble-proto-stack.png" alt="">
 </figure> 
 
@@ -34,7 +34,7 @@ BLE 스택은 크게 `Host`와 `Controller`로 구성되어 있고, 각 영역�
 
 **PHY** 에서 BLE 시스템은 2.4 GHz 주파수 영역의 일부를 40개의 구간으로 나누어 신호를 주고 받으며, 각각의 영역을 <span style="color:#DF0174"><b>채널</b></span>이라고 부른다. 각 채널은 중심 주파수를 기준으로 2 MHz 의 대역폭을 가지며, 할당된 40개의 채널 중 37-39번 채널은 advertising 채널로 사용되고, 나머지 37개의 채널은 data 채널로 사용된다 (각 채널에 대해서는 차차 알게 될 것이다).
 
-<figure style="width: 640px">
+<figure style="width: 100%">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/ble-phy-layer.png" alt="">
 </figure> 
 
@@ -46,7 +46,7 @@ BLE 스택은 크게 `Host`와 `Controller`로 구성되어 있고, 각 영역�
 
 **LL** 는 **PHY** 와 직접적으로 상호작용하는 레이어이고, 하드웨어와 소프트웨어 사이에서 동작한다. 하드웨어와 연결되어 BLE 디바이스 간의 연결을 직접적으로 관리하는 레이어로 암호화 (**encryption**), 연결 상태 및 채널 업데이트 (**connection or channer update**) 등의 역할을 수행한다.
 
-<figure style="width: 500px">
+<figure style="width: 80%">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/ble-link-layer.png" alt="">
 </figure> 
 
@@ -64,7 +64,7 @@ BLE 스택은 크게 `Host`와 `Controller`로 구성되어 있고, 각 영역�
 ![ble-link]({{ '/assets/images/ble-connection.png' | relative_url }}){: .align-center}
 {% endcapture %}
 
-<figure style="width: 100%">
+<figure style="width: 65%s">
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
   <figcaption>출처: http://dev.ti.com/tirex/content/simplelink_cc2640r2_sdk_1_40_00_45/docs/blestack/ble_user_guide/html/ble-stack-3.x/gap.html</figcaption>
 </figure>
@@ -88,7 +88,7 @@ BLE 스택은 크게 `Host`와 `Controller`로 구성되어 있고, 각 영역�
 ![ble-l2cap]({{ '/assets/images/ble-l2cap.png' | relative_url }}){: .align-center}
 {% endcapture %}
 
-<figure style="width: 580px">
+<figure style="width: 90%">
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
   <figcaption>출처: http://dev.ti.com/tirex/content/simplelink_cc26x2_sdk_1_60_00_43/docs/ble5stack/ble_user_guide/html/ble-stack-5.x/l2cap.html</figcaption>
 </figure>
@@ -122,7 +122,7 @@ Security Manager 는 자주 연결하는 디바이스 (**peer**) 사이의 보�
 ![iphone-airpod]({{ '/assets/images/iphone-airpod.jpeg' | relative_url }})
 {% endcapture %}
 
-<figure style="width: 545px">
+<figure style="width: 80%">
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
   <figcaption>출처: https://www.semiconductorstore.com/blog/2017/Bluetooth-5-versus-Bluetooth-4-2-whats-the-difference/2080</figcaption>
 </figure>

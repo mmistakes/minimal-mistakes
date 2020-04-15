@@ -18,7 +18,7 @@ toc_sticky: true
 ![iot-system]({{ '/assets/images/2020-04-12-bluetooth-standard.png' | relative_url }})
 {% endcapture %}
 
-<figure style="width: 80%">
+<figure style="width: 85%">
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
   <figcaption>출처: https://www.semiconductorstore.com/blog/2017/Bluetooth-5-versus-Bluetooth-4-2-whats-the-difference/2080</figcaption>
 </figure>
@@ -52,7 +52,7 @@ toc_sticky: true
 ![hrm]({{ '/assets/images/ble-example-hrm.png' | relative_url }})
 {% endcapture %}
 
-<figure style="width: 65%">
+<figure style="width: 75%">
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
   <figcaption>출처: https://www.raywenderlich.com/231-core-bluetooth-tutorial-for-ios-heart-rate-monitor</figcaption>
 </figure>
