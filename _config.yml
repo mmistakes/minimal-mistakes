@@ -140,7 +140,7 @@ menu:
   # - 'Manual'
   # - 'Release'
 
-category_order: 
-  - Feature
-  - Manual
-  - Release
+# category_order: 
+#   - Feature
+#   - Manual
+#   - Release
