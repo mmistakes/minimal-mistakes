@@ -4,7 +4,9 @@ permalink: /about/
 author_profile: true
 ---
 
-![sans-hall]({{ site.url }}{{ site.baseurl }}/assets/images/20200110-sans-hall.jpg)
+<figure style="width: 100%">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/20200110-sans-hall.jpg" alt="">
+</figure> 
 
 ---
 
