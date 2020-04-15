@@ -51,7 +51,7 @@ As you can see the should be some space above, below, and to the right of the im
 
 And now for a **massively large image**. It also has **no alignment**.
 
-<figure style="width: 1200px">
+<figure style="width: 100%">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/image-alignment-1200x4002.jpg" alt="">
   <figcaption>Massive image comment for your eyeballs.</figcaption>
 </figure> 
