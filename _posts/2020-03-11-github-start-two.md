@@ -14,10 +14,8 @@ toc_sticky: true
 ### 3.1 이미지
 
 ```html
-{% raw %}
 <figure style="width: 75%">
-  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  {% raw %}{{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}{% endraw %}
   <figcaption>그림 캡션</figcaption>
 </figure>
-{% endraw %}
 ```
