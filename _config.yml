@@ -41,6 +41,7 @@ gems:
   - jekyll-sitemap
   - jekyll-avatar
   - jekyll-github-metadata
+  - jekyll-include-cache
 
 exclude:
   - Gemfile
