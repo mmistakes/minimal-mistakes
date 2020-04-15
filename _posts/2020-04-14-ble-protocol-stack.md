@@ -61,12 +61,12 @@ BLE 스택은 크게 `Host`와 `Controller`로 구성되어 있고, 각 영역�
 두 개의 BLE 디바이스가 연결을 시도할 때, 각각의 디바이스는 **LL** 에서 다음의 그림과 같이 동작한다.
 
 {% capture fig_img %}
-![ble-link]({{ '/assets/images/ble-connection.png' | relative_url }}){: .align-center}
+![ble-link]({{ '/assets/images/ble-connection.png' | relative_url }})
 {% endcapture %}
 
-<figure style="width: 65%">
+<figure style="width: 70%">
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-  <figcaption>출처: http://dev.ti.com/tirex/content/simplelink_cc2640r2_sdk_1_40_00_45/docs/blestack/ble_user_guide/html/ble-stack-3.x/gap.html</figcaption>
+  <figcaption>출처: https://dev.ti.com/tirex/content/simplelink_cc2640r2_sdk_1_40_00_45/docs/blestack/ble_user_guide/html/ble-stack-3.x/gap.html</figcaption>
 </figure>
 
 먼저 BLE 연결을 시작하고자 하는 **master** 디바이스 (**오른쪽**)에서는 `Scanning` 동작을 수행한다. `Scanning` 이란, 단어 뜻 그대로 주변에 BLE 연결이 가능한 디바이스가 있는지 확인하는 과정이다. 다음으로 BLE 연결을 대기하는 **slave** 디바이스의 경우 (**왼쪽**) `Advertising` 이란 동작을 통해 해당 디바이스가 근처에 있다는 것을 주변에 알린다. 이후, **master** 디바이스에서 `Scanning` 한 디바이스 중 하나에 연결을 시도할 경우, 해당 디바이스는 **LL** 에서 연결을 준비하는 `initiating` 상태에 진입하게 되고, 무선 연결에 성공하고나면 **master**와 **slave** 디바이스는 모두 `Connected` 상태에 놓이게 된다. 
@@ -85,12 +85,12 @@ BLE 스택은 크게 `Host`와 `Controller`로 구성되어 있고, 각 영역�
 **L2CAP** 는 Logical Link Control and Adaptaion Protocol의 약자로, 상위 레이어 (**GATT/GAP**)와 하위 레이어 사이의 상호작용을 담당한다. **LL** 에서 만들어진 BLE 패킷 (**Packet**)에 실제 어플리케이션 단에서 사용되는 데이터를 포함시키거나 추출하는 역할 등을 수행한다.
 
 {% capture fig_img %}
-![ble-l2cap]({{ '/assets/images/ble-l2cap.png' | relative_url }}){: .align-center}
+![ble-l2cap]({{ '/assets/images/ble-l2cap.png' | relative_url }})
 {% endcapture %}
 
-<figure style="width: 90%">
+<figure style="width: 80%">
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-  <figcaption>출처: http://dev.ti.com/tirex/content/simplelink_cc26x2_sdk_1_60_00_43/docs/ble5stack/ble_user_guide/html/ble-stack-5.x/l2cap.html</figcaption>
+  <figcaption>출처: https://dev.ti.com/tirex/content/simplelink_cc26x2_sdk_1_60_00_43/docs/ble5stack/ble_user_guide/html/ble-stack-5.x/l2cap.html</figcaption>
 </figure>
 
 #### 2.3.3 SM
