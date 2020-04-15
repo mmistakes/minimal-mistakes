@@ -139,7 +139,7 @@ menu:
   # - 'Manual'
   # - 'Release'
 
-category_order: 
+category_order:
   - 'Feature'
-  - 'Manual' 
+  - 'Manual'
   - 'Release'
