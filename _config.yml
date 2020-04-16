@@ -50,9 +50,9 @@ comments:
 reCaptcha:
   siteKey                : "6LfPIuoUAAAAACL2n6Qierwa4lJOoTp9xOyjYYux"
   secret                 : "yj8m27EdUJ/JoI6GlbA7ApJrKBil/fAWu3HdrD4yuXdqYORyOp2qY/TVcnn1Kro8Ze2YLN3YQgQZBbUR2mDMKsELfWQ91QFmtFVOrfLCUZMDzF0h1OL7ota8AH6kVi/eJ9H+d2fPk07XoifEDIwNFSH0DhmgOZmxPEMIwEz63wD6kqkVZ0yb2cf8chNaN/w2fEkkmKPjyVp+At8fXd6UGilllyMVxBR1LFsMiAKjSZGBzABCrbnbdiiFaSX7NmIj+fzAo1NVMJder7WnUF1AJ4RnsC4Z/7BKdEPxA0AUN3hIoioSJ2dZQgcPH77knvdwYABjGZYbL/Tf5EfLyXP8bAN2+s4HSIPzjBMiY/jCeHJ9AtQhRkhGSOBWog+JZC8MU4bb6jDVfShVbBWSjonQ2FQCduPjTXvcj/YUIQAW0UOYjmXVm4kEbeGOyge1LZ4M0y3kbmg/m7eyEuj30aV8xigcmk5FZkV3bedlf7+4gVMKBnxRTZjBQ1DBhfhW1AbJt24SSirfK+rBstzYzxeanMcbOwq8ow0d1v6fpeeUVTXVURPt9qOLp+NYtjeROzfz1POvkUM5eD0NzHX+MRbGA5kZ1gsJ1JALtZpSg3YCd6AItzJgSJF64iLRDb9IwdDaNtFSZx7DR8VK4/s3oja8kYisCSu+reiyZgjBpODjUpU="
-atom_feed:
-  path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
+atom_feed: 
+  path                   : # blank (default) uses feed.xml  "http://feeds.feedburner.com/DavidSisourath"
+search                   : true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
@@ -71,7 +71,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "DSisourath"
 facebook:
   username               :
   app_id                 :
@@ -86,18 +86,18 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "UA-163467549-1"
     anonymize_ip         : # true, false (default)
 
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : #"David Sisourath"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : #""
+  location         : #""
   email            :
   links:
     - label: "Email"
@@ -124,7 +124,7 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
+       url: "https://twitter.com/DSisourath"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
@@ -210,7 +210,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: " 	Australia/Melbourne" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
