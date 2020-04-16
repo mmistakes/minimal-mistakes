@@ -8,16 +8,16 @@ toc: true
 toc_sticky: true
 ---
 
-<figure style="width: 100%">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/2020-01-09-las-vagas.png" alt="">
-</figure> 
-
 ## 1. 시작하기 전에
 
 필자는 웹페이지 개발을 하지 않을 뿐더러 `git` 을 사용하지도 않았던 터라, 처음 github page 구축까지 일주일이 넘게 걸렸다. 이미 github page를 이용해 블로그를 운영하는 방법에 대해 정리한 사이트는 많이 있지만, 대부분 `Jekyll` 이나 `git` 에 익숙하다는 전제하에 설명하는 경우가 많았고, 각자의 개발 환경을 위주로 설명하고 있는 경우가 많아서 그대로 따라하기에도 어려웠던 기억이 있다.
 
 **Warning:** 본인은 이 분야의 전문가가 아니므로 잘못 기재된 내용이 있을 수 있습니다.
 {: .notice--warning}
+
+<figure style="width: 100%">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/2020-01-09-las-vagas.png" alt="">
+</figure> 
 
 ### 1.1 github page는 어떻게 관리되는가?
 
