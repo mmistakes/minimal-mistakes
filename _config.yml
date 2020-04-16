@@ -124,7 +124,7 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-       url: "https://twitter.com/DSisourath"
+      url: "https://twitter.com/DSisourath"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
