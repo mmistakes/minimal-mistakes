@@ -44,12 +44,15 @@ comments:
     date:
       type: "date"
       options:
-        format: "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+        format: "timestanp-seconds" #"iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 
   # Whether entries need to be approved before they are published to the main
   # branch. If set to `true`, a pull request will be created for your approval.
   # Otherwise, entries will be published to the main branch automatically.
   moderation: true
+  
+  # Name of the site. Used in notification emails.
+  name: "David Sisourath's Blog"
 
   # Akismet spam detection.
   # akismet:
@@ -97,8 +100,8 @@ comments:
   # reCaptcha
   # Register your domain at https://www.google.com/recaptcha/ and choose reCAPTCHA V2
   reCaptcha:
-    enabled: true
-    siteKey: "6LdRBykTAAAAAFB46MnIu6ixuxwu9W1ihFF8G60Q"
+    enabled: false
+    #siteKey: ""
     # Encrypt reCaptcha secret key using Staticman /encrypt endpoint
     # For more information, https://staticman.net/docs/encryption
-    secret: "PznnZGu3P6eTHRPLORniSq+J61YEf+A9zmColXDM5icqF49gbunH51B8+h+i2IvewpuxtA9TFoK68TuhUp/X3YKmmqhXasegHYabY50fqF9nJh9npWNhvITdkQHeaOqnFXUIwxfiEeUt49Yoa2waRR7a5LdRAP3SVM8hz0KIBT4="
+    #secret: ""
