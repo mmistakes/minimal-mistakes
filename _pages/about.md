@@ -10,7 +10,7 @@ author_profile: true
 
 ---
 
-# 학력
+## 학력
 
 ### 한동대학교 대학원 석사과정 정보통신공학 전공
 <span style="color:#0582a8"><b>2017.03 ~ 2019.08</b></span>
@@ -20,7 +20,7 @@ author_profile: true
 
 ---
 
-# 산학 프로젝트 이력
+## 산학 프로젝트 이력
 
 ##### UWB 레이더 센서를 이용한 무호흡 감지 알고리즘 개발
 <span style="color:#0582a8"><b>2019.01 ~ 2019.03</b></span>
@@ -43,7 +43,7 @@ author_profile: true
 
 ---
 
-# 기타 사항
+## 기타 사항
 
 ##### 프로그래밍 스킬
 * `MATLAB`
