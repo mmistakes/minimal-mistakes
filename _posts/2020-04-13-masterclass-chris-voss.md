@@ -98,3 +98,73 @@ they can also be things that someone enjoys.
 thing about you.
 - __Not a single question was asked__, mirroring and labeling allow the
 other person to keep talking without constantly asking them questions.
+
+# Mastering Delivery
+- Your inner voice betrays your outer voice
+- Your tone gives away a lot, your voice, your delivery, speaks
+volumes
+  -   It conveys Deference (humble submission and respect.)
+  - It can convey genuineness.
+- Some hostage negotiators might not say the right thing, but they say it in the right voice. Which is better than someone saying
+the right things in the wrong voice.
+## Manipulate Mirror Neurons
+- If you can see someone and speak to them, you are in a position to
+hit their mirror neurons.
+- If I am angry you'll get angry too.
+  - Involuntary response
+- Use the Late-night FM DJ voice (nice slow calm voice).
+This can help slow down the other person's train of thought.
+  - Calms people down.
+  - Can't tell people to calm down, that's an order and people hate that.
+  - Instead hit them with that calm voice and add a smile.
+- Smile when you talk to people, positively hit their mirror neurons.
+  - Don't be held hostage by whether they like you.
+  - Calm them down, hit their mirror neurons with a smile.
+  - Give them a reason to like you and see that collaborating with
+you is worth their time.
+
+## Tones of Voice
+### Ditch the "Assertive" Voice
+- The fight type, assertive, blunt.
+- Direct and Honest
+- It makes people feel like they're being punched in the nose.
+- Anger always leaves a negative residue and is bad for
+long-term relationships.
+- Counterproductive
+
+### Use the "Playful" Voice
+- The accommodator's voice, the playful voice.
+- Say it in a way that keeps the relationship, but
+presents it in an honest way
+- Make people feel like they're not backed into a corner.
+- Letting people know that you have to tell the truth, but making sure it lands softly.
+- The "straight shooter", everyone loves somebody who will tell the truth, as long as they are worried about how it lands.
+- Use this voice about 80%, keep people in a positive state of mind,
+keeps them working with you.
+
+### Use the "Analyst" Voice
+- Downward, slow, soothing tone which is declarative.
+- Use this when you have to throw something out with is immovable.
+- Make sure to be slow, and whatever your saying better be immovable.
+- Use this voice rarely, the other side will feel code.
+The other side will not like this voice.
+
+### Use the "Late-Night FM DJ" Voice
+- the difference between this and the Analyst is that the Analyst
+voice lacks warmth.
+- Use this voice no more than 10-15% of the time.
+- Situation, when the other side is upset, it is a quick way to calm them down.
+- If the other side is anxious all the time, this voice will calm
+them down quickly
+
+### Inflections
+- This is where you start adding the mastery, facts.
+- Use an inquisitive tone of voice, which is genuine and curious
+at the end
+
+## Digital Communication
+- Don't over-rely on any one form of Communication.
+- Don't make them too long, always end positively.
+- Would you play Cheese in an email?
+  - Use different forms of Communications for each move.
+  - Emails naturally sound negative so try to soften them.
