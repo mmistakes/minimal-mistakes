@@ -38,3 +38,12 @@ Please go through the following checklist and update anything which might have b
 - [ ] Place your post within the corresponding directory and category
 - [ ] Images can be added under `assets/images` and split further into other directories if desired
 - [ ] For information regarding embedding media in your posts, see [here](https://mmistakes.github.io/minimal-mistakes/docs/helpers/) for extra information.
+
+## Migration Todo
+
+- [x] Migrate previous posts over
+- [ ] Assign author to each post
+- [ ] Add in LaTeX support
+- [ ] Add brief `How to` for writing new posts in minimal mistakes
+- [ ] Figure out how splash screen and categories work
+- [ ] Ask for feedback from supervisors
