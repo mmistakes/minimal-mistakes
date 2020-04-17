@@ -1,0 +1,35 @@
+# /_data/authors.yml
+
+# see more information regarding multiple authors from
+# https://mmistakes.github.io/minimal-mistakes/docs/authors/
+# Example: To assign Billy Rick as an author for a 
+# post the following YAML Front Matter would be applied:
+# 
+# author: Billy Rick
+
+Steven Lee:
+  name        : "Steven Lee"
+  bio         : "Working on perception subsystem, point cloud processing and computer vision."
+  avatar      : # "/assets/images/bio-photo-2.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "chijenl@student.unimelb.edu.au"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://stevenlee090.github.io/"
+
+Andrew Huang:
+  name        : "Cornelius Fiddlebone"
+  bio         : "Working on perception subsystem."
+  avatar      : # "/assets/images/bio-photo.jpg"
+
+Jack McRobbie:
+  name        : "Jack McRobbie"
+  bio         : "Mapping..."
+  avatar      : # "/assets/images/bio-photo.jpg
+
+Michelle Keane:
+  name        : "Michelle Keane"
+  bio         : "Localisation and vehicle odometry"
+  avatar      : # "/assets/images/bio-photo.jpg
