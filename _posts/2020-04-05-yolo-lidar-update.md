@@ -5,6 +5,9 @@ categories: perception
 tags: [documentation, lidar, object detection]
 image: lidar/rviz-os1.gif
 published: true
+toc: true
+toc_label: "My Table of Contents"
+toc_icon: "cog"
 ---
 
 

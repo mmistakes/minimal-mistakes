@@ -1,10 +1,11 @@
 ---
-title: "Getting started with stereo vision"
+title: "Getting Started with Stereo Vision"
 author: "Andrew Huang"
 categories: perception
 tags: [progress update]
 image: stereo-intro/gopro_stereo.jpg
 published: true
+mathjax: true
 ---
 
 With our current resources, we have started with using a pair of GoPro Hero 5 sessions for our bench testing needs. By using them to capture still images of calibration targets.

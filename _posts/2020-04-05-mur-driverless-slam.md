@@ -5,6 +5,7 @@ categories: mapping
 tags: [documentation,slam]
 image: mur19e.jpg
 published: true
+mathjax: true
 ---
 # Slam
 The purpose of slam is to simulateneously generate the map of cones and localise the car within that track. The control team will take as an input to race along the track. 

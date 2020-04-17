@@ -42,8 +42,8 @@ Please go through the following checklist and update anything which might have b
 ## Migration Todo
 
 - [x] Migrate previous posts over
-- [ ] Assign author to each post
-- [ ] Add in LaTeX support
+- [x] Assign author to each post
+- [x] Add in LaTeX support (User is required to add `mathjax: true` if math rendering is required)
 - [ ] Add brief `How to` for writing new posts in minimal mistakes
 - [ ] Figure out how splash screen and categories work
 - [ ] Ask for feedback from supervisors
