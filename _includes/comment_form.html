@@ -1,0 +1,72 @@
+<form class="js-form form" method="post" action="{{ site.staticmanUrl }}" autocomplete="off">
+  <input type="hidden" name="options[origin]" value="{{ page.url | absolute_url }}">
+  <input type="hidden" name="options[parent]" value="{{ page.url | absolute_url }}">
+  <input type="hidden" id="comment-replying-to" name="fields[replying_to]" value="">
+  <input type="hidden" name="options[slug]" value="{{ post_slug }}">
+  <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.reCaptcha.siteKey }}">
+  <input type="hidden" name="options[reCaptcha][secret]"  value="{{ site.reCaptcha.secret }}">
+
+  <fieldset>
+  <div class="textfield">
+    <label for="comment-form-message"><h2>Comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="{{ page.url | absolute_url }}#respond" style="display:none;">(cancel reply)</a></small></h2>
+      <textarea class="textfield__input" name="fields[message]" type="text" id="comment-form-message"></textarea>
+    </label>
+  </div>
+  </fieldset>
+
+  <fieldset>
+    <div class="textfield">
+      <label for="comment-form-name">Name
+        <input class="textfield__input" name="fields[name]" type="text" id="comment-form-name" placeholder="Your name"/>
+      </label>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <div class="textfield">
+      <label for="comment-form-email">E-mail
+        <input class="textfield__input" name="fields[email]" type="email" id="comment-form-email" placeholder="Your email (optional, used only to send comments.)"/>
+      </label>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <div class="notify-me">
+      <label for="comment-form-reply">
+        <input type="checkbox" id="comment-form-reply" name="options[subscribe]" value="email">
+      </label>
+      Send me an email when someone comments.
+    </div>
+  </fieldset>
+
+    <fieldset>
+    <div class="textfield">
+      <label for="hp">
+        <input class="textfield__input" name="fields[hp]" id="hp" type="text" placeholder="Leave blank">
+      </label>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <!--div class="g-recaptcha" data-sitekey="{{ site.reCaptcha.siteKey }}" data-theme="dark"></div-->
+    <div id="reCaptcha"></div>
+  </fieldset>
+
+  <fieldset>
+    <button class="button">
+      Submit
+    </button>
+  </fieldset>
+
+</form>
+
+<script>
+function showReCaptcha() {
+  var node = document.createElement("div");
+  node.setAttribute('class', 'g-recaptcha');
+  node.setAttribute('data-sitekey', '{{ site.reCaptcha.siteKey }}');
+  node.setAttribute('data-theme', localStorage.theme);
+  document.getElementById("reCaptcha").appendChild(node);
+}
+showReCaptcha();
+</script>
