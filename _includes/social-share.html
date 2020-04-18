@@ -3,9 +3,81 @@
     <h4 class="page__share-title">{{ site.data.ui-text[site.locale].share_on_label | default: "Share on" }}</h4>
   {% endif %}
 
+  {% if site.share_buttons.twitter == nil or site.share_buttons.twitter %}
+
   <a href="https://twitter.com/intent/tweet?{% if site.twitter.username %}via={{ site.twitter.username | url_encode }}&{% endif %}text={{ page.title | url_encode }}%20{{ page.url | absolute_url | url_encode }}" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  {% endif %}
+
+  {% if site.share_buttons.facebook == nil or site.share_buttons.facebook %}
 
   <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
+  {% endif %}
+
+  {% if site.share_buttons.linkedin == nil or site.share_buttons.linkedin %}
+
   <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url | url_encode }}" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+
+  {% endif %}
+
+  {% if site.share_buttons.reddit %}
+
+ <a href="https://www.reddit.com/submit?url={{ page.url | absolute_url | url_encode }}&title={{ page.title }}" class="btn btn--reddit" title="{{ site.data.ui-text[site.locale].share_on_label }} Reddit"><i class="fab fa-fw fa-reddit" aria-hidden="true"></i><span> Reddit</span></a>
+
+  {% endif %}
+
+  {% if site.share_buttons.mastodon %}
+
+ <a href="" class="btn btn--mastodon" onclick="shareMastodon();" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Mastodon"><i class="fab fa-fw fa-mastodon" aria-hidden="true"></i><span> Mastodon</a>
+
+  {% endif %}
+
+<script>
+// https://www.256kilobytes.com/content/show/4812/how-to-make-a-share-on-mastodon-button-in-pure-vanilla-javascript
+function shareMastodon() {
+       	// Prefill the form with the user's previously-specified Mastodon instance, if applicable
+       	var default_url = localStorage['mastodon_instance'];
+
+       	// If there is no cached instance/domain, then insert a "https://" with no domain at the start of the prompt.
+       	if (!default_url)
+               default_url = "https://";
+
+       	var instance = prompt("Enter your instance's address: (ex: https://mastodon.social )", default_url);
+       	if (instance) {
+               	// Handle URL formats
+               	if ( !instance.startsWith("https://") && !instance.startsWith("http://") )
+                       	instance = "https://" + instance;
+
+               	// Get the current page's URL
+               	var url   = window.location.href;
+
+               	// Get the page title from the og:title meta tag, if it exists.
+               	var title = document.querySelectorAll('meta[property="og:title"]')[0].getAttribute("content");
+
+               	// Otherwise, use the <title> tag as the title
+               	if (!title)    var title = document.getElementsByTagName("title")[0].innerHTML;
+
+               	// Handle slash
+               	if ( !instance.endsWith("/") )
+                       	instance = instance + "/";
+
+               	// Cache the instance/domain for future requests
+               	localStorage['mastodon_instance'] = instance;
+
+               	// Hashtags
+                hashtags     =  "{{ site.mastodon.hashtags }} ";
+
+               	// Tagging users, such as offical accounts or the author of the post
+                var author   = "{{ site.mastodon.username }}";
+
+               	// Create the Share URL
+               	// https://someinstance.tld/share?text=URL%20encoded%20text
+               	mastodon_url = instance + "share?text=" + encodeURIComponent(title + "\n\n" + url + "\n\n" + hashtags + " " + author);
+
+               	// Open a new window at the share location
+               	window.open(mastodon_url, '_blank');
+	}
+}
+</script>
 </section>

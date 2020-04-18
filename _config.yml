@@ -71,6 +71,12 @@ yandex_site_verification :
 naver_site_verification  :
 
 # Social Sharing
+share_buttons:
+   twitter               : # true (default), false
+   facebook              : # true (default), false
+   linkedin              : # true (default), false
+   reddit                : # true, false (default)
+   mastodon              : # true, false (default)
 twitter:
   username               : "Dsisourath"
 facebook:
