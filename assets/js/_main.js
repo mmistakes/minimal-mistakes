@@ -154,7 +154,7 @@ $(document).ready(function() {
       data: $(this).serialize(),
       contentType: 'application/x-www-form-urlencoded',
       success: function (data) {
-        showModal('Comment submitted', 'Thanks! Your comment is <a href="https://github.com/travisdowns/travisdowns.github.io/pulls">pending</a>. It will appear when approved.');
+        showModal('Comment submitted', 'Thanks! Your comment is <a href="https://github.com/htaruosis/htaruosis.github.io/pulls">pending</a>. It will appear when approved.');
 
         $("#comment-form-submit")
           .html("Submit");
