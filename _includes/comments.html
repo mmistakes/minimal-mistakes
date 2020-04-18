@@ -1,30 +1,36 @@
 <div class="comments">
-{% if site.enableComments %}
-  {% if site.data.comments[post_slug] %}
-    <!-- Existing comments -->
-    <hr>
-    <div class="comments__existing">
-    <h2>Questions</h2>
-    {% assign comments = site.data.comments[post_slug] | where_exp: "item", "item.replying_to == ''" %}
+  <!--<p> Page slug is: {{ page.slug }} </p>
+  {{ site.data.comments | inspect }} -->
+
+  {% if site.data.comments[page.slug] %}
+  <!-- Existing comments -->
+  <hr>
+  <div class="comments__existing">
+    <h2>Comments</h2>
+    {% assign comments = site.data.comments[page.slug] | where_exp: "item", "item.replying_to == ''" %}
     {% assign comments_by_date = comments | sort: 'date' | reverse %}
     <!-- List main comments in reverse date order, newest first. List replies in date order, oldest first. -->
     {% for comment in comments_by_date %}
-      {% assign index       = forloop.length | plus: 1 | minus: forloop.index %}
-      {% assign r           = comment.replying_to %}
-      {% assign replying_to = r | to_integer %}
-      {% assign email       = comment.email %}
-      {% assign name        = comment.name %}
-      {% assign url         = comment.url %}
-      {% assign date        = comment.date %}
-      {% assign message     = comment.message %}
-      {% include comment.html index=index replying_to=replying_to email=email name=name url=url date=date message=message %}
+    {% assign index       = forloop.length | plus: 1 | minus: forloop.index %}
+    {% assign r           = comment.replying_to %}
+    {% assign replying_to = r | to_integer %}
+    {% assign email       = comment.email %}
+    {% assign name        = comment.name %}
+    {% assign url         = comment.url %}
+    {% assign date        = comment.date %}
+    {% assign message     = comment.message %}
+    {% assign uid         = comment._id %}
+    {% include comment.html index=index replying_to=replying_to email=email name=name url=url date=date message=message uid=uid %}
     {% endfor %}
-    </div>    
+  </div>
   {% endif %}
 
   <!-- New comment form -->
   <div id="respond" class="comment__new">
     {% include comment_form.html %}
   </div>
-{% endif %}
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="{{ '/assets/js/_main.js' | relative_url }}"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>

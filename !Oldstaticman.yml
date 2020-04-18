@@ -44,12 +44,15 @@ comments:
     date:
       type: "date"
       options:
-        format: "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+        format: "timestanp-seconds" #"iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 
   # Whether entries need to be approved before they are published to the main
   # branch. If set to `true`, a pull request will be created for your approval.
   # Otherwise, entries will be published to the main branch automatically.
   moderation: true
+  
+  # Name of the site. Used in notification emails.
+  name: "David Sisourath's Blog"
 
   # Akismet spam detection.
   # akismet:
@@ -83,7 +86,7 @@ comments:
   # (*) REQUIRED
   #
   # Destination path (directory) for the data files. Accepts placeholders.
-  path: "docs/_data/comments/{options.slug}" # "_data/comments/{options.slug}" (default)
+  path: "_data/comments/{options.slug}" # "_data/comments/{options.slug}" (default)
 
   # Names of required files. If any of these isn't in the request or is empty,
   # an error will be thrown.
@@ -98,7 +101,8 @@ comments:
   # Register your domain at https://www.google.com/recaptcha/ and choose reCAPTCHA V2
   reCaptcha:
     enabled: true
-    siteKey: 6LfPIuoUAAAAACL2n6Qierwa4lJOoTp9xOyjYYux
+    siteKey: "6LfPIuoUAAAAACL2n6Qierwa4lJOoTp9xOyjYYux"
     # Encrypt reCaptcha secret key using Staticman /encrypt endpoint
     # For more information, https://staticman.net/docs/encryption
-    secret: CVNFtH89v9PHpfKQ1tSZGrP2S9GmL7huwQuUDxnRCp0jeaqaDZJdwsHM17fAeeowUdt9uaqKOF5bZmsS1NqcNs1bFz2m6MZMsub+jAnoO66dFzNZzj4kdNaeL4HrZLwBrE0sQ5X0ZhZx/ei/OJJAzUOJppijsLid24V1Fk8T/h+oBxNrL4RB8uDUR1STk6f0cBxGQxvEX9LcSLo0F6qdJpJgMdQsWUItkyf6k5xW9xh3MAege5QT72vKC6S6+gQEAEvS7400k2zhH8H17chJqurAZG4enEv1EfFEOWJaHk8ri6+g49ADaJRRvEvyBwfJXVix40e2sEGIvOv6j23UwqBSKquHZNS0xShosrw6p0ArmFUD6X/nF5H26qtZmgfdeiCMJbesFiuZ2ePCFf0PQ4EZNO8lXO+GMWpwg0Xj/+HDSk7qZWNwhQvWbT9fMToeEb7voU5rr8n3YFWS+Ob9Vb3DkREA5lAxP+JZ7RZFdIe9ttYkiak9QW25SyDyWDcKZukbrN4GcNj/zI68hLOC5IY/y6gpnNV1i2e6BrrQFrG+DHW10WTHHmnVJ+1mM/JI1OG2lWMJGLLtv1lWIi4XzqrHjDNJ/v5HAPslk1EAYFEA1rrMRqzTeQpdtM01u1NGJhJemzC71GnsAlqwgq24INH1r5LzgupY7zHgIOwXY0s=
+    secret: "2UvEjJURRJN6AMpDYyoDt0kjoQ3wMs24auJ9U00G5MolvkuDZZhwqMJFqe1lessn4Ys6D6RdTgR1fYLam+Z4S1O2iVcCu0F901px9weVYbEzc8aXlhuh3KbkBT+Bu23FOeXsU1r4LiBSRCKVyScK/VHeIX2mHyy7kMSsagG1xSLEhiAzYldIKXVsTyWyheAflYhNyc4hfeLNcjbG/6nq7gREd8PFzBMIiRPkz6/0KIdhWLKxybF7OMfWvw4ZOGE2useUljLq+YwjTH7fkKhLbhrt3SUoiwxz/5c3RoTx1NhNRY04jQ9p+SghhJkOFCq2smFIRBBrVW5floAaH3soDR9HQmUGyGMeorj337rOtdt/kx6nAjV3/k/edJHLCqhzoJmM1iBLgl5mRf5Vxfcw1i4YnnQtGRI1AYL5NkLC19uBmJnFgzIv+Y/i1iqO3F9jJUEUzTELD5hk48eX3sK99klrawEeoUa6X0N3HyLpGiuoYDYAfziZ20DpKJoL2NnFMqjyG5NQqt8ZE3ikHbTzoerICvChWlg7YSeQTDfQ9syneqXzAAFHUwWw+1MzMM9NgA39Z1qtgqiKdO52h0U0UIoZYshGKifvQx7jLFLs9s1z2U4eURV1GBA5kbxGpd0ARcuqu+/pmD5oW/qeNGSxgAF++J0Gsx7/bp/bBMVQhu4="
+    #secret: "yj8m27EdUJ/JoI6GlbA7ApJrKBil/fAWu3HdrD4yuXdqYORyOp2qY/TVcnn1Kro8Ze2YLN3YQgQZBbUR2mDMKsELfWQ91QFmtFVOrfLCUZMDzF0h1OL7ota8AH6kVi/eJ9H+d2fPk07XoifEDIwNFSH0DhmgOZmxPEMIwEz63wD6kqkVZ0yb2cf8chNaN/w2fEkkmKPjyVp+At8fXd6UGilllyMVxBR1LFsMiAKjSZGBzABCrbnbdiiFaSX7NmIj+fzAo1NVMJder7WnUF1AJ4RnsC4Z/7BKdEPxA0AUN3hIoioSJ2dZQgcPH77knvdwYABjGZYbL/Tf5EfLyXP8bAN2+s4HSIPzjBMiY/jCeHJ9AtQhRkhGSOBWog+JZC8MU4bb6jDVfShVbBWSjonQ2FQCduPjTXvcj/YUIQAW0UOYjmXVm4kEbeGOyge1LZ4M0y3kbmg/m7eyEuj30aV8xigcmk5FZkV3bedlf7+4gVMKBnxRTZjBQ1DBhfhW1AbJt24SSirfK+rBstzYzxeanMcbOwq8ow0d1v6fpeeUVTXVURPt9qOLp+NYtjeROzfz1POvkUM5eD0NzHX+MRbGA5kZ1gsJ1JALtZpSg3YCd6AItzJgSJF64iLRDb9IwdDaNtFSZx7DR8VK4/s3oja8kYisCSu+reiyZgjBpODjUpU="
