@@ -12,7 +12,7 @@ toc_sticky: true
 
 ## 3. ATT/GATT
 
-BLE 프로토콜 스택에서 Attribute protocol (**ATT**)은 서버 (**server**)와 클라이언트 (**client**) 사이의 <span style="color:#0FAFAF"><b>데이터 교환에 대한 규칙</b></span>을 정의한다. 다음 그림에 묘사된 것 같이, 어플리케이션 단에서의 데이터 교환은 **ATT** 를 기반으로 이뤄지며 각각의 데이터는 구조는 Generic Attribute Profile (**GATT**)에 의해 정의되는 <span style="color:#0FAFAF"><b>데이터 구조</b></span>를 따른다.
+BLE 프로토콜 스택에서 Attribute protocol (**ATT**)은 서버 (**server**)와 클라이언트 (**client**) 사이의 <span style="color:#0F5F5F"><b>데이터 교환에 대한 규칙</b></span>을 정의한다. 다음 그림에 묘사된 것 같이, 어플리케이션 단에서의 데이터 교환은 **ATT** 를 기반으로 이뤄지며 각각의 데이터는 구조는 Generic Attribute Profile (**GATT**)에 의해 정의되는 <span style="color:#0F5F5F"><b>데이터 구조</b></span>를 따른다.
 
 <figure style="width: 90%">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/ble-att-gatt.png" alt="">
