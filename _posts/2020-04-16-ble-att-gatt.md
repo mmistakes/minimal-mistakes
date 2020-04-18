@@ -18,7 +18,7 @@ BLE 프로토콜 스택에서 Attribute protocol (**ATT**)은 서버 (**server**
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/ble-att-gatt.png" alt="">
 </figure>
 
-대부분의 BLE 칩 제작사 **(e.g. Nordic Semiconductor, Texas Instruments, .etc**)는 BLE 칩에서 사용 가능한 프로토콜 스택 소스를 제공하기 때문에, 펌웨어 개발자가 직접 스택을 프로그래밍하거나 수정하는 경우는 드물다. 다만, BLE 디바이스의 데이터 구조가 어떤 식으로 생성되고, 어떤 정보를 기반으로 데이터를 주고 받는지 알아두는 것은 BLE 시스템을 이해하는데 큰 도움이 될 것이다.
+>대부분의 BLE 칩 제작사 **(e.g. Nordic Semiconductor, Texas Instruments, .etc**)는 프로토콜 스택 소스를 제공하기 때문에, 펌웨어 개발자가 직접 BLE 스택을 프로그래밍하거나 수정하는 경우는 드물다. 다만, BLE 디바이스의 데이터가 어떤 식으로 생성되고, 어떤 정보를 기반으로 데이터를 교환하는지 알아두는 것은 전반적으로 BLE 프로토콜을 이해하는데 큰 도움이 될 것이다.
 
 ### 3.1 GATT
 
