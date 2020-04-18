@@ -50,7 +50,7 @@ comments:
 staticman_url             : "https://htaruosis-staticman.herokuapp.com/v2/entry/htaruosis/htaruosis.github.io"
 reCaptcha:
   siteKey                : "6LfPIuoUAAAAACL2n6Qierwa4lJOoTp9xOyjYYux"
-  secret                 : "RIBrRgpexjEjOPlOv7ic/0YnJWy9QHAFtG4Smfm4Ewh5ELyOwQu1jTP5zUU7kMwv4BKx/V+iitn2NpLLPe5CO8n/qvco+Lj7tg1vLwZMQx4BFHNMHCfeei9Fm1NPrbq0BUFsSb6QAIAdrOAu9/CyaqhZ0gn8sVSHGgeEJjBtwXHDR+/har/wp9XUFeXag5y+7Nz/LB1caczXM8bEiEQ5lAiNcUokxwJwRPvgFXadpumvkcbc8dHWPsCj1TxSMErH1wLO8TFBkIhL3weQPnCnOu5kIVUcngK1fSw6kYoKBAs/AMZ+XIEp9HrobiRqJwTgbOvWEAJV6H7zaI2npWeIxtrpeZl4ps3ntW1aclAWh5h6a9VD+EHULrjTHEGzoscxlYcJFAWA9vBQjMSGjSlIR38uDRTR7WvHCTxi1krmQIYPWAr460gEvuzqwc8lD4dB3nr59t62QHnjkDEV+rBFtFxj215eZhqz0FMMFndMtuHJ/hqoQ9HijqD/NsNGrLW1E5a4/o3Vl0KQaBk1qv6R8HDb0TfikBHxFOeeNWOBKQfY6Y1wSodUX7K9Sc8LPVaQ9yFGb6Rusk1DRznv5+zayN2Np0zT6pbOcky9iGVz/V4UGuvQ3G384fbypu5kjpOuOQnPZYFx0/jrxDG+HcYX0RQggWqrzfoYxU7WShOEEvg="
+  secret                 : "j91OPz/2CG9rUlTP6NIfNp6NLQAfR6e576TdE81yE/CwBFiH/lnj9/NEDaFWt6BF2lhVDDxS8Ko+mlwPYw19Y6xcxADfpafy+DOFm3ZGUtVAV323Q2wEtz5VakVcJyVRoDg08UZUTH/YPjq4PRUQkfbzPY4+ISsbHXtdidhf0UqLACT0je66PJpp8ZrpPV7TCqBcfFJ01L9mr4szxplfuBn9qY9IQ4wCwulnRqrTPjxC6jsIWJ70Fq1Yc6JwNPAhV4NfOhxhYFmI9wrZAlWZ5Epw/SWUmkQ9a3MiTCVe5dW43RaERz1Y+PK8VRcISZU5AOpXhMA3QE0XOfSsHCWKz0eXi0FqvysK5LVw+sEsChIP48T/ZH2BjyeaG9IRr6DGWQg0Lx7ipQ8OwECy/tBhnJKaBlqlnDUCfAob+G38fN8NVrdqX3iaJ5nHMhJR4ptPHEQkUoMC7dF77OQkExXFVXepms1A6ElEtLNW8lEUxQpYd4bh5t0ZbqRHge4rmSCNCgEaqgZbB8Mkcg0Tw4BBqLqvu3PwTGcNFeWvQqzfaa8Hszk2FWnROPwJbyKzoc2tGRKt9gmiSvNo6JcfvI+WcwFaTgUtsFEVzV8lSL4bg62td6729HXWXGsGIMWyjStrJ9vVcQpoe+1HgZ5eLGt1Oej5FAL+c0JcX+PbWlnANoI="
 atom_feed:
   path                   : # blank (default) uses feed.xml
 search                   : true #, false (default)
