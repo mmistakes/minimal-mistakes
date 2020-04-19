@@ -25,8 +25,13 @@ author_profile: true
 
 * [BLE (1) - 저전력 블루투스 (BLE) 란?](https://enidanny.github.io/ble/what-is-the-ble/)
 * [BLE (2) - BLE 프로토콜 스택](https://enidanny.github.io/ble/ble-protocol-stack/)
+* [BLE (3) - ATT/GATT 이해하기](https://enidanny.github.io/ble/ble-att-gatt/)
 
 ## 포스팅 예정 항목
-
-* BLE (3) - ATT/GATT
-* Effective Throughput
+* BLE (4) - BLE 디바이스는 어떻게 연결될까?
+* BLE (?) - BLE 통신 속도는 실제로 1 Mbps 일까?
+* BLE (?) - BLE 5.0
+* BLE (?) - Mesh
+* Serial 통신 (1) - UART
+* Serial 통신 (2) - I2C
+* Serial 통신 (3) - SPI

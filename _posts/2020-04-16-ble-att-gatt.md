@@ -1,5 +1,5 @@
 ---
-title: "BLE (3) - ATT/GATT"
+title: "BLE (3) - ATT/GATT 이해하기"
 categories:
   - BLE
 tags:
