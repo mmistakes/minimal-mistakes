@@ -13,7 +13,7 @@ tags:
   - DIY
 ---
 
-Introd
+Intro
 
 Components
 
@@ -50,6 +50,5 @@ Components
 | Adapter DT Swiss Center Lock                                         	| [www.alltricks.fr](www.alltricks.fr)                       	| 11,99€        	| 2   	| 23.98€        	|
 | Frame protection kit                                                 	| [www.bicistickers.com](www.bicistickers.com)               	| 9,95€         	| 1   	| 9,95€         	|
 | Bike stickers                                                        	| [www.bicistickers.com](www.bicistickers.com)               	| 16,95€        	| 1   	| 16,95€        	|
-| Total                                                                	|                                                            	|               	|     	| **3567,99 €** 	|
-
-
+| Bottle cage white carbon                                             	| [www.aliexpress.com](www.aliexpress.com)                   	| 16,33€        	| 1   	| 16,33€        	|
+| Total                                                                	|                                                            	|               	|     	| **3584,32 €** 	|
