@@ -45,7 +45,7 @@ comments:
     theme                : # "github-light" (default), "github-dark"
     issue_term           : # "pathname" (default)
   staticman:
-    branch               : "master"
+    branch               : "htaruosis.github.io"
     endpoint             : "https://htaruosis-staticman/v2/entry/"
 #staticman_url             : "https://htaruosis-staticman.herokuapp.com/v2/entry/htaruosis/htaruosis.github.io"
 reCaptcha:
