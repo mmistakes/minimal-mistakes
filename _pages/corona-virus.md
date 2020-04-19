@@ -15,6 +15,29 @@ sidebar:
 **Achtung**: Bitte beachten Sie auch folgende [Hinweise vom SenBJF](https://www.berlin.de/sen/bjf/coronavirus/aktuelles/familien/), unter anderem welche Eltern von systemrelevanten Berufen einen Anspruch auf eine Kinderbetreuung haben.
 {: .notice--warning}
 
+16.04.2020 18:30 Uhr
+
+# Schule weiterhin geschlossen: schrittweise Öffnung ab 04.05.2020
+
+Liebe Eltern,
+
+die Schule bleibt weiterhin bis zum 03.04.2020 geschlossen und wird dann ab dem 04.05.2020 schrittweise geöffnet.
+
+Zunächst sollen dann die sechstens Klassen wieder in die Schule gehen.
+
+Bitte schauen überprüfen Sie regelmäßig Ihre E-Mails. Wir haben einen Plan zur Abholung von Materialien entwickelt, der heute an alle Elternvertreter*innen geschickt wurde.
+
+Hier die Informationen der Senats-Pressekonferenz:
+
+[https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2020/pressemitteilung.921017.php](https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2020/pressemitteilung.921017.php)
+
+
+Viele Grüße
+
+Stephanie Lehmann
+
+---
+
 03.04.2020 15:30 Uhr
 
 # Osterferien und mehr
