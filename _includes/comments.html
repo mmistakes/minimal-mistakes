@@ -96,7 +96,6 @@
               {% for comment in comments %}
                 {% assign email = comment[1].email %}
                 {% assign name = comment[1].name %}
-                {% assign url = comment[1].url %}
                 {% assign date = comment[1].date %}
                 {% assign message = comment[1].message %}
                 {% include comment.html index=forloop.index email=email name=name url=url date=date message=message %}
@@ -127,10 +126,6 @@
               <div class="form-group">
                 <label for="comment-form-email">{{ site.data.ui-text[site.locale].comment_form_email_label | default: "Email address" }} <small class="required">*</small></label>
                 <input type="email" id="comment-form-email" name="fields[email]" tabindex="3" />
-              </div>
-              <div class="form-group">
-                <label for="comment-form-url">{{ site.data.ui-text[site.locale].comment_form_website_label | default: "Website (optional)" }}</label>
-                <input type="url" id="comment-form-url" name="fields[url]" tabindex="4"/>
               </div>
               <div class="form-group hidden" style="display: none;">
                 <input type="hidden" name="options[slug]" value="{{ page.slug }}">
