@@ -46,7 +46,7 @@ comments:
     issue_term           : # "pathname" (default)
   staticman:
     branch               : "master"
-    endpoint             : "https://htaruosis-staticman.herokuapp.com/v2/entry/htaruosis/htaruosis.github.io"
+    endpoint             : "https://htaruosis-staticman.herokuapp.com/v2/entry/"
 #staticman_url             : "https://htaruosis-staticman.herokuapp.com/v2/entry/htaruosis/htaruosis.github.io"
 reCaptcha:
   siteKey                : "6LfPIuoUAAAAACL2n6Qierwa4lJOoTp9xOyjYYux"
