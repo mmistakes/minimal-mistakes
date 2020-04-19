@@ -47,7 +47,7 @@ comments:
   staticman:
     branch               : "master"
     endpoint             : "https://htaruosis-staticman.herokuapp.com/v2/entry/htaruosis/htaruosis.github.io"
-staticman_url             : "https://htaruosis-staticman.herokuapp.com/v2/entry/htaruosis/htaruosis.github.io"
+#staticman_url             : "https://htaruosis-staticman.herokuapp.com/v2/entry/htaruosis/htaruosis.github.io"
 reCaptcha:
   siteKey                : "6LfPIuoUAAAAACL2n6Qierwa4lJOoTp9xOyjYYux"
   secret                 : "j91OPz/2CG9rUlTP6NIfNp6NLQAfR6e576TdE81yE/CwBFiH/lnj9/NEDaFWt6BF2lhVDDxS8Ko+mlwPYw19Y6xcxADfpafy+DOFm3ZGUtVAV323Q2wEtz5VakVcJyVRoDg08UZUTH/YPjq4PRUQkfbzPY4+ISsbHXtdidhf0UqLACT0je66PJpp8ZrpPV7TCqBcfFJ01L9mr4szxplfuBn9qY9IQ4wCwulnRqrTPjxC6jsIWJ70Fq1Yc6JwNPAhV4NfOhxhYFmI9wrZAlWZ5Epw/SWUmkQ9a3MiTCVe5dW43RaERz1Y+PK8VRcISZU5AOpXhMA3QE0XOfSsHCWKz0eXi0FqvysK5LVw+sEsChIP48T/ZH2BjyeaG9IRr6DGWQg0Lx7ipQ8OwECy/tBhnJKaBlqlnDUCfAob+G38fN8NVrdqX3iaJ5nHMhJR4ptPHEQkUoMC7dF77OQkExXFVXepms1A6ElEtLNW8lEUxQpYd4bh5t0ZbqRHge4rmSCNCgEaqgZbB8Mkcg0Tw4BBqLqvu3PwTGcNFeWvQqzfaa8Hszk2FWnROPwJbyKzoc2tGRKt9gmiSvNo6JcfvI+WcwFaTgUtsFEVzV8lSL4bg62td6729HXWXGsGIMWyjStrJ9vVcQpoe+1HgZ5eLGt1Oej5FAL+c0JcX+PbWlnANoI="
