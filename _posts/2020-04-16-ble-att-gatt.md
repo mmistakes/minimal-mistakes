@@ -62,7 +62,7 @@ BLE 프로토콜 스택에서 Attribute protocol (**ATT**)은 서버 (**server**
 
 다음은 BLE 디바이스 내부의 데이터 구조의 예시를 보여준다.
 
-<figure style="width: 90%">
+<figure style="width: 100%">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/ble-data-exchange.png" alt="">
 </figure>
 
