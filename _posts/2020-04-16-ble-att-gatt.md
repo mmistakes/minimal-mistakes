@@ -44,24 +44,36 @@ BLE 프로토콜 스택에서 Attribute protocol (**ATT**)은 서버 (**server**
 
 ### 3.2 Attribute Table 예시
 
-다음은 **attribute table** 의 예시를 보여주며, 각각의 행(**row**)이 하나의 **attribute** 를 나타낸다.
+다음은 **attribute table** 의 예시를 보여주며, 각 행(**row**)은 하나의 **attribute** 를 나타낸다.
 
 <figure style="width: 90%">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/ble-attribute-table.png" alt="">
 </figure>
 
-`handle`은 일종의 **attribute** 의 주소 값을 나타내고, `permission`에는 단어 뜻 그대로 해당 **service** 또는 **chracteristic** 의 접근 권한에 대한 정보 등이 저장된다. `UUID` 는 **Universally Unique ID** 의 약자로, **GATT** 데이터 성분을 구분하기 위한 고유 식별자로 사용된다.
+`handle`은 **attribute** 의 주소 값에 해당되고, `permission`에는 단어 뜻 그대로 해당 **service** 또는 **chracteristic** 의 접근 권한에 대한 정보 등이 저장된다. `UUID` 는 **Universally Unique ID** 의 약자로, **GATT** 데이터 성분을 구분하기 위한 고유 식별자로 사용된다.
 
-#### Service 정의 순서
+### 3.3 Service 정의 순서
 
 `0x2800` 은 **service** 선언에 대한 **attribute** `UUID` 값이다. 위의 **attribute table** 그림에서 맨 위쪽 행을 보면, `UUID = 0x2800` 값을 갖는 **attribute** 를 이용해 **service**를 선언하고 있다. 본 예시에서 해당 **attribute** 의 `value` 에는 심박(**Heart Rate**) 측정 **service** 에 대한 `UUID` 값 `0x180D`이 저장되어 있음을 볼 수 있다.
 >**Bluetooth SIG** 에서는 자주 사용되는 **service** 에 대한 `UUID`를 사전에 정의해두고 있으며, 이러한 **service** 의 경우 `16 bits` 사이즈의 `UUID` 값을 갖는다. 사전에 정의된 **GATT service** 에 대한 `UUID` 값은 **[본 링크](https://www.bluetooth.com/specifications/gatt/services/)**에서 확인 가능하다.
 
 다음으로, `0x2803` 은 **characteristic** 선언에 대한 **attribute** `UUID` 값이고, 해당 **attribute** 의 `value` 에는 선언하고자 하는 **characteristic** 의 `UUID = 0x2A37`와 `handle` 값이 저장되어 있다. `0x2A37` 은 **HRS** 에서 심박 수 센서 값을 저장하는 **characteristic** 의 `UUID` 이고, 위의 예시에서 볼 수 있듯이 `UUID = 0x2A37` 값을 가지는 **attribute** 의 `value` 에는 `167` 이란 정보가 저장되어 있는 것을 볼 수 있다.
+> BLE 디바이스는 하나 이상의 **service** 를 포함할 수 있으며, 각각의 **service** 또한 하나 이상의 **characteristic** 을 포함할 수 있다.
 
+다음은 BLE 디바이스 내부의 데이터 구조의 예시를 보여준다.
 
+<figure style="width: 90%">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/ble-data-exchange.png" alt="">
+</figure>
 
-마지막에 GAP role 과 GATT role 다르다는 것을 언급
+---
+
+### 3.4 GATT Server/Client
+
+무선 연결된 BLE 디바이스 중 데이터를 가지고 있는 디바이스가 **GATT server** 가 되고, 데이터를 요청하는 디바이스가 **GATT client** 가 된다.
+
+예를 들어, 스마트폰 APP 을 이용해서 BLE 센서 노드 (**e.g. 센서 데이터 수집 후, BLE 프로세서를 기반으로 데이터를 송신하는 디바이스**)의 데이터를 수신하고자 할 때, BLE 통신을 시작하는 디바이스는 스마트폰이기 때문에 스마트폰이 **GAP central** 이 되고, 센서 노드는 **GAP peripheral** 이 된다. 그리고 실질적인 데이터를 가지고 있는 BLE 센서 노드는 **GATT server** 가 되고, 데이터를 요청하는 스마트폰은 **GATT client** 가 된다.
+
 
 **Reference Link: [https://devzone.nordicsemi.com/nordic/short-range-guides/b/bluetooth-low-energy/posts/ble-characteristics-a-beginners-tutorial](https://devzone.nordicsemi.com/nordic/short-range-guides/b/bluetooth-low-energy/posts/ble-characteristics-a-beginners-tutorial)**
 
