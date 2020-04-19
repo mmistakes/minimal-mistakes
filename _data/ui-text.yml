@@ -1705,6 +1705,58 @@ fi: &DEFAULT_FI
   results_found              : "Tulosta"
   back_to_top                : "Ylös"
 
+# Myanmar (Burmese)
+# -----------------
+my: &DEFAULT_MY
+  skip_links                 : "လင့်များကို​ကျော်ပါ။"
+  skip_primary_nav           : "မူလအညွှန်းသို့​ကျော်ပါ။"
+  skip_content               : "အကြောင်းအရာသို့ကျော်ပါ။"
+  skip_footer                : "အောက်ခြေသို့ကျော်ပါ။"
+  page                       : "စာမျက်နှာ"
+  pagination_previous        : "ရှေ့တစ်ခု"
+  pagination_next            : "နောက်တစ်ခု"
+  breadcrumb_home_label      : "ပင်မစာမျက်နှာ"
+  breadcrumb_separator       : "/"
+  menu_label                 : "မီနူး ဖွင့်၊ပိတ်"
+  search_label               : "ရှာ​ဖွေရန် ဖွင့်၊ပိတ်"
+  toc_label                  : "ဒီစာမျက်နှာတွင်"
+  ext_link_label             : "တိုက်ရိုက်လင့်"
+  less_than                  : "ဖတ်ရန်ကြာချိန်"
+  minute_read                : "မိနစ်"
+  share_on_label             : "မျှဝေပါ။"
+  meta_label                 :
+  tags_label                 : "အမှတ်အသားများ -"
+  categories_label           : "အမျိုးအစားများ -"
+  date_label                 : "ပြင်ဆင်ပြီး -"
+  comments_label             : "မှတ်ချက်တစ်ခုချန်ထားပါ။"
+  comments_title             : "မှတ်ချက်များ"
+  more_label                 : "ပိုမိုသိရှိရန်"
+  related_label              : "သင်နှစ်သက်နိုင်​သော"
+  follow_label               : "သတင်းလိုက်ယူရန် -"
+  feed_label                 : "Feed ယူရန် -"
+  powered_by                 : "ပံ့ပိုးသည်"
+  website_label              : "ဝဘ်ဆိုက်"
+  email_label                : "အီးမေးလ်"
+  recent_posts               : "လတ်တလောရေးသားချက်များ"
+  undefined_wpm              : "_config.yml မှာ words_per_minute ကိုမသတ်မှတ်ထားပါ။"
+  comment_form_info          : "သင့်အီးမေးလ်လိပ်စာကို​ဖော်ပြသွားမည်မဟုတ်ပါ။ လိုအပ်သောဖြည့်စွက်ရန်​နေရာများကို အမှတ်အသားပြထားပါသည်။"
+  comment_form_comment_label : "မှတ်ချက်"
+  comment_form_md_info       : "Markdown ကိုထောက်ပံ့သည်။"
+  comment_form_name_label    : "နာမည်"
+  comment_form_email_label   : "အီးမေးလိပ်စာ"
+  comment_form_website_label : "ဝဘ်ဆိုက် (မဖြည့်စွက်လည်းရသည်)"
+  comment_btn_submit         : "မှတ်ချက်တင်ပါ"
+  comment_btn_submitted      : "တင်သွင်းလိုက်သည်"
+  comment_success_msg        : "မှတ်ချက်ပေးတဲ့အတွက်ကျေးဇူးတင်ပါတယ်။ ၎င်းကိုအတည်ပြုပြီးသည့်အခါ ဝဘ်ဆိုက်ပေါ်တွင်ပြလိမ့်မည်။"
+  comment_error_msg          : "တောင်းပန်ပါတယ်။ သင့်တင်သွင်းမှုတွင်အမှားတစ်ခုရှိခဲ့သည်။ ကျေးဇူးပြုပြီးလိုအပ်သောဖြည့်စွက်ရန်​နေရာအားလုံးဖြည့်ပြီးပါကထပ်မံကြိုးစားပါ။"
+  loading_label              : "တင်နေသည်..."
+  search_label_text          : "သင့်ရှာဖွေရေးဝေါဟာရကိုရိုက်ထည့်ပါ..."
+  search_placeholder_text    : "သင့်ရှာဖွေရေးဝေါဟာရကိုရိုက်ထည့်ပါ..."
+  results_found              : "ရလဒ်(များ)ကိုတွေ့ရှိခဲ့သည်"
+  back_to_top                : "အပေါ်သို့ပြန်သွား"
+my-MM:
+  <<: *DEFAULT_MY
+
 # Another locale
 # --------------
 #
