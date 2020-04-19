@@ -11,9 +11,17 @@ excerpt: "Share and learn more knowledge to go even further"
 
 intro:
   - show_avatar: true
-  - excerpt: "I'm a DevOps Engineer with 10 years of experience. I acquired some knowledge in different area which allow me to 
-  better understand things to go even further. I always want to learn more, that's why I created this blog in order to share my knowledge."
+  - excerpt: "I'm a Site Reliability Engineer with 10 years of experience. I acquired some knowledge in different area 
+  which allow me to better understand things to go even further. I always want to learn more, that's why I created this blog in order to share my knowledge."
 feature_row1:
+  - image_path: /assets/images/bike-building/IMG_4573.jpg
+    alt: "placeholder image 2"
+    title: "Do your dream bike yourself"
+    excerpt: 'Do your dream bike yourself'
+    url: /sport/bike-building
+    btn_label: "Read More"
+    btn_class: "btn--inverse"
+feature_row2:
   - image_path: /assets/images/wheel-building/result4.jpg
     alt: "placeholder image 2"
     title: "Ma première roue artisanale"
@@ -21,7 +29,7 @@ feature_row1:
     url: /sport/wheel-building
     btn_label: "Read More"
     btn_class: "btn--inverse"
-feature_row2:
+feature_row3:
   - image_path: /assets/images/jordan-ladikos-62738.jpg
     alt: "placeholder image 2"
     title: "Create a reactive weather station"
@@ -29,7 +37,7 @@ feature_row2:
     url: /automation/reactive-weather-station
     btn_label: "Read More"
     btn_class: "btn--inverse"
-feature_row3:
+feature_row4:
   - image_path: /assets/images/anthony-rossbach-59486.jpg
     alt: "placeholder image 2"
     title: "Create a sprinkler system"
@@ -37,7 +45,7 @@ feature_row3:
     url: /automation/sprinkler
     btn_label: "Read More"
     btn_class: "btn--inverse"
-feature_row4:
+feature_row5:
   - image_path: /assets/images/maico-amorim-57141.jpg
     alt: "placeholder image 2"
     title: "NextRun"
@@ -45,7 +53,7 @@ feature_row4:
     url: /project/nextrun
     btn_label: "Read More"
     btn_class: "btn--inverse"
-feature_row5:
+feature_row6:
   - image_path: /assets/images/alarming.jpg
     alt: "placeholder image 2"
     title: "Security alarm"
