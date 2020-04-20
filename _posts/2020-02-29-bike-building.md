@@ -55,24 +55,25 @@ Components
 
 Tools
 
-| Description                                          	| Price       	| Site               	|
-|------------------------------------------------------	|-------------	|--------------------	|
-| Park tools CT3.3                                     	| 43,63€      	| www.mantel.com     	|
-| Park Tool BBT-69.2 16 Notch                          	| 25,77€      	| www.mantel.com     	|
-| SRAM Coupe Durite Hydraulique                        	| 15,99€      	| www.alltricks.fr   	|
-| AVID Graisse DOT d'assemblage pour freins 29 ml      	| 7,99 €      	| www.alltricks.fr   	|
-| Gants d'Atelier Muc-Off Mechanics Noir M             	| 9,99€       	| www.alltricks.fr   	|
-| AVID Kit de Purge Pro avec DOT 5.1                   	| 65,99€      	| www.alltricks.fr   	|
-| Colle à Boyaux CONTINENTAL Carbon (200 g)            	| 13,99€      	| www.probikeshop.fr 	|
-| FINISH LINE Graisse FIBER GRIP 50 g                  	| 8,99€       	| www.alltricks.fr   	|
-| Press SRAM DUB de Burton Bikes                       	| 21,65€      	| www.amazon.fr      	|
-| FINISH LINE Graisse TEFLON 100 gr                    	| 9,99€       	| www.alltricks.fr   	|
-| PRO BIKE TOOL 1/4 inch Drive Click Torque Wrench Set 	| 66,79€      	| www.amazon.fr      	|
-| Centreur de roue Tacx                                	| 47,90€      	|                    	|
-| Une jauge de centrage Tacx                           	| 34,99€      	|                    	|
-| Un tournevis à ecrous Park Tools                     	| 12,85€      	|                    	|
-| Clé de maintien pour rayon plat Park Tools           	| 13,83€      	|                    	|
-| Tensiomètre                                          	| 45,79€      	|                    	|
-| Clé à rayon                                          	| 6,90€       	|                    	|
-| Ruban adhésif                                        	| 0,96€       	|                    	|
-| **Total**                                            	| **453.99€** 	|                    	|
+| Description                                           	| Price       	| Site               	|
+|-------------------------------------------------------	|-------------	|--------------------	|
+| Park Tool CT3.3 Chain tool                            	| 43,63€      	| www.mantel.com     	|
+| Park Tool BBT-69.2 16 Notch Bottom bracket tool       	| 25,77€      	| www.mantel.com     	|
+| SRAM Hydraulic Hose Cutter                            	| 15,99€      	| www.alltricks.fr   	|
+| AVID Pitstop Dot Grease 29 ml                         	| 7,99 €      	| www.alltricks.fr   	|
+| Muc-Off Mechanics Gloves                              	| 9,99€       	| www.alltricks.fr   	|
+| Avid Professional Bleed Kit w/ DOT 5.1 Brake Fluid    	| 65,99€      	| www.alltricks.fr   	|
+| Continental Tubular Carbon Rim Cement (200 g)         	| 13,99€      	| www.probikeshop.fr 	|
+| FINISH LINE Grease FIBER GRIP 50 g                    	| 8,99€       	| www.alltricks.fr   	|
+| Burton Bikes SRAM DUB bottom bracket press tool       	| 21,65€      	| www.amazon.fr      	|
+| FINISH LINE Grease TEFLON 100 gr                      	| 9,99€       	| www.alltricks.fr   	|
+| PRO BIKE TOOL 1/4 inch Drive Click Torque Wrench Set  	| 66,79€      	| www.amazon.fr      	|
+| Tacx Exact wheel truing stand                         	| 47,90€      	| www.amazon.fr      	|
+| Tacx Wheel Alignment Gauge                            	| 34,99€      	| www.amazon.fr      	|
+| Park Tool INTERNAL NIPPLE SPOKE WRENCH — 3.2MM SQUARE 	| 12,85€      	| www.alltricks.fr   	|
+| Park Tool BLADED SPOKE HOLDER                         	| 13,83€      	| www.alltricks.fr   	|
+| Spoke Tension Meter                                   	| 45,79€      	| www.aliexpress.com 	|
+| Spoke wrench                                          	| 6,90€       	| www.amazon.fr      	|
+| Adhesive tape                                         	| 0,96€       	| www.amazon.fr      	|
+| Topeak Threadless Saw Guide                           	| 23,99€      	| www.alltricks.fr   	|
+| **Total**                                             	| **477,98€** 	|                    	|
