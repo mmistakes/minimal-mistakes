@@ -59,7 +59,8 @@ toc_sticky: true
 
 ```html
 {%raw%}**Notice:** Notice 기능 이용해서 원하는 문장 강조하기.{: .notice}{%endraw%}
-```html
+```
+
 ---
 
 ### 3.3 체크 리스트 만들기
