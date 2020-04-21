@@ -4,9 +4,8 @@ categories:
   - Github Blog
 tags:
   - HowToStart
+  - readability
   - notice
-  - check list
-  - code
 toc: true
 toc_sticky: true
 ---
