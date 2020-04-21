@@ -56,19 +56,23 @@ toc_sticky: true
 
 >인용구 강조
 
-위의 세 가지 정도가 가장 보편적으로 사용되는 강조 문법이고, 그 외에 유용한 기능으로는 **Notice** 기능이 있다(마크다운 문법에서 제공해주는 것인지 이와 유사함 크렘다운(**Kramdown**) 기능인지는 잘 모르겠다). **minimal-mistakes** 테마에서는 문장 끝에 `{: .notice}` 를 입력해주면, 다음의 **Notice** 기능을 이용할 수 있다.
+위의 세 가지 정도가 가장 보편적으로 사용되는 강조 문법이고, 그 외에 유용한 기능으로는 **Notice** 기능이 있다(마크다운 문법에서 제공해주는 것인지 이와 유사함 크렘다운(**Kramdown**) 기능인지는 잘 모르겠다). **minimal-mistakes** 테마에서는 문장 아래에 `{: .notice}` 를 입력해주면, 다음의 **Notice** 기능을 이용할 수 있다.
 
 ```html
-{%raw%}**Notice:** Notice 기능 이용해서 원하는 문장 강조하기. {: .notice}{%endraw%}
+{%raw%}**Notice:** Notice 기능 이용해서 원하는 문장 강조하기.
+{: .notice}{%endraw%}
 ```
-**Notice:** Notice 기능 이용해서 원하는 문장 강조하기. {: .notice}
+**Notice:** Notice 기능 이용해서 원하는 문장 강조하기.
+{: .notice}
 
 추가적으로 **Notice** 뒤에 다음과 같이(`{: .notice--keywords}`) 특정 키워드를 입력해주면, 색상을 변경해줄 수도 있다. 사용 가능한 키워드로는 `primary, info, warning, danger, success` 등이 있다.
 
 ```html
-{%raw%}**Notice:** Notice 기능 이용해서 원하는 문장 강조하기. {: .notice--success}{%endraw%}
+{%raw%}**Notice:** Notice 기능 이용해서 원하는 문장 강조하기.
+{: .notice--success}{%endraw%}
 ```
-**Notice:** Notice 기능 이용해서 원하는 문장 강조하기. {: .notice--success}
+**Notice:** Notice 기능 이용해서 원하는 문장 강조하기.
+{: .notice--success}
 
 ---
 
