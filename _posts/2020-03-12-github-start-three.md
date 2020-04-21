@@ -41,6 +41,7 @@ toc_sticky: true
 ### 3.2 강조하기
 
 문단 구분 이외에도 특정 문장이나 단어를 강조하는 방식으로 포스트의 퀄리티를 높일 수 있다. 먼저, 단어 또는 문장을 하나의 아스테릭(`*`) 문자를 이용해서 감싸면 *기울임체*, 두 개를 이용해서 감쌀 경우 **굵은 글씨체**로 표현된다. 부등호(`>`) 문자는 인용구를 표기하는 용도로 지원되는데, 특정 문구를 인용하지 않아도 원하는 문장을 강조하는 용도로 쓰는데 적합하다.
+
 ```
 *기울임체*
 
@@ -61,6 +62,13 @@ toc_sticky: true
 {%raw%}**Notice:** Notice 기능 이용해서 원하는 문장 강조하기.{: .notice}{%endraw%}
 ```
 **Notice:** Notice 기능 이용해서 원하는 문장 강조하기.{: .notice}
+
+추가적으로 **Notice** 뒤에 다음과 같이(`{: .notice--keywords}`) 특정 키워드를 입력해주면, 색상을 변경해줄 수도 있다. 사용 가능한 키워드로는 `primary, info, warning, danger, success` 등이 있다.
+
+```html
+{%raw%}**Notice:** Notice 기능 이용해서 원하는 문장 강조하기.{: .notice--success}{%endraw%}
+```
+**Notice:** Notice 기능 이용해서 원하는 문장 강조하기.{: .notice--success}
 
 ---
 
