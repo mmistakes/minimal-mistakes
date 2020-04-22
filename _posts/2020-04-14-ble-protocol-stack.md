@@ -140,8 +140,10 @@ Security Manager 는 자주 연결하는 디바이스 (**peer**) 사이의 보�
 
 **Reference**
 
-https://dev.ti.com/tirex/content/simplelink_cc2640r2_sdk_1_40_00_45/docs/blestack/ble_user_guide/html/ble-stack-3.x/gap.html
+https://dev.ti.com/tirex/content/simplelink_cc2640r2_sdk_1_40_00_45/docs/
+blestack/ble_user_guide/html/ble-stack-3.x/gap.html
 
-https://dev.ti.com/tirex/content/simplelink_cc26x2_sdk_1_60_00_43/docs/ble5stack/ble_user_guide/html/ble-stack-5.x/l2cap.html
+https://dev.ti.com/tirex/content/simplelink_cc26x2_sdk_1_60_00_43/docs/
+ble5stack/ble_user_guide/html/ble-stack-5.x/l2cap.html
 
 https://www.semiconductorstore.com/blog/2017/Bluetooth-5-versus-Bluetooth-4-2-whats-the-difference/2080
