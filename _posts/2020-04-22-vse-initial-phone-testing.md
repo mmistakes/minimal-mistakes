@@ -3,14 +3,9 @@ title: "COVID-19 GPS/IMU Alternative"
 author: "Michelle Keane"
 categories: localisation
 tags: [vehicle state estimation, gps, imu, spatial, phone sensors, sensors]
-image: vse/22_04_2020/cover.jpg
+image: # vse/22_04_2020/cover.jpg
 published: true
 ---
-
-<figure>
-  <img src="/assets/img/vse/22_04_2020/cover.jgp" alt="cover"/>
-  <figcaption>android_sensors_driver in action</figcaption>
-</figure>
 
 As concluded in my previous post, the Piksi Multi Receiver Kit was our most favourable solution to the problem of Vehicle State Estimation (VSE) and the gathering of position, heading, and velocity data. However, due to the effects of the Australian lockdown, there has been a degree of flexibility required with our plans. In terms of this subsystem, acquisition of the Piksi Multi has been put on hold indefinitely until the university reopens, as has the purchasing of any other devices that are not currently in our possession. Due to this, I have been exploring the avenue of using what I have available in terms of a GPS/IMU module for my initial programming of the data processing and testing required. When the Arduino and GPS module mentioned in my last post failed me, I looked to one of the most common computer devices in the world: the smartphone.
 
