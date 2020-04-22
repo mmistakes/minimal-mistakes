@@ -37,5 +37,30 @@ BLE 무선연결의 시작은 `GAP periphral`로 동작하는 디바이스에서
   <figcaption>출처: https://microchipdeveloper.com/wireless:ble-link-layer-discovery</figcaption>
 </figure>
 
-위 그림에서 볼 수 있듯이, 일반적으로 `Advertiser = peripheral` 디바이스는 한 번에 3개의 채널로 advertising 하고,  `Scanner = central` 디바이스는 일정 간격으로 하나의 채널을 scanning 한다. 주요 scanning 파라미터로는 `scan interval` 과 `scan window` 가 있는데, 그림에서 볼 수 있듯이 `scan interval` 은 scanning 을 시작하는 시간 사이의 간격을 정의하고, `scan window` 는 하나의 채널에 대해 실제로 scanning 하는 시간 (구간)을 정의하고 있다.
+위 그림에서 볼 수 있듯이, 일반적으로 `Advertiser = peripheral` 디바이스는 한 번에 3개의 채널로 advertising 하고,  `Scanner = central` 디바이스는 일정 간격으로 하나의 채널을 scanning 한다. 주요 scanning 파라미터로는 `scan interval` 과 `scan window` 가 있는데, 그림에서 볼 수 있듯이 `scan interval` 은 scanning **시작시간 사이의 간격**을 정의하고, `scan window` 는 한 채널에서 실제로 scanning 하는 시간 (**구간**)을 정의하고 있다.
 >advertising 채널과 scanning 채널이 일치하는 경우에만 `Scanner` 에서 advertising 데이터를 수신할 수 있으며, advertising 시간은 수 ms 인 반면 `Scanner` 에서는 수십에서 수백 ms 동안 scanning 동작을 수행한다. 따라서, `Scanner` 에서는 기본적으로 `Advertiser` 에 비해 보다 많은 양의 전류를 소비하게 된다.
+
+---
+
+### 4.3 Connection
+
+다음의 그림은 `peripheral` 디바이스에서의 BLE 연결 과정을 보여준다.
+
+<figure style="width: 100%">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/ble-conn-fig-3.png" alt="">
+  <figcaption>출처: https://devzone.nordicsemi.com/nordic/short-range-guides/b/bluetooth-low-energy/posts/bluetooth-smart-and-the-nordics-softdevices-part-2</figcaption>
+</figure>
+
+앞서 BLE 무선연결은 `peripheral` 디바이스에서 advertising 동작을 수행하는 것으로 시작된다고 언급한 바 있는데, 실제로 연결 가능한 `peripheral` 디바이스는 위 그림에서처럼 advertising 직후 잠깐동안 해당 채널의 신호를 수신하는 시간을 갖는다. 그림에서 볼 수 있듯이 `peripheral` 디바이스에서 advertising 주기와 scanning 주기가 겹치는 시점에 해당 채널(*38번*)을 통해 `central` 디바이스의 **연결 요청 신호 (CREQ: connection request)**를 수신하게 되면, 두 디바이스 사이의 무선연결이 시작된다.
+
+무선연결이 시작되고나면, 데이터를 교환에 앞서 연결 파라미터를 주고 받는다. BLE 에서는 통신 과정에서 advertising 채널을 제외한 37개의 채널을 이용해 **FHSS** 방식으로 데이터를 주고 받는다. 즉, 중심 주파수 (**frequency**)를 바꿔가면서(**hopping**) 데이터를 주고 받는 것인데, 처음 연결시 동기화 (**synchronization**) 작업이 필요하지만, 방해 전파나 잡음의 간섭을 줄일 수 있으며, 호핑 코드 (***hopping code:*** *어떤 순서로 주파수 대역을 변경할 것인지에 대한 정보*) 만 다르면, 같은 공간 내에서도 무선 디바이스 사이의 간섭을 최소화할 수 있다는 이점이 있다.
+
+<figure style="width: 100%">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/ble-conn-fig-4.png" alt="">
+  <figcaption>출처: https://microchipdeveloper.com/wireless:ble-link-layer-channels</figcaption>
+</figure>
+
+<figure style="width: 100%">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/ble-conn-fig-5.png" alt="">
+  <figcaption>출처: https://microchipdeveloper.com/wireless:ble-link-layer-channels</figcaption>
+</figure>
