@@ -8,7 +8,7 @@ published: true
 ---
 
 <figure>
-  <img src="/assets/img/vse/22_04_2020/cover.JPG" alt="cover"/>
+  <img src="/assets/img/vse/22_04_2020/cover.jgp" alt="cover"/>
   <figcaption>android_sensors_driver in action</figcaption>
 </figure>
 
