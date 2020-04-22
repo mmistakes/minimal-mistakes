@@ -87,7 +87,11 @@ BLE 연결 직후에는 호핑 코드와 같이 하드웨어 단에서 필요한
 **Reference**
 
 `- https://microchipdeveloper.com/wireless:ble-link-layer-channels`
+
 `- https://microchipdeveloper.com/wireless:ble-link-layer-discovery`
+
 `- https://devzone.nordicsemi.com/f/nordic-q-a/28058/what-is-connection-parameters`
+
 `- https://devzone.nordicsemi.com/nordic/short-range-guides/b/bluetooth-low-energy/posts/bluetooth-smart-and-the-nordics-softdevices-part-2`
+
 `- https://www.argenox.com/library/bluetooth-low-energy/ble-advertising-primer/`
