@@ -12,9 +12,9 @@ mathjax: true
 classes: wide
 ---
 
+In this blog post, I would like to go over some of the steps taken to perform **cylindrical volume reconstruction**. 
 ![image-left](/assets/img/lidar/cylinder-vol-reconstruction.gif){: .align-right}
-
-In this blog post, I would like to go over some of the steps taken to perform **cylindrical volume reconstruction**. For a bit of context, this particular processing step comes in after we have finished the ground plane segmentation and clustering for the point clouds. However, during the segmentation step, we might have inadvertently remove points which belong to our object of interest, which in this case, are traffic cones.
+For a bit of context, this particular processing step comes in after we have finished the ground plane segmentation and clustering for the point clouds. However, during the segmentation step, we might have inadvertently remove points which belong to our object of interest, which in this case, are traffic cones.
 
 To counteract this potential loss of point cloud data, we apply a cylindrical filter to recover all the neighbouring points for each cluster. The implementation results is shown on the top right `gif` animation.
 
