@@ -33,7 +33,7 @@ Michelle Keane:
   name        : "Michelle Keane"
   bio         : "Localisation and Vehicle Odometry"
   avatar      : # "/assets/images/bio-photo.jpg
-    links:
+  links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "keanem@student.unimelb.edu.au"
