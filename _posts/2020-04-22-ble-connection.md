@@ -26,6 +26,9 @@ BLE 무선연결의 시작은 `GAP periphral`로 동작하는 디바이스에서
   <figcaption>출처: https://www.argenox.com/library/bluetooth-low-energy/ble-advertising-primer/</figcaption>
 </figure>
 
+**Advertising interval**: <span style="color:#AF2F2F"><b>20 ms ~ 10.24 secs.</b></span>
+{: .notice--info}
+
 ---
 
 ### 4.2 Scanning
@@ -53,7 +56,10 @@ BLE 무선연결의 시작은 `GAP periphral`로 동작하는 디바이스에서
 
 앞서 BLE 무선연결은 `peripheral` 디바이스에서 advertising 동작을 수행하는 것으로 시작된다고 언급한 바 있는데, 실제로 연결 가능한 `peripheral` 디바이스는 위 그림에서처럼 advertising 직후 잠깐동안 해당 채널의 신호를 수신하는 시간을 갖는다. 그림에서 볼 수 있듯이 `peripheral` 디바이스에서 advertising 주기와 scanning 주기가 겹치는 시점에 해당 채널(*38번*)을 통해 `central` 디바이스의 **연결 요청 신호 (CREQ: connection request)**를 수신하게 되면, 두 디바이스 사이의 무선연결이 시작된다.
 
-무선연결이 시작되고나면, 데이터를 교환에 앞서 연결 파라미터를 주고 받는다. BLE 에서는 통신 과정에서 advertising 채널을 제외한 37개의 채널을 이용해 **FHSS** 방식으로 데이터를 주고 받는다. 즉, 중심 주파수 (**frequency**)를 바꿔가면서(**hopping**) 데이터를 주고 받는 것인데, 처음 연결시 동기화 (**synchronization**) 작업이 필요하지만, 방해 전파나 잡음의 간섭을 줄일 수 있으며, 호핑 코드 (***hopping code:*** *어떤 순서로 주파수 대역을 변경할 것인지에 대한 정보*) 만 다르면, 같은 공간 내에서도 무선 디바이스 사이의 간섭을 최소화할 수 있다는 이점이 있다.
+무선연결이 시작되고나면, 데이터를 교환에 앞서 연결 파라미터를 주고 받는다. BLE 에서는 통신 과정에서 advertising 채널을 제외한 37개의 채널을 이용해 **FHSS** 방식으로 데이터를 주고 받는다. 즉, 중심 주파수 (**frequency**)를 바꿔가면서(**hopping**) 데이터를 주고 받는 것인데, 처음 연결시 동기화 (**synchronization**) 작업이 필요하지만, 방해 전파나 잡음의 간섭을 줄일 수 있으며, 호핑 코드 (**hopping code**)만 다르면, 같은 공간 내에서도 무선 디바이스 사이의 간섭을 최소화할 수 있다는 이점이 있다.
+
+**hopping code:** Frequency Hopping Spread Spectrum 통신 기술에서 어떤 순서로 주파수 대역을 변경할 것인지에 대한 정보.
+{: .notice}
 
 <figure style="width: 100%">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/ble-conn-fig-4.png" alt="">
@@ -64,3 +70,15 @@ BLE 무선연결의 시작은 `GAP periphral`로 동작하는 디바이스에서
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/ble-conn-fig-5.png" alt="">
   <figcaption>출처: https://microchipdeveloper.com/wireless:ble-link-layer-channels</figcaption>
 </figure>
+
+BLE 연결 직후에는 호핑 코드와 같이 하드웨어 단에서 필요한 파라미터를 포함해 무선연결과 관련된 파라미터를 교환하게 된다. 또한, 이 시점에 연결 주기, 타임아웃 시간 (*일정 시간 통신이 되지 않을 경우 연결이 끊어졌다고 판단하는 시간*) 등의 정보를 주고 받으며, 이러한 파라미터는 대부분 `central` 디바이스에서 의해 결정된다.
+
+무선연결 파라미터를 정하는데 있어서 우선적인 결정 권한은 `central` 디바이스가 가지고 있지만,  `peripheral` 디바이스에서도 다음의 연결 파라미터를 **제안**할 수 있다.
+
+* minimum connection interval
+* maximum connection interval
+* slave latency
+* connection supervision timerout
+
+**Connection interval**: <span style="color:#AF2F2F"><b>7.5 ms ~ 4 secs.</b></span>
+{: .notice--info}
