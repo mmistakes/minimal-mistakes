@@ -28,7 +28,7 @@ author_profile: true
 * [BLE (3) - ATT/GATT 이해하기](https://enidanny.github.io/ble/ble-att-gatt/)
 
 ## 포스팅 예정 항목
-* BLE (4) - BLE 디바이스는 어떻게 연결될까?
+* BLE (4) - BLE 디바이스는 서로 어떻게 연결할까?
 * BLE (?) - BLE 통신 속도는 실제로 1 Mbps 일까?
 * BLE (?) - BLE 5.0
 * BLE (?) - Mesh
