@@ -136,28 +136,12 @@ Security Manager 는 자주 연결하는 디바이스 (**peer**) 사이의 보�
 
 또한, `Central` 디바이스가 연결 과정 없이 `Scanning` 동작만을 수행하는 경우 해당 디바이스를 `Observer`라고 부르며, `Observer` 의 경우 일반적으로 `Advertising` 패킷 내의 데이터를 타겟으로 하므로 **Beacon** 신호를 수신하고자 할 때 사용한다.
 
-<!-- 그림 추가
-![jekyll-theme]({{ site.url }}{{ site.baseurl }}/assets/images/jekyll-theme-example.png) 
--->
+---
 
-<!-- 캡션 달린 그림 추가
-{% capture fig_img %}
-![iot-system]({{ '/assets/images/2020-04-12-bluetooth-standard.png' | relative_url }})
-{% endcapture %}
+**Reference**
 
-<figure>
-  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-  <figcaption>출처: https://www.semiconductorstore.com/blog/2017/Bluetooth-5-versus-Bluetooth-4-2-whats-the-difference/2080</figcaption>
-</figure>
--->
+https://dev.ti.com/tirex/content/simplelink_cc2640r2_sdk_1_40_00_45/docs/blestack/ble_user_guide/html/ble-stack-3.x/gap.html
 
-<!-- 
-l2cap 출처: http://dev.ti.com/tirex/content/simplelink_cc26x2_sdk_1_60_00_43/docs/ble5stack/ble_user_guide/html/ble-stack-5.x/l2cap.html
-iphone, https://www.dailysecu.com/news/articleView.html?idxno=74658
+https://dev.ti.com/tirex/content/simplelink_cc26x2_sdk_1_60_00_43/docs/ble5stack/ble_user_guide/html/ble-stack-5.x/l2cap.html
 
-<figure style="width: 1200px">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/image-alignment-1200x4002.jpg" alt="">
-  <figcaption>Massive image comment for your eyeballs.</figcaption>
-</figure> 
-
--->
+https://www.semiconductorstore.com/blog/2017/Bluetooth-5-versus-Bluetooth-4-2-whats-the-difference/2080

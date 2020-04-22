@@ -61,3 +61,11 @@ toc_sticky: true
 
 만약, 심박수 측정 센서를 통해 측정한 값이 **110 BPM** 일 경우, BLE 프로세서에서 실질적으로 보내야 하는 `110`이라는 데이터는 1 바이트 (byte) 만으로 표현 가능하며, 이상이 있는 경우 (심박 수치가 너무 높거나 낮은 경우)가 아니라면 실시간으로 데이터를 전송할 필요도 없을 것이다.
 >따라서, 이러한 경우에도 BLE를 이용하여 효율적인 저전력 시스템 설계가 가능하다.
+
+---
+
+**Reference**
+
+https://www.semiconductorstore.com/blog/2017/Bluetooth-5-versus-Bluetooth-4-2-whats-the-difference/2080
+
+https://www.raywenderlich.com/231-core-bluetooth-tutorial-for-ios-heart-rate-monitor

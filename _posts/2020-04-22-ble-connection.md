@@ -1,5 +1,5 @@
 ---
-title: "BLE (4) - BLE 디바이스는 서로 어떻게 연결할까?"
+title: "BLE (4) - BLE 디바이스는 어떻게 연결할까?"
 categories:
   - BLE
 tags:

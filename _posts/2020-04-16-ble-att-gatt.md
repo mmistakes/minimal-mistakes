@@ -74,4 +74,10 @@ BLE 프로토콜 스택에서 Attribute protocol (**ATT**)은 서버 (**server**
 
 예를 들어, 스마트폰 APP 을 이용해서 BLE 센서 노드 (**e.g. 센서 데이터 수집 후, BLE 프로세서를 기반으로 데이터를 송신하는 디바이스**)의 데이터를 수신하고자 할 때, BLE 통신을 시작하는 디바이스는 스마트폰이기 때문에 스마트폰이 **GAP central** 이 되고, 센서 노드는 **GAP peripheral** 이 된다. 그리고 실질적인 데이터를 가지고 있는 BLE 센서 노드는 **GATT server** 가 되고, 데이터를 요청하는 스마트폰은 **GATT client** 가 된다.
 
-**Reference Link: [https://devzone.nordicsemi.com/nordic/short-range-guides/b/bluetooth-low-energy/posts/ble-characteristics-a-beginners-tutorial](https://devzone.nordicsemi.com/nordic/short-range-guides/b/bluetooth-low-energy/posts/ble-characteristics-a-beginners-tutorial)**
+---
+
+**Reference**
+
+https://www.researchgate.net/figure/BLE-Data-Hierarchy_fig2_317553032
+
+https://devzone.nordicsemi.com/nordic/short-range-guides/b/bluetooth-low-energy/posts/ble-characteristics-a-beginners-tutorial
