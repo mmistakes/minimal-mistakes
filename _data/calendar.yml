@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Kroko Zähneputzen",
-    "title": "Kroko Zähneputzen",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MWJsNTQyZGh2cjYyMjNudXBra3ZoMmkybDQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2020-04-27",
-      "date_time": null
-    },
-    "end": {
-      "date": "2020-05-01",
-      "date_time": null
-    },
-    "created": "2020-03-04T10:29:20.000Z",
-    "updated": "2020-03-04T10:29:20.376Z"
-  },
-  {
-    "image_path": null,
     "alt": "Vera 3 Mathe",
     "title": "Vera 3 Mathe",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2019-10-25T12:53:36.000Z",
     "updated": "2019-10-25T12:53:36.451Z"
+  },
+  {
+    "image_path": null,
+    "alt": "3. Gesamtkonferenz",
+    "title": "3. Gesamtkonferenz",
+    "excerpt": "16:00 - 18:00 Uhr",
+    "url": "https://www.google.com/calendar/event?eid=NXFuMDU4ZXN1aXI5dGJyZTg1bWczbmxhZnEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2020-05-19T16:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2020-05-19T18:00:00+02:00"
+    },
+    "created": "2020-03-02T15:14:24.000Z",
+    "updated": "2020-03-02T15:14:24.999Z"
   }
 ]
