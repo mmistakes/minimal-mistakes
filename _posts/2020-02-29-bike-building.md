@@ -22,7 +22,7 @@ quality. I bought carbon gears in the same OEM Manufacturer like well-known bran
 If like me, you are passionate, curious and you always want to learn more !
 Let's share knowledge together ! to go ever further ! 
 
-If we can do a top of line less than $4000, we can do a quality bike for $1500.
+If we can do a top of line less than 4000$, we can do a quality bike for 1500$.
 
 If you want more details about my experience, will let me know, follow me!
 
