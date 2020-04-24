@@ -53,7 +53,7 @@ UART 인터페이스에서는 별도의 클럭을 사용하지 않기 때문에,
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/serial-uart-fig-4.png" alt="">
 </figure>
 
-기본적으로 통신 전 IDLE 상태에서는 logical `HIGH` 전압을 유지하고, `LOW` (**Start bit**) 로 바뀌는 시점부터 데이터 전송이 시작된다. 데이터는 **LSB**에서 **MSB** 순서로 전달하며, 데이터 전송이 끝나면 **Stop bit** 이후 `HIGH` 상태를 유지한다. 위 그림은 `1 byte = 8 bits` 데이터를 전송하는 경우를 보여주고 있으며, 데이터 값은 `0x55 = 0b0101_0101` 이다. (**Start bit:** `1`, **Stop bit:** `0`)
+기본적으로 통신 전 IDLE 상태에서는 logical `HIGH` 전압을 유지하고, `LOW` (**Start bit**) 로 바뀐 시점부터 데이터 전송이 시작된다. 데이터는 **LSB**에서 **MSB** 순서로 전달하며, 데이터 전송이 끝나면 **Stop bit** 이후 `HIGH` 상태를 유지한다. 위 그림은 `1 byte = 8 bits` 데이터를 전송하는 경우를 보여주고 있으며, 데이터 값은 `0x55 = 0b0101_0101` 이다. (**Start bit:** `1`, **Stop bit:** `0`)
 
 ---
 
