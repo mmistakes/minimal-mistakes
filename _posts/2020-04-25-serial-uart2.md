@@ -42,7 +42,7 @@ UART 통신을 이용하기 위해서는 크게 다음의 두 가지 항목을 �
 
 UART 인터페이스의 통신 속도를 **Baud rate** 라고 소개하였고 보편적으로도 그렇게 언급되지만, 실제로 <span style="color:#DF0F0F"><b>Baud rate</b></span> 는 초당 전송 가능한 <span style="color:#DF0F0F"><b>Symbol</b></span> (의미있는 데이터의 묶음)의 개수를 정의하는 단위이다. 예를 들어, `Symbol = 1 bit` 인 경우에는 **Baud rate** 는 `bps` 단위를 갖게 되며, `1 Baud = 1 bps`로 표현 가능하다. 하지만, `Symbol = 1 byte = 8 bits` 인 경우는 `1 Baud = 8 bps` 가 된다. 표준 전송 속도 단위를 예로 들면, `9600 bps = 1200 Baud` 가 되는 것이다.
 
-**Notice:** 혹시나 **Baud** 개념에 대해 잘 이해되지 않더라도, 대부분 경우 `bps` 단위를 기준으로 전송 속도를 명시하므로 크게 걱정하지 않아도 될 것이다.
+**Notice:** 혹시나 `Baud` 개념에 대해 잘 이해되지 않더라도, 대부분 경우 `bps` 단위를 기준으로 전송 속도를 명시하므로 크게 걱정하지 않아도 될 것이다.
 {: .notice--warning}
 
 #### 2.1.2 프레임 사이즈 (Size of each frame field)
