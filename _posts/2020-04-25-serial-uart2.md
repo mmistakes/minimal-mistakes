@@ -29,7 +29,7 @@ UART 통신을 이용하기 위해서는 크게 다음의 두 가지 항목을 �
 * **Baud rate**
 * **Size of each frame field**
 
-#### 2.1.1 Baud rate
+#### 2.1.1 보드 레이트 (Baud rate)
 
 먼저, **Baud rate** 값은 신호의 전송 속도를 명시한다. UART 통신에서는 별도의 클럭을 이용하지 않기 때문에 어디서부터 어디까지를 하나의 신호로 판단해야할 것인지를 알아야 하고, 이는 곧 신호의 전송 속도와 연관된다. 
 
@@ -45,7 +45,7 @@ UART 인터페이스의 통신 속도를 **Baud rate** 라고 소개하였고 �
 **Notice:** 혹시나 **Baud** 개념에 대해 잘 이해되지 않더라도, 대부분 경우 `bps` 단위를 기준으로 전송 속도를 명시하므로 크게 걱정하지 않아도 될 것이다.
 {: .notice  }
 
-#### 2.1.2 Size of each frame field
+#### 2.1.2 프레임 사이즈 (Size of each frame field)
 
 다음으로, 전송 속도와 함께 데이터 프레임 각 영역 (field)의 사이즈도 정의해줘야 한다. 일반적으로  **Data bit**는 `1 bytes = 8 bits` 사이즈로 설정되고, **Stop bit**는 `1 bit`, **Parity bit**는 `0 bit`로 설정하지만, 이는 UART 통신을 사용하는 환경에 따라 상이할 수 있다.
 
