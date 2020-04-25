@@ -1,10 +1,10 @@
 ---
 title: TensorFlow, creating the training set for object detection
-tags:
-  - tensorflow
-  - neural-networks
-  - deep-learning
-  - tfrecord
+#tags:
+#  - tensorflow
+#  - neural-networks
+#  - deep-learning
+#  - tfrecord
 excerpt: Creating files for training object detection models in TensorFlow
 ---
 

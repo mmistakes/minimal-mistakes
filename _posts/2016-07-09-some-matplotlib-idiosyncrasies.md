@@ -1,9 +1,9 @@
 ---
 title: "Some Matplotlib idiosyncrasies"
-tags:
-  - python
-  - matplotlib
-  - data-viz
+#tags:
+#  - python
+#  - matplotlib
+#  - data-viz
 excerpt: Some basics on how to use matplotlib for plotting data
 ---
 

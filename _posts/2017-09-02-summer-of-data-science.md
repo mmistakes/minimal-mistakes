@@ -1,9 +1,9 @@
 ---
 title: My summer of data science
-tags:
-  - data-science
-  - learning
-  - twitter
+#tags:
+#  - data-science
+#  - learning
+#  - twitter
 excerpt: "Getting into #SoDS"
 ---
 
@@ -19,7 +19,7 @@ There is a notebook for each topic of interest, and the file structure is made i
 
 I called the project [**Tales of Science & Data**](https://github.com/martinapugliese/tales-science-data) as a sort of homage/mock to Poe's "Mistery and Imagination" as this Data Science field is a mix of several things. It can be rather confusing and, all in all, requires good imagination in terms of business acumen to be actually useful to an organisation. I'm not that bamboozled about this title though and I'd like to change it but haven't found a better suited one yet. So it stays like that until I do.
 
-I have started the project before the summer and still haven't finished (and will never, as it's meant to grow with me and with the time I can dedicate to it), but I think I got it to a good point. There are now sections on several topics which intersect, one way or the other, with Data Science. Some are quite clean and relatively good (though nothing is comprehensive, as clearly stated in the disclaimer!), some are just shaping up. 
+I have started the project before the summer and still haven't finished (and will never, as it's meant to grow with me and with the time I can dedicate to it), but I think I got it to a good point. There are now sections on several topics which intersect, one way or the other, with Data Science. Some are quite clean and relatively good (though nothing is comprehensive, as clearly stated in the disclaimer!), some are just shaping up.
 The "summer of data science" idea gave me a way to commit a bit more through the months from June to now, and I occasionally posted my progress against the hashtag on Twitter. I've mainly devoted some time in the evenings and weekends (among other things I am *trying to* carry forward) so not really much time, but hey, it's all good.
 
-It's been a good journey so far and looking forward to continue it for a "all year round of data science". 
+It's been a good journey so far and looking forward to continue it for a "all year round of data science".

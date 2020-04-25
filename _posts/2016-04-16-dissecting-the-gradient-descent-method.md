@@ -1,15 +1,15 @@
 ---
 title: "Dissecting the Gradient Descent method"
-tags:
-  - python
-  - maths
-  - machine-learning
-  - numpy
-  - optimisation
+#tags:
+#  - python
+# - maths
+#  - machine-learning
+#  - numpy
+#  - optimisation
 excerpt: A tutorial on the Gradient Descent method, done from scratch
 ---
 
-A full Jupyter notebook outlining what is done in this post is reachable [here](https://github.com/martinapugliese/tales-science-data/blob/master/maths/algorithms/gradient-descent.ipynb).
+A full Jupyter notebook outlining what is done in this post is reachable [here](https://nbviewer.jupyter.org/github/martinapugliese/tales-science-data/blob/master/machine-learning-concepts-and-procedures/learning-algorithms/notebooks/gradient-descent.ipynb).
 
 Gradient Descent is a mathematical optimization method used to minimize functions in the form of a sum:
 

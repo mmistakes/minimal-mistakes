@@ -1,12 +1,12 @@
 ---
 title: "Interacting with a DynamoDB via boto3"
-tags:
-  - python
-  - boto3
-  - query
-  - database
-  - dynamodb
-  - aws
+#tags:
+#  - python
+#  - boto3
+#  - query
+#  - database
+#  - dynamodb
+#  - aws
 excerpt: Python for querying a DynamoDB in AWS with boto3
 ---
 
@@ -110,7 +110,7 @@ def scan_table(table_name, filter_key=None, filter_value=None):
 
 def query_table(table_name, filter_key=None, filter_value=None):
     """
-    Perform a query operation on the table. 
+    Perform a query operation on the table.
     Can specify filter_key (col name) and its value to be filtered.
     """
     table = dynamodb_resource.Table(table_name)
@@ -133,8 +133,8 @@ In order to scan the table page by page, we need to play a bit around the parame
 ```py
 def scan_table_allpages(table_name, filter_key=None, filter_value=None):
     """
-    Perform a scan operation on table. 
-    Can specify filter_key (col name) and its value to be filtered. 
+    Perform a scan operation on table.
+    Can specify filter_key (col name) and its value to be filtered.
     This gets all pages of results. Returns list of items.
     """
     table = dynamodb_resource.Table(table_name)

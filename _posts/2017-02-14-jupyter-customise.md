@@ -1,15 +1,15 @@
 ---
 title: "Jupyter goodness"
-tags:
-  - jupyter
-  - ipython
-  - python
-  - css
-  - data-science
+#tags:
+#  - jupyter
+#  - ipython
+#  - python
+#  - css
+#  - data-science
 excerpt: "Learning to make the most of Jupyter notebooks"
 ---
 
-This post is a collection of things I've learned along the way while heavily working with Jupyter notebooks. 
+This post is a collection of things I've learned along the way while heavily working with Jupyter notebooks.
 
 [Jupyter](http://jupyter.org) has been, ever since its inception, a fantastic project. Born as the natural evolution of IPython, it allows you now to do so much more, included using languages other than Python.
 
@@ -55,7 +55,7 @@ stores the variable. To call it in another notebook:
 ```
 
 
-This small list has excluded important things like _running scripts_ from inside a notebook, _timing execution of cells_, _debugging_, _running shell scripts_, _creating presentations_ ..., because I wanted to focus on those which were, **to me**, the least known/most surprising. The page reported above gives a much more detailed outline. 
+This small list has excluded important things like _running scripts_ from inside a notebook, _timing execution of cells_, _debugging_, _running shell scripts_, _creating presentations_ ..., because I wanted to focus on those which were, **to me**, the least known/most surprising. The page reported above gives a much more detailed outline.
 
 ## Keep both Python 2 and Python 3 kernels
 
@@ -70,13 +70,13 @@ Credit goes to this Stack Overflow [question](http://stackoverflow.com/questions
 
 ## Customising the Markdown style
 
-This means setting up a custom CSS profile for the notebook. 
+This means setting up a custom CSS profile for the notebook.
 
-The procedure passes through the creation of a `custom.css` file in `/.ipython/profile_default/static/custom/` (if no such profile has been setup, that file exists and is empty). [This](http://stackoverflow.com/questions/32071672/where-should-i-place-my-settings-and-profiles-for-use-with-ipython-jupyter-4-0) question on Stack Overflow is a good read for setting up said custom profile. 
+The procedure passes through the creation of a `custom.css` file in `/.ipython/profile_default/static/custom/` (if no such profile has been setup, that file exists and is empty). [This](http://stackoverflow.com/questions/32071672/where-should-i-place-my-settings-and-profiles-for-use-with-ipython-jupyter-4-0) question on Stack Overflow is a good read for setting up said custom profile.
 
 [This repository](https://github.com/nsonnad/base16-ipython-notebook) contains a collection of themes you can download and use. There is even [someone](http://www.damian.oquanta.info/posts/48-themes-for-your-ipython-notebook.html) who tried them all!
 
-Now, for a project I'm carrying out, I wanted to change the styles to the notebooks, but **only** in that specific project and not globally. It should be possible to define multiple folders for the CSS files, one per profile, and decide which one to use. However, because notebooks are the backbone of my project, I also wanted the style to appear independently of the fact that the customisation was in my laptop. 
+Now, for a project I'm carrying out, I wanted to change the styles to the notebooks, but **only** in that specific project and not globally. It should be possible to define multiple folders for the CSS files, one per profile, and decide which one to use. However, because notebooks are the backbone of my project, I also wanted the style to appear independently of the fact that the customisation was in my laptop.
 
 The best solution I've found has been the one adopted in [this book](https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers): defining a small function the repo, which loads the content inside the HTML object of IPython:
 

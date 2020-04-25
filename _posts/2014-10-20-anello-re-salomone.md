@@ -1,9 +1,9 @@
 ---
 title: L'anello di re Salomone
-tags:
-  - reviewing
-  - book
-  - reading
+#tags:
+#  - reviewing
+#  - book
+#  - reading
 excerpt: A review of the book "L'anello di re Salomone" (Italian)
 ---
 
