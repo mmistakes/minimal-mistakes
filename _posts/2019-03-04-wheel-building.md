@@ -74,7 +74,7 @@ couple énorme au démarrage, mais qui une fois lancée fournira très peu d'én
 Pour obtenir une roue aérodynamique, il va falloir jouer sur la hauteur de jante, le nombre de rayons, la largeur de
  la jante ou encore le nombre de rayons et leurs formes. L'idéal est une roue pleine, l'air s'écoule directement vers 
  l'extérieur. Elle sera  aussi plus lourde donc une fois lancée aura une inertie optimum. Le cycliste pourra aller 
- plus vite en fournissant la même puissance. Mais la roue pleine est très plus dure à relancer et si le vent est de 
+ plus vite en fournissant la même puissance. Mais la roue pleine est plus dure à relancer et si le vent est de 
  côté ça devient un fardeau. Donc une roue pleine pour faire 
 du chrono sur terrain plat avec un vent favorable. Le compromis est donc de jouer la hauteur de la jante, par example 
 une 88mm offrira plus d'aerodynamisme qu'une 38mm car une surface d'évacuation de l'air plus grande. Mais il faudra 
