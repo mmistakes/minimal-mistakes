@@ -55,7 +55,7 @@ UART 인터페이스의 통신 속도를 **Baud rate** 라고 소개하였고 �
 
 ### 2.2 UART 예제 (Arduino)
 
-아두이노 개발환경 (`Arduino IDE`)에서는 시리얼 모니터 (`Ctrl+Shift+M`) 기능을 제공해주는데, 일종의 출력 콘솔 기능이라고 생각하면된다. Visual studio 와 같은 컴파일러에서 `C` 언어로 프로그래밍을 한다고 할 때,  `printf` 함수를 사용하면 입력한 문자열이  출력 콘솔 창에 출력되는 것처럼, 시리얼 모니터를 이용할 경우 아두이노 보드 내의 변수 값을 PC 에서 확인해볼 수 있다.
+아두이노 통합 개발환경 (`Arduino IDE`)에서는 시리얼 모니터 (`Ctrl+Shift+M`) 기능을 제공해주는데, 일종의 출력 콘솔 기능이라고 생각하면된다. Visual studio 와 같은 컴파일러에서 `C` 언어로 프로그래밍을 한다고 할 때,  `printf` 함수를 사용하면 입력한 문자열이  출력 콘솔 창에 출력되는 것처럼, 시리얼 모니터를 이용할 경우 아두이노 보드 내의 변수 값을 PC 에서 확인해볼 수 있다.
 
 <figure style="width: 100%">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/serial-uart2-fig-1.png" alt="">
@@ -65,7 +65,33 @@ UART 인터페이스의 통신 속도를 **Baud rate** 라고 소개하였고 �
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/serial-uart2-fig-2.png" alt="">
 </figure>
 
-위 그림의 코드에서 `Serial.begin(9600)` 라인이 시리얼 통신을 위해 아두이노 보드의 UART 모듈을 활성화시키는 부분이고, 본 예제는 **Baud rate** 를 `9600 bps`로 설정하는 경우를 보여준다. 아두이노 개발환경에서 지원해주는 시리얼 모니터에 값을 출력하는 경우에는 **Baud rate** 만을 입력하는 것으로 충분하지만, UART 인터페이스를 이용해 디바이스와 통신하는 경우에는 통신 속도 이외에도 `Tx/Rx pin, Parity/Stop bit` 에 대한 정보도 입력해줘야 한다.
+위 그림의 코드에서 `Serial.begin(9600)` 라인이 시리얼 통신을 위해 아두이노 보드의 UART 모듈을 활성화시키는 부분이고, 본 예제는 **Baud rate** 를 `9600 bps`로 설정하는 경우를 보여준다. `Arduino IDE` 에서 지원해주는 시리얼 모니터에 값을 출력하는 경우에는 **Baud rate** 만을 입력하는 것으로 충분하지만, UART 인터페이스를 이용해 디바이스와 통신하는 경우에는 통신 속도 이외에도 `Tx/Rx pin, Parity/Stop bit` 에 대한 정보도 입력해줘야 한다.
+
+`Arduino IDE` 이외의 개발 환경의 경우 시리얼 모니터와 같은 기능이 없을 수 있는데, 그럴 경우에는 시리얼 통신 프로그램을 이용해 PC 에 원하는 값을 출력할 수 있다. 뿐만 아니라 아두이노 보드 또한 `Arduino IDE` 시리얼 모니터 대신 별도의 시리얼 통신 프로그램을 이용해 값을 출력할 수 있다.
+
+다음은 **[Tera Term](https://tera-term.ko.softonic.com/)** 프로그램을 이용해 아두이노 보드의 값을 출력하는 과정의 예이다. 먼저, 프로그램을 실행 시킨 뒤 `메뉴(F) -> 새로 만들기 (N)`를 누르면, 아래 그림처럼 시리얼 통신으로 연결 가능한 디바이스가 나타나게 된다.
+
+<figure style="width: 100%">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/serial-uart2-fig-3.png" alt="">
+</figure>
+
+디바이스를 선택한 뒤에는 `설정(S) -> 시리얼포트(E)`에 들어가서 통신 규격을 동일하게 설정해줘야 한다. 위의 예제 코드에서는 **Baud rate** 만 설정하였는데, 나머지 규격에 대해서는 어떤 값이 기본 값으로 설정되어 있는지 모르기 때문에 일단은 통신 속도만 `9600 bps`로 설정해주었다.
+
+<figure style="width: 100%">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/serial-uart2-fig-4.png" alt="">
+</figure>
+
+<figure style="width: 100%">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/serial-uart2-fig-5.png" alt="">
+</figure>
+
+아래 그림에서 볼 수 있듯이, `Arduino IDE` 시리얼 모니터에서처럼 아두이노 내부의 값이 정상적으로 출력되는 것을 확인할 수 있다 (*Hello World! 이외의 값은 적외서 리모콘 예제 테스트 값이므로 신경쓰지 않아도 된다.*).
+
+<figure style="width: 100%">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/serial-uart2-fig-6.png" alt="">
+</figure>
+
+위의 예제를 통해 다른 시리얼 통신 프로그램에서도 정상적으로 정보를 주고 받을 수 있음을 확인하였다. 추가적으로, 정상적으로 통신이 된다는 것은 시리얼 통신 규격이 일치한다는 것을 의미하므로, `Arudino IDE` 시리얼 모듈에서는 `Data bit: 8, Parity bit: 0, Stop: 1` 를 디폴트 통신 규격으로 사용한다는 것 또한 확인할 수 있었다.
 
 ---
 
