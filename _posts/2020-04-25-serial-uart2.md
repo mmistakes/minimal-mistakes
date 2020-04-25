@@ -103,6 +103,8 @@ UART 인터페이스의 통신 속도를 **Baud rate** 라고 소개하였고 �
 
 https://learn.sparkfun.com/tutorials/serial-communication
 
+http://blueheartscabin.blogspot.com/2014/01/baud-rate-bit-rate.html
+
 <!-- 
 <figure style="width: 100%">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/serial-uart-fig-1.png" alt="">
