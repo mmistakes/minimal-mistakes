@@ -51,9 +51,21 @@ UART 인터페이스의 통신 속도를 **Baud rate** 라고 소개하였고 �
 
 >데이터 전송 속도가 `9600 bps` 이고, **Stop bit**는 `1 bit` 이며, **Parity bit**가 `0 bit`인 디바이스의 UART 통신 규격은 다음과 같이 명시하기도 한다: **`9600 8N1`**
 
+---
+
 ### 2.2 UART 예제 (Arduino)
 
-### 2.3 UART 예제 (nRF52-DK)
+아두이노 개발환경 (`Arduino IDE`)에서는 시리얼 모니터 (`Ctrl+Shift+M`) 기능을 제공해주는데, 일종의 출력 콘솔 기능이라고 생각하면된다. Visual studio 와 같은 컴파일러에서 `C` 언어로 프로그래밍을 한다고 할 때,  `printf` 함수를 사용하면 입력한 문자열이  출력 콘솔 창에 출력되는 것처럼, 시리얼 모니터를 이용할 경우 아두이노 보드 내의 변수 값을 PC 에서 확인해볼 수 있다.
+
+<figure style="width: 100%">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/serial-uart2-fig-1.png" alt="">
+</figure>
+
+<figure style="width: 100%">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/serial-uart2-fig-2.png" alt="">
+</figure>
+
+위 그림의 코드에서 `Serial.begin(9600)` 라인이 시리얼 통신을 위해 아두이노 보드의 UART 모듈을 활성화시키는 부분이고, 본 예시에서는 **Baud rate** 를 `9600 bps`로 설정하고 있다. 아두이노 개발환경에서 지원해주는 시리얼 모니터에 값을 출력하는 경우에는 **Baud rate** 만을 입력하는 것으로 충분하지만, UART 인터페이스를 이용해 디바이스와 통신하는 경우에는 통신 속도 이외에도 `Tx/Rx pin, Parity/Stop bit` 에 대한 정보도 입력해줘야 한다.
 
 ---
 
