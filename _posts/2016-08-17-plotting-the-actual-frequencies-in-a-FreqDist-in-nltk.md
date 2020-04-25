@@ -1,9 +1,9 @@
 ---
 title: "Plotting the actual frequencies in a FreqDist in NLTK"
-tags:
-  - python
-  - nltk
-  - nlp
+#tags:
+#  - python
+#  - nltk
+#  - nlp
 excerpt: How to plot the real frequency of occurrence of text with NLTK
 ---
 

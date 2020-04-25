@@ -1,11 +1,11 @@
 ---
 title: "Il Natale restringe il vocabolario"
-tags:
-  - italian
-  - festivity
-  - language
-  - words
-  - linguistics
+#tags:
+#  - italian
+#  - festivity
+#  - language
+#  - words
+#  - linguistics
 excerpt: Un po' di spirito sulle parole più usate a Natale
 ---
 
@@ -29,7 +29,7 @@ Ora, sorvoliamo sul fatto che non capisco che senso abbia fare gli auguri per un
 
 Dopo aver sorvolato, appunto, notiamo che nelle tre forme sopra elencate si fa uso di 3 aggettivi differenti per descrivere lo stesso sentimento. 3. Né di più né di meno. Ora, 3 sinonimi per uno stesso concetto sono un po’ pochini, specie se si tratta di descrivere uno stato d’animo localizzato nella sfera della positività.
 
-Ad essere più arditi delle frasi fatte, e a mostrare un po’ di creatività, potremmo impiegare altri aggettivi quali lieto, gaio, allegro (che è già di registro inferiore e quindi probabilmente non viene percepito come adeguato alla solennità della celebrazione), fausto (che è invece di registro superiore e quindi non siamo sicuri che venga compreso, non sia mai che "Fausto Natale" venga scambiato per una coppia di nomi propri, o, peggio, di nome-cognome). 
+Ad essere più arditi delle frasi fatte, e a mostrare un po’ di creatività, potremmo impiegare altri aggettivi quali lieto, gaio, allegro (che è già di registro inferiore e quindi probabilmente non viene percepito come adeguato alla solennità della celebrazione), fausto (che è invece di registro superiore e quindi non siamo sicuri che venga compreso, non sia mai che "Fausto Natale" venga scambiato per una coppia di nomi propri, o, peggio, di nome-cognome).
 
 Per altre possibilità di consulti il dizionario dei sinonimi e contrari.
 

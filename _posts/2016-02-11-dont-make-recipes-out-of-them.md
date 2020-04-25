@@ -1,9 +1,9 @@
 ---
 title: "Don't make recipes out of them"
-tags:
-  - machine-learning
-  - data-science
-  - rants
+#tags:
+#  - machine-learning
+#  - data-science
+#  - rants
 excerpt: "How not to use machine learning: to make recipes"
 ---
 

@@ -1,12 +1,12 @@
 ---
 title: "A week in the life - how I survived the shift from a PhD to the industry"
-tags:
-  - life
-  - industry
-  - research
-  - academia
-  - phd
-  - work
+#tags:
+#  - life
+#  - industry
+#  - research
+#  - academia
+#  - phd
+#  - work
 excerpt: My first week of work in the industry after transitioning from academia
 ---
 

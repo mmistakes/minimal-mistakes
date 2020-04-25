@@ -1,10 +1,10 @@
 ---
 title: Rallying into D3
-tags:
-  - data-viz
-  - python
-  - d3
-  - javascript
+#tags:
+#  - data-viz
+#  - python
+#  - d3
+#  - javascript
 excerpt: Following a path to learn D3 for data visualisation
 ---
 

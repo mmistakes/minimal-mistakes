@@ -1,11 +1,11 @@
 ---
 title: How I managed to install OpenCV3 with Python3 bindings on a macOS
-tags:
-  - python3
-  - opencv
-  - install
-  - library
-  - macOS
+#tags:
+#  - python3
+#  - opencv
+#  - install
+#  - library
+#  - macOS
 excerpt: "Installing OpenCV3 with Python3 bindings on macOS, the ultimate guide"
 ---
 
@@ -13,9 +13,9 @@ I am on macOS Sierra 10.12.5 and I am trying to upgrade my OpenCV2 to OpenCV3 as
 
 My Python installation is the one obtained with Homebrew, not the Mac default one so I'm gonna use that for the task. And the task proved to be a rather annoying challenge indeed. This post is just my little way to give back to the community of wonderful people around who write tutorials, guides and share issues when they try to do these things. I want to hug you all. The post collects all pf the procedure I've followed after several failures, multiple attempts, temporary desires to give up.
 
-First I uninstall OpenCV to make sure no conflicts arise during the process, you never know and for these things it's typically better to do a clean installation. 
+First I uninstall OpenCV to make sure no conflicts arise during the process, you never know and for these things it's typically better to do a clean installation.
 
-I find the always excellent Pyimagesearch has a guide on exactly this process, which means it's a known painful process that of installing these sorts of things on Macs. The guide is [here](http://www.pyimagesearch.com/2016/12/19/install-opencv-3-on-macos-with-homebrew-the-easy-way/). 
+I find the always excellent Pyimagesearch has a guide on exactly this process, which means it's a known painful process that of installing these sorts of things on Macs. The guide is [here](http://www.pyimagesearch.com/2016/12/19/install-opencv-3-on-macos-with-homebrew-the-easy-way/).
 
 So, following guide, I run
 
@@ -30,7 +30,7 @@ So, following guide, I run
 
 As for the `--HEAD` part, the guide affirms that this is needed "to avoid the QTKit error that plagues macOS Sierra systems with the current tagged OpenCV 3 releases" and points you to [details](http://www.pyimagesearch.com/2016/11/28/macos-install-opencv-3-and-python-2-7/). These details explain that this has to do with the QTKIT library and a deprecation problem. [QTKIT](https://developer.apple.com/documentation/qtkit) is an Apple thing for media. Turns out though (see later), that I don't really have this problem.
 
-Anyway, the command above fails with 
+Anyway, the command above fails with
 
 ```
 Installing opencv3 from homebrew/science
@@ -47,7 +47,7 @@ Note that the build cannot build both Python2.7 and Python3 bindings at the same
 #end
 ```
 
-The Cellar is the place Homebrew installs stuff and then symlinks (or you have to) to where it is actually supposed to be found by Python, see [this explanation](http://rkulla.blogspot.co.uk/2014/03/the-path-to-homebrew.html). It looks like it's trying to install Numpy as a dependency and complains that it finds non-empty directories. I got Numpy already, on Python3, so really not sure what this is about. 
+The Cellar is the place Homebrew installs stuff and then symlinks (or you have to) to where it is actually supposed to be found by Python, see [this explanation](http://rkulla.blogspot.co.uk/2014/03/the-path-to-homebrew.html). It looks like it's trying to install Numpy as a dependency and complains that it finds non-empty directories. I got Numpy already, on Python3, so really not sure what this is about.
 
 So just for trying things out, I decide to install OpenCV3 without the Python3 bindings, as
 
@@ -102,4 +102,4 @@ then
 
 `echo /usr/local/opt/opencv3/lib/python3.5/site-packages >> /usr/local/lib/python3.5/site-packages/opencv3.pth`
 
-And now I'm really done. 
+And now I'm really done.

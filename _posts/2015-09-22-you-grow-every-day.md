@@ -1,9 +1,9 @@
 ---
 title: "You grow every day"
-tags:
-  - learning
-  - life
-  - growing
+#tags:
+#  - learning
+#  - life
+#  - growing
 excerpt: Everyone grows and learns in time, no matter the age
 ---
 

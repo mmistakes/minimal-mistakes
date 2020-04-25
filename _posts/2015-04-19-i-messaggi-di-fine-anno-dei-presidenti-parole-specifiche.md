@@ -1,11 +1,11 @@
 ---
 title: "I messaggi di fine anno dei presidenti della Repubblica: alcune parole specifiche"
-tags:
-  - data
-  - italian
-  - linguistics
-  - text
-  - nlp
+#tags:
+#  - data
+#  - italian
+#  - linguistics
+#  - text
+#  - nlp
 excerpt: Data visualisation sulle parole usate dai presidenti della Repubblica nei discorsi di fine anno, continuazione su parole specifiche
 ---
 
@@ -31,6 +31,6 @@ Infine, vediamo i conteggi di giovani e lavoro, due altri temi certamente caldi.
 
 ![giovani-lavoro](https://plot.ly/~MartinaPugliese/401.png)
 
-Il povero Pertini ci teneva tanto, ai giovani, il valore è veramente sorprendentemente alto. Chissà che direbbe oggi a vedere la situazione drammatica in cui si trovano. 
+Il povero Pertini ci teneva tanto, ai giovani, il valore è veramente sorprendentemente alto. Chissà che direbbe oggi a vedere la situazione drammatica in cui si trovano.
 
 [qui]: {{ site.url }}/i-messaggi-di-fine-anno-dei-presidenti-divertissements/

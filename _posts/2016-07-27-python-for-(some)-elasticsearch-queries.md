@@ -1,10 +1,10 @@
 ---
 title: "Python for (some) Elasticsearch queries"
-tags:
-  - python
-  - database
-  - elasticsearch
-  - query
+#tags:
+#  - python
+#  - database
+#  - elasticsearch
+#  - query
 excerpt: Using Python for querying Elasticsearch
 ---
 
@@ -84,7 +84,7 @@ body = {
 
 Here, `start_date` and `final_date` are datetime objects, `gt` and `lt` mean "greater than" and "less than" respectively and the "e" will signify that the interval is closed.
 
-# A [bool](https://www.elastic.co/guide/en/elasticsearch/reference/5.1/query-dsl-bool-query.html) query 
+# A [bool](https://www.elastic.co/guide/en/elasticsearch/reference/5.1/query-dsl-bool-query.html) query
 
 To perform an AND, you need to run a so-called bool query, which can be used for all sorts of logical queries, but here I give the prototype of an AND.
 

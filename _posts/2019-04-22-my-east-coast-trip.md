@@ -1,10 +1,10 @@
 ---
 title: My marvelous US East Coast trip
-tags:
-  - travel
-  - usa
-  - east_coast
-  - visiting
+#tags:
+#  - travel
+#  - usa
+#  - east_coast
+#  - visiting
 excerpt: This March, I've been away for 3 weeks visiting some places along the USA East Coast. This post will give the overview of what I've done and seen!
 ---
 
