@@ -43,7 +43,7 @@ UART 통신을 이용하기 위해서는 크게 다음의 두 가지 항목을 �
 UART 인터페이스의 통신 속도를 **Baud rate** 라고 소개하였고 보편적으로도 그렇게 언급되지만, 실제로 <span style="color:#DF0F0F"><b>Baud rate</b></span> 는 초당 전송 가능한 <span style="color:#DF0F0F"><b>Symbol</b></span> (의미있는 데이터의 묶음)의 개수를 정의하는 단위이다. 예를 들어, `Symbol = 1 bit` 인 경우에는 **Baud rate** 는 `bps` 단위를 갖게 되며, `1 Baud = 1 bps`로 표현 가능하다. 하지만, `Symbol = 1 byte = 8 bits` 인 경우는 `1 Baud = 8 bps` 가 된다. 표준 전송 속도 단위를 예로 들면, `9600 bps = 1200 Baud` 가 되는 것이다.
 
 **Notice:** 혹시나 **Baud** 개념에 대해 잘 이해되지 않더라도, 대부분 경우 `bps` 단위를 기준으로 전송 속도를 명시하므로 크게 걱정하지 않아도 될 것이다.
-{: .notice}
+{: .notice--warning}
 
 #### 2.1.2 프레임 사이즈 (Size of each frame field)
 
@@ -79,7 +79,7 @@ UART 인터페이스의 통신 속도를 **Baud rate** 라고 소개하였고 �
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/serial-uart2-fig-3.png" alt="">
 </figure>
 
-디바이스를 선택한 뒤에는 `설정(S) -> 시리얼포트(E)`에 들어가서 통신 규격을 동일하게 설정해줘야 한다. 위의 예제 코드에서는 **Baud rate** 만 설정하였는데, 나머지 규격에 대해서는 어떤 값이 기본 값으로 설정되어 있는지 모르기 때문에 일단은 통신 속도만 `9600 bps`로 설정해주었다.
+디바이스를 선택한 뒤에는 `설정(S) -> 시리얼포트(E)`에서 통신 규격을 설정해줘야 한다. 위의 아두이노 예제 코드에서는 **Baud rate** 만 설정해주었는데, 나머지 규격에 대해서는 기본 값을 모르기 때문에 일단은 통신 속도에 대해 `9600 bps`로 설정해주었다.
 
 <figure style="width: 100%">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/serial-uart2-fig-4.png" alt="">
@@ -89,7 +89,7 @@ UART 인터페이스의 통신 속도를 **Baud rate** 라고 소개하였고 �
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/serial-uart2-fig-5.png" alt="">
 </figure>
 
-아래 그림에서 볼 수 있듯이, `Arduino IDE` 시리얼 모니터에서처럼 아두이노 내부의 값이 정상적으로 출력되는 것을 확인할 수 있다 (*Hello World! 이외의 값은 적외서 리모콘 예제 테스트 값이므로 신경쓰지 않아도 된다.*).
+아래 그림에서 볼 수 있듯이, `Arduino IDE` 의 시리얼 모니터와 동일하게 아두이노 내부의 값이 정상적으로 출력되는 것을 확인할 수 있다 (*Hello World! 이외의 값은 적외서 리모콘 예제 테스트 값이므로 신경쓰지 않아도 된다.*).
 
 <figure style="width: 100%">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/serial-uart2-fig-6.png" alt="">
