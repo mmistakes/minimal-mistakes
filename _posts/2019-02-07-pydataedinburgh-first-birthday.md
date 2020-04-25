@@ -1,5 +1,5 @@
 ---
-title: Cheers to PyDataEdinburgh for its first birthday
+title: Cheers to PyData Edinburgh for its first birthday
 tags:
   - pydata
   - meetup
