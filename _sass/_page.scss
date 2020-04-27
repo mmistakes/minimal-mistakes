@@ -56,8 +56,8 @@
   }
 
   p, li, dl {
-    font-size: $type-size-6;
-    /* font-size: 1em; */
+    /* font-size: $type-size-6; */
+    font-size: 0.90em;
   }
 
   /* paragraph indents */
@@ -98,7 +98,7 @@
   }
 
   .small {
-    font-size: $type-size-8;
+    font-size: $type-size-7;
     /* font-size: $type-size-6; */
   }
 
