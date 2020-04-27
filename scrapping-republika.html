@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script>
+	$(document).ready(function(){
+		$.getJSON('Terkini.json',function(data){
+			var headline_data='';
+			var i = 1;
+			headline_data += "<table border='1'><tr><td>No</td><td>Kategori</td><td>Judul Artikel</td><td>Waktu</td></tr>"
+				$.each(data, function(key, value){
+					headline_data += '<tr>';
+					headline_data += '<td>'+i+'</td>'
+					headline_data += '<td>'+value.kategori+'</td>'
+					headline_data += '<td>'+value.judul+'</td>'
+					headline_data += '<td>'+value.tanggal+'</td>';
+					i = i + 1;
+				});
+				$('#headline').append(headline_data);
+		});
+	});
+</script>
+<body>
+	<h1>Headline Republika Online</h1>
+	<div id="headline"></div>
+</body>
+</html>
