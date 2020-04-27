@@ -56,7 +56,8 @@
   }
 
   p, li, dl {
-    font-size: 1em;
+    font-size: $type-size-6;
+    /* font-size: 1em; */
   }
 
   /* paragraph indents */
@@ -97,7 +98,8 @@
   }
 
   .small {
-    font-size: $type-size-6;
+    font-size: $type-size-8;
+    /* font-size: $type-size-6; */
   }
 
   /* blockquote citations */
