@@ -133,9 +133,11 @@ __More information:__
 
 # Jonas Simoens
 
-Psychologists tend to be interested not only in understanding, but also in modulating, human cognition and behavior. Correspondingly, it has already been extensively demonstrated that concrete behaviors (such as choosig one type of food over another) can indeed be modulated by selectively rewarding certain behaviors more than others. In line with these findings, my research focuses on whether, in the same way, it is also possible to modulate abstract task execution parameters (such as the learning rate and the discount rate), as described by computational models of learning and decision making. Furthermore, I aim to investigate to what extent modulations of task execution parameters in certain environments transfer to other environments.
+<img src="/images/profile_pic_jonas.jpg" alt="Jonas Simoens" width="33%" align="left" hspace="20" vspace="20">
 
-I conduct this research in collaboration with Tom Verguts and Senne Braem, using behavioral, computational modeling and neuroimaging techniques.
+Psychologists tend to be interested not only in understanding, but also in improving, human cognition and behaviour. Correspondingly, it has already been extensively demonstrated that concrete behaviours can indeed be modulated by selectively rewarding certain behaviours more than others. Inspired by computational models of cognitive control, I investigate whether, in the same way, it is also possible to modulate abstract task execution parameters, such as learning rate, as described by computational models of learning and decision making. Moreover, I investigate whether these parameters can be adapted to multiple environments (in terms of reward contingencies) simultaneously, guided by associated contextual features.
+
+I conduct this research in collaboration with Tom Verguts and Senne Braem, using a combination of computational modelling, behavioural and neuroimaging techniques.
 
 __More information:__  
 * Email: [Jonas.Simoens@UGent.be](mailto:Jonas.Simoens@UGent.be)
