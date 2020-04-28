@@ -4,7 +4,7 @@ title: "Corona-Virus"
 permalink: /news/corona-virus/
 author_profile: false
 excerpt: "Alles Wichtige über den Corona-Virus und was es für die Grundschule am Brandwerder bedeutet."
-modified: 2020-03-13T12:30:00+01:00
+modified: 2020-04-28T11:30:00+01:00
 header:
   overlay_color: "#fbd49d"
   overlay_image: /assets/images/angry-corona-virus.svg
@@ -14,6 +14,38 @@ sidebar:
 
 **Achtung**: Bitte beachten Sie auch folgende [Hinweise vom SenBJF](https://www.berlin.de/sen/bjf/coronavirus/aktuelles/familien/), unter anderem welche Eltern von systemrelevanten Berufen einen Anspruch auf eine Kinderbetreuung haben.
 {: .notice--warning}
+
+---
+
+27.04.2020 18:00 Uhr
+
+# Eine kleine Corona-Video Botschaft von uns
+
+{% include video id="1QhG-fJRtugQ-34rROA8QOcehxYc4qg-3" provider="gdrive" %}
+
+Wir bedanken uns herzlich bei der Band „Jonah“, deren Song „All we are“ wir für unser Video benutzen durften.
+
+---
+
+23.04.2020 10:00 Uhr
+
+# Anspruch auf Notbetreuung
+
+Liebe Eltern,
+
+im Anhang finden Sie die neue Auflistung der anspruchsberechtigten Berufsgruppen für die Notbetreuung, die ab Montag, 27.04.2020 gilt. Die tagesaktuelle Übersicht finden Sie weiterhin unter folgendem Link:
+
+[https://www.berlin.de/sen/bjf/coronavirus/aktuelles/notbetreuung/](https://www.berlin.de/sen/bjf/coronavirus/aktuelles/notbetreuung/)
+
+Ich möchte noch einmal ausdrücklich darauf hinweisen, dass im Sinne der Gesunderhaltung ALLER die Notbetreuung nur in absoluten Notfällen beansprucht werden soll. Ich bitte Sie, dementsprechend verantwortungsvoll zu handeln.
+
+Ich bedanke mich im Voraus sehr für Ihr Verständnis.
+
+Viele Grüße
+
+Stephanie Lehmann
+
+---
 
 16.04.2020 18:30 Uhr
 
@@ -33,6 +65,35 @@ Hier die Informationen der Senats-Pressekonferenz:
 
 
 Viele Grüße
+
+Stephanie Lehmann
+
+---
+
+16.04.2020 15:00 Uhr
+
+# Schule weiter geschlossen - Bitte holen Sie im angegebenen Zeitfenster neue Arbeitsmaterialien und Aufgaben ab
+
+Liebe Eltern der Klassen A3, A4, A5, A6, 4b, 5a, 5b, 6b!
+
+Nun ist das eingetreten, was wir fast schon befürchtet hatten. Die Schule ist für weitere zwei Wochen geschlossen.
+
+Wir vermissen Ihre Kinder und Sie und hoffen, dass wir dann im Mai Schritt für Schritt einem normalen Alltag näher kommen werden.
+
+Die Kolleginnen und Kollegen haben sich Gedanken gemacht, wie eine weitere Versorgung mit schulischen Aufgaben aussehen kann und wir haben uns auf Zeitfenster geeinigt, in denen Sie und ihr Kind das Material abholen können und sollen.
+
+Bitte beachten Sie die angefügte Datei. Hier habe ich Ihnen aufgelistet, wann und wo Sie am Montag, 20.04.2020  Ihre Klassenleitung zur Übergabe treffen.
+
+Bitte kommen Sie allein mit Ihrem Kind oder schicken Sie Ihr Kind. Ich weise ausdrücklich darauf hin, dass es sich hierbei nur um ein kurzes Betreten des Schulgeländes handeln wird. Die Abstandsregeln von mind. 1,50 m sind einzuhalten. Sollten Sie über einen Mund- und Nasenschutz verfügen, möchte ich Sie bitten, diesen zu tragen.
+
+Bitte nutzen Sie das angegebene Zeitfenster!
+
+Gleichzeitig stehen Ihnen die Lehrkräfte auch per E-Mail und Telefon zur Verfügung. Bitte machen sie davon Gebrauch. Schreiben Sie die Lehrerinnen und Lehrer an. Diese melden sich dann bei Ihnen.
+
+Für Rückfragen stehe ich gern zur Verfügung.
+
+Viele Grüße an Ihr Kind und Ihre Familie! Halten Sie durch bleiben Sie gesund!
+
 
 Stephanie Lehmann
 
