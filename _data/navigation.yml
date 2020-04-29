@@ -1,8 +1,8 @@
 # main links
 main:
-  # - title: "About"
-  #   url: /_pages/about/
+  - title: "About & Projects"
+    url: /about/
   # # - title: "Places"
   #   url: "places/"
-  # - title: "DrawingData"
+  # - title: "DoodleDatCard"
   #   url: "categories/drawingdata/"
