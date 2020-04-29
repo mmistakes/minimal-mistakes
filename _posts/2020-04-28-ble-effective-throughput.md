@@ -51,7 +51,7 @@ BLE 패킷에서 실질적인 데이터는 ATT Payload 영역에 저장되는데
 그림에서 IFS (**inter-frame space**)는 인접한 패킷을 구분하기 위한 시간 간격으로 `150 us` 정도로 고려한다. 더미 패킷은 `Preamble(1) + Access Address(4) + LL Header(2) + CRC(3) = 10 bytes` 사이즈를 갖는다. 따라서, `20 bytes` 의 데이터를 전송하는데 걸리는 데 필요한 전송 시간은 다음과 같이 계산할 수 있다.
 
 <figure style="width: 100%">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/ble5-fig-3.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/ble5-fig-4.png" alt="">
 </figure>
 
 ---
