@@ -58,39 +58,30 @@ BLE 패킷에서 실질적인 데이터는 ATT Payload 영역에 저장되는데
 
 ### 5.3 최대 전송 패킷
 
-<!-- Connection interval 은 7.5 ~ 4초인데
-실제로 그 사이에는 서로 패킷을 여러번 주고 받는다. 한 두개 주고 받는게 아님
+위의 예시를 통해 `20 bytes` 데이터를 전송하는데 `0.708 ms` 의 시간이 소요되는 것을 확인하였다. BLE 무선연결 주기는 `7.5 ms ~ 4 secs` 이므로, 연결 주기를 `7.5 ms` 로 설정하는 경우 약 10 개의 패킷을 전송할 수 있으므로 유효 데이터 통신 속도는 `200 * 8 bits / 7.5 ms = 213 kbps` 가 될 것이다.
 
-위의 패킷을 한 간격동안 이거를 몇번 보낼 수 있는가?가 최대 전송 패킷임
+그러나, BLE 프로토콜에서는 연결 주기 동안 전송할 수 있는 유효 패킷의 수가 정해져있다. `Nordic Semiconductor` 사의 BLE 프로토콜 스택에서는 6개로 제한되어 있고, Andriod 또는 iOS 기반의 스마트폰에서는 최대 전송 패킷의 수가 4개 정도로 제한되어 있다.
 
-Nordic 지원하는 스택에서는 6개이지만
-Andriod 또는 iOS 디바이슨느 일반적으로 4개 많으면 6개
-
-물론 4.1 까지는 한 사이클에 6개는 충분히 보내고도 남는다
-
-그러나 4.2 ~ 5.0 은 ATT 실제 데이터가 244 bytes 이기 때문에
-
-한번에 6개를 못보내는 경우도 있음.. 아무튼
-
-4.1 이하의 경우는 최대 전송 패킷은 디바이스 스펙에 따라 나뉜다. -->
+<figure style="width: 100%">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/ble5-fig-5.png" alt="">
+  <figcaption>출처: https://punchthrough.com/maximizing-ble-throughput-on-ios-and-android </figcaption>
+</figure>
 
 ---
 
 ### 5.4 Effective throughput
 
-<!-- 계산은 간단하다. interval 동안에 몇개 데이터 보낼 수 있는지 계산하면 됌
+다음의 수식은 연결 주기($T_{\rm conn \it}$)와 전송 가능한 최대 패킷 수($N_{\rm max \it}$), 그리고 BLE 패킷 전송 시간의 관계를 보여준다. 
 
-최대 128 kbps 정도가 나온다.
+<figure style="width: 100%">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/ble5-fig-6.png" alt="">
+</figure>
 
-따라서 1Mbps 의 BLE 4.1 까지는 이정도 스펙이라고 보면 된다 실제로.
+`Nordic Semiconductor` 사의 BLE 디바이스를 이용한다고 할 때, 전송 가능한 최대 패킷 수는 6 이고, DLE 기능을 사용하지 않을 경우 ATT Payload 의 크기는 최대 `20 bytes` 이므로 (전송 시간: `0.708 ms`) 위의 수식을 항상 만족한다. ㄴ따라서, BLE 4.1 에서의 maximum effective throughput 은 다음과 같이 계산할 수 있다.
 
-속도 결정짓는 요소는
-
-ATT paylod 크기
-connection interval
-최대 전송패킷
-
--->
+<figure style="width: 100%">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/ble5-fig-7.png" alt="">
+</figure>
 
 ---
 
