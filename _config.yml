@@ -92,7 +92,7 @@ analytics:
 # Site Author
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier 
-  avatar           : "/assets/images/michael-rose.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Настоящий Фотограф" # "Just another *boring*, *tattooed*, *time traveling*, *designer*."
   location         : "Tallinn, EE"
   email            :
