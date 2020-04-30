@@ -3,7 +3,6 @@ title: Giovanni, musicista della domenica
 tags:
   - music
   - bass
-categories:
   - italian
 excerpt: Da autodidatta, costruire due band e arrangiare brani
 ---

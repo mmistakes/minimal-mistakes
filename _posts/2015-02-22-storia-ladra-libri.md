@@ -4,7 +4,6 @@ tags:
   - book
   - literature
   - review
-categories:
   - italian
 excerpt: "Recensione de 'Storia di una ladra di libri'"
 ---

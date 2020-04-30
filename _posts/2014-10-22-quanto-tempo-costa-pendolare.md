@@ -2,7 +2,6 @@
 title: "Quanto tempo costa pendolare"
 tags:
   - data
-categories:
   - italian
 excerpt: Data visualisation sui dati del treno Roma-Tivoli e viceversa
 ---
