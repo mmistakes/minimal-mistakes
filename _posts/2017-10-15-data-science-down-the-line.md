@@ -2,11 +2,11 @@
 title: Data Science and its relevance, some time down the line
 header:
   image: /assets/posts_images/glasses.jpg
-#tags:
-#  - data-science
-#  - business
-#  - work
-#  - industry
+tags:
+  - data
+  - meta
+  - work
+  - industry
 excerpt: The evolving field of data science, from the trench, and what is the sense of it all
 ---
 

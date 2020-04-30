@@ -2,11 +2,10 @@
 title: The average meaning of average
 header:
   image: /assets/posts_images/numbers.jpg
-#tags:
-#  - data-science
-#  - statistics
-# - data
-#  - language
+tags:
+  - data
+  - meta
+  - statistics
 excerpt: How the word average is used in regular talk and how to interpret and calculate it best
 ---
 

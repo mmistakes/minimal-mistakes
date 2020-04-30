@@ -9,10 +9,6 @@ This blog uses the [Minimal Mistakes](https://github.com/mmistakes/minimal-mista
 * [Quick-start guide](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
 * [Gemified theme](https://mmistakes.github.io/minimal-mistakes/jekyll/gemified-theme-beta/)
 
-## Style customisations
-
-I've customised CSS and text defaults here and there.
-
 ## Usage notes here
 
 Installation has followed the quick-start guide above and then the gemified version of the theme has been installed.
@@ -32,7 +28,11 @@ I've modified things here and there to customise my site. In particular I have:
 * added vars in the config to aid usage (e.g., the one for the path to post images)
 * changed default paths to images
 
-## On the posts archive on the homepage
+### Style customisations
+
+I've customised CSS and text defaults here and there.
+
+### On the posts archive on the homepage
 
 I've edited the `_layouts/archive-single.html` to display the date of creation of the post in the archive list as it used to be (was removed in a more recent release).
 
@@ -40,6 +40,19 @@ I've edited the `_layouts/archive-single.html` to display the date of creation o
 
 * MathJax is used to display LateX-style maths (added in `head.html`) in `_includes`. Add maths into double dollars.
 * There's buttons for sharing a post on socials configured in `_includes/social-share.html`: the twitter one will work fine from local as well, the Facebook and LinkedIn ones will only work when deployed
+
+## Categories and tags
+
+I'm using categories and tags for posts - see the Jekyll [docs](https://jekyllrb.com/docs/posts/#categories-and-tags). There's pages for the archive of each of them (using the existing layouts with counts of items), respectively at `/categories/` and `/tags/` and each single one is accessible by clicking on it under each post.
+
+Categories, used for macro groups, are (so far):
+* "doodledatcard" - the page for it is also surfaced in the navigation
+* "places"
+* "italian" - for posts in Italian
+
+Categories posts have been placed in their own folder for cleanliness.
+
+Tags are many, there's a little `tags.py` script to look at them - note you can also use the `/tags/` page. The idea is not to make duplicates/variations and keep them controlled.
 
 
 ---

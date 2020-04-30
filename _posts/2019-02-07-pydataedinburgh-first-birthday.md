@@ -1,11 +1,10 @@
 ---
 title: Cheers to PyData Edinburgh for its first birthday
-#tags:
-#  - pydata
-#  - meetup
-#  - python
-#  - event
-#  - organisation
+tags:
+  - pydata
+  - meetup
+  - python
+  - data
 excerpt: PyDataEdinburgh, the first birthday
 ---
 

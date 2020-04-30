@@ -1,10 +1,11 @@
 ---
 title: "Storia di una ladra di libri, di Markus Zusak"
-#tags:
-#  - italian
-#  - book
-#  - reading
-#  - review
+tags:
+  - book
+  - literature
+  - review
+categories:
+  - italian
 excerpt: "Recensione de 'Storia di una ladra di libri'"
 ---
 

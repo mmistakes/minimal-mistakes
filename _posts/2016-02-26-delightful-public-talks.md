@@ -1,9 +1,8 @@
 ---
 title: "Delightful public talks"
-#tags:
-#  - public-speaking
-#  - misc
-#  - communication
+tags:
+  - speaking
+  - communication
 excerpt: My two cents on how to give quality public talks
 ---
 

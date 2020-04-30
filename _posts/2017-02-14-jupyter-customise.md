@@ -1,11 +1,10 @@
 ---
 title: "Jupyter goodness"
-#tags:
-#  - jupyter
-#  - ipython
-#  - python
-#  - css
-#  - data-science
+tags:
+  - jupyter
+  - python
+  - notebook
+  - coding
 excerpt: "Learning to make the most of Jupyter notebooks"
 ---
 

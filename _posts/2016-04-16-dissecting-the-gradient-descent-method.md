@@ -1,11 +1,11 @@
 ---
 title: "Dissecting the Gradient Descent method"
-#tags:
-#  - python
-# - maths
-#  - machine-learning
-#  - numpy
-#  - optimisation
+tags:
+  - python
+  - maths
+  - machine learning
+  - optimisation
+  - coding
 excerpt: A tutorial on the Gradient Descent method, done from scratch
 ---
 

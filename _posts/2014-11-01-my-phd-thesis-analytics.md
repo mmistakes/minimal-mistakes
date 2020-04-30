@@ -1,12 +1,11 @@
 ---
 title: "My PhD thesis, some analytics"
-#tags:
-#  - data
-#  - data-science
-#  - linguistics
-#  - words
-#  - phd
-#  - research
+tags:
+  - data
+  - linguistics
+  - language
+  - phd
+  - research
 excerpt: Data visualisation over the text of my PhD thesis on language evolution
 ---
 

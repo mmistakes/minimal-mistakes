@@ -1,10 +1,10 @@
 ---
 title: Giovanni, musicista della domenica
-#tags:
-#  - music
-#  - bass
-#  - band
-#  - passion
+tags:
+  - music
+  - bass
+categories:
+  - italian
 excerpt: Da autodidatta, costruire due band e arrangiare brani
 ---
 

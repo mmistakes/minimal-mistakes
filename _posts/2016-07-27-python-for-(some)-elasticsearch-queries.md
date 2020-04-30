@@ -1,10 +1,10 @@
 ---
 title: "Python for (some) Elasticsearch queries"
-#tags:
-#  - python
-#  - database
-#  - elasticsearch
-#  - query
+tags:
+  - python
+  - database
+  - elasticsearch
+  - coding
 excerpt: Using Python for querying Elasticsearch
 ---
 

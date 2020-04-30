@@ -1,9 +1,11 @@
 ---
 title: L'anello di re Salomone
-#tags:
-#  - reviewing
-#  - book
-#  - reading
+tags:
+  - book
+  - review
+  - ethology
+categories:
+  - italian
 excerpt: A review of the book "L'anello di re Salomone" (Italian)
 ---
 

@@ -1,10 +1,9 @@
 ---
 title: English stopwords and Python libraries
-#tags:
-#  - python
-#  - nlp
-#  - language
-#  - linguistics
+tags:
+  - python
+  - nlp
+  - linguistics
 excerpt: "Stopwords in English and finding them in NLP libraries"
 ---
 

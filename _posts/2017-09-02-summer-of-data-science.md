@@ -1,9 +1,9 @@
 ---
 title: My summer of data science
-#tags:
-#  - data-science
-#  - learning
-#  - twitter
+tags:
+  - data
+  - learning
+  - meta
 excerpt: "Getting into #SoDS"
 ---
 
