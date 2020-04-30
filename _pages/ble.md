@@ -27,8 +27,8 @@ author_profile: true
 * [BLE (2) - BLE 프로토콜 스택](https://enidanny.github.io/ble/ble-protocol-stack/)
 * [BLE (3) - ATT/GATT 이해하기](https://enidanny.github.io/ble/ble-att-gatt/)
 * [BLE (4) - BLE 디바이스는 어떻게 연결할까?](https://enidanny.github.io/ble/ble-connection/)
+* [BLE (5) - BLE 통신 속도는 실제로 1 Mbps 일까?](https://enidanny.github.io/ble/ble-effective-throughput/)
 
 ## 포스팅 예정 항목
-* BLE (5) - BLE 통신 속도는 실제로 1 Mbps 일까?
 * BLE (?) - BLE 5.0
 * BLE (?) - Mesh Network
