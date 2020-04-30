@@ -1,10 +1,7 @@
 ---
 title: "Glasgow, I'm leaving you!"
-#tags:
-#  - glasgow
-#  - scotland
-#  - moving
-#  - life
+tags:
+  - scotland
 excerpt: "My (sad) moving from Glasgow to Edinburgh"
 ---
 

@@ -1,11 +1,10 @@
 ---
 title: How I managed to install OpenCV3 with Python3 bindings on a macOS
-#tags:
-#  - python3
-#  - opencv
-#  - install
-#  - library
-#  - macOS
+tags:
+  - python
+  - opencv
+  - macOS
+  - installs
 excerpt: "Installing OpenCV3 with Python3 bindings on macOS, the ultimate guide"
 ---
 

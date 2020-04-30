@@ -1,11 +1,9 @@
 ---
 title: "Il Natale restringe il vocabolario"
-#tags:
-#  - italian
-#  - festivity
-#  - language
-#  - words
-#  - linguistics
+tags:
+  - language
+- categories:
+  - italian
 excerpt: Un po' di spirito sulle parole più usate a Natale
 ---
 

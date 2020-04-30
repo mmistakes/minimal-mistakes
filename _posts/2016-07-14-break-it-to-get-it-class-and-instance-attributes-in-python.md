@@ -1,8 +1,8 @@
 ---
 title: "Break it to get it: class and instance attributes in Python"
-#tags:
-#  - python
-#  - oop
+tags:
+  - python
+  - coding
 excerpt: Exploring the difference between class and instance attributes in Python
 ---
 

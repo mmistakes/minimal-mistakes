@@ -1,15 +1,11 @@
 ---
 title: "The growth of vocabulary in different languages, reloaded"
-#tags:
-#  - linguistics
-#  - data
-#  - data-science
-#  - words
-#  - language
-#  - statistics
-#  - fit
-#  - power-law
-#  - python
+tags:
+  - linguistics
+  - data
+  - language
+  - modelling
+  - nlp
 excerpt: "The Heaps' law in different languages from Wikipedia text data"
 ---
 

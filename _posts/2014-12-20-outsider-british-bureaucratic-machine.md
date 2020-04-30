@@ -1,10 +1,9 @@
 ---
 title: "An outsider perspective on the British bureaucratic machine"
-#tags:
-#  - life
-#  - britain
-#  - rants
-#  - scotland
+tags:
+  - britain
+  - rant
+  - scotland
 excerpt: The British bureaucracy for a European immigrant
 ---
 

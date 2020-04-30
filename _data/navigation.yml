@@ -4,5 +4,5 @@ main:
     url: /about/
   # # - title: "Places"
   #   url: "places/"
-  # - title: "DoodleDatCard"
-  #   url: "categories/drawingdata/"
+  - title: "DoodleDatCard"
+    url: "categories/doodledatcard/"

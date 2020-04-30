@@ -1,12 +1,12 @@
 ---
 title: "Interacting with a DynamoDB via boto3"
-#tags:
-#  - python
-#  - boto3
-#  - query
-#  - database
-#  - dynamodb
-#  - aws
+- tags:
+  - python
+  - boto3
+  - database
+  - dynamodb
+  - aws
+  - coding
 excerpt: Python for querying a DynamoDB in AWS with boto3
 ---
 

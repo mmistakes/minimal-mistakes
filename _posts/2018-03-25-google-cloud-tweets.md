@@ -1,9 +1,9 @@
 ---
 title: Getting started with Google Cloud
-#tags:
-#  - cloud-computing
-#  - google-cloud
-#  - twitter
+tags:
+  - cloud computing
+  - twitter
+  - google cloud
 excerpt: I've learned a bit about Google Cloud by tinkering on it to run a little job, this post outlines the steps and an overview of the platform.
 ---
 

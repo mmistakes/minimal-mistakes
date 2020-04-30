@@ -2,10 +2,8 @@
 title: "Women amaze"
 header:
   image: /assets/posts_images/different.jpg
-#tags:
-#  - equality
-#  - gender
-#  - women
+tags:
+  - society
 excerpt: "Women amaze, as does everyone else"
 ---
 

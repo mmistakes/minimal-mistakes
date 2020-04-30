@@ -1,10 +1,10 @@
 ---
 title: A very shallow overview of YOLO and Darknet
-#tags:
-#  - neural-networks
-#  - machine-learning
-#  - deep-learning
-#  - object-detection
+tags:
+  - neural networks
+  - machine learning
+  - deep learning
+  - object detection
 excerpt: Looking at YOLO and Darknet as neural network frameworks for object detection
 ---
 

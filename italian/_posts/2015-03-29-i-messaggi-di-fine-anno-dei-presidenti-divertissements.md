@@ -1,11 +1,11 @@
 ---
 title: "I messaggi di fine anno dei presidenti della Repubblica: divertissements sui testi"
-#tags:
-#  - data
-#  - italian
-#  - linguistics
-#  - text
-#  - nlp
+tags:
+  - data
+  - language
+  - nlp
+categories:
+  - italian
 excerpt: Data visualisation sulle parole usate dai presidenti della Repubblica nei discorsi di fine anno
 ---
 
