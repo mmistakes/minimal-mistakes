@@ -5,4 +5,4 @@ main:
   # # - title: "Places"
   #   url: "places/"
   - title: "DoodleDatCard"
-    url: "categories/doodledatcard/"
+    url: "categories/#doodledatcard/"

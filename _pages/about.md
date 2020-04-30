@@ -19,4 +19,4 @@ All images/photos are mine unless otherwise specified, and credited. In some cas
 ### Some of my projects
 
 * <a href="https://martinapugliese.gitbook.io/tales-of-science-and-data/" target="_blank">**Tales of Science & Data**</a> - this is a collection of notes on topics of data science I wrote, and keep editing
-* **Doodling Data Cards** (aka **DoodleDatCard**), <a href="https://twitter.com/DoodleDatCard" target="_blank">Twitter</a>, <a href="https://www.instagram.com/doodledatcard/" target="_blank">Instagram</a> - my hand-drawn data stories, on cards. Some of these cards are accompanied by a post <a href="/categories/doodledatcard" target="_blank">here on this blog</a>
+* **Doodling Data Cards** (aka **DoodleDatCard**), <a href="https://twitter.com/DoodleDatCard" target="_blank">Twitter</a>, <a href="https://www.instagram.com/doodledatcard/" target="_blank">Instagram</a> - my hand-drawn data stories, on cards. Some of these cards are accompanied by a post <a href="/categories/#doodledatcard" target="_blank">here on this blog</a>

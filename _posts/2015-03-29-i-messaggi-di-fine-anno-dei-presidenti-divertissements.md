@@ -4,7 +4,6 @@ tags:
   - data
   - language
   - nlp
-categories:
   - italian
 excerpt: Data visualisation sulle parole usate dai presidenti della Repubblica nei discorsi di fine anno
 ---
