@@ -10,24 +10,24 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme                  : "minimal-mistakes-jekyll"
+theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" #"default"  , "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Thinker's Cloud"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+subtitle                 : "Inspiring the Creativity" # site tagline that appears below site title in masthead
+name                     : "Chandula Nethmal"
+description              : "Welcome to the creative cloud of Chandula ;) . you will find so many cool tech stuffs you may interested in. This is a Static web site created using Gatsby Static site generating tools and React. Most of the Contents of the web site is based on a Blog related to Electronics, Internet of Things, Telecommunication, new technologies and many other cool stuffs related to science fields. You may find interesting projects which the author has done through his knowledge and experience in Robotics, PCB designing, Internet of Things, Embedded systems.."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+repository               : https://github.com/ChandulaNethmal/minimal-mistakes # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser                   : "site-image.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : "ThinkersLogoTrans.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs            : true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
@@ -36,8 +36,8 @@ comments:
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
+    #https://developers.facebook.com/docs/plugins/comments
+    #appid                :
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
   utterances:
@@ -93,27 +93,27 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  name             : "Chandula Nethmal"
+  avatar           : "Chan_prof.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "A Tech Enthusiat, an Electronic and Telecommuniction Engineer." # As a student and a professional engineer in Electronics and telecommnicaion field, I have gained some knowledge and experience on above mentioned specializations. I worked on some cool projects relaed to those fields as it was my number one favourite hobby and also in order to fullfill some reqiurements to complete my Engineering degree. I am pretty sure you will find some cool stuffs around my blog if you also a tech enthusiast."
+  location         : "Sri Lanka"
+  email            : chandulanethmal@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:your.name@email.com
+      url: mailto:chandulanethmal@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://chandula-nethmal.blogspot.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      url: "https://facebook.com/chandulanethmal"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      #url: "https://github.com/chandulanethmal"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -126,10 +126,10 @@ footer:
       # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url:
+      url: "https://facebook.com/chandulanethmal"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/chandulanethmal"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -145,6 +145,9 @@ footer:
 include:
   - .htaccess
   - _pages
+  - posts
+  #- /docs # ignore Minimal Mistakes /docs
+  #- /test # ignore Minimal Mistakes /test
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -270,7 +273,7 @@ compress_html:
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: /posts/
       type: posts
     values:
       layout: single
