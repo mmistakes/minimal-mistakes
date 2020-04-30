@@ -83,8 +83,8 @@ BLE 패킷에서 실제 유효한 데이터는 ATT Payload 영역에 저장된�
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/ble5-fig-7.png" alt="">
 </figure>
 
-**Question:** 결국 maximum effective throughput 는 연결 주기와 전송 가능한 최대 패킷 수, 유효 데이터 사이즈만 알고 있으면 계산할 수 있는 거 아닌가요? <span style="color:#084A68"><b>위에 5.2 에서 BLE 패킷 전송 시간을 계산하는 이유가 궁금합니다</b></span>
-{: .notice}
+**질문:** 결국 maximum effective throughput 는 연결 주기와 전송 가능한 최대 패킷 수, 유효 데이터 사이즈만 알고 있으면 계산할 수 있는 거 아닌가요? <span style="color:#084A68"><b>위에 5.2 에서 BLE 패킷 전송 시간을 계산하는 이유가 궁금합니다</b></span>
+{: .notice--primary}
 >BLE effective throughput 계산 단계에서는 BLE 패킷 전송 시간을 사용하지 않습니다. 하지만, 전송 가능한 최대 패킷 수를 확인하기 위해서는 패킷 전송 시간을 계산해봐야 합니다. DLE 기능을 사용하지 않는 경우에 ATT Payload 크기는 최대 `20 bytes` 이지만, 해당 기능을 사용하는 경우 하나의 패킷에 최대 `244 bytes` 까지 유효 데이터를 전송할 수 있습니다. 따라서, **연결 주기동안 보낼 수 있는 BLE 패킷의 개수가 디바이스에서 지원하는 최대 전송 패킷 수 보다 적을 수 있으므로** BLE 패킷 전송 시간을 계산하는 과정이 필요합니다.
 
 ---
