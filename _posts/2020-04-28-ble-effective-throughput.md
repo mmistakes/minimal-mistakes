@@ -77,13 +77,21 @@ BLE 패킷에서 실질적인 데이터는 ATT Payload 영역에 저장되는데
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/ble5-fig-6.png" alt="">
 </figure>
 
-`Nordic Semiconductor` 사의 BLE 디바이스를 이용한다고 할 때, 전송 가능한 최대 패킷 수는 6 이고, DLE 기능을 사용하지 않을 경우 ATT Payload 의 크기는 최대 `20 bytes` 이므로 (전송 시간: `0.708 ms`) 위의 수식을 항상 만족한다. ㄴ따라서, BLE 4.1 에서의 maximum effective throughput 은 다음과 같이 계산할 수 있다.
+`Nordic Semiconductor` 사의 BLE 디바이스를 이용한다고 할 때, 전송 가능한 최대 패킷 수는 6 이고, DLE 기능을 사용하지 않을 경우 ATT Payload 의 크기는 최대 `20 bytes` 이므로 (전송 시간: `0.708 ms`) 위의 수식을 항상 만족한다. 따라서, 해당 조건에서 BLE 4.1 프로토콜의 이론적인 maximum effective throughput 은 다음과 같다.
 
 <figure style="width: 100%">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/ble5-fig-7.png" alt="">
 </figure>
 
+**Question:** 결국 maximum effective throughput 는 $^{\bold{1})}$연결 주기와 $^{\bold{2})}$전송 가능한 최대 패킷 수, $^{\bold{3})}$유효 데이터 사이즈만 알고 있으면 계산할 수 있는 거 아닌가요? <span style="color:#084A68"><b>위에 5.2 에서 BLE 패킷 전송 시간을 계산하는 이유가 궁금합니다</b></span>
+{: .notice}
+
+>BLE effective throughput 계산 단계에서는 BLE 패킷 전송 시간을 사용하지 않습니다. 하지만, 전송 가능한 최대 패킷 수를 확인하기 위해서는 패킷 전송 시간을 계산해봐야 합니다. DLE 기능을 사용하지 않는 경우에 ATT Payload 크기는 최대 `20 bytes` 이지만, 해당 기능을 사용하는 경우 하나의 패킷에 최대 `244 bytes` 까지 유효 데이터를 전송할 수 있습니다. 따라서, **연결 주기동안 보낼 수 있는 BLE 패킷의 개수가 디바이스에서 지원하는 최대 전송 패킷 수 보다 적을 수 있으므로** BLE 패킷 전송 시간을 계산하는 과정이 필요합니다.
+
 ---
 
 **Reference**
 
+https://punchthrough.com/maximizing-ble-throughput-on-ios-and-android
+
+https://devzone.nordicsemi.com/f/nordic-q-a/13004/maximum-data-throughput/49564#49564
