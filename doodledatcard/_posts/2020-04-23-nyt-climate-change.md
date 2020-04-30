@@ -1,12 +1,13 @@
 ---
-title: Reporting about climate change in the media, one case from The New York Times
-tags:
-  - climate_change
-  - data_card
-  - data
-  - card
-  - time_series
-excerpt: Counting the number of stories the New York Times has historically written on climate change in order to assess how much has the topic been addressed historically.
+title: How much has the media reported about climate change?
+#tags:
+#  - climate_change
+#  - data_card
+#  - data
+#  - card
+#  - time_series
+categories: doodledatcard
+excerpt: Looking at the volume of stories about climate change in the media to assess how this area has been discussed historically, a case from the New York Times.
 ---
 
 This post accompanies this data card I've been doing for a series about climate change:
