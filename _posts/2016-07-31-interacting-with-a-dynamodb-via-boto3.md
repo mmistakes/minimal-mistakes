@@ -1,6 +1,6 @@
 ---
 title: "Interacting with a DynamoDB via boto3"
-- tags:
+tags:
   - python
   - boto3
   - database
