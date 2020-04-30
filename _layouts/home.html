@@ -2,9 +2,13 @@
 layout: archive
 ---
 
-{{ content }}
+```html
+<figure style="width: 100%">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/2020-01-07-bellagio.png" alt="">
+</figure>
+```
 
-<h2> TEST </h2>
+{{ content }}
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
