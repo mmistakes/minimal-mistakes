@@ -178,7 +178,7 @@ Embed a video from YouTube, Vimeo, or Google Drive that responsively sizes to fi
 | Parameter  | Required     | Description                                                |
 | ---------- | ------------ | ---------------------------------------------------------- |
 | `id`       | **Required** | ID of the video                                            |
-| `provider` | **Required** | Hosting provider of the video: `youtube`, vimeo`, `google-drive`, or `bilibili` |
+| `provider` | **Required** | Hosting provider of the video: `youtube`, `vimeo`, `google-drive`, or `bilibili` |
 
 ### YouTube
 
