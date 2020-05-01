@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2020-03-30T16:27:33-04:00
+last_modified_at: 2020-05-01T10:11:23-04:00
 toc: false
 ---
 
@@ -15,7 +15,7 @@ toc: false
 
 - Improve author links underline on hover. [#2472](https://github.com/mmistakes/minimal-mistakes/pull/2472)
 - Add documentation for applying Front Matter defaults to jekyll-archives pages. [#2466](https://github.com/mmistakes/minimal-mistakes/pull/2466)
-- Add missing Vietnamese translations [#2459](https://github.com/mmistakes/minimal-mistakes/pull/2459)
+- Add missing Vietnamese translations. [#2459](https://github.com/mmistakes/minimal-mistakes/pull/2459) [#2486](https://github.com/mmistakes/minimal-mistakes/pull/2486)
 - Fix Finnish ocalized UI text strings. [#2455](https://github.com/mmistakes/minimal-mistakes/pull/2455)
 - Clarify documentation that Lunr only searches documents in collections. [#2450](https://github.com/mmistakes/minimal-mistakes/pull/2450)
 - Add guide on applying Front Matter defaults to jekyll-archives pages [#2466](https://github.com/mmistakes/minimal-mistakes/pull/2466)
