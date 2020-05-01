@@ -2,10 +2,11 @@
 layout: post
 title: Приветствие из 2020-го года!
 date: 2020-04-30 22:22:20 +0200
-categories: blog
+categories: [blog, travel]
+tags: [hot, summer] 
 ---
 
 Это тестовое сообщение, созданное из программы *VS Code*.  
-Осваиваю новые технологии.  
+Осваиваю новые технологии.
 
 Кое-что подглядел [отсюда](https://habr.com/ru/post/490754/#github)
