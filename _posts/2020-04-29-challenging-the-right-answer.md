@@ -1,5 +1,5 @@
 ---
-title: "Chasing the Problem, Not the Answer"
+title: "Chasing Problems, Not Answers"
 author: "Abdul"
 layout: single
 categories:
