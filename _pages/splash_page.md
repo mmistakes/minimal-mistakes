@@ -11,13 +11,13 @@ excerpt: "Share and learn more knowledge to go ever further"
 
 intro:
   - show_avatar: true
-  - excerpt: "I'm a Site Reliability Engineer at Sierra Wireless. I acquired some knowledge in different area 
+  - excerpt: "I'm a Site Reliability Engineer over 10 years. I acquired some knowledge in different area 
   which allow me to better understand things to go ever further. I always want to learn more, that's why I created this blog in order to share my knowledge."
 feature_row1:
-  - image_path: /assets/images/bike-building/IMG_4573.jpg
+  - image_path: /assets/images/bike-building/main_1.png
     alt: "placeholder image 2"
-    title: "Do your dream bike yourself"
-    excerpt: 'Do your dream bike yourself'
+    title: "Build your dream bike yourself"
+    excerpt: 'I want to share with you how we can build your own custom bike , top of the line with an affordable price'
     url: /sport/bike-building
     btn_label: "Read More"
     btn_class: "btn--inverse"
@@ -25,10 +25,7 @@ feature_row2:
   - image_path: /assets/images/wheel-building/result4.jpg
     alt: "placeholder image 2"
     title: "Wheel building"
-    excerpt: 'Wheel building'
-    url: /sport/wheel-building
-    btn_label: "Read More"
-    btn_class: "btn--inverse"
+    excerpt: 'How to hand-build a wheel [:us: English Version](/sport/wheel-building_en) [:fr: Version française](/sport/wheel-building_fr)'
 feature_row3:
   - image_path: /assets/images/jordan-ladikos-62738.jpg
     alt: "placeholder image 2"
