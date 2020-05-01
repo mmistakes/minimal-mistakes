@@ -264,7 +264,7 @@ jekyll-archives:
 compress_html:
   clippings: all
   ignore:
-    envs: development
+    envs: development  # disable compression in dev environment
 
 
 # Defaults
