@@ -280,7 +280,7 @@ defaults:
       comments: # true
       share: true
       related: true
-# _pages
+  # _pages
   - scope:
       path: "_pages"
       type: pages
@@ -325,3 +325,8 @@ defaults:
       layout: single
       author_profile: false
       share: true
+
+      collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
