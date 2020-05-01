@@ -30,7 +30,7 @@ feature_row:
   - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
     title: "Placeholder 3"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
-last_modified_at: 2018-11-25T20:47:01-05:00
+last_modified_at: 2020-05-01T10:20:05-04:00
 toc: true
 toc_label: "Helpers"
 toc_icon: "cogs"
@@ -178,7 +178,7 @@ Embed a video from YouTube, Vimeo, or Google Drive that responsively sizes to fi
 | Parameter  | Required     | Description                                                |
 | ---------- | ------------ | ---------------------------------------------------------- |
 | `id`       | **Required** | ID of the video                                            |
-| `provider` | **Required** | Hosting provider of the video: `youtube`, vimeo`, or `google-drive` |
+| `provider` | **Required** | Hosting provider of the video: `youtube`, vimeo`, `google-drive`, or `bilibili` |
 
 ### YouTube
 
