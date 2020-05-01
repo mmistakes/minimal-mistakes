@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2020-05-01T10:11:23-04:00
+last_modified_at: 2020-05-01T10:12:30-04:00
 toc: false
 ---
 
@@ -22,6 +22,7 @@ toc: false
 
 ### Bug Fixes
 
+- Fix typo in configuration documentation. [#2497](https://github.com/mmistakes/minimal-mistakes/pull/2497)
 - Fix "Follow menu falls under post links" on small screens. [#2479](https://github.com/mmistakes/minimal-mistakes/issues/2479)
 - Hide index page from page-archive. [#2482](https://github.com/mmistakes/minimal-mistakes/pull/2482)
 
