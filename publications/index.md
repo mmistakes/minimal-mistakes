@@ -1,11 +1,18 @@
 <font color='white'>filler text</font>
 
 ## Preprints
+- Desender, K., Donner, T. H., & Verguts, T. Dynamic expressions of confidence within an evidence accumulation framework.
+    - [BioArxiv](https://www.biorxiv.org/content/10.1101/2020.02.18.953778v2)
+
 - Buc Calderon, C., De Loof, E., Ergo, K., Snoeck, A., Boehler, C. N., & Verguts, T. Signed reward prediction errors in the ventral striatum drive episodic memory.
     - [BioArxiv](https://www.biorxiv.org/content/10.1101/2020.01.03.893578v1)
 
+
 ## Recent publications
-- Ergo, K., De Loof, E., & Verguts, T. (2020). Reward prediction error and declarative memory. _Trends in Cognitive Sciences._
+- Aben, B., Buc Calderon, C., Van den Bussche, E., & Verguts, T. (2020). Cognitive effort modulates connectivity between dorsal anterior cingulate cortex and task-relevant cortical areas. _Journal of Neuroscience, 40, 3838-3848._
+    - [Link to online version of publication](https://doi.org/10.1523/JNEUROSCI.2948-19.2020)
+
+- Ergo, K., De Loof, E., & Verguts, T. (2020). Reward prediction error and declarative memory. _Trends in Cognitive Sciences, 24, 388-397._
     - [Link to online version of publication](https://doi.org/10.1016/j.tics.2020.02.009)
 
 - Desender, K., Boldt, A., Verguts, T., & Donner, T. (2019). Post-decisional sense of confidence shapes speed-accuracy tradeoff for subsequent choices. _eLife._
