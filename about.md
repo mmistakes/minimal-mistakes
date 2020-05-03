@@ -2,7 +2,7 @@
 title: "About"
 author: "Abdul Rabbani"
 layout: single
-excerpt: "category Number Theory"
+excerpt: "about page"
 permalink: /about/
 last_modified_at: 2020-03-21T17:03:31-05:00
 toc: true
@@ -31,14 +31,11 @@ I have learned about and worked with a broad range of technologies and tools.
 In my professional career, I primarily focus on infrastructure and scalability.
 In the future, I can see myself working more deeply with OS and low-level hardware development.
 
-## Interests and Hobbies
-Science
-
-# Purpose of this Site
+# Purpose of This Site
 The main purpose of this website is for me to have a collection of my work.
 As I previously stated, I am self-educated, and I love to learn.
 I wanted to have a place where I could openly write about topics that are of interest to me.
-I will be having various different types of articles. Some will be more refined, others will be loosely structured.
+I will be having various types of articles. Some will be more refined, others will be loosely structured.
 
 I also want people to easily be able to collaborate with people who might be interested in the things I am writing about.
 Feel free to comment about things you like, dislike, agree with, disagree with, or want further explanation on.
@@ -70,10 +67,10 @@ Technology is great because if you're lazy (like me), you can program it to do a
 Some of the tools that I leverage to make my life easier are *Ansible, Python, Terraform, Jenkins*.
 
 Like many companies, we live on the cloud, and not just one. To meet client needs we have applications on *AWS, GCP, Rackspace and Digital Ocean*.
-Due to strong leadership, and smart engineers, we are able to serve clients out of various clouds with ease. PromoteIQ is a smart, sleek, and truly advanced shop in today's day in age.
+Due to strong leadership, and smart engineers, we can serve clients out of various clouds with ease. PromoteIQ is a smart, sleek, and truly advanced shop in today's day in age.
 
 ## Past Experience
-Prior to working for PromoteIQ, I was an SRE at Societe Generale, primarily focusing on the technology of the high-frequency trading desk.
+Before working for PromoteIQ, I was an SRE at Societe Generale, primarily focusing on the technology of the high-frequency trading desk.
 My main focus was maintaining trading applications, with latency and performance in mind.
 Some of my topics of interest were *Microwaves, Market Data and Smart Order Routing (SOR)*.
 
@@ -81,7 +78,7 @@ At SocGen, I learned to work very closely with physical hardware.
 Although I touched not a single server in my time there, I was quickly able to decipher the right tool for the right job.
 I also learned to become a proficient programmer at SocGen with the help of some very talents individuals.
 
-I started off by learning *Python* and quickly began working on the ILP (Internal Market Provider) project.
+I started by learning *Python* and quickly began working on the ILP (Internal Market Provider) project.
 The purpose of the project was to produce market data for our clients,
 and have them route orders to us the way they would to a protected market.
 I used Python to improve a program that insured that we were executing our clients at the best price on the market (Easier said than done).
