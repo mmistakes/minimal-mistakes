@@ -1014,8 +1014,8 @@ and all 4 holes on the rim side.
 -------
 ### Step 3: 
 
-![hub](/assets/images/wheel-building/lacage_step7.jpg){: .align-left :height="320px" width="320px"} Je n'affiche
-not the shelves in step 2 for better readability. We turn the rim, I do the same operation, but in
+![hub](/assets/images/wheel-building/lacage_step7.jpg){: .align-left :height="320px" width="320px"} 
+I did not display the shelves in step 2 for better readability. We turn the rim, I do the same operation, but in
 taking the 226mm spokes (left side). I took nuts of different colors just for the style, so
   to get an alternation I used reds,
 cassette side and blacks, left side. In addition, it helped me as a benchmark when uncovering.
