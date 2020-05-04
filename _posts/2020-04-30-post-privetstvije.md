@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Post: Приветствие из XXI века"
 ---
 
