@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-KR"
-title                    : "대니의 임베디드 아카이브"
+title                    : "임베디드 개발장이"
 title_separator          : "-"
 subtitle                 : #
 name                     : "Danny Kim"
@@ -26,7 +26,7 @@ baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "enidanny/enidanny.github.com"
 teaser                   : # "/assets/images/500x300.png" # 홈페이지 기본 티져(?) 이미지
 logo                     : # 타이틀 옆에 작게 들어갈 이미지
-masthead_title           : "대니의 임베디드 아카이브"
+masthead_title           : "임베디드 개발장이"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
