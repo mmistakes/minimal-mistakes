@@ -27,6 +27,7 @@ var store = [
               replace:"</h4>", " " |
               replace:"</h5>", " " |
               replace:"</h6>", " "|
+              replace:"*", " "|
             strip_html | strip_newlines | jsonify }},
           {%- else -%}
             {{ doc.content | newline_to_br |
