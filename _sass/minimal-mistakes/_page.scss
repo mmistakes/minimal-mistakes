@@ -352,11 +352,11 @@ body {
 
 .taxonomy__title {
   margin-bottom: 0.5em;
-  color: $muted-text-color;
+  color: lighten($text-color, 60%);
 }
 
 .taxonomy__count {
-  color: $muted-text-color;
+  color: lighten($text-color, 50%);
 }
 
 .taxonomy__index {
@@ -389,7 +389,7 @@ body {
 .back-to-top {
   display: block;
   clear: both;
-  color: $muted-text-color;
+  color: lighten($text-color, 50%);
   font-size: 0.6em;
   text-transform: uppercase;
   text-align: right;
