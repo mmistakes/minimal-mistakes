@@ -26,8 +26,6 @@
     justify-content: space-between;
     font-family: $sans-serif-narrow;
 
-    font-size: $type-size-4;
-    
     @include breakpoint($x-large) {
       max-width: $max-width;
     }
@@ -52,7 +50,8 @@
   display: flex;
   -ms-flex-item-align: center;
   align-self: center;
-  font-weight: bold;
+  font-size: $type-size-4;
+  font-weight: bold;  
   z-index: 20;
 }
 
