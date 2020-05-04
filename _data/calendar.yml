@@ -18,8 +18,8 @@
   },
   {
     "image_path": null,
-    "alt": "Vera 3 Mathe",
-    "title": "Vera 3 Mathe",
+    "alt": "Vera 3 Mathe entfällt",
+    "title": "Vera 3 Mathe entfällt",
     "excerpt": null,
     "url": "https://www.google.com/calendar/event?eid=MHJwdjJrOHBta21nYWxucGE3c2dpNjRjamcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
@@ -31,7 +31,7 @@
       "date_time": null
     },
     "created": "2020-03-03T12:41:02.000Z",
-    "updated": "2020-03-03T12:41:02.186Z"
+    "updated": "2020-05-04T14:27:47.618Z"
   },
   {
     "image_path": null,
@@ -69,36 +69,36 @@
   },
   {
     "image_path": null,
-    "alt": "GEV entfällt",
-    "title": "GEV entfällt",
+    "alt": "4. GEV um 18:30 Uhr entfällt",
+    "title": "4. GEV um 18:30 Uhr entfällt",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NGJxOTllbzVwZDBzYnBjM2RqZGw4a2EzbjUgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=N2xnanRpYmk0N2hidGZqODY0cjBwNHA2NGogaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
       "date": null,
-      "date_time": "2020-05-12T18:30:00+02:00"
+      "date_time": "2020-05-14T18:30:00+02:00"
     },
     "end": {
       "date": null,
-      "date_time": "2020-05-12T20:30:00+02:00"
+      "date_time": "2020-05-14T20:00:00+02:00"
     },
-    "created": "2020-05-03T08:20:47.000Z",
-    "updated": "2020-05-03T08:20:47.814Z"
+    "created": "2019-10-25T12:53:36.000Z",
+    "updated": "2020-05-04T14:24:52.876Z"
   },
   {
     "image_path": null,
-    "alt": "Vera 3 Deutsch Zuhören",
-    "title": "Vera 3 Deutsch Zuhören",
+    "alt": "Elternaktionstag entfällt",
+    "title": "Elternaktionstag entfällt",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=Mzh1bG45c2I4ajY5Njd1ZHAxOGJyajk1MWQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=NzhsaHA4cGQ1ZG5jNnE5YmI5anRqdmJyMmkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
-      "date": "2020-05-14",
-      "date_time": null
+      "date": null,
+      "date_time": "2020-05-16T10:00:00+02:00"
     },
     "end": {
-      "date": "2020-05-15",
-      "date_time": null
+      "date": null,
+      "date_time": "2020-05-16T13:00:00+02:00"
     },
-    "created": "2020-03-03T12:41:18.000Z",
-    "updated": "2020-03-03T12:41:18.506Z"
+    "created": "2020-05-03T08:23:42.000Z",
+    "updated": "2020-05-03T08:23:42.543Z"
   }
 ]
