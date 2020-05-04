@@ -1,6 +1,6 @@
 {% if paginator.total_pages > 1 %}
 <nav class="pagination">
-  {% assign first_page_path = paginator.first_page_path | default: site.paginate_path | replace: 'page:num', '' | replace: '//', '/' | relative_url %}
+  {% assign first_page_path = site.paginate_path | replace: 'page:num', '' | replace: '//', '/' | relative_url %}
   <ul>
     {% comment %} Link for previous page {% endcomment %}
     {% if paginator.previous_page %}

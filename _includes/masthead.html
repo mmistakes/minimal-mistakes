@@ -1,4 +1,8 @@
-{% capture logo_path %}{{ site.logo }}{% endcapture %}
+{% if site.logo contains "://" %}
+  {% capture logo_path %}{{ site.logo }}{% endcapture %}
+{% else %}
+  {% capture logo_path %}{{ site.logo | relative_url }}{% endcapture %}
+{% endif %}
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
@@ -13,8 +17,13 @@
         </a>
         <ul class="visible-links">
           {%- for link in site.data.navigation.main -%}
+            {%- if link.url contains '://' -%}
+              {%- assign url = link.url -%}
+            {%- else -%}
+              {%- assign url = link.url | relative_url -%}
+            {%- endif -%}
             <li class="masthead__menu-item">
-              <a href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
+              <a href="{{ url }}" {% if link.description %}title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
             </li>
           {%- endfor -%}
         </ul>
