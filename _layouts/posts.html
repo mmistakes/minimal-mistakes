@@ -3,6 +3,7 @@ layout: archive
 ---
 
 {{ content }}
+{% include comments.html %}
 
 <ul class="taxonomy__index">
   {% assign postsInYear = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
