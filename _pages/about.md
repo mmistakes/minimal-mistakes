@@ -17,11 +17,11 @@ author_profile: true
 ### 한동대학교 전자공학심화 전공, Cum Laude
 <span style="color:#0582a8"><b>2011.03 ~ 2017.02</b></span>
 
-**투고 논문**
+**[투고 논문]**
 
-Non-LoS Error Mitigation Using a Sensor Fusion Approach for Indoor UWB Localization (2019) [[PDF]](/assets/papers/201911-266-A-RU.pdf) [[LINK]](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE09303079)
+1.Non-LoS Error Mitigation Using a Sensor Fusion Approach for Indoor UWB Localization (2019) [[PDF]](/assets/papers/201911-266-A-RU.pdf) [[LINK]](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE09303079)
 
-초광대역 레이더 신호의 실내 전파 시 발생하는 고강도 고스트 경로의 실험적 분석 (2018) [[PDF]](/assets/papers/KICS2018-02-039.pdf) [[LINK]](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE07484277)
+2.초광대역 레이더 신호의 실내 전파 시 발생하는 고강도 고스트 경로의 실험적 분석 (2018) [[PDF]](/assets/papers/KICS2018-02-039.pdf) [[LINK]](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE07484277)
 
 ## 산학 프로젝트 이력
 
