@@ -31,11 +31,11 @@ masthead_title           : # overrides the website title displayed in the masthe
 words_per_minute         : 200
 staticman_url            : https://api.staticman.net/v3/entry/github/dvesti/minimal-mistakes/master/comments
 comments:
-  provider               : "staticman_v2" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   staticman:
     branch               : "master"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : https://jekyll-mm.disqus.com/ # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
