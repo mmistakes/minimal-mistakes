@@ -20,3 +20,7 @@
     <div itemprop="text">{{ include.message | markdownify }}</div>
   </div>
 </article>
+
+{% if site.disqus.shortname %}
+  {% include disqus_comments.html %}
+{% endif %}
