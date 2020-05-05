@@ -19,9 +19,9 @@ author_profile: true
 
 **[투고 논문]**
 
-1.Non-LoS Error Mitigation Using a Sensor Fusion Approach for Indoor UWB Localization (2019) [[PDF]](/assets/papers/201911-266-A-RU.pdf) [[LINK]](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE09303079)
+{%raw%}1. Non-LoS Error Mitigation Using a Sensor Fusion Approach for Indoor UWB Localization (2019){%endraw%} [[PDF]](/assets/papers/201911-266-A-RU.pdf) [[LINK]](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE09303079)
 
-2.초광대역 레이더 신호의 실내 전파 시 발생하는 고강도 고스트 경로의 실험적 분석 (2018) [[PDF]](/assets/papers/KICS2018-02-039.pdf) [[LINK]](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE07484277)
+2. 초광대역 레이더 신호의 실내 전파 시 발생하는 고강도 고스트 경로의 실험적 분석 (2018) [[PDF]](/assets/papers/KICS2018-02-039.pdf) [[LINK]](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE07484277)
 
 ## 산학 프로젝트 이력
 
