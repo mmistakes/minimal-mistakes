@@ -3,6 +3,7 @@ title: "BLE (1) - 저전력 블루투스 (BLE) 란?"
 categories:
   - BLE
 tags:
+  - bluetooth
   - low power system
   - wireless communication
   - introduction
