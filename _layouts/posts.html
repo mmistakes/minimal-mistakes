@@ -63,17 +63,7 @@ layout: archive
     {% endfor %}
 {% endif %}
 <!-- Comments Form -->
-  <form method="POST" action="{{ site.staticman_url }}">
-    <input name="options[redirect]" type="hidden" value="https://dvesti.github.io/minimal-mistakes/">
-    <input name="options[slug]" type="hidden" value="{{ page.slug }}">
-      <label>Name</label>
-      <input name="fields[name]" type="text">
-      <label>E-mail (optional)</label>
-      <input name="fields[email]" type="email">
-      <label>Website (optional)</label>
-      <input name="fields[url]" type="url">
-      <label>Message</label>
-      <textarea style="width:100%" name="fields[message]" rows="12"></textarea>
-      <small>Comments will appear after moderation.</small>
-      <button type="submit">Submit comment</button>
-  </form>
+{% if site.disqus.shortname %}
+  {% include disqus_comments.html %}
+{% endif %}
+
