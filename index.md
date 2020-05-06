@@ -3,7 +3,6 @@ layout: home
 author_profile: true
 ---
 
-# Hello Everyone
 This website is a collection of my various interests, projects, reports,
 learning experiences, and much more.
 
