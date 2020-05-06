@@ -1,9 +1,9 @@
 <div id="disqus_thread"></div>
 <script>
-  var disqus_shortname = 'subdomain';
+  var disqus_shortname = '{{ site.disqus_shortname }}';
   var disqus_config = function () {
-    this.page.url = "https://dvesti.github.io/minimal-mistakes/post-privetstvije/";
-    this.page.identifier = "post-privetstvije";
+    this.page.url = "{{ page.url | prepend: site.url }}";
+    this.page.identifier = "{{ page.id }}";
   };
 
   (function() {  // DON'T EDIT BELOW THIS LINE
