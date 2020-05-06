@@ -1,5 +1,6 @@
 ---
 title: "Приветствие из XXI века"
+comments: true
 excerpt_separator: <!--more-->
 ---
 
