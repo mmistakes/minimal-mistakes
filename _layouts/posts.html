@@ -53,8 +53,3 @@ comments: true
       <p>{{ comment[1].message | markdownify }}</p>
     {% endfor %}
 {% endif %}
-
-{% if site.disqus.shortname %}
-  {% include disqus_comments.html %}
-{% endif %}
-
