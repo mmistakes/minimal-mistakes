@@ -51,7 +51,7 @@
   text-overflow: ellipsis;
 
   a[rel="permalink"]::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -252,7 +252,7 @@
   position: relative;
   margin-bottom: 2em;
   font-size: 1.125em;
-  
+
   @include breakpoint($small) {
     float: left;
     margin-bottom: 0;
@@ -295,7 +295,7 @@
   }
 
   a.btn::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -319,18 +319,18 @@
     border: 0;
     background: transparent;
     list-style-type: none;
-  
+
     li {
       white-space: nowrap;
       margin-bottom: 0px;
     }
-  
+
     a {
       display: block;
       color: inherit;
       font-size: $type-size-8;
       text-decoration: none;
-  
+
       &:hover {
         text-decoration: underline;
       }
@@ -375,7 +375,7 @@
   }
 
   a.btn::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -401,7 +401,7 @@
     }
 
     a.btn::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
@@ -442,7 +442,7 @@
     }
 
     a.btn::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
@@ -486,7 +486,7 @@
     }
 
     a.btn::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
@@ -495,7 +495,7 @@
     }
 
     @include breakpoint($small) {
-      text-align: center;
+      text-align: center !important;
 
       .archive__item-teaser {
         margin: 0 auto;
@@ -525,6 +525,7 @@
   .feature__item--center,
   .feature__item--right {
     font-size: 1em;
+    text-align: justify;
   }
 }
 
@@ -532,7 +533,7 @@
    Wide Pages
    ========================================================================== */
 
-  .wide {
+.wide {
   .archive {
     @include breakpoint($large) {
       padding-right: 0;
@@ -542,12 +543,4 @@
       padding-right: 0;
     }
   }
-}
-
-/* Place inside a single layout */
-
-.layout--single {
-	.feature__wrapper {
-		display: inline-block;
-	}
 }
