@@ -61,7 +61,7 @@ funciona:
     title: "FECHE E GERENCIE CONTRATOS"
     excerpt: "Consultor(a) Gestor(a)<br><br>
     - Negocie e feche um contrato<br>
-    - repasse 30% do valor do contrato para Nortan. A empresa fará a gestão financeira e administrativa do contrato, pagando nota fiscal e dando o sporte necessário.<br>
+    - Repasse 30% do valor do contrato para Nortan. A empresa fará a gestão financeira e administrativa do contrato, pagando nota fiscal e dando o sporte necessário<br>
     - Negocie preço e serviço com a equipe Nortan de Consultores através da plataforma<br>
     - Receba o valor na sua Carteira Nortan<br>
     - Defina sua Retirada Mensal<br>
