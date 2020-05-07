@@ -13,14 +13,13 @@ nortan_intro:
   - image_path: /assets/images/banner.png
     alt: "placeholder image 2"
     title: "A NORTAN"
-    excerpt: "Nortan Consultores foi fundada em 2020 com um único propósito: Transformar conhecimento e informação em resultados financeiros em benefício de nossos consultores e parceiros.<br>A Nortan proporciona um ambiente colaborativo de consultores de alta performance voltados para a prestação de serviços relacionados à produção, gestão e solução de espaços para construção civil e meio ambiente.<br>Aqui você terá acesso a maior rede colaborativa de consultores de engenharia e arquitetura. Uma rede de conexões que proporciona multiplos canais de venda no mercado, segurança, visibilidade e valorização profissional.<br>Trabalhe com a Nortan de qualquer lugar do Brasil e descubra o seu valor."
+    excerpt: "Nortan Consultores foi fundada em 2020 com um único propósito: Transformar conhecimento e informação em resultados financeiros em benefício de nossos consultores e parceiros.<br><br>A Nortan proporciona um ambiente colaborativo de consultores de alta performance voltados para a prestação de serviços relacionados à produção, gestão e solução de espaços para construção civil e meio ambiente.<br><br>Aqui você terá acesso a maior rede colaborativa de consultores de engenharia e arquitetura. Uma rede de conexões que proporciona multiplos canais de venda no mercado, segurança, visibilidade e valorização profissional.<br><br>Trabalhe com a Nortan de qualquer lugar do Brasil e descubra o seu valor."
     url: "#test-link"
     btn_label: "Saiba Mais"
     btn_class: "btn--info"
 areas_atuacao:
   - title: "ÁREAS DE ATUAÇÃO"
-    excerpt: "Somos uma empresa multimercado que trabalha com projetos arquitetônicos, design de interiores, acompanhamento de obras, impermeabilização de obras, projeto hidrossanitário, elétrico, licenciamento ambiental de empreendimentos e recursos hídricos.
-Abaixo segue nossa linha da Construção Civil"
+    excerpt: "Somos uma empresa multimercado que trabalha com projetos arquitetônicos, design de interiores, acompanhamento de obras, impermeabilização de obras, projeto hidrossanitário, elétrico, licenciamento ambiental de empreendimentos e recursos hídricos.<br>Abaixo segue nossa linha da Construção Civil"
 feature_row:
   - image_path: /assets/images/banner.png
     alt: "ARQUITETURA E DESIGN E INTERIORES"
@@ -34,6 +33,9 @@ feature_row:
     alt: "IMPERMEABIIZAÇÃO"
     title: "IMPERMEABIIZAÇÃO"
     excerpt: "Ter tranquilidade em tempos chuvosos não tem preço. Somos especializados em identificação de pontos de infiltração, levando soluções eficientes para sua obra. Executamos pensando na segurança à longo prazo, por isso damos 5 anos de garantia"
+contato:
+  - title: "CONTATO"
+    excerpt: "Rua Hamilton de Barros Soutinho, 1866, Sala 12, Jatiúca, Maceió, Alagoas<br><br>contato@nortanprojetos.com<br><br>(82) 99916-4578"
 ---
 
 {% include feature_row id="nortan_intro" type="left" %}
