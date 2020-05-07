@@ -8,6 +8,7 @@ header:
   overlay_image: /assets/images/banner.png
   cta_label: "CADASTRE-SE"
   cta_url: "https://docs.google.com/forms/d/e/1FAIpQLSfHnyM8sDvzFQN2lWHaN_jiyhdfR44aeFlbb0WwxzeydtD-0w/viewform"
+  cta_class: "btn--success"
   caption: ""
   class: "text-center"
 excerpt: "CONHEÇA A NORTAN CONSULTORES"
