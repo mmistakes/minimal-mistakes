@@ -8,11 +8,11 @@ servicos:
   - image_path: /assets/images/banner.png
     alt: "ARQUITETURA"
     title: "ARQUITETURA"
-    excerpt: "- projetos residenciais e comerciais<br>
-    - projetos urbanísticos<br>
-    - projetos de reforma<br>
-    - acompanhamento de obras<br>
-    - consultoria"
+    excerpt: '- projetos residenciais e comerciais<br>
+- projetos urbanísticos<br>
+- projetos de reforma<br>
+- acompanhamento de obras<br>
+- consultoria'
   - image_path: /assets/images/banner.png
     alt: "DESIGN DE INTERIORES"
     title: "DESIGN DE INTERIORES"
