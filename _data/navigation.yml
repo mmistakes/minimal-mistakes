@@ -2,9 +2,13 @@
 main:
   - title: "Início"
     url: https://nortanprojetos.com
+  - title: "A Empresa"
+    url: /sobre/
+  - title: "Serviços"
+    url: /servicos/
+  - title: "Portfólio"
+    url: /portfolio/
   - title: "Equipe"
     url: /equipe/
-  - title: "Notícias"
-    url: /blog/
-  - title: "Contato"
-    url: /contato/
+  - title: "Entre"
+    url: /plataforma/
