@@ -4,6 +4,19 @@ author_profile: true
 # toc: true
 ---
 
+> What is better - to be born good, or to overcome your evil nature through great effort?
+
+<cite>Paarthurnax "The Old One", leader of the Greybeards</cite> --- The Esder Scrolls V : Skyrim
+{: .small}
+
+Comment: While I would not recommend drawing life lesson from works of fiction, I could not help but make an exception for the one above.
+The answer, however, is relative to the prespective one approaches it.
+First, similarly to the saying "Ignorance is bliss", being born favored by Lady Luck is not that bad of an experience.
+This would be better from the "quality of life" point of view.
+On the hand, overcoming hardships thorughout one's life, as the dragon suggests, would result in a more "meaningful life".
+From my experience, I would become aware of myself, my situtation and my thoughts more accurately when going through an "ordeal" (I must however admit that the ones I had to face so far were relatively insignificant ...), i.e. in troubled times. Those are the moments I would mature and improve the best, to a point that I could even notice it myself to a certain extent.
+But again, this could only be an illusion of the "ego", giving us a satisfactory enough answer for the hardship that was endured, and motivating us to go even further (sometimes, even too much).
+
 > It is better to go forward without an aim than loiter without an aim, and with surety much better than to retreat witjout an aim.
 
 <cite>Emiel Regis Rohellec Terzieff-Godefroy</cite> --- The Witcher: Tower of Swallow, P128~129
