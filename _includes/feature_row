@@ -5,7 +5,9 @@
 {% endif %}
 
 <div class="feature__wrapper">
-
+  {% if feature_row.title %}
+    <h2 class="archive__item-title">{{ feature_row.title }}</h2>
+  {% endif %}
   {% for f in feature_row %}
     <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
       <div class="archive__item">

@@ -5,7 +5,7 @@ permalink: /sobre/
 intro:
   - excerpt: "Proporcionamos um ambiente colaborativo de consultores de alta performance, transformando conhecimento e informação em resultados financeiros"
 missao:
-  - title: "NOSSA MISSÃO"
+  title: "NOSSA MISSÃO"
   - image_path: /assets/images/banner.png
     alt: "DESENVOLVIMENTO"
     title: "DESENVOLVIMENTO"
@@ -23,7 +23,7 @@ missao:
     title: "QUALIDADE"
     excerpt: "Ter profissionais de qualidade e alto desempenho"
 consultores:
-  - title: "CONSULTORES"
+  title: "CONSULTORES"
   - image_path: /assets/images/banner.png
     alt: "SE PREOCUPE COM O PRODUTO"
     title: "SE PREOCUPE COM O PRODUTO"
@@ -49,15 +49,28 @@ consultores:
     title: "TENHA GANHOS ILIMITADOS"
     excerpt: "Tenha clareza do seu balanço financeiro e fefina sua retirada mensal da empresa. Na Nortan o que você produz é seu!"
 funciona:
-  - title: "COMO FUNCIONA?"
+  title: "COMO FUNCIONA?"
   - image_path: /assets/images/banner.png
     alt: "FAÇA PARTE DA EQUIPE"
     title: "FAÇA PARTE DA EQUIPE"
-    excerpt: "Consultor(a) Técnico(a)<br><br><ul><li>Negocie valor com o gestor(a) do contrato através da plataforma</li><li>Execute o serviço combinado</li><li>Receba o valor acertado na sua Carteira Nortan</li><li>Defina o valor mensal de retirada</li><li>Receba ;)</li></ul>"
+    excerpt: "Consultor(a) Técnico(a)
+
+    - Negocie valor com o gestor(a) do contrato através da plataforma
+    - Execute o serviço combinado
+    - Receba o valor acertado na sua Carteira Nortan
+    - Defina o valor mensal de retirada
+    - Receba ;)"
   - image_path: /assets/images/banner.png
     alt: "FECHE E GERENCIE CONTRATOS"
     title: "FECHE E GERENCIE CONTRATOS"
-    excerpt: "Consultor(a) Gestor(a)<br><ul><li>Negocie e feche um contrato</li><li>repasse 30% do valor do contrato para Nortan. A empresa fará a gestão financeira e administrativa do contrato, pagando nota fiscal e dando o sporte necessário.</li><li>Negocie preço e serviço com a equipe Nortan de Consultores através da plataforma</li><li>Receba o valor na sua Carteira Nortan</li><li>Defina sua Retirada Mensal</li><li>Receba ;)</li></ul>"
+    excerpt: "Consultor(a) Gestor(a)
+
+    - Negocie e feche um contrato
+    - repasse 30% do valor do contrato para Nortan. A empresa fará a gestão financeira e administrativa do contrato, pagando nota fiscal e dando o sporte necessário.
+    - Negocie preço e serviço com a equipe Nortan de Consultores através da plataforma
+    - Receba o valor na sua Carteira Nortan
+    - Defina sua Retirada Mensal
+    - Receba ;)"
 ---
 
 {% include feature_row id="intro" type="center" %}
