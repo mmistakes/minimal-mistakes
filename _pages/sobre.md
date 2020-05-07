@@ -5,7 +5,6 @@ permalink: /sobre/
 intro:
   - excerpt: "Proporcionamos um ambiente colaborativo de consultores de alta performance, transformando conhecimento e informação em resultados financeiros"
 missao:
-  title: "NOSSA MISSÃO"
   - image_path: /assets/images/banner.png
     alt: "DESENVOLVIMENTO"
     title: "DESENVOLVIMENTO"
@@ -23,7 +22,6 @@ missao:
     title: "QUALIDADE"
     excerpt: "Ter profissionais de qualidade e alto desempenho"
 consultores:
-  title: "CONSULTORES"
   - image_path: /assets/images/banner.png
     alt: "SE PREOCUPE COM O PRODUTO"
     title: "SE PREOCUPE COM O PRODUTO"
@@ -49,7 +47,6 @@ consultores:
     title: "TENHA GANHOS ILIMITADOS"
     excerpt: "Tenha clareza do seu balanço financeiro e fefina sua retirada mensal da empresa. Na Nortan o que você produz é seu!"
 funciona:
-  title: "COMO FUNCIONA?"
   - image_path: /assets/images/banner.png
     alt: "FAÇA PARTE DA EQUIPE"
     title: "FAÇA PARTE DA EQUIPE"
@@ -62,8 +59,8 @@ funciona:
 
 {% include feature_row id="intro" type="center" %}
 
-{% include feature_row id="missao"%}
+{% include feature_row id="missao" title="NOSSA MISSÃO" %}
 
-{% include feature_row id="consultores"%}
+{% include feature_row id="consultores" title="CONSULTORES" %}
 
-{% include feature_row id="funciona" type="left" %}
+{% include feature_row id="funciona" type="left" title="COMO FUNCIONA?" %}
