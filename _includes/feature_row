@@ -5,7 +5,7 @@
 {% endif %}
 
 <div class="feature__wrapper">
-  % if include.title %}
+  {% if include.title %}
     <h2 class="archive__item-title">{{ include.title }}</h2>
   {% endif %}
   {% for f in feature_row %}
