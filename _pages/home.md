@@ -1,13 +1,14 @@
 ---
+title: ""
 layout: splash
 permalink: /
 header:
-overlay_color: "#000"
-overlay_filter: "0.5"
-overlay_image: /assets/images/banner.png
-cta_label: "CADASTRE-SE"
-cta_url: "https://docs.google.com/forms/d/e/1FAIpQLSfHnyM8sDvzFQN2lWHaN_jiyhdfR44aeFlbb0WwxzeydtD-0w/viewform"
-caption: ""
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/banner.png
+  cta_label: "CADASTRE-SE"
+  cta_url: "https://docs.google.com/forms/d/e/1FAIpQLSfHnyM8sDvzFQN2lWHaN_jiyhdfR44aeFlbb0WwxzeydtD-0w/viewform"
+  caption: ""
 excerpt: "CONHEÇA A NORTAN CONSULTORES"
 nortan_intro:
   - image_path: /assets/images/banner.png
@@ -15,7 +16,7 @@ nortan_intro:
     title: "A NORTAN"
     excerpt: "Nortan Consultores foi fundada em 2020 com um único propósito: Transformar conhecimento e informação em resultados financeiros em benefício de nossos consultores e parceiros.<br><br>A Nortan proporciona um ambiente colaborativo de consultores de alta performance voltados para a prestação de serviços relacionados à produção, gestão e solução de espaços para construção civil e meio ambiente.<br><br>Aqui você terá acesso a maior rede colaborativa de consultores de engenharia e arquitetura. Uma rede de conexões que proporciona multiplos canais de venda no mercado, segurança, visibilidade e valorização profissional.<br><br>Trabalhe com a Nortan de qualquer lugar do Brasil e descubra o seu valor."
     url: "#test-link"
-    btn_label: "Saiba Mais"
+    btn_label: "Saiba mais"
     btn_class: "btn--info"
 areas_atuacao:
   - title: "ÁREAS DE ATUAÇÃO"
@@ -43,5 +44,7 @@ contato:
 {% include feature_row id="areas_atuacao" type="center" %}
 
 {% include feature_row %}
+
+{% include feature_row id="contato" type="center" %}
 
 {% include contact_map.html %}
