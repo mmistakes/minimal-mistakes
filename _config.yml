@@ -97,7 +97,7 @@ author:
   avatar           : "/assets/images/bio-author.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Deep Reinforcement Learning Researcher. Aspiring to create a universal intelligent agents that will teach me back and maybe turn me into such an agent myself."
   location         : "Kobe, Japan, Earth, Sol"
-  email            : dosssman[at]hotmail.fr
+  # email            : dosssman[at]hotmail.fr
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
