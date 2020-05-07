@@ -17,7 +17,7 @@ nortan_intro:
     alt: "A NORTAN"
     title: "A NORTAN"
     excerpt: "Nortan Consultores foi fundada em 2020 com um único propósito: Transformar conhecimento e informação em resultados financeiros em benefício de nossos consultores e parceiros.<br><br>A Nortan proporciona um ambiente colaborativo de consultores de alta performance voltados para a prestação de serviços relacionados à produção, gestão e solução de espaços para construção civil e meio ambiente.<br><br>Aqui você terá acesso a maior rede colaborativa de consultores de engenharia e arquitetura. Uma rede de conexões que proporciona multiplos canais de venda no mercado, segurança, visibilidade e valorização profissional.<br><br>Trabalhe com a Nortan de qualquer lugar do Brasil e descubra o seu valor."
-    btn_url: "/sobre/"
+    url: "/sobre/"
     btn_label: "Saiba mais"
     btn_class: "btn--info"
 areas_atuacao:
