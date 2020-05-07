@@ -9,8 +9,7 @@ header:
   cta_label: "CADASTRE-SE"
   cta_url: "https://docs.google.com/forms/d/e/1FAIpQLSfHnyM8sDvzFQN2lWHaN_jiyhdfR44aeFlbb0WwxzeydtD-0w/viewform"
   caption: ""
-  class:
-    - text-justify
+  class: "text-center"
 excerpt: "CONHEÇA A NORTAN CONSULTORES"
 nortan_intro:
   - image_path: /assets/images/banner.png
