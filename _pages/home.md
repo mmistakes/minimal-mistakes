@@ -10,7 +10,7 @@ cta_url: "https://docs.google.com/forms/d/e/1FAIpQLSfHnyM8sDvzFQN2lWHaN_jiyhdfR4
 caption: ""
 excerpt: "CONHEÇA A NORTAN CONSULTORES"
 nortan_intro:
-  - image_path: unsplash-gallery-image-2-th.jpg
+  - image_path: /assets/images/banner.png
     alt: "placeholder image 2"
     title: "A NORTAN"
     excerpt: "Nortan Consultores foi fundada em 2020 com um único propósito: Transformar conhecimento e informação em resultados financeiros em benefício de nossos consultores e parceiros.<br>A Nortan proporciona um ambiente colaborativo de consultores de alta performance voltados para a prestação de serviços relacionados à produção, gestão e solução de espaços para construção civil e meio ambiente.<br>Aqui você terá acesso a maior rede colaborativa de consultores de engenharia e arquitetura. Uma rede de conexões que proporciona multiplos canais de venda no mercado, segurança, visibilidade e valorização profissional.<br>Trabalhe com a Nortan de qualquer lugar do Brasil e descubra o seu valor."
@@ -23,35 +23,17 @@ areas_atuacao:
 Abaixo segue nossa linha da Construção Civil"
 feature_row:
   - image_path: /assets/images/banner.png
-    alt: "placeholder image 1"
-    title: "Placeholder 1"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    alt: "ARQUITETURA E DESIGN E INTERIORES"
+    title: "ARQUITETURA E DESIGN E INTERIORES"
+    excerpt: "Somos especializados em projetos residenciais. Fazemos o atendimento personalizado para concepção do projeto junto ao cliente, cuidando do exterior e do interior da sua residência até que seu lar esteja pronto para morar."
   - image_path: /assets/images/banner.png
-    alt: "placeholder image 2"
-    title: "Placeholder 2"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--inverse"
-  - image_path: unsplash-gallery-image-3-th.jpg
-    title: "Placeholder 3"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-feature_row3:
+    alt: "PROJETOS COMPLEMENTARES"
+    title: "PROJETOS COMPLEMENTARES"
+    excerpt: "Planejamos toda a infraestrutura de suporte do seu empreendimento. projetos estruturais econômicos, projetos hidrossanitário e elétrico sustentáveis, buscando a reutilização da água e aproveitamento de energia de fontes renováveis."
   - image_path: /assets/images/banner.png
-    alt: "placeholder image 2"
-    title: "Placeholder Image Right Aligned"
-    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Right aligned with `type="right"`'
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--inverse"
-feature_row4:
-  - image_path: /assets/images/banner.png
-    alt: "placeholder image 2"
-    title: "Placeholder Image Center Aligned"
-    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Centered with `type="center"`'
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--inverse"
+    alt: "IMPERMEABIIZAÇÃO"
+    title: "IMPERMEABIIZAÇÃO"
+    excerpt: "Ter tranquilidade em tempos chuvosos não tem preço. Somos especializados em identificação de pontos de infiltração, levando soluções eficientes para sua obra. Executamos pensando na segurança à longo prazo, por isso damos 5 anos de garantia"
 ---
 
 {% include feature_row id="nortan_intro" type="left" %}
