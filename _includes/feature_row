@@ -6,7 +6,7 @@
 
 {% if include.title %}
 <div class="feature__wrapper" style="border-bottom: 0px; margin-bottom: 0em;">
-    <h1 class="archive__item-title text-center">{{ include.title }}</h2>
+    <h1 class="archive__item-title text-center">{{ include.title }}</h1>
 </div>
 {% endif %}
 <div class="feature__wrapper">
