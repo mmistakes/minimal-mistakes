@@ -1,6 +1,6 @@
 ---
 title: "Exploration schemes in Deep Q-Networks (DQN)"
-excerpt: "Some results and observations of experiments on Deep Q-Networks"
+excerpt: "Investigating the impact of various exploration schemes on the DQN performance and learnign efficiency."
 tags:
   - Reinforcement Learning
   - Implementation
