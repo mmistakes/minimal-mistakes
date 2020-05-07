@@ -342,6 +342,7 @@
   position: relative;
   margin-bottom: 2em;
   font-size: 1.125em;
+  text-align: justify;
 
   @include breakpoint($small) {
     float: left;
@@ -525,7 +526,6 @@
   .feature__item--center,
   .feature__item--right {
     font-size: 1em;
-    text-align: justify;
   }
 }
 
