@@ -16,7 +16,7 @@ Minimal Mistakes has been developed as a [Gem-based theme](http://jekyllrb.com/d
 
 ## Installing the theme
 
-If you're running Jekyll v3.5+ and self-hosting you can quickly install the theme as a Ruby gem.
+If you're running Jekyll v3.7+ and self-hosting you can quickly install the theme as a Ruby gem.
 
 [^structure]: See [**Structure** page]({{ "/docs/structure/" | relative_url }}) for a list of theme files and what they do.
 
@@ -38,7 +38,7 @@ To install as a Gem-based theme:
    gem "minimal-mistakes-jekyll"
    ```
 
-2. Fetch and update bundled gems by running the following [Bundler](http://bundler.io/) command:
+2. Fetch and update bundled gems by running the following [Bundler](https://bundler.io/) command:
 
    ```bash
    bundle
@@ -68,7 +68,7 @@ To install as a remote theme:
 
 2. Add `jekyll-include-cache` to the `plugins` array of your `_config.yml`.
 
-3. Fetch and update bundled gems by running the following [Bundler](http://bundler.io/) command:
+3. Fetch and update bundled gems by running the following [Bundler](https://bundler.io/) command:
 
    ```bash
    bundle
@@ -169,7 +169,7 @@ Start by removing the following folders and any files within them:
 |  └── js
 ```
 
-You won't need these anymore as they're bundled with the theme gem --- unless you intend to [override them](http://jekyllrb.com/docs/themes/#overriding-theme-defaults).
+You won't need these anymore as they're bundled with the theme gem --- unless you intend to [override them](https://jekyllrb.com/docs/themes/#overriding-theme-defaults).
 
 **Note:** When clearing out the `assets` folder be sure to leave any files you've added and need. This includes images, CSS, or JavaScript that aren't already [bundled in the theme](https://github.com/mmistakes/minimal-mistakes/tree/master/assets). 
 {: .notice--warning}
@@ -177,7 +177,7 @@ You won't need these anymore as they're bundled with the theme gem --- unless yo
 From `v4.5.0` onwards, you don't have to maintain a copy of the default data files viz. `_data/ui-text.yml` and `_data/navigation.yml` either.
 The default files are read-in automatically via the [`jekyll-data`](https://github.com/ashmaroli/jekyll-data) plugin.
 
-If you customized any of these files leave them alone, and only remove the untouched ones. If done correctly your modified versions should [override](http://jekyllrb.com/docs/themes/#overriding-theme-defaults) the versions bundled with the theme and be used by Jekyll instead.
+If you customized any of these files leave them alone, and only remove the untouched ones. If done correctly your modified versions should [override](https://jekyllrb.com/docs/themes/#overriding-theme-defaults) the versions bundled with the theme and be used by Jekyll instead.
 
 #### Update Gemfile
 
