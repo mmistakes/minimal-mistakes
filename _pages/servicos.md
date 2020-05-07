@@ -1,7 +1,7 @@
 ---
 title: " "
 layout: splash
-permalink: /sobre/
+permalink: /servicos/
 intro:
   - excerpt: "Superando suas expectativas"
 servicos:
@@ -64,4 +64,4 @@ servicos:
 
 {% include feature_row id="intro" type="center" title="SERVIÇOS" %}
 
-{% include feature_row id="missao" title="NOSSA MISSÃO" %}
+{% include feature_row id="servicos"%}
