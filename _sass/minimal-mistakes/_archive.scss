@@ -240,8 +240,10 @@
 
 .feature__wrapper {
   @include clearfix();
-  margin-bottom: 2em;
   border-bottom: 1px solid $border-color;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 
   .archive__item-title {
     margin-bottom: 0;
