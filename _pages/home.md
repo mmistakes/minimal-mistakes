@@ -51,4 +51,4 @@ contato:
 
 {% include feature_row id="contato" type="center" propeties='data-aos="fade-right"' %}
 
-{% include contact_map.html propeties='data-aos="fade-left"' %}
+{% include contact_map.html %}
