@@ -85,6 +85,6 @@ servicos:
     - Modelagem Ecológica de Lagos e reservatórios"
 ---
 
-{% include feature_row id="intro" type="center" title="SERVIÇOS" %}
+{% include feature_row id="intro" type="center" title="SERVIÇOS" propeties='data-aos="fade-right"' %}
 
-{% include feature_row id="servicos" %}
+{% include feature_row id="servicos" propeties='data-aos="fade-left"' %}
