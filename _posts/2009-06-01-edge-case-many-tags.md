@@ -48,4 +48,5 @@ tags:
   - C#
 ---
 
-This post has many tags.
+This post has many tags.  
+В этом сообщении много тэгов.

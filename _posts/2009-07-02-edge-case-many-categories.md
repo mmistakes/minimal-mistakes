@@ -19,4 +19,5 @@ tags:
   - edge case
 ---
 
-This post has many categories.
+This post has many categories.  
+В этом сообщении много категорий.
