@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "Início"
-    url: https://nortanprojetos.com
+    url: /
   - title: "A Empresa"
     url: /sobre/
   - title: "Serviços"
