@@ -50,24 +50,38 @@ funciona:
   - image_path: /assets/images/banner.png
     alt: "FAÇA PARTE DA EQUIPE"
     title: "FAÇA PARTE DA EQUIPE"
-    excerpt: "Consultor(a) Técnico(a)<br><br>
-    - Negocie valor com o gestor(a) do contrato através da plataforma<br>
-    - Execute o serviço combinado<br>
-    - Receba o valor acertado na sua Carteira Nortan<br>
-    - Defina o valor mensal de retirada<br>
+    excerpt: "Consultor(a) Técnico(a)
+
+
+    - Negocie valor com o gestor(a) do contrato através da plataforma
+
+    - Execute o serviço combinado
+
+    - Receba o valor acertado na sua Carteira Nortan
+
+    - Defina o valor mensal de retirada
+
     - Receba ;)"
   - image_path: /assets/images/banner.png
     alt: "FECHE E GERENCIE CONTRATOS"
     title: "FECHE E GERENCIE CONTRATOS"
-    excerpt: "Consultor(a) Gestor(a)<br><br>
-    - Negocie e feche um contrato<br>
-    - Repasse 30% do valor do contrato para Nortan. A empresa fará a gestão financeira e administrativa do contrato, pagando nota fiscal e dando o sporte necessário<br>
-    - Negocie preço e serviço com a equipe Nortan de Consultores através da plataforma<br>
-    - Receba o valor na sua Carteira Nortan<br>
-    - Defina sua Retirada Mensal<br>
+    excerpt: "Consultor(a) Gestor(a)
+
+
+    - Negocie e feche um contrato
+
+    - Repasse 30% do valor do contrato para Nortan. A empresa fará a gestão financeira e administrativa do contrato, pagando nota fiscal e dando o sporte necessário
+
+    - Negocie preço e serviço com a equipe Nortan de Consultores através da plataforma
+
+    - Receba o valor na sua Carteira Nortan
+
+    - Defina sua Retirada Mensal
+
     - Receba ;)"
 ---
 
+{% include figure image_path="/assets/images/banner.png" alt="this is a placeholder image" propeties='data-aos="fade-right"' %}
 {% include feature_row id="intro" type="center" propeties='data-aos="fade-right"' %}
 
 {% include feature_row id="missao" title="NOSSA MISSÃO" propeties='data-aos="fade-left"' %}
