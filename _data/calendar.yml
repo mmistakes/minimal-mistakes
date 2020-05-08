@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Vera 3 Mathe entfällt",
-    "title": "Vera 3 Mathe entfällt",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MHJwdjJrOHBta21nYWxucGE3c2dpNjRjamcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2020-05-07",
-      "date_time": null
-    },
-    "end": {
-      "date": "2020-05-08",
-      "date_time": null
-    },
-    "created": "2020-03-03T12:41:02.000Z",
-    "updated": "2020-05-04T14:27:47.618Z"
-  },
-  {
-    "image_path": null,
     "alt": "unterrichtsfrei",
     "title": "unterrichtsfrei",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2020-03-02T15:14:24.000Z",
     "updated": "2020-03-02T15:14:24.999Z"
+  },
+  {
+    "image_path": null,
+    "alt": "unterrichtsfrei",
+    "title": "unterrichtsfrei",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=M2RxNWoxajJoa3ZsN2pvMGJjcHIydm83Z2YgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2020-05-22",
+      "date_time": null
+    },
+    "end": {
+      "date": "2020-05-23",
+      "date_time": null
+    },
+    "created": "2019-08-22T08:03:28.000Z",
+    "updated": "2020-05-03T08:24:30.586Z"
   }
 ]
