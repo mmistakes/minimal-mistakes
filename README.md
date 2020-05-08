@@ -2,6 +2,36 @@
 
 ---
 
+## How to Serve Locally
+
+To run this website locally, you need to install the dependencies following the instructions below:
+
+1. Install Ruby and other dependencies
+
+```
+sudo apt-get install ruby-full build-essential zlib1g-dev
+```
+
+2. Install Jelkll and Blunder
+
+```
+sudo gem install jekyll bundler
+```
+
+3. Go to project folder and install project dependencies
+
+```
+bundle
+```
+
+4. After install dependencies just start to serve the website
+
+```
+bundle exec jekyll serve
+```
+
+5. Open a browser with this url: `localhost:4000`
+
 ## Credits
 
 ### Creator
