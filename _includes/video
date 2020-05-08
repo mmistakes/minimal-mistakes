@@ -1,5 +1,6 @@
 {% capture video_id %}{{ include.id }}{% endcapture %}
 {% capture video_provider %}{{ include.provider }}{% endcapture %}
+{% capture video_danmaku %}{{ include.danmaku | default: 0 }}{% endcapture %}
 
 <!-- Courtesy of embedresponsively.com //-->
 <div class="responsive-video-container">
@@ -10,6 +11,6 @@
 {% elsif video_provider == "google-drive" %}
   <iframe src="https://drive.google.com/file/d/{{ video_id }}/preview" frameborder="0" allowfullscreen></iframe>
 {% elsif video_provider == "bilibili" %}
-  <iframe src="https://player.bilibili.com/player.html?bvid={{ video_id }}&page=1&as_wide=1&high_quality=1&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+  <iframe src="https://player.bilibili.com/player.html?bvid={{ video_id }}&page=1&as_wide=1&high_quality=1&danmaku={{ video_danmaku }}" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 {% endif %}
 </div>

@@ -179,6 +179,7 @@ Embed a video from YouTube, Vimeo, Google Drive, or bilibili that responsively s
 | ---------- | ------------ | ---------------------------------------------------------- |
 | `id`       | **Required** | ID of the video                                            |
 | `provider` | **Required** | Hosting provider of the video: `youtube`, `vimeo`, `google-drive`, or `bilibili` |
+| `danmaku`  | Optional     | Bilibili only, [details below](#Bilibili)                  |
 
 ### YouTube
 
@@ -238,6 +239,32 @@ header:
   video:
     id: 212731897
     provider: google-drive
+```
+
+### bilibili
+To embed the following Vimeo video at url `https://www.bilibili.com/video/BV1E7411e7hC` into a post or page's main content you'd use:
+
+```liquid
+{% raw %}{% include video id="BV1E7411e7hC" provider="bilibili" %}{% endraw %}
+```
+{% include video id="BV1E7411e7hC" provider="bilibili"%}
+
+If you want to able the danmaku (弹幕) for the embed video (by default it is disabled), use following format: 
+
+```liquid
+{% raw %}{% include video id="BV1E7411e7hC" provider="bilibili" danmaku="1" %}{% endraw %}
+```
+
+{% include video id="BV1E7411e7hC" provider="bilibili" danmaku="1" %}
+
+To embed it as a video header you'd use the following YAML Front Matter:
+
+```yaml
+header:
+  video:
+    id: BV1E7411e7hC
+    provider: bilibili
+    danmaku: 1
 ```
 
 ## Table of contents
