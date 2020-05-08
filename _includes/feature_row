@@ -5,11 +5,11 @@
 {% endif %}
 
 {% if include.title %}
-<div class="feature__wrapper" style="border-bottom: 0px; margin-bottom: 0.5em;">
+<div class="feature__wrapper" {{ include.propeties }} style="border-bottom: 0px; margin-bottom: 1em;">
     <h1 class="archive__item-title text-center">{{ include.title }}</h1>
 </div>
 {% endif %}
-<div class="feature__wrapper">
+<div class="feature__wrapper" {{ include.propeties }}>
   {% for f in feature_row %}
     <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
       <div class="archive__item">
