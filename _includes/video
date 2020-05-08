@@ -1,5 +1,6 @@
 {% capture video_id %}{{ include.id }}{% endcapture %}
 {% capture video_provider %}{{ include.provider }}{% endcapture %}
+{% capture video_danmaku %}{{ include.danmaku }}{% endcapture %}
 
 <!-- Courtesy of embedresponsively.com //-->
 <div class="responsive-video-container">
@@ -9,5 +10,7 @@
   <iframe src="https://www.youtube-nocookie.com/embed/{{ video_id }}" frameborder="0" allowfullscreen></iframe>
 {% elsif video_provider == "google-drive" %}
   <iframe src="https://drive.google.com/file/d/{{ video_id }}/preview" frameborder="0" allowfullscreen></iframe>
+{% elsif video_provider == "bilibili" %}
+  <iframe src="https://player.bilibili.com/player.html?bvid={{ video_id }}&as_wide=1&high_quality=1&danmaku={{ video_danmaku | default: 0 }}" allowfullscreen width="100%" scrolling="no" frameborder="0"></iframe>
 {% endif %}
 </div>
