@@ -18,7 +18,7 @@ I2C 프로토콜은 두 개의 라인으로 데이터를 교환하는 시리얼 
 </figure>
 
 **Notice:** 본 포스트에서의 `Master`는 I2C 통신을 시작하는 모듈로서 `Slave` 모듈을 제어하거나 `Slave` 모듈로부터 데이터를 요청하는 디바이스를 통칭한다.
-{: .notice-success}
+{: .notice--success}
 
 
 ### 3.1 I2C 프로토콜 특징
