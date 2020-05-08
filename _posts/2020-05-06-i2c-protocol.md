@@ -40,7 +40,7 @@ I2C 통신에서 하나의 `Master`로 여러 개의 `Slave`를 제어하는 경
 데이터 전송 속도는 `100 kbps` 또는 `400 kbps` 값을 사용하고, 다음의 그림과 같이 I2C 의 내부 구조는 Open-Drain 형태로 되어 있기 때문에, `1 = High` 신호를 출력하기 위해서는 외부에 **5k ~ 10k** 정도의 Pull-up 저항을 연결해줘야 한다 (구체적인 스펙은 I2C 모듈에 따라 상이하다).
 
 <figure style="width: 100%">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/i2c-fig-3.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/i2c-fig-3p5.png" alt="">
 </figure>
 
 <!-- 다른 시리얼 통신과 비교해서 하드웨어는 복잡하지만, 이 또한 대부분의 임베디드 보드에서 제공해줄 것이다.-->
