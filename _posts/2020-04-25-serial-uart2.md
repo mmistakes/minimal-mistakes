@@ -9,7 +9,7 @@ toc: true
 toc_sticky: true
 ---
 
-## 2. 시리얼 통신 예제
+## 2. 시리얼 통신 규격
 
 **Notice:** 본 포스트는 **[IoT (1) - 시리얼 통신](https://enidanny.github.io/iot/serial-uart/)** 포스트의 후반부 내용과 이어집니다.
 {: .notice--info}
