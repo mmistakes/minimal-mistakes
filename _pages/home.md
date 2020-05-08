@@ -11,7 +11,7 @@ header:
   cta_arrow: "true"
   caption: ""
   class: "text-center"
-excerpt: "CONHEÇA A NORTAN CONSULTORES"
+excerpt: "CONHEÇA A NORTAN"
 nortan_intro:
   - image_path: /assets/images/banner.png
     alt: "A NORTAN"
@@ -40,7 +40,7 @@ feature_row:
     excerpt: "Ter tranquilidade em tempos chuvosos não tem preço. Somos especializados em identificação de pontos de infiltração, levando soluções eficientes para sua obra. Executamos pensando na segurança à longo prazo, por isso damos 5 anos de garantia"
 contato:
   - title: "CONTATO"
-    excerpt: "Rua Hamilton de Barros Soutinho, 1866, Sala 12, Jatiúca, Maceió, Alagoas<br><br>contato@nortanprojetos.com<br><br>(82) 99916-4578"
+    excerpt: "Rua Hamilton de Barros Soutinho, 1866, Sala 12, Jatiúca, Maceió, Alagoas<br>contato@nortanprojetos.com<br>(82) 99916-4578"
 ---
 
 <a name="intro"></a>{% include feature_row id="nortan_intro" type="left"%}
