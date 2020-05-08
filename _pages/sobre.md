@@ -68,10 +68,10 @@ funciona:
     - Receba ;)"
 ---
 
-{% include feature_row id="intro" type="center" %}
+{% include feature_row id="intro" type="center" propeties='data-aos="fade-right"' %}
 
-{% include feature_row id="missao" title="NOSSA MISSÃO" %}
+{% include feature_row id="missao" title="NOSSA MISSÃO" propeties='data-aos="fade-left"' %}
 
-{% include feature_row id="consultores" title="CONSULTORES" %}
+{% include feature_row id="consultores" title="CONSULTORES" propeties='data-aos="fade-up"' %}
 
-{% include feature_row id="funciona" type="left" title="COMO FUNCIONA?" %}
+{% include feature_row id="funciona" type="left" title="COMO FUNCIONA?" propeties='data-aos="fade-right"' %}

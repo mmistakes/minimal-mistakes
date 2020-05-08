@@ -7,8 +7,8 @@ header:
   overlay_filter: "0.5"
   overlay_image: /assets/images/banner.png
   cta_label: "CADASTRE-SE"
-  cta_url: "https://docs.google.com/forms/d/e/1FAIpQLSfHnyM8sDvzFQN2lWHaN_jiyhdfR44aeFlbb0WwxzeydtD-0w/viewform"
-  cta_class: "btn--success"
+  cta_url: "#intro"
+  cta_arrow: "true"
   caption: ""
   class: "text-center"
 excerpt: "CONHEÇA A NORTAN CONSULTORES"
@@ -43,12 +43,12 @@ contato:
     excerpt: "Rua Hamilton de Barros Soutinho, 1866, Sala 12, Jatiúca, Maceió, Alagoas<br><br>contato@nortanprojetos.com<br><br>(82) 99916-4578"
 ---
 
-{% include feature_row id="nortan_intro" type="left" %}
+<a name="intro"></a>{% include feature_row id="nortan_intro" type="left"%}
 
-{% include feature_row id="areas_atuacao" type="center" %}
+{% include feature_row id="areas_atuacao" type="center" propeties='data-aos="fade-left"' %}
 
-{% include feature_row %}
+{% include feature_row propeties='data-aos="fade-up"' %}
 
-{% include feature_row id="contato" type="center" %}
+{% include feature_row id="contato" type="center" propeties='data-aos="fade-right"' %}
 
-{% include contact_map.html %}
+{% include contact_map.html propeties='data-aos="fade-left"' %}
