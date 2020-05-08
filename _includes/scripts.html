@@ -6,7 +6,7 @@ script contains "://" %} {% capture script_path %}{{ script }}{% endcapture %}
 {% endfor %} {% else %}
 <script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
 <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="{{ '/assets/js/aos.js' | relative_url }}"></script>
 <script>
   AOS.init({
     duration: 1200,
