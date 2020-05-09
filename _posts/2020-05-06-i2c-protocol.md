@@ -51,7 +51,7 @@ I2C 통신에서 공통의 `SCL/SDA` 라인을 이용해 하나의 `Master`로 �
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/i2c-fig-4.png" alt="">
 </figure>
 
-Start 조건 이후, `Master`는 통신하고자 하는 `Slave`의 주소 값 `7 bits`와 R/W 값 `1 bit`를 전송한다. R/W 값은 Read 또는 Write 동작을 구분하는 비트이고, `0` 값이 Write 에 해당된다. 
+Start 조건 이후, `Master`는 통신하고자 하는 `Slave`의 주소 값 `7 bits`와 R/W 값 `1 bit`를 전송한다. R/W 값은 Read(`1`)와 Write(`0`) 동작을 구분하는 비트이다.
 
 만약, 입력한 `Slave` 주소에 대응되는 모듈이 있는 경우 해당 `Slave`는 `Master`로 `ACK` 신호를 전달한다. `ACK` 신호를 전달 받은 `Master`는 Write 하고자 하는 `Slave` 내부의 데이터 영역을 선택하기 위해 `8 bits` 크기의 레지스터 정보를 전송한다. 이 과정은 Write 가능한 레지스터에 대해 수행되어야하며, 문제가 없을 경우 `Slave`는 다시 `ACK` 신호를 전달한다. 레지스터 선택을 완료한 이후, `Master`는 해당 레지스터에 원하는 데이터를 `BYTE` 단위로 전송하며, 하나의 `BYTE` 전송이 끝날 때마다 `Slave`로부터 `ACK` 신호를 수신한다.
 
@@ -59,11 +59,14 @@ Start 조건 이후, `Master`는 통신하고자 하는 `Slave`의 주소 값 `7
 
 ### 3.3 I2C Read 시퀀스
 
-<!--주소가 10 bit 인 경우는 어떻게 주소를 보내는지 명시
+Read 시퀀스의 경우는 아래 그림과 같은데, 특이한 점은 Read 시작 후 `Slave` 주소 다음에 오는 R/W 비트 값이 `0`이라는 점이다.
 
- IoT (4) - I2C 프로토콜 예제 
+<figure style="width: 100%">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/i2c-fig-5.png" alt="">
+</figure>
 
-대충 찾아보면 라이브러리는 다 있어
+`Master`에서는 Read 동작을 수행하는 경우에도, `Slave`에게 어떤 레지스터 값을 읽어올지 알려줘야 하기 때문에 Write 동작을 먼저 수행한다. 그렇기 때문에, 처음에 `Slave` 주소를 전송하고 레지스터를 선택하는 시점까지는 Read/Write 시퀀스가 동일한 것을 볼 수 있다.
 
-그래도 왜 그렇게 쓰이는지를 알아야 한다
--->
+레지스터를 선택 후, Read 시퀀스에서는 `Master`가 Start 신호를 다시 전송하며(Repeated START), `Slave` 주소와 함께 R/W 비트 값을 `1`로 전송하면, `Slave`에서는 이전에 선택된 레지스터의 값을 `Master`로 전송해준다.
+
+Read 종료 시에는 `Master`에서 `Slave`로 `NACK` 신호를 전송하며, Stop 조건을 끝으로 시퀀스가 마무리된다.
