@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "unterrichtsfrei",
-    "title": "unterrichtsfrei",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NGV2Y2lkamRzZWNpcHNuZ2pvajEyZ2VwMnAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2020-05-08",
-      "date_time": null
-    },
-    "end": {
-      "date": "2020-05-09",
-      "date_time": null
-    },
-    "created": "2020-03-02T15:15:15.000Z",
-    "updated": "2020-03-02T15:15:15.822Z"
-  },
-  {
-    "image_path": null,
     "alt": "Vera 3 Deutsch Lesen entfällt",
     "title": "Vera 3 Deutsch Lesen entfällt",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2019-08-22T08:03:28.000Z",
     "updated": "2020-05-03T08:24:30.586Z"
+  },
+  {
+    "image_path": null,
+    "alt": "4. Schulkonferenz",
+    "title": "4. Schulkonferenz",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MjlzZnNibGszcm91NmpydTVlMnV1aDFrODUgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2020-06-04T15:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2020-06-04T17:00:00+02:00"
+    },
+    "created": "2020-03-02T15:14:52.000Z",
+    "updated": "2020-03-02T15:14:52.045Z"
   }
 ]
