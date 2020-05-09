@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/jekyll/jekyll.git
-  revision: 1f39f7a96e071ce6eb014cf57b30513d4a1478e3
+  revision: a5112f39641ace64808350d38dfa3254db719221
   specs:
     jekyll (4.0.0)
       addressable (~> 2.4)
@@ -97,7 +97,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler
-  jekyll!
+  jekyll (~> 4.0)!
   minimal-mistakes-jekyll!
   rake (>= 12.3.3)
 
