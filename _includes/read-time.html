@@ -1,9 +1,12 @@
+<i class="far fa-fw fa-clock" aria-hidden="true"></i>
 {% assign words_per_minute = page.words_per_minute | default: site.words_per_minute | default: 200 %}
 
 {% if post.read_time %}
   {% assign words = post.content | strip_html | number_of_words %}
+  {% assign date = post.date %}
 {% elsif page.read_time %}
   {% assign words = page.content | strip_html | number_of_words %}
+  {% assign date = page.date %}
 {% endif %}
 
 {% if words < words_per_minute %}
@@ -13,3 +16,7 @@
 {% else %}
   {{ words | divided_by:words_per_minute }} {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
 {% endif %}
+
+{% if include.type == "grid" %}<br \>{% else %}|{% endif %}
+<i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+<time datetime="{{ date | date_to_xmlschema }}">{{ date | date: "%B %-d, %Y" }}</time>
