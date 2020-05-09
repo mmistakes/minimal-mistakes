@@ -26,6 +26,7 @@ First, we present the 4 exploration schemes we investigated in this little side 
 
 ### 1. Greedy exploration:
 
+Following this exploration scheme, the agent will always take the action it considers best. This method is known to be vulnerable to the *stuck local optimum* problem, especially on environment that require "finesse" in exploration.
 
 ### 2. Boltzman-based exploration:
 
@@ -53,28 +54,40 @@ This allows for a better fine-tuning and higher final performance overall.
 
 ### 3-b. Linearly annealed $\epsilon$
 
-To mitigate the "wasteful" sampling that is likely to occur when the $\espilon$ is a constant, annealing the latter as training progress was proposed.
+To mitigate the *wasteful* sampling that is likely to occur when the $\epsilon$ is a constant, annealing the latter as training progress was proposed.
 As the number of environment interaction increases, the agent is made to rely more and more on the policy it actually learned, reducing the random actions.
 
 ## Experiments and Results
 
 We initially investigated the impact of each exploration scheme in 4 toy problems provided by the OpenAI Gym package.
+Regarding the setting of the experiments, the non-annealed $\epsilon$-greedy explotation scheme was trained with $\epsilon = 0.15$.
+For the linearly annealed $\epsilon$-greedy scheme, however, the $\epsilon$-constant was set to decay from $0.4$ to $0.01$ over first 80% of the total training steps, after which the agent defaults back to a purely greedy policy.
 
 ### 1. CartPole-v0
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/dqn_exploration/dqn_exploration_cartpole.png" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/dqn_exploration/dqn_exploration_cartpole.svg" alt="">
+
+First, given the *straightforward* nature of this toy problem, *greedy* exploration schemes seem to work best.
+
+This is further reinforced by the fact that the *non-annealed $\epsilon$-greedy* performas poorly, while the *linearly annealed* one's performance slowly increases as the $\epsilon$ decays.**In retrospect, decaying over 80% of the total training step might be overly caustious. Reducing the interval on which the $\epsilon$ is decayed should be more efficient.**
 
 ### 2. MountainCar-v0
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/dqn_exploration/dqn_exploration_mountaincar.png" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/dqn_exploration/dqn_exploration_mountaincar.svg" alt="">
+
+Slightly similar to the `CartPole-v0` environment, the *greedy* policy achieves the best reward in the fastest.
+Surprisingly, the Boltzman-based exploration scheme, although supposedly greedy, has the worst performance on this environment.
+
+The non-annealed $\epsilon$-greedy policy seems to get stuck in a local optimum, while the linearly annealed one slowly improves and converges to the optimal policy, taking almost 70% more sample than the purely greedy policy.
+Here again, the having the $\epsilon$ decay faster would likely result in a faster convergence.
 
 ### 3. Acrobot-v0
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/dqn_exploration/dqn_exploration_acrobot.png" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/dqn_exploration/dqn_exploration_acrobot.svg" alt="">
 
 ### 4. LunarLander-v2
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/dqn_exploration/dqn_exploration_lunarlander.png" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/dqn_exploration/dqn_exploration_lunarlanderv2.svg" alt="">
 
 
 Next, we also investigated the impact of each exploration scheme on some basic Atari 2600 environments.
@@ -83,7 +96,10 @@ Next, we also investigated the impact of each exploration scheme on some basic A
 
 ### 6. BreakoutNoFrameskip-v4
 
+# Concluding Remarks
+
 Comming next:
 - The source code.
+- Parameter space noise exploration
 - Link to the full wandb log
 - Experimenting with some kind of temperature to boltzman / regularization ?
