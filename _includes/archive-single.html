@@ -24,8 +24,10 @@
         <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
-    {% if post.read_time %}
-      <p class="page__meta">{% include read-time.html %}</p>
+    {% if include.type == "grid" %}
+      {% include read-time.html p="post" type="grid" %}
+    {% else %}
+      {% include read-time.html p="post" %}
     {% endif %}
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>
