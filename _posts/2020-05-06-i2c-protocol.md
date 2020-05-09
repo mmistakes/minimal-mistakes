@@ -51,12 +51,11 @@ I2C 통신에서 공통의 `SCL/SDA` 라인을 이용해 하나의 `Master`로 �
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/i2c-fig-4.png" alt="">
 </figure>
 
-1. Start 조건 이후, `Master`는 통신하고자 하는 `Slave`의 주소 값 `7 bits`와 R/W 값 `1 bit`를 전송한다.
-R/W 값은 Read 또는 Write 동작을 구분하는 비트이고, `0` 값이 Write 에 해당된다. 
-2. 만약, 입력한 `Slave` 주소에 대응되는 모듈이 있는 경우 해당 `Slave`는 `Master`로 `ACK` 신호를 전달한다.
-3. `ACK` 신호를 전달 받은 `Master`는 Write 하고자 하는 `Slave` 내부의 데이터 영역을 선택하기 위해 `8 bits` 크기의 레지스터 정보를 전송한다. 이 과정은 Write 가능한 레지스터에 대해 수행되어야하며, 문제가 없을 경우 `Slave`는 다시 `ACK` 신호를 전달한다.
-4. 레지스터 선택을 완료한 이후, `Master`는 해당 레지스터에 원하는 데이터를 `BYTE` 단위로 전송하며, 하나의 `BYTE` 전송이 끝날 때마다 `Slave`로부터 `ACK` 신호를 수신한다.
-5. 더 이상 Write 할 데이터가 없는 경우에는 Stop 조건을 통해 I2C 통신을 종료한다.
+Start 조건 이후, `Master`는 통신하고자 하는 `Slave`의 주소 값 `7 bits`와 R/W 값 `1 bit`를 전송한다. R/W 값은 Read 또는 Write 동작을 구분하는 비트이고, `0` 값이 Write 에 해당된다. 
+
+만약, 입력한 `Slave` 주소에 대응되는 모듈이 있는 경우 해당 `Slave`는 `Master`로 `ACK` 신호를 전달한다. `ACK` 신호를 전달 받은 `Master`는 Write 하고자 하는 `Slave` 내부의 데이터 영역을 선택하기 위해 `8 bits` 크기의 레지스터 정보를 전송한다. 이 과정은 Write 가능한 레지스터에 대해 수행되어야하며, 문제가 없을 경우 `Slave`는 다시 `ACK` 신호를 전달한다. 레지스터 선택을 완료한 이후, `Master`는 해당 레지스터에 원하는 데이터를 `BYTE` 단위로 전송하며, 하나의 `BYTE` 전송이 끝날 때마다 `Slave`로부터 `ACK` 신호를 수신한다.
+
+더 이상 Write 할 데이터가 없는 경우에는 Stop 조건을 통해 I2C 통신을 종료한다.
 
 ### 3.3 I2C Read 시퀀스
 
