@@ -25,9 +25,9 @@
       {% endif %}
     </h2>
     {% if include.type == "grid" %}
-      {% include read-time.html p="post" type="grid" %}
+      {% include post__meta.html p="post" type="grid" %}
     {% else %}
-      {% include read-time.html p="post" %}
+      {% include post__meta.html p="post" %}
     {% endif %}
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>
