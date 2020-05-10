@@ -1,0 +1,72 @@
+.board-piece-start-style{visibility:hidden;background-repeat:no-repeat;border:0;position:relative;padding:0;}
+.ct-board-container{box-sizing:content-box;padding:5px;}
+.ct-board{display:block;overflow:hidden;text-align:center;}
+.ct-board-border{border:2px solid #363A3D;}
+.ct-board-border-green{background-color:#408038;color:#CCC;border:2px solid #363A3D;}
+.ct-board-border-greenwhite{background-color:#112724;color:#CCC;border:2px solid #363A3D;}
+.ct-board-border-stucco{background-color:#777;color:#333;border:2px solid #363A3D;}
+.ct-board-border-wooddark{background-color:#777;color:#CCC;border:2px solid #363A3D;}
+.ct-black-square,.ct-white-square,.ct-black-square-grey,.ct-white-square-grey,.ct-black-square-lightgrey,.ct-white-square-lightgrey,.ct-black-square-brown,.ct-white-square-brown,.ct-black-square-greenwhite,.ct-white-square-greenwhite,.ct-black-square-green,.ct-white-square-green,.ct-black-square-woodlight,.ct-white-square-woodlight,.ct-black-square-marblebrown,.ct-white-square-marblebrown,.ct-black-square-metal,.ct-white-square-metal,.ct-black-square-stucco,.ct-white-square-stucco,.ct-black-square-goldsilver,.ct-white-square-goldsilver,.ct-black-square-wooddark,.ct-white-square-wooddark,.ct-black-square-sandsnow,.ct-white-square-sandsnow,.ct-black-square-crackedstone,.ct-white-square-crackedstone,.ct-black-square-granite,.ct-white-square-granite,.ct-black-square-marblegreen,.ct-white-square-marblegreen{display:block;float:left;}
+.ct-black-square,.ct-black-square-grey{background-color:#666;}
+.ct-white-square,.ct-white-square-grey{background-color:#8D8D8C;}
+.ct-white-square-lightgrey{background-color:#CDCDCD;}
+.ct-black-square-lightgrey{background-color:#AAA;}
+.ct-white-square-brown{background-color:#FCCC9C;}
+.ct-black-square-brown{background-color:#CC9C6C;}
+.ct-white-square-woodlight{background-color:#FCCC9C;}
+.ct-black-square-woodlight{background-color:#CC9C6C;}
+.ct-white-square-green{background-color:#C8C060;color:red;}
+.ct-black-square-green{background-color:#70A068;color:red;}
+.ct-white-square-greenwhite{background-color:#FFFFF0;color:red;}
+.ct-black-square-greenwhite{background-color:#2C794F;color:red;}
+.ct-black-square-marblebrown{background-color:#CC9C6C;}
+.ct-white-square-metal{background-color:#FCCC9C;}
+.ct-black-square-metal{background-color:#CC9C6C;}
+.ct-white-square-stucco{background-color:#FCCC9C;}
+.ct-black-square-stucco{background-color:#CC9C6C;}
+.ct-white-square-goldsilver{background-color:#FCCC9C;}
+.ct-black-square-goldsilver{background-color:#CC9C6C;}
+.ct-white-square-wooddark{background-color:#FCCC9C;}
+.ct-black-square-wooddark{background-color:#CC9C6C;}
+.ct-white-square-sandsnow{background-color:#FCCC9C;}
+.ct-black-square-sandsnow{background-color:#CC9C6C;}
+.ct-white-square-crackedstone{background-color:#FCCC9C;}
+.ct-black-square-crackedstone{background-color:#CC9C6C;}
+.ct-white-square-granite{background-color:#FCCC9C;}
+.ct-black-square-granite{background-color:#CC9C6C;}
+.ct-black-square-marblegreen{background-color:#CC9C6C;}
+.ct-from-square{background:none;background-color:#9F9FFF;}
+.ct-to-square{background:none;background-color:#557FFF;}
+.ct-over-valid-square{background:none;background-color:green;}
+.ct-over-invalid-square{background:none;background-color:red;}
+.ct-nav-buttons{padding-bottom:7px;padding-top:7px;text-align:left;}
+.ct-back,.ct-forward,.ct-start,.ct-end,.ct-play,.ct-stop{vertical-align:middle;display:inline;}
+.ct-mainline-commentary{padding-left:15px;}
+.ct-board-move-mainline{font-weight:700;}
+.ct-board-move-comment{color:green;}
+.ct-board-move-current{color:red;}
+.ct-board-move-dottedempty{display:none;}
+.ct-bad-move-score{color:#FF2020;}
+.pgn-parser-error{background-color:red;color:#FFF;border:2px solid #363A3D;}
+#board-position-moves{overflow:auto;padding-top:10px;height:auto;width:210px;}
+#board-moves{overflow:auto;height:400px;width:210px;}
+.ct-top-to-move-outer{border:1px solid transparent;}
+.ct-top-to-move-inner{width:15px;height:15px;border:1px solid green;margin:1px;}
+.ct-bottom-to-move-outer{border:1px solid transparent;position:absolute;left:0;bottom:0;}
+.ct-bottom-to-move-inner{width:15px;height:15px;border:1px solid green;margin:1px;}
+.ct-to-move-active{border:1px solid red;}
+.ct-source-square{background:none;background-color:#AE8;}
+.ct-forum-pgn-moves{height:264px;width:280px;overflow:auto;border:1px solid #FFF;margin-top:4px;padding:3px;}
+.ct-forum-pgn-headers{border:1px solid #FFF;width:280px;padding:3px;}
+.ct-forum-pgn-moves .ct-board-move-comment{color:#A1C4E8;}
+.ct-datatable .yui-dt .yui-dt-data .ct-player-won,.ct-datatable .yui-dt .yui-dt-data .ct-player-lost,.ct-datatable .yui-dt .yui-dt-data .ct-player-drew{color:#DDD;text-align:center;}
+.ct-player-lost{background-color:#E22;}
+.ct-player-drew{background-color:#BB8c00;}
+.ct-board-border-lightgrey,.ct-board-border-goldsilver{background-color:#777;border:2px solid #363A3D;color:#CCC;}
+.ct-board-border-grey,.ct-board-border-metal,.ct-board-border-sandsnow,.ct-board-border-crackedstone,.ct-board-border-granite{background-color:#555;border:2px solid #363A3D;color:#CCC;}
+.ct-board-border-brown,.ct-board-border-wood,.ct-board-border-marblebrown,.ct-board-border-marblegreen{background-color:#9C6C3C;border:2px solid #363A3D;color:#CCC;}
+.ct-white-square-marblebrown,.ct-white-square-marblegreen{background-color:#FCCC9C;}
+.ct-board-move-mainline,.ct-board-move-variation,.ct-board-clickable-comment{cursor:pointer;}
+.ct-subopt-move-score,.ct-opt-move-score{color:#8AAFEF;}
+.ct-dest-square,.ct-player-won{background-color:green;}
+.ct-forum-pgn-board,.ct-forum-pgn-moves-and-headers{float:left;}
