@@ -25,6 +25,8 @@ sidebar-menu:
         url: /history
       - title: "Газета 'Шкільна орбіта'"
         url: /school-newspaper
+      - title: "Дистанційне навчання"
+        url: /news
 
   - title: Виховна робота
     children:
