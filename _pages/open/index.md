@@ -19,7 +19,7 @@ sidebar:
 11. [Графік чергування](/open/schedule/)
 12. [Наші вчителі](/open/teachers/)
 13. [Освітні програми](/open/programs/)
-14. [Підручники для 5-го класу на 2018-2019 н.р.](/open/books-5-grade/)
+14. [Вибір підручників](/open/books-5-grade/)
 15. [Територія обслуговування закладом](/open/service-territory/)
 16. [Проектна потужність закладу і фактична кількість осіб, які навчаються у закладі](/open/project-value/)
 17. [Мережа класів](/open/classes/)
@@ -48,16 +48,6 @@ sidebar:
 27. [Розмір плати за навчання, підготовку, перепідготовку, підвищення кваліфікацій](/open/prices)
 28. [Кошторис закладу](/open/estimate/)
 29. [Фінансовий звіт](https://docs.google.com/spreadsheets/d/1bUdMxZAl-Lgllxh1Pz0WEKhV_WbI2w420UIuQfAu850/edit#gid=780042493)
-- [Фінансовий звіт батьківскьої ради](/open/finance-parents/)
-- [Фінансовий звіт за вересень 2017 рік](/finance-2017/)
-- [Фінансовий звіт за жовтень 2017 рік](/finance-10-2017/)
-- [Фінансовий звіт за грудень 2017 рік](/finance-12-2017/)
-- [Фінансовий звіт за січень 2018 рік](/finance-01-2018/)
-- [Фінансовий звіт за лютий 2018 рік](/finance-02-2018/)
-- [Фінансовий звіт за березень 2018 рік](/finance-03-2018/)
-- [Фінансовий звіт за квітень 2018 рік](/finance-04-2018/)
-- [Фінансовий звіт за період січень - березень 2018 рік](/finance-01-04-2018/)
-
 30. [Конкурсний відбір на посаду директора НВК №125](/announcement/)
 
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 85.0847%;"><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQkvmLKzxKORuFa337EiGbU-cw2NXc-hpLPnHZN1oQwwZsRG2_R_Geo0Z1-nzovnucKuTm9WLpjzwWM/pubhtml?widget=true&amp;headers=false" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen></iframe></div>

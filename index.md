@@ -59,10 +59,7 @@ intro:
   - excerpt: 'Слідкуйте за нами у соціальних мережах &nbsp; [<i class="fa fa-youtube"></i> nvk125](https://www.youtube.com/channel/UCWUxpJfzRRRTuKxtSuTN08A){: .btn .btn--danger}'
 ---
 
-[Конкурсний відбір керівника закладу](/announcement)
-{: .text-center}
-
-## Останні новини
+## Новини
 
 <div class="grid__wrapper">
   {% for post in site.posts limit:8 %}
