@@ -61,10 +61,22 @@ intro:
 
 ## Новини
 
-<div class="grid__wrapper">
-  {% for post in site.posts limit:8 %}
-    {% include archive-single.html type="grid" %}
-  {% endfor %}
+<div style="margin-top: 20px;">
+  <div
+    class="fb-page"
+    data-href="https://www.facebook.com/nvk125"
+    data-tabs="timeline"
+    data-width="500"
+    data-height="1024"
+    data-small-header="true"
+    data-adapt-container-width="true"
+    data-hide-cover="false"
+    data-show-facepile="false"
+  >
+    <blockquote cite="https://www.facebook.com/nvk125" class="fb-xfbml-parse-ignore">
+      <a href="https://www.facebook.com/nvk125">НВК №125</a>
+    </blockquote>
+  </div>
 </div>
 
 {% include feature_row id="intro" type="center" %}
