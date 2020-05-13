@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Vera 3 Deutsch Lesen entfällt",
-    "title": "Vera 3 Deutsch Lesen entfällt",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NGNuczBnOWh1b3Y4czVmc3VmdmhrcTRkcTAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2020-05-12",
-      "date_time": null
-    },
-    "end": {
-      "date": "2020-05-13",
-      "date_time": null
-    },
-    "created": "2020-03-03T12:41:33.000Z",
-    "updated": "2020-05-03T08:21:15.447Z"
-  },
-  {
-    "image_path": null,
     "alt": "4. GEV um 18:30 Uhr entfällt",
     "title": "4. GEV um 18:30 Uhr entfällt",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2020-03-02T15:14:52.000Z",
     "updated": "2020-03-02T15:14:52.045Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Bundesjugendspiele Sterne und Klassen 4 . - 6.",
+    "title": "Bundesjugendspiele Sterne und Klassen 4 . - 6.",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NzRocTBvcHFrcDlwYXFrOXR2ZXBsaDIzZXEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2020-06-08",
+      "date_time": null
+    },
+    "end": {
+      "date": "2020-06-09",
+      "date_time": null
+    },
+    "created": "2020-03-02T15:13:09.000Z",
+    "updated": "2020-03-02T15:13:09.583Z"
   }
 ]
