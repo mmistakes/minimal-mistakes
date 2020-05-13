@@ -4,5 +4,3 @@ permalink: /about/
 layout: default
 author_profile: true
 ---
-
-WIP
