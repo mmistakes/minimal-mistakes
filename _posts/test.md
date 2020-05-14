@@ -13,12 +13,12 @@ h, --- is em-dash|
 
 
 
-|                |Thermistor                    |RTD                         | Thermocouple|
-|----------------|-------------------------------|-----------------------------|---|
-|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            | $$\pm2$$|
-|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            ||
-|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash||
+|                       |Thermistor                    |RTD                         | Thermocouple|
+|----------------      |-------------------------------|-----------------------------|---|
+|Operating Temperature|`'Isn't this fun?'`            |'Isn't this fun?'            | $$\pm2$$|
+|Accuracy              |$$\pm2$$or          |"Isn't this fun?"            ||
+|Constants          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash||
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0Nzc5NzQ4OCwtMjQyMTc0NDk4LC0xNj
-gyMTQxMTddfQ==
+eyJoaXN0b3J5IjpbMTE1OTA4NTc0NCwtNDQ3Nzk3NDg4LC0yND
+IxNzQ0OTgsLTE2ODIxNDExN119
 -->
