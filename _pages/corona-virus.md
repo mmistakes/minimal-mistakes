@@ -17,6 +17,30 @@ sidebar:
 
 ---
 
+13.05.2020 15:30 Uhr
+
+# Planung des Präsenzunterrichts bis zu den Sommerferien
+
+Liebe Eltern,
+
+hier die Planung des Präsenzunterrichts bis zu den Sommerferien 2020. Genaue Stundenpläne und weitere Infos erhalten Sie von Ihrer Klassenleitung.
+
+[<i class="fa fa-download">&nbsp;</i>Präsenzunterricht - Planung bis zu den Sommerferien 2020 (pdf) ](/assets/files/corona/Präsenzunterricht_-_Planung_bis_zu_den_Sommerferien_2020.pdf){: .btn .btn--success}
+
+---
+
+13.05.2020 15:30 Uhr
+
+# Hygieneplan im Schulalltag
+
+Liebe Eltern,
+
+bitte besprechen Sie die Regeln für den Präsenzunterricht ausführlich mit Ihrem Kind.
+
+[<i class="fa fa-download">&nbsp;</i>Organisation des Schulalltags unter Berücksichtigung des Musterhygieneplans Corona für Berliner Schulen (pdf) ](/assets/files/corona/Organisation_des_Schulalltags_unter_Berücksichtigung_des_Musterhygieneplans_Corona_für_Berliner_Schulen.pdf){: .btn .btn--success}
+
+---
+
 27.04.2020 18:00 Uhr
 
 # Eine kleine Corona-Video Botschaft von uns
