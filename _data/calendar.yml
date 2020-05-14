@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "4. GEV um 18:30 Uhr entfällt",
-    "title": "4. GEV um 18:30 Uhr entfällt",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=N2xnanRpYmk0N2hidGZqODY0cjBwNHA2NGogaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2020-05-14T18:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2020-05-14T20:00:00+02:00"
-    },
-    "created": "2019-10-25T12:53:36.000Z",
-    "updated": "2020-05-04T14:24:52.876Z"
-  },
-  {
-    "image_path": null,
     "alt": "Elternaktionstag entfällt",
     "title": "Elternaktionstag entfällt",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2020-03-02T15:13:09.000Z",
     "updated": "2020-03-02T15:13:09.583Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Ersatztermin Bundesjugendspiele",
+    "title": "Ersatztermin Bundesjugendspiele",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MXQ1Y2Zjc2pic2EwNmdvc3ZudGl0aGRnY2IgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2020-06-15",
+      "date_time": null
+    },
+    "end": {
+      "date": "2020-06-16",
+      "date_time": null
+    },
+    "created": "2020-03-02T15:13:31.000Z",
+    "updated": "2020-03-02T15:13:31.457Z"
   }
 ]
