@@ -16,9 +16,9 @@ h, --- is em-dash|
 |                       |Thermistor                    |RTD                         | Thermocouple|
 |----------------      |-------------------------------|-----------------------------|---|
 |Operating Temperature|`'Isn't this fun?'`            |'Isn't this fun?'            | $$\pm2$$|
-|Accuracy              |$$\pm2$$or          |"Isn't this fun?"            ||
+|Accuracy              |$\pm0.1\circ C$ or $\pm0.2C$      |"Isn't this fun?"            ||
 |Constants          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash||
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1OTA4NTc0NCwtNDQ3Nzk3NDg4LC0yND
-IxNzQ0OTgsLTE2ODIxNDExN119
+eyJoaXN0b3J5IjpbLTE4MjQxODIxNzcsLTQ0Nzc5NzQ4OCwtMj
+QyMTc0NDk4LC0xNjgyMTQxMTddfQ==
 -->
