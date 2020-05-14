@@ -12,8 +12,8 @@
 |Accuracy              |$\pm0.1^\circ C$ or $\pm0.2^\circ C$      |"Isn't this fun?"            ||
 |Constants          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash||
 |Temp. Range          |$-50^\circ C$ to $200^\circ C$ |-- is en-dash, --- is em-dash||
-|Properties           |Non-linear, Negative Temperature  |-- is en-dash, --- is em-dash||
+|Properties           |Non-linear, \\ Negative Temperature  |-- is en-dash, --- is em-dash||
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2NTkyODk5MSwtNDQ3Nzk3NDg4LC0yND
+eyJoaXN0b3J5IjpbMTk0MDU5NzQxOSwtNDQ3Nzk3NDg4LC0yND
 IxNzQ0OTgsLTE2ODIxNDExN119
 -->
