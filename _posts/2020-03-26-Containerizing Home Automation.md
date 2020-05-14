@@ -25,3 +25,6 @@ Following services currently run on the system
 * Snapcast Server - Read audio stream from the player (Librespot)
 * Snapcast Client - Receive audio stream from server and play audio
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjczNDMyNzA3XX0=
+-->
