@@ -13,11 +13,11 @@ h, --- is em-dash|
 
 
 
-|                |ASCII                          |HTML                         |
-|----------------|-------------------------------|-----------------------------|
-|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
-|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
-|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
+|                |Thermistor                    |RTD                         | Thermocouple|
+|----------------|-------------------------------|-----------------------------|---|
+|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            ||
+|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            ||
+|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash||
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY2ODU5MzZdfQ==
+eyJoaXN0b3J5IjpbLTE2ODIxNDExN119
 -->
