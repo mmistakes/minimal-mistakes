@@ -15,10 +15,10 @@ h, --- is em-dash|
 
 |                |Thermistor                    |RTD                         | Thermocouple|
 |----------------|-------------------------------|-----------------------------|---|
-|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            | \pm2|
+|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            | $$\pm2$$|
 |Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            ||
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash||
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0OTUzMTU2OCwtMjQyMTc0NDk4LC0xNj
+eyJoaXN0b3J5IjpbLTQ0Nzc5NzQ4OCwtMjQyMTc0NDk4LC0xNj
 gyMTQxMTddfQ==
 -->
