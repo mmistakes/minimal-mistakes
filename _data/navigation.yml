@@ -6,8 +6,6 @@ main:
     url: /sobre/
   - title: "Serviços"
     url: /servicos/
-  - title: "Portfólio"
-    url: /portfolio/
   - title: "Equipe"
     url: /equipe/
   - title: "Entrar"
