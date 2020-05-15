@@ -4,6 +4,12 @@
   {% assign feature_row = page.feature_row %}
 {% endif %}
 
+{% if include.title_aligment %}
+  {% assign title_aligment = include.title_aligment %}
+{% else %}
+  {% assign title_aligment = '' %}
+{% endif %}
+
 {% if include.title %}
 <div class="feature__wrapper" {{ include.propeties }} style="border-bottom: 0px; margin-bottom: 1em;">
     <h1 class="archive__item-title text-center">{{ include.title }}</h1>
@@ -25,7 +31,7 @@
 
         <div class="archive__item-body">
           {% if f.title %}
-            <h2 class="archive__item-title">{{ f.title }}</h2>
+            <h2 class="archive__item-title {{ title_aligment }}">{{ f.title }}</h2>
           {% endif %}
 
           {% if f.excerpt %}
