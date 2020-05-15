@@ -64,6 +64,11 @@
   <meta property="og:description" content="{{ seo_description }}">
 {% endif %}
 
+{% if page.tags[0] %}
+{% assign comma_tags = page.tags | join: ", " %}
+  <meta property="keywords" content="{{ comma_tags | downcase }}">
+{% endif %}
+
 {% if page_large_image %}
   <meta property="og:image" content="{{ page_large_image }}">
 {% elsif page_teaser_image %}
