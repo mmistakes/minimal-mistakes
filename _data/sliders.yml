@@ -1,0 +1,21 @@
+- selector: slider1
+  bullets: false
+  captions: true
+  images:
+    - src: /assets/images/slide1.jpg
+      title: Deseja <b>ampliar</b> sua carteira de contratos?
+    - src: /assets/images/slide2.jpg
+      title: Quer se sentir <b>capaz de atuar</b> em alto nível no que <b>gosta</b>?
+    - src: /assets/images/slide3.jpg
+      title: Se <b>desataque</b> no mercado de trabalho e alcance sua <b>liberdade financeira com</b> a Nortan
+  settings:
+    height: "'auto'"
+    initialHeight: 300
+    maxHeight: 400
+    interval:
+    transitionDuration:
+    effect:
+    disableNav:
+    keyboardNav:
+    previousNavSelector:
+    nextNavSelector:

@@ -31,6 +31,7 @@ script contains "://" %} {% capture script_path %}{{ script }}{% endcapture %}
 
     });
 </script>
+{% include slider_scripts.html %}
 {% endif %} {% if site.search == true or page.layout == "search" %} {%- assign
 search_provider = site.search_provider | default: "lunr" -%} {%- case
 search_provider -%} {%- when "lunr" -%} {% include_cached
