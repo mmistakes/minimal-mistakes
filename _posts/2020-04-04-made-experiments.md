@@ -28,7 +28,15 @@ It therefore gave us really bad results (loss stagnating at 0.27 and still need 
 - After adding the connectivity agnoscism however, the network did not generate that good of a result, at least in the beginning.
 Therefore, running some experiments overnight to see how it progresses.
 
+- Found a potential probably in the layer connect counts generation.
+1. Assume input orderings is [3 1 2]
+2. Next layer count is something like [2 1 2 2]
+3. The next one is [2 2 2 2], then the next is [1 2 1 1], and finally the last one which is again the input ordering.
+This kind of mask actually makes the data, as well as the autoregressive property being really under exploited,
+especially in lower dimension.
+Henceforth the need for a better sampling scheme than Uniform, which is too dangerous, especially in low dimensions.
 
+Especially in
 # Background
 
 ## Standard VAE
