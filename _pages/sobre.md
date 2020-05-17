@@ -3,89 +3,94 @@ title: " "
 layout: splash
 permalink: /sobre/
 intro:
-  - excerpt: "Proporcionamos um ambiente colaborativo de consultores de alta performance, transformando conhecimento e informação em resultados financeiros"
+  - title: "CONHEÇA A NORTAN"
+    excerpt: "A NORTAN PROJETOS é uma empresa colaborativa de consultores voltados para a prestação de serviços relacionados à produção, gestão e solução de espaços para construção civil e meio ambiente. Formada por profissionais criativos, inovadores, capacitados e em constante atualização para atender as necessidades de nossos clientes. Vem se destacando pela qualidade na prestação do serviço, eficiência e confiabilidade. Hoje a sede se situa na cidade de Maceió em Alagoas, mas a empresa funciona principalmente em ambiente virtual realizando trabalhos em outros estados"
+voce:
+  - title: "NORTAN E VOCÊ"
+    excerpt: "Nós te auxiliaremos na gestão administrativa e financeira de todos os seus contratos, foque no que é importante e aproveito os benefícios da nossa rede de consultores"
 missao:
-  - image_path: /assets/images/banner.png
+  - image_path: /assets/images/desenvolvimento.png
     alt: "DESENVOLVIMENTO"
     title: "DESENVOLVIMENTO"
-    excerpt: "Promover o desenvolvimento de pessoas e organizações"
-  - image_path: /assets/images/banner.png
+    excerpt: "Promover o desenvolvimento de pessoas e organizações de áreas relacionadas à produção, gestão e solução do espaço"
+    max_height:
+  - image_path: /assets/images/capacitacao.png
     alt: "CAPACITAÇÃO"
     title: "CAPACITAÇÃO"
     excerpt: "Tornar profissionais mais competitivos, capacitados e produtivos"
-  - image_path: /assets/images/banner.png
+  - image_path: /assets/images/liberdade.png
     alt: "LIBERDADE FINANCEIRA"
     title: "LIBERDADE FINANCEIRA"
     excerpt: "Transformar conhecimento e informação em resultados financeiros"
-  - image_path: /assets/images/banner.png
+  - image_path: /assets/images/qualidade.png
     alt: "QUALIDADE"
     title: "QUALIDADE"
-    excerpt: "Ter profissionais de qualidade e alto desempenho"
-consultores:
-  - image_path: /assets/images/banner.png
+    excerpt: "Ter profissionais de alto desempenho que prestam serviço de qualidade"
+beneficios:
+  - image_path: /assets/images/produto.jpg
     alt: "SE PREOCUPE COM O PRODUTO"
     title: "SE PREOCUPE COM O PRODUTO"
-    excerpt: "Nós fazemos a gestão administrativa e financeira do contrato com transparência"
-  - image_path: /assets/images/banner.png
+    excerpt: "Nós fazemos a gestão administrativa e financeira do contrato de forma transparente"
+  - image_path: /assets/images/horario.jpg
     alt: "FAÇA SEU HORÁRIO"
     title: "FAÇA SEU HORÁRIO"
     excerpt: "Trabalhe home-office ou em nosso coworking, aqui ninguém vende hora"
-  - image_path: /assets/images/banner.png
+  - image_path: /assets/images/profissional.jpg
     alt: "SEJA UM PROFISSIONAL COMPLETO"
     title: "SEJA UM PROFISSIONAL COMPLETO"
-    excerpt: "Aprenda o que a faculdade não te ensina! Tenha aprenizagem contínua no nosso programa de capacitação"
-  - image_path: /assets/images/banner.png
+    excerpt: "Aprenda sobre seu mercado, educação financeira, personal branding e empreendedorismo com profissionais experientes"
+  - image_path: /assets/images/contrato.jpg
     alt: "AUMENTE SUA CARTEIRA DE CONTRATOS"
     title: "AUMENTE SUA CARTEIRA DE CONTRATOS"
     excerpt: "Nossa rede de consultores e nosso marketplace permite trocas voluntárias entre cliente externos (gerencie contratos) e internos (faça parte de equipe)"
-  - image_path: /assets/images/banner.png
+  - image_path: /assets/images/equipe.jpg
     alt: "DESFRUTE DE MA EQUIPE DE ALTO NÍVEL"
     title: "DESFRUTE DE MA EQUIPE DE ALTO NÍVEL"
-    excerpt: "Nessa rede de consultores, mentore e seja mentorado. Nosso time resolve qualquer problema"
-  - image_path: /assets/images/banner.png
+    excerpt: "Mentore e seja mentorado. Nosso time se relaciona de forma direta compartilhando conhecimento"
+  - image_path: /assets/images/ganhos.jpg
     alt: "TENHA GANHOS ILIMITADOS"
     title: "TENHA GANHOS ILIMITADOS"
-    excerpt: "Tenha clareza do seu balanço financeiro e fefina sua retirada mensal da empresa. Na Nortan o que você produz é seu!"
+    excerpt: "Tenha clareza do seu balanço financeiro e defina seu pró-labore mensal. Na Nortan o que você produz é seu"
 funciona:
-  - image_path: /assets/images/banner.png
+  - image_path: /assets/images/tecnico.png
     alt: "FAÇA PARTE DA EQUIPE"
     title: "FAÇA PARTE DA EQUIPE"
     excerpt: "Consultor(a) Técnico(a)
 
 
-    - Negocie valor com o gestor(a) do contrato através da plataforma
+    - ​Se cadastre na plataforma
+
+    - Execute o serviço combinaNegocie valor com o gestor(a) do contrato através da plataforma
 
     - Execute o serviço combinado
 
     - Receba o valor acertado na sua Carteira Nortan
 
-    - Defina o valor mensal de retirada
-
-    - Receba ;)"
-  - image_path: /assets/images/banner.png
+    - Transfira da sua Carteira para seu banco quando desejar"
+  - image_path: /assets/images/gestor.png
     alt: "FECHE E GERENCIE CONTRATOS"
     title: "FECHE E GERENCIE CONTRATOS"
     excerpt: "Consultor(a) Gestor(a)
 
 
+    - Se cadastre na plataforma
+
     - Negocie e feche um contrato
 
-    - Repasse 30% do valor do contrato para Nortan. A empresa fará a gestão financeira e administrativa do contrato, pagando nota fiscal e dando o sporte necessário
+    - repasse 30% do valor do contrato para Nortan. A empresa fará a gestão financeira e administrativa do contrato, pagando nota fiscal e dando o suporte necessário
 
     - Negocie preço e serviço com a equipe Nortan de Consultores através da plataforma
 
     - Receba o valor na sua Carteira Nortan
 
-    - Defina sua Retirada Mensal
-
-    - Receba ;)"
+    - Transfira da sua Carteira para seu banco quando desejar"
 ---
+{% include feature_row id="intro" type="wide" propeties='data-aos="fade-right"' %}
 
-{% include figure image_path="/assets/images/banner.png" alt="this is a placeholder image" propeties='data-aos="fade-right"' %}
-{% include feature_row id="intro" type="center" propeties='data-aos="fade-right"' %}
+{% include feature_row id="missao" title="NOSSA MISSÃO" type="dual" title_size="h4" propeties='data-aos="fade-left"' %}
 
-{% include feature_row id="missao" title="NOSSA MISSÃO" propeties='data-aos="fade-left"' %}
+{% include feature_row id="voce" type="wide" propeties='data-aos="fade-up"' %}
 
-{% include feature_row id="consultores" title="CONSULTORES" propeties='data-aos="fade-up"' %}
+{% include feature_row id="beneficios" title="BENEFÍCIOS" title_size="h4" propeties='data-aos="fade-right"' %}
 
-{% include feature_row id="funciona" type="left" title="COMO FUNCIONA?" propeties='data-aos="fade-right"' %}
+{% include feature_row id="funciona" type="left-center" title="COMO FUNCIONA?" wrapper_class="workBG" propeties='data-aos="fade-left"' %}
