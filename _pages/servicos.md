@@ -2,39 +2,41 @@
 title: " "
 layout: splash
 permalink: /servicos/
-intro:
-  - excerpt: "Superando suas expectativas"
 servicos:
-  - image_path: /assets/images/banner.png
+  - image_path: /assets/images/arq.png
     alt: "ARQUITETURA"
     title: "ARQUITETURA"
-    excerpt: "- Projetos residenciais e comerciais
+    excerpt: "- Projetos arquitetônicos residenciais, comerciais e corporativos
 
     - Projetos urbanísticos
 
-    - Projetos de reforma
+    - Projetos e planejamento de reformas
 
-    - Acompanhamento de obras
+    - Acompanhamento de obra
 
-    - Consultoria"
-  - image_path: /assets/images/banner.png
+    - Consultorias"
+  - image_path: /assets/images/desing.png
     alt: "DESIGN DE INTERIORES"
     title: "DESIGN DE INTERIORES"
-    excerpt: "- Ambientação
+    excerpt: "-  Projeto de interiores residenciais, comerciais e corporativos
 
-    - Detalhamento de mobiliário
+    - Desenho de mobiliário
 
-    - Decoração
+    - Composição e decoração de ambientes internos
 
     - Consultoria"
-  - image_path: /assets/images/banner.png
+  - image_path: /assets/images/eng.png
     alt: "ENG. CIVIL"
     title: "ENG. CIVIL"
-    excerpt: "- Projeto Estrutural residencial e comercial"
-  - image_path: /assets/images/banner.png
+    excerpt: "- Projeto Estrutural residencial e comercial
+
+    - Reforma
+
+    - Construção"
+  - image_path: /assets/images/engE.png
     alt: "ENG. ELÉTRICA"
     title: "ENG. ELÉTRICA"
-    excerpt: "- Projeto de baixa tensão, tvd, lógica e telefônico
+    excerpt: "- Projeto de baixa tensão, TVD, lógica e telefônico
 
     - Projeto de SPDA
 
@@ -42,26 +44,26 @@ servicos:
 
     - Instalações elétricas de média tensão
 
-    - Intalação de energia solar
+    - Instalação de energia solar
 
     - Medições de campo"
-  - image_path: /assets/images/banner.png
+  - image_path: /assets/images/engS.png
     alt: "ENG. SANITÁRIA"
     title: "ENG. SANITÁRIA"
     excerpt: "- Projeto hidrossanitário de instalações prediais
 
-    - Projeto de drenagem urbana, abastecimento e coleta de esgoto sanitário
+    - projeto de drenagem urbana, abastecimento e coleta de esgoto sanitário
 
     - Projeto de Estação de Tratamento, especializado em lagoas para abatedouros"
-  - image_path: /assets/images/banner.png
+  - image_path: /assets/images/imp.png
     alt: "IMPERMEABILIZAÇÃO"
     title: "IMPERMEABILIZAÇÃO"
     excerpt: "- Prospecção de infiltração
 
     - Aplicação de produtos de impermeabilização em áreas vulneráveis
 
-    - Impermeabilização de lajes, telhados, piscinas, etc."
-  - image_path: /assets/images/banner.png
+    - Impermeabilização de lajes, telhados, piscinas, etc"
+  - image_path: /assets/images/engA.png
     alt: "ENG. AMBIENTAL"
     title: "ENG. AMBIENTAL"
     excerpt: "- Licenciamento e empreendimentos da construção civil
@@ -69,14 +71,14 @@ servicos:
     - Licenciamento ambiental de empreendimentos da agricultura e pecuária
 
     - Consultoria Ambiental Personalizada"
-  - image_path: /assets/images/banner.png
+  - image_path: /assets/images/hidrico.png
     alt: "RECURSOS HÍDRICOS"
     title: "RECURSOS HÍDRICOS"
     excerpt: "- Hidrometria
 
-    - Monitoramento quali-quantitativo
+    - Monitoramento quali-quantitativo 
 
-    - Modelagem hidrolígica
+    - Modelagem hidrológica
 
     - Modelagem hidrodinâmica em rios (áreas de inundação)
 
@@ -85,6 +87,4 @@ servicos:
     - Modelagem Ecológica de Lagos e reservatórios"
 ---
 
-{% include feature_row id="intro" type="center" title="SERVIÇOS" propeties='data-aos="fade-right"' %}
-
-{% include feature_row id="servicos" propeties='data-aos="fade-left"' %}
+{% include feature_row id="servicos" title="SERVIÇOS" type="quad" title_size="h3" propeties='data-aos="fade-right"' %}
