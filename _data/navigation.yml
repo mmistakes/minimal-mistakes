@@ -1,12 +1,12 @@
 # main links
 main:
-  - title: "Início"
+  - title: "INÍCIO"
     url: /
-  - title: "A Empresa"
+  - title: "A EMPRESA"
     url: /sobre/
-  - title: "Serviços"
+  - title: "SERVIÇOS"
     url: /servicos/
-  - title: "Equipe"
+  - title: "EQUIPE"
     url: /equipe/
-  - title: "Entrar"
+  - title: "ENTRAR"
     url: /plataforma/
