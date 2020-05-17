@@ -244,10 +244,6 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-
-  .archive__item-title {
-    margin-bottom: 0;
-  }
 }
 
 .feature__item--team {
@@ -386,6 +382,83 @@
     bottom: 0;
   }
 
+  &--dual {
+    width: 100%;
+
+    .archive__item-teaser {
+      margin: 0 auto;
+      width: span(4 of 12);
+    }
+
+    @include breakpoint($small) {
+      width: span(6 of 12);
+
+      &:nth-child(2n + 1) {
+        clear: both;
+        margin-left: 0;
+      }
+
+      &:nth-child(2n + 2) {
+        clear: none;
+        margin-left: gutter(of 12);
+      }
+
+      .archive__item-teaser {
+        float: left;
+        width: span(2 of 12);
+      }
+
+      .archive__item-body {
+        float: right;
+        padding-left: gutter(0.5 of 12);
+        padding-right: gutter(1 of 12);
+        width: span(10 of 12);
+      }
+    }
+  }
+
+  &--quad {
+    width: 100%;
+
+    .archive__item-teaser {
+      margin: 0 auto;
+      width: span(4 of 12);
+    }
+
+    @include breakpoint($small) {
+      width: span(3 of 12);
+
+      &:nth-child(4n + 1) {
+        clear: both;
+        margin-left: 0;
+      }
+
+      &:nth-child(4n + 2) {
+        clear: none;
+        margin-left: gutter(of 12);
+      }
+
+      &:nth-child(4n + 3) {
+        clear: none;
+        margin-left: gutter(of 12);
+      }
+
+      &:nth-child(4n + 4) {
+        clear: none;
+        margin-left: gutter(of 12);
+      }
+
+      .archive__item-teaser {
+        margin: 0 auto;
+        width: span(4 of 12);
+      }
+
+      .archive__item-body {
+        width: 100%;
+      }
+    }
+  }
+
   &--left {
     position: relative;
     float: left;
@@ -415,6 +488,38 @@
         padding-left: gutter(0.5 of 12);
         padding-right: gutter(1 of 12);
         width: span(7 of 12);
+      }
+    }
+  }
+
+  &--left-center {
+    position: relative;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    clear: both;
+    font-size: 1.125em;
+    text-align: justify;
+
+    .archive__item {
+      float: left;
+      width: 100%;
+    }
+
+    .archive__item-teaser {
+      margin: 0 auto;
+      width: span(4 of 12);
+    }
+
+    @include breakpoint($small) {
+      .archive__item-teaser {
+        margin-left: span(1 of 12);
+        width: span(2 of 12);
+      }
+
+      .archive__item-body {
+        width: 100%;
       }
     }
   }
@@ -524,5 +629,17 @@
     @include breakpoint($x-large) {
       padding-right: 0;
     }
+  }
+}
+
+/*
+   Wide Pages
+   ========================================================================== */
+@include breakpoint($medium){
+  .workBG {
+    background-image: url(/assets/images/funcionaBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
   }
 }

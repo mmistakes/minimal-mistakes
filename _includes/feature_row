@@ -10,12 +10,18 @@
   {% assign title_aligment = '' %}
 {% endif %}
 
+{% if include.title_size %}
+  {% assign title_size = include.title_size %}
+{% else %}
+  {% assign title_size = 'h2' %}
+{% endif %}
+
 {% if include.title %}
 <div class="feature__wrapper" {{ include.propeties }} style="border-bottom: 0px; margin-bottom: 1em;">
     <h1 class="archive__item-title text-center">{{ include.title }}</h1>
 </div>
 {% endif %}
-<div class="feature__wrapper" {{ include.propeties }}>
+<div class="feature__wrapper {{ include.wrapper_class }}" {{ include.propeties }}>
   {% for f in feature_row %}
     <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
       <div class="archive__item">
@@ -31,7 +37,7 @@
 
         <div class="archive__item-body">
           {% if f.title %}
-            <h2 class="archive__item-title {{ title_aligment }}">{{ f.title }}</h2>
+            <{{ title_size }} class="archive__item-title {{ title_aligment }}">{{ f.title }}</{{ title_size }}>
           {% endif %}
 
           {% if f.excerpt %}
