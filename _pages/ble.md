@@ -30,8 +30,8 @@ author_profile: true
 * [BLE (5) - BLE 통신 속도는 실제로 1 Mbps 일까?](https://enidanny.github.io/ble/ble-effective-throughput/)
 
 ## 포스팅 예정 항목
-* BLE (6) - Nordic BLE chip 개발하기 (1): nRF52-DK 개발환경 구축 <!-- nRF52832 chip / Keil compiler / nRF command-line Tool / SDK, softdevice-->
-* BLE (7) - Nordic BLE chip 개발하기 (2): nRF52-DK 프로그래밍 예제 <!-- sdk 구성 / softdevice, program upload / custom board upload / GATT 예제 (link)-->
-* BLE (8) - Nordic BLE chip 개발하기 (3): BLE 비콘
-* BLE (9) - Nordic BLE chip 개발하기 (4): BLE 비콘 스캐너
-* BLE (10) - BLE 5.0 Intro.
+* BLE (6) - BLE 5.0 Intro.
+* BLE (?) - Nordic BLE chip 개발하기 (1): nRF52-DK 개발환경 구축 <!-- nRF52832 chip / Keil compiler / nRF command-line Tool / SDK, softdevice-->
+* BLE (?) - Nordic BLE chip 개발하기 (2): nRF52-DK 프로그래밍 예제 <!-- sdk 구성 / softdevice, program upload / custom board upload / GATT 예제 (link)-->
+* BLE (?) - Nordic BLE chip 개발하기 (3): BLE 비콘
+* BLE (?) - Nordic BLE chip 개발하기 (4): BLE 비콘 스캐너
