@@ -20,13 +20,13 @@ title: "Nortan Projetos"
 title_separator: "-"
 subtitle: # site tagline that appears below site title in masthead
 name: "Nortan Projetos"
-description: "Gestão Integrada e Projetos."
+description: "Solução Integrada em Projetos."
 url: #"https://nortanprojetos.com"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: #"/assets/images/500x300.png"
 logo: "/assets/images/88x88.png"
-masthead_title: #" "
+masthead_title: "Nortan"
 # breadcrumbs            : false # true, false (default)
 words_per_minute: 200
 comments:
@@ -100,9 +100,9 @@ analytics:
 
 # Site Author
 author:
-  name: "Nortan Projetos"
+  name: "Nortan"
   avatar: "/assets/images/bio.png"
-  bio: "Gestão Integrada e Projetos"
+  bio: "Solução Integrada em Projetos"
   location: "Maceió - Alagoas - Brasil"
   email: "contato@nortanprojetos.com"
   links:

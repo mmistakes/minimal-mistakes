@@ -4,10 +4,10 @@ layout: splash
 permalink: /sobre/
 intro:
   - title: "CONHEÇA A NORTAN"
-    excerpt: "A NORTAN PROJETOS é uma empresa colaborativa de consultores voltados para a prestação de serviços relacionados à produção, gestão e solução de espaços para construção civil e meio ambiente. Formada por profissionais criativos, inovadores, capacitados e em constante atualização para atender as necessidades de nossos clientes. Vem se destacando pela qualidade na prestação do serviço, eficiência e confiabilidade. Hoje a sede se situa na cidade de Maceió em Alagoas, mas a empresa funciona principalmente em ambiente virtual realizando trabalhos em outros estados"
+    excerpt: "A NORTAN PROJETOS é uma empresa colaborativa de consultores voltados para a prestação de serviços relacionados à produção, gestão e solução de espaços para construção civil e meio ambiente. Formada por profissionais criativos, inovadores, capacitados e em constante atualização para atender as necessidades de nossos clientes. Vem se destacando pela qualidade na prestação do serviço, eficiência e confiabilidade. Hoje a sede se situa na cidade de Maceió em Alagoas, mas a empresa funciona principalmente em ambiente virtual realizando trabalhos em outros estados."
 voce:
   - title: "NORTAN E VOCÊ"
-    excerpt: "Nós te auxiliaremos na gestão administrativa e financeira de todos os seus contratos, foque no que é importante e aproveito os benefícios da nossa rede de consultores"
+    excerpt: "Nós te auxiliaremos na gestão administrativa e financeira de todos os seus contratos, foque no que é importante e aproveite os benefícios da nossa rede de consultores."
 missao:
   - image_path: /assets/images/desenvolvimento.png
     alt: "DESENVOLVIMENTO"
@@ -30,27 +30,27 @@ beneficios:
   - image_path: /assets/images/produto.jpg
     alt: "SE PREOCUPE COM O PRODUTO"
     title: "SE PREOCUPE COM O PRODUTO"
-    excerpt: "Nós fazemos a gestão administrativa e financeira do contrato de forma transparente"
+    excerpt: "Nós fazemos a gestão administrativa e financeira do contrato de forma transparente."
   - image_path: /assets/images/horario.jpg
     alt: "FAÇA SEU HORÁRIO"
     title: "FAÇA SEU HORÁRIO"
-    excerpt: "Trabalhe home-office ou em nosso coworking, aqui ninguém vende hora"
+    excerpt: "Trabalhe home office ou em nosso coworking, aqui ninguém vende hora."
   - image_path: /assets/images/profissional.jpg
     alt: "SEJA UM PROFISSIONAL COMPLETO"
     title: "SEJA UM PROFISSIONAL COMPLETO"
-    excerpt: "Aprenda sobre seu mercado, educação financeira, personal branding e empreendedorismo com profissionais experientes"
+    excerpt: "Aprenda sobre seu mercado, educação financeira, personal branding e empreendedorismo com profissionais experientes."
   - image_path: /assets/images/contrato.jpg
     alt: "AUMENTE SUA CARTEIRA DE CONTRATOS"
     title: "AUMENTE SUA CARTEIRA DE CONTRATOS"
-    excerpt: "Nossa rede de consultores e nosso marketplace permite trocas voluntárias entre cliente externos (gerencie contratos) e internos (faça parte de equipe)"
+    excerpt: "Nossa rede de consultores e nosso marketplace permite trocas voluntárias entre cliente externos (gerencie contratos) e internos (faça parte de equipe)."
   - image_path: /assets/images/equipe.jpg
     alt: "DESFRUTE DE MA EQUIPE DE ALTO NÍVEL"
     title: "DESFRUTE DE MA EQUIPE DE ALTO NÍVEL"
-    excerpt: "Mentore e seja mentorado. Nosso time se relaciona de forma direta compartilhando conhecimento"
+    excerpt: "Mentore e seja mentorado. Nosso time se relaciona de forma direta compartilhando conhecimento."
   - image_path: /assets/images/ganhos.jpg
     alt: "TENHA GANHOS ILIMITADOS"
     title: "TENHA GANHOS ILIMITADOS"
-    excerpt: "Tenha clareza do seu balanço financeiro e defina seu pró-labore mensal. Na Nortan o que você produz é seu"
+    excerpt: "Tenha clareza do seu balanço financeiro e defina seu pró-labore mensal. Na Nortan o que você produz é seu."
 funciona:
   - image_path: /assets/images/tecnico.png
     alt: "FAÇA PARTE DA EQUIPE"
@@ -60,7 +60,7 @@ funciona:
 
     - ​Se cadastre na plataforma
 
-    - Execute o serviço combinaNegocie valor com o gestor(a) do contrato através da plataforma
+    - Negocie valor com o gestor(a) do contrato através da plataforma
 
     - Execute o serviço combinado
 
@@ -77,7 +77,7 @@ funciona:
 
     - Negocie e feche um contrato
 
-    - repasse 30% do valor do contrato para Nortan. A empresa fará a gestão financeira e administrativa do contrato, pagando nota fiscal e dando o suporte necessário
+    - Repasse 30% do valor do contrato para Nortan. A empresa fará a gestão financeira e administrativa do contrato, quitando encargos financeiros, sociais e tributários, dando o suporte necessário
 
     - Negocie preço e serviço com a equipe Nortan de Consultores através da plataforma
 
@@ -85,12 +85,13 @@ funciona:
 
     - Transfira da sua Carteira para seu banco quando desejar"
 ---
+
 {% include feature_row id="intro" type="wide" propeties='data-aos="fade-right"' %}
 
-{% include feature_row id="missao" title="NOSSA MISSÃO" type="dual" title_size="h4" propeties='data-aos="fade-left"' %}
+{% include feature_row id="missao" title="NOSSA MISSÃO" type="dual" title_size="h3" propeties='data-aos="fade-left"' %}
 
-{% include feature_row id="voce" type="wide" propeties='data-aos="fade-up"' %}
+{% include feature_row id="voce" type="wide" propeties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
 
 {% include feature_row id="beneficios" title="BENEFÍCIOS" title_size="h4" propeties='data-aos="fade-right"' %}
 
-{% include feature_row id="funciona" type="left-center" title="COMO FUNCIONA?" wrapper_class="workBG" propeties='data-aos="fade-left"' %}
+{% include feature_row id="funciona" type="dual-center" title="COMO FUNCIONA?" propeties='data-aos="fade-left" style="border-bottom: 0px solid;"' %}

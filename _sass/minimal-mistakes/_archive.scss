@@ -254,19 +254,14 @@
   @include breakpoint($small) {
     float: left;
     margin-bottom: 0;
-    width: span(4 of 12);
+    width: span(6 of 12);
 
-    &:nth-child(3n + 1) {
+    &:nth-child(2n + 1) {
       clear: both;
       margin-left: 0;
     }
 
-    &:nth-child(3n + 2) {
-      clear: none;
-      margin-left: gutter(of 12);
-    }
-
-    &:nth-child(3n + 3) {
+    &:nth-child(2n + 2) {
       clear: none;
       margin-left: gutter(of 12);
     }
@@ -417,6 +412,46 @@
     }
   }
 
+  &--dual-center {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    text-align: justify;
+
+    .archive__item-teaser {
+      margin: 0 auto;
+      width: span(4 of 12);
+    }
+
+    .archive__item-title {
+      text-align: center;
+    }
+
+    @include breakpoint($small) {
+      width: span(6 of 12);
+
+      &:nth-child(2n + 1) {
+        clear: both;
+        margin-left: 0;
+      }
+
+      &:nth-child(2n + 2) {
+        clear: none;
+        margin-left: gutter(of 12);
+      }
+
+      .archive__item-teaser {
+        margin: 0 auto;
+        width: span(3 of 12);
+      }
+
+      .archive__item-body {
+        margin: 0 auto;
+        width: 100%;
+      }
+    }
+  }
+
   &--quad {
     width: 100%;
 
@@ -488,38 +523,6 @@
         padding-left: gutter(0.5 of 12);
         padding-right: gutter(1 of 12);
         width: span(7 of 12);
-      }
-    }
-  }
-
-  &--left-center {
-    position: relative;
-    float: left;
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-    clear: both;
-    font-size: 1.125em;
-    text-align: justify;
-
-    .archive__item {
-      float: left;
-      width: 100%;
-    }
-
-    .archive__item-teaser {
-      margin: 0 auto;
-      width: span(4 of 12);
-    }
-
-    @include breakpoint($small) {
-      .archive__item-teaser {
-        margin-left: span(1 of 12);
-        width: span(2 of 12);
-      }
-
-      .archive__item-body {
-        width: 100%;
       }
     }
   }
@@ -635,7 +638,7 @@
 /*
    Wide Pages
    ========================================================================== */
-@include breakpoint($medium){
+@include breakpoint($medium) {
   .workBG {
     background-image: url(/assets/images/funcionaBG.png);
     background-repeat: no-repeat;

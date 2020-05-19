@@ -36,7 +36,7 @@ servicos:
   - image_path: /assets/images/engE.png
     alt: "ENG. ELÉTRICA"
     title: "ENG. ELÉTRICA"
-    excerpt: "- Projeto de baixa tensão, TVD, lógica e telefônico
+    excerpt: "- Projeto Elétrico de baixa tensão, TV Digital, Lógica/Cabeamento Estruturado e Telefônico
 
     - Projeto de SPDA
 
@@ -46,7 +46,7 @@ servicos:
 
     - Instalação de energia solar
 
-    - Medições de campo"
+    - Laudos técnicos e medições elétricas"
   - image_path: /assets/images/engS.png
     alt: "ENG. SANITÁRIA"
     title: "ENG. SANITÁRIA"
@@ -87,4 +87,4 @@ servicos:
     - Modelagem Ecológica de Lagos e reservatórios"
 ---
 
-{% include feature_row id="servicos" title="SERVIÇOS" type="quad" title_size="h3" propeties='data-aos="fade-right"' %}
+{% include feature_row id="servicos" title="SERVIÇOS" type="quad" title_size="h3" propeties='data-aos="fade-right" style="border-bottom: 0px solid;"' %}
