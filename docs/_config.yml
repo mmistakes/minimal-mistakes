@@ -45,13 +45,13 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
-search                   : false # true, false (default)
+search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
 search_provider          : algolia # lunr (default), algolia
 algolia:
-  application_id         : # YOUR_APPLICATION_ID
-  index_name             : # YOUR_INDEX_NAME
-  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
+  application_id         : "5WMI8GUB7M" # YOUR_APPLICATION_ID
+  index_name             : "dev_mop-api-docs" # YOUR_INDEX_NAME
+  search_only_api_key    : "63b3bc4f56656b87c9e82401049d8c99" # YOUR_SEARCH_ONLY_API_KEY
   powered_by             : true # true (default), false
   files_to_exclude:
     - _posts/2017-11-28-post-exclude-search.md

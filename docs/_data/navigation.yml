@@ -27,8 +27,8 @@ main:
     description: "user manuals & tutorials"
   - title: "Reference"
     url: /reference/
-  - title: "Sample Collections"
-    url: /collection-archive/
+  - title: "Samples"
+    url: /samples/
   - title: "Terms &amp; Privacy Policy"
     url: /terms/
 
