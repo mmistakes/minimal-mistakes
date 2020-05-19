@@ -1,7 +1,7 @@
 version: '3.3'
 services:
   mop-doc:
-    image: netfoundry/mop-doc
+    image: netfoundry/mop-api-docs
     build:
       context: .
     volumes:
