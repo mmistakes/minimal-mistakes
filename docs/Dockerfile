@@ -39,7 +39,7 @@ RUN gem install github-pages --version 204 && \
     gem install bigdecimal
 
 
-# TODO seal to ship
+# TODO seal before ship to optimize storage
 #RUN apk del gcc g++ binutils bison perl nodejs make curl && \
 #    rm -rf /var/cache/apk/*
 
