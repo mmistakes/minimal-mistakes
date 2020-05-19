@@ -44,8 +44,8 @@ beneficios:
     title: "AUMENTE SUA CARTEIRA DE CONTRATOS"
     excerpt: "Nossa rede de consultores e nosso marketplace permite trocas voluntárias entre cliente externos (gerencie contratos) e internos (faça parte de equipe)."
   - image_path: /assets/images/equipe.jpg
-    alt: "DESFRUTE DE MA EQUIPE DE ALTO NÍVEL"
-    title: "DESFRUTE DE MA EQUIPE DE ALTO NÍVEL"
+    alt: "DESFRUTE DE UMA EQUIPE DE ALTO NÍVEL"
+    title: "DESFRUTE DE UMA EQUIPE DE ALTO NÍVEL"
     excerpt: "Mentore e seja mentorado. Nosso time se relaciona de forma direta compartilhando conhecimento."
   - image_path: /assets/images/ganhos.jpg
     alt: "TENHA GANHOS ILIMITADOS"
