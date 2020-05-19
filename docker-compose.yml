@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+  mop-doc:
+    image: netfoundry/mop-doc
+    build:
+      context: .
+    volumes:
+      - ./docs:/site
+    ports:
+      - 4000:4000
+    environment:
+      - JEKYLL_GITHUB_TOKEN
