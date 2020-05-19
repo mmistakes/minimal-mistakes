@@ -49,4 +49,4 @@ feature_row:
         url: "mailto:jessicagoncalves@nortanprojetos.com"
 ---
 
-{% include feature_row type="team" title="Equipe Nortan Projetos" propeties='style="border-bottom: 0px solid; margin-top: 50px;"'%}
+{% include feature_row type="team" title="Equipe Nortan" propeties='style="border-bottom: 0px solid; margin-top: 50px;"'%}
