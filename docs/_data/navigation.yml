@@ -1,90 +1,30 @@
-# example navigation
-foo:
-  - title: "Parent Link 1"
-    url: /parent-1-page-url/
-    children:
-      - title: "Child Link 1"
-        url: /child-1-page-url/
-      - title: "Child Link 2"
-        url: /child-2-page-url/
-  - title: "Parent Link 2"
-    url: /parent-2-page-url/
-    children:
-      - title: "Child Link 1"
-        url: /child-1-page-url/
-      - title: "Child Link 2"
-        url: /child-2-page-url/
-      - title: "Child Link 3"
-        url: /child-3-page-url/
-
 
 # main links
 main:
-  - title: "Get Started"
-    url: /docs/get-started-guide/
+  - title: "Intro"
+    url: /docs/introduction/
+    description: "start here"
   - title: "Guides"
     url: /guides/
     description: "user manuals & tutorials"
   - title: "Reference"
     url: /reference/
-  - title: "Samples"
-    url: /samples/
-  - title: "Terms &amp; Privacy Policy"
-    url: /terms/
+  # - title: "Samples"
+  #   url: /samples/
+  # - title: "Terms &amp; Privacy Policy"
+  #   url: /terms/
 
 
 # documentation links
 docs:
   - title: Guides
     children:
-      - title: "Overview"
-        url: /docs/overview/
-      - title: "Get Started"
-        url: /docs/get-started/
+      - title: "Intro"
+        url: /docs/introduction/
       - title: "Authentication"
         url: /docs/authentication/
       - title: "Hello, AppWAN!"
         url: /docs/hello-appwan/
+      - title: "Rapid API User Manual"
+        url: /docs/rapidapi/
 
-# sidebar navigation list sample
-sidebar-sample:
-  - title: "Parent Page A"
-    children:
-      - title: "Child Page A1"
-        url: /
-      - title: "Child Page A2"
-        url: /
-      - title: "Child Page A3"
-        url: /
-      - title: "Child Page A4"
-        url: /
-  - title: "Parent Page B"
-    children:
-      - title: "Child Page B1"
-        url: /
-      - title: "Child Page B2"
-        url: /
-      - title: "Child Page B3"
-        url: /
-      - title: "Child Page B4"
-        url: /
-      - title: "Child Page B5"
-        url: /
-  - title: "Parent Page C"
-    children:
-      - title: "Child Page C1"
-        url: /
-      - title: "Child Page C2"
-        url: /
-      - title: "Child Page C3"
-        url: /
-      - title: "Child Page C4"
-        url: /
-      - title: "Child Page C5"
-        url: /
-  - title: "Parent Page D"
-    children:
-      - title: "Child Page D1"
-        url: /
-      - title: "Child Page D2"
-        url: /
