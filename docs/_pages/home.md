@@ -15,24 +15,24 @@ feature_row:
   - image_path: /assets/images/connect-on-rapidapi.png
     alt: "RapidAPI"
     title: "RapidAPI User Manual"
-    excerpt: "Access NetFoundry through RapidAPI"
+    excerpt: "Freemium Access to NetFoundry"
     url: "/v1/guides/rapidapi/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"
+    btn_label: "Subscribe"
   - image_path: /assets/images/nf-support-hub.png
     alt: "Support Hub"
-    title: "NetFoundry Support Hub"
-    excerpt: "Learn about the NetFoundry Platform and Console"
+    title: "Support Hub"
+    excerpt: "Learn about the Console"
     url: "https://support.netfoundry.io/hc/en-us"
     btn_class: "btn--primary"
-    btn_label: "Learn more"
+    btn_label: "GUI"
   - image_path: /assets/images/ziti-dev-logo.png
     alt: "Ziti.dev"
-    title: "Ziti Developer Portal"
-    excerpt: "NetFoundry is built on Ziti"
+    title: "OpenZiti"
+    excerpt: "NetFoundry is built on OpenZiti"
     url: "/v1/guides/ziti/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"
+    btn_label: "Zitify"
 
 ---
 
