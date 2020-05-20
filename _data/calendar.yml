@@ -1,40 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Teams Besprechung mit JÜL-Koll.",
-    "title": "Teams Besprechung mit JÜL-Koll.",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=c21vM2I1bms0bThlY3MyYmU4ZTlyMXQwc3MgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2020-05-20T13:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2020-05-20T14:00:00+02:00"
-    },
-    "created": "2020-05-19T03:40:17.000Z",
-    "updated": "2020-05-19T03:40:29.953Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Teams DB",
-    "title": "Teams DB",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=cWZxcHQ3c3BkcDFhYWQ1OHZpdGwybW04aDAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2020-05-20T14:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2020-05-20T15:00:00+02:00"
-    },
-    "created": "2020-05-19T03:40:50.000Z",
-    "updated": "2020-05-19T03:40:50.197Z"
-  },
-  {
-    "image_path": null,
     "alt": "unterrichtsfrei",
     "title": "unterrichtsfrei",
     "excerpt": null,
@@ -69,8 +35,8 @@
   },
   {
     "image_path": null,
-    "alt": "Bundesjugendspiele Sterne und Klassen 4 . - 6.",
-    "title": "Bundesjugendspiele Sterne und Klassen 4 . - 6.",
+    "alt": "Bundesjugendspiele entfallen",
+    "title": "Bundesjugendspiele entfallen",
     "excerpt": null,
     "url": "https://www.google.com/calendar/event?eid=NzRocTBvcHFrcDlwYXFrOXR2ZXBsaDIzZXEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
@@ -82,23 +48,57 @@
       "date_time": null
     },
     "created": "2020-03-02T15:13:09.000Z",
-    "updated": "2020-03-02T15:13:09.583Z"
+    "updated": "2020-05-20T03:55:47.002Z"
   },
   {
     "image_path": null,
-    "alt": "Ersatztermin Bundesjugendspiele",
-    "title": "Ersatztermin Bundesjugendspiele",
+    "alt": "Brandwerder-Cup",
+    "title": "Brandwerder-Cup",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MXQ1Y2Zjc2pic2EwNmdvc3ZudGl0aGRnY2IgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=MGtsNmVkNjRuaXNvNTRpdmxyMnU1anBsajAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
-      "date": "2020-06-15",
+      "date": "2020-06-22",
       "date_time": null
     },
     "end": {
-      "date": "2020-06-16",
+      "date": "2020-06-23",
       "date_time": null
     },
-    "created": "2020-03-02T15:13:31.000Z",
-    "updated": "2020-03-02T15:13:31.457Z"
+    "created": "2020-05-03T08:29:21.000Z",
+    "updated": "2020-05-03T08:29:21.126Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Unterrichtsschluss um 11:30 Uhr (Kl. 1 - 5)",
+    "title": "Unterrichtsschluss um 11:30 Uhr (Kl. 1 - 5)",
+    "excerpt": "Verabschiedung der 6. Klassen",
+    "url": "https://www.google.com/calendar/event?eid=NHRrc2toYjg1NmdsN3RvYzdmOGFtamw2MzMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2020-06-23",
+      "date_time": null
+    },
+    "end": {
+      "date": "2020-06-24",
+      "date_time": null
+    },
+    "created": "2020-05-03T08:27:31.000Z",
+    "updated": "2020-05-03T08:28:34.429Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Verabschiedung der 6. Klassen",
+    "title": "Verabschiedung der 6. Klassen",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MHVxbjluMHVzbmtjaDluYnZvMTRkN2ZqOGEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2020-06-23T12:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2020-06-23T13:30:00+02:00"
+    },
+    "created": "2020-05-03T08:26:55.000Z",
+    "updated": "2020-05-03T08:28:51.388Z"
   }
 ]
