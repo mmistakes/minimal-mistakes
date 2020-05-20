@@ -30,7 +30,7 @@ An endpoint is an app or device on the edge of your network. Clients and gateway
 An embedded endpoint that provides a service is self-terminating i.e. "hosted". Traffic to a service that is "non-hosted" will exit the AppWAN at the terminating endpoint and proceed to its final destination, the resource described by the service definition, e.g. 11.22.33.44 on 55/tcp. Terminating endpoints for non-hosted services are typically positioned for optimal performance and security of that final hop from the service's terminating endpoint to the resource server. Embedded endpoints are ideal because the traffic is logically inter-process within the AppWAN.
 
 #### Tunneler
-Tunneler is an app we built with open-source Ziti that enables initiation for processes on the device where it is running, termination for services that device can reach, or both. When Tunneler is running on a device that is a router it may also provide initiation and termination via attached routes.
+Tunneler is an app we built with Ziti SDKs that enables initiation for processes on the device where it is running, termination for services that device can reach, or both. When Tunneler is running on a device that is a router it may also provide initiation and termination via attached routes.
 
 <!-- ## Examples
 * NetFoundry will provision redundant, zero-trust fabric routers near the service's terminating endpoint.

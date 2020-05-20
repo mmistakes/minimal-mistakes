@@ -17,7 +17,7 @@ title_separator          : "-"
 subtitle                 : "Developer Portal"
 name                     : &name "NetFoundry, Inc" # &name is a YAML anchor which can be *referenced later
 description              : &description "The API enables you to program the orchestration of your network."
-url                      : https://netfoundry.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://developer.netfoundry.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 repository               : "netfoundry/mop-api-docs"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
