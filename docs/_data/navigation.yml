@@ -10,6 +10,10 @@ main:
   - title: "Playground"
     url: /v1/playground/
     description: "Swagger UI"
+  - title: "Help"
+    url: /help/
+    description: "Request Support"
+  
   # - title: "Samples"
   #   url: /samples/
   # - title: "News"
