@@ -45,7 +45,7 @@ comments:
     issue_term           : # "pathname" (default)
   staticman:
     branch               : "master" # "master"
-    endpoint             : "https://twnbot-staticman.herokuapp.com/v3/entry/github" # "https://{your Staticman v3 API}/v3/entry/github/"
+    endpoint             : "https://twnbot-staticman.herokuapp.com/v3/entry/github/" # "https://{your Staticman v3 API}/v3/entry/github/"
 reCaptcha:
   siteKey                : "6LchJ_kUAAAAAAl-_HNUZ2KT5cxYPDQdmowTz-pm"
   secret                 : "F2LPTLGLC+dbcOsx1trzkVFZ97hND4Oyh4qnB56zlO70nUDxFoqktzi4kTlUKFVFI79jJ332RsOAulN9FFY6fHyHmREQ6EDJcPopeFVfYul/+y2bTyEf8sxMsS6QRjs51MO4FOl702UNvSVOYYYVrZy5wUNhx+/grErCXUi2I8uk/b3JR0zLG1PGEydpC609XZh2QUWG4zhC/9o+EBVQn+ybZIGBo78dru7LUHUG87W1cESMVeSweY/ASkaje50QS8+Ji/Wu5ti1SmU9KwCVG8mvVl7cZ5U2LEzSdcQGLAgP/dvCVfFCWKNZ23Q95MkfkINKmfevPaiPV0NUjck8D26fdAr0qujkVKyR01X05hBD0UNON5hsPqQJTbEig8Qkm6v0YrCYpJtykkMgBzxvNcLqoTKMXVHOlvRdW5Fxrp8bZ1kN780MmOA0EZK111ymx2zoIXXlV9W3cKZaX/7G6Akr0ZEmgLF0bsbRKJ+WmK1RH13mjqFGytELAKhPTSaQ4rZdCAjDa1L182xYOCd0+KsFN4a8O+gm0mpimb6GWGeeLx9QyzYsk6sYraOhIadd1EnqTcC2dm1APPGgMxvareBijPTNg7a6yOwvHaYj4SKk7VMo3Y/n4DZhwuDBFvcpSRjc4byiIF76UzpvdTvkBt+8uXnQmWKvMRC0eCMG8+w="
