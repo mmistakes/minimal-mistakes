@@ -1,30 +1,40 @@
 
 # main links
-main:
+v1main:
   - title: "Intro"
-    url: /docs/introduction/
+    url: /v1/introduction/
     description: "start here"
   - title: "Guides"
-    url: /guides/
-    description: "user manuals & tutorials"
+    url: /v1/guides/
+    description: "manuals &amp; tutorials"
   - title: "Reference"
-    url: /reference/
+    url: /v1/reference/
+    description: "OpenAPI description &amp; reference"
+  - title: "News"
+    url: /blog/
+    description: "What's new?"
   # - title: "Samples"
   #   url: /samples/
   # - title: "Terms &amp; Privacy Policy"
   #   url: /terms/
+  - title: "Versions"
+    children:
+      - title: "v2"
+        url: /v2/
+      - title: "v1"
+        url: /v1/
 
 
 # documentation links
-docs:
+v1guides:
   - title: Guides
     children:
       - title: "Intro"
-        url: /docs/introduction/
+        url: /v1/introduction/
       - title: "Authentication"
-        url: /docs/authentication/
+        url: /v1/authentication/
       - title: "Hello, AppWAN!"
-        url: /docs/hello-appwan/
+        url: /v1/hello-appwan/
       - title: "Rapid API User Manual"
-        url: /docs/rapidapi/
+        url: /v1/rapidapi/
 
