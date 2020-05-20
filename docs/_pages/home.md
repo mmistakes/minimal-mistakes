@@ -4,11 +4,11 @@ permalink: /
 hidden: true
 header:
   image: /assets/images/cloud-header.png
-  overlay_color: "#727272"
+  overlay_color: "#9bf315"
   overlay_image: /assets/images/builder-header.png
   actions:
-    - label: "<i class='fas fa-network-wired'></i> Connect"
-      url: "/v1/guides/rapidapi/"
+    - label: "<i class='fas fa-network-wired'></i> Start Here"
+      url: "/v1/guides/introduction/"
 excerpt: >
   Documentation and Tools
 feature_row:
