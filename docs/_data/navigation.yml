@@ -7,6 +7,9 @@ main:
   - title: "Reference"
     url: /v1/reference/
     description: "OpenAPI description &amp; reference"
+  - title: "Playground"
+    url: /swagger-ui/
+    description: "Swagger UI"
   # - title: "Samples"
   #   url: /samples/
   # - title: "News"
