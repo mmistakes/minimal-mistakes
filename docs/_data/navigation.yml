@@ -1,40 +1,35 @@
 
-# main links
-v1main:
-  - title: "Intro"
-    url: /v1/introduction/
-    description: "start here"
+# v1 horizontal nav
+main:
   - title: "Guides"
-    url: /v1/guides/
-    description: "manuals &amp; tutorials"
+    url: /v1/guides/introduction/
+    description: "intro, manuals, tutorials"
   - title: "Reference"
     url: /v1/reference/
     description: "OpenAPI description &amp; reference"
-  - title: "News"
-    url: /blog/
-    description: "What's new?"
   # - title: "Samples"
   #   url: /samples/
+  # - title: "News"
+  #   url: /blog/
+    description: "What's new?"
+  - title: "NetFoundry"
+    url: https://netfoundry.io/
+  - title: "Ziti"
+    url: https://ziti.dev
   # - title: "Terms &amp; Privacy Policy"
   #   url: /terms/
-  - title: "Versions"
-    children:
-      - title: "v2"
-        url: /v2/
-      - title: "v1"
-        url: /v1/
 
-
-# documentation links
+# guides sidebar
 v1guides:
   - title: Guides
     children:
       - title: "Intro"
-        url: /v1/introduction/
+        url: /v1/guides/introduction/
       - title: "Authentication"
-        url: /v1/authentication/
+        url: /v1/guides/authentication/
       - title: "Hello, AppWAN!"
-        url: /v1/hello-appwan/
+        url: /v1/guides/hello-appwan/
       - title: "Rapid API User Manual"
-        url: /v1/rapidapi/
+        url: /v1/guides/rapidapi/
 
+v2main:
