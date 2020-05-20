@@ -14,11 +14,7 @@ main:
   #   url: /samples/
   # - title: "News"
   #   url: /blog/
-    description: "What's new?"
-  - title: "NetFoundry"
-    url: https://netfoundry.io/
-  - title: "Ziti"
-    url: https://ziti.dev
+  #  description: "What's new?"
   # - title: "Terms &amp; Privacy Policy"
   #   url: /terms/
 

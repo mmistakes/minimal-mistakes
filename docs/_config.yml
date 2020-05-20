@@ -112,6 +112,9 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "NetFoundry"
+      icon: "fas fa-home"
+      url: "https://netfoundry.io/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/netfoundry"
