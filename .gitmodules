@@ -1,3 +1,0 @@
-[submodule "docs/assets/swagger-ui"]
-	path = docs/assets/swagger-ui
-	url = https://github.com/swagger-api/swagger-ui
