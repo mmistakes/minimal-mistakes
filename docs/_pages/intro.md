@@ -6,25 +6,30 @@ sidebar:
 toc: true
 ---
 
-The API enables you to program the orchestration of your network. You could automate things like
-* allowing a new device to connect to a service,
-* disallowing a lost or non-compliant device from connecting,
+## Audience
+This documentation is aimed at developers wishing to automate things they can already do with the [NetFoundry Console](https://nfconsole.io/). If you are looking for a general introduction to NetFoundry then the [Support Hub](https://support.netfoundry.io/hc/en-us) or the [main site](https://netfoundry.io) are also places you could begin.
+
+## Why use the API?
+You could write a program to interact with the NetFoundry API on behalf of your network to
+* allow a new device to connect to a service,
+* disallow a lost or non-compliant device from connecting,
 * create a path to a new network service for an existing group of devices, or
 * trigger an alert based on an unexpected metric for some service.
 
-## What is an AppWAN?
+## Concepts
+### What is an AppWAN?
 An AppWAN is a policy that controls access to services. An AppWAN is populated by endpoints that communicate via an encrypted network fabric. Endpoints in an AppWAN are organized by whether they provide a service. Endpoints that do provide a service to the AppWAN appear by association with that service, i.e. they're known in the AppWAN as that service. Endpoints that consume services appear in AppWANs as clients or gateways. All of the clients and gateways in an AppWAN have permission to connect to all of the services.
 
-## What is an endpoint?
+### What is an endpoint?
 An endpoint is an app or device on the edge of your network. Clients and gateways are "initiating" endpoints. Services are always provided to an AppWAN by a "terminating" endpoint. An endpoint in an AppWAN may represent an app, a device, or some IPs. For example,
 * An app that is built with a Ziti Endpoint SDK is an embedded endpoint, and
 * a device where Tunneler is installed is a client endpoint, and
 * a router where Tunneler is installed is a gateway endpoint.
 
-### "Hosted" vs "Non-Hosted"
+#### "Hosted" vs "Non-Hosted"
 An embedded endpoint that provides a service is self-terminating i.e. "hosted". Traffic to a service that is "non-hosted" will exit the AppWAN at the terminating endpoint and proceed to its final destination, the resource described by the service definition, e.g. 11.22.33.44 on 55/tcp. Terminating endpoints for non-hosted services are typically positioned for optimal performance and security of that final hop from the service's terminating endpoint to the resource server. Embedded endpoints are ideal because the traffic is logically inter-process within the AppWAN.
 
-### Tunneler
+#### Tunneler
 Tunneler is an app we built with open-source Ziti that enables initiation for processes on the device where it is running, termination for services that device can reach, or both. When Tunneler is running on a device that is a router it may also provide initiation and termination via attached routes.
 
 <!-- ## Examples

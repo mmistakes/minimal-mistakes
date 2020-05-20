@@ -16,7 +16,7 @@ title                    : "NetFoundry API"
 title_separator          : "-"
 subtitle                 : "Developer Portal"
 name                     : &name "NetFoundry, Inc" # &name is a YAML anchor which can be *referenced later
-description              : &description "A flexible Jekyll theme for your blog or site with a minimalist aesthetic."
+description              : &description "The API enables you to program the orchestration of your network."
 url                      : https://netfoundry.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 repository               : "netfoundry/mop-api-docs"
