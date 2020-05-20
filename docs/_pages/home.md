@@ -4,7 +4,7 @@ permalink: /
 hidden: true
 header:
   image: /assets/images/cloud-header.png
-  overlay_color: "#9bf315"
+#  overlay_color: "#9bf315"
   overlay_image: /assets/images/builder-header.png
   actions:
     - label: "<i class='fas fa-network-wired'></i> Start Here"
