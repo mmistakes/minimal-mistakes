@@ -1,6 +1,8 @@
 ---
 permalink: /v1/guides/rapidapi/
 title: RapidAPI
+sidebar:
+    nav: v1guides
 ---
 
 
