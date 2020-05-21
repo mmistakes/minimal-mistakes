@@ -45,8 +45,8 @@ comments:
     issue_term           : # "pathname" (default)
   staticman:
     branch               : "master" # "master"
-    endpoint             : "https://staticman-twn.herokuapp.com/v3/entry/github/" # "https://{your Staticman v3 API}/v3/entry/github/"
-    #staticman_url        : "https://staticman-twn.herokuapp.com/v2/connect/thewhatnote/thewhatnote.github.io/master/comments"
+    endpoint             :# "https://staticman-twn.herokuapp.com/v3/entry/github/" # "https://{your Staticman v3 API}/v3/entry/github/"
+    staticman_url        : "https://staticman-twn.herokuapp.com/v2/entry/thewhatnote/thewhatnote.github.io/master/comments"
 reCaptcha:
   siteKey                : #"6LchJ_kUAAAAAAl-_HNUZ2KT5cxYPDQdmowTz-pm"
   secret                 : #"RLAJoNpkvY7+3rd1hHfNmuAdfFrQfeFCCvl4+p7N67ooi7V1m3/K/tOK0wI3oaPbL8+eR5DTAxU/u+1TMMC8DxiltzZ9Ge8iQ1pAl/g42at8C52gKU9cxbxm3As16ecBl5HGfEVlBavXezkgm0WH+tRHL1GVR99aKL2HWZGJFsgbsiHDceCUStnt/KGlrIs3PCgqK1/MQ2H33w5nB69svQVCcjWOA78kumuTf4zmo1ezZciGRV5BFAkbYtAY1DnExqjzjliSlKGN6/N34cjJPJn6pM+PI2HVa5kHZJy1yQI9aB68YnwW06cxm4qrdb1oLa8/YkOBZrojSdobxACd4xDD+XxkdXpJiknm3bzvYCm09DKZIe9MxZZ9J3/VRFQiZMrl/yroG0t3NjQnfEDTmOARdAQXX/SpIcmz+RWduuGrelUf+pOy2KFztPuDKyagJcTk7qLZ1H8GAEpXr5x/r/ZkmoH+nFYT2wOmEmo1GdodR+mWlpGjf9e7GMxYcsqQSf2ayddpbuHyPEZlPydzKkNQAh86B8YyZ/Oy+20R7NHaEyOkCyTK49knkgbqdhdO+RXZ1+ul+vP8Vpba2iJmCjGqRCxoHZjr2jQ56oWNGVTHY1sW8HmxsbhfVtBuWsne3t2ltDQMy4Xe3rgvjVP2uau25ubtfl7C5rYaqZ7fG0I="
