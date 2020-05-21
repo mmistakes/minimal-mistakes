@@ -31,7 +31,7 @@ Pull it all together with [HTTPie (command-line HTTP client)](https://httpie.org
 3. In NF Console, navigate to "Organization", "Manage API Account", and click <i class="fas fa-plus-circle"></i>
 
 ### Get a temporary token
-Use your permanent credential; `client_id`, `client_secret`; to obtain an expiring `access_token` from the identity provider, Auth0. Here are examples for `curl` and `http` to get you started. The final snippet demonstrates how you could parse the JSON response with [`jq` (command-line JSON processor)](https://stedolan.github.io/jq/) to retain only the value of `access_token`.
+Use your permanent credential; `client_id`, `client_secret`; to obtain an expiring `access_token` from the identity provider, Auth0. Here are examples for `curl` and `http` to get you started.
 
 **HTTPie**
 ```bash
