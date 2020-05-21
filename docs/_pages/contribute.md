@@ -62,6 +62,22 @@ These steps provide a local preview server at **[http://localhost:4000/](http://
 
 ## Things to Know
 
+### Workflow
+
+1. fork the repo, unless you have access to main repo
+2. clone the repo
+3. make a change
+4. create a local branch
+5. commit your change
+6. push your commit to the remote
+7. create a pull request for your branch
+8. change the base repo to "netfoundry/mop-api-docs" 
+9. submit your pull request
+10. monitor for build failures
+
+We'll be able to simplify this somewhat by removing the need to change the base repo when the fork link is broken. For now, it seems there's no way to configure the default base repo.
+
+
 ### Content &amp; Theme
 * Local changes to files in `/docs` will be picked up immediately by Jekyll, except `/docs/_config.yml` which requires restarting the preview container.
 * Optionally, before running the container, export your [GitHub API token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) as `JEKYLL_GITHUB_TOKEN` and it will be made available to Jekyll for querying metadata from the GitHub API.
