@@ -10,10 +10,10 @@ sidebar:
 Thank you for improving this site! This site is open source and the API maintainers welcome your contributions. [Please reach out](/help/) if you have any questions.
 
 ## Content
-The content of this site lives in the top-level directory `/docs` in the GitHub repo [netfoundry/mop-api-docs](https://github.com/netfoundry/mop-api-docs).
+The content of this site lives in the top-level directory `/docs` in the GitHub repo [netfoundry/mop-api-docs](https://github.com/netfoundry/mop-api-docs/tree/master/docs). Minor changes can be made directly in GitHub's editor.
 
 ## Theme
-The theme lives in the top-level `/` in the same GitHub repo [netfoundry/mop-api-docs](https://github.com/netfoundry/mop-api-docs) as the content.
+The theme lives in the top-level `/` in the same GitHub repo [netfoundry/mop-api-docs](https://github.com/netfoundry/mop-api-docs) as the content. The theme is forked from Minimal Mistakes which publishes an excellent [quick-start guide](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/). The idea is to minimize changes to the parent theme so that we can later merge in improvements from upstream.
 
 ## Preview
 These steps provide a local preview server at **[http://localhost:4000/](http://localhost:4000/)**
@@ -66,8 +66,7 @@ These steps provide a local preview server at **[http://localhost:4000/](http://
 * Local changes to files in `/docs` will be picked up immediately by Jekyll, except `/docs/_config.yml` which requires restarting the preview container.
 * Optionally, before running the container, export your [GitHub API token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) as `JEKYLL_GITHUB_TOKEN` and it will be made available to Jekyll for querying metadata from the GitHub API.
 * Most content is in `/docs/_pages/` with meaningful names. You can add or edit Kramdown (GitHub-flavored Markdown) `.md` or Liquid template `.html` files.
-* Theme changes could go in the top-level theme or become overrides in corresponding child directories under `/docs`. For example, `/docs/_layouts/default.html` overrides `/_layouts/default.html` and is available immediately in the local preview. Changes to the top-level theme don't become visible in the local preview until they're merged to the master branch in the Git remote. The idea is to minimize changes to the parent theme so that we can later merge in improvements from upstream.
-* The theme is forked from Minimal Mistakes which publishes an excellent [quick-start guide](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/) covering the use of the relevant Jekyll plugins.
+* Theme changes could go in the top-level theme or become overrides in corresponding child directories under `/docs`. For example, `/docs/_layouts/default.html` overrides `/_layouts/default.html` and is available immediately in the local preview. Changes to the top-level theme don't become visible in the local preview until they're merged to the master branch in the Git remote.
 
 ### Build &amp; Publish
 * All merges to the master branch are automatically published by GitHub pages.
