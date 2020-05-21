@@ -29,7 +29,7 @@ feature_row:
   - image_path: /assets/images/ziti-dev-logo.png
     alt: "Ziti.dev"
     title: "OpenZiti"
-    excerpt: "NetFoundry is built on OpenZiti"
+    excerpt: "NetFoundry is built on Ziti"
     url: "/v1/guides/ziti/"
     btn_class: "btn--primary"
     btn_label: "Zitify"
