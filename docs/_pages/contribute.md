@@ -83,6 +83,7 @@ These steps provide a local preview server at **[http://localhost:4000/](http://
     travis encrypt "netfoundry:{redacted}" --add notifications.slack -r netfoundry/mop-api-docs
     ```
     The result of this is a new encrypted Slack token in `/.travis.yml` which you'll need to commit and push to Git remote.
+* The GitHub repo has a branch protection for master that requires a successful Travis build.
 * The domain name developer.netfoundry.io is a `CNAME` resource record in the netfoundry.io hosted zone in Route53. The `RDATA` of the record is the GitHub Pages sub-domain.
     ```bash
     ❯ dig +short -tCNAME developer.netfoundry.io.

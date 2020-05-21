@@ -17,6 +17,7 @@ You could write a program to interact with the NetFoundry API on behalf of your 
 * trigger an alert based on an unexpected metric for some service.
 
 ## Concepts
+
 ### What is an AppWAN?
 An AppWAN is a policy that controls access to services. An AppWAN is populated by endpoints that communicate via an encrypted network fabric. Endpoints in an AppWAN are organized by whether they provide a service. Endpoints that do provide a service to the AppWAN appear by association with that service, i.e. they're known in the AppWAN as that service. Endpoints that consume services appear in AppWANs as clients or gateways. All of the clients and gateways in an AppWAN have permission to connect to all of the services.
 

@@ -5,7 +5,7 @@ main:
     url: /v1/guides/introduction/
     description: "intro, manuals, tutorials"
   - title: "Reference"
-    url: /v1/reference/
+    url: /reference/
     description: "OpenAPI description &amp; reference"
   - title: "Playground"
     url: /v1/playground/
