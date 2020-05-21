@@ -45,7 +45,7 @@ comments:
     issue_term           : # "pathname" (default)
   staticman:
     branch               : "master" # "master"
-    endpoint             : "https://twnbot-staticman.herokuapp.com/v3/entry/github/" # "https://{your Staticman v3 API}/v3/entry/github/"
+    endpoint             : "https://staticman-twn.herokuapp.com/v3/entry/github/" # "https://{your Staticman v3 API}/v3/entry/github/"
     #staticman_url        : "https://staticman-twn.herokuapp.com/v2/connect/thewhatnote/thewhatnote.github.io/master/comments"
 reCaptcha:
   siteKey                : #"6LchJ_kUAAAAAAl-_HNUZ2KT5cxYPDQdmowTz-pm"
