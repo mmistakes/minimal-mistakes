@@ -1,6 +1,7 @@
+# run docker-compose in /docs
 version: '3.3'
 services:
-  mop-doc:
+  preview:
     image: netfoundry/mop-api-docs
     build:
       context: .
@@ -10,3 +11,11 @@ services:
       - 4000:4000
     environment:
       - JEKYLL_GITHUB_TOKEN
+  build:
+    image: netfoundry/mop-api-docs
+    build:
+      context: .
+    volumes:
+      - ..:/site
+    command: sh
+    
