@@ -5,7 +5,9 @@ script:
   - bundle exec jekyll algolia --source docs --destination docs/_site --config docs/_config.yml
 branches:
   only:
-    # Change this to gh-pages if you're deploying using the gh-pages branch
-    - master
+  - master
 rvm:
- - 2.4
+- 2.4
+notifications:
+  slack:
+    secure: T/yLN/7xf+DD7vLa+PgkXqKvxdZeapWUoYSInGDJ6w2CkxecaUNucb8J3uKdyc3X4OLJfr23z61Dsx67IYonXPBrU4cvinxlZDm9deDaDfJOF2O++2xMme3b/2PnT7sKEYHUztSp3S1LtgI++2Gfzvm9ulokOTrs8qthlskOUfkfl7mzjXE2tB4jftlv/DfDpbO1mx0xE9CdpJCY5iKAXrk8DTS3CQX6KLJjNtnf4zZnUADhqm0KashrFUOCQ0ASJlhIinUZnvYGROmGJCdTX1JKzd6NF0utjX/DJ7UXRey/jbIDPDsiZ2YahC3ViAIuh60OTuWC0msLd5DEnA8IbmriKFo+voXGuSdu6UFd+HHKMhP/Hof7iJnyTccczOc89d0tm9EaZWsK6xkN1gFdyR0erUvaOifd/nZEKAZ7bAeBS6yulj6gFF8mbmgZ1SFq9JbonMEyJiQiiPbdUXmdCryEpm05FbLzZkQbFNSdSZ9X8+IJzZASKPdhhVMn51EMC16mk9OUrXxxkhDwlC40vroDEJgGaN/T6cEWTcJoz3NT8a3uW+ytVjNlZoyjdpf5fmU5Pzz/2HMvGLdzmOP1xY66MzXD9bDN0XagvVUUp6lnRYrrbOo0UZbeco+WPOG+4yVAPpqUHMGPwYXR4uimGUn09cSZS3b2Ko/av5Lg1XA=
