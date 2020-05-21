@@ -10,7 +10,7 @@ sidebar:
 Thank you for improving this site! This site is open source and the API maintainers welcome your contributions. [Please reach out](/help/) if you have any questions.
 
 ## Content
-The content of this site lives in the top-level directory `/docs` in the GitHub repo [netfoundry/mop-api-docs](https://github.com/netfoundry/mop-api-docs/tree/master/docs). Minor changes can be made directly in GitHub's editor.
+The content of this site lives in the top-level directory `/docs` in the GitHub repo [netfoundry/mop-api-docs](https://github.com/netfoundry/mop-api-docs/tree/master/docs). Minor changes can be made directly in GitHub's editor. Changes are published automatically by GitHub pages when merged to master.
 
 ## Theme
 The theme lives in the top-level `/` in the same GitHub repo [netfoundry/mop-api-docs](https://github.com/netfoundry/mop-api-docs) as the content. The theme is forked from Minimal Mistakes which publishes an excellent [quick-start guide](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/). The idea is to minimize changes to the parent theme so that we can later merge in improvements from upstream.
