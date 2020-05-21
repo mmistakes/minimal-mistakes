@@ -37,8 +37,8 @@ Use your permanent credential; `client_id`, `client_secret`; to obtain an expiri
 ```bash
 ❯ http POST https://netfoundry-production.auth0.com/oauth/token \
   "content-type: application/json" \
-  "client_id=${client_id}" \
-  "client_secret=${client_secret}" \
+  "client_id=${CLIENT_ID}" \
+  "client_secret=${CLIENT_SECRET}" \
   "audience=https://gateway.production.netfoundry.io/" \
   "grant_type=client_credentials"
 ```
@@ -51,15 +51,15 @@ Use your permanent credential; `client_id`, `client_secret`; to obtain an expiri
     --request POST \
     --header 'content-type: application/json' \
     --data '{
-        "client_id": "'${client_id}'",
-        "client_secret": "'${client_secret}'",  
+        "client_id": "'${CLIENT_ID}'",
+        "client_secret": "'${CLIENT_SECRET}'",  
         "audience": "https://gateway.production.netfoundry.io/",
         "grant_type": "client_credentials"
     }' \
     https://netfoundry-production.auth0.com/oauth/token
 ```
 
-### Use the token with an operation
+### Use the token with an API operation
 Include the expiring bearer token in your request to the NetFoundry API. You could source the shell script above to make `NETFOUNDRY_API_TOKEN` available.
 
 **HTTPie**
