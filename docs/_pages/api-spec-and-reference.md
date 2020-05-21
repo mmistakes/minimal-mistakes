@@ -1,6 +1,6 @@
 ---
 title: API References
-permalink: /v1/reference/
+permalink: /reference/
 toc: true
 ---
 
