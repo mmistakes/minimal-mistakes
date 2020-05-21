@@ -3,7 +3,7 @@ layout: single
 title: PowerShell to manager Local Users and Groups
 excerpt : Add, View, Manage and Remove Local Users and Groups.
 published: true
-comments: true
+#comments: true
 tags: [Powershell,Windows,ActiveDirectory]
 category: [PowerShell]
 toc: true

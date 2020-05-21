@@ -5,7 +5,7 @@ excerpt : Yeah seriously it's your friend..!!
 tags: [Powershell,Basic]
 category: [PowerShell]
 published: true
-comments: true
+#comments: true
 ---
 <!--more-->
 
