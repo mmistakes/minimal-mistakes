@@ -3,6 +3,10 @@
 # available to processes run in the same shell
 
 getNfApiToken(){
+    [[ $# -eq 2 ]] || {
+        echo "ERROR: send two params: client_id client_secret" >&2
+        return 1
+    }
     client_id=$1
     client_secret=$2
     access_token=$(
@@ -17,6 +21,11 @@ getNfApiToken(){
     echo ${access_token}
 }
 
-export NETFOUNDRY_API_TOKEN=$(getNfApiToken ${CLIENT_ID} ${CLIENT_SECRET})
+[[ ! -z ${CLIENT_ID:-} && ! -z ${CLIENT_SECRET:-} ]] && {
+    export NETFOUNDRY_API_TOKEN=$(getNfApiToken ${CLIENT_ID} ${CLIENT_SECRET})
+} || {
+    echo "ERROR: failed to export NETFOUNDRY_API_TOKEN. "\
+         "Are permanent credential vars CLIENT_ID, CLIENT_SECRET assigned?" >&2
+}
 
  
