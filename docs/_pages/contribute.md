@@ -86,10 +86,10 @@ We'll be able to simplify this somewhat by removing the need to change the base 
 
 ### Build &amp; Publish
 * All merges to the master branch are automatically published by GitHub pages.
-* Merges to any branch trigger [a Travis build](https://travis-ci.org/github/netfoundry/mop-api-docs). The Travis build
+* Pushes to any branch trigger [a Travis build](https://travis-ci.org/github/netfoundry/mop-api-docs). The Travis build
     * validates the changes with Jekyll, and
     * updates the Algolia search index. The Travis env var `ALGOLIA_API_KEY` is the secret key for updating the Algolia index that was configured in `/docs/_config.yml`.
-* The Travis job reports are sent to Slack in netfoundry.slack.com #dev-notifications
+* The Travis job reports are sent to Slack in *netfoundry.slack.com#dev-notifications*
     * The Slack token is encrypted with `travis` CLI in `/.travis.yml` by following steps prescribed in [the Travis App for Slack](https://netfoundry.slack.com/apps/A0F81FP4N-travis-ci?next_id=0)
     ```bash
     # in /docs
@@ -98,7 +98,7 @@ We'll be able to simplify this somewhat by removing the need to change the base 
     gem install travis --no-document
     travis encrypt "netfoundry:{redacted}" --add notifications.slack -r netfoundry/mop-api-docs
     ```
-    The result of this is a new encrypted Slack token in `/.travis.yml` which you'll need to commit and push to Git remote.
+    The result of this is a new encrypted Slack token in the existing Travis config file `/.travis.yml` which you'll need to commit and push to the Git remote to become part of your pull request.
 * The GitHub repo has a branch protection for master that requires a successful Travis build.
 * The domain name developer.netfoundry.io is a `CNAME` resource record in the netfoundry.io hosted zone in Route53. The `RDATA` of the record is the GitHub Pages sub-domain.
     ```bash

@@ -26,4 +26,4 @@ Talk to other developers and maintainers with an email to *api-help@netfoundry.i
 Send a help request to *support@netfoundry.io* and read more about contacting support in [Support Hub](https://support.netfoundry.io/hc/en-us/articles/360019471912-Contact-NetFoundry-Support).
 
 ## Improve this Site
-Contributions are welcome! This API portal is open-source. You may [create a branch or a fork on GitHub](https://github.com/netfoundry/mop-api-docs) and send a merge request. Learn [how to edit this site](/contribute/).
+Contributions are welcome! This API portal is open-source. You may [create a branch or a fork on GitHub](https://github.com/netfoundry/mop-api-docs) and send a pull request. Learn [how to edit this site](/contribute/).
