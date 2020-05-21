@@ -102,7 +102,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "harish@thewhatnote.com" #"mailto:your.name@email.com"
+     # url: "harish@thewhatnote.com" #"mailto:your.name@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://thewhatnote.com" #"https://your-website.com"
