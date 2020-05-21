@@ -15,7 +15,7 @@ feature_row:
   - image_path: /assets/images/connect-on-rapidapi.png
     alt: "RapidAPI"
     title: "RapidAPI User Manual"
-    excerpt: "Freemium Access to NetFoundry"
+    excerpt: "Freemium API Access"
     url: "/v1/guides/rapidapi/"
     btn_class: "btn--primary"
     btn_label: "Subscribe"
