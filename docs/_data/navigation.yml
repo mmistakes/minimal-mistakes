@@ -34,5 +34,7 @@ v1guides:
         url: /v1/guides/hello-appwan/
       - title: "Rapid API User Manual"
         url: /v1/guides/rapidapi/
+      - title: "Improve this Site"
+        url: /contribute/
 
 v2main:
