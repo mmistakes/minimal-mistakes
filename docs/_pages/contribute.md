@@ -7,6 +7,8 @@ sidebar:
 
 ---
 
+Thank you for improving this site! This site is open source and the API maintainers welcome your contributions. [Please reach out](/help/) if you have any questions.
+
 ## Content
 The content of this site lives in the top-level directory `/docs` in the GitHub repo [netfoundry/mop-api-docs](https://github.com/netfoundry/mop-api-docs).
 
