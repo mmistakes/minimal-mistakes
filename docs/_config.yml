@@ -124,6 +124,9 @@ footer:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/company/netfoundry"
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://www.youtube.com/channel/UCGN6PFj1rZu50yme9YsICmg"
 
 
 # Reading Files
