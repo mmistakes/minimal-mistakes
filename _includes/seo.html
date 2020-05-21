@@ -4,13 +4,20 @@
 {%- endif -%}
 {%- assign seo_url = seo_url | default: site.github.url -%}
 
-{% assign title_separator = site.title_separator | default: '-' | replace: '|', '&#124;' %}
 
-{%- if page.title -%}
-  {%- assign seo_title = page.title | append: " " | append: title_separator | append: " " | append: site.title -%}
+{%- if site.title_separator -%}
+  {%- assign title_separator = site.title_separator | default: '-' | replace: '|', '&#124;' -%}
+  {%- assign append_title = append: " " | append: title_separator | append: " " | append: site.title -%}
+{%- endif -%}
+
+{%- if page.seo_title -%}
+  {%- assign seo_title = page.seo_title -%}
+{%- elsif page.title -%}
+  {%- assign seo_title = page.title -%}
 {%- endif -%}
 
 {%- if seo_title -%}
+  {%- assign seo_title = seo_title | append: append_title -%}
   {%- assign seo_title = seo_title | markdownify | strip_html | strip_newlines | escape_once -%}
 {%- endif -%}
 
