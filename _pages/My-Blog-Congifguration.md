@@ -1,7 +1,7 @@
 ---
 layout: pages
 title: "My Blog Configuration"
-permalink: /about/
+permalink: /My-Blog-Configuration"/
 search: true
 ---
 
