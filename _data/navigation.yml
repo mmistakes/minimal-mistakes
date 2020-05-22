@@ -13,6 +13,6 @@ main:
   - title: "About Me"
     url: /about/
     description: About Me
-  - title: "Blog Configuration"
-    url: /My-Blog-Congifguration/
-    description: Blog Configuration
+  - title: "My Blog Configuration"
+    url: /BlogConfig/
+    description: My Blog Configuration
