@@ -1,5 +1,11 @@
 # main links
 main:
+  - title: "My Blog Configuration"
+    url: /blogconfiguration/
+    description: My Blog Configuration
+  - title: "About Me"
+    url: /about/
+    description: About Me
   #- title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
@@ -10,9 +16,5 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
-  - title: "About Me"
-    url: /about/
-    description: About Me
-  - title: "My Blog Configuration"
-    url: /blogconfiguration/
-    description: My Blog Configuration
+ 
+  
