@@ -14,7 +14,7 @@ comments: false
 ---
 
 
-# Here is the changes I made to my blog.
+## Here is the changes made to my blog
 
 | File | Modifications | Additions |
 |:--:|:--|:--|
