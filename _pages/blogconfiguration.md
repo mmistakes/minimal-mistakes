@@ -1,12 +1,12 @@
 ---
 layout: pages
 title: "My Blog Configuration"
-permalink: /BlogConfig/
+permalink: /blogconfiguration/
 search: true
 ---
 
 #### Seriously..!! Then you keep checking this page :)
 
-** Theme **
+**Theme** I used
 
 I forked a theme from Minimal Mistakes
