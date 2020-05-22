@@ -5,6 +5,7 @@ toc: true
 ---
 
 ## OpenAPI Specification
+Import the spec in [Postman](https://www.postman.com/) to create a collection of all request operations.
 * [JSON](https://gateway.production.netfoundry.io/rest/v1/docs/openapi-3.0.json)
 * [YAML](https://gateway.production.netfoundry.io/rest/v1/docs/openapi-3.0.yml)
 
