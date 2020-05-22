@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "My Blog Configuration
+title: "My Blog Configuration"
 #excerpt: "How I stared my blog?"
 date: 2020-05-18
 last_modified_at: 2020-05-22
@@ -26,4 +26,7 @@ category:
   - blog
 ---
 
+# -- 
+
+I forked a theme from Minimal Mistakes
 
