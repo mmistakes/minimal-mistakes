@@ -7,6 +7,6 @@ search: true
 
 #### Seriously..!! Then you keep checking this page :)
 
-# Theme
+** Theme **
 
 I forked a theme from Minimal Mistakes
