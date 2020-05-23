@@ -9,9 +9,9 @@ toc: true
 ## Audience
 This is aimed at NetFoundry customers and [trial users](https://nfconsole.io/signup) who will use the API directly to augment and automate their use of the NF Console.
 
-<span class="notice--warning">
+<div class="notice--warning">
 RapidAPI subscribers will use their RapidAPI token with the RapidAPI code samples instead of an Auth0 credential.
-</span>
+</div>
 
 ## Overview
 All authenticated operations require an HTTP header like
