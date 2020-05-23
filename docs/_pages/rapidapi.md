@@ -9,8 +9,15 @@ tags:
     - "resellers"
 ---
 
-RapidAPI provides SDKs for their ecosystem of APIs. You may click to subscribe to an API such as NetFoundry's and paste code snippets they provide in your IDE to quickly automate interactions with one or more APIs.
+RapidAPI provides code samples for many languages to access any API in their marketplace, such as the NetFoundry API. Some developers find this is an accelerated path to leveraging one or more APIs in their own application.
 
-After you subscribe to NetFoundry through RapidAPI you'll use only [RapidAPI's guides](https://docs.rapidapi.com/) to connect to NetFoundry via RapidAPI. You won't need a separate identity or account with NetFoundry, and you can always become a customer directly if that suits your case better at a later date.
+You may click below to connect through RapidAPI to NetFoundry's API and paste code snippets they provide in your IDE to start building right away. After you subscribe through RapidAPI you'll use only [RapidAPI's guides](https://docs.rapidapi.com/) to connect to NetFoundry via RapidAPI.
+
+You won't need a separate identity or account with NetFoundry, and you can always become a customer directly if that suits your case better at a later date.
 
 [![RapidAPI Marketplace](/assets/images/connect-on-rapidapi.png)](https://rapidapi.com/netfoundryinc-netfoundryinc-default/api/netfoundryapi)
+
+<span class="notice--primary">
+Subscribing through RapidAPI does not provide access to the NetFoundry web console.</span>
+
+*If you would prefer to access our API directly with sample code in your preferred programming tongue then we'd love to assist you generating client code from [the OpenAPI definition](/reference/).*

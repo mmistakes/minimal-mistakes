@@ -1,4 +1,5 @@
 ---
+title: Playground
 permalink: /v1/playground/
 classes: wide
 ---
@@ -44,7 +45,8 @@ classes: wide
     window.onload = function() {
       // Begin Swagger UI call region
       const ui = SwaggerUIBundle({
-        url: "https://gateway.production.netfoundry.io/rest/v1/docs/openapi-3.0.json",
+//        url: "https://gateway.production.netfoundry.io/rest/v1/docs/openapi-3.0.json",
+        url: "/assets/openapi-3.0.json",
         dom_id: '#swagger-ui',
         deepLinking: true,
         presets: [

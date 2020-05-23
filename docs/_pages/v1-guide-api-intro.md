@@ -2,6 +2,7 @@
 title: Welcome to the NetFoundry API
 permalink: /v1/guides/introduction/
 redirect_from:
+    - /guides/
     - /v1/
     - /v1/guides/
     - /v2/
@@ -16,8 +17,8 @@ This documentation is aimed at developers wishing to automate things they can al
 
 ## Why use the API?
 You could write a program to interact with the NetFoundry API on behalf of your network to
-* allow a new device to connect to a service,
 * disallow a lost or non-compliant device from connecting,
+* allow a new device to connect to a service based on some event or condition,
 * create a path to a new network service for an existing group of devices, or
 * trigger an alert based on an unexpected metric for some service.
 

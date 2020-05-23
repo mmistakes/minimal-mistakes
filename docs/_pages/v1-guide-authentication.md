@@ -7,7 +7,9 @@ toc: true
 ---
 
 ## Audience
-This is aimed at NetFoundry customers and [trial users](https://nfconsole.io/signup) who will use the API directly to augment and automate their use of the NF Console. Alternatively, anyone may [subscribe to freemium API access through RapidAPI](/v1/guides/rapidapi/) which does not entail Console access and will slightly change the API client implementation i.e. use a RapidAPI token instead of a NetFoundry token, and send requests to NetFoundry API via RapidAPI.
+This is aimed at NetFoundry customers and [trial users](https://nfconsole.io/signup) who will use the API directly to augment and automate their use of the NF Console.
+
+<span class="notice--warning">RapidAPI users do not need a NetFoundry API credential. Just use your RapidAPI token as described in the [RapidAPI user manual](/guides/rapidapi/).</span>
 
 ## Overview
 All authenticated operations require an HTTP header like
