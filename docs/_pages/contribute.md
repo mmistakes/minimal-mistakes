@@ -7,13 +7,18 @@ sidebar:
 
 ---
 
-Thank you for improving this site! This site is open source and the API maintainers welcome your contributions. [Please reach out](/help/) if you have any questions. Minor changes can be made directly in GitHub's editor wherever &nbsp;<i class="fas fa-edit" aria-hidden="true"></i>&nbsp;**Edit**&nbsp; appears at bottom-right. Changes are published automatically by GitHub pages when merged to branch "master". When sending a pull request it's necessary to change the base repo to "netfoundry/mop-api-docs" to avoid sending the request to the upstream forked theme repo.
+Thank you for improving this site! This site is open source and the API maintainers welcome your contributions. [Please reach out](/help/) if you have any questions. Minor changes may be made directly in GitHub's online editor wherever &nbsp;<i class="fas fa-edit" aria-hidden="true"></i>&nbsp;**Edit**&nbsp; appears at bottom-right. 
+
+Changes are published automatically by GitHub pages when merged to branch "master". When sending a pull request it's necessary to change the base repo to "netfoundry/mop-api-docs" to avoid sending the request to the upstream forked theme repo.
 
 ## Content
-The content of this site lives in the top-level directory `/docs` in the GitHub repo [netfoundry/mop-api-docs](https://github.com/netfoundry/mop-api-docs/tree/master/docs). 
+The content of this site lives in the top-level directory `/docs` in the GitHub repo [netfoundry/mop-api-docs](https://github.com/netfoundry/mop-api-docs/tree/master/docs). Most of the content is in `/docs/_pages/` with meaningful names. You can add or edit Kramdown (GitHub-flavored Markdown) `.md`, `.markdown`; or Liquid template `.html` files.
+
 
 ## Theme
 The theme lives in the top-level `/` in the same GitHub repo as the content: [netfoundry/mop-api-docs](https://github.com/netfoundry/mop-api-docs). The repo is forked from Minimal Mistakes v4.19.2 which publishes an excellent [quick-start guide](https://mmistakes.github.io/minimal-mistakes/docs/overriding-theme-defaults/). The idea is to override theme defaults in the content area `/docs` in order to minimize changes to the upstream theme.
+
+For example, `/docs/_layouts/default.html` overrides `/_layouts/default.html` and is available immediately in the local preview. Changes to the default, inherited theme files don't become visible in the local preview until they're merged to the master branch in the Git remote. Most changes should be overrides under `/docs`.
 
 ## Preview
 These steps provide a local preview server at **[http://localhost:4000/](http://localhost:4000/)**
@@ -60,9 +65,11 @@ These steps provide a local preview server at **[http://localhost:4000/](http://
         docker-compose down --remove-orphans
         ```
 
-## Things to Know
+### Things to Know
+* Local changes to files in `/docs` will be picked up immediately by Jekyll, except `/docs/_config.yml` which requires restarting the preview container.
+* Optionally, before running the container, export your [GitHub API token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) as `JEKYLL_GITHUB_TOKEN` and it will be made available to Jekyll for querying metadata from the GitHub API.
 
-### Workflow
+## GitHub Workflow
 
 1. fork the repo, unless you have access to main repo
 2. clone the repo
@@ -75,16 +82,7 @@ These steps provide a local preview server at **[http://localhost:4000/](http://
 9. submit your pull request
 10. monitor for build failures
 
-We'll be able to simplify this somewhat by removing the need to change the base repo when the fork link is broken. For now, it seems there's no way to configure the default base repo.
-
-
-### Content &amp; Theme
-* Local changes to files in `/docs` will be picked up immediately by Jekyll, except `/docs/_config.yml` which requires restarting the preview container.
-* Optionally, before running the container, export your [GitHub API token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) as `JEKYLL_GITHUB_TOKEN` and it will be made available to Jekyll for querying metadata from the GitHub API.
-* Most content is in `/docs/_pages/` with meaningful names. You can add or edit Kramdown (GitHub-flavored Markdown) `.md` or Liquid template `.html` files.
-* Theme changes could go in the top-level theme or become overrides in corresponding child directories under `/docs`. For example, `/docs/_layouts/default.html` overrides `/_layouts/default.html` and is available immediately in the local preview. Changes to the top-level theme don't become visible in the local preview until they're merged to the master branch in the Git remote.
-
-### Build &amp; Publish
+## CI/CD
 * All merges to the master branch are automatically published by GitHub pages.
 * Pushes to any branch trigger [a Travis build](https://travis-ci.org/github/netfoundry/mop-api-docs). The Travis build
     * validates the changes with Jekyll, and
