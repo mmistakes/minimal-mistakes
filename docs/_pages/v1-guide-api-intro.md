@@ -1,6 +1,11 @@
 ---
 title: Welcome to the NetFoundry API
 permalink: /v1/guides/introduction/
+redirect_from:
+    - /v1/
+    - /v1/guides/
+    - /v2/
+    - /v2/guides/
 sidebar:
     nav: "v1guides"
 toc: true
