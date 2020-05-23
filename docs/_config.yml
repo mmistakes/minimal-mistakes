@@ -134,7 +134,6 @@ footer:
       icon: "fab fa-fw fa-youtube"
       url: "https://www.youtube.com/channel/UCGN6PFj1rZu50yme9YsICmg"
 
-
 # Reading Files
 include:
   - .htaccess

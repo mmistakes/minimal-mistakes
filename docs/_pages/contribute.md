@@ -7,13 +7,13 @@ sidebar:
 
 ---
 
-Thank you for improving this site! This site is open source and the API maintainers welcome your contributions. [Please reach out](/help/) if you have any questions.
+Thank you for improving this site! This site is open source and the API maintainers welcome your contributions. [Please reach out](/help/) if you have any questions. Minor changes can be made directly in GitHub's editor wherever &nbsp;<i class="fas fa-edit" aria-hidden="true"></i>&nbsp;**Edit**&nbsp; appears at bottom-right. Changes are published automatically by GitHub pages when merged to branch "master". When sending a pull request it's necessary to change the base repo to "netfoundry/mop-api-docs" to avoid sending the request to the upstream forked theme repo.
 
 ## Content
-The content of this site lives in the top-level directory `/docs` in the GitHub repo [netfoundry/mop-api-docs](https://github.com/netfoundry/mop-api-docs/tree/master/docs). Minor changes can be made directly in GitHub's editor. Changes are published automatically by GitHub pages when merged to master.
+The content of this site lives in the top-level directory `/docs` in the GitHub repo [netfoundry/mop-api-docs](https://github.com/netfoundry/mop-api-docs/tree/master/docs). 
 
 ## Theme
-The theme lives in the top-level `/` in the same GitHub repo [netfoundry/mop-api-docs](https://github.com/netfoundry/mop-api-docs) as the content. The theme is forked from Minimal Mistakes which publishes an excellent [quick-start guide](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/). The idea is to minimize changes to the parent theme so that we can later merge in improvements from upstream.
+The theme lives in the top-level `/` in the same GitHub repo as the content: [netfoundry/mop-api-docs](https://github.com/netfoundry/mop-api-docs). The repo is forked from Minimal Mistakes v4.19.2 which publishes an excellent [quick-start guide](https://mmistakes.github.io/minimal-mistakes/docs/overriding-theme-defaults/). The idea is to override theme defaults in the content area `/docs` in order to minimize changes to the upstream theme.
 
 ## Preview
 These steps provide a local preview server at **[http://localhost:4000/](http://localhost:4000/)**
