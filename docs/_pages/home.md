@@ -12,27 +12,27 @@ header:
 excerpt: >
   Documentation and Tools
 feature_row:
-  - image_path: /assets/images/connect-on-rapidapi.png
-    alt: "RapidAPI"
-    title: "RapidAPI User Manual"
-    excerpt: "Freemium API Access"
-    url: "/v1/guides/rapidapi/"
-    btn_class: "btn--primary"
-    btn_label: "Subscribe"
   - image_path: /assets/images/nf-support-hub.png
     alt: "Support Hub"
     title: "Support Hub"
-    excerpt: "Learn about the Console"
+    excerpt: "Cloud, Console, &amp; Concepts"
     url: "https://support.netfoundry.io/hc/en-us"
     btn_class: "btn--primary"
     btn_label: "GUI"
   - image_path: /assets/images/ziti-dev-logo.png
     alt: "Ziti.dev"
     title: "OpenZiti"
-    excerpt: "NetFoundry is built on Ziti"
+    excerpt: "NetFoundry networks run Ziti"
     url: "/v1/guides/ziti/"
     btn_class: "btn--primary"
     btn_label: "Zitify"
+  - image_path: /assets/images/connect-on-rapidapi.png
+    alt: "RapidAPI"
+    title: "User Manual"
+    excerpt: "Marketplace API Access"
+    url: "/v1/guides/rapidapi/"
+    btn_class: "btn--primary"
+    btn_label: "Subscribe"
 
 ---
 

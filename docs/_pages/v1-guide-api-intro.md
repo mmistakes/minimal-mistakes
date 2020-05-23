@@ -19,25 +19,41 @@ You could write a program to interact with the NetFoundry API on behalf of your 
 ## Concepts
 
 ### Organization
-An organization is a consolidated billing and ownership domain of NetFoundry networks. In the NF Console these are called "Network Groups".
+An organization is a consolidated billing and ownership domain of NetFoundry network groups.
+
+### Network Group
+A network group is a collection of networks in an organization.
 
 ### NetFoundry Network
-A NetFoundry network is cryptographic trust domain and billable collection of resources.
+A NetFoundry network is a versioned cryptographic trust domain and billable collection of resource configurations e.g. endpoints, services, identities, authorizations.
 
-### What is an AppWAN?
-An AppWAN is a policy that controls access to services. An AppWAN is populated by endpoints that communicate via an encrypted network fabric. Endpoints in an AppWAN are organized by whether they provide a service. Endpoints that do provide a service to the AppWAN appear by association with that service, i.e. they're known in the AppWAN as that service. Endpoints that consume services appear in AppWANs as clients or gateways. All of the clients and gateways in an AppWAN have permission to connect to all of the services.
+### AppWAN
+An AppWAN is a simple policy that controls access to services. It works like a permission group a directional dimension, i.e. left side is allowed to connect to right side. An AppWAN is populated by endpoints that communicate via the NetFoundry overlay fabric. Endpoints in an AppWAN can be visualized in the console by whether they provide a service: left side if not, right side if so.
 
-### What is an endpoint?
-An endpoint is an app or device on the edge of your network. Clients and gateways are "initiating" endpoints. Services are always provided to an AppWAN by a "terminating" endpoint. An endpoint in an AppWAN may represent an app, a device, or some IPs. For example,
+![AppWAN](/assets/images/appwan.png)
+
+Endpoints that do provide a service to the AppWAN appear by association with that service, i.e. they're known in the AppWAN by the name of the service they provide. Endpoints that consume services appear in AppWANs as clients or gateways. All of the clients and gateways in an AppWAN have permission to connect to all of the services.
+
+### Endpoint
+An endpoint is node on the edge of your network. Protected network traffic flows to, from, and through endpoints. Clients and gateways are "initiating" endpoints from which traffic flows toward services. Services are provided to an AppWAN by a "terminating" endpoint to which traffic flows from clients and gateways. An endpoint in an AppWAN may represent an app, a device, or some IPs. For example,
 * An app that is built with a Ziti Endpoint SDK is an embedded endpoint, and
-* a device where Tunneler is installed is a client endpoint, and
-* a router where Tunneler is installed is a gateway endpoint.
+* a device where Tunneler is running is a client endpoint, and
+* a router where Tunneler is running is a gateway endpoint.
 
-#### "Hosted" vs "Non-Hosted"
+#### Gateway Endpoint
+NetFoundry offers a variety of free virtual machine system images that can be imported in a hypervisor or launched by your preferred cloud provider. The launched VMs can then be enrolled with your network as a gateway endpoint. Gateway endpoints are IP routers. You could position a gateway endpoint on an isolated IP network segment to provide secure ingess or egress or both for numerous devices.
+
+The best way to obtain the latest compatible VM image for your NetFoundry network is to create a gateway endpoint and then visit its detail page in the console. There you'll follow a download link and select the desired image format, e.g. OVA; or launch it directly in your own cloud account; e.g. CloudFormation. You can create the gateway endpoint through the API as described in these docs or through the console as described in [Support Hub](https://support.netfoundry.io/hc/en-us/articles/360017558212-Introduction-to-Gateway-Endpoints).
+
+You can learn how NetFoundry produces these distributable VM images in [virtual machines as code](https://netfoundry.io/virtual-machines-as-code/) on our blog.
+
+#### Ziti-Hosted Services
+Your server app where you've imported the Ziti SDK can provide a Ziti-hosted service; i.e. it doesn't require any proxy, gateway, tunneler, NAT, load balancer, or any other infrastructure in order to be reached by all of the endpoints in the AppWAN. Only generic outgoing internet is needed.
+
 An embedded endpoint that provides a service is self-terminating i.e. "hosted". Traffic to a service that is "non-hosted" will exit the AppWAN at the terminating endpoint and proceed to its final destination, the resource described by the service definition, e.g. 11.22.33.44 on 55/tcp. Terminating endpoints for non-hosted services are typically positioned for optimal performance and security of that final hop from the service's terminating endpoint to the resource server. Embedded endpoints are ideal because the traffic is logically inter-process within the AppWAN.
 
-#### Tunneler
-Tunneler is an app we built with Ziti SDKs that enables initiation for processes on the device where it is running, termination for services that device can reach, or both. When Tunneler is running on a device that is a router it may also provide initiation and termination via attached routes.
+#### Ziti Tunneler
+Tunneler is an open-source app maintained by NetFoundry that is built with Ziti SDKs that enables initiation for processes on the device where it is running, termination for services that device can reach, or both. When Tunneler is running on a device that is a router, such as NetFoundry's gateway endpoints a.k.a. "Cloud Gateways", it may also provide initiation and termination via attached routes.
 
 <!-- ## Examples
 * NetFoundry will provision redundant, zero-trust fabric routers near the service's terminating endpoint.

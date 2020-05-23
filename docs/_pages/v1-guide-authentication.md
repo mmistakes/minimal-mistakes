@@ -7,7 +7,7 @@ toc: true
 ---
 
 ## Audience
-This is aimed at NetFoundry customers and [trial users](https://nfconsole.io/signup) who will use the API directly to augment and automate their use of the NF Console. Alternatively, anyone may [subscribe to freemium API access through RapidAPI](/v1/guides/rapidapi/) which does not entail Console access and will slightly change the API client implementation .i.e use a RapidAPI token instead of a NetFoundry token, and send requests to NetFoundry API via RapidAPI.
+This is aimed at NetFoundry customers and [trial users](https://nfconsole.io/signup) who will use the API directly to augment and automate their use of the NF Console. Alternatively, anyone may [subscribe to freemium API access through RapidAPI](/v1/guides/rapidapi/) which does not entail Console access and will slightly change the API client implementation i.e. use a RapidAPI token instead of a NetFoundry token, and send requests to NetFoundry API via RapidAPI.
 
 ## Overview
 All authenticated operations require an HTTP header like
@@ -19,7 +19,7 @@ where `{NETFOUNDRY_API_TOKEN}` is an expiring JSON Web Token (JWT) that you obta
 ## Shell example
 Pull it all together with [HTTPie (command-line HTTP client)](https://httpie.org/) and [`jq` (command-line JSON processor)](https://stedolan.github.io/jq/).
 
-`source exportNfApiToken.bash`
+`source export-netfoundry-api-token.bash`
 
 <script src="https://gist.github.com/qrkourier/ab5bb279047b640b8ff82c9dd9730b5c.js"></script>
 
