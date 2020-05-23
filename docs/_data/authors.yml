@@ -1,0 +1,28 @@
+# Authors
+
+Ken:
+  name        : "Ken Bingham"
+  bio         : "Developer Advocate at NetFoundry"
+  avatar      : "/assets/images/profile-ken.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:w@qrk.us"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://w.qrk.us"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/qrkourier"
+    - label: "Keybase"
+      icon: "fab fa-keybase"
+      url: "https://keybase.io/kourier"
+      
+Albert:
+  name        : "Albert Mugisha"
+  bio         : "I ordered what?"
+  avatar      : "/assets/images/profile-albert.png"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:albert.mugish@netfoundry.io"
