@@ -9,7 +9,9 @@ toc: true
 ## Audience
 This is aimed at NetFoundry customers and [trial users](https://nfconsole.io/signup) who will use the API directly to augment and automate their use of the NF Console.
 
-<span class="notice--warning">RapidAPI users do not need a NetFoundry API credential. Just use your RapidAPI token as described in the [RapidAPI user manual](/v1/guides/rapidapi/).</span>
+<span class="notice--warning">
+RapidAPI subscribers will use their RapidAPI token with the RapidAPI code samples instead of an Auth0 credential.
+</span>
 
 ## Overview
 All authenticated operations require an HTTP header like
@@ -23,7 +25,9 @@ Pull it all together with [HTTPie (command-line HTTP client)](https://httpie.org
 
 `source export-netfoundry-api-token.bash`
 
-<script src="https://gist.github.com/qrkourier/ab5bb279047b640b8ff82c9dd9730b5c.js"></script>
+{% highlight bash %}
+{% include export-netfoundry-api-token.bash %}
+{% endhighlight %}
 
 ## Step by Step
 

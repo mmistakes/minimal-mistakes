@@ -32,7 +32,7 @@ v1guides:
         url: /v1/guides/authentication/
       - title: "Hello, AppWAN!"
         url: /v1/guides/hello-appwan/
-      - title: "Rapid API User Manual"
+      - title: "RapidAPI"
         url: /v1/guides/rapidapi/
       - title: "Improve this Site"
         url: /contribute/

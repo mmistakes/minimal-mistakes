@@ -20,4 +20,4 @@ You won't need a separate identity or account with NetFoundry, and you can alway
 <span class="notice--primary">
 Subscribing through RapidAPI does not provide access to the NetFoundry web console.</span>
 
-*If you would prefer to access our API directly with sample code in your preferred programming tongue then we'd love to assist you generating client code from [the OpenAPI definition](/reference/).*
+*If you would prefer to access our API directly with your preferred programming tongue then please check out [the OpenAPI definition](/reference/).*

@@ -22,50 +22,114 @@ You could write a program to interact with the NetFoundry API on behalf of your 
 * create a path to a new network service for an existing group of devices, or
 * trigger an alert based on an unexpected metric for some service.
 
-## Concepts
+## Representations
+This RESTful API transacts meaningful HTTP verbs and request paths and parameters. Most types of requests and responses also have an HTTP document body which is always a JSON representation. Requests that include a JSON body must also include a header `Content-Type: application/json`, and responses with a JSON body will have this header too.
 
-### Organization
-An organization is a consolidated billing and ownership domain of NetFoundry network groups.
+You'll find the [API definition and reference](/reference/) here. You can also browse the available API endpoints with contextual descriptions and example requests and responses in [the playground](/v1/playground/) which is running Swagger UI.
 
-### Network Group
-A network group is a collection of networks in an organization.
+### Links
+The API responds with hypertext links in a `_links` map for navigation. With this you can avoid the brittleness of hard-coding URL paths in your implementation.
 
-### NetFoundry Network
-A NetFoundry network is a versioned cryptographic trust domain and billable collection of resource configurations e.g. endpoints, services, identities, authorizations.
+For example, a request like `GET /rest/v1/organizations` might return a list of one in `_embedded.organizations`. This is a great starting place because your implementation could then navigate to the "networks" link which is list of all networks in this organization a.k.a. "network group".
 
-### AppWAN
-An AppWAN is a simple policy that controls access to services. It works like a permission group a directional dimension, i.e. left side is allowed to connect to right side. An AppWAN is populated by endpoints that communicate via the NetFoundry overlay fabric. Endpoints in an AppWAN can be visualized in the console by whether they provide a service: left side if not, right side if so.
+```json
+{
+    "_embedded" : {
+        "organizations" : [ {
+            "createdAt": "2020-05-23T09:20:26.000+0000",
+            "updatedAt": "2020-05-23T09:20:26.000+0000",
+            "name": "exampleOrganization11",
+            "organizationShortName": "EXORG11",
+            "mfaRequired": false,
+            "zitiEnabled": true,
+            "awsAutoScalingGatewayEnabled": false,
+            "defaultAzureVirtualWanId": null,
+            "billingAccountId": "fda91466-56bc-458f-bf8d-c8f04cd39898",
+            "ownerIdentityId": null,
+            "id": "cb621953-1f50-4fd9-907a-bdc0dbebde9c",
+            "_links": {
+                "self": {
+                "href": "https://gateway.production.netfoundry.io/rest/v1/organizations/cb621953-1f50-4fd9-920a-bdc0dbebde9c"
+                },
+                "networks": {
+                "href": "https://gateway.production.netfoundry.io/rest/v1/networks"
+                },
+                "azureSubscription": {
+                "href": "https://gateway.production.netfoundry.io/rest/v1/azureSubscriptions?organizationId=cb621953-1f50-4fd9-920a-bdc0dbebde9c"
+                }
+            }
+        } ]
+    }
+}
+```
 
-![AppWAN](/assets/images/appwan.png)
+Now following the "networks" link would return all networks. If you extract the `.page` object from the response you will see something like this which indicates there are 211 total networks on 22 pages of 10 each, and you've just consumed page 1. 
 
-Endpoints that do provide a service to the AppWAN appear by association with that service, i.e. they're known in the AppWAN by the name of the service they provide. Endpoints that consume services appear in AppWANs as clients or gateways. All of the clients and gateways in an AppWAN have permission to connect to all of the services.
+```json
+{
+  "size": 10,
+  "totalElements": 211,
+  "totalPages": 22,
+  "number": 1
+}
+```
 
-### Endpoint
-An endpoint is node on the edge of your network. Protected network traffic flows to, from, and through endpoints. Clients and gateways are "initiating" endpoints from which traffic flows toward services. Services are provided to an AppWAN by a "terminating" endpoint to which traffic flows from clients and gateways. An endpoint in an AppWAN may represent an app, a device, or some IPs. For example,
-* An app that is built with a Ziti Endpoint SDK is an embedded endpoint, and
-* a device where Tunneler is running is a client endpoint, and
-* a router where Tunneler is running is a gateway endpoint.
+To advance you'd send a request for page 2 using the parameters that are described in [the API definition](/reference/). A request like `GET /rest/v1/networks?page=0&size=10&sort=name,asc` will return up to ten networks as an array. Here's an example response for just one network.
 
-#### Gateway Endpoint
-NetFoundry offers a variety of free virtual machine system images that can be imported in a hypervisor or launched by your preferred cloud provider. The launched VMs can then be enrolled with your network as a gateway endpoint. Gateway endpoints are IP routers. You could position a gateway endpoint on an isolated IP network segment to provide secure ingess or egress or both for numerous devices.
+```json
+{
+  "_embedded" : {
+    "networks" : [ {
+        "createdAt": "2019-12-14T07:13:47.000+0000",
+        "updatedAt": "2020-05-22T22:09:17.000+0000",
+        "name": "myExampleNetwork",
+        "caName": "CA_87acd939-fd36-49bb-a59c-608ac7341aef",
+        "productFamily": "ZITI_ENABLED",
+        "productVersion": "6.0.0-57305256",
+        "provisionedAt": "2019-12-14T07:09:29.000+0000",
+        "o365BreakoutCategory": "NONE",
+        "mfaClientId": null,
+        "mfaIssuerId": null,
+        "status": 300,
+        "organizationId": null,
+        "ownerIdentityId": "a8d02ab4-57a8-4296-bc14-8acfe464694a",
+        "networkConfigMetadataId": null,
+        "id": "8c2cb505-ab5e-460b-809d-1439fb4c5f8d",
+        "_links": {
+            "self": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/8c2cb505-ab5e-460b-809d-1439fb4c5f8d"
+            },
+            "organization": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/organizations"
+            },
+            "networkControllerHosts": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/8c2cb505-ab5e-460b-809d-1439fb4c5f8d/networkControllerHosts"
+            },
+            "endpoints": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/8c2cb505-ab5e-460b-809d-1439fb4c5f8d/endpoints"
+            },
+            "endpointGroups": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/8c2cb505-ab5e-460b-809d-1439fb4c5f8d/endpointGroups"
+            },
+            "services": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/8c2cb505-ab5e-460b-809d-1439fb4c5f8d/services"
+            },
+            "appWans": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/8c2cb505-ab5e-460b-809d-1439fb4c5f8d/appWans"
+            },
+            "gatewayClusters": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/8c2cb505-ab5e-460b-809d-1439fb4c5f8d/gatewayClusters"
+            },
+            "virtualWanSites": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/8c2cb505-ab5e-460b-809d-1439fb4c5f8d/virtualWanSites"
+            },
+            "networkConfigMetadata": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/8c2cb505-ab5e-460b-809d-1439fb4c5f8d/networkConfigMetadata"
+            }
+        }
+    } ]
+  }
+}
+```
 
-The best way to obtain the latest compatible VM image for your NetFoundry network is to create a gateway endpoint and then visit its detail page in the console. There you'll follow a download link and select the desired image format, e.g. OVA; or launch it directly in your own cloud account. You could create a gateway endpoint of type `AWSCPEGW` (AWS Private GW) and in the console punch the LAUNCH button to run our CloudFormation template in your AWS account. This will automatically enroll your gateway on first boot. 
-
-You can create the gateway endpoint through the API as described in these docs or through the console as described in [Support Hub](https://support.netfoundry.io/hc/en-us/articles/360017558212-Introduction-to-Gateway-Endpoints). You can learn how NetFoundry produces trusted VM images in the post [Virtual Machines as Code](https://netfoundry.io/virtual-machines-as-code/) on our blog.
-
-#### Ziti-Hosted Services
-Your server app where you've imported the Ziti SDK can provide a Ziti-hosted service; i.e. it doesn't require any proxy, gateway, tunneler, NAT, load balancer, or any other infrastructure in order to be reached by all of the endpoints in the AppWAN. Only generic outgoing internet is needed.
-
-An embedded endpoint that provides a service is self-terminating i.e. "hosted". Traffic to a service that is "non-hosted" will exit the AppWAN at the terminating endpoint and proceed to its final destination, the resource described by the service definition, e.g. 11.22.33.44 on 55/tcp. Terminating endpoints for non-hosted services are typically positioned for optimal performance and security of that final hop from the service's terminating endpoint to the resource server. Embedded endpoints are ideal because the traffic is logically inter-process within the AppWAN.
-
-#### Ziti Tunneler
-Tunneler is an open-source app maintained by NetFoundry that is built with Ziti SDKs that enables initiation for processes on the device where it is running, termination for services that device can reach, or both. When Tunneler is running on a device that is a router, such as NetFoundry's gateway endpoints a.k.a. "Cloud Gateways", it may also provide initiation and termination via attached routes.
-
-<!-- ## Examples
-* NetFoundry will provision redundant, zero-trust fabric routers near the service's terminating endpoint.
-* Servers described by an AppWAN service can be effectively "dark" to the internet. The service's terminating endpoint need only have access to the server and outgoing internet access to NetFoundry's fabric routers.
-* A mobile client app built with Ziti endpoint SDKs may initiate traffic to the fabric without trusting any intermediary process. The traffic is encrypted before it leaves the client process.
-* A mobile client app running on a device with Ziti Tunneler installed may initiate to the AppWAN without trusting any intermediary device. The traffic is encrypted before it leaves the mobile device.
-* A mobile device associated with a wireless access point on a network for which the gateway router is running Ziti Tunneler may communicate with the AppWAN's services without trusting any intermediate network. The traffic is encrypted before it leaves the network.
-
- -->
+From here we can see a clear path to inspect the endpoints, services, and AppWANs for this particular network. Good luck and let us know what else you'd like to see in this introduction: [contact](/help/) or send a pull request with the EDIT link below!
