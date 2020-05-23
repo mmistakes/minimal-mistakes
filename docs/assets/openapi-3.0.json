@@ -2,18 +2,18 @@
     "openapi": "3.0.1",
     "info": {
         "title": "NetFoundry Public REST API",
-        "description": "NetFoundry\u2019s web console and API are used to define networks by designing and instantly deploying AppWANs which are policies that describe how endpoints are permitted to access services. \n\nMost operations require a token described in [the authentication guide](https://developer.netfoundry.io/v1/guides/authentication/).\n\nYou may find more helpful guides, references, and tools to use with this API in the [NetFoundry Developer Portal](https://developer.netfoundry.io/).\n",
+        "description": "NetFoundry\u2019s web console and API are used to define networks by designing and instantly deploying AppWANs which are policies that describe how endpoints are permitted to access services. \n\nMost operations require an expiring auth token as described in [the authentication guide](https://developer.netfoundry.io/v1/guides/authentication/).\n\nYou may find more helpful guides, references, and tools to use with this API in the [NetFoundry Developer Portal](https://developer.netfoundry.io/).\n",
         "version": "0.0.3-SNAPSHOT"
     },
     "servers": [
         {
-            "url": "https://gateway.sandbox.netfoundry.io/rest/v1"
+            "url": "https://gateway.production.netfoundry.io/rest/v1"
         },
         {
             "url": "https://gateway.staging.netfoundry.io/rest/v1"
         },
         {
-            "url": "https://gateway.production.netfoundry.io/rest/v1"
+            "url": "https://gateway.sandbox.netfoundry.io/rest/v1"
         }
     ],
     "paths": {
