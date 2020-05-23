@@ -28,7 +28,7 @@ What is needed is something more robust to test any pull requests before they ge
 *   Correct API response from pre-deployed micro-services
     
 
-### HLD ( High Level Design ) \- Before
+### Before PR Builds
 
 Before we go into the solution, a quick highlight into our software stack. The software is split into micros-services which are running on AWS ECS ( Elastic Container Service ). The data layer is housed in AWS MySQL RDS. We use Bitbucket as the code repository and Jenkins as the CI server. All branches have to go through a build and unit test through Jenkins and only merges to the main branch will lead to deployments on ECS and database migrations on AWS RDS. Bitbucket branch permissions is used to that define merge rules, e.g you cannot merge code to main branch without a successful build.
 
@@ -42,7 +42,7 @@ Main Branch Build
 
 ![main-branch-build](/assets/images/main-branch-build.png)
 
-### HLD ( High Level Design ) - After
+### After PR Builds
 
 To improve our build quality, the key step introduced was to use Kubernetes and Jenkins to setup dynamic environments for any pull requests that are raised. This dynamic environment will host both the micro-services and databases, and will allow automated run of tests in the environment. Approval of the Pull Request is fully dependent on these tests passing.
 
@@ -66,11 +66,11 @@ Following steps are performed during the PR build and test environment
     
 7.  Jenkins will then spin up all the micro-services and ensure they start correctly
     
-8.  A full stack of tests is run on the new K8 environment setup
+8.  A full stack of tests is run on the new k8s environment setup
     
 9.  Jenkins will then use Bitbucket API to pass/fail the build.
     
-10.  K8 namespace and AWS EC2 resources are destroyed to conserve cost.
+10.  k8s namespace and AWS EC2 resources are destroyed to conserve cost.
     
 11.  All the container logs are shipped to Elastic using Filebeat, so engineers can analyze any errors
     
@@ -84,6 +84,6 @@ Following steps are performed during the PR build and test environment
     
 2.  There was improved acceleration and confidence from developers as well, as they were not worried that they would push bugs to the main branch, since we run a full cycle of tests each time.
     
-3.  Logging was critical as the K8 environment was span down immediately after. It was critical developers will be able to search exact reason for a PR denial.
+3.  Logging was critical as the k8s environment was span down immediately after. It was critical developers will be able to search exact reason for a PR denial.
     
 
