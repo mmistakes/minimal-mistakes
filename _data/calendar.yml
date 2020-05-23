@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "unterrichtsfrei",
-    "title": "unterrichtsfrei",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M2RxNWoxajJoa3ZsN2pvMGJjcHIydm83Z2YgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2020-05-22",
-      "date_time": null
-    },
-    "end": {
-      "date": "2020-05-23",
-      "date_time": null
-    },
-    "created": "2019-08-22T08:03:28.000Z",
-    "updated": "2020-05-03T08:24:30.586Z"
-  },
-  {
-    "image_path": null,
     "alt": "4. Schulkonferenz",
     "title": "4. Schulkonferenz",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2020-05-03T08:26:55.000Z",
     "updated": "2020-05-03T08:28:51.388Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Letzter Schultag: Zeugnisse",
+    "title": "Letzter Schultag: Zeugnisse",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NjRtdG01ajdka2ZubWdsdDhxdnRmczM4dDAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2020-06-24T08:00:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2020-06-24T10:40:00+02:00"
+    },
+    "created": "2020-05-03T08:25:58.000Z",
+    "updated": "2020-05-03T08:26:23.714Z"
   }
 ]
