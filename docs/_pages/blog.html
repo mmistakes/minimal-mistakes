@@ -1,0 +1,55 @@
+---
+layout: single
+permalink: /blog/
+toc: true
+header:
+  image: /assets/images/devblogheader.jpg
+  tagline: this
+featured_tags:
+  - "announcements"
+#  - "videos"
+#  - "devops"
+feature_row:
+  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+    alt: "placeholder image 2"
+    title: "Placeholder 2"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+feature_row2:
+  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+    alt: "placeholder image 2"
+    title: "Placeholder Image Left Aligned"
+    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Left aligned with `type="left"`'
+    url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+---
+
+
+<!-- {% include feature_row id="intro" type="center" %} -->
+<!-- {% include feature_row %} -->
+
+<!-- {% include feature_row id="feature_row2" type="left" %}
+{% include feature_row id="feature_row3" type="right" %} -->
+
+{% for tag in page.featured_tags %}
+	<h2 id="{{ tag | slugify }}">{{ tag | capitalize }}</h2>
+	<ul>
+	  {% for post in site.posts %}
+		  {% if post.tags contains tag %}
+        <li>{% include archive-single.html %}</li>
+		  {% endif %}
+	  {% endfor %}
+	</ul>
+{% endfor %}
+
+
+<h2>Recent</h2>
+<ul>
+  {% for post in site.posts limit: 3 %}
+    <li>{% include archive-single.html %}</li>
+  {% endfor %}
+</ul>
+

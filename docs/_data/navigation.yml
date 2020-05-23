@@ -2,7 +2,7 @@
 # v1 horizontal nav
 main:
   - title: "Guides"
-    url: /v1/guides/introduction/
+    url: /guides/
     description: "intro, manuals, tutorials"
   - title: "Reference"
     url: /reference/
@@ -10,15 +10,15 @@ main:
   - title: "Playground"
     url: /v1/playground/
     description: "Swagger UI"
+  - title: "Blog"
+    url: /blog/
+    description: "What's new?"
   - title: "Help"
     url: /help/
-    description: "Request Support"
+    description: "Get Support"
   
   # - title: "Samples"
   #   url: /samples/
-  # - title: "News"
-  #   url: /blog/
-  #  description: "What's new?"
   # - title: "Terms &amp; Privacy Policy"
   #   url: /terms/
 

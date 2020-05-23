@@ -15,7 +15,7 @@ locale                   : "en-US"
 title                    : "NetFoundry API"
 title_separator          : "-"
 subtitle                 : "Developer Portal"
-name                     : &name "NetFoundry, Inc" # &name is a YAML anchor which can be *referenced later
+name                     : &name "NetFoundry" # &name is a YAML anchor which can be *referenced later
 description              : &description "The API enables you to program the orchestration of your network."
 url                      : https://developer.netfoundry.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
@@ -91,22 +91,13 @@ analytics:
 # Site Author
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
-  avatar           : "/assets/images/michael-rose.jpg"
-  bio              : "Just another *boring*, *tattooed*, *time traveling*, *designer*."
-  location         : "Buffalo, NY"
+  avatar           : "/assets/images/nflogo.jpg"
+  bio              : *description
+  location         : "Charlotte, NC"
   links:
-    - label: "Made Mistakes"
-      icon: "fas fa-fw fa-link"
-      url: "https://mademistakes.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/mmistakes"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/mmistakes"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/mmistakes"
+    - label: "NetFoundry"
+      icon: "fas fa-home"
+      url: "https://netfoundry.io/"
 
 
 # Site Footer
@@ -204,7 +195,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: true
       comments: true
       share: true
