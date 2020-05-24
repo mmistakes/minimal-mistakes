@@ -76,7 +76,8 @@ I found these wonderful articles to setup a development environment in [Linux](h
 2. To add a space `&nbsp`
 3. For a new line `<br>`
 
-## <center> LIST OF TASKS  </center>
+## LIST OF TASKS 
+{: .text-center}
  
 - [x] Re-deploy blog to fix the issues with comments [20-May-2020]
 - [ ] Organise images "img" folder
