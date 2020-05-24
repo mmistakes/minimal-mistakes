@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: pages
 classes: wide
 title: "My Blog Configuration"
 permalink: /blogconfiguration/
