@@ -1,0 +1,6 @@
+{% if post.date %}
+    <p class="page__meta"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Posted:" }}</strong> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></p>
+{% endif %}
+{% if post.last_modified_at %}
+    <p class="page__meta"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_modified_label | default: "Updated:" }}</strong> <time datetime="{{ post.last_modified_at | date: "%Y-%m-%d" }}">{{ post.last_modified_at | date: "%B %d, %Y" }}</time></p>
+{% endif %}
