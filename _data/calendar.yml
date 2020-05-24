@@ -1,20 +1,20 @@
 [
   {
     "image_path": null,
-    "alt": "4. Schulkonferenz",
-    "title": "4. Schulkonferenz",
+    "alt": "4. Schulkonferenz per Videotreffen",
+    "title": "4. Schulkonferenz per Videotreffen",
     "excerpt": null,
     "url": "https://www.google.com/calendar/event?eid=MjlzZnNibGszcm91NmpydTVlMnV1aDFrODUgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
       "date": null,
-      "date_time": "2020-06-04T15:30:00+02:00"
+      "date_time": "2020-06-03T15:30:00+02:00"
     },
     "end": {
       "date": null,
-      "date_time": "2020-06-04T17:00:00+02:00"
+      "date_time": "2020-06-03T16:30:00+02:00"
     },
     "created": "2020-03-02T15:14:52.000Z",
-    "updated": "2020-03-02T15:14:52.045Z"
+    "updated": "2020-05-24T07:19:18.290Z"
   },
   {
     "image_path": null,
@@ -35,8 +35,8 @@
   },
   {
     "image_path": null,
-    "alt": "Brandwerder-Cup",
-    "title": "Brandwerder-Cup",
+    "alt": "Brandwerder-Cup entfällt",
+    "title": "Brandwerder-Cup entfällt",
     "excerpt": null,
     "url": "https://www.google.com/calendar/event?eid=MGtsNmVkNjRuaXNvNTRpdmxyMnU1anBsajAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
@@ -48,46 +48,12 @@
       "date_time": null
     },
     "created": "2020-05-03T08:29:21.000Z",
-    "updated": "2020-05-03T08:29:21.126Z"
+    "updated": "2020-05-24T07:21:00.077Z"
   },
   {
     "image_path": null,
-    "alt": "Unterrichtsschluss um 11:30 Uhr (Kl. 1 - 5)",
-    "title": "Unterrichtsschluss um 11:30 Uhr (Kl. 1 - 5)",
-    "excerpt": "Verabschiedung der 6. Klassen",
-    "url": "https://www.google.com/calendar/event?eid=NHRrc2toYjg1NmdsN3RvYzdmOGFtamw2MzMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2020-06-23",
-      "date_time": null
-    },
-    "end": {
-      "date": "2020-06-24",
-      "date_time": null
-    },
-    "created": "2020-05-03T08:27:31.000Z",
-    "updated": "2020-05-03T08:28:34.429Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Verabschiedung der 6. Klassen",
-    "title": "Verabschiedung der 6. Klassen",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MHVxbjluMHVzbmtjaDluYnZvMTRkN2ZqOGEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2020-06-23T12:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2020-06-23T13:30:00+02:00"
-    },
-    "created": "2020-05-03T08:26:55.000Z",
-    "updated": "2020-05-03T08:28:51.388Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Letzter Schultag: Zeugnisse",
-    "title": "Letzter Schultag: Zeugnisse",
+    "alt": "Letzter Schultag",
+    "title": "Letzter Schultag",
     "excerpt": null,
     "url": "https://www.google.com/calendar/event?eid=NjRtdG01ajdka2ZubWdsdDhxdnRmczM4dDAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
@@ -99,6 +65,40 @@
       "date_time": "2020-06-24T10:40:00+02:00"
     },
     "created": "2020-05-03T08:25:58.000Z",
-    "updated": "2020-05-03T08:26:23.714Z"
+    "updated": "2020-05-24T07:22:13.370Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Sommerferien",
+    "title": "Sommerferien",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=Mm85ZWxuZmRqaHU3NzFrN2lpbmM2YjRhZWkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2020-06-25",
+      "date_time": null
+    },
+    "end": {
+      "date": "2020-08-08",
+      "date_time": null
+    },
+    "created": "2019-08-22T08:03:52.000Z",
+    "updated": "2019-08-22T08:03:52.862Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Einschulungsfeier",
+    "title": "Einschulungsfeier",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NDdxOGFicm5yMGFjcm1yanBkN201aDdjbDggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2020-08-15",
+      "date_time": null
+    },
+    "end": {
+      "date": "2020-08-16",
+      "date_time": null
+    },
+    "created": "2020-03-11T12:48:12.000Z",
+    "updated": "2020-03-11T12:48:12.628Z"
   }
 ]
