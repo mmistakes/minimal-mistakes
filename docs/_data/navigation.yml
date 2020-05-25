@@ -13,20 +13,18 @@ main:
   - title: "Blog"
     url: /blog/
     description: "What's new?"
+  # - title: "Versions"
+  #   url: /versions/
+  #   description: "Switch API version"
   - title: "Help"
     url: /help/
     description: "Get Support"
   
-  # - title: "Samples"
-  #   url: /samples/
-  # - title: "Terms &amp; Privacy Policy"
-  #   url: /terms/
-
 # guides sidebar
 v1guides:
   - title: Guides
     children:
-      - title: "Intro"
+      - title: "Overview"
         url: /v1/guides/introduction/
       - title: "Authentication"
         url: /v1/guides/authentication/
@@ -37,4 +35,14 @@ v1guides:
       - title: "Improve this Site"
         url: /contribute/
 
-v2main:
+v2guides:
+  - title: Guides
+    children:
+      - title: "Intro"
+        url: /v2/guides/introduction/
+      - title: "Authentication"
+        url: /authentication/
+      - title: "Hello, AppWAN!"
+        url: /v2/guides/hello-appwan/
+      - title: "Improve this Site"
+        url: /contribute/

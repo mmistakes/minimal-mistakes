@@ -5,6 +5,7 @@ redirect_from:
     - /guides/
     - /v1/
     - /v1/guides/
+    - /v1/guides/overview/
     - /v2/
     - /v2/guides/
 sidebar:
@@ -13,14 +14,16 @@ toc: true
 ---
 
 ## Audience
-This documentation is aimed at developers wishing to automate things they can already do with the [NetFoundry Console](https://nfconsole.io/). If you are looking for a general introduction to NetFoundry then the [Support Hub](https://support.netfoundry.io/hc/en-us) or the [main site](https://netfoundry.io) are also places you could begin.
+This documentation is aimed at developers wishing to automate things they can already do with the [NetFoundry Web Console](https://nfconsole.io/). If you are looking for a general introduction to NetFoundry then the [Support Hub](https://support.netfoundry.io/hc/en-us) or the [main web site](https://netfoundry.io) are also places you could begin.
 
-## Why use the API?
-You could write a program to interact with the NetFoundry API on behalf of your network to
+## API vs Web Console
+the [NetFoundry Web Console](https://nfconsole.io/) is an implementation of the API and so may help to express the model of the API while you're learning how to build an AppWAN.
+
+The API allows you to manage your AppWANs with your own code. You could program your AppWAN to
 * disallow a lost or non-compliant device from connecting,
 * allow a new device to connect to a service based on some event or condition,
 * create a path to a new network service for an existing group of devices, or
-* trigger an alert based on an unexpected metric for some service.
+* trigger an alert based on an unexpected metric that NetFoundry reports.
 
 ## Representations
 This RESTful API transacts meaningful HTTP verbs and request paths and parameters. Most types of requests and responses also have an HTTP document body which is always a JSON representation. Requests that include a JSON body must also include a header `Content-Type: application/json`, and responses with a JSON body will have this header too.
