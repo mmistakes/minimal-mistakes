@@ -56,6 +56,10 @@ The poor support of 2D picture for the agent training, however, made me switch t
 
 # Demonstration
 
+# In retrospect
+- Would sometime loose myself in elements not related to the research itself. Maybe a way of procrastinating.
+- The effort spent toward the simulator takes a considerable part. In the next project, helps me evaluate better what could be the involvement so as to not too wasted much time. The learning experience from digging deep into the simulator was definitely beneficial. or so I would like to think, but some part of me can't help but wish I found an even better method.
+
 ##  OpenAI Gym and registering a custom environments
 
 ## Uploading to PyPi / installing directly from github actually faster
