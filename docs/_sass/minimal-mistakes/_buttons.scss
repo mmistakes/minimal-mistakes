@@ -40,7 +40,8 @@
   (facebook, $facebook-color),
   (twitter, $twitter-color),
   (linkedin, $linkedin-color),
-  (reddit, $reddit-color);
+  (reddit, $reddit-color),
+  (hackernews, $hackernews-color);
 
   @each $buttoncolor, $color in $buttoncolors {
     &--#{$buttoncolor} {
