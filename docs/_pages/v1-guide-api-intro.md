@@ -14,23 +14,28 @@ toc: true
 ---
 
 ## Audience
+
 This documentation is aimed at developers wishing to automate things they can already do with the [NetFoundry Web Console](https://nfconsole.io/). If you are looking for a general introduction to NetFoundry then the [Support Hub](https://support.netfoundry.io/hc/en-us) or the [main web site](https://netfoundry.io) are also places you could begin.
 
 ## API vs Web Console
+
 the [NetFoundry Web Console](https://nfconsole.io/) is an implementation of the API and so may help to express the model of the API while you're learning how to build an AppWAN.
 
 The API allows you to manage your AppWANs with your own code. You could program your AppWAN to
+
 * disallow a lost or non-compliant device from connecting,
 * allow a new device to connect to a service based on some event or condition,
 * create a path to a new network service for an existing group of devices, or
 * trigger an alert based on an unexpected metric that NetFoundry reports.
 
 ## Representations
+
 This RESTful API transacts meaningful HTTP verbs and request paths and parameters. Most types of requests and responses also have an HTTP document body which is always a JSON representation. Requests that include a JSON body must also include a header `Content-Type: application/json`, and responses with a JSON body will have this header too.
 
 You'll find the [API definition and reference](/reference/) here. You can also browse the available API endpoints with contextual descriptions and example requests and responses in [the playground](/v1/playground/) which is running Swagger UI.
 
 ### Links
+
 The API responds with hypertext links in a `_links` map for navigation. With this you can avoid the brittleness of hard-coding URL paths in your implementation.
 
 For example, a request like `GET /rest/v1/organizations` might return a list of one in `_embedded.organizations`. This is a great starting place because your implementation could then navigate to the "networks" link which is list of all networks in this organization a.k.a. "network group".
@@ -66,7 +71,7 @@ For example, a request like `GET /rest/v1/organizations` might return a list of 
 }
 ```
 
-Now following the "networks" link would return all networks. If you extract the `.page` object from the response you will see something like this which indicates there are 211 total networks on 22 pages of 10 each, and you've just consumed page 1. 
+Now following the "networks" link would return all networks. If you extract the `.page` object from the response you will see something like this which indicates there are 211 total networks on 22 pages of 10 each, and you've just consumed page 1.
 
 ```json
 {
