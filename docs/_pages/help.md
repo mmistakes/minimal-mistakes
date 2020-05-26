@@ -1,12 +1,12 @@
 ---
-title: API Help
+title: Help
 permalink: /help/
 toc: true
 ---
 
-## Web Forum
+<!-- ## Web Forum
 Talk to other developers and maintainers with an email to *api-help@netfoundry.io* or through [Google Groups on the web](https://groups.google.com/a/netfoundry.io/d/forum/api-help). Log in to the forum to search others' posts with any Google ID.
-
+ -->
 <!-- <iframe id="forum_embed"
   src="javascript:void(0)"
   scrolling="no"
