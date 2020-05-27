@@ -24,12 +24,12 @@ _get_nf_token(){
     echo ${access_token}
 }
 
-[[ ! -z ${CLIENT_ID:-} && ! -z ${CLIENT_SECRET:-} ]] || {
-    echo "ERROR: permanent credential vars CLIENT_ID, CLIENT_SECRET are not assigned" >&2
+[[ ! -z ${NETFOUNDRY_CLIENT_ID:-} && ! -z ${NETFOUNDRY_CLIENT_SECRET:-} ]] || {
+    echo "ERROR: permanent credential vars NETFOUNDRY_CLIENT_ID, NETFOUNDRY_CLIENT_SECRET are not assigned" >&2
     return 1
 }
 
-NETFOUNDRY_API_TOKEN=$(_get_nf_token ${CLIENT_ID} ${CLIENT_SECRET})
+NETFOUNDRY_API_TOKEN=$(_get_nf_token ${NETFOUNDRY_CLIENT_ID} ${NETFOUNDRY_CLIENT_SECRET})
 
 [[ ${NETFOUNDRY_API_TOKEN} =~ ^[A-Za-z0-9_=-]+\.[A-Za-z0-9_=-]+\.?[A-Za-z0-9_.+/=-]*$ ]] && {
     export NETFOUNDRY_API_TOKEN
