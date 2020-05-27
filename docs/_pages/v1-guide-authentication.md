@@ -31,7 +31,7 @@ Pull it all together with [HTTPie (command-line HTTP client)](https://httpie.org
 source export-netfoundry-api-token.bash
 ```
 
-[download this example](/export-netfoundry-api-token.bash)
+[download this example](/assets/export-netfoundry-api-token.bash)
 
 {% highlight bash %}
 {% include export-netfoundry-api-token.bash %}

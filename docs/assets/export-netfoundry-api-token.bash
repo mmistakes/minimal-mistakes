@@ -1,0 +1,1 @@
+../_includes/export-netfoundry-api-token.bash
