@@ -16,7 +16,7 @@ Background
 
 As a Devops engineer, one of the problems faced is how to gain secure access to servers behind a private zone. Servers are mainly put in the secured zone with access only granted from specific hosts to minimize potential of a security attack. The problem even gets more complex when most of what you need to connect to is hosted by a cloud provider such as AWS, Azure. Most of the solutions out there either involve having a VPN to connect to setup a secure connection or using a bastion host to tunnels connections through. These solutions are usually very static, slow and manual. The connections being static, also means they are always up even when not being used – which is not a good security practice. In many cases, such as when using a bastion host, exposing any other service other than SSH usually involves SSH tunneling which also has its own security implications.
 
-![diagram of network bastion](/assets/images/7628945137a4793ab3386ff093d7b73c.png)
+![diagram of network bastion](/assets/images/7628945137a4793ab3386ff093d7b73c.png){: .align-center}
 
 I decided to try a different approach to solving this problem. What if I could spin up secure networks on demand from my client to a server behind a private zone? What if I could only expose the services that I needed to ensure that my network is not accidentally exploited? Once am not using the network, I would like the option to spin it down, until I need it again. And finally, I would like to integrate this into my automation tools like Jenkins.
 
