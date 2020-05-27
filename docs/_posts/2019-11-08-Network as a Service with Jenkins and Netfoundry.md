@@ -233,4 +233,4 @@ API enable simple, agile automation and adding new services/access is trivial
 
 Here is the first draft of the video describing the above:
 
-{% include video id="xY3W55xPza0" provider="youtube" %}
+{% include video id="SCi8ubL0kyE" provider="youtube" %}
