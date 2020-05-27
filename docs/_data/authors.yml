@@ -20,7 +20,7 @@ Ken:
       
 Albert:
   name        : "Albert Mugisha"
-  bio         : "I ordered what?"
+#  bio         : "I ordered what?"
   avatar      : "/assets/images/profile-albert.png"
   links:
     - label: "Email"

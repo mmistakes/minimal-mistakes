@@ -7,13 +7,14 @@ toc: true
 ---
 
 ## Audience
+
 This is for you if you're ready to create a functioning AppWAN. I'll assume you're acquainted with [the foundational concepts](/help#foundational-concepts) and have an API token from Auth0. Learn more in the [authentication guide](/v1/guides/authentication/).
 
-<div class="notice--success">
 RapidAPI subscribers may take the same steps except you will not need to provision a new network.
-</div>
+{: .notice--success}
 
 ## How to Build an AppWAN
+
 1. Create a NetFoundry network.
 2. Create a terminating endpoint.
 3. Create a service.
@@ -24,40 +25,41 @@ RapidAPI subscribers may take the same steps except you will not need to provisi
     2. the service.
 
 ## By Example
-The result of this example is an AppWAN that allows a client endpoint to initiate connections to a service.
+
+The result of this example is an AppWAN that allows Tunneler to initiate connections to a service.
 
 ### Create Network
 
-#### Request
+**Request**
 
-#### Response
+**Response**
 
 ### Terminating Endpoint
 
-#### Request
+**Request**
 
-#### Response
+**Response**
 
 ### Service Definition
 
-#### Request
+**Request**
 
-#### Response
+**Response**
 
 ### Gateway Endpoint
 
-#### Request
+**Request**
 
-#### Response
+**Response**
 
 ### Client Endpoint
 
-#### Request
+**Request**
 
-#### Response
+**Response**
 
 ### AppWAN
 
-#### Request
+**Request**
 
-#### Response
+**Response**
