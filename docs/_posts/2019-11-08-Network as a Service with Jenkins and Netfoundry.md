@@ -40,6 +40,7 @@ My end goal was to be able to reach an Nginx webserver which was sitting in a pr
 ![private VPC](/assets/images/private-vpc.png)
 
 ## Pipeline Explained
+
 The Jenkins pipeline will walk through creating a network which allows access to the Nginx webserver explained in the previous section. The pipeline is written in Groovy calling the Netfoundry REST APIs to perform the needed actions. The steps below do a walkthrough of the different stages in the pipeline.
 
 ![jenkins pipeline](/assets/images/jenkins-pipeline.png)
@@ -151,7 +152,6 @@ This is similar to opening up a firewall rule or Security Group access. Destinat
             }
           }
         }
-    
 
 ### Step 6: Create AppWan
 
