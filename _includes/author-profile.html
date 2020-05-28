@@ -53,6 +53,14 @@
         </li>
       {% endif %}
 
+      {% if author.podcast %}
+        <li>
+          <a href="{{ author.podcast }}" itemprop="url">
+            <i class="fas fa-podcast" aria-hidden="true"></i><span class="label">{{ site.data.ui-text[site.locale].website_label | default: "Podcast" }}</span>
+          </a>
+        </li>
+      {% endif %}
+
       {% if author.email %}
         <li>
           <a href="mailto:{{ author.email }}">
