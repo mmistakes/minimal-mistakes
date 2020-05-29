@@ -109,7 +109,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Chris Schindlbeck"
   avatar           : "/assets/images/bio_photo.jpg"
   bio              : "My personal homepage"
   location         : "Hanover, Germany"
@@ -216,7 +216,7 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+# permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -229,6 +229,8 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  # - jekyll-remote-theme
+  # - jekyll-scholar
 
 # mimic GitHub Pages with --safe
 whitelist:
