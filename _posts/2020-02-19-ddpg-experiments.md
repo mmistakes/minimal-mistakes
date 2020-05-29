@@ -22,7 +22,7 @@ In the last few years, Deep Reinforcement Learning has shown promising results w
 	<figcaption>From left to right: Atari 2600 games, AlphaZero vs Lee Sedol, Roboschool Humanoid robot control. All assets are property of the respective parties, not mine.</figcaption>
 </figure>
 
-[TODO Fix image resolutions]
+[TODO Fix image resolutions, maybe add Plan2Explore GIF instead haha]
 {: .notice--warning}
 
 In the later case, the control of the robot requires minutious and precise control of actuators. Depending on the complexity of the robot's frame, which can usually be reduced to its degree of  freedom, the complexity of the actuation rises exponentially, and it becomes hard to design a control system with classical control theory.
@@ -209,7 +209,7 @@ CUSTOM_ARGS = [
     get_arg_dict("policy-lr", float, 1e-3),
     get_arg_dict("value-lr", float, 1e-3),
 
-    # The following blogs allows us to select different initialization schemes for the neural net.'s weights'
+    # The following hyper parameters allow us to select different initialization schemes for the neural net.'s weights'
     get_arg_dict("weights-init", str, "xavier", meta_type="choice",
         choices=["xavier","uniform"]),
     get_arg_dict("bias-init", str, "zeros", meta_type="choice",
@@ -635,7 +635,7 @@ An important thing to note however, is that we actually implemented a few more "
 
 # Experiments
 
-We first start with some basic continuous action environments namely CartPole-v0, InvertedPendulum-v0 and MountainCarContinuous-v0 of the OpenAI Gym basic environments.
+We first start with some basic continuous action environments namely Pendulum-v0, InvertedPendulum-v0 and MountainCarContinuous-v0 of the OpenAI Gym basic environments.
 
 ## Basic control tasks
 Here, we investigate how well a basic implementation of the DDPG algorithm fares on toy problems, namely the `Pendulum-v0` and the `MountainCarContinuous-v0`, which are considered toy problems for RL agents.
