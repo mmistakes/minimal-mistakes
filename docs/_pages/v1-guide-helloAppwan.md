@@ -177,6 +177,8 @@ endpointType=GW
 
 ### Service Definition
 
+This is to describe the server for which you wish to manage access through an AppWAN. The terminating endpoint must have network access to the server.
+
 **Request**
 
 **Response**
