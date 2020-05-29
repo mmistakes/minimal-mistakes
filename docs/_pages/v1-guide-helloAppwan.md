@@ -20,8 +20,8 @@ RapidAPI subscribers may take the same steps except you will not need to provisi
 3. Create a service.
 4. Create a gateway endpoint.
 5. Create a client endpoint.
-6. Create an empty AppWAN, and add 
-    1. the client and gateway endpoints and 
+6. Create an empty AppWAN, and add
+    1. the client and gateway endpoints and
     2. the service.
 
 ## By Example
@@ -97,7 +97,7 @@ http POST https://gateway.production.netfoundry.io/rest/v1/networks \
 
 ### Terminating Endpoint
 
-**Request**
+#### Terminating Endpoint Request
 
 We need to tell NetFoundry which region is near the service. This improve performance. We'll extract the ID of "GENERIC Canada East1", and use that ID in the following request to create the endpoint.
 
@@ -117,29 +117,29 @@ geoRegionId=1d824744-0b38-425a-b1d3-6c1dd69def26 \
 endpointType=GW
 ```
 
-**Response**
+#### Terminating Endpoint Response
 
 ```json
-{                                                                                                                             
-    "_links": {                                                                                                               
-        "appWans": {                                                                                                          
+{
+    "_links": {
+        "appWans": {
             "href": "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/endpoints/
-4543075e-22e6-46db-a2e5-b934ea1dec19/appWans"                                                                                 
-        },                                                                                                                    
-        "dataCenter": {                                                                                                       
-            "href": "https://gateway.production.netfoundry.io/rest/v1/dataCenters/c3b7e284-a214-701e-0111-c3a7c2b1e280"       
-        },                                                                                                                    
-        "endpointGroups": {                                                                                                   
+4543075e-22e6-46db-a2e5-b934ea1dec19/appWans"
+        },
+        "dataCenter": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/dataCenters/c3b7e284-a214-701e-0111-c3a7c2b1e280"
+        },
+        "endpointGroups": {
             "href": "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/endpoints/
-4543075e-22e6-46db-a2e5-b934ea1dec19/endpointGroups"                                                                          
-        },                                                                                                                    
-        "geoRegion": {                                                                                                        
-            "href": "https://gateway.production.netfoundry.io/rest/v1/geoRegions/1d824744-0b38-425a-b1d3-6c1dd69def26"        
-        },                                                                                                                    
-        "network": {                                                                                                          
-            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d"          
-        },                                                                                                                    
-        "self": {                                                                                                             
+4543075e-22e6-46db-a2e5-b934ea1dec19/endpointGroups"
+        },
+        "geoRegion": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/geoRegions/1d824744-0b38-425a-b1d3-6c1dd69def26"
+        },
+        "network": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d"
+        },
+        "self": {
             "href": "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/endpoints/4543075e-22e6-46db-a2e5-b934ea1dec19"
         },
         "services": {
@@ -175,28 +175,374 @@ endpointType=GW
 }
 ```
 
-### Service Definition
+### Create Service
 
 This is to describe the server for which you wish to manage access through an AppWAN. The terminating endpoint must have network access to the server.
 
-**Request**
+#### Create Service Request
 
-**Response**
+```bash
+❯ http POST https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/services \
+  "Authorization: Bearer ${NETFOUNDRY_API_TOKEN}" \
+  name=kbSvc26 \
+  serviceClass=CS \
+  serviceInterceptType=IP \
+  serviceType=TCP \
+  interceptDnsHostname=wttr.in \
+  interceptDnsPort=80 \
+  interceptFirstPort=80 \
+  interceptLastPort=80 \
+  networkIp=5.9.243.187 \
+  networkFirstPort=80 \
+  networkLastPort=80 \
+  interceptIp=5.9.243.187 \
+  endpointId=4543075e-22e6-46db-a2e5-b934ea1dec19
+```
 
-### Gateway Endpoint
+#### Create Service Response
 
-**Request**
+```json
+{
+  "serviceClass" : "CS",
+  "serviceInterceptType" : "IP",
+  "serviceType" : "TCP",
+  "lowLatency" : "YES",
+  "dataInterleaving" : "NO",
+  "transparency" : "NO",
+  "localNetworkGateway" : null,
+  "multicast" : "OFF",
+  "dnsOptions" : "NONE",
+  "icmpTunnel" : "NO",
+  "cryptoLevel" : "STRONG",
+  "permanentConnection" : "NO",
+  "collectionLocation" : "BOTH",
+  "pbrType" : "WAN",
+  "rateSmoothing" : "NO",
+  "networkIp" : "5.9.243.187",
+  "networkNetmask" : null,
+  "networkFirstPort" : 80,
+  "networkLastPort" : 80,
+  "interceptIp" : "5.9.243.187",
+  "interceptDnsHostname" : "wttr.in",
+  "interceptDnsPort" : 80,
+  "interceptFirstPort" : 80,
+  "interceptLastPort" : 80,
+  "gatewayIp" : null,
+  "gatewayCidrBlock" : 0,
+  "netflowIndex" : 0,
+  "profileIndex" : 0,
+  "o365Conflict" : false,
+  "status" : 100,
+  "protectionGroupId" : null,
+  "portInterceptMode" : null,
+  "endpointId" : "4543075e-22e6-46db-a2e5-b934ea1dec19",
+  "gatewayClusterId" : null,
+  "networkId" : null,
+  "ownerIdentityId" : "b580cd14-6e70-446d-a3a2-1d752bc02726",
+  "interceptIncludePorts" : null,
+  "interceptExcludePorts" : null,
+  "createdAt" : "2020-05-29T21:24:47.923+0000",
+  "updatedAt" : "2020-05-29T21:24:47.923+0000",
+  "name" : "kbSvc26",
+  "interceptPorts" : {
+    "include" : [ ],
+    "exclude" : [ ]
+  },
+  "gatewayNetmask" : "",
+  "id" : "e4d8fa7b-a94d-4d4a-9bca-54dfd209729a",
+  "_links" : {
+    "self" : {
+      "href" : "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/services/e4d8fa7b-a94d-4d4a-9bca-54dfd209729a"
+    },
+    "network" : {
+      "href" : "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d"
+    },
+    "appWans" : {
+      "href" : "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/services/e4d8fa7b-a94d-4d4a-9bca-54dfd209729a/appWans"
+    },
+    "endpoint" : {
+      "href" : "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/endpoints/4543075e-22e6-46db-a2e5-b934ea1dec19"
+    }
+  }
+}
+```
 
-**Response**
+### Bridge Gateway Endpoint
+
+Ziti clients require a dedicated bridge gateway for each AppWAN. Later we'll add this to the AppWAN along with the Ziti client.
+
+#### Bridge Gateway Endpoint Request
+
+```bash
+❯ http POST https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/endpoints \
+  "Authorization: Bearer ${NETFOUNDRY_API_TOKEN}" \
+  name=kbBridgeGw27 \
+  endpointType=ZTGW \
+  geoRegionId=1d824744-0b38-425a-b1d3-6c1dd69def26
+```
+
+#### Bridge Gateway Endpoint Response
+
+```json
+{
+    "_links": {
+        "appWans": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/endpoints/4728677b-ade6-438d-ae52-144d6adbdc88/appWans"
+        },
+        "dataCenter": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/dataCenters/c3b7e284-a214-701e-0111-c3a7c2b1e280"
+        },
+        "endpointGroups": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/endpoints/4728677b-ade6-438d-ae52-144d6adbdc88/endpointGroups"
+        },
+        "geoRegion": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/geoRegions/1d824744-0b38-425a-b1d3-6c1dd69def26"
+        },
+        "network": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d"
+        },
+        "self": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/endpoints/4728677b-ade6-438d-ae52-144d6adbdc88"
+        },
+        "services": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/endpoints/4728677b-ade6-438d-ae52-144d6adbdc88/services"
+        }
+    },
+    "clientMfaEnable": "NO",
+    "clientType": null,
+    "clientVersion": null,
+    "componentId": null,
+    "countryId": null,
+    "createdAt": "2020-05-29T22:01:36.000+0000",
+    "currentState": 100,
+    "dataCenterId": "c3b7e284-a214-701e-0111-c3a7c2b1e280",
+    "endpointProtectionRole": null,
+    "endpointType": "ZTGW",
+    "gatewayClusterId": null,
+    "geoRegionId": "1d824744-0b38-425a-b1d3-6c1dd69def26",
+    "haEndpointType": null,
+    "id": "4728677b-ade6-438d-ae52-144d6adbdc88",
+    "name": "kbBridgeGw27",
+    "networkId": "3716d78d-084a-446c-9ac4-5f63ba7b569d",
+    "o365BreakoutNextHopIp": null,
+    "ownerIdentityId": "40deb1ba-d18f-4480-9d63-e2c6e7812caf",
+    "registrationAttemptsLeft": 5,
+    "registrationKey": "C2CF1D7824FF470C47C1D40E0DDA562B1B1B732D",
+    "sessionIdentityId": null,
+    "source": null,
+    "stateLastUpdated": "2020-05-29T22:01:37.000+0000",
+    "status": 100,
+    "syncId": null,
+    "updatedAt": "2020-05-29T22:01:39.000+0000"
+}
+```
 
 ### Client Endpoint
 
-**Request**
+This is your Ziti client. We'll install Tunneler and enroll it with the one-time key provided in the response.
 
-**Response**
+#### Client Endpoint Request
 
-### AppWAN
+```bash
+❯ http POST https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/endpoints \
+  "Authorization: Bearer ${NETFOUNDRY_API_TOKEN}" \
+  name=kbZitiCl27 \
+  endpointType=ZTCL \
+  geoRegionId=1d824744-0b38-425a-b1d3-6c1dd69def26
+```
 
-**Request**
+#### Client Endpoint Response
 
-**Response**
+```json
+{
+    "_links": {
+        "appWans": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/endpoints/ebeaecae-ce3f-4a68-8cb9-01b7eb87124c/appWans"
+        },
+        "dataCenter": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/dataCenters/c3b7e284-a214-701e-0111-c3a7c2b1e280"
+        },
+        "endpointGroups": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/endpoints/ebeaecae-ce3f-4a68-8cb9-01b7eb87124c/endpointGroups"
+        },
+        "geoRegion": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/geoRegions/1d824744-0b38-425a-b1d3-6c1dd69def26"
+        },
+        "network": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d"
+        },
+        "self": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/endpoints/ebeaecae-ce3f-4a68-8cb9-01b7eb87124c"
+        },
+        "services": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/endpoints/ebeaecae-ce3f-4a68-8cb9-01b7eb87124c/services"
+        }
+    },
+    "clientMfaEnable": "NO",
+    "clientType": null,
+    "clientVersion": null,
+    "componentId": null,
+    "countryId": null,
+    "createdAt": "2020-05-29T22:04:24.000+0000",
+    "currentState": 100,
+    "dataCenterId": "c3b7e284-a214-701e-0111-c3a7c2b1e280",
+    "endpointProtectionRole": null,
+    "endpointType": "ZTCL",
+    "gatewayClusterId": null,
+    "geoRegionId": "1d824744-0b38-425a-b1d3-6c1dd69def26",
+    "haEndpointType": null,
+    "id": "ebeaecae-ce3f-4a68-8cb9-01b7eb87124c",
+    "name": "kbZitiCl27",
+    "networkId": "3716d78d-084a-446c-9ac4-5f63ba7b569d",
+    "o365BreakoutNextHopIp": null,
+    "ownerIdentityId": "40deb1ba-d18f-4480-9d63-e2c6e7812caf",
+    "registrationAttemptsLeft": 5,
+    "registrationKey": "8D8EDF01C5BFD855C5839488B7B031778BF1E2CE",
+    "sessionIdentityId": null,
+    "source": null,
+    "stateLastUpdated": "2020-05-29T22:04:25.000+0000",
+    "status": 100,
+    "syncId": null,
+    "updatedAt": "2020-05-29T22:04:26.000+0000"
+}
+```
+
+### Create AppWAN
+
+Initialize an empty AppWAN
+
+#### Create AppWAN Request
+
+```bash
+❯ http POST https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/appWans \
+  "Authorization: Bearer ${NETFOUNDRY_API_TOKEN}" \
+  name=kbAppWan27
+```
+
+#### Create AppWAN Response
+
+```json
+{
+    "_links": {
+        "endpointGroups": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/appWans/1c46ae3a-39cf-4ff3-bbbf-243fde329de2/endpointGroups"
+        },
+        "endpoints": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/appWans/1c46ae3a-39cf-4ff3-bbbf-243fde329de2/endpoints"
+        },
+        "network": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d"
+        },
+        "self": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/appWans/1c46ae3a-39cf-4ff3-bbbf-243fde329de2"
+        },
+        "services": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/appWans/1c46ae3a-39cf-4ff3-bbbf-243fde329de2/services"
+        }
+    },
+    "createdAt": "2020-05-29T22:09:22.583+0000",
+    "id": "1c46ae3a-39cf-4ff3-bbbf-243fde329de2",
+    "name": "kbAppWan27",
+    "networkId": null,
+    "ownerIdentityId": "40deb1ba-d18f-4480-9d63-e2c6e7812caf",
+    "status": 100,
+    "updatedAt": "2020-05-29T22:09:22.583+0000"
+}
+```
+
+### Update AppWAN Endpoints
+
+Add the client and bridge gateway to the AppWAN.
+
+#### Update AppWAN Endpoints Request
+
+```bash
+❯ http POST https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/appWans/1c46ae3a-39cf-4ff3-bbbf-243fde329de2/endpoints \
+  "Authorization: Bearer ${NETFOUNDRY_API_TOKEN}" \
+  ids:='["ebeaecae-ce3f-4a68-8cb9-01b7eb87124c","4728677b-ade6-438d-ae52-144d6adbdc88"]'
+```
+
+#### Update AppWAN Endpoints Response
+
+```json
+{
+    "_links": {
+        "endpointGroups": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/appWans/1c46ae3a-39cf-4ff3-bbbf-243fde329de2/endpointGroups"
+        },
+        "endpoints": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/appWans/1c46ae3a-39cf-4ff3-bbbf-243fde329de2/endpoints"
+        },
+        "network": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d"
+        },
+        "self": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/appWans/1c46ae3a-39cf-4ff3-bbbf-243fde329de2"
+        },
+        "services": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/appWans/1c46ae3a-39cf-4ff3-bbbf-243fde329de2/services"
+        }
+    },
+    "createdAt": "2020-05-29T22:09:22.000+0000",
+    "id": "1c46ae3a-39cf-4ff3-bbbf-243fde329de2",
+    "name": "kbAppWan27",
+    "networkId": "3716d78d-084a-446c-9ac4-5f63ba7b569d",
+    "ownerIdentityId": "40deb1ba-d18f-4480-9d63-e2c6e7812caf",
+    "status": 600,
+    "updatedAt": "2020-05-29T22:09:25.000+0000"
+}
+```
+
+### Update AppWAN Services
+
+Add the service to the AppWAN.
+
+#### Update AppWAN Services Request
+
+```bash
+❯ http POST https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/appWans/1c46ae3a-39cf-4ff3-bbbf-243fde329de2/services \
+  "Authorization: Bearer ${NETFOUNDRY_API_TOKEN}" \
+  ids:='["e4d8fa7b-a94d-4d4a-9bca-54dfd209729a"]'
+```
+
+#### Update AppWAN Services Response
+
+```json
+{
+    "_links": {
+        "endpointGroups": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/appWans/1c46ae3a-39cf-4ff3-bbbf-243fde329de2/endpointGroups"
+        },
+        "endpoints": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/appWans/1c46ae3a-39cf-4ff3-bbbf-243fde329de2/endpoints"
+        },
+        "network": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d"
+        },
+        "self": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/appWans/1c46ae3a-39cf-4ff3-bbbf-243fde329de2"
+        },
+        "services": {
+            "href": "https://gateway.production.netfoundry.io/rest/v1/networks/3716d78d-084a-446c-9ac4-5f63ba7b569d/appWans/1c46ae3a-39cf-4ff3-bbbf-243fde329de2/services"
+        }
+    },
+    "createdAt": "2020-05-29T22:29:38.000+0000",
+    "id": "1c46ae3a-39cf-4ff3-bbbf-243fde329de2",
+    "name": "kbAppWan27",
+    "networkId": "3716d78d-084a-446c-9ac4-5f63ba7b569d",
+    "ownerIdentityId": "40deb1ba-d18f-4480-9d63-e2c6e7812caf",
+    "status": 600,
+    "updatedAt": "2020-05-29T22:49:31.000+0000"
+}
+```
+
+### Install Ziti Tunneler
+
+This is an app NetFoundry built with a [Ziti endpoint SDK](https://ziti.dev/). It will tunnel IP packets to the service via the AppWAN. You could also use any app that you built with a Ziti endpoint SDK.
+
+### Install Ziti Enroller
+
+This is a utility that will securely generate a unique cryptographic identity for Tunneler.
+
+### Enroll Tunneler
+
