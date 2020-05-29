@@ -7,7 +7,6 @@ tags:
     - ci
     - kubernetes
 author: Albert
-author_profile: true
 excerpt: One of the biggest headaches any Devops Engineer faces is how to ensure bugs are not introduced into working software.
 toc: true
 last_updated: April 13, 2020

@@ -5,7 +5,6 @@ tags:
     - jenkins
     - network-as-a-service
 author: Albert
-author_profile: true
 excerpt: Network as a Service with Jenkins, Netfoundry, &amp; Ziti.
 toc: true
 last_updated: November 8, 2019
