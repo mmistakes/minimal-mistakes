@@ -187,8 +187,6 @@ keep_files:
   - .svn
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-# timezone: Europe/Berlin
-# future: true
 
 
 # Conversion
@@ -232,7 +230,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   # - jekyll-remote-theme
-  # - jekyll-scholar
+  - jekyll-scholar
 
 # mimic GitHub Pages with --safe
 whitelist:
