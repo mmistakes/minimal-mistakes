@@ -207,19 +207,6 @@ defaults:
     values:
       layout: single
       author_profile: false
-  # _docs
-  # - scope:
-  #     path: ""
-  #     type: docs
-  #   values:
-  #     layout: single
-  #     read_time: false
-  #     author_profile: false
-  #     share: false
-  #     comments: false
-  #     sidebar:
-  #       nav: "docs"
-
 
 # Sass/SCSS
 sass:
@@ -252,6 +239,7 @@ whitelist:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-redirect-from
 
 
 # Archives
