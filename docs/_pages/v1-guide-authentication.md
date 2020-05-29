@@ -19,7 +19,7 @@ All authenticated operations require an HTTP header like
 
 ```http
 Authorization: Bearer {NETFOUNDRY_API_TOKEN}
-``` 
+```
 
 where `{NETFOUNDRY_API_TOKEN}` is an expiring JSON Web Token (JWT) that you obtain from Auth0, NetFoundry API's identity provider, by authenticating with your permanent credential.
 
@@ -53,7 +53,6 @@ Use your permanent credential; `client_id`, `client_secret`; to obtain an expiri
 
 ```bash
 ❯ http POST https://netfoundry-production.auth0.com/oauth/token \
-  "content-type: application/json" \
   "client_id=${NETFOUNDRY_CLIENT_ID}" \
   "client_secret=${NETFOUNDRY_CLIENT_SECRET}" \
   "audience=https://gateway.production.netfoundry.io/" \
@@ -85,8 +84,6 @@ Include the expiring bearer token in your request to the NetFoundry API. You cou
 
 ```bash
 ❯ http GET https://gateway.production.netfoundry.io/rest/v1/networks \
-  "content-type: application/json" \
-  "cache-control: no-cache" \
   "Authorization: Bearer ${NETFOUNDRY_API_TOKEN}"
 ```
 
@@ -97,8 +94,6 @@ Include the expiring bearer token in your request to the NetFoundry API. You cou
     --silent \
     --show-error \
     --request GET \
-    --header 'Cache-Control: no-cache' \
-    --header 'Content-Type: application/json' \
     --header "Authorization: Bearer ${NETFOUNDRY_API_TOKEN}" \
-    https://gateway.production.netfoundry.io/rest/v1/networks \
+    https://gateway.production.netfoundry.io/rest/v1/networks
 ```

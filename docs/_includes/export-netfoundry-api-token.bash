@@ -14,7 +14,6 @@ _get_nf_token(){
     access_token=$(
     http --check-status \
       POST https://netfoundry-${env}.auth0.com/oauth/token \
-        "content-type: application/json" \
         "client_id=${client_id}" \
         "client_secret=${client_secret}" \
         "audience=https://gateway.${env}.netfoundry.io/" \
