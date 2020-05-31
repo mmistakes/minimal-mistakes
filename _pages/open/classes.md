@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Мережа класів на 2017-2018 н.р."
+title: "Мережа класів на 2019-2020 н.р."
 permalink: /open/classes/
 sidebar:
   nav: "sidebar-menu"

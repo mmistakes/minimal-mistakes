@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /holiday-autumn-17-18
-title: "План заходів під час осінніх канікул по НВК № 125 2017-2018 н.р."
+title: "План заходів НВК № 125"
 sidebar:
   nav: "sidebar-menu"
 categories:
