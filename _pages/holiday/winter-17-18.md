@@ -1,8 +1,7 @@
 ---
 layout: archive
-permalink: /holiday-winter-17-18
-title: "План заходів НВК № 125 під час зимових канікул  
-2017-2018 н.р."
+permalink: /holiday
+title: "План заходів НВК № 125"
 sidebar:
   nav: "sidebar-menu"
 categories:
