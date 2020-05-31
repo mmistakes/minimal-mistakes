@@ -14,6 +14,7 @@ header:
   teaserlogo:
   teaser: ''
   overlay_image: img/big-imgs/photo-1513735718075-2e2d37cb7cc1.jpg
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   #image: img/big-imgs/photo-1513735718075-2e2d37cb7cc1.jpg
   caption: 'unsplash.com'
 tags:
