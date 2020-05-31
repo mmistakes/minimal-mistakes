@@ -29,3 +29,11 @@ https://www.slant.co/topics/2134/~best-markdown-editors-for-linux
 
 # invite accept
 https://staticman-twn.herokuapp.com/v2/connect/thewhatnote/thewhatnote.github.io/
+
+
+PowerShell to install SCCM published softwares and updates.
+
+SCCM 
+
+**Note:** Why PowerShell when software center is available as a client for SCCM?
+{: .notice--info}
