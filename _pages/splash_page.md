@@ -27,11 +27,11 @@ feature_row2:
     title: "Wheel building"
     excerpt: 'How to hand-build a wheel [:us: English Version](/sport/wheel-building_en) [:fr: Version française](/sport/wheel-building_fr)'
 feature_row3:
-  - image_path: /assets/images/jordan-ladikos-62738.jpg
+  - image_path: /assets/images/drone/IMG_6174_sd.jpg
     alt: "placeholder image 2"
-    title: "Create a reactive weather station"
-    excerpt: 'Design a full reactive architecture interacting with a Raspberry PI 3'
-    url: /automation/reactive-weather-station
+    title: "My first drone DIY"
+    excerpt: 'My first drone DIY'
+    url: /diy/drone-diy/
     btn_label: "Read More"
     btn_class: "btn--inverse"
 feature_row4:
@@ -56,6 +56,14 @@ feature_row6:
     title: "Security alarm"
     excerpt: 'Alarming system with Raspberry PI (Coming Soon)'
     url: /project/alarming-system
+    btn_label: "Read More"
+    btn_class: "btn--inverse"
+feature_row7:
+  - image_path: /assets/images/jordan-ladikos-62738.jpg
+    alt: "placeholder image 2"
+    title: "Create a reactive weather station"
+    excerpt: 'Design a full reactive architecture interacting with a Raspberry PI 3'
+    url: /automation/reactive-weather-station
     btn_label: "Read More"
     btn_class: "btn--inverse"
 ---
