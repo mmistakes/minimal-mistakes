@@ -27,7 +27,7 @@ feature_row2:
     title: "Wheel building"
     excerpt: 'How to hand-build a wheel [:us: English Version](/sport/wheel-building_en) [:fr: Version française](/sport/wheel-building_fr)'
 feature_row3:
-  - image_path: /assets/images/drone/IMG_6174_sd.jpg
+  - image_path: /assets/images/drone/IMG_4679.jpg
     alt: "placeholder image 2"
     title: "My first drone DIY"
     excerpt: 'My first drone DIY'
