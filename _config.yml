@@ -24,8 +24,8 @@ description: "Solução Integrada em Projetos."
 url: #"https://nortanprojetos.com"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser: #"/assets/images/500x300.png"
-logo: "/assets/images/88x88.png"
+teaser: "/assets/images/logo.svg"
+logo: "/assets/images/logo.svg"
 masthead_title: "Nortan"
 # breadcrumbs            : false # true, false (default)
 words_per_minute: 200

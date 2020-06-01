@@ -5,7 +5,7 @@ permalink: /
 image_sliders:
   - slider1
 nortan_intro:
-  - image_path: /assets/images/bio.png
+  - image_path: /assets/images/logo.svg
     alt: "A NORTAN"
     title: "A NORTAN"
     excerpt: "Nortan Projetos foi fundada em 2020 com um propósito: transformar conhecimento e informação em resultados financeiros em benefício de nossos consultores e parceiros.<br><br>
@@ -37,7 +37,7 @@ contato:
 
 {% include slider.html selector="slider1" %}
 
-{% include feature_row id="nortan_intro" type="left" %}
+{% include feature_row id="nortan_intro" type="left" img_style="padding: 50px;"%}
 
 {% include feature_row id="areas_atuacao" type="wide" title_aligment='text-center' propeties='data-aos="fade-left" style="border-bottom: 0px solid;"' %}
 
