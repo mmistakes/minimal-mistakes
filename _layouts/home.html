@@ -17,3 +17,17 @@ layout: archive
 {% endfor %}
 
 {% include paginator.html %}
+
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_projects | default: "Recent Projects" }}</h3>
+
+{% if project_paginator %}
+  {% assign projects = project_paginator.projects %}
+{% else %}
+  {% assign projects = site.projects %}
+{% endif %}
+
+{% for project in projects %}
+  {% include archive-single-project.html %}
+{% endfor %}
+
+{% include paginator.html %}
