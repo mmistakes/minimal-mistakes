@@ -4,12 +4,18 @@
 
 .masthead {
   position: relative;
-  border-bottom: 1px solid $border-color;
+  border-bottom: unset;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
   z-index: 20;
+  box-shadow: 0 0 25px 0 rgba(0,0,0,.04);
+  background: rgb(2,0,36);
+  background: -moz-linear-gradient(108deg, rgba(2,0,36,1) 0%, rgba(3,53,144,1) 100%);
+  background: -webkit-linear-gradient(108deg, rgba(2,0,36,1) 0%, rgba(3,53,144,1) 100%);
+  background: linear-gradient(108deg, rgba(2,0,36,1) 0%, rgba(3,53,144,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#033590",GradientType=1); 
 
   &__inner-wrap {
     @include clearfix;
@@ -40,7 +46,7 @@
 }
 
 .site-logo img {
-  max-height: 2rem;
+  max-height: 2.5rem;
 }
 
 .site-title {

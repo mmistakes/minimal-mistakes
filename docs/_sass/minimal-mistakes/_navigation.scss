@@ -177,16 +177,16 @@
   -ms-flex-align: center;
   align-items: center;
   min-height: $nav-height;
-  background: $background-color;
+  background: unset;
 
   a {
     display: block;
     margin: 0 1rem;
-    color: $masthead-link-color;
+    color: #eef1f5;
     text-decoration: none;
 
     &:hover {
-      color: $masthead-link-color-hover;
+      color: #eef1f5;
     }
 
     &.site-logo {
@@ -256,14 +256,15 @@
     position: absolute;
     top: 100%;
     right: 0;
-    margin-top: 15px;
-    padding: 5px;
-    border: 1px solid $border-color;
+    margin-top: 0px;
+    padding: 10px;
+    border: unset;
     border-radius: $border-radius;
-    background: $background-color;
-    -webkit-box-shadow: 0 2px 4px 0 rgba(#000, 0.16),
-      0 2px 10px 0 rgba(#000, 0.12);
-    box-shadow: 0 2px 4px 0 rgba(#000, 0.16), 0 2px 10px 0 rgba(#000, 0.12);
+    color: #434c5d!important;
+    background: #020024;
+    background: -moz-linear-gradient(108deg, #020024 0%, #033590 100%);
+    background: -webkit-linear-gradient(108deg, #020024 0%, #033590 100%);
+    background: linear-gradient(108deg, #020024 0%, #033590 100%);
 
     &.hidden {
       display: none;
@@ -275,8 +276,8 @@
       font-size: $type-size-5;
 
       &:hover {
-        color: $masthead-link-color-hover;
-        background: $navicon-link-color-hover;
+        color: #ffffff;
+        background: #020125;
       }
     }
 
@@ -286,9 +287,9 @@
       top: -11px;
       right: 10px;
       width: 0;
-      border-style: solid;
-      border-width: 0 10px 10px;
-      border-color: $border-color transparent;
+      border-style: unset;
+      border-width: unset;
+      border-color: unset;
       display: block;
       z-index: 0;
     }
@@ -299,16 +300,16 @@
       top: -10px;
       right: 10px;
       width: 0;
-      border-style: solid;
-      border-width: 0 10px 10px;
-      border-color: $background-color transparent;
+      border-style:unset;
+      border-width:unset;
+      border-color: unset;
       display: block;
       z-index: 1;
     }
 
     li {
       display: block;
-      border-bottom: 1px solid $border-color;
+      border-bottom: unset;
 
       &:last-child {
         border-bottom: none;
@@ -486,10 +487,11 @@
   margin: 0.5rem 0;
   padding: 0.25rem 0;
   font-family: $sans-serif-narrow;
-  font-size: $type-size-6;
+  font-size: $type-size-4;
   font-weight: bold;
   text-transform: uppercase;
-  border-bottom: 1px solid $border-color;
+  border-bottom: 2px solid $border-color;
+  color: #023692;
 }
 
 /*
@@ -499,16 +501,17 @@
 .toc {
   font-family: $sans-serif-narrow;
   color: $gray;
-  background-color: $background-color;
-  border: 1px solid $border-color;
+  background-color: #eef1f5;
+  border: unset;
   border-radius: $border-radius;
-  -webkit-box-shadow: $box-shadow;
-  box-shadow: $box-shadow;
+  -webkit-box-shadow: unset;
+  box-shadow: unset;
+  padding-bottom: 15px;
 
   .nav__title {
     color: #fff;
     font-size: $type-size-6;
-    background: $primary-color;
+    background: #023692;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
   }
@@ -524,10 +527,10 @@
   padding: 0;
   width: 100%;
   list-style: none;
-  font-size: $type-size-6;
+  font-size: .9em;
 
   @include breakpoint($large) {
-    font-size: $type-size-7;
+    font-size: 1.1em;
   }
 
   a {
@@ -536,7 +539,7 @@
     color: $muted-text-color;
     font-weight: bold;
     line-height: 1.5;
-    border-bottom: 1px solid $border-color;
+    border-bottom: unset;
 
     &:hover {
       color: $text-color;

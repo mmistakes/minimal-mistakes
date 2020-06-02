@@ -19,6 +19,7 @@
   border-width: 0;
   border-radius: $border-radius;
   cursor: pointer;
+  min-width: 125px;
 
   .icon {
     margin-right: 0.5em;
@@ -50,7 +51,7 @@
         border: 1px solid $border-color;
       }
       @if ($buttoncolor == light-outline) {
-        border: 1px solid #fff;
+        border: 2px solid #0056cc;
       }
 
       &:visited {
@@ -89,7 +90,7 @@
 
   /* large button */
   &--large {
-    font-size: $type-size-5;
+    font-size: .7em;
   }
 
   /* small button */

@@ -33,6 +33,7 @@ body {
 .initial-content,
 .search-content {
   flex: 1 0 auto;
+  background-color: #fff;
 }
 
 .page {
@@ -49,7 +50,7 @@ body {
 
   .page__inner-wrap {
     float: left;
-    margin-top: 1em;
+    margin-top: 2em;
     margin-left: 0;
     margin-right: 0;
     width: 100%;
@@ -71,6 +72,8 @@ body {
 .page__title {
   margin-top: 0;
   line-height: 1;
+  color: #023692;
+  font-family: 'Russo One';
 
   & + .page__meta {
     margin-top: -0.5em;
@@ -85,7 +88,7 @@ body {
 .page__content {
   h2 {
     padding-bottom: 0.5em;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 2px solid $border-color;
   }
 
 	h1, h2, h3, h4, h5, h6 {
@@ -108,7 +111,7 @@ body {
   p,
   li,
   dl {
-    font-size: 1em;
+    font-size: .8em;
   }
 
   /* paragraph indents */
@@ -168,7 +171,7 @@ body {
 
   &--overlay {
     position: relative;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
     padding: 3em 0;
     @include clearfix;
     background-size: cover;
@@ -193,15 +196,22 @@ body {
     }
 
     .page__title,
-    .page__meta,
-    .page__lead,
+    .page__meta
+    {
+      color: #023692;
+      text-shadow: unset;
+      font-family: 'Russo One';
+      margin-top: 66px;
+      line-height: 0;
+    }
+
     .btn {
-      color: #fff;
-      text-shadow: 1px 1px 4px rgba(#000, 0.5);
+      color: unset;
     }
 
     .page__lead {
       max-width: $medium;
+      color: #434c5d;
     }
 
     .page__title {
@@ -319,12 +329,13 @@ body {
   margin-bottom: 8px;
   padding: 5px 10px;
   text-decoration: none;
-  border: 1px solid mix(#000, $border-color, 25%);
+  border: 2px solid #006cff;
   border-radius: $border-radius;
 
   &:hover {
     text-decoration: none;
-    color: $link-color-hover;
+    color: #ffffff;
+    background: #006cff;
   }
 }
 
@@ -333,11 +344,13 @@ body {
   padding-bottom: 1em;
 
   &:not(:last-child) {
-    border-bottom: solid 1px $border-color;
+    border-bottom: solid 2px $border-color;
   }
 
   .archive__item-title {
     margin-top: 0;
+    color: #023692;
+    font-family: 'Russo One';
   }
 
   .archive__subtitle {

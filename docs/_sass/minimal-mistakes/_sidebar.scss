@@ -19,13 +19,6 @@
   @include breakpoint($large) {
     float: left;
     width: calc(#{$right-sidebar-width-narrow} - 1em);
-    opacity: 0.75;
-    -webkit-transition: opacity 0.2s ease-in-out;
-    transition: opacity 0.2s ease-in-out;
-
-    &:hover {
-      opacity: 1;
-    }
 
     &.sticky {
       overflow-y: auto;
@@ -56,9 +49,9 @@
 
   p,
   li {
-    font-family: $sans-serif;
-    font-size: $type-size-6;
-    line-height: 1.5;
+    font-family: 'Open Sans';
+    font-size: .8em;
+    line-height: 2.5;
   }
 
   img {

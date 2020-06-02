@@ -3,36 +3,37 @@ layout: splash
 permalink: /
 hidden: true
 header:
-  image: /assets/images/cloud-header.png
+  image: /assets/images/homepagebackground.jpg
 #  overlay_color: "#9bf315"
-  overlay_image: /assets/images/builder-header.png
+  overlay_image: /assets/images/homepagebackground.jpg
   actions:
-    - label: "<i class='fas fa-network-wired'></i> Start Here"
+    - btn_class: "btn--primary"
+      label: "LEARN MORE"
       url: "/v1/guides/introduction/"
 excerpt: >
   Documentation and Tools
 feature_row:
-  - image_path: /assets/images/nf-support-hub.png
+  - image_path: /assets/images/supporthub.jpg
     alt: "Support Hub"
     title: "Support Hub"
     excerpt: "Cloud, Console, &amp; Concepts"
     url: "https://support.netfoundry.io/hc/en-us"
     btn_class: "btn--primary"
-    btn_label: "GUI"
-  - image_path: /assets/images/ziti-dev-logo.png
+    btn_label: "LEARN MORE"
+  - image_path: /assets/images/ziti.dev.jpg
     alt: "Ziti.dev"
     title: "OpenZiti"
     excerpt: "NetFoundry networks run Ziti"
     url: "/v1/guides/ziti/"
     btn_class: "btn--primary"
-    btn_label: "Zitify"
-  - image_path: /assets/images/connect-on-rapidapi.png
+    btn_label: "LEARN MORE"
+  - image_path: /assets/images/rapidapi.jpg
     alt: "RapidAPI"
     title: "User Manual"
     excerpt: "Marketplace API Access"
     url: "/v1/guides/rapidapi/"
     btn_class: "btn--primary"
-    btn_label: "Subscribe"
+    btn_label: "LEARN MORE"
 
 ---
 

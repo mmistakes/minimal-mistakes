@@ -4,12 +4,13 @@
 
 .masthead {
   position: relative;
-  border-bottom: 1px solid $border-color;
+  border-bottom: unset;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
   z-index: 20;
+
 
   &__inner-wrap {
     @include clearfix;
@@ -24,6 +25,7 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     font-family: $sans-serif-narrow;
+    box-shadow: 0 0 25px 0 rgba(0,0,0,0.04);
 
     @include breakpoint($x-large) {
       max-width: $max-width;
