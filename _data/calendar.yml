@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "4. Schulkonferenz per Videotreffen",
-    "title": "4. Schulkonferenz per Videotreffen",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MjlzZnNibGszcm91NmpydTVlMnV1aDFrODUgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2020-06-03T15:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2020-06-03T16:30:00+02:00"
-    },
-    "created": "2020-03-02T15:14:52.000Z",
-    "updated": "2020-05-24T07:19:18.290Z"
-  },
-  {
-    "image_path": null,
     "alt": "Bundesjugendspiele entfallen",
     "title": "Bundesjugendspiele entfallen",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2020-03-11T12:48:12.000Z",
     "updated": "2020-03-11T12:48:12.628Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Anmeldungszeitraum Schulanfänger ",
+    "title": "Anmeldungszeitraum Schulanfänger ",
+    "excerpt": "Eltern melden ihr Kind an, dass im Schuljahr 2020/21 schulpflichtig wird.",
+    "url": "https://www.google.com/calendar/event?eid=MXRtcmVxOXRsNnN0ZWhzNjYyY2M0ZzFjZWQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2020-09-28",
+      "date_time": null
+    },
+    "end": {
+      "date": "2020-10-10",
+      "date_time": null
+    },
+    "created": "2020-03-02T15:11:32.000Z",
+    "updated": "2020-03-02T15:11:32.670Z"
   }
 ]
