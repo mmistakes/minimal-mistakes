@@ -5,9 +5,15 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2020-05-01T11:53:42-04:00
+last_modified_at: 2020-05-02T00:54:04+08:00
 toc: false
 ---
+
+## Unreleased
+
+### Enhancements
+
+- Make sticky sidebar live well with short content. [#2514](https://github.com/mmistakes/minimal-mistakes/pull/2514)
 
 ## [4.19.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.19.2)
 
