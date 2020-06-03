@@ -1,9 +1,12 @@
 <font color='white'>filler text</font>
 
 ## Preprints
+- Verbeke, P., Ergo, K., De Loof, E., & Verguts, T. Learning to synchronize: Midfrontal theta dynamics during reversal learning.
+    - [BioArxiv](https://www.biorxiv.org/content/10.1101/2020.06.01.127175v1)
+
 - Desender, K., Donner, T. H., & Verguts, T. Dynamic expressions of confidence within an evidence accumulation framework.
     - [BioArxiv](https://www.biorxiv.org/content/10.1101/2020.02.18.953778v2)
-
+    
 - Buc Calderon, C., De Loof, E., Ergo, K., Snoeck, A., Boehler, C. N., & Verguts, T. Signed reward prediction errors in the ventral striatum drive episodic memory.
     - [BioArxiv](https://www.biorxiv.org/content/10.1101/2020.01.03.893578v1)
 
