@@ -13,7 +13,7 @@ toc: false
 
 ### Enhancements
 
-- Make sticky sidebar live well with short content. [#2514](https://github.com/mmistakes/minimal-mistakes/pull/2514)
+- Improve sticky sidebar's appearance with short content. [#2514](https://github.com/mmistakes/minimal-mistakes/pull/2514)
 
 ## [4.19.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.19.2)
 
