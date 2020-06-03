@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2020-06-02T22:22:14-04:00
+last_modified_at: 2020-06-02T22:23:56-04:00
 toc: false
 ---
 
@@ -13,7 +13,8 @@ toc: false
 
 ### Enhancements
 
-- Strip trailing whitespace in seo_description. [#2542](https://github.com/mmistakes/minimal-mistakes/pull/2542)
+- Move page date Liquid to include. [#2544](https://github.com/mmistakes/minimal-mistakes/pull/2544)
+- Strip trailing whitespace in `seo_description`. [#2542](https://github.com/mmistakes/minimal-mistakes/pull/2542)
 - Improve sticky sidebar's appearance with short content. [#2514](https://github.com/mmistakes/minimal-mistakes/pull/2514)
 
 ## [4.19.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.19.2)
