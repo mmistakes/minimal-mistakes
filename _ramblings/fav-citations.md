@@ -4,9 +4,15 @@ author_profile: true
 # toc: true
 ---
 
+> As our island of knowledge grows, so does the shore of our ignorance.
+
+<cite>John Wheeler</cite>
+{: .small}
+Comment: Welcome to my beach-planet resort ...
+
 > What is better - to be born good, or to overcome your evil nature through great effort?
 
-<cite>Paarthurnax "The Old One", leader of the Greybeards</cite> --- The Esder Scrolls V : Skyrim
+<cite>Paarthurnax "The Old One", leader of the Greybeards</cite> --- The Elder Scrolls V : Skyrim
 {: .small}
 
 Comment: While I would not recommend drawing life lesson from works of fiction, I could not help but make an exception for the one above.
