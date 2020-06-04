@@ -113,11 +113,19 @@ The full experiment results can be accessed in the following <a href="https://ap
 
 # Concluding Remarks
 
+<figure style="width: 30%" class="align-right">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/dqn_exploration/BoltzmanEqRandomPolicy.png" alt="">
+  <figcaption>Illustrating how the Boltzmann-based agent's policy is similar to a random policy: after passing those Q values to the Categorical distribution, the probability of the actions will be almost equal.</figcaption>
+</figure>
+
 So far, greedy policy performs the best on toy problems such as CartPole-v0 or MountainCar-v0.
 As the complexity rises, however, $\epsilon$-greedy policy ultimately comes out first, albeit such a method seems to be sensitive to the hyperparameters such as the value of $\epsilon$ itself, as well as how long we continue to sporadically sample random actions.
 
-# Coming next ...
+**2020-06-04 Update** After more investigation regarding the Boltzmann-based exploration scheme, it turns out the Q-values of a given state output by the Q-network are usually so close together, that the resulting probability distribution over the action becomes equivalent to a random policy. Hence, the corresponding agent performs poorly over the few environments it was tested on.
+
+
+# Coming next ... ?
 
 - A cleaned up version of the source code.
-- Experimenting with the <a href="https://arxiv.org/abs/1706.01905">Parameter Space Noise for Exploration</a> technique.
+- Experimenting with the <a href="https://arxiv.org/abs/1706.01905">Parameter Space Noise for Exploration</a> technique, which happened to work quite well in some DDPG experiments.
 - Further investigating the Boltzmann-based with a temperature-based sampling to relax the action distribution a little bit more.
