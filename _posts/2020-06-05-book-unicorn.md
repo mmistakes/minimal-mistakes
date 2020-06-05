@@ -5,8 +5,6 @@ categories:
 tags:
   - Trend
   - Unicorn
-toc: true
-toc_sticky: true
 ---
 
 ## 반환점에 선 유니콘 - 완주를 위한 안내서
@@ -17,4 +15,5 @@ toc_sticky: true
 
 <figure style="width: 100%">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/book1.png" alt="">
+  <figcaption>출처: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=241335286</figcaption>
 </figure>
