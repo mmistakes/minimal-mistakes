@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+- Update GreedyNav.js
 - Replace `<section id="custom-comments"></section>` in `comments.html` include and add `custom_scripts.html` include for loading custom comment provider JavaScript in the footer. [#2549](https://github.com/mmistakes/minimal-mistakes/issues/2549)
 - Move page date Liquid to include. [#2544](https://github.com/mmistakes/minimal-mistakes/pull/2544)
 - Strip trailing whitespace in seo_description. [#2542](https://github.com/mmistakes/minimal-mistakes/pull/2542)
