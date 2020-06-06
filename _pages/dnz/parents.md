@@ -5,12 +5,17 @@ permalink: /dnz/parents/
 sidebar:
   nav: "dnz-menu"
 ---
-Умови прийняття в дошкільне відділення
-	Прийом дітей до дошкільного відділення здійснюється керівником відповідно до списків, сформованих базою даних, упродовж періоду комплектації груп молодшого віку (поточного року) та протягом року до старшої групи. 
-	У дошкільне відділення діти зараховуються на підставі:
-1.	Медична довідка дитини з проходженням всих фахівців певної форми (до вступу в дошкільний закалад).
-2.	Ксерокопія свідоцтва про народження дитини.
-3.	Паспортні дані батьків дитини.
-4.	Заява батьків, з влаштування дитини в дошкільне відділення.
-5.	Батьки зобов’язуються обов’язково вносити гроші за харчування дитини в дошкільному відділенні на розрахунковий рахунок Департаменту гуманітарної освіти та надавати квитанцію вихователю до 15 числа кожного місяця.
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 85.0847%;"><iframe src="https://drive.google.com/file/d/1UxTzOqiutWO8GGr-AuuxLjvtoslNbKGz/preview" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen></iframe></div>
+
+Безпека дитини вдома
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 85.0847%;"><iframe src="https://docs.google.com/document/d/1_TLrcs6NVk0KZ7rnOP58iDI85nXKwZL5/edit"border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen></iframe></div>
+
+Безпека дітей влітку
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 85.0847%;"><iframe src="https://docs.google.com/document/d/1tW3m-RQbcwh0VwQ8kd5Jw_QM9Z6smk-h/edit" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen></iframe></div>
+
+Інструктаж батьків
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 85.0847%;"><iframe src="https://docs.google.com/document/d/1pMmKgtqH2viOoszU2uDqjFD41zEUxVvT/edit" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen></iframe></div>
+
+Безпека дітей навесні
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 85.0847%;"><iframe src="https://docs.google.com/document/d/1wS804FtxnOzhyrC8gUBwSjhJc0BMTVNQ/edit#heading=h.gjdgxs" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen></iframe></div>
 
