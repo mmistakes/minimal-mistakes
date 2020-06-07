@@ -46,8 +46,19 @@ TX 개발팀 / 사원
 # 프로젝트
 ## [2020.04 ~ 2020.07] LG pay, 휴대폰 결제
 - LG Pay 휴대폰 결제 개발(오프라인, 온라인)
-- 다날의 휴대폰 결제 서버와 카드 리더기(Van)사와 통신하는 GW 서버 개발
-- 
+- 다날의 휴대폰 결제 서버와 카드 리더기(Van)사와 통신
+- LG Server 와 LG APP와 통신
+- 회사의 기존 프레임 워크를 개선하여 JAVASCRIPT를 통해 로직을 실행시키던 것을 JAVA를 통해 실행하도록 개발
+- 서버 간 통신시 암호화 모듈 개발
+- YAML 파일을 읽고 Cache로 보관하는 YamlReader 개발
+- 전문 개발 
+	- 오프라인 결제
+	- 온라인 결제
+	- 온라인 PC결제
+	- PIN 변경
+	- 생체 인증
+	- 결제 등록
+- 현재 LG Pay에서 서비스 중
 
 # Experience
   
@@ -158,11 +169,11 @@ TX 개발팀 / 사원
 ## ~~AI~~  
 ~~tensorflow CNN~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4Nzc5NjY3MiwxODE3NDIxMjg1LC0xNj
-M1MDMwNzc5LDEyNjM4NzI1MTYsMTcyNDMyOTA2OCwzNjkzODI3
-OCwxNDAyMzM2MjYwLC0xMjUxNjAwMTk2LDQxOTg2OTk5MCwtMT
-g3ODg5NjQ3NywtMTAzMTE2NDM5Miw2NTM3NDI2NzksNzY5Njc0
-NDU5LC02MTIyNzE1NjUsLTEwMTg3OTAzNTQsLTE1NDk2NDU3Nz
-YsNjk4OTY3MjI2LDc3MDkwODg5LC00ODYyNjY4MTAsMTMyMjQ3
-NTYzNl19
+eyJoaXN0b3J5IjpbLTEyNzA4NDE1MjIsLTc4Nzc5NjY3MiwxOD
+E3NDIxMjg1LC0xNjM1MDMwNzc5LDEyNjM4NzI1MTYsMTcyNDMy
+OTA2OCwzNjkzODI3OCwxNDAyMzM2MjYwLC0xMjUxNjAwMTk2LD
+QxOTg2OTk5MCwtMTg3ODg5NjQ3NywtMTAzMTE2NDM5Miw2NTM3
+NDI2NzksNzY5Njc0NDU5LC02MTIyNzE1NjUsLTEwMTg3OTAzNT
+QsLTE1NDk2NDU3NzYsNjk4OTY3MjI2LDc3MDkwODg5LC00ODYy
+NjY4MTBdfQ==
 -->
