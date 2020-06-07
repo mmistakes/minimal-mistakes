@@ -1,5 +1,5 @@
 ---
-title: 최선재는 누구일까?
+title: 경력 기술서
 
 categories: 
    - About
@@ -129,11 +129,11 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 ## ~~AI~~  
 ~~tensorflow CNN~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNzQyMTI4NSwtMTYzNTAzMDc3OSwxMj
-YzODcyNTE2LDE3MjQzMjkwNjgsMzY5MzgyNzgsMTQwMjMzNjI2
-MCwtMTI1MTYwMDE5Niw0MTk4Njk5OTAsLTE4Nzg4OTY0NzcsLT
-EwMzExNjQzOTIsNjUzNzQyNjc5LDc2OTY3NDQ1OSwtNjEyMjcx
-NTY1LC0xMDE4NzkwMzU0LC0xNTQ5NjQ1Nzc2LDY5ODk2NzIyNi
-w3NzA5MDg4OSwtNDg2MjY2ODEwLDEzMjI0NzU2MzYsMTYyMjM1
-MjI5MF19
+eyJoaXN0b3J5IjpbLTE4NTYzNTU2MTAsMTgxNzQyMTI4NSwtMT
+YzNTAzMDc3OSwxMjYzODcyNTE2LDE3MjQzMjkwNjgsMzY5Mzgy
+NzgsMTQwMjMzNjI2MCwtMTI1MTYwMDE5Niw0MTk4Njk5OTAsLT
+E4Nzg4OTY0NzcsLTEwMzExNjQzOTIsNjUzNzQyNjc5LDc2OTY3
+NDQ1OSwtNjEyMjcxNTY1LC0xMDE4NzkwMzU0LC0xNTQ5NjQ1Nz
+c2LDY5ODk2NzIyNiw3NzA5MDg4OSwtNDg2MjY2ODEwLDEzMjI0
+NzU2MzZdfQ==
 -->
