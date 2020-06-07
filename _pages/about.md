@@ -25,7 +25,29 @@ comments: false
 TX 개발팀 / 사원  
 
 # 스킬
+## Language
+- JAVA
+- SQL
+- JAVASCRIPT
 
+## System
+- Windows
+- Linux
+
+## Tool
+- Eclipse
+- SVN
+- JIRA
+- HeidiSQL
+- Postman
+- MobaXterm
+- Git Lab(예정)
+
+# 프로젝트
+## [2020.04 ~ 2020.07] LG pay, 휴대폰 결제
+- LG Pay 휴대폰 결제 개발(오프라인, 온라인)
+- 다날의 휴대폰 결제 서버와 카드 리더기(Van)사와 통신하는 GW 서버 개발
+- 
 
 # Experience
   
@@ -136,7 +158,7 @@ TX 개발팀 / 사원
 ## ~~AI~~  
 ~~tensorflow CNN~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0ODIxNzkzNiwxODE3NDIxMjg1LC0xNj
+eyJoaXN0b3J5IjpbLTc4Nzc5NjY3MiwxODE3NDIxMjg1LC0xNj
 M1MDMwNzc5LDEyNjM4NzI1MTYsMTcyNDMyOTA2OCwzNjkzODI3
 OCwxNDAyMzM2MjYwLC0xMjUxNjAwMTk2LDQxOTg2OTk5MCwtMT
 g3ODg5NjQ3NywtMTAzMTE2NDM5Miw2NTM3NDI2NzksNzY5Njc0
