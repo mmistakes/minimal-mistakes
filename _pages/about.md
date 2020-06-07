@@ -6,6 +6,10 @@ categories:
 
 permalink: /about/
 
+toc: true #Table Of Contents 목차 보여줌
+toc_label: "My Table of Contents" # toc 이름 정의
+toc_sticky: true # 스크롤 내릴때 같이 내려가는 목차
+
 last_modified_at: 2020-03-21T18:42:00 # 마지막 변경일
 
 comments: false
@@ -132,11 +136,11 @@ TX 개발팀 / 사원
 ## ~~AI~~  
 ~~tensorflow CNN~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzg3MzMwMDQsMTgxNzQyMTI4NSwtMT
-YzNTAzMDc3OSwxMjYzODcyNTE2LDE3MjQzMjkwNjgsMzY5Mzgy
-NzgsMTQwMjMzNjI2MCwtMTI1MTYwMDE5Niw0MTk4Njk5OTAsLT
-E4Nzg4OTY0NzcsLTEwMzExNjQzOTIsNjUzNzQyNjc5LDc2OTY3
-NDQ1OSwtNjEyMjcxNTY1LC0xMDE4NzkwMzU0LC0xNTQ5NjQ1Nz
-c2LDY5ODk2NzIyNiw3NzA5MDg4OSwtNDg2MjY2ODEwLDEzMjI0
-NzU2MzZdfQ==
+eyJoaXN0b3J5IjpbMTE0ODIxNzkzNiwxODE3NDIxMjg1LC0xNj
+M1MDMwNzc5LDEyNjM4NzI1MTYsMTcyNDMyOTA2OCwzNjkzODI3
+OCwxNDAyMzM2MjYwLC0xMjUxNjAwMTk2LDQxOTg2OTk5MCwtMT
+g3ODg5NjQ3NywtMTAzMTE2NDM5Miw2NTM3NDI2NzksNzY5Njc0
+NDU5LC02MTIyNzE1NjUsLTEwMTg3OTAzNTQsLTE1NDk2NDU3Nz
+YsNjk4OTY3MjI2LDc3MDkwODg5LC00ODYyNjY4MTAsMTMyMjQ3
+NTYzNl19
 -->
