@@ -5,21 +5,24 @@ categories:
    - About
 
 permalink: /about/
-author_profile: true #작성자 프로필 출력여부
-read_time: true # read_time을 출력할지 여부 1min read 같은것!
 
-toc: true #Table Of Contents 목차 보여줌
-toc_label: "My Table of Contents" # toc 이름 정의
-toc_icon: "cog" # font Awesome아이콘으로 toc 아이콘 설정 
-toc_sticky: true # 스크롤 내릴때 같이 내려가는 목차
-
-date: 2020-01-20T16:42:00 # 최초 3생성일
 last_modified_at: 2020-03-21T18:42:00 # 마지막 변경일
 
 comments: false
 
 ---
-Hi! I'm a student studying at Kyonggi University. I have experience such as Frontend Development, Android Development, Backend Development in university and intern.
+# 프로필
+## 이름
+최선재
+
+## 직무 경험
+(주) 다날  
+2019.12.02 ~ 재직중  
+TX 개발팀 / 사원  
+
+# 스킬
+
+
 # Experience
   
 ## ACEPROJECT(Server team)
@@ -129,7 +132,7 @@ Hi! I'm a student studying at Kyonggi University. I have experience such as Fron
 ## ~~AI~~  
 ~~tensorflow CNN~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTYzNTU2MTAsMTgxNzQyMTI4NSwtMT
+eyJoaXN0b3J5IjpbLTEyNzg3MzMwMDQsMTgxNzQyMTI4NSwtMT
 YzNTAzMDc3OSwxMjYzODcyNTE2LDE3MjQzMjkwNjgsMzY5Mzgy
 NzgsMTQwMjMzNjI2MCwtMTI1MTYwMDE5Niw0MTk4Njk5OTAsLT
 E4Nzg4OTY0NzcsLTEwMzExNjQzOTIsNjUzNzQyNjc5LDc2OTY3
