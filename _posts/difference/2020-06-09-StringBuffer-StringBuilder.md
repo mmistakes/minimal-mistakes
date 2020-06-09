@@ -15,10 +15,11 @@ tags:
 last_modified_at: 2020-06-09  18:47:59.77 
 
 ---
+
 Java를 개발하다보면 String에 대해서 별다른 고민없이 (“Some text” + “ added text”)와 같이 ‘+’기호를 통해 스트링을 더하곤 한다.  
 하지만 Java 개발자라면 고민을 더 해보고 Class를 선택해야한다. String과 StringBuilder, 그리고 StringBuffer를 어떤 경우에 사용하는지 확인해보자.
 
-----------
+---
 
 # 각 클래스의 특징
 
@@ -107,5 +108,5 @@ new Thread(() -> {
     StringBuilder.length: 76412
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI0MTQ1NTI5XX0=
+eyJoaXN0b3J5IjpbOTk4OTk3MjQ0XX0=
 -->
