@@ -1,5 +1,5 @@
 ---
-title: [MSSQL] JDBC 로 SP(StoredProcedue) 호출 시 발생하는 에러 해결 방법
+title: \[MSSQL] JDBC 로 SP(StoredProcedue) 호출 시 발생하는 에러 해결 방법
 permalink:  /danal/lg-pay/stored-procedure/error
 categories: 
    - java
@@ -58,5 +58,5 @@ mssql에서 conf(설정)에서 url 등록 시 포트 뒤에 사용하는 데이�
 
 mysql의 경우 포트 뒤에 /(슬래쉬)를 명시한뒤 DB명을 적지만 mssql의 경우 ;(세미콜론)을 명시한뒤 databaseName=[DB명]을 기술해야한다.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY3MzQ0OTAzXX0=
+eyJoaXN0b3J5IjpbNTQyMTU2MjNdfQ==
 -->
