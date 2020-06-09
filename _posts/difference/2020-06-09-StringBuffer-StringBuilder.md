@@ -1,6 +1,7 @@
 ---
 title: StringBuffer 와 StringBuilder의 차이점은 무엇인가? 왜 사용하는가?
 permalink: /difference/stringbuffer-stringbuilder
+
 categories: 
    - java
    - string
@@ -106,5 +107,5 @@ new Thread(() -> {
     StringBuilder.length: 76412
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3MTE5MTc1NV19
+eyJoaXN0b3J5IjpbMzI0MTQ1NTI5XX0=
 -->
