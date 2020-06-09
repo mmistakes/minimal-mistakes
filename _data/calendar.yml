@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Bundesjugendspiele entfallen",
-    "title": "Bundesjugendspiele entfallen",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NzRocTBvcHFrcDlwYXFrOXR2ZXBsaDIzZXEgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2020-06-08",
-      "date_time": null
-    },
-    "end": {
-      "date": "2020-06-09",
-      "date_time": null
-    },
-    "created": "2020-03-02T15:13:09.000Z",
-    "updated": "2020-05-20T03:55:47.002Z"
-  },
-  {
-    "image_path": null,
     "alt": "Brandwerder-Cup entfällt",
     "title": "Brandwerder-Cup entfällt",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2020-03-02T15:11:32.000Z",
     "updated": "2020-03-02T15:11:32.670Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Herbstferien ",
+    "title": "Herbstferien ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=M3VmY2tqa2QxY3AwMzNvaXZjc25vbGlhMHYgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2020-10-12",
+      "date_time": null
+    },
+    "end": {
+      "date": "2020-10-24",
+      "date_time": null
+    },
+    "created": "2020-03-11T12:12:20.000Z",
+    "updated": "2020-03-11T12:12:20.263Z"
   }
 ]
