@@ -1,8 +1,8 @@
 # main links
 main:
   - title: "About"
-    url: /about/
+    url: "#about"
   - title: "Services"
-    url: /services/
+    url: "#services"
   - title: "Clients"
-    url: /clients/
+    url: "#clients"
