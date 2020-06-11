@@ -4,7 +4,42 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: /assets/images/unsplash-image-6.jpg
-classes:
-  - landing
 author_profile: false
+feature_row1:
+  - image_path: /assets/images/bridge.jpg
+    alt: "Silicon Valley"
+    title: "About"
+    excerpt: "Bitflip Enterprises in a full-service tech consultancy based in the heart of Silicon Valley. We help our clients meet their goals with open source software and Offensive Security-certified penetration testers."
+    url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+feature_row2:
+  - image_path: /assets/images/sv.jpg
+    alt: "Silicon Valley"
+    title: "Services"
+    excerpt: "Our team is specialized in Backend Development, DevOps, Site Reliability Engineering and Penetration Testing. Get in touch for more information about this and other services."
+    url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+feature_row3:
+  - image_path: assets/images/psf.png
+    alt: "Python Software Foundation"
+    title: "Python Software Foundation"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+  - image_path: /assets/images/ots.png
+    alt: "Open Tech Strategies"
+    title: "Open Tech Strategies"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+  - image_path: /assets/images/you.jpg
+    alt: "you"
+    title: "You"
+    excerpt: "Get in touch for a free, 30-minute consultation."
+    btn_label: "Contact"
+    btn_class: "btn--primary"
+    url: "mailto:cristina@bitflipenterprises.com"
 ---
+{% include feature_row id="feature_row1" type="left" %}
+
+{% include feature_row id="feature_row2" type="right" %}
+
+{% include feature_row id="feature_row3"%}
