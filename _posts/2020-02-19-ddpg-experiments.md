@@ -10,6 +10,7 @@ toc: true
 toc_sticky: true
 author_profile: true
 classes: wide
+comments: true
 ---
 
 # Introduction
@@ -644,22 +645,34 @@ Here, we investigate how well a basic implementation of the DDPG algorithm fares
 
 ## Toy problems
 
-<figure class="third">
-	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/Pendulum-v0_EpisodeReturn.png" alt="">
-	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/MountainCarContinuous-v0_EpisodeReturn.png" alt="">
-	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/LunarLanderContinuous-v2_EpisodeReturn.png" alt="">
-	<figcaption>TODO: </figcaption>
+<figure class="second">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/Pendulum-v0_EpisodeReturn.png" alt="Pendulum-v0_EpisodeReturn">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/MountainCarContinuous-v0_EpisodeReturn.png" alt="MountainCarContinuous-v0_EpisodeReturn.png">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/LunarLanderContinuous-v2_EpisodeReturn.png" alt="LunarLanderContinuous-v2_EpisodeReturn.png">
+	<figcaption>Episode Return averaged over 3 seeds of the DDPG algorithm, trained on 3 Toys environments, namely Pendulum-v0, MountainCarContinuous-v0, and LunarLanderContinuous-v2</figcaption>
 </figure>
+The agent manages to learn a near optimal policy in 2 out of 3 environments.
+On MountainCarContinuous-v0, however, the agent struggles to achieve stable enough performance.
 
 ## Mujoco
-<figure class="third">
-	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/Hopper-v2_EpisodeReturn.svg" alt="">
-	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/HalfCheetah-v2_EpisodeReturn.svg" alt="">
-	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/Walker-v2_EpisodeReturn.svg" alt="" height="300px">
-	<figcaption>TODO: </figcaption>
+<figure class="second">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/Hopper-v2_EpisodeReturn.png" alt="">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/Walker2d-v2_EpisodeReturn.png" alt="">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/HalfCheetah-v2_EpisodeReturn.png" alt="">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/Ant-v2_EpisodeReturn.png" alt="">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/Humanoid-v2_EpisodeReturn.png" alt="">
+	<figcaption>Episode Return averaged over 3 seeds of the DDPG algorithm on 5 of the MuJoCo Robotics Simulator environments, with various degrees of difficulty.</figcaption>
 </figure>
 
 ## BulletEnv
+<figure class="second">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/HopperBulletEnv-v0_EpisodeReturn.png" alt="">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/Walker2DBulletEnv-v0_EpisodeReturn.png" alt="">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/HalfCheetahBulletEnv-v0_EpisodeReturn.png" alt="">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/AntBulletEnv-v0_EpisodeReturn.png" alt="">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/HumanoidBulletEnv-v0_EpisodeReturn.png" alt="">
+	<figcaption>TODO: </figcaption>
+</figure>
 
 ## Ablations studies and other detailed experiments
 
