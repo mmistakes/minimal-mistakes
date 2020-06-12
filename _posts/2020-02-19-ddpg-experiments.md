@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Deep Determinsitic Policy Gradients"
+title: "Deep Determinsitic Policy Gradient"
 tags:
   - Reinforcement Learning
   - Implementation
@@ -19,7 +19,7 @@ In the last few years, Deep Reinforcement Learning has shown promising results w
 	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/atari_2600_games.png" alt="">
 	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/alphago_lee_sedol.png" alt="">
 	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/roboschool_openai.gif" alt="" height="300px">
-	<figcaption>From left to right: Atari 2600 games, AlphaZero vs Lee Sedol, Roboschool Humanoid robot control. All assets are property of the respective parties, not mine.</figcaption>
+	<figcaption>From left to right: Atari 2600 games, AlphaZero vs Lee Sedol, Roboschool Humanoid robot control. All assets are the property of the respective parties, not mine.</figcaption>
 </figure>
 
 [TODO Fix image resolutions, maybe add Plan2Explore GIF instead haha]
@@ -418,10 +418,10 @@ More intuitively, let's assume we are a driver of a Rally car, and our counting 
 A good co-pilot would tell us the corners and straight lines to come as succinctly as possible, thus sparring us useless information that might instead confuse us and finish with a bad time.
 A bad co-pilot, however, would do just that, namely flood us with so many information at any given time that we would be unable to drive cool-headed and drive properly.
 
-This is unfortunately what happens when we just *naively* use our Q-Value network defined earlier, as was highlighted in the DQN paper [TODO: Add reference].
-To palliate this problem, Mnih et al. [TODO: Again ref. to DQN paper] introduced the concept of `target networks`, which was consequently integrated to the DDPG algorithm (and all those that followed later).
+This is unfortunately what happens when we just *naively* use our Q-Value network defined earlier, as was highlighted in the DQN paper (<a href="https://arxiv.org/abs/1312.5602">[1]</a>).
+To palliate this problem, Mnih et al. (<a href="https://arxiv.org/abs/1312.5602">[1]</a>) introduced the concept of `target networks`, which was consequently integrated to the DDPG algorithm (and all those that followed later).
 For each of the two neural network we have defined above, we create a "delayed copy".
-This "copy network" will slowly be updated to match the current network, so as to reduce the variance in the estimation provided by the Q-Value network for example.
+This "delayed network" will be slowly updated to match the current network, so as to reduce the variance in the estimation provided by the Q-Value network.
 As a result, the training process will become relatively stable, and our agent will exhibit some learning.
 
 Creating those copy of network is actually as easy as it sounds:
@@ -633,7 +633,7 @@ An important thing to note however, is that we actually implemented a few more "
 - **TODO:** Support for multiple Q-Value network function, which is mainly inspired from the Twin Delayed DDPG (<a href="https://arxiv.org/abs/1707.06347">[5]</a>). This was used to experimentally investigate the reduction of the overestimation bias by using multiple Q-Value network. A potential future experiment would be to train multiple different Q-Value networks over different subsets of the state-action space and use their average as the Q-Value network used to update the policy network itself.
 - Normalization for the policy and Q-Value network's network layers. In some __yet to determine conditions__, layer normalization seems to drastically improve the value learned by the Q-Value network, and helps achieve better performance than the standard neural network especially in complex environments.
 
-# Experiments
+# Experiments and Results
 
 We first start with some basic continuous action environments namely Pendulum-v0, InvertedPendulum-v0 and MountainCarContinuous-v0 of the OpenAI Gym basic environments.
 
@@ -644,7 +644,20 @@ Here, we investigate how well a basic implementation of the DDPG algorithm fares
 
 ## Toy problems
 
+<figure class="third">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/Pendulum-v0_EpisodeReturn.png" alt="">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/MountainCarContinuous-v0_EpisodeReturn.png" alt="">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/LunarLanderContinuous-v2_EpisodeReturn.png" alt="">
+	<figcaption>TODO: </figcaption>
+</figure>
+
 ## Mujoco
+<figure class="third">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/Hopper-v2_EpisodeReturn.svg" alt="">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/HalfCheetah-v2_EpisodeReturn.svg" alt="">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/Walker-v2_EpisodeReturn.svg" alt="" height="300px">
+	<figcaption>TODO: </figcaption>
+</figure>
 
 ## BulletEnv
 
