@@ -14,7 +14,7 @@ comments: true
 ---
 
 # Introduction
-In the last few years, Deep Reinforcement Learning has shown promising results when it comes to playing games from pixel (<a href="https://arxiv.org/abs/1312.5602">[1]</a>,<a href="https://arxiv.org/abs/2003.13350">[2]</a>), mastering quite a few board games such as Chess, Go, and Shogi (<a href="https://arxiv.org/abs/1712.01815">[3]</a>),as well as robotic control (<a href="https://arxiv.org/abs/1812.05905">[4]</a>, <a href="https://arxiv.org/abs/1707.06347">[5]</a>,  <a href="https://arxiv.org/abs/1802.09477">[6]</a>).
+In the last few years, Deep Reinforcement Learning (DRL) has shown promising results when it comes to playing games directly from pixels (<a href="https://arxiv.org/abs/1312.5602">[1]</a>,<a href="https://arxiv.org/abs/2003.13350">[2]</a>), mastering quite a few board games such as Chess, Go, and Shogi (<a href="https://arxiv.org/abs/1712.01815">[3]</a>),as well as robotic control (<a href="https://arxiv.org/abs/1812.05905">[4]</a>, <a href="https://arxiv.org/abs/1707.06347">[5]</a>,  <a href="https://arxiv.org/abs/1802.09477">[6]</a>).
 
 <figure class="third">
 	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/atari_2600_games.png" alt="">
@@ -27,10 +27,11 @@ In the last few years, Deep Reinforcement Learning has shown promising results w
 {: .notice--warning}
 
 In the later case, the control of the robot requires minutious and precise control of actuators. Depending on the complexity of the robot's frame, which can usually be reduced to its degree of  freedom, the complexity of the actuation rises exponentially, and it becomes hard to design a control system with classical control theory.
-The appealing point of Deep Reinforcement Learning in this case, is that it would allow us to learn such control system with respect to a desired task from scratch, by having the agent interact in the context of the given task and find an "optimal way of doing things" (optimal policy in the Reinforcement Learning / Control Theory jargon) which achieves the given objective.
+The appealing point of Deep Reinforcement Learning in this case, is that it would allow us to learn such control system, tailored to the desired task from scratch.
+This is expected to be achieved by having the agent interact with the environment of the given task, and find an "optimal way of doing things" (optimal policy in the Reinforcement Learning / Control Theory jargon) which achieves the given objective, simply via repetitive trial and errors, as an animal or a human would do.
 
-Easier said than done however, for now classical techniques such as policy gradients and (deep) Q-networks do not scale well to such high-dimensional tasks.
-At the cost of repeating myself, the concern here is mainly the continuous nature of the action space, which makes learning an satisfactory enough policy really difficult.
+Easier said than done, however, for techniques that can mostly be considered as classics now, such as policy gradients and (deep) Q-networks do not scale well to high-dimensional tasks, which we are interested in.
+At the cost a slight repetition, the concern here is mainly the continuous nature of the action space, which makes learning an satisfactory enough policy really difficult.
 Consequently, building on top of the Deep Q-Network (<a href="https://arxiv.org/abs/1312.5602">[1]</a>), the Deep Determinsitic Policy Gradients introduces a method which at least exhibits some learning in high-dimensional continuous action space case.
 
 DDPG was applied to numerous environments, from control theory toy problems, robotic manipulation environments, to autonomous driving tasks (<a href="https://arxiv.org/abs/1509.02971">[7]</a>), and demonstrated "results" which raised some hope of seeing some Deep Reinforcement Learning based agents applied game AI and even robotics.
@@ -43,7 +44,7 @@ We go over a simple implementation, starting from the neural networks definition
 
 # Background
 ## The MDP Framework
-The RL problem is usually formulated as a <a href="https://en.wikipedia.org/wiki/Markov_decision_process">Markov Decision Process</a>, which is composed of 5 elements:
+The RL problem is usually formulated as a <a href="https://en.wikipedia.org/wiki/Markov_decision_process">Markov Decision Process</a>, which is composed by the following elements:
   - $S$ is the state space, and each state $s \in S$ describe the current "situation" of the environment / agent.
   - $A$ is the action space.
   - The dynamics $P$ of the system, which maps from state-action pairs space $S \times A$ to a corresponding "arrival" state, which is also a member of $S$. More formally, we write $P: S \times A \rightarrow S$.
@@ -52,21 +53,24 @@ The RL problem is usually formulated as a <a href="https://en.wikipedia.org/wiki
 
 ## RL Agent's objective
 During its execution, an RL agent is tasked to maximize the expected cummulative reward it receives while interacting with the environment.
-Denoting the agent as $\mu_{\theta}$, its objective is formally expressed as follows:
+Denoting the agent as $\mu$, its objective is formally expressed as follows:
 
 $$
-J(\mu_{\theta}) = \mathbb{E}_{s_t \sim P(\cdot \vert s_{t-1}, a_{t-1}), a_t \sim \mu_{\theta}(\cdot \vert s_t)} \left[ \sum_{t=0}^{\infty} \gamma ^ t r(s_t,a_t)\right]
+J(\mu) = \mathbb{E}_{s_t \sim P(\cdot \vert s_{t-1}, a_{t-1}), a_t \sim \mu(\cdot \vert s_t)} \left[ \sum_{t=0}^{\infty} \gamma ^ t r(s_t,a_t)\right]
 $$
 
 Next, we go over how the maximization of this objective is tied with the neural networks.
-Namely, given that agent is represented by a neural network, how do we get the latter to output action that will result in a maximal cummulative result.
+Namely, given that the agent is represented by a neural network, how do we get the latter to output action that will result in a maximal cummulative result.
 
 # DDPG Algorithm: From theory to practice
 
 As the names gives it away, a crucial element of the DDPG is the policy gradient method.
 The later consist in updating the policy's weights to make actions that correspond to the highest value more likely.
 Moreover, this optimization rule will also make actions that correspond to low value less likely to be output by the policy network.
-Formally, the policy gradient can be obtained as follow:
+Consider the policy of the agent $\mu_{\theta}$ parameterized by the parameters (weigts) $\theta$.
+A deterministic policy is thus formally defined as $S \rightarrow A$, or more intuivively, as "a function which associates an action $a \in A$ to a state $s \in S".
+
+Following this, the policy gradient can be obtained as follows:
 
 $$
  \nabla_{\theta}J(\mu_{\theta}) = \mathbb{E}_{(s_t,a_t) \sim \rho_{\mu_\theta}} \left[
@@ -76,34 +80,27 @@ $$
 
 where $\rho_{\mu_{\theta}}$ state-action pair distribution induced by the policy $\mu_{\theta}$ and $Q^{\mu_\theta}$ is the action value function, which tells us how good it is to take action $a_t$ given the state $s_t$.
 
-[TODO: Add the note that policy gradient should actually be computed with respect to the advantage function but we go for simplicity here with the Q function instead.]
-[TODO: Any more simple way to introduce the concept of iteration when computing the gradient ?]
-{: .notice--warning}
-
-Once the gradient is computed, we update the weights of the policy network for each iteration using the rule
+Once the gradients of the weights $\theta$ are computed, we can update the weights of the policy network for each iteration using the rule
 
 $$
   \theta_{i+1} \leftarrow \alpha \theta_{i} + \alpha \nabla_{\theta_{i}}J(\mu_{\theta_{i}}),
 $$
 
-[TODO: This part is probably too early. Also separate the weights of policy and q value with different greek letters]
-{: .notice--warning}
-
 where $\theta_i$ represents the weights of the policy at the iteration $i$ and $\alpha$ is the learning rate.
-Intuitively, this will nudge the overall policy so as to (1) output action that achieve higher rewards more often while (2) avoid action that result in low rewards.
+Intuitively, this will nudge the overall policy so as to (1) output actions that achieve higher rewards more often, while (2) avoid actions that result in low rewards.
+This correspond to the objective of the RL agent defined above, which was to maximize the expected returns.
 
-Consequently, we need a good way to approximate the action-value.
-To do so, the paper proposes to use "deep" neural networks as function approximator, which we shall refer to as Q-Value network from now on.
-The Q-Value network is formally defined as $Q: S \times A \rightarrow \mathbb{R}$
+Still, the policy gradient method also requires a good enough estimation of how good an arbitrary action is given a state.
+This is the role of the Q-value network $Q$.
+The Q-Value network is formally defined as $Q: S \times A \rightarrow \mathbb{R}$.
 More pragmatically, it takes a state-action pair $(s_t,a_t)$ as input and outputs a real value which represents how good the action $a_t$ was given the state $s_t$.
-Of course, to properly guide the actor's policy, we need the Q-Value network as accurate as possible.
-To update the Q-Value network, we use the Temporal Difference combined with the Q-learning method and adapted to the continuous action space:
+Therefore, to properly guide the actor's policy, we need the Q-Value network to be as accurate as possible.
 
-The part above concerning the Q learning is not that clear. What is the theory behind it ? Where are the weights ?
-{: .notice--warning}
+Similarly to the policy, we define the Q-value as a neural network $Q_{\phi}$ parameterized by the weights $\phi$.
+To update said neural network, we use the Temporal Difference combined with the Q-learning method and adapted to the continuous action space:
 
 $$
- Q^{\mu}(s_t,a_t) = \mathbb{E}_{\rho_{\mu}}
+ Q_{\phi}(s_t,a_t) = \mathbb{E}_{\rho_{\mu}}
 $$
 
 TODO: TD / Bellman update + Loss equation for critic network
@@ -702,24 +699,4 @@ Any other optim you can think of ?
 - The numerous creators of the various libraries used for this article.
 
 {% if page.comments %}
-  <div id="disqus_thread"></div>
-  <script>
-
-  /**
-  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-  /*
-  var disqus_config = function () {
-  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-  };
-  */
-  (function() { // DON'T EDIT BELOW THIS LINE
-  var d = document, s = d.createElement('script');
-  s.src = 'https://dosssman-github-io.disqus.com/embed.js';
-  s.setAttribute('data-timestamp', +new Date());
-  (d.head || d.body).appendChild(s);
-  })();
-  </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 {% endif %}
