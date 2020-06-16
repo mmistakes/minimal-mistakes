@@ -296,9 +296,9 @@ defaults:
     values:
       layout: single
       author_profile: true
-      comments: true
       share: true
       related: true
+      comments: true
   # _projects
   - scope:
       path: "_projects"
@@ -316,7 +316,6 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comments: true
   # _publications
   - scope:
       path: "_publications"
@@ -325,4 +324,3 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comments: true

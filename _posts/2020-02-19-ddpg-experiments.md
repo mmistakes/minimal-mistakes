@@ -10,7 +10,6 @@ toc: true
 toc_sticky: true
 author_profile: true
 classes: wide
-comments: true
 ---
 
 # Introduction
@@ -697,6 +696,3 @@ Any other optim you can think of ?
 - Costa's CleanRL for the clean approach to source code. My own usually tend to become too complex.
 - OpenAI Baselines for the various helper function such as the noise, etc...
 - The numerous creators of the various libraries used for this article.
-
-{% if page.comments %}
-{% endif %}
