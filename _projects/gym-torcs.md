@@ -17,7 +17,7 @@ classes: wide
 # Motivation
 
 <figure style="width: 440px" class="align-right">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/projects/gym_torcs/Torcs1.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/projects/gym_torcs/Torcs1.png" alt="">
   <figcaption>A screenshot of the Torcs Racing Cart Simulator in action. <a href="https://sourceforge.net/projects/torcs/">Source</a></figcaption>
 </figure>
 
@@ -92,26 +92,3 @@ A lesson learned would be that for future projects, a more thorough assessment o
 Similarly, avoiding dwelling on non-critical, and especially non-research related implementation details would be preferable.
 
 Nevertheless, fiddling around the simulator and the Gym wrapper was probably an invaluable experience after all, but some part of me cannot help but think there was a better and more efficient method in the first place.
-
-{% if page.comments %}
-  <div id="disqus_thread"></div>
-  <script>
-
-  /**
-  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-  /*
-  var disqus_config = function () {
-  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-  };
-  */
-  (function() { // DON'T EDIT BELOW THIS LINE
-  var d = document, s = d.createElement('script');
-  s.src = 'https://dosssman-github-io.disqus.com/embed.js';
-  s.setAttribute('data-timestamp', +new Date());
-  (d.head || d.body).appendChild(s);
-  })();
-  </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-{% endif %}

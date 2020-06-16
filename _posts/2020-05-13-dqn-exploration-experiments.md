@@ -7,7 +7,6 @@ tags:
   - Research
   - DQN
   - Exploration
-comments: true
 classes: wide
 ---
 
@@ -67,7 +66,7 @@ For the linearly annealed $\epsilon$-greedy scheme, however, the $\epsilon$-cons
 
 ### 1. CartPole-v0
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/dqn_exploration/dqn_exploration_cartpole.svg" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/dqn_exploration/dqn_exploration_cartpole.svg" alt="">
 
 First, given the *straightforward* nature of this toy problem, *greedy* exploration schemes seem to work best.
 
@@ -76,7 +75,7 @@ In retrospect, decaying over 80% of the total training step might be overly caut
 
 ### 2. MountainCar-v0
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/dqn_exploration/dqn_exploration_mountaincar.svg" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/dqn_exploration/dqn_exploration_mountaincar.svg" alt="">
 
 Slightly similar to the `CartPole-v0` environment, the *greedy* policy achieves the best reward in the fastest.
 Surprisingly, the Boltzmann-based exploration scheme, although supposedly greedy, has the worst performance in this environment.
@@ -86,7 +85,7 @@ Here again, having the $\epsilon$ decay faster would likely result in a faster c
 
 ### 3. Acrobot-v1
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/dqn_exploration/dqn_exploration_acrobot.svg" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/dqn_exploration/dqn_exploration_acrobot.svg" alt="">
 
 Again, despite being mostly identical to the pure *greedy* exploration scheme, the Botzmann=based exploration achieves the lowest performance.
 The purely *greedy* policy still achieves the highest return, with the *non-annealed $\epsilon$-greedy*, then the *linearly annealed $\epsilon$-greedy* policy following closely behind, in that order.
@@ -96,7 +95,7 @@ $\epsilon$-greedy policy pay a price in sample efficiency in those case.
 
 ### 4. LunarLander-v2
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/dqn_exploration/dqn_exploration_lunarlanderv2.svg" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/dqn_exploration/dqn_exploration_lunarlanderv2.svg" alt="">
 
 In this environment, the greedier the policy, the higher the final performance.
 This is supported by the fact that the *non-annealed $\epsilon$-greedy* policy and the *greedy* policy achieved the "best" convergence as well as final results.
@@ -108,14 +107,14 @@ Finally, the *linearly annealed $\epsilon$-greedy* exhibits a high variance and 
 Next are some experiments
 
 ### 5. PongNoFrameskip-v4
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/dqn_exploration/dqn_exploration_pong_noframeskip_v4.svg" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/dqn_exploration/dqn_exploration_pong_noframeskip_v4.svg" alt="">
 
 The full experiment results can be accessed in the following <a href="https://app.wandb.ai/dosssman/drlforge.dqn.exploration/reports/Impact-of-different-exploration-strategies-in-DQN--Vmlldzo5NzY4OA">WANDB project</a>.
 
 # Concluding Remarks
 
 <figure style="width: 30%" class="align-right">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/dqn_exploration/BoltzmanEqRandomPolicy.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/posts/dqn_exploration/BoltzmanEqRandomPolicy.png" alt="">
   <figcaption>Illustrating how the Boltzmann-based agent's policy is similar to a random policy: after passing those Q values to the Categorical distribution, the probability of the actions will be almost equal.</figcaption>
 </figure>
 
@@ -130,26 +129,3 @@ As the complexity rises, however, $\epsilon$-greedy policy ultimately comes out 
 - A cleaned up version of the source code.
 - Experimenting with the <a href="https://arxiv.org/abs/1706.01905">Parameter Space Noise for Exploration</a> technique, which happened to work quite well in some DDPG experiments.
 - Further investigating the Boltzmann-based with a temperature-based sampling to relax the action distribution a little bit more.
-
-{% if page.comments %}
-  <div id="disqus_thread"></div>
-  <script>
-
-  /**
-  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-  /*
-  var disqus_config = function () {
-  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-  };
-  */
-  (function() { // DON'T EDIT BELOW THIS LINE
-  var d = document, s = d.createElement('script');
-  s.src = 'https://dosssman-github-io.disqus.com/embed.js';
-  s.setAttribute('data-timestamp', +new Date());
-  (d.head || d.body).appendChild(s);
-  })();
-  </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-{% endif %}
