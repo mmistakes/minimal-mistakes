@@ -2,7 +2,7 @@
 title: "Quick-Start Guide"
 permalink: /docs/quick-start-guide/
 excerpt: "How to quickly install and setup Minimal Mistakes for use with GitHub Pages."
-last_modified_at: 2019-08-20T21:36:11-04:00
+last_modified_at: 2020-04-27
 redirect_from:
   - /theme-setup/
 toc: true
@@ -16,7 +16,7 @@ Minimal Mistakes has been developed as a [Gem-based theme](http://jekyllrb.com/d
 
 ## Installing the theme
 
-If you're running Jekyll v3.5+ and self-hosting you can quickly install the theme as a Ruby gem.
+If you're running Jekyll v3.7+ and self-hosting you can quickly install the theme as a Ruby gem.
 
 [^structure]: See [**Structure** page]({{ "/docs/structure/" | relative_url }}) for a list of theme files and what they do.
 
@@ -38,7 +38,7 @@ To install as a Gem-based theme:
    gem "minimal-mistakes-jekyll"
    ```
 
-2. Fetch and update bundled gems by running the following [Bundler](http://bundler.io/) command:
+2. Fetch and update bundled gems by running the following [Bundler](https://bundler.io/) command:
 
    ```bash
    bundle
@@ -68,17 +68,17 @@ To install as a remote theme:
 
 2. Add `jekyll-include-cache` to the `plugins` array of your `_config.yml`.
 
-3. Fetch and update bundled gems by running the following [Bundler](http://bundler.io/) command:
+3. Fetch and update bundled gems by running the following [Bundler](https://bundler.io/) command:
 
    ```bash
    bundle
    ```
 
-4. Add `remote_theme: "mmistakes/minimal-mistakes@4.19.1"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
+4. Add `remote_theme: "mmistakes/minimal-mistakes@4.19.3"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
 
 You may also optionally specify a branch, [tag](https://github.com/mmistakes/minimal-mistakes/tags), or commit to use by appending an @ and the Git ref (e.g., `mmistakes/minimal-mistakes@4.9.0` or `mmistakes/minimal-mistakes@bbf3cbc5fd64a3e1885f3f99eb90ba92af84063d`). This is useful when rolling back to older versions of the theme. If you don't specify a Git ref, the latest on `master` will be used.
 
-**Looking for an example?** Fork the [Minimal Mistakes remote theme starter](https://github.com/mmistakes/mm-github-pages-starter) for the quickest method of getting a GitHub Pages hosted site up and running. Replace sample content with your own and configure as needed.
+**Looking for an example?** Use the [Minimal Mistakes remote theme starter](https://github.com/mmistakes/mm-github-pages-starter/generate) for the quickest method of getting a GitHub Pages hosted site up and running. Generate a new repository from the starter, replace sample content with your own, and configure as needed.
 {: .notice--info}
 
 ---
@@ -169,7 +169,7 @@ Start by removing the following folders and any files within them:
 |  └── js
 ```
 
-You won't need these anymore as they're bundled with the theme gem --- unless you intend to [override them](http://jekyllrb.com/docs/themes/#overriding-theme-defaults).
+You won't need these anymore as they're bundled with the theme gem --- unless you intend to [override them](https://jekyllrb.com/docs/themes/#overriding-theme-defaults).
 
 **Note:** When clearing out the `assets` folder be sure to leave any files you've added and need. This includes images, CSS, or JavaScript that aren't already [bundled in the theme](https://github.com/mmistakes/minimal-mistakes/tree/master/assets). 
 {: .notice--warning}
@@ -177,7 +177,7 @@ You won't need these anymore as they're bundled with the theme gem --- unless yo
 From `v4.5.0` onwards, you don't have to maintain a copy of the default data files viz. `_data/ui-text.yml` and `_data/navigation.yml` either.
 The default files are read-in automatically via the [`jekyll-data`](https://github.com/ashmaroli/jekyll-data) plugin.
 
-If you customized any of these files leave them alone, and only remove the untouched ones. If done correctly your modified versions should [override](http://jekyllrb.com/docs/themes/#overriding-theme-defaults) the versions bundled with the theme and be used by Jekyll instead.
+If you customized any of these files leave them alone, and only remove the untouched ones. If done correctly your modified versions should [override](https://jekyllrb.com/docs/themes/#overriding-theme-defaults) the versions bundled with the theme and be used by Jekyll instead.
 
 #### Update Gemfile
 

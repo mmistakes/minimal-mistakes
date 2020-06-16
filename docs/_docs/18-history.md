@@ -5,24 +5,38 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2020-03-30T16:27:33-04:00
+last_modified_at: 2020-06-06T11:48:13-04:00
 toc: false
 ---
 
-## Unreleased
+## [4.19.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.19.3)
 
 ### Enhancements
 
+- Update GreedyNav.js to reduce masthead link overflow/shifting on mobile devices. [#2551](https://github.com/mmistakes/minimal-mistakes/issues/2551)
+- Replace `<section id="custom-comments"></section>` in `comments.html` include and add `custom_scripts.html` include for loading custom comment provider JavaScript in the footer. [#2549](https://github.com/mmistakes/minimal-mistakes/issues/2549)
+- Move page date Liquid to include. [#2544](https://github.com/mmistakes/minimal-mistakes/pull/2544)
+- Strip trailing whitespace in `seo_description`. [#2542](https://github.com/mmistakes/minimal-mistakes/pull/2542)
+- Improve sticky sidebar's appearance with short content. [#2514](https://github.com/mmistakes/minimal-mistakes/pull/2514)
+
+## [4.19.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.19.3)
+
+### Enhancements
+
+- Add support for bilibili videos in [responsive video helper](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#responsive-video-embed). [#2512](https://github.com/mmistakes/minimal-mistakes/pull/2512)
+- Add Myanmar (Burmese) localized UI text strings. [#2500](https://github.com/mmistakes/minimal-mistakes/pull/2500)
 - Improve author links underline on hover. [#2472](https://github.com/mmistakes/minimal-mistakes/pull/2472)
 - Add documentation for applying Front Matter defaults to jekyll-archives pages. [#2466](https://github.com/mmistakes/minimal-mistakes/pull/2466)
-- Add missing Vietnamese translations [#2459](https://github.com/mmistakes/minimal-mistakes/pull/2459)
-- Fix Finnish ocalized UI text strings. [#2455](https://github.com/mmistakes/minimal-mistakes/pull/2455)
+- Add missing Vietnamese translations. [#2459](https://github.com/mmistakes/minimal-mistakes/pull/2459) [#2486](https://github.com/mmistakes/minimal-mistakes/pull/2486)
+- Fix Finnish localized UI text strings. [#2455](https://github.com/mmistakes/minimal-mistakes/pull/2455)
 - Clarify documentation that Lunr only searches documents in collections. [#2450](https://github.com/mmistakes/minimal-mistakes/pull/2450)
 - Add guide on applying Front Matter defaults to jekyll-archives pages [#2466](https://github.com/mmistakes/minimal-mistakes/pull/2466)
 
 ### Bug Fixes
 
+- Fix typo in configuration documentation. [#2497](https://github.com/mmistakes/minimal-mistakes/pull/2497)
 - Fix "Follow menu falls under post links" on small screens. [#2479](https://github.com/mmistakes/minimal-mistakes/issues/2479)
+- Hide index page from page-archive. [#2482](https://github.com/mmistakes/minimal-mistakes/pull/2482)
 
 ## [4.19.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.19.1)
 
