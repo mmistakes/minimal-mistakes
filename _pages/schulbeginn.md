@@ -27,7 +27,7 @@ Die wichtigsten Daten zum Schuljahr **2020/21** in einem Überblick.
 | Freitag, 19.09.2019 bis Freitag, 02.10.2019  | [<i class="fa fa-file-text-o">&nbsp;</i>**Anmeldung**](#anmeldung) der Schulanfänger*innen im Sekretariat. |
 |  | **Hospitation:** Sie können in der Schule hospitieren und sich mit den Abläufen vertraut machen. Schnuppern Sie gerne in den Schulalltag einer Klasse hinein. Bitte vereinbaren Sie hierzu einen Termin im Sekretariat.  |
 | Dienstag, 31.07.2020 | Melden Sie Ihr Kind rechtzeitig zur [<i class="fa fa-child">&nbsp;</i>**Hortbetreuung (eFöB)**](#hort) an, so dass Ihr Kind am 01.08.2020 von unserem Hort betreut werden kann.  |
-| Samstag, 15.08.2020 | Endlich! Wir feiern die Einschulung in der Aula |
+| Freitag, 14.08.2020 und Samstag, 15.08.2020 | Endlich! Wir feiern die Einschulung in der Sporthalle |
 | Montag, 17.08.2020 | Der **erste Schultag.** |
 
 {{comment}}<!--
