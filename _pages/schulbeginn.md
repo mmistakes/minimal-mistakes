@@ -26,7 +26,7 @@ Die wichtigsten Daten zum Schuljahr **2020/21** in einem Überblick.
 | | Ihr Kind wurde im Zeitraum vom 1. Oktober 2013 bis zum 30. September 2014 geboren? Herzlichen Glückwunsch zu Ihrem baldigen **Schulkind**. |
 | Freitag, 19.09.2019 bis Freitag, 02.10.2019  | [<i class="fa fa-file-text-o">&nbsp;</i>**Anmeldung**](#anmeldung) der Schulanfänger*innen im Sekretariat. |
 |  | **Hospitation:** Sie können in der Schule hospitieren und sich mit den Abläufen vertraut machen. Schnuppern Sie gerne in den Schulalltag einer Klasse hinein. Bitte vereinbaren Sie hierzu einen Termin im Sekretariat.  |
-| Dienstag, 31.07.2020 | Melden Sie Ihr Kind rechtzeitig zur [<i class="fa fa-child">&nbsp;</i>**Hortbetreuung**](#hort) an, so dass Ihr Kind am 01.08.2020 von unserem Hort betreut werden kann.  |
+| Dienstag, 31.07.2020 | Melden Sie Ihr Kind rechtzeitig zur [<i class="fa fa-child">&nbsp;</i>**Hortbetreuung (eFöB)**](#hort) an, so dass Ihr Kind am 01.08.2020 von unserem Hort betreut werden kann.  |
 | Samstag, 15.08.2020 | Endlich! Wir feiern die Einschulung in der Aula |
 | Montag, 17.08.2020 | Der **erste Schultag.** |
 
