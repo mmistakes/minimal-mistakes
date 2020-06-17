@@ -24,7 +24,7 @@ sidebar:
 Liebe Eltern,
 
 Die Zeugnisausgabe findet in diesem Jahr unter besonderen Bedingungen statt. Um die
-Vorgaben zur Eindämmung der Corona-Pandemie einzuhalten, werden wir letzte
+Vorgaben zur Eindämmung der Corona-Pandemie einzuhalten, werden wir die letzte
 Schulwoche nutzen, um die Zeugnisse auszugeben.
 Dies geschieht am Dienstag, 22.06. und Mittwoch, 23.06.2020 am Ende des Unterrichts.
 
