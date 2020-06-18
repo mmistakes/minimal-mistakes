@@ -47,6 +47,7 @@ en: &DEFAULT_EN
   loading_label              : "Loading..."
   search_label_text          : "Enter your search term..."
   search_placeholder_text    : "Enter your search term..."
+  search_algolia_no_results  : "No results"
   results_found              : "Result(s) found"
   back_to_top                : "Back to top"
 en-US:
@@ -105,6 +106,7 @@ es: &DEFAULT_ES
   loading_label              : "Cargando..."
   search_label_text          : "Términos de búsqueda..."
   search_placeholder_text    : "Términos de búsqueda..."
+  search_algolia_no_results  :
   results_found              : "resultado(s) encontrado(s)"
   back_to_top                : "Volver arriba"
 es-ES:
@@ -159,6 +161,7 @@ fr: &DEFAULT_FR
   loading_label              : "Chargement..."
   search_label_text          :
   search_placeholder_text    : "Entrez votre recherche..."
+  search_algolia_no_results  :
   results_found              : "Résultat(s) trouvé(s)"
   back_to_top                : "Retour en haut"
 fr-FR:
@@ -214,6 +217,7 @@ tr: &DEFAULT_TR
   comment_error_msg          : "Maalesef bir hata oluştu. Lütfen zorunlu olan tüm alanları doldurduğunuzdan emin olun ve sonrasında tekrar deneyin."
   loading_label              : "Yükleniyor..."
   search_label_text          :
+  search_algolia_no_results  :
 tr-TR:
   <<: *DEFAULT_TR
 
@@ -263,6 +267,7 @@ pt: &DEFAULT_PT
   comment_error_msg          : "Lamento, ocorreu um erro na sua submissão. Por favor verifique se todos os campos obrigatórios estão corretamente preenchidos e tente novamente."
   loading_label              : "A carregar..."
   search_label_text          :
+  search_algolia_no_results  :
 pt-PT:
   <<: *DEFAULT_PT
 # Brazilian Portuguese
@@ -311,6 +316,7 @@ pt-BR:
   loading_label              : "Carregando..."
   search_label_text          :
   search_placeholder_text    : "Pesquisar..."
+  search_algolia_no_results  :
   results_found              : "Resultado(s) encontrado(s)"
   back_to_top                : "Voltar para o topo"
 
@@ -361,6 +367,7 @@ it: &DEFAULT_IT
   loading_label              : "Caricamento..."
   search_label_text          :
   search_placeholder_text    : "Inserisci termini di ricerca..."
+  search_algolia_no_results  :
   results_found              : "Risultati"
   back_to_top                : "Vai su"
 it-IT:
@@ -413,6 +420,7 @@ zh: &DEFAULT_ZH_HANS
   loading_label              : "正在加载..."
   search_label_text          :
   search_placeholder_text    : "输入您要搜索的关键词..."
+  search_algolia_no_results  :
   results_found              : "条记录匹配"
   back_to_top                : "返回顶部"
 zh-CN:
@@ -464,6 +472,7 @@ zh-TW: &DEFAULT_ZH_HANT
   comment_error_msg          : "抱歉，部份資料輸入有問題。請確認資料填寫正確後再試一次。"
   loading_label              : "載入中..."
   search_label_text          :
+  search_algolia_no_results  :
 zh-HK:
   <<: *DEFAULT_ZH_HANT
 
@@ -514,6 +523,7 @@ de: &DEFAULT_DE
   loading_label              : "Lade..."
   search_label_text          :
   search_placeholder_text    : "Suchbegriff eingeben..."
+  search_algolia_no_results  :
   results_found              : "Ergebnis(se) gefunden"
 de-DE:
   <<: *DEFAULT_DE
@@ -574,6 +584,7 @@ ne: &DEFAULT_NE
   comment_error_msg          : "माफ गर्नुहोस्, तपाईंको टिप्पणी त्रुटि थियो।सबै आवश्यक जानकारीहरु पूरा गरिएको छ भने निश्चित गर्नुहोस् र फेरि प्रयास गर्नुहोस्।"
   loading_label              : "लोड हुँदैछ ..."
   search_label_text          :
+  search_algolia_no_results  :
 ne-NP:
   <<: *DEFAULT_NE
 
@@ -624,6 +635,7 @@ ko: &DEFAULT_KO
   loading_label              : "로딩중..."
   search_label_text          :
   search_placeholder_text    : "검색어를 입력하세요..."
+  search_algolia_no_results  :
   results_found              : "개 결과 발견"
   back_to_top                : "맨 위로 이동"
 ko-KR:
@@ -676,6 +688,7 @@ ru: &DEFAULT_RU
   loading_label              : "Отправка..."
   search_label_text          :
   search_placeholder_text    : "Введите поисковый запрос..."
+  search_algolia_no_results  :
   results_found              : "Найдено"
 ru-RU:
   <<: *DEFAULT_RU
@@ -726,6 +739,7 @@ lt: &DEFAULT_LT
   comment_error_msg          : "Atleiskite, įvyko netikėta klaida įrašant komentarą. Pasitikrinkite ar užpildėte visus būtinus laukus ir pamėginkite dar kartą."
   loading_label              : "Kraunama..."
   search_label_text          :
+  search_algolia_no_results  :
 lt-LT:
   <<: *DEFAULT_LT
 
@@ -776,6 +790,7 @@ gr: &DEFAULT_GR
   loading_label              : "Φόρτωση..."
   search_label_text          :
   search_placeholder_text    : "Εισάγετε όρο αναζήτησης..."
+  search_algolia_no_results  :
   results_found              : "Αποτελέσματα"
 gr-GR:
   <<: *DEFAULT_GR
@@ -827,6 +842,7 @@ sv: &DEFAULT_SV
   loading_label              : "Laddar..."
   search_label_text          :
   search_placeholder_text    : "Fyll i sökterm..."
+  search_algolia_no_results  :
   results_found              : "Resultat funna"
   back_to_top                : "Tillbaka till toppen"
 sv-SE:
@@ -881,6 +897,7 @@ nl: &DEFAULT_NL
   loading_label              : "Laden..."
   search_label_text          : "Geef uw zoekterm in..."
   search_placeholder_text    : "Geef uw zoekterm in..."
+  search_algolia_no_results  :
   results_found              : "Resultaat gevonden"
   back_to_top                : "Terug naar boven"
 nl-BE:
@@ -934,6 +951,7 @@ id: &DEFAULT_ID
   comment_error_msg          : "Maaf, ada kesalahan pada submisi Anda. Pastikan seluruh kolom sudah dilengkapi dan coba kembali."
   loading_label              : "Sedang meload..."
   search_label_text          :
+  search_algolia_no_results  :
 id-ID:
   <<: *DEFAULT_ID
 
@@ -984,6 +1002,7 @@ vi: &DEFAULT_VI
   loading_label              : "Đang tải..."
   search_label_text          : "Nhập từ khóa cần tìm..."
   search_placeholder_text    : "Nhập từ khóa cần tìm..."
+  search_algolia_no_results  :
   results_found              : "Kết quả tìm được"
   back_to_top                : "Lên đầu trang"
 vi-VN:
@@ -1036,6 +1055,7 @@ da: &DEFAULT_DA
   loading_label              : "Indlæser..."
   search_label_text          :
   search_placeholder_text    : "Hvad leder du efter..."
+  search_algolia_no_results  :
   results_found              : "Resultat(er) fundet"
   back_to_top                : "Tilbage til toppen"
 da-DK:
@@ -1087,6 +1107,7 @@ pl: &DEFAULT_PL
   comment_error_msg          : "Niestety wystąpił błąd. Proszę upewnij się, że wszystkie wymagane pola zostały wypełnione i spróbuj ponownie."
   loading_label              : "Trwa ładowanie strony..."
   search_label_text          :
+  search_algolia_no_results  : "Brak wyników"
 pl-PL:
   <<: *DEFAULT_PL
 
@@ -1137,6 +1158,7 @@ ja: &DEFAULT_JA
   loading_label              : "読み込み中..."
   search_label_text          :
   search_placeholder_text    : "検索キーワードを入力してください..."
+  search_algolia_no_results  :
   results_found              : "件"
 ja-JP:
   <<: *DEFAULT_JA
@@ -1188,6 +1210,7 @@ sk: &DEFAULT_SK
   loading_label              : "Načítava sa..."
   search_label_text          :
   search_placeholder_text    : "Zadaj hľadaný výraz..."
+  search_algolia_no_results  :
   results_found              : "Nájdených výsledkov"
   back_to_top                : "Na začiatok stránky"
 sk-SK:
@@ -1240,6 +1263,7 @@ hu: &DEFAULT_HU
   loading_label              : "Betöltés..."
   search_label_text          :
   search_placeholder_text    : "Keresendő szöveg..."
+  search_algolia_no_results  :
   results_found              : "Találatok:"
   back_to_top                : "Oldal tetejére"
 hu-HU:
@@ -1292,6 +1316,7 @@ ro: &DEFAULT_RO
   loading_label              : "Se încarcă..."
   search_label_text          :
   search_placeholder_text    : "Caută ceva..."
+  search_algolia_no_results  :
   results_found              : "Rezultate găsite"
   back_to_top                : "Înapoi în susul paginii"
 ro-RO:
@@ -1344,6 +1369,7 @@ pa: &DEFAULT_PA
   loading_label              : "ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ..."
   search_label_text          : "ਖੋਜ"
   search_placeholder_text    : "ਆਪਣੀ ਖੋਜ ਦੇ ਸ਼ਬਦ ਨੂੰ ਦਰਜ ਕਰੋ..."
+  search_algolia_no_results  :
   results_found              : "ਨਤੀਜਾ ਮਿਲਿਆ/ਮਿਲੇ"
   back_to_top                : "ਵਾਪਸ ਚੋਟੀ 'ਤੇ ਜਾਓ"
 pa-IN:
@@ -1395,6 +1421,7 @@ fa: &DEFAULT_FA
   loading_label              : "...بارگذاری"
   search_label_text          :
   search_placeholder_text    : "...عبارت جستجوی خود را وارد کنید"
+  search_algolia_no_results  :
   results_found              : "نتایج"
   back_to_top                : "بازگشت به بالا"
 fa-IR:
@@ -1448,6 +1475,7 @@ ml: &DEFAULT_ML
   loading_label              : "ലോഡിംഗ്..."
   search_label_text          :
   search_placeholder_text    : "നിങ്ങളുടെ തിരയൽ പദം നൽകുക..."
+  search_algolia_no_results  :
   results_found              : "ഫലം (കൾ) കണ്ടെത്തി"
   back_to_top                : "മുകളിലേയ്ക്ക്"
 ml-IN:
@@ -1500,6 +1528,7 @@ th: &DEFAULT_TH
   loading_label              : "กำลังโหลด..."
   search_label_text          :
   search_placeholder_text    : "ใส่คำค้นหาของคุณ..."
+  search_algolia_no_results  :
   results_found              : "ผลการค้นหา พบ"
   back_to_top                : "กลับด้านบน"
 th-TH:
@@ -1551,6 +1580,7 @@ hi: &DEFAULT_HI
   loading_label              : "लोड हो रहा है..."
   search_label_text          : "खोज"
   search_placeholder_text    : "अपना खोज शब्द दर्ज करें..."
+  search_algolia_no_results  :
   results_found              : "परिणाम मिला/मिले"
   back_to_top                : "शीर्ष पर वापस"
 hi-IN:
@@ -1603,6 +1633,7 @@ ca: &DEFAULT_CA
   loading_label              : "Carregant..."
   search_label_text          : "Introdueix termes per cercar..."
   search_placeholder_text    : "Introdueix termes per cercar..."
+  search_algolia_no_results  :
   results_found              : "resultat(s)"
   back_to_top                : "Torna a dalt"
 ca-ES:
@@ -1649,6 +1680,7 @@ ga: &DEFAULT_GA
   loading_label              : "Lódáil..."
   search_label_text          : "Cuir do chuardach isteach..."
   search_placeholder_text    : "Cuir do chuardach isteach..."
+  search_algolia_no_results  :
   results_found              : "Torthaí aimsithe"
   back_to_top                : "Ar ais go barr"
 ga-IE:
@@ -1702,6 +1734,7 @@ fi: &DEFAULT_FI
   loading_label              : "Ladataan..."
   search_label_text          : "Hakusana..."
   search_placeholder_text    : "Hakusana..."
+  search_algolia_no_results  :
   results_found              : "Tulosta"
   back_to_top                : "Ylös"
 
@@ -1752,6 +1785,7 @@ my: &DEFAULT_MY
   loading_label              : "တင်နေသည်..."
   search_label_text          : "သင့်ရှာဖွေရေးဝေါဟာရကိုရိုက်ထည့်ပါ..."
   search_placeholder_text    : "သင့်ရှာဖွေရေးဝေါဟာရကိုရိုက်ထည့်ပါ..."
+  search_algolia_no_results  :
   results_found              : "ရလဒ်(များ)ကိုတွေ့ရှိခဲ့သည်"
   back_to_top                : "အပေါ်သို့ပြန်သွား"
 my-MM:
