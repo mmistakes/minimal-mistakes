@@ -2,7 +2,7 @@
 title: "GymTorcs"
 excerpt: "An automation-friendly, custom OpenAI Gym environment wrapper of the Torcs Racing Car Simulator for Reinforcement Learning research."
 header:
-  teaser: assets/images/projects/gym_torcs/Torcs1.png
+  teaser: assets/projects/gym_torcs/Torcs1.png
 
 tags:
   - Reinforcement Learning
