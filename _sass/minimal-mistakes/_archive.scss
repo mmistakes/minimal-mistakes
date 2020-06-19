@@ -240,6 +240,8 @@
   }
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@600&display=swap&text=%E2%88%9A-1%2A.%24_');
+
 .feature__item {
   position: relative;
   margin-bottom: 2em;
@@ -274,6 +276,13 @@
   .archive__item-body {
     padding-left: gutter(1 of 12);
     padding-right: gutter(1 of 12);
+  }
+
+  .archive__item-title {
+    font-size: 3.5em;
+    font-family: 'Kodchasan', sans-serif;
+    color: #346295;
+    margin: 0;
   }
 
   a.btn::before {
