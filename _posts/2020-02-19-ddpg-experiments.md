@@ -9,7 +9,8 @@ tags:
 toc: true
 toc_sticky: true
 author_profile: true
-classes: wide
+# classes: wide
+comments: true
 ---
 
 # Introduction
@@ -67,7 +68,7 @@ As the names gives it away, a crucial element of the DDPG is the policy gradient
 The later consist in updating the policy's weights to make actions that correspond to the highest value more likely.
 Moreover, this optimization rule will also make actions that correspond to low value less likely to be output by the policy network.
 Consider the policy of the agent $\mu_{\theta}$ parameterized by the parameters (weigts) $\theta$.
-A deterministic policy is thus formally defined as $S \rightarrow A$, or more intuivively, as "a function which associates an action $a \in A$ to a state $s \in S".
+A deterministic policy is thus formally defined as $S \rightarrow A$, or more intuivively, as "a function which associates an action $a \in A$ to a state $s \in S$".
 
 Following this, the policy gradient can be obtained as follows:
 
@@ -95,11 +96,22 @@ The Q-Value network is formally defined as $Q: S \times A \rightarrow \mathbb{R}
 More pragmatically, it takes a state-action pair $(s_t,a_t)$ as input and outputs a real value which represents how good the action $a_t$ was given the state $s_t$.
 Therefore, to properly guide the actor's policy, we need the Q-Value network to be as accurate as possible.
 
-Similarly to the policy, we define the Q-value as a neural network $Q_{\phi}$ parameterized by the weights $\phi$.
-To update said neural network, we use the Temporal Difference combined with the Q-learning method and adapted to the continuous action space:
+An approach to the optimal Q-value $Q^*(s,a)$ follows the Bellman equation. It is recursively defined as follows:
 
 $$
- Q_{\phi}(s_t,a_t) = \mathbb{E}_{\rho_{\mu}}
+  Q^*(s,a) = \mathbb{E}_{s' \sim P}\left[ r(s,a) + \gamma \max_{a'} Q^*(s',a') \right]
+$$
+
+Intuitively, no matter what state $s$ the environment is, given an action $a$, the best Q-value of that state-action pair $(s,a)$ can be recovered by summing (a) the reward obtained from taking $a$ in $s$, and (b) the expectancy of that same optimal Q-value over all the state $s'$ that succeed $s$, assuming we also take the best action $ a^* = \argmax_{a'}Q^*(s',\cdot)$.
+
+Similarly to the policy, we also define the Q-value as a neural network $Q_{\phi}$ parameterized by the weights $\phi$.
+To update said neural network, we use the Temporal Difference combined with the Q-learning method and adapted to the continuous action space.
+In spite of the fact that we start with a randomly initialized, and most likely non optimal Q-value function, the "contraction" property of the "Bellman operator", which was used to derive the optimal Q-value function above, allows us to iteratively update the Q-value using an imperfect estimate, slowing converging to the optimal one.
+
+More formally, the loss function of the Q-value network using the Tempral Difference paradigm is as follows:
+
+$$
+ Q_{\phi}(s_t,a_t) = \mathbb{E}_{(s,a,r,s') \sim D} \left[ y^t - Q(s_t)\right]
 $$
 
 TODO: TD / Bellman update + Loss equation for critic network
@@ -474,7 +486,7 @@ noise_fn = lambda: NormalActionNoise( np.ones( act_shape) * args.noise_mean, np.
 ## Sampling
 
 One of the indispensable part of any RL algorithm would be the sampling, where the agent, represented by the policy network in this case, actually interacts with the environment as per Figure **[TODO: Insert figure of env and agent interaction way back in the background section I guess]**.
-More specifically, in the DDPG algorithm, we alternate between the (1) policy sampling and the (1) policy update phase until we obtain an agent that can solve the task (sometimes it just cannot though).
+More specifically, in the DDPG algorithm, we alternate between the (1) policy sampling and the (2) policy update phase until we obtain an agent that can solve the task (sometimes it just can't though, unfortunately).
 
 The one we are interested in this section is obviously the (1) policy sampling phase.
 We already setup the environment earlier, namely in the **TODO: Add link to section**.
@@ -695,4 +707,3 @@ Any other optim you can think of ?
 # Aknowledgment
 - Costa's CleanRL for the clean approach to source code. My own usually tend to become too complex.
 - OpenAI Baselines for the various helper function such as the noise, etc...
-- The numerous creators of the various libraries used for this article.
