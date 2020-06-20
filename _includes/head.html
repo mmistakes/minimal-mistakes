@@ -32,6 +32,10 @@
 
 {% if site.head_scripts %}
   {% for script in site.head_scripts %}
-    <script src="{{ script | relative_url }}"></script>
+    {% unless script.inline %}
+      <script src="{{ script.uri | relative_url }}" {{ script.attributes }}></script>
+    {% else %}
+      {{ script.inline }}
+    {% endunless -%}
   {% endfor %}
 {% endif %}

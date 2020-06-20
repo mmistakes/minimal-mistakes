@@ -37,12 +37,23 @@ You can also add scripts to the `<head>` or closing `</body>` elements by adding
 
 ```yaml
 head_scripts:
-  - https://code.jquery.com/jquery-3.3.1.min.js
-  - /assets/js/your-custom-head-script.js
+  - uri: https://code.jquery.com/jquery-3.4.1.min.js
+    attributes: >
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"
+  - uri: /assets/js/your-custom-head-script.js
 footer_scripts:
-  - /assets/js/your-custom-footer-script.js
+  inline: |
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-12345678-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-12345678-1');
+    </script>
 after_footer_scripts:
-  - /assets/js/custom-script-loads-after-footer.js
+  - uri: /assets/js/custom-script-loads-after-footer.js
 ```
 
 **Note:** If you assign `footer_scripts` the theme's `/assets/js/main.min.js` file will be deactivated. This script includes jQuery and various other plugins that you'll need to find replacements for and include separately.

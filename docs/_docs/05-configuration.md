@@ -202,8 +202,10 @@ For example, to add a CDN version of jQuery to page's head along with a custom s
 
 ```yaml
 head_scripts:
-  - https://code.jquery.com/jquery-3.2.1.min.js
-  - /assets/js/your-custom-head-script.js
+  - uri: https://code.jquery.com/jquery-3.4.1.min.js
+    attributes: >
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"
+  - uri: /assets/js/your-custom-head-script.js
 ```
 
 Consult the [JavaScript documentation]({{ site.baseurl }}{% link _docs/17-javascript.md %}) for more information on working with theme scripts.

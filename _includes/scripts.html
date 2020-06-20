@@ -1,6 +1,10 @@
 {% if site.footer_scripts %}
   {% for script in site.footer_scripts %}
-    <script src="{{ script | relative_url }}"></script>
+    {% unless script.inline %}
+      <script src="{{ script.uri | relative_url }}" {{ script.attributes }}></script>
+    {% else %}
+      {{ script.inline }}
+    {% endunless -%}
   {% endfor %}
 {% else %}
   <script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
@@ -23,6 +27,10 @@
 
 {% if site.after_footer_scripts %}
   {% for script in site.after_footer_scripts %}
-    <script src="{{ script | relative_url }}"></script>
+    {% unless script.inline %}
+      <script src="{{ script.uri | relative_url }}" {{ script.attributes }}></script>
+    {% else %}
+      {{ script.inline }}
+    {% endunless -%}
   {% endfor %}
 {% endif %}
