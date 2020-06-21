@@ -18,20 +18,20 @@
   },
   {
     "image_path": null,
-    "alt": "Letzter Schultag",
-    "title": "Letzter Schultag",
+    "alt": "Letzter Schultag: 6. Klassen und Sterne (3. Klasse)",
+    "title": "Letzter Schultag: 6. Klassen und Sterne (3. Klasse)",
     "excerpt": null,
     "url": "https://www.google.com/calendar/event?eid=NjRtdG01ajdka2ZubWdsdDhxdnRmczM4dDAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
-      "date": null,
-      "date_time": "2020-06-24T08:00:00+02:00"
+      "date": "2020-06-24",
+      "date_time": null
     },
     "end": {
-      "date": null,
-      "date_time": "2020-06-24T10:40:00+02:00"
+      "date": "2020-06-25",
+      "date_time": null
     },
     "created": "2020-05-03T08:25:58.000Z",
-    "updated": "2020-05-24T07:22:13.370Z"
+    "updated": "2020-06-21T10:06:07.744Z"
   },
   {
     "image_path": null,
