@@ -9,7 +9,7 @@ tags:
 toc: true
 toc_sticky: true
 author_profile: true
-# classes: wide
+classes: wide
 comments: true
 ---
 
@@ -56,7 +56,7 @@ During its execution, an RL agent is tasked to maximize the expected cummulative
 Denoting the agent as $\mu$, its objective is formally expressed as follows:
 
 $$
-J(\mu) = \mathbb{E}_{s_t \sim P(\cdot \vert s_{t-1}, a_{t-1}), a_t \sim \mu(\cdot \vert s_t)} \left[ \sum_{t=0}^{\infty} \gamma ^ t r(s_t,a_t)\right]
+J_\mu = \mathbb{E}_{s_t \sim P(\cdot \vert s_{t-1}, a_{t-1}), a_t \sim \mu(\cdot \vert s_t)} \left[ \sum_{t=0}^{\infty} \gamma ^ t r(s_t,a_t)\right] \enspace (1)
 $$
 
 Next, we go over how the maximization of this objective is tied with the neural networks.
@@ -73,9 +73,9 @@ A deterministic policy is thus formally defined as $S \rightarrow A$, or more in
 Following this, the policy gradient can be obtained as follows:
 
 $$
- \nabla_{\theta}J(\mu_{\theta}) = \mathbb{E}_{(s_t,a_t) \sim \rho_{\mu_\theta}} \left[
+ \nabla_{\theta}J_\mu(\theta) = \mathbb{E}_{(s_t,a_t) \sim \rho_{\mu_\theta}} \left[
     \sum_{t=0}^{T} \nabla_\theta \mathrm{log}\mu_\theta(a_t \vert s_t) Q^{\mu_\theta}(s_t,a_t)
-  \right],
+  \right] \enspace (2),
 $$
 
 where $\rho_{\mu_{\theta}}$ state-action pair distribution induced by the policy $\mu_{\theta}$ and $Q^{\mu_\theta}$ is the action value function, which tells us how good it is to take action $a_t$ given the state $s_t$.
@@ -83,7 +83,7 @@ where $\rho_{\mu_{\theta}}$ state-action pair distribution induced by the policy
 Once the gradients of the weights $\theta$ are computed, we can update the weights of the policy network for each iteration using the rule
 
 $$
-  \theta_{i+1} \leftarrow \alpha \theta_{i} + \alpha \nabla_{\theta_{i}}J(\mu_{\theta_{i}}),
+  \theta_{i+1} \leftarrow \alpha \theta_{i} + \alpha \nabla_{\theta_{i}}J_\mu(\theta) \enspace (3),
 $$
 
 where $\theta_i$ represents the weights of the policy at the iteration $i$ and $\alpha$ is the learning rate.
@@ -99,10 +99,10 @@ Therefore, to properly guide the actor's policy, we need the Q-Value network to 
 An approach to the optimal Q-value $Q^*(s,a)$ follows the Bellman equation. It is recursively defined as follows:
 
 $$
-  Q^*(s,a) = \mathbb{E}_{s' \sim P}\left[ r(s,a) + \gamma \max_{a'} Q^*(s',a') \right]
+  Q^*(s,a) = \mathbb{E}_{s' \sim P}\left[ r(s,a) + \gamma \max_{a'} Q^*(s',a') \right] (4)
 $$
 
-Intuitively, no matter what state $s$ the environment is, given an action $a$, the best Q-value of that state-action pair $(s,a)$ can be recovered by summing (a) the reward obtained from taking $a$ in $s$, and (b) the expectancy of that same optimal Q-value over all the state $s'$ that succeed $s$, assuming we also take the best action $ a^* = \argmax_{a'}Q^*(s',\cdot)$.
+Intuitively, no matter what state $s$ the environment is, given an action $a$, the best Q-value of that state-action pair $(s,a)$ can be recovered by summing (a) the reward obtained from taking $a$ in $s$, and (b) the expectancy of that same optimal Q-value over all the state $s'$ that succeed $s$, assuming we also take the best action $ a^* = \mathrm{argmax}_{a'}Q^*(s',\cdot)$.
 
 Similarly to the policy, we also define the Q-value as a neural network $Q_{\phi}$ parameterized by the weights $\phi$.
 To update said neural network, we use the Temporal Difference combined with the Q-learning method and adapted to the continuous action space.
@@ -111,48 +111,27 @@ In spite of the fact that we start with a randomly initialized, and most likely 
 More formally, the loss function of the Q-value network using the Tempral Difference paradigm is as follows:
 
 $$
- Q_{\phi}(s_t,a_t) = \mathbb{E}_{(s,a,r,s') \sim D} \left[ y^t - Q(s_t)\right]
+ J_Q(\theta) = \mathbb{E}_{(s,a,r,s') \sim D} \left[ y_t - Q_\phi(s_t)\right], \\\\ \mathrm{with} \enspace y_t = r(s_t,a_t) + \gamma Q_{\phi}(s',\mu_{\theta}(s')) (5)
 $$
 
-TODO: TD / Bellman update + Loss equation for critic network
-{: .notice--warning}
+The two elements of the equation above that might be confusing at first read would be $D$ and $y_t$.
+First, recall that we aim a obtaine the optimal Q-value function as per Equation 5.
+The latter is obtained by taking the expectancy of the future discounted return over all the possible future states $s'$.
+However, the agent does not necessarily have the distribution of all the future states available (namely, we do not know the exact dynamics of tasks that are worht solving).
+Therefore, we have to estimate said optimal Q-value $Q^*$ empiracillay with the data we have at hand.
+To do so, we store as much transition data $(s,a,r,s')$ as the agent interacts with the environment into the experience buffer $D$.
+This $D$ is then used to improve the approximation of $Q(s,a)$ as per Equation (5).
 
-Now, we expand on how the actor, or in other words, the policy is updated.
-We extend the previous definition of an RL agent (or to be more specific, its "policy") as $\mu_{\theta}: S \rightarrow A$.
-In other words, the function $\mu_{\theta}$ maps a given state $s_t$ to the action is "knows" as being the best.
-Refering to the equation of the policy gradient presented before [TODO: Add equation of Policy gradient reference], we cannot however compute the probability of an action given a state $\mu_{\theta}(s_t,a_t)$ since the policy is determinsitic to begin with.
-Fortunately, the differentiable nature of the Q-Value network allows us to back-propagate the value of a action output by the policy directly.
-
-[TODO: Remove the $\theta$ from agent's policy before this step, then introduce it back only when we talk about neural networks.]
-{: .notice--warning}
-
-Before going further, as for the Q-Value network, the policy is also represented by a neural network parameterized this time by the weights $\theta$, which we denote as $\mu_{\theta}$.
-
-Then, combining the chain rule to compute the gradient of the action-value with respect to the parameter of the policy network, we obtain the following update rule:
+Next is $y_t$, which we refer to as the update target.
+It is simply an empirical estimate of the optimal $$Q^*$$ (Equation 4) based on the empirical data contained in the experience buffer.
+Therefore, by reducing the difference between $y_t$ and the current Q-value estimate $Q_{\phi}(s_t,a_t)$, in other words $$\mathrm{minimizing} \enspace L_Q(\phi)$$ from Equation 5, we expect $Q_{\phi}$ to converge to $Q^*$.
+The weights $\phi$ of our $$Q_\phi$$ network are then updated using the rule below:
 
 $$
-  WIP
+  \phi_{i+1} \leftarrow \phi_{i} -\alpha \nabla_{\phi_{i}}J_Q(\phi)
 $$
 
-TODO: Insert the equation of policy update + a more intuitive explanation.
-{: .notice--warning}
-
-In DDPG, the policy is course deterministic, instead of talking probility, let's instead consider the policy as a determinsitic function that directly maps fron the state observation to the action.
-
-In the original paper, the advantage function $A^{\mu_\theta}$ is instead replaced with the Q function $Q^{\mu}(s_t,a_t)$.
-[TODO: care to elaborate why maybe ?]
-In practice, that function is also parameterized.
-We thus define the Q-Value network $Q_{\phi}^{\mu_{\theta}}$ parameterized by the weights $\phi$, which serves as an approximation for the Q function introduce earlier.
-
-Following the Bellman update equation, we can get the gradient for the weights of the Q network as follows:
-
-$$
-  \mathrm{[TODO: Gradient of the Bellman update]}.
-$$
-
-Applying a gradient step using the rule $\phi_{i+1} \leftarrow \phi_{i} -\alpha \nabla_{\phi}J_Q(\phi)$, we obtain a more precise estimation of the Q function, which in turns, helps us guide the agent to take better actions.
-
-One last aspect we need to consider is the **exploration**.
+One last aspect we need to consider is the **exploration** of the actor (policy).
 Recall that the agent we are training is deterministic, this means for a given state, it will always output a specific action its internal define as being the best.
 Obviously, especially at the early phase of the training, the action believed to be the best by the agent is not actually the best (a more formal word would be "optimal").
 So one might ask: how do we make an agent try out new things, so as to discover potentially better actions than the one it consider optimal ?
