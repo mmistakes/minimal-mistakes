@@ -54,8 +54,13 @@
           {% else %}
             {% capture f_url %}{{ f.url | relative_url }}{% endcapture %}
           {% endif %}
+          {% if f.url2 contains "://" %}
+            {% capture f_url2 %}{{ f.url2 }}{% endcapture %}
+          {% else %}
+            {% capture f_url2 %}{{ f.url2 | relative_url }}{% endcapture %}
+          {% endif %}
           {% if f.url %}
-            <p><a href="{{ f_url | relative_url }}" class="btn {{ f.btn_class }}">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
+            <p><a href="{{ f_url | relative_url }}" class="btn {{ f.btn_class }}">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a>{% if f.url2 %} <a href="{{ f_url2 | relative_url }}" class="btn {{ f.btn2_class }}">{{ f.btn2_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a>{% endif %}</p>
           {% endif %}
         </div>
       </div>
