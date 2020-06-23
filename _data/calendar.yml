@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Brandwerder-Cup entfällt",
-    "title": "Brandwerder-Cup entfällt",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MGtsNmVkNjRuaXNvNTRpdmxyMnU1anBsajAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2020-06-22",
-      "date_time": null
-    },
-    "end": {
-      "date": "2020-06-23",
-      "date_time": null
-    },
-    "created": "2020-05-03T08:29:21.000Z",
-    "updated": "2020-05-24T07:21:00.077Z"
-  },
-  {
-    "image_path": null,
     "alt": "Letzter Schultag: 6. Klassen und Sterne (3. Klasse)",
     "title": "Letzter Schultag: 6. Klassen und Sterne (3. Klasse)",
     "excerpt": null,
@@ -71,7 +54,7 @@
     "image_path": null,
     "alt": "Anmeldungszeitraum Schulanfänger ",
     "title": "Anmeldungszeitraum Schulanfänger ",
-    "excerpt": "Eltern melden ihr Kind an, das im Schuljahr 2020/21 schulpflichtig wird.",
+    "excerpt": "Eltern melden ihr Kind an, dass im Schuljahr 2020/21 schulpflichtig wird.",
     "url": "https://www.google.com/calendar/event?eid=MXRtcmVxOXRsNnN0ZWhzNjYyY2M0ZzFjZWQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
       "date": "2020-09-28",
@@ -100,5 +83,22 @@
     },
     "created": "2020-03-11T12:12:20.000Z",
     "updated": "2020-03-11T12:12:20.263Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Weihnachtsferien",
+    "title": "Weihnachtsferien",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=M2hrbjhjNXY2dGtvNDZrYWM1cDRoaDFjaDAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2020-12-21",
+      "date_time": null
+    },
+    "end": {
+      "date": "2021-01-02",
+      "date_time": null
+    },
+    "created": "2020-03-11T12:13:03.000Z",
+    "updated": "2020-03-11T12:13:03.339Z"
   }
 ]
