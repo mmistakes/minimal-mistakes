@@ -202,10 +202,12 @@ body {
 
     .page__lead {
       max-width: $medium;
+      text-shadow: 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
     }
 
     .page__title {
       font-size: $type-size-2;
+      text-shadow: 1px 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, -1px -1px 2px #fff;
 
       @include breakpoint($small) {
         font-size: $type-size-1;
