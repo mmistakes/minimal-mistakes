@@ -14,6 +14,9 @@ nortan_intro:
     btn_label: "Saiba mais"
     btn_class: "btn--inverse"
     url: "/sobre/"
+    btn2_label: "Faça parte da equipe"
+    btn2_class: "btn--success"
+    url2: "http://plataforma.nortanprojetos.com"
 areas_atuacao:
   - title: "ÁREAS DE ATUAÇÃO"
     excerpt: "Somos uma empresa multimercado que trabalha com projetos arquitetônicos, design de interiores, acompanhamento de obras, impermeabilização de obras, projeto hidrossanitário, elétrico, licenciamento ambiental de empreendimentos e recursos hídricos.<br><br>Abaixo segue nossa linha da Construção Civil"
