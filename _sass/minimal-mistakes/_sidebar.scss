@@ -76,6 +76,14 @@
   bottom: 1.5em;
   right: 2em;
   z-index: 10;
+
+  a {
+    color: #7abb9e !important;
+  }
+
+  a:hover {
+    color: #065b5d !important;
+  }
 }
 
 .sidebar__right {
