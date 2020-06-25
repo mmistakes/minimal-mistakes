@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Letzter Schultag: 6. Klassen und Sterne (3. Klasse)",
-    "title": "Letzter Schultag: 6. Klassen und Sterne (3. Klasse)",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NjRtdG01ajdka2ZubWdsdDhxdnRmczM4dDAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2020-06-24",
-      "date_time": null
-    },
-    "end": {
-      "date": "2020-06-25",
-      "date_time": null
-    },
-    "created": "2020-05-03T08:25:58.000Z",
-    "updated": "2020-06-21T10:06:07.744Z"
-  },
-  {
-    "image_path": null,
     "alt": "Sommerferien",
     "title": "Sommerferien",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2020-03-11T12:13:03.000Z",
     "updated": "2020-03-11T12:13:03.339Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Winterferien",
+    "title": "Winterferien",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=Nmg3ZjhxZWNxbnR2c2kxaDEwczNmcTRucjggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2021-02-01",
+      "date_time": null
+    },
+    "end": {
+      "date": "2021-02-06",
+      "date_time": null
+    },
+    "created": "2020-03-11T12:13:58.000Z",
+    "updated": "2020-03-11T12:13:58.103Z"
   }
 ]
