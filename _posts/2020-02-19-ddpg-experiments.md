@@ -17,9 +17,9 @@ comments: true
 In the last few years, Deep Reinforcement Learning (DRL) has shown promising results when it comes to playing games directly from pixels (<a href="https://arxiv.org/abs/1312.5602">[1]</a>,<a href="https://arxiv.org/abs/2003.13350">[2]</a>), mastering quite a few board games such as Chess, Go, and Shogi (<a href="https://arxiv.org/abs/1712.01815">[3]</a>),as well as robotic control (<a href="https://arxiv.org/abs/1812.05905">[4]</a>, <a href="https://arxiv.org/abs/1707.06347">[5]</a>,  <a href="https://arxiv.org/abs/1802.09477">[6]</a>).
 
 <figure class="third">
-	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/atari_2600_games.png" alt="">
-	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/alphago_lee_sedol.png" alt="">
-	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/roboschool_openai.gif" alt="" height="300px">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/atari_2600_games.png" alt="">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/alphago_lee_sedol.png" alt="">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/roboschool_openai.gif" alt="" height="300px">
 	<figcaption>From left to right: Atari 2600 games, AlphaZero vs Lee Sedol, Roboschool Humanoid robot control. All assets are the property of the respective parties, not mine.</figcaption>
 </figure>
 
@@ -52,11 +52,15 @@ The RL problem is usually formulated as a <a href="https://en.wikipedia.org/wiki
   - The discount factor $\gamma \in [0,1]$. This coefficient defines how much the agent should care about long term reward, at the cost of forsaking the short term gratification. Set it to one, and the agent will act as to maximize the long term reward. Set it close to zero, and the agent shall do the opposite, and aim toward short term reward instead. This coefficent is often kept in the neighborhood of $0.99$ in practice, and the reason is should transpire from the following paragraph where the objective of the agent is formulated.
 
 ## RL Agent's objective
+<figure style="width: 300px" class="align-right">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/agentenvinteraction.png" alt="">
+  <figcaption>Figure 1: Agent-environment interaction. Picture taken from <a href="http://incompleteideas.net/book/ebook/node28.html">Richard Sutton's book</a></figcaption>
+</figure>
 During its execution, an RL agent is tasked to maximize the expected cummulative reward it receives while interacting with the environment.
 Denoting the agent as $\mu$, its objective is formally expressed as follows:
 
 $$
-J_\mu = \mathbb{E}_{s_t \sim P(\cdot \vert s_{t-1}, a_{t-1}), a_t \sim \mu(\cdot \vert s_t)} \left[ \sum_{t=0}^{\infty} \gamma ^ t r(s_t,a_t)\right] \enspace (1)
+J_\mu = \mathbb{E}_{s_t \sim P(\cdot \vert s_{t-1}, a_{t-1}), a_t \sim \mu(\cdot \vert s_t)} \left[ \sum_{t=0}^{\infty} \gamma ^ t r(s_t,a_t)\right] \quad (1)
 $$
 
 Next, we go over how the maximization of this objective is tied with the neural networks.
@@ -75,7 +79,7 @@ Following this, the policy gradient can be obtained as follows:
 $$
  \nabla_{\theta}J_\mu(\theta) = \mathbb{E}_{(s_t,a_t) \sim \rho_{\mu_\theta}} \left[
     \sum_{t=0}^{T} \nabla_\theta \mathrm{log}\mu_\theta(a_t \vert s_t) Q^{\mu_\theta}(s_t,a_t)
-  \right] \enspace (2),
+  \right] \quad (2),
 $$
 
 where $\rho_{\mu_{\theta}}$ state-action pair distribution induced by the policy $\mu_{\theta}$ and $Q^{\mu_\theta}$ is the action value function, which tells us how good it is to take action $a_t$ given the state $s_t$.
@@ -99,7 +103,7 @@ Therefore, to properly guide the actor's policy, we need the Q-Value network to 
 An approach to the optimal Q-value $Q^*(s,a)$ follows the Bellman equation. It is recursively defined as follows:
 
 $$
-  Q^*(s,a) = \mathbb{E}_{s' \sim P}\left[ r(s,a) + \gamma \max_{a'} Q^*(s',a') \right] (4)
+  Q^*(s,a) = \mathbb{E}_{s' \sim P}\left[ r(s,a) + \gamma \max_{a'} Q^*(s',a') \right] \quad (4)
 $$
 
 Intuitively, no matter what state $s$ the environment is, given an action $a$, the best Q-value of that state-action pair $(s,a)$ can be recovered by summing (a) the reward obtained from taking $a$ in $s$, and (b) the expectancy of that same optimal Q-value over all the state $s'$ that succeed $s$, assuming we also take the best action $ a^* = \mathrm{argmax}_{a'}Q^*(s',\cdot)$.
@@ -111,7 +115,7 @@ In spite of the fact that we start with a randomly initialized, and most likely 
 More formally, the loss function of the Q-value network using the Tempral Difference paradigm is as follows:
 
 $$
- J_Q(\theta) = \mathbb{E}_{(s,a,r,s') \sim D} \left[ y_t - Q_\phi(s_t)\right], \\\\ \mathrm{with} \enspace y_t = r(s_t,a_t) + \gamma Q_{\phi}(s',\mu_{\theta}(s')) (5)
+ J_Q(\theta) = \mathbb{E}_{(s,a,r,s') \sim D} \left[ y_t - Q_\phi(s_t)\right], \\\\ \mathrm{with} \enspace y_t = r(s_t,a_t) + \gamma Q_{\phi}(s',\mu_{\theta}(s')) \quad (5)
 $$
 
 The two elements of the equation above that might be confusing at first read would be $D$ and $y_t$.
@@ -128,12 +132,12 @@ Therefore, by reducing the difference between $y_t$ and the current Q-value esti
 The weights $\phi$ of our $$Q_\phi$$ network are then updated using the rule below:
 
 $$
-  \phi_{i+1} \leftarrow \phi_{i} -\alpha \nabla_{\phi_{i}}J_Q(\phi)
+  \phi_{i+1} \leftarrow \phi_{i} -\alpha \nabla_{\phi_{i}}J_Q(\phi) \quad (6)
 $$
 
 One last aspect we need to consider is the **exploration** of the actor (policy).
 Recall that the agent we are training is deterministic, this means for a given state, it will always output a specific action its internal define as being the best.
-Obviously, especially at the early phase of the training, the action believed to be the best by the agent is not actually the best (a more formal word would be "optimal").
+Especially at the early phase of the training, the action believed to be the best by the agent is not actually the best (a more formal word would be "optimal").
 So one might ask: how do we make an agent try out new things, so as to discover potentially better actions than the one it consider optimal ?
 
 To this end, the authors introduced a straight forward approach, which consist in apply some noise to the action output by the agent's policy before applying it to the environment.
@@ -142,7 +146,7 @@ This "force" the agent to be exposed to various part of the state space it would
 More formaly, for each step we want the agent to take in the environment, we first sample the corresponding action $a_t \sim \mu_{\theta}(s_t,a_t)$, then apply the noise $\epsilon$ such as $a_t \leftarrow a_t + \epsilon, \epsilon \sim \mathcal{N}(\mu,\sigma^2)$.
 The noise itself is sampled from a Normal distribution defined by the mean and variance parameter $\mu$ and $\sigma^2$.
 For simplicity, $\mu$ is usually set to $0$, while the standard deviation $\sigma$ is set in the neighborhood of $0.2$, depending on the task's specification.
-More intuitively, this defines the magnitude much the original action $a_t$ output by the agent is changed.
+More intuitively, this defines the magnitude of the change applied to the originally sampled action $a_t \sim \mu_{\theta}(s_t)$ output by the agent.
 
 With most of the theory out of the way, let's proceed to the actual implementation of the algorithm.
 
@@ -150,6 +154,7 @@ With most of the theory out of the way, let's proceed to the actual implementati
 
 From here onward, we shall leverage the `python` scripting langage, as well as the `pytorch` deep learning library.
 
+## Configuration and environment setup
 We first start by creating importing the necessary libraries and dependencies.
 ```python
 import os
@@ -184,7 +189,7 @@ the `pytorch` dependencies are imported in the second block.
 Next, for convenience, we use some helpers fucntion defined in the `drl-forge` library, the most important being :
 - `SimpleReplayBuffer` which stores the experience of the agent as it interacts with the environment.
 - `TBXLogger` which is used to log various metrics during the training. This is independent of the algorithm itself.
-- `NormalActionNoise`, `AdaptiveParamNoiseSpec`, `OrnsteinUhlenbeckActionNoise`, each of those being a specific noise process we use for the exploration aspect of the algorithm. While the defualt is the `NormalActionNoise`, we also experimented with the Ornstein-Uhlenbeck noise process introduced in [TODO: add reference] as well as the "Parameter Space Noise" technique developped in [TODO: Add reference to Param Space Noise paper] and alledgedly achieving better results than the standard noise functions.
+- `NormalActionNoise`, `AdaptiveParamNoiseSpec`, `OrnsteinUhlenbeckActionNoise`, each of those being a specific noise process we use for the exploration aspect of the algorithm. While the defualt is the `NormalActionNoise`, we also experimented with the Ornstein-Uhlenbeck noise process <a href="https://en.wikipedia.org/wiki/Ornstein%E2%80%93Uhlenbeck_process">[12], as well as the "Parameter Space Noise" technique developped in <a href="https://arxiv.org/abs/1706.01905">[11]</a>, which performs better than the other noise methods, especially on harder tasks.
 
 Next, we define the various hyper parameters which will allows us to control and tweak various aspect of the algorithm.
 
@@ -218,9 +223,10 @@ args = generate_args(CUSTOM_ARGS)
 
 ```
 
-The following section just instanciates a `TBLogger` object, which is a custom wrappers around not only the `Tensorboard` **TODO: Add link** logger but also the `Wandb` **TODO: Add link** logger in a single one.
+The following section just instanciates a `TBLogger` object, which is a custom wrappers around not only the `Tensorboard` logging module (<a href="https://www.tensorflow.org/tensorboard/">[8]</a>, <a href="https://tensorboardx.readthedocs.io/en/latest/tensorboard.html">[9]</a>) which heps us keeping track and visualizing the metrics of the training process, but also the `Weight And Biases (WANDB)` experiments manager (<a href="https://www.wandb.com/">[10]</a>) package in a single one.
+It is also expected to handle training video saving, as well as model weight saving and restoration.
 This allows me to have a cleaner workflow without worrying about the logging mechanisms once it is setup.
-Along side the logger, we also setup the behavior of the Pytorch library, as well as the seeding, which will allow the agent to work with (mostly) the same context whenever we run the script.
+Alongside with the logger, we also setup the behavior of the Pytorch library, as well as the seeding, which will allow the agent to work with (mostly) the same context whenever we run the script, thus enabling easier reproducibility.
 
 ```python
 # Logging helper
@@ -264,7 +270,7 @@ For a more complex implementation, however, feel free to refer to either this (D
 
 ## Neural Networks: Q-Value function and Policy Network
 
-In the following section, we provide the source code for basic neural network that are require for the DDPG algorithm.
+In the following section, an attempt of the basic neural network source code that is required for the DDPG algorithm to work is presented.
 
 ### Q-Value Function
 
@@ -311,7 +317,7 @@ class QNetwork(nn.Module):
 
             x = F.relu(x) # Activation function over the current hidden layer's output
 
-        return self.layers[-1](x) # The last layer is not passed through any activation function
+        return self.layers[-1](x) # Attentiopn: the last layer is not passed through any activation function !
 ```
 Instanciate a Q-Value network using the class defined above gives us the following object:
 ```python
@@ -434,12 +440,12 @@ qf_target.load_state_dict(qf.state_dict()) # Setting the weight of the target ne
 
 Because we instanciate a new network for each of the previously defined Q-Value network and policy network respectively, we copy the weights from each main network to the newly created target network with Pytorch's `load_state_dict()` method.
 
-We shall expand on how we make sure those target networks are lagging behind their respective main network in section **[TODO: Add the section hyperlink once done]**.
+We shall expand on how we make sure those target networks are lagging behind their respective main network in the <a href="{{ page.url }}#sampling">Training Loop Section</a>
 
 Last but not least, we define the optimizers for each neural network.
 An optimizer is a tool which will automatically handle the update of the weights of the neural network it is in charge of
 with respect to the appropriate objective function.
-Namely, it removes the need for us to manually go over every single weight of every neural network we are using and apply the weight update by gradient descent / ascent as defined at **TODO: Insert gradient update equation reference**..
+Namely, it removes the need for us to manually go over every single weight of every neural network we are using and apply the weight update by gradient descent / ascent as defined in Equation 6.
 
 ```python
 # Defining the respective weight optimizers for policy and Q function network
@@ -462,13 +468,12 @@ noise_fn = lambda: NormalActionNoise( np.ones( act_shape) * args.noise_mean, np.
 
 ```
 
-## Sampling
+## Training Loop
 
-One of the indispensable part of any RL algorithm would be the sampling, where the agent, represented by the policy network in this case, actually interacts with the environment as per Figure **[TODO: Insert figure of env and agent interaction way back in the background section I guess]**.
+One of the indispensable part of any RL algorithm would be the sampling, where the agent, represented by the policy network in this case, actually interacts with the environment as per Figure 1.
 More specifically, in the DDPG algorithm, we alternate between the (1) policy sampling and the (2) policy update phase until we obtain an agent that can solve the task (sometimes it just can't though, unfortunately).
 
-The one we are interested in this section is obviously the (1) policy sampling phase.
-We already setup the environment earlier, namely in the **TODO: Add link to section**.
+The one we are interested in this section is obviously the (1) policy sampling phase, se already <a href="{{ page.url }}#configuration-and-environment-setup">setup the environment earlier</a>.
 
 While the agent interacts with the environment, we need to store the various transitions that will be consequently formed in what can be thought of as the memory of the agent.
 We use the previously imported `SimpleReplayBuffer` class to instanciate said "memory" component.
@@ -546,7 +551,7 @@ while global_step < args.total_steps:
         # Sample the current estimate of the Q Value.
         q_values = qf.forward( observation_batch, action_batch).view(-1)
 
-        q_loss = mse_loss_fn( q_values, q_backup)
+        q_loss = mse_loss_fn( q_values, q_backup) # Equation 5
         # Mean Square Error between the target network and the current estimate:
         # By minimizing the error that occurs when our current Q Value network
         # outputs estimates, we get better and better accuracy as we do the updates
@@ -555,7 +560,7 @@ while global_step < args.total_steps:
         # for each weight when calling the `backward()` function.
         q_optimizer.zero_grad()
         q_loss.backward()
-        q_optimizer.step() # Actually update the weights as per Equation [TODO: Add equation]
+        q_optimizer.step() # Actually update the weights as per Equation (6)
 
         # Next, we update the policy network
         resampled_mus = policy.forward( observation_batch) # Get the current `optimal` actions
@@ -565,12 +570,12 @@ while global_step < args.total_steps:
         # AdamOptimizer considers whatever objective function it is fed with to be minimized !
         # Fortunately, we can transform our original, maximization objective
         # into a minimization objective by simply multiplying by -1.
-        policy_loss = - q_mus.mean()
+        policy_loss = - q_mus.mean() # Equation 2
 
         p_optimizer.zero_grad()
         # Computes the gradient of each weight ( or in other words, their respective contribution to our estimate q_mus of how good the actions are)
         policy_loss.backward()
-        p_optimizer.step() # Again, actually update the weights of the neural network as per Equation [TODO: Add equation ref.]
+        p_optimizer.step() # Again, actually update the weights of the neural network as per Equation 3
 
         # Slowly updating the target networks
         if global_update_iter > 0 and global_update_iter % args.target_update_interval == 0:
@@ -616,7 +621,7 @@ This concludes a really basic implementation of the DDPG algorithm.
 An additional, more complete file is also provided at **TODO: Insert link to stable DRL Forge DDPG. Or even cleanrl. Also, separate the replay buffers and other deps into the dep folder ? Or link based on the current working commit**.
 
 An important thing to note however, is that we actually implemented a few more "tricks" for the experiments, namely:
-- More complex exploration startegies such as the <a href="https://en.wikipedia.org/wiki/Ornstein%E2%80%93Uhlenbeck_process">*Ornstein Uhlenbeck*</a> noise process, and the <a href="https://arxiv.org/abs/1706.01905">*Adaptive Parameter Space Noise*</a>.
+- More complex exploration startegies such as the <a href="https://en.wikipedia.org/wiki/Ornstein%E2%80%93Uhlenbeck_process">*Ornstein Uhlenbeck*</a> noise process, and the *Adaptive Parameter Space Noise*<a href="https://arxiv.org/abs/1706.01905">[11]</a>.
 - Target noise smoothing, which consists in also applying some noise method to the actions sampled based on the `next observations`, which are used to compute the target for the Q-Value network
 - **TODO:** Support for multiple Q-Value network function, which is mainly inspired from the Twin Delayed DDPG (<a href="https://arxiv.org/abs/1707.06347">[5]</a>). This was used to experimentally investigate the reduction of the overestimation bias by using multiple Q-Value network. A potential future experiment would be to train multiple different Q-Value networks over different subsets of the state-action space and use their average as the Q-Value network used to update the policy network itself.
 - Normalization for the policy and Q-Value network's network layers. In some __yet to determine conditions__, layer normalization seems to drastically improve the value learned by the Q-Value network, and helps achieve better performance than the standard neural network especially in complex environments.
@@ -625,63 +630,65 @@ An important thing to note however, is that we actually implemented a few more "
 
 We first start with some basic continuous action environments namely Pendulum-v0, InvertedPendulum-v0 and MountainCarContinuous-v0 of the OpenAI Gym basic environments.
 
-## Basic control tasks
+## Default Settings: Results
 Here, we investigate how well a basic implementation of the DDPG algorithm fares on toy problems, namely the `Pendulum-v0` and the `MountainCarContinuous-v0`, which are considered toy problems for RL agents.
 
 **TODO: Embed Wandblogs**
 
-## Toy problems
+### Toy problems
 
-<figure class="second">
-	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/Pendulum-v0_EpisodeReturn.png" alt="Pendulum-v0_EpisodeReturn">
-	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/MountainCarContinuous-v0_EpisodeReturn.png" alt="MountainCarContinuous-v0_EpisodeReturn.png">
-	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/LunarLanderContinuous-v2_EpisodeReturn.png" alt="LunarLanderContinuous-v2_EpisodeReturn.png">
+<figure class="third">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/Pendulum-v0_EpisodeReturn.png" alt="Pendulum-v0_EpisodeReturn">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/MountainCarContinuous-v0_EpisodeReturn.png" alt="MountainCarContinuous-v0_EpisodeReturn.png">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/LunarLanderContinuous-v2_EpisodeReturn.png" alt="LunarLanderContinuous-v2_EpisodeReturn.png">
 	<figcaption>Episode Return averaged over 3 seeds of the DDPG algorithm, trained on 3 Toys environments, namely Pendulum-v0, MountainCarContinuous-v0, and LunarLanderContinuous-v2</figcaption>
 </figure>
 The agent manages to learn a near optimal policy in 2 out of 3 environments.
 On MountainCarContinuous-v0, however, the agent struggles to achieve stable enough performance.
 
-## Mujoco
-<figure class="second">
-	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/Hopper-v2_EpisodeReturn.png" alt="">
-	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/Walker2d-v2_EpisodeReturn.png" alt="">
-	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/HalfCheetah-v2_EpisodeReturn.png" alt="">
-	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/Ant-v2_EpisodeReturn.png" alt="">
-	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/Humanoid-v2_EpisodeReturn.png" alt="">
+### Mujoco
+<figure class="third">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/Hopper-v2_EpisodeReturn.png" alt="">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/Walker2d-v2_EpisodeReturn.png" alt="">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/HalfCheetah-v2_EpisodeReturn.png" alt="">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/Ant-v2_EpisodeReturn.png" alt="">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/Humanoid-v2_EpisodeReturn.png" alt="">
 	<figcaption>Episode Return averaged over 3 seeds of the DDPG algorithm on 5 of the MuJoCo Robotics Simulator environments, with various degrees of difficulty.</figcaption>
 </figure>
 
-## BulletEnv
-<figure class="second">
-	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/HopperBulletEnv-v0_EpisodeReturn.png" alt="">
-	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/Walker2DBulletEnv-v0_EpisodeReturn.png" alt="">
-	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/HalfCheetahBulletEnv-v0_EpisodeReturn.png" alt="">
-	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/AntBulletEnv-v0_EpisodeReturn.png" alt="">
-	<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ddpg_experiments/default/HumanoidBulletEnv-v0_EpisodeReturn.png" alt="">
+### BulletEnv
+<figure class="third">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/HopperBulletEnv-v0_EpisodeReturn.png" alt="">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/Walker2DBulletEnv-v0_EpisodeReturn.png" alt="">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/HalfCheetahBulletEnv-v0_EpisodeReturn.png" alt="">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/AntBulletEnv-v0_EpisodeReturn.png" alt="">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/HumanoidBulletEnv-v0_EpisodeReturn.png" alt="">
 	<figcaption>TODO: </figcaption>
 </figure>
 
-## Ablations studies and other detailed experiments
+## Empirical investigation of the noise method
 
-1. Noise method and their impact
+1. Normal with std
 
-a. Normal with std
+2. Ornstein Ulhenbeck
+(Mention that TD3 also did not find much difference between normal noise and OU)
 
-b. Ornstein Ulhenbeck
+3. Parameter Space Noise
+Mention that it works quite well on the hardest environments
 
-c. Parameter Space Noise
+## Other ablation studies
 
-d. Target Mus Noising impact
+1. Starting steps
 
-2. Starting steps
+2. Update Interval effect
 
-3. Update Interval effect
-
-4. Layer normalization for actor ( TODO: Layer norm for value function too)
-
-Any other optim you can think of ?
+3. Layer normalization for actor and value network
 
 # Discussion and Conclusion
+
+# Coming Next
+- Building toward Twin Delayed DDPG
+- Multiple Q Values for overestimation mitigation ?
 
 # Aknowledgment
 - Costa's CleanRL for the clean approach to source code. My own usually tend to become too complex.
