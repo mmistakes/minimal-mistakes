@@ -637,23 +637,86 @@ Here, we investigate how well a basic implementation of the DDPG algorithm fares
 
 ### Toy problems
 
-<figure class="third">
+<figure class="half">
 	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/Pendulum-v0_EpisodeReturn.png" alt="Pendulum-v0_EpisodeReturn">
-	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/MountainCarContinuous-v0_EpisodeReturn.png" alt="MountainCarContinuous-v0_EpisodeReturn.png">
-	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/LunarLanderContinuous-v2_EpisodeReturn.png" alt="LunarLanderContinuous-v2_EpisodeReturn.png">
-	<figcaption>Episode Return averaged over 3 seeds of the DDPG algorithm, trained on 3 Toys environments, namely Pendulum-v0, MountainCarContinuous-v0, and LunarLanderContinuous-v2</figcaption>
+
+  <video width="420" height="278" controls>
+    <source src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/videos/Pendulum_v0.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+	<figcaption>Pendulum-v0: Episode Return averaged over 3 seeds of the DDPG algorithm and video of the agent. The agent successfully learns a policy that solves the task.</figcaption>
 </figure>
-The agent manages to learn a near optimal policy in 2 out of 3 environments.
-On MountainCarContinuous-v0, however, the agent struggles to achieve stable enough performance.
+<figure class="half">
+  	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/MountainCarContinuous-v0_EpisodeReturn.png" alt="MountainCarContinuous-v0_EpisodeReturn.png">
+
+  <video width="420" height="278" controls>
+    <source src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/videos/MountainCarContinuous_v0.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+	<figcaption>MountainCarContinuous-v0: Episode Return averaged over 3 seeds of the DDPG algorithm and video of the agent. Unfortunately, the learned policy does not solve the problem. See the noise type study for a good enough policy.</figcaption>
+</figure>
+<figure class="half">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/LunarLanderContinuous-v2_EpisodeReturn.png" alt="LunarLanderContinuous-v2_EpisodeReturn.png">
+
+  <video width="420" height="278" controls>
+    <source src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/videos/LunarLanderContinuous_v2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+	<figcaption>LunarLanderContinuous-v0: Episode Return averaged over 3 seeds of the DDPG algorithm and video of the agent. The agent successfully learns a policy that solves the task.</figcaption>
+</figure>
+
+Overall, DDPG seems to solve 2 out of 3 tasks with the default configuration.
+While it struggles to make consistent progress on MountainCarContinuous-v0, it is still possible to learn a policy that solves the task with an appropriate noise method (See Section *TODO: Add link to section*).
 
 ### Mujoco
-<figure class="third">
-	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/Hopper-v2_EpisodeReturn.png" alt="">
-	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/Walker2d-v2_EpisodeReturn.png" alt="">
-	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/HalfCheetah-v2_EpisodeReturn.png" alt="">
-	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/Ant-v2_EpisodeReturn.png" alt="">
-	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/Humanoid-v2_EpisodeReturn.png" alt="">
-	<figcaption>Episode Return averaged over 3 seeds of the DDPG algorithm on 5 of the MuJoCo Robotics Simulator environments, with various degrees of difficulty.</figcaption>
+<figure class="half">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/Hopper-v2_EpisodeReturn.png" alt="Hopper-v2_EpisodeReturn">
+
+  <video width="420" height="278" controls>
+    <source src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/videos/Hopper_v2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+	<figcaption>Hopper-v2: Episode Return averaged over 3 seeds of the DDPG algorithm and video of the agent. Hoppity-hop. The learned policy does manage to travel a bit forward. The stability of the performance, however, is not that great.</figcaption>
+</figure>
+
+<figure class="half">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/Walker2d-v2_EpisodeReturn.png" alt="Walker2d-v2_EpisodeReturn">
+
+  <video width="420" height="278" controls>
+    <source src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/videos/Walker2D_v2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+	<figcaption>Hopper-v2: Episode Return averaged over 3 seeds of the DDPG algorithm and video of the agent. Hoppity-hop. The learned policy does manage to travel a bit forward. The stability of the performance, however, is not that great.</figcaption>
+</figure>
+
+<figure class="half">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/HalfCheetah-v2_EpisodeReturn.png" alt="HalfCheetah-v2_EpisodeReturn">
+  <video width="420" height="278" controls>
+    <source src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/videos/HalfCheetah_v2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+	<figcaption>HalfCheetah-v2: Episode Return averaged over 3 seeds of the DDPG algorithm and video of the agent. One of the best performing DDPG agent. Even exceeds the boundary.</figcaption>
+</figure>
+
+<figure class="half">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/Ant-v2_EpisodeReturn.png" alt="Ant-v2_EpisodeReturn">
+
+  <video width="420" height="278" controls>
+    <source src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/videos/Ant_v2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+	<figcaption>Ant-v2: Episode Return averaged over 3 seeds of the DDPG algorithm and video of the agent. While the learned policy can reach quite a high reward, it is still really sensitive to initialization condition.</figcaption>
+</figure>
+
+<figure class="half">
+	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/Humanoid-v2_EpisodeReturn.png" alt="Humanoid-v2_EpisodeReturn">
+
+  <video width="420" height="278" controls>
+    <source src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/videos/Humanoid_v2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+	<figcaption>Humanoid-v2: Episode Return averaged over 3 seeds of the DDPG algorithm and video of the agent.Not only achieves a low performance, but also imilarly to the Ant-v2, the learned policy seems to be highly sensitive the initialization seed in this case.</figcaption>
 </figure>
 
 ### BulletEnv
