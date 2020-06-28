@@ -711,7 +711,6 @@ While it struggles to make consistent progress on MountainCarContinuous-v0, it i
 
 <figure class="half">
 	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/Humanoid-v2_EpisodeReturn.png" alt="Humanoid-v2_EpisodeReturn">
-
   <video width="420" height="278" controls>
     <source src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/videos/Humanoid_v2.mp4" type="video/mp4">
     Your browser does not support the video tag.
@@ -720,7 +719,7 @@ While it struggles to make consistent progress on MountainCarContinuous-v0, it i
 </figure>
 
 ### BulletEnv
-<figure class="third">
+<figure class="half">
 	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/HopperBulletEnv-v0_EpisodeReturn.png" alt="">
 	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/Walker2DBulletEnv-v0_EpisodeReturn.png" alt="">
 	<img src="{{ site.url }}{{ site.baseurl }}/assets/posts/ddpg_experiments/default/HalfCheetahBulletEnv-v0_EpisodeReturn.png" alt="">
