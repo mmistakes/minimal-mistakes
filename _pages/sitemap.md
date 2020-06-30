@@ -19,7 +19,7 @@ relative_url }}) zum einfacheren verdauen.
 {% endfor %}
 
 {% if site.posts.size > 0 %}
-<h2>Posts</h2>
+<h2>Elternbriefe</h2>
 {% for post in site.posts %}
   {% include archive-single.html %}
 {% endfor %}
