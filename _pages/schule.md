@@ -46,6 +46,10 @@ Gemeinsam mit Ihren Erzieher*innen besuchen die Kinder den Unterricht und sind
 zu den Schulveranstaltungen eingeladen. Gleichzeitig befinden wir uns in engem
 Austausch und sind gerne Gast der Elternversammlungen.
 
+Neu seit Schuljahr 2020 sind Kooperationen mit
+[<i class="fa fa-external-link">&nbsp;</i>Hertha BSC](https://www.herthabsc.de/de/intern/schulaktion/page/2126--17--.html) und
+[<i class="fa fa-external-link">&nbsp;</i>Al-Farabi Musikakademie](https://www.al-farabi.de). Die Kinder haben hier die Möglichkeit, sich für eine Fußball-AG mit Anthony anzumelden oder in einer Chor-AG mit Kian zu singen. Hier werden Talente erkannt und individuell gefördert. 
+
 ### Veranstaltungen der Schulgemeinschaft
 
 Wir führen gemeinschaftliche Schulveranstaltungen durch wie etwa Sommerfeste,
@@ -53,14 +57,6 @@ Zirkus in der Schule und Aktivitäten zur Weihnachtszeit. Fest verankert ist
 auch der Brandwerder-Cup, der immer  in den letzten Tagen vor den Sommerferien
 durchgeführt wird. Klassen absolvieren ausgewählte sportliche Aufgaben und
 treten gegeneinander an. Teamwork steht hier im Mittelpunkt.
-
-### Mittwochsverkauf - Schulfrühstück
-
-Viele Eltern engagieren sich für die Schulgemeinschaft. Mittwochs in der ersten
-großen Pause sorgen Sie für das leibliche Wohl der Kinder. Für 50 Cent das
-Stück gibt es Brötchen, Brezeln, Waffeln und vieles mehr. Helfer*innen werden
-immer gebraucht und  sind herzlich eingeladen sich gegen 8:00 Uhr in der
-Schulküche zu treffen.
 
 ## Unser Team
 
