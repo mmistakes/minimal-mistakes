@@ -3,7 +3,7 @@ layout: single
 title: "Ergänzende Förderung und Betreuung"
 permalink: /hortbetreuung/
 author_profile: false
-excerpt: "Alles zum Hortgebäude, zur verlässlichen Halbtagsgrundschule, sowie zum Mittagessen"
+excerpt: "Alles zum eFöBgebäude, zur verlässlichen Halbtagsgrundschule, sowie zum Mittagessen"
 modified: 2017-03-07T10:55:00+01:00
 header:
   overlay_color: "#fff"
@@ -21,14 +21,14 @@ Unsere Schule ist eine verlässliche Halbtagsgrundschule (VHG) mit offenem
 Ganztagsbetrieb.
 
 Das Team besteht derzeit aus neun Erzieherinnen und einem Erzieher, welche Ihr
-Kind im Hort in einem festen Gruppenverband betreuen.
+Kind am Nachmittag in einem festen Gruppenverband betreuen.
 
 Im Gegenzug zu anderen Bundesländern sind bei uns die Erzieher*innen auch
 während des Unterrichts dabei und unterstützen somit Ihr Kind und die Lehrkraft
 im Unterricht.
 {: .notice--info }
 
-[<i class="fa fa-download">&nbsp;&nbsp;</i>Flyer zu unserem Hortangebot](/assets/files/Grundschule_am_Brandwerder_Hort_Flyer.pdf){: .btn .btn--success}
+[<i class="fa fa-download">&nbsp;&nbsp;</i>Flyer zu unserer Nachmittagsbetreuung (eFöB)](/assets/files/Grundschule_am_Brandwerder_Hort_Flyer.pdf){: .btn .btn--success}
 
 # Schließzeiten
 
@@ -52,9 +52,9 @@ im Unterricht.
 | 21.12.2020 - 01.01.2021 | Weihnachtsschließzeit |
 
 
-# Hortgebäude und Außengelände
+# eFöBgebäude und Außengelände
 
-Das Hortgebäude befindet sich auf dem Schulgelände, in dem drei Räume während
+Das eFöBgebäude befindet sich auf dem Schulgelände, in dem drei Räume während
 der Nachmittagsbetreuung genutzt werden. Zusätzlich stehen vier Räume im
 Schulhaus zur Verfügung.
 
@@ -69,7 +69,7 @@ abwechslungsreiche Spielmöglichkeiten.
 Im Rahmen der VHG wird Ihr Kind im Zeitraum von 7:30 Uhr bis 13:30 Uhr
 verlässlich von uns betreut, selbst dann, wenn es keinen Unterricht hat.
 
-# Ergänzende Förderung und Betreuung (kostenpflichtig)
+# Ergänzende Förderung und Betreuung (kostenfrei für 1.-2. Klassen, kostenpflichtig für 3.-6. Klassen)
 {: #hort }
 
 Sie haben die Möglichkeit durch Module weitere Betreuungszeiten zu erwerben.
@@ -88,9 +88,7 @@ Hausaufgaben betreut und nimmt am Mittagessen teil.
 Für die Regelung während der Ferienzeit lesen Sie bitte den Abschnitt
 „[Betreuung in den Ferien](/hortbetreuung/#ferienbetreuung)“.
 
-Die monatlichen Betreuungskosten setzen sich aus 23€ für das Mittagessen und
-einem vom Betreuungzeitraum, Anzahl an Schul- und Kitakindern und
-Bruttojahreseinkommen abhängigen Eigenanteil (4€ - 243€) zusammen.
+Die monatlichen Betreuungskosten für 3.-6. Klassen richten sich nach dem Betreuungszeitraum und dem Bruttojahreseinkommen.
 
 <!-- {% include outdated.md %} -->
 <!-- Gesetzestext zur Kostenbeiteiligung: http://gesetze.berlin.de/jportal/?quelle=jlink&query=TagEinrKostBetG+BE+Anlage+2&psml=bsbeprod.psml&max=true -->
@@ -110,18 +108,12 @@ in unserem Sekretariat abholen oder direkt hier herunterladen und ausfüllen.<br
 # Betreuung in den Ferien
 {: #ferienbetreuung}
 
-Ihr Kind kann auch in den Ferien von uns betreut werden.
+Ihr Kind kann auch in den Ferien von uns betreut werden. Bitte sprechen Sie uns an.
 
-In den Jahrgangsstufen 1 bis 4, ist die Ferienbetreuung in dem Beitrag der
-ergänzenden Betreuung enthalten. Wenn Sie nur das Angebot der verlässliche
-Halbtagsgrundschule annehmen, so haben Sie **keine** Ferienbetreuung.
-
-In den Jahrgangsstufen 5 bis 6, wird Ihr Kind in den Ferien auf Antrag betreut
+In den Jahrgangsstufen 5 bis 6 kann Ihr Kind in den Ferien auf Antrag betreut
 werden.
 
-Sie können für Ihr Kind -- egal welcher Jahrgangsstufe -- eine kostenpflichtige
-Ferienbetreuung beantragen. Die Betreuungszeiten sind die selben wie bei der
-ergänzende Betreuung, hinzu kommt der Zeitraum 7:30 - 13:30.
+Sie können für Ihr Kind eine Ferienbetreuung beantragen. Die Betreuungszeiten sind: 7:30 - 13:30 Uhr.
 
 Die Formulare finden Sie im Abschnitt [ergänzende
 Betreuung](/hortbetreuung/#hort).
@@ -132,13 +124,11 @@ aus pädagogischen Gründen jedes Kind in dieser Zeit drei Wochen Urlaub bekomme
 
 # Mittagessen
 
-Ihr Kind kann in unserer Schule an einem Mittagessen teilnehmen. Wenn Ihr Kind
-in der ergänzenden Betreuung ist, so ist das Mittagessen in den Gebühren
-enthalten.
+Ihr Kind kann in unserer Schule an einem kostenfreien Mittagessen teilnehmen.
 
 Derzeit werden wir von der [GREENs UNLIMITED](http://www.greens-unlimited.de/)
 (Vollwert Catering) täglich mit frischem Schulessen versorgt, welches über eine
-Mitarbeiterin in der Mena (im Hortgebäude) an Ihr Kind in einem sozialen
+Mitarbeiterin in der Mensa (im eFöBgebäude) an Ihr Kind in einem sozialen
 Gruppenumfeld ausgeteilt und verzehrt wird.
 
 Das Catering-Unternehmen wird alle drei Jahre vom Schulamt europaweit
