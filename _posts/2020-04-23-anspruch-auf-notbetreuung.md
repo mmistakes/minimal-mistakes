@@ -9,7 +9,8 @@ Liebe Eltern,
 
 im Anhang finden Sie die neue Auflistung der anspruchsberechtigten Berufsgruppen für die Notbetreuung, die ab Montag, 27.04.2020 gilt. Die tagesaktuelle Übersicht finden Sie weiterhin unter folgendem Link:
 
-[https://www.berlin.de/sen/bjf/coronavirus/aktuelles/notbetreuung/](https://www.berlin.de/sen/bjf/coronavirus/aktuelles/notbetreuung/)
+~~https://www.berlin.de/sen/bjf/coronavirus/aktuelles/notbetreuung/~~
+(Update 01.07.2020, Link funktioniert leider nicht mehr)
 
 Ich möchte noch einmal ausdrücklich darauf hinweisen, dass im Sinne der Gesunderhaltung ALLER die Notbetreuung nur in absoluten Notfällen beansprucht werden soll. Ich bitte Sie, dementsprechend verantwortungsvoll zu handeln.
 

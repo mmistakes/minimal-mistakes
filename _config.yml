@@ -172,7 +172,7 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:year/:month/:day/:title
+permalink: pretty
 paginate: 10 # amount of posts to show
 paginate_path: /elternbriefe/page:num/
 timezone: DE # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
