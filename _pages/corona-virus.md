@@ -20,7 +20,7 @@ sidebar:
 
 {{ post.date | date: "%d.%m.%Y %H:%M Uhr" }}
 
-# [§]({{ post.url }}) {{ post.title }}
+# [§]({{ post.url | absolute_url }}) {{ post.title }}
 
 {{ post.content }}
 {% endfor %}

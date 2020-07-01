@@ -12,7 +12,7 @@ header:
 
 {{ post.date | date: "%d.%m.%Y %H:%M Uhr" }}
 
-<h1><a href="{{ post.url }}">§</a> {{ post.title }}</h1>
+<h1><a href="{{ post.url | absolute_url }}">§</a> {{ post.title }}</h1>
 
 {% if post.read_time %}
   <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
