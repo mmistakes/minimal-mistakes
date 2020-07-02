@@ -5,9 +5,15 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2020-06-06T11:48:13-04:00
+last_modified_at: 2020-07-02T19:28:35+08:00
 toc: false
 ---
+
+## Unreleased
+
+### Enhancements
+
+- Replace Font Awesome Kits with CSS from jsDelivr CDN. [#2583](https://github.com/mmistakes/minimal-mistakes/pull/2583)
 
 ## [4.19.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.19.3)
 
