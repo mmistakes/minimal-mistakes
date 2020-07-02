@@ -178,6 +178,9 @@ body {
     animation: $intro-transition;
     -webkit-animation-delay: 0.25s;
     animation-delay: 0.25s;
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
 
     a {
       color: $text-color;
