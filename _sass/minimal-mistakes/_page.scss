@@ -178,7 +178,7 @@ body {
     animation: $intro-transition;
     -webkit-animation-delay: 0.25s;
     animation-delay: 0.25s;
-    max-width: 1250px;
+    max-width: $max-width;
     margin-left: auto;
     margin-right: auto;
 
