@@ -46,10 +46,8 @@ im Unterricht.
 | 17.08.2018 | Schließtag |
 -->
 
-| 04.10.2019 | Schließtag |
-| 23.12.2019 - 03.01.2020 | Weihnachtsschließzeit |
-| 22.05.2020 | Christi Himmelfahrt |
-| 21.12.2020 - 01.01.2021 | Weihnachtsschließzeit |
+| 21.12.2020 - 01.01.2020 | Weihnachtsschließzeit |
+| 14.05.2021 | Pfingsten |
 
 
 # eFöBgebäude und Außengelände
