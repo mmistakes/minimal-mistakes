@@ -28,7 +28,7 @@ während des Unterrichts dabei und unterstützen somit Ihr Kind und die Lehrkraf
 im Unterricht.
 {: .notice--info }
 
-[<i class="fa fa-download">&nbsp;&nbsp;</i>Flyer zu unserer Nachmittagsbetreuung (eFöB)](/assets/files/Grundschule_am_Brandwerder_Hort_Flyer.pdf){: .btn .btn--success}
+[<i class="fa fa-download">&nbsp;&nbsp;</i>Flyer zu unserer Nachmittagsbetreuung (eFöB)](/assets/files/Schulflyer2705.pdf){: .btn .btn--success}
 
 # Schließzeiten
 
