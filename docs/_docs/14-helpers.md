@@ -241,21 +241,19 @@ header:
     provider: google-drive
 ```
 
-### bilibili
-To embed the following Vimeo video at url `https://www.bilibili.com/video/BV1E7411e7hC` into a post or page's main content you'd use:
+### Bilibili
+
+To embed the following Bilibili video at url `https://www.bilibili.com/video/BV1E7411e7hC` into a post or page's main content you'd use:
 
 ```liquid
 {% raw %}{% include video id="BV1E7411e7hC" provider="bilibili" %}{% endraw %}
 ```
-{% include video id="BV1E7411e7hC" provider="bilibili"%}
 
-If you want to able the danmaku (弹幕) for the embed video (by default it is disabled), use following format: 
+If you want to enable danmaku (弹幕) for the embeded video, which is disabled by default, you can supply an additional parameter `danmaku="1"` as shown below: 
 
 ```liquid
 {% raw %}{% include video id="BV1E7411e7hC" provider="bilibili" danmaku="1" %}{% endraw %}
 ```
-
-{% include video id="BV1E7411e7hC" provider="bilibili" danmaku="1" %}
 
 To embed it as a video header you'd use the following YAML Front Matter:
 
