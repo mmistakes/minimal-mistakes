@@ -9,9 +9,8 @@ header:
 ---
 
 
-Please apply by **December 1, 2019**
+This position has been filled, it is visible for archival purposes.
 {: .notice--warning}
-
 
 This position will work on a systems engineering approach to constructing microbial consortia. Compensation includes very competitive postdoctoral pay and benefits. The position is limited to US Citizens and Permanent residents seeking citizenship.
 

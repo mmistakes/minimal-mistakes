@@ -9,7 +9,7 @@ header:
 ---
 
 
-Please apply by **December 1, 2019**
+This position has been filled, it is visible for archival purposes.
 {: .notice--warning}
 
 

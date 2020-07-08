@@ -9,7 +9,7 @@ header:
   teaser: "/assets/images/nersc300-500.jpg"
 ---
 
-Please apply by **December 1, 2019**
+This position has been filled, it is visible for archival purposes.
 {: .notice--warning}
 
 

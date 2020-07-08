@@ -21,15 +21,15 @@ feature_row:
     url: "/posts/"
     btn_label: "Learn More"
     btn_class: "btn--info"
-    caption: "Photo credit: [Kristian Peters](https://commons.wikimedia.org/wiki/File:Plagiomnium_affine_laminazellen.jpeg)"
-  - image_path: /assets/images/clem-onojeghuo-210707.jpg
+    caption: "Photo credit: [*Kristian Peters*](https://commons.wikimedia.org/wiki/File:Plagiomnium_affine_laminazellen.jpeg)"
+  - image_path: /assets/images/free-to-use-sounds-kOuCX7fh50U-unsplash.jpg
     alt: "Join the Lab"
     title: "Join the Lab"
-    excerpt: "We have 5 open positions in machine learning and microbiology"
+    excerpt: "We have 1 open position in machine learning and bioinformatics as of July 2020"
     url: "/jobs/"
     btn_label: "Learn More"
     btn_class: "btn--info"
-    caption: "Photo credit: [*Clem Onojeghuo*](https://unsplash.com/photos/xxxxxxxxxx"
+    caption: "Photo credit: [*free to use sounds*](https://unsplash.com/photos/kOuCX7fh50U)"
 
 ---
 
