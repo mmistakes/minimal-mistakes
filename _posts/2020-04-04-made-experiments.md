@@ -14,16 +14,17 @@ classes: wide
 
 # Introduction
 Motivation: A tangent into UL.
-Under the guise of numerous encounters with models imported from the deep unsupervising learning field, namely variational autoencoders (World Model Paper **TODO: Add ref**), distribution estimaters (DIAYN **TODO: Add paper ref**), or RealNVP (Latent Space Policy for Hierarchical Reinforcement Learning **TODO: Add ref**), I started looking into said field.
-An additional motivation would be need for reinforcement learning to be even more autonomous, and make better used of its experience, which seemingly requires better representation learning, which again, is also deeply tied with unsupervised learningf field.
+Under the guise of numerous encounters with models imported from the deep unsupervising learning field, namely variational autoencoders (World Models <a href="https://arxiv.org/abs/1803.10122">[1]</a>), distribution estimators (Diversity Is All You Need <a href="https://arxiv.org/abs/1802.06070">[2]</a>), or RealNVP<a href="https://arxiv.org/abs/1605.08803">[3]</a> ( which appears in the paper: Latent Space Policy for Hierarchical Reinforcement Learning <a href="https://arxiv.org/abs/1804.02808">[4]</a>), it became apparent that a better understanding of such models would be required for more interesting research progress.
+An additional motivation would be need for reinforcement learning to be even more autonomous, and make better used of its experience, which seemingly requires better representation learning or models, which again, could be said to relate closely with unsupervised learning.
 
-Following the **TODO: Insert course denomination** of the University of Berkeley, I gave a go at my maybe second or third reproduction of a deep unsupervised learning algorithm, namely the Masked Autoencoder for Distribution Estimation (MADE) **TODO: Insert paper ref**.
+Following the <a href="https://sites.google.com/view/berkeley-cs294-158-sp19/home">CS294-158-SP19 Deep Unsupervised Learning</a> course of the University of Berkeley, I set off to reproduce the Masked Autoencoder for Distribution Estimation (MADE) <a href="https://arxiv.org/abs/1502.0350">[5]</a>.
 While it was advertised as a simple enough algorithm, it might not be necessarily the case, especially for a freshman in the sub-field.
-Without further delay, let us dive into the content of the paper and the step-by-step process of re producing the proposed method.
+Without further delay, let us dive into the content of the paper and the step-by-step process of reproducing the proposed method, as well as fitting it to our specific needs.
 
 # MADE: Core concept
 In unsupervised reinforcement learning, the focus is to recover the distribution of the data we are provided, to use on downstream tasks such as new sample generation or **TODO: there is at least one more use that seems to escape me**.
-A simple example would be the autoencoder, which aims at learning a **compressed representation** $z \in \mathbb{R}^K$ from a set of observed variables ${X}, X \in \mathbb{R^D}$, which serves as an approximation for the original unobserved variable that was used to generate said data.
+A simple example would be the autoencoder, which aims at learning a **compressed representation** $z \in \mathbb{R}^K$ from a set of observed variables ${X}, X \in \mathbb{R^D}$.
+In this case, $z$ serves as an approximation for the original unobserved variable that was used to generate said data $X$.
 Once we have approximated that latent variable, we can sample from the corresponding latent space to generate new, but related samples, or just use the decoder part to improve the performance in a classification task (?).
 **TODO: Add probabilistic graph of data generation with the flower picture justaposed as an example ?**
 
@@ -46,6 +47,12 @@ For simplicity, we thus define the input $X$ of the neural network as a vector o
 To compute the unique layer, or in this case the latent $H = \left( \matrix{h_1 & h_2 & h_3 & h_4} \right)$, we will define the "input-to-hidden" weight matrix $W$ and the "input bias" vector $B$ as follows:
 
 $$
+  H = XW + B
+$$
+
+or even more explicitly:
+
+$$
   W = \left( \matrix {
     w_{11} & w_{12} & w_{13} & w_{14} \\
     w_{21} & w_{22} & w_{23} & w_{24} \\
@@ -60,7 +67,7 @@ H = \left(\matrix{h_1 \\ h_2 \\ h_3 \\ h_4} \right) = g( \left( \matrix{
     x_1 w_{11} + x_2 w_{21} + x_3 w_{31} + b_1 \\
     x_1 w_{12} + x_2 w_{22} + x_3 w_{32} + b_2 \\
     x_1 w_{13} + x_2 w_{23} + x_3 w_{33} + b_3 \\
-    x_1 w_{14} + x_2 w_{24} + x_3 w_{34} + b_4 \\
+    x_1 w_{14} + x_2 w_{24} + x_3 w_{34} + b_4
   } \right)) \mathrm{,} \enspace (1)
 $$
 
@@ -82,6 +89,12 @@ $$
 The output $\hat{X}$ is then explicitly computed as follows:
 
 $$
+  \hat{X} = HV + C
+$$
+
+which can be further broken down as:
+
+$$
 \hat{X} = \left( \matrix{ \hat{x}_1 \\ \hat{x}_2 \\ \hat{x}_3 } \right) = \sigma ( \left(
   \matrix{
     h_1 v_{11} + h_2 v_{21} + h_3 v_{31} + h_4 v_{41} + c_1 \\
@@ -92,7 +105,8 @@ $$
 
 where $\sigma$ represents the activation of the output layer.
 When dealing with binary variables, $\sigma$ is effectively understood as the *sigmoid* function, which squashed whatever raw output is computed between $0$ and $1$.
-From Equations (1) and (2), we already start seeing how element of the output $\hat{x}_1$, $\hat{x}_2$, and $\hat{x}_3$ is related to the inputs $x_1$, $x_2$ and $x_3$.
+
+From Equations (1) and (2), we already start seeing how each element of the output $\hat{x}_1$, $\hat{x}_2$, and $\hat{x}_3$ is related to the inputs $x_1$, $x_2$ and $x_3$.
 Namely, we can write each of them as function of the inputs:
 
 $$
@@ -104,15 +118,16 @@ $$
 The goal of MADE is to change the inner workings of the autoencoder neural network so that every element of the output is only dependent on a subset of the original inputs:
 
 $$
-  \hat{x}_1 = f_1'() \\
-  \hat{x}_2 = f_2'(x_1,) \\
+  \hat{x}_1 = f_1' \\
+  \hat{x}_2 = f_2'(x_1) \enspace (3) \\
   \hat{x}_3 = f_3'(x_1,x_2)
 $$
 
-The relations above assume we are following a *natural ordering* of the input variables
+The relations above assume we are following a *natural ordering* of the input variables.
+Additionally, we observe that $\hat{x}_1$ is basically a constant, as it depends only ... on the bias weights of the last layer of the network we shall be using.
 
-**TODO**
-- Define the NN structure of the AE as well as training in the case of a binary variable ( NLL and such...
+For the sake of completness, let us quickly review the loss function of the standard autoencoder when the input is formed of binary variables.
+**TODO: Add loss explanation and BCE Loss**
 
 ## Autoregressive VAE
 - Reintroduce the motivate of the MADE VAE, add the customized intuive schema
