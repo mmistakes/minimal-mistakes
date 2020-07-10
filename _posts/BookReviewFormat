@@ -1,0 +1,29 @@
+---
+title: "Book Review (?) - 책 제목 [?/5]"
+categories:
+  - BOOK REVIEW
+tags:
+  - tag
+---
+
+## 책 제목
+
+<span style="color:#AEB404">평점 및 소장 가치: ?/5</span>
+
+<span style="color:#E03050"><b>후기</b></span>
+
+독서 후기
+
+> 인용1
+
+> 인용2
+
+> 인용3
+
+추신
+{: .notice--success}
+
+<figure style="width: 100%">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/book1.png" alt="">
+  <figcaption>출처: 관련링크</figcaption>
+</figure>
