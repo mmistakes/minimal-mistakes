@@ -26,7 +26,7 @@ feature_row:
     alt: "Join the Lab"
     title: "Join the Lab"
     excerpt: "We have 1 open position in machine learning and bioinformatics as of July 2020"
-    url: "/jobs/2020-07-10-ml-salmonella-postdoc-position.md/"
+    url: "/jobs/2020-07-10-ml-salmonella-postdoc-position/"
     btn_label: "Learn More"
     btn_class: "btn--info"
     caption: "Photo credit: [*free to use sounds*](https://unsplash.com/photos/kOuCX7fh50U)"
