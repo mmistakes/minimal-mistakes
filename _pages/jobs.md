@@ -1,16 +1,28 @@
 ---
 layout: collection
-title: "Open positions"
+title: "Positions in the group"
 permalink: /jobs/
 author_profile: false
 ---
 
-I have just completed recruitment for the 5 positions below. If you have an interest in these kinds of projects please contact me to discuss future positions.
-{: .notice--info}
+## Open positions
+
+<div class="grid__wrapper">
+  {% for post in site.jobs %}
+    {% if post.tags contains "open" %}
+    {% include archive-single.html type="list" %}
+    {% endif %}
+  {% endfor %}
+</div>
+
+
+## Closed positions
 
 
 <div class="grid__wrapper">
   {% for post in site.jobs %}
-    {% include archive-single.html type="grid" %}
+    {% if post.tags contains "closed" %}
+    {% include archive-single.html type="list" %}
+    {% endif %}
   {% endfor %}
 </div>

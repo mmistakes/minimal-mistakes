@@ -6,6 +6,7 @@ categories:
 tags:
  - jobs
  - mass spectrometry
+ - closed
 header:
   teaser: "/assets/images/erol-ahmed-399674-unsplash-eggs-500x300.jpg"
 ---

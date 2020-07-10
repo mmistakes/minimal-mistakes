@@ -4,6 +4,7 @@ categories:
  - jobs
 tags:
  - jobs
+ - closed
 header:
   teaser: "/assets/images/Transposon_insertion_in_Tn-seq.png"
 ---

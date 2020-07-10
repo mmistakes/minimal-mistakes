@@ -4,6 +4,7 @@ categories:
  - jobs
 tags:
  - jobs
+ - closed
 header:
   teaser: "/assets/images/edge_bundling3_1400px.png"
 ---

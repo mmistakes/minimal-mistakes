@@ -5,6 +5,7 @@ categories:
  - jobs
 tags:
  - jobs
+ - closed
 header:
   teaser: "/assets/images/nersc300-500.jpg"
 ---

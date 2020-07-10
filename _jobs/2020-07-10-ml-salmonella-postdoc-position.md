@@ -8,6 +8,7 @@ tags:
  - Salmonella
  - Autoencoders
  - MLST
+ - open
 header:
   teaser: "/assets/images/Salmonella_enteritidis_USDA.jpg"
 ---
@@ -24,7 +25,7 @@ graph representations to identify polymorphisms in ~250,000 genomes then use tha
 disentangled variational autoencoders to create reduced representations of genome space and synthetic data for
 training neural networks for phenotype prediction and antimicrobial resistance. The same data will
 be used for active learning to train models for sanitizer resistance. Because of the genome size and the number of 
-genomes, Salmonella is a great system to develop new non-linear polygenic scoring models tha could have a
+genomes, Salmonella is a great system to develop new non-linear polygenic scoring models that could have a
  major impact on other areas of genomics.  Salmonellosis is also a serious disease that sickens 1 million  Americans 
  a year and causes billions in economic losses. Improving methods of detection will help to reduce outbreaks.
 
