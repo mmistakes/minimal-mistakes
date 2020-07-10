@@ -62,7 +62,7 @@ Location: [Genomics and Bioinformatics Research Unit](https://www.ars.usda.gov/s
 
 USDA Lab Website: [tinyecology.com](https://www.ars.usda.gov/southeast-area/stoneville-ms/genomics-and-bioinformatics-research/)
 
-Interested? [Email today.](mailto:adam.rivers@usda.gov?Subject=UF-postdoc-position)
+Interested? [Email today.](mailto:adam.rivers@usda.gov?Subject=ML-salmonella-postdoc-position)
 
 ### Equal Employment Opportunity Statement:
 
