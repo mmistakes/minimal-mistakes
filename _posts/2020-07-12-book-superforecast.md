@@ -3,7 +3,10 @@ title: "Book Review (4) - 초예측 부의 미래 [4.5/5]"
 categories:
   - BOOK REVIEW
 tags:
-  - tag
+  - super forecase
+  - wealth
+  - economy
+  - capitalism
 ---
 
 ## 초예측 부의 미래 - 세계 석학 5인이 말하는 기술.자본.문명의 대전환
