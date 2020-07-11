@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2020-07-02T19:28:35+08:00
+last_modified_at: 2020-07-11T12:31:08+08:00
 toc: false
 ---
 
@@ -14,6 +14,7 @@ toc: false
 ### Enhancements
 
 - Replace Font Awesome Kits with CSS from jsDelivr CDN. [#2583](https://github.com/mmistakes/minimal-mistakes/pull/2583)
+- Add `danmaku` option to Bilibili video provider and add corresponding documentation/ [#2599](https://github.com/mmistakes/minimal-mistakes/pull/2599)
 
 ## [4.19.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.19.3)
 
