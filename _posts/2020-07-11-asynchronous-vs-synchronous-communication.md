@@ -78,4 +78,4 @@ To give direction to this new asynchronous wave within an organization, we advoc
 
 ----------
 
-Acknowledgement: thank you David Castonguay for co-authoring this post, and Janis Kukainis and Leah Grace 
+Acknowledgement: thank you David Castonguay for co-authoring this post, and Janis Kukainis and Leah Grace Capitan for comments and suggestions.
