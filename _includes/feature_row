@@ -21,7 +21,7 @@
 
         <div class="archive__item-body">
           {% if f.title %}
-            <h2 class="archive__item-title">{{ f.title }}</h2>
+            <h2 class="archive__item-title" id="{{ f.id }}">{{ f.title }}</h2>
           {% endif %}
 
           {% if f.excerpt %}
