@@ -28,9 +28,10 @@ author_profile: true
 * [BLE (3) - ATT/GATT 이해하기](https://enidanny.github.io/ble/ble-att-gatt/)
 * [BLE (4) - BLE 디바이스는 어떻게 연결할까?](https://enidanny.github.io/ble/ble-connection/)
 * [BLE (5) - BLE 통신 속도는 실제로 1 Mbps 일까?](https://enidanny.github.io/ble/ble-effective-throughput/)
+* [BLE (6) - BLE 5.0 주요 특징](https://enidanny.github.io/ble/ble5-intro/)
+* [BLE (7) - 연결 파라미터](https://enidanny.github.io/ble/ble-slave-latency/)
 
 ## 포스팅 예정 항목
-* BLE (6) - BLE 5.0 주요 특징
 <!--* BLE (?) - Nordic BLE chip 개발하기 (1): nRF52-DK 개발환경 구축 nRF52832 chip / Keil compiler / nRF command-line Tool / SDK, softdevice-->
 <!--* BLE (?) - Nordic BLE chip 개발하기 (2): nRF52-DK 프로그래밍 예제 sdk 구성 / softdevice, program upload / custom board upload / GATT 예제 (link)-->
 <!--* BLE (?) - Nordic BLE chip 개발하기 (3): BLE 비콘-->
