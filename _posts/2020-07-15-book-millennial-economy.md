@@ -28,5 +28,5 @@ tags:
 
 <figure style="width: 100%">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/book6.png" alt="">
-  <figcaption>출처: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=212970718</figcaption>
+  <figcaption>그림 출처: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=212970718</figcaption>
 </figure>

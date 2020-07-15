@@ -1,5 +1,5 @@
 ---
-title: "Book Review (?) - 책 제목 [?/5]"
+title: "책 리뷰 (?) - 책 제목 [?/5]"
 categories:
   - BOOK REVIEW
 tags:
@@ -25,5 +25,5 @@ tags:
 
 <figure style="width: 100%">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/book1.png" alt="">
-  <figcaption>출처: 관련링크</figcaption>
+  <figcaption>그림 출처: 관련링크</figcaption>
 </figure>

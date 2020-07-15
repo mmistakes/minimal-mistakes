@@ -31,7 +31,7 @@ tags:
 
 <figure style="width: 100%">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/book1.png" alt="">
-  <figcaption>출처: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=241335286</figcaption>
+  <figcaption>그림 출처: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=241335286</figcaption>
 </figure>
 
 <!-- 유니콘 기업이란, **기업가치 10억 달러** (한화 약 1.2조) 이상의 **비상장** 스타트업을 가리킨다. 기업가치가 10억 달러를 넘어서는 기업들이 등장하면서 유니콘 기업의 10배, 100배 이상의 가치를 갖는 기업들은 데카콘, 헥토콘 등으로 분류되기도 한다. 이들은 비즈니스 모델과 성장 잠재력을 토대로 다른 기관들의 투자를 받지만, 지속적인 경영을 위해서는 주식 시장에 상장(IPO)하거나 인수합병(M&A)으로 유니콘에서 탈출(exit)해야 한다. 즉, 최종적으로는 엑시콘(exit + unicorn) 기업이 되어야 한다는 것이다.
