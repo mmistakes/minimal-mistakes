@@ -1,5 +1,5 @@
 ---
-title: "Book Review (2) - 수축사회 [3.5/5]"
+title: "책 리뷰 (2) - 수축사회 [3.5/5]"
 categories:
   - BOOK REVIEW
 tags:

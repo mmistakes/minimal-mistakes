@@ -1,5 +1,5 @@
 ---
-title: "Book Review (6) - 밀레니얼 이코노미 [3.5/5]"
+title: "책 리뷰 (6) - 밀레니얼 이코노미 [3.5/5]"
 categories:
   - BOOK REVIEW
 tags:

@@ -1,5 +1,5 @@
 ---
-title: "Book Review (3) - 더 해빙 [4/5]"
+title: "책 리뷰 (3) - 더 해빙 [4/5]"
 categories:
   - BOOK REVIEW
 tags:

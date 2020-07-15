@@ -1,5 +1,5 @@
 ---
-title: "Book Review (1) - 반환점에 선 유니콘 [2/5]"
+title: "책 리뷰 (1) - 반환점에 선 유니콘 [2/5]"
 categories:
   - BOOK REVIEW
 tags:

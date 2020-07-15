@@ -1,5 +1,5 @@
 ---
-title: "Book Review (4) - 초예측 부의 미래 [4.5/5]"
+title: "책 리뷰 (4) - 초예측 부의 미래 [4.5/5]"
 categories:
   - BOOK REVIEW
 tags:

@@ -1,5 +1,5 @@
 ---
-title: "Book Review (5) - 사람은 어떻게 생각하고 배우고 기억하는가 [3/5]"
+title: "책 리뷰 (5) - 사람은 어떻게 생각하고 배우고 기억하는가 [3/5]"
 categories:
   - BOOK REVIEW
 tags:
