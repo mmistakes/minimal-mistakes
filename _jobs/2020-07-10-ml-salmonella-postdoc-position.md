@@ -1,6 +1,6 @@
 ---
 title: "Postdoc: Salmonella typing, phenotyping and machine learning"
-date: 2020-07-08
+date: 2020-07-10
 categories:
  - jobs
 tags:
@@ -11,7 +11,11 @@ tags:
  - open
 header:
   teaser: "/assets/images/Salmonella_enteritidis_USDA.jpg"
+custom-javascript-list:
+    - "salmonella.js"
 ---
+
+![](/assets/images/Salmonella_enteritidis_USDA.jpg)
 
 We will be filling this position as soon as possible, please apply by **August 1, 2020**
 {: .notice--warning}
@@ -38,7 +42,7 @@ I anticipate that a successful applicant will have an interest or experience in:
 * This position focuses on the development of applications for analysis
 of this data and the publication of software tools. A successful candidate will
 likely have some experience in version control, data structures, ML 
-frameworks like Keras, Tensorflow, or PyTorch and proficiency in Python,  
+frameworks like Keras, Tensorflow, or PyTorch and proficiency in Python.
 * The applicant should have a good understanding of statistics.
 
 I recognize that each person
@@ -58,6 +62,6 @@ The position is located in Gainesville, FL at the USDA Agricultural Research Ser
  
 Interested? [Email me today](mailto:adam.rivers@usda.gov?Subject=salmonella-postdoc-position).
 
-![](/assets/images/Salmonella_enteritidis_USDA.jpg)
+
 
 USDA/ARS is an equal opportunity provider and employer.
