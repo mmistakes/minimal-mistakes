@@ -1,6 +1,6 @@
 ---
 title: "Postdoc: Salmonella typing, phenotyping and machine learning"
-date: 2020-07-10
+date: 2020-07-17
 categories:
  - jobs
 tags:
@@ -76,7 +76,7 @@ to apply, even if your mix of skills is different than what is listed above.</p>
     "@type" : "Organization",
     "name" : "United States Department of Agriculture, Agricultural Research Service",
     "sameAs" : "https://www.ars.usda.gov/",
-    "logo" : "https://scinet.usda.gov/assets/img/usda-symbol-rgb-color.svg"
+    "logo" : "https://tinyecology.com/assets/USDALOGO-RGB.png"
   },
  "baseSalary": {
     "@type": "MonetaryAmount",
@@ -92,7 +92,7 @@ to apply, even if your mix of skills is different than what is listed above.</p>
 
 ![](/assets/images/Salmonella_enteritidis_USDA.jpg)
 
-We will be filling this position as soon as possible, please apply by **August 1, 2020**
+We will be filling this position as soon as possible, for full consideration please apply by **August 15, 2020**
 {: .notice--warning}
 
 # Position description
