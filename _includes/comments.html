@@ -1,33 +1,33 @@
 <div class="page__comments">
-  {% capture comments_label %}{{ site.data.ui-text[site.locale].comments_label | default: "Comments" }}{% endcapture %}
-  {% case site.comments.provider %}
-    {% when "discourse" %}
+  {%- capture comments_label -%}{{ site.data.ui-text[site.locale].comments_label | default: "Comments" }}{%- endcapture -%}
+  {%- case site.comments.provider -%}
+    {%- when "discourse" -%}
       <h4 class="page__comments-title">{{ comments_label }}</h4>
       <section id="discourse-comments"></section>
-    {% when "disqus" %}
+    {%- when "disqus" -%}
       <h4 class="page__comments-title">{{ comments_label }}</h4>
       <section id="disqus_thread"></section>
-    {% when "facebook" %}
+    {%- when "facebook" -%}
       <h4 class="page__comments-title">{{ comments_label }}</h4>
       <section class="fb-comments" data-href="{{ page.url | absolute_url }}" data-mobile="true" data-num-posts="{{ site.comments.facebook.num_posts | default: 5 }}" data-width="100%" data-colorscheme="{{ site.comments.facebook.colorscheme | default: 'light' }}"></section>
-    {% when "staticman_v2" %}
+    {%- when "staticman_v2" -%}
       <section id="static-comments">
-        {% if site.repository and site.comments.staticman.branch %}
+        {%- if site.repository and site.comments.staticman.branch -%}
           <!-- Start static comments -->
           <div class="js-comments">
-            {% if site.data.comments[page.slug] %}
+            {%- if site.data.comments[page.slug] -%}
               <h4 class="page__comments-title">{{ site.data.ui-text[site.locale].comments_title | default: "Comments" }}</h4>
-              {% assign comments = site.data.comments[page.slug] | sort %}
+              {%- assign comments = site.data.comments[page.slug] | sort -%}
 
-              {% for comment in comments %}
-                {% assign email = comment[1].email %}
-                {% assign name = comment[1].name %}
-                {% assign url = comment[1].url %}
-                {% assign date = comment[1].date %}
-                {% assign message = comment[1].message %}
-                {% include comment.html index=forloop.index email=email name=name url=url date=date message=message %}
-              {% endfor %}
-            {% endif %}
+              {%- for comment in comments -%}
+                {%- assign email = comment[1].email -%}
+                {%- assign name = comment[1].name -%}
+                {%- assign url = comment[1].url -%}
+                {%- assign date = comment[1].date -%}
+                {%- assign message = comment[1].message -%}
+                {%- include comment.html index=forloop.index email=email name=name url=url date=date message=message -%}
+              {%- endfor -%}
+            {%- endif -%}
           </div>
           <!-- End static comments -->
 
@@ -62,46 +62,46 @@
                 <input type="hidden" name="options[slug]" value="{{ page.slug }}">
                 <label for="comment-form-location">Not used. Leave blank if you are a human.</label>
                 <input type="text" id="comment-form-location" name="fields[hidden]" autocomplete="off"/>
-                {% if site.reCaptcha.siteKey %}<input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.reCaptcha.siteKey }}">{% endif %}
-                {% if site.reCaptcha.secret %}<input type="hidden" name="options[reCaptcha][secret]" value="{{ site.reCaptcha.secret }}">{% endif %}
+                {%- if site.reCaptcha.siteKey -%}<input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.reCaptcha.siteKey }}">{%- endif -%}
+                {%- if site.reCaptcha.secret -%}<input type="hidden" name="options[reCaptcha][secret]" value="{{ site.reCaptcha.secret }}">{%- endif -%}
               </div>
               <!-- Start comment form alert messaging -->
               <p class="hidden js-notice">
                 <strong class="js-notice-text"></strong>
               </p>
               <!-- End comment form alert messaging -->
-              {% if site.reCaptcha.siteKey %}
+              {%- if site.reCaptcha.siteKey -%}
                 <div class="form-group">
                   <div class="g-recaptcha" data-sitekey="{{ site.reCaptcha.siteKey }}"></div>
                 </div>
-              {% endif %}
+              {%- endif -%}
               <div class="form-group">
                 <button type="submit" id="comment-form-submit" tabindex="5" class="btn btn--primary btn--large">{{ site.data.ui-text[site.locale].comment_btn_submit | default: "Submit Comment" }}</button>
               </div>
             </form>
           </div>
           <!-- End new comment form -->
-          {% if site.reCaptcha.siteKey %}<script async src="https://www.google.com/recaptcha/api.js"></script>{% endif %}
-        {% endif %}
+          {%- if site.reCaptcha.siteKey -%}<script async src="https://www.google.com/recaptcha/api.js"></script>{%- endif -%}
+        {%- endif -%}
       </section>
-    {% when "staticman" %}
+    {%- when "staticman" -%}
       <section id="static-comments">
-        {% if site.repository and site.staticman.branch %}
+        {%- if site.repository and site.staticman.branch -%}
           <!-- Start static comments -->
           <div class="js-comments">
-            {% if site.data.comments[page.slug] %}
+            {%- if site.data.comments[page.slug] -%}
               <h4 class="page__comments-title">{{ site.data.ui-text[site.locale].comments_title | default: "Comments" }}</h4>
-              {% assign comments = site.data.comments[page.slug] | sort %}
+              {%- assign comments = site.data.comments[page.slug] | sort -%}
 
-              {% for comment in comments %}
-                {% assign email = comment[1].email %}
-                {% assign name = comment[1].name %}
-                {% assign url = comment[1].url %}
-                {% assign date = comment[1].date %}
-                {% assign message = comment[1].message %}
-                {% include comment.html index=forloop.index email=email name=name url=url date=date message=message %}
-              {% endfor %}
-            {% endif %}
+              {%- for comment in comments -%}
+                {%- assign email = comment[1].email -%}
+                {%- assign name = comment[1].name -%}
+                {%- assign url = comment[1].url -%}
+                {%- assign date = comment[1].date -%}
+                {%- assign message = comment[1].message -%}
+                {%- include comment.html index=forloop.index email=email name=name url=url date=date message=message -%}
+              {%- endfor -%}
+            {%- endif -%}
           </div>
           <!-- End static comments -->
 
@@ -148,12 +148,12 @@
             </form>
           </div>
           <!-- End new comment form -->
-        {% endif %}
+        {%- endif -%}
       </section>
-    {% when "utterances" %}
+    {%- when "utterances" -%}
       <h4 class="page__comments-title">{{ comments_label }}</h4>
       <section id="utterances-comments"></section>
-    {% when "custom" %}
-      {% include /comments-providers/custom.html %}
-  {% endcase %}
+    {%- when "custom" -%}
+      {%- include /comments-providers/custom.html -%}
+  {%- endcase -%}
 </div>
