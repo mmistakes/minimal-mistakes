@@ -1,6 +1,6 @@
 ---
-title: "Postdoc: Salmonella typing, phenotyping and machine learning"
-date: 2020-07-17
+title: "Machine learning/computational biology postdoc in bacterial genomics"
+date: 2020-07-20
 categories:
  - jobs
 tags:
@@ -17,8 +17,8 @@ header:
 {
   "@context" : "https://schema.org/",
   "@type" : "JobPosting",
-  "title" : "Postdoc Computational Biology",
-  "description" : "<p>This is a postdoc position to develop new *Salmonella* typing and
+  "title" : "Machine learning computational biology postdoc in bacterial genomics",
+  "description" : "<p>This is a postdoc position to develop new Salmonella typing and
 phenotype prediction methods from genomes and metagenomes using population
 genomics and machine learning.  The project is novel in a number of ways. We will be using
 graph representations to identify polymorphisms in ~250,000 genomes then use that information to train
