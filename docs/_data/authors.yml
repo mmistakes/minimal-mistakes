@@ -1,28 +1,28 @@
 # Authors
 
-Billy Rick:
-  name        : "Billy Rick"
-  bio         : "What do you want, jewels? I am a very extravagant man."
-  avatar      : "/assets/images/bio-photo-2.jpg"
+Jameson Buffmire:
+  name        : "Jameson Buffmire"
+  bio         : "San Francisco Startup and Tech Enthusiast"
+  avatar      : "/assets\Pics\Happy Face Shot.jpg"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:billyrick@rick.com"
+      url: "mailto:jt@signalset.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://thewhip.com"
+      url: "https://signalset.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/extravagantman"
+      url: "https://twitter.com/jtbuffmire"
 
-Cornelius Fiddlebone:
-  name        : "Cornelius Fiddlebone"
-  bio         : "I ordered what?"
-  avatar      : "/assets/images/bio-photo.jpg"
+Andrew Buffmire:
+  name        : "Andrew Buffmire"
+  bio         : "Titan of the SLC community"
+  avatar      : "/assets/Pics/Andrew.jpg"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:cornelius@thewhip.com"
+      url: "mailto:Andrew@Signalset.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/rhymeswithsackit"
+      url: "https://twitter.com/SignalsetSLC"
