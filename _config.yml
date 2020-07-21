@@ -20,7 +20,7 @@ title                    : "Matteo Pallini's technical blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Matteo Pallini"
-description              : "Matteo Pallini's amazing blog. Talking about interesting data explorations and software engineering"
+description              : "Talking about software engineering and (hopefully) interesting data explorations"
 url                      : "https://matteopallini.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "drabbit17/drabbit17.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
