@@ -11,22 +11,22 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+remote_theme           : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Site Title"
+locale                   : "en-GB"
+title                    : "Matteo Pallini's technical blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Matteo Pallini"
-description              : "Matteo Pallini's amazing blog."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "Matteo Pallini's amazing blog. Talking about interesting data explorations and software engineering"
+url                      : "https://matteopallini.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "drabbit17/drabbit17.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : "matteopallini.com" # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -94,14 +94,14 @@ analytics:
 # Site Author
 author:
   name             : "Matteo Pallini"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **okay** person."
+  avatar           : "/assets/images/logo_circular.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "I write about what I find interesting, which very often is related to software engineering or working with data"
   location         : "London, UK"
   email            :
   links:
     - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:matteo.pallini17@gmail.com"
+#      icon: "fas fa-fw fa-envelope-square"
+#      url: ""
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"

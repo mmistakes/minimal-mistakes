@@ -38,3 +38,24 @@
 @import "minimal-mistakes/archive";
 @import "minimal-mistakes/sidebar";
 @import "minimal-mistakes/print";
+
+
+html {
+    font-size: 10px; // originally 16px
+    @include breakpoint($medium) {
+        font-size: 12px; // originally 18px
+    }
+
+    @include breakpoint($large) {
+        font-size: 14px; // originally 20px
+    }
+
+    @include breakpoint($x-large) {
+        font-size: 16px; // originally 22px
+    }
+}
+
+.title-href {
+  text-decoration: none;
+  color: black;
+}
