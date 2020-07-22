@@ -10,6 +10,7 @@
 - Update link to wtfpl license in README. [#2571](https://github.com/mmistakes/minimal-mistakes/pull/2571)
 - Ignore teaser headline in table of contents when including posts list in another page. [#2558](https://github.com/mmistakes/minimal-mistakes/pull/2558)
 - Replace Font Awesome Kits with CSS from jsDelivr CDN. [#2583](https://github.com/mmistakes/minimal-mistakes/pull/2583)
+- Add `danmaku` option to Bilibili video provider and add corresponding documentation/ [#2599](https://github.com/mmistakes/minimal-mistakes/pull/2599)
 
 ## [4.19.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.19.3)
 
