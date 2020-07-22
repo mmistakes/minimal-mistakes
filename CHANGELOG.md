@@ -1,5 +1,9 @@
 ## Unreleased
 
+### Bug Fixes
+
+- Fix typo in installation documentation. [#2570](https://github.com/mmistakes/minimal-mistakes/pull/2570)
+
 ### Enhancements
 
 - Ignore teaser headline in table of contents when including posts list in another page. [#2558](https://github.com/mmistakes/minimal-mistakes/pull/2558)
