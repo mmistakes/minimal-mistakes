@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2020-07-11T12:31:08+08:00
+last_modified_at: 2020-07-22T15:45:31-04:00
 toc: false
 ---
 
@@ -17,6 +17,7 @@ toc: false
 
 ### Enhancements
 
+- Add `line-height` to `h4` element in notice helper. [#2602](https://github.com/mmistakes/minimal-mistakes/pull/2602)
 - Improve Algolia search. [#2572](https://github.com/mmistakes/minimal-mistakes/pull/2572)
 - Update link to wtfpl license in README. [#2571](https://github.com/mmistakes/minimal-mistakes/pull/2571)
 - Ignore teaser headline in table of contents when including posts list in another page. [#2558](https://github.com/mmistakes/minimal-mistakes/pull/2558)
