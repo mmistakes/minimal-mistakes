@@ -44,11 +44,18 @@ search.addWidget(
   instantsearch.widgets.hits({
     container: '.search-hits',
     templates: {
-      item: hitTemplate
+      item: hitTemplate,
+      empty: '{{ site.data.ui-text[site.locale].search_algolia_no_results | default: "No results" }}',
     }
   })
 );
 
-// Starting the search
-search.start();
+// Starting the search only when toggle is clicked
+$(document).ready(function () {
+  $(".search__toggle").on("click", function() {
+    if(!search.started) {
+      search.start();
+    }
+  });
+});
 </script>

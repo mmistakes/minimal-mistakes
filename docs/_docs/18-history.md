@@ -5,9 +5,25 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2020-06-06T11:48:13-04:00
+last_modified_at: 2020-07-22T15:47:17-04:00
 toc: false
 ---
+
+## Unreleased
+
+### Bug Fixes
+
+- Fix `analytics.provider` config comment to list all analytics providers. [#2607](https://github.com/mmistakes/minimal-mistakes/pull/2607)
+- Fix typo in installation documentation. [#2570](https://github.com/mmistakes/minimal-mistakes/pull/2570)
+
+### Enhancements
+
+- Add `line-height` to `h4` element in notice helper. [#2602](https://github.com/mmistakes/minimal-mistakes/pull/2602)
+- Improve Algolia search. [#2572](https://github.com/mmistakes/minimal-mistakes/pull/2572)
+- Update link to wtfpl license in README. [#2571](https://github.com/mmistakes/minimal-mistakes/pull/2571)
+- Ignore teaser headline in table of contents when including posts list in another page. [#2558](https://github.com/mmistakes/minimal-mistakes/pull/2558)
+- Replace Font Awesome Kits with CSS from jsDelivr CDN. [#2583](https://github.com/mmistakes/minimal-mistakes/pull/2583)
+- Add `danmaku` option to Bilibili video provider and add corresponding documentation/ [#2599](https://github.com/mmistakes/minimal-mistakes/pull/2599)
 
 ## [4.19.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.19.3)
 
