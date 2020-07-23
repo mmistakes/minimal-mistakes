@@ -269,7 +269,7 @@ Breadcrumb start link text and separator character can both be changed in the [U
 
 Enable post date snippets with `show_date: true` in YAML Front Matter.
 
-![post date example]({{ "/assets/images/mm-read-time-example.jpg" | relative_url }})
+![post date example]({{ "/assets/images/mm-post-date-example.png" | relative_url }})
 
 Instead of adding `show_date: true` to each post, apply as a default in `_config.yml` like so:
 
