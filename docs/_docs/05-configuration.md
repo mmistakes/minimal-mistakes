@@ -265,6 +265,26 @@ breadcrumbs: true  # disabled by default
 
 Breadcrumb start link text and separator character can both be changed in the [UI Text data file]({{ "/docs/ui-text/" | relative_url }}).
 
+### Post dates
+
+Enable post date snippets with `show_date: true` in YAML Front Matter.
+
+![post date example]({{ "/assets/images/mm-read-time-example.jpg" | relative_url }})
+
+Instead of adding `show_date: true` to each post, apply as a default in `_config.yml` like so:
+
+```yaml
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      show_date: true
+```
+
+To disable post date for a post, add `show_date: false` its YAML Front Matter to override what was set in `_config.yml`.
+
 ### Reading time
 
 Enable estimated reading time snippets with `read_time: true` in YAML Front Matter. `200` has been set as the default words per minute value --- which can be changed by adjusting `words_per_minute:` in `_config.yml`.
@@ -290,6 +310,10 @@ To disable reading time for a post, add `read_time: false` its YAML Front Matter
 ```yaml
 words_per_minute: 250
 ```
+
+### Post meta separator
+
+To customise the separator between the post date and reading time (if both are enabled), edit the "post_meta_separator" string in the [UI Text data file]({{ "/docs/ui-text/" | relative_url }}).
 
 ### Comments
 
