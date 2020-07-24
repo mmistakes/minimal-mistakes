@@ -337,9 +337,8 @@ paginate_path: /blog/page:num
 **Note:** Jekyll can only paginate a single `index.html` file. If you'd like to paginate more pages (e.g. category indexes) you'll need the help of a custom plugin. For more pagination related settings check the [**Configuration**]({{ "/docs/configuration/#paginate" | relative_url }}) section.
 {: .notice--info}
 
-Because `layout: home` is a variant of `layout: archive`, posts can be shown in list and grid views. See [grid view](#grid-view) documentation above for more details.
-
-**ProTip**: Combine `entries_layout: grid` with `classes: wide` to increase the width of the main container, giving more space to the grid items.
+**Note:** By default, documents are shown in a list view. To change to a grid view add `entries_layout: grid` to the page's front matter. To increase the width of the main container, giving more space to the grid items also add `classes: wide` to the home page's YAML Front Matter.
+{: .notice--info}
 
 ## Splash page layout
 
