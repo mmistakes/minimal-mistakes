@@ -11,7 +11,6 @@ en: &DEFAULT_EN
   pagination_previous        : "Previous"
   pagination_next            : "Next"
   breadcrumb_home_label      : "Home"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 : "Toggle menu"
   search_label               : "Toggle search"
@@ -70,7 +69,6 @@ es: &DEFAULT_ES
   pagination_previous        : "Anterior"
   pagination_next            : "Siguiente"
   breadcrumb_home_label      : "Inicio"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 : "Alternar menú"
   search_label               : "Alternar búsqueda"
@@ -125,7 +123,6 @@ fr: &DEFAULT_FR
   pagination_previous        : "Précédent"
   pagination_next            : "Suivant"
   breadcrumb_home_label      : "Accueil"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 : "Menu"
   search_label               :
@@ -182,7 +179,6 @@ tr: &DEFAULT_TR
   pagination_previous        : "Önceki"
   pagination_next            : "Sonraki"
   breadcrumb_home_label      : "Ana Sayfa"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 :
   search_label               :
@@ -232,7 +228,6 @@ pt: &DEFAULT_PT
   pagination_previous        : "Anterior"
   pagination_next            : "Seguinte"
   breadcrumb_home_label      : "Início"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 :
   search_label               :
@@ -280,7 +275,6 @@ pt-BR:
   pagination_previous        : "Anterior"
   pagination_next            : "Próxima"
   breadcrumb_home_label      : "Home"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 :
   search_label               : "Buscar"
@@ -331,7 +325,6 @@ it: &DEFAULT_IT
   pagination_previous        : "Precedente"
   pagination_next            : "Prossima"
   breadcrumb_home_label      : "Home"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 :
   search_label               :
@@ -384,7 +377,6 @@ zh: &DEFAULT_ZH_HANS
   pagination_previous        : "向前"
   pagination_next            : "向后"
   breadcrumb_home_label      : "首页"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 : "切换菜单"
   search_label               :
@@ -437,7 +429,6 @@ zh-TW: &DEFAULT_ZH_HANT
   pagination_previous        : "較舊"
   pagination_next            : "較新"
   breadcrumb_home_label      : "首頁"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 : "切換選單"
   search_label               :
@@ -487,7 +478,6 @@ de: &DEFAULT_DE
   pagination_previous        : "Vorherige"
   pagination_next            : "Nächste"
   breadcrumb_home_label      : "Start"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 : "Menü ein-/ausschalten"
   search_label               :
@@ -549,7 +539,6 @@ ne: &DEFAULT_NE
   pagination_previous        : "अघिल्लो"
   pagination_next            : "अर्को"
   breadcrumb_home_label      : "गृह"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 : "टगल मेनु"
   search_label               :
@@ -599,7 +588,6 @@ ko: &DEFAULT_KO
   pagination_previous        : "이전"
   pagination_next            : "다음"
   breadcrumb_home_label      : "Home"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 : "토글 메뉴"
   search_label               :
@@ -652,7 +640,6 @@ ru: &DEFAULT_RU
   pagination_previous        : "Предыдущая"
   pagination_next            : "Следующая"
   breadcrumb_home_label      : "Главная"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 : "Выпадающее меню"
   search_label               :
@@ -704,7 +691,6 @@ lt: &DEFAULT_LT
   pagination_previous        : "Ankstesnis"
   pagination_next            : "Sekantis"
   breadcrumb_home_label      : "Pagrindinis"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 : "Meniu rodymas"
   search_label               :
@@ -754,7 +740,6 @@ gr: &DEFAULT_GR
   pagination_previous        : "Προηγούμενo"
   pagination_next            : "Επόμενo"
   breadcrumb_home_label      : "Αρχική"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 : "Μενού"
   search_label               :
@@ -806,7 +791,6 @@ sv: &DEFAULT_SV
   pagination_previous        : "Föregående"
   pagination_next            : "Nästa"
   breadcrumb_home_label      : "Hem"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 : "Växla menyläge"
   search_label               : "Växla sökläge"
@@ -861,7 +845,6 @@ nl: &DEFAULT_NL
   pagination_previous        : "Vorige"
   pagination_next            : "Volgende"
   breadcrumb_home_label      : "Home"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 : "Wissel Menu"
   search_label               :
@@ -916,7 +899,6 @@ id: &DEFAULT_ID
   pagination_previous        : "Kembali"
   pagination_next            : "Maju"
   breadcrumb_home_label      : "Home"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 : "Menu Toggle"
   search_label               :
@@ -966,7 +948,6 @@ vi: &DEFAULT_VI
   pagination_previous        : "Trước"
   pagination_next            : "Kế tiếp"
   breadcrumb_home_label      : "Trang chủ"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 : "Menu"
   search_label               : "Tìm kiếm"
@@ -1019,7 +1000,6 @@ da: &DEFAULT_DA
   pagination_previous        : "Forrige"
   pagination_next            : "Næste"
   breadcrumb_home_label      : "Home"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 : "Vis/skjul menu"
   search_label               :
@@ -1072,7 +1052,6 @@ pl: &DEFAULT_PL
   pagination_previous        : "Poprzednia"
   pagination_next            : "Następna"
   breadcrumb_home_label      : "Strona główna"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 : "Przełącz menu"
   search_label               :
@@ -1122,7 +1101,6 @@ ja: &DEFAULT_JA
   pagination_previous        : "前へ"
   pagination_next            : "次へ"
   breadcrumb_home_label      : "ホーム"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 : "メニュー"
   search_label               :
@@ -1174,7 +1152,6 @@ sk: &DEFAULT_SK
   pagination_previous        : "Predošlá"
   pagination_next            : "Ďalšia"
   breadcrumb_home_label      : "Domov"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 : "Menu"
   search_label               :
@@ -1227,7 +1204,6 @@ hu: &DEFAULT_HU
   pagination_previous        : "Előző"
   pagination_next            : "Következő"
   breadcrumb_home_label      : "Kezdőlap"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 : "Menü nyit/zár"
   search_label               :
@@ -1280,7 +1256,6 @@ ro: &DEFAULT_RO
   pagination_previous        : "Anterior"
   pagination_next            : "Următor"
   breadcrumb_home_label      : "Acasă"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 : "Comută meniul"
   search_label               :
@@ -1333,7 +1308,6 @@ pa: &DEFAULT_PA
   pagination_previous        : "ਪਿਛਲਾ"
   pagination_next            : "ਅਗਲਾ "
   breadcrumb_home_label      : "ਘਰ"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 : "ਟੌਗਲ ਮੀਨੂ"
   search_label               : "ਖੋਜ"
@@ -1386,7 +1360,6 @@ fa: &DEFAULT_FA
   pagination_previous        : "قبلی"
   pagination_next            : "بعدی"
   breadcrumb_home_label      : "صفحه اصلی"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 : "فهرست"
   toc_label                  : "در این صفحه"
@@ -1439,7 +1412,6 @@ ml: &DEFAULT_ML
   pagination_previous        : "തിരികെ"
   pagination_next            : "മുന്നോട്ട്"
   breadcrumb_home_label      : "ഹോം"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 : "ടോഗിൾ മെനു"
   search_label               : "ടോഗിൾ സെർച്ച്"
@@ -1492,7 +1464,6 @@ th: &DEFAULT_TH
   pagination_previous        : "ก่อนหน้า"
   pagination_next            : "ถัดไป"
   breadcrumb_home_label      : "หน้าแรก"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 : "พับเมนู"
   search_label               : "พับการค้นหา"
@@ -1545,7 +1516,6 @@ hi: &DEFAULT_HI
   pagination_previous        : "पिछला"
   pagination_next            : "अगला"
   breadcrumb_home_label      : "घर"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 : "टॉगल मेनू"
   toc_label                  : "इस पृष्ठ पर"
@@ -1597,7 +1567,6 @@ ca: &DEFAULT_CA
   pagination_previous        : "Anterior"
   pagination_next            : "Següent"
   breadcrumb_home_label      : "Inici"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 : "Mostra/amaga el menú"
   search_label               : "Mostra/amaga la cerca"
@@ -1650,7 +1619,6 @@ ga: &DEFAULT_GA
   pagination_previous        : "Leathanach roimhe sin"
   pagination_next            : "Céad leathanach eile"
   breadcrumb_home_label      : "Baile"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 : "Scorán roghchlár"
   search_label               : "Scorán cuardach"
@@ -1698,7 +1666,6 @@ fi: &DEFAULT_FI
   pagination_previous        : "Edellinen"
   pagination_next            : "Seuraava"
   breadcrumb_home_label      : "Etusivu"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 : "Avaa valikko"
   search_label               : "Avaa haku"
@@ -1749,7 +1716,6 @@ my: &DEFAULT_MY
   pagination_previous        : "ရှေ့တစ်ခု"
   pagination_next            : "နောက်တစ်ခု"
   breadcrumb_home_label      : "ပင်မစာမျက်နှာ"
-  post_meta_separator        : " • "
   breadcrumb_separator       : "/"
   menu_label                 : "မီနူး ဖွင့်၊ပိတ်"
   search_label               : "ရှာ​ဖွေရန် ဖွင့်၊ပိတ်"

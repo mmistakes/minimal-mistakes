@@ -313,7 +313,17 @@ words_per_minute: 250
 
 ### Post meta separator
 
-To customise the separator between the post date and reading time (if both are enabled), edit the "post_meta_separator" string in the [UI Text data file]({{ "/docs/ui-text/" | relative_url }}).
+To customise the separator between the post date and reading time (if both are enabled), edit ```.post__meta-sep::before``` in a [custom stylesheet]({{ "/docs/stylesheets/" | relative_url }}).
+
+For example,
+
+```css
+.post__meta-sep::before {
+  content: "\2022";
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+```
 
 ### Comments
 
