@@ -150,7 +150,7 @@ classes: wide
 ## <i class="fas fa-space-shuttle fa-2x" style="margin-right: 0.1em"></i> *OTHER EXPERIENCES*
 
 <i class="fas fa-caret-square-right" style="margin-top: 1em"></i>
-**해킹보안연구그룹 NULL@ROOT**{: style="margin-left: 1em;"} *Head*
+**해킹보안연구그룹 NULL@ROOT**{: style="margin-left: 1em;"}
 *Dec. 2012 - Now*{: style="color: gray; font-size: 0.6em; margin: 1em;"}
 
 - 최신 해킹, 보안, 개발 관련 연구 및 세미나
