@@ -15,14 +15,15 @@ classes: wide
 ## <i class="fas fa-building fa-2x" style="margin-right: 0.1em"></i> *WORK EXPERIENCE*
 
 <i class="fas fa-caret-square-right" style="margin-top: 1em"></i>
-**SAP Labs Korea**{: style="margin-left: 1em;"}, Developer
+**SAP Labs Korea**{: style="margin-left: 1em;"}, Software Developer
 *Sep. 2019 - Now*{: style="color: gray; font-size: 0.6em; margin-left: 1em;"}
 
 - HANA Platform Core (Korea) Optimize 
+- Development/maintenance SQL Optimizer(CBO) on HANA
 {: style="color: gray; font-size: 0.8em; margin: 1em; "}
 
 <i class="far fa-caret-square-right" style="margin-top: 1em"></i>
-**엔씨소프트**{: style="margin-left: 1em;"}, Security Application Developer
+**NCSOFT**{: style="margin-left: 1em;"}, Security Application Developer
 *Sep. 2016 - Sep. 2019*{: style="color: gray; font-size: 0.6em; margin-left: 1em;"}
 
 - 게임 및 사내 취약점 점검 및 도구 개발
@@ -31,16 +32,16 @@ classes: wide
 {: style="color: gray; font-size: 0.8em; margin: 1em; "}
 
 <i class="far fa-caret-square-right" style="margin-top: 1em"></i>
-**미라지웍스**{: style="margin-left: 1em;"}, Software Engineer
-*Jun. 2014 - Mar. 2016 (산업기능요원 복무)*{: style="color: gray; font-size: 0.6em; margin: 1em;"}
+**Mirageworks**{: style="margin-left: 1em;"}, Software Engineer
+*Jun. 2014 - Mar. 2016 (Alternative to military service)*{: style="color: gray; font-size: 0.6em; margin: 1em;"}
 
 - 샌드박스 기반의 논리적 가상화 솔루션 개발
 - 윈도우 주요 업데이트 변경점 분석 및 코드 적용
 {: style="color: gray; font-size: 0.8em; margin: 1em; "}
 
 <i class="far fa-caret-square-right" style="margin-top: 1em"></i>
-**에어큐브**{: style="margin-left: 1em;"}, Software Engineer
-*Jan. 2013 - May. 2014 (산업기능요원 복무)*{: style="color: gray; font-size: 0.6em; margin: 1em;"}
+**Aircuve**{: style="margin-left: 1em;"}, Software Engineer
+*Jan. 2013 - May. 2014 (Alternative to military service)*{: style="color: gray; font-size: 0.6em; margin: 1em;"}
 
 - 패킷 필터 드라이버 기반의 네트워크 보안 솔루션 개발
 - ARP Spoofing 탐지 및 방어 솔루션 개발
@@ -177,6 +178,12 @@ classes: wide
 
 - 국내 대학교 정보보호동아리 네트워크 구축
 - 권역별 세미나 진행
+{: style="color: gray; font-size: 0.8em; margin: 1em; "}
+
+<i class="far fa-caret-square-right" style="margin-top: 1em"></i>
+**2011 Microsoft Student Partner**{: style="margin-left: 1em;"}
+*0. 2011 - 0. 2011*{: style="color: gray; font-size: 0.6em; margin: 1em;"}
+
 {: style="color: gray; font-size: 0.8em; margin: 1em; "}
 
 
