@@ -12,15 +12,10 @@ layout: archive
   {% assign posts = site.posts %}
 {% endif %}
 
-{% if page.entries_layout == "grid" %}
-<p></p>
-{% endif %}
-
 <div class="entries-{{ page.entries_layout | default: 'list' }}">
   {% for post in posts %}
     {% include archive-single.html type=page.entries_layout %}
   {% endfor %}
 </div>
-
 
 {% include paginator.html %}
