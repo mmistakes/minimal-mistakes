@@ -1,5 +1,6 @@
 ---
 layout: posts
+comments: true
 author_profile: true
 title: Sending multiple POST requests from a spidered page using Scrapy
 excerpt: A possible pattern for replicating programmatically AJAX POST requests when scraping webpages using Scrapy

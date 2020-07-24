@@ -1,0 +1,182 @@
+// comment styles from
+// https://github.com/willymcallister/willymcallister.github.io/blob/fbc7f396fbe80186b1abc63e436ec509190c1b3a/assets/main.scss
+
+$base-font-size:    18px !default;
+$comment-font-size: 17px !default;
+$small-font-size: small;
+$base-font-weight: normal;
+$base-font-family: $sans-serif !default;
+$base-line-height: 1.8;
+$grey-color : #808080;
+$grey-color-light : #D3D3D3;
+
+//
+// Staticman new comment form
+//
+
+.js-form {
+  background-color: $background-color;
+}
+
+input, select, textarea, label, button {
+//    @extend body;
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    color: $text-color;
+    background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+        -moz-font-feature-settings: "kern" 1;
+        -o-font-feature-settings: "kern" 1;
+            font-feature-settings: "kern" 1;
+    font-kerning: normal;
+}
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+.textfield {
+    width: 420px;
+    max-width: 100%;
+    padding: 0.5rem 0;
+}
+
+.hp {
+    display: none;
+}
+
+textarea {
+    vertical-align: top;
+}
+.textfield__input {
+    border: 1px solid rgba(0,0,0,.12);
+    padding: 4px 5px;
+    width: 100%;
+    font-size: $comment-font-size;
+}
+.notify-me, .g-recaptcha {
+    padding: 0.5rem 0;
+}
+.button {
+    background: rgba(158,158,158,.2);
+    box-shadow: 0 2px 2px 2px rgba(0,0,0,.14);
+    border: none;
+    border-radius: 2px;
+    padding: 4px 8px;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    margin: 4px 0px 0px 0px;
+}
+button:hover {
+    background-color: $grey-color;
+    color: white;
+}
+
+//
+// Staticman existing comments
+//
+.comments {
+}
+.comment__new {
+    padding: 0px 0px 14px 0px;
+}
+.comment__author {
+    color: $grey-color;
+}
+.comment__date {
+    font-size: $small-font-size;
+}
+.comment__body {
+    font-size: $comment-font-size;
+}
+.comment__meta {
+    text-align: left;
+    color: $grey-color;
+    font-size: $small-font-size;
+}
+.comments__existing {
+    padding: 8px 0px 0px 0px;
+}
+.comment {
+    border-top: 0px solid $grey-color-light;
+    padding: 0px 0px 0px 0px;
+    margin-bottom: 1em;
+}
+.comment.child {
+    margin-left: 3em;
+}
+.comment__reply-link {
+    color: $grey-color;
+    font-size: $small-font-size;
+    cursor: pointer;
+}
+
+//
+// Pop-up modal window for Staticman comments
+//
+.show-modal {
+    overflow: hidden;
+    position: relative;
+}
+.show-modal:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+.show-modal .modal {
+    display: block;
+}
+.mdl-card {
+    min-height: 200px;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    background: #fff;
+    box-sizing: border-box;
+}
+.modal {
+    display: none;
+    position: fixed;
+    width: 330px;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+    min-height: 0;
+    z-index: 9999;
+    box-shadow: 0 2px 2px 2px rgba(0,0,0,.14);
+    padding: 16px;
+    border-radius: 2px;
+    background: white;
+}
+.mdl-shadow--16dp {
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,.14),0 6px 30px 5px rgba(0,0,0,.12),0 8px 10px -5px rgba(0,0,0,.2);
+}
+.mdl-card__supporting-text {
+    overflow: hidden;
+    padding: 16px;
+    width: 90%;
+}
+.modal-title {
+    margin-bottom: 0px;
+}
+
+.disabled {
+    input,
+    button,
+    textarea,
+    label {
+        pointer-events: none;
+        cursor: not-allowed;
+        filter: alpha(opacity=65);
+        box-shadow: none;
+        opacity: 0.65;
+    }
+}

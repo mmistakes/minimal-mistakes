@@ -38,7 +38,7 @@ en: &DEFAULT_EN
   comment_form_comment_label : "Comment"
   comment_form_md_info       : "Markdown is supported."
   comment_form_name_label    : "Name"
-  comment_form_email_label   : "Email address"
+  comment_form_email_label   : "Email address (optional)"
   comment_form_website_label : "Website (optional)"
   comment_btn_submit         : "Submit comment"
   comment_btn_submitted      : "Submitted"
