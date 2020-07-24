@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2020-07-23T12:13:57-04:00
+last_modified_at: 2020-07-24T00:00:00+00:00
 toc: false
 ---
 
@@ -16,6 +16,7 @@ toc: false
 - Add `relative_url` filter to author home link [#2575](https://github.com/mmistakes/minimal-mistakes/pull/2575)
 - Fix `analytics.provider` config comment to list all analytics providers. [#2607](https://github.com/mmistakes/minimal-mistakes/pull/2607)
 - Fix typo in installation documentation. [#2570](https://github.com/mmistakes/minimal-mistakes/pull/2570)
+- Fix broken Lunr search with Jekyll v4.1.0. [#2617](https://github.com/mmistakes/minimal-mistakes/pull/2617)
 
 ### Enhancements
 
