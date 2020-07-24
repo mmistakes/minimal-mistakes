@@ -155,6 +155,7 @@ classes: wide
 
 - 최신 해킹, 보안, 개발 관련 연구 및 세미나
 - 국내/외 해킹 대회 참여 
+- Worked as team leader from 2017 to 2020
 {: style="color: gray; font-size: 0.8em; margin: 1em; "}
 
 <i class="far fa-caret-square-right" style="margin-top: 1em"></i>
