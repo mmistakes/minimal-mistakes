@@ -7,7 +7,7 @@ single_layout_gallery:
     alt: "single layout with header example"
   - image_path: /assets/images/mm-layout-single-meta.png
     alt: "single layout with comments and related posts"
-last_modified_at: 2020-03-06T15:47:42-05:00
+last_modified_at: 2020-07-24T16:00:21-04:00
 toc: true
 toc_label: "Included Layouts"
 toc_icon: "columns"
@@ -336,6 +336,10 @@ paginate_path: /blog/page:num
 
 **Note:** Jekyll can only paginate a single `index.html` file. If you'd like to paginate more pages (e.g. category indexes) you'll need the help of a custom plugin. For more pagination related settings check the [**Configuration**]({{ "/docs/configuration/#paginate" | relative_url }}) section.
 {: .notice--info}
+
+Because `layout: home` is a variant of `layout: archive`, posts can be shown in list and grid views. See [grid view](#grid-view) documentation above for more details.
+
+**ProTip**: Combine `entries_layout: grid` with `classes: wide` to increase the width of the main container, giving more space to the grid items.
 
 ## Splash page layout
 
