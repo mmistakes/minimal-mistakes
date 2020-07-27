@@ -21,7 +21,8 @@ Jekyll will use the files in your project first before falling back to the defau
 /_sass
 ```
 
-Additionally, from `v4.5.0` the theme-gem will also exhibit above behavior for `/_data` via a plugin.
+Additionally, from `v4.5.0` onwards the theme-gem will also exhibit above behavior for `/_data` via a plugin.
 Consequently, the data files for UI Text and Navigation are also bundled within the theme-gem.
+This doesn't apply if you're building your site on GitHub Pages, however.
 
 For more information on customizing the theme's [stylesheets]({{ "/docs/stylesheets/" | relative_url }}) and [JavaScript]({{ "/docs/javascript/" | relative_url }}), see the appropriate pages.
