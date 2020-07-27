@@ -27,6 +27,8 @@ sidebar-menu:
         url: /school-newspaper
       - title: "Дистанційне навчання"
         url: /news
+      - title: "Нормативний путівник"
+        url: /normative_guide
 
   - title: Виховна робота
     children:
