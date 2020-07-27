@@ -13,7 +13,7 @@ sidebar:
 5. [Статут КЗО "НВК №125" ДМР](/open/statut/)
 6. [Свідоцтво про державну реєстрацію юридичної особи](/open/registration-certificate/)
 7. [Довідка з єдиного державного реєстру підприємств](/open/state-certificate/)
-8. [Свідоцтво про атестацію](/open/attestation-certificate/)
+8. [Свідоцтво про атестацію/Ліцензія](/open/attestation-certificate/)
 9. [Структура та органи управління закладом](/open/management-structure/)
 10. [Адміністрація закладу](/open/administration/)
 11. [Графік чергування](/open/schedule/)
