@@ -11,6 +11,7 @@
 
 - Add entry layout configuration for `list` (default) or `grid` views on `layout: home`. [#2616](https://github.com/mmistakes/minimal-mistakes/pull/2616)
 - Add missing Chinese translations. [#2576](https://github.com/mmistakes/minimal-mistakes/pull/2576)
+- Improve Chinese translations. [#2626](https://github.com/mmistakes/minimal-mistakes/pull/2626)
 - Add `line-height` to `h4` element in notice helper. [#2602](https://github.com/mmistakes/minimal-mistakes/pull/2602)
 - Improve Algolia search. [#2572](https://github.com/mmistakes/minimal-mistakes/pull/2572)
 - Update link to wtfpl license in README. [#2571](https://github.com/mmistakes/minimal-mistakes/pull/2571)
