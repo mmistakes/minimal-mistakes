@@ -2,17 +2,7 @@
 layout: default
 ---
 
-{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
-  {% include page__hero.html %}
-{% elsif page.header.video.id and page.header.video.provider %}
-  {% include page__hero_video.html %}
-{% endif %}
-
-{% if page.url != "/" and site.breadcrumbs %}
-  {% unless paginator %}
-    {% include breadcrumbs.html %}
-  {% endunless %}
-{% endif %}
+{% include page__header-common.html %}
 
 <div id="main" role="main">
   {% include sidebar.html %}
@@ -24,7 +14,7 @@ layout: default
     {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
 
     <div class="page__inner-wrap">
-      {% unless page.header.overlay_color or page.header.overlay_image %}
+      {% unless has_overlay %}
         <header>
           {% if page.title %}<h1 id="page-title" class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
           {% if page.read_time %}

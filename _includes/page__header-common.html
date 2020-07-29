@@ -1,0 +1,18 @@
+{% assign has_overlay = false %}
+{% if page.header.overlay_background or page.header.overlay_color or page.header.overlay_image %}
+  {% assign has_overlay = true %}
+{% endif %}
+
+{% if has_overlay or page.header.image %}
+  {% include page__hero.html %}
+{% elsif page.header.video.id and page.header.video.provider %}
+  {% include page__hero_video.html %}
+{% endif %}
+
+{% unless page.layout == "splash" %}
+  {% if page.url != "/" and site.breadcrumbs %}
+    {% unless paginator %}
+      {% include breadcrumbs.html %}
+    {% endunless %}
+  {% endif %}
+{% endunless %}
