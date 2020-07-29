@@ -97,7 +97,7 @@ The layout you'll likely use the most --- sidebar and main content combo.
 **Includes:**
 
 * Optional header image with caption
-* Optional header overlay (solid color/image) + text and optional "call to action" button
+* Optional header overlay (solid color/image/custom CSS) + text and optional "call to action" button
 * Optional social sharing links module
 * Optional comments module
 * Optional related posts module
@@ -147,7 +147,7 @@ Essentially the same as `single` with markup adjustments and some modules remove
 **Includes:**
 
 * Optional header image with caption
-* Optional header overlay (solid color/image) + text and optional "call to action" button
+* Optional header overlay (solid color/image/custom CSS) + text and optional "call to action" button
 * List and grid views
 
 <figure>
@@ -347,7 +347,7 @@ For full-width landing pages that need a little something extra add `layout: spl
 **Includes:**
 
 * Optional header image with caption
-* Optional header overlay (solid color/image) + text and optional "call to action" button
+* Optional header overlay (solid color/image/custom CSS) + text and optional "call to action" button
 * Feature blocks (`left`, `center`, and `right` alignment options)
 
 ![splash page layout example]({{ "/assets/images/mm-layout-splash.png" | relative_url }})
@@ -426,14 +426,19 @@ To overlay text on top of a header image you have a few more options:
 
 | Name                     | Description | Default |
 | ----                     | ----------- | ------- |
+| **overlay_color**        | A color you'd like to use as a solid overlay. Either RGB format `#rrggbb` or [a color name][color-values] may be used. | |
 | **overlay_image**        | Header image you'd like to overlay. Same rules as `header.image` from above. | |
 | **overlay_filter**       | Color/opacity to overlay on top of the header image eg: `0.5` or `rgba(255, 0, 0, 0.5)`. |
+| **overlay_background**   | Advanced: Set a custom [CSS `background` value][css-background] to use as the overlay. | |
 | **show_overlay_excerpt** | Display excerpt in the overlay text | true |
 | **excerpt**              | Auto-generated page excerpt is added to the overlay text or can be overridden. | |
 | **tagline**              | Overrides page excerpt. Useful when header text needs to be different from excerpt in archive views. | |
 | **actions**              | Call to action button links (`actions` array: `label` and `url`). More than one button link can be assigned. | |
 | **cta_label**            | Deprecated, use `actions` instead. Call to action button text label. | `more_label` in UI Text data file |
 | **cta_url**              | Deprecated, use `actions` instead. Call to action button URL. | |
+
+  [color-values]: https://www.w3schools.com/cssref/css_colors.asp
+  [css-background]: https://www.w3schools.com/cssref/css3_pr_background.asp
 
 With this YAML Front Matter:
 
@@ -490,6 +495,25 @@ header:
     - label: "Download"
       url: "https://github.com"
 ```
+
+If you're really crazy about CSS, you can go straight for a complete [`background` property][css-background]:
+
+```yaml
+excerpt: "This post should [...]"
+header:
+  overlay_background: 'url("/assets/images/unsplash-image-1.jpg") no-repeat fixed center'
+  actions:
+    - label: "Download"
+      url: "https://github.com"
+```
+
+<div class="notice--primary" markdown="1">
+**Note**: Avoid using single quotes in your CSS because it's wrapped in the `style` attribute of the relevant HTML element, as demonstrated below:
+
+```liquid
+{% raw %}<div style='background: {{ YOUR STYLE HERE }};'>{% endraw %}
+```
+</div>
 
 Multiple call to action button links can be assigned like this:
 
