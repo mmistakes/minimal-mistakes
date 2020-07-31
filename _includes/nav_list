@@ -17,7 +17,7 @@
           {% else %}
             {% assign active = "" %}
           {% endif %}
-          <a href="{{ nav.url | relative_url }}"><span class="nav__sub-title" style="{{active}};">{{ nav.title }}</span></a>
+          <a href="{{ nav.url | relative_url }}"{% if nav.target %} target="{{nav.target}}"{% endif %}><span class="nav__sub-title" style="{{active}};">{{ nav.title }}</span></a>
         {% else %}
           <span class="nav__sub-title">{{ nav.title }}</span>
         {% endif %}
@@ -35,7 +35,7 @@
               {% assign active = "" %}
             {% endif %}
 
-            <li><span class="nav__sub-sub-title" style="{{active}}"><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}</a></span></li>
+            <li><span class="nav__sub-sub-title" style="{{active}}"><a href="{{ child.url | relative_url }}"{% if child.target %} target="{{child.target}}"{% endif %}{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}</a></span></li>
           {% endfor %}
         </ul>
         {% endif %}
