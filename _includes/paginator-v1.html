@@ -1,4 +1,3 @@
-{% if paginator.total_pages > 1 %}
 <nav class="pagination">
   {% assign first_page_path = site.paginate_path | remove: 'page:num' | remove: ':num' | replace: '//', '/' | relative_url %}
   <ul>
@@ -66,4 +65,3 @@
     {% endif %}
   </ul>
 </nav>
-{% endif %}
