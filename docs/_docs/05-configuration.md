@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-last_modified_at: 2020-08-04T10:49:57-04:00
+last_modified_at: 2020-08-04T11:11:59-04:00
 toc: true
 ---
 
@@ -313,7 +313,7 @@ words_per_minute: 250
 
 ### Post meta separator
 
-To customise the separator between the post date and reading time (if both are enabled), edit ```.post__meta-sep::before``` in a [custom stylesheet]({{ "/docs/stylesheets/" | relative_url }}).
+To customise the separator between the post date and reading time (if both are enabled), edit `.post__meta-sep::before` in a [custom stylesheet]({{ "/docs/stylesheets/" | relative_url }}).
 
 For example,
 
