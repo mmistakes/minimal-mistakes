@@ -5,9 +5,13 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2020-08-04T12:31:35-04:00
+last_modified_at: 2020-08-04T12:59:39-04:00
 toc: false
 ---
+
+## Unreleased
+
+- Fix `entries_layout: grid` in various layouts. [#2639](https://github.com/mmistakes/minimal-mistakes/issues/2639)
 
 ## [4.20.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.20.1)
 
