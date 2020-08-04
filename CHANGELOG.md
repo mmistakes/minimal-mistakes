@@ -1,3 +1,9 @@
+## [4.20.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.20.1)
+
+### Bug Fixes
+
+- Fix grid `entries_layout` in home.html. [#2616](https://github.com/mmistakes/minimal-mistakes/pull/2616)
+
 ## [4.20.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.20.0)
 
 ### Bug Fixes
