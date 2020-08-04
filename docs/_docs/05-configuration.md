@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-last_modified_at: 2020-08-04T11:11:59-04:00
+last_modified_at: 2020-08-04T11:26:21-04:00
 toc: true
 ---
 
@@ -303,7 +303,7 @@ defaults:
       read_time: true
 ```
 
-To disable reading time for a post, add `read_time: false` its YAML Front Matter to override what was set in `_config.yml`.
+To disable reading time for a post, add `read_time: false` to its YAML Front Matter to override what was set in `_config.yml`.
 
 `words_per_minute` can also be adjusted per-page basis by adding to its YAML Front Matter. This is useful for sites with multi-lingual content where you'd like specify a different value from the site config.
 
