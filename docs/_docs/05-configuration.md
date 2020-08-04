@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-last_modified_at: 2019-10-04T10:54:48-04:00
+last_modified_at: 2020-08-04T10:49:57-04:00
 toc: true
 ---
 
@@ -283,7 +283,7 @@ defaults:
       show_date: true
 ```
 
-To disable post date for a post, add `show_date: false` its YAML Front Matter to override what was set in `_config.yml`.
+To disable post date for a post, add `show_date: false` to its YAML Front Matter, overriding what was set in `_config.yml`.
 
 ### Reading time
 
