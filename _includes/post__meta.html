@@ -4,7 +4,7 @@
   <p class="page__meta">
 
     {% if page.show_date %}
-      <span class="page__meta-date">
+      <span class="post__meta-date">
         {% assign date = page.date %}
         <i class="far {% if include.type == 'grid' and page.read_time and page.show_date %}fa-fw {% endif %}fa-calendar-alt" aria-hidden="true"></i>
         <time datetime="{{ date | date_to_xmlschema }}">{{ date | date: "%B %-d, %Y" }}</time>
@@ -20,7 +20,7 @@
     {% endif %}
 
     {% if page.read_time %}
-      <span class="page__meta-read-time">
+      <span class="post__meta-read-time">
         {% assign words_per_minute = page.words_per_minute | default: site.words_per_minute | default: 200 %}
         {% assign words = page.content | strip_html | number_of_words %}
 
