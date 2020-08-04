@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2020-07-27T12:00:00+08:00
+last_modified_at: 2020-08-04T10:26:21-04:00
 toc: false
 ---
 
@@ -20,6 +20,7 @@ toc: false
 
 ### Enhancements
 
+- Remove hidden posts from posts.html layout. [#2625](https://github.com/mmistakes/minimal-mistakes/pull/2625)
 - Add entry layout configuration for `list` (default) or `grid` views on `layout: home`. [#2616](https://github.com/mmistakes/minimal-mistakes/pull/2616)
 - Add missing Chinese translations. [#2576](https://github.com/mmistakes/minimal-mistakes/pull/2576)
 - Improve Chinese translations. [#2626](https://github.com/mmistakes/minimal-mistakes/pull/2626)
