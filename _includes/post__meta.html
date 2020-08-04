@@ -4,9 +4,11 @@
   <p class="page__meta">
 
     {% if page.show_date %}
-      {% assign date = page.date %}
-      <i class="far {% if include.type == 'grid' and page.read_time and page.show_date %}fa-fw {% endif %}fa-calendar-alt" aria-hidden="true"></i>
-      <time datetime="{{ date | date_to_xmlschema }}">{{ date | date: "%B %-d, %Y" }}</time>
+      <span class="page__meta-date">
+        {% assign date = page.date %}
+        <i class="far {% if include.type == 'grid' and page.read_time and page.show_date %}fa-fw {% endif %}fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="{{ date | date_to_xmlschema }}">{{ date | date: "%B %-d, %Y" }}</time>
+      </span>
     {% endif %}
 
     {% if page.read_time and page.show_date %}
@@ -18,17 +20,19 @@
     {% endif %}
 
     {% if page.read_time %}
-      {% assign words_per_minute = page.words_per_minute | default: site.words_per_minute | default: 200 %}
-      {% assign words = page.content | strip_html | number_of_words %}
+      <span class="page__meta-read-time">
+        {% assign words_per_minute = page.words_per_minute | default: site.words_per_minute | default: 200 %}
+        {% assign words = page.content | strip_html | number_of_words %}
 
-      <i class="far {% if include.type == 'grid' and page.read_time and page.show_date %}fa-fw {% endif %}fa-clock" aria-hidden="true"></i>
-      {% if words < words_per_minute %}
-        {{ site.data.ui-text[site.locale].less_than | default: "less than" }} 1 {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
-      {% elsif words == words_per_minute %}
-        1 {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
-      {% else %}
-        {{ words | divided_by:words_per_minute }} {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
-      {% endif %}
+        <i class="far {% if include.type == 'grid' and page.read_time and page.show_date %}fa-fw {% endif %}fa-clock" aria-hidden="true"></i>
+        {% if words < words_per_minute %}
+          {{ site.data.ui-text[site.locale].less_than | default: "less than" }} 1 {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
+        {% elsif words == words_per_minute %}
+          1 {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
+        {% else %}
+          {{ words | divided_by:words_per_minute }} {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
+        {% endif %}
+      </span>
     {% endif %}
 
   </p>
