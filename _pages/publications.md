@@ -2,6 +2,9 @@
 title: Publications
 permalink: /publications/
 ---
+For a more in-depth list of talks, awards, publications, skills, etc., please
+check my [curriculum
+vitae](https://github.com/tomchor/tomchor.github.io/raw/master/assets/pdf/phd-tomas-chor3.pdf).
 
 Fore more information on my work you can also visit:
 
