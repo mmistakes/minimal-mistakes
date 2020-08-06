@@ -25,6 +25,7 @@ layout: default
   </div>
 </div>
 
+{% unless page.suppress_comments %}
 <div id='discourse-comments'></div>
 <script type="text/javascript">
   DiscourseEmbed = { discourseUrl: 'https://root-forum.cern.ch/',
@@ -35,3 +36,4 @@ layout: default
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
   })();
 </script>
+{% endunless %}
