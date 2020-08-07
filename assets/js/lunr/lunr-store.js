@@ -3,7 +3,8 @@ layout: none
 ---
 
 var store = [
-  {%- for c in site.collections -%}
+  {%- assign collections = site.collections | where_exp:'c','c.search != false' -%}
+  {%- for c in collections -%}
     {%- if forloop.last -%}
       {%- assign l = true -%}
     {%- endif -%}
