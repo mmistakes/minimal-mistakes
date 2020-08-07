@@ -29,10 +29,9 @@ Kinder begrüßen zu können.
 **Am ersten Schultag treffen sich alle Klassen auf dem Schulhof (Markierungen vorhanden). Bitte
 schicken Sie Ihr Kind so, dass es um 7:50 Uhr das Schulgelände betreten kann.**
 
-Montag, 10.08.2020:
-
-* Unterricht für A1, A2, A3, A4, A5, A6 von 8:00 – 11:30 Uhr
-* Unterricht für 4a, 4b, 5a, 5b, 6a, 6b und Wiko von 8:00 – 12:40 Uhr
+| | 1. Schultag ist am 10.08.2020 | |
+| Unterricht | A1, A2, A3, A4, A5, A6 | 8:00 - 11:30 Uhr |
+| Unterricht | 4a, 4b, 5a, 5b, 6a, 6b, Wiko | 8:00 - 12:40 Uhr. |
 
 Für Rückfragen stehen wir gern zur Verfügung!
 Viele Grüße
