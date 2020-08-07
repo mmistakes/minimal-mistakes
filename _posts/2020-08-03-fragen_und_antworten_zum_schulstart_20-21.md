@@ -56,8 +56,9 @@ Schülerfahrten innerhalb Deutschlands und auch ins Ausland dürfen wieder gebuc
 gilt nicht für Schülerfahrten in vom Robert-Koch-Institut (RKI) bzw. vom Auswärtigen Amt benannte Risikogebiete.
 
 ### Wo finde ich weitere Informationen?
-Mehr und ausführlichere Informationen und Dokumente wie z.B. den Musterhygieneplan oder einen Ratgeber für
-Eltern zum Lernen zu Hause bietet stets aktuell unsere Internetseite www.berlin.de/sen/bjf/go/coronainfo-schule.
+Mehr und ausführlichere Informationen und Dokumente wie z.B. den Musterhygieneplan oder einen Ratgeber für Eltern zum
+Lernen zu Hause bietet stets aktuell unsere Internetseite
+[https://www.berlin.de/sen/bjf/go/coronainfo-schule](https://www.berlin.de/sen/bjf/go/coronainfo-schule).
 Sie finden uns auch auf Facebook, Twitter, Instagram und YouTube.
 
 Für Rückfragen stehen wir gern zur Verfügung!
