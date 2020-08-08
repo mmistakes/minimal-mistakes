@@ -19,7 +19,7 @@
       {% elsif words == words_per_minute %}
         1 {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
       {% else %}
-        {{ words | divided_by:words_per_minute }} {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
+        {{ words | divided_by: words_per_minute }} {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
       {% endif %}
     {% endif %}
   </p>
