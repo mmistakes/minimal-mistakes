@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Sommerferien",
-    "title": "Sommerferien",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=Mm85ZWxuZmRqaHU3NzFrN2lpbmM2YjRhZWkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2020-06-25",
-      "date_time": null
-    },
-    "end": {
-      "date": "2020-08-08",
-      "date_time": null
-    },
-    "created": "2019-08-22T08:03:52.000Z",
-    "updated": "2019-08-22T08:03:52.862Z"
-  },
-  {
-    "image_path": null,
     "alt": "Einschulungsfeier",
     "title": "Einschulungsfeier",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2020-03-11T12:13:58.000Z",
     "updated": "2020-03-11T12:13:58.103Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Osterferien ",
+    "title": "Osterferien ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NWtkcjVjYmtzanNmbGhvNTM0cThsdjRhdWsgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2021-03-29",
+      "date_time": null
+    },
+    "end": {
+      "date": "2021-04-10",
+      "date_time": null
+    },
+    "created": "2020-03-11T12:14:48.000Z",
+    "updated": "2020-03-11T12:14:48.695Z"
   }
 ]
