@@ -1,6 +1,9 @@
 <font color='white'>filler text</font>
 
 ## Preprints
+- Ergo, K., De Loof, E., Debra, G., Pastötter, B., & Verguts, T. Failure to modulate reward prediction errors in declarative learning with theta (6 Hz) frequency transcranial alternating current stimulation
+    - [BioArxiv](https://www.biorxiv.org/content/10.1101/2020.08.05.237529v1)
+    
 - Verbeke, P., Ergo, K., De Loof, E., & Verguts, T. Learning to synchronize: Midfrontal theta dynamics during reversal learning.
     - [BioArxiv](https://www.biorxiv.org/content/10.1101/2020.06.01.127175v1)
 
