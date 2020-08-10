@@ -11,7 +11,8 @@ sidebar:
 Постанова КМУ "Про затвердження Порядку ведення обліку дітей дошкільного, шкільного віку та учнів" 
 <iframe src="https://drive.google.com/file/d/1tWSv2NIuE-7eXvvPwcB2IkO5ZElT3oLT/preview" width="640" height="480"></iframe>
 ---
-titie: "Накази МОН"
+Накази МОН
+---
 "Про затвердження Положення про інституційну форму здобуття загальної середньої освіти"
 <iframe src="https://drive.google.com/file/d/19AkZO1jdaGwJ-wAW3xA75_aQhaJRWnBM/preview" width="640" height="480"></iframe>
 "Про затвердження Типового положення про філію закладу освіти
