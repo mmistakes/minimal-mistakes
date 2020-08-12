@@ -64,6 +64,7 @@ For the sake of brevity, the abridged version of the core components and feature
 </figure>
 
 ## Specifications
+
 **PCB**: [Ergo Dash rev 1.2](https://github.com/omkbd/ErgoDash)
 
 **Case**: Custom transparent acrylic case with tenting support [(Original author](https://twitter.com/clomie/status/1134790717656616962), [AI, DXF files)](https://github.com/clomie/ergodash-tilting-tenting-case)
@@ -91,7 +92,7 @@ For the sake of brevity, the abridged version of the core components and feature
 
 ## Cons
 - Relatively expensive (but can shave off a bit by skipping the RGB and switch quality, and hot-swap feature). Hot-swapping and tenting are quite expensive (~35$ each. 35$ worth of screws, standoffs, and nuts, just imagine...)
-- Still need to move the right hand to reach the mouse. In retrospect, [a trackball or trackpad around the right-hand thumb cluster would be ideal](https://medium.com/@kincade/track-beast-build-log-a-trackball-dactyl-manuform-19eaa0880222). Nevertheless, it is possible to enable mouse keys in the QMK firmware to serve a workaround, albeit a less precise one. **TODO: Add the corresponding section once done**
+- Still need to move the right hand to reach the mouse. In retrospect, [a trackball or trackpad around the right-hand thumb cluster would be ideal](https://medium.com/@kincade/track-beast-build-log-a-trackball-dactyl-manuform-19eaa0880222). Nevertheless, it is possible to enable mouse keys in the QMK firmware to serve a workaround, albeit a less precise one. (See Firmware Flash Notes).
 - Learning curve that might take around four days for the alphabetic keys, and more for the numeric and other symbol keys.
 {: .text-justify}
 - This tenting method is not as flexible as the original one, and might require a higher investment.
@@ -174,7 +175,6 @@ Arguably a critical phase depending on the extent to which the build is to be cu
 Note that the links are provided mostly to give an idea of the part and its dimensions.
 Ultimately, the acquisition method is dependent on the geographical location.
 {: .text-justify}
-**TODO: Add link to other parts too ?**
 
 # Part selection and planning
 Before ordering the switches. keycaps and LEDs for the backlight, it was quite useful to plan their respective layout using a mock design.
@@ -289,7 +289,7 @@ See the latest picture above.
 ## 5. Shorting the jumpers to designated left and right-hand board
 
 This part can be a little bit confusing given that the way connect the pad depends on which version of the board is owned (rev 1.1 or 1.1).
-After a bit of trial and error, what happened to work was to just follow the top instruction of the guide, namely to form that "z"-shaped Tetris block and have them facing each other when the boards are flipped upside down. (Board Revision 1.2)
+After a bit of trial and error, what happened to work was to just follow the top instruction of the guide, namely to fform that "z"-shaped Tetris block and have them facing each other when the boards are flipped upside down. (Board Revision 1.2)
 
 <figure class="half">
     <a href="/assets/projects/ergodash_build/BuildLog/IMG_20200812_162052.jpg"><img src="/assets/projects/ergodash_build/BuildLog/IMG_20200812_162052.jpg"></a>
@@ -394,7 +394,7 @@ Besides that, the key switches can be easily installed or removed thanks to the 
     <figcaption>Whoops, some n00d5 again tee-hee ;)</figcaption>
 </figure>
 
-# Flash notes,
+# Firmware Flash Notes
 
 After [installing the QKM Toolbox](https://docs.qmk.fm/#/getting_started_build_tools), clone the [qmk_firmware] repository somewhere on the hard drive. (Current procedure assumes Linux system.)
 Then, after accessing said repository's directory via the command line, running `qmk setup` will set that working directory (the previously cloned `qmk firmware` folder) will set it as the default folder `qmk` will compile and flash keymaps from.
