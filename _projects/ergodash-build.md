@@ -289,7 +289,7 @@ See the latest picture above.
 ## 5. Shorting the jumpers to designated left and right-hand board
 
 This part can be a little bit confusing given that the way connect the pad depends on which version of the board is owned (rev 1.1 or 1.1).
-After a bit of trial and error, what happened to work was to just follow the top instruction of the guide, namely to fform that "z"-shaped Tetris block and have them facing each other when the boards are flipped upside down. (Board Revision 1.2)
+After a bit of trial and error, what happened to work was to just follow the top instruction of the guide, namely to form that "z"-shaped Tetris block and have them facing each other when the boards are flipped upside down. (Board Revision 1.2)
 
 <figure class="half">
     <a href="/assets/projects/ergodash_build/BuildLog/IMG_20200812_162052.jpg"><img src="/assets/projects/ergodash_build/BuildLog/IMG_20200812_162052.jpg"></a>
