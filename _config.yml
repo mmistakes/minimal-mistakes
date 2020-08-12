@@ -20,7 +20,7 @@ title                    : "Rousslan Dossa - Research Log"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Rousslan Dossa"
-description              : "A peek on this one's view of the world, train of thought(s) and aspirations."
+description              : "A peek on this one's view of the world, train of thought and aspirations."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : https://github.com/dosssman
@@ -279,12 +279,14 @@ compress_html:
 
 # Collections
 collections:
+  posts:
+    output: true
+    permalink: /:collection/:path/
   projects:
     output: true
     permalink: /:collection/:path/
   ramblings:
     output: true
-    permalink: /:collection/:path/
     permalink: /:collection/:path/
   publications:
     output: true
@@ -294,7 +296,7 @@ collections:
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: "_posts"
       type: posts
     values:
       layout: single
@@ -319,6 +321,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
+      comments: true
   # _publications
   - scope:
       path: "_publications"
@@ -327,3 +330,4 @@ defaults:
       layout: single
       author_profile: true
       share: true
+      comments: true
