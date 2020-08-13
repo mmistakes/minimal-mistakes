@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Півищення кваліфікації"
+title: "Підвищення кваліфікації"
 permalink: /normative_guide/professional_development/
 sidebar:
   nav: "sidebar-menu"
