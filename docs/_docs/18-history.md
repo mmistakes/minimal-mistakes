@@ -12,6 +12,7 @@ toc: false
 ## Unreleased
 
 - Fix `entries_layout: grid` in various layouts. [#2639](https://github.com/mmistakes/minimal-mistakes/issues/2639)
+- Change `fa` to `fas` for Font Awesome 5. [#2649](https://github.com/mmistakes/minimal-mistakes/pull/2649)
 
 ## [4.20.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.20.1)
 
