@@ -41,7 +41,7 @@ TX 개발팀 / 사원
 - HeidiSQL
 - Postman
 - MobaXterm
-- Git Lab(예정)
+- Git Lab
 
 # 프로젝트
 ## [2020.04 ~ 2020.07] LG pay, 휴대폰 결제
@@ -58,7 +58,14 @@ TX 개발팀 / 사원
 	- PIN 변경
 	- 생체 인증
 	- 결제 등록
-- 현재 LG Pay에서 서비스 중
+- 현재 LG Pay에서 서비스 (예정)
+- 사용 스킬
+  - log4j
+  - 암호화 모듈
+  - snakeYaml
+  - JUnit
+  - JDBC
+  - jetty
 
 # Experience
   
