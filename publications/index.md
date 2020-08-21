@@ -1,11 +1,13 @@
 <font color='white'>filler text</font>
 
 ## Preprints
-- Ergo, K., De Loof, E., Debra, G., Pastötter, B., & Verguts, T. (2020). Failure to modulate reward prediction errors in declarative learning with theta (6 Hz) frequency transcranial alternating current stimulation. [https://doi.org/10.1101/2020.08.05.237529](https://doi.org/10.1101/2020.08.05.237529)
+- Verbeke, P., Ergo, K., De Loof, E., & Verguts, T. (2020). Learning to synchronize: Midfrontal theta dynamics during reversal learning. BioRxiv. [https://doi.org/10.1101/2020.06.01.127175](https://doi.org/10.1101/2020.06.01.127175)
 
-- Desender, K., Donner, T. H., & Verguts, T. (2020). Dynamic expressions of confidence within an evidence accumulation framework. [https://doi.org/10.1101/2020.02.18.953778](https://doi.org/10.1101/2020.02.18.953778)
+- Ergo, K., De Loof, E., Debra, G., Pastötter, B., & Verguts, T. (2020). Failure to modulate reward prediction errors in declarative learning with theta (6 Hz) frequency transcranial alternating current stimulation. BioRxiv. [https://doi.org/10.1101/2020.08.05.237529](https://doi.org/10.1101/2020.08.05.237529)
+
+- Desender, K., Donner, T. H., & Verguts, T. (2020). Dynamic expressions of confidence within an evidence accumulation framework. BioRxiv. [https://doi.org/10.1101/2020.02.18.953778](https://doi.org/10.1101/2020.02.18.953778)
     
-- Calderon, C. B., De Loof, E., Ergo, K., Snoeck, A., Boehler, C. N., & Verguts, T. (2020). Signed Reward Prediction Errors in the Ventral Striatum Drive Episodic Memory. [https://doi.org/10.1101/2020.01.03.893578](https://doi.org/10.1101/2020.01.03.893578)
+- Calderon, C. B., De Loof, E., Ergo, K., Snoeck, A., Boehler, C. N., & Verguts, T. (2020). Signed Reward Prediction Errors in the Ventral Striatum Drive Episodic Memory. BioRxiv. [https://doi.org/10.1101/2020.01.03.893578](https://doi.org/10.1101/2020.01.03.893578)
 
 ## Recent publications
 - Aben, B., Buc Calderon, C., Van den Bussche, E., & Verguts, T. (2020). Cognitive Effort Modulates Connectivity between Dorsal Anterior Cingulate Cortex and Task-Relevant Cortical Areas. The Journal of Neuroscience, 40(19), 3838–3848. [https://doi.org/10.1523/JNEUROSCI.2948-19.2020](https://doi.org/10.1523/JNEUROSCI.2948-19.2020)
