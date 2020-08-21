@@ -9,7 +9,9 @@ url: https://cogcomneurosci.github.io
 
 # Jekyll configuration
 
-permalink:   /:categories/:title/
+permalinks:   
+   categories: '/:categories/:title/'
+   lost: '/404.md'
 markdown:    kramdown
 highlighter: rouge
 sass:
