@@ -15,9 +15,7 @@
 	- [Esin Turkakin](#esin-turkakin)
     - [Pieter Verbeke](#pieter-verbeke)
 4. [Visiting researchers](#visiting-researchers)
-    - [Fabrice Luyckx](#fabrice-luyckx)
 5. [Internship students](#internship-students)
-    - [Jacopo Bonazzi](#jacopo-bonazzi)
 
 
 # Principal Investigator
@@ -33,7 +31,7 @@ From this perspective, human behavior is often not optimal, but humans learn to 
 
 Although this is a fairly broad topic, there are a few recurring themes, such as learning to use inter-areal synchrony for neural communication; learning what to store in declarative memory; and learning the (meta-)parameters of decision processes. For this research, we use behavioral, computational, and neural methods.
 
-__More information:__  
+__Relevant information:__  
 * Personal website: [users.ugent.be/~tverguts](https://users.ugent.be/~tverguts/Site/Home.html)
 * GitHub: [@tomverguts](https://github.com/tomverguts)
 * Email: [Tom.Verguts@UGent.be](mailto:Tom.Verguts@UGent.be)
@@ -49,7 +47,7 @@ In the current project, I explore how Bayesian estimates about uncertainty guide
 
 My research is supported by an FWO (Research Foundation – Flanders) post-doctoral fellowship.
 
-__More information:__  
+__Relevant information:__  
 * Personal website: [www.marzecova.com](http://www.marzecova.com/)
 * Twitter: [@marzecova](https://twitter.com/marzecova)
 * Email: [Anna.Marzecova@UGent.be](mailto:Anna.Marzecova@UGent.be)
@@ -85,7 +83,7 @@ Our brains are simultaneously tasked with acting in the present while predicting
 
 In my research, I focus on the question how metacognition is used for further adaptation of behavior. Currently, I examine how subjective confidence in a decision is used to further optimize cognition. Theoretical models of confidence posit an important role for confidence in learning and adapting behavior, and these are the dynamics that I wish to unravel. I combine behavioral measures, computational modeling, and electrophysiological recordings to answer these questions. In previous work performed during my PhD at the VUB (Belgium), I used behavioral and EEG recordings to unravel the relation between metacognition and conflict processing. I am supported by an FWO {PEGASUS} Marie Skłodowska-Curie fellowship.
 
-__More information:__  
+__Relevant information:__  
 * Personal website: [https://kobedesender.com](https://kobedesender.com)
 * Twitter: [@KobeDesender](https://twitter.com/KobeDesender)
 * Email: [Kobe.Desender@UGent.be](mailto:Kobe.Desender@UGent.be)
@@ -96,7 +94,7 @@ __More information:__
 
 My research currently focuses on top-down/cognitive control mechanisms that allow us to manipulate and use perceptual and/or mnesic representations. For instance our ability implement a task rule (bind a percept to a motor command), attend to a specific feature, switch between sensory modalities or create and manipulate a mental image. I use Multivariate Pattern Analysis (MVPA) and modeling methods to better understand which and when relevant representations emerge in neural activity. And to know how (and when) such representations are bound together (e.g. perceptual <-> task representations) I use connectivity measures (phase-locking, cross-frequency coupling). In previous work during my PhD at the CerCo lab (Toulouse) I used fMRI, EEG and MVPA to measure the effects of learning on neural representations of visual objects and how it affects perception.
 
-__More information:__  
+__Relevant information:__  
 * Personal website: [https://sites.google.com/site/senoussim/home](https://sites.google.com/site/senoussim/home)
 * Twitter: [@cog_senoussi](https://twitter.com/cog_senoussi)
 * Email: [mehdi.senoussi@ugent.be](mailto:mehdi.senoussi@ugent.be)
@@ -111,7 +109,7 @@ My research focuses on how reward and reward prediction errors (i.e., mismatches
 
 Outside of the lab, I enjoy travelling, gaming, playing the guitar and singing. 
 
-__More information:__  
+__Relevant information:__  
 * GitHub: [@KateErgo](https://github.com/KateErgo)
 * Personal website: [https://kateergo.github.io](https://kateergo.github.io)
 * Twitter: [@KateErgo](https://twitter.com/KateErgo)
@@ -127,7 +125,7 @@ For this project I use mainly EEG and computational modeling. I like to perform 
 
 Outside my work I find joy in programming, mainly to solve mathematical riddles. Also, I like to learn more about the Python programming language in general. Code for my first and second passion can both be found on my personal GitHub.
 
-__More information:__  
+__Relevant information:__  
 * GitHub: [@phuycke](https://github.com/phuycke)
 * Email: [Pieter.Huycke@UGent.be](mailto:Pieter.Huycke@UGent.be)
 
@@ -139,12 +137,19 @@ Psychologists tend to be interested not only in understanding, but also in impro
 
 I conduct this research in collaboration with Tom Verguts and Senne Braem, using a combination of computational modelling, behavioural and neuroimaging techniques.
 
-__More information:__  
+__Relevant information:__  
 * Email: [Jonas.Simoens@UGent.be](mailto:Jonas.Simoens@UGent.be)
 
 # Esin Turkakin
 
-Information will be added soon.
+<img src="/images/profile_pic_esin.jpg" alt="Esin Turkakin" width="33%" align="left" hspace="20" vspace="20">
+
+Esin Turkakin is a doctoral working at Verguts Lab. In her research, she mainly focuses on perceptual decision-making, computational modelling of decision processes, neuromodulation and gamification of decision-making tasks.
+
+__Relevant information:__  
+* Personal website: [https://esintu.github.io/](https://esintu.github.io/)
+* Email: [Esin.Turkakin@UGent.be](mailto:Esin.Turkakin@UGent.be)
+
 
 # Pieter Verbeke
 
@@ -152,40 +157,19 @@ Information will be added soon.
 
 Previous studies of human cognition at different time scales have reported two mechanisms to alter connectivity between brain regions. First, the brain can adjust the strength of the synaptic connections between different neurons. Second, regions can be bound together by synchronizing their oscillations (Fries, 2005). In this PhD project, we investigate how interactions between these two dynamics lead to the remarkable flexibility (and also stability) in human behavior. Additionally, we investigate how the brain is able to know which regions to synchronize by exerting learning at a higher hierarchical level. For these purposes, we aim at describing computational models and test these models empirically with EEG.
 
-__More information:__ 
+__Relevant information:__ 
 * GitHub: [@PieterVerbeke](https://github.com/PieterVerbeke)
 * Email: [pjverbek.verbeke@UGent.be](mailto:pjverbek.verbeke@UGent.be)
 * Twitter: [@PieterVerbeke4](https://twitter.com/PieterVerbeke4)
 
 # Visiting researchers
 
-# Fabrice Luyckx
-
-<img src="/images/profile_pic_Fabrice.jpg" alt="Fabrice Luyckx" width="25%" align="left" hspace="20" vspace="20">
-
-I am currently in the final stages of my DPhil at Oxford University in the Summerfield lab. My work focuses on how information is structured and transformed in the brain during decision making, mainly using neurophysiological measures (EEG) and computational modelling. One line of research has looked at how structure (e.g. a line, circle, hierarchy, ...) is represented in the brain. For example we studied whether decisions about different categories with a shared underlying structure rely on the same neural signals [(Luyckx et al., eLife, 2019)](https://elifesciences.org/articles/42816). A different line of research has focused on the neural mechanisms of value-based decision making, specifically how neural patterns can shed a light on why we make economically "irrational" choices [(Luyckx et al., bioRxiv, 2019)](https://www.biorxiv.org/content/biorxiv/early/2019/08/13/642371.full.pdf).  
-
-Outside of work, I like to torment the strings on my guitar or squash racket.
-
-__More information:__  
-* GitHub: [@FabriceLuyckx](https://github.com/FabriceLuyckx)
-* Twitter: [@NeuroLuyckx](https://twitter.com/NeuroLuyckx)
-* Email: [fabrice.luyckx@psy.ox.ac.uk](mailto:fabrice.luyckx@psy.ox.ac.uk)
+Currently, we have no visiting researchers working in our lab.    
 
 # Internship students
 
-# Jacopo Bonazzi
-
-<img src="/images/profile_pic_jacopo.jpg" alt="Jacopo Bonazzi" width="25%" align="left" hspace="20" vspace="20">
-
-I'm a master student from Milano Bicocca University  doing the internship in Ghent thanks to the Erasmus+ program.
-In this project I'm trying to understand how uncertainty and variability can influence inferences. We live in a world that is intrinsically chaotic, and uncertainty is omnipresent in every aspect of our life. Learning, choosing and predicting in such an environment requires estimating and computing how variable is the world and how reliable is the mental model used to capture this variability. The current project aims to unravel how these two different sources of uncertainty, namely expected and unexpected, influence visual search performance. I plan to collect behavioral data and test the predictions of different computational models. 
-
-When I'm not troubled by uncertainties, I love to sail (quite uncertain conditions anyway) and hike in the mountains!
-
-__More information:__  
-* Email: [Jacopo.Bonazzi@UGent.be](mailto:Jacopo.Bonazzi@UGent.be)
+Currently, we have no internship students working in our lab.    
 
 ---
 
-Please get in contact if you are also interested in an internship in our lab.
+Please get in contact if you are also interested in a research stay or an internship in our lab.
