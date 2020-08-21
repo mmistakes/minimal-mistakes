@@ -3,7 +3,7 @@ layout: post
 title: "PhD position on confidence and decision making (KU Leuven)"
 categories: blog
 excerpt: Open PhD Position
-tags: [kobe, tom, PhD]
+tags: [kobe, tom, general]
 image:
   feature:
 link:

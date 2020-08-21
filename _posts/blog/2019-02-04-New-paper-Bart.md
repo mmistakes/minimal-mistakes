@@ -3,7 +3,7 @@ layout: post
 title: New paper published in NeuroImage
 categories: blog
 excerpt: Context-dependent modulation of cognitive control involves different temporal profiles of fronto-parietal activity
-tags: [bart, new-paper]
+tags: [bart, cris, tom, new-paper]
 image:
   feature:
 link:
@@ -19,7 +19,5 @@ In their paper, they address the context-dependent allocation of two prominent c
 
 This implicates that reactive control involves a transient reactivation of task-relevant brain areas exactly when needed, and that proactive control is characterized by sustained activation of similar areas when control is required on a longer time scale.
 
-An online version of this paper can be found [here](https://reader.elsevier.com/reader/sd/pii/S1053811919300904?token=E1981E45275FB1C69A58645BCF35BADA217985B25778A174487719141D8696F43AE25AFFE4608BCF9C6A35AC3AEFE737)
-
 Reference:
-- Aben, B., Calderon, C. B., Van der Cruyssen, L., Picksak, D., Van den Bussche, E., & Verguts, T. (2019). Context-dependent modulation of cognitive control involves different temporal profiles of fronto-parietal activity. NeuroImage, 189, 755-762.
+- Aben, B., Calderon, C. B., Van der Cruyssen, L., Picksak, D., Van den Bussche, E., & Verguts, T. (2019). Context-dependent modulation of cognitive control involves different temporal profiles of fronto-parietal activity. NeuroImage, 189, 755–762. [https://doi.org/10.1016/j.neuroimage.2019.02.004](https://doi.org/10.1016/j.neuroimage.2019.02.004)

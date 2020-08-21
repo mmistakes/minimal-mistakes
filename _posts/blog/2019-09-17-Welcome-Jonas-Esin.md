@@ -3,7 +3,7 @@ layout: post
 title: Welcome Jonas Simoens and Esin Turkakin 
 categories: blog
 excerpt: Verguts lab welcomes phd students
-tags: [Jonas, Esin, general]
+tags: [jonas, esin, general]
 image:
   feature:
 link:

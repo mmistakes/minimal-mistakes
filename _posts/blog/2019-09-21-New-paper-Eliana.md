@@ -3,7 +3,7 @@ layout: post
 title: New paper published in International Journal of Psychophysiology
 categories: blog
 excerpt: Striatal dopamine D2 binding correlates with locus of control
-tags: [new-paper]
+tags: [tom, new-paper]
 image:
   feature:
 link:
@@ -18,5 +18,4 @@ This highlights a role for dopamine in (the subjective feeling of) control.
 
 
 Reference:
-- Vassena, E., Van Opstal, F., Goethals, I., & Verguts, T. (in press). Striatal dopamine D2 binding correlates with locus of control: Preliminary evidence from 11C-raclopride Positron Emission Tomography.
-International Journal of Psychophysiology.
+- Vassena, E., Van Opstal, F., Goethals, I., & Verguts, T. (2019). Striatal dopamine D2 binding correlates with locus of control: Preliminary evidence from |11C|raclopride Positron Emission Tomography. International Journal of Psychophysiology, 146, 117–124. [https://doi.org/10.1016/j.ijpsycho.2019.09.016](https://doi.org/10.1016/j.ijpsycho.2019.09.016)
