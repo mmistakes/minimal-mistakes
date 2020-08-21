@@ -142,13 +142,7 @@ __Relevant information:__
 
 # Esin Turkakin
 
-<img src="/images/profile_pic_esin.jpg" alt="Esin Turkakin" width="33%" align="left" hspace="20" vspace="20">
-
-Esin Turkakin is a doctoral working at Verguts Lab. In her research, she mainly focuses on perceptual decision-making, computational modelling of decision processes, neuromodulation and gamification of decision-making tasks.
-
-__Relevant information:__  
-* Personal website: [https://esintu.github.io/](https://esintu.github.io/)
-* Email: [Esin.Turkakin@UGent.be](mailto:Esin.Turkakin@UGent.be)
+Information will be added soon.
 
 
 # Pieter Verbeke

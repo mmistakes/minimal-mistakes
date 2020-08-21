@@ -1,45 +1,30 @@
 <font color='white'>filler text</font>
 
 ## Preprints
-- Ergo, K., De Loof, E., Debra, G., Pastötter, B., & Verguts, T. Failure to modulate reward prediction errors in declarative learning with theta (6 Hz) frequency transcranial alternating current stimulation
-    - [BioArxiv](https://www.biorxiv.org/content/10.1101/2020.08.05.237529v1)
-    
-- Verbeke, P., Ergo, K., De Loof, E., & Verguts, T. Learning to synchronize: Midfrontal theta dynamics during reversal learning.
-    - [BioArxiv](https://www.biorxiv.org/content/10.1101/2020.06.01.127175v1)
+- Ergo, K., De Loof, E., Debra, G., Pastötter, B., & Verguts, T. (2020). Failure to modulate reward prediction errors in declarative learning with theta (6 Hz) frequency transcranial alternating current stimulation (Preprint). Neuroscience. [https://doi.org/10.1101/2020.08.05.237529](https://doi.org/10.1101/2020.08.05.237529)
 
-- Desender, K., Donner, T. H., & Verguts, T. Dynamic expressions of confidence within an evidence accumulation framework.
-    - [BioArxiv](https://www.biorxiv.org/content/10.1101/2020.02.18.953778v2)
+- Desender, K., Donner, T. H., & Verguts, T. (2020). Dynamic expressions of confidence within an evidence accumulation framework (Preprint). Neuroscience. [https://doi.org/10.1101/2020.02.18.953778](https://doi.org/10.1101/2020.02.18.953778)
     
-- Buc Calderon, C., De Loof, E., Ergo, K., Snoeck, A., Boehler, C. N., & Verguts, T. Signed reward prediction errors in the ventral striatum drive episodic memory.
-    - [BioArxiv](https://www.biorxiv.org/content/10.1101/2020.01.03.893578v1)
-
+- Calderon, C. B., De Loof, E., Ergo, K., Snoeck, A., Boehler, C. N., & Verguts, T. (2020). Signed Reward Prediction Errors in the Ventral Striatum Drive Episodic Memory (Preprint). Neuroscience. [https://doi.org/10.1101/2020.01.03.893578](https://doi.org/10.1101/2020.01.03.893578)
 
 ## Recent publications
-- Aben, B., Buc Calderon, C., Van den Bussche, E., & Verguts, T. (2020). Cognitive effort modulates connectivity between dorsal anterior cingulate cortex and task-relevant cortical areas. _Journal of Neuroscience, 40, 3838-3848._
-    - [Link to online version of publication](https://doi.org/10.1523/JNEUROSCI.2948-19.2020)
+- Aben, B., Buc Calderon, C., Van den Bussche, E., & Verguts, T. (2020). Cognitive Effort Modulates Connectivity between Dorsal Anterior Cingulate Cortex and Task-Relevant Cortical Areas. The Journal of Neuroscience, 40(19), 3838–3848. [https://doi.org/10.1523/JNEUROSCI.2948-19.2020](https://doi.org/10.1523/JNEUROSCI.2948-19.2020)
 
-- Ergo, K., De Loof, E., & Verguts, T. (2020). Reward prediction error and declarative memory. _Trends in Cognitive Sciences, 24, 388-397._
-    - [Link to online version of publication](https://doi.org/10.1016/j.tics.2020.02.009)
+- Ergo, K., De Loof, E., & Verguts, T. (2020). Reward Prediction Error and Declarative Memory. Trends in Cognitive Sciences, 24(5), 388–397. [https://doi.org/10.1016/j.tics.2020.02.009](https://doi.org/10.1016/j.tics.2020.02.009)
 
-- Desender, K., Boldt, A., Verguts, T., & Donner, T. (2019). Post-decisional sense of confidence shapes speed-accuracy tradeoff for subsequent choices. _eLife._
-    - [Link to online version of publication](https://kobedesender.files.wordpress.com/2019/08/elife-43499-v2.pdf)
+- Desender, K., Boldt, A., Verguts, T., & Donner, T. H. (2019). Confidence predicts speed-accuracy tradeoff for subsequent decisions. ELife, 8, e43499. [https://doi.org/10.7554/eLife.43499](https://doi.org/10.7554/eLife.43499)
 
-- Verbeke, P., & Verguts, T. (2019). Learning to synchronize: How biological agents can couple neural task modules for dealing with the stability-plasticity dilemma. _PLoS Computational Biology._
-    - [Link to online version of publication](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006604)
+- Verbeke, P., & Verguts, T. (2019). Learning to synchronize: How biological agents can couple neural task modules for dealing with the stability-plasticity dilemma. PLOS Computational Biology, 15(8), e1006604. [https://doi.org/10.1371/journal.pcbi.1006604](https://doi.org/10.1371/journal.pcbi.1006604)
 
-- De Loof, E., Vassena, E., Janssens, C., De Taeye, L., Meurs, A., Van Roost, D., … Verguts, T. (2019). Preparing for hard times : scalp and intracranial physiological signatures of proactive cognitive control. _Psychophysiology._
-     - [Link to online version of publication](https://onlinelibrary.wiley.com/doi/full/10.1111/psyp.13417)
-     
-- Ergo, K., De Loof, E., Janssens, C., & Verguts, T. (2019). Oscillatory signatures of reward prediction errors in declarative learning. _NeuroImage,186,_ 137-145.
-    - [Link to online version of publication](https://www.sciencedirect.com/science/article/abs/pii/S1053811918320676)
+- De Loof, E., Vassena, E., Janssens, C., De Taeye, L., Meurs, A., Van Roost, D., Boon, P., Raedt, R., & Verguts, T. (2019). Preparing for hard times: Scalp and intracranial physiological signatures of proactive cognitive control. Psychophysiology, 56(10). [https://doi.org/10.1111/psyp.13417](https://doi.org/10.1111/psyp.13417)
 
+- Ergo, K., De Loof, E., Janssens, C., & Verguts, T. (2019). Oscillatory signatures of reward prediction errors in declarative learning. NeuroImage, 186, 137–145. [https://doi.org/10.1016/j.neuroimage.2018.10.083](https://doi.org/10.1016/j.neuroimage.2018.10.083)
 
-- Buc Calderon, C., Gevers, W., & Verguts, T. (2018). The Unfolding Action Model of initiation times, movement times, and movement paths. _Psychological Review._
-    - [Link to online version of publication](https://biblio.ugent.be/publication/8577798)
+- Calderon, C. B., Gevers, W., & Verguts, T. (2018). The unfolding action model of initiation times, movement times, and movement paths. Psychological Review, 125(5), 785–805. [https://doi.org/10.1037/rev0000110](https://doi.org/10.1037/rev0000110)
 
 
 ## Archive
 
 Our older papers are all available online through the [academic bibliography](https://biblio.ugent.be/) of Ghent University.   
-The papers associated with our lab can be found by going to [Tom's biblio page](https://biblio.ugent.be/publication?q=%22verguts+tom%22).
+The papers associated with our lab can be found by going to [our PI's biblio page](https://biblio.ugent.be/publication?q=%22verguts+tom%22).
 

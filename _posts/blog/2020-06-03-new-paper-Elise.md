@@ -1,6 +1,6 @@
 ---
 layout: post
-title: multi-lab fMRI study of single neuroimaging dataset
+title: Multi-lab fMRI study of single neuroimaging dataset
 categories: blog
 excerpt: Variability in the analysis of a single neuroimaging dataset by many teams
 tags: [elise, cris]
