@@ -1,6 +1,8 @@
 <font color='white'>filler text</font>
 
 ## Preprints
+- Huycke, P., Verbeke, P., Boehler, C. N., & Verguts, T. (2020). Theta and alpha power across fast and slow timescales in cognitive control [Preprint]. Neuroscience. [https://doi.org/10.1101/2020.08.21.259341](https://doi.org/10.1101/2020.08.21.259341)
+
 - Verbeke, P., Ergo, K., De Loof, E., & Verguts, T. (2020). Learning to synchronize: Midfrontal theta dynamics during reversal learning. BioRxiv. [https://doi.org/10.1101/2020.06.01.127175](https://doi.org/10.1101/2020.06.01.127175)
 
 - Ergo, K., De Loof, E., Debra, G., Pastötter, B., & Verguts, T. (2020). Failure to modulate reward prediction errors in declarative learning with theta (6 Hz) frequency transcranial alternating current stimulation. BioRxiv. [https://doi.org/10.1101/2020.08.05.237529](https://doi.org/10.1101/2020.08.05.237529)
