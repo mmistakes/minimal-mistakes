@@ -56,17 +56,17 @@ My research is supported by an FWO (Research Foundation – Flanders) post-doct
 
 # Cristian Buc Calderon
 
-My research focuses on understanding how humans select one out of many competing actions. My past research tested specific predictions of the affordance competition hypothesis (Cisek & Kalaska, 2010, Ann. Rev. Neurosci.), both at the neural architecture and decision dynamics levels ([Calderon et al., 2015, JEPG](https://biblio.ugent.be/publication/6907785/file/7276986); [Calderon et al., 2017, PNAS](https://www.pnas.org/content/pnas/114/40/10618.full.pdf); [Calderon et al., 2018, Front. Hum. Neurosci.](https://www.frontiersin.org/articles/10.3389/fnhum.2018.00093/full); [Calderon et al., 2018, Psychol. Rev.](https://biblio.ugent.be/publication/8577798/file/8577801)). 
+My research focuses on understanding how humans select one out of many competing actions. My past research tested specific predictions of the affordance competition hypothesis (Cisek & Kalaska, 2010, Ann. Rev. Neurosci.), both at the neural architecture and decision dynamics levels ([Calderon et al., 2015, JEPG](https://doi.org/10.1037/xge0000087); [Calderon et al., 2017, PNAS](http://www.pnas.org/cgi/doi/10.1073/pnas.1710913114); [Calderon et al., 2018, Front. Hum. Neurosci.](https://doi.org/10.3389/fnhum.2018.00093); [Calderon et al., 2018, Psychol. Rev.](http://dx.doi.org/10.1037/rev0000110)). 
 
 More recently, I have been awarded a FWO postdoctoral fellow where I will investigate how the brain learns the optimal timing of individual actions within a sequence of actions (in collaboration with Michael Frank @ Brown University and Tom Verguts @ Ghent University). To carry out this project, I use computational modeling, behavioral and neural methods. 
 
-PS: I took the picture of Pieter Verbeke (scroll down ;)).
+PS: I took the picture of [Pieter Verbeke](#pieter-verbeke) (scroll :point_down: :wink:)
 
 # Elise Lesage
 
 My current project studies how behavior becomes habitual and how habits can be overcome. I use computational modeling, fMRI, and brain stimulation techniques to investigate these questions.
 
-My broader research interests are pretty varied and can be described as: finding out how humans think :). Before and during my PhD I studied the role of the cerebellum in non-motor functions such as language and cognition. In my postdoc at NIDA (NIH) I switched gears and learned more about addiction and reward processing. My present Fellowship integrates some of the key ideas behind reward processing, automaticity, and cognition.
+My broader research interests are pretty varied and can be described as: finding out how humans think :smile:. Before and during my PhD I studied the role of the cerebellum in non-motor functions such as language and cognition. In my postdoc at NIDA (NIH) I switched gears and learned more about addiction and reward processing. My present Fellowship integrates some of the key ideas behind reward processing, automaticity, and cognition.
 
 My Fellowship is funded by the Flanders Fund for Scientific Research (FWO) and the European Commission’s Marie Curie Actions through the Pegasus scheme.
 
@@ -108,7 +108,7 @@ My research currently focuses on top-down/cognitive control mechanisms that allo
 
 <img src="/images/profile_pic_kate.jpg" alt="Kate Ergo" align="left" width="200px" height="200px" hspace="20" vspace="20" object-fit="cover">
 
-My research focuses on how reward and reward prediction errors (i.e., mismatches between reward outcome and reward expectation) influence declarative memory (e.g., learning a foreign language). Using a Dutch-Swahili word learning paradigm, we found that word pair recognition increases linearly with larger and more positive RPEs [(De Loof et al., 2018)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0189212). We also found neural oscillatory signatures that confirm the experience of signed RPEs (SRPEs) boosting declarative memory [(Ergo et al., 2019)](https://www.sciencedirect.com/science/article/pii/S1053811918320676). My goal is to further investigate the robustness and generality of these findings. To this end, I use both behavioral and (electro)physiological (i.e., EEG, tACS and eye tracking) measures. My PhD is funded by the Flanders Fund for Scientific Research (FWO).
+My research focuses on how reward and reward prediction errors (i.e., mismatches between reward outcome and reward expectation) influence declarative memory (e.g., learning a foreign language). Using a Dutch-Swahili word learning paradigm, we found that word pair recognition increases linearly with larger and more positive RPEs [(De Loof et al., 2018)]( https://doi.org/10.1371/journal.pone.0189212). We also found neural oscillatory signatures that confirm the experience of signed RPEs (SRPEs) boosting declarative memory [(Ergo et al., 2019)](https://doi.org/10.1016/j.neuroimage.2018.10.083). My goal is to further investigate the robustness and generality of these findings. To this end, I use both behavioral and (electro)physiological (i.e., EEG, tACS and eye tracking) measures. My PhD is funded by the Flanders Fund for Scientific Research (FWO).
 
 Outside of the lab, I enjoy travelling, gaming, playing the guitar and singing. 
 
@@ -124,11 +124,9 @@ Outside of the lab, I enjoy travelling, gaming, playing the guitar and singing.
 
 <img src="/images/profile_pic_pieter_h.jpg" alt="Pieter Huycke" align="left" width="200px" height="200px" hspace="20" vspace="20" object-fit="cover">
 
-In my Ph.D. project, we aim to take a fresh perspective that emphasizes the study of memory, in its natural dynamic setting, as a journey in the making. The two key characters in this journey are learning and consolidation: both processes are known to interact but have hitherto been studied in isolation. The perspective of this project enables them to be understood, for the first time, under the influence of their inherent interactions, and in the context of brain maturation and aging. The project aims to provide new insight into how much our ability to learn is dictated by the makeup of our neuronal circuitries, how memories are initially formed and later stored for the long haul, how this is made possible by the rewiring of our neuronal circuitries, and how our memory processes and capacities vary as our brain evolves through its lifespan. 
+Theta and alpha oscillations are both implicated in human learning. However, it still remains unclear whether these frequencies co-exist and interact on the same timescale, or whether they impact learning on distinct timescales. In the current PhD project we aim to investigate this question. Our first step was to measure EEG while human subjects were training on a procedural learning task. This task was designed to allow inference about the role that both theta and alpha play on a fast and a slow timescale. Our results [Huycke et al., 2020](https://doi.org/10.1101/2020.08.21.259341) suggested that theta power decreased on a slow timescale, while alpha increased on a fast timescale. No modulations of theta and alpha were observed on the fast- and slow timescale respectively, suggesting that these frequencies operate at different timescales.
 
-For this project I use mainly EEG and computational modeling. I like to perform my EEG analyses using Python's [mne software](https://martinos.org/mne/stable/index.html). Computational modeling is something I try to achieve using Python 3. 
-
-Outside my work I find joy in programming, mainly to solve mathematical riddles. Also, I like to learn more about the Python programming language in general. Code for my first and second passion can both be found on my personal GitHub.
+The next part of this project will focus on computational modelling.
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Pieter.Huycke@UGent.be" href="mailto:Pieter.Huycke@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Pieter.Huycke@UGent.be</a></div>
 
@@ -148,8 +146,13 @@ I conduct this research in collaboration with Tom Verguts and Senne Braem, using
 
 # Esin Turkakin
 
-Information will be added soon.
+<img src="/images/profile_pic_esin.jpg" alt="Esin Turkakin" align="left" width="200px" height="200px" hspace="20" vspace="20" object-fit="cover">
 
+Esin Turkakin is a doctoral working at Verguts Lab. In her research, she mainly focuses on perceptual decision-making, computational modelling of decision processes, neuromodulation and gamification of decision-making tasks.
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Esin.Turkakin@UGent.be" href="mailto:Esin.Turkakin@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Esin.Turkakin@UGent.be</a></div>
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://esintu.github.io" href="https://esintu.github.io" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/website_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">https://esintu.github.io</a></div>
 
 # Pieter Verbeke
 
