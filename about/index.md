@@ -48,7 +48,7 @@ My research is supported by an FWO (Research Foundation – Flanders) post-doct
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Anna.Marzecova@UGent.be" href="mailto:Anna.Marzecova@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Anna.Marzecova@UGent.be</a></div>
 
-<a href="https://twitter.com/marzecova?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-lang="en" data-show-count="false">Follow @marzecova</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://twitter.com/marzecova?ref_src=twsrc%5Etfw" href="https://twitter.com/marzecova?ref_src=twsrc%5Etfw" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/twitter_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">@marzecova/</a></div>
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="http://www.marzecova.com/" href="http://www.marzecova.com/" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/website_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">http://www.marzecova.com/</a></div>
 
