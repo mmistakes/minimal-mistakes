@@ -31,10 +31,11 @@ From this perspective, human behavior is often not optimal, but humans learn to 
 
 Although this is a fairly broad topic, there are a few recurring themes, such as learning to use inter-areal synchrony for neural communication; learning what to store in declarative memory; and learning the (meta-)parameters of decision processes. For this research, we use behavioral, computational, and neural methods.
 
-__Relevant information:__  
-* Personal website: [users.ugent.be/~tverguts](https://users.ugent.be/~tverguts/Site/Home.html)
-* GitHub: [@tomverguts](https://github.com/tomverguts)
-* Email: [Tom.Verguts@UGent.be](mailto:Tom.Verguts@UGent.be)
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Tom.Verguts@UGent.be" href="mailto:Tom.Verguts@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Tom.Verguts@UGent.be</a></div>
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://github.com/phuycke" href="https://github.com/phuycke" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/github_32x32.jpg" style="width:2em;margin-right:.5em;" alt="GitHub icon">https://github.com/phuycke</a></div>
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="users.ugent.be/~tverguts" href="https://users.ugent.be/~tverguts/Site/Home.html" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/website_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">users.ugent.be/~tverguts</a></div>
 
 # Post-doctoral researchers
 
@@ -125,11 +126,11 @@ For this project I use mainly EEG and computational modeling. I like to perform 
 
 Outside my work I find joy in programming, mainly to solve mathematical riddles. Also, I like to learn more about the Python programming language in general. Code for my first and second passion can both be found on my personal GitHub.
 
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Pieter.Huycke@UGent.be" href="mailto:Pieter.Huycke@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:1em;margin-right:.5em;" alt="Mail icon">Pieter.Huycke@UGent.be</a></div>
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Pieter.Huycke@UGent.be" href="mailto:Pieter.Huycke@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Pieter.Huycke@UGent.be</a></div>
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://github.com/phuycke" href="https://github.com/phuycke" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/github_32x32.jpg" style="width:2em;margin-right:.5em;" alt="GitHub icon">https://github.com/phuycke</a></div>
 
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-8156-4419" href="https://orcid.org/0000-0002-8156-4419" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_32x32.jpg" style="width:3em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0002-8156-4419</a></div>
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-8156-4419" href="https://orcid.org/0000-0002-8156-4419" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0002-8156-4419</a></div>
 
 # Jonas Simoens
 
@@ -139,8 +140,7 @@ Psychologists tend to be interested not only in understanding, but also in impro
 
 I conduct this research in collaboration with Tom Verguts and Senne Braem, using a combination of computational modelling, behavioural and neuroimaging techniques.
 
-__Relevant information:__  
-* Email: [Jonas.Simoens@UGent.be](mailto:Jonas.Simoens@UGent.be)
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Jonas.Simoens@UGent.be" href="mailto:Jonas.Simoens@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Jonas.Simoens@UGent.be</a></div>
 
 # Esin Turkakin
 
