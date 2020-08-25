@@ -41,6 +41,8 @@ Although this is a fairly broad topic, there are a few recurring themes, such as
 
 # Anna Marzecova
 
+<img src="/images/profile_pic_anna.jpg" alt="Anna Marzecova" width="33%" align="left" hspace="20" vspace="20">
+
 I am interested in neurocognitive and neuromodulatory mechanisms of attention and decision-making under uncertainty. 
 In the current project, I explore how Bayesian estimates about uncertainty guide attention using computational modelling in combination with electroencephalography and pupillometry. 
 
@@ -48,7 +50,7 @@ My research is supported by an FWO (Research Foundation – Flanders) post-doct
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Anna.Marzecova@UGent.be" href="mailto:Anna.Marzecova@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Anna.Marzecova@UGent.be</a></div>
 
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://twitter.com/marzecova?ref_src=twsrc%5Etfw" href="https://twitter.com/marzecova?ref_src=twsrc%5Etfw" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.icons8.com/android/24/000000/twitter.png" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">@marzecova/</a></div>
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://twitter.com/marzecova?ref_src=twsrc%5Etfw" href="https://twitter.com/marzecova?ref_src=twsrc%5Etfw" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.icons8.com/android/24/000000/twitter.png" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">@marzecova</a></div>
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="http://www.marzecova.com/" href="http://www.marzecova.com/" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/website_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">http://www.marzecova.com/</a></div>
 
@@ -74,7 +76,7 @@ My Fellowship is funded by the Flanders Fund for Scientific Research (FWO) and t
 
 Our brains are simultaneously tasked with acting in the present while predicting and preparing for the future. I am interested in how we proactively optimize neural systems ahead of future goal-directed action. In one ongoing line of work, I use EEG/MEG to investigate the neural activities underlying the computation, communication, and maintenance of future goals. In my current work, I focus on how errors in reward prediction shape learning, using computational modeling and MEG/EEG. In particular, I aim to understand how reward prediction (error) is influenced by timing and hierarchical context. My current research is supported by the EOS project MEMODYN, funded by the FWO and F.R.S.–FNRS.
 
-* Email: [Jacqueline.JanowichWasserott@UGent.be](mailto:jacqueline.janowichwasserott@UGent.be)
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Jacqueline.JanowichWasserott@UGent.be" href="mailto:jacqueline.janowichwasserott@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Jacqueline.JanowichWasserott@UGent.be</a></div>
 
 # Kobe Desender
 
@@ -82,10 +84,11 @@ Our brains are simultaneously tasked with acting in the present while predicting
 
 In my research, I focus on the question how metacognition is used for further adaptation of behavior. Currently, I examine how subjective confidence in a decision is used to further optimize cognition. Theoretical models of confidence posit an important role for confidence in learning and adapting behavior, and these are the dynamics that I wish to unravel. I combine behavioral measures, computational modeling, and electrophysiological recordings to answer these questions. In previous work performed during my PhD at the VUB (Belgium), I used behavioral and EEG recordings to unravel the relation between metacognition and conflict processing. I am supported by an FWO {PEGASUS} Marie Skłodowska-Curie fellowship.
 
-__Relevant information:__  
-* Personal website: [https://kobedesender.com](https://kobedesender.com)
-* Twitter: [@KobeDesender](https://twitter.com/KobeDesender)
-* Email: [Kobe.Desender@UGent.be](mailto:Kobe.Desender@UGent.be)
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Kobe.Desender@UGent.be" href="mailto:Kobe.Desender@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Kobe.Desender@UGent.be</a></div>
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://twitter.com/KobeDesender" href="https://twitter.com/KobeDesender" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.icons8.com/android/24/000000/twitter.png" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">@KDesender</a></div>
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://kobedesender.com" href="https://kobedesender.com" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/website_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">https://kobedesender.com</a></div>
 
 # Mehdi Senoussi
 
@@ -93,10 +96,11 @@ __Relevant information:__
 
 My research currently focuses on top-down/cognitive control mechanisms that allow us to manipulate and use perceptual and/or mnesic representations. For instance our ability implement a task rule (bind a percept to a motor command), attend to a specific feature, switch between sensory modalities or create and manipulate a mental image. I use Multivariate Pattern Analysis (MVPA) and modeling methods to better understand which and when relevant representations emerge in neural activity. And to know how (and when) such representations are bound together (e.g. perceptual <-> task representations) I use connectivity measures (phase-locking, cross-frequency coupling). In previous work during my PhD at the CerCo lab (Toulouse) I used fMRI, EEG and MVPA to measure the effects of learning on neural representations of visual objects and how it affects perception.
 
-__Relevant information:__  
-* Personal website: [https://sites.google.com/site/senoussim/home](https://sites.google.com/site/senoussim/home)
-* Twitter: [@cog_senoussi](https://twitter.com/cog_senoussi)
-* Email: [mehdi.senoussi@ugent.be](mailto:mehdi.senoussi@ugent.be)
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Mehdi.Senoussi@UGent.be" href="mailto:Mehdi.Senoussi@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Mehdi.Senoussi@UGent.be</a></div>
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://twitter.com/cog_senoussi" href="https://twitter.com/cog_senoussi" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.icons8.com/android/24/000000/twitter.png" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">@cog_senoussi</a></div>
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://sites.google.com/site/senoussim/home" href="https://sites.google.com/site/senoussim/home" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/website_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">https://sites.google.com/site/senoussim/home</a></div>
 
 # PhD students
 
@@ -108,11 +112,13 @@ My research focuses on how reward and reward prediction errors (i.e., mismatches
 
 Outside of the lab, I enjoy travelling, gaming, playing the guitar and singing. 
 
-__Relevant information:__  
-* GitHub: [@KateErgo](https://github.com/KateErgo)
-* Personal website: [https://kateergo.github.io](https://kateergo.github.io)
-* Twitter: [@KateErgo](https://twitter.com/KateErgo)
-* Email: [Kate.Ergo@UGent.be](mailto:Kate.Ergo@UGent.be)
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Kate.Ergo@UGent.be" href="mailto:Kate.Ergo@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Kate.Ergo@UGent.be</a></div>
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://github.com/KateErgo" href="https://github.com/KateErgo" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/github_32x32.jpg" style="width:2em;margin-right:.5em;" alt="GitHub icon">@KateErgo</a></div>
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://twitter.com/KateErgo" href="https://twitter.com/KateErgo" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.icons8.com/android/24/000000/twitter.png" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">@KateErgo</a></div>
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://kateergo.github.io" href="https://kateergo.github.io" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/website_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">https://kateergo.github.io</a></div>
 
 # Pieter Huycke
 
@@ -126,7 +132,7 @@ Outside my work I find joy in programming, mainly to solve mathematical riddles.
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Pieter.Huycke@UGent.be" href="mailto:Pieter.Huycke@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Pieter.Huycke@UGent.be</a></div>
 
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://github.com/phuycke" href="https://github.com/phuycke" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/github_32x32.jpg" style="width:2em;margin-right:.5em;" alt="GitHub icon">https://github.com/phuycke</a></div>
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://github.com/phuycke" href="https://github.com/phuycke" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/github_32x32.jpg" style="width:2em;margin-right:.5em;" alt="GitHub icon">@phuycke</a></div>
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-8156-4419" href="https://orcid.org/0000-0002-8156-4419" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0002-8156-4419</a></div>
 
@@ -151,10 +157,11 @@ Information will be added soon.
 
 Previous studies of human cognition at different time scales have reported two mechanisms to alter connectivity between brain regions. First, the brain can adjust the strength of the synaptic connections between different neurons. Second, regions can be bound together by synchronizing their oscillations (Fries, 2005). In this PhD project, we investigate how interactions between these two dynamics lead to the remarkable flexibility (and also stability) in human behavior. Additionally, we investigate how the brain is able to know which regions to synchronize by exerting learning at a higher hierarchical level. For these purposes, we aim at describing computational models and test these models empirically with EEG.
 
-__Relevant information:__ 
-* GitHub: [@PieterVerbeke](https://github.com/PieterVerbeke)
-* Email: [pjverbek.verbeke@UGent.be](mailto:pjverbek.verbeke@UGent.be)
-* Twitter: [@PieterVerbeke4](https://twitter.com/PieterVerbeke4)
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="pjverbek.Verbeke@UGent.be" href="mailto:pjverbek.Verbeke@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">pjverbek.Verbeke@UGent.be</a></div>
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://github.com/PieterVerbeke" href="https://github.com/PieterVerbeke" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/github_32x32.jpg" style="width:2em;margin-right:.5em;" alt="GitHub icon">@PieterVerbeke</a></div>
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://twitter.com/PieterVerbeke4" href="https://twitter.com/PieterVerbeke4" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://img.icons8.com/android/24/000000/twitter.png" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">@PieterVerbeke4</a></div>
 
 # Visiting researchers
 
