@@ -156,6 +156,7 @@ In her research, she mainly focuses on perceptual decision-making, computational
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://esintu.github.io" href="https://esintu.github.io" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/website_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">https://esintu.github.io</a></div>
 
 <span style="white-space: pre-line"> </span>
+<span style="white-space: pre-line"> </span>
 
 # Pieter Verbeke
 
