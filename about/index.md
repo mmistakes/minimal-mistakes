@@ -153,8 +153,9 @@ Esin Turkakin is a doctoral working at Verguts Lab. In her research, she mainly 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Esin.Turkakin@UGent.be" href="mailto:Esin.Turkakin@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Esin.Turkakin@UGent.be</a></div>
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://esintu.github.io" href="https://esintu.github.io" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/website_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">https://esintu.github.io</a></div>
-
-
+    
+    
+    
 # Pieter Verbeke
 
 <img src="/images/profile_pic_pieter_v.jpg" alt="Pieter Verbeke" align="left" width="200px" height="200px" hspace="20" vspace="20" object-fit="cover">
