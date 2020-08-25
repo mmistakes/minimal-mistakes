@@ -129,6 +129,8 @@ __Relevant information:__
 * GitHub: [@phuycke](https://github.com/phuycke)
 * Email: [Pieter.Huycke@UGent.be](mailto:Pieter.Huycke@UGent.be)
 
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://github.com/phuycke" href="https://github.com/phuycke" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/github_16x16.jpg" style="width:1em;margin-right:.5em;" alt="GitHub icon">https://github.com/phuycke</a></div>
+
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-8156-4419" href="https://orcid.org/0000-0002-8156-4419" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0002-8156-4419</a></div>
 
 # Jonas Simoens
