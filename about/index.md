@@ -33,7 +33,7 @@ Although this is a fairly broad topic, there are a few recurring themes, such as
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Tom.Verguts@UGent.be" href="mailto:Tom.Verguts@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Tom.Verguts@UGent.be</a></div>
 
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="@tomverguts" href="https://github.com/tomverguts" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/github_32x32.jpg" style="width:2em;margin-right:.5em;" alt="GitHub icon">https://github.com/tomverguts</a></div>
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://github.com/tomverguts" href="https://github.com/tomverguts" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/github_32x32.jpg" style="width:2em;margin-right:.5em;" alt="GitHub icon">@tomverguts</a></div>
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="users.ugent.be/~tverguts" href="https://users.ugent.be/~tverguts/Site/Home.html" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/website_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">users.ugent.be/~tverguts</a></div>
 
