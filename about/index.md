@@ -48,11 +48,11 @@ In the current project, I explore how Bayesian estimates about uncertainty guide
 
 My research is supported by an FWO (Research Foundation – Flanders) post-doctoral fellowship.
 
-__Relevant information:__  
-* Personal website: [www.marzecova.com](http://www.marzecova.com/)
-* Twitter: [@marzecova](https://twitter.com/marzecova)
-* Email: [Anna.Marzecova@UGent.be](mailto:Anna.Marzecova@UGent.be)
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Anna.Marzecova@UGent.be" href="mailto:Anna.Marzecova@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Anna.Marzecova@UGent.be</a></div>
 
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://twitter.com/marzecova" href="https://twitter.com/marzecova" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/twitter_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Twitter icon">@marzecova</a></div>
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="http://www.marzecova.com/" href="http://www.marzecova.com/" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/website_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">http://www.marzecova.com/</a></div>
 
 # Cristian Buc Calderon
 
