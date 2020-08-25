@@ -124,7 +124,7 @@ Outside of the lab, I enjoy travelling, gaming, playing the guitar and singing.
 
 <img src="/images/profile_pic_pieter_h.jpg" alt="Pieter Huycke" align="left" width="200px" height="200px" hspace="20" vspace="20" object-fit="cover">
 
-Theta and alpha oscillations are both implicated in human learning. However, it still remains unclear whether these frequencies co-exist and interact on the same timescale, or whether they impact learning on distinct timescales. In the current PhD project we aim to investigate this question. Our first step was to measure EEG while human subjects were training on a procedural learning task. This task was designed to allow inference about the role that both theta and alpha play on a fast and a slow timescale. Our results [Huycke et al., 2020](https://doi.org/10.1101/2020.08.21.259341) suggested that theta power decreased on a slow timescale, while alpha increased on a fast timescale. No modulations of theta and alpha were observed on the fast- and slow timescale respectively, suggesting that these frequencies operate at different timescales.
+Theta and alpha oscillations are both implicated in human learning. However, it still remains unclear whether these frequencies co-exist and interact on the same timescale, or whether they impact learning on distinct timescales. In the current PhD project we aim to investigate this question. Our first step was to measure EEG while human subjects were training on a procedural learning task. This task was designed to allow inference about the role that both theta and alpha play on a fast and a slow timescale. Our results [(Huycke et al., 2020)](https://doi.org/10.1101/2020.08.21.259341) suggested that theta power decreases on a slow timescale, while alpha increases on a fast timescale. No modulations of theta and alpha were observed on the fast- and slow timescale respectively, suggesting that these frequencies operate at different timescales.
 
 The next part of this project will focus on computational modelling.
 
@@ -153,6 +153,7 @@ Esin Turkakin is a doctoral working at Verguts Lab. In her research, she mainly 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Esin.Turkakin@UGent.be" href="mailto:Esin.Turkakin@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Esin.Turkakin@UGent.be</a></div>
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://esintu.github.io" href="https://esintu.github.io" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/website_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">https://esintu.github.io</a></div>
+
 
 # Pieter Verbeke
 
