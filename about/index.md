@@ -64,6 +64,8 @@ PS: I took the picture of [Pieter Verbeke](#pieter-verbeke) (scroll :point_down:
 
 # Elise Lesage
 
+<img src="/images/profile_pic_elise.jpg" alt="Elise Lesage" align="left" width="200px" height="200px" hspace="20" vspace="20" object-fit="cover">
+
 My current project studies how behavior becomes habitual and how habits can be overcome. I use computational modeling, fMRI, and brain stimulation techniques to investigate these questions.
 
 My broader research interests are pretty varied and can be described as: finding out how humans think :smile:. Before and during my PhD I studied the role of the cerebellum in non-motor functions such as language and cognition. In my postdoc at NIDA (NIH) I switched gears and learned more about addiction and reward processing. My present Fellowship integrates some of the key ideas behind reward processing, automaticity, and cognition.
