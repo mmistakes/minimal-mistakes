@@ -44,9 +44,7 @@ Although this is a fairly broad topic, there are a few recurring themes, such as
 <img src="/images/profile_pic_anna.jpg" alt="Anna Marzecova" width="33%" align="left" hspace="20" vspace="20">
 
 I am interested in neurocognitive and neuromodulatory mechanisms of attention and decision-making under uncertainty. 
-In the current project, I explore how Bayesian estimates about uncertainty guide attention using computational modelling in combination with electroencephalography and pupillometry. 
-
-My research is supported by an FWO (Research Foundation – Flanders) post-doctoral fellowship.
+In the current project, I explore how Bayesian estimates about uncertainty guide attention using computational modelling in combination with electroencephalography and pupillometry. My research is supported by an FWO (Research Foundation – Flanders) post-doctoral fellowship.
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Anna.Marzecova@UGent.be" href="mailto:Anna.Marzecova@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Anna.Marzecova@UGent.be</a></div>
 
