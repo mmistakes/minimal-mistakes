@@ -125,7 +125,7 @@ For this project I use mainly EEG and computational modeling. I like to perform 
 
 Outside my work I find joy in programming, mainly to solve mathematical riddles. Also, I like to learn more about the Python programming language in general. Code for my first and second passion can both be found on my personal GitHub.
 
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Pieter.Huycke@UGent.be" href="mailto:Pieter.Huycke@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_16x16.jpg" style="width:1em;margin-right:.5em;" alt="Mail icon">mailto:Pieter.Huycke@UGent.be</a></div>
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Pieter.Huycke@UGent.be" href="mailto:Pieter.Huycke@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_16x16.jpg" style="width:1em;margin-right:.5em;" alt="Mail icon">Pieter.Huycke@UGent.be</a></div>
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://github.com/phuycke" href="https://github.com/phuycke" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/github_16x16.jpg" style="width:1em;margin-right:.5em;" alt="GitHub icon">https://github.com/phuycke</a></div>
 
