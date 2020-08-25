@@ -127,7 +127,7 @@ Outside my work I find joy in programming, mainly to solve mathematical riddles.
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Pieter.Huycke@UGent.be" href="mailto:Pieter.Huycke@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:1em;margin-right:.5em;" alt="Mail icon">Pieter.Huycke@UGent.be</a></div>
 
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://github.com/phuycke" href="https://github.com/phuycke" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/github_32x32.jpg" style="width:1em;margin-right:.5em;" alt="GitHub icon">https://github.com/phuycke</a></div>
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://github.com/phuycke" href="https://github.com/phuycke" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/github_32x32.jpg" style="width:2em;margin-right:.5em;" alt="GitHub icon">https://github.com/phuycke</a></div>
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-8156-4419" href="https://orcid.org/0000-0002-8156-4419" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_32x32.jpg" style="width:3em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0002-8156-4419</a></div>
 
