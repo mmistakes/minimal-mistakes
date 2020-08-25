@@ -60,7 +60,9 @@ My research focuses on understanding how humans select one out of many competing
 
 More recently, I have been awarded a FWO postdoctoral fellow where I will investigate how the brain learns the optimal timing of individual actions within a sequence of actions (in collaboration with Michael Frank @ Brown University and Tom Verguts @ Ghent University). To carry out this project, I use computational modeling, behavioral and neural methods. 
 
-PS: I took the picture of [Pieter Verbeke](#pieter-verbeke) (scroll :point_down: :wink:)
+I also took the picture of [Pieter Verbeke](#pieter-verbeke) (scroll :point_down: :wink:)
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Cristian.BucCalderon@UGent.be" href="mailto:Cristian.BucCalderon@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Cristian.BucCalderon@UGent.be</a></div>
 
 # Elise Lesage
 
@@ -71,6 +73,8 @@ My current project studies how behavior becomes habitual and how habits can be o
 My broader research interests are pretty varied and can be described as: finding out how humans think :smile:. Before and during my PhD I studied the role of the cerebellum in non-motor functions such as language and cognition. In my postdoc at NIDA (NIH) I switched gears and learned more about addiction and reward processing. My present Fellowship integrates some of the key ideas behind reward processing, automaticity, and cognition.
 
 My Fellowship is funded by the Flanders Fund for Scientific Research (FWO) and the European Commission’s Marie Curie Actions through the Pegasus scheme.
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Elise.Lesage@UGent.be" href="mailto:Elise.Lesage@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Elise.Lesage@UGent.be</a></div>
 
 # Jacki Janowich
 
