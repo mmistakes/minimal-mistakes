@@ -44,7 +44,7 @@ Although this is a fairly broad topic, there are a few recurring themes, such as
 <img src="/images/profile_pic_anna.jpg" alt="Anna Marzecova" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
 
 I am interested in neurocognitive and -modulary mechanisms of attention and decision-making under uncertainty. 
-In the current project, I explore how Bayesian estimates about uncertainty guide attention using computational modelling in combination with electroencephalography and pupillometry. 
+In the current project, I explore how Bayesian estimates about uncertainty guide attention using computational modeling in combination with electroencephalography and pupillometry. 
 
 My research is supported by an FWO (Research Foundation – Flanders) post-doctoral fellowship.
 
@@ -117,7 +117,7 @@ My research currently focuses on top-down/cognitive control mechanisms that allo
 <img src="/images/profile_pic_esin.jpg" alt="Esin Turkakin" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
 
 Esin Turkakin is a doctoral working at Verguts Lab.    
-In her research, she mainly focuses on perceptual decision-making, computational modelling of decision processes, neuromodulation and gamification of decision-making tasks.
+In her research, she mainly focuses on perceptual decision-making, computational modeling of decision processes, neuromodulation and gamification of decision-making tasks.
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Esin.Turkakin@UGent.be" href="mailto:Esin.Turkakin@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Esin.Turkakin@UGent.be</a></div>
 
@@ -129,9 +129,9 @@ In her research, she mainly focuses on perceptual decision-making, computational
 
 <img src="/images/profile_pic_jonas.jpg" alt="Jonas Simoens" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
 
-Psychologists tend to be interested not only in understanding, but also in improving, human cognition and behaviour. Correspondingly, it has already been extensively demonstrated that concrete behaviours can indeed be modulated by selectively rewarding certain behaviours more than others. Inspired by computational models of cognitive control, I investigate whether, in the same way, it is also possible to modulate abstract task execution parameters, such as learning rate, as described by computational models of learning and decision making. Moreover, I investigate whether these parameters can be adapted to multiple environments (in terms of reward contingencies) simultaneously, guided by associated contextual features.
+Psychologists tend to be interested not only in understanding, but also in improving, human cognition and behavior. Correspondingly, it has already been extensively demonstrated that concrete behaviours can indeed be modulated by selectively rewarding certain behaviours more than others. Inspired by computational models of cognitive control, I investigate whether, in the same way, it is also possible to modulate abstract task execution parameters, such as learning rate, as described by computational models of learning and decision making. Moreover, I investigate whether these parameters can be adapted to multiple environments (in terms of reward contingencies) simultaneously, guided by associated contextual features.
 
-I conduct this research in collaboration with Tom Verguts and Senne Braem, using a combination of computational modelling, behavioural and neuroimaging techniques.
+I conduct this research in collaboration with Tom Verguts and Senne Braem, using a combination of computational modeling, behavioural and neuroimaging techniques.
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Jonas.Simoens@UGent.be" href="mailto:Jonas.Simoens@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Jonas.Simoens@UGent.be</a></div>
 
@@ -157,7 +157,7 @@ Outside of the lab, I enjoy travelling, gaming, playing the guitar and singing.
 
 Theta and alpha oscillations are both implicated in human learning. However, it still remains unclear whether these frequencies co-exist and interact on the same timescale, or whether they impact learning on distinct timescales. In the current PhD project we aim to investigate this question. Our first step was to measure EEG while human subjects were training on a procedural learning task. This task was designed to allow inference about the role that both theta and alpha play on a fast and a slow timescale. Our results [(Huycke et al., 2020)](https://doi.org/10.1101/2020.08.21.259341) suggested that theta power decreases on a slow timescale, while alpha increases on a fast timescale. No modulations of theta and alpha were observed on the fast- and slow timescale respectively, suggesting that these frequencies operate at different timescales.
 
-The next part of this project will focus on computational modelling.
+The next part of this project will focus on computational modeling.
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Pieter.Huycke@UGent.be" href="mailto:Pieter.Huycke@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Pieter.Huycke@UGent.be</a></div>
 
