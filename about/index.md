@@ -56,6 +56,8 @@ My research is supported by an FWO (Research Foundation – Flanders) post-doct
 
 # Cristian Buc Calderon
 
+<img src="/images/profile_pic_cris.jpg" alt="Cristian 'Cris' Buc Calderon" align="left" max-width="200px" height="auto" hspace="20" vspace="20" object-fit="cover">
+
 My research focuses on understanding how humans select one out of many competing actions. My past research tested specific predictions of the affordance competition hypothesis (Cisek & Kalaska, 2010, Ann. Rev. Neurosci.), both at the neural architecture and decision dynamics levels ([Calderon et al., 2015, JEPG](https://doi.org/10.1037/xge0000087); [Calderon et al., 2017, PNAS](http://www.pnas.org/cgi/doi/10.1073/pnas.1710913114); [Calderon et al., 2018, Front. Hum. Neurosci.](https://doi.org/10.3389/fnhum.2018.00093); [Calderon et al., 2018, Psychol. Rev.](http://dx.doi.org/10.1037/rev0000110)). 
 
 More recently, I have been awarded a FWO postdoctoral fellow where I will investigate how the brain learns the optimal timing of individual actions within a sequence of actions (in collaboration with Michael Frank @ Brown University and Tom Verguts @ Ghent University). To carry out this project, I use computational modeling, behavioral and neural methods. 
@@ -98,7 +100,7 @@ In my research, I focus on the question how metacognition is used for further ad
 
 # Mehdi Senoussi
 
-<img src="/images/profile_pic_mehdi.png" alt="Mehdi Senoussi" align="left" max-width="200px" height="auto" hspace="20" vspace="20" object-fit="cover">
+<img src="/images/profile_pic_mehdi.jpg" alt="Mehdi Senoussi" align="left" max-width="200px" height="auto" hspace="20" vspace="20" object-fit="cover">
 
 My research currently focuses on top-down/cognitive control mechanisms that allow us to manipulate and use perceptual and/or mnesic representations. For instance our ability implement a task rule (bind a percept to a motor command), attend to a specific feature, switch between sensory modalities or create and manipulate a mental image. I use Multivariate Pattern Analysis (MVPA) and modeling methods to better understand which and when relevant representations emerge in neural activity. And to know how (and when) such representations are bound together (e.g. perceptual <-> task representations) I use connectivity measures (phase-locking, cross-frequency coupling). In previous work during my PhD at the CerCo lab (Toulouse) I used fMRI, EEG and MVPA to measure the effects of learning on neural representations of visual objects and how it affects perception.
 
