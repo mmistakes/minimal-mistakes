@@ -43,7 +43,7 @@ Although this is a fairly broad topic, there are a few recurring themes, such as
 
 <img src="/images/profile_pic_anna.jpg" alt="Anna Marzecova" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
 
-I am interested in neurocognitive and mechanisms of attention and decision-making under uncertainty. 
+I am interested in neurocognitive and -modulary mechanisms of attention and decision-making under uncertainty. 
 In the current project, I explore how Bayesian estimates about uncertainty guide attention using computational modelling in combination with electroencephalography and pupillometry. 
 
 My research is supported by an FWO (Research Foundation – Flanders) post-doctoral fellowship.
