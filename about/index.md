@@ -9,10 +9,10 @@
     - [Kobe Desender](#kobe-desender)
     - [Mehdi Senoussi](#mehdi-senoussi)
 3. [PhD students](#phd-students)
+    - [Esin Turkakin](#esin-turkakin)
+    - [Jonas Simoens](#jonas-simoens)
     - [Kate Ergo](#kate-ergo)
     - [Pieter Huycke](#pieter-huycke)
-	- [Jonas Simoens](#jonas-simoens)
-	- [Esin Turkakin](#esin-turkakin)
     - [Pieter Verbeke](#pieter-verbeke)
 4. [Visiting researchers](#visiting-researchers)
 5. [Internship students](#internship-students)
@@ -112,6 +112,29 @@ My research currently focuses on top-down/cognitive control mechanisms that allo
 
 # PhD students
 
+# Esin Turkakin
+
+<img src="/images/profile_pic_esin.jpg" alt="Esin Turkakin" align="left" max-width="200px" height="auto" hspace="20" vspace="20" object-fit="cover">
+
+Esin Turkakin is a doctoral working at Verguts Lab.    
+In her research, she mainly focuses on perceptual decision-making, computational modelling of decision processes, neuromodulation and gamification of decision-making tasks.
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Esin.Turkakin@UGent.be" href="mailto:Esin.Turkakin@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Esin.Turkakin@UGent.be</a></div>
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://esintu.github.io" href="https://esintu.github.io" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/website_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">https://esintu.github.io</a></div>
+
+<p style="background-color:white;color:white;">White text</p>
+
+# Jonas Simoens
+
+<img src="/images/profile_pic_jonas.jpg" alt="Jonas Simoens" align="left" max-width="200px" height="auto" hspace="20" vspace="20" object-fit="cover">
+
+Psychologists tend to be interested not only in understanding, but also in improving, human cognition and behaviour. Correspondingly, it has already been extensively demonstrated that concrete behaviours can indeed be modulated by selectively rewarding certain behaviours more than others. Inspired by computational models of cognitive control, I investigate whether, in the same way, it is also possible to modulate abstract task execution parameters, such as learning rate, as described by computational models of learning and decision making. Moreover, I investigate whether these parameters can be adapted to multiple environments (in terms of reward contingencies) simultaneously, guided by associated contextual features.
+
+I conduct this research in collaboration with Tom Verguts and Senne Braem, using a combination of computational modelling, behavioural and neuroimaging techniques.
+
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Jonas.Simoens@UGent.be" href="mailto:Jonas.Simoens@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Jonas.Simoens@UGent.be</a></div>
+
 # Kate Ergo
 
 <img src="/images/profile_pic_kate.jpg" alt="Kate Ergo" align="left" max-width="200px" height="auto" hspace="20" vspace="20" object-fit="cover">
@@ -141,29 +164,6 @@ The next part of this project will focus on computational modelling.
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://github.com/phuycke" href="https://github.com/phuycke" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/github_32x32.jpg" style="width:2em;margin-right:.5em;" alt="GitHub icon">@phuycke</a></div>
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-8156-4419" href="https://orcid.org/0000-0002-8156-4419" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/orcid_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0002-8156-4419</a></div>
-
-# Jonas Simoens
-
-<img src="/images/profile_pic_jonas.jpg" alt="Jonas Simoens" align="left" max-width="200px" height="auto" hspace="20" vspace="20" object-fit="cover">
-
-Psychologists tend to be interested not only in understanding, but also in improving, human cognition and behaviour. Correspondingly, it has already been extensively demonstrated that concrete behaviours can indeed be modulated by selectively rewarding certain behaviours more than others. Inspired by computational models of cognitive control, I investigate whether, in the same way, it is also possible to modulate abstract task execution parameters, such as learning rate, as described by computational models of learning and decision making. Moreover, I investigate whether these parameters can be adapted to multiple environments (in terms of reward contingencies) simultaneously, guided by associated contextual features.
-
-I conduct this research in collaboration with Tom Verguts and Senne Braem, using a combination of computational modelling, behavioural and neuroimaging techniques.
-
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Jonas.Simoens@UGent.be" href="mailto:Jonas.Simoens@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Jonas.Simoens@UGent.be</a></div>
-
-# Esin Turkakin
-
-<img src="/images/profile_pic_esin.jpg" alt="Esin Turkakin" align="left" max-width="200px" height="auto" hspace="20" vspace="20" object-fit="cover">
-
-Esin Turkakin is a doctoral working at Verguts Lab.    
-In her research, she mainly focuses on perceptual decision-making, computational modelling of decision processes, neuromodulation and gamification of decision-making tasks.
-
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Esin.Turkakin@UGent.be" href="mailto:Esin.Turkakin@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Esin.Turkakin@UGent.be</a></div>
-
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://esintu.github.io" href="https://esintu.github.io" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/website_32x32.jpg" style="width:2em;margin-right:.5em;" alt="ORCID iD icon">https://esintu.github.io</a></div>
-
-<p style="background-color:white;color:white;">White text</p>
 
 # Pieter Verbeke
 
