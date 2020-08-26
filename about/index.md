@@ -100,7 +100,7 @@ In my research, I focus on the question how metacognition is used for further ad
 
 # Mehdi Senoussi
 
-<img src="/images/profile_pic_mehdi.jpg" alt="Mehdi Senoussi" max-width="100%" height="auto" align="left" hspace="10" vspace="10">
+<img src="/images/profile_pic_mehdi.jpg" alt="Mehdi Senoussi" max-width="75%" height="auto" align="left" hspace="10" vspace="10">
 
 My research currently focuses on top-down/cognitive control mechanisms that allow us to manipulate and use perceptual and/or mnesic representations. For instance our ability implement a task rule (bind a percept to a motor command), attend to a specific feature, switch between sensory modalities or create and manipulate a mental image. I use Multivariate Pattern Analysis (MVPA) and modeling methods to better understand which and when relevant representations emerge in neural activity. And to know how (and when) such representations are bound together (e.g. perceptual <-> task representations) I use connectivity measures (phase-locking, cross-frequency coupling). In previous work during my PhD at the CerCo lab (Toulouse) I used fMRI, EEG and MVPA to measure the effects of learning on neural representations of visual objects and how it affects perception.
 
