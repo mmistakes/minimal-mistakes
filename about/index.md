@@ -22,7 +22,7 @@
 
 # Tom Verguts
 
-<img src="/images/profile_pic_tom.jpg" alt="Tom Verguts" align="left" max-width="200px" height="auto" hspace="20" vspace="20" object-fit="cover">
+<img src="/images/profile_pic_tom.jpg" alt="Tom Verguts" max-width="100%" height="auto" align="left" hspace="10" vspace="10">
 
 __Personal statement__   
 Humans are biological beings. Thus, behavior is generally adaptive, meaning that it aims to optimise some goal function (e.g., to minimise error or to maximise reward). At the same time, humans live in rapidly changing environments, so this ideal will often not be reached.
@@ -41,7 +41,7 @@ Although this is a fairly broad topic, there are a few recurring themes, such as
 
 # Anna Marzecova
 
-<img src="/images/profile_pic_anna.jpg" alt="Anna Marzecova" align="left" max-width="200px" height="auto" hspace="20" vspace="20" object-fit="cover">
+<img src="/images/profile_pic_anna.jpg" alt="Anna Marzecova" max-width="100%" height="auto" align="left" hspace="10" vspace="10">
 
 I am interested in neurocognitive and neuromodulatory mechanisms of attention and decision-making under uncertainty. 
 In the current project, I explore how Bayesian estimates about uncertainty guide attention using computational modelling in combination with electroencephalography and pupillometry. 
@@ -56,7 +56,7 @@ My research is supported by an FWO (Research Foundation – Flanders) post-doct
 
 # Cristian Buc Calderon
 
-<img src="/images/profile_pic_cris.jpg" alt="Cristian 'Cris' Buc Calderon" align="left" max-width="200px" height="auto" hspace="20" vspace="20" object-fit="cover">
+<img src="/images/profile_pic_cris.jpg" alt="Cristian 'Cris' Buc Calderon" max-width="100%" height="auto" align="left" hspace="10" vspace="10">
 
 My research focuses on understanding how humans select one out of many competing actions. My past research tested specific predictions of the affordance competition hypothesis (Cisek & Kalaska, 2010, Ann. Rev. Neurosci.), both at the neural architecture and decision dynamics levels ([Calderon et al., 2015, JEPG](https://doi.org/10.1037/xge0000087); [Calderon et al., 2017, PNAS](http://www.pnas.org/cgi/doi/10.1073/pnas.1710913114); [Calderon et al., 2018, Front. Hum. Neurosci.](https://doi.org/10.3389/fnhum.2018.00093); [Calderon et al., 2018, Psychol. Rev.](http://dx.doi.org/10.1037/rev0000110)). 
 
@@ -68,7 +68,7 @@ I also took the picture of [Pieter Verbeke](#pieter-verbeke) (scroll :point_down
 
 # Elise Lesage
 
-<img src="/images/profile_pic_elise.jpg" alt="Elise Lesage" align="left" max-width="200px" height="auto" hspace="20" vspace="20" object-fit="cover">
+<img src="/images/profile_pic_elise.jpg" alt="Elise Lesage" max-width="100%" height="auto" align="left" hspace="10" vspace="10">
 
 My current project studies how behavior becomes habitual and how habits can be overcome. I use computational modeling, fMRI, and brain stimulation techniques to investigate these questions.
 
@@ -80,7 +80,7 @@ My Fellowship is funded by the Flanders Fund for Scientific Research (FWO) and t
 
 # Jacki Janowich
 
-<img src="/images/profile_pic_jacki.jpg" alt="Jacki Janowich" align="left" max-width="200px" height="auto" hspace="20" vspace="20" object-fit="cover">
+<img src="/images/profile_pic_jacki.jpg" alt="Jacki Janowich" max-width="100%" height="auto" align="left" hspace="10" vspace="10">
 
 Our brains are simultaneously tasked with acting in the present while predicting and preparing for the future. I am interested in how we proactively optimize neural systems ahead of future goal-directed action. In one ongoing line of work, I use EEG/MEG to investigate the neural activities underlying the computation, communication, and maintenance of future goals. In my current work, I focus on how errors in reward prediction shape learning, using computational modeling and MEG/EEG. In particular, I aim to understand how reward prediction (error) is influenced by timing and hierarchical context. My current research is supported by the EOS project MEMODYN, funded by the FWO and F.R.S.–FNRS.
 
@@ -88,7 +88,7 @@ Our brains are simultaneously tasked with acting in the present while predicting
 
 # Kobe Desender
 
-<img src="/images/profile_pic_kobe.jpg" alt="Kobe Desender" align="left" max-width="200px" height="auto" hspace="20" vspace="20" object-fit="cover">
+<img src="/images/profile_pic_kobe.jpg" alt="Kobe Desender" max-width="100%" height="auto" align="left" hspace="10" vspace="10">
 
 In my research, I focus on the question how metacognition is used for further adaptation of behavior. Currently, I examine how subjective confidence in a decision is used to further optimize cognition. Theoretical models of confidence posit an important role for confidence in learning and adapting behavior, and these are the dynamics that I wish to unravel. I combine behavioral measures, computational modeling, and electrophysiological recordings to answer these questions. In previous work performed during my PhD at the VUB (Belgium), I used behavioral and EEG recordings to unravel the relation between metacognition and conflict processing. I am supported by an FWO {PEGASUS} Marie Skłodowska-Curie fellowship.
 
@@ -100,7 +100,7 @@ In my research, I focus on the question how metacognition is used for further ad
 
 # Mehdi Senoussi
 
-<img src="/images/profile_pic_mehdi.jpg" alt="Mehdi Senoussi" align="left" max-width="200px" height="auto" hspace="20" vspace="20" object-fit="cover">
+<img src="/images/profile_pic_mehdi.jpg" alt="Mehdi Senoussi" max-width="100%" height="auto" align="left" hspace="10" vspace="10">
 
 My research currently focuses on top-down/cognitive control mechanisms that allow us to manipulate and use perceptual and/or mnesic representations. For instance our ability implement a task rule (bind a percept to a motor command), attend to a specific feature, switch between sensory modalities or create and manipulate a mental image. I use Multivariate Pattern Analysis (MVPA) and modeling methods to better understand which and when relevant representations emerge in neural activity. And to know how (and when) such representations are bound together (e.g. perceptual <-> task representations) I use connectivity measures (phase-locking, cross-frequency coupling). In previous work during my PhD at the CerCo lab (Toulouse) I used fMRI, EEG and MVPA to measure the effects of learning on neural representations of visual objects and how it affects perception.
 
@@ -114,7 +114,7 @@ My research currently focuses on top-down/cognitive control mechanisms that allo
 
 # Esin Turkakin
 
-<img src="/images/profile_pic_esin.jpg" alt="Esin Turkakin" align="left" max-width="200px" height="auto" hspace="20" vspace="20" object-fit="cover">
+<img src="/images/profile_pic_esin.jpg" alt="Esin Turkakin" max-width="100%" height="auto" align="left" hspace="10" vspace="10">
 
 Esin Turkakin is a doctoral working at Verguts Lab.    
 In her research, she mainly focuses on perceptual decision-making, computational modelling of decision processes, neuromodulation and gamification of decision-making tasks.
@@ -127,7 +127,7 @@ In her research, she mainly focuses on perceptual decision-making, computational
 
 # Jonas Simoens
 
-<img src="/images/profile_pic_jonas.jpg" alt="Jonas Simoens" align="left" max-width="200px" height="auto" hspace="20" vspace="20" object-fit="cover">
+<img src="/images/profile_pic_jonas.jpg" alt="Jonas Simoens" max-width="100%" height="auto" align="left" hspace="10" vspace="10">
 
 Psychologists tend to be interested not only in understanding, but also in improving, human cognition and behaviour. Correspondingly, it has already been extensively demonstrated that concrete behaviours can indeed be modulated by selectively rewarding certain behaviours more than others. Inspired by computational models of cognitive control, I investigate whether, in the same way, it is also possible to modulate abstract task execution parameters, such as learning rate, as described by computational models of learning and decision making. Moreover, I investigate whether these parameters can be adapted to multiple environments (in terms of reward contingencies) simultaneously, guided by associated contextual features.
 
@@ -137,7 +137,7 @@ I conduct this research in collaboration with Tom Verguts and Senne Braem, using
 
 # Kate Ergo
 
-<img src="/images/profile_pic_kate.jpg" alt="Kate Ergo" align="left" max-width="200px" height="auto" hspace="20" vspace="20" object-fit="cover">
+<img src="/images/profile_pic_kate.jpg" alt="Kate Ergo" max-width="100%" height="auto" align="left" hspace="10" vspace="10">
 
 My research focuses on how reward and reward prediction errors (i.e., mismatches between reward outcome and reward expectation) influence declarative memory (e.g., learning a foreign language). Using a Dutch-Swahili word learning paradigm, we found that word pair recognition increases linearly with larger and more positive RPEs [(De Loof et al., 2018)]( https://doi.org/10.1371/journal.pone.0189212). We also found neural oscillatory signatures that confirm the experience of signed RPEs (SRPEs) boosting declarative memory [(Ergo et al., 2019)](https://doi.org/10.1016/j.neuroimage.2018.10.083). My goal is to further investigate the robustness and generality of these findings. To this end, I use both behavioral and (electro)physiological (i.e., EEG, tACS and eye tracking) measures. My PhD is funded by the Flanders Fund for Scientific Research (FWO).
 
@@ -153,7 +153,7 @@ Outside of the lab, I enjoy travelling, gaming, playing the guitar and singing.
 
 # Pieter Huycke
 
-<img src="/images/profile_pic_pieter_h.jpg" alt="Pieter Huycke" align="left" max-width="200px" height="auto" hspace="20" vspace="20" object-fit="cover">
+<img src="/images/profile_pic_pieter_h.jpg" alt="Pieter Huycke" max-width="100%" height="auto" align="left" hspace="10" vspace="10">
 
 Theta and alpha oscillations are both implicated in human learning. However, it still remains unclear whether these frequencies co-exist and interact on the same timescale, or whether they impact learning on distinct timescales. In the current PhD project we aim to investigate this question. Our first step was to measure EEG while human subjects were training on a procedural learning task. This task was designed to allow inference about the role that both theta and alpha play on a fast and a slow timescale. Our results [(Huycke et al., 2020)](https://doi.org/10.1101/2020.08.21.259341) suggested that theta power decreases on a slow timescale, while alpha increases on a fast timescale. No modulations of theta and alpha were observed on the fast- and slow timescale respectively, suggesting that these frequencies operate at different timescales.
 
@@ -167,7 +167,7 @@ The next part of this project will focus on computational modelling.
 
 # Pieter Verbeke
 
-<img src="/images/profile_pic_pieter_v.jpg" alt="Pieter Verbeke" align="left" max-width="200px" height="auto" hspace="20" vspace="20" object-fit="cover">
+<img src="/images/profile_pic_pieter_v.jpg" alt="Pieter Verbeke" max-width="100%" height="auto" align="left" hspace="10" vspace="10">
 
 Previous studies of human cognition at different time scales have reported two mechanisms to alter connectivity between brain regions. First, the brain can adjust the strength of the synaptic connections between different neurons. Second, regions can be bound together by synchronizing their oscillations (Fries, 2005). In this PhD project, we investigate how interactions between these two dynamics lead to the remarkable flexibility (and also stability) in human behavior. Additionally, we investigate how the brain is able to know which regions to synchronize by exerting learning at a higher hierarchical level. For these purposes, we aim at describing computational models and test these models empirically with EEG.
 
