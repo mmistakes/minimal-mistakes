@@ -32,5 +32,5 @@
 ## Archive
 
 All papers are available online through the [academic bibliography](https://biblio.ugent.be/) of Ghent University.   
-The papers associated with our lab can be found by checking the <a href="publications_overview.html">publication list of our PI.</a>.
+The papers associated with our lab can be found by checking <a href="publications_overview.html">Tom's publication list.</a>.
 
