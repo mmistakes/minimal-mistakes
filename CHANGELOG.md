@@ -2,6 +2,7 @@
 
 ### Bug Fixes
 
+- Fix typo in documentation. [#2678](https://github.com/mmistakes/minimal-mistakes/issues/2678)
 - Remove duplicate CSS definitions. [#2666](https://github.com/mmistakes/minimal-mistakes/pull/2666)
 - Fix `entries_layout: grid` in various layouts. [#2639](https://github.com/mmistakes/minimal-mistakes/issues/2639)
 - Change `fa` to `fas` for Font Awesome 5. [#2649](https://github.com/mmistakes/minimal-mistakes/pull/2649)

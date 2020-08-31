@@ -7,7 +7,7 @@ single_layout_gallery:
     alt: "single layout with header example"
   - image_path: /assets/images/mm-layout-single-meta.png
     alt: "single layout with comments and related posts"
-last_modified_at: 2020-07-24T16:00:21-04:00
+last_modified_at: 2020-08-30T21:24:15-04:00
 toc: true
 toc_label: "Included Layouts"
 toc_icon: "columns"
@@ -625,7 +625,7 @@ To create a sidebar menu[^sidebar-menu] similar to the one found in the theme's 
   <figcaption>Custom sidebar navigation menu example.</figcaption>
 </figure>
 
-To start, add a new key to `_data/navigation.yml`. This will be referenced later in via YAML Front Matter so keep it short and memorable. In the case of the theme's documentation menu I used `docs`.
+To start, add a new key to `_data/navigation.yml`. This will be referenced later via YAML Front Matter so keep it short and memorable. In the case of the theme's documentation menu I used `docs`.
 
 **Sample sidebar menu links:**
 

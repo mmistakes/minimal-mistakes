@@ -5,12 +5,15 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2020-08-30T20:53:08-04:00
+last_modified_at: 2020-08-30T21:25:24-04:00
 toc: false
 ---
 
 ## Unreleased
 
+## Bug Fixes
+
+- Fix typo in documentation. [#2678](https://github.com/mmistakes/minimal-mistakes/issues/2678)
 - Remove duplicate CSS definitions. [#2666](https://github.com/mmistakes/minimal-mistakes/pull/2666)
 - Fix `entries_layout: grid` in various layouts. [#2639](https://github.com/mmistakes/minimal-mistakes/issues/2639)
 - Change `fa` to `fas` for Font Awesome 5. [#2649](https://github.com/mmistakes/minimal-mistakes/pull/2649)
