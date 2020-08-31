@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2020-08-30T21:25:24-04:00
+last_modified_at: 2020-08-30T21:28:27-04:00
 toc: false
 ---
 
@@ -13,6 +13,7 @@ toc: false
 
 ## Bug Fixes
 
+- Fix broken link in documentation. [#2677](https://github.com/mmistakes/minimal-mistakes/issues/2677)
 - Fix typo in documentation. [#2678](https://github.com/mmistakes/minimal-mistakes/issues/2678)
 - Remove duplicate CSS definitions. [#2666](https://github.com/mmistakes/minimal-mistakes/pull/2666)
 - Fix `entries_layout: grid` in various layouts. [#2639](https://github.com/mmistakes/minimal-mistakes/issues/2639)
