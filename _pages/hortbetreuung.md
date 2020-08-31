@@ -128,7 +128,7 @@ Ihr Kind kann in unserer Schule an einem kostenfreien Mittagessen teilnehmen.
 (Vollwert Catering) versorgt uns auch in diesem Schuljahr mit Mittagessen, welches über eine
 Mitarbeiterin in der Mensa (im eFöBgebäude) an Ihr Kind in einem sozialen
 Gruppenumfeld ausgeteilt und verzehrt wird. 
-Bitte melden Sie Ihr Kind [online](http://www.schulessen.de/) an. 
+Bitte melden Sie Ihr Kind [online](http://www.schulessen.berlin/) an. 
 Sollten Sie bereits einen Zugang haben, verwenden Sie bitte Ihre Login-Daten. Bitte wählen Sie bei der Angabe des Schuljahres "für das kommende Schuljahr 2020/21" aus. 
 Wir wünschen guten Appetit!
 
