@@ -8,6 +8,7 @@
 
 ### Enhancements
 
+- Refactor page meta include. [#2641](https://github.com/mmistakes/minimal-mistakes/pull/2641)
 - Add `article:author` Open Graph markup. [#2670](https://github.com/mmistakes/minimal-mistakes/pull/2670)
 
 ## [4.20.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.20.1)
