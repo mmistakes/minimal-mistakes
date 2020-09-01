@@ -127,14 +127,16 @@ Ihr Kind kann in unserer Schule an einem kostenfreien Mittagessen teilnehmen.
 [GREENs UNLIMITED](http://www.greens-unlimited.de/)
 (Vollwert Catering) versorgt uns auch in diesem Schuljahr mit Mittagessen, welches über eine
 Mitarbeiterin in der Mensa (im eFöBgebäude) an Ihr Kind in einem sozialen
-Gruppenumfeld ausgeteilt und verzehrt wird. 
-Bitte melden Sie Ihr Kind [online](http://www.schulessen.berlin/) an. 
-Sollten Sie bereits einen Zugang haben, verwenden Sie bitte Ihre Login-Daten. Bitte wählen Sie bei der Angabe des Schuljahres "für das kommende Schuljahr 2020/21" aus. 
+Gruppenumfeld ausgeteilt und verzehrt wird.
+Bitte melden Sie Ihr Kind [online](http://www.schulessen.berlin/) an.
+Sollten Sie bereits einen Zugang haben, verwenden Sie bitte Ihre Login-Daten. Bitte wählen Sie bei der Angabe des Schuljahres "für das kommende Schuljahr 2020/21" aus.
 Wir wünschen guten Appetit!
+
+[Anmeldung Mittagessen](http://www.schulessen.berlin/){: .btn .btn--success}
 
 Das Catering-Unternehmen wird alle drei Jahre vom Schulamt europaweit
 ausgeschrieben, wobei die Lehrer-, Schüler und Elternschaft einen signifikanten
-und direkten Einfluss auf die Auswahl des Unternehmens haben. 
+und direkten Einfluss auf die Auswahl des Unternehmens haben.
 
 # Noch Fragen?
 
