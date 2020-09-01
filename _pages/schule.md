@@ -48,7 +48,7 @@ Austausch und sind gerne Gast der Elternversammlungen.
 
 Neu seit Schuljahr 2020 sind Kooperationen mit
 [<i class="fa fa-external-link">&nbsp;</i>Hertha BSC](https://www.herthabsc.de/de/intern/schulaktion/page/2126--17--.html) und
-[<i class="fa fa-external-link">&nbsp;</i>Al-Farabi Musikakademie](https://www.al-farabi.de). Die Kinder haben hier die Möglichkeit, sich für eine Fußball-AG mit Anthony anzumelden oder in einer Chor-AG mit Kian zu singen. Hier werden Talente erkannt und individuell gefördert. 
+[<i class="fa fa-external-link">&nbsp;</i>Al-Farabi Musikakademie](https://www.al-farabi.de). Die Kinder haben hier die Möglichkeit, sich für eine Fußball-AG mit Anthony anzumelden oder in einer Chor-AG mit Kian zu singen. Hier werden Talente erkannt und individuell gefördert.
 
 ### Veranstaltungen der Schulgemeinschaft
 
