@@ -17,7 +17,7 @@ sidebar:
 # <i class="fa fa-calendar"></i> Termine rund um die Einschulung
 {: #termine}
 
-<!-- {% include outdated.md %} -->
+{% include outdated.md %}
 
 Die wichtigsten Daten zum Schuljahr **2020/21** in einem Überblick.
 
@@ -98,7 +98,7 @@ und 54% Schüler haben, die von 13 Erziehern und 24 Lehrkräften betreut werden
 # <i class="fa fa-file-text-o"></i> Anmeldung der Schulanfänger*innen
 {: #anmeldung}
 
-<!-- {% include outdated.md %} -->
+{% include outdated.md %}
 
 In der Zeit vom 19. September bis 02. Oktober 2019 melden Sie ihr
 schulpflichtiges Kind in der [für Sie zuständigen

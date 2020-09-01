@@ -81,7 +81,7 @@ Die individuelle Förderung steht im Mittelpunkt.
 
 ## Das sind unsere Unterrichtszeiten:
 
-<!-- {% include outdated.md %} -->
+{% include outdated.md %}
 
 |Einlass | 7:50 Uhr | Blöcke | Mittagessen |
 | ---|----| ----- |  |
@@ -102,7 +102,7 @@ Die individuelle Förderung steht im Mittelpunkt.
 
 ## Ferientermine
 
-<!-- {% include outdated.md %} -->
+{% include outdated.md %}
 
 | Schuljahr 2019/20     | Ferienbeginn   | Ferienende     | erster Unterrichtstag |
 |-------------------    |--------------  |------------    |-----------------------|
