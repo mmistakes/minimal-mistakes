@@ -2,7 +2,9 @@
 
 ## Preprints
 
-- Verbeke, P., & Verguts, T. (2020). Neural synchrony for adaptive control. [https://psyarxiv.com/523x9/](https://psyarxiv.com/523x9/)
+- Senoussi, M., Verbeke, P., Desender, K., De Loof, E., Talsma, D., & Verguts, T. (2020). Theta oscillations shift towards optimal frequency for cognitive control. BioRxiv. [https://doi.org/10.1101/2020.08.30.273706](https://doi.org/10.1101/2020.08.30.273706)
+
+- Verbeke, P., & Verguts, T. (2020). Neural synchrony for adaptive control. PsyArXiv. [https://psyarxiv.com/523x9/](https://psyarxiv.com/523x9/)
 
 - Ergo, K., De Vilder, L., De Loof, E., & Verguts, T. (2020). Reward prediction errors drive declarative learning irrespective of agency. PsyArXiv. [https://doi.org/10.31234/osf.io/63g9w](https://doi.org/10.31234/osf.io/63g9w)
 
