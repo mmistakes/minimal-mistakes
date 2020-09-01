@@ -4,7 +4,7 @@ title: "Schulbeginn"
 permalink: /schulbeginn/
 author_profile: false
 excerpt: "Alles Wichtige zur Einschulung und zum Schulstart"
-modified: 2017-03-07T10:55:00+01:00
+modified: 2020-09-01T10:55:00+01:00
 header:
   overlay_color: "#fff"
   overlay_image: /assets/images/feature-einschulung.jpg
@@ -19,16 +19,16 @@ sidebar:
 
 {% include outdated.md %}
 
-Die wichtigsten Daten zum Schuljahr **2020/21** in einem Überblick.
+Die wichtigsten Daten zum Schuljahr **2021/22** in einem Überblick.
 
 | Termine |  Veranstaltung |
 |---|---|
-| | Ihr Kind wurde im Zeitraum vom 1. Oktober 2013 bis zum 30. September 2014 geboren? Herzlichen Glückwunsch zu Ihrem baldigen **Schulkind**. |
-| Freitag, 19.09.2019 bis Freitag, 02.10.2019  | [<i class="fa fa-file-text-o">&nbsp;</i>**Anmeldung**](#anmeldung) der Schulanfänger*innen im Sekretariat. |
-|  | **Hospitation:** Sie können in der Schule hospitieren und sich mit den Abläufen vertraut machen. Schnuppern Sie gerne in den Schulalltag einer Klasse hinein. Bitte vereinbaren Sie hierzu einen Termin im Sekretariat.  |
-| Dienstag, 31.07.2020 | Melden Sie Ihr Kind rechtzeitig zur [<i class="fa fa-child">&nbsp;</i>**Hortbetreuung (eFöB)**](#hort) an, so dass Ihr Kind am 01.08.2020 von unserem Hort betreut werden kann.  |
-| Freitag, 14.08.2020 und Samstag, 15.08.2020 | Endlich! Wir feiern die Einschulung in der Sporthalle |
-| Montag, 17.08.2020 | Der **erste Schultag.** |
+| | Ihr Kind wurde im Zeitraum vom 1. Oktober 2014 bis zum 30. September 2015 geboren? Herzlichen Glückwunsch zu Ihrem baldigen **Schulkind**. |
+| Montag, 28.09.2020 bis Freitag, 09.10.2020  | [<i class="fa fa-file-text-o">&nbsp;</i>**Anmeldung**](#anmeldung) der Schulanfänger*innen im Sekretariat. |
+|  | **Hospitation:** Sie können in der Schule hospitieren und sich mit den Abläufen vertraut machen. Schnuppern Sie gerne in den Schulalltag einer Klasse hinein. Bitte vereinbaren Sie hierzu einen Termin im Sekretariat. |
+| Dienstag, 31.07.2021 | Melden Sie Ihr Kind rechtzeitig zur [<i class="fa fa-child">&nbsp;</i>**Hortbetreuung (eFöB)**](#hort) an, so dass Ihr Kind am 01.08.2021 von unserem Hort betreut werden kann.  |
+| Samstag, 14.08.2021 | Endlich! Wir feiern die Einschulung in der Sporthalle |
+| Montag, 16.08.2021 | Der **erste Schultag.** |
 
 {{comment}}<!--
 **TODO**:
@@ -51,14 +51,16 @@ werden kann - können Sie direkt auf der Seite der [Senatsverwaltung für Bildun
 Jugend und Familie
 ](https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/anmeldung/)
 nachsehen.<br/><br/>
-[<i class="fa fa-download">&nbsp;&nbsp;</i>Info zur Anmeldung der Schulanfänger 2020/21](https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/anmeldung/plakat-schulanmeldung-fuer-2020.pdf){: .btn .btn--success}
-[<i class="fa fa-download">&nbsp;&nbsp;</i>Umfangreiche Informationen zum Schulbeginn 2020/21](https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/anmeldung/schulbeginn_web.pdf){: .btn .btn--success}
+[<i class="fa fa-download">&nbsp;&nbsp;</i>Info zur Anmeldung der Schulanfänger 2021/22](https://www.berlin.de/sen/bildung/schule/bildungswege/grundschule/plakat_schulanmeldung_fuer_2021.pdf){: .btn .btn--success}
+[<i class="fa fa-download">&nbsp;&nbsp;</i>Umfangreiche Informationen zum Schulbeginn 2021/22](https://www.berlin.de/sen/bildung/fachkraefte/einstellungen/nichtpaedagogisches-personal/schulanmeldung_so_gehts_2021.pdf){: .btn .btn--success}
 {: .notice--info}
 
 ---
 
 # <i class="fa fa-picture-o"></i> Kurzporträt unserer Schule
 {: #portrait}
+
+{% include outdated.md %}
 
 Wir sind eine zweizügige, [verlässliche Halbtagsgrundschule](/hortbetreuung/#vhg)
 in Spandau mit rund 300 Kindern, die von 28
