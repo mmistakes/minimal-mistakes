@@ -144,9 +144,9 @@ können. Vor allem die Kursgebühren können sich ändern.
 {%- endif -%}
 {%- endcapture -%}
 
-{% include outdated.md %}
 {% comment %}
 {% endcomment %}
+{% include outdated.md %}
 
 {{ ag.content | markdownify }}
 
