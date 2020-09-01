@@ -64,4 +64,9 @@
     </div>
   {% endfor %}
 
+  <div style="clear:both; margin-bottom: 1em">
+    <a class='btn btn--primary align-left' href='https://calendar.google.com/calendar/embed?src=hem870ffa21nkf91a8n05llmss%40group.calendar.google.com&ctz=Europe%2FBerlin'><i class="fa fa-external-link">&nbsp;</i>Monatsansicht des Schulkalenders</a>
+    <a class='btn btn--success align-right' href='https://calendar.google.com/calendar/ical/hem870ffa21nkf91a8n05llmss%40group.calendar.google.com/public/basic.ics'><i class="fa fa-calendar">&nbsp;</i>Schulkalender abonnieren / ICS-Datei herunterladen</a>
+    <div style="clear:both;"></div>
+  </div>
 </div>
