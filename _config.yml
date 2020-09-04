@@ -130,6 +130,9 @@ author:
     - label: "StackOverflow"
       icon: "fab fa-fw fa-stack-overflow"
       url: "https://stackoverflow.com/users/2930864/percy-vega"
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://www.youtube.com/channel/UCjDs32LRyVIqCrE7-Pz_rNA"
 
 # Site Footer
 footer:

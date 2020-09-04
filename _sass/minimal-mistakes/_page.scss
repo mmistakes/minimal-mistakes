@@ -5,51 +5,34 @@
 #main {
   @include clearfix;
   margin-left: auto;
+  margin-top: 2em;
   margin-right: auto;
   padding-left: 1em;
   padding-right: 1em;
   -webkit-animation: $intro-transition;
-  animation: $intro-transition;
+          animation: $intro-transition;
   max-width: 100%;
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
 
   @include breakpoint($x-large) {
-    max-width: $max-width;
+    max-width: $x-large;
   }
 }
 
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 100vh;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.initial-content,
-.search-content {
-  flex: 1 0 auto;
-}
-
 .page {
+
   @include breakpoint($large) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
-    padding-right: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
-    padding-right: $right-sidebar-width;
   }
 
   .page__inner-wrap {
     float: left;
-    margin-top: 1em;
     margin-left: 0;
     margin-right: 0;
     width: 100%;
@@ -125,6 +108,7 @@ body {
   }
 
   a:not(.btn) {
+
     &:hover {
       text-decoration: underline;
 
@@ -162,9 +146,9 @@ body {
   margin-bottom: 2em;
   @include clearfix;
   -webkit-animation: $intro-transition;
-  animation: $intro-transition;
+          animation: $intro-transition;
   -webkit-animation-delay: 0.25s;
-  animation-delay: 0.25s;
+          animation-delay: 0.25s;
 
   &--overlay {
     position: relative;
@@ -175,9 +159,9 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     -webkit-animation: $intro-transition;
-    animation: $intro-transition;
+            animation: $intro-transition;
     -webkit-animation-delay: 0.25s;
-    animation-delay: 0.25s;
+            animation-delay: 0.25s;
 
     a {
       color: #fff;
@@ -274,6 +258,7 @@ body {
   text-transform: uppercase;
 }
 
+
 /*
    Page meta
    ========================================================================== */
@@ -298,6 +283,7 @@ body {
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+
 
 /*
    Page taxonomy
@@ -493,6 +479,7 @@ body {
     text-decoration: none;
   }
 }
+
 
 /*
    Related
