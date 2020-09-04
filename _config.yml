@@ -108,7 +108,7 @@ analytics:
 author:
   name             : "Percy Vega"
   avatar           : "/assets/images/percy_vega.png"
-  bio              : "Java, Spring, Clean Code. Saved by grace."
+  bio              : "Java, Spring, Clean Code.<br/>Saved by grace."
   location         : "Weston, FL"
   email            :
   links:
