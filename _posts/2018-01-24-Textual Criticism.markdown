@@ -7,11 +7,11 @@ tag:              [textual criticism]
 
 ## Definitions
 
-Uncial script: a text written completely in capital letters, without spaces (scripto continua), diacritics, or punctuation. Older than minuscules.
+**Uncial script**: a text written completely in capital letters, without spaces (scripto continua), diacritics, or punctuation. Older than minuscules.
 
-Minuscule: a text written in lowercase letters with a few words starting in capital letters. Several centuries after Christ.
+**Minuscule**: a text written in lowercase letters with a few words starting in capital letters. Several centuries after Christ.
 
-Codex: a book (collection of pages that turn) made of paper, vellum, papyrus, or similar and written by hand (manuscript) . It replaced the old scroll.
+**Codex**: a book (collection of pages that turn) made of paper, vellum, papyrus, or similar and written by hand (manuscript) . It replaced the old scroll.
 * Vaticanus (B) – c. 325–350
 * Sinaiticus (a.k.a. Aleph, א) A – c. 330–360
 * Alexandrinus (A) – c. 400–440
@@ -25,7 +25,7 @@ Scroll: a long sheet rolled so that one page (segment) is exposed at a time.
 
 A way of grouping texts by region of origin and time.
 
-* The Alexandrian text-type
+* **The Alexandrian text-type**
   * Also called the "Neutral Text" tradition; less frequently, the "Minority Text"
   * From around Alexandria, Egypt and from the Alexandrian Church
   * 2nd–4th centuries
@@ -34,14 +34,14 @@ A way of grouping texts by region of origin and time.
   * Used mainly by translations after 1900
   * Used for the NIV, NAB, NABRE, Douay, JB, TNIV, NASB, RSV, ESV, EBR, NWT, LB, ASV, NC, GNB
 
-* The Western text-type
+* **The Western text-type**
   * Sometimes called the Caesarean text-type
   * From North Africa to Italy and from Gaul to Syria
   * 3rd–9th centuries
   * Greek and Latin
   * Used for the Vetus Latina
 
-* The Byzantine text-type
+* **The Byzantine text-type**
   * Also called Koinē text-type or “Majority Text” (because the Byzantines made more copies of these than of any others)
   * 5th–16th centuries
   * 95% of all the existing manuscripts

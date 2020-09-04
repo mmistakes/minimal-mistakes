@@ -5,7 +5,7 @@ categories:       IT
 tag:              [macos,intellij,shortcuts]
 ---
 
-Legend
+**Legend**
 - Shift: ⇧
 - Control: ⌃
 - Alt/Option: ⌥
@@ -16,30 +16,30 @@ Legend
 - Up arrow: ↑
 - Down arrow: ↓
 
-Execution
+**Execution**
 - Run program: ⌃ R
 - Debug program: ⌃ D
 - Stop JVM: ⌘ F2
 
-Debugging
+**Debugging**
 - Step over / into: F8 / F7
 - Smart step into / Step out Run to cursor: ⇧ F7 / ⇧ F8
 - Run to cursor: ⌥ F9
 - Evaluate expression: ⌥ F8
 - Resume program: ⌘ ⌥ R
 
-Bookmarks
+**Bookmarks**
 - Toggle bookmark: F3
 - Toggle bookmark with mnemonic: ⌥ F13
 - Go to numbered bookmark: ⌃0...⌃9
 - Show bookmarks: ⌘ F3
 
-Breakpoints
+**Breakpoints**
 - Toggle breakpoint: ⌘ F8
 - Edit breakpoint: ⌘ ⇧ F8 (when cursor is on breakpoint LOC)
 - View breakpoints: ⌘ ⇧ F8 (when cursor is not on breakpoint LOC)
 
-Editing Existing Code
+**Editing Existing Code**
 - Multiple cursors: ⇧ ⌥ Clicks
 - Toggle Column Selection mode: ⇧ ⌘ 8
 - Smart line join: ⇧ ⌃ J
@@ -47,18 +47,18 @@ Editing Existing Code
 - Organize imports: ⌃ ⌥ O
 - Change method signature: ⌘ F6 
 
-Editing New Code
+**Editing New Code**
 - Surround with: ⌥ ⌘ T
 - Suggestions: ⌥ ⏎
 - Generate: ⌃ ⏎
 - Basic code completion: ⌃ Space
 - Smart code completion: ⌃ ⇧ Space
 
-Navigation
+**Navigation**
 - Next / previous highlight: F2 / ⇧ F2
 - Next / previous location: ⌥ ⌘ ← / ⌥ ⌘ →
 
-Various
+**Various**
 - View call hierarchy: ⌃ ⌥ H
 - Dictionary of actions or options: ⇧ ⌘ A
 - Toggle the terminal tool window visibility: ⌥ F12
