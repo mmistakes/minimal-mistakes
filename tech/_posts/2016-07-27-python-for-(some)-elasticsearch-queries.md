@@ -5,6 +5,7 @@ tags:
   - database
   - elasticsearch
   - coding
+categories: tech
 excerpt: Using Python for querying Elasticsearch
 ---
 

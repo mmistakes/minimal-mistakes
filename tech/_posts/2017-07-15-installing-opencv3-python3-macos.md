@@ -5,6 +5,7 @@ tags:
   - opencv
   - macOS
   - installs
+categories: tech
 excerpt: "Installing OpenCV3 with Python3 bindings on macOS, the ultimate guide"
 ---
 

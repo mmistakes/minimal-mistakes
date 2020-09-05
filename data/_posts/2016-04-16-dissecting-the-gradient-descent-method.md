@@ -6,6 +6,7 @@ tags:
   - machine learning
   - optimisation
   - coding
+categories: data
 excerpt: A tutorial on the Gradient Descent method, done from scratch
 ---
 

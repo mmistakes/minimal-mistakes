@@ -5,6 +5,7 @@ tags:
   - nltk
   - nlp
   - coding
+categories: tech
 excerpt: How to plot the real frequency of occurrence of text with NLTK
 ---
 

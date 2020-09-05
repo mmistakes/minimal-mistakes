@@ -6,6 +6,7 @@ tags:
   - language
   - phd
   - research
+categories: data
 excerpt: Data visualisation over the text of my PhD thesis on language evolution
 ---
 

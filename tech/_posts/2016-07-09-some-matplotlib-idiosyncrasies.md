@@ -5,6 +5,7 @@ tags:
   - matplotlib
   - data viz
   - coding
+categories: tech
 excerpt: Some basics on how to use matplotlib for plotting data
 ---
 

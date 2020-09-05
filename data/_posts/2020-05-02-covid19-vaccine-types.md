@@ -5,11 +5,11 @@ tags:
   - data
   - science
   - research
-categories: doodledatcard
+categories: data
 excerpt: Several of the candidates under work for a COVID-19 vaccine use methods and technologies which are novel and not used yet in existing vaccines.
 ---
 
-Research into creating a vaccine against COVID-19 is very lively these days, and many groups are already producing promising results, such as candidates which are already in the clinical stage (see this [other post]({% post_url /doodledatcard/2020-05-01-covid19-vaccine-race %}) for a card on the volumes of candidates in time).
+Research into creating a vaccine against COVID-19 is very lively these days, and many groups are already producing promising results, such as candidates which are already in the clinical stage (see this [other post]({% post_url /data/2020-05-01-covid19-vaccine-race %}) for a card on the volumes of candidates in time).
 
 These vaccine candidates are of different types, and a lot of them use methods which are relatively new, some of which having no licensed vaccine yet. Nature News gives a very useful [guide](#references) to them, and it has been the main source of the information in this post, other than the WHO report which has provided the numerical data.
 
