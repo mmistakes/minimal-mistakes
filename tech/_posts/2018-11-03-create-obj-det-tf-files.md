@@ -7,6 +7,7 @@ tags:
   - machine learning
   - object detection
   - tfrecord
+categories: tech
 excerpt: Creating files for training object detection models in TensorFlow
 ---
 

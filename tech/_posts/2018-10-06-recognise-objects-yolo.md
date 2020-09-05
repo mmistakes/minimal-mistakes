@@ -5,6 +5,7 @@ tags:
   - machine learning
   - deep learning
   - object detection
+categories: tech
 excerpt: Looking at YOLO and Darknet as neural network frameworks for object detection
 ---
 

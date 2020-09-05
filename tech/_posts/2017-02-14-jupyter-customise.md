@@ -5,6 +5,7 @@ tags:
   - python
   - notebook
   - coding
+categories: tech
 excerpt: "Learning to make the most of Jupyter notebooks"
 ---
 

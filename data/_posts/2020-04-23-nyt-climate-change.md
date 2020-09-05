@@ -5,7 +5,7 @@ tags:
   - data
   - time series
   - media
-categories: doodledatcard
+categories: data
 excerpt: Looking at the volume of stories about climate change in the media to assess how this area has been discussed historically, a case from the New York Times.
 ---
 

@@ -4,6 +4,7 @@ tags:
   - python
   - nlp
   - linguistics
+categories: data
 excerpt: "Stopwords in English and finding them in NLP libraries"
 ---
 

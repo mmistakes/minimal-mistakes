@@ -15,6 +15,8 @@ I'm Italian and also a great fan of **linguistics** and languages, some of my re
 I obviously **code** in my job but also for personal projects & for fun - I like it and am a great fan of open source (thanks everyone!). There's some posts here which work a bit like tutorials: it may be that something such as an installation or a library not well documented frustrates me, so after figuring out the solution I write about it - it's my way of giving back to the community of developers who create the software I use. Or it may just be that I fancy illustrating some concept or topic.
 These days, I mostly code in Python, but I have to say I kinda miss the days of physics simulations in C++ (or Fortran at times). I run, together with some wonderful co-orgs, the <a href="https://www.meetup.com/PyData-Edinburgh" target="_blank">PyData Edinburgh</a> meetup community, which has been a dazzling journey so far - lots learned, lots of fun, many good chats.
 
+Here, the "Data stuff" category lists the post where I've done something quantitative with data, it excludes those which are more opinion pieces on data science. I also have a category for tech writing, which encompasses little tutorials or explanations/discoveries in programming and general tech.
+
 Apart from data, coding and language things, there's also posts here over various random topics - places I've been to, leadership ideas, opinions, anything else coming to mind.
 
 _All images/photos shown on this blog are mine unless otherwise specified, and credited. In some cases, I've used free-to-reuse imagery. My little avatar here on the side was made by my illustrator friend <a href="https://www.instagram.com/ladyofshalott89/" target="_blank">ladyofshalott89</a>._
@@ -30,7 +32,7 @@ These are things I'm curating at the moment, or perennial works-in-progress.
 
 ### DoodleDatCard
 
-**Doodling Data Cards** (aka **DoodleDatCard**) (<a href="https://twitter.com/DoodleDatCard" target="_blank">Twitter</a>, <a href="https://www.instagram.com/doodledatcard/" target="_blank">Instagram</a>) - my hand-drawn data stories, on cards. Some of these cards are accompanied by a post <a href="/categories/#doodledatcard" target="_blank">here on this blog</a>. I'm quite erratic in the topics I explore, either I have a question to answer, go look for data and display it, or I see/hear some data somewhere and I decide to give it a visual form.
+**Doodling Data Cards** (aka **DoodleDatCard**) (<a href="https://twitter.com/DoodleDatCard" target="_blank">Twitter</a>, <a href="https://www.instagram.com/doodledatcard/" target="_blank">Instagram</a>) - my hand-drawn data stories, on cards. Some of these cards are accompanied by a post, in the "Data" category here <a href="/categories/#data" target="_blank">here on this blog</a>. I'm quite erratic in the topics I explore, either I have a question to answer, go look for data and display it, or I see/hear some data somewhere and I decide to give it a visual form.
 
 ## My Scientific Publications
 

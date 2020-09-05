@@ -5,6 +5,7 @@ header:
 tags:
   - data
   - statistics
+categories: data
 excerpt: How the word average is used in regular talk and how to interpret and calculate it best
 ---
 

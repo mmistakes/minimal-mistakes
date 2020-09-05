@@ -4,6 +4,7 @@ tags:
   - data viz
   - d3
   - javascript
+categories: tech
 excerpt: Following a path to learn D3 for data visualisation
 ---
 

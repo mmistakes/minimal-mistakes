@@ -5,7 +5,7 @@ tags:
   - data
   - science
   - research
-categories: doodledatcard
+categories: data
 excerpt: Looking at the volume of candidate vaccines against COVID-19 and their progress in pre-clinical and clinical phases, in time
 ---
 

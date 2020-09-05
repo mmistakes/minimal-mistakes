@@ -7,6 +7,7 @@ tags:
   - dynamodb
   - aws
   - coding
+categories: tech
 excerpt: Python for querying a DynamoDB in AWS with boto3
 ---
 
