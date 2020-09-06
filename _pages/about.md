@@ -20,9 +20,14 @@ comments: false
 최선재
 
 ## 직무 경험
-(주) 다날  
-2019.12.02 ~ 재직중  
-TX 개발팀 / 사원  
+* [락인컴퍼니](https://liapp.lockincomp.com/ko/) `2016.01.04 ~ 2016.03.31`   
+`QA부서` / `인턴`
+
+* [에이스프로젝트]() `2019.07.01 ~ 2019.08.30`  
+`백앤드 서버 개발팀`/ `인턴`
+
+* (주) 다날 `2019.12.02 ~ 재직중`  
+`TX 개발팀` / `사원`  
 
 # 스킬
 ## Language
@@ -34,7 +39,7 @@ TX 개발팀 / 사원
 - Windows
 - Linux
 
-## Tool
+## 사용 가능한 Tool
 - Eclipse
 - SVN
 - JIRA
@@ -44,7 +49,7 @@ TX 개발팀 / 사원
 - Git Lab
 
 # 프로젝트
-## [2020.04 ~ 2020.07] LG pay, 휴대폰 결제
+## [2020.04 ~ 2020.07] LG pay - 휴대폰 결제 신규 개발
 - LG Pay 휴대폰 결제 개발(오프라인, 온라인)
 - 다날의 휴대폰 결제 서버와 카드 리더기(Van)사와 통신
 - LG Server 와 LG APP와 통신
@@ -71,7 +76,10 @@ TX 개발팀 / 사원
   - JDBC
   - jetty
 
-# Experience
+## [2020.07 ~ 진행 중] 휴대폰 결제 유지보수
+### 
+
+# 인턴
   
 ## ACEPROJECT(Server team)
 `Intern • Jul, 2019 — Aug 2019`
@@ -111,7 +119,7 @@ TX 개발팀 / 사원
   
   ![인턴  LIAPP](https://user-images.githubusercontent.com/49507736/66195102-def9a700-e6d0-11e9-8b5f-7abe23e9a882.png)
 
-# Project
+# 대학교 Project
 ## Server for Application
   `Developer • Oct, 2019 — Oct, 2019`<br>
   Developed Server for 2019 Seoul App Contest using Spring Boot.  
