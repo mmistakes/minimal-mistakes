@@ -20,10 +20,10 @@ comments: false
 최선재
 
 ## 직무 경험
-* [락인컴퍼니](https://liapp.lockincomp.com/ko/) `2016.01.04 ~ 2016.03.31`   
+* [락인컴퍼니](https://choiseonjae.github.io/about/#language) `2016.01.04 ~ 2016.03.31`   
 `QA부서` / `인턴`
 
-* [에이스프로젝트]() `2019.07.01 ~ 2019.08.30`  
+* [에이스프로젝트](https://choiseonjae.github.io/about/ACEPROJECT(Server-team)) `2019.07.01 ~ 2019.08.30`  
 `백앤드 서버 개발팀`/ `인턴`
 
 * (주) 다날 `2019.12.02 ~ 재직중`  
