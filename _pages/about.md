@@ -20,10 +20,10 @@ comments: false
 최선재
 
 ## 직무 경험
-* [락인컴퍼니](https://choiseonjae.github.io/about/#language) `2016.01.04 ~ 2016.03.31`   
+* [락인컴퍼니](https://choiseonjae.github.io/about/#%EB%9D%BD%EC%9D%B8%EC%BB%B4%ED%8D%BC%EB%8B%88qa-team) `2016.01.04 ~ 2016.03.31`   
 `QA부서` / `인턴`
 
-* [에이스프로젝트](https://choiseonjae.github.io/about/ACEPROJECT(Server-team)) `2019.07.01 ~ 2019.08.30`  
+* [에이스프로젝트](https://choiseonjae.github.io/about/#aceprojectserver-team) `2019.07.01 ~ 2019.08.30`  
 `백앤드 서버 개발팀`/ `인턴`
 
 * (주) 다날 `2019.12.02 ~ 재직중`  
@@ -48,8 +48,9 @@ comments: false
 - MobaXterm
 - Git Lab
 
-# 프로젝트
-## [2020.04 ~ 2020.07] LG pay - 휴대폰 결제 신규 개발
+# 경력기술서
+## 다날
+### [2020.04 ~ 2020.07] LG pay - 휴대폰 결제 신규 개발
 - LG Pay 휴대폰 결제 개발(오프라인, 온라인)
 - 다날의 휴대폰 결제 서버와 카드 리더기(Van)사와 통신
 - LG Server 와 LG APP와 통신
