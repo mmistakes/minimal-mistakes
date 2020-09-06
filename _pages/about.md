@@ -19,39 +19,34 @@ comments: false
 ## 이름
 최선재
 
-## 직무 경험
+## 직무
 * [락인컴퍼니](https://choiseonjae.github.io/about/#%EB%9D%BD%EC%9D%B8%EC%BB%B4%ED%8D%BC%EB%8B%88qa-team) `2016.01.04 ~ 2016.03.31`   
-`QA부서` / `인턴`
+`QA부서 / 인턴`
 
 * [에이스프로젝트](https://choiseonjae.github.io/about/#aceprojectserver-team) `2019.07.01 ~ 2019.08.30`  
-`백앤드 서버 개발팀`/ `인턴`
+`백앤드 서버 개발팀 / 인턴`
 
-* (주) 다날 `2019.12.02 ~ 재직중`  
-`TX 개발팀` / `사원`  
+* [(주) 다날](https://choiseonjae.github.io/about/#%EB%8B%A4%EB%82%A0) `2019.12.02 ~ 재직중`  
+`TX 개발팀 / 사원`  
 
 # 스킬
 ## Language
-- JAVA
-- SQL
-- JAVASCRIPT
+- Java
+- MySQL
+- JavaScript
+
+## 형상관리
+- SVN
+- Git
 
 ## System
 - Windows
 - Linux
 
-## 사용 가능한 Tool
-- Eclipse
-- SVN
-- JIRA
-- HeidiSQL
-- Postman
-- MobaXterm
-- Git Lab
-
 # 경력기술서
 ## 다날
-### [2020.04 ~ 2020.07] LG pay - 휴대폰 결제 신규 개발
-- LG Pay 휴대폰 결제 개발(오프라인, 온라인)
+### LG Pay 휴대폰 결제 서비스 신규 개발(GW) `2020.04 ~ 2020.07`  
+- 개발 담당자
 - 다날의 휴대폰 결제 서버와 카드 리더기(Van)사와 통신
 - LG Server 와 LG APP와 통신
 - 프레임 워크 설계(회사 자체 프레임 워크 내부 재설계 - 언어 변경)
@@ -59,7 +54,7 @@ comments: false
 - 서버 간 통신시 암호화 모듈 개발
 - 운영과 개발계를 분리 시키기 위해 Yaml 사용
   - YamlMap, YamlReader, YamlChahe 개발
-  - YamlCache는 자주 변경되지 않는 프로퍼티를 매번 읽는 코스트를 없애기 위해 캐싱해놓고 사용함.
+  - YamlCache의 역할 : 자주 변경되지 않는 프로퍼티를 매번 읽는 코스트를 없애기 위해 캐싱해놓고 사용함.
 - 전문 개발  
   - 결제 수단 등록
 	- 오프라인 결제
@@ -68,7 +63,6 @@ comments: false
 	- PIN 변경
 	- 생체 인증
 	- 결제 등록
-- 현재 LG Pay에서 서비스
 - 사용 스킬
   - log4j
   - 암호화 모듈
@@ -77,8 +71,14 @@ comments: false
   - JDBC
   - jetty
 
-## [2020.07 ~ 진행 중] 휴대폰 결제 유지보수
-### 
+### 휴대폰 결제 서비스 유지보수 `2020.07 ~ 진행 중`  
+- 버그 FIX
+- 정책 변경에 따른 수정사항 적용
+
+### 본인확인 서비스 유지보수 `2020.07 ~ 진행 중`  
+- 버그 FIX
+- 정책 변경에 따른 수정사항 적용
+- 통신사 통신 모듈 리팩토링
 
 # 인턴
   
