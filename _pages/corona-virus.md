@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Corona-Virus"
+title: "Aktuelles zum Corona-Virus"
 permalink: /news/corona-virus/
 author_profile: false
 excerpt: "Alles Wichtige über den Corona-Virus und was es für die Grundschule am Brandwerder bedeutet."
@@ -14,6 +14,9 @@ sidebar:
 
 **Achtung**: Bitte beachten Sie auch folgende [Hinweise vom SenBJF](https://www.berlin.de/sen/bjf/coronavirus/aktuelles/), unter anderem welche Eltern von systemrelevanten Berufen einen Anspruch auf eine Kinderbetreuung haben.
 {: .notice--warning}
+
+{% for post in site.categories.coronavirus %}
+---
 
 {% for post in site.categories.coronavirus %}
 ---
