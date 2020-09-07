@@ -18,9 +18,6 @@ sidebar:
 {% for post in site.categories.coronavirus %}
 ---
 
-{% for post in site.categories.coronavirus %}
----
-
 {{ post.date | date: "%d.%m.%Y %H:%M Uhr" }}
 
 # [§]({{ post.url | absolute_url }}) {{ post.title }}
