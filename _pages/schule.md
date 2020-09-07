@@ -58,9 +58,6 @@ auch der Brandwerder-Cup, der immer  in den letzten Tagen vor den Sommerferien
 durchgeführt wird. Klassen absolvieren ausgewählte sportliche Aufgaben und
 treten gegeneinander an. Teamwork steht hier im Mittelpunkt.
 
-## Unser Team
-
-{% include figure image_path="/assets/images/kollegium_2019_20.jpg" alt="Team der Grundschule am Brandwerder vom Schuljahr 2018/2019." caption="" %}
 
 ## JÜL-Konzept:
 {: #juel_konzept}
