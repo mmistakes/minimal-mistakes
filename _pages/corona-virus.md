@@ -1,13 +1,13 @@
 ---
 layout: single
-title: "Aktuelles zum Corona-Virus"
+title: "Aktuelle Informationen"
 permalink: /news/corona-virus/
 author_profile: false
-excerpt: "Alles Wichtige über den Corona-Virus und was es für die Grundschule am Brandwerder bedeutet."
+
 modified: 2020-04-28T11:30:00+01:00
 header:
   overlay_color: "#fbd49d"
-  overlay_image: /assets/images/angry-corona-virus.svg
+  overlay_image: /assets/images/Aktuelle-Informationen.jpg
 sidebar:
   nav: ''
 ---
