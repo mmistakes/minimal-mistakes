@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "1. Gesamtkonferenz",
-    "title": "1. Gesamtkonferenz",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=cXVuZjFoNzdsOG8zb3AwZzJmOWEzNDA4Z2sgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2020-09-08T16:00:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2020-09-08T18:30:00+02:00"
-    },
-    "created": "2020-09-06T18:36:44.000Z",
-    "updated": "2020-09-06T18:36:44.362Z"
-  },
-  {
-    "image_path": null,
     "alt": "1. GEV",
     "title": "1. GEV",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2020-03-11T12:13:58.000Z",
     "updated": "2020-03-11T12:13:58.103Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Osterferien ",
+    "title": "Osterferien ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NWtkcjVjYmtzanNmbGhvNTM0cThsdjRhdWsgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2021-03-29",
+      "date_time": null
+    },
+    "end": {
+      "date": "2021-04-10",
+      "date_time": null
+    },
+    "created": "2020-03-11T12:14:48.000Z",
+    "updated": "2020-03-11T12:14:48.695Z"
   }
 ]
