@@ -8,6 +8,9 @@ main:
   - title: "IT"
     url: /categories/#it
     description: "IT-related posts"
+  - title: "Others"
+    url: /categories/#others
+    description: "Other posts"
   - title: "Bio + CV"
     url: /bio_cv/
     description: "Biography and Curriculum Vitae (Résumé)"

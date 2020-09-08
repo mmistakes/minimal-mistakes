@@ -1,6 +1,6 @@
 ---
 title:            "Sound Cheatsheet"
-date:             2020-09-07 00:00:00 -0500
+date:             2020-09-07 00:00:00 -0400
 categories:       Others
 tag:              [sound, cheatsheet]
 ---
