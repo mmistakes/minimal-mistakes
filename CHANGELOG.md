@@ -1,9 +1,17 @@
-## Unreleased
+## [4.20.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.20.2)
 
 ### Bug Fixes
 
+- Fix broken link in documentation. [#2677](https://github.com/mmistakes/minimal-mistakes/issues/2677)
+- Fix typo in documentation. [#2678](https://github.com/mmistakes/minimal-mistakes/issues/2678)
+- Remove duplicate CSS definitions. [#2666](https://github.com/mmistakes/minimal-mistakes/pull/2666)
 - Fix `entries_layout: grid` in various layouts. [#2639](https://github.com/mmistakes/minimal-mistakes/issues/2639)
 - Change `fa` to `fas` for Font Awesome 5. [#2649](https://github.com/mmistakes/minimal-mistakes/pull/2649)
+
+### Enhancements
+
+- Refactor page meta include. [#2641](https://github.com/mmistakes/minimal-mistakes/pull/2641)
+- Add `article:author` Open Graph markup. [#2670](https://github.com/mmistakes/minimal-mistakes/pull/2670)
 
 ## [4.20.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.20.1)
 

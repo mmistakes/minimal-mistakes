@@ -52,6 +52,9 @@
 
 {% if author.name %}
   <meta name="author" content="{{ author.name | default: author }}">
+  {% if og_type == "article" %}
+  <meta property="article:author" content="{{ author.name | default: author }}">
+  {% endif %}
 {% endif %}
 
 <meta property="og:type" content="{{ og_type }}">

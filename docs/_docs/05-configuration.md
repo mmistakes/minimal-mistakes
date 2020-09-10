@@ -311,14 +311,14 @@ To disable reading time for a post, add `read_time: false` to its YAML Front Mat
 words_per_minute: 250
 ```
 
-### Post meta separator
+### Page meta separator
 
-To customise the separator between the post date and reading time (if both are enabled), edit `.post__meta-sep::before` in a [custom stylesheet]({{ "/docs/stylesheets/" | relative_url }}).
+To customise the separator between the page date and reading time (if both are enabled), edit `.page__meta-sep::before` in a [custom stylesheet]({{ "/docs/stylesheets/" | relative_url }}).
 
 For example,
 
 ```css
-.post__meta-sep::before {
+.page__meta-sep::before {
   content: "\2022";
   padding-left: 0.5em;
   padding-right: 0.5em;
