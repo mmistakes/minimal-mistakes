@@ -53,7 +53,7 @@ einfach eine E-Mail. So können wir uns Zeit für Ihr Anliegen nehmen.
 |---|---|---|
 |<span id='koordinierende_erzieherin'>koordinierende Erzieherin</span> (Frau Simone Melz)| (030) 3670952 - 31 | {% include email email='hort@brandwerder.de' %} |
 | Hort/Mensa | (030) 3670952 - 31 | {% include email email='hort@brandwerder.de' %} |
-| Insel | (030) 3670952 - 26 | {% include email email='hort@brandwerder.de' %} |
+
 
 ## Lehrer
 
