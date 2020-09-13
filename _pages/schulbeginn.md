@@ -100,13 +100,19 @@ und 54% Schüler haben, die von 13 Erziehern und 24 Lehrkräften betreut werden
 # <i class="fa fa-file-text-o"></i> Anmeldung der Schulanfänger*innen
 {: #anmeldung}
 
-{% include outdated.md %}
+<!-- {% include outdated.md %} -->
 
-In der Zeit vom 19. September bis 02. Oktober 2019 melden Sie ihr
+In der Zeit vom 28. September bis 09. Oktober 2019 melden Sie ihr
 schulpflichtiges Kind in der [für Sie zuständigen
 Grundschule](https://www.bildung.berlin.de/Umkreissuche/) an.
 
-Zur Anmeldung müssen Sie folgende Dokumente mitbringen:
+Wir nehmen an einem Pilotprojekt teil um den Anmeldeprozess zu vereinfachen.
+Bitte gehen Sie zu der Online-Anmeldung, füllen das Formular aus und bringen
+es ausgedruckt zur Schulanmeldung mit.
+
+[<i class="fa fa-external-link">&nbsp;</i>Mein Kind Online anmelden!](https://bda.service.berlin.de/intelliform/forms/default/bda/index){: .btn .btn--success}
+
+Falls Sie an dem Pilotprojekt nicht teilnehmen können, dann müssen Sie zur Anmeldung folgende Dokumente mitbringen:
 
 * Ihre eigenen Personalpapiere (Ausweis oder Pass)
 * Geburtsurkunde des Kindes

@@ -180,6 +180,7 @@ timezone: DE # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins (previously gems:)
 plugins:
+  - jekyll-redirect-from
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
@@ -188,6 +189,7 @@ plugins:
 
 # mimic GitHub Pages with --safe
 whitelist:
+  - jekyll-redirect-from
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
