@@ -105,7 +105,7 @@ To do so fork the [Minimal Mistakes theme](https://github.com/mmistakes/minimal-
 
 [netlify-jekyll]: https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/
 [gitlab-jekyll]: https://about.gitlab.com/2016/04/07/gitlab-pages-setup/
-[ci-jekyll]: https://jekyllrb.com/docs/continuous-integration/
+[ci-jekyll]: https://jekyllrb.com/docs/deployment/automated/#continuous-integration-service
 
 ### Remove the Unnecessary
 

@@ -1,3 +1,9 @@
+## Unreleased
+
+### Bug Fixes
+
+- Fix dead link to CI services in documentation. [#2635](https://github.com/mmistakes/minimal-mistakes/issues/2635)
+
 ## [4.20.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.20.2)
 
 ### Bug Fixes
