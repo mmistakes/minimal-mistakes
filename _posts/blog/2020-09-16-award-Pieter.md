@@ -2,7 +2,7 @@
 layout: post
 title: "ESCOP early career award for Pieter"
 categories: blog
-excerpt:       
+excerpt: ESCOP award
 tags: [pieter]
 image:
   feature:
