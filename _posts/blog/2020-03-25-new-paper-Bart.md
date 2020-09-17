@@ -10,7 +10,7 @@ link:
 date: 2020-03-25
 modified:
 share: true
-author: tomverguts
+author: tom_verguts
 ---
 
 In this fMRI paper, we show that dorsal ACC is more strongly connected to face-areas (FFA) in a high-effort versus a low-effort face-relevant task; but more strongly connected to house areas (PPA) in a high-effort versus a low-effort house-relevant task. This finding provides constraints on theories of effort and of ACC.
