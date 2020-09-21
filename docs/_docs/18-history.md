@@ -9,9 +9,15 @@ last_modified_at: 2020-09-07T10:03:41-04:00
 toc: false
 ---
 
+## Unreleased
+
+### Bug Fixes
+
+- Fix dead link to CI services in documentation. [#2635](https://github.com/mmistakes/minimal-mistakes/issues/2635) [#2692](https://github.com/mmistakes/minimal-mistakes/pull/2692)
+
 ## [4.20.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.20.2)
 
-## Bug Fixes
+### Bug Fixes
 
 - Fix broken link in documentation. [#2677](https://github.com/mmistakes/minimal-mistakes/issues/2677)
 - Fix typo in documentation. [#2678](https://github.com/mmistakes/minimal-mistakes/issues/2678)
