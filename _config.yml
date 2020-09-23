@@ -100,10 +100,10 @@ author:
   email            :
   links:
     - label: "Twitch"
-      icon: "fas fa-fw fa-twitch"
+      icon: "fab fa-fw fa-twitch"
       url: "https://www.twitch.tv/v_pilot"
     - label: "Youtube"
-      icon: "fas fa-fw fa-youtube"
+      icon: "fab fa-fw fa-youtube"
       url: "https://www.youtube.com/channel/UCIW51PzUlW3ImMJIXeFZ-lA"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
@@ -121,6 +121,15 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "Twitch"
+      icon: "fab fa-fw fa-twitch"
+      url: "https://www.twitch.tv/v_pilot"
+    - label: "Youtube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://www.youtube.com/channel/UCIW51PzUlW3ImMJIXeFZ-lA"
+    - label: "Discord"
+      icon: "fab fa-fw fa-discord"
+      url: "https://discord.gg/uPBWUyw"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url:
