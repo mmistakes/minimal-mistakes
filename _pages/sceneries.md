@@ -20,8 +20,8 @@ Please consider supporting me to continue creating more content.
 ### San Gil SKSG
 
 <figure class="third">
-	<img src="/vpilotdesigns.github.io/assets/images/SKSG/04.png">
-	<img src="/vpilotdesigns.github.io/assets/images/SKSG/00.png">
-	<img src="/vpilotdesigns.github.io/assets/images/SKSG/01.png">
+	<img src="/assets/images/SKSG/04.png">
+	<img src="/assets/images/SKSG/00.png">
+	<img src="/assets/images/SKSG/01.png">
 	<figcaption>Aeropuerto Los Pozoz - San Gil, Santander, Colombia</figcaption>
 </figure>
