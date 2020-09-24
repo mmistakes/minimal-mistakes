@@ -63,8 +63,10 @@ Please consider supporting me to continue creating more content.
 
 ### San Gil SKSG
 
-{% include gallery id="gallery2" caption="This is a second gallery example with images hosted externally." %}
+{% include gallery id="gallery2" caption="Aerpuerto Los Pozos, San Gil, Santander, Colombia" %}
 
-{% include gallery id="gallery1" caption="This is a second gallery example with images hosted externally." %}
+### El Espino SQSY
+
+{% include gallery id="gallery1" caption="Aeropuerto El Espino, Boyacá, Colombia" %}
 
 
