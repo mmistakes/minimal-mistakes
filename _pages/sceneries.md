@@ -63,10 +63,6 @@ Please consider supporting me to continue creating more content.
 
 ### San Gil SKSG
 
-{% include gallery caption="Aeropuerto Los Pozoz - San Gil, Santander, Colombia" %}
-
-space
-
 {% include gallery id="gallery2" caption="This is a second gallery example with images hosted externally." %}
 
 
