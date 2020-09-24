@@ -47,11 +47,4 @@ Please consider supporting me to continue creating more content.
 
 {% include gallery caption="Aeropuerto Los Pozoz - San Gil, Santander, Colombia" %}
 
-This is some text after the gallery just to make sure that everything aligns properly.
 
-<figure class="third">
-	<a href="/assets/images/SKSG/04.png"><img src="/assets/images/SKSG/04.png"></a>
-	<a href="/assets/images/SKSG/00.png"><img src="/assets/images/SKSG/00.png"></a>
-	<a href="/assets/images/SKSG/01.png"><img src="/assets/images/SKSG/01.png"></a>
-	<figcaption>Aeropuerto Los Pozoz - San Gil, Santander, Colombia</figcaption>
-</figure>
