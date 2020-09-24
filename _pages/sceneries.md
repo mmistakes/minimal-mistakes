@@ -2,7 +2,7 @@
 permalink: /sceneries/
 title: "Sceneries"
 layout: single
-gallery:
+gallery1:
   - url: /assets/images/SKSG/04.png
     image_path: /assets/images/SKSG/04.png
     alt: "a"
