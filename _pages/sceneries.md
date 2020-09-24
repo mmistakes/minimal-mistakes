@@ -28,6 +28,24 @@ gallery:
     alt: "placeholder image 6"
     title: "Image 6 title caption"
     
+gallery2:
+  - url: /assets/images/SKSG/00.png
+    image_path: /assets/images/SKSG/00.png
+    alt: "a"
+    title: "Image 1 title caption"
+  - url: /assets/images/SKSG/01.png
+    image_path: /assets/images/SKSG/01.png
+    alt: "placeholder image 3"
+    title: "Image 3 title caption"
+  - url: /assets/images/SKSG/02.png
+    image_path: /assets/images/SKSG/02.png
+    alt: "placeholder image 4"
+    title: "Image 4 title caption"
+  - url: /assets/images/SKSG/10.png
+    image_path: /assets/images/SKSG/10.png
+    alt: "placeholder image 5"
+    title: "Image 5 title caption"
+    
 toc: true
 ---
 In this section you will find Airports and Fixes for Microsoft Flight Simulator 2020
@@ -46,5 +64,9 @@ Please consider supporting me to continue creating more content.
 ### San Gil SKSG
 
 {% include gallery caption="Aeropuerto Los Pozoz - San Gil, Santander, Colombia" %}
+
+space
+
+{% include gallery id="gallery2" caption="This is a second gallery example with images hosted externally." %}
 
 
