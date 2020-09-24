@@ -5,7 +5,7 @@ layout: single
 gallery:
   - url: /assets/images/SKSG/04.png
     image_path: /assets/images/SKSG/04.png
-    alt: ""
+    alt: "a"
     title: "Image 1 title caption"
   - url: /assets/images/SKSG/05.png
     image_path: /assets/images/SKSG/05.png
@@ -45,7 +45,9 @@ Please consider supporting me to continue creating more content.
 
 ### San Gil SKSG
 
-{% include gallery caption="Aeropuerto Los Pozoz - San Gil, Santander, Colombia<" %}
+{% include gallery caption="Aeropuerto Los Pozoz - San Gil, Santander, Colombia" %}
+
+This is some text after the gallery just to make sure that everything aligns properly.
 
 <figure class="third">
 	<a href="/assets/images/SKSG/04.png"><img src="/assets/images/SKSG/04.png"></a>
