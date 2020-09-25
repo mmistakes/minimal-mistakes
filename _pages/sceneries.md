@@ -6,39 +6,38 @@ gallery1:
   - url: /assets/images/SKSG/04.png
     image_path: /assets/images/SKSG/04.png
     alt: "a"
-    title: "Image 1 title caption"
+    title: "Aerpuerto Los Pozos, San Gil, Santander, Colombia"
   - url: /assets/images/SKSG/05.png
     image_path: /assets/images/SKSG/05.png
     alt: "placeholder image 2"
-    title: "Image 2 title caption"
+    title: "Aerpuerto Los Pozos, San Gil, Santander, Colombia"
   - url: /assets/images/SKSG/06.png
     image_path: /assets/images/SKSG/06.png
     alt: "placeholder image 3"
-    title: "Image 3 title caption"
+    title: "Aerpuerto Los Pozos, San Gil, Santander, Colombia"
   - url: /assets/images/SKSG/07.png
     image_path: /assets/images/SKSG/07.png
     alt: "placeholder image 4"
-    title: "Image 4 title caption"
+    title: "Aerpuerto Los Pozos, San Gil, Santander, Colombia"
   - url: /assets/images/SKSG/08.png
     image_path: /assets/images/SKSG/08.png
     alt: "placeholder image 5"
-    title: "Image 5 title caption"
+    title: "Aerpuerto Los Pozos, San Gil, Santander, Colombia"
   - url: /assets/images/SKSG/09.png
     image_path: /assets/images/SKSG/09.png
     alt: "placeholder image 6"
-    title: "Image 6 title caption"
-    
-gallery2:
-  - url: /assets/images/SKSG/00.png
-    image_path: /assets/images/SKSG/00.png
-    alt: "a"
-    title: "Image 1 title caption"
-  - url: /assets/images/SKSG/01.png
-    image_path: /assets/images/SKSG/01.png
-    alt: "placeholder image 3"
-    title: "Image 3 title caption"
+    title: "Aerpuerto Los Pozos, San Gil, Santander, Colombia"
   - url: /assets/images/SKSG/02.png
     image_path: /assets/images/SKSG/02.png
+    alt: "placeholder image 4"
+    title: ""Aerpuerto Los Pozos, San Gil, Santander, Colombia"
+  - url: /assets/images/SKSG/10.png
+    image_path: /assets/images/SKSG/10.png
+    alt: ""Aerpuerto Los Pozos, San Gil, Santander, Colombia"
+    title: ""Aerpuerto Los Pozos, San Gil, Santander, Colombia"   
+gallery2:
+  - url: /assets/images/SQSY/SQSY 00.png
+    image_path: /assets/images/SQSY/SQSY 00.png
     alt: "placeholder image 4"
     title: "Image 4 title caption"
   - url: /assets/images/SKSG/10.png
@@ -63,10 +62,10 @@ Please consider supporting me to continue creating more content.
 
 ### San Gil SKSG
 
-{% include gallery id="gallery2" caption="Aerpuerto Los Pozos, San Gil, Santander, Colombia" %}
+{% include gallery id="gallery1" caption="Aerpuerto Los Pozos, San Gil, Santander, Colombia" %}
 
 ### El Espino SQSY
 
-{% include gallery id="gallery1" caption="Aeropuerto El Espino, Boyacá, Colombia" %}
+{% include gallery id="gallery2" caption="Aeropuerto El Espino, Boyacá, Colombia" %}
 
 
