@@ -35,6 +35,7 @@ gallery1:
     image_path: /assets/images/SKSG/10.png
     alt: ""Aerpuerto Los Pozos, San Gil, Santander, Colombia"
     title: ""Aerpuerto Los Pozos, San Gil, Santander, Colombia"   
+    
 gallery2:
   - url: /assets/images/SQSY/SQSY 00.png
     image_path: /assets/images/SQSY/SQSY 00.png
