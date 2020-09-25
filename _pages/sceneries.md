@@ -35,6 +35,41 @@ gallery1:
     image_path: /assets/images/SKSG/10.png
     alt: "placeholder image 9"
     title: "Aerpuerto Los Pozos, San Gil, Santander, Colombia"   
+gallery2:
+  - url: /assets/images/SQSY/SQSY 00.png
+    image_path: /assets/images/SQSY/SQSY 00.png
+    alt: "Aeropuerto El Espino, Boyacá, Colombia"
+    title: "Aeropuerto El Espino, Boyacá, Colombia"
+  - url: /assets/images/SQSY/SQSY 01.png
+    image_path: /assets/images/SQSY/SQSY 01.png
+    alt: "Aeropuerto El Espino, Boyacá, Colombia"
+    title: "Aeropuerto El Espino, Boyacá, Colombia"
+  - url: /assets/images/SQSY/SQSY 02.png
+    image_path: /assets/images/SQSY/SQSY 02.png
+    alt: "Aeropuerto El Espino, Boyacá, Colombia"
+    title: "Aeropuerto El Espino, Boyacá, Colombia"
+  - url: /assets/images/SQSY/SQSY 03.png
+    image_path: /assets/images/SQSY/SQSY 03.png
+    alt: "Aeropuerto El Espino, Boyacá, Colombia"
+    title: "Aeropuerto El Espino, Boyacá, Colombia"
+  - url: /assets/images/SQSY/SQSY 04.png
+    image_path: /assets/images/SQSY/SQSY 04.png
+    alt: "Aeropuerto El Espino, Boyacá, Colombia"
+    title: "Aeropuerto El Espino, Boyacá, Colombia"
+  - url: /assets/images/SQSY/SQSY 05.png
+    image_path: /assets/images/SQSY/SQSY 05.png
+    alt: "Aeropuerto El Espino, Boyacá, Colombia"
+    title: "Aeropuerto El Espino, Boyacá, Colombia"
+  - url: /assets/images/SQSY/SQSY 06.png
+    image_path: /assets/images/SQSY/SQSY 06.png
+    alt: "Aeropuerto El Espino, Boyacá, Colombia"
+    title: "Aeropuerto El Espino, Boyacá, Colombia"
+  - url: /assets/images/SQSY/SQSY 07.png
+    image_path: /assets/images/SQSY/SQSY 07.png
+    alt: "Aeropuerto El Espino, Boyacá, Colombia"
+    title: "Aeropuerto El Espino, Boyacá, Colombia"
+  
+    
 
 toc: true
 ---
@@ -57,6 +92,6 @@ Please consider supporting me to continue creating more content.
 
 ### El Espino SQSY
 
-{% include gallery id="gallery1" caption="Aeropuerto El Espino, Boyacá, Colombia" %}
+{% include gallery id="gallery2" caption="Aeropuerto El Espino, Boyacá, Colombia" %}
 
 
