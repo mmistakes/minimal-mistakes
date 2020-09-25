@@ -1,6 +1,6 @@
 ---
 permalink: /sceneries/
-title: "Sceneries"
+title: "Escenarios/Sceneries"
 layout: single
 gallery1:
   - url: /assets/images/SKSG/04.png
@@ -73,6 +73,8 @@ gallery2:
 
 toc: true
 ---
+En esta sección encontraras Aeropuertos y Arreglos para Microsoft Flight Simulator 2020
+
 In this section you will find Airports and Fixes for Microsoft Flight Simulator 2020
 
 Considera apoyarme con una donación para continuar creando contenido.
