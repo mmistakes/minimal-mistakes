@@ -38,12 +38,36 @@ gallery1:
 gallery2:
   - url: /assets/images/SQSY/SQSY 00.png
     image_path: /assets/images/SQSY/SQSY 00.png
-    alt: "placeholder image 4"
-    title: "Image 4 title caption"
-  - url: /assets/images/SKSG/10.png
-    image_path: /assets/images/SKSG/10.png
-    alt: "placeholder image 5"
-    title: "Image 5 title caption"
+    alt: "Aeropuerto El Espino, Boyacá, Colombia"
+    title: "Aeropuerto El Espino, Boyacá, Colombia"
+  - url: /assets/images/SQSY/SQSY 01.png
+    image_path: /assets/images/SQSY/SQSY 01.png
+    alt: "Aeropuerto El Espino, Boyacá, Colombia"
+    title: "Aeropuerto El Espino, Boyacá, Colombia"
+  - url: /assets/images/SQSY/SQSY 02.png
+    image_path: /assets/images/SQSY/SQSY 02.png
+    alt: "Aeropuerto El Espino, Boyacá, Colombia"
+    title: "Aeropuerto El Espino, Boyacá, Colombia"
+  - url: /assets/images/SQSY/SQSY 03.png
+    image_path: /assets/images/SQSY/SQSY 03.png
+    alt: "Aeropuerto El Espino, Boyacá, Colombia"
+    title: "Aeropuerto El Espino, Boyacá, Colombia"
+  - url: /assets/images/SQSY/SQSY 04.png
+    image_path: /assets/images/SQSY/SQSY 04.png
+    alt: "Aeropuerto El Espino, Boyacá, Colombia"
+    title: "Aeropuerto El Espino, Boyacá, Colombia"
+  - url: /assets/images/SQSY/SQSY 05.png
+    image_path: /assets/images/SQSY/SQSY 05.png
+    alt: "Aeropuerto El Espino, Boyacá, Colombia"
+    title: "Aeropuerto El Espino, Boyacá, Colombia"
+  - url: /assets/images/SQSY/SQSY 06.png
+    image_path: /assets/images/SQSY/SQSY 06.png
+    alt: "Aeropuerto El Espino, Boyacá, Colombia"
+    title: "Aeropuerto El Espino, Boyacá, Colombia"
+  - url: /assets/images/SQSY/SQSY 07.png
+    image_path: /assets/images/SQSY/SQSY 07.png
+    alt: "Aeropuerto El Espino, Boyacá, Colombia"
+    title: "Aeropuerto El Espino, Boyacá, Colombia"
     
 toc: true
 ---
