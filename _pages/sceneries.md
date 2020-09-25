@@ -29,12 +29,12 @@ gallery1:
     title: "Aerpuerto Los Pozos, San Gil, Santander, Colombia"
   - url: /assets/images/SKSG/02.png
     image_path: /assets/images/SKSG/02.png
-    alt: "placeholder image 4"
-    title: ""Aerpuerto Los Pozos, San Gil, Santander, Colombia"
+    alt: "placeholder image 7"
+    title: "Aerpuerto Los Pozos, San Gil, Santander, Colombia"
   - url: /assets/images/SKSG/10.png
     image_path: /assets/images/SKSG/10.png
-    alt: ""Aerpuerto Los Pozos, San Gil, Santander, Colombia"
-    title: ""Aerpuerto Los Pozos, San Gil, Santander, Colombia"   
+    alt: "placeholder image 9"
+    title: "Aerpuerto Los Pozos, San Gil, Santander, Colombia"   
 
 toc: true
 ---
@@ -57,6 +57,6 @@ Please consider supporting me to continue creating more content.
 
 ### El Espino SQSY
 
-{% include gallery id="gallery2" caption="Aeropuerto El Espino, Boyacá, Colombia" %}
+{% include gallery id="gallery1" caption="Aeropuerto El Espino, Boyacá, Colombia" %}
 
 
