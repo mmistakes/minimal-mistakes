@@ -1794,6 +1794,61 @@ my: &DEFAULT_MY
 my-MM:
   <<: *DEFAULT_MY
 
+# Norwegian
+# -------
+no: &DEFAULT_NO
+  skip_links                 : "Hopp over lenker"
+  skip_primary_nav           : "Gå til primærnavigasjon"
+  skip_content               : "Gå til innhold"
+  skip_footer                : "Gå til fotnote"
+  page                       : "Side"
+  pagination_previous        : "Forrige"
+  pagination_next            : "Neste"
+  breadcrumb_home_label      : "Hjem"
+  breadcrumb_separator       : "/"
+  menu_label                 : "Vis/skjul meny"
+  search_label               : "Vis/skjul søk"
+  toc_label                  : "På denne siden"
+  ext_link_label             : "Direkte lenke"
+  less_than                  : "mindre enn"
+  minute_read                : "minutters lesing"
+  share_on_label             : "Del på"
+  meta_label                 :
+  tags_label                 : "Nøkkelord:"
+  categories_label           : "Kategorier:"
+  date_label                 : "Oppdatert:"
+  comments_label             : "Skriv en kommentar"
+  comments_title             : "Kommentarer"
+  more_label                 : "Lær mer"
+  related_label              : "Du vil kanskje også lese:"
+  follow_label               : "Følg:"
+  feed_label                 : "Feed"
+  powered_by                 : "Lagd med"
+  website_label              : "Nettside"
+  email_label                : "E-post"
+  recent_posts               : "Nyeste innlegg"
+  undefined_wpm              : "Parameteret words_per_minute er ikke definert i _config.yml"
+  comment_form_info          : "Din e-postadresse vil ikke bli publisert. Obligatoriske felt er markert"
+  comment_form_comment_label : "Kommentar"
+  comment_form_md_info       : "Markdown er støttet"
+  comment_form_name_label    : "Navn"
+  comment_form_email_label   : "E-postadresse"
+  comment_form_website_label : "Nettside (frivillig)"
+  comment_btn_submit         : "Send kommentar"
+  comment_btn_submitted      : "Sendt"
+  comment_success_msg        : "Takk for din kommentar! Den blir vist på siden så fort den er godkjent"
+  comment_error_msg          : "Beklager, noe gikk galt. Sjekk at alle obligatoriska felt er utfylt og prøv igjen"
+  loading_label              : "Laster..."
+  search_label_text          : "Skriv inn søkeord"
+  search_placeholder_text    : "Skriv inn søkeord"
+  search_algolia_no_results  : "Ingen treff"
+  results_found              : "Treff funnet"
+  back_to_top                : "Tillbake til toppen"
+no-NB:
+  <<: *DEFAULT_NO
+no-NN:
+  <<: *DEFAULT_NO
+
 # Another locale
 # --------------
 #
