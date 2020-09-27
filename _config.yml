@@ -130,7 +130,7 @@ author:
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
-    - label : "m_letitbe"
+    - label : "DoodleDatCard"
       icon  : "fab fa-fw fa-twitter"
       url   : "https://twitter.com/DoodleDatCard"
     # - label: "Facebook"
@@ -142,7 +142,7 @@ author:
     - label: "martinapugliese"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/martinapugliese/"
-    - label: "mart.pugliese"
+    - label: "doodledatcard"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/doodledatcard/"
 
