@@ -8,7 +8,7 @@ Hi! Glad you popped up here.
 
 I am a physicist by studies and work in/with **data science** (since the glorious times it was uncool, the pre-2010s era). I love **science**, you can read some of my thinking and journey in this <a href="{{ site.url }}/crossing-the-barriers" target="_blank">old post</a>. I also love quantified information and this blog has got some stuff about data and data science, both technical things and meta-things. I do **hand-drawn data vizs** as well (see below in my projects), I really enjoy the display of information in a visual way.
 
-As I do love **drawing** in general, I also draw several things not related to data (cartoons, landscapes from photos) as well - my Instagram will have some, alongside a bunch of other stuff.
+As I do enjoy **drawing** in general, I also draw several things not related to data (cartoons, landscapes from photos) as well - my Instagram will have some, alongside a bunch of other stuff.
 
 I'm Italian and also a great fan of **linguistics** and languages, some of my research when in academia was indeed about the evolution of natural languages - I've done a PhD in Physics with a focus on quantitative Linguistics, which may seem an inconsistent coupling but it's actually a very fruitful one: coming from the Physics of complex systems you can apply methodologies and frameworks to other disciplines and help investigate (so, in collaboration) open questions quantitatively. Beside Linguistics, I love **languages** in general and taught myself some. I make large use of a thesaurus when writing. This blog has a few posts about languages & related things. If you want to know more about my research you can have a look at my [scientific publications](#my-scientific-publications).
 
