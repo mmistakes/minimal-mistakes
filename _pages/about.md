@@ -6,7 +6,7 @@ permalink: /about/
 
 Hi! Glad you popped up here.
 
-I am a physicist by studies and work in/with **data science** (since the glorious times it was uncool, the pre-2010s era). I love **science**, you can read some of my thinking and journey in this <a href="{{ site.url }}/crossing-the-barriers" target="_blank">old post</a>. I also love quantified information and this blog has got some stuff about data and data science, both technical things and meta-things. I do **hand-drawn data vizs** as well (see below in my projects), I really enjoy the display of information in a visual way.
+My name is Martina Pugliese, I am a physicist by studies and work in/with **data science** (since the glorious times it was uncool, the pre-2010s era). I love **science**, you can read some of my thinking and journey in this <a href="{{ site.url }}/crossing-the-barriers" target="_blank">old post</a>. I also love quantified information and this blog has got some stuff about data and data science, both technical things and meta-things. I do **hand-drawn data vizs** as well (see below in my projects), I really enjoy the display of information in a visual way.
 
 As I do enjoy **drawing** in general, I also draw several things not related to data (cartoons, landscapes from photos) as well - my Instagram will have some, alongside a bunch of other stuff.
 
