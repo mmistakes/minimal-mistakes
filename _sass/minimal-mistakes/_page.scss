@@ -39,12 +39,14 @@ body {
   @include breakpoint($large) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
-    padding-right: $right-sidebar-width-narrow;
+    // removed padding because it makes my code narrow
+    //padding-right: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
-    padding-right: $right-sidebar-width;
+    // removed padding because it makes code narrow
+    //padding-right: $right-sidebar-width;
   }
 
   .page__inner-wrap {
