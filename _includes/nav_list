@@ -7,10 +7,13 @@
   <ul class="nav__items">
     {% for nav in navigation %}
       <li>
+        {% if nav.icon %}
+            {% capture icon %}<i class="{{ nav.icon }}" aria-hidden="true"></i> {% endcapture %}
+        {% endif %}
         {% if nav.url %}
-          <a href="{{ nav.url | relative_url }}"><span class="nav__sub-title">{{ nav.title }}</span></a>
+          <a href="{{ nav_url }}"><span class="nav__sub-title">{{ icon }}{{ nav.title }}</span></a>
         {% else %}
-          <span class="nav__sub-title">{{ nav.title }}</span>
+          <span class="nav__sub-title">{{ icon }}{{ nav.title }}</span>
         {% endif %}
 
         {% if nav.children != null %}
