@@ -5,7 +5,7 @@ function highlightDotty(hljs) {
   const capitalizedId = /\b[A-Z][$\w]*\b/
   const alphaId = /[a-zA-Z$_][$\w]*/
   const op = /[^\s\w\d,"'()[\]{}]+/
-  const id = new RegExp(`(${alphaId.source}((?<=_)${op.source})?|${op.source}|\`.*?\`)`)
+  const id = new RegExp(`(${alphaId.source}(${op.source})?|${op.source}|\`.*?\`)`)
 
   // numbers
   const hexDigit = '[a-fA-F0-9]'
@@ -36,7 +36,7 @@ function highlightDotty(hljs) {
   function titleFor(name) {
     return {
       className: 'title',
-      begin: `(?<=${name} )${id.source}`
+      begin: `(${name} )${id.source}`
     }
   }
 
@@ -207,7 +207,7 @@ function highlightDotty(hljs) {
       },
       {
         className: 'link',
-        begin: /(?<=\[.*?\])\(/, end: /\)/,
+        begin: /(\[.*?\])\(/, end: /\)/,
       }
     ]
   })
@@ -343,7 +343,7 @@ function highlightDotty(hljs) {
       {
         // case A, B, C
         className: 'title',
-        begin: `(?<=(case|,) *)${id.source}`
+        begin: `((case|,) *)${id.source}`
       },
       PARAMS,
       EXTENDS_PARENT,
