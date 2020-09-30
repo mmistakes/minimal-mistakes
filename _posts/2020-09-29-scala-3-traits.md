@@ -4,7 +4,7 @@ date: 2020-09-29
 header:
   image: "/images/blog cover.jpg"
 tags: [scala, jvm, scala 3, traits]
-excerpt: "Scala 3, Traits"
+excerpt: "A quick overview of the new features and functionality that Scala 3 will bring to traits."
 ---
 
 This article will continue some of the previous explorations of Scala 3. Here, we'll discuss some of the new functionality of traits in Scala 3.
@@ -97,7 +97,7 @@ object Blue extends Color with Paintable
 
 Assume further that the trait `Paintable` is rarely used as a standalone trait, but rather as an auxiliary trait in our library definitions. In this case, if we were to say
 
-```scala
+```scala3
 val color = if (43 > 2) Red else Blue
 ```
 
