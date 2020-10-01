@@ -251,22 +251,22 @@ whitelist:
 #  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
 #  - <base_path>/my-awesome-category/index.html ~> path: /
 category_archive:
-  type: jekyll-archives
+  type: liquid
   path: /categories/
 tag_archive:
-  type: jekyll-archives
+  type: liquid
   path: /tags/
-https://github.com/jekyll/jekyll-archives
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layouts:
-    category: archive-taxonomy
-    tag: archive-taxonomy
-  permalinks:
-    category: /categories/:name/
-    tag: /tags/:name/
+# https://github.com/jekyll/jekyll-archives
+# jekyll-archives:
+#  enabled:
+#    - categories
+#    - tags
+#  layouts:
+#    category: archive-taxonomy
+#    tag: archive-taxonomy
+#  permalinks:
+#    category: /categories/:name/
+#    tag: /tags/:name/
 
 
 # HTML Compression
