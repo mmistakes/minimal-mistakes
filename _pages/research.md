@@ -6,26 +6,32 @@ permalink: /research/
 ---
 
 
+## Submesoscale instabilities in the ocean bottom boundary layer
 
-## Investigating the dynamics of the upper ocean
+Coming soon!
+
+
+
+## Vertical mixing of materials in the upper ocean
 
 ![GRL paper](/assets/images/GRL2019-panels.png)
 
-I'm currently using [Large eddy
-simulations](https://en.wikipedia.org/wiki/Large_eddy_simulation) to explore
-small scale turbulence in the Oceanic mixed layer. Focus is given to the
-transport of passive buoyant scalars (such as oil and microplastic) and
-parameterizations that help us predict such transport.
+I've been using [Large eddy
+simulations](https://en.wikipedia.org/wiki/Large_eddy_simulation) to explore small scale
+turbulence in the Oceanic mixed layer. Focus is given to the transport of passive scalars
+(such as oil, microplastic and nutrients) and parameterizations that help us predict such
+transport.
 
 Some relevant publications can be found
-[here](https://journals.aps.org/prfluids/abstract/10.1103/PhysRevFluids.3.064501)
-and
-[here](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2018GL080296).
+[here](https://journals.aps.org/prfluids/abstract/10.1103/PhysRevFluids.3.064501),
+[here](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2018GL080296)
+and [here](https://journals.ametsoc.org/jas/article-abstract/77/10/3479/353916/Diffusive-Nondiffusive-Flux-Decompositions-in?redirectedFrom=fulltext).
 
 
 
 
-## Investigating turbulent fluxes with micrometeorological data
+
+## Turbulent fluxes or greenhouse gases over grasslands, lakes and forests
 
 ![](/assets/images/AFM-phi.png)
 
@@ -43,7 +49,7 @@ and
 
 
 
-## Investigating water transport in porous media
+## Groundwater transport in porous aquifers
 
 ![](/assets/images/WRR-aquifer.png)
 

@@ -5,12 +5,14 @@ header:
 layout: single
 ---
 
-I am currently a Graduate Student Researcher pursuing a PhD at UCLA's
-Atmospheric and Oceanic Sciences department. My research interests include
-numerical modeling and experimental data processing of oceanic and atmospheric
-turbulence, as well as some topics in hydrology.
+I am currently a postdoctoral researcher at the University of Maryland's Atmospheric and
+Oceanic Science department in [Dr. Jacob Wenegrat](https://wenegrat.github.io/)'s group.
+My research interests have been focused on numerical simulations of turbulent environments
+in geophysical boundary layers in general (both oceanic and atmospheric). More recently I
+began investigating submesoscale phenomena in the oceanic bottom boundary layer.
 
-For a more in-depth list of talks, awards, publications, skills, etc., please
+
+For an in-depth list of talks, awards, publications, skills, etc., please
 check my [curriculum
 vitae](https://github.com/tomchor/tomchor.github.io/raw/master/assets/pdf/phd-tomas-chor3.pdf).
 
