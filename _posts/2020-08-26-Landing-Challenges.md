@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Retos de Aterrizaje - Landing Challenges"
+title:  "MSFS 2020 - Retos de Aterrizaje - Landing Challenges"
 categories:
   - Videos
 ---
