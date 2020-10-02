@@ -3,13 +3,21 @@
 <!-- v1.8 -->
 {%- assign page_sliders = page.image_sliders | uniq -%}
 {%- assign layout_sliders = layout.image_sliders | uniq -%}
+{%- assign page_html_sliders = page.html_sliders | uniq -%}
+{%- assign layout_html_sliders = layout.html_sliders | uniq -%}
 {%- assign iis_slider_array = page_sliders | concat: layout_sliders | uniq -%}
 {%- if page.image_sliders_load_all == true -%}
   {%- assign site_sliders = site.data.sliders | uniq -%}
   {%- assign iis_slider_array = iis_slider_array | concat: site_sliders | uniq -%}
 {%- endif -%}
+{%- assign iis_html_slider_array = page_html_sliders | concat: layout_html_sliders | uniq -%}
+{%- if page.image_html_sliders_load_all == true -%}
+  {%- assign site_html_sliders = site.data.html_sliders | uniq -%}
+  {%- assign iis_html_slider_array = iis_html_slider_array | concat: site_html_sliders | uniq -%}
+{%- endif -%}
 {% if iis_slider_array != empty %}
   <script src="{{ "/assets/js/slider/ideal-image-slider.min.js" | relative_url }}"></script>
+  <script src="{{ "/assets/js/slider/ihs-bullet-nav.js" | relative_url }}"></script>
   <script src="{{ "/assets/js/slider/iis-bullet-nav.js" | relative_url }}"></script>
   <script src="{{ "/assets/js/slider/iis-captions.js" | relative_url }}"></script>
   <script>
@@ -56,6 +64,62 @@
     {{ slider.selector }}.addCaptions();
     {% endif -%}
     {{ slider.selector }}.start();
+  {% endfor -%}
+  </script>
+{%- endif -%}
+{% if iis_html_slider_array != empty %}
+  <script src="{{ "/assets/js/slider/ideal-html-slider.min.js" | relative_url }}"></script>
+  <script src="{{ "/assets/js/slider/ihs-bullet-nav.js" | relative_url }}"></script>
+  <script>
+  {% for selector in iis_html_slider_array -%}
+    {%- assign html_slider = site.data.html_sliders | where:"selector",selector | first -%}
+    {%- assign html_settings = html_slider.html_settings -%}
+    var {{ html_slider.selector }} = new IdealHTMLSlider.Slider({
+      selector: '#{{ html_slider.selector }}',
+      {% if html_settings.height -%}
+      height: {{ html_settings.height }},
+      {% endif -%}
+      {% if html_settings.initialHeight -%}
+      initialHeight: {{ html_settings.initialHeight }},
+      {% endif -%}
+      {% if html_settings.maxHeight -%}
+      maxHeight: {{ html_settings.maxHeight }},
+      {% endif -%}
+      {% if html_settings.interval -%}
+      interval: {{ html_settings.interval }},
+      {% endif -%}
+      {% if html_settings.transitionDuration -%}
+      transitionDuration: {{ html_settings.transitionDuration }},
+      {% endif -%}
+      {% if html_settings.effect -%}
+      effect: {{ html_settings.effect }},
+      {% endif -%}
+      {% if html_settings.disableNav -%}
+      disableNav: {{ html_settings.disableNav }},
+      {% endif -%}
+      {% if html_settings.keyboardNav -%}
+      keyboardNav: {{ html_settings.keyboardNav }},
+      {% endif -%}
+      {% if html_settings.previousNavSelector -%}
+      previousNavSelector: {{ html_settings.previousNavSelector }},
+      {% endif -%}
+      {% if html_settings.nextNavSelector -%}
+      nextNavSelector: {{ html_settings.nextNavSelector }},
+      {% endif -%}
+      {% if html_settings.group -%}
+      group: {{ html_settings.group }},
+      {% endif -%}
+      {% if html_settings.groupClasses -%}
+      groupClasses: {{ html_settings.groupClasses }},
+      {% endif -%}
+      {% if html_settings.hasBorder -%}
+      hasBorder: {{ html_settings.hasBorder }},
+      {% endif -%}
+    });
+    {% if html_slider.bullets == true -%}
+    {{ html_slider.selector }}.addBulletNav();
+    {% endif -%}
+    {{ html_slider.selector }}.start();
   {% endfor -%}
   </script>
 {%- endif -%}
