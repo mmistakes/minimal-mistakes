@@ -1,3 +1,4 @@
+---
 layout: single
 title:  "MSFS Paris - Washington DC - Kennedy Space Center"
 categories:
