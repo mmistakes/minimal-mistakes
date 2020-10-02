@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "MSFS Paris - Washington DC - Kennedy Space Center"
+title:  "MSFS 2020 Paris - Washington DC - Kennedy Space Center"
 categories:
   - Videos
 twitchId: v723726055
