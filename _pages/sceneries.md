@@ -90,6 +90,8 @@ Please consider supporting me to continue creating more content.
 
 ### San Gil SKSG
 
+{% include video id="jftRM0STYKo" provider="youtube" %}
+
 {% include gallery id="gallery1" caption="Aerpuerto Los Pozos, San Gil, Santander, Colombia" %}
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
