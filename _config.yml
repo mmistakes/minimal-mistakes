@@ -79,9 +79,9 @@ author:
   name             : "Tomas L. Chor"
   avatar           : "/assets/images/me2.jpg"
   bio              : "Atmosphere | Ocean | Turbulence"
-  location         : "UCLA"
+    #  location         : "UCLA"
   location_link    : "https://goo.gl/maps/5MZ2EyZRCDBA6Ww77"
-  email            : "tomaschor@ucla.com"
+  email            : "tomaschor@gmail.com"
   bitbucket        :
   university       : "UCLA"
   facebook         : 
