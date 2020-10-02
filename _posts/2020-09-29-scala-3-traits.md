@@ -3,15 +3,15 @@ title: "Scala 3 Traits: New Features"
 date: 2020-09-29
 header:
   image: "/images/blog cover.jpg"
-tags: [scala, jvm, scala 3, traits]
-excerpt: "A quick overview of the new features and functionality that Scala 3 will bring to traits."
+tags: [scala, scala 3, traits]
+excerpt: "This article will continue some of the previous explorations of Scala 3. Here, we'll discuss some of the new functionality of traits in Scala 3."
 ---
 
 This article will continue some of the previous explorations of Scala 3. Here, we'll discuss some of the new functionality of traits in Scala 3.
 
 ## 1. Background
 
-Scala traits were originally conceived to be analogous to Java interfaces. Essentially, a trait was a type definition which wrapped a suite of abstract fields and methods. In time, traits acquired additional functionality and features, such as non-abstract fields and methods. This led to some legitimate questions around the [https://www.youtube.com/watch?v=_7ULjOILxhI](boundary between abstract classes and traits).
+Scala traits were originally conceived to be analogous to Java interfaces. Essentially, a trait was a type definition which wrapped a suite of abstract fields and methods. In time, traits acquired additional functionality and features, such as non-abstract fields and methods. This led to some legitimate questions around the [boundary between abstract classes and traits](https://www.youtube.com/watch?v=_7ULjOILxhI).
 
 That line will get even blurrier with the arrival of Scala 3.
 
