@@ -1,6 +1,6 @@
 ---
-title: Use Azure Key Vault as TDE with Azure PaaS Services
-date: 2020-02-20 16:12
+title: How to deploy Angular app to Azure App Service running Linux from GitHub
+date: 2020-10-04 16:12
 author: nicold
 comments: false
 tags: [Azure, Linux, App Service, github, github action, angular, node, git, PM2, SPA, Single Page App]
