@@ -25,7 +25,7 @@ For more information:
 # Logic diagram
 the following pictore shows the logic flow from developer's commit to production web on Azure.
 
-![Logic Diagram](..\assets\post\2020\angular-appservice\architecure.jpg)
+![Logic Diagram](../assets/post/2020/angular-appservice/architecure.jpg)
 
 # Create sample angular app
 First thing to do is install the tools we’re going to need.
@@ -254,11 +254,4 @@ As final settings, on AppService -> Settings -> General Settings -> Startup comm
 and that's it: run the action again, and enjoy the app running on the cloud.
 
 ![Angular App in cloud](../assets/post/2020/angular-appservice/angular-cloud.jpg)
-
-
-
-
-
-continuare da quì
-.............................................................................repository temporaneo di appoggio C:\MyProjects\GitHub\sample-cd-ci\
 
