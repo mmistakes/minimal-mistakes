@@ -1,0 +1,15 @@
+---
+layout: single
+title:  "MSFS 2020 - Belmar/Farmingdale, NJ, USA (KBLM) - Windsor Locks, CT, USA (KBDL)"
+categories:
+  - Videos
+twitchId: v735317596
+---
+
+## Belmar/Farmingdale, NJ, USA (KBLM) - Windsor Locks, CT, USA (KBDL)
+
+# Youtube
+{% include video id="AJbIx718jYk" provider="youtube" %}
+
+# Twitch
+{% include twitchPlayer.html id=page.twitchId %}
