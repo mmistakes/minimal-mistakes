@@ -1,0 +1,14 @@
+layout: single
+title:  "MSFS 2020 - Niagara Falls - Santorini - Mikonos - Athens - Great Wall of China - Taj Mahal - Iguazu Falls"
+categories:
+  - Videos
+twitchId: v726197269
+---
+
+## Niagara Falls - Santorini - Mikonos - Athens - Great Wall of China - Taj Mahal - Iguazu Falls
+
+# Youtube
+{% include video id="-Oonu0HHQnE" provider="youtube" %}
+
+# Twitch
+{% include twitchPlayer.html id=page.twitchId %}
