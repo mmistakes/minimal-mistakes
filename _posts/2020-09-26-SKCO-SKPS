@@ -1,0 +1,15 @@
+---
+layout: single
+title:  "MSFS 2020 - Tumaco (SKCO) - Pasto (SKPS)"
+categories:
+  - Videos
+twitchId: v752702257
+---
+
+## Tumaco (SKCO) - Pasto (SKPS)
+
+# Youtube
+{% include video id="PU7mik-zhqc" provider="youtube" %}
+
+# Twitch
+{% include twitchPlayer.html id=page.twitchId %}
