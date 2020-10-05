@@ -108,15 +108,15 @@ author:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       # url: "https://github.com/"
     - label: "Discord"
       icon: "fab fa-fw fa-discord"
       url: "https://discord.gg/uPBWUyw"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://www.facebook.com/vpilotfs"
 
 # Site Footer
 footer:
@@ -130,11 +130,11 @@ footer:
     - label: "Discord"
       icon: "fab fa-fw fa-discord"
       url: "https://discord.gg/uPBWUyw"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
+      url: "https://www.facebook.com/vpilotfs"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
