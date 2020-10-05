@@ -118,7 +118,7 @@ author:
       icon: "fab fa-fw fa-facebook-square"
       url: "https://www.facebook.com/vpilotfs"
     - label: "Donation/Paypal"
-      icon: "fab fa-fw fa-hand-holding-usd"
+      icon: "fab fa-fw fa-paypal"
       url: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6T46LTPJDBWKY&source=url"
 
 # Site Footer
@@ -137,7 +137,7 @@ footer:
       icon: "fab fa-fw fa-facebook-square"
       url: "https://www.facebook.com/vpilotfs"
     - label: "Donation/Paypal"
-      icon: "fab fa-fw fa-hand-holding-usd"
+      icon: "fab fa-fw fa-paypal"
       url: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6T46LTPJDBWKY&source=url"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
