@@ -35,6 +35,40 @@
   },
   {
     "image_path": null,
+    "alt": "Fotograf",
+    "title": "Fotograf",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=ZDhmc2ZjOWQxZDd2MGVodGtucTFlM3BpMWsgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2020-11-23",
+      "date_time": null
+    },
+    "end": {
+      "date": "2020-11-25",
+      "date_time": null
+    },
+    "created": "2020-10-06T09:36:20.000Z",
+    "updated": "2020-10-06T09:36:20.098Z"
+  },
+  {
+    "image_path": null,
+    "alt": "2. GEV",
+    "title": "2. GEV",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MG1xaWNzb2c5OTdyM29qZXRqM29zY2hjZmMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2020-11-24T18:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2020-11-24T20:30:00+01:00"
+    },
+    "created": "2020-10-06T09:36:56.000Z",
+    "updated": "2020-10-06T09:36:56.414Z"
+  },
+  {
+    "image_path": null,
     "alt": "Weihnachtsferien",
     "title": "Weihnachtsferien",
     "excerpt": null,
@@ -66,39 +100,5 @@
     },
     "created": "2020-03-11T12:13:58.000Z",
     "updated": "2020-03-11T12:13:58.103Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Osterferien ",
-    "title": "Osterferien ",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NWtkcjVjYmtzanNmbGhvNTM0cThsdjRhdWsgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2021-03-29",
-      "date_time": null
-    },
-    "end": {
-      "date": "2021-04-10",
-      "date_time": null
-    },
-    "created": "2020-03-11T12:14:48.000Z",
-    "updated": "2020-03-11T12:14:48.695Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Vergleichsarbeit Mathematik Jgst. 3",
-    "title": "Vergleichsarbeit Mathematik Jgst. 3",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MmhucDB0aGRrMms3YnNxNm1tdHRkdWx0aTIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2021-04-29",
-      "date_time": null
-    },
-    "end": {
-      "date": "2021-04-30",
-      "date_time": null
-    },
-    "created": "2020-01-20T10:22:37.000Z",
-    "updated": "2020-01-20T10:22:37.363Z"
   }
 ]
