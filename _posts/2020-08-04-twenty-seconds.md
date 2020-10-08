@@ -1,5 +1,5 @@
 ---
-title: "How Does "20 seconds" Work in Scala?"
+title: "How Does \"20 seconds\" Work in Scala?"
 date: 2020-08-04
 header:
   image: "/images/blog cover.jpg"
