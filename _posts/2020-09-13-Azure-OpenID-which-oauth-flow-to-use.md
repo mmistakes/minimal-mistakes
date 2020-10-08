@@ -1,12 +1,12 @@
 ---
-title: Microsoft Identity Platform witch OAuth flow should I use?
+title: Microsoft Identity Platform which OAuth flow should I use?
 date: 2020-09-14 18:00
 author: nicold
 comments: false
 tags: [AzureAD, OAUTH2, OpenIDConnect, grant flow, security, identity]
 ---
 
-Microsoft Identity Platform: witch OAuth2 flow should I use? My **non-prescriptive** one-page guide in choosing the right auth flow for every situation :-)
+Microsoft Identity Platform: which OAuth2 flow should I use? My **non-prescriptive** one-page guide in choosing the right auth flow for every situation :-)
 
 ![Protocol chooser](../assets/post/2020/open-id-connect-flows-v2.svg)
 
