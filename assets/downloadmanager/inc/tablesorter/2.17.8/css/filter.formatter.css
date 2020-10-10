@@ -1,0 +1,183 @@
+/**** Filter Formatter Elements ****/
+.tablesorter .tablesorter-filter-row td {
+	text-align: center;
+	font-size: 0.9em;
+	font-weight: normal;
+}
+
+/**** Sliders ****/
+/* shrink the sliders to look nicer inside of a table cell */
+.tablesorter .ui-slider, .tablesorter input.range {
+	width: 90%;
+	margin: 2px auto 2px auto; /* add enough top margin so the tooltips will fit */
+	font-size: 0.8em;
+}
+.tablesorter .ui-slider {
+	top: 12px;
+}
+.tablesorter .ui-slider .ui-slider-handle {
+	width: 0.9em;
+	height: 0.9em;
+}
+.tablesorter .ui-datepicker {
+	font-size: 0.8em;
+}
+.tablesorter .ui-slider-horizontal {
+	height: 0.5em;
+}
+/* Add tooltips to slider handles */
+.tablesorter .value-popup:after {
+	content : attr(data-value);
+	position: absolute;
+	bottom: 14px;
+	left: -7px;
+	min-width: 18px;
+	height: 12px;
+	background-color: #444;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#444444), to(#999999));
+	background-image: -webkit-linear-gradient(top, #444, #999);
+	background-image: -moz-linear-gradient(top, #444, #999);
+	background-image: -o-linear-gradient(top, #444, #999);
+	background-image: linear-gradient(to bottom, #444, #999);
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-background-clip: padding-box; background-clip: padding-box;
+	-webkit-box-shadow: 0px 0px 4px 0px #777;
+	box-shadow: 0px 0px 4px 0px #777;
+	border: #444 1px solid;
+	color: #fff;
+	font: 1em/1.1em Arial, Sans-Serif;
+	padding: 1px;
+	text-align: center;
+}
+.tablesorter .value-popup:before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 8px solid #777;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	top: -8px;
+	left: 50%;
+	margin-left: -8px;
+	margin-top: -1px;
+}
+
+/**** Date Picker ****/
+.tablesorter .dateFrom, .tablesorter .dateTo {
+	width: 80px;
+	margin: 2px 5px;
+}
+
+/**** Color Picker/HTML5Number Toggle button ****/
+.tablesorter .button {
+	width: 14px;
+	height: 14px;
+	background: #fcfff4;
+	background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -o-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -ms-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead', GradientType=0 );
+	margin: 1px 5px 1px 1px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	-webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	position: relative;
+	top: 3px;
+	display: inline-block;
+}
+
+.tablesorter .button label {
+	cursor: pointer;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	left: 2px;
+	top: 2px;
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,1);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,1);
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,1);
+	background: #45484d;
+	background: -webkit-linear-gradient(top, #222 0%, #45484d 100%);
+	background: -moz-linear-gradient(top, #222 0%, #45484d 100%);
+	background: -o-linear-gradient(top, #222 0%, #45484d 100%);
+	background: -ms-linear-gradient(top, #222 0%, #45484d 100%);
+	background: linear-gradient(top, #222 0%, #45484d 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222', endColorstr='#45484d', GradientType=0 );
+}
+
+.tablesorter .button label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	background: #55f;
+	background: -webkit-linear-gradient(top, #aaf 0%, #55f 100%);
+	background: -moz-linear-gradient(top, #aaf  0%, #55f 100%);
+	background: -o-linear-gradient(top, #aaf  0%, #55f 100%);
+	background: -ms-linear-gradient(top, #aaf  0%, #55f 100%);
+	background: linear-gradient(top, #aaf  0%, #55f 100%);
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	top: 1px;
+	left: 1px;
+	-webkit-box-shadow: inset 0px 1px 1px #fff, 0px 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 1px 1px #fff, 0px 1px 3px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 1px 1px #fff, 0px 1px 3px rgba(0,0,0,0.5);
+}
+
+.tablesorter .button label:hover::after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=30);
+	opacity: 0.3;
+}
+
+.tablesorter .button input[type=checkbox] {
+	visibility: hidden;
+}
+
+.tablesorter .button input[type=checkbox]:checked + label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+.tablesorter .colorpicker {
+	width: 30px;
+	height: 18px;
+}
+.tablesorter .ui-spinner-input {
+	width: 100px;
+	height: 18px;
+}
+.tablesorter .currentColor, .tablesorter .ui-spinner {
+	position: relative;
+}
+.tablesorter input.number {
+	position: relative;
+}
+
+/* hide filter row */
+.tablesorter .tablesorter-filter-row.hideme td * {
+	height: 1px;
+	min-height: 0;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	/* don't use visibility: hidden because it disables tabbing */
+	opacity: 0;
+	filter: alpha(opacity=0);
+}

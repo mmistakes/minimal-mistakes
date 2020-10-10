@@ -1,0 +1,72 @@
+body {
+    padding-top: 70px;
+    padding-bottom: 30px;
+    background-color: #336699;    
+}
+
+.navbar-blue {
+    background-color: #336699;
+}
+
+.theme-dropdown .dropdown-menu {
+  display: block;
+  position: static;
+  margin-bottom: 20px;
+}
+
+.theme-admin > p > .btn {
+  margin: 5px 0;
+}
+
+.button_group_linkman {
+	white-space: nowrap;
+}
+
+.form-signin {
+	max-width: 350px;
+	padding: 29px;
+	margin: 0 auto 0px;
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+	box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+.form-signin .form-signin-heading{
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.form-signin input[type="password"] {
+	font-size: 16px;
+	height: auto;
+	margin-bottom: 5px;
+	padding: 7px 9px;
+	width: 100%;
+}
+
+label {
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 20px;
+}
+
+.control-label.bold {
+	font-weight: bold;
+}
+
+table.example td {
+	vertical-align: center;	
+}
+
+.progress {
+	margin-bottom: 0px;	
+}

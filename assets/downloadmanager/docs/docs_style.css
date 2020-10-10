@@ -1,0 +1,144 @@
+/* Style sheet and XHTML code
+Author: Mauricio Samy Silva http://www.maujor.com/ A Web Standard evangelist site
+City: Rio de Janeiro - Brazil
+Contact: maujorcss[at]maujor[dot]com
+Date: 2006-05-11
+*/
+body 
+{
+	margin:5px 0;
+	padding:0;
+	background:#eee;
+	color: black;
+	font : 68.8%/1.5 Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-align:center;
+}
+
+#wrapper 
+{
+	width:700px;
+	background:#fff;
+	margin:0 auto;
+	text-align:left;
+	border:1px solid #ccc;
+	padding:10px 20px;
+}
+
+h1 {font-size:1.5em;}
+
+h2 
+{
+	font-size:1.2em;
+	border-top:1px solid #999;
+	padding-top:1.8em;
+}
+
+h2.title 
+{
+	font-size:1.2em;
+	border-top:1px solid #999;
+	padding-top:1.8em;
+	color: green;
+}
+
+h3 {font-size:1.0em;}
+span.dest {color:#f00;}
+span.tip {color:#008000; font-weight:bold;}
+
+p 
+{
+	color : black;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 1.0em;
+}
+
+address 
+{
+	font-weight:bold;
+	font-style:normal;
+}
+
+ul.nobullets 
+{
+	margin:0 0 1.0em;
+	padding:0;
+	list-style:none;
+}
+
+ol li {margin-bottom:1.0em;}
+
+samp, code 
+{
+	font-size:1.3em;
+	font-weight:bold;
+}
+
+a:hover 
+{
+	color : red;
+	background:#ccc;
+	text-decoration : none;
+}
+
+table#installation 
+{
+	border-collapse:collapse;
+	margin: 5px 15px 10px -25px;
+	border: 2px solid #999;
+}
+
+table#installation thead 
+{
+	text-align:center;
+	text-transform:uppercase;
+}
+
+table#installation tr td, table#installation tr th 
+{
+	padding: 2px 5px;
+	border: 1px solid #ccc;
+}
+
+table#installation tr th 
+{
+	border-bottom-width:2px;
+	border-bottom-color:#999;
+}
+
+table#installation tr td var 
+{
+	font-weight:bold;
+	font-style:normal;
+}
+
+table#installation tr.odd 
+{
+	background: #fafafa;
+}
+
+div.error 
+{
+	border: 1px solid #cd0a0a; 
+	background: #fef1ec; 
+	color: #cd0a0a;
+	padding-left:10px;
+	padding-right:5px;
+}
+
+div.success 
+{
+	border: 1px solid #18760f; 
+	background: #e9ffdb; 
+	color: #363636;
+	padding-left:10px;
+	padding-right:5px;
+}
+
+div.notice 
+{
+	border: 1px solid #fcefa1; 
+	background: #fff9de; 
+	color: #363636;
+	padding-left:10px;
+	padding-right:5px;
+}        
