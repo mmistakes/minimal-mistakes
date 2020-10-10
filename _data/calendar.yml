@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Anmeldungszeitraum Schulanfänger ",
-    "title": "Anmeldungszeitraum Schulanfänger ",
-    "excerpt": "Eltern melden ihr Kind an, dass im Schuljahr 2020/21 schulpflichtig wird.",
-    "url": "https://www.google.com/calendar/event?eid=MXRtcmVxOXRsNnN0ZWhzNjYyY2M0ZzFjZWQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2020-09-28",
-      "date_time": null
-    },
-    "end": {
-      "date": "2020-10-10",
-      "date_time": null
-    },
-    "created": "2020-03-02T15:11:32.000Z",
-    "updated": "2020-03-02T15:11:32.670Z"
-  },
-  {
-    "image_path": null,
     "alt": "Herbstferien ",
     "title": "Herbstferien ",
     "excerpt": null,
@@ -32,6 +15,40 @@
     },
     "created": "2020-03-11T12:12:20.000Z",
     "updated": "2020-03-11T12:12:20.263Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Treffen der Vorbereitungsgruppe 50 Jahre Brandwerder",
+    "title": "Treffen der Vorbereitungsgruppe 50 Jahre Brandwerder",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=bTAyZGY2YjZpOGUwYzJnNHBuYWl0OXJkMmcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2020-10-27T18:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2020-10-27T18:30:00+01:00"
+    },
+    "created": "2020-10-10T07:25:58.000Z",
+    "updated": "2020-10-10T07:25:58.500Z"
+  },
+  {
+    "image_path": null,
+    "alt": "1. Schulkonferenz",
+    "title": "1. Schulkonferenz",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=ZjBscHMzaTRhYzMwZDE4MTJla2xnZDY2bGMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2020-10-29T15:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2020-10-29T17:00:00+01:00"
+    },
+    "created": "2020-10-10T07:24:48.000Z",
+    "updated": "2020-10-10T07:24:48.449Z"
   },
   {
     "image_path": null,
@@ -83,22 +100,5 @@
     },
     "created": "2020-03-11T12:13:03.000Z",
     "updated": "2020-03-11T12:13:03.339Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Winterferien",
-    "title": "Winterferien",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=Nmg3ZjhxZWNxbnR2c2kxaDEwczNmcTRucjggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2021-02-01",
-      "date_time": null
-    },
-    "end": {
-      "date": "2021-02-06",
-      "date_time": null
-    },
-    "created": "2020-03-11T12:13:58.000Z",
-    "updated": "2020-03-11T12:13:58.103Z"
   }
 ]
