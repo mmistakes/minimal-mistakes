@@ -9,23 +9,26 @@ voce:
   - title: "NORTAN E VOCÊ"
     excerpt: "Nós te auxiliaremos na gestão administrativa e financeira de todos os seus contratos, foque no que é importante e aproveite os benefícios da nossa rede de consultores."
 missao:
+  - title: "NOSSA MISSÃO"
+    excerpt: "Formar um time de consultores fundamentos no <b>pensamento empreendedor</b>, <b>excelência técnica</b> e <b>saúde financeira</b>, com foco em fornecer <b>serviços de qualidade</b> e com <b>execelência no atendimento</b>."
+visao:
+  - title: "NOSSA VISÃO"
+    excerpt: "Ser a maior empresa <b>colaborativa</b> multidisciplinar da construção civil e meio ambiente do Brasil."
+valores:
+  - title: "VALORES"
+missao_imagens:
   - image_path: /assets/images/desenvolvimento.png
-    alt: "DESENVOLVIMENTO"
-    title: "DESENVOLVIMENTO"
-    excerpt: "Promover o desenvolvimento de pessoas e organizações de áreas relacionadas à produção, gestão e solução do espaço"
-    max_height:
+    alt: "DESENVOLVIMENTO PESSOAL"
+    title: "DESENVOLVIMENTO PESSOAL"
   - image_path: /assets/images/capacitacao.png
     alt: "CAPACITAÇÃO"
     title: "CAPACITAÇÃO"
-    excerpt: "Tornar profissionais mais competitivos, capacitados e produtivos"
-  - image_path: /assets/images/liberdade.png
-    alt: "LIBERDADE FINANCEIRA"
-    title: "LIBERDADE FINANCEIRA"
-    excerpt: "Transformar conhecimento e informação em resultados financeiros"
   - image_path: /assets/images/qualidade.png
     alt: "QUALIDADE"
     title: "QUALIDADE"
-    excerpt: "Ter profissionais de alto desempenho que prestam serviço de qualidade"
+  - image_path: /assets/images/liberdade.png
+    alt: "LIBERDADE FINANCEIRA"
+    title: "LIBERDADE FINANCEIRA"
 beneficios:
   - image_path: /assets/images/produto.jpg
     alt: "SE PREOCUPE COM O PRODUTO"
@@ -51,47 +54,107 @@ beneficios:
     alt: "TENHA GANHOS ILIMITADOS"
     title: "TENHA GANHOS ILIMITADOS"
     excerpt: "Tenha clareza do seu balanço financeiro e defina seu pró-labore mensal. Na Nortan o que você produz é seu."
-funciona:
-  - image_path: /assets/images/tecnico.png
+trabalhamos_images:
+  - image_path: /assets/images/scheme1.png
     alt: "FAÇA PARTE DA EQUIPE"
-    title: "FAÇA PARTE DA EQUIPE"
-    excerpt: "Consultor(a) Técnico(a)
+  - image_path: /assets/images/scheme2.png
+    alt: "FAÇA PARTE DA EQUIPE"
+trabalhamos:
+  - title: "Consultor Freelancer"
+    excerpt: "- Participe de equipes dos associados
 
+    - Feche contratos em conjunto com associados
 
-    - ​Se cadastre na plataforma
+    - Prepare seu caminho para Associação"
+  - title: "Consultor Associado Júnior"
+    excerpt: "- Aprenda como a empresa funciona
 
-    - Negocie valor com o gestor(a) do contrato através da plataforma
+    - Faça o nivelamento com seus coordenadores (procedimentos, técnica, brading, vendas)
 
-    - Execute o serviço combinado
+    - Se lance no mercado! Feche negócios e descubra seu potencial"
+  - title: "Consultor Associado"
+    excerpt: "- Treine para se tornar um Líder, escale seus contratos formando uma equipe
 
-    - Receba o valor acertado na sua Carteira Nortan
+    - Alta performance é estar entre os 20% melhores do seu nicho no mercado. Performe acima da média e ascenda"
+  - title: "Consultor Associado Líder"
+    excerpt: "- Continue Escalando e aprenda a ser um empresário administrador
 
-    - Transfira da sua Carteira para seu banco quando desejar"
-  - image_path: /assets/images/gestor.png
-    alt: "FECHE E GERENCIE CONTRATOS"
-    title: "FECHE E GERENCIE CONTRATOS"
-    excerpt: "Consultor(a) Gestor(a)
+    - Abra um escritório credenciado Nortan e exponencialize seu negócio"
+consultor:
+  - image_path: /assets/images/consultor.png
+    alt: "Consultor Nortan"
+    title: "<n>Contrate um </n>Associado Nortan<n> e tenha mais </n><s>Tempo</s> Vida<n> para o que realmente </n>Importa"
+    excerpt: "\"Tempo é dinheiro!\". Essa frase é vista por toda sua vida e vira quase inerente ao ser humano não é mesmo? Mas na verdade tempo é vida, por isso transforme e potencialize seu tempo – Contrate um Consultor Técnico Nortan para resolver o seu problema
 
-
-    - Se cadastre na plataforma
-
-    - Negocie e feche um contrato
-
-    - Repasse 30% do valor do contrato para Nortan. A empresa fará a gestão financeira e administrativa do contrato, quitando encargos financeiros, sociais e tributários, dando o suporte necessário
-
-    - Negocie preço e serviço com a equipe Nortan de Consultores através da plataforma
-
-    - Receba o valor na sua Carteira Nortan
-
-    - Transfira da sua Carteira para seu banco quando desejar"
+    Sabemos que nenhum problema é igual e cada sonho tem sua particularidade. O Associado Nortan será seu Consultor Técnico Exclusivo, te guiando para solução mais eficiente – Você vai aliviar sua rotina e poder aproveitar seu tempo para focar no que realmente importa. Você não está sozinho nessa, queremos impulsionar seus sonhos."
+consultor_entrega:
+  - image_path: /assets/images/vida.png
+    alt: "Vida"
+    title: "VIDA"
+  - image_path: /assets/images/tempo.png
+    alt: "Tempo"
+    title: "TEMPO"
+  - image_path: /assets/images/resultado.png
+    alt: "Resultado"
+    title: "RESULTADO"
+consultor_contratar:
+  - title: "PORQUE CONTRATAR UM CONSULTOR TÉCNICO NORTAN?"
+    excerpt: "Sabe aquele sonho grande pelo qual você batalha todo dia? Construção da sua casa, expansão do seu negócio, lançamento de um novo produto, seja o que for, na hora de colocar no papel vimos que o ponto principal para nosso sonho decolar são Pessoas! Você precisa de uma equipe, afinal um bom “Quem” te dirá “Como”, “Quando” e “Onde”.<br />
+    Do planejamento à construção, a Nortan terá o “Quem” correto para levar seu sonho da sua cabeça para o papel e do papel para o mundo, aproveite os benefícios:"
+consultor_beneficios:
+  - item: "Qualidade de vida e tempo para você usar como quiser, deixe o técnico se preocupar com os detalhes;"
+  - item: "Ganhos financeiros, pois entregamos eficiência e economia na construção dos seus sonhos;"
+  - item: "Segurança para investir no seu sonho, planejamento técnico por uma equipe de alto nível;"
+  - item: "Disponibilidade para outras tarefas mais importantes;"
+  - item: "Sem preocupação com burocracia técnica para construção do seu sonho;"
+  - item: "Equipe Técnica exclusiva na distância de uma mensagem;"
+  - item: "Dedicação e atenção as suas necessidades;"
+  - item: "Cooperação e resultados ao trabalhar com uma Equipe Multidiciplinar Nortan;"
+consultor_ca:
+  - title: "Quer nos conhecer<br />melhor?"
+    icon: "far fa-comments"
+    url: "https://api.whatsapp.com/send?phone=5582982136209"
+    btn_class: "btn--success"
+    btn_label: "AGENDE UMA REUNIÃO GRÁTIS"
+    btn_align: "center"
+  - title: "Gostou?<br />Não perca tempo"
+    icon: "far fa-handshake"
+    url: "https://api.whatsapp.com/send?phone=5582982136209"
+    btn_class: "btn--success"
+    btn_label: "CONTRATE JÁ"
+    btn_align: "center"
+  - title: "Dúvidas?<br />Mais informações?"
+    icon: "far fa-envelope"
+    url: "https://api.whatsapp.com/send?phone=5582982136209"
+    btn_class: "btn--success"
+    btn_label: "CONTATE-NOS"
+    btn_align: "center"
 ---
 
-{% include feature_row id="intro" type="wide" propeties='data-aos="fade-right"' %}
+{% include feature_row id="intro" type="wide" properties='data-aos="fade-right"' %}
 
-{% include feature_row id="missao" title="NOSSA MISSÃO" type="dual" title_size="h3" propeties='data-aos="fade-left"' %}
+{% include feature_row id="missao" type="wide" properties='data-aos="fade-up" style="border-bottom: 0px solid; justify-content: left;"' %}
 
-{% include feature_row id="voce" type="wide" propeties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
+{% include feature_row id="visao" type="wide" properties='data-aos="fade-left" style="border-bottom: 0px solid; justify-content: left;"' %}
 
-{% include feature_row id="beneficios" title="BENEFÍCIOS" title_size="h4" propeties='data-aos="fade-right"' %}
+{% include feature_row id="valores" type="wide" properties='data-aos="fade-up" style="border-bottom: 0px solid; justify-content: left;"' %}
 
-{% include feature_row id="funciona" type="dual-center" title="COMO FUNCIONA?" propeties='data-aos="fade-left" style="border-bottom: 0px solid;"' %}
+{% include feature_row id="missao_imagens" type="quad-center" title_size="h3" properties='data-aos="fade-right"' %}
+
+{% include feature_row id="voce" type="wide" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
+
+{% include feature_row id="beneficios" title="BENEFÍCIOS" title_size="h4" properties='data-aos="fade-left"' %}
+
+{% include feature_row id="trabalhamos_images" type="dual-center" title="COMO TRABALHAMOS?" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
+
+{% include feature_row id="trabalhamos" type="quad-center" properties='data-aos="fade-right"' iproperties='style="border: black 1px solid; border-radius: 20px; padding: 0px 10px;"' %}
+
+{% include feature_row id="consultor" type="right" title="CONSULTOR TÉCNICO NORTAN" properties='data-aos="fade-up" style="border-bottom: 0px solid; justify-content: left;"' %}
+
+{% include feature_row id="consultor_entrega" type="tri" title="NOSSO OBJETITVO É ENTREGAR:" properties='data-aos="fade-left" style="border-bottom: 0px solid;"' %}
+
+{% include feature_row id="consultor_contratar" type="wide" title_aligment="text-center" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
+
+{% include list id="consultor_beneficios" symbol="+" properties='data-aos="fade-right" style="border-bottom: 0px solid;"' %}
+
+{% include feature_row id="consultor_ca" title_aligment="text-center" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
