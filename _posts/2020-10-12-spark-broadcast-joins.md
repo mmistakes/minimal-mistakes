@@ -172,10 +172,10 @@ Spark will perform auto-detection when
 The threshold for automatic broadcast join detection can be tuned or disabled. The configuration is `spark.sql.autoBroadcastJoinThreshold`, and the value is taken in bytes. If you want to configure it to another number, we can set it in the SparkSession:
 
 ```scala
-spark.conf.set("spark.sql.autoBroadcastJoinThreshold", 104857600) // 100MB detection
+spark.conf.set("spark.sql.autoBroadcastJoinThreshold", 104857600)
 ```
 
-or deactivate it altogether by setting the value to -1:
+or deactivate it altogether by setting the value to -1.
  
 ```scala
 spark.conf.set("spark.sql.autoBroadcastJoinThreshold", -1) 
