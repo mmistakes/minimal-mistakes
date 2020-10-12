@@ -3,88 +3,149 @@ title: " "
 layout: splash
 permalink: /servicos/
 servicos:
-  - image_path: /assets/images/arq.png
+  - image_path: /assets/images/arquitetura.jpg
     alt: "ARQUITETURA"
     title: "ARQUITETURA"
+    icon: "far fa-handshake"
+    url: "https://api.whatsapp.com/send?phone=5582982136209"
+    btn_class: "btn--success"
+    btn_label: "CONTRATE JÁ"
+    btn_align: "center"
     excerpt: "- Projetos arquitetônicos residenciais, comerciais e corporativos
+
+    - Projeto de Construção Modular (Container e Steel Frame)
+
+    - Projeto de arquitetura popular
 
     - Projetos urbanísticos
 
-    - Projetos e planejamento de reformas
-
-    - Acompanhamento de obra
-
-    - Consultorias"
-  - image_path: /assets/images/desing.png
+    - Acompanhamento de obra"
+  - image_path: /assets/images/designInt.jpg
     alt: "DESIGN DE INTERIORES"
     title: "DESIGN DE INTERIORES"
+    icon: "far fa-handshake"
+    url: "https://api.whatsapp.com/send?phone=5582982136209"
+    btn_class: "btn--success"
+    btn_label: "CONTRATE JÁ"
+    btn_align: "center"
     excerpt: "-  Projeto de interiores residenciais, comerciais e corporativos
 
     - Desenho de mobiliário
 
     - Composição e decoração de ambientes internos
 
-    - Consultoria"
-  - image_path: /assets/images/eng.png
-    alt: "ENG. CIVIL"
-    title: "ENG. CIVIL"
-    excerpt: "- Projeto Estrutural residencial e comercial
+    - Acompanhamento de marcenaria e instalação de móveis"
+  - image_path: /assets/images/projHidro.jpg
+    alt: "ENG. SANITÁRIA"
+    title: "ENG. SANITÁRIA"
+    icon: "far fa-handshake"
+    url: "https://api.whatsapp.com/send?phone=5582982136209"
+    btn_class: "btn--success"
+    btn_label: "CONTRATE JÁ"
+    btn_align: "center"
+    excerpt: "- Projetos em BIM
 
-    - Reforma
+    - Projeto hidrossanitário de instalações prediais
 
-    - Construção"
-  - image_path: /assets/images/engE.png
+    - Projeto de drenagem urbana, abastecimento e coleta de esgoto sanitário
+
+    - Projeto de estação de tratamento
+
+    - Ensaio de infiltração e laudo de sondagem de reconhecimento"
+  - image_path: /assets/images/projEle.jpg
     alt: "ENG. ELÉTRICA"
     title: "ENG. ELÉTRICA"
-    excerpt: "- Projeto Elétrico de baixa tensão, TV Digital, Lógica/Cabeamento Estruturado e Telefônico
+    icon: "far fa-handshake"
+    url: "https://api.whatsapp.com/send?phone=5582982136209"
+    btn_class: "btn--success"
+    btn_label: "CONTRATE JÁ"
+    btn_align: "center"
+    excerpt: "- Projetos em BIM
+
+    - Projeto Elétrico de baixa tensão, TVD, Cabeamento Estruturado e Telefônico
 
     - Projeto de SPDA
 
-    - Projeto de Média Tensão
+    - Projeto de média rensão
 
     - Instalações elétricas de média tensão
 
     - Instalação de energia solar
 
     - Laudos técnicos e medições elétricas"
-  - image_path: /assets/images/engS.png
-    alt: "ENG. SANITÁRIA"
-    title: "ENG. SANITÁRIA"
-    excerpt: "- Projeto hidrossanitário de instalações prediais
+  - image_path: /assets/images/projEstru.jpg
+    alt: "ENG. CIVIL"
+    title: "ENG. CIVIL"
+    icon: "far fa-handshake"
+    url: "https://api.whatsapp.com/send?phone=5582982136209"
+    btn_class: "btn--success"
+    btn_label: "CONTRATE JÁ"
+    btn_align: "center"
+    excerpt: "- Projeto Estrutural residencial e comercial
 
-    - projeto de drenagem urbana, abastecimento e coleta de esgoto sanitário
+    - Projetos em BIM
 
-    - Projeto de Estação de Tratamento, especializado em lagoas para abatedouros"
-  - image_path: /assets/images/imp.png
+    - Reforma de residências e estabelecimentos comerciais
+
+    - Construção de residências e empreendimentos modulares (Container e Steel Frame) e convencionais"
+  - image_path: /assets/images/imperm.jpg
     alt: "IMPERMEABILIZAÇÃO"
     title: "IMPERMEABILIZAÇÃO"
-    excerpt: "- Prospecção de infiltração
+    icon: "far fa-handshake"
+    url: "https://api.whatsapp.com/send?phone=5582982136209"
+    btn_class: "btn--success"
+    btn_label: "CONTRATE JÁ"
+    btn_align: "center"
+    excerpt: "- Projetos de engenharia de impermeabilização
+
+    - Treinamento de equipes de impermeabilização
+
+    - Prospecção de infiltração
 
     - Aplicação de produtos de impermeabilização em áreas vulneráveis
 
-    - Impermeabilização de lajes, telhados, piscinas, etc"
-  - image_path: /assets/images/engA.png
-    alt: "ENG. AMBIENTAL"
-    title: "ENG. AMBIENTAL"
-    excerpt: "- Licenciamento e empreendimentos da construção civil
-
-    - Licenciamento ambiental de empreendimentos da agricultura e pecuária
-
-    - Consultoria Ambiental Personalizada"
-  - image_path: /assets/images/hidrico.png
+    - Impermeabilização de lajes, telhados, piscinas, etc
+"
+  - image_path: /assets/images/recuHidro.jpg
     alt: "RECURSOS HÍDRICOS"
     title: "RECURSOS HÍDRICOS"
-    excerpt: "- Hidrometria
+    icon: "far fa-handshake"
+    url: "https://api.whatsapp.com/send?phone=5582982136209"
+    btn_class: "btn--success"
+    btn_label: "CONTRATE JÁ"
+    btn_align: "center"
+    excerpt: "- Obtenção de Outorga de direito de uso dos Recursos Hídricos
 
-    - Monitoramento quali-quantitativo 
+    - Estudo hidrológico para rios, lagoas e reservatórios
 
-    - Modelagem hidrológica
+    - Modelagem hidrodinâmica em rios lagos e reservatórios
 
-    - Modelagem hidrodinâmica em rios (áreas de inundação)
+    - Hidrometria de rios, lagos e reservatórios
 
-    - Modelagem Hidrodinâmica de Lagos e Reservatórios
+    - Monitoramento quali-quantitativo"
+  - image_path: /assets/images/meioAmbiente.jpg
+    alt: "ENG. AMBIENTAL"
+    title: "ENG. AMBIENTAL"
+    icon: "far fa-handshake"
+    url: "https://api.whatsapp.com/send?phone=5582982136209"
+    btn_class: "btn--success"
+    btn_label: "CONTRATE JÁ"
+    btn_align: "center"
+    excerpt: "- Licenciamento ambiental (EIA, RAA, etc)
 
-    - Modelagem Ecológica de Lagos e reservatórios"
+    - Plano de controle ambiental (PCA)
+
+    - Plano de recuperação de áreas degradadas (PRAD)
+
+    - Plano de gestão de resíduos sólidos
+
+    - Relatório de monitoramento ambiental 
+
+    - Cadastro ambiental rural (CAR)
+
+    - Realização e atualização do CTF/RAPP – IBAMA
+
+    - Ensaio de Infiltração e Laudo de Sondagem de Reconhecimento"
 ---
 
-{% include feature_row id="servicos" title="SERVIÇOS" type="quad" title_size="h3" propeties='data-aos="fade-right" style="border-bottom: 0px solid;"' %}
+{% include feature_row id="servicos" title="SERVIÇOS" type="quad" wtitle_aligment="text-center" title_aligment="text-center" title_size="h3" properties='data-aos="fade-right" style="border-bottom: 0px solid; --bg-color: #b4d9c9"' %}
