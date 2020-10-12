@@ -92,7 +92,7 @@ Please consider supporting me to continue creating more content.
 
 some text and [here is possible to download the file in PDF][1]
 
-[1]:/assets/zips/vpilotdesigns-sksg.zip
+[1]:/assets/vpilotdesigns-sksg.zip
 
 {% include video id="jftRM0STYKo" provider="youtube" %}
 
