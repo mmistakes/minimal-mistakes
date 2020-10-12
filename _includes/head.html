@@ -35,3 +35,9 @@
     <script src="{{ script | relative_url }}"></script>
   {% endfor %}
 {% endif %}
+
+{% if site.google_tag_manager %}
+
+    {% include gtm.html %}
+
+  {% endif %}
