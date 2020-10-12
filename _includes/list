@@ -1,0 +1,11 @@
+{% if include.id %}
+  {% assign list = page[include.id] %}
+{% else %}
+  {% assign list = page.list %}
+{% endif %}
+
+<table class="colored__list" {{ include.properties }}>
+  {% for i in list %}
+    <tr><td><ul style="--list-symbol: '{{ include.symbol | default: "•" }}'"><li>{{ i.item }}</li></ul></td></tr>
+  {% endfor %}
+</table>
