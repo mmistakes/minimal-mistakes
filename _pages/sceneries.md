@@ -90,6 +90,10 @@ Please consider supporting me to continue creating more content.
 
 ### San Gil SKSG
 
+some text and [here is possible to download the file in PDF][1]
+
+[1]:/assets/zips/vpilotdesigns-sksg.zip
+
 {% include video id="jftRM0STYKo" provider="youtube" %}
 
 {% include gallery id="gallery1" caption="Aerpuerto Los Pozos, San Gil, Santander, Colombia" %}
