@@ -39,7 +39,7 @@ times5.explain()
 
 and this will give you the prettiest thing:
 
-```scalaPerl
+```perl
 == Physical Plan ==
 *(1) Project [(id#0L * 5) AS id#2L]
 +- *(1) Range (1, 1000000, step=1, splits=6)
@@ -51,7 +51,7 @@ This is a query plan. When you call the explain method, the final plan - the phy
 
 So let's go over some examples of query plans and how to read them. Let's go back to the one we've just shown:
 
-```scalaPerl
+```perl
 == Physical Plan ==
 *(1) Project [(id#0L * 5) AS id#2L]
 +- *(1) Range (1, 1000000, step=1, splits=6)
