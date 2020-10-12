@@ -1,4 +1,4 @@
-<figure class="{{ include.class }}" {{ include.propeties }}>
+<figure class="{{ include.class }}" {{ include.properties }}>
   <img src=
       "{{ include.image_path | relative_url }}"
     alt="{% if include.alt %}{{ include.alt }}{% endif %}">

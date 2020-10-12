@@ -1,6 +1,6 @@
 {% if include.selector != empty and include.id != empty%}
   {%- assign slider = site.data.html_sliders | where:"selector",include.selector | first -%}
-  <div id="{{ slider.selector }}" {{ include.propeties }}>
-    {% include feature_row type=include.type title=include.title title_size=include.title_size id=include.id %}
+  <div id="{{ slider.selector }}" {{ include.properties }}>
+    {% include feature_row type=include.type title_size=include.title_size id=include.id %}
   </div>
 {% endif %}
