@@ -4,26 +4,14 @@
   {% assign feature_row = page.feature_row %}
 {% endif %}
 
-{% if include.title_aligment %}
-  {% assign title_aligment = include.title_aligment %}
-{% else %}
-  {% assign title_aligment = '' %}
-{% endif %}
-
-{% if include.title_size %}
-  {% assign title_size = include.title_size %}
-{% else %}
-  {% assign title_size = 'h2' %}
-{% endif %}
-
 {% if include.title %}
-<div class="feature__wrapper" {{ include.propeties }} style="border-bottom: 0px; margin-bottom: 1em;">
-    <h1 class="archive__item-title text-center">{{ include.title }}</h1>
+<div class="feature__wrapper" {{ include.properties }} style="border-bottom: 0px; margin-bottom: 1em;">
+    <h2 class="archive__item-title {{ include.wtitle_aligment | default: '' }}" style="width: 100%;">{{ include.title }}</h2>
 </div>
 {% endif %}
-<div class="feature__wrapper {{ include.wrapper_class }}" {{ include.propeties }}>
+<div class="feature__wrapper {{ include.wrapper_class }}" {{ include.properties }}>
   {% for f in feature_row %}
-    <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
+    <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}" {% if include.iproperties %}{{ include.iproperties }}{% endif %}>
       <div class="archive__item">
         {% if f.image_path %}
           <div class="archive__item-teaser">
@@ -43,7 +31,7 @@
 
         <div class="archive__item-body">
           {% if f.title %}
-            <{{ title_size }} class="archive__item-title {{ title_aligment }}">{{ f.title }}</{{ title_size }}>
+            <{{ include.title_size | default: 'h2' }} class="archive__item-title {{ include.title_aligment | default: '' }}">{{ f.title }}</{{ include.title_size | default: 'h2' }}>
           {% endif %}
 
           {% if f.excerpt %}
@@ -65,7 +53,7 @@
             {% capture f_url2 %}{{ f.url2 | relative_url }}{% endcapture %}
           {% endif %}
           {% if f.url %}
-            <p><a href="{{ f_url | relative_url }}" class="btn {{ f.btn_class }}">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a>{% if f.url2 %} <a href="{{ f_url2 | relative_url }}" class="btn {{ f.btn2_class }}">{{ f.btn2_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a>{% endif %}</p>
+            <p style="text-align: {{ f.btn_align | default: 'left' }};"><a href="{{ f_url | relative_url }}" class="btn {{ f.btn_class }}">{% if f.icon %}<i class="{{ f.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {% endif %}{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a>{% if f.url2 %} <a href="{{ f_url2 | relative_url }}" class="btn {{ f.btn2_class }}">{{ f.btn2_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a>{% endif %}</p>
           {% endif %}
         </div>
       </div>
