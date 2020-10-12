@@ -93,6 +93,8 @@ analytics:
 google:
   tag_manager:
     container_id: GTM-N8QDKJ8
+    
+google_tag_manager: GTM-N8QDKJ8    
 
 
 # Site Author
