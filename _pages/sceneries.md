@@ -94,6 +94,8 @@ Please consider supporting me to continue creating more content.
 
 {% include gallery id="gallery1" caption="Aerpuerto Los Pozos, San Gil, Santander, Colombia" %}
 
+<a href=”assets/zips/vpilotdesigns-sksg.zip” onclick=”var that=this;_gaq.push([‘_trackEvent’,’Download’,’PDF’,this.href]);setTimeout(function(){location.href=that.href;},200);return false;”>Download</a>
+
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="S25B4HDG4WFT2">
