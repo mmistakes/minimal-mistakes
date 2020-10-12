@@ -93,7 +93,7 @@ Please consider supporting me to continue creating more content.
 you can [Download](https://github.com/vpilotdesigns/vpilotdesigns.github.io/blob/master/assets/vpilotdesigns-sksg.zip?raw=true) directly.
 
 
-<a onclick="var that=this;_gaq.push(['_trackEvent','Download','SKSG',this.href]);setTimeout(function(){location.href=that.href;},400);return false;" href="/assets/vpilotdesigns-sksg.zip">Download my file</a>
+<a onclick="var that=this;_gaq.push(['_trackEvent','Download','SKSG',this.href]);setTimeout(function(){location.href=that.href;},400);return false;" href="/assets/vpilotdesigns-sksg.zip?raw=true">Download my file</a>
 
 {% include video id="jftRM0STYKo" provider="youtube" %}
 
