@@ -1,0 +1,33 @@
+- selector: slider2
+  bullets: true
+  html_settings:
+    height: "'auto'"
+    initialHeight: 300
+    maxHeight:
+    interval:
+    transitionDuration:
+    effect:
+    disableNav:
+    keyboardNav:
+    previousNavSelector:
+    nextNavSelector:
+    group: 3
+    groupClasses: "'feature__wrapper'"
+    hasBorder: true
+
+- selector: slider3
+  bullets: true
+  html_settings:
+    height: "'auto'"
+    initialHeight: 300
+    maxHeight:
+    interval: 3000
+    transitionDuration:
+    effect:
+    disableNav:
+    keyboardNav:
+    previousNavSelector:
+    nextNavSelector:
+    group: 4
+    groupClasses: "'feature__wrapper'"
+    hasBorder: false
