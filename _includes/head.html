@@ -1,5 +1,9 @@
 <meta charset="utf-8">
 
+{% if site.google_tag_manager %}
+    {% include gtm.html %}
+  {% endif %}
+
 {% include seo.html %}
 
 <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
@@ -36,8 +40,3 @@
   {% endfor %}
 {% endif %}
 
-{% if site.google_tag_manager %}
-
-    {% include gtm.html %}
-
-  {% endif %}
