@@ -58,6 +58,9 @@ assessor_images:
   - image_path: /assets/images/a8.png
   - image_path: /assets/images/a9.png
   - image_path: /assets/images/a10.png
+assessor_tabela:
+  - image_path: /assets/images/table.png
+    alt: "Tabela de preços"
 ---
 
 {% include feature_row id="assessor" type="right" title="ASESSOR EXECUTIVO REMOTO" wtitle_aligment="text-center" properties='data-aos="fade-left" style="border-bottom: 0px solid; justify-content: left;"' %}
@@ -70,8 +73,8 @@ assessor_images:
 
 {% include feature_row id="assessor_images" type="penta" title="GANHE MAIS TEMPO E ESQUEÇA BUROCRACIA" wtitle_aligment="text-center" title_aligment="text-center" properties='data-aos="fade-left" style="border-bottom: 0px solid; --bg-color: #b4d9c9"' %}
 
-<p style="text-align: center"><a href="https://wa.me/5582982136209" class="btn btn--success"><i class="far fa-handshake" aria-hidden="true"></i> CONTRATE JÁ</a></p>
+<p style="text-align: center" data-aos="fade-up"><a href="https://wa.me/5582982136209" class="btn btn--success"><i class="far fa-handshake" aria-hidden="true"></i> CONTRATE JÁ</a></p>
 
-![full](/assets/images/table.png){: .full}
+{% include feature_row id="assessor_tabela" type="wide" properties='data-aos="fade-right" style="border-bottom: 0px solid;"' %}
 
-<p style="text-align: center"><a href="https://wa.me/5582982136209" class="btn btn--success"><i class="far fa-handshake" aria-hidden="true"></i> CONTRATE JÁ</a></p>
+<p style="text-align: center" data-aos="fade-up"><a href="https://wa.me/5582982136209" class="btn btn--success"><i class="far fa-handshake" aria-hidden="true"></i> CONTRATE JÁ</a></p>
