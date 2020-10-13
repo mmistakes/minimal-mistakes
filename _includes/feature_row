@@ -13,18 +13,40 @@
   {% for f in feature_row %}
     <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}" {% if include.iproperties %}{{ include.iproperties }}{% endif %}>
       <div class="archive__item">
-        {% if f.image_path %}
+        {% if f.image_path or f.images %}
           <div class="archive__item-teaser">
             {% if f.image_url%}
               <a href= "{{ f.image_url | relative_url }}" >
             {% endif %}
-              <img src= "{{ f.image_path | relative_url }}"
+            {% if f.image_path %}
+              <img src="{{ f.image_path | relative_url }}"
               alt="{% if f.alt %}{{ f.alt }}{% endif %}" style="{{ include.img_style }}">
+            {% endif %}
             {% if f.image_url%}
               </a>
             {% endif %}
             {% if f.image_caption %}
               <span class="archive__item-caption">{{ f.image_caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+            {% endif %}
+            {% if f.images %}
+              <h3>{{ f.title2 | default: "" }}</h3>
+              {% for i in f.images %}
+                <div style="display: flex; flex-direction: row;">
+                <div class="archive__subitem-teaser">
+                  <img src=
+                  {% if i.image_path contains "://" %}
+                    "{{ i.image_path }}"
+                  {% else %}
+                    "{{ i.image_path | relative_url }}"
+                  {% endif %}
+                  alt="{% if i.alt %}{{ i.alt }}{% endif %}" style="{{ include.img_style }}">
+                </div>
+                <div class="archive__subitem-body">
+                  {% if i.title %}
+                    <h4 class="archive__subitem-title">{{ i.title }}</h4>
+                  {% endif %}
+                </div></div>
+              {% endfor %}
             {% endif %}
           </div>
         {% endif %}

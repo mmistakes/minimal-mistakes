@@ -108,7 +108,7 @@ body:hover .visually-hidden button {
    ========================================================================== */
 
 .task-list {
-  padding:0;
+  padding: 0;
 
   li {
     list-style-type: none;
@@ -181,6 +181,8 @@ body:hover .visually-hidden button {
 /* file page content container */
 
 .full {
+  width: 100%;
+
   @include breakpoint($large) {
     margin-right: -1 * span(2.5 of 12) !important;
   }

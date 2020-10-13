@@ -84,7 +84,7 @@ consultor:
   - image_path: /assets/images/consultor.png
     alt: "Consultor Nortan"
     title: "<n>Contrate um </n>Associado Nortan<n> e tenha mais </n><s>Tempo</s> Vida<n> para o que realmente </n>Importa"
-    excerpt: "\"Tempo é dinheiro!\". Essa frase é vista por toda sua vida e vira quase inerente ao ser humano não é mesmo? Mas na verdade tempo é vida, por isso transforme e potencialize seu tempo – Contrate um Consultor Técnico Nortan para resolver o seu problema
+    excerpt: "\"Tempo é dinheiro!\". Essa frase é vista por toda sua vida e vira quase inerente ao ser humano não é mesmo? Mas na verdade tempo é vida, por isso transforme e potencialize seu tempo – Contrate um Consultor Técnico Nortan para resolver o seu problema.
 
     Sabemos que nenhum problema é igual e cada sonho tem sua particularidade. O Associado Nortan será seu Consultor Técnico Exclusivo, te guiando para solução mais eficiente – Você vai aliviar sua rotina e poder aproveitar seu tempo para focar no que realmente importa. Você não está sozinho nessa, queremos impulsionar seus sonhos."
 consultor_entrega:
