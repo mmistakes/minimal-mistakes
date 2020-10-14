@@ -43,7 +43,7 @@ assessor_ca:
     btn_align: "center"
   - title: "Dúvidas?<br />Mais informações?"
     icon: "far fa-envelope"
-    url: "https://wa.me/5582982136209"
+    url: "mailto:contato@nortanprojetos.com"
     btn_class: "btn--success"
     btn_label: "CONTATE-NOS"
     btn_align: "center"
@@ -63,7 +63,7 @@ assessor_tabela:
     alt: "Tabela de preços"
 ---
 
-{% include feature_row id="assessor" type="right" title="ASESSOR EXECUTIVO REMOTO" wtitle_aligment="text-center" properties='data-aos="fade-left" style="border-bottom: 0px solid; justify-content: left;"' %}
+{% include feature_row id="assessor" type="right" title="ASSESSOR EXECUTIVO REMOTO" wtitle_aligment="text-center" properties='data-aos="fade-left" style="border-bottom: 0px solid; justify-content: left;"' %}
 
 {% include feature_row id="assessor_contratar" type="wide" title_aligment="text-center" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
 

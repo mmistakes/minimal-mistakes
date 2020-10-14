@@ -10,10 +10,9 @@ nortan_intro:
   - image_path: /assets/images/logo.svg
     alt: "A NORTAN"
     title: "A NORTAN"
-    excerpt: "A Nortan foi fundada em 2020 com uma missão: Impulsionar a vida profissional dos nossos Consultores Técnicos, proporcionando segurança e eficiência para os associados e para nossos clientes.<br /><br />
-    Para isso proporcionamos um ambiente colaborativo de consultores de alta performance voltados para prestação de serviços relacionados à produção, gestão e solução de espaços para construção civil e meio ambiente.A Nortan fornece uma equipe capacitada de Consultores Técnicos para resolver o seu problema e tirar seu sonho do papel.<br /><br />
-    Nossa visão é ser a maior rede colaborativa de consultores da construção civil e meio ambiente, sendo uma referência como uma rede de conexões que proporciona múltiplos canais de venda no mercado, segurança, visibilidade e valorização profissional.<br /><br />
-    Trabalhe com a Nortan e tenha soluções completas para todo o ciclo do empreendimento."
+    excerpt: "A Nortan é uma plataforma que conecta Você à Consultores Técnicos nas áreas de Construção Civil e Meio Ambiente, mantendo a garantia, credibilidade e segurança de uma Empresa. Fundada em 2020 a Nortan carrega uma missão: Impulsionar a vida profissional dos nossos Consultores Técnicos, proporcionando segurança e eficiência para os associados e para nossos clientes.<br /><br />
+    Para isso proporcionamos um ambiente colaborativo de consultores de alta performance voltados para prestação de serviços relacionados à produção, gestão e solução de espaços para construção civil e meio ambiente. A Nortan fornece uma equipe capacitada de Consultores Técnicos para resolver o seu problema e tirar seu sonho do papel. Trabalhe com a Nortan e tenha soluções completas para todo o ciclo do empreendimento.<br /><br />
+    Nossa visão é ser a maior rede colaborativa de consultores da construção civil e meio ambiente, sendo uma referência como uma rede de conexões que proporciona múltiplos canais de venda no mercado, segurança, visibilidade e valorização profissional. Conheça a Nortan, e experimente o que é trabalhar com especialistas."
 areas_atuacao:
   - title: "ÁREAS DE ATUAÇÃO"
     excerpt: "Somos uma empresa multimercado especializados nas área de construção civil e meio ambiente que presta serviços através das seguintes diretorias: Arquitetura, Projetos Complementares, Engenharia Civil e Meio Ambiente & Recursos Hídricos. Dentro de cada diretoria existem as coordenações formadas por um time de especialistas focados em fornecer um serviço de qualidade. As coordenações são:"

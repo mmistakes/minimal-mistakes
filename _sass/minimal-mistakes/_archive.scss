@@ -607,6 +607,14 @@
       text-align: center;
     }
 
+    .archive__item-excerpt {
+      text-align: left;
+
+      ul {
+        padding-inline-start: 20px;
+      }
+    }
+
     @include breakpoint($small) {
       width: span(3 of 12);
       margin: 10px 0px;
@@ -755,6 +763,11 @@
       margin-bottom: 2em;
       display: flex;
       flex-direction: column;
+
+      img {
+        width: fit-content;
+        align-self: center;
+      }
     }
 
     .archive__subitem-title {

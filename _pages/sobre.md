@@ -10,25 +10,12 @@ voce:
     excerpt: "Nós te auxiliaremos na gestão administrativa e financeira de todos os seus contratos, foque no que é importante e aproveite os benefícios da nossa rede de consultores."
 missao:
   - title: "NOSSA MISSÃO"
-    excerpt: "Formar um time de consultores fundamentos no <b>pensamento empreendedor</b>, <b>excelência técnica</b> e <b>saúde financeira</b>, com foco em fornecer <b>serviços de qualidade</b> e com <b>execelência no atendimento</b>."
+    excerpt: "Impulsionar a vida profissional dos nossos Consultores Técnicos, proporcionando segurança e eficiência para os associados e para nossos clientes."
 visao:
   - title: "NOSSA VISÃO"
     excerpt: "Ser a maior empresa <b>colaborativa</b> multidisciplinar da construção civil e meio ambiente do Brasil."
 valores:
-  - title: "VALORES"
-missao_imagens:
-  - image_path: /assets/images/desenvolvimento.png
-    alt: "DESENVOLVIMENTO PESSOAL"
-    title: "DESENVOLVIMENTO PESSOAL"
-  - image_path: /assets/images/capacitacao.png
-    alt: "CAPACITAÇÃO"
-    title: "CAPACITAÇÃO"
-  - image_path: /assets/images/qualidade.png
-    alt: "QUALIDADE"
-    title: "QUALIDADE"
-  - image_path: /assets/images/liberdade.png
-    alt: "LIBERDADE FINANCEIRA"
-    title: "LIBERDADE FINANCEIRA"
+  - image_path: /assets/images/valores.png
 beneficios:
   - image_path: /assets/images/produto.jpg
     alt: "SE PREOCUPE COM O PRODUTO"
@@ -125,7 +112,7 @@ consultor_ca:
     btn_align: "center"
   - title: "Dúvidas?<br />Mais informações?"
     icon: "far fa-envelope"
-    url: "https://wa.me/5582982136209"
+    url: "mailto:contato@nortanprojetos.com"
     btn_class: "btn--success"
     btn_label: "CONTATE-NOS"
     btn_align: "center"
@@ -137,9 +124,7 @@ consultor_ca:
 
 {% include feature_row id="visao" type="wide" properties='data-aos="fade-left" style="border-bottom: 0px solid; justify-content: left;"' %}
 
-{% include feature_row id="valores" type="wide" properties='data-aos="fade-up" style="border-bottom: 0px solid; justify-content: left;"' %}
-
-{% include feature_row id="missao_imagens" type="quad-center" title_size="h3" properties='data-aos="fade-right"' %}
+{% include feature_row id="valores" type="wide" title="VALORES" properties='data-aos="fade-up" style="border-bottom: 0px solid; justify-content: left;"' %}
 
 {% include feature_row id="voce" type="wide" properties='data-aos="fade-up" style="border-bottom: 0px solid;"' %}
 
