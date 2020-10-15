@@ -90,21 +90,13 @@ Please consider supporting me to continue creating more content.
 
 ### San Gil SKSG
 
-<a href=/assets/vpilotdesigns-sksg.zip onclick=”var that=this;_gaq.push([‘_trackEvent’,’Download’,’PDF’,this.href]);setTimeout(function(){location.href=that.href;},200);return false;”>Download</a> 
-
-you can [Download here](https://vpilotdesigns.github.io/assets/vpilotdesigns-sksg.zip)
-
-you can [Download](https://github.com/vpilotdesigns/vpilotdesigns.github.io/blob/master/assets/vpilotdesigns-sksg.zip?raw=true) directly.
-
-<a onclick="var that=this;_gaq.push(['_trackEvent','Download','SKSG',this.href]);setTimeout(function(){location.href=that.href;},400);return false;" href=/assets/vpilotdesigns-sksg.zip>Download Now</a>
-
-{% include SKSGdownload.html %}
+[/Descargar/Download](https://vpilotdesigns.github.io/assets/vpilotdesigns-sksg.zip)
 
 {% include video id="jftRM0STYKo" provider="youtube" %}
 
 {% include gallery id="gallery1" caption="Aerpuerto Los Pozos, San Gil, Santander, Colombia" %}
 
-<a onclick="var that=this;_gaq.push(['_trackEvent','Download','SKSG',this.href]);setTimeout(function(){location.href=that.href;},400);return false;" href="/assets/vpilotdesigns-sksg.zip?raw=true">Download Now</a>
+!<a onclick="var that=this;_gaq.push(['_trackEvent','Download','SKSG',this.href]);setTimeout(function(){location.href=that.href;},400);return false;" href="/assets/vpilotdesigns-sksg.zip?raw=true">Download Now</a>!
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
