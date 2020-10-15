@@ -90,6 +90,8 @@ Please consider supporting me to continue creating more content.
 
 ### San Gil SKSG
 
+<a href=../assets/vpilotdesigns-sksg.zip onclick=”var that=this;_gaq.push([‘_trackEvent’,’Download’,’PDF’,this.href]);setTimeout(function(){location.href=that.href;},200);return false;”>Download</a> 
+
 you can [Download](https://github.com/vpilotdesigns/vpilotdesigns.github.io/blob/master/assets/vpilotdesigns-sksg.zip?raw=true) directly.
 
 
