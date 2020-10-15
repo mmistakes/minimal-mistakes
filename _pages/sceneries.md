@@ -100,6 +100,8 @@ you can [Download](https://github.com/vpilotdesigns/vpilotdesigns.github.io/blob
 
 {% include gallery id="gallery1" caption="Aerpuerto Los Pozos, San Gil, Santander, Colombia" %}
 
+<a onclick="var that=this;_gaq.push(['_trackEvent','Download','SKSG',this.href]);setTimeout(function(){location.href=that.href;},400);return false;" href="/assets/vpilotdesigns-sksg.zip?raw=true">Download my file</a>
+
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="S25B4HDG4WFT2">
