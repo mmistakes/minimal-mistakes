@@ -55,7 +55,7 @@ Let's do with something simple. Assume you are starting with a source of integer
 
 First of all, you need to know what kind of components you will need for such a job. Besides sources, sinks and flows, we can have other components that can have either multiple inputs (like a zip) or multiple outputs (like a broadcast). Our graph will look something like below, with the components separated:
 
-#img:23-1-first-graph.png
+![How to Use Akka Streams Graph DSL - tutorial](https://rtjvm-website-blog-images.s3-eu-west-1.amazonaws.com/23-1-first-graph.png)
 
 This visual representation will be reflected in the code, much more than you think. So the above was step 0: make a mental diagram of how you want your data to move.
 

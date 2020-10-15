@@ -12,7 +12,7 @@ This article is for Scala programmers of all levels, and particularly for those 
 
 Scala 2 famously had no support for enums. We had to bend over backwards to support it:
 
-```scalascala
+```scala
 object Permissions extends Enumeration {
   val READ, WRITE, EXEC, NONE = Value
 }

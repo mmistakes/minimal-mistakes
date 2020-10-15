@@ -130,7 +130,7 @@ The code is short but magical. Here's how it works in a nutshell:
 
 At this point, we should be ready to start the server and issue HTTP requests to the server. If you want to send HTTP requests easily, I really like <a href="https://httpie.org/">HTTPie</a> (which formats the responses much better), but you can also use cURL as well.
 
-```scalabash
+```bash
 echo '{"name":"Daniel", "age": 56}' | http post localhost:8081/api/user
 ```
 ```http
@@ -203,7 +203,7 @@ object AkkaHttpCirceJson extends FailFastCirceSupport {
 
 Same requests will give us the similar responses:
 
-```scalabash
+```bash
 echo '{"name":"Daniel", "age": 56}' | http post localhost:8082/api/user
 ```
 ```http
@@ -264,7 +264,7 @@ object AkkaHttpJackson extends JacksonSupport {
 
 And once you start your server, the POST commands will look the same:
 
-```scalabash
+```bash
 echo '{"name":"Daniel", "age": 56}' | http post localhost:8083/api/user
 ```
 ```http

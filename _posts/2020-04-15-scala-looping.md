@@ -80,7 +80,7 @@ List(1,2,3).foreach { x =>
 
 as being similar to
 
-```scalaJava
+```Java
 List<Integer> list = ...
 for (int x: list) {
     System.out.println(x)

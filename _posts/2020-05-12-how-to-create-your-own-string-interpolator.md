@@ -21,7 +21,7 @@ val sInterpolator = s"The value of pi is $lifeOfPi. Half of pi is ${lifeOfPi / 2
 
 This interpolator will simply call the toString methods of every value and expression that we expand, and the results will be part of the resulting string
 
-```scalaPerl
+```Perl
 The value of pi is 3.14159. Half of pi is 1.570795
 ```
 
@@ -33,7 +33,7 @@ val rawIterpolator = raw"The value of pi is $lifeOfPi\n <-- this is not a newlin
 
 Normally, the \n would trigger a new line, but in a Raw interpolator, it doesn't:
 
-```scalaPerl
+```Perl
 The value of pi is 3.14159\n <-- this is not a newline
 ```
 
@@ -43,7 +43,7 @@ And finally we have the F interpolator, which has the ability to control the for
 val fInterpolator = f"The approximate value of pi is $lifeOfPi%3.2f"
 ```
 
-```scalaPerl
+```Perl
 The approximate value of pi is 3.14
 ```
 

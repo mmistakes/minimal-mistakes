@@ -176,7 +176,7 @@ However, that's not the interesting piece and the big strength of Akka Streams. 
 
 The visual graph that resembles the stream looks like this.
 
-#img:22-1.png
+![Comparing Akka Streams, Kafka Streams and Spark Streaming - tutorial](https://rtjvm-website-blog-images.s3-eu-west-1.amazonaws.com/22-1.png)
 
 Now take a look at the code.
 

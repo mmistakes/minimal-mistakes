@@ -7,9 +7,9 @@ tags: [spark, optimization]
 excerpt: "Broadcast joins in Apache Spark are one of the most bang-for-the-buck techniques for optimizing speed and avoiding memory issues. Let's take a look." 
 ---
 
-## 1. Essentials
-
 This article is for the Spark programmers who know some fundamentals: how data is split, how Spark generally works as a computing engine, plus some essential DataFrame APIs.
+
+## 1. Essentials
 
 For this article, we use Spark 3.0.1, which you can either [download](https://spark.apache.org/downloads.html) as a standalone installation on your computer, or you can import as a library definition in your Scala project, in which case you'll have to add the following lines to your build.sbt:
 

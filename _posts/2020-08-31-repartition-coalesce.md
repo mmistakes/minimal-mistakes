@@ -72,7 +72,7 @@ Let's run a small test - execute this application with the count action executed
 
 If you look at the Spark UI, you'll see something very interesting:
 
-#img:31 - runtime.png
+![Repartition vs Coalesce in Apache Spark - tutorial](https://rtjvm-website-blog-images.s3-eu-west-1.amazonaws.com/31%20-%20runtime.png)
 
 The first job (repartition) took 3 seconds, whereas the second job (coalesce) took 0.1 seconds! Our data contains 10 million records, so it's significant enough.
 
@@ -82,13 +82,13 @@ There must be something fundamentally different between repartition and coalesce
 
 We can explain what's happening if we look at the stage/task decomposition of both jobs. In this case, the DAGs are very useful. Let's look at repartition:
 
-#img:31 - repartition.png
+![Repartition vs Coalesce in Apache Spark - tutorial](https://rtjvm-website-blog-images.s3-eu-west-1.amazonaws.com/31%20-%20repartition.png)
 
 In other words, we have two stages and a shuffle in between them. As I mentioned earlier, this is expected - a repartition will redistribute the data evenly between the new number of partitions, so a shuffle is involved. As you probably know, shuffles are expensive, even for the ~70MB of data we're dealing with.
 
 Let's look at the other DAG of the coalesce job:
 
-#img:31 - coalesce.png
+![Repartition vs Coalesce in Apache Spark - tutorial](https://rtjvm-website-blog-images.s3-eu-west-1.amazonaws.com/31%20-%20coalesce.png)
 
 In other words, a single stage! _Coalesce does not involve a shuffle_. Why doesn't it incur a shuffle since it changes the number of partitions?
 

@@ -14,9 +14,9 @@ I'll be working in IntelliJ IDEA which creates an SBT project structure quickly,
 
 We'll start by creating a vanilla Scala-SBT project in intelliJ:
 
-#img:20-1.png
+![Akka HTTP to Heroku in 10 Minutes - tutorial](https://rtjvm-website-blog-images.s3-eu-west-1.amazonaws.com/20-1.png)
 
-#img:20-2.png
+![Akka HTTP to Heroku in 10 Minutes - tutorial](https://rtjvm-website-blog-images.s3-eu-west-1.amazonaws.com/20-2.png)
 
 And after you click Finish, IntelliJ will create the appropriate project structure for you. Go to the `src/` folder, and create a package and then an application under it. I created a package called `server` and under it I started a simple `MyServer.scala`:
 
