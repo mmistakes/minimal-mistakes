@@ -11,9 +11,9 @@ feature_rows:
     title: "Hugo Cunha"
     excerpt: "**Diretor Executivo - CEO**"
     links:
-      - label: "82 999164578"
+      - label: "82 981674578"
         icon: "fab fa-whatsapp"
-        url: "https://wa.me/5582999164578"
+        url: "https://wa.me/5582981674578"
       - label: "hugocunha@nortanprojetos.com"
         icon: "fas fa-envelope"
         url: "mailto:hugocunha@nortanprojetos.com"
