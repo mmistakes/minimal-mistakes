@@ -8,7 +8,7 @@
 anchors:
   email: &email "giulio@troccoli.it"
   github: &github "troccoli"
-  twitter: &twitter "gta_of_london"
+  twitter: &twitter "GiulioOfLondon"
   stackoverflow: &stackoverflow "1366144/giuliot"
   main_image: &main_image "/assets/images/hero.jpg"
   teaser_image: &teaser_image "/assets/images/hero500x300.jpg"
@@ -128,7 +128,7 @@ author:
       # url: "http://troccoli.it"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/gta_of_london"
+      url: "https://twitter.com/GiulioOfLondon"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
@@ -201,7 +201,7 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/gta_of_london"
+      url: "https://twitter.com/GiulioOfLondon"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/troccoli"
@@ -352,7 +352,7 @@ resume:
 
   #Profile information
   name: "Giulio Troccoli-Allard"
-  tagline: Senior Backend Developer
+  tagline: Senior PHP Backend Developer
   pic: "profile-picture.jpg"  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
   summary: "I have been working as a developer for more than 20 years. I started as a C developer and did that for more than 10 years.
   I then realised my future as a C developer was limited to legacy code. So I decided to move into Web Development and got a CoHE in
@@ -379,7 +379,7 @@ and to work to support team morale and help team members to achieve their goals.
   website: "https://troccoli.it"
   linkedin: "giulio-troccoli"
   github: "troccoli"
-  twitter: "gta_of_london"
+  twitter: "GiulioOfLondon"
   stackoverflow: "1366144/giuliot"
   #Update all the sections by editing the files inside _data folder.
 
