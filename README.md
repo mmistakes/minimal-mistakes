@@ -42,7 +42,7 @@ docker run --rm \
 --volume="$PWD:/srv/jekyll" \
 -p 4000:4000 \
 -it jekyll/jekyll:4.0 \
-jekyll serve
+jekyll serve --watch --force_polling --drafts --unpublished --incremental
 ```
 
 Your site will then be available at [http://0.0.0.0:4000](http://0.0.0.0:4000).

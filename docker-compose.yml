@@ -11,7 +11,7 @@ services:
       - 4000:4000
     networks:
       - troccoli-github-io
-    command: jekyll serve
+    command: jekyll serve --watch --force_polling --drafts --unpublished --incremental
 
   ngrok:
     container_name: ngrok
