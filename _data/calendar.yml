@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Treffen der Vorbereitungsgruppe 50 Jahre Brandwerder",
-    "title": "Treffen der Vorbereitungsgruppe 50 Jahre Brandwerder",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=bTAyZGY2YjZpOGUwYzJnNHBuYWl0OXJkMmcgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2020-10-27T18:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2020-10-27T20:00:00+01:00"
-    },
-    "created": "2020-10-10T07:25:58.000Z",
-    "updated": "2020-10-21T10:33:59.432Z"
-  },
-  {
-    "image_path": null,
     "alt": "1. Schulkonferenz",
     "title": "1. Schulkonferenz",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2020-03-11T12:13:58.000Z",
     "updated": "2020-03-11T12:13:58.103Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Osterferien ",
+    "title": "Osterferien ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NWtkcjVjYmtzanNmbGhvNTM0cThsdjRhdWsgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2021-03-29",
+      "date_time": null
+    },
+    "end": {
+      "date": "2021-04-10",
+      "date_time": null
+    },
+    "created": "2020-03-11T12:14:48.000Z",
+    "updated": "2020-03-11T12:14:48.695Z"
   }
 ]
