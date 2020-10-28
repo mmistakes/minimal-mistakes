@@ -89,6 +89,8 @@ analytics:
   google:
     tracking_id          : "UA-180213067-1"
     anonymize_ip         : true
+    
+google_tag_manager: GTM-N8QDKJ8    
 
 
 # Site Author
@@ -235,6 +237,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-archives
+  - jekyll-google-tag-manager
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -244,6 +247,7 @@ whitelist:
   - jekyll-feed
   - jekyll-include-cache  
   - jekyll-archives
+  - jekyll-google-tag-manager
 
 
 # Archives
