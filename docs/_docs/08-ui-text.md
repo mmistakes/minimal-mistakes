@@ -27,6 +27,7 @@ The English[^yaml-anchors] main keys in [`_data/ui-text.yml`](https://github.com
 - Malayalam
 - Myanmar (Burmese)
 - Nepali (Nepalese)
+- Norwegian (Norsk)
 - Polish
 - Persian (فارسی)
 - Romanian
