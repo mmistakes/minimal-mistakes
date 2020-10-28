@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2020-10-28T14:45:02-04:00
+last_modified_at: 2020-10-28T14:50:08-04:00
 toc: false
 ---
 
@@ -15,6 +15,10 @@ toc: false
 
 - Collapse white-space in `figure` helper to fix issues when used in Markdown ordered and unordered lists. [#2697](https://github.com/mmistakes/minimal-mistakes/pull/2697)
 - Fix dead link to CI services in documentation. [#2635](https://github.com/mmistakes/minimal-mistakes/issues/2635) [#2692](https://github.com/mmistakes/minimal-mistakes/pull/2692)
+
+## Enhancements
+
+- Update allejo/jekyll-toc to v1.0.14 [#2700](https://github.com/mmistakes/minimal-mistakes/pull/2700)
 
 ## [4.20.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.20.2)
 
