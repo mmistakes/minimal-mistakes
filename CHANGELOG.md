@@ -7,6 +7,7 @@
 
 ## Enhancements
 
+- Add Norwegian (Norsk) localized UI text strings. [#2702](https://github.com/mmistakes/minimal-mistakes/pull/2702)
 - Update allejo/jekyll-toc to v1.0.14 [#2700](https://github.com/mmistakes/minimal-mistakes/pull/2700)
 
 ## [4.20.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.20.2)
