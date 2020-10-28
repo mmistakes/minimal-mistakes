@@ -3,7 +3,7 @@ title: "Type Lambdas in Scala 3"
 date: 2020-10-06
 header:
   image: "/images/blog cover.jpg"
-tags: [scala, type system]
+tags: [scala, scala 3, type system]
 excerpt: "Exploring a quick but powerful structure in Scala 3 - type lambdas. This will help you think higher-level." 
 ---
 
