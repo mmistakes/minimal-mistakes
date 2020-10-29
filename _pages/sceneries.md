@@ -37,30 +37,30 @@ gallery1:
     title: "Aerpuerto Los Pozos, San Gil, Santander, Colombia"   
 gallery2:
   - url: /assets/images/SKNQ/SKNQ 00.png
-    image_path: /assets/images/SKNQ/SQNQ 00.png
+    image_path: /assets/images/SKNQ/SKNQ 00.png
     alt: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
     title: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
   - url: /assets/images/SKNQ/SKNQ 01.png
-    image_path: /assets/images/SKNQ/SQNQ 01.png
+    image_path: /assets/images/SKNQ/SKNQ 01.png
     alt: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
     title: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
   - url: /assets/images/SKNQ/SKNQ 02.png
-    image_path: /assets/images/SKNQ/SQNQ 02.png
+    image_path: /assets/images/SKNQ/SKNQ 02.png
     alt: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
     title: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
   - url: /assets/images/SKNQ/SKNQ 03.png
-    image_path: /assets/images/SKNQ/SQNQ 03.png
+    image_path: /assets/images/SKNQ/SKNQ 03.png
     alt: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
     title: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
   - url: /assets/images/SKNQ/SKNQ 04.png
-    image_path: /assets/images/SKNQ/SQNQ 04.png
+    image_path: /assets/images/SKNQ/SKNQ 04.png
     alt: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
     title: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
   - url: /assets/images/SKNQ/SKNQ 05.png
-    image_path: /assets/images/SKNQ/SQNQ 05.png
+    image_path: /assets/images/SKNQ/SKNQ 05.png
     alt: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
     title: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
-  - url: /assets/images/SQNQ/SKNQ 06.png
+  - url: /assets/images/SKNQ/SKNQ 06.png
     image_path: /assets/images/SKNQ/SKNQ .png
     alt: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
     title: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
