@@ -1,27 +1,10 @@
 [
   {
     "image_path": null,
-    "alt": "1. Schulkonferenz",
-    "title": "1. Schulkonferenz",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=ZjBscHMzaTRhYzMwZDE4MTJla2xnZDY2bGMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2020-10-29T15:30:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2020-10-29T17:00:00+01:00"
-    },
-    "created": "2020-10-10T07:24:48.000Z",
-    "updated": "2020-10-10T07:24:48.449Z"
-  },
-  {
-    "image_path": null,
     "alt": "Fotograf",
     "title": "Fotograf",
     "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=ZDhmc2ZjOWQxZDd2MGVodGtucTFlM3BpMWsgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "url": "https://www.google.com/calendar/event?eid=YmJsdWJuNnRzbzMzYnZ0bG1rNmFmYzdrYzQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
     "start": {
       "date": "2020-11-05",
       "date_time": null
@@ -30,8 +13,8 @@
       "date": "2020-11-07",
       "date_time": null
     },
-    "created": "2020-10-06T09:36:20.000Z",
-    "updated": "2020-10-26T12:27:58.888Z"
+    "created": "2020-10-29T11:41:14.000Z",
+    "updated": "2020-10-29T11:41:14.920Z"
   },
   {
     "image_path": null,
@@ -100,5 +83,22 @@
     },
     "created": "2020-03-11T12:13:58.000Z",
     "updated": "2020-03-11T12:13:58.103Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Osterferien ",
+    "title": "Osterferien ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=NWtkcjVjYmtzanNmbGhvNTM0cThsdjRhdWsgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2021-03-29",
+      "date_time": null
+    },
+    "end": {
+      "date": "2021-04-10",
+      "date_time": null
+    },
+    "created": "2020-03-11T12:14:48.000Z",
+    "updated": "2020-03-11T12:14:48.695Z"
   }
 ]
