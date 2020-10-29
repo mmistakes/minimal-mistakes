@@ -138,7 +138,7 @@ Please consider supporting me to continue creating more content.
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 
-## Nuquí SQSY
+### Nuquí SKNQ
 
 {% include gallery id="gallery2" caption="Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia" %}
 
