@@ -61,7 +61,7 @@ gallery2:
     alt: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
     title: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
   - url: /assets/images/SKNQ/SKNQ 06.png
-    image_path: /assets/images/SKNQ/SKNQ .png
+    image_path: /assets/images/SKNQ/SKNQ 06.png
     alt: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
     title: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
 gallery3:
