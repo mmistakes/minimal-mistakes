@@ -36,6 +36,34 @@ gallery1:
     alt: "placeholder image 9"
     title: "Aerpuerto Los Pozos, San Gil, Santander, Colombia"   
 gallery2:
+  - url: /assets/images/SQNQ/SQNQ 00.png
+    image_path: /assets/images/SQNQ/SQNQ 00.png
+    alt: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
+    title: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
+  - url: /assets/images/SQNQ/SQNQ 01.png
+    image_path: /assets/images/SQNQ/SQNQ 01.png
+    alt: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
+    title: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
+  - url: /assets/images/SQNQ/SQNQ 02.png
+    image_path: /assets/images/SQNQ/SQNQ 02.png
+    alt: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
+    title: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
+  - url: /assets/images/SQNQ/SQNQ 03.png
+    image_path: /assets/images/SQNQ/SQNQ 03.png
+    alt: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
+    title: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
+  - url: /assets/images/SQNQ/SQNQ 04.png
+    image_path: /assets/images/SQNQ/SQNQ 04.png
+    alt: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
+    title: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
+  - url: /assets/images/SQNQ/SQNQ 05.png
+    image_path: /assets/images/SQNQ/SQNQ 05.png
+    alt: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
+    title: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
+  - url: /assets/images/SQNQ/SQNQ 06.png
+    image_path: /assets/images/SQNQ/SQNQ 06.png
+    alt: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
+gallery3:
   - url: /assets/images/SQSY/SQSY 00.png
     image_path: /assets/images/SQSY/SQSY 00.png
     alt: "Aeropuerto El Espino, Boyacá, Colombia"
@@ -110,9 +138,13 @@ Please consider supporting me to continue creating more content.
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 
+## Nuquí SQSY
+
+{% include gallery id="gallery2" caption="Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia" %}
+
 ### El Espino SQSY
 
-{% include gallery id="gallery2" caption="Aeropuerto El Espino, Boyacá, Colombia" %}
+{% include gallery id="gallery3" caption="Aeropuerto El Espino, Boyacá, Colombia" %}
 
 
 
