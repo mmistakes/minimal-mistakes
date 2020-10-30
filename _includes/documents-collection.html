@@ -1,16 +1,14 @@
 {% assign entries = site[include.collection] %}
 
-{% if include.sort_by == 'title' %}
+{% if include.sort_by %}
   {% if include.sort_order == 'reverse' %}
-    {% assign entries = entries | sort: 'title' | reverse %}
+    {% assign entries = entries | sort: include.sort_by | reverse %}
   {% else %}
-    {% assign entries = entries | sort: 'title' %}
+    {% assign entries = entries | sort: include.sort_by %}
   {% endif %}
-{% elsif include.sort_by == 'date' %}
+{% else %}
   {% if include.sort_order == 'reverse' %}
-    {% assign entries = entries | sort: 'date' | reverse %}
-  {% else %}
-    {% assign entries = entries | sort: 'date' %}
+    {% assign entries = entries | reverse %}
   {% endif %}
 {% endif %}
 
