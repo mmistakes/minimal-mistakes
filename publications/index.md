@@ -3,6 +3,8 @@
 ## Preprints
 
 
+- Desender, K., Vermeylen, L., & Verguts, T. (2020). Dynamic influences on static measures of metacognition. BioRxiv. [https://doi.org/10.1101/2020.10.29.360453](https://doi.org/10.1101/2020.10.29.360453)
+
 - Shahnazian, D., Senoussi, M., Krebs, R. M., Verguts, T., & Holroyd, C. B. (2020). Neural representations of task context and temporal order during action sequence execution. BioRxiv. [https://doi.org/10.1101/2020.09.10.290965](https://doi.org/10.1101/2020.09.10.290965)
  
 - Holroyd, C. B., & Verguts, T. (2020). The best laid plans: Computational principles of ACC. PsyArXiv. [https://doi.org/10.31234/osf.io/3df8y](https://doi.org/10.31234/osf.io/3df8y)
