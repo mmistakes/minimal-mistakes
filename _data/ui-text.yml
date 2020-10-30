@@ -972,7 +972,7 @@ vi: &DEFAULT_VI
   breadcrumb_separator       : "/"
   menu_label                 : "Menu"
   search_label               : "Tìm kiếm"
-  toc_label                  : "Tại trang này"
+  toc_label                  : "Mục lục"
   ext_link_label             : "Đường dẫn trực tiếp"
   less_than                  : "chỉ cần"
   minute_read                : "phút để đọc"
@@ -1005,7 +1005,7 @@ vi: &DEFAULT_VI
   loading_label              : "Đang tải..."
   search_label_text          : "Nhập từ khóa cần tìm..."
   search_placeholder_text    : "Nhập từ khóa cần tìm..."
-  search_algolia_no_results  :
+  search_algolia_no_results  : "Không tìm thấy kết quả nào"
   results_found              : "Kết quả tìm được"
   back_to_top                : "Lên đầu trang"
 vi-VN:
