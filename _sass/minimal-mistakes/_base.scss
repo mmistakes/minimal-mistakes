@@ -213,7 +213,8 @@ figure {
   -webkit-box-align: start;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin: 2em 0;
+  /*commented the below*/
+  // margin: 2em 0;
 
   img,
   iframe,
@@ -266,6 +267,8 @@ figcaption {
   color: $muted-text-color;
   font-family: $caption-font-family;
   font-size: $type-size-6;
+  /*added the below*/
+  text-align: center;
 
   a {
     -webkit-transition: $global-transition;
