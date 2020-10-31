@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : "My thoughts about interesting topics and TIL"
 name                     : "Michael Mustapha"
 description              : "My thoughts about interesting topics and TIL"
-url                      : "mustaphamichael.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://mustaphamichael.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "mustaphamichael/mustaphamichael.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -33,19 +33,6 @@ comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
     shortname            : "mustaphamichael"
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-  utterances:
-    theme                : # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
-  staticman:
-    branch               : # "master"
-    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
 reCaptcha:
   siteKey                :
   secret                 :
