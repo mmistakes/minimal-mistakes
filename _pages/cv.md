@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-My [CV in PDF format](/files/Minqian_Liu_CV.pdf) is available here.
+My CV in PDF format is available [here](/files/Minqian_Liu_CV.pdf).
 
 <!-- Education
 ======
