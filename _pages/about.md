@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi, I am a last-year undergraduate student from the [School of Computer Science and Engineering](http://www2.scut.edu.cn/cs_en/), [South China University of Technology (SCUT)](https://www.scut.edu.cn/en/). Currently, I am working closely with Prof. [Shengfeng He](http://www.shengfenghe.com/). Previously, I was a research assistant at SCUT Machine Intelligence Lab (SMIL), working closely with Prof. [Mingkui Tan](https://tanmingkui.github.io/) and Prof. Qing Du. I also worked with Prof. [Pengtao Xie](https://sites.google.com/site/pengtaoxie2008/) at [UC San Diego](https://ucsd.edu/) and [Xiaojun Quan](https://sites.google.com/site/xiaojunquan/homepage) at Sun Yat-sen University. I was also a visiting student at [Department of EECS](https://eecs.berkeley.edu/), [UC Berkeley](https://www.berkeley.edu/).
+Hi, I am a last-year undergraduate student from the [School of Computer Science and Engineering](http://www2.scut.edu.cn/cs_en/), [South China University of Technology (SCUT)](https://www.scut.edu.cn/en/). Currently, I am working closely with Prof. [Shengfeng He](http://www.shengfenghe.com/). Previously, I was a research assistant at SCUT Machine Intelligence Lab (SMIL), working closely with Prof. [Mingkui Tan](https://tanmingkui.github.io/) and Prof. Qing Du. I also worked with Prof. [Pengtao Xie](https://sites.google.com/site/pengtaoxie2008/) at [UC San Diego](https://ucsd.edu/) and [Xiaojun Quan](https://sites.google.com/site/xiaojunquan/homepage) at [Sun Yat-sen University](http://www.sysu.edu.cn/en/index.htm). I was also a visiting student at [Department of EECS](https://eecs.berkeley.edu/), [UC Berkeley](https://www.berkeley.edu/).
 
 Here is my [Curriculum Vitae in PDF format](../files/Minqian_Liu_CV.pdf).
 
