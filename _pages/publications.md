@@ -7,11 +7,13 @@ author_profile: true
 
 (* indicates equal contribution)
 
-* Dynamic Extension Nets for Few-shot Semantic Segmentation<br>  
-  Lizhao Liu\*, Junyi Cao\*, **Minqian Liu\***, Yong Guo*, Qi Chen*,  Mingkui Tan<br>  
+## Peer reviewed
+
+* Dynamic Extension Nets for Few-shot Semantic Segmentation 
+  Lizhao Liu\*, Junyi Cao\*, **Minqian Liu\***, Yong Guo*, Qi Chen*,  Mingkui Tan
   In *Proceedings of **ACM Multimedia 2020***  
 
-# Manuscripts
+## Under review
 
 * Progressive Slot Tracking for Dialogue State Tracking<br>
   Jiahao Wang, **Minqian Liu**, Xiaojun Quan<br>
