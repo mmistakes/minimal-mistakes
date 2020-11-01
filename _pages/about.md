@@ -19,6 +19,7 @@ My research interests include **few-shot learning**, deep learning for **natural
 
 ## News
 \[2020.10] Awarded Saliai Technology Innovation Scholarship (Top 10% in Computer Science Department)
+
 \[2020.7] One paper accepted by **ACM Multimedia, 2020**. Great thanks to all my co-authors!
 
 
