@@ -912,9 +912,9 @@ nl-NL:
 # ----------
 id: &DEFAULT_ID
   skip_links                 :
-  skip_primary_nav           :
-  skip_content               :
-  skip_footer                :
+  skip_primary_nav           : "Loncat ke navigasi"
+  skip_content               : "Loncat ke konten"
+  skip_footer                : "Loncat ke footer"
   page                       : "Halaman"
   pagination_previous        : "Kembali"
   pagination_next            : "Maju"
