@@ -9,8 +9,8 @@ author_profile: true
 
 ## Peer reviewed
 
-* Dynamic Extension Nets for Few-shot Semantic Segmentation 
-  Lizhao Liu\*, Junyi Cao\*, **Minqian Liu\***, Yong Guo*, Qi Chen*,  Mingkui Tan
+* Dynamic Extension Nets for Few-shot Semantic Segmentation<br> 
+  Lizhao Liu\*, Junyi Cao\*, **Minqian Liu\***, Yong Guo*, Qi Chen*,  Mingkui Tan<br>
   In *Proceedings of **ACM Multimedia 2020***  
 
 ## Under review
