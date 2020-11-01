@@ -12,7 +12,7 @@ Hi, I am a last-year undergraduate student from the [School of Computer Science 
 
 Here is my [Curriculum Vitae](../files/Minqian_Liu_CV.pdf).
 
-**I am actively seeking for a Ph.D. position in NLP, computer vision, deep learning, and related areas starting from Fall 2021. Feel free to drop me a line if interested!**
+**I am actively seeking for a Ph.D. position in NLP, computer vision, deep learning, and related areas starting from Fall 2021. Please feel free to drop me a line if interested!**
 
 ## Research Interests
 My research interests include **few-shot learning**, deep learning for **natural language processing** (e.g., dialogue system) and **computer vision**, as well as machine learning for healthcare. I am also interested in robustness of deep learning and reinforcement learning.
