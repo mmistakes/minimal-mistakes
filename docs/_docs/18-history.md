@@ -18,7 +18,7 @@ toc: false
 - Fix dead link to CI services in documentation. [#2635](https://github.com/mmistakes/minimal-mistakes/issues/2635) [#2692](https://github.com/mmistakes/minimal-mistakes/pull/2692)
 - Fix a small type in documentation. [#2718](https://github.com/mmistakes/minimal-mistakes/pull/2718)
 
-## Enhancements
+### Enhancements
 
 - Update jQuery to 3.5.1. [#2713](https://github.com/mmistakes/minimal-mistakes/pull/2713)
 - Add Indonesian localized UI text strings. [#2725](https://github.com/mmistakes/minimal-mistakes/pull/2725)
