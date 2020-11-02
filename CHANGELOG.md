@@ -9,6 +9,7 @@
 
 ## Enhancements
 
+- Update jQuery to 3.5.1. [#2713](https://github.com/mmistakes/minimal-mistakes/pull/2713)
 - Add Indonesian localized UI text strings. [#2725](https://github.com/mmistakes/minimal-mistakes/pull/2725)
 - Update Vietnamese localized UI text strings. [#2722](https://github.com/mmistakes/minimal-mistakes/pull/2722)
 - Add Norwegian (Norsk) localized UI text strings. [#2702](https://github.com/mmistakes/minimal-mistakes/pull/2702)
