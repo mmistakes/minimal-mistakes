@@ -5,9 +5,15 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2020-11-02T11:34:40-05:00
+last_modified_at:2020-11-02T11:53:43-05:00
 toc: false
 ---
+
+## Unreleased
+
+### Bug Fixes
+
+- Fix Font Awesome icon color in `contrast`, `dark`, `mint`, `neon`, `plum`, and `sunrise` skins. [#2724](https://github.com/mmistakes/minimal-mistakes/issues/2724)
 
 ## [4.21.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.21.0)
 

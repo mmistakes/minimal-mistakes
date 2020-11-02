@@ -1,3 +1,9 @@
+## Unreleased
+
+### Bug Fixes
+
+- Fix Font Awesome icon color in `contrast`, `dark`, `mint`, `neon`, `plum`, and `sunrise` skins. [#2724](https://github.com/mmistakes/minimal-mistakes/issues/2724)
+
 ## [4.21.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.21.0)
 
 ### Bug Fixes
