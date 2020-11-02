@@ -9,6 +9,7 @@
 
 ## Enhancements
 
+- Add Indonesian localized UI text strings. [#2725](https://github.com/mmistakes/minimal-mistakes/pull/2725)
 - Update Vietnamese localized UI text strings. [#2722](https://github.com/mmistakes/minimal-mistakes/pull/2722)
 - Add Norwegian (Norsk) localized UI text strings. [#2702](https://github.com/mmistakes/minimal-mistakes/pull/2702)
 - Update allejo/jekyll-toc to v1.0.14 [#2700](https://github.com/mmistakes/minimal-mistakes/pull/2700)

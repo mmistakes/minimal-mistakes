@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2020-11-02T11:22:02-05:00
+last_modified_at: 2020-11-02T11:24:24-05:00
 toc: false
 ---
 
@@ -20,6 +20,7 @@ toc: false
 
 ## Enhancements
 
+- Add Indonesian localized UI text strings. [#2725](https://github.com/mmistakes/minimal-mistakes/pull/2725)
 - Update Vietnamese localized UI text strings. [#2722](https://github.com/mmistakes/minimal-mistakes/pull/2722)
 - Add Norwegian (Norsk) localized UI text strings. [#2702](https://github.com/mmistakes/minimal-mistakes/pull/2702)
 - Update allejo/jekyll-toc to v1.0.14 [#2700](https://github.com/mmistakes/minimal-mistakes/pull/2700)
