@@ -142,11 +142,11 @@ Please consider supporting me to continue creating more content.
 ### Nuquí SKNQ
 
 {% include gallery id="gallery2" caption="Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia" %}
-
+[Descargar/Download](https://vpilotdesigns.github.io/assets/vpilotdesigns-airport-sknq.zip)
 ### El Espino SQSY
 
 {% include gallery id="gallery3" caption="Aeropuerto El Espino, Boyacá, Colombia" %}
-
+[Descargar/Download](https://vpilotdesigns.github.io/assets/vpilotdesigns-sqsy.zip)
 
 
 
