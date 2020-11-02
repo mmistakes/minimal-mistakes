@@ -150,5 +150,5 @@ Please consider supporting me to continue creating more content.
 {% include gallery id="gallery3" caption="Aeropuerto El Espino, Boyacá, Colombia" %}
 [Descargar/Download](https://vpilotdesigns.github.io/assets/vpilotdesigns-sqsy.zip)
 
-
+<script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="vpilot" data-description="Apoyame comprandome un Café!" data-message="Gracias por descargar. Ahora puedes invitarme a un Café!" data-color="#79D6B5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
