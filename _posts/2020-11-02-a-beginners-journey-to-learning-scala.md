@@ -1,7 +1,7 @@
 ---
 title: "A Beginner's Journey To Learning Scala"
 header: 
-  image: /images/scala-img.png
+  og_image: /images/scala-img.png
 tags: [getting started, learning, scala]
 excerpt: "Have you ever wanted to learn a new programming language? Here is a note on my learning path and the reasons why I chose Scala."
 ---
