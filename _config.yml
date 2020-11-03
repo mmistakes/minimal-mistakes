@@ -18,9 +18,9 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 title                    : "Michael Mustapha"
 title_separator          : "-"
-subtitle                 : "My thoughts about interesting topics and TIL"
+subtitle                 : "My thoughts about interesting topics and Things I Learn (TIL)"
 name                     : "Michael Mustapha"
-description              : "My thoughts about interesting topics and TIL"
+description              : "My thoughts about interesting topics and Things I Learn (TIL)"
 url                      : "https://mustaphamichael.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "mustaphamichael/mustaphamichael.github.io"
@@ -28,7 +28,7 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 logo                     : # should be my customized-logo"/images/logo.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 150
+words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:

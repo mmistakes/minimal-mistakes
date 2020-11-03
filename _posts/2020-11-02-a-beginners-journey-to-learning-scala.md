@@ -1,5 +1,7 @@
 ---
 title: "A Beginner's Journey To Learning Scala"
+header: 
+  image: /images/scala-img.png
 tags: [getting started, learning, scala]
 excerpt: "Have you ever wanted to learn a new programming language? Here is a note on my learning path and the reasons why I chose Scala."
 ---
@@ -21,7 +23,7 @@ I was introduced to the Scala language in 2018 at the Lagos Scala meetup held in
 During the COVID-19 pandemic lockdown, I read the book [The Pragmatic Programmer](https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X) by Andrew Hunt and David Thomas and decided to work on learning at least one new programming language every year - a tip I got from one of its chapters. I had a follow-up discussion with my tech mentors and did extensive research on new programming paradigms. Scala came into the picture again, and it has been a mix of fun and bumps since then.
 
 ### WHY SCALA?
-By experience and research, I discovered that three(3) factors play a major role in making decisions relating to programming by most developers - Technological advantage, Developer Community, and Reward.
+By experience and research, I discovered that three(3) factors play a major role in making decisions relating to programming by most developers - Technological advantage, Developers community, and Reward.
 
 In regards to ***technology***, Scala boasts of amazing features - some of which includes clean and concise code, type-safety, multiple paradigms (object-oriented programming and functional
 programming), Java interoperability, and a huge relevance in distributed and concurrent programming.
@@ -61,7 +63,7 @@ This is a very elaborate and carefully curated course that comes highly recommen
 1. [Lightbend](https://www.lightbend.com)
 2. [Rock The JVM](https://rockthejvm.com/)
 3. [Scala Official Website](https://www.scala-lang.org/)
-4. [Scala Exercises](https://scala-exercises.org/): This provides a set of exercises on Scala and different libraries. It is an open source project that is maintained by [47 Degrees](http://www.47deg.com/)
+4. [Scala Exercises](https://scala-exercises.org/): This provides a set of exercises on Scala and different libraries. It is an open source project that is maintained by [47 Degrees](http://www.47deg.com/).
 
 
 ### OTHER AVENUES OF LEARNING
