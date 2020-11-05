@@ -73,14 +73,14 @@ case class Person(name: String)
 
 Now, in some other part of the code, we can define a method that looks like this:
 
-```scala 3
+```scala3
 @infix
 def (person: Person).likes(movie: String): String = s"${person.name} likes $movie"
 ```
 
 which would then enable us to write, as before,
 
-```scala 3
+```scala3
 val mary = Person("Mary")
 val marysFavMovie3 = mary likes "Forrest Gump"
 ```
@@ -89,7 +89,7 @@ Now that's some funky syntax. The construct above is a method called `likes` whi
 
 That funky method definition is an _extension method_. The syntax is shorthand for the longer-form
 
-```scala 3
+```scala3
 extension (person: Person)
   def likes(movie: String): String = s"${person.name} likes $movie"
 ```
