@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Fotograf",
-    "title": "Fotograf",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=YmJsdWJuNnRzbzMzYnZ0bG1rNmFmYzdrYzQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2020-11-05",
-      "date_time": null
-    },
-    "end": {
-      "date": "2020-11-07",
-      "date_time": null
-    },
-    "created": "2020-10-29T11:41:14.000Z",
-    "updated": "2020-10-29T11:41:14.920Z"
-  },
-  {
-    "image_path": null,
     "alt": "Studientag: Schule und Hort geschlossen",
     "title": "Studientag: Schule und Hort geschlossen",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2020-03-11T12:14:48.000Z",
     "updated": "2020-03-11T12:14:48.695Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Vergleichsarbeit Mathematik Jgst. 3",
+    "title": "Vergleichsarbeit Mathematik Jgst. 3",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MmhucDB0aGRrMms3YnNxNm1tdHRkdWx0aTIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2021-04-29",
+      "date_time": null
+    },
+    "end": {
+      "date": "2021-04-30",
+      "date_time": null
+    },
+    "created": "2020-01-20T10:22:37.000Z",
+    "updated": "2020-01-20T10:22:37.363Z"
   }
 ]
