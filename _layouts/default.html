@@ -8,7 +8,16 @@
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
-<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+{% capture locale %}
+  {% if page.lang %}
+    {{ page.lang }}
+  {% elsif site.lang %}
+    {{ site.lang }}
+  {% else %}
+    {{ site.locale | slice: 0,2 }}
+{% endcapture %}
+
+<html lang="{{ locale | default: "en" }}" class="no-js">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
