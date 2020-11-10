@@ -74,13 +74,18 @@
 .sidebar__right {
   margin-bottom: 1em;
 
+  // by daniel
+  width: 100% !important;
+  margin-bottom: 20px;
+  padding: 0;
+
   @include breakpoint($large) {
-    position: absolute;
+    // daniel modified: position: absolute;
     top: 0;
     right: 0;
-    width: $right-sidebar-width-narrow;
-    margin-right: -1 * $right-sidebar-width-narrow;
-    padding-left: 1em;
+    // daniel modified: width: $right-sidebar-width-narrow;
+    // daniel modified: margin-right: -1 * $right-sidebar-width-narrow;
+    // daniel modified: padding-left: 1em;
     z-index: 10;
 
     &.sticky {
