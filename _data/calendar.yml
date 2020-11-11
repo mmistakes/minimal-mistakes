@@ -35,6 +35,40 @@
   },
   {
     "image_path": null,
+    "alt": "2. Gesamtkonferenz",
+    "title": "2. Gesamtkonferenz",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=Xzc1MzNjZ3E2NnAyazZiOW04OTIzaWI5azcwcmowYmEyNjExamNiYTM3MTJrNGNwbTZsMTNpY3BsNnMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2020-12-01T16:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2020-12-01T18:00:00+01:00"
+    },
+    "created": "2020-11-11T20:05:08.000Z",
+    "updated": "2020-11-11T20:05:08.648Z"
+  },
+  {
+    "image_path": null,
+    "alt": "2. Schulkonferenz ",
+    "title": "2. Schulkonferenz ",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=XzYwcjRhZGk0NnNzMzRiOWc2OHJqNGI5azg0cDMyYmEyNnNyM2ViOWc4bDMzYWNhMzhwMmppZzlpOGMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2020-12-17T15:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2020-12-17T17:00:00+01:00"
+    },
+    "created": "2020-11-11T20:06:25.000Z",
+    "updated": "2020-11-11T20:06:25.372Z"
+  },
+  {
+    "image_path": null,
     "alt": "Weihnachtsferien",
     "title": "Weihnachtsferien",
     "excerpt": null,
@@ -66,39 +100,5 @@
     },
     "created": "2020-03-11T12:13:58.000Z",
     "updated": "2020-03-11T12:13:58.103Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Osterferien ",
-    "title": "Osterferien ",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NWtkcjVjYmtzanNmbGhvNTM0cThsdjRhdWsgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2021-03-29",
-      "date_time": null
-    },
-    "end": {
-      "date": "2021-04-10",
-      "date_time": null
-    },
-    "created": "2020-03-11T12:14:48.000Z",
-    "updated": "2020-03-11T12:14:48.695Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Vergleichsarbeit Mathematik Jgst. 3",
-    "title": "Vergleichsarbeit Mathematik Jgst. 3",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MmhucDB0aGRrMms3YnNxNm1tdHRkdWx0aTIgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2021-04-29",
-      "date_time": null
-    },
-    "end": {
-      "date": "2021-04-30",
-      "date_time": null
-    },
-    "created": "2020-01-20T10:22:37.000Z",
-    "updated": "2020-01-20T10:22:37.363Z"
   }
 ]
