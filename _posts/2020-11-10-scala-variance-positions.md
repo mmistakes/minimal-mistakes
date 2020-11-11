@@ -253,10 +253,10 @@ This is one of the hardest parts of the Scala type system, even though it starts
 This article was pretty dense, and we learned quite a bit:
 
 - the variance question: if A extends B, should `Thing[A]` be a subtype of `Thing[B]`?
-- variance possibilities: covariant (yes), invariant (no), contravariant (hell no, backwards)
+- variance possibilities as answers to the variance question: covariant (yes), invariant (no), contravariant (hell no, backwards)
 - types `val` fields are in covariant position
 - types of `var` fields are in covariant AND contravariant position
 - types of method arguments are in contravariant position
 - method return types are in covariant position 
 - we solve the "covariant type occurs in contravariant position" by "widening": we add a type argument `[S >: T]` and change the argument type to S
-- we solve the "contravariant type occurs in contravariant position" by "narrowing": we add a type argument `[S <: T]` and change the method return type to S
+- we solve the "contravariant type occurs in covariant position" by "narrowing": we add a type argument `[S <: T]` and change the method return type to S
