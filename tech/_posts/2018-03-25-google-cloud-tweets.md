@@ -22,7 +22,7 @@ GC has mapped their tools to the AWS corresponding ones into this very handy [pa
 
 ### The SDK
 
-As said, I'm going to use Python so I've downloaded their [SDK](https://googlecloudplatform.github.io/google-cloud-python/latest/), which at a first sight seems quite better, or at least better documented, than the AWS one ([boto](http://boto3.readthedocs.io/en/latest/index.html)). Boto is quite confusing in my opinion, if you want to achieve even a simple task (say connecting to a bucket to put/download files there) there can be different ways of doing it, and the docs do not help much if you're not very seasoned at using it. Might be a coincidence, but a [blog post](https://martinapugliese.github.io/_posts/2016-07-31-interacting-with-a-dynamodb-via-boto3/) I have here about using boto for talking to a DynamoDB is by far the one which received the highest number of hits, and keeps counting.
+As said, I'm going to use Python so I've downloaded their [SDK](https://googlecloudplatform.github.io/google-cloud-python/latest/), which at a first sight seems quite better, or at least better documented, than the AWS one ([boto](http://boto3.readthedocs.io/en/latest/index.html)). Boto is quite confusing in my opinion, if you want to achieve even a simple task (say connecting to a bucket to put/download files there) there can be different ways of doing it, and the docs do not help much if you're not very seasoned at using it. Might be a coincidence, but a [blog post](https://martinapugliese.github.io/tech/interacting-with-a-dynamodb-via-boto3/){:target="_blank"} I have here about using boto for talking to a DynamoDB is by far the one which received the highest number of hits, and keeps counting.
 
 ## Goal and settings
 
