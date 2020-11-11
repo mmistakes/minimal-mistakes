@@ -248,7 +248,7 @@ val rescuedDog: Dog = vet.rescueAnimal[Dog] // type checking passes now
 
 ## 5. Conclusion
 
-This is one of the hardest parts of the Scala type system, even though it starts from such an innocent question (should lists of dogs be lists of animals). 
+This is one of the hardest parts of the Scala type system, even though it starts from such an innocent question (should lists of dogs be lists of animals). If you're curious, the [advanced Scala course](https://rockthejvm.com/p/advanced-scala) contains what you've just learned (and lots more on Scala's type system) with some practice exercises. 
 
 This article was pretty dense, and we learned quite a bit:
 
@@ -260,3 +260,7 @@ This article was pretty dense, and we learned quite a bit:
 - method return types are in covariant position 
 - we solve the "covariant type occurs in contravariant position" by "widening": we add a type argument `[S >: T]` and change the argument type to S
 - we solve the "contravariant type occurs in covariant position" by "narrowing": we add a type argument `[S <: T]` and change the method return type to S
+
+## 6. Watch on YouTube
+
+{% include video id="aUmj7jnXet4" provider="youtube" %}
