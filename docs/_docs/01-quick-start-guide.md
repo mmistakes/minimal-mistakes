@@ -64,6 +64,7 @@ To install as a remote theme:
    source "https://rubygems.org"
 
    gem "github-pages", group: :jekyll_plugins
+   gem "jekyll-include-cache", group: :jekyll_plugins
    ```
 
 2. Add `jekyll-include-cache` to the `plugins` array of your `_config.yml`.
