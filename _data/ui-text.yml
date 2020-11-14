@@ -953,10 +953,10 @@ id: &DEFAULT_ID
   comment_success_msg        : "Terimakasih atas komentar Anda! Komentar akan tampil setelah disetujui."
   comment_error_msg          : "Maaf, ada kesalahan pada komentar Anda. Pastikan seluruh kolom sudah dilengkapi dan coba kembali."
   loading_label              : "Sedang memuat..."
-  search_label_text          : "Masukkan kata kunci percarian..."
-  search_placeholder_text    : "Masukkan kata kunci percarian..."
+  search_label_text          : "Masukkan kata kunci pencarian..."
+  search_placeholder_text    : "Masukkan kata kunci pencarian..."
   search_algolia_no_results  : "Tidak ada hasil"
-  results_found              : "Hasil percarian ditemukan"
+  results_found              : "Hasil pencarian ditemukan"
   back_to_top                : "Kembali ke awal"
 id-ID:
   <<: *DEFAULT_ID
