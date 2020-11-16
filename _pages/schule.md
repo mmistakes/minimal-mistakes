@@ -175,21 +175,23 @@ nachsehen.<br/><br/>
 
 ## Sozialberatung Casablanca
 
-{% include author-profile.html author='Franziska Hanisch' %}{: .align-right}
+{% include author-profile.html author='Franziska Hanisch' %}{: .align-left}
+{% include author-profile.html author='Alina Friese' %}{: .align-left}
+<div style="clear:both;"></div>
 
-An unserer Schule wird eine Sozialberatung von Frau Hanisch angeboten. Dieses
+An unserer Schule wird eine Sozialberatung von Frau Hanisch und Frau Friese angeboten. Dieses
 Angebot kann von allen im Schulwesen beteiligten Personen wahrgenommen werden,
-d.h. Frau Hanisch ist als unabhängige, externe Person für alle Schüler\*innen,
+d.h. Frau Hanisch und Frau Friese sind als unabhängige, externe Person für alle Schüler\*innen,
 Eltern, Lehrer\*innen und Erzieher\*innen da, um zu vermitteln, zu schlichten
 und zu helfen.
 
-Sie bietet an...
-* Ein offenes Beratungsangebot
-* Vermittlung in Konfliktsituationen
-* Beratung in Krisensituationen
-* Erziehungsberatung
-* Unterstützung bei Verdacht auf Kindeswohlgefährdung
-* Vermittlung weiterer Hilfen (Gesundheit, Ämter, Freizeit etc.)
+Sie bieten an:
+* Beratung zu schulischen Themen und Erziehungsfragen
+* Projekte und Freizeitangebote
+* Konfliktschlichtung
+* Unterstützung bei der Suche nach Hilfen, Angeboten o.Ä.
+
+Wir unterliegen der Schweigepflicht und behandeln alle Gespräche vertraulich!
 
 Sprechzeiten und Kontaktdaten finden Sie [hier](/kontakt/#sozialberatung).
 
