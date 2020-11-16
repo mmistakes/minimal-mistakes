@@ -18,7 +18,7 @@
     </div>
   {% else %}
     <div class="author__avatar">
-        <i class="fa fa-user-circle" aria-hidden="true" style="font-size: 110px"></i>
+      <img src="{{ 'assets/images/author-default.svg'| relative_url }}" class="author__avatar" alt="{{ author.name }}" itemprop="image">
     </div>
   {% endif %}
 
