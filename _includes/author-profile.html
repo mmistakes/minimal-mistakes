@@ -16,6 +16,10 @@
         <img src="{{ author.avatar | relative_url }}" class="author__avatar" alt="{{ author.name }}" itemprop="image">
       {% endif %}
     </div>
+  {% else %}
+    <div class="author__avatar">
+        <i class="fa fa-user-circle" aria-hidden="true" style="font-size: 110px"></i>
+    </div>
   {% endif %}
 
   <div class="author__content">
