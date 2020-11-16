@@ -36,7 +36,7 @@ Sie können uns in der Regel Montag bis Freitag von 7.30 Uhr bis 15 Uhr in der I
 {% include author-profile.html author='Alina Friese' %}{: .align-left}
 <div style="clear:both;"></div>
 
-Sprechzeiten und Kontaktdaten finden Sie [hier](/kontakt/#sozialberatung).
+Sprechzeiten und Kontaktdaten finden Sie [hier](/kontakt/#schulsozialarbeit).
 
 Wir wünschen Ihnen als Familie, dass Sie gut durch diese besonders herausfordernde Corona-Zeit kommen. Scheuen Sie sich
 bitte nicht, unsere Angebote in Anspruch zu nehmen.

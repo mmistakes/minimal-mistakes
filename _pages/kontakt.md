@@ -84,8 +84,8 @@ einfach eine E-Mail. So können wir uns Zeit für Ihr Anliegen nehmen.
 | Herr Villa | {% include email email='c.villa@brandwerder.de' %} |
 | Herr Wieting | {% include email email='m.wieting@brandwerder.de' %} |
 
-## Sozialberatung
-{: #sozialberatung}
+## Schulsozialarbeit
+{: #schulsozialarbeit}
 
 ### Alina Friese
 
@@ -108,7 +108,7 @@ einfach eine E-Mail. So können wir uns Zeit für Ihr Anliegen nehmen.
 * Web: [<i class="fa fa-external-link">&nbsp;</i>Casablanca in Spandau](https://www.g-casablanca.de/taetigkeitsfelder/jugendhilfe-und-schule/sozial-und-elternberatung-an-schulen)
 * Sprechzeiten: Di 9:30 - 11:30 Uhr
 
-[<i class="fa fa-download">&nbsp;&nbsp;</i>Flyer zur Sozialberatung von Casablanca](/assets/files/Sozialberatung_Casablanca_Flyer.pdf){: .btn .btn--success}
+[<i class="fa fa-download">&nbsp;&nbsp;</i>Flyer zur Schulsozialarbeit von Casablanca](/assets/files/Sozialberatung_Casablanca_Flyer.pdf){: .btn .btn--success}
 
 ## Ihre Ansprechpartner*innen
 

@@ -173,13 +173,13 @@ nachsehen.<br/><br/>
 [<i class="fa fa-download">&nbsp;&nbsp;</i>Ausführungsvorschriften über Beurlaubung und Befreiung vom Unterricht (pdf)](https://www.berlin.de/sen/bildung/schule/rechtsvorschriften/mdb-sen-bildung-rechtsvorschriften-av_schulpflicht.pdf){: .btn .btn--success}
 {: .notice--info}
 
-## Sozialberatung Casablanca
+## Schulsozialarbeit Casablanca
 
 {% include author-profile.html author='Franziska Hanisch' %}{: .align-left}
 {% include author-profile.html author='Alina Friese' %}{: .align-left}
 <div style="clear:both;"></div>
 
-An unserer Schule wird eine Sozialberatung von Frau Hanisch und Frau Friese angeboten. Dieses
+An unserer Schule wird eine Schulsozialarbeit von Frau Hanisch und Frau Friese angeboten. Dieses
 Angebot kann von allen im Schulwesen beteiligten Personen wahrgenommen werden,
 d.h. Frau Hanisch und Frau Friese sind als unabhängige, externe Person für alle Schüler\*innen,
 Eltern, Lehrer\*innen und Erzieher\*innen da, um zu vermitteln, zu schlichten
@@ -193,7 +193,7 @@ Sie bieten an:
 
 Wir unterliegen der Schweigepflicht und behandeln alle Gespräche vertraulich!
 
-Sprechzeiten und Kontaktdaten finden Sie [hier](/kontakt/#sozialberatung).
+Sprechzeiten und Kontaktdaten finden Sie [hier](/kontakt/#schulsozialarbeit).
 
 ## Hausordnung
 
