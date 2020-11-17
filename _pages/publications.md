@@ -4,9 +4,18 @@ title: Publications
 author_profile: true
 ---
 
-[Google Scholar](https://scholar.google.com/citations?user=gAMVsrkAAAAJ&hl=en) and [CV](https://www.dropbox.com/s/81ufjimbl0szmw3/Resume-Roozbeh-Farhoodi.pdf?dl=0).
+[Google Scholar](https://scholar.google.com/citations?user=gAMVsrkAAAAJ&hl=en)
 
 ## Articles, Posters and Talks (in chronological order)
+
+### 2020
+4 - Roozbeh Farhoodi*, Eva L. Dyer, Julian Yarkony, Shaofei Wang, and Konrad P. Kording. "Reconstructing the morphology of neurons from sparse noisy observations."
+
+3 - The Dendrograms of Neuron Morphologies exhibit Asymmetrical Motifs, Neuromatch Conference 3.0, October 2020 [YouTube](https://www.youtube.com/watch?v=St2xHSZx0fA).
+
+2 - Akbarzadeh, Saeed, Roozbeh Farhoodi, Tianchan Lyu, Muhammad Awais, Xian Zhao, Saadullah Farooq Abbasi, and Wei Chen. "Evaluation of Apgar Scores and Non-Nutritive Sucking Skills in Infants Using a Novel Sensitized Non-Nutritive Sucking System." In 2020 42nd Annual International Conference of the IEEE Engineering in Medicine & Biology Society (EMBC), pp. 4282-4285. IEEE, 2020.
+
+1 - Khashayar Filom* , Konrad Kording and Roozbeh Farhoodi, "PDE constraints on smooth hierarchical functions computed by neural networks." [arXiv:2005.08859](https://arxiv.org/pdf/2005.08859.pdf).
 
 ### 2019
 4 - Samantha Ing-Esteves* , Roozbeh Farhoodi, and Julie L. Lefebvre, "Representing neural reconstructions as cyclic graphs allows investigation of contact-dependent models of dendrite self-avoidance", Canadian Association for Neuroscience (CAN), Toronto, Canada.
