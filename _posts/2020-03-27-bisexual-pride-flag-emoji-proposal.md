@@ -27,3 +27,6 @@ So, what’s next? To move forward, I think it’s best to recruit some more peo
 ## Update: March 30, 2020
 ![Skype pride emojis](/assets/images/skype_emojis.png)
 Someone shared with me that there is a bisexual flag emoji in Skype. This is great for bi visibility and supports our iniative. When companies begin implementing emojis on their own when Unicode fails to do so, it adds pressure for Unicode to act. Shoutout to Skype for leading with us and their inclusion of several pride flag emojis.
+
+## Update: November 16, 2020
+Thanks to everyone who has reached out for the support so far. Today, we launched the a [petition](https://change.org/BiFlagEmoji) to gather signatures to show the support the emoji has and increase awareness of the issue. So far we have over 200 signatures. I encourage all of our supporters and allies to sign and share the petition. More to come.
