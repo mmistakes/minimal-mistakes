@@ -36,13 +36,13 @@ In Scala 2, this suite of capabilities is available under the same `implicit` ke
 
 Implicit conversions now need to be made explicit. This solves a big burden.
 
-Prior to Scala 3, implicit conversions were required to add extension methods and to implement the type class pattern. Now, with Scala 3, the extension method concept is standalone, and so we can implement many of the patterns that required implicits without relying on conversions. As such, it's quite likely that the need for conversions will drop significantly. At the same time, conversions are dangerous on their own, and because they used to be so sneaky, they're double-dangerous. With Scala 3, conversions need to be declared in a specific way.
+Prior to Scala 3, implicit conversions were required for extension methods and for the type class pattern. Now, with Scala 3, the extension method concept is standalone, and so we can implement many of the patterns that required implicits without relying on conversions. As such, it's quite likely that the need for conversions will drop significantly. At the same time, conversions are dangerous on their own, and because they used to be so sneaky, they're double-dangerous. With Scala 3, conversions need to be declared in a specific way.
 
 Prior to Scala 3, implicit conversions were incredibly easy to write compared to their power (and danger).  Assuming a class
                                                                                                            
 ```scala3
 case class Person(name: String) {
- def greet: String = s"Hey, I'm $name. Scala rocks!"
+  def greet: String = s"Hey, I'm $name. Scala rocks!"
 }
 ```
 
@@ -101,7 +101,7 @@ Secondly, givens solve a syntax ambiguity when invoking methods which have `usin
 def getMap(implicit size: Int): Map[String, Int] = ...
 ```
 
-then we could not write `createMap("Alice")` even if we had an implicit in scope, because the argument will override the implicit value the compiler would have inserted, and so we'll get a type error from the compiler.
+then we could not write `getMap("Alice")` even if we had an implicit in scope, because the argument will override the implicit value the compiler would have inserted, and so we'll get a type error from the compiler.
 
 Givens solve that. If we had a method
 
@@ -123,7 +123,7 @@ Implicits are notorious in Scala 2 for being extremely hard to pin down. That me
 
 Givens attempt at solving the problem in multiple ways.
 
-First, given instances need to be [explicitly imported](/scala-3-given-using/#importing-givens), so you can better track down which imported parts are actually given instances.
+Firstly, given instances need to be [explicitly imported](/scala-3-given-using/#importing-givens), so you can better track down which imported parts are actually given instances.
 
 Secondly, givens are only used for automatic injection of arguments via a `using` clause. In this way, you can look at imported given instances for this particular issue, i.e. finding _method arguments that you aren't passing explicitly_. For the other implicit magic, the other mechanisms (clearly defined implicit conversions and extension methods) have similar track-down capabilities.
 
