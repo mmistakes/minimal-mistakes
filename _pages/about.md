@@ -15,7 +15,7 @@ Here is my [Curriculum Vitae in PDF format](../files/Minqian_Liu_CV.pdf).
 **I am actively seeking for a Ph.D. position starting from Fall 2021. Please feel free to drop me a line if interested!**
 
 ## Research Interests
-My research interests include **model generalization** (e.g., few-shot learning, transfer learning, etc), deep learning for **natural language processing** and **computer vision**, machine learning for healthcare, and deep generative models.
+My research interests include **model generalization** (e.g., few-shot learning, transfer learning, etc), deep learning for **natural language processing** and **data mining**, as well as **machine learning** and its applications.
 
 ## News
 **\[2020.10]** Awarded Saliai Technology Innovation Scholarship (Top 10% in Computer Science Department)<br>
