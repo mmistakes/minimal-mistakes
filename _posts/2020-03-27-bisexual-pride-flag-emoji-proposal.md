@@ -5,6 +5,7 @@ header:
   image: /assets/images/bisexual_flag.png
   image_description: "The bisexual pride flag"
 ---
+**Update: Sign the petition [here!](https://change.org/BiFlagEmoji)**
 
 On February 3, I submitted the first proposal for the Bisexual Pride Flag Emoji. During this time, I was also consulting with friends and the pioneers behind the [transgender flag emoji](https://www.tedeytan.com/transemoji). Based upon the feedback I received, I resubmitted an updated proposal on February 5. On February 11, I noticed the proposal listed on the Unicode Requests page. [Here]({{site.url}}/assets/documents/Proposal_For_Bisexual_Flag_Emoji.pdf) is the latest version of the proposal.
 
@@ -29,4 +30,7 @@ So, what’s next? To move forward, I think it’s best to recruit some more peo
 Someone shared with me that there is a bisexual flag emoji in Skype. This is great for bi visibility and supports our iniative. When companies begin implementing emojis on their own when Unicode fails to do so, it adds pressure for Unicode to act. Shoutout to Skype for leading with us and their inclusion of several pride flag emojis.
 
 ## Update: November 16, 2020
-Thanks to everyone who has reached out for the support so far. Today, we launched the a [petition](https://change.org/BiFlagEmoji) to gather signatures to show the support the emoji has and increase awareness of the issue. So far we have over 200 signatures. I encourage all of our supporters and allies to sign and share the petition. This is just the beginning. More to come.
+Thanks to everyone who has reached out for the support so far. Today, we launched the a [petition](https://change.org/BiFlagEmoji) to gather signatures to show the support the emoji has and increase awareness of the issue. So far we have over 200 supporters. I encourage all of our supporters and allies to sign and share the petition. This is just the beginning. More to come.
+
+## Update November 23, 2020
+A week later, we've surpassed 8,500 supporters on the petition! We were also featured on [LGBTQ Nation](https://www.lgbtqnation.com/2020/11/bisexual-activist-asked-bi-flag-emoji-group-governs-emojis-said-no/) and [queer.de](https://www.queer.de/detail.php?article_id=35793). Thanks again to everyone for the support and sharing the petition.
