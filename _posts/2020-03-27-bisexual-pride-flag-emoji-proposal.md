@@ -5,7 +5,7 @@ header:
   image: /assets/images/bisexual_flag.png
   image_description: "The bisexual pride flag"
 ---
-**Update: Sign the petition [here!](https://change.org/BiFlagEmoji)**
+**Update: Sign the petition [here](https://change.org/BiFlagEmoji)!**
 
 On February 3, I submitted the first proposal for the Bisexual Pride Flag Emoji. During this time, I was also consulting with friends and the pioneers behind the [transgender flag emoji](https://www.tedeytan.com/transemoji). Based upon the feedback I received, I resubmitted an updated proposal on February 5. On February 11, I noticed the proposal listed on the Unicode Requests page. [Here]({{site.url}}/assets/documents/Proposal_For_Bisexual_Flag_Emoji.pdf) is the latest version of the proposal.
 
