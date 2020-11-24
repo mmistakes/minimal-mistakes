@@ -284,3 +284,4 @@ defaults:
       related: true
 
 include: ["_pages"]
+permalink: /about/
