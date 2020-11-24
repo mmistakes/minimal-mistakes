@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "Riley Juenemann"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/Riley_Juenemann_headshot.jpg"# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an **amazing** person."
   location         : "Tulane University"
   email            :
