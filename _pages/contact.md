@@ -14,7 +14,7 @@ permalink: /contact.html
 Contact the application developer directly for questions or issues with the Shiny apps.
 
 <div class="contactform">
-<form id="contactform" method="POST">
+<form id="contactform"  action="https://formspree.io/f/mleowjlk" method="POST">
   <label for="fname">Name</label>
   <input type="text" name="name" placeholder="Your name">
   <label for="fname">Email Address</label>  
@@ -27,7 +27,3 @@ Contact the application developer directly for questions or issues with the Shin
   <input type="text" name="_gotcha" style="display:none" />
 </form>
 </div>
-<script>
-    var contactform =  document.getElementById('contactform');
-    contactform.setAttribute('action', '//formspree.io/' + 'barefootecologist' + '@' + 'gmail' + '.' + 'com');
-</script>
