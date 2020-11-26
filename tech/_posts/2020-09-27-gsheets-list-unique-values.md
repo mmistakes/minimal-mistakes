@@ -3,7 +3,6 @@ title: Counting the unique values in Sheets rows with comma-separated items
 tags:
   - spreadsheets
   - google sheets
-  -
 categories: tech
 excerpt: In a Google Sheet, count the number of times a term appears in rows where one column has a comma-separated list
 ---
