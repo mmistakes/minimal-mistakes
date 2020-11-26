@@ -6,7 +6,7 @@ comments: false
 tags: [Azure, RBAC, custom role, Virtual Machine, IaaS, NICOLTIP]
 ---
 
-This walktrough  demonstrates how to create a custom role in azure to allow a specific user|group to Start/Stop a Virtual Machine on Azure.
+This walktrough  demonstrates how to create a custom role in azure to allow a specific user or group to Start/Stop a Virtual Machine on Azure.
 
 For more information:
 
