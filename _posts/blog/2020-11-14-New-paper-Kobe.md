@@ -1,7 +1,20 @@
 
-Congrats to Kobe for getting accepted in Cognition!
+---
+layout: post
+title: Confidence paper in Cognition
+categories: blog
+excerpt: Dynamic expressions of confidence
+tags: [kobe, tom, new-paper]
+image:
+  feature:
+link:
+date: 2020-11-14
+modified:
+share: true
+author: tom_verguts
+---
 
-In this study, we investigate the empirical consequences of a probabilistic perspective on confidence, in an evidence accumulation framework.
+Congrats to Kobe for their paper in Cognition. They investigate the empirical consequences of a probabilistic perspective on confidence, in an evidence accumulation framework.
 
 
 Reference:
