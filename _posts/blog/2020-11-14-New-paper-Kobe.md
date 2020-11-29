@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Confidence paper in Cognition
