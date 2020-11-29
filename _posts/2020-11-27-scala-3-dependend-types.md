@@ -1,5 +1,5 @@
 ---
-title: "Scala 3: Dependent Types"
+title: "Scala 3: Path-Dependent Types, Dependent Methods and Functions"
 date: 2020-11-27
 header:
   image: "/images/blog cover.jpg"
@@ -128,9 +128,11 @@ In this way, path-dependent types provide a powerful way of designing very gener
 
 This was example one.
 
-Example 2: libraries operating on similar principles. For example, quite a few pieces of the Scala standard collection library used to operate in this way. [Akka Streams](https://doc.akka.io/docs/akka/current/stream/index.html) uses path-dependent types to automatically determine the appropriate stream type when you plug components together: for example, you might see things like `Flow[Int, Int, NotUsed]#Repr` in the type inferrer.
+Example 2: libraries operating on similar principles. For example, quite a few pieces of the Scala standard library work in this way (or at least used this technique at least once). [Akka Streams](https://doc.akka.io/docs/akka/current/stream/index.html) uses path-dependent types to automatically determine the appropriate stream type when you plug components together: for example, you might see things like `Flow[Int, Int, NotUsed]#Repr` in the type inferrer.
 
-Example 3: [type lambdas](/scala-3-type-lambdas/) used to rely exclusively on path-dependent types, and they looked pretty hideous (e.g. `{ type T[A] = List[A] }#T` ). Thank heavens we now have a proper syntactic construct in Scala 3 for this.
+Example 3: [type lambdas](/scala-3-type-lambdas/) used to rely exclusively on path-dependent types in Scala 2, and they looked pretty hideous (e.g. `{ type T[A] = List[A] }#T` ) because it was essentially the only way to do it. Thank heavens we now have a proper syntactic construct in Scala 3 for type lambdas.
+
+Example 4: you might even go bananas and write a full-blown [type-level sorter](/type-level-programming-part-1/) by abusing abstract types and instance-dependent types along with implicits (or givens in Scala 3).
 
 ## 4. Methods with Dependent Types
 
@@ -172,7 +174,5 @@ Let's recap:
   - we discussed dependent methods and dependent _functions_, the latter of which is exclusive to Scala 3
   
 Hope it helps!
-
-
 
  
