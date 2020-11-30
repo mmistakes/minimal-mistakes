@@ -1,8 +1,8 @@
 ---
 layout: post
-title: tACS declarative memory paper
+title: tACS declarative memory
 categories: blog
-excerpt: tACS declarative memory paper
+excerpt: Prediction error paper in PLoS:One
 tags: [kate, tom, new-paper]
 image:
   feature:
