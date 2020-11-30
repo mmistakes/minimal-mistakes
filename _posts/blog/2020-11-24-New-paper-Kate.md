@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Declarative memory tACS paper
+title: tACS declarative memory paper
 categories: blog
-excerpt: 
+excerpt: Dynamic expressions of confidence
 tags: [kate, tom, new-paper]
 image:
   feature:
@@ -12,7 +12,6 @@ modified:
 share: true
 author: tom_verguts
 ---
-
 
 Congrats to Kate for their paper in PLoS:One. They investigate the effect of theta-frequency transcranial Alternating Current Stimulation during declarative learning (Swahili-Dutch word pairs). They predicted an interaction between stimulation and prediction error, but this was not observed. The basic reward prediction error effect in declarative memory, however, was robustly observed.
 
