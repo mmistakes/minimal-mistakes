@@ -13,6 +13,7 @@ share: true
 author: tom_verguts
 ---
 
+
 Congrats to Kate for their paper in PLoS:One. They investigate the effect of theta-frequency transcranial Alternating Current Stimulation during declarative learning (Swahili-Dutch word pairs). They predicted an interaction between stimulation and prediction error, but this was not observed. The basic reward prediction error effect in declarative memory, however, was robustly observed.
 
 
