@@ -2,7 +2,7 @@
 layout: post
 title: tACS declarative memory paper
 categories: blog
-excerpt: Dynamic expressions of confidence
+excerpt: tACS declarative memory paper
 tags: [kate, tom, new-paper]
 image:
   feature:
