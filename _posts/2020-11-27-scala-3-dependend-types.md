@@ -87,52 +87,13 @@ outerA.processGeneral(innerB) // ok
 
 ## 3. Motivation for Path-Dependent Types
 
-Here are a few examples why path-dependent types are useful.
+Here are a few examples where path-dependent types are useful.
 
-A realistic scenario: you have a database, and you want to define a generic way of accessing it such that getting a row returns the appropriate type. For example, you may define a trait which describes a row, where the key/unique identifier can be of a particular type. Let's say we are keying the database by either Strings or Ints, and when we query by a String key, we return a particular kind of record, and when we query by an Int key, we return another kind of record. 
+Example 1: a number of libraries use path-dependent types for type-checking and type inference. [Akka Streams](https://doc.akka.io/docs/akka/current/stream/index.html), for example, uses path-dependent types to automatically determine the appropriate stream type when you plug components together: for example, you might see things like `Flow[Int, Int, NotUsed]#Repr` in the type inferrer.
 
-However, your data access API should not rely on things being this straightforward. You want to detach the types of records from the types of their keys. This might sound too abstract, so let's have some code:
+Example 2: [type lambdas](/scala-3-type-lambdas/) used to rely exclusively on path-dependent types in Scala 2, and they looked pretty hideous (e.g. `{ type T[A] = List[A] }#T` ) because it was essentially the only way to do it. Thank heavens we now have a proper syntactic construct in Scala 3 for type lambdas.
 
-```scala3
-trait AbstractRow {
-    type Key
-}
-
-trait Row[K] extends AbstractRow {
-    type Key = K
-}
-```
-
-Now, how do we create a method that, given a key (of type `K`) passed as argument, we can return the kind of `AbstractRow` appropriate to that key, _without making any assumptions about which kind of row has which kind of key_? Here's an option:
-
-```scala3
-def getByKey[R <: AbstractRow](key: R#Key): R = ???
-```
-
-In other words, we know what kind of record `R` we expect, and the method only accepts the `Key` appropriate to that row type, without making any assumptions about what that `Key` must be. For example, if we created the row types
-
-```scala3
-trait NumericRow extends Row[Int]
-trait AlphanumericRow extends Row[String]
-```
-
-then we can only return a `NumericRow` if we pass an `Int` to the method, and an `AlphaNumericRow` if we pass a `String` to the method:
-
-```scala3
-getByKey[NumericRow](3) // ok
-getByKey[AlphanumericRow]("alice") // ok
-getByKey[AlphanumericRow](44) // not ok, type mismatch
-```
-
-In this way, path-dependent types provide a powerful way of designing very generic APIs where we make no assumptions about which types have which type members, and still keep correct type-checking.
-
-This was example one.
-
-Example 2: libraries operating on similar principles. For example, quite a few pieces of the Scala standard library work in this way (or at least used this technique at least once). [Akka Streams](https://doc.akka.io/docs/akka/current/stream/index.html) uses path-dependent types to automatically determine the appropriate stream type when you plug components together: for example, you might see things like `Flow[Int, Int, NotUsed]#Repr` in the type inferrer.
-
-Example 3: [type lambdas](/scala-3-type-lambdas/) used to rely exclusively on path-dependent types in Scala 2, and they looked pretty hideous (e.g. `{ type T[A] = List[A] }#T` ) because it was essentially the only way to do it. Thank heavens we now have a proper syntactic construct in Scala 3 for type lambdas.
-
-Example 4: you might even go bananas and write a full-blown [type-level sorter](/type-level-programming-part-1/) by abusing abstract types and instance-dependent types along with implicits (or givens in Scala 3).
+Example 3: you might even go bananas and write a full-blown [type-level sorter](/type-level-programming-part-1/) by abusing abstract types and instance-dependent types along with implicits (or givens in Scala 3).
 
 ## 4. Methods with Dependent Types
 
