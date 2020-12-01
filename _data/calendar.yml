@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "2. Gesamtkonferenz",
-    "title": "2. Gesamtkonferenz",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=Xzc1MzNjZ3E2NnAyazZiOW04OTIzaWI5azcwcmowYmEyNjExamNiYTM3MTJrNGNwbTZsMTNpY3BsNnMgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2020-12-01T16:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2020-12-01T18:00:00+01:00"
-    },
-    "created": "2020-11-11T20:05:08.000Z",
-    "updated": "2020-11-11T20:05:08.648Z"
-  },
-  {
-    "image_path": null,
     "alt": "2. Schulkonferenz ",
     "title": "2. Schulkonferenz ",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2020-01-20T10:22:37.000Z",
     "updated": "2020-01-20T10:22:37.363Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Vergleichsarbeit Deutsch Teil 1 Jgst. 3",
+    "title": "Vergleichsarbeit Deutsch Teil 1 Jgst. 3",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=M25janVsczE5ZnFjZzhxc2wzcTR0ZmdxZmUgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2021-05-04",
+      "date_time": null
+    },
+    "end": {
+      "date": "2021-05-05",
+      "date_time": null
+    },
+    "created": "2020-01-20T10:23:19.000Z",
+    "updated": "2020-01-20T10:23:20.002Z"
   }
 ]
