@@ -97,7 +97,15 @@ Example 3: you might even go bananas and write a full-blown [type-level sorter](
 
 ## 4. Methods with Dependent Types
 
-Now, with this background in place, we can now explore methods that rely on the type of the argument to return the appropriate nested type. For example, the following method would compile just fine:
+Now, with this background in place, we can now explore methods that rely on the type of the argument to return the appropriate nested type. For example, if you had a data structure
+
+```scala3
+class AbstractRow {
+    type Key
+}
+```
+
+the following method would compile just fine:
 
 ```scala3
 def getIdentifier(row: AbstractRow): row.Key = ???
