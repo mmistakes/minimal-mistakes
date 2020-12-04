@@ -20,7 +20,7 @@ I was introduced to the Scala language in 2018 at the Lagos Scala meetup held in
   <figcaption>Photo from The Pragmatic Programmer by Andrew Hunt and David Thomas</figcaption>
 </figure>
 
-During the COVID-19 pandemic lockdown, I read the book [The Pragmatic Programmer](https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X) by Andrew Hunt and David Thomas and decided to work on learning at least one new programming language every year - a tip I got from one of its chapters. I had a follow-up discussion with my tech mentors and did extensive research on new programming paradigms. Scala came into the picture again, and it has been a mix of fun and bumps since then.
+During the COVID-19 pandemic lockdown, I read the book [The Pragmatic Programmer](https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/) by Andrew Hunt and David Thomas and decided to work on learning at least one new programming language every year - a tip I got from one of its chapters. I had a follow-up discussion with my tech mentors and did extensive research on new programming paradigms. Scala came into the picture again, and it has been a mix of fun and bumps since then.
 
 ### WHY SCALA?
 By experience and research, I discovered that three(3) factors play a major role in making decisions relating to programming by most developers - Technological advantage, Developers community, and Reward.
@@ -37,7 +37,7 @@ Lastly, a good reason to embark on career paths is the ***reward***. According t
 ### HERE IS A LIST OF RESOURCES USED SO FAR
 ##### Books
 1. [`A Beginner’s Guide to Scala, Object Orientation and Functional Programming by John Hunt`](https://link.springer.com/book/10.1007/978-3-319-06776-6)
-2. [`Functional Programming in Scala, MEAP Edition by Paul Chiusano and Runar Bjarnason`](https://www.manning.com/books/functional-programming-in-scala) (currently reading this)
+2. [`Functional Programming in Scala, MEAP Edition by Paul Chiusano and Runar Bjarnason`](https://www.manning.com/books/functional-programming-in-scala)
 3. [`Programming in Scala (Third Edition) by Martin Ordesky, Lex Spoon and Bill Venners`](https://booksites.artima.com/programming_in_scala_3ed)
 4. [`Scala Cookbook by Alvin Alexander`](https://www.oreilly.com/library/view/scala-cookbook/9781449340292/)
 5. [`Scala for the Impatient by Cay S. Horstmann`](https://www.oreilly.com/library/view/scala-for-the/9780132761772/)
