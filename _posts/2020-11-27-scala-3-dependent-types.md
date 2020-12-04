@@ -85,7 +85,7 @@ outerA.processGeneral(innerA) // ok
 outerA.processGeneral(innerB) // ok
 ```
 
-The types of the style `instance.MyType` and `Outer#Inner` are called _path-dependent types_, because they depend on either an instance or an outer type (a "path"). The term is quite confusing &mdash; (as some feedback to this article and the [video](https://www.youtube.com/watch?v=63syJfNoDPI) has pointed out &mdash; and I'll use the term _type projection_ to differentiate the `Outer#Inner` types from the rest.
+The types of the style `instance.MyType` and `Outer#Inner` are called _path-dependent types_, because they depend on either an instance or an outer type (a "path"). The term is quite confusing &mdash; as some feedback to this article and the [video](https://www.youtube.com/watch?v=63syJfNoDPI) has pointed out &mdash; and I'll use the term _type projection_ to differentiate the `Outer#Inner` types from the rest.
  
 ## 3. Motivation for Path-Dependent Types and Type Projections
 
