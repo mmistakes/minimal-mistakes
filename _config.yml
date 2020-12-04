@@ -93,15 +93,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  name             : "Tim Sadler"
+  avatar           : "/assets/img/tim_klein.jpg"
+  bio              : "I love data, problem solving and beautiful simplicity."
+  location         : "Hamburg, Germany"
+  email            : "tim.sadler@uni-hamburg.de"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:tim.sadler@uni-hamburg.de"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
