@@ -271,7 +271,7 @@ defaults:
   # _posts
   - scope:
       path: ""
-      type: posts
+      type: pages
     values:
       layout: single
       author_profile: true
@@ -279,3 +279,4 @@ defaults:
       comments: # true
       share: true
       related: true
+      classes: wide
