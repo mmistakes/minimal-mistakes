@@ -1,5 +1,5 @@
 ---
-title: "2020 Retrospective"
+title: "2020 Retrospective (and What's Coming in 2021)"
 date: 2020-12-07
 header:
   image: "/images/blog cover.jpg"
@@ -31,7 +31,7 @@ I remember it took me a few days to get my first Twitter follower. After followi
 
 ## 3. YouTube
 
-By far the most compelling impact has been on [YouTube](https://youtube.com/rockthejvm). 3500 subscribers so far!
+By far the most compelling impact has been on [YouTube](https://youtube.com/rockthejvm). 3468 subscribers so far!
 
 Besides turning every single article into a video, I also recorded some specials. The [Scala at Light Speed](https://www.youtube.com/watch?v=-8V6bMjThNo&list=PLmtsMNDRU0BxryRX4wiwrTZ661xcp6VPM&ab_channel=RocktheJVM) mini-course was very well received and was watched around 4000 times fully, with another 1000 enrollments on the [main site](https://rockthejvm.com/p/scala-at-light-speed) (tip: you can download it there!). For a starting channel, I'm pretty happy.
 
