@@ -13,7 +13,7 @@ sidebar:
 <iframe src="https://drive.google.com/file/d/1MW4RiK-uiItKe-AOg-LTH-CBPCsDDIpw/preview" width="640" height="480"></iframe>
 
 
-## План штабу національно-патріотичного виховання на 2019-2020 н.р.
+## План штабу національно-патріотичного виховання 
 <iframe src="https://drive.google.com/file/d/1APYuY1cZJYuT6quA31kGb489ujqt97lI/preview" width="640" height="480"></iframe>
 
 
