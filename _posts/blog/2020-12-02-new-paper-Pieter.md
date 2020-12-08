@@ -1,6 +1,6 @@
 ---
 layout: post
-title: EEG paper in Journal of NeuroScience
+title: EEG paper in Journal of Neuroscience
 categories: blog
 excerpt: Synchronization in rule learning
 tags: [pieter, tom, new-paper]
