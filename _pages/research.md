@@ -1,4 +1,4 @@
 ---
 permalink: /research/
 ---
-Research page
+Research page in progress
