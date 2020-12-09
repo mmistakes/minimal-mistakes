@@ -1,4 +1,4 @@
 ---
 permalink: /links/
 ---
-Featured Links page
+Featured Links page in progress
