@@ -1,0 +1,4 @@
+---
+permalink: /research/
+---
+Research page
