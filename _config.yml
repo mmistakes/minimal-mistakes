@@ -222,6 +222,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-twitter-plugin
 
 # mimic GitHub Pages with --safe
 whitelist:
