@@ -18,6 +18,23 @@
   },
   {
     "image_path": null,
+    "alt": "Letzter Schultag vor den Weihnachtsferien",
+    "title": "Letzter Schultag vor den Weihnachtsferien",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=cTdjOGZmdnVkdHNiaWwzOHRxbnV1aWkybDQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2020-12-18",
+      "date_time": null
+    },
+    "end": {
+      "date": "2020-12-19",
+      "date_time": null
+    },
+    "created": "2020-12-10T05:29:56.000Z",
+    "updated": "2020-12-10T05:30:23.311Z"
+  },
+  {
+    "image_path": null,
     "alt": "Weihnachtsferien",
     "title": "Weihnachtsferien",
     "excerpt": null,
@@ -83,22 +100,5 @@
     },
     "created": "2020-01-20T10:22:37.000Z",
     "updated": "2020-01-20T10:22:37.363Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Vergleichsarbeit Deutsch Teil 1 Jgst. 3",
-    "title": "Vergleichsarbeit Deutsch Teil 1 Jgst. 3",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M25janVsczE5ZnFjZzhxc2wzcTR0ZmdxZmUgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2021-05-04",
-      "date_time": null
-    },
-    "end": {
-      "date": "2021-05-05",
-      "date_time": null
-    },
-    "created": "2020-01-20T10:23:19.000Z",
-    "updated": "2020-01-20T10:23:20.002Z"
   }
 ]
