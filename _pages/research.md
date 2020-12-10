@@ -2,6 +2,8 @@
 permalink: /research/
 ---
 
+[**Google Scholar Profile**](https://scholar.google.com/citations?user=-d1aa-sAAAAJ&hl=en)
+
 **A first-pass statistical dashboard for categorizing diverse particle movement patterns**  
 **Collaborators:** [Prof. Scott A McKinley](https://randommath.net/), [Prof. Christine K Payne](http://payne.pratt.duke.edu/)  
 
