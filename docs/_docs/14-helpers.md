@@ -249,7 +249,7 @@ To embed the following Bilibili video at url `https://www.bilibili.com/video/BV1
 {% raw %}{% include video id="BV1E7411e7hC" provider="bilibili" %}{% endraw %}
 ```
 
-If you want to enable danmaku (弹幕) for the embedded video, which is disabled by default, you can supply an additional parameter `danmaku="1"` as shown below: 
+If you want to enable danmaku (弹幕) for the embedded video, which is disabled by default, you can supply an additional parameter `danmaku="1"` as shown below:
 
 ```liquid
 {% raw %}{% include video id="BV1E7411e7hC" provider="bilibili" danmaku="1" %}{% endraw %}

@@ -9,6 +9,7 @@
 
 - Update Indonesian localized UI text strings. [#2731](https://github.com/mmistakes/minimal-mistakes/pull/2731)
 - Update remote theme documentation. [#2734](https://github.com/mmistakes/minimal-mistakes/pull/2734)
+- Update allejo/jekyll-toc to v1.1.0, skip headings without an ID. [#2752](https://github.com/mmistakes/minimal-mistakes/pull/2752)
 
 ## [4.21.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.21.0)
 
@@ -17,7 +18,7 @@
 - Fix greedy navigation by improving reliability of remaining space for visible links. [#2664](https://github.com/mmistakes/minimal-mistakes/issues/2664)
 - Collapse white-space in `figure` helper to fix issues when used in Markdown ordered and unordered lists. [#2697](https://github.com/mmistakes/minimal-mistakes/pull/2697)
 - Fix dead link to CI services in documentation. [#2635](https://github.com/mmistakes/minimal-mistakes/issues/2635) [#2692](https://github.com/mmistakes/minimal-mistakes/pull/2692)
-- Fix a small type in documentation. [#2718](https://github.com/mmistakes/minimal-mistakes/pull/2718)
+- Fix a small typo in documentation. [#2718](https://github.com/mmistakes/minimal-mistakes/pull/2718)
 
 ### Enhancements
 
