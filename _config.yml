@@ -13,7 +13,7 @@ name                     : &name "Michael Rose"
 description              : &description "A flexible Jekyll theme for your blog or site with a minimalist aesthetic."
 url                      : https://hadisokulu.github.io # the base hostname & protocol for your site e.g. "https://hadisokulu.github.io"
 baseurl                  : "/hadisokulu" # the subpath of your site, e.g. "/blog"
-repository               : "hadisokulu/hadisokulu"
+repository               : "/hadisokulu"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
