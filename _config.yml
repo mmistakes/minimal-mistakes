@@ -9,7 +9,7 @@
 locale                   : "tr-TR"
 title                    : "Hadis Okulu"
 title_separator          : "-"
-name                     : &name "Michael Rose"
+name                     : &name "Hadis Okulu"
 description              : &description "A flexible Jekyll theme for your blog or site with a minimalist aesthetic."
 url                      : https://hadisokulu.github.io # the base hostname & protocol for your site e.g. "https://hadisokulu.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -28,7 +28,7 @@ comments:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
     num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    colorscheme          : # "sunrise" (default), "dark"
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
   branch                 : "gh-pages" # "master", "gh-pages"
@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : *name
-  avatar           : "michael-rose.jpg"
+  avatar           : "kucuklogo.jpg"
   bio              : "Just another boring, tattooed, time traveling, designer."
   location         : "Buffalo, NY"
   email            :
