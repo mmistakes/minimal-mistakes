@@ -34,8 +34,9 @@ Videotreffen kontaktiert. Hierfür benötigen wir eine aktuelle Telefonnummer. �
 (Frau Schäpe) melden. Vielen Dank!
 
 Es ist möglich, dass ab dem 11.01.2021 Unterricht im Alternativszenario (Corona-Stufenplan „rot“) stattfinden muss.
-Hierzu hatte ich Ihnen am 05.11.2020 bereits eine E-Mail-Nachricht geschrieben mit dem Plan, wie der Unterricht dann
-ablaufen wird (Teilungsunterricht mit 3 Std. täglich...) Sollte es dazu kommen, werde ich mich natürlich noch einmal an
+Hierzu hatte ich Ihnen am [05.11.2020]({{'coronavirus/2020/11/05/Alternativszenario-rot/' | relative_url }}) bereits eine E-Mail-Nachricht geschrieben mit dem Plan, wie der Unterricht dann
+ablaufen wird (Teilungsunterricht mit 3 Std. täglich...).
+Sollte es dazu kommen, werde ich mich natürlich noch einmal an
 Sie wenden.
 
 Auch während der Schließzeit sind wir für Sie da! Bitte nehmen Sie bei auftretenden Problemen mit uns Kontakt auf.
