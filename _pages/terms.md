@@ -1,11 +1,17 @@
 ---
 permalink: /terms/
-title: "Terms and Privacy Policy"
-modified: 2016-06-06
+title: Terms and Privacy Policy
+modified: {}
+published: true
 ---
 
 {% include base_path %}
 {% include toc %}
+
+
+{% include base_path %}
+{% include toc %}
+
 
 ## Privacy Policy
 
