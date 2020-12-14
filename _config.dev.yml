@@ -1,13 +1,13 @@
 # Develop override settings
 
-url: http://localhost:4000
+url: https://hadisokulu.github.io
 
 analytics:
   provider: false
 
 comments:
   disqus:
-    shortname            : "mmistakes-dev"
+    shortname            : "hadisokulu"
 
 sass:
   style: expanded
