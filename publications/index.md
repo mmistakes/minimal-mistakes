@@ -26,14 +26,16 @@ in press:
 
 - Verbeke, P., Ergo, K., De Loof, E., & Verguts, T. (in press). Learning to synchronize: Midfrontal theta dynamics during reversal learning. Journal of Neuroscience. [https://doi.org/10.1101/2020.06.01.127175](https://doi.org/10.1101/2020.06.01.127175). 
 
-- Ergo, K., De Loof, E., Debra, G., Pastötter, B., & Verguts, T. (in press). Failure to modulate reward prediction errors in declarative learning with theta (6 Hz) frequency transcranial alternating current stimulation. PLoS: One. [https://doi.org/10.1101/2020.08.05.237529](https://doi.org/10.1101/2020.08.05.237529). 
+- Peng, Z., Xu, C., Ma, N., Yang, Q., Ren, P., Wen, R., … Chen, Q. (in press). White matter alterations of the goal-directed system in obsessive-compulsive disorder patients and their unaffected first-degree relatives. Biological Psychiatry: Cognitive Neuroscience and Neuroimaging.
 
-- Desender, K., Donner, T. H., & Verguts, T. (in press). Dynamic expressions of confidence within an evidence accumulation framework. Cognition. [https://doi.org/10.1101/2020.02.18.953778](https://doi.org/10.1101/2020.02.18.953778)
+- Desender, K., Donner, T. H., & Verguts, T. (in press). Dynamic expressions of confidence within an evidence accumulation framework. Cognition. [https://doi.org/10.1016/j.cognition.2020.104522](https://doi.org/10.1016/j.cognition.2020.104522)
 
-- Rasoulzadeh, V., Sahan, M., van Dijck, J.P., Abrahamse, E., Marzecova, A., Verguts, T., & Fias, W. (in press). Spatial attention in serial order working memory: an EEG study. Cerebral Cortex.
+- Rasoulzadeh, V., Sahan, M., van Dijck, J.P., Abrahamse, E., Marzecova, A., Verguts, T., & Fias, W. (in press). Spatial attention in serial order working memory: an EEG study. Cerebral Cortex. [https://doi.org/10.1093/cercor/bhaa368](https://doi.org/10.1093/cercor/bhaa368)
 
 
 2020:
+
+- Ergo, K., De Loof, E., Debra, G., Pastötter, B., & Verguts, T. (2020). Failure to modulate reward prediction errors in declarative learning with theta (6 Hz) frequency transcranial alternating current stimulation. PLoS: One. [https://doi.org/10.1101/2020.08.05.237529](https://doi.org/10.1101/2020.08.05.237529). 
 
 - Aben, B., Buc Calderon, C., Van den Bussche, E., & Verguts, T. (2020). Cognitive Effort Modulates Connectivity between Dorsal Anterior Cingulate Cortex and Task-Relevant Cortical Areas. The Journal of Neuroscience, 40(19), 3838–3848. [https://doi.org/10.1523/JNEUROSCI.2948-19.2020](https://doi.org/10.1523/JNEUROSCI.2948-19.2020)
 
