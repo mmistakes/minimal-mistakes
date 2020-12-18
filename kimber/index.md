@@ -8,4 +8,4 @@ featured:
 ads: false
 ---
 
-[Cameo by Jewel Staite](JewelStaite-cameo.mp4) (Kaylee from Firefly)
+*   [Cameo by Jewel Staite](JewelStaite-cameo.mp4) (Kaylee from Firefly)
