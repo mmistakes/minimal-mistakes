@@ -17,13 +17,10 @@ Books I've read, ordered chronologically.
 Also, take a look at my top reads from [2020](/reads/top-reads-2020) and [2019](/reads/top-reads-2019).
 
 **Note:**
-<span style="font-size:smaller;">
-* Books I really enjoyed are marked with two plus signs. ++
-<br>
-* Books I didn't finish are marked with two dashes (see <a href="#did-not-finish">note below</a>). --
-<br>
-* <i>Graphic novels & comics are italicized.</i>
-</span>
+
+* <span style="font-size:smaller;">Books I really enjoyed are marked with two plus signs. ++</span>
+* <span style="font-size:smaller;">Books I didn't finish are marked with two dashes (see <a href="#did-not-finish">note below</a>). --</span>
+* <span style="font-size:smaller;"><i>Graphic novels & comics are italicized.</i></span>
 
 ---
 
