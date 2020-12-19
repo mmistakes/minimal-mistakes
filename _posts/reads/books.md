@@ -110,7 +110,7 @@ Also, take a look at my top reads from [2020](/reads/top-reads-2020) and [2019](
 1. [A Darkness at Sethanon](https://bookshop.org/a/5270/9780553263282), by Raymond E. Feist ++
 1. _[One of Those Days](https://bookshop.org/a/5270/9780593231432), by Yehuda Devir & Maya Devir_
 1. [How to Be an Antiracist](https://bookshop.org/a/5270/9780525509288), by Ibram X. Kendi (re-read)
-1. [Atomic Habits](https://bookshop.org/a/5270/9780735211292), by James Clear
+1. [Atomic Habits](https://bookshop.org/a/5270/9780735211292), by James Clear ++
 1. _[Mercy](https://bookshop.org/a/5270/9781534316584), by Mirka Andolfo_
 1. [Indistractable](https://bookshop.org/a/5270/9781953295125), by Nir Eyal
 1. [All Systems Red](https://bookshop.org/a/5270/9780765397539) (Murderbot Diaries #1), by Martha Wells ++
