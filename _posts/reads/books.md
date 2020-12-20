@@ -388,6 +388,32 @@ Also, take a look at my top reads from [2020](/reads/top-reads-2020) and [2019](
 
 # 2015
 
+1. The Road Less Traveled, by M. Scott Peck ++
+1. Buddist Beleifs & Principles, by Chaya Rao
+1. _Fables: Book 1 Deluxe Edition, by Bill Willingham_ ++
+1. The Black Stiletto, by Raymond Bensen
+1. _Star Wars: Princess Leia (Issue #1), by Mark Waid & Tery Dodson_
+1. The Dude and the Zen Master, by Jeff Bridges & Bernie Glassman ++
+1. _Fables: Book 2 Deluxe Edition, by Bill Willingham_ ++
+1. _Fables: Book 3 Deluxe Edition, by Bill Willingham_ ++
+1. _Fables: Book 4 Deluxe Edition, by Bill Willingham_ ++
+1. The Sociopath Next Door, by Martha Stout
+1. Cracking the PM Interview, by Gayle Laakmann McDowell & Jackie Bavaro
+1. The Count of Monte Cristo, by Alexander Dumas
+1. _American Vampire (Book 6), by Scott Snyder, Rafael Albuguerque, & Stephen King_
+1. _Fables: Book 5 Deluxe Edition, by Bill Willingham_ ++
+1. _Fables: Book 6 Deluxe Edition, by Bill Willingham_ ++
+1. _Fables: Book 7 Deluxe Edition, by Bill Willingham_ ++
+1. Getting There: A Book of Mentors, by Gillian Zoe Segal ++
+1. How to Fail at Almost Everything and Still Win Big, by Scott Adams
+1. What the Most Successful People Do at Work, by Larua Vanderkam ++
+1. What the Most Successful People Do Before Breakfast, by Larua Vanderkam ++
+1. What the Most Successful People Do on the Weekend, by Larua Vanderkam ++
+1. Dream Year, by Ben Arment
+1. _Star Wars: Darth Vader (Vol. 1), by Kieren Gillen_
+1. _Star Wars: Skywalker Strikes (Vol. 1), by Jason Aaron_
+1. Deadly Heat
+
 <p align="center">~ ~ ~</p>
 
 ---
