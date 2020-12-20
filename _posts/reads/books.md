@@ -388,7 +388,7 @@ Also, take a look at my top reads from [2020](/reads/top-reads-2020) and [2019](
 
 # 2015
 
-1. The Road Less Traveled, by M. Scott Peck ++
+1. The Road Less Traveled, by M. Scott Peck
 1. Buddist Beleifs & Principles, by Chaya Rao
 1. _Fables: Book 1 Deluxe Edition, by Bill Willingham_ ++
 1. The Black Stiletto, by Raymond Bensen
@@ -413,8 +413,8 @@ Also, take a look at my top reads from [2020](/reads/top-reads-2020) and [2019](
 1. _Star Wars: Darth Vader (Vol. 1), by Kieren Gillen_
 1. _Star Wars: Skywalker Strikes (Vol. 1), by Jason Aaron_
 1. Deadly Heat (Nikki Heat #5), by Richard Castle (psuedonym)
-1. Raging Heat (Nikki Heat #5), by Richard Castle (psuedonym)
-1. Driving Heat (Nikki Heat #5), by Richard Castle (psuedonym)
+1. Raging Heat (Nikki Heat #6), by Richard Castle (psuedonym)
+1. Driving Heat (Nikki Heat #7), by Richard Castle (psuedonym)
 
 <p align="center">~ ~ ~</p>
 
@@ -469,7 +469,7 @@ Also, take a look at my top reads from [2020](/reads/top-reads-2020) and [2019](
 
 # 2013
 
-1. Memories, Dreams, Reflections, by Carl Jung
+1. Memories, Dreams, Reflections, by Carl Jung --
 1. Cloud Atlas, by Liam Callanan
 1. Dangerous Games (Abby & Tess #3), by Michael Prescott ++
 1. The Shadow Hunter (Abby & Tess #1), by Michael Prescott ++
@@ -497,6 +497,40 @@ Also, take a look at my top reads from [2020](/reads/top-reads-2020) and [2019](
 
 # 2012
 
+1. Life of Pi, by Yann Martel
+1. Already Gone, by John Rector
+1. Canticle (The Cleric Quintet #1), by R.A. Salvatore
+1. In Sylvan Shadows (The Cleric Quintet #2), by R.A. Salvatore
+1. Night Masks (The Cleric Quintet #3), by R.A. Salvatore
+1. The Fallen Fortress (The Cleric Quintet #4), by R.A. Salvatore
+1. The Chaos Curse (The Cleric Quintet #5), by R.A. Salvatore
+1. Zero Sight, by B. Justin Shier ++
+1. Zero Sum, by B. Justin Shier ++
+1. Heat Wave (Nikki Heat #1), by Richard Castle (psuedonym) ++
+1. Naked Heat (Nikki Heat #2), by Richard Castle (psuedonym) ++
+1. Heat Rises (Nikki Heat #3), by Richard Castle (psuedonym) ++
+1. The Road Less Traveled, by M. Scott Peck ++
+1. The Cold Dish (Walt Longmire #1), by Craig Johnson
+1. It's So Easy, by Duff McKagan
+1. INXS: Story to Story, by Anthony Bozza
+1. Amazing Gracie: A Dog's Tale, by Dan Dye & Mark Beckloff
+1. Traveling Mercies, by Anne Lamott
+1. Outliers, by Malcolm Gladwell
+1. The Black Echo (Harry Bosch #1), by Michael Connelly ++
+1. The Black Ice (Harry Bosch #2), by Michael Connelly ++
+1. The Concrete Blond (Harry Bosch #3), by Michael Connelly ++
+1. Frozen Heat (Nikki Heat #4), by Richard Castle (psuedonym) ++
+
+<p align="center">~ ~ ~</p>
+
+---
+
+# 2011
+
+1. The Girl with the Dragon Tattoo, by Stieg Larsson ++
+1. The Girl Who Played with Fire, by Stieg Larsson ++
+1. The Girl Who Kicked the Hornet's Nest, by Stieg Larsson ++
+
 <p align="center">~ ~ ~</p>
 
 ---
@@ -505,7 +539,7 @@ Also, take a look at my top reads from [2020](/reads/top-reads-2020) and [2019](
 
 Books I didn't finish are marked with two dashes. --
 
-Why didn't I finish this book? I like to read one book at a time and years ago it took me
+Why didn't I finish the book? I like to read one book at a time and years ago it took me
 months to slug my way through [a book](https://www.goodreads.com/review/show/1938583995?book_show_action=false&from_review_page=1)
 that everyone kept telling me "keep reading, it gets better, you'll love it." Nope, didn't
 love it...or even like it. Lesson learned. If I don't enjoy a book within the first 30-50
