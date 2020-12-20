@@ -234,6 +234,49 @@ Also, take a look at my top reads from [2020](/reads/top-reads-2020) and [2019](
 
 ---
 
+# 2018
+
+<p align="center">~ ~ ~</p>
+
+---
+
+# 2017
+
+<p align="center">~ ~ ~</p>
+
+---
+
+# 2016
+
+<p align="center">~ ~ ~</p>
+
+---
+
+# 2015
+
+<p align="center">~ ~ ~</p>
+
+---
+
+# 2014
+
+<p align="center">~ ~ ~</p>
+
+---
+
+# 2013
+
+<p align="center">~ ~ ~</p>
+
+---
+
+# 2012
+
+<p align="center">~ ~ ~</p>
+
+---
+
+# Abandoned
 <a name="did-not-finish"></a>
 
 \-- <span style="font-size:smaller;"> Why didn't I finish this book? I like to read one book at a time and years ago it took me
