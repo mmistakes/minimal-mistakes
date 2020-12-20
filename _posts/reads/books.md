@@ -351,6 +351,32 @@ Also, take a look at my top reads from [2020](/reads/top-reads-2020) and [2019](
 
 # 2016
 
+1. The Power of Awareness, by Neville Goddard
+1. Quiet, by Susan Cain ++
+1. The Dip, by Seth Godin
+1. The Life-Changing Magic of Tidying Up, by Marie Kondo
+1. Pro Git, by Scott Chacon
+1. Think Like a Freak, by Steven Levitt & Stephen Dubner
+1. Superfreakonomics, by Steven Levitt & Stephen Dubner
+1. Untangled: Guiding Teenage Girls Through the Seven Transitions into Adulthood, by Dr. Lisa Damour ++
+1. How to Interesting: In 10 Simple Steps, by Jessica Hagy
+1. _Invincible (Compendium 1), by Robert Kirkman_
+1. _The Walking Dead (Compendium 3), by Robert Kirkman_
+1. Better Than Before: What I Learned About Making and Breaking Habits, by Gretchen Rubin ++
+1. The Last Coyote (Harry Bosch #4), by Michael Connelly
+1. The Motley Fool Investment Guide for Teens, by David Gardner
+1. I Am Malala, by Malala Yousafzai ++
+1. Animal Farm, by George Orwell
+1. Dating Smarts: What Every Teen Needs To Know To Date, Relate, Or Wait, by Amy Lang ++
+1. Modern Technical Writing, by Andrew Etter
+1. The Checklist Manifesto, by Atul Gawande ++
+1. _Fables: Book 8 Deluxe Edition, by Bill Willingham_
+1. Politics and the English Language, by George Orwell
+1. Wyatt Earp Speaks!, by John Richard Stephens (editor)
+1. Stop Stealing Dreams, by Seth Godin
+1. Middle School Makeover, by Michelle Icard
+1. Harry Potter and the Sorcerer's Stone (Book 1), by J.K. Rowling
+
 <p align="center">~ ~ ~</p>
 
 ---
