@@ -422,7 +422,46 @@ Also, take a look at my top reads from [2020](/reads/top-reads-2020) and [2019](
 
 # 2014
 
-
+1. Wizard and Glass (Dark Tower #4), by Stephen King
+1. Wolves of the Calla (Dark Tower #5), by Stephen King
+1. Song of Susannah (Dark Tower #6), by Stephen King
+1. The Dark Tower (Dark Tower #7), by Stephen King
+1. _Star Wars: Clone Wars Adventures (Vol. 1), by Haden Blackman, Ben Caldwell, Matt Fillbach, & Shawn Fillback_
+1. _Star Wars: Clone Wars Adventures (Vol. 2), by Haden Blackman, Welles Hartley, Matt Fillbach, & Shawn Fillback_
+1. _Star Wars: Clone Wars Adventures (Vol. 3), by Haden Blackman, Ryan Kaufman, Thomas Andrews, Matt Fillbach, & Shawn Fillback_
+1. _Star Wars: Clone Wars Adventures (Vol. 4), by Haden Blackman, Ryan Kaufman, Justin Lambros, Matt Fillbach, & Shawn Fillback_
+1. _Star Wars: Clone Wars Adventures (Vol. 5), by Matt Jacobs, Rick Lacy, Matt Fillbach, & Shawn Fillback_
+1. _Star Wars: Clone Wars Adventures (Vol. 6), by Haden Blackman, Thomas Andrews, Stewart McKenny, Matt Fillbach, & Shawn Fillback_
+1. _Star Wars: Clone Wars Adventures (Vol. 7), by Matt Fillbach, Shawn Fillback, Chris Avellone, & Ethen Beavers_
+1. _Star Wars: Clone Wars Adventures (Vol. 8), by Matt Fillbach & Shawn Fillback_
+1. _Star Wars: Clone Wars Adventures (Vol. 9), by Matt Fillbach & Shawn Fillback_
+1. _Star Wars: Clone Wars Adventures (Vol. 10), by Matt Fillbach & Shawn Fillback_
+1. _Guardians of the Galaxy: Cosmic Avengers (Vol. 1), by Brian Michael Bendis, Steve McNiven, & Sara Pichelli_
+1. _Walking Dead (Compendium 1), by Robert Kirkman_
+1. _Walking Dead (Compendium 2), by Robert Kirkman_
+1. Moms Who Drink and Swear, by Nicole Knepper --
+1. Kicking and Dreaming: A Story of Heart, and Rock and Roll, by Ann and Nancy Wilson
+1. _The Life Eaters, by David Brin & Scott Hampton_
+1. _American Vampire (Book 1), by Scott Snyder, Rafael Albuguerque, & Stephen King_
+1. _American Vampire (Book 2), by Scott Snyder, Rafael Albuguerque, & Stephen King_
+1. _Northlanders: Sven The Returned (Book 1), by Brian Wood & Davide Gianfelice_
+1. _Northlanders: The Cross + The Hammer (Book 2), by Brian Wood & Davide Gianfelice_
+1. _The Boys: The Name of the Game (Book 1), by Garth Ennis & Darick Robertson_
+1. _The Boys: Get Some (Book 2), by Garth Ennis & Darick Robertson_
+1. _The Boys: Good for the Soul (Book 3), by Garth Ennis & Darick Robertson_
+1. _The Boys: We Gotta Go Now (Book 4), by Garth Ennis & Darick Robertson_
+1. _The Boys: Herogasm (Book 5), by Garth Ennis & Darick Robertson_
+1. _The Boys: Self-Preservation Society (Book 6), by Garth Ennis & Darick Robertson_
+1. _American Vampire (Book 3), by Scott Snyder, Rafael Albuguerque, & Stephen King_
+1. _American Vampire (Book 4), by Scott Snyder, Rafael Albuguerque, & Stephen King_
+1. _American Vampire (Book 5), by Scott Snyder, Rafael Albuguerque, & Stephen King_
+1. _The Boys: The Innocents (Book 7), by Garth Ennis & Darick Robertson_
+1. _The Boys: Highland Laddie (Book 8), by Garth Ennis & Darick Robertson_
+1. _The Boys: The Big Ride (Book 9), by Garth Ennis & Darick Robertson_
+1. _The Boys: Butcher, Baker, Candlestickmaker (Book 10), by Garth Ennis & Darick Robertson_
+1. _The Boys: Over the Hill with the Swords of a Thousand Men (Book 11), by Garth Ennis & Darick Robertson_
+1. _The Boys: The Bloody Doors Off (Book 12), by Garth Ennis & Darick Robertson_
+1. Age of Opportunity, by Laurence Stenberg
 
 <p align="center">~ ~ ~</p>
 
