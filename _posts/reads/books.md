@@ -380,9 +380,8 @@ Also, take a look at my top reads from [2020](/reads/top-reads-2020) and [2019](
 ---
 
 # Abandoned
-<a name="did-not-finish"></a>
 
--- Books I didn't finish are marked with two dashes. --
+Books I didn't finish are marked with two dashes. --
 
 Why didn't I finish this book? I like to read one book at a time and years ago it took me
 months to slug my way through [a book](https://www.goodreads.com/review/show/1938583995?book_show_action=false&from_review_page=1)
@@ -391,6 +390,8 @@ love it...or even like it. Lesson learned. If I don't enjoy a book within the fi
 pages, I stop reading it. There are way too many amazing [authors and books out there](https://www.sketchplanations.com/post/615817835997020160/3500-lifetime-reads-if-youre-a-pretty)
 in the world for me to enjoy, not to mention my lengthy to-read list
 ([tsundoku](https://www.sketchplanations.com/post/183656939324/tsundoku-a-beautiful-japanese-word-for-the)).
+
+---
 
 <span style="font-size:smaller;">Disclosure: I'm an affiliate of [Bookshop.org](https://bookshop.org) and will earn a commission if you click through and make a purchase via their site.</span>
 
