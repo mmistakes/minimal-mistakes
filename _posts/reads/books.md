@@ -234,8 +234,8 @@ Also, take a look at my top reads from [2020](/reads/top-reads-2020) and [2019](
 
 # 2018
 
-1. Wheel of Time Reread: Book 3 (Wot Books 7-9), by Leigh Butler
-1. Wheel of Time Reread: Book 4 (Wot Books 10-12), by Leigh Butler
+1. Wheel of Time Reread: Book 3 (WoT Books 7-9), by Leigh Butler
+1. Wheel of Time Reread: Book 4 (WoT Books 10-12), by Leigh Butler
 1. Crossroads of Twilight (Wheel of Time #10), by Robert Jordan
 1. Knife of Dreams (Wheel of Time #11), by Robert Jordan
 1. The Gathering Storm (Wheel of Time #12), by Robert Jordan
@@ -278,6 +278,72 @@ Also, take a look at my top reads from [2020](/reads/top-reads-2020) and [2019](
 ---
 
 # 2017
+
+1. Harry Potter and the Deathly Hollows (Book 7), by J.K. Rowling
+1. Harry Potter and the Cursed Child (Book 8), by J.K. Rowling
+1. Some Fruits of Solitude, by William Penn
+1. _Fables: Book 9 Deluxe Edition, by Bill Willingham_
+1. _Introvert Doodles, by Maureen Marzi Wilson_
+1. The Princess Diarist, by Carrie Fisher
+1. 1984, by George Orwell ++
+1. Bad Feminist, by Roxane Gay ++
+1. A Reporter's Life, by Walter Cronkite
+1. _The Crow, by J. O'Barr_
+1. The Light in Elsie's Eyes, by K.R. Ganz
+1. _Deadpool Classic Vol. 1, by Fabian Nicieza & Joe Kelly_
+1. _Deadpool Classic Vol. 2, by Joe Kelly_
+1. _Deadpool Classic Vol. 3, by Joe Kelly_
+1. Why I Write, by George Orwell
+1. We Learn Nothing, by Tim Kreider
+1. Hillbilly Elegy, by J.D. Vance
+1. Mindset, by Dr. Carol Dweck
+1. Battle Hymn of the Tiger Mother, by Amy Chua
+1. _Ideas of Note: One Man's Philosophy on Life on Post-Its, by Chaz Hutton_
+1. On Writing Well, by William Zinsser ++
+1. Star Wars - A New Hope: The Princess, The Scoundrel, and The Farm Boy, by Alexandra Bracken
+1. Star Wars - Empire Strikes Back: So You Want To Be A Jedi?, by Adam Gidwitz
+1. Star Wars - Return of the Jedi: Beware the Power of the Dark Side, by Tom Angleberger
+1. War of Art, by Steven Pressfield ++
+1. The Art of American Whiskey, by Noah Rothbaum
+1. Zero Day, by Mark Russinovich & Jeff Aiken
+1. _March: Book 1, by John Lewis, Andrew Aydein, & Nate Powell_
+1. _March: Book 2, by John Lewis, Andrew Aydein, & Nate Powell_
+1. _March: Book 3, by John Lewis, Andrew Aydein, & Nate Powell_
+1. The Elements of Style, by William Strunk Jr. & E.B. White
+1. The Wind Through the Keyhole (Dark Tower #4.5), by Stephen King
+1. The Enchiridion, by Epictetus
+1. Wool (Silo #1), by Hugh Howey
+1. Cold Around the Heart (Bonnie Parker, PI #1), by Michael Prescott
+1. Blood in the Water (Bonnie Parker, PI #2), by Michael Prescott
+1. Bad to the Bone (Bonnie Parker, PI #3), by Michael Prescott
+1. Skin in the Game (Bonnie Parker, PI #4), by Michael Prescott
+1. Keeper of the Lost Cities (Book #1), by Shannon Messenger
+1. The Cuckoo's Calling (Cormoran Strike #1), by Robert Galbraith (aka: J.K. Rowling) ++
+1. Shift (Silo #2), by Hugh Howey
+1. Exile (Keeper of the Lost Cities #2), by Shannon Messenger
+1. Everblaze (Keeper of the Lost Cities #3), by Shannon Messenger
+1. Neverseen (Keeper of the Lost Cities #4), by Shannon Messenger
+1. Lodestar (Keeper of the Lost Cities #5), by Shannon Messenger
+1. Dust (Silo #3), by Hugh Howey
+1. 12 Angry Men: True Stories of Being a Black Man in America Today, by Gregory S. Parks (editor)
+1. On Writing, by Stephen King
+1. _The Dark Tower: Omnibus, by Stephen King_
+1. _Homeland (The Legend of Drizzt #1), by R.A. Salvatore_
+1. _Dragons of Autumn Twilight (Dragonlance Chronicles #1), by Andrew Dabb_
+1. _Saga (Vol. 1), by Brian K. Vaughan & Fiona Staples_ ++
+1. _Saga (Vol. 2), by Brian K. Vaughan & Fiona Staples_ ++
+1. _Saga (Vol. 3), by Brian K. Vaughan & Fiona Staples_ ++
+1. Work Rules!, by Laszlo Bock ++
+1. _Saga (Vol. 4), by Brian K. Vaughan & Fiona Staples_ ++
+1. Radical Candor, by Kim Scott ++
+1. _Fowl Language: The Struggle is Real, by Brian Gordon_
+1. Waking up White, by Debby Irving ++
+1. Die Wide Awake, by Michael Prescott
+1. _The Legend of Drizzt: Omnibus 1, by R.A. Salvatore_
+1. _The Legend of Drizzt: Omnibus 2, by R.A. Salvatore_
+1. New Spring (Wheel of Time #0, Prequel), by Robert Jordan
+1. Wheel of Time Reread: Book 1 (WoT Books 1-4), by Leigh Butler
+1. Wheel of Time Reread: Book 2 (WoT Books 5-6), by Leigh Butler
 
 <p align="center">~ ~ ~</p>
 
