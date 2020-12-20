@@ -412,13 +412,17 @@ Also, take a look at my top reads from [2020](/reads/top-reads-2020) and [2019](
 1. Dream Year, by Ben Arment
 1. _Star Wars: Darth Vader (Vol. 1), by Kieren Gillen_
 1. _Star Wars: Skywalker Strikes (Vol. 1), by Jason Aaron_
-1. Deadly Heat
+1. Deadly Heat (Nikki Heat #5), by Richard Castle (psuedonym)
+1. Raging Heat (Nikki Heat #5), by Richard Castle (psuedonym)
+1. Driving Heat (Nikki Heat #5), by Richard Castle (psuedonym)
 
 <p align="center">~ ~ ~</p>
 
 ---
 
 # 2014
+
+
 
 <p align="center">~ ~ ~</p>
 
