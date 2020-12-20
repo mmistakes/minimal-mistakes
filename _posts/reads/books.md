@@ -17,7 +17,7 @@ Books I've read, ordered chronologically.
 Also, take a look at my top reads from [2020](/reads/top-reads-2020) and [2019](/reads/top-reads-2019).
 
 * Books I really enjoyed are marked with two plus signs. ++
-* Books I didn't finish are marked with two dashes (see <a href="#did-not-finish">note below</a>). --
+* Books I didn't finish are marked with two dashes (see <a href="#abandoned">abandoned</a>). --
 * <i>Graphic novels & comics are italicized.</i>
 
 ---
