@@ -376,6 +376,11 @@ Also, take a look at my top reads from [2020](/reads/top-reads-2020) and [2019](
 1. Stop Stealing Dreams, by Seth Godin
 1. Middle School Makeover, by Michelle Icard
 1. Harry Potter and the Sorcerer's Stone (Book 1), by J.K. Rowling
+1. Harry Potter and the Chamber of Secrets (Book 2), by J.K. Rowling
+1. Harry Potter and the Prisoner of Azkaban (Book 3), by J.K. Rowling
+1. Harry Potter and the Goblet of Fire (Book 4), by J.K. Rowling
+1. Harry Potter and the Order of the Phoenix (Book 5), by J.K. Rowling
+1. Harry Potter and the Half-Blood Prince (Book 6), by J.K. Rowling
 
 <p align="center">~ ~ ~</p>
 
