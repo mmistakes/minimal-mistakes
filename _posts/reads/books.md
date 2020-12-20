@@ -13,12 +13,19 @@ toc: true
 toc_label: "Reading List"
 ---
 
-Books I've read, ordered chronologically.
-Also, take a look at my top reads from [2020](/reads/top-reads-2020) and [2019](/reads/top-reads-2019).
+Books I've read, ordered chronologically. Also, take a look at my top reads from
+[2020](/reads/top-reads-2020) and [2019](/reads/top-reads-2019).
+
+I've always been a reader, mostly voracious and other times...not so much (parenthood will do that to you).
+I finally started keeping track of what I was reading after one-too-many times where I bought
+a book, got a few chapters in, and realized I had already read it years before. D'oh!
+Here's that list, going all the way back to 2011.
 
 * Books I really enjoyed are marked with two plus signs. ++
 * Books I didn't finish are marked with two dashes (see <a href="#abandoned">abandoned</a>). --
 * <i>Graphic novels & comics are italicized.</i>
+
+Also listed at [Goodreads](https://goodreads.com/todhilton), with some reviews.
 
 ---
 
