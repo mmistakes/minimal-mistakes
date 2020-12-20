@@ -469,6 +469,28 @@ Also, take a look at my top reads from [2020](/reads/top-reads-2020) and [2019](
 
 # 2013
 
+1. Memories, Dreams, Reflections, by Carl Jung
+1. Cloud Atlas, by Liam Callanan
+1. Dangerous Games (Abby & Tess #3), by Michael Prescott ++
+1. The Shadow Hunter (Abby & Tess #1), by Michael Prescott ++
+1. Next Victim (Abby & Tess #2), by Michael Prescott ++
+1. Mortal Faults (Abby & Tess #4), by Michael Prescott ++
+1. Final Sins (Abby & Tess #5), by Michael Prescott ++
+1. Harry Potter and the Sorcerer's Stone (Book 1), by J.K. Rowling ++
+1. The Hitchhiker's Guide to the Galaxy, by Douglas Adams ++
+1. The Time of Our Lives, by Tom Brokaw
+1. The Hunger Games (Hunger Games #1), by Suzanne Collins ++
+1. Catching Fire (Hunger Games #2), by Suzanne Collins ++
+1. Mockingjay (Hunger Games #3), by Suzanne Collins ++
+1. Parenting with Love and Logic, by Foster W. Cline & Jim Fay, M.D.
+1. Stories I Only Tell My Friends, by Rob Lowe ++
+1. Lucky Man, by Michael J. Fox ++
+1. Ender's Game (Ender Quintet #1), by Orson Scott Card
+1. The Way of the Superior Man, by David Deida --
+1. The Gunslinger (Dark Tower #1), by Stephen King
+1. The Drawing of the Three (Dark Tower #2), by Stephen King
+1. The Waste Lands (Dark Tower #3), by Stephen King
+
 <p align="center">~ ~ ~</p>
 
 ---
