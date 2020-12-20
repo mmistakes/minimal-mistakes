@@ -234,6 +234,45 @@ Also, take a look at my top reads from [2020](/reads/top-reads-2020) and [2019](
 
 # 2018
 
+1. Wheel of Time Reread: Book 3 (Wot Books 7-9), by Leigh Butler
+1. Wheel of Time Reread: Book 4 (Wot Books 10-12), by Leigh Butler
+1. Crossroads of Twilight (Wheel of Time #10), by Robert Jordan
+1. Knife of Dreams (Wheel of Time #11), by Robert Jordan
+1. The Gathering Storm (Wheel of Time #12), by Robert Jordan
+1. Towers of Midnight (Wheel of Time #13), by Robert Jordan
+1. A Memory of Light (Wheel of Time #14), by Robert Jordan
+1. That's What She Said: What Men Need to Know (and Women Need to Tell Them) about Working Together, by Joanne Lipman
+1. No Matter the Wreckage, by Sarah Kay
+1. My Life on the Road, by Gloria Steinem ++
+1. The Handmaid's Tale, by Margaret Atwood ++
+1. Grit, by Angela Duckworth ++
+1. Dreamland, by Sarah Dessen
+1. Bossypants, by Tina Fey
+1. Nightfall (Keeper of the Lost Cities #6), by Shannon Messenger
+1. Confidence Code for Girls, by Katty Kay & Claire Shipman
+1. We Should All Be Feminists, by Chimamanda Ngozi Adichie ++
+1. Breaking Cover, by Michele Rigby Assad
+1. Hark! A Vagrant!, by Kate Beaton
+1. _Bitch Planet (Vol. 1): Extraordinary Machine, by Kelly Sue DeConnick & Valentine De Landro_
+1. _Bitch Planet (Vol. 2): President Bitch, by Kelly Sue DeConnick & Valentine De Landro_
+1. _Persepolis (Vol. 1): The Story of a Childhood, by Marjane Satrapi_
+1. _Persepolis (Vol. 2): The Story of a Return, by Marjane Satrapi_
+1. Where'd You Go, Bernadette?, by Maria Semple
+1. Men Explain Things To Me, by Rebecca Solnit
+1. The Mother Of All Questions, by Rebecca Solnit
+1. Dear Madame President, by Jennifer Palmieri
+1. The Warrior Heir (The Heir Chronicles #1), by Cinda Williams China
+1. The Wizard Heir (The Heir Chronicles #2), by Cinda Williams China
+1. The Dragon Heir (The Heir Chronicles #3), by Cinda Williams China
+1. The Enchanter Heir (The Heir Chronicles #4), by Cinda Williams China
+1. The Sorcerer Heir (The Heir Chronicles #5), by Cinda Williams China
+1. Fascism: A Warning, by Madeleine Albright ++
+1. How to Be Successful without Hurting Men's Feelings: Non-threatening Leadership Strategies for Women, by Sarah Cooper
+1. Feminist Fight Club, by Jessica Bennett
+1. The Silkworm (Cormoran Strike #2), by Robert Galbraith (aka: J.K. Rowling) ++
+1. Career of Evil (Cormoran Strike #3), by Robert Galbraith (aka: J.K. Rowling) ++
+1. Lethal White (Cormoran Strike #4), by Robert Galbraith (aka: J.K. Rowling) ++
+
 <p align="center">~ ~ ~</p>
 
 ---
