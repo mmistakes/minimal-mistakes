@@ -2,7 +2,7 @@
 layout: archive
 permalink: /reads/
 title: "Reads"
-excerpt: "Books I've read. Not quite reviews, more like thoughts and notes. See my [reading list](/reads/books)."
+excerpt: "Books I've read. Not quite reviews, more like thoughts and notes. See my [reading list](/reads/books/)."
 fullwidth: true
 author_profile: true
 ---
