@@ -2,8 +2,8 @@
 title: "Reading list"
 excerpt: &excerpt "Books I've read (since I started keeping track), ordered chronologically. Also, take a look at my top reads posts."
 tweet: "Books I've read, ordered chronologically." 
-date: 2020-12-31
-modified: 2020-12-31
+date: 2020-12-20
+modified: 2020-12-20
 category: reads
 image: "cover_title_author_200.jpg"
 header:
