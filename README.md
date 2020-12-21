@@ -2,4 +2,5 @@ Personal site: [todhilton.com](http://todhilton.com)
 
 This site/theme was forked from...
 
-# [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) #
+[Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/)
+(repo: https://github.com/mmistakes/minimal-mistakes).
