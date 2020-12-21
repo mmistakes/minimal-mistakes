@@ -134,10 +134,10 @@ Since starting this list I've still accidentally bought books that I'd already r
 # 2019
 
 1. [Becoming](https://smile.amazon.com/Becoming-Michelle-Obama/dp/1524763136/), by Michelle Obama ++
-1. _[Saga (Vol. 1)](https://smile.amazon.com/Saga-Vol-1-Brian-Vaughan/dp/1607066017/), by Brian K. Vaughan & Fiona Staples_ ++
-1. _[Saga (Vol. 2)](https://smile.amazon.com/Saga-Vol-Brian-K-Vaughan/dp/1607066920/), by Brian K. Vaughan & Fiona Staples_ ++
-1. _[Saga (Vol. 3)](https://smile.amazon.com/Saga-Vol-3-Brian-Vaughan/dp/1607069318/), by Brian K. Vaughan & Fiona Staples_ ++
-1. _[Saga (Vol. 4)](https://smile.amazon.com/Saga-Vol-Brian-K-Vaughan/dp/1632150778/), by Brian K. Vaughan & Fiona Staples_ ++
+1. _[Saga (Vol. 1)](https://smile.amazon.com/Saga-Vol-1-Brian-Vaughan/dp/1607066017/), by Brian K. Vaughan & Fiona Staples_ (re-read) ++
+1. _[Saga (Vol. 2)](https://smile.amazon.com/Saga-Vol-Brian-K-Vaughan/dp/1607066920/), by Brian K. Vaughan & Fiona Staples_ (re-read) ++
+1. _[Saga (Vol. 3)](https://smile.amazon.com/Saga-Vol-3-Brian-Vaughan/dp/1607069318/), by Brian K. Vaughan & Fiona Staples_ (re-read) ++
+1. _[Saga (Vol. 4)](https://smile.amazon.com/Saga-Vol-Brian-K-Vaughan/dp/1632150778/), by Brian K. Vaughan & Fiona Staples_ (re-read) ++
 1. _[Saga (Vol. 5)](https://smile.amazon.com/Saga-Vol-Brian-K-Vaughan/dp/1632154382/), by Brian K. Vaughan & Fiona Staples_ ++
 1. _[Saga (Vol. 6)](https://smile.amazon.com/Saga-6-Brian-K-Vaughan/dp/163215711X/), by Brian K. Vaughan & Fiona Staples_ ++
 1. [The New Jim Crow](https://smile.amazon.com/New-Jim-Crow-Incarceration-Colorblindness/dp/1595586431/), by Michelle Alexander
@@ -397,7 +397,7 @@ Since starting this list I've still accidentally bought books that I'd already r
 
 # 2015
 
-1. The Road Less Traveled, by M. Scott Peck
+1. The Road Less Traveled, by M. Scott Peck (re-read)
 1. Buddist Beleifs & Principles, by Chaya Rao
 1. _Fables: Book 1 Deluxe Edition, by Bill Willingham_ ++
 1. The Black Stiletto, by Raymond Bensen
