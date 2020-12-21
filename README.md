@@ -1,4 +1,4 @@
-Personal site.
+Personal site: [todhilton.com](http://todhilton.com)
 
 This site/theme was forked from...
 
