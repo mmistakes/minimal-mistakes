@@ -19,8 +19,9 @@ Books I've read, ordered chronologically. See my top reads from
 I've always been a reader, mostly voracious and other times...not so much (parenthood will do
 that to you). I finally started keeping track of what I was reading after one-too-many times
 where I bought a book, got a few chapters in, and realized I had already read it years before.
-D'oh! Here's the list, going all the way back to 2011. By the way, since starting this list
-I've still accidentally bought books that I'd already read. _[shrug]_
+D'oh! Here's the list, going all the way back to 2011. 
+
+Since starting this list I've still accidentally bought books that I'd already read. _[shrug]_
 
 * Books I really enjoyed are marked with two plus signs. ++
 * Books I didn't finish are marked with two dashes (see <a href="#abandoned">abandoned</a>). --
