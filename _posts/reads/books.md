@@ -125,7 +125,7 @@ Since starting this list I've still accidentally bought books that I'd already r
 1. [Rogue Protocol](https://bookshop.org/a/5270/9781250191786) (Murderbot Diaries #3), by Martha Wells ++
 1. [Exit Strategy](https://bookshop.org/a/5270/9781250191854) (Murderbot Diaries #4), by Martha Wells ++
 1. [Home: Habitat, Range, Niche, Territory](https://www.shortstory.club/assets/martha-wells-home.pdf?mc_cid=c265a16cab&mc_eid=712017bfbd) (Murderbot Diaries #4.5) in PDF, by Martha Wells
-1. [Artificial Condition](https://bookshop.org/a/5270/9781250229854) (Murderbot Diaries #5), by Martha Wells ++
+1. [Network Effect](https://bookshop.org/a/5270/9781250229854) (Murderbot Diaries #5), by Martha Wells ++
 
 <p align="center">~ ~ ~</p>
 
