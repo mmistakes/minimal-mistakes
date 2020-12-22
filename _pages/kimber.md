@@ -11,6 +11,8 @@ author_profile: false
 {{ page.excerpt | markdownify }}
 
 <div class="grid__wrapper">
-  [Merry Christmas!](JewelStaite-cameo.mp4)
-
+  <p>
+    Merry Christmas!
+    <a href="/kimber/JewelStaite-cameo.mp4"><img src="/kimber/Kaylee-EverythingsShiny-byKarenHallion.jpg" alt="Everything's Shiny & Merry Christmas" title="Everything's Shiny" width="400px"></a>
+  </p>
 </div>
