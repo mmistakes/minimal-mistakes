@@ -14,4 +14,5 @@ author_profile: false
   <p>
     <a href="/kimber/JewelStaite-cameo.mp4"><img src="/kimber/Kaylee-EverythingsShiny-byKarenHallion.jpg" alt="CLICK HERE for a Happy Christmas!" title="CLICK HERE for a Happy Christmas" width="300px"></a>
   </p>
+  <p>Art by <a href="https://www.karenhallion.com/>Karen Hallion.</p>
 </div>
