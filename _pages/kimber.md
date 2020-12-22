@@ -13,6 +13,6 @@ author_profile: false
 <div class="grid__wrapper">
   <h2 align="center">Merry Christmas!</h2>
   <p align="center">
-    <a href="/kimber/JewelStaite-cameo.mp4"><img src="/kimber/Kaylee-EverythingsShiny-byKarenHallion.jpg" alt="Everything's Shiny & Merry Christmas" title="Everything's Shiny" width="400px"></a>
+    <a href="/kimber/JewelStaite-cameo.mp4"><img src="/kimber/Kaylee-EverythingsShiny-byKarenHallion.jpg" alt="CLICK HERE for a Happy Christmas!" title="CLICK HERE for a Happy Christmas" width="300px"></a>
   </p>
 </div>
