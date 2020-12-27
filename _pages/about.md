@@ -1,6 +1,10 @@
 ---
 permalink: /about/
+classes: wide
 ---
 
 ## About
-test 
+
+Name : Lim Kwangsun
+
+And What am I?
