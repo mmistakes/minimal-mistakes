@@ -2,16 +2,16 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Posts"
-    url: /year-archive/
   - title: "Education"
     url: /education/
   - title: "Experience"
     url: /experience/
+  - title: "Posts"
+    url: /year-archive/
   #- title: "Collections"
   #  url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
-  - title: "TG"
+  - title: "ThemeGuide"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
  
