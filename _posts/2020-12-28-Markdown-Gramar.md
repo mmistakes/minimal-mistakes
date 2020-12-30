@@ -1,6 +1,6 @@
 ---
 layout: single
-title : "Markdown Grammer"
+title : "Markdown Grammar"
 author_profile: true
 ---
 
