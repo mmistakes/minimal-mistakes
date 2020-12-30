@@ -20,7 +20,7 @@ title                    : "Dom McKean Project Portfolio"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Dom McKean"
-description              : "Data Science Researcher/Robotics Engineer at Intelligent Automation. 
+description              : "Data Science Researcher/Robotics Engineer at Intelligent Automation. "
                             PhD Researcher at Loughborough University. 7 years in Control Systems and Data Science/Academic Research. 
                             10 years in Automotive Systems Engineering. I love exploring data and uncovering hidden meaning and fallacies, 
                             and developing new algorithms to automate solutions to complex problems.
@@ -35,7 +35,7 @@ baseurl                  : "/portfolio/" # sub path
 repository               :  "DomMcKean/portfolio/" # GitHub username/repo-name e.g.
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : "Fuck you!! " # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : "Fuck dog!! " # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -102,9 +102,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "bob"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "????????????????????????????????."
   location         : "Somewhere"
   email            :
   links:
