@@ -25,7 +25,7 @@ url                      : https://suniipang.github.io # the base hostname & pro
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : suniipang/suniipang.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/500x300.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/apple-touch-icon.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/logo_transparent.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "Lim Kwangsun"
-  avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/logo_profile_image.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Hi, I am an **amazing** person."
   location         : "Seoul, Rep. of Korea"
   email            : "limgs0130@snu.ac.kr"

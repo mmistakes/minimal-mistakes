@@ -19,5 +19,8 @@ So I'm taking an interest in programming using these languages and how to apply 
 I like enjoying sports and exercising, especially table tennis, tennis, and running, and playing the game, Kartrider. 
 
 ---
-If you have any question or require any further information, please feel free to contact me.
+If you have any question or require any further information, please feel free to contact me. 
 <br> - Email : <limgs0130@snu.ac.kr>
+<img align="right" width="100" height="100" src="/assets/images/logo.png">
+
+
