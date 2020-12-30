@@ -22,7 +22,9 @@ Syntax highlighting is a feature that displays source code, in different colors 
 
 GitHub Flavored Markdown [fenced code blocks](https://help.github.com/articles/creating-and-highlighting-code-blocks/) are supported. To modify styling and highlight colors edit `/_sass/syntax.scss`.
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/covid_dashboard.ora" alt="">
+This is where my inage should be
+## COVID-19 Dashboard
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/covid_dashboard.jpg" alt="">
 
 ```css
 #container {
