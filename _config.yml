@@ -94,8 +94,8 @@ analytics:
 
 # Site Author
 author:
-  name             : "bob"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  name             : "Dom McKean"
+  avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. 
   bio              : > 
                       "Data Science Researcher/Robotics Engineer at Intelligent Automation. PhD Researcher at Loughborough University. 
                       7 years in Control Systems and Data Science/Academic Research. 10 years in Automotive Systems Engineering. 
