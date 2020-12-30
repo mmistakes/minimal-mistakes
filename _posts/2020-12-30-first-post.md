@@ -10,7 +10,6 @@ tags:
 toc: true
 ---
 
-[![foo](https://live.staticflickr.com/8361/8400335147_5fabaa504c_o.jpg)](https://flic.kr/p/dNiUYB)
 
 
 
@@ -22,6 +21,8 @@ Syntax highlighting is a feature that displays source code, in different colors 
 ### GFM Code Blocks
 
 GitHub Flavored Markdown [fenced code blocks](https://help.github.com/articles/creating-and-highlighting-code-blocks/) are supported. To modify styling and highlight colors edit `/_sass/syntax.scss`.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/covid_dashboard.ora" alt="">
 
 ```css
 #container {
@@ -130,3 +131,7 @@ Module[{},
 An example of a Gist embed below.
 
 <script src="https://gist.github.com/mmistakes/77c68fbb07731a456805a7b473f47841.js"></script>
+
+
+[![foo](https://live.staticflickr.com/8361/8400335147_5fabaa504c_o.jpg)](https://flic.kr/p/dNiUYB)
+
