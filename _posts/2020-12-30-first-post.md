@@ -2,7 +2,7 @@
 title: "Markup: Syntax Highlighting"
 excerpt: "Post displaying the various ways of highlighting code in Markdown."
 last_modified_at: 2018-01-03T09:45:06-05:00
-header:
+head
   teaser: "assets/images/markup-syntax-highlighting-teaser.jpg"
 tags: 
   - code
@@ -12,6 +12,12 @@ toc: true
 
 [![foo](https://live.staticflickr.com/8361/8400335147_5fabaa504c_o.jpg)](https://flic.kr/p/dNiUYB)
 
+
+<figure class="half">
+    <a href="/assets/images/image-filename-1-large.jpg"><img src="/assets/images/image-filename-1.jpg"></a>
+    <a href="/assets/images/image-filename-2-large.jpg"><img src="/assets/images/image-filename-2.jpg"></a>
+    <figcaption>Caption describing these two images.</figcaption>
+</figure>
 
 Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.[^1]
 
