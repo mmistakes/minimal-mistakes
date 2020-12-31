@@ -4,7 +4,7 @@
 
 - Remove Google Search script from `404.md`. [#2597](https://github.com/mmistakes/minimal-mistakes/issues/2597) [#2737](https://github.com/mmistakes/minimal-mistakes/pull/2737)
 - Fix Font Awesome icon color in `contrast`, `dark`, `mint`, `neon`, `plum`, and `sunrise` skins. [#2724](https://github.com/mmistakes/minimal-mistakes/issues/2724)
-- Apply background code highlighting for any code in all 6 HTML headings from `<h1>` to `<h6>`. 
+- Apply background code highlighting for any code in all 6 HTML headings from `<h1>` to `<h6>`. [#2771](https://github.com/mmistakes/minimal-mistakes/pull/2771)
 
 ### Enhancements
 
