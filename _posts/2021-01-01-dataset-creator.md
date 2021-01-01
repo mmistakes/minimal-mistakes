@@ -1,5 +1,5 @@
 ---
-title: "Post: Link"
+title: "Robot Trajectory Dataset Creator"
 categories:
   - Post Formats
 tags:
@@ -8,5 +8,5 @@ tags:
 link: https://github.com/DomMcKean/LSTM_model/blob/main/database_creator.ipynb
 ---
 
-This 
+This Jupyter notebook searches for csv files in the named path and concatenates them to form a dataset than can then be wrangled in unison. 
 
