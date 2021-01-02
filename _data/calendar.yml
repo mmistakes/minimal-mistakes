@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Weihnachtsferien",
-    "title": "Weihnachtsferien",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M2hrbjhjNXY2dGtvNDZrYWM1cDRoaDFjaDAgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2020-12-21",
-      "date_time": null
-    },
-    "end": {
-      "date": "2021-01-02",
-      "date_time": null
-    },
-    "created": "2020-03-11T12:13:03.000Z",
-    "updated": "2020-03-11T12:13:03.339Z"
-  },
-  {
-    "image_path": null,
     "alt": "Winterferien",
     "title": "Winterferien",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2020-01-20T10:23:43.000Z",
     "updated": "2020-01-20T10:23:43.980Z"
+  },
+  {
+    "image_path": null,
+    "alt": "unterrichtsfrei",
+    "title": "unterrichtsfrei",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MjU4a2c4YTc0bDBpc2UzM29rcDB1N3Zyc2QgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2021-05-14",
+      "date_time": null
+    },
+    "end": {
+      "date": "2021-05-15",
+      "date_time": null
+    },
+    "created": "2020-03-11T12:15:33.000Z",
+    "updated": "2020-03-11T12:17:55.062Z"
   }
 ]
