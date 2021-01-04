@@ -5,15 +5,17 @@ tag: ["Product", “Software as a service”, “DevOps”, “Cybersecurity”]
 toc: true
 ---
 
-# 1. Most CEOs in the 2020s think they do not know how to code
-
-Computer science is the art of solving bigger problems with less effort. The trouble is that as of the 2020s, most people in the workforce think they do not know how to code, CEOs included. For every professional developer out there, there are perhaps two orders of magnitude more people who have attempted to learn how to code once in their lives, but quit before they reached the 100- or 1,000-hour mark. 
+Computer science is the art of solving bigger problems with less effort.
 
 <span><audio id="myAudio" controls>
     <source src="/assets/audio/the-fallacy-of-no-code-tools.ogg" type="audio/ogg">
     <source src="/assets/audio/the-fallacy-of-no-code-tools.mp3" type="audio/mpeg">
   </audio>
   <button class="btn btn--small" id="video-player-playback-rate-control" style="border-color=none !important;border-collapse: separate !important;">Speed: <span id="current-rate">1</span>x</button></span>
+
+# 1. Most CEOs in the 2020s think they do not know how to code
+
+The trouble is that as of the 2020s, most people in the workforce think they do not know how to code, CEOs included. For every professional developer out there, there are perhaps two orders of magnitude more people who have attempted to learn how to code once in their lives, but quit before they reached the 100- or 1,000-hour mark. 
 
 For non-technical business leaders, a “no code development platform” (NCDP) can seem like the perfect solution. NCDP is a charming idea because if it worked, so many problems could suddenly be solved at scale with less effort by lowering the barriers to entry.
 
