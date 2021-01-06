@@ -1,0 +1,83 @@
+/*
+ * Ideal Image Slider v1.5.1
+ *
+ * By Gilbert Pellegrom
+ * http://gilbert.pellegrom.me
+ *
+ * Copyright (C) 2014 Dev7studios
+ * https://raw.githubusercontent.com/gilbitron/Ideal-Image-Slider/master/LICENSE
+ */
+
+.ideal-image-slider {
+	position: relative;
+	overflow: hidden;
+}
+.iis-slide {
+	display: block;
+	bottom: 0;
+	text-decoration: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	text-indent: -9999px;
+}
+
+/* Slide effect */
+.iis-effect-slide .iis-slide {
+	opacity: 0;
+	-webkit-transition-property: -webkit-transform;
+	   -moz-transition-property: -moz-transform;
+		 -o-transition-property: -o-transform;
+			transition-property: transform;
+	-webkit-transition-timing-function: ease-out;
+	   -moz-transition-timing-function: ease-out;
+		 -o-transition-timing-function: ease-out;
+			transition-timing-function: ease-out;
+	-webkit-transform: translateX(0%);
+		-ms-transform: translateX(0%);
+			transform: translateX(0%);
+}
+.iis-effect-slide .iis-current-slide {
+	opacity: 1;
+	z-index: 1;
+}
+.iis-effect-slide .iis-previous-slide {
+	-webkit-transform: translateX(-100%);
+		-ms-transform: translateX(-100%);
+			transform: translateX(-100%);
+}
+.iis-effect-slide .iis-next-slide {
+	-webkit-transform: translateX(100%);
+		-ms-transform: translateX(100%);
+			transform: translateX(100%);
+}
+.iis-effect-slide.iis-direction-next .iis-previous-slide,
+.iis-effect-slide.iis-direction-previous .iis-next-slide { opacity: 1; }
+
+/* Touch styles */
+.iis-touch-enabled .iis-slide { z-index: 1; }
+.iis-touch-enabled .iis-current-slide { z-index: 2; }
+.iis-touch-enabled.iis-is-touching .iis-previous-slide,
+.iis-touch-enabled.iis-is-touching .iis-next-slide { opacity: 1; }
+
+/* Fade effect */
+.iis-effect-fade .iis-slide {
+	-webkit-transition-property: opacity;
+	   -moz-transition-property: opacity;
+		 -o-transition-property: opacity;
+			transition-property: opacity;
+	-webkit-transition-timing-function: ease-in;
+	   -moz-transition-timing-function: ease-in;
+		 -o-transition-timing-function: ease-in;
+			transition-timing-function: ease-in;
+	opacity: 0;
+}
+.iis-effect-fade .iis-current-slide {
+	opacity: 1;
+	z-index: 1;
+}
