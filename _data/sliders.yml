@@ -1,6 +1,6 @@
 - selector: slider1
   images:
-    - src: /assets/images/MFA_group.jpg
+    - src: /assets/images/MFA_group.JPG
       alt: image one
     - src: /assets/images/MFA_math_wall.jpg
       alt: image two
