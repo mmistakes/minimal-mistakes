@@ -4,17 +4,12 @@ title:  "About Me"
 permalink: /about/
 ---
 
-I'm currently a [NANOGrav](http://nanograv.org) Physics Frontier Center (PFC)
-postdoctoral fellow employed by WVU but working and living in the Research
-Triangle area of NC. I am also a visiting postdoctoral scholar at NC State in
-the Statistics department.
+I am a Principal Data Scientist at [Infinia ML](https://infiniaml.com/). There I work on
+a variety of client projects that cover most areas of machine learning and deep learning as
+well as data mining. I also work on several internal projects in a more software-oriented role.
 
-My research is primarily focused on the development of Bayesian data analysis
-techniques for pulsar timing array science including gravitational wave
-detection, noise characterization, non-linear timing, and interstellar
-medium characterization.
+I'm very passionate about the Python programming language and its use in Machine Learning and
+backend development. I love tinkering and learning tricks to help me be a better Python
+programmer. I also have a growing interest in Web Development with Node.js/Python
+and Vue/React and sharpening my ML deployment skills with Docker and Kubernetes.
 
-I'm also very interested in machine learning and data science and strive to
-pursue projects and learn more in those areas.
-
-My full resume is available [here]({{ site.url }}/files/JAE-resume.pdf).
