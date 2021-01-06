@@ -1,0 +1,9 @@
+- selector: slider1
+  images:
+    - src: /assets/images/MFA_group.jpg
+      alt: image one
+    - src: /assets/images/MFA_math_wall.jpg
+      alt: image two
+  settings:
+    height: "'auto'"
+    effect: fade
