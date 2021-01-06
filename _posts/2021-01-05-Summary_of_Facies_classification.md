@@ -97,9 +97,9 @@ We can get the proper parameters when the accuracy value is higest.
 The value of ```gamma``` and ```C``` are 1 and 10 each in this codes.
 
 ### Precision, Recall and F1 score
-> Precision is the probability that given a classification result for a sample, the sample actually belongs to that class.</br> Recall is the probability that a sample will be correctly classified for a given class.
+> **Precision** is the probability that given a classification result for a sample, the sample actually belongs to that class. <br> **Recall** is the probability that a sample will be correctly classified for a given class.
 
-> F1 score combines both to give a single measure of relevancy of the classifier results.          
+> **F1 score** combines both to give a single measure of relevancy of the classifier results.          
 
 Precision and Recall can be computed using below function set ```display_metrics = True```.
 ```python
