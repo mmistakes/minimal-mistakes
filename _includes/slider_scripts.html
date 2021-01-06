@@ -1,0 +1,61 @@
+<!-- Jekyll Ideal Image Slider Include -->
+<!-- https://github.com/jekylltools/jekyll-ideal-image-slider-include -->
+<!-- v1.8 -->
+{%- assign page_sliders = page.image_sliders | uniq -%}
+{%- assign layout_sliders = layout.image_sliders | uniq -%}
+{%- assign iis_slider_array = page_sliders | concat: layout_sliders | uniq -%}
+{%- if page.image_sliders_load_all == true -%}
+  {%- assign site_sliders = site.data.sliders | uniq -%}
+  {%- assign iis_slider_array = iis_slider_array | concat: site_sliders | uniq -%}
+{%- endif -%}
+{% if iis_slider_array != empty %}
+  <script src="{{ "/assets/js/slider/ideal-image-slider.min.js" | relative_url }}"></script>
+  <script src="{{ "/assets/js/slider/iis-bullet-nav.js" | relative_url }}"></script>
+  <script src="{{ "/assets/js/slider/iis-captions.js" | relative_url }}"></script>
+  <script>
+  {% for selector in iis_slider_array -%}
+    {%- assign slider = site.data.sliders | where:"selector",selector | first -%}
+    {%- assign settings = slider.settings -%}
+    var {{ slider.selector }} = new IdealImageSlider.Slider({
+      selector: '#{{ slider.selector }}',
+      {% if settings.height -%}
+      height: {{ settings.height }},
+      {% endif -%}
+      {% if settings.initialHeight -%}
+      initialHeight: {{ settings.initialHeight }},
+      {% endif -%}
+      {% if settings.maxHeight -%}
+      maxHeight: {{ settings.maxHeight }},
+      {% endif -%}
+      {% if settings.interval -%}
+      interval: {{ settings.interval }},
+      {% endif -%}
+      {% if settings.transitionDuration -%}
+      transitionDuration: {{ settings.transitionDuration }},
+      {% endif -%}
+      {% if settings.effect -%}
+      effect: {{ settings.effect }},
+      {% endif -%}
+      {% if settings.disableNav -%}
+      disableNav: {{ settings.disableNav }},
+      {% endif -%}
+      {% if settings.keyboardNav -%}
+      keyboardNav: {{ settings.keyboardNav }},
+      {% endif -%}
+      {% if settings.previousNavSelector -%}
+      previousNavSelector: {{ settings.previousNavSelector }},
+      {% endif -%}
+      {% if settings.nextNavSelector -%}
+      nextNavSelector: {{ settings.nextNavSelector }},
+      {% endif -%}
+    });
+    {% if slider.bullets == true -%}
+    {{ slider.selector }}.addBulletNav();
+    {% endif -%}
+    {% if slider.captions == true -%}
+    {{ slider.selector }}.addCaptions();
+    {% endif -%}
+    {{ slider.selector }}.start();
+  {% endfor -%}
+  </script>
+{%- endif -%}
