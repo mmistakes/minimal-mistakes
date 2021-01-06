@@ -3,7 +3,7 @@ permalink: /about/
 ---
 I am in the final year of my undergraduate studies at Tulane University in New Orleans. I am double majoring in mathematics and computer science with a management minor. I am excited about research at the intersection of mathematics, computer science, and biology. 
 
-<p float="left">
+<p align="middle">
 <img src="https://github.com/rjuenemann/rjuenemann.github.io/blob/master/assets/images/IMG_20190726_175023_419.jpg?raw=true" alt="science" height="200"/>
 <img src="https://github.com/rjuenemann/rjuenemann.github.io/blob/master/assets/images/MFA_poster_crop.jpg?raw=true" alt="science" height="200"/>    
 </p>
