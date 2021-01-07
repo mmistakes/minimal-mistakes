@@ -24,6 +24,7 @@
   h4 {
     margin-top: 0 !important; /* override*/
     margin-bottom: 0.75em;
+    line-height: inherit;
   }
 
   @at-root .page__content #{&} h4 {

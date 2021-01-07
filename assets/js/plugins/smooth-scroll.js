@@ -1,7 +1,7 @@
 /*!
- * smooth-scroll v15.2.1
+ * smooth-scroll v16.1.2
  * Animate scrolling to anchor links
- * (c) 2019 Chris Ferdinandi
+ * (c) 2020 Chris Ferdinandi
  * MIT License
  * http://github.com/cferdinandi/smooth-scroll
  */
@@ -90,7 +90,7 @@
 	 * Check to see if user prefers reduced motion
 	 * @param  {Object} settings Script settings
 	 */
-	var reduceMotion = function (settings) {
+	var reduceMotion = function () {
 		if ('matchMedia' in window && window.matchMedia('(prefers-reduced-motion)').matches) {
 			return true;
 		}
@@ -486,6 +486,12 @@
 			// Update the URL
 			updateURL(anchor, isNum, _settings);
 
+			// If the user prefers reduced motion, jump to location
+			if (reduceMotion()) {
+				window.scrollTo(0, Math.floor(endLocation));
+				return;
+			}
+
 			// Emit a custom event
 			emitEvent('scrollStart', _settings, anchor, toggle);
 
@@ -500,15 +506,16 @@
 		 */
 		var clickHandler = function (event) {
 
-			// Don't run if the user prefers reduced motion
-			if (reduceMotion(settings)) return;
+			// Don't run if event was canceled but still bubbled up
+			// By @mgreter - https://github.com/cferdinandi/smooth-scroll/pull/462/
+			if (event.defaultPrevented) return;
 
-			// Don't run if right-click or command/control + click
-			if (event.button !== 0 || event.metaKey || event.ctrlKey) return;
+			// Don't run if right-click or command/control + click or shift + click
+			if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey) return;
 
 			// Check if event.target has closest() method
 			// By @totegi - https://github.com/cferdinandi/smooth-scroll/pull/401/
-			if(!('closest' in event.target))return;
+			if (!('closest' in event.target)) return;
 
 			// Check if a smooth scroll link was clicked
 			toggle = event.target.closest(selector);
@@ -518,10 +525,21 @@
 			if (toggle.hostname !== window.location.hostname || toggle.pathname !== window.location.pathname || !/#/.test(toggle.href)) return;
 
 			// Get an escaped version of the hash
-			var hash = escapeCharacters(toggle.hash);
+			var hash;
+			try {
+				hash = escapeCharacters(decodeURIComponent(toggle.hash));
+			} catch(e) {
+				hash = escapeCharacters(toggle.hash);
+			}
 
 			// Get the anchored element
-			var anchor = settings.topOnEmptyHash && hash === '#' ? document.documentElement : document.querySelector(hash);
+			var anchor;
+			if (hash === '#') {
+				if (!settings.topOnEmptyHash) return;
+				anchor = document.documentElement;
+			} else {
+				anchor = document.querySelector(hash);
+			}
 			anchor = !anchor && hash === '#top' ? document.documentElement : anchor;
 
 			// If anchored element exists, scroll to it
@@ -589,7 +607,7 @@
 		 * Initialize Smooth Scroll
 		 * @param {Object} options User settings
 		 */
-		smoothScroll.init = function (options) {
+		var init = function () {
 
 			// feature test
 			if (!supports()) throw 'Smooth Scroll: This browser does not support the required JavaScript methods and browser APIs.';
@@ -616,7 +634,7 @@
 		// Initialize plugin
 		//
 
-		smoothScroll.init(options);
+		init();
 
 
 		//
