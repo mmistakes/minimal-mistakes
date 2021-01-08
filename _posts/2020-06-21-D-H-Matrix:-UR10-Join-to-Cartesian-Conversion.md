@@ -1,29 +1,30 @@
 ---
 title: "Layout: Post with Sticky Table of Contents"
 tags:
-  - table of contents
+  - code
+  - syntax highlighting
 toc: true
 toc_sticky: true
 ---
 
-<pre class="line-numbers">
-  <code class="language-python">
-    import numpy as np
-    import pandas as pd
-    import math as m
-    from IPython.display import HTML
-    import matplotlib.pyplot as plt
-    from sklearn.ensemble import RandomForestRegressor
-    from sklearn.model_selection import train_test_split
-    from sklearn.multioutput import MultiOutputRegressor
-    import pickle
-    import sklearn
-    print(sklearn.__version__)
 
-    file_path = '/home/ur10pc/Desktop/robot_data9/data/'
-    joint_data = 'joints_data.csv'
-    full_data = 'full_data_less_cart.csv'
-    cart_data = 'cart_data.csv'
-    all_data = 'all_data.csv'  
-   </code>
-</pre>
+
+```Python
+import numpy as np
+import pandas as pd
+import math as m
+from IPython.display import HTML
+import matplotlib.pyplot as plt
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.model_selection import train_test_split
+from sklearn.multioutput import MultiOutputRegressor
+import pickle
+import sklearn
+print(sklearn.__version__)
+
+file_path = '/home/ur10pc/Desktop/robot_data9/data/'
+joint_data = 'joints_data.csv'
+full_data = 'full_data_less_cart.csv'
+cart_data = 'cart_data.csv'
+all_data = 'all_data.csv'  
+```
