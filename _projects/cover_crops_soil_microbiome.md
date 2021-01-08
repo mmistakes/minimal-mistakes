@@ -10,12 +10,15 @@ categories:
   - projects
   - in progress
 tags:
-  - cover crops
-  - maize
-  - corn
-  - amplicon sequencing
+  - microbiomes and metagenomics
 ---
 
 ## Collaborators
 
 * Terrence Gardener, NCSU, Raleigh, NC
+
+## Project
+
+We assisted Dr. Gardner in a microbiome project assessing the effect of
+winter cover crops in on soil microbiomes. We developed the software ITSxpress
+in response to this request.

@@ -12,9 +12,7 @@ categories:
   - projects
   - in progress
 tags:
-  - Transposon
-  - compositional data Analysis
-  - genotyping
+  - genomics
 ---
 
 

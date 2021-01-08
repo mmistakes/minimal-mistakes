@@ -15,6 +15,7 @@ tags:
   - Transposon
   - compositional data Analysis
   - genotyping
+published: false
 ---
 New statistical methods make genotyping faster and more cost effective
 

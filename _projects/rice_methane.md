@@ -12,15 +12,14 @@ categories:
   - projects
   - in progress
 tags:
-  - methane
-  - rice
-  - amplicon sequencing
+  - microbiomes and metagenomics
 ---
 
 
 ## Collaborators
 
 * Jinyoung Barnaby - ARS Dale Bumpers National Rice Research Center - Stuttgart, AR
+* Cristina Cruz, PhD - ARS Dale Bumpers National Rice Research Center - Stuttgart, AR
 
 ## Project
 
@@ -31,3 +30,7 @@ emit less methane but their yields are  not as high as conventional varieties.
 By understanding how low methane cultivars influence their microbial communities
 we can select just the relevant low methane traits, breeding cultivars that also are
 productive, disease resistant and have desirable grain properties.
+
+# Publications
+
+In Review

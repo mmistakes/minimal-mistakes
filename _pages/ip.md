@@ -11,12 +11,21 @@ header:
   caption: "Photo credit: [*Sebastien Gabriel*](https://unsplash.com/photos/5rAcUaCtMzk)"
 ---
 
+
+# Licensed Technologies
 This page lists technologies licensed by me or members of the group.
 
 
-# A Biotinylated RNA ladder for northern blotting bacterial small RNAs
+## A Biotinylated RNA ladder for northern blotting bacterial small RNAs
+
 [https://www.kerafast.com/product/2123/biotinylated-srna-ladder](https://www.kerafast.com/product/2123/biotinylated-srna-ladder)
 
-# A method for the prevention of Heat Stable Prevention of Flavan3-ols – Iron (II) Interactions
+## A method for the prevention of Heat Stable Prevention of Flavan3-ols – Iron (II) Interactions
+
 [https://www.innocentive.com/ar/challenge/9932981](https://www.innocentive.com/ar/challenge/9932981)
 [https://blog.innocentive.com/2013/02/07/im-a-solver-adam-rivers](https://blog.innocentive.com/2013/02/07/im-a-solver-adam-rivers)
+
+# Patents
+
+U.S. Patent Application No. 17/120,656  
+A SYSTEM AND METHOD FOR DETERMINING THE SEX AND VIABILITY OF POULTRY EGGS PRIOR TO HATCHING

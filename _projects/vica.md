@@ -14,6 +14,7 @@ tags:
   - phage
   - machine learning
   - tensorflow
+published: false
 ---
 
 
@@ -36,5 +37,3 @@ logistic regression and deep feed-forward neural network models to identify new
 viruses with little homology to existing viruses.
 
 # Software
-
-[ITSxpress on  Github](https://github.com/itsxpress)

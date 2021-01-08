@@ -12,8 +12,9 @@ categories:
   - in progress
 tags:
   - ancient DNA
-  - metagenomics
-  - poultry
+  - microbiomes and metagenomics
+  - disease
+  - antimicrobial resistance
 ---
 
 ## Collaborators
@@ -25,6 +26,9 @@ tags:
 * Mary Duke - ARS Stoneville, MS
 * Brian Oakley - Western University College of Veterinary Medicine, Pomona, CA
 
+## Lab Staff
+
+* Karla Franco, PhD
 
 ## Project
 Antimicrobial resistance genes are prevalent in agricultural animals life today.

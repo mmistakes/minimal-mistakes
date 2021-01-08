@@ -10,7 +10,7 @@ author_profile: false
 <div class="grid__wrapper">
   {% for post in site.jobs %}
     {% if post.tags contains "open" %}
-    {% include archive-single.html type="list" %}
+    {% include archive-single.html type="grid" %}
     {% endif %}
   {% endfor %}
 </div>
@@ -22,7 +22,7 @@ author_profile: false
 <div class="grid__wrapper">
   {% for post in site.jobs %}
     {% if post.tags contains "closed" %}
-    {% include archive-single.html type="list" %}
+    {% include archive-single.html type="grid" %}
     {% endif %}
   {% endfor %}
 </div>

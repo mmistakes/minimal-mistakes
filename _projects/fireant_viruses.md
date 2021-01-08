@@ -11,8 +11,8 @@ categories:
   - completed
 tags:
   - viruses
-  - Solenopsis invicta
-  - fire ant
+  - entomology
+  - microbiomes and metagenomics
 ---
 
 

@@ -9,10 +9,11 @@ minimal_mistakes_skin    : "mint" # ""default" # "air", "contrast", "dark", "dir
 
 # Site Settings
 locale                   : "en"
-title                    : "The ARS Agricultural Microbiomes Group"
-title_separator          : "-"
+title                    : "The Rivers Lab"
+subtitle                 : "USDA-ARS Genomics and Bioinformatics Research Unit - Gainesville"
+title_separator          : "|"
 name                     : "Adam R. Rivers"
-description              : "Advancing agriculture by through the application of microbiome science and machine learning"
+description              : "Advancing agriculture by through the application of machine learning and microbiome science"
 url                      : https://tinyecology.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"

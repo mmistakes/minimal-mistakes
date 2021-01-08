@@ -1,6 +1,6 @@
 ---
 title: "Collaborate with us"
-excerpt: "Working with the Agricultural Microbiomes Group"
+excerpt: "Working with the GBRU-Gainesville"
 permalink: /collaborate/
 layout: single
 author_profile: false
@@ -11,7 +11,7 @@ header:
   caption: "Photo credit: [*Dan Gold *](https://unsplash.com/photos/yhQhvK04QPc)"
 ---
 
-The Agricultural Microbiomes group is part of the Genomics and Bioinformatics Research Unit, a service unit within the ARS. Our unit has 4 principal investigators:
+My group is part of the Genomics and Bioinformatics Research Unit, a service unit within the ARS. Our unit has 4 principal investigators:
 * [Dr. Brian Scheffler](https://www.ars.usda.gov/southeast-area/stoneville-ms/genomics-and-bioinformatics-research/people/brian-scheffler/) the Research Leader for our unit directs the sequencing lab in Stoneville, MS. He is also the former Chief Scientific information officer for ARS.
 * [Dr. Amanda Hulse-Kemp](https://www.ars.usda.gov/people-locations/person/?person-id=52597) works on complex polyplid genomes in Raliegh, NC.
 * [Dr. Justin Vaughn](https://www.ars.usda.gov/people-locations/person/?person-id=52434) works on crop genetics in Athens, GA.

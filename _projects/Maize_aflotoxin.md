@@ -10,11 +10,16 @@ categories:
   - projects
   - in progress
 tags:
-  - apple
-  - metagenomics
-  - amplicon sequencing
+  - plant disease
+  - microbiomes and metagenomics
 ---
 
 ## Collaborators
 
 * Geromy Moore - USDA-ARS, New Orleans, LA
+
+## Project
+
+We are assisting this collaborator in analyzing 16S and ITS amplicon data to
+understand how the introduction of a strain of non-toxin-producing _Aspergillus flavus_
+affects the microbiome of maize ears.

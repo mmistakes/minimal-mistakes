@@ -1,10 +1,10 @@
 ---
 layout: splash
 permalink: /
+excerpt: 'Advancing agriculture through the application machine learning and microbiome science'
 header:
-  overlay_color: "444444"
-  overlay_image: /assets/images/pattern-blue.svg
-excerpt: 'Advancing agriculture through the application of microbiome science and machine learning'
+  overlay_filter: rgba(0, 0, 0, 0.5)
+  overlay_image: /assets/images/epi-wide.jpg
 feature_row:
   - image_path: /assets/images/smithsonian_chicken.jpg
     alt: "amplicon"
@@ -25,14 +25,23 @@ feature_row:
   - image_path: /assets/images/free-to-use-sounds-kOuCX7fh50U-unsplash.jpg
     alt: "Join the Lab"
     title: "Join the Lab"
-    excerpt: "We have 1 open position in machine learning and bioinformatics as of July 2020"
-    url: "/jobs/2020-07-17-ml-salmonella-postdoc-position/"
+    excerpt: "We have no open positions at this time but please contact us if you are interested in future positions."
+    url: "/jobs/"
     btn_label: "Learn More"
     btn_class: "btn--info"
     caption: "Photo credit: [*free to use sounds*](https://unsplash.com/photos/kOuCX7fh50U)"
 
 ---
 
+Our research group is part of the US Department of Agriculture, Agricultural
+Research Service, Genomics and Bioinformatics Research Unit, a distributed
+unit based across the Southeastern US. We are based out of labs the
+University of Florida Emerging Pathogens Institute and the USDA-ARS Center for
+Medical Agricultural and Veterinary Entomology.
+
+GBRU-Gainesville works broadly in machine learning, software, and microbiome
+science across application domains. Our applications touch on Animal health, Crops,
+nutrition, natural Resource conservation.
 
 {% include feature_row id="intro" type="center" %}
 {% include feature_row %}

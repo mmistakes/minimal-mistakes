@@ -29,8 +29,7 @@ Examples of our reproducible workflows are:
 Software|description|Page
 ----------|----------------------------|------------
 ITSxpress | ITSxpress is a stand alone CLI and a QIIME 2 package for trimming the internally transcribed spacer regions with quality scores in amplicon sequencing experiments. The software was published in 2018 doi:[10.12688/f1000research.15704.1](https:/doi.org/10.12688/f1000research.15704.1)| [ITSxpress on  Github](https://github.com/USDA-ARS-GBRU/itsxpress) and [Q2-ITSxpress](https://github.com/USDA-ARS-GBRU/q2_itsxpress)
-Vica      | Still in development, software for identifying highly divergent viruses in DNA and RNA me)tagenomes using deep learning using Tensorflow | [Vica on Github](https://github.com/USDA-ARS-GBRU/vica)
-ARS-RQC   | Still in development, an automated Illumina quality control workflow and visualization web application | [ARS-RQC on Github](https://github.com/USDA-ARS-GBRU/ARS-RQC)
+Guidemaker | Software to globally design guide RNAs for CRISPR-Cas experiments in any organism with any Cas enzyme | [Guidemaker](https://guidemaker.org/)
 ----------|----------------------------|------------
 
 ## Software projects prior to USDA
