@@ -1,7 +1,7 @@
 ---
 permalink: /CV/
 ---
-<img src="https://github.com/rjuenemann/rjuenemann.github.io/blob/master/assets/images/%C6%92%C6%92TUshield-word_2c%20(1).png?raw=true" alt="tulane" style="height:300px;"/>   
+<img src="https://github.com/rjuenemann/rjuenemann.github.io/blob/master/assets/images/%C6%92%C6%92TUshield-word_2c%20(1).png?raw=true" alt="tulane" style="width:500px;"/>     
 Undergraduate Student, Tulane University     
 August 2017 – May 2021    
 Majors: Mathematics, Computer Science   
