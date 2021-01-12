@@ -76,7 +76,7 @@ The **bias** error is an error from erroneous assumptions in the learning algori
 
 The **variance** is an error from sensitivity to small fluctuations in the training set. High variance can cause an algorithm to model the random noise in the training data, rather than the intended outputs (overfitting).
 
-![Bias and Variances](../assets/eduimages/bias_and_variances.png){: width="500" height="500"}
+![Bias and Variances](/assets/eduimages/bias_and_variances.png){: width="500" height="500"}
 
 img from : <https://bkshin.tistory.com/entry/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-12-%ED%8E%B8%ED%96%A5Bias%EC%99%80-%EB%B6%84%EC%82%B0Variance-Trade-off?category=1057680>
 
