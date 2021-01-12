@@ -13,27 +13,27 @@
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme           : "mmistakes/minimal-mistakes"
 #minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Abdul's Academic Journal"
+#title                    : "Abdul's Academic Journal"
 title_separator          : "_"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Abdul Rabbani"
 description              : "This Website will be a collections of my personal Work"
 url                      : "www.abdulrabbani.com"
-#url                      : "https://abdulrabbani347.github.io"
+#url                      : "https://abdulrabbani00.github.io"
 #baseurl                  : "/blog"
 #baseurl                  : "/minimal-mistakes"
 full_url                : "https://www.abdulrabbani.com"
 #repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-repository               : "abdulrabbani347/minimal-mistakes"
+repository               : "abdulrabbani00/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/computer_science_logo.png"
-masthead_title           : "Abdul's Academic Journal"
+#logo                     : "/assets/images/computer_science_logo.png"
+masthead_title           : "Abdul Rabbani"
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
+words_per_minute         : 250
 comments:
   provider               : "disqus"
   disqus:
@@ -58,12 +58,12 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 search                   : true
 search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia, google
-#algolia:
-#  application_id         : # YOUR_APPLICATION_ID
-#  index_name             : # YOUR_INDEX_NAME
-#  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-#  powered_by             : # true (default), false
+search_provider          : algolia # lunr (default), algolia, google
+algolia:
+  application_id         : OXVJT30V68 # YOUR_APPLICATION_ID
+  index_name             : abdulrabbani-website # YOUR_INDEX_NAME
+  search_only_api_key    : 1e7bf37eba6993653d714be7469b913f # YOUR_SEARCH_ONLY_API_KEY
+  powered_by             : true # true (default), false
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
@@ -99,8 +99,8 @@ analytics:
 # Site Author
 author:
   name             : "Abdul Q Rabbani"
-  avatar           : "/assets/images/abdul_closeup.jpg"
-  bio              : "This is a journal of my personal work"
+  avatar           : "/assets/images/abdul-id-picture-1.jpeg"
+  bio              : "This is a journal capturing the things I love to do."
   location         : "NY"
   email            : "abdulrabbani00@gmail.com"
   links:
@@ -118,7 +118,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/abdulrabbani347/"
+      url: "https://github.com/abdulrabbani00/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
