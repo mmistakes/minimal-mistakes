@@ -11,28 +11,33 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+remote_theme           : "mmistakes/minimal-mistakes"
+#minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
-title_separator          : "-"
+#title                    : "Abdul's Academic Journal"
+title_separator          : "_"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+name                     : "Abdul Rabbani"
+description              : "This Website will be a collections of my personal Work"
+url                      : "www.abdulrabbani.com"
+#url                      : "https://abdulrabbani00.github.io"
+#baseurl                  : "/blog"
+#baseurl                  : "/minimal-mistakes"
+full_url                : "https://www.abdulrabbani.com"
+#repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "abdulrabbani00/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+#logo                     : "/assets/images/computer_science_logo.png"
+masthead_title           : "Abdul Rabbani"
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
+words_per_minute         : 250
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : "disqus"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "abdul-comments"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -51,14 +56,14 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
+search                   : true
 search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia, google
-algolia:
-  application_id         : # YOUR_APPLICATION_ID
-  index_name             : # YOUR_INDEX_NAME
-  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : # true (default), false
+search_provider          : lunr # lunr (default), algolia, google
+#algolia:
+#  application_id         : OXVJT30V68 # YOUR_APPLICATION_ID
+#  index_name             : abdulrabbani-website # YOUR_INDEX_NAME
+#  search_only_api_key    : 1e7bf37eba6993653d714be7469b913f # YOUR_SEARCH_ONLY_API_KEY
+#  powered_by             : true # true (default), false
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
@@ -85,7 +90,7 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : false # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          :
     anonymize_ip         : # true, false (default)
@@ -93,15 +98,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  name             : "Abdul Q Rabbani"
+  avatar           : "/assets/images/abdul-id-picture-1.jpeg"
+  bio              : "This is a journal capturing the things I love to do."
+  location         : "NY"
+  email            : "abdulrabbani00@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      #url: mailto:abdulrabbani00@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -113,7 +118,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/abdulrabbani00/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -145,6 +150,7 @@ footer:
 include:
   - .htaccess
   - _pages
+  - science
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -209,7 +215,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/New_York
 
 
 # Plugins (previously gems:)
@@ -242,6 +248,11 @@ whitelist:
 category_archive:
   type: liquid
   path: /categories/
+
+math:
+  type: liquid
+  path: /categories/math/
+
 tag_archive:
   type: liquid
   path: /tags/
@@ -265,6 +276,10 @@ compress_html:
   ignore:
     envs: development
 
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -276,6 +291,25 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments:  true
       share: true
       related: true
+
+#defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+#defaults:
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true

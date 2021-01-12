@@ -6,3 +6,13 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+input[type="text"], input[type="email"], input[type="search"],
+input[type="submit"], button, textarea {
+  width: 300px;
+  border: 2px solid LightGray;
+  padding: 5px;
+  margin: 4px;
+}
+
+textarea { width: 70%;  resize: none; }
