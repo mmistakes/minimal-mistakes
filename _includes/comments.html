@@ -154,6 +154,6 @@
       <h4 class="page__comments-title">{{ comments_label }}</h4>
       <section id="utterances-comments"></section>
     {% when "custom" %}
-      <section id="custom-comments"></section>
+      {% include /comments-providers/custom.html %}
   {% endcase %}
 </div>
