@@ -3,6 +3,7 @@ layout: single
 author_profile: true
 classes: wide
 title : "Gradient Boosting Algorithm"
+categories: "Project"
 ---
 
 ## Gradient Boosting Algorithm

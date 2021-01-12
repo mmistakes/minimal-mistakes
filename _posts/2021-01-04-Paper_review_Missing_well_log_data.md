@@ -3,6 +3,7 @@ layout: single
 title : "Paper review : Accurate and Convenient Missing Well Log Synthesis Using Generative Model"
 author_profile: true
 classes: wide
+categories: "Paper"
 ---
 
 #### Minsu Kwon(ENERZAi) et al., Abu Dhabi International Petroleum Exhibition & Conference, 9-12 November, Abu Dhabi, UAE

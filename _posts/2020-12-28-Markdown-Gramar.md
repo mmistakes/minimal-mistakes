@@ -2,6 +2,7 @@
 layout: single
 title : "Markdown Grammar"
 author_profile: true
+categories: "markdown"
 ---
 
 ## - 제목(Header)

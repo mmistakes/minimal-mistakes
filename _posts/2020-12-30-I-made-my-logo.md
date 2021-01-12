@@ -2,6 +2,7 @@
 layout: single
 title : "I made my logo!"
 author_profile: true
+categories: "markdown"
 ---
 
 ### Original version

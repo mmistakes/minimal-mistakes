@@ -7,7 +7,7 @@ main:
   - title: "Experience"
     url: /experience/
   - title: "Posts"
-    url: /year-archive/
+    url: /categories/
   #- title: "Collections"
   #  url: /collection-archive/
   # - title: "Sitemap"

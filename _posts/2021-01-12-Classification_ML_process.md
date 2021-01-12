@@ -3,6 +3,8 @@ layout: single
 author_profile: true
 classes: wide
 title : "Process of training to classify the facies label using ML"
+categories: "Project"
+
 ---
 
 ### 1. Preprocessing

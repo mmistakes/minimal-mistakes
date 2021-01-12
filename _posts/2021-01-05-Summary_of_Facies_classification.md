@@ -3,6 +3,7 @@ layout: single
 title : "Summary of 'Facies_classification.ipynb'"
 author_profile: true
 classes: wide
+categories: "Project"
 ---
 
 ### 2021-01-05 Progress
