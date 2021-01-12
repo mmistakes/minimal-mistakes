@@ -2,10 +2,10 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Interview Prep"
-    url: /interview_prep/introduction_to_interview_prep
   - title: "Categories"
     url: /categories/
+  - title: "Interview Prep"
+    url: /interview_prep/introduction_to_interview_prep
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
