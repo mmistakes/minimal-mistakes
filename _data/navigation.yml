@@ -2,7 +2,7 @@
 main:
   - title: "CV"
     url: https://dommckean.github.io/portfolio/post%20formats/CV/
-   - title: "About"
+  - title: "About"
     url: https://dommckean.github.io/portfolio/post%20formats/About-Me/
   # - title: "Sample Posts"
   #   url: /year-archive/
