@@ -51,7 +51,7 @@ comments:
     issue_term           : # "pathname" (default)
   staticman:
     branch               : "gh-pages"
-    endpoint             : "https://api.staticman.net/v3/entry/github/abdulrabbani00/minimal-mistakes/gh-pages"
+    #endpoint             : "https://api.staticman.net/v3/entry/github/abdulrabbani00/minimal-mistakes/gh-pages"
 reCaptcha:
   siteKey: "6LcoLSoaAAAAAIr3c90m4erta7SJptdG_qlFeB0H"
   secret: "ttmdXw6D4FAbDfNA6E5vFuF4Xo/gzMz4rrKWjGMcVPi4V+lvnEK4oXWkjRB/HiSu/si6N61NK2WqYfiVifSVDiWFOTGcRhE5MlE0hbRU+S9yp59j6H58EQbJ62BPN7Xydk6PfNR6p/yRSgmXUavZkptzxrHCMrNEvVKy7Q+jKCXOcVgsHEXMdQvF8Ljivm9j9BRIOIVzwRqbVDYvk3+2cneO3CuXRUyiPSoFE3LbuRYWB1YztLgscTPLQkhSICOz9gyF8j0u7kvEf2zdCYfNkkianxDghNDkwi+tA3/SCO2UbK70OA/Cght7St3VjB2kcuqYjgsaOdcISpTo0BG0gc3bkmYiHgf9FGqZZTcTrQmUxucxhINKBYxbmiybp8kwgqYg3CVwDZqN+XzhDaneEtQAWMnnfz3d7sf2geN6lyW04oKngeR9nIv1p7xJP+uL2CwsBBsP80vHRiFirl1IQakBE+Qzqywa9IpNPxbIwYNVHMvYfFSN+UzvUbuwZgDxOSXsi8gm54rrsUNfYJsMEh75BSQKiup9ECxsjQqYHuxFVqxGsbuF6uIlQi+LIhPgx8TDqTkXT8RGqwJHNCoGL2FZJ+hT2XjHg9lQyFKTiZku2pVFRqbzGm7dWQF7AHB7y4rsCpqTXM8e5euoDNxWQo922qXflCXB8lZWSmW8EbM="
