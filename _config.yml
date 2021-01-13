@@ -35,8 +35,9 @@ masthead_title           : "Abdul Rabbani"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 250
 #staticman_url: https://abdulrabbani.herokuapp.com/v2/entry/abdulrabbani00/minimal-mistakes/gh-pages/comments
+staticman_url: https://api.staticman.net/v3/entry/github/abdulrabbani00/minimal-mistakes/gh-pages/comments
 comments:
-  provider               : "staticman_v2"
+  provider               :
   disqus:
     shortname            : #"abdulrabbani-com"
   discourse:
@@ -50,7 +51,8 @@ comments:
     theme                : # "github-light" (default), "github-dark"
     issue_term           : # "pathname" (default)
   staticman:
-    branch               : "gh-pages"
+    branch               :
+    endpoint:
     #endpoint             : "https://api.staticman.net/v3/entry/github/abdulrabbani00/minimal-mistakes/gh-pages"
 reCaptcha:
   siteKey: "6LcoLSoaAAAAAIr3c90m4erta7SJptdG_qlFeB0H"
