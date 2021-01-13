@@ -34,8 +34,6 @@ logo                     : "assets/images/initials-3.png"
 masthead_title           : "Abdul Rabbani"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 250
-#staticman_url: https://abdulrabbani.herokuapp.com/v2/entry/abdulrabbani00/minimal-mistakes/gh-pages/comments
-#staticman_url: https://api.staticman.net/v3/entry/github/abdulrabbani00/minimal-mistakes/gh-pages/comments
 comments:
   provider               : "staticman_v2"
   disqus:
@@ -125,6 +123,10 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/abdul-rabbani-a2269718a"
+
 
 # Site Footer
 footer:
