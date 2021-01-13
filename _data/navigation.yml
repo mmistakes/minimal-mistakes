@@ -1,11 +1,11 @@
 # main links
 main:
-  - title: "CV"
+  - title: "Resume"
     url: https://dommckean.github.io/portfolio/post%20formats/CV/
-  - title: "About"
+  - title: "About Me"
     url: https://dommckean.github.io/portfolio/post%20formats/About-Me/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+  - title: "Intelligent Automation"
+    url: https://www.lboro.ac.uk/research/intelligent-automation/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
