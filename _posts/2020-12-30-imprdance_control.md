@@ -1,20 +1,25 @@
 ---
-title: "Autonomous-DLO-Manipulation"
+title: "Active Compliance: Impedance and Admittance Control of 1DoF Arm Without F/T Sensor"
 comments: true
 categories:
-  - Post Formats
+  - Videos
 tags:
-  - Post Formats
+  - MATLAB
+  - Simulink
+  - Active Compliance
+  - Impedance Control
+  - Admittance Control
 ---
 
 <p style='text-align: justify;'>
-In this video I have combined impedance with admittance control to produce a hybrid controller. <br>
+In this video I have combined impedance with admittance control to produce a hybrid controller using MATLAB and Simulink. <br>
 The arm is initiated with a small tap and it starts to spin. On detection of an environmental object the arm will stop, 
 reverse a small distance and then test to see if the environmental object has gone. This is impedance control -
 for a velocity or position input we get a force output. If the external object has gone, the arm will continue either to its setpoint or indefinitely, 
 depending on the configuration. The arm can also be driven backwards, this is admittance control - for a force input we get a position/velocity output. <br>
 
 The motor senses the torque on the arm by the slight increase in current and drives the arm in that direction until the torque drops back to zero.
+Despite there being no force/torque sensor on the system, the arm was able to resolve external force as low as 0.2 newtons.
 This was part of my Electrical & Electronics Engineering BSc final year project. 
 Any questions or feedback on how you think I could improve, please leave a comment. 
 </p>
