@@ -61,7 +61,7 @@ comments:
   #   type: "comment"
 
   # Name of the site. Used in notification emails.
-  # name: "Your Site"
+  name: "Abdul Rabbani"
 
   # Notification settings. When enabled, users can choose to receive notifications
   # via email when someone adds a reply or a new comment. This requires an account
@@ -98,7 +98,7 @@ comments:
   # Register your domain at https://www.google.com/recaptcha/ and choose reCAPTCHA V2
   reCaptcha:
     enabled: true
-    siteKey: "6LdRBykTAAAAAFB46MnIu6ixuxwu9W1ihFF8G60Q"
+    siteKey: "6LcoLSoaAAAAAIr3c90m4erta7SJptdG_qlFeB0H"
     # Encrypt reCaptcha secret key using Staticman /encrypt endpoint
     # For more information, https://staticman.net/docs/encryption
-    secret: "PznnZGu3P6eTHRPLORniSq+J61YEf+A9zmColXDM5icqF49gbunH51B8+h+i2IvewpuxtA9TFoK68TuhUp/X3YKmmqhXasegHYabY50fqF9nJh9npWNhvITdkQHeaOqnFXUIwxfiEeUt49Yoa2waRR7a5LdRAP3SVM8hz0KIBT4="
+    secret: "ttmdXw6D4FAbDfNA6E5vFuF4Xo/gzMz4rrKWjGMcVPi4V+lvnEK4oXWkjRB/HiSu/si6N61NK2WqYfiVifSVDiWFOTGcRhE5MlE0hbRU+S9yp59j6H58EQbJ62BPN7Xydk6PfNR6p/yRSgmXUavZkptzxrHCMrNEvVKy7Q+jKCXOcVgsHEXMdQvF8Ljivm9j9BRIOIVzwRqbVDYvk3+2cneO3CuXRUyiPSoFE3LbuRYWB1YztLgscTPLQkhSICOz9gyF8j0u7kvEf2zdCYfNkkianxDghNDkwi+tA3/SCO2UbK70OA/Cght7St3VjB2kcuqYjgsaOdcISpTo0BG0gc3bkmYiHgf9FGqZZTcTrQmUxucxhINKBYxbmiybp8kwgqYg3CVwDZqN+XzhDaneEtQAWMnnfz3d7sf2geN6lyW04oKngeR9nIv1p7xJP+uL2CwsBBsP80vHRiFirl1IQakBE+Qzqywa9IpNPxbIwYNVHMvYfFSN+UzvUbuwZgDxOSXsi8gm54rrsUNfYJsMEh75BSQKiup9ECxsjQqYHuxFVqxGsbuF6uIlQi+LIhPgx8TDqTkXT8RGqwJHNCoGL2FZJ+hT2XjHg9lQyFKTiZku2pVFRqbzGm7dWQF7AHB7y4rsCpqTXM8e5euoDNxWQo922qXflCXB8lZWSmW8EbM="
