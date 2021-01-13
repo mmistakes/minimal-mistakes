@@ -23,7 +23,7 @@ comments:
   #
   # Name of the branch being used. Must match the one sent in the URL of the
   # request.
-  branch: "master"
+  branch: "gh-pages"
 
   commitMessage: "New comment by {fields.name}"
 
