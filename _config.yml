@@ -56,7 +56,7 @@ comments:
     #endpoint             : "https://api.staticman.net/v3/entry/github/abdulrabbani00/minimal-mistakes/gh-pages"
 reCaptcha:
   siteKey: "6LcoLSoaAAAAAIr3c90m4erta7SJptdG_qlFeB0H"
-  secret: "WxwqVHEBV4wQb9pLkjGrrJg6YpUrEyRjfXGYuPJ1U9SdKjZVfzQgcqXETzsVEzaUHdqla+IjgUl/C4e39cUG0fwPIBZF7M36XGj4b7GbTpcwgsPZpsnZcwd8nUxt6ElbAUyMvLGrG54Mw5rGYawNdnV9fnG7PhNBALgCtUqPJQ="
+  secret: "SVjZQ8OhKxbnxEo+WdpZX7+90dEew4HKpMHax5goPD/NZzqaNugQKPGv76LVDfh1lH6WBozyA5FNBuXS85HGkYOXTmhslLURst5ObVhKE9aMtNiqR75l8y5z1B3qyy80HU4MesNXpKYAU5A5otd3f8v8GWRJDn5ZyHwC//n2Gdo="
 atom_feed:
   path                   : # blank (default) uses feed.xml
 search                   : true
