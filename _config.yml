@@ -30,14 +30,14 @@ full_url                : "https://www.abdulrabbani.com"
 #repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 repository               : "abdulrabbani00/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-#logo                     : "/assets/images/computer_science_logo.png"
+logo                     : "assets/images/initials-3.png"
 masthead_title           : "Abdul Rabbani"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 250
 comments:
   provider               : "disqus"
   disqus:
-    shortname            : "abdul-comments"
+    shortname            : "abdulrabbani-com"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
