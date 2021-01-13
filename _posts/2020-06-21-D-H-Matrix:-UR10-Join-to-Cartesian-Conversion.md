@@ -1,5 +1,5 @@
 ---
-title: "Learned kinematics Model for UR10 Robot"
+title: "Learned Kinematics Model for UR10 Robot"
 categories:
   - Post Formats
 tags:
