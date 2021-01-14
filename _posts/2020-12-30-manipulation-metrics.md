@@ -53,7 +53,7 @@ def stats(stats_list2, model_name):
     return stats_list2
 ```
 <br>
-![Unsplash image 10]({{ site.url }}{{ site.baseurl }}/assets/images/metric_post/values.png){: .full}
+![Unsplash image 10]({{ site.url }}{{ site.baseurl }}/assets/images/metric_post/values.jpg){: .full}
 <br>
 
 ## Gaussian Distribution <br>
@@ -114,7 +114,7 @@ def gauss_plot(stats_list2, name, error_type, num):
     pdf.close()
 ```
 
-![Unsplash image 10]({{ site.url }}{{ site.baseurl }}/assets/images/metric_post/gaus.png){: .full}
+![Unsplash image 10]({{ site.url }}{{ site.baseurl }}/assets/images/metric_post/gaus.jpg){: .full}
 
 ## Probability Distribution Function <br>
 
@@ -150,7 +150,7 @@ def prob_dist(stats_list2, name, error_type, num):
     # close the object
     pdf.close()
 ```
-![Unsplash image 10]({{ site.url }}{{ site.baseurl }}/assets/images/metric_post/pdf_plot.png){: .full}
+![Unsplash image 10]({{ site.url }}{{ site.baseurl }}/assets/images/metric_post/pdf_plot.jpg){: .full}
 
 {% highlight scss %}
 .highlight {
