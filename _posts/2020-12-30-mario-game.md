@@ -7,10 +7,11 @@ header:
 tags: 
   - Code
   - Colab
-  -Python
+  - Python
   
 toc: true
 ---
+
 
 ## Colab Implimentation
 
