@@ -52,9 +52,9 @@ def stats(stats_list2, model_name):
     stats_list2.to_csv(path + f"lstm_model_metrics_{model_name}.csv", index=False)
     return stats_list2
 ```
-<br>
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/metric_post/values.jpg" alt="" class="full">
-<br>
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/metric_post/values.jpg" alt="" width="500" height="600">
+
 
 ## Gaussian Distribution <br>
 
