@@ -5,13 +5,18 @@ last_modified_at: 2018-01-03T09:45:06-05:00
 header:
   teaser: "assets/images/markup-syntax-highlighting-teaser.jpg"
 tags: 
-  - code
-  - syntax highlighting
+  - Code
+  - Colab
+  -Python
+  
 toc: true
 ---
 
-https://colab.research.google.com/drive/17zBhqsNGks0me8LRGJH6_fqgv2aZCexh?usp=sharing
+## Colab Implimentation
 
+[Try in Google Colab](https://colab.research.google.com/drive/17zBhqsNGks0me8LRGJH6_fqgv2aZCexh?usp=sharing)
+
+## Python Code
 ```python
 
 '''
@@ -108,4 +113,3 @@ for i in range(num_episodes):
 	
 
 
-<iframe src="https://trinket.io/embed/python/3d8d7ce66b" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
