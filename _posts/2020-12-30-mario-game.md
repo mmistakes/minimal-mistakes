@@ -10,6 +10,10 @@ tags:
 toc: true
 ---
 
+export function callable (anObject) {
+    return anObject && typeof anObject == 'object' && '__call__' in anObject ? true : typeof anObject === 'function';
+};
+
 ```python
 
 '''
