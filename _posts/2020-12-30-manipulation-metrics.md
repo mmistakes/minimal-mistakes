@@ -1,22 +1,18 @@
 ---
-title: "Markup: Syntax Highlighting"
-excerpt: "Post displaying the various ways of highlighting code in Markdown."
+title: "Recording and Storing Performance Metrics"
+excerpt: "A look at the various performance metrics and how to impliment them in python."
 last_modified_at: 2018-01-03T09:45:06-05:00
 header:
   teaser: "assets/images/markup-syntax-highlighting-teaser.jpg"
 tags: 
-  - code
-  - syntax highlighting
+  - Metrics
+  - Gaussian Distribution 
+  - Probability Distribution Function
 toc: true
 ---
 
-Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.[^1]
-
-[^1]: <http://en.wikipedia.org/wiki/Syntax_highlighting>
-
-### GFM Code Blocks
-
-GitHub Flavored Markdown [fenced code blocks](https://help.github.com/articles/creating-and-highlighting-code-blocks/) are supported. To modify styling and highlight colors edit `/_sass/syntax.scss`.
+ `/_sass/syntax.scss`.
+ ``hello world``.
 
 ```python
 def stats(stats_list2, model_name):
@@ -57,7 +53,10 @@ def stats(stats_list2, model_name):
     return stats_list2
 ```
 <br>
+![Unsplash image 10]({{ site.url }}{{ site.baseurl }}/assets/images/metric_post/values.png){: .full}
 <br>
+
+## Gaussian Distribution <br>
 
 This code snippet produces a Gaussian distribution plot of the above metrics; MAE, RMSD and COV.
 
@@ -114,6 +113,11 @@ def gauss_plot(stats_list2, name, error_type, num):
     # close the object
     pdf.close()
 ```
+
+![Unsplash image 10]({{ site.url }}{{ site.baseurl }}/assets/images/metric_post/gaus.png){: .full}
+
+## Probability Distribution Function <br>
+
 This snippet produces the probibility distribution plots for the MAE, RMSD and COV.
 
 ```python
@@ -146,6 +150,7 @@ def prob_dist(stats_list2, name, error_type, num):
     # close the object
     pdf.close()
 ```
+![Unsplash image 10]({{ site.url }}{{ site.baseurl }}/assets/images/metric_post/pdf_plot.png){: .full}
 
 {% highlight scss %}
 .highlight {
