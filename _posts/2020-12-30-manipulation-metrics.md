@@ -53,7 +53,7 @@ def stats(stats_list2, model_name):
     return stats_list2
 ```
 <br>
-![Unsplash image 10]({{ site.url }}{{ site.baseurl }}/assets/images/metric_post/values.jpg){: .full}
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/metric_post/values.jpg" alt="" class="full">
 <br>
 
 ## Gaussian Distribution <br>
