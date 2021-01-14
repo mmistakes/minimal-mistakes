@@ -1,12 +1,12 @@
 ---
 title: "What is Interview Prep And Why You Need It"
-author: "Abdul"
-layout: single
 permalink: /interview_prep/what_is_interview_prep_and_why_you_need_it
+layout: single
+author_profile: false
 sidebar:
   nav: "interview_prep"
-toc: true
-category: interview_prep
+categories:
+  - interview_prep
 tag:
   - Interview Prep
   - Job Opportunity
@@ -16,6 +16,8 @@ tag:
   - FAANG
   - Interview
   - Job Search
+header:
+  overlay_image: "/assets/images/what-is-interview-prep-1.jpg"
 ---
 # Problems With the Interviewing Process
 

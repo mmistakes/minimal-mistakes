@@ -1,11 +1,23 @@
 ---
 title: "How College Fails to Provide Real-World Knowledge"
-author: "Abdul"
-layout: single
 permalink: /interview_prep/how_college_fails_to_provide_real-world_knowledge
+layout: single
+author_profile: false
 sidebar:
   nav: "interview_prep"
-toc: true
+categories:
+  - interview_prep
+tag:
+  - Interview Prep
+  - Job Opportunity
+  - Technical Interview
+  - DevOps
+  - SRE
+  - FAANG
+  - Interview
+  - Job Search
+header:
+  overlay_image: "/assets/images/how-college-fails-1.jpg"
 ---
 # Where College Fails Students
 Many graduates might find that they are having a hard time landing their first job. You might be answering the coding questions with the correct answer, and you have the right attitude. But you’re still not landing the job. In reality, although college gives students a base layer of knowledge, the core curriculums is lacking education in popular technology.

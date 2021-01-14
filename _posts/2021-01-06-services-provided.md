@@ -1,11 +1,23 @@
 ---
 title: "Services Provided"
-author: "Abdul"
-layout: single
 permalink: /interview_prep/services_provided
+layout: single
+author_profile: false
 sidebar:
   nav: "interview_prep"
-toc: true
+categories:
+  - interview_prep
+tag:
+  - Interview Prep
+  - Job Opportunity
+  - Technical Interview
+  - DevOps
+  - SRE
+  - FAANG
+  - Interview
+  - Job Search
+header:
+  overlay_image: "/assets/images/services-provided.jpg"
 ---
 # My Approach
 As an interview coach, I whole-heartedly believe in creating tailored solutions for every single client. While most places have a “one size fits all” approach, I believe that every client is unique in their needs, and requires individual attention. Instead of signing on as many clients as possible, I keep the number of clients I have to a limited number. This allows me to focus on your success, and once you land your dream jobs, I accept a new client.

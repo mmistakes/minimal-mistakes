@@ -19,9 +19,9 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 locale                   : "en-US"
 #title                    : "Abdul's Academic Journal"
 title_separator          : "_"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "" # site tagline that appears below site title in masthead
 name                     : "Abdul Rabbani"
-description              : "This Website will be a collections of my personal Work"
+description              : "This website is a collections of my personal work"
 url                      : "www.abdulrabbani.com"
 #url                      : "https://abdulrabbani00.github.io"
 #baseurl                  : "/blog"
@@ -29,7 +29,7 @@ url                      : "www.abdulrabbani.com"
 full_url                : "https://www.abdulrabbani.com"
 #repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 repository               : "abdulrabbani00/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+#teaser                   : "/assets/images/initials-3.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "assets/images/initials-3.png"
 masthead_title           : "Abdul Rabbani"
 # breadcrumbs            : false # true, false (default)
@@ -102,7 +102,7 @@ author:
   name             : "Abdul Q Rabbani"
   avatar           : "/assets/images/abdul-id-picture-1.jpeg"
   bio              : "This is a journal capturing the things I love to do."
-  location         : "NY"
+  location         : "NYC"
   email            : "abdulrabbani00@gmail.com"
   links:
     - label: "Email"
@@ -299,6 +299,8 @@ defaults:
       comments:  true
       share: true
       related: true
+      toc: true
+      toc_sticky: true
 
 #defaults:
   # _pages
@@ -307,7 +309,6 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: true
 
 #defaults:
   # _portfolio
@@ -316,5 +317,5 @@ defaults:
       type: portfolio
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       share: true

@@ -1,11 +1,23 @@
 ---
 title: "Finding The Right Interview Coach"
-author: "Abdul"
-layout: single
 permalink: /interview_prep/finding_the_right_interview_coach
+layout: single
+author_profile: false
 sidebar:
   nav: "interview_prep"
-toc: true
+categories:
+  - interview_prep
+tag:
+  - Interview Prep
+  - Job Opportunity
+  - Technical Interview
+  - DevOps
+  - SRE
+  - FAANG
+  - Interview
+  - Job Search
+header:
+  overlay_image: "/assets/images/finding-the-right-interview-coach-1.jpg"
 ---
 
 # What is an Interview Coach
