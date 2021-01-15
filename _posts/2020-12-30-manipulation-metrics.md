@@ -13,16 +13,18 @@ toc_sticky: true
 ---
 
 <p style='text-align: justify;'>
-This snippet is from the main LSTM model code that predicts robotic manipulation force on deformable linear objects (DLO). It shows the metrics used for model evaluation such as training and testing loss per epoch, an error plot which itself shows the mean absolute error (MAE), standard deviation (std-dev) and the minimum max-error-value (max value) for each epoch. <br>
-Using these calculated metrics, Gaussian distributions and probability density plots are drawn to show </p>
+This code is taken from my main LSTM model code that predicts robotic manipulation force on deformable linear objects (DLO). It shows the metrics used for model evaluation such as training and testing loss per epoch, an error plot which itself shows the mean absolute error (MAE), standard deviation (std-dev) and the max-error-value (max value) for each epoch. <br>
+Using these calculated metrics, Gaussian distributions and probability density plots are drawn to help compare different models. </p>
 
 ## Loss<br>
 The picture below shows an example of the loss plot generated after each epoch during training. Notice also that the current minimum values together with the epoch in which they occurred are marked for easy reference. <br>
+<br>
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/metrics_post/loss.jpg" alt="loss pic" class="full"><br>
 
 ## Error Plot<br>
 This novel plot created after training, graphically shows the MAE, std-dev and max-value for each epoch, 
 plus the minimum values with the corresponding epochs. <br>
+<br>
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/metrics_post/error.jpg" alt="error pic" class="full"><br>
 
 
