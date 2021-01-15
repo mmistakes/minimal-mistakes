@@ -17,7 +17,7 @@ This snippet is from the main LSTM model code that predicts robotic manipulation
 The 'stats' function below displays the MAE, root-mean-squared-deviation (RMSD) and coefficient of variance (cov) for each trajectory in the testing dataset. <br> The MAE of each epoch in the error plot is actually the mean of means of each trajectory, also called the grand mean. <br>
 A grand mean, std-dev and max value is calculated for MAE, RMSD and cov per epoch. <br>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/bio-photo.jpg" alt="This should be a pic of me" class="full">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/metrics_post/values.jpg" alt="This should be a pic of me" class="full">
 
 <img src="https://github.com/DomMcKean/portfolio/blob/master/assets/images/metrics_post/values.png" alt="Value table" > <br>
 <br>
