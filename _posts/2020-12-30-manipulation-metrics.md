@@ -21,7 +21,7 @@ The picture below shows an example of the loss plot generated after each epoch d
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/metrics_post/loss.jpg" alt="loss pic" class="full"><br>
 
 ## Error Plot<br>
-This novel plot created after training shows the 
+This novel plot created after training shows the <br>
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/metrics_post/error.jpg" alt="error pic" class="full"><br>
 
 
