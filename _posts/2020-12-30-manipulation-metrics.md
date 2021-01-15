@@ -64,6 +64,9 @@ def stats(stats_list2, model_name):
 ## Gaussian Distribution <br>
 
 This code snippet produces a Gaussian distribution plot of the above metrics; MAE, RMSD and COV.<br>
+
+![alt]({{ site.url }}{{ site.baseurl }}/assets/images/gauss.jpg)<br>
+
 <img src="https://github.com/DomMcKean/portfolio/blob/master/assets/images/metrics_post/gauss.jpg" alt="Gauss Plot" ><br>
 <br><br>
 
