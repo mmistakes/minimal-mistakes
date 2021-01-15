@@ -17,9 +17,8 @@ This snippet is from the main LSTM model code that predicts robotic manipulation
 The 'stats' function below displays the MAE, root-mean-squared-deviation (RMSD) and coefficient of variance (cov) for each trajectory in the testing dataset. <br> The MAE of each epoch in the error plot is actually the mean of means of each trajectory, also called the grand mean. <br>
 A grand mean, std-dev and max value is calculated for MAE, RMSD and cov per epoch. <br>
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/metrics_post/values.jpg" alt="This should be a pic of me" class="full">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/metrics_post/values.jpg" alt="Values Table" class="full">
 
-<img src="https://github.com/DomMcKean/portfolio/blob/master/assets/images/metrics_post/values.png" alt="Value table" > <br>
 <br>
 <br>
 
@@ -68,9 +67,8 @@ def stats(stats_list2, model_name):
 
 This code snippet produces a Gaussian distribution plot of the above metrics; MAE, RMSD and COV.<br>
 
-![alt]({{ site.url }}{{ site.baseurl }}/assets/images/gauss.jpg)<br>
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/metrics_post/gauss.jpg" alt="Gauss Plot" class="full">
 
-<img src="https://github.com/DomMcKean/portfolio/blob/master/assets/images/metrics_post/gauss.jpg" alt="Gauss Plot" ><br>
 <br><br>
 
 ```python
@@ -131,7 +129,8 @@ def gauss_plot(stats_list2, name, error_type, num):
 ## Probability Distribution Function <br>
 
 This snippet produces the probibility distribution plots for the MAE, RMSD and COV.<br>
-<img src="https://github.com/DomMcKean/portfolio/blob/master/assets/images/metrics_post/pdf_plot.jpg" alt="PDF Plot" > <br>
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/metrics_post/pdf_plot.jpg" alt="PDF Plot" class="full">
+
 <br><br>
 
 ```python
@@ -195,9 +194,9 @@ def test_runner(name):
 Here you can also see how the results of the metrics are saved in a logical and easy to browse fashion in Google drive, 
 along with all the model versions, i.e. weight matrix for each epoch which makes it easy to reload the model at any point during training<br>
 
-<img src="https://github.com/DomMcKean/portfolio/blob/master/assets/images/metrics_post/drivepic.jpg" alt="Value table" > <br>
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/metrics_post/drivepic.jpg" alt="Drive pic" class="full">
 <br><br>
 ## Model Parameters Saved in Google Drive<br>
 
-<img src="https://github.com/DomMcKean/portfolio/blob/master/assets/images/metrics_post/drive_params.jpg" alt="Value table"  ><br>
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/metrics_post/drive_params.jpg" alt="Model Params" class="full">
 
