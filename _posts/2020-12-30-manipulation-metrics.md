@@ -9,6 +9,7 @@ tags:
   - Gaussian Distribution 
   - Probability Distribution Function
 toc: true
+toc_sticky: true
 ---
 
 This snippet is from the main LSTM model code that predicts robotic manipulation force on deformable linear objects (DLO). It shows the metrics used for model evaluation such as training and testing loss per epoch, an error plot which itself shwows the mean absolute error (MAE), standard deviation (std-dev) and the minimum max-error-value (max value) for each epoch. <br>
