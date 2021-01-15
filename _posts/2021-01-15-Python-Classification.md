@@ -1,3 +1,8 @@
+---
+layout: single
+title:  "Classification!"
+---
+
 kaggle 타이타닉 data 사용 : https://www.kaggle.com/c/titanic
 
 
@@ -327,7 +332,7 @@ display(test.isnull().sum())
 
 
     -------------------
-    
+
 
 
     Pclass        0
@@ -492,7 +497,7 @@ display(test.isnull().sum())
 
 
     -------------------
-    
+
 
 
     Pclass         0
@@ -560,7 +565,7 @@ display(test.isnull().sum())
 
 
     -------------------
-    
+
 
 
     Pclass        0
@@ -591,9 +596,9 @@ plt.show()
 ```
 
 
-    
+
 ![png](output_40_0.png)
-    
+
 
 
 
@@ -623,9 +628,9 @@ train.plot(kind = 'box' , x = "Survived" , y = "Age")
 
 
 
-    
+
 ![png](output_43_1.png)
-    
+
 
 
 
@@ -1093,9 +1098,9 @@ train.plot(kind = 'box' , x = "Survived" , y = "SibSp")
 
 
 
-    
+
 ![png](output_49_1.png)
-    
+
 
 
 
@@ -1693,9 +1698,9 @@ train.plot(kind = 'scatter' , x = "Survived" , y = "Fare")
 
 
 
-    
+
 ![png](output_55_1.png)
-    
+
 
 
 
@@ -1723,7 +1728,5 @@ plt.show()
 ```
 
 
-    
-![png](output_58_0.png)
-    
 
+![png](output_58_0.png)
