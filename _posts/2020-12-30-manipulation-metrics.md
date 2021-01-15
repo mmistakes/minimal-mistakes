@@ -13,10 +13,22 @@ toc_sticky: true
 ---
 
 <p style='text-align: justify;'>
-This snippet is from the main LSTM model code that predicts robotic manipulation force on deformable linear objects (DLO). It shows the metrics used for model evaluation such as training and testing loss per epoch, an error plot which itself shwows the mean absolute error (MAE), standard deviation (std-dev) and the minimum max-error-value (max value) for each epoch. <br>
+This snippet is from the main LSTM model code that predicts robotic manipulation force on deformable linear objects (DLO). It shows the metrics used for model evaluation such as training and testing loss per epoch, an error plot which itself shows the mean absolute error (MAE), standard deviation (std-dev) and the minimum max-error-value (max value) for each epoch. <br>
+Using these calculated metrics, Gaussian distributions and probability density plots are drawn to show </p>
 
+## Loss<br>
+The plot below shows an example of the loss plot generated after each epoch during training. <br>
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/metrics_post/loss.jpg" alt="Drive pic" class="full"><br>
+
+## Error Plot<br>
+This novel plot created after training shows the 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/metrics_post/error.jpg" alt="Drive pic" class="full">
+
+
+## Data Metrics Record<br>
+<p style='text-align: justify;'>
 The 'stats' function below displays the MAE, root-mean-squared-deviation (RMSD) and coefficient of variance (cov) for each trajectory in the testing dataset. <br> The MAE of each epoch in the error plot is actually the mean of means of each trajectory, also called the grand mean. <br>
-A grand mean, std-dev and max value is calculated for MAE, RMSD and cov per epoch. <br>
+A grand mean, std-dev and max value is calculated for MAE, RMSD and cov per epoch. <br> </p>
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/metrics_post/values.jpg" alt="Values Table" class="full">
 
@@ -129,7 +141,9 @@ def gauss_plot(stats_list2, name, error_type, num):
 
 ## Probability Distribution Function <br>
 
-This snippet produces the probibility distribution plots for the MAE, RMSD and COV.<br>
+This snippet produces the probability distribution plots for the MAE, RMSD and COV.<br>
+The example shown below is of the MAE.
+<br>
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/metrics_post/pdf_plot.jpg" alt="PDF Plot" class="full">
 
 <br><br>
@@ -197,7 +211,4 @@ along with all the model versions, i.e. weight matrix for each epoch which makes
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/metrics_post/drivepic.jpg" alt="Drive pic" class="full">
 <br><br>
-## Model Parameters Saved in Google Drive<br>
-
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/metrics_post/drive_params.jpg" alt="Model Params" class="full">
 
