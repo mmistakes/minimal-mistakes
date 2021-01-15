@@ -17,7 +17,7 @@ This snippet is from the main LSTM model code that predicts robotic manipulation
 Using these calculated metrics, Gaussian distributions and probability density plots are drawn to show </p>
 
 ## Loss<br>
-The plot below shows an example of the loss plot generated after each epoch during training. <br>
+The picture below shows an example of the loss plot generated after each epoch during training. Notice also that the current minimum values together with the epoch in which they occurred are marked for easy reference. <br>
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/metrics_post/loss.jpg" alt="loss pic" class="full"><br>
 
 ## Error Plot<br>
