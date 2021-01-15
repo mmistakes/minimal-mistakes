@@ -22,7 +22,7 @@ subtitle                 : # site tagline that appears below site title in masth
 name                     : "Dom McKean"
 description              : "Data Science Researcher/Robotics Engineer at Intelligent Automation. "
                             
-url                      : "https://DomMcKean.github.io"
+url                      : "https://DomMcKean.github.io" 
 baseurl                  : "/portfolio/" # sub path
 repository               :  "DomMcKean/portfolio/" # GitHub username/repo-name e.g.
 teaser                   : # "/assets/images/bio-photo.jpg"  # path of fallback teaser image, e.g. "/assets/images/500x300.png"
