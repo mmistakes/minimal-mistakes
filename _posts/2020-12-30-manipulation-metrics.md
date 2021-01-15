@@ -12,6 +12,7 @@ toc: true
 toc_sticky: true
 ---
 
+<p style='text-align: justify;'>
 This snippet is from the main LSTM model code that predicts robotic manipulation force on deformable linear objects (DLO). It shows the metrics used for model evaluation such as training and testing loss per epoch, an error plot which itself shwows the mean absolute error (MAE), standard deviation (std-dev) and the minimum max-error-value (max value) for each epoch. <br>
 
 The 'stats' function below displays the MAE, root-mean-squared-deviation (RMSD) and coefficient of variance (cov) for each trajectory in the testing dataset. <br> The MAE of each epoch in the error plot is actually the mean of means of each trajectory, also called the grand mean. <br>
