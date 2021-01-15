@@ -1,6 +1,6 @@
 ---
-title: "Recording and Storing Performance Metrics"
-excerpt: "A look at the various performance metrics and how to impliment them in python."
+title: "Data Engineering of Model Performance Metrics"
+excerpt: "A look at the various performance metrics for robotic DLO manipulation and how to impliment them in python."
 last_modified_at: 2018-01-03T09:45:06-05:00
 header:
   teaser: "assets/images/markup-syntax-highlighting-teaser.jpg"
@@ -11,8 +11,13 @@ tags:
 toc: true
 ---
 
- `/_sass/syntax.scss`.
- ``hello world``.
+This snippet is from the main LSTM model code that predicts robotic manipulation force on deformable linear objects (DLO). It shows the metrics used for model evaluation such as training and testing loss per epoch, an error plot which itself shwows the mean absolute error (MAE), standard deviation (std-dev) and the minimum max-error-value (max value) for each epoch. <br>
+
+The 'stats' function below displays the MAE, root-mean-squared-deviation (RMSD) and coefficient of variance (cov) for each trajectory in the testing dataset. <br> The MAE of each epoch in the error plot is actually the mean of means of each trajectory, also called the grand mean. <br>
+A grand mean, std-dev and max value is calculated for MAE, RMSD and cov per epoch. <br>
+<img src="https://github.com/DomMcKean/portfolio/blob/master/assets/images/metrics_post/values.jpg" alt="Value table"  width="250" height="300"><br>
+<br>
+<br>
 
 ```python
 def stats(stats_list2, model_name):
@@ -53,12 +58,13 @@ def stats(stats_list2, model_name):
     return stats_list2
 ```
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/metric_post/values.jpg" alt="" width="500" height="600">
-
+<br><br>
 
 ## Gaussian Distribution <br>
 
-This code snippet produces a Gaussian distribution plot of the above metrics; MAE, RMSD and COV.
+This code snippet produces a Gaussian distribution plot of the above metrics; MAE, RMSD and COV.<br>
+<img src="https://github.com/DomMcKean/portfolio/blob/master/assets/images/metrics_post/gauss.jpg" alt="Gauss Plot"  width="250" height="300"><br>
+<br><br>
 
 ```python
 def gauss_plot(stats_list2, name, error_type, num):
@@ -113,12 +119,13 @@ def gauss_plot(stats_list2, name, error_type, num):
     # close the object
     pdf.close()
 ```
-
-![Unsplash image 10]({{ site.url }}{{ site.baseurl }}/assets/images/metric_post/gaus.jpg){: .full}
+<br><br>
 
 ## Probability Distribution Function <br>
 
-This snippet produces the probibility distribution plots for the MAE, RMSD and COV.
+This snippet produces the probibility distribution plots for the MAE, RMSD and COV.<br>
+<img src="https://github.com/DomMcKean/portfolio/blob/master/assets/images/metrics_post/pdf_plot.jpg" alt="PDF Plot"  width="250" height="300"><br>
+<br><br>
 
 ```python
 ## Get a PDF of the MAE, RMSD and cov.
@@ -150,45 +157,40 @@ def prob_dist(stats_list2, name, error_type, num):
     # close the object
     pdf.close()
 ```
-![Unsplash image 10]({{ site.url }}{{ site.baseurl }}/assets/images/metric_post/pdf_plot.jpg){: .full}
+<br><br>
 
-{% highlight scss %}
-.highlight {
-  margin: 0;
-  padding: 1em;
-  font-family: $monospace;
-  font-size: $type-size-7;
-  line-height: 1.8;
-}
-{% endhighlight %}
 
-```html
-{% raw %}<nav class="pagination" role="navigation">
-  {% if page.previous %}
-    <a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}">Previous article</a>
-  {% endif %}
-  {% if page.next %}
-    <a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}">Next article</a>
-  {% endif %}
-</nav><!-- /.pagination -->{% endraw %}
+
+
+This test_runner function invokes all the code above. It is itself called during the training phase with the name of the current model and epoch.<br>
+It starts by calling the 'stats' function which gets the MAE, RMSD and cov for each point of the trajectory and the mean of means for each metric. <br>
+
+```python
+def test_runner(name):   
+    stats_df = tests(name) # Run tests on testing data and save generated plots to Google Drive
+    stats(stats_df, name) # Record stats and save to Google Drive
+    for i in range(1,4): # 1 to 3 = the colunms in the stats_list DataFrame
+        if i ==1:
+            error_type = 'MAE' # mean absolur error
+        elif i == 2:
+            error_type = 'RMSE' # root mean squared error
+        elif i == 3:
+            error_type = 'cov' # coefficient of variance
+
+        prob_dist(stats_df, name, error_type, i) # Gen prob_dist and save to GD
+        
+        gauss_plot(stats_df, name, error_type, i) # Gen Gauss plots and save to GD
+    print("Done")
 ```
+<br><br>
+## Organisation With Google Drive<br>
 
-```ruby
-module Jekyll
-  class TagIndex < Page
-    def initialize(site, base, dir, tag)
-      @site = site
-      @base = base
-      @dir = dir
-      @name = 'index.html'
-      self.process(@name)
-      self.read_yaml(File.join(base, '_layouts'), 'tag_index.html')
-      self.data['tag'] = tag
-      tag_title_prefix = site.config['tag_title_prefix'] || 'Tagged: '
-      tag_title_suffix = site.config['tag_title_suffix'] || '&#8211;'
-      self.data['title'] = "#{tag_title_prefix}#{tag}"
-      self.data['description'] = "An archive of posts tagged #{tag}."
-    end
-  end
-end
-```
+Here you can also see how the results of the metrics are saved in a logical and easy to browse fashion in Google drive, 
+along with all the model versions, i.e. weight matrix for each epoch which makes it easy to reload the model at any point during training<br>
+
+<img src="https://github.com/DomMcKean/portfolio/blob/master/assets/images/metrics_post/drivepic.jpg" alt="Value table"  width="500" height="600"><br>
+<br><br>
+## Model Parameters Saved in Google Drive<br>
+
+<img src="https://github.com/DomMcKean/portfolio/blob/master/assets/images/metrics_post/drive_params.jpg" alt="Value table"  width="250" height="300"><br>
+
