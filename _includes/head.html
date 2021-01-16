@@ -34,7 +34,7 @@
 <![endif]-->
 
 {% if site.head_scripts %}
-{% for script in site.head_scripts %}
-<script src="{{ script | relative_url }}"></script>
-{% endfor %}
+  {% for script in site.head_scripts %}
+    <script src="{{ script | relative_url }}"></script>
+  {% endfor %}
 {% endif %}
