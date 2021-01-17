@@ -88,7 +88,7 @@ class Kid {
 }
 ```
 
-Notice how in Scala, we separated the code in the class (for instance-dependent logic) and the companion object (for instance-independent logic). **The secret purpose of a companion object as a best practice is to store "static" fields and methods so.** Because class/object companions can access each other's private fields and methods, there's some extra convenience for us.
+Notice how in Scala, we separated the code in the class (for instance-dependent logic) and the companion object (for instance-independent logic). **The secret purpose of a companion object as a best practice is to store "static" fields and methods.** Because class/object companions can access each other's private fields and methods, there's some extra convenience for us.
 
 To further prove the equivalence, Scala code with companions is compiled to the same bytecode as a Java class with static fields and methods.
 
