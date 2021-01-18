@@ -102,13 +102,7 @@ author:
                       4 years in data science/deep learning and robotics, 7 years in control systems and academic research 
                       and 10 years in Automotive Systems Engineering.</p><br>
                       
-                      <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-                      <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" 
-                      data-type="vertical" data-theme="dark" data-vanity="dom-mckean"><a class="LI-simple-link" 
-                      href='https://uk.linkedin.com/in/dom-mckean?trk=profile-badge'>Dom McKean</a></div>
-
-
-                      
+                       
   location         : "Midlands UK"
   email            : "dommckean@gmail.com"
   links:
@@ -127,9 +121,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/dommckean"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/dom-mckean//"
 
 # Site Footer
 footer:
