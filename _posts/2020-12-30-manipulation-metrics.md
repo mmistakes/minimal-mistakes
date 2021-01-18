@@ -16,17 +16,20 @@ toc_sticky: true
 This code is taken from my main LSTM model code that predicts robotic manipulation force on deformable linear objects (DLO). It shows the metrics used for model evaluation such as training and testing loss per epoch, an error plot which itself shows the mean absolute error (MAE), standard deviation (std-dev) and the max-error-value (max value) for each epoch. <br>
 Using these calculated metrics, Gaussian distributions and probability density plots are drawn to help compare different models. </p>
 
-## Loss<br>The picture below shows an example of the loss plot generated after each epoch during training. Notice also that the current minimum values together with the epoch in which they occurred are marked for easy reference. <br>
+## Loss<br>
+The picture below shows an example of the loss plot generated after each epoch during training. Notice also that the current minimum values together with the epoch in which they occurred are marked for easy reference. <br>
 <br>
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/metrics_post/loss.jpg" alt="loss pic" class="full"><br>
 
-## Error Plot<br>This novel plot created after training, graphically shows the MAE, std-dev and max-value for each epoch, 
+## Error Plot<br>
+This novel plot created after training, graphically shows the MAE, std-dev and max-value for each epoch, 
 plus the minimum values with the corresponding epochs. <br>
 <br>
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/metrics_post/error.jpg" alt="error pic" class="full"><br>
 
 
-## Data Metrics Record<br><p style='text-align: justify;'>The 'stats' function below displays the MAE, root-mean-squared-deviation (RMSD) and coefficient of variance (cov) for each trajectory in the testing dataset. <br> The MAE of each epoch in the error plot is actually the mean of means of each trajectory, also called the grand mean. <br>
+## Data Metrics Record<br>
+<p style='text-align: justify;'>The 'stats' function below displays the MAE, root-mean-squared-deviation (RMSD) and coefficient of variance (cov) for each trajectory in the testing dataset. <br> The MAE of each epoch in the error plot is actually the mean of means of each trajectory, also called the grand mean. <br>
 A grand mean, std-dev and max value is calculated for MAE, RMSD and cov per epoch. <br> </p>
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/metrics_post/values.jpg" alt="Values Table" class="full">
@@ -75,7 +78,8 @@ def stats(stats_list2, model_name):
 
 <br><br>
 
-## Gaussian Distribution <br>This code snippet produces a Gaussian distribution plot of the above metrics; MAE, RMSD and COV.<br>
+## Gaussian Distribution <br>
+This code snippet produces a Gaussian distribution plot of the above metrics; MAE, RMSD and COV.<br>
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/metrics_post/gauss.jpg" alt="Gauss Plot" class="full">
 
@@ -136,7 +140,8 @@ def gauss_plot(stats_list2, name, error_type, num):
 ```
 <br><br>
 
-## Probability Distribution Function <br>This snippet produces the probability distribution plots for the MAE, RMSD and COV.<br>
+## Probability Distribution Function <br>
+This snippet produces the probability distribution plots for the MAE, RMSD and COV.<br>
 The example shown below is of the MAE.
 <br>
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/metrics_post/pdf_plot.jpg" alt="PDF Plot" class="full">
@@ -177,7 +182,8 @@ def prob_dist(stats_list2, name, error_type, num):
 
 
 
-## Control Function<br>This test_runner function invokes all the code above. It is itself called during the training phase with the name of the current model and epoch.<br>
+## Control Function<br>
+This test_runner function invokes all the code above. It is itself called during the training phase with the name of the current model and epoch.<br>
 It starts by calling the 'stats' function which gets the MAE, RMSD and cov for each point of the trajectory and the mean of means for each metric. <br>
 
 ```python
@@ -198,7 +204,8 @@ def test_runner(name):
     print("Done")
 ```
 <br><br>
-## Organisation With Google Drive<br>Here you can also see how the results of the metrics are saved in a logical and easy to browse fashion in Google drive, 
+## Organisation With Google Drive<br>
+Here you can also see how the results of the metrics are saved in a logical and easy to browse fashion in Google drive, 
 along with all the model versions, i.e. weight matrix for each epoch which makes it easy to reload the model at any point during training<br>
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/metrics_post/drivepic.jpg" alt="Drive pic" class="full">
