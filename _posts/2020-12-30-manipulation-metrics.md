@@ -206,7 +206,7 @@ def test_runner(name):
 <br><br>
 ## Organisation With Google Drive<br>
 Here you can also see how the results of the metrics are saved in a logical and easy to browse fashion in Google drive, 
-along with all the model versions, i.e. weight matrix for each epoch which makes it easy to reload the model at any point during training<br>
+along with all the model versions, i.e. weight matrix for each epoch which makes it easy to reload the model at any point during training.<br>
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/metrics_post/drivepic.jpg" alt="Drive pic" class="full">
 <br><br>
