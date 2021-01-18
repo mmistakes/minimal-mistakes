@@ -4,9 +4,10 @@ main:
     url: https://dommckean.github.io/portfolio/CV/
   - title: "About Me"
     url: https://dommckean.github.io/portfolio/post%20formats/About-Me/
+  - title: "LinkedIn Profile"
+    url: https://www.linkedin.com/in/dom-mckean/
+ 
   - title: "Intelligent Automation"
     url: https://www.lboro.ac.uk/research/intelligent-automation/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
+ # - title: "Sitemap"
   #   url: /sitemap/
