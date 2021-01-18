@@ -14,5 +14,6 @@ I am currently expanding upon this work in both my Mathematics Honors Thesis and
 
 **Topological data analysis approaches to uncovering the timing of ring structure onset in filamentous networks**  
 **Collaborators:** [Prof. Maria-Veronica Ciocanel](https://services.math.duke.edu/~ciocanel/), [Prof. Adriana T Dawes](https://people.math.osu.edu/dawes.33/), [Prof. Scott A McKinley](https://randommath.net/)  
-[**arXiv Preprint**](https://arxiv.org/abs/1910.05850)  
+**Bulletin of Mathematical Biology**, **83**(10), (2021). [**DOI**](https://link.springer.com/article/10.1007/s11538-020-00847-3)
+[**arXiv**](https://arxiv.org/abs/1910.05850)  
 We apply topological data analysis techniques to detecting the formation of persistent ring channels in the interaction between protein filaments (actin) and motor proteins (myosins). We apply these methods to agent-based mechanical and chemical simulations and introduce visualization tools for analyzing the organization of filamentous networks.   
