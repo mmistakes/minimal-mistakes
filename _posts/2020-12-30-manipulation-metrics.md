@@ -13,7 +13,7 @@ toc_sticky: true
 ---
 
 <p style='text-align: justify;'>
-This code is taken from my main LSTM model code that predicts robotic manipulation force on deformable linear objects (DLO). It shows the metrics used for model evaluation such as training and testing loss per epoch, an error plot which itself shows the mean absolute error (MAE), standard deviation (std-dev) and the max-error-value (max value) for each epoch. <br>
+This code is taken from my main LSTM model code that predicts manipulation forces on deformable linear objects (DLO) for robotic assembly. It shows the metrics used for model evaluation such as training and testing loss per epoch, an error plot which itself shows the mean absolute error (MAE), standard deviation (std-dev) and the max-error-value (max value) for each epoch. <br>
 Using these calculated metrics, Gaussian distributions and probability density plots are drawn to help compare different models. </p>
 
 ## Loss<br>
@@ -140,7 +140,7 @@ def gauss_plot(stats_list2, name, error_type, num):
 ```
 <br><br>
 
-## Probability Distribution Function <br>
+## Probability Density Function (PDF) <br>
 This snippet produces the probability distribution plots for the MAE, RMSD and COV.<br>
 The example shown below is of the MAE.
 <br>
