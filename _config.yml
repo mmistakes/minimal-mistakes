@@ -30,7 +30,7 @@ full_url                : "https://www.abdulrabbani.com"
 #repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 repository               : "abdulrabbani00/minimal-mistakes"
 #teaser                   : "/assets/images/initials-3.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/initials-3.png"
+#logo                     : "/assets/images/initials-3.png"
 masthead_title           : "Abdul Rabbani"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 250
