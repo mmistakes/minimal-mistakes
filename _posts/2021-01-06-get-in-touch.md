@@ -21,6 +21,7 @@ header:
 ---
 
 # Let's Get to Work
-If you’re ready to start nailing interviews and land your dream job, lets get started. Interview prep is going to help you strengthen your interviewing skills and open more doors. If you want to start your interview, schedule a __free__ 30 minute call.
 
-Here we can discuss your needs, your goals, and your ambitions. We will devise a tailored plan that will suit your needs perfectly. Take the first step in stepping up your interview game today.
+If you want to have more success with your interviews and land your dream job, let's get started. Interview prep is going to help you strengthen your interviewing skills and open more doors. Let’s connect, schedule a **free** 30-minute call today. Feel free to mention your availability with a few open time slots.
+
+In this call, we can discuss your needs, your goals, and your ambitions. We will devise a tailored program that will suit your needs perfectly. Take the first step in stepping up your interview game today.
