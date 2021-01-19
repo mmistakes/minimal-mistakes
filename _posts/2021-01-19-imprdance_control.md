@@ -9,6 +9,9 @@ tags:
   - Active Compliance
   - Impedance Control
   - Admittance Control
+  - Labview
+  - Softmotion
+  - Control
 ---
 
 <p style='text-align: justify;'>
