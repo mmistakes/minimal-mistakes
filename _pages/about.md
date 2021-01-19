@@ -171,4 +171,4 @@ deeper and richer insight into the complexity of market data.
 I eventually moved onto *C/C++*. Although I left before I could show my
 skills in *C/C++*, I would like to believe that my former colleagues
 would be happy with my growth.
-lthough I left before I could show my skills in *C/C++*, I would like to believe that my former colleagues would be happy with my growth.
+Although I left before I could show my skills in *C/C++*, I would like to believe that my former colleagues would be happy with my growth.
