@@ -29,7 +29,7 @@ Many people are finding that the job market is saturated with many great candida
 
 # Queue Interview Prep
 
-As with anything, it is more beneficial to work smarter, not harder. By prepping for your interviews, you can improve your interviewing skills and make your way to the top of any candidate pool, for any company. [Learn more](https://arabbani-prep.atlassian.net/wiki/spaces/DOCUMENTS/pages/20742145/Interview-Prep%3A+What+is+Interview+Prep+and+Why+You+Need+It) about the benefits of interview prep, why you need it, and the best way to go about doing it.
+As with anything, it is more beneficial to work smarter, not harder. By prepping for your interviews, you can improve your interviewing skills and make your way to the top of any candidate pool, for any company. [Learn more](/interview_prep/what_is_interview_prep_and_why_you_need_it) about the benefits of interview prep, why you need it, and the best way to go about doing it.
 
 ![checklist](/assets/images/checklist.jpg)
 
@@ -39,15 +39,15 @@ Michael Jordan had Phil Jackson, Tom Brady had Bill Belechek, Manny Pacquiao has
 
 Just as Phil Jackson was crucial to the success of Michael Jordan, you need to find your own coach. Sure, you can shoot hoops on your own without anyone coaching you, but if the great Michael Jordan could benefit from  a coach, so can you.
 
-When going through [interview prep](/interview_prep/what_is_interview_prep_and_why_you_need_it), you should look to [find the right interview coach](https://arabbani-prep.atlassian.net/wiki/spaces/DOCUMENTS/pages/20643907/Interview-Prep%3A+Finding+the+Right+Interview+Coach) for you. I can help you analyze your game, find holes, solutions, and make sure you are dunking those interviews with absolute ease.
+When going through [interview prep](/interview_prep/what_is_interview_prep_and_why_you_need_it), you should look to [find the right interview coach](/interview_prep/finding_the_right_interview_coach) for you. I can help you analyze your game, find holes, solutions, and make sure you are dunking those interviews with absolute ease.
 
 ## How Do I Do Interview Prep?
 
 Once you learn what interview prep is  and you know how to find your interview coach, you might wonder, how does one exactly _do_ interview prep? Do I use flashcards? Do I do speed interviews? Should I practice in front of a mirror?
 
-There are a few services that good interview coaches will provide you. Some generic services offer a “one size fits all” approach, but more than likely, that will not be right for you. Instead, you want an interview program tailored to your needs. You might want to improve your 3 point shot, so why be part of a program that will only help improve your defense?
+There are a few services that good interview coaches will provide you. Some generic services offer a “one-size-fits-all” approach, but more than likely, that will not be right for you. Instead, you want an interview program tailored to your needs. You might want to improve your 3 point shot, so why be part of a program that will only help improve your defense?
 
-Take a look at the [service I am providing](https://arabbani-prep.atlassian.net/wiki/spaces/DOCUMENTS/pages/20742300/Interview-Prep%3A+Services+Provide) to candidates such as yourself to help them drastically improve their interview game.
+Take a look at the [service I am providing](/interview_prep/services_provided) to candidates such as yourself to help them drastically improve their interview game.
 
 ## Hiring Me as Your Coach
 
