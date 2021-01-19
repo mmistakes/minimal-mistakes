@@ -16,7 +16,7 @@ tags:
 
 <p style='text-align: justify;'>
 In this video I have combined impedance with admittance control to produce a hybrid controller using MATLAB and Simulink for design and modelling, and LabView Softmotion for physical implimentation. <br>
-The physical setup was a brushless DC motor with a single arm attched to the rotor. 
+The physical setup was a brushless DC motor controlled using a National Instrument's CompactRio and a single aluminium arm attched to the rotor. 
 The arm's movement was initiated with a small tap and it starts to spin. On detection of an environmental object the arm will stop, 
 reverse a small distance and then test to see if the environmental object has gone. This is impedance control -
 for a velocity or position input we get a force output. If the external object has gone, the arm will continue either to its setpoint or indefinitely, 
