@@ -77,7 +77,7 @@ Price point:
 ![interview-3](/assets/images/iot-1.png)
 
 
-### Creating Custom Lesson Plans and Projects
+## Creating Custom Lesson Plans and Projects
 
 As a candidate, you might be displaying excellent engineering skills and great energy, but you might be lacking core knowledge of crucial technology. Some roles might want a candidate who has your skills but also understands CI/CD very well, and that might be the reason you miss out on your dream job.
 
