@@ -2,7 +2,7 @@
 title: "Linear Algebra"
 author: "Abdul"
 layout: single
-excerpt: "Category Linear Algebra"
+excerpt: "Linear Algebra"
 categories:
   - math
   - linear_algebra

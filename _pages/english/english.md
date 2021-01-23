@@ -2,7 +2,7 @@
 title: "English"
 author: "Abdul"
 layout: single
-excerpt: "Category English"
+excerpt: "English"
 categories:
   - english
 permalink: /categories/english/

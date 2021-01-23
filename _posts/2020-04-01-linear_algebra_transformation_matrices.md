@@ -1,6 +1,5 @@
 ---
 title: "Linear Transformation and Matrices"
-author: "Abdul"
 layout: single
 categories:
   - linear_algebra

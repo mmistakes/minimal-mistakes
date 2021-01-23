@@ -2,10 +2,10 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Interview Prep"
-    url: /interview_prep/introduction_to_interview_prep
   - title: "Categories"
     url: /categories/
+  - title: "Interview Prep"
+    url: /interview_prep/introduction_to_interview_prep
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
@@ -25,5 +25,5 @@ interview_prep:
         url: /interview_prep/services_provided
       - title: "How College Fails to Provide Real-World Knowledge"
         url: /interview_prep/how_college_fails_to_provide_real-world_knowledge
-      - title: "Contact Me and Start Today"
-        url: /interview_prep/contact_me_and_start_today
+      - title: "Get in Touch"
+        url: /interview_prep/get_in_touch

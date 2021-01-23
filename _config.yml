@@ -19,9 +19,9 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 locale                   : "en-US"
 #title                    : "Abdul's Academic Journal"
 title_separator          : "_"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "" # site tagline that appears below site title in masthead
 name                     : "Abdul Rabbani"
-description              : "This Website will be a collections of my personal Work"
+description              : "This website is a collections of my personal work"
 url                      : "www.abdulrabbani.com"
 #url                      : "https://abdulrabbani00.github.io"
 #baseurl                  : "/blog"
@@ -29,15 +29,15 @@ url                      : "www.abdulrabbani.com"
 full_url                : "https://www.abdulrabbani.com"
 #repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 repository               : "abdulrabbani00/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-#logo                     : "/assets/images/computer_science_logo.png"
+#teaser                   : "/assets/images/initials-3.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : "/assets/images/ar-logo-1.png"
 masthead_title           : "Abdul Rabbani"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 250
 comments:
-  provider               : "disqus"
+  provider               : "staticman_v2"
   disqus:
-    shortname            : "abdul-comments"
+    shortname            : #"abdulrabbani-com"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -49,21 +49,22 @@ comments:
     theme                : # "github-light" (default), "github-dark"
     issue_term           : # "pathname" (default)
   staticman:
-    branch               : # "master"
-    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+    branch               : "gh-pages"
+    endpoint: https://api.staticman.net/v3/entry/github/
+    #endpoint             : "https://api.staticman.net/v3/entry/github/abdulrabbani00/minimal-mistakes/gh-pages"
 reCaptcha:
-  siteKey                :
-  secret                 :
+  siteKey: "6LdpFysaAAAAAM6ntqv9IZcAEf7SwXzuCE3VZ-wj"
+  secret: "DKWSdlaEA0TVLb7CmMXL6l/SuqLsslcCxZFhEtyTPCPHIj81B9LQby6aZtJgoIJXWB16CdrxsH9Gpech/I8sH6OrtxcH0IFRRzpzq73SPg0HiXMHRTnMmHM7MTof2t2kXKa51XJQcbxwU6ZOUihA33M6kxn+TuXqOD944cHFj/s="
 atom_feed:
   path                   : # blank (default) uses feed.xml
 search                   : true
 search_full_content      : # true, false (default)
-search_provider          : lunr # lunr (default), algolia, google
-#algolia:
-#  application_id         : OXVJT30V68 # YOUR_APPLICATION_ID
-#  index_name             : abdulrabbani-website # YOUR_INDEX_NAME
-#  search_only_api_key    : 1e7bf37eba6993653d714be7469b913f # YOUR_SEARCH_ONLY_API_KEY
-#  powered_by             : true # true (default), false
+search_provider          : algolia # lunr (default), algolia, google
+algolia:
+  application_id         : OXVJT30V68 # YOUR_APPLICATION_ID
+  index_name             : abdulrabbani-website # YOUR_INDEX_NAME
+  search_only_api_key    : 1e7bf37eba6993653d714be7469b913f # YOUR_SEARCH_ONLY_API_KEY
+  powered_by             : true # true (default), false
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
@@ -101,7 +102,7 @@ author:
   name             : "Abdul Q Rabbani"
   avatar           : "/assets/images/abdul-id-picture-1.jpeg"
   bio              : "This is a journal capturing the things I love to do."
-  location         : "NY"
+  location         : "NYC"
   email            : "abdulrabbani00@gmail.com"
   links:
     - label: "Email"
@@ -122,6 +123,10 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/abdul-rabbani-a2269718a"
+
 
 # Site Footer
 footer:
@@ -294,6 +299,8 @@ defaults:
       comments:  true
       share: true
       related: true
+      toc: true
+      toc_sticky: true
 
 #defaults:
   # _pages
@@ -302,7 +309,6 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: true
 
 #defaults:
   # _portfolio
@@ -311,5 +317,5 @@ defaults:
       type: portfolio
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       share: true

@@ -2,7 +2,7 @@
 title: "Drawing"
 author: "Abdul"
 layout: single
-excerpt: "category drawing"
+excerpt: "Drawing"
 categories:
   - art
   - drawing

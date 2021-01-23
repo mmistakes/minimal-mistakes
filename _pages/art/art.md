@@ -2,7 +2,7 @@
 title: "Art"
 author: "Abdul"
 layout: single
-excerpt: "category Art"
+excerpt: "Art"
 categories:
   - art
 permalink: /categories/art/

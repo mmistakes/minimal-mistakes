@@ -1,6 +1,5 @@
 ---
 title: "The Art of Negotiation"
-author: "Abdul"
 layout: single
 categories:
   - free_writing

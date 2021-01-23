@@ -1,6 +1,5 @@
 ---
 title: "My Favorite Hat"
-author: "Abdul"
 layout: single
 categories: drawing
 permalink: /categories/art/drawing/my_favorite_hat/

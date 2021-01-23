@@ -1,6 +1,5 @@
 ---
 title: "Linear Combinations, Spans and Basic Vectors"
-author: "Abdul"
 layout: single
 categories:
   - linear_algebra

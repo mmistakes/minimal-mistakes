@@ -1,6 +1,5 @@
 ---
 title: "The 3 Idiots and I"
-author: "Abdul"
 layout: single
 categories: free_writing
 ---
