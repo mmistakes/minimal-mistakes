@@ -1,6 +1,5 @@
 ---
 title: "The Determinant"
-author: "Abdul"
 layout: single
 categories:
   - linear_algebra

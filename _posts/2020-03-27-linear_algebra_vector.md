@@ -1,6 +1,5 @@
 ---
 title: "Intro to Vector"
-author: "Abdul"
 layout: single
 categories:
   - linear_algebra

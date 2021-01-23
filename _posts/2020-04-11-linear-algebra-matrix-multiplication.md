@@ -1,6 +1,5 @@
 ---
 title: "Matrix Multiplication as Composition"
-author: "Abdul"
 layout: single
 categories:
   - linear_algebra

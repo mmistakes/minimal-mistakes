@@ -1,6 +1,5 @@
 ---
 title: "Three-Dimensional Linear Transformation"
-author: "Abdul"
 layout: single
 categories:
   - linear_algebra

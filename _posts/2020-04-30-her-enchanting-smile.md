@@ -1,6 +1,5 @@
 ---
 title: "Her Enchanting Smile"
-author: "Abdul"
 layout: single
 categories:
   - poetry

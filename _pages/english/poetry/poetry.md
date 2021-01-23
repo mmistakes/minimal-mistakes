@@ -2,7 +2,7 @@
 title: "Poetry"
 author: "Abdul"
 layout: single
-excerpt: "Category poetry"
+excerpt: "Poetry"
 categories:
   - english
   - poetry

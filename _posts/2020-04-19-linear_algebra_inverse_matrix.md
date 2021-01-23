@@ -1,6 +1,5 @@
 ---
 title: "Inverse Matrices, Column Space and Null Space"
-author: "Abdul"
 layout: single
 categories:
   - linear_algebra

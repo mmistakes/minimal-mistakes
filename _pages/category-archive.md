@@ -12,7 +12,7 @@ permalink: /categories/
     {% if pages.categories %}
       {% if pages.categories.size == 1 %}
 
-  *   [{{pages.title}}]({{pages.url | prepend:site.baseurl }})
+  *   [{{pages.excerpt}}]({{pages.url | prepend:site.baseurl }})
 
       {% endif %}
     {% endif %}
@@ -25,7 +25,7 @@ permalink: /categories/
     {% if pages.categories %}
       {% if pages.categories.size > 1 %}
 
-  *   [{{pages.title}}]({{pages.url | prepend:site.baseurl }})
+  *   [{{pages.excerpt}}]({{pages.url | prepend:site.baseurl }})
 
       {% endif %}
     {% endif %}

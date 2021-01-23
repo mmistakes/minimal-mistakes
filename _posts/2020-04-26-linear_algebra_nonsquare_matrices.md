@@ -1,6 +1,5 @@
 ---
 title: "Non-square Matrices as Transformations Between Dimensions"
-author: "Abdul"
 layout: single
 categories:
   - linear_algebra

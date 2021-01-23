@@ -3,7 +3,7 @@ title: "Free Writing"
 author: "Abdul"
 layout: single
 comments: true
-excerpt: "Category free writing"
+excerpt: "Free Writing"
 categories:
   - english
   - free_writing

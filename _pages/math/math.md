@@ -2,7 +2,7 @@
 title: "Math"
 author: "Abdul"
 layout: single
-excerpt: "category math"
+excerpt: "Math"
 categories:
   - math
 permalink: /categories/math/
