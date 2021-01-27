@@ -7,8 +7,6 @@
 
 - Shahnazian, D., Senoussi, M., Krebs, R. M., Verguts, T., & Holroyd, C. B. (2020). Neural representations of task context and temporal order during action sequence execution. BioRxiv. [https://doi.org/10.1101/2020.09.10.290965](https://doi.org/10.1101/2020.09.10.290965)
  
-- Holroyd, C. B., & Verguts, T. (2020). The best laid plans: Computational principles of ACC. PsyArXiv. [https://doi.org/10.31234/osf.io/3df8y](https://doi.org/10.31234/osf.io/3df8y)
-
 - Senoussi, M., Verbeke, P., Desender, K., De Loof, E., Talsma, D., & Verguts, T. (2020). Theta oscillations shift towards optimal frequency for cognitive control. BioRxiv. [https://doi.org/10.1101/2020.08.30.273706](https://doi.org/10.1101/2020.08.30.273706)
 
 - Verbeke, P., & Verguts, T. (2020). Neural synchrony for adaptive control. PsyArXiv. [https://psyarxiv.com/523x9/](https://psyarxiv.com/523x9/)
@@ -22,15 +20,23 @@
 ## Recent publications
 
 in press:
+
+- Verguts, T. (in press). Introduction to modelling cognitive processes. MIT Press.
+
+- Holroyd, C. B., & Verguts, T. (in press). The best laid plans: Computational principles of ACC. Trends in Cognitive Sciences.
+[https://doi.org/10.31234/osf.io/3df8y](https://doi.org/10.31234/osf.io/3df8y)
+
 - Calderon, C. B., De Loof, E., Ergo, K., Snoeck, A., Boehler, C. N., & Verguts, T. (in press). Signed Reward Prediction Errors in the Ventral Striatum Drive Episodic Memory. Journal of Neuroscience. [https://doi.org/10.1101/2020.01.03.893578](https://doi.org/10.1101/2020.01.03.893578).
 
 - Verbeke, P., Ergo, K., De Loof, E., & Verguts, T. (in press). Learning to synchronize: Midfrontal theta dynamics during reversal learning. Journal of Neuroscience. [https://doi.org/10.1101/2020.06.01.127175](https://doi.org/10.1101/2020.06.01.127175). 
 
 - Peng, Z., Xu, C., Ma, N., Yang, Q., Ren, P., Wen, R., … Chen, Q. (in press). White matter alterations of the goal-directed system in obsessive-compulsive disorder patients and their unaffected first-degree relatives. Biological Psychiatry: Cognitive Neuroscience and Neuroimaging.
 
-- Desender, K., Donner, T. H., & Verguts, T. (in press). Dynamic expressions of confidence within an evidence accumulation framework. Cognition. [https://doi.org/10.1016/j.cognition.2020.104522](https://doi.org/10.1016/j.cognition.2020.104522)
-
 - Rasoulzadeh, V., Sahan, M., van Dijck, J.P., Abrahamse, E., Marzecova, A., Verguts, T., & Fias, W. (in press). Spatial attention in serial order working memory: an EEG study. Cerebral Cortex. [https://doi.org/10.1093/cercor/bhaa368](https://doi.org/10.1093/cercor/bhaa368)
+
+
+2021:
+- Desender, K., Donner, T. H., & Verguts, T. (2021). Dynamic expressions of confidence within an evidence accumulation framework. Cognition (207). [https://doi.org/10.1016/j.cognition.2020.104522](https://doi.org/10.1016/j.cognition.2020.104522)
 
 
 2020:
