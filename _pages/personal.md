@@ -16,7 +16,7 @@ project hosted on github that you can use of and contribute to.
 ## Ocean_cheatsheet
 
 I started a quick [physical oceanography cheat sheet at
-gitlab](pagehttps://gitlab.com/tomchor/ocean_cheatsheet/-/wikis/home) that lists and
+gitlab](https://gitlab.com/tomchor/ocean_cheatsheet/-/wikis/home) that lists and
 explain is a very brief manner some useful equations, relations, etc. I created it mainly
 for personal use and it's still a work in progress that populate as I need but
 contributors would be welcome.
