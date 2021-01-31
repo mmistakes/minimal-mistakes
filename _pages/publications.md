@@ -1,5 +1,7 @@
 ---
 title: Publications
+header:
+  image: /assets/images/vortart/banner_vorticity.png
 permalink: /publications/
 ---
 For a more in-depth list of talks, awards, publications, skills, etc., please

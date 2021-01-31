@@ -1,7 +1,7 @@
 ---
 title: Contact information
 header:
-  image: 
+  image: /assets/images/vortart/banner_vorticity.png
 permalink: /contact/
 ---
 

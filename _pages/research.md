@@ -1,7 +1,7 @@
 ---
 title: Some projects I've worked on
 header:
-  image:
+  image: /assets/images/darktable_exported/atmos_ocean3.jpg
 permalink: /research/
 ---
 

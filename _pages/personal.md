@@ -1,7 +1,7 @@
 ---
 title: Some projects that I pursue on my own
 header:
-  image: 
+  image: /assets/images/vortart/banner_vorticity.png
 permalink: /personal/
 ---
 

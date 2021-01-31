@@ -1,7 +1,7 @@
 ---
 title: About me
 header:
-  image: /assets/images/atmos_ocean2.png
+  image: /assets/images/vortart/banner_vorticity.png
 layout: single
 ---
 
