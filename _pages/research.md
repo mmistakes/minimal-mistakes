@@ -1,9 +1,15 @@
 ---
-title: Some projects I've worked on
+title: Research
 header:
-  image: /assets/images/darktable_exported/atmos_ocean3.jpg
+  image: /assets/images/vortart/banner_vorticity.png
 permalink: /research/
 ---
+
+
+*Overview:* I have started my career doing theoretical and field work in my Undergrad and  Master's education, and
+progresssed torwards numerical research in my PhD. I've worked on Hydrology, Atmospheric
+turbulence (boundary layer meteorology) and Oceanic flows (submesoscale phenomena and
+boundary layer processes).
 
 
 ## Submesoscale instabilities in the ocean bottom boundary layer
@@ -68,30 +74,3 @@ and
 
 ---
 
-# Some field work pictures
-
-### Amazon - BR (October 2015)
-
-Field work in the Amazon whose goal was to aid installation of instruments
-at the [ATTO project](https://www.attoproject.org/) site.
-
-![](/assets/images/AMZ_01.jpg)
-
-![](/assets/images/AMZ_05.jpg)
-
-
-### Tijucas do sul - BR (around 2014)
-
-The goal of this field was to measure meteorological variables with a drone
-while also taking auxiliary micromet measurements on ground.
-
-![](/assets/images/TIJ_00.jpg)
-
-### Itaipu lake - BR (around 2014)
-
-Continuous field campaign that lasted a year and aimed to study turbulent
-fluxes on lakes and sensor decorrelation effects.
-
-![](/assets/images/ITA_00.jpg)
-
-  

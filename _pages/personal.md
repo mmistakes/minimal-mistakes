@@ -1,9 +1,12 @@
 ---
-title: Some projects that I pursue on my own
+title: Personal projects
 header:
   image: /assets/images/vortart/banner_vorticity.png
 permalink: /personal/
 ---
+
+Here you can find a non-exhaustive list of projects that I pursue on my own. If you're
+interested in any of them feel free to reach out.
 
 ## Pymicra
 
