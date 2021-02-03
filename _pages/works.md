@@ -1,5 +1,5 @@
 ---
-permalink: /work/
+permalink: /works/
 title: "Work"
 excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
 layouts_gallery:
