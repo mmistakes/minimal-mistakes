@@ -18,9 +18,9 @@ Take a look at a selection of projects I worked on either in academia, business 
 
 | Project Description | Research Focus | Status |
 | ------------------------------------------- | ----------------------------------------------------- |
-| Short and long-term effect of bundle promotions | Based on actual sales data, we investigate whether customers react towards bundle promotions with higher number of store visits, higher quantity purchased and higher spending. |
-| Value of customer relationship by acqusition | Based on actual sales data, we look at the value of a customer relationship on multiple levels. We specifically investigate differences in key customer indicators (e. g. disount-proneness, probability to return an order) depending on wether they were acquired by a discount, or not.|
-| Experiment: Response to product bundles | We systematically varieddifferent types of product bundle framings and measured the quantity of products baught and the probability that a brand under promotion was preferred against its competitor. |
+| Short and long-term effect of bundle promotions | Based on actual sales data, we investigate whether customers react towards bundle promotions with higher number of store visits, higher quantity purchased and higher spending. | on-going |
+| Value of customer relationship by acqusition | Based on actual sales data, we look at the value of a customer relationship on multiple levels. We specifically investigate differences in key customer indicators (e. g. disount-proneness, probability to return an order) depending on wether they were acquired by a discount, or not.| on-going |
+| Experiment: Response to product bundles | We systematically varieddifferent types of product bundle framings and measured the quantity of products baught and the probability that a brand under promotion was preferred against its competitor. | on-going |
 
 
 ---
