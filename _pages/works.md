@@ -10,29 +10,17 @@ layout: single
 ---
 
 
-Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your personal site, blog, or portfolio on GitHub or self-hosting on your own server. As the name implies --- styling is purposely minimalistic to be enhanced and customized by you :smile:.
+Take a look at a selection of projects I worked on either in academia, business or fun.
 
 
 
-## Notable Features
+## Scientific
 
-- Bundled as a "theme gem" for easier install/upgrading.
-- Compatible with GitHub Pages.
-- Support for Jekyll's built-in Sass/SCSS preprocessor.
-- Nine different skins (color variations).
-- Several responsive layout options (single, archive index, search, splash, and paginated home page).
-
-## Demo Pages
-
-| Name                                        | Description                                           |
+| Project Description | Research Focus | Status |
 | ------------------------------------------- | ----------------------------------------------------- |
-| [Post with Header Image][header-image-post] | A post with a large header image. |
-| [HTML Tags and Formatting Post][html-tags-post] | A variety of common markup showing how the theme styles them. |
-| [Syntax Highlighting Post][syntax-post] | Post displaying highlighted code. |
-| [Post with a Gallery][gallery-post] | A post showing several images wrapped in `<figure>` elements. |
-| [Sample Collection Page][sample-collection] | Single page from a collection. |
-| [Categories Archive][categories-archive] | Posts grouped by category. |
-| [Tags Archive][tags-archive] | Posts grouped by tag. |
+| Short and long-term effect of bundle promotions | Based on actual sales data, we investigate whether customers react towards bundle promotions with higher number of store visits, higher quantity purchased and higher spending. |
+| Value of customer relationship by acqusition | Based on actual sales data, we look at the value of a customer relationship on multiple levels. We specifically investigate differences in key customer indicators (e. g. disount-proneness, probability to return an order) depending on wether they were acquired by a discount, or not.|
+| Experiment: Response to product bundles | We systematically varieddifferent types of product bundle framings and measured the quantity of products baught and the probability that a brand under promotion was preferred against its competitor. |
 
 
 ---
