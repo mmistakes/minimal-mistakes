@@ -26,8 +26,8 @@ Take a look at a selection of projects I worked on either in academia, business 
 
 | Project Description | Research Focus | Data type | Status |
 | ------------------------------------------- | ----------------------------------------------------- |
-| Measure brand perception of energie provider | Survey-based research on a multitude of brand-related mesaures and customer satisfaction. | Survey | final |
-| Measure success drivers of pop up event | Survey-based research on the perception of a temporary live marketing campaign and its effects on the brand perception for an insurance company | Survey | final |
+| Brand perception of energie provider | Survey-based research on a multitude of brand-related mesaures and customer satisfaction. | Survey | final |
+| Success drivers of pop up event | Survey-based research on the perception of a temporary live marketing campaign and its effects on the brand perception for an insurance company | Survey | final |
 
 ---
 
