@@ -4,6 +4,8 @@ main:
     url: https://tim-sadler.github.io/works/
   - title: "Education"
     url: https://tim-sadler.github.io/education/
+  - title: "Skills"
+    url: https://tim-sadler.github.io/skills/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
