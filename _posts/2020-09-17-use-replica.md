@@ -2,7 +2,7 @@
 toc: true
 title: "Django 서버에서 데이터베이스 Read replica 복제 지연 문제 대응"
 date: 2020-09-17
-categories: architecture,python
+categories: [ architecture,python ]
 ---
 
 ## 배경 지식

@@ -2,7 +2,7 @@
 toc: true
 title: "Private Pypi 서버 구성하기"
 date: 2019-05-31
-categories: python
+categories: [ python ]
 ---
 
 Python 용 Package Index 를 비공개 형태로 배포하는 방법을 설명합니다.

@@ -2,7 +2,7 @@
 toc: true
 title: "Clean Architecture 소개"
 date: 2020-03-31
-categories: architecture
+categories: [ architecture ]
 ---
 
 클린 아키텍쳐에 대해 개발자로써의 관점과 왜 필요한지에 대해 공유합니다.
@@ -81,15 +81,19 @@ SW 시스템의 핵심 모듈은 UI, 데이터베이스, 프레임워크, 라이
 
 **Entity 와 Use Case**
 
-> Entity 와 Use Case 가 어플리케이션의 핵심입니다. 아키텍처에 대해서 얘기할 때 이 것들이 존재하는 레이어가 가장 중요합니다. 그리고 이 레이어는 세부 (구현) 사항을 담고 있는 레이어의 변경에 영향을 받지 않아야 합니다.
+Entity 와 Use Case 가 어플리케이션의 핵심입니다. 아키텍처에 대해서 얘기할 때 이 것들이 존재하는 레이어가 가장 중요합니다. 그리고 이 레이어는 세부 (구현) 사항을 담고 있는 레이어의 변경에 영향을 받지 않아야 합니다.
 
 **Adapter 와 Converter 의 필요성**
 
-> Adapter 와 Converter 는 데이터를 서로 다른 레이어로 전달 할 때 레이어 내부의 세부 사항이 다른 레이어로 전파되지 않도록 하는 역할을 합니다. 즉 각각의 레이어가 필요로 하는 그들만의 데이터 모델을 외부 레이어로 전달하거나 외부 레이어에서 받아 올 때 외부 또는 내부 레이어의 데이터 모델의 격리를 위해서는 외부 레이어의 데이터 모델을 내부 레이어의 데이어 모델로 변환하는 그리고, 내부 레이어의 데이터 모델을 외부 레이어의 데이터 모델로 변환하는 기능이 필요한데 이 때 Adapter 와 Converter 가 필요한데 레이어간 완충재 역할을 한다고 보면 되겠습니다. 그리고 이 녀석들을 통해 DDD에서 말하는 [Bounded Context](https://zetawiki.com/wiki/%EB%B0%94%EC%9A%B4%EB%94%94%EB%93%9C_%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8) 가 좋은 형태로 구현된다고 볼 수 있습니다. 예시를 확인해 보게습니다.
+Adapter 와 Converter 는 데이터를 서로 다른 레이어로 전달 할 때 레이어 내부의 세부 사항이 다른 레이어로 전파되지 않도록 하는 역할을 합니다. 
+
+즉 각각의 레이어가 필요로 하는 그들만의 데이터 모델을 외부 레이어로 전달하거나 외부 레이어에서 받아 올 때 외부 또는 내부 레이어의 데이터 모델의 격리를 위해서는 외부 레이어의 데이터 모델을 내부 레이어의 데이어 모델로 변환하는 그리고, 내부 레이어의 데이터 모델을 외부 레이어의 데이터 모델로 변환하는 기능이 필요한데 이 때 Adapter 와 Converter 가 레이어간 완충재 역할을 한다고 보면 되겠습니다. 그리고 이 녀석들을 통해 DDD에서 말하는 [Bounded Context](https://zetawiki.com/wiki/%EB%B0%94%EC%9A%B4%EB%94%94%EB%93%9C_%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8) 가 좋은 형태로 구현된다고 볼 수 있습니다. 예시를 확인해 보겠습니다.
 
 Adapter 의 예시
 
-- [Repository](https://github.com/urunimi/ddd-go/blob/master/internal/pkg/notice/repository.go)
+- [Repository](https://github.com/urunimi/ddd-go/blob/master/internal/pkg/notice/repo.go)
+    - Use case 에 주입해주기 위한 interface
+    - cf. Implemented [Repository](https://github.com/urunimi/ddd-go/blob/master/internal/pkg/notice/repo/repo.go)
 
 Converter 의 예시
 
@@ -97,7 +101,7 @@ Converter 의 예시
 
 **의존성 역전의 법칙**
 
-> 이 법칙은 **고수준의 모듈이 저수준 모듈에 의존성을 가지면 안된다는 것**을 말합니다. [SOLID 법칙](https://en.wikipedia.org/wiki/SOLID) 에서 마지막 `Dependency Inversion Principle` 로도 소개 되었는데 Depend 양쪽 모듈 모두 추상화에 의존해야 한다는 것이고 추상화 모듈 또한 세부 사항에 의존을 하면 안 된다는 법칙입니다. 즉, 세부 사항이 추상화된 모듈에 의존성을 가져야 합니다.
+이 법칙은 **고수준의 모듈이 저수준 모듈에 의존성을 가지면 안된다는 것**을 말합니다. [SOLID 법칙](https://en.wikipedia.org/wiki/SOLID) 에서 마지막 `Dependency Inversion Principle` 로도 소개 되었는데 Depend 양쪽 모듈 모두 추상화에 의존해야 한다는 것이고 추상화 모듈 또한 세부 사항에 의존을 하면 안 된다는 법칙입니다. 즉, 세부 사항이 추상화된 모듈에 의존성을 가져야 합니다.
 
 **경계(boundary) 간의 데이터 전달**
 
@@ -114,12 +118,15 @@ Clean architecture 의 장점을 제대로 이해하기 위해서는 소프트�
 #### 3-Layers Architecture (Eg. MVC)
 
 1. **Data Layer**
+
 비지니스 레이어에서 발생하는 요청을 하부의 데이터 스토리지에 대한 쿼리로 변환하는 걸 담당합니다.
 
 2. **Business Layer**
+
 비지니스 로직과 어플리케이션 로직이 있는 레이어 입니다. 이 레이어는 프리젠테이션 레이어에 독립적이어야 합니다. 하지만 여전히 데이터 레이어에는 명시적인 종속성을 가집니다. 보통 Spring Framework 을 사용하다보면 `service` 나 `controller` 에 작성하는 코드로 명시적으로 ORM 을 호출해서 데이터를 가져옵니다.
 
 3. **Presentation Layer**
+
 UI 를 통해 어플리케이션의 기능을 전달하는 걸 담당합니다. 예를 들어 Django 에서의 View 코드가 이에 해당합니다. 이 Layer 는 복잡한 일을 하지 말아야 하고 Versioning 을 담당합니다.
 
 ![2020-03-31-clean-arch/Untitled%201.png](https://raw.githubusercontent.com/urunimi/urunimi.github.io/master/_posts/2020-03-31-clean-arch/Untitled%201.png)
@@ -147,12 +154,12 @@ DB 중심 설계와 도메인 중심 설계를 비교하기 위해 간단히 Go 
 ├── repo
 │   ├── db_model.go
 │   ├── repo.go
-├── repository.go
+├── repo.go
 └── usecase.go
 ```
 
 ```go
-// repository.go - Repository interface definition
+// repo.go - Repository interface definition
 type Repository interface {
     GetBy(email string) (*User, error)
     Create(User) error

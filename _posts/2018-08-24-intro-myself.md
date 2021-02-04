@@ -2,7 +2,7 @@
 toc: true
 title: "[Buzzvil People] Ben Yoo, Software Developer"
 date: 2018-08-24
-categories: intro
+categories: [ intro ]
 ---
 
 Buzzvil 에서 회사 블로그에 기재하기 위한 인터뷰 내용입니다.

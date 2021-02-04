@@ -2,7 +2,7 @@
 toc: true
 title: "낙관적 락(Optimistic locking)과 자동 재시도"
 date: 2020-11-06
-categories: architecture,database
+categories: [ architecture,database ]
 ---
 
 ## **락이 왜 필요한가**

@@ -2,7 +2,7 @@
 toc: true
 title: "Java 언어로 Clean Architecture 시작하기 (feat. Spring Boot)"
 date: 2020-12-16
-categories: architecture,java,spring
+categories: [ architecture,java,spring ]
 ---
 
 ## 시작하기 앞서
