@@ -24,7 +24,7 @@ Take a look at a selection of projects I worked on either in academia, business 
 
 ## Business
 
-| Project Description | Research Focus  | Data type | Status |
+| Project Description | Research Focus | Data type | Status |
 | ------------------------------------------- | ----------------------------------------------------- |
 | Measure brand perception of energie provider | Survey-based research on a multitude of brand-related mesaures and customer satisfaction. | Survey | final |
 | Measure success drivers of pop up event | Survey-based research on the perception of a temporary live marketing campaign and its effects on the brand perception for an insurance company | Survey | final |
@@ -33,7 +33,7 @@ Take a look at a selection of projects I worked on either in academia, business 
 
 ## Teaching (self and supervised)
 
-| Project Description | Research Focus | Status |
+| Project Description | Research Focus | Data type | Status |
 | ------------------------------------------- | ----------------------------------------------------- |
 | Experiment: Effect of premium promotions  | Measure the response (brand choice probability & attractiveness) of subjects towards different premium promotions. | Survey | final |
 | Qualitative: Money-back-guarantees | Explore what might impact customer behavior in light of fast-moving consumer good's money back guarantees.  | Qualitative | final |
