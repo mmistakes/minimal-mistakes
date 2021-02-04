@@ -1,8 +1,8 @@
 ---
 permalink: /education/
 title: "Education"
-excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
-last_modified_at: 2020-10-28T14:51:23-04:00
+excerpt: "My academic career."
+last_modified_at: 2020-12-28T14:51:23-04:00
 classes: wide
 toc: true
 author_profile: true
@@ -21,8 +21,6 @@ Here you will find my academic career.
 | 2013 | B. Sc. | Management & Economics | University of Magdeburg, Germany |
 | 2008 | Abitur | University entrance degree | Braunschweig, Germany |
 
----
-
 ## International Experience
 
 | Year | what | where |
@@ -31,8 +29,6 @@ Here you will find my academic career.
 | 2014 | Semester abroad | San Diego State University, California, USA |
 | 2013 | Internship | Air Namibia, Windhoek, Namibia |
 | 2006 | Semester abroad | High School, Corvallis, Oregon, USA |
-
----
 
 ## Further Training / Courses
 
