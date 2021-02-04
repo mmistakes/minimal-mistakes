@@ -16,7 +16,7 @@ Here you will find my academic career.
 
 | Year | Degree | in | from |
 | ------------------------------------------- | ----------------------------------------------------- |
-| Expected 2021 | Marketing & Pricing | PhD (Dr. rer. oec.) | University of Hamburg, Germany |
+| Expected 2021 | PhD (Dr. rer. oec.) | Marketing & Pricing | University of Hamburg, Germany |
 | 2016 | M. Sc. | Management | University of Magdeburg, Germany |
 | 2013 | B. Sc. | Management & Economics | University of Magdeburg, Germany |
 | 2008 | Abitur | University entrance degree | Braunschweig, Germany |
@@ -25,10 +25,12 @@ Here you will find my academic career.
 
 ## International Experience
 
-| Project Description | Research Focus  | Data type | Status |
+| Year | what | where |
 | ------------------------------------------- | ----------------------------------------------------- |
-| Measure brand perception of energie provider | Survey-based research on a multitude of brand-related mesaures and customer satisfaction. | Survey | final |
-| Measure success drivers of pop up event | Survey-based research on the perception of a temporary live marketing campaign and its effects on the brand perception for an insurance company | Survey | final |
+| 2017 - 2021 | several international academic marketing conferences | - |
+| 2014 | Semester abroad | San Diego State University, California, USA |
+| 2013 | Internship | Air Namibia, Windhoek, Namibia |
+| 2006 | Semester abroad | High School, Corvallis, Oregon, USA |
 
 ---
 
