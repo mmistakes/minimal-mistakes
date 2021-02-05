@@ -1,5 +1,5 @@
 ---
-title: "파이썬 주식 분석 (3) - 백트레이딩"
+title: "파이썬 주식 분석 (3) - 백테스트"
 categories:
   - INVESTING
 tags:
@@ -102,7 +102,7 @@ def BackTrade(sdf, input_won, krw2usd):
 * 인텔 (종목코드: `INTC`)
 
 <figure style="width: 100%">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/python-stock5.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/python-stock6.png" alt="">
 </figure>
 
 시세 차트만 보면 주가가 급격히 떨어지는 구간이 꽤 있을 뿐더러, 26주 이동평균선만 봐도 주가가 떨어지는 추세에 있는 ~~개잡주~~ 종목인 것을 볼 수 있다. 그런데 동일한 조건으로 인텔 주식에 투자했을 때의 예상 수익은 **`50.55%`**로 오히려 앞서 살펴본 디즈니보다 높게 나왔다.
