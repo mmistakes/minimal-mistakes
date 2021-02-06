@@ -1,4 +1,4 @@
-## Unreleased
+## [4.22.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.22.0)
 
 ### Bug Fixes
 
