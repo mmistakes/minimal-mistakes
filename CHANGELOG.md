@@ -7,6 +7,7 @@
 
 ### Enhancements
 
+- Allow custom sorting for collections. [#2723](https://github.com/mmistakes/minimal-mistakes/pull/2723)
 - Use `sort_natural` instead of custom Liquid logic to sort tags and categories. [#2756](https://github.com/mmistakes/minimal-mistakes/pull/2756)
 - Add configuration option to toggle off RSS feed link in `<head>` and site footer. [#2787](https://github.com/mmistakes/minimal-mistakes/pull/2787)
 - Upgrade Lunrjs to 2.3.9 and switch to `relative_url`. [#2805]
