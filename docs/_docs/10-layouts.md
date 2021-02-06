@@ -250,7 +250,7 @@ This layout displays all documents grouped by a specific collection. It accommod
 collection: # collection name
 entries_layout: # list (default), grid
 show_excerpts: # true (default), false
-sort_by: # date (default) title
+sort_by: # date (default), title or any metadata key added to the collection's documents
 sort_order: # forward (default), reverse
 ```
 
@@ -264,6 +264,11 @@ collection: recipes
 ```
 
 If you want to sort the collection by title add `sort_by: title`. If you want reverse sorting, add `sort_order: reverse`.
+You can also use any metadata key that is present in the documents. For example, you can add `number: <any number>` to your documents and use `number` as the sort key:
+
+```yaml
+sort_by: number
+```
 
 ### `layout: category`
 
