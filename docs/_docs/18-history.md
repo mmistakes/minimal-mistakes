@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2020-11-14T18:10:28-05:00
+last_modified_at: 2021-02-05T20:11:02-05:00
 toc: false
 ---
 
@@ -18,6 +18,7 @@ toc: false
 
 ### Enhancements
 
+- Update documentation to inclue `toc_sticky` parameter's description. [#2741](https://github.com/mmistakes/minimal-mistakes/pull/2741)
 - Update Indonesian localized UI text strings. [#2731](https://github.com/mmistakes/minimal-mistakes/pull/2731)]
 - Update remote theme documentation. [#2734](https://github.com/mmistakes/minimal-mistakes/pull/2734)
 - Update allejo/jekyll-toc to v1.1.0, skip headings without an ID. [#2752](https://github.com/mmistakes/minimal-mistakes/pull/2752)
