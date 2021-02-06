@@ -1852,6 +1852,59 @@ no-NB:
 no-NN:
   <<: *DEFAULT_NO
 
+# Hebrew
+# -------
+he: &DEFAULT_HE
+  skip_links                 : "דלגו על קישור"
+  skip_primary_nav           : "דלגו לראשי"
+  skip_content               : "דלגו לתוכן"
+  skip_footer                : "דלגו לתחתית"
+  page                       : "דף"
+  pagination_previous        : "קודם"
+  pagination_next            : "הבא"
+  breadcrumb_home_label      : "בית"
+  breadcrumb_separator       : "/"
+  menu_label                 : "סגירה/פתיחה של תפריט"
+  search_label               : "סגירה/פתיחה של חיפוש"
+  toc_label                  : "בדף זה"
+  ext_link_label             : "קישור ישיר"
+  less_than                  : "פחות מ"
+  minute_read                : "דקת קריאה"
+  share_on_label             : "שתפו ב"
+  meta_label                 :
+  tags_label                 : "תגיות:"
+  categories_label           : "קטגוריות:"
+  date_label                 : "מעודכן:"
+  comments_label             : "השאירו הערה"
+  comments_title             : "הערות"
+  more_label                 : "קראו עוד"
+  related_label              : "אולי יעניין אותך גם"
+  follow_label               : "עקבו אחרי"
+  feed_label                 : "פיד"
+  powered_by                 : "Powered by"
+  website_label              : "אתר"
+  email_label                : "אימייל"
+  recent_posts               : "פוסטים אחרונים"
+  undefined_wpm              : "Undefined parameter words_per_minute at _config.yml"
+  comment_form_info          : "האימייל שלך נשמר חסוי. שדות חובה מסומנים"
+  comment_form_comment_label : "הערה"
+  comment_form_md_info       : "Markdown is supported."
+  comment_form_name_label    : "שם"
+  comment_form_email_label   : "כתובת אימייל"
+  comment_form_website_label : "אתר (אפשרות)"
+  comment_btn_submit         : "שלחו הערה"
+  comment_btn_submitted      : "נשלח"
+  comment_success_msg        : "תודה על ההערה שלך! היא תופיע באתר ברגע שתאושר."
+  comment_error_msg          : "סליחה, קרתה תקלה בשליחה. אנא וודאו שכל השדות מלאים ונסו שנית."
+  loading_label              : "טוען..."
+  search_label_text          : "מילות חיפוש..."
+  search_placeholder_text    : "מילות חיפוש..."
+  search_algolia_no_results  : "אין תוצאות"
+  results_found              : "תוצאות נמצאו"
+  back_to_top                : "חזרה להתחלה"
+he-IL:
+  <<: *DEFAULT_HE
+
 # Another locale
 # --------------
 #
