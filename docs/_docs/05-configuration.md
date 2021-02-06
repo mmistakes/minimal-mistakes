@@ -559,6 +559,15 @@ atom_feed:
 **Note:** By default the site feed is linked in two locations: inside the [`<head>` element](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/head.html) and at the bottom of every page in the [site footer](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/footer.html).
 {: .notice--info}
 
+### Disable Feed Icons
+
+By default the theme links to `feed.xml` generated in the root of your site by the **jekyll-feed** plugin. To remove the RSS icon in the header and footer, update `atom_feed` in `_config.yml` like so:
+
+```yaml
+atom_feed:
+  hide: true
+```
+
 ### Site search
 
 To enable site-wide search add `search: true` to your `_config.yml`.
