@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2021-02-05T20:28:17-05:00
+last_modified_at: 2021-02-05T20:30:19-05:00
 toc: false
 ---
 
@@ -18,6 +18,7 @@ toc: false
 
 ### Enhancements
 
+- Use `sort_natural` instead of custom Liquid logic to sort tags and categories. [#2756](https://github.com/mmistakes/minimal-mistakes/pull/2756)
 - Add configuration option to toggle off RSS feed link in `<head>` and site footer. [#2787](https://github.com/mmistakes/minimal-mistakes/pull/2787)
 - Upgrade Lunrjs to 2.3.9 and switch to `relative_url`. [#2805]
 - Adds `.webp` to list of supported image extensions for the image popup lightbox. [#2788](https://github.com/mmistakes/minimal-mistakes/pull/2788)
