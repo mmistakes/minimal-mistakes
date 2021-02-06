@@ -428,13 +428,15 @@ To overlay text on top of a header image you have a few more options:
 | Name                     | Description | Default |
 | ----                     | ----------- | ------- |
 | **overlay_image**        | Header image you'd like to overlay. Same rules as `header.image` from above. | |
-| **overlay_filter**       | Color/opacity to overlay on top of the header image eg: `0.5` or `rgba(255, 0, 0, 0.5)`. |
+| **overlay_filter**       | Color/opacity to overlay on top of the header image. Example: `0.5`, `rgba(255, 0, 0, 0.5)` or [`linear-gradient`][mdn-linear-gradient]. |
 | **show_overlay_excerpt** | Display excerpt in the overlay text | true |
 | **excerpt**              | Auto-generated page excerpt is added to the overlay text or can be overridden. | |
 | **tagline**              | Overrides page excerpt. Useful when header text needs to be different from excerpt in archive views. | |
 | **actions**              | Call to action button links (`actions` array: `label` and `url`). More than one button link can be assigned. | |
 | **cta_label**            | Deprecated, use `actions` instead. Call to action button text label. | `more_label` in UI Text data file |
 | **cta_url**              | Deprecated, use `actions` instead. Call to action button URL. | |
+
+  [mdn-linear-gradient]: https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient()
 
 With this YAML Front Matter:
 
@@ -477,7 +479,7 @@ header:
       url: "https://github.com"
 ```
 
-Or if you want to do more fancy things, go full rgba:
+Or if you feel colorful, use full rgba:
 
 ![transparent red overlay]({{ "/assets/images/mm-header-overlay-red-filter.jpg" | relative_url }})
 
@@ -486,6 +488,21 @@ excerpt: "This post should [...]"
 header:
   overlay_image: /assets/images/unsplash-image-1.jpg
   overlay_filter: rgba(255, 0, 0, 0.5)
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  actions:
+    - label: "Download"
+      url: "https://github.com"
+```
+
+Or if you want to do more fancy things, go all the way to [linear-gradient][mdn-linear-gradient]:
+
+![transparent custom overlay]({{ "/assets/images/mm-header-overlay-custom-filter.jpg" | relative_url }})
+
+```yaml
+excerpt: "This post should [...]"
+header:
+  overlay_image: /assets/images/unsplash-image-1.jpg
+  overlay_filter: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 255, 255, 0.5))
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
   actions:
     - label: "Download"
