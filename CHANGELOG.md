@@ -7,6 +7,7 @@
 
 ### Enhancements
 
+- Add Hebrew localized UI text strings. [#2760](https://github.com/mmistakes/minimal-mistakes/pull/2760)
 - Update documentation to include `toc_sticky` parameter's description. [#2741](https://github.com/mmistakes/minimal-mistakes/pull/2741)
 - Update Indonesian localized UI text strings. [#2731](https://github.com/mmistakes/minimal-mistakes/pull/2731)
 - Update remote theme documentation. [#2734](https://github.com/mmistakes/minimal-mistakes/pull/2734)
