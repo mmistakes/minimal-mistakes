@@ -7,6 +7,7 @@
 
 ### Enhancements
 
+- Upgrade Lunrjs to 2.3.9 and switch to `relative_url`. [#2805]
 - Adds `.webp` to list of supported image extensions for the image popup lightbox. [#2788](https://github.com/mmistakes/minimal-mistakes/pull/2788)
 - Add Hebrew localized UI text strings. [#2760](https://github.com/mmistakes/minimal-mistakes/pull/2760)
 - Update documentation to include `toc_sticky` parameter's description. [#2741](https://github.com/mmistakes/minimal-mistakes/pull/2741)
