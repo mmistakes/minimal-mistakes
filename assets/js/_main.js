@@ -173,6 +173,12 @@ $(document).ready(function() {
       console.warn(thisButton);
       throw new Error("No code block found for this button.");
     }
+
+    // Skip line numbers if present (i.e. {% highlight lineno %})
+    var realCodeBlock = codeBlock.querySelector("td.code");
+    if (realCodeBlock) {
+      codeBlock = realCodeBlock;
+    }
     return copyText(codeBlock.innerText);
   };
 
