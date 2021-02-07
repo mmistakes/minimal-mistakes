@@ -1,0 +1,11 @@
+pormaj :
+  username: pormaj    # user name : SungWook
+  name: pormaj        # user full name : SungWook Kim
+  url_full:             # Homepage url
+  url:
+  bio: 내용 </a>
+                        # 회사정보
+  picture: assets/built/images/economy-author-logo.jpg   # author image
+  facebook:             # facebook ID
+  twitter:              # twitter ID
+  cover: False
