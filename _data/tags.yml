@@ -1,0 +1,12 @@
+jekyll :
+  name: jekyll
+  description: False
+  cover: assets/built/images/background-frontend.jpg
+html :
+  name: html
+  description: False
+  cover: assets/built/images/background-frontend.jpg
+JS :
+  name: JS
+  description: False
+  cover: assets/built/images/background-frontend.jpg
