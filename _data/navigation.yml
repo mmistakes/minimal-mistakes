@@ -1,12 +1,12 @@
-# main links
-main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+<ul class="nav" role="menu">
+    <li class="nav-home" role="menuitem"><a href="{{site.baseurl}}">Home</a></li>
+    <li class="nav-about" role="menuitem"><a href="{{site.baseurl}}about/">About</a></li>
+    <li class="nav-jekyll" role="menuitem"><a href="{{site.baseurl}}tag/jekyll/">Jekyll</a></li>
+    <li class="nav-python" role="menuitem"><a href="{{site.baseurl}}tag/python/">Python</a></li>
+    <li class="nav-archive" role="menuitem">
+        <a href="/archive.html">All Posts</a>
+    </li>
+    <li class="nav-archive" role="menuitem">
+        <a href="/author_archive.html">Tag별 Posts</a>
+    </li>
+</ul>
