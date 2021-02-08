@@ -49,7 +49,7 @@ case class Person(name: String) {
 we could write a one-liner implicit conversion as 
 
 ```scala3
-implicit def stringToPerson(string: String): Person = Person(s)
+implicit def stringToPerson(string: String): Person = Person(string)
 ```
 
 and then we could write
