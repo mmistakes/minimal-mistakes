@@ -12,8 +12,6 @@ Hi, I am a last-year undergraduate student in the [School of Computer Science an
 
 Here is my [Curriculum Vitae in PDF format](../files/Minqian_Liu_CV.pdf).
 
-**I am actively seeking a Ph.D. position starting from Fall 2021. Please feel free to drop me a line if interested!**
-
 ## Research Interests
 My research interests include **model generalization** (e.g., few-shot learning, transfer learning, domain adaptation, etc.), deep learning for **natural language processing**, **data mining**, and **computer vision**, as well as **machine learning** and its applications.
 
