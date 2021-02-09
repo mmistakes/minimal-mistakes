@@ -5,11 +5,7 @@ layout: archive
 {{ content }}
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
-{% if page.show_excerpts == false %}
-  {% assign show_excerpts = false %}
-{% else %}
-  {% assign show_excerpts = true %}
-{% endif %}
+{% assign show_excerpts = page.show_excerpts != false %}
 <div class="entries-{{ entries_layout }}">
   {% include documents-collection.html collection=page.collection sort_by=page.sort_by sort_order=page.sort_order type=entries_layout %}
 </div>
