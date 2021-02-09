@@ -25,4 +25,24 @@ Additionally, from `v4.5.0` onwards the theme-gem will also exhibit above behavi
 Consequently, the data files for UI Text and Navigation are also bundled within the theme-gem.
 This doesn't apply if you're building your site on GitHub Pages, however.
 
+**ProTip**: To use custom CSS or JavaScript, add them to your `_includes/head/custom.html` or `_includes/footer/custom.html`.  This can include using Liquid to access site or page settings.
+{: .notice--info}
+
+For example, you can add page-specific CSS to the `<head>` element by adding the following to your `_includes/head/custom.html`.
+
+{% raw %}```html
+{% if page.extra_css %}
+  {% for stylesheet in page.extra_css %}
+    <link rel="stylesheet" href="{{ stylesheet | relative_url }}">
+  {% endfor %}
+{% endif %}
+```{% endraw %}
+
+YAML Front Matter
+
+```yaml
+extra_css:
+  - /path/to/your/custom.css
+```
+
 For more information on customizing the theme's [stylesheets]({{ "/docs/stylesheets/" | relative_url }}) and [JavaScript]({{ "/docs/javascript/" | relative_url }}), see the appropriate pages.
