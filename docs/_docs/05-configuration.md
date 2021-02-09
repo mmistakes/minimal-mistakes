@@ -209,29 +209,6 @@ head_scripts:
 Consult the [JavaScript documentation]({{ site.baseurl }}{% link _docs/17-javascript.md %}) for more information on working with theme scripts.
 {: .notice--info}
 
-### Site and Page css
-
-Create `_includes/head/custom.html` and add `<link>` tags directly to it, or add liquid tags to access site/page configurations.  For example, this `_includes/head/custom.html` will include all css files from the `css` key in the site (`_config.yml`) or page (YAML Front Matter) on each page.  See the <a href="{{ '/docs/stylesheets' | relative_url }}/#adding-custom-css">Adding Custom CSS</a> section of the Stylesheets page.
-
-{%- raw -%}
-```html
-{% if site.css %}
-  {% for stylesheet in site.css %}
-    <link rel="stylesheet" href="{{ stylesheet | relative_url }}">
-  {% endfor %}
-{% endif %}
-{% if page.css %}
-  {% for stylesheet in page.css %}
-    <link rel="stylesheet" href="{{ stylesheet | relative_url }}">
-  {% endfor %}
-{% endif %}
-```
-{% endraw %}
-```yaml
-css:
-  - /assets/css/your-custom.css
-```
-
 ### Site default teaser image
 
 To assign a fallback teaser image used in the "**Related Posts**" module, place a graphic in the `/assets/images/` directory and add the filename to `_config.yml` like so:

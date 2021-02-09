@@ -392,13 +392,13 @@ $intro-transition  : none;
 $global-transition : none;
 ```
 
-## Adding Custom CSS
+## Adding custom CSS
 
-To add custom css files to your site or page, simply create `_includes/head/custom.html` and add them to it.  You can do this in two ways
+To add custom CSS files to your site or page, simply create `_includes/head/custom.html` and add them to it.  You can do this in two ways
 
 ### As raw HTML
 
-For each css file, add a line like
+For each CSS file, add a line like
   ```html
   <link rel="stylesheet" href="/assets/css/your-custom.css">
   ```
@@ -407,34 +407,34 @@ For each css file, add a line like
 
 Add the following to your `_includes/head/custom.html`
 
-- Site css
+- Site CSS
   {% raw %}```html
-  {% if site.css %}
-    {% for stylesheet in site.css %}
+  {% if site.head_css %}
+    {% for stylesheet in site.head_css %}
       <link rel="stylesheet" href="{{ stylesheet | relative_url }}">
     {% endfor %}
   {% endif %}
   ```{% endraw %}
 
-- Page css
+- Page CSS
   {% raw %}```html
-  {% if page.css %}
-    {% for stylesheet in page.css %}
+  {% if page.head_css %}
+    {% for stylesheet in page.head_css %}
       <link rel="stylesheet" href="{{ stylesheet | relative_url }}">
     {% endfor %}
   {% endif %}
   ```{% endraw %}
 
-With this included, you can now add paths to your `_config.yml` and/or page YAML Front Matter to list additional css files you would like to include.
+With this included, you can now add paths to your `_config.yml` and/or page YAML Front Matter to list additional CSS files you would like to include.
 
-- Site css in `_config.yml`
+- Site CSS in `_config.yml`
   ```yaml
-  css:
+  head_css:
     - /assets/css/your-custom-site.css
   ```
 
-- Page css in a YAML Front Matter
+- Page CSS in a YAML Front Matter
   ```yaml
-  css:
+  head_css:
     - /assets/css/your-custom-page.css
   ```
