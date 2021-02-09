@@ -1,6 +1,40 @@
 [
   {
     "image_path": null,
+    "alt": "3  Gesamtkonferenz",
+    "title": "3  Gesamtkonferenz",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=azcxbjE1OTRvbGYyOGE4czJ0NG9tZXBzc2cgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2021-02-23T16:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2021-02-23T18:00:00+01:00"
+    },
+    "created": "2021-02-09T07:01:28.000Z",
+    "updated": "2021-02-09T07:01:28.536Z"
+  },
+  {
+    "image_path": null,
+    "alt": "GEV",
+    "title": "GEV",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=anU1Y2thdmU4NGgwbGM1M2tiMDJuY3BvbTggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2021-02-23T18:30:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2021-02-23T19:30:00+01:00"
+    },
+    "created": "2021-02-09T07:02:05.000Z",
+    "updated": "2021-02-09T07:02:05.862Z"
+  },
+  {
+    "image_path": null,
     "alt": "Osterferien ",
     "title": "Osterferien ",
     "excerpt": null,
@@ -66,39 +100,5 @@
     },
     "created": "2020-01-20T10:23:43.000Z",
     "updated": "2020-01-20T10:23:43.980Z"
-  },
-  {
-    "image_path": null,
-    "alt": "unterrichtsfrei",
-    "title": "unterrichtsfrei",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MjU4a2c4YTc0bDBpc2UzM29rcDB1N3Zyc2QgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2021-05-14",
-      "date_time": null
-    },
-    "end": {
-      "date": "2021-05-15",
-      "date_time": null
-    },
-    "created": "2020-03-11T12:15:33.000Z",
-    "updated": "2020-03-11T12:17:55.062Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Sommerferien",
-    "title": "Sommerferien",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NDZtdXFoODVlMjdkazQ2dmYzajFyNHRtaWkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2021-06-24",
-      "date_time": null
-    },
-    "end": {
-      "date": "2021-08-07",
-      "date_time": null
-    },
-    "created": "2020-03-11T12:16:17.000Z",
-    "updated": "2020-03-11T12:16:17.482Z"
   }
 ]
