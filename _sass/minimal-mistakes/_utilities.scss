@@ -609,6 +609,7 @@ a.reversefootnote {
 
 pre {
   .clipboard-copy-button {
+    display: block;
     position: absolute;
     top: 0.6em;
     right: 0.5em;
@@ -634,6 +635,12 @@ pre {
       bottom: 0;
       left: 0;
       z-index: 2;
+    }
+
+    @at-root {
+      .no-copy & {
+        display: none;
+      }
     }
   }
 

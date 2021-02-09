@@ -175,3 +175,21 @@ You can also add the `.notice` class to a `<div>` element.
   <h4 class="no_toc">Notice Headline:</h4>
   {{ notice-text | markdownify }}
 </div>
+
+## Feature selection
+
+Add `.no-copy` to code blocks to hide the "copy to clipboard" button for that block
+
+````markdown
+```
+Hey, I have a "copy to clipboard" button!
+```
+````
+
+````markdown
+```
+But I don't have one.
+```
+{: .no-copy}
+````
+{: .no-copy}
