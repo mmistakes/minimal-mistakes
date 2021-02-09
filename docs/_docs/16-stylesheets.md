@@ -40,29 +40,29 @@ minimal-mistakes
 
 ## Customizing
 
-To override the default [Sass](http://sass-lang.com/guide) (located in theme's 
+To override the default [Sass](http://sass-lang.com/guide) (located in theme's
 `_sass` directory), do one of the following:
 
 1. Copy directly from the Minimal Mistakes theme gem
 
-   - Go to your local Minimal Mistakes gem installation directory (run 
+   - Go to your local Minimal Mistakes gem installation directory (run
      `bundle show minimal-mistakes-jekyll` to get the path to it).
-   - Copy the contents of `/assets/css/main.scss` from there to 
+   - Copy the contents of `/assets/css/main.scss` from there to
      `<your_project>`.
    - Customize what you want inside `<your_project>/assets/css/main.scss`.
 
 2. Copy from this repo.
 
-   - Copy the contents of [assets/css/main.scss](https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss) 
+   - Copy the contents of [assets/css/main.scss](https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss)
      to `<your_project>`.
    - Customize what you want inside `<your_project/assets/css/main.scss`.
 
-**Note:** To make more extensive changes and customize the Sass partials bundled 
-in the gem. You will need to copy the complete contents of the `_sass` directory 
+**Note:** To make more extensive changes and customize the Sass partials bundled
+in the gem. You will need to copy the complete contents of the `_sass` directory
 to `<your_project>` due to the way Jekyll currently reads those files.
 
-To make basic tweaks to theme's style Sass variables can be overridden by adding 
-to `<your_project>/assets/css/main.scss`. For instance, to change the 
+To make basic tweaks to theme's style Sass variables can be overridden by adding
+to `<your_project>/assets/css/main.scss`. For instance, to change the
 link color used throughout the theme add:
 
 ```scss
@@ -71,7 +71,7 @@ $link-color: red;
 
 Before any `@import` lines.
 
-### Paragraph indention 
+### Paragraph indention
 
 To mimic the look of type set in a printed book or manuscript you may want to enable paragraph indention. When `$paragraph-indent` is set to `true` indents are added to each sibling and the margin below each paragraph is removed.
 
@@ -120,7 +120,7 @@ $header-font-family : $sans-serif-narrow;
 
 ### Type scale
 
-Wherever possible type scale variables have been used instead of writing out fixed sizes. This makes updating much easier by changing values in one file. 
+Wherever possible type scale variables have been used instead of writing out fixed sizes. This makes updating much easier by changing values in one file.
 
 Example:
 
@@ -370,7 +370,7 @@ $base0c: #8abeb7;
 $base0d: #81a2be;
 $base0e: #b294bb;
 $base0f: #a3685a;
-```  
+```
 
 ### Breakpoints and grid stuff
 
@@ -391,3 +391,50 @@ You can disable either the fade-in intro animation, element transition animation
 $intro-transition  : none;
 $global-transition : none;
 ```
+
+## Adding Custom CSS
+
+To add custom css files to your site or page, simply create `_includes/head/custom.html` and add them to it.  You can do this in two ways
+
+### As raw HTML
+
+For each css file, add a line like
+  ```html
+  <link rel="stylesheet" href="/assets/css/your-custom.css">
+  ```
+
+### As YAML configurations
+
+Add the following to your `_includes/head/custom.html`
+
+- Site css
+  {% raw %}```html
+  {% if site.css %}
+    {% for stylesheet in site.css %}
+      <link rel="stylesheet" href="{{ stylesheet | relative_url }}">
+    {% endfor %}
+  {% endif %}
+  ```{% endraw %}
+
+- Page css
+  {% raw %}```html
+  {% if page.css %}
+    {% for stylesheet in page.css %}
+      <link rel="stylesheet" href="{{ stylesheet | relative_url }}">
+    {% endfor %}
+  {% endif %}
+  ```{% endraw %}
+
+With this included, you can now add paths to your `_config.yml` and/or page YAML Front Matter to list additional css files you would like to include.
+
+- Site css in `_config.yml`
+  ```yaml
+  css:
+    - /assets/css/your-custom-site.css
+  ```
+
+- Page css in a YAML Front Matter
+  ```yaml
+  css:
+    - /assets/css/your-custom-page.css
+  ```
