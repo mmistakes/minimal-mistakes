@@ -186,7 +186,7 @@ $(document).ready(function () {
     }
 
     // Skip line numbers if present (i.e. {% highlight lineno %})
-    var realCodeBlock = codeBlock.querySelector("td.code");
+    var realCodeBlock = codeBlock.querySelector("td.code, td.rouge-code");
     if (realCodeBlock) {
       codeBlock = realCodeBlock;
     }
