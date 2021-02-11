@@ -141,8 +141,9 @@ $(document).ready(function () {
   // Add copy button for <pre> blocks
   var copyText = function (text) {
     if (document.queryCommandEnabled("copy") && navigator.clipboard) {
-      navigator.clipboard.writeText(textarea.value).then(
-        () => true, () => console.error("Failed to copy text to clipboard: " + text)
+      navigator.clipboard.writeText(text).then(
+        () => true,
+        () => console.error("Failed to copy text to clipboard: " + text)
       );
       return true;
     } else {
