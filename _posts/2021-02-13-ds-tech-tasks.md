@@ -9,7 +9,7 @@ tags:
 excerpt: What is the best way to perform a technical interview for a data science position?
 ---
 
-_Note: the content here here applies to hiring for junior positions._
+_Note: the content here applies to hiring for junior positions._
 
 When doing an interview for a tech position, you typically have to pass a “technical” stage, the part where your domain knowledge and ability with technical work is meant to be evaluated. This usually comes after an initial screening which discusses the general fit and onboards you to the process while chatting about who you are and what you have done.
 
