@@ -12,7 +12,6 @@ tags:
   - GAP
 toc: true
 toc_sticky: true
-toc_ads: true
 ---
 
 ## 2. BLE 프로토콜 스택

@@ -9,7 +9,6 @@ tags:
   - introduction
 toc: true
 toc_sticky: true
-toc_ads: true
 ---
 
 ## 1. 저전력 블루투스

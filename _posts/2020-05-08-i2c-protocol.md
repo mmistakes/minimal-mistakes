@@ -7,7 +7,6 @@ tags:
   - I2C
 toc: true
 toc_sticky: true
-toc_ads: true
 ---
 
 ## 3. I2C 프로토콜

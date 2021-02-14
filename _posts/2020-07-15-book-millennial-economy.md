@@ -6,7 +6,6 @@ tags:
   - economy
 toc: true
 toc_sticky: true
-toc_ads: true
 ---
 
 ## 밀레니얼 이코노미

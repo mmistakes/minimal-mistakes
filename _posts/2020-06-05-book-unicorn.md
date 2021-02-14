@@ -7,7 +7,6 @@ tags:
   - Unicorn
 toc: true
 toc_sticky: true
-toc_ads: true
 ---
 
 ## 반환점에 선 유니콘 - 완주를 위한 안내서

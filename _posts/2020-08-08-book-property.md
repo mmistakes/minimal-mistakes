@@ -6,7 +6,6 @@ tags:
   - property
 toc: true
 toc_sticky: true
-toc_ads: true
 ---
 
 ## 그래서 지금 사야 하나요? - 부동산, 3년 내 특이점이 온다
