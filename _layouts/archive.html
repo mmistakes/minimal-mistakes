@@ -21,6 +21,15 @@ layout: default
     {% unless page.header.overlay_color or page.header.overlay_image %}
       <h1 id="page-title" class="page__title">{{ page.title }}</h1>
     {% endunless %}
+    <!-- devinlife comment : added google adsense sidebar -->
+    {% if page.toc_ads %}
+      <aside class="sidebar__right sticky">
+        <nav class="toc-custom">
+          {% include GoogleAdSenseSidbar.html %}
+        </nav>
+      </aside>
+    {% endif %}
+    <!-- devinlife comment : end -->
     {{ content }}
   </div>
 </div>
