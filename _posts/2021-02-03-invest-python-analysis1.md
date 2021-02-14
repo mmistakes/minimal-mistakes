@@ -7,6 +7,8 @@ tags:
   - OHLC
   - Python
   - Stock
+toc: true
+toc_sticky: true
 ---
 
 ## 파이썬 주식 분석 (1) - OHLC 차트와 26주 이동평균선

@@ -4,6 +4,8 @@ categories:
   - BOOK REVIEW
 tags:
   - factfulness
+toc: true
+toc_sticky: true
 ---
 
 ## 팩트풀니스 - 우리가 세상을 오해하는 10가지 이유와 세상이 생각보다 괜찮은 이유

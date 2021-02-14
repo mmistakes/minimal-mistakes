@@ -5,6 +5,8 @@ categories:
 tags:
   - block chain
   - bit coin
+toc: true
+toc_sticky: true
 ---
 
 ## 60분 만에 아는 블록체인

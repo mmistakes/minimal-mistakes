@@ -4,6 +4,8 @@ categories:
   - BOOK REVIEW
 tags:
   - brain science
+toc: true
+toc_sticky: true
 ---
 
 ## 사람으 어떻게 생각하고 배우고 기억하는가

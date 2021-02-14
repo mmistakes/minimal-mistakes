@@ -5,6 +5,8 @@ categories:
 tags:
   - artificial intelligence
   - industry 4.0
+toc: true
+toc_sticky: true
 ---
 
 ## 에이트 - 인공지능에게 대체되지 않는 나를 만드는 법

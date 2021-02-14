@@ -4,6 +4,8 @@ categories:
   - BOOK REVIEW
 tags:
   - economy
+toc: true
+toc_sticky: true
 ---
 
 ## 밀레니얼 이코노미

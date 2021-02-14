@@ -4,6 +4,8 @@ categories:
   - BOOK REVIEW
 tags:
   - philosophy
+toc: true
+toc_sticky: true
 ---
 
 ## 철학은 어떻게 삶의 무기가 되는가 - 불확실한 삶을 돌파하는 50가지 생각 도구
