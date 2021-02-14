@@ -9,6 +9,7 @@ tags:
   - LE packet
 toc: true
 toc_sticky: true
+toc_ads: true
 ---
 
 ## 5. BLE effective throughput

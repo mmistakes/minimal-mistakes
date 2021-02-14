@@ -6,6 +6,7 @@ tags:
   - HowToStart
 toc: true
 toc_sticky: true
+toc_ads: true
 ---
 
 ## 1. 시작하기 전에

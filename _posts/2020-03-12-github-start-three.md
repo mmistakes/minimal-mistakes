@@ -8,6 +8,7 @@ tags:
   - notice
 toc: true
 toc_sticky: true
+toc_ads: true
 ---
 
 ## 3. 포스트의 가독성 높이기

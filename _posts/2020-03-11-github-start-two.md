@@ -9,6 +9,7 @@ tags:
   - text color
 toc: true
 toc_sticky: true
+toc_ads: true
 ---
 
 ## 2. 자주 사용하는 포스팅 기능

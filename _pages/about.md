@@ -3,7 +3,6 @@ title: About me
 layout: single
 permalink: /about/
 author_profile: true
-toc_sticky: true
 toc_ads : true
 ---
 

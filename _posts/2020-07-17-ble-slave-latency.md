@@ -7,6 +7,7 @@ tags:
   - slave latency
 toc: true
 toc_sticky: true
+toc_ads: true
 ---
 
 ## 7. BLE 무선 연결 파라미터

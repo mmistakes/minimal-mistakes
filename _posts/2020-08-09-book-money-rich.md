@@ -8,6 +8,7 @@ tags:
   - the rich
 toc: true
 toc_sticky: true
+toc_ads: true
 ---
 
 ## 돈의 속성 - 최상위 부자가 말하는 돈에 대한 모든 것

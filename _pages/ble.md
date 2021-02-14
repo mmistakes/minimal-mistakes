@@ -3,6 +3,7 @@ title: Bluetooth Low Energy
 layout: single
 permalink: /ble/
 author_profile: true
+toc_ads: true
 ---
 
 {% capture fig_img %}

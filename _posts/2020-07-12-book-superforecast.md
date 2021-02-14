@@ -9,6 +9,7 @@ tags:
   - capitalism
 toc: true
 toc_sticky: true
+toc_ads: true
 ---
 
 ## 초예측 부의 미래 - 세계 석학 5인이 말하는 기술.자본.문명의 대전환
