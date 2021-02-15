@@ -5,8 +5,7 @@ categories:
 tags:
   - society
   - economy
-toc: true
-toc_sticky: true
+toc_ads: true
 ---
 
 ## 수축사회 - 성장 신화를 버려야 미래가 보인다
