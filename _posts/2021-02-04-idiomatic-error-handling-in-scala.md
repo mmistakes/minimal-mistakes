@@ -9,11 +9,9 @@ excerpt: "Error handling is likely one of the most frustrating part of programmi
 
 This article will show you various ways of dealing with errors in Scala. Some are easy and beginner-friendly, and some are more complex, but more powerful. Let's take a look.
 
-## 1. Background
+## 1. Throwing and Catching Exceptions
 
-Short story: Scala runs on the JVM, so it can throw and catch exceptions just like Java. There's little more to say. This leads to the first straightforward way of dealing with errors:
-
-## 2. Throwing and Catching Exceptions
+Short story: Scala runs on the JVM, so it can throw and catch exceptions just like Java. There's little more to say. This leads to the first straightforward way of dealing with errors.
 
 Because Scala can throw and catch exceptions, naturally the try/catch/finally structure exists in Scala at the language level. Much like in Java, you can wrap potentially dangerous code inside a `try` block, then `catch` the particular exceptions you're interested in, then `finally` _do_ some other stuff, e.g. close resources. An example looks like this:
 
@@ -37,7 +35,7 @@ However, this straightforward approach is rarely the recommended one, for a few 
 - nesting such structures (even at level 2) become exponentially harder to debug and understand
 - for pure functional programmers, the `finally` part doing things outside of value computations might cause a small aneurysm
 
-## 3. Let's `Try` Better
+## 2. Let's `Try` Better
 
 Idiomatic functional programming requires us to reason with code by thinking of every piece as an expression, hence something that reduces to a value. Therefore, we need to think exception handling in much the same way: as an expression meaning a crashed computation, or a successful one.
 
@@ -142,7 +140,7 @@ val aChainedComputation = for {
 
 ## 4. Advanced: `Validated`
 
-There are many data structures in various libraries with certain set goals in mind. One of the popular ones is `Validated`, which is part of the Cats library. 
+There are many data structures in various libraries with certain set goals in mind. One of the popular ones is `Validated`, which is part of the Cats library. By the way, I [teach](https://rockthejvm.com/p/cats) this here at Rock the JVM. 
 
 Besides doing pretty much everything that Either does, Validated allows us to _accumulate_ errors. One obvious use case is online forms that have to meet certain criteria. If a user fails those conditions, the form should ideally show the user _all the places_ in which they filled wrong, not just a single error.
 
