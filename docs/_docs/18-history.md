@@ -9,6 +9,12 @@ last_modified_at: 2021-02-05T21:01:55-05:00
 toc: false
 ---
 
+## Unreleased
+
+### Enhancements
+
+- Add `alt` attribute to site logo. [#2529](https://github.com/mmistakes/minimal-mistakes/issues/2529) [#2824](https://github.com/mmistakes/minimal-mistakes/issues/2824)
+
 ## [4.22.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.22.0)
 
 ### Bug Fixes
