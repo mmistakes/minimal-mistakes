@@ -37,5 +37,5 @@ toc_ads: true
 
 <figure style="width: 100%">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/book14.png" alt="">
-  <figcaption>그림 출처: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=175784294</figcaption>
+  <figcaption>그림 출처: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=257954281</figcaption>
 </figure>
