@@ -9,9 +9,11 @@ author_profile: true
 layout: single
 ---
 
-Check out my interactive tech stack, here:
+Check out my tech stack:
 
-<iframe width="100%" height="315" src="https://timsadler.shinyapps.io/techstack/" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+## interactive tech stack
+
+<iframe width="100%" height="700px" src="https://timsadler.shinyapps.io/techstack/" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 Or, in more detail:
 
