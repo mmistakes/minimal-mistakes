@@ -12,6 +12,7 @@ layout: single
 On my projects, I ususally use the statistical software R, sometimes Python
 This is my tech and methodology stack:
 
+<iframe width="560" height="315" src="https://timsadler.shinyapps.io/techstack/" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 ## Most used
 
@@ -27,6 +28,7 @@ This is my tech and methodology stack:
 | ------------------------------------------- | ----------------------------------------------------- |
 | Rcpp | R | Opens up R for C++ code - used whenever for-loops on large data sets are too expensive |
 | R-Excel integration | R | Self-written set of functions to export results to MS Excel |
+| RMarkdown |
 
 ## Most recently discovered
 
