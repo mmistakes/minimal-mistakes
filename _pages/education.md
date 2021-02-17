@@ -32,7 +32,9 @@ Here you will find my academic career.
 
 ## Further Training / Courses
 
-| Project Description | Research Focus | Status |
+| where | what |
 | ------------------------------------------- | ----------------------------------------------------- |
-| Experiment: Effect of premium promotions  | Measure the response (brand choice probability & attractiveness) of subjects towards different premium promotions. | Survey | final |
-| Qualitative: Money-back-guarantees | Explore what might impact customer behavior in light of fast-moving consumer good's money back guarantees.  | Qualitative | final |
+| Global School of Empirical Research Methods,
+St. Gallen, Switzerland  | Data analysis in R, mathematics & linear algebra, regression analysis, time series analysis, multi-level modeling with Bayes |
+| German Academic Association of Business Research, VHB |ProDok program: Philosophy of Science, Endogeneity  |
+| University of Hamburg | Survey Research |

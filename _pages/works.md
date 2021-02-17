@@ -27,7 +27,9 @@ Take a look at a selection of projects I worked on either in academia, business 
 | Brand perception of energie provider | Survey-based research on a multitude of brand-related mesaures and customer satisfaction. | Survey | Linear models, Principal Component Analysis, Cluster Analysis | final |
 | Success drivers of pop up event | Survey-based research on the perception of a temporary live marketing campaign and its effects on the brand perception for an insurance company | Survey | Linear models, Principal Component Analysis, Cluster Analysis | final |
 
-## Teaching (self and supervised)
+## Teaching
+
+These projects were either conducted under my supervision or created by me to teach and illustrate methods in class.
 
 | Project Description | Research Focus | Data type | Methods used | Status |
 | ------------------------------------------- | ----------------------------------------------------- |
