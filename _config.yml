@@ -101,18 +101,15 @@ author:
   location         : "Hamburg, Germany"
   email            : "tim.sadler@uni-hamburg.de"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:tim.sadler@uni-hamburg.de"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
+      url: "https://tim-sadler.github.io"
+    - label: "XING"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
+      url: "https://www.xing.com/profile/Tim_Sadler/"
+    - label: "LinkedIn"
       icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      url: "https://www.linkedin.com/in/tim-sadler-47847236/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       # url: "https://github.com/"
@@ -123,9 +120,9 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://tim-sadler.github.io"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
