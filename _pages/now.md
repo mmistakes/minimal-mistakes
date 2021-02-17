@@ -4,8 +4,6 @@ author_profile: true
 permalink: /now/
 ---
 
-# My now page - February 2021
-
 This is the page, updated once a month, where I list what I'm currently up to. This idea has been largely inspired by [Derek Sivers](https://sive.rs/now) and I decided to do a new "now" page every month; the previous month's one will get posted as a post.
 The now page can get updates throughout the month, based on what I do/the progress, it's a living thing - until the next month.
 
