@@ -12,7 +12,7 @@ layout: single
 On my projects, I ususally use the statistical software R, sometimes Python
 This is my tech and methodology stack:
 
-<iframe width="560" height="315" src="https://timsadler.shinyapps.io/techstack/" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<iframe width="100%" height="315" src="https://timsadler.shinyapps.io/techstack/" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 ## Most used
 
