@@ -1,7 +1,7 @@
 ---
 permalink: /skills/
 title: "Skills"
-excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
+excerpt: "This is my tech and methodology stack."
 last_modified_at: 2020-10-28T14:51:23-04:00
 classes: wide
 toc: true
@@ -9,42 +9,28 @@ author_profile: true
 layout: single
 ---
 
+On my projects, I ususally use the statistical software R, sometimes Python
+This is my tech and methodology stack:
 
-Take a look at a selection of projects I worked on either in academia, business or fun.
 
+## Most used
 
-
-## Scientific
-
-| Project Description | Research Focus | Status |
+| what | in | what for |
 | ------------------------------------------- | ----------------------------------------------------- |
-| Short and long-term effect of bundle promotions | Based on actual sales data, we investigate whether customers react towards bundle promotions with higher number of store visits, higher quantity purchased and higher spending. | on-going |
-| Value of customer relationship by acqusition | Based on actual sales data, we look at the value of a customer relationship on multiple levels. We specifically investigate differences in key customer indicators (e. g. disount-proneness, probability to return an order) depending on wether they were acquired by a discount, or not.| on-going |
-| Experiment: Response to product bundles | We systematically varieddifferent types of product bundle framings and measured the quantity of products baught and the probability that a brand under promotion was preferred against its competitor. | on-going |
+| data.table | R | SQL-style syntax for data.frame, incredibly fast querying and merging |
+| ggplot | R | Beautiful and rich library for data visualization (thb, even so rich, it is impossible to use without cheat sheets) |
+| Rcpp | R | Opens up R for C++ code - used whenever for-loops on large data sets are too expensive |
 
+## Most helpful
 
----
+| what | in | what for |
+| ------------------------------------------- | ----------------------------------------------------- |
+| Rcpp | R | Opens up R for C++ code - used whenever for-loops on large data sets are too expensive |
+| R-Excel integration | R | Self-written set of functions to export results to MS Excel |
 
-## Credits
+## Most recently discovered
 
-### Icons + Demo Images:
-
-- [The Noun Project](https://thenounproject.com) -- Garrett Knoll, Arthur Shlain, and [tracy tam](https://thenounproject.com/tracytam)
-- [Font Awesome](http://fontawesome.io/)
-- [Unsplash](https://unsplash.com/)
-
-### Other:
-
-- [Jekyll](https://jekyllrb.com/)
-- [jQuery](https://jquery.com/)
-- [Susy](http://susy.oddbird.net/)
-- [Breakpoint](http://breakpoint-sass.com/)
-- [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/)
-- [FitVids.JS](http://fitvidsjs.com/)
-- Greedy Navigation - [lukejacksonn](https://codepen.io/lukejacksonn/pen/PwmwWV)
-- [jQuery Smooth Scroll](https://github.com/kswedberg/jquery-smooth-scroll)
-- [Lunr](http://lunrjs.com)
-
----
-
-Minimal Mistakes is designed, developed, and maintained by Michael Rose. Just another boring, tattooed, designer from Buffalo New York.
+| what | in | what for |
+| ------------------------------------------- | ----------------------------------------------------- |
+| Caret | R | Machine learning in R |
+| R-Excel integration | R | Self-written set of functions to export results to MS Excel |

@@ -34,7 +34,7 @@ Here you will find my academic career.
 
 | where | what |
 | ------------------------------------------- | ----------------------------------------------------- |
-| Global School of Empirical Research Methods,
-St. Gallen, Switzerland  | Data analysis in R, mathematics & linear algebra, regression analysis, time series analysis, multi-level modeling with Bayes |
+| Global School of Empirical Research Methods, St. Gallen, Switzerland  | Data analysis in R, mathematics & linear algebra, regression analysis, time series analysis, multi-level modeling with Bayes |
 | German Academic Association of Business Research, VHB |ProDok program: Philosophy of Science, Endogeneity  |
 | University of Hamburg | Survey Research |
+| Data Camp | Machine Learning, Python, SQL, Scala |
