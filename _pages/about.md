@@ -25,7 +25,7 @@ _All images/photos shown on this blog are mine unless otherwise specified, and c
 
 ## Ongoing projects
 
-These are things I'm curating at the moment, or perennial works-in-progress.
+These are things I'm curating at the moment, or perennial works-in-progress. To see more details on what I'm up to for the month, head my ["now" page]({{site.url}}/now/).
 
 ### Tales of Science & Data
 

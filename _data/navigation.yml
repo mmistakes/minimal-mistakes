@@ -3,6 +3,9 @@ main:
   - title: "About & Projects"
     url: /about/
 
+  - title: "Now"
+    url: /now/
+
   - title: "Data stuff"
     url: "categories/#data/"
 
