@@ -11,9 +11,10 @@ layout: single
 
 Check out my tech stack:
 
-## interactive tech stack
+## Interactive tech stack
 
-<iframe width="100%" height="700px" src="https://timsadler.shinyapps.io/techstack/" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+Check out my <a href="/techstack.html" alt="skills">interactive tech stack</a>.
+
 
 Or, in more detail:
 

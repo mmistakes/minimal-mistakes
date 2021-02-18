@@ -82,8 +82,10 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-    - https://twitter.com/
-    - https://github.com/
+    - https://github.com/tim-sadler
+    - https://www.xing.com/profile/Tim_Sadler/
+    - https://www.linkedin.com/in/tim-sadler-47847236/
+
 
 # Analytics
 analytics:
@@ -112,7 +114,7 @@ author:
       url: "https://www.linkedin.com/in/tim-sadler-47847236/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/tim-sadler"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
