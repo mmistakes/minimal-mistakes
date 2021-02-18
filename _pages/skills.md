@@ -13,7 +13,7 @@ Check out my tech stack:
 
 ## Interactive tech stack
 
-Check out my <a href="/techstack.html" alt="skills">interactive tech stack</a>.
+Check out my <a href="/techstack/" alt="skills">interactive tech stack</a>.
 
 
 Or, in more detail:
