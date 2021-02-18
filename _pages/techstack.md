@@ -4,7 +4,7 @@ title: "Tech Stack"
 excerpt: "This is my interactive tech stack."
 last_modified_at: 2020-10-28T14:51:23-04:00
 classes: wide
-toc: true
+toc: false
 author_profile: true
 layout: single
 ---
