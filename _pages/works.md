@@ -36,3 +36,13 @@ These projects were either conducted under my supervision or created by me to te
 | Experiment: Effect of premium promotions | Measure the response (brand choice probability & attractiveness) of subjects towards different premium promotions. | Survey | Linear & logit models, Structural Equation Modeling | final |
 | Media consumption behavior | Survey-based research on the media consumption behavior, media spending and technology usage. | Survey | Linear & logit models, Principal Component Analysis | final |
 | Qualitative: Money-back-guarantees | Explore what might impact customer behavior in light of fast-moving consumer good's money back guarantees. | Qualitative | Focus group analysis | final |
+
+## Fun
+
+I sometimes do silly stuff to increase my skill set or learn new tools.
+
+| Project Description | Research Focus | Data type | Methods used | Status |
+| ------------------------------------------- | ----------------------------------------------------- |
+| Radio playlist | Web scraping and analysing my favorite radio stations playlist over one year. | Scraping | Web scraping, exploratory analysis | fun |
+| Urban gardening | Monitor and analyze my balcony plants' hydration level via sensors and RaspberryPi. | Sensor data | RaspberryPi & Python | fun |
+| Getting rich | Create a Python trading robot that utilizes Poloniex API to automate micro crypto transactions. | API data | Polonies API & Python | still not rich |
