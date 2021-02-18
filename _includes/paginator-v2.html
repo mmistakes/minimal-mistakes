@@ -30,8 +30,8 @@
     {% endunless %}
 
     {% comment %} Ellipsis for truncated links {% endcomment %}
-    {% assign ellipsis_start = site.pagination.trail.before | plus: 2 %}
-    {% if paginator.page > ellipsis_start %}
+    {% assign ellipsis_start = paginator.first_page | plus: 1 %}
+    {% if paginator.trail.first.num > ellipsis_start %}
       <li><a href="#" class="disabled">&hellip;</a></li>
     {% endif %}
 
@@ -45,8 +45,8 @@
     {% endfor %}
 
     {% comment %} Ellipsis for truncated links {% endcomment %}
-    {% assign ellipsis_end = paginator.total_pages | minus: site.pagination.trail.after | minus: 1 %}
-    {% if paginator.page < ellipsis_end %}
+    {% assign ellipsis_end = paginator.last_page | minus: 1 %}
+    {% if paginator.trail.last.num < ellipsis_end %}
       <li><a href="#" class="disabled">&hellip;</a></li>
     {% endif %}
 
