@@ -75,7 +75,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : ""/assets/img/logo.png""
+og_image                 : "/assets/img/logo.png"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
