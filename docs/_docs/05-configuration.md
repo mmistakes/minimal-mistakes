@@ -527,7 +527,7 @@ By default comment moderation is enabled in `staticman.yml`. As new comments are
 
 To skip this moderation step simply set `moderation: false`.
 
-**ProTip:** Create a GitHub webhook that sends a `POST` request to the following payload URL `https://api.staticman.net/v2/webhook` and triggers a "Pull request" event to delete Staticman branches on merge.
+**ProTip:** Create a GitHub webhook that sends a `POST` request to the following payload URL `https://{your Staticman API URL}/v2/webhook` and triggers a "Pull request" event to delete Staticman branches on merge.
 {: .notice--info}
 
 ![pull-request webhook]({{ "/assets/images/mm-staticman-pr-webhook.jpg" | relative_url }})
