@@ -1,5 +1,5 @@
 ---
-title: "투자 일지 (1)"
+title: "투자 일지 (1) - 종목 고르기"
 categories:
   - INVESTING
 tags:
@@ -9,7 +9,7 @@ tags:
 toc_ads: true
 ---
 
-## 투자 일지 (1)
+## 투자 일지 (1) - 종목 고르기
 
 ### 1.1 가끔씩 INVESTING 기사 보기
 
