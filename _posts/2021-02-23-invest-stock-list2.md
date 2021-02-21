@@ -66,7 +66,7 @@ notice
 
 * 몇 년간의 적자에서 최근 흑자 전환하기 시작했음. 기업과 해당 기술이 많이 알려져 있지 않다는 것이 단점 (~~똑똑한데, 조별과제 발표 못하는 유형~~)
 
-<span style="color:#A03008"><b>현 주가</b></span>: **`$8.31`**
+<span style="color:#A03008"><b>현 주가</b></span>: **`$8.67`**
 
 <figure style="width: 100%">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/invest2-fig3.png" alt="">
