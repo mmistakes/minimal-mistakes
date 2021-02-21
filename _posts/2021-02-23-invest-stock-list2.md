@@ -1,5 +1,5 @@
 ---
-title: "투자 일지 (2) - 관심종목 정리"
+title: "투자 일지 (2) - 관심종목 (UMC/ASX/OIIM)"
 categories:
   - INVESTING
 tags:
