@@ -1,3 +1,55 @@
+---
+title: "투자 일지 (2) - 관심종목 정리"
+categories:
+  - INVESTING
+tags:
+  - UMC
+  - ASX
+toc_ads: true
+---
+
+## 투자 일지 (2) - 관심종목 정리
+
+### 2.1 United Microelectronics Corporation
+
+* **`NYSE: UMC`**
+
+* 반도체 생산 업체
+
+* 자동차 전장 (전기 부품) 반도체 생산이 집중되어있는 공장이 정전되는 사고가 `2021년 1월` 발생.
+
+* 8인치 파운드리 공장 100% 돌아가고 있음. 올해 반도체 시장이 호황일 것으로 전망되어 장기적으로 문제 없을 것으로 보임.
+
+<span style="color:#A03008"><b>현 주가</b></span>: **`$10.38`**
+
+<figure style="width: 100%">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/invest2-fig1.png" alt="">
+  <figcaption>그림 출처: https://www.investing.com/equities/united-microelectronics-corp </figcaption>
+</figure>
+
+---
+
+### 2.2 ASE Technology Holding
+
+* **`NYSE:ASX`**
+
+* 반도체 패키징 및 전자생산 서비스 제공 업체
+
+* 그 외 각종 산업 분야의 ~~잡다한~~ 서비스 제공. 개인적으로 마음에 들었던 산업 분야는 **반도체 테스트 서비스**와 **드론 배송 서비스**. 
+
+* 드론 배송 서비스의 경우 잘 자리잡는다고 가정할 때 운송업 체계를 바꿀 수도 있는 기술이라 생각하고, 향후 반도체 산업이 흥하게 되면 결국 대량으로 찍어내는 반도체 제품을 검증할 시스템이 주목을 받게 될 것 같음.
+
+* 그 외 5G 산업 전환시 작은 반도체 패키징 기술이 요구되므로, 관심을 받을 것으로 예상된다는 분석이 있음(~~내가 분석한 것은 아님~~).
+
+<span style="color:#A03008"><b>현 주가</b></span>: **`$8.31`**
+
+<figure style="width: 100%">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/invest2-fig2.png" alt="">
+  <figcaption>그림 출처: https://www.investing.com/equities/advanced-semiconductor-engineering </figcaption>
+</figure>
+
+
+<!--
 deep learning
 
 AI
@@ -48,3 +100,4 @@ HPC 도입 고려
 하지만 결국 자기가 관심이 가야한다.
 
 -
+-->
