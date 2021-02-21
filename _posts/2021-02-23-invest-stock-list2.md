@@ -5,16 +5,20 @@ categories:
 tags:
   - UMC
   - ASX
+  - OIIM
 toc_ads: true
 ---
 
-## 투자 일지 (2) - 관심종목 정리
+## 투자 일지 (2) - 관심종목 (UMC/ASX/OIIM)
+
+투자는 신중히 자신의 판단에 따라 진행하시기 바랍니다.
+notice
 
 ### 2.1 United Microelectronics Corporation
 
 * **`NYSE: UMC`**
 
-* 반도체 생산 업체
+* **반도체 생산 업체**
 
 * 자동차 전장 (전기 부품) 반도체 생산이 집중되어있는 공장이 정전되는 사고가 `2021년 1월` 발생.
 
@@ -33,7 +37,7 @@ toc_ads: true
 
 * **`NYSE:ASX`**
 
-* 반도체 패키징 및 전자생산 서비스 제공 업체
+* **반도체 패키징 및 전자생산 서비스 제공 업체**
 
 * 그 외 각종 산업 분야의 ~~잡다한~~ 서비스 제공. 개인적으로 마음에 들었던 산업 분야는 **반도체 테스트 서비스**와 **드론 배송 서비스**. 
 
@@ -48,6 +52,32 @@ toc_ads: true
   <figcaption>그림 출처: https://www.investing.com/equities/advanced-semiconductor-engineering </figcaption>
 </figure>
 
+---
+
+### 2.3 O2Micro International Limited
+
+* **`NASDAQ:OIIM`**
+
+* **반도체 산업분야**
+
+* 전세계적 전력관리를 위한 통합 전기회로 및 솔루션 제공 (설계/개발/판매)
+
+* 관련 제품: 하이브리드 및 전기 자동차용 배터리 셀, LED 조명 컨트롤러, 전력 공급 관리 및 모니터링 회로
+
+* 몇 년간의 적자에서 최근 흑자 전환하기 시작했음. 기업과 해당 기술이 많이 알려져 있지 않다는 것이 단점 (~~똑똑한데, 조별과제 발표 못하는 유형~~)
+
+<span style="color:#A03008"><b>현 주가</b></span>: **`$8.31`**
+
+<figure style="width: 100%">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/invest2-fig3.png" alt="">
+  <figcaption>그림 출처: https://www.investing.com/equities/o2micro--international </figcaption>
+</figure>
+
+---
+
+**Reference**
+
+https://www.youtube.com/channel/UCE-BGQqwAew6OSexjaxp87w
 
 <!--
 deep learning
