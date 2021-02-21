@@ -3,7 +3,7 @@ title: "Chasing Problems, Not Answers"
 layout: single
 categories:
   - poetry
-permalink: /categories/english/poetry/chasing_the_problem_not_the_answer
+permalink: /categories/literature/poetry/chasing_the_problem_not_the_answer
 ---
 
 Your rough hand on my shoulder

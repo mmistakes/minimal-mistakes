@@ -2,6 +2,7 @@
 title: "The 3 Idiots and I"
 layout: single
 categories: free_writing
+permalink: /categories/literature/free_writing/the_3_idiots_and_i
 ---
 
 # Introduction

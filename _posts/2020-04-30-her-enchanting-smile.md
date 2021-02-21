@@ -3,7 +3,7 @@ title: "Her Enchanting Smile"
 layout: single
 categories:
   - poetry
-permalink: /categories/english/poetry/her_enchanting_smile
+permalink: /categories/literature/poetry/her_enchanting_smile
 ---
 
 A smile on you makes me forget to breathe

@@ -3,7 +3,7 @@ title: "The Art of Negotiation"
 layout: single
 categories:
   - free_writing
-permalink: /categories/free_writing/art_of_negotation
+permalink: /categories/literature/free_writing/art_of_negotation
 toc: true
 ---
 In this post, I will be taking note of Chris Voss's

@@ -3,7 +3,7 @@ title: "12 Rules For Life"
 layout: single
 categories:
   - book_report
-permalink: /categories/book_report/12_rules_for_life
+permalink: /categories/literature/book_report/12_rules_for_life
 toc: true
 ---
 # Overview

@@ -3,10 +3,12 @@ title: "Drawing"
 author: "Abdul"
 layout: single
 excerpt: "Drawing"
+category: drawing
 categories:
   - art
-  - drawing
 permalink: /categories/art/drawing/
+header:
+  overlay_image: "/assets/images/categories/main-drawing-1.jpg"
 ---
 I remember a conversation I had with my older brother some time ago,
 he told me I should dabble at drawing.
@@ -20,4 +22,4 @@ I realized that I am terrible at drawing in 3-D.
 So to get better I decided to draw things in my house.
 You will find the results below.
 
-{% include main_cat.html %}
+{% include main_categories.html %}
