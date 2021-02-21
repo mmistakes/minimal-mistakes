@@ -74,7 +74,22 @@ Find a category that interests you.
               {% assign fifth_category = fifth_pages.category %}
 
                   *   [{{fifth_pages.excerpt}}]({{fifth_pages.url | prepend:site.baseurl }})
+            {% for sixth_pages in site.pages %}
+              {% if sixth_pages.categories contains fifth_category %}
+                {% assign sixth_category = sixth_pages.category %}
 
+                      *   [{{sixth_pages.excerpt}}]({{sixth_pages.url | prepend:site.baseurl }})
+
+              {% for seventh_pages in site.pages %}
+                {% if seventh_pages.categories contains sixth_category %}
+                  {% assign seventh_category = seventh_pages.category %}
+
+                          *   [{{seventh_pages.excerpt}}]({{seventh_pages.url | prepend:site.baseurl }})
+
+                  {% endif %}
+                {% endfor %}
+                {% endif %}
+              {% endfor %}
               {% endif %}
             {% endfor %}
             {% endif %}
@@ -118,32 +133,77 @@ Find a post that interests you.
 
 
     {% for third_sub in site.pages %}
-       {% if third_sub.categories contains second_sub_cat %}
-         {% assign third_sub_cat = third_sub.category %}
-         {% assign third_posts = site.categories[third_sub_cat] %}
+      {% if third_sub.categories contains second_sub_cat %}
+        {% assign third_sub_cat = third_sub.category %}
+        {% assign third_posts = site.categories[third_sub_cat] %}
 
         *  __[{{third_sub.excerpt}}]({{third_sub.url | prepend:site.baseurl }})__
 
-         {% for post in third_posts reversed %}
+        {% for post in third_posts reversed %}
 
             *  [{{post.title}}]({{post.url | prepend:site.baseurl }})
 
-         {% endfor %}
+        {% endfor %}
 
 
       {% for fourth_sub in site.pages %}
-          {% if fourth_sub.categories contains third_sub_cat %}
-            {% assign fourth_sub_cat = fourth_sub.category %}
-            {% assign fourth_posts = site.categories[fourth_sub_cat] %}
+        {% if fourth_sub.categories contains third_sub_cat %}
+          {% assign fourth_sub_cat = fourth_sub.category %}
+          {% assign fourth_posts = site.categories[fourth_sub_cat] %}
 
            *  __[{{fourth_sub.excerpt}}]({{fourth_sub.url | prepend:site.baseurl }})__
 
-            {% for post in fourth_posts reversed %}
+          {% for post in fourth_posts reversed %}
 
                *  [{{post.title}}]({{post.url | prepend:site.baseurl }})
 
+          {% endfor %}
+
+        {% for fifth_sub in site.pages %}
+          {% if fifth_sub.categories contains fourth_sub_cat %}
+            {% assign fifth_sub_cat = fifth_sub.category %}
+            {% assign fifth_posts = site.categories[fifth_sub_cat] %}
+
+               *  __[{{fifth_sub.excerpt}}]({{fifth_sub.url | prepend:site.baseurl }})__
+
+            {% for post in fifth_posts reversed %}
+
+                   *  [{{post.title}}]({{post.url | prepend:site.baseurl }})
+
             {% endfor %}
 
+          {% for sixth_sub in site.pages %}
+            {% if sixth_sub.categories contains fifth_sub_cat %}
+              {% assign sixth_sub_cat = sixth_sub.category %}
+              {% assign sixth_posts = site.categories[sixth_sub_cat] %}
+
+                   *  __[{{sixth_sub.excerpt}}]({{sixth_sub.url | prepend:site.baseurl }})__
+
+              {% for post in sixth_posts reversed %}
+
+                       *  [{{post.title}}]({{post.url | prepend:site.baseurl }})
+
+              {% endfor %}
+
+            {% for seventh_sub in site.pages %}
+              {% if seventh_sub.categories contains sixth_sub_cat %}
+                {% assign seventh_sub_cat = seventh_sub.category %}
+                {% assign seventh_posts = site.categories[seventh_sub_cat] %}
+
+                        *  __[{{seventh_sub.excerpt}}]({{seventh_sub.url | prepend:site.baseurl }})__
+
+                {% for post in seventh_posts reversed %}
+
+                           *  [{{post.title}}]({{post.url | prepend:site.baseurl }})
+
+                {% endfor %}
+
+              {% endif %}
+            {% endfor %}
+            {% endif %}
+          {% endfor %}
+          {% endif %}
+        {% endfor %}
         {% endif %}
       {% endfor %}
       {% endif %}
