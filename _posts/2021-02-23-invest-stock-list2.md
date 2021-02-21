@@ -11,8 +11,8 @@ toc_ads: true
 
 ## 투자 일지 (2) - 관심종목 (UMC/ASX/OIIM)
 
-투자는 신중히 자신의 판단에 따라 진행하시기 바랍니다.
-notice
+**Warning:** 투자는 오로지 본인 책임입니다. 항상 신중하게 하세요.
+{: .notice--danger}
 
 ### 2.1 United Microelectronics Corporation
 
