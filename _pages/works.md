@@ -10,22 +10,23 @@ layout: single
 ---
 
 
-Take a look at a selection of projects I worked on either in academia, business or teaching.
+Take a look at a selection of projects I worked on either in academia, business or teaching. Most of these projects were conducted in teams. More information about the context and co-authors upon request.
 
 ## Scientific
 
 | Project Description | Research Focus | Data type | Methods used | Status |
 | ------------------------------------------- | ----------------------------------------------------- |
 | Short and long-term effect of bundle promotions | Based on actual sales data, we investigate whether customers react towards bundle promotions with higher number of store visits, higher quantity purchased and higher spending. | Sales data | Linear & logit models, Maximum Simulated Likelihood | on-going |
-| Value of customer relationship by acqusition | Based on actual sales data, we look at the value of a customer relationship on multiple levels. We specifically investigate differences in key customer indicators (e. g. disount-proneness, probability to return an order) depending on wether they were acquired by a discount, or not. | Sales data | Network analysis, linear & Logit models, simulation | on-going |
-| Experiment: Response to product bundles | We systematically varieddifferent types of product bundle framings and measured the quantity of products baught and the probability that a brand under promotion was preferred against its competitor.  | Survey | logit & count model, Maximum Simulated Likelihood | on-going |
+| Value of customer relationship depending on acquisition type | Based on actual sales data, we look at the value of a customer relationship on multiple levels. We specifically investigate differences in key customer behavior (e. g. repeat purchase,  disount-proneness, probability to return an order) depending on wether they were acquired by a discount, or not. | Sales data | Network analysis, linear & logit models, simulation | on-going |
+| Experiment: Response to product bundles | We systematically varied different types of product bundle framings and measured customers' response for our focus brand against a competing brand.  | Survey, eperimental | logit & count model, Maximum Simulated Likelihood | on-going |
 
 ## Business
 
 | Project Description | Research Focus | Data type | Methods used | Status |
 | ------------------------------------------- | ----------------------------------------------------- |
 | Brand perception of energie provider | Survey-based research on a multitude of brand-related mesaures and customer satisfaction. | Survey | Linear models, Principal Component Analysis, Cluster Analysis | final |
-| Success drivers of pop up event | Survey-based research on the perception of a temporary live marketing campaign and its effects on the brand perception for an insurance company | Survey | Linear models, Principal Component Analysis, Cluster Analysis | final |
+| Success drivers of <em>brand space</em> event | Survey-based research on the perception of a temporary live marketing campaign and its effects on the brand perception for an insurance company | Survey | Linear models, Principal Component Analysis, Cluster Analysis | final |
+| Predict cart abandonment | Based on sales data, we predict the probability for a customer to abandon their shopping cart via an artificial neural network. | Sales data | ANN, Keras & Tensorflow | final |
 
 ## Teaching
 
