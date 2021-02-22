@@ -2,7 +2,7 @@
 permalink: /skills/
 title: "Skills"
 excerpt: "This is my tech and methodology stack."
-last_modified_at: 2020-10-28T14:51:23-04:00
+last_modified_at: 2021-02-22T14:51:23-04:00
 classes: wide
 toc: true
 author_profile: true
@@ -40,19 +40,20 @@ Or, in more detail:
 | HTML & CSS | Web development | > 10 |
 | PHP | Web development | > 10 |
 | Javascript | Web development | > 7 (on/off) |
-| C++ | (faster) Statistics | just started |
+| C++ | (Faster) statistics | just started |
 | Scala | TBD | just started |
 
 ## Software (selection)
 
 | What | what for | Years of experience |
 | ------------------------------------------- | ----------------------------------------------------- |
-| RStudio | Statistcis | > 6 |
+| RStudio | Statistics | > 6 |
 | Jupyter, Anaconda | Statistics, RaspberryPi | > 1 |
 | MS Office Suite | Excel: Data wrangling, Word/PPT: Reporting | > 15 |
-| STATA | Statistcis | > 4 |
-| GAUSS | Statistcis | > 4 |
-| SPSS | Statistcis | > 8 |
+| iWork Suite | Reporting | > 10 |
+| STATA | Statistics | > 4 |
+| GAUSS | Statistics | > 4 |
+| SPSS | Statistics | > 8 |
 | Taleau | Data visualization | > 1 |
 
 ## Packages (selection)
@@ -62,9 +63,9 @@ Or, in more detail:
 | ggplot2 | R | Data visualization | > 4 |
 | data.table | R | SQL-style data queries in R | > 3 |
 | tidyverse | R | Set of helper-function within R | > 4 |
-| Rcpp | Use C++-Code in R, helpful for expensive for-loops | > 2 |
-| pandas | R-style data frames in python | > 2 |
-| numpy | Statistcis in Python | > 2 |
+| Rcpp | R | Use C++-Code in R, helpful for expensive for-loops | > 2 |
+| pandas | Python | R-style data frames in python | > 2 |
+| numpy | Python | Statistcis in Python | > 2 |
 | matplotlib | Python | Data visualization | > 2 |
 | Caret | R | Machine learning in R | > 1 |
 | Keras | R | Tensorflow for machine learning and deep learning in R | > 2 |
