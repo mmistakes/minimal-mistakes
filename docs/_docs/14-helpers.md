@@ -157,10 +157,11 @@ feature_row:
 
 And then drop-in the feature row include in the body where you'd like it to appear.
 
-| Include Parameter | Required | Description                                                                                                                                                | Default       |
-| ----------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
-| **id**            | Optional | To add multiple rows to a document uniquely name them in the YAML Front Matter and reference in `{% raw %}{% include feature_row id="row2" %}{% endraw %}` | `feature_row` |
-| **type**          | Optional | Alignment of the featured blocks in the row. Options include: `left`, `center`, or `right` aligned.                                                        |               |
+| Include Parameter | Required | Description                                                                                                                                                           | Default       |
+| ----------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| **id**            | Optional | To add multiple rows to a document uniquely name them in the YAML Front Matter and reference in `{% raw %}{% include feature_row id="row2" %}{% endraw %}`            | `feature_row` |
+| **rows**          | Optional | To add an array with rows specified in YAML with the same structure and reference it like this `{% raw %}{% include feature_row rows=page.feature_row %}{% endraw %}` |               |
+| **type**          | Optional | Alignment of the featured blocks in the row. Options include: `left`, `center`, or `right` aligned.                                                                   |               |
 
 ```liquid
 {% raw %}{% include feature_row %}{% endraw %}
