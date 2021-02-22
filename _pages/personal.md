@@ -5,8 +5,8 @@ header:
 permalink: /personal/
 ---
 
-Here you can find a non-exhaustive list of projects that I pursue on my own. If you're
-interested in any of them feel free to reach out.
+Here you can find a non-exhaustive list of projects that I pursue on my own. Feel free 
+to reach out if you're interested in any of them.
 
 ## Pymicra
 
@@ -21,7 +21,7 @@ project hosted on github that you can use of and contribute to.
 I started a quick [physical oceanography cheat sheet at
 gitlab](https://gitlab.com/tomchor/ocean_cheatsheet/-/wikis/home) that lists and explains
 some useful equations, relations, etc. in a very brief manner. I created it mainly for
-personal use and it's still a work in progress that populate as I need, but contributors
+personal use and it's still a work in progress that I populate as I need, but contributors
 are welcome.
 
 
