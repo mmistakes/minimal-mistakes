@@ -4,7 +4,7 @@ date: 2021-02-19
 header:
   image: "/images/blog cover.jpg"
 tags: [scala]
-excerpt: "A technique for eliminating bugs which are hard to trace, with implementations in Scala 2 via newtypes and in Scala 3 via opaque types."
+excerpt: "An ad-hoc type definition technique for eliminating bugs which are hard to trace, with implementations in Scala 2 via newtypes and in Scala 3 via opaque types."
 ---
 
 _This article is brought to you by [Riccardo Cardin](https://github.com/rcardin), a proud student of the [Scala with Cats course](https://rockthejvm.com/p/cats). Riccardo is a senior developer, a teacher and a passionate technical blogger. For the last 15 years, he's learned as much as possible about OOP, and now he is focused on his next challenge: mastering functional programming._
