@@ -10,11 +10,7 @@
   {%- assign append_title = " " | append: title_separator | append: " " | append: site.title -%}
 {%- endunless -%}
 
-{%- if page.seo_title -%}
-  {%- assign seo_title = page.seo_title -%}
-{%- elsif page.title -%}
-  {%- assign seo_title = page.title -%}
-{%- endif -%}
+{%- assign seo_title = page.seo_title | default: page.title | default: site.title -%}
 
 {%- if seo_title -%}
   {%- assign seo_title = seo_title | append: append_title -%}
