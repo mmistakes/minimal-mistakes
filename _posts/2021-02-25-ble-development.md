@@ -6,7 +6,6 @@ tags:
   - nordic semiconductor
   - segger embedded studio
   - IDE
-toc: true
 toc_sticky: true
 ---
 

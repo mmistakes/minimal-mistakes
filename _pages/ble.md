@@ -31,6 +31,7 @@ toc_ads: true
 * [BLE (5) - BLE 통신 속도는 실제로 1 Mbps 일까?](https://enidanny.github.io/ble/ble-effective-throughput/)
 * [BLE (6) - BLE 5.0 주요 특징](https://enidanny.github.io/ble/ble5-intro/)
 * [BLE (7) - 연결 파라미터](https://enidanny.github.io/ble/ble-slave-latency/)
+* [BLE (8) - Nordic BLE Chip 개발환경 구축하기](https://enidanny.github.io/ble/ble-development/)
 
 ## 포스팅 예정 항목
 <!--* BLE (?) - Nordic BLE chip 개발하기 (1): nRF52-DK 개발환경 구축 nRF52832 chip / Keil compiler / nRF command-line Tool / SDK, softdevice-->
