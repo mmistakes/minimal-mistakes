@@ -129,7 +129,7 @@ Auto-generated table of contents list for your posts and pages can be enabled by
 | **toc**     | Optional | Show table of contents. (boolean) | `false` |
 | **toc_label** | Optional | Table of contents title. (string) | `toc_label` in UI Text data file. |
 | **toc_icon**  | Optional | Table of contents icon, displays before the title. (string) | [Font Awesome](https://fontawesome.com/icons?d=gallery&s=solid&m=free) <i class="fas fa-file-alt"></i> **file-alt** icon. Other FA icons can be used instead. |
-| **toc_sticky** | Optional | Stick table of contents to top of screen.                   | `false` |  
+| **toc_sticky** | Optional | Stick table of contents to top of screen.                   | `false` |
 
 **TOC example with custom title and icon**
 
@@ -338,7 +338,7 @@ Then adjust the `paginate_path` in **_config.yml** to match.
 
 ```yaml
 paginate_path: /blog/page:num
-``` 
+```
 
 **Note:** Jekyll can only paginate a single `index.html` file. If you'd like to paginate more pages (e.g. category indexes) you'll need the help of a custom plugin. For more pagination related settings check the [**Configuration**]({{ "/docs/configuration/#paginate" | relative_url }}) section.
 {: .notice--info}
@@ -602,7 +602,7 @@ For example, to color a Reddit icon, simply add a `color` declaration and the co
     color: #ff4500;
   }
 }
-``` 
+```
 
 ![Reddit link in author profile with color]({{ "/assets/images/mm-author-profile-reddit-color.png" | relative_url }})
 
@@ -652,7 +652,7 @@ To start, add a new key to `_data/navigation.yml`. This will be referenced later
 
 **Sample sidebar menu links:**
 
-```yaml 
+```yaml
 docs:
   - title: Getting Started
     children:
@@ -722,6 +722,15 @@ defaults:
     values:
       sidebar:
         nav: "docs"
+```
+
+If you have multiple sidebar navs defined and want to include more than one on a page, the sidebar nav can also be a list.
+
+```yaml
+sidebar:
+  nav:
+    - main
+    - docs
 ```
 
 ---
