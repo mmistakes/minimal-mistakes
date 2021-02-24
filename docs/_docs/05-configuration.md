@@ -285,6 +285,12 @@ defaults:
 
 To disable post date for a post, add `show_date: false` to its YAML Front Matter, overriding what was set in `_config.yml`.
 
+When dates are shown on blog posts or pages, a date format will be chosen to format the date string. The default format is `"%B %-d, %Y"`, which will be displayed like "February 24, 2016". You can choose your date format by referencing this [cheat sheet](https://www.shortcutfoo.com/app/dojos/ruby-date-format-strftime/cheatsheet). For example, use your date format in `_config.yml`.
+
+```yaml
+date_format: "%Y-%m-%d"
+```
+
 ### Reading time
 
 Enable estimated reading time snippets with `read_time: true` in YAML Front Matter. `200` has been set as the default words per minute value --- which can be changed by adjusting `words_per_minute:` in `_config.yml`.
