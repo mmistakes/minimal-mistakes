@@ -1,6 +1,23 @@
 [
   {
     "image_path": null,
+    "alt": "Mitgliederversammlung Förderverein",
+    "title": "Mitgliederversammlung Förderverein",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MDM2bGd2dWJpazNlN2JwMDNudGU4dHFqZDggaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2021-03-23T19:00:00+01:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2021-03-23T21:00:00+01:00"
+    },
+    "created": "2021-02-26T05:39:48.000Z",
+    "updated": "2021-02-26T05:39:48.801Z"
+  },
+  {
+    "image_path": null,
     "alt": "Osterferien ",
     "title": "Osterferien ",
     "excerpt": null,
@@ -83,22 +100,5 @@
     },
     "created": "2020-03-11T12:15:33.000Z",
     "updated": "2020-03-11T12:17:55.062Z"
-  },
-  {
-    "image_path": null,
-    "alt": "Sommerferien",
-    "title": "Sommerferien",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=NDZtdXFoODVlMjdkazQ2dmYzajFyNHRtaWkgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2021-06-24",
-      "date_time": null
-    },
-    "end": {
-      "date": "2021-08-07",
-      "date_time": null
-    },
-    "created": "2020-03-11T12:16:17.000Z",
-    "updated": "2020-03-11T12:16:17.482Z"
   }
 ]
