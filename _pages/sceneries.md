@@ -36,6 +36,35 @@ gallery1:
     alt: "placeholder image 9"
     title: "Aerpuerto Los Pozos, San Gil, Santander, Colombia"   
 gallery2:
+  - url: /assets/images/SKNQ/SKNQ 00.png
+    image_path: /assets/images/SKNQ/SKNQ 00.png
+    alt: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
+    title: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
+  - url: /assets/images/SKNQ/SKNQ 01.png
+    image_path: /assets/images/SKNQ/SKNQ 01.png
+    alt: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
+    title: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
+  - url: /assets/images/SKNQ/SKNQ 02.png
+    image_path: /assets/images/SKNQ/SKNQ 02.png
+    alt: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
+    title: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
+  - url: /assets/images/SKNQ/SKNQ 03.png
+    image_path: /assets/images/SKNQ/SKNQ 03.png
+    alt: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
+    title: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
+  - url: /assets/images/SKNQ/SKNQ 04.png
+    image_path: /assets/images/SKNQ/SKNQ 04.png
+    alt: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
+    title: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
+  - url: /assets/images/SKNQ/SKNQ 05.png
+    image_path: /assets/images/SKNQ/SKNQ 05.png
+    alt: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
+    title: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
+  - url: /assets/images/SKNQ/SKNQ 06.png
+    image_path: /assets/images/SKNQ/SKNQ 06.png
+    alt: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
+    title: "Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia"
+gallery3:
   - url: /assets/images/SQSY/SQSY 00.png
     image_path: /assets/images/SQSY/SQSY 00.png
     alt: "Aeropuerto El Espino, Boyacá, Colombia"
@@ -81,6 +110,8 @@ Considera apoyarme con una donación para continuar creando contenido.
 
 Please consider supporting me to continue creating more content.
 
+<a href="https://www.buymeacoffee.com/vpilot"><img src="https://img.buymeacoffee.com/button-api/?text=Gastame una pizza&emoji=🍕&slug=vpilot&button_colour=79D6B5&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"></a>
+
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6T46LTPJDBWKY)
 
 
@@ -110,10 +141,14 @@ Please consider supporting me to continue creating more content.
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 
+### Nuquí SKNQ
+
+{% include gallery id="gallery2" caption="Aeropuerto Reyes Murillo, Nuquí, Chocó, Colombia" %}
+[Descargar/Download](https://vpilotdesigns.github.io/assets/vpilotdesigns-airport-sknq.zip)
 ### El Espino SQSY
 
-{% include gallery id="gallery2" caption="Aeropuerto El Espino, Boyacá, Colombia" %}
+{% include gallery id="gallery3" caption="Aeropuerto El Espino, Boyacá, Colombia" %}
+[Descargar/Download](https://vpilotdesigns.github.io/assets/vpilotdesigns-sqsy.zip)
 
-
-
+<script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="vpilot" data-description="Apoyame comprandome un Café!" data-message="Gracias por descargar. Ahora puedes invitarme a un Café!" data-color="#79D6B5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
