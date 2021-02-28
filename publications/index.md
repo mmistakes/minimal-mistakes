@@ -21,14 +21,12 @@
 
 in press:
 
+- Zhang et al. (in press). Outcome value and task aversiveness impact task procrastination through separate neural pathways. Cerebral Cortex.
+
 - Verguts, T. (in press). Introduction to modelling cognitive processes. MIT Press.
 
 - Holroyd, C. B., & Verguts, T. (in press). The best laid plans: Computational principles of ACC. Trends in Cognitive Sciences.
 [https://doi.org/10.31234/osf.io/3df8y](https://doi.org/10.31234/osf.io/3df8y)
-
-- Calderon, C. B., De Loof, E., Ergo, K., Snoeck, A., Boehler, C. N., & Verguts, T. (in press). Signed Reward Prediction Errors in the Ventral Striatum Drive Episodic Memory. Journal of Neuroscience. [https://doi.org/10.1101/2020.01.03.893578](https://doi.org/10.1101/2020.01.03.893578).
-
-- Verbeke, P., Ergo, K., De Loof, E., & Verguts, T. (in press). Learning to synchronize: Midfrontal theta dynamics during reversal learning. Journal of Neuroscience. [https://doi.org/10.1101/2020.06.01.127175](https://doi.org/10.1101/2020.06.01.127175). 
 
 - Peng, Z., Xu, C., Ma, N., Yang, Q., Ren, P., Wen, R., … Chen, Q. (in press). White matter alterations of the goal-directed system in obsessive-compulsive disorder patients and their unaffected first-degree relatives. Biological Psychiatry: Cognitive Neuroscience and Neuroimaging.
 
@@ -36,22 +34,14 @@ in press:
 
 
 2021:
+
+- Calderon, C. B., De Loof, E., Ergo, K., Snoeck, A., Boehler, C. N., & Verguts, T. (2021). Signed Reward Prediction Errors in the Ventral Striatum Drive Episodic Memory. Journal of Neuroscience, 41, 1716-1726. [https://doi.org/10.1101/2020.01.03.893578](https://doi.org/10.1101/2020.01.03.893578).
+
+- Verbeke, P., Ergo, K., De Loof, E., & Verguts, T. (2021). Learning to synchronize: Midfrontal theta dynamics during reversal learning. Journal of Neuroscience. [https://doi.org/10.1101/2020.06.01.127175](https://doi.org/10.1101/2020.06.01.127175). 
+
 - Desender, K., Donner, T. H., & Verguts, T. (2021). Dynamic expressions of confidence within an evidence accumulation framework. Cognition (207). [https://doi.org/10.1016/j.cognition.2020.104522](https://doi.org/10.1016/j.cognition.2020.104522)
 
-
-2020:
-
-- Ergo, K., De Loof, E., Debra, G., Pastötter, B., & Verguts, T. (2020). Failure to modulate reward prediction errors in declarative learning with theta (6 Hz) frequency transcranial alternating current stimulation. PLoS: One. [https://doi.org/10.1101/2020.08.05.237529](https://doi.org/10.1101/2020.08.05.237529). 
-
-- Aben, B., Buc Calderon, C., Van den Bussche, E., & Verguts, T. (2020). Cognitive Effort Modulates Connectivity between Dorsal Anterior Cingulate Cortex and Task-Relevant Cortical Areas. The Journal of Neuroscience, 40(19), 3838–3848. [https://doi.org/10.1523/JNEUROSCI.2948-19.2020](https://doi.org/10.1523/JNEUROSCI.2948-19.2020)
-
-- Ergo, K., De Loof, E., & Verguts, T. (2020). Reward Prediction Error and Declarative Memory. Trends in Cognitive Sciences, 24(5), 388–397. [https://doi.org/10.1016/j.tics.2020.02.009](https://doi.org/10.1016/j.tics.2020.02.009)
-
-- Goris, J., Silvetti, M., Verguts, T., Wiersema, J. R., Brass, M., & Braem, S. (2020). Autistic traits are related to worse performance in a volatile reward learning task despite adaptive learning rates. Autism.
-
-- Botvinik-Nezer, R., et  al. (2020). Variability in the analysis of a single neuroimaging dataset by many teams. Nature.
-
-- Zhou, D., Luo, J., Yi, Z., Li, Y., Yang, S., Verguts, T., & Chen, Q. (2020). The Hand-Lateralization of Spatial Associations in Working Memory and Long-Term Memory. Quarterly Journal of Experimental Psychology.
+- Goris, J., Silvetti, M., Verguts, T., Wiersema, J. R., Brass, M., & Braem, S. (2021). Autistic traits are related to worse performance in a volatile reward learning task despite adaptive learning rates. Autism, 25, 440-451.
 
 
 ## Archive
