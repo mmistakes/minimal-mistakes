@@ -11,6 +11,10 @@ toc: false
 
 ## Unreleased
 
+### Enhancements
+
+- Add `alt` attribute to site logo. [#2529](https://github.com/mmistakes/minimal-mistakes/issues/2529) [#2824](https://github.com/mmistakes/minimal-mistakes/issues/2824)
+
 ### Bug Fixes
 
 - Remove Google Search CSS. [#2852](https://github.com/mmistakes/minimal-mistakes/issues/2852) [#2855](https://github.com/mmistakes/minimal-mistakes/pull/2855)
