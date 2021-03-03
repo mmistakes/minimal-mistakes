@@ -1,3 +1,9 @@
+## Unreleased
+
+### Bug Fixes
+
+- Remove Google Search CSS. [#2852](https://github.com/mmistakes/minimal-mistakes/issues/2852) [#2855](https://github.com/mmistakes/minimal-mistakes/pull/2855)
+
 ## [4.22.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.22.0)
 
 ### Bug Fixes
@@ -18,7 +24,9 @@
 - Update remote theme documentation. [#2734](https://github.com/mmistakes/minimal-mistakes/pull/2734)
 - Update allejo/jekyll-toc to v1.1.0, skip headings without an ID. [#2752](https://github.com/mmistakes/minimal-mistakes/pull/2752)
 - Allow custom gradient for page header overlay. [#2806](https://github.com/mmistakes/minimal-mistakes/pull/2806)
+
 ## [4.21.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.21.0)
+
 ### Bug Fixes
 
 - Fix greedy navigation by improving reliability of remaining space for visible links. [#2664](https://github.com/mmistakes/minimal-mistakes/issues/2664)
