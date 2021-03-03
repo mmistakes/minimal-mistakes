@@ -9,6 +9,12 @@ last_modified_at: 2021-02-05T21:01:55-05:00
 toc: false
 ---
 
+## Unreleased
+
+### Bug Fixes
+
+- Remove Google Search CSS. [#2852](https://github.com/mmistakes/minimal-mistakes/issues/2852) [#2855](https://github.com/mmistakes/minimal-mistakes/pull/2855)
+
 ## [4.22.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.22.0)
 
 ### Bug Fixes
