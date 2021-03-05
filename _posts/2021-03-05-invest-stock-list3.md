@@ -1,0 +1,78 @@
+---
+title: "투자 일지 (3) - 관심종목 (ARAY/OSS/MX)"
+categories:
+  - INVESTING
+tags:
+  - ARAY
+  - OSS
+  - MX
+toc_ads: true
+---
+
+## 투자 일지 (3) - 관심종목 (ARAY/OSS/MX)
+
+`2021년 3월 4일` 기준으로 미국의 `제롬 파월` 미국 중앙 은행 (`Fed`) 의장이 국채 금리가 더 뛰더라도 시장 개입에 나서지 않겠다는 의사를 표명해서 미국 증시가 급락했다. 중앙 은행 의장이니 국채니 모르더라도, 중요한 건 증시가 아작이 났다는 사실..
+
+> 사실 이럴 때마다 `"충분히 수익이 났을 때, 매도했다가 다시 투자할 걸"`라는 생각을 하지만, 사실 돌이켜보면 한 동안 주가가 하향 곡선을 그릴 거라고는 생각조차 하지 않고 있었다. 애초에 언제 시장이 내려갈지 올라갈지를 예측한다는 것 자체가 본인의 미국 증시 투자 성향과는 상충되는지라, 분산 투자하면서 다시 증시가 회복되길 기다릴 수 밖에 없을 것 같다.
+
+**Warning:** 투자는 오로지 본인 책임입니다. 항상 신중하게 하세요.
+{: .notice--danger}
+
+### 3.1 Accuray Incoporated
+
+* **`NASDAQ:ARAY`**
+
+* **헬스케어: 건강관리 장비 생산 및 서비스 제공**
+
+* 종양 치료용 방사선 수술 및 치료 의료장비를 설계. 실시간으로 종양과 환자의 움직임을 자동으로 추적, 감지, 교정.
+
+* 미래 지향적 로봇 치료 산업
+
+<span style="color:#A03008"><b>현 주가</b></span>: **`$10.38`**
+
+<figure style="width: 100%">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/invest2-fig1.png" alt="">
+  <figcaption>그림 출처: </figcaption>
+</figure>
+
+---
+
+### 3.2 One Stop Systems. Inc.
+
+* **`NASDAQ:OSS`**
+
+* **AI / 딥러닝 관련 하드웨어**
+
+* 컴퓨터 하드웨어, 저장장치 및 주변기기 산업분야에 속한 업체로, HPC 모듈, 어플리케이션, 시스템을 설계, 제조 및 판매하는 하드웨어 제조회사
+
+* HPC (High Performance Computing, 고성능 컴퓨터)는 AI 학습과 빅데이터 분석에 필요한 데이터 급증으로 인해 방대한 데이터 처리하기 위해 이 기술이 활용될 수 있을 것이란 전망이 있음.
+
+<span style="color:#A03008"><b>현 주가</b></span>: **`$8.31`**
+
+<figure style="width: 100%">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/invest2-fig2.png" alt="">
+  <figcaption>그림 출처:  </figcaption>
+</figure>
+
+---
+
+### 3.3 MagnaChip Semiconductor Corporation
+
+* **`NYSE:OIIM`**
+
+* **반도체 산업분야**
+
+* 사물인터넷, 소비자 산업 및 자동차 애플리케이션용 반도체 플랫폼을 개발, 생산함. (~~근데 이 기업에 대해서는 영상에서 소개한 내용 만으로는 어떤 기업인지 감이 안잡힘~~)
+
+<span style="color:#A03008"><b>현 주가</b></span>: **`$8.67`**
+
+<figure style="width: 100%">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/invest2-fig3.png" alt="">
+  <figcaption>그림 출처:  </figcaption>
+</figure>
+
+---
+
+**Reference**
+
+https://www.youtube.com/channel/UCE-BGQqwAew6OSexjaxp87w

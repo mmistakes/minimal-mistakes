@@ -4,7 +4,7 @@ categories:
   - BLE
 tags:
   - mesh network
-  - feature
+  - operation
 toc: true
 toc_sticky: true
 ---
