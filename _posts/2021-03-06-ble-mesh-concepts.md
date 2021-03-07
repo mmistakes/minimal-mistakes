@@ -12,8 +12,6 @@ toc_sticky: true
 
 ## 11. 블루투스 메시: Overview of Mesh concepts
 
-이번 포스트에서는 블루투스 메시에서 사용되는 몇 가지 개념(`concept`)들에 대해 정리하고자 한다.
-
 ### 11.1 Elements
 
 블루투스 메시에서 언급하는 `element`는 네트워크에 포함된 노드가 가지고 있는 어떠한 개체를 가리키는데, 쉽게 예를 들자면 노드와 연결된 조명기구, 스위치, 센서 등이 `element` 라고 할 수 있다. 메시 네트워크에 포함된 모든 노드는 최소 하나의 `element` 를 가지고 있으며, 대개 그 이상의 `element`를 포함한다.
@@ -56,23 +54,22 @@ BLE 시스템에서 자주 사용되는 `GATT Services` 의 경우 이를 `16 bi
 
 ---
 
+### 11.3 Features and Topology
+
+메시 네트워크를 구성하는 노드는 **`Relay`**, **`Proxy`**, **`Low Power`**, **`Friend`** 특성 (`feature`)을 가질 수 있으며, 동시에 하나 이상의 특성을 가질 수도 있다. `Relay` 는 `advertising bearer` 를 통해 수신된 `message` 를 다시 주변으로 전달하는 특성을 가리키며, `Proxy` 특성을 갖는 노드는 `GATT bearer` 와 `advertising bearer` 사이의 `message` 교환을 지원한다. `Low Power` 및 `Friend` 특성은 이전 포스트에서 소개한 `Friendship` 시스템을 구현하는데 사용되는 노드가 갖는 특성이다.
+
+다음의 그림은 각각의 특성을 갖는 노드들이 포함되어 있는 메시 네트워크 구조 (`Topology`)의 한 예시를 보여준다.
+
+<figure style="width: 100%" class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/ble-mesh3-fig3.png" alt="">
+</figure>
+
+위 그림을 보면 무선 통신 거리 내에 있는 노드는 서로 `message` 를 주고 받을 수 있지만, 수신된 메시지를 다시 전달 (`Relay`)하여 통신 거리를 연장시키는 역할은 `Q, R, S, O` 노드만 수행 가능한 것을 볼 수 있다. 또한, 세 개의 `Friend` 노드 (`N, O, P`) 중, `N` 노드는 근처에 `Low Power` 노드와 연동되지 않은 상태임을 볼 수 있고, `O` 노드의 경우 `Relay` 특성과 함께 `Friend` 특성도 갖는 것을 확인할 수 있다.
+
+---
+
 **Reference**
 
 https://www.bluetooth.com/specifications/specs/
 
 https://devzone.nordicsemi.com/f/nordic-q-a/28324/virtual-addresses-and-their-use
-
-<!--
-
-### 11.3 Features and Topology
-어떤 feature 있는지
-
-이런 특징 토대로 다음 그림보자
-
-블루투스 메시에서 구성할 수 있는 네트워크 구조에 대해 보자
-
-Topology 그림 제시
-
-
-메시 프로파일 표준 (<span style="color:#3060A0"><b>Mesh Profile Specification</b></span>)에 의하면, 메시 네트워크는 대략적으로 다음 기능들을 제공하기 위해 제안되었다고 할 수 있다.
--->
