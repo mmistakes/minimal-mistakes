@@ -33,6 +33,8 @@ toc_ads: true
 * [BLE (7) - 연결 파라미터](https://enidanny.github.io/ble/ble-slave-latency/)
 * [BLE (8) - Nordic BLE Chip 개발환경 구축하기](https://enidanny.github.io/ble/ble-development/)
 * [BLE (9) - 블루투스 메시: Overview of Mesh stack](https://enidanny.github.io/ble/ble-mesh/)
+* [BLE (10) - 블루투스 메시: Overview of Mesh operation](https://enidanny.github.io/ble/ble-mesh-opeartion/)
+* [BLE (11) - 블루투스 메시: Overview of Mesh concepts](https://enidanny.github.io/ble/ble-mesh-concepts/)
 
 ## 포스팅 예정 항목
 <!--* BLE (?) - Nordic BLE chip 개발하기 (1): nRF52-DK 개발환경 구축 nRF52832 chip / Keil compiler / nRF command-line Tool / SDK, softdevice-->
