@@ -13,7 +13,7 @@ Hi, I am a last-year undergraduate student in the [School of Computer Science an
 Here is my [Curriculum Vitae in PDF format](../files/Minqian_Liu_CV.pdf).
 
 ## Research Interests
-My research interests include **model generalization** (e.g., few-shot learning, transfer learning, domain adaptation, etc.), deep learning for **natural language processing**, **data mining**, and **computer vision**, as well as **machine learning** and its applications.
+My research interests include **model generalization** (e.g., few-shot learning, transfer learning, domain adaptation, etc.), deep learning for **natural language processing**, as well as **machine learning** and its applications.
 
 ## News
 **\[2021.1]** One paper accepted by **ICASSP 2021**. Congrat to all my co-authors!<br>
