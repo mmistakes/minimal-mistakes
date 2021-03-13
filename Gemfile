@@ -5,4 +5,6 @@ gem "jekyll", "= 4.2.0", github: "jekyll/jekyll"
 
 # gemspec
 
-gem "jekyll-slugify-categories 0.1.1", "~> 0.1.1"
+gem "jekyll-slugify-categories", "~> 0.1.1"
+
+gem "jekyll-paginate", "~> 1.1"
