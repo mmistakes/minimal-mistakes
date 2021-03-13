@@ -2,7 +2,7 @@
 main:
   - title: "Quick-Start Guide"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "About me"
+  - title: "About"
     url: /about/
   - title: "Categories"
     url: /categories/
@@ -23,13 +23,13 @@ about-me:
     url: /about/
     children:
       - title: "Work experience"
-        url: /about/work-experience/
+       # url: /about/work-experience/
       - title: "Accomplishments"
-        url: /about/accomplishments/
+       # url: /about/accomplishments/
       - title: "Suggested books"
-        url: /about/books/
+       # url: /about/books/
   - title: "Resume"
     icon: "far fa-fw fa-file-pdf"
-    url: "/assets/files/resume-renato-golia.pdf"
+   # url: "/assets/files/resume-renato-golia.pdf"
 
     
