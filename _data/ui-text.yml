@@ -676,7 +676,7 @@ ru: &DEFAULT_RU
   loading_label              : "Отправка..."
   search_label_text          :
   search_placeholder_text    : "Введите поисковый запрос..."
-  results_found              : "Найдено"
+  results_found              : "в результате поиска"
 ru-RU:
   <<: *DEFAULT_RU
 

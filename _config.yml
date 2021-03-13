@@ -163,6 +163,7 @@ include:
   - .htaccess
   - _pages
 exclude:
+  - .jekyll-cache/
   - "*.sublime-project"
   - "*.sublime-workspace"
   - vendor
@@ -177,6 +178,7 @@ exclude:
   - CHANGELOG
   - config
   - Gemfile
+  - Gemfile.lock
   - Gruntfile.js
   - gulpfile.js
   - LICENSE
@@ -189,6 +191,7 @@ exclude:
   - tmp
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
+  - serve.sh
 keep_files:
   - .git
   - .svn
@@ -237,6 +240,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-slugify-categories
 
 # mimic GitHub Pages with --safe
 whitelist:
