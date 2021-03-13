@@ -248,7 +248,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-
+  - jekyll-slugify-categories 0.1.1
 
 # Archives
 #  Type
