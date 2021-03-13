@@ -8,3 +8,11 @@ gem "jekyll", "= 4.2.0", github: "jekyll/jekyll"
 gem "jekyll-slugify-categories", "~> 0.1.1"
 
 gem "jekyll-paginate", "~> 1.1"
+
+gem "jekyll-sitemap", "~> 1.4"
+
+gem "jekyll-gist", "~> 1.5"
+
+gem "jekyll-feed", "~> 0.15.1"
+
+gem "jekyll-include-cache", "~> 0.2.1"
