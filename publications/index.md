@@ -3,6 +3,8 @@
 ## Preprints
 
 
+- Liu, M., Dong, W., Qin, S.,Verguts, T., & Chen, Q. (2021). Electrophysiological signatures of hierarchical learning. BioRxiv [https://doi.org/10.1101/2021.03.09.434666](https://doi.org/10.1101/2021.03.09.434666)
+ 
 - Desender, K., Vermeylen, L., & Verguts, T. (2020). Dynamic influences on static measures of metacognition. BioRxiv. [https://doi.org/10.1101/2020.10.29.360453](https://doi.org/10.1101/2020.10.29.360453)
 
 - Shahnazian, D., Senoussi, M., Krebs, R. M., Verguts, T., & Holroyd, C. B. (2020). Neural representations of task context and temporal order during action sequence execution. BioRxiv. [https://doi.org/10.1101/2020.09.10.290965](https://doi.org/10.1101/2020.09.10.290965)
@@ -21,7 +23,7 @@
 
 in press:
 
-- Zhang et al. (in press). Outcome value and task aversiveness impact task procrastination through separate neural pathways. Cerebral Cortex.
+- Zhang, S., Verguts, T., Zhang, C., Feng, P., Chen, Q., & Feng, T. (in  press). Outcome value and task aversiveness impact task procrastination through separate neural pathways. Cerebral Cortex.
 
 - Verguts, T. (in press). Introduction to modelling cognitive processes. MIT Press.
 
