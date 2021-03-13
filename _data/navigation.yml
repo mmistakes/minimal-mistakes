@@ -1,36 +1,35 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "About"
-    icon: "fas fa-info-circle"
+#  - title: "Quick-Start Guide"
+#    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "О сайте"
     url: /about/
-  - title: "Categories"
+  - title: "Категории"
     url: /categories/
-  - title: "Tags"
+  - title: "Тэги"
     url: /tags/
-  - title: "Sample Posts"
+  - title: "Архив"
     url: /year-archive/
-  - title: "Sample Collections"
-    url: /collection-archive/
-  - title: "Sitemap"
-    url: /sitemap/
-  - title: "Blogs"
-    url: /Blogs/
+#  - title: "Sample Collections"
+#    url: /collection-archive/
+#  - title: "Sitemap"
+#    url: /sitemap/
+#  - title: "Blogs"
+#    url: /Blogs/
 
-about-me:
-  - title: "About me"
-    icon: "fas fa-info-circle"
-    url: /about/
-    children:
-      - title: "Work experience"
-       # url: /about/work-experience/
-      - title: "Accomplishments"
-       # url: /about/accomplishments/
-      - title: "Suggested books"
-       # url: /about/books/
-  - title: "Resume"
-    icon: "far fa-fw fa-file-pdf"
-   # url: "/assets/files/resume-renato-golia.pdf"
+#about-me:
+#  - title: "About me"
+#    icon: "fas fa-info-circle"
+#    url: /about/
+#    children:
+#      - title: "Work experience"
+#        url: /about/work-experience/
+#      - title: "Accomplishments"
+#       # url: /about/accomplishments/
+#      - title: "Suggested books"
+#        url: /about/books/
+#  - title: "Resume"
+#    icon: "far fa-fw fa-file-pdf"
+#    url: "/assets/files/resume-renato-golia.pdf"
 
     
