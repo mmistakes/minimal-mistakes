@@ -240,7 +240,6 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-  - jekyll-slugify-categories
 
 # mimic GitHub Pages with --safe
 whitelist:
