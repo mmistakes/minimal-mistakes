@@ -1,9 +1,9 @@
 ---
-title: "ВИДЕО | Попов обратился к тем, кто ждет появления в Эстонии российской вакцины «Спутник»"
+title: "Попов обратился к тем, кто ждет появления в Эстонии российской вакцины Спутник"
 slug: popov-o-sputnik-v
-date: 2021-03-14T11:39:01-04:00
-last_modified_at: 2021-03-14T16:39:01+02:00
-tagline: "Доктор Аркадий Попов о вакцине «Спутгник»"
+date: 2021-03-14T11:39:01+02:00
+last_modified_at: 
+tagline: "Доктор Аркадий Попов о вакцине Спутгник"
 header:
   overlay_image: https://g1.nh.ee/images/pix/1000x465/jsztb8Wbntw/10jpg-92832081.jpg
   og_image: https://g1.nh.ee/images/pix/1000x465/jsztb8Wbntw/10jpg-92832081.jpg
