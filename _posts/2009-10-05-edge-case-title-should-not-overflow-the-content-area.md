@@ -1,7 +1,7 @@
 ---
 title: "Antidisestablishmentarianism"
-categories:
-  - Edge Case
+categories: Edge Case
+slugified_categories: edge-case
 tags:
   - content
   - css
