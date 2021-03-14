@@ -1,12 +1,14 @@
 ---
 title:  "Welcome to Jekyll!"
 header:
-  teaser: "https://farm5.staticflickr.com/4076/4940499208_b79b77fb0a_z.jpg"
+  image: /assets/images/unsplash-image-2.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  # teaser: "https://farm5.staticflickr.com/4076/4940499208_b79b77fb0a_z.jpg"
 categories: 
   - Jekyll
 tags:
   - update
-images: /assets/images/unsplash-image-2.jpg
+image: /assets/images/unsplash-image-2.jpg  
 ---
 
 You'll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in [many different ways](https://jekyllrb.com/docs/usage/), but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
