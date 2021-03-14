@@ -18,3 +18,5 @@ gem "jekyll-feed", "~> 0.15.1"
 gem "jekyll-include-cache", "~> 0.2.1"
 
 gem "minimal-mistakes-jekyll", :git => "https://github.com/mmistakes/minimal-mistakes.git", :tag => "4.22.0"
+
+gem "github-pages"
