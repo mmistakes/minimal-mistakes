@@ -19,6 +19,19 @@ GIT
       terminal-table (~> 2.0)
       webrick (~> 1.7)
 
+GIT
+  remote: https://github.com/mmistakes/minimal-mistakes.git
+  revision: 30ae2357c9a07abcdf6fceb8221f463564a154df
+  tag: 4.22.0
+  specs:
+    minimal-mistakes-jekyll (4.22.0)
+      jekyll (>= 3.7, < 5.0)
+      jekyll-feed (~> 0.1)
+      jekyll-gist (~> 1.5)
+      jekyll-include-cache (~> 0.1)
+      jekyll-paginate (~> 1.1)
+      jekyll-sitemap (~> 1.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -99,6 +112,7 @@ DEPENDENCIES
   jekyll-paginate (~> 1.1)
   jekyll-sitemap (~> 1.4)
   jekyll-slugify-categories (~> 0.1.1)
+  minimal-mistakes-jekyll!
 
 BUNDLED WITH
    2.1.4

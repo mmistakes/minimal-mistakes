@@ -655,7 +655,7 @@ ru: &DEFAULT_RU
   comments_label             : "Оставить комментарий"
   comments_title             : "Комментарии"
   more_label                 : "Читать дальше"
-  related_label              : "Вас также могут заинтересовать и эти статьи"
+  related_label              : "Вас также могут заинтересовать:"
   follow_label               : "Связаться со мной:"
   feed_label                 : "RSS-лента"
   powered_by                 : "Сайт работает на"
