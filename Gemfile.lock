@@ -116,7 +116,7 @@ DEPENDENCIES
   jekyll-paginate (~> 1.1)
   jekyll-sitemap (~> 1.4)
   minimal-mistakes-jekyll!
-  thor (~> 0.20.3)
+  thor
 
 BUNDLED WITH
    2.1.4

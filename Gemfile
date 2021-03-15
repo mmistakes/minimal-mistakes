@@ -21,5 +21,8 @@ gem "minimal-mistakes-jekyll", :git => "https://github.com/mmistakes/minimal-mis
 
 # gem "github-pages"
 
-gem "thor", "~> 0.20.3"
+gem "thor"
+
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+
 
