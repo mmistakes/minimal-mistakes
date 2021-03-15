@@ -48,7 +48,17 @@
         <p class="page__lead">{{ page.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}</p>
       {% endif %}
       {% if page.read_time %}
-        <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
+        <p class="page__meta">
+        
+                   <i class="far fa-calendar-alt" aria-hidden="true"></i> Дата: {{ page.date | date: "%d-%m-%Y г." }}
+            {% endif %}
+
+            {% if page.last_modified_at %}
+              &nbsp;|&nbsp;
+              <i class="far fa-calendar-alt" aria-hidden="true"></i> Дата: {{ page.last_modified_at | date: "%d-$m-%Y г." }}
+            {% endif %}  
+        
+        <i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
       {% endif %}
       {% if page.header.cta_url %}
         <p><a href="{{ cta_path }}" class="btn btn--light-outline btn--large">{{ page.header.cta_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
