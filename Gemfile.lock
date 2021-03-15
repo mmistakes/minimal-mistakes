@@ -1,4 +1,11 @@
 GIT
+  remote: https://github.com/eventmachine/eventmachine.git
+  revision: 9cb13a8a62363df5ebcc414169a3deb2c1608528
+  tag: v1.2.7
+  specs:
+    eventmachine (1.2.7)
+
+GIT
   remote: https://github.com/jekyll/jekyll.git
   revision: c9c9dc7dac74bce963101dd5c8670226dae01d85
   specs:
@@ -42,8 +49,6 @@ GEM
     em-websocket (0.5.2)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
-    eventmachine (1.2.7)
-    eventmachine (1.2.7-x64-mingw32)
     faraday (1.3.0)
       faraday-net_http (~> 1.0)
       multipart-post (>= 1.2, < 3)
@@ -110,6 +115,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  eventmachine (= 1.2.7)!
   jekyll (= 4.2.0)!
   jekyll-feed (~> 0.15.1)
   jekyll-gist (~> 1.5)
