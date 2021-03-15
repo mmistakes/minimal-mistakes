@@ -2,14 +2,16 @@
 main:
 #  - title: "Quick-Start Guide"
 #    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "О сайте"
-    url: /about/
+  - title: "Главная"
+    url: /
   - title: "Категории"
     url: /categories/
   - title: "Тэги"
     url: /tags/
   - title: "Архив"
     url: /year-archive/
+  - title: "О сайте"
+    url: /about/  
 #  - title: "Sample Collections"
 #    url: /collection-archive/
 #  - title: "Sitemap"

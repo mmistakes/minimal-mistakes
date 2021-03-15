@@ -32,15 +32,15 @@
     </h2>
     {% if post.read_time %}
       <p class="page__meta">
-      
-                 <i class="far fa-calendar-alt" aria-hidden="true"></i> Дата: {{ page.date | date: "%d-%m-%Y г." }}
+          {% if page.date %}
+              <i class="far fa-calendar-alt" aria-hidden="true"></i> Дата: {{ page.date | date: "%d-%m-%Y г." }}
             {% endif %}
 
             {% if page.last_modified_at %}
               &nbsp;|&nbsp;
               <i class="far fa-calendar-alt" aria-hidden="true"></i> Дата: {{ page.last_modified_at | date: "%d-$m-%Y г." }}
             {% endif %}  
-      
+            
       <i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
