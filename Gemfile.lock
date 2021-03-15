@@ -102,6 +102,7 @@ GEM
       unicode-display_width (~> 1.1, >= 1.1.1)
     thor (0.20.3)
     unicode-display_width (1.7.0)
+    wdm (0.1.1)
     webrick (1.7.0)
 
 PLATFORMS
@@ -117,6 +118,7 @@ DEPENDENCIES
   jekyll-sitemap (~> 1.4)
   minimal-mistakes-jekyll!
   thor
+  wdm (>= 0.1.0)
 
 BUNDLED WITH
    2.1.4
