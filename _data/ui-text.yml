@@ -645,13 +645,13 @@ ru: &DEFAULT_RU
   search_label               :
   toc_label                  : "Содержание"
   ext_link_label             : "Прямая ссылка"
-  less_than                  : "менее"
+  less_than                  : "<"
   minute_read                : "мин на чтение"
   share_on_label             : "Поделиться"
   meta_label                 :
   tags_label                 : "Тэги:"
   categories_label           : "Категории:"
-  date_label                 : "Дата:"
+  date_label                 : "Обновлено:"
   comments_label             : "Оставить комментарий"
   comments_title             : "Комментарии"
   more_label                 : "Читать дальше"
