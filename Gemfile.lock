@@ -100,6 +100,7 @@ GEM
       faraday (> 0.8, < 2.0)
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
+    thor (0.20.3)
     unicode-display_width (1.7.0)
     webrick (1.7.0)
 
@@ -115,6 +116,7 @@ DEPENDENCIES
   jekyll-paginate (~> 1.1)
   jekyll-sitemap (~> 1.4)
   minimal-mistakes-jekyll!
+  thor (~> 0.20.3)
 
 BUNDLED WITH
    2.1.4
