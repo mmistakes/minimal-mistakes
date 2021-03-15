@@ -163,7 +163,7 @@ include:
   - .htaccess
   - _pages
 exclude:
-  - .jekyll-cache/
+  # - .jekyll-cache/
   - "*.sublime-project"
   - "*.sublime-workspace"
   - vendor
@@ -178,7 +178,7 @@ exclude:
   - CHANGELOG
   - config
   - Gemfile
-  - Gemfile.lock
+  #- Gemfile.lock
   - Gruntfile.js
   - gulpfile.js
   - LICENSE
@@ -191,7 +191,7 @@ exclude:
   - tmp
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
-  - serve.sh
+  #- serve.sh
 keep_files:
   - .git
   - .svn
