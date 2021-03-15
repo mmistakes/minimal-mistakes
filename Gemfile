@@ -3,7 +3,7 @@ source "https://rubygems.org"
 gem "jekyll", "= 4.2.0", github: "jekyll/jekyll"
 # gem "github-pages", group: :jekyll_plugins
 
-# gemspec
+gemspec
 
 # gem "jekyll-slugify-categories", "~> 0.1.1"
 
@@ -29,5 +29,5 @@ gem 'eventmachine', '1.2.7', git: 'https://github.com/eventmachine/eventmachine.
 
 # gem "github-pages", group: :jekyll_plugins
 
-gemspec
+
 
