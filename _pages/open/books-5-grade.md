@@ -1,4 +1,5 @@
 ---
+layout: single
 title: "Вибір підручників"
 permalink: /open/books-5-grade/
 sidebar:
