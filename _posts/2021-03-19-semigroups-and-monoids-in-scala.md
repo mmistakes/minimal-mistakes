@@ -1,6 +1,6 @@
 ---
 title: "Semigroups and Monoids in Scala"
-date: 2021-03-20
+date: 2021-03-19
 header:
 image: "/images/blog cover.jpg"
 tags: [scala, cats]
