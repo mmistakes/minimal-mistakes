@@ -1,5 +1,5 @@
 ---
-title: Projects  
+title: Projects 2021
 permalink: /projects-2021/
 toc: true
 layout: single
