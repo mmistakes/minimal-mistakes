@@ -3,6 +3,8 @@ title: Projects
 permalink: /projects/
 toc: true
 classes: wide
+layout: single
+
 ---
 
 ## ID-1 - Probability and Statistics : From Classical to Bayesian  
