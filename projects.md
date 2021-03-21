@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Projects  
 permalink: /projects/
 toc: true
