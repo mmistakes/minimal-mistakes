@@ -8,14 +8,14 @@ author_profile: false
 ---
 
 ## 1 - Probability and Statistics : From Classical to Bayesian  
-* **Mentors:** Aniket Kumar(aniki#8797), Pranay Agarwal(Pranzer#5431), Munish Gupta(Alexios#2464)  
+* **Mentors:** Aniket Kumar (aniki#8797), Pranay Agarwal (Pranzer#5431), Munish Gupta (Alexios#2464)  
 * **Description :** This Project will guide you through the basics of Probability Theory, data generation , decision theory , Bayesian Analysis and then application of Bayesian to real world problems.
 The project would be of immense help to many as probability theory has wide applications ranging from its use in the corporate world to the realm of research in almost any field. Familiarity with probability theory helps theoreticians and experimentalists alike.  
 * **Expected Duration :** 2 months  
 * **Expected Weekly Commitment:** 4-5 hours  
 
 ## 2 - Communicating Mathematics  
-* **Mentors:** Harshit Bisht(Harshit Bisht#7766)  
+* **Mentors:** Harshit Bisht (Harshit Bisht#7766)  
 * **Description :** Disclaimer: This project will very likely be useless for both jobs and MS/PhD admissions. You have been warned.
 Mathematical concepts are often disconnected from people's reality, people don't relate to statistics shared by politicians, economists, public organizations, and other domains that are relevant to everyday life. The project would aim to create examples, counterexamples, simulations, and games to connect math concepts to their relevance to the world at large.
 Some arbitrary examples:
@@ -29,7 +29,7 @@ Some arbitrary examples:
 * **Expected Weekly Commitment:** 5 hours  
 
 ## 3 - The Dynamics of Life  
-* **Mentors:** Mohit Kulkarni(hairyballs#1384)  
+* **Mentors:** Mohit Kulkarni (hairyballs#1384)  
 * **Description :** In this course we wish to discover aspects of mathematics widely used in dynamical systems with application to biology. Nature has beautiful patterns as well as chaos, we wish to understand how dynamical systems work particularly in the brain. Initial weeks would cover basic biology and basic mathematics required thereafter. Here we will try to get an intuituon on why mathematics and biology aren't completely different areas. Later, we will understand what a network, what chaos is and why dynamics is important. We will look into one/two dimensional dynamical systems(would also include the dynamics of a neuron). Later topics will depend on you and may include RNN's, large-scale neural models, attractor dynamics etc. 
 
   Maths may be difficult to understand, so we will take the help of cool visualisations. Programming knowledge(any language) is a plus but not required.
@@ -42,7 +42,7 @@ Some arbitrary examples:
 * **Expected Weekly Commitment:** 4  
 
 ## 4 - Number Theory and Algebra  
-* **Mentors:** Ajay Prajapati(Ajay Prajapati#6448), Hargun Preet Singh Bhatia(Hargun#7217)  
+* **Mentors:** Ajay Prajapati (Ajay Prajapati#6448), Hargun Preet Singh Bhatia (Hargun#7217)  
 * **Description :** The goal of this project is to give a gentle introduction to Modern Number theory. We will cover basic topics like Divisibility, modular arithmetic, Euler's theorem, fundamental theorem of arithmetic, quadratic residues and Gauss's famous Quadratic reciprocity law. Along the way, we will introduce several key algebraic objects like groups, rings and fields. If time permits, we will talk about some well known problems in the field like Dirichlet's theorem for primes in Arithmetic progressions and the Riemann hypothesis.  
 * **Expected Duration :** 2-3 months  
 * **Expected Weekly Commitment:** 3-4 hours  
@@ -54,7 +54,7 @@ Some arbitrary examples:
 * **Expected Weekly Commitment:** 25 hrs  
 
 ## 6 - Mathematical Finance & Stochastic Processes  
-* **Mentors:** Aditya Prakash Singh(adityapi314#1095)  
+* **Mentors:** Aditya Prakash Singh (adityapi314#1095)  
 * **Description :** We will first study some basic financial concepts such as time value of money, arbitrage and risk & return. Further, we will study the most basic derivatives prevalent in the market and finally we will learn how these derivates are priced and hopefully derive the celebrated Black-Scholes equation.
 
   Disclaimer - This project will NOT teach you how to trade in the market. It will definitely help you to understand the market and its instruments better.
@@ -64,7 +64,7 @@ Some arbitrary examples:
 * **Expected Weekly Commitment:** 4-5 hours  
 
 ## 7 - Computer Vision: A Classic and Modern approach  
-* **Mentors:** Shivanshu Tyagi(spazewalker#5877), Akshay Gupta  
+* **Mentors:** Shivanshu Tyagi (spazewalker#5877), Akshay Gupta  
 * **Description :** This project will cover the basics of computer Vision, then dive into some classic computer vision algorithms and then finally will cover the modern Deep Learning approaches in CV. 
 
   The proposed project would roughly have the following structure:
@@ -83,13 +83,13 @@ Some arbitrary examples:
 * **Expected Weekly Commitment:** 4-5 hrs  
 
 ## 8 - Introduction to Fourier Analysis of Boolean Functions  
-* **Mentors:** Mohd Talib Siddiqui(arrow#4554)  
+* **Mentors:** Mohd Talib Siddiqui (arrow#4554)  
 * **Description :** Boolean Functions, Boolean Functions as multivariate polynomials (Fourier expansion), Fourier Span and Support, Linearity Testing (short overview), Dimension-Sparsity related discussions.  
 * **Expected Duration :** 5-8 weeks  
 * **Expected Weekly Commitment :** 2-4  
 
 ## 9 - Counting is fun  
-* **Mentors:** Farzan Byramji(geekotechy#7312)  
+* **Mentors:** Farzan Byramji (geekotechy#7312)  
 * **Description :** Enumeration of combinatorial structures will mainly be what we will be doing. This can involve some very elegant arguments (like nice bijections) as well as    some relatively mundane tools (like manipulating algebraic expressions, 'manipulatorics' in the words of Zeilberger).
 
   Depending on the interests and background of people, we can start by looking at standard things. If algebra is of interest, ideas from algebraic combinatorics can be explored.   For those who wish to focus on some specific sub-topic, one of various classes of objects like pattern-avoiding permutations, lattice paths, plane partitions, hyperplane   arrangements, etc. can be picked up. Computations using computer algebra have been very useful in this area, so that can also be a component.  
@@ -97,26 +97,26 @@ Some arbitrary examples:
 * **Expected Weekly Commitment:** 2-4  
 
 ## 10 - Cross Validated  
-* **Mentors:** Kushagra Gupta, Ayush Agarwal(Kid Aa#0649), Medha Agarwal  
+* **Mentors:** Kushagra Gupta, Ayush Agarwal (Kid Aa#0649), Medha Agarwal  
 * **Description :** We plan on covering fundamental statistical algorithms that will serve as a bridge to advanced statistical concepts. We will focus on hands-on implementation with real-life problems. The project will expect students to be familiar with basic linear algebra and have adequate coding skills. The end goal of the project is to equip students with a basic understanding of statistical science while offering flexibility of choice in sub-areas like regression, optimization, sampling, etc.  
 * **Expected Duration :** 2 months  
 * **Expected Weekly Commitment:** 5-6 hours  
 
 ## 11 - Physically-Based Rendering  
-* **Mentors:** Mayant Mukul(wabadump#4634)  
+* **Mentors:** Mayant Mukul (wabadump#4634)  
 * **Description :** Realistic rendering techniques in computer graphics usually boil down to solving an integral equation called “the rendering equation”, which takes into account various physical properties of light. We’ll present the rendering equation in its original form and introduce radiometry to see how the rendering equation captures most physical phenomena under the assumptions of geometric optics. We’ll then see why finding an analytical solution can be difficult, develop a naive algorithm and finally introduce Monte Carlo methods that modern renderers like Pixar’s RenderMan or Blender’s Cycles are based on.  
 * **Expected Duration :** 6-8 weeks  
 * **Expected Weekly Commitment:** 3-4 hours  
 
 ## 12 - Introduction to Formal Logic and Computation  
-* **Mentors:** Udit Narayan Pandey(UNP#0155), Dawood Bin Mansoor(rockstar2514#0635), Ayush Kumar  
+* **Mentors:** Udit Narayan Pandey (UNP#0155), Dawood Bin Mansoor (rockstar2514#0635), Ayush Kumar  
 * **Description :** The goal of the project would be to introduce the mentees to formal logic first order and propositional logic and basic ideas of Computation.
 We would be covering axiomatisaion, rules of inference, syntactic and semantic consequence, Models of a Theory, Consistency Soundness, Completeness, First Order Theories and after covering Computation a peek into Godel's Incompletness Theorem, for Computation part we will be covering the notion of computability, formal languages, Models of computation(turing machines), Church turing hypothesis, decidability, and brief overview of complexity.  
 * **Expected Duration :** 7 weeks  
 * **Expected Weekly Commitment:** 4-6 Hrs  
 
 ## 13 - Numbers Made Dumber  
-* **Mentors:** Yatharth Goswami, Vivek Kumar Singh(bb8#2778), Rohan Baijal  
+* **Mentors:** Yatharth Goswami, Vivek Kumar Singh (bb8#2778), Rohan Baijal  
 * **Description :** This project will serve as an introduction to Number Theory and some of its cool real world application like in Cryptography!
 
   One component (the obvious one) is theoretical where the idea would be to cover theory (some Olympiad related and some algebra related) and tickle the brain cells by solving   some problems.
@@ -126,7 +126,7 @@ We would be covering axiomatisaion, rules of inference, syntactic and semantic c
 * **Expected Weekly Commitment:** 6-8 hrs  
 
 ## 14 - Generating rational distance sets on a parabola  
-* **Mentors:** Sayak Bhattacharjee(saybha_00#0654)  
+* **Mentors:** Sayak Bhattacharjee (saybha_00#0654)  
 * **Description :** Introduction:
 A rational distance set is a set of points with each of its pairwise distances to be rational. We study the problem of finding N-point rational distance sets on the parabola y = x^2. An open problem is to find the largest N for which a rational distance set exists on the parabola. While we know that N is finite, we do not yet know if even a 6-point rational distance set on the parabola exists!
 
@@ -149,7 +149,7 @@ A rational distance set is a set of points with each of its pairwise distances t
 * **Expected Weekly Commitment:** 8-10 hrs  
 
 ## 16 - Introduction to Metric Spaces and Topology  
-* **Mentors:** Kushlam Srivastava(Kuchlam#9851)  
+* **Mentors:** Kushlam Srivastava (Kuchlam#9851)  
 * **Description :** This project is intended to be a brief introduction to Metric Spaces and Topology, an important tool which is very useful in Pure Mathematics and a bit of theoretical Physics as well. 
 If you want a bit of motivation for this topic you can watch the following VSauce video which addresses the famous question ""How many holes does a straw have?"" through topology https://www.youtube.com/watch?v=egEraZP9yXQ
 We will first cover Metric Spaces which will be based on a lot of the first part of MTH101 and we can then move on topological concepts based on the comfort and understanding of the mentees.
@@ -159,7 +159,7 @@ This project is mainly intended for Y20 students.
 * **Expected Weekly Commitment:** 5 hours  
 
 ## 17 - Understanding Graphs with Analysis  
-* **Mentors:** Ayush Basu(abasu#5088)  
+* **Mentors:** Ayush Basu (abasu#5088)  
 * **Description :** What are some nice ways to understand the handshake lemma? How many triangles does a tripartite graph contain? How can we count the number of subgraphs of a particular kind in a complete graph (or a random graph)? How can we define quasirandomness in graphs? How can we extend these notions to hypergraphs? 
 
   We will try and answer some of these questions in the project exploring counting techniques one can use for graphs and look at some of the famous conjectures of extremal graph   theory, a field primarily developed by Paul Erdös, one of the most prolific problem solvers to grace mathematics. 
@@ -171,7 +171,7 @@ This project is mainly intended for Y20 students.
 * **Expected Weekly Commitment:** 6  
 
 ## 18 - Topics in Analysis: A Tour of Measure Theory and Functional Analysis  
-* **Mentors:** Aniket Das(Aniket#9998)  
+* **Mentors:** Aniket Das (Aniket#9998)  
 * **Description :** This is a project on intermediate-level mathematical analysis intended for highly motivated Y18s and Y19s (and exceptional Y20s) who are interested in analysis, probability theory and machine learning theory. I intend to cover a broad range of topics in measure theory and functional analysis and discuss their applications in areas such as probability theory, machine learning theory and quantum mechanics 
 
   Pre-requisites: Mathematical maturity and a high level of comfort with basic calculus (MTH101) and Linear Algebra (MTH102). 
