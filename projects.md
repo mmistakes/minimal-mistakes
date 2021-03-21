@@ -7,10 +7,10 @@ toc: true
 hi insert content here please
 
 ## ID-1 
-**Mentors:**   
-**Description :** Lorem Ipsum  
-**Expected Duration :**
-**Expected Weekly Commitment: **  
+* **Mentors:**   
+* **Description :** Lorem Ipsum  
+* **Expected Duration :**
+* **Expected Weekly Commitment: **  
 
 ## ID-2 
 **Mentors:**   
