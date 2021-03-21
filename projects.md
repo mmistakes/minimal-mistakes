@@ -4,5 +4,4 @@ title: Projects
 permalink: /projects
 ---
 
-
-<insert content here>
+hi insert content here
