@@ -19,7 +19,7 @@ locale                   : "en-GB"
 title                    : "Stamatics, IIT Kanpur"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Stamatics, IIT Kanpur"
+name                     : ""
 description              : "Mathematics and Statistics Society of IIT Kanpur"
 url                      : https://stamatics.github.io/
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -122,9 +122,12 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:sethia@iitk.ac.in"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
+      url: "https://twitter.com/stamaticsiitk"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
