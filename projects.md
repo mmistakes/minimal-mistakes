@@ -20,11 +20,11 @@ The project would be of immense help to many as probability theory has wide appl
 Mathematical concepts are often disconnected from people's reality, people don't relate to statistics shared by politicians, economists, public organizations, and other domains that are relevant to everyday life. The project would aim to create examples, counterexamples, simulations, and games to connect math concepts to their relevance to the world at large.
 Some arbitrary examples:
 
-- Law of large numbers and population statistics : A biased coin that lands H 99% of the time feels like it would never land tails, but if you flip it enough the sample distribution would converge to the true distribution. This is similar to if a country/society takes a 1% individual risk together, in a country of 1B more than 10M are affected.
-- Basic reproduction number (R0) and how to understand contagiousness of a disease.
-- Why do people talk about dummy candidates in elections? Are there election systems where no one has incentive to start dummy candidates (and what are the flaws of such systems?)
+  - Law of large numbers and population statistics : A biased coin that lands H 99% of the time feels like it would never land tails, but if you flip it enough the sample distribution would converge to the true distribution. This is similar to if a country/society takes a 1% individual risk together, in a country of 1B more than 10M are affected.
+  - Basic reproduction number (R0) and how to understand contagiousness of a disease.
+  - Why do people talk about dummy candidates in elections? Are there election systems where no one has incentive to start dummy candidates (and what are the flaws of such systems?)
 
-Since this will a project of interest/love more than technical depth, the participating group can be decided based on how many people want to do this. Please note that unfortunately, this will be a project where your communication skills might be barrier, but please don't shy away from applying if you feel interested.  
+  Since this will a project of interest/love more than technical depth, the participating group can be decided based on how many people want to do this. Please note that unfortunately, this will be a project where your communication skills might be barrier, but please don't shy away from applying if you feel interested.  
 * **Expected Duration :** 2-3 months  
 * **Expected Weekly Commitment:** 5 hours  
 
