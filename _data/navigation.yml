@@ -1,11 +1,11 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+  - title: "Mathemania"
+    url: https://stamatics.github.io/mathemania/
+  - title: "Projects 2021"
+    url: https://stamatics.github.io/projects/
+  - title: "Blog"
+    url: https://medium.com/stamatics-iit-kanpur
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
