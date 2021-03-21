@@ -1,6 +1,6 @@
 ---
 title: Projects  
-permalink: /projects/
+permalink: /projects-2021/
 toc: true
 layout: single
 author_profile: false
