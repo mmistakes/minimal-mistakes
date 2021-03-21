@@ -50,8 +50,8 @@ Some arbitrary examples:
 ## 5 - Application of Maths in Algorithms  
 * **Mentors:** Utkarsh Gupta  
 * **Description :** The project will cover diophantine equations, Gauss elimination, Hashing, mobius inversion, etc.  
-* **Expected Duration :** 4 weeks  
-* **Expected Weekly Commitment:** 25 hrs  
+* **Expected Duration :** 3 months  
+* **Expected Weekly Commitment:** 7 hrs  
 
 ## 6 - Mathematical Finance & Stochastic Processes  
 * **Mentors:** Aditya Prakash Singh (adityapi314#1095)  
@@ -80,7 +80,7 @@ Some arbitrary examples:
 
   For implementation, we'll use opencv, numpy in the starting. At later stages we'll include pytorch.    
 * **Expected Duration :** 3 Months  
-* **Expected Weekly Commitment:** 4-5 hrs  
+* **Expected Weekly Commitment:** 6-7 hrs  
 
 ## 8 - Introduction to Fourier Analysis of Boolean Functions  
 * **Mentors:** Mohd Talib Siddiqui (arrow#4554)  
