@@ -2,6 +2,7 @@
 layout: default
 title: Projects  
 permalink: /projects/
+toc: true
 ---
 
 hi insert content here please
