@@ -4,6 +4,7 @@ permalink: /projects/
 toc: true
 classes: wide
 layout: single
+author_profile: false
 
 ---
 
