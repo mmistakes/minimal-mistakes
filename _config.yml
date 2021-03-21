@@ -19,7 +19,7 @@ locale                   : "en-GB"
 title                    : "Stamatics, IIT Kanpur"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : ""
+name                     : "Stamatics, IIT Kanpur"
 description              : "Mathematics and Statistics Society of IIT Kanpur"
 url                      : https://stamatics.github.io/
 baseurl                  : # the subpath of your site, e.g. "/blog"
