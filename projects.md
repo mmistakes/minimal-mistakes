@@ -86,64 +86,111 @@ For implementation, we'll use opencv, numpy in the starting. At later stages we'
 **Mentors:** Mohd Talib Siddiqui
 **Description :** Boolean Functions, Boolean Functions as multivariate polynomials (Fourier expansion), Fourier Span and Support, Linearity Testing (short overview), Dimension-Sparsity related discussions.  
 **Expected Duration :** 5-8 weeks  
-**Expected Weekly Commitment :** 2-4
+**Expected Weekly Commitment :** 2-4  
 
-## ID-9 
-**Mentors:**   
-**Description :** Lorem Ipsum  
-**Expected Duration :**
-**Expected Weekly Commitment: **  
+## ID-9 - Counting is fun
+**Mentors:** Farzan Byramji  
+**Description :** Enumeration of combinatorial structures will mainly be what we will be doing. This can involve some very elegant arguments (like nice bijections) as well as some relatively mundane tools (like manipulating algebraic expressions, 'manipulatorics' in the words of Zeilberger).
 
-## ID-10 
-**Mentors:**   
-**Description :** Lorem Ipsum  
-**Expected Duration :**
-**Expected Weekly Commitment: **  
+Depending on the interests and background of people, we can start by looking at standard things. If algebra is of interest, ideas from algebraic combinatorics can be explored. For those who wish to focus on some specific sub-topic, one of various classes of objects like pattern-avoiding permutations, lattice paths, plane partitions, hyperplane arrangements, etc. can be picked up. Computations using computer algebra have been very useful in this area, so that can also be a component.  
+**Expected Duration :** 1-1.5 months  
+**Expected Weekly Commitment:** 2-4  
 
-## ID-11 
-**Mentors:**   
-**Description :** Lorem Ipsum  
-**Expected Duration :**
-**Expected Weekly Commitment: **  
+## ID-10 - Cross Validated
+**Mentors:** Kushagra Gupta, Ayush Agarwal, Medha Agarwal  
+**Description :** We plan on covering fundamental statistical algorithms that will serve as a bridge to advanced statistical concepts. We will focus on hands-on implementation with real-life problems. The project will expect students to be familiar with basic linear algebra and have adequate coding skills. The end goal of the project is to equip students with a basic understanding of statistical science while offering flexibility of choice in sub-areas like regression, optimization, sampling, etc.  
+**Expected Duration :** 2 months  
+**Expected Weekly Commitment:** 5-6 hours  
 
-## ID-12 
-**Mentors:**   
-**Description :** Lorem Ipsum  
-**Expected Duration :**
-**Expected Weekly Commitment: **  
+## ID-11 - Physically-Based Rendering  
+**Mentors:** Mayant Mukul
+**Description :** Realistic rendering techniques in computer graphics usually boil down to solving an integral equation called “the rendering equation”, which takes into account various physical properties of light. We’ll present the rendering equation in its original form and introduce radiometry to see how the rendering equation captures most physical phenomena under the assumptions of geometric optics. We’ll then see why finding an analytical solution can be difficult, develop a naive algorithm and finally introduce Monte Carlo methods that modern renderers like Pixar’s RenderMan or Blender’s Cycles are based on.  
+**Expected Duration :** 6-8 weeks  
+**Expected Weekly Commitment:** 3-4 hours  
 
-## ID-13 
-**Mentors:**   
-**Description :** Lorem Ipsum  
-**Expected Duration :**
-**Expected Weekly Commitment: **  
+## ID-12 - Introduction to Formal Logic and Computation  
+**Mentors:** Udit Narayan Pandey, Dawood Bin Mansoor, Ayush Kumar  
+**Description :** The goal of the project would be to introduce the mentees to formal logic first order and propositional logic and basic ideas of Computation.
+We would be covering axiomatisaion, rules of inference, syntactic and semantic consequence, Models of a Theory, Consistency Soundness, Completeness, First Order Theories and after covering Computation a peek into Godel's Incompletness Theorem, for Computation part we will be covering the notion of computability, formal languages, Models of computation(turing machines), Church turing hypothesis, decidability, and brief overview of complexity.  
+**Expected Duration :** 7 weeks  
+**Expected Weekly Commitment:** 4-6 Hrs
 
-## ID-14 
-**Mentors:**   
-**Description :** Lorem Ipsum  
-**Expected Duration :**
-**Expected Weekly Commitment: **  
+## ID-13 - Numbers Made Dumber  
+**Mentors:** Yatharth Goswami, Vivek Kumar Singh, Rohan Baijal  
+**Description :** This project will serve as an introduction to Number Theory and some of its cool real world application like in Cryptography!
 
-## ID-15 
-**Mentors:**   
-**Description :** Lorem Ipsum  
-**Expected Duration :**
-**Expected Weekly Commitment: **  
+One component (the obvious one) is theoretical where the idea would be to cover theory (some Olympiad related and some algebra related) and tickle the brain cells by solving some problems.
 
-## ID-16 
-**Mentors:**   
-**Description :** Lorem Ipsum  
-**Expected Duration :**
-**Expected Weekly Commitment: **  
+The other component would be implementing some of the algorithms in code as we study them. This would give a more hands on feel and an idea about using it in applications.  
+**Expected Duration :** 3-4 months  
+**Expected Weekly Commitment:** 6-8 hrs  
 
-## ID-17 
-**Mentors:**   
-**Description :** Lorem Ipsum  
-**Expected Duration :**
-**Expected Weekly Commitment: **  
+## ID-14 - Generating rational distance sets on a parabola  
+**Mentors:** Sayak Bhattacharjee  
+**Description :** Introduction:
+A rational distance set is a set of points with each of its pairwise distances to be rational. We study the problem of finding N-point rational distance sets on the parabola y = x^2. An open problem is to find the largest N for which a rational distance set exists on the parabola. While we know that N is finite, we do not yet know if even a 6-point rational distance set on the parabola exists!
 
-## ID-18 
-**Mentors:**   
-**Description :** Lorem Ipsum  
-**Expected Duration :**
-**Expected Weekly Commitment: **  
+Reference: G. Campbell, Points on y = x^2 at rational distance, Math. Comp., 73 (2004), 2093–2108.
+
+Outline of project:
+1. Introduction to existing literature; explore a correspondence of the problem with Pythagorean triplets, and study existence and nature of the solutions for general N from a linear algebraic point-of-view. 
+2. Primary goal: Attempt to obtain solutions computationally for N=4 and N=5 by building on techniques available for N=3. This will involve building time/space efficient algorithms to efficiently search for solutions.
+3. Possible extension: Attempt to understand density of the solutions on the parabola for small N using real analysis.  
+
+Necessary pre-requisite knowledge: Linear algebra, basic combinatorics, Python/C.
+Not strictly necessary pre-requisite knowledge: Parallel computing, real analysis.  
+**Expected Duration :** about 2 months (min.)  
+**Expected Weekly Commitment:** 5+  
+
+## ID-15 - Quantum Algorithms
+**Mentors:** Rishabh Kothary  
+**Description :** Quantum Algorithms is a hot research area, and quantum algorithms like Shor's factorization algorithm have threatened the current state-of-the-art cryptosystems like the RSA. Shor's algorithm has brought an exponential speedup to the integer factorization problem compared to its classical counterpart. It has forced the cryptography community to build cryptosystems resilient to attacks from quantum computers. Our main aim is to understand the quantum computation model and learn about Shor's factorization algorithm in the project. If time permits, we could explore algorithms like Grover's Search algorithm and Simon's Algorithm and their applications in breaking cryptosystems. Not many pre-requisites are assumed; a basic understanding of Linear Algebra should suffice. However, the pre-requisites are not very strict and can be covered during the project if interested.  
+**Expected Duration :** 2-3 months  
+**Expected Weekly Commitment:** 8-10 hrs  
+
+## ID-16 - Introduction to Metric Spaces and Topology
+**Mentors:** Kushlam Srivastava  
+**Description :** This project is intended to be a brief introduction to Metric Spaces and Topology, an important tool which is very useful in Pure Mathematics and a bit of theoretical Physics as well. 
+If you want a bit of motivation for this topic you can watch the following VSauce video which addresses the famous question ""How many holes does a straw have?"" through topology https://www.youtube.com/watch?v=egEraZP9yXQ
+We will first cover Metric Spaces which will be based on a lot of the first part of MTH101 and we can then move on topological concepts based on the comfort and understanding of the mentees.
+Since most students are not able to do the course offered on Topology by MTH department before the 5th semester, this can be a great opportunity for you to learn this topic.
+This project is mainly intended for Y20 students.  
+**Expected Duration :** 2 months   
+**Expected Weekly Commitment:** 5 hours  
+
+## ID-17 - Understanding Graphs with Analysis  
+**Mentors:** Ayush Basu  
+**Description :** What are some nice ways to understand the handshake lemma? How many triangles does a tripartite graph contain? How can we count the number of subgraphs of a particular kind in a complete graph (or a random graph)? How can we define quasirandomness in graphs? How can we extend these notions to hypergraphs? 
+
+We will try and answer some of these questions in the project exploring counting techniques one can use for graphs and look at some of the famous conjectures of extremal graph theory, a field primarily developed by Paul Erdös, one of the most prolific problem solvers to grace mathematics. 
+
+We will also focus on the theme of the dichotomy between structure and randomness and look at examples throughout our project that lead to a better understanding of these ideas. 
+
+Later on we may explore some advanced results in this field like the complete proof of Szemeredi's theorem and regularity Lemma.  
+**Expected Duration :** 2.5 months  
+**Expected Weekly Commitment:** 6  
+
+## ID-18 - Topics in Analysis: A Tour of Measure Theory and Functional Analysis  
+**Mentors:** Aniket Das
+**Description :** This is a project on intermediate-level mathematical analysis intended for highly motivated Y18s and Y19s (and exceptional Y20s) who are interested in analysis, probability theory and machine learning theory. I intend to cover a broad range of topics in measure theory and functional analysis and discuss their applications in areas such as probability theory, machine learning theory and quantum mechanics 
+
+Pre-requisites: Mathematical maturity and a high level of comfort with basic calculus (MTH101) and Linear Algebra (MTH102). 
+
+Topics: The exact syllabus will depend on the mathematical maturity of the group. Ideally, with a passionate and proficient group, I will be able to cover the following:
+
+1. Topology Preliminaries: Metric Spaces, Open and Closed Sets, Completeness
+2. A Fast Paced Linear Algebra Refresher on Normed Spaces, Inner Product Spaces and Linear Operators
+3. Basics of Hilbert Space Theory: Basic properties, Jordan von Neumann Theorem, Orthonormality, Applications to Fourier Analysis and Approximation Theory
+4. Bounded Linear Operators and Functionals on Hilbert Spaces: Definitions, Reisz Representation Theorem, Hilbert Adjoint
+4. (Optional) Basics of Banach Space Theory: Hahn Banach Theorem, Open Mapping and Closed Graph Theorem, Banach Fixed Point Theorem and its Applications to 
+5. (Optional) Application of Functional Analysis in Basic Quantum Mechanics
+6. Measure Theory: Definition and Basic Results on Measures, Outer Measures, Borel Regularity with a special focus on Lebesgue Measure
+7. Measure Theory II: Simple Functions, Measurable Functions and Measure Theoretic Notions of Convergence
+8. Integration Theory I: Measurable Functions, Definition and Properties of Integral with special focus on Lebesgue Integrals
+9. Integration Theory II: Fundamental Theorems: Monotone Convergence Theorem, Fatou's Lemma, Dominated Convergence Theorem, Multiple Integrals and Fubini's Theorem
+10. Lp spaces: Development of functional analysis on Lp spaces, integral operators, kernels. 
+11. (Optional) Applications to Probability Theory: Measure Theoeretic Probability, Expectation and Convergence Theorems in Probability. Weak Law of Large Numbers
+12. (Optional) Advanced Calculus on Banach Spaces: Metric Derivatives, Frechet and Gateaux Derivatives
+13. (Optional) Connections to Kernel Methods in Machine Learning: Reproducing Kernel Hilbert Spaces and some more Fourier Analysis (Bochner's Theorem and related results)  
+**Expected Duration :** 3-4 months on full syllabus. 1-2 months on a reduced syllabus  
+**Expected Weekly Commitment:** 8-10 hours (involves significant self study and possible exercises)    
