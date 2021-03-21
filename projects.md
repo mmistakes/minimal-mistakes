@@ -57,9 +57,9 @@ Some arbitrary examples:
 * **Mentors:** Aditya Prakash Singh  
 * **Description :** We will first study some basic financial concepts such as time value of money, arbitrage and risk & return. Further, we will study the most basic derivatives prevalent in the market and finally we will learn how these derivates are priced and hopefully derive the celebrated Black-Scholes equation.
 
-Disclaimer - This project will NOT teach you how to trade in the market. It will definitely help you to understand the market and its instruments better.
+  Disclaimer - This project will NOT teach you how to trade in the market. It will definitely help you to understand the market and its instruments better.
 
-Pre-reqs: None.  
+  Pre-reqs: None.  
 * **Expected Duration :** 3 months  
 * **Expected Weekly Commitment:** 4-5 hours  
 
@@ -67,7 +67,7 @@ Pre-reqs: None.
 * **Mentors:** Shivanshu Tyagi, Akshay Gupta  
 * **Description :** This project will cover the basics of computer Vision, then dive into some classic computer vision algorithms and then finally will cover the modern Deep Learning approaches in CV. 
 
-The proposed project would roughly have the following structure:
+  The proposed project would roughly have the following structure:
 1. Introduction: an introduction of Computer Vision and some basic Linear Algebra and numpy required for the later parts of the project.
 2. Image processing: This portion will start with color spaces and conversions,Image Transformations(rotation, scaling, translation, etc.), then cover filters and kernels (noise removal, blurring, image thresholding) and finally conclude with hough transform, Edge detection(Canny Edge Detection) and contour detection algorithms(Watershed). Can also cover feature detection, depending upon the response.
 3. ML for Vision: Here, we'll deal with some basics of Deep Neural Networks and talk about convolutions(also covered in image processing part), various optimizers, backpropagation algorithm, Gradient Descent, SGD various Loss functions and their usages in CV context, Regularizations and Bias-Variance trade off.
@@ -76,9 +76,9 @@ The proposed project would roughly have the following structure:
         - Object detection: SSD, YOLO
         - Face Detection: HAAR cascades
 
-We'll accompany each lecture with a fun CTF type assignment along with some further readings.
+  We'll accompany each lecture with a fun CTF type assignment along with some further readings.
 
-For implementation, we'll use opencv, numpy in the starting. At later stages we'll include pytorch.    
+  For implementation, we'll use opencv, numpy in the starting. At later stages we'll include pytorch.    
 * **Expected Duration :** 3 Months  
 * **Expected Weekly Commitment:** 4-5 hrs  
 
@@ -90,9 +90,9 @@ For implementation, we'll use opencv, numpy in the starting. At later stages we'
 
 ## 9 - Counting is fun  
 * **Mentors:** Farzan Byramji  
-* **Description :** Enumeration of combinatorial structures will mainly be what we will be doing. This can involve some very elegant arguments (like nice bijections) as well as some relatively mundane tools (like manipulating algebraic expressions, 'manipulatorics' in the words of Zeilberger).
+* **Description :** Enumeration of combinatorial structures will mainly be what we will be doing. This can involve some very elegant arguments (like nice bijections) as well as    some relatively mundane tools (like manipulating algebraic expressions, 'manipulatorics' in the words of Zeilberger).
 
-Depending on the interests and background of people, we can start by looking at standard things. If algebra is of interest, ideas from algebraic combinatorics can be explored. For those who wish to focus on some specific sub-topic, one of various classes of objects like pattern-avoiding permutations, lattice paths, plane partitions, hyperplane arrangements, etc. can be picked up. Computations using computer algebra have been very useful in this area, so that can also be a component.  
+  Depending on the interests and background of people, we can start by looking at standard things. If algebra is of interest, ideas from algebraic combinatorics can be explored.   For those who wish to focus on some specific sub-topic, one of various classes of objects like pattern-avoiding permutations, lattice paths, plane partitions, hyperplane   arrangements, etc. can be picked up. Computations using computer algebra have been very useful in this area, so that can also be a component.  
 * **Expected Duration :** 1-1.5 months  
 * **Expected Weekly Commitment:** 2-4  
 
@@ -119,9 +119,9 @@ We would be covering axiomatisaion, rules of inference, syntactic and semantic c
 * **Mentors:** Yatharth Goswami, Vivek Kumar Singh, Rohan Baijal  
 * **Description :** This project will serve as an introduction to Number Theory and some of its cool real world application like in Cryptography!
 
-One component (the obvious one) is theoretical where the idea would be to cover theory (some Olympiad related and some algebra related) and tickle the brain cells by solving some problems.
+  One component (the obvious one) is theoretical where the idea would be to cover theory (some Olympiad related and some algebra related) and tickle the brain cells by solving   some problems.
 
-The other component would be implementing some of the algorithms in code as we study them. This would give a more hands on feel and an idea about using it in applications.  
+  The other component would be implementing some of the algorithms in code as we study them. This would give a more hands on feel and an idea about using it in applications.  
 * **Expected Duration :** 3-4 months  
 * **Expected Weekly Commitment:** 6-8 hrs  
 
@@ -130,15 +130,15 @@ The other component would be implementing some of the algorithms in code as we s
 * **Description :** Introduction:
 A rational distance set is a set of points with each of its pairwise distances to be rational. We study the problem of finding N-point rational distance sets on the parabola y = x^2. An open problem is to find the largest N for which a rational distance set exists on the parabola. While we know that N is finite, we do not yet know if even a 6-point rational distance set on the parabola exists!
 
-Reference: G. Campbell, Points on y = x^2 at rational distance, Math. Comp., 73 (2004), 2093–2108.
+  Reference: G. Campbell, Points on y = x^2 at rational distance, Math. Comp., 73 (2004), 2093–2108.
 
-Outline of project:
-1. Introduction to existing literature; explore a correspondence of the problem with Pythagorean triplets, and study existence and nature of the solutions for general N from a linear algebraic point-of-view. 
-2. Primary goal: Attempt to obtain solutions computationally for N=4 and N=5 by building on techniques available for N=3. This will involve building time/space efficient algorithms to efficiently search for solutions.
-3. Possible extension: Attempt to understand density of the solutions on the parabola for small N using real analysis.  
+  Outline of project:
+  1. Introduction to existing literature; explore a correspondence of the problem with Pythagorean triplets, and study existence and nature of the solutions for general N from a   linear algebraic point-of-view. 
+  2. Primary goal: Attempt to obtain solutions computationally for N=4 and N=5 by building on techniques available for N=3. This will involve building time/space efficient   algorithms to efficiently search for solutions.
+  3. Possible extension: Attempt to understand density of the solutions on the parabola for small N using real analysis.  
 
-Necessary pre-requisite knowledge: Linear algebra, basic combinatorics, Python/C.
-Not strictly necessary pre-requisite knowledge: Parallel computing, real analysis.  
+  Necessary pre-requisite knowledge: Linear algebra, basic combinatorics, Python/C.
+  Not strictly necessary pre-requisite knowledge: Parallel computing, real analysis.  
 * **Expected Duration :** about 2 months (min.)  
 * **Expected Weekly Commitment:** 5+  
 
@@ -162,11 +162,11 @@ This project is mainly intended for Y20 students.
 * **Mentors:** Ayush Basu  
 * **Description :** What are some nice ways to understand the handshake lemma? How many triangles does a tripartite graph contain? How can we count the number of subgraphs of a particular kind in a complete graph (or a random graph)? How can we define quasirandomness in graphs? How can we extend these notions to hypergraphs? 
 
-We will try and answer some of these questions in the project exploring counting techniques one can use for graphs and look at some of the famous conjectures of extremal graph theory, a field primarily developed by Paul Erdös, one of the most prolific problem solvers to grace mathematics. 
+  We will try and answer some of these questions in the project exploring counting techniques one can use for graphs and look at some of the famous conjectures of extremal graph   theory, a field primarily developed by Paul Erdös, one of the most prolific problem solvers to grace mathematics. 
 
-We will also focus on the theme of the dichotomy between structure and randomness and look at examples throughout our project that lead to a better understanding of these ideas. 
+  We will also focus on the theme of the dichotomy between structure and randomness and look at examples throughout our project that lead to a better understanding of these ideas. 
 
-Later on we may explore some advanced results in this field like the complete proof of Szemeredi's theorem and regularity Lemma.  
+  Later on we may explore some advanced results in this field like the complete proof of Szemeredi's theorem and regularity Lemma.  
 * **Expected Duration :** 2.5 months  
 * **Expected Weekly Commitment:** 6  
 
@@ -174,23 +174,23 @@ Later on we may explore some advanced results in this field like the complete pr
 * **Mentors:** Aniket Das  
 * **Description :** This is a project on intermediate-level mathematical analysis intended for highly motivated Y18s and Y19s (and exceptional Y20s) who are interested in analysis, probability theory and machine learning theory. I intend to cover a broad range of topics in measure theory and functional analysis and discuss their applications in areas such as probability theory, machine learning theory and quantum mechanics 
 
-Pre-requisites: Mathematical maturity and a high level of comfort with basic calculus (MTH101) and Linear Algebra (MTH102). 
+  Pre-requisites: Mathematical maturity and a high level of comfort with basic calculus (MTH101) and Linear Algebra (MTH102). 
 
-Topics: The exact syllabus will depend on the mathematical maturity of the group. Ideally, with a passionate and proficient group, I will be able to cover the following:
+  Topics: The exact syllabus will depend on the mathematical maturity of the group. Ideally, with a passionate and proficient group, I will be able to cover the following:
 
-1. Topology Preliminaries: Metric Spaces, Open and Closed Sets, Completeness
-2. A Fast Paced Linear Algebra Refresher on Normed Spaces, Inner Product Spaces and Linear Operators
-3. Basics of Hilbert Space Theory: Basic properties, Jordan von Neumann Theorem, Orthonormality, Applications to Fourier Analysis and Approximation Theory
-4. Bounded Linear Operators and Functionals on Hilbert Spaces: Definitions, Reisz Representation Theorem, Hilbert Adjoint
-4. (Optional) Basics of Banach Space Theory: Hahn Banach Theorem, Open Mapping and Closed Graph Theorem, Banach Fixed Point Theorem and its Applications to 
-5. (Optional) Application of Functional Analysis in Basic Quantum Mechanics
-6. Measure Theory: Definition and Basic Results on Measures, Outer Measures, Borel Regularity with a special focus on Lebesgue Measure
-7. Measure Theory II: Simple Functions, Measurable Functions and Measure Theoretic Notions of Convergence
-8. Integration Theory I: Measurable Functions, Definition and Properties of Integral with special focus on Lebesgue Integrals
-9. Integration Theory II: Fundamental Theorems: Monotone Convergence Theorem, Fatou's Lemma, Dominated Convergence Theorem, Multiple Integrals and Fubini's Theorem
-10. Lp spaces: Development of functional analysis on Lp spaces, integral operators, kernels. 
-11. (Optional) Applications to Probability Theory: Measure Theoeretic Probability, Expectation and Convergence Theorems in Probability. Weak Law of Large Numbers
-12. (Optional) Advanced Calculus on Banach Spaces: Metric Derivatives, Frechet and Gateaux Derivatives
-13. (Optional) Connections to Kernel Methods in Machine Learning: Reproducing Kernel Hilbert Spaces and some more Fourier Analysis (Bochner's Theorem and related results)  
+  1. Topology Preliminaries: Metric Spaces, Open and Closed Sets, Completeness
+  2. A Fast Paced Linear Algebra Refresher on Normed Spaces, Inner Product Spaces and Linear Operators
+  3. Basics of Hilbert Space Theory: Basic properties, Jordan von Neumann Theorem, Orthonormality, Applications to Fourier Analysis and Approximation Theory
+  4. Bounded Linear Operators and Functionals on Hilbert Spaces: Definitions, Reisz Representation Theorem, Hilbert Adjoint
+  5. (Optional) Basics of Banach Space Theory: Hahn Banach Theorem, Open Mapping and Closed Graph Theorem, Banach Fixed Point Theorem and its Applications to 
+  6. (Optional) Application of Functional Analysis in Basic Quantum Mechanics
+  7. Measure Theory: Definition and Basic Results on Measures, Outer Measures, Borel Regularity with a special focus on Lebesgue Measure
+  8. Measure Theory II: Simple Functions, Measurable Functions and Measure Theoretic Notions of Convergence
+  9. Integration Theory I: Measurable Functions, Definition and Properties of Integral with special focus on Lebesgue Integrals
+  10. Integration Theory II: Fundamental Theorems: Monotone Convergence Theorem, Fatou's Lemma, Dominated Convergence Theorem, Multiple Integrals and Fubini's Theorem
+  11. Lp spaces: Development of functional analysis on Lp spaces, integral operators, kernels. 
+  12. (Optional) Applications to Probability Theory: Measure Theoeretic Probability, Expectation and Convergence Theorems in Probability. Weak Law of Large Numbers
+  13. (Optional) Advanced Calculus on Banach Spaces: Metric Derivatives, Frechet and Gateaux Derivatives
+  14. (Optional) Connections to Kernel Methods in Machine Learning: Reproducing Kernel Hilbert Spaces and some more Fourier Analysis (Bochner's Theorem and related results)  
 * **Expected Duration :** 3-4 months on full syllabus. 1-2 months on a reduced syllabus  
 * **Expected Weekly Commitment:** 8-10 hours (involves significant self study and possible exercises)  
