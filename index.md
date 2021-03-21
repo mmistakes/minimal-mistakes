@@ -3,7 +3,7 @@ layout: splash
 permalink: /
 hidden: true
 header:
-  overlay_color: "#5e616c"
+  overlay_color: "#FFFFFF"
   overlay_image: stamatics_coverpage.jpg
 ---
 ## Anouncements 📢
