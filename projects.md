@@ -1,7 +1,7 @@
 ---
-layout: deafult
+layout: default
 title: Projects  
-permalink: /projects
+permalink: /projects/
 ---
 
 hi insert content here
