@@ -2,9 +2,8 @@
 title: Projects  
 permalink: /projects/
 toc: true
----
 
-hi insert content here please
+---
 
 ## ID-1 - Probability and Statistics : From Classical to Bayesian  
 * **Mentors:** Aniket Kumar, Pranay Agarwal, Munish Gupta  
@@ -16,7 +15,6 @@ The project would be of immense help to many as probability theory has wide appl
 ## ID-2 - Communicating Mathematics  
 * **Mentors:** Harshit Bisht  
 * **Description :** Disclaimer: This project will very likely be useless for both jobs and MS/PhD admissions. You have been warned.
-
 Mathematical concepts are often disconnected from people's reality, people don't relate to statistics shared by politicians, economists, public organizations, and other domains that are relevant to everyday life. The project would aim to create examples, counterexamples, simulations, and games to connect math concepts to their relevance to the world at large.
 Some arbitrary examples:
 
