@@ -32,12 +32,12 @@ Some arbitrary examples:
 * **Mentors:** Mohit Kulkarni  
 * **Description :** In this course we wish to discover aspects of mathematics widely used in dynamical systems with application to biology. Nature has beautiful patterns as well as chaos, we wish to understand how dynamical systems work particularly in the brain. Initial weeks would cover basic biology and basic mathematics required thereafter. Here we will try to get an intuituon on why mathematics and biology aren't completely different areas. Later, we will understand what a network, what chaos is and why dynamics is important. We will look into one/two dimensional dynamical systems(would also include the dynamics of a neuron). Later topics will depend on you and may include RNN's, large-scale neural models, attractor dynamics etc. 
 
-Maths may be difficult to understand, so we will take the help of cool visualisations. Programming knowledge(any language) is a plus but not required.
+  Maths may be difficult to understand, so we will take the help of cool visualisations. Programming knowledge(any language) is a plus but not required.
 
-Some books we may refer to(Tentative)
-1. Mathematics of Life, Ian Stewart,
-2. Nonlinear dynamics and chaos, Steven Strogatz
-3. Dynamical Systems in Neuroscience, Eugene Izhikevich  
+  Some books we may refer to (Tentative)
+  1. Mathematics of Life, Ian Stewart,
+  2. Nonlinear dynamics and chaos, Steven Strogatz
+  3. Dynamical Systems in Neuroscience, Eugene Izhikevich  
 * **Expected Duration :** 8 weeks  
 * **Expected Weekly Commitment:** 4  
 
