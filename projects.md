@@ -2,19 +2,20 @@
 title: Projects  
 permalink: /projects/
 toc: true
+classes: wide
 layout: single
 author_profile: false
 
 ---
 
-## ID-1 - Probability and Statistics : From Classical to Bayesian  
+## 1 - Probability and Statistics : From Classical to Bayesian  
 * **Mentors:** Aniket Kumar, Pranay Agarwal, Munish Gupta  
 * **Description :** This Project will guide you through the basics of Probability Theory, data generation , decision theory , Bayesian Analysis and then application of Bayesian to real world problems.
 The project would be of immense help to many as probability theory has wide applications ranging from its use in the corporate world to the realm of research in almost any field. Familiarity with probability theory helps theoreticians and experimentalists alike.  
 * **Expected Duration :** 2 months  
 * **Expected Weekly Commitment:** 4-5 hours  
 
-## ID-2 - Communicating Mathematics  
+## 2 - Communicating Mathematics  
 * **Mentors:** Harshit Bisht  
 * **Description :** Disclaimer: This project will very likely be useless for both jobs and MS/PhD admissions. You have been warned.
 Mathematical concepts are often disconnected from people's reality, people don't relate to statistics shared by politicians, economists, public organizations, and other domains that are relevant to everyday life. The project would aim to create examples, counterexamples, simulations, and games to connect math concepts to their relevance to the world at large.
@@ -28,7 +29,7 @@ Since this will a project of interest/love more than technical depth, the partic
 * **Expected Duration :** 2-3 months  
 * **Expected Weekly Commitment:** 5 hours  
 
-## ID-3 - The Dynamics of Life  
+## 3 - The Dynamics of Life  
 * **Mentors:** Mohit Kulkarni  
 * **Description :** In this course we wish to discover aspects of mathematics widely used in dynamical systems with application to biology. Nature has beautiful patterns as well as chaos, we wish to understand how dynamical systems work particularly in the brain. Initial weeks would cover basic biology and basic mathematics required thereafter. Here we will try to get an intuituon on why mathematics and biology aren't completely different areas. Later, we will understand what a network, what chaos is and why dynamics is important. We will look into one/two dimensional dynamical systems(would also include the dynamics of a neuron). Later topics will depend on you and may include RNN's, large-scale neural models, attractor dynamics etc. 
 
@@ -41,19 +42,19 @@ Some books we may refer to(Tentative)
 * **Expected Duration :** 8 weeks  
 * **Expected Weekly Commitment:** 4  
 
-## ID-4 - Number Theory and Algebra  
+## 4 - Number Theory and Algebra  
 * **Mentors:** Ajay Prajapati, Hargun Preet Singh Bhatia  
 * **Description :** The goal of this project is to give a gentle introduction to Modern Number theory. We will cover basic topics like Divisibility, modular arithmetic, Euler's theorem, fundamental theorem of arithmetic, quadratic residues and Gauss's famous Quadratic reciprocity law. Along the way, we will introduce several key algebraic objects like groups, rings and fields. If time permits, we will talk about some well known problems in the field like Dirichlet's theorem for primes in Arithmetic progressions and the Riemann hypothesis.  
 * **Expected Duration :** 2-3 months  
 * **Expected Weekly Commitment:** 3-4 hours  
 
-## ID-5 - Application of Maths in Algorithms  
+## 5 - Application of Maths in Algorithms  
 * **Mentors:** Utkarsh Gupta  
 * **Description :** The project will cover diophantine equations, Gauss elimination, Hashing, mobius inversion, etc.  
 * **Expected Duration :** 4 weeks  
 * **Expected Weekly Commitment:** 25 hrs  
 
-## ID-6 - Mathematical Finance & Stochastic Processes  
+## 6 - Mathematical Finance & Stochastic Processes  
 * **Mentors:** Aditya Prakash Singh  
 * **Description :** We will first study some basic financial concepts such as time value of money, arbitrage and risk & return. Further, we will study the most basic derivatives prevalent in the market and finally we will learn how these derivates are priced and hopefully derive the celebrated Black-Scholes equation.
 
@@ -63,7 +64,7 @@ Pre-reqs: None.
 * **Expected Duration :** 3 months  
 * **Expected Weekly Commitment:** 4-5 hours  
 
-## ID-7 - Computer Vision: A Classic and Modern approach  
+## 7 - Computer Vision: A Classic and Modern approach  
 * **Mentors:** Shivanshu Tyagi, Akshay Gupta  
 * **Description :** This project will cover the basics of computer Vision, then dive into some classic computer vision algorithms and then finally will cover the modern Deep Learning approaches in CV. 
 
@@ -82,13 +83,13 @@ For implementation, we'll use opencv, numpy in the starting. At later stages we'
 * **Expected Duration :** 3 Months  
 * **Expected Weekly Commitment:** 4-5 hrs  
 
-## ID-8 - Introduction to Fourier Analysis of Boolean Functions  
+## 8 - Introduction to Fourier Analysis of Boolean Functions  
 * **Mentors:** Mohd Talib Siddiqui  
 * **Description :** Boolean Functions, Boolean Functions as multivariate polynomials (Fourier expansion), Fourier Span and Support, Linearity Testing (short overview), Dimension-Sparsity related discussions.  
 * **Expected Duration :** 5-8 weeks  
 * **Expected Weekly Commitment :** 2-4  
 
-## ID-9 - Counting is fun  
+## 9 - Counting is fun  
 * **Mentors:** Farzan Byramji  
 * **Description :** Enumeration of combinatorial structures will mainly be what we will be doing. This can involve some very elegant arguments (like nice bijections) as well as some relatively mundane tools (like manipulating algebraic expressions, 'manipulatorics' in the words of Zeilberger).
 
@@ -96,26 +97,26 @@ Depending on the interests and background of people, we can start by looking at 
 * **Expected Duration :** 1-1.5 months  
 * **Expected Weekly Commitment:** 2-4  
 
-## ID-10 - Cross Validated  
+## 10 - Cross Validated  
 * **Mentors:** Kushagra Gupta, Ayush Agarwal, Medha Agarwal  
 * **Description :** We plan on covering fundamental statistical algorithms that will serve as a bridge to advanced statistical concepts. We will focus on hands-on implementation with real-life problems. The project will expect students to be familiar with basic linear algebra and have adequate coding skills. The end goal of the project is to equip students with a basic understanding of statistical science while offering flexibility of choice in sub-areas like regression, optimization, sampling, etc.  
 * **Expected Duration :** 2 months  
 * **Expected Weekly Commitment:** 5-6 hours  
 
-## ID-11 - Physically-Based Rendering  
+## 11 - Physically-Based Rendering  
 * **Mentors:** Mayant Mukul  
 * **Description :** Realistic rendering techniques in computer graphics usually boil down to solving an integral equation called “the rendering equation”, which takes into account various physical properties of light. We’ll present the rendering equation in its original form and introduce radiometry to see how the rendering equation captures most physical phenomena under the assumptions of geometric optics. We’ll then see why finding an analytical solution can be difficult, develop a naive algorithm and finally introduce Monte Carlo methods that modern renderers like Pixar’s RenderMan or Blender’s Cycles are based on.  
 * **Expected Duration :** 6-8 weeks  
 * **Expected Weekly Commitment:** 3-4 hours  
 
-## ID-12 - Introduction to Formal Logic and Computation  
+## 12 - Introduction to Formal Logic and Computation  
 * **Mentors:** Udit Narayan Pandey, Dawood Bin Mansoor, Ayush Kumar  
 * **Description :** The goal of the project would be to introduce the mentees to formal logic first order and propositional logic and basic ideas of Computation.
 We would be covering axiomatisaion, rules of inference, syntactic and semantic consequence, Models of a Theory, Consistency Soundness, Completeness, First Order Theories and after covering Computation a peek into Godel's Incompletness Theorem, for Computation part we will be covering the notion of computability, formal languages, Models of computation(turing machines), Church turing hypothesis, decidability, and brief overview of complexity.  
 * **Expected Duration :** 7 weeks  
 * **Expected Weekly Commitment:** 4-6 Hrs  
 
-## ID-13 - Numbers Made Dumber  
+## 13 - Numbers Made Dumber  
 * **Mentors:** Yatharth Goswami, Vivek Kumar Singh, Rohan Baijal  
 * **Description :** This project will serve as an introduction to Number Theory and some of its cool real world application like in Cryptography!
 
@@ -125,7 +126,7 @@ The other component would be implementing some of the algorithms in code as we s
 * **Expected Duration :** 3-4 months  
 * **Expected Weekly Commitment:** 6-8 hrs  
 
-## ID-14 - Generating rational distance sets on a parabola  
+## 14 - Generating rational distance sets on a parabola  
 * **Mentors:** Sayak Bhattacharjee  
 * **Description :** Introduction:
 A rational distance set is a set of points with each of its pairwise distances to be rational. We study the problem of finding N-point rational distance sets on the parabola y = x^2. An open problem is to find the largest N for which a rational distance set exists on the parabola. While we know that N is finite, we do not yet know if even a 6-point rational distance set on the parabola exists!
@@ -142,13 +143,13 @@ Not strictly necessary pre-requisite knowledge: Parallel computing, real analysi
 * **Expected Duration :** about 2 months (min.)  
 * **Expected Weekly Commitment:** 5+  
 
-## ID-15 - Quantum Algorithms  
+## 15 - Quantum Algorithms  
 * **Mentors:** Rishabh Kothary  
 * **Description :** Quantum Algorithms is a hot research area, and quantum algorithms like Shor's factorization algorithm have threatened the current state-of-the-art cryptosystems like the RSA. Shor's algorithm has brought an exponential speedup to the integer factorization problem compared to its classical counterpart. It has forced the cryptography community to build cryptosystems resilient to attacks from quantum computers. Our main aim is to understand the quantum computation model and learn about Shor's factorization algorithm in the project. If time permits, we could explore algorithms like Grover's Search algorithm and Simon's Algorithm and their applications in breaking cryptosystems. Not many pre-requisites are assumed; a basic understanding of Linear Algebra should suffice. However, the pre-requisites are not very strict and can be covered during the project if interested.  
 * **Expected Duration :** 2-3 months  
 * **Expected Weekly Commitment:** 8-10 hrs  
 
-## ID-16 - Introduction to Metric Spaces and Topology  
+## 16 - Introduction to Metric Spaces and Topology  
 * **Mentors:** Kushlam Srivastava  
 * **Description :** This project is intended to be a brief introduction to Metric Spaces and Topology, an important tool which is very useful in Pure Mathematics and a bit of theoretical Physics as well. 
 If you want a bit of motivation for this topic you can watch the following VSauce video which addresses the famous question ""How many holes does a straw have?"" through topology https://www.youtube.com/watch?v=egEraZP9yXQ
@@ -158,7 +159,7 @@ This project is mainly intended for Y20 students.
 * **Expected Duration :** 2 months  
 * **Expected Weekly Commitment:** 5 hours  
 
-## ID-17 - Understanding Graphs with Analysis  
+## 17 - Understanding Graphs with Analysis  
 * **Mentors:** Ayush Basu  
 * **Description :** What are some nice ways to understand the handshake lemma? How many triangles does a tripartite graph contain? How can we count the number of subgraphs of a particular kind in a complete graph (or a random graph)? How can we define quasirandomness in graphs? How can we extend these notions to hypergraphs? 
 
@@ -170,7 +171,7 @@ Later on we may explore some advanced results in this field like the complete pr
 * **Expected Duration :** 2.5 months  
 * **Expected Weekly Commitment:** 6  
 
-## ID-18 - Topics in Analysis: A Tour of Measure Theory and Functional Analysis  
+## 18 - Topics in Analysis: A Tour of Measure Theory and Functional Analysis  
 * **Mentors:** Aniket Das  
 * **Description :** This is a project on intermediate-level mathematical analysis intended for highly motivated Y18s and Y19s (and exceptional Y20s) who are interested in analysis, probability theory and machine learning theory. I intend to cover a broad range of topics in measure theory and functional analysis and discuss their applications in areas such as probability theory, machine learning theory and quantum mechanics 
 
