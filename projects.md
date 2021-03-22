@@ -98,7 +98,7 @@ Some arbitrary examples:
 * **Expected Weekly Commitment:** 2-4  
 
 ## 10 - Cross Validated  
-* **Mentors:** Kushagra Gupta (kushagra#9379), Ayush Agarwal, Medha Agarwal  
+* **Mentors:** Kushagra Gupta (kushagra#9379), Ayush Agarwal (mclaren#1275), Medha Agarwal (Medha#6652)  
 * **Description :** We plan on covering fundamental statistical algorithms that will serve as a bridge to advanced statistical concepts. We will focus on hands-on implementation with real-life problems. The project will expect students to be familiar with basic linear algebra and have adequate coding skills. The end goal of the project is to equip students with a basic understanding of statistical science while offering flexibility of choice in sub-areas like regression, optimization, sampling, etc.  
 * **Expected Duration :** 2 months  
 * **Expected Weekly Commitment:** 5-6 hours  
