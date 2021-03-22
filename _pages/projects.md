@@ -183,25 +183,26 @@ This project is mainly intended for Y20 students.
 
 ## 18 - Topics in Analysis: A Tour of Measure Theory and Functional Analysis  
 * **Mentors:** Aniket Das (Aniket#9998)  
-* **Description :** This is a project on intermediate-level mathematical analysis intended for highly motivated Y18s and Y19s (and exceptional Y20s) who are interested in analysis, probability theory and machine learning theory. I intend to cover a broad range of topics in measure theory and functional analysis and discuss their applications in areas such as probability theory, machine learning theory and quantum mechanics 
+* **Description :** "This is a project on intermediate-level mathematical analysis intended for highly motivated Y18s and Y19s (and exceptional Y20s) who are interested in analysis, probability theory and machine learning theory. I intend to cover a broad range of topics in measure theory and functional analysis and discuss their applications in areas such as probability theory, machine learning theory and quantum mechanics 
 
   Pre-requisites: Mathematical maturity and a high level of comfort with basic calculus (MTH101) and Linear Algebra (MTH102). 
 
   Topics: The exact syllabus will depend on the mathematical maturity of the group. Ideally, with a passionate and proficient group, I will be able to cover the following:
 
-  1. Topology Preliminaries: Metric Spaces, Open and Closed Sets, Completeness
-  2. A Fast Paced Linear Algebra Refresher on Normed Spaces, Inner Product Spaces and Linear Operators
+  1. Topology and Analysis Preliminaries: Metric Spaces, Open and Closed Sets, Completeness, Connectedness and Compactness
+  2. A Fast Paced Linear Algebra Refresher on Normed Spaces, Inner Product Spaces and Linear Operators. Introduction to Matrix Norms and Singular Value Decomposition
   3. Basics of Hilbert Space Theory: Basic properties, Jordan von Neumann Theorem, Orthonormality, Applications to Fourier Analysis and Approximation Theory
   4. Bounded Linear Operators and Functionals on Hilbert Spaces: Definitions, Reisz Representation Theorem, Hilbert Adjoint
-  5. (Optional) Basics of Banach Space Theory: Hahn Banach Theorem, Open Mapping and Closed Graph Theorem, Banach Fixed Point Theorem and its Applications to 
-  6. (Optional) Application of Functional Analysis in Basic Quantum Mechanics
-  7. Measure Theory: Definition and Basic Results on Measures, Outer Measures, Borel Regularity with a special focus on Lebesgue Measure
-  8. Measure Theory II: Simple Functions, Measurable Functions and Measure Theoretic Notions of Convergence
-  9. Integration Theory I: Measurable Functions, Definition and Properties of Integral with special focus on Lebesgue Integrals
-  10. Integration Theory II: Fundamental Theorems: Monotone Convergence Theorem, Fatou's Lemma, Dominated Convergence Theorem, Multiple Integrals and Fubini's Theorem
-  11. Lp spaces: Development of functional analysis on Lp spaces, integral operators, kernels. 
-  12. (Optional) Applications to Probability Theory: Measure Theoeretic Probability, Expectation and Convergence Theorems in Probability. Weak Law of Large Numbers
-  13. (Optional) Advanced Calculus on Banach Spaces: Metric Derivatives, Frechet and Gateaux Derivatives
-  14. (Optional) Connections to Kernel Methods in Machine Learning: Reproducing Kernel Hilbert Spaces and some more Fourier Analysis (Bochner's Theorem and related results)  
+  5. Self Adjoint Linear Operators, Compact Operators, Spectral Theorem. Applications to Polar Decomposition and Singular Value Decomposition in Hilbert Spaces
+  6. (Optional) Basics of Banach Space Theory: Hahn Banach Theorem, Open Mapping and Closed Graph Theorem, Banach Fixed Point Theorem and its Applications
+  7. (Optional) Application of Functional Analysis in Basic Quantum Mechanics
+  8. Measure Theory: Definition and Basic Results on Measures, Outer Measures, Borel Regularity with a special focus on Lebesgue Measure
+  9. Measure Theory II: Simple Functions, Measurable Functions and Measure Theoretic Notions of Convergence
+  10. Integration Theory I: Measurable Functions, Definition and Properties of Integral with special focus on Lebesgue Integrals
+  11. Integration Theory II: Fundamental Theorems: Monotone Convergence Theorem, Fatou's Lemma, Dominated Convergence Theorem, Multiple Integrals and Fubini's Theorem
+  12. Lp spaces: Development of functional analysis on Lp spaces, integral operators, kernels. 
+  13. (Optional) Applications to Probability Theory: Measure Theoeretic Probability, Expectation and Convergence Theorems in Probability. Weak Law of Large Numbers and Central Limit Theorem
+  14. (Optional) Advanced Calculus on Banach Spaces: Metric Derivatives, Frechet and Gateaux Derivatives
+  15. (Optional) Connections to Kernel Methods in Machine Learning: Reproducing Kernel Hilbert Spaces and some more Fourier Analysis (Bochner's Theorem and related results)
 * **Expected Duration :** 3-4 months on full syllabus. 1-2 months on a reduced syllabus  
 * **Expected Weekly Commitment:** 8-10 hours (involves significant self study and possible exercises)  
