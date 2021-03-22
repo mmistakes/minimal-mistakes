@@ -4,6 +4,8 @@ main:
     url: https://stamatics.github.io/mathemania/
   - title: "Projects 2021"
     url: /projects-2021/
+  - title: "Team"
+    url: /team/
   - title: "Blog"
     url: https://medium.com/stamatics-iit-kanpur
   # - title: "Sample Collections"
