@@ -2,7 +2,7 @@
 layout: splash
 permalink: /
 hidden: true
-title: "Home"
+title: ""
 header:
   overlay_color: "#FFFFFF"
   overlay_image: stamatics_coverpage.jpg
