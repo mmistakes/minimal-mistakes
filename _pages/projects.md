@@ -93,7 +93,9 @@ Some arbitrary examples:
 
 ## 8 - Introduction to Fourier Analysis of Boolean Functions  
 * **Mentors:** Mohd Talib Siddiqui (arrow#4554)  
-* **Description :** Boolean Functions, Boolean Functions as multivariate polynomials (Fourier expansion), Fourier Span and Support, Linearity Testing (short overview), Dimension-Sparsity related discussions.  
+* **Description :** We will start with discussing various kinds of boolean functions and their examples. Boolean functions are involved in various domains such as combinatorics and voting theories.
+However, instead of their applications we will analyse the properties boolean functions in themselves exhibit. We start with a very relaxed domain of functions on binary strings and will look at the properties that change when we restrict the domain to boolean values.
+We will be going over Fourier expansion of boolean functions in detail. We will touch upon property testing and introduce the procedure of linearity testing of boolean functions in short. We will mainly discuss on the Fourier support and dimension of boolean functions and see various bounds involving the same. We may include discussions on Parity Decision Trees as well depending on the interest shown by the mentees.
 * **Expected Duration :** 5-8 weeks  
 * **Expected Weekly Commitment :** 2-4  
 
