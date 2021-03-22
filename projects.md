@@ -116,7 +116,7 @@ We would be covering axiomatisaion, rules of inference, syntactic and semantic c
 * **Expected Weekly Commitment:** 4-6 Hrs  
 
 ## 13 - Numbers Made Dumber  
-* **Mentors:** Yatharth Goswami(alpha_hacker#3464), Vivek Kumar Singh (bb8#2778), Rohan Baijal  
+* **Mentors:** Yatharth Goswami (alpha_hacker#3464), Vivek Kumar Singh (bb8#2778), Rohan Baijal  
 * **Description :** This project will serve as an introduction to Number Theory and some of its cool real world application like in Cryptography!
 
   One component (the obvious one) is theoretical where the idea would be to cover theory (some Olympiad related and some algebra related) and tickle the brain cells by solving   some problems.
