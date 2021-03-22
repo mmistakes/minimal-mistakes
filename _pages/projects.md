@@ -183,7 +183,7 @@ This project is mainly intended for Y20 students.
 
 ## 18 - Topics in Analysis: A Tour of Measure Theory and Functional Analysis  
 * **Mentors:** Aniket Das (Aniket#9998)  
-* **Description :** "This is a project on intermediate-level mathematical analysis intended for highly motivated Y18s and Y19s (and exceptional Y20s) who are interested in analysis, probability theory and machine learning theory. I intend to cover a broad range of topics in measure theory and functional analysis and discuss their applications in areas such as probability theory, machine learning theory and quantum mechanics 
+* **Description :** This is a project on intermediate-level mathematical analysis intended for highly motivated Y18s and Y19s (and exceptional Y20s) who are interested in analysis, probability theory and machine learning theory. I intend to cover a broad range of topics in measure theory and functional analysis and discuss their applications in areas such as probability theory, machine learning theory and quantum mechanics 
 
   Pre-requisites: Mathematical maturity and a high level of comfort with basic calculus (MTH101) and Linear Algebra (MTH102). 
 
