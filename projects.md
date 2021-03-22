@@ -48,7 +48,7 @@ Some arbitrary examples:
 * **Expected Weekly Commitment:** 3-4 hours  
 
 ## 5 - Application of Maths in Algorithms  
-* **Mentors:** Utkarsh Gupta  
+* **Mentors:** Utkarsh Gupta (Pegasus#3765), Nitin Garg (Casual_Gamer#3886), Yash Gidwani  
 * **Description :** The project will cover diophantine equations, Gauss elimination, Hashing, mobius inversion, etc.  
 * **Expected Duration :** 3 months  
 * **Expected Weekly Commitment:** 7 hrs  
@@ -64,7 +64,8 @@ Some arbitrary examples:
 * **Expected Weekly Commitment:** 4-5 hours  
 
 ## 7 - Computer Vision: A Classic and Modern approach  
-* **Mentors:** Shivanshu Tyagi (spazewalker#5877), Akshay Gupta  
+* **Mentors:** Shivanshu Tyagi (spazewalker#5877), Akshay Gupta (gakshay
+#2382)  
 * **Description :** This project will cover the basics of computer Vision, then dive into some classic computer vision algorithms and then finally will cover the modern Deep Learning approaches in CV. 
 
   The proposed project would roughly have the following structure:
@@ -97,7 +98,7 @@ Some arbitrary examples:
 * **Expected Weekly Commitment:** 2-4  
 
 ## 10 - Cross Validated  
-* **Mentors:** Kushagra Gupta, Ayush Agarwal, Medha Agarwal  
+* **Mentors:** Kushagra Gupta (kushagra#9379), Ayush Agarwal, Medha Agarwal  
 * **Description :** We plan on covering fundamental statistical algorithms that will serve as a bridge to advanced statistical concepts. We will focus on hands-on implementation with real-life problems. The project will expect students to be familiar with basic linear algebra and have adequate coding skills. The end goal of the project is to equip students with a basic understanding of statistical science while offering flexibility of choice in sub-areas like regression, optimization, sampling, etc.  
 * **Expected Duration :** 2 months  
 * **Expected Weekly Commitment:** 5-6 hours  
@@ -143,7 +144,7 @@ A rational distance set is a set of points with each of its pairwise distances t
 * **Expected Weekly Commitment:** 5+  
 
 ## 15 - Quantum Algorithms  
-* **Mentors:** Rishabh Kothary  
+* **Mentors:** Rishabh Kothary (rishk76#7995)  
 * **Description :** Quantum Algorithms is a hot research area, and quantum algorithms like Shor's factorization algorithm have threatened the current state-of-the-art cryptosystems like the RSA. Shor's algorithm has brought an exponential speedup to the integer factorization problem compared to its classical counterpart. It has forced the cryptography community to build cryptosystems resilient to attacks from quantum computers. Our main aim is to understand the quantum computation model and learn about Shor's factorization algorithm in the project. If time permits, we could explore algorithms like Grover's Search algorithm and Simon's Algorithm and their applications in breaking cryptosystems. Not many pre-requisites are assumed; a basic understanding of Linear Algebra should suffice. However, the pre-requisites are not very strict and can be covered during the project if interested.  
 * **Expected Duration :** 2-3 months  
 * **Expected Weekly Commitment:** 8-10 hrs  
