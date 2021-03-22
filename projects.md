@@ -64,8 +64,7 @@ Some arbitrary examples:
 * **Expected Weekly Commitment:** 4-5 hours  
 
 ## 7 - Computer Vision: A Classic and Modern approach  
-* **Mentors:** Shivanshu Tyagi (spazewalker#5877), Akshay Gupta (gakshay
-#2382)  
+* **Mentors:** Shivanshu Tyagi (spazewalker#5877), Akshay Gupta (gakshay#2382)  
 * **Description :** This project will cover the basics of computer Vision, then dive into some classic computer vision algorithms and then finally will cover the modern Deep Learning approaches in CV. 
 
   The proposed project would roughly have the following structure:
@@ -117,7 +116,7 @@ We would be covering axiomatisaion, rules of inference, syntactic and semantic c
 * **Expected Weekly Commitment:** 4-6 Hrs  
 
 ## 13 - Numbers Made Dumber  
-* **Mentors:** Yatharth Goswami (alpha_hacker#3464), Vivek Kumar Singh (bb8#2778), Rohan Baijal  
+* **Mentors:** Yatharth Goswami (alpha_hacker#3464), Vivek Kumar Singh (bb8#2778), Rohan Baijal (rohanblueboybaijal#5838)  
 * **Description :** This project will serve as an introduction to Number Theory and some of its cool real world application like in Cryptography!
 
   One component (the obvious one) is theoretical where the idea would be to cover theory (some Olympiad related and some algebra related) and tickle the brain cells by solving   some problems.
