@@ -52,7 +52,7 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
-search                   : true #, false (default)
+search                   : false #, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
@@ -124,16 +124,22 @@ footer:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:sethia@iitk.ac.in"
+      url: "mailto:stamaticsiitkanpur@gmail.com"
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube-square"
+      url: "https://www.youtube.com/channel/UC18JWHPA5YcdcEShzv94G7g"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/stamaticsiitk"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url:
+      url: https://www.facebook.com/stamatics.iitk
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/stamatics"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/company/stamatics-iit-kanpur/"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
