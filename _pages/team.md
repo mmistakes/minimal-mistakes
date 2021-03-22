@@ -1,6 +1,6 @@
 ---
 title: Meat the Team
-permalink: /projects-2021/
+permalink: /team/
 toc: true
 layout: single
 author_profile: false
