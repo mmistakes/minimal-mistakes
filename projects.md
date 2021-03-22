@@ -47,11 +47,11 @@ Some arbitrary examples:
 * **Expected Duration :** 2-3 months  
 * **Expected Weekly Commitment:** 3-4 hours  
 
-## 5 - Application of Maths in Algorithms  
+## 5 - Algorithms based on maths  
 * **Mentors:** Utkarsh Gupta (Pegasus#3765), Nitin Garg (Casual_Gamer#3886), Yash Gidwani  
 * **Description :** The project will cover diophantine equations, Gauss elimination, Hashing, mobius inversion, etc.  
-* **Expected Duration :** 3 months  
-* **Expected Weekly Commitment:** 7 hrs  
+* **Expected Duration :** 2 months  
+* **Expected Weekly Commitment:** 5 hrs  
 
 ## 6 - Mathematical Finance & Stochastic Processes  
 * **Mentors:** Aditya Prakash Singh (adityapi314#1095)  
