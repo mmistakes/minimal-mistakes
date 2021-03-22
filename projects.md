@@ -97,7 +97,7 @@ Some arbitrary examples:
 * **Expected Weekly Commitment:** 2-4  
 
 ## 10 - Cross Validated  
-* **Mentors:** Kushagra Gupta, Ayush Agarwal (Kid Aa#0649), Medha Agarwal  
+* **Mentors:** Kushagra Gupta, Ayush Agarwal, Medha Agarwal  
 * **Description :** We plan on covering fundamental statistical algorithms that will serve as a bridge to advanced statistical concepts. We will focus on hands-on implementation with real-life problems. The project will expect students to be familiar with basic linear algebra and have adequate coding skills. The end goal of the project is to equip students with a basic understanding of statistical science while offering flexibility of choice in sub-areas like regression, optimization, sampling, etc.  
 * **Expected Duration :** 2 months  
 * **Expected Weekly Commitment:** 5-6 hours  
@@ -116,7 +116,7 @@ We would be covering axiomatisaion, rules of inference, syntactic and semantic c
 * **Expected Weekly Commitment:** 4-6 Hrs  
 
 ## 13 - Numbers Made Dumber  
-* **Mentors:** Yatharth Goswami, Vivek Kumar Singh (bb8#2778), Rohan Baijal  
+* **Mentors:** Yatharth Goswami(alpha_hacker#3464), Vivek Kumar Singh (bb8#2778), Rohan Baijal  
 * **Description :** This project will serve as an introduction to Number Theory and some of its cool real world application like in Cryptography!
 
   One component (the obvious one) is theoretical where the idea would be to cover theory (some Olympiad related and some algebra related) and tickle the brain cells by solving   some problems.
