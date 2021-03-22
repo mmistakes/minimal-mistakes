@@ -48,8 +48,8 @@ Some arbitrary examples:
 * **Expected Weekly Commitment:** 3-4 hours  
 
 ## 5 - Algorithms based on maths  
-* **Mentors:** Utkarsh Gupta (Pegasus#3765), Nitin Garg (Casual_Gamer#3886), Yash Gidwani  
-* **Description :** This project is intended to analyse algorithms that are based on maths and discover their applications. We will mainly cover the following algorithms/ techniques:
+* **Mentors:** Utkarsh Gupta (Pegasus#3765), Nitin Garg (ZeroDeaths#3886), Yash Gidwani  
+* **Description :** This project is intended to analyse algorithms that are based on maths and discover their applications. We will mainly cover the following algorithms/ techniques:  
   1) Hashing - It is mainly used to store big arrays/ strings compactly and is thus used for pattern matching/sub-array equality, etc. in an optimal way.  
   2) Linear Diophantine Equations - We will discuss the conditions for solutions to exist and look for optimal ways to find them explicitly.  
   3) Gaussian Elimination - It is mainly used for solving linear equations but it has many other tricky applications like finding all xor subsets, etc. which will be discussed explicitly.  
