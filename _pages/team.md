@@ -1,5 +1,5 @@
 ---
-title: Meat the Team
+title: Meet the Team
 permalink: /team/
 toc: true
 layout: single
