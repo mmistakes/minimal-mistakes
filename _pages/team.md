@@ -28,3 +28,7 @@ author_profile: false
 * Kushagra Gupta 
 
 ## Coordinators 2018-19
+* Harshit Bisht
+* Piyush Bagad
+* Krishna Manoorkar
+
