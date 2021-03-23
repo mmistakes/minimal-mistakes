@@ -6,6 +6,8 @@ layout: single
 author_profile: false
 
 ---
+To register, fill this form latest by 27th March, 11:59 PM - [here](https://forms.gle/GhxVtSKegc2FhMvk8)
+And join the Stamatics discord server, to interact with the mentors and any other communication- [invite link](https://discord.gg/A6VuSzRfZd)
 
 ## 1 - Probability and Statistics : From Classical to Bayesian  
 * **Mentors:** Aniket Kumar (aniki#8797), Pranay Agarwal (Pranzer#5431), Munish Gupta (Alexios#2464)  
