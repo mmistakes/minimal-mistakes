@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Mitgliederversammlung Förderverein",
-    "title": "Mitgliederversammlung Förderverein",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=M2dsdTc3MWNkbHE4dDR2aWhhdDR2bmM4NDQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2021-03-23T19:00:00+01:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2021-03-23T21:00:00+01:00"
-    },
-    "created": "2021-03-10T04:52:04.000Z",
-    "updated": "2021-03-10T04:52:04.715Z"
-  },
-  {
-    "image_path": null,
     "alt": "Informelles Treffen der GEV und Schulleitung",
     "title": "Informelles Treffen der GEV und Schulleitung",
     "excerpt": null,
@@ -100,5 +83,22 @@
     },
     "created": "2020-01-20T10:23:43.000Z",
     "updated": "2020-01-20T10:23:43.980Z"
+  },
+  {
+    "image_path": null,
+    "alt": "unterrichtsfrei",
+    "title": "unterrichtsfrei",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=MjU4a2c4YTc0bDBpc2UzM29rcDB1N3Zyc2QgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": "2021-05-14",
+      "date_time": null
+    },
+    "end": {
+      "date": "2021-05-15",
+      "date_time": null
+    },
+    "created": "2020-03-11T12:15:33.000Z",
+    "updated": "2020-03-11T12:17:55.062Z"
   }
 ]
