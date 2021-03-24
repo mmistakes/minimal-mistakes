@@ -65,7 +65,7 @@ Some arbitrary examples:
 * **Expected Weekly Commitment:** 5 hrs  
 
 ## 6 - Mathematical Finance & Stochastic Processes  
-* **Mentors:** Aditya Prakash Singh (adityapi314#1095)  
+* **Mentors:** Aditya Prakash Singh (adityapi314#1095), Shaurya Jain (shaurya#9116)
 * **Description :** We will first study some basic financial concepts such as time value of money, arbitrage and risk & return. Further, we will study the most basic derivatives prevalent in the market and finally we will learn how these derivates are priced and hopefully derive the celebrated Black-Scholes equation.
 
   Disclaimer - This project will NOT teach you how to trade in the market. It will definitely help you to understand the market and its instruments better.
