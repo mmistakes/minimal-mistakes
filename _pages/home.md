@@ -63,7 +63,7 @@ feature_rows:
     excerpt: "Esta perdendo muito tempo com atividades burocráticas e perdendo oportunidades? Oferecemos o serviço de Assessor Executivo Remoto com soluções especializadas, a fim de facilitar a sua rotina, atender suas demandas profissionais e proporcionar qualidade de vida e ganhos financeiros."
 contato:
   - title: "CONTATO"
-    excerpt: "Rua Hamilton de Barros Soutinho, 1866, Sala 12, Jatiúca, Maceió, Alagoas<br>contato@nortanprojetos.com<br>(82) 99916-4578"
+    excerpt: "Av. Comendador Gustavo Paiva, Sala 28, Mezanino, Norcon Empresarial, 2789, Mangabeiras, Maceió, Alagoas, 57037-532<br>contato@nortanprojetos.com<br>(82) 99916-4578"
 ---
 
 {% include slider.html selector="slider1" %}
