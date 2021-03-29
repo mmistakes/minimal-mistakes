@@ -18,6 +18,10 @@ $masthead-link-color: $text-color !default;
 $masthead-link-color-hover: mix(#000, $text-color, 20%) !default;
 $navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
 
+/* notices */
+$notice-background-mix: 70% !default;
+$code-notice-background-mix: 80% !default;
+
 /* plum syntax highlighting (base16) */
 $base00: #ffffff !default;
 $base01: #e0e0e0 !default;
