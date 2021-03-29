@@ -6,8 +6,6 @@
 - Liu, M., Dong, W., Qin, S.,Verguts, T., & Chen, Q. (2021). Electrophysiological signatures of hierarchical learning. BioRxiv [https://doi.org/10.1101/2021.03.09.434666](https://doi.org/10.1101/2021.03.09.434666)
  
 - Desender, K., Vermeylen, L., & Verguts, T. (2020). Dynamic influences on static measures of metacognition. BioRxiv. [https://doi.org/10.1101/2020.10.29.360453](https://doi.org/10.1101/2020.10.29.360453)
-
-- Shahnazian, D., Senoussi, M., Krebs, R. M., Verguts, T., & Holroyd, C. B. (2020). Neural representations of task context and temporal order during action sequence execution. BioRxiv. [https://doi.org/10.1101/2020.09.10.290965](https://doi.org/10.1101/2020.09.10.290965)
  
 - Senoussi, M., Verbeke, P., Desender, K., De Loof, E., Talsma, D., & Verguts, T. (2020). Theta oscillations shift towards optimal frequency for cognitive control. BioRxiv. [https://doi.org/10.1101/2020.08.30.273706](https://doi.org/10.1101/2020.08.30.273706)
 
@@ -23,12 +21,11 @@
 
 in press:
 
+- Shahnazian, D., Senoussi, M., Krebs, R. M., Verguts, T., & Holroyd, C. B. (in press). Neural representations of task context and temporal order during action sequence execution. Topics in Cognitive Science. [https://doi.org/10.1101/2020.09.10.290965](https://doi.org/10.1101/2020.09.10.290965)
+
 - Zhang, S., Verguts, T., Zhang, C., Feng, P., Chen, Q., & Feng, T. (in  press). Outcome value and task aversiveness impact task procrastination through separate neural pathways. Cerebral Cortex.
 
 - Verguts, T. (in press). Introduction to modelling cognitive processes. MIT Press.
-
-- Holroyd, C. B., & Verguts, T. (in press). The best laid plans: Computational principles of ACC. Trends in Cognitive Sciences.
-[https://doi.org/10.31234/osf.io/3df8y](https://doi.org/10.31234/osf.io/3df8y)
 
 - Peng, Z., Xu, C., Ma, N., Yang, Q., Ren, P., Wen, R., … Chen, Q. (in press). White matter alterations of the goal-directed system in obsessive-compulsive disorder patients and their unaffected first-degree relatives. Biological Psychiatry: Cognitive Neuroscience and Neuroimaging.
 
@@ -37,13 +34,20 @@ in press:
 
 2021:
 
-- Calderon, C. B., De Loof, E., Ergo, K., Snoeck, A., Boehler, C. N., & Verguts, T. (2021). Signed Reward Prediction Errors in the Ventral Striatum Drive Episodic Memory. Journal of Neuroscience, 41, 1716-1726. [https://doi.org/10.1101/2020.01.03.893578](https://doi.org/10.1101/2020.01.03.893578).
+- Holroyd, C. B., & Verguts, T. (2021). The best laid plans: Computational principles of ACC. Trends in Cognitive Sciences, 25, 316-329.
+[https://doi.org/10.31234/osf.io/3df8y](https://doi.org/10.31234/osf.io/3df8y)
 
-- Verbeke, P., Ergo, K., De Loof, E., & Verguts, T. (2021). Learning to synchronize: Midfrontal theta dynamics during reversal learning. Journal of Neuroscience. [https://doi.org/10.1101/2020.06.01.127175](https://doi.org/10.1101/2020.06.01.127175). 
+- Calderon, C. B., De Loof, E., Ergo, K., Snoeck, A., Boehler, C. N., & Verguts, T. (2021). Signed Reward Prediction Errors in the Ventral Striatum Drive Episodic Memory. Journal of Neuroscience, 41, 1716-1726.
+Biorxiv version : [https://doi.org/10.1101/2020.01.03.893578](https://doi.org/10.1101/2020.01.03.893578).
+Journal version : [https://doi.org/10.1523/JNEUROSCI.1785-20.2020](https://doi.org/10.1523/JNEUROSCI.1785-20.2020)
+
+- Verbeke, P., Ergo, K., De Loof, E., & Verguts, T. (2021). Learning to synchronize: Midfrontal theta dynamics during reversal learning. Journal of Neuroscience, 41, 1516-1528. 
+Biorxiv version: [https://doi.org/10.1101/2020.06.01.127175](https://doi.org/10.1101/2020.06.01.127175). 
+Journal version: [https://doi.org/10.1523/JNEUROSCI.1874-20.2020](https://doi.org/10.1523/JNEUROSCI.1874-20.2020)
 
 - Desender, K., Donner, T. H., & Verguts, T. (2021). Dynamic expressions of confidence within an evidence accumulation framework. Cognition (207). [https://doi.org/10.1016/j.cognition.2020.104522](https://doi.org/10.1016/j.cognition.2020.104522)
 
-- Goris, J., Silvetti, M., Verguts, T., Wiersema, J. R., Brass, M., & Braem, S. (2021). Autistic traits are related to worse performance in a volatile reward learning task despite adaptive learning rates. Autism, 25, 440-451.
+- Goris, J., Silvetti, M., Verguts, T., Wiersema, J. R., Brass, M., & Braem, S. (2021). Autistic traits are related to worse performance in a volatile reward learning task despite adaptive learning rates. Autism, 25, 440-451. [https://doi.org/10.1177/1362361320962237](https://doi.org/10.1177/1362361320962237)
 
 
 ## Archive
