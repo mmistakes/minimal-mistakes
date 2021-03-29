@@ -295,6 +295,31 @@ toc_icon: "cog"
 **Note:** using both methods will have unintended results. Be sure to remove `{% raw %}{% include toc %}{% endraw %}` placed table of contents from your content when using `toc: true`.
 {: .notice--warning }
 
+{% capture notice-text %}
+**Note:** You need to use contiguous levels of headings for the TOC to generate properly. For example:
+
+```markdown
+Good headings:
+
+# Heading
+## Heading
+### Heading
+### Heading
+# Heading
+## Heading
+
+Bad headings:
+
+# Heading
+### Heading (skipped H2)
+##### Heading (skipped H4)
+```
+{% endcapture %}
+
+<div class="notice--warning">
+  {{ notice-text | markdownify }}
+</div>
+
 ### Enabled via `toc` include (deprecated)
 
 To include a Kramdown [auto-generated table of contents](https://kramdown.gettalong.org/converter/html.html#toc) for posts and pages, add the following helper to your content.
