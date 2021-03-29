@@ -141,6 +141,31 @@ toc_icon: "cog"
 ---
 ```
 
+{% capture notice-text %}
+**Note:** You need to use contiguous levels of headings for the TOC to generate properly. For example:
+
+```markdown
+Good headings:
+
+# Heading
+## Heading
+### Heading
+### Heading
+# Heading
+## Heading
+
+Bad headings:
+
+# Heading
+### Heading (skipped H2)
+##### Heading (skipped H4)
+```
+{% endcapture %}
+
+<div class="notice--warning">
+  {{ notice-text | markdownify }}
+</div>
+
 ## Archive layout
 
 Essentially the same as `single` with markup adjustments and some modules removed.
