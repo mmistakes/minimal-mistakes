@@ -2,7 +2,7 @@
 title: "Semigroups and Monoids in Scala"
 date: 2021-03-19
 header:
-image: "/images/blog cover.jpg"
+    image: "/images/blog cover.jpg"
 tags: [scala, cats]
 excerpt: "This article is about Monoids and Semigroups as a gentle introduction to functional abstractions and to how the Cats library works."
 ---
