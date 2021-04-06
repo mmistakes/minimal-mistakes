@@ -19,8 +19,8 @@ Before we begin, let's establish some goals.
 
 So this article is for
 
-1) Curious people wanting to learn what's with this "monoids in the category of endofunctors" psychobabble.
-2) Software engineers with a long-term vision for their skills and future.
+1. Curious people wanting to learn what's with this "monoids in the category of endofunctors" psychobabble.
+2. Software engineers with a long-term vision for their skills and future.
 
 ## 1. Background
 
