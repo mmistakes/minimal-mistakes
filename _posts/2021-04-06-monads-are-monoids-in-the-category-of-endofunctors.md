@@ -9,17 +9,17 @@ excerpt: "What's the problem?"
 
 This article will attempt to demystify one of the most condensed and convoluted pieces of abstract math to ever land in functional programming. 
 
-The description of monads as "just monoids in the category of endofunctors" seems to have appeared first in the book [Categories for the Working Mathematician](https://www.amazon.co.uk/Categories-Working-Mathematician-Graduate-Mathematics/dp/0387984038), and then in many other places. There were quite a few articles on the topic, most littered with mathematical jargon, and almost none in Scala.
+The description of monads as "just monoids in the category of endofunctors" is commonly attributed the book [Categories for the Working Mathematician](https://www.amazon.co.uk/Categories-Working-Mathematician-Graduate-Mathematics/dp/0387984038), and then appeared in many other places. Some people [made some fun of it](http://james-iry.blogspot.com/2009/05/brief-incomplete-and-mostly-wrong.html). There were quite a few articles on the topic, most littered with mathematical jargon, and almost none in Scala.
 
-The article was inspired by an innocent question from one of my students on Slack (I see you, Kamran), of the form of "@Daniel - can you expand on: monads are just monoids in the category of endo functors". A couple of weeks and many headaches later, I came up with this article, which is the only version that I could also understand, written for Scala 3.
+The article was inspired by an innocent question from one of my students on Slack (I see you, Kamran), of the form of "@Daniel - can you expand on: monads are just monoids in the category of endofunctors". A couple of weeks and many headaches later, I came up with this article, which is the only version that I could also understand, written for Scala 3.
 
 Before we begin, let's establish some goals.
 
-*This article will have zero immediate practical application for you.* HOWEVER: the kind of mental gymnastics that we're going to do here is going to make a big difference in how you read, understand and reason about extremely abstract code in your library or codebase. This skill is timeless, and even transcends Scala as a language.
+*This article will have zero immediate practical application for you.* HOWEVER: the kind of mental gymnastics we'll do and the code we'll write here are both going to make a big difference in how you read, understand and reason about extremely abstract code in your library or codebase. This skill is timeless, and even transcends Scala as a language.
 
 So this article is for
 
-1. Curious people wanting to learn what's with this "monoids in the category of endofunctors" psychobabble.
+1. Curious people wanting to learn what's with this "monoids in the category of endofunctors" psychobabble, without *using* any psychobabble.
 2. Software engineers with a long-term vision for their skills and future.
 
 ## 1. Background
@@ -194,7 +194,7 @@ Even though this might not make too much sense right now, I'm going to remind yo
 trait MonoidInCategoryK2[T[_], ~>[_[_], _[_]], U[_], P[_]]
 ```
 
-And just take a look at that higher-kinded `~>` type and figure out if it matches the structure of FunctorNatTrans. Once it does, carry on with the article. Seed was planted.
+Just take a look at that higher-kinded `~>` type and figure out if it matches the structure of FunctorNatTrans. Once it does, carry on with the article. Seed was planted.
 
 ### 4.2 The Id
 
@@ -248,7 +248,7 @@ Written in Scala, the header of this special monoid looks like this:
 ```scala3
 trait MonoidInCategoryOfFunctors[F[_]: Functor] 
 extends MonoidInCategoryK2[F, FunctorNatTrans, Id, [A] =>> F[F[A]]] {
-    type EndofunctorComposition[A] = F[F[A]] // to get rid of the type lambda
+    type EndofunctorComposition[A] = F[F[A]] // instead of the type lambda
 }
 ```
 
@@ -270,6 +270,7 @@ Let's assume something concrete. Let's imagine somebody implements such a specia
 ```scala3
 object ListSpecialMonoid extends MonoidInCategoryOfFunctors[List] {
     override def unit: FunctorNatTrans[Id, List] = new FunctorNatTrans[Id, List] {
+        // remember Id[A] = A
         override def apply[A](fa: Id[A]): List[A] = List(fa) // create a list
     }
     
@@ -277,7 +278,7 @@ object ListSpecialMonoid extends MonoidInCategoryOfFunctors[List] {
     // we know      F = List
     // so           EndofunctorComposition[A] = List[List[A]]
     override def combine = new FunctorNatTrans[EndofunctorComposition, List] {
-        override def apply[A](fa: List[List[A]]) = fa.flatten
+        override def apply[A](fa: EndofunctorComposition[A]) = fa.flatten
     }
 }
 ```
@@ -302,7 +303,8 @@ Now, we haven't actually made this whole journey just to use the clunky `unit` a
 trait MonoidInCategoryOfFunctors[F[_]: Functor] 
 extends MonoidInCategoryK2[F, FunctorNatTrans, Id, [A] =>> F[F[A]]] {
     // whoever implements this trait will implement empty/combine
-    type EndofunctorComposition[A] = F[F[A]]
+    
+    type EndofunctorComposition[A] = F[F[A]] // instead of the type lambda
 
     // we can define two other functions
     def pure[A](a: A): F[A] = 
