@@ -7,6 +7,7 @@ comments: true
 
 ## Field Injection
 
+```java
 @Service
 public class TestServiceImpl implements TestService {
 
@@ -15,10 +16,12 @@ public class TestServiceImpl implements TestService {
 
     ...
 }
+```
 
 ## Setter based Injection
 * Spring 3까지는 권장되었지만 4.3부터는 Constructor based Injection을 권장함
 
+```java
 @Service
 public class TestServiceImpl implements TestService {
 
@@ -31,6 +34,7 @@ public class TestServiceImpl implements TestService {
 
     ...
 }
+```
 
 ## Constructor based Injection
 * final 선언이 가능하기 때문에 불변성
@@ -39,6 +43,7 @@ public class TestServiceImpl implements TestService {
 * 단일 생성자인 경우 @Autowired를 붙여주지 않아도 됨
 * 생성자의 인자수가 많아질 경우 
 
+```java
 @Service
 public class TestServiceImpl implements TestService {
 
@@ -51,3 +56,4 @@ public class TestServiceImpl implements TestService {
 
     ...
 }
+```
