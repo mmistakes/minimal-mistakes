@@ -3,6 +3,8 @@
 ## Preprints
 
 
+- Calderon, C.B., Verguts, T., & Frank, M. J. (2021). Thunderstruck: The ACDC model of flexible sequences and rhythms in recurrent neural circuits. [https://www.biorxiv.org/content/10.1101/2021.04.07.438842v1](https://www.biorxiv.org/content/10.1101/2021.04.07.438842v1)
+
 - Liu, M., Dong, W., Qin, S.,Verguts, T., & Chen, Q. (2021). Electrophysiological signatures of hierarchical learning. BioRxiv [https://doi.org/10.1101/2021.03.09.434666](https://doi.org/10.1101/2021.03.09.434666)
  
 - Desender, K., Vermeylen, L., & Verguts, T. (2020). Dynamic influences on static measures of metacognition. BioRxiv. [https://doi.org/10.1101/2020.10.29.360453](https://doi.org/10.1101/2020.10.29.360453)
