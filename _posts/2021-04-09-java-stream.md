@@ -17,7 +17,6 @@ String sortedFruits[] = Arrays.stream(fruits).sorted().toArray(String[]::new);
 Arrays.sort(fruits) 는 fruits Array 자체가 정렬됨
 
 ## Stream filter
-* Spring 3까지는 권장되었지만 4.3부터는 Constructor based Injection을 권장함
 
 ```java
 String fruits[] = {"cherry", "cranberry", "durian", "blueberry", "guava", "grape", "gooseberry", "lemon", "kiwi", "coconut", "jackfruit", "lime", "apple", "blueberry"};
