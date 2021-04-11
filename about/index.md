@@ -139,9 +139,7 @@ I conduct this research in collaboration with Tom Verguts and Senne Braem, using
 
 <img src="/images/profile_pic_kate.jpg" alt="Kate Ergo" max-width="50%" height="auto" align="left" hspace="10" vspace="10">
 
-My research focuses on how reward and reward prediction errors (i.e., mismatches between reward outcome and reward expectation) influence declarative memory (e.g., learning a foreign language). Using a Dutch-Swahili word learning paradigm, we found that word pair recognition increases linearly with larger and more positive RPEs [(De Loof et al., 2018)]( https://doi.org/10.1371/journal.pone.0189212). We also found neural oscillatory signatures that confirm the experience of signed RPEs (SRPEs) boosting declarative memory [(Ergo et al., 2019)](https://doi.org/10.1016/j.neuroimage.2018.10.083). My goal is to further investigate the robustness and generality of these findings. To this end, I use both behavioral and (electro)physiological (i.e., EEG, tACS and eye tracking) measures. My PhD is funded by the Flanders Fund for Scientific Research (FWO).
-
-Outside of the lab, I enjoy travelling, gaming, playing the guitar and singing. 
+My research focuses on how reward and reward prediction errors (i.e., mismatches between reward outcome and reward expectation) influence declarative memory (e.g., learning a foreign language). To this end, I use both behavioral and (electro)physiological (i.e., EEG, tACS and eye tracking) measures. My PhD is funded by the Flanders Fund for Scientific Research (FWO).
 
 <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="Kate.Ergo@UGent.be" href="mailto:Kate.Ergo@UGent.be" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="/images/mail_32x32.jpg" style="width:2em;margin-right:.5em;" alt="Mail icon">Kate.Ergo@UGent.be</a></div>
 
