@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2021-04-13T15:59:20-04:00
+last_modified_at: 2021-04-13T16:01:10-04:00
 toc: false
 ---
 
@@ -13,6 +13,7 @@ toc: false
 
 ### Enhancements
 
+- Color notices based on skin colors instead of fixed values. [#2887](https://github.com/mmistakes/minimal-mistakes/pull/2887)
 - Add configurable datetime format. [#2844](https://github.com/mmistakes/minimal-mistakes/pull/2844)
 - Add Baidu site verfication [#2830](https://github.com/mmistakes/minimal-mistakes/pull/2830)
 - Add `alt` attribute to site logo. [#2529](https://github.com/mmistakes/minimal-mistakes/issues/2529) [#2824](https://github.com/mmistakes/minimal-mistakes/issues/2824)
