@@ -129,7 +129,7 @@ Auto-generated table of contents list for your posts and pages can be enabled by
 | **toc**     | Optional | Show table of contents. (boolean) | `false` |
 | **toc_label** | Optional | Table of contents title. (string) | `toc_label` in UI Text data file. |
 | **toc_icon**  | Optional | Table of contents icon, displays before the title. (string) | [Font Awesome](https://fontawesome.com/icons?d=gallery&s=solid&m=free) <i class="fas fa-file-alt"></i> **file-alt** icon. Other FA icons can be used instead. |
-| **toc_sticky** | Optional | Stick table of contents to top of screen.                   | `false` |  
+| **toc_sticky** | Optional | Stick table of contents to top of screen.                   | `false` |
 
 **TOC example with custom title and icon**
 
@@ -363,7 +363,7 @@ Then adjust the `paginate_path` in **_config.yml** to match.
 
 ```yaml
 paginate_path: /blog/page:num
-``` 
+```
 
 **Note:** Jekyll can only paginate a single `index.html` file. If you'd like to paginate more pages (e.g. category indexes) you'll need the help of a custom plugin. For more pagination related settings check the [**Configuration**]({{ "/docs/configuration/#paginate" | relative_url }}) section.
 {: .notice--info}
@@ -627,7 +627,7 @@ For example, to color a Reddit icon, simply add a `color` declaration and the co
     color: #ff4500;
   }
 }
-``` 
+```
 
 ![Reddit link in author profile with color]({{ "/assets/images/mm-author-profile-reddit-color.png" | relative_url }})
 
@@ -677,7 +677,7 @@ To start, add a new key to `_data/navigation.yml`. This will be referenced later
 
 **Sample sidebar menu links:**
 
-```yaml 
+```yaml
 docs:
   - title: Getting Started
     children:
@@ -798,3 +798,49 @@ Add the new `.btn--reddit` class to the `<a>` element from earlier, [compile `ma
 ```
 
 ![Reddit social share link button]({{ "/assets/images/mm-social-share-links-reddit-color.png" | relative_url }})
+
+---
+
+## Custom head and footer
+
+The `default` layout includes a number of custom templates, which provide ways for you to directly add content to all your pages.
+
+### Head
+
+`_includes/head/custom.html` is included at the end of the `<head>` tag. An example use of this include is to add custom CSS per page:
+
+Add some Liquid tags for the new configuration to `_includes/head/custom.html`.
+{% raw %}```html
+{% if page.page_css %}
+  {% for stylesheet in page.page_css %}
+    <link rel="stylesheet" href="{{ stylesheet | relative_url }}">
+  {% endfor %}
+{% endif %}
+```{% endraw %}
+
+Next, add `page_css` to any page's YAML Front Matter to have your CSS loaded for that page.
+```yaml
+page_css:
+  - /path/to/your/custom.css
+```
+
+### Footer
+
+`_includes/footer/custom.html` is included at the beginning of the `<footer>` tag. An example use of this include is to add custom JavaScript per page:
+
+Add some Liquid tags for the new configuration to `_includes/footer/custom.html`.
+{% raw %}```html
+{% if page.page_js %}
+  {% for script in page.page_js %}
+    <script src="{{ script | relative_url }}"></script>
+  {% endfor %}
+{% endif %}
+```{% endraw %}
+
+Next, add `page_js` to any page's YAML Front Matter to have your CSS loaded for that page.
+```yaml
+page_js:
+  - /path/to/your/custom.css
+```
+
+---
