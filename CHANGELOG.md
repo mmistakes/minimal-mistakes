@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+- Add Baidu site verfication [#2830](https://github.com/mmistakes/minimal-mistakes/pull/2830)
 - Add `alt` attribute to site logo. [#2529](https://github.com/mmistakes/minimal-mistakes/issues/2529) [#2824](https://github.com/mmistakes/minimal-mistakes/issues/2824)
 
 ### Bug Fixes
