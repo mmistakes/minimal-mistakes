@@ -715,6 +715,22 @@ Into `_config.yml`
 yandex_site_verification: "2132801JL"
 ```
 
+#### Baidu
+
+There are several ways to verify site ownership — the easiest is adding an authentication code to your config file.
+
+Copy and paste the string inside of `content`:
+
+```html
+<meta name="baidu-site-verification" content="code-iA0wScWXN1" />
+```
+
+Into `_config.yml`
+
+```yaml
+baidu_site_verification: "code-iA0wScWXN1"
+```
+
 #### Twitter Cards and Facebook Open Graph
 
 To improve the appearance of links shared from your site to social networks like Twitter and Facebook be sure to configure the following.
