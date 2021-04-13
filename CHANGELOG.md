@@ -7,6 +7,7 @@
 
 ### Bug Fixes
 
+- Remove all references to official public Staticman API instance. [#2818](https://github.com/mmistakes/minimal-mistakes/issues/2818) [#2831](https://github.com/mmistakes/minimal-mistakes/pull/2831)
 - Remove Google Search CSS. [#2852](https://github.com/mmistakes/minimal-mistakes/issues/2852) [#2855](https://github.com/mmistakes/minimal-mistakes/pull/2855)
 
 ## [4.22.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.22.0)
