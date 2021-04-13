@@ -782,7 +782,7 @@ The `default` layout includes a number of custom templates, which provide ways f
 
 ### Head
 
-`_includes/head/custom.html` is included at the end of the `<head>` tag.  An example use of this include is to add custom CSS per page:
+`_includes/head/custom.html` is included at the end of the `<head>` tag. An example use of this include is to add custom CSS per page:
 
 Add some Liquid tags for the new configuration to `_includes/head/custom.html`.
 {% raw %}```html
@@ -801,7 +801,7 @@ page_css:
 
 ### Footer
 
-`_includes/footer/custom.html` is included at the beginning of the `<footer>` tag.  An example use of this include is to add custom JavaScript per page:
+`_includes/footer/custom.html` is included at the beginning of the `<footer>` tag. An example use of this include is to add custom JavaScript per page:
 
 Add some Liquid tags for the new configuration to `_includes/footer/custom.html`.
 {% raw %}```html
