@@ -2,9 +2,9 @@
 main:
   # - title: "reboot"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "About"
+  - title: ":santa:About"
     url: /about/
-  - title: "Category"
+  - title: ":seedling:Category"
     url : /categories/
   # - title: "Sample Posts"
   #   url: /year-archive/
