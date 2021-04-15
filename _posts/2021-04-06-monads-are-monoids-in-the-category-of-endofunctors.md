@@ -1,5 +1,5 @@
 ---
-title: "Monads are Monoids in the Category of Endofunctors - Scala version"
+title: "Monads are Monoids in the Category of Endofunctors - Scala version, No Psychobabble"
 date: 2021-04-06
 header:
     image: "/images/blog cover.jpg"
@@ -21,6 +21,8 @@ So this article is for
 
 1. Curious people wanting to learn what's with this "monoids in the category of endofunctors" psychobabble, without *using* any psychobabble.
 2. Software engineers with a long-term vision for their skills and future.
+
+If you want the short version, check out this [Twitter thread](https://twitter.com/rockthejvm/status/1379695298365300736)
 
 ## 1. Background
 
