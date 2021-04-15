@@ -6,13 +6,13 @@
     {% include /comments-providers/discourse.html %}
   {% when "facebook" %}
     {% include /comments-providers/facebook.html %}
-  {% when "google-plus" %}
-    {% include /comments-providers/google-plus.html %}
   {% when "staticman" %}
     {% include /comments-providers/staticman.html %}
   {% when "staticman_v2" %}
     {% include /comments-providers/staticman_v2.html %}
+  {% when "utterances" %}
+    {% include /comments-providers/utterances.html %}
   {% when "custom" %}
-    {% include /comments-providers/custom.html %}
+    {% include /comments-providers/custom_scripts.html %}
 {% endcase %}
 {% endif %}

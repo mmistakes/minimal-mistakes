@@ -4,8 +4,6 @@ main:
     url: /about/
   - title: "Tech Stream"
     url: /techstream/
-  - title: "Travel Stream"
-    url: /travelstream/
   - title: Archive
     sublinks:
       - title: By Tag

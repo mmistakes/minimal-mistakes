@@ -10,18 +10,13 @@
   @include clearfix;
   margin: 0 auto;
   max-width: 100%;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
   font-family: $sans-serif;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
-
-  @include breakpoint($large) {
-    padding-left: 1em;
-    padding-right: 1em;
-  }
 
   @include breakpoint($x-large) {
     max-width: $x-large;
@@ -34,11 +29,11 @@
 
     @include breakpoint($large) {
       float: right;
-      width: span(10 of 12);
+      width: calc(100% - #{$right-sidebar-width-narrow});
     }
 
     @include breakpoint($x-large) {
-      padding-left: gutter(0.5 of 12);
+      width: calc(100% - #{$right-sidebar-width});
     }
   }
 
@@ -189,14 +184,26 @@
     margin: 0 1rem;
     color: $masthead-link-color;
     text-decoration: none;
+    -webkit-transition: none;
+    transition: none;
 
     &:hover {
       color: $masthead-link-color-hover;
     }
 
+    &.site-logo {
+      margin-left: 0;
+      margin-right: 0.5rem;
+    }
+
     &.site-title {
       margin-left: 0;
     }
+  }
+  
+  img{
+    -webkit-transition: none;
+    transition: none;
   }
 
   &__toggle {
@@ -205,8 +212,7 @@
     height: $nav-toggle-height;
     border: 0;
     outline: none;
-    color: #fff;
-    background-color: $primary-color;
+    background-color: transparent;
     cursor: pointer;
   }
 
@@ -366,7 +372,7 @@
     display: none;
   }
 
-  @include breakpoint(max-width($large - 1px)) {
+  @include breakpoint(max-width $large - 1px) {
     label {
       position: relative;
       display: inline-block;
@@ -472,7 +478,7 @@
     font-weight: bold;
   }
 
-  @include breakpoint(max-width($large - 1px)) {
+  @include breakpoint(max-width $large - 1px) {
     position: relative;
     max-height: 0;
     opacity: 0%;
@@ -486,7 +492,7 @@
   }
 }
 
-@include breakpoint(max-width($large - 1px)) {
+@include breakpoint(max-width $large - 1px) {
   .nav__list input:checked ~ .nav__items {
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
@@ -502,7 +508,7 @@
 
 .nav__title {
   margin: 0;
-  padding: 0.25rem 0.75rem;
+  padding: 0.5rem 0.75rem;
   font-family: $sans-serif-narrow;
   font-size: $type-size-5;
   font-weight: bold;
@@ -538,6 +544,11 @@
     background: $primary-color;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
+  }
+
+  // Scrollspy marks toc items as .active when they are in focus
+  .active a {
+    @include yiq-contrasted($active-color);
   }
 }
 

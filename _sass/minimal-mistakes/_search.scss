@@ -11,16 +11,17 @@
 .search__toggle {
   margin-left: 1rem;
   margin-right: 1rem;
+  height: $nav-toggle-height;
   border: 0;
   outline: none;
-  color: $muted-text-color;
+  color: $primary-color;
   background-color: transparent;
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 
   &:hover {
-    color: $text-color;
+    color: mix(#000, $primary-color, 25%);
   }
 }
 
@@ -47,8 +48,13 @@
     animation-delay: 0.15s;
 
     @include breakpoint($x-large) {
-      max-width: $x-large;
+      max-width: $max-width;
     }
+
+  }
+
+  &__form {
+    background-color: transparent;
   }
 
   .search-input {
@@ -114,12 +120,13 @@
 }
 
 .archive__item-title .ais-Highlight {
-  color: $link-color;
+  color: $primary-color;
   font-style: normal;
   text-decoration: underline;
 }
+
 .archive__item-excerpt .ais-Highlight {
-  color: $link-color;
+  color: $primary-color;
   font-style: normal;
   font-weight: bold;
 }
