@@ -45,3 +45,5 @@ public class RedisConfig {
 	}
 }
 ```
+
+<a id="prev" class="btn" href="/spring/spring-redis-save/">Spring boot + Redis 데이터 조회/저장</a>
