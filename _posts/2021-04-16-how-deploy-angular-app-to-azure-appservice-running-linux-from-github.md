@@ -1,6 +1,6 @@
 ---
 title: How to deploy Angular app to Azure App Service running Linux from GitHub
-date: 2020-10-04 16:12
+date: 2021-04-16 16:12
 author: nicold
 comments: false
 tags: [Azure, Linux, App Service, github, github action, angular, node, git, PM2, SPA, Single Page App]
@@ -55,7 +55,9 @@ ng serve
 
 The **ng serve** command should start a development server on your locahost port 4200, so if you go to your browser and enter the following url:
 
-**http://localhost:4200**
+```powershell
+http://localhost:4200
+```
 
 You should see in the browser the following page.
 
