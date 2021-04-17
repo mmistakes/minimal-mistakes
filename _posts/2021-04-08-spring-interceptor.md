@@ -20,6 +20,7 @@ public void addInterceptors(InterceptorRegistry registry) {
 
 ## HandlerInterceptorAdapter를 상속받아 Interceptor class를 생성한다.
 * preHandle는 Controller가 호출되기 이전에 실행
+response.sendRedirect 메소드를 통해 강제적으로 다른 경로로 이동시킬 수 있음
 * postHandle Controller가 실행된 이후에 호출
 
 ```java
