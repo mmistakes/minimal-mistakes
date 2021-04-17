@@ -7,25 +7,14 @@ permalink: /now/
 _This is the page, updated once a month, where I list what I'm currently up to. This idea has been largely inspired by [Derek Sivers](https://sive.rs/now) and I decided to do a new "now" page every month; the previous month's one will get posted as a post.
 The now page can get updates throughout the month, based on what I do/the progress, it's a living thing - until the next month._
 
-## Reading
+It's already April. It's a bit of a difficult period here, so I've not been as updatey as I would have liked, based on the fact that I am writing my now page for April today, and it's the 17th of April!
 
-I'm currently on a few things (as books):
-* Radical Candor - this is about management (of people) and it is being extremely helpful in various ways;
-* 15 million degrees - I found this randomly via Twitter and bought it; it had been a while that I read a good scipop book;
-* Radical Focus (all about the radicality this month) - this is the book that shared the OKR business system to the world, it's pretty good if you've never heard of this system
+## Data Science and Book Writing
 
-## Headspace
+I had launched a survey to my network to collect ideas and opinions for the book I'm writing about data science careers. It was a success, I think, given that so far I had 60 respondents (as of today) - way more than I'd have expected. Happy!
 
-Headspace is low. I am dealing with a few things that require thinking, so the bandwidth really is short.
+The book hasn't seen any progress in terms of written stuff, but I have had very many conversations with friends and colleagues, which have majorly helped me shape my thinking more. I've also got to know about the great [book](https://www.manning.com/books/build-a-career-in-data-science) by E Robinson and J Nolis on the same topic, so I want to obviously not repeat content. I still have to find a real lead for my book, and I've also been doing some reading on how to write well, so there is progress, conceptually. More on this soon - there's been much thinking on what data science means these days and where we think the field is going - I just really need to find the headspace to put this all down in a coherent narrative and to find a good focus for my writing.
 
-## Writing
+## Life!
 
-I am keeping up with my book about entering data science, but it's a bit stalled at the moment in terms of written content. This is due to a combination of the low headspace (as per above) and the fact that I am taking a step back and reflecting on what shape I want to give it. I'm also gathering info from people (I've launched a survey for this purpose and I am talking to a few friends), which is very useful. All in all, everyone I talk to tells me it's a great idea to write these ideas up.
-
-## Sport
-
-I resumed some running! I'm very proud - it was quite challenging given the fact that my cardio isn't at its best (I've been doing mostly strength/tone during this pandemic) but totally worth it.
-
-## Drawing and vizzing
-
-I've started a little project about vizzing the topic of "women in tech/science". The first viz, a simple one, has gone up.
+Bunch of things here, which I don't feel like writing up publicly, but there'll be developments soon. A lot of things (side projects I carry out) have been a bit stalled because of this.
