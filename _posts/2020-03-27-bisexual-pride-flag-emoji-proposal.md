@@ -7,6 +7,8 @@ header:
 ---
 **Update 11/20: Sign the [petition](https://change.org/BiFlagEmoji)!**
 
+**Update April 2021: checkout our [#MorePrideEmojis](https://moreprideemojis.com) campaign!**
+
 On February 3, I submitted the first proposal for the Bisexual Pride Flag Emoji. During this time, I was also consulting with friends and the pioneers behind the [transgender flag emoji](https://www.tedeytan.com/transemoji). Based upon the feedback I received, I resubmitted an updated proposal on February 5. On February 11, I noticed the proposal listed on the Unicode Requests page. [Here]({{site.url}}/assets/documents/Proposal_For_Bisexual_Flag_Emoji.pdf) is the latest version of the proposal.
 
 Despite emoji being a universal language used everyday by people all around the world, a handful of people in San Francisco at the Unicode Consortium decide the fate of new emojis. The Unicode Emoji Subcommittee accepts proposals for new emoji based upon criteria like is the emoji distinguishable at its small size, does the emoji contribute to the conversation, and will a large amount of people likely use the new emoji. They have a [template](https://unicode.org/emoji/proposals.html#emoji_proposals_form) for submitting a proposal, and each point is addressed in the proposal I submitted. 
