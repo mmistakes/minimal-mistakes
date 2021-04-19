@@ -23,11 +23,11 @@ main:
   - title: "Getting Started"
     url: https://smqtk.readthedocs.io/en/latest/
   - title: "Capabilities"
-    url: /categories/
+    url: /tags/
   - title: "About"
     url: /about/
   - title: "Contact Us"
-    url: /collection-archive/
+    url: /contact-us/
 
 # sidebar navigation list sample
 sidebar-sample:

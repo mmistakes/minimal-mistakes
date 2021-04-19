@@ -7,7 +7,7 @@ header:
   overlay_image: /assets/images/mm-home-page-feature.jpg
   actions:
     - label: "<i class='fas fa-download'></i> Install now"
-      url: "/docs/quick-start-guide/"
+      url: "https://smqtk.readthedocs.io/en/latest/installation.html"
 excerpt: >
   An open source, explainable AI toolkit built for analytics and autonomy applications.<br />
   <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.22.0">Latest release v4.22.0</a></small>
