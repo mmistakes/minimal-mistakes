@@ -172,14 +172,14 @@ defaults:
       path: ""
       type: tags
     values:
-      author_profile: true
+      author_profile: false
   # _posts
   - scope:
       path: ""
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: true
       share: true
@@ -190,19 +190,14 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: true
+      author_profile: false
   # _docs
   - scope:
       path: ""
       type: docs
     values:
       layout: single
-      read_time: false
       author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "docs"
 
 # Sass/SCSS
 sass:

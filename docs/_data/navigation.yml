@@ -23,7 +23,9 @@ main:
   - title: "Getting Started"
     url: https://smqtk.readthedocs.io/en/latest/
   - title: "Capabilities"
-    url: /tags/
+    url: /capabilities/
+  - title: "Contribute"
+    url: /contribute/
   - title: "About"
     url: /about/
   - title: "Contact Us"

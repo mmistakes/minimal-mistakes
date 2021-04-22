@@ -3,36 +3,36 @@ layout: splash
 permalink: /
 hidden: true
 header:
-  overlay_color: "#5e616c"
-  overlay_image: /assets/images/mm-home-page-feature.jpg
+  overlay_color: "#3abca0"
   actions:
     - label: "<i class='fas fa-download'></i> Install now"
       url: "https://smqtk.readthedocs.io/en/latest/installation.html"
 excerpt: >
   An open source, explainable AI toolkit built for analytics and autonomy applications.<br />
-  <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.22.0">Latest release v4.22.0</a></small>
+  <small><a href="https://github.com/XAITK/">Latest release v0.1</a></small>
 feature_row:
-  - image_path: /assets/images/mm-customizable-feature.png
+  - image_path: /assets/images/graphic-arrow-svgrepo-com.png
     alt: "customizable"
     title: "Analytics"
     excerpt: "Algorithms that process data including saliency."
     url: "/docs/configuration/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/mm-responsive-feature.png
+  - image_path: /assets/images/Robot.svg.png
     alt: "fully responsive"
     title: "Autonomy"
     excerpt: "Algorithms that process data into actions including deep RL"
     url: "/docs/layouts/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/mm-free-feature.png
+  - image_path: /assets/images/open-source-icon.png
     alt: "100% free"
     title: "100% free"
-    excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it... whatever!"
+    excerpt: "Free to use however you want under the Placeholder License."
     url: "/docs/license/"
     btn_class: "btn--primary"
     btn_label: "Learn more"      
 ---
 
+The Explainable AI Toolkit (XAITK) contains a variety of techniques to help users, developers, and researchers understand complex machine learning models. The toolkit combines a searchable repository of independent contributions and a more integrated, common software framework. The toolkit was developed under the [Defense Advanced Research Projects Agency (DARPA) Explainable Artificial Intelligence (XAI) program](https://www.darpa.mil/program/explainable-artificial-intelligence).
 {% include feature_row %}
