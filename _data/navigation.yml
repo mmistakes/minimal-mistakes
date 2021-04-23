@@ -1,7 +1,11 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Categories"
+    url: https://ss-hj.github.io/categories/
+  - title: "Tags"
+    url: https://ss-hj.github.io/tags/ 
+  - title: "Posts"
+    url: https://ss-hj.github.io/posts/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
