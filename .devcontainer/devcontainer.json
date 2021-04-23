@@ -47,7 +47,15 @@
 		"dedsec727.jekyll-run",
 		"ginfuru.ginfuru-vscode-jekyll-syntax",
 		"ritwickdey.liveserver",
-		"ms-vscode-remote.remote-containers"
+		"ms-vscode-remote.remote-containers",
+		"dart-code.dart-code",
+		"ms-azuretools.vscode-docker",
+		"dart-code.flutter",
+		"eliostruyf.vscode-front-matter",
+		"abusaidm.html-snippets",
+		"ms-vscode-remote.remote-wsl",
+		"cweijan.vscode-ssh",
+		"rebornix.ruby"
 	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
