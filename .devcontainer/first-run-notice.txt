@@ -1,0 +1,10 @@
+👋 Welcome to Codespaces! You are on our default image. It includes runtimes and tools for: 
+   - Python 
+   - Node.js
+   - Docker
+   - And more! To see the full list, go here: https://aka.ms/ghcs-default-image
+
+🔍 To explore VS Code to its fullest, search using the Command Palette (Cmd/Ctrl + Shift + P or F1).
+
+📝 Edit away, run your app as usual, and we'll automatically make it available for you to access.
+
