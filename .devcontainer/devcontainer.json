@@ -46,7 +46,8 @@
 		"ecmel.vscode-html-css",
 		"dedsec727.jekyll-run",
 		"ginfuru.ginfuru-vscode-jekyll-syntax",
-		"ritwickdey.liveserver"
+		"ritwickdey.liveserver",
+		"ms-vscode-remote.remote-containers"
 	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
