@@ -1,11 +1,11 @@
 # main links
 main:
+  - title: "About"
+    url: /about/ 
   - title: "Categories"
-    url: https://ss-hj.github.io/categories/
-  - title: "Tags"
-    url: https://ss-hj.github.io/tags/ 
+    url: /categories/
   - title: "Posts"
-    url: https://ss-hj.github.io/posts/
+    url: /posts/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
