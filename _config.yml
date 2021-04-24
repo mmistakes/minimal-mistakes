@@ -42,7 +42,7 @@ comments:
     colorscheme          : # "light" (default), "dark"
   utterances:
     theme                :  "github-dark-orange"  #"github-light" (default), "github-dark"
-    issue_term           :  "pathname" (default)
+    issue_term           :  "pathname" #(default)
   staticman:
     branch               : # "master"
     endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
