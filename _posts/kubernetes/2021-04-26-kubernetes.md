@@ -85,13 +85,13 @@ NetworkPolicy는 Inbound, Outbound에 대한 트래픽 제한을 설정한다. �
 노트 정리 이미지
 ![](https://i.ibb.co/mCsMZmZ/Kubernetes-210425-233021-1.jpg)
 ![](https://i.ibb.co/qmrYJ6z/Kubernetes-210425-233021-2.jpg)
-![]()
-![]()
-![]()
-![]()
-![]()
-![]()
+![](https://i.ibb.co/WkmskXB/Kubernetes-210425-233021-3.jpg)
+![](https://i.ibb.co/PGQYhc6/Kubernetes-210425-233021-4.jpg)
+![](https://i.ibb.co/j3wQtTf/Kubernetes-210425-233021-5.jpg)
+![](https://i.ibb.co/vh2Fjvd/Kubernetes-210425-233021-6.jpg)
+![](https://i.ibb.co/YbjBMhH/Kubernetes-210425-233021-7.jpg)
+![](https://i.ibb.co/ZVTrP1D/Kubernetes-210425-233021-8.jpg)
 ![]()
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjMyOTExNjczXX0=
+eyJoaXN0b3J5IjpbLTgzNDE0MzE4M119
 -->
