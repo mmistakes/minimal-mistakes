@@ -1,19 +1,13 @@
 ---
-title: domain 관련 용어 및 흐름 정리
-excerpt: domain의 뜻과 관련된 용어 정리, 어떤 흐름으로 도메인이 이용되는지를 정리해본다.
+title: \[k8s] 쿠버네티스 정리
+excerpt: k8s에 대해서 간략하게 어떻게 동작하는지 정리한다.
 
 categories: 
-   - domain
+   - k8s
 
 tags:
-   - IaC
-   - Infrastructure as Code
    - k8s
-   - kubernetes
-   - ingress
-   - sub domain
-   - domain
-   - end point
+   - kube
 
 author_profile: true #작성자 프로필 출력여부
 read_time: true # read_time을 출력할지 여부 1min read 같은것!
@@ -86,12 +80,10 @@ NetworkPolicy는 Inbound, Outbound에 대한 트래픽 제한을 설정한다. �
 ![](https://i.ibb.co/mCsMZmZ/Kubernetes-210425-233021-1.jpg)
 ![](https://i.ibb.co/qmrYJ6z/Kubernetes-210425-233021-2.jpg)
 ![](https://i.ibb.co/WkmskXB/Kubernetes-210425-233021-3.jpg)
-![](https://i.ibb.co/PGQYhc6/Kubernetes-210425-233021-4.jpg)
 ![](https://i.ibb.co/j3wQtTf/Kubernetes-210425-233021-5.jpg)
 ![](https://i.ibb.co/vh2Fjvd/Kubernetes-210425-233021-6.jpg)
 ![](https://i.ibb.co/YbjBMhH/Kubernetes-210425-233021-7.jpg)
 ![](https://i.ibb.co/ZVTrP1D/Kubernetes-210425-233021-8.jpg)
-![]()
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzNDE0MzE4M119
+eyJoaXN0b3J5IjpbMTcwODc2NDI3OV19
 -->
