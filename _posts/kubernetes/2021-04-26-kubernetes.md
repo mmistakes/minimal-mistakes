@@ -7,7 +7,10 @@ categories:
 
 tags:
    - k8s
-   - kube
+   - kubernetes
+   - service
+   - replica set
+   - deployment
 
 author_profile: true #작성자 프로필 출력여부
 read_time: true # read_time을 출력할지 여부 1min read 같은것!
@@ -17,7 +20,7 @@ toc_label: "My Table of Contents" # toc 이름 정의
 toc_icon: "cog" # font Awesome아이콘으로 toc 아이콘 설정 
 toc_sticky: true # 스크롤 내릴때 같이 내려가는 목차
 
-last_modified_at: 2021-04-12T17:02:00 # 마지막 변경일
+last_modified_at: 2021-04-26T00:55:00 # 마지막 변경일
 
 ---
 
@@ -85,5 +88,5 @@ NetworkPolicy는 Inbound, Outbound에 대한 트래픽 제한을 설정한다. �
 ![](https://i.ibb.co/YbjBMhH/Kubernetes-210425-233021-7.jpg)
 ![](https://i.ibb.co/ZVTrP1D/Kubernetes-210425-233021-8.jpg)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwODc2NDI3OV19
+eyJoaXN0b3J5IjpbLTEyMjQ2ODgxNjhdfQ==
 -->
