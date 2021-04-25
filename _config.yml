@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes@4.22.0"
-minimal_mistakes_skin    : "dark"
+minimal_mistakes_skin    : "air"
 
 # Site Settings
 locale                   : "en-US"
@@ -95,7 +95,7 @@ analytics:
 # Site Author
 author:
   name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/avatar_of_Alexandr_Verevkin_designed_by_Olya_Nayda.jpg"
   bio              : "I am an **amazing** person."
   location         : "Somewhere"
   email            :
