@@ -1,6 +1,6 @@
 ---
 title: \[k8s] 쿠버네티스 정리
-excerpt: k8s에 대해서 간략하게 어떻게 동작하는지 정리한다.
+excerpt: k8s가 어떻게 구성되어 있고 동작 방식에 대해서 이해하기 쉽게 정리한다.
 
 categories: 
    - k8s
@@ -88,5 +88,5 @@ NetworkPolicy는 Inbound, Outbound에 대한 트래픽 제한을 설정한다. �
 ![](https://i.ibb.co/YbjBMhH/Kubernetes-210425-233021-7.jpg)
 ![](https://i.ibb.co/ZVTrP1D/Kubernetes-210425-233021-8.jpg)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjQ2ODgxNjhdfQ==
+eyJoaXN0b3J5IjpbLTEwODAxOTg0MzNdfQ==
 -->
