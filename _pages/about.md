@@ -6,5 +6,4 @@ comments: true
 author_profile: true
 ---
 
-
-I am Vittesh Arora.
+Will be up soon
