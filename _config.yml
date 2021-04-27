@@ -95,7 +95,7 @@ analytics:
 # Site Author
 author:
   name             : "Vittesh Arora"
-  avatar           : "/others/Vittesh_Arora.png"# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/others/Vittesh_Arora.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Carpe Diem"
   location         : "Somewhere in India"
   email            :
