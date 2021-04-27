@@ -6,5 +6,5 @@ comments: true
 author_profile: true
 ---
 
-Will be up soon
+Will be up soon.
 
