@@ -254,9 +254,10 @@ tag_archive:
 #   layouts:
 #     category: archive-taxonomy
 #     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
+    about: /about/
 
 
 # HTML Compression
