@@ -211,37 +211,6 @@ permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-navbar-links:
-  - title: Home
-    href:  /
-  - title: Academic
-    subcategories:
-    - title: Math
-      href: /math/
-    - title: Notes
-      href:  /notes/
-  - title: Tutorials
-    href: /tuts/
-    subcategories:
-    - title: MA 105
-      href:  /tuts/ma-105/
-    - title: MA 106
-      href:  /tuts/ma-106-2021/
-    - title: MA 108
-      href:  /tuts/ma-108/
-    - title: MA 109
-      href:  /tuts/ma-109/
-    - title: MA 205
-      href: /tuts/ma-205/
-  - title: More
-    subcategories:
-    - title: Courses
-      href:  /aboutme/courses/
-    - title: Blog
-      href:  /blog/
-  - title: About Me
-    href:  /aboutme/
-
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
