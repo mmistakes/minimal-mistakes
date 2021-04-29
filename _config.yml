@@ -29,6 +29,7 @@ logo                     : "https://i.imgur.com/iRTE6RT.png" #"assets/image/logo
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
+g-analytics: 195913640
 comments:
   provider               : disqus
   disqus:
