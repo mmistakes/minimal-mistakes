@@ -12,6 +12,6 @@ Often the hardest part of leveraging explainable artificial intelligence for a p
 
 Click on any estimator in the chart below to see its documentation.
 
-![Capabilities](/assets/images/ml_map.png)
+![Capabilities](/assets/kitware/images/ml_map.png)
 
 # Tags

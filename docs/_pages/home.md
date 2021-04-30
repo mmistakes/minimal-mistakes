@@ -11,21 +11,21 @@ excerpt: >
   An open source, explainable AI toolkit built for analytics and autonomy applications.<br />
   <small><a href="https://github.com/XAITK/">Latest release v0.1</a></small>
 feature_row:
-  - image_path: /assets/images/graphic-arrow-svgrepo-com.png
+  - image_path: /assets/kitware/images/graphic-arrow-svgrepo-com.png
     alt: "customizable"
     title: "Analytics"
     excerpt: "Algorithms that process data including saliency."
     url: "/docs/configuration/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/Robot.svg.png
+  - image_path: /assets/kitware/images/Robot.svg.png
     alt: "fully responsive"
     title: "Autonomy"
     excerpt: "Algorithms that process data into actions including deep RL"
     url: "/docs/layouts/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/open-source-icon.png
+  - image_path: /assets/kitware/images/open-source-icon.png
     alt: "100% free"
     title: "100% free"
     excerpt: "Free to use however you want under the Placeholder License."

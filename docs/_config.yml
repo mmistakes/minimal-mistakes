@@ -87,7 +87,7 @@ analytics:
 # Site Author
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
-  avatar           : "/assets/images/kitware-logo.png"
+  avatar           : "/assets/kitware/images/kitware-logo.png"
   bio              : ""
   location         : "Clifton Park, NY"
   links:
