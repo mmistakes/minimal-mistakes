@@ -28,6 +28,8 @@ git checkout -b dev/add-fakesal-description
     tags: 
       - Saliency
       - Computer Vision
+      - Analytic
+      - Debugging
     submission_details:
       resource_pointer: https://github.com/XAITK/xaitk-saliency
 
