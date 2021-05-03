@@ -1,0 +1,18 @@
+---
+title: "Gallery"
+layout: single
+permalink: /gallery/
+author_profile: true
+comments: true
+gallery:
+  - url: /pics/gallery/Udaipur_LP1.jpeg
+    image_path: /pics/gallery/Udaipur_LP1.jpeg
+    title: "Lake Pichola, Udaipur"
+  - url: /pics/gallery/yale_lib.jpg
+    image_path: /pics/gallery/yale_lib.jpg
+    title: "Yale Beinecke Rare Book Library"
+  - url: /pics/gallery/eastrock.jpg
+    image_path: /pics/gallery/eastrock.jpg
+    title: "Mountain top of East Rock"
+
+{% include gallery caption="**“Photography is a love affair with life.” - Burk Uzzle**" %}
