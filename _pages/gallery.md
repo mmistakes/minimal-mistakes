@@ -8,9 +8,9 @@ gallery:
   - url: /pics/gallery/Udaipur_LP1.jpeg
     image_path: /pics/gallery/Udaipur_LP1.jpeg
     title: "Lake Pichola, Udaipur"
-  - url: /pics/gallery/yale_lib.jpg
-    image_path: /pics/gallery/yale_lib.jpg
-    title: "Yale Beinecke Rare Book Library"
+  - url: /pics/gallery/Udaipur_GB.jpeg
+    image_path: /pics/gallery/Udaipur_GB.jpeg
+    title: "Rose Garden, Udaipur"
   - url: /pics/gallery/eastrock.jpg
     image_path: /pics/gallery/eastrock.jpg
     title: "Mountain top of East Rock"
