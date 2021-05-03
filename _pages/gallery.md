@@ -1,6 +1,6 @@
 ---
 title: "Gallery"
-sub_title: "“Photography is a love affair with life.” - Burk Uzzle"
+sub-title: "“Photography is a love affair with life.” - Burk Uzzle"
 layout: single
 permalink: /gallery/
 author_profile: true
