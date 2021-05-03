@@ -19,4 +19,5 @@ gallery:
 
 Photography is a love affair with life. - Burk Uzzle
 
+
 {% include gallery caption="** **" %}
