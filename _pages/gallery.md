@@ -16,4 +16,5 @@ gallery:
     title: "Mountain top of East Rock"
 ---
 “Photography is a love affair with life.” - Burk Uzzle
+
 {% include gallery caption="** **" %}
