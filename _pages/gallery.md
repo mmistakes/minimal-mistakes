@@ -1,5 +1,6 @@
 ---
 title: "Gallery"
+sub_title: "“Photography is a love affair with life.” - Burk Uzzle"
 layout: single
 permalink: /gallery/
 author_profile: true
@@ -16,6 +17,5 @@ gallery:
     title: "Mountain top of East Rock"
 ---
 
-{% include gallery caption="**Yale University**" %}
-{% include gallery id="gallery2" caption="**Trips**" %}
-{% include gallery id="gallery3" caption="**Miscellaneous**" %}
+{% include gallery caption="**“Photography is a love affair with life.”
+Burk Uzzle**" %}
