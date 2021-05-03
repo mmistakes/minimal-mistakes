@@ -1,6 +1,6 @@
 ---
 title: "Gallery"
-layout: single
+layout: multiverse
 permalink: /gallery/
 author_profile: true
 comments: true
