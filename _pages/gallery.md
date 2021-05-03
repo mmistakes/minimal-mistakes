@@ -14,5 +14,8 @@ gallery:
   - url: /pics/gallery/eastrock.jpg
     image_path: /pics/gallery/eastrock.jpg
     title: "Mountain top of East Rock"
+---
 
-{% include gallery caption="**“Photography is a love affair with life.” - Burk Uzzle**" %}
+{% include gallery caption="**Yale University**" %}
+{% include gallery id="gallery2" caption="**Trips**" %}
+{% include gallery id="gallery3" caption="**Miscellaneous**" %}
