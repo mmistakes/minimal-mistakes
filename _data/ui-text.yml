@@ -101,8 +101,7 @@ es: &DEFAULT_ES
   comment_form_website_label : "Sitio web (opcional)"
   comment_btn_submit         : "Enviar comentario"
   comment_btn_submitted      : "Enviado"
-  comment_success_msg        : "¡Gracias por tu comentario! Se publicará una vez sea aprobado."
-  comment_error_msg          : "Ha ocurrido un error al enviar el comentario. Asegúrate de completar todos los campos obligatorios e inténtalo de nuevo."
+  comment_success_msg        : "¡Gracias por tu comentario! Se publicará una vez sea aprobado."  comment_error_msg          : "Ha ocurrido un error al enviar el comentario. Asegúrate de completar todos los campos obligatorios e inténtalo de nuevo."
   loading_label              : "Cargando..."
   search_label_text          : "Términos de búsqueda..."
   search_placeholder_text    : "Términos de búsqueda..."
@@ -1904,6 +1903,59 @@ he: &DEFAULT_HE
   back_to_top                : "חזרה להתחלה"
 he-IL:
   <<: *DEFAULT_HE
+  
+# Galego - Galician
+# -------
+gl: &DEFAULT_GL
+  skip_links                 : "Omitir ligazóns"
+  skip_primary_nav           : "Omitir menú principal"
+  skip_content               : "Omitir contido"
+  skip_footer                : "Omitir pé de páxina"
+  page                       : "Páxina"
+  pagination_previous        : "Anterior"
+  pagination_next            : "Seguinte"
+  breadcrumb_home_label      : "Inicio"
+  breadcrumb_separator       : "/"
+  menu_label                 : "Activar menú"
+  search_label               : "Activar busca"
+  toc_label                  : "Nesta página"
+  ext_link_label             : "Ligazón directa"
+  less_than                  : "menos de"
+  minute_read                : "minuto(s) de lectura"
+  share_on_label             : "Compartir en"
+  meta_label                 :
+  tags_label                 : "Etiquetas:"
+  categories_label           : "Categorías:"
+  date_label                 : "Actualizado:"
+  comments_label             : "Deixa un comentario"
+  comments_title             : "Comentarios"
+  more_label                 : "Ler máis"
+  related_label              : "Pode ser do teu interese"
+  follow_label               : "Seguir:"
+  feed_label                 : "Fonte"
+  powered_by                 : "Grazas a"
+  website_label              : "Sitio web"
+  email_label                : "Email"
+  recent_posts               : "Artigos recentes"
+  undefined_wpm              : "O parámetro words_per_minute (palabras por minuto) non está definido en _config.yml"
+  comment_form_info          : "A dirección de email non será publicada. Os campos obrigatorios están marcados"
+  comment_form_comment_label : "Comentario"
+  comment_form_md_info       : "Podes utilizar Markdown"
+  comment_form_name_label    : "Nome"
+  comment_form_email_label   : "Dirección de correo electrónico"
+  comment_form_website_label : "Sitio web (optativo)"
+  comment_btn_submit         : "Enviar comentario"
+  comment_btn_submitted      : "Enviado"
+  comment_success_msg        : "¡Grazas polo teu comentario! Será publicado unha vez comprobado."
+  comment_error_msg          : "Aconteceu un erro ao enviar o comentario. Pon tino en completar tódolos campos obrigatorios e volve a intentalo."
+  loading_label              : "Cargando..."
+  search_label_text          : "Termos de busca..."
+  search_placeholder_text    : "Termos de busca..."
+  search_algolia_no_results  :
+  results_found              : "resultado(s) atopado(s)"
+  back_to_top                : "Volver arriba"
+es-GL:
+  <<: *DEFAULT_GL
 
 # Another locale
 # --------------
