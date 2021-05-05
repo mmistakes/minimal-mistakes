@@ -6,5 +6,3 @@ author_profile: false
 sidebar:
   nav: "mainMenu"
 ---
-
-Career Page
