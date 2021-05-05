@@ -8,15 +8,19 @@ mainMenu:
       - title: "Boost"
         url: /categories/boost
       - title: "Effective C++ Programming"
-        url: ""
+        url: /categories/effectcpp
     - title: Python
       children:
       - title: "Effective Python 2nd"
+        url: /categories/effectivepy
     - title: Machine Learning
       children:
         - title: "Basic"
+          url: /categories/mlbasic
         - title: "Kaggle"
+          url: /categories/mlkaggle
         - title: "Paper"
+          url: /categories/mlpaper
     - title: algorithm
     - title: LINUX
     - title: Computer Science
