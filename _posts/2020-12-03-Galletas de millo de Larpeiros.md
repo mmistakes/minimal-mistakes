@@ -6,7 +6,7 @@ comments:
   fediusername: xosem
   fediid: 106158589675457766
 date: 2020-12-03 20:00:00
-layout: post
+layout: single
 navigation: true
 categories:
 - cociñeira

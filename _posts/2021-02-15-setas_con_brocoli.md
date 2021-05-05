@@ -84,6 +84,6 @@ Neste caso utilizamos brócoli, pero serve como acompañamento para outros alime
 
 ## Resultado
 
-![presentación](38845)
+![presentación](assets/images/brocoli_cogumelos.jpg)
 
 *A comer!*
