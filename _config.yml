@@ -95,8 +95,8 @@ analytics:
 # Site Author
 author:
   name             : "Kyungmin Kim"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  avatar           : "/assets/posts/kyungmin.kim2.png"
+  bio              : "Life is beasutiful!"
   location         : "Tokyo, Japan"
   email            : "kkm0919@gmail.com"
   links:
