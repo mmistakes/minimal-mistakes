@@ -1,12 +1,22 @@
-# main links
 main:
-  # - title: "Quick-Start Guide"
-  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+    - title: "Career"
+      url: "/Career/"
+  
+mainMenu:
+    - title: C++
+      children:
+      - title: "Boost"
+        url: /categories/boost
+      - title: "Effective C++ Programming"
+        url: ""
+    - title: Python
+      children:
+      - title: "Effective Python 2nd"
+    - title: Machine Learning
+      children:
+        - title: "Basic"
+        - title: "Kaggle"
+        - title: "Paper"
+    - title: algorithm
+    - title: LINUX
+    - title: Computer Science
