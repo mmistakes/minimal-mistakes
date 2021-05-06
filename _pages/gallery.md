@@ -22,7 +22,7 @@ div.gallery img {
   float:left;
   object-fit: cover;
 }
-div.page__content{
+div.page__inner-wrap{
   width:800px;
 }
 div.desc {
