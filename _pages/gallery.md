@@ -4,33 +4,7 @@ layout: single
 permalink: /gallery/
 author_profile: false
 comments: true
-gallery:
-  - url: /pics/gallery/Udaipur_LP1.jpeg
-    image_path: /pics/gallery/Udaipur_LP1.jpeg
-    title: "Lake Pichola, Udaipur"
-  - url: /pics/gallery/Udaipur_GB1.jpeg
-    image_path: /pics/gallery/Udaipur_GB1.jpeg
-    title: "Rose Garden, Udaipur"
-    
-  - url: /pics/gallery/GymkhanaIITB.jpeg
-    image_path: /pics/gallery/GymkhanaIITB.jpeg
-    title: "Gymkhana Grounds, IIT Bombay"
-  - url: /pics/gallery/Udaipur_GB1.jpeg
-    image_path: /pics/gallery/Udaipur_GB1.jpeg
-    title: "Rose Garden, Udaipur"
-    
-  - url: /pics/gallery/Udaipur_LP1.jpeg
-    image_path: /pics/gallery/Udaipur_LP1.jpeg
-    title: "Lake Pichola, Udaipur"
-  - url: /pics/gallery/Udaipur_GB1.jpeg
-    image_path: /pics/gallery/Udaipur_GB1.jpeg
-    title: "Rose Garden, Udaipur"
-    
-  - url: /pics/gallery/eastrock.jpg
-    image_path: /pics/gallery/eastrock.jpg
-    title: "Mountain top of East Rock"
 ---
-The images below
 <style type='text/css'>
 div.gallery {
   margin: 5px;
@@ -70,7 +44,6 @@ div.desc {
   <a target="_blank" href="img_lights.jpg">
     <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
   </a>
-  <div class="desc">Add a description of the image here</div>
 </div>
 
 <div class="gallery">
