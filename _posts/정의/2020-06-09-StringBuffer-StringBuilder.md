@@ -106,7 +106,7 @@ new Thread(() -> {
 결과: 
     StringBuffer.length: 77780
     StringBuilder.length: 76412
-```👨‍💻
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExNTQxNDY4MCw5OTg5OTcyNDRdfQ==
+eyJoaXN0b3J5IjpbOTk4OTk3MjQ0LDk5ODk5NzI0NF19
 -->
