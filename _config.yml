@@ -16,14 +16,14 @@ minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Dev Blog"
+title                    : "흐린 잉크가 탁월한 기억력을 이긴다"
 title_separator          : "-"
 subtitle                 : !
 name                     : "Seonjae Choi"
-description              : "신입 개발자 개발 일기 !"
+description              : "서버 엔지니어"
 url                      : "https://choiseonjae.github.io/" # https://choiseonjae.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "choiseonjae/choiseonjae.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "" #"choiseonjae/choiseonjae.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "https://i.imgur.com/iRTE6RT.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "https://i.imgur.com/iRTE6RT.png" #"assets/image/logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -111,13 +111,13 @@ analytics:
 author:
   name             : "Seonjae Choi"
   avatar           : "https://user-images.githubusercontent.com/49507736/83961431-f3c8b300-a8cd-11ea-8183-24d64c0ba27a.jpg" # profile picture
-  bio              : "신입 개발자 개발 일기" # comment
+  bio              : "둔필승총" # comment
   location         : "Seong Nam, South Korea"
   email            : "adultstart13@gmail.com"
-  home             : "https://choiseonjae.github.io" # null (default), "absolute or relative url to link to author home"
-  facebook         : "choisunjae" # facebook id
-  github           : "choiseonjae"
-  linkedin         : "homesking" # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+#   home             : "" # "https://choiseonjae.github.io" # null (default), "absolute or relative url to link to author home"
+#   facebook         : "" #"choisunjae" # facebook id
+#   github           : "" # "choiseonjae"
+#   linkedin         : "homesking" # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
 
 # Site Footer # 맨 밑에 다는 
 footer:
