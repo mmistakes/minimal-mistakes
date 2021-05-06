@@ -15,14 +15,14 @@ feature_row:
     alt: "customizable"
     title: "Analytics"
     excerpt: "Algorithms that process data including saliency."
-    url: "/docs/configuration/"
+    url: "/capabilities/#analytics/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/kitware/images/Robot.svg.png
     alt: "fully responsive"
     title: "Autonomy"
     excerpt: "Algorithms that process data into actions including deep RL"
-    url: "/docs/layouts/"
+    url: "/capabilities/#autonomy/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/kitware/images/open-source-icon.png

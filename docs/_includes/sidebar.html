@@ -16,13 +16,30 @@
     {% endif %}
   {% endif %}
   {% if page.submission_details %}
-    {% if page.submission_details.resource_pointer %}
-      <a href="{{ page.submission_details.resource_pointer }}">Go to resource</a>
-    {% endif %}
     <div>
     {% if page.submission_details.version %}<p style="margin: 0;">Version: {{page.submission_details.version}}</p>{% endif %}
     {% if page.submission_details.size %}<p style="margin: 0;">Size: {{page.submission_details.size}}</p>{% endif %}
     </div>
+
+    <!-- Tags -->
+    {% if page.tags %}
+    <h3>Tags</h3>
+    <ul>
+    {% for tag in page.tags %}
+    <li><a href="/capabilities/#{{ tag | slugify }}">{{tag}}</a></li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+
+    <!-- Resources -->
+    {% for resource in page.submission_details.resources %}
+      <h3>{{ resource[0] | capitalize }}</h3>
+      <ul>
+      {% for url in resource[1] %}
+        <li><a href="{{ url }}">{{ url }}</a></li>
+      {% endfor %}
+      </ul>
+    {% endfor %}
 
     <!-- Author Details   -->
     {% if page.submission_details.authors %}<h3>Author(s)</h3>{% endif %}

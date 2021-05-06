@@ -176,10 +176,6 @@ defaults:
       layout: single
       classes: wide
       author_profile: false 
-      # read_time: true
-      comments: true
-      share: true
-      related: true
   # _pages
   - scope:
       path: "_pages"
