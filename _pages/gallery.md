@@ -5,6 +5,8 @@ permalink: /gallery/
 author_profile: true
 comments: true
 gallery:
+   <img src="/pics/gallery/Udaipur_LP1.jpeg" width=300 align=right>
+
   - url: /pics/gallery/Udaipur_LP1.jpeg
     image_path: /pics/gallery/Udaipur_LP1.jpeg
     image_width: 200px
