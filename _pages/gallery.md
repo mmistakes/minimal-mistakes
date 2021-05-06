@@ -1,6 +1,6 @@
 ---
 title: "Gallery"
-layout: single
+layout: wide
 permalink: /gallery/
 author_profile: false
 comments: true
