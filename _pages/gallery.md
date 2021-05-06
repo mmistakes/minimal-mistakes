@@ -1,6 +1,6 @@
 ---
 title: "Gallery"
-layout: wide
+layout: single
 permalink: /gallery/
 author_profile: false
 comments: true
@@ -31,6 +31,30 @@ gallery:
     title: "Mountain top of East Rock"
 ---
 <h3>Photography is a love affair with life. - Burk Uzzle</h3>
+
+<style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+
 
 <div class="gallery">
   <a target="_blank" href="/pics/gallery/Udaipur_LP1.jpeg">
