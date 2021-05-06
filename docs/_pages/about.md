@@ -11,6 +11,14 @@ The Explainable AI Toolkit (XAITK) contains a variety of techniques to help user
 ![Levels of Integration](/assets/kitware/images/xai-levels-of-integration.png)
 
 ## Notable Features
-
-- Saliency maps
-- Active learning tools
+  - [Analytics](/capabilities/#analytics)
+  - [Autonomy](/capabilities/#autonomy)
+  - [Computer Vision](/capabilities/#computer-vision)
+  - [Natural Language Processing](/capabilities/#natural-language-processing)
+  - [Reinforcement Learning](/capabilities/#reinforcement-learning)
+  - [Visual Question Answering (VQA)](/capabilities/#visual-question-answering-vqa)
+  - [Human-Machine Teaming](/capabilities/#human-machine-teaming)
+  - [Saliency](/capabilities/#saliency)
+  - [Data Poisoning](/capabilities/#data-poisoning)
+  - [Medical](/capabilities/#medical)
+  - [Explanation Framework](/capabilities/#explanation-framework)
