@@ -30,19 +30,19 @@ div.desc {
 </style>
 <div class="gallery">
   <a target="_blank" href="/pics/gallery/Udaipur_LP1.jpeg">
-    <img src="/pics/gallery/Udaipur_LP1.jpeg" alt="Cinque Terre" width="600" height="600">
+    <img src="/pics/gallery/Udaipur_LP1.jpeg" alt="Lake">
   </a>
 </div>
 
 <div class="gallery">
   <a target="_blank" href="/pics/gallery/Udaipur_GB1.jpeg">
-    <img src="/pics/gallery/Udaipur_GB1.jpeg" alt="Forest" width="600" height="400">
+    <img src="/pics/gallery/Udaipur_GB1.jpeg" alt="Garden">
   </a>
 </div>
 
 <div class="gallery">
-  <a target="_blank" href="img_lights.jpg">
-    <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+  <a target="_blank" href="/pics/gallery/GymkhanaIITB.jpeg">
+    <img src="/pics/gallery/GymkhanaIITB.jpeg" alt="Garden">
   </a>
 </div>
 
