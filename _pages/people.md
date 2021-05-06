@@ -50,15 +50,27 @@ I have a courtesy faculty appointment in the Department of Microbiology and Cell
 ## Alicia Foxx, PhD
 _PhD Northwestern University, 2020_
 
-Dr. Foxx is the USDA/ORISE Postdoctoral Fellow for the USDA  SCINet Scientific computing initiative. She has experience
-in plant ecology and will be working on dataset shift in machine learning and the application of Bayesian hierarchical
-classifiers to taxonomic assignment.
+Dr. Foxx is the USDA/ORISE Postdoctoral Fellow for the USDA  SCINet Scientific
+computing initiative. She has experience in plant ecology and will be working on
+dataset shift in machine learning and Seed microbiomes.
 
-![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/users.png){: .align-left}
-## Karla Franco Melendez
+![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/franco.jpg){: .align-left}
+## Karla Franco Melendez, PhD
 _PhD Arizona State University, 2020_
 
-Dr. Franco Melendez is an ARS Administrator Postdoctoral Associate working on the engineering of microbial consortia.
+Dr. Franco Melendez graduated in June 2020 from the Microbiology doctoral
+program Arizona State University. Her PhD dissertation centered in
+characterizing the effect of physiologically relevant fluid shear levels on the
+human enteric pathogen _Salmonella Typhimurium_. Specifically, she studied the
+effect of fluid shear on pathogenesis-related stress responses and changes in
+gene expression across different phases of growth. In July 2020, Dr. Franco
+Melendez joined the USDA-ARS as a post-doctoral fellow in bioinformatics, under
+the supervision of Dr. Adam Rivers. Her current position focuses on engineering
+soil microbial consortia with inhibitory phenotypes against the phytopathogen
+_Ralstonia solanacearum_ using new Bayesian optimization algorithms and deep
+learning methods. Additionally, she is currently performing a comparative
+analysis on the intestinal microbial community composition and antimicrobial
+profile of poultry specimens from the pre- and post-antibiotic eras.
 
 ![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/pp_ravin_150.jpg){: .align-left}
 ## Ravin Poudel, PhD
@@ -75,27 +87,31 @@ microbes in the future. He is also working on methods to model microbial
 communities using [amplicon sequencing, metabolomics, and Bayesian networks](/projects/Ralstonia_dynamic_bayesian/) in
 order to identify key microbial structures and functional signatures to support
 the selection of candidate taxa or microbial-consortia for microbiome-based crop
-productions.  
+productions.  More on his research is [here](https://ravinpoudel.github.io/).
 
 ![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/winders.jpeg){: .align-left}
 ## Jeremy Winders, PhD
-
 _PhD, Mississippi State University, 2019_
 
 Dr. Winders is working on a project to determine the sex of chicken eggs when they are laid by applying
 high-throughput Proton transfer reaction mass spectrometry (PTR-MS) and machine learning.   
 
 ![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/users.png){: .align-left}
-## Ryo (Leo) Iwata
+## Chris Gaby, PhD
+_PhD, University of Tennessee_
 
+Dr. Gaby is working on Large scale-comparative genomics in Salmonella and the
+application of Machine learning methods for genotype and phenotype prediction
+in Salmonella. He is also developing methods for investigating nitrogen fixation in sugar cane. More in his research is [here](https://chrisgaby.github.io/)
+
+
+# Staff
+
+![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/Leo_website_photo.jpg){: .align-left}
+## Ryo (Leo) Iwata
 _BS University of Florida, 2018_
 
-Leo is an analyst in the group working on the application of machine learning to bioinformatic workflows.
-
-
-![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/users.png){: .align-left}
-## Chris Gaby, PhD
-
+Leo is a Python based analyst that is creating bioinformatic workflows for machine learning and data processing. While assisting others with programming and high-performance computing in a research setting.
 
 
 # Former members
@@ -103,7 +119,6 @@ Leo is an analyst in the group working on the application of machine learning to
 
 ![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/aswarup.jpg){: .align-left}
 ## Anushka Swarup, MS
-
 _PhD Candidate, University of Florida_
 
 Anushka is a PhD student with Dr. Damon Woodard in the Electrical & Computer Engineering Department at the University
