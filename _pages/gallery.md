@@ -30,4 +30,33 @@ gallery:
     image_path: /pics/gallery/eastrock.jpg
     title: "Mountain top of East Rock"
 ---
+<link rel="stylesheet" type="text/css" media="all" href="/_sass/minimal-mistakes/gallery.css" />
+<div class="gallery">
+  <a target="_blank" href="/pics/gallery/Udaipur_GB1.jpeg">
+    <img src="/pics/gallery/Udaipur_GB1.jpeg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="/pics/gallery/Udaipur_GB1.jpeg">
+    <img src="/pics/gallery/Udaipur_GB1.jpeg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_lights.jpg">
+    <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
 {% include gallery caption="** **" %}
