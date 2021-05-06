@@ -17,7 +17,7 @@ gallery:
 ---
 <img src="/pics/gallery/Udaipur_LP1.jpeg"
      alt="Markdown Monster icon"
-     style="float: left; margin-right: 10px;" />
+     style="margin-right: 10px;" />
 Photography is a love affair with life. - Burk Uzzle
 
 {% include gallery caption="** **" %}
