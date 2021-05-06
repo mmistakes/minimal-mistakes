@@ -32,5 +32,5 @@ gallery:
 ---
 ![Alt Text](/pics/gallery/Udaipur_LP1.jpeg)
 Photography is a love affair with life. - Burk Uzzle
-<img src="/pics/gallery/Udaipur_LP1.jpeg" width="12em">
+<img src="/pics/gallery/Udaipur_LP1.jpeg" style="width:48px;height:48px;">
 {% include gallery caption="** **" %}
