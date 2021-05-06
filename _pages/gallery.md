@@ -22,7 +22,9 @@ div.gallery img {
   float:left;
   object-fit: cover;
 }
-
+div.page__content{
+  width:800px;
+}
 div.desc {
   padding: 15px;
   text-align: center;
