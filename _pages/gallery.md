@@ -47,7 +47,9 @@ div.gallery img {
   width: 100%;
   height: auto;
 }
-
+img{
+clip: rect(0px,600px,600px,0px);
+}
 div.desc {
   padding: 15px;
   text-align: center;
