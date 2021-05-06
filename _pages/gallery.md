@@ -30,6 +30,7 @@ gallery:
     image_path: /pics/gallery/eastrock.jpg
     title: "Mountain top of East Rock"
 ---
+The images
 <link rel="stylesheet" type="text/css" media="all" href="/_sass/minimal-mistakes/gallery.css" />
 <div class="gallery">
   <a target="_blank" href="/pics/gallery/Udaipur_GB1.jpeg">
