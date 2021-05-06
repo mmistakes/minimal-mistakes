@@ -34,7 +34,6 @@ The images below
 <style type='text/css'>
 div.gallery {
   margin: 5px;
-  border: 1px solid #ccc;
   float: left;
   width: 180px;
 }
@@ -44,9 +43,10 @@ div.gallery:hover {
 }
 
 div.gallery img {
-  width: 100%;
-  height: auto;
-  clip: rect(0px,600px,600px,0px);
+  width: 11em;
+  height: 10em;
+  float:left;
+  onject-fit: cover;
 }
 
 div.desc {
