@@ -57,14 +57,12 @@ div.desc {
   <a target="_blank" href="/pics/gallery/Udaipur_LP1.jpeg">
     <img src="/pics/gallery/Udaipur_LP1.jpeg" alt="Cinque Terre" width="600" height="600">
   </a>
-  <div class="desc">Add a description of the image here</div>
 </div>
 
 <div class="gallery">
   <a target="_blank" href="/pics/gallery/Udaipur_GB1.jpeg">
     <img src="/pics/gallery/Udaipur_GB1.jpeg" alt="Forest" width="600" height="400">
   </a>
-  <div class="desc">Add a description of the image here</div>
 </div>
 
 <div class="gallery">
