@@ -8,9 +8,12 @@ gallery:
   - url: /pics/gallery/Udaipur_LP1.jpeg
     image_path: /pics/gallery/Udaipur_LP1.jpeg
     image_width: 200px
+    image_height: 200px
     title: "Lake Pichola, Udaipur"
   - url: /pics/gallery/Udaipur_GB.jpeg
-    image_path: /pics/gallery/Udaipur_GB.jpeg
+    image_path: /pics/gallery/Udaipur_GB1.jpeg
+    image_width: 200px
+    image_height: 200px
     title: "Rose Garden, Udaipur"
   - url: /pics/gallery/eastrock.jpg
     image_path: /pics/gallery/eastrock.jpg
