@@ -7,7 +7,7 @@ comments: true
 ---
 <style type='text/css'>
 div.gallery {
-  margin: 10px;
+  margin: 13px;
   float: left;
   width: 180px;
 }
@@ -19,8 +19,13 @@ div.gallery img {
   float:left;
   object-fit: cover;
 }
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
 div.page__inner-wrap{
-  width:800px!important;
+  width:900px!important;
 }
 div.desc {
   padding: 15px;
