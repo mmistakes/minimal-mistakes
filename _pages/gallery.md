@@ -10,7 +10,7 @@ gallery:
     image_width: 200px
     image_height: 200px
     title: "Lake Pichola, Udaipur"
-  - url: /pics/gallery/Udaipur_GB.jpeg
+  - url: /pics/gallery/Udaipur_GB1.jpeg
     image_path: /pics/gallery/Udaipur_GB1.jpeg
     image_width: 200px
     image_height: 200px
