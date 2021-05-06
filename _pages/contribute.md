@@ -76,4 +76,4 @@ classes: wide2
 
 5. When ready, submit a pull request to the XAITK repository with these changes. Please give the pull request a meaningful name, e.g. `dev/add-fsal-description`
 
-6. If you encounter any problems with submitting your contribution, please reach out to use at <xaitk@kitware.com>.
+6. If you encounter any problems with submitting your contribution, please reach out to us at <xaitk@kitware.com>.
