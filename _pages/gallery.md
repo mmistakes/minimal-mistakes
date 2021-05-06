@@ -12,8 +12,8 @@ gallery:
     image_path: /pics/gallery/Udaipur_GB1.jpeg
     title: "Rose Garden, Udaipur"
     
-  - url: /pics/gallery/Udaipur_LP1.jpeg
-    image_path: /pics/gallery/Udaipur_LP1.jpeg
+  - url: /pics/gallery/GymkhanaIITB.jpeg
+    image_path: /pics/gallery/GymkhanaIITB.jpeg
     title: "Lake Pichola, Udaipur"
   - url: /pics/gallery/Udaipur_GB1.jpeg
     image_path: /pics/gallery/Udaipur_GB1.jpeg
