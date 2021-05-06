@@ -23,7 +23,7 @@ div.gallery img {
   object-fit: cover;
 }
 div.page__inner-wrap{
-  width:800px;
+  width:800px!important;
 }
 div.desc {
   padding: 15px;
