@@ -35,13 +35,13 @@ feature_row:
 
 Our research group is part of the US Department of Agriculture, Agricultural
 Research Service, Genomics and Bioinformatics Research Unit, a distributed
-unit based across the Southeastern US. We are based out of labs the
+unit with four locations in the Southeast Area. We are based out of the
 University of Florida Emerging Pathogens Institute and the USDA-ARS Center for
 Medical Agricultural and Veterinary Entomology.
 
 GBRU-Gainesville works broadly in machine learning, software, and microbiome
-science across application domains. Our applications touch on Animal health, Crops,
-nutrition, natural Resource conservation.
+science across application domains. Thse applications include animal health, crop improvement,
+nutrition, and natural resource conservation.
 
 {% include feature_row id="intro" type="center" %}
 {% include feature_row %}
