@@ -107,6 +107,7 @@ new Thread(() -> {
     StringBuffer.length: 77780
     StringBuilder.length: 76412
 ```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk4OTk3MjQ0LDk5ODk5NzI0NF19
+eyJoaXN0b3J5IjpbLTI3MzcxMTAsOTk4OTk3MjQ0XX0=
 -->
