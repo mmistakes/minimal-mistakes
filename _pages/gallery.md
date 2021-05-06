@@ -54,7 +54,7 @@ div.desc {
   text-align: center;
 }
 </style>
-<body>
+
 
 <div class="gallery">
   <a target="_blank" href="/pics/gallery/Udaipur_LP1.jpeg"">
