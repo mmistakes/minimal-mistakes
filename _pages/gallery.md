@@ -31,8 +31,7 @@ gallery:
     title: "Mountain top of East Rock"
 ---
 The images below
-(setq markdown-xhtml-header-content
-      "<style type='text/css'>
+<style type='text/css'>
 div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
@@ -53,7 +52,7 @@ div.desc {
   padding: 15px;
   text-align: center;
 }
-</style>")
+</style>
 <div class="gallery">
   <a target="_blank" href="/pics/gallery/Udaipur_GB1.jpeg">
     <img src="/pics/gallery/Udaipur_GB1.jpeg" alt="Cinque Terre" width="600" height="600">
