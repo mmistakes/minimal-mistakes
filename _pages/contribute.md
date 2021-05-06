@@ -7,7 +7,7 @@ classes: wide2
 
 ## How to contribute a new document
 
-1. Navigate to docs/_capabilities in the [xaitk website repository](https://github.com/XAITK/xaitk.github.io/)
+1. Navigate to the _capabilities folder in the [xaitk website repository](https://github.com/XAITK/xaitk.github.io/)
 
 2. Click "Add File"->"Create New File"
 
@@ -72,7 +72,7 @@ classes: wide2
     Any additional information, e.g. papers (cited with bibtex) related to this contribution.
     ```
 
-4. Fill out this template with the information relevant to your contribution. An example submission can be found at `docs/_capabilities/fakesal.md`. 
+4. Fill out this template with the information relevant to your contribution. An example submission can be found at `_capabilities/fakesal.md`. 
 
 5. When ready, submit a pull request to the XAITK repository with these changes. Please give the pull request a meaningful name, e.g. `dev/add-fsal-description`
 

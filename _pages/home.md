@@ -29,7 +29,7 @@ feature_row:
     alt: "100% free"
     title: "100% free"
     excerpt: "Free to use however you want under the Placeholder License."
-    url: "/docs/license/"
+    url: "https://github.com/XAITK/xaitk-saliency/blob/master/LICENSE.txt"
     btn_class: "btn--primary"
     btn_label: "Learn more"      
 ---
