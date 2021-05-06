@@ -31,9 +31,7 @@ gallery:
     title: "Mountain top of East Rock"
 ---
 <h3>Photography is a love affair with life. - Burk Uzzle</h3>
-<a target="_blank" href="/pics/gallery/Udaipur_LP1.jpeg">
-<img src="/pics/gallery/Udaipur_LP1.jpeg" style="width:150px;height:150px;">
-</a>
+
 <style>
 div.gallery {
   margin: 5px;
@@ -60,15 +58,15 @@ div.desc {
 <body>
 
 <div class="gallery">
-  <a target="_blank" href="img_5terre.jpg">
-    <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+  <a target="_blank" href="/pics/gallery/Udaipur_LP1.jpeg"">
+    <img src="/pics/gallery/Udaipur_LP1.jpeg"" alt="Cinque Terre" width="600" height="400">
   </a>
   <div class="desc">Add a description of the image here</div>
 </div>
 
 <div class="gallery">
-  <a target="_blank" href="img_forest.jpg">
-    <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+  <a target="_blank" href="/pics/gallery/Udaipur_LP1.jpeg"">
+    <img src="/pics/gallery/Udaipur_LP1.jpeg"" alt="Forest" width="600" height="400">
   </a>
   <div class="desc">Add a description of the image here</div>
 </div>
