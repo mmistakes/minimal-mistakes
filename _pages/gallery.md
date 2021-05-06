@@ -46,7 +46,7 @@ div.gallery img {
   width: 11em;
   height: 10em;
   float:left;
-  onject-fit: cover;
+  object-fit: cover;
 }
 
 div.desc {
