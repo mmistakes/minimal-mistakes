@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "흐린 잉크가 탁월한 기억력을 이긴다"
+title                    : "쓰다보면 늘어나는 지식!"
 title_separator          : "-"
 subtitle                 : !
 name                     : "Seonjae Choi"
@@ -111,7 +111,7 @@ analytics:
 author:
   name             : "Seonjae Choi"
   avatar           : "https://user-images.githubusercontent.com/49507736/83961431-f3c8b300-a8cd-11ea-8183-24d64c0ba27a.jpg" # profile picture
-  bio              : "둔필승총" # comment
+  bio              : "흐린 잉크가 탁월한 기억력을 이긴다!" # comment
   location         : "Seong Nam, South Korea"
   email            : "adultstart13@gmail.com"
 #   home             : "" # "https://choiseonjae.github.io" # null (default), "absolute or relative url to link to author home"
