@@ -7,7 +7,7 @@ comments: true
 ---
 <style type='text/css'>
 div.gallery {
-  margin: 5px;
+  margin: 10px;
   float: left;
   width: 180px;
 }
@@ -30,10 +30,10 @@ div.desc {
   text-align: center;
 }
 </style>
-  {% for image in site.pics.gallery %}
+  {% for image in pics.gallery %}
     <div class="gallery">
       <a target="_blank" href="{{image.url}}">
-       <img src="{{image.url}}" alt="Lake">
+       <img src="{{image.url}}">
       </a>
 </div>
   
