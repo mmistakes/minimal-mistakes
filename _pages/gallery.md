@@ -12,9 +12,6 @@ div.gallery {
   width: 180px;
 }
 
-div.gallery:hover {
-  border: 1px solid #777;
-}
 
 div.gallery img {
   width: 11em;
