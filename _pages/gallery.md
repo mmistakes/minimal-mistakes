@@ -30,7 +30,7 @@ gallery:
     image_path: /pics/gallery/eastrock.jpg
     title: "Mountain top of East Rock"
 ---
-Photography is a love affair with life. - Burk Uzzle
+<h3>Photography is a love affair with life. - Burk Uzzle</h3>
 <a target="_blank" href="/pics/gallery/Udaipur_LP1.jpeg">
 <img src="/pics/gallery/Udaipur_LP1.jpeg" style="width:150px;height:150px;">
 </a>
