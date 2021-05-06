@@ -46,10 +46,9 @@ div.gallery:hover {
 div.gallery img {
   width: 100%;
   height: auto;
+  clip: rect(0px,600px,600px,0px);
 }
-img{
-clip: rect(0px,600px,600px,0px);
-}
+
 div.desc {
   padding: 15px;
   text-align: center;
