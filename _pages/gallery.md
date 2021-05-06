@@ -20,9 +20,9 @@ div.gallery img {
   object-fit: cover;
 }
 
-div.gallery:hover {
+<!--div.gallery:hover {
   border: 1px solid #777;
-}
+} -->
 
 div.page__inner-wrap{
   width:900px!important;
