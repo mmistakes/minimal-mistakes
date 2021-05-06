@@ -7,47 +7,71 @@ classes: wide2
 
 ## How to contribute a new document
 
-1. Clone the [xaitk website repository](https://github.com/XAITK/xaitk.github.io/)
-```bash
-git clone https://github.com/XAITK/xaitk.github.io
-```
+1. Navigate to docs/_capabilities in the [xaitk website repository](https://github.com/XAITK/xaitk.github.io/)
 
-2. Create a branch off of master with a meaningful name
-```bash
-git checkout -b dev/add-fakesal-description
-```
+2. Click "Add File"->"Create New File"
 
-3. In the `docs/_posts` folder of the repository, add a new file with the filename `YYYY-MM-DD-slug.md` (e.g. `2021-04-22-fakesal.md`)
-
-4. Copy the following to the top of the file (replacing fields with appropriate values)
+3. Give the file an appropriate name (e.g. `fsal.md`), and copy the following template
 
     ```yaml
     ---
-    title: "FakeSal"
-    excerpt: "FakeSal is a whitebox saliency algorithm."
-    tags: 
-      - Saliency
+    title: "Title of the contribution"
+    excerpt: "An excerpt describing this contribution."
+    tags: # Select from this set
+      - Analytics
+      - Autonomy
       - Computer Vision
-      - Analytic
-      - Debugging
-    submission_details:
-      resource_pointer: https://github.com/XAITK/xaitk-saliency
+      - Natural Language Processing
+      - Reinforcement Learning
+      - Visual Question Answering (VQA)
+      - Human-Machine Teaming
+      - Saliency
+      - Data Poisoning
+      - Medical
+      - Explanation Framework
 
-      version: 1.0
-      size: 100MB
-      license: https://github.com/XAITK/xaitk-saliency/blob/master/LICENSE.txt
+    submission_details:
+      resources: # List any resources associated with the contribution
+        papers:
+          - Link to paper
+        software:
+          - Link to software
+          - Another link to software
+        demos:
+          - Link to demo
+        data:
+          - Link to data
 
       authors:
-        - F. A. Keresearcher
-        - Invented Co Author
+        - Author Name
       organizations:
-        - Hamburger University
+        - Organization
       point_of_contact:
-        name: Nitesh Menon
-        email: nitesh.menon@kitware.com
+        name: PoC Name
+        email: email
+
+      # Optional information describing artifact
+      version: Version Number
+      size: Size
+      license: Link to license
     ---
+
+    ## Overview
+    What is the main purpose of the contribution?
+
+    ## Intended Use
+    What is the intended use case for this contribution? What domains/applications has this contribution been applied to?
+
+    ## Model/Data
+    If a model is involved, what are its inputs and outputs? If the model was learned/trained, what data was used for training/testing?
+
+    ## Limitations
+    Are there any additional limitations/ethical considerations for use of this contribution? Are there known failure modes?
+
+    ## References
+    Any additional information, e.g. papers (cited with bibtex) related to this contribution.
     ```
 
-5. Fill the rest of the file out with [Markdown](https://www.markdownguide.org/basic-syntax/) formatted text. Images or other multimedia assets should be added to the `docs/assets/<performer-name>/images` folder and referenced in Markdown as `/assets/<performer-name>/images/image-name-here.png` 
+4. Fill out this template with the information relevant to your contribution. An example submission can be found at `docs/_capabilities/fakesal.md`. 
 
-6. When ready, submit a pull request to the XAITK repository with these changes
+5. When ready, submit a pull request to the XAITK repository with these changes. Please give the pull request a meaningful name, e.g. `dev/add-fsal-description`

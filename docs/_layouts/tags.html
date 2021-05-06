@@ -1,0 +1,54 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+{% assign tags =  site.capabilities | map: 'tags' | join: ','  | split: ',' %}
+{% assign grouped_tags = tags | group_by: tag | sort: 'size' | reverse %}
+<!-- {% for tag in grouped_tags %}
+  <h3>{{ tag.name }}</h3>
+  <ul>
+  {% for capability in site.capabilities %}
+    {% if capability.tags contains tag.name %}
+    <li><a href="{{ site.baseurl }}{{ capability.url }}">{{ capability.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+{% endfor %} -->
+
+{% assign tags_max = grouped_tags[0].size %}
+
+<ul class="taxonomy__index">
+  {% for i in (1..tags_max) reversed %}
+    {% for tag in grouped_tags %}
+      {% if tag.size == i %}
+        <li>
+          <a href="#{{ tag.name | slugify }}">
+            <strong>{{ tag.name }}</strong> <span class="taxonomy__count">{{ i }}</span>
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+</ul>
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+{% for i in (1..tags_max) reversed %}
+  {% for tag in grouped_tags %}
+    {% if tag.size == i %}
+      <section id="{{ tag.name | slugify | downcase }}" class="taxonomy__section">
+        <h2 class="archive__subtitle">{{ tag.name }}</h2>
+        <div class="entries-{{ entries_layout }}">
+          {% for capability in site.capabilities %}
+              {% if capability.tags contains tag.name %}
+                <h2><a href="{{ site.baseurl }}{{ capability.url }}">{{ capability.title }}</a></h2>
+                <p>{{ capability.excerpt }}</p>
+              {% endif %}
+          {% endfor %}
+        </div>
+        <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+      </section>
+    {% endif %}
+  {% endfor %}
+{% endfor %}

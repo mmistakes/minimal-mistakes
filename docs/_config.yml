@@ -162,21 +162,16 @@ kramdown:
 
 # Collections
 collections:
-  docs:
+  capabilities:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:collection/:path
 
 # Defaults
 defaults:
+  # _capabilities
   - scope:
       path: ""
-      type: tags
-    values:
-      author_profile: false
-  # _posts
-  - scope:
-      path: ""
-      type: posts
+      type: capabilities
     values:
       layout: single
       classes: wide
@@ -189,13 +184,6 @@ defaults:
   - scope:
       path: "_pages"
       type: pages
-    values:
-      layout: single
-      author_profile: false
-  # _docs
-  - scope:
-      path: ""
-      type: docs
     values:
       layout: single
       author_profile: false
@@ -242,17 +230,17 @@ whitelist:
 #  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
 #  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
 #  - <base_path>/my-awesome-category/index.html ~> path: /
-tag_archive:
-  type: jekyll-archives
-  path: /tags/
-# https://github.com/jekyll/jekyll-archives
-jekyll-archives:
-  enabled:
-    - tags
-  layouts:
-    tag: archive-taxonomy
-  permalinks:
-    tag: /tags/:name/
+# tag_archive:
+#   type: jekyll-archives
+#   path: /tags/
+# # https://github.com/jekyll/jekyll-archives
+# jekyll-archives:
+#   enabled:
+#     - tags
+#   layouts:
+#     tag: archive-taxonomy
+#   permalinks:
+#     tag: /tags/:name/
 
 
 # HTML Compression

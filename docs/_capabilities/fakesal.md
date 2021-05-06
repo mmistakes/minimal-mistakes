@@ -4,10 +4,13 @@ excerpt: "FakeSal is a whitebox saliency algorithm."
 tags: 
   - Saliency
   - Computer Vision
-  - Analytic
-  - Debugging
+  - Analytics
 submission_details:
-  resource_pointer: https://github.com/XAITK/xaitk-saliency
+  resources:
+    papers:
+      - https://arxiv.org/
+    software:
+      - https://github.com/XAITK/xaitk-saliency
 
   version: 1.0
   size: 100MB
@@ -23,13 +26,7 @@ submission_details:
     email: nitesh.menon@kitware.com
 ---
 
-## Key Highlights
-
-When to use FakeSal
-  * Don't need a black-box algorithm
-  * Runtime performance is important
-
-## Introduction
+## Overview
 
 FakeSal is a saliency algorithm that does stuff as reported in [FakeSal: A Fake Saliency Algorithm (2021)](https://arxiv.org/)
 
@@ -46,9 +43,24 @@ debug-options:
   algorithm: fakesal
 ```
 
-## BibTeX
+## Intended Use
+
+When to use FakeSal
+  * Don't need a black-box algorithm
+  * Runtime performance is important
+
+## Model/Data
+
+The input to FakeSal is a 224x224 raster image, a class label, and a handle to a CNN-based model and the output is a 224x224 full-color heatmap.
+
+## Limitations
+
+As a whitebox model, FakeSal requires knowledge/access to the model we seek to explain. FakeSal is not robust to adversarial perturbations, 
+and it has been shown FakeSal can produce extremely similar saliency maps in situations where the final predictions differ.
+
+## References
 ```tex
-@InProceedings{infinite_nature_2020,
+@InProceedings{fake_sal_2021,
   author = {Keresearcher, F. A. and Author, Invented and Menon, Nitesh},
   title = {FakeSal: A Fake Saliency Algorithm (2021)},
   booktitle = {arXiv},

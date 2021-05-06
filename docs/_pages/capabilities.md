@@ -1,6 +1,7 @@
 ---
 title: "Capabilities"
 permalink: /capabilities/
+collection: capabilities
 layout: tags
 classes: wide2
 header:
@@ -14,4 +15,4 @@ Click on any estimator in the chart below to see its documentation.
 
 ![Capabilities](/assets/kitware/images/ml_map.png)
 
-# Tags
+# Capabilities by Tag
