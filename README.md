@@ -1,1 +1,1 @@
-My website generated with the ![Minimal Mistakes Jekyll theme](https://mmistakes.github.io/minimal-mistakes/).
+My website generated with the [Minimal Mistakes Jekyll theme](https://mmistakes.github.io/minimal-mistakes/).
