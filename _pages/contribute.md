@@ -29,9 +29,9 @@ classes: wide2
      - Data Poisoning
      - Medical
      - Explanation Framework
- 
+   
    submission_details:
-     resources: # List any resources associated with the contribution
+     resources: # List any resources associated with the contribution. Not all sections are required
        papers:
          - Link to paper
        software:
@@ -41,7 +41,12 @@ classes: wide2
          - Link to demo
        data:
          - Link to data
- 
+   
+     # Optional information describing artifact
+     version: Version Number
+     size: Size
+     license: Link to license
+   
      authors:
        - Author Name
      organizations:
@@ -49,27 +54,28 @@ classes: wide2
      point_of_contact:
        name: PoC Name
        email: email
- 
-     # Optional information describing artifact
-     version: Version Number
-     size: Size
-     license: Link to license
    ---
- 
+   
    ## Overview
-   What is the main purpose of the contribution?
- 
+   [comment]: <> (What is the main purpose of the contribution?)
+   
    ## Intended Use
-   What is the intended use case for this contribution? What domains/applications has this contribution been applied to?
- 
+   [comment]: <> (What is the intended use case for this contribution?)
+
+   [comment]: <> (What domains/applications has this contribution been applied to?)
+   
    ## Model/Data
-   If a model is involved, what are its inputs and outputs? If the model was learned/trained, what data was used for training/testing?
- 
+   [comment]: <> (If a model is involved, what are its inputs and outputs?)
+
+   [comment]: <> (If the model was learned/trained, what data was used for training/testing?)
+   
    ## Limitations
-   Are there any additional limitations/ethical considerations for use of this contribution? Are there known failure modes?
- 
+   [comment]: <> (Are there any additional limitations/ethical considerations for use of this contribution?)
+   
+   [comment]: <> (Are there known failure modes?)
+   
    ## References
-   Any additional information, e.g. papers (cited with bibtex) related to this contribution.
+   [comment]: <> (Any additional information, e.g. papers (cited with bibtex) related to this contribution.)
    ```
 
 4. Fill out this template with the information relevant to your contribution. An example submission can be found at `_capabilities/fakesal.md`. 
