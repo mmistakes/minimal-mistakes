@@ -102,6 +102,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
+      # icon: "fas fa-fw fa-envelope"
       # url: "mailto:sessink@uw.edu"
     - label: "Website"
       icon: "fas fa-fw fa-link"
