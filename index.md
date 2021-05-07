@@ -11,4 +11,4 @@ This is the **first** page.
 2. hallo
 2. hallo
 
-[Das ist ein link](google.com)
+[Das ist ein link](https://www.google.com)
