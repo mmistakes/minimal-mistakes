@@ -38,3 +38,68 @@
 @import "minimal-mistakes/archive";
 @import "minimal-mistakes/sidebar";
 @import "minimal-mistakes/print";
+
+.license-button {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  text-decoration: none;
+  border: 1px solid #b6b6b6;
+  border-radius: 4px;
+}
+
+.wide2 {
+  .page {
+    float: left;
+    width: 100%;
+    @include breakpoint($large) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    @include breakpoint($x-large) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .page__related {
+    @include breakpoint($large) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    @include breakpoint($x-large) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .archive {
+    float: left;
+    width: 100%;
+    @include breakpoint($large) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    @include breakpoint($x-large) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .archive__related {
+    @include breakpoint($large) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    @include breakpoint($x-large) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+}

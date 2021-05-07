@@ -4,20 +4,44 @@ layout: archive
 
 {{ content }}
 
-{% assign tags_max = 0 %}
-{% for tag in site.tags %}
-  {% if tag[1].size > tags_max %}
-    {% assign tags_max = tag[1].size %}
-  {% endif %}
+{% assign tags =  site.capabilities | map: 'tags' | join: ','  | split: ',' %}
+{% assign grouped_tags = tags | group_by: tag | sort: 'size' | reverse %}
+
+<!-- Get the kinds of resources in the submissions -->
+{% assign submission_details = site.capabilities | map: 'submission_details' %}
+{% assign resources = submission_details | map: 'resources' %}
+{% assign resource_types = '' | split: '' %}
+
+{% for resource in resources %}
+  {% for resource_item in resource %}
+    {% assign resource_item_as_arr = resource_item[0] | split: '_' %}
+    {% assign resource_types = resource_types | concat: resource_item_as_arr %}
+  {% endfor %}
 {% endfor %}
+{% assign resource_types = resource_types | group_by: tag | sort: 'size' | reverse %}
+
+{% assign grouped_tags = grouped_tags | concat: resource_types %}
+
+<!-- {% for tag in grouped_tags %}
+  <h3>{{ tag.name }}</h3>
+  <ul>
+  {% for capability in site.capabilities %}
+    {% if capability.tags contains tag.name %}
+    <li><a href="{{ site.baseurl }}{{ capability.url }}">{{ capability.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+{% endfor %} -->
+
+{% assign tags_max = grouped_tags[0].size %}
 
 <ul class="taxonomy__index">
   {% for i in (1..tags_max) reversed %}
-    {% for tag in site.tags %}
-      {% if tag[1].size == i %}
+    {% for tag in grouped_tags %}
+      {% if tag.size == i %}
         <li>
-          <a href="#{{ tag[0] | slugify }}">
-            <strong>{{ tag[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
+          <a href="#{{ tag.name | slugify }}">
+            <strong>{{ tag.name | capitalize }}</strong> <span class="taxonomy__count">{{ i }}</span>
           </a>
         </li>
       {% endif %}
@@ -27,13 +51,16 @@ layout: archive
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 {% for i in (1..tags_max) reversed %}
-  {% for tag in site.tags %}
-    {% if tag[1].size == i %}
-      <section id="{{ tag[0] | slugify | downcase }}" class="taxonomy__section">
-        <h2 class="archive__subtitle">{{ tag[0] }}</h2>
+  {% for tag in grouped_tags %}
+    {% if tag.size == i %}
+      <section id="{{ tag.name | slugify | downcase }}" class="taxonomy__section">
+        <h2 class="archive__subtitle">{{ tag.name | capitalize }}</h2>
         <div class="entries-{{ entries_layout }}">
-          {% for post in tag.last %}
-            {% include archive-single.html type=entries_layout %}
+          {% for capability in site.capabilities %}
+              {% if capability.tags contains tag.name or capability.submission_details.resources contains tag.name %}
+                <h2><a href="{{ site.baseurl }}{{ capability.url }}">{{ capability.title }}</a></h2>
+                <p>{{ capability.excerpt }}</p>
+              {% endif %}
           {% endfor %}
         </div>
         <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
