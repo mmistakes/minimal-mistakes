@@ -17,8 +17,6 @@ submission_details:
       - https://github.com/Kitware/SMQTK/blob/dev/XAI/python/smqtk/algorithms/saliency/sal_gen.py
     demos:
       - https://drive.google.com/file/d/13iHNyYk-c42ZWy0-RUrzZaq37deqBxU-/view?usp=sharing
-    data:
-      - https://cocodataset.org/#home
 
   # Optional information describing artifact
   version: 1.0
@@ -35,26 +33,21 @@ submission_details:
 ---
 
 ## Overview
-What is the main purpose of the contribution?
-
 SBSM is a saliency algorithm that compares two image descriptors in the embedding space to attempt and reason retrieval performance between two reference images. [Explainability for Content-Based Image Retrieval (2019)](https://openaccess.thecvf.com/content_CVPRW_2019/papers/Explainable%20AI/Dong_Explainability_for_Content-Based_Image_Retrieval_CVPRW_2019_paper.pdf)
 
 ## Intended Use
-What is the intended use case for this contribution? What domains/applications has this contribution been applied to?
-
 When to use SBSM
   * Does not need a black-box algorithm
   * To explain image similarity between two images
   * Each image can be represented by a single descriptor
   
 ## Model/Data
-If a model is involved, what are its inputs and outputs? If the model was learned/trained, what data was used for training/testing?
 The input to SBSM are two images between whom we need to compute saliency maps based on their distance in embedding space. Additionally the user can fix the resolution of sampling by changing the window size and stride.
+
 ## Limitations
-Are there any additional limitations/ethical considerations for use of this contribution? Are there known failure modes?
 Does not support white-box model explanations and requires saliency computation between two images. Additionally, if the model generating the feature vector does not change, the saliency maps between two images always remains the same.
+
 ## References
-Any additional information, e.g. papers (cited with bibtex) related to this contribution.
 ```tex
 @inproceedings{dong2019explainability,
   title={Explainability for Content-Based Image Retrieval.},

@@ -1,7 +1,7 @@
 ---
 permalink: /contribute/
 title: "Contribute"
-last_modified_at: 2021-02-05T20:54:41-05:00
+last_modified_at: 2021-05-07
 classes: wide2
 ---
 
@@ -9,9 +9,9 @@ classes: wide2
 
 1. Navigate to the _capabilities folder in the [xaitk website repository](https://github.com/XAITK/xaitk.github.io/)
 
-2. Click "Add File"->"Create New File"
+2. Click "Add File" -> "Create New File"
 
-3. Give the file an appropriate name (e.g. `fsal.md`), and copy the following template
+3. Give the file an appropriate name (e.g. `fakesal.md`), and copy the following template
 
    ```yaml
    ---
@@ -78,8 +78,8 @@ classes: wide2
    [comment]: <> (Any additional information, e.g. papers (cited with bibtex) related to this contribution.)
    ```
 
-4. Fill out this template with the information relevant to your contribution. An example submission can be found at `_capabilities/fakesal.md`. 
+4. Fill out this template with the information relevant to your contribution. An example submission can be found at `_capabilities/fakesal.md`
 
-5. When ready, submit a pull request to the XAITK repository with these changes. Please give the pull request a meaningful name, e.g. `dev/add-fsal-description`
+5. When ready, submit a pull request to the XAITK repository with these changes. Please give the pull request a meaningful name, e.g. `dev/add-fakesal-description`
 
-6. If you encounter any problems with submitting your contribution, please reach out to us at <xaitk@kitware.com>.
+6. If you encounter any problems with submitting your contribution, please reach out to us at <xaitk@kitware.com>
