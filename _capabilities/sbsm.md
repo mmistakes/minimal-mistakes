@@ -1,6 +1,6 @@
 ---
 title: "Similarity Based Saliency Maps"
-excerpt: "Similarity Based Saliency Maps is a similarity based saliency algorithm that utilizes a standard distance metrics to compute image regions that result in the largest drop in distance between unalterned images and perturbed version of the same images, with the respective region occuled."
+excerpt: "Similarity Based Saliency Maps (SBSM) is a similarity based saliency algorithm that utilizes a standard distance metrics to compute image regions that result in the largest drop in distance between unalterned images and perturbed version of the same images."
 tags: # Select from this set
   - Analytics
   - Computer Vision
@@ -37,20 +37,19 @@ submission_details:
 ## Overview
 What is the main purpose of the contribution?
 
-SBSM is a saliency algorithm that compares two image descriptors in embedding space to attemt and reason retireval performance
-between two reference images. [Explainability for Content-Based Image Retrieval (2018)](https://openaccess.thecvf.com/content_CVPRW_2019/papers/Explainable%20AI/Dong_Explainability_for_Content-Based_Image_Retrieval_CVPRW_2019_paper.pdf)
+SBSM is a saliency algorithm that compares two image descriptors in the embedding space to attempt and reason retrieval performance between two reference images. [Explainability for Content-Based Image Retrieval (2019)](https://openaccess.thecvf.com/content_CVPRW_2019/papers/Explainable%20AI/Dong_Explainability_for_Content-Based_Image_Retrieval_CVPRW_2019_paper.pdf)
 
 ## Intended Use
 What is the intended use case for this contribution? What domains/applications has this contribution been applied to?
 
 When to use SBSM
-  * Does'nt need a black-box algorithm
+  * Does not need a black-box algorithm
   * To explain image similarity between two images
   * Each image can be represented by a single descriptor
   
 ## Model/Data
 If a model is involved, what are its inputs and outputs? If the model was learned/trained, what data was used for training/testing?
-The input to SBSM are two images between whome we need to compute saliency maps based on their distance in embedding space. Additionally the user can fix the resolution of sampling by changing the window size and stride.
+The input to SBSM are two images between whom we need to compute saliency maps based on their distance in embedding space. Additionally the user can fix the resolution of sampling by changing the window size and stride.
 ## Limitations
 Are there any additional limitations/ethical considerations for use of this contribution? Are there known failure modes?
 Does not support white-box model explanations and requires saliency computation between two images. Additionally, if the model generating the feature vector does not change, the saliency maps between two images always remains the same.
