@@ -2,7 +2,7 @@
 layout: home
 author_profile: true
 header:
-  image: /assets/images/title_douglas_2.JPG
+  image: /assets/images/title_ponderosa_3.JPG
   <!-- overlay_filter: 0.3 -->
 ---
 
