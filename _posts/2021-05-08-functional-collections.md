@@ -233,4 +233,4 @@ trait MapOps[K, +V, +CC[_, _] <: IterableOps[_, AnyConstr, _], +C]
 
 ## 4. Conclusion
 
-We've just learned that many critical Scala collections are not just "functional", bug they are _actual_ functions. If your mind was at least moved a bit (not necessarily blown away), I'm really happy. These kinds of concepts make functional programming great, and Scala awesome. 
+We've just learned that many critical Scala collections are not just "functional", but they are _actual_ functions. If your mind was at least moved a bit (not necessarily blown away), I'm really happy. These kinds of concepts make functional programming great, and Scala awesome. 
