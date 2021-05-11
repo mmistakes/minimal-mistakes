@@ -5,7 +5,7 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2021-05-11T10:31:28-04:00
+last_modified_at: 2021-05-11T10:41:54-04:00
 toc: false
 ---
 
@@ -23,6 +23,7 @@ toc: false
 
 ### Bug Fixes
 
+- Fix Jekyll environment note in configuration documentation. [#2912](https://github.com/mmistakes/minimal-mistakes/issues/2912)
 - Fix typo in Helpers documentation. [#2940](https://github.com/mmistakes/minimal-mistakes/pull/2940)
 - Remove all references to official public Staticman API instance. [#2818](https://github.com/mmistakes/minimal-mistakes/issues/2818) [#2831](https://github.com/mmistakes/minimal-mistakes/pull/2831)
 - Remove Google Search CSS. [#2852](https://github.com/mmistakes/minimal-mistakes/issues/2852) [#2855](https://github.com/mmistakes/minimal-mistakes/pull/2855)
