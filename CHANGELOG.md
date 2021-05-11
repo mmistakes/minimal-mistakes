@@ -2,6 +2,7 @@
 
 ### Enhancements
 
+- Update onchange and uglify-js dependencies.
 - Document head and footer `custom.html` includes. [#2815](https://github.com/mmistakes/minimal-mistakes/pull/2815)
 - Color notices based on skin colors instead of fixed values. [#2887](https://github.com/mmistakes/minimal-mistakes/pull/2887)
 - Add configurable datetime format. [#2844](https://github.com/mmistakes/minimal-mistakes/pull/2844)
