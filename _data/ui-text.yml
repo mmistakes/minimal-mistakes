@@ -1905,6 +1905,65 @@ he: &DEFAULT_HE
 he-IL:
   <<: *DEFAULT_HE
 
+# Arabic (عربي)
+# --------------
+ar: &DEFAULT_AR
+  skip_links                 : "تخطي الروابط"
+  skip_primary_nav           : "تخطى الى شريط التنقل"
+  skip_content               : "الانتقال الى المحتوى"
+  skip_footer                : "الانتقال الى ذيل الصفحة"
+  page                       : "صفحه"
+  pagination_previous        : "قبل"
+  pagination_next            : "بعد"
+  breadcrumb_home_label      : "الرئيس"
+  breadcrumb_separator       : "/"
+  menu_label                 : "الخيارات"
+  search_label               : "البحث"
+  toc_label                  : "على هذه الصفحة"
+  ext_link_label             : "رابط مباشر"
+  less_than                  : "اقل من"
+  minute_read                : "دقيقة قرائية"
+  share_on_label             : "مشاركة"
+  meta_label                 :
+  tags_label                 : "العلامات الوصفية:"
+  categories_label           : "الفئات:"
+  date_label                 : "تم التحديث:"
+  comments_label             : "اترك تعليق"
+  comments_title             : "التعليقات"
+  more_label                 : "اقرأ المزيد"
+  related_label              : "قد يعجبك أيضا"
+  follow_label               : "تابع:"
+  feed_label                 : "الاخبار - RSS"
+  powered_by                 : "تم تطوير بواسطة"
+  website_label              : "موقع"
+  email_label                : "ايميل"
+  recent_posts               : "المشاركات الأخيرة"
+  undefined_wpm              : "معامل غير معرف في words_per_minute (كلمة في الدقيقة) في ملف _config.yml"
+  comment_form_info          : "لن يتم نشر عنوان بريدك الإلكتروني. الحقول المطلوبة إلزامية"
+  comment_form_comment_label : "تعليق"
+  comment_form_md_info       : "لغة ال Markdown مدعومة."
+  comment_form_name_label    : "الاسم"
+  comment_form_email_label   : "البريد الالكتروني"
+  comment_form_website_label : "الموقع (اختياري)"
+  comment_btn_submit         : "أضف تعليق"
+  comment_btn_submitted      : "تم الإرسال"
+  comment_success_msg        : "شكراً على التعليق! سيتم اظهاره عندما يتم موافقة عليه."
+  comment_error_msg          : "للأسف, هناك خطأ في المحاولة. الرجاء الحرص على تعبئة جميع الخانات و محاولة مجدداً."
+  loading_label              : "جاري التحميل..."
+  search_label_text          : "اكتب مصطلح للبحث..."
+  search_placeholder_text    : "اكتب مصطلح للبحث..."
+  search_algolia_no_results  : "لا توجد نتائج"
+  results_found              : "تم إيجاد نتيجة"
+  back_to_top                : "الانتقال الى الأعلى"
+ar-SD:
+  <<: *DEFAULT_AR
+ar-SA:
+  <<: *DEFAULT_AR
+ar-AE:
+  <<: *DEFAULT_AR
+ar-EG:
+  <<: *DEFAULT_AR
+
 # Another locale
 # --------------
 #
