@@ -6,7 +6,7 @@
 - Document head and footer `custom.html` includes. [#2815](https://github.com/mmistakes/minimal-mistakes/pull/2815)
 - Color notices based on skin colors instead of fixed values. [#2887](https://github.com/mmistakes/minimal-mistakes/pull/2887)
 - Add configurable datetime format. [#2844](https://github.com/mmistakes/minimal-mistakes/pull/2844)
-- Add Baidu site verfication [#2830](https://github.com/mmistakes/minimal-mistakes/pull/2830)
+- Add Baidu site verification [#2830](https://github.com/mmistakes/minimal-mistakes/pull/2830)
 - Add `alt` attribute to site logo. [#2529](https://github.com/mmistakes/minimal-mistakes/issues/2529) [#2824](https://github.com/mmistakes/minimal-mistakes/issues/2824)
 
 ### Bug Fixes
