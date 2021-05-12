@@ -1,11 +1,14 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+  - title: "Launch App"
+    url: https://dsl030.users.earthengine.app/view/glaciersapp
+  - title: "Home"
+    url: /index/
+  - title: "Tutorial"
+    url: /tutorial/
+  - title: "About"
+    url: /about/
+  
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
