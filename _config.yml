@@ -95,7 +95,7 @@ analytics:
 # Site Author
 author:
   name             : "ssbinn"
-  avatar           : "/assets/images/m2.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/meme.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "2018 - updating"
   location         : "South Korea"
   email            :
