@@ -251,8 +251,10 @@ because (1) the slot-name is not needed on B1 App Service plan and (2) the packa
 
 On App Service side you have to configure the system to serve static files over HTTP, and this can be done using PM2 (https://pm2.keymetrics.io/docs/usage/expose/).
 So on AppService -> Settings -> General Settings -> Startup command that is blank, insert the following text
-
-**pm2 serve /home/site/wwwroot --no-daemon --spa**
+ 
+```
+pm2 serve /home/site/wwwroot --no-daemon --spa
+```
 
 ![AppService Settings](../assets/post/2020/angular-appservice/appservice-settings.jpg)
 
