@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "unterrichtsfrei",
-    "title": "unterrichtsfrei",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=MjU4a2c4YTc0bDBpc2UzM29rcDB1N3Zyc2QgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": "2021-05-14",
-      "date_time": null
-    },
-    "end": {
-      "date": "2021-05-15",
-      "date_time": null
-    },
-    "created": "2020-03-11T12:15:33.000Z",
-    "updated": "2020-03-11T12:17:55.062Z"
-  },
-  {
-    "image_path": null,
     "alt": "Einteilung 1. Klassen",
     "title": "Einteilung 1. Klassen",
     "excerpt": null,
