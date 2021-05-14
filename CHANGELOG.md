@@ -12,6 +12,7 @@
 
 ### Bug Fixes
 
+- Fix menu toggle to properly show close icon when open.
 - Fix Jekyll environment note in configuration documentation. [#2912](https://github.com/mmistakes/minimal-mistakes/issues/2912)
 - Fix typo in Helpers documentation. [#2940](https://github.com/mmistakes/minimal-mistakes/pull/2940)
 - Remove all references to official public Staticman API instance. [#2818](https://github.com/mmistakes/minimal-mistakes/issues/2818) [#2831](https://github.com/mmistakes/minimal-mistakes/pull/2831)

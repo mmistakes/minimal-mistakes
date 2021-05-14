@@ -14,11 +14,11 @@ $(function() {
   var $logoImg = $('nav.greedy-nav .site-logo img');
   var $title = $("nav.greedy-nav .site-title");
   var $search = $('nav.greedy-nav button.search__toggle');
-  
+
   var numOfItems, totalSpace, closingTime, breakWidths;
 
   // This function measures both hidden and visible links and sets the navbar breakpoints
-  // This is called the first time the script runs and everytime the "check()" function detects a change of window width that reached a different CSS width breakpoint, which affects the size of navbar Items 
+  // This is called the first time the script runs and everytime the "check()" function detects a change of window width that reached a different CSS width breakpoint, which affects the size of navbar Items
   // Please note that "CSS width breakpoints" (which are only 4) !== "navbar breakpoints" (which are as many as the number of items on the navbar)
   function measureLinks(){
     numOfItems = 0;
@@ -99,6 +99,7 @@ $(function() {
 
   $btn.on('click', function() {
     $hlinks.toggleClass('hidden');
+    $(this).toggleClass('close');
     clearTimeout(timer);
   });
 
@@ -122,5 +123,5 @@ $(function() {
     } else check();
   // if page does not have a logo just check
   } else check();
-  
+
 });
