@@ -16,7 +16,8 @@
 
 .page__content p, .page__content li, .page__content dl {
 	font-family: Avenir,'Lato',"애플 SD 산돌고딕 Neo","Apple SD Gothic Neo","나눔바른고딕",NanumBarunGothic,"나눔고딕",NanumGothic,"맑은 고딕","Malgun Gothic","돋움",dotum,AppleGothic,sans-serif;
-	font-size: 16px !important;
+	font-size: 18px !important;
+	margin: 0 0 3em !important;
 }
 
 .page__content ul {
@@ -25,4 +26,9 @@
 
 .highlighter-rouge {
 	margin-top: 10px;
+}
+
+.page__content blockquote p,
+.page__content li {
+    margin: 0 0 1em !important;
 }
