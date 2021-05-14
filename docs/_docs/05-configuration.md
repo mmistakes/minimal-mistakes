@@ -649,10 +649,6 @@ Add a Google search box to your site.
 **Note:** If your site is new and hasn't been indexed by Google yet, search will be incomplete and won't provide accurate results.
 {: .notice--info}
 
-#### Search Icon
-
-To change the search icon to a Font Awesome icon, add `search_icon: "fas fa-search"` (or other Font Awesome classes) to your `_config.yml`.
-
 ### SEO, social sharing, and analytics settings
 
 All optional, but a good idea to take the time setting up to improve SEO and links shared from the site.
