@@ -32,3 +32,10 @@
 .page__content li {
     margin: 0 0 1em !important;
 }
+
+.author__avatar img {
+    max-width: 150px !important;
+	padding: 0px !important;
+	border: 0px !important;
+	border-radius: 0 !important
+}
