@@ -23,7 +23,7 @@ header:
   overlay_image: "/assets/images/intro-to-interview-prep-1.jpg"
 ---
 
-# Welcome to My Interview Prep Service
+# Looking For a New Job?
 
 Are you currently interviewing with tech companies to find your next venture and having
 trouble finding employment? Are you finding that interviewing is far more difficult now with everything being remote? If this sounds like you, you can improve your chances of securing your dream job by becoming a better, more skilled interviewee. I, [Abdul Rabbani](/about), have had the pleasure of working at reputable companies such as Microsoft, and I have had the responsibility of interviewing potential candidates. I know what it takes to rise to the top of the candidate pool, and I want to share it with you.
