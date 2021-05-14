@@ -103,7 +103,7 @@ While interviewing, make sure you are keeping the following in mind.
 
         2.  But oh, first I would put them in the laundry bag.
 
-        3.  Then I would start the dryer.
+        3.  Then I would start the washer.
 
         4.  I forgot I would also need to detergent in my clothes before I start the machine.
 
