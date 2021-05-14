@@ -1,6 +1,6 @@
 ---
 title: "How College Fails to Provide Real-World Knowledge"
-permalink: /interview_prep/how_college_fails_to_provide_real-world_knowledge
+permalink: /categories/career/interview_prep/how_college_fails_to_provide_real-world_knowledge
 layout: single
 author_profile: false
 sidebar:
@@ -28,16 +28,16 @@ As those who have spent several years in the industry know, technology constantl
 
 # Standing Out Amongst Your Former Classmates
 
-Many college students are under the impression that answering the coding interview question correctly puts them at the top of the candidate list. In reality, answering the coding question will only get you on the list. It is _how_ you answer the [interview question](/interview_prep/what_is_interview_prep_and_why_you_need_it) that will determine whether you are at the top or at the bottom and unlikely to get a callback.
+Many college students are under the impression that answering the coding interview question correctly puts them at the top of the candidate list. In reality, answering the coding question will only get you on the list. It is _how_ you answer the [interview question](/categories/career/interview_prep/what_is_interview_prep_and_why_you_need_it) that will determine whether you are at the top or at the bottom and unlikely to get a callback.
 
 Another crucial aspect of standing out among other college graduates is being experienced in real-world technology. You can have a lower GPA than your competitors, lower quality of code, and still end up receiving the offer over them. How? By having experience with tools like Docker, building your own CI/CD pipelines, working with popular clouds, and overall, being experienced with the tools that your potential team is using, you can stand out amongst your peers.
 
-[Learn more](/interview_prep/services_provided) about how you can figure out what these tools are, and how you can become proficient in them.
+[Learn more](/categories/career/becoming_a_devops_engineer) about how you can figure out what these tools are, and how you can become proficient in them.
 
 ![iot-3](/assets/images/iot-3.png)
 
 # How I Learned
 
-I didn’t learn technology in school. I learned on my own, which gives [me](/about) a unique perspective on this industry. I have learned that college graduates tend to all know similar things and lack knowledge in related core technologies. By learning on my own, I was able to learn these core technologies that my peers were missing, and, thus, propel my own career. On the job, I worked with other engineers who provided me with further guidance on how to improve and accelerate my growth as an engineer.
+I didn’t learn technology in school. I learned on my own, which gives [me](/about) a unique perspective in this industry. I have learned that college graduates tend to all know similar things and lack knowledge in related core technologies. By learning on my own, I was able to learn these core technologies that my peers were missing, and, thus, propel my own career. On the job, I worked with other engineers who provided me with further guidance on how to improve and accelerate my growth as an engineer.
 
-Therefore, to increase your chances of landing the right job, you need to learn these industry best practices. As someone who has worked with many of the technologies that advanced companies are beginning to rely on, I can [guide](/interview_prep/services_provided) you on what you need to learn to land your dream job. You not only need to know what everyone else knows, but you also need to learn what everyone else doesn’t.
+I have documented some of the [DevOps-related](/categories/career/becoming_a_devops_engineer) tools that you can learn to better help you stand out from your peers.
