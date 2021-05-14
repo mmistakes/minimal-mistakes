@@ -7,8 +7,10 @@ for d in "${dir[@]}"; do
         if ! grep -rq $i _posts/; then
             if ! grep -rq $i _pages/; then
                 if ! grep -rq $i _config.yml; then
-                    if [ $i != "filler" ]; then
-                        mv $d/$i "assets/images/filler/"
+                    if ! grep -rq $i index.html; then
+                        if [ $i != "filler" ]; then
+                            mv $d/$i "assets/images/filler/"
+                        fi
                     fi
                 fi
             fi
@@ -22,6 +24,8 @@ for i in $(ls "assets/images/filler/"); do
     elif grep -rq $i _pages/; then
         echo "File being used: assets/images/filler/${i}"
     elif grep -rq $i _config.yml; then
+        echo "File being used: assets/images/filler/${i}"
+    elif grep -rq $i index.html; then
         echo "File being used: assets/images/filler/${i}"
     fi
 done
