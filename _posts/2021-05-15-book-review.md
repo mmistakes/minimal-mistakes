@@ -5,7 +5,7 @@ categories: review
 comments: true
 ---
 
-![책 표지](/assets/images/review/cover.png)
+[<img src="/assets/images/review/cover.png">](http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&linkClass=&barcode=9791165920579){:target="_blank"}
 
 ### 출판 제안
 
