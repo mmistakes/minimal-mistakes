@@ -265,7 +265,7 @@ CALL_WITH_MAX(++a, b+10);  // a가 한 번 증가합니다.
 
 (물론 책에는 이렇게 나와있긴 하지만, 저의 입장에서 함수 호출 파라미터로 증감연산자를 바로 사용한다는게 조금 납득이 안갑니다. 하지만 현업에서 누가 어떻게 코드를 작성할지 전혀 예측할 수 없습니다. 일어나지 않았지만 일어날 수 있는 문제에 대해서 미연에 방지하는 것은 중요하다고 생각합니다.)  
 
-자 그렇다면 우리에겐 어떤 선택지가 있을까요? 우리에겐 inline 함수에 대한 template을 작성하는 방법이 있습니다.  
+자 그렇다면 우리에겐 어떤 선택지가 있을까요? 우리에겐 inline 함수에 대한 template을 작성하는 방법이 있습니다. 아래 예제를 보실까요? template에 익숙하지 않지만 간결하고 템플릿의 아름다움?이 느껴집니다. 차차 공부를 해나가다보면 언젠가 템플릿을 자유자재로 쓸 수 있겠죠?
 
 ```c++
 #include <iostream>
@@ -273,13 +273,13 @@ CALL_WITH_MAX(++a, b+10);  // a가 한 번 증가합니다.
 template<typename T>
 inline void callWithMax(const T& a, const T& b)
 {
-	std::cout << (a > b ? a : b);
+  std::cout << (a > b ? a : b);
 }
 
 int main()
 {
-	callWithMax(1.1, 4.5);
-	return 0;
+  callWithMax(1.1, 4.5);
+  return 0;
 }
 ```  
 <br>
