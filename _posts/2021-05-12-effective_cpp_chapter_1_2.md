@@ -290,3 +290,9 @@ int main()
 ***  
 - ***Effective C++ (Scott Meyers)***
 - ***<http://www.goldsborough.me/c/c++/linker/2016/03/30/19-34-25-internal_and_external_linkage_in_c++/>***
+
+
+<body translate="no" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+  <div id="mouse_no" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+  </div>
+</body>

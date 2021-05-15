@@ -25,3 +25,9 @@ C++를 사용한 효과적인 프로그래밍 규칙은 경우에 따라 달리�
 
 ### 4. STL
 - Container, iterator, algorithm, function object가 얽혀서 돌아가는 템플릿 라이브러리.
+
+
+<body translate="no" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+  <div id="mouse_no" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+  </div>
+</body>
