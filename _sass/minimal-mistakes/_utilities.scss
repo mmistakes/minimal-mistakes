@@ -332,74 +332,36 @@ body:hover .visually-hidden button {
 
 .navicon {
   position: relative;
-  width: $navicon-width;
-  height: $navicon-height;
-  background: $primary-color;
+  color: $masthead-link-color;
   margin: auto;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 
-  &:before,
-  &:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: $navicon-width;
-    height: $navicon-height;
-    background: $primary-color;
+  &:before {
     -webkit-transition: 0.3s;
     transition: 0.3s;
-  }
-
-  &:before {
-    top: (-2 * $navicon-height);
-  }
-
-  &:after {
-    bottom: (-2 * $navicon-height);
   }
 }
 
 .close .navicon {
-  /* hide the middle line*/
-  background: transparent;
-
-  /* overlay the lines by setting both their top values to 0*/
-  &:before,
-  &:after {
+  &:before {
     -webkit-transform-origin: 50% 50%;
     -ms-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
-    top: 0;
-    width: $navicon-width;
-  }
-
-  /* rotate the lines to form the x shape*/
-  &:before {
-    -webkit-transform: rotate3d(0, 0, 1, 45deg);
-    transform: rotate3d(0, 0, 1, 45deg);
-  }
-  &:after {
-    -webkit-transform: rotate3d(0, 0, 1, -45deg);
-    transform: rotate3d(0, 0, 1, -45deg);
   }
 }
 
 .greedy-nav__toggle {
   &:before {
     @supports (pointer-events: none) {
-      content: '';
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-      background-color: $background-color;
       -webkit-transition: $global-transition;
       transition: $global-transition;
       pointer-events: none;
     }
+  }
+
+  .navicon:before {
+    content: $navicon-open;
   }
 
   &.close {
@@ -409,20 +371,16 @@ body:hover .visually-hidden button {
       transition: $global-transition;
       pointer-events: auto;
     }
+
+    .navicon:before {
+      content: $navicon-closed;
+    }
   }
 }
 
 .greedy-nav__toggle:hover {
-  .navicon,
-  .navicon:before,
-  .navicon:after {
-    background: mix(#000, $primary-color, 25%);
-  }
-
-  &.close {
-    .navicon {
-      background: transparent;
-    }
+  .navicon {
+    color: $masthead-link-color-hover
   }
 }
 
