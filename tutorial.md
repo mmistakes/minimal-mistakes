@@ -12,8 +12,9 @@ header:
 
 ### Getting Started
 ***
-To get started:
+App opening screen
 
+![image](https://user-images.githubusercontent.com/43550569/118410568-f3d84380-b644-11eb-8160-5b08b3496a65.png)
 >Note: To view another glacier ...
 
 ```python
@@ -24,6 +25,12 @@ for i in range(10):
 ```   
 
 ### Functionality
+
+## Seminal Examples 
+
+## Map Layers and Navigation
+
+## Data Access 
 
 
 
