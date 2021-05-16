@@ -8,12 +8,16 @@ redirect_from:
   - /about.html
 ---
 
-Hi, I am a last-year undergraduate student in the [School of Computer Science and Engineering](http://www2.scut.edu.cn/cs_en/), [South China University of Technology (SCUT)](https://www.scut.edu.cn/en/). Previously, I was a research assistant at SCUT Machine Intelligence Lab (SMIL), working closely with Prof. [Mingkui Tan](https://tanmingkui.github.io/) and Prof. Qing Du. I also worked with Prof. [Pengtao Xie](https://sites.google.com/site/pengtaoxie2008/) at [UC San Diego](https://ucsd.edu/) and Prof. [Xiaojun Quan](https://sites.google.com/site/xiaojunquan/homepage) at [Sun Yat-sen University](http://www.sysu.edu.cn/en/index.htm). Besides, I spent wonderful five months as an exchange student in the [Department of EECS](https://eecs.berkeley.edu/), [UC Berkeley](https://www.berkeley.edu/).
+Hi, I am a last-year undergraduate student in the [School of Computer Science and Engineering](http://www2.scut.edu.cn/cs_en/), [South China University of Technology (SCUT)](https://www.scut.edu.cn/en/). Previously, I was a research assistant at SCUT Machine Intelligence Lab (SMIL), working closely with Prof. [Mingkui Tan](https://tanmingkui.github.io/) and Prof. Qing Du. I also worked with Prof. [Xiaojun Quan](https://sites.google.com/site/xiaojunquan/homepage) at [Sun Yat-sen University](http://www.sysu.edu.cn/en/index.htm). Besides, I spent wonderful five months as an exchange student in the [Department of EECS](https://eecs.berkeley.edu/), [UC Berkeley](https://www.berkeley.edu/).
 
 Here is my [Curriculum Vitae in PDF format](../files/Minqian_Liu_CV.pdf).
 
 ## Research Interests
-My research interests include **model generalization** (e.g., few-shot learning, transfer learning, domain adaptation, etc.), deep learning for **natural language processing**, as well as **machine learning** and its applications.
+My primary research interests lie in the field of **natural language processing** and **computational linguistics**. Specifically, I am interested in the following research topics: <br>
+1) Knowledge-driven information extraction: extracting structured knowledge from text with commonsense reasoning and knowledge-based reasoning; <br>
+2) Natural language generation: text summarization, machine translation, and automatic evaluation for text generation; <br>
+3) Syntax and parsing, especially dependency parsing and coping with syntactic ambiguity.
+
 
 ## News
 **\[2021.1]** One paper accepted by **ICASSP 2021**. Congrat to all my co-authors!<br>
