@@ -21,7 +21,6 @@ My primary research interests lie in the field of **natural language processing*
 
 ## News
 **\[2021.1]** One paper accepted by **ICASSP 2021**. Congrat to all my co-authors!<br>
-**\[2020.10]** Awarded Saliai Technology Innovation Scholarship (Top 10% in Computer Science Department)<br>
 **\[2020.7]** One paper accepted by **ACM Multimedia 2020**. Great thanks to all my co-authors!
 
 
