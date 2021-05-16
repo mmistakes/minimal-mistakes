@@ -27,9 +27,22 @@ for i in range(10):
 ### Functionality
 
 ## Seminal Examples 
-
+Our app contains three seminal examples of analysis results for glacier retreat over time. 
 ## Map Layers and Navigation
 
+The map can be navigated as any other application using google maps. Search bar can used to navigate to particular regions of the world as desired and any click with a glacier polygon bring information on the side bar for data download. 
+
+We have four primary fixed geo-spatial data layers displayed on the world map in our Google Earth Engine Application. 
+
+Layer 1: Polygon for every spatially joined WGMS valley glacier, this consists of 474 glaciers. 
+
+Layer 2: Polygon for every spatially joined WGMS valley glacier that has a matching GLIMS ID with the GLIMS database, this consists of 75 glaciers.
+
+Layer 3: Glacier flowlines estimated using gd-flow (Hansen et al 2021).
+
+Layer 4: Bounding Box around the glacier polygons.
+
+These layers are automatically loaded on the map within the application but each can be hidden for easier viewing. 
 ## Data Access 
 
 
