@@ -2,6 +2,23 @@
 layout: archive
 ---
 
+{% if page.url == "/" %}
+  {% assign entries_layout = page.entries_layout | default: 'list' %}
+  {% assign print_header = true %}
+  <div class="entries-{{ entries_layout }}">
+    {% assign posts = site.posts %}
+    {% for post in posts %}
+      {% if post.pinned %}
+        {% if print_header %}
+          <h2 class="archive__subtitle"><i class="fas fa-thumbtack"></i> Pinned Posts</h2>
+          {% assign print_header = false %}
+        {% endif %}
+        {% include archive-single.html type=entries_layout %}
+      {% endif %}
+    {% endfor %}
+  </div>
+ {% endif %}
+  
 {{ content }}
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
