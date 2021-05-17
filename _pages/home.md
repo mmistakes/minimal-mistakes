@@ -6,7 +6,7 @@ header:
   overlay_color: "#3abca0"
   actions:
     - label: "<i class='fas fa-download'></i> Install now"
-      url: "https://smqtk.readthedocs.io/en/latest/installation.html"
+      url: "https://github.com/XAITK/xaitk-saliency/blob/master/docs/installation.rst"
 excerpt: >
   An open source, explainable AI toolkit built for analytics and autonomy applications.<br />
   <small><a href="https://github.com/XAITK/">Latest release v0.1</a></small>
