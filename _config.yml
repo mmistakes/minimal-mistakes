@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Home | Stoic Dev"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Aditya Kanthale"
+name                     : "Aastha"
 description              : "My personal website which I use to blog about tech, philosophy and art. I also maintain my projects here."
 url                      : "https://stoic-devv.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
