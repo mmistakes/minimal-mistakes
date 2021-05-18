@@ -28,8 +28,18 @@ then we decide to build our personal "Rotten Tomatoes" application (ugh...).
 As we are very experienced developers, we start coding from the backend. Hence, we begin by defining
 the resources we need in terms of the domain.
 
-Indeed, we need a `Movie`, and a movie has a `Director`, many `Actors`, etc. Without dwelling on the
-details, we can identify the following APIs among the others:
+Indeed, we need a `Movie`, and a movie has a `Director`, many `Actor`s, etc:
+
+```scala
+type Actor = String
+
+case class Movie(id: String, title: String, year: Int, actors: List[String], director: String)
+
+case class Director(firstName: String, lastName: String)
+
+```
+
+Without dwelling on the details, we can identify the following APIs among the others:
 
 * Getting all movies of a director (i.e., Zack Snyder) made during a given year
 * Getting the list of actors of a movie
@@ -111,7 +121,7 @@ We can imagine the route that returns the list of movies of a director as someth
 following:
 
 ```
-GET /movies?director=Zack%20Snyder
+GET /movies?director=Zack%20Snyder&year=2021
 ```
 
 As we said, every route corresponds to an instance of the `HttpRoutes[F]` type. Again, the http4s
@@ -121,8 +131,15 @@ Through the DSL, we build an `HttpRoutes[F]` using pattern matching as a sequenc
 statements. So, let's do it:
 
 ```scala
-HttpRoutes.of[F] {
-  case GET -> Root / "movies" :? DirectoryQueryParamMatcher(director) +& YearQueryParamMatcher(year) => ???
+import cats.effect.Sync
+import org.http4s.HttpRoutes
+import org.http4s.Method.GET
+import org.http4s.Uri.Path.Root
+
+def movieRoutes[F[_] : Sync]: HttpRoutes[F] = {
+  HttpRoutes.of[F] {
+    case GET -> Root / "movies" :? DirectorQueryParamMatcher(director) +& YearQueryParamMatcher(maybeYear) => ???
+  }
 }
 ```
 
@@ -164,6 +181,8 @@ the `abstract class QueryParamDecoderMatcher`, we can pull directly into a varia
 parameter:
 
 ```scala
+import org.http4s.dsl.impl.QueryParamDecoderMatcher
+
 object DirectorQueryParamMatcher extends QueryParamDecoderMatcher[String]("director")
 ```
 
@@ -178,6 +197,8 @@ It's possible to manage also optional query parameters. In this case, we have to
 class of our matcher, using the `OptionalQueryParamDecoderMatcher`:
 
 ```scala
+import org.http4s.dsl.impl.OptionalValidatingQueryParamDecoderMatcher
+
 object YearQueryParamMatcher extends OptionalQueryParamDecoderMatcher[Year]("year")
 ```
 
@@ -193,6 +214,9 @@ To do so, starting from a `QueryParamDecoder[Int]`, we can map the decoded resul
 need, i.e., an instance of the `java.time.Year` class:
 
 ```scala
+import cats.implicits.toBifunctorOps
+import org.http4s.{ParseFailure, QueryParamDecoder}
+
 implicit val yearQueryParamDecoder: QueryParamDecoder[Year] =
   QueryParamDecoder[Int].map(Year.of)
 ```
