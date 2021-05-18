@@ -10,7 +10,7 @@ link:
 date: 2021-05-14
 modified:
 share: true
-author: kateergo
+author: KateErgo
 ---
 
 Congrats to Kate, Luna, Esther, and Tom with their new paper that just got accepted in Psychonomic Bulletin & Review! :fireworks:
