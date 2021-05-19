@@ -1,11 +1,11 @@
 ---
 
 layout: single
-title: Tool
+title: Tutorial
 excerpt: "A Google Earth Engine web application to monitor mountain valley glaciers"
 header:
-    overlay_image: /assets/images/glacier_header.jpg
-    overlay_filter: 0.5
+    overlay_image: /assets/images/glacier_header.png
+    overlay_filter: 0.1
 
 
 ---

@@ -1,11 +1,13 @@
 # main links
 main:
-  - title: "Launch App"
-    url: https://dsl030.users.earthengine.app/view/glaciersapp
   - title: "Home"
-    url: /index/
+    url: /
+  - title: "Launch App"
+    url: https://dsl030.users.earthengine.app/view/glacierview
   - title: "Tutorial"
     url: /tutorial/
+  - title: "Publications"
+    url: /publications/
   - title: "About"
     url: /about/
   

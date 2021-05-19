@@ -1,9 +1,15 @@
 ---
+
 layout: single
-author_profile: true
-excerpt: "A Google Earth Engine web application to monitor mountain valley glaciers"
+title: GlacierView-related Publications
+excerpt: " "
 header:
     overlay_image: /assets/images/glacier_header.png
     overlay_filter: 0.1
 
+
 ---
+
+### Publications
+
+Text
