@@ -12,7 +12,7 @@ submission_details:
     papers:
       - https://openaccess.thecvf.com/content_cvpr_2017/papers/Bau_Network_Dissection_Quantifying_CVPR_2017_paper.pdf
     software:
-      - https://github.com/XAITK/xaitk-equas
+      - https://github.com/alexmontesdeoca-raytheon/xaitk.bbn.equas
     demos:
       - https://www.equas.net/#/oneshotdemo?modality=component
     data:
