@@ -13,13 +13,12 @@
 
 - Verbeke, P., & Verguts, T. (2020). Neural synchrony for adaptive control. PsyArXiv. [https://psyarxiv.com/523x9/](https://psyarxiv.com/523x9/)
 
-- Huycke, P., Verbeke, P., Boehler, C. N., & Verguts, T. (2020). Theta and alpha power across fast and slow timescales in cognitive control. BioRxiv. [https://doi.org/10.1101/2020.08.21.259341](https://doi.org/10.1101/2020.08.21.259341)
-
-
 
 ## Recent publications
 
 in press:
+
+- Huycke, P., Verbeke, P., Boehler, C. N., & Verguts, T. (in press). Theta and alpha power across fast and slow timescales in cognitive control. European Journal of Neuroscience.
 
 - Ergo, K., De Vilder, L., De Loof, E., & Verguts, T. (in press). Reward prediction errors drive declarative learning irrespective of agency. Psychonomic Bulletin & Review.
 
