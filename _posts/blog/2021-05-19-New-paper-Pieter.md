@@ -2,7 +2,7 @@
 layout: post
 title: New paper published in European Journal of Neuroscience
 categories: blog
-excerpt: Theta and alpha power across fast and slow timescales in cognitive control
+excerpt: Theta and alpha across fast and slow timescales
 tags: [pieter-h, pieter-v, tom, new-paper]
 image:
   feature:
