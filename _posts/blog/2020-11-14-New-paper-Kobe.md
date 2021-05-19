@@ -17,4 +17,4 @@ Congrats to Kobe for their paper in Cognition. They investigate the empirical co
 
 
 Reference:
-Desender, K., Donner, T. H., & Verguts, T. (in press). Dynamic expressions of confidence in an evidence accumuluation framework. Cognition.
+- Desender, K., Donner, T. H., & Verguts, T. (2021). Dynamic expressions of confidence within an evidence accumulation framework. Cognition, 207, 104522. [https://doi.org/10.1016/j.cognition.2020.104522](https://doi.org/10.1016/j.cognition.2020.104522)

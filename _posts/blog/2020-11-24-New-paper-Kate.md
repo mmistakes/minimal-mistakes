@@ -3,7 +3,7 @@ layout: post
 title: tACS paper in PLoS:One
 categories: blog
 excerpt: Prediction error in declarative memory
-tags: [kate, tom, new-paper]
+tags: [kate, esther, tom, new-paper]
 image:
   feature:
 link:
@@ -17,4 +17,4 @@ Congrats to Kate for their paper in PLoS:One. They investigate the effect of the
 
 
 Reference:
-Ergo, K., De Loof, E., Debra, G., Pastötter, B., & Verguts, T. (2021). Failure to modulate reward prediction errors in declarative learning with theta (6 Hz) frequency transcranial alternating current stimulation. PloS One.
+- Ergo, K., De Loof, E., Debra, G., Pastötter, B., & Verguts, T. (2020). Failure to modulate reward prediction errors in declarative learning with theta (6 Hz) frequency transcranial alternating current stimulation. PloS one, 15(12), e0237829. [https://doi.org/10.1371/journal.pone.0237829](https://doi.org/10.1371/journal.pone.0237829)
