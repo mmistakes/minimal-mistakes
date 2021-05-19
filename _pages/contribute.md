@@ -75,7 +75,7 @@ classes: wide2
    [comment]: <> (Are there known failure modes?)
    
    ## References
-   [comment]: <> (Any additional information, e.g. papers (cited with bibtex) related to this contribution.)
+   [comment]: <> (Any additional information, e.g. papers \(cited with bibtex\) related to this contribution.)
    ```
 
 4. Fill out this template with the information relevant to your contribution. An example submission can be found at `_capabilities/fakesal.md`

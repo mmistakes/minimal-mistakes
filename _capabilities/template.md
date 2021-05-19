@@ -59,4 +59,4 @@ submission_details:
 [comment]: <> (Are there known failure modes?)
    
 ## References
-[comment]: <> (Any additional information, e.g. papers (cited with bibtex) related to this contribution.)
+[comment]: <> (Any additional information, e.g. papers \(cited with bibtex\) related to this contribution.)
