@@ -31,7 +31,7 @@ Some arbitrary examples:
 * **Expected Weekly Commitment:** 5 hours  
 
 ## 3 - The Dynamics of Life  
-* **Mentors:** Mohit Kulkarni (hairyballs#1384)  
+* **Mentors:** Mohit Kulkarni (returnofhairy#1384)  
 * **Description :** In this course we wish to discover aspects of mathematics widely used in dynamical systems with application to biology. Nature has beautiful patterns as well as chaos, we wish to understand how dynamical systems work particularly in the brain. Initial weeks would cover basic biology and basic mathematics required thereafter. Here we will try to get an intuituon on why mathematics and biology aren't completely different areas. Later, we will understand what a network, what chaos is and why dynamics is important. We will look into one/two dimensional dynamical systems(would also include the dynamics of a neuron). Later topics will depend on you and may include RNN's, large-scale neural models, attractor dynamics etc. 
 
   Maths may be difficult to understand, so we will take the help of cool visualisations. Programming knowledge(any language) is a plus but not required.
