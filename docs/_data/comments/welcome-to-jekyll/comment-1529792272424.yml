@@ -1,7 +1,0 @@
-_id: 44fe8b10-7733-11e8-a9b3-5b9ff79eceda
-message: "Hey Michael,\r\nI was using your theme and found out that I cant use the collapsible markdown feature. Could you please let me know if there is any solution to this ? Eg code is below\r\n\r\n## collapsible markdown?\r\n\r\n<details><summary>CLICK ME</summary>\r\n<p>\r\n\r\n#### yes, even hidden code blocks!\r\n\r\n```python\r\nprint(\"hello world!\")\r\n```\r\n\r\n</p>\r\n</details>"
-name: VIpin Kumar
-email: eeafc03a07852a239754fb68cca903b3
-url: ''
-hidden: ''
-date: '2018-06-23T22:17:52.423Z'
