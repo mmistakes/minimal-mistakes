@@ -3,7 +3,7 @@ layout: post
 title: "FWO grant for Jonas"
 categories: blog
 excerpt: FWO PhD grant
-tags: [jonas, fwo]
+tags: [jonas, FWO]
 image:
   feature:
 link:
