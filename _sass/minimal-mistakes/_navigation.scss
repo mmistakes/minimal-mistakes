@@ -222,7 +222,7 @@
     display: flex;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
-    justify-content: flex-end;
+    justify-content: flex-start;
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -251,11 +251,11 @@
         transform: scaleX(0) translate3d(0, 0, 0); // hide
       }
 
-      &:hover:before {
-        -webkit-transform: scaleX(1);
-        -ms-transform: scaleX(1);
-        transform: scaleX(1); // reveal
-      }
+      // &:hover:before {
+      //   -webkit-transform: scaleX(1);
+      //   -ms-transform: scaleX(1);
+      //   transform: scaleX(1); // reveal
+      // }
     }
   }
 
