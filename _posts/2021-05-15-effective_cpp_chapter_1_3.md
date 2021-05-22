@@ -369,3 +369,8 @@ public:
 #### Reference 
 ***  
 - ***Effective C++ (Scott Meyers)***
+
+<body translate="no" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+  <div id="mouse_no" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+  </div>
+</body>
