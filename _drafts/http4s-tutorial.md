@@ -133,10 +133,11 @@ statements. So, let's do it:
 ```scala
 import cats.effect.Sync
 import org.http4s.HttpRoutes
-import org.http4s.Method.GET
-import org.http4s.Uri.Path.Root
+import org.http4s.dsl.Http4sDsl
 
 def movieRoutes[F[_] : Sync]: HttpRoutes[F] = {
+  val dsl = Http4sDsl[F]
+  import dsl._
   HttpRoutes.of[F] {
     case GET -> Root / "movies" :? DirectorQueryParamMatcher(director) +& YearQueryParamMatcher(maybeYear) => ???
   }
@@ -147,6 +148,9 @@ This structure might look extremely compact and perhaps hard to understand, but 
 through it real quick. **We surround the definition of all the routes in the `HttpRoutes.of`
 constructor**, parametrizing the routes' definition with an effect `F`, as we probably have to
 retrieve information from some external resource.
+
+Moreover, we import all the extension methods and implicit conversions from the `Http4sDsl[F]`
+object. The import allows the magic below to work.
 
 Then, each `case` statement represents a specific route, and it matches a `Request` object. The DSL
 provides many deconstructors for a `Request` object, and everyone is associated with a
@@ -214,8 +218,8 @@ To do so, starting from a `QueryParamDecoder[Int]`, we can map the decoded resul
 need, i.e., an instance of the `java.time.Year` class:
 
 ```scala
-import cats.implicits.toBifunctorOps
-import org.http4s.{ParseFailure, QueryParamDecoder}
+import org.http4s.QueryParamDecoder
+import java.time.Year
 
 implicit val yearQueryParamDecoder: QueryParamDecoder[Year] =
   QueryParamDecoder[Int].map(Year.of)
@@ -261,6 +265,10 @@ implements the method `def unapply(str: String): Option[T]`. For example, if we 
 first and the last name of a director directly from the path, we can do the following:
 
 ```scala
+import cats.effect.Sync
+import org.http4s.HttpRoutes
+import org.http4s.dsl.Http4sDsl
+
 object DirectorVar {
   def unapply(str: String): Option[Director] = {
     if (str.nonEmpty && str.matches(".* .*")) {
@@ -273,7 +281,10 @@ object DirectorVar {
 }
 
 HttpRoutes.of[F] {
-  case GET -> Root / "directors" / DirectorVar(director) => ???
+  val dsl = Http4sDsl[F]
+  import dsl._
+  case GET -> Root / "directors" / DirectorVar(director)
+  => ???
 }
 ```
 
@@ -292,6 +303,8 @@ of the semigroup, returns a new element also belonging to the semigroup. For the
 class, the function is called`combineK` or `<+>`.
 
 ```scala
+import org.http4s.HttpRoutes
+
 def allRoutes[F[_] : Sync]: HttpRoutes[F] = {
   import cats.syntax.semigroupk._
   movieRoutes <+> directorRoutes
@@ -307,6 +320,8 @@ such requests should end up with 404 HTTP responses. As always, the http4s libra
 way to code such behavior, using the `orNotFound` method from the package `org.http4s.implicits`:
 
 ```scala
+import org.http4s.HttpApp
+
 def allRoutesComplete[F[_] : Sync]: HttpApp[F] = {
   allRoutes.orNotFound
 }
@@ -327,9 +342,27 @@ So, the `http4s-dsl` module provides us some shortcuts to create responses assoc
 status codes. For example, the `Ok()` function creates a response with a 200 HTTP status:
 
 ```scala
+import cats.effect.Sync
+import org.http4s.HttpRoutes
+import org.http4s.dsl.Http4sDsl
+
+object DirectorVar {
+  def unapply(str: String): Option[Director] = {
+    if (str.nonEmpty && str.matches(".* .*")) {
+      Try {
+        val splitStr = str.split(' ')
+        Director(splitStr(0), splitStr(1))
+      }.toOption
+    } else None
+  }
+}
+
 HttpRoutes.of[F] {
-  case GET -> Root / "directors" / DirectorVar(director) =>
-    Ok(Director("Zack", "Snyder").asJson)
+  val dsl = Http4sDsl[F]
+  import dsl._
+  case GET -> Root / "directors" / DirectorVar(director)
+  =>
+  Ok(Director("Zack", "Snyder").asJson)
 }
 ```
 
@@ -358,6 +391,9 @@ Request_ HTTP Status if the query parameter `year` doesn't represent a positive 
 need to change the type of matcher we need to use, introducing the validation:
 
 ```scala
+import org.http4s.{ParseFailure, QueryParamDecoder}
+import scala.util.Try
+
 implicit val yearQueryParamDecoder: QueryParamDecoder[Year] =
   QueryParamDecoder[Int].emap { y =>
     Try(Year.of(y))
@@ -370,19 +406,64 @@ implicit val yearQueryParamDecoder: QueryParamDecoder[Year] =
 object YearQueryParamMatcher extends OptionalValidatingQueryParamDecoderMatcher[Year]("year")
 ```
 
-Then, we can introduce the code handling the failure with a `BadRequest` HTTP status:
+We validate the query parameter's value using the dedicated `emap` method of the type
+`QueryParamDecoder`:
 
 ```scala
-case GET -> Root / "movies" :? DirectorQueryParamMatcher(director) +& YearQueryParamMatcher(maybeYear) =>
-maybeYear match {
-  case Some(y) =>
-    y.fold(
-      _ => BadRequest("The given year is not valid"),
-      year =>
-      // Proceeding with the business logic
-    )
-  case None => NotFound(s"There are no movies for director $director")
-}
+def emap[U](f: T => Either[ParseFailure, U]): QueryParamDecoder[U] = ???
+```
+
+The function work like a common `map` function, but it produces an `Either[ParseFailure, U]` value:
+If the mapping goes, the function outputs a `Right[U]` value, a `Left[ParseFailure]` otherwise.
+Furthermore, the `ParseFailure` is a type of the library indicating an error parsing an HTTP
+Message:
+
+```scala
+final case class ParseFailure(sanitized: String, details: String)
+```
+
+The `sanitized` attribute may safely be displayed to a client to describe an error condition. It
+should not echo any part of a Request. Instead, the `details` attribute contains any relevant
+details omitted from the sanitized version of the error, and it may freely echo a Request.
+
+Once validated the query parameter, we can introduce the code handling the failure with
+a `BadRequest` HTTP status:
+
+```scala
+import org.http4s.dsl.Http4sDsl
+import org.http4s.{ParseFailure, QueryParamDecoder}
+import org.http4s.dsl.impl.{OptionalValidatingQueryParamDecoderMatcher, QueryParamDecoderMatcher}
+import java.time.Year
+import scala.util.Try
+
+object DirectorQueryParamMatcher extends QueryParamDecoderMatcher[String]("director")
+
+implicit val yearQueryParamDecoder: QueryParamDecoder[Year] =
+  QueryParamDecoder[Int].emap { y =>
+    Try(Year.of(y))
+      .toEither
+      .leftMap { tr =>
+        ParseFailure(tr.getMessage, tr.getMessage)
+      }
+  }
+
+object YearQueryParamMatcher extends OptionalValidatingQueryParamDecoderMatcher[Year]("year")
+
+def movieRoutes[F[_] : Sync]: HttpRoutes[F] = {
+  val dsl = new Http4sDsl[F] {}
+  import dsl._
+  HttpRoutes.of[F] {
+    case GET -> Root / "movies" :? DirectorQueryParamMatcher(director) +& YearQueryParamMatcher(maybeYear) =>
+      maybeYear match {
+        case Some(y) =>
+          y.fold(
+            _ => BadRequest("The given year is not valid"),
+            year => ???
+            // Proceeding with the business logic
+          )
+        case None => NotFound(s"There are no movies for director $director")
+      }
+  }
 ```
 
 ### 5.1. Headers and Cookies
@@ -616,8 +697,8 @@ BlazeServerBuilder[IO](global)
 // ...it's not finished yet
 ```
 
-In blaze jargon, we say we mount the routes at the given path. The default path is `"/"`, but
-if we need we can easily change the path using a `Router`:
+In blaze jargon, we say we mount the routes at the given path. The default path is `"/"`, but if we
+need we can easily change the path using a `Router`:
 
 ```scala
 val apis = Router(
