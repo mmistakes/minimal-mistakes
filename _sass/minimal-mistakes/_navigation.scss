@@ -184,6 +184,8 @@
     margin: 0 1rem;
     color: $masthead-link-color;
     text-decoration: none;
+    -webkit-transition: none;
+    transition: none;
 
     &:hover {
       color: $masthead-link-color-hover;
@@ -197,6 +199,11 @@
     &.site-title {
       margin-left: 0;
     }
+  }
+  
+  img{
+    -webkit-transition: none;
+    transition: none;
   }
 
   &__toggle {

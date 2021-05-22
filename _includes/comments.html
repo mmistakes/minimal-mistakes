@@ -35,7 +35,7 @@
           <div class="page__comments-form">
             <h4 class="page__comments-title">{{ site.data.ui-text[site.locale].comments_label | default: "Leave a Comment" }}</h4>
             <p class="small">{{ site.data.ui-text[site.locale].comment_form_info | default: "Your email address will not be published. Required fields are marked" }} <span class="required">*</span></p>
-            <form id="new_comment" class="page__comments-form js-form form" method="post" action="{{ site.comments.staticman.endpoint | default: 'https://api.staticman.net/v2/entry/' }}{{ site.repository }}/{{ site.comments.staticman.branch }}/comments">
+            <form id="new_comment" class="page__comments-form js-form form" method="post" action="{{ site.comments.staticman.endpoint }}{{ site.repository }}/{{ site.comments.staticman.branch }}/comments">
               <div class="form__spinner">
                 <i class="fas fa-spinner fa-spin fa-3x fa-fw"></i>
                 <span class="sr-only">{{ site.data.ui-text[site.locale].loading_label | default: "Loading..." }}</span>
