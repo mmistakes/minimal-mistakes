@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "mint" # "default" "air", "aqua", "contrast", "dark",
 locale                   : "en-US"
 title                    : "Matthew's Story"
 title_separator          : "-"
-subtitle                 : "친절한 매튜씨"
+subtitle                 : ""
 name                     :
 description              : "An amazing website."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
