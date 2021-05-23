@@ -1,23 +1,6 @@
 [
   {
     "image_path": null,
-    "alt": "Einteilung 1. Klassen",
-    "title": "Einteilung 1. Klassen",
-    "excerpt": null,
-    "url": "https://www.google.com/calendar/event?eid=ZTY4NzNxM2EyNGlvaXNocTNsMjFnZTAxN2cgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
-    "start": {
-      "date": null,
-      "date_time": "2021-05-25T13:30:00+02:00"
-    },
-    "end": {
-      "date": null,
-      "date_time": "2021-05-26T14:30:00+02:00"
-    },
-    "created": "2021-05-11T10:51:41.000Z",
-    "updated": "2021-05-11T19:10:42.311Z"
-  },
-  {
-    "image_path": null,
     "alt": "4. GEV digital",
     "title": "4. GEV digital",
     "excerpt": null,
@@ -32,6 +15,23 @@
     },
     "created": "2021-05-10T03:36:02.000Z",
     "updated": "2021-05-10T03:36:02.652Z"
+  },
+  {
+    "image_path": null,
+    "alt": "Schulkonferenz",
+    "title": "Schulkonferenz",
+    "excerpt": null,
+    "url": "https://www.google.com/calendar/event?eid=aTV1MHJtYmU1b29qbHJmY2NuNzVjdWVsbjQgaGVtODcwZmZhMjFua2Y5MWE4bjA1bGxtc3NAZw",
+    "start": {
+      "date": null,
+      "date_time": "2021-05-27T15:30:00+02:00"
+    },
+    "end": {
+      "date": null,
+      "date_time": "2021-05-27T16:30:00+02:00"
+    },
+    "created": "2021-05-22T05:48:53.000Z",
+    "updated": "2021-05-22T05:48:53.942Z"
   },
   {
     "image_path": null,
