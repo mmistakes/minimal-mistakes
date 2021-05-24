@@ -1,5 +1,5 @@
 ---
-title: "The Stakeholder Playbook"
+title: "Stakeholder Playbook"
 excerpt: "The Playbook lists the  explanation requirements of jurisprudence professionals, Contracting Officers, Procurement Officers, Program Managers, Development Team Leaders, System Integrators, System evaluators, policy makers, and trainers."
 tags: # Select from this set
   - Methodology
