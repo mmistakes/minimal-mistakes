@@ -34,7 +34,7 @@ layout: default
             {% elsif page.last_modified_at != page.date %}
               <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i>updatedAt:</strong> <time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: "%B %-d, %Y" }}</time><small>(<i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i>createdAt: <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>)</small></p>
             {% endif %}
-            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
+            <dir class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</dir>
           {% endif %}
         </header>
       {% endunless %}
