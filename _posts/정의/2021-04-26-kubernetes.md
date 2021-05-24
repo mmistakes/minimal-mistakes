@@ -11,7 +11,7 @@ tags:
    - replica set
    - deployment
 
-last_modified_at: 2021-04-26T00:55:00 # 마지막 변경일
+last_modified_at: 2021-05-24
 
 ---
 먼저, 쿠버네티스는 도커를 통해 개발한 서비스를 쉽게 관리하게 도와주는 어플리케이션이다.
@@ -67,5 +67,5 @@ NetworkPolicy는 Inbound, Outbound에 대한 트래픽 제한을 설정한다. �
 ![](https://i.ibb.co/YbjBMhH/Kubernetes-210425-233021-7.jpg)
 ![](https://i.ibb.co/ZVTrP1D/Kubernetes-210425-233021-8.jpg)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4NjQxMjQ3NV19
+eyJoaXN0b3J5IjpbLTE1NDM1MjEwOTFdfQ==
 -->
