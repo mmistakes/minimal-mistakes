@@ -1,9 +1,8 @@
 ---
-title: \[k8s] 쿠버네티스 정리
-excerpt: k8s가 어떻게 구성되어 있고 동작 방식에 대해서 이해하기 쉽게 정리한다.
+title: \[kubernetes] 쿠버네티스란?
 
 categories: 
-   - 정의
+   - kubernetes
 
 tags:
    - k8s
@@ -12,29 +11,9 @@ tags:
    - replica set
    - deployment
 
-author_profile: true #작성자 프로필 출력여부
-read_time: true # read_time을 출력할지 여부 1min read 같은것!
-
-toc: true #Table Of Contents 목차 보여줌2
-toc_label: "My Table of Contents" # toc 이름 정의
-toc_icon: "cog" # font Awesome아이콘으로 toc 아이콘 설정 
-toc_sticky: true # 스크롤 내릴때 같이 내려가는 목차
-
 last_modified_at: 2021-04-26T00:55:00 # 마지막 변경일
 
 ---
-
-# kubernetes (k8s) 란?
-
-여러 블로그를 참고해 정리한 페이지입니다.
-정리하는 과정에서 틀린 정보가 있을 수 있고, 저의 언어로 다시 표현하는 과정에서 오류가 발생했을 수 있습니다. 피드백 주시면 감사하겠습니다.
-
-저는 블로그 글에 옮기기 전에 노트에 정리합니다. 정리 이미지를 보고 싶으시면 블로그 하단의 이미지를 확인해주세요. 글로 정리한 것보다 이미지가 더 자세합니다.
-
-
-
----
-
 먼저, 쿠버네티스는 도커를 통해 개발한 서비스를 쉽게 관리하게 도와주는 어플리케이션이다.
 단, 하나의 서버만 띄운다면 쿠버네티스는 필요없다. 도커만 있어도 된다. 하지만, 트래픽과 오류 등에 대한 대비의 문제로 여러 서버를 띄울 때 쿠버네티스를 사용한다.
 
@@ -88,5 +67,5 @@ NetworkPolicy는 Inbound, Outbound에 대한 트래픽 제한을 설정한다. �
 ![](https://i.ibb.co/YbjBMhH/Kubernetes-210425-233021-7.jpg)
 ![](https://i.ibb.co/ZVTrP1D/Kubernetes-210425-233021-8.jpg)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyODA3MzMwMl19
+eyJoaXN0b3J5IjpbMTk4NjQxMjQ3NV19
 -->
