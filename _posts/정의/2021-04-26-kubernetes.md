@@ -11,7 +11,7 @@ tags:
    - replica set
    - deployment
 
-image : http://holaxprogramming.com/logo.png
+image : https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHJGvUm1c_2A4vb5_Vi11bKO1iPTl8mFgo4C4z6HV3pcDYUte79GnXdAvI9_o2IKhE7k&usqp=CAU
 
 toc: false
 
@@ -71,6 +71,6 @@ NetworkPolicy는 Inbound, Outbound에 대한 트래픽 제한을 설정한다. �
 ![](https://i.ibb.co/YbjBMhH/Kubernetes-210425-233021-7.jpg)
 ![](https://i.ibb.co/ZVTrP1D/Kubernetes-210425-233021-8.jpg)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4NjUyNzcwNCwxNDg0NjU3MDQ2LC0xNT
+eyJoaXN0b3J5IjpbMTIyNDg5NjkzNywxNDg0NjU3MDQ2LC0xNT
 QzNTIxMDkxXX0=
 -->
