@@ -168,8 +168,8 @@ type Repository interface {
 
 | 이름 | 설명 |
 | - | - |
-| [testify](github.com/stretchr/testify) | 테스트 스위트(Suite) 과 모킹 관련 패키지를 제공합니다. |
-| [faker](github.com/bxcodec/faker) | 임의의 데이터를 생성합니다. |
+| [testify](https://github.com/stretchr/testify) | 테스트 스위트(Suite) 과 모킹 관련 패키지를 제공합니다. |
+| [faker](https://github.com/bxcodec/faker) | 임의의 데이터를 생성합니다. |
 
 ### 유스케이스 테스트 스위트 정의
 
@@ -198,7 +198,7 @@ func (ts *UseCaseTestSuite) SetupTest() {
 
 ### 리포지토리 모킹
 
-위에서 모킹할 리포지토리를 구현합니다. [testify](github.com/stretchr/testify) 의 mock 패키지를 이용하면 함수별로 인터페이스가 호출되었는지 여부와 리턴 값들을 모킹 할 수 있습니다. 코드가 잘 안 읽히실 경우 실제 테스트 케이스를 확인하시면 이해가 될 것입니다.
+위에서 모킹할 리포지토리를 구현합니다. [testify](https://github.com/stretchr/testify) 의 mock 패키지를 이용하면 함수별로 인터페이스가 호출되었는지 여부와 리턴 값들을 모킹 할 수 있습니다. 코드가 잘 안 읽히실 경우 실제 테스트 케이스를 확인하시면 이해가 될 것입니다.
 
 ```go
 type mockRepo struct {
