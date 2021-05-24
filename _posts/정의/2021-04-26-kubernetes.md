@@ -11,6 +11,8 @@ tags:
    - replica set
    - deployment
 
+toc: false
+
 last_modified_at: 2021-05-24
 
 ---
@@ -67,5 +69,5 @@ NetworkPolicy는 Inbound, Outbound에 대한 트래픽 제한을 설정한다. �
 ![](https://i.ibb.co/YbjBMhH/Kubernetes-210425-233021-7.jpg)
 ![](https://i.ibb.co/ZVTrP1D/Kubernetes-210425-233021-8.jpg)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDM1MjEwOTFdfQ==
+eyJoaXN0b3J5IjpbMTQ4NDY1NzA0NiwtMTU0MzUyMTA5MV19
 -->
