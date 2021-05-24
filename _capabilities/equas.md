@@ -53,4 +53,4 @@ Other data can be used but only the referenced aircraft data set was tested.'
 Additional external classifier files are needed to run this application. These files were uploaded to a separate file repository (due to a large size) and need to be added to the \evaluation_dataset folder before starting the application.
    
 ## References
-The following paper explains the network dissection process emloyed to map neural network activations to image features to use as explanation representations: https://openaccess.thecvf.com/content_cvpr_2017/papers/Bau_Network_Dissection_Quantifying_CVPR_2017_paper.pdf
+The following paper explains the network dissection process employed to map neural network activations to image features to use as explanation representations: https://openaccess.thecvf.com/content_cvpr_2017/papers/Bau_Network_Dissection_Quantifying_CVPR_2017_paper.pdf
