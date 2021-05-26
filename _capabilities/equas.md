@@ -46,8 +46,7 @@ This contribution's domain is AI explanation presentation and manipulation in th
 ## Model/Data
 A VGG16 pre-trained model was used and trained with an aircraft image data set (see Data) with 10 held out classes used to create/test one shot detectors based on a single class image. Inputs are (224,224) RGB images with the aircraft class as the output.
 ## Limitations
-The system allows for the creation of one shot detectors by creating and manipulating aspects. Where aspects are saliency maps on the target image. There is a limit to how many "aspects" can be created which is enforced by the application due to possible memory constraints when evaluating the one shot detector.
-Other data can be used but only the referenced aircraft data set was tested.'
+The system allows for the creation of one shot detectors by creating and manipulating "aspects", where aspects are saliency maps on the target image. There is a limit to how many aspects can be created which is enforced by the application due to possible memory constraints when evaluating the one shot detector.
 Additional external classifier files are needed to run this application. These files were uploaded to a separate file repository (due to a large size) and need to be added to the \evaluation_dataset folder before starting the application.
 ## References
 The following paper explains the network dissection process employed to map neural network activations to image features to use as explanation representations: https://openaccess.thecvf.com/content_cvpr_2017/papers/Bau_Network_Dissection_Quantifying_CVPR_2017_paper.pdf.
