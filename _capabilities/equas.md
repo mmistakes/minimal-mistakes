@@ -1,5 +1,5 @@
 ---
-title: "Explainable Question Answering System (EQUAS) demo system"
+title: "Explainable Question Answering System (EQUAS) demo system".
 excerpt: "Explainable Question Answering System one shot detector demo modality software."
 tags: # Select from this set
   - Computer Vision
@@ -49,4 +49,10 @@ A VGG16 pre-trained model was used and trained with an aircraft image data set (
 The system allows for the creation of one shot detectors by creating and manipulating "aspects", where aspects are saliency maps on the target image. There is a limit to how many aspects can be created which is enforced by the application due to possible memory constraints when evaluating the one shot detector.
 Additional external classifier files are needed to run this application on aircraft data. These files were uploaded here (due to large size) and need to be added to the \evaluation_dataset folder before starting the application.
 ## References
-The following paper explains the network dissection process employed to map neural network activations to image features to use as explanation representations: https://openaccess.thecvf.com/content_cvpr_2017/papers/Bau_Network_Dissection_Quantifying_CVPR_2017_paper.pdf.
+@inproceedings{bau2017network,
+  title={Network dissection: Quantifying interpretability of deep visual representations},
+  author={Bau, David and Zhou, Bolei and Khosla, Aditya and Oliva, Aude and Torralba, Antonio},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={6541--6549},
+  year={2017}
+}
