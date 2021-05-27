@@ -14,15 +14,15 @@ submission_details:
   version: 1.0
    
   authors:
-    - Robert R. Hoffman
-    - Gary Klein
-    - Shane T. Mueller
-    - Jordan Litman
+    - Robert R. Hoffman<sup>1</sup>
+    - Gary Klein<sup>2</sup>
+    - Shane T. Mueller<sup>3</sup>
+    - Jordan Litman<sup>4</sup>
   organizations:
-    - Institute for Human and Machine Cognition
-    - Macrocognition, LLC
-    - Michigan Technological University
-    - University of Maine at Machias
+    - 1. Institute for Human and Machine Cognition
+    - 2. Macrocognition, LLC
+    - 3. Michigan Technological University
+    - 4. University of Maine at Machias
   point_of_contact:
     name: Robert R. Hoffman
     email: rhoffman@ihmc.us

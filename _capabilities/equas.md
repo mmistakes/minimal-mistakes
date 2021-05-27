@@ -24,15 +24,15 @@ submission_details:
   license: https://opensource.org/licenses/MIT
    
   authors:
-    - Jeffrey E. Miller
-    - Joshua S. Fashing 
-    - David Bau 
-    - Alex Montes de oca 
-    - Kerry M Moffitt  
-    - William Ferguson
+    - Jeffrey E. Miller<sup>1</sup>
+    - Joshua S. Fashing<sup>1</sup>
+    - David Bau<sup>2</sup>
+    - Alex Montes de oca<sup>1</sup>
+    - Kerry Moffitt<sup>1</sup>
+    - William Ferguson<sup>2</sup>
   organizations:
-    - Raytheon BBN Technologies 
-    - MIT
+    - 1. Raytheon BBN Technologies
+    - 2. MIT
   point_of_contact:
     name: Alex Montes de oca
     email: alex.montesdeoca@raytheon.com
@@ -47,12 +47,12 @@ This contribution is a software application to demo XAI capabilities, specifical
 This contribution's domain is AI explanation presentation and manipulation in the context of a one shot detector/classifier system.
 
 ## Model/Data
-A VGG16 pre-trained model was used and trained with an aircraft image data set (see Data) with 10 held out classes used to create/test one shot detectors based on a single class image. Inputs are (224,224) RGB images with the aircraft class as the output.
+A VGG16 pre-trained model was used and trained with an aircraft image data set (see [Data](https://www.robots.ox.ac.uk/~vgg/data/fgvc-aircraft/)) with 10 held out classes used to create/test one shot detectors based on a single class image. Inputs are (224,224) RGB images with the aircraft class as the output.
 
 ## Limitations
 The system allows for the creation of one shot detectors by creating and manipulating "aspects", where aspects are saliency maps on the target image. There is a limit to how many aspects can be created which is enforced by the application due to possible memory constraints when evaluating the one shot detector.
 
-Additional external classifier files are needed to run this application on aircraft data (see Software). These files were uploaded [here](https://data.kitware.com/#authorized_upload/60a2bdad2fa25629b94c8fc3/qC94saJxjrxf8WqtQg5R1uB02Sy5Nm7aSDjzudVY4dRXEzKA8dboWY6MMFRvhX6q) (due to large file size) and need to be added to the `\evaluation_dataset` folder before starting the application.
+Additional external classifier files are needed to run this application on aircraft data (see [Software](https://github.com/alexmontesdeoca-raytheon/xaitk.bbn.equas)). These files were uploaded [here](https://data.kitware.com/#authorized_upload/60a2bdad2fa25629b94c8fc3/qC94saJxjrxf8WqtQg5R1uB02Sy5Nm7aSDjzudVY4dRXEzKA8dboWY6MMFRvhX6q) (due to large file size) and need to be added to the `\evaluation_dataset` folder before starting the application.
 
 ## References
 ```tex

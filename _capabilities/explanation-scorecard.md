@@ -13,13 +13,13 @@ submission_details:
   version: 1.0
    
   authors:
-    - Robert R. Hoffman
-    - Gary Klein
-    - Shane T. Mueller
+    - Robert R. Hoffman<sup>1</sup>
+    - Gary Klein<sup>2</sup>
+    - Shane T. Mueller<sup>3</sup>
   organizations:
-    - Institute for Human and Machine Cognition
-    - Macrocognition, LLC
-    - Michigan Technological University
+    - 1. Institute for Human and Machine Cognition
+    - 2. Macrocognition, LLC
+    - 3. Michigan Technological University
   point_of_contact:
     name: Robert R. Hoffman
     email: rhoffman@ihmc.us
