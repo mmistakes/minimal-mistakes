@@ -133,6 +133,7 @@ exclude:
   - Rakefile
   - README
   - tmp
+  - _capabilities/template.md
 keep_files:
   - .git
   - .svn

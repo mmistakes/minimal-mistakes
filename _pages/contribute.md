@@ -5,7 +5,7 @@ last_modified_at: 2021-05-07
 classes: wide2
 ---
 
-## How to contribute a new document
+## How to contribute a new capability
 
 1. Navigate to the `_capabilities` folder in the [xaitk website repository](https://github.com/XAITK/xaitk.github.io/)
 

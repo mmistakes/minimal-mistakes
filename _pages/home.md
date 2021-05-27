@@ -8,20 +8,20 @@ header:
     - label: "<i class='fas fa-download'></i> Install now"
       url: "https://github.com/XAITK/xaitk-saliency/blob/master/docs/installation.rst"
 excerpt: >
-  An open source, explainable AI toolkit built for analytics and autonomy applications.<br />
+  An open-source, explainable AI toolkit built for analytics and autonomy applications.<br />
   <small><a href="https://github.com/XAITK/">Latest release v0.1</a></small>
 feature_row:
   - image_path: /assets/kitware/images/graphic-arrow-svgrepo-com.png
     alt: "customizable"
     title: "Analytics"
-    excerpt: "Algorithms that process data and explain decisions including visual saliency."
+    excerpt: "Algorithms that process multimedia data and make predictions including image classification."
     url: "/capabilities/#analytics"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/kitware/images/Robot.svg.png
     alt: "fully responsive"
     title: "Autonomy"
-    excerpt: "Algorithms that process data and explain actions including reinforcement learning."
+    excerpt: "Algorithms that process data and learn decision policies including reinforcement learning."
     url: "/capabilities/#autonomy"
     btn_class: "btn--primary"
     btn_label: "Learn more"
