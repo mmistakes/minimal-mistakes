@@ -5,6 +5,13 @@ last_modified_at: 2021-05-07
 classes: wide2
 ---
 
+## Why Contribute?
+* Support open-source, transparent, and reproducible XAI research
+
+* Benefit from searchability and discoverability as part of a larger toolkit
+
+* Go from research to production through possible transition to industry and government partners
+
 ## How to contribute a new capability
 
 1. Navigate to the `_capabilities` folder in the [xaitk website repository](https://github.com/XAITK/xaitk.github.io/)
@@ -42,15 +49,19 @@ classes: wide2
        data:
          - Link to data
    
-     # Optional information describing artifact
+     # Optional information describing artifact. Leave blank if unused
      version: Version Number
      size: Size
      license: Link to license
    
      authors:
        - Author Name
+       # Optional for multiple authors and organizations
+       - Author Name<sup>1</sup>
      organizations:
        - Organization
+       # Optional for multiple authors and organizations
+       - 1. Organization
      point_of_contact:
        name: PoC Name
        email: email

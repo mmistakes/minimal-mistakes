@@ -26,15 +26,19 @@ submission_details:
     data:
       - Link to data
    
-  # Optional information describing artifact
+  # Optional information describing artifact. Leave blank if unused
   version: Version Number
   size: Size
   license: Link to license
    
   authors:
     - Author Name
+    # Optional for multiple authors and organizations
+    - Author Name <sup>1</sup>
   organizations:
     - Organization
+    # Optional for multiple authors and organizations
+    - 1. Organization
   point_of_contact:
     name: PoC Name
     email: email
