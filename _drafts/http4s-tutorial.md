@@ -1,5 +1,5 @@
 ---
-title: "Unleashing the Power of Http Apis: The Http4s Library"
+title: "Unleashing the Power of HTTP Apis: The Http4s Library"
 date: 2021-05-07 header:
 image: "/images/blog cover.jpg"
 tags: [cats, cats effect, http4s]
@@ -14,7 +14,7 @@ If we learned the basics of functional programming using the Cats ecosystem, it'
 
 First things first, we need an excellent example to work with. In this case, we need a domain model easy enough to focus on creating of simple APIs.
 
-So, imagine we've just finished watching the "Snyder Cut of the Justice League" movie, and we are very excited about the film. We really want to tell the world how much we enjoyed the movie, and then we decide to build our personal "Rotten Tomatoes" application (ugh...).
+So, imagine we've just finished watching the "Snyder Cut of the Justice League" movie, and we are very excited about the film. We really want to tell the world how much we enjoyed the movie, and then **we decide to build our personal "Rotten Tomatoes" application**.
 
 As we are very experienced developers, we start coding from the backend. Hence, we begin by defining the resources we need in terms of the domain.
 
@@ -35,7 +35,7 @@ Without dwelling on the details, we can identify the following APIs among the ot
 * Getting the list of actors of a movie
 * Adding a new director to the application
 
-As we just finished the fantastic [Cats course on Rock The JVM](https://rockthejvm.com/p/cats), we want to use a library built on the Cats ecosystem. Fortunately, the [http4s](https://http4s.org/)library is what we are looking for. So, let's get a deep breath and start diving into the world of functional programming applied to HTTP APIs development.
+As we just finished the fantastic [Cats course on Rock The JVM](https://rockthejvm.com/p/cats), we want to use a library built on the Cats ecosystem. Fortunately, the [http4s](https://http4s.org/) library is what we are looking for. So, let's get a deep breath and start diving into the world of functional programming applied to HTTP APIs development.
 
 ## 2. Library Setup
 
@@ -61,11 +61,11 @@ libraryDependencies ++= Seq(
 
 As the Cats Effect library was just released, we use version `1.0.0-M21` of http4s library that integrates with it. Even though it's not a release version, the API should be stable enough to build something.
 
-Now that we have the library dependencies, we will create a small HTTP server with the endpoints described above. Hence, we will take the following steps: first, we will focus on route definitions and how to match HTTP methods, headers, path, and query parameters.
+Now that we have the library dependencies, we will create a small HTTP server with the endpoints described above. Hence, we will take the following steps: 
 
-Then, we will learn how to read a request body into an object and translate an object into a response body.
-
-Finally, we are going to instantiate an HTTP server serving all the stuff we've just created.
+ 1. We will focus on route definitions and how to match HTTP methods, headers, path, and query parameters.
+ 2. We will learn how to read a request body into an object and translate an object into a response body.
+ 3. we are going to instantiate an HTTP server serving all the stuff we've just created.
 
 So, let's start the journey along with the http4s library.
 
@@ -77,9 +77,25 @@ Very often, producing a `Response` from a `Request` means interacting with datab
 
 Nevertheless, **not all the `Request` will find a route to a `Response`**. So, we need to take into consideration this fact, defining a route as a function of type `Request => F[Option[Response]]`. Using a monad transformer, we can translate this type in `Request => OptionT[F, Response]`.
 
-Finally, using the types Cats provides us, we can rewrite the type `Request => OptionT[F, Response]`using the Kleisli monad transformer. Remembering that the type `Kleisli[F[_], A, B]` is just a wrapper around the function `A => F[B]`, our route definition becomes `Kleisli[OptionT[F, *], Request, Response]`. Easy, isn't it?
+Finally, using the types Cats provides us, we can rewrite the type `Request => OptionT[F, Response]`using the Kleisli monad transformer. Remembering that the type `Kleisli[F[_], A, B]` is just a wrapper around the function `A => F[B]`, our route definition becomes `Kleisli[OptionT[F, *], Request, Response]`. Easy, isn't it? 😅
 
 Fortunately, **the http4s library defines a type alias for the Kleisli monad transformer that is easier to understand for human beings: `HttpRoutes[F]`**.
+
+During the tutorial, we will fill the missing parts of our application step by step. Let's call the application `Http4sTutorial`. The extensive use of the Cats library and its ecosystem requests to import many type classes and extension methods. Just to simplify the story, for every presented snippet of code, we will use the following imports:
+
+```scala
+import cats._
+import cats.implicits._
+import org.http4s.circe._
+import org.http4s._
+import io.circe.generic.auto._
+import io.circe.syntax._
+import org.http4s.headers._
+
+object Http4sTutorial extends IOApp {
+  // ...
+}
+```
 
 Awesome. So, it's time to start our journey with the implementation of the endpoint returning the list of movies associated with a particular director.
 
@@ -96,10 +112,6 @@ As we said, every route corresponds to an instance of the `HttpRoutes[F]` type. 
 Through the DSL, we build an `HttpRoutes[F]` using pattern matching as a sequence of case statements. So, let's do it:
 
 ```scala
-import cats.effect.Sync
-import org.http4s.HttpRoutes
-import org.http4s.dsl.Http4sDsl
-
 def movieRoutes[F[_] : Sync]: HttpRoutes[F] = {
   val dsl = Http4sDsl[F]
   import dsl._
@@ -146,7 +158,7 @@ If we have to handle more than one query parameter, we can use the `+&` extracto
 It's possible to manage also optional query parameters. In this case, we have to change the base class of our matcher, using the `OptionalQueryParamDecoderMatcher`:
 
 ```scala
-import org.http4s.dsl.impl.OptionalValidatingQueryParamDecoderMatcher
+    import org.http4s.dsl.impl.OptionalValidatingQueryParamDecoderMatcher
 
 object YearQueryParamMatcher extends OptionalQueryParamDecoderMatcher[Year]("year")
 ```
@@ -158,7 +170,6 @@ Moreover, every matcher uses inside an instance of the class `QueryParamDecoder[
 To do so, starting from a `QueryParamDecoder[Int]`, we can map the decoded result in everything we need, i.e., an instance of the `java.time.Year` class:
 
 ```scala
-import org.http4s.QueryParamDecoder
 import java.time.Year
 
 implicit val yearQueryParamDecoder: QueryParamDecoder[Year] =
@@ -186,10 +197,6 @@ GET /movies/aa4f0f9c-c703-4f21-8c05-6a0c8f2052f0/actors
 Using the above route, we refer to a particular movie using its identifier, which we represent as a UUID. Again, the http4s library defines a set of extractors that help capture the needed information. For a UUID, we can use the object `UUIDVar`:
 
 ```scala
-import cats.effect.Sync
-import org.http4s.HttpRoutes
-import org.http4s.dsl.Http4sDsl
-
 def movieRoutes[F[_] : Sync]: HttpRoutes[F] = {
   val dsl = Http4sDsl[F]
   import dsl._
@@ -197,7 +204,7 @@ def movieRoutes[F[_] : Sync]: HttpRoutes[F] = {
 }
 ```
 
-Hence, the variable `movieId` has the type `java.util.UUID`. Equally, the library also defines extractors also for other primitive types, such as `IntVar`, `LongVar`, and the default extractor binds to a variable of type `String`.
+Hence, the variable `movieId` has the type `java.util.UUID`. Equally, the library also defines extractors for other primitive types, such as `IntVar`, `LongVar`, and the default extractor binds to a variable of type `String`.
 
 However, if we need, we can develop our custom path parameter extractor, providing an object that implements the method `def unapply(str: String): Option[T]`. For example, if we want to extract the first and the last name of a director directly from the path, we can do the following:
 
