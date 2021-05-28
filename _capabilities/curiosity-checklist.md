@@ -12,6 +12,8 @@ submission_details:
    
   # Optional information describing artifact
   version: 1.0
+  size:
+  license:
    
   authors:
     - Robert R. Hoffman<sup>1</sup>

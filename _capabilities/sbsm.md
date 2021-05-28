@@ -20,7 +20,7 @@ submission_details:
 
   # Optional information describing artifact
   version: 1.0
-  size: MB
+  size:
   license: https://github.com/Kitware/SMQTK/blob/dev/XAI/LICENSE.txt
 
   authors:
