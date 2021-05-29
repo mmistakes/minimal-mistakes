@@ -22,7 +22,7 @@ last_modified_at: 2021-05-29 18:31:32.71
 
 ## sql 파일 위치
 
-![%E1%84%89%E1%85%B3%E1%84%91%E1%85%B3%E1%84%85%E1%85%B5%E1%86%BC%20%E1%84%87%E1%85%AE%E1%84%90%E1%85%B3%20%E1%84%89%E1%85%B5%E1%86%AF%E1%84%92%E1%85%A2%E1%86%BC%20%E1%84%89%E1%85%B5%20database%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%20%E1%84%89%E1%85%A1%E1%86%B8%E1%84%8B%E1%85%B5%E1%86%B8%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%20c66b862c664741da9af69289ac04b8fd/Untitled.png](https://i.ibb.co/VqPS4yf/Untitled-1.png)
+![%E1%84%89%E1%85%B3%E1%84%91%E1%85%B3%E1%84%85%E1%85%B5%E1%86%BC%20%E1%84%87%E1%85%AE%E1%84%90%E1%85%B3%20%E1%84%89%E1%85%B5%E1%86%AF%E1%84%92%E1%85%A2%E1%86%BC%20%E1%84%89%E1%85%B5%20database%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%20%E1%84%89%E1%85%A1%E1%86%B8%E1%84%8B%E1%85%B5%E1%86%B8%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%20c66b862c664741da9af69289ac04b8fd/Untitled%201.png](https://i.ibb.co/4ZMmFsz/Untitled.png)
 
 당연히 방법이 있을 것 같아서 찾아보던 도중 classpath위치에 (resources 폴더) data.sql 파일을 생성하고 사용하고자 하는 데이터 베이스 시퀀스에 맞춰서 명령어를 넣어 주면 된다. 
 
@@ -31,11 +31,11 @@ create table 같은 ddl은 schema.sql 파일에 넣고, dml 같은 데이터 삽
 
 ## 주의사항
 
-![%E1%84%89%E1%85%B3%E1%84%91%E1%85%B3%E1%84%85%E1%85%B5%E1%86%BC%20%E1%84%87%E1%85%AE%E1%84%90%E1%85%B3%20%E1%84%89%E1%85%B5%E1%86%AF%E1%84%92%E1%85%A2%E1%86%BC%20%E1%84%89%E1%85%B5%20database%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%20%E1%84%89%E1%85%A1%E1%86%B8%E1%84%8B%E1%85%B5%E1%86%B8%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%20c66b862c664741da9af69289ac04b8fd/Untitled%201.png](https://i.ibb.co/4ZMmFsz/Untitled.png)
+![%E1%84%89%E1%85%B3%E1%84%91%E1%85%B3%E1%84%85%E1%85%B5%E1%86%BC%20%E1%84%87%E1%85%AE%E1%84%90%E1%85%B3%20%E1%84%89%E1%85%B5%E1%86%AF%E1%84%92%E1%85%A2%E1%86%BC%20%E1%84%89%E1%85%B5%20database%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%20%E1%84%89%E1%85%A1%E1%86%B8%E1%84%8B%E1%85%B5%E1%86%B8%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%20c66b862c664741da9af69289ac04b8fd/Untitled.png](https://i.ibb.co/VqPS4yf/Untitled-1.png)
 
 create table 등은 가능한데, data.sql에서의 쿼리가 먹히지 않아서 찾아보니 `ddl-auto: none, initialize: true` 로 설정해야 읽힌다. 추측하건데, ddl-auto는 자동으로 생성하지 않기 위해서 none을 하는 것 같고, initialize를 true로 해야 .sql 파일을 읽는 것 같다!
 
 이상!!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NDY4MTEwNl19
+eyJoaXN0b3J5IjpbMjgxMzAyNTY2XX0=
 -->
