@@ -16,8 +16,6 @@ last_modified_at: 2021-05-29 18:31:32.71
 ---
 
 
-# 스프링 부트 실행 시 database 데이터 삽입하기
-
 스프링 부트가 뜰 때, h2 등을 사용하는 경우에 데이터 베이스에 대한 테이블과 그 데이터를 자동으로 삽입하고 싶을 때가 있다. 매번 /h2-console을 들어가서 삽입할 수는 없으니까! ㅎㅎ
 
 ## sql 파일 위치
@@ -43,5 +41,6 @@ create table 등은 가능한데, data.sql에서의 쿼리가 먹히지 않아�
 
 이상!!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI5MTk5MTAxLC0zMDM0Mjc5NjBdfQ==
+eyJoaXN0b3J5IjpbLTI4NTQyMTE5NSwzMjkxOTkxMDEsLTMwMz
+QyNzk2MF19
 -->
