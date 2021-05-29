@@ -1,7 +1,8 @@
 ---
 title: "Unleashing the Power of HTTP Apis: The Http4s Library"
-date: 2021-05-07 header:
-image: "/images/blog cover.jpg"
+date: 2021-05-07 
+header:
+  image: "/images/blog cover.jpg"
 tags: [cats, cats effect, http4s]
 excerpt: "Once we learned the basics of functional programming, it's time to understand how to use them to expose APIs over an HTTP channel. If we know the Cats ecosystem, it's straightforward to choose the http4s library to implement HTTP endpoints."
 ---
@@ -25,8 +26,9 @@ type Actor = String
 
 case class Movie(id: String, title: String, year: Int, actors: List[String], director: String)
 
-case class Director(firstName: String, lastName: String)
-
+case class Director(firstName: String, lastName: String) {
+  override def toString: String = s"$firstName $lastName"
+}
 ```
 
 Without dwelling on the details, we can identify the following APIs among the others:
@@ -45,17 +47,12 @@ The dependencies we must add in the `build.sbt` file are as follows:
 
 ```sbt
 val Http4sVersion = "1.0.0-M21"
-val LogbackVersion = "1.2.3"
-val MunitVersion = "0.7.20",
-val MunitCatsEffectVersion = "0.13.0"
+val CirceVersion = "0.14.0-M5"
 libraryDependencies ++= Seq(
-  "org.http4s" %% "http4s-blaze-server" % Http4sVersion,
-  "org.http4s" %% "http4s-circe" % Http4sVersion,
-  "org.http4s" %% "http4s-dsl" % Http4sVersion,
-  "org.scalameta" %% "munit" % MunitVersion % Test,
-  "org.typelevel" %% "munit-cats-effect-2" % MunitCatsEffectVersion % Test,
-  "ch.qos.logback" % "logback-classic" % LogbackVersion,
-  "org.scalameta" %% "svm-subs" % "20.2.0"
+  "org.http4s"      %% "http4s-blaze-server" % Http4sVersion,
+  "org.http4s"      %% "http4s-circe"        % Http4sVersion,
+  "org.http4s"      %% "http4s-dsl"          % Http4sVersion,
+  "io.circe"        %% "circe-generic"       % CirceVersion,
 )
 ```
 
@@ -112,7 +109,7 @@ As we said, every route corresponds to an instance of the `HttpRoutes[F]` type. 
 Through the DSL, we build an `HttpRoutes[F]` using pattern matching as a sequence of case statements. So, let's do it:
 
 ```scala
-def movieRoutes[F[_] : Sync]: HttpRoutes[F] = {
+def movieRoutes[F[_] : Monad]: HttpRoutes[F] = {
   val dsl = Http4sDsl[F]
   import dsl._
   HttpRoutes.of[F] {
@@ -146,8 +143,6 @@ Each part of the remaining `Path` is read using a specific extractor. We use the
 The route we are matching contains some query parameters. **We can introduce the match of query parameters using the `:?` extractor**. Even though there are many ways of extracting query params, the library sponsors the use of _matchers_. In detail, extending the `abstract class QueryParamDecoderMatcher`, we can pull directly into a variable a given query parameter:
 
 ```scala
-import org.http4s.dsl.impl.QueryParamDecoderMatcher
-
 object DirectorQueryParamMatcher extends QueryParamDecoderMatcher[String]("director")
 ```
 
@@ -158,8 +153,6 @@ If we have to handle more than one query parameter, we can use the `+&` extracto
 It's possible to manage also optional query parameters. In this case, we have to change the base class of our matcher, using the `OptionalQueryParamDecoderMatcher`:
 
 ```scala
-    import org.http4s.dsl.impl.OptionalValidatingQueryParamDecoderMatcher
-
 object YearQueryParamMatcher extends OptionalQueryParamDecoderMatcher[Year]("year")
 ```
 
@@ -179,6 +172,7 @@ implicit val yearQueryParamDecoder: QueryParamDecoder[Year] =
 As **the matcher types access decoders using the type classes pattern**, our custom decoder must be in the scope of the matcher as an `implicit` value. Indeed, decoders define a companion object `QueryParamDecoder` that lets a matcher type summoning the proper instance of the decoder type class:
 
 ```scala
+// From the Http4s DSL
 object QueryParamDecoder {
   def apply[T](implicit ev: QueryParamDecoder[T]): QueryParamDecoder[T] = ev
 }
@@ -194,13 +188,16 @@ Another everyday use case is a route that contains some path parameters. Indeed,
 GET /movies/aa4f0f9c-c703-4f21-8c05-6a0c8f2052f0/actors
 ```
 
-Using the above route, we refer to a particular movie using its identifier, which we represent as a UUID. Again, the http4s library defines a set of extractors that help capture the needed information. For a UUID, we can use the object `UUIDVar`:
+Using the above route, we refer to a particular movie using its identifier, which we represent as a UUID. Again, the http4s library defines a set of extractors that help capture the needed information. Upgrading our `movieRoutes` method, for a UUID, we can use the object `UUIDVar`:
 
 ```scala
-def movieRoutes[F[_] : Sync]: HttpRoutes[F] = {
+def movieRoutes[F[_] : Monad]: HttpRoutes[F] = {
   val dsl = Http4sDsl[F]
   import dsl._
-  case GET -> Root / "movies" / UUIDVar(movieId) / "actors" => ???
+  HttpRoutes.of[F] {
+    case GET -> Root / "movies" :? DirectorQueryParamMatcher(director) +& YearQueryParamMatcher(maybeYear) => ???
+    case GET -> Root / "movies" / UUIDVar(movieId) / "actors" => ???
+  }
 }
 ```
 
@@ -209,10 +206,6 @@ Hence, the variable `movieId` has the type `java.util.UUID`. Equally, the librar
 However, if we need, we can develop our custom path parameter extractor, providing an object that implements the method `def unapply(str: String): Option[T]`. For example, if we want to extract the first and the last name of a director directly from the path, we can do the following:
 
 ```scala
-import cats.effect.Sync
-import org.http4s.HttpRoutes
-import org.http4s.dsl.Http4sDsl
-
 object DirectorVar {
   def unapply(str: String): Option[Director] = {
     if (str.nonEmpty && str.matches(".* .*")) {
@@ -224,11 +217,12 @@ object DirectorVar {
   }
 }
 
-HttpRoutes.of[F] {
+def directorRoutes[F[_] : Async]: HttpRoutes[F] = {
   val dsl = Http4sDsl[F]
   import dsl._
-  case GET -> Root / "directors" / DirectorVar(director)
-  => ???
+  HttpRoutes.of[F] {
+    case GET -> Root / "directors" / DirectorVar(director) => ???
+  }
 }
 ```
 
@@ -241,9 +235,7 @@ The trick is that the type `HttpRoutes[F]`, being an instance of the `Kleisli` t
 The main feature of semigroups is the definition of the `combine` function which, given two elements of the semigroup, returns a new element also belonging to the semigroup. For the `SemigroupK` type class, the function is called`combineK` or `<+>`.
 
 ```scala
-import org.http4s.HttpRoutes
-
-def allRoutes[F[_] : Sync]: HttpRoutes[F] = {
+def allRoutes[F[_] : Async]: HttpRoutes[F] = {
   import cats.syntax.semigroupk._
   movieRoutes <+> directorRoutes
 }
@@ -254,9 +246,7 @@ To access the `<+>` operator, we need the proper imports from Cats, which is at 
 Last but not least, an incoming request might not match with any of the available routes. Usually, such requests should end up with 404 HTTP responses. As always, the http4s library gives us an easy way to code such behavior, using the `orNotFound` method from the package `org.http4s.implicits`:
 
 ```scala
-import org.http4s.HttpApp
-
-def allRoutesComplete[F[_] : Sync]: HttpApp[F] = {
+def allRoutesComplete[F[_] : Async]: HttpApp[F] = {
   allRoutes.orNotFound
 }
 ```
@@ -270,27 +260,18 @@ As we said, **generating responses to incoming requests is an operation that cou
 So, the `http4s-dsl` module provides us some shortcuts to create responses associated with HTTP status codes. For example, the `Ok()` function creates a response with a 200 HTTP status:
 
 ```scala
-import cats.effect.Sync
-import org.http4s.HttpRoutes
-import org.http4s.dsl.Http4sDsl
+val directors: Map[Actor, Director] = Map("Zack Snyder" -> Director("Zack", "Snyder"))
 
-object DirectorVar {
-  def unapply(str: String): Option[Director] = {
-    if (str.nonEmpty && str.matches(".* .*")) {
-      Try {
-        val splitStr = str.split(' ')
-        Director(splitStr(0), splitStr(1))
-      }.toOption
-    } else None
-  }
-}
-
-HttpRoutes.of[F] {
+def directorRoutes[F[_] : Async]: HttpRoutes[F] = {
   val dsl = Http4sDsl[F]
   import dsl._
-  case GET -> Root / "directors" / DirectorVar(director)
-  =>
-  Ok(Director("Zack", "Snyder").asJson)
+  HttpRoutes.of[F] {
+    case GET -> Root / "directors" / DirectorVar(director) =>
+      directors.get(director.toString) match {
+        case Some(dir) => Ok(dir.asJson)
+        case _ => NotFound(s"No director called $director found")
+      }
+  }
 }
 ```
 
@@ -312,8 +293,6 @@ In addition, inside the `org.http4s.Status` companion object, we find the functi
 Suppose that we want to implement some type of validation on a query parameter, as returning a _Bad Request_ HTTP Status if the query parameter `year` doesn't represent a positive number. First, we need to change the type of matcher we need to use, introducing the validation:
 
 ```scala
-import cats.implicits.toBifunctorOps
-import org.http4s.{ParseFailure, QueryParamDecoder}
 import scala.util.Try
 
 implicit val yearQueryParamDecoder: QueryParamDecoder[Year] =
@@ -331,12 +310,14 @@ object YearQueryParamMatcher extends OptionalValidatingQueryParamDecoderMatcher[
 We validate the query parameter's value using the dedicated `emap` method of the type `QueryParamDecoder`:
 
 ```scala
+// From the Http4s DSL
 def emap[U](f: T => Either[ParseFailure, U]): QueryParamDecoder[U] = ???
 ```
 
-The function work like a common `map` function, but it produces an `Either[ParseFailure, U]` value: If the mapping goes, the function outputs a `Right[U]` value, a `Left[ParseFailure]` otherwise. Furthermore, the `ParseFailure` is a type of the library indicating an error parsing an HTTP Message:
+The function work like a common `map` function, but it produces an `Either[ParseFailure, U]` value: If the mapping succeeds, the function outputs a `Right[U]` value, a `Left[ParseFailure]` otherwise. Furthermore, the `ParseFailure` is a type of the http4s library indicating an error parsing an HTTP Message:
 
 ```scala
+// From the Http4s DSL
 final case class ParseFailure(sanitized: String, details: String)
 ```
 
@@ -347,10 +328,6 @@ Instead, the `leftMap` function comes as an extension method of the Cats `Bifunc
 Once validated the query parameter, we can introduce the code handling the failure with a `BadRequest` HTTP status:
 
 ```scala
-import cats.implicits.toBifunctorOps
-import org.http4s.dsl.Http4sDsl
-import org.http4s.{ParseFailure, QueryParamDecoder}
-import org.http4s.dsl.impl.{OptionalValidatingQueryParamDecoderMatcher, QueryParamDecoderMatcher}
 import java.time.Year
 import scala.util.Try
 
@@ -367,7 +344,7 @@ implicit val yearQueryParamDecoder: QueryParamDecoder[Year] =
 
 object YearQueryParamMatcher extends OptionalValidatingQueryParamDecoderMatcher[Year]("year")
 
-def movieRoutes[F[_] : Sync]: HttpRoutes[F] = {
+def movieRoutes[F[_] : Monad]: HttpRoutes[F] = {
   val dsl = Http4sDsl[F]
   import dsl._
   HttpRoutes.of[F] {
@@ -429,8 +406,6 @@ POST /directors
 First things first, to access its body, we need to access directly to the `Request[F]` through pattern matching:
 
 ```scala
-import org.http4s.dsl.Http4sDsl
-
 def directorRoutes[F[_] : Async]: HttpRoutes[F] = {
   val dsl = Http4sDsl[F]
   import dsl._
@@ -446,6 +421,7 @@ Then, the `Request[F]` object has a `body` attribute of type `EntityBody[F]`, wh
 In fact, every `Request[F]` extends the more general `Media[F]` trait. This trait exposes many practical methods dealing with the body of a request, and the most interesting is the following:
 
 ```scala
+// From the Http4s DSL
 final def as[A](implicit F: MonadThrow[F], decoder: EntityDecoder[F, A]): F[A] = ???
 ```
 
@@ -455,11 +431,7 @@ The `as` function decodes a request body as a type `A`. using an `EntityDecoder[
 
 The http4s library ships with decoders and encoders for a limited type of contents, such as `String`, `File`, `InputStream`, and manages more complex contents using plugin libraries.
 
-In our example, the request contains a new director in JSON format. **To deal with JSON body, the most frequent choice is to use the Circe plugin**:
-
-```sbt
-"org.http4s" %% "http4s-circe" % 0.21 .23,
-```
+In our example, the request contains a new director in JSON format. **To deal with JSON body, the most frequent choice is to use the Circe plugin.
 
 The primary type provided by the Circe library to manipulate JSON information is the `io.circe.Json` type. Hence, the `http4s-circe` module defines the types `EntityDecoder[Json]` and `EntityEncoder[Json]`, which are all we need to translate a request and a response body into an instance of `Json`.
 
@@ -476,9 +448,6 @@ implicit val directorDecoder: EntityDecoder[F, Director] = jsonOf[F, Director]
 Summing up, the final form of the API looks like the following:
 
 ```scala
-import org.http4s._
-import org.http4s.dsl.Http4sDsl
-
 def directorRoutes[F[_] : Async]: HttpRoutes[F] = {
   val dsl = Http4sDsl[F]
   import dsl._
@@ -525,8 +494,8 @@ As for decoders, we need first to transform our class `Movie` into an instance o
 Instead, we can perform the actual conversion from the `Movie` type to `Json` using the extension method `asJson`, defined on all the types that have an instance of the `Encoder` type class:
 
 ```scala
+// From the Http4s DSL
 package object syntax {
-
   implicit final class EncoderOps[A](private val value: A) extends AnyVal {
     final def asJson(implicit encoder: Encoder[A]): Json = encoder(value)
   }
@@ -539,9 +508,6 @@ As we can see, the above method comes into the scope importing the `io.circe.syn
 Now, we can complete our API definition, responding with the needed information:
 
 ```scala
-import org.http4s._
-import org.http4s.dsl.Http4sDsl
-
 val snjl: Movie = Movie(
   "Zack Snyder's Justice League",
   2021,
@@ -551,7 +517,7 @@ val snjl: Movie = Movie(
 
 // Definitions of DirectorQueryParamMatcher and YearQueryParamMatcher
 
-def movieRoutes[F[_] : Sync]: HttpRoutes[F] = {
+def movieRoutes[F[_] : Monad]: HttpRoutes[F] = {
   val dsl = Http4sDsl[F]
   import dsl._
   HttpRoutes.of[F] {
@@ -581,10 +547,6 @@ BlazeServerBuilder[IO](global)
 In blaze jargon, we say we mount the routes at the given path. The default path is `"/"`, but if we need we can easily change the path using a `Router`. For example, we can partition the APIs in public (`/api`), and private (`/api/private`):
 
 ```scala
-import org.http4s.implicits.http4sKleisliResponseSyntaxOptionT
-import org.http4s.server.Router
-import org.http4s.server.blaze._
-
 val apis = Router(
   "/api" -> MovieApp.movieRoutes[IO],
   "/api/private" -> MovieApp.directorRoutes[IO]
@@ -608,12 +570,6 @@ The `IOApp` is a utility type that allows us to run applications that use the `I
 When it's up, the server starts listening to incoming requests. **If the server stops, it must release the port and close any other resource it's using, and this is precisely the definition of the [`Resource`](https://typelevel.org/cats-effect/docs/std/resource) type** from the Cats Effect library (we can think about `Resource`s as the `AutoCloseable` type in Java type):
 
 ```scala
-import cats.effect._
-import in.rcard.http4s.tutorial.movie.MovieApp
-import org.http4s.implicits.http4sKleisliResponseSyntaxOptionT
-import org.http4s.server.Router
-import org.http4s.server.blaze._
-
 object Main extends IOApp {
   def run(args: List[String]): IO[ExitCode] = {
 
@@ -639,22 +595,6 @@ Once we have a `Resource` to handle, we can `use` its content. In this example, 
 Eventually, all the pieces should have fallen into place, and the whole code implementing our APIs is the following:
 
 ```scala
-import cats.effect.Sync
-import cats.effect.kernel.Async
-import cats.implicits.toBifunctorOps
-import io.circe.generic.auto._
-import io.circe.syntax._
-import org.http4s._
-import org.http4s.circe.{jsonOf, _}
-import org.http4s.dsl.Http4sDsl
-import org.http4s.dsl.impl.{OptionalValidatingQueryParamDecoderMatcher, QueryParamDecoderMatcher}
-import org.http4s.headers.`Content-Encoding`
-import org.http4s.implicits.http4sKleisliResponseSyntaxOptionT
-import org.typelevel.ci.CIString
-
-import java.time.Year
-import scala.util.Try
-
 object MovieApp {
 
   type Actor = String
@@ -686,7 +626,7 @@ object MovieApp {
   object YearQueryParamMatcher extends OptionalValidatingQueryParamDecoderMatcher[Year]("year")
 
 
-  def movieRoutes[F[_] : Sync]: HttpRoutes[F] = {
+  def movieRoutes[F[_] : Monad]: HttpRoutes[F] = {
     val dsl = Http4sDsl[F]
     import dsl._
     HttpRoutes.of[F] {
