@@ -195,20 +195,6 @@ defaults:
       breadcrumbs:
         - label: "Reads"
           url: /reads/
-      
-  # Discoveries
-  - scope:
-      path: _posts/discoveries
-      type: posts
-    values:
-      layout: single
-      category: discoveries
-      author_profile: false
-      read_time: true
-      share: false
-      breadcrumbs:
-        - label: "Discoveries"
-          url: /discoveries/
 
 
 # Conversion
