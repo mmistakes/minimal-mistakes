@@ -217,7 +217,7 @@ object DirectorVar {
   }
 }
 
-def directorRoutes[F[_] : Async]: HttpRoutes[F] = {
+def directorRoutes[F[_] : Concurrent]: HttpRoutes[F] = {
   val dsl = Http4sDsl[F]
   import dsl._
   HttpRoutes.of[F] {
@@ -235,7 +235,7 @@ The trick is that the type `HttpRoutes[F]`, being an instance of the `Kleisli` t
 The main feature of semigroups is the definition of the `combine` function which, given two elements of the semigroup, returns a new element also belonging to the semigroup. For the `SemigroupK` type class, the function is called`combineK` or `<+>`.
 
 ```scala
-def allRoutes[F[_] : Async]: HttpRoutes[F] = {
+def allRoutes[F[_] : Concurrent]: HttpRoutes[F] = {
   import cats.syntax.semigroupk._
   movieRoutes <+> directorRoutes
 }
@@ -246,7 +246,7 @@ To access the `<+>` operator, we need the proper imports from Cats, which is at 
 Last but not least, an incoming request might not match with any of the available routes. Usually, such requests should end up with 404 HTTP responses. As always, the http4s library gives us an easy way to code such behavior, using the `orNotFound` method from the package `org.http4s.implicits`:
 
 ```scala
-def allRoutesComplete[F[_] : Async]: HttpApp[F] = {
+def allRoutesComplete[F[_] : Concurrent]: HttpApp[F] = {
   allRoutes.orNotFound
 }
 ```
@@ -260,9 +260,10 @@ As we said, **generating responses to incoming requests is an operation that cou
 So, the `http4s-dsl` module provides us some shortcuts to create responses associated with HTTP status codes. For example, the `Ok()` function creates a response with a 200 HTTP status:
 
 ```scala
-val directors: Map[Actor, Director] = Map("Zack Snyder" -> Director("Zack", "Snyder"))
-
-def directorRoutes[F[_] : Async]: HttpRoutes[F] = {
+val directors: mutable.Map[Actor, Director] =
+  mutable.Map("Zack Snyder" -> Director("Zack", "Snyder"))
+  
+def directorRoutes[F[_] : Concurrent]: HttpRoutes[F] = {
   val dsl = Http4sDsl[F]
   import dsl._
   HttpRoutes.of[F] {
@@ -325,6 +326,8 @@ The `sanitized` attribute may safely be displayed to a client to describe an err
 
 Instead, the `leftMap` function comes as an extension method of the Cats `Bifunctor` type class. When the type class is instantiated for the `Either` type, it provides many useful methods as `leftMap`, which eventually applies the given function to a `Left` value.
 
+Finally, the `OptionalValidatingQueryParamDecoderMatcher[T]` returns the result of the validation as an instance of the type `Validated[E, A]`. [`Validated[E, A]`](https://blog.rockthejvm.com/idiomatic-error-handling-in-scala/#4-advanced-validated) is a type coming from the Cats library representing the result of a validation process: If the process ends successfully, the `Validated` contains instance of type `A`, errors of type `E` otherwise. Moreover, we use `Validated[E, A]` in opposition of `Either[E, A]`, for example, because it accumulates errors by design. In our example, the _matcher_ returns an instance of `Validated[ParseFailure, Year]`.
+
 Once validated the query parameter, we can introduce the code handling the failure with a `BadRequest` HTTP status:
 
 ```scala
@@ -385,7 +388,7 @@ Ok(`Content-Encoding`(ContentCoding.gzip))
 Ok().map(_.addCookie(ResponseCookie("My-Cookie", "value")))
 ```
 
-Obviously, we can instantiate a new `ResponseCookie`, giving the constructor all the additional information needed by a cookie, such as expiration, the secure flag, httpOnly, flag, etc.
+We are going to add more stuff to the `Ok` response later, since we need to introduce objects' serialization first. So, we can instantiate a new `ResponseCookie`, giving the constructor all the additional information needed by a cookie, such as expiration, the secure flag, httpOnly, flag, etc.
 
 ## 6. Encoding and Decoding Http Body
 
@@ -406,12 +409,19 @@ POST /directors
 First things first, to access its body, we need to access directly to the `Request[F]` through pattern matching:
 
 ```scala
-def directorRoutes[F[_] : Async]: HttpRoutes[F] = {
+def directorRoutes[F[_] : Concurrent]: HttpRoutes[F] = {
   val dsl = Http4sDsl[F]
   import dsl._
-  case req@POST -> Root / "directors" => ???
+  HttpRoutes.of[F] {
+    case GET -> Root / "directors" / DirectorVar(director) =>
+      directors.get(director.toString) match {
+        case Some(dir) => Ok(dir.asJson)
+        case _ => NotFound(s"No director called $director found")
+      }
+    // Addition for inserting a new director
+    case req@POST -> Root / "directors" => ???
+  }
 }
-
 ```
 
 Then, the `Request[F]` object has a `body` attribute of type `EntityBody[F]`, which is a type alias for `Stream[F, Byte]`. **As the HTTP protocol defines, the body of an HTTP request is a stream of bytes**. The http4s library uses the [`fs2.io`](https://fs2.io/#/) library as stream implementation. Indeed, this library also uses the Typelevel stack (Cats) to implement its functional vision of streams.
@@ -448,18 +458,27 @@ implicit val directorDecoder: EntityDecoder[F, Director] = jsonOf[F, Director]
 Summing up, the final form of the API looks like the following:
 
 ```scala
-def directorRoutes[F[_] : Async]: HttpRoutes[F] = {
+def directorRoutes[F[_] : Concurrent]: HttpRoutes[F] = {
   val dsl = Http4sDsl[F]
   import dsl._
   implicit val directorDecoder: EntityDecoder[F, Director] = jsonOf[F, Director]
   HttpRoutes.of[F] {
+    case GET -> Root / "directors" / DirectorVar(director) =>
+      directors.get(director.toString) match {
+        case Some(dir) => Ok(dir.asJson, Header.Raw(CIString("My-Custom-Header"), "value"))
+        case _ => NotFound(s"No director called $director found")
+      }
     case req@POST -> Root / "directors" =>
       for {
         director <- req.as[Director]
-        // ...
-      }
+        _ = directors.addOne(director.toString, director)
+        res <- Ok.headers(`Content-Encoding`(ContentCoding.gzip))
+                .map(_.addCookie(ResponseCookie("My-Cookie", "value")))
+      } yield res
   }
 ```
+
+Last but not least, we changed the context-bound of the effect `F`. In fact, the `jsonOf` method requires at least an instance of `Concurrent` to execute. So, the `Monad` type class is not sufficient if we need to decode a JSON request into a `case class`. 
 
 ### 6.3. Encoding the Response Body Using Circe
 
@@ -671,10 +690,10 @@ object MovieApp {
     }
   }
 
-  def directorRoutes[F[_] : Async]: HttpRoutes[F] = {
+  def directorRoutes[F[_] : Concurrent]: HttpRoutes[F] = {
     val dsl = Http4sDsl[F]
     import dsl._
-    implicit val directorDecoder: EntityDecoder[F, Director] = jsonOf[F, Director] // most calls require Sync, but this requires Concurrent => require Async
+    implicit val directorDecoder: EntityDecoder[F, Director] = jsonOf[F, Director] // most calls require Monad, but this requires Concurrent
     import cats.syntax.flatMap._
     import cats.syntax.functor._
     HttpRoutes.of[F] {
@@ -692,12 +711,12 @@ object MovieApp {
     }
   }
 
-  def allRoutes[F[_] : Async]: HttpRoutes[F] = {
+  def allRoutes[F[_] : Concurrent]: HttpRoutes[F] = {
     import cats.syntax.semigroupk._
     movieRoutes <+> directorRoutes
   }
 
-  def allRoutesComplete[F[_] : Async]: HttpApp[F] = {
+  def allRoutesComplete[F[_] : Concurrent]: HttpApp[F] = {
     allRoutes.orNotFound
   }
 }
