@@ -9,6 +9,8 @@ mainMenu:
         url: /categories/boost
       - title: "Effective C++ Programming"
         url: /categories/effectcpp
+      - title: "MODERN C++ Design Pattern"
+        url: /categories/designpattern
     - title: Python
       children:
       - title: "Effective Python 2nd"
