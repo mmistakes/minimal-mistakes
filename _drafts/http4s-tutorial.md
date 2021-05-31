@@ -60,9 +60,9 @@ As the Cats Effect library was just released, we use version `1.0.0-M21` of http
 
 Now that we have the library dependencies, we will create a small HTTP server with the endpoints described above. Hence, we will take the following steps: 
 
- 1. We will focus on route definitions and how to match HTTP methods, headers, path, and query parameters.
+ 1. We will focus on route definitions and match HTTP methods, headers, path, and query parameters.
  2. We will learn how to read a request body into an object and translate an object into a response body.
- 3. we are going to instantiate an HTTP server serving all the stuff we've just created.
+ 3. We are going to instantiate an HTTP server serving all the stuff we've just created.
 
 So, let's start the journey along with the http4s library.
 
@@ -78,7 +78,7 @@ Finally, using the types Cats provides us, we can rewrite the type `Request => O
 
 Fortunately, **the http4s library defines a type alias for the Kleisli monad transformer that is easier to understand for human beings: `HttpRoutes[F]`**.
 
-During the tutorial, we will fill the missing parts of our application step by step. Let's call the application `Http4sTutorial`. The extensive use of the Cats library and its ecosystem requests to import many type classes and extension methods. Just to simplify the story, for every presented snippet of code, we will use the following imports:
+During the tutorial, we will fill in the missing parts of our application step by step. Let's call the application `Http4sTutorial`. The extensive use of the Cats library and its ecosystem requests to import many type classes and extension methods. To simplify the story, for every presented snippet of code, we will use the following imports:
 
 ```scala
 import cats._
@@ -188,7 +188,7 @@ Another everyday use case is a route that contains some path parameters. Indeed,
 GET /movies/aa4f0f9c-c703-4f21-8c05-6a0c8f2052f0/actors
 ```
 
-Using the above route, we refer to a particular movie using its identifier, which we represent as a UUID. Again, the http4s library defines a set of extractors that help capture the needed information. Upgrading our `movieRoutes` method, for a UUID, we can use the object `UUIDVar`:
+Using the above route, we refer to a particular movie using its identifier, representing as a UUID. Again, the http4s library defines a set of extractors that help capture the needed information. Upgrading our `movieRoutes` method, for a UUID, we can use the object `UUIDVar`:
 
 ```scala
 def movieRoutes[F[_] : Monad]: HttpRoutes[F] = {
@@ -326,7 +326,7 @@ The `sanitized` attribute may safely be displayed to a client to describe an err
 
 Instead, the `leftMap` function comes as an extension method of the Cats `Bifunctor` type class. When the type class is instantiated for the `Either` type, it provides many useful methods as `leftMap`, which eventually applies the given function to a `Left` value.
 
-Finally, the `OptionalValidatingQueryParamDecoderMatcher[T]` returns the result of the validation as an instance of the type `Validated[E, A]`. [`Validated[E, A]`](https://blog.rockthejvm.com/idiomatic-error-handling-in-scala/#4-advanced-validated) is a type coming from the Cats library representing the result of a validation process: If the process ends successfully, the `Validated` contains instance of type `A`, errors of type `E` otherwise. Moreover, we use `Validated[E, A]` in opposition of `Either[E, A]`, for example, because it accumulates errors by design. In our example, the _matcher_ returns an instance of `Validated[ParseFailure, Year]`.
+Finally, the `OptionalValidatingQueryParamDecoderMatcher[T]` returns the validation result as an instance of the type `Validated[E, A]`. [`Validated[E, A]`](https://blog.rockthejvm.com/idiomatic-error-handling-in-scala/#4-advanced-validated) is a type coming from the Cats library representing the result of a validation process: If the process ends successfully, the `Validated` contains instance of type `A`, errors of type `E` otherwise. Moreover, we use `Validated[E, A]` in opposition to `Either[E, A]`, for example, because it accumulates errors by design. In our example, the _matcher_ returns an instance of `Validated[ParseFailure, Year]`.
 
 Once validated the query parameter, we can introduce the code handling the failure with a `BadRequest` HTTP status:
 
@@ -388,7 +388,7 @@ Ok(`Content-Encoding`(ContentCoding.gzip))
 Ok().map(_.addCookie(ResponseCookie("My-Cookie", "value")))
 ```
 
-We are going to add more stuff to the `Ok` response later, since we need to introduce objects' serialization first. So, we can instantiate a new `ResponseCookie`, giving the constructor all the additional information needed by a cookie, such as expiration, the secure flag, httpOnly, flag, etc.
+We will add more stuff to the `Ok` response later since we need to introduce objects' serialization first. So, we can instantiate a new `ResponseCookie`, giving the constructor all the additional information needed by a cookie, such as expiration, the secure flag, httpOnly, flag, etc.
 
 ## 6. Encoding and Decoding Http Body
 
@@ -441,7 +441,7 @@ The `as` function decodes a request body as a type `A`. using an `EntityDecoder[
 
 The http4s library ships with decoders and encoders for a limited type of contents, such as `String`, `File`, `InputStream`, and manages more complex contents using plugin libraries.
 
-In our example, the request contains a new director in JSON format. **To deal with JSON body, the most frequent choice is to use the Circe plugin.
+In our example, the request contains a new director in JSON format. **To deal with JSON body, the most frequent choice is to use the Circe plugin**.
 
 The primary type provided by the Circe library to manipulate JSON information is the `io.circe.Json` type. Hence, the `http4s-circe` module defines the types `EntityDecoder[Json]` and `EntityEncoder[Json]`, which are all we need to translate a request and a response body into an instance of `Json`.
 
@@ -478,7 +478,7 @@ def directorRoutes[F[_] : Concurrent]: HttpRoutes[F] = {
   }
 ```
 
-The above code uses the _for-comprehension_ syntax making it more readable. However, it is possible only because we initially import the Cats extension methods of `cats.syntax.flatMap._` and `cats.syntax.functor._`. Remember that for `F` it must be defined an implicit type class `Monad[F]`.
+The above code uses the _for-comprehension_ syntax making it more readable. However, it is possible only because we initially import the Cats extension methods of `cats.syntax.flatMap._` and `cats.syntax.functor._`. Remember that for `F`, an implicit type class `Monad[F]` must be defined.
 
 Last but not least, we changed the context-bound of the effect `F`. In fact, the `jsonOf` method requires at least an instance of `Concurrent` to execute. So, the `Monad` type class is not sufficient if we need to decode a JSON request into a `case class`. 
 
