@@ -478,6 +478,8 @@ def directorRoutes[F[_] : Concurrent]: HttpRoutes[F] = {
   }
 ```
 
+The above code uses the _for-comprehension_ syntax making it more readable. However, it is possible only because we initially import the Cats extension methods of `cats.syntax.flatMap._` and `cats.syntax.functor._`. Remember that for `F` it must be defined an implicit type class `Monad[F]`.
+
 Last but not least, we changed the context-bound of the effect `F`. In fact, the `jsonOf` method requires at least an instance of `Concurrent` to execute. So, the `Monad` type class is not sufficient if we need to decode a JSON request into a `case class`. 
 
 ### 6.3. Encoding the Response Body Using Circe
@@ -556,6 +558,8 @@ We learned how to define a route, read path and parameter variables, read and wr
 We can instantiate a new blaze server using the dedicated builder, `BlazeServerBuilder`, which takes as inputs the `HttpRoutes` (or the `HttpApp`), and the host and port serving the given routes:
 
 ```scala
+import scala.concurrent.ExecutionContext.global
+
 val movieApp = MovieApp.allRoutesComplete[IO]
 BlazeServerBuilder[IO](global)
   .bindHttp(8080, "localhost")
@@ -566,6 +570,8 @@ BlazeServerBuilder[IO](global)
 In blaze jargon, we say we mount the routes at the given path. The default path is `"/"`, but if we need we can easily change the path using a `Router`. For example, we can partition the APIs in public (`/api`), and private (`/api/private`):
 
 ```scala
+import scala.concurrent.ExecutionContext.global
+
 val apis = Router(
   "/api" -> MovieApp.movieRoutes[IO],
   "/api/private" -> MovieApp.directorRoutes[IO]
@@ -589,7 +595,9 @@ The `IOApp` is a utility type that allows us to run applications that use the `I
 When it's up, the server starts listening to incoming requests. **If the server stops, it must release the port and close any other resource it's using, and this is precisely the definition of the [`Resource`](https://typelevel.org/cats-effect/docs/std/resource) type** from the Cats Effect library (we can think about `Resource`s as the `AutoCloseable` type in Java type):
 
 ```scala
-object Main extends IOApp {
+import scala.concurrent.ExecutionContext.global
+
+object Http4sTutorial extends IOApp {
   def run(args: List[String]): IO[ExitCode] = {
 
     val apis = Router(
