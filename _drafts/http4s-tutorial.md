@@ -41,8 +41,6 @@ As we just finished the fantastic [Cats course on Rock The JVM](https://rockthej
 
 ## 2. Library Setup
 
-We are going to use version 0.21.23 of the http4s library. Even if Scala 3 is almost upon us, this version of http4s uses Scala 2.13 as the target language.
-
 The dependencies we must add in the `build.sbt` file are as follows:
 
 ```sbt
@@ -56,7 +54,7 @@ libraryDependencies ++= Seq(
 )
 ```
 
-As the Cats Effect library was just released, we use version `1.0.0-M21` of http4s library that integrates with it. Even though it's not a release version, the API should be stable enough to build something.
+As version 3 of the Cats Effect library was just released, we use version `1.0.0-M21` of http4s library that integrates with it. Even though it's not a release version, the API should be stable enough to build something. Moreover, this version of http4s uses Scala 2.13 as the target language.
 
 Now that we have the library dependencies, we will create a small HTTP server with the endpoints described above. Hence, we will take the following steps: 
 
@@ -82,11 +80,14 @@ During the tutorial, we will fill in the missing parts of our application step b
 
 ```scala
 import cats._
+import cats.effect._
 import cats.implicits._
 import org.http4s.circe._
 import org.http4s._
 import io.circe.generic.auto._
 import io.circe.syntax._
+import org.http4s.dsl._
+import org.http4s.dsl.impl._
 import org.http4s.headers._
 
 object Http4sTutorial extends IOApp {
