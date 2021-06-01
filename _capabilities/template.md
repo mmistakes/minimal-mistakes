@@ -17,19 +17,19 @@ tags: # Select from this set
 submission_details:
   resources: # List any resources associated with the contribution. Not all sections are required
     papers:
-      - title: Link to paper text
-        url: Link to paper url
+      - title: Paper link text
+        url: Paper link url
     software:
-      - title: Link to software text
-        url: Link to software url
-      - title: Another link to software text
-        url: Another link to software url
+      - title: Software link text
+        url: Software link url
+      - title: Another software link text
+        url: Another software link url
     demos:
-      - title: Link to demo text
-        url: Link to demo url
+      - title: Demo link text
+        url: Demo link url
     data:
-      - title: Link to data text
-        url: Link to data url
+      - title: Data link text
+        url: Data link url
    
   # Optional information describing artifact. Leave blank if unused
   version: Version Number
