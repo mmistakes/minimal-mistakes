@@ -8,9 +8,11 @@ tags:
 submission_details:
   resources:
     papers:
-      - https://arxiv.org/
+      - title: Example paper title
+        url: https://arxiv.org/
     software:
-      - https://github.com/XAITK/xaitk-saliency
+      - title: Example repo title
+        url: https://github.com/
 
   version: 1.0
   size: 100MB
