@@ -40,14 +40,19 @@ classes: wide2
    submission_details:
      resources: # List any resources associated with the contribution. Not all sections are required
        papers:
-         - Link to paper
+         - title: Paper link text
+           url: Paper link url
        software:
-         - Link to software
-         - Another link to software
+         - title: Software link text
+           url: Software link url
+         - title: Another software link text
+           url: Another software link url
        demos:
-         - Link to demo
+         - title: Demo link text
+           url: Demo link url
        data:
-         - Link to data
+         - title: Data link text
+           url: Data link url
    
      # Optional information describing artifact. Leave blank if unused
      version: Version Number

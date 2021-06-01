@@ -35,8 +35,8 @@
     {% for resource in page.submission_details.resources %}
       <h3>{{ resource[0] | capitalize }}</h3>
       <ul>
-      {% for url in resource[1] %}
-        <li><a href="{{ url }}">{{ url }}</a></li>
+      {% for child in resource[1] %}
+        <li><a href="{{ child.url }}">{% if child.title %}{{ child.title }}{% else %}{{ child.url }}{% endif %}</a></li>
       {% endfor %}
       </ul>
     {% endfor %}
