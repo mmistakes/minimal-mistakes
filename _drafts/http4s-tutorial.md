@@ -562,7 +562,7 @@ def movieRoutes[F[_] : Monad]: HttpRoutes[F] = {
             { year =>
               val moviesByDirAndYear =
                 movies.values.filter { movie =>
-                  movie.director == director && movie.year == year.getValue)
+                  movie.director == director && movie.year == year.getValue
                 }
               Ok(moviesByDirAndYear.asJson)
             }
