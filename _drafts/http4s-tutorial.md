@@ -54,7 +54,7 @@ libraryDependencies ++= Seq(
 )
 ```
 
-As version 3 of the Cats Effect library was just released, we use version `1.0.0-M21` of http4s library that integrates with it. Even though it's not a release version, the API should be stable enough to build something. Moreover, this version of http4s uses Scala 2.13 as the target language.
+As version 3 of the Cats Effect library was just released, we use version `1.0.0-M21` of http4s library that integrates with it. Even though it's not a release version, the API should be stable enough to build something. Moreover, **this version of http4s uses Scala 2.13** as the target language.
 
 Now that we have the library dependencies, we will create a small HTTP server with the endpoints described above. Hence, we will take the following steps: 
 
@@ -89,6 +89,8 @@ import io.circe.syntax._
 import org.http4s.dsl._
 import org.http4s.dsl.impl._
 import org.http4s.headers._
+import org.http4s.implicits._
+import org.http4s.server._
 
 object Http4sTutorial extends IOApp {
   // ...
@@ -189,7 +191,7 @@ Another everyday use case is a route that contains some path parameters. Indeed,
 GET /movies/aa4f0f9c-c703-4f21-8c05-6a0c8f2052f0/actors
 ```
 
-Using the above route, we refer to a particular movie using its identifier, representing as a UUID. Again, the http4s library defines a set of extractors that help capture the needed information. Upgrading our `movieRoutes` method, for a UUID, we can use the object `UUIDVar`:
+Using the above route, we refer to a particular movie using its identifier, representing UUID. Again, the http4s library defines a set of extractors that help capture the needed information. Upgrading our `movieRoutes` method, for a UUID, we can use the object `UUIDVar`:
 
 ```scala
 def movieRoutes[F[_] : Monad]: HttpRoutes[F] = {
@@ -197,6 +199,7 @@ def movieRoutes[F[_] : Monad]: HttpRoutes[F] = {
   import dsl._
   HttpRoutes.of[F] {
     case GET -> Root / "movies" :? DirectorQueryParamMatcher(director) +& YearQueryParamMatcher(maybeYear) => ???
+    // Just added
     case GET -> Root / "movies" / UUIDVar(movieId) / "actors" => ???
   }
 }
@@ -238,7 +241,7 @@ The main feature of semigroups is the definition of the `combine` function which
 ```scala
 def allRoutes[F[_] : Concurrent]: HttpRoutes[F] = {
   import cats.syntax.semigroupk._
-  movieRoutes <+> directorRoutes
+  movieRoutes[F] <+> directorRoutes[F]
 }
 ```
 
@@ -269,6 +272,7 @@ def directorRoutes[F[_] : Concurrent]: HttpRoutes[F] = {
   import dsl._
   HttpRoutes.of[F] {
     case GET -> Root / "directors" / DirectorVar(director) =>
+      // Just added
       directors.get(director.toString) match {
         case Some(dir) => Ok(dir.asJson)
         case _ => NotFound(s"No director called $director found")
@@ -316,7 +320,7 @@ We validate the query parameter's value using the dedicated `emap` method of the
 def emap[U](f: T => Either[ParseFailure, U]): QueryParamDecoder[U] = ???
 ```
 
-The function work like a common `map` function, but it produces an `Either[ParseFailure, U]` value: If the mapping succeeds, the function outputs a `Right[U]` value, a `Left[ParseFailure]` otherwise. Furthermore, the `ParseFailure` is a type of the http4s library indicating an error parsing an HTTP Message:
+The function works like a common `map` function, but it produces an `Either[ParseFailure, U]` value: If the mapping succeeds, the function outputs a `Right[U]` value, a `Left[ParseFailure]` otherwise. Furthermore, the `ParseFailure` is a type of the http4s library indicating an error parsing an HTTP Message:
 
 ```scala
 // From the Http4s DSL
@@ -327,7 +331,7 @@ The `sanitized` attribute may safely be displayed to a client to describe an err
 
 Instead, the `leftMap` function comes as an extension method of the Cats `Bifunctor` type class. When the type class is instantiated for the `Either` type, it provides many useful methods as `leftMap`, which eventually applies the given function to a `Left` value.
 
-Finally, the `OptionalValidatingQueryParamDecoderMatcher[T]` returns the validation result as an instance of the type `Validated[E, A]`. [`Validated[E, A]`](https://blog.rockthejvm.com/idiomatic-error-handling-in-scala/#4-advanced-validated) is a type coming from the Cats library representing the result of a validation process: If the process ends successfully, the `Validated` contains instance of type `A`, errors of type `E` otherwise. Moreover, we use `Validated[E, A]` in opposition to `Either[E, A]`, for example, because it accumulates errors by design. In our example, the _matcher_ returns an instance of `Validated[ParseFailure, Year]`.
+Finally, the `OptionalValidatingQueryParamDecoderMatcher[T]` returns the result of the validation process as an instance of the type `Validated[E, A]`. [`Validated[E, A]`](https://blog.rockthejvm.com/idiomatic-error-handling-in-scala/#4-advanced-validated) is a type coming from the Cats library representing the result of a validation process: If the process ends successfully, the `Validated` contains instance of type `A`, errors of type `E` otherwise. Moreover, we use `Validated[E, A]` in opposition to `Either[E, A]`, for example, because it accumulates errors by design. In our example, the _matcher_ returns an instance of `Validated[ParseFailure, Year]`.
 
 Once validated the query parameter, we can introduce the code handling the failure with a `BadRequest` HTTP status:
 
@@ -373,7 +377,7 @@ In the previous section, we saw that http4s inserts some preconfigured headers i
 Ok(Director("Zack", "Snyder").asJson, Header.Raw(CIString("My-Custom-Header"), "value"))
 ```
 
-The `CIString` type comes from the Typelevel ecosystem, and represents a _case insensitive_ string.
+The `CIString` type comes from the Typelevel ecosystem (`org.typelevel.ci.CIString`), and represents a _case-insensitive_ string.
 
 In addition, the http4s library provides a lot of types in the package `org.http4s.headers`, representing standard HTTP headers :
 
@@ -450,10 +454,15 @@ However, the `Json` type translate directly into JSON literals, such as `json"""
 
 First, we decode the incoming request automatically into an instance of a `Json` object using the `EntityDecoder[Json]` type. However, we need to do a step beyond to obtain an object of type `Director`. In detail, Circe needs an instance of the type `io.circe.Decoder[Director]` to decode a `Json` object into a `Director` object.
 
-We can provide the instance of the `io.circe.Decoder[Director]` simply adding the import to `io.circe.generic.auto._`, which lets Circe automatically derive for us encoders and decoders. The derivation uses field names of case classes as key names in JSON objects and vice-versa. As the last step, we need to connect the type `Decoder[Director]` to the type `EntityDecoder[Json]`, and this is precisely the work that the module `http4s-circe` does for us through the function `jsonOf`:
+We can provide the instance of the `io.circe.Decoder[Director]` simply adding the import to `io.circe.generic.auto._`, which lets Circe automatically derive for us encoders and decoders. The derivation uses field names of case classes as key names in JSON objects and vice-versa. As the last step, we need to connect the type `Decoder[Director]` to the type `EntityDecoder[Json]`, and this is precisely the work that the module `http4s-circe` does for us through the function `jsonOf`. Since we need the definition of the effect `F` in the scope, we will add the definition of the implicit value inside the method `directorRoutes`:
 
 ```scala
-implicit val directorDecoder: EntityDecoder[F, Director] = jsonOf[F, Director]
+def directorRoutes[F[_] : Concurrent]: HttpRoutes[F] = {
+  val dsl = Http4sDsl[F]
+  import dsl._
+  implicit val directorDecoder: EntityDecoder[F, Director] = jsonOf[F, Director]
+  // ...
+}
 ```
 
 Summing up, the final form of the API looks like the following:
@@ -472,14 +481,14 @@ def directorRoutes[F[_] : Concurrent]: HttpRoutes[F] = {
     case req@POST -> Root / "directors" =>
       for {
         director <- req.as[Director]
-        _ = directors.addOne(director.toString, director)
+        _ = directors.put(director.toString, director)
         res <- Ok.headers(`Content-Encoding`(ContentCoding.gzip))
                 .map(_.addCookie(ResponseCookie("My-Cookie", "value")))
       } yield res
   }
 ```
 
-The above code uses the _for-comprehension_ syntax making it more readable. However, it is possible only because we initially import the Cats extension methods of `cats.syntax.flatMap._` and `cats.syntax.functor._`. Remember that for `F`, an implicit type class `Monad[F]` must be defined.
+The above code uses the _for-comprehension_ syntax making it more readable. However, it is possible only because we initially import the Cats extension methods of `cats.syntax.flatMap._` and `cats.syntax.functor._`. Remember that an implicit type class `Monad[F]` must be defined for' F'.
 
 Last but not least, we changed the context-bound of the effect `F`. In fact, the `jsonOf` method requires at least an instance of `Concurrent` to execute. So, the `Monad` type class is not sufficient if we need to decode a JSON request into a `case class`. 
 
@@ -521,16 +530,16 @@ package object syntax {
   implicit final class EncoderOps[A](private val value: A) extends AnyVal {
     final def asJson(implicit encoder: Encoder[A]): Json = encoder(value)
   }
-
 }
 ```
 
 As we can see, the above method comes into the scope importing the `io.circe.syntax._` package. As we previously said for decoders, the module `http4s-circe` provides the type `EntityEncoder[Json]`, with the import `org.http4s.circe._`.
 
-Now, we can complete our API definition, responding with the needed information:
+Now, we can complete our API definition, responding with the needed information. 
 
 ```scala
 val snjl: Movie = Movie(
+  "6bcbca1e-efd3-411d-9f7c-14b872444fce",
   "Zack Snyder's Justice League",
   2021,
   List("Henry Cavill", "Gal Godot", "Ezra Miller", "Ben Affleck", "Ray Fisher", "Jason Momoa"),
@@ -543,9 +552,30 @@ def movieRoutes[F[_] : Monad]: HttpRoutes[F] = {
   val dsl = Http4sDsl[F]
   import dsl._
   HttpRoutes.of[F] {
-    case GET -> Root / "movies" :? DirectorQueryParamMatcher(director) +& YearQueryParamMatcher(year) =>
-      Ok(List(snjl).asJson)
-    // ...
+    case GET -> Root / "movies" :? DirectorQueryParamMatcher(director) +& YearQueryParamMatcher(maybeYear) =>
+      maybeYear match {
+        case Some(y) =>
+          y.fold(
+            _ => BadRequest("The given year is not valid"),
+            // Just added
+            year => Ok(List(snjl).asJson)
+          )
+        case None => NotFound(s"There are no movies for director $director")
+      }
+    case GET -> Root / "movies" / UUIDVar(movieId) / "actors" =>
+      if ("6bcbca1e-efd3-411d-9f7c-14b872444fce" == movieId.toString)
+        Ok(
+          List(
+            "Henry Cavill",
+            "Gal Godot",
+            "Ezra Miller",
+            "Ben Affleck",
+            "Ray Fisher",
+            "Jason Momoa"
+          ).asJson
+        )
+      else
+        NotFound(s"No movie with id $movieId found")
   }
 }
 ```
@@ -559,9 +589,10 @@ We learned how to define a route, read path and parameter variables, read and wr
 We can instantiate a new blaze server using the dedicated builder, `BlazeServerBuilder`, which takes as inputs the `HttpRoutes` (or the `HttpApp`), and the host and port serving the given routes:
 
 ```scala
+import org.http4s.server.blaze.BlazeServerBuilder
 import scala.concurrent.ExecutionContext.global
 
-val movieApp = MovieApp.allRoutesComplete[IO]
+val movieApp = Http4sTutorial.allRoutesComplete[IO]
 BlazeServerBuilder[IO](global)
   .bindHttp(8080, "localhost")
   .withHttpApp(movieApp)
@@ -571,11 +602,9 @@ BlazeServerBuilder[IO](global)
 In blaze jargon, we say we mount the routes at the given path. The default path is `"/"`, but if we need we can easily change the path using a `Router`. For example, we can partition the APIs in public (`/api`), and private (`/api/private`):
 
 ```scala
-import scala.concurrent.ExecutionContext.global
-
 val apis = Router(
-  "/api" -> MovieApp.movieRoutes[IO],
-  "/api/private" -> MovieApp.directorRoutes[IO]
+  "/api" -> Http4sTutorial.movieRoutes[IO],
+  "/api/private" -> Http4sTutorial.directorRoutes[IO]
 ).orNotFound
 
 BlazeServerBuilder[IO](global)
@@ -602,8 +631,8 @@ object Http4sTutorial extends IOApp {
   def run(args: List[String]): IO[ExitCode] = {
 
     val apis = Router(
-      "/api" -> MovieApp.movieRoutes[IO],
-      "/api/private" -> MovieApp.directorRoutes[IO]
+      "/api" -> Http4sTutorial.movieRoutes[IO],
+      "/api/private" -> Http4sTutorial.directorRoutes[IO]
     ).orNotFound
     
     BlazeServerBuilder[IO](global)
@@ -623,36 +652,57 @@ Once we have a `Resource` to handle, we can `use` its content. In this example, 
 Eventually, all the pieces should have fallen into place, and the whole code implementing our APIs is the following:
 
 ```scala
-object MovieApp {
+package in.rcard.http4s.tutorial.movie
+
+import cats._
+import cats.effect._
+import cats.implicits._
+import org.http4s.circe._
+import org.http4s._
+import io.circe.generic.auto._
+import io.circe.syntax._
+import org.http4s.dsl._
+import org.http4s.dsl.impl._
+import org.http4s.headers._
+import org.http4s.implicits._
+import org.http4s.server._
+import org.http4s.server.blaze.BlazeServerBuilder
+import org.typelevel.ci.CIString
+
+import java.time.Year
+import scala.collection.mutable
+import scala.util.Try
+
+object Http4sTutorial extends IOApp {
 
   type Actor = String
 
-  case class Movie(id: String, title: String, year: Int, actors: List[Actor], director: String)
+  case class Movie(id: String, title: String, year: Int, actors: List[String], director: String)
 
-  case class Director(firstName: String, lastName: String)
+  case class Director(firstName: String, lastName: String) {
+    override def toString: String = s"$firstName $lastName"
+  }
 
   val snjl: Movie = Movie(
     "6bcbca1e-efd3-411d-9f7c-14b872444fce",
     "Zack Snyder's Justice League",
     2021,
     List("Henry Cavill", "Gal Godot", "Ezra Miller", "Ben Affleck", "Ray Fisher", "Jason Momoa"),
-
     "Zack Snyder"
   )
-  
+
   object DirectorQueryParamMatcher extends QueryParamDecoderMatcher[String]("director")
 
   implicit val yearQueryParamDecoder: QueryParamDecoder[Year] =
     QueryParamDecoder[Int].emap { y =>
       Try(Year.of(y))
-        .toEither
-        .leftMap { tr =>
-          ParseFailure(tr.getMessage, tr.getMessage)
-        }
+              .toEither
+              .leftMap { tr =>
+                ParseFailure(tr.getMessage, tr.getMessage)
+              }
     }
 
   object YearQueryParamMatcher extends OptionalValidatingQueryParamDecoderMatcher[Year]("year")
-
 
   def movieRoutes[F[_] : Monad]: HttpRoutes[F] = {
     val dsl = Http4sDsl[F]
@@ -663,11 +713,8 @@ object MovieApp {
           case Some(y) =>
             y.fold(
               _ => BadRequest("The given year is not valid"),
-              year =>
-                if ("Zack Snyder" == director && year == Year.of(2021))
-                  Ok(List(snjl).asJson)
-                else
-                  NotFound(s"There are no movies for director $director")
+              year => Ok(List(snjl).asJson)
+              // Proceeding with the business logic
             )
           case None => NotFound(s"There are no movies for director $director")
         }
@@ -699,34 +746,52 @@ object MovieApp {
     }
   }
 
+  val directors: mutable.Map[Actor, Director] =
+    mutable.Map("Zack Snyder" -> Director("Zack", "Snyder"))
+
   def directorRoutes[F[_] : Concurrent]: HttpRoutes[F] = {
     val dsl = Http4sDsl[F]
     import dsl._
-    implicit val directorDecoder: EntityDecoder[F, Director] = jsonOf[F, Director] // most calls require Monad, but this requires Concurrent
-    import cats.syntax.flatMap._
-    import cats.syntax.functor._
+    implicit val directorDecoder: EntityDecoder[F, Director] = jsonOf[F, Director]
     HttpRoutes.of[F] {
       case GET -> Root / "directors" / DirectorVar(director) =>
-        if (director == Director("Zack", "Snyder"))
-          Ok(Director("Zack", "Snyder").asJson, Header.Raw(CIString("My-Custom-Header"), "value"))
-        else
-          NotFound(s"No director called $director found")
+        directors.get(director.toString) match {
+          case Some(dir) => Ok(dir.asJson, Header.Raw(CIString("My-Custom-Header"), "value"))
+          case _ => NotFound(s"No director called $director found")
+        }
       case req@POST -> Root / "directors" =>
         for {
-          _ <- req.as[Director]
+          director <- req.as[Director]
+          _ = directors.put(director.toString, director)
           res <- Ok.headers(`Content-Encoding`(ContentCoding.gzip))
-            .map(_.addCookie(ResponseCookie("My-Cookie", "value")))
+                  .map(_.addCookie(ResponseCookie("My-Cookie", "value")))
         } yield res
     }
   }
 
   def allRoutes[F[_] : Concurrent]: HttpRoutes[F] = {
-    import cats.syntax.semigroupk._
-    movieRoutes <+> directorRoutes
+    movieRoutes[F] <+> directorRoutes[F]
   }
 
   def allRoutesComplete[F[_] : Concurrent]: HttpApp[F] = {
     allRoutes.orNotFound
+  }
+
+  import scala.concurrent.ExecutionContext.global
+
+  override def run(args: List[String]): IO[ExitCode] = {
+
+    val apis = Router(
+      "/api" -> Http4sTutorial.movieRoutes[IO],
+      "/api/private" -> Http4sTutorial.directorRoutes[IO]
+    ).orNotFound
+
+    BlazeServerBuilder[IO](global)
+            .bindHttp(8080, "localhost")
+            .withHttpApp(apis)
+            .resource
+            .use(_ => IO.never)
+            .as(ExitCode.Success)
   }
 }
 ```
