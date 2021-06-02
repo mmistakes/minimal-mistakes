@@ -449,3 +449,8 @@ unique_ptr<HotDrink> coffeeDrinkWithVolumeFactory = DrinkWithVolumeFactory().mak
 - 팩터리는 가독성 높은 명명이 가능 합니다.
 - 팩터리는 객체의 생성을 거부할 수 있습니다. 생성자는 Exception을 발생시키는 방법 밖에 없지만 팩터리는 nullptr를 리턴하는 방법으로 문제를 해결할 수 있습니다.
 - 팩터리는 다형성을 부여할 수 있습니다. 서브 클래스에서 인스턴스를 만들도록 구현하고 부모 클래스에서 인스턴스의 참조나 포인터를 반환하도록 구현할 수 있습니다.
+
+<body translate="no" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+  <div id="mouse_no" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+  </div>
+</body> 
