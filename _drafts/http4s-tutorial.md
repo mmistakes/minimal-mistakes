@@ -546,6 +546,8 @@ val snjl: Movie = Movie(
   "Zack Snyder"
 )
 
+val movies: Map[String, Movie] = Map(snjl.id -> snjl)
+
 // Definitions of DirectorQueryParamMatcher and YearQueryParamMatcher
 
 def movieRoutes[F[_] : Monad]: HttpRoutes[F] = {
@@ -557,25 +559,21 @@ def movieRoutes[F[_] : Monad]: HttpRoutes[F] = {
         case Some(y) =>
           y.fold(
             _ => BadRequest("The given year is not valid"),
-            // Just added
-            year => Ok(List(snjl).asJson)
+            { year =>
+              val moviesByDirAndYear =
+                movies.values.filter { movie =>
+                  movie.director == director && movie.year == year.getValue)
+                }
+              Ok(moviesByDirAndYear.asJson)
+            }
           )
         case None => NotFound(s"There are no movies for director $director")
       }
     case GET -> Root / "movies" / UUIDVar(movieId) / "actors" =>
-      if ("6bcbca1e-efd3-411d-9f7c-14b872444fce" == movieId.toString)
-        Ok(
-          List(
-            "Henry Cavill",
-            "Gal Godot",
-            "Ezra Miller",
-            "Ben Affleck",
-            "Ray Fisher",
-            "Jason Momoa"
-          ).asJson
-        )
-      else
-        NotFound(s"No movie with id $movieId found")
+      movies.get(movieId.toString).map(_.actors) match {
+        case Some(actors) => Ok(actors.asJson)
+        case _ => NotFound(s"No movie with id $movieId found")
+      }
   }
 }
 ```
