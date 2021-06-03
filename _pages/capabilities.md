@@ -13,6 +13,6 @@ Often the hardest part of leveraging explainable artificial intelligence can be 
 
 Click on any explanation type in the chart below to see its documentation.
 
-![Capabilities](/assets/kitware/images/ml_map.png)
+![Capabilities](/assets/kitware/images/ihmc_r&d.jpg)
 
 # Capabilities by Tag
