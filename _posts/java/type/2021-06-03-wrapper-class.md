@@ -1,17 +1,13 @@
 ---
-title: \[JAVA\] Wrapper class 에 대한 짜
+title: \[JAVA\] Wrapper class 에 대한 짧은 정리
 categories: 
-   - 스프링 부트
+   - java
 tags:
-   - 스프링 부트
-   - database
-   - spring boot
-   - 데이터 베이스
-   - sql
-   - database load error
+   - java
+   - wrapper class
    
 
-last_modified_at: 2021-05-29 18:31:32.71 
+last_modified_at: 2021-06-03 18:31:32.71 
 
 ---
 
@@ -32,5 +28,5 @@ wrapper class는 기본적으로 객체이기 때문에 == 비교 연산자는 �
 
 <, > 연산자는 사용이 가능합니다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Njg5MjU3ODddfQ==
+eyJoaXN0b3J5IjpbLTg2MjA4MDM3Nl19
 -->
