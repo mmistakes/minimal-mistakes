@@ -1,7 +1,9 @@
 ---
 title: \[JAVA\] Wrapper class 에 대한 짧은 정리
+
 categories: 
    - java
+   -
 tags:
    - java
    - wrapper class
@@ -28,5 +30,5 @@ wrapper class는 기본적으로 객체이기 때문에 == 비교 연산자는 �
 
 <, > 연산자는 사용이 가능합니다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MjA4MDM3Nl19
+eyJoaXN0b3J5IjpbNTYwOTAyMTY1XX0=
 -->
