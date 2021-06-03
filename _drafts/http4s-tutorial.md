@@ -850,11 +850,19 @@ So, why don't we directly use a concrete effect, such as the `IO` effect, in the
 
 First, if we abstract the effect, **we can easily control what kind of execution model we want to apply to our server**. Will the server perform operation concurrently or sequentially? In fact, there are different kinds of effects in the Cats Effect that model the above execution models, the `Sync` type class for synchronous, blocking programming, and the `Async` type class for asynchronous, concurrent programming. Notice that the `Async` type extends the `Sync` type.
 
-**If we need to ensure at least some properties on the execution model apply to the effect, we can use the context-bound syntax**. For example, we defined our routes using an abstract effect `F` that has at least an associated `Sync` type class:
+**If we need to ensure at least some properties on the execution model apply to the effect, we can use the context-bound syntax**. For example, we defined our routes handling movies using an abstract effect `F` that has at least an associated the `Monad` type class:
 
 ```scala
-def movieRoutes[F[_] : Sync]: HttpRoutes[F] = ???
+def movieRoutes[F[_] : Monad]: HttpRoutes[F] = ???
 ```
+
+We can use bound to a `Monad` because no operation requests anything other than sequencing functions through the `flatMap` method. However, the routes handling the directors need a more tight context-bound:
+
+```scala
+def directorRoutes[F[_] : Concurrent]: HttpRoutes[F] = ???
+```
+
+As we said, the decoding of case classes from JSON literals through the Circe library requires some concurrency, which is expressed by the `Concurrent` type class coming from the Cats Effect library.
 
 Moreover, **using a type constructor instead of a concrete effect makes the whole architecture easier to test**. Binding to a concrete effect forces us to use it in the tests, making tests more challenging to write.
 
