@@ -1,6 +1,6 @@
 ---
 title: "Similarity Based Saliency Maps"
-excerpt: "Similarity Based Saliency Maps (SBSM) is a similarity based saliency algorithm that utilizes a standard distance metrics to compute image regions that result in the largest drop in distance between unalterned images and perturbed version of the same images."
+excerpt: "Similarity Based Saliency Maps (SBSM) is a similarity based saliency algorithm that utilizes standard distance metrics to compute image regions that result in the largest drop in distance between unaltered images and perturbed versions of the same images."
 tags: # Select from this set
   - Analytics
   - Computer Vision
@@ -11,12 +11,16 @@ tags: # Select from this set
 submission_details:
   resources: # List any resources associated with the contribution
     papers:
-      - https://openaccess.thecvf.com/content_CVPRW_2019/papers/Explainable%20AI/Dong_Explainability_for_Content-Based_Image_Retrieval_CVPRW_2019_paper.pdf
+      - title: CVPRW '19 Paper
+        url: https://openaccess.thecvf.com/content_CVPRW_2019/papers/Explainable%20AI/Dong_Explainability_for_Content-Based_Image_Retrieval_CVPRW_2019_paper.pdf
     software:
-      - https://github.com/Kitware/SMQTK/blob/dev/XAI/python/smqtk/algorithms/saliency/sbsm.py
-      - https://github.com/Kitware/SMQTK/blob/dev/XAI/python/smqtk/algorithms/saliency/sal_gen.py
+      - title: SBSM
+        url: https://github.com/Kitware/SMQTK/blob/dev/XAI/python/smqtk/algorithms/saliency/sbsm.py
+      - title: Saliency Generator
+        url: https://github.com/Kitware/SMQTK/blob/dev/XAI/python/smqtk/algorithms/saliency/sal_gen.py
     demos:
-      - https://drive.google.com/file/d/13iHNyYk-c42ZWy0-RUrzZaq37deqBxU-/view?usp=sharing
+      - title: Demo Video
+        url: https://drive.google.com/file/d/13iHNyYk-c42ZWy0-RUrzZaq37deqBxU-/view?usp=sharing
 
   # Optional information describing artifact
   version: 1.0
@@ -25,15 +29,18 @@ submission_details:
 
   authors:
     - Bo Dong
+    - Bhavan Vasu
   organizations:
-    - Kitware Inc
+    - Kitware, Inc.
   point_of_contact:
     name: Bhavan Vasu
     email: bhavan.vasu@kitware.com
 ---
 
 ## Overview
-SBSM is a saliency algorithm that compares two image descriptors in the embedding space to attempt and reason retrieval performance between two reference images. [Explainability for Content-Based Image Retrieval (2019)](https://openaccess.thecvf.com/content_CVPRW_2019/papers/Explainable%20AI/Dong_Explainability_for_Content-Based_Image_Retrieval_CVPRW_2019_paper.pdf)
+SBSM is a saliency algorithm that compares image descriptors in the embedding space in an attempt to reason about retrieval performance between two reference images.
+
+[Explainability for Content-Based Image Retrieval (2019)](https://openaccess.thecvf.com/content_CVPRW_2019/papers/Explainable%20AI/Dong_Explainability_for_Content-Based_Image_Retrieval_CVPRW_2019_paper.pdf)
 
 ## Intended Use
 When to use SBSM

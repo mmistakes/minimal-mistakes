@@ -8,7 +8,8 @@ tags: # Select from this set
 submission_details:
   resources: # List any resources associated with the contribution. Not all sections are required
     papers:
-      - https://data.kitware.com/api/v1/item/60abdf272fa25629b99af745/download?contentDisposition=inline
+      - title: Goodness Checklist
+        url: https://data.kitware.com/api/v1/item/60abdf272fa25629b99af745/download?contentDisposition=inline
    
   # Optional information describing artifact
   version: 1.0

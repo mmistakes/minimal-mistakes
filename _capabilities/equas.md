@@ -10,13 +10,17 @@ tags: # Select from this set
 submission_details:
   resources: # List any resources associated with the contribution. Not all sections are required
     papers:
-      - https://openaccess.thecvf.com/content_cvpr_2017/papers/Bau_Network_Dissection_Quantifying_CVPR_2017_paper.pdf
+      - title: CVPR '17 Paper
+        url: https://openaccess.thecvf.com/content_cvpr_2017/papers/Bau_Network_Dissection_Quantifying_CVPR_2017_paper.pdf
     software:
-      - https://github.com/alexmontesdeoca-raytheon/xaitk.bbn.equas
+      - title: EQUAS Code
+        url: https://github.com/alexmontesdeoca-raytheon/xaitk.bbn.equas
     demos:
-      - https://www.equas.net/#/oneshotdemo?modality=component
+      - title: EQUAS Demo
+        url: https://www.equas.net/#/oneshotdemo?modality=component
     data:
-      - https://www.robots.ox.ac.uk/~vgg/data/fgvc-aircraft/
+      - title: FGVC-Aircraft Benchmark
+        url: https://www.robots.ox.ac.uk/~vgg/data/fgvc-aircraft/
    
   # Optional information describing artifact
   version: 2.0
