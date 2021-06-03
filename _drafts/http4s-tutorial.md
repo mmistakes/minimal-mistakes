@@ -364,7 +364,7 @@ def movieRoutes[F[_] : Monad]: HttpRoutes[F] = {
             year => ???
             // Proceeding with the business logic
           )
-        case None => NotFound(s"There are no movies for director $director")
+        case None => ???
       }
   }
 ```
@@ -548,6 +548,12 @@ val snjl: Movie = Movie(
 
 val movies: Map[String, Movie] = Map(snjl.id -> snjl)
 
+private def findMovieById(movieId: UUID) =
+  movies.get(movieId.toString)
+
+private def findMoviesByDirector(director: String): List[Movie] =
+  movies.values.filter(_.director == director).toList
+
 // Definitions of DirectorQueryParamMatcher and YearQueryParamMatcher
 
 def movieRoutes[F[_] : Monad]: HttpRoutes[F] = {
@@ -555,22 +561,21 @@ def movieRoutes[F[_] : Monad]: HttpRoutes[F] = {
   import dsl._
   HttpRoutes.of[F] {
     case GET -> Root / "movies" :? DirectorQueryParamMatcher(director) +& YearQueryParamMatcher(maybeYear) =>
+      val movieByDirector = findMoviesByDirector(director)
       maybeYear match {
         case Some(y) =>
           y.fold(
             _ => BadRequest("The given year is not valid"),
             { year =>
               val moviesByDirAndYear =
-                movies.values.filter { movie =>
-                  movie.director == director && movie.year == year.getValue
-                }
+                movieByDirector.filter(_.year == year.getValue)
               Ok(moviesByDirAndYear.asJson)
             }
           )
-        case None => NotFound(s"There are no movies for director $director")
+        case None => Ok(movieByDirector.asJson)
       }
     case GET -> Root / "movies" / UUIDVar(movieId) / "actors" =>
-      movies.get(movieId.toString).map(_.actors) match {
+      findMovieById(movieId).map(_.actors) match {
         case Some(actors) => Ok(actors.asJson)
         case _ => NotFound(s"No movie with id $movieId found")
       }
@@ -650,8 +655,6 @@ Once we have a `Resource` to handle, we can `use` its content. In this example, 
 Eventually, all the pieces should have fallen into place, and the whole code implementing our APIs is the following:
 
 ```scala
-package in.rcard.http4s.tutorial.movie
-
 import cats._
 import cats.effect._
 import cats.implicits._
@@ -668,6 +671,7 @@ import org.http4s.server.blaze.BlazeServerBuilder
 import org.typelevel.ci.CIString
 
 import java.time.Year
+import java.util.UUID
 import scala.collection.mutable
 import scala.util.Try
 
@@ -689,6 +693,8 @@ object Http4sTutorial extends IOApp {
     "Zack Snyder"
   )
 
+  val movies: Map[String, Movie] = Map(snjl.id -> snjl)
+
   object DirectorQueryParamMatcher extends QueryParamDecoderMatcher[String]("director")
 
   implicit val yearQueryParamDecoder: QueryParamDecoder[Year] =
@@ -707,31 +713,32 @@ object Http4sTutorial extends IOApp {
     import dsl._
     HttpRoutes.of[F] {
       case GET -> Root / "movies" :? DirectorQueryParamMatcher(director) +& YearQueryParamMatcher(maybeYear) =>
+        val movieByDirector = findMoviesByDirector(director)
         maybeYear match {
           case Some(y) =>
             y.fold(
               _ => BadRequest("The given year is not valid"),
-              year => Ok(List(snjl).asJson)
-              // Proceeding with the business logic
+              { year =>
+                val moviesByDirAndYear =
+                  movieByDirector.filter(_.year == year.getValue)
+                Ok(moviesByDirAndYear.asJson)
+              }
             )
-          case None => NotFound(s"There are no movies for director $director")
+          case None => Ok(movieByDirector.asJson)
         }
       case GET -> Root / "movies" / UUIDVar(movieId) / "actors" =>
-        if ("6bcbca1e-efd3-411d-9f7c-14b872444fce" == movieId.toString)
-          Ok(
-            List(
-              "Henry Cavill",
-              "Gal Godot",
-              "Ezra Miller",
-              "Ben Affleck",
-              "Ray Fisher",
-              "Jason Momoa"
-            ).asJson
-          )
-        else
-          NotFound(s"No movie with id $movieId found")
+        findMovieById(movieId).map(_.actors) match {
+          case Some(actors) => Ok(actors.asJson)
+          case _ => NotFound(s"No movie with id $movieId found")
+        }
     }
   }
+
+  private def findMovieById(movieId: UUID) =
+    movies.get(movieId.toString)
+
+  private def findMoviesByDirector(director: String): List[Movie] =
+    movies.values.filter(_.director == director).toList
 
   object DirectorVar {
     def unapply(str: String): Option[Director] = {
@@ -792,6 +799,7 @@ object Http4sTutorial extends IOApp {
             .as(ExitCode.Success)
   }
 }
+
 ```
 
 Once the server is up and running, we can try our freshly new APIs with any HTTP client, such as `cURL` or something similar. Hence, the call `curl 'http://localhost:8080/api/movies?director=Zack%20Snyder&year=2020' | json_pp` will produce the following response, as expected:
