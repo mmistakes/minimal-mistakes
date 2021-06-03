@@ -1,5 +1,5 @@
 ---
-title: "Cats: Essential Type Class Hierarchy"
+title: "Cats: Essential Type Class Hierarchy, Explained"
 date: 2021-06-03
 header:
     image: "/images/blog cover.jpg"
@@ -279,4 +279,4 @@ And thus, the final type class hierarchy looks like this:
 
 In this article, we've gone over the major type classes in Cats and established the basic relationship between them. The deep reasoning behind them is complex and way outside the scope of this piece, but hopefully you got the main intuition behind most (maybe all) of the type classes and relationships above.
 
-Obviously, the [Cats course](https://rockthejvm.com/p/cats) describes everything in detail, with lots of exercises and many more functionalities of Cats that we did not have time to even touch in this article &mdash; e.g. data validation, purely functional state, modes of evaluation, traversing, Kleisli, type class variance &mdash but I hope this article gave you some essential tips on how to start looking at the core type classes so you can use them for your own projects.
+Obviously, the [Cats course](https://rockthejvm.com/p/cats) describes everything in detail, with lots of exercises and many more functionalities of Cats that we did not have time to even touch in this article &mdash; e.g. data validation, purely functional state, modes of evaluation, traversing, Kleisli, type class variance &mdash; but I hope this article gave you some essential tips on how to start looking at the core type classes so you can use them for your own projects.
