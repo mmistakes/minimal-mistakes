@@ -100,7 +100,7 @@ You know this from real life: flatMapping lists, futures, options are all (simpl
 Because Monads have `pure` and `flatMap`, we can express the much weaker `map` method in terms of those two:
 
 ```scala
-def map[A, B](fa: F[A])(f: A => F[B]): F[B] =
+def map[A, B](fa: F[A])(f: A => B): F[B] =
   flatMap(fa)(a => pure(f(a)))
 ```
 
