@@ -1,8 +1,10 @@
 ---
 title: \[Spring Boot\] There is no PasswordEncoder mapped for the id "null" 오류
 permalink: /java/spring-boot/error
+
 categories: 
    - 스프링 부트
+
 tags:
    - 스프링 부트
    - null 오류
@@ -30,3 +32,6 @@ spring:
 ```
 
 yaml 기준으로 user / password를 적었을 경우 저렇게 **{noop}**를 붙여주면 된다. propertis 혹은 xml 등등 어디서든 **{noop}**을 붙여주면 된다.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTM3NDc0MjY0XX0=
+-->
