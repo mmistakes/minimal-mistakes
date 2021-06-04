@@ -12,8 +12,6 @@ header:
     teaser: "/assets/images/posts/wordcloud.png"
     overlay_image: "/assets/images/posts/wordcloud.png"
     overlay_filter: 0.5
-
-link: "/about/"
 ---
 
 {% include toc title="Contents" %}
