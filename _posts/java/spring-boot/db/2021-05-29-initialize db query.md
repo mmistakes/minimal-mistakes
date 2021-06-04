@@ -1,7 +1,9 @@
 ---
 title: \[Spring Boot\] 스프링 부트가 실행 될 때, 자동으로 데이터 삽입하기 + 데이터 삽입 안되는 오류 해결 (initialize database load 오류)
+
 categories: 
    - 스프링 부트
+  
 tags:
    - 스프링 부트
    - database
@@ -41,6 +43,6 @@ create table 등은 가능한데, data.sql에서의 쿼리가 먹히지 않아�
 
 이상!!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NTQyMTE5NSwzMjkxOTkxMDEsLTMwMz
-QyNzk2MF19
+eyJoaXN0b3J5IjpbLTYxMjMyODkwNywtMjg1NDIxMTk1LDMyOT
+E5OTEwMSwtMzAzNDI3OTYwXX0=
 -->
