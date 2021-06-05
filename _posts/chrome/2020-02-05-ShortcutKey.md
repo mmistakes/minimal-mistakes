@@ -9,6 +9,8 @@ tags:
    - 크롬
    - chrome
    - shortcut key
+
+toc: false
    
 last_modified_at: 2020-02-06T17:50:00 # 마지막 변경일
 
@@ -26,5 +28,5 @@ last_modified_at: 2020-02-06T17:50:00 # 마지막 변경일
 `Ctrl` + `N` -> 새 창  
 `Ctrl` + `Shift` +  `N` -> 새 시크릿 창  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDA5NTU3MTIsMTM3MzQxNTk3XX0=
+eyJoaXN0b3J5IjpbMzk2NzA0MDA3LDEzNzM0MTU5N119
 -->
