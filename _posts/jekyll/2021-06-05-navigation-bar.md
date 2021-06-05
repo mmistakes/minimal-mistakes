@@ -6,9 +6,10 @@ categories:
 tags:
    - github io
    - jekyll
+   - navigation bar
    
 
-last_modified_at: 2021-06-04 18:01:32.71 
+last_modified_at: 2021-06-05 15:27:32
 
 ---
 
@@ -16,5 +17,5 @@ last_modified_at: 2021-06-04 18:01:32.71
 [상단 네비게이션 바 수정 link](https://danggai.github.io/github.io/Jekyll-%EC%83%81%EB%8B%A8-%EB%84%A4%EB%B9%84%EA%B2%8C%EC%9D%B4%EC%85%98%EB%B0%94-%EB%AA%A9%EB%A1%9D-%EB%B0%94%EA%BE%B8%EA%B8%B0!/)
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0OTc4NjcxXX0=
+eyJoaXN0b3J5IjpbLTE3NjEzMTE4NTldfQ==
 -->
