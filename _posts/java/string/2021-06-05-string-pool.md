@@ -1,8 +1,7 @@
 ---
 title: \[JAVA] String 객체는 어떻게 저장될까? (String Pool)
 
-categories:  
- - java
+categories:  java
 
 tags:  
  - java
@@ -10,10 +9,9 @@ tags:
  - string literal
  - heap
 
-last_modified_at: 2020-01-29T10:30:06 # 마지막 변경일
+last_modified_at: 2021-06-05 16:44:06
 
 ---
-# 
 
 일단, 자바에서 String은 immutable(불변)입니다. 그래서 한번 생성된 것이 수정되지 않습니다. 
 그렇기 때문에 자칫하면 메모리 낭비로 이어질 수 있습니다. 이를 해결하기 위해서 String Pool이라는 것을 이용합니다.
@@ -85,5 +83,5 @@ assertThat(str1).isNotSameAs(str2);
 
 - [진성 소프트](https://jinseongsoft.tistory.com/365)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxODkzODAzMV19
+eyJoaXN0b3J5IjpbMTA4ODE3MzQ0M119
 -->
