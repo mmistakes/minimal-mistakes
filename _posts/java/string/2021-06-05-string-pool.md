@@ -48,7 +48,7 @@ assertThat(str1).isSameAs(str2);
 ```
 
 
-## **String Object**
+## String Object
 
 String 생성자를 이용해서 String 객체를 생성하는 경우를 살펴봅시다.
 
@@ -63,9 +63,8 @@ String str2 = new String("Kim");
 assertThat(str1).isNotSameAs(str2);
 ```
 
-### 
 
-## **String Literal vs String Object**
+## String Literal vs String Object
 
 - 결론적으로 Literal 선언이 재사용을 하기 때문에 new로 생성하는 것 보다는 빠릅니다.
     - 다만 큰차이는 나지 않습니다 ..
@@ -82,5 +81,5 @@ assertThat(str1).isNotSameAs(str2);
 
 - [진성 소프트](https://jinseongsoft.tistory.com/365)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyMjYwMjQ4NF19
+eyJoaXN0b3J5IjpbMjE0Mzc2NDY0M119
 -->
