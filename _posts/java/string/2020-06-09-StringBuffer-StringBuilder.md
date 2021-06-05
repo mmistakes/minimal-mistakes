@@ -1,10 +1,8 @@
 ---
-title: \[JAVA] StringBuffer 와 StringBuilder의 차이점은 무엇인가? 왜 사용하는가?
-permalink: /difference/stringbuffer-stringbuilder
+title: \[JAVA] StringBuffer와 StringBuilder의 차이점은 무엇이고 왜 사용할까?
 
 categories: 
    - java
-   - string
 
 tags:
    - java
@@ -12,14 +10,13 @@ tags:
    - stringbuffer
    - stringbuilder
 
-last_modified_at: 2020-06-09  18:47:59.77 
+last_modified_at: 2021-06-05  16:46:59
 
 ---
 
 Java를 개발하다보면 String에 대해서 별다른 고민없이 (“Some text” + “ added text”)와 같이 ‘+’기호를 통해 스트링을 더하곤 한다.  
 하지만 Java 개발자라면 고민을 더 해보고 Class를 선택해야한다. String과 StringBuilder, 그리고 StringBuffer를 어떤 경우에 사용하는지 확인해보자.
 
----
 
 # 각 클래스의 특징
 
@@ -109,5 +106,5 @@ new Thread(() -> {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDAwMTIyNjA4XX0=
+eyJoaXN0b3J5IjpbMTQwMzAzODY1Nl19
 -->
