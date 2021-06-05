@@ -12,11 +12,11 @@ tags:
 last_modified_at: 2021-06-05 15:27:32
 
 ---
-
+[](https://github.com/choiseonjae/choiseonjae.github.io/blob/master/assets/image.png?raw=true)
 해당 내용에 대해서는 정리하기 보다는 참고가능한 블로그 link를 추가하겠습니다.  
 [클릭 >> 상단 네비게이션 바 수정 link로 이동하기](https://danggai.github.io/github.io/Jekyll-%EC%83%81%EB%8B%A8-%EB%84%A4%EB%B9%84%EA%B2%8C%EC%9D%B4%EC%85%98%EB%B0%94-%EB%AA%A9%EB%A1%9D-%EB%B0%94%EA%BE%B8%EA%B8%B0!/)
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjA5MTk5NzMsLTEwNjQxNzU4MDFdfQ
-==
+eyJoaXN0b3J5IjpbLTIwMDU4MzY4ODYsLTE3NjA5MTk5NzMsLT
+EwNjQxNzU4MDFdfQ==
 -->
