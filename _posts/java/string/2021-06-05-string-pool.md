@@ -47,7 +47,6 @@ String str2 = "Kim";
 assertThat(str1).isSameAs(str2);
 ```
 
-### 
 
 ## **String Object**
 
@@ -83,5 +82,5 @@ assertThat(str1).isNotSameAs(str2);
 
 - [진성 소프트](https://jinseongsoft.tistory.com/365)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4ODE3MzQ0M119
+eyJoaXN0b3J5IjpbMTkyMjYwMjQ4NF19
 -->
