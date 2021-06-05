@@ -27,7 +27,7 @@ String ObjectString str1 = new String("Kim");
 
 첫 번째 방식을 리터럴 방식이라고 하고, 두 번째 방식을 객체 생성 방식이라고 합니다.
 
-## **String interning**
+## String Interning
 
 리터럴의 사용/생성 과정을 **String Interning** 이라고 합니다. 
 
@@ -81,5 +81,5 @@ assertThat(str1).isNotSameAs(str2);
 
 - [진성 소프트](https://jinseongsoft.tistory.com/365)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0Mzc2NDY0M119
+eyJoaXN0b3J5IjpbLTEyNTk1NzgxNzNdfQ==
 -->
