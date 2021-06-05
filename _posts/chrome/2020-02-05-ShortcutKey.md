@@ -1,22 +1,15 @@
 ---
-title: 효율적인 크롬 단축키
+title: \[chrome] 자주 쓰는 크롬 단축키
+
 categories: 
  - chrome
 
 tags:
    - 단축키
    - 크롬
-   - sh
+   - chrome
+   - shortcut key
    
-author_profile: true #작성자 프로필 출력여부
-read_time: true # read_time을 출력할지 여부 1min read 같은것!
-
-toc: true #Table Of Contents 목차 보여줌
-toc_label: "My Table of Contents" # toc 이름 정의
-toc_icon: "cog" # font Awesome아이콘으로 toc 아이콘 설정 
-toc_sticky: true # 스크롤 내릴때 같이 내려가는 목차
-
-date: 2020-02-06T17:50:00 # 최초 생성일
 last_modified_at: 2020-02-06T17:50:00 # 마지막 변경일
 
 ---
@@ -33,5 +26,5 @@ last_modified_at: 2020-02-06T17:50:00 # 마지막 변경일
 `Ctrl` + `N` -> 새 창  
 `Ctrl` + `Shift` +  `N` -> 새 시크릿 창  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjcwODA5OTk4LDEzNzM0MTU5N119
+eyJoaXN0b3J5IjpbLTE3NDA5NTU3MTIsMTM3MzQxNTk3XX0=
 -->
