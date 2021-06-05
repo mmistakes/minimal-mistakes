@@ -1,9 +1,13 @@
 ---
 title: 효율적인 크롬 단축키
-categories: [Chrome]
+categories: 
+ - chrome
+
 tags:
    - 단축키
    - 크롬
+   - sh
+   
 author_profile: true #작성자 프로필 출력여부
 read_time: true # read_time을 출력할지 여부 1min read 같은것!
 
@@ -29,5 +33,5 @@ last_modified_at: 2020-02-06T17:50:00 # 마지막 변경일
 `Ctrl` + `N` -> 새 창  
 `Ctrl` + `Shift` +  `N` -> 새 시크릿 창  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MzQxNTk3XX0=
+eyJoaXN0b3J5IjpbMjcwODA5OTk4LDEzNzM0MTU5N119
 -->
