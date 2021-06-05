@@ -2,7 +2,7 @@
 # 맨 위에 상단 바의 목록들 표시
 main:
   - title: "About" # 보이는 글자
-    url: /about/ # 클릭 후 이동할 url
+    url: https://www.notion.so/choiseonjae/0887db6035684d8da081beea180d7ea1 # 클릭 후 이동할 url
   - title: "Date"
     url: /date/
   - title: "Tag" 
