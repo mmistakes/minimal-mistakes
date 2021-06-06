@@ -1,6 +1,6 @@
 ---
 title: "Unleashing the Power of HTTP Apis: The Http4s Library"
-date: 2021-05-07 
+date: 2021-06-07 
 header:
   image: "/images/blog cover.jpg"
 tags: [cats, cats effect, http4s]
