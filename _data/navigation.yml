@@ -3,9 +3,9 @@ main:
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "Blog Posts"
-   url: /year-archive/
+    url: /year-archive/
   - title: "CV"
-   url: /CV/
+    url: /CV/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
