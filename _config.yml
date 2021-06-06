@@ -257,7 +257,7 @@ defaults:
       related: true
   - scope:
       path: "_pages"
-      type: pages
+      type: single
     values:
       layout: single
       author_profile: false
