@@ -6,7 +6,7 @@
    Typography
    ========================================================================== */
 
-$doc-font-size: 12 !default;
+$doc-font-size: 12;
 
 /* paragraph indention */
 $paragraph-indent: false !default; // true, false (default)
@@ -29,26 +29,26 @@ $bodoni: "Bodoni MT", serif !default;
 $calisto: "Calisto MT", serif !default;
 $garamond: Garamond, serif !default;
 
-$global-font-family: $helvetica !default;
-$header-font-family: $helvetica !default;
-$caption-font-family: $helvetica !default;
+$global-font-family: $helvetica;
+$header-font-family: $helvetica;
+$caption-font-family: $helvetica;
 
 /* type scale */
-$type-size-1: 2.441em !default; // ~39.056px
-$type-size-2: 1.953em !default; // ~31.248px
-$type-size-3: 1.563em !default; // ~25.008px
-$type-size-4: 1.25em !default; // ~20px
-$type-size-5: 1em !default; // ~16px
-$type-size-6: 0.75em !default; // ~12px
-$type-size-7: 0.6875em !default; // ~11px
-$type-size-8: 0.625em !default; // ~10px
+$type-size-1: 1.2em !default; // ~39.056px
+$type-size-2: 1.2em !default; // ~31.248px
+$type-size-3: 1.2em !default; // ~25.008px
+$type-size-4: 1.2em !default; // ~20px
+$type-size-5: 1.2em !default; // ~16px
+$type-size-6: 1em !default; // ~12px
+$type-size-7: 0.7em !default; // ~11px
+$type-size-8: 0.5em !default; // ~10px
 
 /* headline scale */
-$h-size-1: 1.563em !default; // ~25.008px
-$h-size-2: 1.25em !default; // ~20px
-$h-size-3: 1.125em !default; // ~18px
-$h-size-4: 1.0625em !default; // ~17px
-$h-size-5: 1.03125em !default; // ~16.5px
+$h-size-1: 1.2em !default; // ~25.008px
+$h-size-2: 1.15em !default; // ~20px
+$h-size-3: 1.1em !default; // ~18px
+$h-size-4: 1.05em !default; // ~17px
+$h-size-5: 1em !default; // ~16.5px
 $h-size-6: 1em !default; // ~16px
 
 /*
