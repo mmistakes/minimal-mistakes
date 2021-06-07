@@ -1,12 +1,13 @@
 ---
+layout: archive
 title: "Some useful features"
-toc: true
-toc_sticky: true
 categories:
   - posting
 tags:
   - features
   - useful
+toc: true
+toc_sticky: true
 gallery2:
   - url: https://flic.kr/p/8a6Ven
     image_path: https://farm2.staticflickr.com/1272/4697500467_8294dac099_q.jpg
@@ -17,6 +18,10 @@ gallery2:
   - url: https://flic.kr/p/8a6VXP
     image_path: https://farm5.staticflickr.com/4046/4697502929_72c612c636_q.jpg
     alt: "Fog in the trees"
+tagline: "This is a custom tagline content which overrides the default page excerpt."
+header:
+  overlay_image: https://farm5.staticflickr.com/4046/4697502929_72c612c636_q.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 ---
 
 # Notices

@@ -131,7 +131,7 @@
     border-radius: 50%;
 
     @include breakpoint($large) {
-      padding: 5px;
+      padding: 2px;
       border: 1px solid $border-color;
     }
   }
@@ -162,20 +162,20 @@
 
   @include breakpoint($large) {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 }
 .sidebar .author__name {
   font-family: $sans-serif;
-  font-size: $type-size-5;
+  font-size: $type-size-1;
 }
 
 .author__bio {
   margin: 0;
-  font-size: $type-size-7;
+  font-size: $type-size-5;
   @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
   }
 }
 
@@ -183,6 +183,7 @@
   position: relative;
   display: table-cell;
   vertical-align: middle;
+  font-size: $type-size-5;
   font-family: $sans-serif;
   z-index: 20;
   cursor: pointer;

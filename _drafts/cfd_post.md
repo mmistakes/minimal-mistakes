@@ -1,4 +1,5 @@
 ---
+layout: archive
 title: " "
 related: true
 categories:
