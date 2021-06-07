@@ -2,7 +2,7 @@
 published: true
 layout: single
 title: "[Effective C++] 8. 예외가 소멸자를 떠나지 못하도록 붙들어 놓자"
-category: none_effectcpp
+category: effectcpp
 tags:
 comments: true
 sidebar:
