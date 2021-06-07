@@ -12,36 +12,38 @@ author_profile: true
 
 # Work experience
 
-- Research Assistant (Hilfswissenschaftler)
+- **Research Assistant (Hilfswissenschaftler)**
+
   - Technical University of Munich
   - Helicopter Technology Chair
     - Delevopment and verification of FSI code using Python and PreCICE library
-- Internship
+
+- **CO-OP Internship**
 
   - TUSAS Engine Industries (TEI)
     - Get trained on turbine technologies, specifically turbine cooling
     - Conjutage Heat Transfer Analysis
     - Investigation of mesh dependency of turbulence models
 
-- Intership
+- **Intership**
   - Turbotek Turbomakina Teknolojileri Ltd Sti
     - Conducted several wind tunnel test on building models
     - Production and instrumentation of test models for testing
 
 # Language Skills
 
-- Turkish
+- **Turkish**
   - Mother Tongue
-- English
+- **English**
   - TOEFL IBT 93
-- German
+- **German**
   - A2 Level
 
 # Skills
 
 - Programming Languages
 
-  - Favourites
+  - **Favourites**
     - C++
     - Fortran
     - Python
@@ -69,7 +71,7 @@ author_profile: true
 
 - Computational Fluid Dynamics Tools
 
-  - Favorite
+  - **Favorite**
     - OpenFOAM
   - Other known/previously worked
     - ANSYS Fluent
