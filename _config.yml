@@ -91,14 +91,12 @@ analytics:
     tracking_id:
     anonymize_ip: # true, false (default)
 
-date_format: "%d/%m/%Y"
-
 # Site Author
 # Site Author
 author:
   name: "Kürşat Yurt"
   avatar: "assets/images/profile.jpg"
-  bio: "| Programming | CFD | HPC |"
+  bio: "CSE Master Student @ TUM <br />Programming, CFD, HPC"
   location: "Munich, Germany"
   #email: "kursatyurt@gmail.com"
   links:
@@ -252,7 +250,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
       share: true
       related: true
   - scope:
