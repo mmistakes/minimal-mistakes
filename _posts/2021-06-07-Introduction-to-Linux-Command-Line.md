@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Linux Commandline"
+title: "Introduction to Linux Command Line"
 related: true
 categories:
   - Linux
