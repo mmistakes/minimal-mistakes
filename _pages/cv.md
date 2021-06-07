@@ -9,10 +9,10 @@ author_profile: true
 
 # Education
 
-- M.S. in Compuatational Science & Engineering , Technical University of Munich, Munich, Germany ,2023 (expected)
+- M.S. in Computational Science & Engineering , Technical University of Munich, Munich, Germany ,2023 (expected)
 - B.S. in Aerospace Engineering, Middle East Technical University, Ankara, Turkey, 2020
 
-# Work experience
+# Work Experience
 
 - **Research Assistant (Hilfswissenschaftler)**
 
@@ -24,7 +24,7 @@ author_profile: true
 
   - TUSAS Engine Industries (TEI)
     - Get trained on turbine technologies, specifically turbine cooling
-    - Conjutage Heat Transfer Analysis
+    - Conjugate Heat Transfer Analysis
     - Investigation of mesh dependency of turbulence models
 
 - **Intership**
