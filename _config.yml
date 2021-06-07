@@ -162,6 +162,8 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Conversion
 markdown: kramdown
+kramdown:
+  math_engine: katex
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
