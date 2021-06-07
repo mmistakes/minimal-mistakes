@@ -16,6 +16,8 @@ tags:
   - python
 ---
 
+In this blog post we will understand what is an ODE and how to solve it numerically using Python.
+
 # What is an ODE?
 
 In mathematics, an ordinary differential equation (ODE) is a differential equation containing one or more functions of one independent variable and the derivatives of those functions [^1] .
