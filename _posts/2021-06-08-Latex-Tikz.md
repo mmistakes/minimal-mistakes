@@ -12,12 +12,19 @@ tags:
   - pgfplot
 ---
 
-# Why should I draw my graphs using Tikz?
+# Which packages are reqiured ?
+
+In followign example we will use tikz and pgfplots packages for plotting 2D graphs in a latex document.
 
 ```latex
 \usepackage{tikz}
 \usepackage{pgfplots}
 ```
+
+This blog post only demonstrate basics and common things. Further more options please check pgfplots[^1] and tikz manuals[^2].
+
+[^1]: [pgfplots manual](http://mirrors.ctan.org/graphics/pgf/contrib/pgfplots/doc/pgfplots.pdf)
+[^2]: [tikz manual](http://mirrors.ctan.org/graphics/pgf/base/doc/pgfmanual.pdf)
 
 # Plotting Equations
 
