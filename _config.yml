@@ -44,11 +44,11 @@ reCaptcha:
 
 atom_feed:
   path                   : # blank (default) uses feed.xml
-  hide			             : true
+  hide			 : true
 
 search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
-search_provider          : algolia # lunr (default), algolia
+search_provider          : lunr # lunr (default), algolia
 algolia:
   application_id         : QB6HVGBSBA # YOUR_APPLICATION_ID
   index_name             : minimal_mistakes # YOUR_INDEX_NAME
@@ -96,7 +96,7 @@ author:
       url: "https://www.kitware.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/mmistakes"
+      url: "https://github.com/XAITK/"
 
 # Site Footer
 footer:
