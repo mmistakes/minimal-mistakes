@@ -106,7 +106,7 @@ Oh, we are adding more equations but there is no legend. How can one know which 
 
 We can add legend entries at after adding a new plot there is 2 style is available
 
-```
+```latex
 \addplot [no markers, color=black] {x^2};
 \addplot [mark = x,color=red,very thin] {x^2+5};
 \addplot [mark = otimes,color=blue,thick] {x};
@@ -134,7 +134,7 @@ Default position for legend entry is north east, one can override that settings 
 It can be placed on south west|south east|north west|north east|outer north east.
 By default legends are boxed, using legend style option {draw=none} we can remove outer box of a legend.
 
-```
+```latex
 [
 legend pos=outer north east,
 legend style={draw=none},
