@@ -14,20 +14,24 @@ submission_details:
       - https://iccm-conference.neocities.org/2020/papers/Contribution_255_final.pdf
       - https://baicsworkshop.github.io/pdf/BAICS_36.pdf
       - https://iccm-conference.neocities.org/2019/proceedings/papers/ICCM2019_paper_53.pdf
+    software:
+      - https://halle.psy.cmu.edu/pyactup/
     demos:
       - https://colab.research.google.com/drive/1tf5gYVab3GSpPsTUxp34PVxNCIbA19FC?usp=sharing
-   
+      
+  license: https://bitbucket.org/dfmorrison/pyactup/src/master/LICENSE 
+  
   authors:
-    - Sterling Somers (1)
-    - Constantinos Mitsopolous (1)
-    - Christien Lebiere (1)
-    - Peter Perolli (2)
-    - Joel Schooler (2)
-    - Robert Thomson (3)
+    - Sterling Somers<sup>1</sup>
+    - Constantinos Mitsopolous<sup>1</sup>
+    - Christien Lebiere<sup>1</sup>
+    - Peter Perolli<sup>2</sup>
+    - Joel Schooler<sup>2</sup>
+    - Robert Thomson<sup>3</sup>
   organizations:
-    1. Department of Psychology, Carnegie Mellon University
-    2. Institute for Human and Machine Cognitive (IHMC)
-    3. Department of Psychology, United States Military Academy West Point
+    - (1) Department of Psychology, Carnegie Mellon University
+    - (2) Institute for Human and Machine Cognitive (IHMC)
+    - (3) Department of Psychology, United States Military Academy West Point
   
   point_of_contact:
     name: Sterling Somers
@@ -41,7 +45,7 @@ At it's simplest you can use a memory model and instance-based learning in pyact
 ```bash
    pip install pyactup
 ```
-The demo (https://colab.research.google.com/drive/1tf5gYVab3GSpPsTUxp34PVxNCIbA19FC?usp=sharing) has full tutorials and examples. 
+The [demo](https://colab.research.google.com/drive/1tf5gYVab3GSpPsTUxp34PVxNCIbA19FC?usp=sharing) has full tutorials and examples. 
 
 ## Intended Use
 This approach is intended for human-machine teaming where a human participant is invested in or participates in a task. The method adapts as the participant learns the task.
