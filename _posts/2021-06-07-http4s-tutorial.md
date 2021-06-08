@@ -37,13 +37,13 @@ Without dwelling on the details, we can identify the following APIs among the ot
 * Getting the list of actors of a movie
 * Adding a new director to the application
 
-As we just finished the fantastic [Cats course on Rock The JVM](https://rockthejvm.com/p/cats), we want to use a library built on the Cats ecosystem. Fortunately, the [http4s](https://http4s.org/) library is what we are looking for. So, let's get a deep breath and start diving into the world of functional programming applied to HTTP APIs development.
+As we just finished the \[Riccardo speaking here\] fantastic  [Cats course on Rock The JVM](https://rockthejvm.com/p/cats), we want to use a library built on the Cats ecosystem. Fortunately, the [http4s](https://http4s.org/) library is what we are looking for. So, let's get a deep breath and start diving into the world of functional programming applied to HTTP APIs development.
 
 ## 2. Library Setup
 
 The dependencies we must add in the `build.sbt` file are as follows:
 
-```sbt
+```scala
 val Http4sVersion = "1.0.0-M21"
 val CirceVersion = "0.14.0-M5"
 libraryDependencies ++= Seq(
@@ -221,7 +221,7 @@ object DirectorVar {
   }
 }
 
-def directorRoutes[F[_] : Concurrent]: HttpRoutes[F] = {
+def directorRoutes[F[_] : Monad]: HttpRoutes[F] = {
   val dsl = Http4sDsl[F]
   import dsl._
   HttpRoutes.of[F] {
@@ -239,7 +239,7 @@ The trick is that the type `HttpRoutes[F]`, being an instance of the `Kleisli` t
 The main feature of semigroups is the definition of the `combine` function which, given two elements of the semigroup, returns a new element also belonging to the semigroup. For the `SemigroupK` type class, the function is called`combineK` or `<+>`.
 
 ```scala
-def allRoutes[F[_] : Concurrent]: HttpRoutes[F] = {
+def allRoutes[F[_] : Monad]: HttpRoutes[F] = {
   import cats.syntax.semigroupk._
   movieRoutes[F] <+> directorRoutes[F]
 }
@@ -250,7 +250,7 @@ To access the `<+>` operator, we need the proper imports from Cats, which is at 
 Last but not least, an incoming request might not match with any of the available routes. Usually, such requests should end up with 404 HTTP responses. As always, the http4s library gives us an easy way to code such behavior, using the `orNotFound` method from the package `org.http4s.implicits`:
 
 ```scala
-def allRoutesComplete[F[_] : Concurrent]: HttpApp[F] = {
+def allRoutesComplete[F[_] : Monad]: HttpApp[F] = {
   allRoutes.orNotFound
 }
 ```
@@ -628,8 +628,6 @@ The `IOApp` is a utility type that allows us to run applications that use the `I
 When it's up, the server starts listening to incoming requests. **If the server stops, it must release the port and close any other resource it's using, and this is precisely the definition of the [`Resource`](https://typelevel.org/cats-effect/docs/std/resource) type** from the Cats Effect library (we can think about `Resource`s as the `AutoCloseable` type in Java type):
 
 ```scala
-import scala.concurrent.ExecutionContext.global
-
 object Http4sTutorial extends IOApp {
   def run(args: List[String]): IO[ExitCode] = {
 
@@ -638,7 +636,7 @@ object Http4sTutorial extends IOApp {
       "/api/private" -> Http4sTutorial.directorRoutes[IO]
     ).orNotFound
     
-    BlazeServerBuilder[IO](global)
+    BlazeServerBuilder[IO](runtime.compute)
       .bindHttp(8080, "localhost")
       .withHttpApp(apis)
       .resource
