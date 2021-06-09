@@ -8,11 +8,11 @@ tags:
   - commandline
 ---
 
-Whenever it comes to some serious stuff like using a cluster or open-source software like OpenFOAM people are faced with famous Linux commandline. It was scarry at the first sight but later on when you get used with him, he will be your best friend.
+Whenever it comes to some serious stuff like using a cluster or open-source software like OpenFOAM people are faced with the famous Linux command line. It was scary at the first sight but later on, when you get used to him, he will be your best friend.
 
-Here some basic commands that it as good start point
+Here some basic commands that it as a good start point
 
-When you open a terminal you might be only see a blinking cursor
+When you open a terminal you might only see a blinking cursor
 
 If you type pwd, this will give you your current working directory's absolute path
 
@@ -43,7 +43,7 @@ ls
 
 As you see here is a _hello.cpp_ file and some other directories are around here
 
-Lets go to my Desktop directory using cd command
+Let's go to my Desktop directory using cd command
 
 ```shell
 cd Desktop
@@ -51,7 +51,7 @@ pwd
 /home/kursatyurt/Desktop
 ```
 
-Now as you see I am changed the current directory to my Desktop
+Now as you see I have changed the current directory to my Desktop
 
 ```shell
 ls
@@ -60,7 +60,7 @@ cfdlab-lecture-notes.pdf
 ws-navier-stokes.pdf
 ```
 
-There is pdf files around. If I want to open one of them I can simply open them using xdg-open command which is open any type of file using default software defined by system
+There is pdf files around. If I want to open one of them I can simply open them using xdg-open command which is open any type of file using default software defined by the system
 
 ```shell
 xdg-open woorksheet2.pdf
@@ -82,11 +82,11 @@ Now if I want to copy a file from my Desktop to Home directory, I can follow thi
 cp ./Desktop/worksheet2.pdf .
 ```
 
-Here _cp_ command takes two arguments first one is source and the second one is destination
+Here _cp_ command takes two arguments first one is the source and the second one is the destination
 
 _./_ denotes from current directory by this way we can espace from writing absolute path. Also in the second argument _._ means here.
 
-If we want to move a folder or file we use _mv_ command which is similar to _cp_, one important thing about copy is you cannot copy folder using _cp_ command alone you need to give recursive flag _-r_
+If we want to move a folder or file we use _mv_ command which is similar to _cp_, one important thing about copy is you cannot copy a folder using _cp_ command alone you need to give recursive flag _-r_
 
 ```shell
 cp -r /source/directory /destination/directory
@@ -94,7 +94,7 @@ cp -r /source/directory /destination/directory
 
 By this way one can copy a folder.
 
-In order to create a new directory we are using mkdir command
+In order to create a new directory, we are using mkdir command
 
 ```shell
 mkdir directoryname
@@ -106,9 +106,9 @@ This creates a new directory under our current directory as like any other linux
 mkdir /absolute/path/to/directory
 ```
 
-Now take a look to removing files/directories. An important thing about removing is that this operation is irreversible, there is no Trash Bin that deleted files from commandline goes.
+Now take a look at removing files/directories. An important thing about removing is that this operation is irreversible, no Trash Bin deleted files from command line goes.
 
-Lets first look into deleting files
+Let's first look into deleting files
 
 ```shell
 rm FileName
@@ -120,4 +120,4 @@ Removing directories are requires a recursive operation
 rm -r DirectoryName
 ```
 
-One other important thing is of course when you are doing an operation or running a program you might want to cancel that process. For this purpouse _[Control]+c_ is used.
+One other important thing is of course when you are doing an operation or running a program you might want to cancel that process. For this purpose _[Control]+c_ is used.
