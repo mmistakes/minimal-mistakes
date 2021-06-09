@@ -7,6 +7,10 @@ tags: [cats, cats effect, http4s]
 excerpt: "Once we learned the basics of functional programming, it's time to understand how to use them to expose APIs over an HTTP channel. If we know the Cats ecosystem, it's straightforward to choose the http4s library to implement HTTP endpoints."
 ---
 
+_This article is brought to you by [Riccardo Cardin](https://github.com/rcardin), a proud student of the [Scala with Cats course](https://rockthejvm.com/p/cats). For the last 15 years, he's learned as much as possible about OOP, and now he is focused on his next challenge: mastering functional programming. Riccardo is a senior developer, a teacher and a passionate technical blogger._
+
+_Enter Riccardo:_
+
 Once we learned how to define Monoids, Semigroups, Applicative, Monads, and so on, it's time to understand how to use them to build a production-ready application. Nowadays, many applications expose APIs over an HTTP channel. So, it's worth spending some time studying libraries implementing such use case.
 
 If we learned the basics of functional programming using the Cats ecosystem, it's straightforward to choose the *http4s* library to implement HTTP endpoints. Let's see how.
