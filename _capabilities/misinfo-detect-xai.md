@@ -18,8 +18,8 @@ submission_details:
       - title: XAI_FakeNews_demo
         url: https://youtu.be/Ei8WSL4vr4A
     data:
-      - title: XAI_FakeNews_data
-        url: https://drive.google.com/file/d/1YCHSyNB67swdojGmzMtFAvKXrPAd0JEk/view?usp=sharing
+      - title: XAI_FakeNews_dataset
+        url: https://drive.google.com/drive/folders/1yvinR7VnzVj8T8dcLQIacv6EvgChxhWT?usp=sharing 
    
   version: 1.0
   size: 
