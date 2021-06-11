@@ -9,10 +9,10 @@ submission_details:
   resources:
     papers:
       - title: XDeep - An Interpretation Tool for Deep Neural Networks
-        url: https://arxiv.org/pdf/1911.01005.pdf 
+        url: https://arxiv.org/pdf/1911.01005.pdf
     software:
       - title: XDeep
-        url: https://github.com/datamllab/xdeep; https://pypi.org/project/x-deep/#description
+        url: https://github.com/datamllab/xdeep
    
   version: 0.0.9
   size:
@@ -26,10 +26,10 @@ submission_details:
     - Xia (Ben) Hu<sup>1</sup>
   organizations:
     - 1. Texas A&M university
-    - *  Contribute during the visiting at TAMU
+    - <span>&#42;</span> Contribute during the visiting at TAMU
   point_of_contact:
     name: Xia (Ben) Hu
-    email: hu@cse.tamu.edu 
+    email: hu@cse.tamu.edu
 ---
    
 ## Overview
