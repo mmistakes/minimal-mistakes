@@ -16,7 +16,9 @@ libraries and its implementation of the fiber model.
 
 1. Background and Setup
 
-We live in a wonderful world, in which Scala 3 is the actual major release of our loved programming language. So, we will use Scala 3 through the article. Moreover, we will need the dependency from the ZIO library:
+We live in a wonderful world, in which Scala 3 is the actual major release of our loved programming
+language. So, we will use Scala 3 through the article. Moreover, we will need the dependency from
+the ZIO library:
 
 ```sbt
 libraryDependencies += "dev.zio" %% "zio" % "1.0.8"
