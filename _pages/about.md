@@ -3,10 +3,10 @@ title: "About"
 permalink: /about/
 ---
 
-Hi there! I am a budding software engineer with so many thoughts running through my mind, and I hope to pen it down on this blog. I love technology, politics, software engineering, and Christ.
+Hi there! I am a software engineer with so many thoughts running through my mind, and I hope to pen some of it down here. I love cake, tech, software engineering, and Christ.
 
-In the past 2+ years, I have worked on various projects building mobile applications with Android & Kotlin as well as backend applications in Node.js.
+I currently work full time in Lagos, Nigeria. Most of my work have been building native mobile applications in Android (Kotlin) and backend systems using Node.js and Scala.
 
-These days, I learn and solve problems using the Scala programming language. <strong>A huge emphasis on learning</strong>.
+I am currently exploring projects in Scala (Akka & FP) and multiplatform mobile.
 
-In my free time, I  `cook`, `learn`, `work out`, and `volunteer in technology and humanitarian communities`.
+In my free time, I  `cook`, `read`, `watch movies`, `work out`, and `volunteer in technology and humanitarian communities`.
