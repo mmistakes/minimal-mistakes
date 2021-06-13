@@ -8,13 +8,13 @@
 
 .sidebar {
   @include clearfix();
-  @include breakpoint(max-width $large) {
-    /* fix z-index order of follow links */
-    position: relative;
-    z-index: 10;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
+  // @include breakpoint(max-width $large) {
+  //   /* fix z-index order of follow links */
+  //   position: relative;
+  //   z-index: 10;
+  //   -webkit-transform: translate3d(0, 0, 0);
+  //   transform: translate3d(0, 0, 0);
+  // }
 
   @include breakpoint($large) {
     float: left;
@@ -32,7 +32,7 @@
       /* calculate height of nav list
          viewport height - nav height - masthead x-padding
       */
-      height: calc(100vh - #{$nav-height} - 2em);
+      max-height: calc(100vh - #{$nav-height} - 2em);
     }
   }
 
@@ -63,7 +63,7 @@
 
   img {
     width: 100%;
-    
+
     &.emoji {
       width: 20px;
       height: 20px;
@@ -184,8 +184,7 @@
   display: table-cell;
   vertical-align: middle;
   font-family: $sans-serif;
-  z-index: 10;
-  position: relative;
+  z-index: 20;
   cursor: pointer;
 
   li:last-child {
@@ -194,12 +193,37 @@
     }
   }
 
+  .author__urls {
+    span.label {
+      padding-left: 5px;
+    }
+  }
+
   @include breakpoint($large) {
     display: block;
   }
 
   button {
+    position: relative;
     margin-bottom: 0;
+
+    &:before {
+      @supports (pointer-events: none) {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+    }
+
+    &.open {
+      &:before {
+        pointer-events: auto;
+      }
+    }
 
     @include breakpoint($large) {
       display: none;
@@ -217,7 +241,6 @@
   border: 1px solid $border-color;
   border-radius: $border-radius;
   background: $background-color;
-  z-index: -1;
   box-shadow: 0 2px 4px 0 rgba(#000, 0.16), 0 2px 10px 0 rgba(#000, 0.12);
   cursor: default;
 
@@ -267,6 +290,11 @@
     @include breakpoint($large) {
       display: none;
     }
+  }
+
+  ul {
+    padding: 10px;
+    list-style-type: none;
   }
 
   li {
