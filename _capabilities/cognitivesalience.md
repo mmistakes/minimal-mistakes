@@ -11,13 +11,18 @@ tags: # Select from this set
 submission_details:
   resources: # List any resources associated with the contribution. Not all sections are required
     papers:
-      - https://iccm-conference.neocities.org/2020/papers/Contribution_255_final.pdf
-      - https://baicsworkshop.github.io/pdf/BAICS_36.pdf
-      - https://iccm-conference.neocities.org/2019/proceedings/papers/ICCM2019_paper_53.pdf
+      - title: ICCM '19
+        url: https://iccm-conference.neocities.org/2019/proceedings/papers/ICCM2019_paper_53.pdf
+      - title: ICCM '20
+        url: https://iccm-conference.neocities.org/2020/papers/Contribution_255_final.pdf
+      - title: BAICS '20
+        url: https://baicsworkshop.github.io/pdf/BAICS_36.pdf
     software:
-      - https://halle.psy.cmu.edu/pyactup/
+      - title: pyactup
+        url: https://halle.psy.cmu.edu/pyactup/
     demos:
-      - https://colab.research.google.com/drive/1tf5gYVab3GSpPsTUxp34PVxNCIbA19FC?usp=sharing
+      - title: Google Colab
+        url: https://colab.research.google.com/drive/1tf5gYVab3GSpPsTUxp34PVxNCIbA19FC?usp=sharing
       
   license: https://bitbucket.org/dfmorrison/pyactup/src/master/LICENSE 
   
@@ -29,9 +34,9 @@ submission_details:
     - Joel Schooler<sup>2</sup>
     - Robert Thomson<sup>3</sup>
   organizations:
-    - (1) Department of Psychology, Carnegie Mellon University
-    - (2) Institute for Human and Machine Cognitive (IHMC)
-    - (3) Department of Psychology, United States Military Academy West Point
+    - 1. Department of Psychology, Carnegie Mellon University
+    - 2. Institute for Human and Machine Cognitive (IHMC)
+    - 3. Department of Psychology, United States Military Academy West Point
   
   point_of_contact:
     name: Sterling Somers
@@ -41,7 +46,7 @@ submission_details:
 ## Overview
 We demonstrate the use of cognitive architectures as a common framework for modeling AIs and human performers in a task. The mental model of each performer is revealed using cognitive salience, which is intended as a basis for explanation.
 
-At it's simplest you can use a memory model and instance-based learning in pyactup
+At it's simplest you can use a memory model and instance-based learning in `pyactup`
 ```bash
    pip install pyactup
 ```

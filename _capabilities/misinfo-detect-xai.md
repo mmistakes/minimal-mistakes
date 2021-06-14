@@ -59,7 +59,7 @@ Model inputs: textual statement/claim for news stories;
 
 Model outputs: confidence score for mis-information prediction + various interpretation outcomes (with XAI assistants);
 
-Data for training: labelled news claims from snopes + unlabelled related news articles from Google search;
+Data for training: labelled news claims from snopes + unlabelled related news articles from Google search
    
 ## Limitations
 The quality of the collected news claims is limited, considering the fact that some news labels are time-sensitive.

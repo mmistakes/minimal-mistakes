@@ -1,6 +1,7 @@
 ---
 title: XDeep - A Post-Hoc Interpretation Package for Model Developers
 excerpt: XDeep is an open-source Python package developed to interpret deep models for both practitioners and researchers.
+tags:
   - Computer Vision
   - Natural Language Processing
   - Saliency
@@ -16,7 +17,7 @@ submission_details:
    
   version: 0.0.9
   size:
-  license:
+  license: https://github.com/datamllab/xdeep/blob/master/LICENSE.md
    
   authors: 
     - Fan Yang<sup>1</sup>
@@ -25,8 +26,8 @@ submission_details:
     - Yuening Li<sup>1</sup>
     - Xia (Ben) Hu<sup>1</sup>
   organizations:
-    - 1. Texas A&M university
-    - <span>&#42;</span> Contribute during the visiting at TAMU
+    - 1. Texas A&M University, College Station, TX
+    - <span>&#42;</span> Contributed during visit at TAMU
   point_of_contact:
     name: Xia (Ben) Hu
     email: hu@cse.tamu.edu
