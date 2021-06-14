@@ -20,7 +20,7 @@ Beer breaks.
 Jacket over your head.
 
 ## Technical
-tbd.
+- How me and my friends came up with pizza.de (_Just Eat Takeaway of Germany_)
 
 ## My lifehacks
 ### Garbage
