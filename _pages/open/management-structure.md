@@ -8,32 +8,8 @@ sidebar:
 
 ### Загальні відомості про навчальний заклад
 
-<table width="676" cellpadding="0" cellspacing="0">
-    <colgroup>
-        <col width="253"/>
-        <col width="423"/>
-    </colgroup>
-    <tbody>
-        <tr>
-            <td width="253" height="132">
-                <p align="center">
-                    Керівник
-                </p>
-            </td>
-            <td width="423">
-                <p>
-                    <em><strong>Христюк Олена Георгіївна</strong></em>
-                    , директор КЗО «НВК № 125» ДМР, 1965р. н., вища (1989р.),
-                    Дніпропетровський державний університет, учитель хімії,
-                    біології, старший вчитель, стаж педагогічної роботи - 37
-                    років, стаж керівної роботи - 13 років
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td width="253" height="155">
-                <p align="center">
-                    Заступники
+
+                    Заступники керівника
                 </p>
                 <p align="center">
                     керівника
@@ -194,7 +170,7 @@ sidebar:
             </td>
             <td width="423">
                 <p>
-                    видана 15.12.2016 року
+                    видана 11.01.2018 року
                 </p>
             </td>
         </tr>
@@ -213,25 +189,12 @@ sidebar:
         <tr>
             <td width="253" height="66">
                 <p align="center">
-                    Акт готовності навчального закладу до нового навчального
-                    року
+                                        Проектна потужність закладу
                 </p>
             </td>
             <td width="423">
                 <p>
-                    від 10.08.2017 р
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td width="253" height="47">
-                <p align="center">
-                    Проектна потужність закладу
-                </p>
-            </td>
-            <td width="423">
-                <p>
-                    225 учнів
+                    400/225 учнів
                 </p>
             </td>
         </tr>
@@ -243,7 +206,7 @@ sidebar:
             </td>
             <td width="423">
                 <p>
-                    176 учня
+                    215 учня
                 </p>
             </td>
         </tr>
@@ -255,7 +218,7 @@ sidebar:
             </td>
             <td width="423">
                 <p>
-                    94
+                    102
                 </p>
             </td>
         </tr>
@@ -267,7 +230,7 @@ sidebar:
             </td>
             <td width="423">
                 <p>
-                    82
+                    113
                 </p>
             </td>
         </tr>
@@ -375,7 +338,7 @@ sidebar:
             </td>
             <td width="423">
                 <p>
-                    21
+                    18
                 </p>
             </td>
         </tr>
@@ -387,7 +350,7 @@ sidebar:
             </td>
             <td width="423">
                 <p>
-                    23
+                    20
                 </p>
             </td>
         </tr>
@@ -495,7 +458,7 @@ sidebar:
             </td>
             <td width="423">
                 <p>
-                    <a href="mailto:nvk125@dnepredu.dp.ua">
+                    <a href="mailto:nvk125@dhp.dniprorada.gov.ua">
                         nvk125@dnepredu.dp.ua
                     </a>
                 </p>
