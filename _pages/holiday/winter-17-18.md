@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /holiday
-title: "Правила безпеки під час зимових канікул"
+title: "Правила безпеки під час літніх канікул"
 sidebar:
   nav: "sidebar-menu"
 categories:
