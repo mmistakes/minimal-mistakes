@@ -5,6 +5,12 @@ categories: free_writing
 permalink: /categories/literature/free_writing/the_war_against_the_gears
 header:
   image: /assets/images/categories/literature/free_writing/the-war-against-the-gears.jpg
+tags:
+  - free_writing
+  - sci-fi
+  - creative
+  - nature
+  - technology
 ---
 
 # Overview
