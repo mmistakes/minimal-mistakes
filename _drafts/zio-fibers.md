@@ -57,4 +57,24 @@ Moreover, the Effect Pattern add two more conditions to the whole story:
 The first condition allows us to trace the impure code in our program. One of the main problems with
 side effects is that they are hidden in the code. Instead, the second condition allow us to use the
 substitution model with the effect, until the point we need to run it. We call such a point "the 
-end of the world", and we merely identify it with the `main` method. 
+end of the world", and we merely identify it with the `main` method.
+
+3. ZIO Effect
+
+The ZIO library is one of the implementation of the effect pattern available in Scala. It's main
+effect type is `ZIO[R, E, A]`. We call the `R` type the _environment type_, and it represents the 
+dependencies the effect need to execute. Once executed, the effect can produce a result of type `A`
+or fail producing a value of the type `E`. For these reasons, it's common to think about the type
+`ZIO[R, E, A]` as an _effectful_ version of the function type `R => Either[E, A]`.
+
+The default model of execution of the `ZIO` effect is synchronous. To start showing some code, let's
+model some useful scenario. So, we will model the wake-up routing of Bob. Every morning, Bob wakes 
+up, goes to the bathroom, then boils some water to finally prepare a cup of coffee:
+
+```scala
+val bathTime = ZIO.succeed("Going to the bathroom")
+val boilingWater = ZIO.succeed("Boiling some water")
+val preparingCoffee = ZIO.succeed("Preparing the coffee")
+```
+
+As the three effect cannot fail, we use the smart constructor `ZIO.succeed`.
