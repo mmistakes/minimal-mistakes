@@ -77,4 +77,51 @@ val boilingWater = ZIO.succeed("Boiling some water")
 val preparingCoffee = ZIO.succeed("Preparing the coffee")
 ```
 
-As the three effect cannot fail, we use the smart constructor `ZIO.succeed`.
+As the three effect cannot fail, we use the smart constructor `ZIO.succeed`. Moreover, to help us 
+debug the execution thread of each effect, we define the following function:
+
+```scala
+def printThread = s"[${Thread.currentThread().getName}]"
+```
+
+With these bullets in our functional gun, we can compose the above effects and execute them:
+
+```scala
+object FibersTutorial extends zio.App {
+
+  def printThread = s"[${Thread.currentThread().getName}]"
+
+  val bathTime = ZIO.succeed("Going to the bathroom")
+  val boilingWater = ZIO.succeed("Boiling some water")
+  val preparingCoffee = ZIO.succeed("Preparing the coffee")
+
+  def sequentialWakeUpRoutine(): ZIO[Any, Nothing, Unit] = for {
+    _ <- bathTime.debug(printThread)
+    _ <- boilingWater.debug(printThread)
+    _ <- preparingCoffee.debug(printThread)
+  } yield ()
+
+  override def run(args: List[String]): URIO[zio.ZEnv, ExitCode] =
+    sequentialWakeUpRoutine().exitCode
+}
+```
+
+As we expected the execution of the `run` show us that ZIO executes sequentially all of the effects
+in the same thread:
+
+```shell
+[zio-default-async-1]: Going to bath
+[zio-default-async-1]: Boiling some water
+[zio-default-async-1]: Preparing the coffee
+```
+
+If we want to leverage all the power of ZIO and starting to execute effects asynchronously, we must
+introduce the `Fiber` type.
+
+A _fiber_ is a concept that is beyond the ZIO library. In fact, it's a concurrency model. Often, 
+we refer to fibers as _green threads_. Like a thread, a fiber represents a running computation that
+may not have started yet. However, it's only a data type, which means it doesn't map on any 
+operating system or JVM concept. So it's instantiation is very lightweight with respect to a system
+thread. Hence, we can create millions of fibers, and switching between them without the overheads
+associated with threads.
+
