@@ -23,7 +23,9 @@ submission_details:
     demos:
       - title: Google Colab
         url: https://colab.research.google.com/drive/1tf5gYVab3GSpPsTUxp34PVxNCIbA19FC?usp=sharing
-      
+
+  version:
+  size:
   license: https://bitbucket.org/dfmorrison/pyactup/src/master/LICENSE 
   
   authors:

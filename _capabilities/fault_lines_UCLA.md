@@ -21,6 +21,7 @@ submission_details:
   # Optional information describing artifact
   version: 1.0
   size: 100MB
+  license:
    
   authors:
     - Arjun Akula
