@@ -133,6 +133,8 @@ The ZIO library represents fibers using the type `Fiber[E, A]`, which means a co
 produce a result of type `A` or will fail with the type `E`. Moreover, ZIO executes fibers using an
 `Executor`, which is a sort of abstraction over a thread pool.
 
+### 4.1. Create a New Fiber
+
 To create a new fiber in ZIO, we must _fork_ it from an instance of the `ZIO` effect:
 
 ```scala
@@ -169,3 +171,44 @@ As we expect, ZIO executed the two effect concurrently on different thread. Just
 executing concurrently a set of tasks means that the order in which the runtime executes the tasks
 is not relevant.
 
+### 4.2. Synchronizing with a Fiber
+
+The astute reader should have noticed that boiling the water without preparing a good coffee is
+non-sense. However, Bob can't prepare the coffee without the boiled water. Moreover, Bon can't
+prepare the coffee if he's still in the bathroom. So, we need to synchronize the action of preparing
+coffee to the results of the previous two actions.
+
+ZIO fibers provide the `join` method to wait the termination of a fiber:
+
+```scala
+// From ZIO library
+trait Fiber[+E, +A] {
+  def join: IO[E, A]
+}
+```
+
+Through the `join` method, we can wait for the result of a concurrent computation and eventually use
+the result of such computation:
+
+```scala
+def concurrentWakeUpRoutine(): ZIO[Any, Nothing, Unit] = for {
+  bathFiber <- bathTime.debug(printThread).fork
+  boilingFiber <- boilingWater.debug(printThread).fork
+  zippedFiber = bathFiber.zip(boilingFiber)
+  _ <- zippedFiber.join.debug(printThread)
+  _ <- preparingCoffee.debug(printThread)
+} yield ()
+```
+
+However, in our example, we need to wait for the completion of two concurrent fibers. So, we need to
+combine them first, and then joining the resulting fiber. The `zip` method combines two fibers into 
+a single fiber that produces the results of both.
+
+The execution of the `concurrentWakeUpRoutine` function prints exactly what we expect:
+
+```shell
+[zio-default-async-2]: Going to the bathroom
+[zio-default-async-3]: Boiling some water
+[zio-default-async-6]: (Going to the bathroom,Boiling some water)
+[zio-default-async-6]: Preparing the coffee
+```
