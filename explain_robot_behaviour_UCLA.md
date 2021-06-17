@@ -43,4 +43,14 @@ The proposed framework is applicable to autonomy domain.
 Please see the details about the model and data included in the corresponding Software and Data links.
    
 ## References
-1. <https://robotics.sciencemag.org/content/4/37/eaay4663>
+```tex
+@article{edmonds2019tale,
+  title={A tale of two explanations: Enhancing human trust by explaining robot behavior},
+  author={Edmonds, Mark and Gao, Feng and Liu, Hangxin and Xie, Xu and Qi, Siyuan and Rothrock, Brandon and Zhu, Yixin and Wu, Ying Nian and Lu, Hongjing and Zhu, Song-Chun},
+  journal={Science Robotics},
+  volume={4},
+  number={37},
+  year={2019},
+  publisher={Science Robotics}
+  ```
+}
