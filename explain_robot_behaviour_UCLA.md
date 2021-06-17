@@ -40,7 +40,7 @@ The robot system not only shows the ability to learn from human demonstrators bu
 The proposed framework is applicable to autonomy domain.
    
 ## Model/Data
-Please see the details at this link: <https://robotics.sciencemag.org/highwire/filestream/641813/field_highwire_adjunct_files/0/aay4663_Code_S1.zip>
+Please see the details about the model and data included in the corresponding Software and Data links.
    
 ## References
 1. <https://robotics.sciencemag.org/content/4/37/eaay4663>
