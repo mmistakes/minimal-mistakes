@@ -10,10 +10,13 @@ tags:
 submission_details:
   resources: 
     papers:
-      - https://ojs.aaai.org/index.php/AAAI/article/view/5643
+      - title: "CoCoX: Generating Conceptual and Counterfactual Explanations via Fault-Lines"
+        url: https://ojs.aaai.org/index.php/AAAI/article/view/5643
     software:
-      - https://github.com/arjunakula/faultline_explainer
-      - https://github.com/arjunakula/CoCoX
+      - title: Fault-Line Explainer
+        url: https://github.com/arjunakula/faultline_explainer
+      - title: CoCoX
+        url: https://github.com/arjunakula/CoCoX
    
   # Optional information describing artifact
   version: 1.0
