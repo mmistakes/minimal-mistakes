@@ -33,7 +33,6 @@ submission_details:
 ## Overview
 We propose this new explanation framework to generate explanations from functional and mechanistic perspectives. Robot system learns from human demonstration and applies it to unseen tasks (e.g. open bottle). Visualizations of robot’s internal decisions are more effective in promoting human trust than explanations based on summary text explanations. Loosely coupled modules in code base
 
-1. <https://robotics.sciencemag.org/content/4/37/eaay4663>
   
 ## Intended Use
 The robot system not only shows the ability to learn from human demonstrators but also succeeds in opening new, unseen bottles.
