@@ -12,6 +12,7 @@ submission_details:
       - <https://robotics.sciencemag.org/content/4/37/eaay4663>
     software:
       - <https://robotics.sciencemag.org/highwire/filestream/641813/field_highwire_adjunct_files/0/aay4663_Code_S1.zip>
+    data:
       - <https://robotics.sciencemag.org/highwire/filestream/641813/field_highwire_adjunct_files/1/aay4663_Data_S1.zip>
    
   # Optional information describing artifact
