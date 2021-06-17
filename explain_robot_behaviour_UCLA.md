@@ -9,10 +9,10 @@ tags:
 submission_details:
   resources: 
     papers:
-      - https://robotics.sciencemag.org/content/4/37/eaay4663
+      - <https://robotics.sciencemag.org/content/4/37/eaay4663>
     software:
-      - https://robotics.sciencemag.org/highwire/filestream/641813/field_highwire_adjunct_files/0/aay4663_Code_S1.zip
-      - https://robotics.sciencemag.org/highwire/filestream/641813/field_highwire_adjunct_files/1/aay4663_Data_S1.zip
+      - <https://robotics.sciencemag.org/highwire/filestream/641813/field_highwire_adjunct_files/0/aay4663_Code_S1.zip>
+      - <https://robotics.sciencemag.org/highwire/filestream/641813/field_highwire_adjunct_files/1/aay4663_Data_S1.zip>
    
   # Optional information describing artifact
   version: 1.0
@@ -33,7 +33,7 @@ submission_details:
 ## Overview
 We propose this new explanation framework to generate explanations from functional and mechanistic perspectives. Robot system learns from human demonstration and applies it to unseen tasks (e.g. open bottle). Visualizations of robot’s internal decisions are more effective in promoting human trust than explanations based on summary text explanations. Loosely coupled modules in code base
 
-1) https://robotics.sciencemag.org/content/4/37/eaay4663
+1. <https://robotics.sciencemag.org/content/4/37/eaay4663>
   
 ## Intended Use
 The robot system not only shows the ability to learn from human demonstrators but also succeeds in opening new, unseen bottles.
@@ -41,8 +41,7 @@ The robot system not only shows the ability to learn from human demonstrators bu
 The proposed framework is applicable to autonomy domain.
    
 ## Model/Data
-Please see the details at this link: https://robotics.sciencemag.org/highwire/filestream/641813/field_highwire_adjunct_files/0/aay4663_Code_S1.zip
+Please see the details at this link: <https://robotics.sciencemag.org/highwire/filestream/641813/field_highwire_adjunct_files/0/aay4663_Code_S1.zip>
    
 ## References
-1) https://robotics.sciencemag.org/content/4/37/eaay4663
-2) https://vcla.stat.ucla.edu/publications.html
+1. <https://robotics.sciencemag.org/content/4/37/eaay4663>
