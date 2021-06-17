@@ -47,5 +47,5 @@ The proposed framework is applicable to image analytics domain.
 We take a set of input images and extract xconcepts. These xconcepts are then utilized in generating optimal explanations.
    
 ## References
-1) https://ojs.aaai.org/index.php/AAAI/article/view/5643
-2) https://vcla.stat.ucla.edu/Projects/ArjunXAI/CoCoX.html
+1. https://ojs.aaai.org/index.php/AAAI/article/view/5643
+2. https://vcla.stat.ucla.edu/Projects/ArjunXAI/CoCoX.html
