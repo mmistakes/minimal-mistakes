@@ -48,6 +48,4 @@ We take a set of input images and extract xconcepts. These xconcepts are then ut
    
 ## References
 1) https://ojs.aaai.org/index.php/AAAI/article/view/5643
-2) https://vcla.stat.ucla.edu/publications.html
-3) https://vcla.stat.ucla.edu/Projects/ArjunXAI/CoCoX.html
-4) https://arxiv.org/abs/1905.12698
+2) https://vcla.stat.ucla.edu/Projects/ArjunXAI/CoCoX.html
