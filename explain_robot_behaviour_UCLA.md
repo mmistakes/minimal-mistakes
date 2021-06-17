@@ -17,7 +17,6 @@ submission_details:
   # Optional information describing artifact
   version: 1.0
   size: 130MB
-  license: NA
    
   authors:
     - Mark Edmonds
