@@ -40,7 +40,7 @@ functions are often called _impure_:
 val result = println("The meaning of life is 42")
 // Using the substitution model, we try to substitute the result of the println execution to the
 // variable
-val result = ()
+val result: Unit = ()
 //...however, after the substitution, the meaning of the program completely changed
 ```
 
