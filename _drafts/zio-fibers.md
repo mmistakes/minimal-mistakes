@@ -35,14 +35,24 @@ we cannot model side effects using the substitution model, because we cannot sub
 with their results, which may vary from information other than simple functions' inputs. Such
 functions are often called _impure_:
 
-// EXAMPLE
+```scala
+// The type of println is String => Unit. The program print the given String to the console
+val result = println("The meaning of life is 42")
+// Using the substitution model, we try to substitute the result of the println execution to the
+// variable
+val result = ()
+//...however, after the substitution, the meaning of the program completely changed
+```
 
 So, it comes the Effect Pattern. The pattern aims to model side effects with the concept of effect.
 An effect is a blueprint of statements that can produce a side effect, not the result itself. When
 we instantiate an effect with some statements, we don't execute anything: We are just describing
 what the code inside the effect will perform once executed:
 
-// EXAMPLE
+```scala
+// This code doesn't print anything to the console. It's a blueprint
+val result = ZIO.succeed(println("The meaning of life is 42"))
+```
 
 The above code doesn't print anything to the console, it just describes what we want to achieve with
 the code, not how we will execute it.
@@ -212,3 +222,16 @@ The execution of the `concurrentWakeUpRoutine` function prints exactly what we e
 [zio-default-async-6]: (Going to the bathroom,Boiling some water)
 [zio-default-async-6]: Preparing the coffee
 ```
+
+The fiber that Bob uses to go to the bathroom, and the fiber that boils the water runs concurrently 
+on different threads. Then, ZIO executes the fiber used to prepare the coffee in a new thread, only 
+after the previous fibers succeeded.
+
+However, what is happening is different from using directly systems threads to represent concurrent
+computation. In fact, ZIO fibers don't block any thread during the waiting associated with the call
+of the `join` method. Just remember, that a `Fiber` represents only a data structure, a blueprint of
+a computation, and not the computation itself.
+
+### 4.3. Cancelling a Fiber
+
+TODO
