@@ -12,6 +12,8 @@ classes: wide2
 
 * Go from research to production through possible transition to industry and government partners
 
+> ### Please note that at this time, we are only accepting publically released contributions.
+
 ## How to contribute a new capability
 
 1. Navigate to the `_capabilities` folder in the [xaitk website repository](https://github.com/XAITK/xaitk.github.io/)
