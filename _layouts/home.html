@@ -2,7 +2,7 @@
 layout: archive
 ---
 
-{This is a test, update}
+{This is a test, update2}
 
 {{ content }}
 
@@ -15,15 +15,18 @@ layout: archive
 {% endif %}
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
-<!-- <div class="entries-{{ entries_layout }}">
+<!-- <div class="entries-list">
   {% for post in posts %}
     {% include archive-single.html type=entries_layout %}
   {% endfor %}
 </div> -->
-<ul>
-  <li>one</li>
-  <li>two</li>
-  <li>three</li>
-</ul>
+<table class="news-table">
+  <col width="14%" />
+  <col width="100%" />
+  <tr>
+      <td valign="top"><strong>March 2021</strong></td>
+      <td>This is a test post.</td>
+  </tr>
+</table>
 
 {% include paginator.html %}
