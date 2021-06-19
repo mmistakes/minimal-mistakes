@@ -202,11 +202,11 @@ the result of such computation:
 
 ```scala
 def concurrentWakeUpRoutine(): ZIO[Any, Nothing, Unit] = for {
-  bathFiber <- bathTime.debug(printThread).fork
-  boilingFiber <- boilingWater.debug(printThread).fork
-  zippedFiber = bathFiber.zip(boilingFiber)
-  _ <- zippedFiber.join.debug(printThread)
-  _ <- preparingCoffee.debug(printThread)
+   bathFiber <- bathTime.debug(printThread).fork
+   boilingFiber <- boilingWater.debug(printThread).fork
+   zippedFiber = bathFiber.zip(boilingFiber)
+   result <- zippedFiber.join.debug(printThread)
+   _ <- ZIO.succeed(s"$result...done").debug(printThread) *> preparingCoffee.debug(printThread)
 } yield ()
 ```
 
@@ -214,12 +214,18 @@ However, in our example, we need to wait for the completion of two concurrent fi
 combine them first, and then joining the resulting fiber. The `zip` method combines two fibers into 
 a single fiber that produces the results of both.
 
+Joining a fiber lets us to gather also the result of its execution. In the example, the variable
+`result` has type `(String, String)`, and we successfully use it in the next step of the routine.
+We also introduced the `*>` operator, which is an alias for the `zipRight` function, and let us 
+concatenate the execution of two effects not depending on each other.
+
 The execution of the `concurrentWakeUpRoutine` function prints exactly what we expect:
 
 ```shell
 [zio-default-async-2]: Going to the bathroom
 [zio-default-async-3]: Boiling some water
 [zio-default-async-6]: (Going to the bathroom,Boiling some water)
+[zio-default-async-6]: (Going to the bathroom,Boiling some water)...done
 [zio-default-async-6]: Preparing the coffee
 ```
 
@@ -232,6 +238,65 @@ computation. In fact, ZIO fibers don't block any thread during the waiting assoc
 of the `join` method. Just remember, that a `Fiber` represents only a data structure, a blueprint of
 a computation, and not the computation itself.
 
-### 4.3. Cancelling a Fiber
+### 4.3. Interrupting a Fiber
 
-TODO
+The last main feature on fiber that the ZIO library provides is interrupting the execution of a 
+fiber. Why should we interrupt a fiber? Well, the main reason is that some action, external to the
+fiber execution, turns the result of the fiber useless. So, to not waste system resources, it's
+better to interrupt the execution of this fiber.
+
+Imagine that, while Bob is taking a bath, and the water is waiting to boil, Alice calls him to 
+invite to take the breakfast in a Cafe. Then, Bob doesn't need the water to boil anymore. So, we
+should interrupt the associated fiber.
+
+In ZIO, we can interrupt a `Fiber` using the `interrupt` function:
+
+```scala
+// From ZIO library
+trait Fiber[+E, +A] {
+  def interrupt: UIO[Exit[E, A]]
+}
+```
+
+As we can see, the interruption of a fiber results in an effect that always succeed (`UIO[A]` is 
+just a type alias for `ZIO[Any, Nothing, A]`) with an `Exit` value. If the fiber already succeeded
+with its value when interrupted, then ZIO returns an instance of `Exit.Success[A]`, an instance of
+`Exit.Failure[Cause.Interrupt]`.
+
+So, without further ado, let's model the calling of Alice with an effect:
+
+```scala
+val aliceCalling = ZIO.succeed("Alice's call")
+```
+
+Then, we want to add some delay to the effect associated with the boiling water. So we use the ZIO
+primitive `ZIO.sleep` to create an effect that waits for a interval of time:
+
+```scala
+val boilingWaterWithSleep =
+  boilingWater.debug(printThread) *>
+    ZIO.sleep(5.seconds) *>
+    ZIO.succeed("Boiled water ready")
+```
+
+Finally, we put together all the pieces, and model the whole use case:
+
+```scala
+def concurrentWakeUpRoutineWithAliceCall(): ZIO[Clock, Nothing, Unit] = for {
+  _ <- bathTime.debug(printThread)
+  boilingFiber <- boilingWaterWithSleep.fork
+  _ <- aliceCalling.debug(printThread).fork *> boilingFiber.interrupt.debug(printThread)
+  _ <- ZIO.succeed("Going to the Cafe with Alice").debug(printThread)
+} yield ()
+```
+
+As we can see, after Alice's call, we interrupt the `boilingFiber` fiber. The result of executing
+the `concurrentWakeUpRoutineWithAliceCall` method is the following:
+
+```ssh
+[zio-default-async-1]: Going to the bathroom
+[zio-default-async-2]: Boiling some water
+[zio-default-async-3]: Alice's call
+[zio-default-async-5]: Failure(Traced(Interrupt(Id(1624109234226,1))...
+[zio-default-async-5]: Going to the Cafe with Alice
+```
