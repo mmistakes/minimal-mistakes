@@ -36,7 +36,8 @@ $custom-family: 'Bitter', serif;
 $global-font-family: $custom-family !default;
 // $header-font-family: $sans-serif !default;
 $header-font-family: $custom-family !default;
-$caption-font-family: $serif !default;
+// $caption-font-family: $serif !default;
+$caption-font-family: $custom-family !default;
 
 /* type scale */
 $type-size-1: 2.441em !default; // ~39.056px
