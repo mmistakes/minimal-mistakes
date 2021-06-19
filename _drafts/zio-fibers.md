@@ -143,7 +143,7 @@ The ZIO library represents fibers using the type `Fiber[E, A]`, which means a co
 produce a result of type `A` or will fail with the type `E`. Moreover, ZIO executes fibers using an
 `Executor`, which is a sort of abstraction over a thread pool.
 
-### 4.1. Create a New Fiber
+### 5. Create a New Fiber
 
 To create a new fiber in ZIO, we must _fork_ it from an instance of the `ZIO` effect:
 
@@ -181,7 +181,7 @@ As we expect, ZIO executed the two effect concurrently on different thread. Just
 executing concurrently a set of tasks means that the order in which the runtime executes the tasks
 is not relevant.
 
-### 4.2. Synchronizing with a Fiber
+### 6. Synchronizing with a Fiber
 
 The astute reader should have noticed that boiling the water without preparing a good coffee is
 non-sense. However, Bob can't prepare the coffee without the boiled water. Moreover, Bon can't
@@ -238,7 +238,7 @@ computation. In fact, ZIO fibers don't block any thread during the waiting assoc
 of the `join` method. Just remember, that a `Fiber` represents only a data structure, a blueprint of
 a computation, and not the computation itself.
 
-### 4.3. Interrupting a Fiber
+### 7. Interrupting a Fiber
 
 The last main feature on fiber that the ZIO library provides is interrupting the execution of a 
 fiber. Why should we interrupt a fiber? Well, the main reason is that some action, external to the
