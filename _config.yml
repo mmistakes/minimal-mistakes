@@ -106,6 +106,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/jacob-morrison"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin-in"
+      url: "https://linkedin.com/jacob-morrison"
 
 # Site Footer
 footer:
