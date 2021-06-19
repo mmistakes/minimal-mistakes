@@ -2,24 +2,18 @@
 layout: archive
 ---
 
-{This is a test, update2}
+{This is a test, update3}
 
 {{ content }}
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].news | default: "News" }}</h3>
+<style type="text/css">
+  table, tr, td {
+    border: 0px;
+}
+</style>
 
-{% if paginator %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts %}
-{% endif %}
+<h3>News</h3>
 
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<!-- <div class="entries-list">
-  {% for post in posts %}
-    {% include archive-single.html type=entries_layout %}
-  {% endfor %}
-</div> -->
 <table class="news-table">
   <col width="14%" />
   <col width="100%" />
@@ -28,5 +22,3 @@ layout: archive
       <td>This is a test post.</td>
   </tr>
 </table>
-
-{% include paginator.html %}
