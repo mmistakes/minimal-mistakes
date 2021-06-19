@@ -259,7 +259,7 @@ compress_html:
 defaults:
   # _posts
   - scope:
-      path: "this is a test post"
+      path: ""
       type: posts
     values:
       layout: single
