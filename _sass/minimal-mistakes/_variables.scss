@@ -34,7 +34,8 @@ $custom-family: 'Bitter', serif;
 
 // $global-font-family: $sans-serif !default;
 $global-font-family: $custom-family !default;
-$header-font-family: $sans-serif !default;
+// $header-font-family: $sans-serif !default;
+$header-font-family: $custom-family !default;
 $caption-font-family: $serif !default;
 
 /* type scale */
