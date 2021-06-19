@@ -29,7 +29,11 @@ $bodoni: "Bodoni MT", serif !default;
 $calisto: "Calisto MT", serif !default;
 $garamond: Garamond, serif !default;
 
-$global-font-family: $sans-serif !default;
+/* custom */ 
+$custom-family: 'Bitter', serif;
+
+// $global-font-family: $sans-serif !default;
+$global-font-family: $custom-family !default;
 $header-font-family: $sans-serif !default;
 $caption-font-family: $serif !default;
 
