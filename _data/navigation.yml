@@ -11,6 +11,8 @@ mainMenu:
         url: /categories/effectcpp
       - title: "MODERN C++ Design Pattern"
         url: /categories/designpattern
+      - title: "C++ Reference"
+        url: /categories/cppreference
     - title: Python
       children:
       - title: "Effective Python 2nd"
