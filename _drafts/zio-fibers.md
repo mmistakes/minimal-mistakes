@@ -202,21 +202,21 @@ the result of such computation:
 
 ```scala
 def concurrentWakeUpRoutine(): ZIO[Any, Nothing, Unit] = for {
-   bathFiber <- bathTime.debug(printThread).fork
-   boilingFiber <- boilingWater.debug(printThread).fork
-   zippedFiber = bathFiber.zip(boilingFiber)
-   result <- zippedFiber.join.debug(printThread)
-   _ <- ZIO.succeed(s"$result...done").debug(printThread) *> preparingCoffee.debug(printThread)
+  bathFiber <- bathTime.debug(printThread).fork
+  boilingFiber <- boilingWater.debug(printThread).fork
+  zippedFiber = bathFiber.zip(boilingFiber)
+  result <- zippedFiber.join.debug(printThread)
+  _ <- ZIO.succeed(s"$result...done").debug(printThread) *> preparingCoffee.debug(printThread)
 } yield ()
 ```
 
 However, in our example, we need to wait for the completion of two concurrent fibers. So, we need to
-combine them first, and then joining the resulting fiber. The `zip` method combines two fibers into 
+combine them first, and then joining the resulting fiber. The `zip` method combines two fibers into
 a single fiber that produces the results of both.
 
 Joining a fiber lets us to gather also the result of its execution. In the example, the variable
-`result` has type `(String, String)`, and we successfully use it in the next step of the routine.
-We also introduced the `*>` operator, which is an alias for the `zipRight` function, and let us 
+`result` has type `(String, String)`, and we successfully use it in the next step of the routine. We
+also introduced the `*>` operator, which is an alias for the `zipRight` function, and let us
 concatenate the execution of two effects not depending on each other.
 
 The execution of the `concurrentWakeUpRoutine` function prints exactly what we expect:
@@ -229,8 +229,8 @@ The execution of the `concurrentWakeUpRoutine` function prints exactly what we e
 [zio-default-async-6]: Preparing the coffee
 ```
 
-The fiber that Bob uses to go to the bathroom, and the fiber that boils the water runs concurrently 
-on different threads. Then, ZIO executes the fiber used to prepare the coffee in a new thread, only 
+The fiber that Bob uses to go to the bathroom, and the fiber that boils the water runs concurrently
+on different threads. Then, ZIO executes the fiber used to prepare the coffee in a new thread, only
 after the previous fibers succeeded.
 
 However, what is happening is different from using directly systems threads to represent concurrent
@@ -240,12 +240,12 @@ a computation, and not the computation itself.
 
 ### 7. Interrupting a Fiber
 
-The last main feature on fiber that the ZIO library provides is interrupting the execution of a 
+The last main feature on fiber that the ZIO library provides is interrupting the execution of a
 fiber. Why should we interrupt a fiber? Well, the main reason is that some action, external to the
 fiber execution, turns the result of the fiber useless. So, to not waste system resources, it's
 better to interrupt the execution of this fiber.
 
-Imagine that, while Bob is taking a bath, and the water is waiting to boil, Alice calls him to 
+Imagine that, while Bob is taking a bath, and the water is waiting to boil, Alice calls him to
 invite to take the breakfast in a Cafe. Then, Bob doesn't need the water to boil anymore. So, we
 should interrupt the associated fiber.
 
@@ -258,7 +258,7 @@ trait Fiber[+E, +A] {
 }
 ```
 
-As we can see, the interruption of a fiber results in an effect that always succeed (`UIO[A]` is 
+As we can see, the interruption of a fiber results in an effect that always succeed (`UIO[A]` is
 just a type alias for `ZIO[Any, Nothing, A]`) with an `Exit` value. If the fiber already succeeded
 with its value when interrupted, then ZIO returns an instance of `Exit.Success[A]`, an instance of
 `Exit.Failure[Cause.Interrupt]`.
@@ -297,6 +297,69 @@ the `concurrentWakeUpRoutineWithAliceCall` method is the following:
 [zio-default-async-1]: Going to the bathroom
 [zio-default-async-2]: Boiling some water
 [zio-default-async-3]: Alice's call
-[zio-default-async-5]: Failure(Traced(Interrupt(Id(1624109234226,1))...
+[zio-default-async-5]: Failure(Traced(Interrupt(Id(1624109234226,1))... // Ommitted
 [zio-default-async-5]: Going to the Cafe with Alice
 ```
+
+After the Alice's call, the fiber executing on thread `zio-default-async-2` was interrupted, and the
+console never printed the string `Boiled water ready`. Since the fiber was still executing then
+interrupted, it's value was a `Failure`, specifying with a very big object the cause of failure.
+
+Unlike interrupting a thread, interrupting a fiber is a common and easy operation. In fact, the
+creation of a new `Fiber` is very lightweight. It doesn't require the creation of complex structures
+in memory, as for threads. Interrupting a fiber simply tells the `Executor` that the fiber must not
+be scheduled anymore.
+
+Finally, unlike threads, we can attach _finalizers_ to a fiber. A finalizer will close all the
+resources used by the effect. Moreover, the ZIO library guarantees that if that effect begins
+execution the finalizers will always be run, whether the effect succeeds with a value, fails with an
+error, or is interrupted.
+
+Last but not least, we can declare a fiber as `uninterruptible`. As the name suggests, an
+uninterruptible fiber will execute till the end even if it receives an interrupt signal.
+
+Returning to Bob, imagine that Alice calls him when he's already preparing the coffee, after the
+water boiled. Probably, Bob will decline the Alice's invitation, and will make breakfast at home.
+Let's model such a scenario. First, we add some delay to the action of preparing coffee:
+
+```scala
+val preparingCoffeeWithSleep =
+  preparingCoffee.debug(printThread) *>
+    ZIO.sleep(5.seconds) *>
+    ZIO.succeed("Coffee ready")
+```
+
+Then, we model Alice's call during coffee preparation:
+
+```scala
+def concurrentWakeUpRoutineWithAliceCallingUsTooLate(): ZIO[Clock, Nothing, Unit] = for {
+  _ <- bathTime.debug(printThread)
+  _ <- boilingWater.debug(printThread)
+  coffeeFiber <- preparingCoffeeWithSleep.debug(printThread).fork.uninterruptible
+  result <- aliceCalling.debug(printThread).fork *> coffeeFiber.interrupt.debug(printThread)
+  _ <- result match {
+    case Exit.Success(value) => ZIO.succeed("Making breakfast at home").debug(printThread)
+    case _ => ZIO.succeed("Going to the Cafe with Alice").debug(printThread)
+  }
+} yield ()
+```
+
+As we said, marking as `uninterruptible` the fiber `coffeeFiber` makes it unstoppable. The call of
+the `interrupt` method on it doesn't do anything, and the above code will have the following output:
+
+```shell
+[zio-default-async-1]: Going to the bathroom
+[zio-default-async-1]: Boiling some water
+[zio-default-async-2]: Preparing the coffee
+[zio-default-async-3]: Alice's call
+[zio-default-async-4]: Coffee ready
+[zio-default-async-5]: Success(Coffee ready)
+[zio-default-async-5]: Making breakfast at home
+```
+
+Bob will make breakfast at home, no matter the Alice's call. Sorry, Alice, maybe next time.
+
+## 8. Conclusions
+
+TODO
+
