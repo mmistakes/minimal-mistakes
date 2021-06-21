@@ -6,37 +6,24 @@ tags: []
 excerpt: ""
 ---
 
-There are many libraries implementing the effect pattern in the Scala ecosystem: Cats Effect, Monix,
-and ZIO just to list some. Every of these implements its own concurrency model. For example. Cats
-Effect and ZIO both rely on _fibers_. In the
-articles [Cats Effect 3 - Introduction to Fibers](https://blog.rockthejvm.com/cats-effect-fibers/)
-and [Cats Effect 3 - Racing IOs](https://blog.rockthejvm.com/cats-effect-racing-fibers/), we
-introduced the fiber model adopted by the Cats Effect library. Now, it's time to analyze the ZIO
-libraries and its implementation of the fiber model.
+Many libraries are implementing the effect pattern in the Scala ecosystem: Cats Effect, Monix, and ZIO, just to list some. Every of these implements its own concurrency model. For example. Cats Effect and ZIO both rely on _fibers_. In the articles [Cats Effect 3 - Introduction to Fibers](https://blog.rockthejvm.com/cats-effect-fibers/) and [Cats Effect 3 - Racing IOs](https://blog.rockthejvm.com/cats-effect-racing-fibers/), we introduced the fiber model adopted by the Cats Effect library. Now, it's time to analyze the ZIO library and its implementation of the fiber model.
 
 ## 1. Background and Setup
 
-We live in a wonderful world, in which Scala 3 is the actual major release of our loved programming
-language. So, we will use Scala 3 through the article. Moreover, we will need the dependency from
-the ZIO library:
+We live in a beautiful world where Scala 3 is the actual major release of our loved programming language. So, we will use Scala 3 throughout the article. Moreover, we will need the dependency from the ZIO library:
 
 ```sbt
-libraryDependencies += "dev.zio" %% "zio" % "1.0.8"
+libraryDependencies += "dev.zio" %% "zio" % "1.0.9"
 ```
 
 Nothing else will be required.
 
 ## 2. The Effect Pattern
 
-Before talking about ZIO fibers, we need to have the notion of the _Effect Pattern_. The main
-objective of any effect library is to deal with statements that can lead to side effects. The
-_substitution model_ is the fundamental building block of the functional programming. Unfortunately,
-we cannot model side effects using the substitution model, because we cannot substitute functions
-with their results, which may vary from information other than simple functions' inputs. Such
-functions are often called _impure_:
+Before talking about ZIO fibers, we need to have the notion of the _Effect Pattern_. The main objective of any effect library is to deal with statements that can lead to side effects. The _substitution model_ is the fundamental building block of functional programming. Unfortunately, we cannot model side effects using the substitution model because we cannot substitute functions with  their results, varying from information other than simple functions' inputs. Such functions are often called _impure_:
 
 ```scala
-// The type of println is String => Unit. The program print the given String to the console
+// The type of println is String => Unit. The program prints the given String to the console
 val result = println("The meaning of life is 42")
 // Using the substitution model, we try to substitute the result of the println execution to the
 // variable
@@ -44,42 +31,28 @@ val result: Unit = ()
 //...however, after the substitution, the meaning of the program completely changed
 ```
 
-So, it comes the Effect Pattern. The pattern aims to model side effects with the concept of effect.
-An effect is a blueprint of statements that can produce a side effect, not the result itself. When
-we instantiate an effect with some statements, we don't execute anything: We are just describing
-what the code inside the effect will perform once executed:
+So, it comes the Effect Pattern. The pattern aims to model side effects with the concept of effect. An effect is a blueprint of statements that can produce a side effect, not the result itself. So, when we instantiate an effect with some statements, we don't execute anything: We are just describing what the code inside the effect will perform once executed:
 
 ```scala
-// This code doesn't print anything to the console. It's a blueprint
+// This code doesn't print anything to the console. It's just a blueprint
 val result = ZIO.succeed(println("The meaning of life is 42"))
 ```
 
-The above code doesn't print anything to the console, it just describes what we want to achieve with
-the code, not how we will execute it.
 
-Moreover, the Effect Pattern add two more conditions to the whole story:
+The above code doesn't print anything to the console; it just describes what we want to achieve with the code, not how we execute it.
 
-1. The type of the effect must describe the type returned by the effect once executed, and what kind
-   of side effect it represents.
-2. The use of the effect must separate the description of the side effect (the blueprint) from its
-   execution.
+Moreover, the Effect Pattern adds two more conditions to the whole story:
 
-The first condition allows us to trace the impure code in our program. One of the main problems with
-side effects is that they are hidden in the code. Instead, the second condition allow us to use the
-substitution model with the effect, until the point we need to run it. We call such a point "the end
-of the world", and we merely identify it with the `main` method.
+1. The type of the effect must describe the type returned by the effect once executed and what kind of side effect it represents.
+2. The use of the effect must separate the description of the side effect (the blueprint) from its execution.
+
+The first condition allows us to trace the impure code in our program. One of the main problems with side effects is that they are hidden in the code. Instead, the second condition allows us to use the substitution model until we need to run the effect. We call such a point "the end of the world", and we merely identify it with the `main` method.
 
 ## 3. ZIO Effect
 
-The ZIO library is one of the implementation of the effect pattern available in Scala. It's main
-effect type is `ZIO[R, E, A]`. We call the `R` type the _environment type_, and it represents the
-dependencies the effect need to execute. Once executed, the effect can produce a result of type `A`
-or fail producing a value of the type `E`. For these reasons, it's common to think about the type
-`ZIO[R, E, A]` as an _effectful_ version of the function type `R => Either[E, A]`.
+The ZIO library is one of the implementations of the effect pattern available in Scala. Its primary effect type is `ZIO[R, E, A]`. We call the `R` type the _environment type_, representing the dependencies the effect needs to execute. Once executed, the effect can produce a result of type `A` or fail, producing a value of the type `E`. For these reasons, it's common to think about the type`ZIO[R, E, A]` as an _effectful_ version of the function type `R => Either[E, A]`.
 
-The default model of execution of the `ZIO` effect is synchronous. To start showing some code, let's
-model some useful scenario. So, we will model the wake-up routing of Bob. Every morning, Bob wakes
-up, goes to the bathroom, then boils some water to finally prepare a cup of coffee:
+The default model of execution of the `ZIO` effect is synchronous. To start showing some code, let's model some valuable scenarios. So, we will model the wake-up routing of Bob. Every morning, Bob wakes up, goes to the bathroom, then boils some water to finally prepare a cup of coffee:
 
 ```scala
 val bathTime = ZIO.succeed("Going to the bathroom")
@@ -87,8 +60,7 @@ val boilingWater = ZIO.succeed("Boiling some water")
 val preparingCoffee = ZIO.succeed("Preparing the coffee")
 ```
 
-As the three effect cannot fail, we use the smart constructor `ZIO.succeed`. Moreover, to help us
-debug the execution thread of each effect, we define the following function:
+As the three effects cannot fail, we use the smart constructor `ZIO.succeed`. Moreover, to help us debug the execution thread of each effect, we define the following function:
 
 ```scala
 def printThread = s"[${Thread.currentThread().getName}]"
@@ -118,8 +90,7 @@ object FibersTutorial extends zio.App {
 }
 ```
 
-As we expected the execution of the `run` show us that ZIO executes sequentially all of the effects
-in the same thread:
+As we expected, the execution of the `run` show us that ZIO executes all of the effects in the same thread sequentially:
 
 ```shell
 [zio-default-async-1]: Going to bath
@@ -132,16 +103,9 @@ in the same thread:
 If we want to leverage all the power of ZIO and starting to execute effects asynchronously, we must
 introduce the `Fiber` type.
 
-A _fiber_ is a concept that is beyond the ZIO library. In fact, it's a concurrency model. Often, we
-refer to fibers as _green threads_. Like a thread, a fiber represents the blueprint of a running
-computation that may not have started yet. However, it's only a data type, which means it doesn't
-map on any operating system or JVM concept. So it's instantiation is very lightweight with respect
-to a system thread. Hence, we can create millions of fibers, and switching between them without the
-overheads associated with threads.
+A _fiber_ is a concept that is beyond the ZIO library. In fact, it's a concurrency model. Often, we refer to fibers as _green threads_. A fiber represents the blueprint of a running computation that may not have started yet, like a thread. However, it's only a data type, which means it doesn't map any operating system or JVM concept. So its instantiation is very lightweight concerning a system thread. Hence, we can create millions of fibers and switch between them without the overheads associated with threads.
 
-The ZIO library represents fibers using the type `Fiber[E, A]`, which means a computation that will
-produce a result of type `A` or will fail with the type `E`. Moreover, ZIO executes fibers using an
-`Executor`, which is a sort of abstraction over a thread pool.
+The ZIO library represents fibers using the type `Fiber[E, A]`, which means a computation that will produce a result of type `A` or will fail with the type `E`. Moreover, ZIO executes fibers using an `Executor`, which is a sort of abstraction over a thread pool.
 
 ### 5. Create a New Fiber
 
@@ -361,9 +325,9 @@ Bob will make breakfast at home, no matter the Alice's call. Sorry, Alice, maybe
 
 ## 8. Conclusions
 
-Summing up, in the article we briefly introduced the concept of effect, and how ZIO uses it to 
+Summing up, in the article we briefly introduced the concept of effect, and how ZIO uses it to
 implement concurrent execution through fibers. Using a simple example, then, we showed how to use
-the three main operations available on fibers: Fork, join, and interrupt. 
+the three main operations available on fibers: Fork, join, and interrupt.
 
 Moreover, fibers are the very basic brick of concurrency programming in ZIO. A lot of concepts are
 build upon them, implementing richer and more complex use cases. 
