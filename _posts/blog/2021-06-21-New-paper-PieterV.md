@@ -5,7 +5,7 @@ categories: blog
 excerpt: Neural synchrony for adaptive control
 tags: [pieter-v, tom, new-paper]
 image:
-feature:
+  feature:
 link:
 date: 2021-06-21
 modified:
